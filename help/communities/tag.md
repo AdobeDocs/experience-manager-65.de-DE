@@ -22,13 +22,13 @@ Wenn AEM Communities-Komponenten mit aktiviertem Tagging konfiguriert sind, kön
 
 Die zugrunde liegende Infrastruktur für Tags, die in der Veröffentlichungsumgebung angewendet werden, entspricht der für Tags, die in der Autorenumgebung auf Inhalte angewendet werden, wie z. B. Seiten und Assets:
 
-* Siehe [Verwalten von Tags](../../help/sites-administering/tags.md) und [Tagging benutzergenerierter Inhalte](tag-ugc.md) (UGC) für Informationen zum Erstellen und Verwalten von Tags.
+* Informationen zum Erstellen und Verwalten von Tags finden Sie unter [Verwalten von Tags](../../help/sites-administering/tags.md) und [Tagging benutzergenerierter Inhalte](tag-ugc.md) (UGC).
 
-* Siehe [Tagging für Entwickler](../../help/sites-developing/tags.md) für Informationen über [Tagging-Framework](../../help/sites-developing/framework.md) und die Erweiterung von Tags in [benutzerdefinierte Anwendungen](../../help/sites-developing/building.md).
+* Informationen zum Tagging-Framework [ und zum Einschließen und Erweitern von Tags in [benutzerdefinierte Anwendungen](../../help/sites-developing/building.md) finden Sie unter [Tagging für Entwickler](../../help/sites-developing/tags.md) .](../../help/sites-developing/framework.md)
 
-* Siehe [Verwenden der Social Tag Cloud](tagcloud.md) für Informationen für Autoren zum Hinzufügen einer `social tag cloud` -Komponente auf eine Seite klicken, um die auf UGC angewandten Tags in der Veröffentlichungsumgebung hervorzuheben.
+* Unter [Verwenden der Social Tag Cloud](tagcloud.md) finden Sie Informationen für Autoren dazu, wie eine `social tag cloud` -Komponente zu einer Seite hinzugefügt wird, um die auf UGC angewandten Tags in der Veröffentlichungsumgebung hervorzuheben.
 
-Das Tagging von benutzergenerierten Inhalten kann beim Konfigurieren eines [Community-Site](sites-console.md#tagging) oder einer der folgenden Funktionen:
+Das Tagging von UGC kann beim Konfigurieren einer [Community-Site](sites-console.md#tagging) oder einer der folgenden Funktionen aktiviert werden:
 
 * [Blog](blog-feature.md)
 * [Kalender](calendar.md)
@@ -47,7 +47,7 @@ Das Tagging von benutzergenerierten Inhalten kann beim Konfigurieren eines [Comm
    <td>social/commons/components/hbs/tagcloud</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
@@ -64,7 +64,7 @@ Das Tagging von benutzergenerierten Inhalten kann beim Konfigurieren eines [Comm
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td>Siehe <a href="tagcloud.md">Verwenden der Social Tag Cloud</a></td>
+   <td>Siehe <a href="tagcloud.md">Verwenden von Social Tag Cloud</a> .</td>
   </tr>
  </tbody>
 </table>
@@ -75,12 +75,12 @@ Das Tagging von benutzergenerierten Inhalten kann beim Konfigurieren eines [Comm
 
 * [Social Tag Cloud-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [Social Tag Manager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [Social Tag-Manager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
 * [Serverseitige Anpassungen](server-customize.md)
 
 ## Tag-Suche {#tag-searching}
 
-Als [Feature Pack 1](deploy-communities.md#latestfeaturepack) (FP1) wird die Tag-Suche mithilfe von [Tag-Titel](../../help/sites-developing/framework.md#tag-characteristics).
+Ab [Feature Pack 1](deploy-communities.md#latestfeaturepack) (FP1) wird die Tag-Suche mit [Tag-Titeln](../../help/sites-developing/framework.md#tag-characteristics) durchgeführt.
 
-Vor FP1 wurde die Suche mithilfe von [Tag-ID](../../help/sites-developing/framework.md#tagid).
+Vor FP1 wurde die Suche mit [Tag-IDs](../../help/sites-developing/framework.md#tagid) durchgeführt.

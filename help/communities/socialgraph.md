@@ -20,26 +20,26 @@ ht-degree: 1%
 
 ## Einführung {#introduction}
 
-Die Fähigkeit eines Community-Mitglieds zu folgen [activities](activities.md) und zu befolgen ist durch zwei Komponenten festgelegt: `Follow` und `Following`.
+Die Fähigkeit eines Community-Mitglieds, [Aktivitäten](activities.md) zu folgen und ihnen zu folgen, wird durch zwei Komponenten festgelegt: `Follow` und `Following`.
 
-Die `Follow` -Komponente muss mit einer anderen Ressource verknüpft sein, und diese Zuordnung ist bereits für Community-Mitglieder und -Funktionen eingerichtet.
+Die Komponente `Follow` muss mit einer anderen Ressource verknüpft sein, und diese Zuordnung ist bereits für Community-Mitglieder und -Funktionen eingerichtet.
 
-Die `Following` -Komponente werden lediglich die Mitglieder aufgelistet, die dem aktuellen Mitglied folgen oder dem aktuellen Mitglied folgen. Dieses soziale Diagramm der Beziehungen zwischen Mitgliedern ist in dem Benutzerprofil enthalten, das für eine [Community-Site](overview.md#communitiessites).
+Die Komponente `Following` listet einfach die Mitglieder auf, die dem aktuellen Mitglied folgen oder dem aktuellen Mitglied folgen. Dieses soziale Diagramm der Beziehungen zwischen Mitgliedern ist in dem Benutzerprofil enthalten, das für eine [Community-Site](overview.md#communitiessites) festgelegt wurde.
 
 ## Hinzufügen von Folgenden zu einer Seite {#adding-following-to-a-page}
 
-Wenn Sie eine `Following` Komponente auf einer Seite im Autorenmodus zu finden, die Komponente `Communities / Following` und ziehen Sie sie an die gewünschte Stelle auf einer Seite, auf der das Social-Diagramm erscheinen soll.
+Wenn Sie im Autorenmodus einer Seite die Komponente `Following` hinzufügen möchten, suchen Sie die Komponente `Communities / Following` und ziehen Sie sie an die gewünschte Stelle auf einer Seite, auf der das Social-Diagramm angezeigt werden soll.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
 
-Wenn die Variable [erforderliche clientseitige Bibliotheken](essentials-socialgraph.md#essentials-for-client-side) eingeschlossen sind, wird die `Following` -Komponente angezeigt:
+Wenn die [erforderlichen clientseitigen Bibliotheken](essentials-socialgraph.md#essentials-for-client-side) eingeschlossen sind, wird die Komponente `Following` wie folgt angezeigt:
 
 ![following](assets/following.png)
 
 ## Konfigurieren der folgenden {#configuring-following}
 
-Derzeit ist es erforderlich, die -Eigenschaft festzulegen, um zu bestimmen, ob die Komponente die `follows` Beziehung oder `following` Beziehung.
+Derzeit ist es erforderlich, die -Eigenschaft festzulegen, um zu bestimmen, ob die Komponente die `follows`-Beziehung oder die `following`-Beziehung anzeigt.
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie unter [Grundlagen zu Social-Diagrammen](essentials-socialgraph.md) -Seite für Entwickler.
+Weitere Informationen finden Sie auf der Entwickler-Seite [Social-Diagrammgrundlagen](essentials-socialgraph.md) .

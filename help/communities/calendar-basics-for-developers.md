@@ -29,7 +29,7 @@ Diese Seite enthält wichtige Informationen zum Arbeiten mit der Kalenderfunktio
    <td>social/calendar/components/hbs/calendar</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
@@ -47,7 +47,7 @@ Diese Seite enthält wichtige Informationen zum Arbeiten mit der Kalenderfunktio
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>see <a href="calendar.md">Verwenden von Kalendern</a></td>
+   <td>siehe <a href="calendar.md">Verwenden von Kalendern</a></td>
   </tr>
  </tbody>
 </table>
@@ -64,17 +64,17 @@ Diese Seite enthält wichtige Informationen zum Arbeiten mit der Kalenderfunktio
 
 ### Kalenderfunktion {#calendar-function}
 
-Eine Community-Site-Struktur mit [Kalenderfunktion](functions.md#calendar-function) hat eine `calendar` -Komponente konfiguriert. Die Kalenderfunktion unterstützt die Identifizierung einer [Berechtigte Mitgliederbenutzergruppe](users.md#privileged-members-group).
+Eine Community-Site-Struktur mit der [Kalenderfunktion](functions.md#calendar-function) hat eine `calendar` -Komponente konfiguriert. Die Kalenderfunktion unterstützt das Identifizieren einer [berechtigten Mitgliederbenutzergruppe](users.md#privileged-members-group).
 
 ### Zugriff auf Kalenderbeiträge (UGC) {#accessing-calendar-posts-ugc}
 
-Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für benutzergenerierte Inhalte den programmatischen Zugriff auf benutzergenerierte Inhalte, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
 
-**Speicherort und Format der UGC im Repository können ohne Warnung geändert werden**.
+**Speicherort und Format des UGC im Repository können sich ohne Warnung ändern**.
 
 Siehe:
 
-* [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung
-* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Anwendungsmethoden und -Beispiele
+* [Übersicht über den Speicheranbieter](srp.md) - Übersicht über die Einführung und die Repository-Nutzung
+* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele
 * [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien
-* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnung veralteter Methoden von Dienstprogrammen zu aktuellen Methoden des SRP-Dienstprogramms
+* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden

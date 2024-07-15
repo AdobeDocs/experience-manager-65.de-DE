@@ -28,37 +28,37 @@ AEM verwendet Adobe PhoneGap und Adobe Publishing Solutions, um inhaltsreiche un
 * Überprüfen Sie Apps in Entwicklungs- und Staging-Umgebungen, ohne die Komplexität von Bereitstellungsprofilen und den zusätzlichen Aufwand zum Erstellen und Hochladen Ihrer App zur Freigabe zu haben.
 * Verwenden Sie die AEM Authoring-Umgebung, um Rich-Content für Ihre Apps zu erstellen und zu verwalten.
 * Verwenden Sie HTML5 mit Adobe PhoneGap, um umfangreiche Erlebnisse mit geräteübergreifenden Funktionen zu erstellen.
-* Einführung von HTML5-Webansichten in neue oder bereits vorhandene **nativ** Anwendungen über Cordova WebViews.
+* Einführung von HTML5-Webansichten in neue oder bereits vorhandene **native**-Anwendungen über Cordova WebViews.
 * Erstellen, kuratieren und teilen Sie Rich-Multimedia-Inhalte über alle Versandkanäle, einschließlich Web, Mobile-Web, Mobile-App und Druck.
 
 AEM Integration mit dem Adobe PhoneGap Build-Dienst (`https://build.phonegap.com/`), um den Prozess zum Erstellen und Bereitstellen von Anwendungen zu vereinfachen.
 
-**Adobe ContentSync** ermöglicht Benutzern das einfache Herunterladen von Seiten- und Inhaltsaktualisierungen Over-the-Air (OTA) auf ihre Geräte, ohne die Anwendung neu installieren oder aus dem AppStore, Google Play oder anderen App-Quellen herunterladen zu müssen.
+Mit **Adobe ContentSync** können Benutzer einfach Seiten- und Inhaltsaktualisierungen von Over-the-Air (OTA) auf ihre Geräte herunterladen, ohne die Anwendung neu installieren oder aus dem AppStore, Google Play oder anderen App-Quellen herunterladen zu müssen.
 
-**Adobe Analytics** ist vollständig in AEM Apps integriert und ermöglicht ein detailliertes Tracking von Verteilung, Geolocation, Betriebssystemen, Geräten, Clickstreams, iBeacon-Tracking und mehr.
+**Adobe Analytics** ist vollständig in AEM Apps integriert und ermöglicht das detaillierte Tracking von Verteilung, Geolocation, Betriebssystemen, Geräten, Clickstreams, iBeacon-Tracking und mehr.
 
 ## Erstellen von Apps {#creating-apps}
 
-Entwickler können die [AEM PhoneGap Starter Kit](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) sowie zusätzlichen Ressourcen, die in [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) zum Bootstrapping von AEM Apps mit PhoneGap, einschließlich einer nativen Referenzanwendung, in der Cordova Webviews ausgeführt werden.
+Entwickler können das [AEM PhoneGap Starter Kit](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) zusammen mit zusätzlichen Ressourcen in [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) verwenden, um AEM Apps mit PhoneGap zu bootstrapping durchzuführen, einschließlich einer nativen Referenzanwendung, in der Cordova Webviews ausgeführt werden.
 
 Die Readme für das Starter Kit-Git-Repository enthält ein Tutorial zur Verwendung des Starter-Kits:
 
 * Anpassen des Brandings
 * Maven-Beispiel-Build- und -Bereitstellungsziele
-* Repository-Konfiguration der Quellcodeverwaltung
+* Repository-Konfiguration für Source-Steuerelemente
 * Installieren und Bereitstellen in lokalen oder Remote-AEM-Instanzen
 * Deinstallieren von AEM
 
 >[!NOTE]
 >
->Zusätzliche Referenz-Implementierungsquelle, einschließlich Labs, finden Sie auf GitHub [here](https://github.com/adobe-marketing-cloud-apps) und die Quelle &quot;Küchenbecken&quot; [here](https://github.com/blefebvre/aem-phonegap-kitchen-sink).
+>Zusätzliche Referenz-Implementierungsquelle, einschließlich Labs, finden Sie auf GitHub [hier](https://github.com/adobe-marketing-cloud-apps) und der Quelle &quot;Küchenbecken&quot;[hier](https://github.com/blefebvre/aem-phonegap-kitchen-sink).
 
 ## Entwickeln für IOS 9- und HTTP-Hosts {#developing-for-ios-and-http-hosts}
 
-IOS-Entwickler sollten sich eines offenen Problems mit Cordova-Apps bewusst sein, das auf iOS 9 ausgeführt wird. Dieses Problem verhindert, dass Anfragen an unsichere Hosts (wie *http://localhost:4502*). Dieses Problem wird mit einer kommenden Version von Cordova-iOS behoben (von der Cordova CLI verwendet), aber in der Zwischenzeit gibt es zwei Problemumgehungen:
+IOS-Entwickler sollten sich eines offenen Problems mit Cordova-Apps bewusst sein, das auf iOS 9 ausgeführt wird. Dieses Problem verhindert, dass Anfragen an unsichere Hosts (wie *http://localhost:4502*) gesendet werden. Dieses Problem wird mit einer kommenden Version von Cordova-iOS behoben (von der Cordova CLI verwendet), aber in der Zwischenzeit gibt es zwei Problemumgehungen:
 
 1. Als sofortige Problemumgehung können Sie weiterhin jeden der iOS 8-Simulatoren problemlos verwenden.
-1. Wenn Sie iOS 9 verwenden müssen, Ihre apps -Info.plist (gefunden nach der Ausführung) `cordova platform add ios` in &quot;&lt;app root=&quot;&quot;>/platforms/ios/&lt;app name=&quot;&quot;>/&lt;app name=&quot;&quot;>-Info.plist&quot;) manuell bearbeitet werden, um die folgende Eigenschaft einzuschließen:
+1. Wenn Sie iOS 9 verwenden müssen, können Sie die Datei &quot;apps -Info.plist&quot;(gefunden nach Ausführung von `cordova platform add ios` in der Datei &quot;&lt;App-Stammordner>/platforms/ios/&lt;App-Name>/&lt;App-Name>-Info.plist&quot;) manuell bearbeiten, um die folgende Eigenschaft einzuschließen:
 
 ```
 <key>NSAppTransportSecurity</key>
@@ -72,7 +72,7 @@ IOS-Entwickler sollten sich eines offenen Problems mit Cordova-Apps bewusst sein
 
 >[!NOTE]
 >
->Weitere Informationen zu &quot;App Transport Security&quot;finden Sie im folgenden Abschnitt von [Dokumente zu Apple iOS9-Vorabversionen](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) und dies [Diskussion über Stack Overflow](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
+>Weitere Informationen zu &quot;App Transport Security&quot;finden Sie im folgenden Abschnitt von [Apples iOS9-Vorabversionsdocs](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) und in dieser [Diskussion zum Überlauf von Stapeln](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
 
 ## Entwickeln von Mobilanwendungen in AEM {#developing-mobile-applications-in-aem-1}
 

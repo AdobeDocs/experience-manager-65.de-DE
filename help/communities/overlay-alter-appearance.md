@@ -21,20 +21,20 @@ ht-degree: 0%
 
 ## Skript ändern {#modify-the-script}
 
-Die `comment.hbs` -Skript ist für die Erstellung der gesamten HTML für jeden Kommentar verantwortlich.
+Das Skript `comment.hbs` ist für die Erstellung der gesamten HTML für jeden Kommentar verantwortlich.
 
 So zeigen Sie den Avatar nicht neben jedem veröffentlichten Kommentar an:
 
-1. Kopieren `comment.hbs`von `libs`nach `apps`
+1. Kopieren Sie `comment.hbs`von `libs`in `apps`
 
    1. Klicken Sie auf `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. Auswählen **[!UICONTROL Kopieren]**
+   1. Wählen Sie **[!UICONTROL Kopieren]**
    1. Klicken Sie auf `/apps/social/commons/components/hbs/comments/comment`
-   1. Auswählen **[!UICONTROL Einfügen]**
+   1. Wählen Sie **[!UICONTROL Einfügen]** aus
 
 1. Öffnen Sie die überlagerte `comment.hbs`
 
-   * Doppelklick-Knoten `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
+   * Doppelklicken Sie auf den Knoten `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
 
 1. Suchen Sie die folgenden Zeilen und löschen oder kommentieren Sie sie aus:
 
@@ -43,7 +43,7 @@ So zeigen Sie den Avatar nicht neben jedem veröffentlichten Kommentar an:
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-Löschen Sie die Zeilen oder umschließen Sie sie mit `<!--` und `-->` also kommentieren Sie sie aus. Außerdem werden die Zeichen &quot;xxx&quot;als visueller Indikator hinzugefügt, wo der Avatar gewesen wäre.
+Löschen Sie entweder die Zeilen oder umschließen Sie sie mit `<!--` und `-->`, damit Sie sie auskommentieren. Außerdem werden die Zeichen &quot;xxx&quot;als visueller Indikator hinzugefügt, wo der Avatar gewesen wäre.
 
 ```xml
    xxx
@@ -58,11 +58,11 @@ Pushen Sie die überlagerte Kommentar-Komponente mithilfe des Replikations-Tools
 
 >[!NOTE]
 >
->Eine robustere Form der Replikation wäre, ein Paket in Package Manager zu erstellen und [Aktivieren](/help/sites-administering/package-manager.md#replicating-packages) es. Ein Package kann exportiert und archiviert werden.
+>Eine zuverlässigere Form der Replikation wäre, ein Paket im Package Manager zu erstellen und es zu [aktivieren](/help/sites-administering/package-manager.md#replicating-packages). Ein Package kann exportiert und archiviert werden.
 
-Wählen Sie in der globalen Navigation die Option **[!UICONTROL Instrumente]** > **[!UICONTROL Implementierung]** > **[!UICONTROL Replikation]** und klicken **[!UICONTROL Baum aktivieren]**.
+Wählen Sie in der globalen Navigation **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]** aus und klicken Sie auf **[!UICONTROL Tree aktivieren]**.
 
-Geben Sie für den Startpfad ein. `/apps/social/commons` und wählen **[!UICONTROL Aktivieren]**.
+Geben Sie für den Startpfad &quot;`/apps/social/commons`&quot;ein und wählen Sie &quot;**[!UICONTROL Aktivieren]**&quot;.
 
 ![verify-content-template](assets/verify-content-template.png)
 
@@ -70,6 +70,6 @@ Geben Sie für den Startpfad ein. `/apps/social/commons` und wählen **[!UICONTR
 
 Wenn Sie sich als Administrator bei der Veröffentlichungsinstanz anmelden, z. B. https://localhost:4503/crx/de als Administrator/Administrator, können Sie überprüfen, ob die überlagerten Komponenten vorhanden sind.
 
-Wenn Sie sich abmelden und sich dann als `aaron.mcdonald@mailinator.com/password` und aktualisieren Sie die Seite, stellen Sie fest, dass ein Avatar nicht mit dem veröffentlichten Kommentar angezeigt wird. Stattdessen wird eine einfache &quot;xxx&quot;angezeigt.
+Wenn Sie sich abmelden und sich dann als `aaron.mcdonald@mailinator.com/password` anmelden und die Seite aktualisieren, stellen Sie fest, dass ein Avatar nicht mit dem veröffentlichten Kommentar angezeigt wird. Stattdessen wird eine einfache &quot;xxx&quot;angezeigt.
 
 ![create-template-component](assets/create-template-component.png)

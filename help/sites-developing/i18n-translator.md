@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '2318'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -195,7 +195,7 @@ Die Suchleiste am unteren Rand des Übersetzer-Tools bietet verschiedene Auswahl
 
 ### Bearbeiten von übersetzten Zeichenfolgen {#editing-translated-strings}
 
-Nachdem Sie die englische Zeichenfolge einem Wörterbuch hinzugefügt haben, können Sie Übersetzungen der Zeichenfolge hinzufügen.  Sie können auch [Wörterbuch exportieren](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) , damit sie von einem Drittanbieter übersetzt werden.
+Nachdem Sie die englische Zeichenfolge einem Wörterbuch hinzugefügt haben, können Sie Übersetzungen der Zeichenfolge hinzufügen.  Sie können das Wörterbuch auch [exportieren](/help/sites-developing/i18n-translator.md#exporting-a-dictionary), um es von einem Drittanbieter übersetzen zu lassen.
 
 1. Wählen Sie das [zu Ihrem Projekt gehörige Wörterbuch](#creating-a-dictionary) aus, da es den Pfad im Repository angibt, unter dem sich die Übersetzungen befinden. Wählen Sie zum Beispiel **Wörterbücher** als:
 
@@ -225,7 +225,7 @@ Nachdem Sie die englische Zeichenfolge einem Wörterbuch hinzugefügt haben, kö
 
 ## Verwenden externer Übersetzungs-Tools {#using-third-party-translators}
 
-Um die Verwendung von Übersetzungsdiensten von Drittanbietern zu unterstützen, können Sie mit dem Übersetzungstool Wörterbücher exportieren und importieren.
+Mit dem Übersetzungs-Tool können Sie Wörterbücher für externe Übersetzungsdienste exportieren und anschließend wieder importieren.
 
 ### Exportieren eines Wörterbuchs {#exporting-a-dictionary}
 

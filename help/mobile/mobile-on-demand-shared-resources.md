@@ -26,7 +26,7 @@ Inhaltsverwaltungsaktionen sind die Bausteine, mit denen Inhalte in einer Anwend
 
 >[!NOTE]
 >
->Weitere Informationen zu Designüberlegungen für AEM Mobile-Apps finden Sie unter [Designüberlegungen für AEM Mobile-Apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in der Onlinehilfe.
+>Weitere Informationen zu Designüberlegungen für AEM Mobile-Apps finden Sie unter [Designüberlegungen für AEM Mobile-Apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in der Online-Hilfe.
 
 >[!CAUTION]
 >
@@ -36,16 +36,16 @@ Inhaltsverwaltungsaktionen sind die Bausteine, mit denen Inhalte in einer Anwend
 
 In der Regel müssen Inhalte wie Artikel in allen Autoren und Apps dasselbe Erscheinungsbild aufweisen. Daher ist es wichtig, Skripte, CSS und Schriftarten für alle verfügbar zu machen. Dieser Vorgang sendet solche freigegebenen Ressourcen an Mobile On-Demand, die dann bei Bedarf genutzt werden können.
 
-Nachdem Sie Ihre App konfiguriert und mit einer Cloud-Konfiguration verknüpft haben, können Sie Ihre freigegebenen Ressourcen hochladen. Ausführliche Anweisungen zum Verknüpfen Ihrer App mit einer Cloud-Konfiguration finden Sie unter [here](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
+Nachdem Sie Ihre App konfiguriert und mit einer Cloud-Konfiguration verknüpft haben, können Sie Ihre freigegebenen Ressourcen hochladen. Ausführliche Anweisungen zum Verknüpfen Ihrer App mit einer Cloud-Konfiguration finden Sie unter [hier](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md) .
 
 >[!NOTE]
 >
->Shared Resources verwendet ContentSync , um alle verschiedenen Ressourcen zu erfassen. Siehe [Mobile mit ContentSync](/help/mobile/mobile-ondemand-contentsync.md) für weitere Details.
+>Shared Resources verwendet ContentSync , um alle verschiedenen Ressourcen zu erfassen. Weitere Informationen finden Sie unter [Mobil mit ContentSync](/help/mobile/mobile-ondemand-contentsync.md) .
 
 Führen Sie die folgenden Schritte aus, um Ihre freigegebenen Ressourcen für einen Artikel hochzuladen:
 
-1. Wählen Sie den Artikel aus **Artikel verwalten** Kachel.
-1. Klicks **Hochladen freigegebener Ressourcen** , um die freigegebenen HTML-Ressourcen hochzuladen.
+1. Wählen Sie den Artikel aus der Kachel **Artikel verwalten** aus.
+1. Klicken Sie auf **Freigegebene Ressourcen hochladen** , um Ihre freigegebenen HTML-Ressourcen hochzuladen.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 

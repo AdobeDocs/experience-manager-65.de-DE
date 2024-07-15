@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1610'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -210,7 +210,7 @@ Daher sollte Ihr JavaScript `s.usePlugins` auf `true` festlegen, damit jeder Cod
 
 1. Klicken Sie mehrfach auf „Weiter“, bis die Schaltfläche „OK“ aktiviert wird, und klicken Sie dann auf „OK“.
 
-   Die SiteCatalyst-Komponente enthält die automatisch erstellte Datei sitecatalyst.jsp .
+   Die SiteCatalyst-Komponente enthält die automatisch erstellte Datei sitecatalyst.jsp.
 
 1. Klicken Sie mit der rechten Maustaste auf die Datei sitecatalyst.jsp und klicken Sie dann auf „Löschen“.
 

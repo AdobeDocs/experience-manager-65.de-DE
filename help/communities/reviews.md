@@ -18,9 +18,9 @@ ht-degree: 1%
 
 # Verwenden der Bewertungszusammenfassung (Anzeige) {#using-reviews-and-reviews-summary-display}
 
-Die `Reviews` Komponente ist ein Verbund aus [Kommentare](comments.md) und [Bewertung](rating.md) gebrauchsfertige Komponenten.
+Die Komponente `Reviews` ist ein Verbund aus [Kommentaren](comments.md) und [Bewertung](rating.md) Komponenten, die einsatzbereit sind.
 
-Die `Reviews Summary (Display)` -Komponente bietet eine Zusammenfassung einer aktiven oder geschlossenen Instanz eines `Reviews` -Komponente für die Anzeige an einem anderen Ort der Site.
+Die Komponente `Reviews Summary (Display)` bietet eine Zusammenfassung einer aktiven oder geschlossenen Instanz einer `Reviews` -Komponente, die an anderer Stelle auf der Site angezeigt werden kann.
 
 >[!NOTE]
 >
@@ -28,21 +28,21 @@ Die `Reviews Summary (Display)` -Komponente bietet eine Zusammenfassung einer ak
 
 ## Hinzufügen einer Überprüfung zu einer Seite {#adding-a-review-to-a-page}
 
-So fügen Sie eine `Reviews` -Komponente auf einer Seite im Autorenmodus verwenden Sie den Komponenten-Browser, um `Communities / Reviews` und ziehen Sie sie an die gewünschte Stelle auf einer Seite, z. B. an die Position relativ zur Funktion, die Benutzer überprüfen können.
+Um eine `Reviews` -Komponente im Autorenmodus zu einer Seite hinzuzufügen, suchen Sie im Komponenten-Browser nach `Communities / Reviews` und ziehen Sie sie an die gewünschte Stelle auf einer Seite, z. B. an eine Position relativ zur Funktion, die Benutzer überprüfen können.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
 
-Wenn die Variable [erforderliche clientseitige Bibliotheken](reviews-basics.md#essentials-for-client-side) eingeschlossen sind, wird die `Reviews` -Komponente angezeigt.
+Wenn die [ erforderlichen clientseitigen Bibliotheken](reviews-basics.md#essentials-for-client-side) enthalten sind, wird die Komponente `Reviews` so angezeigt.
 
 ![create-review](assets/create-review.png)
 
 ## Konfigurieren von Überprüfungen {#configuring-reviews}
 
-Auswählen der platzierten `Reviews` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Wählen Sie die platzierte Komponente `Reviews` aus, damit Sie auf das Symbol `Configure` zugreifen und dieses auswählen können, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![configure-new](assets/configure-new.png)
 
-Unter dem **[!UICONTROL Zulässige Bewertungen]** -Tab die vollständige Liste der Bewertungen angeben, die den Mitgliedern angezeigt werden sollen. Das erste Rating sollte eine allgemeine/allgemeine Gesamtrating sein, da es das Rating ist, das die durchschnittliche Bewertung für die `Review Summary (Display)` -Komponente. Die nächsten beiden Bewertungen in der Standardkonfiguration sollten einen anderen Titel erhalten als &quot;Unterbewertung 1&quot;oder &quot;Unterbewertung 2&quot;.
+Geben Sie auf der Registerkarte **[!UICONTROL Zulässige Bewertungen]** die vollständige Liste der Bewertungen an, die Mitgliedern angezeigt werden sollen. Die erste Bewertung sollte eine allgemeine/allgemeine Bewertung sein, da sie die durchschnittliche Bewertung für die Komponente `Review Summary (Display)` liefert. Die nächsten beiden Bewertungen in der Standardkonfiguration sollten einen anderen Titel erhalten als &quot;Unterbewertung 1&quot;oder &quot;Unterbewertung 2&quot;.
 
 ![allowed-rating](assets/configure-review1.png)
 
@@ -52,9 +52,9 @@ Unter dem **[!UICONTROL Zulässige Bewertungen]** -Tab die vollständige Liste d
 
   Verwenden Sie die Schaltflächen nach oben, nach unten und zum Löschen, um die sichtbaren Auswahlen zu ändern.
 
-  Klicks **[!UICONTROL Element hinzufügen]** , um eine weitere Bewertungsoption hinzuzufügen.
+  Klicken Sie auf **[!UICONTROL Element hinzufügen]** , um eine weitere Bewertungsoption hinzuzufügen.
 
-Unter dem **[!UICONTROL Erforderliche Bewertungen]** Registerkarte Elemente aus der Liste **[!UICONTROL Zulässige Bewertungen]** die für die Bewertung erforderlich sind. Wenn ein Element nur auf der Registerkarte Zulässige Bewertungen angegeben wird, kann es beim Senden durch das Mitglied nicht markiert bleiben.
+Geben Sie auf der Registerkarte **[!UICONTROL Erforderliche Bewertungen]** Elemente aus der Liste der für die Bewertung erforderlichen **[!UICONTROL zulässigen Bewertungen]** erneut ein. Wenn ein Element nur auf der Registerkarte Zulässige Bewertungen angegeben wird, kann es beim Senden durch das Mitglied nicht markiert bleiben.
 
 Auf der Website sind erforderliche Bewertungen mit einem Sternchen gekennzeichnet. Wenn ein Element erforderlich ist und nicht markiert bleibt, wird dem Mitglied eine Nachricht angezeigt und die Übermittlung wird verweigert, bis alle erforderlichen Bewertungen markiert sind.
 
@@ -66,15 +66,15 @@ Auf der Website sind erforderliche Bewertungen mit einem Sternchen gekennzeichne
 
   Verwenden Sie die Schaltflächen nach oben, nach unten und zum Löschen, um die sichtbaren Auswahlen zu ändern.
 
-  Klicks **[!UICONTROL Element hinzufügen]** , um eine weitere Antwortoption hinzuzufügen.
+  Klicken Sie auf **[!UICONTROL Element hinzufügen]** , um eine weitere Antwortoption hinzuzufügen.
 
 >[!NOTE]
 >
->Wenn ein Element in der Variablen **[!UICONTROL Erforderliche Bewertungen]** -Registerkarte, die nicht im **[!UICONTROL Zulässige Bewertungen]** und dann nicht in den zu bewertenden Elementen enthalten ist.
+>Wenn ein Element auf der Registerkarte **[!UICONTROL Erforderliche Bewertungen]** eingegeben wird, das nicht auf der Registerkarte **[!UICONTROL Zulässige Bewertungen]** angegeben ist, ist es nicht in den zu bewertenden Elementen enthalten.
 
-Unter dem **[!UICONTROL Überprüfungen]** -Registerkarte angeben, wie Überprüfungen verarbeitet werden.
+Geben Sie auf der Registerkarte **[!UICONTROL Bewertungen]** an, wie Prüfungen verarbeitet werden.
 
-![Bewertungen](assets/configure-review3.png)
+![Reviews](assets/configure-review3.png)
 
 * **[!UICONTROL Antworten zulassen]**
 
@@ -108,7 +108,7 @@ Unter dem **[!UICONTROL Überprüfungen]** -Registerkarte angeben, wie Überprü
 
   Wenn diese Option aktiviert ist, nehmen Sie die Abstimmungsfunktion für ein Thema auf. Die Option Standard ist deaktiviert.
 
-Unter dem **[!UICONTROL Benutzermoderation]** Registerkarte angeben, wie die veröffentlichten Reviews verwaltet werden. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
+Geben Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** an, wie die veröffentlichten Bewertungen verwaltet werden. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
 ![user-moderation](assets/configure-review4.png)
 
@@ -124,15 +124,15 @@ Unter dem **[!UICONTROL Benutzermoderation]** Registerkarte angeben, wie die ver
 
   Wenn diese Option aktiviert ist, können Moderatoren Bewertungen ablehnen. Die Option Standard ist deaktiviert.
 
-* **[!UICONTROL Prüfungen schließen/erneut öffnen]**
+* **[!UICONTROL Bewertungen schließen/erneut öffnen]**
 
   Wenn diese Option aktiviert ist, können Moderatoren Bewertungen schließen und erneut öffnen. Die Option Standard ist deaktiviert.
 
-* **[!UICONTROL Flag-Reviews]**
+* **[!UICONTROL Flag Reviews]**
 
   Ist diese Option aktiviert, können Mitglieder Bewertungen als unangemessen kennzeichnen. Die Option Standard ist deaktiviert.
 
-* **[!UICONTROL Liste der Kennzeichnungsgründe]**
+* **[!UICONTROL Liste mit Kennzeichnungsgründen]**
 
   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem eine Überprüfung als unangemessen gekennzeichnet wird. Die Option Standard ist deaktiviert.
 
@@ -140,25 +140,25 @@ Unter dem **[!UICONTROL Benutzermoderation]** Registerkarte angeben, wie die ver
 
   Wenn diese Option aktiviert ist, können Mitglieder einen eigenen Grund dafür eingeben, warum eine Überprüfung als unangemessen gekennzeichnet wird. Die Option Standard ist deaktiviert.
 
-* **[!UICONTROL Schwellenwert für Moderation]**
+* **[!UICONTROL Moderationsschwellenwert]**
 
   Geben Sie an, wie oft eine Überprüfung von Mitgliedern als unangemessen gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist einmal (1).
 
 * **[!UICONTROL Kennzeichnungslimit]**
 
-  Geben Sie an, wie oft eine Überprüfung gekennzeichnet werden muss, bevor sie in der öffentlichen Ansicht ausgeblendet wird. Diese Zahl muss größer oder gleich der Zahl **[!UICONTROL Schwellenwert für Moderation]**. Der Standardwert ist 5.
+  Geben Sie an, wie oft eine Überprüfung gekennzeichnet werden muss, bevor sie in der öffentlichen Ansicht ausgeblendet wird. Diese Zahl muss größer oder gleich dem **[!UICONTROL Moderationsschwellenwert]** sein. Der Standardwert ist 5.
 
 ### Hinzufügen einer Bewertungszusammenfassung (Anzeige) zu einer Seite {#adding-a-review-summary-display-to-a-page}
 
-So fügen Sie eine `Reviews Summary (Display)` Komponente auf einer Seite im Autorenmodus zu finden, die Komponente
+Um eine `Reviews Summary (Display)` -Komponente zu einer Seite im Autorenmodus hinzuzufügen, suchen Sie die Komponente
 
 * `Communities / Reviews Summary (Display)`
 
 Ziehen Sie sie an eine Stelle auf einer Seite, auf der eine Zusammenfassung einer aktiven oder geschlossenen Überprüfung angezeigt werden soll.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
 
-Wenn die Variable [erforderliche clientseitige Bibliotheken](reviews-basics.md#essentials-for-client-side) eingeschlossen sind, wird die `Reviews Summary (Display)`-Komponente angezeigt.
+Wenn die [erforderlichen clientseitigen Bibliotheken](reviews-basics.md#essentials-for-client-side) eingeschlossen sind, wird die Komponente `Reviews Summary (Display)` so angezeigt.
 
 ![review-summary](assets/configure-review5.png)
 
@@ -168,17 +168,17 @@ Wenn die Variable [erforderliche clientseitige Bibliotheken](reviews-basics.md#e
 
 ### Konfigurieren der Bewertungszusammenfassung (Anzeige) {#configuring-reviews-summary-display}
 
-Auswählen der platzierten `Reviews Summary (Display)` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Wählen Sie die platzierte Komponente `Reviews Summary (Display)` aus, damit Sie auf das Symbol `Configure` zugreifen und dieses auswählen können, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
-![konfigurieren](assets/configure-new.png)
+![configure](assets/configure-new.png)
 
-Unter dem **[!UICONTROL Bewertungszusammenfassung]** tab
+Auf der Registerkarte **[!UICONTROL Bewertungszusammenfassung]**
 
 ![review-summary](assets/configure-review6.png)
 
 * `Review Path`
 
-  Rufen Sie die platzierte Instanz der `reviews` -Komponente, sodass Sie beispielsweise eine Zusammenfassung erstellen können, wenn Sie sie der Webseite der [Geometrixx Engage-Site,](getting-started.md) der Pfad lautet:
+  Geben Sie die platzierte Instanz der Komponente &quot;`reviews`&quot;ein oder navigieren Sie zu dieser, damit Sie beispielsweise eine Zusammenfassung erstellen können, wenn Sie sie der Webseite der Seite &quot;[Geometrixx Engage&quot;hinzufügen, ](getting-started.md) lautet der Pfad:
 
   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
@@ -192,27 +192,27 @@ Die Komponente &quot;Bewertungen&quot;verwendet das Kommentarsystem.
 
 Durch Änderung des Kommentarressourcentyps generiert das Kommentarsystem nicht mehr eine Instanz eines Kommentars, der den Standard verwendet, sondern eine, die von Entwicklern angepasst (erweitert) wurde.
 
-Wenn die benutzerdefinierten Ressourcentypen bekannt sind, geben Sie [Designmodus](../../help/sites-authoring/default-components-designmode.md) und doppelklicken Sie auf die platzierte `Comments` -Komponente, um ein Dialogfeld mit einer zusätzlichen Registerkarte zu öffnen.
+Wenn die benutzerdefinierten Ressourcentypen bekannt sind, geben Sie den [Designmodus](../../help/sites-authoring/default-components-designmode.md) ein und doppelklicken Sie auf die platzierte `Comments` -Komponente, um ein Dialogfeld mit einer zusätzlichen Registerkarte zu öffnen.
 
-Unter dem **[!UICONTROL Ressourcentypen]** Registerkarte den benutzerdefinierten resourceType für neue Instanzen der `Comments or Voting` Komponenten:
+Geben Sie auf der Registerkarte **[!UICONTROL Ressourcentypen]** den benutzerdefinierten Ressourcentyp für neue Instanzen der `Comments or Voting` -Komponenten an:
 
-![Kommentare und Abstimmungen](assets/configure-review7.png)
+![comments-stiming](assets/configure-review7.png)
 
 * **[!UICONTROL Kommentar-Ressourcentyp]**
 
-  Navigieren Sie zum resourceType eines erweiterten `comment`Komponente (einzelner Kommentar) in /apps. Zum Beispiel: `/apps/social/commons/components/hbs/comments/comment`.
+  Navigieren Sie zum Ressourcentyp einer erweiterten `comment`Komponente (einzelner Kommentar) in /apps. Zum Beispiel: `/apps/social/commons/components/hbs/comments/comment`.
 
   Diese Ressource identifiziert den resourceType des UGC, der erstellt wurde, wenn ein Besucher einen Kommentar veröffentlicht.
 
-* **[!UICONTROL Abstimmungsressourcentyp]**
+* **[!UICONTROL Abstimmungs-Ressourcentyp]**
 
-  Navigieren Sie zum resourceType eines erweiterten `voting`-Komponente in /apps. Zum Beispiel: `/apps/social/components/hbs/voting`.
+  Navigieren Sie zum resourceType einer erweiterten `voting`Komponente in /apps. Zum Beispiel: `/apps/social/components/hbs/voting`.
 
   Diese Ressource identifiziert den Ressourcentyp des UGC, der erstellt wurde, wenn ein Besucher eine Stimme sendet.
 
-* **[!UICONTROL Ressourcentyp des Kommentars]**
+* **[!UICONTROL Kommentar-Systemressourcentyp]**
 
-  Navigieren Sie zum resourceType eines erweiterten `comments`-Komponente (Kommentarsystem) in /apps. Leer lassen, es sei denn, die Seitenvorlage [dynamisch enthält](scf.md#add-or-include-a-communities-component) das Kommentar-System im zugrunde liegenden Skript, anstatt als Ressource (Kommentarknoten) zur Seite hinzugefügt zu werden. Weitere Informationen finden Sie unter [`{{include}}` Helper](handlebars-helpers.md#include).
+  Navigieren Sie zum Ressourcentyp einer erweiterten `comments`Komponente (Kommentarsystem) in /apps. Lassen Sie das Feld leer, es sei denn, die Seitenvorlage [enthält dynamisch ](scf.md#add-or-include-a-communities-component) das Kommentarsystem im zugrunde liegenden Skript, anstatt zur Seite als Ressource hinzugefügt zu werden (Kommentarknoten). Erfahren Sie mehr über den [`{{include}}` Helper](handlebars-helpers.md#include).
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
@@ -224,7 +224,7 @@ Wenn der angemeldete Benutzer über Moderator- oder Administratorberechtigungen 
 
 Wenn der Besucher der Site angemeldet ist, kann er je nach Konfiguration:
 
-* Neuen Review posten
+* Post - eine neue Überprüfung
 * Bearbeiten einer eigenen Überprüfung
 * Löschen einer eigenen Überprüfung
 * Anderen Überprüfungskommentaren zuweisen
@@ -237,8 +237,8 @@ Besucher der Website, die nicht angemeldet sind, dürfen veröffentlichte Rezens
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie unter [Grundlagen überprüfen](reviews-basics.md) -Seite für Entwickler.
+Weitere Informationen finden Sie auf der Entwickler-Seite [Grundlagen der Überprüfung](reviews-basics.md) .
 
-Informationen zur Moderation von geposteten Kommentaren finden Sie unter [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
+Informationen zur Moderation von veröffentlichten Kommentaren finden Sie unter [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Informationen zur Übersetzung geposteter Kommentare finden Sie unter [Übersetzen benutzergenerierter Inhalte](translate-ugc.md).
+Informationen zur Übersetzung von veröffentlichten Kommentaren finden Sie unter [Übersetzen benutzergenerierter Inhalte](translate-ugc.md).

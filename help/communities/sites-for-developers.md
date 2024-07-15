@@ -27,7 +27,7 @@ Gehen Sie dazu wie folgt vor:
 * Erstellen Sie eine benutzerdefinierte Vorlage.
 * Überlagern Sie den Standardpfad der Site-Vorlage.
 * Fügen Sie die benutzerdefinierte Vorlage zum Überlagerungspfad hinzu.
-* Geben Sie die benutzerdefinierte Vorlage an, indem Sie eine `page-template` -Eigenschaft auf `configuration` Knoten.
+* Geben Sie die benutzerdefinierte Vorlage an, indem Sie dem Knoten `configuration` die Eigenschaft `page-template` hinzufügen.
 
 **Standardvorlage**:
 
@@ -51,44 +51,44 @@ Beispiel: `/content/sites/engage/en/configuration`
 
 >[!NOTE]
 >
->Alle Knoten im überlagerten Pfad müssen nur vom Typ `Folder`.
+>Alle Knoten im überlagerten Pfad müssen nur vom Typ `Folder` sein.
 
 >[!CAUTION]
 >
->Wenn die benutzerdefinierte Vorlage den Namen erhält *sitepage.hbs*, werden alle Community-Sites angepasst.
+>Wenn die benutzerdefinierte Vorlage den Namen *sitepage.hbs* erhält, werden alle Community-Sites angepasst.
 
 ### Beispiel für eine benutzerdefinierte Site-Vorlage {#custom-site-template-example}
 
-Beispiel: `vertical-sitepage.hbs` ist eine Site-Vorlage, die dazu führt, dass Menülinks unten auf der Seite vertikal platziert werden, anstatt horizontal unter dem Banner.
+Beispiel: `vertical-sitepage.hbs` ist eine Site-Vorlage, die dazu führt, dass Menülinks unten auf der Seite vertikal platziert werden, anstatt horizontal unter dem Banner zu platzieren.
 
 [Datei abrufen](assets/vertical-sitepage.hbs)
 Platzieren Sie die benutzerdefinierte Site-Vorlage im Überlagerungsordner:
 
 `/apps/social/console/components/hbs/sitepage/vertical-sitepage.hbs`
 
-Identifizieren Sie die benutzerdefinierte Vorlage, indem Sie eine `page-template` -Eigenschaft zum Konfigurationsknoten:
+Identifizieren Sie die benutzerdefinierte Vorlage, indem Sie dem Konfigurationsknoten die Eigenschaft `page-template` hinzufügen:
 
 `/content/sites/sample/en/configuration`
 
 ![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-Stellen Sie sicher, **Alle speichern** und replizieren benutzerspezifischen Code für alle Adobe Experience Manager (AEM)-Instanzen (benutzerspezifischer Code ist nicht enthalten, wenn der Community-Site-Inhalt über die Konsole veröffentlicht wird).
+Stellen Sie sicher, dass Sie &quot;**Alle speichern**&quot;verwenden und benutzerdefinierten Code für alle Adobe Experience Manager-Instanzen (AEM) replizieren (benutzerspezifischer Code ist nicht enthalten, wenn der Community-Site-Inhalt über die Konsole veröffentlicht wird).
 
-Es wird empfohlen, benutzerdefinierten Code zu replizieren, indem Sie [Package erstellen](../../help/sites-administering/package-manager.md#creating-a-new-package) und stellen Sie sie auf allen Instanzen bereit.
+Es wird empfohlen, benutzerdefinierten Code zu replizieren, indem Sie [ein Paket erstellen](../../help/sites-administering/package-manager.md#creating-a-new-package) und es auf allen Instanzen bereitstellen.
 
 ## Exportieren einer Community-Site {#exporting-a-community-site}
 
 Nachdem eine Community-Site erstellt wurde, ist es möglich, die Site als AEM Package zu exportieren, das im Package Manager gespeichert und zum Herunterladen und Hochladen verfügbar ist.
 
-Dies ist im Abschnitt [Communities Sites-Konsole](sites-console.md#exporting-the-site).
+Dies ist in der Konsole [Communities-Sites-Konsole](sites-console.md#exporting-the-site) verfügbar.
 
 UGC und benutzerspezifischer Code sind nicht im Community-Site-Paket enthalten.
 
-Verwenden Sie zum Exportieren von benutzergenerierten Inhalten die [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration), ein Open-Source-Migrationstool, das auf GitHub verfügbar ist.
+Verwenden Sie zum Exportieren von benutzergenerierten Inhalten das [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration), ein Open-Source-Migrationstool, das auf GitHub verfügbar ist.
 
 ## Löschen einer Community-Site {#deleting-a-community-site}
 
-Ab AEM Communities 6.3 Service Pack 1 wird das Symbol Website löschen angezeigt, wenn Sie den Mauszeiger über die Community-Site von **[!UICONTROL Communities]** > **[!UICONTROL Sites]** Konsole. Wenn während der Entwicklung eine Community-Site gelöscht und neu gestartet werden soll, können Sie diese Funktion verwenden. Beim Löschen einer Community-Site werden die folgenden Elemente entfernt, die mit dieser Site verbunden sind:
+Ab AEM Communities 6.3 Service Pack 1 wird das Symbol &quot;Site löschen&quot;angezeigt, wenn Sie den Mauszeiger über die Community-Site von der Konsole **[!UICONTROL Communities]** > **[!UICONTROL Sites]** aus bewegen. Wenn während der Entwicklung eine Community-Site gelöscht und neu gestartet werden soll, können Sie diese Funktion verwenden. Beim Löschen einer Community-Site werden die folgenden Elemente entfernt, die mit dieser Site verbunden sind:
 
 * [UGC](#user-generated-content)
 * [Benutzergruppen](#community-user-groups)
@@ -100,7 +100,7 @@ So identifizieren Sie die eindeutige Site-ID, die mit der Community-Site verknü
 
 * Navigieren Sie zum Sprachstamm der Site, z. B. `/content/sites/*<site name>*/en/rep:policy`.
 
-* Suchen Sie die `allow<#>` Knoten mit `rep:principalName` in diesem Format `rep:principalName = *community-enable-nrh9h-members*`.
+* Suchen Sie den Knoten `allow<#>` mit dem Wert `rep:principalName` in diesem Format `rep:principalName = *community-enable-nrh9h-members*`.
 
 * Die Site-ID ist die dritte Komponente von `rep:principalName`
 
@@ -122,13 +122,13 @@ Alle benutzergenerierten Inhalte können entfernt werden oder für eine bestimmt
 
 * `path=/content/usergenerated/asi/mongo/content/sites/engage`
 
-Dadurch werden nur benutzergenerierte Inhalte (in der Veröffentlichungsinstanz eingegeben) und nicht erstellte Inhalte (in der Autoreninstanz eingegeben) entfernt. Daher [Shadow-Knoten](srp.md#shadownodes) nicht betroffen sind.
+Dadurch werden nur benutzergenerierte Inhalte (in der Veröffentlichungsinstanz eingegeben) und nicht erstellte Inhalte (in der Autoreninstanz eingegeben) entfernt. Daher sind [Shadow-Knoten](srp.md#shadownodes) nicht betroffen.
 
 ### Community-Benutzergruppen {#community-user-groups}
 
-In allen Autoren- und Veröffentlichungsinstanzen von der [Sicherheitskonsole](../../help/sites-administering/security.md), suchen und entfernen Sie die [Benutzergruppen](users.md) die
+Suchen und entfernen Sie in allen Autoren- und Veröffentlichungsinstanzen in der [Sicherheitskonsole](../../help/sites-administering/security.md) die [Benutzergruppen](users.md), die:
 
-* Präfix mit `community`
-* Gefolgt von [eindeutige Site-ID](#community-unique-site-id)
+* Mit dem Präfix `community`
+* Gefolgt von [eindeutiger Site-ID](#community-unique-site-id)
 
 Zum Beispiel: `community-engage-x0e11-members`.

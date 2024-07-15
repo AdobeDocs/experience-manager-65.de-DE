@@ -22,7 +22,7 @@ ht-degree: 11%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Die **App verwalten** Die Kachel und die Seite &quot;App verwalten&quot;bieten eine Möglichkeit, Anwendungsmetadaten anzuzeigen und zu bearbeiten. App-Metadaten sind erforderliche Details, um eine Anwendung für den Store eines Anbieters freizugeben. Dazu können gängige Metadaten, iOS-Metadaten und Screenshots gehören. Siehe [App-Kachel verwalten](/help/mobile/phonegap-app-details-tile.md) Weitere Informationen zu allgemeinen und iOS-Metadaten.
+Die Kachel **App verwalten** und die Seite &quot;App verwalten&quot;bieten eine Möglichkeit, Anwendungsmetadaten anzuzeigen und zu bearbeiten. App-Metadaten sind erforderliche Details, um eine Anwendung für den Store eines Anbieters freizugeben. Dazu können gängige Metadaten, iOS-Metadaten und Screenshots gehören. Weitere Informationen zu allgemeinen und iOS-Metadaten finden Sie im Abschnitt [App verwalten](/help/mobile/phonegap-app-details-tile.md) .
 
 ## Bearbeiten der App-Daten {#editing-the-app-data}
 
@@ -32,7 +32,7 @@ So bearbeiten Sie die Metadaten der App:
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Um Details anzuzeigen oder zu bearbeiten, klicken Sie auf das Symbol &quot;...&quot; in der rechten unteren Ecke der **App verwalten** Kachel.
+1. Um Details anzuzeigen oder zu bearbeiten, klicken Sie auf &quot;...&quot;in der rechten unteren Ecke der Kachel &quot;**App verwalten**&quot;.
 
 1. Geben Sie die Details in einen der fünf verfügbaren Registerkarten ein oder zeigen Sie sie an, wie in der folgenden Abbildung dargestellt.
 
@@ -42,7 +42,7 @@ So bearbeiten Sie die Metadaten der App:
 
 Sie können die allgemeinen und IOS-Metadaten bearbeiten:
 
-* Wählen Sie die **Erweitert** Registerkarte auf der App-Beschreibungsseite.
+* Wählen Sie auf der Seite mit der App-Beschreibung die Registerkarte **Erweitert** aus.
 * Bearbeiten oder zeigen Sie die allgemeinen und IOS-Metadaten an. Weitere Informationen finden Sie in den folgenden Zahlen.
 
 ![chlimage_1-31](assets/chlimage_1-31.png) ![chlimage_1-32](assets/chlimage_1-32.png)
@@ -57,7 +57,7 @@ Sie können App-Screenshots in die Metadaten-Datenaggregation aufnehmen. Einige 
 
 Hinzufügen eines Assets als Screenshot:
 
-1. Im Bearbeitungsmodus der **App verwalten** auf &quot;Hinzufügen&quot;klicken (Pluszeichen).
+1. Klicken Sie im Bearbeitungsmodus der Seite **App verwalten** auf Hinzufügen (Plussymbol).
 1. Wählen Sie das Asset aus und klicken Sie auf **Auswählen** , um das Asset hinzuzufügen.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)

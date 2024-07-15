@@ -46,16 +46,16 @@ Die [Speicherkonfigurationskonsole](/help/communities/srp-config.md) ermöglicht
 
 **In AEM Autoreninstanz:**
 
-* Navigieren Sie von der globalen Navigation zu **[!UICONTROL Tools > Communities > Speicherkonfiguration]** und wählen **[!UICONTROL Adobe Storage Resource Provider (ASRP)]**.
+* Navigieren Sie in der globalen Navigation zu **[!UICONTROL Tools > Communities > Speicherkonfiguration]** und wählen Sie **[!UICONTROL Adobe Storage Resource Provider (ASRP)]**.
 
 ![asrp-default](assets/asrp-default.png)
 
 Die folgenden Informationen stammen aus dem Bereitstellungsprozess:
 
-* **Data Center URL**: Pulldown, um das Produktionsdatencenter auszuwählen, das von Ihrem Kundenbetreuer identifiziert wurde.
+* **Data Center URL**: Rufen Sie die Seite ab, um das von Ihrem Kundenbetreuer identifizierte Produktionsdatencenter auszuwählen.
 * **Standard-Report Suite**: Geben Sie den Namen der Standard-Report Suite ein.
-* **Consumer Key**: Geben Sie den Consumer-Schlüssel ein.
-* **Geheimnis**: Geben Sie das Geheimnis ein.
+* **Consumer Key**: Geben Sie den Consumer Key ein.
+* **Geheimnis**: Geben Sie den geheimen Schlüssel ein.
 * Wählen Sie **Absenden**.
 
 Bereiten Sie die Veröffentlichungsinstanzen vor:
@@ -65,11 +65,11 @@ Bereiten Sie die Veröffentlichungsinstanzen vor:
 
 Testen Sie nach dem Senden der Konfiguration die Verbindung:
 
-* Auswählen **Testkonfiguration**.
+* Wählen Sie **Testkonfiguration** aus.
 
   Testen Sie für jede Autoren- und Veröffentlichungsinstanz die Verbindung zum Rechenzentrum über die Konsole Speicherkonfiguration .
 
-* Stellen Sie sicher, dass die Site-URLs für Profildaten vom Rechenzentrum routbar sind durch [Externalisieren von Links](#externalize-links).
+* Stellen Sie sicher, dass die Site-URLs für Profildaten vom Rechenzentrum routbar sind, indem Sie [Links externalisieren](#externalize-links).
 
 ### Replizieren des Crypto-Schlüssels {#replicate-the-crypto-key}
 
@@ -79,7 +79,7 @@ Befolgen Sie die Anweisungen unter [Replizieren des Crypto-Schlüssels](/help/co
 
 ### Externe Links {#externalize-links}
 
-Stellen Sie für korrekte Profil- und Profilbildlinks sicher, dass [Link Externalizer konfigurieren](/help/sites-developing/externalizer.md).
+Stellen Sie sicher, dass Sie für korrekte Profil- und Profilbildlinks [Link Externalizer konfigurieren](/help/sites-developing/externalizer.md).
 
 Stellen Sie sicher, dass die Domänen URLs sind, die über die Data Center URL (ASRP-Endpunkt) routbar sind.
 
@@ -95,25 +95,25 @@ So stellen Sie die identische Konfiguration in der Veröffentlichungsumgebung zu
 
 In AEM Autoreninstanz:
 
-* Navigieren Sie vom Hauptmenü zu **[!UICONTROL Instrumente]** > **[!UICONTROL Implementierung]** > **[!UICONTROL Replikation]**
-* Auswählen **Baum aktivieren**
+* Navigieren Sie vom Hauptmenü zu **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]** .
+* Wählen Sie **Baum aktivieren**
 * **Startpfad**: Navigieren Sie zu `/conf/global/settings/communities/srpc/`
-* Auswahl deaktivieren **Nur geändert**
-* Auswählen **Aktivieren**
+* Deaktivieren Sie **Nur geändert** .
+* Wählen Sie **Activate** aus.
 
 ## Upgrade von AEM 6.0 {#upgrading-from-aem}
 
 >[!CAUTION]
 >
->Wenn Sie ASRP auf einer veröffentlichten Community-Site aktivieren, werden alle bereits in gespeicherten UGCs [JCR](/help/communities/jsrp.md) nicht mehr sichtbar ist, da keine Synchronisierung der Daten zwischen On-Premise-Speicher und Cloud-Speicher erfolgt.
+>Wenn Sie ASRP auf einer veröffentlichten Community-Site aktivieren, sind bereits in [JCR](/help/communities/jsrp.md) gespeicherte benutzergenerierte Inhalte nicht mehr sichtbar, da keine Synchronisierung von Daten zwischen On-Premise-Speicher und Cloud-Speicher erfolgt.
 
-**`AEM Communities Extension`** wurde zuvor in AEM 6.0 Social Communities als Cloud Service eingeführt. Ab AEM 6.1 Communities ist keine Cloud-Konfiguration erforderlich. Wählen Sie einfach ASRP aus der [Speicherkonfigurationskonsole](/help/communities/srp-config.md).
+**`AEM Communities Extension`** wurde zuvor in AEM 6.0 Social Communities als Cloud-Service eingeführt. Ab AEM 6.1 Communities ist keine Cloud-Konfiguration erforderlich. Wählen Sie einfach ASRP aus der [Speicherkonfigurationskonsole](/help/communities/srp-config.md) aus.
 
-Aufgrund der neuen Speicherstruktur ist es erforderlich, die [Upgrade](/help/communities/upgrade.md#adobe-cloud-storage) Anweisungen für die Aktualisierung von Social Communities auf Communities.
+Aufgrund der neuen Speicherstruktur müssen Sie bei der Aktualisierung von Social Communities auf Communities die Anweisungen für das [Upgrade](/help/communities/upgrade.md#adobe-cloud-storage) befolgen.
 
 ## Verwalten von Benutzerdaten {#managing-user-data}
 
-Informationen über *Benutzer*, *Benutzerprofile* und *Benutzergruppen*, häufig in die Veröffentlichungsumgebung eingegeben, Besuch
+Informationen zu *Benutzern*, *Benutzerprofilen* und *Benutzergruppen*, die häufig in die Veröffentlichungsumgebung eingegeben werden, finden Sie unter
 
 * [Benutzersynchronisierung](/help/communities/sync.md)
 * [Verwalten von Benutzern und Benutzergruppen](/help/communities/users.md)
@@ -122,17 +122,17 @@ Informationen über *Benutzer*, *Benutzerprofile* und *Benutzergruppen*, häufig
 
 ### UGC verschwindet nach der Aktualisierung {#ugc-disappears-after-upgrade}
 
-Wenn Sie ein Upgrade von einer bestehenden Social Community-Site AEM 6.0 durchführen, folgen Sie dem [Upgrade-Anweisungen](/help/communities/upgrade.md#adobe-cloud-storage), andernfalls scheint UGC verloren zu sein.
+Wenn Sie von einer bestehenden Social Community-Site AEM 6.0 aktualisieren, folgen Sie den [Upgrade-Anweisungen](/help/communities/upgrade.md#adobe-cloud-storage). Andernfalls scheint UGC verloren zu sein.
 
 ### Authentifizierungsfehler {#authentication-errors}
 
 Wenn Authentifizierungsfehler für die Data Center-URL empfangen und die AEM error.log Meldungen zu veralteten Zeitstempeln enthält, überprüfen Sie, ob eine Zeitsynchronisierung stattfindet.
 
-Verwenden Sie ein Tool wie das [Network Time Protocol (NTP)](https://www.ntp.org/) , um alle AEM Autoren- und Veröffentlichungs-Server zu synchronisieren.
+Verwenden Sie ein Tool wie das [Network Time Protocol (NTP)](https://www.ntp.org/), um die Zeitsynchronisierung aller AEM Autoren- und Veröffentlichungsserver zu ermöglichen.
 
 ### Neue Inhalte werden nicht in Suchvorgängen angezeigt {#new-content-does-not-appear-in-searches}
 
-Die Adobe Cloud-Speicherinfrastruktur verwendet *Konsistenz* , um die Skalierungs- und Leistungsziele zu erreichen. Aus diesem Grund sind neue Inhalte nicht sofort verfügbar und es dauert mehrere Sekunden, bis sie in den Suchergebnissen angezeigt werden.
+Die Adobe-Cloud-Speicherinfrastruktur verwendet *letztendlich Konsistenz*, um Skalierungs- und Leistungsziele zu erreichen. Aus diesem Grund sind neue Inhalte nicht sofort verfügbar und es dauert mehrere Sekunden, bis sie in den Suchergebnissen angezeigt werden.
 
 Während das Intervall, das sich auf die Konsistenz auswirkt, überwacht wird, wenden Sie sich an Ihren Kundenbetreuer, wenn es länger als einige Sekunden dauert, bis neue Inhalte bei Suchvorgängen angezeigt werden.
 
@@ -144,5 +144,5 @@ Rufen Sie auf allen Autoren- und Veröffentlichungsinstanzen AEM die Konsole Spe
 
 Wenn in JCR [/conf/global/settings/communities](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 
-* Enthält keine [srpc](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp) Knoten bedeutet dies, dass der Speicheranbieter JSRP ist.
-* Wenn der Knoten srpc vorhanden ist und enthält [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration) -Knoten verwenden, definieren die Eigenschaften der Standardkonfiguration ASRP als Standardanbieter.
+* Enthält keinen Knoten [srpc](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp) , bedeutet dies, dass der Speicheranbieter JSRP ist.
+* Wenn der Knoten srpc vorhanden ist und den Knoten [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration) enthält, definieren die Eigenschaften der Standardkonfiguration ASRP als Standardanbieter.

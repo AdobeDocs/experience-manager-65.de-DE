@@ -20,7 +20,7 @@ ht-degree: 5%
 
 Dieser Abschnitt richtet sich an diejenigen, die AEM Communities verwalten und mit AEM Communities-Funktionen vertraut sind.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Einen Überblick und die ersten Schritte finden Sie unter:
 
@@ -55,22 +55,22 @@ Einen Überblick und die ersten Schritte finden Sie unter:
 
 Eine wichtige Funktion von AEM Communities ist die Erstellung benutzergenerierter Inhalte (UGC), die von angemeldeten Site-Besuchern (Mitgliedern) erstellt wurden. Weitere Informationen zur Arbeit mit UGC finden Sie unter:
 
-* [Häufiger UGC Store](working-with-srp.md): Auswahl des SRP für die gemeinsame Speicherung von UGC
-* [Moderieren von benutzergenerierten Inhalten](moderate-ugc.md): vertrauenswürdige Mitglieder können UGC in großen Mengen oder im Kontext moderieren.
-* [Tagging von benutzergenerierten Inhalten](tag-ugc.md): -Funktionen können so konfiguriert werden, dass Mitglieder Inhalte taggen können.
-* [UGC übersetzen](translate-ugc.md): -Funktionen können so konfiguriert sein, dass alle UGC-Dateien übersetzt werden oder Mitglieder ausgewählte Beiträge übersetzen können.
-* [Analytics-Konfiguration](analytics.md): Aktivierung von Adobe Analytics für Berichte zu verschiedenen Metriken zur Mitgliederaktivität.
+* [Allgemeiner UGC-Store](working-with-srp.md): Auswahl von SRP für freigegebenen Speicher von UGC
+* [Moderieren von benutzergenerierten Inhalten](moderate-ugc.md): vertrauenswürdige Mitglieder können benutzergenerierte Inhalte in großen Mengen oder im Kontext moderieren
+* [Tagging von UGC](tag-ugc.md): Funktionen können so konfiguriert sein, dass Mitglieder Inhalte taggen können.
+* [UGC übersetzen](translate-ugc.md): Funktionen können so konfiguriert sein, dass alle benutzergenerierten Inhalte übersetzt werden oder es Mitgliedern gestattet ist, ausgewählte Beiträge zu übersetzen
+* [Analytics-Konfiguration](analytics.md): Aktivierung von Adobe Analytics für Berichte zu verschiedenen Metriken zur Mitgliederaktivität
 
 ### Community-Mitglieder {#community-members}
 
 * [Verwalten von Benutzern und Benutzergruppen](users.md): Details zu Community-Mitgliedern und Mitgliedergruppen, einschließlich privilegierter Mitglieder.
 * [Beitragsbeschränkungen](limits.md): Möglichkeit, die Veröffentlichung durch neue Mitglieder zu beschränken.
 * [Tunneldienst](deploy-communities.md#tunnel-service-on-author): ermöglicht den Zugriff auf Mitglieder und Mitgliedergruppen auf der Veröffentlichungsseite über die Autorenumgebung.
-* [Mitglieder und Gruppenkonsolen](members.md): ermöglicht die Erstellung und Verwaltung von Mitgliedern und Mitgliedergruppen auf der Veröffentlichungsseite über die Autorenumgebung.
+* [Mitglieder und Gruppen-Konsolen](members.md): Ermöglicht die Erstellung und Verwaltung von Mitgliedern und Mitgliedergruppen auf der Veröffentlichungsseite über die Autorenumgebung.
 * [Benutzersynchronisierung](sync.md): zum Synchronisieren von Mitgliedern und Mitgliedergruppen über mehrere Veröffentlichungsinstanzen hinweg.
-* [Social-Anmeldung mit Facebook und Twitter](social-login.md): Möglichkeit für Site-Besucher, mit ihren Facebook- oder Twitter-Anmeldeinformationen Community-Mitglied zu werden.
-* [Scoring und Abzeichen](implementing-scoring.md): Möglichkeit, Abzeichen zuzuweisen, um die Rollen eines Mitglieds zu identifizieren, und Abzeichen zu sammeln, wenn Mitglieder an der Community teilnehmen.
-* [Benachrichtigungen](notifications.md): Möglichkeit für Mitglieder, über Aktivitäten benachrichtigt zu werden, denen sie folgen.
+* [Social-Anmeldung bei Facebook und Twitter](social-login.md): Möglichkeit für Site-Besucher, mit ihren Facebook- oder Twitter-Anmeldeinformationen Community-Mitglied zu werden.
+* [Scoring und Badges](implementing-scoring.md): Möglichkeit, Abzeichen zuzuweisen, um Rollen eines Mitglieds zu identifizieren, und Abzeichen zu sammeln, indem Mitglieder an der Community teilnehmen.
+* [Benachrichtigungen](notifications.md): Möglichkeit für Mitglieder, über die ihnen anschließende Aktivität informiert zu werden.
 * [Abonnements](subscriptions.md): Möglichkeit für Mitglieder, mit der Community per externer E-Mail zu interagieren.
 * [Messaging](messaging.md): Möglichkeit für Mitglieder, mithilfe interner Nachrichten mit der Community zu interagieren.
 
@@ -86,12 +86,12 @@ Es ist wichtig, die neueste Communities-Version auf der AEM zu installieren:
 
 * [Neuestes Communities Feature Pack](deploy-communities.md#latestfeaturepack)
 
-Auf der Bereitstellungsseite finden Sie weitere Communities-spezifische Informationen, z. B. für [Upgrade](upgrade.md), [Dispatcher](dispatcher.md), und [Replikation](deploy-communities.md#replication-agents-on-author).
+Auf der Bereitstellungsseite finden Sie weitere Communities-spezifische Informationen, z. B. für die [Aktualisierung](upgrade.md), [Dispatcher](dispatcher.md) und die [Replikation](deploy-communities.md#replication-agents-on-author).
 
 ## Verwandte Communities - Dokumentation {#related-communities-documentation}
 
-* Besuch [Bereitstellen von Communities](deploy-communities.md) wo Sie mehr über empfohlene Bereitstellungen erfahren können.
+* Besuchen Sie [Communities bereitstellen](deploy-communities.md) , wo Sie Informationen zu empfohlenen Bereitstellungen erhalten.
 
-* Besuch [Entwickeln von Communities](communities.md) Hier erfahren Sie mehr über das Social Component Framework (SCF) und das Anpassen von Communities-Komponenten und -Funktionen.
+* Besuchen Sie [Entwickeln von Communities](communities.md) , wo Sie mehr über das Social-Komponenten-Framework (SCF) und die Anpassung von Communities-Komponenten und -Funktionen erfahren.
 
-* Besuch [Erstellen von Communities-Komponenten](author-communities.md) Hier erfahren Sie, wie Sie Communities-Komponenten erstellen und konfigurieren.
+* Besuchen Sie [Authoring von Communities-Komponenten](author-communities.md) , wo Sie erfahren können, wie Sie Communities-Komponenten erstellen und konfigurieren.

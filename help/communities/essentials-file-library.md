@@ -29,7 +29,7 @@ Diese Seite enthält die grundlegenden Informationen für die Arbeit mit der Dat
    <td>social/filelibrary/components/hbs/filelibrary</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ Diese Seite enthält die grundlegenden Informationen für die Arbeit mit der Dat
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Siehe <a href="file-library.md">Dateibibliothek-Funktion</a></td>
+   <td>Siehe <a href="file-library.md">Funktion "Dateibibliothek"</a></td>
   </tr>
  </tbody>
 </table>
@@ -63,20 +63,20 @@ Diese Seite enthält die grundlegenden Informationen für die Arbeit mit der Dat
 
 ### Dateibibliotheksfunktion {#file-library-function}
 
-Eine Community-Site-Struktur mit [Dateibibliotheksfunktion](functions.md#file-library-function)enthält eine konfigurierte `file library` -Komponente.
+Eine Community-Site-Struktur, die die [Funktion &quot;Dateibibliothek&quot;](functions.md#file-library-function) enthält, enthält eine konfigurierte `file library` -Komponente.
 
 ### Zugreifen auf für Dateibibliotheken gepostete Kommentare {#accessing-comments-posted-for-file-libraries-ugc}
 
 UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für benutzergenerierte Inhalte den programmatischen Zugriff auf benutzergenerierte Inhalte, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
 
-**Speicherort und Format der UGC im Repository können ohne Warnung geändert werden**.
+**Speicherort und Format des UGC im Repository können sich ohne Warnung ändern**.
 
 Siehe:
 
 * [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
+* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
 * [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
-* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnung veralteter Methoden für Dienstprogramme zu aktuellen SRP-Dienstprogrammmethoden.
+* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.

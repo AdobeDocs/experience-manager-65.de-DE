@@ -8,18 +8,18 @@ role: User
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1505'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Experience Fragments{#experience-fragments}
 
-In Adobe Experience Manager (AEM) ist ein Experience Fragment eine Gruppe aus einer oder mehreren Komponenten, einschließlich Inhalt und Layout, auf die innerhalb von Seiten verwiesen werden kann. Sie können jede beliebige Komponente enthalten.
+In Adobe Experience Manager (AEM) ist ein Experience Fragment eine Gruppe aus einer oder mehreren Komponenten (einschließlich Inhalt und Layout), die innerhalb von Seiten referenziert werden können. Sie können jede beliebige Komponente enthalten.
 
 Ein Experience Fragment:
 
 * ist Teil eines Erlebnisses (Seite).
-* Kann auf mehreren Seiten verwendet werden (basierend auf bearbeitbaren Vorlagen).
+* kann auf mehreren Seiten verwendet werden (basierend auf bearbeitbaren Vorlagen).
 * basiert auf einer (bearbeitbaren) Vorlage, die seine Struktur und Komponenten definiert.
 * Diese Vorlage wird verwendet, um die *Stammseite* des Experience Fragments zu erstellen.
 * besteht aus einer oder mehreren Komponenten mit Layout in einem Absatzsystem.
@@ -32,7 +32,7 @@ Ein Experience Fragment:
 Experience Fragments können in folgenden Fällen verwendet werden:
 
 * Wenn Autorinnen oder Autoren die Teile einer Seite (die sogenannten Fragmente eines Erlebnisses) wiederverwenden möchten, müssen sie das entsprechende Fragment kopieren und an der gewünschten Stelle einfügen. Das Erstellen und Verwalten dieser zum Kopieren/Einfügen vorgesehenen Erlebnisse sind zeitaufwendige und fehleranfällige Verfahren. Mit Experience Fragments ersparen Sie sich das Kopieren/Einfügen.
-* Zur Unterstützung des Nutzungsszenarios mit Headless-Content-Management-Systemen. Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. In diesem Fall würde das Erlebnis über ein System/einen Touchpoint eines Drittanbieters aufgenommen und dann an die Endbenutzerin bzw. den Endbenutzer weitergeben werden.
+* Zur Unterstützung des Nutzungsszenarios mit Headless-Content-Management-Systemen. Autorinnen und Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kundschaft. In diesem Fall würde das Erlebnis über ein System/einen Touchpoint eines Drittanbieters aufgenommen und dann an die Endbenutzerin bzw. den Endbenutzer weitergeben werden.
 * Mit [Multi-Site-Management (MSM)](/help/sites-administering/msm.md), da ein Experience Fragment Teil einer Seite ist. Dies gilt sowohl für die einzelnen Fragmente als auch für die Ordner, in denen sie sich befinden.
 
 >[!NOTE]
@@ -54,7 +54,7 @@ Experience Fragments sollten in folgenden Fällen verwendet werden:
 * Wenn Sie AEM als Inhaltsbereitstellungs-Plattform für Dritte nutzen möchten.
 
    * Nutzung durch beliebige Lösungen, bei denen AEM als Plattform zur Inhaltsbereitstellung fungieren soll
-   * Einbetten von Inhalten in Touchpoints von Drittanbietern
+   * Beim Einbetten von Inhalten in Touchpoints von Drittanbietern
 
 * Wenn Sie über ein Erlebnis mit unterschiedlichen Varianten oder Ausgabedarstellungen verfügen.
 

@@ -26,19 +26,19 @@ ht-degree: 7%
 >
 >**Voraussetzung**:
 >
->Bevor Sie mehr über das Erstellen und Ändern freigegebener Ressourcen erfahren, lesen Sie [Inhaltssynchronisierung](/help/mobile/mobile-ondemand-contentsync.md) um die grundlegenden Konzepte zu verstehen.
+>Bevor Sie mehr über das Erstellen und Ändern freigegebener Ressourcen erfahren, lesen Sie den Abschnitt [Inhaltssynchronisierung](/help/mobile/mobile-ondemand-contentsync.md) , um die grundlegenden Konzepte zu verstehen.
 
 AEM Mobile-Benutzer verwenden die Inhaltssynchronisierung, um Live-Inhalte für die Verwendung in mobilen Apps in statische Inhalte zu exportieren. Dieser Export erfolgt beim Hochladen von Inhalten in Mobile On-Demand Services von AEM Mobile.
 
-Die Eigenschaft ***dps-exportTemplate*** definiert den Pfad zu den Exportkonfigurationen der App. Legen Sie diese Eigenschaft fest, um freigegebene Ressourcen zu erstellen und zu ändern.
+Die in der obigen Tabelle erwähnte Eigenschaft ***dps-exportTemplate*** definiert den Pfad zu den Exportkonfigurationen der App. Legen Sie diese Eigenschaft fest, um freigegebene Ressourcen zu erstellen und zu ändern.
 
 Die folgenden Ressourcen beschreiben den Export von Inhalten aus Adobe Experience Manager (AEM) zum Hochladen in AEM Mobile.
 
 Artikel enthalten Inhalte, die exportiert und hochgeladen werden müssen. Ein Teil dieses Inhalts kann zwischen Artikeln freigegeben werden.
 
-Verwendung [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) , um den Inhalt zu sammeln und eine ***Freigegebene Ressourcen*** Paket.
+Verwenden Sie [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) , um den Inhalt zusammenzustellen und ein Paket mit den ***freigegebenen Ressourcen*** zu erstellen.
 
-Die Konfiguration von ContentSync unter **&lt;dps-exporttemplate>/dps-article>** sollte so konfiguriert werden, dass alle Inhalte und Artikel exportiert werden, die für das statische Rendering der Eigenschaften auf dem Gerät erforderlich sind.
+Die Konfiguration ContentSync unter **&lt;dps-exportTemplate>/dps-article>** sollte so konfiguriert werden, dass alle Inhalte und Artikel exportiert werden, die für das statische Rendering der Eigenschaften auf dem Gerät erforderlich sind.
 
 >[!CAUTION]
 >

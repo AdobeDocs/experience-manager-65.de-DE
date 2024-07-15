@@ -24,15 +24,16 @@ Dieser Abschnitt enthält häufige Probleme und bekannte Probleme bei der Fehler
 
 ### Dispatcher-Neuabruf schlägt fehl {#dispatcher-refetch-fails}
 
-Bei Verwendung von Dispatcher 4.1.5 mit einer neueren Version von Jetty kann eine Refektion dazu führen, dass &quot;Antwort vom Remote-Server kann nicht empfangen&quot;angezeigt wird, nachdem auf die Zeitüberschreitung bei der Anfrage gewartet wurde.
+Bei Verwendung von Dispatcher 4.1.5 mit einer neueren Jetty-Version kann eine Refektion dazu führen, dass die Antwort vom Remote-Server nicht empfangen werden kann, nachdem auf die Anfrage gewartet wurde, bis eine Zeitüberschreitung auftritt.
 
-Dieses Problem wird durch die Verwendung von Dispatcher 4.1.6 oder höher behoben.
+Durch die Verwendung von Dispatcher 4.1.6 oder höher wird dieses Problem behoben.
 
-### Nach der Aktualisierung von CQ 5.4 kann nicht auf Forumsbeiträge zugegriffen werden {#cannot-access-forum-post-after-upgrading-from-cq}
+### Zugriff auf Forum Post nach der Aktualisierung von CQ 5.4 nicht möglich {#cannot-access-forum-post-after-upgrading-from-cq}
 
 Wenn ein Forum in CQ 5.4 erstellt wurde und Themen veröffentlicht wurden und die Site dann auf AEM 5.6.1 oder höher aktualisiert wurde, kann der Versuch, die vorhandenen Beiträge anzuzeigen, zu einem Fehler auf der Seite führen:
 
-Unzulässiges Musterzeichen &#39;a&#39; Kann Anfrage nicht an senden `/content/demoforums/forum-test.html` auf diesem Server und die Protokolle enthalten Folgendes:
+Unzulässiges Musterzeichen &#39;a&#39;
+Anfrage kann nicht an `/content/demoforums/forum-test.html` auf diesem Server gesendet werden und die Protokolle enthalten Folgendes:
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -46,11 +47,11 @@ Das Problem besteht darin, dass die Formatzeichenfolge für com.day.cq.commons.d
 Daher muss jeder Code, der die RelativeTimeFormat()-API verwendet, Folgendes ändern:
 
 * Von: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
-* An: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
+* Bis: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-Der Fehler unterscheidet sich bei der Autoren- und Veröffentlichungsinstanz. In der Autoreninstanz schlägt es still fehl und zeigt die Forenthemen einfach nicht an. Bei der Veröffentlichung wird der Fehler auf der Seite ausgegeben.
+Der Fehler unterscheidet sich in der Autoreninstanz und in Publish. In der Autoreninstanz schlägt es still fehl und zeigt die Forenthemen einfach nicht an. In Publish wird der Fehler auf der Seite ausgegeben.
 
-Siehe [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API für weitere Informationen.
+Weitere Informationen finden Sie in der API [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) .
 
 ## Häufige Bedenken {#common-concerns}
 
@@ -58,9 +59,9 @@ Siehe [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/e
 
 Während des Starts (nicht beim ersten, sondern bei jedem weiteren Start) kann die folgende Warnung in den Protokollen angezeigt werden:
 
-* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` ersetzt durch `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
+* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` wurde durch `com.adobe.cq.social.handlebars.I18nHelper@15bac645` ersetzt
 
-Diese Warnung kann sicher ignoriert werden als `jknack.handlebars.Handlebars`verwendet von [SCF](scf.md#handlebarsjavascripttemplatinglanguage), ist mit einem eigenen i18n Helper-Dienstprogramm ausgestattet. Beim Start wird er durch eine AEM-spezifische [i18n Helper](handlebars-helpers.md#i-n). Diese Warnung wird von der Bibliothek eines Drittanbieters generiert, um das Außerkraftsetzen eines vorhandenen Helfers zu bestätigen.
+Diese Warnung kann sicher ignoriert werden, da `jknack.handlebars.Handlebars`, verwendet von [SCF](scf.md#handlebarsjavascripttemplatinglanguage), mit einem eigenen i18n-Hilfsprogramm geliefert wird. Beim Start wird er durch einen AEM-spezifischen [i18n-Helfer](handlebars-helpers.md#i-n) ersetzt. Diese Warnung wird von der Bibliothek eines Drittanbieters generiert, um das Außerkraftsetzen eines vorhandenen Helfers zu bestätigen.
 
 ### Warnung in Protokollen: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

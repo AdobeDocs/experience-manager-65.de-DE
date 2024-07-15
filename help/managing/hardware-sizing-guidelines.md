@@ -286,13 +286,13 @@ Weisen Sie mindestens 16 GB Heap zu und konfigurieren Sie den Workflow [!UICONT
 
 >[!NOTE]
 >
->Ein höherer Datendurchsatz bedeutet, dass die Rechenressourcen mit der System-E/A Schritt halten müssen und umgekehrt. Wenn beispielsweise Workflows durch den Import von Bildern gestartet werden, kann das Hochladen vieler Bilder über WebDAV zu einem Rückstau von Workflows führen.
+Ein höherer Datendurchsatz bedeutet, dass die Rechenressourcen mit der System-E/A Schritt halten müssen und umgekehrt. Wenn beispielsweise Workflows durch den Import von Bildern gestartet werden, kann das Hochladen vieler Bilder über WebDAV zu einem Rückstau von Workflows führen.
 >
->Die Verwendung von separaten Festplatten für TarPM, Datenspeicher und Suchindex kann helfen, das E/A-Verhalten des Systems zu optimieren (in der Regel ist es jedoch sinnvoll, den Suchindex lokal zu halten).
+Die Verwendung von separaten Festplatten für TarPM, Datenspeicher und Suchindex kann helfen, das E/A-Verhalten des Systems zu optimieren (in der Regel ist es jedoch sinnvoll, den Suchindex lokal zu halten).
 
 >[!NOTE]
 >
->Siehe auch [Handbuch zur Leistung von Assets](/help/sites-deploying/assets-performance-sizing.md).
+Siehe auch [Handbuch zur Leistung von Assets](/help/sites-deploying/assets-performance-sizing.md).
 
 ### Multi-Site-Manager {#multi-site-manager}
 

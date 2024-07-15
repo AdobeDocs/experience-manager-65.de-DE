@@ -18,30 +18,30 @@ ht-degree: 6%
 
 # OSGi-Ereignisse für Communities-Komponenten  {#osgi-events-for-communities-components}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Wenn Mitglieder mit Communities-Funktionen interagieren, werden OSGi-Ereignisse gesendet, die asynchrone Listener wie Benachrichtigungen oder Gamification (Scoring und Badging) in Trigger setzen können.
 
-Die [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) -Instanz zeichnet die Ereignisse als `actions` die für `topic`. Das SocialEvent enthält eine Methode zum Zurückgeben einer `verb` mit der Aktion verknüpft ist. Es gibt eine *n-1* Beziehung `actions` und `verbs`.
+Die Instanz [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) einer Komponente zeichnet die Ereignisse als `actions` auf, die für einen `topic` auftreten. Das SocialEvent enthält eine Methode, mit der eine mit der Aktion verknüpfte `verb` zurückgegeben wird. Es gibt eine *n-1* Beziehung zwischen `actions` und `verbs`.
 
-Die folgenden Tabellen beschreiben für die in der Version bereitgestellten Communities-Komponenten die `verbs` für jeden `topic` zur Verwendung verfügbar.
+Die folgenden Tabellen beschreiben für die in der Version bereitgestellten Communities-Komponenten die für jeden `topic` definierten, zur Verwendung verfügbaren `verbs`.
 
 ## Themen und Verben {#topics-and-verbs}
 
 [Kalenderkomponente](calendar-basics-for-developers.md)
 SocialEvent `topic`= com/adobe/cq/social/calendar
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt ein Kalenderereignis |
 | HINZUFÜGEN | Bemerkungen von Mitgliedern zu Kalenderereignissen |
 | AKTUALISIEREN | Kalenderereignis oder -kommentar eines Mitglieds wird bearbeitet |
 | LÖSCHEN | Kalenderereignis oder -kommentar eines Mitglieds wird gelöscht |
 
-[Kommentarkomponente](essentials-comments.md)
+[Kommentar-Komponente](essentials-comments.md)
 SocialEvent `topic`= com/adobe/cq/social/comment
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt Kommentar |
 | HINZUFÜGEN | Antwort des Mitglieds auf Stellungnahme |
@@ -51,7 +51,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 [Dateibibliothekskomponente](essentials-file-library.md)
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt Ordner |
 | ANHÄNGEN | Mitglied lädt eine Datei hoch |
@@ -61,7 +61,7 @@ SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 [Forumkomponente](essentials-forum.md)
 SocialEvent `topic`= com/adobe/cq/social/forum
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglieder erstellen Forumthema |
 | HINZUFÜGEN | Antworten von Mitgliedern auf Forumthema |
@@ -71,7 +71,7 @@ SocialEvent `topic`= com/adobe/cq/social/forum
 [Journalkomponente](blog-developer-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/journal
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt einen Blog-Artikel |
 | HINZUFÜGEN | Kommentare von Mitgliedern zu Blogartikeln |
@@ -81,7 +81,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 [QnA-Komponente](qna-essentials.md)
 SocialEvent `topic` = com/adobe/cq/social/qna
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt eine Frage zur Fragen-und-Antworten-Frage |
 | HINZUFÜGEN | Mitglied erstellt eine Antwort auf Fragen und Antworten |
@@ -90,10 +90,10 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 | UNSELECT | Die Antwort des Mitglieds ist deaktiviert. |
 | LÖSCHEN | Frage oder Antwort des Mitglieds wird gestrichen |
 
-[Überprüfungskomponente](reviews-basics.md)
+[Prüfungskomponente](reviews-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/review
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt Überprüfung |
 | AKTUALISIEREN | Überprüfung durch Mitglieder wird bearbeitet |
@@ -102,7 +102,7 @@ SocialEvent `topic`= com/adobe/cq/social/review
 [Bewertungskomponente](rating-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/tally
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | RATE HINZUFÜGEN | Der Inhalt des Mitglieds wurde bewertet. |
 | RATE ENTFERNEN | Der Inhalt des Mitglieds wurde mit einer |
@@ -110,7 +110,7 @@ SocialEvent `topic`= com/adobe/cq/social/tally
 [Abstimmungskomponente](essentials-voting.md)
 SocialEvent `topic`= com/adobe/cq/social/tally
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | ABSTIMMUNG HINZUFÜGEN | Der Inhalt des Mitglieds wurde abgestimmt |
 | ABSTIMMUNG ENTFERNEN | Über den Inhalt des Mitglieds wurde abgestimmt |
@@ -118,7 +118,7 @@ SocialEvent `topic`= com/adobe/cq/social/tally
 **Moderationsfähige Komponenten**
 SocialEvent `topic`= com/adobe/cq/social/moderation
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | ABLEHNEN | Inhalt des Mitglieds wird abgelehnt |
 | FLAG-AS-INAPPROPRIATE | Inhalt des Mitglieds ist gekennzeichnet |
@@ -129,9 +129,9 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 ## Ereignisse für benutzerdefinierte Komponenten {#events-for-custom-components}
 
-Bei einer benutzerdefinierten Komponente muss die Variable [Abstrakte SocialEvent-Klasse](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) muss erweitert werden, um die Ereignisse der Komponente als `actions`die für `topic`.
+Bei einer benutzerdefinierten Komponente muss die abstrakte [SocialEvent-Klasse](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) erweitert werden, um die Ereignisse der Komponente als `actions` aufzuzeichnen, die für eine `topic` auftreten.
 
-Das benutzerspezifische Ereignis überschreibt die -Methode `getVerb()` , damit `verb`wird für jeden `action`. Die `verb` für eine Aktion zurückgegeben wird, kann eine häufig verwendete Aktion sein (z. B. `POST`) oder einer für die Komponente spezialisierten Komponente (z. B. `ADD RATING`). Es gibt eine *n-1* Beziehung `actions`und `verbs`.
+Das benutzerspezifische Ereignis überschreibt die Methode `getVerb()`, sodass für jede `action` ein entsprechendes `verb`zurückgegeben wird. Die für eine Aktion zurückgegebene `verb` kann eine häufig verwendete (z. B. `POST`) oder für die Komponente spezialisierte (z. B. `ADD RATING`) sein. Es gibt eine *n-1* Beziehung zwischen `actions`und `verbs`.
 
 >[!NOTE]
 >
@@ -142,7 +142,7 @@ Das benutzerspezifische Ereignis überschreibt die -Methode `getVerb()` , damit 
 [org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);
 [com.adobe.cq.social.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);
 [com.adobe.granite.activitystreams.ObjectTypes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);
-[com.adobe.granite.activitystreams.verbs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html);
+[com.adobe.granite.activitystreams.Verbs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html);
 
 ```java
 package com.mycompany.recipe;
@@ -246,7 +246,7 @@ Im folgenden Pseudo-Codebeispiel werden DELETE-Ereignisse für Kommentar-Kompone
 
 ### Pseudocode für EventListener {#pseudo-code-for-eventlistener}
 
-Erfordert [neueste Feature Pack](deploy-communities.md#latestfeaturepack).
+Erfordert [neuestes Feature Pack](deploy-communities.md#latestfeaturepack).
 
 ```java
 package my.company.comments;

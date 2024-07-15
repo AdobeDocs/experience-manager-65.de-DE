@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Für AEM Communities kann die Moderation von Administratoren und vertrauenswürdigen Community-Mitgliedern direkt auf der veröffentlichten Seite erfolgen, auf der die Community-Inhalte veröffentlicht wurden.
 
-Bei der Verwendung von [Moderationskonsole](moderation.md)enthalten die für den Inhalt angezeigten Informationen einen Link zur veröffentlichten Seite, um den Zugriff auf zusätzliche Moderationsaktionen zu ermöglichen, die bei der Moderation im Kontext verfügbar sind.
+Bei Verwendung einer [Moderationskonsole](moderation.md) enthalten die für den Inhalt angezeigten Informationen einen Link zur veröffentlichten Seite, um den Zugriff auf zusätzliche Moderationsaktionen zu ermöglichen, die beim Moderieren im Kontext verfügbar sind.
 
 ## Moderationsaktionen {#moderation-actions}
 
@@ -38,11 +38,11 @@ Die Benutzeroberfläche, die dem Moderator auf der Veröffentlichungsinstanz ang
 
 ## Beispiel {#example}
 
-Verwenden der [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) Site erstellt, wenn [Erste Schritte mit AEM Communities](getting-started.md)kann in einem Forum ein Thread eingerichtet werden, in dem verschiedene Moderationsaktivitäten in der Veröffentlichungsumgebung stattfinden. Siehe unten.
+Mithilfe der Site [Geometrixx-Interaktion](http://localhost:4503/content/sites/engage/en.html) , die beim Einstieg in die Arbeit mit AEM Communities erstellt wurde[, können Sie einen Thread in einem Forum einrichten, in dem Sie verschiedene Moderationsaktivitäten in der Publish-Umgebung erleben können. ](getting-started.md) Siehe unten.
 
-Aaron McDonald (`aaron.mcdonald@mailinator.com`) als vertrauenswürdiges Community-Mitglied identifiziert wurde, indem er ihn bei der Erstellung der Site der Gruppe community-engage-moderators hinzugefügt hat.
+Aaron McDonald (`aaron.mcdonald@mailinator.com`) wurde als vertrauenswürdiges Community-Mitglied identifiziert, indem er ihn bei der Erstellung der Site zur Gruppe Community-engagierter Moderatoren hinzufügte.
 
-Rebekah Larsen (`rebekah.larsen@trashymail.com`) kann als Mitglied der Community-engage-members-Gruppe hinzugefügt werden, indem die [Mitgliederkonsole](members.md).
+Rebekah Larsen (`rebekah.larsen@trashymail.com`) kann über die [Mitgliederkonsole](members.md) als Mitglied der Community-Interaktionsmitgliedern-Gruppe hinzugefügt werden.
 
 Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](users.md).
 
@@ -51,7 +51,7 @@ Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten v
 * Als Rebekah Larsen anmelden (rebekah.larsen@trashymail.com)
 
    * Forum auswählen
-   * Neuen Beitrag auswählen
+   * Neue Post auswählen
    * Betreff eingeben
 
      Wann wird der Nektar in der Humming-Vogelzucht geändert?
@@ -60,14 +60,14 @@ Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten v
 
      Ich hatte nicht viel Erfolg, wenn ich jedes Jahr einen Kolibris-Feder aufhänge. Anscheinend kommen sie an ein oder zwei Tagen, dann ist es so. Ich ändere es einmal in der Woche ist das zu lang? Muss ich es früher ändern?
 
-   * Beitrag auswählen
+   * Post auswählen
    * Log Out auswählen
 
 * Melden Sie sich als Aaron McDonald an (aaron.mcdonald@mailinator.com)
 
    * Forum auswählen
    * Wählen Sie für das Thema &quot;Hummingbird&quot;die Option &quot;Mehr lesen&quot;
-   * Geben Sie den Kommentar für Antwort posten ein.
+   * Geben Sie den Kommentar für die Post-Antwort ein.
 
      Ich wechsele meine Woche einmal und bekomme sie von Mai bis Oktober.
 
@@ -78,7 +78,7 @@ Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten v
 
    * Forum auswählen
    * Wählen Sie für das Thema &quot;Hummingbird&quot;die Option &quot;Mehr lesen&quot;
-   * Geben Sie den Kommentar für Antwort posten ein.
+   * Geben Sie den Kommentar für die Post-Antwort ein.
 
      Ich verkaufe Nektar und Feeds - besuchen Sie https://my.viral.url/
 
@@ -95,9 +95,9 @@ Ein anonymer Site-Besucher kann nur das Forum anzeigen, jedoch keine Inhalte pos
 
 ### Neues Mitglied (#4) {#new-member}
 
-Melden Sie sich auf der Autoreninstanz als Administrator an und fügen Sie Boyd Larsen (boyd.larsen@dodgit.com) als neues Mitglied der Community-Interaktionsmitgliedern-Gruppe hinzu, indem Sie die [Mitgliederkonsole](members.md)und dann abmelden.
+Melden Sie sich beim Autor als Administrator an und fügen Sie Boyd Larsen (boyd.larsen@dodgit.com) als neues Mitglied der Gruppe &quot;community-engage-members&quot;mithilfe der [Members console](members.md) hinzu und melden Sie sich dann ab.
 
-Melden Sie sich bei der Veröffentlichung als Boyd Larsen an und greifen Sie auf den Thread zu, indem Sie `Forum`, und dann `Read more` für den Kolibris Post.
+Melden Sie sich bei der Veröffentlichung als Boyd Larsen an und greifen Sie auf den Thread zu, indem Sie &quot;`Forum`&quot; und &quot;`Read more`&quot; für den Posting &quot;Hummingbird&quot;auswählen.
 
 Hinweis:
 
@@ -122,7 +122,7 @@ Hinweis:
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Wählen Sie das Menüelement Administration aus, damit Sie auf [Moderationskonsole](moderation.md) aus der Veröffentlichungsumgebung aus.
+Wählen Sie das Menüelement Administration aus, damit Sie in der Publish-Umgebung auf die [Moderationskonsole](moderation.md) zugreifen können.
 
 Beachten Sie, dass für einen Administrator alle moderierbaren Inhalte sichtbar sind, nicht nur Inhalte von der Community-Site &quot;Geometrixx Engage&quot;.
 
@@ -134,7 +134,7 @@ Abmelden.
 
 ### Community-Moderator (#2) {#community-moderator}
 
-Melden Sie sich als Aaron McDonald (`aaron.mcdonal@mailinator.com`), einem Community-Moderator, und greifen Sie auf den Thread zu, indem Sie Forum auswählen und dann mehr über den Hummingbird-Beitrag lesen.
+Melden Sie sich als Aaron McDonald (`aaron.mcdonal@mailinator.com`) an, ein Community-Moderator, und greifen Sie auf den Thread zu, indem Sie Forum auswählen und dann mehr über den Komingbird-Beitrag lesen.
 
 Hinweis:
 
@@ -145,7 +145,7 @@ Hinweis:
 
 ![community-forum-moderator](assets/community-forum-moderator.png)
 
-Wählen Sie das Menüelement Administration aus, damit Sie auf [Moderationskonsole](moderation.md) aus der Veröffentlichungsumgebung aus.
+Wählen Sie das Menüelement Administration aus, damit Sie in der Publish-Umgebung auf die [Moderationskonsole](moderation.md) zugreifen können.
 
 Beachten Sie, dass für einen Community-Moderator nur moderierbare Inhalte von der Geometrixx Engage Community-Site angezeigt werden.
 
@@ -157,7 +157,7 @@ Abmelden.
 
 ### Inhaltsautor (#1) {#content-author}
 
-Anmelden als Rebekah Larsen (`rebekah.larsen@mailinator.com`), ein Community-Mitglied, das den Thread gestartet hat, und auf den Thread zugreifen, indem es Forum auswählt und dann mehr über den Posting von Kolibris lesen.
+Melden Sie sich als Rebekah Larsen (`rebekah.larsen@mailinator.com`) an, ein Community-Mitglied, das den Thread gestartet hat, und greifen Sie durch die Auswahl von Forum auf den Thread zu, und lesen Sie dann mehr für den Hummingbird-Post.
 
 Hinweis:
 

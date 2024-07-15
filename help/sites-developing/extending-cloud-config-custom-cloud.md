@@ -12,13 +12,13 @@ role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Erstellen eines individuellen Cloud-Services{#creating-a-custom-cloud-service}
 
-Die standardmäßigen Cloud-Services können durch benutzerdefinierte Cloud-Service-Typen erweitert werden. So können Sie auf strukturierte Weise benutzerdefiniertes Markup in die Seite einfügen. Dies ist vor allem für Analytics-Anbieter von Drittanbietern, z. B. Google Analytics, CharterBeat usw., nützlich. Cloud-Services werden von übergeordneten Seiten auf untergeordnete Seiten übernommen. Dabei kann die Übernahme auf einer beliebigen Ebene unterbrochen werden.
+Die standardmäßigen Cloud-Services können durch benutzerdefinierte Cloud-Service-Typen erweitert werden. So können Sie auf strukturierte Weise benutzerdefiniertes Markup in die Seite einfügen. Dies ist hauptsächlich für externe Analyseanbieter hilfreich, z. B. Google Analytics, Chartbeat usw. Cloud-Services werden von übergeordneten Seiten auf untergeordnete Seiten übernommen. Dabei kann die Übernahme auf einer beliebigen Ebene unterbrochen werden.
 
 >[!NOTE]
 >

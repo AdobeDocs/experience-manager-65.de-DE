@@ -23,17 +23,17 @@ Die Aktivitäten eines angemeldeten Community-Mitglieds, z. B. das Posten in ein
 
 Die Möglichkeit, zu folgen, fügt weitere Aktivitäten hinzu, wenn Community-Mitglieder Beiträge von Interesse oder anderen Community-Mitgliedern folgen.
 
-Alle [Community-Sites](/help/communities/overview.md#communitiessites) fügen Sie eine Benutzerprofilseite für das angemeldete Mitglied hinzu, auf der die Mitgliederaktivitäten auf die gleiche Weise angezeigt werden.
+Alle [Community-Sites](/help/communities/overview.md#communitiessites) enthalten eine Benutzerprofilseite für das angemeldete Mitglied, auf die die Mitgliederaktivitäten auf die gleiche Weise angezeigt werden.
 
 ## Konzepte {#concepts}
 
-Ein *Aktivitäts-Stream* ist die Liste der letzten Aktivitäten, die von einem Mitglied durchgeführt wurden, oder eine Liste der letzten Aktivitäten in einem einzelnen Inhaltsthread, z. B. einem Forenthema oder einem Blog.
+Ein *Aktivitäts-Stream* ist die Liste der letzten Aktivitäten, die von einem Mitglied ausgeführt wurden, oder eine Liste der letzten Aktivitäten in einem einzelnen Inhaltsthread, z. B. einem Forenthema oder einem Blog.
 
 Ein Mitglied kann einem Aktivitäts-Stream folgen, indem es entweder einer anderen Person oder einem Inhalt folgt.
 
-A *News-Feed* ist eine Zusammenführung der Aktivitäts-Streams, auf die ein Mitglied in einem einzigen Stream folgt.
+Ein *News-Feed* ist eine Zusammenführung der Aktivitäts-Streams, auf die ein Mitglied in einem einzigen Stream folgt.
 
-A *[Sozialdiagramm](/help/communities/essentials-socialgraph.md)* erfasst die folgenden Beziehungen von einem Mitglied zum anderen.
+Ein *[soziales Diagramm](/help/communities/essentials-socialgraph.md)* erfasst die folgenden Beziehungen zwischen einem Mitglied.
 
 ## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
@@ -44,7 +44,7 @@ A *[Sozialdiagramm](/help/communities/essentials-socialgraph.md)* erfasst die fo
    <td>social/activitystreams/components/hbs/activitystreams</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
+   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
@@ -72,10 +72,10 @@ A *[Sozialdiagramm](/help/communities/essentials-socialgraph.md)* erfasst die fo
 
 * [Aktivitäts-Streams-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
 
-* [Activity Streams Listener-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
+* [Aktivitäts-Streams-Listener-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
 
 * [Serverseitige Anpassungen](/help/communities/server-customize.md)
 
 ### Aktivitäts-Stream-Funktion {#activity-stream-function}
 
-Eine Community-Site-Struktur mit [Aktivitäts-Stream-Funktion](/help/communities/functions.md#activity-stream-function)enthält eine konfigurierte `activity streams` -Komponente.
+Eine Community-Site-Struktur, die die [Aktivitäts-Stream-Funktion](/help/communities/functions.md#activity-stream-function) enthält, enthält eine konfigurierte `activity streams` -Komponente.

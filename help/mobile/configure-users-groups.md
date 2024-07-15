@@ -51,13 +51,13 @@ Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring AEM Inhalte m
 
    App-Autoren zur Gruppe Autoren hinzufügen
 
-1. Nachdem Sie die Benutzergruppe &quot;app-authors&quot;erstellt haben, können Sie dieser neuen Gruppe einzelne Teammitglieder über die [Admin Console des Benutzers](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Nachdem Sie die Benutzergruppe &quot;app-authors&quot;erstellt haben, können Sie dieser neuen Gruppe über die Admin Console [Benutzer](http://localhost:4502/libs/granite/security/content/useradmin.md) einzelne Teammitglieder hinzufügen.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
    Benutzergruppen bearbeiten
 
-1. Navigieren Sie zum [Berechtigungskonsole](http://localhost:4502/useradmin) und Berechtigungen zum Verwalten von Cloud Services hinzufügen
+1. Navigieren Sie zur Konsole [Berechtigungen](http://localhost:4502/useradmin) und fügen Sie Berechtigungen zum Verwalten von Cloud Services hinzu.
 
    * (Lesen) unter /etc/cloudservices
 
@@ -67,7 +67,7 @@ Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring AEM Inhalte m
 
 ### AEM Mobile-Gruppe &quot;Anwendungsadministratoren&quot;(Gruppe &quot;app-admins&quot;) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit denselben Berechtigungen erstellen, die auch für App-Autoren vorhanden sind **UND** Darüber hinaus sind folgende Aufgaben zuständig:
+Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit denselben Berechtigungen erstellen, die auch in den App-Autoren **UND** enthalten sind. Außerdem sind sie für Folgendes verantwortlich:
 
 * Konfigurieren von PhoneGap Build und Adobe Mobile Services Cloud Services in AEM
 * Staging, Veröffentlichen und Löschen von OTA-Aktualisierungen für die Inhaltssynchronisierung
@@ -88,7 +88,7 @@ Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit densel
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
-1. Navigieren Sie zum [Berechtigungskonsole](http://localhost:4502/useradmin) und Berechtigungen zum Verwalten von Cloud Services hinzufügen
+1. Navigieren Sie zur Konsole [Berechtigungen](http://localhost:4502/useradmin) und fügen Sie Berechtigungen zum Verwalten von Cloud Services hinzu.
 
    * (Lesen, Ändern, Erstellen, Löschen, Replizieren) unter /etc/cloudservices/mobileservices
    * (Lesen, Ändern, Erstellen, Löschen, Replizieren) unter /etc/cloudservices/phonegap-build
@@ -114,7 +114,7 @@ Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit densel
 
 Dashboard-Kacheln können je nach den Berechtigungen des Benutzers unterschiedliche Aktionen anzeigen. Im Folgenden wird beschrieben, welche Aktionen für die einzelnen Kacheln verfügbar sind.
 
-Zusätzlich zu diesen Berechtigungen kann eine Aktion auch je nach Konfiguration der aktuellen App ein-/ausgeblendet werden. Es hat beispielsweise keinen Zweck, die Aktion &quot;Remote Build&quot;anzuzeigen, wenn der App keine PhoneGap-Cloud-Konfiguration zugewiesen wurde. Diese sind unten unter &quot;**Konfigurationsbedingung**&quot;.
+Zusätzlich zu diesen Berechtigungen kann eine Aktion auch je nach Konfiguration der aktuellen App ein-/ausgeblendet werden. Es hat beispielsweise keinen Zweck, die Aktion &quot;Remote Build&quot;anzuzeigen, wenn der App keine PhoneGap-Cloud-Konfiguration zugewiesen wurde. Diese sind in den Abschnitten &quot;**Konfigurationsbedingung**&quot;aufgeführt.
 
 ### App-Kachel verwalten {#manage-app-tile}
 

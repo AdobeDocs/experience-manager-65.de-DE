@@ -21,7 +21,7 @@ ht-degree: 2%
 
 AEM Communities ermöglicht es Unternehmen, aus einer Bibliothek von Site-Vorlagen dedizierte Markenerlebnisse zu erstellen. Foren, Gruppen, Blogs, Dateifreigabe, Kalender, Aktivitäts-Feeds und erweiterte Benutzerprofile können in Ihre Website integriert werden, um Interaktionen zwischen Interessenten, Kunden und Unternehmen zu fördern.
 
-Im Folgenden finden Sie ein Tutorial zum schnellen Einrichten eines [Interaktionsgemeinschaft](/help/communities/overview.md#engagement-community) zu Demonstrations- oder Entwicklungszwecken.
+Im Folgenden finden Sie ein Tutorial zum schnellen Einrichten einer [Interaktionsgemeinschaft](/help/communities/overview.md#engagement-community) für Demonstrations- oder Entwicklungszwecke.
 
 * [Ersteinrichtung](/help/communities/setup.md)
 

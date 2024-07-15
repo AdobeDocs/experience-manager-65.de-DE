@@ -82,7 +82,7 @@ Die folgende Tabelle stellt einen Überblick über die wichtigsten Funktionen be
 |---|---|---|
 | Globalisierte Site-Struktur | Primäre Sprachen werden live in länderspezifische Sites kopiert | Nicht verfügbar |
 | Inhaltsfragmente | Verfügbar | Nicht verfügbar |
-| Experience Fragments  | Verfügbar | Nicht verfügbar |
+| Experience Fragments | Verfügbar | Nicht verfügbar |
 | Responsives Layout | Für alle Seiten | Nur Geometrixx Media |
 | Bearbeitbare Vorlagen | Für alle Seiten | Nicht verfügbar |
 | HTL | Alle Komponenten | Limited |

@@ -18,11 +18,11 @@ ht-degree: 4%
 
 # Grundlagen zu Social-Diagrammen  {#social-graph-essentials}
 
-Die Fähigkeit eines Mitglieds der Gemeinschaft, [activities](essentials-activities.md) und zu befolgen ist durch zwei Komponenten festgelegt:
+Die Fähigkeit eines Community-Mitglieds, [Aktivitäten](essentials-activities.md) zu folgen und ihnen zu folgen, wird durch zwei Komponenten festgelegt:
 
-Die `following` -Komponente muss mit einer anderen Ressource verknüpft sein. Diese Zuordnung ist bereits für bestehende Community-Mitglieder und -Funktionen in einer [Community-Site](overview.md#communitiessites).
+Die Komponente `following` muss mit einer anderen Ressource verknüpft sein, und diese Zuordnung ist bereits für bestehende Community-Mitglieder und -Funktionen auf einer [Community-Site](overview.md#communitiessites) eingerichtet.
 
-Die `following` -Komponente listet die Mitglieder auf, die dem aktuellen Mitglied folgen oder dem aktuellen Mitglied folgen. Dieses soziale Diagramm der Beziehungen zwischen Mitgliedern ist in das für eine Community-Site eingerichtete Benutzerprofil aufgenommen.
+Die Komponente `following` listet die Mitglieder auf, die dem aktuellen Mitglied folgen oder dem aktuellen Mitglied folgen. Dieses soziale Diagramm der Beziehungen zwischen Mitgliedern ist in das für eine Community-Site eingerichtete Benutzerprofil aufgenommen.
 
 ## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
@@ -35,7 +35,7 @@ Die `following` -Komponente listet die Mitglieder auf, die dem aktuellen Mitglie
    <td>social/socialgraph/components/hbs/relations</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
@@ -52,20 +52,20 @@ Die `following` -Komponente listet die Mitglieder auf, die dem aktuellen Mitglie
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Siehe <a href="socialgraph.md">Social-Diagramm verwenden</a></td>
+   <td>Siehe <a href="socialgraph.md">Verwenden des Social-Diagramms</a></td>
   </tr>
   <tr>
-   <td><strong> optional<br /> property</strong></td>
+   <td><strong> optional<br /> Eigenschaft</strong></td>
    <td>
     <ul>
      <li>Name: <strong><code>outgoing</code></strong></li>
      <li>Typ: Boolesch</li>
      <li>Wert:<br />
       <ul>
-       <li><i>True </i>- die <code>following</code> -Komponente listet die Mitglieder auf, die das angemeldete Mitglied sind <code>follows</code></li>
-       <li><i>False </i>- die <code>following</code> -Komponente listet die Mitglieder auf, die <code>follow </code>das angemeldete Mitglied</li>
+       <li><i>True </i> - Die Komponente <code>following</code> listet die Mitglieder auf, die das angemeldete Mitglied sind <code>follows</code></li>
+       <li><i>False </i> - Die Komponente <code>following</code> listet die Mitglieder auf, die <code>follow </code>das angemeldete Mitglied sind</li>
       </ul> </li>
-    </ul> <p>Standardwert ist <i>true</i> , wenn die -Eigenschaft fehlt. Es ist nicht möglich, diese Eigenschaft im Bearbeitungsdialogfeld im Autorenmodus festzulegen. Die Eigenschaft muss einer Instanz der <code>following</code> Knoten mithilfe von <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>Der Standardwert ist <i>true</i> , wenn die Eigenschaft fehlt. Es ist nicht möglich, diese Eigenschaft im Bearbeitungsdialogfeld im Autorenmodus festzulegen. Die Eigenschaft muss mithilfe von <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a> einer Instanz des Knotens <code>following</code> hinzugefügt werden.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -74,7 +74,7 @@ Die `following` -Komponente listet die Mitglieder auf, die dem aktuellen Mitglie
 
 | **resourceType** | `social/socialgraph/components/hbs/following` |
 |---|---|
-| [**einschließen**](scf.md#add-or-include-a-communities-component) | Nein |
+| [**include**](scf.md#add-or-include-a-communities-component) | Nein |
 | **templates** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
 | **css** | `/libs/social/socialgraph/components/hbs/following/clientlibs/following.css` |
 
@@ -84,6 +84,6 @@ Die `following` -Komponente listet die Mitglieder auf, die dem aktuellen Mitglie
 
 * [Social Graph-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
 
-* [Social Graph-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
+* [Social-Graph-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
 
 * [Serverseitige Anpassungen](server-customize.md)

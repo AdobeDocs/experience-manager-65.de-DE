@@ -19,7 +19,7 @@ ht-degree: 6%
 
 # Berichtkonsole {#reports-console}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Für AEM Communities gibt es verschiedene Berichte, auf die über die Autorenumgebung auf verschiedene Weise zugegriffen werden kann.
 
@@ -29,7 +29,7 @@ Die verschiedenen Berichte sind im Allgemeinen:
 
   Bietet eine Grafik mit den Inhalten von Community-Mitgliedern und Site-Besuchern für jede Community-Site.
 
-* [Beitragsbericht](#posts-report)
+* [Bericht zu Beiträgen](#posts-report)
 
   Bietet eine Grafik verschiedener Arten von Beiträgen von Community-Mitgliedern zu jeder Community-Site.
 
@@ -39,7 +39,7 @@ Tabellarische Berichte können zur nachfolgenden Verarbeitung im CSV-Format expo
 
 ### Berichte für Community-Sites {#reports-for-community-sites}
 
-* Über die globale Navigation: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** >  **[!UICONTROL Berichte]**
+* Von der globalen Navigation: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Berichte]**
 
 * Wählen Sie aus:
 
@@ -47,7 +47,7 @@ Tabellarische Berichte können zur nachfolgenden Verarbeitung im CSV-Format expo
 
       * Erstellen Sie einen Bericht für die ausgewählte Community-Site, den ausgewählten Benutzer oder die Gruppe und die Zuweisung.
 
-   * **[!UICONTROL Beitragsbericht]**
+   * **[!UICONTROL Bericht zu Beiträgen]**
 
       * Erstellen Sie einen Bericht für die ausgewählte Community-Site, den Inhaltstyp und den Zeitraum.
 
@@ -55,7 +55,7 @@ Tabellarische Berichte können zur nachfolgenden Verarbeitung im CSV-Format expo
 
       * einen Bericht für die ausgewählte Community-Site, den Content-Typ und den Zeitraum erstellen.
 
-![Berichte](assets/reports1.png)
+![reports](assets/reports1.png)
 
 ## Ansichtsbericht {#views-report}
 
@@ -82,7 +82,7 @@ Wählen Sie die Berichtskriterien aus:
    * Letzte 90 Tage
    * Letztes Jahr
 
-Auswählen **[!UICONTROL Erzeugen]** , um den Bericht zu erstellen.
+Wählen Sie **[!UICONTROL Erzeugen]** aus, um den Bericht zu erstellen.
 
 ![generate-views](assets/generate-views.png)
 
@@ -90,7 +90,7 @@ Auswählen **[!UICONTROL Erzeugen]** , um den Bericht zu erstellen.
 
 Die Konsole Beiträge ermöglicht die Erstellung von Berichten über die Anzahl der Beiträge zu Community-Funktionen für einen bestimmten Zeitraum.
 
-![Posts-Bericht](assets/posts-report.png)
+![post-report](assets/posts-report.png)
 
 Wählen Sie die Berichtskriterien aus:
 
@@ -111,7 +111,7 @@ Wählen Sie die Berichtskriterien aus:
    * Letzte 90 Tage
    * Letztes Jahr
 
-Auswählen **[!UICONTROL Erzeugen]** , um den Bericht zu erstellen.
+Wählen Sie **[!UICONTROL Erzeugen]** aus, um den Bericht zu erstellen.
 
 ![generate-report](assets/generate-posts-report.png)
 
@@ -123,6 +123,6 @@ Wenn keine Community-Sites aufgelistet sind, stellen Sie sicher, dass Adobe Anal
 
 ### Berichte werden in AEM Autoreninstanz nicht angezeigt {#reports-do-not-show-in-aem-author-instance}
 
-Wenn Berichte nicht in der AEM-Autoreninstanz angezeigt werden, suchen Sie nach den Anpassungen, z. B. nach der URL-Zuordnung in der Veröffentlichungsinstanz. Wenn die URL-Zuordnung nur auf der AEM Veröffentlichungsinstanz der Communities-Site erfolgt, stellen Sie sicher, dass dasselbe in der AEM-Autoreninstanz in **Site-Trend-Bericht - Social-KomponentenFactory** Konfiguration.
+Wenn Berichte nicht in der AEM-Autoreninstanz angezeigt werden, suchen Sie nach den Anpassungen, z. B. nach der URL-Zuordnung in der Publish-Instanz. Wenn die URL-Zuordnung nur auf der AEM Publish-Instanz der Communities-Site erfolgt, stellen Sie sicher, dass dasselbe in der AEM-Autoreninstanz in der Konfiguration **Site-Trend-Bericht Social Component Factory** konfiguriert wurde.
 
-![URL-Zuordnung in AEM Author](assets/sitetrend.png)
+![URL-Zuordnung in AEM Autoreninstanz](assets/sitetrend.png)

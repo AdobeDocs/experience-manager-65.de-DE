@@ -18,7 +18,7 @@ ht-degree: 3%
 
 # Übersetzen benutzergenerierter Inhalte {#translating-user-generated-content}
 
-Die Übersetzungsfunktion für Adobe Experience Manager (AEM Communities) erweitert das Konzept von [Übersetzen von Seiteninhalten](../../help/sites-administering/translation.md) an den benutzergenerierten Inhalt (UGC) gesendet, der auf Community-Sites mithilfe von [Komponenten des Social Component Framework (SCF)](scf.md).
+Die Übersetzungsfunktion für Adobe Experience Manager (AEM) Communities erweitert das Konzept der [Übersetzung des Seiteninhalts](../../help/sites-administering/translation.md) auf die benutzergenerierten Inhalte (UGC), die mithilfe von [Social Component Framework (SCF)-Komponenten](scf.md) auf Community-Sites veröffentlicht werden.
 
 Die Übersetzung von UGC ermöglicht es Site-Besuchern und Mitgliedern, durch die Beseitigung von Sprachbarrieren eine globale Community zu erleben.
 
@@ -30,29 +30,29 @@ Beispiel:
 * Das Mitglied aus Frankreich verwendet die Übersetzungsfunktion, um den japanischen Kommentar ins Französische zu übersetzen.
 * Globale Kommunikation.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
-In diesem Abschnitt wird insbesondere erläutert, wie der Übersetzungsdienst mit UGC funktioniert. Es wird außerdem davon ausgegangen, dass Sie über Kenntnisse dazu verfügen, wie Sie AEM mit einer [Übersetzungsdienstleister](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) und integrieren Sie diesen Dienst in eine Website, indem Sie eine [Framework zur Übersetzungsintegration](../../help/sites-administering/tc-tic.md).
+In diesem Abschnitt wird insbesondere erläutert, wie der Übersetzungsdienst mit UGC funktioniert. Es wird außerdem davon ausgegangen, dass Sie über Kenntnisse dazu verfügen, wie Sie AEM mit einem [Übersetzungsdienstleister](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) verbinden und diesen Dienst in eine Website integrieren können, indem Sie ein [Framework für die Übersetzungsintegration](../../help/sites-administering/tc-tic.md) konfigurieren.
 
 Wenn ein Übersetzungsdienstleister mit der Site verknüpft ist, verwaltet jede Sprachkopie der Site eigene Threads von UGC, die über SCF-Komponenten wie Kommentare veröffentlicht werden.
 
-Wenn eine Übersetzungsintegration zusätzlich zum Übersetzungsdienstleister konfiguriert ist, ist es möglich, dass jede Sprachkopie der Site einen einzigen Thread von UGC gemeinsam nutzt und so eine globale Kommunikation über Sprachkopien hinweg ermöglicht. Anstelle eines Diskussionsthreads, der nach Sprache getrennt ist, wird die konfigurierte [globaler freigegebener Store](#global-translation-of-ugc) ermöglicht die Anzeige des gesamten Threads, unabhängig davon, von welcher Sprachkopie er angezeigt wird. Außerdem können mehrere Konfigurationen für die Integration von Übersetzungen konfiguriert werden, die verschiedene globale gemeinsame Stores für eine logische Gruppierung globaler Teilnehmer angeben, z. B. nach Regionen.
+Wenn eine Übersetzungsintegration zusätzlich zum Übersetzungsdienstleister konfiguriert ist, ist es möglich, dass jede Sprachkopie der Site einen einzigen Thread von UGC gemeinsam nutzt und so eine globale Kommunikation über Sprachkopien hinweg ermöglicht. Anstelle eines Diskussionsthreads, der nach Sprache getrennt ist, ermöglicht der konfigurierte globale gemeinsame Speicher [1, den gesamten Thread unabhängig davon sichtbar zu machen, von welcher Sprachkopie er angezeigt wird. ](#global-translation-of-ugc) Außerdem können mehrere Konfigurationen für die Integration von Übersetzungen konfiguriert werden, die verschiedene globale gemeinsame Stores für eine logische Gruppierung globaler Teilnehmer angeben, z. B. nach Regionen.
 
 ## Standardübersetzungsdienst {#the-default-translation-service}
 
-AEM Communities enthält eine [Testlizenz](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) für [Standardübersetzungsdienst](../../help/sites-administering/tc-msconf.md) für mehrere Sprachen aktiviert ist.
+AEM Communities enthält eine [Testlizenz](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) für einen [standardmäßigen Übersetzungsdienst](../../help/sites-administering/tc-msconf.md), der für mehrere Sprachen aktiviert ist.
 
-Wann [Erstellen einer Community-Site](sites-console.md), wird der standardmäßige Übersetzungsdienst aktiviert, wenn `Allow Machine Translation` wird über die [ÜBERSETZUNG](sites-console.md#translation) Unterbereich.
+Wenn [ eine Community-Site erstellt, wird der standardmäßige Übersetzungsdienst aktiviert, wenn `Allow Machine Translation` im Unterbereich [ÜBERSETZUNG](sites-console.md#translation) aktiviert ist.](sites-console.md)
 
 >[!CAUTION]
 >
 >Der standardmäßige Übersetzungsdienst dient nur zur Veranschaulichung.
 >
->Für ein Produktionssystem ist ein lizenzierter Übersetzungsdienst erforderlich. Wenn keine Lizenz erteilt wurde, sollte der standardmäßige Übersetzungsdienst [deaktiviert](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
+>Für ein Produktionssystem ist ein lizenzierter Übersetzungsdienst erforderlich. Wenn keine Lizenz erteilt wurde, sollte der standardmäßige Übersetzungsdienst [deaktiviert](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors) sein.
 
 ## Globale Übersetzung von UGC {#global-translation-of-ugc}
 
-Wenn eine Website mehrere [Sprachkopien](../../help/sites-administering/tc-prep.md), erkennt der standardmäßige Übersetzungsdienst nicht, dass auf einer Site eingegebene benutzergenerierte Inhalte möglicherweise mit auf einer anderen Site eingegebenen benutzergenerierten Inhalten in Zusammenhang stehen. Dies trifft zu, wenn die benutzergenerierte Inhalte von derselben Komponente generiert werden (die Sprachkopie der Seite, die die Komponente enthält).
+Wenn eine Website über mehrere [Sprachkopien](../../help/sites-administering/tc-prep.md) verfügt, erkennt der standardmäßige Übersetzungsdienst nicht, dass auf einer Site eingegebene benutzergenerierte Inhalte mit in einer anderen Site eingegebenen benutzergenerierten Inhalten in Verbindung stehen können. Dies trifft zu, wenn die benutzergenerierte Inhalte von derselben Komponente generiert werden (die Sprachkopie der Seite, die die Komponente enthält).
 
 Es ähnelt Gruppen von Menschen, die ein Thema diskutieren. Sie kennen keine Kommentare, die in anderen Gruppen als ihren eigenen gemacht werden, im Vergleich zu allen in einer großen Gruppe, die an einem Gespräch teilnimmt.
 
@@ -64,7 +64,7 @@ Wenn beispielsweise ein Forum auf der Basis-Site eingerichtet wurde, Sprachkopie
 >
 >Alle UGC, die vor der globalen Übersetzung existierten, sind nicht mehr sichtbar.
 >
->Während sich die UGC noch im [gemeinsamer Speicher](working-with-srp.md), befindet er sich unter dem sprachspezifischen UGC-Speicherort, während neue Inhalte, die nach der Konfiguration der globalen Übersetzung hinzugefügt wurden, vom globalen freigegebenen Speicherort abgerufen werden.
+>Während sich das UGC noch im [gemeinsamen Speicher](working-with-srp.md) befindet, befindet es sich unter dem sprachspezifischen UGC-Speicherort, während neue Inhalte, die nach der Konfiguration der globalen Übersetzung hinzugefügt wurden, vom globalen freigegebenen Speicherort abgerufen werden.
 >
 >Es gibt kein Migrationstool zum Verschieben oder Zusammenführen sprachspezifischer Inhalte in den globalen freigegebenen Speicher.
 
@@ -75,18 +75,18 @@ So erstellen Sie eine Übersetzungsintegration, die einen Connector für Überse
 * Als Administrator anmelden
 * Aus dem [Hauptmenü](http://localhost:4502/)
 * Wählen Sie **[!UICONTROL Tools]**
-* Auswählen **[!UICONTROL Aktivitäten]**
-* Auswählen **[!UICONTROL Cloud]**
-* Auswählen **[!UICONTROL Cloud Service]**
-* Nach unten scrollen zu **[!UICONTROL Übersetzungsintegration]**
+* Wählen Sie **[!UICONTROL Vorgänge]** aus
+* Auswählen von **[!UICONTROL Cloud]**
+* Auswählen von **[!UICONTROL Cloud Services]**
+* Scrollen Sie nach unten zu **[!UICONTROL Übersetzungsintegration]**
 
-  ![Translation-Integration](assets/translation-integration.png)
+  ![translation-integration](assets/translation-integration.png)
 
-* Auswählen **[!UICONTROL Konfigurationen anzeigen]**
+* Wählen Sie **[!UICONTROL Konfigurationen anzeigen]** aus.
 
   ![show-configuration](assets/translation-integration1.png)
 
-* Auswählen `[+]` Symbol neben **[!UICONTROL Verfügbare Konfigurationen]** , sodass Sie eine Konfiguration erstellen können.
+* Wählen Sie das Symbol `[+]` neben **[!UICONTROL Verfügbare Konfigurationen]** aus, damit Sie eine Konfiguration erstellen können.
 
 #### Dialogfeld &quot;Konfiguration erstellen&quot; {#create-configuration-dialog}
 
@@ -112,24 +112,24 @@ So erstellen Sie eine Übersetzungsintegration, die einen Connector für Überse
 
 Detaillierte Anweisungen finden Sie unter [Erstellen einer Konfiguration für die Übersetzungsintegration](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration).
 
-* **[!UICONTROL Sites]** tab: kann als Standard beibehalten werden.
+* Registerkarte **[!UICONTROL Sites]**: kann als Standard beibehalten werden.
 
-* **[!UICONTROL Communities]** tab:
+* Registerkarte **[!UICONTROL Communities]**:
    * **[!UICONTROL Übersetzungsanbieter]**
-Wählen Sie den Übersetzungsanbieter aus der Dropdownliste aus. Der Standardwert ist `microsoft`, den Testdienst.
+Wählen Sie den Übersetzungsanbieter aus der Dropdownliste aus. Der Standardwert ist `microsoft`, der Testdienst.
 
    * **[!UICONTROL Inhaltskategorie]**
 Wählen Sie eine Kategorie aus, die den zu übersetzenden Inhalt beschreibt. Der Standardwert ist `General.`
 
-   * **[!UICONTROL Sprache auswählen...]**
-(Optional) Durch Auswahl eines Gebietsschemas zum Speichern von benutzergenerierten Inhalten werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Standardmäßig wählen Sie das Gebietsschema für die [Basissprache](sites-console.md#translation) für die Website. Auswahl `No Common Store` Deaktiviert die globale Übersetzung. Standardmäßig ist die globale Übersetzung deaktiviert.
+   * **[!UICONTROL Gebietsschema auswählen..]**
+(Optional) Durch Auswahl eines Gebietsschemas zum Speichern von benutzergenerierten Inhalten werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Standardmäßig wählen Sie das Gebietsschema für die [Basissprache](sites-console.md#translation) für die Website. Bei Auswahl von `No Common Store` wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert.
 
-* **[!UICONTROL Assets]** tab: kann als Standard beibehalten werden.
+* Registerkarte **[!UICONTROL Assets]**: kann als Standard beibehalten werden.
 * Wählen Sie **[!UICONTROL OK]** aus.
 
 #### Aktivierung {#activation}
 
-Der neue Cloud-Dienst für die Übersetzungsintegration muss in der Veröffentlichungsumgebung aktiviert werden. Wenn sie einer Website zugeordnet ist und noch nicht aktiviert ist, wird der Aktivierungsarbeitsablauf aufgefordert, diese Cloud-Service-Konfiguration zu veröffentlichen, wenn die Seite, mit der sie verknüpft ist, veröffentlicht wird.
+Der neue Cloud-Dienst für die Übersetzungsintegration muss in der Publish-Umgebung aktiviert werden. Wenn sie einer Website zugeordnet ist und noch nicht aktiviert ist, wird der Aktivierungsarbeitsablauf aufgefordert, diese Cloud-Service-Konfiguration zu veröffentlichen, wenn die Seite, mit der sie verknüpft ist, veröffentlicht wird.
 
 ## Verwalten von Übersetzungseinstellungen {#managing-translation-settings}
 

@@ -31,7 +31,7 @@ Diese Seite enthält die wesentlichen Informationen für die Arbeit mit der Blog
 
 ## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
-Die Blog-Funktion besteht aus zwei Hauptkomponenten, die durch Hinzufügen der [Blog-Funktion](/help/communities/functions.md#blog-function) oder indem Sie die Komponenten im Bearbeitungsmodus des Autors zu einer Seite hinzufügen.
+Die Blogfunktion besteht aus zwei Hauptkomponenten, die durch Hinzufügen der [Blog-Funktion](/help/communities/functions.md#blog-function) oder Hinzufügen der Komponenten zu einer Seite im Bearbeitungsmodus für Autoren verfügbar sind.
 
 ### Blog {#blog}
 
@@ -42,7 +42,7 @@ Die Blog-Funktion besteht aus zwei Hauptkomponenten, die durch Hinzufügen der [
    <td>social/journal/components/hbs/journal</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
+   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
@@ -59,7 +59,7 @@ Die Blog-Funktion besteht aus zwei Hauptkomponenten, die durch Hinzufügen der [
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>see <a href="/help/communities/blog-feature.md">Blog-Funktion</a></td>
+   <td>siehe <a href="/help/communities/blog-feature.md">Blog-Funktion</a></td>
   </tr>
  </tbody>
 </table>
@@ -68,11 +68,11 @@ Die Blog-Funktion besteht aus zwei Hauptkomponenten, die durch Hinzufügen der [
 
 | **resourceType** | social/journal/components/hbs/sidebar |
 |---|---|
-| [**einschließen**](/help/communities/scf.md#add-or-include-a-communities-component) | Nein |
+| [**include**](/help/communities/scf.md#add-or-include-a-communities-component) | Nein |
 | [**clientllibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
-| **Eigenschaften** | see [Blog-Funktion](/help/communities/blog-feature.md) |
+| **Eigenschaften** | siehe [Blog-Funktion](/help/communities/blog-feature.md) |
 
 * [Clientseitige Anpassungen](/help/communities/client-customize.md)
 
@@ -86,29 +86,29 @@ Die Blog-Funktion besteht aus zwei Hauptkomponenten, die durch Hinzufügen der [
 
 ### Blogfunktion {#blog-function}
 
-Eine Community-Site-Struktur mit [Blog-Funktion](/help/communities/functions.md#blog-function) has `Blog` und `Blog Sidebar` konfigurierte Komponenten. Die Blog-Funktion unterstützt die Identifizierung einer [Berechtigte Mitgliederbenutzergruppe](/help/communities/users.md#privileged-members-group).
+Eine Community-Site-Struktur, die die [Blog-Funktion](/help/communities/functions.md#blog-function) enthält, hat die Komponenten `Blog` und `Blog Sidebar` konfiguriert. Die Blog-Funktion unterstützt das Identifizieren einer [berechtigten Mitgliederbenutzergruppe](/help/communities/users.md#privileged-members-group).
 
 ### Zugreifen auf Blogeinträge (UGC) {#accessing-blog-entries-ugc}
 
 UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
-Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](/help/communities/working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](/help/communities/working-with-srp.md) für benutzergenerierte Inhalte den programmatischen Zugriff auf benutzergenerierte Inhalte, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
 
-**Speicherort und Format der UGC im Repository können ohne Warnung geändert werden**.
+**Speicherort und Format des UGC im Repository können sich ohne Warnung ändern**.
 
 Siehe :
 
 * [Übersicht über den Speicheranbieter](/help/communities/srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [Grundlagen zu SRP und UGC](/help/communities/srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
+* [SRP und UGC Essentials](/help/communities/srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
 * [Zugreifen auf UGC mit SRP](/help/communities/accessing-ugc-with-srp.md) - Codierungsrichtlinien.
-* [SocialUtils-Refaktorierung](/help/communities/socialutils.md) - Zuordnung veralteter Methoden für Dienstprogramme zu aktuellen SRP-Dienstprogrammmethoden.
+* [SocialUtils-Refaktorierung](/help/communities/socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
 
 ## Primärer Herausgeber {#primary-publisher}
 
 Wenn es sich bei der Bereitstellung um eine Veröffentlichungsfarm handelt, müssen Sie einen primären Herausgeber identifizieren, der die Abfrage für Artikel durchführt, deren Veröffentlichung geplant ist.
 
-Siehe [Primärer Herausgeber](/help/communities/deploy-communities.md#primary-publisher) für weitere Details.
+Weitere Informationen finden Sie unter [Primärer Herausgeber](/help/communities/deploy-communities.md#primary-publisher) .
 
 ## Zulassen von Rich Media {#allowing-rich-media}
 
@@ -118,6 +118,6 @@ Die AEM Plattform blockiert Links von anderen Websites, um XSS-Angriffe zu verhi
 
 Ab AEM 6.2 sind die zuvor manuell vorzunehmenden Änderungen in der standardmäßigen AntiSamy-Konfigurationsdatei enthalten.
 
-Rich-Media wird in einen Blog-Artikel eingebettet, indem Sie `Embed Media from External Sites` icon :
+Rich-Media wird durch die Auswahl des Symbols `Embed Media from External Sites` in einen Blogartikel eingebettet:
 
 ![media](assets/media-icon.png)

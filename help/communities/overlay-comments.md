@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Überlagern von Communities-Komponenten {#overlay-communities-components}
 
-Die Absicht von [Überlagerung](/help/communities/client-customize.md#overlays) Eine Standardkomponente besteht darin, das Erscheinungsbild oder Verhalten einer Komponente global für alle relativen Verweise auf die Komponente zu ändern. Es verlässt sich auf die Art von Sling, um zum Ordner /apps zu gelangen, bevor eine Suche im Ordner /libs durchgeführt wird. Daher ist der Pfad zur Komponente mit dem Pfad zur Standardkomponente identisch, allerdings befindet er sich im Ordner /apps und nicht im Ordner /libs .
+Die Absicht von [overlay](/help/communities/client-customize.md#overlays) einer Standardkomponente besteht darin, das Erscheinungsbild oder Verhalten einer Komponente global zu ändern, und zwar für alle relativen Verweise auf die Komponente. Es verlässt sich auf die Art von Sling, um zum Ordner /apps zu gelangen, bevor eine Suche im Ordner /libs durchgeführt wird. Daher ist der Pfad zur Komponente mit dem Pfad zur Standardkomponente identisch, allerdings befindet er sich im Ordner /apps und nicht im Ordner /libs .
 
 ## Beispiel {#example}
 
@@ -35,9 +35,9 @@ Um Kommentare zu überlagern, müssen Sie:
 
 **Überlagerungsbenachrichtigungen - E-Mails**
 
-Angenommen, Sie möchten die Nachricht von E-Mail-Benachrichtigungen anpassen, können Sie dies tun durch [Überlagerung](/help/communities/client-customize.md#overlays) die Vorlagen unter `/libs/settings/community/templates/email/html`.
+Angenommen, Sie möchten die Nachricht von E-Mail-Benachrichtigungen anpassen, können Sie dies tun, indem Sie [die Vorlagen bei `/libs/settings/community/templates/email/html` überlagern](/help/communities/client-customize.md#overlays).
 
-Angenommen, Sie möchten die Benachrichtigungsinhalte zu Erwähnungen bearbeiten (für eine bestimmte Communities-Komponente, in der UGC erstellt wird). Fügen Sie in diesem Fall eine **if** Bedingung für Verb **mention** in den Vorlagen der Komponenten, für die Sie die **@mentions** unterstützen.
+Angenommen, Sie möchten die Benachrichtigungsinhalte zu Erwähnungen bearbeiten (für eine bestimmte Communities-Komponente, in der UGC erstellt wird). Fügen Sie in solchen Fällen in den Vorlagen der Komponenten, für die Sie die Unterstützung für **@mentions** aktiviert haben, eine Bedingung vom Typ **if** für Verb **mention** hinzu.
 
 ```java
 {{#equals this.verb "mention"}}\
@@ -45,4 +45,4 @@ Angenommen, Sie möchten die Benachrichtigungsinhalte zu Erwähnungen bearbeiten
 {{/equals}}\
 ```
 
-Um die E-Mail-Benachrichtigungsvorlage für @mention in Blogkommentaren zu ändern, müssen Sie die vordefinierte Vorlage unter folgender Adresse einfügen: `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
+Um die E-Mail-Benachrichtigungsvorlage für @mention in Blogkommentaren zu ändern, müssen Sie die Standardvorlage unter `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en` einfügen.

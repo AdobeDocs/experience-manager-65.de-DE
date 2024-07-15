@@ -28,15 +28,15 @@ Inhaltsverwaltungsaktionen sind die Bausteine, mit denen Inhalte in einer Anwend
 
 Wenn Sie an eine Online-Zeitschrift denken, enthält der Hauptinhalt Artikel, Anzeigen und die Deckblätter. In AEM können drei Haupttypen von mobilen On-Demand-Inhalten erstellt werden:
 
-* **Artikel**: Text basiert zusammen mit Kunst zum Vermitteln von Informationen
+* **Artikel**: Text, der zusammen mit Kunst zur Informationsübermittlung verwendet wird
 * **Banner:** normalerweise grafische Werbe-Links
-* **Sammlungen:** eine genau definierte *Bucket* mit Inhalten wie Artikeln oder Bannern gefüllt, die dem Titelthema entsprechen
+* **Sammlungen:** stellen einen klar definierten *Behälter* dar, der mit Inhalten wie Artikeln oder Bannern gefüllt ist, die zum Thema des Titelbildes passen
 
-* **Freigegebene Ressourcen:** ermöglicht die Wiederverwendung oder Freigabe von gemeinsamen Artikeln
+* **Freigegebene Ressourcen:** ermöglicht die Wiederverwendung oder Freigabe von gemeinsamen Elementen in Artikeln
 
 >[!NOTE]
 >
->Weitere Informationen zu Designüberlegungen für AEM Mobile-Apps finden Sie unter [Designüberlegungen für AEM Mobile-Apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in der Onlinehilfe.
+>Weitere Informationen zu Designüberlegungen für AEM Mobile-Apps finden Sie unter [Designüberlegungen für AEM Mobile-Apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in der Online-Hilfe.
 
 ## Erstellen und Verwalten von Inhalten {#creating-and-managing-content}
 
@@ -46,11 +46,11 @@ In den folgenden Themen wird die Erstellung und Verwaltung von Inhalten beschrie
 * [Banner verwalten](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Verwalten von Sammlungen](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Hochladen freigegebener Ressourcen](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Veröffentlichung von Inhalt rückgängig machen](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publish - Inhalte nicht veröffentlichen](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 >[!NOTE]
 >
->Im Allgemeinen sollten Sie Preflight vor der Veröffentlichung von Inhalten verwenden. Siehe [Vorschau mit Preflight](/help/mobile/aem-mobile-manage-ondemand-services.md) für weitere Details.
+>Im Allgemeinen sollten Sie Preflight vor der Veröffentlichung von Inhalten verwenden. Weitere Informationen finden Sie unter [Vorschau mit Preflight anzeigen](/help/mobile/aem-mobile-manage-ondemand-services.md) .
 
 ### Zusätzliche Ressourcen {#additional-resources}
 

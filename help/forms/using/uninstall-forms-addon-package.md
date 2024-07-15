@@ -26,33 +26,33 @@ Stellen Sie sicher, dass Sie eine Sicherung durchführen, um Datenverlust zu ver
 
 Um das AEM Forms Add-On-Paket zu deinstallieren, führen Sie die folgenden Schritte aus:
 
-1. **Deinstallieren Sie das AEM Forms Add-On-Paket:**
-   1. Navigieren Sie zum `http://[host]:[port]/crx/de/index.jsp`.
+1. **Deinstallieren des AEM Forms Add-On-Pakets:**
+   1. Navigieren Sie zu &quot;`http://[host]:[port]/crx/de/index.jsp`&quot;.
    1. Suchen und deinstallieren Sie die `AEM Forms add-on package`.
 
    ![Paket deinstallieren](/help/forms/using/assets/uninstall-aem-forms-package.png)
 
 1. **Löschen Sie den nativen Ordner aus CRXDE:**
-   1. Navigieren Sie zum `http://[host]:[port]/crx/de/index.jsp`.
-   1. Navigieren Sie zu `/libs/fd/native/install` und löschen `native` Ordner in CRXDE.
+   1. Navigieren Sie zu &quot;`http://[host]:[port]/crx/de/index.jsp`&quot;.
+   1. Wechseln Sie zu `/libs/fd/native/install` und löschen Sie den Ordner `native` in CRXDE.
 
-      ![Löschen Sie den nativen Knoten aus CRX/de.](/help/forms/using/assets/native-install-folder-crxde.png)
+      ![Nativen Knoten aus CRX/de](/help/forms/using/assets/native-install-folder-crxde.png) löschen
    1. Speichern Sie die Änderungen.
 
-1. **Beenden Sie das AEM Forms SDK:**
+1. **Beenden des AEM Forms SDK:**
    1. Beenden Sie die AEM Forms SDK-Instanz mit dem Befehl &quot;Strg + C&quot;.
 
-1. **Suchen Sie nach dem Grundgestein und installieren Sie die Ordner im Ordner crx-quickstart .**
-   1. Navigieren Sie zu `..author\crx-quickstart` Ordner in der AEM Forms SDK-Instanz.
-   1. Suchen Sie nach Ordnern mit dem Namen `bedrock` und `install`.
-Wenn sie gefunden werden, müssen Sie sie aus der `crx-quickstart` Ordner in der AEM Forms SDK-Instanz.
+1. **Suchen Sie nach den Ordnern &quot;bedrock&quot;und installieren Sie sie im Ordner &quot;crx-quickstart&quot;**
+   1. Navigieren Sie in der AEM Forms SDK-Instanz zum Ordner &quot;`..author\crx-quickstart`&quot;.
+   1. Suchen Sie nach Ordnern mit den Namen `bedrock` und `install`.
+Wenn sie gefunden werden, stellen Sie sicher, dass sie aus dem Ordner &quot;`crx-quickstart`&quot;in der AEM Forms SDK-Instanz gelöscht werden.
 
    >[!NOTE]
    >
-   > Die `bedrock` wird beim Neustart der AEM Forms SDK-Instanz automatisch neu erstellt.
+   > Der Ordner &quot;`bedrock`&quot; wird beim Neustart der AEM Forms SDK-Instanz automatisch erneut erstellt.
 
 1. **Starten Sie die AEM-Instanz neu:**
-   1. Sobald alle vorherigen Schritte abgeschlossen sind, [Starten Sie die AEM Forms SDK-Instanz neu](/help/forms/using/restart-aem-sdk.md).
+   1. Sobald alle vorherigen Schritte abgeschlossen sind, starten Sie [die AEM Forms SDK-Instanz neu](/help/forms/using/restart-aem-sdk.md).
 
 
 

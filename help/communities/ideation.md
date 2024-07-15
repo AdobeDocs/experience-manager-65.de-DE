@@ -29,7 +29,7 @@ Auf dieser Seite finden Sie die wichtigsten Informationen für die Arbeit mit de
    <td>social/ideation/components/hbs/ideation</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ Auf dieser Seite finden Sie die wichtigsten Informationen für die Arbeit mit de
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Siehe <a href="ideation-feature.md">Ideen-Funktion</a></td>
+   <td>Siehe <a href="ideation-feature.md">Ideenfunktion</a></td>
   </tr>
  </tbody>
 </table>
@@ -55,4 +55,4 @@ Auf dieser Seite finden Sie die wichtigsten Informationen für die Arbeit mit de
 
 ### Ideen-Funktion {#ideation-function}
 
-Eine Community-Site-Struktur mit [Ideenfunktion](functions.md#ideation-function)enthält eine konfigurierte `ideation` -Komponente.
+Eine Community-Site-Struktur, die die [Ideen-Funktion](functions.md#ideation-function) enthält, enthält eine konfigurierte `ideation` -Komponente.

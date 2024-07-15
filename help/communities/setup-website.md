@@ -32,7 +32,7 @@ Die folgenden Anweisungen beschreiben die Ordner, die an den folgenden Orten ers
 
   Hier befinden sich die herunterladbaren Webseiten.
 
-Der Code in diesem Tutorial basiert darauf, dass der Hauptordnername für Anwendung, Design und Inhalt identisch ist. Wenn Sie einen anderen Namen für Ihre Website wählen, ersetzen Sie immer `an-scf-sandbox` mit dem Namen, den Sie gewählt haben.
+Der Code in diesem Tutorial basiert darauf, dass der Hauptordnername für Anwendung, Design und Inhalt identisch ist. Wenn Sie einen anderen Namen für Ihre Website wählen, ersetzen Sie immer `an-scf-sandbox` durch den von Ihnen ausgewählten Namen.
 
 >[!NOTE]
 >
@@ -51,30 +51,30 @@ Das Verzeichnis /apps im Repository enthält den Code mit implementiert das Verh
 
 Der Ordner /apps ist geschützt und nicht öffentlich zugänglich wie die Ordner /content und /etc/designs.
 
-1. Erstellen `/apps/an-scf-sandbox` Ordner.
+1. Erstellen Sie den Ordner &quot;`/apps/an-scf-sandbox`&quot;.
 
-   Verwenden **[!UICONTROL CRXDE Lite]** im Explorer-Bereich
+   Verwenden von **[!UICONTROL CRXDE Lite]** im Explorer-Bereich
 
-   1. Wählen Sie die `/apps` Ordner.
-   1. Rechtsklick **[!UICONTROL Erstellen]**... oder ziehen Sie die **[!UICONTROL Erstellen...]** Menü.
-   1. Auswählen **[!UICONTROL Ordner erstellen...]**.
-   1. Im **[!UICONTROL Ordner erstellen]** dialog, enter `an-scf-sandbox`.
+   1. Wählen Sie den Ordner `/apps` aus.
+   1. Klicken Sie mit der rechten Maustaste auf **[!UICONTROL Erstellen]**... oder ziehen Sie das Menü **[!UICONTROL Erstellen...]** nach unten.
+   1. Wählen Sie **[!UICONTROL Ordner erstellen...]**.
+   1. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** den Wert `an-scf-sandbox` ein.
    1. Klicken Sie auf **[!UICONTROL OK]**.
 
-1. Erstellen **[!UICONTROL Komponenten]** Unterordner.
+1. Erstellen Sie den Unterordner **[!UICONTROL components]** .
 
-   1. Wählen Sie die `/apps/an-scf-sandbox` Ordner.
-   1. Klicks **[!UICONTROL Erstellen > Ordner erstellen]**.
-   1. Im **[!UICONTROL Ordner erstellen]** dialog, enter **[!UICONTROL Komponenten]**.
+   1. Wählen Sie den Ordner `/apps/an-scf-sandbox` aus.
+   1. Klicken Sie auf **[!UICONTROL Erstellen > Ordner erstellen]**.
+   1. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** den Wert **[!UICONTROL components]** ein.
    1. Klicken Sie auf **[!UICONTROL OK]**.
 
-1. Erstellen **[!UICONTROL templates]** Unterordner.
+1. Erstellen Sie den Unterordner **[!UICONTROL templates]** .
 
-   1. Wählen Sie die `/apps/an-scf-sandbox` Ordner.
-   1. Klicks **[!UICONTROL Erstellen > Ordner erstellen]**.
-   1. Im **[!UICONTROL Ordner erstellen]** dialog, enter **[!UICONTROL templates]**.
+   1. Wählen Sie den Ordner `/apps/an-scf-sandbox` aus.
+   1. Klicken Sie auf **[!UICONTROL Erstellen > Ordner erstellen]**.
+   1. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** den Wert **[!UICONTROL templates]** ein.
    1. Klicken Sie auf **[!UICONTROL OK]**.
-   1. Neu auswählen `/apps/an-scf-sandbox`.
+   1. Wählen Sie `/apps/an-scf-sandbox` erneut aus.
    1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
    Wie bei allen Bearbeitungsprozessen sollten Sie häufig speichern. Wenn Probleme bei der Dateneingabe auftreten, kann dies entweder daran liegen, dass Ihre Anmeldung abgelaufen ist, oder Sie müssen frühere Bearbeitungen speichern.
@@ -87,17 +87,17 @@ Der Ordner /apps ist geschützt und nicht öffentlich zugänglich wie die Ordner
 
 Der Ordner /etc/designs enthält die Bilder, Skripte und Stylesheets, die zusammen mit dem Seiteninhalt heruntergeladen werden sollen.
 
-1. Navigieren Sie zur Verwendung des Designer-Tools in der klassischen Benutzeroberfläche zu [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin).
+1. Um das Designer-Tool in der klassischen Benutzeroberfläche zu verwenden, navigieren Sie zu &quot;[https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin)&quot;.
 
-   Hinweis: Wenn Sie CRXDE Lite verwenden, um einen Knoten vom Typ `cq:Page`festgelegt ist, würden die Zugriffssteuerung und Replikation nicht auf Standardeinstellungen für eine Seite festgelegt.
+   Hinweis: Wenn Sie CRXDE Lite verwenden, um einen Knoten vom Typ `cq:Page` zu erstellen, werden die Einstellungen für die Zugriffssteuerung und Replikation nicht auf die Standardeinstellungen für eine Seite festgelegt.
 
-1. Wählen Sie im Explorer-Bereich die **[!UICONTROL Designs]** Ordner und klicken Sie dann auf **[!UICONTROL Neu]** > **[!UICONTROL Neue Seite]**.
+1. Wählen Sie im Explorer-Bereich den Ordner **[!UICONTROL Designs]** aus und klicken Sie dann auf **[!UICONTROL Neu]** > **[!UICONTROL Neue Seite]**.
 
    Geben Sie ein:
 
    * Titel: **[!UICONTROL Eine SCF-Sandbox]**
    * Name: **[!UICONTROL an-scf-sandbox]**
-   * Auswählen **[!UICONTROL Design Page Template]**
+   * Wählen Sie **[!UICONTROL Design Page Template]**
 
    Klicken Sie auf **[!UICONTROL Erstellen]**.
 
@@ -115,4 +115,4 @@ Der Ordner /etc/designs enthält die Bilder, Skripte und Stylesheets, die zusamm
 
 Das Verzeichnis /content im Repository befindet sich dort, wo sich der Website-Inhalt befindet. Die Pfade unter /content umfassen die Pfade der URL für Browseranforderungen.
 
-*Nachher* die [Seitenvorlage](initial-app.md#createthepagetemplate) als Teil der ursprünglichen Anwendung erstellt wurde, kann der anfängliche Seiteninhalt basierend auf der Vorlage erstellt werden... [**imetrisch**](initial-app.md)
+*Nach* wird die [Seitenvorlage](initial-app.md#createthepagetemplate) als Teil der ursprünglichen Anwendung erstellt. Der anfängliche Seiteninhalt kann auf der Grundlage der Vorlage erstellt werden... [****](initial-app.md).

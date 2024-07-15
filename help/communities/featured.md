@@ -35,25 +35,25 @@ Die Funktion zum Feature von Inhalten kann pro Komponente erlaubt oder untersagt
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
 * Hinzufügen spezieller Inhalte zu einer Community-Site.
-* Konfigurationseinstellungen für `Featured Content` -Komponente.
+* Konfigurationseinstellungen für die Komponente `Featured Content` .
 
 ## Hinzufügen von speziellen Inhalten zu einer Seite {#adding-featured-content-to-a-page}
 
-So fügen Sie eine `Featured Content` -Komponente auf einer Seite im Autorenmodus verwenden Sie den Komponenten-Browser, um
+Möchten Sie im Autorenmodus einer Seite die Komponente `Featured Content` hinzufügen, suchen Sie mit dem Komponenten-Browser nach
 
 * `Communities / Featured Content`
 
 Ziehen Sie ihn an die gewünschte Stelle auf einer Seite, auf der der spezielle Inhalt erscheinen soll.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
 
-Wenn die Variable [erforderliche clientseitige Bibliotheken](essentials-featured.md#essentials-for-client-side) eingeschlossen sind, wird die `Featured Content` -Komponente angezeigt:
+Wenn die [erforderlichen clientseitigen Bibliotheken](essentials-featured.md#essentials-for-client-side) eingeschlossen sind, wird die Komponente `Featured Content` wie folgt angezeigt:
 
 ![featuredcontent](assets/featuredcontent.png)
 
 ## Konfiguration von speziellen Inhalten {#configuring-featured-content}
 
-Auswählen der platzierten `Featured Content` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Wählen Sie die platzierte Komponente `Featured Content` aus, damit Sie auf das Symbol `Configure` zugreifen und dieses auswählen können, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![configure-new](assets/configure-new.png)
 
@@ -61,17 +61,17 @@ Auswählen der platzierten `Featured Content` -Komponente, damit Sie auf die `Co
 
 ### Registerkarte &quot;Einstellungen&quot; {#settings-tab}
 
-Unter dem **[!UICONTROL Einstellungen]** -Tab, um den Inhalt für die Funktion zu identifizieren:
+Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** den Inhalt an, der für die Funktion verwendet werden soll:
 
 * **[!UICONTROL Anzeigename]**
 
-  Der Titel für die Liste der vorgestellten Inhalte. Beispiel: `Featured Questions` oder `Featured Ideas`. Der Standardwert ist `Featured Content` , wenn leer gelassen.
+  Der Titel für die Liste der vorgestellten Inhalte. Beispiel: `Featured Questions` oder `Featured Ideas`. Der Standardwert ist &quot;`Featured Content`&quot;, wenn leer gelassen.
 
-* **[!UICONTROL Speicherort des speziellen Inhalts]**
+* **[!UICONTROL Position des speziellen Inhalts]**
 
-  *(Erforderlich)* Navigieren Sie zu der Seite, die den Inhalt enthält, der möglicherweise angezeigt wird (die Komponenten dieser Seite müssen so konfiguriert sein, dass &quot;Vorgestellter Inhalt zulassen&quot;konfiguriert werden). Zum Beispiel: `/content/sites/engage/en/forum`.
+  *(Erforderlich)* Navigieren Sie zu der Seite, die den Inhalt enthält, der möglicherweise angezeigt wird. (Die Komponenten dieser Seite müssen so konfiguriert sein, dass &quot;Vorgestellter Inhalt zulassen&quot;konfiguriert wird.) Zum Beispiel: `/content/sites/engage/en/forum`.
 
-* **[!UICONTROL Anzeigebeschränkung]**
+* **[!UICONTROL Anzeigelimit]**
 
   Die maximale Anzahl der anzuzeigenden speziellen Inhalte. Der Standardwert lautet 5.
 
@@ -79,20 +79,20 @@ Unter dem **[!UICONTROL Einstellungen]** -Tab, um den Inhalt für die Funktion z
 
 Die Fähigkeit, Inhalte als speziellen Inhalt zu kennzeichnen, erfordert Moderatorberechtigungen.
 
-Wenn ein Moderator veröffentlichte Inhalte anzeigt, hat er Zugriff auf die kontextbezogenen Moderationsflags, die die neuen `Feature` Markierung.
+Wenn ein Moderator veröffentlichte Inhalte anzeigt, hat er Zugriff auf die kontextbezogenen Moderationsflags, die das neue `Feature` -Flag enthalten.
 
 ![site-visitor-experience](assets/site-visitor-experience.png)
 
-Nachdem es als Funktion gekennzeichnet wurde, wird das Moderations-Flag `Unfeature`.
+Nachdem es als Funktion gekennzeichnet wurde, wird das Moderationsflag zu `Unfeature`.
 
-Die Seite, die die `Featured Content` -Komponente, enthält jetzt diesen Beitrag.
+Die Seite mit der Komponente `Featured Content` enthält jetzt diesen Beitrag.
 
 ![site-visitor-experience1](assets/site-visitor-experience1.png)
 
-Die `Read More` Links zum tatsächlichen Beitrag.
+Die `Read More` verlinkt zum eigentlichen Beitrag.
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie unter [Vorgestellte Inhalte](essentials-featured.md) -Seite für Entwickler.
+Weitere Informationen finden Sie auf der Entwickler-Seite [Vorgestellte Inhalte](essentials-featured.md) .
 
-Informationen zum Kennzeichnen von Inhalten als vorgestellt finden Sie unter [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
+Informationen zum Kennzeichnen von Inhalten mit den Funktionen finden Sie unter [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).

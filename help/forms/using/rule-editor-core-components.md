@@ -4,7 +4,8 @@ description: Mit dem adaptiven Forms-Regeleditor können Sie dynamische Verhalte
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
+exl-id: 107ad23b-53df-41d4-ab97-b09d189abc1b
+source-git-commit: 7b6b2adaf4dfc843aeb054c7db834cebd211f2ed
 workflow-type: tm+mt
 source-wordcount: '5588'
 ht-degree: 81%
@@ -20,7 +21,7 @@ Dieser Artikel enthält die neuesten Funktionen des Regeleditors für adaptive F
 
 Mit der Funktion &quot;Regeleditor&quot;können Benutzer und Entwickler von Formularen Regeln in adaptive Formularobjekte schreiben. Diese Regeln definieren Aktionen für den Trigger von Formularobjekten basierend auf den voreingestellten Bedingungen, Benutzereingaben und Benutzeraktionen im Formular. Dies ermöglicht noch größere Effizienz für ein schnelles und korrektes Ausfüllen der Formulare.
 
-Der Regeleditor bietet eine intuitive und vereinfachte Benutzeroberfläche zum Schreiben von Regeln. Der Regeleditor bietet einen grafischen Editor für alle Benutzer.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Einige der wichtigsten Aktionen, die Sie mithilfe von Regeln für Objekte im adaptiven Formular ausführen, sind:
+Der Regeleditor bietet eine intuitive und vereinfachte Benutzeroberfläche zum Schreiben von Regeln. Der Regeleditor bietet einen grafischen Editor für alle Benutzer.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Einige der wichtigsten Aktionen, die Sie mit Regeln für Objekte im adaptiven Formular ausführen, sind:
 
 * Ein Objekt ein- oder ausblenden
 * Ein Objekt aktivieren oder deaktivieren
@@ -32,7 +33,7 @@ Der Regeleditor bietet eine intuitive und vereinfachte Benutzeroberfläche zum S
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
-Benutzer, die zu `forms-power-users` -Gruppe kann die Skripte erstellen und die vorhandenen bearbeiten. Benutzer im `forms-users group` kann die Skripte verwenden, aber keine Skripte erstellen oder bearbeiten.
+Benutzer, die der Gruppe `forms-power-users` hinzugefügt wurden, können die Skripte erstellen und die vorhandenen bearbeiten. Benutzer in der `forms-users group` können die Skripte verwenden, die Skripte jedoch nicht erstellen oder bearbeiten.
 
 ## Grundlegendes zu Regeln {#understanding-a-rule}
 
@@ -42,13 +43,13 @@ Der Regeleditor bietet eine Reihe vordefinierter Regeltypen, z. B. &quot;Wann&qu
 
 Eine Regel folgt normalerweise einem der folgenden Konstrukte:
 
-**Bedingung-Aktion** In diesem Konstrukt definiert die Regel zuerst eine Bedingung und dann die auszulösende Aktion. Das Konstrukt ist vergleichbar mit `if-then statement` in den Programmiersprachen.
+**Bedingung-Aktion** In diesem Konstrukt definiert die Regel zuerst eine Bedingung und dann die auszulösende Aktion. Das Konstrukt ist in den Programmiersprachen mit `if-then statement` vergleichbar.
 
 Im Regeleditor wird das Bedingung-Aktion-Konstrukt durch den Regeltyp **Wenn** durchgesetzt.
 
 **Aktion-Bedingung** In diesem Konstrukt definiert die Regel zuerst eine auszulösende Aktion und dann die auszuwertenden Bedingungen. Eine weitere Variante dieses Konstrukts ist Aktion-Bedingung-alternative Aktion, wobei auch dann eine alternative Aktion angegeben wird, die ausgelöst wird, wenn die Bedingung den Wert „False“ zurückgibt.
 
-Die Regeltypen Anzeigen, Ausblenden, Aktivieren, Deaktivieren, Wert einstellen und Validieren im Regeleditor erzwingen, dass die `action-condition` Regelkonstrukt. Die alternative Aktion für „Anzeigen“ ist standardmäßig „Ausblenden“ und für „Aktivieren“ „Deaktivieren“ und umgekehrt. Sie können die standardmäßige alternative Aktion nicht ändern.
+Die Regeltypen &quot;Anzeigen&quot;, &quot;Ausblenden&quot;, &quot;Aktivieren&quot;, &quot;Deaktivieren&quot;, &quot;Wert einstellen&quot;und &quot;Validieren&quot;im Regeleditor erzwingen das Regelkonstrukt `action-condition`. Die alternative Aktion für „Anzeigen“ ist standardmäßig „Ausblenden“ und für „Aktivieren“ „Deaktivieren“ und umgekehrt. Sie können die standardmäßige alternative Aktion nicht ändern.
 
 >[!NOTE]
 >
@@ -62,9 +63,9 @@ Für die meisten Anwendungsfälle können Sie ein beliebiges Regelkonstrukt verw
 
 * Eine typische Faustregel bei der Erstellung einer Regel ist, sie im Kontext des Objekts zu betrachten, für das Sie eine Regel schreiben. Angenommen, Sie möchten ein Feld B basierend auf dem Wert anzeigen, den ein Benutzer in Feld A angibt. In diesem Fall bewerten Sie eine Bedingung für Feld A und lösen basierend auf dem zurückgegebenen Wert eine Aktion für Feld B aus.
 
-  Wenn Sie daher eine Regel für Feld B schreiben (das Objekt, für das Sie eine Bedingung auswerten), verwenden Sie die `condition-action` Konstrukt oder `When` Regeltyp. Verwenden Sie auf ähnliche Weise die `action-condition` Konstrukt oder `Show or Hide` Regeltyp für Feld A.
+  Wenn Sie daher eine Regel für Feld B (das Objekt, für das Sie eine Bedingung auswerten) schreiben, verwenden Sie das Konstrukt `condition-action` oder den Regeltyp `When` . Verwenden Sie auf ähnliche Weise das Konstrukt `action-condition` oder den Regeltyp `Show or Hide` für Feld A.
 
-* In manchen Fällen müssen Sie für eine Bedingung mehrere Aktionen ausführen. In solchen Fällen wird empfohlen, die `condition-action` -Konstrukt. In diesem Konstrukt können Sie eine Bedingung einmal auswerten und mehrere Aktionsanweisungen angeben.
+* In manchen Fällen müssen Sie für eine Bedingung mehrere Aktionen ausführen. In solchen Fällen wird die Verwendung des `condition-action` -Konstrukts empfohlen. In diesem Konstrukt können Sie eine Bedingung einmal auswerten und mehrere Aktionsanweisungen angeben.
 
   Um beispielsweise die Felder B, C und D basierend auf einer Bedingung auszublenden, durch die der von einer Benutzerin oder einem Benutzer in Feld A angegebenen Wert geprüft wird, genügt eine Regel mit dem Konstrukt „Bedingung-Aktion“ oder dem Regeltyp „Wenn“ für Feld A, wobei Aktionen für die Sichtbarkeit der Felder B, C und D angegeben werden. Andernfalls benötigen Sie drei separate Regeln für die Felder B, C und D, wobei jede Regel die Bedingung prüft und das jeweilige Feld angezeigt oder ausgeblendet wird. In diesem Beispiel ist das Schreiben einer Wenn-Regel für ein Objekt effizienter als die Erstellung von Regeln zum Anzeigen und Ausblenden für drei Objekte.
 
@@ -83,7 +84,7 @@ Der Regeleditor bietet die folgenden logischen Operatoren und Ereignisse, mit de
 * **Beginnt mit**
 * **Endet mit**
 * **Enthält**
-* **Enthält nicht**
+* **enthält nicht**
 * **Ist leer**
 * **Ist nicht leer**
 * **Hat ausgewählt:** Gibt &quot;true&quot;zurück, wenn der Benutzer eine bestimmte Option für ein Kontrollkästchen, eine Dropdownliste oder ein Optionsfeld auswählt.
@@ -129,7 +130,7 @@ Eine Liste hat beispielsweise vier Optionen: „Rot“, „Blau“, „Grün“ 
 
 ![Anzeigeoptionen für mehrere Werte](assets/multivaluefcdisplaysoptions.png)
 
-Beim Schreiben der Wenn-Regel können Sie die Aktion „Wert löschen von“ auslösen. `Clear Value Of` Aktion löscht den Wert des angegebenen Objekts. nach `Clear Value of` als Option in der Wenn -Anweisung können Sie komplexe Bedingungen mit mehreren Feldern erstellen. Sie können die Anweisung Else hinzufügen, um weitere Bedingungen hinzuzufügen.
+Beim Schreiben der Wenn-Regel können Sie die Aktion „Wert löschen von“ auslösen. Aktion `Clear Value Of` löscht den Wert des angegebenen Objekts. Mit der Option `Clear Value of` in der Wenn-Anweisung können Sie komplexe Bedingungen mit mehreren Feldern erstellen. Sie können die Anweisung Else hinzufügen, um weitere Bedingungen hinzuzufügen.
 
 ![Wert löschen von](assets/clearvalueof.png)
 
@@ -137,9 +138,9 @@ Beim Schreiben der Wenn-Regel können Sie die Aktion „Wert löschen von“ aus
 >
 > Wenn der Regeltyp nur einstufige then-else-Anweisungen unterstützt.
 
-#### Zulässige mehrere Felder in [!UICONTROL Wann] {#allowed-multiple-fields}
+#### Zulässige mehrere Felder in [!UICONTROL When] {#allowed-multiple-fields}
 
-Im **Wann** -Bedingung, können Sie neben dem Feld, auf das die Regel angewendet wird, weitere Felder hinzufügen.
+In der Bedingung **Wenn** haben Sie die Möglichkeit, neben dem Feld, auf das die Regel angewendet wird, weitere Felder hinzuzufügen.
 
 Beispielsweise können Sie mithilfe des Wenn-Regeltyps eine Bedingung für verschiedene Formularobjekte auswerten und die folgende Aktion durchführen:
 
@@ -157,14 +158,14 @@ Beispielsweise können Sie mithilfe des Wenn-Regeltyps eine Bedingung für versc
 
 _
 
-![Zulässige mehrere Felder in , wenn](/help/forms/using/assets/allowed-multiple-field-when.png)
+![ Zulässige mehrere Felder in When](/help/forms/using/assets/allowed-multiple-field-when.png)
 
 
 
 
 ##### Überlegungen zur Verwendung von zulässigen mehreren Feldern in der Funktion &quot;Wenn Bedingung&quot;
 
-* Stellen Sie sicher, dass [Kernkomponente und Spezifikationsversion auf die neueste Version eingestellt](https://github.com/adobe/aem-core-forms-components/tree/release/650) , um diese Funktion im Regeleditor zu verwenden.
+* Stellen Sie sicher, dass die Kernkomponente und die Spezifikationsversion [auf die neueste Version](https://github.com/adobe/aem-core-forms-components/tree/release/650) eingestellt sind, um diese Funktion im Regeleditor zu verwenden.
 * Wenn Regeln auf verschiedene Felder in der Wenn-Bedingung angewendet werden, wird die Regel auch dann Trigger, wenn nur eines dieser Felder geändert wird.
 
 
@@ -188,7 +189,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 Wenn bei der Funktion Zulässige mehrere Felder in der Bedingung Wenn Probleme auftreten, führen Sie die Schritte zur Fehlerbehebung wie folgt aus:
 
 1. Öffnen Sie das Formular im Bearbeitungsmodus.
-1. Öffnen Sie den Inhaltsbrowser und wählen Sie die **[!UICONTROL Guide Container]** -Komponente Ihres adaptiven Formulars.
+1. Öffnen Sie den Inhaltsbrowser und wählen Sie die Komponente **[!UICONTROL Guide Container]** des adaptiven Formulars aus.
 1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/using/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
 1. Klicken Sie auf Fertig und speichern Sie das Dialogfeld erneut.
 
@@ -222,7 +223,7 @@ Mit dem Regeltyp **[!UICONTROL Eigenschaft festlegen]** können Sie den Wert ein
 * valid (Boolescher Wert)
 * errorMessage (Zeichenfolge)
 * default (Zahl, Zeichenfolge, Datum)
-* enumNames (String)[])
+* enumNames (String[])
 * chartType (Zeichenfolge)
 
 So können Sie beispielsweise Regeln definieren, die das Textfeld anzeigen, wenn auf eine Schaltfläche geklickt wird. Sie können benutzerdefinierte Funktionen, ein Formularobjekt, eine Objekteigenschaft oder eine Dienstausgabe verwenden, um eine Regel zu definieren.
@@ -247,7 +248,7 @@ Die folgende Abbildung zeigt ein Beispiel für die dynamische Aktivierung des Ko
 
 **[!UICONTROL Zurücksetzen]** Setzt das Formular oder das angegebene Objekt zurück.
 
-**[!UICONTROL Bestätigen]** Validiert das Formular oder das angegebene Objekt.
+**[!UICONTROL Validieren]** Prüft das Formular oder das angegebene Objekt.
 
 **[!UICONTROL Instanz hinzufügen]**: Fügt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile hinzu.
 
@@ -257,7 +258,7 @@ Die folgende Abbildung zeigt ein Beispiel für die dynamische Aktivierung des Ko
 
 **[!UICONTROL Navigieren zu]**: Navigiert zu anderen <!--Interactive Communications,--> adaptiven Formularen, anderen Assets (wie Bildern oder Dokument-Fragmenten) oder zu einer externen URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL Dispatcher-Ereignis]** Trigger der spezifischen Aktionen oder Verhaltensweisen anhand vordefinierter Bedingungen oder Ereignisse.
+**[!UICONTROL Dispatch-Ereignis]** : Trigger die spezifischen Aktionen oder Verhaltensweisen, die auf vordefinierten Bedingungen oder Ereignissen basieren.
 
 
 ### [!UICONTROL Wert festlegen] {#set-value-of}
@@ -268,13 +269,17 @@ Der Regeltyp **Wert festlegen** steht für manche Formularobjekte nicht zur Verf
 
 Wert von Objekt A festlegen auf:
 
-(Zeichenfolge ABC) ODER (Objekteigenschaft X von Objekt C) ODER (Wert aus einer Funktion) ODER (Wert aus einem mathematischen Ausdruck) ODER (Ausgabewert eines Datenmodelldienstes);
+(Zeichenfolge ABC) ODER
+(Objekteigenschaft X des Objekts C) ODER
+(Wert aus einer Funktion) ODER
+(Wert aus einem mathematischen Ausdruck) ODER
+(Ausgabewert eines Datenmodelldienstes);
 
 When (optional):
 
 (Condition 1 AND Condition 2 AND Condition 3) is TRUE;
 
-Im folgenden Beispiel wird der Wert von `Question2` as `True` und legt den Wert von `Result` as `correct`.
+Im folgenden Beispiel wird der Wert von `Question2` als `True` ausgewählt und der Wert von `Result` auf `correct` gesetzt.
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
@@ -456,7 +461,7 @@ Die Schaltfläche **[!UICONTROL Fertig]** wird verwendet, um eine Regel zu speic
 
 ## Regeln schreiben {#write-rules}
 
-Sie können Regeln mit dem visuellen Regeleditor schreiben <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
+Sie können Regeln mit dem visuellen Regeleditor <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. --> schreiben
 
 Im Folgenden wird zunächst das Schreiben von Regeln im Visual Editor beschrieben.
 
@@ -491,7 +496,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
    ![Radio button values from rule editor](assets/radio-button-values.png)-->
 
-1. Im **[!UICONTROL String eingeben]** in der Regel ein, wählen Sie **Verheiratet** aus dem Dropdown-Menü.
+1. Wählen Sie im Feld **[!UICONTROL String eingeben]** in der Regel **Verheiratet** aus dem Dropdown-Menü aus.
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4-cc.png)
 
@@ -506,11 +511,11 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
 
    Definieren Sie als Nächstes die Aktion, die ausgeführt werden soll, wenn diese Bedingung False ist.
-1. Klicks **[!UICONTROL Abschnitt &quot;Else hinzufügen&quot;]** , um eine weitere Bedingung für die **[!UICONTROL Gehalt des Partners]** eingeben, falls Sie Familienstand als Einzelperson auswählen.
+1. Klicken Sie auf **[!UICONTROL Else Abschnitt hinzufügen]** , um eine weitere Bedingung für das Feld **[!UICONTROL Gehalt des Partners/der Partnerin]** hinzuzufügen, falls Sie Familienstand als Einzelperson auswählen.
 
    ![when-else](assets/when-else.png)
 
-1. Wählen Sie in der Anweisung Else die Option **[!UICONTROL Ausblenden]** aus dem **[!UICONTROL Aktion auswählen]** angezeigt.
+1. Wählen Sie in der Anweisung &quot;Else&quot;aus der Dropdown-Liste **[!UICONTROL Aktion auswählen]** die Option **[!UICONTROL Ausblenden]** aus.
    ![when-else](assets/when-else-1.png)
 
 1. Ziehen Sie das Feld **[!UICONTROL Gehalt des Partners]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier aus]**. Stattdessen können Sie auch das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]** auswählen und das Feld **[!UICONTROL Gehalt des Partners]** aus dem Popup-Menü wählen, in dem sämtliche Formularobjekte im Formular aufgeführt sind.
@@ -623,7 +628,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Benutzerdefinierte Funktionen im Regeleditor {#custom-functions}
 
-Neben den vordefinierten Funktionen wie *Summe der* die unter **Funktionsausgabe** können Sie auch benutzerdefinierte Funktionen in Ihrem Regeleditor verwenden. Der Regeleditor unterstützt die JavaScript ECMAScript 2019-Syntax für Skripte und benutzerdefinierte Funktionen. Anweisungen zum Erstellen benutzerdefinierter Funktionen finden Sie im Artikel [Benutzerdefinierte Funktionen in Adaptive Forms](/help/forms/using/create-and-use-custom-functions-core-components.md)
+Neben den vordefinierten Funktionen wie *Summe von*, die unter **Funktionsausgabe** aufgeführt sind, können Sie auch benutzerdefinierte Funktionen in Ihrem Regeleditor verwenden. Der Regeleditor unterstützt die Syntax von JavaScript ECMAScript 2019 für Skripte und benutzerdefinierte Funktionen. Anweisungen zum Erstellen benutzerdefinierter Funktionen finden Sie im Artikel [Benutzerdefinierte Funktionen in Adaptive Forms](/help/forms/using/create-and-use-custom-functions-core-components.md)
 
 <!--
 
@@ -951,7 +956,7 @@ Rule in the code editor -->
 
 Sie möchten verhindern, dass in dem Bestellformular aus dem vorigen Abschnitt Benutzer mehr als eine Einheit jedes beliebigen Produkts mit einem Preis über 10.000 bestellen. Um dies zu erreichen, können Sie wie unten gezeigt eine Validierungsregel schreiben.
 
-![Example-validate](assets/example-validate.png)
+![example-validate](assets/example-validate.png)
 Regel im Visual Editor
 
 <!-- The rule appears as follows in the code editor.

@@ -1,5 +1,5 @@
 ---
-title: Veröffentlichung von Inhalt rückgängig machen
+title: Publish - Inhalte nicht veröffentlichen
 description: Sobald Sie sich mit Inhaltsverwaltungsaktionen für Artikel, Banner und Sammlungen vertraut gemacht haben, erfahren Sie auf dieser Seite, wie Sie Inhalte veröffentlichen können. Außerdem können Sie die Veröffentlichung des Inhalts rückgängig machen.
 contentOwner: User
 content-type: reference
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 ---
 
-# Veröffentlichung von Inhalt rückgängig machen{#publish-unpublish-content}
+# Publish - Inhalte nicht veröffentlichen{#publish-unpublish-content}
 
 >[!NOTE]
 >
@@ -26,11 +26,11 @@ Sobald Sie mit Inhaltsverwaltungsaktionen für Artikel, Banner und Sammlungen ve
 
 >[!NOTE]
 >
->Weitere Informationen zu Designüberlegungen für AEM Mobile-Apps finden Sie unter [Designüberlegungen für AEM Mobile-Apps](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in der Onlinehilfe.
+>Weitere Informationen zu Designüberlegungen für AEM Mobile-Apps finden Sie unter [Designüberlegungen für AEM Mobile-Apps](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in der Online-Hilfe.
 
 ## Veröffentlichen/Veröffentlichung des Inhalts rückgängig machen {#publishing-unpublishing-the-content}
 
-Dies unterscheidet sich von der AEM &quot;Veröffentlichen&quot;. Sie senden keine Inhalte an eine AEM Veröffentlichungs-Server-Instanz, um sie öffentlich sichtbar zu machen. Hier informieren Sie Mobile On-Demand, dass der ausgewählte Inhalt in der Live-Mobile On-Demand-App veröffentlicht werden soll.
+Dies unterscheidet sich von einem &quot;AEM Publish&quot;. Sie senden keine Inhalte an eine AEM Publish-Serverinstanz, um sie öffentlich sichtbar zu machen. Hier informieren Sie Mobile On-Demand, dass der ausgewählte Inhalt in der Live-Mobile On-Demand-App veröffentlicht werden soll.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Der allgemeine Workflow zum Veröffentlichen/Rückgängigmachen der Veröffentli
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
 1. Wählen Sie einen Artikel.
 1. Fügen Sie bei Bedarf in der Listenansicht weitere Artikel hinzu.
-1. Wählen Sie in der Aktionsleiste Veröffentlichen aus. Nach einigen Augenblicken werden Ihre Artikel jetzt öffentlich sein.
+1. Wählen Sie in der Aktionsleiste Publish aus. Nach einigen Augenblicken werden Ihre Artikel jetzt öffentlich sein.
 1. Gehen Sie wie oben beschrieben vor, um die Veröffentlichung von Artikeln rückgängig zu machen.
 
 <!-- FAIL >>[!NOTE]
@@ -57,4 +57,4 @@ Nachdem Sie sich mit dem Erstellen und Veröffentlichen von Inhalten vertraut ge
 * [Entwickeln von AEM für AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Verwalten von Inhalten zur Verwendung von AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
-Wenn Sie weitere Informationen zu den Bearbeitungsthemen erhalten möchten, finden Sie weitere Informationen unter [Inhaltserstellung AEM AEM Mobile On-demand Services-Apps](/help/mobile/mobile-apps-ondemand.md).
+Wenn Sie weitere Informationen zu den Authoring-Themen erhalten möchten, finden Sie weitere Informationen unter [Bearbeiten AEM Inhalts für AEM Mobile On-demand Services-Apps](/help/mobile/mobile-apps-ondemand.md).

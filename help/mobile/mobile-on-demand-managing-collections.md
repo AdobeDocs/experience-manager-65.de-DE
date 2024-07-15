@@ -26,7 +26,7 @@ Inhaltsverwaltungsaktionen sind die Bausteine, mit denen Inhalte in einer Anwend
 
 ## Sammlungen - Überblick {#collections-overview}
 
-Sammlungen stellen eine genau definierte *Bucket* mit Inhalten wie Artikeln oder Bannern gefüllt, die dem Titelthema entsprechen.
+Sammlungen stellen einen klar definierten *Behälter* dar, der mit Inhalten wie Artikeln oder Bannern gefüllt ist, die zum Thema des Titelbildes passen.
 
 >[!NOTE]
 >
@@ -41,12 +41,12 @@ Sammlungen stellen eine genau definierte *Bucket* mit Inhalten wie Artikeln oder
 
 Der allgemeine Workflow zum Erstellen einer Kollektion lautet wie folgt:
 
-1. Auswählen **Mobilnummer** über die Seitenleiste aus.
+1. Wählen Sie in der Seitenleiste **Mobil** aus.
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Klicken Sie oben rechts in der **Verwalten von Sammlungen** Kachel.
+1. Klicken Sie oben rechts in der Kachel **Sammlungen verwalten** auf den Abwärtspfeil.
 1. Führen Sie jeden Schritt des Assistenten durch, um mit der Erstellung des neuen Artikels fortzufahren.
 1. Wenn Sie bereit sind, klicken Sie auf **Erstellen**.
-1. Ihr neuer Artikel wird im **Verwalten von Sammlungen** Kachel.
+1. Ihr neuer Artikel wird in der Kachel **Sammlungen verwalten** angezeigt.
 
 ![chlimage_1-1](assets/chlimage_1-1.gif)
 
@@ -61,9 +61,9 @@ Vorhandene On-Demand-Inhalte für Mobilgeräte können von Mobile On-Demand heru
 Der Workflow zum Importieren einer neuen Sammlung
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Klicken Sie oben rechts in der **Verwalten von Sammlungen** und wählen Sie Sammlungen importieren aus.
-1. Klicks **Sammlungen importieren** im Dialogfeld und dann Schließen.
-1. Ihre On-Demand-Sammlungen für Mobilgeräte werden jetzt im **Verwalten von Sammlungen** Kachel.
+1. Klicken Sie oben rechts in der Kachel **Sammlungen verwalten** auf den Abwärtspfeil und wählen Sie &quot;Sammlungen importieren&quot;.
+1. Klicken Sie im Dialogfeld auf **Sammlungen importieren** und dann auf Schließen.
+1. Ihre On-Demand-Sammlungen für Mobilgeräte werden jetzt in der Kachel **Sammlungen verwalten** angezeigt.
 
 >[!CAUTION]
 >
@@ -71,12 +71,12 @@ Der Workflow zum Importieren einer neuen Sammlung
 
 ## Bearbeiten einer Sammlung {#editing-a-collection}
 
-Verwenden Sie den integrierten AEM Drag &amp; Drop-Editor, um einen Artikel hinzuzufügen oder zu ändern. Komponenten wie Text und Bilder können hinzugefügt/entfernt werden. Bilder aus DAM-Assets können eingefügt werden.
+Verwenden Sie den integrierten AEM Drag &amp; Drop-Editor, um einen Artikel hinzuzufügen oder zu ändern. Komponenten wie Text und Bilder können hinzugefügt/entfernt werden. Bilder aus DAM Assets können eingefügt werden.
 
 Der Workflow zum Bearbeiten einer Sammlung:
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Wählen Sie einen AEM Artikel aus dem **Verwalten von Sammlungen** Kachel.
+1. Wählen Sie in der Kachel **Sammlungen verwalten** einen AEM bezogenen Artikel aus.
 1. Klicken Sie in der Listenansicht auf die markierte Sammlung, um sie im Inhaltseditor zu öffnen.
 1. Verwenden Sie den Inhaltseditor, um Sammlungsinhalte (Manuskripte, Bilder, Text usw.) zu ziehen.
 
@@ -87,11 +87,11 @@ Sammlungen verfügen über zahlreiche Eigenschaften wie Titel, Beschreibungen un
 Allgemeiner Workflow zum Anzeigen/Bearbeiten einer Sammlung:
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Wählen Sie eine Sammlung aus der **Verwalten von Sammlungen** Kachel.
+1. Wählen Sie eine Sammlung aus der Kachel **Sammlungen verwalten** aus.
 
 1. Wählen Sie in der Aktionsleiste **Eigenschaften** aus.
 1. Alle verfügbaren Metadaten für diesen Artikel anzeigen.
-1. Bearbeiten Sie die Metadaten nach Bedarf und klicken Sie auf **Speichern** wann geschehen.
+1. Bearbeiten Sie die Metadaten nach Bedarf und klicken Sie danach auf **Speichern** .
 1. Optional können Sie die Änderungen sofort in Mobile On-Demand hochladen.
 
 ## Hochladen einer Sammlung {#uploading-a-collection}
@@ -100,10 +100,10 @@ Mit der Aktion &quot;Hochladen&quot;wird der ausgewählte Inhalt kopiert und zu 
 
 Allgemeiner Workflow zum Hochladen einer Sammlung:
 
-1. Von **Mobilnummer** wählen Sie Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Im **Verwalten von Sammlungen** -Kachel einen Artikel zum Hochladen auf Mobile On-Demand auswählen.
+1. Wählen Sie in **Mobile** Ihre Mobile On-Demand-App aus dem Katalog aus.
+1. Wählen Sie in der Kachel **Sammlungen verwalten** einen Artikel zum Hochladen auf Mobile On-Demand aus.
 1. Fügen Sie bei Bedarf in der Listenansicht weitere Sammlungen hinzu.
-1. Auswählen **Hochladen** Klicken Sie in der Aktionsleiste auf Hochladen im Dialogfeld.
+1. Wählen Sie in der Aktionsleiste **Upload** aus und klicken Sie dann im Dialogfeld auf Hochladen .
 1. Ihre Sammlung(en) wurde(n) jetzt in Mobile On-Demand hochgeladen.
 
 ## Löschen einer Sammlung {#deleting-a-collection}
@@ -113,9 +113,9 @@ Durch diesen Vorgang wird die ausgewählte Sammlung aus Mobile On-Demand und opt
 Der allgemeine Workflow zum Löschen einer Sammlung:
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Wählen Sie den zu löschenden Artikel im **Verwalten von Sammlungen** Kachel.
+1. Wählen Sie den zu löschenden Artikel in der Kachel **Sammlungen verwalten** aus.
 1. Stellen Sie sicher, dass es in der Liste ausgewählt ist. Wählen Sie Andere aus, um sie nach Bedarf zu löschen.
-1. Klicks **Löschen** in der Aktionsleiste aus.
+1. Klicken Sie in der Aktionsleiste auf **Löschen** .
 1. Überprüfen Sie, ob Sie aus AEM und Mobile On-Demand löschen möchten.
 1. Klicken Sie auf **Löschen**.
 1. Ihre Sammlung wird jetzt aus der Liste entfernt.
@@ -134,7 +134,7 @@ Kollektionen sind im Wesentlichen eine Kategorie verwandter Inhalte: Sie sammeln
 1. Wählen Sie einen zuvor hochgeladenen Artikel (oder Banner/Sammlung) aus.
 1. Wählen Sie in der Aktionsleiste Hinzufügen zu aus.
 1. Wählen Sie im Dialogfeld eine zuvor hochgeladene Sammlung aus.
-1. Klicks **Aktualisieren** , um Inhalte zur Sammlung hinzuzufügen.
+1. Klicken Sie auf **Aktualisieren** , um Inhalte zur Sammlung hinzuzufügen.
 
 ![chlimage_1-2](assets/chlimage_1-2.gif)
 

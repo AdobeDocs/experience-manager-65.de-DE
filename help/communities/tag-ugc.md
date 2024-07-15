@@ -18,7 +18,7 @@ ht-degree: 4%
 
 # Tagging benutzergenerierter Inhalte {#tagging-user-generated-content}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Das Tagging benutzergenerierter Inhalte (UGC) ist das Mittel, mit dem Community-Mitglieder anderen Mitgliedern bei der Suche nach Inhalten helfen können.
 
@@ -38,11 +38,11 @@ Die AEM Communities-Funktionen, die für das Tagging konfiguriert werden können
 
 ## Verwalten von Tags {#administering-tags}
 
-Siehe [Verwalten von Tags](../../help/sites-administering/tags.md#tagging-console) zum Erstellen und Verwalten von Tag-Namespaces und Taxonomien.
+Informationen zum Erstellen und Verwalten von Tag-Namespaces und Taxonomien finden Sie unter [Verwalten von Tags](../../help/sites-administering/tags.md#tagging-console) .
 
-Siehe [Tag-Grundlagen](tag.md) für Entwicklerinformationen.
+Entwicklerinformationen finden Sie unter [Tag Essentials](tag.md) .
 
-Siehe [Verwenden der Social Tag Cloud](tagcloud.md) zum Hinzufügen einer Social Tag Cloud-Komponente zu einer Seite, um die Suche nach veröffentlichten UGC mithilfe der angewendeten Tags zu erleichtern.
+Informationen zum Hinzufügen einer Social-Tag-Cloud-Komponente zu einer Seite finden Sie unter [Verwenden der Social-Tag-Cloud](tagcloud.md) , um die Suche nach veröffentlichten benutzergenerierten Inhalten mithilfe der angewendeten Tags zu erleichtern.
 
 ### Tag-Berechtigungen {#tag-permissions}
 
@@ -52,6 +52,6 @@ Da Tags in der Veröffentlichungsumgebung auf UGC angewendet werden, muss die Le
 
 Siehe [Festlegen von Tag-Berechtigungen](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-Folgendes wird in CRXDE angezeigt, wenn ein Administrator Leseberechtigungen auf `/etc/tag/discussions` für die Gruppe `Community Engage Members`.
+Im Folgenden sehen Sie, wie es in CRXDE angezeigt wird, wenn ein Administrator Leseberechtigungen für die Gruppe `Community Engage Members` auf `/etc/tag/discussions` anwendet.
 
 ![tag-permissions](assets/tag-permissions.png)

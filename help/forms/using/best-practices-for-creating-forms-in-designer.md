@@ -68,7 +68,7 @@ Verwandte Checkpoints
 
 ## Konfigurieren von Formulareigenschaften zum Generieren von Barrierefreiheitsinformationen {#configure-form-properties}
 
-Damit ein Formular zugänglich sein kann, muss es [wahrnehmbar](https://www.w3.org/TR/WCAG20/#perceivable) durch Hilfstechnologien. Die meisten Bildschirmlesehilfen berücksichtigen beispielsweise nicht das visuelle Layout des Formulars, sondern die zugrunde liegende Struktur.
+Damit ein Formular barrierefrei ist, muss es von Hilfstechnologien [wahrnehmbar](https://www.w3.org/TR/WCAG20/#perceivable) sein. Die meisten Bildschirmlesehilfen berücksichtigen beispielsweise nicht das visuelle Layout des Formulars, sondern die zugrunde liegende Struktur.
 
 Um diese zugrunde liegende Struktur mithilfe von LiveCycle Designer zu implementieren, müssen Sie ein PDF-Formular mit Barrierefreiheitsinformationen (manchmal auch als Tags bezeichnet) erstellen, damit die Sprachausgabe oder andere Hilfstechnologien den Formulartext und die Formularkomponenten lesen können. In einem Formular mit Barrierefreiheitsinformationen enthält jedes Element Informationen über seine eigene Struktur sowie Informationen darüber, wie es mit anderen Elementen verbunden oder davon abhängig ist. Nur in PDF-Dateien mit enthaltenen Barrierefreiheitsinformationen können Bildschirmlesehilfen den Inhalt eines Dokuments genau identifizieren und beschreiben.
 
@@ -133,7 +133,7 @@ Beachten Sie beim Festlegen des Alternativtexts Folgendes:
 * Erstellen Sie keine Textbeschreibungen für statische Bilder, die nur für die Dekoration verwendet werden.
 * Verwenden Sie keine gescannten Daten als Hintergrundinformationen. Dies kann vorkommen, wenn ein Designer ein Druckformular scannt und Adobe LiveCycle Designer verwendet, um dem Formular neue Felder hinzuzufügen. Bildschirmlesehilfen können die gescannten Daten in diesem Status nicht erkennen.
 
-Wenn Sie rein dekorative grafische Inhalte in Ihre Formulare aufnehmen, sollten Sie sicherstellen, dass Bildschirmlesehilfen die Präsenz des Bildes nicht ankündigen. Für die meisten Bildschirmlesehilfen kann dies erreicht werden, indem Sie in der Palette &quot;Ein-/Ausgabehilfe&quot;die Eigenschaft &quot;Text im Reader&quot;auf &quot;Ohne&quot;setzen. Wenn Sie dies nicht tun, können einige Bildschirmlesehilfen das Vorhandensein einer Grafik ankündigen, ohne anzugeben, was die Grafik darstellt. Stellen Sie bei dynamischen Bildern wie Bildfeldobjekten sicher, dass die Textalternativen beim Ändern des Bildes ordnungsgemäß aktualisiert werden. Erstellen Sie keine Textbeschreibungen für Bildfeldobjekte, die nur für die Dekoration verwendet werden. Sie können die FormCalc-Skriptsprache verwenden, um einem Bildfeldobjekt dynamisch Textbeschreibungen zuzuweisen. FormCalc ist die Standard-Skriptsprache von Adobe LiveCycle Designer. Betrachten Sie beispielsweise ein Formular mit einem Bildfeld namens ImageField1 und verknüpftem Text im Bildknoten der Laufzeitdaten. Sie können Skripten verwenden, um diesen Text in einem geeigneten Ereignis (z. B. `form:ready`)wie folgt:
+Wenn Sie rein dekorative grafische Inhalte in Ihre Formulare aufnehmen, sollten Sie sicherstellen, dass Bildschirmlesehilfen die Präsenz des Bildes nicht ankündigen. Für die meisten Bildschirmlesehilfen kann dies erreicht werden, indem Sie in der Palette &quot;Ein-/Ausgabehilfe&quot;die Eigenschaft &quot;Text im Reader&quot;auf &quot;Ohne&quot;setzen. Wenn Sie dies nicht tun, können einige Bildschirmlesehilfen das Vorhandensein einer Grafik ankündigen, ohne anzugeben, was die Grafik darstellt. Stellen Sie bei dynamischen Bildern wie Bildfeldobjekten sicher, dass die Textalternativen beim Ändern des Bildes ordnungsgemäß aktualisiert werden. Erstellen Sie keine Textbeschreibungen für Bildfeldobjekte, die nur für die Dekoration verwendet werden. Sie können die FormCalc-Skriptsprache verwenden, um einem Bildfeldobjekt dynamisch Textbeschreibungen zuzuweisen. FormCalc ist die Standard-Skriptsprache von Adobe LiveCycle Designer. Betrachten Sie beispielsweise ein Formular mit einem Bildfeld namens ImageField1 und verknüpftem Text im Bildknoten der Laufzeitdaten. Sie können Skripten verwenden, um diesen Text wie folgt in einem entsprechenden Ereignis (z. B. `form:ready`) weiterzugeben:
 
 `ImageField1.assist.toolTip = $record.imagetext.value`
 
@@ -160,7 +160,7 @@ Gehen Sie wie folgt vor, um die Palette &quot;Ein-/Ausgabehilfe&quot;zu verwende
 
 ![Die Palette &quot;Ein-/Ausgabehilfe&quot;](/help/forms/using/assets/image-3.png)
 
-Abbildung 3: **Die Palette &quot;Ein-/Ausgabehilfe&quot;**
+Abbildung 3: **Palette &quot;Ein-/Ausgabehilfe&quot;**
 
 Wenn das Formular als PDF gespeichert wird, durchsucht LiveCycle Designer das Formular in dieser Reihenfolge nach den Eigenschaften &quot;Benutzerdefinierter Text&quot;, &quot;QuickInfo&quot;, &quot;Beschriftung&quot;und &quot;Name&quot;, um nach Text zu suchen, der von Sprachausgaben gelesen werden kann. Sie können diese Standardreihenfolge außer Kraft setzen, indem Sie in der Palette &quot;Ein-/Ausgabehilfe&quot;die Option &quot;Rangfolge des Readers auf dem Bildschirm&quot;verwenden:
 
@@ -170,11 +170,11 @@ Wenn das Formular als PDF gespeichert wird, durchsucht LiveCycle Designer das Fo
 
 Die folgenden Optionen sind verfügbar:
 
-* **Benutzerdefinierter Text**, die Sie im Feld &quot;Reader für benutzerdefinierten Bildschirm&quot;der Palette &quot;Ein-/Ausgabehilfe&quot;festlegen. Mit dieser Option können Sie jeden Text angeben, den Sie mithilfe von Hilfstechnologien wie Bildschirmlesehilfen verwenden möchten. Die Verwendung der Beschriftungseinstellung ist in den meisten Fällen am besten. Das Erstellen von benutzerdefiniertem Bildschirmtext sollte nur dann als Option betrachtet werden, wenn die Beschriftung verwendet wird oder ein ToolTip nicht möglich ist.
-* **QuickInfo**, die Sie im Feld &quot;QuickInfo&quot;der Palette &quot;Ein-/Ausgabehilfe&quot;festlegen. Bei den meisten Objekten werden QuickInfos zur Laufzeit angezeigt, wenn der Benutzer den Mauszeiger über das Objekt bewegt. QuickInfos werden für einige schreibgeschützte Objekte wie das Barcodeobjekt eines Papierformulars nur angezeigt, wenn eine Bildschirmlesehilfe verwendet wird.
+* **Benutzerdefinierter Reader**, den Sie im Textfeld für den benutzerdefinierten Bildschirmtext der Palette &quot;Ein-/Ausgabehilfe&quot;festlegen. Mit dieser Option können Sie jeden Text angeben, den Sie mithilfe von Hilfstechnologien wie Bildschirmlesehilfen verwenden möchten. Die Verwendung der Beschriftungseinstellung ist in den meisten Fällen am besten. Das Erstellen von benutzerdefiniertem Bildschirmtext sollte nur dann als Option betrachtet werden, wenn die Beschriftung verwendet wird oder ein ToolTip nicht möglich ist.
+* **QuickInfo**, die Sie im Feld &quot;QuickInfo&quot;der Palette &quot;Ein-/Ausgabehilfe&quot;festgelegt haben. Bei den meisten Objekten werden QuickInfos zur Laufzeit angezeigt, wenn der Benutzer den Mauszeiger über das Objekt bewegt. QuickInfos werden für einige schreibgeschützte Objekte wie das Barcodeobjekt eines Papierformulars nur angezeigt, wenn eine Bildschirmlesehilfe verwendet wird.
 * **Beschriftung**, wodurch LiveCycle Designer die zugehörige (visuelle) Beschriftung des Formularfelds als Bildschirmlesehilfen-Text verwendet.
-* **Name**, die Sie im Feld Name der Registerkarte &quot;Bindung&quot;festlegen. Beachten Sie, dass dieser Name keine Leerzeichen enthalten darf.
-* **Keines**, wodurch das Objekt keinen Namen hat. Dies wird nie für Formularsteuerelemente empfohlen.
+* **Name**, den Sie im Feld &quot;Name&quot;der Registerkarte &quot;Bindung&quot;festgelegt haben. Beachten Sie, dass dieser Name keine Leerzeichen enthalten darf.
+* **None** , wodurch das Objekt keinen Namen hat. Dies wird nie für Formularsteuerelemente empfohlen.
 
 Beachten Sie Folgendes bei der Verwendung der Palette &quot;Ein-/Ausgabehilfe&quot;für die Beschriftung von Formularsteuerelementen:
 
@@ -189,15 +189,16 @@ Beachten Sie Folgendes bei der Verwendung der Palette &quot;Ein-/Ausgabehilfe&qu
 
 Abbildung 4 zeigt ein Beispiel für ein Textfeld mit einer visuellen Beschriftung, die für einige Benutzer der Bildschirmlesehilfe möglicherweise unklar ist. In diesem Reader ist &quot;Benutzerdefinierter Bildschirmtext&quot;auf &quot;Seitenzahl&quot;und &quot;Bildschirmpriorität&quot;auf &quot;Benutzerdefinierter Reader&quot;eingestellt. Daher wird der tatsächliche (visuelle) Beschriftungstext (&quot;# der Seiten&quot;) nicht von der Bildschirmlesehilfe verwendet. Alternativ konnte ein QuickInfo angegeben werden.
 
-![Festlegen des Reader-Textes für benutzerdefinierte Bildschirme, wenn die sichtbare Beschriftung nicht ausreicht](/help/forms/using/assets/image-4.png)
+![Festlegen des Reader-Textes für benutzerdefinierte Bildschirme, wenn die sichtbare Beschriftung unzureichend ist](/help/forms/using/assets/image-4.png)
 
-Abbildung 4: **Festlegen des Reader-Textes für benutzerdefinierte Bildschirme, wenn die sichtbare Beschriftung nicht ausreicht**
+Abbildung 4: **Festlegen des Reader-Textes für benutzerdefinierte Bildschirme bei unzureichender sichtbarer Beschriftung**
 
 ### Beschriftung von Optionsfeldern
 
 Wenn ein sehbehinderter Benutzer mit der Tabulatortaste in ein Optionsfeld wechselt, muss die Bildschirmlesehilfe zwei Dinge lesen:
 * Angabe des Zwecks der Gruppe von Optionsfeldern
-* Eine aussagekräftige Beschriftung für jedes Optionsfeld So machen Sie Optionsfelder mithilfe der Schaltflächenbeschriftungen zugänglich:
+* Eine aussagekräftige Beschriftung für jedes Optionsfeld
+So machen Sie Optionsfelder über Schaltflächenbeschriftungen zugänglich:
    1. Wählen Sie in der Palette &quot;Hierarchie&quot;die Ausschlussgruppe aus.
    1. Klicken Sie auf die Palette &quot;Ein-/Ausgabehilfe&quot;und geben Sie im Feld &quot;Reader des benutzerdefinierten Bildschirms&quot;den für die Gruppe zu lesenden  ein. Geben Sie beispielsweise für eine Ausschlussgruppe, die Optionen für die Zahlung mit verschiedenen Kreditkarten angibt, Zahlungsmethode auswählen ein.
    1. Wenn die Beschriftungen für jedes Optionsfeld Text enthalten, der beim Aussprechen durch eine Bildschirmlesehilfe aussagekräftig ist, wählen Sie in der Palette &quot;Objekt&quot;die Registerkarte &quot;Bindung&quot;aus und deaktivieren Sie die Option &quot;Elementwert angeben&quot;.
@@ -277,7 +278,7 @@ Die folgende Zeichenfolge wird im Feld &quot;Bindung&quot;angezeigt: $record.too
 
 Benutzer von Hilfstechnologien können unterschiedliche Methoden zum Lesen verknüpfter Texte haben. Beispielsweise verwenden Benutzer von Bildschirmlesehilfen häufig eine Liste mit Links, wie in Abbildung 6 dargestellt, um die verfügbaren Links auf einer Seite schnell zu überprüfen.
 
-![Dialogfeld &quot;JAWS-Link-Liste&quot;](/help/forms/using/assets/image-6.png)
+![Das Dialogfeld &quot;JAWS-Link-Liste&quot;](/help/forms/using/assets/image-6.png)
 
 Abbildung 6: **Dialogfeld &quot;JAWS-Link-Liste&quot;**
 
@@ -339,9 +340,9 @@ Sie können festlegen, dass nur interaktive Formularsteuerelemente (die die Regi
 
 In einem komplexen Formular kann es schwierig sein zu erkennen, wie die Tab-Reihenfolge von einem Objekt zum nächsten verläuft. Sie können visuelle Hilfen verwenden, um den Tab-Fluss im Formular anzuzeigen. Wenn die visuellen Hilfen aktiviert sind und Sie den Mauszeiger über das Objekt bewegen, zeigen die blauen Pfeile den Tab-Fluss für die beiden vorangehenden und zwei nachfolgenden Objekte in der Tab-Reihenfolge an (siehe Abbildung 8).
 
-![Visuelle Hilfen markieren die Tab-Reihenfolge](/help/forms/using/assets/image-8.png)
+![Visuelle Hilfen zum Hervorheben der Registerkartenreihenfolge](/help/forms/using/assets/image-8.png)
 
-Abbildung 8: **Visuelle Hilfen markieren die Tab-Reihenfolge**
+Abbildung 8: **Sichtbare Hilfsmittel markieren die Tab-Reihenfolge**
 
 Verwenden Sie die folgenden Methoden, um die visuellen Hilfsmittel zu aktivieren:
 * Wählen Sie &quot;Extras&quot;> &quot;Optionen&quot;> &quot;Tab-Reihenfolge&quot;und wählen Sie im Bereich &quot;Tab-Reihenfolge&quot;die Option &quot;Zusätzliche visuelle Hilfen für Tab-Reihenfolge anzeigen&quot;.
@@ -351,9 +352,9 @@ Verwenden Sie die folgenden Methoden, um die visuellen Hilfsmittel zu aktivieren
 
 Um die standardmäßige Tab-Reihenfolge zu beeinflussen, können Sie die Koordinaten eines Objekts ändern, indem Sie es an eine andere Position verschieben. Beispiel: In Abbildung 9 tritt das Feld Produktname in der Tab-Reihenfolge vor dem Feld Menge auf. Um diese Reihenfolge zu ändern, können Sie das Feld Produktname so verschieben, dass es unter oder rechts vom Feld Menge platziert wird.
 
-![Die standardmäßige Tab-Reihenfolge ist von links nach rechts](/help/forms/using/assets/image-9.png)
+![Die standardmäßige Registerkartenreihenfolge ist von links nach rechts](/help/forms/using/assets/image-9.png)
 
-Abbildung 9: **Die standardmäßige Tab-Reihenfolge ist von links nach rechts**
+Abbildung 9: **Die standardmäßige Registerkartenreihenfolge ist von links nach rechts**
 
 Sie können die Position eines Objekts wie folgt ändern:
 * Ziehen Sie es mit der Maus
@@ -382,7 +383,7 @@ Wenn zwei Teilformulare, die Feldobjekte enthalten, nebeneinander positioniert s
 
 ![Standardmäßige Tab-Reihenfolge mit Teilformularen](/help/forms/using/assets/image-11.png)
 
-Abbildung 11: **Standardmäßige Tab-Reihenfolge mit Teilformularen**
+Abbildung 11: **Standardtabulatorreihenfolge mit Teilformularen**
 
 Teilformulare, Optionsfelder und Inhaltsbereiche wirken sich zusammen mit der vertikalen Position der Objekte auf einer Seite und ihrer Masterseite auf die Tab-Reihenfolge aus.
 
@@ -391,9 +392,9 @@ Teilformulare, Optionsfelder und Inhaltsbereiche wirken sich zusammen mit der ve
 Sie können die standardmäßige Tab-Reihenfolge ändern, wenn Sie eine andere Reihenfolge im Formular benötigen und die Änderung nicht durch Positionieren oder Gruppieren in Teilformularen erreicht werden kann. Um die standardmäßige Tab-Reihenfolge zu ändern, können Sie über die Palette &quot;Tab-Reihenfolge&quot;eine benutzerdefinierte Tab-Reihenfolge erstellen.
 Über die Palette &quot;Tab-Reihenfolge&quot;(siehe Abbildung 12) können Sie die Reihenfolge überprüfen und ändern, in der Objekte in Ihrem Formular mithilfe von Hilfstechnologien gelesen und durch die Tabulatortaste des Benutzers navigiert werden.
 
-![Die Palette &quot;Tab-Reihenfolge&quot;](/help/forms/using/assets/image-12.png)
+![Palette &quot;Tab-Reihenfolge&quot;](/help/forms/using/assets/image-12.png)
 
-Abbildung 12: **Die Palette &quot;Tab-Reihenfolge&quot;**
+Abbildung 12: **Palette &quot;Tab-Reihenfolge&quot;**
 
 Die Palette &quot;Tab-Reihenfolge&quot;bietet eine alternative Ansicht der Tab-Reihenfolge im Formular. Es zeigt alle Objekte im Formular als nummerierte Liste an, wobei jede Zahl die Position des Objekts im Tab-Fluss darstellt.
 Um die Palette &quot;Tab-Reihenfolge&quot;zu öffnen, wählen Sie &quot;Fenster&quot;> &quot;Tab-Reihenfolge&quot;.
@@ -467,9 +468,9 @@ Jegliche Informationen, die ausschließlich in Farbe vermittelt werden (Farben m
 
 Abbildung 13 zeigt beispielsweise ein Formularfeld mit einer roten Beschriftung (die über die Palette &quot;Schrift&quot;angegeben wird), um anzugeben, dass das Formularfeld erforderlich ist. In diesem Beispiel ist die Farbe das einzige Zeichen für den Unterschied zwischen erforderlichen und optionalen Eingabefeldern, was es blinden Benutzern oder Benutzern mit bestimmten Arten von Farbblindheit unmöglich macht, sie voneinander zu unterscheiden.
 
-![Informationen nur mit Farbe vermitteln](/help/forms/using/assets/image-13.png)
+![Verwenden der Farbe allein zur Informationsübermittlung](/help/forms/using/assets/image-13.png)
 
-Abbildung 13: **Informationen nur mit Farbe vermitteln**
+Abbildung 13: **Verwenden der Farbe allein zur Informationsübermittlung**
 
 Um dieses Problem zu beheben, geben Sie auch den erforderlichen Status des Formulars im Alternativtext des Formularsteuerelements an (wie in Abschnitt 2.5 Angeben der richtigen Beschriftungen für Formularsteuerelemente). Sie können beispielsweise den Text der Bildschirmlesehilfe auf &quot;Postleitzahl (erforderlich)&quot;setzen. Für Benutzer, bei denen die Farbwiedergabe in bestimmten Kombinationen schwierig ist, wird empfohlen, den Textfeldtyp auf Benutzereingabe - Erforderlich in der Palette &quot;Objekt&quot;festzulegen. Zusätzlich wird ein alternativer Text empfohlen, der anzeigt, dass das Feld erforderlich ist. Alternativ können Sie andere Bezeichnungen als Farbe verwenden, z. B. visueller Text, Textstile und Rahmenstile. Für Benutzer von Bildschirmlesehilfen müssen Sie jedoch weiterhin die erforderlichen Informationen über die Palette &quot;Ein-/Ausgabehilfe&quot;übermitteln.
 
@@ -484,7 +485,7 @@ Viele sehbehinderte Benutzer benötigen einen hohen Kontrast zwischen Text und d
 
 ![Ein Formular mit unzureichendem Farbkontrast](/help/forms/using/assets/image-14.png)
 
-Abbildung 14: **Ein Formular mit unzureichendem Farbkontrast**
+Abbildung 14: **Formular mit unzureichendem Farbkontrast**
 
 Es wird dringend empfohlen, die standardmäßige Schriftart- und Hintergrundfarbe zu verwenden: schwarz auf einem weißen Hintergrund. Wenn Sie diese Standardfarben ändern müssen, wählen Sie eine geeignete Kombination aus kontrastreichen Farben. Verwenden Sie entweder eine dunkle Vordergrundfarbe auf einer hellen Hintergrundfarbe oder umgekehrt. Verwenden Sie ein Werkzeug (z. B. den WAT-C-Farbkontrast-Analyzer), um sicherzustellen, dass der Kontrast ausreichend ist.
 
@@ -516,11 +517,16 @@ Recommendations zur Verwendung von Farben:
 Tabellen sind eine effektive Möglichkeit, Inhalte in barrierefreien Formularen zu organisieren und darzustellen. Bei ordnungsgemäßer Verwendung bieten die Zeilen und Spalten einer Tabelle eine vorhersehbare und konsistente Struktur für Formularinhalte. Wenn ein Benutzer der Bildschirmlesehilfe beispielsweise zu einer Textzeilenzelle navigiert, gibt die Bildschirmlesehilfe die Zellenposition an und liest dann den Zelleninhalt. Die Bildschirmlesehilfe gibt die Zellenposition mithilfe einer Kombination aus Zeilen- und Spaltenüberschriften oder Zeilen- und Spaltennummern an. Da Bildschirmlesehilfen Informationen bereitstellen, die den Benutzer zum Speicherort des Inhalts in der Tabelle ausrichten, wirkt sich das Layout direkt auf die Barrierefreiheit der Tabelle aus.
 
 Sie können die folgenden Rollen für Tabellenelemente beim Erstellen von Tabellen festlegen. Diese Rollen ermöglichen es Sprachausgabeprogrammen, mithilfe spezieller Tastaturbefehle in der Tabellenstruktur zu navigieren, und vermitteln dem Benutzer die Beziehung zwischen Tabellenzellen und den entsprechenden Kopfzeilenzellen.
-* Tabelle Weist dem ausgewählten Teilformular die Rolle einer Tabelle zu. Wenn der Benutzer zu diesem Teilformular navigiert, erkennen die meisten Bildschirmlesehilfen es als Tabelle und geben die Anzahl der Zeilen und Spalten an.
-* Kopfzeile Weist dem ausgewählten Teilformular bzw. der ausgewählten Tabellenzeile die Rolle einer Kopfzeile zu. Wenn Sie den Inhalt einer Textzeilenzelle sprechen, identifizieren die meisten Bildschirmlesehilfen zunächst den Inhalt der entsprechenden Zelle in der Kopfzeile.
-* Textzeile Weist dem ausgewählten Teilformular bzw. der ausgewählten Tabellenzeile die Rolle einer Textzeile zu. Wenn eine Zelle ein Teilformular enthält, sprechen Bildschirmlesehilfen normalerweise den Inhalt der entsprechenden Zelle in der Kopfzeile, gefolgt von den Feldern im Teilformular.
-* Fußzeile Weist dem ausgewählten Teilformular bzw. der ausgewählten Tabellenzeile die Rolle einer Fußzeile zu.
-* (Keine) Gibt eine Zeile an, die Informationen über die Tabelle oder ihren Inhalt vermittelt. Die Zeile wird nicht als Teil der Tabelle betrachtet. Die Bildschirmlesehilfe liest jedoch die Inhalte.
+* Verzeichnis
+Weist dem ausgewählten Teilformular die Rolle einer Tabelle zu. Wenn der Benutzer zu diesem Teilformular navigiert, erkennen die meisten Bildschirmlesehilfen es als Tabelle und geben die Anzahl der Zeilen und Spalten an.
+* Kopfzeile
+Weist dem ausgewählten Teilformular bzw. der ausgewählten Tabellenzeile die Rolle einer Kopfzeile zu. Wenn Sie den Inhalt einer Textzeilenzelle sprechen, identifizieren die meisten Bildschirmlesehilfen zunächst den Inhalt der entsprechenden Zelle in der Kopfzeile.
+* Textzeile
+Weist dem ausgewählten Teilformular bzw. der ausgewählten Tabellenzeile die Rolle einer Textzeile zu. Wenn eine Zelle ein Teilformular enthält, sprechen Bildschirmlesehilfen normalerweise den Inhalt der entsprechenden Zelle in der Kopfzeile, gefolgt von den Feldern im Teilformular.
+* Fußzeile
+Weist dem ausgewählten Teilformular bzw. der ausgewählten Tabellenzeile die Fußzeile zu.
+* (Keine)
+Gibt eine Zeile an, die Informationen über die Tabelle oder ihren Inhalt vermittelt. Die Zeile wird nicht als Teil der Tabelle betrachtet. Die Bildschirmlesehilfe liest jedoch die Inhalte.
 
 Bei ordnungsgemäßer Verwendung bieten Tabellen eine effektive Möglichkeit, tabellarische Informationen zu organisieren und darzustellen. Vermeiden Sie übermäßig komplexe Tabellen wie Tabellen mit verschachtelten Tabellen und Abschnitten.
 
@@ -550,7 +556,8 @@ Wenn Sie zum Erstellen von Tabellen Teilformularobjekte anstelle von Tabellenobj
 Die von der Bildschirmlesehilfe unterstützten Funktionen bestimmen, welche Informationen für eine komplexe Tabelle gelesen werden. Betrachten Sie beispielsweise eine Tabelle, die eine Kopfzeile und einen Abschnitt mit einer Kopfzeile enthält. Wenn der Benutzer zu einer Textzeilenzelle im Tabellenabschnitt navigiert, lesen Bildschirmlesehilfen normalerweise den folgenden Inhalt in der angegebenen Reihenfolge:
 * Inhalt aus der entsprechenden Zelle in der Kopfzeile der Tabelle
 * Inhalt aus der entsprechenden Zelle in der Kopfzeile des Abschnitts
-* Inhalt aus der ausgewählten Zelle Einige Bildschirmlesehilfen lesen jedoch möglicherweise nicht Inhalt aus beiden Kopfzeilen.
+* Inhalt aus der ausgewählten Zelle
+Einige Bildschirmlesehilfen lesen jedoch möglicherweise keinen Inhalt aus beiden Kopfzeilen.
 
 Erstellen Sie aussagekräftige sichtbare Namen oder Titel für Ihre Tabellen. Sie können einen Tabellennamen als statischen Text in Adobe LiveCycle Designer erstellen und ihn vor der Tabelle platzieren. Sie können eine Tabelle und ihren Namen in einem Teilformular gruppieren. Teilformulare sind besonders nützlich, wenn Sie verknüpfte Objekte in einem Layout kombinieren möchten.
 
@@ -605,9 +612,9 @@ Die meisten Bildschirmlesehilfen ermöglichen es Benutzern, je nach Ebene schnel
    * Überschriftenebene 3: Persönliche Daten
    * Überschriftenebene 3: Adresse
 
-![Formular mithilfe von Überschriften strukturieren](/help/forms/using/assets/image-16.png)
+![Strukturieren eines Formulars mit Überschriften](/help/forms/using/assets/image-16.png)
 
-Abbildung 16: **Formular mithilfe von Überschriften strukturieren**
+Abbildung 16: **Strukturieren eines Formulars mithilfe von Überschriften**
 
 Diese Überschriften sind nur statische Textelemente, denen eine bestimmte Schriftgröße und eine Überschriftenrolle mit der entsprechenden Ebene zugewiesen wurde.
 
@@ -668,7 +675,7 @@ Beachten Sie beim Erstellen von Skripten für Barrierefreiheit die folgenden all
    * 6.2 Stellen Sie sicher, dass Äquivalente für dynamische Inhalte aktualisiert werden, wenn sich der dynamische Inhalt ändert.
    * 6.3 Stellen Sie sicher, dass Seiten verwendet werden können, wenn Skripte, Applets oder andere programmatische Objekte deaktiviert oder nicht unterstützt werden. Ist dies nicht möglich, stellen Sie gleichwertige Informationen auf einer alternativ zugänglichen Seite bereit.
    * 6.5 Stellen Sie sicher, dass dynamische Inhalte zugänglich sind oder eine alternative Darstellung oder Seite (P2) bereitstellen.
-   * 8.1 Direkten Zugriff auf programmatische Elemente wie Skripte und Applets oder Kompatibilität mit Hilfstechnologien [Priorität 1 bei wichtigen Funktionen, die an anderer Stelle nicht vorgestellt werden], andernfalls (P2).
+   * 8.1 Direkten Zugriff auf programmatische Elemente wie Skripte und Applets oder Kompatibilität mit Hilfstechnologien ermöglichen [Priorität 1, wenn Funktionalität wichtig ist und an anderer Stelle nicht vorgestellt wird], andernfalls (P2).
    * 9.3 Geben Sie für Skripte logische Ereignishandler anstelle geräteabhängiger Ereignishandler (P2) an.
    * 10.1 Solange Benutzeragenten es Benutzern nicht erlauben, erstellte Fenster zu deaktivieren, werden keine Popups oder andere Fenster angezeigt und das aktuelle Fenster wird nicht geändert, ohne den Benutzer darüber zu informieren.
 * WCAG 2.0
@@ -679,7 +686,7 @@ Beachten Sie beim Erstellen von Skripten für Barrierefreiheit die folgenden all
 ## Stellen Sie sicher, dass alle Audio- und Videoinhalte verfügbar sind.{#ensure-audio-video-accessible}
 
 Wenn Ihre Formulare Audio- oder Videoinhalte enthalten, einschließlich Audio- und Videoclips, müssen Sie sicherstellen, dass dieser Inhalt zugänglich ist. Stellen Sie insbesondere sicher, dass in Formulare integrierte Videoclips Untertitel (manchmal auch als Untertitel bezeichnet) für gehörlose und schwerhörige Benutzer sowie Videobeschreibungen für blinde Benutzer enthalten. Für Audiodateien, die nicht mit Videoinhalten synchronisiert werden, reicht ein einfaches Transkript aus.
-Informationen zu Flash-basierten Medien finden Sie unter [link](/help/forms/using/best-practices-for-creating-forms-in-designer.md) für Informationen zur Bereitstellung von Untertiteln.
+Informationen zur Bereitstellung von Untertiteln finden Sie bei Flash-basierten Medien unter [link](/help/forms/using/best-practices-for-creating-forms-in-designer.md) .
 
 **Verwandte Checkpoints**:
 * Abschnitt 508 § 1194.22
@@ -712,9 +719,9 @@ So legen Sie die Locale-Eigenschaft eines Formulars fest:
 2. Wählen Sie die entsprechende Sprache für das Gebietsschema des Formulars aus (siehe Abbildung 17)
 3. Klicken Sie auf OK
 
-![Ändern der Sprache für Formulare im Dialogfeld &quot;Formulareigenschaften&quot;](/help/forms/using/assets/image-17.png)
+![Ändern des Gebietsschemas für Formulareigenschaften im Dialogfeld &quot;Formulareigenschaften&quot;](/help/forms/using/assets/image-17.png)
 
-Abbildung 17: **Ändern der Sprache für Formulare im Dialogfeld &quot;Formulareigenschaften&quot;**
+Abbildung 17: **Ändern des Gebietsschemas für Formulareigenschaften im Dialogfeld &quot;Formulareigenschaften&quot;**
 
 So legen Sie die Eigenschaft &quot;Local&quot;des Teilformulars der obersten Ebene oder eines Objekts fest, für das eine andere Sprache erforderlich ist:
 1. Teilformular oder Objekt der obersten Ebene in der Designansicht auswählen

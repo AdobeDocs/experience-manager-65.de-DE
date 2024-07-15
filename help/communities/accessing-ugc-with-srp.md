@@ -21,9 +21,9 @@ ht-degree: 0%
 
 ## Über SRP {#about-srp}
 
-Alle AEM Communities-Komponenten und -Funktionen basieren auf dem [Social Component Framework (SCF)](/help/communities/scf.md), der die SocialResourceProvider-API aufruft, um auf alle benutzergenerierten Inhalte zuzugreifen.
+Alle AEM Communities-Komponenten und -Funktionen basieren auf dem [Social Component Framework (SCF)](/help/communities/scf.md), das die SocialResourceProvider-API aufruft, um auf alle benutzergenerierten Inhalte zuzugreifen.
 
-Bevor eine Community-Site erstellt wird, muss die [Storage Resource Provider (SRP)](/help/communities/working-with-srp.md) muss so konfiguriert sein, dass eine Implementierung ausgewählt wird, die mit der zugrunde liegenden [Topologie](/help/communities/topologies.md). Die SRP-Implementierungen basieren auf drei Speicheroptionen:
+Bevor eine Community-Site erstellt wird, muss der [Speicher-Ressourcenanbieter (SRP)](/help/communities/working-with-srp.md) so konfiguriert sein, dass eine Implementierung ausgewählt wird, die mit der zugrunde liegenden [Topologie](/help/communities/topologies.md) übereinstimmt. Die SRP-Implementierungen basieren auf drei Speicheroptionen:
 
 1. [ASRP](/help/communities/asrp.md) - Adobe On-Demand-Speicher
 1. [MSRP](/help/communities/msrp.md) - MongoDB
@@ -31,7 +31,7 @@ Bevor eine Community-Site erstellt wird, muss die [Storage Resource Provider (SR
 
 ## Über UGC-Speicher {#about-ugc-storage}
 
-Wichtig ist, dass Sie über die Speicherung von UGC wissen, wenn eine Site für die Verwendung von ASRP oder MSRP konfiguriert ist, wird die tatsächliche UGC nicht in gespeichert AEM [Knotenspeicher](/help/sites-deploying/data-store-config.md) (JCR).
+Wichtig ist, dass Sie über die Speicherung von UGC wissen, dass bei der Konfiguration einer Site für die Verwendung von ASRP oder MSRP die tatsächliche UGC nicht im AEM [Knotenspeicher](/help/sites-deploying/data-store-config.md) (JCR) gespeichert wird.
 
 Es kann zwar Knoten in JCR geben, die die UGC daran erinnern, nützliche Metadaten bereitzustellen, diese Knoten sind jedoch nicht mit der tatsächlichen UGC zu verwechseln.
 
@@ -66,14 +66,14 @@ Methoden zur Vermeidung von :
 
 ### Verwenden von Suchkollektionen {#use-search-collections}
 
-Verschiedene SRPs können unterschiedliche native Abfragesprachen haben. Verwenden Sie Methoden aus dem [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) -Paket, um die entsprechende Abfragesprache auszuführen.
+Verschiedene SRPs können unterschiedliche native Abfragesprachen haben. Verwenden Sie Methoden aus dem Paket [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) , um die entsprechende Abfragesprache auszuführen.
 
 Weitere Informationen finden Sie unter [Suchgrundlagen](/help/communities/search-implementation.md).
 
 ## Ressourcen {#resources}
 
-* [Community-Inhaltsspeicherung](/help/communities/working-with-srp.md) - beschreibt die verfügbaren SRP-Optionen für einen UGC Common Store
-* [Übersicht über den Speicheranbieter](/help/communities/srp.md) - Einführung und Übersicht über die Repository-Nutzung
-* [Grundlagen zu SRP und UGC](/help/communities/srp-and-ugc.md) - SRP-Anwendungsmethoden und -Beispiele
-* [Suchgrundlagen](/help/communities/search-implementation.md) - wesentliche Informationen für die Suche nach UGC
-* [SocialUtils-Refaktorierung](/help/communities/socialutils.md) - Zuordnung veralteter Methoden von Dienstprogrammen zu aktuellen Methoden des SRP-Dienstprogramms
+* [Community-Inhaltsspeicher](/help/communities/working-with-srp.md) - beschreibt die verfügbaren SRP-Optionen für einen UGC Common Store
+* [Übersicht über den Speicheranbieter](/help/communities/srp.md) - Übersicht über die Einführung und die Repository-Nutzung
+* [SRP und UGC Essentials](/help/communities/srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele
+* [Suchgrundlagen](/help/communities/search-implementation.md) - wichtige Informationen für die Suche nach benutzergenerierten Inhalten
+* [SocialUtils-Refaktorierung](/help/communities/socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden

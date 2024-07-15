@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 55bf7104dbd9b9fadf6cb37efa28084fe43393c3
 workflow-type: tm+mt
 source-wordcount: '1603'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -127,7 +127,7 @@ Weitere Informationen zu den neuen Gruppenfunktionen finden Sie hier:
 >
 >Das User Sync Tool muss mit dem [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html) beschriebenen Verfahren als Adobe I/O-Client-UMAPI registriert werden.
 >
->Die Dokumentation zur Adobe Developer Console finden Sie [here](https://developer.adobe.com/developer-console/docs/guides/).
+>Die Dokumentation zu Adobe Developer Console finden Sie [hier](https://developer.adobe.com/developer-console/docs/guides/).
 >
 >
 >Die [!DNL User Management]-API, die vom User Sync Tool verwendet wird, wird [hier erläutert](https://adobe-apiplatform.github.io/umapi-documentation/en/).

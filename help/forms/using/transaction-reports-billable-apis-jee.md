@@ -30,7 +30,7 @@ Abrechnungs-APIs berücksichtigen nicht die Anzahl der Seiten, die Länge eines 
 
 -->
 
-Nachstehend finden Sie eine Liste der abrechnungsfähigen JEE-APIs. Suchen Sie die Liste der [Abrechnungsfähige APIs für AEM Forms unter OSGi](/help/forms/using/transaction-reports-billable-apis.md).
+Nachstehend finden Sie eine Liste der abrechnungsfähigen JEE-APIs. Suchen Sie die Liste der abrechnungsfähigen APIs für AEM Forms unter OSGi](/help/forms/using/transaction-reports-billable-apis.md).[
 
 ## Kostenpflichtige Document Services-APIs {#billable-document-services-apis}
 
@@ -312,8 +312,8 @@ Die Verwendung der invoke-API wird als Transaktion gezählt, wenn Sie einen oder
 
 >[!NOTE]
 >
->* Die invoke-API des Assembler-Services kann abhängig von der Eingabe intern eine kostenpflichtige API eines anderen Services aufrufen. Die `invoke API` kann als keine, einzelne oder mehrere Transaktionen bilanziert werden. Die Anzahl der gezählten Transaktionen hängt von der Eingabe und den aufgerufenen internen APIs ab.
->* Ein einzelnes PDF-Dokument, das mit Assembler-Dienst wie `invoke` und `invokeDDX`, kann als keine, einzelne oder mehrere Transaktionen bilanziert werden. Die Anzahl der zu zählenden Transaktionen hängt von der gelieferten Menge ab <!--DDX--> Code.
+>* Die invoke-API des Assembler-Services kann abhängig von der Eingabe intern eine kostenpflichtige API eines anderen Services aufrufen. Die `invoke API` kann also als keine, einzelne oder mehrere Transaktionen verbucht werden. Die Anzahl der gezählten Transaktionen hängt von der Eingabe und den aufgerufenen internen APIs ab.
+>* Ein einzelnes PDF-Dokument, das mit Assembler-Dienst wie `invoke` und `invokeDDX` erstellt wurde, kann als keine, einzelne oder mehrere Transaktionen erfasst werden. Die Anzahl der gezählten Transaktionen hängt vom bereitgestellten <!--DDX--> -Code ab.
 
 <!--
 ### PDF Utility Service  {#pdf-utility-service}
@@ -388,7 +388,7 @@ Die Verwendung der invoke-API wird als Transaktion gezählt, wenn Sie einen oder
 
 -->
 
-### Formulare {#form-set}
+### Forms {#form-set}
 
 <table>
  <tbody>

@@ -91,7 +91,7 @@ Das Integrationspaket erstellt automatisch die Benutzerin oder den Benutzer von 
 
    >[!CAUTION]
    >
-   >Die zu konfigurierende Sicherheitszone ist **Netzwerk privater Unternehmen (VPN+LAN)**.
+   >Die zu konfigurierende Sicherheitszone ist **Private Unternehmensnetzwerk (VPN+LAN)**.
 
 1. Klicken Sie auf **Speichern**.
 

@@ -18,33 +18,33 @@ ht-degree: 1%
 
 # Verwenden der Abstimmung {#using-voting}
 
-Die `Voting` -Komponente ist ein nützliches Tool, mit dem Community-Mitglieder einen bestimmten Inhalt bewerten können, z. B. eine Antwort innerhalb einer QnA-Komponente. Mit dem `Voting` -Komponente, wählen die Mitglieder Pfeile nach oben oder unten aus, um ihre Meinung zu äußern.
+Die Komponente `Voting` ist ein nützliches Tool, mit dem Community-Mitglieder bestimmte Inhalte bewerten können, z. B. eine Antwort innerhalb einer QnA-Komponente. Bei der Komponente `Voting` wählen die Mitglieder Pfeile nach oben oder unten aus, um ihre Meinung anzugeben.
 
 ## Hinzufügen von Abstimmungen zu einer Seite {#adding-voting-to-a-page}
 
-So fügen Sie eine `Voting` -Komponente auf einer Seite im Autorenmodus verwenden Sie den Komponenten-Browser. Suchen `Communities / Voting` und ziehen Sie sie an die gewünschte Stelle auf einer Seite, z. B. an eine Position relativ zur Funktion, über die Benutzer abstimmen können.
+Verwenden Sie den Komponenten-Browser, um im Autorenmodus einer Seite die Komponente `Voting` hinzuzufügen. Suchen Sie `Communities / Voting` und ziehen Sie es an die gewünschte Stelle auf einer Seite, z. B. an eine Position relativ zur Funktion, über die Benutzer abstimmen können.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
 
-Wenn die Variable [erforderliche clientseitige Bibliotheken](essentials-voting.md#essentials-for-client-side) eingeschlossen sind, wird die `Voting` -Komponente angezeigt.
+Wenn die [ erforderlichen clientseitigen Bibliotheken](essentials-voting.md#essentials-for-client-side) enthalten sind, wird die Komponente `Voting` so angezeigt.
 
-![stimmberechtigte Komponente](assets/voting-component.png)
+![stimmkomponente](assets/voting-component.png)
 
 ## Konfigurieren der Abstimmung {#configuring-voting}
 
-Auswählen der platzierten `Voting` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Wählen Sie die platzierte Komponente `Voting` aus, damit Sie auf das Symbol `Configure` zugreifen und dieses auswählen können, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
-![konfigurieren](assets/configure-new.png)
+![configure](assets/configure-new.png)
 
-Unter dem **[!UICONTROL Texte und Beschriftungen]** -Registerkarte die Eigenschaften für die Aufzeichnung von Abstimmungen angeben.
+Geben Sie auf der Registerkarte **[!UICONTROL Texte und Beschriftungen]** die Eigenschaften an, die zum Aufzeichnen von Stimmen verwendet werden.
 
-![Abstimmungsbezeichnung](assets/voting-label.png)
+![stimmbeschriftung](assets/voting-label.png)
 
-* **[!UICONTROL Beschriftung für positive Antwort]**
+* **[!UICONTROL Bezeichnung der positiven Antwort]**
 
   (*Erforderlich*) Der interne Eigenschaftsname für eine positive Antwort.
 
-* **[!UICONTROL Bezeichnung für negative Antworten]**
+* **[!UICONTROL Bezeichnung der negativen Antwort]**
 
   (*Erforderlich*) Der interne Eigenschaftsname für eine negative Antwort.
 
@@ -64,4 +64,4 @@ Anonyme Abstimmungen werden nicht unterstützt. Besucher müssen sich registrier
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie unter [Abstimmungsgrundlagen](essentials-voting.md) -Seite für Entwickler.
+Weitere Informationen finden Sie auf der Entwickler-Seite [Grundlegende Stimmrechte](essentials-voting.md) .

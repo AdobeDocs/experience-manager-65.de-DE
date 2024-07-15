@@ -32,18 +32,18 @@ Die Details Ihrer App können im Dashboard oder im AEM Mobile Control Center ein
 >
 >Das Dashboard ist eine Reihe nützlicher Kacheln, die einen Überblick über den App-Inhalt, die Metadaten und den AEM Mobile On-Demand-Verbindungsstatus bieten.
 >
->Siehe [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) für Details.
+>Weitere Informationen finden Sie unter [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) .
 
 **So erstellen Sie eine On-Demand-App:**
 
-1. Auswählen **Mobilnummer** über die Seitenleiste aus.
-1. Auswählen **Apps** aus der Navigation.
-1. Klicks **Erstellen** und wählen **App** aus der Dropdown-Liste aus.
-1. Wählen Sie die Vorlage Mobile App aus und klicken Sie auf **Nächste**.
-1. Geben Sie App-Eigenschaften ein, z. B. **Titel**, **Name**, **Beschreibung**.
+1. Wählen Sie in der Seitenleiste **Mobil** aus.
+1. Wählen Sie **Apps** aus der Navigation aus.
+1. Klicken Sie auf **Erstellen** und wählen Sie **App** aus der Dropdownliste aus.
+1. Wählen Sie die Vorlage für die mobile App aus und klicken Sie auf **Weiter**.
+1. Geben Sie App-Eigenschaften wie **Titel**, **Name**, **Beschreibung** ein.
 1. Klicken Sie auf **Weiter**.
-1. Wenn bekannt, geben Sie Details zur Cloud-Konfiguration ein, klicken Sie andernfalls auf **Erstellen**.
-1. Klicks **Fertig** , um Ihre neue AEM Mobile-App im Katalog anzuzeigen.
+1. Geben Sie, falls bekannt, Cloud-Konfigurationsdetails ein, klicken Sie andernfalls auf **Erstellen**.
+1. Klicken Sie auf **Fertig** , um Ihre neue AEM Mobile-App im Katalog anzuzeigen.
 
 ![chlimage_1](assets/chlimage_1.gif)
 
@@ -64,19 +64,19 @@ Sie benötigen eine vorhandene Vorlage für mobile Apps (oder eine installierte 
 
 Nachdem Sie eine On-Demand-App über das Anwendungs-Dashboard erstellt haben, müssen Sie Ihre App mit der Cloud-Konfiguration verknüpfen.
 
-Siehe [Verknüpfen Ihrer App mit der Cloud-Konfiguration](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) für weitere Details.
+Weitere Informationen finden Sie unter [Verknüpfen Ihrer App mit der Cloud-Konfiguration](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) .
 
 ### Erste Schritte {#getting-ahead}
 
-Sobald Sie mit dem Erstellen einer On-Demand-Anwendung und dem Verknüpfen dieser App mit einer Cloud-Konfiguration vertraut sind, lesen Sie [Content Management-Aktionen](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
+Sobald Sie mit dem Erstellen einer On-Demand-Anwendung und dem Verknüpfen dieser App mit einer Cloud-Konfiguration vertraut sind, finden Sie weitere Informationen unter [Content Management-Aktionen](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
-**Content Management-Aktionen** umfasst die Erstellung und Verwaltung folgender Inhalte:
+**Content Management-Aktionen** umfassen die Erstellung und Verwaltung folgender Inhalte:
 
 * [Verwalten von Artikeln](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Banner verwalten](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Verwalten von Sammlungen](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Hochladen freigegebener Ressourcen](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Veröffentlichung von Inhalt rückgängig machen](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publish - Inhalte nicht veröffentlichen](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 Informationen zu den Rollen und Zuständigkeiten von Administratoren und Entwicklern finden Sie in den folgenden Ressourcen:
 

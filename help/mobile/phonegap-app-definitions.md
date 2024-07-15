@@ -30,13 +30,13 @@ Mit App-Definitionen können Sie ermitteln, welche Bereiche und andere Konfigura
 
 ## Erstellen einer Definition für eine neue App {#creating-a-new-app-definition}
 
-1. Auswählen **Mobilnummer** über die AEM Navigationskonsole.
+1. Wählen Sie **Mobil** aus der AEM Navigationskonsole aus.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. Auswählen **Apps** von **Mobilnummer** und klicken **Erstellen Sie.**
+1. Wählen Sie **Apps** aus **Mobil** und klicken Sie auf **Erstellen**.
 
-   Auswählen **App** und geben Sie Details ein, um Ihre neue App zu erstellen.
+   Wählen Sie **App** aus und geben Sie Details ein, um Ihre neue App zu erstellen.
 
    ![chlimage_1-11](assets/chlimage_1-11.gif)
 

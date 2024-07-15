@@ -22,22 +22,22 @@ ht-degree: 3%
 
 Die Arbeit mit AEM Communities hat sich von der Abhängigkeit von Java-Serverseiten zu Flexibilität bei der Auswahl von Vorlagenskriptsprachen entwickelt, bei denen sich Geschäftslogik, Stil und Seiteninhalt voneinander unterscheiden.
 
-Mehr Flexibilität bei der Arbeit mit benutzergenerierten Inhalten (UGC) erhalten Sie über die SocialResourceProvider-API, mit der Sie nicht mehr wissen müssen, welche Inhalte [SRP](srp.md) wurde für die Implementierung ausgewählt.
+Die SocialResourceProvider-API ermöglicht eine größere Flexibilität bei der Arbeit mit benutzergenerierten Inhalten (UGC). So müssen Sie nicht mehr wissen, welche [SRP](srp.md)-Option für die Implementierung ausgewählt wurde.
 
 Im Folgenden finden Sie verschiedene Codierungsrichtlinien und Best Practices für AEM Communities-Entwickler:
 
 ### Code {#code}
 
-* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Wie vermeiden Sie das Schreiben einer Anwendung, die nur funktioniert, wenn UGC in JCR (JSRP) gespeichert ist.
+* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - wie vermeiden Sie das Schreiben einer Anwendung, die nur funktioniert, wenn UGC in JCR (JSRP) gespeichert ist.
 * [SocialUtils-Refaktorierung](socialutils.md) - Dienstprogrammmethoden für SRP, die SocialUtils ersetzen.
-* [Benennungskonventionen](naming-conventions.md) - Namenskonventionen für benutzerdefinierte Java-Klassen.
+* [Namenskonventionen](naming-conventions.md) - Namenskonventionen für benutzerdefinierte Java-Klassen.
 
 ### Skripte {#scripts}
 
-* [Sideloading von Communities-Komponenten](sideloading.md) - wie Sie eine Komponente dynamisch hinzufügen, nachdem die Seite geladen wurde.
-* [Grundlagen zum Rich-Text-Editor](rte.md) - wie Sie die Rich-Text-Benutzeroberfläche anpassen, die Mitgliedern zum Posten von Inhalten bereitgestellt wird.
+* [Sideloading Communities Components](sideloading.md) - wie Sie eine Komponente dynamisch hinzufügen, nachdem die Seite geladen wurde.
+* [Grundlagen des Rich-Text-Editors](rte.md) - So passen Sie die Rich-Text-Benutzeroberfläche an, die Mitgliedern zum Posten von Inhalten bereitgestellt wird.
 
 ### IDE {#ide}
 
-* [Verwenden von Maven für Communities](maven.md) - wie Sie die Communities-API-JAR einbinden.
+* [Verwenden von Maven für Communities](maven.md) - wie die Communities-API-JAR eingeschlossen wird.
 * [SocialUtils-Refaktorierung](socialutils.md) - Dienstprogrammmethoden für SRP, die SocialUtils ersetzen.

@@ -18,16 +18,16 @@ ht-degree: 1%
 
 # Communities-Abonnements {#communities-subscriptions}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
-Als Communitys [FP1](deploy-communities.md#latestfeaturepack), können Community-Mitglieder mit der Community per E-Mail über eine Funktion interagieren, die als Abonnements bezeichnet wird.
+Ab Communities [FP1](deploy-communities.md#latestfeaturepack) können Community-Mitglieder per E-Mail mit der Community interagieren, indem sie eine Funktion verwenden, die als Abonnements bezeichnet wird.
 
-Abonnements ähneln [Benachrichtigungen](notifications.md) wie Mitglieder abonnieren können, wenn sie Blog-Artikel, Foren-Themen oder Fragen zur Frage nach Fragen.
+Abonnements ähneln [Benachrichtigungen](notifications.md) , da Mitglieder sich abonnieren können, wenn sie Blog-Artikel, Forenthemen oder Fragen zur Frage stellen.
 
 Unterscheidet Anmeldungen von Benachrichtigungen:
 
 * Die Mitglieder dürfen sich nicht an anderen Mitgliedern beteiligen.
-* Die einzige Aktion, die Mitglieder ergreifen müssen, ist die Auswahl von `Email Subscriptions` wenn sie folgt.
+* Die einzige Aktion, die Mitglieder ergreifen müssen, ist, beim Befolgen `Email Subscriptions` auszuwählen.
 * Wenn die E-Mail-Antwort konfiguriert ist, können Mitglieder Inhalte effektiv posten, indem sie einfach auf die erhaltene E-Mail antworten.
 
 ### Voraussetzungen {#requirements}
@@ -38,19 +38,19 @@ E-Mail muss konfiguriert werden, damit Abonnements funktionieren und Mitglieder 
 
 Anweisungen zum Einrichten von E-Mails finden Sie unter [E-Mail konfigurieren](email.md).
 
-**Aktivieren von Abonnements und Folgen**
+**Abonnements aktivieren und befolgen**
 
-Komponenten müssen zur Aktivierung von Abonnements konfiguriert werden *und* folgt. Funktionen, die Abonnements zulassen [Blog](blog-feature.md), [Forum](forum.md) und [Fragen und Antworten](working-with-qna.md).
+Komponenten müssen so konfiguriert sein, dass die folgenden Abonnements aktiviert werden: *und*. Funktionen, die Abonnements zulassen, sind [blog](blog-feature.md), [forum](forum.md) und [QnA](working-with-qna.md).
 
 ## Abonnements aus folgenden {#subscriptions-from-following}
 
 ![subscription-following](assets/subscription-following.png)
 
-Die **Folgen** -Schaltfläche bietet die Möglichkeit, auf Einträge als Aktivitäten, Abonnements und/oder Benachrichtigungen zu folgen. Jedes Mal, wenn **Folgen** ausgewählt ist, können Sie die Auswahl ein- oder ausschalten.
+Die Schaltfläche **Folgen** bietet die Möglichkeit, Einträgen als Aktivitäten, Abonnements und/oder Benachrichtigungen zu folgen. Jedes Mal, wenn die Schaltfläche **Befolgen** ausgewählt wird, kann eine Auswahl ein- oder ausgeschaltet werden.
 
-Wenn eine der folgenden Methoden ausgewählt ist, ändert sich der Text der Schaltfläche in **Folgende**. Zur Vereinfachung können Sie `Unfollow All` , um alle Methoden auszuschalten.
+Wenn eine der folgenden Methoden ausgewählt ist, ändert sich der Text der Schaltfläche in **Folgt**. Aus praktischen Gründen können Sie `Unfollow All` auswählen, um alle Methoden zu deaktivieren.
 
-Die **Folgen** -Schaltfläche enthält die `Email Subscriptions` nur dann, wenn ein Forum, eine Frage oder ein Blog zur Aktivierung von E-Mail-Abonnements konfiguriert ist. Diese Schaltfläche wird angezeigt:
+Die Schaltfläche **Folgen** enthält nur dann die Option `Email Subscriptions`, wenn ein Forum, eine Fragen-und-Antworten-Frage oder ein Blog zur Aktivierung von E-Mail-Abonnements konfiguriert ist. Diese Schaltfläche wird angezeigt:
 
 * Auf der Hauptseite mit den Funktionen für das aktivierte Forum, Fragen und Antworten oder Blog Wird eine E-Mail für alle Aktivitäten unter dieser Funktion senden.
 
@@ -58,12 +58,12 @@ Die **Folgen** -Schaltfläche enthält die `Email Subscriptions` nur dann, wenn 
 
 ## Antwort per E-Mail {#reply-by-email}
 
-Wenn E-Mail [konfiguriert für Antwort per E-Mail](email.md#configure-polling-importer), erhält der Abonnent eine E-Mail mit dem veröffentlichten Inhalt und einen Link zum Online-Inhalt.
+Wenn die E-Mail [für die Antwort per E-Mail konfiguriert ist](email.md#configure-polling-importer), erhält das Abonnent eine E-Mail mit dem veröffentlichten Inhalt und einen Link zum Online-Inhalt.
 
 Wenn sie auf die E-Mail antworten, erscheint der von ihnen in der Antwort eingegebene Inhalt als Online-Inhalt.
 
 ![email-response](assets/email-reply.png)
 
-Die Dauer, die für die Veröffentlichung einer Antwort benötigt wird, wird durch die Variable [Aktualisierungsintervall des Abruf-Importtools](email.md#configure-polling-importer).
+Die Zeit, die für die Veröffentlichung einer Antwort benötigt wird, wird durch das Aktualisierungsintervall des [Abruf-Importtools](email.md#configure-polling-importer) gesteuert.
 
 ![QA](assets/qa.png)

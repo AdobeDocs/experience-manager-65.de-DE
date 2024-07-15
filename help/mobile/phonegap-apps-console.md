@@ -40,7 +40,7 @@ AEM Mobile bietet den Phonegap App-Blueprint zum Erstellen von Apps. Der Bluepri
 
 Die Stammseite der Mobile Apps, die Sie in AEM erstellen, wird in der Apps-Konsole angezeigt.
 
-Die Stammseite wird unter der Eigenschaft &quot;Destination Path&quot;der Anwendung gespeichert, die beim Erstellen der Anwendung angegeben wurde (der Standardpfad lautet /content/phonegap/apps). Der Seitenname ist die Eigenschaft &quot;Name&quot;der Anwendung. Beispielsweise die Standard-URL der Stammseite der Site mit dem Namen `myphonegapapp` is `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
+Die Stammseite wird unter der Eigenschaft &quot;Destination Path&quot;der Anwendung gespeichert, die beim Erstellen der Anwendung angegeben wurde (der Standardpfad lautet /content/phonegap/apps). Der Seitenname ist die Eigenschaft &quot;Name&quot;der Anwendung. Beispielsweise ist die Standard-URL der Stammseite der Site `myphonegapapp` `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -79,7 +79,7 @@ Sie können auch eine Bilddatei bereitstellen, die als Anwendungsminiaturansicht
 Es gibt zusätzliche (und optionale) Registerkarten für den Build-Cloud-Service und die Integration des Adobe Mobile Services SDK-Plug-ins in Ihre App.
 
 * Build: Klicken Sie hier auf Konfigurationen verwalten und richten Sie Ihren build.phonegap.com Build-Dienst ein. Wählen Sie dann aus der Dropdown-Liste den neu erstellten PhoneGap Build-Cloud-Service aus.
-* Analytics: Klicken Sie auf Konfigurationen verwalten und richten Sie Ihre [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) Cloud Service. Wählen Sie dann aus der Dropdown-Liste den neu erstellten Mobile Service aus, der in Ihre Mobile App integriert werden soll.
+* Analytics: Klicken Sie auf &quot;Konfigurationen verwalten&quot;und richten Sie Ihren [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) -Cloud-Service ein. Wählen Sie dann aus der Dropdown-Liste den neu erstellten Mobile Service aus, der in Ihre Mobile App integriert werden soll.
 
 >[!NOTE]
 >
@@ -113,11 +113,11 @@ Nachdem Sie eine Mobile App erstellt haben, können Sie die Eigenschaften änder
 1. Klicken Sie in der Leiste auf Apps .
 1. Wählen Sie die zu konfigurierende Anwendung aus und klicken Sie auf das Symbol Seiteneigenschaften anzeigen .
 
-   ![Das Symbol Seiteneigenschaften anzeigen wird durch den Buchstaben I in einem Kreis angezeigt.](do-not-localize/chlimage_1-8.png)
+   ![Das Symbol Seiteneigenschaften anzeigen , das durch den Buchstaben I in einem Kreis angezeigt wird.](do-not-localize/chlimage_1-8.png)
 
 1. Um Eigenschaftswerte zu ändern, klicken Sie auf das Symbol Bearbeiten .
 
-   ![Das durch einen Bleistift angegebene Symbol Bearbeiten .](do-not-localize/chlimage_1-9.png)
+   ![Das durch einen Bleistift angegebene Symbol &quot;Bearbeiten&quot;.](do-not-localize/chlimage_1-9.png)
 
 1. Konfigurieren Sie die Eigenschaften Allgemein und Erweitert und klicken Sie auf das Symbol Fertig .
 
@@ -128,11 +128,11 @@ Nachdem Sie eine Mobile App erstellt haben, können Sie die Eigenschaften änder
 1. Klicken Sie in der Leiste auf Apps .
 1. Klicken Sie auf diese Schaltfläche, um einen Drilldown in der Mobile App durchzuführen, die Sie in der App-Admin Console bearbeiten möchten. Wählen Sie die Sprachversion der zu konfigurierenden Anwendung aus und klicken Sie auf das Symbol Anwendungseigenschaften anzeigen .
 
-   ![Das Symbol Anwendungseigenschaften anzeigen wird durch den Buchstaben I in einem Kreis angezeigt.](do-not-localize/chlimage_1-11.png)
+   ![Das Symbol &quot;Anwendungseigenschaften anzeigen&quot;wird durch den Buchstaben I in einem Kreis angezeigt.](do-not-localize/chlimage_1-11.png)
 
 1. Um Eigenschaftswerte zu ändern, klicken Sie auf das Symbol Bearbeiten .
 
-   ![Das durch einen Bleistift angegebene Symbol Bearbeiten .](do-not-localize/chlimage_1-12.png)
+   ![Das durch einen Bleistift angegebene Symbol &quot;Bearbeiten&quot;.](do-not-localize/chlimage_1-12.png)
 
 1. Konfigurieren Sie die Eigenschaften auf den Registerkarten Allgemein, Erweitert, Erstellen und Analytics und klicken Sie dann auf das Symbol Fertig .
 
@@ -166,7 +166,7 @@ Führen Sie das folgende Verfahren für die Instanz durch, in der Sie den Cache 
 1. Klicken Sie in der Leiste auf Apps und dann auf Ihre Anwendung.
 1. Wählen Sie die Begrüßungsseite aus und klicken Sie dann auf das Symbol Cache aktualisieren .
 
-   ![Das Symbol Cache aktualisieren , das durch einen gestreiften Balken mit einem Recyclingsymbol gekennzeichnet ist.](do-not-localize/chlimage_1-14.png)
+   ![Das Symbol Cache aktualisieren , das durch einen gestreiften Balken mit einem Recyclingsymbol angezeigt wird.](do-not-localize/chlimage_1-14.png)
 
 ### Verwenden von App-Vorlagen {#using-app-templates}
 
@@ -333,7 +333,7 @@ Füllen Sie die Liste mithilfe der Suchergebnisse aus. Die Suche wird in den unt
 
 **Erweiterte Suche**
 
-Füllen Sie die Liste mithilfe einer [QueryBuilder](/help/sites-developing/querybuilder-api.md) Abfrage.
+Füllen Sie die Liste mit einer [QueryBuilder](/help/sites-developing/querybuilder-api.md) -Abfrage.
 
 ### Bild {#image}
 

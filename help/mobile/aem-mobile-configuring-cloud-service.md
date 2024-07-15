@@ -24,15 +24,15 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Dieses Dokument ist Teil der [Erste Schritte mit Adobe Experience Manager (AEM) Mobile](/help/mobile/getting-started-aem-mobile.md) Guide, ein empfohlener Ausgangspunkt für die AEM Mobile-Referenz.
+>Dieses Dokument ist Teil des Leitfadens &quot;[Erste Schritte mit Adobe Experience Manager (AEM) Mobile](/help/mobile/getting-started-aem-mobile.md)&quot;, eines empfohlenen Ausgangspunkts für die AEM Mobile-Referenz.
 
 Es gibt mehrere Schritte, die zusammenkommen müssen, bevor Inhaltsautoren beginnen können, zielgerichtete Inhalte für mobile Apps zu generieren: Es gibt die richtigen Berechtigungen für Benutzer und Gruppen, das Erstellen von Cloud-Services, das Konfigurieren der Anwendung für die Aktivität und das Generieren des Inhalts.
 
-Die Annahme, dass die [AEM Mobile Hybrid-Referenzanwendung](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) wurde erfolgreich bereitgestellt und kann über das AEM Mobile-Dashboard aufgerufen werden.
+Es wird davon ausgegangen, dass die [AEM Mobile Hybrid-Referenzanwendung](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) erfolgreich bereitgestellt wurde und über das AEM Mobile-Dashboard zugänglich ist.
 
 ## Berechtigungen {#permissions}
 
-Benutzer, die Zugriff auf die Personalisierungskonsole benötigen, müssen `target-activity-authors` hinzugefügt. Es wird empfohlen, dass die target-activity-group im Rahmen der Benutzer- und Gruppeneinrichtung zur Gruppe apps-admins hinzugefügt wird. Durch Hinzufügen der Gruppe target-activity-authors können Benutzer den Menüeintrag Personalisierung-Navigation sehen.
+Benutzer, die Zugriff auf die Personalisierungskonsole benötigen, müssen der Gruppe `target-activity-authors` angehören. Es wird empfohlen, dass die target-activity-group im Rahmen der Benutzer- und Gruppeneinrichtung zur Gruppe apps-admins hinzugefügt wird. Durch Hinzufügen der Gruppe target-activity-authors können Benutzer den Eintrag im Personalization-Navigationsmenü sehen.
 
 Wenn Sie vergessen, die Benutzer oder Gruppen, die Sie auf die Personalisierungskonsole zugreifen möchten, zur Gruppe target-activity-authors hinzuzufügen, wird verhindert, dass die Personalisierungskonsole angezeigt wird.
 
@@ -64,7 +64,7 @@ Es ist erforderlich, auch ein Adobe Mobile Services (AMS)-Konto mit der Anwendun
 
 ### Client-Code {#client-code}
 
-Um sich bei AMS-Diensten anzumelden, besuchen Sie [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/), wählen Sie die Mobile App aus und klicken Sie auf die Einstellungen. Suchen Sie das Feld SDK-Target-Optionen , platzieren Sie den Client-Code in das Feld und klicken Sie auf Speichern .
+Um sich bei den AMS-Diensten anzumelden, rufen Sie [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/) auf, wählen Sie die Mobile App aus und klicken Sie auf die Einstellungen. Suchen Sie das Feld SDK-Target-Optionen , platzieren Sie den Client-Code in das Feld und klicken Sie auf Speichern .
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
@@ -80,7 +80,7 @@ Wählen Sie die Adobe Mobile Services -Karte aus und klicken Sie auf Weiter.
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-Wählen Sie im Schritt Erstellen oder Auswählen des Assistenten die Dropdown-Liste Mobile Service aus und wählen Sie den Eintrag Konfiguration erstellen . Geben Sie einen Titel, ein Unternehmen, einen Benutzernamen und ein Kennwort ein und wählen Sie das entsprechende Rechenzentrum aus. Wenn Sie diese Werte nicht kennen, wenden Sie sich an Ihren Adobe Mobile Service-Administrator, um sie zu erhalten. Nachdem alle Felder ausgefüllt sind, klicken Sie auf **Überprüfen**. Der Überprüfungsprozess wird an AMS gesendet und überprüft die Anmeldeinformationen für das Konto. Nach erfolgreicher Überprüfung wird eine Liste mit Mobile Apps gefüllt, in der Sie die zugehörige Mobile App aus der Dropdown-Liste auswählen. Klicken Sie auf die Schaltfläche Senden , um den Assistenten abzuschließen. Der Prozess kann ein wenig Zeit in Anspruch nehmen, um die Konfigurationsdaten und alle damit verbundenen Analysen mit der Anwendung abzurufen. Klicken Sie nach Abschluss des Vorgangs auf **Fertig** aus dem Modal zurück, um zum Adobe Mobile Dashboard zurückzukehren.
+Wählen Sie im Schritt Erstellen oder Auswählen des Assistenten die Dropdown-Liste Mobile Service aus und wählen Sie den Eintrag Konfiguration erstellen . Geben Sie einen Titel, ein Unternehmen, einen Benutzernamen und ein Kennwort ein und wählen Sie das entsprechende Rechenzentrum aus. Wenn Sie diese Werte nicht kennen, wenden Sie sich an Ihren Adobe Mobile Service-Administrator, um sie zu erhalten. Nachdem alle Felder ausgefüllt sind, klicken Sie auf **Überprüfen**. Der Überprüfungsprozess wird an AMS gesendet und überprüft die Anmeldeinformationen für das Konto. Nach erfolgreicher Überprüfung wird eine Liste mit Mobile Apps gefüllt, in der Sie die zugehörige Mobile App aus der Dropdown-Liste auswählen. Klicken Sie auf die Schaltfläche Senden , um den Assistenten abzuschließen. Der Prozess kann ein wenig Zeit in Anspruch nehmen, um die Konfigurationsdaten und alle damit verbundenen Analysen mit der Anwendung abzurufen. Klicken Sie nach Abschluss des Vorgangs im Modal auf **Fertig** , um zum Adobe Mobile Dashboard zurückzukehren.
 
 Kehren Sie zum Mobile Dashboard zurück und die Kachel Cloud Service verwalten enthält den AMS-Cloud-Service. Außerdem wird die Kachel Metriken analysieren mit Lebenszyklusberichten gefüllt.
 
@@ -88,9 +88,9 @@ Kehren Sie zum Mobile Dashboard zurück und die Kachel Cloud Service verwalten e
 
 ## Handler zur Inhaltssynchronisierung in Target {#target-content-sync-handlers}
 
-Um Inhalte auf dem Gerät des Benutzers bereitzustellen, werden Inhalte durch Rendering der Angebote generiert, die von AEM Inhaltsautoren erstellt werden. Um das Rendering von Target-Angeboten zu verarbeiten, gibt es einen neuen Content Sync-Handler, der die Angebote verarbeitet. Unter Verwendung der Hybrid-Referenzanwendung als Beispiel enthält das Inhaltspaket en (Englisch) die ContentSyncConfig mit einer [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) Handler. Der nächste Schritt ist entscheidend für das Rendern von Angeboten an das Gerät. Der Handler mobileappoffers verfügt über eine Pfadeigenschaft, die den Pfad zur Personalisierungsaktivität angibt, die für die Anwendung verwendet wird.
+Um Inhalte auf dem Gerät des Benutzers bereitzustellen, werden Inhalte durch Rendering der Angebote generiert, die von AEM Inhaltsautoren erstellt werden. Um das Rendering von Target-Angeboten zu verarbeiten, gibt es einen neuen Content Sync-Handler, der die Angebote verarbeitet. Unter Verwendung der Hybrid-Referenzanwendung als Beispiel enthält das Inhaltspaket en (Englisch) die ContentSyncConfig mit einem Handler [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) . Der nächste Schritt ist entscheidend für das Rendern von Angeboten an das Gerät. Der Handler mobileappoffers verfügt über eine Pfadeigenschaft, die den Pfad zur Personalisierungsaktivität angibt, die für die Anwendung verwendet wird.
 
-Wenn beispielsweise eine Aktivität unter */content/campaigns/hybridref*, kopieren Sie diesen Pfad und fügen Sie ihn als Wert in den *path* -Eigenschaft des Handlers mobileappoffers .
+Wenn beispielsweise eine Aktivität unter */content/campaigns/hybridref* vorhanden ist, kopieren Sie diesen Pfad und fügen Sie ihn als Wert in die Eigenschaft *path* des Handlers mobileappoffers ein.
 
 Für die Hybrid-Referenzanwendung gibt es zwei Handler für Mobile Apps, einen für die Entwicklungsumgebung und einen für Produktionen.
 
@@ -98,7 +98,7 @@ Nachdem der Aktivitätspfad in der Pfadeigenschaft des Handlers mobileappoffers 
 
 ### Rendermodus {#render-mode}
 
-Der Handler für mobileappoffers ist für Veröffentlichungs- und Entwicklungskonfigurationen anders konfiguriert. Für Veröffentlichungskonfigurationen gibt es eine Eigenschaft mit dem Namen *renderMode* mit dem Wert *publish* auf den Knoten cq:ContentSyncConfig eingestellt ist. Der Handler mobileappoffer verweist auf den renderMode und bearbeitet, falls auf &quot;publish&quot;festgelegt, die zu erstellende Mbox-ID. Standardmäßig werden bei Mboxes, die von AEM erstellt werden, an die Mbox-ID der Wert —author angehängt. Dadurch wird festgestellt, dass die Aktivität noch nicht veröffentlicht wurde, und die nicht veröffentlichte Kampagne sollte für Angebotsauflösungen verwendet werden.
+Der Handler für mobileappoffers ist für Veröffentlichungs- und Entwicklungskonfigurationen anders konfiguriert. Für Veröffentlichungskonfigurationen gibt es eine Eigenschaft mit dem Namen *renderMode* mit dem Wert *publish*, die auf dem Knoten cq:ContentSyncConfig festgelegt ist. Der Handler mobileappoffer verweist auf den renderMode und bearbeitet, falls auf &quot;publish&quot;festgelegt, die zu erstellende Mbox-ID. Standardmäßig werden bei Mboxes, die von AEM erstellt werden, an die Mbox-ID der Wert —author angehängt. Dadurch wird festgestellt, dass die Aktivität noch nicht veröffentlicht wurde, und die nicht veröffentlichte Kampagne sollte für Angebotsauflösungen verwendet werden.
 
 Wenn Inhalte über das Adobe Mobile Dashboard gestaffelt werden, werden Staging-Inhalte als produktionsbereite Inhalte betrachtet und über die Konfiguration für die Inhaltssynchronisierung ohne Entwicklungsumgebung gerendert. Auf diese Weise wird —author aus allen Mbox-IDs entfernt und es wird erwartet, dass eine veröffentlichte Aktivität auf dem Target-Server verfügbar ist. Bevor Sie gestaffelte Inhalte testen, stellen Sie sicher, dass die Aktivität veröffentlicht ist.
 

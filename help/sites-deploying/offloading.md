@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '2318'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -235,7 +235,7 @@ Das Abladungs-Framework überträgt Ressourcen mittels Replikation zwischen Auto
 
 >[!CAUTION]
 >
->Ein bekanntes Problem mit den automatisch generierten Replikationsagenten erfordert die manuelle Erstellung neuer Replikationsagenten.
+>Es ist ein bekanntes Problem mit automatisch generierten Replikationsagenten, dass neue Agenten manuell erstellt werden müssen.
 
 Erstellen Sie die Replikationsagenten, die Auftrags-Payloads zwischen Instanzen für die Abladung übertragen. Die nachfolgende Darstellung zeigt die erforderlichen Agenten für die Abladung von der Autoren- an die Worker-Instanz. Die Autoreninstanz hat die Sling-ID 1 und die Worker-Instanz die Sling-ID 2:
 

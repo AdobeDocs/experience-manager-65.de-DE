@@ -14,7 +14,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: cbf8a5ac22049b3372a8282b9c061d7abeacc5dc
 workflow-type: tm+mt
 source-wordcount: '415'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -79,13 +79,13 @@ Melden Sie sich jetzt bei Brand Portal an, um zu sehen, ob die veröffentlichten
 
 ![bp_landingpage](assets/bp_landingpage.png)
 
-## Veröffentlichte Datei oder Ordner in Brand Portal anzeigen {#view-published-file-folder}
+## Ansicht der veröffentlichten Datei oder des Ordners in Brand Portal {#view-published-file-folder}
 
 1. Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um die veröffentlichten Assets zu sehen (je nach Ihrem geplanten Zeitpunkt).
 
    ![bp_landingpage](assets/bp_landingpage.png)
 
-1. Zur Listenansicht wechseln ![Listenansicht](assets/list-view.svg) um den aktuellen Veröffentlichungsstatus des Assets anzuzeigen.
+1. Wechseln Sie zur ![Listenansicht](assets/list-view.svg), um den aktuellen Veröffentlichungsstatus des Assets anzuzeigen.
 
 <!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 

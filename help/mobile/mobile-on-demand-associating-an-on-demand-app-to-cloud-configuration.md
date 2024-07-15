@@ -32,11 +32,11 @@ Von dort aus ist es möglich, Inhalte zu veröffentlichen, in der Vorschau anzuz
 >
 >Bevor Sie mit der Konfiguration der Cloud-Konfiguration für Ihre On-Demand-App beginnen, müssen Sie mit der Bereitstellung und Konfiguration des AEM Mobile On-demand Services-Clients für AEM Mobile vertraut sein.
 >
->Weitere Informationen finden Sie unter [Einrichten von AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) im Abschnitt &quot;Administration&quot;.
+>Weitere Informationen finden Sie unter [Einrichten von AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) im Abschnitt &quot;Verwaltung&quot;.
 
-Um Mobile On-Demand-Cloud Service zu konfigurieren, klicken Sie oben rechts im **Verbindung verwalten** -Kachel aus Ihrem App-Dashboard aus.
+Klicken Sie zum Konfigurieren von Mobile On-Demand-Cloud Services oben rechts auf der Kachel **Verbindung verwalten** in Ihrem App-Dashboard auf das obere Zahnrad.
 
-Sie sollten mit dem App-Dashboard und den verfügbaren Kacheln vertraut sein. Siehe [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) für weitere Details.
+Sie sollten mit dem App-Dashboard und den verfügbaren Kacheln vertraut sein. Weitere Informationen finden Sie unter [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) .
 
 ### Einrichten von Link zur Cloud-Konfiguration {#setting-up-link-to-cloud-configuration}
 
@@ -44,26 +44,26 @@ Sie sollten mit dem App-Dashboard und den verfügbaren Kacheln vertraut sein. Si
 >
 >Stellen Sie sicher, dass Sie über einen On-Demand-Client und eine Cloud-Konfiguration verfügen.
 >
->Weitere Informationen finden Sie unter [Einrichten von AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) im Abschnitt &quot;Administration&quot;.
+>Weitere Informationen finden Sie unter [Einrichten von AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) im Abschnitt &quot;Verwaltung&quot;.
 
 Im Folgenden wird beschrieben, wie Sie einen Link zur Cloud-Konfiguration einrichten:
 
-1. Von **Mobilnummer** auswählen **Apps** und dann Ihre Mobile On-Demand-App aus dem Katalog.
-1. Klicken Sie auf das Zahnradsymbol auf **Verbindung verwalten** Kachel.
+1. Wählen Sie unter **Mobil** die Option **Apps** und dann Ihre Mobile On-Demand-App aus dem Katalog.
+1. Klicken Sie auf das Zahnradsymbol auf der Kachel **Verbindung verwalten** .
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Geben Sie die bereits vorhandene Konfiguration ein oder erstellen Sie eine, indem Sie die **Konfigurationstitel**, **Geräte-ID**, und **Geräte-Token**.
+1. Geben Sie die bereits vorhandene Konfiguration ein oder erstellen Sie eine, indem Sie den **Konfigurationstitel**, die **Geräte-ID** und das **Geräte-Token** eingeben.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Einmal **Geräte-ID** und **Geräte-Token** überprüft wurden, wählen Sie Ihr On-Demand-Projekt aus der Liste aus.
+1. Nachdem Sie Ihre **Geräte-ID** und Ihr **Geräte-Token** überprüft haben, wählen Sie Ihr On-Demand-Projekt aus der Liste aus.
 
    Klicken Sie auf **Absenden**.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-   Die **Verbindung verwalten** zeigt Ihre Cloud-Konfiguration an.
+   Die Kachel **Verbindung verwalten** enthält Ihre Cloud-Konfiguration.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 

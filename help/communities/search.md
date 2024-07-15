@@ -22,9 +22,9 @@ Die Suchfunktion kann mit verschiedenen anderen Funktionen wie Foren verwendet w
 
 Beim Hinzufügen der Möglichkeit, Beiträge von Community-Mitgliedern zu durchsuchen, die als benutzergenerierte Inhalte (UGC) bezeichnet werden, gibt es zwei Komponenten: [Suche](#search) und [Suchergebnisse](#search-results).
 
-Die Seite, die die `Search Results` -Komponente unterstützt sowohl die Suche als auch die Anzeige von Ergebnissen.
+Die Seite, die die Komponente `Search Results` enthält, unterstützt sowohl die Suche als auch die Anzeige der Ergebnisse.
 
-Die Seite, die die `Search` -Komponente bietet einen Ort zum Starten einer Suche mit Ergebnissen, die auf der `Search Results` Seite.
+Die Seite, die die Komponente `Search` enthält, bietet einen Ort zum Starten einer Suche mit Ergebnissen, die auf der Seite `Search Results` angezeigt werden.
 
 Die Suchfunktion kann mit jeder anderen Funktion verwendet werden, die es Site-Besuchern und Mitgliedern ermöglicht, Inhalte anzuzeigen.
 
@@ -32,21 +32,21 @@ Die Suchfunktion kann mit jeder anderen Funktion verwendet werden, die es Site-B
 
 ### Hinzufügen einer Suche zu einer Seite {#add-search-to-a-page}
 
-So fügen Sie eine `Search` -Komponente auf einer Seite im Autorenmodus verwenden Sie den Komponenten-Browser, um `Communities / Search` und ziehen Sie sie an die gewünschte Stelle auf einer Seite. Verwendung von `Search` erfordert eine zweite Seite für die `Search Results.`
+Um eine `Search` -Komponente im Autorenmodus zu einer Seite hinzuzufügen, suchen Sie im Komponenten-Browser nach `Communities / Search` und ziehen Sie sie an die gewünschte Stelle auf einer Seite. Für die Verwendung von `Search` ist eine zweite Seite für die `Search Results.` erforderlich.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
 
-Wenn die erforderliche clientseitige Bibliothek `cq.social.hbs.search`, enthalten ist, wird die `Search` -Komponente angezeigt.
+Wenn die erforderliche clientseitige Bibliothek `cq.social.hbs.search` enthalten ist, wird die Komponente `Search` so angezeigt.
 
 ![add-search](assets/add-search.png)
 
 ### Konfigurieren der hinzugefügten Suche {#configure-the-added-search}
 
-Auswählen der platzierten `Search` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Wählen Sie die platzierte Komponente `Search` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![config](assets/configure-new.png)
 
-Unter dem **[!UICONTROL Sucheinstellungen]** angeben, wie welche Pfade gesucht werden, wenn ein Besucher eine Abfrage eingibt.
+Geben Sie auf der Registerkarte **[!UICONTROL Sucheinstellungen]** an, welche Pfade gesucht werden sollen, wenn ein Besucher eine Abfrage eingibt.
 
 ![search-settings](assets/search-settings.png)
 
@@ -56,33 +56,33 @@ Durch Hinzufügen von Suchpfaden mit der Schaltfläche Element hinzufügen ist d
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL Ergebnisseite]**
-Die Ergebnisse werden auf einer separaten Seite angezeigt, die durch Auswahl einer Seite mit dem `Search Results` -Komponente.
+Die Ergebnisse werden auf einer separaten Seite angezeigt, die über den Browser angegeben wird, um eine Seite auszuwählen, die die Komponente `Search Results` enthält.
 
 ## Suchergebnisse {#search-results}
 
 ### Suchergebnisse zu einer Seite hinzufügen {#add-search-results-to-a-page}
 
-So fügen Sie eine `Search Results` -Komponente auf einer Seite im Autorenmodus verwenden Sie den Komponenten-Browser, um
+Möchten Sie im Autorenmodus einer Seite die Komponente `Search Results` hinzufügen, suchen Sie mit dem Komponenten-Browser nach
 
 * `Communities / Search Results`
 
 und ziehen Sie sie an die gewünschte Stelle auf einer Seite. Im Gegensatz zur Suchkomponente ist keine zweite Seite erforderlich, da die Ergebnisse auf derselben Seite angezeigt werden.
 
-Wenn Sie die Suche an einer anderen Stelle auf der Website verwenden, wird diese eine Seite mit `Search Results` kann so konfiguriert werden, dass `Result Page` für alle Instanzen von `Search`.
+Wenn Sie die Suche an einer anderen Stelle auf der Website verwenden, kann diese eine Seite mit `Search Results` so konfiguriert werden, dass sie die `Result Page` für eine oder alle Instanzen von `Search` ist.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
 
-Wenn die erforderliche clientseitige Bibliothek `cq.social.hbs.search`, enthalten ist, wird die `Search Result` wird angezeigt:
+Wenn die erforderliche clientseitige Bibliothek `cq.social.hbs.search` enthalten ist, wird die Komponente `Search Result` so angezeigt:
 
-![Suchergebnis](assets/search-result1.png)
+![search-result](assets/search-result1.png)
 
 ### Konfigurieren des hinzugefügten Suchergebnisses {#configure-the-added-search-result}
 
-Auswählen der platzierten `Search Results` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Wählen Sie die platzierte Komponente `Search Results` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
-![konfigurieren](assets/configure-new.png)
+![configure](assets/configure-new.png)
 
-Unter dem **[!UICONTROL Suchergebniseinstellungen]** angegeben, können Sie festlegen, welche Pfade bei der Suche berücksichtigt werden, wenn ein Besucher eine Abfrage eingibt.
+Auf der Registerkarte **[!UICONTROL Suchergebniseinstellungen]** können Sie festlegen, welche Pfade bei der Suche einbezogen werden sollen, wenn ein Besucher eine Abfrage eingibt.
 
 ![search-result-settings](assets/search-result-settings.png)
 
@@ -96,4 +96,4 @@ Unter dem **[!UICONTROL Suchergebniseinstellungen]** angegeben, können Sie fest
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie unter [Suchgrundlagen](search-implementation.md) -Seite für Entwickler.
+Weitere Informationen finden Sie auf der Entwickler-Seite [Suchgrundlagen](search-implementation.md) .

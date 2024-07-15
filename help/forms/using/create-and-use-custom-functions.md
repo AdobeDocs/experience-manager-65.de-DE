@@ -27,7 +27,7 @@ ht-degree: 50%
 AEM Forms 6.5 bietet nun die Möglichkeit, JavaScript-Funktionen zu definieren, mit denen komplexe Geschäftsregeln mithilfe des Regeleditors definiert werden können. AEM Forms bietet eine Reihe solcher benutzerdefinierter Funktionen standardmäßig, aber Sie müssen Ihre eigenen benutzerdefinierten Funktionen definieren und sie in mehreren Formularen verwenden.
 
 Die benutzerdefinierten Funktionen erweitern die Funktionen von Formularen, indem sie die Bearbeitung und Verarbeitung der eingegebenen Daten erleichtern, um bestimmten Anforderungen gerecht zu werden. Sie ermöglichen auch eine dynamische Änderung des Formularverhaltens basierend auf vordefinierten Kriterien.
-In Adaptive Forms können Sie benutzerdefinierte Funktionen innerhalb der [Regeleditor eines adaptiven Formulars](/help/forms/using/rule-editor.md) , um spezifische Validierungsregeln für Formularfelder zu erstellen.
+In Adaptive Forms können Sie benutzerdefinierte Funktionen im [Regeleditor eines adaptiven Formulars](/help/forms/using/rule-editor.md) verwenden, um spezifische Validierungsregeln für Formularfelder zu erstellen.
 Im Folgenden wird die Verwendung einer benutzerdefinierten Funktion beschrieben, in der Benutzer die E-Mail-Adresse eingeben und sichergestellt werden soll, dass die eingegebene E-Mail-Adresse ein bestimmtes Format aufweist (sie enthält ein &quot;@&quot;-Symbol und einen Domänennamen). Erstellen Sie eine benutzerdefinierte Funktion als &quot;ValidateEmail&quot;, die die E-Mail-Adresse als Eingabe verwendet und &quot;true&quot; zurückgibt, wenn sie gültig ist, andernfalls &quot;false&quot;.
 
 ```javascript
@@ -53,14 +53,14 @@ Im obigen Beispiel wird, wenn der Benutzer versucht, das Formular zu senden, die
 
 Die Verwendung benutzerdefinierter Funktionen in Adaptive Forms bietet folgende Vorteile:
 
-* **Datenverarbeitung**: Benutzerdefinierte Funktionen bearbeiten und verarbeiten Daten, die in die Formularfelder eingegeben werden.
-* **Datenvalidierung**: Benutzerdefinierte Funktionen ermöglichen es Ihnen, benutzerdefinierte Prüfungen von Formulareingaben durchzuführen und bestimmte Fehlermeldungen bereitzustellen.
-* **Dynamisches Verhalten**: Benutzerdefinierte Funktionen ermöglichen es Ihnen, das dynamische Verhalten Ihrer Formulare anhand bestimmter Bedingungen zu steuern. Beispielsweise können Sie Felder ein-/ausblenden, Feldwerte ändern oder die Formularlogik dynamisch anpassen.
+* **Datenbearbeitung**: Benutzerdefinierte Funktionen bearbeiten und verarbeiten in die Formularfelder eingegebene Daten.
+* **Validierung der Daten**: Benutzerdefinierte Funktionen ermöglichen es Ihnen, benutzerdefinierte Prüfungen für Formulareingaben durchzuführen und bestimmte Fehlermeldungen anzugeben.
+* **Dynamisches Verhalten**: Mit benutzerdefinierten Funktionen können Sie das dynamische Verhalten Ihrer Formulare anhand bestimmter Bedingungen steuern. Beispielsweise können Sie Felder ein-/ausblenden, Feldwerte ändern oder die Formularlogik dynamisch anpassen.
 * **Integration**: Sie können benutzerdefinierte Funktionen zur Integration mit externen APIs oder Diensten verwenden. Dies hilft beim Abrufen von Daten aus externen Quellen, beim Senden von Daten an externe REST-Endpunkte oder beim Ausführen benutzerdefinierter Aktionen basierend auf externen Ereignissen.
 
 ## Unterstützte JS-Anmerkungen
 
-Stellen Sie sicher, dass die benutzerdefinierte Funktion, die Sie schreiben, von der `jsdoc` darüber, falls Sie eine benutzerdefinierte Konfiguration und Beschreibung benötigen. Es gibt mehrere Möglichkeiten, eine Funktion in zu deklarieren `JavaScript,` Mit Kommentaren und Kommentaren können Sie die Funktionen verfolgen. Weitere Informationen finden Sie unter [usejsdoc.org](https://jsdoc.app/).
+Stellen Sie sicher, dass die benutzerdefinierte Funktion, die Sie schreiben, mit dem oben stehenden `jsdoc` versehen ist, falls Sie eine benutzerdefinierte Konfiguration und Beschreibung benötigen. Es gibt mehrere Möglichkeiten, eine Funktion in `JavaScript,` zu deklarieren, und Kommentare ermöglichen es Ihnen, die Funktionen zu verfolgen. Weitere Informationen finden Sie unter [usejsdoc.org](https://jsdoc.app/).
 
 Unterstützte `jsdoc`-Tags:
 
@@ -216,7 +216,7 @@ Die erstellte Ordnerstruktur sieht wie folgt aus:
 
    ![Erstellte Ordnerstruktur der Client-Bibliothek](/help/forms/using/assets/clientlibrary_folderstructure.png)
 1. Doppelklicken Sie auf die Datei `functions.js`, um den Editor zu öffnen. Die Datei enthält den Code für die benutzerdefinierte Funktion.
-Fügen wir den folgenden Code zur JavaScript-Datei hinzu, um das Alter basierend auf dem Geburtsdatum (JJJJ-MM-TT) zu berechnen.
+Fügen wir der JavaScript-Datei den folgenden Code hinzu, um das Alter basierend auf dem Geburtsdatum (JJJ-MM-TT) zu berechnen.
 
    ```javascript
        /**
@@ -250,7 +250,7 @@ Fügen wir den folgenden Code zur JavaScript-Datei hinzu, um das Alter basierend
 
 1. Speichern Sie die Datei `js.txt`.
 
-Sie können auf Folgendes verweisen: [benutzerdefinierte Funktion](/help/forms/using/assets/customfunction.zip) Ordner. Laden Sie diesen Ordner herunter und installieren Sie ihn in Ihrer AEM-Instanz.
+Sie können auf den folgenden Ordner [Benutzerdefinierte Funktion](/help/forms/using/assets/customfunction.zip) verweisen. Laden Sie diesen Ordner herunter und installieren Sie ihn in Ihrer AEM-Instanz.
 
 Jetzt können Sie die benutzerdefinierte Funktion in Ihrem adaptiven Formular verwenden, indem Sie die Client-Bibliothek hinzufügen.
 
@@ -258,17 +258,17 @@ Jetzt können Sie die benutzerdefinierte Funktion in Ihrem adaptiven Formular ve
 
 Nachdem Sie Ihre Client-Bibliothek in Ihrer Forms CS-Umgebung bereitgestellt haben, verwenden Sie die zugehörigen Funktionen in Ihrem adaptiven Formular. Hinzufügen der Client-Bibliothek zum adaptiven Formular
 
-1. Öffnen Sie das Formular im Bearbeitungsmodus. Um ein Formular im Bearbeitungsmodus zu öffnen, wählen Sie ein Formular aus und wählen Sie **[!UICONTROL Bearbeiten]**.
+1. Öffnen Sie das Formular im Bearbeitungsmodus. Um ein Formular im Bearbeitungsmodus zu öffnen, wählen Sie ein Formular aus und klicken Sie auf **[!UICONTROL Bearbeiten]**.
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
 1. Klicken Sie auf das Symbol Eigenschaften des Guide-Containers. Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
-1. Öffnen Sie die **[!UICONTROL Allgemein]** und wählen Sie den Namen der **[!UICONTROL Client-Bibliothekskategorie]** aus der Dropdown-Liste aus (in diesem Fall wählen Sie `customfunctionscategory`).
+1. Öffnen Sie die Registerkarte **[!UICONTROL Einfach]** und wählen Sie den Namen der Kategorie **[!UICONTROL Client-Bibliothek]** aus der Dropdownliste aus (wählen Sie in diesem Fall `customfunctionscategory` aus).
 
    ![Hinzufügen der benutzerdefinierten Funktion zur Client-Bibliothek](/help/forms/using//assets/custom-function-category-name-core-component.png)
 
-1. Klicks **[!UICONTROL Fertig]** .
+1. Klicken Sie auf **[!UICONTROL Fertig]** .
 
 Jetzt können Sie eine Regel erstellen, um benutzerdefinierte Funktionen im Regeleditor zu verwenden:
 
 ![Hinzufügen der benutzerdefinierten Funktion zur Client-Bibliothek](/help/forms/using//assets/calculateage-customfunction.png)
 
-Jetzt sollten wir verstehen, wie eine benutzerdefinierte Funktion mithilfe der [Aufrufdienst des Regeleditors in AEM Forms](/help//forms/using/rule-editor.md).
+Jetzt sollten wir verstehen, wie Sie eine benutzerdefinierte Funktion mithilfe des Aufrufdienstes des [Regel-Editors in AEM Forms](/help//forms/using/rule-editor.md) konfigurieren und verwenden.

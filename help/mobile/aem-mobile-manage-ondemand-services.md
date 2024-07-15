@@ -35,16 +35,16 @@ Mit der Mobile On-Demand Preflight-App können Sie alle Projekte anzeigen, auf d
 ## Vorschau mit Preflight {#previewing-with-preflight-1}
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Klicken Sie auf die Auslassungspunkte (..) aus dem **Artikel verwalten** (oder &quot;Banner/Sammlungen&quot;).
-1. Auswählen **Preflight** in der Aktionsleiste aus.
-1. Klicks **Preflight aktivieren** aus dem Dialogfeld.
+1. Klicken Sie in der Kachel **Artikel verwalten** (oder Banner/Sammlungen) auf die Auslassungszeichen (...).
+1. Wählen Sie **Preflight** aus der Aktionsleiste aus.
+1. Klicken Sie im Dialogfeld auf **Preflight aktivieren** .
 1. Ihre App kann jetzt in der Mobile On-Demand-Preflight-App als Vorschau angezeigt werden.
 
 ![chlimage_1-8](assets/chlimage_1-8.gif)
 
 >[!NOTE]
 >
->Die AEM Preflight-App wird für die Vorschau von Inhalten und Durchsuchen von Seiten verwendet. Um mehr über die Preflight-App zu erfahren, klicken Sie auf [here](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>Die AEM Preflight-App wird für die Vorschau von Inhalten und Durchsuchen von Seiten verwendet. Um ausführliche Informationen zur Preflight-App zu erhalten, klicken Sie auf [hier](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
 ### Erste Schritte {#getting-ahead}

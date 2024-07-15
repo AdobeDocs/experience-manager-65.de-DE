@@ -10,7 +10,7 @@ docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: c705667e60ccfbc4612ef3212dbe549e6bea66a9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3568'
 ht-degree: 100%
 
@@ -155,7 +155,7 @@ Verwenden Sie ein eindeutiges Symbol für Ihr Paket. Verwenden Sie kein von Adob
 
 Filter identifizieren die Repository-Knoten, die in das Paket eingeschlossen werden sollen. Eine **Filterdefinition** legt die folgenden Informationen fest:
 
-* Den **Stammpfad** der einzufügenden Inhalte
+* den **Stammpfad** der einzuschließenden Inhalte
 * **Regeln**, durch die spezifische Knoten unterhalb des Stammpfads eingeschlossen oder ausgeschlossen werden
 
 Sie können Regeln mithilfe der Schaltfläche **+** hinzufügen. Sie können Regeln mithilfe der Schaltfläche **-** entfernen.
@@ -172,8 +172,8 @@ Beim Erstellen von Regeln definieren Sie einen regulären Ausdruck (auch als reg
 
 | Regeltyp | Beschreibung |
 |---|---|
-| include | „Include“ umfasst alle Dateien und Ordner im angegebenen Verzeichnis, die dem regulären Ausdruck entsprechen. „Include“ schließt andere Dateien oder Ordner unter dem angegebenen Stammpfad **nicht** mit ein. |
-| exclude | „Exclude“ schließt alle Dateien und Ordner aus, die dem regulären Ausdruck entsprechen. |
+| include | „include“ umfasst alle Dateien und Ordner im angegebenen Verzeichnis, die dem regulären Ausdruck entsprechen. „include“ schließt andere Dateien oder Ordner unter dem angegebenen Stammpfad **nicht** mit ein. |
+| exclude | „exclude“ schließt alle Dateien und Ordner aus, die dem regulären Ausdruck entsprechen. |
 
 Paketfilter werden meistens definiert, wenn Sie das Paket zum ersten Mal [erstellen.](#creating-a-new-package) Sie können jedoch auch später bearbeitet werden. Danach sollte das Paket neu aufgebaut werden, um seinen Inhalt basierend auf den neuen Filterdefinitionen zu aktualisieren.
 
@@ -183,7 +183,7 @@ Paketfilter werden meistens definiert, wenn Sie das Paket zum ersten Mal [erstel
 
 >[!TIP]
 >
->Hintergrundinformationen finden Sie in der Dokumentation [Apache Jackrabbit – Workspace-Filter](https://jackrabbit.apache.org/filevault/filter.html).
+>Hintergrundinformationen finden Sie in der Dokumentation [Apache Jackrabbit – Workspace Filter](https://jackrabbit.apache.org/filevault/filter.html).
 
 ### Abhängigkeiten {#dependencies}
 

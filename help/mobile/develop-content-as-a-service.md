@@ -27,12 +27,12 @@ Dazu gehören die Verwendung von Assets, Site-Inhalten, CAAs-Inhalten (Over-the-
 
 >[!NOTE]
 >
->**Over-the-Air-Inhalt** kann über ContentSync-Handler von einem der oben genannten stammen. Sie können sie verwenden, um ein Batch-Paket zu erstellen und mithilfe von ZIP-Dateien bereitzustellen und Aktualisierungen für diese Pakete zu verwalten.
+>**Over-the-Air-Content** kann über ContentSync-Handler aus einem der oben genannten Elemente stammen. Sie können sie verwenden, um ein Batch-Paket zu erstellen und mithilfe von ZIP-Dateien bereitzustellen und Aktualisierungen für diese Pakete zu verwalten.
 
 Es gibt drei Hauptmaterialtypen, die Content Services bereitstellt:
 
 1. **Assets**
-1. **HTML-Inhalt verpackt (HTML/CSS/JS)**
+1. **HTML-Inhalt (HTML/CSS/JS) gepackt**
 1. **Kanalunabhängiger Inhalt**
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
@@ -63,7 +63,7 @@ Der Asset-Workflow sieht wie folgt aus:
    1. Auswählen eines Assets oder einer Asset-Sammlung
    1. JSON-Rendering anpassen
 
-Das folgende Diagramm zeigt die **Asset-Referenz-Workflow**:
+Das folgende Diagramm zeigt den **Assets Reference Workflow**:
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
@@ -73,9 +73,9 @@ Content Services bieten Zugriff auf AEM verwaltete Assets, auf die möglicherwei
 
 #### Vorhandene verwaltete Assets {#existing-managed-assets}
 
-Ein Benutzer von AEM Sites und Assets verwendet AEM Assets, um alle digitalen Inhalte für alle Kanäle zu verwalten. Sie entwickeln eine native mobile App und müssen mehrere Assets verwenden, die von AEM Assets verwaltet werden. Zum Beispiel Logos, Hintergrundbilder und Schaltflächensymbole.
+Ein Anwender von AEM Sites und Assets verwendet AEM Assets, um alle digitalen Inhalte für alle Kanäle zu verwalten. Sie entwickeln eine native mobile App und müssen mehrere Assets verwenden, die von AEM Assets verwaltet werden. Zum Beispiel Logos, Hintergrundbilder und Schaltflächensymbole.
 
-Derzeit sind diese auf das Assets-Repository verteilt. Die Dateien, auf die die App verweisen muss, lauten wie folgt:
+Diese befinden sich derzeit im Assets-Repository. Die Dateien, auf die die App verweisen muss, lauten wie folgt:
 
 * /content/dam/geometrixx-outdoors/brand/logo_light.png
 * /content/dam/geometrixx-outdoors/brand/logo_dark.png
@@ -115,7 +115,7 @@ AEM Content Services stellt der mobilen App über die API HTML-Inhalte zur Verf�
 
 Die folgenden Optionen werden berücksichtigt:
 
-* **Zip-Datei:** Damit die beste Möglichkeit besteht, auf dem Gerät richtig anzuzeigen, werden die referenzierten Materialien (CSS, JavaScript, Assets usw. der Seite) in einer einzelnen komprimierten Datei mit der Antwort enthalten. Die Verweise auf der HTML-Seite können angepasst werden, um einen relativen Pfad zu diesen Dateien zu verwenden.
+* **ZIP-Datei:** Damit die beste Möglichkeit besteht, auf dem Gerät richtig anzuzeigen, werden die referenzierten Materialien (material-css, JavaScript, Assets usw. der Seite) in einer komprimierten Datei mit der Antwort enthalten. Die Verweise auf der HTML-Seite können angepasst werden, um einen relativen Pfad zu diesen Dateien zu verwenden.
 * **Streaming:** Abrufen eines Manifests der erforderlichen Dateien von AEM. Verwenden Sie dann dieses Manifest, um alle Dateien (HTML, CSS, JS usw.) mit nachfolgenden Anfragen anzufordern.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)

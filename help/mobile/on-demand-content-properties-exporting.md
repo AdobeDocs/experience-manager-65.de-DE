@@ -22,9 +22,9 @@ ht-degree: 9%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Apps werden als *cq:Pages* in AEM.
+Apps werden in AEM als *cq:Pages* dargestellt.
 
-Sie verwenden dieselben allgemeinen Eigenschaften, die in allen *cq:Page* zusätzlich zu anderen unten aufgeführten Elementen, die integrationsunterstützende Eigenschaften darstellen.
+Sie verwenden dieselben allgemeinen Eigenschaften, die in jedem *cq:Page* vorhanden sind, zusätzlich zu anderen, die unten angezeigt werden und die Eigenschaften darstellen, die für die Integration unterstützt werden.
 
 ## App-Eigenschaften {#app-properties}
 
@@ -45,7 +45,7 @@ Die folgende Tabelle zeigt **App-Eigenschaften und -Knoten**.
   <tr>
    <td>dps-exportTemplate</td>
    <td>Zeichenfolge:Pfad</td>
-   <td><p>Pfad zu den Exportkonfigurationen der App. Die Exportkonfiguration ist ein Ordner mit zwei untergeordneten ContentSync-Exportkonfigurationsvorlagen.</p> <p><i>dps-article</i>: ContentSync-Exportkonfiguration für den Export von Artikelinhalten</p> <p><i>dps-HTMLResources</i>: Exportkonfiguration für ContentSync zum Exportieren von freigegebenen Ressourcen für Apps/Artikel</p> </td>
+   <td><p>Pfad zu den Exportkonfigurationen der App. Die Exportkonfiguration ist ein Ordner mit zwei untergeordneten ContentSync-Exportkonfigurationsvorlagen.</p> <p><i>dps-article</i>: Exportkonfiguration für ContentSync zum Exportieren von Artikelinhalten</p> <p><i>dps-HTMLResources</i>: Exportkonfiguration für ContentSync zum Exportieren von freigegebenen Ressourcen für Apps/Artikel</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>
@@ -80,12 +80,12 @@ Die folgende Tabelle zeigt **App-Eigenschaften und -Knoten**.
   <tr>
    <td>sling:resourceType</td>
    <td>Zeichenfolge:Pfad</td>
-   <td><p>Pfad zu einer cq:Component , die <i>mobileapps/core/components/instance.</i></p> <p>Dadurch erhalten Sie die Präsenz und das Rendering im Apps-Katalog.</p> </td>
+   <td><p>Pfad zu einer cq:Component , die <i>mobileapps/core/components/instance</i> ist oder erweitert.</p> <p>Dadurch erhalten Sie die Präsenz und das Rendering im Apps-Katalog.</p> </td>
   </tr>
  </tbody>
 </table>
 
-Sie können ***Inhaltseigenschaften*** , um Inhalte zu erstellen. Weitere Informationen finden Sie in den folgenden Ressourcen zum Erstellen und Exportieren von Artikeln und freigegebenen Ressourcen:
+Sie können ***Inhaltseigenschaften*** verwenden, um Inhalte zu erstellen. Weitere Informationen finden Sie in den folgenden Ressourcen zum Erstellen und Exportieren von Artikeln und freigegebenen Ressourcen:
 
 * [Inhaltseigenschaften](/help/mobile/content-properties.md)
 * [Erstellen der Konfiguration von Artikelexporten](/help/mobile/creating-article-export-configuration.md)

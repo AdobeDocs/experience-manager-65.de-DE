@@ -21,50 +21,50 @@ ht-degree: 0%
 Die Konsolen von AEM Communities, die im globalen Navigationsbereich in der Autorenumgebung verfügbar sind, bieten Zugriff auf Verwaltungsaufgaben, z. B.:
 
 * [Erstellen einer Community-Site](sites-console.md)
-* Hinzufügen [Gruppen](groups.md) innerhalb der Site verschachtelt
-* Verwalten [Community-Site-Vorlagen](sites.md)
-* Verwalten [Community-Mitglieder](members.md)
-* [Moderation](moderate-ugc.md) benutzergenerierte Inhalte (UGC)
-* Erstellen [benutzerdefinierte Abzeichen](badges.md)
-* Konfigurieren der [Standardspeicher für benutzergenerierte Inhalte](srp-config.md)
+* Hinzufügen von innerhalb der Site verschachtelten [Gruppen](groups.md)
+* Verwalten von [Community-Site-Vorlagen](sites.md)
+* Verwalten von [Community-Mitgliedern](members.md)
+* [Moderieren](moderate-ugc.md) benutzergenerierter Inhalte (UGC)
+* Erstellen von [benutzerdefinierten Zeichen](badges.md)
+* Konfigurieren des [Standardspeichers für UGC](srp-config.md)
 
-Wann [UGC-Speicher](working-with-srp.md) als gemeinsamer Speicher für Autoren- und Veröffentlichungsumgebungen konfiguriert ist, wird die [Moderationskonsole](moderation.md), verfügbar sowohl in der Autoren- als auch in der Veröffentlichungsumgebung, funktioniert auf einer Einzelinstanz von UGC.
+Wenn [UGC-Speicher](working-with-srp.md) als gemeinsamer Speicher für Autoren- und Publish-Umgebungen konfiguriert ist, wird die in der Autoren- und Publish-Umgebung verfügbare [Moderationskonsole](moderation.md) in einer Einzelinstanz von UGC ausgeführt.
 
-In der Autorenumgebung wird nach der Anmeldung mit Administratorrechten die `Communities` -Konsolen sind in der Navigations- und Tools-Konsole verfügbar.
+In der Autorenumgebung sind nach der Anmeldung mit Administratorrechten die `Communities` -Konsolen in den Navigations- und Tools-Konsolen verfügbar.
 
 >[!NOTE]
 >
->In der Veröffentlichungsumgebung wird eine [Community-Site](sites-console.md) zeigt eine `Administration` Menüelement, wenn das angemeldete Mitglied über die entsprechenden Berechtigungen verfügt.
+>In der Publish-Umgebung zeigt eine [Community-Site](sites-console.md) ein `Administration` -Menüelement an, wenn das angemeldete Mitglied über die entsprechenden Berechtigungen verfügt.
 
 ## Globales Navigationsfenster {#global-navigation-panel}
 
-Wählen Sie die `Adobe Experience Manager` in der linken oberen Ecke, damit Sie das globale Navigationsfenster öffnen und auf zwei Symbole zugreifen können:
+Wählen Sie das Symbol &quot;`Adobe Experience Manager`&quot;in der oberen linken Ecke aus, damit Sie das globale Navigationsfenster öffnen und auf zwei Symbole zugreifen können:
 
 * [Navigationskonsole](#navigation-console)
 * [Tools-Konsole](tools.md)
 
 ## Navigationskonsole {#navigation-console}
 
-Um auf die verschiedenen Communities-Konsolen zuzugreifen, wählen Sie in der globalen Navigation die Option **Navigation, Communities**.
+Um auf die verschiedenen Communities-Konsolen zuzugreifen, wählen Sie in der globalen Navigation die Option **Navigation, Communities** aus.
 
 ![communities](assets/communities.png)
 
 * [Sites](sites-console.md)
 
-  Die Sites-Konsole ist in der Autorenumgebung für die Erstellung und Verwaltung von Community-Sites und deren [Gruppen](groups.md).
+  Auf die Sites-Konsole kann in der Autorenumgebung zugegriffen werden, um Community-Sites und deren [Gruppen](groups.md) zu erstellen und zu verwalten.
 
 * [Moderation](moderation.md)
 
-  Die Moderationskonsole ist für die Massenmoderation von UGC und in der Autorenumgebung vorgesehen. Eine ähnliche Massenmoderationskonsole ist in der Veröffentlichungsumgebung für Community-Mitglieder verfügbar, denen die Rolle [Community-Moderator](users.md#publishenvironmentusersandgroups) für eine oder mehrere Community-Sites.
+  Die Moderationskonsole ist für die Massenmoderation von UGC und in der Autorenumgebung vorgesehen. Eine ähnliche Massenmoderationskonsole ist in der Publish-Umgebung für Community-Mitglieder verfügbar, denen die Rolle [Community-Moderator](users.md#publishenvironmentusersandgroups) für eine oder mehrere Community-Sites zugewiesen wurde.
 
 * [Mitglieder, Gruppen](members.md)
 
-  Die Mitglieder- und Gruppenkonsolen dienen der Verwaltung von Community-Mitgliedern und Mitgliedergruppen, die in der Veröffentlichungsumgebung in der Autorenumgebung vorhanden sind.
+  Die Mitglieder- und Gruppenkonsolen dienen der Verwaltung von Community-Mitgliedern und Mitgliedergruppen, die in der Publish-Umgebung in der Autorenumgebung vorhanden sind.
 
 * [Berichte](reports.md)
 
-  In der Konsole &quot;Berichte&quot;können Berichte über Zuweisungen, Seitenansichten und veröffentlichte Inhalte (UGC) erstellt werden, wenn eine Community-Site [Adobe Analytics aktiviert](sites-console.md#analytics). Die Konsole ist nur in der Autorenumgebung verfügbar.
+  In der Konsole &quot;Berichte&quot;können Berichte über Zuweisungen, Seitenansichten und veröffentlichte Inhalte (UGC) erstellt werden, wenn für eine Community-Site [Adobe Analytics](sites-console.md#analytics) aktiviert ist. Die Konsole ist nur in der Autorenumgebung verfügbar.
 
 ## Tools-Konsole {#tools-console}
 
-Zugriff [Communities-Tools](tools.md) (ehemals Administration Console) aus der globalen Navigation: **[!UICONTROL Instrumente]** > **[!UICONTROL Communities]**
+So greifen Sie über die globale Navigation auf die [Communities-Tools](tools.md) (ehemals Administration Console) zu: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**

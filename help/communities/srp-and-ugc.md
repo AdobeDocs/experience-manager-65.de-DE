@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Einführung {#introduction}
 
-Wenn Sie nicht mit dem Speicher-Ressourcenanbieter (SRP) und dessen Beziehung zu benutzergenerierten Inhalten (UGC) vertraut sind, besuchen Sie [Community-Inhaltsspeicherung](working-with-srp.md) und [Übersicht über den Speicheranbieter](srp.md).
+Wenn Sie mit dem Speicher-Ressourcenanbieter (SRP) und seiner Beziehung zu benutzergenerierten Inhalten (UGC) nicht vertraut sind, besuchen Sie die Abschnitte [Community-Inhaltsspeicher](working-with-srp.md) und [Übersicht über den Speicherressourcenanbieter](srp.md).
 
 Dieser Abschnitt der Dokumentation enthält einige wichtige Informationen zu SRP und UGC.
 
@@ -36,7 +36,7 @@ Die SRP-API ist keine abstrakte Klasse, sondern eine Schnittstelle. Eine benutze
 
 Die Mittel zur Verwendung der SRP-API werden über bereitgestellte Dienstprogramme bereitgestellt, z. B. über die im Paket SocialResourceUtilities vorhandenen.
 
-Bei der Aktualisierung von AEM 6.0 oder früher muss UGC für alle SRP migriert werden, für die ein Open Source-Tool verfügbar ist. Siehe [Upgrade auf AEM Communities 6.3](upgrade.md).
+Bei der Aktualisierung von AEM 6.0 oder früher muss UGC für alle SRP migriert werden, für die ein Open Source-Tool verfügbar ist. Siehe [Aktualisieren auf AEM Communities 6.3](upgrade.md).
 
 >[!NOTE]
 >
@@ -65,11 +65,11 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 Weitere SocialUtils-Ersetzungen finden Sie unter [SocialUtils-Refaktorierung](socialutils.md).
 
-Informationen zu Richtlinien für die Kodierung finden Sie unter [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md).
+Die Richtlinien zum Kodieren finden Sie unter [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md).
 
 >[!CAUTION]
 >
->Der Pfad resourceToUGCStoragePath() gibt Folgendes zurück: *not* geeignet für [ACL-Prüfung](srp.md#for-access-control-acls).
+>Der Pfad resourceToUGCStoragePath() gibt *nicht* zurück, der für die [ACL-Prüfung](srp.md#for-access-control-acls) geeignet ist.
 
 ## Dienstprogrammmethode für den Zugriff auf ACLs {#utility-method-to-access-acls}
 
@@ -96,38 +96,38 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 >[!CAUTION]
 >
->Der von resourceToACLPath() zurückgegebene Pfad lautet *not* geeignet für [Zugriff auf die Benutzerkontensteuerung](#utility-method-to-access-acls) selbst.
+>Der von resourceToACLPath() zurückgegebene Pfad ist *nicht* geeignet, um [auf den benutzergenerierten Inhalt zu zugreifen](#utility-method-to-access-acls).
 
 ## UGC-bezogene Speicherorte {#ugc-related-storage-locations}
 
-Die folgenden Beschreibungen des Speicherorts können bei der Entwicklung mit JSRP oder MSRP hilfreich sein. Es gibt derzeit keine Benutzeroberfläche für den Zugriff auf UGC, die in ASRP gespeichert ist, wie dies für JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) und MSRP (MongoDB-Tools).
+Die folgenden Beschreibungen des Speicherorts können bei der Entwicklung mit JSRP oder MSRP hilfreich sein. Es gibt derzeit keine Benutzeroberfläche für den Zugriff auf UGC, die in ASRP gespeichert ist, wie dies für JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) und MSRP (MongoDB-Tools) der Fall ist.
 
-**Komponentenstandort**
+**Komponentenspeicherort**
 
 Wenn ein Mitglied in der Veröffentlichungsumgebung in die benutzergenerierte Inhaltsbibliothek gelangt, interagiert es mit einer Komponente als Teil einer AEM Site.
 
-Ein Beispiel für eine solche Komponente ist die [Kommentarkomponente](http://localhost:4502/content/community-components/en/comments.html) , die in der [Handbuch zu Community-Komponenten](components-guide.md) Site. Der Pfad zum Kommentarknoten im lokalen Repository lautet:
+Ein Beispiel für eine solche Komponente ist die [Kommentar-Komponente](http://localhost:4502/content/community-components/en/comments.html), die auf der Site [Community Components Guide](components-guide.md) vorhanden ist. Der Pfad zum Kommentarknoten im lokalen Repository lautet:
 
 * Komponentenpfad = `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **Position des Shadow-Knotens**
 
-Die Erstellung von benutzergenerierten Inhalten erzeugt auch eine [Shadow-Knoten](srp.md#about-shadow-nodes-in-jcr) auf die die erforderlichen ACLs angewendet werden. Der Pfad zum entsprechenden Shadow-Knoten im lokalen Repository ist das Ergebnis der Vorgabe des Shadow-Knoten-Stammpfads zum Komponentenpfad:
+Bei der Erstellung von UGC wird auch ein [Shadow-Knoten](srp.md#about-shadow-nodes-in-jcr) erstellt, auf den die erforderlichen ACLs angewendet werden. Der Pfad zum entsprechenden Shadow-Knoten im lokalen Repository ist das Ergebnis der Vorgabe des Shadow-Knoten-Stammpfads zum Komponentenpfad:
 
-* Stammverzeichnis = `/content/usergenerated`
-* Kommentar-Shadow-Knoten = `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
+* Stammpfad = `/content/usergenerated`
+* Kommentar Shadow-Knoten = `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
-**UGC-Speicherort**
+**UGC-Position**
 
-Die UGC wird an keinem dieser Speicherorte erstellt und sollte nur über eine [Dienstprogrammmethode](#utility-method-to-access-ugc) , der die SRP-API aufruft.
+Der UGC wird an keinem dieser Speicherorte erstellt und sollte nur mit einer [Dienstprogrammmethode](#utility-method-to-access-ugc) aufgerufen werden, die die SRP-API aufruft.
 
-* Stammverzeichnis = `/content/usergenerated/asi/srp-choice`
+* Stammpfad = `/content/usergenerated/asi/srp-choice`
 * UGC-Knoten für JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
-*Beachten Sie* für JSRP wird der UGC-Knoten *only* in der AEM-Instanz (Autor oder Veröffentlichungsinstanz) vorhanden sein, in der sie eingegeben wurde. Bei Eingabe in eine Veröffentlichungsinstanz ist eine Moderation in der Moderationskonsole auf der Autoreninstanz nicht möglich.
+*Beachten Sie*: Für JSRP ist der UGC-Knoten *nur* in der AEM-Instanz (Autor oder Veröffentlichung) vorhanden, in der er eingegeben wurde. Bei Eingabe in eine Veröffentlichungsinstanz ist eine Moderation in der Moderationskonsole auf der Autoreninstanz nicht möglich.
 
 ## Verwandte Informationen {#related-information}
 
-* [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Kodierungsrichtlinien.
+* [Übersicht über den Speicheranbieter](srp.md) - Übersicht über die Einführung und die Repository-Nutzung.
+* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
 * [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.

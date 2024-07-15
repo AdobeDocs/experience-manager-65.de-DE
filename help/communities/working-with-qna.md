@@ -34,39 +34,39 @@ Das Forum-Feature Fragen und Antworten bietet Community-Mitgliedern die Möglich
 Die Dokumentation beschreibt:
 
 * Hinzufügen der Funktion &quot;Fragen und Antworten&quot;zu einer AEM Site.
-* Konfigurationseinstellungen für `QnA`-Komponente.
+* Konfigurationseinstellungen für die Komponente `QnA`.
 
 ## Hinzufügen eines Fragen- und Verwaltungsforums zu einer Seite {#adding-a-q-a-forum-to-a-page}
 
-So fügen Sie eine `QnA` -Komponente auf einer Seite im Autorenmodus verwenden Sie den Komponenten-Browser, um `Communities / QnA` und ziehen Sie sie an die gewünschte Stelle auf einer Seite, auf der das Forum zur Frage der Antworten erscheinen soll.
+Um eine `QnA` -Komponente im Autorenmodus zu einer Seite hinzuzufügen, suchen Sie im Komponenten-Browser nach `Communities / QnA` und ziehen Sie sie an die gewünschte Stelle auf einer Seite, auf der das Forum zur Überprüfung angezeigt werden soll.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die Variable [erforderliche clientseitige Bibliotheken](/help/communities/qna-essentials.md#essentials-for-client-side) eingeschlossen sind, wird die `QnA` -Komponente angezeigt:
+Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/qna-essentials.md#essentials-for-client-side) eingeschlossen sind, wird die Komponente `QnA` wie folgt angezeigt:
 
 ![qna-component](assets/qna-component.png)
 
 ### Konfigurieren von Fragen und Antworten {#configuring-qna}
 
-Auswählen der platzierten `QnA` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Wählen Sie die platzierte Komponente `QnA` aus, damit Sie auf das Symbol `Configure` zugreifen und dieses auswählen können, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
-![konfigurieren](assets/configure-new.png)
+![configure](assets/configure-new.png)
 
 ![qna-config](assets/qna-config.png)
 
 #### Registerkarte &quot;Einstellungen&quot; {#settings-tab}
 
-Unter dem **Einstellungen** Registerkarte Einstellungen für Themen (Fragen) und Antworten (Antworten) festlegen:
+Legen Sie auf der Registerkarte **Einstellungen** Einstellungen für Themen (Fragen) und Antworten fest:
 
-* **Miniaturansicht des Anhangs zulassen**
+* **Zulassen der Anlagenminiatur**
 
   Wenn diese Option aktiviert ist, wird eine Miniaturansicht des angehängten Bildes erstellt.
 
-* **Maximale Größe der Miniaturansichten anhängen**
+* **Max. Größe der Miniaturansichten anhängen**
 
   Maximale Größe (in Pixel) des Miniaturbilds des Anhangs. Der Standardwert ist 800 x 800.
 
-* **Mindestbildgröße für Miniaturansichten**
+* **Min. Bildgröße für Miniatur**
 
   Mindestgröße (in Byte) des Bildes zum Generieren von Miniaturansichten für Inline-Bilder. Der Standardwert ist 100000 Bytes (100 KB).
 
@@ -92,23 +92,23 @@ Unter dem **Einstellungen** Registerkarte Einstellungen für Themen (Fragen) und
 
 * **Tagging zulassen**
 
-  Wenn diese Option aktiviert ist, können Mitglieder ihren Beiträgen Tag-Beschriftungen hinzufügen (siehe **Tag-Feld** Registerkarte). Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, können Mitglieder ihren Beiträgen Tag-Beschriftungen hinzufügen (siehe Registerkarte **Tag-Feld** ). Die Option Standard ist deaktiviert.
 
 * **Datei-Uploads zulassen**
 
   Wenn diese Option aktiviert ist, können der Frage oder dem Kommentar Dateianlagen hinzugefügt werden. Die Option Standard ist deaktiviert.
 
-* **Folgende erlauben**
+* **Folgendes zulassen**
 
-  Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Forumsbeiträge hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) von neuen Stellen. Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Forumsbeiträge hinzu, mit der Mitglieder über neue Beiträge [benachrichtigt](/help/communities/notifications.md) werden können. Die Option Standard ist deaktiviert.
 
-* **Zulassen von Pinnwänden**
+* **Ping zulassen**
 
   Wenn diese Option aktiviert ist, können Forumsthemen an den Anfang der Themenliste gesetzt werden. Die Option Standard ist deaktiviert.
 
 * **E-Mail-Abonnements zulassen**
 
-  Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge informiert werden ([Abonnement](/help/communities/subscriptions.md)). Erfordert, dass Folgendes aktiviert wird und [E-Mail konfiguriert](/help/communities/email.md). Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge benachrichtigt werden ([subscription](/help/communities/subscriptions.md)). Erfordert die Aktivierung von &quot;Folgende zulassen&quot;und die Konfiguration von [E-Mail](/help/communities/email.md). Die Option Standard ist deaktiviert.
 
 * **Maximale Dateigröße**
 
@@ -116,9 +116,9 @@ Unter dem **Einstellungen** Registerkarte Einstellungen für Themen (Fragen) und
 
 * **Zulässige Dateitypen**
 
-  Nur relevant, wenn `Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg, .png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, können nicht angegebene nicht hochgeladen werden. Die Standardeinstellung ist nicht so festgelegt, dass **all** -Dateitypen sind zulässig.
+  Nur relevant, wenn `Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg, .png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, können nicht angegebene nicht hochgeladen werden. Der Standardwert ist nicht so angegeben, dass **alle** Dateitypen zulässig sind.
 
-* **Maximale Dateigröße für Bildanhang**
+* **Max. Größe der Bilddatei anhängen**
 
   Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Die maximale Anzahl von Bytes, die eine hochgeladene Bilddatei aufweisen kann. Der Standardwert ist 2097152 (2 MB).
 
@@ -130,7 +130,7 @@ Unter dem **Einstellungen** Registerkarte Einstellungen für Themen (Fragen) und
 
   Wenn diese Option aktiviert ist, fügen Sie die Funktion Abstimmung einer Frage hinzu. Die Option Standard ist deaktiviert.
 
-* **Benutzern das Löschen von Kommentaren und Themen ermöglichen**
+* **Benutzern erlauben, Kommentare und Themen zu löschen**
 
   Wenn diese Option aktiviert ist, können Mitglieder die von ihnen veröffentlichten Kommentare und Fragen löschen. Die Option Standard ist deaktiviert.
 
@@ -138,20 +138,20 @@ Unter dem **Einstellungen** Registerkarte Einstellungen für Themen (Fragen) und
 
   Wenn diese Option aktiviert ist, dürfen nur privilegierte Mitglieder Inhalte erstellen.
 
-* **Vom Benutzer generierte Inhalte im Bearbeitungsmodus des Autors blockieren**
+* **Vom Benutzer generierten Inhalt im Bearbeitungsmodus des Autors blockieren**
 
   Wenn diese Option aktiviert ist, wird benutzergenerierter Inhalt bei der Bearbeitung im Autorenmodus blockiert.
 
 * **Ausgewählte Antwort nach oben verschieben**
 
   Wenn diese Option aktiviert ist, ist die erste angezeigte Antwort eine ausgewählte Antwort. Die Option Standard ist deaktiviert.
-* **Anzeigemarken**
+* **Anzeigemarke**
 
-  Wenn diese Option aktiviert ist, zeigen Sie Earned und Assored [Badges](/help/communities/implementing-scoring.md) mit dem Blogeintrag eines Mitglieds. Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, zeigen Sie verdiente und zugewiesene [Badges](/help/communities/implementing-scoring.md) mit dem Blogeintrag eines Mitglieds an. Die Option Standard ist deaktiviert.
 
 * **Zulassen von speziellen Inhalten**
 
-  Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, kann die Idee als [Inhalt mit Funktionen](/help/communities/featured.md) identifiziert werden. Die Option Standard ist deaktiviert.
 
 * **Erwähnung aktivieren**
 
@@ -161,13 +161,13 @@ Unter dem **Einstellungen** Registerkarte Einstellungen für Themen (Fragen) und
 
   Schränken Sie die maximale Anzahl der Erwähnungen ein, die in einem Beitrag zulässig sind. Der Standardwert ist 10.
 
-* **Benutzeroberflächen-Erwähnungsmuster**
+* **UI-Erwähnungsmuster**
 
   Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Zum Beispiel: `~{{familyName}}{{givenName}}`.
 
 #### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
-Unter dem **Benutzermoderation** festlegen, wie die veröffentlichten Themen (Fragen) und Antworten (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
+Geben Sie auf der Registerkarte **Benutzermoderation** an, wie die veröffentlichten Themen (Fragen) und Antworten (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
 * **Antworten verweigern**
 
@@ -184,7 +184,7 @@ Wenn diese Option aktiviert ist, können Moderatoren auf Veröffentlichungsseite
 
   Ist diese Option aktiviert, können Mitglieder Fragen oder Antworten anderer Mitglieder als unangemessen kennzeichnen. Die Option Standard ist deaktiviert.
 
-* **Liste der Kennzeichnungsgründe**
+* **Liste mit Kennzeichnungsgründen**
 
   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem eine Frage oder Antwort als unangemessen gekennzeichnet wird. Die Option Standard ist deaktiviert.
 
@@ -192,7 +192,7 @@ Wenn diese Option aktiviert ist, können Moderatoren auf Veröffentlichungsseite
 
   Wenn diese Option aktiviert ist, können Mitglieder einen eigenen Grund für die Kennzeichnung einer Frage oder Antwort als unangemessen eingeben. Die Option Standard ist deaktiviert.
 
-* **Schwellenwert für Moderation**
+* **Moderationsschwellenwert**
 
   Geben Sie an, wie oft eine Frage oder Antwort von Mitgliedern gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist 1 (einmal).
 
@@ -202,11 +202,11 @@ Wenn diese Option aktiviert ist, können Moderatoren auf Veröffentlichungsseite
 
 #### Registerkarte &quot;Tag-Feld&quot; {#tag-field-tab}
 
-Unter dem **Tag-Feld** Registerkarte die Tags, die angewendet werden können, sofern dies unter der Variablen **Einstellungen** Registerkarte, sind entsprechend den ausgewählten Namespaces begrenzt.
+Auf der Registerkarte **Tag-Feld** sind die Tags, die angewendet werden können, sofern sie auf der Registerkarte **Einstellungen** zulässig sind, entsprechend den ausgewählten Namespaces beschränkt.
 
 * **Zugelassene Namespaces**
 
-  Relevant, wenn `Allow Tagging` wird unter dem **Einstellungen** Registerkarte. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) und &quot;Alle Tags einschließen&quot;. Der Standardwert ist &quot;none&quot;, was bedeutet, dass alle Namespaces zulässig sind.
+  Relevant, wenn `Allow Tagging` auf der Registerkarte **Einstellungen** aktiviert ist. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) und &quot;Alle Tags einschließen&quot;. Der Standardwert ist &quot;none&quot;, was bedeutet, dass alle Namespaces zulässig sind.
 
 * **Empfehlungslimit**
 
@@ -214,7 +214,7 @@ Unter dem **Tag-Feld** Registerkarte die Tags, die angewendet werden können, so
 
 #### Registerkarte &quot;Sortiereinstellungen&quot; {#sort-settings-tab}
 
-Unter dem **Sortiereinstellungen** festlegen, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
+Geben Sie auf der Registerkarte **Sortiereinstellungen** an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
 
 * **Sortieren nach**
 
@@ -224,19 +224,19 @@ Unter dem **Sortiereinstellungen** festlegen, wie die veröffentlichten Kommenta
 
   Ziehen Sie den Mauszeiger nach unten, um eine der aktivierten Sortieroptionen auszuwählen, die als Standard angezeigt werden sollen. Der Standardwert ist `Newest`.
 
-* **Zeitoptionen für Analytics-Sortierung auswählen**
+* **Zeitoptionen für die Analytics-Sortierung auswählen**
 
-  Dropdown-Liste zur Auswahl eines von `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Der Standardwert ist `All`.
+  Ziehen Sie das Element in den Arbeitsbereich, um einen der Werte `All, Last 24 Hours, Last 7 Days, Last 30 Days` auszuwählen. Der Standardwert ist `All`.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
 ### Antworten identifizieren {#identifying-answers}
 
-Eine Antwort kann mithilfe der `Select Answer` Schaltfläche. Nachdem eine Frage als beantwortet markiert wurde, kann eine andere Antwort erst ausgewählt werden, nachdem die erste mit der Funktion `Unmark Chosen Answer` Schaltfläche.
+Eine Antwort kann mithilfe der Schaltfläche `Select Answer` als richtige oder nützliche Antwort markiert werden. Nachdem eine Frage als beantwortet markiert wurde, kann erst eine andere Antwort ausgewählt werden, nachdem die erste über die Schaltfläche `Unmark Chosen Answer` deaktiviert wurde.
 
-Nach Auswahl als praktikable Antwort kann die Auswahl mithilfe der Variablen `Unmark Chosen Answer` Schaltfläche.
+Nach Auswahl als praktikable Antwort kann die Auswahl mithilfe der Schaltfläche `Unmark Chosen Answer` aufgehoben werden.
 
-Sobald eine Antwort als praktikable Antwort ausgewählt wurde, ein Hinweis darauf, dass die Frage `Answered` wird neben dem Fragethema auf der Hauptseite der Fragen angezeigt.
+Nachdem eine Antwort als praktikable Antwort ausgewählt wurde, wird neben dem Fragethema auf der Hauptseite der Fragen-Fragen ein Hinweis angezeigt, dass die Frage `Answered` war.
 
 #### Moderatoren und Administratoren {#moderators-and-administrators}
 
@@ -248,7 +248,7 @@ Sie können auch Antworten identifizieren.
 
 Wenn die Besucher der Site angemeldet sind, können sie je nach Konfiguration:
 
-* Posten Sie eine neue Frage.
+* Post eine neue Frage.
 * Bearbeiten oder löschen Sie die von ihnen erstellten Fragen.
 * Kennzeichnen Sie Fragen oder Antworten anderer Mitglieder.
 * Ermitteln Sie Antworten auf von ihnen erstellte Fragen.
@@ -259,7 +259,7 @@ Besucher der Website, die nicht angemeldet sind, können nur veröffentlichte Fr
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie im [Grundlagen der quantitativen Lockerung](/help/communities/qna-essentials.md) -Seite für Entwickler.
+Weitere Informationen finden Sie auf der Entwickler-Seite [QnA Essentials](/help/communities/qna-essentials.md) .
 
 Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 

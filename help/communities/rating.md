@@ -18,30 +18,30 @@ ht-degree: 1%
 
 # Verwenden von Bewertungen {#using-ratings}
 
-Die `Rating` -Komponente wird eigenständig oder mit anderen Communities-Funktionen verwendet. Diese Komponente ermöglicht es angemeldeten Community-Mitgliedern, ihre Meinung durch Bewertung von Inhalten zu äußern.
+Die Komponente `Rating` wird eigenständig oder mit anderen Communities-Funktionen verwendet. Diese Komponente ermöglicht es angemeldeten Community-Mitgliedern, ihre Meinung durch Bewertung von Inhalten zu äußern.
 
 ## Hinzufügen einer Bewertung zu einer Seite {#adding-a-rating-to-a-page}
 
-So fügen Sie eine `Rating` Komponente auf einer Seite im Autorenmodus zu finden, die Komponente `Communities / Rating` und ziehen Sie sie an die gewünschte Stelle auf einer Seite, z. B. an die Position relativ zur Funktion, die Mitglieder bewerten sollen.
+Um eine `Rating` -Komponente im Autorenmodus zu einer Seite hinzuzufügen, suchen Sie die Komponente `Communities / Rating` und ziehen Sie sie auf eine Seite, z. B. eine Position relativ zur Funktion, die Mitglieder bewerten sollen.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
 
-Wenn die Variable [erforderliche clientseitige Bibliotheken](rating-basics.md#essentials-for-client-side) eingeschlossen sind, wird die `Rating` -Komponente angezeigt.
+Wenn die [ erforderlichen clientseitigen Bibliotheken](rating-basics.md#essentials-for-client-side) enthalten sind, wird die Komponente `Rating` so angezeigt.
 
-![Bewertung](assets/rating.png)
+![rating](assets/rating.png)
 
 ## Konfigurieren der Bewertung {#configuring-rating}
 
-Auswählen der platzierten `Rating` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Wählen Sie die platzierte Komponente `Rating` aus, damit Sie auf das Symbol `Configure` zugreifen und dieses auswählen können, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![configure-new](assets/configure-new.png)
 
-Unter dem **[!UICONTROL Texte und Beschriftungen]** -Registerkarte die interne Kennung für die Bewertung angeben.
+Auf der Registerkarte **[!UICONTROL Texte und Beschriftungen]** geben Sie die interne Kennung für die Bewertung an.
 
 ![tallyname](assets/tallyname.png)
 
 **[!UICONTROL Tally Name]**
-(*Erforderlich*) Ein einfacher Name für die `Rating` , die diese Instanz eindeutig identifiziert. Muss ein gültiger Knotenname für das Repository sein.
+(*Erforderlich*) Ein einfacher Name für die `Rating`, der diese Instanz eindeutig identifiziert. Muss ein gültiger Knotenname für das Repository sein.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
@@ -55,4 +55,4 @@ Das anonyme Posten einer Bewertung wird nicht unterstützt. Besucher der Site m�
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie unter [Bewertungsgrundlagen](rating-basics.md) -Seite für Entwickler.
+Weitere Informationen finden Sie auf der Entwickler-Seite [Bewertungsgrundlagen](rating-basics.md) .

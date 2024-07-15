@@ -13,7 +13,7 @@ role: User
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -106,8 +106,8 @@ Um über nur über die angegebene Seite Benachrichtigungen zu erhalten, setzen S
 
 Wenn Sie ausgewählt haben, dass Sie Benachrichtigungen in Ihrem AEM-Posteingang erhalten, werden die Benachrichtigungen an das Postfach versendet. Sie können [Ihre Benachrichtigungen anzeigen](#viewing-your-notifications) und dann die erforderlichen Benachrichtigungen auswählen, um Folgendes zu tun:
 
-* Akzeptieren durch Klicken auf **Genehmigen**: der Wert im **Lesen** Spalte ist auf **true**.
+* Genehmigen durch Klicken auf **Genehmigen**, woraufhin der Wert in der Spalte **Lesen** auf **wahr** gesetzt wird.
 
-* Beseitigen Sie sie durch Klicken auf **Löschen**.
+* Entfernen durch Klicken auf **Löschen**.
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)

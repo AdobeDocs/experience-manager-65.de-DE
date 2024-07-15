@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Seite &quot;Kommentare erstellen&quot; {#create-comments-page}
 
-**[⇐ Überlagerungskommentkomponente](overlay-comments.md) [Knotenpunkte erstellen imetall](overlay-create-nodes.md)**
+**[⇐ Überlagerungskommentkomponente](overlay-comments.md) [Knoten erstellen](overlay-create-nodes.md)**
 
 ## Kommentarseite {#comments-page}
 
-Die [Handbuch zu Community-Komponenten](components-guide.md) können Sie mühelos die Kommentarkomponente überlagern.
+Im [Handbuch zu Community-Komponenten](components-guide.md) können Sie mühelos das Überlagern der Kommentarkomponente erleben.
 
 Zeigen Sie die Seite in der Autoreninstanz an:
 
@@ -30,4 +30,4 @@ Zeigen Sie die Seite in der Autoreninstanz an:
 
 ![Kommentare](assets/comments.png)
 
-**[⇐ Überlagerungskommentkomponente](overlay-comments.md) [Knotenpunkte erstellen imetall](overlay-create-nodes.md)**
+**[⇐ Überlagerungskommentkomponente](overlay-comments.md) [Knoten erstellen](overlay-create-nodes.md)**

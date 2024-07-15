@@ -395,7 +395,7 @@ Standardmäßig durchsucht Experience Manager den ausgewählten Ordner und alle 
 >* Auf der klassischen Benutzeroberfläche können Sie auch nach **Flash** und **FXG** suchen. Auf der Touch-optimierten Benutzeroberfläche wird das Filtern nach diesen Begriffen nicht unterstützt.
 >
 >* Beim Durchsuchen eines Videos suchen Sie nach einem einzelnen Ausgabeformat. Die Ergebnisse geben die ursprüngliche (nur &#42;.mp4) und die kodierte Ausgabedarstellung zurück.
->* Beim Suchen nach einem adaptiven Videoset durchsuchen Sie den Ordner und alle Unterordner, jedoch nur dann, wenn Sie zur Suche ein Keyword hinzugefügt haben. Wenn Sie kein Keyword hinzugefügt haben, durchsucht Experience Manager nicht die Unterordner.
+* Beim Suchen nach einem adaptiven Videoset durchsuchen Sie den Ordner und alle Unterordner, jedoch nur dann, wenn Sie zur Suche ein Keyword hinzugefügt haben. Wenn Sie kein Keyword hinzugefügt haben, durchsucht Experience Manager nicht die Unterordner.
 >
 
 **Veröffentlichungsstatus**: Sie können Assets nach dem Veröffentlichungsstatus filtern: „Unveröffentlicht“ oder „Veröffentlicht“. Wenn Sie keinen Veröffentlichungsstatus auswählen, durchsucht Experience Manager standardmäßig alle Veröffentlichungsstatus.

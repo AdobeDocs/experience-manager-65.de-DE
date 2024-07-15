@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## Einführung {#introduction}
 
-Die Filterfunktion bietet einen Bereich für angemeldete Site-Besucher (Community-Mitglieder) in der Veröffentlichungsumgebung für:
+Die Filterfunktion bietet angemeldeten Site-Besuchern (Community-Mitgliedern) in der Publish-Umgebung folgende Möglichkeiten:
 
 * Erstellen Sie Ideen, die Sie mit der Community teilen können.
 * Ideen anzeigen und kommentieren.
@@ -35,21 +35,21 @@ In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
 ### Hinzufügen einer Idee zu einer Seite {#adding-a-ideation-to-a-page}
 
-So fügen Sie eine `Ideation` -Komponente auf einer Seite im Autorenmodus verwenden Sie den Komponenten-Browser, um
+Möchten Sie im Autorenmodus einer Seite die Komponente `Ideation` hinzufügen, suchen Sie mit dem Komponenten-Browser nach
 
 * `Communities / Ideation`
 
 Ziehen Sie sie an die gewünschte Stelle auf der Seite, auf der die Idee erscheinen soll.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die Variable [erforderliche clientseitige Bibliotheken](/help/communities/ideation.md#essentials-for-client-side) eingeschlossen sind, wird die `Ideation` -Komponente angezeigt:
+Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/ideation.md#essentials-for-client-side) eingeschlossen sind, wird die Komponente `Ideation` wie folgt angezeigt:
 
-![Idee](assets/ideation.png)
+![ideation](assets/ideation.png)
 
 ### Konfigurieren einer Idee {#configuring-an-ideation}
 
-Auswählen der platzierten `Ideation` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Wählen Sie die platzierte Komponente `Ideation` aus, damit Sie auf das Symbol `Configure` zugreifen und dieses auswählen können, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![configure-new](assets/configure-new.png)
 
@@ -57,15 +57,15 @@ Auswählen der platzierten `Ideation` -Komponente, damit Sie auf die `Configure`
 
 #### Registerkarte &quot;Einstellungen&quot; {#settings-tab}
 
-Unter dem **[!UICONTROL Einstellungen]** Registerkarte Einstellungen für Ideen und Kommentare festlegen:
+Legen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** Einstellungen für Ideen und Kommentare fest:
 
-* **Miniaturansicht des Anhangs zulassen**
-* **Maximale Größe der Miniaturansichten anhängen**
-* **Mindestbildgröße für Miniaturansichten**
+* **Zulassen der Anlagenminiatur**
+* **Max. Größe der Miniaturansichten anhängen**
+* **Min. Bildgröße für Miniatur**
 * **Maximale Größe der Miniaturansichten**
 * **Zulassen von privilegierten Mitgliedern**
-* **Zugelassene berechtigte Mitglieder**
-* **Vom Benutzer generierte Inhalte im Bearbeitungsmodus des Autors blockieren**
+* **Zulässige privilegierte Mitglieder**
+* **Vom Benutzer generierten Inhalt im Bearbeitungsmodus des Autors blockieren**
 * **Ideentitel**
 
 * Der Anzeigetitel für die Idee. Der Standardwert ist `Ideation`.
@@ -91,7 +91,7 @@ Unter dem **[!UICONTROL Einstellungen]** Registerkarte Einstellungen für Ideen 
 
 * **Tagging zulassen**
 
-  Wenn diese Option aktiviert ist, können Mitglieder ihren Beiträgen Tag-Beschriftungen hinzufügen (siehe **[!UICONTROL Tag-Feld]** Registerkarte). Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, können Mitglieder ihren Beiträgen Tag-Beschriftungen hinzufügen (siehe Registerkarte **[!UICONTROL Tag-Feld]** ). Die Option Standard ist deaktiviert.
 
 * **Datei-Uploads zulassen**
 
@@ -105,7 +105,7 @@ Unter dem **[!UICONTROL Einstellungen]** Registerkarte Einstellungen für Ideen 
 
   Nur relevant, wenn `Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg, .png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, können nicht angegebene nicht hochgeladen werden. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
 
-* **Maximale Dateigröße für Bildanhang**
+* **Max. Größe der Bilddatei anhängen**
 
   Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Maximale Anzahl der Bytes, die eine hochgeladene Bilddatei aufweisen kann. Der Standardwert ist 2097152 (2 MB).
 
@@ -117,39 +117,39 @@ Unter dem **[!UICONTROL Einstellungen]** Registerkarte Einstellungen für Ideen 
 
   Sofern aktiviert, können Sie über die Kommentare einer Idee abstimmen. Die Option Standard ist deaktiviert.
 
-* **Benutzern das Löschen von Kommentaren und Themen ermöglichen**
+* **Benutzern erlauben, Kommentare und Themen zu löschen**
 
   Wenn diese Option aktiviert ist, können Mitglieder die Kommentare und Ideen löschen, die sie veröffentlicht haben. Die Option Standard ist deaktiviert.
 
-* **Folgende erlauben**
+* **Folgendes zulassen**
 
-  Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Ideenbeiträge hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) von neuen Stellen. Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Ideenbeiträge hinzu, mit der Mitglieder über neue Beiträge [benachrichtigt](/help/communities/notifications.md) werden können. Die Option Standard ist deaktiviert.
 
 * **E-Mail-Abonnements zulassen**
 
-  Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge informiert werden ([Abonnement](/help/communities/subscriptions.md)). Erfordert `Allow Following` zu überprüfen und [E-Mail konfiguriert](/help/communities/email.md). Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge benachrichtigt werden ([subscription](/help/communities/subscriptions.md)). Erfordert die Überprüfung von `Allow Following` und die Konfiguration von [E-Mail](/help/communities/email.md). Die Option Standard ist deaktiviert.
 
 * **Abstimmung zulassen**
 
   Sofern aktiviert, können Sie über die Kommentare einer Idee abstimmen. Die Option Standard ist deaktiviert.
 
-* **Anzeigemarken**
+* **Anzeigemarke**
 
-  Wenn diese Option aktiviert ist, zeigen Sie Earned und Assored [Badges](/help/communities/implementing-scoring.md) mit der Idee eines Mitglieds. Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, zeigen Sie verdiente [Badges](/help/communities/implementing-scoring.md) mit der Idee eines Mitglieds an. Die Option Standard ist deaktiviert.
 
 * **Antworten auf Listenseite nicht abrufen**
 
 * **Zulassen von speziellen Inhalten**
 
-  Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, kann die Idee als [Inhalt mit Funktionen](/help/communities/featured.md) identifiziert werden. Die Option Standard ist deaktiviert.
 
 * **Erwähnung aktivieren**
 * **Max. Erwähnungen**
-* **Benutzeroberflächen-Erwähnungsmuster**
+* **UI-Erwähnungsmuster**
 
 #### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
-Unter dem **[!UICONTROL Benutzermoderation]** -Registerkarte angeben, wie die veröffentlichten Ideen und Kommentare (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
+Geben Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** an, wie die veröffentlichten Ideen und Kommentare (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
 * **Posts verweigern**
 
@@ -163,7 +163,7 @@ Unter dem **[!UICONTROL Benutzermoderation]** -Registerkarte angeben, wie die ve
 
   Wenn diese Option aktiviert ist, können Mitglieder Themen oder Kommentare anderer Mitglieder als unangemessen kennzeichnen. Die Option Standard ist deaktiviert.
 
-* **Liste der Kennzeichnungsgründe**
+* **Liste mit Kennzeichnungsgründen**
 
   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem Themen oder Kommentare als unangemessen gekennzeichnet werden. Die Option Standard ist deaktiviert.
 
@@ -171,7 +171,7 @@ Unter dem **[!UICONTROL Benutzermoderation]** -Registerkarte angeben, wie die ve
 
   Wenn diese Option aktiviert ist, können Mitglieder einen eigenen Grund für die Kennzeichnung eines Themas oder Kommentars als unangemessen eingeben. Die Option Standard ist deaktiviert.
 
-* **Schwellenwert für Moderation**
+* **Moderationsschwellenwert**
 
   Geben Sie an, wie oft ein Thema oder Kommentar von Mitgliedern gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist 1 ( einmal).
 
@@ -181,19 +181,19 @@ Unter dem **[!UICONTROL Benutzermoderation]** -Registerkarte angeben, wie die ve
 
 #### Registerkarte &quot;Tag-Feld&quot; {#tag-field-tab}
 
-Unter dem **[!UICONTROL Tag-Feld]** Registerkarte die Tags, die angewendet werden können, sofern dies unter der Variablen **[!UICONTROL Einstellungen]** Registerkarte, sind entsprechend den ausgewählten Namespaces begrenzt.
+Auf der Registerkarte **[!UICONTROL Tag-Feld]** sind die Tags, die angewendet werden können, sofern sie auf der Registerkarte **[!UICONTROL Einstellungen]** zulässig sind, entsprechend den ausgewählten Namespaces beschränkt.
 
 * **Zugelassene Namespaces**
 
-  Relevant, wenn `Allow Tagging` wird unter dem **[!UICONTROL Einstellungen]** Registerkarte. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) und &quot;Alle Tags einschließen&quot;. Der Standardwert ist &quot;none&quot;, was bedeutet, dass alle Namespaces zulässig sind.
+  Relevant, wenn `Allow Tagging` auf der Registerkarte **[!UICONTROL Einstellungen]** aktiviert ist. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) und &quot;Alle Tags einschließen&quot;. Der Standardwert ist &quot;none&quot;, was bedeutet, dass alle Namespaces zulässig sind.
 
 * **Empfehlungslimit**
 
-  Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Ein Wert von **-1** bedeutet keine Begrenzung. Der Standardwert ist 0.
+  Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Der Wert **-1** bedeutet keine Begrenzung. Der Standardwert ist 0.
 
 #### Registerkarte &quot;Sortiereinstellungen&quot; {#sort-settings-tab}
 
-Unter dem **[!UICONTROL Sortiereinstellungen]** festlegen, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
+Geben Sie auf der Registerkarte **[!UICONTROL Sortiereinstellungen]** an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
 
 * **Sortieren nach**
 
@@ -203,9 +203,9 @@ Unter dem **[!UICONTROL Sortiereinstellungen]** festlegen, wie die veröffentlic
 
   Ziehen Sie den Mauszeiger nach unten, um eine der aktivierten Sortieroptionen auszuwählen, die als Standard angezeigt werden sollen. Der Standardwert ist `Newest`.
 
-* **Zeitoptionen für Analytics-Sortierung auswählen**
+* **Zeitoptionen für die Analytics-Sortierung auswählen**
 
-  Ziehen Sie nach unten, um eines von `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Der Standardwert ist `All`.
+  Ziehen Sie nach unten, um einen von `All, Last 24 Hours, Last 7 Days, Last 30 Days` auszuwählen. Der Standardwert ist `All`.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
@@ -219,23 +219,23 @@ Nach der Anmeldung kann ein Mitglied eine Idee erstellen.
 
 Vor dem Senden der Idee kann das Mitglied einen Entwurf speichern.
 
-Durch Auswahl der `Save as Draft` -Schaltfläche verwenden, wird ein Entwurf gespeichert.
+Durch Auswahl der Schaltfläche `Save as Draft` wird ein Entwurf gespeichert.
 
 ![save-ideas](assets/save-idea.png)
 
-Beim Anzeigen gespeicherter Entwürfe im `My Drafts` Registerkarte auswählen `Read More` , um den Bearbeitungsmodus wieder aufzurufen:
+Wenn Sie gespeicherte Entwürfe auf der Registerkarte `My Drafts` anzeigen, wählen Sie `Read More` aus, um wieder in den Bearbeitungsmodus zu wechseln:
 
 ![edit-ideas](assets/edit-idea.png)
 
 #### Feedback geben {#providing-feedback}
 
-Sobald die Idee veröffentlicht wurde, können sich andere Mitglieder anmelden und die Idee öffnen ( `Read More`) und wie die Idee, so zur Stimmenanzahl, und Kommentare.
+Sobald die Idee veröffentlicht wurde, können sich andere Mitglieder anmelden, die Idee ( `Read More`) öffnen und die Idee mögen, so zur Stimmenanzahl hinzufügen und Kommentare machen.
 
-![Feedback](assets/feedback-idea.png)
+![feedback](assets/feedback-idea.png)
 
 ### Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie unter [Ideengrundlagen](/help/communities/ideation.md) -Seite für Entwickler.
+Weitere Informationen finden Sie auf der Entwickler-Seite [Ideen-Grundlagen](/help/communities/ideation.md) .
 
 Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 

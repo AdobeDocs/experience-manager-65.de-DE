@@ -26,10 +26,10 @@ ht-degree: 13%
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
    + [AEM Mobile - Einhaltung der DSGVO](aem-mobile-gdpr-compliance.md)
    + [Mobile Apps entwickeln](develop-mobile-apps.md)
-+ Authoring der On-Demand Services-App {#authoring}
++ Authoring der On-Demand Services App {#authoring}
    + [Mobile On-Demand](mobile-apps-ondemand.md)
    + [Verwalten von Inhalten](mobile-apps-ondemand-manage-content-ondemand.md)
-   + [Veröffentlichung von Inhalt rückgängig machen](mobile-on-demand-publishing-unpublishing.md)
+   + [Publish - Inhalte nicht veröffentlichen](mobile-on-demand-publishing-unpublishing.md)
    + [AEM Mobile Application Dashboard](mobile-apps-ondemand-application-dashboard.md)
    + [Erstellen und Konfigurieren von Anwendungen](mobile-apps-ondemand-application-create-configure-action.md)
    + [Verwalten von Artikeln](mobile-on-demand-managing-articles.md)
@@ -59,7 +59,7 @@ ht-degree: 13%
    + [Modellübersicht](model-management.md)
    + [Platzierungen und Entitäten](spaces-and-entities.md)
    + [Verwalten von Sammlungen](mobile-on-demand-managing-collections.md)
-+ Authoring in Adobe PhoneGap Enterprise {#author-phonegap}
++ Authoring Adobe PhoneGap Enterprise {#author-phonegap}
    + [PhoneGap](phonegap.md)
    + [Bearbeiten von App-Metadaten](phonegap-editmetadata.md)
    + [App-Definitionen](phonegap-app-definitions.md)

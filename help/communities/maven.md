@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Verwenden von Maven für Communities {#using-maven-for-communities}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Dieser Abschnitt der Dokumentation zu Adobe Experience Manager (AEM) Communities ergänzt Folgendes:
 
@@ -34,7 +34,7 @@ Es gibt nur ein &quot;uber&quot;-Artefakt, das einzelne Artefakte ersetzt:
 >
 >Behalten Sie die neueste Version der Communities bei.
 >
->Siehe [Neueste Versionen](deploy-communities.md#latest-releases) -Abschnitt, in dem Sie die neueste Version identifizieren können.
+>Siehe Abschnitt [Neueste Versionen](deploy-communities.md#latest-releases) , in dem Sie die neueste Version ermitteln können.
 
 ## Beispiel einer Maven-Abhängigkeit {#maven-dependency-example}
 
@@ -49,7 +49,7 @@ Es gibt nur ein &quot;uber&quot;-Artefakt, das einzelne Artefakte ersetzt:
 
 >[!NOTE]
 >
->Siehe [AEM Uber JAR-Repository](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) wo Sie das neueste UberJar-Artefakt identifizieren können.
+>Siehe [AEM Uber jar repository](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) , wo Sie das neueste Uber jar-Artefakt identifizieren können.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:

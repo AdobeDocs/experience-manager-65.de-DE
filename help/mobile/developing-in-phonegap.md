@@ -25,23 +25,23 @@ AEM kann in PhoneGap integriert werden, damit Sie mithilfe von AEM-Seiten proble
 
 >[!NOTE]
 >
->Bevor Sie mit AEM Mobile mit Adobe PhoneGap beginnen, müssen Sie sicherstellen, dass Sie Ihre Umgebung einrichten und mit der [AEM Mobile Application Dashboard](/help/mobile/phonegap-authoring-apps.md).
+>Bevor Sie mit AEM Mobile mit Adobe PhoneGap beginnen, stellen Sie sicher, dass Sie Ihre Umgebung eingerichtet haben und beginnen Sie mit dem [AEM Mobile Application Dashboard](/help/mobile/phonegap-authoring-apps.md) .
 
 Die folgenden Ressourcen helfen Ihnen bei den ersten Schritten mit AEM Mobile mit Adobe PhoneGap:
 
 * [Entwickeln von Mobilanwendungen in AEM](/help/mobile/developing-mobile-applications.md)
 * [Mobil mit Inhaltssynchronisierung](/help/mobile/phonegap-contentsync.md)
-* [Seitenvorlagen  ](/help/mobile/phonegap-apps-arch-page-templates.md)
+* [Seitenvorlagen](/help/mobile/phonegap-apps-arch-page-templates.md)
 
 * [AEM Mobile Content Services: Überblick](/help/mobile/develop-content-as-a-service.md)
 
    * Informationen zum Aktivieren von Content Services und Datenmodellen finden Sie unter [Verwalten von Content Services](/help/mobile/developing-content-services.md)
-   * Weitere Informationen zum Erstellen von Modellen finden Sie unter [Entwicklung von Modellen](/help/mobile/administer-mobile-apps.md)
-   * Informationen zu Rendering und Versand finden Sie unter [Wiedergabe und Bereitstellung von Content Services](/help/mobile/rendering-and-delivery.md)
+   * Weitere Informationen zum Erstellen von Modellen finden Sie unter [Entwickeln von Modellen](/help/mobile/administer-mobile-apps.md)
+   * Weitere Informationen zu Rendering und Bereitstellung finden Sie unter [Rendering und Bereitstellung von Content Services](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]
 >
->Informationen zum Ausführen Ihrer AEM Mobile Apps auf einem beliebigen iOS- oder Android-Mobilgerät finden Sie unter [Mobile Quickstart mit AEM Verify App](/help/mobile/phonegap-mobile-quickstart.md).
+>Informationen zum Ausführen Ihrer AEM Mobile Apps auf einem beliebigen iOS- oder Android-Mobilgerät finden Sie unter [Schnellstart für Mobilgeräte mit AEM Verify App](/help/mobile/phonegap-mobile-quickstart.md) .
 
 ## Erste Schritte {#getting-ahead}
 

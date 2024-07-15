@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '394'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Für Aufträge sind keine Payloads erforderlich. Eine Payload ist jedoch dann no
 
 ## Erstellen von Aufträgen für die Abladung {#creating-jobs-for-offloading}
 
-Erstellen Sie einen Client, der die Methode JobManager.addJob aufruft, um einen Auftrag zu erstellen, den ein automatisch ausgewählter JobConsumer-Dienst ausführt. Geben Sie die folgenden Informationen an, um den Auftrag zu erstellen:
+Erstellen Sie einen Client, der die Methode „JobManager.addJob“ aufruft, um einen Auftrag zu erstellen, der von einem automatisch ausgewählten JobConsumer-Dienst ausgeführt wird. Geben Sie die folgenden Informationen an, um den Auftrag zu erstellen:
 
 * Thema: Das Auftragsthema.
 * Name: (Optional)

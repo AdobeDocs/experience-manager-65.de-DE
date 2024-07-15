@@ -1,6 +1,6 @@
 ---
-title: Optional - Erstellen von Einzelseiten-Apps (SPA) mit Adobe Experience Manager
-description: In dieser optionalen Fortsetzung der Adobe Experience Manager (AEM) Headless-Entwickler-Journey erfahren Sie, wie AEM Headless-Bereitstellung mit herkömmlichen Full-Stack-CMS-Funktionen kombinieren und wie Sie bearbeitbare SPA mit AEM Editor-Framework erstellen können.
+title: Optional – Erstellen von Single Page Applications (SPAs) mit Adobe Experience Manager
+description: In dieser optionalen Fortsetzung der Entwickler-Tour zu Adobe Experience Manager (AEM) Headless erfahren Sie, wie AEM die Headless-Bereitstellung mit herkömmlichen Full-Stack-CMS-Funktionen kombinieren kann und wie Sie mit dem SPA-Editor-Framework von AEM bearbeitbare SPAs erstellen können.
 exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
@@ -8,13 +8,13 @@ role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1257'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 # Erstellen von Single Page Applications (SPAs) mit AEM {#create-spa}
 
-In dieser fakultativen Fortsetzung der [AEM Headless-Developer-Journey](overview.md) Hier erfahren Sie, wie Adobe Experience Manager (AEM) die Headless-Bereitstellung mit herkömmlichen Full-Stack-CMS-Funktionen kombinieren kann und wie Sie bearbeitbare SPA mit AEM Editor-Framework erstellen und externe SPA integrieren können, um Bearbeitungsfunktionen nach Bedarf zu ermöglichen.
+In dieser optionalen Fortsetzung der [Entwickler-Tour zu AEM Headless](overview.md) erfahren Sie, wie Adobe Experience Manager (AEM) Headless-Bereitstellungen mit herkömmlichen Full-Stack-CMS-Funktionen kombinieren kann und wie Sie mit dem SPA-Editor-Framework von AEM bearbeitbare SPAs erstellen sowie externe SPAs integrieren können, um nach Bedarf Bearbeitungen zu ermöglichen.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
@@ -27,11 +27,11 @@ An dieser Stelle sollten Sie die gesamte [AEM Headless-Entwickler-Tour](overview
 * Abrufen und Aktualisieren von Headless-Inhalten in AEM
 * Live-Schaltung mit einem AEM Headless-Projekt
 
-Also sind Sie jetzt entweder mit Ihrem ersten AEM Headless-Projekt live gegangen oder haben das Wissen, dies zu tun. Herzlichen Glückwunsch!
+Sie haben inzwischen Ihr erstes AEM Headless-Projekt live geschaltet bzw. verfügen über die entsprechenden Kenntnisse dafür. Herzlichen Glückwunsch!
 
-Warum lesen Sie also diese optionale Fortsetzung der Tour? Wahrscheinlich erinnern Sie sich daran in der [Erste Schritte](getting-started.md#integration-levels), gab es eine kurze Diskussion darüber, wie AEM nicht nur Headless-Versand und herkömmliche Full-Stack-Modelle unterstützt, sondern auch Hybridmodelle unterstützen kann, die die Vorteile beider Modelle kombinieren. Obwohl es sich hierbei nicht um das traditionelle Headless-Modell handelt, können derartige Hybridmodelle für bestimmten Projekte eine beispiellose Flexibilität bieten.
+Warum lesen Sie also diese optionale Fortsetzung der Tour? Im Abschnitt mit den [ersten Schritten](getting-started.md#integration-levels) haben wir kurz gestreift, wie AEM nicht nur Headless-Bereitstellungen und herkömmliche Full-Stack-Modelle unterstützt, sondern auch Hybridmodelle unterstützen kann, die die Vorteile beider Modelle kombinieren. Obwohl es sich hierbei nicht um das traditionelle Headless-Modell handelt, können derartige Hybridmodelle für bestimmten Projekte eine beispiellose Flexibilität bieten.
 
-Dieser Artikel baut auf Ihren Kenntnissen über AEM Headless auf und erläutert eingehend, wie Sie Ihre eigenen SPAs (Single Page Applications) erstellen können, die in AEM bearbeitbar sind. Auf diese Weise können Sie Inhalte erstellen und sie an einen SPA senden, dieser SPA bleibt jedoch in AEM bearbeitbar.
+Dieser Artikel baut auf Ihren Kenntnissen über AEM Headless auf und erläutert eingehend, wie Sie Ihre eigenen SPAs (Single Page Applications) erstellen können, die in AEM bearbeitbar sind. Auf diese Weise können Sie Inhalte erstellen und „headless“ für SPAs bereitstellen, wobei diese SPAs jedoch in AEM bearbeitbar bleiben.
 
 ## Ziel {#objective}
 
@@ -40,7 +40,7 @@ In diesem Dokument erfahren Sie, wie Single Page Applications mithilfe des AEM S
 * Verständnis der grundlegenden Funktion des SPA-Editors
 * Kenntnis der Anforderungen zum Erstellen vollständig bearbeitbarer SPAs für AEM
 * Kenntnis darüber, wie externe SPAs in AEM integriert werden können
-* Erfahren Sie, wie serverseitiges Rendering implementiert werden sollte oder nicht.
+* Verständnis, wie das Server-seitige Rendering implementiert werden sollte oder nicht.
 
 ## Anforderungen und Vorbedingungen {#requirements-prerequisites}
 
@@ -50,7 +50,7 @@ Bevor Sie in AEM mit SPAs arbeiten, müssen Sie einige Anforderungen erfüllen.
 
 * Entwicklungserlebnis beim Erstellen von SPA mit React- oder Angular-Frameworks
 * Grundlegende AEM-Kenntnisse zum Erstellen von Inhaltsfragmenten und Verwenden des Editors
-* Überprüfen Sie unbedingt das Dokument. [Headless und Headless in AEM](/help/sites-developing/headful-headless.md) um die verschiedenen Ebenen der möglichen SPA zu verstehen.
+* Lesen Sie das Dokument [Headful und Headless in AEM](/help/sites-developing/headful-headless.md), um die verschiedenen Ebenen der SPA-Integration zu verstehen.
 
 ### Tools {#tools}
 
@@ -69,13 +69,13 @@ Der AEM-SPA-Editor ermöglicht es Frontend-Entwicklungspersonen, SPAs zu erstell
 
 ## Warum eine SPA? {#why-spa}
 
-Da eine SPA schneller, nahtloser und eher wie eine native Anwendung ist, wird sie nicht nur für den Besucher der Webseite, sondern auch für Marketing-Experten und Entwickler attraktiv, da SPA funktioniert.
+Da SPAs schneller, nahtloser und eher wie eine native Anwendung sind, sind sie nicht nur für Besuchende einer Web-Seite, sondern auch für Marketing-Fachleute und Entwickelnde attraktiv. Das hängt mit der Art und Weise zusammen, wie SPAs funktionieren.
 
 Eine vollständige Beschreibung von SPAs sowie Gründe für ihre Verwendung finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) mit Links zu ausführlicheren Dokumentationen.
 
 ## Wie AEM SPAs verarbeitet
 
-Bei der Entwicklung von Single Page Applications in AEM wird davon ausgegangen, dass sich der Frontend-Entwickler beim Erstellen einer SPA an die üblichen Best Practices hält. Wenn Sie als Frontend-Entwickler diese allgemeinen Best Practices und einige AEM-spezifische Prinzipien befolgen, wird Ihre SPA mit AEM und den Inhaltsbearbeitungsfunktionen funktionieren.
+Bei der Entwicklung von Single Page Applications in AEM wird davon ausgegangen, dass sich der Frontend-Entwickler beim Erstellen einer SPA an die üblichen Best Practices hält. Wenn Sie als Front-End-Entwicklungsperson diese allgemeinen Best Practices und einige AEM-spezifische Prinzipien befolgen, wird Ihre SPA mit AEM und den zugehörigen Inhaltsbearbeitungsfunktionen funktionieren.
 
 * **Portabilität**: Wie alle anderen Komponenten auch sollten die SPA-Komponenten so portabel wie möglich gestaltet werden. Die SPA sollte aus portablen und wiederverwendbaren Komponenten bestehen.
 * **AEM verwaltet die Site-Struktur**: Die Frontend-Entwicklungsperson erstellt Komponenten und ist für deren interne Struktur verantwortlich, verlässt sich für die Definition der Inhaltsstruktur der Site jedoch auf AEM.

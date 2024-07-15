@@ -22,15 +22,15 @@ Tally ist eine abstrakte Klasse, die eine Standardmethode zur Erfassung von Feed
 
 Eine benutzerdefinierte Tally-Komponente kann durch Erweitern der abstrakten Tally-Klasse erstellt werden.
 
-[Gefällt mir](essentials-liking.md) ist eine Umsetzung von Tally, die eine einfache Form der positiven Meinung ist.
+[Gefällt mir](essentials-liking.md) ist eine Tallyimplementierung, die einfach eine positive Meinung ausdrückt.
 
-[Abstimmung](essentials-voting.md) ist eine Umsetzung einer Tabelle, die einfach eine positive oder negative Meinung ausdrücken kann.
+[Voting](essentials-voting.md) ist eine Tally-Implementierung, die einfach darin besteht, eine positive oder negative Meinung zu äußern.
 
-[Bewertung](rating-basics.md) ist eine Implementierung von Tally, die ein Sternsystem verwendet, um eine Reihe von Meinungen von positiv bis negativ auszudrücken.
+[Bewertung](rating-basics.md) ist eine Implementierung einer Tabelle, die ein Sternsystem verwendet, um eine Reihe von Meinungen von positiv bis negativ auszudrücken.
 
 Ab AEM 6.1 ist die Umfragekomponente nicht mehr verfügbar.
 
-[Überprüfungen](reviews-basics.md) ist eine SCF-Komponente, die ein Hybrid von [Kommentare](essentials-comments.md) und [Bewertung](rating-basics.md).
+[Bewertungen](reviews-basics.md) ist eine SCF-Komponente, die aus [Kommentaren](essentials-comments.md) und [Bewertung](rating-basics.md) besteht.
 
 ## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
@@ -49,13 +49,13 @@ Ab AEM 6.1 ist die Umfragekomponente nicht mehr verfügbar.
 UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für benutzergenerierte Inhalte den programmatischen Zugriff auf benutzergenerierte Inhalte, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
 
-**Speicherort und Format der UGC im Repository können ohne Warnung geändert werden**.
+**Speicherort und Format des UGC im Repository können sich ohne Warnung ändern**.
 
 Siehe:
 
-* [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
-* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Kodierungsrichtlinien.
+* [Übersicht über den Speicheranbieter](srp.md) - Übersicht über die Einführung und die Repository-Nutzung.
+* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
+* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
 * [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.

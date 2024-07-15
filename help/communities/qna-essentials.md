@@ -46,7 +46,7 @@ Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forum
   </tr>
   <tr>
    <td> properties</td>
-   <td>Siehe <a href="working-with-qna.md">Frage- und Forumsfunktion</a></td>
+   <td>Siehe <a href="working-with-qna.md">Fragen und Antworten zur Forumsfunktion</a></td>
   </tr>
  </tbody>
 </table>
@@ -63,20 +63,20 @@ Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forum
 
 ### Fragen/Antworten-Funktion {#qna-function}
 
-Eine Community-Site-Struktur mit [QnA-Funktion](functions.md#qna-function) verfügt über eine konfigurierte `QnA` -Komponente sowie Einstellungen, die sich auf die Moderation und das Tagging auswirken. Die Funktion &quot;Fragen und Antworten&quot;unterstützt die Identifizierung einer [Berechtigte Mitgliederbenutzergruppe](users.md#privileged-members-group).
+Eine Community-Site-Struktur mit der [QnA-Funktion](functions.md#qna-function) verfügt über eine konfigurierte `QnA` -Komponente und Einstellungen, die sich auf die Moderation und das Tagging auswirken. Die Funktion &quot;Fragen und Antworten&quot;unterstützt die Identifizierung einer [berechtigten Mitgliederbenutzergruppe](users.md#privileged-members-group).
 
 ### Zugreifen auf QnA-Forumbeiträge (UGC) {#accessing-qna-forum-posts-ugc}
 
 UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für benutzergenerierte Inhalte den programmatischen Zugriff auf benutzergenerierte Inhalte, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
 
-**Speicherort und Format der UGC im Repository können ohne Warnung geändert werden**.
+**Speicherort und Format des UGC im Repository können sich ohne Warnung ändern**.
 
 Siehe:
 
 * [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
+* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
 * [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
-* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnung veralteter Methoden für Dienstprogramme zu aktuellen SRP-Dienstprogrammmethoden.
+* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.

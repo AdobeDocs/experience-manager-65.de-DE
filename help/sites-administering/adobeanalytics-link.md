@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -282,7 +282,7 @@ Konfigurieren Sie das Adobe Analytics-Framework, um die Ad-hoc-Hyperlink-Überwa
 
 >[!NOTE]
 >
->Die XSS Antisamy-Konfiguration befindet sich jetzt in SLING unter dem Pfad **/libs/sling/xss.config.xml** und die folgenden Regeln müssen zu Ad-hoc hinzugefügt werden, damit die Verknüpfung funktioniert:
+>Die XSS-Antisamy-Konfiguration befindet sich jetzt in SLING unter dem Pfad **/libs/sling/xss.config.xml** und die folgenden Regeln müssen zu Ad-hoc hinzugefügt werden, damit die Verknüpfung funktioniert:
 
 #### Anker-Tag-Regelerweiterung {#anchor-tag-rule-extension}
 

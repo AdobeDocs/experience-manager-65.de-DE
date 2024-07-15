@@ -6,7 +6,7 @@ role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 100%
 
@@ -71,7 +71,7 @@ MSM-Synchronisierungsaktionen sind detailliert konfigurierbar. Welche Eigenschaf
 
 Weitere Informationen zu diesem Thema finden Sie in [diesem Artikel](msm-best-practices.md).
 
-### Wie kann ich Rollout-Berechtigungen für eine Gruppe von Autoren entfernen? {#remove-rollout-permissions}
+### Wie kann ich Rollout-Berechtigungen für eine Gruppe von Autorinnen und Autoren entfernen? {#remove-rollout-permissions}
 
 Es gibt keine **Rollout**-Berechtigung, die für AEM-Prinzipale (Benutzer oder Gruppen) festgelegt oder entfernt werden kann.
 

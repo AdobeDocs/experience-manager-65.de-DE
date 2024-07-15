@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -236,16 +236,16 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
 
 * **Bereitstellung der AEM-Web-Anwendung**
 
-   * Laden Sie AEM WAR-Datei herunter.
-   * Nehmen Sie bei Bedarf Konfigurationen in web.xml vor (siehe oben in der allgemeinen Beschreibung).
+   * Laden Sie die AEM-WAR-Datei herunter.
+   * Nehmen Sie bei Bedarf Ihre Konfigurationen in der Datei „web.xml“ vor (siehe oben unter „Allgemeine Beschreibung“).
 
-      * Entpacken Sie die Datei WEB-INF/web.xml .
-      * Ändern Sie den Parameter sling.run.modes in publish.
-      * Entfernen Sie die Auskommentierung des anfänglichen Parameters sling.home und legen Sie diesen Pfad nach Bedarf fest.
-      * Replizieren Sie die Datei web.xml .
+      * Entpacken Sie die Datei „WEB-INF/web.xml“.
+      * Ändern Sie den Parameter „sling.run.modes“ in „publish“ (veröffentlichen).
+      * Kommentieren Sie den anfänglichen Parameter „sling.home“ aus und legen Sie diesen Pfad nach Bedarf fest.
+      * Packen Sie die Datei „web.xml“ erneut.
 
-   * Benennen Sie AEM WAR-Datei in ROOT.war um, wenn Sie sie als Root-Webapp bereitstellen möchten. Benennen Sie sie in aemauthor.war um, wenn Sie aemauthor als Kontextstamm verwenden möchten.
-   * Kopieren Sie es in den Ordner webapps von Tomcat.
+   * Benennen Sie AEM.war-Datei in „ROOT.war“ um, wenn Sie sie als Stamm-Web-Anwendung bereitstellen möchten. Benennen Sie sie in „aemauthor.war“ um, wenn Sie „aemauthor“ als Kontextstamm verwenden möchten.
+   * Kopieren Sie sie in den Tomcat-Ordner „webapps“.
    * Warten Sie, bis AEM installiert ist.
 
 ## Fehlerbehebung {#troubleshooting}

@@ -19,12 +19,12 @@ ht-degree: 1%
 
 # Erlebnis der veröffentlichten Site {#experience-the-published-site}
 
-## Navigieren zur neuen Site bei der Veröffentlichung {#browse-to-new-site-on-publish}
+## Navigieren zu neuer Site in Publish {#browse-to-new-site-on-publish}
 
 Nachdem die neu erstellte Communities-Site veröffentlicht wurde, navigieren Sie zur URL, die beim Erstellen der Site angezeigt wird, aber auf dem Veröffentlichungsserver, z. B.:
 
 * Autoren-URL = https://localhost:4502/content/sites/engage/en.html
-* Veröffentlichungs-URL = https://localhost:4503/content/sites/engage/en.html
+* PUBLISH URL = https://localhost:4503/content/sites/engage/en.html
 
 Um Verwirrungen zu vermeiden, welches Mitglied bei der Autoren- und Veröffentlichungsinstanz angemeldet ist, wird empfohlen, für jede Instanz unterschiedliche Browser zu verwenden.
 
@@ -32,7 +32,7 @@ Wenn der Besucher zum ersten Mal auf die veröffentlichte Site gelangt, wird er 
 
 `https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}`
 
-![author veröffentlicht](assets/authorpublished.png)
+![authorPublish](assets/authorpublished.png)
 
 ## Anonymer Site-Besucher {#anonymous-site-visitor}
 
@@ -51,7 +51,7 @@ Wenn Sie verschiedene Links auswählen, befinden sie sich im schreibgeschützten
 
 ### Verhindern des anonymen Zugriffs auf JCR {#prevent-anonymous-access-on-jcr}
 
-Bei einer bekannten Einschränkung wird der Community-Site-Inhalt anonymen Besuchern über jcr-Inhalte und json bereitgestellt, obwohl **Anonymen Zugriff zulassen** für den Inhalt der Site deaktiviert ist. Dieses Verhalten kann jedoch mithilfe von Sling-Einschränkungen als Problemumgehung gesteuert werden.
+Durch eine bekannte Einschränkung wird der Community-Site-Inhalt anonymen Besuchern über JCR-Inhalt und JSON bereitgestellt, obwohl **anonymen Zugriff zulassen** für den Site-Inhalt deaktiviert ist. Dieses Verhalten kann jedoch mithilfe von Sling-Einschränkungen als Problemumgehung gesteuert werden.
 
 Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff anonymer Benutzer durch jcr-Inhalte und JSON zu schützen:
 
@@ -61,41 +61,41 @@ Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff anon
    >
    >Besuchen Sie nicht die lokalisierte Site.
 
-1. Navigieren Sie zu **Seiteneigenschaften**.
+1. Wechseln Sie zu **Seiteneigenschaften**.
 
    ![page-properties](assets/page-properties.png)
 
 1. Navigieren Sie zur Registerkarte **Erweitert**.
 
-1. Aktivieren **Authentifizierungspflicht**.
+1. Aktivieren Sie **Authentifizierungspflicht**.
 
-   ![site-authentication](assets/site-authentication.png)
+   ![Site-Authentifizierung](assets/site-authentication.png)
 
-1. Fügen Sie den Pfad der Anmeldeseite hinzu. Beispiel: **/content/........../GetStarted**.
+1. Fügen Sie den Pfad der Anmeldeseite hinzu. Beispiel: **/content/......../GetStarted**.
 1. Veröffentlichen Sie die Seite.
 
 ## Vertrauenswürdiger Community-Mitglied {#trusted-community-member}
 
-Dieses Erlebnis setzt voraus [Aaron McDonald](/help/communities/tutorials.md#demo-users) den Rollen von [Community-Manager und -Moderator](/help/communities/create-site.md#roles). Wenn nicht, kehren Sie zur Autorenumgebung zurück zu [Ändern der Site-Einstellungen](/help/communities/sites-console.md#modifying-site-properties) und wählen Sie Aaron McDonald als Community Manager und Moderator aus.
+Dieses Erlebnis setzt voraus, dass [Aaron McDonald](/help/communities/tutorials.md#demo-users) die Rollen von [Community-Manager und -Moderator](/help/communities/create-site.md#roles) zugewiesen wurde. Wenn nicht, kehren Sie zur Autorenumgebung zurück, um die Site-Einstellungen zu ändern](/help/communities/sites-console.md#modifying-site-properties) und wählen Sie Aaron McDonald als Community-Manager und Moderator aus.[
 
-Wählen Sie oben rechts `Log in`und melden Sie sich mit dem Benutzernamen (aaron.mcdonald@mailinator.com) und dem Kennwort (Kennwort) an. Beachten Sie die Möglichkeit, sich mit Twitter- oder Facebook-Anmeldeinformationen anzumelden.
+Wählen Sie oben rechts `Log in` aus und signieren Sie mit dem Benutzernamen (aaron.mcdonald@mailinator.com) und dem Kennwort (Kennwort). Beachten Sie die Möglichkeit, sich mit Twitter- oder Facebook-Anmeldeinformationen anzumelden.
 
 ![anmelden](assets/login.png)
 
 Nachdem Sie sich als registriertes Community-Mitglied angemeldet haben, beachten Sie die folgenden Menüpunkte, um auf Ihre Community-Site zu klicken und sie zu erkunden:
 
-* **Profil** können Sie Ihr Profil anzeigen und bearbeiten.
-* [Nachrichten](/help/communities/configure-messaging.md) -Option führt Sie zum Abschnitt für Direktnachrichten, in dem Sie Folgendes tun können:
+* Mit der Option **Profil** können Sie Ihr Profil anzeigen und bearbeiten.
+* Die Option [Nachrichten](/help/communities/configure-messaging.md) leitet Sie zum Abschnitt für Direktnachrichten weiter, in dem Sie Folgendes tun können:
 
    1. Zeigen Sie die Direktnachrichten an, die Sie empfangen haben (Posteingang), gesendet (Gesendete Elemente) und gelöscht (Papierkorb).
    1. Erstellen Sie neue Direktnachrichten, damit Sie sie an Einzelpersonen und Gruppen senden können.
 
-* [Benachrichtigungen](/help/communities/notifications.md) Diese Option leitet Sie zum Benachrichtigungsabschnitt weiter, in dem Sie Ihre interessanten Ereignisse anzeigen und die Benachrichtigungseinstellungen bearbeiten können.
-* [Administration](/help/communities/published-site.md#moderationlink) leitet Sie zur AEM Communities-Moderationsseite weiter, wenn Sie über Moderationsberechtigungen verfügen.
+* Die Option [Benachrichtigungen](/help/communities/notifications.md) leitet Sie zum Benachrichtigungsabschnitt weiter, in dem Sie Ihre interessanten Ereignisse anzeigen und Benachrichtigungseinstellungen bearbeiten können.
+* [Administration](/help/communities/published-site.md#moderationlink) leitet Sie zur Seite &quot;AEM Communities-Moderation&quot;, wenn Sie über Moderationsberechtigungen verfügen.
 
 ![adminscreen](assets/adminscreen.png)
 
-Beachten Sie, dass die Kalenderseite die Startseite ist, da die ausgewählte Referenz-Site-Vorlage zuerst die Kalenderfunktion, gefolgt von der Aktivitäts-Stream-Funktion, der Forumsfunktion usw. enthält. Diese Struktur ist in der [Site-Vorlage](/help/communities/sites.md#edit-site-template) -Konsole oder beim Ändern der Site-Eigenschaften in der Autorenumgebung:
+Beachten Sie, dass die Kalenderseite die Startseite ist, da die ausgewählte Referenz-Site-Vorlage zuerst die Kalenderfunktion, gefolgt von der Aktivitäts-Stream-Funktion, der Forumsfunktion usw. enthält. Diese Struktur ist in der Konsole [Site-Vorlage](/help/communities/sites.md#edit-site-template) oder beim Ändern der Site-Eigenschaften in der Autorenumgebung sichtbar:
 
 ![sitetemplate](assets/sitetemplate.png)
 
@@ -122,51 +122,51 @@ Da Aaron ein Gruppenadministrator ist, kann Aaron durch Auswahl des Gruppenlinks
 
 Dies ist ein Beispiel, bei dem eine Gruppe in der Veröffentlichungsumgebung erstellt wird.
 
-Gruppen können auch in der Autorenumgebung erstellt und innerhalb der Community-Site in der Autorenumgebung verwaltet werden ([Community-Gruppen-Konsole](/help/communities/groups.md)). Die Erfahrung von [Erstellen von Gruppen in der Autoreninstanz](/help/communities/nested-groups.md) ist als Nächstes in diesem Tutorial verfügbar.
+Gruppen können auch in der Autorenumgebung erstellt und innerhalb der Community-Site in der Autorenumgebung verwaltet werden ([Community-Gruppenkonsole](/help/communities/groups.md)). Das Erlebnis von [Erstellen von Gruppen auf der Autoreninstanz](/help/communities/nested-groups.md) ist als Nächstes in diesem Tutorial beschrieben.
 
 ![grouplink](assets/grouplink.png)
 
 Erstellen einer Referenzgruppe:
 
-1. Auswählen **Neue Gruppe**
+1. Wählen Sie **Neue Gruppe** aus
 1. **Registerkarte &quot;Einstellungen&quot;**
 
    * Gruppenname : `Sports`
    * Beschreibung : `A parent group for various sporting groups`.
    * Gruppen-URL-Name : `sports`
-   * Auswählen `Open Group` (ermöglicht jedem Community-Mitglied die Teilnahme durch Teilnahme)
+   * Wählen Sie `Open Group` aus (erlauben Sie jedem Community-Mitglied die Teilnahme, indem es Mitglied wird)
 
 1. **Registerkarte &quot;Vorlage&quot;**
 
-   * Auswählen `Reference Group` (enthält eine Gruppenfunktion in ihrer Struktur, um verschachtelte Gruppen zuzulassen)
+   * Wählen Sie `Reference Group` aus (enthält eine Gruppenfunktion in ihrer Struktur, um verschachtelte Gruppen zuzulassen)
 
-1. Auswählen **Gruppe erstellen**
+1. Wählen Sie **Gruppe erstellen**
 
    ![creategroup](assets/creategroup.png)
 
-Nach Erstellung der neuen Gruppe **die neue Gruppe &quot;Sport&quot;auswählen** , um zwei (verschachtelte) Gruppen darin zu erstellen. Da eine Site-Struktur nicht mit der Funktion &quot;Gruppen&quot;beginnen kann, müssen Sie nach dem Öffnen der Gruppe &quot;Sport&quot;den Link Gruppen auswählen:
+Nachdem die neue Gruppe erstellt wurde, wählen Sie **die neue Gruppe &quot;Sport&quot;** aus, um zwei Gruppen (verschachtelt) darin zu erstellen. Da eine Site-Struktur nicht mit der Funktion &quot;Gruppen&quot;beginnen kann, müssen Sie nach dem Öffnen der Gruppe &quot;Sport&quot;den Link Gruppen auswählen:
 
 ![grouplink1](assets/grouplink1.png)
 
-Der zweite Satz von Links, beginnend mit `Blog`, gehören zur aktuell ausgewählten Gruppe, die `Sports` hinzugefügt. Durch Auswahl von &quot;Sport&quot; `Groups` -Link, ist es möglich, zwei Gruppen innerhalb der Gruppe Sport zu verschachteln.
+Der zweite Satz von Links, beginnend mit `Blog`, gehört zur aktuell ausgewählten Gruppe, der Gruppe `Sports`. Durch Auswahl des Links &quot;Sport&#39; `Groups`&quot;können zwei Gruppen innerhalb der Gruppe &quot;Sport&quot;verschachtelt werden.
 
-Fügen Sie als Beispiel zwei hinzu `new groups`.
+Fügen Sie als Beispiel zwei `new groups` hinzu.
 
 * Eins namens `Baseball`
 
-   * Lassen Sie es als `Open Group` (erforderliche Mitgliedschaft).
-   * Wählen Sie auf der Registerkarte Vorlagen die Option `Conversational Group`.
+   * Behalten Sie den Wert als `Open Group` (erforderliche Mitgliedschaft) bei.
+   * Wählen Sie auf der Registerkarte &quot;Vorlagen&quot;die Option `Conversational Group` aus.
 
 * Eins namens `Gymnastics`
 
-   * Ändern Sie die Einstellung in `Member Only Group` (eingeschränkte Mitgliedschaft).
-   * Wählen Sie auf der Registerkarte Vorlagen die Option `Conversational Group`.
+   * Ändern Sie die Einstellung in &quot;`Member Only Group`&quot;(eingeschränkte Mitgliedschaft).
+   * Wählen Sie auf der Registerkarte &quot;Vorlagen&quot;die Option `Conversational Group` aus.
 
 **Hinweis**:
 
 * Eine Aktualisierung der Seite kann erforderlich sein, bevor beide Gruppen angezeigt werden.
-* Diese Vorlage *not* die Funktion &quot;Gruppen&quot;einschließen, sodass keine weitere Verschachtelung von Gruppen möglich ist.
-* Wenn der Autor [Gruppenkonsole](/help/communities/groups.md) bietet eine dritte Wahl - eine `Public Group` (optionale Mitgliedschaft).
+* Diese Vorlage enthält die Gruppenfunktion *nicht*, sodass keine weitere Verschachtelung von Gruppen möglich ist.
+* Beim Autor bietet die [Gruppenkonsole](/help/communities/groups.md) eine dritte Auswahl - eine `Public Group` (optionale Mitgliedschaft).
 
 Nachdem beide Gruppen erstellt wurden, wählen Sie die Baseball-Gruppe, eine offene Gruppe, und beachten Sie die Links:
 
@@ -176,18 +176,18 @@ Die Links der Gruppe werden unter den Links der Hauptseite angezeigt und zeigen 
 
 ![grouplink2](assets/grouplink2.png)
 
-Navigieren Sie unter Autor mit Administratorrechten zum [Communities-Gruppenkonsole](/help/communities/members.md) und Weston McCall zum `Community Engage Gymnastics <uid> Members` hinzugefügt.
+Navigieren Sie bei Autor mit Administratorrechten zur Konsole [Communities-Gruppen](/help/communities/members.md) und fügen Sie Weston McCall zur Gruppe `Community Engage Gymnastics <uid> Members` hinzu.
 
 Melden Sie sich weiterhin als Aaron McDonald an und sehen Sie sich die Gruppen in der Sportgruppe als anonymen Site-Besucher an:
 
 * Von der Startseite
-* Auswählen `Groups` link
-* Auswählen `Sports` link
-* Wählen Sie den Sport aus. `Groups` link
+* Link `Groups` auswählen
+* Link `Sports` auswählen
+* Link &quot;Sport&#39; `Groups`&quot;auswählen
 
 Nur die Baseballgruppe ist sichtbar.
 
-Melden Sie sich als Weston McCall (weston.mccall@dodgit.com / Kennwort) an und navigieren Sie zum selben Speicherort. Beachten Sie, dass Weston `Join` die Öffnung `Baseball` -Gruppe und entweder `enter or Leave` private `Gymnastics` hinzugefügt.
+Melden Sie sich als Weston McCall (weston.mccall@dodgit.com / Kennwort) an und navigieren Sie zum selben Speicherort. Beachten Sie, dass Weston in der Lage ist, die geöffnete Gruppe `Baseball` und entweder `enter or Leave` die private Gruppe `Gymnastics` mit `Join` zu versehen.
 
 ![grouplink3](assets/grouplink3.png)
 
@@ -195,13 +195,13 @@ Melden Sie sich als Weston McCall (weston.mccall@dodgit.com / Kennwort) an und n
 
 Zeigen Sie die grundlegende Webseite der Site an, indem Sie den Link Webseite auswählen. Die standardmäßigen AEM-Authoring-Tools können verwendet werden, um Inhalte zu dieser Seite in der Autorenumgebung hinzuzufügen.
 
-Gehen Sie beispielsweise zu **author** -Instanz, öffnen Sie die `engage` im Ordner [Communities Sites-Konsole](/help/communities/sites-console.md), wählen Sie die **Seite öffnen** -Symbol, um in den Bearbeitungsmodus für Autoren zu wechseln. Wählen Sie dann den Vorschaumodus aus, damit Sie die `Web Page` und wählen Sie dann den Bearbeitungsmodus aus, um die Komponenten Titel und Text hinzuzufügen. Veröffentlichen Sie zuletzt entweder nur die Seite oder die gesamte Site neu.
+Rufen Sie beispielsweise die Instanz **author** auf, öffnen Sie den Ordner `engage` in der Konsole [Communities-Sites-Konsole](/help/communities/sites-console.md) und wählen Sie das Symbol **Site öffnen** aus, um in den Bearbeitungsmodus für Autoren zu wechseln. Wählen Sie dann den Vorschaumodus aus, damit Sie den Link `Web Page` auswählen und dann den Bearbeitungsmodus auswählen können, um die Komponenten Titel und Text hinzuzufügen. Veröffentlichen Sie zuletzt entweder nur die Seite oder die gesamte Site neu.
 
 ![webpagelink](assets/webpagelink.png)
 
 ### Moderationslink {#moderationlink}
 
-Wenn das Community-Mitglied über Moderationsberechtigungen verfügt, ist der Moderations-Link sichtbar. Wenn Sie den Link auswählen, wird der gepostete Community-Inhalt angezeigt und lässt ihn [moderiert](/help/communities/moderate-ugc.md) in ähnlicher Weise wie die [Moderationskonsole](/help/communities/moderation.md) in der Autorenumgebung.
+Wenn das Community-Mitglied über Moderationsberechtigungen verfügt, ist der Moderations-Link sichtbar. Wenn Sie den Link auswählen, wird der gepostete Community-Inhalt angezeigt. Er kann [moderiert](/help/communities/moderate-ugc.md) werden, ähnlich wie in der [Moderationskonsole](/help/communities/moderation.md) in der Autorenumgebung.
 
 Verwenden Sie die Zurück-Schaltfläche des Browsers, um zur veröffentlichten Site zurückzukehren. Die meisten Konsolen können nicht über die globale Navigation in der Veröffentlichungsumgebung aufgerufen werden.
 
@@ -214,18 +214,18 @@ Nach dem Abmelden kann eine Benutzerregistrierung erstellt werden.
 * Klicken Sie auf `Log In`
 * Klicken Sie auf `Sign up for a new account`
 
-![registrierung](assets/registration.png)
+![Registrierung](assets/registration.png)
 
-![anmelden](assets/signup.png)
+![signup](assets/signup.png)
 
 Standardmäßig ist die E-Mail-Adresse die Anmelde-ID. Wenn diese Option deaktiviert ist, kann der Besucher seine eigene Anmelde-ID (Benutzername) eingeben. Der Benutzername muss in der Veröffentlichungsumgebung eindeutig sein.
 
-Nachdem Sie den Namen, die E-Mail-Adresse und das Kennwort des Benutzers angegeben haben, wählen Sie `Sign Up` erstellt den Benutzer und aktiviert ihn zum Signieren.
+Nachdem Sie den Namen, die E-Mail-Adresse und das Kennwort des Benutzers angegeben haben, wird durch die Auswahl von `Sign Up` der Benutzer erstellt und zum Signieren aktiviert.
 
-Nach der Anmeldung wird als erste Seite ihre `Profile` -Seite, die sie personalisieren können.
+Nach dem Anmelden ist die erste angezeigte Seite ihre `Profile`-Seite, die sie personalisieren können.
 
 ![profile](assets/profile.png)
 
 Wenn das Mitglied seine Anmelde-ID vergisst, kann es mithilfe seiner E-Mail-Adresse abgerufen werden.
 
-![forgotusername](assets/forgotusername.png)
+![vergessusername](assets/forgotusername.png)

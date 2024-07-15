@@ -25,7 +25,7 @@ ht-degree: 4%
 
 Sie haben Ihre Hybrid PhoneGap- oder Cordova-App in AEM importiert, was? Wahrscheinlich möchten Sie Ihrer App bearbeitbare Inhalte hinzufügen. Um diese Aufgabe zu erfüllen, benötigen Sie ein allgemeines Verständnis der Struktur einer AEM App. Eine App in AEM ist in der Regel in zwei Teile unterteilt. &quot;Shell&quot;und &quot;Inhalt&quot;. Die &quot;Shell&quot;umfasst die statischen Teile Ihrer App, z. B. die PhoneGap-Konfigurationsdateien, das App-Framework und die Navigationssteuerelemente. Der Inhalt des von Ihnen importierten Archivs wird als Teil der Shell gespeichert. Im Kontext dieses Dokuments ist die Shell der gesamte nicht AEM erstellte Inhalt Ihrer Hybrid PhoneGap-App, der vom App-Entwickler erstellt wurde.
 
-Inhalt bezieht sich auf die Komponenten, Vorlagen und erstellten Seiten, die in AEM erstellt wurden, die vom AEM-Entwickler erstellt wurden. Inhalte werden entweder als Entwicklerinhalt oder als erstellten Inhalt kategorisiert. Komponenten, Designs und Seitenvorlagen gelten als Dev-Content, da sie von einem Entwickler erstellt wurden. Autoreninhalte sind Seiten, die mit den Komponenten und Vorlagen erstellt wurden. Diese Seiten werden normalerweise von einem Designer oder Marketingexperten erstellt.
+Inhalt bezieht sich auf die Komponenten, Vorlagen und erstellten Seiten, die in AEM erstellt wurden, die vom AEM-Entwickler erstellt wurden. Inhalte werden entweder als Entwicklerinhalt oder als erstellten Inhalt kategorisiert. Komponenten, Designs und Seitenvorlagen gelten als Dev-Content, da sie von einem Entwickler erstellt wurden. Autoreninhalte sind Seiten, die mit den Komponenten und Vorlagen erstellt wurden. Diese Seiten werden normalerweise von einem Designer- oder Marketingexperten durchgeführt.
 
 Das Hinzufügen von erstellten AEM zu Ihrer Hybrid-App erfordert eine Koordinierung zwischen dem App-Entwickler und dem AEM. überall in der App, wo Sie erstellten Inhalt hinzufügen möchten, muss der App-Entwickler diese Seiten in einer Struktur organisieren, die in Experience Manager überlagert werden kann. Der App-Entwickler muss in der Lage sein, dem Experience Manager-Entwickler die Pfade zur Verfügung zu stellen, zu denen der Experience Manager-Autoreninhalt hinzugefügt wird. Geben Sie dann eine Platzhalterseite in der Hybrid-App an, die ersetzt wird, nachdem der Experience Manager-Entwickler den Seiteninhalt erstellt hat.
 
@@ -33,7 +33,7 @@ Um die Erläuterung leichter zu befolgen, wird die AEM Experience Cloud verwende
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
-In diesem Beispiel wird die Begrüßungsseite der Anwendung erstellt. Betrachten der Quelle [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). Beachten Sie, dass der App-Entwickler eine Begrüßungsseite definiert und eine Vorlage für die Seite bereitgestellt hat, die von der App gerendert wird. Auf dieser Seite müssen sich der App-Entwickler und AEM Entwickler koordinieren. Der Pfad zur Vorlage für die Begrüßungsseite in der Hybrid-Referenz-App ist als &quot;&#39;content/mobileapps/hybrid-reference-app/en/welcome.template.html&#39;&#39; definiert. Dieser Pfad ist wichtig, da der AEM-Entwickler seine Begrüßungsseite im AEM-Repository mit demselben Pfad erstellt.
+In diesem Beispiel wird die Begrüßungsseite der Anwendung erstellt. Betrachten Sie die Quelle [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). Beachten Sie, dass der App-Entwickler eine Begrüßungsseite definiert und eine Vorlage für die Seite bereitgestellt hat, die von der App gerendert wird. Auf dieser Seite müssen sich der App-Entwickler und AEM Entwickler koordinieren. Der Pfad zur Vorlage für die Begrüßungsseite in der Hybrid-Referenz-App ist als &quot;&#39;content/mobileapps/hybrid-reference-app/en/welcome.template.html&#39;&#39; definiert. Dieser Pfad ist wichtig, da der AEM-Entwickler seine Begrüßungsseite im AEM-Repository mit demselben Pfad erstellt.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -41,7 +41,7 @@ Es ist wichtig, dass die Hybrid-App und die AEM erstellten Inhalte denselben Pfa
 
 ![chlimage_1-78](assets/chlimage_1-78.png)
 
-Wenn Sie &quot;Quelle herunterladen&quot;aus dem App-Dashboard auswählen, werden diese ContentSync-Skripte ausgeführt, um ein Archiv Ihrer Hybrid-App zu assemblieren.
+Wenn Sie &quot;Source herunterladen&quot;aus dem App-Dashboard ausführen, werden diese ContentSync-Skripte ausgeführt, um ein Archiv Ihrer Hybrid-App zusammenzustellen.
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 

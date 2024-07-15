@@ -20,7 +20,7 @@ ht-degree: 5%
 
 Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Leaderboard-Funktion.
 
-Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie [Communities-Scoring und -Abzeichen](implementing-scoring.md).
+Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie die [Bewertungen und Abzeichen der Gemeinschaften](implementing-scoring.md) konfigurieren.
 
 Siehe [Grundlagen zu Scoring und Abzeichen](configure-scoring.md).
 
@@ -33,7 +33,7 @@ Siehe [Grundlagen zu Scoring und Abzeichen](configure-scoring.md).
    <td>social/gamification/components/hbs/leaderboard</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
@@ -59,4 +59,4 @@ Siehe [Grundlagen zu Scoring und Abzeichen](configure-scoring.md).
 
 ### Dateibibliotheksfunktion {#file-library-function}
 
-Eine Community-Site-Struktur mit [Leaderboard-Funktion](functions.md#leaderboard-function)enthält eine konfigurierte `leaderboard` -Komponente.
+Eine Community-Site-Struktur, die die [Leaderboard-Funktion](functions.md#leaderboard-function) enthält, enthält eine konfigurierte `leaderboard` -Komponente.

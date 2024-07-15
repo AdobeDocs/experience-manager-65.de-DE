@@ -19,33 +19,33 @@ ht-degree: 2%
 
 # Community-Funktionen{#community-functions}
 
-Die Art der Funktionen, die von einem Community-Erlebnis erwartet werden, ist bekannt. Community-Funktionen sind als Community-Funktionen verfügbar. Im Grunde sind es eine oder mehrere Seiten, die vorab mit dem Netzwerk verbunden sind, um eine Community-Funktion zu implementieren, die mehr erfordert, als einfach eine Komponente zu einer Seite im Autorenmodus hinzuzufügen. Sie sind die Bausteine, mit denen die Struktur eines [Community-Site-Vorlage](/help/communities/sites.md) von welchen Community-Sites [created](/help/communities/sites-console.md).
+Die Art der Funktionen, die von einem Community-Erlebnis erwartet werden, ist bekannt. Community-Funktionen sind als Community-Funktionen verfügbar. Im Grunde sind es eine oder mehrere Seiten, die vorab mit dem Netzwerk verbunden sind, um eine Community-Funktion zu implementieren, die mehr erfordert, als einfach eine Komponente zu einer Seite im Autorenmodus hinzuzufügen. Sie sind die Bausteine, mit denen die Struktur einer [Community-Site-Vorlage](/help/communities/sites.md) definiert wird, aus der Community-Sites [erstellt wurden](/help/communities/sites-console.md).
 
-Nachdem eine Community-Site erstellt wurde, kann den resultierenden Seiten mithilfe der standardmäßigen [AEM Authoring-Modus](/help/sites-authoring/editing-content.md). In der Konsole Community-Funktionen sind verschiedene Community-Funktionen verfügbar.
+Nachdem eine Community-Site erstellt wurde, kann den resultierenden Seiten mithilfe des standardmäßigen [AEM Authoring-Modus](/help/sites-authoring/editing-content.md) Inhalt hinzugefügt werden. In der Konsole Community-Funktionen sind verschiedene Community-Funktionen verfügbar.
 
 >[!NOTE]
 >
->Die Konsolen für die Erstellung von [Community-Sites](/help/communities/sites-console.md), [Community-Site-Vorlagen](/help/communities/sites.md), [Community-Gruppenvorlagen](/help/communities/tools-groups.md), und [Community-Funktionen](/help/communities/functions.md) sind nur zur Verwendung in der Autorenumgebung vorgesehen.
+>Die Konsolen zum Erstellen von [Community-Sites](/help/communities/sites-console.md), [Community-Site-Vorlagen](/help/communities/sites.md), [Community-Gruppenvorlagen](/help/communities/tools-groups.md) und [Community-Funktionen](/help/communities/functions.md) sind nur zur Verwendung in der Autorenumgebung vorgesehen.
 
 ## Community-Funktionskonsole {#community-functions-console}
 
 So rufen Sie die Konsole für Community-Funktionen in der Autorenumgebung auf:
 
-* Navigieren Sie zu **[!UICONTROL Instrumente]** > **[!UICONTROL Communities]** > **[!UICONTROL Community-Funktionen]**.
+* Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Community-Funktionen]**.
 
-![Community-Funktionen](assets/community-functions.png)
+![community-function](assets/community-functions.png)
 
 ## Vordefinierte Funktionen {#pre-built-functions}
 
-Im Folgenden finden Sie eine kurze Beschreibung der Funktionen, die mit AEM Communities bereitgestellt werden. Jede Funktion umfasst eine oder mehrere AEM Seiten, die Communities-Komponenten enthalten, die mit einer Funktion verbunden sind, die einfach in eine Funktion integriert werden kann. [Community-Site-Vorlage](/help/communities/sites.md).
+Im Folgenden finden Sie eine kurze Beschreibung der Funktionen, die mit AEM Communities bereitgestellt werden. Jede Funktion enthält eine oder mehrere AEM Seiten, die Communities-Komponenten enthalten, die mit einer Funktion verbunden sind, die einfach in eine [Community-Site-Vorlage](/help/communities/sites.md) integriert werden kann.
 
 Eine Community-Site-Vorlage bietet die Struktur für eine Community-Site, einschließlich Anmeldung, Benutzerprofile, Benachrichtigungen, Messaging, Site-Menü, Suche, Themen und Branding-Funktionen.
 
 ### Titel und URL-Einstellungen {#title-and-url-settings}
 
-**Titel** und **URL** sind Eigenschaften, die allen Community-Funktionen gemeinsam sind.
+**Titel** und **URL** sind Eigenschaften, die allen Community-Funktionen gemein sind.
 
-Wenn eine Community-Funktion zu einer Community-Site-Vorlage hinzugefügt oder hinzugefügt wird, wenn [Ändern](/help/communities/sites-console.md#modifying-site-properties) Wenn die Struktur einer Community-Site festgelegt ist, wird das Dialogfeld der Funktion geöffnet, sodass Titel und URL konfiguriert werden können.
+Wenn eine Community-Funktion zu einer Community-Site-Vorlage hinzugefügt oder hinzugefügt wird, wenn [die Struktur einer Community-Site ändert](/help/communities/sites-console.md#modifying-site-properties), wird das Dialogfeld der Funktion geöffnet, sodass Titel und URL konfiguriert werden können.
 
 #### Konfiguration der Funktionsdetails {#configuration-function-details}
 
@@ -57,9 +57,9 @@ Wenn eine Community-Funktion zu einer Community-Site-Vorlage hinzugefügt oder h
 
 * **URL**
 
-  (*Erforderlich*) Der zum Generieren des URI verwendete Name. Der Name muss mit dem [Benennungskonventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR aufgezwungen.
+  (*Erforderlich*) Der Name, mit dem der URI generiert wird. Der Name muss den von AEM und JCR festgelegten [Benennungskonventionen](/help/sites-developing/naming-conventions.md) entsprechen.
 
-Beispielsweise können Sie die aus dem folgenden Beispiel erstellte Site verwenden: [Erste Schritte](/help/communities/getting-started.md) Tutorial, falls
+Wenn Sie beispielsweise die Site verwenden, die anhand des Tutorials [Erste Schritte](/help/communities/getting-started.md) erstellt wurde,
 
 * Titel = Webseite
 * URL = Seite
@@ -72,7 +72,7 @@ und der Menülink für die Seite wie folgt angezeigt wird:
 
 ### Aktivitäts-Stream-Funktion {#activity-stream-function}
 
-Die Aktivitäts-Stream-Funktion ist eine Seite mit einer [Aktivitäts-Streams-Komponente](/help/communities/activities.md) mit allen ausgewählten Ansichten (alle Aktivitäten, Benutzeraktivitäten und Folgeaktivitäten). Siehe auch [Grundlagen zum Aktivitäts-Stream](/help/communities/essentials-activities.md) für Entwickler.
+Die Aktivitäts-Stream-Funktion ist eine Seite mit der Komponente [Aktivitäts-Streams](/help/communities/activities.md) mit allen ausgewählten Ansichten (alle Aktivitäten, Benutzeraktivitäten und Folgeaktivitäten). Siehe auch [Aktivitäts-Stream-Grundlagen](/help/communities/essentials-activities.md) für Entwickler.
 
 Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
@@ -82,7 +82,7 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * [Titel und URL-Einstellungen](#title-and-url-settings)
 
-* **Ansicht &quot;Meine Aktivitäten&quot;**
+* **Ansicht &quot;Meine Aktivitäten&quot;** anzeigen
 
   Wenn diese Option aktiviert ist, enthält die Seite Aktivitäten eine Registerkarte, auf der Aktivitäten basierend auf denen gefiltert werden, die innerhalb der Community vom aktuellen Mitglied generiert wurden. Die Option Standard ist ausgewählt.
 
@@ -96,7 +96,7 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 ### Blogfunktion {#blog-function}
 
-Die Blog-Funktion ist eine Seite mit einer [Blog-Komponente](/help/communities/blog-feature.md) konfiguriert für Tagging, Datei-Uploads, Follower, Mitglieder zur Selbstbearbeitung, Abstimmung und Moderation. Siehe auch [Blog-Grundlagen](/help/communities/blog-developer-basics.md) für Entwickler.
+Die Blog-Funktion ist eine Seite mit einer [Blog-Komponente](/help/communities/blog-feature.md), die für Tagging, Datei-Uploads, Follower, Mitglieder zur Selbstbearbeitung, Abstimmung und Moderation konfiguriert ist. Siehe auch [Blog-Grundlagen](/help/communities/blog-developer-basics.md) für Entwickler.
 
 Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
@@ -106,23 +106,23 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * **Zulassen von privilegierten Mitgliedern**
 
-  Wenn diese Option aktiviert ist, dürfen nur privilegierte Mitglieder Artikel erstellen, indem sie die Auswahl einer [Gruppe privilegierter Mitglieder](/help/communities/users.md#privileged-members-group). Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder erstellen. Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, erlaubt der Blog nur privilegierten Mitgliedern, Artikel zu erstellen, indem er die Auswahl einer [privilegierten Mitgliedergruppe](/help/communities/users.md#privileged-members-group) ermöglicht. Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder erstellen. Die Option Standard ist deaktiviert.
 
 * **Datei-Uploads zulassen**
 
   Wenn diese Option aktiviert ist, können Mitglieder Dateien im Blog hochladen. Die Option Standard ist ausgewählt.
 
-* **Threaded-Antworten zulassen**
+* **Ermöglichen von gefilterten Antworten**
 
   Wenn diese Option nicht ausgewählt ist, erlaubt der Blog Antworten (Kommentare) auf einen Artikel, aber Antworten auf Kommentare sind nicht zulässig. Die Option Standard ist ausgewählt.
 
 * **Zulassen von speziellen Inhalten**
 
-  Wenn ausgewählt, wird der Blog als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist ausgewählt.
+  Wenn diese Option aktiviert ist, wird der Blog als [Inhalt mit Funktionen](/help/communities/featured.md) identifiziert. Die Option Standard ist ausgewählt.
 
 ### Kalenderfunktion {#calendar-function}
 
-Die Kalenderfunktion ist eine Seite mit einer [Kalenderkomponente](/help/communities/calendar.md) konfiguriert, um Tagging zuzulassen. Siehe auch [Kalendergrundlagen](/help/communities/calendar-basics-for-developers.md) für Entwickler.
+Die Kalenderfunktion ist eine Seite mit einer [Kalenderkomponente](/help/communities/calendar.md), die für das Tagging konfiguriert ist. Siehe auch [Kalendergrundlagen](/help/communities/calendar-basics-for-developers.md) für Entwickler.
 
 Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
@@ -130,43 +130,43 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * [Titel und URL-Einstellungen](#title-and-url-settings)
 
-* **Zulassen von Pinnwänden**
+* **Ping zulassen**
 
   Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Die Option Standard ist ausgewählt.
 
 * **Zulassen von privilegierten Mitgliedern**
 
-  Wenn diese Option aktiviert ist, dürfen nur privilegierte Mitglieder Artikel erstellen, indem sie die Auswahl einer [Gruppe privilegierter Mitglieder](/help/communities/users.md#privileged-members-group). Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder erstellen. Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, erlaubt der Blog nur privilegierten Mitgliedern, Artikel zu erstellen, indem er die Auswahl einer [privilegierten Mitgliedergruppe](/help/communities/users.md#privileged-members-group) ermöglicht. Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder erstellen. Die Option Standard ist deaktiviert.
 
 * **Datei-Uploads zulassen**
 
   Wenn diese Option aktiviert ist, können Mitglieder Dateien im Blog hochladen. Die Option Standard ist ausgewählt.
 
-* **Threaded-Antworten zulassen**
+* **Ermöglichen von gefilterten Antworten**
 
   Wenn diese Option nicht ausgewählt ist, erlaubt der Blog Antworten (Kommentare) auf einen Artikel, aber Antworten auf Kommentare sind nicht zulässig. Die Option Standard ist ausgewählt.
 
 * **Zulassen von speziellen Inhalten**
 
-  Bei Auswahl dieser Option wird der Inhalt als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist ausgewählt.
+  Wenn diese Option aktiviert ist, wird der Inhalt als [Inhalt mit Funktionen](/help/communities/featured.md) identifiziert. Die Option Standard ist ausgewählt.
 
 ### Funktion für spezielle Inhalte {#featured-content-function}
 
-Die Funktion für speziellen Inhalt ist eine Seite mit einer [Komponente für spezielle Inhalte](/help/communities/featured.md) konfiguriert, damit Kommentare hinzugefügt und gelöscht werden können.
+Die Funktion für speziellen Inhalt ist eine Seite mit der Komponente [Vorgestellter Inhalt](/help/communities/featured.md) , die so konfiguriert ist, dass Kommentare hinzugefügt und gelöscht werden können.
 
-Die Möglichkeit, Inhalte pro Komponente zu verwenden, kann zulässig oder unzulässig sein (siehe [Blogfunktion](#blog-function), [Kalenderfunktion](#calendar-function), [Forumsfunktion](#forum-function), [Ideenfunktion](#ideation-function), und [QnA-Funktion](#qna-function)).
+Die Möglichkeit, Inhalt zu verwenden, kann pro Komponente erlaubt oder untersagt sein (siehe [Blog-Funktion](#blog-function), [Kalenderfunktion](#calendar-function), [Forumsfunktion](#forum-function), [Ideenfunktion](#ideation-function) und [QnA-Funktion](#qna-function)).
 
-Wenn sie einer Vorlage hinzugefügt wird, ist die einzige Konfiguration für die [Titel und URL-Einstellungen](#title-and-url-settings).
+Wenn sie einer Vorlage hinzugefügt wird, ist die einzige Konfiguration für den [Titel und URL-Einstellungen](#title-and-url-settings).
 
 ### Dateibibliotheksfunktion {#file-library-function}
 
-Die Dateibibliotheksfunktion ist eine Seite mit einer [Dateibibliothek-Komponente](/help/communities/file-library.md) konfiguriert, damit Kommentare hinzugefügt und gelöscht werden können.
+Die Dateibibliotheksfunktion ist eine Seite mit einer [Dateibibliothekskomponente](/help/communities/file-library.md), die so konfiguriert ist, dass Kommentare hinzugefügt und gelöscht werden können.
 
-Wenn sie einer Vorlage hinzugefügt wird, ist die einzige Konfiguration für die [Titel und URL-Einstellungen](#title-and-url-settings).
+Wenn sie einer Vorlage hinzugefügt wird, ist die einzige Konfiguration für den [Titel und URL-Einstellungen](#title-and-url-settings).
 
 ### Forumsfunktion {#forum-function}
 
-Die Forumsfunktion ist eine Seite mit einer [Forumkomponente](/help/communities/forum.md) konfiguriert für Tagging, Datei-Uploads, Follower, Mitglieder zur Selbstbearbeitung, Abstimmung und Moderation.
+Die Forumsfunktion ist eine Seite mit einer [Forumkomponente](/help/communities/forum.md), die für Tagging, Datei-Uploads, Follower, Mitglieder zur Selbstbearbeitung, Abstimmung und Moderation konfiguriert ist.
 
 Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
@@ -176,41 +176,41 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * [Titel und URL-Einstellungen](#title-and-url-settings)
 
-* **Zulassen von Pinnwänden**
+* **Ping zulassen**
 
   Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Die Option Standard ist ausgewählt.
 
 * **Zulassen von privilegierten Mitgliedern**
 
-  Wenn diese Option aktiviert ist, können nur privilegierte Mitglieder Themen posten, indem sie die Auswahl einer [Gruppe privilegierter Mitglieder](/help/communities/users.md#privileged-members-group). Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder Beiträge posten. Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, dürfen privilegierte Mitglieder nur Themen posten, indem sie die Auswahl einer [privilegierten Mitgliedergruppe](/help/communities/users.md#privileged-members-group) ermöglichen. Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder Beiträge posten. Die Option Standard ist deaktiviert.
 
 * **Datei-Uploads zulassen**
 
   Wenn diese Option aktiviert ist, können Mitglieder Dateien hochladen. Die Option Standard ist ausgewählt.
 
-* **Threaded-Antworten zulassen**
+* **Ermöglichen von gefilterten Antworten**
 
   Wenn diese Option nicht ausgewählt ist, sind im Forum Kommentare zu einem Thema zulässig, Antworten auf diese Kommentare sind jedoch nicht zulässig. Die Option Standard ist ausgewählt.
 
 * **Zulassen von speziellen Inhalten**
 
-  Wenn diese Option aktiviert ist, wird der Inhalt der Komponente als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist ausgewählt.
+  Wenn diese Option aktiviert ist, wird der Inhalt der Komponente als [Inhalt mit Funktionen](/help/communities/featured.md) identifiziert. Die Option Standard ist ausgewählt.
 
 ### Gruppenfunktion {#groups-function}
 
 >[!CAUTION]
 >
->Die Funktion &quot;Gruppen&quot;muss *not* die *first noch die einzige* in der Struktur einer Site oder in einer Community-Site-Vorlage verwendet werden.
+>Die Funktion &quot;Gruppen&quot;darf *nicht* die Funktion &quot;*first&quot;und nicht die einzige Funktion &quot;*&quot;in der Struktur einer Site oder in einer Community-Site-Vorlage sein.
 >
->Jede andere Funktion, z. B. die [Seitenfunktion](#page-function), muss zuerst eingeschlossen und aufgelistet werden.
+>Jede andere Funktion, z. B. die [Seitenfunktion](#page-function), muss zuerst eingeschlossen und aufgeführt werden.
 
 Die Funktion &quot;Gruppen&quot;bietet Community-Mitgliedern die Möglichkeit, Untergruppen innerhalb der Community-Site in der Veröffentlichungsumgebung zu erstellen.
 
-Abhängig von [settings](/help/communities/sites-console.md#groupmanagement) wenn die Funktion Gruppen in einer [Community-Site-Vorlage](/help/communities/sites.md), können die Gruppen öffentlich oder privat sein und eine oder mehrere Community-Gruppenvorlagen können so konfiguriert werden, dass sie eine Auswahl von Vorlagen bereitstellen, wenn die Community-Gruppe tatsächlich erstellt wird (z. B. aus der Veröffentlichungsumgebung). A [Community-Gruppenvorlage](/help/communities/tools-groups.md) gibt an, welche Communities-Funktionen für die Gruppenseiten erstellt werden, z. B. Foren und Kalender.
+Je nach [Einstellungen](/help/communities/sites-console.md#groupmanagement) , wenn die Funktion &quot;Gruppen&quot;in einer [Community-Site-Vorlage](/help/communities/sites.md) enthalten ist, können die Gruppen öffentlich oder privat sein und eine oder mehrere Community-Gruppenvorlagen können so konfiguriert werden, dass sie eine Auswahl von Vorlagen bereitstellen, wenn die Community-Gruppe tatsächlich erstellt wird (z. B. in der Veröffentlichungsumgebung). Eine [Community-Gruppenvorlage](/help/communities/tools-groups.md) gibt an, welche Communities-Funktionen für die Gruppenseiten erstellt werden, z. B. Foren und Kalender.
 
 Wenn eine Community-Gruppe erstellt wird, wird eine Mitgliedergruppe für die neue Gruppe dynamisch erstellt, der Mitglieder zugewiesen oder hinzugefügt werden können. Weitere Informationen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](/help/communities/users.md).
 
-Als Communitys [Feature Pack 1](/help/communities/deploy-communities.md#latestfeaturepack), werden Community-Gruppen in der Autorenumgebung mit der [Communities Sites-Gruppenkonsole](/help/communities/groups.md), und kann in der Veröffentlichungsumgebung erstellt werden, wenn sie aktiviert ist.
+Ab Communities [Feature Pack 1](/help/communities/deploy-communities.md#latestfeaturepack) werden Community-Gruppen in der Autorenumgebung mithilfe der [Gruppenkonsole der Communities-Sites](/help/communities/groups.md) erstellt und können bei Aktivierung in der Veröffentlichungsumgebung erstellt werden.
 
 Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
@@ -224,16 +224,16 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * **Zulassen von privilegierten Mitgliedern**
 
-  Wenn diese Option aktiviert ist, können nur privilegierte Mitglieder Themen posten, indem sie die Auswahl einer [Sicherheitsgruppe privilegierter Mitglieder](/help/communities/users.md#privileged-members-group). Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder Beiträge posten. Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, dürfen privilegierte Mitglieder nur Themen posten, indem sie die Auswahl einer Sicherheitsgruppe mit [berechtigten Mitgliedern](/help/communities/users.md#privileged-members-group) ermöglichen. Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder Beiträge posten. Die Option Standard ist deaktiviert.
 
-* **Erstellung von Veröffentlichungen zulassen**
+* **Publish-Erstellung zulassen**
 
   Sofern ausgewählt, können autorisierte Community-Mitglieder eine Gruppe in der Veröffentlichungsumgebung erstellen. Wenn diese Option deaktiviert ist, können neue Gruppen (Untergruppen) nur in der Autorenumgebung über die Gruppenkonsole der Communities-Sites erstellt werden.
 Die Option Standard ist ausgewählt.
 
 ### Ideen-Funktion {#ideation-function}
 
-Die Ideenfunktion ist eine Seite mit einer [Ideenkomponente](/help/communities/ideation-feature.md).
+Die Ideenfunktion ist eine Seite mit einer [Ideationskomponente](/help/communities/ideation-feature.md).
 
 Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet, in dem der Standardtitel und die URL-Namen sowie die standardmäßigen Anzeigeeinstellungen für die Vorlage angegeben sind:
 
@@ -243,29 +243,29 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet, in 
 
 * **Zulassen von privilegierten Mitgliedern**
 
-  Wenn diese Option aktiviert ist, können nur privilegierte Mitglieder Themen posten, indem sie die Auswahl einer [Sicherheitsgruppe privilegierter Mitglieder](/help/communities/users.md#privileged-members-group). Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder Beiträge posten. Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, dürfen privilegierte Mitglieder nur Themen posten, indem sie die Auswahl einer Sicherheitsgruppe mit [berechtigten Mitgliedern](/help/communities/users.md#privileged-members-group) ermöglichen. Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder Beiträge posten. Die Option Standard ist deaktiviert.
 
 * **Datei-Uploads zulassen**
 
   Wenn diese Option aktiviert ist, können Mitglieder Dateien hochladen. Die Option Standard ist ausgewählt.
 
-* **Threaded-Antworten zulassen**
+* **Ermöglichen von gefilterten Antworten**
 
   Wenn diese Option nicht ausgewählt ist, sind Antworten (Kommentare) auf ein Thema zulässig, Antworten auf Kommentare sind jedoch nicht zulässig. Die Option Standard ist ausgewählt.
 
 * **Zulassen von speziellen Inhalten**
 
-  Bei Auswahl dieser Option wird der Inhalt als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist ausgewählt.
+  Wenn diese Option aktiviert ist, wird der Inhalt als [Inhalt mit Funktionen](/help/communities/featured.md) identifiziert. Die Option Standard ist ausgewählt.
 
 ### Leaderboard-Funktion {#leaderboard-function}
 
 Die Leaderboard-Funktion ist eine Seite mit einer [Leaderboard-Komponente](/help/communities/enabling-leaderboard.md).
 
-**NOTE**: Die Leaderboard-Komponente muss weiter konfiguriert werden. *after* Eine Community-Site wird aus einer Community-Vorlage erstellt, die die Leaderboard-Funktion enthält. Geben Sie die Leaderboard-Komponente an [Regeln](/help/communities/enabling-leaderboard.md#rules-tab), die von der Konfiguration von [Scoring und Abzeichen](/help/communities/implementing-scoring.md) für die Community-Site.
+**HINWEIS**: Die Leaderboard-Komponente muss weiter konfiguriert werden *nach*. Eine Community-Site wird aus einer Community-Vorlage erstellt, die die Leaderboard-Funktion enthält. Geben Sie die [Regeln](/help/communities/enabling-leaderboard.md#rules-tab) der Leaderboard-Komponente an, die von der Konfiguration von [Scoring und Badges](/help/communities/implementing-scoring.md) für die Community-Site abhängen.
 
 Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet, in dem der Standardtitel und die URL-Namen sowie die standardmäßigen Anzeigeeinstellungen für die Vorlage angegeben sind:
 
-![Lederboard-Dialog](assets/leaderboard-dialog.png)
+![Leaderboard-dialog](assets/leaderboard-dialog.png)
 
 * [Titel und URL-Einstellungen](#title-and-url-settings)
 
@@ -274,7 +274,7 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet, in 
   Wenn diese Option aktiviert ist, wird eine Spalte für Badge-Symbole in die Leaderboard eingefügt.
 Die Option Standard ist deaktiviert.
 
-* **Name der Anzeigemarke**
+* **Anzeigename**
 
   Wenn diese Option aktiviert ist, wird eine Spalte für den Badge-Namen in die Leaderboard eingefügt.
 Die Option Standard ist deaktiviert.
@@ -286,13 +286,13 @@ Die Option Standard ist deaktiviert.
 
 ### Seitenfunktion {#page-function}
 
-Die Seitenfunktion fügt der Community-Site eine leere Seite hinzu, die in die Funktionen der Community-Site eingebunden ist: Anmeldung, Menü, Benachrichtigungen, Messaging, Themen und Branding. Der Inhalt wird der Seite mithilfe der [Standard-AEM](/help/sites-authoring/editing-content.md).
+Die Seitenfunktion fügt der Community-Site eine leere Seite hinzu, die in die Funktionen der Community-Site eingebunden ist: Anmeldung, Menü, Benachrichtigungen, Messaging, Themen und Branding. Der Inhalt wird der Seite mit dem [standardmäßigen AEM Authoring-Modus](/help/sites-authoring/editing-content.md) hinzugefügt.
 
-Wenn sie einer Vorlage hinzugefügt wird, ist die einzige Konfiguration für die [Titel und URL-Einstellungen](#title-and-url-settings).
+Wenn sie einer Vorlage hinzugefügt wird, ist die einzige Konfiguration für den [Titel und URL-Einstellungen](#title-and-url-settings).
 
 ### Fragen/Antworten-Funktion {#qna-function}
 
-Die Funktion &quot;Fragen und Antworten&quot;ist eine Seite mit einer [QnA-Komponente](/help/communities/working-with-qna.md) konfiguriert für Tagging, Datei-Uploads, Follower, Mitglieder zur Selbstbearbeitung, Abstimmung und Moderation.
+Die QnA-Funktion ist eine Seite mit einer [QnA-Komponente](/help/communities/working-with-qna.md), die für Tagging, Datei-Uploads, Follower, Mitglieder zur Selbstbearbeitung, Abstimmung und Moderation konfiguriert ist.
 
 Wenn sie einer Vorlage hinzugefügt wird, ermöglicht die Konfiguration die Beschränkung auf privilegierte Mitglieder:
 
@@ -300,29 +300,29 @@ Wenn sie einer Vorlage hinzugefügt wird, ermöglicht die Konfiguration die Besc
 
 * [Titel und URL-Einstellungen](#title-and-url-settings)
 
-* **Zulassen von Pinnwänden**
+* **Ping zulassen**
 
   Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Die Option Standard ist ausgewählt.
 
 * **Zulassen von privilegierten Mitgliedern**
 
-  Wenn diese Option aktiviert ist, dürfen nur privilegierte Mitglieder Fragen posten, indem sie die Auswahl eines [Gruppe privilegierter Mitglieder](/help/communities/users.md#privileged-members-group). Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder Beiträge posten. Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, dürfen privilegierte Mitglieder nur Fragen posten, indem sie die Auswahl einer [privilegierten Mitgliedergruppe](/help/communities/users.md#privileged-members-group) ermöglichen. Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder Beiträge posten. Die Option Standard ist deaktiviert.
 
 * **Datei-Uploads zulassen**
 
   Wenn diese Option aktiviert ist, können Mitglieder Dateien hochladen. Die Option Standard ist ausgewählt.
 
-* **Threaded-Antworten zulassen**
+* **Ermöglichen von gefilterten Antworten**
 
   Wenn diese Option nicht ausgewählt ist, können im Forum Kommentare (Antworten) zu einer geposteten Frage eingesehen werden. Antworten auf Antworten sind jedoch nicht zulässig. Die Option Standard ist ausgewählt.
 
 * **Zulassen von speziellen Inhalten**
 
-  Bei Auswahl dieser Option wird der Inhalt als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist ausgewählt.
+  Wenn diese Option aktiviert ist, wird der Inhalt als [Inhalt mit Funktionen](/help/communities/featured.md) identifiziert. Die Option Standard ist ausgewählt.
 
 ## Community-Funktion erstellen {#create-community-function}
 
-Die Möglichkeit, eine Community-Funktion zu erstellen, wird durch Auswahl der `Create Community Function` -Symbol oben in der Konsole &quot;Community-Funktionen&quot;angezeigt. Mehrere Funktionen, die auf demselben AEM Blueprint basieren, können erstellt und dann durch Öffnen im Bearbeitungsmodus des Autors eindeutig angepasst werden.
+Die Möglichkeit, eine Community-Funktion zu erstellen, wird durch die Auswahl des Symbols `Create Community Function` oben in der Community-Funktionskonsole erreicht. Mehrere Funktionen, die auf demselben AEM Blueprint basieren, können erstellt und dann durch Öffnen im Bearbeitungsmodus des Autors eindeutig angepasst werden.
 
 ![create-community-function](assets/create-community-function.png)
 
@@ -336,7 +336,7 @@ Im Bereich &quot;Community Function Name&quot;werden ein Name, eine Beschreibung
 
   Der Funktionsname, der für die Anzeige und Speicherung verwendet wird.
 
-* **Community-Funktionsbeschreibung**
+* **Beschreibung der Community-Funktion**
 
   Die Funktionsbeschreibung für die Anzeige.
 
@@ -348,11 +348,11 @@ Im Bereich &quot;Community Function Name&quot;werden ein Name, eine Beschreibung
 
 ![aem-blueprint](assets/aem-blueprint.png)
 
-Im `AEM Blueprint` -Bedienfeld kann der Blueprint ausgewählt werden, der der zugrunde liegenden Implementierung der Community-Funktion entspricht.
+Im Bedienfeld `AEM Blueprint` können Sie den Blueprint auswählen, der der zugrunde liegenden Implementierung der Community-Funktion entspricht.
 
-Die Community-Funktion ist eine Mini-Site, die eine oder mehrere Seiten enthält und vorab für die Integration in eine Community-Site kabelgebunden ist, einschließlich Anmeldung, Benutzerprofile, Benachrichtigungen, Messaging, Site-Menü, Suche, Themen und Branding-Funktionen. Nach der Erstellung der Funktion können Sie [Funktion öffnen](#open-community-function) im Bearbeitungsmodus des Autors und passen Sie die Seiten- oder Komponenteneinstellungen an.
+Die Community-Funktion ist eine Mini-Site, die eine oder mehrere Seiten enthält und vorab für die Integration in eine Community-Site kabelgebunden ist, einschließlich Anmeldung, Benutzerprofile, Benachrichtigungen, Messaging, Site-Menü, Suche, Themen und Branding-Funktionen. Nachdem die Funktion erstellt wurde, ist es möglich, die Funktion ](#open-community-function) im Bearbeitungsmodus des Autors zu öffnen und die Seiten- oder Komponenteneinstellungen anzupassen.[
 
-Da die Community-Funktion als [Live Copy](/help/sites-administering/msm.md#live-copies) von [Blueprint](/help/sites-administering/msm-livecopy.md#creatingablueprint)können Rollout-Änderungen an einer Funktion vorgenommen werden, die sich auf alle Community-Site-Seiten auswirken, die von der [Community-Site-Vorlage](/help/communities/sites.md) oder [Community-Gruppenvorlage](/help/communities/tools-groups.md) , die die Funktion enthielt. Es ist auch möglich, die Zuordnung einer Seite zu ihrem übergeordneten Blueprint zu trennen, um Änderungen auf Seitenebene vorzunehmen.
+Da die Community-Funktion als [Live Copy](/help/sites-administering/msm.md#live-copies) eines [Blueprint](/help/sites-administering/msm-livecopy.md#creatingablueprint) implementiert ist, ist es möglich, Änderungen an einer Funktion zu implementieren, die sich auf alle Community-Site-Seiten auswirken, die aus der [Community-Site-Vorlage](/help/communities/sites.md) oder der [Community-Gruppenvorlage](/help/communities/tools-groups.md) erstellt wurden, die die Funktion enthielt. Es ist auch möglich, die Zuordnung einer Seite zu ihrem übergeordneten Blueprint zu trennen, um Änderungen auf Seitenebene vorzunehmen.
 
 Siehe auch [Multi Site Manager](/help/sites-administering/msm.md).
 
@@ -360,21 +360,21 @@ Siehe auch [Multi Site Manager](/help/sites-administering/msm.md).
 
 ![function-thumbnail](assets/funtion-thumbnail.png)
 
-Im Bereich &quot;Miniaturansicht&quot;kann ein Bild hochgeladen werden, das im [Community-Funktionskonsole](#community-functions-console).
+Im Bedienfeld &quot;Miniaturansichten&quot;kann ein Bild hochgeladen werden, das in der Konsole [Community-Funktionen](#community-functions-console) angezeigt wird.
 
 ## Community-Funktion öffnen {#open-community-function}
 
 ![open-function](assets/open-function.png)
 
-Wählen Sie die `Open Community Function` -Symbol, um in den Bearbeitungsmodus für den Autor zu wechseln, um den Seiteninhalt zu erstellen und die Konfiguration der Funktionskomponente(n) zu ändern.
+Wählen Sie das Symbol &quot;`Open Community Function`&quot;, um in den Bearbeitungsmodus für den Autor zu wechseln, damit der Seiteninhalt bearbeitet und die Konfiguration der Funktionskomponenten geändert werden kann.
 
 ### Konfigurieren von Komponenten {#configuring-components}
 
-Eine Community-Funktion wird als Live Copy eines AEM Blueprints implementiert, dessen Details unter [Multi Site Manager](/help/sites-administering/msm.md).
+Eine Community-Funktion wird als Live Copy eines AEM Blueprints implementiert, deren Details unter [Multi Site Manager](/help/sites-administering/msm.md) dokumentiert sind.
 
 Es ist möglich, nicht nur Seiteninhalte zu erstellen, sondern Komponenten zu konfigurieren.
 
-Wenn Sie eine Komponente auf einer Seite einer erstellten Community-Site konfigurieren, ist es möglicherweise erforderlich, den Vorgang abzubrechen. [Vererbung](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) , um die Komponente zu konfigurieren. Die Vererbung sollte nach Abschluss der Konfiguration wieder hergestellt werden.
+Wenn Sie eine Komponente auf einer Seite einer erstellten Community-Site konfigurieren, ist es möglicherweise erforderlich, die [Vererbung](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) abzubrechen, um die Komponente zu konfigurieren. Die Vererbung sollte nach Abschluss der Konfiguration wieder hergestellt werden.
 
 Konfigurationsdetails finden Sie unter [Communities-Komponenten](/help/communities/author-communities.md) für Autoren.
 
@@ -382,4 +382,4 @@ Konfigurationsdetails finden Sie unter [Communities-Komponenten](/help/communiti
 
 ![edit-function](assets/edit-function.png)
 
-Wählen Sie die `Edit Community Function` -Symbol, um die Eigenschaften der Funktion mit denselben Bedienfeldern wie zu bearbeiten. [Erstellen einer Community-Funktion](#create-community-function), einschließlich der Aktivierung oder Deaktivierung der Funktion .
+Wählen Sie das Symbol `Edit Community Function` aus, um die Eigenschaften der Funktion in denselben Bedienfeldern wie beim Erstellen einer Community-Funktion](#create-community-function) zu bearbeiten, einschließlich der Aktivierung oder Deaktivierung der Funktion.[

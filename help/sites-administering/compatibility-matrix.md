@@ -4,7 +4,7 @@ description: Auf dieser Seite werden die AEM Screens-Player mit der jeweiligen A
 page-status-flag: never-activated
 contentOwner: jsyal
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 100%
 
@@ -95,7 +95,7 @@ Klicken Sie auf den Download-Link für den Android-Player:
 
 aem-screens-player-android-3.3.0.apk.zip
 
-[Datei laden](assets/aem-screens-player-android-330apk.zip)
+[Datei abrufen](assets/aem-screens-player-android-330apk.zip)
 
 <table> 
  <tbody>

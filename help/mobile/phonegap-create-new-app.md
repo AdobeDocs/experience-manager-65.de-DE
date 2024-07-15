@@ -36,7 +36,7 @@ Sie können auch eine Bilddatei bereitstellen, die als Anwendungsminiaturansicht
 Es gibt zusätzliche (und optionale) Registerkarten für den Build-Cloud-Service und die Integration des Adobe Mobile Services SDK-Plug-ins in Ihre App.
 
 * Build: Klicken Sie hier auf Konfigurationen verwalten und richten Sie Ihren build.phonegap.com Build-Dienst ein. Wählen Sie dann aus der Dropdown-Liste den neu erstellten PhoneGap Build-Cloud-Service aus.
-* Analytics: Klicken Sie auf Konfigurationen verwalten und richten Sie Ihre [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) Cloud Service. Wählen Sie dann aus der Dropdown-Liste den neu erstellten Mobile Service aus, der in Ihre Mobile App integriert werden soll.
+* Analytics: Klicken Sie auf &quot;Konfigurationen verwalten&quot;und richten Sie Ihren [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) -Cloud-Service ein. Wählen Sie dann aus der Dropdown-Liste den neu erstellten Mobile Service aus, der in Ihre Mobile App integriert werden soll.
 
 ## Verwenden von App-Vorlagen {#using-app-templates}
 
@@ -47,20 +47,20 @@ Wenn Sie eine App basierend auf der Vorlage einer anderen App erstellen, erhalte
 
 Sie benötigen eine vorhandene Vorlage für mobile Apps (oder eine installierte App, die über eine App-Vorlage verfügt), um diese Funktion verwenden zu können.
 
-Das neueste Beispielpaket für AEM Apps enthält eine aktualisierte Version der Geometrixx App mit einer App-Vorlage. Alternativ können Sie die [StarterKit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) , das auch eine Vorlage bereitstellt.
+Das neueste Beispielpaket für AEM Apps enthält eine aktualisierte Version der Geometrixx App mit einer App-Vorlage. Alternativ können Sie das [StarterKit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) installieren, das auch eine Vorlage bereitstellt.
 
 Schritte zum Erstellen einer App basierend auf einer App-Vorlage:
 
 1. Navigieren Sie zum AEM Mobile-App-Katalog: &lt;*server-url*>aem/apps.html/content/mobileapps
-1. Auswählen **Erstellen** und wählen Sie dann **App** wie unten gezeigt
+1. Wählen Sie **Erstellen** und dann **App** aus, wie unten dargestellt
 
 ![chlimage_1-158](assets/chlimage_1-158.png)
 
-Wählen Sie eine App-Vorlage aus, die Ihnen von einem AEM-Entwickler zur Verfügung gestellt wird. Siehe [Struktur einer AEM Mobile App](/help/mobile/phonegap-structure-an-app.md) für Entwicklerunterstützung.
+Wählen Sie eine App-Vorlage aus, die Ihnen von einem AEM-Entwickler zur Verfügung gestellt wird. Hilfe für Entwickler finden Sie unter [Struktur einer AEM Mobile-App](/help/mobile/phonegap-structure-an-app.md) .
 
 ![chlimage_1-159](assets/chlimage_1-159.png)
 
-Füllen Sie bei Bedarf die Details Ihrer neuen App aus, einschließlich der optionalen Änderung des Miniaturbilds. Diese Werte können später im **App verwalten** Kachel.
+Füllen Sie bei Bedarf die Details Ihrer neuen App aus, einschließlich der optionalen Änderung des Miniaturbilds. Diese Werte können später über die Kachel **App verwalten** bearbeitet werden.
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 

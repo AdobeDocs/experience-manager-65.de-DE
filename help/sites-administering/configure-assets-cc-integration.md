@@ -7,14 +7,14 @@ role: User, Architect, Admin
 exl-id: d167cf97-6829-45a7-ba46-2239d530b060
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '975'
 ht-degree: 84%
 
 ---
 
 # Konfigurieren der AEM Assets-Integration mit Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
-Wenn Sie Adobe Experience Cloud-Kunde sind, können Sie Ihre Assets in Adobe Experience Manager Assets mit Adobe Creative Cloud synchronisieren und umgekehrt. Sie können Ihre Assets auch mit Experience Cloud und umgekehrt synchronisieren. Sie können diese Synchronisierung durch [!DNL Adobe I/O] einrichten. Der Name [!DNL Adobe Marketing Cloud] wurde in [!DNL Adobe Experience Cloud] geändert.
+Wenn Sie Adobe Experience Cloud-Kunde sind, können Sie Ihre Assets innerhalb von Adobe Experience Manager Assets mit Adobe Creative Cloud synchronisieren und umgekehrt. Sie können Ihre Assets auch mit Experience Cloud und umgekehrt synchronisieren. Sie können diese Synchronisierung durch [!DNL Adobe I/O] einrichten. Der Name [!DNL Adobe Marketing Cloud] wurde in [!DNL Adobe Experience Cloud] geändert.
 
 Der Workflow zur Einrichtung dieser Integration ist:
 
@@ -38,7 +38,7 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 
 ## Erstellen eines Programms {#create-an-application}
 
-1. Greifen Sie über die Anmeldung bei der Adobe Developer Gateway-Oberfläche auf [https://legacy-oauth.cloud.adobe.io](https://legacy-oauth.cloud.adobe.io/).
+1. Greifen Sie auf die Adobe Developer-Gateway-Oberfläche zu, indem Sie sich unter [https://legacy-oauth.cloud.adobe.io](https://legacy-oauth.cloud.adobe.io/) anmelden.
 
    >[!NOTE]
    >
@@ -57,11 +57,11 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 
    ![Benachrichtigung über die erfolgreiche Erstellung der Anwendung, die AEM Assets mit Creative Cloud integrieren soll](assets/chlimage_1-50.png)
 
-1. Kopieren Sie die **[!UICONTROL Bewerbungs-ID]** wird für die neue Anwendung generiert.
+1. Kopieren Sie die **[!UICONTROL Anwendungs-ID]** , die für die neue Anwendung generiert wird.
 
    >[!CAUTION]
    >
-   >Vergewissern Sie sich, dass Sie die **[!UICONTROL Anwendungsgeheimnis]** anstelle der **[!UICONTROL Bewerbungs-ID]**.
+   >Stellen Sie sicher, dass Sie nicht versehentlich das **[!UICONTROL Geheimnis der Anwendung]** anstelle der **[!UICONTROL Anwendungs-ID]** kopieren.
 
 ## Hinzufügen einer neuen Konfiguration zu Experience Cloud {#add-a-new-configuration}
 
@@ -130,7 +130,7 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 ## Austauschen von Assets zwischen AEM Assets und Experience Cloud {#exchange-assets-between-aem-and-experience-cloud}
 
 1. Melden Sie sich bei AEM Assets an.
-1. Erstellen Sie in der Konsole &quot;Assets&quot;einen Ordner und laden Sie einige Assets hoch. Erstellen Sie beispielsweise einen Ordner **mc-demo** und laden Sie ein Asset hoch.
+1. Erstellen Sie in der Assets-Konsole einen Ordner und laden Sie einige Assets hoch. Erstellen Sie beispielsweise den Ordner **mc-demo** und laden Sie ein Asset in ihn hoch.
 1. Wählen Sie den Ordner aus und klicken Sie dann auf **Freigeben.** ![assets_share](assets/do-not-localize/assets_share.png).
 1. Wählen Sie im Menü **[!UICONTROL Adobe Experience Cloud]** aus und klicken Sie dann auf **[!UICONTROL Freigeben]**. Eine Meldung benachrichtigt Sie, dass der Ordner für Experience Cloud freigegeben wird.
 

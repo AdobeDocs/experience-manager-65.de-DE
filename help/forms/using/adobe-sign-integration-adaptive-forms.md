@@ -10,7 +10,7 @@ exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2071'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
 
    >[!NOTE]
    >
-   >Vergewissern Sie sich, dass die URL der Cloud-Services-Konfigurationsseite mit **HTTPS** beginnt. Andernfalls müssen Sie für den AEM [!DNL Forms] Server [SSL aktivieren](/help/sites-administering/ssl-by-default.md). 
+   Vergewissern Sie sich, dass die URL der Cloud-Services-Konfigurationsseite mit **HTTPS** beginnt. Andernfalls müssen Sie für den AEM [!DNL Forms] Server [SSL aktivieren](/help/sites-administering/ssl-by-default.md). 
 
 
 1. Tippen Sie auf der Konfigurationsseite auf **[!UICONTROL Erstellen]**, um die [!DNL Adobe Sign]-Konfiguration in AEM [!DNL Forms] zu erstellen.
@@ -95,8 +95,8 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
 
    >[!NOTE]
    >
-   >* Lassen Sie die Seite **Erstellen einer Konfiguration für Adobe Acrobat Sign** geöffnet. Schließen Sie sie nicht. Nachdem Sie die OAuth-Einstellungen für die Anwendung [!DNL Adobe Acrobat Sign] wie in den nächsten Schritten beschrieben konfiguriert haben, können Sie die **Client-ID** und den **geheimen Client-Schlüssel** abrufen.
-   >* Navigieren Sie nach der Anmeldung bei Ihrem Adobe Sign-Konto zu **[!UICONTROL Acrobat Sign-API]** >**[!UICONTROL API-Informationen]** > **[!UICONTROL Dokumentation zu REST-API-Methoden]** > **[!UICONTROL OAuth-Zugriffs-Token]**, um auf Informationen im Zusammenhang mit der Adobe Sign OAuth-URL und der Zugriffs-Token-URL zuzugreifen.
+   * Lassen Sie die Seite **Erstellen einer Konfiguration für Adobe Acrobat Sign** geöffnet. Schließen Sie sie nicht. Nachdem Sie die OAuth-Einstellungen für die Anwendung [!DNL Adobe Acrobat Sign] wie in den nächsten Schritten beschrieben konfiguriert haben, können Sie die **Client-ID** und den **geheimen Client-Schlüssel** abrufen.
+   * Navigieren Sie nach der Anmeldung bei Ihrem Adobe Sign-Konto zu **[!UICONTROL Acrobat Sign-API]** >**[!UICONTROL API-Informationen]** > **[!UICONTROL Dokumentation zu REST-API-Methoden]** > **[!UICONTROL OAuth-Zugriffs-Token]**, um auf Informationen im Zusammenhang mit der Adobe Sign OAuth-URL und der Zugriffs-Token-URL zuzugreifen.
 
 1. Konfigurieren Sie OAuth-Einstellungen für das [!DNL Adobe Sign]-Programm:
 
@@ -153,7 +153,7 @@ Jetzt ist [!DNL Adobe Sign] mit AEM [!DNL Forms] integriert und kann in adaptive
 
 >[!NOTE]
 >
->Um die Adobe Sign-Sandbox zu konfigurieren, können Sie die gleichen Konfigurationsschritte ausführen wie unter [Adobe Sign](#adobe-sign) erläutert.
+Um die Adobe Sign-Sandbox zu konfigurieren, können Sie die gleichen Konfigurationsschritte ausführen wie unter [Adobe Sign](#adobe-sign) erläutert.
 
 ## Verbinden von AEM Forms mit Adobe Acrobat Sign Solutions für Behörden {#adobe-acrobat-sign-for-government}
 
@@ -189,8 +189,8 @@ Bevor Sie mit der Verbindung von AEM Forms mit Adobe Acrobat Sign Solutions begi
 >[!NOTE]
 >
 >
->* Ein `re-direct URL` sollte eine [Top-Level](https://de.wikipedia.org/wiki/Top-Level-Domain)-Domain enthalten. Zum Beispiel: `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
->* Verwenden Sie keine lokale URL als `re-direct URL`. Zum Beispiel: `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`.
+* Ein `re-direct URL` sollte eine [Top-Level](https://de.wikipedia.org/wiki/Top-Level-Domain)-Domain enthalten. Zum Beispiel: `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
+* Verwenden Sie keine lokale URL als `re-direct URL`. Zum Beispiel: `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`.
 
 
 #### Freigeben der Umleitungs-URL und der Bereiche für das Adobe Sign-Team und Empfangen von Anmeldeinformationen
@@ -244,7 +244,7 @@ Die Kontaktperson generiert Anmeldeinformationen und teilt Ihnen diese mit. Im n
 
    >[!NOTE]
    >
-   >* Navigieren Sie nach der Anmeldung bei Ihrem Adobe Sign-Konto zu **[!UICONTROL Acrobat Sign-API]** > **[!UICONTROL API-Informationen]** > **[!UICONTROL Dokumentation zu REST-API-Methoden]** > **[!UICONTROL OAuth-Zugriffs-Token]**, um auf Informationen im Zusammenhang mit der Adobe Sign-OAuth-URL und Zugriffs-Token-URL zuzugreifen.
+   * Navigieren Sie nach der Anmeldung bei Ihrem Adobe Sign-Konto zu **[!UICONTROL Acrobat Sign-API]** > **[!UICONTROL API-Informationen]** > **[!UICONTROL Dokumentation zu REST-API-Methoden]** > **[!UICONTROL OAuth-Zugriffs-Token]**, um auf Informationen im Zusammenhang mit der Adobe Sign-OAuth-URL und Zugriffs-Token-URL zuzugreifen.
 
 1. Verwenden Sie die Anmeldeinformationen, die die Kontaktperson für Adobe Acrobat Sign for Government Solutions ([Mitglied des Adobe Professional Services-Teams]) im vorherigen Abschnitt als [**[!UICONTROL Client-ID]** und **[!UICONTROL Client-Geheimnis]**] geteilt hat.
 

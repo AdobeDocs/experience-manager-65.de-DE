@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Das Skript kann auch einen benutzerdefinierten Pfad analysieren, der in der Befe
 
 Im Kommentar in der Datei finden Sie Angaben zur Ausführung:
 
-Analysieren von CQ `access.log` Hochladen verschiedener Informationen und Generieren einer Markdown-Ausgabe auf `stdout`.
+Analysieren Sie die Datei `access.log` von CQ. Dabei werden verschiedene Daten extrapoliert und eine Markdown-Ausgabe wird auf `stdout` erstellt.
 
 ## Nutzung {#usage}
 

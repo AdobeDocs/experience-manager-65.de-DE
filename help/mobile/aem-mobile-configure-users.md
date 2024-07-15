@@ -44,11 +44,11 @@ Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring AEM Inhalte m
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Nachdem Sie die Benutzergruppe &quot;app-authors&quot;erstellt haben, können Sie dieser neuen Gruppe einzelne Teammitglieder über die [Admin Console des Benutzers](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Nachdem Sie die Benutzergruppe &quot;app-authors&quot;erstellt haben, können Sie dieser neuen Gruppe über die Admin Console [Benutzer](http://localhost:4502/libs/granite/security/content/useradmin.md) einzelne Teammitglieder hinzufügen.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. Im Folgenden können Sie AEM Inhaltsautorengruppe hinzufügen:
+1. Mit der folgenden Funktion können Sie AEM Inhaltsautorengruppe hinzufügen:
 
    (Lesen Sie)
 
@@ -59,7 +59,7 @@ Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring AEM Inhalte m
 
 ### AEM Mobile-Gruppe &quot;Anwendungsadministratoren&quot;(Gruppe &quot;app-admins&quot;) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit denselben Berechtigungen erstellen, die auch für App-Autoren vorhanden sind **UND** Darüber hinaus sind folgende Aufgaben zuständig:
+Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit denselben Berechtigungen erstellen, die auch in den App-Autoren **UND** enthalten sind. Außerdem sind sie für Folgendes verantwortlich:
 
 * Staging, Publishing und Deaktivieren der Anwendung ContentSync OTA-Aktualisierungen
 
@@ -83,7 +83,7 @@ Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit densel
    >
    >workflow-users sind zum Remote-Build mit PhoneGap Build Service erforderlich
 
-1. Navigieren Sie zum [Berechtigungskonsole](http://localhost:4502/useradmin) und Berechtigungen zum Verwalten von Cloud Services hinzufügen
+1. Navigieren Sie zur Konsole [Berechtigungen](http://localhost:4502/useradmin) und fügen Sie Berechtigungen zum Verwalten von Cloud Services hinzu.
 
    * (Lesen, Ändern, Erstellen, Löschen, Replizieren) unter /etc/cloudservices/mobileservices
 

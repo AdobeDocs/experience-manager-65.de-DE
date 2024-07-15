@@ -26,15 +26,15 @@ For more information on what is considered a transaction, see [Billable APIs](..
 
 Standardmäßig ist die Transaktionsaufzeichnung deaktiviert. Führen Sie die folgenden Schritte aus, um Transaktionsberichte zu aktivieren:
 
-1. Navigieren Sie zum `/adminui` auf Ihrer AEM Forms on JEE, beispielsweise `http://10.14.18.10:8080/adminui`.
-1. Als **Administrator**.
-1. Navigieren Sie zu **Einstellungen** > **Core-Systemeinstellungen** > **Konfigurationen**.
-1. Klicken Sie auf Kontrollkästchen, um **Transaktionsberichte aktivieren** und **Speichern** die Einstellungen.
+1. Navigieren Sie auf Ihrem AEM Forms on JEE zu &quot;`/adminui`&quot;, z. B. &quot;`http://10.14.18.10:8080/adminui`&quot;.
+1. Melden Sie sich als **Administrator** an.
+1. Wechseln Sie zu **Einstellungen** > **Core-Systemeinstellungen** > **Konfigurationen**.
+1. Aktivieren Sie das Kontrollkästchen, um die Einstellungen für **Transaktionsberichte aktivieren** und **Speichern** zu aktivieren.
 
    ![sample-transaction-report-jee](assets/enable-transaction-jee.png)
 
 1. Starten Sie den Server neu.
-1. Abgesehen von den Änderungen auf dem Server müssen Sie auf der Client-Seite die `adobe-livecycle-client.jar` -Datei in Ihrem Projekt speichern, wenn Sie dieselbe Datei verwenden.
+1. Abgesehen von den Änderungen auf dem Server müssen Sie auf Client-Seite die Datei `adobe-livecycle-client.jar` in Ihrem Projekt aktualisieren, wenn Sie dieselbe Datei verwenden.
 
 <!--
 * You can [enable transaction recording](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) from AEM Web Console. view transaction reports on author, processing, or publish instances. View transaction reports on author or processing instances for an aggregated sum of all transactions. View transaction reports on the publish instances for a count of all transactions that take place only on that publish instance from where the report is run.
@@ -44,23 +44,23 @@ Standardmäßig ist die Transaktionsaufzeichnung deaktiviert. Führen Sie die fo
 
 ## Anzeigen des Transaktionsberichts {#view-transaction-report}
 
-Wenn Sie die Transaktionsberichterstellung aktivieren, können Sie über die Variable [Transaktionsbericht über Dashboard](#transaction-report-dashboard) und einer detaillierten [Transaktionsbericht über Protokolldatei](#transaction-report-logfile). Beide werden nachfolgend erläutert:
+Wenn Sie Transaktionsberichte aktivieren, können Sie über das Dashboard](#transaction-report-dashboard) auf die Informationen zu den Transaktionszahlen zugreifen. Außerdem erhalten Sie einen detaillierten [Transaktionsbericht über die Protokolldatei](#transaction-report-logfile). [ Beide werden nachfolgend erläutert:
 
 ### Transaktionsbericht über das Dashboard {#transaction-report-dashboard}
 
 Der Transaktionsbericht über das Dashboard liefert die Gesamtzahl der Transaktionen für jeden Transaktionstyp. Beispielsweise erhalten Sie Informationen zur Gesamtanzahl der wiedergegebenen, konvertierten und gesendeten Formulare, wie im Bild dargestellt. So rufen Sie den Transaktionsbericht ab:
 
-1. Navigieren Sie zum `/adminui` auf Ihrer AEM Forms on JEE, z. B.: `http://10.13.15.08:8080/adminui`.
-1. Als **Administrator**.
+1. Navigieren Sie in Ihrer AEM Forms on JEE zu &quot;`/adminui`&quot;, z. B. &quot;`http://10.13.15.08:8080/adminui`&quot;.
+1. Melden Sie sich als **Administrator** an.
 1. Klicken Sie auf Health Monitor.
-1. Navigieren Sie zu **Transaction Reporter** Registerkarte, klicken **Gesamte Transaktionen berechnen**, sehen Sie nun, dass ein Tortendiagramm die Anzahl der PDF forms darstellt - gesendet, gerendert oder konvertiert.
+1. Navigieren Sie zur Registerkarte **Transaktionsberichte** , klicken Sie auf **Gesamttransaktionen berechnen** . Jetzt sehen Sie, dass ein Kreisdiagramm die Anzahl der PDF forms darstellt - gesendet, gerendert oder konvertiert.
 
 ![sample-transaction-report-jee](assets/transaction-piechart.png)
 
 
 ### Transaktionsbericht über eine Protokolldatei {#transaction-report-logfile}
 
-Der Transaktionsbericht über die Protokolldatei enthält detaillierte Informationen zu den einzelnen Transaktionen. Um auf Transaktionsprotokolle zuzugreifen, folgen Sie dem Kontextpfad relativ zum Serverstart. Transaktionen werden in einer separaten Protokolldatei erfasst `transaction_log.log` Standardmäßig. Die **Dateipfad** ist relativ zum Server-Startkontext. Der Standardpfad für verschiedene Server ist unten angegeben:
+Der Transaktionsbericht über die Protokolldatei enthält detaillierte Informationen zu den einzelnen Transaktionen. Um auf Transaktionsprotokolle zuzugreifen, folgen Sie dem Kontextpfad relativ zum Serverstart. Transaktionen werden standardmäßig in einer separaten Protokolldatei `transaction_log.log` erfasst. Der **Dateipfad** ist relativ zum Serverstartkontext. Der Standardpfad für verschiedene Server ist unten angegeben:
 
 ```
 For Jboss Turnkey:
@@ -99,11 +99,11 @@ TransactionRecord
 
 * **service**: Name des Dienstes.
 * **operation**: Vorgangsname.
-* **internalService**: Name des Aufrufs, wenn ein interner Aufruf vorhanden ist, andernfalls identisch mit dem Dienstnamen.
-* **internalOperation**: Name des Aufrufs in gibt es einen internen Aufruf, der ansonsten mit dem Vorgangsnamen übereinstimmt.
-* **transactionOperationType**: Transaktionstyp (Senden, Rendern, Konvertieren).
-* **transactionCount**: Gesamtzahl der Transaktionen.
-* **elapsedTime**: Zeit zwischen der Initiierung des Aufrufs und der eingegangenen Antwort.
+* **internalService**: Name des Aufrufs, wenn ein interner Aufruf erfolgt, andernfalls identisch mit dem Dienstnamen.
+* **internalOperation**: Name des Aufrufs in einem internen Aufruf, ansonsten identisch mit dem Vorgangsnamen.
+* **transactionOperationType**: Typ der Transaktion (Submit, Render, Convert).
+* **transactionCount**: Gesamtanzahl der Transaktionen.
+* **elapsedTime**: Zeit zwischen der Initiierung des Aufrufs und der erhaltenen Antwort.
 * **transactionDate**: Zeitstempel, der angibt, wann der Dienst aufgerufen wurde.
 
 **Beispiel-Transaktionsprotokoll**:
@@ -128,9 +128,9 @@ TransactionRecord
 
 Die Häufigkeit der Aufzeichnung von Transaktionen wird durch die Aktualisierungsvorgänge auf dem Server für jedes Formular bestimmt, das erfolgreich gesendet, wiedergegeben oder konvertiert wurde.
 
-* In **Dashboard** festgelegt ist, wird die Transaktionsanzahl regelmäßig aktualisiert. Der Standardwert ist 1 Minute. Sie können die Häufigkeit aktualisieren, indem Sie die Systemeigenschaft unter `"com.adobe.idp.dsc.transaction.recordFrequency"`. Fügen Sie in AEM Forms für JEE unter JBoss® beispielsweise `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` in `JAVA_OPTS` , um die Aktualisierungshäufigkeit auf 5 Minuten festzulegen.
+* Im **Dashboard** wird die Transaktionsanzahl regelmäßig aktualisiert. Die Standardeinstellung ist 1 Minute. Sie können die Häufigkeit aktualisieren, indem Sie die Systemeigenschaft auf &quot;`"com.adobe.idp.dsc.transaction.recordFrequency"`&quot;festlegen. Fügen Sie beispielsweise in AEM Forms für JEE unter JBoss® `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` in `JAVA_OPTS` hinzu, um die Aktualisierungshäufigkeit auf 5 Minuten festzulegen.
 
-* In **Transaktionslogs**, erfolgt die Aktualisierung für jede Transaktion sofort, wenn ein Formular erfolgreich gesendet, wiedergegeben oder konvertiert wurde.
+* In den **Transaktionsprotokollen** erfolgt die Aktualisierung für jede Transaktion sofort, wenn ein Formular erfolgreich gesendet, wiedergegeben oder konvertiert wurde.
 
 <!-- A transaction remains in the buffer for a specified period (Flush Buffer time + Reverse replication time). By default, it takes approximately 90 seconds for the transaction count to reflect in the transaction report.
 

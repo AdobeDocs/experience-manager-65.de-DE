@@ -32,15 +32,15 @@ Einrichten der PhoneGap-CLI (`https://docs.phonegap.com/en/4.0.0/guide_cli_index
 
 Für iOS: Für die Entwicklung für iPhones und iPads benötigen Sie die Xcode-IDE von Apple.
 
-* kostenlos herunterladen [here](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
+* Laden Sie es kostenlos [hier](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1) herunter.
 * Handbuch zur PhoneGap iOS-Plattform (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
-Für Android™: Zur Entwicklung für iPhones und iPads benötigen Sie die Google Android™ Stuido IDE.
+Für Android™: Für die Entwicklung für iPhones und iPads benötigen Sie die Android™ Stuido IDE von Google.
 
-* kostenlos herunterladen [here](https://developer.android.com/studio).
+* Laden Sie es kostenlos [hier](https://developer.android.com/studio) herunter.
 * Handbuch zur PhoneGap Android™-Plattform (`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
 
-## Quelle herunterladen {#download-the-source}
+## Herunterladen der Source {#download-the-source}
 
 Wenn Sie Ihre Entwicklungsumgebung erfolgreich per Bootstrapping gestartet haben, laden Sie die Quelle aus der AEM App-Build-Kachel herunter:
 
@@ -48,8 +48,8 @@ Wenn Sie Ihre Entwicklungsumgebung erfolgreich per Bootstrapping gestartet haben
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
-* Klicken Sie auf Quelle herunterladen .
-* Wählen Sie die gewünschte Quelle aus dem Modal Quelle herunterladen aus.
+* Klicken Sie auf Source herunterladen .
+* Wählen Sie die gewünschte Quelle aus dem Modal Source herunterladen aus.
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
@@ -90,14 +90,14 @@ phonegap run ios
 >1. Navigieren Sie in diesen neuen Ordner (cd test).
 >1. Führen Sie `phonegap create helloWorld` aus.
 >1. Navigieren Sie zu helloWorld (cd helloWorld).
->1. Ausführen `phonegap run android` (oder ersetzen Sie Android™ durch iOS wie oben beschrieben).
->1. Emulator öffnet die neu erstellte PhoneGap-App mit der Meldung &quot;Device Ready&quot;, wenn die JavaScript Bridge zu nativ betriebsbereit ist.
+>1. Führen Sie `phonegap run android` aus (oder ersetzen Sie Android™ wie oben gezeigt durch iOS).
+>1. Der Emulator öffnet die neu erstellte PhoneGap-App mit der Meldung &quot;Gerätebereit&quot;, wenn die JavaScript Bridge zu nativ funktionsfähig ist.
 >
 >Mit dieser Fehlerbehebung wird überprüft, ob Ihre PhoneGap-CLI-Entwicklungsumgebung ordnungsgemäß ausgeführt wird.
 
-## Debuggen von JavaScript mit Safari- und IOS-Debugging {#debug-javascripts-with-safari-and-ios-debug}
+## Debuggen von JavaScript mit Safari und IOS {#debug-javascripts-with-safari-and-ios-debug}
 
-Sie können das JavaScript Ihrer App mit den Entwicklerwerkzeugen von Safari genauso debuggen wie mit einer Webanwendung.
+Sie können das JavaScript Ihrer App mit den Entwicklertools von Safari debuggen, so wie bei einer Webanwendung.
 
 ## Aktivieren der Safari-Entwicklertools {#enable-safari-developer-tools}
 
@@ -158,4 +158,4 @@ Sie können Haltepunkte an einer beliebigen Stelle in Ihrer Quelle festlegen. We
 
 ## Die nächsten Schritte {#the-next-steps}
 
-Nachdem Sie sich mit der Entwicklung von Apps mit PhoneGap CLI vertraut gemacht haben, lesen Sie [Zugreifen auf Gerätefunktionen](/help/mobile/phonegap-access-device-features.md).
+Nachdem Sie sich mit der Entwicklung von Apps mit der PhoneGap-CLI vertraut gemacht haben, lesen Sie den Abschnitt [Zugreifen auf Gerätefunktionen](/help/mobile/phonegap-access-device-features.md).

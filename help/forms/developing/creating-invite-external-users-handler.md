@@ -6,7 +6,7 @@ exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
 
@@ -238,7 +238,7 @@ So fügen Sie externe Benutzer hinzu, die über Administration Console eingelade
 
    >[!NOTE]
    >
-   > Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+   > Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 1. Melden Sie sich bei Administration Console an.
 1. Klicken Sie auf **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Registrierung für eingeladene Benutzer]**.

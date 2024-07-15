@@ -25,8 +25,8 @@ Die Kommentarfunktion ermöglicht es angemeldeten Site-Besuchern (Mitgliedern), 
 
 Das Dokument beschreibt:
 
-* Hinzufügen `Comments` auf eine Seite.
-* Konfigurationseinstellungen für `Comments` -Komponente.
+* Hinzufügen von `Comments` zu einer Seite.
+* Konfigurationseinstellungen für die Komponente `Comments` .
 
 >[!NOTE]
 >
@@ -34,33 +34,33 @@ Das Dokument beschreibt:
 
 ### Hinzufügen von Kommentaren zu einer Seite {#adding-comments-to-a-page}
 
-So fügen Sie eine `Comments` -Komponente auf einer Seite im Autorenmodus verwenden Sie den Komponenten-Browser, um
+Möchten Sie im Autorenmodus einer Seite die Komponente `Comments` hinzufügen, suchen Sie mit dem Komponenten-Browser nach
 
 * `Communities / Comments`
 
 und ziehen Sie sie an die gewünschte Stelle auf einer Seite, z. B. an die Position relativ zur Funktion, zu der Benutzer Kommentare abgeben können, oder einfach am unteren Seitenrand.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die Variable [erforderliche clientseitige Bibliotheken](/help/communities/essentials-comments.md#essentials-for-client-side) eingeschlossen sind, wird die `Comments` -Komponente angezeigt.
+Wenn die [ erforderlichen clientseitigen Bibliotheken](/help/communities/essentials-comments.md#essentials-for-client-side) enthalten sind, wird die Komponente `Comments` so angezeigt.
 
 ![comments-component](assets/comments-component.png)
 
 >[!NOTE]
 >
->Nur eine `Comments` -Komponente auf einer Seite vorhanden sein. Beachten Sie, dass mehrere Communities-Funktionen bereits Kommentare enthalten, wie z. B. Blog, Kalender, Forum, Fragen und Antworten.
+>Auf einer Seite kann nur eine `Comments` -Komponente vorhanden sein. Beachten Sie, dass mehrere Communities-Funktionen bereits Kommentare enthalten, wie z. B. Blog, Kalender, Forum, Fragen und Antworten.
 
 ### Kommentare konfigurieren {#configuring-comments}
 
-Auswählen der platzierten `Comments` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Wählen Sie die platzierte Komponente `Comments` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![Konfigurationssymbol](assets/configure.png)
 
-![Kommentareinstellungen](assets/commentssettings.png)
+![commentsettings](assets/commentssettings.png)
 
 #### Registerkarte &quot;Kommentare&quot; {#comments-tab}
 
-Unter dem **Kommentare** -Tab angeben, wie Kommentare von Besuchern eingegeben werden.
+Geben Sie auf der Registerkarte **Kommentare** an, wie Kommentare von Besuchern eingegeben werden.
 
 * **Antworten zulassen**
 
@@ -94,17 +94,17 @@ Unter dem **Kommentare** -Tab angeben, wie Kommentare von Besuchern eingegeben w
 
   Wenn diese Option aktiviert ist, wird das Texteingabefeld angezeigt. Die Option Standard ist deaktiviert.
 
-* **Folgende erlauben**
+* **Folgendes zulassen**
 
   Wenn diese Option aktiviert ist, können Mitglieder Kommentare folgen. Die Option Standard ist deaktiviert.
 
-* **Anzeigemarken**
+* **Anzeigemarke**
 
   Wenn diese Option aktiviert ist, können Sie die Anzeige von verdienten und vergebenen Abzeichen zulassen. Die Option Standard ist deaktiviert.
 
 #### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
-Unter dem **Benutzermoderation** Registerkarte angeben, wie die veröffentlichten Kommentare verwaltet werden. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
+Geben Sie auf der Registerkarte **Benutzermoderation** an, wie die veröffentlichten Kommentare verwaltet werden. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
 * **Vormoderation**
 
@@ -126,7 +126,7 @@ Unter dem **Benutzermoderation** Registerkarte angeben, wie die veröffentlichte
 
   Ist diese Option aktiviert, können Mitglieder Kommentare als unangemessen kennzeichnen. Die Option Standard ist deaktiviert.
 
-* **Liste der Kennzeichnungsgründe**
+* **Liste mit Kennzeichnungsgründen**
 
   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem ein Kommentar als unangemessen gekennzeichnet wird. Die Option Standard ist deaktiviert.
 
@@ -134,51 +134,51 @@ Unter dem **Benutzermoderation** Registerkarte angeben, wie die veröffentlichte
 
   Wenn diese Option aktiviert ist, können Mitglieder einen eigenen Grund für die Kennzeichnung eines Kommentars als unangemessen eingeben. Die Option Standard ist deaktiviert.
 
-* **Schwellenwert für Moderation**
+* **Moderationsschwellenwert**
 
   Geben Sie an, wie oft ein Kommentar von den Mitgliedern gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist einmal (1).
 
 * **Kennzeichnungslimit**
 
-  Geben Sie an, wie oft ein Kommentar gekennzeichnet werden muss, bevor er aus der öffentlichen Ansicht ausgeblendet wird. Diese Zahl muss größer oder gleich der Zahl **Schwellenwert für Moderation**. Der Standardwert ist 5.
+  Geben Sie an, wie oft ein Kommentar gekennzeichnet werden muss, bevor er aus der öffentlichen Ansicht ausgeblendet wird. Diese Zahl muss größer oder gleich dem **Moderationsschwellenwert** sein. Der Standardwert ist 5.
 
 #### Registerkarte &quot;Sortiereinstellungen&quot; {#sort-settings-tab}
 
-Unter dem **Sortiereinstellungen** festlegen, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
+Geben Sie auf der Registerkarte **Sortiereinstellungen** an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
 
 * **Sortierfeld**
 
-  Ziehen Sie nach unten, um eines von `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`oder `Most Liked`.
+  Ziehen Sie nach unten, um einen von `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed` oder `Most Liked` auszuwählen.
 
 * **Sortierreihenfolge**
 
-  Ziehen Sie nach unten, um eines von `Ascending` oder `Descending`.
+  Ziehen Sie nach unten, um einen von `Ascending` oder `Descending` auszuwählen.
 
 ### Ändern zu einem benutzerdefinierten Kommentartyp {#changing-to-a-custom-comment-type}
 
 Durch Änderung des Kommentarressourcentyps generiert das Kommentarsystem nicht mehr eine Instanz eines Kommentars, der den Standard verwendet, sondern eine, die von Entwicklern angepasst (erweitert) wurde.
 
-Sobald die benutzerdefinierten Ressourcentypen bekannt sind, geben Sie [Designmodus](/help/sites-authoring/default-components-designmode.md) und doppelklicken Sie auf die platzierte `Comments` -Komponente, um ein Dialogfeld mit einer zusätzlichen Registerkarte zu öffnen.
+Sobald die benutzerdefinierten Ressourcentypen bekannt sind, geben Sie den [Designmodus](/help/sites-authoring/default-components-designmode.md) ein und doppelklicken Sie auf die platzierte `Comments` -Komponente, um ein Dialogfeld mit einer zusätzlichen Registerkarte zu öffnen.
 
-Unter dem **Ressourcentypen** Registerkarte den benutzerdefinierten resourceType für neue Instanzen der `Comments or Voting` Komponenten:
+Geben Sie auf der Registerkarte **Ressourcentypen** den benutzerdefinierten Ressourcentyp für neue Instanzen der `Comments or Voting` -Komponenten an:
 
 ![resource-type](assets/resource-type.png)
 
 * **Kommentar-Ressourcentyp**
 
-  Navigieren Sie zum resourceType eines erweiterten `comment` Komponente (einzelner Kommentar) in /apps. Beispiel: `/apps/social/commons/components/hbs/comments/comment`
+  Navigieren Sie zum Ressourcentyp einer erweiterten `comment` -Komponente (einzelner Kommentar) in /apps. Zum Beispiel: `/apps/social/commons/components/hbs/comments/comment`
 
   Diese Ressource identifiziert den resourceType des UGC, der erstellt wurde, wenn ein Besucher einen Kommentar veröffentlicht.
 
-* **Abstimmungsressourcentyp**
+* **Abstimmungs-Ressourcentyp**
 
-  Navigieren Sie zum resourceType eines erweiterten `voting` -Komponente in /apps. Beispiel: `/apps/social/components/hbs/voting`
+  Navigieren Sie zum Ressourcentyp einer erweiterten `voting` -Komponente in /apps. Zum Beispiel: `/apps/social/components/hbs/voting`
 
   Diese Ressource identifiziert den Ressourcentyp des UGC, der erstellt wurde, wenn ein Besucher eine Stimme sendet.
 
-* **Ressourcentyp des Kommentars**
+* **Kommentar-Systemressourcentyp**
 
-  Navigieren Sie zum resourceType eines erweiterten `comments`-Komponente (Kommentarsystem) in /apps. Leer lassen, es sei denn, die Seitenvorlage [dynamisch enthält](/help/communities/scf.md#add-or-include-a-communities-component) das Kommentar-System im zugrunde liegenden Skript, anstatt als Ressource (Kommentarknoten) zur Seite hinzugefügt zu werden. Weitere Informationen finden Sie unter [`{{include}}` Helper](/help/communities/handlebars-helpers.md#include).
+  Navigieren Sie zum Ressourcentyp einer erweiterten `comments`Komponente (Kommentarsystem) in /apps. Lassen Sie das Feld leer, es sei denn, die Seitenvorlage [enthält dynamisch ](/help/communities/scf.md#add-or-include-a-communities-component) das Kommentarsystem im zugrunde liegenden Skript, anstatt zur Seite als Ressource hinzugefügt zu werden (Kommentarknoten). Erfahren Sie mehr über den [`{{include}}` Helper](/help/communities/handlebars-helpers.md#include).
 
 ### Site-Besuchererlebnis {#site-visitor-experience}
 
@@ -190,7 +190,7 @@ Wenn der angemeldete Benutzer über Moderator- oder Administratorberechtigungen 
 
 Wenn der Besucher der Site angemeldet ist, kann er je nach Konfiguration
 
-* Posten eines neuen Kommentars
+* Post - ein neuer Kommentar
 * Bearbeiten eigener Kommentare
 * Löschen eigener Kommentare
 * Andere Kommentare kennzeichnen
@@ -201,8 +201,8 @@ Besucher der Website, die nicht angemeldet sind, dürfen veröffentlichte Kommen
 
 ### Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie unter [Kommentare Grundlagen](/help/communities/essentials-comments.md) -Seite für Entwickler.
+Weitere Informationen finden Sie auf der Entwickler-Seite [Kommentar-Grundlagen](/help/communities/essentials-comments.md) .
 
-Informationen zur Moderation von geposteten Kommentaren finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
+Informationen zur Moderation von veröffentlichten Kommentaren finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
-Informationen zur Übersetzung geposteter Kommentare finden Sie unter [Übersetzen benutzergenerierter Inhalte](/help/communities/translate-ugc.md).
+Informationen zur Übersetzung von veröffentlichten Kommentaren finden Sie unter [Übersetzen benutzergenerierter Inhalte](/help/communities/translate-ugc.md).

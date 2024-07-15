@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Tutorials {#tutorials}
 
-Dies sind Beispiele für das Lernen und die Arbeit mit Adobe Experience Manager (AEM 6.1 Communities) [Social Component Framework (SCF)](scf.md).
+Dies sind Beispiele, die Ihnen beim Lernen und Arbeiten mit Adobe Experience Manager (AEM) 6.1 Communities [Social Component Framework (SCF)](scf.md) helfen.
 
 ## Clientseitige Anpassung {#client-side-customization}
 
@@ -34,19 +34,19 @@ Siehe auch:
 
 ## Serverseitige Anpassung {#server-side-customization}
 
-Siehe auch [Serverseitige SCF-Anpassung](server-customize.md).
+Siehe auch [SCF Server-seitige Anpassung](server-customize.md).
 
-Der Beispielcode ist im Abschnitt [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) repository:
+Beispielcode ist im Repository [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) verfügbar:
 
-* [Beispiel für SCF-Komponenten anpassen](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
+* [SCF-Komponentenbeispiel anpassen](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
-* [Beispiel einer SCF-Komponente für Überlagerung](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
+* [Beispiel für eine SCF-Komponente für Überlagerung](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
 
-* [Beispiel einer SCF-Komponente erweitern](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
+* [Beispiel für SCF-Komponente erweitern](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
 
 ## Anleitungen {#how-to-instructions}
 
-* [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
+* [AEM Communities To do MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
   ToDo MVC demonstriert, wie eine SCF+SRP-Komponente von Grund auf neu entwickelt wird.
 
@@ -60,13 +60,13 @@ Der Beispielcode ist im Abschnitt [Adobe Experience Cloud GitHub](https://github
 
 ## Demobenutzer {#demo-users}
 
-Das Geometrixx samples-Paket enthält Demobenutzer. Es gibt oft einen Unterschied im Erlebnis zwischen einem Besucher (nicht angemeldet) oder einem Mitglied (angemeldet). Solange die Geometrixx samples-Pakete installiert bleiben, können Sie diese Benutzer verwenden, um einen angemeldeten Status zu simulieren, wenn Sie mit der [Handbuch zu Community-Komponenten](components-guide.md).
+Das Geometrixx samples-Paket enthält Demobenutzer. Es gibt oft einen Unterschied im Erlebnis zwischen einem Besucher (nicht angemeldet) oder einem Mitglied (angemeldet). Solange die Geometrixx samples-Pakete installiert bleiben, können Sie diese Benutzer verwenden, um einen angemeldeten Status zu simulieren, wenn Sie mit dem [Community Components Guide](components-guide.md) arbeiten.
 
-Eine vollständige Liste der Demobenutzer finden Sie unter Verwendung der Leiste zu **[!UICONTROL Instrumente]** > **[!UICONTROL Aktivitäten]** > **[!UICONTROL Sicherheit > Benutzer]**. Oder verwenden Sie die klassische Benutzeroberfläche [Sicherheitskonsole](http://localhost:4502/useradmin) für die Verwaltung von Benutzern und Gruppen.
+Um eine vollständige Liste der Demobenutzer zu erhalten, navigieren Sie über die Leiste zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Sicherheit > Benutzer]**. Oder verwenden Sie die klassische Benutzeroberfläche [Sicherheitskonsole](http://localhost:4502/useradmin) für die Verwaltung von Benutzern und Gruppen.
 
-Wenn eine [Community-Site wurde erstellt](getting-started.md), ist es möglich, Demobenutzer [Community-Benutzergruppen](users.md).
+Wenn eine [Community-Site erstellt wurde](getting-started.md), können Demobenutzer den [Community-Benutzergruppen](users.md) zugewiesen werden.
 
-***Benutzer-ID* / *password***:
+***user id* / *password***:
 
 * aaron.mcdonald@mailinator.com / password
 * emily.andrews@mailinator.com / password

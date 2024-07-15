@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 100%
 
@@ -263,7 +263,7 @@ Aus dieser Abfrage kann unter einem Pfad `wknd/adventures-by-activity` eine pers
 
 Beachten Sie Folgendes: `%3B` ist die UTF-8-Codierung für `;`, und `%3D` ist die Codierung für `=`. Die Abfragevariablen und alle Sonderzeichen müssen [ordnungsgemäß codiert sein](#encoding-query-url), damit die persistente Abfrage ausgeführt wird.
 
-## Caching persistenter Abfragen {#caching-persisted-queries}
+## Caching persistierter Abfragen {#caching-persisted-queries}
 
 Persistierte Abfragen werden empfohlen, da sie auf der [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)- und CDN-Ebene zwischengespeichert werden können, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert.
 

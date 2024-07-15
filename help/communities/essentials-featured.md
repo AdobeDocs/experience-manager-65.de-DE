@@ -32,7 +32,7 @@ Im Gegensatz dazu, einen Beitrag an den Anfang eines Forums zu knüpfen, ermögl
    <td>social/commons/components/hbs/featuredcontent</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
@@ -49,7 +49,7 @@ Im Gegensatz dazu, einen Beitrag an den Anfang eines Forums zu knüpfen, ermögl
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Siehe <a href="featured.md">Vorgestellte Inhalte</a></td>
+   <td>Siehe <a href="featured.md">Vorgestellter Inhalt</a></td>
   </tr>
  </tbody>
 </table>
@@ -58,4 +58,4 @@ Im Gegensatz dazu, einen Beitrag an den Anfang eines Forums zu knüpfen, ermögl
 
 ### Dateibibliotheksfunktion {#file-library-function}
 
-Eine Community-Site-Struktur mit [Funktion für spezielle Inhalte](functions.md#featured-content-function)enthält eine konfigurierte `featured content` -Komponente.
+Eine Community-Site-Struktur, die die Funktion [Vorgestellter Inhalt](functions.md#featured-content-function) enthält, enthält eine konfigurierte Komponente `featured content`.

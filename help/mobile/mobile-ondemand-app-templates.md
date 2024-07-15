@@ -31,7 +31,7 @@ Wenn Sie diese Beispielvorlage beim Erstellen einer App auswählen, wird ein Ric
 
 >[!NOTE]
 >
->Informationen zum Verwalten von Anwendungs- und App-Inhalten über das AEM Mobile Apps Control Center finden Sie im Abschnitt [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Informationen zum Verwalten von Anwendungs- und App-Inhalten über das AEM Mobile Apps Control Center finden Sie im [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) .
 
 ## Erstellen von App-Vorlagen {#creating-app-templates}
 
@@ -44,44 +44,44 @@ Wenn Sie eine App basierend auf der Vorlage einer anderen App erstellen, erhalte
 Schritte zum Erstellen einer App basierend auf einer App-Vorlage:
 
 1. Navigieren Sie zum AEM Mobile-App-Katalog: *&lt;server-url>/aem/apps.html/content/mobileapps*
-1. Auswählen **Erstellen** > **App** wie unten gezeigt
+1. Wählen Sie **Erstellen** > **App** aus, wie unten dargestellt
 
-Nachdem Sie eine App mit dieser Vorlage erstellt haben, können Sie Ihrer App Artikel, Banner und Sammlungen hinzufügen. Informationen zum erneuten Besuch der Erstellung von Artikeln, Bannern und Sammlungen finden Sie unter [Content Management-Aktionen](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
+Nachdem Sie eine App mit dieser Vorlage erstellt haben, können Sie Ihrer App Artikel, Banner und Sammlungen hinzufügen. Informationen zum erneuten Besuch der Erstellung von Artikeln, Bannern und Sammlungen finden Sie unter [Inhaltsverwaltungsaktionen](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
 >[!NOTE]
 >
->Alternativ können Sie auch eine Beispiel-App-Vorlage auswählen, z. B.: **We.Unlimited** App, die Ihnen von einem AEM-Entwickler zur Verfügung gestellt wird. Wenn Sie diese Beispielvorlage für Ihre App verwenden, erhalten Sie einige Beispielartikel und Sammlungen, an denen Sie arbeiten können. Sie können die Beispielvorlagen und -komponenten verwenden, die vorhandenen anpassen oder neue für Ihre App erstellen.
+>Alternativ können Sie auch eine Beispiel-App-Vorlage auswählen, z. B. die App **We.Unlimited** , die Ihnen von einem AEM-Entwickler zur Verfügung gestellt wird. Wenn Sie diese Beispielvorlage für Ihre App verwenden, erhalten Sie einige Beispielartikel und Sammlungen, an denen Sie arbeiten können. Sie können die Beispielvorlagen und -komponenten verwenden, die vorhandenen anpassen oder neue für Ihre App erstellen.
 
 >[!CAUTION]
 >
->Einstellung ***redirectTarget*** property
+>Festlegen der Eigenschaft ***redirectTarget***
 >
->Bei Verwendung einer der App-Vorlagen definiert der Entwickler den Inhalt der Anwendung. Der Entwickler muss jedoch wissen, wo die Anwendung in der jcr erstellt wird, und den Wert von ***redirectTarget*** -Eigenschaft.
+>Bei Verwendung einer der App-Vorlagen definiert der Entwickler den Inhalt der Anwendung. Der Entwickler muss jedoch wissen, wo die Anwendung in der jcr-Eigenschaft erstellt wird, und den Wert der Eigenschaft ***redirectTarget*** .
 >
->Die ***redirectTarget*** wird als Teil des Vorgangs &quot;create app&quot;berechnet und versucht, einen Pfad aufzulösen, wenn eine redirectTarget -Eigenschaft als Teil der App-Vorlage verfügbar ist und der Wert von &quot;redirectTarget&quot;als relativ definiert ist. Wenn der Prozess zum Erstellen einer App einen relativen Wert für redirectTarget in der App-Vorlage findet, wird der Wert an den aufgelösten Speicherort angehängt, an dem die App erstellt wurde.
+>***redirectTarget*** wird als Teil des Vorgangs zum Erstellen einer App berechnet und versucht, einen Pfad aufzulösen, wenn eine redirectTarget -Eigenschaft als Teil der App-Vorlage verfügbar ist und der Wert von redirectTarget als relativ definiert ist. Wenn der Prozess zum Erstellen einer App einen relativen Wert für redirectTarget in der App-Vorlage findet, wird der Wert an den aufgelösten Speicherort angehängt, an dem die App erstellt wurde.
 >
->Wenn beispielsweise eine App-Vorlage eine ***redirectTarget*** mit dem Wert &quot;*language-masters/en* und die App in erstellt wurde.*/content/mobileapps/fooApp*&quot;, lautet der Endwert für redirectTarget nach der Erstellung der App &quot;*/content/mobileapps/fooApp/language-masters/en*&quot;.
+>Wenn beispielsweise eine App-Vorlage ***redirectTarget*** mit dem Wert &quot;*Sprache-Master/en*&quot;definiert und die App mit &quot;*/content/mobileapps/fooApp*&quot;erstellt wurde, lautet der Endwert für redirectTarget nach der Erstellung der App &quot;*/content/mobileapps/fooApp/language-masters/en*&quot;.
 >
 
 ## Erstellen von Inhaltsvorlagen {#creating-content-templates}
 
 Jeder Entitätstyp verfügt über zwei vordefinierte Vorlagen. Diese sind:
 
-* **Standardvorlagen:** für die Inhaltserstellung mit entsprechenden Standardeigenschaften/-struktur verwendet
-* **Importierte Vorlagen:** zum Importieren von Inhalten aus AEM Mobile mit entsprechenden Standardeigenschaften/-strukturen verwendet werden
+* **Standardvorlagen:** für die Inhaltserstellung mit entsprechenden Standardeigenschaften/-struktur
+* **Importierte Vorlagen:** wird zum Importieren von Inhalten aus AEM Mobile mit entsprechenden Standardeigenschaften/-struktur verwendet
 
 ### Artikelvorlagen {#article-templates}
 
 Der Artikel &quot;Unlimited&quot;ist eine Beispielvorlage, die ein typisches AEM Mobile On-Demand-Artikellayout darstellt.
 
-1. In **Artikel verwalten** auswählen **+**  , um einen Artikel zu erstellen. Sie können entweder eine **Unbegrenzter Artikel** oder **Rich-Text-Artikel**. Die folgende Abbildung zeigt die Option, aus der Sie eine dieser beiden Artikelvorlagen auswählen können.
+1. Wählen Sie in **Artikel verwalten** die Option **+** aus, um einen Artikel zu erstellen. Sie können entweder einen **unbegrenzten Artikel** oder einen **Rich-Text-Artikel** auswählen. Die folgende Abbildung zeigt die Option, aus der Sie eine dieser beiden Artikelvorlagen auswählen können.
 
-1. Klicks **Nächste** um Artikelmeta-Daten wie Artikelname/Titel, Beschreibung, Autor, Abstract, Abteilung, Miniaturbild, Artikelzugriff usw. zu definieren.
-1. Klicks **Nächste** , um die Eigenschaften der Werbung auszufüllen.
-1. Klicks **Nächste** um ein Artikelbild oder Social Media-Bild einzugeben
-1. Klicks **Nächste** , um einen Kollektionslink zu diesem neuen Artikel auszuwählen.
-1. Klicks **Nächste** , um Details für Social Sharing einzugeben.
-1. Klicks **Erstellen** , um den Prozess zum Erstellen eines Artikels mithilfe des Beispiels abzuschließen. Klicken Sie entweder auf **Fertig** oder **Artikel bearbeiten** um die Eigenschaften dieses Artikels zu bearbeiten.
+1. Klicken Sie auf &quot;**Weiter**&quot;, um Meta-Daten für Artikel wie Artikelname/Titel, Beschreibung, Autor, Abstract, Abteilung, Miniaturbild, Artikelzugriff usw. zu definieren.
+1. Klicken Sie auf **Weiter** , um die Eigenschaften der Werbung auszufüllen.
+1. Klicken Sie auf **Weiter** , um ein Artikelbild oder Social Media-Bild einzugeben.
+1. Klicken Sie auf **Weiter** , um einen Sammlungslink für diesen neuen Artikel auszuwählen.
+1. Klicken Sie auf **Weiter** , um die Details für die Social-Freigabe einzugeben.
+1. Klicken Sie auf **Erstellen** , um den Prozess zum Erstellen eines Artikels mit dem Beispiel abzuschließen. Klicken Sie entweder auf **Fertig** oder auf **Artikel bearbeiten** , um die Eigenschaften dieses Artikels zu bearbeiten.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -89,17 +89,17 @@ Der Artikel &quot;Unlimited&quot;ist eine Beispielvorlage, die ein typisches AEM
 
 Nach der Erstellung kann ein Autor den Inhalt eines Artikels bearbeiten, indem er Komponenten wie Text und Bilder hinzufügt. Artikel sind eine Erweiterung AEM Seitenvorlagen.
 
-Wählen Sie einen zu bearbeitenden Artikel aus und klicken Sie auf **Bearbeiten** , um dem Artikel Komponenten hinzuzufügen.
+Wählen Sie einen Artikel aus, den Sie bearbeiten möchten, und klicken Sie dann auf **Bearbeiten** , um dem Artikel Komponenten hinzuzufügen.
 
 ![chlimage_1-72](assets/chlimage_1-72.png) ![chlimage_1-73](assets/chlimage_1-73.png)
 
-Wählen Sie &quot;**+**&#39; im linken Bereich, um Komponenten zu Ihrem Artikel hinzuzufügen.
+Wählen Sie &quot;**+**&quot;im linken Bereich aus, um Komponenten zu Ihrem Artikel hinzuzufügen.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
 ### Erstellen von nativen Vorlagen {#creating-out-of-the-box-templates}
 
-Es gibt keine nativen Artikelvorlagen. Es gibt jedoch eine Standardvorlage, die benutzerdefinierte Vorlagen erweitern sollten. Weitere Informationen finden Sie unter Geometrixx Unlimited App [Beispiel für eine Artikelvorlage](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article).
+Es gibt keine nativen Artikelvorlagen. Es gibt jedoch eine Standardvorlage, die von benutzerdefinierten Vorlagen erweitert werden sollte. Siehe Beispiel für eine Artikel-Vorlage der Geometrixx Unlimited App [1}.](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article)
 
 Zu den wichtigsten Eigenschaften, die über die normalen erforderlichen Eigenschaften AEM Vorlage hinausgehen, gehören:
 
@@ -107,7 +107,7 @@ Zu den wichtigsten Eigenschaften, die über die normalen erforderlichen Eigensch
 
 Mit dieser Eigenschaft wird sichergestellt, dass die AEM-Seite als AEM Mobile-Targeting-Artikelseite erkannt wird.
 
-Gemäß AEM Vorlagen können Sie der Vorlage alle Standardeigenschaften oder untergeordneten Knoten hinzufügen. ***jcr:content***.
+Gemäß AEM Vorlagen können Sie alle Standardeigenschaften oder untergeordneten Knoten zum ***jcr:content*** der Vorlage hinzufügen.
 
 ### Banner- und Sammlungsvorlagen {#banner-and-collection-templates}
 
@@ -136,23 +136,23 @@ Nachdem die Komponente bereits in eine AEM Seite eingefügt wurde, können Sie d
 
 1. Wählen Sie diese Seite aus und stellen Sie sicher, dass Sie sich im Bearbeitungsmodus befinden. Verwenden Sie dazu das Dropdown-Menü oben rechts in der Kopfzeile des Editors.
 1. Schalten Sie das seitliche Bedienfeld mit dem Symbol ganz links in der Kopfzeile des Editors um.
-1. Wählen Sie die **Komponenten** tab
+1. Wählen Sie die Registerkarte **Komponenten** aus
 1. Ziehen Sie eine der verfügbaren Komponenten auf die Seite
 
 ![chlimage_1-75](assets/chlimage_1-75.png)
 
 **So bearbeiten Sie eine vorhandene Komponente:**
 
-1. Wählen Sie diese Seite aus und stellen Sie sicher, dass Sie sich in **Bearbeiten** -Modus und wählen Sie die Komponente aus
+1. Wählen Sie diese Seite aus, stellen Sie sicher, dass Sie sich im Modus **Bearbeiten** befinden, und wählen Sie die Komponente aus.
 1. Wählen Sie das Schraubenschlüsselsymbol aus, um die Komponente zu konfigurieren
 
 >[!NOTE]
 >
->Sie können eine Komponente in AEM erstellen und diese anpassen, indem Sie [Entwickeln mit CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Nachdem Sie die vorhandene Komponente Ihren Anforderungen entsprechend angepasst haben, können Sie sie Ihrer Seite mit der **Bearbeiten** Option unter **Artikel verwalten** wie in der obigen Abbildung dargestellt.
+>Sie können eine Komponente in AEM erstellen und diese mit [Entwickeln mit CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) anpassen. Nachdem Sie die vorhandene Komponente Ihren Anforderungen entsprechend angepasst haben, können Sie sie Ihrer Seite mithilfe der Option **Bearbeiten** unter **Artikel verwalten** hinzufügen, wie in der obigen Abbildung dargestellt.
 
 >[!NOTE]
 >
->Siehe Abschnitt [Best Practices für die Entwicklung von Vorlagen und Komponenten](/help/mobile/best-practices-aem-mobile.md) in AEM Mobile.
+>Siehe [Best Practices für die Entwicklung von Vorlagen und Komponenten](/help/mobile/best-practices-aem-mobile.md) in AEM Mobile.
 
 ### Die nächsten Schritte {#the-next-steps}
 

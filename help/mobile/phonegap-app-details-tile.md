@@ -22,17 +22,17 @@ ht-degree: 4%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Die **`Manage App`** im App-Dashboard können Sie Details zur Anwendung bearbeiten. Um die Detailseite zu öffnen, klicken Sie auf das **`Manage App`** Detaillink der Kachel. Von innerhalb der **`Manage App`** können Sie die Einstellungen der PhoneGap-Anwendungskonfiguration (config.xml) bearbeiten und Ihre Anwendung für die Übermittlung an die verschiedenen Anwendungsspeicher vorbereiten.
+Über die Kachel &quot;**`Manage App`**&quot;im App-Dashboard können Sie Details zur Anwendung bearbeiten. Um die Detailseite zu öffnen, klicken Sie auf den Detaillink der Kachel **`Manage App`** . Auf der Seite &quot;**`Manage App`**&quot;können Sie die Einstellungen der PhoneGap-Anwendungskonfiguration (config.xml) bearbeiten und Ihre Anwendung für die Übermittlung an die verschiedenen Anwendungsspeicher vorbereiten.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-## Grundlagen zum `Manage App` tile {#understanding-the-manage-app-tile}
+## Grundlegendes zur Kachel `Manage App` {#understanding-the-manage-app-tile}
 
-Sie können einen Drilldown für jede Kachel im **`Manage App`** -Kachel zum Anzeigen oder Bearbeiten von Details durch Klicken auf das Symbol &quot;...&quot;in der rechten unteren Ecke.
+Sie können einen Drilldown für jede Kachel in der Kachel **`Manage App`** durchführen, um Details anzuzeigen oder zu bearbeiten, indem Sie auf &quot;..&quot;in der unteren rechten Ecke klicken.
 
 ### Registerkarte &quot;Standard&quot; {#the-basic-tab}
 
-Sie können die **Name**, **Autor**, **Kurzbeschreibung** und die **Beschreibung** für Ihre App von dieser Registerkarte aus.
+Sie können den **Namen**, den **Autor**, die **Kurzbeschreibung** und die **Beschreibung** für Ihre App von dieser Registerkarte aus bearbeiten.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
@@ -55,7 +55,7 @@ Jeder Appstore von Anbietern - z. B. Apple App Store oder Google Play Store - be
 >
 >Mit der AEM Verify-App können Sie Screenshots direkt an Ihre App-Details in AEM senden.
 >
->Siehe [Mobile Schnellstart für AEM Verifizierung](/help/mobile/phonegap-mobile-quickstart.md) für weitere Details.
+>Weitere Informationen finden Sie unter [Mobile Quickstart für AEM Verifizierung](/help/mobile/phonegap-mobile-quickstart.md) .
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -63,7 +63,7 @@ Jeder Appstore von Anbietern - z. B. Apple App Store oder Google Play Store - be
 
 >[!NOTE]
 >
->Sobald Sie mit dem **`Manage App`** Kachel, siehe [Bearbeiten von App-Metadaten](/help/mobile/phonegap-editmetadata.md) um die Metadaten anzuzeigen und zu bearbeiten.
+>Sobald Sie mit der Kachel &quot;**`Manage App`**&quot;vertraut sind, finden Sie Informationen zum Anzeigen und Bearbeiten der Metadaten unter [Bearbeiten von App-Metadaten](/help/mobile/phonegap-editmetadata.md) .
 
 #### Allgemeine Metadaten {#common-metadata}
 
@@ -75,9 +75,9 @@ In diesem Abschnitt definieren Sie die URL des Inhaltsaktualisierungs-Servers, d
 
 **App-Version** ist die funktionierende Version Ihrer Anwendung. Übliche Best Practice ist, eine 3-Dezimalnotation-Notation zu verwenden und vor der ersten Version unter 1.0.0 zu beginnen.
 
-**PhoneGap-Version** ist die Version, in der Sie Ihre Anwendung mit PhoneGap kompilieren möchten. Es empfiehlt sich, mit der aktuellen Version Schritt zu halten, um sicherzustellen, dass Sie die neuesten und besten Funktionen und Fehlerbehebungen erhalten.
+**PhoneGap Version** ist die Version, in der Sie Ihre Anwendung mit PhoneGap kompilieren möchten. Es empfiehlt sich, mit der aktuellen Version Schritt zu halten, um sicherzustellen, dass Sie die neuesten und besten Funktionen und Fehlerbehebungen erhalten.
 
-**URL des Inhaltsaktualisierungs-Servers** ist die URL, die Ihre Anwendung zum Aufrufen von ContentSync-Updates verwendet. Sie muss auf Ihre Dispatcher-URL oder, falls Sie keinen Dispatcher verwenden, auf eine Ihrer Veröffentlichungsinstanzen festgelegt sein, die zum Bereitstellen von ContentSync-Aktualisierungen für Ihre Anwendung verwendet wird.
+**Content Update Server URL** ist die URL, die Ihre Anwendung zum Aufrufen von ContentSync-Updates verwendet. Sie muss auf Ihre Dispatcher-URL oder, falls Sie kein Dispatcher verwenden, auf eine Ihrer Veröffentlichungsinstanzen festgelegt sein, die zum Bereitstellen von ContentSync-Aktualisierungen für Ihre Anwendung verwendet wird.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -91,7 +91,7 @@ In diesem Abschnitt definieren Sie die URL des Inhaltsaktualisierungs-Servers, d
 
 Jede Plattform, die in der Datei &quot;PhoneGap config.xml&quot;definiert ist, kann benutzerdefinierte Plattformeigenschaften enthalten. Ein AEM Entwickler muss die Inhaltsstruktur zur Erfassung dieser Eigenschaften beitragen. Ein Beispiel für plattformspezifische Eigenschaften finden Sie für iOS.
 
-Metadaten für alle konfigurierten Plattformen werden jetzt auf der Registerkarte Erweitert der `Manage App` Kachel.
+Metadaten für alle konfigurierten Plattformen werden jetzt auf der Registerkarte Erweitert der Kachel `Manage App` gleichzeitig angezeigt.
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Bei Plattformen, die von AEM nicht verstanden werden, ist es für AEM Entwickler
 
 Für den Apple AppStore sind zusätzliche Metadaten erforderlich, um Ihre Anwendung zur Verteilung zu übermitteln. Der Abschnitt &quot;iOS-Metadaten&quot;versucht, die erforderlichen Informationen zu erfassen, die vom iTMSTransporter-Tool von Apple zum Veröffentlichen der Metadaten in dem zugehörigen Apple-Entwicklerkonto verwendet werden können.
 
-Um die Apple-spezifischen Metadaten abzurufen, erstellen Sie Ihre Anwendung in [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Beim Erstellen Ihrer Anwendung generiert Apple Metadaten, die für den iOS-Metadatenabschnitt erforderlich sind, wenn Sie das Apple iTMSTransporter-Tool zum Überprüfen und Hochladen der Metadaten auf itunesconnect.apple.com verwenden möchten. Wenn Sie die zu erfassenden Metadaten abrufen möchten, müssen Sie die iOS-spezifischen Metadaten nicht ausfüllen. Sie können weiterhin die Metadaten exportieren, die die iOS und die gängigen Metadaten zusammenführen, und alle Screenshots in eine ZIP-Datei erfassen, die jederzeit heruntergeladen werden kann.
+Um die Apple-spezifischen Metadaten abzurufen, erstellen Sie Ihre Anwendung auf [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Beim Erstellen Ihrer Anwendung generiert Apple Metadaten, die für den iOS-Metadatenabschnitt erforderlich sind, wenn Sie das Apple iTMSTransporter-Tool zum Überprüfen und Hochladen der Metadaten auf itunesconnect.apple.com verwenden möchten. Wenn Sie die zu erfassenden Metadaten abrufen möchten, müssen Sie die iOS-spezifischen Metadaten nicht ausfüllen. Sie können weiterhin die Metadaten exportieren, die die iOS und die gängigen Metadaten zusammenführen, und alle Screenshots in eine ZIP-Datei erfassen, die jederzeit heruntergeladen werden kann.
 
 Die heruntergeladene ZIP-Datei enthält eine itmsp-Datei, die auf die Datei &quot;metadata.xml&quot;überprüft werden kann. Die itmsp-Datei enthält die exportierten Metadaten (innerhalb der Datei &quot;metadata.xml&quot;) sowie alle zugehörigen Screenshots.
 
@@ -123,7 +123,7 @@ Die Exportfunktion bietet eine praktische Möglichkeit, die Screenshots und Meta
 
 Eine der wichtigsten Funktionen von AEM Apps ist die Möglichkeit, mit ContentSync neue Inhalte von einer Mobile App anzufordern, bei denen es sich bei Inhalten um HTML-Ressourcen, Seiten, Video, Bilder, Text usw. handeln kann. Nachdem ein Inhaltsautor Inhalte aktualisiert und dann veröffentlicht hat, stellt der Server die Inhaltsaktualisierung für die Mobile App zum Herunterladen bereit.
 
-Die Eigenschaft &quot;Content Update Server URL&quot;ist die URL, die auf eine Veröffentlichungsinstanz verweisen muss, entweder direkt oder über den Dispatcher oder CDN. Das Format der URL lautet einfach:
+Die Eigenschaft &quot;Content Update Server URL&quot;ist die URL, die auf eine Veröffentlichungsinstanz verweisen muss, entweder direkt oder über Dispatcher oder CDN. Das Format der URL lautet einfach:
 
 `https://[hostname]:[port]`
 
@@ -133,13 +133,13 @@ Die Eigenschaft &quot;Content Update Server URL&quot;ist die URL, die auf eine V
 
 ### Registerkarte &quot;Plug-ins&quot; {#the-plugins-tab}
 
-Die **Plugins** -Tab beschreibt die mit Ihrer App verknüpften Plug-ins. Diese Informationen werden verwendet, um das entsprechende Plug-in während eines Builds abzurufen.
+Auf der Registerkarte **Plug-ins** werden die Plug-ins beschrieben, die mit Ihrer App verknüpft sind. Diese Informationen werden verwendet, um das entsprechende Plug-in während eines Builds abzurufen.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
 ### Registerkarte &quot;Screenshots&quot; {#the-screenshots-tab}
 
-Die **Screenshots** -Tab zeigt die unterstützten Screenshot-Auflösungen auf verschiedenen Plattformen an.
+Auf der Registerkarte **Screenshots** werden die unterstützten Screenshot-Auflösungen auf verschiedenen Plattformen angezeigt.
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
@@ -149,7 +149,7 @@ Die **Screenshots** -Tab zeigt die unterstützten Screenshot-Auflösungen auf ve
 
 ### Registerkarte &quot;Authentifizierung&quot; {#the-authentication-tab}
 
-Die **Authentifizierung** -Registerkarte können Sie einen OAuth-Client auswählen, der mit Ihrer Anwendung verknüpft werden soll, und einem Entwickler die Verwendung der OAuth-Authentifizierung von Adobe Experience Manager ermöglichen.
+Auf der Registerkarte **Authentifizierung** können Sie einen OAuth-Client auswählen, der mit Ihrer Anwendung verknüpft werden soll, und Entwicklern die Verwendung der OAuth-Authentifizierung von Adobe Experience Manager ermöglichen.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 

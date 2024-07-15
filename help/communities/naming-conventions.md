@@ -1,6 +1,6 @@
 ---
-title: Namenskonventionen in Java&trade; Paketname
-description: Erfahren Sie mehr über Benennungskonventionen und die Verwendung von Bindestrichen im Java&trade; Paketname.
+title: Namenskonventionen in Java& Handel; Paketname
+description: Erfahren Sie mehr über Benennungskonventionen und die Verwendung von Bindestrichen in Java&trade;package name.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -24,8 +24,8 @@ Beim Erstellen eines Speicherorts für eine Java™-Klasse muss der Paketname mi
 
 Die Verwendung von Bindestrichen in den Namen von Repository-Elementen ist eine empfohlene Vorgehensweise bei AEM Entwicklung, aber Bindestriche sind in Java™-Paketnamen unzulässig.
 
-Die zugrunde liegende CRX-Plattform muss zwischen einem tatsächlichen Unterstrich unterscheiden können `_ `und Bindestriche `-`. Daher muss der Bindestrich in JCR durch den Unicode-Wert (u002d) ersetzt und mit einem Unterstrich maskiert werden `_`.
+Die zugrunde liegende CRX-Plattform muss zwischen einem tatsächlichen Unterstrich `_ ` und einem Bindestrich `-` unterscheiden können. Daher muss der Bindestrich in JCR durch den Unicode-Wert (u002d) ersetzt und mit einem Unterstrich (`_`) maskiert werden.
 
-Wenn der Repository-Pfad beispielsweise **/apps/my-example/component/info/Info.java**, sollte der Paketname `java package apps.my_002dexample.component.info;`
+Wenn der Repository-Pfad beispielsweise **/apps/my-example/component/info/Info.java** lautet, sollte der Paketname `java package apps.my_002dexample.component.info;` lauten.
 
-Beachten Sie, dass ein Unterstrich in ähnlicher Weise maskiert werden muss, sodass `_` wird `_005f`.
+Beachten Sie, dass ein Unterstrich auf ähnliche Weise maskiert werden muss, sodass `_` zu `_005f` wird.

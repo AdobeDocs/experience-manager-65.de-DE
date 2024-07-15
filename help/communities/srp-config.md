@@ -33,7 +33,7 @@ Eine Diskussion der Speicheroptionen und Bereitstellungstopologien finden Sie un
 
 In der Autorenumgebung, um die Speicherkonfigurationskonsole zu erreichen.
 
-* Wählen Sie in der globalen Navigation die Option **[!UICONTROL Instrumente]** > **[!UICONTROL Communities]** > **[!UICONTROL Speicherkonfiguration]**
+* Wählen Sie in der globalen Navigation **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Speicherkonfiguration]** aus.
 
 So wählen Sie eine andere Speicheroption als das standardmäßige JCR aus:
 
@@ -41,7 +41,7 @@ So wählen Sie eine andere Speicheroption als das standardmäßige JCR aus:
 * Geeignete Konfiguration
 
    * Siehe Details für [Auswählen von MSRP](msrp.md#select-msrp)
-   * Siehe Details für [Auswahl von DSRP](dsrp.md#select-dsrp)
+   * Weitere Informationen finden Sie unter [Auswählen von DSRP](dsrp.md#select-dsrp)
    * Siehe Details für [Auswählen von ASRP](asrp.md#select-asrp)
 
 * Wählen Sie **[!UICONTROL Absenden]**.
@@ -50,10 +50,10 @@ So wählen Sie eine andere Speicheroption als das standardmäßige JCR aus:
 
 Wenn keine Auswahl getroffen wurde, ist der Standardwert das AEM-Repository, JCR.
 
-JCR ist *not* ein gemeinsamer Speicher, der von der Autoren- und Veröffentlichungsumgebung freigegeben wird. Community-Inhalte sind nur in der Autoren- oder Veröffentlichungsumgebung sichtbar, in der sie erstellt wurden.
+JCR ist *nicht* ein gemeinsamer Speicher, der von der Autoren- und Publish-Umgebung gemeinsam genutzt wird. Community-Inhalte sind nur in der Author- oder Publish-Umgebung sichtbar, in der sie erstellt wurden.
 
-Besuch [JCR-Store](jsrp.md) für weitere Informationen.
+Weitere Informationen finden Sie unter [JCR Store](jsrp.md) .
 
 >[!NOTE]
 >
->Das Fehlen des Knotens `srpc` under `/etc/socialconfig` gibt den Standardwert an [JCR-Store](jsrp.md).
+>Das Fehlen des Knotens `srpc` unter `/etc/socialconfig` zeigt den standardmäßigen [JCR-Store](jsrp.md) an.

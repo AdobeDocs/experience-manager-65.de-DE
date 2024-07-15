@@ -27,7 +27,7 @@ ht-degree: 8%
 >
 >Es kann mit der Veröffentlichung von 6.3 Service Pack 1 geändert werden.
 
-AEM Mobile Content Services ist eine einfache Funktion zum Anfordern von Inhalten, die von AEM verwaltet werden. Dadurch erhalten alle App-Entwickler eine leistungsstarke Möglichkeit, Inhalte abzurufen, ohne über fundierte Kenntnisse im AEM Content Repository (JCR) und im Web-Framework (Sling) verfügen zu müssen. Dadurch können die anfragenden Anwendungen vom Inhalts-Repository entkoppelt werden.
+AEM Mobile Content Services ist eine einfache Funktion zum Anfordern von Inhalten, die von AEM verwaltet werden. Dadurch erhalten alle App-Entwickler eine leistungsstarke Möglichkeit, Inhalte abzurufen, ohne über fundierte Kenntnisse des Content-Repository (JCR) und des Web-Frameworks (Sling) AEM zu verfügen. Dadurch können die anfragenden Anwendungen vom Inhalts-Repository entkoppelt werden.
 
 Content Services führt mehrere neue AEM-Konstrukte ein, mit denen Entwickler auf AEM verwalteten Inhalt zugreifen können, ohne die Repository-Struktur dieses Inhalts zu kennen.
 
@@ -41,7 +41,7 @@ Content Services kann die Inhalte als Assets, verpackte HTML (HTML/CSS/JS) oder 
 >
 >Bevor Sie mit Content Services beginnen, müssen Sie das Flag Content Services aktivieren. Um die Erstellung und Verwaltung von Modellen in Ihrer App zu aktivieren, aktivieren Sie Datenmodelle im Konfigurationsbrowser.
 >
->Siehe **[Verwalten von Content Services](/help/mobile/developing-content-services.md)** und [Konfigurationsbrowser](/help/sites-administering/configurations.md) Dokumentation finden Sie weitere Informationen.
+>Weitere Informationen finden Sie unter **[Verwalten von Content Services](/help/mobile/developing-content-services.md)** und in der Dokumentation zum [Konfigurations-Browser](/help/sites-administering/configurations.md) .
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 

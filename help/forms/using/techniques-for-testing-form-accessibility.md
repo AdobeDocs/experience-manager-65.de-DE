@@ -1,5 +1,5 @@
 ---
-title: Verfahren zum Testen der Barrierefreiheit von Formularen
+title: Techniken zum Testen der Barrierefreiheit von Formularen
 description: Erfahren Sie mehr über die Verfahren zum Testen der Barrierefreiheit von Formularen in Forms Designer.
 feature: Adaptive Forms, Forms Designer
 solution: Experience Manager, Experience Manager Forms
@@ -9,11 +9,11 @@ hidefromtoc: true
 source-git-commit: 6b86212a2b3a86b2205714c802dc1581d30e7441
 workflow-type: tm+mt
 source-wordcount: '356'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# Verfahren zum Testen der Barrierefreiheit von Formularen
+# Techniken zum Testen der Barrierefreiheit von Formularen
 
 Um sicherzustellen, dass Ihre Formulare für eine Vielzahl von Benutzern zugänglich sind, sollten Sie sie mit einer Vielzahl von Hilfstechnologien testen. Sie können Ihre Formulare mithilfe der in diesem Abschnitt beschriebenen Techniken einfach und kostengünstig testen.
 Stellen Sie sicher, dass das Formular nur mit der Tastatur ausgefüllt werden kann. Achten Sie darauf, das gesamte Formular auszufüllen und alle Felder und Schaltflächen zu testen. Prüfen Sie beim Ausfüllen des Formulars anhand Ihrer Antworten auf die folgenden Fragen, ob Verbesserungen erforderlich sind:

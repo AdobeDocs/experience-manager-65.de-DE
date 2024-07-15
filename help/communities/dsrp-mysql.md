@@ -28,15 +28,15 @@ In diesen Anweisungen wird beschrieben, wie Sie eine Verbindung zum MySQL-Server
 * [JDBC-Treiber für MySQL](deploy-communities.md#jdbc-driver-for-mysql)
 * Eine relationale Datenbank:
 
-   * [MySQL-Server](https://dev.mysql.com/downloads/mysql/) Community-Server, Version 5.6 oder neuer
+   * [MySQL Server](https://dev.mysql.com/downloads/mysql/) Community-Server, Version 5.6 oder neuer
 
       * Kann auf demselben Host wie AEM ausgeführt oder remote ausgeführt werden
 
-   * [MySQL Workbench](https://dev.mysql.com/downloads/tools/workbench/)
+   * [MySQL-Workbench](https://dev.mysql.com/downloads/tools/workbench/)
 
 ## MySQL installieren {#installing-mysql}
 
-[MySQL](https://dev.mysql.com/downloads/mysql/) heruntergeladen und entsprechend den Anweisungen für das Zielbetriebssystem installiert werden.
+[MySQL](https://dev.mysql.com/downloads/mysql/) sollte heruntergeladen und entsprechend den Anweisungen für das Ziel-OS installiert werden.
 
 ### Tabellennamen mit Kleinbuchstaben {#lower-case-table-names}
 
@@ -45,7 +45,7 @@ Da bei SQL nicht zwischen Groß- und Kleinschreibung unterschieden wird, müssen
 So geben Sie beispielsweise alle Tabellennamen mit Kleinbuchstaben unter Linux an:
 
 * Datei bearbeiten `/etc/my.cnf`
-* Im `[mysqld]` -Abschnitt, fügen Sie die folgende Zeile hinzu:
+* Fügen Sie im Abschnitt `[mysqld]` die folgende Zeile hinzu:
 
   `lower_case_table_names = 1`
 
@@ -60,11 +60,11 @@ Um eine bessere mehrsprachige Unterstützung zu bieten, ist es erforderlich, den
 Ändern Sie die MySQL-Datenbank in UTF8:
 
 * Datei bearbeiten `/etc/my.cnf`
-* Im `[client]` -Abschnitt, fügen Sie die folgende Zeile hinzu:
+* Fügen Sie im Abschnitt `[client]` die folgende Zeile hinzu:
 
   `default-character-set=utf8`
 
-* Im `[mysqld]` -Abschnitt, fügen Sie die folgende Zeile hinzu:
+* Fügen Sie im Abschnitt `[mysqld]` die folgende Zeile hinzu:
 
   `character-set-server=utf8`
 
@@ -82,8 +82,8 @@ Wenn die MySQL Workbench zum ersten Mal gestartet wird, sofern sie nicht bereits
 
 ### Neue Verbindungseinstellungen {#new-connection-settings}
 
-1. Wählen Sie die `+` Symbol rechts von `MySQL Connections`.
-1. Im Dialogfeld `Setup New Connection`Geben Sie die für Ihre Plattform geeigneten Werte ein.
+1. Wählen Sie das Symbol `+` rechts von `MySQL Connections` aus.
+1. Geben Sie im Dialogfeld `Setup New Connection` die für Ihre Plattform geeigneten Werte ein.
 
    Zu Demonstrationszwecken mit der Autoreninstanz AEM MySQL auf demselben Server:
 
@@ -94,16 +94,16 @@ Wenn die MySQL Workbench zum ersten Mal gestartet wird, sofern sie nicht bereits
    * Passwort: `no password by default`
    * Standardschema: `leave blank`
 
-1. Auswählen `Test Connection` Überprüfen der Verbindung zum ausgeführten MySQL-Dienst
+1. Wählen Sie `Test Connection` aus, um die Verbindung zum ausgeführten MySQL-Dienst zu überprüfen.
 
-**Hinweise**:
+**Notizen**:
 
 * Der Standardanschluss ist `3306`
-* Der ausgewählte Verbindungsname wird als Datenquellenname unter [JDBC OSGi-Konfiguration](#configurejdbcconnections)
+* Der ausgewählte Verbindungsname wird als Datenquellenname in der [JDBC OSGi-Konfiguration](#configurejdbcconnections) angegeben.
 
 #### Neue Communities-Verbindung {#new-communities-connection}
 
-![Community-Verbindung](assets/community-connection.png)
+![ community-connection](assets/community-connection.png)
 
 ## Datenbankeinrichtung {#database-setup}
 
@@ -126,37 +126,37 @@ Das SQL-Skript wird aus dem AEM Repository abgerufen:
 
 Eine Methode zum Herunterladen des Schemas ist:
 
-* Wählen Sie die `jcr:content` Knoten für die SQL-Datei
-* Beachten Sie den Wert für `jcr:data` -Eigenschaft ist ein Ansichtslink
+* Wählen Sie den Knoten `jcr:content` für die SQL-Datei aus.
+* Beachten Sie, dass der Wert für die Eigenschaft `jcr:data` ein Ansichtslink ist.
 
 * Klicken Sie auf den Ansichtslink, um die Daten in einer lokalen Datei zu speichern.
 
 ### DSRP-Datenbank erstellen {#create-the-dsrp-database}
 
-Gehen Sie wie folgt vor, um die Datenbank zu installieren. Der Standardname der Datenbank lautet `communities`.
+Gehen Sie wie folgt vor, um die Datenbank zu installieren. Der Standardname der Datenbank ist `communities`.
 
-Wenn der Datenbankname im Skript geändert wird, müssen Sie ihn auch in der [JDBC-Konfiguration](#configurejdbcconnections).
+Wenn der Datenbankname im Skript geändert wird, müssen Sie ihn auch in der [JDBC-Konfiguration](#configurejdbcconnections) ändern.
 
 #### Schritt 1: SQL-Datei öffnen {#step-open-sql-file}
 
 In der MySQL Workbench
 
-* Wählen Sie aus dem Pulldown-Menü Datei die **[!UICONTROL SQL Script öffnen]** option
-* Wählen Sie die heruntergeladene `init_schema.sql` script
+* Wählen Sie im Pulldown-Menü &quot;Datei&quot;die Option **[!UICONTROL SQL Script öffnen]**
+* Wählen Sie das heruntergeladene Skript `init_schema.sql` aus
 
 ![select-sql-script](assets/select-sql-script.png)
 
 #### Schritt 2: SQL-Script ausführen {#step-execute-sql-script}
 
-Wählen Sie im Workbench-Fenster für die in Schritt 1 geöffnete Datei die `lightening (flash) icon` , um das Skript auszuführen.
+Wählen Sie im Workbench-Fenster für die in Schritt 1 geöffnete Datei die `lightening (flash) icon` aus, um das Skript auszuführen.
 
-In der folgenden Abbildung wird die `init_schema.sql` -Datei zur Ausführung bereit ist:
+In der folgenden Abbildung ist die Datei `init_schema.sql` zur Ausführung bereit:
 
 ![execute-sql-script](assets/execute-sql-script.png)
 
 #### Aktualisieren {#refresh}
 
-Nachdem das Skript ausgeführt wurde, muss die `SCHEMAS` Abschnitt `Navigator` um die neue Datenbank anzuzeigen. Verwenden Sie das Aktualisierungssymbol rechts neben &quot;SCHEMAS&quot;:
+Nachdem das Skript ausgeführt wurde, muss der Abschnitt &quot;`SCHEMAS`&quot;des Felds &quot;`Navigator`&quot;aktualisiert werden, damit die neue Datenbank angezeigt wird. Verwenden Sie das Aktualisierungssymbol rechts neben &quot;SCHEMAS&quot;:
 
 ![refresh-schema](assets/refresh-schema.png)
 
@@ -170,12 +170,12 @@ Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, mu
 
 * Auf jeder Autoren- und Veröffentlichungsinstanz AEM.
 * Mit Administratorrechten angemeldet.
-* Zugriff auf [Web-Konsole](../../help/sites-deploying/configuring-osgi.md).
+* Rufen Sie die [Web-Konsole](../../help/sites-deploying/configuring-osgi.md) auf.
 
    * Beispiel: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
-* Suchen Sie die `Day Commons JDBC Connections Pool`
-* Wählen Sie die `+` -Symbol, um eine Verbindungskonfiguration zu erstellen.
+* Suchen Sie den `Day Commons JDBC Connections Pool`
+* Wählen Sie das Symbol `+` aus, um eine Verbindungskonfiguration zu erstellen.
 
   ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
 
@@ -184,18 +184,18 @@ Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, mu
    * **[!UICONTROL JDBC-Treiberklasse]**: `com.mysql.jdbc.Driver`
    * **[!UICONTROL JDBC-Verbindungs-URI]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-     Geben Sie den Server anstelle von localhost an, wenn der MySQL-Server nicht mit dem &quot;this&quot;-AEM identisch ist *communities* ist der Standardname der Datenbank (Schema).
+     Geben Sie den Server anstelle von localhost an, wenn der MySQL-Server nicht derselbe ist wie dieser AEM Server *communities* der Standarddateiname für die Datenbank (Schema) ist.
 
    * **[!UICONTROL Benutzername]**: `root`
 
      Oder geben Sie den konfigurierten Benutzernamen für den MySQL-Server ein, falls nicht &quot;root&quot;.
 
-   * **[!UICONTROL Passwort]**:
+   * **[!UICONTROL Kennwort]**:
 
      Löschen Sie dieses Feld, wenn kein Kennwort für MySQL festgelegt wurde.
 
      Geben Sie andernfalls das konfigurierte Kennwort für den MySQL-Benutzernamen ein.
 
-   * **[!UICONTROL Datenquellenname]**: Name, der für die [MySQL-Verbindung](#new-connection-settings), beispielsweise &quot;communities&quot;.
+   * **[!UICONTROL Datenquellenname]**: Name, der für die [MySQL-Verbindung](#new-connection-settings) eingegeben wurde, z. B. &quot;communities&quot;.
 
 * Wählen Sie **[!UICONTROL Speichern]** aus

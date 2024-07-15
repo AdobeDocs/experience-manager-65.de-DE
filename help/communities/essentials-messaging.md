@@ -45,7 +45,7 @@ Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente be
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td>Siehe <a href="/help/communities/configure-messaging.md" target="_blank">Messaging konfigurieren</a></td>
+   <td>Siehe <a href="/help/communities/configure-messaging.md" target="_blank">Konfigurieren von Messaging</a> .</td>
   </tr>
   <tr>
    <td><strong>Administratorkonfiguration</strong></td>
@@ -78,7 +78,7 @@ Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente be
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td>Siehe <a href="/help/communities/configure-messaging.md" target="_blank">Messaging konfigurieren</a></td>
+   <td>Siehe <a href="/help/communities/configure-messaging.md" target="_blank">Konfigurieren von Messaging</a> .</td>
   </tr>
   <tr>
    <td><strong>Administratorkonfiguration</strong></td>
@@ -87,7 +87,7 @@ Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente be
  </tbody>
 </table>
 
-Siehe auch [Clientseitige Anpassungen](/help/communities/client-customize.md)
+Siehe auch [Client-seitige Anpassungen](/help/communities/client-customize.md)
 
 ## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
@@ -99,7 +99,7 @@ Siehe auch [Clientseitige Anpassungen](/help/communities/client-customize.md)
 
 >[!CAUTION]
 >
->Der String-Parameter muss *not* einen Schrägstrich (/) für die folgenden MessageBuilder-Methoden enthalten:
+>Der String-Parameter darf für die folgenden MessageBuilder-Methoden *nicht* einen Schrägstrich &quot;/&quot;enthalten:
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
@@ -113,34 +113,34 @@ Siehe auch [Clientseitige Anpassungen](/help/communities/client-customize.md)
 
 ### Community-Site {#community-site}
 
-Eine Community-Site-Struktur, die mithilfe des Assistenten erstellt wurde, enthält die Messaging-Funktion, falls ausgewählt. Siehe `User Management` Einstellungen von [Community-Sites-Konsole](/help/communities/sites-console.md#user-management).
+Eine Community-Site-Struktur, die mithilfe des Assistenten erstellt wurde, enthält die Messaging-Funktion, falls ausgewählt. Siehe `User Management` Einstellungen der [Community-Sites-Konsole](/help/communities/sites-console.md#user-management).
 
 ### Beispielcode: Nachricht erhalten Benachrichtigung {#sample-code-message-received-notification}
 
 Die Funktion Social Messaging gibt Ereignisse für Vorgänge aus, z. B. `send`, `marking read`, `marking delete`. Diese Ereignisse können erfasst und Aktionen für die im Ereignis enthaltenen Daten durchgeführt werden.
 
-Das folgende Beispiel zeigt einen Ereignis-Handler, der auf die `message sent` -Ereignis ein und sendet eine E-Mail an alle Empfänger, die die `Day CQ Mail Service`.
+Das folgende Beispiel zeigt einen Ereignis-Handler, der auf das `message sent` -Ereignis wartet und mit dem `Day CQ Mail Service` eine E-Mail an alle Nachrichtenempfänger sendet.
 
 Zum Testen des serverseitigen Beispielskripts benötigen Sie eine Entwicklungsumgebung und die Möglichkeit, ein OSGi-Bundle zu erstellen:
 
-1. Melden Sie sich bei ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
-1. Erstellen Sie eine `bundle node`in `/apps/engage/install` mit beliebigen Namen wie:
+1. Melden Sie sich als Administrator bei ` [CRXDE|Lite](https://localhost:4502/crx/de)` an.
+1. Erstellen Sie eine `bundle node`in `/apps/engage/install` mit beliebigen Namen, z. B.:
 
    * Symbolischer Name: `com.engage.media.social.messaging.MessagingNotification`
    * Name: Erste Schritte - Benachrichtigung zu Tutorial-Nachrichten
    * Beschreibung: Ein Beispieldienst zum Senden einer E-Mail-Benachrichtigung an Benutzer, wenn diese eine Nachricht erhalten
    * Package: `com.engage.media.social.messaging.notification`
 
-1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`und dann:
+1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification` und dann:
 
-   1. Löschen Sie die `Activator.java` automatisch erstellte Klasse.
-   1. Klasse erstellen `MessageEventHandler.java`.
-   1. Kopieren Sie den unten stehenden Code und fügen Sie ihn in `MessageEventHandler.java`.
+   1. Löschen Sie die automatisch erstellte `Activator.java`-Klasse.
+   1. Erstellen Sie die Klasse `MessageEventHandler.java`.
+   1. Kopieren Sie den unten stehenden Code und fügen Sie ihn in `MessageEventHandler.java` ein.
 
 1. Klicken Sie auf **Alle speichern**.
-1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`und fügen Sie alle Importanweisungen hinzu, wie in der Datei `MessageEventHandler.java` Code.
+1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` und fügen Sie alle Importanweisungen hinzu, wie im Code `MessageEventHandler.java` geschrieben.
 1. Erstellen Sie das Bundle.
-1. Sichern `Day CQ Mail Service`Der OSGi-Dienst ist konfiguriert.
+1. Stellen Sie sicher, dass der OSGi-Dienst `Day CQ Mail Service`konfiguriert ist.
 1. Melden Sie sich als Demobenutzer an und senden Sie eine E-Mail an einen anderen Benutzer.
 1. Der Empfänger erhält eine E-Mail bezüglich einer neuen Nachricht.
 

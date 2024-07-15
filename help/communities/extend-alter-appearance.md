@@ -29,9 +29,9 @@ Für eine einfache Demonstration, eine visuelle Funktion, wird der Avatar des an
 
 ## HBS-Skripte ändern {#modify-the-hbs-scripts}
 
-Verwenden [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Verwenden von [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Öffnen [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Öffnen Sie [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
    * Kommentieren Sie das Tag aus, das den Avatar für einen Kommentar-Beitrag enthält (~ Zeile 21):
 
@@ -41,7 +41,7 @@ Verwenden [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
         -->
      ```
 
-* Öffnen [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Öffnen Sie [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * Kommentieren Sie das Tag aus, das den Avatar für den nächsten Kommentar-Eintrag enthält (~ Zeile 44):
 
@@ -51,7 +51,7 @@ Verwenden [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
         -->
      ```
 
-* Auswählen **Alle speichern**
+* Wählen Sie **Alle speichern**
 
 ### Benutzerdefinierte App replizieren {#replicate-custom-app}
 
@@ -61,15 +61,15 @@ Eine Möglichkeit hierfür ist:
 
 * Über das Hauptmenü
 
-   * Auswählen **[!UICONTROL Instrumente]** > **[!UICONTROL Aktivitäten]** > **[!UICONTROL Replikation]**.
-   * Auswählen **[!UICONTROL Baum aktivieren]**.
-   * Satz `Start Path` nach `/apps/custom`.
-   * Auswahl deaktivieren **[!UICONTROL Nur geändert]**.
-   * Auswählen **[!UICONTROL Aktivieren]** Schaltfläche.
+   * Wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Replikation]** aus.
+   * Wählen Sie **[!UICONTROL Baum aktivieren]**.
+   * Setzen Sie `Start Path` auf `/apps/custom`.
+   * Heben Sie die Auswahl von **[!UICONTROL Nur geändert]** auf.
+   * Wählen Sie die Schaltfläche **[!UICONTROL Aktivieren]** aus.
 
 ### Anzeigen von geänderten Kommentaren auf der veröffentlichten Beispielseite {#view-modified-comment-on-published-sample-page}
 
-[Fortführen des Erlebnisses](/help/communities/extend-sample-page.md#publish-sample-page) In der Veröffentlichungsinstanz, die noch als derselbe Benutzer angemeldet ist, ist es jetzt möglich, die Seite in der Veröffentlichungsumgebung zu aktualisieren, um die Änderung zum Entfernen des Avatars anzuzeigen:
+[Um das Erlebnis](/help/communities/extend-sample-page.md#publish-sample-page) in der Veröffentlichungsinstanz fortzusetzen, die noch als derselbe Benutzer angemeldet ist, ist es jetzt möglich, die Seite in der Veröffentlichungsumgebung zu aktualisieren, um die Änderung anzuzeigen und den Avatar zu entfernen:
 
 ![view-modified-content](assets/view-modified-content.png)
 

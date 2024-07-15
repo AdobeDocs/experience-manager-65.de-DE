@@ -18,9 +18,9 @@ ht-degree: 16%
 
 # Komponenten, Funktionen und Funktionsgrundlagen  {#component-function-and-feature-essentials}
 
-Adobe Experience Manager (AEM) Communities-Funktionen erfordern, dass Besucher der Site Mitglieder werden und sich bei der [Community-Site](overview.md#communitiessites) vor dem Posten von Inhalten. Daher [Community-Site-Vorlagen](sites.md), von der aus eine Community-Site ist [created](sites-console.md), die so konzipiert sind, dass sie eine Anmeldefunktion und Benutzerprofile, Messaging, Suche, Moderation und Übersetzung enthalten.
+Adobe Experience Manager (AEM) Communities-Funktionen erfordern, dass Site-Besucher Mitglieder werden und sich bei der [Community-Site](overview.md#communitiessites) anmelden, bevor sie Inhalte veröffentlichen können. Daher sind [Community-Site-Vorlagen](sites.md), aus denen eine Community-Site [erstellt wurde](sites-console.md), so konzipiert, dass sie eine Anmeldefunktion und Benutzerprofile, Messaging, Suche, Moderation und Übersetzung enthalten.
 
-Eine Community-Site unterstützt Mitglieder, die Community-Gruppen erstellen, wenn die [Community-Gruppen-Funktion](functions.md#groups-function) ist in der ausgewählten Community-Site-Vorlage enthalten.
+Eine Community-Site unterstützt Mitglieder, die Community-Gruppen erstellen, wenn die Funktion [Community-Gruppen](functions.md#groups-function) in der ausgewählten Community-Site-Vorlage enthalten ist.
 
 Im Folgenden finden Sie Links zu wichtigen Informationen zu Communities-Komponenten, -Funktionen und -Funktionen.
 
@@ -60,16 +60,16 @@ Im Folgenden finden Sie Links zu wichtigen Informationen zu Communities-Komponen
 * [Scoring und Abzeichen](configure-scoring.md)
 * [Suchen](search-implementation.md)
 * [Soziales Diagramm](essentials-socialgraph.md)
-* [Storage Resource Provider](srp-and-ugc.md) `(SRP)`
+* [Speicherressourcenanbieter](srp-and-ugc.md) `(SRP)`
 
 * [Tagging](tag.md)
 
 ## Javadocs {#javadocs}
 
-Die [Online-Javadocs](../../help/sites-developing/reference-materials.md) spiegeln die in AEM Version 6.3 verfügbaren APIs wider.
-Communities-APIs befinden sich in `com.adobe.cq.social.*` Packages.
+Die [Online-JavaAdocs](../../help/sites-developing/reference-materials.md) entsprechen den APIs, die in AEM Version 6.3 verfügbar sind.
+Communities-APIs befinden sich in `com.adobe.cq.social.*` -Paketen.
 
-Für jeden [Feature Pack](deploy-communities.md#latestfeaturepack), wird eine JavaScript-JAR bereitgestellt. Weitere Informationen finden Sie unter [Verwenden von Maven für Communities](maven.md#javadocs).
+Für jedes [Feature Pack](deploy-communities.md#latestfeaturepack) wird eine JavaScript-JAR bereitgestellt. Weitere Informationen finden Sie unter [Verwenden von Maven für Communities](maven.md#javadocs).
 
 ## Zusätzliche Informationen {#additional-information}
 

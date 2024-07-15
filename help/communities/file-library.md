@@ -26,25 +26,25 @@ Die Dateibibliotheksfunktion bietet angemeldeten Site-Besuchern (Community-Mitgl
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
 * Hinzufügen der Dateibibliotheksfunktion zu einer AEM Site.
-* Konfigurationseinstellungen für `File Library` -Komponente.
+* Konfigurationseinstellungen für die Komponente `File Library` .
 
 ### Hinzufügen einer Dateibibliothek zu einer Seite {#adding-a-file-library-to-a-page}
 
-So fügen Sie eine `File Library` -Komponente auf einer Seite im Autorenmodus zu finden, die Komponente:
+Um eine `File Library` -Komponente zu einer Seite im Autorenmodus hinzuzufügen, suchen Sie die Komponente:
 
 * `Communities / File Library`
 
 Und ziehen Sie es an die gewünschte Stelle auf einer Seite.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die Variable [erforderliche clientseitige Bibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) eingeschlossen sind, wird die `File Library` -Komponente angezeigt:
+Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) eingeschlossen sind, wird die Komponente `File Library` so angezeigt:
 
 ![file-library1](assets/file-library1.png)
 
 ### Konfigurieren der Dateibibliothek {#configuring-file-library}
 
-Auswählen der platzierten `File Library` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Wählen Sie die platzierte Komponente `File Library` aus, damit Sie auf das Symbol `Configure` zugreifen und dieses auswählen können, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![configure-new](assets/configure-new.png)
 
@@ -52,9 +52,9 @@ Auswählen der platzierten `File Library` -Komponente, damit Sie auf die `Config
 
 #### Registerkarte &quot;Kommentare&quot; {#comments-tab}
 
-Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hochgeladene Dateien angezeigt werden:
+Geben Sie auf der Registerkarte **Kommentare** an, ob und wie Kommentare für hochgeladene Dateien angezeigt werden sollen:
 
-* **Kommentare zu Dateien zulassen**
+* **Kommentare in Dateien zulassen**
 
   Wenn diese Option aktiviert ist, lassen Sie Kommentare zu hochgeladenen Dateien zu. Die Option Standard ist deaktiviert.
 
@@ -98,9 +98,9 @@ Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hoch
 
   Wenn diese Option aktiviert ist, ist die Möglichkeit, für eine Datei zu stimmen, aktiviert. Die Option Standard ist deaktiviert.
 
-* **Folgende erlauben**
+* **Folgendes zulassen**
 
-  Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) von neuen Stellen. Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder von neuen Beiträgen [benachrichtigt](/help/communities/notifications.md) werden können. Die Option Standard ist deaktiviert.
 
 * **Erwähnung aktivieren**
 
@@ -110,17 +110,17 @@ Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hoch
 
   Schränken Sie die maximale Anzahl der Erwähnungen ein, die in einem Beitrag zulässig sind. Der Standardwert ist 10.
 
-* **Benutzeroberflächen-Erwähnungsmuster**
+* **UI-Erwähnungsmuster**
 
   Geben Sie die zulässige Musterzeichenfolge an, damit Sie den registrierten Benutzer in einem Beitrag mit Tags versehen (@mention). Zum Beispiel: `~{{familyName}}{{givenName}}`.
 
-* **Threaded-Antworten zulassen**
+* **Ermöglichen von gefilterten Antworten**
 
   Ist diese Option aktiviert, können Antworten auf gepostete Kommentare zugelassen werden. Die Option Standard ist deaktiviert.
 
 #### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
-Unter dem **Benutzermoderation** -Tab konfigurieren Sie die Moderation von Kommentaren, falls Kommentare zulässig sind:
+Konfigurieren Sie auf der Registerkarte **Benutzermoderation** die Moderation von Kommentaren, falls Kommentare zulässig sind:
 
 * **Vormoderation**
 
@@ -142,7 +142,7 @@ Unter dem **Benutzermoderation** -Tab konfigurieren Sie die Moderation von Komme
 
   Ist diese Option aktiviert, können Besucher Kommentare als unangemessen kennzeichnen. Die Option Standard ist deaktiviert.
 
-* **Liste der Kennzeichnungsgründe**
+* **Liste mit Kennzeichnungsgründen**
 
   Wenn diese Option aktiviert ist, können Besucher aus einer Dropdown-Liste den Grund auswählen, aus dem ein Kommentar als unangemessen gekennzeichnet wird. Die Option Standard ist deaktiviert.
 
@@ -150,13 +150,13 @@ Unter dem **Benutzermoderation** -Tab konfigurieren Sie die Moderation von Komme
 
   Wenn diese Option aktiviert ist, können Besucher einen eigenen Grund für die Kennzeichnung eines Kommentars als unangemessen eingeben. Die Option Standard ist deaktiviert.
 
-* **Schwellenwert für Moderation**
+* **Moderationsschwellenwert**
 
   Geben Sie an, wie oft ein Kommentar von Besuchern gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist einmal (**1**).
 
 * **Kennzeichnungslimit**
 
-  Geben Sie an, wie oft ein Kommentar gekennzeichnet werden muss, bevor er aus der öffentlichen Ansicht ausgeblendet wird. Diese Zahl muss größer oder gleich der Zahl **Schwellenwert für Moderation**. Der Standardwert ist 5.
+  Geben Sie an, wie oft ein Kommentar gekennzeichnet werden muss, bevor er aus der öffentlichen Ansicht ausgeblendet wird. Diese Zahl muss größer oder gleich dem **Moderationsschwellenwert** sein. Der Standardwert ist 5.
 
 ### Registerkarte &quot;Sortiereinstellungen&quot; {#sort-settings-tab}
 
@@ -166,7 +166,7 @@ Als Standard festlegen
 
 ### Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie unter [Grundlagen zur Dateibibliothek](/help/communities/essentials-file-library.md) -Seite für Entwickler.
+Weitere Informationen finden Sie auf der Entwickler-Seite [Grundlagen der Dateibibliothek](/help/communities/essentials-file-library.md) .
 
 Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 

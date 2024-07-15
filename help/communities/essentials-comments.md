@@ -32,7 +32,7 @@ Die Kommentarkomponente erstellt ein Kommentarsystem, bei dem jeder einzelne Bei
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
-   <td>Ja - Eigenschaften können bearbeitet werden in <i>Design </i>mode</td>
+   <td>Ja - Eigenschaften können im Modus <i>design </i> bearbeitet werden</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -48,7 +48,7 @@ Die Kommentarkomponente erstellt ein Kommentarsystem, bei dem jeder einzelne Bei
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td> Siehe <a href="comments.md">Kommentare verwenden</a></td>
+   <td> Siehe <a href="comments.md">Verwenden von Kommentaren</a></td>
   </tr>
  </tbody>
 </table>
@@ -80,7 +80,7 @@ Dies gilt für alle Komponenten, die ein Kommentarsystem erweitern.
 
 * [Kommentar-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
-* [Kommentare Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
+* [Kommentar-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
 
 * [Serverseitige Anpassungen](server-customize.md)
 
@@ -89,13 +89,13 @@ Dies gilt für alle Komponenten, die ein Kommentarsystem erweitern.
 UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für benutzergenerierte Inhalte den programmatischen Zugriff auf benutzergenerierte Inhalte, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
 
-**Speicherort und Format der UGC im Repository können ohne Warnung geändert werden**.
+**Speicherort und Format des UGC im Repository können sich ohne Warnung ändern**.
 
 Siehe:
 
-* [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
-* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Kodierungsrichtlinien.
+* [Übersicht über den Speicheranbieter](srp.md) - Übersicht über die Einführung und die Repository-Nutzung.
+* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
+* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
 * [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.

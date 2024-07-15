@@ -26,33 +26,33 @@ Die Kalenderfunktion unterstützt die Bereitstellung von Community-Ereignisinfor
 In diesem Abschnitt der Dokumentation wird
 
 * Hinzufügen der Kalenderfunktion zu einer AEM Site
-* Konfigurationseinstellungen für `Calendar` Komponenten
+* Konfigurationseinstellungen für `Calendar` -Komponenten
 
 ## Hinzufügen eines Kalenders zu einer Seite {#adding-a-calendar-to-a-page}
 
-So fügen Sie eine `Calendar` -Komponente auf einer Seite im Autorenmodus verwenden Sie den Komponenten-Browser, um
+Möchten Sie im Autorenmodus einer Seite die Komponente `Calendar` hinzufügen, suchen Sie mit dem Komponenten-Browser nach
 
 * `Communities / Calendar`
 
 Ziehen Sie sie an die gewünschte Stelle auf einer Seite, z. B. an die Position in Bezug auf die Funktion, die Benutzer überprüfen können.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die Variable [erforderliche clientseitige Bibliotheken](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) eingeschlossen sind, wird die `Calendar` -Komponente angezeigt.
+Wenn die [ erforderlichen clientseitigen Bibliotheken](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) enthalten sind, wird die Komponente `Calendar` so angezeigt.
 
 ![calendar-component](assets/calendar-component.png)
 
 ### Kalender konfigurieren {#configuring-calendar}
 
-Auswählen der platzierten `Calendar` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Wählen Sie die platzierte Komponente `Calendar` aus, damit Sie auf das Symbol `Configure` zugreifen und dieses auswählen können, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
-![konfigurieren](assets/configure-new.png)
+![configure](assets/configure-new.png)
 
 ![configure-calendar](assets/configure-calendar1.png)
 
 #### Registerkarte &quot;Einstellungen&quot; {#settings-tab}
 
-Unter dem **Einstellungen** auf, geben Sie an, ob Tags auf Kalendereinträge angewendet werden dürfen.
+Geben Sie auf der Registerkarte **Einstellungen** an, ob Tags auf Kalendereinträge angewendet werden dürfen.
 
 * **Ereignisse pro Seite**
 
@@ -72,13 +72,13 @@ Unter dem **Einstellungen** auf, geben Sie an, ob Tags auf Kalendereinträge ang
 
 * **Tagging zulassen**
 
-  Wenn diese Option aktiviert ist, können Mitglieder den von ihnen geposteten Ereignissen Tag-Beschriftungen hinzufügen (siehe **Tag-Feld** Registerkarte). Die Option Standard ist aktiviert.
+  Wenn diese Option aktiviert ist, können Mitglieder den von ihnen geposteten Ereignissen Tag-Beschriftungen hinzufügen (siehe Registerkarte **Tag-Feld** ). Die Option Standard ist aktiviert.
 
 * **Datei-Uploads zulassen**
 
   Wenn diese Option aktiviert ist, können Sie zulassen, dass Dateianlagen zu einem Kalenderereignis oder Kommentar hinzugefügt werden. Die Option Standard ist aktiviert.
 
-* **Folgende erlauben**
+* **Folgendes zulassen**
 
   Wenn diese Option aktiviert ist, können Mitglieder Ereignisse verfolgen, die in den Kalender veröffentlicht wurden. Die Option Standard ist aktiviert.
 
@@ -90,15 +90,15 @@ Unter dem **Einstellungen** auf, geben Sie an, ob Tags auf Kalendereinträge ang
 
   Nur relevant, wenn `Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg, .png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, können nicht angegebene nicht hochgeladen werden. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
 
-* **Maximale Dateigröße für Bildanhang**
+* **Max. Größe der Bilddatei anhängen**
 
   Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Maximale Anzahl der Bytes, die eine hochgeladene Bilddatei aufweisen kann. Der Standardwert ist 2097152** **(2 MB).
 
-* **Zulässige Deckungsbildtypen**
+* **Zulässige Abdeckung für Bildtypen**
 
   Eine kommagetrennte Liste von Bilddateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Der Standardwert ist `.jpg,.jpeg,.png,.gif,.bmp`.
 
-* **Threaded-Antworten zulassen**
+* **Ermöglichen von gefilterten Antworten**
 
   Wenn diese Option aktiviert ist, erlauben Sie Antworten auf Kommentare, die zum Kalenderereignis veröffentlicht wurden. Die Option Standard ist aktiviert.
 
@@ -114,15 +114,15 @@ Unter dem **Einstellungen** auf, geben Sie an, ob Tags auf Kalendereinträge ang
 
   Breadcrumbs auf der Ereignisseite anzeigen. Die Option Standard ist aktiviert.
 
-* **Datumsbereichsfilter**
+* **Datumsbereichfilter**
 
   Definiert die Anzahl der Tage, die zum aktuellen Datum hinzugefügt werden, um den &quot;An&quot;-Wert des Seitenfilters für die Auflistung von Kalenderereignissen zu berechnen. Die Standardnummer ist 30.
 
 * **Zulassen von speziellen Inhalten**
 
-  Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, kann die Idee als [Inhalt mit Funktionen](/help/communities/featured.md) identifiziert werden. Die Option Standard ist deaktiviert.
 
-Unter dem **Benutzermoderation** -Registerkarte angeben, wie die veröffentlichten Themen und Antworten (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
+Geben Sie auf der Registerkarte **Benutzermoderation** an, wie die veröffentlichten Themen und Antworten (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
 #### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
@@ -138,7 +138,7 @@ Unter dem **Benutzermoderation** -Registerkarte angeben, wie die veröffentlicht
 
   Ist diese Option aktiviert, können Mitglieder Ereignisse oder Kommentare anderer Mitglieder als unangemessen kennzeichnen. Die Option Standard ist aktiviert.
 
-* **Liste der Kennzeichnungsgründe**
+* **Liste mit Kennzeichnungsgründen**
 
   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem Ereignisse oder Kommentare als unangemessen gekennzeichnet werden. Die Option Standard ist deaktiviert.
 
@@ -146,7 +146,7 @@ Unter dem **Benutzermoderation** -Registerkarte angeben, wie die veröffentlicht
 
   Wenn diese Option aktiviert ist, können Mitglieder einen eigenen Grund für die Kennzeichnung eines Ereignisses oder Kommentars als unangemessen eingeben. Die Option Standard ist deaktiviert.
 
-* **Schwellenwert für Moderation**
+* **Moderationsschwellenwert**
 
   Geben Sie an, wie oft ein Ereignis oder Kommentar von Mitgliedern als unangemessen gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist 1 ( einmal).
 
@@ -156,11 +156,11 @@ Unter dem **Benutzermoderation** -Registerkarte angeben, wie die veröffentlicht
 
 #### Registerkarte &quot;Tag-Feld&quot; {#tag-field-tab}
 
-Unter dem **Tag-Feld** Registerkarte die Tags, die angewendet werden können, sofern dies unter der Variablen **Einstellungen** Registerkarte, sind entsprechend den ausgewählten Namespaces begrenzt.
+Auf der Registerkarte **Tag-Feld** sind die Tags, die angewendet werden können, sofern sie auf der Registerkarte **Einstellungen** zulässig sind, entsprechend den ausgewählten Namespaces beschränkt.
 
 * **Zugelassene Namespaces**
 
-  Relevant, wenn `Allow Tagging` wird unter dem **Einstellungen** Registerkarte. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) und &quot;Alle Tags einschließen&quot;. Der Standardwert ist &quot;none&quot;, was bedeutet, dass alle Namespaces zulässig sind.
+  Relevant, wenn `Allow Tagging` auf der Registerkarte **Einstellungen** aktiviert ist. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) und &quot;Alle Tags einschließen&quot;. Der Standardwert ist &quot;none&quot;, was bedeutet, dass alle Namespaces zulässig sind.
 
 * **Empfehlungslimit**
 
@@ -168,11 +168,11 @@ Unter dem **Tag-Feld** Registerkarte die Tags, die angewendet werden können, so
 
 >[!NOTE]
 >
->Besuch [Verwalten von Tags](/help/sites-administering/tags.md) Hier erfahren Sie, wie Sie einen Tag-Namespace (Taxonomie) hinzufügen.
+>Besuchen Sie [Verwalten von Tags](/help/sites-administering/tags.md) , wo Sie erfahren können, wie Sie einen Tag-Namespace (Taxonomie) hinzufügen.
 
 #### Tab &quot;Übersetzung&quot; {#translation-tab}
 
-Unter dem **Übersetzung** -Registerkarte, wenn die Übersetzung für die Community-Site aktiviert ist, kann die Übersetzung so eingestellt werden, dass anstelle bestimmter Beiträge der gesamte Thread (Ereignis und Kommentare) übersetzt wird.
+Wenn auf der Registerkarte **Übersetzung** die Übersetzung für die Community-Site aktiviert ist, kann die Übersetzung so eingestellt werden, dass anstelle bestimmter Beiträge der gesamte Thread (Ereignis und Kommentare) übersetzt wird.
 
 * **Alle übersetzen**
 
@@ -188,18 +188,18 @@ Andere Möglichkeiten hängen davon ab, ob der Besucher der Site Moderator, Admi
 
 ### Moderatoren und Administratoren {#moderators-and-administrators}
 
-Wenn der angemeldete Benutzer über Moderator- oder Administratorberechtigungen verfügt, kann er [Moderationsaufgaben](/help/communities/moderate-ugc.md) (wie durch die Konfiguration der Komponente erlaubt) bei allen Kalenderereignissen und Kommentaren, die für ein Ereignis veröffentlicht werden.
+Wenn der angemeldete Benutzer über Moderator- oder Administratorberechtigungen verfügt, kann er für alle Kalenderereignisse und Kommentare, die für ein Ereignis veröffentlicht werden, [Moderationsaufgaben](/help/communities/moderate-ugc.md) ausführen (wie es durch die Konfiguration der Komponente zulässig ist).
 
 ![moderators-view](assets/moderators-view.png)
 
 #### Mitglieder {#members}
 
-Wenn der angemeldete Benutzer Community-Mitglied ist oder [privilegiertes Mitglied](/help/communities/users.md#privileged-members-group) (je nach Konfiguration) können sie `New Event` , um ein neues Kalenderereignis zu erstellen und zu posten.
+Wenn der angemeldete Benutzer Community-Mitglied oder [privilegiertes Mitglied](/help/communities/users.md#privileged-members-group) ist (je nach Konfiguration), kann er `New Event` auswählen, um ein neues Kalenderereignis zu erstellen und zu posten.
 
 Insbesondere können sie:
 
 * Kalenderereignisse erstellen
-* Posten eines Kommentars zu einem Kalenderereignis
+* Post einen Kommentar zu einem Kalenderereignis
 * Bearbeiten von eigenen Kalenderereignissen oder Kommentaren
 * Löschen eines eigenen Kalenderereignisses oder Kommentars
 * Kalenderereignisse oder Kommentare anderer kennzeichnen
@@ -216,7 +216,7 @@ Besucher der Website, die nicht angemeldet sind, dürfen veröffentlichte Kalend
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie unter [Kalendergrundlagen](/help/communities/calendar-basics-for-developers.md) -Seite für Entwickler.
+Weitere Informationen finden Sie auf der Entwickler-Seite [Kalendergrundlagen](/help/communities/calendar-basics-for-developers.md) .
 
 Informationen zur Moderation von Kalenderereignissen und Kommentaren finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 

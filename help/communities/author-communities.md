@@ -30,17 +30,17 @@ Weitere Informationen zum Erstellen einer Community-Site finden Sie unter:
 
 >[!NOTE]
 >
->Wenn Sie nicht mit der Authoring-Umgebung vertraut sind, lesen Sie die Dokumentation unter [grundlegende Handhabung](/help/sites-authoring/basic-handling.md) und [Kurzanleitung zum Erstellen von Seiten](/help/sites-authoring/qg-page-authoring.md).
+>Wenn Sie nicht mit der Authoring-Umgebung vertraut sind, lesen Sie die Dokumentation zu [Grundlegender Umgang](/help/sites-authoring/basic-handling.md) und eine [ Kurzanleitung zum Erstellen von Seiten](/help/sites-authoring/qg-page-authoring.md).
 
 ## Verfügbare Communities-Komponenten {#available-communities-components}
 
 In der folgenden Tabelle sind die Communities-Komponenten aufgeführt, die für Autoren sichtbar sind, wenn sie im Komponenten-Browser (Sidekick) aktiviert sind.
 
-Siehe auch interaktive [Handbuch zu Community-Komponenten](/help/communities/components-guide.md).
+Weitere Informationen finden Sie im interaktiven Leitfaden [Community-Komponenten](/help/communities/components-guide.md).
 
 >[!NOTE]
 >
->Lesen [Grundlagen zu Communities-Komponenten](/help/communities/basics.md) da sie Informationen enthält, die für das Authoring mit Communities-Komponenten erforderlich sind.
+>Lesen Sie die [Grundlagen zu Communities-Komponenten](/help/communities/basics.md) , da sie Informationen enthält, die für das Authoring mit Communities-Komponenten erforderlich sind.
 
 | **Komponententitel** | **Funktion** |
 |---|---|
@@ -52,10 +52,10 @@ Siehe auch interaktive [Handbuch zu Community-Komponenten](/help/communities/com
 | Community-Aktivitätenliste | [Aktivitätstrends](/help/communities/trends.md) |
 | Community-Gruppenmitgliederliste | [Community-Gruppen](/help/communities/creating-groups.md) |
 | Nachricht erstellen | [Messaging](/help/communities/configure-messaging.md) |
-| Präsentierter Inhalt | [Vorgestellte Inhalte](/help/communities/featured.md) |
+| Präsentierter Inhalt | [Vorgestellter Inhalt](/help/communities/featured.md) |
 | Dateibibliothek | [Dateibibliothek](/help/communities/file-library.md) |
-| Folgen | [Sozialdiagramm](/help/communities/socialgraph.md) |
-| Folgende | [Sozialdiagramm](/help/communities/socialgraph.md) |
+| Folgen | [Social-Diagramm](/help/communities/socialgraph.md) |
+| Folgende | [Social-Diagramm](/help/communities/socialgraph.md) |
 | Forum | [Forum](/help/communities/forum.md) |
 | Ideen | [Idee](/help/communities/ideation-feature.md) |
 | Leaderboard | [Scoring und Abzeichen](/help/communities/enabling-leaderboard.md) |
@@ -66,8 +66,8 @@ Siehe auch interaktive [Handbuch zu Community-Komponenten](/help/communities/com
 | Schnellsuche | [Suchen](/help/communities/search.md) |
 | Bewertung | [Bewertung](/help/communities/rating.md) |
 | Verwandte Fragen | [Fragen und Antworten](/help/communities/working-with-qna.md) |
-| Bewertungen | [Überprüfungen](/help/communities/reviews.md) |
-| Bewertungszusammenfassung (Anzeige) | [Überprüfungen](/help/communities/reviews.md) |
+| Bewertungen | [Bewertungen](/help/communities/reviews.md) |
+| Bewertungszusammenfassung (Anzeige) | [Bewertungen](/help/communities/reviews.md) |
 | Suchen | [Suchen](/help/communities/search.md) |
 | Suchergebnis | [Suchen](/help/communities/search.md) |
 | Social Tag-Cloud | [Social Tag Cloud](/help/communities/tagcloud.md) |
@@ -79,8 +79,8 @@ Siehe auch interaktive [Handbuch zu Community-Komponenten](/help/communities/com
 
 ## Verwandte Communities - Dokumentation {#related-communities-documentation}
 
-* Besuch [Bereitstellen von Communities](/help/communities/deploy-communities.md) wo Sie mehr über empfohlene Bereitstellungen erfahren können.
+* Besuchen Sie [Communities bereitstellen](/help/communities/deploy-communities.md) , wo Sie Informationen zu empfohlenen Bereitstellungen erhalten.
 
-* Besuch [Verwalten von Communities-Sites](/help/communities/administer-landing.md) , um mehr über die Erstellung einer Community-Site, die Konfiguration von Community-Site-Vorlagen, die Moderation von Community-Inhalten, die Verwaltung von Mitgliedern und die Konfiguration von Messaging zu erfahren.
+* Unter [Verwalten von Communities-Sites](/help/communities/administer-landing.md) erfahren Sie mehr über die Erstellung einer Community-Site, die Konfiguration von Community-Site-Vorlagen, die Moderation von Community-Inhalten, die Verwaltung von Mitgliedern und die Konfiguration von Messaging.
 
-* Besuch [Entwickeln von Communities](/help/communities/communities.md) Hier erfahren Sie mehr über das Social Component Framework (SCF) und das Anpassen von Communities-Komponenten und -Funktionen.
+* Besuchen Sie [Entwickeln von Communities](/help/communities/communities.md) , wo Sie mehr über das Social-Komponenten-Framework (SCF) und die Anpassung von Communities-Komponenten und -Funktionen erfahren.

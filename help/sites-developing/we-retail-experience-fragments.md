@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Ein [Experience Fragment](/help/sites-authoring/experience-fragments.md) ist ein
 
 Sie ermöglichen es einem Autor, Teile einer Seite (ein Fragment eines Erlebnisses) wiederzuverwenden, ohne den Inhalt kopieren und einfügen zu müssen.
 
-Sie unterstützen das Nutzungsszenario mit Headless-Content-Management-Systemen, bei dem Autoren AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. Ein Drittanbietersystem/Touchpoint kann dieses Erlebnis dann nutzen und dann an den Endbenutzer senden.
+Sie unterstützen das Nutzungsszenario mit Headless-Content-Management-Systemen, bei dem Autoren AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. In diesem Fall würde das Erlebnis über ein System bzw. einen Touchpoint eines Drittanbieters für Endbenutzende bereitgestellt.
 
 >[!NOTE]
 >
@@ -47,4 +47,4 @@ Sie können Ihre [Experience Fragments](/help/sites-authoring/experience-fragmen
 
 Weitere Informationen finden Sie unter:
 
-* [Experience Fragments ](/help/sites-authoring/experience-fragments.md)
+* [Experience Fragments](/help/sites-authoring/experience-fragments.md)

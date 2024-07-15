@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '1206'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -31,23 +31,23 @@ Ein Leerzeichen ist ein bequemer Speicherort für Entitäten, die über die Cont
 
 Wenn der Benutzer eine Reihe von Inhalten und Assets für eine mobile App verfügbar machen möchte, erstellt der Benutzer die Platzierung über das AEM Mobile-Dashboard.
 
-Erstmaliger Benutzer, der keine Inhaltsdienste für die Verwendung mit Leerzeichen konfiguriert hat, zeigt das AEM Mobile-Dashboard nach Auswahl von **Content Services**.
+Erstmaliger Benutzer, der keine Inhaltsdienste für die Verwendung mit Leerzeichen konfiguriert hat, zeigt das AEM Mobile-Dashboard nur Apps an, nachdem er **Content Services** ausgewählt hat.
 
 >[!CAUTION]
 >
 >**Voraussetzungen für das Hinzufügen eines Leerzeichens**
 >
->Überprüfen Sie die **Aktivieren AEM Content Services** , um mit Spaces zu arbeiten und sie im Dashboard Ihrer AEM Mobile-Anwendung zu aktivieren.
+>Aktivieren Sie die Option **Aktivieren AEM Content Services aktivieren** , um mit Platzierungen zu arbeiten, und aktivieren Sie sie im Dashboard Ihrer AEM Mobile-Anwendung.
 >
->Siehe [Verwalten von Content Services](/help/mobile/developing-content-services.md) für weitere Details.
+>Weitere Informationen finden Sie unter [Verwalten von Content Services](/help/mobile/developing-content-services.md) .
 
 Nachdem Sie die Leerzeichen im Dashboard konfiguriert haben, führen Sie die folgenden Schritte aus, um Leerzeichen zu erstellen:
 
-1. Auswählen **Leerzeichen** von Content Services aus.
+1. Wählen Sie **Leerzeichen** aus Content Services.
 
    ![chlimage_1-83](assets/chlimage_1-83.png)
 
-1. Auswählen **Erstellen** , um ein Leerzeichen zu erstellen. Eingabe **Titel**, **Name**, und **Beschreibung** für den Bereich.
+1. Wählen Sie **Erstellen** aus, um ein Leerzeichen zu erstellen. Geben Sie **Titel**, **Name** und **Beschreibung** für den Bereich ein.
 
    Klicken Sie auf **Erstellen**.
 
@@ -61,20 +61,20 @@ Sie können die Eigenschaften des Bereichs anzeigen, das Leerzeichen löschen od
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
-**Anzeigen und Bearbeiten von Eigenschaften eines Bereichs**
+**Anzeigen und Bearbeiten von Eigenschaften eines Leerzeichens**
 
 1. Wählen Sie den Abstand aus der Liste aus
-1. Auswählen **Eigenschaften** über die Symbolleiste
-1. Klicks **Schließen** wann geschehen
+1. Wählen Sie **Eigenschaften** aus der Symbolleiste
+1. Klicken Sie nach Abschluss auf **Schließen** .
 
 **Veröffentlichen eines Platzes** Wenn ein Leerzeichen veröffentlicht wird, werden auch alle Ordner und Entitäten in diesem Bereich veröffentlicht.
 
 1. Wählen Sie die Platzierung aus, indem Sie in der Liste &quot;Space Console&quot;auf das entsprechende Symbol klicken
-1. Auswählen **Veröffentlichungsstruktur**
+1. Wählen Sie **Publish Tree**
 
 >[!NOTE]
 >
->Sie können **Veröffentlichung rückgängig machen** ein Leerzeichen, das den Speicherplatz aus der Veröffentlichungsinstanz entfernt.
+>Sie können **Veröffentlichung rückgängig machen** ein Leerzeichen verwenden, wodurch der Speicherplatz aus der Veröffentlichungsinstanz entfernt wird.
 >
 >Die folgende Abbildung zeigt die Aktionen, die nach der Veröffentlichung des Platzes ausgeführt werden können.
 
@@ -86,15 +86,15 @@ Leerzeichen können Ordner enthalten, die die weitere Organisation des Inhalts u
 
 ### Erstellen eines Ordners {#creating-a-folder}
 
-1. Klicken Sie in der Platzierung in der Platzierungskonsole auf die Platzierung und klicken Sie auf **Ordner erstellen**
+1. Klicken Sie auf den Bereich in der Liste in der Leertaste und klicken Sie auf **Ordner erstellen** .
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
 
-1. Geben Sie die **Titel**, **Name,** und **Beschreibung** für den Ordner
+1. Geben Sie den **Titel**, den **Namen, den** und den **Beschreibung** für den Ordner ein
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-1. Klicks **Erstellen** , um den Ordner in einem Bereich zu erstellen
+1. Klicken Sie auf **Erstellen** , um den Ordner in einem Leerzeichen zu erstellen.
 
 ## Sprachkopie {#language-copy}
 
@@ -102,7 +102,7 @@ Leerzeichen können Ordner enthalten, die die weitere Organisation des Inhalts u
 >
 >Die Sprachkopie ist für diese Version nicht vollständig funktionsfähig. Es wird nur die Struktur eingerichtet.
 
-Die **Sprachkopie** können Autoren ihre Master-Sprachkopie kopieren und dann ein Projekt und einen Workflow erstellen, um den Inhalt automatisch zu übersetzen. Sprachkopie erstellt die korrekte Struktur. Nachdem Sie einen Ordner in einem Bereich hinzugefügt haben, können Sie dem Bereich Sprachkopie hinzufügen.
+Mit der Funktion **Sprachkopie** können Autoren ihre Master-Sprachkopie kopieren und dann ein Projekt und einen Workflow erstellen, um den Inhalt automatisch zu übersetzen. Sprachkopie erstellt die korrekte Struktur. Nachdem Sie einen Ordner in einem Bereich hinzugefügt haben, können Sie dem Bereich Sprachkopie hinzufügen.
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ Die **Sprachkopie** können Autoren ihre Master-Sprachkopie kopieren und dann ei
 
 1. Nachdem Sie einen Bereich erstellt haben, klicken Sie auf diesen Bereich, um eine Sprachkopie zu erstellen.
 
-   Klicks **Erstellen** und wählen **Sprachkopie**.
+   Klicken Sie auf **Erstellen** und wählen Sie **Sprachkopie**.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
@@ -120,24 +120,24 @@ Die **Sprachkopie** können Autoren ihre Master-Sprachkopie kopieren und dann ei
    >
    >Sprachkopie-Knoten können nur als direktes untergeordnetes Element des Space vorhanden sein.
 
-1. Auswählen **Content Package Language&amp;ast;** und geben Sie die **Title&amp;ast;** in **Sprachkopie erstellen** angezeigt.
+1. Wählen Sie **Content Package Language&amp;ast;** und geben Sie den **Titel&amp;ast;** im Dialogfeld **Sprachkopie erstellen** ein.
 
    Klicken Sie auf **Erstellen**.
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Nachdem Sie eine Sprachkopie erstellt haben, wird sie in Ihrem Bereich in **Sprach-Master**.
+1. Nachdem Sie eine Sprachkopie erstellt haben, wird sie in Ihrem Bereich in **Sprach-Masters** angezeigt.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
    >[!NOTE]
    >
-   >Auswählen **Sprach-Master** , um die Ordner für Sprachkopien anzuzeigen.
+   >Wählen Sie **Sprach-Master** aus, um die Ordner für die Sprachkopie anzuzeigen.
 
 ### Entfernen eines Ordners aus dem Leerzeichen {#removing-a-folder-from-the-space}
 
 1. Wählen Sie den Ordner aus der Liste der Platzierungsinhalte aus
-1. Klicks **Löschen** über die Symbolleiste
+1. Klicken Sie in der Symbolleiste auf **Löschen** .
 
    >[!NOTE]
    >
@@ -169,11 +169,11 @@ Wenn Entitätsuntergeordnete Elemente, die andere Entitäten sind, für die Date
 
    >[!NOTE]
    >
-   >Sie haben die Möglichkeit, die **Asset-Modell**, **Seitenmodell** oder ein Modell des zuvor erstellten Entitätstyps.
+   >Sie können das **Assets-Modell**, das **Seitenmodell** oder ein Modell des zuvor erstellten Entitätstyps auswählen.
    >
-   >Siehe [Erstellen eines Modells](/help/mobile/administer-mobile-apps.md), um Ihre benutzerdefinierte Entität zu erstellen.
+   >Siehe [Erstellen eines Modells](/help/mobile/administer-mobile-apps.md) , um Ihre benutzerdefinierte Entität zu erstellen.
 
-1. Geben Sie einen **Titel**, **Name**, **Beschreibung**, und **Tags** für die Entität. Klicken Sie auf **Erstellen**.
+1. Geben Sie einen **Titel**, **Name**, **Beschreibung** und **Tags** für die Entität ein. Klicken Sie auf **Erstellen**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
@@ -191,35 +191,35 @@ Wenn Entitätsuntergeordnete Elemente, die andere Entitäten sind, für die Date
 
    >[!CAUTION]
    >
-   >Abhängig von der Vorlage, die Sie für die Erstellung Ihrer Entität auswählen, ist die Benutzeroberfläche für die Bearbeitung und Anzeige der Eigenschaften Ihrer Entität unterschiedlich. Weitere Informationen finden Sie in den folgenden Schritten.
+   >Abhängig von der Vorlage, die Sie für die Erstellung Ihrer Entität auswählen, ist die Benutzeroberfläche für die Bearbeitung und Anzeige der Eigenschaften Ihrer Entität unterschiedlich. Führen Sie die folgenden Schritte aus, um mehr zu erfahren.
 
-   ***Wenn Sie die Vorlage zum Erstellen der Entität als Asset-Modelle auswählen***, indem Sie auf **Bearbeiten** können Sie Assets hinzufügen, wie in der folgenden Abbildung dargestellt:
+   ***Wenn Sie die Vorlage zum Erstellen der Entität als Assets-Modelle auswählen, können Sie durch Klicken auf **Bearbeiten**Assets hinzufügen, wie in der folgenden Abbildung dargestellt:***
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
-   Alternativ können Sie auf **Vorschau** um den JSON-Link anzuzeigen.
+   Alternativ können Sie auf **Vorschau** klicken, um den JSON-Link anzuzeigen.
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
-   ***Wenn Sie die Vorlage zum Erstellen der Entität als Seitenmodelle auswählen***, indem Sie auf **Bearbeiten** können Sie Assets hinzufügen, wie in der folgenden Abbildung dargestellt:
+   ***Wenn Sie die Vorlage zum Erstellen der Entität als Seitenmodelle auswählen***, können Sie durch Klicken auf **Bearbeiten** Assets hinzufügen, wie in der folgenden Abbildung dargestellt:
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-   Klicken Sie auf das Symbol im **Pfad** Hinzufügen eines Assets
+   Klicken Sie auf das Symbol im **Pfad** , um ein Asset hinzuzufügen.
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
    >[!NOTE]
    >
-   >Nachdem Sie eine Entität hinzugefügt haben, muss sie gespeichert werden, damit der Vorschau-Link funktioniert. Um die Vorschau anzuzeigen, klicken Sie **Speichern**. Klicken Sie auf die **Vorschau** zeigt die JSON-Datei des hinzugefügten Assets, wie in der folgenden Abbildung dargestellt:
+   >Nachdem Sie eine Entität hinzugefügt haben, muss sie gespeichert werden, damit der Vorschau-Link funktioniert. Um die Vorschau anzuzeigen, klicken Sie auf **Speichern**. Wenn Sie auf **Vorschau** klicken, wird der JSON des hinzugefügten Assets angezeigt, wie in der folgenden Abbildung dargestellt:
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
    >[!NOTE]
    >
-   >Wenn Sie der Entität Assets hinzugefügt haben, können Sie entweder **Speichern** speichern oder wählen Sie **Speichern und schließen** , um die Liste der Space Console zu speichern und zur Liste der Entitäten umzuleiten.
+   >Wenn Sie die Assets zu Ihrer Entität hinzugefügt haben, können Sie entweder **Speichern** auswählen, um die Änderungen zu speichern, oder Sie wählen **Speichern und schließen**, um die Liste der Space Console zu speichern und zur Liste der Leerzeichen-Konsolen umzuleiten, in der die Entitäten definiert sind.
 
-   Wählen Sie außerdem eine Entität aus der Liste der Leerzeichen-Konsole aus und klicken Sie auf **Eigenschaften** um die Eigenschaften für eine definierte Entität anzuzeigen und zu bearbeiten.
+   Wählen Sie außerdem eine Entität aus der Liste der Leerzeichen-Konsolen aus und klicken Sie auf **Eigenschaften** , um die Eigenschaften für eine definierte Entität anzuzeigen und zu bearbeiten.
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
@@ -233,16 +233,16 @@ Wenn Entitätsuntergeordnete Elemente, die andere Entitäten sind, für die Date
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Klicks **Löschen** aus der Symbolleiste, um die spezifische Entität aus dem Bereich zu entfernen
+1. Klicken Sie in der Symbolleiste auf **Löschen** , um die bestimmte Entität aus dem Bereich zu entfernen.
 
 ### Veröffentlichen einer Entität {#publishing-an-entity}
 
-Sie haben die Möglichkeit, **Veröffentlichungsstruktur** oder **Quick Publish** , um Ihre Entität zu veröffentlichen.
+Sie können **Publish Tree** oder **Quick Publish** auswählen, um Ihre Entität zu veröffentlichen.
 
-1. Wählen Sie eine Entität aus der Liste der Leerzeichen-Konsolen aus und klicken Sie auf &quot;Struktur veröffentlichen&quot;, um diese Entität und ihre untergeordneten Elemente zu veröffentlichen.
+1. Wählen Sie eine Entität aus der Liste der Leerzeichen-Konsolen aus und klicken Sie auf &quot;Publish Tree&quot;, um diese Entität und ihre untergeordneten Elemente zu veröffentlichen.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
    **Oder**
 
-   Klicks **Quick Publish** , um diese spezifische Entität zu veröffentlichen.
+   Klicken Sie auf **Quick Publish** , um die jeweilige Entität zu veröffentlichen.

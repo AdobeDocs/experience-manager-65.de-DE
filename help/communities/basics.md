@@ -18,27 +18,27 @@ ht-degree: 1%
 
 # Grundlagen zu Communities-Komponenten {#communities-components-basics}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Im Abschnitt &quot;Authoring&quot;der Dokumentation wird beschrieben, wie Sie im Bearbeitungsmodus für Autoren Communities-Funktionen zu AEM Sites hinzufügen und Komponentenkonfigurationen beschreiben.
 
-Komponenten können mithilfe einer AEM-Instanz und der interaktiven [Handbuch zu Community-Komponenten](components-guide.md).
+Komponenten können mithilfe einer AEM-Instanz und des interaktiven Leitfadens [Community-Komponenten](components-guide.md) untersucht werden.
 
 ## Zugreifen auf Communities-Komponenten {#accessing-communities-components}
 
 Wenn beim Erstellen von Seiteninhalten die zugrunde liegende Vorlage Änderungen am Design der Seite zulässt, ist es möglich, Komponenten zu aktivieren, die im Komponenten-Browser nicht bereits als Teil des Site-Designs verfügbar sind.
 
-Die verfügbaren Communities-Komponenten werden aufgelistet [here](author-communities.md#available-communities-components).
+Die verfügbaren Communities-Komponenten werden [hier](author-communities.md#available-communities-components) aufgelistet.
 
 >[!NOTE]
 >
->Allgemeine Informationen zum Authoring finden Sie unter [Kurzanleitung zum Erstellen von Seiten](../../help/sites-authoring/qg-page-authoring.md).
+>Allgemeine Informationen zum Authoring finden Sie in der [Kurzanleitung zum Erstellen von Seiten](../../help/sites-authoring/qg-page-authoring.md).
 >
->Wenn Sie nicht mit AEM vertraut sind, lesen Sie die Dokumentation unter [grundlegende Handhabung](../../help/sites-authoring/basic-handling.md).
+>Wenn Sie nicht mit AEM vertraut sind, lesen Sie die Dokumentation zur [grundlegenden Handhabung](../../help/sites-authoring/basic-handling.md).
 
 ### Aufrufen des Designmodus {#entering-design-mode}
 
-Wenn eine **Communities** -Komponente nicht im Komponenten-Browser gefunden werden (Sidekick), muss `Design Mode` , um weitere Communities-Komponenten hinzuzufügen. [Erforderliche clientseitige Bibliotheken](#required-clientlibs) (clientlibs) hinzugefügt werden.
+Wenn keine **Communities** -Komponente im Komponenten-Browser (Sidekick) gefunden wird, müssen Sie `Design Mode` eingeben, um andere Communities-Komponenten hinzuzufügen. [Erforderliche clientseitige Bibliotheken](#required-clientlibs) (clientlibs) müssen möglicherweise ebenfalls hinzugefügt werden.
 
 Weitere Informationen finden Sie unter [Konfigurieren von Komponenten im Designmodus](../../help/sites-authoring/default-components-designmode.md).
 
@@ -70,9 +70,9 @@ Viele Communities-Funktionen können so konfiguriert werden, dass Mitglieder Inh
 
 Wenn Tagging zulässig ist, kann die Konfiguration der Community-Site so festgelegt sein, dass die Namespaces, die Mitgliedern in der Veröffentlichungsumgebung angezeigt werden, beschränkt werden. Siehe [Community-Sites-Konsole](sites-console.md#tagging).
 
-Funktionen, die Tagging ermöglichen: [Blog](blog-feature.md), [calendar](calendar.md), [Dateibibliothek](file-library.md), [Forum](forum.md)
+Funktionen, die Tagging ermöglichen: [blog](blog-feature.md), [calendar](calendar.md), [file library](file-library.md), [forum](forum.md)
 
-Funktionen, die Tags verwenden: [suchen](search.md), [Social Tag Cloud](tagcloud.md)
+Funktionen, die Tags verwenden: [search](search.md), [social tag cloud](tagcloud.md)
 
 Für Informationen zur Bearbeitung:
 

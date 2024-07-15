@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Das Paket `com.adobe.cq.social.ugcbase.SocialUtils` wurde in AEM 6.1 nicht mehr unterstützt.
 
-In den folgenden Tabellen sind die Methoden aufgeführt, die anstelle von `SocialUtils` -Methoden.
+In den folgenden Tabellen sind die Methoden aufgeführt, die anstelle von `SocialUtils` -Methoden verwendet werden sollen.
 
 ## SocialResourceUtilities-Paket  {#socialresourceutilities-package}
 

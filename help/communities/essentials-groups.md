@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Die Funktion &quot;Community-Gruppen&quot;ermöglicht die dynamische Erstellung einer Subcommunity auf einer Community-Site durch autorisierte Benutzer aus der Veröffentlichungs- und Autorenumgebung.
 
-Als Communitys [Feature Pack 1](deploy-communities.md#latestfeaturepack)kann es sein, dass Gruppen in anderen Gruppen verschachtelt sind.
+Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack) können Gruppen in anderen Gruppen verschachtelt werden.
 
 ## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
@@ -86,15 +86,15 @@ Als Communitys [Feature Pack 1](deploy-communities.md#latestfeaturepack)kann es 
 
 ### Gruppenfunktion {#groups-function}
 
-Eine Community-Site-Struktur mit [Gruppenfunktion](functions.md#groups-function) unterstützt die Erstellung neuer `community groups` aus der Veröffentlichungs- und Autorenumgebung. Die erstellte Community-Gruppe umfasst eine `community groups member list` -Komponente, die die Mitglieder der Gruppe auflistet.
+Eine Community-Site-Struktur mit der Funktion [Gruppen](functions.md#groups-function) unterstützt die Erstellung neuer `community groups` in der Veröffentlichungs- und Autorenumgebung. Die erstellte Community-Gruppe enthält eine `community groups member list` -Komponente, die die Mitglieder der Gruppe auflistet.
 
-Ein oder mehrere [Community-Gruppenvorlagen](tools-groups.md), die das Design der Community-Gruppenseiten bereitstellen, können für die Funktion Gruppen konfiguriert werden. Dies gilt, wenn die Funktion zu einem [Community-Site-Vorlage](sites.md) oder in einer Community-Gruppenvorlage verschachtelt sind.
+Eine oder mehrere [Community-Gruppenvorlagen](tools-groups.md), die das Design der Community-Gruppenseiten bereitstellen, können für die Funktion Gruppen konfiguriert werden. Dies gilt, wenn die Funktion einer [Community-Site-Vorlage](sites.md) hinzugefügt oder in einer Community-Gruppenvorlage verschachtelt wird.
 
-Die Einbeziehung mehrerer Community-Gruppenvorlagen führt zu einer Auswahl. Das heißt, die Auswahl des Designs wird dem autorisierten Benutzer zum Zeitpunkt der Erstellung einer Community-Gruppe für die Community-Site angezeigt. Siehe Abschnitt zu [Community-Gruppen](creating-groups.md) für Autoren.
+Die Einbeziehung mehrerer Community-Gruppenvorlagen führt zu einer Auswahl. Das heißt, die Auswahl des Designs wird dem autorisierten Benutzer zum Zeitpunkt der Erstellung einer Community-Gruppe für die Community-Site angezeigt. Weitere Informationen finden Sie im Abschnitt zu [Community-Gruppen](creating-groups.md) für Autoren.
 
 ### Verschachtelte Gruppen {#nested-groups}
 
-Als Communitys [FP1](deploy-communities.md#latestfeaturepack)kann eine Gruppenfunktion in eine Gruppenvorlage aufgenommen werden, sodass verschachtelte Gruppen (Untergruppen) möglich sind.
+Ab Communities [FP1](deploy-communities.md#latestfeaturepack) ist es möglich, eine Gruppenfunktion in eine Gruppenvorlage aufzunehmen, um verschachtelte Gruppen (Untergruppen) zuzulassen.
 
 Wenn eine Community-Site oder eine Gruppenvorlage die Funktion Gruppen enthält, können Sie Folgendes tun:
 

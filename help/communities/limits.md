@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Beitragsgrenzen der Mitgliedstaaten {#member-contribution-limits}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Mit der Beitragsbegrenzungsfunktion können Sie die Beiträge von Community-Mitgliedern einschränken, um sie vor Spam zu schützen.
 
 Wenn ein Mitglied eingeschränkt ist, führen Beiträge, die die zulässige Anzahl von Beiträgen überschreiten, zu einem Warnhinweis, dass die Beschränkung überschritten wurde und der Beitrag abgelehnt wird. Das Community-Mitglied kann dann zum Community-Message-Center gehen und sich an einen Community-Manager wenden, der die Einschränkungen ggf. entfernen kann.
 
-Beitragslimits können einzeln über die [Mitgliederkonsole](members.md) und/oder so konfiguriert sind, dass sie automatisch aktiviert werden, wenn Site-Besucher neue Mitglieder werden.
+Beitragsbeschränkungen können einzeln über die [Mitgliederkonsole](members.md) aktiviert und/oder so konfiguriert werden, dass sie automatisch aktiviert werden, wenn Sitebesucher neue Mitglieder werden.
 
 Mithilfe der Mitgliederkonsole können Beitragsbeschränkungen für ein Mitglied jederzeit von einem Community-Manager proaktiv entfernt oder reaktiv entfernt werden, wenn ein Mitglied eine Nachricht an einen Community-Manager sendet, der eine solche Anfrage sendet.
 
@@ -40,18 +40,18 @@ So erreichen Sie diese OSGi-Konfiguration:
 
 * Im primären Herausgeber:
 * Melden Sie sich mit Administratorrechten an.
-* Zugriff auf [Web-Konsole](../../help/sites-deploying/configuring-osgi.md).
+* Rufen Sie die [Web-Konsole](../../help/sites-deploying/configuring-osgi.md) auf.
 
    * Beispiel: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Suchen `AEM Communities User Generated Content Contribution Limits Configuration`.
+* Suchen Sie `AEM Communities User Generated Content Contribution Limits Configuration`.
 * Wählen Sie das Bearbeitungssymbol aus.
 
 ![configure-limits](assets/configure-limits.png)
 
 * **[!UICONTROL Automatische Anwendung von UGC-Beitragslimits]**
 
-  Wenn diese Option aktiviert ist, legen Sie Benutzern automatisch Beitragsbeschränkungen fest, wenn sie sich als Community-Mitglieder registrieren. Dies spiegelt sich im Profil des Community-Mitglieds wider und kann über die [Mitgliederkonsole](members.md). Neue Mitglieder mit einer E-Mail-Adresse aus einer Zulassungsliste von Domänen werden nie eingeschränkt.
+  Wenn diese Option aktiviert ist, legen Sie Benutzern automatisch Beitragsbeschränkungen fest, wenn sie sich als Community-Mitglieder registrieren. Dies spiegelt sich im Profil des Community-Mitglieds wider und kann über die [Mitgliederkonsole](members.md) aktiviert/deaktiviert werden. Neue Mitglieder mit einer E-Mail-Adresse aus einer Zulassungsliste von Domänen werden nie eingeschränkt.
 
   Die Option Standard ist deaktiviert.
 
@@ -61,7 +61,7 @@ So erreichen Sie diese OSGi-Konfiguration:
 
   Der Standardwert ist zehn Beiträge.
 
-* **[!UICONTROL UGC-Grenzfrequenz]**
+* **[!UICONTROL UGC-Begrenzungshäufigkeit]**
 
   Der Zeitraum, der die UGC-Grenze einschränkt.
 
@@ -71,11 +71,11 @@ So erreichen Sie diese OSGi-Konfiguration:
 
   Eine Zulassungsliste mit einer oder mehreren E-Mail-Domänen. Wählen Sie das Symbol + aus, um weitere Einträge vorzunehmen.
 
-  Benutzer mit E-Mail-Adressen in der Zulassungsliste der Domänen sind nicht betroffen, wenn die UGC-Beitragsbeschränkungen automatisch angewendet werden. Beispiel: Wenn die Domäne `mycompany.com` der Liste der Domänen hinzugefügt wird, wird ein Mitglied mit E-Mail-Adresse `me@mycompany.com` ist nie vom Posten ausgeschlossen.
+  Benutzer mit E-Mail-Adressen in der Zulassungsliste der Domänen sind nicht betroffen, wenn die UGC-Beitragsbeschränkungen automatisch angewendet werden. Wenn beispielsweise die Domäne `mycompany.com` zur Liste der Domänen hinzugefügt wird, ist ein Mitglied mit der E-Mail-Adresse `me@mycompany.com` nie vom Posten ausgeschlossen.
 
   Der Standardwert ist eine leere Zulassungsliste.
 
-* **[!UICONTROL Messaging-Empfänger]**
+* **[!UICONTROL Empfänger-Nachrichten]**
 
   Liste mit einer oder mehreren autorisierbaren IDs von Mitgliedern, die die Beitragsbeschränkungen für Mitglieder ändern können. Wählen Sie das Symbol + aus, um weitere Einträge vorzunehmen.
 

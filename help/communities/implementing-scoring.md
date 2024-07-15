@@ -20,19 +20,19 @@ ht-degree: 3%
 
 # Communities-Scoring und -Abzeichen {#communities-scoring-and-badges}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Die AEM Communities-Scoring- und -Badges-Funktion bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
 
 Die wichtigsten Aspekte von Scoring und Badges sind:
 
-* [Zuweisen von Abzeichen](#assign-and-revoke-badges) die Rolle eines Mitglieds in der Gemeinschaft zu identifizieren.
+* [Weisen Sie Abzeichen zu](#assign-and-revoke-badges), um die Rolle eines Mitglieds in der Community zu identifizieren.
 
-* [Grundlegende Vergabe von Abzeichen](#enable-scoring) an die Mitglieder, um ihre Teilnahme zu fördern (Menge der erstellten Inhalte).
+* [Grundlegende Vergabe von Badges](#enable-scoring) an Mitglieder, um deren Teilnahme zu fördern (Menge des erstellten Inhalts).
 
-* [Erweiterte Vergabe von Abzeichen](/help/communities/advanced.md) Identifizierung der Mitglieder als Experten (Qualität der erstellten Inhalte).
+* [Erweiterte Vergabe von Abzeichen](/help/communities/advanced.md) zur Identifizierung von Mitgliedern als Experten (Qualität der erstellten Inhalte).
 
-**Hinweis** die Vergabe von Abzeichen [nicht standardmäßig aktiviert](/help/communities/implementing-scoring.md#main-pars-text-237875536).
+**Hinweis**: Das Verteilen von Abzeichen ist [standardmäßig nicht aktiviert](/help/communities/implementing-scoring.md#main-pars-text-237875536).
 
 >[!CAUTION]
 >
@@ -52,17 +52,17 @@ Badges werden in UGC unterschieden, ob sie gemäß den Regeln zugewiesen wurden 
 
 ### Benutzeroberfläche der Badge-Verwaltung {#badge-management-ui}
 
-Die Gemeinschaften [Badges-Konsole](/help/communities/badges.md) können Sie benutzerdefinierte Abzeichen hinzufügen, die für ein Mitglied angezeigt werden können, wenn es eine bestimmte Rolle in der Community spielt (zugewiesen).
+Mit der Communities [Badges-Konsole](/help/communities/badges.md) können Sie benutzerdefinierte Abzeichen hinzufügen, die für ein Mitglied angezeigt werden können, wenn es eine bestimmte Rolle in der Community spielt (zugewiesen).
 
 ### Zugewiesene Abzeichen {#assigned-badges}
 
 Rollenbasierte Abzeichen werden von einem Administrator den Community-Mitgliedern basierend auf ihrer Rolle in der Community zugewiesen.
 
-Zugewiesene (und zuerkannte) Abzeichen werden in der ausgewählten [SRP](/help/communities/srp.md) und nicht direkt zugänglich sind. Solange keine grafische Benutzeroberfläche verfügbar ist, können rollenbasierte Abzeichen nur mit Code oder cURL zugewiesen werden. Anweisungen zu cURL finden Sie im Abschnitt mit dem Titel [Zuweisen und Sperren von Abzeichen](#assign-and-revoke-badges).
+Zugewiesene (und vergebene) Badges werden im ausgewählten [SRP](/help/communities/srp.md) gespeichert und sind nicht direkt zugänglich. Solange keine grafische Benutzeroberfläche verfügbar ist, können rollenbasierte Abzeichen nur mit Code oder cURL zugewiesen werden. Anweisungen zu cURL finden Sie im Abschnitt mit dem Titel [Zuweisen und Sperren von Abzeichen](#assign-and-revoke-badges).
 
 In der Version sind drei rollenbasierte Abzeichen enthalten:
 
-* **Moderator**
+* **moderator**
   `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
 
 * **Gruppenmanager**
@@ -79,31 +79,31 @@ Belohnungsbasierte Abzeichen werden vom Scoring-Dienst an Community-Mitglieder v
 
 Damit Abzeichen als Belohnung für Aktivitäten angezeigt werden, müssen zwei Dinge geschehen:
 
-* Badging muss [enabled](#enableforcomponent) für die Funktionskomponente.
-* Scoring- und Badging-Regeln müssen [angewendet](#applytopage) auf der Seite (oder dem Vorgänger), auf der die Komponente platziert wird.
+* Das Abzeichen muss für die Feature-Komponente [enabled](#enableforcomponent) sein.
+* Scoring- und Badging-Regeln müssen [angewendet](#applytopage) auf die Seite (oder den Vorgänger) angewendet werden, auf der die Komponente platziert wird.
 
 In der Version sind drei belohnungsbasierte Abzeichen enthalten:
 
-* **Gold**
+* **gold**
   `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
 * **silber**
   `/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
-* **Bronze**
+* **bronze**
   `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-  ![Auszeichnung](assets/awarded-badges.png)
+  ![zeichen-badges](assets/awarded-badges.png)
 
 >[!NOTE]
 >
 >Scoring-Regeln können so konfiguriert werden, dass negative Punkte für Beiträge zugewiesen werden, die als unangemessen gekennzeichnet sind und sich daher auf den Punktwert auswirken. Nachdem ein Badge jedoch verdient wurde, wird es aufgrund von Scoring-Punktreduzierung oder Änderungen der Scoring-Regel nicht automatisch entfernt.
 >
->Zugewiesene Abzeichen können wie zugewiesene Abzeichen widerrufen werden. Siehe [Zuweisen und Sperren von Abzeichen](#assign-and-revoke-badges) Abschnitt. Zukünftige Verbesserungen umfassen eine Benutzeroberfläche zur Verwaltung der Abzeichen von Mitgliedern.
+>Zugewiesene Abzeichen können wie zugewiesene Abzeichen widerrufen werden. Siehe Abschnitt [Badges zuweisen und widerrufen](#assign-and-revoke-badges) . Zukünftige Verbesserungen umfassen eine Benutzeroberfläche zur Verwaltung der Abzeichen von Mitgliedern.
 
 ### Benutzerdefinierte Abzeichen {#custom-badges}
 
-Benutzerdefinierte Abzeichen können mit der [Badges-Konsole](/help/communities/badges.md) und entweder zugewiesen oder in Badging-Regeln angegeben.
+Benutzerdefinierte Badges können mithilfe der [Badges Console](/help/communities/badges.md) installiert und in Badging-Regeln zugewiesen oder angegeben werden.
 
 Bei der Installation über die Badges-Konsole werden benutzerdefinierte Abzeichen automatisch in die Veröffentlichungsumgebung repliziert.
 
@@ -112,22 +112,22 @@ Bei der Installation über die Badges-Konsole werden benutzerdefinierte Abzeiche
 Die Auswertung ist standardmäßig nicht aktiviert. Die grundlegenden Schritte zum Einrichten und Aktivieren der Auswertung und Verleihung von Abzeichen sind:
 
 * Identifizieren Sie Regeln für Ertragspunkte ([Scoring-Regeln](#scoring-rules)).
-* Für Punkte, die nach Scoring-Regeln gesammelt wurden, weisen Sie [Badges](#badges) ([Badging-Regeln](#badging-rules)).
+* Weisen Sie für Punkte, die gemäß Scoring-Regeln gesammelt wurden, [Badges](#badges) ([Badging-Regeln](#badging-rules)) zu.
 
-* [Anwenden der Scoring- und Badging-Regeln auf eine Community-Site](#apply-rules-to-content).
-* [Aktivieren von Abzeichen für Community-Funktionen](#enable-badges-for-component).
+* [Wenden Sie die Scoring- und Badging-Regeln auf eine Community-Site an](#apply-rules-to-content).
+* [Aktivieren Sie Badging für Community-Funktionen](#enable-badges-for-component).
 
-Siehe [Schnelltest](#quick-test) -Abschnitt, um die Scoring-Funktion für eine Community-Site mithilfe der standardmäßigen Scoring- und Badging-Regeln für Foren und Kommentare zu aktivieren.
+Informationen zum Aktivieren der Scoring-Funktion für eine Community-Site mithilfe der standardmäßigen Scoring- und Badging-Regeln für Foren und Kommentare finden Sie im Abschnitt [Schnelltest](#quick-test) .
 
 ### Regeln auf Inhalt anwenden {#apply-rules-to-content}
 
-Um Scoring und Badges zu aktivieren, fügen Sie die Eigenschaften hinzu `scoringRules` und `badgingRules` zu einem beliebigen Knoten in der Inhaltsstruktur für die Site hinzu.
+Um Scoring und Badges zu aktivieren, fügen Sie die Eigenschaften `scoringRules` und `badgingRules` zu einem beliebigen Knoten in der Inhaltsstruktur für die Site hinzu.
 
 Wenn die Site bereits veröffentlicht wurde, veröffentlichen Sie die Site erneut, nachdem Sie alle Regeln angewendet und Komponenten aktiviert haben.
 
 Regeln, die für eine Badging-fähige Komponente gelten, sind diejenigen für den aktuellen Knoten oder dessen Vorgänger.
 
-Wenn der Knoten vom Typ `cq:Page` (empfohlen) und fügen Sie dann mithilfe von CRXDE|Lite die Eigenschaften zu seiner `jcr:content` Knoten.
+Wenn der Knoten den Typ &quot;`cq:Page`&quot;(empfohlen) aufweist und dann CRXDE|Lite verwendet, fügen Sie die Eigenschaften seinem Knoten &quot;`jcr:content`&quot;hinzu.
 
 | **Eigenschaft** | **Typ** | **Beschreibung** |
 |---|---|---|
@@ -136,13 +136,13 @@ Wenn der Knoten vom Typ `cq:Page` (empfohlen) und fügen Sie dann mithilfe von C
 
 >[!NOTE]
 >
->Wenn eine Scoring-Regel anscheinend keine Auswirkungen auf das Verteilen von Abzeichen hat, stellen Sie sicher, dass die Scoring-Regel nicht von der Eigenschaft scoringRules der Badging-Regel blockiert wurde. Siehe Abschnitt mit dem Titel [Badging-Regeln](#badging-rules).
+>Wenn eine Scoring-Regel anscheinend keine Auswirkungen auf das Verteilen von Abzeichen hat, stellen Sie sicher, dass die Scoring-Regel nicht von der Eigenschaft scoringRules der Badging-Regel blockiert wurde. Siehe Abschnitt mit dem Titel [Badging Rules](#badging-rules).
 
 ### Aktivieren von Abzeichen für Komponenten {#enable-badges-for-component}
 
-Die Scoring- und Bading-Regeln sind nur für Instanzen von Komponenten wirksam, die Badging durch Bearbeiten der Komponentenkonfiguration in [Authoring-Modus](/help/communities/author-communities.md).
+Die Scoring- und Bading-Regeln gelten nur für Instanzen von Komponenten, die das Badging durch Bearbeiten der Komponentenkonfiguration im [Authoring-Modus](/help/communities/author-communities.md) aktiviert haben.
 
-eine boolesche Eigenschaft, `allowBadges`aktiviert/deaktiviert die Anzeige von Abzeichen für eine Komponenteninstanz. Er kann im [Dialogfeld &quot;Komponentenbearbeitung&quot;](/help/communities/author-communities.md) für Forum-, Fragen- und Kommentar-Komponenten über ein Kontrollkästchen mit der Bezeichnung **Anzeigemarken**.
+Eine boolesche Eigenschaft `allowBadges` aktiviert/deaktiviert die Anzeige von Abzeichen für eine Komponenteninstanz. Sie kann im Dialogfeld [Komponentenbearbeitung](/help/communities/author-communities.md) für Forum-, QnA- und Kommentarkomponenten über ein Kontrollkästchen mit der Bezeichnung **Anzeigemarken** konfiguriert werden.
 
 #### Beispiel : allowBadges für die Instanz der Forum-Komponente {#example-allowbadges-for-forum-component-instance}
 
@@ -162,14 +162,14 @@ Scoring-Regeln werden vererbt, sind jedoch nicht additiv. Zum Beispiel:
 
 * Wenn Seite 2 die Scoring-Regel2 enthält und ihr Vorgänger Seite 1 die Scoring-Regel 1 enthält.
 * Eine Aktion auf einer Komponente &quot;Seite 2&quot;ruft sowohl Regel1 als auch Regel2 auf.
-* Wenn beide Regeln anwendbare Unterregeln für dieselben enthalten `topic/verb`:
+* Wenn beide Regeln anwendbare Unterregeln für denselben `topic/verb` enthalten:
 
    * Nur die Unterregel aus Regel 2 wirkt sich auf die Punktzahl aus.
    * Die Bewertungen aus beiden Unterregeln werden nicht hinzugefügt.
 
 Wenn es mehr als eine Scoring-Regel gibt, werden die Werte für jede Regel separat beibehalten.
 
-Scoring-Regeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf `jcr:content` -Knoten, der die Liste der Unterregeln angibt, die ihn definieren.
+Scoring-Regeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf ihrem `jcr:content` -Knoten, die die Liste der Unterregeln angeben, die sie definieren.
 
 Die Punktzahl wird im SRP gespeichert.
 
@@ -179,7 +179,7 @@ Die Punktzahl wird im SRP gespeichert.
 >
 >Scoring-Regelnamen sollten global eindeutig sein. Sie sollten nicht mit demselben Namen enden.
 >
->Ein Beispiel für *not* zu tun:
+>Ein Beispiel dafür, was *nicht* zu tun hat:
 >
 >/libs/settings/community/scoring/rules/site1/forums-scoring
 >/libs/settings/community/scoring/rules/site2/forums-scoring
@@ -194,16 +194,16 @@ Jede Scoring-Unterregel identifiziert:
 * Welche speziellen Community-Funktionen sind betroffen?
 * Wie viele Punkte werden vergeben?
 
-Standardmäßig werden Punkte dem Mitglied zugewiesen, das eine Aktion durchführt, es sei denn, die Unterregel legt den Eigentümer des Inhalts als Empfänger der Punkte fest ( `forOwner`).
+Standardmäßig werden dem Mitglied, das eine Aktion durchführt, Punkte zugewiesen, es sei denn, die Unterregel legt den Eigentümer des Inhalts als Empfänger der Punkte fest ( `forOwner`).
 
 Jede Unterregel kann in einer oder mehreren Scoring-Regeln enthalten sein.
 
-Der Name der Unterregel folgt normalerweise dem Muster der Verwendung einer *subject*, *Objekt*, und *verb*. Zum Beispiel:
+Der Name der Unterregel folgt normalerweise dem Muster der Verwendung von *subject*, *object* und *verb*. Zum Beispiel:
 
 * member-comment-create
 * member-receive-Votum
 
-Unterregeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf `jcr:content`Knoten, der die [verbs und topics](#topics-and-verbs) .
+Unterregeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf ihrem `jcr:content`Knoten, die die [Verben und Themen](#topics-and-verbs) angeben.
 
 <table>
  <tbody>
@@ -223,7 +223,7 @@ Unterregeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf `jcr:content`Kn
      <li>Es kann mehrere Verb-Eigenschaften geben, aber keine Duplikate.</li>
      <li>der Wert ist der Wert, der für dieses Ereignis gelten soll</li>
      <li>der Wert kann positiv oder negativ sein</li>
-     <li>Eine Liste der Verben, die in der Version unterstützt werden, finden Sie im <a href="#topics-and-verbs">Themen und Verben</a> Abschnitt</li>
+     <li>Eine Liste der in der Version unterstützten Verben finden Sie im Abschnitt <a href="#topics-and-verbs">Themen und Verben</a> .</li>
     </ul> </td>
   </tr>
   <tr>
@@ -233,7 +233,7 @@ Unterregeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf `jcr:content`Kn
     <ul>
      <li>optional; beschränkt die Unterregel auf Community-Komponenten, die nach Ereignisthemen identifiziert werden</li>
      <li>sofern angegeben: Wert ist eine mehrwertige Zeichenfolge von Ereignisthemen</li>
-     <li>Eine Liste der Themen in der Version finden Sie im <a href="#topics-and-verbs">Themen und Verben</a> Abschnitt</li>
+     <li>Eine Liste der Themen in der Version finden Sie im Abschnitt <a href="#topics-and-verbs">Themen und Verben</a> .</li>
      <li>Die Standardeinstellung ist, auf alle Themen anzuwenden, die mit den Verben verknüpft sind</li>
     </ul> </td>
   </tr>
@@ -260,7 +260,7 @@ Unterregeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf `jcr:content`Kn
       </ul> </li>
      <li>Wenn "erweitert", gibt die Scoring-Engine basierend auf Qualität und Menge an
       <ul>
-       <li>erfordert <a href="/help/communities/advanced.md">extra-Paket</a></li>
+       <li>erfordert ein <a href="/help/communities/advanced.md">zusätzliches Paket</a></li>
       </ul> </li>
      <li>Standardwert ist "basic"</li>
     </ul> </td>
@@ -270,24 +270,32 @@ Unterregeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf `jcr:content`Kn
 
 ### Einbezogene Scoring-Regeln und Unterregeln {#included-scoring-rules-and-sub-rules}
 
-In der Version sind zwei Scoring-Regeln für die [Forumsfunktion](/help/communities/functions.md#forum-function) (jeweils eine für die Komponenten Forum und Kommentare der Funktion Forum ):
+In der Version sind zwei Scoring-Regeln für die [Forumsfunktion](/help/communities/functions.md#forum-function) enthalten (jeweils eine für die Forum- und Kommentarkomponenten der Forumsfunktion):
 
 1. /libs/settings/community/scoring/rules/comments-scoring
 
-   * subRules[] = /libs/settings/community/scoring/rules/sub-rules/member-comment-create /libs/settings/community/scoring/rules/sub-rules/member-receive-opt /libs/settings/community/scoring/rules/sub-rules/member-given-Vage /libs/settings/community/scoring/rules/sub-rules/member-is-moderiert
+   * subRules[] =
+/libs/settings/community/scoring/rules/sub-rules/member-comment-create
+/libs/settings/community/scoring/rules/sub-rules/member-receive-voice
+/libs/settings/community/scoring/rules/sub-rules/member-given-Votum
+/libs/settings/community/scoring/rules/sub-rules/member-is-moderated
 
 1. /libs/settings/community/scoring/rules/forums-scoring
 
-   * subRules[] = /libs/settings/community/scoring/rules/sub-rules/member-forum-create /libs/settings/community/scoring/rules/sub-rules/member-receive-Vo /libs/settings/community/scoring/rules/sub-rules/member-given-voice /libs/settings/community/scoring/rules/sub-rules/member-is-moderiert
+   * subRules[] =
+/libs/settings/community/scoring/rules/subrules/member-forum-create
+/libs/settings/community/scoring/rules/sub-rules/member-receive-voice
+/libs/settings/community/scoring/rules/sub-rules/member-given-Votum
+/libs/settings/community/scoring/rules/sub-rules/member-is-moderated
 
 **Anmerkungen:**
 
-* Beide `rules` und `sub-rules` -Knoten sind vom Typ cq:Page.
+* Die Knoten `rules` und `sub-rules` weisen den Typ cq:Page auf.
 
-* `subRules` ist ein Attribut des Typs String[] zur Regel `jcr:content` Knoten.
+* `subRules` ist ein Attribut vom Typ String[] im Knoten `jcr:content` der Regel.
 
-* `sub-rules` kann für verschiedene Scoring-Regeln freigegeben werden.
-* `rules` sollte sich in einem Repository-Speicherort mit Leserechte für alle befinden.
+* `sub-rules` kann von verschiedenen Scoring-Regeln gemeinsam genutzt werden.
+* `rules` sollte sich an einem Repository-Speicherort befinden, der für alle Leserechte besitzt.
 
    * Regelnamen müssen unabhängig vom Speicherort eindeutig sein.
 
@@ -302,9 +310,9 @@ Badging-Regeln verknüpfen Scoring-Regeln mit Abzeichen, indem Folgendes angegeb
 * Bewertungsregel
 * Für die Vergabe eines bestimmten Abzeichens erforderliche Punktzahl
 
-Badging-Regeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf `jcr:content` -Knoten, der Scoring-Regeln mit Bewertungen und Abzeichen korreliert.
+Badging-Regeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf ihrem `jcr:content` -Knoten, die Scoring-Regeln mit Bewertungen und Abzeichen korrelieren.
 
-Die Badging-Regeln beinhalten eine obligatorische `thresholds` -Eigenschaft, die eine geordnete Liste von Bewertungen darstellt, die Abzeichen zugeordnet sind. Die Werte müssen in zunehmendem Wert geordnet werden. Zum Beispiel:
+Die Badging-Regeln bestehen aus einer obligatorischen `thresholds` -Eigenschaft, bei der es sich um eine geordnete Liste von Bewertungen handelt, die Abzeichen zugeordnet sind. Die Werte müssen in zunehmendem Wert geordnet werden. Zum Beispiel:
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
@@ -320,7 +328,7 @@ Die Badging-Regeln beinhalten eine obligatorische `thresholds` -Eigenschaft, die
 
 Badging-Regeln werden mit Scoring-Regeln gepaart, die bestimmen, wie Punkte gesammelt werden. Siehe Abschnitt mit dem Titel [Regeln auf Inhalt anwenden](#apply-rules-to-content).
 
-Die `scoringRules` -Eigenschaft einer Badging-Regel schränkt einfach ein, welche Scoring-Regeln mit dieser Badging-Regel gepaart werden können.
+Die Eigenschaft `scoringRules` einer Badging-Regel beschränkt lediglich, welche Scoring-Regeln mit dieser Badging-Regel gepaart werden können.
 
 >[!NOTE]
 >
@@ -338,7 +346,7 @@ Die `scoringRules` -Eigenschaft einer Badging-Regel schränkt einfach ein, welch
   <tr>
    <td>Schwellenwerte</td>
    <td>Zeichenfolge</td>
-   <td><em>(erforderlich)</em> Eine mehrwertige Zeichenfolge des Formulars "number|path"
+   <td><em>(erforderlich)</em> Eine mehrwertige Zeichenfolge des Formulars 'number|path'
     <ul>
      <li>number = Wert</li>
      <li>| = vertikaler Zeilenchar (U+007C)</li>
@@ -348,19 +356,19 @@ Die `scoringRules` -Eigenschaft einer Badging-Regel schränkt einfach ein, welch
   <tr>
    <td>badgingType</td>
    <td>Zeichenfolge</td>
-   <td><em>(optional)</em> Identifiziert die Scoring-Engine entweder als "Standard"oder als "erweitert". Wenn die erweiterte Scoring-Engine gewünscht wird, lesen Sie <a href="/help/communities/advanced.md">Erweiterte Scoring- und Badges</a>. Die Standardeinstellung ist "Standard".</td>
+   <td><em>(optional)</em> Identifiziert die Scoring-Engine entweder als "Standard"oder als "erweitert". Wenn die erweiterte Scoring-Engine gewünscht wird, finden Sie weitere Informationen unter <a href="/help/communities/advanced.md">Erweiterte Scoring- und Abzeichen</a>. Die Standardeinstellung ist "Standard".</td>
   </tr>
   <tr>
    <td>scoringRules</td>
    <td>Zeichenfolge</td>
-   <td>(<em>optional</em>) Eine mehrwertige Zeichenfolge, die die Badging-Regel auf die von den Scoring-Regeln identifizierten Scoring-Ereignisse beschränkt</td>
+   <td>(<em>optional</em>) Eine Zeichenfolge mit mehreren Werten, um die Badging-Regel auf die durch die Scoring-Regeln identifizierten Scoring-Ereignisse zu beschränken</td>
   </tr>
  </tbody>
 </table>
 
 ### Einbezogene Badging-Regeln {#included-badging-rules}
 
-In der Version sind zwei Badging-Regeln enthalten, die dem [Foren und Kommentar-Scoring-Regeln](#includedscoringrules).
+In der Version sind zwei Badging-Regeln enthalten, die den [Foren und Kommentar-Scoring-Regeln](#includedscoringrules) entsprechen.
 
 * `/libs/settings/community/badging/rules/comments-badging`
 
@@ -368,8 +376,8 @@ In der Version sind zwei Badging-Regeln enthalten, die dem [Foren und Kommentar-
 
 **Anmerkungen:**
 
-* `rules` -Knoten sind vom Typ cq:Page.
-* `rules` sollte sich in einem Repository-Speicherort mit Leserechte für alle befinden.
+* `rules` -Knoten weisen den Typ cq:Page auf.
+* `rules` sollte sich an einem Repository-Speicherort befinden, der für alle Leserechte besitzt.
 
    * Regelnamen müssen unabhängig vom Speicherort eindeutig sein.
 
@@ -379,29 +387,33 @@ In der Version sind zwei Badging-Regeln enthalten, die dem [Foren und Kommentar-
 
 ## Zuteilen und Entziehen von Abzeichen {#assign-and-revoke-badges}
 
-Abzeichen können Mitgliedern zugewiesen werden, indem sie entweder die [Mitgliederkonsole](/help/communities/members.md#badges-tab) oder programmgesteuert mithilfe von cURL-Befehlen.
+Kennzeichen können Mitgliedern entweder über die Konsole [Mitglieder](/help/communities/members.md#badges-tab) oder programmgesteuert über cURL-Befehle zugewiesen werden.
 
 Die folgenden cURL-Befehle zeigen, was für eine HTTP-Anfrage zum Zuweisen und Sperren von Badges erforderlich ist. Das Standardformat lautet:
 
-cURL -i -X POST -H *header* -u *Anmelden* -F *operation* -F *badge* *member-profile-url*
+cURL -i -X POST -H *header* -u *signin* -F *operation* -F *badge* *member-profile-url*
 
-*header* = Benutzerdefinierte Kopfzeile &quot;Accept:application/json&quot;, die an den Server übergeben wird (erforderlich)
+*header* = &quot;Accept:application/json&quot;
+Benutzerdefinierter Header, der an den Server übergeben wird (erforderlich)
 
-*Anmelden* = administrator-id:password zum Beispiel admin:admin
+*signin* = administrator-id:password
+Beispiel: admin:admin
 
 *operation* = &quot;:operation=social:assignBadge&quot; ODER &quot;:operation=social:deleteBadge&quot;
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
-*badge-image-file* = der Speicherort der Badge-Bilddatei im Repository, z. B. /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
+*badge-image-file* = der Speicherort der Badge-Bilddatei im Repository
+Beispiel: /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
 
-*member-profile-url* = Endpunkt für das Profil des Mitglieds in der Veröffentlichungsinstanz, z. B. https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
+*member-profile-url* = der Endpunkt für das Profil des Mitglieds bei der Veröffentlichung
+Beispiel: https://&lt;Server>:&lt;Port>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
 >Die *member-profile-url*:
 >
->* Kann auf eine Autoreninstanz verweisen, wenn die Variable [Tunneldienst](/help/communities/users.md#tunnel-service) aktiviert ist.
+>* Kann auf eine Autoreninstanz verweisen, wenn der [Tunnel-Dienst](/help/communities/users.md#tunnel-service) aktiviert ist.
 >* Kann ein undurchsichtiger, zufälliger Name sein - siehe [Sicherheitscheckliste](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) bezüglich der autorisierbaren ID.
 
 ### Beispiele: {#examples}
@@ -430,28 +442,28 @@ Scoring- und Badging-Regeln können für benutzerdefinierte Komponenten erstellt
 
 Wenn Mitglieder mit Communities-Funktionen interagieren, werden Ereignisse gesendet, die asynchrone Listener wie Benachrichtigungen und Scoring Trigger werden können.
 
-Die SocialEvent-Instanz einer Komponente zeichnet die Ereignisse als `actions` die für `topic`. Das SocialEvent enthält eine Methode zum Zurückgeben einer `verb` mit der Aktion verknüpft ist. Es gibt eine *n-1* Beziehung `actions` und `verbs`.
+Die SocialEvent-Instanz einer Komponente zeichnet die Ereignisse als `actions` auf, die für eine `topic` auftreten. Das SocialEvent enthält eine Methode, mit der eine mit der Aktion verknüpfte `verb` zurückgegeben wird. Es gibt eine *n-1* Beziehung zwischen `actions` und `verbs`.
 
-Die folgenden Tabellen beschreiben für die bereitgestellten Communities-Komponenten die `verbs` für jeden `topic` zur Verwendung in [Scoring-Unterregeln](#scoring-sub-rules).
+Für die bereitgestellten Communities-Komponenten beschreiben die folgenden Tabellen die für jeden `topic` definierten `verbs`, der für die Verwendung in [Scoring-Unterregeln](#scoring-sub-rules) verfügbar ist.
 
 >[!NOTE]
 >
->eine neue boolesche Eigenschaft, `allowBadges`aktiviert/deaktiviert die Anzeige von Abzeichen für eine Komponenteninstanz. Es ist in aktualisiert konfigurierbar [Dialogfelder zur Komponentenbearbeitung](/help/communities/author-communities.md) durch ein Kontrollkästchen mit der Beschriftung **Anzeigemarken**.
+>Eine neue boolesche Eigenschaft `allowBadges` aktiviert/deaktiviert die Anzeige von Abzeichen für eine Komponenteninstanz. Sie kann in aktualisierten [Dialogfeldern zur Komponentenbearbeitung](/help/communities/author-communities.md) über ein Kontrollkästchen mit der Bezeichnung **Anzeigemarke** konfiguriert werden.
 
 **[Kalenderkomponente](/help/communities/calendar.md)**
 SocialEvent `topic`= com/adobe/cq/social/calendar
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt ein Kalenderereignis |
 | HINZUFÜGEN | Mitgliederkommentare für ein Kalenderereignis |
 | AKTUALISIEREN | Kalenderereignis oder -kommentar eines Mitglieds wird bearbeitet |
 | LÖSCHEN | Kalenderereignis oder -kommentar eines Mitglieds wird gelöscht |
 
-**[Kommentarkomponente](/help/communities/comments.md)**
+**[Kommentar-Komponente](/help/communities/comments.md)**
 SocialEvent `topic`= com/adobe/cq/social/comment
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt Kommentare |
 | HINZUFÜGEN | Mitglied antwortet auf Kommentar |
@@ -461,7 +473,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 **[Dateibibliothekskomponente](/help/communities/file-library.md)**
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt Ordner |
 | ANHÄNGEN | Mitglied lädt eine Datei hoch |
@@ -471,7 +483,7 @@ SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 **[Forumkomponente](/help/communities/forum.md)**
 SocialEvent `topic`= com/adobe/cq/social/forum
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt Forumthema |
 | HINZUFÜGEN | Mitgliederantworten zum Forumthema |
@@ -481,7 +493,7 @@ SocialEvent `topic`= com/adobe/cq/social/forum
 **[Journalkomponente](/help/communities/blog-feature.md)**
 SocialEvent `topic`= com/adobe/cq/social/journal
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt einen Blog-Artikel |
 | HINZUFÜGEN | Kommentare zu Mitgliedern in einem Blogartikel |
@@ -491,7 +503,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 **[QnA-Komponente](/help/communities/working-with-qna.md)**
 SocialEvent `topic` = com/adobe/cq/social/qna
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt eine Frage zur Frage der Fragen |
 | HINZUFÜGEN | Mitglied erstellt eine Antwort auf Fragen und Antworten |
@@ -500,10 +512,10 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 | UNSELECT | Die Antwort des Mitglieds ist deaktiviert. |
 | LÖSCHEN | Frage oder Antwort des Mitglieds wird gelöscht |
 
-**[Überprüfungskomponente](/help/communities/reviews.md)**
+**[Prüfungskomponente](/help/communities/reviews.md)**
 SocialEvent `topic`= com/adobe/cq/social/review
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt Überprüfung |
 | AKTUALISIEREN | Die Überprüfung des Mitglieds wird bearbeitet |
@@ -512,15 +524,15 @@ SocialEvent `topic`= com/adobe/cq/social/review
 **[Bewertungskomponente](/help/communities/rating.md)**
 SocialEvent `topic`= com/adobe/cq/social/tally/rating
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | RATE HINZUFÜGEN | Der Inhalt des Mitglieds wurde bewertet. |
 | RATE ENTFERNEN | der Inhalt des Mitglieds wurde heruntergestuft |
 
 **[Abstimmungskomponente](/help/communities/voting.md)**
-SocialEvent `topic`= com/adobe/cq/social/tally/stimmberechtigt
+SocialEvent `topic`= com/adobe/cq/social/tally/stimmts
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | ABSTIMMUNG HINZUFÜGEN | Der Inhalt des Mitglieds wurde abgestimmt |
 | ABSTIMMUNG ENTFERNEN | Der Inhalt des Mitglieds wurde abgelehnt |
@@ -528,7 +540,7 @@ SocialEvent `topic`= com/adobe/cq/social/tally/stimmberechtigt
 **Moderationsfähige Komponenten**
 SocialEvent `topic`= com/adobe/cq/social/moderation
 
-| **Verb** | **Beschreibung** |
+| **verb** | **Beschreibung** |
 |---|---|
 | ABLEHNEN | Inhalt des Mitglieds wird verweigert |
 | FLAG-AS-INAPPROPRIATE | Inhalt des Mitglieds wird gekennzeichnet |
@@ -539,9 +551,9 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 ### Benutzerdefinierte Komponentenereignisse {#custom-component-events}
 
-Bei einer benutzerdefinierten Komponente wird ein SocialEvent instanziiert, um die Ereignisse der Komponente als `actions` die für `topic`.
+Bei einer benutzerdefinierten Komponente wird ein SocialEvent instanziiert, um die Ereignisse der Komponente als `actions` aufzuzeichnen, die für eine `topic` auftreten.
 
-Um die Auswertung zu unterstützen, muss das SocialEvent die Methode überschreiben `getVerb()` , damit `verb` wird für jeden `action`. Die `verb` für eine Aktion zurückgegeben wird, kann eine häufig verwendete Aktion sein (z. B. `POST`) oder einer für die Komponente spezialisierten Komponente (z. B. `ADD RATING`). Es gibt eine *n-1* Beziehung `actions` und `verbs`.
+Um die Auswertung zu unterstützen, muss das SocialEvent die Methode `getVerb()` überschreiben, damit für jeden `action` ein entsprechendes `verb` zurückgegeben wird. Die für eine Aktion zurückgegebene `verb` kann eine häufig verwendete (z. B. `POST`) oder für die Komponente spezialisierte (z. B. `ADD RATING`) sein. Es gibt eine *n-1* Beziehung zwischen `actions` und `verbs`.
 
 ## Fehlerbehebung {#troubleshooting}
 
@@ -549,13 +561,13 @@ Um die Auswertung zu unterstützen, muss das SocialEvent die Methode überschrei
 
 Wenn Scoring- und Badging-Regeln auf den Inhalt der Website angewendet wurden, Abzeichen jedoch nicht für Aktivitäten vergeben werden, stellen Sie sicher, dass Abzeichen für die Instanz dieser Komponente aktiviert wurden.
 
-Siehe [Aktivieren von Abzeichen für Komponenten](#enable-badges-for-component).
+Siehe [Badges für Komponente aktivieren](#enable-badges-for-component).
 
 ### Scoring-Regel hat keine Auswirkung {#scoring-rule-has-no-effect}
 
 Wenn Scoring- und Badging-Regeln auf den Inhalt der Website angewendet wurden und Abzeichen für einige Aktionen, aber nicht für andere zugewiesen werden, überprüfen Sie, ob die Badging-Regel die Scoring-Regeln, für die sie gilt, nicht eingeschränkt hat.
 
-Siehe `scoringRules` Eigenschaft von [Badging-Regeln](#badging-rules).
+Siehe die Eigenschaft `scoringRules` von [Badging Rules](#badging-rules).
 
 ### Typo für Groß-/Kleinschreibung {#case-sensitive-typo}
 
@@ -565,7 +577,7 @@ Wenn die Funktion nicht wie erwartet funktioniert, stellen Sie sicher, dass die 
 
 ## Schnelltest {#quick-test}
 
-Es ist möglich, schnell mit der [Tutorial &quot;Erste Schritte&quot;](/help/communities/getting-started.md) Site (engagieren) :
+Mit der Site [Erste Schritte-Tutorial](/help/communities/getting-started.md) (Interagieren) können Sie schnell versuchen, Scoring und Badging durchzuführen:
 
 * Auf CRXDE Lite in der Autoreninstanz zugreifen.
 * Navigieren Sie zur Basisseite:
@@ -576,10 +588,10 @@ Es ist möglich, schnell mit der [Tutorial &quot;Erste Schritte&quot;](/help/com
 
    * **Name**: `badgingRules`
    * **Typ**: `String`
-   * Auswählen **Multi**
-   * Auswählen **Hinzufügen**
+   * Auswählen von **Multi**
+   * Wählen Sie **Hinzufügen**
    * Geben Sie `/libs/settings/community/badging/rules/forums-badging` ein
-   * Auswählen **+**
+   * Wählen Sie **+**
    * Geben Sie `/libs/settings/community/badging/rules/comments-badging` ein
    * Wählen Sie **OK** aus.
 
@@ -587,10 +599,10 @@ Es ist möglich, schnell mit der [Tutorial &quot;Erste Schritte&quot;](/help/com
 
    * **Name**: `scoringRules`
    * **Typ**: `String`
-   * Auswählen **Multi**
-   * Auswählen **Hinzufügen**
+   * Auswählen von **Multi**
+   * Wählen Sie **Hinzufügen**
    * Geben Sie `/libs/settings/community/scoring/rules/forums-scoring` ein
-   * Auswählen **+**
+   * Wählen Sie **+**
    * Geben Sie `/libs/settings/community/scoring/rules/comments-scoring` ein
    * Wählen Sie **OK** aus.
 
@@ -613,13 +625,13 @@ Stellen Sie als Nächstes sicher, dass die Forum- und Kommentarkomponenten die A
 
 ![test-forum-component](assets/test-forum-component.png)
 
-Als Nächstes [erneut veröffentlichen](/help/communities/sites-console.md#publishing-the-site) die Community-Site.
+Als Nächstes [republish](/help/communities/sites-console.md#publishing-the-site) die Community-Site.
 
 Schließlich
 
 * Navigieren Sie zur Komponente in der Veröffentlichungsinstanz.
 * Melden Sie sich als Community-Mitglied an (z. B. weston.mccall@dodgit.com / Kennwort).
-* Posten Sie ein neues Forumthema.
+* Post ist ein neues Forumthema.
 * Die Seite muss aktualisiert werden, damit der Badge angezeigt wird.
 
    * Melden Sie sich ab und melden Sie sich als anderes Community-Mitglied an (z. B.: aaron.mcdonald@mailinator.com/password).
@@ -628,12 +640,12 @@ Schließlich
 
 Dies sollte dem Community-Mitglied ein Bronzesymbol mit seinem Forumsbeitrag vermitteln, da der erste Schwellenwert der Regel für Forumsabzeichen 1 beträgt.
 
-![Bronzebadge](assets/bronzebadge.png)
+![bronzebadge](assets/bronzebadge.png)
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie unter [Grundlagen zu Scoring und Abzeichen](/help/communities/configure-scoring.md) -Seite für Entwickler.
+Weitere Informationen finden Sie auf der Entwickler-Seite [Scoring- und Badges-Grundlagen](/help/communities/configure-scoring.md) .
 
-Informationen zur erweiterten Scoring-Engine finden Sie unter [Erweiterte Scoring- und Badges](/help/communities/advanced.md).
+Informationen zur erweiterten Scoring-Engine finden Sie unter [Erweiterte Scoring- und Badges-Funktion](/help/communities/advanced.md).
 
-Das konfigurierbare Leaderboard [component](/help/communities/enabling-leaderboard.md) und [function](/help/communities/functions.md#leaderboard-function) vereinfacht die Anzeige von Mitgliedern und deren Ergebnissen auf einer Community-Site.
+Die konfigurierbare Leaderboard-Komponente [component](/help/communities/enabling-leaderboard.md) und [function](/help/communities/functions.md#leaderboard-function) vereinfacht die Anzeige von Mitgliedern und deren Werten auf einer Community-Site.

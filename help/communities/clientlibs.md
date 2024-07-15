@@ -25,21 +25,21 @@ In diesem Abschnitt der Dokumentation wird beschrieben, wie Sie clientseitige Bi
 
 Grundlegende Informationen finden Sie unter folgenden Themen:
 
-* [Verwenden Client-seitiger Bibliotheken](/help/sites-developing/clientlibs.md) , das Nutzungsdetails und Debugging-Tools bereitstellt
-* [Clientlibs für SCF](/help/communities/client-customize.md#clientlibs) , die nützliche Informationen beim Anpassen von SCF-Komponenten bietet
+* [Verwendung clientseitiger Bibliotheken](/help/sites-developing/clientlibs.md) , die Nutzungsdetails und Debugging-Tools bereitstellt
+* [Clientlibs für SCF](/help/communities/client-customize.md#clientlibs), die nützliche Informationen beim Anpassen von SCF-Komponenten bereitstellen
 
 
 ## Warum Clientlibs erforderlich sind {#why-clientlibs-are-required}
 
-Clientlibs sind für die ordnungsgemäße Funktion (JavaScript) und Formatierung (CSS) einer Komponente erforderlich.
+Clientlibs sind für das ordnungsgemäße Funktionieren (JavaScript) und Styling (CSS) einer Komponente erforderlich.
 
-Wenn eine [Community-Funktion](/help/communities/functions.md) für eine Funktion sind alle erforderlichen Komponenten und Konfigurationen, einschließlich der erforderlichen clientlibs, auf der Community-Site vorhanden. Nur wenn Autoren zusätzliche Komponenten zur Verfügung stehen sollen, müssen zusätzliche Client-Bibliotheken hinzugefügt werden.
+Wenn für eine Funktion eine [Community-Funktion](/help/communities/functions.md) vorhanden ist, sind alle erforderlichen Komponenten und Konfigurationen, einschließlich der erforderlichen clientlibs, auf der Community-Site vorhanden. Nur wenn Autoren zusätzliche Komponenten zur Verfügung stehen sollen, müssen zusätzliche Client-Bibliotheken hinzugefügt werden.
 
-Wenn die erforderlichen clientlibs fehlen, [Hinzufügen einer Communities-Komponente zu einer Seite](/help/communities/author-communities.md) kann zu JavaScript-Fehlern und einem unerwarteten Erscheinungsbild führen.
+Wenn die erforderlichen Clientlibs fehlen, kann das Hinzufügen einer Communities-Komponente zu einer Seite ](/help/communities/author-communities.md) zu JavaScript-Fehlern und unerwarteten Erscheinungsbildern führen.[
 
 ### Beispiel : platzierte Prüfungen ohne Clientlibs {#example-placed-reviews-without-clientlibs}
 
-![platzierten Reviews](assets/placed-reviews.png)
+![platzierte Rezensionen](assets/placed-reviews.png)
 
 ### Beispiel : Placed Reviews with clientlibs {#example-placed-reviews-with-clientlibs}
 
@@ -49,9 +49,9 @@ Wenn die erforderlichen clientlibs fehlen, [Hinzufügen einer Communities-Kompon
 
 Die grundlegenden Funktionsinformationen für Entwickler identifizieren die erforderlichen Clientlibs.
 
-Darüber hinaus navigieren Sie von einer AEM-Instanz zum [Handbuch zu Community-Komponenten](/help/communities/components-guide.md) bietet Zugriff auf eine Liste von clientlib-Kategorien, die für eine Komponente erforderlich sind.
+Darüber hinaus bietet das Durchsuchen des [Leitfadens zu Community-Komponenten](/help/communities/components-guide.md) von einer AEM-Instanz aus Zugriff auf eine Liste von clientlib-Kategorien, die für eine Komponente erforderlich sind.
 
-Beispiel: oben im [Überprüfungsseite](https://localhost:4502/content/community-components/en/reviews.html) die aufgelisteten erforderlichen clientlibs
+Am oberen Rand der Seite [Bewertungen](https://localhost:4502/content/community-components/en/reviews.html) werden beispielsweise die erforderlichen clientlibs aufgeführt.
 
 * cq.ckeditor
 * cq.social.hbs.reviews
@@ -62,19 +62,19 @@ Beispiel: oben im [Überprüfungsseite](https://localhost:4502/content/community
 
 Wenn Sie eine Communities-Komponente zu einer Seite hinzufügen möchten, müssen Sie die erforderlichen Clientlibs für die Komponente hinzufügen, falls diese noch nicht vorhanden ist.
 
-Verwendung [CRXDE|Lite](#using-crxde-lite) , um eine vorhandene Clientlibsliste für eine Community-Site-Seite zu ändern.
+Verwenden Sie [CRXDE|Lite](#using-crxde-lite) , um eine vorhandene Clientlibsliste für eine Community-Site-Seite zu ändern.
 
-So fügen Sie eine clientlib für eine Community-Site hinzu mithilfe von [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+So fügen Sie mithilfe von [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) eine clientlib für eine Community-Site hinzu:
 
-* Navigieren Sie zu [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de).
-* Suchen Sie die `clientlibslist` -Knoten für die Seite, auf der Sie die Komponente hinzufügen möchten:
+* Navigieren Sie zu [https://&lt;Server>:&lt;Port>/crx/de](https://localhost:4502/crx/de).
+* Suchen Sie den Knoten `clientlibslist` für die Seite, auf der Sie die Komponente hinzufügen möchten:
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* Mit `clientlibslist` ausgewählter Knoten:
+* Mit ausgewähltem `clientlibslist` -Knoten:
 
-   * Suchen Sie den String .[] property `scg:requiredClientLibs`.
-   * Auswahl der `Value` , damit Sie auf das Dialogfeld String-Array zugreifen können.
+   * Suchen Sie die Eigenschaft &quot;String[]&quot;`scg:requiredClientLibs`.
+   * Wählen Sie den Wert `Value` aus, damit Sie auf das Dialogfeld String-Array zugreifen können.
 
       * Scrollen Sie bei Bedarf nach unten.
       * Wählen Sie + aus, um eine neue Client-Bibliothek einzugeben.
@@ -89,6 +89,6 @@ So fügen Sie eine clientlib für eine Community-Site hinzu mithilfe von [CRXDE 
 >
 >Wenn es sich bei der Site nicht um eine Community-Site handelt, muss das Vorhandensein oder der Speicherort der Client-Bibliotheken ermittelt werden, die für die Site verwendet werden.
 
-Verwenden der [Erste Schritte mit AEM Communities](/help/communities/getting-started.md) Beispiel, wobei `site-name` is *interagieren* festgelegt ist, wird die clientliblist so angezeigt, wenn die Reviews-Komponente hinzugefügt wird:
+Unter Verwendung des Beispiels [Erste Schritte mit AEM Communities](/help/communities/getting-started.md), bei dem `site-name` *engage* ist, würde die clientliblist so angezeigt, wenn die Reviews-Komponente hinzugefügt wird:
 
 ![review-component](assets/review-component.png)

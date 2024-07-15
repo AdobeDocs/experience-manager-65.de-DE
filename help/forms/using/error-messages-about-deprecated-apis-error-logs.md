@@ -2,8 +2,8 @@
 title: Fehlermeldungen zu veralteten APIs in Fehlerprotokollen
 description: Fehlermeldungen zu veralteten APIs in Fehlerprotokollen
 source-git-commit: b05666883645ca11784292e4bfb5bf9c1e35a43b
-workflow-type: ht
-source-wordcount: '102'
+workflow-type: tm+mt
+source-wordcount: '94'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ Das Problem tritt bei den folgenden Versionen auf:
 ## Problem {#issue}
 
 * Die folgenden Fehlermeldungen werden in der Datei „error.log“ angezeigt:
-   ` *WARN* [default task-36] org.apache.jackrabbit.oak.spi.security.principal.AclGroupDeprecation use of deprecated java.acl.Group-related API - this method is going to be removed in future Oak releases - see OAK-7358 for details` (NPR-38282)
+  ` *WARN* [default task-36] org.apache.jackrabbit.oak.spi.security.principal.AclGroupDeprecation use of deprecated java.acl.Group-related API - this method is going to be removed in future Oak releases - see OAK-7358 for details` (NPR-38282)
 
 ## Auflösung {#workaround}
 

@@ -55,7 +55,7 @@ Geben Sie mindestens 1 der folgenden Werte an:
 
 Adobe löscht Informationen, die über App Store-Käufe (Abonnements usw.) verfügen, aber Käufe in den App Stores noch erfasst werden. Wenn die App (der Endbenutzer) im App Store angemeldet ist, werden diese Quittungen erneut abgerufen und an Adobe gesendet. Später werden diese als neue Käufe betrachtet und von der App wiederhergestellt, wobei der Zugriff erneut erfolgt.
 
-**Löscht Adobe vom Kunden bereitgestellte Berechtigungen beim Initiieren einer DELETE-Anfrage?**
+**Löscht Adobe beim Initiieren einer DELETE-Anfrage vom Kunden bereitgestellte Berechtigungen?**
 
 Adobe löscht Informationen, über die er über die zusätzlichen direkten Berechtigungszertifikate des Kunden verfügt. Wenn sich die App (der Endbenutzer) beim OAuth-Mechanismus anmeldet, den der Kunde verwendet hat, werden Informationen an Adobe gesendet und die Dienste rufen die zusätzlichen Berechtigungen erneut auf.
 

@@ -28,7 +28,7 @@ ht-degree: 100%
 
 Diese Integration ermöglicht es Ihnen, die Nutzung von Dynamic Media Viewers auf Ihrer Website mit Adobe Analytics zu verfolgen. Gleichzeitig können Sie die von den Viewern angezeigten Ereignisse und Daten mit jeder anderen Experience Platform Tags-Erweiterung von Adobe oder einem Drittanbieter verwenden.
 
-Weitere Informationen zu Erweiterungen von Adobe oder Drittanbieterern finden Sie unter [Adobe-Erweiterungen](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html?lang=de) im Benutzerhandbuch zu Experience Platform Tags.
+Weitere Informationen zu Erweiterungen von Adobe oder Drittanbietern finden Sie unter [Adobe-Erweiterungen](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html?lang=de) im Benutzerhandbuch zu Experience Platform Tags.
 
 **Dieses Thema richtet sich an:** Site-Admins, Entwicklerinnen und Entwickler für die Experience Platform und Anwendende.
 

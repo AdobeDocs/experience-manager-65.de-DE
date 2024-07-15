@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Dieses Dokument ist Teil der [Erste Schritte mit Adobe Experience Manager (AEM) Mobile](/help/mobile/getting-started-aem-mobile.md) Guide, ein empfohlener Ausgangspunkt für die AEM Mobile-Referenz.
+>Dieses Dokument ist Teil des Leitfadens &quot;[Erste Schritte mit Adobe Experience Manager (AEM) Mobile](/help/mobile/getting-started-aem-mobile.md)&quot;, eines empfohlenen Ausgangspunkts für die AEM Mobile-Referenz.
 
 Verwenden Sie die Inhaltssynchronisierung , um Inhalte zu verpacken, damit sie in nativen mobilen Anwendungen verwendet werden können. Seiten, die in AEM erstellt werden, können als App-Inhalt verwendet werden, selbst wenn das Gerät offline ist. Da AEM Seiten außerdem auf Webstandards basieren, funktionieren sie plattformübergreifend und ermöglichen es Ihnen, sie in jeden nativen Wrapper einzubetten. Diese Strategie reduziert den Entwicklungsaufwand und ermöglicht es Ihnen, App-Inhalte einfach zu aktualisieren.
 
@@ -46,13 +46,13 @@ Die folgende Schrittfolge zeigt einen typischen Anwendungsfall für die Inhaltss
 
 >[!NOTE]
 >
->Weitere Informationen zu Richtlinien für die Entwicklung von Content Sync-Handlern, die vordefinierte App-Handler anzeigen, finden Sie unter [Entwickeln von Inhaltssynchronisierungs-Handlern](/help/mobile/contentsync-app-handlers.md).
+>Weitere Informationen zu Richtlinien für die Entwicklung von Inhaltssynchronisierungs-Handlern, die vordefinierte App-Handler erhalten, finden Sie unter [Entwickeln von Inhaltssynchronisierungs-Handlern](/help/mobile/contentsync-app-handlers.md).
 
 ## Konfigurieren des Inhalts der Inhaltssynchronisierung {#configuring-the-content-sync-content}
 
 Erstellen Sie eine Konfiguration zur Inhaltssynchronisierung , um den Inhalt der ZIP-Datei anzugeben, die an den Client gesendet wird. Sie können beliebig viele Konfigurationen zur Inhaltssynchronisierung erstellen. Jede Konfiguration hat einen Namen zu Identifizierungszwecken.
 
-Um eine Konfiguration für die Inhaltssynchronisierung zu erstellen, fügen Sie eine `cq:ContentSyncConfig` Knoten zum Repository mit dem `sling:resourceType` Eigenschaft festgelegt auf `contentsync/config`. Die `cq:ContentSyncConfig` -Knoten können sich an einer beliebigen Stelle im Repository befinden. Der Knoten muss jedoch für Benutzer in der AEM Veröffentlichungsinstanz zugänglich sein. Daher sollten Sie den Knoten unten hinzufügen `/content`.
+Um eine Konfiguration für die Inhaltssynchronisierung zu erstellen, fügen Sie dem Repository einen Knoten `cq:ContentSyncConfig` hinzu, wobei die Eigenschaft `sling:resourceType` auf `contentsync/config` gesetzt ist. Der Knoten `cq:ContentSyncConfig` kann sich an einer beliebigen Stelle im Repository befinden, der Knoten muss jedoch für Benutzer in der AEM Veröffentlichungsinstanz zugänglich sein. Daher sollten Sie den Knoten unter `/content` hinzufügen.
 
 Um den Inhalt der ZIP-Datei für die Inhaltssynchronisierung anzugeben, fügen Sie dem Knoten cq:ContentSyncConfig untergeordnete Knoten hinzu. Die folgenden Eigenschaften jedes untergeordneten Knotens identifizieren ein einzuschließendes Inhaltselement und dessen Verarbeitung beim Hinzufügen:
 
@@ -77,24 +77,24 @@ Wenn AEM installiert ist, können Mitglieder der Administratorgruppe standardmä
 
 Der Day CQ Content Sync Manager-Dienst steuert den Zugriff auf die Inhaltssynchronisierung. Konfigurieren Sie diesen Dienst, um den Benutzer oder die Gruppe anzugeben, die standardmäßig von der Inhaltssynchronisierung heruntergeladen werden können.
 
-Wenn Sie [Konfigurieren des Dienstes mithilfe der Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)Geben Sie den Namen des Benutzers oder der Gruppe als Wert der Eigenschaft &quot;Fallback Cache Authorizable&quot;ein.
+Wenn Sie [den Dienst mit der Web-Konsole konfigurieren](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), geben Sie den Namen des Benutzers oder der Gruppe als Wert der Eigenschaft &quot;Fallback Cache Authorizable&quot;ein.
 
-Wenn Sie [im Repository konfigurieren](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)verwenden Sie die folgenden Informationen zum Dienst:
+Wenn Sie [im Repository konfigurieren](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository), verwenden Sie die folgenden Informationen zum Dienst:
 
 * PID: com.day.cq.contentsync.impl.ContentSyncManagerImpl
 * Eigenschaftsname: contentsync.fallback.authorizable
 
 #### Überschreiben des Downloadzugriffs für einen Inhaltssynchronisierungs-Cache {#overriding-download-access-for-a-content-sync-cache}
 
-Um den Download-Zugriff für eine bestimmte Konfiguration der Inhaltssynchronisierung zu konfigurieren, fügen Sie die folgende Eigenschaft zum `cq:ContentSyncConfig` node:
+Um den Download-Zugriff für eine bestimmte Konfiguration der Inhaltssynchronisierung zu konfigurieren, fügen Sie die folgende Eigenschaft zum Knoten `cq:ContentSyncConfig` hinzu:
 
 * Name: authorizable
 * Typ: String
 * Wert: Der Name des Benutzers oder der Gruppe, den/die heruntergeladen werden kann.
 
-Ihre App ermöglicht es Benutzern beispielsweise, Aktualisierungen direkt über die Inhaltssynchronisierung zu installieren. Damit alle Benutzer die Aktualisierung herunterladen können, setzen Sie den Wert der Eigenschaft authorizable auf `everyone`.
+Ihre App ermöglicht es Benutzern beispielsweise, Aktualisierungen direkt über die Inhaltssynchronisierung zu installieren. Damit alle Benutzer die Aktualisierung herunterladen können, legen Sie den Wert der Eigenschaft zum Autorisieren auf `everyone` fest.
 
-Wenn die Variable `cq:ContentSyncConfig` -Knoten keine autorisierbare Eigenschaft hat, bestimmt der Standardbenutzer oder die Standardgruppe, der bzw. die für die Eigenschaft &quot;Fallback Cache Authorizable&quot;des Day CQ Content Sync Manager-Dienstes konfiguriert ist, wer herunterladen kann.
+Wenn der Knoten `cq:ContentSyncConfig` keine autorisierbare Eigenschaft aufweist, bestimmt der Standardbenutzer oder die Standardgruppe, der bzw. die für die Eigenschaft &quot;Fallback Cache Authorizable&quot;des Day CQ Content Sync Manager-Dienstes konfiguriert ist, wer herunterladen kann.
 
 ### Konfigurieren des Benutzers für die Aktualisierung eines Inhaltssynchronisierungs-Caches {#configuring-the-user-for-updating-a-content-sync-cache}
 
@@ -108,7 +108,7 @@ Um den Standardbenutzer zu überschreiben, geben Sie einen Benutzer oder eine Gr
 * Typ: String
 * Wert: Der Name des Benutzers oder der Gruppe, der/die die Aktualisierungen durchführen kann.
 
-Wenn der Knoten cq:ContentSyncConfig keine `updateuser` -Eigenschaft, aktualisiert der anonyme Standardbenutzer den Cache.
+Wenn der Knoten cq:ContentSyncConfig keine Eigenschaft `updateuser` aufweist, aktualisiert der standardmäßige anonyme Benutzer den Cache.
 
 ### Konfigurationstypen {#configuration-types}
 
@@ -118,24 +118,24 @@ Die Verarbeitung kann von der Darstellung einfacher JSON bis zur vollständigen 
 
 * **path** - Wenn der Pfad auf eine einzelne Datei verweist, wird nur die Datei kopiert. Wenn er auf einen Ordner verweist (dies schließt Seitenknoten ein), werden alle unten aufgeführten Dateien und Ordner kopiert.
 
-**content** - Wiedergabe von Inhalten mit der standardmäßigen Sling-Anforderungsverarbeitung.
+**content** - Wiedergabe von Inhalten mithilfe der standardmäßigen Sling-Anforderungsverarbeitung
 
 * **path** - Pfad zur Ressource, die ausgegeben werden soll.
-* **Erweiterung** - Erweiterung, die in der Anfrage verwendet werden soll. Häufige Beispiele *html* und *json*, aber jede andere Erweiterung ist möglich.
+* **extension** - Erweiterung, die in der Anfrage verwendet werden soll. Übliche Beispiele sind *html* und *json*, aber jede andere Erweiterung ist möglich.
 
-* **selector** - Optionale Selektoren, getrennt durch Punkt. Häufige Beispiele *touch* zum Rendern mobiler Versionen einer Seite oder *Unendlichkeit* für die JSON-Ausgabe.
+* **selector** - Optionale Selektoren, getrennt durch Punkte. Übliche Beispiele sind *touch* zum Rendern mobiler Versionen einer Seite oder *infinity* für die JSON-Ausgabe.
 
 **clientlib** - Verpacken Sie eine JavaScript- oder CSS-Client-Bibliothek.
 
 * **path** - Pfad zum Stammverzeichnis der Client-Bibliothek.
-* **Erweiterung** - Typ der Client-Bibliothek. Dies sollte auf Folgendes festgelegt werden: *js* oder *css* im Moment.
+* **extension** - Typ der Client-Bibliothek. Dies sollte derzeit entweder auf *js* oder auf *css* gesetzt werden.
 
-* **includeFolders** - Typ ist ein Array von Zeichenfolgen und ermöglicht es dem Benutzer, zusätzliche Ordner anzugeben, die in der Client-Bibliothek gescannt werden sollen, um Dateien abzurufen (z. B. benutzerdefinierte Schriftarten).
+* **includeFolders** - Der Typ ist ein Zeichenfolgen-Array und ermöglicht es dem Benutzer, zusätzliche Ordner anzugeben, die in der Client-Bibliothek gescannt werden sollen, um Dateien (z. B. benutzerdefinierte Schriftarten) abzurufen.
 
-**Assets** - Erfassen Sie Original-Ausgabeformate von Assets.
+**assets** - Erfassen Sie Original-Ausgabeformate von Assets.
 
 * **path** - Pfad zu einem Asset-Ordner unter /content/dam.
-* **Ausgabeformate** - Typ ist ein Array von Zeichenfolgen, mit denen der Benutzer angeben kann, welche Ausgabeformate anstelle des Standardbilds verwendet werden sollen. Die folgende Liste fasst einige vordefinierte Ausgabedarstellungen zusammen, Sie können aber auch alle vom Workflow erstellten Ausgabedarstellungen verwenden:
+* **renditions** - Type ist ein Array von Zeichenfolgen, mit denen der Benutzer angeben kann, welche Ausgabeformate anstelle des Standardbilds verwendet werden sollen. Die folgende Liste fasst einige vordefinierte Ausgabedarstellungen zusammen, Sie können aber auch alle vom Workflow erstellten Ausgabedarstellungen verwenden:
 
    * *original*
    * *cq5dam.thumbnail.48.48.png*
@@ -143,42 +143,42 @@ Die Verarbeitung kann von der Darstellung einfacher JSON bis zur vollständigen 
    * *cq5dam.thumbnail.140.100.png*
    * *cq5dam.web.1280.1280.png*
 
-**image** - Erfassen Sie ein Bild.
+**image** - Erfasst ein Bild.
 
 * **path** - Pfad zu einer Bildressource.
 
 Der Bildtyp wird verwendet, um das We.Retail-Logo in die ZIP-Datei einzuschließen.
 
-**pages** - Rendern AEM Seiten und Erfassen referenzierter Assets.
+**Seiten** - Wiedergabe AEM Seiten und Sammlung referenzierter Assets.
 
 * **path** - Pfad zu einer Seite.
-* **Erweiterung** - Erweiterung, die in der Anfrage verwendet werden soll. Für Seiten ist dies fast immer *html*, aber andere sind noch möglich.
+* **extension** - Erweiterung, die in der Anfrage verwendet werden soll. Für Seiten ist dies fast immer *html*, aber andere sind weiterhin möglich.
 
-* **selector** - Optionale Selektoren, getrennt durch Punkt. Häufige Beispiele *touch* zum Rendern mobiler Versionen einer Seite.
+* **selector** - Optionale Selektoren, getrennt durch Punkte. Übliche Beispiele sind *touch* zum Rendern mobiler Versionen einer Seite.
 
-* **deep** - Optionale boolesche Eigenschaft, die bestimmt, ob auch untergeordnete Seiten einbezogen werden sollen. Der Standardwert ist *wahr.*
+* **deep** - Optionale boolesche Eigenschaft, die bestimmt, ob auch untergeordnete Seiten einbezogen werden sollen. Der Standardwert ist *true*.
 
 * **includeImages** - Optionale boolesche Eigenschaft, die bestimmt, ob Bilder einbezogen werden sollen. Der Standardwert ist *true*.
-Standardmäßig werden nur Bildkomponenten mit dem Ressourcentyp foundation/components/image zur Aufnahme berücksichtigt. Durch die Konfiguration der Variablen **Day CQ WCM Pages Update Handler** in der Webkonsole.
+Standardmäßig werden nur Bildkomponenten mit dem Ressourcentyp foundation/components/image zur Aufnahme berücksichtigt. Sie können weitere Ressourcentypen hinzufügen, indem Sie den **Day CQ WCM Pages Update Handler** in der Web-Konsole konfigurieren.
 
-**rewrite** - Der Knoten rewrite definiert, wie die Links auf der exportierten Seite neu geschrieben werden. Die neu geschriebenen Links können entweder auf die Dateien in der ZIP-Datei oder auf die Ressourcen auf dem Server verweisen.
+**rewrite** - Der Neuschreibungsknoten definiert, wie die Links auf der exportierten Seite neu geschrieben werden. Die neu geschriebenen Links können entweder auf die Dateien in der ZIP-Datei oder auf die Ressourcen auf dem Server verweisen.
 
-Die `rewrite` -Knoten muss sich unter dem `page` Knoten.
+Der Knoten `rewrite` muss sich unter dem Knoten `page` befinden.
 
-Die `rewrite` -Knoten kann eine oder mehrere der folgenden Eigenschaften aufweisen:
+Der Knoten `rewrite` kann eine oder mehrere der folgenden Eigenschaften aufweisen:
 
 * `clientlibs`: schreibt clientlibs-Pfade neu.
 
 * `images`: schreibt Bildpfade neu.
-* `links`: schreibt Verknüpfungspfade neu.
+* `links`: schreibt Links-Pfade neu.
 
 Jede Eigenschaft kann einen der folgenden Werte aufweisen:
 
-* `REWRITE_RELATIVE`: schreibt den Pfad mit einer relativen Position zur .html-Datei der Seite im Dateisystem neu.
+* `REWRITE_RELATIVE`: schreibt den Pfad mit einer relativen Position zur HTML-Datei der Seite im Dateisystem neu.
 
-* `REWRITE_EXTERNAL`: schreibt den Pfad neu, indem er mithilfe des AEM auf die Ressource auf dem Server verweist. [Externalizer-Dienst](/help/sites-developing/externalizer.md).
+* `REWRITE_EXTERNAL`: schreibt den Pfad neu, indem er mit dem AEM [Externalizer-Dienst](/help/sites-developing/externalizer.md) auf die Ressource auf dem Server verweist.
 
-Der AEM-Dienst namens **PathRewriterTransformerFactory** können Sie die spezifischen HTML-Attribute konfigurieren, die neu geschrieben werden. Der Dienst kann in der Web-Konsole konfiguriert werden und verfügt über eine Konfiguration für jede Eigenschaft des `rewrite` node: `clientlibs`, `images`, und `links`.
+Mit dem AEM-Dienst **PathRewriterTransformerFactory** können Sie die spezifischen HTML-Attribute konfigurieren, die neu geschrieben werden. Der Dienst kann in der Webkonsole konfiguriert werden und verfügt über eine Konfiguration für jede Eigenschaft des Knotens `rewrite`: `clientlibs`, `images` und `links`.
 
 Diese Funktion wurde in AEM 5.5 hinzugefügt.
 
@@ -222,17 +222,17 @@ Die folgende Liste zeigt eine Beispielkonfiguration für die Inhaltssynchronisie
 
 **etc.designs.default und etc.designs.mobile** - Die ersten beiden Einträge der Konfiguration sind offensichtlich. Da wir mehrere mobile Seiten einschließen werden, benötigen wir die entsprechenden Designdateien unter /etc/designs. Da keine zusätzliche Verarbeitung erforderlich ist, reicht die Kopie aus.
 
-**events.plist** - Dieser Eintrag ist ein wenig speziell. Wie in der Einführung erwähnt, sollte die Anwendung eine Kartenansicht mit Markierungen der Orte der Ereignisse bereitstellen. Wir werden die erforderlichen Standortinformationen als separate Datei im PLIST-Format bereitstellen. Damit dies funktioniert, verfügt die Ereignislistenkomponente, die auf der Indexseite verwendet wird, über ein Skript namens plist.jsp. Dieses Skript wird ausgeführt, wenn die Ressource der Komponente mit der `.plist` -Erweiterung. Wie üblich wird der Komponentenpfad in der Pfadeigenschaft angegeben und der Typ ist auf &quot;content&quot;festgelegt, da wir die Sling-Anforderungsverarbeitung verwenden möchten.
+**events.plist** - Dieser Eintrag ist ein wenig spezifisch. Wie in der Einführung erwähnt, sollte die Anwendung eine Kartenansicht mit Markierungen der Orte der Ereignisse bereitstellen. Wir werden die erforderlichen Standortinformationen als separate Datei im PLIST-Format bereitstellen. Damit dies funktioniert, verfügt die Ereignislistenkomponente, die auf der Indexseite verwendet wird, über ein Skript namens plist.jsp. Dieses Skript wird ausgeführt, wenn die Ressource der Komponente mit der Erweiterung `.plist` angefordert wird. Wie üblich wird der Komponentenpfad in der Pfadeigenschaft angegeben und der Typ ist auf &quot;content&quot;festgelegt, da wir die Sling-Anforderungsverarbeitung verwenden möchten.
 
 **events.touch.html** - Als Nächstes werden die tatsächlichen Seiten angezeigt, die in der App angezeigt werden. Die Pfadeigenschaft wird auf die Stammseite der Ereignisse festgelegt. Alle Ereignisseiten unterhalb dieser Seite sind ebenfalls enthalten, da die Deep-Eigenschaft standardmäßig auf &quot;true&quot;festgelegt ist. Wir verwenden Seiten als Konfigurationstyp, sodass alle Bilder oder andere Dateien, die aus einer Bild- oder Download-Komponente auf einer Seite referenziert werden können, einbezogen werden. Darüber hinaus erhalten Sie durch Festlegen des Touch-Selektors eine mobile Version der Seiten. Die Konfiguration im Feature Pack enthält weitere Einträge dieser Art, aber sie werden hier aus Gründen der Einfachheit nicht berücksichtigt.
 
 **logo** - Der Konfigurationstyp des Logos wurde bisher nicht erwähnt und ist keiner der integrierten Typen. Das Framework zur Inhaltssynchronisierung ist jedoch in gewissem Umfang erweiterbar. Dies ist ein Beispiel dafür, das im nächsten Abschnitt behandelt wird.
 
-**manifest** - Oft ist es wünschenswert, in die ZIP-Datei Metadaten einzuschließen, wie z. B. die Startseite Ihres Inhalts. Die Hartkodierung solcher Informationen verhindert jedoch, dass Sie sie später einfach ändern können. Das Framework für die Inhaltssynchronisierung unterstützt diesen Anwendungsfall, indem es nach einem Manifestknoten in der Konfiguration sucht, der anhand des Namens identifiziert wird und keinen Konfigurationstyp erfordert. Jede auf diesem bestimmten Knoten definierte Eigenschaft wird einer Datei hinzugefügt, die auch &quot;manifest&quot;genannt wird und sich im Stammverzeichnis der ZIP-Datei befindet.
+**manifest** - Oft ist es wünschenswert, in die ZIP-Datei Metadaten wie beispielsweise die Startseite Ihres Inhalts aufzunehmen. Die Hartkodierung solcher Informationen verhindert jedoch, dass Sie sie später einfach ändern können. Das Framework für die Inhaltssynchronisierung unterstützt diesen Anwendungsfall, indem es nach einem Manifestknoten in der Konfiguration sucht, der anhand des Namens identifiziert wird und keinen Konfigurationstyp erfordert. Jede auf diesem bestimmten Knoten definierte Eigenschaft wird einer Datei hinzugefügt, die auch &quot;manifest&quot;genannt wird und sich im Stammverzeichnis der ZIP-Datei befindet.
 
-Im Beispiel soll die Ereignisauflistungsseite die Anfangsseite sein. Diese Informationen werden im Abschnitt **indexPage** -Eigenschaft und kann daher jederzeit problemlos geändert werden. Eine zweite Eigenschaft definiert den Pfad der *events.plist* -Datei. Wie wir später sehen, kann die Client-Anwendung jetzt das Manifest lesen und entsprechend handeln.
+Im Beispiel soll die Ereignisauflistungsseite die Anfangsseite sein. Diese Informationen werden in der Eigenschaft **indexPage** bereitgestellt und können daher jederzeit problemlos geändert werden. Eine zweite Eigenschaft definiert den Pfad der Datei *events.plist* . Wie wir später sehen, kann die Client-Anwendung jetzt das Manifest lesen und entsprechend handeln.
 
-Wenn die Konfiguration eingerichtet ist, kann der Inhalt mit einem Browser oder einem anderen HTTP-Client heruntergeladen werden. Wenn Sie für iOS entwickeln, können Sie die dedizierte WAppKitSync-Client-Bibliothek verwenden. Der Download-Speicherort besteht aus dem Pfad der Konfiguration und dem *.zip* -Erweiterung, beispielsweise bei der Arbeit mit einer lokalen AEM-Instanz: *https://localhost:4502/content/weretail_go.zip*
+Wenn die Konfiguration eingerichtet ist, kann der Inhalt mit einem Browser oder einem anderen HTTP-Client heruntergeladen werden. Wenn Sie für iOS entwickeln, können Sie die dedizierte WAppKitSync-Client-Bibliothek verwenden. Der Download-Speicherort besteht aus dem Pfad der Konfiguration und der Erweiterung &quot;*.zip*&quot;, z. B. beim Arbeiten mit einer lokalen AEM-Instanz: *https://localhost:4502/content/weretail_go.zip*
 
 ### Die Konsole &quot;Inhaltssynchronisierung&quot; {#the-content-sync-console}
 
@@ -257,12 +257,12 @@ Dies sieht wie folgt aus:
 
 Obwohl die Anzahl der Konfigurationsoptionen bereits umfangreich ist, deckt sie möglicherweise nicht alle Anforderungen Ihres spezifischen Anwendungsfalls ab. In diesem Abschnitt werden die Erweiterungspunkte des Content Sync-Frameworks und die Erstellung benutzerdefinierter Konfigurationstypen beschrieben.
 
-Für jeden Konfigurationstyp gibt es eine *Content Update Handler*, eine OSGi-Komponentenfabrik, die für diesen bestimmten Typ registriert ist. Diese Handler erfassen Inhalte, verarbeiten sie und fügen sie einem Cache hinzu, der vom Content Sync-Framework verwaltet wird. Implementieren Sie die folgende Schnittstelle oder abstrakte Basisklasse:
+Für jeden Konfigurationstyp gibt es einen *Content Update Handler*, eine OSGi-Komponentenfactory, die für diesen bestimmten Typ registriert ist. Diese Handler erfassen Inhalte, verarbeiten sie und fügen sie einem Cache hinzu, der vom Content Sync-Framework verwaltet wird. Implementieren Sie die folgende Schnittstelle oder abstrakte Basisklasse:
 
 * `com.day.cq.contentsync.handler.ContentUpdateHandler` - Schnittstelle, die alle Update-Handler implementieren müssen
 * `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Eine abstrakte Klasse, die die Darstellung von Ressourcen mithilfe von Sling vereinfacht
 
-Registrieren Sie Ihre Klasse als OSGi-Komponentenfabrik und stellen Sie sie im OSGi-Container in einem Bundle bereit. Dies kann mithilfe der [Maven SCR-Plug-in](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) entweder mit JavaDoc-Tags oder Anmerkungen. Das folgende Beispiel zeigt die JavaDoc-Version:
+Registrieren Sie Ihre Klasse als OSGi-Komponentenfabrik und stellen Sie sie im OSGi-Container in einem Bundle bereit. Dies kann mit dem [Maven SCR-Plug-in](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) entweder mit JavaDoc-Tags oder Anmerkungen erfolgen. Das folgende Beispiel zeigt die JavaDoc-Version:
 
 ```java
 /*
@@ -282,15 +282,15 @@ public class OtherTypeUpdateHandler extends AbstractSlingResourceUpdateHandler {
 }
 ```
 
-Beachten Sie, dass *Fabrik* -Definition enthält die gemeinsame Schnittstelle und den benutzerdefinierten Typ, getrennt durch Schrägstrich. Diese Strategie ermöglicht es dem Framework für die Inhaltssynchronisierung, eine Instanz Ihrer benutzerdefinierten Klasse zu finden und zu erstellen, da sie den benutzerdefinierten Typ in einem Konfigurationseintrag erkennt. Im nächsten Abschnitt finden Sie ein konkretes Beispiel für einen benutzerdefinierten Update-Handler.
+Beachten Sie, dass die Definition *factory* die gemeinsame Benutzeroberfläche und den benutzerdefinierten Typ enthält, getrennt durch Schrägstrich. Diese Strategie ermöglicht es dem Framework für die Inhaltssynchronisierung, eine Instanz Ihrer benutzerdefinierten Klasse zu finden und zu erstellen, da sie den benutzerdefinierten Typ in einem Konfigurationseintrag erkennt. Im nächsten Abschnitt finden Sie ein konkretes Beispiel für einen benutzerdefinierten Update-Handler.
 
 >[!CAUTION]
 >
->Beim Erstellen auf der AbstractSlingResourceUpdateHandler-Basisklasse müssen Sie die *inherit* Definition. Andernfalls legt der OSGi-Container nicht die erforderlichen Verweise fest, die in der Basisklasse deklariert sind.
+>Beim Erstellen auf der Basis der AbstractSlingResourceUpdateHandler-Basisklasse müssen Sie die Definition *inherit* hinzufügen. Andernfalls legt der OSGi-Container nicht die erforderlichen Verweise fest, die in der Basisklasse deklariert sind.
 
 ### Implementieren eines benutzerdefinierten Update-Handlers {#implementing-a-custom-update-handler}
 
-Jede We.Retail Mobile-Seite enthält ein Logo in der oberen linken Ecke, das wir in die ZIP-Datei aufnehmen möchten. Zur Cache-Optimierung verweist AEM jedoch nicht auf den tatsächlichen Speicherort der Bilddatei im Repository, was verhindert, dass wir einfach die **copy** Konfigurationstyp. Was wir stattdessen tun müssen, ist, uns selbst zu versorgen **logo** Konfigurationstyp, der das Bild an dem von AEM angeforderten Speicherort verfügbar macht. Die folgende Codeauflistung zeigt die vollständige Implementierung des Logupdate-Handlers:
+Jede We.Retail Mobile-Seite enthält ein Logo in der oberen linken Ecke, das wir in die ZIP-Datei aufnehmen möchten. Zur Cache-Optimierung verweist AEM jedoch nicht auf den tatsächlichen Speicherort der Bilddatei im Repository, was verhindert, dass wir einfach den Konfigurationstyp **copy** verwenden. Stattdessen müssen wir unseren eigenen Konfigurationstyp **logo** bereitstellen, mit dem das Bild an dem von AEM angeforderten Ort verfügbar gemacht wird. Die folgende Codeauflistung zeigt die vollständige Implementierung des Logupdate-Handlers:
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 
@@ -356,17 +356,17 @@ public class LogoUpdateHandler implements ContentUpdateHandler {
 }
 ```
 
-Die `LogoUpdateHandler` -Klasse implementiert die `ContentUpdateHandler` -Benutzeroberfläche `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` -Methode, die mehrere Argumente akzeptiert:
+Die `LogoUpdateHandler` -Klasse implementiert die `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` -Methode der `ContentUpdateHandler`-Schnittstelle, die mehrere Argumente akzeptiert:
 
-* A `ConfigEntry` -Instanz, die Zugriff auf den Konfigurationseintrag, für den dieser Handler aufgerufen wird, und seine Eigenschaften bereitstellt.
-* A `lastUpdated` Zeitstempel, der angibt, wann die Inhaltssynchronisierung den Cache zuletzt aktualisiert hat. Inhalte, die nach diesem Zeitstempel nicht geändert wurden, sollten vom Handler nicht aktualisiert werden.
-* A `configCacheRoot` -Argument, das den Stammpfad des Caches angibt. Alle aktualisierten Dateien müssen unter diesem Pfad gespeichert werden, damit sie der ZIP-Datei hinzugefügt werden können.
+* Eine `ConfigEntry` -Instanz, die Zugriff auf den Konfigurationseintrag, für den dieser Handler aufgerufen wird, und seine Eigenschaften bietet.
+* Ein `lastUpdated` -Zeitstempel, der angibt, wann die Inhaltssynchronisierung den Cache zuletzt aktualisiert hat. Inhalte, die nach diesem Zeitstempel nicht geändert wurden, sollten vom Handler nicht aktualisiert werden.
+* Ein `configCacheRoot` -Argument, das den Stammpfad des Caches angibt. Alle aktualisierten Dateien müssen unter diesem Pfad gespeichert werden, damit sie der ZIP-Datei hinzugefügt werden können.
 * Eine Verwaltungssitzung, die für alle Cache-bezogenen Repository-Vorgänge verwendet werden soll.
 * Eine Benutzersitzung, mit der Inhalte im Kontext eines bestimmten Benutzers aktualisiert und so personalisierte Inhalte bereitgestellt werden können.
 
 Um den benutzerdefinierten Handler zu implementieren, erstellen Sie zunächst eine Instanz der Image-Klasse basierend auf der im Konfigurationseintrag angegebenen Ressource. Dies ist im Wesentlichen das gleiche Verfahren wie die eigentliche logo-Komponente auf unseren Seiten. Dadurch wird sichergestellt, dass der Zielpfad des Bildes mit dem Pfad übereinstimmt, auf den von einer Seite aus verwiesen wird.
 
-Überprüfen Sie anschließend, ob die Ressource seit der letzten Aktualisierung geändert wurde. Benutzerdefinierte Implementierungen sollten unnötige Aktualisierungen des Caches vermeiden und &quot;false&quot;zurückgeben, wenn sich nichts ändert. Wenn die Ressource geändert wurde, kopieren Sie das Bild in den erwarteten Zielspeicherort relativ zum Cache-Stammverzeichnis. Schließlich `true` wird zurückgegeben, um dem Framework anzugeben, dass der Cache aktualisiert wurde.
+Überprüfen Sie anschließend, ob die Ressource seit der letzten Aktualisierung geändert wurde. Benutzerdefinierte Implementierungen sollten unnötige Aktualisierungen des Caches vermeiden und &quot;false&quot;zurückgeben, wenn sich nichts ändert. Wenn die Ressource geändert wurde, kopieren Sie das Bild in den erwarteten Zielspeicherort relativ zum Cache-Stammverzeichnis. Schließlich wird `true` zurückgegeben, um dem Framework anzugeben, dass der Cache aktualisiert wurde.
 
 ## Verwenden des Inhalts auf dem Client {#using-the-content-on-the-client}
 

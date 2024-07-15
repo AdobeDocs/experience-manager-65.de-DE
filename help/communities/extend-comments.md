@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Erweitern der Kommentarkomponente  {#extend-comments-component}
 
-Die Absicht von [Erweiterung](client-customize.md#extensions) Eine Standardkomponente besteht darin, das Erscheinungsbild oder Verhalten einer Komponente für bestimmte Verwendungen zu ändern.
+Die Absicht von [Erweitern](client-customize.md#extensions) einer Standardkomponente besteht darin, das Erscheinungsbild oder Verhalten einer Komponente für bestimmte Verwendungen zu ändern.
 
 Der Pfad zur Komponente ist eindeutig und verweist auf die Standardkomponente als Superressourcentyp. Das Risiko ist geringer, da der Umfang im Vergleich zum globalen Umfang einer Komponentenüberlagerung begrenzt ist.
 
 >[!NOTE]
 >
->Erweitern einer [überlagert](client-customize.md#overlays) -Komponente wird nicht unterstützt.
+>Das Erweitern einer [überlagerten](client-customize.md#overlays) -Komponente wird nicht unterstützt.
 
 ## Beispiel {#example}
 
@@ -32,7 +32,7 @@ Angenommen, die Kopfzeile für die Kommentarkomponente muss auf einer Site der A
 
 Um diese Lösung zu implementieren, erstellen Sie eine Komponente, die die vorhandene Komponente erweitert (überschreibt) und ändern Sie das Handlebars-Skript. Der Bereich der Site, der die neuen Kommentare verwendet, kann den erweiterten Bereich verwenden, während die Sites, die das standardmäßige Erscheinungsbild verwenden, davon nicht betroffen sind.
 
-Die Kommentarkomponente ist tatsächlich eine von zwei Komponenten, die das Kommentarsystem enthalten. Daher müssen zwei Komponenten erweitert werden: *Kommentare* und *comment*. Das zu bearbeitende Skript befindet sich im *comment* Komponenten `header.hbs` -Datei, während die übergeordnete *Kommentare* -Komponente (das Kommentarsystem) ist, was ein Autor der Seite tatsächlich hinzufügt.
+Die Kommentarkomponente ist tatsächlich eine von zwei Komponenten, die das Kommentarsystem enthalten. Daher müssen zwei Komponenten erweitert werden: *Kommentare* und *Kommentar*. Das zu bearbeitende Skript befindet sich in der Datei `header.hbs` der Komponente *comment* , während die übergeordnete Komponente *comments* (das Kommentarsystem) dem entspricht, was ein Autor der Seite tatsächlich hinzufügt.
 
 Um Kommentare zu erweitern, müssen Sie:
 

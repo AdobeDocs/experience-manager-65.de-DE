@@ -34,7 +34,7 @@ Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forum
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.stimating<br /> cq.social.hbs.forum</td>
+   <td>cq.ckeditor<br /> cq.social.hbs.stimms<br /> cq.social.hbs.forum</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -63,20 +63,20 @@ Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forum
 
 ### Forumsfunktion {#forum-function}
 
-Eine Community-Site-Struktur mit [Forumsfunktion](functions.md#forum-function)enthält eine konfigurierte `forum` -Komponente und Einstellungen mit Auswirkungen auf Moderation, Tagging und Übersetzung.
+Eine Community-Site-Struktur, die die Funktion [Forum](functions.md#forum-function) enthält, enthält eine konfigurierte Komponente `forum` sowie Einstellungen, die sich auf Moderation, Tagging und Übersetzung auswirken.
 
 ### Zugriff auf Forumbeiträge (UGC) {#accessing-forum-posts-ugc}
 
 UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab Adobe Experience Manager 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab Adobe Experience Manager 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für benutzergenerierte Inhalte den programmatischen Zugriff auf benutzergenerierte Inhalte, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
 
-**Speicherort und Format der UGC im Repository können ohne Warnung geändert werden**.
+**Speicherort und Format des UGC im Repository können sich ohne Warnung ändern**.
 
 Siehe:
 
-* [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
-* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Kodierungsrichtlinien.
+* [Übersicht über den Speicheranbieter](srp.md) - Übersicht über die Einführung und die Repository-Nutzung.
+* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
+* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
 * [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.

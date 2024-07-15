@@ -23,7 +23,7 @@ ht-degree: 3%
 
 Die Modellverwaltung umfasst die Erstellung und Verwaltung von Modellen für die Zuordnung zu eventuell vorhandenen Datenobjekten. Jedes Modell enthält alle Eigenschaften und Felddefinitionen, die zur Erleichterung der Erstellung und Darstellung von Objekten erforderlich sind.
 
-Modellverwaltung umfasst die Erstellung von **models**, **Entitäten**, und **Leerzeichen**. Das folgende Diagramm zeigt die Beziehung zwischen AEM Content und den Modellen.
+Die Modellverwaltung umfasst die Erstellung von **models**, **entitäten** und **Leerzeichen**. Das folgende Diagramm zeigt die Beziehung zwischen AEM Content und den Modellen.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -58,7 +58,7 @@ Eine Entität ist eine Instanz eines Inhaltsmodells. Eine Entität wird über di
 
 Wenn bereits AEM Inhalt vorhanden ist, wird eine Entität mithilfe eines Modells und der AEM Inhaltsquelle generiert. Beispielsweise ist eine Seitenentität ein kanalunabhängiges und layout-unabhängiges Objekt, das von einer AEM Seite und dem Seitenmodell generiert wird.
 
-Änderungen am referenzierten Inhalt einer Entität führen zu einer Änderung der Entität. Beispiel: Wenn ein *cq:page* aktualisiert wird, werden auch alle Entitäten aktualisiert, die auf dieser Seite basieren.
+Änderungen am referenzierten Inhalt einer Entität führen zu einer Änderung der Entität. Wenn beispielsweise eine *cq:page* aktualisiert wird, werden auch alle Entitäten aktualisiert, die auf dieser Seite basieren.
 
 Informationen zum Erstellen benutzerdefinierter Entitäten aus Modellen finden Sie unter **[Arbeiten mit Entitäten](/help/mobile/spaces-and-entities.md)**.
 
@@ -75,7 +75,7 @@ Auf der AEM Seite ist ein Leerzeichen eine bequeme Möglichkeit, verwandte Entit
 
 *Beispiel*:
 
-Ein Benutzer verfügt über drei allgemeine Klassifizierungen von Entitäten. Eine dient nur der internen Verwendung, eine andere ist für die öffentliche Verwendung zugelassen und die dritte für gängige Entitäten, die von vielen Apps verwendet werden. Um die Verwaltung zu vereinfachen, erstellt der Benutzer drei Leerzeichen: *intern*, *öffentlich* (mit englischem und französischem Inhalt) und *common* für die Verwaltung der entsprechenden Entitäten wie unten erwähnt:
+Ein Benutzer verfügt über drei allgemeine Klassifizierungen von Entitäten. Eine dient nur der internen Verwendung, eine andere ist für die öffentliche Verwendung zugelassen und die dritte für gängige Entitäten, die von vielen Apps verwendet werden. Um die Verwaltung zu vereinfachen, erstellt der Benutzer drei Leerzeichen: *internal*, *public* (mit englischem und französischem Inhalt) und *common* zur Verwaltung der entsprechenden Entitäten, wie unten erwähnt:
 
 * /content/entity/internal
 * /content/entity/public/en
@@ -84,7 +84,7 @@ Ein Benutzer verfügt über drei allgemeine Klassifizierungen von Entitäten. Ei
 
 Dem Bereich wird ein Dienstendpunkt bereitgestellt, damit die native Client-Bibliothek eine Liste der Inhalte eines Platzes anfordern kann. Diese &quot;Auflistung&quot;wird als JSON-Objekt zurückgegeben.
 
-Siehe **[Platzierungen und Entitäten](/help/mobile/spaces-and-entities.md)** zum Erstellen und Veröffentlichen von Platzierungen.
+Informationen zum Erstellen und Veröffentlichen von Platzierungen finden Sie unter **[Platzierungen und Entitäten](/help/mobile/spaces-and-entities.md)** .
 
 >[!NOTE]
 >
@@ -94,4 +94,4 @@ Siehe **[Platzierungen und Entitäten](/help/mobile/spaces-and-entities.md)** zu
 
 Ordner ermöglichen es Benutzern, Entitäten nach Bedarf zu organisieren und erleichtern eine feinere ACL-Steuerung. Leerzeichen können Ordner enthalten, die die weitere Organisation des Inhalts und der Assets des Raums erleichtern. Ein Benutzer kann eine eigene Hierarchie unter einem Leerzeichen erstellen.
 
-Informationen zum Erstellen und Verwalten von Ordnern in einem Bereich finden Sie unter **[Arbeiten mit Ordnern in einem Bereich](/help/mobile/spaces-and-entities.md)**.
+Informationen zum Erstellen und Verwalten von Ordnern in einem Bereich finden Sie unter **[Arbeiten mit Ordnern in einem Leerzeichen](/help/mobile/spaces-and-entities.md)**.
