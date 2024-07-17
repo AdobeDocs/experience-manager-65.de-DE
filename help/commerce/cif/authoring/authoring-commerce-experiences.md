@@ -5,10 +5,10 @@ exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: a02724597338ee2451448c6c4188fc349dd47d01
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 100%
+source-wordcount: '711'
+ht-degree: 98%
 
 ---
 
@@ -72,9 +72,9 @@ CIF-Produktkatalogseiten sind virtuelle Seiten, die dynamisch gerendert werden. 
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 
-    >[!NOTE]
-    >
-    >Wenn sowohl Kategorie als auch Produkt ausgewählt werden, wird das Produkt verwendet.
+>[!NOTE]
+>
+>Wenn sowohl Kategorie als auch Produkt ausgewählt werden, wird das Produkt ausgewählt.
 
 Dadurch wird ein Platzhalter-Link erstellt, der beim Rendern der Seite durch einen echten Link ersetzt wird.
 
@@ -102,6 +102,6 @@ Die Verwendung von Omnisearch ist eine einfache Möglichkeit für Anwender, AEM-
 
 Das Ergebnis wird nach Typ gruppiert.
 
-    >[!NOTE]
-    >
-    >Volltextsuche in Omnisearch unterstützt keine verknüpften Inhaltsfragmente. Verwenden Sie SKU oder UID, um verknüpfte Inhaltsfragmente zu finden.
+>[!NOTE]
+>
+>Volltextsuche in Omnisearch unterstützt keine verknüpften Inhaltsfragmente. Verwenden Sie SKU oder UID, um verknüpfte Inhaltsfragmente zu finden.
