@@ -9,10 +9,10 @@ exl-id: bf51def2-1dd4-4bd3-b989-685058f0ead8
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a3587d248569982a8f9b137602ba95dd40c47012
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 100%
+source-wordcount: '261'
+ht-degree: 93%
 
 ---
 
@@ -60,11 +60,19 @@ Wenn CRXDE Lite deaktiviert ist, können Sie es wieder aktivieren, indem Sie wie
 
 ## Aktivieren von CRXDE Lite mit cURL {#enabling-crxde-lite-curl}
 
-Sie können CRXDE Lite auch über cURL aktivieren, indem Sie diesen Befehl ausführen:
+Sie können CRXDE Lite auch über cURL aktivieren, indem Sie die beiden folgenden Befehle ausführen:
 
-```shell
-curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
-```
+* Aktivieren Sie `create-absolute-uri` :
+
+  ```shell
+  curl -u admin:admin 'http://localhost:4502/system/console/configMgr/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet' --data-raw 'apply=true&action=ajaxConfigManager&%24location=&dav.create-absolute-uri=true&propertylist=dav.create-absolute-uri'
+  ```
+
+* Definieren Sie `alias` :
+
+  ```shell
+  curl -u admin:admin 'http://localhost:4502/system/console/configMgr/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet' --data-raw 'apply=true&action=ajaxConfigManager&%24location=&alias=/crx/server&propertylist=alias'
+  ```
 
 ## Sonstige -Ressourcen {#other-resources}
 
