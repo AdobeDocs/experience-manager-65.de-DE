@@ -6,9 +6,9 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: a02724597338ee2451448c6c4188fc349dd47d01
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '711'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ CIF-Produktkatalogseiten sind virtuelle Seiten, die dynamisch gerendert werden. 
 
 >[!NOTE]
 >
->Wenn sowohl Kategorie als auch Produkt ausgewählt werden, wird das Produkt ausgewählt.
+>Wenn sowohl Kategorie als auch Produkt ausgewählt werden, wird das Produkt verwendet.
 
 Dadurch wird ein Platzhalter-Link erstellt, der beim Rendern der Seite durch einen echten Link ersetzt wird.
 
