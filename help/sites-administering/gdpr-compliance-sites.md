@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
 source-git-commit: 5c1eda486e31be01f614a3a7ada71563fd996656
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '837'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -66,9 +66,9 @@ Standardmäßig werden diese Besucherdaten nicht in AEM gespeichert. AEM sendet 
 
 >[!NOTE]
 >
->Vor Adobe AEM (CQ) 5.6 hat die ClientContext (eine frühere Version von ContextHub) die Daten an den Server gesendet, aber nicht gespeichert.
+>Vor Adobe AEM (CQ) 5.6 sendete ClientContext (eine frühere Version von ContextHub) die Daten an den Server, speicherte sie aber nicht.
 >
->Adobe AEM 6.4 und frühere Versionen sind jetzt EOL und werden nicht mehr in dieser Dokumentation behandelt. Siehe [Ältere Versionen der Dokumentation zu Adobe Experience Manager, CQ und CRX](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
+>Adobe AEM 6.4 und frühere Versionen wurden mittlerweile eingestellt und werden in dieser Dokumentation nicht behandelt. Siehe [Dokumentation zu älteren Versionen von Adobe Experience Manager, CQ und CRX](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
 ### Implementieren von Opt-in-/Opt-out-Komponenten {#implementing-opt-in-opt-out}
 
