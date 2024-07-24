@@ -11,9 +11,9 @@ feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eef7849464540fa3d7bb705e1be9f6e0cf1c8cff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5744'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -491,8 +491,8 @@ Die folgenden Aufgaben sind im Vorgangs-Dashboard verfügbar:
 1. die Aufgabe **Datenspeicherbereinigung**, zu finden im Menü **Wöchentliches Wartungsfenster**
 1. die Wartungsaufgabe **Auditprotokoll**, zu finden im Menü **Wöchentliches Wartungsfenster**
 1. die Wartungsaufgabe **Versionsbereinigung**, zu finden im Menü **Wöchentliches Wartungsfenster**
-1. Die Wartungsaufgabe **Projektbereinigung**, die sich unter dem Menü **Wöchentliches Wartungsfenster** befindet, mithilfe der Option **Hinzufügen** .
-1. Die Wartungsaufgabe **Bereinigen von Ad-hoc-Aufgaben**, die sich im Menü **Wöchentliches Wartungsfenster** befindet, unter Verwendung der Option **Hinzufügen** .
+1. Die Wartungsaufgabe **Projekt-Bereinigung** unter dem Menü **Wöchentliches Wartungsfenster** unter Verwendung der Option **Hinzufügen**.
+1. Die Wartungsaufgabe **Bereinigung von Ad-hoc-Aufgaben** im Menü **Wöchentliches Wartungsfenster** unter Verwendung der Option **Hinzufügen**.
 
 Der Standardzeitrahmen für das tägliche Wartungsfenster beträgt 2:00 Uhr bis 5:00 Uhr morgens. Die Aufgaben, die für das wöchentliche Wartungsfenster konfiguriert sind, werden samstags zwischen 1:00 und 2:00 Uhr morgens ausgeführt.
 
@@ -572,7 +572,7 @@ Override the out-of-the-box Maintenance window configuration node under `/libs` 
 Enable the maintenance task by adding another node under the node above (name it `granite_ProjectPurgeTask`) with the appropriate properties. 
 -->
 
-Konfigurieren Sie die OSGi-Eigenschaften unter **Adobe Projects Purge Configuration** (com.adobe.cq.projects.purge.Scheduler).
+Konfigurieren Sie die OSGi-Eigenschaften unter **Bereinigungskonfiguration von Adobe-Projekten** (com.adobe.cq.projects.purge.Scheduler).
 
 ### Bereinigung von Ad-hoc-Aufgaben {#purge-of-ad-hoc-tasks}
 
@@ -582,7 +582,7 @@ Override the out-of-the-box Maintenance window configuration node under `/libs` 
 See the Maintenance Window table below for additional configuration details. Enable the maintenance task by adding another node under the node above. Name it `granite_TaskPurgeTask`, with attribute `sling:resourceType` set to `granite/operations/components/maintenance/task` and attribute `granite.maintenance.name` set to `TaskPurge`. 
 -->
 
-Konfigurieren Sie die OSGi-Eigenschaften unter **Ad-hoc-Aufgabenbereinigung** (`com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask`).
+Konfigurieren Sie die OSGi-Eigenschaften unter **Bereinigung von Ad-hoc-Aufgaben** (`com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask`).
 
 ## Benutzerdefinierte Wartungsaufgaben {#custom-maintenance-tasks}
 

@@ -10,9 +10,9 @@ exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 2d6caa10e8f1cf3d0811280e31c2f40bceac20ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6470'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 99%
 >
 >Weitere Informationen zur Fehlerbehebung und zur Behebung von Leistungsproblemen finden Sie unter [Leistungsstruktur](/help/sites-deploying/performance-tree.md).
 >
->Sie können in der Wissensdatenbank auch einen Artikel über [Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466) lesen.
+>Sie können in der Wissensdatenbank auch einen Artikel über [Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-17466) lesen.
 
 Ein wichtiger Faktor ist die Zeit, die Ihre Website benötigt, um auf Anfragen durch Besucherinnen und Besucher zu reagieren. Auch wenn dieser Wert für jede Anfrage unterschiedlich ist, kann ein durchschnittlicher Zielwert definiert werden. Sobald sich gezeigt hat, dass dieser Wert sowohl erreichbar als auch verwaltbar ist, kann er verwendet werden, um die Leistung der Website zu überwachen und die Entwicklung potenzieller Probleme anzuzeigen.
 
@@ -41,7 +41,7 @@ Diese Umgebung enthält Inhalte, die Sie Ihren Benutzerinnen und Benutzern zur V
 >[!NOTE]
 >
 >* Folgen Sie nach der Konfiguration zur Leistungsoptimierung der Anleitung in [Tough Day](/help/sites-developing/tough-day.md), um die Umgebung unter starker Belastung zu testen.
->* Siehe auch [Tipps zur Leistungsoptimierung.](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)
+>* Siehe auch [Tipps zur Leistungsoptimierung.](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-17466)
 
 ## Methode zur Leistungsoptimierung {#performance-optimization-methodology}
 
