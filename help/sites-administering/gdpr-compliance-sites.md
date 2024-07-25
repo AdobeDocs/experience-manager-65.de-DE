@@ -9,10 +9,10 @@ exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
-source-git-commit: 5c1eda486e31be01f614a3a7ada71563fd996656
-workflow-type: ht
+source-git-commit: 207c6bcc25eca05d128115f7235e83a6965009c5
+workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -66,7 +66,7 @@ Standardmäßig werden diese Besucherdaten nicht in AEM gespeichert. AEM sendet 
 
 >[!NOTE]
 >
->Vor Adobe AEM (CQ) 5.6 sendete ClientContext (eine frühere Version von ContextHub) die Daten an den Server, speicherte sie aber nicht.
+>Vor Adobe AEM (CQ) 5.6 hat die ClientContext (eine frühere Version von ContextHub) die Daten an den Server gesendet, aber nicht gespeichert.
 >
 >Adobe AEM 6.4 und frühere Versionen wurden mittlerweile eingestellt und werden in dieser Dokumentation nicht behandelt. Siehe [Dokumentation zu älteren Versionen von Adobe Experience Manager, CQ und CRX](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
