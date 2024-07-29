@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: d5d1c3909a135de61d777c39ba60fbb897722e8e
-workflow-type: ht
-source-wordcount: '7445'
+source-git-commit: 7dc864a044e73e855fe08bcf8418b0349cd0d3bd
+workflow-type: tm+mt
+source-wordcount: '7443'
 ht-degree: 100%
 
 ---
@@ -230,6 +230,7 @@ ht-degree: 100%
          + [Konfigurieren von Videotracking für Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
          + [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)](/help/sites-administering/scene7-http2faq.md)
          + [Fehlerbehebung bei der Adobe Campaign-Integration](/help/sites-administering/troubleshooting-campaignintegration.md)
+         + [SharePoint-Connector](/help/sites-administering/sharepoint-connector.md)
          + [SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse](/help/sites-administering/sharepoint-connector-licenses.md)
          + [Häufig gestellte Fragen zur Einstellung der Unterstützung für DHTML-Viewer](/help/sites-administering/dhtml-viewer-endoflifefaqs.md)
          + [Integration mit Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md)
@@ -268,7 +269,6 @@ ht-degree: 100%
          + [Verwalten von Tags](/help/sites-administering/tags.md)
          + [Das Seiten-Export-Tool](/help/sites-administering/page-exporter.md)
          + [Tagging-Konsole der klassischen Benutzeroberfläche](/help/sites-administering/classic-console.md)
-         + [Content Management für Screens](/help/sites-administering/content-management-screens.md)
          + [WebDAV-Zugriff](/help/sites-administering/webdav-access.md)
    + Klassisches Benutzeroberflächen-Authoring {#classic-ui}
       + Einführung in die Inhaltserstellung mit der klassischen Benutzeroberfläche {#introduction}
