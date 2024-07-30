@@ -7,7 +7,7 @@ user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Mana
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
 source-git-commit: 7dc864a044e73e855fe08bcf8418b0349cd0d3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7443'
 ht-degree: 100%
 
@@ -113,7 +113,7 @@ ht-degree: 100%
          + [Seitenvergleich](/help/sites-authoring/page-diff.md)
          + [Komponentenkonsole](/help/sites-authoring/default-components-console.md)
          + [Responsives Layout](/help/sites-authoring/responsive-layout.md)
-         + [Inhaltseinblick ](/help/sites-authoring/content-insights.md)
+         + [Inhaltseinblick](/help/sites-authoring/content-insights.md)
          + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.1-Richtlinien)](/help/sites-authoring/creating-accessible-content.md)
          + [Konfigurieren von Komponenten im Designmodus](/help/sites-authoring/default-components-designmode.md)
          + [Foundation-Komponenten](/help/sites-authoring/default-components-foundation.md)
@@ -135,7 +135,7 @@ ht-degree: 100%
          + [Teilnehmen an Workflows](/help/sites-authoring/workflows-participating.md)
          + [Arbeiten mit Projekt-Workflows](/help/sites-authoring/projects-with-workflows.md)
       + Seitenleistung {#page-performance}
-         + [Inhaltseinblick ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html?lang=de)
+         + [Inhaltseinblick](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html?lang=de)
          + [Analysieren der Seitenleistung](/help/sites-authoring/ci-analyze.md)
          + [Anzeigen von Seitenanalysedaten](/help/sites-authoring/pa-using.md)
       + Personalisierung {#personalization}
@@ -203,7 +203,7 @@ ht-degree: 100%
          + [Proxyserver-Tool (proxy.jar)](/help/sites-administering/proxy-jar.md)
          + [Konfigurieren von AEM-Apps](/help/sites-administering/config-apps.md)
          + [Konfigurieren von Suchformularen](/help/sites-administering/search-forms.md)
-         + [Die Tools-Konsolen ](/help/sites-administering/tools-consoles.md)
+         + [Die Tools-Konsolen](/help/sites-administering/tools-consoles.md)
          + [Reporting](/help/sites-administering/reporting.md)
          + [Konfigurieren von Layout-Container und Layout-Modus](/help/sites-administering/configuring-responsive-layout.md)
          + [Bearbeiter](/help/sites-administering/enable-classic-ui-editor.md)
@@ -336,7 +336,7 @@ ht-degree: 100%
          + [Bereitstellen von Dynamic Media-Assets](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
          + [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
          + [Hinzufügen von Scene7-Features zu Ihrer Seite](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
-         + [Video ](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
+         + [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
          + [Arbeiten mit Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
          + [Benennungskonventionen für Assets-Tests](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
 + Assets {#assets}
@@ -348,7 +348,7 @@ ht-degree: 100%
       + [Suchen nach digitalen Assets](/help/assets/search-assets.md)
       + [Arbeiten mit-Asset-Metadaten](/help/assets/metadata.md)
       + [Mehrsprachige Assets](/help/assets/multilingual-assets.md)
-      + [Verwenden von  [!DNL Adobe Stock] -Assets in Assets](/help/assets/aem-assets-adobe-stock.md)
+      + [Verwenden von [!DNL Adobe Stock] -Assets in Assets](/help/assets/aem-assets-adobe-stock.md)
       + [Vorschau von 3D-Assets](/help/assets/previewing-3d-assets.md)
       + [Überprüfen von Ordner-Assets und Sammlungen](/help/assets/bulk-approval.md)
       + [Optimierte Smart-Tags](/help/assets/enhanced-smart-tags.md)
@@ -380,7 +380,7 @@ ht-degree: 100%
       + [Dynamic Media-Bildprofile](/help/assets/image-profiles.md)
       + [Intelligente Bildbearbeitung](/help/assets/imaging-faq.md)
       + [Intelligente Bildbearbeitung mit Client-seitigem Gerätepixelverhältnis](/help/assets/client-side-dpr.md)
-      + [Video ](/help/assets/s7-video.md)
+      + [Video](/help/assets/s7-video.md)
       + [Bereitstellung von Inhalten per HTTP/2](/help/assets/http2.md)
       + [Bereitstellen von Dynamic Media-Assets](/help/assets/delivering-dynamic-media-assets.md)
       + [Aktivieren des Hotlink-Schutzes in Dynamic Media](/help/assets/hotlink-protection.md)
@@ -638,7 +638,7 @@ ht-degree: 100%
       + [Konfigurieren einer Umleitungsseite](/help/forms/using/configuring-redirect-page.md)
       + [Zugreifbare adaptive Formulare erstellen](/help/forms/using/creating-accessible-adaptive-forms.md)
       + [Erstellen von Formularen mit wiederholbaren Abschnitten](/help/forms/using/creating-forms-repeatable-sections.md)
-      + [Betten Sie ein adaptives Formular oder eine interaktive Kommunikation in die AEM Sites-Seite ein.](/help/forms/using/embed-adaptive-form-aem-sites.md)
+      + [Betten Sie ein adaptives Formular oder eine interaktive Kommunikation in die AEM Sites-Seite ein](/help/forms/using/embed-adaptive-form-aem-sites.md)
       + [Anpassungsfähige Formulare in externe Web-Seiten einbetten](/help/forms/using/embed-adaptive-form-external-web-page.md)
       + [Inline-Stile für Komponenten adaptiver Formulare](/help/forms/using/inline-style-adaptive-forms.md)
       + [Einführung in die mehrteilige Formularsequenz](/help/forms/using/introduction-form-sequence.md)
@@ -665,7 +665,7 @@ ht-degree: 100%
       + [Adaptive Formularvorlagen](/help/forms/using/template-editor.md)
       + [Adaptive Formularausdrücke](/help/forms/using/adaptive-form-expressions.md)
       + [Generierung eines Nachweises für adaptive Formulare](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-      + [Verbessern der Performance umfangreicher Formulare durch verzögertes Laden ](/help/forms/using/lazy-loading-adaptive-forms.md)
+      + [Verbessern der Performance umfangreicher Formulare durch verzögertes Laden](/help/forms/using/lazy-loading-adaptive-forms.md)
       + [Vorbefüllen von Feldern in adaptiven Formularen](/help/forms/using/prepopulate-adaptive-form-fields.md)
       + [Verwenden von SOM-Ausdrücken in adaptiven Formularen](/help/forms/using/using-som-expressions-adaptive-forms.md)
       + [Hinzufügen von Informationen aus Benutzerdaten zu Formularübermittlungsmetadaten](/help/forms/using/form-submission-metadata.md)
@@ -835,7 +835,7 @@ ht-degree: 100%
       + [Einführung in das Veröffentlichen von Formularen in einem Portal](/help/forms/using/introduction-publishing-forms.md)
       + [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](/help/forms/using/integrate-draft-submission-database.md)
       + [Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md)
-      + [Verwalten von Formularanwendungen und Aufgaben im AEM-Posteingang ](/help/forms/using/manage-applications-inbox.md)
+      + [Verwalten von Formularanwendungen und Aufgaben im AEM-Posteingang](/help/forms/using/manage-applications-inbox.md)
       + [Überwachter Ordner in AEM Forms](/help/forms/using/watched-folder-in-aem-forms.md)
       + [Komponente „Drafts and Submissions“](/help/forms/using/draft-submission-component.md)
       + [Einbetten einer Komponente „Link“ in eine Seite](/help/forms/using/embedding-link-component-page.md)
@@ -1033,7 +1033,7 @@ ht-degree: 100%
          + [Servereinstellungen konfigurieren](/help/forms/using/admin-help/configuring-server-settings.md)
          + [Arbeiten mit angehaltenen Vorgängen und Zweigen](/help/forms/using/admin-help/stalled-operations-branches.md)
          + [Freigegebene Warteschlangen konfigurieren](/help/forms/using/admin-help/configuring-shared-queues.md)
-         + [Mit Aufgaben arbeiten](/help/forms/using/admin-help/tasks.md)
+         + [Arbeiten mit Aufgaben](/help/forms/using/admin-help/tasks.md)
       + Konfigurieren von Workspace {#configure-workspace}
          + [Übersicht über den Arbeitsbereich](/help/forms/using/admin-help/overview-10.md)
          + [Importieren und Exportieren von globalen Einstellungen](/help/forms/using/admin-help/importing-exporting-global-settings.md)
@@ -1194,11 +1194,11 @@ ht-degree: 100%
       + [Einige Formularfunktionen können nicht mit bestimmten Versionen von Oracle JDK verwendet werden](/help/forms/using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
       + [Zusätzliche Schritte zum Abrufen einer E-Mail mit Anhang für die adaptive Formulare in der JEE-Version](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
       + [Konvertieren von Word- oder Excel-Dateien in PDF ist unter Windows Server nicht möglich](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
-      + [XFA-basierte PDF-Formulare können in Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer oder Apple Safari nicht geöffnet werden.](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
+      + [XFA-basierte PDF-Formulare können in Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer oder Apple Safari nicht geöffnet werden](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
       + [CRX-Repository kann nicht wiederhergestellt werden](/help/forms/using/restore-crx-repository.md)
       + [Fehler „Dienst nicht verfügbar“ nach der Installation von AEM 6.5.15.0 Service Pack](/help/forms/using/aem-service-pack-installation-solution.md)
       + [Installationsproblem mit dem Service Pack von AEM Forms JEE 6.5.15.0 in der JBoss Linux-Umgebung](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
-      + [Verarbeiten von Dokumenten, auch wenn der AEM Forms-Server nicht vollständig betriebsbereit ist.](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
+      + [Verarbeiten von Dokumenten, auch wenn der AEM Forms-Server nicht vollständig betriebsbereit ist](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Ausgabe-Service, Forms-Service oder DoR-Service (Document of Record) kann nicht verwendet werden](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Abmildern von Struts 2 RCE-Schwachstellen für Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
       + [Fehlschlagen des Datenbank-Backups beim Upgrade auf 6.5.12.0 für MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
@@ -1390,7 +1390,7 @@ ht-degree: 100%
             + Headless-Inhaltsarchitekten-Tour {#architect}
                + [Überblick über die AEM Headless-Inhaltsarchitekten-Tour](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/overview.html?lang=de)
                + [Inhaltsmodellierung für Headless mit AEM – Einführung](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/introduction.html?lang=de)
-               + [Lernen Sie die Grundlagen der Inhaltsmodellierung für Headless mit AEM kennen.](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/basics.html?lang=de)
+               + [Lernen Sie die Grundlagen der Inhaltsmodellierung für Headless mit AEM kennen](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/basics.html?lang=de)
                + [Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/model-structure.html?lang=de)
          + Anleitungen für den Einstieg {#getting-started}
             + [Einführung](/help/sites-developing/headless/getting-started/introduction.md)
@@ -1479,7 +1479,7 @@ ht-degree: 100%
          + [Konfigurieren Sie Ihre Seite für die Massenbearbeitung von Seiteneigenschaften](/help/sites-developing/bulk-editing.md)
          + [Anpassen und Erweitern von Inhaltsfragmenten](/help/sites-developing/customizing-content-fragments.md)
          + [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](/help/sites-developing/content-fragments-config-components-rendering.md)
-         + [Experience Fragments ](/help/sites-developing/experience-fragments.md)
+         + [Experience Fragments](/help/sites-developing/experience-fragments.md)
          + Erweitern von Workflows{#extending-workflows}
             + [Entwickeln und Erweitern von Workflows](/help/sites-developing/workflows.md)
             + [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md)
@@ -1592,7 +1592,7 @@ ht-degree: 100%
       + Aktualisieren auf AEM 6.5 {#upgrading}
          + [Aktualisieren auf AEM 6.5](/help/sites-deploying/upgrade.md)
          + [Planung der Aktualisierung](/help/sites-deploying/upgrade-planning.md)
-         + [Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor ](/help/sites-deploying/pattern-detector.md)
+         + [Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md)
          + [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md)
          + [Aktualisierungsverfahren](/help/sites-deploying/upgrade-procedure.md)
          + [Durchführen einer In-Place-Aktualisierung](/help/sites-deploying/in-place-upgrade.md)
