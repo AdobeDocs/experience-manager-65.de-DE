@@ -6,7 +6,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6b86212a2b3a86b2205714c802dc1581d30e7441
+exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '11687'
 ht-degree: 0%
@@ -93,7 +94,7 @@ In LiveCycle Designer ist diese Option standardmäßig aktiviert.
 
 ## Auswählen der richtigen Steuerelemente {#choose-right-controls}
 
-Verwenden Sie beim Entwerfen Ihrer Formulare Entwicklungsobjekte aus den Registerkarten der Objektbibliothek von LiveCycle Designer. Sie können dieses Bedienfeld anzeigen, indem Sie &quot;Fenster&quot;> &quot;Objektbibliothek&quot;wählen oder Umschalt+F12 drücken (siehe Abbildung 1).
+Verwenden Sie beim Entwerfen Ihrer Formulare Entwicklungsobjekte aus den Registerkarten der LiveCycle Designer-Objektbibliothek. Sie können dieses Bedienfeld anzeigen, indem Sie &quot;Fenster&quot;> &quot;Objektbibliothek&quot;wählen oder Umschalt+F12 drücken (siehe Abbildung 1).
 
 ![Objektbibliothek-Bedienfeld](/help/forms/using/assets/image-1.png)
 
@@ -148,13 +149,15 @@ Verwandte Checkpoints
 
 ## Angabe von angemessenen Beschriftungen für Formularsteuerelemente{#provide-proper-labels}
 
-Die Beschriftung oder Beschriftung eines Formularsteuerelements gibt an, was das Formularsteuerelement darstellen soll. Beispielsweise teilt der Text &quot;Vorname&quot;Benutzern mit, dass sie ihren Vornamen in ein Textfeld eingeben müssen. Damit Bildschirmlesehilfen darauf zugreifen können, muss die Beschriftung programmgesteuert mit dem Formularsteuerelement verknüpft sein oder das Formularsteuerelement muss mit zusätzlichen Barrierefreiheitsinformationen über die Palette &quot;Ein-/Ausgabehilfe&quot;konfiguriert werden. Es reicht nicht aus, einfach ein Textobjekt neben dem Steuerelement zu platzieren. Für sehbehinderte oder sehbehinderte Benutzer ist es wichtig, dass die Beschriftung neben dem Steuerelement richtig platziert wird. Beide Techniken werden in den folgenden Abschnitten besprochen.
+Die Beschriftung oder Beschriftung eines Formularsteuerelements gibt an, was das Formularsteuerelement darstellen soll. Der Text „Vorname“ weist Benutzende zum Beispiel darauf hin, dass sie ihren Vornamen in ein Textfeld eingeben müssen. Damit Bildschirmlesehilfen darauf zugreifen können, muss die Beschriftung programmgesteuert mit dem Formularsteuerelement verknüpft sein oder das Formularsteuerelement muss mit zusätzlichen Barrierefreiheitsinformationen über die Palette &quot;Ein-/Ausgabehilfe&quot;konfiguriert werden. Es reicht nicht aus, einfach ein Textobjekt neben dem Steuerelement zu platzieren. Für sehbehinderte oder sehbehinderte Benutzer ist es wichtig, dass die Beschriftung neben dem Steuerelement richtig platziert wird. Beide Techniken werden in den folgenden Abschnitten besprochen.
 
 ### Festlegen des barrierefreien Beschriftungstextes über die Palette &quot;Ein-/Ausgabehilfe&quot;
 
 Die Beschriftung, die von Benutzern der Sprachausgabe wahrgenommen wird, muss nicht unbedingt mit der visuellen Beschriftung übereinstimmen. In einigen Fällen möchten Sie den Zweck des Steuerelements genauer untersuchen.
 Für jedes Feldobjekt in einem Formular kann über die Palette &quot;Ein-/Ausgabehilfe&quot;(siehe Abbildung 3) angegeben werden, was die Bildschirmlesehilfe zur Identifizierung des jeweiligen Formularfelds ankündigt.
+
 Gehen Sie wie folgt vor, um die Palette &quot;Ein-/Ausgabehilfe&quot;zu verwenden:
+
 1. Zeigen Sie die Palette &quot;Ein-/Ausgabehilfe&quot;an, indem Sie &quot;Fenster&quot;> &quot;Ein-/Ausgabehilfe&quot;wählen oder Umschalt+F6 drücken.
 1. Wählen Sie ein Objekt im Formular aus. In der Palette werden die Barrierefreiheitseigenschaften des Objekts angezeigt.
 
@@ -178,16 +181,16 @@ Die folgenden Optionen sind verfügbar:
 
 Beachten Sie Folgendes bei der Verwendung der Palette &quot;Ein-/Ausgabehilfe&quot;für die Beschriftung von Formularsteuerelementen:
 
-* Wenn die Beschriftung des Formularsteuerelements das Steuerelement ordnungsgemäß beschreibt, ist es für Sprachausgabeprogramme verfügbar. Lassen Sie in diesem Fall entweder die Felder &quot;Benutzerdefinierter Reader&quot;und &quot;QuickInfo&quot;in der Palette &quot;Ein-/Ausgabehilfe&quot;leer oder ändern Sie die Rangfolge des Bildschirms in &quot;Beschriftung&quot;.
+* Wenn die Beschriftung des Formularsteuerelements das Steuerelement ordnungsgemäß beschreibt, ist es für Sprachausgaben verfügbar. Lassen Sie in diesem Fall entweder die Felder &quot;Benutzerdefinierter Reader&quot;und &quot;QuickInfo&quot;in der Palette &quot;Ein-/Ausgabehilfe&quot;leer oder ändern Sie die Rangfolge des Bildschirms in &quot;Beschriftung&quot;.
 * Beim Targeting von Bildschirmlesehilfen ist es nicht sinnvoll, für dasselbe Formularsteuerelement verschiedene Textbeschreibungen anzugeben, da nur eines verwendet wird: Das erste nicht leere Feld in der Rangfolge des Screens-Readers. Beispielsweise gibt es keinen Grund, sowohl benutzerdefinierten Text als auch QuickInfo-Text für eine Bildschirmlesehilfe anzugeben.
 * Standardmäßig liest die Bildschirmlesehilfe die Beschriftung, wenn im Feld &quot;QuickInfo&quot;oder im Feld &quot;Reader für benutzerdefinierten Bildschirm&quot;nichts angegeben ist.
 * Verwenden Sie nicht die Palette &quot;Ein-/Ausgabehilfe&quot;, um Beschreibungen für unsichtbare Felder oder Bereiche zu erstellen.
 * Wenn Sie eine Beschreibung mithilfe der Optionen &quot;QuickInfo&quot;oder &quot;Benutzerdefinierter Bildschirmtext&quot;erstellen müssen, fügen Sie immer die Beschriftung ein, die im Formular sichtbar ist, es sei denn, die sichtbare Beschriftung ist nicht aussagekräftig, z. B. wenn die Beschriftung selbst abgekürzt wird. Dies hilft Benutzern der Bildschirmlesehilfe, effektiv mit anderen Benutzern über Benutzeroberflächenelemente zu kommunizieren. Diese unterschiedlichen Benutzergruppen haben Schwierigkeiten, dasselbe Benutzeroberflächen-Element zu identifizieren, wenn sich der Beschriftungstext von der QuickInfo oder dem Text des benutzerdefinierten Readers unterscheidet.
 * Bei Kontrollkästchen und Dropdown-Listensteuerelementen in Tabellenzellen gibt die Bildschirmlesehilfe an, welche Beschriftung, QuickInfo oder benutzerdefinierten Bildschirmlesehilfen-Text Sie für das Objekt angeben. Wenn Sie die Spaltenüberschrift für den Alternativtext für diese Objekte verwenden möchten, wenn Sie sie in einer Tabelle platzieren, dürfen Sie keine Beschriftung, QuickInfo oder benutzerdefinierten Text für die Bildschirmlesehilfe angeben.
 * Wenn das Steuerelement zusätzliche Anweisungen erfordert, stellen Sie sicher, dass diese ebenfalls in der Textalternative enthalten sind. Geben Sie genügend gesprochene Informationen an, damit Benutzer wissen können, welche Eingabe erwartet wird und wie das Feld korrekt ausgefüllt werden soll. Überfordern Sie Benutzer jedoch nicht mit redundanten Informationen.
-* Geben Sie keine unnötigen Informationen an, die beschreiben, wie Steuerelemente verwendet werden - lassen Sie dies von den Hilfstechnologien des Benutzers handhaben. Benutzer können die Ausführlichkeit entsprechend ihren Komfort-Levels konfigurieren.
+* Geben Sie keine unnötigen Informationen an, die beschreiben, wie Steuerelemente verwendet werden. Lassen Sie dies von den Hilfstechnologien des Benutzers handhaben. Benutzer können die Ausführlichkeit entsprechend ihren Komfort-Levels konfigurieren.
 
-Abbildung 4 zeigt ein Beispiel für ein Textfeld mit einer visuellen Beschriftung, die für einige Benutzer der Bildschirmlesehilfe möglicherweise unklar ist. In diesem Reader ist &quot;Benutzerdefinierter Bildschirmtext&quot;auf &quot;Seitenzahl&quot;und &quot;Bildschirmpriorität&quot;auf &quot;Benutzerdefinierter Reader&quot;eingestellt. Daher wird der tatsächliche (visuelle) Beschriftungstext (&quot;# der Seiten&quot;) nicht von der Bildschirmlesehilfe verwendet. Alternativ konnte ein QuickInfo angegeben werden.
+Abbildung 4 zeigt ein Beispiel für ein Textfeld mit einer visuellen Beschriftung, die für einige Benutzer der Bildschirmlesehilfe möglicherweise unklar ist. In diesem Beispiel ist &quot;Reader des benutzerdefinierten Bildschirms&quot;auf &quot;Anzahl der Seiten&quot;und &quot;Rangfolge des Readers&quot;auf &quot;Benutzerdefinierter &quot;eingestellt. Daher wird der tatsächliche (visuelle) Beschriftungstext (&quot;# der Seiten&quot;) nicht von der Bildschirmlesehilfe verwendet. Alternativ konnte ein QuickInfo angegeben werden.
 
 ![Festlegen des Reader-Textes für benutzerdefinierte Bildschirme, wenn die sichtbare Beschriftung unzureichend ist](/help/forms/using/assets/image-4.png)
 
@@ -712,7 +715,7 @@ Formularinhalte werden von Hilfstechnologien gelesen, die sprachspezifische Spra
 
 Wenn der Text (oder Alternativtext) in Ihren Formularen in mehr als einer Sprache angezeigt wird, müssen Sie die Bereiche Ihres Formulars identifizieren, in denen ein Wechsel von einer Sprache zur anderen erfolgt.
 
-In LiveCycle Designer wird das Festlegen der Primärsprache erreicht, indem die Eigenschaft &quot;Locale&quot;des Formulars und die Eigenschaft &quot;Locale&quot;für das Teilformular der obersten Ebene festgelegt werden. Um Änderungen an der Primärsprache zu identifizieren, ändern Sie die Locale-Eigenschaft für jedes Objekt, das eine andere Sprache als die Sprache des Formulars verwendet.
+In LiveCycle Designer wird das Festlegen der Primärsprache erreicht, indem die Eigenschaft &quot;Locale&quot;des Formulars und die Eigenschaft &quot;Locale&quot;für das Teilformular der obersten Ebene festgelegt werden. Um Änderungen an der Primärsprache zu identifizieren, ändern Sie die Locale-Eigenschaft für Objekte, die eine andere Sprache als die Sprache des Formulars verwenden.
 
 So legen Sie die Locale-Eigenschaft eines Formulars fest:
 1. Wählen Sie &quot;Datei&quot;> &quot;Formulareigenschaften&quot;und wählen Sie die Registerkarte &quot;Standard&quot;

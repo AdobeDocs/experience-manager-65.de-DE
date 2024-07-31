@@ -7,7 +7,7 @@ exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '4534'
 ht-degree: 100%
@@ -35,6 +35,7 @@ Dieses Paket enthält eine Cloud-Konfiguration, die die folgenden Plattformversi
 | Adobe Sign | v5-API | **Unterstützt** |
 | Microsoft® Dynamics 365 | 1710 (9.1.0.3020) | **Unterstützt** |
 | Adobe Analytics | v1.4-Rest-API | **Unterstützt** |
+
 **Überlegungen zur Paketinstallation:**
 
 * Installieren Sie das Paket auf einem bereinigten Server, der frei von anderen Demopaketen oder älteren Demopaketversionen ist.
@@ -311,15 +312,15 @@ Sobald die Cloud-Konfiguration abgeschlossen ist, sollten Sie das Formulardatenm
 
    >[!NOTE]
    >
-   >Klicken Sie nach dem Testen der Services auf **Abbrechen** um sicherzustellen, dass unfreiwillige Änderungen nicht an das Formulardatenmodell weitergegeben werden.
+   Klicken Sie nach dem Testen der Services auf **Abbrechen** um sicherzustellen, dass unfreiwillige Änderungen nicht an das Formulardatenmodell weitergegeben werden.
 
    >[!NOTE]
    >
-   >Es wurde berichtet, dass ein AEM Server-Neustart erforderlich war, damit die Datenquelle erfolgreich an das FDM gebunden werden konnte.
+   Es wurde berichtet, dass ein AEM Server-Neustart erforderlich war, damit die Datenquelle erfolgreich an das FDM gebunden werden konnte.
 
    >[!NOTE]
    >
-   >Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+   Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 #### Testen des Formulardatenmodells (Derby) {#test-fdm-derby}
 
@@ -424,7 +425,7 @@ Administratoren können Benutzern AEM Analytics-Berechtigungen erteilen, indem s
 
 >[!NOTE]
 >
->AEM Forms-Analytics-Daten sind offline oder ohne Adobe Analytics-Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist. Für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
+AEM Forms-Analytics-Daten sind offline oder ohne Adobe Analytics-Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist. Für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
 
 1. Navigieren Sie zu *https://&lt;aemserver>:&lt;port>/sites.html/content*
 1. Wählen Sie die „AEM Forms We.Gov-Site“ aus, um die Seiten der Site anzuzeigen.
@@ -453,7 +454,7 @@ Administratoren können Benutzern AEM Analytics-Berechtigungen erteilen, indem s
 
 >[!NOTE]
 >
->AEM Forms Analytics-Daten sind offline oder ohne Adobe Analytics Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist, für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
+AEM Forms Analytics-Daten sind offline oder ohne Adobe Analytics Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist, für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
 
 1. Gehen Sie zu
 
@@ -499,7 +500,7 @@ Damit der Service ordnungsgemäß mit dem Konvertierungs-Tool für Formulare kom
 
 >[!NOTE]
 >
->Das in diesem Abschnitt erstellte Zertifikat wird verwendet, um den Integrations-Service in Adobe I/O zu erstellen. Sobald Benutzer den Integrations-Service erstellt haben, können Benutzer diese Informationen aus Adobe I/O verwenden, um die Konfiguration abzuschließen.
+Das in diesem Abschnitt erstellte Zertifikat wird verwendet, um den Integrations-Service in Adobe I/O zu erstellen. Sobald Benutzer den Integrations-Service erstellt haben, können Benutzer diese Informationen aus Adobe I/O verwenden, um die Konfiguration abzuschließen.
 
 #### Erstellen der Integration in Adobe I/O {#create-integration-adobeio}
 
@@ -798,7 +799,7 @@ Um sie so zu konfigurieren, dass sie im Workflow aktiviert werden, müssen Benut
 
    >[!NOTE]
    >
-   >Auch wenn Benutzende den Dienst auf der Seite des Konfigurations-Managers aktivieren, müssen sie dennoch eine Dienstkonfiguration einrichten, um mit den angefragten externen Diensten kommunizieren zu können.
+   Auch wenn Benutzende den Dienst auf der Seite des Konfigurations-Managers aktivieren, müssen sie dennoch eine Dienstkonfiguration einrichten, um mit den angefragten externen Diensten kommunizieren zu können.
 
    ![WeGov-Formularpaket](assets/aftia-configuration-options.jpg)
 

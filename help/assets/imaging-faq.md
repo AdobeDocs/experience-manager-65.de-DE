@@ -9,10 +9,10 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '3547'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -144,13 +144,15 @@ Wenn von einem Verbraucher ein Bild angefordert wird, überprüft die intelligen
 * Automatische Konvertierung in AVIF, wenn der Browser das Format unterstützt
 * Automatische Konvertierung in WebP, wenn die AVIF-Konvertierung nicht vorteilhaft war oder der Browser AVIF nicht unterstützt
 * Automatische Konvertierung in JPEG2000, wenn Safari WebP nicht unterstützt
-* Automatische Konvertierung in JPEGXR für IE9+ oder wenn Edge WebP nicht unterstützt\
+* Automatische Konvertierung in JPEGXR für IE9+ oder wenn Edge WebP nicht unterstützt
+
   | Bildformat | Unterstützte Browser |
-|---|---|
-| AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
-| WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
-| JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
-| JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+  |---|---|
+  | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
+  | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
+  | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
+  | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+
 * Bereitstellung des ursprünglich angeforderten Bildformats für Browser, die diese Formate nicht unterstützen.
 
 Wenn die Originalbildgröße kleiner ist als die von der intelligente Bildbearbeitung erzeugte, wird das Originalbild bereitgestellt.
