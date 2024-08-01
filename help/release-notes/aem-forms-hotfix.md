@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
-workflow-type: ht
-source-wordcount: '903'
-ht-degree: 100%
+source-git-commit: c524e4355794ab598b6b69a8ce96cdba90abaa22
+workflow-type: tm+mt
+source-wordcount: '930'
+ht-degree: 97%
 
 ---
 
@@ -92,6 +92,7 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
      <li>Wenn ein adaptives Formular aus einer Adobe Experience Manager-Veröffentlichungsinstanz an einen Adobe Experience Manager-Workflow gesendet wird, können die Anlagen nicht vom Workflow gespeichert werden. (FORMS-14209) </li>
      <li> Bei der Installation des AEM 6.5 Forms Service Pack 20-Pakets (AEM Forms-Add-on-Paket für SP20) verschlechtert sich die Leistung der AEM Sites-Benutzeroberfläche erheblich. (FORMS-13791) </li>
      <li>Der Vorbefüllungsdienst schlägt in interaktiven Kommunikationen mit einer NULL-Zeigerausnahme fehl. (CQDOC-21355)</li>
+     <li>Konfigurationen, die den Legacy-Cloud-Service für Adobe Analytics mit anwenderberechtigungsbasierter Authentifizierung verwenden, funktionieren nicht ordnungsgemäß, was dazu führt, dass Analytics-Regeln nicht ausgeführt werden. (FORMS-15428)
     </ul>
     </td>    
   </tr>

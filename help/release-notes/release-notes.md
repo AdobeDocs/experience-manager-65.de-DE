@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
-workflow-type: ht
-source-wordcount: '4332'
-ht-degree: 100%
+source-git-commit: 447ff116c822c7ab0d5826103d6485e7d4ed13ce
+workflow-type: tm+mt
+source-wordcount: '4390'
+ht-degree: 99%
 
 ---
 
@@ -550,6 +550,8 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
    1. Navigieren Sie in CRXDE zum Verzeichnis `/libs/fd/aemforms/install/`.
    1. Löschen Sie das Bundle `com.adobe.granite.ui.commons-5.10.26.jar`.
    1. Starten Sie den AEM-Server neu.
+
+* Wenn ein Anwender mit dem Forms-Add-on ein Update auf AEM Forms Service Pack 20 (6.5.20.0) installiert hat, funktionieren Konfigurationen, die den alten Cloud-Dienst für Adobe Analytics mit benutzeranmeldebasierter Authentifizierung verwenden, nicht ordnungsgemäß, was dazu führt, dass Analytics-Regeln nicht ausgeführt werden. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-15428)
 
 * Wenn Benutzende auf AEM Forms Service Pack 20 (6.5.20.0) auf JEE Server aktualisieren und mithilfe von Ausgabe-Services PDF-Dateien generieren, werden die PDF-Dateien mit Problemen bezüglich der Barrierefreiheit gerendert. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922112)
 * Wenn Benutzende getaggte PDF-Dateien mit dem Ausgabe-Service auf JEE generieren, wird eine Warnung zu einer unangemessenen Struktur angezeigt. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922038)
