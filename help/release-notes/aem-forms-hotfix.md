@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 source-git-commit: c524e4355794ab598b6b69a8ce96cdba90abaa22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '930'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
      <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Hotfix für AEM Service Pack 6.5.21.0 auf JBoss JEE-Server </a> </li>
       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Hotfix für AEM Service Pack 6.5.21.0 auf Weblogic JEE-Server </a> </li>
        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Hotfix für AEM Service Pack 6.5.21.0 auf Websphere JEE-Server </a> </li>
-        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Hotfix für AEM Service Pack 6.5.19.0 auf OSGi-Server </a> </li>
+        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Hotfix für AEM Service Pack 6.5.21.0 auf OSGi-Server </a> </li>
      </ul>
      </td>
     <td>
@@ -89,10 +89,10 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
     <li>In einem adaptiven Formular, das auf einer XDP mit eingebetteten Skripten auf Kontrollkästchen basiert, werden die Skripte für Elemente nach diesen Kontrollkästchen nicht ausgeführt. Für dieses Problem ist ein Hotfix verfügbar. (FORMS-14244) </li>
      <li> Im Widget für die Datumsauswahl werden die Zeilen abgeschnitten, wenn Sie im Popup-Widget mit dem Muster Bearbeiten/Anzeigen nach Feldern durch die Monate blättern. Für dieses Problem ist ein Hotfix verfügbar. (FORMS-13620) </li>
      <li>Formulareinreichungen schlagen fehl, wenn versucht wird, den DoR-Service (Document of Record; Nachweis) im Backend zu verwenden. Die Fehlermeldung lautet: „Sendeaktion konnte nicht abgeschlossen werden, da die Formularressource nicht ordnungsgemäß zugewiesen ist“. (FORMS-13798) </li>
-     <li>Wenn ein adaptives Formular aus einer Adobe Experience Manager-Veröffentlichungsinstanz an einen Adobe Experience Manager-Workflow gesendet wird, können die Anlagen nicht vom Workflow gespeichert werden. (FORMS-14209) </li>
-     <li> Bei der Installation des AEM 6.5 Forms Service Pack 20-Pakets (AEM Forms-Add-on-Paket für SP20) verschlechtert sich die Leistung der AEM Sites-Benutzeroberfläche erheblich. (FORMS-13791) </li>
+     <li>Wenn ein adaptives Formular aus einer Adobe Experience Manager-Veröffentlichungsinstanz an einen Adobe Experience Manager-Workflow gesendet wird, können die Anlagen nicht vom Workflow gespeichert werden.  (FORMS-14209) </li>
+     <li> Bei der Installation des AEM 6.5 Forms Service Pack 20-Pakets (AEM Forms-Add-on-Paket für SP20) verschlechtert sich die Leistung der AEM Sites-Benutzeroberfläche erheblich.  (FORMS-13791) </li>
      <li>Der Vorbefüllungsdienst schlägt in interaktiven Kommunikationen mit einer NULL-Zeigerausnahme fehl. (CQDOC-21355)</li>
-     <li>Konfigurationen, die den Legacy-Cloud-Service für Adobe Analytics mit anwenderberechtigungsbasierter Authentifizierung verwenden, funktionieren nicht ordnungsgemäß, was dazu führt, dass Analytics-Regeln nicht ausgeführt werden. (FORMS-15428)
+     <li>Konfigurationen, die den älteren Cloud-Service für Adobe Analytics mit einer auf Benutzeranmeldeinformationen basierenden Authentifizierung verwenden, funktionieren nicht ordnungsgemäß, wodurch Analyseregeln nicht ausgeführt werden. (FORMS-15428)
     </ul>
     </td>    
   </tr>

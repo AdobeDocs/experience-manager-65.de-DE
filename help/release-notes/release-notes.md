@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 source-git-commit: 447ff116c822c7ab0d5826103d6485e7d4ed13ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4390'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -205,7 +205,7 @@ Im Folgenden finden Sie eine Liste der in dieser Version enthaltenen Fehlerbeheb
 * Eine angehaltene E-Mail-Benachrichtigung mit Anhang konnte nicht gesendet werden, wenn die Fehlerbehebung für [Zusätzliche Schritte zum Abrufen von E-Mails mit Anhängen](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) auf dem Server ausgeführt wurde. (FORMS-14227)
 * Wenn Benutzende in AEM Forms Workspace in Service Pack 18 (6.5.18.0) Kommentare zu einem hochgeladenen Dokument senden, führt dies dazu, dass die Dokumentdatei beschädigt wird. (FORMS-13735)
 * Wenn Benutzende versuchen, im seitlichen Bedienfeld nach einem adaptiven Formular zu suchen, schlägt die Suche in AEM Forms Service Pack 18 (6.5.18.0) und Service Pack 19 (6.5.19.0) und Service Pack 20 (6.5.20.0) fehl. (FORMS-14117)
-* Wenn Benutzende ein Formular bearbeiten, das auf Deutsch erstellt und ins Englische übersetzt wurde, wird die Sprache zwischen den Modi „Vorschau“ und „Bearbeiten“ inkonsistent angezeigt. Dadurch werden die Komponenten „RadioButton“ und „Checkbox“ im Vorschaumodus korrekterweise auf Deutsch, im Bearbeitungsmodus jedoch auf Englisch angezeigt.  (FORMS-13910)
+* Wenn Benutzende ein Formular bearbeiten, das auf Deutsch erstellt und ins Englische übersetzt wurde, wird die Sprache zwischen den Modi „Vorschau“ und „Bearbeiten“ inkonsistent angezeigt. Dadurch werden die Komponenten „RadioButton“ und „Checkbox“ im Vorschaumodus korrekterweise auf Deutsch, im Bearbeitungsmodus jedoch auf Englisch angezeigt. (FORMS-13910)
 * Das Prozess-Tool „Prozess bereinigen“ schlägt mit dem Fehler `NoClassDefFoundError: org/omg/CORBA/UserException` fehl. (FORMS-13751)
 * Wenn Benutzende versuchen, unter Verwendung eines Einbettungs-Containers ein adaptives Formular (AF) in eine externe Web-Seite oder in AEM Sites einzubetten, führt der Guide-Container für das adaptive Formular ein ARIA-LABEL ein. Das Label hat role=&quot;main&quot; für das eingebettete Formular. Gemäß den ARIA-Richtlinien sollte pro Seite nur eine role=&quot;main&quot; vorhanden sein. Wenn Benutzende für den Hauptinhalt ihrer Seite eine weitere role=&quot;main&quot; hinzufügen, wird diese daher als Problem mit der Barrierefreiheit gekennzeichnet. (FORMS-13538)
 * Bei Verwendung der Dropdown-Komponente in einem adaptiven Formular unter AEM Forms Service Pack 19 (6.5.19.0) behalten die Dropdown-Komponenten mit Platzhaltertext den Wert `id="emptyValue"` bei. Wenn also ein Formular mehrere Dropdown-Komponenten enthält, verfügt jede über `id="emptyValue"`, was gemäß den ARIA-Richtlinien nicht korrekt ist. (FORMS-13370).
@@ -551,7 +551,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
    1. Löschen Sie das Bundle `com.adobe.granite.ui.commons-5.10.26.jar`.
    1. Starten Sie den AEM-Server neu.
 
-* Wenn ein Anwender mit dem Forms-Add-on ein Update auf AEM Forms Service Pack 20 (6.5.20.0) installiert hat, funktionieren Konfigurationen, die den alten Cloud-Dienst für Adobe Analytics mit benutzeranmeldebasierter Authentifizierung verwenden, nicht ordnungsgemäß, was dazu führt, dass Analytics-Regeln nicht ausgeführt werden. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-15428)
+* Wenn Benutzende auf das mit dem Forms-Add-on installierte AEM Forms Service Pack 20 (6.5.20.0) aktualisieren, funktionieren Konfigurationen nicht ordnungsgemäß, die den älteren Cloud-Service für Adobe Analytics mit einer auf Benutzeranmeldeinformationen basierenden Authentifizierung verwenden. Dadurch werden Analyseregeln nicht ausgeführt. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-15428)
 
 * Wenn Benutzende auf AEM Forms Service Pack 20 (6.5.20.0) auf JEE Server aktualisieren und mithilfe von Ausgabe-Services PDF-Dateien generieren, werden die PDF-Dateien mit Problemen bezüglich der Barrierefreiheit gerendert. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922112)
 * Wenn Benutzende getaggte PDF-Dateien mit dem Ausgabe-Service auf JEE generieren, wird eine Warnung zu einer unangemessenen Struktur angezeigt. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922038)
