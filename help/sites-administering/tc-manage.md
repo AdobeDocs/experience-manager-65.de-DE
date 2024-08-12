@@ -5,10 +5,10 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: 26ac50aa27501fe6a80b38a474e9811338c4fb56
 workflow-type: tm+mt
-source-wordcount: '3506'
-ht-degree: 100%
+source-wordcount: '3519'
+ht-degree: 99%
 
 ---
 
@@ -188,9 +188,13 @@ Sie können Seiten, Assets, Tags oder i18n-Wörterbücher dem Übersetzungsauftr
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Wählen Sie das Wörterbuch aus, das Sie hinzufügen möchten, und klicken Sie dann auf die Schaltfläche „Hinzufügen“.
+1. Wählen Sie den Ordner &quot;**Stammordner**&quot;und das Wörterbuch (falls erforderlich), das Sie hinzufügen möchten, und wählen Sie dann &quot;**Hinzufügen**&quot;.
 
-   ![chlimage_1-252](assets/chlimage_1-252.png)
+   ![i18n-Wörterbuch](assets/tc-manage-i18n-dictionary.png)
+
+1. Wählen Sie bei Bedarf die Art der Aktualisierung aus:
+
+   ![Übersetzen](assets/tc-manage-translate.png)
 
 Ihr Wörterbuch befindet sich nun in Ihrem Übersetzungsauftrag.
 
