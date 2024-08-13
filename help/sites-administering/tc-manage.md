@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
 source-git-commit: 26ac50aa27501fe6a80b38a474e9811338c4fb56
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3519'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -188,11 +188,11 @@ Sie können Seiten, Assets, Tags oder i18n-Wörterbücher dem Übersetzungsauftr
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Wählen Sie den Ordner &quot;**Stammordner**&quot;und das Wörterbuch (falls erforderlich), das Sie hinzufügen möchten, und wählen Sie dann &quot;**Hinzufügen**&quot;.
+1. Wählen Sie **Stammverzeichnis** und das Wörterbuch (falls erforderlich), das Sie hinzufügen möchten, und wählen Sie dann **Hinzufügen**.
 
-   ![i18n-Wörterbuch](assets/tc-manage-i18n-dictionary.png)
+   ![I18N-Wörterbuch](assets/tc-manage-i18n-dictionary.png)
 
-1. Wählen Sie bei Bedarf die Art der Aktualisierung aus:
+1. Wählen Sie ggf. die Art der Aktualisierung aus:
 
    ![Übersetzen](assets/tc-manage-translate.png)
 
