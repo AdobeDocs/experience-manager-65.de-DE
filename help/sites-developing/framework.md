@@ -10,10 +10,10 @@ feature: Developing,Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1638'
-ht-degree: 100%
+source-wordcount: '1637'
+ht-degree: 99%
 
 ---
 
@@ -145,7 +145,7 @@ Das Mixin `cq:OwnerTaggable`, das von `cq:Taggable` übernimmt, soll anzeigen, d
 
 ### Knotentypnotation (CND) {#node-type-notation-cnd}
 
-Knotentypdefinitionen sind im Repository als CND-Dateien vorhanden. Die CND-Notation wird als Teil der JCR-Dokumentation [hier](https://jackrabbit.apache.org/jcr/node-type-notation.html) definiert.
+Knotentypdefinitionen sind im Repository als CND-Dateien vorhanden. Die CND-Notation wird als Teil der [Jackrabbit-Dokumentation](https://jackrabbit.apache.org/jcr/node-type-notation.html) definiert.
 
 Die wichtigsten Definitionen für die Knotentypen in AEM sind wie folgt:
 
@@ -201,6 +201,7 @@ Im Folgenden finden Sie eine Beschreibung der Auswirkungen, die im Repository au
   >Die Eigenschaft `cq:backlinks` wird dem verschobenen oder zusammengeführten Tag nur hinzugefügt, wenn eine der folgenden Bedingungen erfüllt ist:
   >
   >1. Tag wird im Inhalt verwendet (was bedeutet, dass es einen Verweis hat).
+
   >1. Das Tag enthält bereits verschobene untergeordnete Elemente.
 
 * Das Lesen einer `cq:tags`-Eigenschaft eines Inhaltsknotens umfasst die folgende Auflösung:

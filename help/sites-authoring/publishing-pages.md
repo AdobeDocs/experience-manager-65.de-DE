@@ -5,10 +5,10 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '1673'
-ht-degree: 100%
+source-wordcount: '1669'
+ht-degree: 97%
 
 ---
 
@@ -32,16 +32,14 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten Datum/Zeitpunkt 
 >
 >* **Replizieren/Replikation**
 >  Dies sind technische Begriffe, die für die Verschiebung von Daten (z. B. Seiteninhalten, Dateien, Code, Benutzerkommentaren) zwischen Umgebungen verwendet werden, etwa beim Veröffentlichen oder Zurückreplizieren von Benutzerkommentaren.
->
 
->[!NOTE]
->
->Wenn Sie nicht über die erforderlichen Berechtigungen zum Veröffentlichen einer bestimmten Seite verfügen, dann:
->
->* wird ein Workflow ausgelöst, der die entsprechende Person über Ihre Veröffentlichungsanfrage informiert.
->* wurde dieser [Workflow möglicherweise angepasst](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) von Ihrem Entwicklungsteam.
->* Sie werden in einer Mitteilung darüber informiert, dass der Workflow ausgelöst wurde.
->
+## Unzureichende Berechtigungen {#insufficient-privileges}
+
+Wenn Sie nicht über die erforderlichen Berechtigungen zum Veröffentlichen einer bestimmten Seite verfügen, dann:
+
+* wird ein Workflow ausgelöst, der die entsprechende Person über Ihre Veröffentlichungsanfrage informiert.
+* wurde dieser [Workflow möglicherweise angepasst](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) von Ihrem Entwicklungsteam.
+* Sie werden in einer Mitteilung darüber informiert, dass der Workflow ausgelöst wurde.
 
 ## Veröffentlichen von Seiten {#publishing-pages-1}
 
@@ -185,7 +183,9 @@ So veröffentlichen Sie mit „Veröffentlichung verwalten“ eine Seite bzw. ma
 
    >[!NOTE]
    >
-   >Der gezeigte **Workflow-Schritt** hängt von den Rechten der jeweiligen Person ab. Weitere Informationen finden Sie im [vorherigen Hinweis auf dieser Seite](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) bezüglich Berechtigungen für die Veröffentlichung sowie unter [Verwaltung der Zugriffsrechte auf Workflows](/help/sites-administering/workflows-managing.md) und unter [Anwenden von Workflows auf Seiten](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd).
+   >Der Schritt **Workflows** wird basierend darauf angezeigt, welche Rechte Ihr Benutzer hat oder nicht.
+   >
+   >Weitere Informationen finden Sie in den Abschnitten [Unzureichende Berechtigungen](/help/sites-authoring/publishing-pages.md#insufficient-privileges), [Verwalten des Zugriffs auf Workflows](/help/sites-administering/workflows-managing.md) und [Anwenden von Workflows auf Seiten](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) .
 
    Die Ressourcen werden nach den ausgelösten Workflows gruppiert und erhalten jeweils folgende Optionen:
 

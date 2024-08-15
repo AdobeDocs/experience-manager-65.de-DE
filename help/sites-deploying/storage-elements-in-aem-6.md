@@ -10,10 +10,10 @@ exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 100%
+source-wordcount: '729'
+ht-degree: 93%
 
 ---
 
@@ -118,8 +118,8 @@ Red Hat® Linux® nutzt einen Speicherverwaltungsalgorithmus mit der Bezeichnung
 >
 >Sehen Sie sich die folgenden Ressourcen an:
 >
->* Weitere Informationen zu Transparent Huge Pages unter Red Hat® Linux® finden Sie in diesem [Artikel](https://access.redhat.com/solutions/46111).
->* Tipps zum Linux®-Tuning finden Sie in diesem [Artikel](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=de).
+>* Weitere Informationen zu Transparent Huge Pages unter Red Hat® Linux® finden Sie im folgenden Artikel des Red Hat®-Kundenportals: [Verwendung, Überwachung und Deaktivierung transparenter Hugepages in Red Hat Enterprise Linux 6,7 und 8?](https://access.redhat.com/solutions/46111)
+>* Tipps zur Linux®-Optimierung finden Sie unter [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md).
 >
 
 ## Warten von Repositorys {#maintaining-the-repository}

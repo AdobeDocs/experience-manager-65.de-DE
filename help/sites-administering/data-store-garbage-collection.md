@@ -10,10 +10,10 @@ exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '1892'
-ht-degree: 100%
+source-wordcount: '1897'
+ht-degree: 99%
 
 ---
 
@@ -182,7 +182,7 @@ Der curl-Befehl wird sofort zurückgegeben.
 
 Die Konsistenzprüfung für den Datenspeicher meldet alle Binärdateien des Datenspeichers, die fehlen, aber noch referenziert werden. Gehen Sie wie folgt vor, um eine Konsistenzprüfung zu starten:
 
-1. Gehen Sie zur JMX-Konsole. Informationen zur Verwendung der JMX-Konsole finden Sie in [diesem Artikel](/help/sites-administering/jmx-console.md#using-the-jmx-console).
+1. Gehen Sie zur JMX-Konsole. Informationen zur Verwendung der JMX-Konsole finden Sie unter [Überwachen von Serverressourcen mit der JMX-Konsole](/help/sites-administering/jmx-console.md#using-the-jmx-console).
 1. Suchen Sie nach dem MBean **BlobGarbageCollection** und klicken Sie darauf.
 1. Klicken Sie auf den Link `checkConsistency()`.
 

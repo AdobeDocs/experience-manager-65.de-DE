@@ -5,10 +5,10 @@ exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 100%
+source-wordcount: '901'
+ht-degree: 99%
 
 ---
 
@@ -112,7 +112,7 @@ Beachten Sie, dass benutzerdefinierte Speicherkandidaten weitere Funktionen defi
 >
 >Standardmäßig sind die derzeit bei Veröffentlichungs-Servern angemeldeten Benutzenden ContextHub nicht bekannt und werden von ContextHub als anonyme Benutzende betrachtet.
 >
->Sie können ContextHub über angemeldete Benutzerinnen und Benutzer informieren, indem Sie den Profilspeicher laden. Den Beispiel-Code finden Sie [auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>Sie können ContextHub über angemeldete Benutzerinnen und Benutzer informieren, indem Sie den Profilspeicher laden. Siehe [Beispielcode auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### ContextHub-Ereignisse {#contexthub-eventing}
 

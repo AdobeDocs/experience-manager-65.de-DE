@@ -9,7 +9,7 @@ exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Komponenten können mithilfe einer AEM-Instanz und des interaktiven Leitfadens [
 
 Wenn beim Erstellen von Seiteninhalten die zugrunde liegende Vorlage Änderungen am Design der Seite zulässt, ist es möglich, Komponenten zu aktivieren, die im Komponenten-Browser nicht bereits als Teil des Site-Designs verfügbar sind.
 
-Die verfügbaren Communities-Komponenten werden [hier](author-communities.md#available-communities-components) aufgelistet.
+Siehe die Liste unter [Verfügbare Communities-Komponenten](author-communities.md#available-communities-components).
 
 >[!NOTE]
 >

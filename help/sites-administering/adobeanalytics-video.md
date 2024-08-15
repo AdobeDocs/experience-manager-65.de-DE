@@ -10,10 +10,10 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 100%
+source-wordcount: '1758'
+ht-degree: 99%
 
 ---
 
@@ -379,7 +379,7 @@ Bei Nutzung der **Legacy Seconds**-Methode werden Adobe Analytics-Aufrufe alle N
 
    ![lseconds](assets/lseconds.png)
 
-   *Der Aufruf ähnelt dem o. g. Legacy Milestones-Aufruf.  Informationen zu pev3 **[finden Sie hier](/help/sites-administering/adobeanalytics.md)**.*
+   *Der Aufruf ähnelt dem o. g. Legacy Milestones-Aufruf.  Siehe Informationen zu pev3 unter [Integrieren mit Adobe Analytics](/help/sites-administering/adobeanalytics.md).*
 
 **In diesem Tutorial verwendete Referenzen:**
 

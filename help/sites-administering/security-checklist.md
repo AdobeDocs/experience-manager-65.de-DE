@@ -10,10 +10,10 @@ exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '2959'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -339,7 +339,7 @@ Um dieses Problem abzumildern, können Sie die folgenden Schritte durchführen:
 
 Das standardmäßige Asset-Download-Servlet ermöglicht es authentifizierten Benutzerinnen und Benutzern, beliebig große, gleichzeitige Download-Anfragen zur Erstellung von ZIP-Dateien von Assets zu stellen. Das Erstellen großer ZIP-Archive kann den Server und das Netzwerk überlasten. Um ein mögliches DoS-Risiko (Denial of Service) zu reduzieren, das durch dieses Verhalten verursacht wird, `AssetDownloadServlet`ist die OSGi-Komponente auf der [!DNL Experience Manager]-Veröffentlichungsinstanz standardmäßig deaktiviert. Auf der [!DNL Experience Manager]-Autoreninstanz ist sie standardmäßig aktiviert.
 
-Wenn Sie die Download-Funktion nicht benötigen, deaktivieren Sie das Servlet auf Authoring- und Publishing-Bereitstellungen. Wenn Sie die Asset-Download-Funktion im Rahmen Ihrer Einrichtung aktivieren müssen, finden Sie weitere Informationen in [diesem Artikel](/help/assets/download-assets-from-aem.md). Sie können auch eine maximale Download-Grenze definieren, die Ihre Bereitstellung unterstützen kann.
+Wenn Sie die Download-Funktion nicht benötigen, deaktivieren Sie das Servlet auf Authoring- und Publishing-Bereitstellungen. Wenn für Ihre Einrichtung die Funktion zum Herunterladen von Assets aktiviert sein muss, finden Sie weitere Informationen unter [Herunterladen von Assets von Adobe Experience Manager](/help/assets/download-assets-from-aem.md) . Sie können auch eine maximale Download-Grenze definieren, die Ihre Bereitstellung unterstützen kann.
 
 ### Deaktivieren von WebDAV {#disable-webdav}
 
@@ -395,7 +395,7 @@ Standardmäßig speichert AEM Systemmetadaten wie `jcr:createdBy` oder `jcr:last
 
 Wie alle Repository-Daten werden diese Eigenschaften durch den Oak-Autorisierungs-Stapel vermittelt. Der Zugriff auf sie sollte gemäß dem Grundsatz der geringsten Rechte eingeschränkt werden.
 
-Adobe bietet ein Paket zur Berechtigungs-Härtung als Grundlage, um Kunden dabei zu unterstützen, hierauf aufzubauen. Es funktioniert durch die Installation eines Zugriffssteuerungseintrags „Verweigern“ im Repository-Stammverzeichnis, wodurch der anonyme Zugriff auf häufig verwendete Systemeigenschaften eingeschränkt wird. Das Paket kann [hier](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) heruntergeladen werden und kann in allen unterstützten Versionen von AEM installiert werden.
+Adobe bietet ein Paket zur Berechtigungs-Härtung als Grundlage, um Kunden dabei zu unterstützen, hierauf aufzubauen. Es funktioniert durch die Installation eines Zugriffssteuerungseintrags „Verweigern“ im Repository-Stammverzeichnis, wodurch der anonyme Zugriff auf häufig verwendete Systemeigenschaften eingeschränkt wird. Das Paket kann [heruntergeladen](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) und auf allen unterstützten Versionen von AEM installiert sein.
 
 Um die Änderungen zu veranschaulichen, können wir die Knoteneigenschaften, die vor der Installation des Pakets anonym angezeigt werden können:
 

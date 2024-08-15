@@ -9,10 +9,10 @@ exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '1257'
-ht-degree: 100%
+source-wordcount: '1264'
+ht-degree: 98%
 
 ---
 
@@ -112,7 +112,7 @@ Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall rele
 * Implementieren Sie das benutzerdefinierte Prädikat, indem Sie die Schnittstelle [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) implementieren.
 * Geben Sie einen Namen für die Eigenschaft an und verwenden Sie diesen Namen, wenn Sie `pathbrowser` verwenden.
 
-Weitere Details zum Erstellen einer benutzerdefinierten Eigenschaft finden Sie in [diesem Artikel](/help/sites-developing/implementing-custom-predicate-evaluator.md).
+Weitere Informationen zum Erstellen eines benutzerdefinierten Prädikats finden Sie unter [Implementieren eines benutzerdefinierten Prädikat-Auswerters für den Query Builder](/help/sites-developing/implementing-custom-predicate-evaluator.md).
 
 >[!NOTE]
 >

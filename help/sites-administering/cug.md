@@ -10,10 +10,10 @@ exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 100%
+source-wordcount: '710'
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,7 @@ Dies ist optional. Wenn Sie das Feld leer lassen, wird die standardmäßige Anme
    >
    >Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ aus Blueprints nicht zu Live Copies ausgerollt werden können. Berücksichtigen Sie dies, wenn Sie eine Live Copy konfigurieren.
    >
-   >Weitere Informationen finden Sie auf [dieser Seite](closed-user-groups.md#aem-livecopy).
+   >Weitere Informationen finden Sie unter [Geschlossene Benutzergruppen in AEM - Live Copy](closed-user-groups.md#aem-livecopy).
 
 1. Der Dialog **Geschlossene Benutzergruppe bearbeiten** öffnet sich. Hier können Sie nach Ihrer CUG suchen und diese auswählen und dann die Gruppenauswahl mit **Speichern** bestätigen.
 

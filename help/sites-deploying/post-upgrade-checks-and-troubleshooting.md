@@ -10,10 +10,10 @@ feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1793'
-ht-degree: 100%
+source-wordcount: '1798'
+ht-degree: 99%
 
 ---
 
@@ -103,7 +103,7 @@ Für eine Reihe von Funktionen in AEM sind nach einem Upgrade zusätzliche Schri
 
 #### Aktivieren der Bereinigung des Datenspeichers {#enable-data-store-garbage-collection}
 
-Wenn Sie einen Dateidatenspeicher verwenden, stellen Sie sicher, dass die Aufgabe „Data Store-Abfallsammlung“ aktiviert ist und zur Liste für die wöchentliche Wartung hinzugefügt wurde. Anweisungen hierzu finden Sie [hier](/help/sites-administering/data-store-garbage-collection.md).
+Wenn Sie einen Dateidatenspeicher verwenden, stellen Sie sicher, dass die Aufgabe „Data Store-Abfallsammlung“ aktiviert ist und zur Liste für die wöchentliche Wartung hinzugefügt wurde. Anweisungen hierzu finden Sie unter [Revisionsbereinigung](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ Wenn Sie einen Dateidatenspeicher verwenden, stellen Sie sicher, dass die Aufgab
 
 #### Aktivieren der Online-Revisionsbereinigung {#enable-online-revision-cleanup}
 
-Wenn Sie MongoMK oder das neue TarMK-Segmentformat verwenden, stellen Sie sicher, dass die Aufgabe „Revisionsbereinigung“ aktiviert ist und zur Liste für die tägliche Wartung hinzugefügt wurde. Anweisungen hierzu finden Sie [hier](/help/sites-deploying/revision-cleanup.md).
+Wenn Sie MongoMK oder das neue TarMK-Segmentformat verwenden, stellen Sie sicher, dass die Aufgabe „Revisionsbereinigung“ aktiviert ist und zur Liste für die tägliche Wartung hinzugefügt wurde. Anweisungen hierzu finden Sie unter [Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md).
 
 ### Ausführen des Testplans {#execute-test-plan}
 

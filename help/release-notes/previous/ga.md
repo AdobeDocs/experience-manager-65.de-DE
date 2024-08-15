@@ -5,10 +5,10 @@ exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '4484'
-ht-degree: 100%
+source-wordcount: '4493'
+ht-degree: 99%
 
 ---
 
@@ -255,7 +255,7 @@ Weitere Informationen zu Änderungen in AEM Screens finden Sie in den Versionsh
 
 #### AEM and Commerce {#aem-commerce}
 
-Verbesserungen am Commerce Integration Framework befinden sich seit AEM 6.4. in einem schnelleren Veröffentlichungszyklus. [Weitere Informationen finden Sie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html?lang=de).
+Die Verbesserungen am Commerce integration framework befinden sich seit AEM 6.4 in einem schnelleren Versionszyklus. Erfahren Sie mehr über die Integration von [AEM und Adobe Commerce mithilfe von Commerce integration framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html?lang=de).
 
 #### Communities-Add-on {#communities-add-on}
 

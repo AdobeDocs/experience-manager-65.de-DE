@@ -10,10 +10,10 @@ feature: Administering
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '2666'
-ht-degree: 100%
+source-wordcount: '2673'
+ht-degree: 98%
 
 ---
 
@@ -409,7 +409,7 @@ Es ist wichtig, hin und wieder eine Speicherbereinigung für die Dateidatenspeic
 1. Führen Sie eine Wartung für das Repository der Cold-Standby-Instanz durch, wie im [obigen](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance) Abschnitt beschrieben.
 1. Wenn die Wartung abgeschlossen und die Instanzen neu gestartet wurden, führen Sie die folgenden Schritte aus:
 
-   * Führen Sie auf der primären Instanz die Speicherbereinigung für den Datenspeicher aus. Verwenden Sie hierzu das entsprechende JMX-Bean, wie in [diesem Artikel](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console) beschrieben.
+   * Führen Sie auf der primären Instanz die automatische Datenspeicherbereinigung über das entsprechende JMX-Bean aus, wie unter Ausführen der Datenspeicherbereinigung über die JMX-Konsole](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console) beschrieben.[
    * Auf der Standby-Instanz kann die Speicherbereinigung für den Datenspeicher nur über das MBean **BlobGarbageCollection** – `startBlobGC()` – ausgeführt werden. Das MBean **RepositoryManagement** ist auf der Standby-Instanz nicht verfügbar.
 
    >[!NOTE]

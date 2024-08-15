@@ -10,10 +10,10 @@ exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 100%
+source-wordcount: '1756'
+ht-degree: 94%
 
 ---
 
@@ -123,7 +123,7 @@ Die Vorteile:
 
 >[!NOTE]
 >
->In der obigen Abbildung werden AEM-Server 3 und AEM-Server 4 mit einem inaktiven Status dargestellt, wobei von einer Netzwerklatenz zwischen den AEM-Servern im Rechenzentrum 2 und dem primären MongoDB-Knoten im Rechenzentrum 1 ausgegangen wird. Diese Latenz ist höher als die Anforderung, die [hier](/help/sites-deploying/aem-with-mongodb.md#checklists) dokumentiert ist. Wenn die maximale Latenzzeit mit den Anforderungen vereinbar ist, z. B. durch die Verwendung von Verfügbarkeitszonen, können auch die AEM-Server im Rechenzentrum 2 aktiv sein und einen aktiv-aktiven AEM-Cluster über mehrere Rechenzentren hinweg bilden.
+>Im obigen Diagramm werden AEM Server 3 und AEM Server 4 mit einem inaktiven Status dargestellt, vorausgesetzt, dass zwischen den AEM Server im Rechenzentrum 2 und dem primären MongoDB-Knoten im Rechenzentrum 1 eine Netzwerklatenz besteht, die höher ist als die unter [Adobe Experience Manager mit MongoDB - Checklisten](/help/sites-deploying/aem-with-mongodb.md#checklists) beschriebene Anforderung. Wenn die maximale Latenzzeit mit den Anforderungen vereinbar ist, z. B. durch die Verwendung von Verfügbarkeitszonen, können auch die AEM-Server im Rechenzentrum 2 aktiv sein und einen aktiv-aktiven AEM-Cluster über mehrere Rechenzentren hinweg bilden.
 
 >[!NOTE]
 >
@@ -151,7 +151,7 @@ Es ist quasi unmöglich, vorherzusagen, wie das genau Parallelitätsmodell nach 
 
 >[!NOTE]
 >
->Mithilfe von Tough Day kann die Leistung der Kundenanwendung im Kontext der bereitgestellten Hardware-Konfiguration bewertet werden. Weitere Informationen zu diesem Tool sind [hier](/help/sites-developing/tough-day.md) verfügbar.
+>[Tough Day](/help/sites-developing/tough-day.md) kann verwendet werden, um die Leistung der Anwendung des Kunden im Kontext der bereitgestellten Hardwarekonfiguration zu bewerten.
 
 Eine Mindestbereitstellung mit MongoDB umfasst normalerweise die folgende Topologie:
 
@@ -184,9 +184,9 @@ Falls Sie eine MongoMK-Bereitstellung für AEM in Betracht ziehen, liegt eine Re
 
 **Dringende Empfehlungen für MongoDB-Bereitstellungen:**
 
-* Lesen Sie den [Artikel](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager) zu MongoDB für Adobe Experience Manager.
-* Gehen Sie die Produktions[prüfliste](https://docs.mongodb.org/manual/administration/production-checklist/) für MongoDB durch.
-* Nehmen Sie an einer Zertifizierungsschulung für MongoDB teil, die online [hier](https://university.mongodb.com/) verfügbar ist.
+* Lesen Sie die [MongoDB-Bereitstellungsüberprüfung für Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
+* Überprüfen Sie die Checkliste für die [MongoDB-Vorgänge](https://docs.mongodb.org/manual/administration/production-checklist/);
+* Nehmen Sie an einer [Zertifizierungsklasse in MongoDB teil - online verfügbar](https://university.mongodb.com/).
 
 >[!NOTE]
 >

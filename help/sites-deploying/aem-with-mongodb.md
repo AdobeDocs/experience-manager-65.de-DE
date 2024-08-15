@@ -10,10 +10,10 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: a8203a6bccff821dd6ca3f63c196829379aabe55
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '6192'
-ht-degree: 100%
+source-wordcount: '6216'
+ht-degree: 99%
 
 ---
 
@@ -488,7 +488,7 @@ Eine Deaktivierung ist mithilfe der folgenden Vorgehensweise möglich:
 
 >[!NOTE]
 >
->Weitere Informationen zu THP finden Sie in diesem [Artikel](https://access.redhat.com/solutions/46111).
+>Weitere Informationen zu Transparent Huge Pages finden Sie im folgenden Artikel vom Red Hat®-Kundenportal: [Wie werden transparente Hugepages in Red Hat Enterprise Linux 6, 7 und 8 verwendet, überwacht und deaktiviert?](https://access.redhat.com/solutions/46111).
 
 #### Deaktivieren von NUMA {#disable-numa}
 

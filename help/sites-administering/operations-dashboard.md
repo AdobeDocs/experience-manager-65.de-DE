@@ -10,10 +10,10 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eef7849464540fa3d7bb705e1be9f6e0cf1c8cff
-workflow-type: ht
-source-wordcount: '5744'
-ht-degree: 100%
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
+workflow-type: tm+mt
+source-wordcount: '5743'
+ht-degree: 99%
 
 ---
 
@@ -506,7 +506,7 @@ Sie können diese Zeiten auch konfigurieren. Klicken Sie dazu auf das Zahnradsym
 
 ### Revisionsbereinigung {#revision-clean-up}
 
-Weitere Informationen zur Durchführung der Revisionsbereinigung in AEM [finden Sie in diesem speziellen Artikel](/help/sites-deploying/revision-cleanup.md).
+Weitere Informationen finden Sie unter [Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md).
 
 ### Lucene-Binärdateien-Bereinigung {#lucene-binaries-cleanup}
 
@@ -521,7 +521,7 @@ Die Aufgabe „Lucene-Binärdateien-Bereinigung“ finden Sie unter **AEM > Tool
 
 ### Datenspeicherbereinigung {#data-store-garbage-collection}
 
-Weitere Informationen zur automatischen Datenspeicherbereinigung finden Sie in der entsprechenden [Dokumentationsseite](/help/sites-administering/data-store-garbage-collection.md).
+Weitere Informationen zur Datenspeicherbereinigung finden Sie auf der entsprechenden Dokumentationsseite zur [Datenspeicherbereinigung](/help/sites-administering/data-store-garbage-collection.md) .
 
 ### Workflow-Bereinigung {#workflow-purge}
 
@@ -532,7 +532,7 @@ Workflows können auch über das Wartungs-Dashboard bereinigt werden. Gehen Sie 
 
 >[!NOTE]
 >
->Weitere Informationen zur Workflow-Wartung finden Sie auf [dieser Seite](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>Weitere Informationen zur Workflow-Wartung finden Sie unter [Verwalten von Workflow-Instanzen](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Auditprotokoll-Wartung {#audit-log-maintenance}
 

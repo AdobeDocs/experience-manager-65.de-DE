@@ -10,10 +10,10 @@ exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '6650'
-ht-degree: 100%
+source-wordcount: '6662'
+ht-degree: 99%
 
 ---
 
@@ -78,7 +78,7 @@ Anders als bei der vorherigen Implementierung werden neue CUG-Richtlinien immer 
 
 Neben einer dedizierten Zugriffssteuerungsverwaltung für CUGs, ermöglicht das neue Autorisierungsmodell ein bedingtes Aktivieren der Auswertung der Berechtigung für seine Richtlinien.  Dies ermöglicht die Einrichtung von CUG-Richtlinien in einer Staging-Umgebung. Dabei wird die Auswertung der effektiven Berechtigungen erst aktiviert, wenn sie in die Produktionsumgebung repliziert werden.
 
-Die Berechtigungsprüfung für CUG-Richtlinien und die Interaktion mit dem standardmäßigen oder einem zusätzlichen Autorisierungsmodell folgen dem Muster, das für mehrfache Autorisierungsmechanismen in Apache Jackrabbit Oak entworfen wurde: Ein gegebener Berechtigungssatz wird also gewährt, wenn – und nur wenn – alle Modelle Zugriff erteilen.  Weitere Informationen finden Sie auf [dieser Seite](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html).
+Die Berechtigungsprüfung für CUG-Richtlinien und die Interaktion mit dem standardmäßigen oder einem zusätzlichen Autorisierungsmodell folgen dem Muster, das für mehrfache Autorisierungsmechanismen in Apache Jackrabbit Oak entworfen wurde: Ein gegebener Berechtigungssatz wird also gewährt, wenn – und nur wenn – alle Modelle Zugriff erteilen.  Weitere Informationen finden Sie in der [Jackrabbit Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html) .
 
 Die folgenden Eigenschaften gelten für die Auswertung der Berechtigung, die mit dem Autorisierungsmodell verknüpft ist, das CUG-Richtlinien verarbeiten und prüfen soll:
 
@@ -129,7 +129,7 @@ Dasselbe gilt für die Eigenschaft `granite:loginPath`. Sie wird nur berücksich
 
 Da diese Art der Authentifizierungspflicht nur auf bestimmte Ausführungsmodi und auf eine kleine Teilmenge von Baumstrukturen innerhalb des Content-Repositorys beschränkt sein soll, ist das Tracking des Mixin-Typs der Anforderung und der Anmeldepfadeigenschaften eine Bedingung. Sie ist gebunden an eine entsprechende Konfiguration, welche die unterstützten Pfade definiert (siehe „Konfigurationsoptionen“ weiter unten). Daher lösen nur Änderungen im Rahmen dieser unterstützten Pfade eine Aktualisierung der OSGi-Registrierung aus. Ansonsten werden der Mixin-Typ und die Eigenschaft ignoriert.
 
-Die standardmäßige Einrichtung von AEM nutzt nun diese Konfiguration, indem sie ermöglicht, für den Mixin-Typ den Autorenausführungsmodus festzulegen, ihn aber erst wirksam werden zu lassen, wenn er auf die Veröffentlichungsinstanz repliziert wurde. Auf [dieser Seite](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) finden Sie Einzelheiten dazu, wie Sling die Authentifizierungspflicht durchsetzt.
+Die standardmäßige Einrichtung von AEM nutzt nun diese Konfiguration, indem sie ermöglicht, für den Mixin-Typ den Autorenausführungsmodus festzulegen, ihn aber erst wirksam werden zu lassen, wenn er auf die Veröffentlichungsinstanz repliziert wurde. Weitere Informationen dazu, wie Sling die Authentifizierungspflicht durchsetzt, finden Sie in der Dokumentation [Sling-Authentifizierung - Framework](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html) .
 
 Indem Sie in den konfigurierten unterstützten Pfaden den Mixin-Typ `granite:AuthenticationRequired` hinzufügen, wird die OSGi-Registrierung des verantwortlichen Handlers mit einem neuen, zusätzlichen Eintrag mit der Eigenschaft `sling.auth.requirements` aktualisiert. Wenn eine gegebene Authentifizierungspflicht die optionale Eigenschaft `granite:loginPath` angibt, wird der Wert außerdem beim Authenticator mit dem Präfix „-“ registriert, um von der Authentifizierungspflicht ausgeschlossen zu werden.
 
@@ -187,7 +187,7 @@ Die folgenden Best Practices sollten bei der Definition von Authentifizierungsan
 
 ### Darstellung der CUG-Richtlinien im Repository {#cug-policy-representation-in-the-repository}
 
-Die Oak-Dokumentation beschreibt, wie die neuen CUG-Richtlinien im Repository-Content dargestellt werden. Weitere Informationen finden Sie auf [dieser Seite](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository).
+Die Oak-Dokumentation beschreibt, wie die neuen CUG-Richtlinien im Repository-Content dargestellt werden. Weitere Informationen finden Sie in der [Jackrabbit Oak-Dokumentation zum Verwalten des Zugriffs mit CUGs](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository).
 
 ### Authentifizierungspflicht im Repository {#authentication-requirement-in-the-repository}
 

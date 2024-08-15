@@ -8,10 +8,10 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3476'
-ht-degree: 100%
+source-wordcount: '3461'
+ht-degree: 98%
 
 ---
 
@@ -46,11 +46,9 @@ Führen Sie die folgenden Schritte aus, um sowohl den Knotenspeicher als auch de
 
 >[!CAUTION]
 >
->Neuere Versionen von Oak nutzen ein neues Benennungsschema und Format für OSGi-Konfigurationsdateien. Das neue Benennungsschema setzt voraus, dass die Konfigurationsdatei mit **.config** benannt wird. Das neue Format erfordert die Eingabe von Werten und ist [hier dokumentiert](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>Neuere Versionen von Oak nutzen ein neues Benennungsschema und Format für OSGi-Konfigurationsdateien. Das neue Namensschema erfordert, dass die Konfigurationsdatei den Namen **.config** trägt und das neue Format Werte eingibt. Weitere Informationen finden Sie unter [Das Apache Sling Provisioning Model und Apache SlingStart - Default Configuration Format](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
 >
 >Wenn Sie von einer älteren Oak-Version aktualisieren, stellen Sie sicher, dass Sie zunächst den Ordner `crx-quickstart/install` sichern. Stellen Sie nach dem Upgrade den Inhalt des Ordners in der aktualisierten Installation wieder her und ändern Sie die Erweiterung der Konfigurationsdateien von **.cfg** zu **.config**.
->
->Sollten Sie diesen Artikel zur Vorbereitung auf ein Upgrade von einer **AEM 5.x**-Installation lesen, denken Sie daran, sich zuerst mit der Dokumentation zu [Upgrades](https://experienceleague.adobe.com/docs/?lang=de) vertraut zu machen.
 
 ### Segmentknotenspeicher {#segment-node-store}
 
@@ -372,7 +370,7 @@ Die folgenden Schritte sind erforderlich, um nicht binäre Replikationen mit S3 
 
    * Wird S3 als Datenspeicher verwendet, erstellen Sie eine Datei mit dem Namen `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` im Ordner `<aem-install>/crx-quickstart/install`, wie oben erläutert.
 
-1. Ändern Sie die Konfigurationsdateien der Datenspeicher in jeder Instanz so, dass sie auf denselben Datenspeicher verweisen. Weitere Informationen finden Sie in [diesem Artikel](/help/sites-deploying/data-store-config.md#data-store-configurations).
+1. Ändern Sie die Konfigurationsdateien der Datenspeicher in jeder Instanz so, dass sie auf denselben Datenspeicher verweisen. Weitere Informationen finden Sie unter [Datenspeicherkonfigurationen](/help/sites-deploying/data-store-config.md#data-store-configurations).
 1. Wenn die Instanz von einem vorhandenen Server geklont wurde, müssen Sie die `clusterId` der neuen Instanz mit dem aktuellsten oak-run-Tool entfernen, während das Repository offline ist. Der auszuführende Befehl lautet:
 
    ```xml

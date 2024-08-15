@@ -9,10 +9,10 @@ exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 55bf7104dbd9b9fadf6cb37efa28084fe43393c3
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1603'
-ht-degree: 100%
+source-wordcount: '1602'
+ht-degree: 95%
 
 ---
 
@@ -70,9 +70,9 @@ Sobald ein Kunde als „IMS-Organisation“ existiert und AMS die Bereitstellung
 
 >[!NOTE]
 >
->Weitere Informationen zu den Grundlagen zur Identitätsverwaltung von Adobe, einschließlich der IDP-Konfiguration, finden Sie [auf dieser Seite](https://helpx.adobe.com/de/enterprise/using/set-up-identity.html).
+>Weitere Informationen zu den Adobe Identity Management Basics, einschließlich der IDP-Konfiguration, finden Sie im Artikel zum Thema [Einrichten von Identitäten und Single Sign-On](https://helpx.adobe.com/de/enterprise/using/set-up-identity.html).
 >
->Weitere Informationen zur Verwaltung für Unternehmen und zur [!DNL Admin Console] finden Sie im Artikel [auf dieser Seite](https://helpx.adobe.com/de/enterprise/managing/user-guide.html).
+>Weitere Informationen zur Unternehmensverwaltung und zu [!DNL Admin Console] finden Sie im Leitfaden [Willkommen beim Enterprise- und Teams-Administratorhandbuch](https://helpx.adobe.com/de/enterprise/managing/user-guide.html).
 
 ### Onboarding von Benutzerinnen und Benutzern in der [!DNL Admin Console] {#onboarding-users-to-the-admin-console}
 
@@ -122,15 +122,16 @@ Weitere Informationen zu den neuen Gruppenfunktionen finden Sie hier:
 
 >[!NOTE]
 >
->Weitere Informationen zum User Sync Tool finden Sie auf der [Dokumentationsseite](https://adobe-apiplatform.github.io/user-sync.py/de/).
+>Weitere Informationen finden Sie unter:
 >
+>* das [Tool zur Benutzersynchronisierung - Adobe-Benutzersynchronisierung](https://adobe-apiplatform.github.io/user-sync.py/de/)
 >
->Das User Sync Tool muss mit dem [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html) beschriebenen Verfahren als Adobe I/O-Client-UMAPI registriert werden.
+>* Das Tool zur Benutzersynchronisierung muss mithilfe des unter [Authentifizierung für API-Zugriff](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html) beschriebenen Verfahrens als Adobe I/O-Client-UMAPI registriert werden.
 >
->Die Dokumentation zu Adobe Developer Console finden Sie [hier](https://developer.adobe.com/developer-console/docs/guides/).
+>* die [Adobe Developer Console-Dokumentation](https://developer.adobe.com/developer-console/docs/guides/).
 >
+>* die Dokumentation zur User Management-API [.](https://adobe-apiplatform.github.io/umapi-documentation/en/)
 >
->Die [!DNL User Management]-API, die vom User Sync Tool verwendet wird, wird [hier erläutert](https://adobe-apiplatform.github.io/umapi-documentation/en/).
 
 >[!NOTE]
 >

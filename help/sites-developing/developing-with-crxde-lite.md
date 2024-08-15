@@ -10,10 +10,10 @@ exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2118'
-ht-degree: 100%
+source-wordcount: '2114'
+ht-degree: 99%
 
 ---
 
@@ -219,7 +219,7 @@ Es wird ein Dialogfeld mit der folgenden Struktur erstellt:
 
 Sie können nun das Dialogfeld an Ihre Bedürfnisse anpassen, indem Sie die Eigenschaften ändern oder Knoten erstellen.
 
-Sie können den Dialogfeldeditor auch verwenden, um ein Dialogfeld zu bearbeiten. Mit einem Doppelklick auf den Dialogfeldknoten in CRXDE Lite wird der Editor geöffnet. Weitere Informationen über den Dialog-Editor finden Sie [hier](/help/sites-developing/dialog-editor.md).
+Sie können den Dialogfeldeditor auch verwenden, um ein Dialogfeld zu bearbeiten. Mit einem Doppelklick auf den Dialogfeldknoten in CRXDE Lite wird der Editor geöffnet. Weitere Informationen finden Sie unter [Dialogfeldeditor](/help/sites-developing/dialog-editor.md) .
 
 ## Erstellen eines Knotens {#creating-a-node}
 

@@ -5,10 +5,10 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '2391'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -363,7 +363,7 @@ Um die Bearbeitung in AEM für diese Beispiel-SPA zu aktivieren, sind die folgen
 
 ## Framework-Einschränkungen {#framework-limitations}
 
-Die RemotePage-Komponente erwartet, dass die Implementierung ein Asset-Manifest wie das [hier zu findende](https://github.com/shellscape/webpack-manifest-plugin) bereitstellt. Die RemotePage-Komponente wurde jedoch nur für die Zusammenarbeit mit dem React-Framework (und Next.js über die Komponente „remote-page-next“) getestet und unterstützt daher nicht das Fernladen von Anwendungen aus anderen Frameworks, wie z. B. Angular.
+Die RemotePage-Komponente erwartet, dass die Implementierung ein Asset-Manifest wie das [webpack-Manifest-Plugin auf GitHub](https://github.com/shellscape/webpack-manifest-plugin) bereitstellt. Die RemotePage-Komponente wurde jedoch nur für die Zusammenarbeit mit dem React-Framework (und Next.js über die Komponente „remote-page-next“) getestet und unterstützt daher nicht das Fernladen von Anwendungen aus anderen Frameworks, wie z. B. Angular.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
