@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '649'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -161,4 +161,4 @@ Anpassen von Spalten in der Listenansicht:
 
 Ein häufiges Nutzungsszenario beim Verwenden der Konsole ist die Auswahl von Ressourcen (etwa Seiten, Komponenten, Assets) durch Benutzende. Dabei kann beispielsweise eine Liste verwendet werden, aus der die Autorin odbzw.er der Autor ein Element auswählen muss.
 
-Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall relevant zu halten, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Weitere Informationen finden Sie unter [Anpassen der Seitenbearbeitung - Filterressourcen](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) .
+Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall relevant zu halten, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Weitere Informationen finden Sie unter [Anpassung des Seiten-Authorings – Filtern von Ressourcen](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources).

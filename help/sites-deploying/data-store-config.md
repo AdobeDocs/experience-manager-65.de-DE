@@ -9,9 +9,9 @@ exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3461'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Führen Sie die folgenden Schritte aus, um sowohl den Knotenspeicher als auch de
 
 >[!CAUTION]
 >
->Neuere Versionen von Oak nutzen ein neues Benennungsschema und Format für OSGi-Konfigurationsdateien. Das neue Namensschema erfordert, dass die Konfigurationsdatei den Namen **.config** trägt und das neue Format Werte eingibt. Weitere Informationen finden Sie unter [Das Apache Sling Provisioning Model und Apache SlingStart - Default Configuration Format](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>Neuere Versionen von Oak nutzen ein neues Benennungsschema und Format für OSGi-Konfigurationsdateien. Das neue Benennungsschema setzt voraus, dass die Konfigurationsdatei mit **.config** benannt wird. Das neue Format erfordert die Eingabe von Werten. Weitere Informationen finden Sie unter [Apache Sling-Bereitstellungsmodell und Apache SlingStart –Standardkonfigurationsformat](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
 >
 >Wenn Sie von einer älteren Oak-Version aktualisieren, stellen Sie sicher, dass Sie zunächst den Ordner `crx-quickstart/install` sichern. Stellen Sie nach dem Upgrade den Inhalt des Ordners in der aktualisierten Installation wieder her und ändern Sie die Erweiterung der Konfigurationsdateien von **.cfg** zu **.config**.
 

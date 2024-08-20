@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '891'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Dieser Abschnitt bezieht sich auf die Tagging-Konsole der klassischen Benutzerob
 
 >[!NOTE]
 >
->Weitere Informationen zur Tagging-Konsole der Touch-optimierten Benutzeroberfläche finden Sie unter [Verwalten von Tags](/help/sites-administering/tags.md#tagging-console) .
+>Weitere Informationen zur Tagging-Konsole der Touch-optimierten Benutzeroberfläche finden Sie unter [Verwalten von Tags](/help/sites-administering/tags.md#tagging-console).
 
 So greifen Sie auf die Tagging-Konsole der klassischen Benutzeroberfläche zu:
 

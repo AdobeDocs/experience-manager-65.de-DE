@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3187'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -434,7 +434,7 @@ Beim Erstellen einer bearbeitbaren Vorlage wird der Wert aus dem Vorlagentyp in 
 
 Wenn Sie eine Vorlage erstellt haben, die als Grundlage für andere Vorlagen dienen kann, können Sie diese Vorlage als Vorlagentyp kopieren.
 
-1. Erstellen Sie eine Vorlage wie jede andere bearbeitbare Vorlage. Siehe [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#creating-a-new-template-template-author). Dies kann als Grundlage für Ihren Vorlagentyp dienen.
+1. Erstellen Sie eine Vorlage so wie jede andere bearbeitbare Vorlage. Siehe [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#creating-a-new-template-template-author). Diese kann als Grundlage für Ihren Vorlagentyp dienen.
 1. Kopieren Sie mit CRXDE Lite die neu erstellte Vorlage aus dem Knoten `templates` in den Knoten `template-types` unter dem [Vorlagenordner](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Löschen Sie die Vorlage aus dem Knoten `templates` unter dem [Vorlagenordner](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Löschen Sie in der Kopie der Vorlage, die sich unter dem `template-types`-Knoten befindet, alle `cq:template`- und `cq:templateType`-Eigenschaften aus allen `jcr:content`-Knoten.

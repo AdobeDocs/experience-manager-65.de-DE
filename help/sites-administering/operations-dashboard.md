@@ -11,9 +11,9 @@ feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5743'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -521,7 +521,7 @@ Die Aufgabe „Lucene-Binärdateien-Bereinigung“ finden Sie unter **AEM > Tool
 
 ### Datenspeicherbereinigung {#data-store-garbage-collection}
 
-Weitere Informationen zur Datenspeicherbereinigung finden Sie auf der entsprechenden Dokumentationsseite zur [Datenspeicherbereinigung](/help/sites-administering/data-store-garbage-collection.md) .
+Weitere Informationen zur Datenspeicherbereinigung finden Sie auf der entsprechenden Dokumentationsseite zur [Datenspeicherbereinigung](/help/sites-administering/data-store-garbage-collection.md).
 
 ### Workflow-Bereinigung {#workflow-purge}
 
@@ -532,7 +532,7 @@ Workflows können auch über das Wartungs-Dashboard bereinigt werden. Gehen Sie 
 
 >[!NOTE]
 >
->Weitere Informationen zur Workflow-Wartung finden Sie unter [Verwalten von Workflow-Instanzen](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>Weitere Informationen zur Workflow-Wartung finden Sie auf unter [Verwalten der Workflow-Instanzen](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Auditprotokoll-Wartung {#audit-log-maintenance}
 

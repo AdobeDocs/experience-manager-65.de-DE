@@ -6,9 +6,9 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '958'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -78,4 +78,4 @@ Ja, der Selbstbewertungsfragebogen D und die Konformitätsbescheinigung sind auf
 
 ## 16. Wie kann ich eine Adobe I/O Runtime-Testlizenz anfordern?
 
-Weitere Informationen zum Anfordern einer Testlizenz für die Verwendung von I/O Runtime finden Sie unter [Abrufen des Zugriffs](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/) .
+Weitere Informationen zum Anfordern einer Testlizenz für I/O Runtime finden Sie unter [Zugriff erhalten](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/).

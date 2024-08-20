@@ -12,9 +12,9 @@ exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
 solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2338'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -435,7 +435,7 @@ Kehren Sie zur IDE und zum erstellten Projekt zurück.
 
    ![Änderungen am webpack-Dev-Server-Teaser](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
 
-   Die Änderungen wurden jedoch noch nicht in AEM bereitgestellt. Sie können die Lösungsdatei [ hier herunterladen](../assets/style-cif-component/_productteaser.scss).
+   Die Änderungen wurden jedoch noch nicht in AEM bereitgestellt. Sie können die Lösungsdatei [hier](../assets/style-cif-component/_productteaser.scss) herunterladen.
 
 1. Stellen Sie Aktualisierungen mithilfe Ihrer Maven-Kenntnisse über ein Befehlszeilen-Terminal in AEM bereit:
 

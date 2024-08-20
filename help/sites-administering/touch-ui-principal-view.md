@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Berechtigungen können hinzugefügt werden, indem Sie mithilfe des Textfelds suc
 
 >[!NOTE]
 >
->Eine vollständige Liste der Berechtigungen und Beschreibungen finden Sie unter [Administration der Benutzer-, Gruppen- und Zugriffsberechtigungen](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+>Eine vollständige Liste der Berechtigungen und Beschreibungen finden Sie unter [Verwaltung von Benutzenden, Gruppen und Zugriffsrechten](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
 ![Suchberechtigung für einen bestimmten Pfad.](assets/image2019-3-21_0-5-47.png) ![Fügen Sie neuen Eintrag für „dam-users“ hinzu, wie durch einen in vertikalen Spalten ausgewählten Pfad gezeigt.](assets/image2019-3-21_0-6-53.png)
 

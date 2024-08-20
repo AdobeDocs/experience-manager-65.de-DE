@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6216'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -488,7 +488,7 @@ Eine Deaktivierung ist mithilfe der folgenden Vorgehensweise möglich:
 
 >[!NOTE]
 >
->Weitere Informationen zu Transparent Huge Pages finden Sie im folgenden Artikel vom Red Hat®-Kundenportal: [Wie werden transparente Hugepages in Red Hat Enterprise Linux 6, 7 und 8 verwendet, überwacht und deaktiviert?](https://access.redhat.com/solutions/46111).
+>Weitere Informationen zu Transparent Huge Pages finden Sie im folgenden Artikel des Red Hat®-Kundenportals zum Thema [Verwenden, Überwachen und Deaktivieren von Transparent Huge Pages in Red Hat Enterprise Linux 6, 7 und 8](https://access.redhat.com/solutions/46111).
 
 #### Deaktivieren von NUMA {#disable-numa}
 

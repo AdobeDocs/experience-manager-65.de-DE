@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2642'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -142,7 +142,7 @@ Im Wesentlichen ist JCR ein System von Knoten und Eigenschaften, in dem Knoten v
 
 JCR verfügt über eine Reihe vordefinierter Knotentypen und Eigenschaftstypen, aber im Allgemeinen ist das Typisierungssystem ziemlich flexibel, und tatsächlich besteht eine der Stärken von JCR darin, dass sowohl strukturierte als auch unstrukturierte Inhalte mit Leichtigkeit gespeichert/verwaltet werden können. Das heißt, JCR kann stark strukturierte Daten aufnehmen, aber es kann auch beliebige dynamische Datenstrukturen ohne Schemaeinschränkungen aufnehmen.
 
-Die JavaDoc für die Java™-API von JCR ist in der [Apache Software Foundation - JCR API](https://jackrabbit.apache.org/jcr/jcr-api.html) verfügbar.
+Das JavaDoc für die Java™-API von JCR ist auf der Apache Software Foundation-Website unter dem Thema [JCR-API](https://jackrabbit.apache.org/jcr/jcr-api.html) verfügbar.
 
 Bevor Sie versuchen, die JavaDoc- oder die JCR-Spezifikation selbst zu lesen, sollten Sie sich diese [High-Level-Erklärung](/help/sites-developing/the-basics.md#java-content-repository) von JCR ansehen, die von Adobe Experience Services implementiert wird.
 

@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1669'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -183,9 +183,9 @@ So veröffentlichen Sie mit „Veröffentlichung verwalten“ eine Seite bzw. ma
 
    >[!NOTE]
    >
-   >Der Schritt **Workflows** wird basierend darauf angezeigt, welche Rechte Ihr Benutzer hat oder nicht.
+   >Der gezeigte **Workflow**-Schritt hängt von den Rechten der jeweiligen Person ab.
    >
-   >Weitere Informationen finden Sie in den Abschnitten [Unzureichende Berechtigungen](/help/sites-authoring/publishing-pages.md#insufficient-privileges), [Verwalten des Zugriffs auf Workflows](/help/sites-administering/workflows-managing.md) und [Anwenden von Workflows auf Seiten](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) .
+   >Weitere Informationen finden Sie unter [Unzureichende Berechtigungen](/help/sites-authoring/publishing-pages.md#insufficient-privileges), [Verwalten des Zugriffs auf Workflows](/help/sites-administering/workflows-managing.md) und [Anwenden von Workflows auf Seiten](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd).
 
    Die Ressourcen werden nach den ausgelösten Workflows gruppiert und erhalten jeweils folgende Optionen:
 

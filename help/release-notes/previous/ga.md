@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4493'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -253,9 +253,9 @@ Weitere Informationen zu Änderungen in AEM Screens finden Sie in den Versionsh
 * `s_code.js` Version H.27.5 ist enthalten. Adobe empfiehlt, die Implementierung auf `AppMeasurement.js` umzustellen.
 * `AppMeasurement.js` v1.8.0 ist enthalten. Adobe empfiehlt die Verwendung von [Adobe Experience Platform Launch](https://business.adobe.com/de/products/experience-platform/launch.html), um AppMeasurement.js in der Website bereitzustellen.
 
-#### AEM and Commerce {#aem-commerce}
+#### AEM und Commerce {#aem-commerce}
 
-Die Verbesserungen am Commerce integration framework befinden sich seit AEM 6.4 in einem schnelleren Versionszyklus. Erfahren Sie mehr über die Integration von [AEM und Adobe Commerce mithilfe von Commerce integration framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html?lang=de).
+Verbesserungen am Commerce Integration Framework befinden sich seit AEM 6.4 in einem schnelleren Veröffentlichungszyklus. Weitere Informationen finden Sie unter [Integration von AEM und Adobe Commerce mithilfe des Commerce Integration Framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html?lang=de).
 
 #### Communities-Add-on {#communities-add-on}
 

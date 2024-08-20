@@ -6,9 +6,9 @@ role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '762'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Im Folgenden finden Sie einige häufig gestellte Fragen zu MSM und Live Copy.
 
 MSM-Synchronisierungsaktionen sind detailliert konfigurierbar. Welche Eigenschaften oder Komponenten während der Rollouts geändert werden, hängt unmittelbar von den Eigenschaften dieser Konfigurationen ab.
 
-Weitere Informationen zu diesem Thema finden Sie unter [Best Practices für MSM](msm-best-practices.md) .
+Weitere Informationen zu diesem Thema finden Sie in den [Best Practices für MSM](msm-best-practices.md).
 
 ### Wie kann ich Rollout-Berechtigungen für eine Gruppe von Autoren entfernen? {#remove-rollout-permissions}
 

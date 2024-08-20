@@ -10,9 +10,9 @@ exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2937'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -429,7 +429,7 @@ Nachfolgend finden Sie die Architekturrichtlinien für AEM Sites und AEM Assets.
 
 ### Richtlinie für TarMK-Einstellungen {#tarmk-settings-guideline}
 
-Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. Anweisungen zum Ändern der Einstellungen finden Sie unter [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md).
+Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. Weitere Anweisungen zum Ändern der Einstellungen finden Sie unter [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md).
 
 <table>
  <tbody>
@@ -539,7 +539,7 @@ Sie sollten mit der folgenden Architektur beginnen, um bei der Verwendung von Mo
 
 ### Richtlinien für MongoMK-Einstellungen {#mongomk-settings-guidelines}
 
-Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. Anweisungen zum Ändern der Einstellungen finden Sie unter [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md).
+Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. Weitere Anweisungen zum Ändern der Einstellungen finden Sie unter [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md).
 
 <table>
  <tbody>
