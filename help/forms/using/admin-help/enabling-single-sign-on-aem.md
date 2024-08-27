@@ -10,31 +10,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: c941de0b069b5bea9edb822eca0ebbb5483ae9ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1704'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # Aktivieren der einmaligen Anmeldung in AEM Forms{#enabling-single-sign-on-in-aem-forms}
 
-AEM Formulare bieten zwei Möglichkeiten, Single Sign-On (SSO) zu aktivieren: HTTP-Header und SPNEGO.
+AEM Forms bietet zwei Möglichkeiten zum Aktivieren von Single Sign-on (SSO) – HTTP-Kopfzeile und SPNEGO:
 
 Wenn SSO implementiert ist, sind die AEM Forms-Seiten für die Benutzeranmeldung nicht erforderlich und werden nicht angezeigt, sofern die Benutzerin oder der Benutzer bereits durch das eigene Firmenportal authentifiziert wurde.
 
 Wenn AEM Forms eine Person mit keiner der Methoden authentifizieren kann, wird diese zu einer Anmeldeseite umgeleitet.
 
-* [Aktivieren von SSO mit HTTP-Headern](#enable-sso-using-http-headers)
-* [Aktivieren von SSO mit SPNEGO](#enable-sso-using-spnego)
-* [Rollen Benutzern und Gruppen zuweisen](#assign-roles-to-users-groups)
+* [Aktivieren von SSO mit HTTP-Kopfzeilen](#enable-sso-using-http-headers)
+* [Aktivieren von SSO über SPNEGO](#enable-sso-using-spnego)
+* [Zuweisen von Rollen an Benutzende und Gruppen](#assign-roles-to-users-groups)
 
-## Aktivieren von SSO mit HTTP-Headern {#enable-sso-using-http-headers}
+## Aktivieren von SSO mit HTTP-Kopfzeilen {#enable-sso-using-http-headers}
 
-Sie können die Seite &quot;Portalkonfiguration&quot;verwenden, um Single Sign-On (SSO) zwischen Anwendungen und allen Anwendungen zu aktivieren, die die Identitätsübermittlung über einen HTTP-Header unterstützen. Wenn SSO implementiert ist, sind die AEM Forms-Seiten für die Benutzeranmeldung nicht erforderlich und werden nicht angezeigt, sofern die Benutzerin oder der Benutzer bereits durch das eigene Firmenportal authentifiziert wurde.
+Auf der Seite „Portalkonfiguration“ können Sie Single Sign-on (SSO) zwischen Anwendungen und jeder Anwendung aktivieren, die die Identitätsübermittlung per HTTP-Kopfzeile unterstützt. Wenn SSO implementiert ist, sind die AEM Forms-Seiten für die Benutzeranmeldung nicht erforderlich und werden nicht angezeigt, sofern die Benutzerin oder der Benutzer bereits durch das eigene Firmenportal authentifiziert wurde.
 
 Sie können SSO auch über SPNEGO aktivieren. (Siehe [Aktivieren von SSO mit SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
 
-1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;User Management&quot;> &quot;Konfiguration&quot;> &quot;Portalattribute konfigurieren&quot;.
+1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Benutzerverwaltung“ > „Konfiguration“ > „Portalattribute konfigurieren“.
 1. Wählen Sie „Ja“, um SSO zu aktivieren. Wenn Sie „Nein“ auswählen, stehen die restlichen Einstellungen auf der Seite nicht zur Verfügung.
 1. Legen Sie die restlichen Einstellungen auf der Seite wie erforderlich fest und klicken Sie auf „OK“.
 
@@ -56,11 +56,11 @@ Sie können SSO auch über SPNEGO aktivieren. (Siehe [Aktivieren von SSO mit SPN
 
 Die Schritte für die Konfiguration zulässiger Referrer finden Sie unter [Konfigurieren zulässiger Referrer](/help/forms/using/admin-help/preventing-csrf-attacks.md#configure-allowed-referers).
 
-### Rollen Benutzern und Gruppen zuweisen
+### Zuweisen von Rollen an Benutzende und Gruppen
 
-Klicken Sie auf diese Schaltfläche, um die Schritte zum Zuweisen von Rollen zu Benutzern und Gruppen zu kennen ](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups).[
+Klicken Sie, um die Schritte zum [Zuweisen von Rollen zu Benutzenden und Gruppen](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups) zu erfahren.
 
-## Aktivieren von SSO mit SPNEGO {#enable-sso-using-spnego}
+## Aktivieren von SSO über SPNEGO {#enable-sso-using-spnego}
 
 Über SPNEGO (Simple and Protected GSSAPI Negotiation Mechanism) können Sie Single Sign-on (SSO) aktivieren, wenn Sie Active Directory als LDAP-Server in einer Windows-Umgebung verwenden. Wenn SSO aktiviert ist, sind die Seiten für die Benutzeranmeldung bei AEM Forms nicht erforderlich und werden nicht angezeigt.
 
@@ -68,9 +68,9 @@ Sie können SSO auch über HTTP-Header aktivieren. (Siehe [Aktivieren von SSO mi
 
 >[!NOTE]
 >
->AEM Forms on JEE unterstützt nicht die Konfiguration von SSO mit Kerberos/SPNEGO in einer Umgebung mit mehreren untergeordneten Domänen.
+>AEM Forms auf JEE unterstützt nicht die Konfiguration von SSO mithilfe von Kerberos/SPNEGO in einer Umgebung mit mehreren untergeordneten Domains.
 
-1. Legen Sie die Domain fest, in der die einmalige Anmeldung aktiviert werden soll. Der AEM-Formular-Server und die Benutzenden müssen alle zur selben Windows-Domain bzw. vertrauenswürdigen Domain gehören.
+1. Legen Sie die Domain fest, in der SSO aktiviert werden soll. Der AEM-Formular-Server und die Benutzenden müssen alle zur selben Windows-Domain bzw. vertrauenswürdigen Domain gehören.
 1. Erstellen Sie in Active Directory eine Benutzerin oder einen Benutzer, die bzw. der den AEM-Formular-Server repräsentiert. (Siehe [Erstellen eines Benutzerkontos](enabling-single-sign-on-aem.md#create-a-user-account).) Wenn Sie mehr als eine Domain zum Verwenden von SPNEGO konfigurieren, stellen Sie sicher, dass die Kennwörter für jeden einzelnen Benutzer verschieden sind. Wenn die Kennwörter nicht verschieden sind, kann SPNEGO-SSO nicht verwendet werden.
 1. Weisen Sie den Dienstprinzipalnamen zu. (Siehe [Zuweisen eines Dienstprinzipalnamen (SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Konfigurieren Sie den Domain-Controller. (Siehe [Verhindern von Fehlern bei der Kerberos-Integritätsprüfung](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
@@ -149,7 +149,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 ### Konfigurieren der SPNEGO-Client-Browser-Einstellungen {#configuring-spnego-client-browser-settings}
 
-Damit die SPNEGO-basierte Authentifizierung funktioniert, muss der Clientcomputer zu der Domain gehören, in der das Benutzerkonto erstellt wurde. Sie müssen außerdem den Client-Browser so konfigurieren, dass SPNEGO-basierte Authentifizierung zulässig ist. Außerdem muss die Site, für die SPNEGO-basierte Authentifizierung erforderlich ist, eine vertrauenswürdige Site sein.
+Damit die SPNEGO-basierte Authentifizierung funktioniert, muss der Clientcomputer zu der Domain gehören, in der das Benutzerkonto erstellt wurde. Sie müssen außerdem den Client-Browser so konfigurieren, dass SPNEGO-basierte Authentifizierung zulässig ist. Ebenso muss die Site, die die SPNEGO-basierte Authentifizierung erfordert, eine vertrauenswürdige Site sein.
 
 Wenn der Zugriff auf den Server über den Computernamen erfolgt, z.B. https://lcserver:8080, sind für den Internet Explorer keine Einstellungen erforderlich. Wenn Sie eine URL eingeben, die keine Punkte („.“) enthält, wird diese Site von Internet Explorer als lokale Intranet-Site behandelt. Bei Verwendung eines vollständig qualifizierten Namens für die Site muss diese als vertrauenswürdige Site hinzugefügt werden.
 
@@ -176,20 +176,20 @@ Wenn der Zugriff auf den Server über den Computernamen erfolgt, z.B. https://lc
 
 1. Testen Sie die Konfiguration, indem Sie auf die Anwendung zugreifen. Die Startseite für die Zielanwendung sollte angezeigt werden.
 
-Klicken Sie auf diese Schaltfläche, um die Schritte zum Zuweisen von Rollen zu Benutzern und Gruppen zu kennen ](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups).[
+Klicken Sie, um die Schritte zum [Zuweisen von Rollen zu Benutzenden und Gruppen](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups) zu erfahren.
 
-## Rollen Benutzern und Gruppen zuweisen {#assign-roles-to-users-groups}
+## Zuweisen von Rollen an Benutzende und Gruppen {#assign-roles-to-users-groups}
 
-1. Melden Sie sich bei Ihrer AEM Forms on JEE-Umgebung an.
-1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;User Management&quot;> &quot;Domänenverwaltung&quot;.
-1. Wählen Sie Ihre Domänenkonfiguration aus, z. B. LDAP, und klicken Sie darauf. Alle erstellten Benutzer und Gruppen finden Sie im Verzeichnis. Bei Bedarf können Sie neue Benutzer oder Gruppen erstellen.
-   ![Domänenverwaltungsseite](/help/forms/using/assets/domain-mgmt-page.png)
-1. Klicken Sie auf Authentifizierung. Wählen Sie auf der neuen Seite einen Authentifizierungsanbieter aus, z. B. LDAP.
-1. Navigieren Sie zur Seite &quot;Domänenverwaltung&quot;, wählen Sie &quot;LDAP&quot;und klicken Sie auf &quot;**Jetzt synchronisieren**&quot;, um den Ordner mit dem konfigurierten Authentifizierungsschema für AEM Zugriff zu synchronisieren.
-   ![ldap synchronisieren](/help/forms/using/assets/sync-ldap.png)
-1. Wechseln Sie zur Benutzerverwaltung und klicken Sie auf Benutzer und Gruppen.
-1. Suchen Sie nach Benutzern oder Gruppen mit ihren Namen, wie in der Abbildung unten dargestellt.
-   ![Benutzergruppe durchsuchen](/help/forms/using/assets/search-user-group.png)
-1. Weisen Sie die Rollen den Benutzern oder Gruppen nach Bedarf zu.
-   ![Benutzerrollenzuweisung](/help/forms/using/assets/user-role-assign.png)
+1. Melden Sie sich bei Ihrer AEM Forms auf JEE-Umgebung an.
+1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Benutzerverwaltung“ > „Domain-Verwaltung“.
+1. Wählen Sie Ihre Domain-Konfiguration aus, z. B. LDAP, und klicken Sie darauf. Sie finden alle erstellten Benutzenden und Gruppen im Verzeichnis. Bei Bedarf können Sie neue Benutzende oder Gruppen erstellen.
+   ![Seite zur Domain-Verwaltung](/help/forms/using/assets/domain-mgmt-page.png)
+1. Klicken Sie auf „Authentifizierung“. Wählen Sie auf der neuen Seite einen Authentifizierungsanbieter aus, z. B. LDAP.
+1. Navigieren Sie zur Seite „Domain-Verwaltung“, wählen Sie „LDAP“ und klicken Sie auf **Jetzt synchronisieren**, um das Verzeichnis mit dem konfigurierten Authentifizierungsschema für den AEM-Zugriff zu synchronisieren.
+   ![Synchronisieren von LDAP](/help/forms/using/assets/sync-ldap.png)
+1. Navigieren Sie zur Benutzerverwaltung und klicken Sie auf „Benutzer und Gruppen“.
+1. Suchen Sie nach Benutzenden oder Gruppen mit ihren Namen, wie in der Abbildung unten dargestellt.
+   ![Nach Benutzergruppe suchen](/help/forms/using/assets/search-user-group.png)
+1. Weisen Sie die Rollen den Benutzenden oder Gruppen nach Bedarf zu.
+   ![Zuweisung von Benutzerrollen](/help/forms/using/assets/user-role-assign.png)
 
