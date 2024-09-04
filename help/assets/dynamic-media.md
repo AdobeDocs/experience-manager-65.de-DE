@@ -1,6 +1,6 @@
 ---
 title: Arbeiten mit Dynamic Media
-description: Informationen zur Verwendung von Dynamic Media zum Bereitstellen von Assets für den Gebrauch in Web, Mobile und Social Media
+description: Erfahren Sie, wie Sie mit der Software Assets für Web-, Mobile- und Social-Sites bereitstellen.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -9,26 +9,26 @@ role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d6b9dde5201198cb073293b2b8527a458836ff0b
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 100%
+source-wordcount: '416'
+ht-degree: 51%
 
 ---
 
-# Arbeiten mit Dynamic Media {#working-with-dynamic-media}
+# Arbeiten mit Dynamic Media  {#working-with-dynamic-media}
 
-Mit [Dynamic Media](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets von Assets aus Primärquellen können Sie mit Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
+Mit [Dynamic Media](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Mithilfe einer Reihe von Primärquellen-Assets generiert und liefert die Software mehrere Varianten ansprechender Inhalte in Echtzeit über ihr globales, skalierbares und leistungsoptimiertes Netzwerk.
 
-Dynamic Media ermöglicht interaktive Anzeigeerlebnisse, wie Zoom, Drehen um 360 Grad und Videos. Dynamic Media bindet die Workflows der Adobe Experience Manager-Lösung für die Verwaltung digitaler Assets (Assets) auf einzigartige Weise ein, um die Verwaltung digitaler Kampagnen zu vereinfachen und zu optimieren.
+Die Software bietet interaktive Anzeigeerlebnisse wie Zoom, Drehen um 360 Grad und Videos. Sie enthält die Workflows der Adobe Experience Manager Digital Asset Management (Assets)-Lösung, um den Digital-Campaign-Verwaltungsprozess zu vereinfachen und zu optimieren.
 
 <!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
 >A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
-## Einsatzmöglichkeiten für Dynamic Media {#what-you-can-do-with-dynamic-media}
+## Was Sie mit der Software machen können {#what-you-can-do-with-dynamic-media}
 
-Mit Dynamic Media können Sie Assets vor ihrer Veröffentlichung verwalten. Eine ausführliche Beschreibung der allgemeinen Arbeit mit digitalen Assets finden Sie in [Arbeiten mit digitalen Assets](manage-assets.md). Die allgemeinen Themen umfassen das Hochladen, Herunterladen, Bearbeiten und Veröffentlichen von Assets, das Anzeigen und Bearbeiten von Eigenschaften und die Suche nach Assets.
+Mit der Software können Sie Ihre Assets vor der Veröffentlichung verwalten. Eine ausführliche Beschreibung der allgemeinen Arbeit mit digitalen Assets finden Sie in [Arbeiten mit digitalen Assets](manage-assets.md). Die allgemeinen Themen umfassen das Hochladen, Herunterladen, Bearbeiten und Veröffentlichen von Assets, das Anzeigen und Bearbeiten von Eigenschaften und die Suche nach Assets.
 
 Funktionen, die nur für Dynamic Media vorgesehen sind:
 
@@ -53,23 +53,23 @@ Siehe auch [Einrichten von Dynamic Media](administering-dynamic-media.md).
 
 ## Aktivierte und deaktivierte Dynamic Media-Funktion im Vergleich {#dynamic-media-on-versus-dynamic-media-off}
 
-Anhand der folgenden Merkmale können Sie erkennen, ob Dynamic Media aktiviert ist:
+Sie können anhand der folgenden Merkmale feststellen, ob die Software aktiviert ist:
 
 * Dynamische Ausgabedarstellungen sind beim Herunterladen oder Anzeigen von Assets in der Vorschau verfügbar.
 * Bildsets, Rotationssets und Sets für gemischte Medien sind verfügbar.
 * PTIFF-Ausgabedarstellungen werden erstellt.
 
-Wenn Sie ein Bild-Asset auswählen, sieht die Ansicht des Assets mit [aktivierter](config-dynamic.md#enabling-dynamic-media) Dynamic Media-Funktion anders aus. Dynamic Media nutzt die On-Demand-HTML5-Viewer.
+Wenn Sie ein Bild-Asset auswählen, unterscheidet sich die Ansicht des Assets von der Software [enabled](config-dynamic.md#enabling-dynamic-media). Es verwendet die On-Demand-HTML5-Viewer.
 
 ### Dynamische Ausgabedarstellungen {#dynamic-renditions}
 
-Dynamische Ausgabedarstellungen wie Bild- und Viewer-Vorgaben (unter **[!UICONTROL Dynamisch]**) sind verfügbar, wenn Dynamic Media aktiviert ist.
+Dynamische Ausgabeformate wie Bild- und Viewer-Vorgaben (unter **[!UICONTROL Dynamisch]**) sind verfügbar, wenn die Software aktiviert ist.
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
 ### Bildsets, Rotationssets und Sets für gemischte Medien {#image-sets-spins-sets-mixed-media-sets}
 
-Bildsets, Rotationssets und Sets für gemischte Medien sind verfügbar, wenn Dynamic Media aktiviert ist.
+Bildsets, Rotationssets und Sets für gemischte Medien sind verfügbar, wenn die Software aktiviert ist.
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
@@ -81,10 +81,10 @@ Für Dynamic Media aktivierte Assets enthalten `pyramid.tiffs`.
 
 ### Änderung der Asset-Ansichten {#asset-views-change}
 
-Wenn „Dynamische Medien“ aktiviert ist, können Sie durch Klicken auf die Schaltflächen `+` und `-` ein- bzw. auszoomen. Sie können auch durch Klicken in einen bestimmten Bereich einzoomen. Durch „Wiederherstellen“ können Sie zur Originalansicht zurückkehren und durch Klicken auf die diagonalen Pfeile das Bild im Vollbildmodus anzeigen. Nach Aktivierung von Dynamic Media sieht die Ansicht wie folgt aus:
+Wenn die Software aktiviert ist, können Sie durch Klicken auf die Schaltflächen `+` und `-` ein- und auszoomen. Sie können auch durch Klicken in einen bestimmten Bereich einzoomen. Durch „Wiederherstellen“ können Sie zur Originalansicht zurückkehren und durch Klicken auf die diagonalen Pfeile das Bild im Vollbildmodus anzeigen. Wenn die Software aktiviert ist, sieht sie wie folgt aus:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
-Wenn Dynamic Media deaktiviert ist, können Sie die Ansicht vergrößern und verkleinern und die Originalgröße wiederherstellen:
+Wenn die Software deaktiviert ist, können Sie ein- und auszoomen und die Originalgröße wiederherstellen:
 
 ![chlimage_1-362](assets/chlimage_1-362.png)
