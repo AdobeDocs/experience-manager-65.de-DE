@@ -6,8 +6,8 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: ab8248e9d0df67bed3c2d5ad3fadce08db2e9ba0
-workflow-type: ht
+source-git-commit: ca896466072225cc57d7c0c4f008294cc60f7b94
+workflow-type: tm+mt
 source-wordcount: '7448'
 ht-degree: 100%
 
@@ -620,7 +620,6 @@ ht-degree: 100%
       + [Erstellen eines auf Kernkomponenten basierenden adaptiven Formulars](/help/forms/using/create-an-adaptive-form-core-components.md)
       + [Erstellen und Verwenden adaptiver Formularfragmente in einem adaptiven Formular](/help/forms/using/adaptive-form-fragment-core-components.md)
       + [Erstellen von Designs für auf Kernkomponenten basierende adaptive Formulare](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
-      + [Erstellen und Verwenden einer benutzerdefinierten Funktion in einem adaptiven Formular](/help/forms/using/create-and-use-custom-functions.md)
       + [Regeleditor](/help/forms/using/rule-editor-core-components.md)
       + [Erstellen und Verwenden einer benutzerdefinierten Funktion in Kernkomponenten für adaptive Formulare](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [Erstellen und Verwenden von benutzerdefinierten Fehler-Handlern für auf Kernkomponenten basierende adaptive Formulare](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
@@ -677,6 +676,7 @@ ht-degree: 100%
       + [Integrieren von Adobe Sign mit AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md)
       + [Erstellen und Verwalten von Assetüberprüfungen in Formularen](/help/forms/using/create-reviews-forms.md)
       + [Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation in ein Einzelseiten-Programm von AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
+      + [Erstellen und Verwenden einer benutzerdefinierten Funktion in einem adaptiven Formular](/help/forms/using/create-and-use-custom-functions.md)
       + [Erstellen und Verwenden von benutzerdefinierten Fehler-Handlern für adaptive Formulare](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
    + Interaktive Kommunikation {#interactive-communications}
       + [Einführung in die Benutzeroberfläche für interaktive Kommunikationserstellung](/help/forms/using/introduction-interactive-communication-authoring.md)

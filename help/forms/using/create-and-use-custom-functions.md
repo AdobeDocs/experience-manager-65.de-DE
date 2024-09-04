@@ -1,26 +1,16 @@
 ---
 title: Erstellen und Hinzufügen benutzerdefinierter Funktionen in einem adaptiven Formular
 description: AEM Forms unterstützt benutzerdefinierte Funktionen, mit denen Benutzer eigene Funktionen im Regeleditor erstellen und verwenden können.
-keywords: Fügen Sie eine benutzerdefinierte Funktion hinzu, verwenden Sie eine benutzerdefinierte Funktion, erstellen Sie eine benutzerdefinierte Funktion, verwenden Sie eine benutzerdefinierte Funktion im Regeleditor.
-contentOwner: Ruchita Srivastav
-content-type: reference
-feature: Adaptive Forms,Core Components
-exl-id: a328b4a8-e8dd-42a0-b73b-94e76c7692a8
+feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: f63dcd7edca640cee47c8f615d1675ef5052953c
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1084'
 ht-degree: 50%
 
 ---
 
-
-# Benutzerdefinierte Funktionen in Adaptive Forms (Kernkomponenten)
-
-| Version | Artikel-Link |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
-| AEM 6.5 | Dieser Artikel |
+# Benutzerdefinierte Funktionen in Adaptive Forms
 
 ## Einführung
 
