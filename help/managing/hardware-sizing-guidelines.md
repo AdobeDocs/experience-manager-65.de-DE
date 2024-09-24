@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
 source-git-commit: 658e1f6e07fb1219ba186137eb8403bf85383723
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1351'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -103,7 +103,7 @@ Während alle Systeme laufen, steht eine erhöhte Rechenleistung zur Verfügung.
 Die Abschätzung, wie viele Cluster-Knoten notwendig sind, basiert auf den grundlegenden Anforderungen und spezifischen Anwendungsfällen des jeweiligen Web-Projektes:
 
 * Aus Sicht der Ausfallsicherheit ist es notwendig, für alle Umgebungen zu bestimmen, wie kritisch ein Ausfall ist und wie lange es dauert, bis ein Cluster-Knoten wiederhergestellt ist.
-* Im Hinblick auf die Skalierbarkeit ist die Anzahl der Schreibvorgänge im Wesentlichen der wichtigste Faktor. Der Lastausgleich kann für Operationen eingerichtet werden, die nur auf das System zugreifen, um Lesevorgänge zu verarbeiten; siehe [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) für Details.
+* Im Hinblick auf die Skalierbarkeit ist die Anzahl der Schreibvorgänge der wichtigste Faktor. Der Lastausgleich kann für Operationen eingerichtet werden, die nur auf das System zugreifen, um Lesevorgänge zu verarbeiten; siehe [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) für Details.
 
 ### Hardware-Empfehlungen {#hardware-recommendations}
 
@@ -113,7 +113,7 @@ Sie können für Ihre Autorenumgebung normalerweise die gleiche Hardware verwend
 
 Berücksichtigen Sie neben der Berechnung für eine standardmäßige Web-Anwendung spezifische Faktoren für die folgenden Anwendungsfälle. Die berechneten Werte werden der Standardberechnung hinzugefügt.
 
-### Assets-spezifische Aspekte {#assets-specific-considerations}
+### Asset-spezifische Hinweise {#assets-specific-considerations}
 
 Zur umfangreichen Verarbeitung digitaler Assets sind optimierte Hardware-Ressourcen erforderlich. Die wichtigsten Faktoren hierbei sind die Bildgröße und der Spitzendurchsatz verarbeiteter Bilder.
 
@@ -142,9 +142,9 @@ Das Testen des geplanten Anwendungsfalles mit einem repräsentativen Inhaltsausz
 
 Berücksichtigen Sie auch, dass Autorinnen und Autoren parallel arbeiten können. Diese nehmen Leistungsbeeinträchtigungen wahr, wenn AEM-MSM-Anwendungsfälle mehr Ressourcen verbrauchen als geplant.
 
-### Überlegungen zur AEM Communities-Dimensionierung {#aem-communities-sizing-considerations}
+### Hinweise zur Dimensionierung von AEM Communities {#aem-communities-sizing-considerations}
 
-AEM Sites, die Funktionen von AEM Communities (Community-Sites) enthalten, erleben ein hohes Maß an Interaktion von Seitenbesuchern (Mitgliedern) in der Veröffentlichungsumgebung.
+AEM-Sites, die Funktionen von AEM Communities (Community-Sites) enthalten, erleben ein hohes Maß an Interaktion von Seitenbesuchenden (Mitgliedern) in der Veröffentlichungsumgebung.
 
 Die Größenüberlegungen für eine Community-Site hängen von der zu erwartenden Interaktion der Community-Mitglieder ab und davon, ob eine optimale Leistung für den Seiteninhalt von höherer Bedeutung ist.
 
