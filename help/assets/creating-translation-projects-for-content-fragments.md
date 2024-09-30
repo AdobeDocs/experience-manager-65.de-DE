@@ -10,9 +10,9 @@ role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 7bf70ba18603bfd17dec391ddcd623e9085fbd04
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '984'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ In diesem Workflow wird das zu übersetzende Inhaltsfragment in den Sprachstamm 
 
 **Aktualisieren von Sprachkopien**
 
-Wenn das Quellinhaltsfragment aktualisiert oder geändert wird, muss das entsprechende Gebietsschema/das sprachspezifische Inhaltsfragment erneut übersetzt werden. Der Workflow &quot;Sprachkopien aktualisieren&quot;übersetzt eine zusätzliche Gruppe von Inhaltsfragmenten und fügt sie in eine Sprachkopie für ein bestimmtes Gebietsschema ein. In diesem Fall werden die übersetzten Inhaltsfragmente dem Zielordner hinzugefügt, der bereits zuvor übersetzte Inhaltsfragmente enthält.
+Wenn das Quellinhaltsfragment aktualisiert oder geändert wird, muss das entsprechende Gebietsschema/das sprachspezifische Inhaltsfragment erneut übersetzt werden. Der Workflow zum Aktualisieren von Sprachkopien übersetzt eine zusätzliche Gruppe von Inhaltsfragmenten und schließt diese in eine Sprachkopie für ein bestimmtes Gebietsschema ein. In diesem Fall werden die übersetzten Inhaltsfragmente dem Zielordner hinzugefügt, der bereits zuvor übersetzte Inhaltsfragmente enthält.
 
 ## Workflow für das Erstellen und Übersetzen {#create-and-translate-workflow}
 
