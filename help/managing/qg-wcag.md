@@ -5,10 +5,10 @@ exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a4ccee3e8256c098339fb5308b1b4214e67b8b74
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 100%
+source-wordcount: '1744'
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,9 @@ Die [Web Content Accessibility Guidelines (WCAG), Version 2.1](https://www.w3.o
 
 >[!NOTE]
 >
->Eine [aktualisierte Version der Richtlinien (WCAG 2.2)](https://www.w3.org/TR/WCAG22/) befindet sich derzeit in der Entwicklung, wird aber noch nicht berücksichtigt.
+>Da diese Dokumente in der [aktualisierten Version der Richtlinien geschrieben wurden, wurde WCAG 2.2](https://www.w3.org/TR/) im Oktober 2023 zur Verfügung gestellt.
+>
+>Siehe [Vergleich mit WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) und [Neue Funktionen in WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
 WCAG 2.1 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Web-Inhalten unterstützen, die für Personen mit Behinderungen barrierefrei zugänglich sind. Es werden Ratschläge für Autorinnen und Autoren, Designerinnen und Designer und Entwickelnde von Web-Inhalten geboten, wie sichergestellt werden kann, dass die von ihnen produzierten Ressourcen für möglichst viele Menschen so barrierefrei wie möglich sind, und zwar unabhängig von ihrer Behinderung, z. B. Sehbehinderung, Gehörschädigung, Lernschwächen oder altersbedingte Einschränkungen.
 
