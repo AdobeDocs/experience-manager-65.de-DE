@@ -5,16 +5,16 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 110636c0208a23e0b088e19fe47c38f28adb9bdd
+source-git-commit: fed35f2b90e2b8fd9e7240abf3b25e3650fa31c2
 workflow-type: tm+mt
 source-wordcount: '1980'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
 # Vorbereiten von [!DNL Assets] für Smart-Tagging {#configure-asset-tagging-using-the-smart-content-service}
 
-Bevor Sie mit dem Tagging Ihrer Assets per Smart Content Services beginnen können, integrieren Sie [!DNL Experience Manager Assets] in die Adobe Developer Console, um den Smart-Service von [!DNL Adobe Sensei] zu nutzen. Trainieren Sie nach der Konfiguration den Service mit einigen Bildern und einem Tag.
+Bevor Sie mit dem Tagging Ihrer Assets per Smart Content Services beginnen können, integrieren Sie [!DNL Experience Manager Assets] in die Adobe Developer Console, um den Smart-Service von [!DNL Adobe Sensei] zu nutzen. Trainieren Sie nach der Konfiguration den Dienst mit einigen Bildern und einem -Tag.
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Verwenden Sie zum Konfigurieren der Integration die Werte der Felder [!UICONTROL
    | -------- | ---------------------------- |
    | Titel | Fügen Sie den Titel des konfigurierenden IMS-Kontos hinzu. |
    | Verknüpfte Adobe IMS-Konfiguration | Wählen Sie die Konfiguration aus der Dropdown-Liste aus. |
-   | Service-URL | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. Beispiel: `https://smartcontent.adobe.io/apac`. Sie können `na`, `emea` oder `apac` als die Regionen angeben, in denen Ihre Experience Manager-Autoreninstanz gehostet wird. |
+   | Service-URL | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>` ersetzt werden. Beispiel: `https://smartcontent.adobe.io/apac`. Sie können `na`, `emea` oder `apac` als die Regionen angeben, in denen Ihre Experience Manager-Autoreninstanz gehostet wird. |
 
    >[!NOTE]
    >
