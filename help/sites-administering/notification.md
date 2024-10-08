@@ -9,10 +9,10 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: aa91b0f84929affb527c57cf92d7b4714c98ba74
 workflow-type: tm+mt
-source-wordcount: '2037'
-ht-degree: 100%
+source-wordcount: '2141'
+ht-degree: 95%
 
 ---
 
@@ -299,8 +299,15 @@ Konfigurieren Sie zunächst den E-Mail-Dienst:
 
 Konfigurieren Sie anschließend Ihren SMTP-OAuth-Provider wie unten beschrieben:
 
+>[!WARNING]
+>
+>Wenn Sie nach Abschluss dieser Konfiguration die Werte *beliebig* in der OSGi-Konfiguration ändern **CQ Mailer SMTP OAuth2 Provide**, müssen Sie die Autorisierung nach diesen Schritten erneut vornehmen.
+>
+>Wenn diese nicht ausgeführt werden, ist das unter `/conf/global/settings/mailer/oauth` gespeicherte Zugriffstoken ungültig und die OAuth2-Verbindung zum SMTP-Server schlägt fehl.
+
 1. Öffnen Sie die AEM-Web-Konsole, indem Sie zu `http://serveraddress:serverport/system/console/configMgr` gehen.
 1. Suchen Sie nach **CQ Mailer SMTP OAuth2 Provider** und klicken Sie darauf.
+
 1. Füllen Sie die erforderlichen Informationen wie folgt aus:
    * Autorisierungs-URL: `https://accounts.google.com/o/oauth2/auth`
    * Token-URL: `https://accounts.google.com/o/oauth2/token`
@@ -371,6 +378,12 @@ Zusammenfassend benötigen Sie die folgenden Informationen, um OAuth2 für den E
 **AEM-Seitenkonfigurationen**
 
 Integrieren Sie anschließend Ihre OAuth2-Einstellungen mit AEM:
+
+>[!WARNING]
+>
+>Wenn Sie nach Abschluss dieser Konfiguration die Werte *beliebig* in der OSGi-Konfiguration ändern **CQ Mailer SMTP OAuth2 Provide**, müssen Sie die Autorisierung nach diesen Schritten erneut vornehmen.
+>
+>Wenn diese nicht ausgeführt werden, ist das unter `/conf/global/settings/mailer/oauth` gespeicherte Zugriffstoken ungültig und die OAuth2-Verbindung zum SMTP-Server schlägt fehl.
 
 1. Gehen Sie zur Web-Konsole Ihrer lokalen Instanz, indem Sie zu `http://serveraddress:serverport/system/console/configMgr` navigieren.
 1. Suchen Sie nach **Day CQ Mail Service** und klicken Sie darauf.
