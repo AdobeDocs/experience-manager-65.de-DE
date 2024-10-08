@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
 source-git-commit: a4ccee3e8256c098339fb5308b1b4214e67b8b74
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1744'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ Die [Web Content Accessibility Guidelines (WCAG), Version 2.1](https://www.w3.o
 
 >[!NOTE]
 >
->Da diese Dokumente in der [aktualisierten Version der Richtlinien geschrieben wurden, wurde WCAG 2.2](https://www.w3.org/TR/) im Oktober 2023 zur Verfügung gestellt.
+>Seit der Verfassung dieser Dokumente wurde im Oktober 2023 die [aktualisierte Version der Richtlinien, WCAG 2.2](https://www.w3.org/TR/), bereitgestellt.
 >
->Siehe [Vergleich mit WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) und [Neue Funktionen in WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
+>Siehe [Vergleich mit WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) und [Neue Funktionen in WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
-WCAG 2.1 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Web-Inhalten unterstützen, die für Personen mit Behinderungen barrierefrei zugänglich sind. Es werden Ratschläge für Autorinnen und Autoren, Designerinnen und Designer und Entwickelnde von Web-Inhalten geboten, wie sichergestellt werden kann, dass die von ihnen produzierten Ressourcen für möglichst viele Menschen so barrierefrei wie möglich sind, und zwar unabhängig von ihrer Behinderung, z. B. Sehbehinderung, Gehörschädigung, Lernschwächen oder altersbedingte Einschränkungen.
+WCAG 2.1 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Web-Inhalten unterstützen, welche für Personen mit Behinderungen barrierefrei zugänglich sind. Es werden Ratschläge für Autorinnen und Autoren, Designerinnen und Designer und Entwickelnde von Web-Inhalten geboten, wie sichergestellt werden kann, dass die von ihnen produzierten Ressourcen für möglichst viele Menschen so barrierefrei wie möglich sind, und zwar unabhängig von ihrer Behinderung, z. B. Sehbehinderung, Gehörschädigung, Lernschwächen oder altersbedingte Einschränkungen.
 
 Die Beschreibung eines Bildes (oder anderer Nicht-Text-Inhalte) mithilfe des `alt`-Attributs in HTML ist zum Beispiel für Blinde und Sehbehinderte von großem Nutzen. Die textliche Beschreibung im `alt`-Attribut kann entweder in eine Sprachausgabe umgewandelt oder an elektronisch aktualisierbare Braillezeilen übertragen werden.
 
@@ -155,4 +155,4 @@ Ohne Filterung liefert diese Ressource alle Erfolgskriterien, nach Richtlinien g
 * Link zum entsprechenden Dokument des Typs „Grundlagen“
 * Liste zugehöriger „ausreichender“ Techniken mit Links zu Details jeder Technik
 * Liste zugehöriger „empfohlener“ Techniken mit Links zu Details jeder Technik (sofern vorhanden)
-* Liste zugehöriger Fehler mit Links zu Details zu jedem Fehler
+* Liste zugehöriger Fehler mit Links zu Details zu jedem Fehler.
