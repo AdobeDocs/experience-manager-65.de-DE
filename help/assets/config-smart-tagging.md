@@ -5,10 +5,10 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7cc1722617b463fa5da5b965215cd91cc8ea8fb0
+source-git-commit: 09f7cf283c67adcc0a14d6a3a75bfdeafc37d151
 workflow-type: tm+mt
-source-wordcount: '2193'
-ht-degree: 71%
+source-wordcount: '2061'
+ht-degree: 74%
 
 ---
 
@@ -16,14 +16,16 @@ ht-degree: 71%
 
 Bevor Sie mit dem Tagging Ihrer Assets per Smart Content Services beginnen können, integrieren Sie [!DNL Experience Manager Assets] in die Adobe Developer Console, um den Smart-Service von [!DNL Adobe Sensei] zu nutzen. Trainieren Sie nach der Konfiguration den Dienst mit einigen Bildern und einem -Tag.
 
+<!--
 >[!NOTE]
 >
->* Smart Content Services ist nicht mehr für neue Kunden von [!DNL Experience Manager Assets] On-Premise verfügbar. Bestehende On-Premise-Kunden, die diese Funktion bereits aktiviert haben, können Smart Content Services weiterhin nutzen.
->* Smart Content Services ist für bestehende Kunden von [!DNL Experience Manager Assets] Managed Services verfügbar, für die diese Funktion bereits aktiviert ist.
->* Neue Experience Manager Assets Managed Services-Kunden können die in diesem Artikel beschriebenen Anweisungen zum Einrichten von Smart Content Services befolgen.
->* Für Service Pack 20 und älter müssen Sie die Problemumgehungsschritte für SCS ausführen, um die OAuth-Integration zu unterstützen. Siehe [Fehlerbehebung bei Smart-Tags für OAuth-Anmeldeinformationen](config-oauth.md).
->* Um die Oauth-Integration auf Service Pack 21 zu unterstützen, müssen Sie den [Hotfix für SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) installieren.
->* Bei vorhandener SCS-Konfiguration entspricht der Prozess dem Einrichten einer neuen OAuth-Integration. Jede ältere Konfiguration wird automatisch bereinigt.
+>* Smart Content Services is no longer available to new [!DNL Experience Manager Assets] On-Premise customers. Existing On-Premise customers, who already have this capability enabled, can continue using Smart Content Services.
+>* Smart Content Services is available for existing [!DNL Experience Manager Assets] Managed Services customers, who already have this capability enabled.
+>* New Experience Manager Assets Managed Services customers can follow the instructions mentioned in this article to set up Smart Content Services.
+>* For Service Pack 20 and older, you need to perform the workaround steps for SCS to support Oauth integration. See [Troubleshooting smart tags for OAuth credentials](config-oauth.md).
+>* To support the Oauth integration on Service Pack 21, you need to install the [Hotfix for SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip). 
+>* For Existing SCS configuration, the process is the same as setting up a new OAuth integration. Any legacy configuration will be automatically cleaned up.
+-->
 
 Bevor Sie den Smart Content Service verwenden, führen Sie Folgendes aus:
 
