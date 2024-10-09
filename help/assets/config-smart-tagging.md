@@ -5,10 +5,10 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 6729a2dbd8c761eb1bba84d8efba7393ac686190
+source-git-commit: 7cc1722617b463fa5da5b965215cd91cc8ea8fb0
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 79%
+source-wordcount: '2193'
+ht-degree: 71%
 
 ---
 
@@ -31,6 +31,35 @@ Bevor Sie den Smart Content Service verwenden, führen Sie Folgendes aus:
 * [Trainieren Sie den Smart Content Service](#training-the-smart-content-service).
 
 * Installieren Sie die neueste Version des [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de).
+
+## SCS-Upgrade zur Unterstützung von Oauth für Adobe Managed Services {#scs-upgrade-oauth-managed-services}
+
+**Neue Benutzer**
+
+Installieren Sie Service Pack 21. Um die OAuth-Integration auf Service Pack 21 zu unterstützen, müssen Sie [Hotfix für SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) installieren.
+
+Befolgen Sie die Anweisungen in diesem Artikel, um Smart Content Services einzurichten.
+
+**Vorhandene Benutzer**
+
+Wenn Sie auf Service Pack 21 aktualisiert haben, installieren Sie den [Hotfix für SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip), um die OAuth-Integration zu unterstützen. Jede vorhandene Konfiguration wird automatisch gelöscht. Befolgen Sie die Anweisungen in diesem Artikel, um Smart Content Services einzurichten.
+
+Für Service Pack 20 und älter müssen Sie die Problemumgehungsschritte für SCS ausführen, um die OAuth-Integration zu unterstützen. Siehe [Fehlerbehebung bei Smart-Tags für OAuth-Anmeldeinformationen](config-oauth.md).
+
+## SCS-Upgrade zur Unterstützung von Oauth für On-Premise-Benutzer {#scs-upgrade-oauth-on-premise}
+
+**Neue Benutzer**
+
+Smart Content Services steht neuen On-Premise-Benutzern nicht mehr zur Verfügung.[!DNL Experience Manager Assets]
+
+**Vorhandene Benutzer**
+
+Vorhandene On-Premise-Benutzer, für die diese Funktion bereits aktiviert ist, können weiterhin Smart Content Services verwenden.
+
+Wenn Sie auf Service Pack 21 aktualisiert haben, installieren Sie den [Hotfix für SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip), um die OAuth-Integration zu unterstützen. Jede vorhandene Konfiguration wird automatisch gelöscht. Befolgen Sie die Anweisungen in diesem Artikel, um Smart Content Services einzurichten.
+
+Für Service Pack 20 und älter müssen Sie die Problemumgehungsschritte für SCS ausführen, um die OAuth-Integration zu unterstützen. Siehe [Fehlerbehebung bei Smart-Tags für OAuth-Anmeldeinformationen](config-oauth.md).
+
 
 ## Integrieren mit der Adobe Developer Console {#integrate-adobe-io}
 
