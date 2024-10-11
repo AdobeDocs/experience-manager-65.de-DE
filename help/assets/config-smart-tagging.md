@@ -8,13 +8,13 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 5b4153f83d725c307e23ea10c4ea151911d4d390
 workflow-type: tm+mt
 source-wordcount: '2062'
-ht-degree: 74%
+ht-degree: 92%
 
 ---
 
 # Vorbereiten von [!DNL Assets] für Smart-Tagging {#configure-asset-tagging-using-the-smart-content-service}
 
-Bevor Sie mit dem Tagging Ihrer Assets per Smart Content Services beginnen können, integrieren Sie [!DNL Experience Manager Assets] in die Adobe Developer Console, um den Smart-Service von [!DNL Adobe Sensei] zu nutzen. Trainieren Sie nach der Konfiguration den Dienst mit einigen Bildern und einem -Tag.
+Bevor Sie mit dem Tagging Ihrer Assets per Smart Content Services beginnen können, integrieren Sie [!DNL Experience Manager Assets] in die Adobe Developer Console, um den Smart-Service von [!DNL Adobe Sensei] zu nutzen. Nach der Konfiguration trainieren Sie den Service mit einigen Bildern und einem Tag.
 
 <!--
 >[!NOTE]
@@ -38,15 +38,15 @@ Bevor Sie den Smart Content Service verwenden, führen Sie Folgendes aus:
 
 **Neue Benutzer**
 
-Installieren Sie Service Pack 21. Um die OAuth-Integration auf Service Pack 21 zu unterstützen, müssen Sie [Hotfix für Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) installieren.
+Installieren Sie Service Pack 21. Um die OAuth-Integration auf Service Pack 21 zu unterstützen, müssen Sie [Hotfix für Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) installieren.
 
 Befolgen Sie die Anweisungen in diesem Artikel, um Smart Content Services einzurichten.
 
 **Vorhandene Benutzer**
 
-Wenn Sie auf Service Pack 21 aktualisiert haben, installieren Sie den [Hotfix für SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip), um die OAuth-Integration zu unterstützen. Jede vorhandene Konfiguration wird automatisch gelöscht. Befolgen Sie die Anweisungen in diesem Artikel, um Smart Content Services einzurichten.
+Wenn Sie auf Service Pack 21 aktualisiert haben, installieren Sie den [Hotfix für SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip), um die OAuth-Integration zu unterstützen. Jede vorhandene Konfiguration wird automatisch gelöscht. Befolgen Sie die Anweisungen in diesem Artikel, um Smart Content Services einzurichten.
 
-Für Service Pack 20 und älter müssen Sie die Problemumgehungsschritte für SCS ausführen, um die OAuth-Integration zu unterstützen. Siehe [Fehlerbehebung bei Smart-Tags für OAuth-Anmeldeinformationen](config-oauth.md).
+Für Service Pack 20 und älter müssen Sie die Problemumgehungsschritte für SCS ausführen, damit die OAuth-Integration unterstützt wird. Siehe [Fehlerbehebung für Smart-Tags hinsichtlich OAuth-Anmeldedaten](config-oauth.md).
 
 ## SCS-Upgrade zur Unterstützung von Oauth für On-Premise-Benutzer {#scs-upgrade-oauth-on-premise}
 
@@ -58,9 +58,9 @@ Smart Content Services steht neuen On-Premise-Benutzern nicht mehr zur Verfügun
 
 Vorhandene On-Premise-Benutzer, für die diese Funktion bereits aktiviert ist, können weiterhin Smart Content Services verwenden.
 
-Wenn Sie auf Service Pack 21 aktualisiert haben, installieren Sie den [Hotfix für SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip), um die OAuth-Integration zu unterstützen. Jede vorhandene Konfiguration wird automatisch gelöscht. Befolgen Sie die Anweisungen in diesem Artikel, um Smart Content Services einzurichten.
+Wenn Sie auf Service Pack 21 aktualisiert haben, installieren Sie den [Hotfix für SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip), um die OAuth-Integration zu unterstützen. Jede vorhandene Konfiguration wird automatisch gelöscht. Befolgen Sie die Anweisungen in diesem Artikel, um Smart Content Services einzurichten.
 
-Für Service Pack 20 und älter müssen Sie die Problemumgehungsschritte für SCS ausführen, um die OAuth-Integration zu unterstützen. Siehe [Fehlerbehebung bei Smart-Tags für OAuth-Anmeldeinformationen](config-oauth.md).
+Für Service Pack 20 und älter müssen Sie die Problemumgehungsschritte für SCS ausführen, damit die OAuth-Integration unterstützt wird. Siehe [Fehlerbehebung für Smart-Tags hinsichtlich OAuth-Anmeldedaten](config-oauth.md).
 
 
 ## Integrieren mit der Adobe Developer Console {#integrate-adobe-io}
@@ -71,7 +71,7 @@ Gehen Sie wie folgt vor, um den Smart Content Service zu konfigurieren:
 
 1. Erstellen Sie eine Integration in [Adobe Developer Console](#create-adobe-io-integration).
 
-1. Erstellen Sie die Konfiguration des technischen IMS-Kontos ](#create-ims-account-config) mit dem API-Schlüssel und anderen Anmeldedaten aus Adobe Developer Console.[
+1. Erstellen Sie eine [Konfiguration des technischen IMS-Kontos](#create-ims-account-config) mithilfe des API-Schlüssels und der anderen Anmeldedaten aus der Adobe Developer Console.
 
 1. [Konfigurieren Sie den Smart Content Service](#configure-smart-content-service).
 
@@ -93,9 +93,9 @@ To configure the Smart Content Service, follow these top-level steps:
 
 ### Erstellen einer Integration in der Adobe Developer Console {#create-adobe-io-integration}
 
-Um Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration in Adobe Developer Console, um den [!UICONTROL API-Schlüssel] (der im Feld [!UICONTROL CLIENT-ID] der Adobe Developer Console-Integration generiert wurde), die [!UICONTROL ORGANIZATION-ID] und den [!UICONTROL CLIENT SECRET] für die Einstellungen des Smart-Tagging-Dienstes für Assets ] der Cloud-Konfiguration in [!DNL Experience Manager] abzurufen.[!UICONTROL 
+Um die Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration in der Adobe Developer Console, um den [!UICONTROL API-Schlüssel] (der im Feld [!UICONTROL CLIENT-ID] der Adobe Developer Console-Integration generiert wird), die [!UICONTROL ORGANISATIONS-ID] und das [!UICONTROL CLIENT-GEHEIMNIS] für die [!UICONTROL Smart Tagging Service-Einstellungen für Assets] der Cloud-Konfiguration in [!DNL Experience Manager] zu erhalten.
 
-1. Rufen Sie [https://developer.adobe.com](https://developer.adobe.com/) in einem Browser auf. Wählen Sie das entsprechende Konto aus und vergewissern Sie sich, dass die zugehörige Organisationsrolle &quot;System **Administrator**&quot;ist.
+1. Rufen Sie [https://developer.adobe.com](https://developer.adobe.com/) in einem Browser auf. Wählen Sie das entsprechende Konto aus und vergewissern Sie sich, dass die zugehörige Organisationsrolle **Systemadministrator** ist.
 
 1. Erstellen Sie ein Projekt mit einem beliebigen Namen. Klicken Sie auf **[!UICONTROL API hinzufügen]**.
 
@@ -120,31 +120,31 @@ Weitere Informationen zu dieser Konfiguration finden Sie in der Dokumentation zu
 
    ![OAuth-Anmeldedaten in der Developer Console](assets/ims-configuration-developer-console.png)
 
-### Technische Kontokonfiguration für IMS erstellen {#create-ims-account-config}
+### Erstellen der Konfiguration des technischen IMS-Kontos {#create-ims-account-config}
 
-Sie müssen die Konfiguration des technischen IMS-Kontos wie folgt erstellen:
+Sie müssen die Konfiguration des technischen IMS-Kontos mithilfe der folgenden Schritte erstellen:
 
 1. Rufen Sie in der [!DNL Experience Manager]-Benutzeroberfläche **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]** auf.
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
-1. Verwenden Sie im Dialogfeld Konfiguration des technischen IMS-Kontos die folgenden Werte:
+1. Verwenden Sie im Dialogfeld „Konfiguration des technischen IMS-Kontos“ die folgenden Werte:
 
-   ![Fenster &quot;Adobe IMS-Konfiguration&quot;](assets/adobe-ims-config.png)
+   ![Fenster „Adobe IMS-Konfiguration“](assets/adobe-ims-config.png)
 
    | Feld | Beschreibung |
    | -------- | ---------------------------- |
-   | Cloud-Lösung | Wählen Sie **[!UICONTROL Smart-Tags]** aus der Dropdown-Liste aus. |
+   | Cloud-Lösung | Wählen Sie aus dem Dropdown-Menü **[!UICONTROL Smart-Tags]** aus. |
    | Titel | Fügen Sie den Titel des konfigurierenden IMS-Kontos hinzu. |
-   | Autorisierungsserver | Hinzufügen von `https://ims-na1.adobelogin.com` |
-   | Client-ID | Wird über die [Adobe Developer-Konsole](https://developer.adobe.com/console/) bereitgestellt. |
-   | Client-Geheimnis | Wird über die [Adobe Developer-Konsole](https://developer.adobe.com/console/) bereitgestellt. |
-   | Anwendungsbereich | Wird über die [Adobe Developer-Konsole](https://developer.adobe.com/console/) bereitgestellt. |
-   | Organisations-ID | Wird über die [Adobe Developer-Konsole](https://developer.adobe.com/console/) bereitgestellt. |
+   | Autorisierungs-Server | Fügen Sie `https://ims-na1.adobelogin.com` hinzu. |
+   | Client-ID | Wird über die [Adobe Developer Console](https://developer.adobe.com/console/) bereitgestellt. |
+   | Client-Geheimnis | Wird über die [Adobe Developer Console](https://developer.adobe.com/console/) bereitgestellt. |
+   | Anwendungsbereich | Wird über die [Adobe Developer Console](https://developer.adobe.com/console/) bereitgestellt. |
+   | Organisations-ID | Wird über die [Adobe Developer Console](https://developer.adobe.com/console/) bereitgestellt. |
 
-1. Wählen Sie die von Ihnen erstellte Konfiguration aus und klicken Sie auf **[!UICONTROL Systemdiagnose]**.
+1. Wählen Sie die von Ihnen erstellte Konfiguration aus und klicken Sie auf **[!UICONTROL Konsistenz prüfen]**.
 
-1. Bestätigen Sie das Dialogfeld &quot;Systemdiagnose&quot;und klicken Sie auf &quot;Schließen&quot;, sobald die Konfiguration den Status &quot;Gesund&quot;aufweist.
+1. Bestätigen Sie das Dialogfeld „Konsistenz prüfen“ und klicken Sie auf „Schließen“, sobald die Konfiguration im konsistenten Status ist.
 
 ### Erstellen einer neuen Konfiguration {#configure-smart-content-service}
 
@@ -159,19 +159,19 @@ Sie müssen die Konfiguration des technischen IMS-Kontos wie folgt erstellen:
 
 Verwenden Sie zum Konfigurieren der Integration die Werte der Felder [!UICONTROL ID DES TECHNISCHEN KONTOS], [!UICONTROL ORGANISATIONS-ID], [!UICONTROL CLIENT-GEHEIMNIS] und [!UICONTROL CLIENT-ID] aus der Adobe Developer Console-Integration. Das Erstellen einer Smart-Tags-Cloud-Konfiguration ermöglicht die Authentifizierung von API-Anfragen aus der [!DNL Experience Manager]-Bereitstellung.
 
-1. Navigieren Sie in [!DNL Experience Manager] zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Smart-Tag]** , um die [!UICONTROL Smart-Tag-Konfigurationen] zu öffnen.
+1. Navigieren Sie in [!DNL Experience Manager] zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Smart-Tag]**, um die [!UICONTROL Smart-Tag-Konfigurationen] zu öffnen.
 
-1. Klicken Sie auf **[!UICONTROL Erstellen]** , um eine neue Konfiguration zu erstellen. Klicken Sie andernfalls auf **[!UICONTROL Eigenschaften]** , um die vorhandene Konfiguration zu aktualisieren.
+1. Klicken Sie auf **[!UICONTROL Erstellen]**, um eine neue Konfiguration zu erstellen. Klicken Sie andernfalls auf **[!UICONTROL Eigenschaften]**, um die vorhandene Konfiguration zu aktualisieren.
 
 1. Füllen Sie die folgenden Felder aus:
 
-   ![Smart-Tags-Konfiguration](assets/smart-tags-config.png)
+   ![Konfiguration von Smart-Tags](assets/smart-tags-config.png)
 
    | Feld | Beschreibung |
    | -------- | ---------------------------- |
    | Titel | Fügen Sie den Titel des konfigurierenden IMS-Kontos hinzu. |
-   | Verknüpfte Adobe IMS-Konfiguration | Wählen Sie die Konfiguration aus der Dropdown-Liste aus. |
-   | Service-URL | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>` ersetzt werden. Beispiel: `https://smartcontent.adobe.io/apac`. Sie können `na`, `emea` oder `apac` als die Regionen angeben, in denen Ihre Experience Manager-Autoreninstanz gehostet wird. |
+   | Verknüpfte Adobe IMS-Konfiguration | Wählen Sie die Konfiguration aus dem Dropdown-Menü aus. |
+   | Service-URL | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. Beispiel: `https://smartcontent.adobe.io/apac`. Sie können `na`, `emea` oder `apac` als die Regionen angeben, in denen Ihre Experience Manager-Autoreninstanz gehostet wird. |
 
    >[!NOTE]
    >
@@ -377,11 +377,11 @@ The validation results are displayed in the same dialog.
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Argumente]** die Option **[!UICONTROL Fehler ignorieren]**, wenn der Workflow auch dann abgeschlossen werden soll, falls der automatische Tag-Schritt fehlschlägt.
 
-   Um Assets unabhängig davon mit Tags zu versehen, ob Smart-Tagging für Ordner aktiviert ist, wählen Sie außerdem **[!UICONTROL Smart-Tag-Markierung ignorieren]** aus.
+   Um Assets unabhängig davon mit Tags zu versehen, ob die Smart-Tagging-Funktion für Ordner aktiviert ist, wählen Sie **[!UICONTROL Smart-Tag-Markierung ignorieren]** aus.
 
    ![Konfigurieren des Workflows „DAM Update Asset“, um den Schritt „Smart-Tag“ hinzuzufügen und den erweiterten Handler-Modus auszuwählen](assets/smart-tag-step-properties-workflow2.png)
 
-1. Klicken Sie auf das Symbol ![Fertig](assets/do-not-localize/check-ok-done-icon.png) , um den Prozessschritt zu schließen.
+1. Klicken Sie auf das Symbol ![Fertig](assets/do-not-localize/check-ok-done-icon.png), um den Prozessschritt zu schließen.
 
 1. Klicken Sie auf **[!UICONTROL Synchronisieren]**, um den Workflow zu speichern.
 
