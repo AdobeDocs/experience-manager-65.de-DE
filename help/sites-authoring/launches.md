@@ -10,7 +10,7 @@ exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 82597d52ed774f08ce7136d271148e720b56fcf1
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 100%
@@ -107,8 +107,7 @@ Launches ermöglichen Folgendes:
 >
 >Wenn die Seite beworben wird, werden alle Inhaltsänderungen angezeigt, aber die Komponentenpositionen ändern sich nicht.
 
-
-### Die Konsole „Launches“  {#the-launches-console}
+## Die Konsole „Launches“  {#the-launches-console}
 
 Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermöglicht es Ihnen, Aktionen für diese durchzuführen. Auf die Konsole kann wie folgt zugegriffen werden:
 
