@@ -6,9 +6,9 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 573057b8e4c01b1c14f8c66b3da7b44e9d857760
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '148'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -28,12 +28,12 @@ ht-degree: 81%
 
 | Komponente | Version | Details |
 |:-------|:-------:|-----------------------------------------------------------------------------------------------------------:|
-| CIF-Kernkomponenten | 2,15,0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.15.0) |
+| CIF-Kernkomponenten | 2.15.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.15.0) |
 
 ### Fehlerbehebungen {#bug-fixes-October}
 
-* Die UI-Tests funktionieren jetzt ordnungsgemäß mit den Kernkomponenten CIF.
-* Es wurde ein Problem behoben, durch das das Kategorie-URL-Format in der Cloud-Instanz nicht wie erwartet funktionierte.
+* Die Benutzeroberflächentests funktionieren jetzt ordnungsgemäß mit den CIF-Kernkomponenten.
+* Es wurde ein Problem behoben, durch das das URL-Format „Kategorie“ in der Cloud-Instanz nicht wie erwartet funktionierte.
 
 ## Veröffentlichungsdatum: Januar 2024
 

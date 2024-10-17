@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Architect,Developer
 source-git-commit: 82597d52ed774f08ce7136d271148e720b56fcf1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1097'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -160,10 +160,10 @@ So erstellen Sie einen verschachtelten Launch auf Grundlage eines vorhandenen La
 
 ### Klonen eines Launches {#cloning-a-launch}
 
-Sie können einen Launch über die [Launches-Konsole](/help/sites-authoring/launches.md#the-launches-console) klonen:
+Sie können einen Launch aus der [Launch-Konsole](/help/sites-authoring/launches.md#the-launches-console) klonen:
 
 * Wählen Sie den Launch aus, indem Sie auf die Miniaturansicht tippen/klicken.
-* Die Symbolleiste wird angezeigt. Wählen Sie Klonen aus.
+* Die Symbolleiste wird angezeigt. Wählen Sie „Klonen“ aus.
    * Der Klon wird erstellt und in der Konsole angezeigt.
    * Der **Launch-Titel** gibt an, dass es sich um einen Klon handelt. Sie können den Titel aktualisieren, indem Sie die [Launch-Konfiguration](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) (**Eigenschaften**) bearbeiten.
 
