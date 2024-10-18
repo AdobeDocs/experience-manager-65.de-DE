@@ -9,9 +9,9 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 2d6b0129d28dba954f9854c641386c4c2ad32765
+source-git-commit: 7fb3ec9654b56605321f0d12a4c1e23d2e18dab9
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3322'
 ht-degree: 58%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 58%
 
 Die intelligente Bildbearbeitung wendet die individuellen Anzeigeeigenschaften eines jeden Benutzers an, um die richtigen Bilder automatisch für sein Erlebnis zu optimieren, was zu einer besseren Leistung und Interaktion führt.
 
-## Was ist die intelligente Bildbearbeitung? {#what-is-smart-imaging}
+## Über die intelligente Bildbearbeitung {#what-is-smart-imaging}
 
 Die Technologie für intelligente Bildbearbeitung wendet Adobe Sensei-KI-Funktionen an und arbeitet mit vorhandenen &quot;Bildvorgaben&quot;. Sie optimiert auf Grundlage der Browserfunktionen automatisch das Format, die Größe und die Qualität eines Bildes und stellt so hochwertige Bilder bereit.
 
@@ -136,7 +136,7 @@ Die Werte für das Gerätepixelverhältnis und die Netzwerkbandbreite basieren a
 * Zuvor wurden sowohl die ursprünglichen als auch die abgeleiteten Bilder zwischengespeichert, und es war ein zweistufiger Prozess, den Cache zu invalidieren. In der neuesten Version der intelligenten Bildbearbeitung werden nur die Derivate zwischengespeichert, was einen einstufigen Cache-Invalidierungsprozess ermöglicht.
 * Kunden, die benutzerdefinierte Kopfzeilen in ihrem Regelsatz verwenden, profitieren von der neuesten intelligenten Bildbearbeitung, da diese Kopfzeilen im Gegensatz zur vorherigen Version der intelligenten Bildbearbeitung nicht blockiert werden. Beispielsweise &quot;Timing Allow Origin&quot;und &quot;X-Robot&quot;, wie in [Hinzufügen eines benutzerdefinierten Header-Werts zu Bildantworten|Dynamic Media Classic](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html) vorgeschlagen.
 
-## Häufig gestellte Fragen {#fag}
+## Häufig gestellte Fragen
 
 ++ Gibt es Lizenzierungskosten im Zusammenhang mit der intelligenten Bildbearbeitung?
 
