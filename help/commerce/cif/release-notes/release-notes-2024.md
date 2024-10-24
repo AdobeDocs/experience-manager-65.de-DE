@@ -6,9 +6,9 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 1788e5f77d4c46a548710361e9e5dae3c6daab28
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '221'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 88%
 
 | Komponente | Version | Details |
 |:-------|:-------:|-----------------------------------------------------------------------------------------------------------:|
-| CIF-Kernkomponenten | 2,14,2 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.14.2) |
+| CIF-Kernkomponenten | 2.14.2 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.14.2) |
 
 ### Verbesserungen {#improvements-September}
 
@@ -49,8 +49,8 @@ ht-degree: 88%
 
 * Commerce-Felder sind nicht ordnungsgemäß mit dem Metadatenschema-Editor von Assets integriert.
 * Problem mit dem Karussell-Produkte-Multifield für Drag-and-Drop.
-* Problem mit Karussellkategorie-Multifield für Drag &amp; Drop
-* Ein Klick funktioniert nicht für die Menüs auf der Seite Seiteninformationen auf der Kategorie- und Produkt-Editor-Seite.
+* Problem mit dem Karussell-Kategorie-Multifield für Drag-and-Drop.
+* Anklicken funktioniert nicht in den Menüs der Seiteninformation für die Kategorie- und Produkt-Editor-Seite.
 * Die Bestellnummer ist auf der Seite „Bestellbestätigung“ nicht sichtbar.
 
 ## Veröffentlichungsdatum: Januar 2024
