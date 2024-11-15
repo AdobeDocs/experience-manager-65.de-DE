@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 100%
+source-wordcount: '257'
+ht-degree: 71%
 
 ---
 
 # Zugehörige Inhalte{#associated-content}
 
-Die AEM-Funktion für zugehörige Inhalte stellt die Verbindung bereit, mit der Assets optional für ein Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird. Dies bietet Ihnen Flexibilität bei der Headless-Bereitstellung von Inhalten, [da Sie eine Reihe von Assets zur Verfügung haben, auf die Sie zugreifen können, wenn Sie das Inhaltsfragment auf einer Seite verwenden.](/help/sites-authoring/content-fragments.md#using-associated-content) Darüber hinaus wird so der Zeitaufwand für die Suche nach dem passenden Asset reduziert.
+AEM Funktion Zugehörige Inhalte stellt die Verbindung bereit, damit Assets (optional) mit dem Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird. Dies bietet Ihnen mehr Flexibilität bei der Bereitstellung Headless Content, indem [ eine Reihe von Assets bereitstellt, auf die bei der Verwendung des Inhaltsfragments auf einer Seite zugegriffen werden kann, und ](/help/sites-authoring/content-fragments.md#using-associated-content). Gleichzeitig wird so der Zeitaufwand für die Suche nach dem entsprechenden Asset reduziert. Alle verknüpften Inhalte können mit dem Inhaltsfragment-Editor konfiguriert werden.
 
 ## Hinzufügen von zugehörigen Inhalten {#adding-associated-content}
 

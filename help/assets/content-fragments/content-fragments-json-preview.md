@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User,Developer
 exl-id: c58a3cfd-6348-4a2e-996a-5fdb96415adb
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 100%
+source-wordcount: '117'
+ht-degree: 70%
 
 ---
 
-# Anzeigen in der Vorschau – JSON-Repräsentation {#preview-json-representation}
+# Vorschau – JSON-Darstellung {#preview-json-representation}
 
-Beim Entwickeln der Modelle für Inhaltsfragmente als Teil Ihrer AEM Headless-Implementierung sollten Sie ggf. eine JSON-Beispielausgabe für ein Inhaltsfragment auf der Grundlage eines Modells anzeigen. So erhalten Sie beispielsweise eine Vorstellung davon, wie die endgültige Ausgabe aussehen wird. Dies könnte bei der Validierung der Modell-JSON-Struktur hilfreich sein, ggf. mit standardmäßigen Beispielinhalten pro Datentyp.
+Bei der Entwicklung der Modelle für Inhaltsfragmente als Teil Ihrer AEM Headless-Implementierung können Sie den Inhaltsfragment-Editor verwenden, um die JSON-Beispielausgabe für ein Inhaltsfragment anzuzeigen, wie auf einem Modell basiert. So erhalten Sie beispielsweise eine Vorstellung davon, wie die endgültige Ausgabe aussehen wird. Dies könnte bei der Validierung der Modell-JSON-Struktur hilfreich sein, ggf. mit standardmäßigen Beispielinhalten pro Datentyp.
 
 Verwendung des **Vorschau**-Symbols:
 
