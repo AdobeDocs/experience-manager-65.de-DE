@@ -3,9 +3,10 @@ title: Der universelle Editor
 description: Erfahren Sie mehr über die Flexibilität des universellen Editors und wie Sie mit AEM 6.5 Ihr Headless-Erlebnis optimieren können.
 feature: Developing
 role: Developer
-source-git-commit: a088fcb3069fae7e63c7238710534d817a308eff
+exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
+source-git-commit: 6301f0fdba9f7a6fa8fa998759b9ebad6b4fa9a6
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1087'
 ht-degree: 4%
 
 ---
@@ -46,17 +47,17 @@ Nachdem Sie die Einrichtung abgeschlossen haben, können Sie [Ihre Anwendungen f
 
 ### AEM aktualisieren {#update-aem}
 
-Service Pack 21 und ein Feature Pack für AEM sind erforderlich, um den Universal Editor mit AEM 6.5 verwenden zu können.
+Service Pack 21 oder 22 und ein Feature Pack für AEM sind erforderlich, damit der Universal Editor mit AEM 6.5 verwendet werden kann.
 
 #### Anwenden des neuesten Service Packs {#latest}
 
-Stellen Sie sicher, dass Sie mindestens Service Pack 21 für AEM 6.5 ausführen. Sie können das neueste Service Pack von [Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de) herunterladen.
+Stellen Sie sicher, dass Sie mindestens Service Pack 21 oder 22 für AEM 6.5 ausführen. Sie können das neueste Service Pack von [Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de) herunterladen.
 
 #### Installieren des Feature Packs für den universellen Editor {#feature-pack}
 
 Installieren Sie das Feature Pack **Universal Editor für AEM 6.5** [, das für Softwareverteilung verfügbar ist.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
 
-Wenn Sie bereits Service Pack 23 oder höher ausführen, ist dieser Schritt nicht erforderlich.
+Wenn Sie bereits Service Pack 23 oder höher ausführen, ist das Feature Pack nicht erforderlich.
 
 ### Dienste konfigurieren {#configure-services}
 
