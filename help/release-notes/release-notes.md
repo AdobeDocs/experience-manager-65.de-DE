@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 0998a6970020275de7f411c6ecbc61168fc95add
-workflow-type: ht
-source-wordcount: '4500'
-ht-degree: 100%
+source-git-commit: 83bebdd7b4813c4b0dea1e237b73a51d68699646
+workflow-type: tm+mt
+source-wordcount: '4514'
+ht-degree: 99%
 
 ---
 
@@ -40,6 +40,10 @@ ht-degree: 100%
 ## Wichtige Funktionen und Verbesserungen
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
+
+### Sites {#sites}
+
+[Der universelle Editor](/help/sites-developing/universal-editor/introduction.md) ist jetzt in AEM 6.5 für Headless-Anwendungsfälle verfügbar.
 
 ### [!DNL Forms]
 
