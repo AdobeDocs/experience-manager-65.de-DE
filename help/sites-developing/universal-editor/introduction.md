@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Flexibilität des universellen Editors 
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: 6301f0fdba9f7a6fa8fa998759b9ebad6b4fa9a6
+source-git-commit: c3af0befce5534891d45c2507684a2017f9363f8
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 4%
@@ -128,7 +128,7 @@ Beispielzuordnungen:
 Mit AEM Aktualisierung und Konfiguration können Sie einen lokalen Universal Editor-Dienst für Ihre eigene lokale Entwicklung und Tests einrichten.
 
 1. Installieren Sie Node.js , Version >=20.
-1. Laden Sie den neuesten Universal Editor-Dienst von [Softwareverteilung](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home) herunter und entpacken Sie ihn.
+1. Laden Sie den neuesten Universal Editor-Dienst von [Softwareverteilung](https://experienceleague.adobe.com/de/docs/experience-cloud/software-distribution/home) herunter und entpacken Sie ihn.
 1. Konfigurieren Sie den universellen Editor-Dienst über Umgebungsvariablen oder die Datei `.env` .
    * [Weitere Informationen finden Sie in der Dokumentation zum AEM as a Cloud Service Universal Editor.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * Beachten Sie, dass Sie möglicherweise die Option `UES_MAPPING` verwenden müssen, wenn eine interne IP-Umschreibung erforderlich ist.
