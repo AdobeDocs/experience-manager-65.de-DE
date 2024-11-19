@@ -1,5 +1,5 @@
 ---
-title: Transaktionsberichte Abrechnungsfähige APIs für AEM Forms on JEE.
+title: Kostenpflichtige APIs für Transaktionsberichte für AEM Forms on JEE.
 description: Liste aller APIs, die als Transaktionen für AEM Forms on JEE bilanziert werden.
 topic-tags: forms-manager
 feature: Transaction Reports
@@ -7,21 +7,21 @@ exl-id: dbb22369-c0a2-4cf6-b01b-096b4de13a14
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '803'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
-# Rechnungsstellungs-APIs für Transaktionsberichte für AEM Forms on JEE {#transaction-reports-billable-apis}
+# Kostenpflichtige APIs für Transaktionsberichte für AEM Forms on JEE {#transaction-reports-billable-apis}
 
-AEM Forms on JEE bietet mehrere APIs zum Senden, Verarbeiten und Rendern von Dokumenten. Einige APIs werden als Transaktionen verbucht, andere können kostenlos verwendet werden. Dieses Dokument enthält eine Liste aller APIs, die als Transaktionen bilanziert werden. Im Folgenden finden Sie einige gängige Szenarien, in denen eine kostenpflichtige API verwendet wird:
+AEM Forms on JEE bietet mehrere APIs zum Senden, Verarbeiten und Rendern von Dokumenten. Einige APIs werden als Transaktionen verbucht, andere können kostenlos verwendet werden. Dieses Dokument enthält eine Liste aller APIs, die als Transaktionen verbucht werden. Im Folgenden finden Sie einige gängige Szenarien, in denen eine kostenpflichtige API verwendet wird:
 
 * Konvertieren eines Dokuments aus einem Format in ein anderes
 * Reduzieren eines dynamischen PDF-Dokuments
 * Zusammenführen eines interaktiven PDF-Dokuments mit einem anderen PDF-Dokument
 
-Abrechnungs-APIs berücksichtigen nicht die Anzahl der Seiten, die Länge eines Dokuments oder Formulars oder das endgültige Format des wiedergegebenen Dokuments.
+Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge eines Dokuments oder Formulars oder das endgültige Format des gerenderten Dokuments.
 <!--
 
 * **Forms Submitted:** When data is submitted from any type of form created with AEM Forms and the data is submitted to any data storage repository or database is considered form submission. For example, submitting an HTML5 Form, PDF Forms are accounted as forms submitted. Each form in a form set is considered a submission. For example, if a form set has 5 forms, when the form set is submitted, transaction reporting service counts it as 5 submissions.
@@ -30,7 +30,7 @@ Abrechnungs-APIs berücksichtigen nicht die Anzahl der Seiten, die Länge eines 
 
 -->
 
-Nachstehend finden Sie eine Liste der abrechnungsfähigen JEE-APIs. Suchen Sie die Liste der abrechnungsfähigen APIs für AEM Forms unter OSGi](/help/forms/using/transaction-reports-billable-apis.md).[
+Nachstehend finden Sie eine Liste der kostenpflichtigen JEE-APIs. Liste der [kostenpflichtigen APIs für AEM Forms on OSGi](/help/forms/using/transaction-reports-billable-apis.md).
 
 ## Kostenpflichtige Document Services-APIs {#billable-document-services-apis}
 
@@ -55,37 +55,37 @@ Nachstehend finden Sie eine Liste der abrechnungsfähigen JEE-APIs. Suchen Sie d
   </tr>
   <tr>
    <td><a> HtmlToPDF</a></td>
-   <td>Konvertiert die HTML-Datei in Adobe PDF. </td>
+   <td>Konvertiert HTML-Datei in Adobe PDF. </td>
    <td>Konversion<br /> </td>
   </tr>
   <tr>
    <td><a>ExportPDF</a></td>
-   <td>Exportiert PDF in unterstützte Dateitypen. </td>
+   <td>Exportiert PDFs in unterstützte Dateitypen. </td>
    <td>Konversion<br /> </td>
   </tr>
   <tr>
    <td><a>ExportPDF2</a></td>
-   <td><p>Exportiert PDF in unterstützte Dateitypen.</p> </td>
+   <td><p>Exportiert PDFs in unterstützte Dateitypen.</p> </td>
    <td>Konversion<br /> </td>
   </tr>
   <tr>
    <td><a>ExportPDF3</a></td>
-   <td>Exportiert PDF in unterstützte Dateitypen.</td>
+   <td>Exportiert PDFs in unterstützte Dateitypen.</td>
    <td>Konversion<br /> </td>
   </tr>
   <tr>
    <td><a>HtmlFileToPDF</a></td>
-   <td>Konvertiert die HTML-Datei in PDF.</td>
+   <td>Konvertiert HTML-Datei in PDF.</td>
    <td>Konversion<br /> </td>
   </tr>
   <tr>
    <td><a>HtmlToPDF2</a></td>
-   <td>Konvertiert die HTML-Datei in PDF.</td>
+   <td>Konvertiert HTML-Datei in PDF.</td>
    <td>Konversion<br /> </td>
   </tr>
   <tr>
    <td><a>OptimizePDF</a></td>
-   <td>Optimiert das PDF, um die Dateigröße zu reduzieren, indem unnötige Metadaten entfernt werden, ohne die Qualität zu beeinträchtigen.</td>
+   <td>Optimiert ein PDF, um die Dateigröße zu reduzieren, indem unnötige Metadaten entfernt werden, ohne die Qualität zu beeinträchtigen.</td>
    <td>Konversion<br /> </td>
   </tr>
  </tbody>
@@ -192,7 +192,7 @@ Nachstehend finden Sie eine Liste der abrechnungsfähigen JEE-APIs. Suchen Sie d
   <tr>
    <td><a>transformPDF</a></td>
    <td>Konvertiert einen Satz von XDP- und PDF-Dokumenten in die Formate PostScript (PS), Printer Command Language (PCL) und ZPL. </td>
-   <td>Dokumentkonvertierung</td>
+   <td>Dokumentenkonvertierung</td>
   </tr>
  </tbody>
 </table>
@@ -236,17 +236,17 @@ Nachstehend finden Sie eine Liste der abrechnungsfähigen JEE-APIs. Suchen Sie d
   <tr>
    <td><a>toImage2</a></td>
    <td>Konvertiert ein PDF-Dokument in eine Liste von Bilddokumenten. Unterstützte Bildformate sind JPEG, JPEG2K, PNG und TIFF.</td>
-   <td>Dokumentkonvertierung</td>
+   <td>Dokumentenkonvertierung</td>
   </tr>
   <tr>
    <td><a>toPS2</a></td>
    <td>Konvertiert eine einfache PDF-Datei in das PostScript-Format mithilfe der in der Optionsbeschreibung angegebenen Optionen.</td>
-   <td>Dokumentkonvertierung</td>
+   <td>Dokumentenkonvertierung</td>
   </tr>
   <tr>
    <td><a>toSWF</a></td>
-   <td>Konvertiert eine einfache PDF-Datei in das SWF-Format unter Verwendung der in der Optionsbeschreibung angegebenen Optionen.</td>
-   <td>Dokumentkonvertierung</td>
+   <td>Konvertiert eine einfache PDF-Datei in das SWF-Format mithilfe der in der Optionsbeschreibung angegebenen Optionen.</td>
+   <td>Dokumentenkonvertierung</td>
   </tr>
  </tbody>
 </table>
@@ -263,7 +263,7 @@ Nachstehend finden Sie eine Liste der abrechnungsfähigen JEE-APIs. Suchen Sie d
   <tr>
    <td><a>decode</a></td>
    <td>Decodiert alle Barcodes in einem Dokumentobjekt und gibt ein org.w3c.dom.Document-Objekt zurück, das Daten enthält, die aus dem Barcode abgerufen wurden.</td>
-   <td>Dokumentkonvertierung</td>
+   <td>Dokumentenkonvertierung</td>
   </tr>
  </tbody>
 </table>
@@ -280,27 +280,27 @@ Nachstehend finden Sie eine Liste der abrechnungsfähigen JEE-APIs. Suchen Sie d
   <tr>
    <td><a>invoke</a></td>
    <td>Führt das angegebene DDX-Dokument aus und gibt ein AssemblerResult-Objekt zurück, das die resultierenden Dokumente enthält. </td>
-   <td>Dokumentkonvertierung</td>
+   <td>Dokumentenkonvertierung</td>
   </tr>
   <tr>
    <td><a>invokeDDX</a></td>
    <td>Führt das angegebene DDX-Dokument aus und gibt ein AssemblerResult-Objekt zurück, das die resultierenden Dokumente enthält. </td>
-   <td>Dokumentkonvertierung</td>
+   <td>Dokumentenkonvertierung</td>
   </tr>
   <tr>
    <td><a>invokeOneDocument</a></td>
-   <td>Konvertieren Sie ein bestimmtes Dokument mithilfe der angegebenen Optionen in PDF/A.</td>
-   <td>Dokumentkonvertierung</td>
+   <td>Konvertiert ein bestimmtes Dokument unter Verwendung der angegebenen Optionen in PDF/A.</td>
+   <td>Dokumentenkonvertierung</td>
   </tr>
   <tr>
    <td><a>invokeDDXOneDocument</a></td>
-   <td>Konvertieren Sie ein bestimmtes Dokument mithilfe der angegebenen Optionen in PDF/A.</td>
-   <td>Dokumentkonvertierung</td>
+   <td>Konvertiert ein bestimmtes Dokument unter Verwendung der angegebenen Optionen in PDF/A.</td>
+   <td>Dokumentenkonvertierung</td>
   </tr>
   <tr>
    <td><a>toPDFA</a></td>
-   <td>Konvertieren Sie ein bestimmtes Dokument mithilfe der angegebenen Optionen in PDF/A.</td>
-   <td>Dokumentkonvertierung</td>
+   <td>Konvertiert ein bestimmtes Dokument unter Verwendung der angegebenen Optionen in PDF/A.</td>
+   <td>Dokumentenkonvertierung</td>
   </tr>
  </tbody>
 </table>
@@ -312,8 +312,8 @@ Die Verwendung der invoke-API wird als Transaktion gezählt, wenn Sie einen oder
 
 >[!NOTE]
 >
->* Die invoke-API des Assembler-Services kann abhängig von der Eingabe intern eine kostenpflichtige API eines anderen Services aufrufen. Die `invoke API` kann also als keine, einzelne oder mehrere Transaktionen verbucht werden. Die Anzahl der gezählten Transaktionen hängt von der Eingabe und den aufgerufenen internen APIs ab.
->* Ein einzelnes PDF-Dokument, das mit Assembler-Dienst wie `invoke` und `invokeDDX` erstellt wurde, kann als keine, einzelne oder mehrere Transaktionen erfasst werden. Die Anzahl der gezählten Transaktionen hängt vom bereitgestellten <!--DDX--> -Code ab.
+>* Die invoke-API des Assembler-Services kann abhängig von der Eingabe intern eine kostenpflichtige API eines anderen Services aufrufen. Daher kann die `invoke API` als keine, eine einzige oder auch mehrere Transaktionen verbucht werden. Die Anzahl der gezählten Transaktionen hängt von der Eingabe und den aufgerufenen internen APIs ab.
+>* Ein einzelnes PDF-Dokument, das mit einem Assembler-Service wie `invoke` und `invokeDDX` erstellt wurde, kann als keine, eine einzige oder auch mehrere Transaktionen erfasst werden. Die Anzahl der gezählten Transaktionen hängt vom bereitgestellten <!--DDX-->-Code ab.
 
 <!--
 ### PDF Utility Service  {#pdf-utility-service}
@@ -399,43 +399,43 @@ Die Verwendung der invoke-API wird als Transaktion gezählt, wenn Sie einen oder
   </tr>
   <tr>
    <td>exportData</td>
-   <td>Formular wird gesendet.</td>
+   <td>Übermittelt ein Formular.</td>
    <td>Übermittelte Formulare</td>
   </tr>
   <tr>
    <td>exportData2</td>
-   <td>Formular wird gesendet.</td>
+   <td>Übermittelt ein Formular.</td>
    <td>Übermittelte Formulare</td>
   </tr>
   <tr>
    <td>renderForm</td>
-   <td>Formular wird gesendet.</td>
-   <td>Forms Rendering</td>
+   <td>Übermittelt ein Formular.</td>
+   <td>Gerenderte Formulare</td>
   </tr>
   <tr>
    <td>renderHTMLForm</td>
-   <td>Formular wird gesendet.</td>
-   <td>Forms Rendering</td>
+   <td>Übermittelt ein Formular.</td>
+   <td>Gerenderte Formulare</td>
   </tr>
   <tr>
    <td>renderHTMLForm2</td>
-   <td>Formular wird gesendet.</td>
-   <td>Forms Rendering</td>
+   <td>Übermittelt ein Formular.</td>
+   <td>Gerenderte Formulare</td>
   </tr>
   <tr>
    <td>renderPDFForm</td>
-   <td>Formular wird gesendet.</td>
-   <td>Forms Rendering</td>
+   <td>Übermittelt ein Formular.</td>
+   <td>Gerenderte Formulare</td>
   </tr>
   <tr>
    <td>renderPDFForm2</td>
-   <td>Formular wird gesendet.</td>
-   <td>Forms Rendering</td>
+   <td>Übermittelt ein Formular.</td>
+   <td>Gerenderte Formulare</td>
   </tr>
   <tr>
    <td>renderPDFFormWithUsageRights</td>
-   <td>Formular wird gesendet.</td>
-   <td>Forms Rendering</td>
+   <td>Übermittelt ein Formular.</td>
+   <td>Gerenderte Formulare</td>
   </tr>
  </tbody>
 </table>
@@ -540,7 +540,7 @@ Actions like submitting a PDF Form, using Agent UI to preview an interactive com
 
 -->
 
-## Ähnliche Artikel
+## Verwandte Artikel
 
-* [Aktivieren und Anzeigen des Transaktionsberichts für AEM Forms on JEE](/help/forms/using/transaction-report-overview-jee.md)
-* [Eine Transaktion für benutzerdefinierte Komponenten-APIs für AEM Forms on JEE aufzeichnen](/help/forms/using/record-transaction-custom-component-jee.md)
+* [Aktivieren und Anzeigen eines Transaktionsberichts für AEM Forms on JEE](/help/forms/using/transaction-report-overview-jee.md)
+* [Aufzeichnen einer Transaktion für benutzerdefinierte Komponenten-APIs für AEM Forms on JEE](/help/forms/using/record-transaction-custom-component-jee.md)
