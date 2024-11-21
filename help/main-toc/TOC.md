@@ -473,7 +473,7 @@ ht-degree: 99%
       + [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)
       + [Varianten – Erstellen von Fragmentinhalten](/help/assets/content-fragments/content-fragments-variations.md)
       + [Zugehörige Inhalte von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-assoc-content.md)
-      + [Metadaten – Fragmenteigenschaften](/help/assets/content-fragments/content-fragments-metadata.md)
+      + [Metadaten – Fragmenteigenschaften](/help/assets/content-fragments/content-fragments-metadata.md)
       + [Inhaltsfragmente – Überlegungen zum Löschen](/help/assets/content-fragments/content-fragments-delete.md)
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [Strukturbaum](/help/assets/content-fragments/content-fragments-structure-tree.md)
