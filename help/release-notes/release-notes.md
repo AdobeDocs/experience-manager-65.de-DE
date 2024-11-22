@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 38271b27134afa2b350c6595cf0bdc335f110be3
+source-git-commit: e3b96392f656b6dcbd583c18a343b56d4371c4ef
 workflow-type: tm+mt
-source-wordcount: '5027'
-ht-degree: 96%
+source-wordcount: '4733'
+ht-degree: 97%
 
 ---
 
@@ -50,21 +50,6 @@ Zu den wichtigsten Funktionen und Verbesserungen in dieser Version gehören:
 ### [!DNL Assets]
 
 Die Registerkarte „IPTC“ bietet nun Unterstützung für die Textfelder [!UICONTROL Alternativtext] und [!UICONTROL Erweiterte Beschreibung]. (ASSETS-34918)
-
-### [!DNL Forms]
-
-* **Unterstützung für OAuth-Anmeldedaten**: Eine neue und benutzerfreundlichere Berechtigung für die Server-zu-Server-Authentifizierung, die die vorhandene JWT-Berechtigung (Service Account) ersetzt. (NPR-41994)
-* [Verbesserungen des Regeleditors in AEM Forms](/help/forms/using/rule-editor-core-components.md):
-   * Unterstützung für die Implementierung verschachtelter Bedingungen mit `When-then-else`-Funktionalität.
-   * Überprüfen oder Zurücksetzen von Panels und Formularen, einschließlich Feldern.
-   * Unterstützung für moderne JavaScript-Funktionen wie Let- und Pfeilfunktionen (ES10-Unterstützung) innerhalb der benutzerdefinierten Funktionen.
-* [AutoTag-API für PDF-Barrierefreiheit](/help/forms/using/aem-document-services-programmatically.md#doc-utility-services-doc-utility-services): AEM Forms auf OSGi unterstützt jetzt die neue AutoTag-API zur Verbesserung von PDFs entsprechend den Barrierefreiheitsstandards durch Hinzufügen von Tags: Absätze und Listen. Dadurch werden PDFs für Benutzende mit Hilfstechnologien leichter zugänglich.
-* **16-Bit-PNG-Unterstützung**: Der ImageToPdf-Dienst von PDF Generator unterstützt jetzt die Konversion von PNGs mit einer 16-Bit-Farbtiefe.
-* **Anwenden von Artefakten auf einzelne Textblöcke in XDPs**: Mit Forms Designer können Benutzende jetzt Einstellungen für einzelne Textblöcke in XDP-Dateien konfigurieren. Mit dieser Funktion können Sie die Elemente steuern, die in den resultierenden PDFs als Artefakte behandelt werden. Diese Elemente – wie Kopf- und Fußzeilen – werden für Hilfstechnologien verfügbar gemacht. Zu den Hauptfunktionen gehören das Markieren von Textbausteinen als Artefakte und das Einbetten dieser Einstellungen in die XDP-Metadaten. Der Ausgabe-Service von Forms wendet diese Einstellungen während der PDF-Erstellung an und stellt dabei ein ordnungsgemäßes PDF/UA-Tagging sicher.
-* **AEM Forms Designer ist nach dem Standard `GB18030:2022` zertifiziert**: Mit der Zertifizierung `GB18030:2022` unterstützt Forms Designer jetzt den chinesischen Unicode-Zeichensatz, was die Eingabe chinesischer Zeichen in alle bearbeitbaren Felder und Dialogfelder ermöglicht.
-* Der PDF Generator-Dienst auf dem JEE-Server unterstützt jetzt [die WebToPDF-Route](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings) zum Konvertieren von HTML in PDF, neben den vorhandenen WebKit- und reinen Windows-WebCapture-Routen. Während die WebToPDF-Route bereits auf OSGi verfügbar war, wurde sie auf JEE erweitert. Jetzt unterstützt der PDF Generator-Dienst sowohl auf JEE- als auch auf OSGi-Plattformen die folgenden Routen über verschiedene Betriebssysteme hinweg:
-   * **Windows**: WebKit, WebCapture, WebToPDF
-   * **Linux®**: WebKit, WebToPDF
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
