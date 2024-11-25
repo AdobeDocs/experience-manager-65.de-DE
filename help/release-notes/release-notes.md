@@ -45,7 +45,7 @@ Zu den wichtigsten Funktionen und Verbesserungen in dieser Version gehören:
 
 ### Sites {#sites}
 
-[Der universelle Editor](/help/sites-developing/universal-editor/introduction.md) ist jetzt in AEM 6.5 für Headless-Anwendungsfälle mit der Anwendung eines Feature Packs verfügbar.
+[Der universelle Editor](/help/sites-developing/universal-editor/introduction.md) ist jetzt in AEM 6.5 für Headless-Anwendungsfälle verfügbar, wenn ein Feature Pack angewendet wird.
 
 ### [!DNL Assets]
 
