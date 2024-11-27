@@ -6,9 +6,9 @@ feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 917723f89c037756a74fef9a54df9237d4283c1d
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2098'
+ht-degree: 100%
 
 ---
 
@@ -38,13 +38,13 @@ Bevor Sie den Smart Content Service verwenden, führen Sie Folgendes aus:
 
 **Neue Benutzende**
 
-Installieren Sie Service Pack 22. Um die OAuth-Integration auf Service Pack 22 zu unterstützen, müssen Sie den [Hotfix für Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip) installieren.
+Installieren Sie Service Pack 22. Um die OAuth-Integration auf Service Pack 22 zu unterstützen, müssen Sie den [Hotfix für Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip) installieren.
 
 Befolgen Sie die in diesem Artikel beschriebenen Anweisungen zum Einrichten von Smart Content Services.
 
 **Vorhandene Benutzende**
 
-Wenn Sie auf Service Pack 21 aktualisiert haben, installieren Sie das [Hotfix für Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip), um die OAuth-Integration zu unterstützen. Jede vorhandene Konfiguration wird automatisch gelöscht. Befolgen Sie die Anweisungen in diesem Artikel, um Smart Content Services einzurichten. Wenn Sie auf Service Pack 22 aktualisieren, müssen Sie dieses [Hotfix für Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip) installieren.
+Wenn Sie ein Upgrade auf Service Pack 21 durchgeführt haben, installieren Sie den [Hotfix für Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip), um die OAuth-Integration zu unterstützen. Jede vorhandene Konfiguration wird automatisch gelöscht. Befolgen Sie die in diesem Artikel beschriebenen Anweisungen zum Einrichten von Smart Content Services. Wenn Sie ein Upgrade auf Service Pack 22 durchführen, müssen Sie diesen [Hotfix für Service Pack 22 installieren](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip).
 
 Für Service Pack 20 und älter müssen Sie die Problemumgehungsschritte für SCS ausführen, damit die OAuth-Integration unterstützt wird. Siehe [Fehlerbehebung für Smart-Tags hinsichtlich OAuth-Anmeldedaten](config-oauth.md).
 
@@ -58,7 +58,7 @@ Smart Content Services ist für neue On-Premise-Benutzende von [!DNL Experience 
 
 Vorhandene On-Premise-Benutzende, die diese Funktion bereits aktiviert haben, können Smart Content Services weiterhin nutzen.
 
-Wenn Sie auf Service Pack 21 aktualisiert haben, installieren Sie das [Hotfix für Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip), um die OAuth-Integration zu unterstützen. Jede vorhandene Konfiguration wird automatisch gelöscht. Befolgen Sie die Anweisungen in diesem Artikel, um Smart Content Services einzurichten. Wenn Sie auf Service Pack 22 aktualisieren, müssen Sie dieses [Hotfix für Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip) installieren.
+Wenn Sie ein Upgrade auf Service Pack 21 durchgeführt haben, installieren Sie den [Hotfix für Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip), um die OAuth-Integration zu unterstützen. Jede vorhandene Konfiguration wird automatisch gelöscht. Befolgen Sie die in diesem Artikel beschriebenen Anweisungen zum Einrichten von Smart Content Services. Wenn Sie ein Upgrade auf Service Pack 22 durchführen, müssen Sie diesen [Hotfix für Service Pack 22 installieren](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip).
 
 Für Service Pack 20 und älter müssen Sie die Problemumgehungsschritte für SCS ausführen, damit die OAuth-Integration unterstützt wird. Siehe [Fehlerbehebung für Smart-Tags hinsichtlich OAuth-Anmeldedaten](config-oauth.md).
 
