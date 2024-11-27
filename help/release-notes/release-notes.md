@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 source-git-commit: e3b96392f656b6dcbd583c18a343b56d4371c4ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4733'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 97%
 
 ## Wichtige Funktionen und Verbesserungen
 
-Zu den wichtigsten Funktionen und Verbesserungen in dieser Version gehören:
+Einige wichtige Funktionen und Verbesserungen, die in dieser Version enthalten sind:
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -140,7 +140,7 @@ Bei der Verwendung von Inhaltsfragmenten mit mehrzeiligen Textfeldelementen behi
 
 * Experience Fragments werden nicht wie erwartet nach Titel sortiert, wenn in der Listenansicht auf die Spaltenüberschrift **Titel** geklickt wird. Es ist ein schnelles Flackern des Bildschirms zu beobachten, doch die Sortierung erfolgt nicht. (SITES-23706)
 
-* In AEM 6.5.17 trat beim Konvertieren einer Seitenkomponente in ein Experience Fragment mithilfe der vordefinierten Funktion ein Problem auf. Nach der Konvertierung erschien das Experience Fragment während der Bearbeitung leer, obwohl es auf der Seite, auf der es verwendet wurde, korrekt angezeigt wurde. Das Problem resultierte aus der falschen Knotenerstellung: Der Komponentenknoten wurde außerhalb des Stammknotens/Container platziert, wodurch die Struktur der Vorlage verletzt wurde. Sie mussten den Komponentenknoten manuell in den richtigen Stamm-/Container-Knoten verschieben, um die Bearbeitbarkeit des Fragments wiederherzustellen. (SITES-22974)
+* In AEM 6.5.17 trat beim Konvertieren einer Seitenkomponente in ein Experience Fragment mithilfe der vordefinierten Funktion ein Problem auf. Nach der Konvertierung erschien das Experience Fragment während der Bearbeitung leer, obwohl es auf der Seite, auf der es verwendet wurde, korrekt angezeigt wurde. Ursache des Problems war eine fehlerhafte Knotenerstellung: Der Komponentenknoten wurde außerhalb des Stamm- bzw. Container-Knotens platziert und verletzte somit die Struktur der Vorlage. Der Komponentenknoten musste manuell in den richtigen Stamm- bzw. Container-Knoten verschoben werden, damit das Fragment wieder bearbeitet werden konnte. (SITES-22974)
 
 * Nach der Migration von AEM 6.5.11 zu 6.5.20 wurden Cloud-Konfigurationen für Experience Fragments nicht mehr korrekt gespeichert. Obwohl die Konfigurationen in `crx/de` gespeichert zu werden schienen, wurden sie beim erneuten Öffnen der Konfigurationskonsole nicht angezeigt, was auf ein Problem mit der Persistenz hinweist. (SITES-22287)
 
@@ -174,16 +174,16 @@ Die LinkCheckerTask-Authentifizierung schlägt fehl, da der HTTP-Client vor der 
 
 #### Replikation{#sites-replication-6522}
 
-In AEM 6.5.18 und 6.5.19 wurden beim Deaktivieren einer übergeordneten Seite für jede untergeordnete Seite mehrere Deaktivierungsanfragen generiert. Dieses Problem hat auch die Massenrückgängigmachung der Veröffentlichung der GraphQL-Endpunkte verhindert. (NPR-42075 &amp; NPR42010)
+In AEM 6.5.18 und 6.5.19 wurden beim Deaktivieren einer übergeordneten Seite für jede untergeordnete Seite mehrere Deaktivierungsanfragen generiert. Dieses Problem hat auch die Massenrückgängigmachung der Veröffentlichung der GraphQL-Endpunkte verhindert. (NPR-42075 und NPR-42010)
 
 
 ### [!DNL Assets]{#assets-6522}
 
 * Bei Verwendung der Funktion „Connected Assets“ sind die in AEM Assets vorgenommenen Aktualisierungen nicht in der AEM Sites-Umgebung zu sehen. (ASSETS-42344)
-* Probleme mit dem Asset-Veröffentlichungsstatus, wenn Sie Assets innerhalb des Experience Managers von einem Speicherort an einen anderen verschieben. (ASSETS-41158)
+* Probleme mit dem Asset-Veröffentlichungsstatus, wenn Assets in Experience Manager von einem Speicherort an einen anderen verschoben werden. (ASSETS-41158)
 * Das Hochladen von Assets mit der API führt zur Fehlermeldung `unclosed resource resolver`. (ASSETS-41049)
-* Probleme mit der `AssetReferenceResolverImpl`-Referenzabfrage nach einem Upgrade auf Adobe Experience Manager Service Pack 21. (ASSETS-40384)
-* In AEM Version 6.5.19 werden beim Entfernen einer Option aus den Suchbereichsergebnissen auch alle anderen verfügbaren Kontrollkästchen deaktiviert. (ASSETS-37335)
+* Probleme mit der `AssetReferenceResolverImpl`-Referenzabfrage nach einem Upgrade auf Adobe Experience Manager Service Pack 21. (ASSETS-40384)
+* In AEM Version 6.5.19 werden beim Entfernen einer Option aus den Ergebnissen im Suchbereich auch alle anderen verfügbaren Kontrollkästchen deaktiviert. (ASSETS-37335)
 * Bei der Durchführung des Massen-Metadatenexports werden in der Excel-Ausgabe unbrauchbare Werte angezeigt. (ASSETS-37260)
 * Wenn Sie in AEM Version 6.5.19 eine SVG-Datei im UTF-8-Format hochladen, ist die Ausgabe verschwommen. (ASSETS-36616)
 * Die Option `Fetch original rendition for Dynamic Media Connected Assets` fehlt in der Konfiguration von Connected Assets. (ASSETS-41726)
@@ -511,7 +511,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 ### Bekannte Probleme bei AEM Sites {#known-issues-aem-sites-6522}
 
-* Inhaltsfragmente - Die Vorschau schlägt aufgrund des DoS-Schutzes für eine große Baumstruktur von Fragmenten fehl. Siehe den [KB-Artikel zu den standardmäßigen GraphQL Query Executor-Konfigurationsoptionen](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+* Die Vorschau von Inhaltsfragmenten schlägt aufgrund des DoS-Schutzes für eine umfassende Fragment-Baumstruktur fehl. Siehe den [KB-Artikel zu den standardmäßigen GraphQL Query Executor-Konfigurationsoptionen](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 
 ### Bekannte Probleme bei AEM Forms {#known-issues-aem-forms-6522}
