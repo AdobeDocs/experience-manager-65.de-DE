@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 3fa791c50b79a5d8f68dcc8414e14b59ca831d61
+source-git-commit: 27283286bd514c6f8902297cd9229b5e92a3c60d
 workflow-type: tm+mt
-source-wordcount: '6070'
+source-wordcount: '6089'
 ht-degree: 78%
 
 ---
@@ -59,7 +59,7 @@ Einige wichtige Funktionen und Verbesserungen, die in dieser Version enthalten s
 
 * [PDF/A-Compliance-Verbesserungen](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents): Jetzt können Benutzer PDF zu Archivierungszwecken in PDF/A-Formate (1a, 2a, 3a) konvertieren, während gleichzeitig die Barrierefreiheit gewährleistet und die Einhaltung dieser Normen überprüft wird.
 
-* **Unterstützung der automatischen Schriftgröße für statische PDF-Dokumente**: AEM Forms Designer unterstützt jetzt die Funktion zur automatischen Schriftgröße in .xdp-Dateien. Jetzt können Benutzer die automatische Skalierung für die Textfelder, numerischen Felder, Kennwortfelder und Datumszeitfelder in den XDPs angeben, um den Textfeldinhalt zu rendern, ohne diese Feldinhalte in statischen PDF-Dokumenten abschneiden zu müssen.
+* **Unterstützung für die automatische Skalierung von Schriftarten für statische PDF-Dokumente**: AEM Forms Designer, OutputService und FormsService unterstützen jetzt die automatische Skalierung von Schriftarten für statische PDF. Wenn der Benutzer die Schriftgröße 0 in der Vorlage für Felder wie Textfeld, numerisches Feld, Kennwortfeld oder Datumszeitfeld erwähnt, wird die Schriftgröße in diesen Feldern automatisch angepasst, ohne dass die Feldgröße selbst geändert wird. Um die Funktion zu verwenden, übergeben Benutzer eine Markierung in der benutzerdefinierten xci: `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`.
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -223,7 +223,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 -->
 
-#### Forms {#forms-bug-fixes-sp22}
+### Forms {#forms-bug-fixes-sp22}
 
 * Die URLs, die für Dateianhänge in gespeicherten Entwürfen in AEM Forms generiert wurden, spiegeln nicht die konfigurierten Apache Sling Resource Resolver Factory-Zuordnungen wider. (FORMS-16949)
 * Wenn ein Benutzer von AEM Forms Service Pack 19 (6.5.19.0) eine Vorschau eines Briefs anzeigt, wird der Inhalt nicht richtig ausgerichtet, da die Leerzeichen fehlen und das Zeichen &quot;x&quot;an einigen Stellen angezeigt wird. (FORMS-16670)
