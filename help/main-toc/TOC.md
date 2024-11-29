@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: f3dda5271c0d3bdd9d23bc26f3b5abe50fc1b90a
-workflow-type: ht
-source-wordcount: '7454'
-ht-degree: 100%
+source-git-commit: bf750ddc14ce083a949c57322e0bc45594e66311
+workflow-type: tm+mt
+source-wordcount: '7477'
+ht-degree: 99%
 
 ---
 
@@ -624,6 +624,8 @@ ht-degree: 100%
       + [Regeleditor](/help/forms/using/rule-editor-core-components.md)
       + [Erstellen und Verwenden einer benutzerdefinierten Funktion in Kernkomponenten für adaptive Formulare](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [Erstellen und Verwenden von benutzerdefinierten Fehler-Handlern für auf Kernkomponenten basierende adaptive Formulare](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
+      + [Hinzufügen von Versionen, Kommentaren und Anmerkungen zu einem adaptiven Formular](/help/forms/using/add-versioning-reviews-comments.md)
+      + [Vergleichen adaptiver Formulare](/help/forms/using/compare-forms-core-components.md)
    + Adaptiv Forms- einfaches Authoring {#adaptive-forms-basic-authoring}
       + [Best Practices für die Arbeit mit adaptiven Formularen](/help/forms/using/adaptive-forms-best-practices.md)
       + [Erstellen eines adaptiven Formulars](/help/forms/using/creating-adaptive-form.md)
@@ -631,6 +633,8 @@ ht-degree: 100%
       + [Adaptive Formularfragmente](/help/forms/using/adaptive-form-fragments.md)
       + [Konfigurieren der Sendeaktion](/help/forms/using/configuring-submit-actions.md)
       + [Verwenden von CAPTCHA in adaptiven Formularen](/help/forms/using/captcha-adaptive-forms.md)
+      + [Verwenden von Captcha in adaptiven Formularen](/help/forms/using/integrate-adaptive-forms-hcaptcha.md)
+      + [Verwenden von Turnstile Captcha in adaptiven Formularen](/help/forms/using/integrate-adaptive-forms-turnstile.md)
       + [Adaptive Formulare Suchbegriffe](/help/forms/using/adaptive-forms-keywords.md)
       + [Tabellen in adaptiven Formularen](/help/forms/using/adaptive-forms-tables.md)
       + [Diagramme in adaptiven Formularen](/help/forms/using/adaptive-form-charts.md)

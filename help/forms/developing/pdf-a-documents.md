@@ -9,10 +9,10 @@ role: Developer
 exl-id: 966c3554-25df-4467-866e-11c43cc15b58
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 4df88fc37b86b6ff3b3a9b788c91b61e2aa7b07f
 workflow-type: tm+mt
-source-wordcount: '2331'
-ht-degree: 100%
+source-wordcount: '2347'
+ht-degree: 99%
 
 ---
 
@@ -36,6 +36,8 @@ Sie können den DocConverter-Service verwenden, um ein PDF-Dokument in ein PDF/A
 Die PDF/A-1-Spezifikation besteht aus den Konformitätsstufen A und B. Der Hauptunterschied zwischen den beiden besteht in Bezug auf die Unterstützung der logischen Struktur (Barrierefreiheit), die für Konformitätsstufe B nicht erforderlich ist. Unabhängig von der Konformitätsstufe bestimmt PDF/A-1, dass alle Schriftarten in das generierte PDF/A-Dokument eingebettet sind. Derzeit wird bei der Gültigkeitsprüfung (und Konvertierung) nur PDF/A-1b unterstützt.
 
 PDF/A ist zwar der Standard für die Archivierung von PDF-Dokumenten, es ist jedoch nicht erforderlich, dass PDF/A zur Archivierung verwendet wird, wenn ein standardmäßiges PDF-Dokument den Anforderungen Ihrer Firma entspricht. Der PDF/A-Standard dient der Erstellung einer PDF-Datei, die für die langfristige Archivierung und Dokumentenerhaltung bestimmt ist.
+
+Zu den unterstützten PDF/A-Compliance-Standards gehören PDF/A-1a, 1b, 2a, 2b, 3a und 3b.
 
 >[!NOTE]
 >
@@ -164,7 +166,7 @@ Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument anhand der DocConverter-A
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Dokuments verwendet, das in ein PDF/A-Dokument konvertiert wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des PDF-Dokuments und den Modus zum Öffnen der Datei enthält.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie die Inhalte des Byte-Arrays seiner `binaryData`-Eigenschaft zuweisen.
 
