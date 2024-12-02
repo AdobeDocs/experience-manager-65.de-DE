@@ -1,5 +1,5 @@
 ---
-title: „Integration von [!DNL Experience Manager Assets] mit  [!DNL Adobe Workfront]“
+title: Integration von [!DNL Experience Manager Assets] mit  [!DNL Adobe Workfront]
 description: Einführung in die Integration zwischen [!DNL Assets] und [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Workfront Integrations and Apps

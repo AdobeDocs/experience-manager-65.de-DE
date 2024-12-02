@@ -1,5 +1,5 @@
 ---
-title: '„Tutorial: Erstellen eines adaptiven Formulars“'
+title: 'Schulung: Erstellen eines adaptiven Formulars'
 description: Lernen Sie, ein adaptives Formular zu erstellen, zu gestalten und in der Vorschau anzuzeigen.  Informieren Sie sich auch über das Konfigurieren von Sendeaktionen.
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605

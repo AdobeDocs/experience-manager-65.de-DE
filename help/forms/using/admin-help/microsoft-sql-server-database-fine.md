@@ -1,5 +1,5 @@
 ---
-title: "Microsoft SQL Server-Datenbank: Konfiguration optimieren"
+title: 'Microsoft SQL Server-Datenbank: Konfiguration optimieren'
 description: Erfahren Sie, wie Sie die Konfiguration Ihrer Microsoft SQL Server-Datenbank optimieren können.
 contentOwner: admin
 content-type: reference

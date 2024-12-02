@@ -1,5 +1,5 @@
 ---
-title: „[!DNL Adobe Camera Raw]-Unterstützung für die Verarbeitung digitaler Assets“
+title: '[!DNL Adobe Camera Raw] Unterstützung für die Verarbeitung digitaler Assets'
 description: Erfahren Sie, wie Sie die  [!DNL Adobe Camera Raw] -Unterstützung in [!DNL Adobe Experience Manager Assets] aktivieren
 contentOwner: AG
 role: Admin
@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '340'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 

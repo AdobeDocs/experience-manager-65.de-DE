@@ -1,6 +1,6 @@
 ---
 title: Mobile-Apps
-description: "Mobile-Apps"
+description: Mobile-Apps
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE

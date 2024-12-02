@@ -1,5 +1,5 @@
 ---
-title: "IBM DB2-Datenbank: Befehle zur regelmäßigen Wartung ausführen"
+title: 'IBM DB2-Datenbank: Ausführen von Befehlen zur regelmäßigen Wartung'
 description: Das Dokument listet IBM DB2-Befehle auf, die für die regelmäßige Wartung Ihrer AEM Forms-Datenbank empfohlen werden.
 contentOwner: admin
 content-type: reference

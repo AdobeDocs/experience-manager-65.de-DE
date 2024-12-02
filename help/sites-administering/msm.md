@@ -1,5 +1,5 @@
 ---
-title: '„Wiederverwenden von Inhalten: Multi Site Manager und Live Copy“'
+title: 'Wiederverwenden von Inhalten: Multi Site Manager und Live Copy'
 description: Erfahren Sie mehr über die Wiederverwendung von Inhalten mit Live Copies und dem Multi Site Manager.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES

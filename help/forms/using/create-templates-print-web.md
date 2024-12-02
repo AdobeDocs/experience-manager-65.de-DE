@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Erstellen Sie Vorlagen"
+title: 'Tutorial: Erstellen Sie Vorlagen'
 description: Erstellen Sie Druck- und Webvorlagen für die interaktive Kommunikation
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

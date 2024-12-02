@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Erstellen einer interaktiven Kommunikation "
+title: 'Tutorial: Erstellen einer interaktiven Kommunikation '
 description: Erstellen Sie eine interaktive Kommunikation mit allen Bausteinen
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

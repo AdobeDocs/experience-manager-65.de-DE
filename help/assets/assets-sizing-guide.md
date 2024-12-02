@@ -1,5 +1,5 @@
 ---
-title: „Anleitung zur Dimensionierung in [!DNL Assets]“
+title: Anleitung zur Dimensionierung in [!DNL Assets]
 description: Best Practices zur Bestimmung effizienter Metriken zur Schätzung der für die Bereitstellung von  [!DNL Adobe Experience Manager Assets] erforderlichen Infrastruktur und Ressourcen.
 contentOwner: AG
 role: Architect, Admin

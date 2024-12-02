@@ -1,5 +1,5 @@
 ---
-title: '„DB2®-Datenbank: Wöchentliche Ausführung eines Prozesses“'
+title: 'DB2&reg; Datenbank: Prozess wöchentlich ausführen'
 description: Erfahren Sie, wie Sie die Leistung Ihrer AEM Forms-DB2®-Datenbank verbessern können.
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '148'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 

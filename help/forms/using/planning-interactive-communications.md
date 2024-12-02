@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Interaktive Kommunikation planen"
+title: 'Tutorial: Planen einer interaktiven Kommunikation'
 description: Planen Sie Ihre interaktive Kommunikation
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

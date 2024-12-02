@@ -1,5 +1,5 @@
 ---
-title: "Anleitung: Veröffentlichen Sie Ihr adaptives Formular"
+title: 'Tutorial: Veröffentlichen des adaptiven Formulars'
 description: Veröffentlichen Sie das adaptive Formular als AEM-Seite, betten Sie es auf einer AEM Sites-Seite ein, oder betten Sie das adaptive Formular in eine externe Webseite ein
 contentOwner: khsingh
 topic-tags: introduction

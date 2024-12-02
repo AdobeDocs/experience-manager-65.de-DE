@@ -1,5 +1,5 @@
 ---
-title: '„Correspondence Management: Fehlerbehebung“'
+title: 'Correspondence Management: Fehlerbehebung'
 description: Erfahren Sie, wie Sie Fehler beheben können, die beim Speichern eines Briefs in einer AEM Forms-Umgebung auftreten.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

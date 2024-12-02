@@ -1,5 +1,5 @@
 ---
-title: „[!DNL Assets]-Proxy-Entwicklung“
+title: '[!DNL Assets]-Proxy-Entwicklung'
 description: Ein Proxy ist eine [!DNL Experience Manager] -Instanz, die Proxy-Worker verwendet, um Aufträge zu verarbeiten. Erfahren Sie, wie Sie einen  [!DNL Experience Manager] -Proxy konfigurieren und einen benutzerdefinierten Proxy-Worker entwickeln können, und erhalten Sie Informationen zu unterstützten Vorgängen und Proxy-Komponenten.
 contentOwner: AG
 role: Admin, Architect

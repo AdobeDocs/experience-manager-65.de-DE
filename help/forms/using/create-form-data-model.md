@@ -1,5 +1,5 @@
 ---
-title: "Schulung: Formulardatenmodell erstellen "
+title: 'Schulung: Formulardatenmodell erstellen '
 description: Erfahren Sie, wie Sie MySQL als Datenquelle konfigurieren, ein Formulardatenmodell (FDM) erstellen, es konfigurieren und für AEM Forms testen.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS

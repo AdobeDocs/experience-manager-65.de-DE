@@ -1,5 +1,5 @@
 ---
-title: '„Tutorial: Erstellen eines Formulardatenmodells in AEM Forms“'
+title: 'Tutorial: Erstellen eines Formulardatenmodells in AEM Forms'
 description: Erstellen eines Formulardatenmodells für interaktive Kommunikation
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

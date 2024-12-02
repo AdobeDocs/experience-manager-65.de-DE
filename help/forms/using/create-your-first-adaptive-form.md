@@ -1,5 +1,5 @@
 ---
-title: '„Tutorial: Erstellen Sie Ihr erstes adaptives Formular“'
+title: 'Tutorial: Erstellen Sie Ihr erstes adaptives Formular'
 description: Lernen Sie, wie Sie Business-Class-, interaktive und Responsive-Formulare erstellen.
 topic-tags: introduction
 docset: aem65

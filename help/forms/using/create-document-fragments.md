@@ -1,5 +1,5 @@
 ---
-title: '„Tutorial: Erstellen von Dokumentfragmenten“'
+title: 'Tutorial: Erstellen Sie Dokumentfragmente'
 description: Erstellen von Dokumentfragmenten für die interaktive Kommunikation
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
