@@ -1,5 +1,5 @@
 ---
-title: Installieren und Konfiguration von Designer
+title: Designer installieren und konfigurieren
 description: Designer ist als eigenständiges Installationsprogramm sowie als Teil von WorkBench verfügbar. Erfahren Sie, wie Sie Designer als eigenständige Anwendung installieren.
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 89f807e1d31c5588d86e50160b0149e00422b78c
 workflow-type: tm+mt
 source-wordcount: '811'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 97%
 >
 >* Die 64-Bit-Version von Designer wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt. 
 >* Die 32-Bit-Version des Designers wird seit der Veröffentlichung von [AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) nicht mehr unterstützt.
-> * Die unterstützten Plattformen für Forms Designer stimmen mit den von AEM Forms unterstützten Plattformen überein. Um mehr über die unterstützten Plattformen für Forms Designer zu erfahren, klicken Sie [hier](/help/forms/using/aem-forms-jee-supported-platforms.md).
+> * Die unterstützten Plattformen für Forms Designer sind auf die von AEM Forms unterstützten Plattformen ausgerichtet. Weitere Informationen zu den unterstützten Plattformen für Forms Designer finden Sie [hier](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Weitere Informationen zur Installation von Forms Designer finden Sie unter [Häufig gestellte Fragen](#fandq).
 
