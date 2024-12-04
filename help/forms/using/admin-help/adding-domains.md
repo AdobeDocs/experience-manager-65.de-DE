@@ -9,21 +9,23 @@ exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: eac8a82c78d7f209512d32e7fcd7083bbebf1cb5
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 100%
+source-wordcount: '941'
+ht-degree: 96%
 
 ---
 
 # Hinzufügen von Domains {#adding-domains}
+
+Stellen Sie sicher, dass der Benutzer über Administratorberechtigungen für den Zugriff auf die Admin Console verfügt.
 
 ## Hinzufügen einer Unternehmens-Domain {#add-an-enterprise-domain}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Klicken Sie auf „Neue Unternehmens-Domain“.
 1. Geben Sie in das Feld „ID“ einen eindeutigen Bezeichner für die Domain und in das Feld „Name“ einen beschreibenden Namen für die Domain ein. (Siehe [Wichtige Einstellungen für Domain-Namen und IDs](adding-domains.md#important-considerations-for-domain-names-and-ids).)
-1. Geben Sie an, ob die Kontosperrung aktiviert werden soll.  (Siehe [Konfigurieren der Einstellungen für die Kontosperrung ](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) Standardmäßig ist „Kontosperrung aktivieren“ ausgewählt.
+1. Geben Sie an, ob die Kontosperrung aktiviert werden soll.  (Siehe [Einstellungen für die Kontosperrung konfigurieren](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) Standardmäßig ist &quot;Kontosperrung aktivieren&quot;ausgewählt.
 1. Klicken Sie auf „Authentifizierung hinzufügen“ und wählen Sie in der Liste der Authentifizierungsanbieter einen der Authentifizierungsmethode Ihres Unternehmens entsprechenden Anbieter aus.  Mögliche Werte sind LDAP, Kerberos, SAML oder ein benutzerdefinierter Authentifizierungsanbieter.
 
    Wenn Sie LDAP auswählen, können Sie den in Ihrer Ordnerkonfiguration angegebenen LDAP-Server verwenden. Sie können aber auch einen anderen LDAP-Server auswählen, der zur Authentifizierung verwendet werden soll.  Wenn Sie einen anderen Server auswählen, müssen Ihre Benutzenden auf beiden LDAP-Servern vorhanden sein.
@@ -39,7 +41,7 @@ Nach dem Erstellen einer Unternehmens-Domain müssen Sie den Ordner manuell sync
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Klicken Sie auf „Neue lokale Domain“.
 1. Geben Sie in das Feld ID einen eindeutigen Bezeichner für die Domain ein und in das Feld Name einen beschreibenden Namen für die Domain. (Siehe [Wichtige Einstellungen für Domain-Namen und IDs](adding-domains.md#important-considerations-for-domain-names-and-ids).)
-1. Geben Sie an, ob die Kontosperrung aktiviert werden soll, und klicken Sie auf „OK“.  (Siehe [Konfigurieren der Einstellungen für die Kontosperrung](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) Standardmäßig ist „Kontosperrung aktivieren“ ausgewählt.
+1. Geben Sie an, ob die Kontosperrung aktiviert werden soll, und klicken Sie auf „OK“.  (Siehe [Einstellungen für die Kontosperrung konfigurieren](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) Standardmäßig ist &quot;Kontosperrung aktivieren&quot;ausgewählt.
 
 ## Hybrid-Domain hinzufügen {#add-a-hybrid-domain}
 
