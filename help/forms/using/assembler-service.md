@@ -10,9 +10,9 @@ exl-id: 84c8125d-0f16-432a-9567-63b868667537
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 2eac9acd8b92582424557222b673211b29a15185
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2159'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -204,11 +204,11 @@ fragment="myFragment"/>
 </DDX>
 ```
 
-#### Auflösen von Referenzen im CRX-Repository {#resolve-references-on-crx-repository}
+#### Auflösen von Verweisen im CRX-Repository {#resolve-references-on-crx-repository}
 
-Sie können die Quellreferenz, die Sie auflösen möchten, selektiv angeben, indem Sie den CRX-Pfad der
-Fragmentverweis in der XDP-Quelle. Im folgenden Beispiel werden auch die Fragmente
-aufgelöst.
+Sie können den Quellverweis selektiv angeben, den Sie auflösen möchten, indem Sie den CRX-Pfad des
+Fragmentverweises in der XDP-Quelle angeben. Im unten angegebenen Beispiel werden die enthaltenen Fragmente
+ebenfalls aufgelöst.
 
 ```xml
 <DDX xmlns="http://ns.adobe.com/DDX/1.0/"

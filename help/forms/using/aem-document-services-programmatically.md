@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
 source-git-commit: 9eb74c1b95837d977b8abe9614421a0a2c0be73e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6448'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -5065,15 +5065,15 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
 
 #### Automatisches Taggen von PDF-Dokumenten {#auto-tag-api}
 
-Die Auto Tag PDF-API verbessert die Barrierefreiheit von PDF, indem Tags zu Dokumenten hinzugefügt werden, wodurch die Einhaltung von Barrierefreiheitsstandards gewährleistet wird. Dies verbessert nicht nur das Benutzererlebnis, sondern sorgt auch für Genauigkeit und Konsistenz in allen Dokumenten. Die Auto-Tag-API unterstützt das Tagging der folgenden Elemente:
+Die API zum automatischen Taggen von PDF-Dokumenten optimiert die Barrierefreiheit von PDF-Dateien, indem Dokumenten Tags hinzugefügt werden, wodurch die Einhaltung von Barrierefreiheitsstandards gewährleistet wird. Dies verbessert nicht nur das Anwendererlebnis, sondern sorgt auch für Genauigkeit und Konsistenz in allen Dokumenten. Die API zum automatischen Taggen unterstützt das Tagging der folgenden Elemente:
 
 * Textblöcke (Absätze)
 * Aufzählungslisten in einem Operator
-* Inhaltsverzeichnis
+* Inhaltsverzeichnisse
 
 ![PDF-Dokument mit automatischem Tagging](assets/auto-tag-api.png)
 
-Das folgende Java-Codebeispiel zeigt, wie eine PDF-Datei in ein getaggtes PDF-Dokument konvertiert wird.
+Das folgende Java-Code-Beispiel zeigt, wie eine PDF-Datei in ein mit Tags versehenes PDF-Dokument konvertiert wird.
 
 **Syntax**: `Document tag(final Document inDoc)`
 

@@ -7,9 +7,9 @@ user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Mana
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
 source-git-commit: bf750ddc14ce083a949c57322e0bc45594e66311
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7477'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -633,7 +633,7 @@ ht-degree: 99%
       + [Adaptive Formularfragmente](/help/forms/using/adaptive-form-fragments.md)
       + [Konfigurieren der Sendeaktion](/help/forms/using/configuring-submit-actions.md)
       + [Verwenden von CAPTCHA in adaptiven Formularen](/help/forms/using/captcha-adaptive-forms.md)
-      + [Verwenden von Captcha in adaptiven Formularen](/help/forms/using/integrate-adaptive-forms-hcaptcha.md)
+      + [Verwenden von hCaptcha in adaptiven Formularen](/help/forms/using/integrate-adaptive-forms-hcaptcha.md)
       + [Verwenden von Turnstile Captcha in adaptiven Formularen](/help/forms/using/integrate-adaptive-forms-turnstile.md)
       + [Adaptive Formulare Suchbegriffe](/help/forms/using/adaptive-forms-keywords.md)
       + [Tabellen in adaptiven Formularen](/help/forms/using/adaptive-forms-tables.md)
