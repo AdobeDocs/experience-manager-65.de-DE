@@ -3,22 +3,19 @@ title: Wie wird Captcha&reg; in einem AEM 6.5 Forms verwendet?
 description: Mit dem hCaptcha®-Dienst können Sie die Formularsicherheit optimieren. Schrittweise Anleitung enthalten!
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: a4e155de8a4f60d3746cecea110466b1d5d44dbb
+exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
+source-git-commit: 25dfe85048184e34cc3afb5e7b08cc0e2f054a01
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 25%
+source-wordcount: '846'
+ht-degree: 27%
 
 ---
 
 # Verbinden Ihrer AEM Forms-Umgebung mit Captcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
 <!--
-
-<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
+<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
 -->
-
-<span class="preview"> Diese Funktion befindet sich im Programm für frühe Anwender. Wenn Sie Interesse haben, an unserem frühen Zugriffsprogramm für diese Funktion teilzunehmen, senden Sie eine E-Mail von Ihrer offiziellen Adresse an aem-forms-ea@adobe.com , um den Zugriff zu beantragen </span>
 
 CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine herausfordernde Aufgabe und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
 
