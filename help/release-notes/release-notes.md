@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 26c1fe9d032729dd8d1737c922c4b2fab55f2d48
+source-git-commit: 9c58545406bc539dbd0c224b3c88365d3851deb8
 workflow-type: tm+mt
 source-wordcount: '6085'
 ht-degree: 99%
@@ -250,7 +250,13 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
    * Verbesserung des LC-Aktualisierungsauftrags, um den Aktualisierungsprozess zu verbessern und gleichzeitig einen stabilen Übergang zwischen Versionen zu gewährleisten.
    * Verbesserung des Rights Management-Auftrags, um die Dokumentenverarbeitung und verbesserte Rights Management-Funktionen sicherzustellen.
    * Verbesserung des Prozessverwaltungsauftrags für zuverlässigere Auftragsverarbeitung und Systemverwaltung.
+* Ab AEM Forms OSGi 6.5.22 führt der renderPDFForm-Vorgang des Forms-Dienstes keine reinen Client-Skripte (runAt=client) auf dem Server aus, sondern nur die mit runAt=server oder runAt=both markierten Skripte werden wie in der folgenden Tabelle beschrieben ausgeführt. (FORMS-16564)
 
+  | Skript markiert runAt | Wird auf dem Server ausgeführt |
+  |---------------------|-------------------------|
+  | Server | ja |
+  | both | ja |
+  | client | nein |
 
 #### XMLFM {#forms-xmlfm-sp22}
 
@@ -615,14 +621,6 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 * Änderungen am XDP von verschachtelten Layout-Fragmenten in einer interaktiven Kommunikation werden nicht im Editor für interaktive Kommunikationen angezeigt. (FORMS-16575)
 * In der Druckvorschau der Agent-Benutzeroberfläche für interaktive Kommunikationen werden einige berechnete Werte nicht korrekt angezeigt. (FORMS-16603)
 * Wenn der Brief in der Druckvorschau angezeigt wird, ändert sich der Inhalt. Einige Leerzeichen verschwinden und bestimmte Buchstaben werden durch „x“ ersetzt. (FORMS-15681)
-* Ab AEM Forms OSGi 6.5.22 führt der renderPDFForm-Vorgang des Forms-Dienstes keine reinen Client-Skripte (runAt=client) auf dem Server aus, sondern nur die mit runAt=server oder runAt=both markierten Skripte werden wie in der folgenden Tabelle beschrieben ausgeführt. (FORMS-16564)
-
-  | Skript markiert runAt | Wird auf dem Server ausgeführt |
-  |---------------------|-------------------------|
-  | Server | ja |
-  | both | ja |
-  | client | nein |
-
 * Wenn Benutzende eine WebLogic 14c-Instanz konfigurieren, schlägt der PDFG-Dienst in AEM Forms Service Pack 21 (6.5.21.0) on JEE, der auf JBoss ausgeführt wird, aufgrund von Classloader-Konflikten mit der SLF4J-Bibliothek fehl. Der Fehler wird wie folgt angezeigt (CQDOC-22178):
 
   ```java

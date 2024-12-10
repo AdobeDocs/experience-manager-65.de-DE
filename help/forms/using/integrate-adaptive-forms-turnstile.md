@@ -4,9 +4,9 @@ description: Verbessern Sie die Formularsicherheit mit dem Turnstile-Dienst müh
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
+source-git-commit: 4a0e8def5bafd4d90f50bf4b34a537c51e09ce27
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '842'
 ht-degree: 21%
 
 ---
@@ -77,13 +77,13 @@ Führen Sie die folgenden Schritte aus, um AEM Forms in den Turnstile-Dienst zu 
 1. Wählen Sie ein adaptives Formular aus und klicken Sie auf **[!UICONTROL Eigenschaften]**. Wählen Sie in **[!UICONTROL Konfigurations-Container]** Ihre Cloud-Konfiguration für Turnstile® aus.
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
-   Wenn Sie über keinen solchen Konfigurations-Container verfügen, finden Sie im Abschnitt [Verbinden Ihrer AEM Forms-Umgebung mit Turnstile](#connect-your-forms-environment-with-turnstile-service) Informationen zum Erstellen eines Konfigurations-Containers.
+   Wenn Sie keinen Konfigurations-Container zum Konfigurieren des Captcha-Dienstes haben, erfahren Sie im Abschnitt [Konfigurieren der Turnstile](#configure-turnstile-steps-to-configure-hcaptcha) , wie Sie einen Konfigurations-Container erstellen.
 
    ![Auswählen eines Konfigurations-Containers](assets/captcha-properties.png)
 
 1. Wählen Sie ein adaptives Formular aus und klicken Sie auf **[!UICONTROL Bearbeiten]** , um das adaptive Formular im Editor zu öffnen.
 1. Ziehen Sie die **[!UICONTROL CAPTCHA]**-Komponente im Komponentenbrowser in das adaptive Formular und legen Sie sie dort ab.
-1. Wählen Sie die Komponente **[!UICONTROL Turnstile des adaptiven Formulars]** aus und klicken Sie auf das Symbol &quot;Eigenschaften&quot;![Symbol &quot;Eigenschaften&quot;](assets/configure-icon.svg). Dadurch wird das Dialogfeld „Eigenschaften“ geöffnet. Geben Sie die folgenden Eigenschaften an:
+1. Wählen Sie die Komponente **[!UICONTROL Captcha]** aus und klicken Sie auf das Symbol für die Eigenschaften ![Eigenschaften-Symbol](assets/configure-icon.svg) . Dadurch wird das Dialogfeld „Eigenschaften“ geöffnet. Geben Sie die folgenden Eigenschaften an:
 
    <!--![Turnstile v2](assets/turnstile-settings-v2.png)-->
    ![Turnstile der Cloudfare-Version 1](assets/turnstile-setting-v1.png)
@@ -95,7 +95,8 @@ Führen Sie die folgenden Schritte aus, um AEM Forms in den Turnstile-Dienst zu 
    * **[!UICONTROL Konfigurationseinstellungen]:** Wählen Sie Ihre Cloud-Konfiguration für Turnstile® aus.
      >[!NOTE]
      >Sie können für einen ähnlichen Zweck mehrere Cloud-Konfigurationen in Ihrer Umgebung haben. Wählen Sie den Dienst daher sorgfältig aus. Wenn kein Dienst aufgelistet ist, finden Sie unter [Verbinden Ihrer AEM Forms-Umgebung mit Turnstile](#connect-your-forms-environment-with-turnstile-service) Informationen zum Erstellen eines Cloud Service, der Ihre AEM Forms-Umgebung mit dem Turnstile-Dienst verbindet.
-   * **Fehlermeldung:** Geben Sie die Fehlermeldung an, die dem Benutzer angezeigt werden soll, wenn die Captcha-Übermittlung fehlschlägt.
+
+   * **[!UICONTROL Fehlermeldung]:** Geben Sie die Fehlermeldung an, die dem Benutzer angezeigt werden soll, wenn die Captcha-Übermittlung fehlschlägt.
    * **Captcha-Größe:** Sie können die Anzeigegröße des Chaptcha®-Challenger-Dialogfelds auswählen. Verwenden Sie die Option **[!UICONTROL Kompakt]** , um eine kleine Größe anzuzeigen, und die Option **[!UICONTROL Normal]**, um ein relativ großes Chaptcha®-Anforderungsdialogfeld anzuzeigen.
 
 1. Wählen Sie **[!UICONTROL Fertig]**.
