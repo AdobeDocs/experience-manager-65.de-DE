@@ -4,18 +4,16 @@ description: Verbessern Sie die Formularsicherheit mit dem Turnstile-Dienst müh
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: ab92f0a4c89f6c523539ccc048ea2d88b930936c
+source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 20%
+source-wordcount: '846'
+ht-degree: 21%
 
 ---
 
 # AEM Forms-Umgebung mit Turnstile verbinden {#connect-your-forms-environment-with-turnstile-service}
 
-<!--
-<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
--->
+<span class="preview">Diese Funktion basiert auf der Feature-Umschalter-ID `FT_FORMS-12407`. Um die Funktion zu aktivieren, führen Sie die Schritte aus, die im Artikel [Umschalter für Funktionen aktivieren](/help/forms/using/enable-feature-toggle.md) beschrieben sind. </span>
 
 CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine herausfordernde Aufgabe und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
 
@@ -84,7 +82,7 @@ Führen Sie die folgenden Schritte aus, um AEM Forms in den Turnstile-Dienst zu 
    ![Auswählen eines Konfigurations-Containers](assets/captcha-properties.png)
 
 1. Wählen Sie ein adaptives Formular aus und klicken Sie auf **[!UICONTROL Bearbeiten]** , um das adaptive Formular im Editor zu öffnen.
-1. Ziehen Sie die Komponente **[!UICONTROL Turnstile des adaptiven Formulars]** aus dem Komponenten-Browser in das adaptive Formular oder fügen Sie sie hinzu.
+1. Ziehen Sie die **[!UICONTROL CAPTCHA]**-Komponente im Komponentenbrowser in das adaptive Formular und legen Sie sie dort ab.
 1. Wählen Sie die Komponente **[!UICONTROL Turnstile des adaptiven Formulars]** aus und klicken Sie auf das Symbol &quot;Eigenschaften&quot;![Symbol &quot;Eigenschaften&quot;](assets/configure-icon.svg). Dadurch wird das Dialogfeld „Eigenschaften“ geöffnet. Geben Sie die folgenden Eigenschaften an:
 
    <!--![Turnstile v2](assets/turnstile-settings-v2.png)-->

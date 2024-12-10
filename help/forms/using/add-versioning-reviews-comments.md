@@ -3,20 +3,21 @@ title: Fügen Sie dem adaptiven Formular in AEM 6.5 Versionen, Kommentare und An
 description: Verwenden Sie AEM 6.5 Kernkomponenten für adaptive Formulare, um einem adaptiven Formular Kommentare, Anmerkungen und Versionierungen hinzuzufügen.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: a4e155de8a4f60d3746cecea110466b1d5d44dbb
+source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 50%
+source-wordcount: '593'
+ht-degree: 53%
 
 ---
 
 # Versionierung, Überprüfung und Kommentierung eines adaptiven Formulars
 
 <!--
-<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
+
 -->
 
-<span class="preview"> Diese Funktion befindet sich im Programm für frühe Anwender. Wenn Sie Interesse haben, an unserem frühen Zugriffsprogramm für diese Funktion teilzunehmen, senden Sie eine E-Mail von Ihrer offiziellen Adresse an aem-forms-ea@adobe.com , um den Zugriff zu beantragen </span>
 
 Kernkomponenten für adaptive Formulare ermöglichen es Formularverfassern, Formularen Versionierung, Kommentare und Anmerkungen hinzuzufügen. Diese Funktionen vereinfachen die Formularentwicklung, indem sie es Benutzern ermöglichen, mehrere Versionen zu erstellen und zu verwalten, durch Kommentare zusammenzuarbeiten und Anmerkungen zu bestimmten Formularabschnitten hinzuzufügen, wodurch die Formularerstellung verbessert wird.
 
