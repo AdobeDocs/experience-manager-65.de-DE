@@ -4,17 +4,20 @@ description: Mit dem hCaptcha®-Dienst können Sie die Formularsicherheit optimi
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
-source-git-commit: 96e6705349fc6969ab0c40c8c770c9a0d1967619
+source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 28%
+source-wordcount: '872'
+ht-degree: 27%
 
 ---
 
 # Verbinden Ihrer AEM Forms-Umgebung mit Captcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
-<span class="preview">Diese Funktion basiert auf der Feature-Umschalter-ID `FT_FORMS-12407`. Um die Funktion zu aktivieren, führen Sie die Schritte aus, die im Artikel [Umschalter für Funktionen aktivieren](/help/forms/using/enable-feature-toggle.md) beschrieben sind. </span>
+<!--
+<span class="preview">This feature is based on Feature Toggle id `FT_FORMS-12407`. To enable the feature, follow the steps given in the [Enable Feature Toggle](/help/forms/using/enable-feature-toggle.md) article. </span>
+-->
 
+<span class="preview">Diese Funktion ist standardmäßig nicht aktiviert. Sie können von Ihrer offiziellen Adresse an aem-forms-ea@adobe.com schreiben, um Zugriff auf die Funktion anzufordern.</span>
 
 CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine herausfordernde Aufgabe und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
 
@@ -68,12 +71,12 @@ Führen Sie die folgenden Schritte aus, um AEM Forms mit dem Captcha®-Dienst zu
 
    Sobald der hCAPTCHA-Dienst konfiguriert ist, steht er zur Verwendung in Ihrem adaptiven Formular zur Verfügung.
 
-## Verwenden von Captcha® in einem adaptiven Forms {#using-hCaptcha-in-aem-6.5}
+## Verwenden von Captcha® in einem adaptiven Formular {#using-hCaptcha-in-aem-6.5}
 
 1. Öffnen Sie Ihre AEM Forms-Umgebung.
 1. Gehen Sie zu **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 1. Wählen Sie ein adaptives Formular aus und klicken Sie auf **[!UICONTROL Eigenschaften]**.
-1. Wählen Sie im **[!UICONTROL Konfigurations-Container]** Ihre Cloud-Konfiguration für Captcha® aus.
+1. Wählen Sie im **[!UICONTROL Konfigurations-Container]** den Konfigurationscontainer aus, der die Cloud-Konfiguration enthält, die AEM Forms mit Captcha verbindet.
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
    Wenn Sie keinen Konfigurations-Container für Captcha haben, erfahren Sie im Abschnitt [Verbinden Ihrer AEM Forms-Umgebung mit Captcha®](#configure-hcaptcha-steps-to-configure-hcaptcha) , wie Sie einen Konfigurations-Container erstellen.

@@ -3,10 +3,11 @@ title: Vergleichen Sie zwei verschiedene adaptive Formulare.
 description: Vergleichen Sie zwei unterschiedliche Formulare basierend auf den Feldern, Inhalten und Formularkomponenten.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
+exl-id: bcd6e9cf-b33b-4468-8b99-0da196f65eaa
+source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 8%
+source-wordcount: '202'
+ht-degree: 7%
 
 ---
 
@@ -15,6 +16,8 @@ ht-degree: 8%
 <!--
 <span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
 -->
+
+<span class="preview">Diese Funktion ist standardmäßig nicht aktiviert. Sie können von Ihrer offiziellen Adresse an aem-forms-ea@adobe.com schreiben, um Zugriff auf die Funktion anzufordern.</span>
 
 Mit der Funktion &quot;Vergleichen&quot;in den Kernkomponenten der adaptiven Forms können Formularautoren Unterschiede zwischen zwei Formularen identifizieren, indem sie Felder, Inhalte und Komponenten analysieren.
 
