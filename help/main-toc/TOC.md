@@ -7,9 +7,9 @@ user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Mana
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
 source-git-commit: 5827cf69222962243cfebdc9c41eb73f90ac950a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7480'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -506,7 +506,7 @@ ht-degree: 99%
       + [Konfigurieren von [!DNL enhanced connector] für [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
 + Formulare {#forms}
    + Versionshinweise {#release-notes-new-features}
-      + [Neuerungen](/help/forms/using/whats-new.md)
+      + [Neue Funktionen](/help/forms/using/whats-new.md)
       + [Häufig gestellte Fragen](/help/forms/using/frequently-asked-questions-faq.md)
    + Erste Schritte {#getting-started}
       + [Einführung in AEM Forms](/help/forms/using/introduction-aem-forms.md)
@@ -626,7 +626,7 @@ ht-degree: 99%
       + [Erstellen und Verwenden von benutzerdefinierten Fehler-Handlern für auf Kernkomponenten basierende adaptive Formulare](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
       + [Hinzufügen von Versionen, Kommentaren und Anmerkungen zu einem adaptiven Formular](/help/forms/using/add-versioning-reviews-comments.md)
       + [Vergleichen adaptiver Formulare](/help/forms/using/compare-forms-core-components.md)
-      + [Umschalten zwischen Funktionen aktivieren](/help/forms/using/enable-feature-toggle.md)
+      + [Umschalter für Funktionen aktivieren](/help/forms/using/enable-feature-toggle.md)
    + Adaptiv Forms- einfaches Authoring {#adaptive-forms-basic-authoring}
       + [Best Practices für die Arbeit mit adaptiven Formularen](/help/forms/using/adaptive-forms-best-practices.md)
       + [Erstellen eines adaptiven Formulars](/help/forms/using/creating-adaptive-form.md)
