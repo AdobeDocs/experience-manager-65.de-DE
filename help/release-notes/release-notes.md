@@ -9,7 +9,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 source-git-commit: 64bc2ecbb2b5ef5847af4449562240a7c1ec45e9
 workflow-type: tm+mt
 source-wordcount: '6146'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -258,11 +258,11 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
    * Verbesserung des Prozessverwaltungsauftrags für zuverlässigere Auftragsverarbeitung und Systemverwaltung.
 * Ab AEM Forms OSGi 6.5.22 führt der renderPDFForm-Vorgang des Forms-Dienstes keine reinen Client-Skripte (runAt=client) auf dem Server aus, sondern nur die mit runAt=server oder runAt=both markierten Skripte werden wie in der folgenden Tabelle beschrieben ausgeführt. (FORMS-16564)
 
-  | Skript markiert runAt | Wird auf dem Server ausgeführt |
+  | Skript markiert mit runAt | Wird auf dem Server ausgeführt |
   |---------------------|-------------------------|
   | Server | ja |
-  | both | ja |
-  | client | nein |
+  | beide | ja |
+  | Client | nein |
 
 #### XMLFM {#forms-xmlfm-sp22}
 
