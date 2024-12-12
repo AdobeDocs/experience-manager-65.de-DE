@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 source-git-commit: 64bc2ecbb2b5ef5847af4449562240a7c1ec45e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6146'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 99%
 
 Einige wichtige Funktionen und Verbesserungen, die in dieser Version enthalten sind:
 
-#### Neue GA-Funktionen in AEM Forms {#ga-aem-forms-sp22}
+#### Neue, allgemein verfügbare Funktionen in AEM Forms {#ga-aem-forms-sp22}
 
 * Die Einbettung von Schriftarten in [interaktive Kommunikations-Batch-APIs](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel) wird jetzt unterstützt: Interaktive Kommunikationen unterstützen jetzt das Einbetten von Adobe Ming- und Adobe Myungjo-Schriftarten in PDFs, die durch das Batch-API generiert wurden. Diese Verbesserung sorgt für eines genaues Rendering von Text in generierten Dokumenten, auch wenn Schriftartuntergruppen verwendet werden, und bietet eine verbesserte Unterstützung für mehrsprachige Inhalte in PDF-Ausgaben.
 
@@ -57,7 +57,7 @@ Einige wichtige Funktionen und Verbesserungen, die in dieser Version enthalten s
 
 #### Neue Beta-Funktionen in AEM Forms {#beta-aem-forms-sp22}
 
-Die Beta-Funktion bietet Ihnen eine einzigartige Möglichkeit, exklusiven Zugriff auf innovative Innovationen zu erhalten und ihre Entwicklung zu gestalten. Möchten Sie eine Beta-Funktion für Ihre Umgebungen aktivieren? Senden Sie eine E-Mail von Ihrer offiziellen Adresse an aem-forms-ea@adobe.com mit der Liste der Funktionen, die Sie interessieren.
+Die Beta-Funktion bietet Ihnen die einmalige Möglichkeit, exklusiven Zugriff auf aktuelle Innovationen zu erhalten und deren Entwicklung mitzugestalten. Möchten Sie eine Beta-Funktion für Ihre Umgebungen aktivieren? Senden Sie von Ihrer offiziellen E-Mail-Adresse eine Nachricht an aem-forms-ea@adobe.com mit der Liste der Funktionen, an denen Sie interessiert sind.
 
 * [hCaptcha-](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) und [Cloudfare Turnstile Captcha-Dienste](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms unterstützt die folgenden Captcha-Dienste:
    * hCaptcha schützt Formulare vor Bots, Spam und automatisiertem Missbrauch, indem Benutzende zum Ausfüllen eines Kontrollkästchen-Widgets aufgefordert werden. Dadurch wird sichergestellt, dass nur menschliche Benutzende fortfahren, und die Sicherheit für Online-Transaktionen wird erhöht.
