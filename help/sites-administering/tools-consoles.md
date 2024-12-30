@@ -1,5 +1,5 @@
 ---
-title: Die Tools-Konsolen
+title: 'Die Tools-Konsolen '
 description: Erfahren Sie mehr über die verschiedenen Tools-Konsolen in AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES

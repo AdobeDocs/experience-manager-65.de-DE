@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen von Adobe Analytics zu einer Mobile App
-description: Auf dieser Seite erfahren Sie, wie Sie Mobile App Analytics in Ihren Adobe Experience Manager-Apps verwenden können, indem Sie sie in Adobe Mobile Services integrieren.
+title: Adobe Analytics zu Ihrer Mobile App hinzufügen
+description: Auf dieser Seite erfahren Sie, wie Sie Mobile App Analytics in Ihren Adobe Experience Manager-Apps verwenden können, indem Sie es mit Adobe Mobile Services integrieren.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -16,41 +16,41 @@ ht-degree: 2%
 
 ---
 
-# Hinzufügen von Adobe Analytics zu einer Mobile App{#add-adobe-analytics-to-your-mobile-application}
+# Adobe Analytics zu Ihrer Mobile App hinzufügen{#add-adobe-analytics-to-your-mobile-application}
 
 >[!NOTE]
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Möchten Sie ansprechende und relevante Erlebnisse für Ihre Mobile App-Benutzer erstellen? Wenn Sie das Adobe Mobile Services SDK nicht verwenden, um den Lebenszyklus und die Nutzung von Anwendungen zu überwachen und zu messen, worauf basieren Sie dann auf Ihren Entscheidungen? Wo sind Ihre treusten Kunden? Wie können Sie garantieren, dass Sie relevant bleiben und Konversionen optimieren?
+Möchten Sie ansprechende und relevante Erlebnisse für Benutzer Ihrer Mobile App erstellen? Wenn Sie die Adobe Mobile Services SDK nicht zur Überwachung und Messung des Anwendungslebenszyklus und der Anwendungsnutzung verwenden, worauf gründen Sie dann Ihre Entscheidungen? Wo sind Ihre treuesten Kunden? Wie können Sie garantieren, dass Sie relevant bleiben und Konversionen optimieren?
 
-Haben Ihre Benutzer Zugriff auf alle Inhalte? Verlassen sie die App, und wenn ja, wo? Wie oft bleiben sie in der App und wie oft kommen sie zurück, um die App zu verwenden? Welche Änderungen können eingeführt und dann gemessen werden, um die Bindung zu erhöhen? Wie sieht es mit den Absturzraten aus, stürzt Ihre App für Ihre Benutzer ab?
+Greifen Ihre Benutzer auf den gesamten Inhalt zu? Geben sie die App auf und wenn ja, wo? Wie oft bleiben sie in der App und wie oft kommen sie zurück, um die App zu verwenden? Welche Änderungen können eingeführt und dann gemessen werden, um die Kundenbindung zu erhöhen? Wie steht es mit Absturzraten? Stürzt Ihre Mobile App für Ihre Benutzer ab?
 
-Nutzen Sie die Vorteile von [Mobile App Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) in Ihren Adobe Experience Manager (AEM)-Apps durch die Integration mit [Adobe Mobile Services](https://business.adobe.com/products/campaign/mobile-marketing.html).
+Nutzen Sie [Mobile App Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) in Ihren Adobe Experience Manager (AEM) Apps durch die Integration mit [Adobe Mobile Services](https://business.adobe.com/products/campaign/mobile-marketing.html).
 
-Instrumentieren Sie Ihre AEM-Apps, um zu verfolgen, darüber zu berichten und zu verstehen, wie Ihre Benutzer mit Ihrer mobilen App und Ihren Inhalten interagieren, und um wichtige Lebenszyklusmetriken wie Starts, Zeit in der App und Absturzhäufigkeit zu messen.
+Instrumentieren Sie Ihre AEM-Apps, um zu verfolgen, Berichte zu erstellen und zu verstehen, wie Ihre Benutzerinnen und Benutzer mit Ihrer Mobile App und Ihren Inhalten interagieren, und um wichtige Lebenszyklusmetriken wie Starts, Zeit in der App und Absturzrate zu messen.
 
 In diesem Abschnitt wird beschrieben, wie AEM *Entwickler*:
 
-* Mobile Analytics in Ihre Mobile App integrieren
-* Testen Sie Ihr Analytics-Tracking mit Bloodhound.
+* Integrieren von Mobile Analytics in Ihre Mobile App
+* Analytics-Tracking mit Bloodhound testen
 
 ## Voraussetzungen {#prerequisties}
 
-AEM Mobile benötigt ein Adobe Analytics-Konto, um Tracking-Daten in Ihrer App zu erfassen und zu melden. Im Rahmen der Konfiguration muss der AEM *Administrator* zuerst:
+AEM Mobile erfordert ein Adobe Analytics-Konto, um Tracking-Daten in Ihrer App zu erfassen und zu melden. Im Rahmen der Konfiguration muss der AEM *Administrator* zuerst:
 
-* Richten Sie ein Adobe Analytics-Konto ein und erstellen Sie eine Report Suite für Ihre Anwendung in Mobile Services.
-* Konfigurieren Sie einen AMS-Cloud Service in Adobe Experience Manager (AEM).
+* Richten Sie ein Adobe Analytics-Konto ein und erstellen Sie eine Report Suite für Ihre Mobile App in Mobile Services.
+* AMS-Cloud Service in Adobe Experience Manager (AEM) konfigurieren.
 
-## Für Entwickler - Integration von Mobile Analytics in Ihre App {#for-developers-integrate-mobile-analytics-into-your-app}
+## Für Entwickler: Integrieren von Mobile Analytics in die App {#for-developers-integrate-mobile-analytics-into-your-app}
 
-### ContentSync zum Abrufen der Konfigurationsdatei konfigurieren {#configure-contentsync-to-pull-in-configuration-file}
+### Konfigurieren von ContentSync zum Abrufen der Konfigurationsdatei {#configure-contentsync-to-pull-in-configuration-file}
 
-Nachdem das Analytics-Konto eingerichtet wurde, erstellen Sie eine Konfiguration zur Inhaltssynchronisierung , um den Inhalt in Ihre Mobile App zu übernehmen.
+Erstellen Sie nach der Einrichtung des Analytics-Kontos eine Inhaltssynchronisierungskonfiguration, um den Inhalt in Ihre Mobile App zu übertragen.
 
-Weitere Informationen finden Sie unter Konfigurieren des Inhalts der Inhaltssynchronisierung . Die Konfiguration muss die Inhaltssynchronisierung anweisen, um die ADBMobileConfig im Verzeichnis /www abzulegen. In der Geometrixx Outdoors App ist beispielsweise die Konfiguration für die Inhaltssynchronisierung unter: */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. Es gibt auch eine Konfiguration für die Entwicklung. Es ist jedoch identisch mit der Nicht-Entwicklungs-Konfiguration, wenn Geometrixx Outdoors vorhanden sind.
+Weitere Informationen finden Sie unter Konfigurieren des Inhaltssynchronisierungsinhalts . Die Konfiguration muss Content Sync anweisen, die ADBMobileConfig in das Verzeichnis /www abzulegen. In der Geometrixx Outdoors-App befindet sich die Inhaltssynchronisierungskonfiguration beispielsweise unter: */content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*. Es gibt auch eine Konfiguration für die Entwicklung. Sie ist jedoch mit der Nicht-Entwicklungskonfiguration identisch, wenn Geometrixx Outdoors vorhanden sind.
 
-Weitere Informationen zum Herunterladen der ADBMobileConfig über das Dashboard für Mobile Apps AEM Apps finden Sie unter Analytics - Mobile Services - Adobe Mobile Services SDK-Konfigurationsdatei.
+Weitere Informationen zum Herunterladen von ADBMobileConfig von Ihrem Dashboard für Mobile-App-AEM-Apps finden Sie unter Analytics - Mobile Services - Adobe Mobile Services SDK Config File.
 
 ```xml
 <jcr:root xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"
@@ -62,11 +62,11 @@ Weitere Informationen zum Herunterladen der ADBMobileConfig über das Dashboard 
     type="mobileADBMobileConfigJSON"/>
 ```
 
-Für jede Plattform muss ADBMobileConfig an einen bestimmten Speicherort kopiert werden.
+Für jede Plattform muss die ADBMobileConfig an einen bestimmten Speicherort kopiert werden.
 
-Beim Erstellen mit der PhoneGap-CLI kann dies mit Cordova-Build-Hook-Skripten durchgeführt werden. Dies ist in der Geometrixx Outdoors App unter:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.* zu sehen.
+Beim Erstellen mit der PhoneGap-CLI kann dies mit einem Cordova-Build-Hook-Skript erfolgen. Dies ist in der Geometrixx Outdoors-App unter folgender Adresse zu sehen:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
-Für iOS muss die Datei in den Ordner &quot;**Resources**&quot;des XCode-Projekts kopiert werden (z. B. &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Wenn die App für Android™ vorgesehen ist, lautet der Pfad, in den kopiert werden soll, &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Weitere Informationen zur Verwendung von Hooks während des PhoneGap-CLI-Builds finden Sie unter [Drei Hooks für Ihr Cordova-/PhoneGap-Projekt benötigen](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
+Für iOS muss die Datei in das Verzeichnis **Resources“ des XCode** Projekts kopiert werden (z. B. &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json„). Wenn die App für Android™ vorgesehen ist, lautet der Pfad zum Kopieren &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Weitere Informationen zur Verwendung von Erweiterungspunkten während der PhoneGap-CLI-Erstellung finden Sie unter [Drei Erweiterungspunkte, die Ihr Cordova/PhoneGap-Projekt benötigt](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
 
 ```xml
 ///////////////////////////
@@ -89,7 +89,7 @@ Für iOS muss die Datei in den Ordner &quot;**Resources**&quot;des XCode-Projekt
 
 ### Hinzufügen des AMS-Plug-ins in der App {#add-the-ams-plugin-in-the-app}
 
-Damit die App die Daten erfassen kann, muss das Adobe Mobile Services (AMS)-Plug-in als Teil der App enthalten sein. Indem Sie das Plug-in als Funktion in die config.xml der App einfügen, kann ein weiterer Cordova-Erweiterungspunkt verwendet werden, um das Plug-in während des PhoneGap-Build-Prozesses automatisch hinzuzufügen.
+Damit die App die Daten erfassen kann, muss das AMS-Plug-in (Adobe Mobile Services) in die App aufgenommen werden. Indem Sie das Plug-in als Funktion in die config.xml der App aufnehmen, kann ein anderer Cordova-Hook verwendet werden, um das Plug-in während des PhoneGap-Build-Prozesses automatisch hinzuzufügen.
 
 ```xml
 <feature name="ADBMobile">
@@ -97,29 +97,29 @@ Damit die App die Daten erfassen kann, muss das Adobe Mobile Services (AMS)-Plug
 </feature>
 ```
 
-Die Geometrixx Outdoors App config.xml befindet sich unter */content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-content/phonegap/www/config.xml*. Im obigen Beispiel wird eine bestimmte Version des Plug-ins angefordert, indem ein &quot;#&quot;hinzugefügt und anschließend ein Tag-Wert nach der Plug-in-URL eingefügt wird. Dies ist eine Best Practice, um sicherzustellen, dass nicht erwartete Probleme nicht auftreten, da nicht getestete Plug-ins während eines Builds hinzugefügt werden.
+Die Geometrixx Outdoors-App config.xml befindet sich unter */content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-content/phonegap/www/config.xml*. Im obigen Beispiel wird die Verwendung einer bestimmten Version des Plug-ins angefordert, indem nach der Plug-in-URL ein &#39;#&#39; und dann ein Tag-Wert hinzugefügt werden. Dies ist eine gute Vorgehensweise, um sicherzustellen, dass keine unerwarteten Probleme auftreten, da während eines Builds nicht getestete Plug-ins hinzugefügt werden.
 
-Nachdem Sie diese Schritte ausgeführt haben, kann Ihre App alle von Adobe Analytics bereitgestellten Lebenszyklusmetriken melden. Dazu gehören Daten wie Starts, Abstürze und Installationen. Wenn es die einzigen Daten sind, die Ihnen wichtig sind, dann sind Sie fertig. Wenn Sie benutzerdefinierte Daten erfassen möchten, müssen Sie Ihren Code instrumentieren.
+Nachdem Sie diese Schritte ausgeführt haben, kann Ihre App alle von Adobe Analytics bereitgestellten Lebenszyklusmetriken melden. Dazu gehören Daten wie Starts, Abstürze und Installationen. Wenn das die einzigen Daten sind, die einem wichtig sind, dann seid ihr fertig. Wenn Sie benutzerdefinierte Daten erfassen möchten, müssen Sie Ihren Code instrumentieren.
 
-### Instrumentieren Ihres Codes für das vollständige App-Tracking {#instrument-your-code-for-full-app-tracking}
+### Instrumentieren des Codes für das vollständige App-Tracking {#instrument-your-code-for-full-app-tracking}
 
-Es gibt mehrere Tracking-APIs, die in der [AMS PhoneGap-Plug-in-API](https://github.com/Adobe-Marketing-Cloud/mobile-services/blob/master/docs/ios/phonegap/phonegap-methods.md) bereitgestellt werden.
+In der AMS Phonegap-Plug-in[API sind mehrere Tracking-APIs verfügbar](https://github.com/Adobe-Marketing-Cloud/mobile-services/blob/master/docs/ios/phonegap/phonegap-methods.md)
 
-Auf diese Weise können Sie Status und Aktionen verfolgen, z. B., wohin Seiten Ihre Benutzer in Ihrer App navigieren und welche Steuerelemente am häufigsten verwendet werden. Die einfachste Möglichkeit, Ihre App für das Tracking zu instrumentieren, besteht in der Verwendung der Analytics-APIs, die vom AMS-Plug-in bereitgestellt werden.
+Auf diese Weise können Sie Status und Aktionen verfolgen, z. B. wo Ihre Benutzerinnen und Benutzer in Ihrer App zu Seiten navigieren, welche Steuerelemente am häufigsten verwendet werden. Die einfachste Möglichkeit, Ihre App für das Tracking zu instrumentieren, besteht in der Verwendung der Analytics-APIs, die vom AMS-Plug-in bereitgestellt werden.
 
 * ADB.trackState()
 * ADB.trackAction()
 
-Sehen Sie sich den Code in der Geometrixx Outdoors App an. In der Geometrixx Outdoors App wird die gesamte Seitennavigation mithilfe der ADB.trackState() -Methode verfolgt. Weitere Informationen finden Sie im Quellcode für /libs/mobileapps/components/angular/ng-page/clientlibs/app-navigation.js
+Sehen Sie sich als Referenz den Code in der Geometrixx Outdoors-App an. In der Geometrixx Outdoors-App wird die gesamte Seitennavigation mit der Methode ADB.trackState() verfolgt. Weitere Informationen finden Sie im Quellcode für /libs/mobileapps/components/angular/ng-page/clientlibs/app-navigation.js
 
-Durch die Instrumentierung Ihres Quellcodes mit diesen Methodenaufrufen können Sie vollständige Metriken für Ihre Anwendung erfassen.
+Indem Sie Ihren Quell-Code mit diesen Methodenaufrufen instrumentieren, können Sie vollständige Metriken für Ihr Programm erfassen.
 
 #### Eigenschaften für die Verbindung mit AMS {#properties-for-connecting-to-ams}
 
-*com.adobe.cq.mobile.mobileservices.impl.service.MobileServicesHttpClientImp* l legt die folgenden Eigenschaften für die Verbindung mit AMS offen:
+*com.adobe.cq.mobile.mobileservices.impl.service.MobileServicesHttpClientImp* l macht die folgenden Eigenschaften für die Verbindung mit AMS verfügbar:
 
-| **Beschriftung** | **Beschreibung** | **Standard** |
+| **label** | **Beschreibung** | **Standard** |
 |---|---|---|
 | API-Endpunkt | Die Basis-URL der Adobe Mobile Services-HTTP-APIs | https://api.omniture.com |
-| Config Endpoint | Die URL, die zum Abrufen der ADB Mobile-Konfiguration für die jeweilige Report Suite-ID verwendet wird | /ams/1.0/app/config/ |
-| Mobile Service-Apps | Abrufen einer Liste von Apps im Benutzerunternehmen | /ams/1.0/apps |
+| config-Endpunkt | Die URL, die zum Abrufen der ADB Mobile-Konfiguration für die angegebene Report Suite-ID verwendet wird | /ams/1.0/app/config/ |
+| Mobile Service-Apps | Abrufen einer Liste von Apps innerhalb des Unternehmens der Benutzer | /ams/1.0/apps |

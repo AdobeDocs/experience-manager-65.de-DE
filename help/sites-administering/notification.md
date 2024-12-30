@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: bbd2bc3fa2ebdca111084450941439a37f79cd73
 workflow-type: tm+mt
 source-wordcount: '2149'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ This is an automatically generated message. Please do not reply.
 
 Die englische E-Mail-Vorlage für die Seitenbenachrichtigung können Sie wie folgt anpassen:
 
-1. Erstellen einer Überlagerung für [Seitenbenachrichtigungen](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
+1. Erstellen Sie eine Überlagerung für [Seitenbenachrichtigungen](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template).
 
 1. Öffnen Sie die Datei:
 
@@ -183,7 +183,7 @@ This is an automatically generated message. Please do not reply.
 
 Die englische E-Mail-Vorlage für die Benachrichtigung über ein Workflow-Ereignis können Sie wie folgt anpassen:
 
-1. Erstellen einer Überlagerung für [Workflow-Benachrichtigungen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
+1. Erstellen Sie eine Überlagerung für [Workflow-Benachrichtigungen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates).
 
 1. Öffnen Sie die Datei:
 
@@ -243,7 +243,7 @@ Die folgenden Variablen können innerhalb der E-Mail-Vorlage verwendet werden:
 
 So fügen Sie eine Vorlage für eine neue Sprache hinzu:
 
-1. Erstellen Sie je nach Bedarf eine [Überlagerung](/help/sites-developing/overlays.md).
+1. Erstellen Sie eine geeignete [Überlagerung](/help/sites-developing/overlays.md).
 
    * [Seitenbenachrichtigungen](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
    * [Workflow-Benachrichtigungen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)

@@ -6,7 +6,7 @@ role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 100%
 
@@ -57,11 +57,11 @@ Die Servlets haben berechnete Informationen auf Grundlage MSM-spezifischer Knote
 
 Die in diesen Eigenschaften enthaltenen Informationen sollten auf der Benutzeroberfläche angezeigt werden. Bei der Fehlerbehebung ist es jedoch hilfreich, das MSM-Verhalten direkt im Repository zu beobachten, wenn MSM-Aktionen auftreten.
 
-Die Kenntnis dieser Eigenschaften ist auch nützlich, um Abfragen an Ihr Repository zu senden und Sets von Seiten zu finden, die einen bestimmten Status aufweisen. Beispiel:
+Die Kenntnis dieser Eigenschaften ist auch nützlich, um Abfragen an Ihr Repository zu senden und Sets von Seiten zu finden, die einen bestimmten Status aufweisen. Zum Beispiel:
 
 * `select * from cq:LiveSync` gibt als Ergebnis alle Live Copy-Stammseiten zurück.
 
-## Häufig gestellte Fragen (FAQ) {#faq}
+## Häufig gestellte Fragen {#faq}
 
 Im Folgenden finden Sie einige häufig gestellte Fragen zu MSM und Live Copy.
 

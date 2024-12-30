@@ -1,6 +1,6 @@
 ---
 title: Best Practices für AEM Mobile On-demand Services
-description: Erfahren Sie mehr über Best Practices und Richtlinien, die kompetenten Adobe Experience Manager-Entwicklern (AEM) bei Sites helfen, die Vorlagen und Komponenten für mobile Apps erstellen möchten.
+description: Erfahren Sie mehr über Best Practices und Richtlinien, die kompetenten Adobe Experience Manager (AEM)-Entwicklerinnen und -Entwicklern für Sites helfen, die Mobile-App-Vorlagen und -Komponenten erstellen möchten.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -22,68 +22,68 @@ ht-degree: 4%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Das Erstellen einer AEM Mobile On-demand Services-App unterscheidet sich vom Erstellen einer App, die direkt in der Cordova- (oder PhoneGap-)Shell ausgeführt wird. Die Entwickler sollten mit folgenden Themen vertraut sein:
+Das Erstellen einer AEM Mobile On-demand Services-App unterscheidet sich vom Erstellen einer App, die direkt in der Cordova-Shell (oder PhoneGap) ausgeführt wird. Die Entwickler sollten mit den folgenden Themen vertraut sein:
 
-* Plugins, die standardmäßig unterstützt werden, und Adobe Experience Manager (AEM) Mobile-spezifische Plug-ins.
+* Standardmäßig unterstützte Plug-ins und Adobe Experience Manager (AEM) Mobile-spezifische Plug-ins.
 
 >[!NOTE]
 >
 >Ausführliche Informationen zu Plug-ins finden Sie in den folgenden Ressourcen:
 >
 >* [Verwenden von Cordova-Plug-ins in AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
->* [Verwenden von AEM Mobile-spezifischen Cordova-aktivierten Plug-ins](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
+>* [Verwenden von AEM Mobile-spezifischen Cordova-fähigen Plug-ins](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
 >
 
-* Vorlagen, die Plug-in-Funktionen verwenden, sollten so geschrieben werden, dass sie im Browser noch autorisiert werden können, ohne dass die Plug-in-Verbindung vorhanden ist.
+* Vorlagen, die Plug-in-Funktionen verwenden, sollten so geschrieben werden, dass sie weiterhin im Browser autorisiert werden können, ohne dass die Plug-in-Brücke vorhanden ist.
 
-   * Achten Sie beispielsweise darauf, auf die Funktion *device* zu warten, bevor Sie versuchen, auf die API eines Plug-ins zuzugreifen.
+   * Warten Sie beispielsweise auf die Funktion *deviceReady*, bevor Sie auf die API eines Plug-ins zugreifen.
 
-## Richtlinien für AEM Entwickler {#guidelines-for-aem-developers}
+## Richtlinien für AEM-Entwickler {#guidelines-for-aem-developers}
 
-Die folgenden Richtlinien helfen zuständigen AEM-Entwicklern bei Sites, die mobile App-Vorlagen und -Komponenten erstellen möchten:
+Die folgenden Richtlinien helfen kompetenten AEM-Entwicklerinnen und -Entwicklern für Sites, die Mobile-App-Vorlagen und -Komponenten erstellen möchten:
 
-**Struktur AEM Sites-Vorlagen zur Förderung der Wiederverwendung und Erweiterbarkeit**
+**Strukturieren Sie AEM-Site-Vorlagen, um die Wiederverwendung und Erweiterbarkeit zu fördern**
 
-* Mehrere Komponentenskriptdateien über eine einzige monolithische
+* Mehrere Komponentenskriptdateien sollten einer einzigen monolithischen Skriptdatei vorgezogen werden
 
-   * Es werden mehrere leere Erweiterungspunkte bereitgestellt, z. B. *customheaderlibs.html* und *customfooterlibs.html*, mit denen der Entwickler die Seitenvorlage ändern und so wenig Kerncode wie möglich duplizieren kann
-   * Vorlagen können dann über den Mechanismus *sling:resourceSuperType* von Sling erweitert und angepasst werden
+   * Es werden mehrere leere Erweiterungspunkte bereitgestellt, z. B. *customheaderlibs.html* und *customfooterlibs.html*, mit denen der Entwickler die Seitenvorlage ändern und dabei so wenig Kern-Code wie möglich duplizieren kann
+   * Vorlagen können dann über den Mechanismus „sling:resourceSuperType *von Sling erweitert und* werden
 
-* Sightly/HTL über JSP als Vorlagensprache bevorzugen
+* Sightly/HTL gegenüber JSP als Vorlagensprache bevorzugen
 
-   * Dadurch wird eine Trennung von Code und Markup gefördert, es bietet integrierten XSS-Schutz und eine vertrautere Syntax
+   * Die Verwendung dieser Option fördert die Trennung von Code und Markup, bietet integrierten XSS-Schutz und verfügt über eine vertrautere Syntax
 
-**Optimieren der Leistung auf dem Gerät**
+**Für Leistung auf dem Gerät optimieren**
 
-* Artikelspezifische Skript- und Stylesheets sollten in die Artikelnutzlast aufgenommen werden, indem die contentsync-Vorlage dps-article verwendet wird.
-* Skript- und Stylesheets, die von mehr als einem Artikel gemeinsam verwendet werden, sollten über die Vorlage &quot;dps-HTMLResources contentsync&quot;in gemeinsam genutzten Ressourcen enthalten sein
-* Referenzieren Sie keine externen Skripte, die Render-Blocking sind
+* Artikelspezifisches Skript und Stylesheets sollten mithilfe der Inhaltssynchronisierungsvorlage dps-article in die Artikel-Payload aufgenommen werden
+* Skript- und Stylesheets, die von mehr als einem Artikel gemeinsam verwendet werden, sollten über die Vorlage dps-HTMLResources contentSync in gemeinsame Ressourcen aufgenommen werden
+* Referenzieren Sie keine externen Skripte, die Render-Blocker sind
 
 >[!NOTE]
 >
->Weitere Informationen zum Rendern von blockierenden externen Skripten finden Sie [hier](https://developers.google.com/speed/docs/insights/BlockingJS).
+>Ausführlichere Informationen zum Blockieren externer Skripte für Render finden Sie [hier](https://developers.google.com/speed/docs/insights/BlockingJS).
 
-**Stellen Sie App-spezifische clientseitige JS- und CSS-Bibliotheken im Vergleich zu webspezifischen** vor
+**Bevorzugen Sie App-spezifische Client-seitige JS- und CSS-Bibliotheken gegenüber Web-spezifischen**
 
-* So vermeiden Sie Mehraufwand in Bibliotheken wie jQuery Mobile für die Verarbeitung einer großen Bandbreite von Geräten und Browsern
-* Wenn eine Vorlage in der Webansicht einer App ausgeführt wird, haben Sie die Kontrolle über die Plattformen und Versionen, die die App unterstützen wird, und über das Wissen, dass JavaScript-Support verfügbar sein wird. Nehmen wir beispielsweise an, dass Ionic (nur CSS) gegenüber jQuery Mobile und Onsen UI den Vorzug vor Bootstrap hat.
+* So vermeiden Sie Overhead in Bibliotheken wie jQuery Mobile für eine große Bandbreite an Geräten und Browsern
+* Wenn eine Vorlage in der Webansicht einer App ausgeführt wird, haben Sie die Kontrolle über die Plattformen und Versionen, die die App unterstützen wird, und über das Wissen, dass JavaScript-Unterstützung vorhanden ist. Beispielsweise sollten Sie Ionic (nur CSS) gegenüber jQuery Mobile und Onsen UI gegenüber Bootstrap bevorzugen.
 
 >[!NOTE]
 >
->Um mehr über jQuery Mobile zu erfahren, klicken Sie auf [hier](https://jquerymobile.com/browser-support/1.4/).
+>Um mehr über jQuery Mobile zu erfahren, klicken Sie [hier](https://jquerymobile.com/browser-support/1.4/).
 
-**Stellen Sie Mikrobibliotheken den Vorzug vor dem Vollstapel**
+**Mikrobibliotheken gegenüber Full-Stack bevorzugen**
 
-* Die Zeit, die benötigt wird, um Ihren Inhalt auf das Glas des Geräts zu bringen, wird von jeder Bibliothek verlangsamt, von der Ihre Artikel abhängen. Diese Verlangsamung wird verstärkt, wenn eine neue Webansicht zum Rendern jedes Artikels verwendet wird. Daher muss jede Bibliothek von Grund auf neu initialisiert werden
-* Wenn Ihre Artikel nicht als SPA (Einzelseiten-Apps) erstellt wurden, müssen Sie wahrscheinlich keine Vollstapelbibliothek wie Angular einfügen
-* Verwenden Sie kleinere, einseitige Bibliotheken, die dazu beitragen, die für Ihre Seite erforderliche Interaktivität hinzuzufügen, z. B. [Fastclick](https://github.com/ftlabs/fastclick) oder [Velocity.js](https://velocityjs.org)
+* Die Zeit, die benötigt wird, um Ihre Inhalte auf das Glas des Geräts zu bringen, wird von jeder Bibliothek verlangsamt, von der Ihre Artikel abhängen. Diese Verlangsamung wird noch verstärkt, wenn eine neue Web-Ansicht verwendet wird, um jeden Artikel zu rendern, sodass jede Bibliothek von Grund auf neu initialisiert werden muss
+* Wenn Ihre Artikel nicht als SPA (Single Page Apps) erstellt wurden, müssen Sie wahrscheinlich keine Full-Stack-Bibliothek wie Angular einfügen
+* Bevorzugen Sie kleinere, universelle Bibliotheken, die Ihnen helfen, die Interaktivität hinzuzufügen, die Ihre Seite erfordert, wie [Fastclick](https://github.com/ftlabs/fastclick) oder [Velocity.js](https://velocityjs.org)
 
-**Minimieren der Artikelnutzlast**
+**Minimieren der Größe der Artikel-Payload**
 
-* Verwenden Sie die kleinstmöglichen Assets, die mit einer angemessenen Auflösung effektiv den größten unterstützten Viewport abdecken können.
-* Verwenden Sie ein Tool wie *ImageOptim* für Ihre Bilder, damit Sie überschüssige Metadaten entfernen können.
+* Verwenden Sie möglichst kleine Assets, die effektiv den größten von Ihnen unterstützten Viewport mit einer angemessenen Auflösung abdecken können
+* Verwenden Sie ein Tool wie *ImageOptim* auf Ihren Bildern, damit Sie überschüssige Metadaten entfernen können
 
-## Erste Schritte {#getting-ahead}
+## Vorwärtskommen {#getting-ahead}
 
 Weitere Informationen zu den beiden anderen Rollen und Zuständigkeiten finden Sie in den folgenden Ressourcen:
 

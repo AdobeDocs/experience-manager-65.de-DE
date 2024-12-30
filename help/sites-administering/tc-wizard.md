@@ -1,5 +1,5 @@
 ---
-title: Assistent „Sprachkopie erstellen“
+title: 'Assistent „Sprachkopie erstellen“ '
 description: Erfahren Sie mehr über die Verwendung des Assistenten „Sprachkopie erstellen“ in Adobe Experience Manager.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7

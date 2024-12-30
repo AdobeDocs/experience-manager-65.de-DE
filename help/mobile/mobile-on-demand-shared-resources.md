@@ -1,6 +1,6 @@
 ---
 title: Hochladen freigegebener Ressourcen
-description: Inhaltsverwaltungsaktionen sind die Bausteine, mit denen Inhalte in einer Anwendung erstellt und verwaltet werden können. Auf dieser Seite erfahren Sie mehr über das Hochladen freigegebener Ressourcen.
+description: Content-Management-Aktionen sind die Bausteine, mit denen Inhalte in einer Anwendung erstellt und verwaltet werden können. Auf dieser Seite erfahren Sie mehr über das Hochladen freigegebener Ressourcen.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -22,40 +22,40 @@ ht-degree: 9%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Inhaltsverwaltungsaktionen sind die Bausteine, mit denen Inhalte in einer Anwendung erstellt und verwaltet werden können. Die folgenden Aktionen werden für Inhalte in der Anwendung ausgeführt.
+Content-Management-Aktionen sind die Bausteine, mit denen Inhalte in einer Anwendung erstellt und verwaltet werden können. Die folgenden Aktionen werden für Inhalte in der Anwendung ausgeführt.
 
 >[!NOTE]
 >
->Weitere Informationen zu Designüberlegungen für AEM Mobile-Apps finden Sie unter [Designüberlegungen für AEM Mobile-Apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in der Online-Hilfe.
+>Weitere Informationen über Entwurfsüberlegungen für AEM Mobile-Apps finden Sie unter [Entwurfsüberlegungen für AEM Mobile-Apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in der Online-Hilfe.
 
 >[!CAUTION]
 >
->Verknüpfen Sie zuerst eine Mobile On-Demand-Verbindung.
+>Verknüpfen Sie zuerst eine Mobile-On-Demand-Verbindung.
 
 ## Hochladen freigegebener Ressourcen {#uploading-shared-resources-1}
 
-In der Regel müssen Inhalte wie Artikel in allen Autoren und Apps dasselbe Erscheinungsbild aufweisen. Daher ist es wichtig, Skripte, CSS und Schriftarten für alle verfügbar zu machen. Dieser Vorgang sendet solche freigegebenen Ressourcen an Mobile On-Demand, die dann bei Bedarf genutzt werden können.
+Normalerweise müssen Inhalte wie Artikel über alle Autoren und sogar Apps hinweg dasselbe Erscheinungsbild haben. Skripte, CSS und Schriftarten für alle verfügbar zu machen, ist daher unerlässlich. Dieser Vorgang sendet solche freigegebenen Ressourcen an Mobile On-Demand, die dann bei Bedarf genutzt werden können.
 
-Nachdem Sie Ihre App konfiguriert und mit einer Cloud-Konfiguration verknüpft haben, können Sie Ihre freigegebenen Ressourcen hochladen. Ausführliche Anweisungen zum Verknüpfen Ihrer App mit einer Cloud-Konfiguration finden Sie unter [hier](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md) .
+Nachdem Sie Ihre App konfiguriert und einer Cloud-Konfiguration zugeordnet haben, können Sie Ihre freigegebenen Ressourcen hochladen. Ausführliche Anweisungen zum Verknüpfen Ihrer App mit einer Cloud-Konfiguration finden Sie [hier](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
 
 >[!NOTE]
 >
->Shared Resources verwendet ContentSync , um alle verschiedenen Ressourcen zu erfassen. Weitere Informationen finden Sie unter [Mobil mit ContentSync](/help/mobile/mobile-ondemand-contentsync.md) .
+>Freigegebene Ressourcen verwenden ContentSync , um alle verschiedenen Ressourcen zu erfassen. Weitere Informationen finden [ unter „Mobile mit ](/help/mobile/mobile-ondemand-contentsync.md)&quot;.
 
 Führen Sie die folgenden Schritte aus, um Ihre freigegebenen Ressourcen für einen Artikel hochzuladen:
 
-1. Wählen Sie den Artikel aus der Kachel **Artikel verwalten** aus.
-1. Klicken Sie auf **Freigegebene Ressourcen hochladen** , um Ihre freigegebenen HTML-Ressourcen hochzuladen.
+1. Wählen Sie den Artikel aus **Kachel** Artikel verwalten“ aus.
+1. Klicken Sie auf **Freigegebene Ressourcen hochladen**, um Ihre freigegebenen HTML-Ressourcen hochzuladen.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
 ### Der nächste Schritt {#the-next-step}
 
-Sobald Sie Informationen zur Erstellung und Veröffentlichung von Inhalten erhalten haben, lesen Sie
+Sobald Sie mehr über das Erstellen und Veröffentlichen von Inhalten erfahren haben, siehe
 
-* [Entwickeln von AEM für AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Entwickeln von AEM-Inhalten für AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Verwalten von Inhalten zur Verwendung von AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
-Sie müssen auch noch mehr über die Authoring-Themen erfahren, siehe
+Oder Sie benötigen noch weitere Informationen zu den Authoring-Themen unter
 
-[Inhaltserstellung AEM AEM Mobile On-demand Services-Apps](/help/mobile/mobile-apps-ondemand.md)
+[Authoring von AEM-Inhalten für AEM Mobile On-demand Services Apps](/help/mobile/mobile-apps-ondemand.md)

@@ -1,6 +1,6 @@
 ---
 title: Inhaltseigenschaften und Knoten
-description: Auf dieser Seite erfahren Sie mehr über Inhaltseigenschaften und -knoten.
+description: Auf dieser Seite erfahren Sie mehr über Inhaltseigenschaften und Knoten.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -24,7 +24,7 @@ ht-degree: 26%
 
 Artikel, Banner und Sammlungen werden in AEM als cq:Pages dargestellt.
 
-Sie verwenden dieselben allgemeinen Eigenschaften, die in jeder cq:Page vorhanden sind, sowie mehrere andere, die unten angezeigt werden und die Adobe Experience Manager (AEM) Mobile On-Demand Services-Metadaten und Integrationsunterstützungseigenschaften darstellen.
+Sie verwenden dieselben gemeinsamen Eigenschaften in jeder cq:Page zusätzlich zu mehreren anderen, die unten gezeigt werden und die Metadaten und Integrationseigenschaften von Adobe Experience Manager (AEM) Mobile On-Demand-Services darstellen.
 
 In den folgenden Tabellen werden die Inhaltseigenschaften und -knoten beschrieben.
 
@@ -32,16 +32,16 @@ In den folgenden Tabellen werden die Inhaltseigenschaften und -knoten beschriebe
 
 | **Eigenschaftsname** | **Typ** | **Standardwerte oder erwartete Werte** | **Beschreibung** |
 |---|---|---|---|
-| dps-id | Zeichenfolge |  | von AEM Mobile zugewiesen und nach dem Hochladen in AEM Mobile von AEM gespeichert oder aus AEM Mobile importiert |
+| dps-id | Zeichenfolge |  | Von AEM Mobile zugewiesen und nach dem Hochladen in AEM Mobile oder dem Import aus AEM Mobile über AEM gespeichert |
 | dps-resourceType | Zeichenfolge | dps:Artikel | dps:Banner | dps:Sammlung | Entitätstyp-Eigenschaft |
-| dps-version | Zeichenfolge |  | Version der AEM Mobile-Entität (ebenfalls in der vollständigen aemm-id enthalten) |
+| dps-version | Zeichenfolge |  | Version der AEM Mobile-Entität (auch in der vollständigen AEM-ID enthalten) |
 | dps-lastSynced | Datum |  | Datum der letzten Synchronisierung/des letzten Imports aus AEM Mobile in AEM |
-| dps-lastUploaded | Datum |  | Datum des letzten Uploads von AEM in AEM Mobile |
-| dps-lastUploadedBy | Zeichenfolge: userid |  | ID-Benutzer, der die letzte Upload-Anfrage von AEM auf AEM Mobile ausgeführt hat |
+| dps-lastUploaded | Datum |  | Datum des letzten Uploads von AEM nach AEM Mobile |
+| dps-lastUploadedBy | string:userId |  | ID des Benutzers, der die letzte Upload-Anfrage von AEM an AEM Mobile ausgeführt hat |
 
-## Eigenschaften von Core-Metadaten {#core-metadata-properties}
+## Core-Metadateneigenschaften {#core-metadata-properties}
 
-| Eigenschaftsname | Typ | Standardwerte oder erwartete Werte |
+| Eigenschaftsname | Typ | Standardwerte für erwartete Werte |
 |--- |--- |--- |
 | dps-title | Zeichenfolge |  |
 | dps-shortTitle | Zeichenfolge |  |
@@ -51,7 +51,7 @@ In den folgenden Tabellen werden die Inhaltseigenschaften und -knoten beschriebe
 | dps-category | Zeichenfolge |  |
 | dps-keywords | Zeichenfolge[] |  |
 | dps-internalKeywords | Zeichenfolge[] |  |
-| dps-important | Zeichenfolge[] | Wichtigkeit von {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
+| DPS-Wichtigkeit | Zeichenfolge[] | Wichtigkeit von {„niedrig“, „normal“, „hoch“} |
 
 ### Artikel {#articles}
 
@@ -60,8 +60,8 @@ In den folgenden Tabellen werden die Inhaltseigenschaften und -knoten beschriebe
 | dps-author | Zeichenfolge |  |
 | dps-authorURL | Zeichenfolge |  |
 | dps-hideFromBrowsePage | Boolesch |  |
-| dps-access | Zeichenfolge | ProtectedAccess von {&quot;protected&quot;, &quot;metered&quot;, &quot;free&quot;} |
-| **Social** |  |  |
+| dps-access | Zeichenfolge | ProtectedAccess von {„protected“, „metered“, „free“} |
+| **Sozial** |  |  |
 | dps-socialShareURL | Zeichenfolge |  |
 | dps-articleText | Zeichenfolge |  |
 | dps-url | Zeichenfolge |  |
@@ -70,25 +70,25 @@ In den folgenden Tabellen werden die Inhaltseigenschaften und -knoten beschriebe
 
 | **Eigenschaftsname** | **Typ** | **Standardwerte oder erwartete Werte** |
 |---|---|---|
-| dps-tapAction |  | Tippen Sie auf Aktion von {webLink} |
+| dps-tapAction |  | Tippen Sie auf Aktion aus {webLink} |
 | dps-tapActionUrl |  |  |
 
 ### Sammlungen {#collections}
 
-| Eigenschaftsname | Typ | Standardwerte oder erwartete Werte |
+| Eigenschaftsname | Typ | Standardwerte für erwartete Werte |
 |--- |--- |--- |
 | dps-productId | Zeichenfolge |  |
-| dps-readingPosition | Zeichenfolge | von {&quot;reset&quot;,&quot;keep&quot;} |
+| dps-readingPosition | Zeichenfolge | von {„Zurücksetzen“,„Beibehalten“} |
 | dps-horizontalSwipe | Boolesch |  |
 | dps-allowDownload | Boolesch |  |
-| dps-openDefault | Zeichenfolge | von {&quot;browsePage&quot;,&quot;contentView&quot;} |
+| dps-openDefault | Zeichenfolge | von {„browsePage“,„contentView“} |
 | dps-layout | Zeichenfolge |  |
 
 ## Inhaltsknoten {#content-nodes}
 
 ### Allgemeine Knoten {#common-nodes}
 
-| Knotenname | Typ | Standardwerte oder erwartete Werte | Beschreibung |
+| Knotenname | Typ | Standardwerte für erwartete Werte | Beschreibung |
 |--- |--- |--- |--- |
 | image | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |
 

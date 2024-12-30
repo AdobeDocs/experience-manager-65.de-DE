@@ -1,6 +1,6 @@
 ---
-title: Auf Gerätefunktionen zugreifen
-description: Auf dieser Seite erfahren Sie, wie Sie Adobe Experience Manager (AEM)-Komponenten erstellen, die auf Gerätefunktionen zugreifen. Das AEM PhoneGap Kitchen Sink GitHub-Repository stellt Entwicklern eine funktionale AEM App zur Verfügung, die die Verwendung mehrerer Cordova-Core-APIs veranschaulicht.
+title: Zugriff auf Gerätefunktionen
+description: Auf dieser Seite erfahren Sie mehr über das Erstellen von Adobe Experience Manager (AEM)-Komponenten, die auf Gerätefunktionen zugreifen. Das GitHub-Repository für AEM PhoneGap Kitchen Sink bietet Entwicklern eine funktionale AEM-App, die die Verwendung mehrerer Core Cordova-APIs veranschaulicht.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -16,7 +16,7 @@ ht-degree: 15%
 
 ---
 
-# Auf Gerätefunktionen zugreifen{#access-device-features}
+# Zugriff auf Gerätefunktionen{#access-device-features}
 
 >[!NOTE]
 >
@@ -24,14 +24,14 @@ ht-degree: 15%
 
 ## Erstellen von Adobe Experience Manager (AEM)-Komponenten, die auf Gerätefunktionen zugreifen {#building-aem-components-that-access-device-features}
 
-Das GitHub-Repository [AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) stellt Entwicklern eine funktionale AEM App zur Verfügung, die die Verwendung mehrerer Cordova-Haupt-APIs veranschaulicht. Wenn die App über die PhoneGap-CLI auf iOS oder Android™ ausgeführt wird, wird sie auf der folgenden Seite geöffnet, auf der sie einen Link zu den einzelnen Geräte-APIs enthält, die sie demonstriert:
+Das GitHub-Repository für [AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) bietet Entwicklern eine funktionale AEM-App, die die Verwendung mehrerer Kern-Cordova-APIs veranschaulicht. Wenn die App auf iOS oder Android™ über die PhoneGap-CLI ausgeführt wird, öffnet sich die App auf der folgenden Seite, die einen Link zu jeder Geräte-API enthält, die sie zeigt:
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-Der Quellcode für jede dieser Geräte-API-Komponenten ist [auf GitHub](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components) verfügbar.
+Der Quell-Code für jede dieser Geräte-API-Komponenten ist [auf GitHub verfügbar](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components).
 
 Weitere Informationen zur Verwendung der einzelnen API finden Sie in der Dokumentation zum Cordova-Plug-in (`https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html`).
 
 ## Die nächsten Schritte {#the-next-steps}
 
-Siehe [App-Leistung mit Adobe Mobile Analytics verfolgen](/help/mobile/phonegap-intro-to-app-analytics.md).
+Siehe [Tracking der App-Leistung mit Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md).

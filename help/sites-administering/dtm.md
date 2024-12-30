@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '2146'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -163,7 +163,7 @@ Beim Hosten der dynamischen Tag-Management-Bibliotheken in AEM konfiguriert AEM 
   </tr>
   <tr>
    <td>Wert für Terminplan</td>
-   <td>(Wird angezeigt und ist erforderlich, wenn „Abruf-Import-Tool aktivieren“ ausgewählt ist.) Ein Cron-Ausdruck, der steuert, wann die Dynamic Tag Management-Bibliotheken heruntergeladen werden.</td>
+   <td>(Wird angezeigt und ist erforderlich, wenn Abruf-Import-Tool aktivieren ausgewählt ist.) Ein Cron-Ausdruck, der steuert, wann die Dynamic Tag Management-Bibliotheken heruntergeladen werden.</td>
   </tr>
  </tbody>
 </table>

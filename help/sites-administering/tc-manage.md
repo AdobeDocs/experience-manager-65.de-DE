@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
 source-git-commit: 26ac50aa27501fe6a80b38a474e9811338c4fb56
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3519'
 ht-degree: 100%
 

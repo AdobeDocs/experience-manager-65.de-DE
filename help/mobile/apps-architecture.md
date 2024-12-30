@@ -1,5 +1,5 @@
 ---
-title: Seitenvorlagen für mobile Apps
+title: Seitenvorlagen für Mobile Apps
 description: Auf dieser Seite erfahren Sie mehr über Seitenvorlagen. Seitenkomponenten, die Sie für Ihre App erstellen, basieren auf der Komponente /libs/mobileapps/components/angular/ng-page .
 contentOwner: User
 content-type: reference
@@ -16,15 +16,15 @@ ht-degree: 1%
 
 ---
 
-# Seitenvorlagen für mobile Apps {#page-templates-for-mobile-apps}
+# Seitenvorlagen für Mobile Apps {#page-templates-for-mobile-apps}
 
 >[!NOTE]
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-## Seitenvorlagen für mobile Apps {#page-templates-for-mobile-apps-1}
+## Seitenvorlagen für Mobile Apps {#page-templates-for-mobile-apps-1}
 
-Seitenkomponenten, die Sie für Ihre App erstellen, basieren auf der Komponente &quot;/libs/mobileapps/components/angular/ng-page&quot;([open in CRXDE Lite on a local server](http://localhost:4502/crx/de/index.jsp#/libs/mobileapps/components/angular/ng-page)). Diese Komponente enthält die folgenden JSP-Skripte, die Ihre Komponente übernimmt oder überschreibt:
+Seitenkomponenten, die Sie für Ihre App erstellen, basieren auf der Komponente /libs/mobileapps/components/angular/ng-page ([auf einem lokalen CRXDE Lite-Server ](http://localhost:4502/crx/de/index.jsp#/libs/mobileapps/components/angular/ng-page)). Diese Komponente enthält die folgenden JSP-Skripte, die Ihre Komponente entweder erbt oder überschreibt:
 
 * ng-page.jsp
 * head.jsp
@@ -42,29 +42,29 @@ Seitenkomponenten, die Sie für Ihre App erstellen, basieren auf der Komponente 
 
 ### ng-page.jsp {#ng-page-jsp}
 
-Bestimmt den Namen der Anwendung mithilfe der Eigenschaft `applicationName` und stellt ihn über pageContext bereit.
+Bestimmt mithilfe der `applicationName`-Eigenschaft den Namen der Anwendung und stellt ihn über pageContext zur Verfügung.
 
-Umfasst head.jsp und body.jsp.
+Enthält head.jsp und body.jsp.
 
 ### head.jsp {#head-jsp}
 
-Schreibt das Element `<head>` der App-Seite aus.
+Schreibt das `<head>` der App-Seite aus.
 
 Wenn Sie die Viewport-Meta-Eigenschaft der App überschreiben möchten, ist dies die Datei, die Sie überschreiben.
 
-Befolgen Sie die Best Practices und die App enthält den CSS-Teil der Client-Bibliotheken im Kopf, während der JS-Code im schließenden &lt; `body>` -Element enthalten ist.
+Gemäß den Best Practices enthält die App den CSS-Teil der Client-Bibliotheken im Head, während die JS-Datei im schließenden &lt; `body>`-Element enthalten ist.
 
 ### body.jsp {#body-jsp}
 
-Der Hauptteil einer Angular-Seite wird je nachdem, ob wcmMode erkannt wird (!= WCMMode.DISABLED), um zu bestimmen, ob die Seite zum Authoring oder als veröffentlichte Seite geöffnet ist.
+Der Hauptteil einer Angular-Seite wird unterschiedlich gerendert, je nachdem, ob wcmMode erkannt wird (!= WCMode.DISABLED), um zu bestimmen, ob die Seite für das Authoring oder als veröffentlichte Seite geöffnet wird.
 
 **Autorenmodus**
 
-Im Autorenmodus wird jede einzelne Seite separat gerendert. Angular behandelt weder das Routing zwischen Seiten noch eine NG-Ansicht zum Laden einer partiellen Vorlage, die die Komponenten der Seite enthält. Stattdessen wird der Inhalt der Seitenvorlage (template.jsp) über das Tag `cq:include` serverseitig eingeschlossen.
+Im Autorenmodus wird jede einzelne Seite separat gerendert. Angular übernimmt weder das Routing zwischen Seiten, noch wird eine NG-Ansicht zum Laden einer partiellen Vorlage verwendet, die die Seitenkomponenten enthält. Stattdessen wird der Inhalt der Seitenvorlage (template.jsp) Server-seitig über das `cq:include`-Tag eingebunden.
 
-Diese Strategie ermöglicht es, dass die Autorenfunktionen (z. B. das Hinzufügen und Bearbeiten von Komponenten im Absatzsystem, Sidekick, Designmodus usw.) ohne Änderungen funktionieren. Seiten, die auf der clientseitigen Wiedergabe basieren, wie z. B. Seiten für Apps, funktionieren im Autorenmodus nicht gut AEM.
+Diese Strategie ermöglicht es den Autorenfunktionen (z. B. Hinzufügen und Bearbeiten von Komponenten im Absatzsystem, Sidekick, Designmodus usw.), ohne Änderungen zu funktionieren. Seiten, die auf Client-seitiges Rendering angewiesen sind, z. B. solche für Apps, funktionieren im AEM-Autorenmodus nicht gut.
 
-Der include template.jsp wird in ein `div` -Element eingeschlossen, das die Anweisung `ng-controller` enthält. Diese Struktur ermöglicht die Verknüpfung der DOM-Inhalte mit dem Controller. Daher schlagen zwar Seiten fehl, die auf der Client-Seite selbst gerendert werden, doch funktionieren einzelne Komponenten, die dies tun, gut (siehe Abschnitt zu Komponenten unten).
+Der include template.jsp ist in ein `div`-Element eingeschlossen, das die `ng-controller`-Anweisung enthält. Diese Struktur ermöglicht die Verknüpfung der DOM-Inhalte mit dem Controller. Daher schlagen Seiten, die sich selbst auf der Client-Seite rendern, zwar fehl, einzelne Komponenten, die dies tun, funktionieren jedoch einwandfrei (siehe den Abschnitt zu Komponenten unten).
 
 ```xml
 <div ng-controller="<c:out value="${controllerNameStripped}"/>">
@@ -74,41 +74,41 @@ Der include template.jsp wird in ein `div` -Element eingeschlossen, das die Anwe
 
 **Publish-Modus**
 
-Im Veröffentlichungsmodus (z. B. wenn die App mit der Inhaltssynchronisierung exportiert wird) werden alle Seiten zu einer Einzelseiten-App (SPA). (Um mehr über SPA zu erfahren, verwenden Sie das Angular-Tutorial, insbesondere [https://docs.angularjs.org/tutorial/step_07](https://docs.angularjs.org/tutorial/step_07).)
+Im Veröffentlichungsmodus (z. B. wenn die App mithilfe der Inhaltssynchronisierung exportiert wird) werden alle Seiten zu einer Einzelseiten-App (SPA). (Weitere Informationen zu SPA finden Sie im Angular-Tutorial, insbesondere unter [https://docs.angularjs.org/tutorial/step_07](https://docs.angularjs.org/tutorial/step_07).)
 
-Eine SPA enthält nur eine HTML-Seite (eine Seite, die das Element `<html>` enthält). Diese Seite wird als &quot;Layoutvorlage&quot;bezeichnet. In der Angular-Terminologie ist es &quot;...eine Vorlage, die für alle Ansichten in unserer Anwendung üblich ist&quot;. Betrachten Sie diese Seite als &quot;App-Seite der obersten Ebene&quot;. Standardmäßig ist die App-Seite der obersten Ebene der Knoten `cq:Page` Ihrer Anwendung, der dem Stammverzeichnis am nächsten ist (und keine Umleitung ist).
+Eine SPA enthält nur eine HTML-Seite (eine Seite, die das `<html>` enthält). Diese Seite wird als „Layout-Vorlage“ bezeichnet. In der Angular-Terminologie ist dies &quot;…eine Vorlage, die für alle Ansichten in unserer Anwendung gleich ist“. Diese Seite als „App-Seite der obersten Ebene“ betrachten. Standardmäßig ist die App-Seite der obersten Ebene der `cq:Page` Knoten Ihres Programms, der dem Stamm am nächsten ist (und keine Umleitung darstellt).
 
 Da sich der tatsächliche URI Ihrer App im Veröffentlichungsmodus nicht ändert, müssen Verweise auf externe Assets von dieser Seite relative Pfade verwenden. Daher wird eine spezielle Bildkomponente bereitgestellt, die diese Seite der obersten Ebene beim Rendern von Bildern für den Export berücksichtigt.
 
-Als SPA generiert diese Layoutvorlagenseite einfach ein div -Element mit einer ng-view -Direktive.
+Als SPA generiert diese Layoutvorlagenseite einfach ein div-Element mit einer ng-view-Direktive.
 
 ```xml
  <div ng-view ng-class="transition"></div>
 ```
 
-Der Angular Route-Dienst verwendet dieses Element, um den Inhalt jeder Seite in der App anzuzeigen, einschließlich des bearbeitbaren Inhalts der aktuellen Seite (in template.jsp enthalten).
+Der Angular-Routendienst verwendet dieses Element, um den Inhalt aller Seiten in der App anzuzeigen, einschließlich des bearbeitbaren Inhalts der aktuellen Seite (in template.jsp).
 
-Die Datei body.jsp enthält &quot;header.jsp&quot;und &quot;footer.jsp&quot;, die leer sind. Wenn Sie statischen Inhalt auf jeder Seite bereitstellen möchten, können Sie diese Skripte in Ihrer App überschreiben.
+Die Datei body.jsp enthält die Dateien header.jsp und footer.jsp, die leer sind. Wenn Sie statischen Inhalt auf jeder Seite bereitstellen möchten, können Sie diese Skripte in Ihrer App überschreiben.
 
-Schließlich sind die JavaScript-Client-Bibliotheken unten im Element &lt;body> enthalten, darunter zwei spezielle JS-Dateien, die auf dem Server generiert werden: *&lt;Seitenname>*.angular-app-module.js und *&lt;Seitenname>*.angular-app-controller.js.
+Schließlich sind JavaScript-Client-Bibliotheken am unteren Rand des Elements &lt;body> enthalten, einschließlich zweier spezieller JS-Dateien, die auf dem Server generiert werden: *&lt;page name>*.angular-app-module.js und *&lt;page name>*.angular-app-controllers.js.
 
 ### angular-app-module.js.jsp {#angular-app-module-js-jsp}
 
-Dieses Skript definiert das Angular-Modul der Anwendung. Die Ausgabe dieses Skripts ist mit dem Markup verknüpft, das die restliche Komponente der Vorlage über das Element `html` in ng-page.jsp generiert, das das folgende Attribut enthält:
+Dieses Script definiert das Angular-Modul der Anwendung. Die Ausgabe dieses Skripts ist mit dem Markup verknüpft, das der Rest der Vorlagenkomponente über das `html`-Element in ng-page.jsp generiert, das das folgende Attribut enthält:
 
 ```xml
 ng-app="<c:out value='${applicationName}'/>"
 ```
 
-Dieses Attribut gibt Angular an, dass der Inhalt dieses DOM-Elements mit dem folgenden Modul verknüpft werden soll. Dieses Modul verknüpft die Ansichten (in AEM wären dies cq:Page -Ressourcen) mit den entsprechenden Controllern.
+Dieses Attribut gibt Angular an, dass der Inhalt dieses DOM-Elements mit dem folgenden Modul verknüpft werden soll. Dieses Modul verknüpft die Ansichten (in AEM wären dies cq:Page-Ressourcen) mit den entsprechenden Controllern.
 
-Dieses Modul definiert außerdem einen Controller auf oberster Ebene mit dem Namen `AppController` , der die Variable `wcmMode` für den Bereich verfügbar macht und den URI konfiguriert, aus dem die Payloads für die Aktualisierung der Inhaltssynchronisierung abgerufen werden sollen.
+Dieses Modul definiert auch einen Controller der obersten Ebene mit dem Namen `AppController`, der die `wcmMode` für den Bereich bereitstellt, und konfiguriert den URI, von dem die Payloads für die Inhaltssynchronisierung-Aktualisierung abgerufen werden sollen.
 
-Schließlich durchläuft dieses Modul jede nachfolgende Seite (einschließlich der eigenen Seite) und rendert den Inhalt des Routenfragments jeder Seite (über den Selektor und die Erweiterung &quot;angular-route-fragment.js&quot;), einschließlich des Inhalts als Konfigurationseintrag zu Angular \$routeProvider. Mit anderen Worten: Der \$routeProvider teilt der App mit, welcher Inhalt gerendert werden soll, wenn ein bestimmter Pfad angefordert wird.
+Schließlich durchläuft dieses Modul jede untergeordnete Seite (einschließlich sich selbst) und rendert den Inhalt des Route-Fragments jeder Seite (über den Selektor und die Erweiterung angular-route-fragment.js), einschließlich als Konfigurationseintrag für Angular \$routeProvider. Mit anderen Worten: \$routeProvider teilt der App mit, welcher Inhalt gerendert werden soll, wenn ein bestimmter Pfad angefordert wird.
 
 ### angular-route-fragment.js.jsp {#angular-route-fragment-js-jsp}
 
-Dieses Skript generiert ein JavaScript-Fragment, das folgende Form aufweisen muss:
+Dieses Skript generiert ein JavaScript-Fragment, das die folgende Form aufweisen muss:
 
 ```
 .when('/<path>', {
@@ -117,9 +117,9 @@ Dieses Skript generiert ein JavaScript-Fragment, das folgende Form aufweisen mus
 })
 ```
 
-Dieser Code gibt $routeProvider (definiert in angular-app-module.js.jsp) an, dass &quot;/&lt;path>&quot;von der Ressource bei `templateUrl` verarbeitet und durch `controller` verdrahtet wird (was wir als Nächstes erreichen werden).
+Dieser Code gibt $routeProvider (definiert in angular-app-module.js.jsp) an, dass &#39;/&lt;path>&#39; von der Ressource unter `templateUrl` verarbeitet und durch `controller` verkabelt werden soll (worauf wir als Nächstes kommen).
 
-Bei Bedarf können Sie dieses Skript überschreiben, um komplexere Pfade zu handhaben, einschließlich Pfaden mit Variablen. Ein Beispiel dafür finden Sie im Skript /apps/geometrixx-outdoors-app/components/angular/ng-template-page/angular-route-fragment.js.jsp , das mit AEM installiert wird:
+Bei Bedarf können Sie dieses Skript überschreiben, um komplexere Pfade zu verarbeiten, einschließlich solcher mit Variablen. Ein Beispiel dafür finden Sie im Skript /apps/geometrixx-outdoors-app/components/angular/ng-template-page/angular-route-fragment.js.jsp, das mit AEM installiert wird:
 
 ```xml
 // note the :id suffix on the path
@@ -131,11 +131,11 @@ Bei Bedarf können Sie dieses Skript überschreiben, um komplexere Pfade zu hand
 
 ### angular-app-controllers.js.jsp {#angular-app-controllers-js-jsp}
 
-In Angular verknüpfen Controller Variablen im \$scope, wodurch sie der Ansicht angezeigt werden. Das Skript angular-app-controllers.js.jsp folgt dem Muster, das von angular-app-module.js.jsp veranschaulicht wird, da es durch jede nachkommende Seite (einschließlich der Seite selbst) iteriert und das Controller-Fragment ausgibt, das jede Seite definiert (über controller.js.jsp). Das Modul, das es definiert, heißt `cqAppControllers` und muss als Abhängigkeit des App-Moduls der obersten Ebene aufgeführt werden, damit die Seiten-Controller verfügbar gemacht werden.
+Beim Angular vernetzen Controller Variablen im \$scope und stellen sie der Ansicht zur Verfügung. Das Skript angular-app-controllers.js.jsp folgt dem von angular-app-module.js.jsp dargestellten Muster, indem es jede untergeordnete Seite (einschließlich sich selbst) durchläuft und das von jeder Seite definierte Controller-Fragment ausgibt (über controller.js.jsp). Das von ihm definierte Modul heißt `cqAppControllers` und muss als Abhängigkeit vom App-Modul der obersten Ebene aufgelistet werden, damit die Seiten-Controller verfügbar gemacht werden.
 
 ### controller.js.jsp {#controller-js-jsp}
 
-Das Skript controller.js.jsp generiert das Controller-Fragment für jede Seite. Dieses Controller-Fragment hat folgendes Format:
+Das Skript controller.js.jsp generiert das Controller-Fragment für jede Seite. Dieses Controller-Fragment hat die folgende Form:
 
 ```
 .controller('<c:out value="${controllerNameStripped}"/>', ['$scope', '$http',
@@ -147,66 +147,66 @@ Das Skript controller.js.jsp generiert das Controller-Fragment für jede Seite. 
 ])
 ```
 
-Der Variable `data` wird das von der Angular `$http.get` -Methode zurückgegebene Versprechen zugewiesen. Jede auf dieser Seite enthaltene Komponente kann bei Bedarf einen beliebigen .json-Inhalt verfügbar machen (über das angular.json.jsp-Skript) und nach der Auflösung auf den Inhalt dieser Anforderung reagieren. Die Anfrage erfolgt sehr schnell auf Mobilgeräten, da sie einfach auf das Dateisystem zugreift.
+Der `data`-Variable wird die von der Angular-`$http.get` zurückgegebene Zusage zugewiesen. Jede auf dieser Seite enthaltene Komponente kann bei Bedarf JSON-Inhalte verfügbar machen (über das Skript angular.json.jsp ) und die Inhalte dieser Anfrage bearbeiten, wenn sie aufgelöst wird. Die Anfrage ist auf Mobilgeräten sehr schnell, da sie einfach auf das Dateisystem zugreift.
 
-Damit eine Komponente auf diese Weise Teil des Controllers sein kann, sollte sie die Komponente /libs/mobileapps/components/angular/ng-component erweitern und die Eigenschaft `frameworkType: angular` einschließen.
+Damit eine Komponente auf diese Weise Teil des Controllers ist, sollte sie die Komponente /libs/mobileapps/components/angular/ng-component erweitern und die Eigenschaft `frameworkType: angular` einschließen.
 
 ### template.jsp {#template-jsp}
 
-Als Erstes, der in den Abschnitt body.jsp eingeführt wurde, enthält template.jsp einfach die ParSys der Seite. Im Veröffentlichungsmodus wird dieser Inhalt direkt (unter &lt;Seitenpfad>.template.html) referenziert und über die im \$routeProvider konfigurierte templateUrl in den SPA geladen.
+Die Datei „template.jsp“, die zuerst im Abschnitt body.jsp eingeführt wurde, enthält einfach das ParSys der Seite. Im Veröffentlichungsmodus wird dieser Inhalt direkt referenziert (unter &lt;page-path>.template.html) und über die im \$routeProvider konfigurierte templateUrl in die SPA geladen.
 
-Die parsys in diesem Skript können so konfiguriert werden, dass sie jeden Komponententyp akzeptieren. Bei Komponenten, die für eine herkömmliche Website erstellt wurden (im Gegensatz zu SPA), ist jedoch Vorsicht geboten. Beispielsweise funktioniert die Foundation-Bildkomponente nur auf der App-Seite auf der obersten Ebene ordnungsgemäß, da sie nicht für Verweise auf Assets konzipiert ist, die sich in einer App befinden.
+Das parsys in diesem Skript kann so konfiguriert werden, dass es jeden Komponententyp akzeptiert. Bei Komponenten, die für eine herkömmliche Website (im Gegensatz zu SPA) erstellt wurden, muss jedoch Vorsicht geboten sein. Beispielsweise funktioniert die Foundation-Bildkomponente nur auf der App-Seite der obersten Ebene ordnungsgemäß, da sie nicht für Verweise auf Assets konzipiert ist, die sich in einer App befinden.
 
 ### angular-module-list.js.jsp {#angular-module-list-js-jsp}
 
-Dieses Skript gibt einfach die Angular-Abhängigkeiten des Angular-App-Moduls der obersten Ebene aus. Es wird von angular-app-module.js.jsp referenziert.
+Dieses Script gibt einfach die Angular-Abhängigkeiten des Angular-App-Moduls der obersten Ebene aus. Es wird von angular-app-module.js.jsp referenziert.
 
 ### header.jsp {#header-jsp}
 
-Ein Skript zum Platzieren von statischen Inhalten am Anfang der App. Dieser Inhalt wird von der Seite der obersten Ebene außerhalb des Bereichs &quot;ng-view&quot;einbezogen.
+Ein Skript, um statische Inhalte am Anfang der App zu platzieren. Dieser Inhalt wird von der Seite der obersten Ebene außerhalb des Bereichs von ng-view eingeschlossen.
 
 ### footer.jsp {#footer-jsp}
 
-Ein Skript zum Platzieren von statischen Inhalten am unteren Rand der App. Dieser Inhalt wird von der Seite der obersten Ebene außerhalb des Bereichs &quot;ng-view&quot;einbezogen.
+Ein Skript zum Platzieren von statischen Inhalten am unteren Rand der App. Dieser Inhalt wird von der Seite der obersten Ebene außerhalb des Bereichs von ng-view eingeschlossen.
 
 ### js_clientlibs.jsp {#js-clientlibs-jsp}
 
-Überschreiben Sie dieses Skript, um Ihre JavaScript-Clientlibs einzuschließen.
+Überschreiben Sie dieses Skript, um Ihre JavaScript-Client-Bibliotheken einzuschließen.
 
 ### css_clientlibs.jsp {#css-clientlibs-jsp}
 
-Überschreiben Sie dieses Skript, um Ihre CSS-Clientlibs einzuschließen.
+Überschreiben Sie dieses Skript, um Ihre CSS-Client-Bibliotheken einzuschließen.
 
-## App-Komponenten {#app-components}
+## Mobile-App-Komponenten {#app-components}
 
-App-Komponenten dürfen nicht nur auf einer AEM Instanz (Veröffentlichungs- oder Autoreninstanz) funktionieren, sondern auch, wenn der Anwendungsinhalt über die Inhaltssynchronisierung in das Dateisystem exportiert wird. Die Komponente muss daher die folgenden Merkmale aufweisen:
+Mobile-App-Komponenten müssen nicht nur in einer AEM-Instanz (Veröffentlichungs- oder Autoreninstanz) funktionieren, sondern auch, wenn der Programminhalt über die Inhaltssynchronisierung in das Dateisystem exportiert wird. Die Komponente muss daher die folgenden Merkmale aufweisen:
 
 * Alle Assets, Vorlagen und Skripte in einer PhoneGap-Anwendung müssen relativ referenziert werden.
-* Die Behandlung von Links unterscheidet sich, wenn die AEM-Instanz im Autoren- oder Veröffentlichungsmodus ausgeführt wird.
+* Die Handhabung von Links unterscheidet sich, wenn die AEM-Instanz im Autoren- oder Veröffentlichungsmodus ausgeführt wird.
 
-### Relativer Assets {#relative-assets}
+### Relative Assets {#relative-assets}
 
-Der URI eines bestimmten Assets in einer PhoneGap-Anwendung unterscheidet sich nicht nur pro Plattform, sondern ist bei jeder Installation des Programms eindeutig. Beachten Sie beispielsweise den folgenden URI einer App, die im iOS Simulator ausgeführt wird:
+Der URI eines bestimmten Assets in einer PhoneGap-Anwendung unterscheidet sich nicht nur pro Plattform, sondern ist in jeder Installation der App eindeutig. Beachten Sie beispielsweise den folgenden URI einer App, die im iOS-Simulator ausgeführt wird:
 
 `file:///Users/userId/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/24BA22ED-7D06-4330-B7EB-F6FC73251CA3/Library/files/www/content/phonegap/geometrixx/apps/ng-geometrixx-outdoors/en/home.html`
 
-Beachten Sie die GUID &quot;24BA22ED-7D06-4330-B7EB-F6FC73251CA3&quot;im Pfad.
+Beachten Sie die GUID „24BA22ED-7D06-4330-B7EB-F6FC73251CA3“ im Pfad.
 
-Als PhoneGap-Entwickler befindet sich der Inhalt, mit dem Sie befasst sind, unter dem www-Verzeichnis. Verwenden Sie relative Pfade, um auf die App-Assets zuzugreifen.
+Als PhoneGap-Entwickler befinden sich die Inhalte, um die Sie sich kümmern, unter dem Verzeichnis www . Verwenden Sie relative Pfade, um auf die App-Assets zuzugreifen.
 
-Um das Problem zu beheben, verwendet Ihre PhoneGap-Anwendung das Muster der Einzelseiten-App (SPA), sodass sich der Basis-URI (ohne den Hash) nie ändert. Daher muss jedes Asset, jede Vorlage oder jedes Skript, das bzw. das Sie auf **verweisen, relativ zu Ihrer Seite der obersten Ebene sein.** Die Seite auf oberster Ebene initialisiert das Angular-Routing und die Controller gemäß `*<name>*.angular-app-module.js` und `*<name>*.angular-app-controllers.js`. Diese Seite sollte die nächstgelegene Seite zum Stammverzeichnis des Repositorys sein, das *keine Erweiterung einer sling:redirect darstellt.
+Um das Problem zu verschlimmern, verwendet Ihre PhoneGap-Anwendung das SPA-Muster (Single Page App), sodass der Basis-URI (ohne den Hash) sich nie ändert. Daher müssen alle Assets, Vorlagen oder Skripte, auf **Sie verweisen, relativ zu Ihrer Top-Level-Seite sein.** Die Seite der obersten Ebene initialisiert das Angular-Routing und die Controller aufgrund von `*<name>*.angular-app-module.js` und `*<name>*.angular-app-controllers.js`. Diese Seite sollte die Seite sein, die dem Stamm des Repositorys am nächsten ist und *keine* Sling:Redirect-Erweiterung ermöglicht.
 
-Für den Umgang mit relativen Pfaden stehen verschiedene Hilfsmethoden zur Verfügung:
+Für die Behandlung relativer Pfade stehen verschiedene Hilfsmethoden zur Verfügung:
 
 * FrameworkContentExporterUtils.getTopLevelAppResource
 * FrameworkContentExporterUtils.getRelativePathToRootLevel
 * FrameworkContentExporterUtils.getPathToAsset
 
-Um Beispiele für ihre Verwendung anzuzeigen, öffnen Sie die Quelle mobileapps unter /libs/mobileapps/components/angular.
+Um Beispiele für ihre Verwendung zu sehen, öffnen Sie die Mobile-Apps-Quelle unter /libs/mobileapps/components/angular.
 
 ### Links {#links}
 
-Links müssen die Funktion `ng-click="go('/path')"` verwenden, um alle WCM-Modi zu unterstützen. Diese Funktion hängt vom Wert einer Perimeter-Variablen ab, um die Linkaktion korrekt zu bestimmen:
+Links müssen die `ng-click="go('/path')"`-Funktion verwenden, um alle WCM-Modi zu unterstützen. Diese Funktion hängt vom Wert einer Scope-Variablen ab, um die Link-Aktion korrekt zu bestimmen:
 
 ```xml
 <c:choose><c:when test="${wcmMode}">
@@ -218,11 +218,11 @@ Links müssen die Funktion `ng-click="go('/path')"` verwenden, um alle WCM-Modi 
 </c:otherwise></c:choose>
 ```
 
-Bei `$scope.wcmMode == true` behandeln wir jedes Navigationsereignis auf die übliche Weise, sodass das Ergebnis eine Änderung des Pfads und/oder Seitenanteils der URL darstellt.
+Bei der `$scope.wcmMode == true` behandeln wir jedes Navigationsereignis auf die übliche Weise, sodass sich der Pfad und/oder der Seitenteil der URL ändern.
 
-Wenn `$scope.wcmMode == false`, führt jedes Navigationsereignis zu einer Änderung des Hash-Teils der URL, die intern vom Angular ngRoute-Modul aufgelöst wird.
+Alternativ führt jedes Navigationsereignis, falls `$scope.wcmMode == false`, zu einer Änderung des Hash-Teils der URL, die intern vom Angular nRoute-Modul aufgelöst wird.
 
-### Komponentenskriptdetails {#component-script-details}
+### Details zum Komponentenskript {#component-script-details}
 
 ![chlimage_1-36](assets/chlimage_1-36.png)
 
@@ -232,23 +232,23 @@ Dieses Skript zeigt entweder den Komponenteninhalt oder einen geeigneten Platzha
 
 #### template.jsp {#template-jsp-1}
 
-Das Skript template.jsp rendert das Markup der Komponente. Wenn die fragliche Komponente von JSON-Daten aus AEM (z. B. &quot;ng-text&quot;: /libs/mobileapps/components/angular/ng-text/template.jsp) gesteuert wird, ist dieses Skript für die Verkabelung des Markups mit Daten verantwortlich, die vom Controller-Bereich der Seite verfügbar gemacht werden.
+Das Skript „template.jsp“ rendert das Markup der Komponente. Wenn die betreffende Komponente durch JSON-Daten gesteuert wird, die aus AEM extrahiert wurden (z. B. „ng-text“: /libs/mobileapps/components/angular/ng-text/template.jsp), ist dieses Skript für die Verkabelung des Markups mit Daten verantwortlich, die vom Controller-Umfang der Seite verfügbar gemacht werden.
 
-Leistungsanforderungen erfordern jedoch manchmal, dass keine clientseitige Vorlage (auch Datenbindung genannt) durchgeführt wird. In diesem Fall rendern Sie einfach das Markup der Komponente auf der Server-Seite und es ist im Inhalt der Seitenvorlage enthalten.
+Allerdings schreiben die Leistungsanforderungen manchmal vor, dass keine Client-seitigen Vorlagen (auch als Datenbindung bezeichnet) ausgeführt werden. In diesem Fall rendern Sie einfach das Markup der Komponente auf der Server-Seite und sie wird in den Inhalt der Seitenvorlage aufgenommen.
 
 #### overhead.jsp {#overhead-jsp}
 
-In Komponenten, die von JSON-Daten gesteuert werden (z. B. &quot;ng-text&quot;: /libs/mobileapps/components/angular/ng-text), kann overhead.jsp verwendet werden, um den gesamten Java-Code aus template.jsp zu entfernen. Anschließend wird er von template.jsp referenziert und alle Variablen, die er in der Anfrage verfügbar macht, sind zur Verwendung verfügbar. Diese Strategie fördert die Trennung von Logik und Präsentation und schränkt die Menge des Codes ein, der kopiert und eingefügt werden muss, wenn eine neue Komponente von einer vorhandenen abgeleitet wird.
+In Komponenten, die von JSON-Daten gesteuert werden (z. B. „ng-text“: /libs/mobileapps/components/angular/ng-text), kann „overhead.jsp“ verwendet werden, um den gesamten Java-Code aus „template.jsp“ zu entfernen. Es wird dann von „template.jsp“ referenziert, und alle Variablen, die es in der Anfrage bereitstellt, sind zur Verwendung verfügbar. Diese Strategie fördert die Trennung der Logik von der Präsentation und begrenzt den Code, der kopiert und eingefügt werden muss, wenn eine neue Komponente von einer vorhandenen abgeleitet wird.
 
 #### controller.js.jsp {#controller-js-jsp-1}
 
-Wie in AEM Seitenvorlagen beschrieben, kann jede Komponente ein JavaScript-Fragment ausgeben, um den JSON-Inhalt zu nutzen, der durch das Promise `data` bereitgestellt wird. Gemäß Angular-Konventionen sollte ein Controller nur zum Zuweisen von Variablen zum Bereich verwendet werden.
+Wie unter AEM-Seitenvorlagen beschrieben, kann jede Komponente ein JavaScript-Fragment ausgeben, um den JSON-Inhalt zu nutzen, der von der `data` bereitgestellt wird. Nach den Angular-Konventionen sollte ein Controller nur zum Zuweisen von Variablen zum Bereich verwendet werden.
 
 #### angular.json.jsp {#angular-json-jsp}
 
-Dieses Skript ist als Fragment in der Datei &quot;&lt;Seitenname>.angular.json&quot;auf der Seite enthalten, das für jede Seite exportiert wird, die sich auf die Seite erstreckt. In dieser Datei kann der Komponentenentwickler jede JSON-Struktur bereitstellen, die für die Komponente erforderlich ist. Im Beispiel &quot;ng-text&quot;enthält diese Struktur einfach den Textinhalt der Komponente und eine Markierung, die angibt, ob die Komponente Rich-Text enthält oder nicht.
+Dieses Skript wird als Fragment in die seitenweite Datei &quot;&lt;page-name>.angular.json“ eingefügt, die für jede Seite exportiert wird, die ng-page erweitert. In dieser Datei kann der Komponentenentwickler jede JSON-Struktur verfügbar machen, die für die Komponente erforderlich ist. Im „ng-text“-Beispiel enthält diese Struktur einfach den Textinhalt der Komponente und ein Flag, das angibt, ob die Komponente Rich-Text enthält oder nicht.
 
-Die Produktkomponente &quot;Geometrixx Outdoors App&quot;ist ein komplexeres Beispiel (/apps/geometrixx-outdoors-app/components/angular/ng-product):
+Die Produktkomponente &quot;Geometrixx Outdoors-App“ ist ein komplexeres Beispiel (/apps/geometrixx-outdoors-app/components/angular/ng-product):
 
 ```xml
 {
@@ -281,9 +281,9 @@ Die Produktkomponente &quot;Geometrixx Outdoors App&quot;ist ein komplexeres Bei
 }
 ```
 
-## Inhalt des Assets-Downloads für CLI {#contents-of-the-cli-assets-download}
+## Inhalt der CLI Assets Download {#contents-of-the-cli-assets-download}
 
-Laden Sie CLI-Assets aus der Apps-Konsole herunter, um sie für eine bestimmte Plattform zu optimieren, und erstellen Sie dann die App mithilfe der CLI (PhoneGap Command Line Integration)-API. Der Inhalt der ZIP-Datei, die Sie im lokalen Dateisystem speichern, weist die folgende Struktur auf:
+Laden Sie CLI-Assets von der Apps-Konsole herunter, um sie für eine bestimmte Plattform zu optimieren, und erstellen Sie dann die App mithilfe der PhoneGap Command Line Integration (CLI)-API. Der Inhalt der ZIP-Datei, die Sie im lokalen Dateisystem speichern, weist die folgende Struktur auf:
 
 ```xml
 .cordova/
@@ -305,29 +305,29 @@ www/
 
 ### .cordova {#cordova}
 
-Dies ist ein ausgeblendetes Verzeichnis, das je nach den aktuellen Betriebssystemeinstellungen möglicherweise nicht angezeigt wird. Sie sollten Ihr Betriebssystem so konfigurieren, dass dieses Verzeichnis sichtbar ist, wenn Sie die darin enthaltenen App-Hooks ändern möchten.
+Dies ist ein ausgeblendeter Ordner, der je nach den aktuellen Betriebssystemeinstellungen möglicherweise nicht angezeigt wird. Sie sollten Ihr Betriebssystem so konfigurieren, dass dieses Verzeichnis sichtbar ist, wenn Sie die darin enthaltenen App-Hooks ändern möchten.
 
 #### .cordova/hooks/ {#cordova-hooks}
 
-Dieser Ordner enthält die [CLI-Hooks](https://cordova.apache.org/docs/en/10.x/guide/appdev/hooks/). Die Ordner im Hooks-Ordner enthalten node.js-Skripte, die an exakten Stellen während des Builds ausgeführt werden.
+Dieses Verzeichnis enthält die [CLI-Hooks](https://cordova.apache.org/docs/en/10.x/guide/appdev/hooks/). Die Ordner im Verzeichnis hooks enthalten Node.js-Skripte, die während des Builds an genau diesem Punkt ausgeführt werden.
 
 #### .cordova/hooks/after-platform_add/ {#cordova-hooks-after-platform-add}
 
-Das Verzeichnis after-platform_add enthält die Datei `copy_AMS_Conifg.js` . Dieses Skript kopiert eine Konfigurationsdatei, um die Erfassung von Adobe Mobile Services-Analysen zu unterstützen.
+Der Ordner „after-platform_add“ enthält die `copy_AMS_Conifg.js`. Dieses Skript kopiert eine Konfigurationsdatei, um die Erfassung von Adobe Mobile Services Analytics zu unterstützen.
 
-#### .cordova/hooks/after-prepare/ {#cordova-hooks-after-prepare}
+#### .cordova/hooks/after-preparation/ {#cordova-hooks-after-prepare}
 
-Das Verzeichnis &quot;after-prepare&quot;enthält die Datei &quot;`copy_resource_files.js`&quot;. Dieses Skript kopiert mehrere Symbol- und Splash-Bildschirmbilder an plattformspezifische Standorte.
+Das Verzeichnis nach der Vorbereitung enthält die `copy_resource_files.js`. Dieses Skript kopiert mehrere Symbol- und Splash-Screen-Bilder in plattformspezifische Speicherorte.
 
 #### .cordova/hooks/before_platform_add/ {#cordova-hooks-before-platform-add}
 
-Das Verzeichnis before_platform_add enthält die Datei `install_plugins.js` . Dieses Skript durchläuft eine Liste von Cordova-Plug-in-Identifikatoren und installiert diejenigen, die es erkennt, sind noch nicht verfügbar.
+Der Ordner before_platform_add enthält die `install_plugins.js`. Dieses Skript durchläuft eine Liste von Cordova-Plug-in-Bezeichnern und installiert diejenigen, die es erkennt, sind noch nicht verfügbar.
 
-Für diese Strategie ist es nicht erforderlich, dass Sie die Plug-ins gebündelt und installieren, um sie bei jeder Ausführung des Maven `content-package:install`-Befehls zu AEM. Die alternative Methode zur Überprüfung der Dateien in Ihrem SCM-System erfordert eine wiederholte Bündelung und Installation von Aktivitäten.
+Bei dieser Strategie müssen Sie die Plug-ins nicht jedes Mal in AEM bündeln und installieren, wenn der Maven-`content-package:install` ausgeführt wird. Die alternative Strategie, die Dateien in Ihr SCM-System einzuchecken, erfordert wiederholte Bündelungs- und Installationsaktivitäten.
 
-#### .cordova/hooks/Other Hooks {#cordova-hooks-other-hooks}
+#### .cordova/hooks/other hooks {#cordova-hooks-other-hooks}
 
-Schließen Sie bei Bedarf weitere Hooks ein. Die folgenden Hooks sind verfügbar (wie von der Phonegap-Beispielanwendung hello world App bereitgestellt):
+Schließen Sie ggf. weitere Hooks ein. Die folgenden Hooks sind verfügbar (wie von der PhoneGap-Beispiel-Hello-World-App bereitgestellt):
 
 * after_build
 * before_build
@@ -349,67 +349,67 @@ Schließen Sie bei Bedarf weitere Hooks ein. Die folgenden Hooks sind verfügbar
 * before_plugin_ls
 * after_plugin_rm
 * before_plugin_rm
-* after_prepare
-* before_prepare
+* after_preparation
+* before_preparation
 * after_run
 * before_run
 
-#### platforms/ {#platforms}
+#### Plattformen/ {#platforms}
 
-Dieser Ordner ist leer, bis Sie den Befehl `phonegap run <platform>` im Projekt ausführen. Derzeit kann `<platform>` entweder `ios` oder `android` sein.
+Dieses Verzeichnis ist leer, bis Sie den `phonegap run <platform>`-Befehl für das Projekt ausführen. Derzeit kann `<platform>` entweder `ios` oder `android` sein.
 
-Nachdem Sie die App für eine bestimmte Plattform erstellt haben, wird der entsprechende Ordner erstellt und der plattformspezifische App-Code enthält.
+Nachdem Sie die App für eine bestimmte Plattform erstellt haben, wird das entsprechende Verzeichnis erstellt, das den plattformspezifischen App-Code enthält.
 
 #### plugins/ {#plugins}
 
-Das Plug-in-Verzeichnis wird von jedem Plug-in aufgefüllt, das in der Datei `.cordova/hooks/before_platform_add/install_plugins.js` aufgeführt ist, nachdem Sie den Befehl `phonegap run <platform>` ausgeführt haben. Der Ordner ist zunächst leer.
+Das Plug-in-Verzeichnis wird von jedem Plug-in gefüllt, das in der `.cordova/hooks/before_platform_add/install_plugins.js`-Datei aufgeführt ist, nachdem Sie den `phonegap run <platform>` Befehl ausgeführt haben. Das Verzeichnis ist zunächst leer.
 
 #### www/ {#www}
 
-Das Verzeichnis www enthält alle Webinhalte (HTML-, JS- und CSS-Dateien), die das Erscheinungsbild und Verhalten der App implementieren. Mit Ausnahme der unten beschriebenen Ausnahmen stammt dieser Inhalt aus AEM und wird über die Inhaltssynchronisierung in das statische Formular exportiert.
+Das www-Verzeichnis enthält alle Web-Inhalte (HTML-, JS- und CSS-Dateien), die das Erscheinungsbild und Verhalten der App implementieren. Mit Ausnahme der unten beschriebenen Ausnahmen stammt dieser Inhalt von AEM und wird über die Inhaltssynchronisierung in seine statische Form exportiert.
 
 #### www/config.xml {#www-config-xml}
 
-Die PhoneGap-Dokumentation (`https://docs.phonegap.com`) verweist auf diese Datei als &quot;globale Konfigurationsdatei&quot;. Die Datei &quot;config.xml&quot;enthält viele App-Eigenschaften, z. B. den Namen der App, die Voreinstellungen der App (z. B. ob eine iOS-Webansicht einen Überlauf zulässt) und Plugin-Abhängigkeiten, die vom PhoneGap-Build *nur* genutzt werden.
+In der PhoneGap-Dokumentation (`https://docs.phonegap.com`) wird diese Datei als „globale Konfigurationsdatei“ bezeichnet. Die Datei config.xml enthält viele App-Eigenschaften, z. B. den Namen der App, die „Voreinstellungen“ der App (z. B. ob eine iOS-Webansicht einen Überlauf zulässt oder nicht) und Plug-in-Abhängigkeiten, die *nur* vom PhoneGap-Build genutzt werden.
 
-Die Datei &quot;config.xml&quot;ist eine statische Datei in AEM und wird unverändert über die Inhaltssynchronisierung exportiert.
+Die Datei config.xml ist eine statische Datei in AEM und wird wie besehen über die Inhaltssynchronisierung exportiert.
 
 #### www/index.html {#www-index-html}
 
-Die Datei index.html leitet zur Startseite der App weiter.
+Die Datei „index.html“ wird zur Startseite der App weitergeleitet.
 
-Die Datei config.xml enthält das Element `content` :
+Die Datei config.xml enthält das `content`:
 
 `<content src="content/phonegap/geometrixx/apps/ng-geometrixx-outdoors/en.html" />`
 
-In der PhoneGap-Dokumentation (`https://docs.phonegap.com`) wird dieses Element als &quot;Das optionale Element &lt;content> definiert die Startseite der App im Verzeichnis der Web-Assets auf oberster Ebene. Der Standardwert ist index.html, der normalerweise im obersten www-Verzeichnis eines Projekts angezeigt wird.&quot;
+In der PhoneGap-Dokumentation (`https://docs.phonegap.com`) wird dieses Element als „Das optionale &lt;content>-Element definiert die Startseite der App im Web-Asset-Verzeichnis der obersten Ebene. Der Standardwert ist index.html, die normalerweise im obersten www-Verzeichnis eines Projekts angezeigt wird.“
 
-Der PhoneGap-Build schlägt fehl, wenn keine index.html -Datei vorhanden ist. Daher ist diese Datei enthalten.
+Der PhoneGap-Build schlägt fehl, wenn keine index.html-Datei vorhanden ist. Daher ist diese Datei enthalten.
 
 #### www/res {#www-res}
 
-Das Verzeichnis res enthält Splash-Screen-Bilder und Symbole. Das Skript `copy_resource_files.js` kopiert die Dateien während der Build-Phase von `after_prepare` an ihre plattformspezifischen Speicherorte.
+Das Verzeichnis res enthält Startbildschirmbilder und Symbole. Das `copy_resource_files.js`-Skript kopiert die Dateien während der `after_prepare`-Build-Phase an ihre plattformspezifischen Speicherorte.
 
 #### www/etc {#www-etc}
 
-Standardmäßig enthält AEM Knoten /etc statische clientlib-Inhalte. Das Verzeichnis &quot;etc&quot;enthält die Bibliotheken Topcoat, AngularJS und Geometrixx ng-clientlibsall .
+Standardmäßig enthält der Knoten &quot;/etc“ in AEM statische Clientlib-Inhalte. Das etc-Verzeichnis enthält die Topcoat-, AngularJS- und Geometrixx ng-clientlibsall-Bibliotheken.
 
 #### www/apps {#www-apps}
 
-Der Apps-Ordner enthält Code, der mit der Splash-Seite in Verbindung steht. Das eindeutige Merkmal der Begrüßungsseite einer AEM App besteht darin, dass die App ohne Benutzerinteraktion initialisiert wird. Der clientlib-Inhalt (CSS und JS) der App ist daher minimal, um die Leistung zu maximieren.
+Das Anwendungsverzeichnis enthält Code, der mit der Splash-Seite in Verbindung steht. Die einzigartige Eigenschaft der Splash-Seite einer AEM-App besteht darin, dass sie die App ohne Benutzerinteraktion initialisiert. Der Client-Bibliotheksinhalt (CSS und JS) der App ist daher minimal, um die Leistung zu maximieren.
 
 #### www/content {#www-content}
 
-Der Inhaltsordner enthält den restlichen Webinhalt der App. Der Inhalt kann die folgenden Dateien enthalten, ist jedoch nicht darauf beschränkt:
+Das Inhaltsverzeichnis enthält den Rest des Web-Inhalts der App. Der Inhalt kann die folgenden Dateien enthalten, ist aber nicht darauf beschränkt:
 
-* HTML-Seiteninhalt, der direkt in AEM erstellt wird
-* Bild-Assets, die mit AEM Komponenten verknüpft sind
+* HTML von Seiteninhalten, die direkt in AEM verfasst werden
+* Bild-Assets, die AEM-Komponenten zugeordnet sind
 * JavaScript-Inhalte, die von serverseitigen Skripten generiert werden
-* JSON-Dateien, die den Seiten- oder Komponenteninhalt beschreiben
+* JSON-Dateien, die Seiten- oder Komponenteninhalte beschreiben
 
 #### www/package.json {#www-package-json}
 
-Die Datei &quot;package.json&quot;ist eine Manifestdatei, in der die Dateien aufgelistet werden, die ein Download der Inhaltssynchronisierung **full** enthält. Diese Datei enthält auch den Zeitstempel, mit dem die Payload der Inhaltssynchronisierung generiert wurde (`lastModified`). Diese Eigenschaft wird verwendet, wenn eine partielle Aktualisierung der App von AEM angefordert wird.
+Die Datei package.json ist eine Manifestdatei, die die Dateien auflistet, die ein Download **vollständigen** Inhaltssynchronisierung enthält. Diese Datei enthält auch den Zeitstempel, mit dem die Inhaltssynchronisierungs-Payload generiert wurde (`lastModified`). Diese Eigenschaft wird verwendet, wenn Teilaktualisierungen der App von AEM angefordert werden.
 
 #### www/package-update.json {#www-package-update-json}
 

@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
 source-git-commit: a4ccee3e8256c098339fb5308b1b4214e67b8b74
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 100%
 

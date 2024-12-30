@@ -1,6 +1,6 @@
 ---
 title: Erstellen der Exportkonfiguration für freigegebene Ressourcen
-description: Auf dieser Seite erfahren Sie, wie Sie freigegebene Ressourcen aus Adobe Experience Manager (AEM) zum Hochladen in AEM Mobile exportieren.
+description: Auf dieser Seite erfahren Sie mehr über den Export freigegebener Ressourcen aus Adobe Experience Manager (AEM) zum Hochladen in AEM Mobile.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -26,36 +26,36 @@ ht-degree: 7%
 >
 >**Voraussetzung**:
 >
->Bevor Sie mehr über das Erstellen und Ändern freigegebener Ressourcen erfahren, lesen Sie den Abschnitt [Inhaltssynchronisierung](/help/mobile/mobile-ondemand-contentsync.md) , um die grundlegenden Konzepte zu verstehen.
+>Bevor Sie mehr über das Erstellen und Ändern freigegebener Ressourcen erfahren, lesen Sie [Inhaltssynchronisierung](/help/mobile/mobile-ondemand-contentsync.md) um die grundlegenden Konzepte zu verstehen.
 
-Adobe Experience Manager (AEM) Benutzer von Mobilgeräten verwenden die Inhaltssynchronisierung, um Live-Inhalte für die Verwendung in mobilen Apps in statische Inhalte zu exportieren. Dieser Export erfolgt beim Hochladen von Inhalten in Mobile On-Demand Services von AEM Mobile.
+Adobe Experience Manager (AEM)-Mobilbenutzer verwenden Content Sync , um Live-Inhalte in statische Inhalte zur Verwendung in Mobile Apps zu exportieren. Dieser Export erfolgt, wenn Inhalte von AEM Mobile in Mobile On-Demand Services hochgeladen werden.
 
-Die in der obigen Tabelle erwähnte Eigenschaft ***dps-exportTemplate*** definiert den Pfad zu den Exportkonfigurationen der App. Legen Sie diese Eigenschaft fest, um freigegebene Ressourcen zu erstellen und zu ändern.
+Die Eigenschaft ***dps-exportTemplate*** die in der obigen Tabelle erwähnt wird, definiert den Pfad zu den Exportkonfigurationen der App. Legen Sie diese Eigenschaft fest, um freigegebene Ressourcen zu erstellen und zu ändern.
 
 Die folgenden Ressourcen beschreiben den Export freigegebener Ressourcen aus AEM zum Hochladen in AEM Mobile.
 
-Freigegebene HTML-Ressourcen ermöglichen es Artikeln, HTML-Ressourcen zu teilen, die andernfalls für alle Artikel dupliziert würden, und können Symbole, Schriftarten, JavaScript und CSS enthalten.
+Freigegebene HTML-Ressourcen ermöglichen es Artikeln, HTML-Ressourcen freizugeben, die andernfalls für alle Artikel dupliziert würden, und können Symbole, Schriftarten, JavaScript und CSS enthalten.
 
-Die unter &quot;**&lt;dps-exportTemplate>/dps-HTMLResources>**&quot;gefundene Konfiguration der Inhaltssynchronisierung sollte so konfiguriert werden, dass alle Inhalte und Artikel exportiert werden, die für das statische Rendering der Eigenschaften auf dem Gerät erforderlich sind.
+Die Konfiguration der Inhaltssynchronisierung unter **&lt;dps-exportTemplate>/dps-HTMLResources>** sollte so konfiguriert werden, dass der gesamte Inhalt eines Artikels, der für das statische Rendern von Eigenschaften auf dem Gerät erforderlich ist, exportiert wird.
 
 >[!CAUTION]
 >
->Sie können die folgenden Schritte ausführen, um Beispiel für freigegebene Ressourcen anzuzeigen, nur wenn Sie über Folgendes verfügen:
+>Sie können die folgenden Schritte ausführen, um Beispiele für freigegebene Ressourcen anzuzeigen, sofern Sie über Folgendes verfügen:
 >
->* den Beispielinhalt installiert hat
->* AEM
->* kein konfigurierter benutzerdefinierter Kontext oder ein anderer Port
+>* Beispielinhalt installiert
+>* AEM-Instanz wird ausgeführt
+>* Kein konfigurierter benutzerdefinierter Kontext oder ein anderer Port
 >
 
-Informationen zum Anzeigen einer gemeinsam genutzten Beispielressource finden Sie in den folgenden Schritten:
+Gehen Sie wie folgt vor, um eine Beispiel-freigegebene Ressource anzuzeigen:
 
-1. Öffnen Sie CRXDE Lite auf Ihrem AEM.
-1. Navigieren Sie zu diesem Pfad *[/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)* , um die gemeinsam genutzten Beispielressourcen anzuzeigen.
+1. Öffnen Sie CRXDE Lite auf Ihrem AEM-Server.
+1. Navigieren Sie zu diesem Pfad *[/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)*, um die Beispiele für freigegebene Ressourcen anzuzeigen.
 
-   Sie können alle Eigenschaften anzeigen, die für die Erstellung Ihrer freigegebenen Ressourcen erforderlich sind, wie in der folgenden Abbildung dargestellt:
+   Sie können alle Eigenschaften anzeigen, die zum Erstellen Ihrer freigegebenen Ressourcen erforderlich sind, wie in der folgenden Abbildung dargestellt:
 
    ![chlimage_1-145](assets/chlimage_1-145.png)
 
 >[!NOTE]
 >
->Freigegebene Ressourcen sollten hochgeladen oder nach AEM Mobile On-demand Services exportiert werden, wenn sich eine der freigegebenen Ressourcen ändert.
+>Freigegebene Ressourcen sollten in AEM Mobile On-demand Services hochgeladen oder exportiert werden, wenn sich eine der freigegebenen Ressourcen ändert.

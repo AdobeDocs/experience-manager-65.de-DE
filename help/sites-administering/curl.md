@@ -1,6 +1,6 @@
 ---
 title: Verwenden von cURL mit AEM
-description: Erfahren Sie, wie Sie cURL für gängige Aufgaben in Adobe Experience Manager verwenden.
+description: 'Erfahren Sie, wie Sie cURL für gängige Aufgaben in Adobe Experience Manager verwenden. '
 contentOwner: Silviu Raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations

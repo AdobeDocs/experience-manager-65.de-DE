@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von Benutzern und Benutzergruppen
-description: Auf dieser Seite erfahren Sie mehr über die Benutzerrollen und die Konfiguration Ihrer Benutzer und Gruppen zur Unterstützung der Erstellung und Verwaltung Ihrer mobilen Apps.
+description: Auf dieser Seite erfahren Sie mehr über die Benutzerrollen und die Konfiguration Ihrer Benutzer und Gruppen, um die Erstellung und Verwaltung Ihrer Mobile Apps zu unterstützen.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -22,73 +22,73 @@ ht-degree: 5%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-In diesem Kapitel werden die Benutzerrollen und die Konfiguration Ihrer Benutzer und Gruppen zur Unterstützung der Erstellung und Verwaltung Ihrer Apps beschrieben.
+In diesem Kapitel werden die Benutzerrollen und die Konfiguration Ihrer Benutzer und Gruppen beschrieben, um die Erstellung und Verwaltung Ihrer Mobile Apps zu unterstützen.
 
-## AEM Mobile-Anwendungsbenutzer und Gruppenverwaltung {#aem-mobile-application-users-and-group-administration}
+## AEM Mobile-Programmbenutzer und Gruppenverwaltung {#aem-mobile-application-users-and-group-administration}
 
-Um das Berechtigungsmodell für AEM Apps zu organisieren und zu verwalten, sind die folgenden beiden Gruppen verfügbar:
+Um das Berechtigungsmodell für AEM-Apps zu organisieren und zu verwalten, sind die beiden folgenden Gruppen verfügbar:
 
-* App-Administratoren für App-Administratoren
+* app-admins für App-Admins
 * app-authors für App-Autoren
 
-### AEM Mobile Application Content Authors (Gruppe &quot;app-author&quot;) {#aem-mobile-application-content-authors-app-author-group}
+### Inhaltsautoren von AEM Mobile-Programmen (app-author-Gruppe) {#aem-mobile-application-content-authors-app-author-group}
 
-Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring AEM Inhalte mobiler Anwendungen verantwortlich, einschließlich Seiten, Text, Bildern und Videos.
+Mitglieder der Gruppe app-author sind für das Authoring von AEM-Mobile-App-Inhalten, einschließlich Seiten, Text, Bildern und Videos, verantwortlich.
 
 #### Gruppenkonfiguration - app-authors {#group-configuration-app-authors}
 
-1. Erstellen Sie eine Benutzergruppe mit dem Namen &quot;app-authors&quot;:
+1. Erstellen Sie eine Benutzergruppe mit dem Namen „app-authors“:
 
-   Navigieren Sie zur Admin Console Benutzer : [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
+   Navigieren Sie zur Benutzer-Admin Console: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
-   Wählen Sie in der Benutzergruppenkonsole die Schaltfläche &quot;+&quot;, um eine Gruppe zu erstellen.
+   Klicken Sie in der Benutzergruppenkonsole auf die Schaltfläche &quot;+&quot;, um eine Gruppe zu erstellen.
 
-   Setzen Sie die ID dieser Gruppe auf &quot;app-authors&quot;, um anzugeben, dass es sich um einen bestimmten Typ von Autoren-Benutzergruppe handelt, die für das Authoring von Mobile Apps in AEM spezifisch ist.
+   Legen Sie die ID dieser Gruppe auf „app-authors“ fest, um anzugeben, dass es sich um einen bestimmten Typ von Autorenbenutzergruppe handelt, der für das Authoring von Mobile Apps innerhalb von AEM spezifisch ist.
 
 1. Mitglied zur Gruppe hinzufügen: Autoren
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
-   App-Autoren zur Gruppe Autoren hinzufügen
+   Hinzufügen von app-authors zur Gruppe „Authors“
 
-1. Nachdem Sie die Benutzergruppe &quot;app-authors&quot;erstellt haben, können Sie dieser neuen Gruppe über die Admin Console [Benutzer](http://localhost:4502/libs/granite/security/content/useradmin.md) einzelne Teammitglieder hinzufügen.
+1. Nachdem Sie nun die Benutzergruppe app-authors erstellt haben, können Sie dieser neuen Gruppe über die Admin Console „Benutzer[ einzelne Team-Mitglieder ](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
    Benutzergruppen bearbeiten
 
-1. Navigieren Sie zur Konsole [Berechtigungen](http://localhost:4502/useradmin) und fügen Sie Berechtigungen zum Verwalten von Cloud Services hinzu.
+1. Navigieren Sie zur [Konsole Berechtigungen](http://localhost:4502/useradmin) und fügen Sie Berechtigungen zum Verwalten von Cloud-Services hinzu
 
    * (Lesen) unter /etc/cloudservices
 
    >[!NOTE]
    >
-   >App-Autoren erweitern die standardmäßige Gruppe &quot;content-authors&quot;(Autoren) von AEM, sodass sie die Möglichkeit erben, Inhalte unter /content/phonegap zu erstellen
+   >App-Autoren erweitern die standardmäßige Gruppe der Inhaltsautoren von AEM, sodass sie die Möglichkeit erben, Inhalte unter /content/phonegap zu erstellen
 
-### AEM Mobile-Gruppe &quot;Anwendungsadministratoren&quot;(Gruppe &quot;app-admins&quot;) {#aem-mobile-application-administrators-group-app-admins-group}
+### Gruppe der AEM Mobile-Programmadministratoren (Gruppe der App-Administratoren) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit denselben Berechtigungen erstellen, die auch in den App-Autoren **UND** enthalten sind. Außerdem sind sie für Folgendes verantwortlich:
+Mitglieder der Gruppe app-admins können Programminhalte mit den gleichen Berechtigungen erstellen, die auch in app-authors **AND** enthalten sind. Darüber hinaus sind sie auch verantwortlich für:
 
-* Konfigurieren von PhoneGap Build und Adobe Mobile Services Cloud Services in AEM
-* Staging, Veröffentlichen und Löschen von OTA-Aktualisierungen für die Inhaltssynchronisierung
+* Konfigurieren von PhoneGap Build- und Adobe-Mobile-Services-Cloud-Services in AEM
+* Staging, Veröffentlichen und Löschen von OTA-Aktualisierungen zur Inhaltssynchronisierung der Anwendung
 
 >[!NOTE]
 >
 >Berechtigungen bestimmen die Verfügbarkeit einiger Benutzeraktionen im AEM App Command Center.
 >
->Beachten Sie, dass einige Optionen nicht für App-Autoren verfügbar sind, die für App-Administratoren verfügbar sind.
+>Beachten Sie, dass einige Optionen für app-authors, die für app-admins verfügbar sind, nicht verfügbar sind.
 
-#### Gruppenkonfiguration - App-Administratoren {#group-configuration-app-admins}
+#### Gruppenkonfiguration - app-admins {#group-configuration-app-admins}
 
-1. Erstellen Sie eine Gruppe namens &quot;app-admins&quot;.
-1. Fügen Sie Ihrer neuen Gruppe &quot;app-admins&quot;die folgenden Gruppen hinzu:
+1. Erstellen Sie eine Gruppe mit dem Namen app-admins.
+1. Fügen Sie die folgenden Gruppen zu Ihrer neuen Gruppe „app-admins“ hinzu:
 
    * content-authors
    * workflow-users
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
-1. Navigieren Sie zur Konsole [Berechtigungen](http://localhost:4502/useradmin) und fügen Sie Berechtigungen zum Verwalten von Cloud Services hinzu.
+1. Navigieren Sie zur [Konsole Berechtigungen](http://localhost:4502/useradmin) und fügen Sie Berechtigungen zum Verwalten von Cloud-Services hinzu
 
    * (Lesen, Ändern, Erstellen, Löschen, Replizieren) unter /etc/cloudservices/mobileservices
    * (Lesen, Ändern, Erstellen, Löschen, Replizieren) unter /etc/cloudservices/phonegap-build
@@ -100,28 +100,28 @@ Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit densel
 
    >[!NOTE]
    >
-   >Paketreplikation wird verwendet, um App-Aktualisierungen von der Autoreninstanz zur Veröffentlichungsinstanz zu veröffentlichen.
+   >Die Paketreplikation wird verwendet, um App-Aktualisierungen von der Autoreninstanz in der Veröffentlichungsinstanz zu veröffentlichen.
 
    >[!CAUTION]
    >
-   >Der Zugriff auf /var/contentsync wird standardmäßig verweigert.
+   >Der Zugriff auf /var/contentsync wird vorkonfiguriert verweigert.
    >
-   >Wenn Sie die LESE-Berechtigung auslassen, kann dies dazu führen, dass leere Aktualisierungspakete erstellt und repliziert werden.
+   >Das Auslassen der Leseberechtigung kann dazu führen, dass leere Aktualisierungspakete erstellt und repliziert werden.
 
-1. Mitglieder dieser Gruppe nach Bedarf hinzufügen
+1. Fügen Sie dieser Gruppe nach Bedarf Mitglieder hinzu
 
-## Berechtigungen für Dashboard-Kacheln {#dashboard-tile-permissions}
+## Dashboard-Kachelberechtigungen {#dashboard-tile-permissions}
 
-Dashboard-Kacheln können je nach den Berechtigungen des Benutzers unterschiedliche Aktionen anzeigen. Im Folgenden wird beschrieben, welche Aktionen für die einzelnen Kacheln verfügbar sind.
+Dashboard-Kacheln können je nach den Berechtigungen, über die der Benutzer verfügt, unterschiedliche Aktionen anzeigen. Im Folgenden wird beschrieben, welche Aktionen für jede Kachel verfügbar sind.
 
-Zusätzlich zu diesen Berechtigungen kann eine Aktion auch je nach Konfiguration der aktuellen App ein-/ausgeblendet werden. Es hat beispielsweise keinen Zweck, die Aktion &quot;Remote Build&quot;anzuzeigen, wenn der App keine PhoneGap-Cloud-Konfiguration zugewiesen wurde. Diese sind in den Abschnitten &quot;**Konfigurationsbedingung**&quot;aufgeführt.
+Zusätzlich zu diesen Berechtigungen kann eine Aktion auch je nach Konfiguration der aktuellen App ein- oder ausgeblendet werden. Wenn der App beispielsweise keine PhoneGap-Cloud-Konfiguration zugewiesen wurde, hat es keinen Sinn, die Aktion „Remote-Build“ anzuzeigen. Diese sind unten unter den Abschnitten **Konfigurationsbedingung** aufgeführt.
 
-### App-Kachel verwalten {#manage-app-tile}
+### Programmkachel verwalten {#manage-app-tile}
 
-Die Kachel verfügt derzeit über keine Aktionen, für die Berechtigungen erforderlich sind. Die Detailseite für die Anwendung weist jedoch die folgenden Aktionen auf:
+Die Kachel verfügt derzeit über keine Aktionen, für die Berechtigungen erforderlich sind. Die Detailseite für die Anwendung enthält jedoch die folgenden Aktionen:
 
-* *Bearbeiten* für app-author und app-admin (UI-Trigger - jcr:write - für /content/phonegap/{suffix})
-* *Herunterladen* für app-author und app-admin (UI-Trigger - unter /content/phonegap/{suffix})
+* *Bearbeiten* für app-author und app-admin (Benutzeroberflächen-Trigger - jcr:write - in /content/phonegap/{suffix})
+* *Download* für app-author und app-admin (Benutzeroberflächen-Trigger - unter /content/phonegap/{suffix})
 
 Die folgende Abbildung zeigt die Download- und Bearbeitungsoptionen für eine App:
 

@@ -1,6 +1,6 @@
 ---
 title: App-Definitionen
-description: Auf dieser Seite erfahren Sie mehr über App-Definitionen, mit denen Sie erkennen können, welche Bereiche und andere Konfigurationen für die App geeignet sind. Mit App-Definitionen kann der Benutzer Speicherplatz hinzufügen, ohne die App neu kompilieren zu müssen.
+description: Auf dieser Seite erfahren Sie mehr über App-Definitionen, mit denen Sie feststellen können, welche Platzierungen und anderen Konfigurationen für die App geeignet sind. Mit App-Definitionen kann der Benutzer Speicherplatz hinzufügen, ohne die App neu kompilieren zu müssen.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -22,19 +22,19 @@ ht-degree: 13%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Mit App-Definitionen können Sie ermitteln, welche Bereiche und andere Konfigurationen für die App geeignet sind. Mit App-Definitionen kann der Benutzer Speicherplatz hinzufügen, ohne die App neu kompilieren zu müssen. Die App-Definition wird aktualisiert und enthält die Informationen zu allen neuen Platzierungen.
+App-Definitionen sind eine Möglichkeit, herauszufinden, welche Platzierungen und anderen Konfigurationen für die App geeignet sind. Mit App-Definitionen kann der Benutzer Speicherplatz hinzufügen, ohne die App neu kompilieren zu müssen. Die App-Definition wird aktualisiert und enthält die Informationen für alle neuen Platzierungen.
 
 >[!NOTE]
 >
->App-Definitionen sind an eine App gebunden. Daher müssen sie in der AEM Mobile App-Konsole eine App erstellen.
+>App-Definitionen sind an eine App gebunden und erfordern daher die Erstellung einer App in der App-Konsole von AEM Mobile.
 
-## Erstellen einer Definition für eine neue App {#creating-a-new-app-definition}
+## Erstellen einer neuen App-Definition {#creating-a-new-app-definition}
 
-1. Wählen Sie **Mobil** aus der AEM Navigationskonsole aus.
+1. Wählen Sie **Mobile** in der AEM-Navigationskonsole aus.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. Wählen Sie **Apps** aus **Mobil** und klicken Sie auf **Erstellen**.
+1. Wählen Sie **Apps** unter **Mobile** aus und klicken Sie auf **Erstellen.**
 
    Wählen Sie **App** aus und geben Sie Details ein, um Ihre neue App zu erstellen.
 
@@ -42,10 +42,10 @@ Mit App-Definitionen können Sie ermitteln, welche Bereiche und andere Konfigura
 
 ### Die nächsten Schritte {#the-next-steps}
 
-Sobald Sie mit App-Definitionen vertraut sind, erfahren Sie mehr über die folgenden Authoring-Ressourcen:
+Wenn Sie mit App-Definitionen vertraut sind, erfahren Sie mehr über die folgenden Authoring-Ressourcen:
 
-* [Vorhandene Hybrid-App importieren](/help/mobile/phonegap-adding-content-to-imported-app.md)
-* [Erstellen einer neuen App mit dem Assistenten &quot;App erstellen&quot;](/help/mobile/phonegap-create-new-app.md)
+* [Importieren einer vorhandenen Hybrid-App](/help/mobile/phonegap-adding-content-to-imported-app.md)
+* [Erstellen einer neuen App mit dem Assistenten „App erstellen“](/help/mobile/phonegap-create-new-app.md)
 * [Content Services](/help/mobile/develop-content-as-a-service.md)
 
 ## Zusätzliche Ressourcen {#additional-resources}

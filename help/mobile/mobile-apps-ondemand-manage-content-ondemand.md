@@ -1,6 +1,6 @@
 ---
-title: Verwalten von Inhalten
-description: Inhaltsverwaltungsaktionen sind die Bausteine, mit denen Inhalte in einer Anwendung erstellt und verwaltet werden können. Auf dieser Seite erfahren Sie mehr.
+title: Verwalten von Inhalt
+description: Content-Management-Aktionen sind die Bausteine, mit denen Inhalte in einer Anwendung erstellt und verwaltet werden können. Auf dieser Seite erfahren Sie mehr.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -16,45 +16,45 @@ ht-degree: 10%
 
 ---
 
-# Verwalten von Inhalten{#managing-content}
+# Verwalten von Inhalt{#managing-content}
 
 >[!NOTE]
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Inhaltsverwaltungsaktionen sind die Bausteine, mit denen Inhalte in einer Anwendung erstellt und verwaltet werden können. Die folgenden Aktionen werden für Inhalte in der Anwendung ausgeführt.
+Content-Management-Aktionen sind die Bausteine, mit denen Inhalte in einer Anwendung erstellt und verwaltet werden können. Die folgenden Aktionen werden für Inhalte in der Anwendung ausgeführt.
 
 ## Inhaltsübersicht {#content-overview}
 
-Wenn Sie an eine Online-Zeitschrift denken, enthält der Hauptinhalt Artikel, Anzeigen und die Deckblätter. In AEM können drei Haupttypen von mobilen On-Demand-Inhalten erstellt werden:
+Wenn Sie an ein Online-Magazin denken, umfasst der Hauptinhalt Artikel, Anzeigen und die Titelblätter. Innerhalb von AEM können drei Haupttypen von Mobile-On-Demand-Inhalten erstellt werden:
 
-* **Artikel**: Text, der zusammen mit Kunst zur Informationsübermittlung verwendet wird
-* **Banner:** normalerweise grafische Werbe-Links
-* **Sammlungen:** stellen einen klar definierten *Behälter* dar, der mit Inhalten wie Artikeln oder Bannern gefüllt ist, die zum Thema des Titelbildes passen
+* **Artikel**: Textbasiert zusammen mit Kunst, um Informationen zu vermitteln
+* **Banner:** normalerweise grafische Werbelinks
+* **Sammlungen:** stellen einen klar definierten *Behälter* mit Inhalten wie Artikeln oder Bannern dar, der zum Thema des Covers passt
 
-* **Freigegebene Ressourcen:** ermöglicht die Wiederverwendung oder Freigabe von gemeinsamen Elementen in Artikeln
+* **Freigegebene Ressourcen:** die Wiederverwendung oder Freigabe von gemeinsamen Elementen in allen Artikeln
 
 >[!NOTE]
 >
->Weitere Informationen zu Designüberlegungen für AEM Mobile-Apps finden Sie unter [Designüberlegungen für AEM Mobile-Apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in der Online-Hilfe.
+>Weitere Informationen über Entwurfsüberlegungen für AEM Mobile-Apps finden Sie unter [Entwurfsüberlegungen für AEM Mobile-Apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in der Online-Hilfe.
 
-## Erstellen und Verwalten von Inhalten {#creating-and-managing-content}
+## Erstellen und Verwalten von Inhalt {#creating-and-managing-content}
 
-In den folgenden Themen wird die Erstellung und Verwaltung von Inhalten beschrieben, d. h. von Artikeln, Bannern und Sammlungen. Sobald Sie wissen, wie Sie den Inhalt erstellen und verwalten können, werden Ihnen weitere Themen angezeigt, wie das Hochladen freigegebener Ressourcen, das Veröffentlichen/Rückgängigmachen der Veröffentlichung von Inhalten und die Vorschau mit Preflight.
+Die folgenden Themen beschreiben die Erstellung und Verwaltung von Inhalten, nämlich Artikeln, Bannern und Sammlungen. Sobald Sie wissen, wie Inhalte erstellt und verwaltet werden, können Sie zusätzliche Themen sehen, z. B. das Hochladen freigegebener Ressourcen, das Veröffentlichen/Rückgängigmachen der Veröffentlichung von Inhalten und die Vorschau mit Preflight.
 
-* [Verwalten von Artikeln](/help/mobile/mobile-on-demand-managing-articles.md)
-* [Banner verwalten](/help/mobile/mobile-on-demand-managing-banners.md)
+* [Artikel verwalten](/help/mobile/mobile-on-demand-managing-articles.md)
+* [Verwalten von Bannern](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Verwalten von Sammlungen](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Hochladen freigegebener Ressourcen](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Publish - Inhalte nicht veröffentlichen](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publish - Veröffentlichung von Inhalten aufheben](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 >[!NOTE]
 >
->Im Allgemeinen sollten Sie Preflight vor der Veröffentlichung von Inhalten verwenden. Weitere Informationen finden Sie unter [Vorschau mit Preflight anzeigen](/help/mobile/aem-mobile-manage-ondemand-services.md) .
+>Im Allgemeinen sollten Sie Preflight vor der Veröffentlichung von Inhalten verwenden. Weitere Informationen finden [ unter „Vorschau mit ](/help/mobile/aem-mobile-manage-ondemand-services.md)&quot;.
 
 ### Zusätzliche Ressourcen {#additional-resources}
 
-Informationen zu den Rollen und Zuständigkeiten von Administratoren und Entwicklern finden Sie in den folgenden Ressourcen:
+Informationen zu den Rollen und Zuständigkeiten eines Administrators bzw. einer Administratorin und eines Entwicklers finden Sie in den folgenden Ressourcen:
 
-* [Entwickeln von AEM für AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Entwickeln von AEM-Inhalten für AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Verwalten von Inhalten zur Verwendung von AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)

@@ -1,6 +1,6 @@
 ---
 title: Authoring für Adobe PhoneGap Enterprise in Adobe Experience Manager
-description: Erfahren Sie mehr über das Authoring für Adobe PhoneGap Enterprise mithilfe von Vorlagen und Komponenten zum Hinzufügen und Bearbeiten von Seiten, zum Ziehen und Ablegen von Komponenten und zum Hinzufügen von Medien.
+description: Erfahren Sie mehr über das Authoring für Adobe PhoneGap Enterprise mit Vorlagen und Komponenten zum Hinzufügen und Bearbeiten von Seiten, Ziehen und Ablegen von Komponenten und Hinzufügen von Medien.
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -21,9 +21,9 @@ ht-degree: 13%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Adobe Experience Manager (AEM) Mobile ist nur eine Säule, die die gesamte AEM Plattform bildet.
+Adobe Experience Manager (AEM) Mobile ist nur eine Säule der AEM-Komplettplattform.
 
-Für den Start eines neuen AEM Mobile-App-Erlebnisses müssen mehrere Rollen kodiert werden, bevor es für die Inhaltsbearbeitung bereit ist. Die folgenden Rollen bieten einen Ausgangspunkt für die Erstellung einer AEM Mobile-Anwendung:
+Um ein neues AEM Mobile-App-Erlebnis zu starten, müssen mehrere Personen mit unterschiedlichen Rollen zusammenarbeiten. Die folgenden Rollen bieten einen Ausgangspunkt für die Erstellung eines AEM Mobile-Programms:
 
 * **Administrator**
 * **Entwickler**
@@ -31,23 +31,23 @@ Für den Start eines neuen AEM Mobile-App-Erlebnisses müssen mehrere Rollen kod
 
 ## Authoring von PhoneGap-Anwendungen {#authoring-phonegap-applications}
 
-Ein ***AEM-Autor* (oder *Marketer*)**kann die vordefinierten Vorlagen und Komponenten verwenden, um Seiten hinzuzufügen und zu bearbeiten. Sie können Komponenten per Drag &amp; Drop verschieben und Medien aller Typen aus dem DAM hinzufügen, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmente).
+Ein ***AEM-* (oder *Marketer*)**kann die vordefinierten Vorlagen und Komponenten verwenden, um Seiten hinzuzufügen und zu bearbeiten. Sie können Komponenten per Drag-and-Drop aus dem DAM ziehen und Medien aller Art, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmenten), hinzufügen.
 
 Sehen Sie sich die folgenden Ressourcen an:
 
-* [Erstellen von mobilen Anwendungen](/help/mobile/phonegap-authoring-apps.md)
+* [Erstellen von Mobile Apps](/help/mobile/phonegap-authoring-apps.md)
 * [Erstellen und Verwalten von App-Inhalten](/help/mobile/phonegap-manage-app-content.md)
-* [App-Kachel verwalten](/help/mobile/phonegap-app-details-tile.md)
+* [Programmkachel verwalten](/help/mobile/phonegap-app-details-tile.md)
 * [Bearbeiten von App-Metadaten](/help/mobile/phonegap-editmetadata.md)
 * [App-Definitionen](/help/mobile/phonegap-app-definitions.md)
-* [Erstellen einer AEM Mobile-App mit dem Assistenten zum Erstellen](/help/mobile/phonegap-create-new-app.md)
-* [Vorhandene Hybrid-App importieren](/help/mobile/phonegap-adding-content-to-imported-app.md)
+* [Erstellen einer AEM Mobile-App mit dem Assistenten „Erstellen“](/help/mobile/phonegap-create-new-app.md)
+* [Importieren einer vorhandenen Hybrid-App](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-Weitere Informationen zu **Content Services** finden Sie in den ersten Schritten unter [Übersicht über Content Services](/help/mobile/develop-content-as-a-service.md) .
+Weitere Informationen zu **Content Services** finden Sie unter [Übersicht über Content Services](/help/mobile/develop-content-as-a-service.md).
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Informationen zu den Rollen und Zuständigkeiten von Administratoren und Entwicklern finden Sie in den folgenden Ressourcen:
+Informationen zu den Rollen und Zuständigkeiten eines Administrators bzw. einer Administratorin und eines Entwicklers finden Sie in den folgenden Ressourcen:
 
 * [Entwickeln für Adobe PhoneGap Enterprise mit AEM](/help/mobile/developing-in-phonegap.md)
 * [Verwalten von Inhalten für Adobe PhoneGap Enterprise mit AEM](/help/mobile/administer-phonegap.md)

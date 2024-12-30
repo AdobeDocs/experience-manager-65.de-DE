@@ -1,5 +1,5 @@
 ---
-title: Aktivieren von CRXDE Lite in AEM
+title: 'Aktivieren von CRXDE Lite in AEM '
 description: Erfahren Sie, wie Sie CRXDE Lite in Adobe Experience Manager aktivieren.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: a3587d248569982a8f9b137602ba95dd40c47012
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 100%
 

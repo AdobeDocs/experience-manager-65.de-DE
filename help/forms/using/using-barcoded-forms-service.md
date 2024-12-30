@@ -12,7 +12,7 @@ role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -94,7 +94,7 @@ Der Dienst „Barcode-Formulare“ gibt nach Dekodierung der Barcodes das folgen
 
 ### Workflows, die mit Barcode versehene Formulare verwenden {#workflows-that-use-barcoded-forms}
 
-Autorinnen und Autoren von Formularen erstellen interaktive Formulare mit Barcode mithilfe von Designer. (Weitere Informationen finden Sie in der [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63_de).) Wenn Sie ein Barcode-Formular mit Adobe Reader, Acrobat Professional oder Acrobat Standard ausfüllen, wird der Barcode automatisch aktualisiert, um die eingegebenen Formulardaten zu verschlüsseln. 
+Autorinnen und Autoren von Formularen erstellen interaktive Formulare mit Barcode mithilfe von Designer. (Siehe [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63_de).) Wenn ein Benutzer ein Barcode-Formular mithilfe von Adobe Reader oder Acrobat ausfüllt, wird der Barcode automatisch aktualisiert, um die Formulardaten zu codieren.
 
 Der Dienst „Barcode-Formulare“ dient zum Konvertieren von Daten, die in Papierform vorliegen, in ein vom Computer lesbares Format. Beispiel: Wenn ein mit Barcode versehenes Formular ausgefüllt und gedruckt wird, kann die gedruckte Kopie gescannt werden und als Eingabe für den Dienst „Barcode-Formulare“ dienen.
 

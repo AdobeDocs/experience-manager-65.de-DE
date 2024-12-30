@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
 source-git-commit: 207c6bcc25eca05d128115f7235e83a6965009c5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 100%
 

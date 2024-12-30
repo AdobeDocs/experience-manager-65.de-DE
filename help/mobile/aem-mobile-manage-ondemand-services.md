@@ -1,6 +1,6 @@
 ---
 title: Vorschau mit Preflight
-description: Erfahren Sie, wie Sie die Mobile On-Demand Preflight-App verwenden können, damit Sie alle Projekte anzeigen können, auf die Sie Zugriff haben.
+description: Erfahren Sie, wie Sie die Mobile On-Demand Preflight-App verwenden, um alle Projekte anzuzeigen, auf die Sie Zugriff haben.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -24,9 +24,9 @@ Auf dieser Seite wird die Vorschau mit der Preflight-App erläutert.
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Die folgenden Aktionen werden für die Anwendung als Ganzes ausgeführt.
+Die folgenden Aktionen werden für die gesamte Anwendung ausgeführt.
 
-Mit der Mobile On-Demand Preflight-App können Sie alle Projekte anzeigen, auf die Sie Zugriff haben. Nachdem Sie ein Projekt ausgewählt haben, können Sie eine Vorschau der App-Inhalte anzeigen, einschließlich Durchsuchen von Seiten und Artikeln, um ein Gefühl dafür zu erhalten, wie die App auf verschiedenen Geräten aussieht und funktioniert.
+Mit der Mobile On-Demand Preflight-App können Sie alle Projekte anzeigen, auf die Sie Zugriff haben. Nachdem Sie ein Projekt ausgewählt haben, können Sie sich eine Vorschau der App-Inhalte anzeigen lassen, einschließlich der Navigation auf Seiten und Artikeln, um ein Gefühl dafür zu bekommen, wie die App auf verschiedenen Geräten aussieht und funktioniert.
 
 >[!NOTE]
 >
@@ -34,29 +34,29 @@ Mit der Mobile On-Demand Preflight-App können Sie alle Projekte anzeigen, auf d
 
 ## Vorschau mit Preflight {#previewing-with-preflight-1}
 
-1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Klicken Sie in der Kachel **Artikel verwalten** (oder Banner/Sammlungen) auf die Auslassungszeichen (...).
-1. Wählen Sie **Preflight** aus der Aktionsleiste aus.
-1. Klicken Sie im Dialogfeld auf **Preflight aktivieren** .
-1. Ihre App kann jetzt in der Mobile On-Demand-Preflight-App als Vorschau angezeigt werden.
+1. Wählen Sie unter Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
+1. Klicken Sie auf die Auslassungszeichen (…) in der Kachel **Artikel verwalten** (oder Banner/Sammlungen).
+1. Wählen **Preflight** in der Aktionsleiste aus.
+1. Klicken Sie **Dialogfeld auf** Preflight aktivieren“.
+1. Ihre App ist jetzt für die Vorschau in der Mobile On-Demand Preflight-App bereit.
 
 ![chlimage_1-8](assets/chlimage_1-8.gif)
 
 >[!NOTE]
 >
->Die AEM Preflight-App wird für die Vorschau von Inhalten und Durchsuchen von Seiten verwendet. Um ausführliche Informationen zur Preflight-App zu erhalten, klicken Sie auf [hier](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>Die AEM Preflight-App wird für die Vorschau von Inhalten und das Durchsuchen von Seiten verwendet. Um mehr über Preflight App zu erfahren, klicken Sie [hier](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
-### Erste Schritte {#getting-ahead}
+### Vorwärtskommen {#getting-ahead}
 
-Wenn Sie weitere Informationen zum Erstellen von Inhalten benötigen, finden Sie weitere Informationen in den folgenden Ressourcen, um Inhalte in einer AEM Mobile-Anwendung zu erstellen und zu verwalten:
+Wenn Sie weiterhin weitere Informationen zum Erstellen von Inhalten benötigen, finden Sie in den folgenden Ressourcen Informationen zum Erstellen und Verwalten von Inhalten in einer AEM Mobile-Anwendung:
 
-* [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
-* [Verwalten von Inhalten](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
+* [AEM Mobile-Anwendungs-Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
+* [Verwalten von Inhalt](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Weitere Informationen zu den beiden anderen Rollen und Zuständigkeiten beim Erstellen einer AEM Mobile On-demand Services App finden Sie in den folgenden Ressourcen:
+Weitere Informationen zu den beiden anderen Rollen und Zuständigkeiten beim Erstellen einer AEM Mobile On-demand Services-App finden Sie in den folgenden Ressourcen:
 
-* [Entwickeln von AEM für AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
-* [Inhaltserstellung AEM AEM Mobile On-demand Services App](/help/mobile/mobile-apps-ondemand.md)
+* [Entwickeln von AEM-Inhalten für AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Authoring von AEM-Inhalten für die AEM Mobile On-demand Services-App](/help/mobile/mobile-apps-ondemand.md)
