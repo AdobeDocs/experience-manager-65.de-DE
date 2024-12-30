@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5466'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -489,7 +489,7 @@ Wenn Sie die Veröffentlichung eines Video-Assets in Experience Manager aufheben
 
 1. Navigieren Sie zu den Video-Assets, deren Veröffentlichung in Ihrem YouTube-Kanal Sie aufheben möchten.
 1. Wählen Sie in einem Asset-Auswahlmodus eines oder mehrere der veröffentlichten Video-Assets aus.
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**. Wählen Sie das Drei-Punkte-Symbol (…) in der Symbolleiste, sodass **[!UICONTROL Veröffentlichung verwalten]** geöffnet wird.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**. Wählen Sie das Symbol mit den drei Punkten (.) .) in der Symbolleiste, sodass **[!UICONTROL Veröffentlichung verwalten“]**.
 1. Klicken Sie auf der Seite „Veröffentlichung verwalten“ auf **[!UICONTROL Veröffentlichung rückgängig machen]**.
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Weiter]**.
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Veröffentlichung rückgängig machen]**.

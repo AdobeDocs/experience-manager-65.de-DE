@@ -6,7 +6,7 @@ feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9caee314-697b-4a7b-b991-10352da17f2c
 source-git-commit: 3f11bba91cfb699dc216cf312eaf93fd9bbfe121
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 100%
 

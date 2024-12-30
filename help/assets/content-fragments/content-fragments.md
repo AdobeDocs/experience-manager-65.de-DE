@@ -39,7 +39,7 @@ Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurier
 
 * [Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md): Aktivieren, Erstellen und Definieren Ihrer Modelle
-* [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md): Erstellen Sie Inhaltsfragmente und bearbeiten, veröffentlichen und referenzieren Sie sie danach.
+* [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md): Erstellen Sie Inhaltsfragmente und bearbeiten, veröffentlichen und referenzieren Sie sie danach
 * [Varianten – Erstellen von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-variations.md) – Erstellen Sie das Inhaltsfragment und erstellen Sie Varianten der Vorlage
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) – Verwendung der Markdown-Syntax für Ihr Fragment
 * [Verwenden verknüpfter Inhalte](/help/assets/content-fragments/content-fragments-assoc-content.md) – Hinzufügen verknüpfter Inhalte
@@ -65,11 +65,11 @@ Wahrscheinlich möchten Sie jedoch nicht dieselben Inhalte für alle Kanäle ver
 
 Inhaltsfragmente ermöglichen Ihnen Folgendes:
 
-* Erwägen, wie sich Zielgruppen effizient kanalübergreifend erreichen lassen
-* Kanalneutrale redaktionelle Inhalte erstellen und verwalten
-* Inhaltspools für mehrere Kanäle erstellen
-* Inhaltsvarianten für bestimmte Kanäle entwerfen
-* Bilder durch Einfügen von Assets (Fragmente mit gemischten Medien) zu Texten hinzufügen
+* Erwägen, wie sich Zielgruppen effizient kanalübergreifend erreichen lassen.
+* Kanalneutrale redaktionelle Inhalte erstellen und verwalten.
+* Inhaltspools für mehrere Kanäle erstellen.
+* Inhaltsvarianten für bestimmte Kanäle entwerfen.
+* Bilder durch Einfügen von Assets (Fragmente mit gemischten Medien) zu Texten hinzufügen.
 * Erstellen Sie verschachtelte Inhalte, um die Komplexität Ihrer Daten widerzuspiegeln.
 
 Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über verschiedene Kanäle bereitzustellen.
@@ -147,7 +147,7 @@ Inhaltsfragmente sind eine Inhaltsstruktur mit folgenden Eigenschaften:
 
 ### Fragmente mit visuellen Assets {#fragments-with-visual-assets}
 
-Um Autoren eine bessere Kontrolle über eigene Inhalte zu ermöglichen, können Bilder zu einem Inhaltsfragment hinzugefügt und/oder darin integriert werden.
+Um Autorinnen und Autoren eine bessere Kontrolle über eigene Inhalte zu ermöglichen, können zu einem Inhaltsfragment Bilder hinzugefügt und/oder darin integriert werden.
 
 Assets können auf verschiedene Weise mit einem Inhaltsfragment verwendet werden, mit jeweiligen Vorteilen:
 
@@ -225,7 +225,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
 * **Fragmentmetadaten**
 
-   * Verwendung der [Assets-Metadatenschemata](/help/assets/metadata-schemas.md)
+   * Verwendung der [Assets-Metadatenschemata](/help/assets/metadata-schemas.md).
    * Tag-Erstellung möglich:
 
       * Beim Erstellen und Bearbeiten des Fragments

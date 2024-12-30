@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Manager 6.5 Communities-Anleitung
-description: Erstellen Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen. In diesem Handbuch erfahren Sie, wie Sie Communities bereitstellen, verwalten, entwickeln und erstellen.
+title: Adobe Experience Manager 6.5 Communities-Handbuch
+description: Erstellen Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Social-Media-Funktionen. In diesem Handbuch wird erläutert, wie Communities bereitgestellt, verwaltet, entwickelt und verfasst werden.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
 solution: Experience Manager
 feature: Communities
@@ -12,6 +12,6 @@ ht-degree: 0%
 
 ---
 
-# Adobe Experience Manager (AEM) 6.5 Communities-Anleitung
+# Adobe Experience Manager (AEM) 6.5 Communities-Handbuch
 
-Erstellen Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen. In diesem Handbuch erfahren Sie, wie Sie Communities bereitstellen, verwalten, entwickeln und erstellen.
+Erstellen Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Social-Media-Funktionen. In diesem Handbuch wird erläutert, wie Communities bereitgestellt, verwaltet, entwickelt und verfasst werden.

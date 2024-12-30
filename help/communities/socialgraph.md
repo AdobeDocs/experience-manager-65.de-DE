@@ -1,6 +1,6 @@
 ---
-title: Social-Diagramm verwenden
-description: Erfahren Sie, wie Sie einer Seite eine Komponente vom Typ Folgende hinzufügen, mit der angemeldete Community-Mitglieder Aktivitäten folgen oder folgen können.
+title: Verwenden eines Social Media-Diagramms
+description: Erfahren Sie, wie Sie einer Seite eine folgende Komponente hinzufügen, mit der angemeldete Community-Mitglieder Aktivitäten verfolgen oder befolgt werden können.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -16,30 +16,30 @@ ht-degree: 1%
 
 ---
 
-# Social-Diagramm verwenden {#using-social-graph}
+# Verwenden eines Social Media-Diagramms {#using-social-graph}
 
 ## Einführung {#introduction}
 
-Die Fähigkeit eines Community-Mitglieds, [Aktivitäten](activities.md) zu folgen und ihnen zu folgen, wird durch zwei Komponenten festgelegt: `Follow` und `Following`.
+Die Möglichkeit für ein Community-Mitglied, [Aktivitäten](activities.md) zu verfolgen, wird durch zwei Komponenten eingerichtet: `Follow` und `Following`.
 
-Die Komponente `Follow` muss mit einer anderen Ressource verknüpft sein, und diese Zuordnung ist bereits für Community-Mitglieder und -Funktionen eingerichtet.
+Die `Follow`-Komponente muss einer anderen Ressource zugeordnet sein, und diese Zuordnung wurde bereits für Community-Mitglieder und -Funktionen eingerichtet.
 
-Die Komponente `Following` listet einfach die Mitglieder auf, die dem aktuellen Mitglied folgen oder dem aktuellen Mitglied folgen. Dieses soziale Diagramm der Beziehungen zwischen Mitgliedern ist in dem Benutzerprofil enthalten, das für eine [Community-Site](overview.md#communitiessites) festgelegt wurde.
+Die `Following`-Komponente listet einfach die Elemente auf, die entweder auf das aktuelle Element folgen oder auf die das aktuelle Element folgt. Dieses soziale Diagramm der Beziehungen zwischen Mitgliedern ist im Benutzerprofil enthalten, das für eine [Community-Site](overview.md#communitiessites) eingerichtet wurde.
 
-## Hinzufügen von Folgenden zu einer Seite {#adding-following-to-a-page}
+## Hinzufügen von Folgendem zu einer Seite {#adding-following-to-a-page}
 
-Wenn Sie im Autorenmodus einer Seite die Komponente `Following` hinzufügen möchten, suchen Sie die Komponente `Communities / Following` und ziehen Sie sie an die gewünschte Stelle auf einer Seite, auf der das Social-Diagramm angezeigt werden soll.
+Wenn Sie einer Seite im Autorenmodus eine `Following` Komponente hinzufügen möchten, suchen Sie die Komponente `Communities / Following` und ziehen Sie sie an die Position auf einer Seite, auf der das soziale Diagramm angezeigt werden soll.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
+Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [erforderlichen clientseitigen Bibliotheken](essentials-socialgraph.md#essentials-for-client-side) eingeschlossen sind, wird die Komponente `Following` wie folgt angezeigt:
+Wenn die [erforderlichen Client-seitigen ](essentials-socialgraph.md#essentials-for-client-side) enthalten sind, wird die `Following` Komponente wie folgt angezeigt:
 
-![following](assets/following.png)
+![folgende](assets/following.png)
 
-## Konfigurieren der folgenden {#configuring-following}
+## Konfigurieren von Folgendem {#configuring-following}
 
-Derzeit ist es erforderlich, die -Eigenschaft festzulegen, um zu bestimmen, ob die Komponente die `follows`-Beziehung oder die `following`-Beziehung anzeigt.
+Derzeit muss die Eigenschaft festgelegt werden, um zu bestimmen, ob die Komponente die `follows` Beziehung oder die `following` Beziehung anzeigt.
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Entwickler-Seite [Social-Diagrammgrundlagen](essentials-socialgraph.md) .
+Weitere Informationen finden Sie auf der Seite [Social Graph Essentials](essentials-socialgraph.md) für Entwickler.

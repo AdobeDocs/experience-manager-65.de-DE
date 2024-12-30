@@ -1,6 +1,6 @@
 ---
-title: Tag-Grundlagen
-description: Erfahren Sie, wann Communities-Komponenten mit aktiviertem Tagging konfiguriert sind. Community-Mitglieder können Inhalte taggen, die sie in der Veröffentlichungsumgebung posten.
+title: Tag Essentials
+description: Erfahren Sie, wie Community-Komponenten mit aktiviertem Tagging konfiguriert werden und Community-Mitglieder Inhalte taggen können, die sie in der Veröffentlichungsumgebung posten.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -16,19 +16,19 @@ ht-degree: 4%
 
 ---
 
-# Tag-Grundlagen {#tag-essentials}
+# Tag Essentials {#tag-essentials}
 
-Wenn AEM Communities-Komponenten mit aktiviertem Tagging konfiguriert sind, können Community-Mitglieder den Inhalt taggen, den sie in der Veröffentlichungsumgebung posten.
+Wenn AEM Communities-Komponenten mit aktiviertem Tagging konfiguriert sind, können Community-Mitglieder den Inhalt, den sie in der Veröffentlichungsumgebung posten, mit Tags versehen.
 
-Die zugrunde liegende Infrastruktur für Tags, die in der Veröffentlichungsumgebung angewendet werden, entspricht der für Tags, die in der Autorenumgebung auf Inhalte angewendet werden, wie z. B. Seiten und Assets:
+Die zugrunde liegende Infrastruktur für Tags, die in der Veröffentlichungsumgebung angewendet werden, ist dieselbe wie für Tags, die auf Inhalte in der Autorenumgebung, z. B. Seiten und Assets, angewendet werden:
 
-* Informationen zum Erstellen und Verwalten von Tags finden Sie unter [Verwalten von Tags](../../help/sites-administering/tags.md) und [Tagging benutzergenerierter Inhalte](tag-ugc.md) (UGC).
+* Informationen [ Erstellen und Verwalten von Tags finden ](../../help/sites-administering/tags.md) unter Verwalten [ Tags und Tagging ](tag-ugc.md) benutzergenerierten Inhalten UGC).
 
-* Informationen zum Tagging-Framework [ und zum Einschließen und Erweitern von Tags in [benutzerdefinierte Anwendungen](../../help/sites-developing/building.md) finden Sie unter [Tagging für Entwickler](../../help/sites-developing/tags.md) .](../../help/sites-developing/framework.md)
+* Unter [Tagging für Entwickler](../../help/sites-developing/tags.md) finden Sie Informationen über das [Tagging-Framework](../../help/sites-developing/framework.md) sowie die Einbeziehung und Erweiterung von Tags in [benutzerdefinierten Anwendungen](../../help/sites-developing/building.md).
 
-* Unter [Verwenden der Social Tag Cloud](tagcloud.md) finden Sie Informationen für Autoren dazu, wie eine `social tag cloud` -Komponente zu einer Seite hinzugefügt wird, um die auf UGC angewandten Tags in der Veröffentlichungsumgebung hervorzuheben.
+* Informationen [ Autoren zum Hinzufügen einer `social tag cloud`-Komponente zu einer Seite, um die Tags hervorzuheben, die in der Veröffentlichungsumgebung auf benutzergenerierten Inhalt (UGC) angewendet werden, finden Sie unter „Verwenden von Social Tag ](tagcloud.md)&quot;.
 
-Das Tagging von UGC kann beim Konfigurieren einer [Community-Site](sites-console.md#tagging) oder einer der folgenden Funktionen aktiviert werden:
+Das Tagging von benutzergenerierten Inhalten kann bei der Konfiguration einer [Community-Site](sites-console.md#tagging) oder einer der folgenden Funktionen aktiviert werden:
 
 * [Blog](blog-feature.md)
 * [Kalender](calendar.md)
@@ -36,7 +36,7 @@ Das Tagging von UGC kann beim Konfigurieren einer [Community-Site](sites-console
 * [Forum](forum.md)
 * [Fragen und Antworten](working-with-qna.md)
 
-## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 ### Social Tag-Cloud {#social-tag-cloud}
 
@@ -47,15 +47,15 @@ Das Tagging von UGC kann beim Konfigurieren einer [Community-Site](sites-console
    <td>social/commons/components/hbs/tagcloud</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inklusive</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
    <td>cq.social.hbs.tagcloud</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>Vorlagen</strong></td>
    <td> /libs/social/commons/components/hbs/tagcloud/tagcloud.hbs<br /> </td>
   </tr>
   <tr>
@@ -64,23 +64,23 @@ Das Tagging von UGC kann beim Konfigurieren einer [Community-Site](sites-console
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td>Siehe <a href="tagcloud.md">Verwenden von Social Tag Cloud</a> .</td>
+   <td>Siehe <a href="tagcloud.md">Verwenden von Social Tag Cloud</a></td>
   </tr>
  </tbody>
 </table>
 
-* [Clientseitige Anpassungen](client-customize.md)
+* [Client-seitige Anpassungen](client-customize.md)
 
-## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
+## Grundlagen für Server-seitige {#essentials-for-server-side}
 
 * [Social Tag Cloud-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [Social Tag-Manager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [Social Tag Manager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
-* [Serverseitige Anpassungen](server-customize.md)
+* [Server-seitige Anpassungen](server-customize.md)
 
 ## Tag-Suche {#tag-searching}
 
-Ab [Feature Pack 1](deploy-communities.md#latestfeaturepack) (FP1) wird die Tag-Suche mit [Tag-Titeln](../../help/sites-developing/framework.md#tag-characteristics) durchgeführt.
+Ab [Feature Pack 1](deploy-communities.md#latestfeaturepack) (FP1) wird die Tag-Suche mit „Tag[Titeln“ ](../../help/sites-developing/framework.md#tag-characteristics).
 
-Vor FP1 wurde die Suche mit [Tag-IDs](../../help/sites-developing/framework.md#tagid) durchgeführt.
+Vor FP1 wurde die Suche mit „Tag[IDs“ ](../../help/sites-developing/framework.md#tagid).

@@ -1,6 +1,6 @@
 ---
-title: Bewertungsgrundlagen
-description: Erfahren Sie, wie mit der Komponente Bewertung, einer Tally-Unterklasse, angemeldete Community-Mitglieder eine Funktion auf der Website bewerten können.
+title: Grundlagen zur Bewertung
+description: Erfahren Sie, wie die Bewertungskomponente, eine Tally-Unterklasse, angemeldeten Community-Mitgliedern die Bewertung einer Funktion auf der Website ermöglicht.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -16,15 +16,15 @@ ht-degree: 1%
 
 ---
 
-# Bewertungsgrundlagen {#rating-essentials}
+# Grundlagen zur Bewertung {#rating-essentials}
 
-Die Bewertungskomponente, eine Unterklasse [tally](tally.md), ermöglicht angemeldeten Community-Mitgliedern, eine Funktion auf der Website zu bewerten.
+Die Bewertungskomponente, eine [tally](tally.md)-Unterklasse, ermöglicht angemeldeten Community-Mitgliedern, eine Funktion auf der Website zu bewerten.
 
-Das Platzieren mehrerer Instanzen einer Abstimmungskomponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name` -Eigenschaft konfiguriert werden.
+Die Platzierung mehrerer Instanzen einer Abstimmkomponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name`-Eigenschaft konfiguriert werden.
 
-Das anonyme Posten einer Bewertung wird nicht unterstützt. Besucher der Site müssen sich nur einmal registrieren und sich anmelden, um an einer Bewertung teilnehmen zu können. Der angemeldete Besucher (Mitglied) kann seine Bewertung jederzeit ändern.
+Die anonyme Veröffentlichung einer Bewertung wird nicht unterstützt. Besuchende der Site müssen sich nur einmal registrieren und anmelden, um an einer Bewertung teilzunehmen. Der angemeldete Besucher (Mitglied) kann seine Bewertung jederzeit ändern.
 
-## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -33,15 +33,15 @@ Das anonyme Posten einer Bewertung wird nicht unterstützt. Besucher der Site m�
    <td> social/tally/components/hbs/rating</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
-   <td>Ja - Eigenschaften können im Modus <i>design </i> bearbeitet werden</td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inklusive</strong></a></td>
+   <td>Ja - Eigenschaften können im Design<i>Modus bearbeitet </i>.</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
    <td> cq.social.hbs.rating</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>Vorlagen</strong></td>
    <td><p> /libs/social/tally/components/hbs/rating/rating.hbs<br /> /libs/social/tally/components/hbs/rating/display.hbs<br /> /libs/social/tally/components/hbs/rating/histogram.hbs</p> </td>
   </tr>
   <tr>
@@ -50,33 +50,33 @@ Das anonyme Posten einer Bewertung wird nicht unterstützt. Besucher der Site m�
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td><p>Siehe <a href="rating.md">Verwenden von Bewertung</a> .</p> </td>
+   <td><p>Siehe <a href="rating.md">Verwenden von Bewertungen</a></p> </td>
   </tr>
  </tbody>
 </table>
 
-* [Clientseitige Anpassungen](client-customize.md)
+* [Client-seitige Anpassungen](client-customize.md)
 
-## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
+## Grundlagen für Server-seitige {#essentials-for-server-side}
 
 * [Tally-APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tally Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
-* [Serverseitige Anpassungen](server-customize.md)
+* [Server-seitige Anpassungen](server-customize.md)
 
-### Zugreifen auf gepostete Bewertungen (UGC) {#accessing-posted-ratings-ugc}
+### Zugreifen auf veröffentlichte Bewertungen (UGC) {#accessing-posted-ratings-ugc}
 
-UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
+UGC sollte mit einer der Standardmethoden für die Mäßigung moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für benutzergenerierte Inhalte den programmatischen Zugriff auf benutzergenerierte Inhalte, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [Common Store](working-with-srp.md) für UGC den programmgesteuerten Zugriff auf UGC, unabhängig von der gewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
 
-**Speicherort und Format des UGC im Repository können sich ohne Warnung ändern**.
+**Speicherort und Format des benutzergenerierten Inhalts im Repository können sich ohne Warnung ändern**.
 
 Siehe:
 
-* [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
-* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
-* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
+* [Storage Resource Provider-Übersicht](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
+* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Hilfsmethoden und -Beispiele.
+* [Zugriff auf benutzergenerierten Inhalt mit SRP](accessing-ugc-with-srp.md) - Codierungs-Richtlinien.
+* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnung veralteter Hilfsmethoden zu aktuellen SRP-Hilfsmethoden.

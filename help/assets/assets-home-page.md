@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Assets] Erlebnis auf der Homepage'
+title: '[!DNL Assets]-Startseiten-Erlebnis'
 description: Personalisieren Sie die  [!DNL Experience Manager Assets] -Startseite, um Benutzenden ein ansprechendes Erlebnis auf dem Willkommensbildschirm zu bieten, einschließlich einer Übersicht der letzten Aktivitäten rund um Assets.
 contentOwner: AG
 feature: Asset Management

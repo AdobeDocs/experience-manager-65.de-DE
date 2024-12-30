@@ -1,6 +1,6 @@
 ---
-title: Essentials zu präsentierten Inhalten
-description: Erfahren Sie mehr über die Grundlagen der Arbeit mit speziellen Inhalten, die Sie überall auf der Community-Site hervorheben möchten.
+title: Grundlagen zu vorgestellten Inhalten
+description: Erfahren Sie mehr über die Grundlagen der Arbeit mit vorgestellten Inhalten, die an einer beliebigen Stelle auf der Community-Site hervorgehoben werden sollen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -16,31 +16,31 @@ ht-degree: 5%
 
 ---
 
-# Essentials zu präsentierten Inhalten  {#featured-content-essentials}
+# Grundlagen zu vorgestellten Inhalten  {#featured-content-essentials}
 
-Diese Seite enthält die wichtigsten Informationen für die Arbeit mit speziellen Inhalten.
+Auf dieser Seite finden Sie die wichtigsten Informationen zum Arbeiten mit vorgestellten Inhalten.
 
-Im Gegensatz dazu, einen Beitrag an den Anfang eines Forums zu knüpfen, ermöglicht diese Funktion, dass Inhalte überall auf der Community-Site hervorgehoben werden.
+Im Gegensatz zum Anheften eines Posts an den Anfang eines Forums ermöglicht diese Funktion das Hervorheben von Inhalten an jeder Stelle innerhalb der Community-Site.
 
 
-## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/commons/components/hbs/featuredcontent</td>
+   <td>social/commons/components/hbs/featuresContent</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inklusive</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
    <td> <i>default</i></td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>Vorlagen</strong></td>
    <td> /libs/social/commons/components/hbs/featuredcontent/featuredcontent.hbs<br /> /libs/social/commons/components/hbs/featuredtopic/featuredtopic.hbs</td>
   </tr>
   <tr>
@@ -49,13 +49,13 @@ Im Gegensatz dazu, einen Beitrag an den Anfang eines Forums zu knüpfen, ermögl
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Siehe <a href="featured.md">Vorgestellter Inhalt</a></td>
+   <td>Siehe <a href="featured.md">Vorgestellte Inhalte</a></td>
   </tr>
  </tbody>
 </table>
 
-* [Clientseitige Anpassungen](client-customize.md)
+* [Client-seitige Anpassungen](client-customize.md)
 
 ### Dateibibliotheksfunktion {#file-library-function}
 
-Eine Community-Site-Struktur, die die Funktion [Vorgestellter Inhalt](functions.md#featured-content-function) enthält, enthält eine konfigurierte Komponente `featured content`.
+Eine Community-Site-Struktur, die die [Funktion für vorgestellte Inhalte](functions.md#featured-content-function) enthält, enthält eine konfigurierte `featured content`.

@@ -1,6 +1,6 @@
 ---
-title: Verwenden von "Gefällt mir"
-description: Erfahren Sie, wie Sie die Komponente "Link"hinzufügen und konfigurieren, damit Benutzer eine Meinung zu einem bestimmten Inhaltselement, z. B. zu einem Kommentar, äußern können.
+title: Verwenden von „Gefällt mir“
+description: Erfahren Sie, wie Sie die Komponente „Verknüpfung“ hinzufügen und konfigurieren, damit Benutzer eine Meinung zu einem bestimmten Inhalt äußern können, z. B. zu einem Kommentar.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -16,43 +16,43 @@ ht-degree: 1%
 
 ---
 
-# Verwenden von &quot;Gefällt mir&quot; {#using-liking}
+# Verwenden von „Gefällt mir“ {#using-liking}
 
-Die Komponente `Liking` ist ein nützliches Tool, mit dem Benutzer zu einem bestimmten Inhalt Stellung nehmen können, z. B. zu einem Kommentar in einem Forum. Bei der Komponente `Liking` wählen die Mitglieder das Herzsymbol aus, um eine positive Meinung anzuzeigen.
+Die `Liking`-Komponente ist ein nützliches Tool, mit dem Benutzende ihre Meinung zu einem bestimmten Inhalt äußern können, z. B. zu einem Kommentar innerhalb eines Forums. Bei der Komponente `Liking` wählen Mitglieder das Herz-Symbol aus, um eine positive Meinung anzuzeigen.
 
-## Hinzufügen von Links zu Seiten {#adding-liking-to-a-page}
+## Hinzufügen einer Verknüpfung zu einer Seite {#adding-liking-to-a-page}
 
-Möchten Sie im Autorenmodus einer Seite die Komponente `Liking` hinzufügen, suchen Sie mit dem Komponenten-Browser nach
+Um einer Seite im Autorenmodus eine `Liking` Komponente hinzuzufügen, suchen Sie im Komponenten-Browser nach
 
 * `Communities / Liking`
 
-Ziehen Sie sie an die gewünschte Stelle auf einer Seite, z. B. an die Position in Bezug auf die Funktion, die den Benutzern gefällt.
+Und ziehen Sie es auf einer Seite, z. B. eine Position relativ zur Funktion, die Benutzern gefällt.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
+Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [ erforderlichen clientseitigen Bibliotheken](essentials-liking.md#essentials-for-client-side) enthalten sind, wird die Komponente `Liking` so angezeigt.
+Wenn die [erforderlichen Client-seitigen ](essentials-liking.md#essentials-for-client-side) enthalten sind, wird die `Liking` Komponente wie folgt angezeigt.
 
 ![liking-component](assets/liking-component.png)
 
-## Konfigurieren der Verknüpfung {#configuring-liking}
+## Konfiguration der Verknüpfung {#configuring-liking}
 
-Wählen Sie die platzierte Komponente `Liking` aus, damit Sie auf das Symbol `Configure` zugreifen und dieses auswählen können, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte `Liking` aus, um auf das Symbol `Configure` zuzugreifen, das das Dialogfeld „Bearbeiten“ öffnet.
 
 ![configure-new](assets/configure-new.png)
 
-Geben Sie auf der Registerkarte **[!UICONTROL Texte und Beschriftungen]** die Eigenschaften an, die zum Aufzeichnen von &quot;Gefällt mir&quot;-Klicks verwendet werden.
+Auf der Registerkarte **[!UICONTROL Texte und Beschriftungen]** geben Sie die Eigenschaften an, die zum Aufzeichnen von Likes verwendet werden sollen.
 
 ![configure-liking](assets/configure-liking.png)
 
-* **[!UICONTROL Bezeichnung der positiven Antwort]**
+* **[!UICONTROL Positive Response Label]**
 
   (*Erforderlich*) Der Eigenschaftsname für eine positive Antwort.
 
-* **[!UICONTROL Bezeichnung der negativen Antwort]**
+* **[!UICONTROL Beschriftung für negative Antwort]**
 
   (*Erforderlich*) Der Eigenschaftsname für eine negative Antwort.
 
-* **[!UICONTROL Tally Name]**
+* **[!UICONTROL Tally-Name]**
 
   (*Erforderlich*) Der interne, identifizierbare Eigenschaftsname für diese Instanz einer Abstimmungskomponente.
 
@@ -60,12 +60,12 @@ Geben Sie auf der Registerkarte **[!UICONTROL Texte und Beschriftungen]** die Ei
 
 ### Mitglieder {#members}
 
-Die Mitglieder können jederzeit ihren Geschmack ändern.
+Mitglieder können jederzeit ihr „Gefällt mir“ ändern.
 
 ### Anonym {#anonymous}
 
-Anonyme &quot;Gefällt mir&quot;-Klicks werden nicht unterstützt. Besucher der Site müssen sich registrieren (Mitglied werden) und sich anmelden, um an &quot;Gefällt mir&quot;-Klicks teilnehmen zu können.
+Anonyme Verknüpfungen werden nicht unterstützt. Besuchende der Website müssen sich registrieren (Mitglied werden) und sich anmelden, um an „Gefällt mir“ teilzunehmen.
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Entwickler-Seite [Gefällt mir-Grundlagen](essentials-liking.md) .
+Weitere Informationen finden Sie auf der Seite [Liking Essentials](essentials-liking.md) für Entwickler.

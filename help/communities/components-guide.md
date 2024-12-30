@@ -1,5 +1,5 @@
 ---
-title: Handbuch zu Community-Komponenten
+title: Handbuch der Community-Komponenten
 description: Ein interaktives Entwicklungstool für die ersten Schritte mit dem Social Component Framework (SCF)
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -16,32 +16,32 @@ ht-degree: 1%
 
 ---
 
-# Handbuch zu Community-Komponenten  {#community-components-guide}
+# Handbuch der Community-Komponenten  {#community-components-guide}
 
-Das Handbuch zu Community-Komponenten ist ein interaktives Entwicklungstool für das [Social Component Framework (SCF)](scf.md). Es bietet eine Liste der verfügbaren Adobe Experience Manager (AEM) Communities-Komponenten oder der komplexeren Funktionen, die aus mehreren Komponenten erstellt wurden.
+Das Community Components Guide ist ein interaktives Entwicklungstool für das [Social Component Framework (SCF)](scf.md). Es enthält eine Liste der verfügbaren Adobe Experience Manager (AEM)-Communities-Komponenten oder der komplexeren Funktionen, die aus mehreren Komponenten erstellt wurden.
 
-Neben grundlegenden Informationen für jede Komponente ermöglicht das Handbuch Experimente mit der Funktionsweise der SCF-Komponenten/-Funktionen und deren Konfiguration oder Anpassung.
+Neben grundlegenden Informationen zu den einzelnen Komponenten ermöglicht das Handbuch Experimente mit der Funktionsweise der SCF-Komponenten/-Funktionen und der Möglichkeit, sie zu konfigurieren oder anzupassen.
 
-Informationen zu Entwicklungsgrundlagen für die einzelnen Komponenten finden Sie unter [Funktionen und Komponenten-Grundlagen](essentials.md).
+Informationen zu den Entwicklungsgrundlagen für jede Komponente finden Sie unter [Funktions- und Komponentengrundlagen](essentials.md).
 
 ## Erste Schritte {#getting-started}
 
-Das Handbuch ist für die Verwendung in Entwicklungs-Installationen von Autoreninstanzen (localhost:4502) und Veröffentlichungsinstanzen (localhost:4503) vorgesehen.
+Das Handbuch ist für die Verwendung in Entwicklungsinstallationen von Autoreninstanzen (localhost:4502) und Veröffentlichungsinstanzen (localhost:4503) vorgesehen.
 
-Auf die Website &quot;Community-Komponenten&quot;können Sie unter
+Die Community-Komponenten-Website finden Sie unter
 
 * [https://&lt;server>:&lt;port>/content/community-components/en.html](http://localhost:4502/content/community-components/en.html)
 
-Die Interaktionen mit den Communities-Komponenten variieren je nach:
+Die Interaktionen mit den Communitys-Komponenten variieren je nach:
 
-* Der Server (Autor oder Veröffentlichung).
+* Server (Autor oder Veröffentlichung).
 * Ob der Site-Besucher angemeldet ist oder nicht.
-* Bei Anmeldung werden die dem Mitglied zugewiesenen Berechtigungen zugewiesen.
-* Gibt an, ob der standardmäßige SRP [JSRP](jsrp.md) verwendet wird.
+* Wenn angemeldet, die dem Mitglied zugewiesenen Berechtigungen.
+* Ob das standardmäßige SRP [JSRP](jsrp.md) verwendet wird.
 
-Um beim Autor in den Bearbeitungsmodus zu wechseln, fügen Sie entweder `editor.html` oder `cf#` als erstes Pfadsegment nach dem Servernamen ein:
+Um in der Autoreninstanz in den Bearbeitungsmodus zu wechseln, fügen Sie nach dem Servernamen als erstes Pfadsegment entweder `editor.html` oder `cf#` ein:
 
-* Standardbenutzeroberfläche:
+* Standard-Benutzeroberfläche:
 
   [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
@@ -51,19 +51,19 @@ Um beim Autor in den Bearbeitungsmodus zu wechseln, fügen Sie entweder `editor.
 
 >[!NOTE]
 >
->Beim Autor im Bearbeitungsmodus sind die Links auf einer Seite nicht aktiv.
+>Bei der Autoreninstanz im Bearbeitungsmodus sind die Links auf einer Seite nicht aktiv.
 >
 >Um zu einer Komponentenseite zu navigieren, wählen Sie zunächst den Vorschaumodus aus, um die Links zu aktivieren.
 >
->Kehren Sie bei angezeigter Komponentenseite im Browser zum Bearbeitungsmodus zurück, um das Bearbeitungsdialogfeld der Komponente zu öffnen.
+>Kehren Sie bei im Browser angezeigter Komponentenseite zum Modus Bearbeiten zurück, um das Dialogfeld Bearbeiten der Komponente zu öffnen.
 >
->Allgemeine Informationen zum Authoring finden Sie in der [Kurzanleitung zum Erstellen von Seiten](../../help/sites-authoring/qg-page-authoring.md).
+>Allgemeine Informationen zum Authoring finden Sie in der [Kurzanleitung zum Authoring von Seiten](../../help/sites-authoring/qg-page-authoring.md).
 >
->Wenn Sie nicht mit AEM vertraut sind, lesen Sie die Dokumentation zur [grundlegenden Handhabung](../../help/sites-authoring/basic-handling.md).
+>Wenn Sie nicht mit AEM vertraut sind, lesen Sie die Dokumentation unter [Grundlegende Handhabung](../../help/sites-authoring/basic-handling.md).
 
 ### Startseite {#home-page}
 
-Das Handbuch enthält eine Liste von SCF-Komponenten, die links auf der Seite für die Vorschau und das Prototyping verfügbar sind.
+Das Handbuch enthält eine Liste der SCF-Komponenten, die links auf der Seite für Vorschau und Prototyping verfügbar sind.
 
 Komponentenleitfaden, wie in einer Autoreninstanz im Bearbeitungsmodus angezeigt:
 
@@ -71,100 +71,100 @@ Komponentenleitfaden, wie in einer Autoreninstanz im Bearbeitungsmodus angezeigt
 
 ## Komponentenseiten {#component-pages}
 
-Wählen Sie eine Komponente aus der Liste links auf der Seite aus.
+Wählen Sie links auf der Seite in der Liste eine Komponente aus.
 
 ![community-component-pages](assets/community-component2.png)
 
-Der Hauptteil des Handbuchs wird angezeigt:
+Der Hauptteil des Handbuchs zeigt Folgendes an:
 
 1. Titel: Der Name der ausgewählten Komponente
-1. [Client-seitige Bibliotheken](#client-side-libraries): Eine Liste mit einer oder mehreren erforderlichen Kategorien
-1. [Inclusible](scf.md#add-or-include-a-communities-component): Wenn die Komponente dynamisch eingeschlossen sein kann, kann der Status im Bearbeitungsmodus des Autors umgeschaltet werden:
+1. [Client-seitige ](#client-side-libraries): Eine Liste mit einer oder mehreren erforderlichen Kategorien
+1. [Einschließbar](scf.md#add-or-include-a-communities-component): Wenn die Komponente dynamisch eingeschlossen werden kann, kann der Status im Bearbeitungsmodus für Autoren umgeschaltet werden:
 
-   * Wenn der Text hinzugefügt wird, lautet der angezeigte Text: &quot;Diese Komponente wird über ihren par -Knoten einbezogen.&quot;
-   * Wenn enthalten, lautet der angezeigte Text: &quot;Diese Komponente wird dynamisch einbezogen.&quot;
-   * Wenn nicht enthalten, wird kein Text angezeigt
+   * Wenn sie hinzugefügt wird, wird Text angezeigt: „Diese Komponente ist über ihren übergeordneten Knoten enthalten.“
+   * Wenn enthalten, wird Text angezeigt: „Diese Komponente ist dynamisch enthalten.“
+   * Wenn dies nicht der Fall ist, wird kein Text angezeigt
 
-1. Beispielkomponente oder -funktion: eine aktive Instanz der Komponente oder Funktion. Wenn eine Komponente geändert werden soll, kann sie durch Änderungen an den Vorlagen, CSS und Daten im Registerkartenabschnitt geändert werden.
+1. Beispielkomponente oder -funktion: Eine aktive Instanz der Komponente oder Funktion. Wenn es sich um eine Komponente handelt, kann sie durch Änderungen an den Vorlagen, CSS und den Daten geändert werden, die im Abschnitt Registerkarte bereitgestellt werden.
 
 >[!NOTE]
 >
->Nachdem Sie eine Auswahl auf der linken Seite getroffen haben, wird die Komponente unten angezeigt, anstatt neben der Liste der Komponenten, wenn das Browser-Fenster zu eng ist.
+>Nachdem Sie eine Auswahl auf der linken Seite getroffen haben, wird die Komponente unter anstelle von neben der Liste der Komponenten angezeigt, wenn das Browser-Fenster zu eng ist.
 
 ### Autoreninteraktionen {#author-interactions}
 
-Wenn Sie das Handbuch in einer Autoreninstanz verwenden, ist es möglich, die Konfiguration einer Komponente zu erleben, indem Sie das zugehörige Dialogfeld öffnen. Informationen für Entwickler finden Sie im Abschnitt [Komponenten- und Funktionsgrundlagen](essentials.md) der Dokumentation, während die Dialogfeldeinstellungen im Abschnitt [Communities-Komponenten](author-communities.md) für Autoren beschrieben werden.
+Bei Verwendung des Handbuchs auf einer Autoreninstanz ist es möglich, die Konfiguration einer Komponente durch Öffnen des entsprechenden Dialogfelds zu erleben. Informationen für Entwickler finden Sie im Abschnitt [Komponenten und ](essentials.md)) der Dokumentation, während die Dialogeinstellungen für Autoren im Abschnitt [Communities-Komponenten](author-communities.md) beschrieben werden.
 
-Im Komponentenleitfaden für die Community-Komponenten werden einige Einstellungen für das Komponentendialogfeld mit dem Umschalter [Inclusible](scf.md#add-or-include-a-communities-component) überlagert. Um zwischen der Verwendung der vorhandenen Ressource oder einer dynamisch eingeschlossenen Ressource umzuschalten, wählen Sie im Bearbeitungsmodus sowohl die Komponente als auch den einschließbaren Text aus und doppelklicken Sie, um das Bearbeitungsdialogfeld zu öffnen:
+Für das Handbuch der Community-Komponenten werden einige Einstellungen für das Komponentendialogfeld mit dem [Einschließbar](scf.md#add-or-include-a-communities-component)-Umschalter überlagert. Um zwischen der Verwendung der vorhandenen Ressource oder einer dynamisch eingeschlossenen Ressource umzuschalten, wählen Sie im Bearbeitungsmodus sowohl die Komponente als auch den einzuschließenden Text aus und doppelklicken Sie, um das Dialogfeld „Bearbeiten“ zu öffnen:
 
 ![community-component3](assets/community-component3.png)
 
-Auf der Registerkarte **Vorlagen** :
+Auf der Registerkarte **Vorlagen**:
 
 ![community-component4](assets/community-component4.png)
 
-* **Schließen Sie die untergeordnete Komponente mit sling:include** ein.
+* **Untergeordnete Komponente mit sling:include einschließen**
 
-  Wenn diese Option deaktiviert ist, verwendet das Komponentenleitfaden die vorhandene Ressource im Repository (einen jcr-Knoten, der einem par -Knoten untergeordnet ist).
+  Wenn diese Option deaktiviert ist, verwendet das Komponenten-Handbuch die vorhandene Ressource im Repository (einen jcr-Knoten, der einem para-Knoten untergeordnet ist).
 
-   * Der angezeigte Text lautet: &quot;Diese Komponente wird über ihren par -Knoten einbezogen.&quot;
+   * Angezeigter Text: „Diese Komponente ist über ihren übergeordneten Knoten enthalten.“
 
-  Wenn diese Option aktiviert ist, verwendet das Komponentenleitfaden Sling, um eine Komponente des resourceType des untergeordneten Knotens (nicht vorhandene Ressource) dynamisch einzuschließen.
+  Wenn diese Option aktiviert ist, verwendet das Komponenten-Handbuch Sling, um eine Komponente des resourceType des untergeordneten Knotens dynamisch einzuschließen (nicht vorhandene Ressource).
 
-   * Der angezeigte Text lautet: &quot;Diese Komponente wird dynamisch einbezogen.&quot;
+   * Angezeigter Text: „Diese Komponente ist dynamisch enthalten.“
 
-  Die Option Standard ist deaktiviert.
+  Standard ist deaktiviert.
 
-### Publish-Interaktionen {#publish-interactions}
+### Publish Interactions {#publish-interactions}
 
-Bei Verwendung des Handbuchs in einer Veröffentlichungsinstanz ist es möglich, die Komponenten und Funktionen als Site-Besucher (nicht angemeldet) und als Mitglieder mit verschiedenen Berechtigungen beim Anmelden zu erleben.
+Bei Verwendung des Handbuchs auf einer Veröffentlichungsinstanz können die Komponenten und Funktionen als Site-Besucher (nicht angemeldet) und als Mitglieder mit verschiedenen Berechtigungen erleben, wenn sie angemeldet sind.
 
 >[!NOTE]
 >
->Beachten Sie: Wenn das SRP standardmäßig auf [JSRP](jsrp.md) festgelegt ist, ist in der Veröffentlichungsinstanz eingegebener UGC nur bei der Veröffentlichung sichtbar und *nicht* ist in der Konsole [Moderation](moderate-ugc.md) in der Autoreninstanz sichtbar.
+>Beachten Sie: Wenn der SRP standardmäßig auf [JSRP](jsrp.md) eingestellt bleibt, ist der in der Veröffentlichungsinstanz eingegebene benutzergenerierte Inhalt nur in der Veröffentlichungsinstanz sichtbar und *nicht* in der [Moderation](moderate-ugc.md)-Konsole in der Autoreninstanz sichtbar.
 
 ## Client-seitige Bibliotheken {#client-side-libraries}
 
-Die für jede Komponente aufgelisteten Client-seitigen Bibliotheken (clientlibs) sind die *erforderlichen*, die referenziert werden sollen, wenn die Komponente auf einer Seite platziert wird. Die Clientlibs bieten eine Möglichkeit, den Download von JavaScript und CSS zu verwalten und zu optimieren, die zum Rendern der Komponente im Browser verwendet werden.
+Die für jede Komponente aufgelisteten Client-seitigen Bibliotheken (clientlibs) sind die (*),* beim Platzieren der Komponente auf einer Seite referenziert werden müssen. Die Clientlibs bieten eine Möglichkeit zur Verwaltung und Optimierung des Downloads von JavaScript und CSS, die zum Rendern der Komponente im Browser verwendet werden.
 
 Weitere Informationen finden Sie unter [Clientlibs für Communities-Komponenten](clientlibs.md).
 
 ## Personifikation {#impersonation}
 
-Wenn Sie in der Autoreninstanz, in der häufig als Administrator oder Entwickler angemeldet ist, die Komponente als ein anderer Benutzer angemeldet haben, verwenden Sie das Textfeld links neben der Schaltfläche **[!UICONTROL Identität annehmen]** , um entweder den Benutzernamen einzugeben oder aus der Pulldown-Liste auszuwählen, und klicken Sie dann auf die Schaltfläche. Klicken Sie auf Wiederherstellen , um sich abzumelden und die Identität zu beenden.
+Verwenden Sie auf der Autoreninstanz, bei der häufig eine Person als Administrator oder Entwickler angemeldet ist, um die als ein anderer Benutzer angemeldete Komponente zu verwenden, das Textfeld links neben der Schaltfläche **[!UICONTROL Identität annehmen]**, um entweder den Benutzernamen einzugeben oder aus der Pulldown-Liste auszuwählen, und klicken Sie dann auf die Schaltfläche. Klicken Sie auf Wiederherstellen , um sich abzumelden und den Identitätswechsel zu beenden.
 
-Die Veröffentlichungsinstanz muss nicht stellvertretend agieren. Verwenden Sie einfach den Link Anmelden/Abmelden , um verschiedene Benutzer zu imitieren, z. B. die [Demobenutzer](tutorials.md#demo-users).
+Für die Veröffentlichungsinstanz ist keine Stellvertretung erforderlich. Verwenden Sie einfach den Anmelde-/Abmelde-Link, um die Identität verschiedener Benutzer anzunehmen, z. B[ Demo-Benutzer](tutorials.md#demo-users).
 
 ## Anpassung {#customization}
 
-Wenn diese Option aktiviert ist, steht jede SCF-Komponente für die Prototypisierung möglicher Anpassungen zur Verfügung, indem die Vorlage, CSS und Daten der Komponente vorübergehend geändert werden.
+Wenn diese Option aktiviert ist, ist jede SCF-Komponente für das Prototyping möglicher Anpassungen verfügbar, indem die Vorlage, das CSS und die Daten der Komponente vorübergehend geändert werden.
 
 ### Aktivieren der Anpassung {#enabling-customization}
 
 >[!NOTE]
 >
->**Dieses Tool ist schreibgeschützt**. An Vorlagen, CSS oder Daten vorgenommene Änderungen werden nicht im Repository gespeichert.
+>**Dieses Tool ist schreibgeschützt**. Keine der Änderungen an Vorlagen, CSS oder Daten wird im Repository gespeichert.
 
-Um schnell mit Anpassungen zu experimentieren, muss die Eigenschaft `scg:showIde`zum JCR-Knoten für den Inhalt der Komponentenseite hinzugefügt und auf &quot;true&quot;gesetzt werden.
+Um schnell mit Anpassungen zu experimentieren`scg:showIde` muss die Eigenschaft zum Inhalts-JCR-Knoten der Komponentenseite hinzugefügt und auf „true“ gesetzt werden.
 
-Verwenden der Kommentarkomponente als Beispiel für die Autoren- oder Veröffentlichungsinstanz, die mit Administratorrechten angemeldet ist:
+Verwenden Sie die Komponente Kommentare als Beispiel für die Autoren- oder Veröffentlichungsinstanz, die mit Administratorrechten angemeldet ist:
 
-1. Navigieren Sie zu [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
+1. Zu [CRXDE Lite navigieren](../../help/sites-developing/developing-with-crxde-lite.md)
 
    Beispiel: [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
-1. Wählen Sie den Knoten `jcr:content` der Komponente aus
+1. Wählen Sie den `jcr:content` der Komponente aus
 
    Zum Beispiel: `/content/community-components/en/comments/jcr:content`
 
-1. Hinzufügen einer Eigenschaft
+1. Eigenschaft hinzufügen
 
    * **Name** `scg:showIde`
    * **Typ** `String`
    * **Wert** `true`
 
 1. Wählen Sie **[!UICONTROL Alle speichern]**
-1. Laden Sie die Seite &quot;Kommentare&quot;im Handbuch erneut.
+1. Laden Sie die Seite Kommentare im Handbuch neu.
 
    [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)
 
@@ -174,26 +174,26 @@ Verwenden der Kommentarkomponente als Beispiel für die Autoren- oder Veröffent
 
 ![community-component6](assets/community-component6.png)
 
-### Registerkarte &quot;Vorlagen&quot; {#templates-tab}
+### Registerkarte „Vorlagen“ {#templates-tab}
 
-Wählen Sie den Tab Vorlagen aus, um die der Komponente zugeordneten Vorlagen anzuzeigen.
+Wählen Sie die Registerkarte Vorlagen aus, um die mit der Komponente verknüpften Vorlagen anzuzeigen.
 
-Mit dem Vorlagen-Editor können lokale Bearbeitungen kompiliert und auf die Beispielkomponenteninstanz oben auf der Seite angewendet werden, ohne dass sich dies auf die Komponente im Repository auswirkt.
+Mit dem Vorlageneditor können lokale Bearbeitungen kompiliert und auf die Beispielkomponenteninstanz oben auf der Seite angewendet werden, ohne dass die Komponente im Repository betroffen ist.
 
-Wenn Sie die Kompilierung auf lokalen Bearbeitungen ausführen, werden alle Fehler hervorgehoben, indem Sie einen Punkt in der Rinne platzieren und den Text rot markieren.
+Wenn Sie den Compiler für lokale Bearbeitungen ausführen, werden alle Fehler hervorgehoben, indem Sie einen Punkt in den Rinnstein platzieren und den Text rot markieren.
 
-### CSS-Registerkarte {#css-tab}
+### Registerkarte CSS {#css-tab}
 
-Wählen Sie die Registerkarte CSS aus, um die mit der Komponente verknüpfte CSS anzuzeigen.
+Wählen Sie die Registerkarte CSS aus, um das mit der Komponente verknüpfte CSS anzuzeigen.
 
-Wenn eine Komponente aus mehreren Komponenten zusammengesetzt ist, können einige CSS unter einer der anderen Komponenten aufgeführt sein.
+Wenn eine Komponente aus mehreren Komponenten zusammengesetzt ist, können einige CSS-Elemente unter einer der anderen Komponenten aufgeführt werden.
 
-Mit dem CSS-Editor kann das CSS geändert und auf die Beispielkomponenteninstanz oben auf der Seite angewendet werden.
+Der CSS-Editor ermöglicht das Ändern des CSS und dessen Anwendung auf die Beispielkomponenteninstanz oben auf der Seite.
 
-Es kann eine Regel ausgewählt werden, um die Teile des DOM mithilfe dieser Regel hervorzuheben, indem Sie neben der Regel in der Rinne auf klicken.
+Sie können eine Regel auswählen, um die Teile des DOM mithilfe dieser Regel hervorzuheben, indem Sie neben der Regel im Rinnstein klicken.
 
-### Registerkarte &quot;Daten&quot; {#data-tab}
+### Registerkarte „Daten“ {#data-tab}
 
-Wählen Sie die Registerkarte Daten aus, um die Endpunktdaten .social.json anzuzeigen. Diese Daten können bearbeitet werden und werden auf die Beispielkomponenteninstanz angewendet.
+Wählen Sie die Registerkarte Daten aus, um die .social.json-Endpunktdaten anzuzeigen. Diese Daten können bearbeitet werden und werden auf die Beispielkomponenteninstanz angewendet.
 
-Syntaxfehler können im Rinnstein markiert und im Editor hervorgehoben werden.
+Syntaxfehler können in der Rinne markiert und im Editor hervorgehoben werden.

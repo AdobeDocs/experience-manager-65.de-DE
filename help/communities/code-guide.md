@@ -1,6 +1,6 @@
 ---
-title: Codierungsrichtlinien
-description: Richtlinien, Tipps und Tricks für Communities-Entwickler
+title: 'Codierungsrichtlinien '
+description: Entwicklerrichtlinien, Tipps und Tricks für Communities
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -20,24 +20,24 @@ ht-degree: 3%
 
 ## Richtlinien, Tipps und Tricks {#guidelines-tips-and-tricks}
 
-Die Arbeit mit AEM Communities hat sich von der Abhängigkeit von Java-Serverseiten zu Flexibilität bei der Auswahl von Vorlagenskriptsprachen entwickelt, bei denen sich Geschäftslogik, Stil und Seiteninhalt voneinander unterscheiden.
+Die Arbeit mit AEM Communities hat sich von der starken Abhängigkeit von Java-Server-Seiten hin zu einer flexiblen Auswahl von Skriptsprachen entwickelt, bei denen Geschäftslogik, Stil und Seiteninhalte sich voneinander unterscheiden.
 
-Die SocialResourceProvider-API ermöglicht eine größere Flexibilität bei der Arbeit mit benutzergenerierten Inhalten (UGC). So müssen Sie nicht mehr wissen, welche [SRP](srp.md)-Option für die Implementierung ausgewählt wurde.
+Eine weitere Flexibilität bei der Arbeit mit benutzergenerierten Inhalten (User Generated Content, UGC) wird durch die SocialResourceProvider-API erreicht, wodurch nicht mehr erkannt werden muss, welche [SRP](srp.md)-Option für die Bereitstellung ausgewählt wurde.
 
-Im Folgenden finden Sie verschiedene Codierungsrichtlinien und Best Practices für AEM Communities-Entwickler:
+Im Folgenden finden Sie verschiedene Kodierungsrichtlinien und Best Practices für AEM Communities-Entwicklerinnen und -Entwickler:
 
 ### Code {#code}
 
-* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - wie vermeiden Sie das Schreiben einer Anwendung, die nur funktioniert, wenn UGC in JCR (JSRP) gespeichert ist.
+* [Zugriff auf benutzergenerierten Inhalt mit SRP](accessing-ugc-with-srp.md) - wie Sie vermeiden können, eine Anwendung zu schreiben, die nur funktioniert, wenn benutzergenerierter Inhalt in JCR (JSRP) gespeichert wird.
 * [SocialUtils-Refaktorierung](socialutils.md) - Dienstprogrammmethoden für SRP, die SocialUtils ersetzen.
 * [Namenskonventionen](naming-conventions.md) - Namenskonventionen für benutzerdefinierte Java-Klassen.
 
 ### Skripte {#scripts}
 
-* [Sideloading Communities Components](sideloading.md) - wie Sie eine Komponente dynamisch hinzufügen, nachdem die Seite geladen wurde.
-* [Grundlagen des Rich-Text-Editors](rte.md) - So passen Sie die Rich-Text-Benutzeroberfläche an, die Mitgliedern zum Posten von Inhalten bereitgestellt wird.
+* [Sideloading von Communities-](sideloading.md): Dynamisches Hinzufügen einer Komponente nach dem Laden der Seite.
+* [Rich Text Editor Essentials](rte.md) - Anpassen der Rich-Text-Benutzeroberfläche, die Membern zum Posten von Inhalten bereitgestellt wird.
 
 ### IDE {#ide}
 
-* [Verwenden von Maven für Communities](maven.md) - wie die Communities-API-JAR eingeschlossen wird.
+* [Verwenden von Maven für Communities](maven.md) - Einschließen der Communities-API-JAR-Datei.
 * [SocialUtils-Refaktorierung](socialutils.md) - Dienstprogrammmethoden für SRP, die SocialUtils ersetzen.

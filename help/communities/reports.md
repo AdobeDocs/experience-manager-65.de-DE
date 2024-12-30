@@ -1,6 +1,6 @@
 ---
-title: Berichtkonsole
-description: Erfahren Sie, wie Sie verschiedene Berichte verwenden, auf die Sie in der Adobe Experience Manager-Autorenumgebung auf verschiedene Weise zugreifen können.
+title: Berichtskonsole
+description: Erfahren Sie, wie Sie verschiedene Berichte verwenden, auf die Sie über die Adobe Experience Manager-Autorenumgebung auf verschiedene Arten zugreifen können.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -17,25 +17,25 @@ ht-degree: 6%
 
 ---
 
-# Berichtkonsole {#reports-console}
+# Berichtskonsole {#reports-console}
 
 ## Überblick {#overview}
 
-Für AEM Communities gibt es verschiedene Berichte, auf die über die Autorenumgebung auf verschiedene Weise zugegriffen werden kann.
+Für AEM Communities gibt es verschiedene Berichte, auf die in der Autorenumgebung auf verschiedene Arten zugegriffen werden kann.
 
-Die verschiedenen Berichte sind im Allgemeinen:
+Im Allgemeinen lauten die verschiedenen Berichte:
 
-* [Bericht &quot;Ansichten&quot;](#views-report)
+* [Ansichtsbericht](#views-report)
 
-  Bietet eine Grafik mit den Inhalten von Community-Mitgliedern und Site-Besuchern für jede Community-Site.
+  Stellt ein Diagramm mit Ansichten von Inhalten bereit, die von Community-Mitgliedern und Site-Besuchern für eine Community-Site erstellt wurden.
 
-* [Bericht zu Beiträgen](#posts-report)
+* [Beitragsbericht](#posts-report)
 
-  Bietet eine Grafik verschiedener Arten von Beiträgen von Community-Mitgliedern zu jeder Community-Site.
+  Bietet ein Diagramm mit verschiedenen Arten von Beiträgen von Community-Mitgliedern zu einer beliebigen Community-Site.
 
 Tabellarische Berichte können zur nachfolgenden Verarbeitung im CSV-Format exportiert werden.
 
-## Reporting-Konsolen {#reporting-consoles}
+## Berichterstellungskonsolen {#reporting-consoles}
 
 ### Berichte für Community-Sites {#reports-for-community-sites}
 
@@ -45,84 +45,84 @@ Tabellarische Berichte können zur nachfolgenden Verarbeitung im CSV-Format expo
 
    * **[!UICONTROL Zuweisungsbericht]**
 
-      * Erstellen Sie einen Bericht für die ausgewählte Community-Site, den ausgewählten Benutzer oder die Gruppe und die Zuweisung.
+      * Erstellen eines Berichts für die ausgewählte Community-Site, den ausgewählten Benutzer oder die ausgewählte Gruppe und die ausgewählte Zuweisung
 
-   * **[!UICONTROL Bericht zu Beiträgen]**
+   * **[!UICONTROL Beitragsbericht]**
 
-      * Erstellen Sie einen Bericht für die ausgewählte Community-Site, den Inhaltstyp und den Zeitraum.
+      * Generieren eines Berichts für die ausgewählte Community-Site, den Inhaltstyp und den Zeitraum.
 
-   * **[!UICONTROL Bericht &quot;Ansichten&quot;]**
+   * **[!UICONTROL Ansichtsbericht]**
 
-      * einen Bericht für die ausgewählte Community-Site, den Content-Typ und den Zeitraum erstellen.
+      * Bericht für ausgewählte Community-Site, Inhaltstyp und Zeitraum generieren.
 
-![reports](assets/reports1.png)
+![Berichte](assets/reports1.png)
 
 ## Ansichtsbericht {#views-report}
 
-Mit der Konsole &quot;Ansichten&quot;können Berichte von Community-Funktionen für einen bestimmten Zeitraum bei Seitenansichten generiert werden.
+Die Konsole „Ansichten“ ermöglicht die Erstellung von Berichten über Seitenansichten durch Community-Funktionen für einen bestimmten Zeitraum.
 
 ![view-report](assets/view-report.png)
 
-Wählen Sie die Berichtskriterien aus:
+Kriterien für den Bericht auswählen:
 
 * **[!UICONTROL Site]**
 
-  Wählen Sie eine Community-Site aus.
+  Community-Site auswählen.
 
 * **[!UICONTROL Content-Typ]**
 
-  Sie können Alle Inhalte auswählen oder eine der Funktionen auswählen, die auf der Site vorhanden sind.
+  Sie können entweder Alle Inhalte oder eine der auf der Site vorhandenen Funktionen auswählen.
 
 * **[!UICONTROL Zeitrahmen]**
 
-  Wählen Sie eine der folgenden Optionen aus:
+  Eine der folgenden Optionen auswählen:
 
    * Letzte 7 Tage
    * Letzte 30 Tage
    * Letzte 90 Tage
    * Letztes Jahr
 
-Wählen Sie **[!UICONTROL Erzeugen]** aus, um den Bericht zu erstellen.
+Wählen Sie **[!UICONTROL Generieren]**, um den Bericht zu erstellen.
 
 ![generate-views](assets/generate-views.png)
 
 ## Post-Bericht {#posts-report}
 
-Die Konsole Beiträge ermöglicht die Erstellung von Berichten über die Anzahl der Beiträge zu Community-Funktionen für einen bestimmten Zeitraum.
+Die Posts-Konsole ermöglicht die Erstellung von Berichten über die Anzahl der Posts zu Community-Funktionen für einen bestimmten Zeitraum.
 
 ![post-report](assets/posts-report.png)
 
-Wählen Sie die Berichtskriterien aus:
+Kriterien für den Bericht auswählen:
 
 * **[!UICONTROL Site]**
 
-  Wählen Sie eine Community-Site aus.
+  Community-Site auswählen.
 
 * **[!UICONTROL Content-Typ]**
 
-  Sie können Alle Inhalte auswählen oder eine der Funktionen auswählen, die auf der Site vorhanden sind.
+  Sie können entweder Alle Inhalte oder eine der auf der Site vorhandenen Funktionen auswählen.
 
 * **[!UICONTROL Zeitrahmen]**
 
-  Wählen Sie eine der folgenden Optionen aus:
+  Eine der folgenden Optionen auswählen:
 
    * Letzte 7 Tage
    * Letzte 30 Tage
    * Letzte 90 Tage
    * Letztes Jahr
 
-Wählen Sie **[!UICONTROL Erzeugen]** aus, um den Bericht zu erstellen.
+Wählen Sie **[!UICONTROL Generieren]**, um den Bericht zu erstellen.
 
 ![generate-report](assets/generate-posts-report.png)
 
 ## Fehlerbehebung {#troubleshooting}
 
-### Keine Community-Sites aufgeführt {#no-community-sites-listed}
+### Keine Community-Sites aufgelistet {#no-community-sites-listed}
 
-Wenn keine Community-Sites aufgelistet sind, stellen Sie sicher, dass Adobe Analytics für eine Site aktiviert wurde. Stellen Sie bei der Auswahl von Berichten zu Zuweisungen sicher, dass sich die Zuweisungsfunktion in der Struktur der Community-Site befindet.
+Wenn keine Community-Sites aufgelistet sind, stellen Sie sicher, dass Adobe Analytics für eine Site aktiviert wurde. Wenn Sie Berichte zu Zuweisungen auswählen, stellen Sie sicher, dass die Zuweisungsfunktion in der Struktur der Community-Site vorhanden ist.
 
-### Berichte werden in AEM Autoreninstanz nicht angezeigt {#reports-do-not-show-in-aem-author-instance}
+### Berichte werden nicht in der AEM-Autoreninstanz angezeigt {#reports-do-not-show-in-aem-author-instance}
 
-Wenn Berichte nicht in der AEM-Autoreninstanz angezeigt werden, suchen Sie nach den Anpassungen, z. B. nach der URL-Zuordnung in der Publish-Instanz. Wenn die URL-Zuordnung nur auf der AEM Publish-Instanz der Communities-Site erfolgt, stellen Sie sicher, dass dasselbe in der AEM-Autoreninstanz in der Konfiguration **Site-Trend-Bericht Social Component Factory** konfiguriert wurde.
+Wenn in der AEM-Autoreninstanz keine Berichte angezeigt werden, überprüfen Sie die Anpassungen, z. B. die URL-Zuordnung in der Publish-Instanz. Wenn die URL-Zuordnung nur auf der AEM-Publish-Instanz der Communities-Site durchgeführt wird, stellen Sie sicher, dass dieselbe in der AEM-Autoreninstanz in der Konfiguration „Site-Trend **Bericht Social Component Factory** konfiguriert wurde.
 
-![URL-Zuordnung in AEM Autoreninstanz](assets/sitetrend.png)
+![URL-Zuordnung in der AEM-Autoreninstanz](assets/sitetrend.png)

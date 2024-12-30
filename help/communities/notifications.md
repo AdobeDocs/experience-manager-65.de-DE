@@ -1,6 +1,6 @@
 ---
 title: Communities-Benachrichtigungen
-description: AEM Communities verfügt über Benachrichtigungen, die für das angemeldete Community-Mitglied interessante Ereignisse anzeigen
+description: AEM Communities verfügt über Benachrichtigungen, die Ereignisse anzeigen, die für das angemeldete Community-Mitglied von Interesse sind
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -21,96 +21,96 @@ ht-degree: 1%
 
 ## Überblick {#overview}
 
-AEM Communities bietet einen Benachrichtigungsabschnitt, in dem Ereignisse angezeigt werden, die für das angemeldete Community-Mitglied von Interesse sind.
+AEM Communities bietet einen Benachrichtigungsabschnitt, der Ereignisse anzeigt, die für die angemeldeten Community-Mitglieder von Interesse sind.
 
-Benachrichtigungen ähneln [Aktivitäten](/help/communities/essentials-activities.md) und [Abonnements](/help/communities/subscriptions.md), da sie sich aus Folgendem ergeben können:
+Benachrichtigungen ähneln [Aktivitäten](/help/communities/essentials-activities.md) und [Abonnements](/help/communities/subscriptions.md) da sie aus folgenden Gründen auftreten können:
 
-* Das Mitglied, das Inhalte veröffentlicht.
-* Das Mitglied, das sich dafür entscheidet, einem anderen Mitglied zu folgen.
+* Das Mitglied, das den Inhalt postet.
+* Das Mitglied, das einem anderen Mitglied folgt.
 * Das Mitglied, das bestimmte Themen, Artikel und andere Threads von Inhalten verfolgt.
-* Das Mitglied-Tagging (@mention) ist ein weiteres Community-Mitglied in einem benutzergenerierten Inhalt.
+* Das Mitglied, das (@mention) ein anderes Community-Mitglied in einem benutzergenerierten Inhalt taggt.
 
-Unterscheidet Benachrichtigungen von Aktivitäten und Abonnements:
+Was Benachrichtigungen von Aktivitäten und Abonnements unterscheidet, ist:
 
 * Ein Link zum Benachrichtigungsabschnitt ist immer in der Kopfzeile einer Community-Site vorhanden:
 
-   * Für Aktivitäten muss die [Aktivitäts-Stream-Funktion](/help/communities/functions.md#activity-stream-function) in die Struktur der Community-Site aufgenommen werden.
-   * Abonnements erfordern die [Konfiguration der E-Mail](/help/communities/email.md).
+   * Aktivitäten erfordern, dass [Aktivitäts-Stream-Funktion](/help/communities/functions.md#activity-stream-function) in die Struktur der Community-Site aufgenommen wird.
+   * Abonnements erfordern [Konfiguration der E-Mail](/help/communities/email.md).
 
-* Die Implementierung von Benachrichtigungen erfolgt über skalierbare und Pluggable Kanäle:
+* Die Implementierung von Benachrichtigungen erfolgt über skalierbare und steckbare Kanäle:
 
    * Aktivitäten sind nur im Internet verfügbar.
    * Abonnements sind nur per E-Mail verfügbar.
 
-Ab Communities [FP1](/help/communities/deploy-communities.md#latestfeaturepack) sind folgende Benachrichtigungskanäle verfügbar:
+Ab Communities [FP1](/help/communities/deploy-communities.md#latestfeaturepack) stehen folgende Benachrichtigungskanäle zur Verfügung:
 
-* Der Webkanal, auf den über den Link `Notifications` zugegriffen wird.
-* Der E-Mail-Kanal, der verfügbar ist, wenn die E-Mail richtig konfiguriert ist.
+* Der Web-Kanal, auf den über den Link `Notifications` zugegriffen wird.
+* Der E-Mail-Kanal ist verfügbar, wenn die E-Mail ordnungsgemäß konfiguriert ist.
 
-Zukünftige Kanäle sind Mobilgeräte und Desktop.
+Zukünftige Kanäle sind Mobile und Desktop.
 
 ### Voraussetzungen {#requirements}
 
 **E-Mail konfigurieren**
 
-E-Mail muss konfiguriert werden, damit der E-Mail-Kanal funktioniert.
+E-Mail muss konfiguriert werden, damit der E-Mail-Kanal für Benachrichtigungen funktioniert.
 
-Anweisungen zum Einrichten von E-Mails finden Sie unter [E-Mail konfigurieren](/help/communities/analytics.md).
+Anweisungen zum Einrichten von E-Mails finden Sie unter [Konfigurieren von E-](/help/communities/analytics.md)).
 
-**Befolgen aktivieren**
+**Enable Follow**
 
-Komponenten müssen konfiguriert werden, um Folgendes zu aktivieren. Folgende Funktionen sind zulässig: [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [filelilibrary](/help/communities/file-library.md) und [comments](/help/communities/comments.md).
+Komponenten müssen so konfiguriert sein, dass Folgendes aktiviert wird. Funktionen, die Folgendes ermöglichen[ sind ](/help/communities/blog-feature.md)blog[, forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [filelilibrary](/help/communities/file-library.md) und [comments](/help/communities/comments.md).
 
 **Hinweis**:
 
-* Komponenten, die in Community-Vorlagen [Site-Vorlagen](/help/communities/sites.md) und [Gruppenvorlagen](/help/communities/tools-groups.md) verwendet werden, können bereits für das Befolgen konfiguriert sein.
+* Komponenten, die in Community[Site-Vorlagen](/help/communities/sites.md) und [Gruppenvorlagen](/help/communities/tools-groups.md) verwendet werden, sind möglicherweise bereits so konfiguriert, dass sie folgenden Elementen entsprechen.
 
 * Mitgliederprofile sind bereits so konfiguriert, dass andere Mitglieder folgen können.
 
-## Benachrichtigungen aus folgenden {#notifications-from-following}
+## Benachrichtigungen von Folgendem {#notifications-from-following}
 
-![notifications](assets/notifications.png)
+![Benachrichtigungen](assets/notifications.png)
 
-Die Schaltfläche **[!UICONTROL Folgen]** bietet die Möglichkeit, Einträgen als Aktivitäten, Abonnements und/oder Benachrichtigungen zu folgen. Jedes Mal, wenn die Schaltfläche **[!UICONTROL Befolgen]** ausgewählt wird, kann eine Auswahl ein- oder ausgeschaltet werden. Die Auswahl `Email Subscriptions` ist nur bei Konfiguration vorhanden.
+Die **[!UICONTROL Follow]**-Schaltfläche bietet die Möglichkeit, Einträgen in Form von Aktivitäten, Abonnements und/oder Benachrichtigungen zu folgen. Jedes Mal, wenn die **[!UICONTROL Folgen]**-Schaltfläche ausgewählt ist, kann eine Auswahl ein- oder ausgeschaltet werden. Die `Email Subscriptions` ist nur vorhanden, wenn konfiguriert.
 
-Wenn eine der folgenden Methoden ausgewählt ist, ändert sich der Text der Schaltfläche in **[!UICONTROL Folgt]**. Aus praktischen Gründen können Sie `Unfollow All` auswählen, um alle Methoden zu deaktivieren.
+Wenn eine der folgenden Methoden ausgewählt ist, ändert sich der Text der Schaltfläche in &quot;**[!UICONTROL &quot;]**. Der Einfachheit halber können Sie `Unfollow All` auswählen, um alle Methoden zu deaktivieren.
 
 Die Schaltfläche **[!UICONTROL Folgen]** wird angezeigt:
 
 * Beim Anzeigen des Profils eines anderen Mitglieds.
-* Auf einer Hauptseite mit Funktionen wie Foren, Fragen und Antworten und Blogs:
+* Auf einer Haupt-Funktionsseite wie Foren, QNa und Blogs:
 
-   * Folgt allen Aktivitäten für diese allgemeine Funktion.
+   * Führt alle Aktivitäten für diese allgemeine Funktion aus.
 
-* Für einen bestimmten Eintrag, z. B. ein Forenthema, eine Frage zur Frage oder einen Blogartikel:
+* Für einen bestimmten Eintrag, z. B. ein Forumsthema, eine Frage oder einen Blog-Artikel:
 
-   * Folgt allen Aktivitäten für diesen spezifischen Eintrag.
+   * Führt alle Aktivitäten für diesen bestimmten Eintrag aus.
 
-## Verwalten von Benachrichtigungseinstellungen {#managing-notification-settings}
+## Benachrichtigungseinstellungen verwalten {#managing-notification-settings}
 
-Über den Link Benachrichtigungseinstellungen auf der Seite Benachrichtigungen können die einzelnen Mitglieder verwalten, wie Benachrichtigungen empfangen werden.
+Durch Auswahl des Links Benachrichtigungseinstellungen auf der Seite Benachrichtigungen können Sie für jedes Mitglied verwalten, wie Benachrichtigungen empfangen werden.
 
-Der Webkanal ist immer aktiviert.
+Der Web-Kanal ist immer aktiviert.
 
-![notifications14](assets/notifications1.png)
+![Notifications14](assets/notifications1.png)
 
-Der E-Mail-Kanal, der auf der korrekten [E-Mail-Konfiguration](/help/communities/email.md) basiert, bietet dieselben Einstellungen wie für den Webkanal.
+Der E-Mail-Kanal, der auf der ordnungsgemäßen [Konfiguration von E-](/help/communities/email.md)) basiert, bietet dieselben Einstellungen wie für den Web-Kanal.
 
 Der E-Mail-Kanal ist standardmäßig deaktiviert.
 
 ![notifications2](assets/notifications2.png)
 
-Es kann von einem Mitglied aktiviert werden, hängt aber dennoch von der E-Mail-Konfiguration ab.
+Er kann von einem Mitglied aktiviert werden, hängt jedoch weiterhin von der Konfiguration der E-Mail ab.
 
 ![notifications3](assets/notifications3.png)
 
 ## Ansehen der Benachrichtigungen {#viewing-notifications}
 
-### Webbenachrichtigungen {#web-notifications}
+### Web-Benachrichtigungen {#web-notifications}
 
-Ein [Assistent, der die Community-Site erstellt hat](/help/communities/sites-console.md), enthält jetzt einen Link zur Funktion `Notifications` in der Kopfzeilenleiste der Site oberhalb des Banners. Im Gegensatz zu Nachrichten werden Benachrichtigungen für jede Community-Site erstellt, während Nachrichten während des Site-Erstellungsprozesses aktiviert werden müssen.
+Eine [vom Assistenten erstellte Community](/help/communities/sites-console.md)Site enthält jetzt einen Link zur `Notifications` Funktion in der Kopfzeilenleiste der Site über dem Banner. Im Gegensatz zu Nachrichten werden Benachrichtigungen für jede Community-Site erstellt, während Nachrichten während des Erstellungsprozesses der Site aktiviert werden müssen.
 
-Wenn Sie die veröffentlichte Site besuchen, werden durch Auswählen des Links &quot;`Notifications`&quot;alle Benachrichtigungen für das Mitglied angezeigt.
+Wenn Sie die veröffentlichte Site besuchen, werden bei Auswahl des Links `Notifications` alle Benachrichtigungen für das Mitglied angezeigt.
 
 ![notifications4](assets/notifications4.png)
 
@@ -118,15 +118,15 @@ Wenn Sie die veröffentlichte Site besuchen, werden durch Auswählen des Links &
 
 Wenn der E-Mail-Kanal aktiviert ist, erhält das Mitglied eine E-Mail, die einen Link zum Inhalt im Web enthält.
 
-![notifications5](assets/notifications5.png)
+![Notifications5](assets/notifications5.png)
 
 ## E-Mail-Benachrichtigungen anpassen {#customize-email-notifications}
 
-Unternehmen können die E-Mail-Benachrichtigungen anpassen, indem sie die Vorlagen unter **/libs/settings/community/templates/email/html** überlagern.[](/help/communities/client-customize.md#overlays)
+Unternehmen können die E-Mail-Benachrichtigungen anpassen, indem [ die Vorlagen unter **/libs/settings/community/templates/email/html ](/help/communities/client-customize.md#overlays).**.
 
-Um beispielsweise die Benachrichtigungs-E-Mail-Erwähnungen zu ändern (für eine Communities-Komponente), fügen Sie in den Vorlagen der Komponenten, für die Sie die Unterstützung für **@mentions** aktiviert haben, eine Bedingung für Verb **mention** hinzu.****
+Um beispielsweise die Erwähnungen in E-Mail-Benachrichtigungen zu ändern (für eine Communities-Komponente), fügen Sie eine **Wenn**-Bedingung für **Erwähnung** in den Vorlagen der Komponenten hinzu, für die Sie die **@mentions** Unterstützung aktiviert haben.
 
-Um die E-Mail-Benachrichtigungsvorlage für @mention in Blogkommentaren zu ändern, platzieren Sie die vordefinierte Vorlage unter: **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en**
+Um die Vorlage für E-Mail-Benachrichtigungen für die @mention in Blog-Kommentaren zu ändern, fügen Sie eine vordefinierte Vorlage ein unter: **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en**
 
 ```java
 {{#equals this.verb "mention"}}\

@@ -10,7 +10,7 @@ exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: d6b9dde5201198cb073293b2b8527a458836ff0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 100%
 
@@ -33,10 +33,10 @@ Mit der Software können Sie Assets vor ihrer Veröffentlichung verwalten. Eine 
 Funktionen, die nur für Dynamic Media vorgesehen sind:
 
 * [Karussellbanner](carousel-banners.md)
-* [Bildsets](image-sets.md)
+* [Bild-Sets](image-sets.md)
 * [Interaktive Bilder](interactive-images.md)
 * [Interaktive Videos](interactive-videos.md)
-* [Gemischte Mediensets](mixed-media-sets.md)
+* [Sets für gemischte Medien](mixed-media-sets.md)
 * [Panoramabilder](panoramic-images.md)
 
 * [Rotationssets](spin-sets.md)

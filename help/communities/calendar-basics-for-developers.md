@@ -1,6 +1,6 @@
 ---
-title: Kalendergrundlagen
-description: Erfahren Sie, wie Sie mit der Kalenderfunktion in Experience Manager Communities arbeiten. Der Kalender unterstützt die Identifizierung von privilegierten Benutzergruppen.
+title: Grundlagen zum Kalender
+description: Erfahren Sie, wie Sie in Experience Manager Communities mit der Kalenderfunktion arbeiten. Der Kalender unterstützt die Identifizierung privilegierter Benutzergruppen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -16,28 +16,28 @@ ht-degree: 2%
 
 ---
 
-# Kalendergrundlagen {#calendar-essentials}
+# Grundlagen zum Kalender {#calendar-essentials}
 
 Diese Seite enthält wichtige Informationen zum Arbeiten mit der Kalenderfunktion.
 
-## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/calendar/components/hbs/calendar</td>
+   <td>Sozial/Kalender/Komponenten/Hub/Kalender</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inklusive</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
    <td>cq.social.hbs.calendar</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>Vorlagen</strong></td>
    <td>/libs/social/calendar/components/hbs/calendar/calendar.hbs</td>
    <td> </td>
   </tr>
@@ -47,34 +47,34 @@ Diese Seite enthält wichtige Informationen zum Arbeiten mit der Kalenderfunktio
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>siehe <a href="calendar.md">Verwenden von Kalendern</a></td>
+   <td>Siehe <a href="calendar.md">Verwenden von Kalendern</a></td>
   </tr>
  </tbody>
 </table>
 
-* [Clientseitige Anpassungen](client-customize.md)
+* [Client-seitige Anpassungen](client-customize.md)
 
-## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
+## Grundlagen für Server-seitige {#essentials-for-server-side}
 
 * [Kalender-APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
 
 * [Kalenderendpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
 
-* [Serverseitige Anpassungen](server-customize.md)
+* [Server-seitige Anpassungen](server-customize.md)
 
 ### Kalenderfunktion {#calendar-function}
 
-Eine Community-Site-Struktur mit der [Kalenderfunktion](functions.md#calendar-function) hat eine `calendar` -Komponente konfiguriert. Die Kalenderfunktion unterstützt das Identifizieren einer [berechtigten Mitgliederbenutzergruppe](users.md#privileged-members-group).
+Für eine Community-Site-Struktur mit der [Kalenderfunktion](functions.md#calendar-function) ist eine `calendar` konfiguriert. Die Kalenderfunktion unterstützt die Identifizierung einer [privilegierten Benutzergruppe](users.md#privileged-members-group).
 
 ### Zugriff auf Kalenderbeiträge (UGC) {#accessing-calendar-posts-ugc}
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für benutzergenerierte Inhalte den programmatischen Zugriff auf benutzergenerierte Inhalte, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [Common Store](working-with-srp.md) für UGC den programmgesteuerten Zugriff auf UGC, unabhängig von der gewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
 
-**Speicherort und Format des UGC im Repository können sich ohne Warnung ändern**.
+**Speicherort und Format des benutzergenerierten Inhalts im Repository können sich ohne Warnung ändern**.
 
 Siehe:
 
-* [Übersicht über den Speicheranbieter](srp.md) - Übersicht über die Einführung und die Repository-Nutzung
-* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele
-* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien
-* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
+* [Übersicht über den Speicherressourcenanbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung
+* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Hilfsmethoden und -Beispiele
+* [Zugriff auf benutzergenerierten Inhalt mit SRP](accessing-ugc-with-srp.md) - Codierungs-Richtlinien
+* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnung veralteter Hilfsmethoden zu aktuellen SRP-Hilfsmethoden

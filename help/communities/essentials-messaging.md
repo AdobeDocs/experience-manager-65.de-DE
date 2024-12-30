@@ -1,6 +1,6 @@
 ---
-title: Grundlagen zu Messaging
-description: Erfahren Sie mehr über die Funktionsweise und Verwendung der Messaging-Komponente, um eine Messaging-Funktion auf einer Website hinzuzufügen.
+title: Messaging Essentials
+description: Erfahren Sie mehr über die Einzelheiten der Arbeit mit und die Verwendung der Komponente Messaging , um eine Messaging-Funktion auf einer Website einzuschließen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -17,11 +17,11 @@ ht-degree: 3%
 
 ---
 
-# Grundlagen zu Messaging {#messaging-essentials}
+# Messaging Essentials {#messaging-essentials}
 
-Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente beschrieben, um eine Messaging-Funktion auf einer Website einzubinden.
+Auf dieser Seite werden die Details der Arbeit mit dokumentiert, die mit der Messaging-Komponente durchgeführt wird, um eine Messaging-Funktion in eine Website einzuschließen.
 
-## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 **Nachricht erstellen**
 
@@ -32,74 +32,74 @@ Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente be
    <td><p>social/messaging/components/hbs/composemessage</p> </td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientllibs</strong></a></td>
+   <td> <a href="/help/communities/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientlibs</strong></a></td>
    <td><p>cq.social.hbs.messaging</p> </td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>Vorlagen</strong></td>
    <td>/libs/social/messaging/components/hbs/composemessage/composemessage.hbs</td>
   </tr>
   <tr>
-   <td><strong>css</strong></td>
+   <td><strong>CSS</strong></td>
    <td>/libs/social/messaging/components/hbs/composemessage/clientlibs/composemessage.css</td>
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td>Siehe <a href="/help/communities/configure-messaging.md" target="_blank">Konfigurieren von Messaging</a> .</td>
+   <td>Siehe <a href="/help/communities/configure-messaging.md" target="_blank">Konfigurieren von Messaging</a></td>
   </tr>
   <tr>
-   <td><strong>Administratorkonfiguration</strong></td>
-   <td><a href="/help/communities/messaging.md">Messaging konfigurieren</a></td>
+   <td><strong>Admin-Konfiguration</strong></td>
+   <td><a href="/help/communities/messaging.md">Konfigurieren von Messaging</a></td>
   </tr>
  </tbody>
 </table>
 
 **Nachrichtenliste**
 
-(Für Posteingang, Gesendet und Papierkorb)
+(Für Posteingang, gesendet und Papierkorb)
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td><p>social/messaging/components/hbs/messagebox</p> </td>
+   <td><p>social/messaging/components/hbs/messageBox</p> </td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientllibs</strong></a></td>
+   <td> <a href="/help/communities/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientlibs</strong></a></td>
    <td><p>cq.social.hbs.messaging</p> </td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>Vorlagen</strong></td>
    <td>/libs/social/messaging/components/hbs/messagebox/messagebox.hbs</td>
   </tr>
   <tr>
-   <td><strong>css</strong></td>
+   <td><strong>CSS</strong></td>
    <td>/libs/social/messaging/components/hbs/messagebox/clientlibs/messagebox.css</td>
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td>Siehe <a href="/help/communities/configure-messaging.md" target="_blank">Konfigurieren von Messaging</a> .</td>
+   <td>Siehe <a href="/help/communities/configure-messaging.md" target="_blank">Konfigurieren von Messaging</a></td>
   </tr>
   <tr>
-   <td><strong>Administratorkonfiguration</strong></td>
-   <td><a href="/help/communities/messaging.md" target="_blank">Messaging konfigurieren</a></td>
+   <td><strong>Admin-Konfiguration</strong></td>
+   <td><a href="/help/communities/messaging.md" target="_blank">Konfigurieren von Messaging</a></td>
   </tr>
  </tbody>
 </table>
 
 Siehe auch [Client-seitige Anpassungen](/help/communities/client-customize.md)
 
-## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
+## Grundlagen für Server-seitige {#essentials-for-server-side}
 
-* [Messaging konfigurieren](/help/communities/configure-messaging.md)
-* [Messaging-Client-APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) für SCF-Komponenten
-* [Messaging-APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) für den Dienst
+* [Konfigurieren von Nachrichten](/help/communities/configure-messaging.md)
+* [Messaging-Client-](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html)) für SCF-Komponenten
+* [Messaging-APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) für den Service
 * [Messaging-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
-* [Serverseitige Anpassungen](/help/communities/server-customize.md)
+* [Server-seitige Anpassungen](/help/communities/server-customize.md)
 
 >[!CAUTION]
 >
->Der String-Parameter darf für die folgenden MessageBuilder-Methoden *nicht* einen Schrägstrich &quot;/&quot;enthalten:
+>Der Zeichenfolgenparameter darf *keinen* Schrägstrich &quot;/&quot; für die folgenden MessageBuilder-Methoden enthalten:
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
@@ -113,36 +113,36 @@ Siehe auch [Client-seitige Anpassungen](/help/communities/client-customize.md)
 
 ### Community-Site {#community-site}
 
-Eine Community-Site-Struktur, die mithilfe des Assistenten erstellt wurde, enthält die Messaging-Funktion, falls ausgewählt. Siehe `User Management` Einstellungen der [Community-Sites-Konsole](/help/communities/sites-console.md#user-management).
+Eine Community-Site-Struktur, die mithilfe des Assistenten erstellt wurde, enthält die Messaging-Funktion, wenn sie ausgewählt wird. Siehe `User Management` Einstellungen der [Community Sites-Konsole](/help/communities/sites-console.md#user-management).
 
-### Beispielcode: Nachricht erhalten Benachrichtigung {#sample-code-message-received-notification}
+### Beispielcode: Benachrichtigung über empfangene Nachricht {#sample-code-message-received-notification}
 
-Die Funktion Social Messaging gibt Ereignisse für Vorgänge aus, z. B. `send`, `marking read`, `marking delete`. Diese Ereignisse können erfasst und Aktionen für die im Ereignis enthaltenen Daten durchgeführt werden.
+Die Social-Messaging-Funktion löst Ereignisse für Vorgänge aus, z. B. `send`, `marking read`, `marking delete`. Diese Ereignisse können erfasst und Aktionen für die im Ereignis enthaltenen Daten durchgeführt werden.
 
-Das folgende Beispiel zeigt einen Ereignis-Handler, der auf das `message sent` -Ereignis wartet und mit dem `Day CQ Mail Service` eine E-Mail an alle Nachrichtenempfänger sendet.
+Das folgende Beispiel zeigt einen Ereignis-Handler, der auf das `message sent`-Ereignis wartet und mithilfe der `Day CQ Mail Service` eine E-Mail an alle Nachrichtenempfänger sendet.
 
-Zum Testen des serverseitigen Beispielskripts benötigen Sie eine Entwicklungsumgebung und die Möglichkeit, ein OSGi-Bundle zu erstellen:
+Um das Server-seitige Beispielskript auszuprobieren, benötigen Sie eine Entwicklungsumgebung und die Möglichkeit, ein OSGi-Bundle zu erstellen:
 
 1. Melden Sie sich als Administrator bei ` [CRXDE|Lite](https://localhost:4502/crx/de)` an.
-1. Erstellen Sie eine `bundle node`in `/apps/engage/install` mit beliebigen Namen, z. B.:
+1. Erstellen Sie eine `bundle node`-`/apps/engage/install` mit beliebigen Namen, z. B.:
 
    * Symbolischer Name: `com.engage.media.social.messaging.MessagingNotification`
-   * Name: Erste Schritte - Benachrichtigung zu Tutorial-Nachrichten
-   * Beschreibung: Ein Beispieldienst zum Senden einer E-Mail-Benachrichtigung an Benutzer, wenn diese eine Nachricht erhalten
-   * Package: `com.engage.media.social.messaging.notification`
+   * Name: Erste Schritte Tutorial-Benachrichtigung
+   * Beschreibung: Ein Beispiel-Service für das Senden einer E-Mail-Benachrichtigung an Benutzer, wenn sie eine Nachricht erhalten
+   * Paket: `com.engage.media.social.messaging.notification`
 
 1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification` und dann:
 
-   1. Löschen Sie die automatisch erstellte `Activator.java`-Klasse.
-   1. Erstellen Sie die Klasse `MessageEventHandler.java`.
+   1. Löschen Sie die automatisch erstellte `Activator.java`.
+   1. Erstellen Sie `MessageEventHandler.java`.
    1. Kopieren Sie den unten stehenden Code und fügen Sie ihn in `MessageEventHandler.java` ein.
 
 1. Klicken Sie auf **Alle speichern**.
-1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` und fügen Sie alle Importanweisungen hinzu, wie im Code `MessageEventHandler.java` geschrieben.
+1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` und fügen Sie alle Importanweisungen hinzu, wie sie im `MessageEventHandler.java`-Code geschrieben sind.
 1. Erstellen Sie das Bundle.
-1. Stellen Sie sicher, dass der OSGi-Dienst `Day CQ Mail Service`konfiguriert ist.
+1. Stellen Sie sicher`Day CQ Mail Service` dass der OSGi-Dienst konfiguriert ist.
 1. Melden Sie sich als Demobenutzer an und senden Sie eine E-Mail an einen anderen Benutzer.
-1. Der Empfänger erhält eine E-Mail bezüglich einer neuen Nachricht.
+1. Der Empfänger erhält eine E-Mail zu einer neuen Nachricht.
 
 #### MessageEventHandler.java {#messageeventhandler-java}
 

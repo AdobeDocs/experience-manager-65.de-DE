@@ -10,7 +10,7 @@ role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: a4c95d604e63c4fd00f17d2fb99a9e46f823ca10
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3063'
 ht-degree: 100%
 
@@ -41,8 +41,8 @@ Die Koordinaten für das smarte Zuschneiden hängen vom Seitenverhältnis ab. F�
 
 Jeder von Ihnen erstellte smarte Zuschnitt erfordert zusätzliche Verarbeitungsschritte. Das Hinzufügen von mehr als fünf Seitenverhältnissen für das smarte Zuschneiden kann beispielsweise zu einer langsamen Aufnahmerate für Assets führen. Es kann auch zu einer erhöhten Belastung der Systeme führen. Da Sie smartes Zuschneiden auf Ordnerebene anwenden können, empfiehlt Adobe, es *nur* in Ordnern anzuwenden, in denen es erforderlich ist.
 
-**Richtlinien zum Definieren von smartem Zuschneiden in einem Bildprofil**
-Um die Verwendung von smartem Zuschneiden unter Kontrolle zu halten und die Verarbeitungszeit und die Speicherung von Zuschnitten zu optimieren, empfiehlt Adobe Folgendes:
+**Richtlinien zum Definieren von intelligentem Zuschneiden in einem Bildprofil**
+Um die Verwendung von intelligentem Zuschneiden unter Kontrolle zu halten und die Verarbeitungszeit und die Speicherung von Zuschnitten zu optimieren, empfiehlt Adobe Folgendes:
 
 * Für Bild-Assets, auf die ein smartes Zuschneiden angewendet wird, muss mindestens 50 x 50 Pixel groß sein.
 * Idealerweise sollten Sie pro Bild 10 bis 15 smarte Zuschnitte vornehmen, um das Bildschirmverhältnis und die Verarbeitungszeit zu optimieren.

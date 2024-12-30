@@ -1,6 +1,6 @@
 ---
-title: Grundlagen zu Social-Diagrammen
-description: Erfahren Sie mehr über die Grundlagen des Social-Diagramms mit den Komponenten "Folgende"und "Folgen"auf einer Community-Site.
+title: Grundlagen zu Social Graph
+description: Erfahren Sie mehr über die Grundlagen des sozialen Diagramms, indem Sie die folgenden und folgenden Komponenten auf einer Community-Site verwenden.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -16,15 +16,15 @@ ht-degree: 4%
 
 ---
 
-# Grundlagen zu Social-Diagrammen  {#social-graph-essentials}
+# Grundlagen zu Social Graph  {#social-graph-essentials}
 
-Die Fähigkeit eines Community-Mitglieds, [Aktivitäten](essentials-activities.md) zu folgen und ihnen zu folgen, wird durch zwei Komponenten festgelegt:
+Die Fähigkeit eines Mitglieds der Community, [Aktivitäten](essentials-activities.md) zu verfolgen, wird durch zwei Komponenten festgelegt:
 
-Die Komponente `following` muss mit einer anderen Ressource verknüpft sein, und diese Zuordnung ist bereits für bestehende Community-Mitglieder und -Funktionen auf einer [Community-Site](overview.md#communitiessites) eingerichtet.
+Die `following`-Komponente muss mit einer anderen Ressource verknüpft sein, und diese Verknüpfung wurde bereits für bestehende Community-Mitglieder und -Funktionen auf einer [Community-Site“ ](overview.md#communitiessites).
 
-Die Komponente `following` listet die Mitglieder auf, die dem aktuellen Mitglied folgen oder dem aktuellen Mitglied folgen. Dieses soziale Diagramm der Beziehungen zwischen Mitgliedern ist in das für eine Community-Site eingerichtete Benutzerprofil aufgenommen.
+Die `following`-Komponente listet die Elemente auf, die entweder auf das aktuelle Element folgen oder auf die das aktuelle Element folgt. Dieses soziale Diagramm von Beziehungen zwischen Mitgliedern ist im Benutzerprofil enthalten, das für eine Community-Site erstellt wurde.
 
-## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 ### Folgende {#following}
 
@@ -32,18 +32,18 @@ Die Komponente `following` listet die Mitglieder auf, die dem aktuellen Mitglied
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/socialgraph/components/hbs/relations</td>
+   <td>social/socialGraph/components/hbs/relations</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inklusive</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
    <td>cq.social.hbs.socialgraph</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>Vorlagen</strong></td>
    <td> /libs/social/socialgraph/components/hbs/relationships/relationships.hbs</td>
   </tr>
   <tr>
@@ -52,7 +52,7 @@ Die Komponente `following` listet die Mitglieder auf, die dem aktuellen Mitglied
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Siehe <a href="socialgraph.md">Verwenden des Social-Diagramms</a></td>
+   <td>Siehe <a href="socialgraph.md">Verwenden von Social Graph</a></td>
   </tr>
   <tr>
    <td><strong> optional<br /> Eigenschaft</strong></td>
@@ -62,10 +62,10 @@ Die Komponente `following` listet die Mitglieder auf, die dem aktuellen Mitglied
      <li>Typ: Boolesch</li>
      <li>Wert:<br />
       <ul>
-       <li><i>True </i> - Die Komponente <code>following</code> listet die Mitglieder auf, die das angemeldete Mitglied sind <code>follows</code></li>
-       <li><i>False </i> - Die Komponente <code>following</code> listet die Mitglieder auf, die <code>follow </code>das angemeldete Mitglied sind</li>
+       <li><i>True </i>- Die <code>following</code>-Komponente listet die Mitglieder auf, die das angemeldete Mitglied sind <code>follows</code></li>
+       <li><i>False </i>- Die <code>following</code>-Komponente listet die Mitglieder auf, die <code>follow </code> angemeldetes Mitglied sind</li>
       </ul> </li>
-    </ul> <p>Der Standardwert ist <i>true</i> , wenn die Eigenschaft fehlt. Es ist nicht möglich, diese Eigenschaft im Bearbeitungsdialogfeld im Autorenmodus festzulegen. Die Eigenschaft muss mithilfe von <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a> einer Instanz des Knotens <code>following</code> hinzugefügt werden.</p> </td>
+    </ul> <p>Die Standardeinstellung ist <i>true</i>, wenn die Eigenschaft fehlt. Es ist nicht möglich, diese Eigenschaft mithilfe des Bearbeitungsdialogfelds im Autorenmodus festzulegen. Die Eigenschaft muss mithilfe von „CRXDE|Lite“ zu einer Instanz des <code>following</code>-<a href="../../help/sites-developing/developing-with-crxde-lite.md"> hinzugefügt </a>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -74,16 +74,16 @@ Die Komponente `following` listet die Mitglieder auf, die dem aktuellen Mitglied
 
 | **resourceType** | `social/socialgraph/components/hbs/following` |
 |---|---|
-| [**include**](scf.md#add-or-include-a-communities-component) | Nein |
-| **templates** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
+| [**inklusive**](scf.md#add-or-include-a-communities-component) | Nein |
+| **Vorlagen** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
 | **css** | `/libs/social/socialgraph/components/hbs/following/clientlibs/following.css` |
 
-* [Clientseitige Anpassungen](client-customize.md)
+* [Client-seitige Anpassungen](client-customize.md)
 
-## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
+## Grundlagen für Server-seitige {#essentials-for-server-side}
 
-* [Social Graph-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
+* [Social-Graph-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
 
-* [Social-Graph-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
+* [Endpunkte für soziale Diagramme](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
 
-* [Serverseitige Anpassungen](server-customize.md)
+* [Server-seitige Anpassungen](server-customize.md)

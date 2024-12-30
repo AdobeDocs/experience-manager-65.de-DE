@@ -1,6 +1,6 @@
 ---
-title: Namenskonventionen in Java& Handel; Paketname
-description: Erfahren Sie mehr über Benennungskonventionen und die Verwendung von Bindestrichen in Java&trade;package name.
+title: Benennungskonventionen im Java&trade;-Paketnamen
+description: Erfahren Sie mehr über Benennungskonventionen und die Verwendung von Bindestrichen im Java-&trade;-Paketnamen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -18,14 +18,14 @@ ht-degree: 1%
 
 # Benennungskonventionen {#naming-conventions}
 
-## Bindestriche in Java™-Paketname {#hyphens-in-java-package-name}
+## Bindestriche im Java™-Paketnamen {#hyphens-in-java-package-name}
 
-Beim Erstellen eines Speicherorts für eine Java™-Klasse muss der Paketname mit dem des Repository-Ordnerspeicherorts übereinstimmen und alle Bindestriche im Pfad müssen ordnungsgemäß maskiert sein.
+Beim Erstellen eines Speicherorts für eine Java™-Klasse muss der Paketname mit dem des Speicherorts des Repository-Ordners mit allen Bindestrichen im Pfad übereinstimmen, die ordnungsgemäß maskiert sind.
 
-Die Verwendung von Bindestrichen in den Namen von Repository-Elementen ist eine empfohlene Vorgehensweise bei AEM Entwicklung, aber Bindestriche sind in Java™-Paketnamen unzulässig.
+Obwohl die Verwendung von Bindestrichen in den Namen von Repository-Elementen eine empfohlene Praxis in der AEM-Entwicklung ist, sind Bindestriche in Java™-Paketnamen unzulässig.
 
-Die zugrunde liegende CRX-Plattform muss zwischen einem tatsächlichen Unterstrich `_ ` und einem Bindestrich `-` unterscheiden können. Daher muss der Bindestrich in JCR durch den Unicode-Wert (u002d) ersetzt und mit einem Unterstrich (`_`) maskiert werden.
+Die zugrunde liegende CRX-Plattform muss zwischen einem tatsächlichen Unterstrich `_ ` einem Bindestrich `-`. Daher muss in JCR der Bindestrich durch seinen Unicode-Wert (u002d) ersetzt und mit einem Unterstrich `_`.
 
-Wenn der Repository-Pfad beispielsweise **/apps/my-example/component/info/Info.java** lautet, sollte der Paketname `java package apps.my_002dexample.component.info;` lauten.
+Wenn der Repository-Pfad beispielsweise **/apps/my-example/component/info/Info.java** lautet, sollte der Paketname `java package apps.my_002dexample.component.info;` sein
 
-Beachten Sie, dass ein Unterstrich auf ähnliche Weise maskiert werden muss, sodass `_` zu `_005f` wird.
+Beachten Sie, dass ein Unterstrich in ähnlicher Weise maskiert werden muss, sodass `_` `_005f` wird.

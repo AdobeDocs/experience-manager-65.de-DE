@@ -1,6 +1,6 @@
 ---
-title: Leaderboard-Grundlagen
-description: Erfahren Sie, wie Sie die Bewertungen und Abzeichen für Communities konfigurieren, damit Sie mit der Leaderboard-Komponente in Adobe Experience Manager Communities arbeiten können.
+title: Leaderboard Essentials
+description: Erfahren Sie, wie Sie Bewertungen und Abzeichen in Communities konfigurieren, damit Sie in Adobe Experience Manager Communities mit der Leaderboard-Komponente arbeiten können.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -16,15 +16,15 @@ ht-degree: 5%
 
 ---
 
-# Leaderboard-Grundlagen {#leaderboard-essentials}
+# Leaderboard Essentials {#leaderboard-essentials}
 
-Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Leaderboard-Funktion.
+Diese Seite enthält die wichtigsten Informationen zum Arbeiten mit der Leaderboard-Funktion.
 
-Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie die [Bewertungen und Abzeichen der Gemeinschaften](implementing-scoring.md) konfigurieren.
+Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie „Community[Punktzahl und Abzeichen“ ](implementing-scoring.md).
 
-Siehe [Grundlagen zu Scoring und Abzeichen](configure-scoring.md).
+Siehe [Grundlagen zu Bewertungen und Abzeichen](configure-scoring.md).
 
-## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -33,15 +33,15 @@ Siehe [Grundlagen zu Scoring und Abzeichen](configure-scoring.md).
    <td>social/gamification/components/hbs/leaderboard</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inklusive</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
    <td>cq.social.gamification.hbs.leaderboard</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>Vorlagen</strong></td>
    <td> /libs/social/gamification/components/hbs/leaderboard/leaderboard.hbs<br /> </td>
   </tr>
   <tr>
@@ -55,8 +55,8 @@ Siehe [Grundlagen zu Scoring und Abzeichen](configure-scoring.md).
  </tbody>
 </table>
 
-* [Clientseitige Anpassungen](client-customize.md)
+* [Client-seitige Anpassungen](client-customize.md)
 
 ### Dateibibliotheksfunktion {#file-library-function}
 
-Eine Community-Site-Struktur, die die [Leaderboard-Funktion](functions.md#leaderboard-function) enthält, enthält eine konfigurierte `leaderboard` -Komponente.
+Eine Community-Site-Struktur mit der [Leaderboard-Funktion](functions.md#leaderboard-function) enthält eine konfigurierte `leaderboard`.

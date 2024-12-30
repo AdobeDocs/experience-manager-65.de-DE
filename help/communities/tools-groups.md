@@ -1,6 +1,6 @@
 ---
 title: Gruppenvorlagen
-description: Erfahren Sie, wie Sie auf die Konsole Gruppenvorlagen zugreifen können, um eine Reihe vorab verkabelter Seiten und Funktionen zu erhalten, die eine Community-Site bilden.
+description: Erfahren Sie, wie Sie auf die Konsole „Gruppenvorlagen“ für eine Reihe vorab verkabelter Seiten und Funktionen zugreifen können, die eine Community-Site bilden.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -19,23 +19,23 @@ ht-degree: 2%
 
 # Gruppenvorlagen {#group-templates}
 
-Die Gruppenvorlagen-Konsole ähnelt der Konsole [Site-Vorlagen](/help/communities/sites.md) . Beide sind Blueprints für eine Reihe vorab verkabelter Seiten und Funktionen, die eine Community-Site bilden. Der Unterschied besteht darin, dass eine Site-Vorlage für die Hauptgemeinde und eine Gruppenvorlage für eine Community-Gruppe, eine Subgemeinschaft, die in der Hauptgemeinde verschachtelt ist, bestimmt ist.
+Die Konsole „Gruppenvorlagen“ ähnelt der Konsole [Site-](/help/communities/sites.md)&quot;. Bei beiden handelt es sich um Blueprints für eine Reihe vorkonfigurierter Seiten und Funktionen, die eine Community-Site bilden. Der Unterschied besteht darin, dass eine Site-Vorlage für die Haupt-Community und eine Gruppenvorlage für eine Community-Gruppe ist, eine Untergemeinschaft, die innerhalb der Haupt-Community verschachtelt ist.
 
-Eine Community-Gruppe wird in eine Site-Vorlage integriert, indem die [Gruppenfunktion](/help/communities/functions.md#groups-function) einbezogen wird (die nicht die erste und nicht nur die Funktion in der Vorlage ist).
+Eine Community-Gruppe wird in eine Site-Vorlage integriert, indem die Funktion [Gruppen](/help/communities/functions.md#groups-function) einbezogen wird (dies kann nicht die erste oder einzige Funktion in der Vorlage sein).
 
-Ab Communities [Feature Pack 1](/help/communities/deploy-communities.md#latestfeaturepack) können Gruppen verschachtelt werden, indem die Funktion Gruppen in eine Gruppenvorlage eingefügt wird.
+Ab Communities [Feature Pack 1](/help/communities/deploy-communities.md#latestfeaturepack) ist es möglich, Gruppen zu verschachteln, indem die Funktion „Gruppen“ in eine Gruppenvorlage aufgenommen wird.
 
-Sobald eine Aktion zum Erstellen einer Community-Gruppe durchgeführt wird, wird die Vorlage (Struktur) der Gruppe ausgewählt. Die Auswahl hängt davon ab, wie die Funktion Gruppen konfiguriert wurde, als sie der Site- oder Gruppenvorlage hinzugefügt wurde.
+In dem Moment, in dem eine Aktion zum Erstellen einer Community-Gruppe ausgeführt wird, wird die Vorlage (Struktur) der Gruppe ausgewählt. Die Auswahl hängt davon ab, wie die Gruppenfunktion konfiguriert wurde, als sie der Site- oder Gruppenvorlage hinzugefügt wurde.
 
 >[!NOTE]
 >
->Die Konsolen zum Erstellen von [Community-Sites](/help/communities/sites-console.md), [Community-Site-Vorlagen](/help/communities/sites.md), [Community-Gruppenvorlagen](/help/communities/tools-groups.md) und [Community-Funktionen](/help/communities/functions.md) sind nur zur Verwendung in der Autorenumgebung vorgesehen.
+>Die Konsolen für die Erstellung von [Community-Sites](/help/communities/sites-console.md), [Community-Site-Vorlagen](/help/communities/sites.md), [Community-Gruppenvorlagen](/help/communities/tools-groups.md) und [Community-Funktionen](/help/communities/functions.md) sind nur für die Autorenumgebung vorgesehen.
 
-## Gruppenvorlagen-Konsole {#group-templates-console}
+## Konsole „Gruppenvorlagen“ {#group-templates-console}
 
-So greifen Sie auf die Gruppenvorlagen-Konsole in der AEM-Autorenumgebung zu:
+So gelangen Sie in der AEM-Autorenumgebung zur Vorlagenkonsole für Gruppen:
 
-* Auswählen von **Tools | Communities | Gruppenvorlagen,** aus der globalen Navigation.
+* Wählen Sie **Tools | Communities | Gruppenvorlagen,** aus der globalen Navigation.
 
 Diese Konsole zeigt die Vorlagen an, aus denen eine [Community-Site](/help/communities/sites-console.md) erstellt werden kann, und ermöglicht die Erstellung neuer Gruppenvorlagen.
 
@@ -43,17 +43,17 @@ Diese Konsole zeigt die Vorlagen an, aus denen eine [Community-Site](/help/commu
 
 ## Gruppenvorlage erstellen {#create-group-template}
 
-Um mit der Erstellung einer Gruppenvorlage zu beginnen, wählen Sie `Create` aus.
+Wählen Sie `Create` aus, um mit der Erstellung einer Gruppenvorlage zu beginnen.
 
-Dadurch wird der Site-Editor-Bereich angezeigt, der drei Unterbereiche enthält:
+Dadurch wird das Site-Editor-Bedienfeld angezeigt, das drei Unterbedienfelder enthält:
 
 ### Grundlegende Informationen {#basic-info}
 
 ![site-basic-info](assets/site-basic-info.png)
 
-Im Bedienfeld &quot;Grundlegende Informationen&quot;werden ein Name, eine Beschreibung und die Frage, ob die Vorlage aktiviert oder deaktiviert ist, konfiguriert:
+Im Bereich Basic Info werden ein Name, eine Beschreibung und Angaben dazu konfiguriert, ob die Vorlage aktiviert oder deaktiviert ist:
 
-* **Neuer Name der Gruppenvorlage**
+* **Name der neuen Gruppenvorlage**
 
   Die Vorlagenname-ID.
 
@@ -63,40 +63,40 @@ Im Bedienfeld &quot;Grundlegende Informationen&quot;werden ein Name, eine Beschr
 
 * **Deaktiviert/Aktiviert**
 
-  Ein Umschalter steuert, ob die Vorlage referenzierbar ist.
+  Ein Umschalter, der steuert, ob auf die Vorlage verwiesen werden kann.
 
 #### Miniaturansicht {#thumbnail}
 
 ![site-thumbnail](assets/site-thumbnail.png)
 
-(Optional) Wählen Sie das Symbol Bild hochladen aus, um eine Miniaturansicht zusammen mit dem Namen und der Beschreibung für Ersteller von Community-Sites anzuzeigen.
+(Optional) Klicken Sie auf das Symbol Bild hochladen , um eine Miniaturansicht zusammen mit dem Namen und der Beschreibung für die Ersteller von Community-Sites anzuzeigen.
 
 #### Struktur {#structure}
 
 >[!CAUTION]
 >
->Wenn Sie mit AEM 6.1 Communities FP4 oder früher arbeiten, fügen Sie einer Gruppenvorlage keine Gruppenfunktion hinzu.
+>Wenn Sie mit AEM 6.1 Communities FP4 oder früher arbeiten, fügen Sie keiner Gruppenvorlage eine Gruppenfunktion hinzu.
 >
->Die Funktion für verschachtelte Gruppen ist ab Communities [FP1](/help/communities/communities.md#latestfeaturepack) verfügbar.
+>Die Funktion für verschachtelte Gruppen ist ab Communities (FP1[ verfügbar](/help/communities/communities.md#latestfeaturepack).
 >
->Es ist immer noch nicht zulässig, eine Gruppenfunktion als erste oder einzige Funktion in einer Vorlage hinzuzufügen.
+>Es ist weiterhin nicht zulässig, eine Gruppenfunktion als erste oder einzige Funktion in einer Vorlage hinzuzufügen.
 
 ![Gruppenvorlagen-Editor](assets/template-editor.png)
 
-Um Community-Funktionen hinzuzufügen, ziehen Sie von der rechten Seite nach links in die Reihenfolge, in der die Links zum Site-Menü angezeigt werden sollen. Stile werden während der Erstellung der Site auf die Vorlage angewendet.
+Um Community-Funktionen hinzuzufügen, ziehen Sie von der rechten Seite nach links in der Reihenfolge, in der die Links im Site-Menü angezeigt werden sollen. Stile werden während der Erstellung der Site auf die Vorlage angewendet.
 
-Wenn Sie beispielsweise ein Forum wünschen, ziehen Sie die Forumsfunktion aus der Bibliothek und legen Sie sie unter dem Vorlagen-Builder ab. Dies führt zum Öffnen des Dialogfelds für die Forenkonfiguration. Informationen zu den Konfigurationsdialogfeldern finden Sie in der [Funktionskonsole](/help/communities/functions.md) .
+Wenn Sie z. B. ein Forum möchten, ziehen Sie die Forenfunktion aus der Bibliothek und legen Sie sie unter dem Vorlagen-Builder ab. Daraufhin wird das Dialogfeld für die Forenkonfiguration geöffnet. Siehe die [Funktionskonsole](/help/communities/functions.md) für Informationen zu den Konfigurationsdialogen.
 
-Setzen Sie die Drag-and-Drop-Funktion anderer Community-Funktionen fort, die basierend auf dieser Vorlage für eine Subcommunity-Site (Gruppe) gewünscht werden.
+Ziehen Sie weiterhin alle anderen Community-Funktionen per Drag-and-Drop, die für eine Subcommunity-Site (Gruppe) basierend auf dieser Vorlage gewünscht sind.
 
-![Drag-Funktionen](assets/dragfunctions.png)
+![Funktionen ziehen](assets/dragfunctions.png)
 
-Nachdem alle gewünschten Funktionen im Vorlagenerstellungsbereich abgelegt und konfiguriert wurden, wählen Sie oben rechts **Speichern** aus.
+Nachdem alle gewünschten Funktionen im Bereich des Vorlagen-Builders abgelegt und konfiguriert wurden, wählen Sie **Speichern** in der oberen rechten Ecke.
 
 ## Gruppenvorlage bearbeiten {#edit-group-template}
 
-Bei der Anzeige von Community-Gruppen in der Hauptkonsole [Gruppenvorlagen](#group-templates-console) ist es möglich, eine vorhandene Gruppenvorlage zur Bearbeitung auszuwählen.
+Wenn Sie Community-Gruppen in der Hauptkonsole [Gruppenvorlagen](#group-templates-console) anzeigen, können Sie eine vorhandene Gruppenvorlage zur Bearbeitung auswählen.
 
-Die Bearbeitung einer Gruppenvorlage hat keine Auswirkungen auf Community-Sites, die bereits aus der Vorlage erstellt wurden. Es ist möglich, stattdessen die Struktur einer Community-Site](/help/communities/sites-console.md#modify-structure) direkt zu bearbeiten.[
+Das Bearbeiten einer Gruppenvorlage hat keine Auswirkungen auf Community-Sites, die bereits anhand der Vorlage erstellt wurden. Stattdessen kann die Struktur einer Community[Site direkt bearbeitet ](/help/communities/sites-console.md#modify-structure).
 
-Dieser Prozess stellt dieselben Bedienfelder bereit wie [Erstellen einer Gruppenvorlage](#create-group-template).
+Dieser Prozess bietet dieselben Bedienfelder wie [Erstellen einer ](#create-group-template)).

@@ -1,6 +1,6 @@
 ---
-title: Community-Gruppengrundlagen
-description: Erfahren Sie, wie autorisierte Benutzer die Funktion Community-Gruppen verwenden können, um eine Subcommunity auf einer Community-Site dynamisch zu erstellen.
+title: Community-Hauptgruppen
+description: Erfahren Sie, wie autorisierte Benutzer die Funktion „Community-Gruppen“ verwenden können, um eine Untergemeinschaft innerhalb einer Community-Site dynamisch zu erstellen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -16,28 +16,28 @@ ht-degree: 1%
 
 ---
 
-# Community-Gruppengrundlagen  {#community-group-essentials}
+# Community-Hauptgruppen  {#community-group-essentials}
 
-Die Funktion &quot;Community-Gruppen&quot;ermöglicht die dynamische Erstellung einer Subcommunity auf einer Community-Site durch autorisierte Benutzer aus der Veröffentlichungs- und Autorenumgebung.
+Die Funktion „Community-Gruppen“ bietet die Möglichkeit, dass autorisierte Benutzer aus der Veröffentlichungs- und Autorenumgebung innerhalb einer Community-Site eine Untergemeinschaft dynamisch erstellen.
 
-Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack) können Gruppen in anderen Gruppen verschachtelt werden.
+Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack) ist es möglich, dass Gruppen in anderen Gruppen verschachtelt sind.
 
-## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
-### Community-Gruppen-Mitgliederliste {#community-groups-member-list}
+### Community Groups Member List {#community-groups-member-list}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/group/components/hbs/communityGroupmemberList</td>
+   <td>social/group/components/hbs/communityGroupMemberList</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
    <td>cq.social.hbs.communitygroups</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>Vorlagen</strong></td>
    <td> /libs/social/group/components/hbs/communitygroupmemberlist/communitygroupmemberlist.hbs<br /> </td>
   </tr>
   <tr>
@@ -60,11 +60,11 @@ Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack) können
    <td>social/group/components/hbs/communityGroups</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
    <td>cq.social.hbs.communitygroups</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>Vorlagen</strong></td>
    <td> /libs/social/group/components/hbs/communitygroups/communitygroups.hbs<br /> </td>
   </tr>
   <tr>
@@ -74,39 +74,39 @@ Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack) können
  </tbody>
 </table>
 
-* [Clientseitige Anpassungen](client-customize.md)
+* [Client-seitige Anpassungen](client-customize.md)
 
-## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
+## Grundlagen für Server-seitige {#essentials-for-server-side}
 
 * [Community-Gruppen-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
 * [Community-Gruppenendpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
 
-* [Serverseitige Anpassungen](server-customize.md)
+* [Server-seitige Anpassungen](server-customize.md)
 
-### Gruppenfunktion {#groups-function}
+### group-Funktion {#groups-function}
 
-Eine Community-Site-Struktur mit der Funktion [Gruppen](functions.md#groups-function) unterstützt die Erstellung neuer `community groups` in der Veröffentlichungs- und Autorenumgebung. Die erstellte Community-Gruppe enthält eine `community groups member list` -Komponente, die die Mitglieder der Gruppe auflistet.
+Eine Community-Site-Struktur mit einer Funktion [Gruppen](functions.md#groups-function) unterstützt die Erstellung neuer `community groups` aus der Veröffentlichungs- und Autorenumgebung. Die erstellte Community-Gruppe enthält eine `community groups member list`-Komponente, in der die Mitglieder der Gruppe aufgeführt sind.
 
-Eine oder mehrere [Community-Gruppenvorlagen](tools-groups.md), die das Design der Community-Gruppenseiten bereitstellen, können für die Funktion Gruppen konfiguriert werden. Dies gilt, wenn die Funktion einer [Community-Site-Vorlage](sites.md) hinzugefügt oder in einer Community-Gruppenvorlage verschachtelt wird.
+Für [ Funktion Gruppen können eine oder mehrere ](tools-groups.md) (Community-Gruppenvorlagen) konfiguriert werden, die das Design der Community-Gruppenseiten bereitstellen. Dies ist der Fall, wenn die Funktion zu einer [Community-Site-Vorlage](sites.md) hinzugefügt oder in einer Community-Gruppenvorlage verschachtelt wird.
 
-Die Einbeziehung mehrerer Community-Gruppenvorlagen führt zu einer Auswahl. Das heißt, die Auswahl des Designs wird dem autorisierten Benutzer zum Zeitpunkt der Erstellung einer Community-Gruppe für die Community-Site angezeigt. Weitere Informationen finden Sie im Abschnitt zu [Community-Gruppen](creating-groups.md) für Autoren.
+Das Einschließen mehrerer Community-Gruppenvorlagen führt zu einer Auswahl. Das heißt, die Auswahl des Designs, das dem autorisierten Benutzer zum Zeitpunkt der Erstellung einer Community-Gruppe für die Community-Site präsentiert wird. Weitere Informationen finden Sie im Abschnitt [Community-](creating-groups.md)) für Autoren.
 
 ### Verschachtelte Gruppen {#nested-groups}
 
-Ab Communities [FP1](deploy-communities.md#latestfeaturepack) ist es möglich, eine Gruppenfunktion in eine Gruppenvorlage aufzunehmen, um verschachtelte Gruppen (Untergruppen) zuzulassen.
+Ab Communities [FP1](deploy-communities.md#latestfeaturepack) ist es möglich, dass eine Gruppenfunktion in eine Gruppenvorlage aufgenommen wird, wodurch verschachtelte Gruppen (Untergemeinschaften) berücksichtigt werden.
 
-Wenn eine Community-Site oder eine Gruppenvorlage die Funktion Gruppen enthält, können Sie Folgendes tun:
+Wenn eine Community-Site oder Gruppenvorlage die Funktion Gruppen enthält, können Sie:
 
-* Erstellen Sie eine Subcommunity in der Autorenumgebung.
+* Erstellen Sie eine Untergemeinschaft in der Autorenumgebung.
 
-* Erstellen Sie eine Gruppe in der Veröffentlichungsumgebung, sofern diese so konfiguriert ist, dass sie dies zulässt.
+* Erstellen Sie eine Gruppe in der Veröffentlichungsumgebung, wenn sie so konfiguriert ist, dass sie dies zulässt.
 
-Beim Erstellen einer Gruppe in der Autorenumgebung ist es erforderlich, zuerst die Community-Site zu veröffentlichen und dann die Gruppe zu veröffentlichen. Durch das Veröffentlichen der Community-Site werden die Seiten der Gruppe veröffentlicht, ohne dass die Mitgliedergruppen der Subcommunity erstellt werden, für die ACLs festgelegt sind. Daher kann eine eingeschränkte (geheime) Gruppe sichtbar sein, bis die Gruppe explizit veröffentlicht wird.
+Beim Erstellen einer Gruppe in der Autorenumgebung ist es erforderlich, zunächst die Community-Site und anschließend die Gruppe zu veröffentlichen. Das Veröffentlichen der Community-Site veröffentlicht die Seiten der Gruppe, ohne die Mitgliedergruppen der Untergemeinschaft zu erstellen, auf die die ACLs festgelegt sind. Daher kann eine eingeschränkte (geheime) Gruppe sichtbar sein, bis die Gruppe explizit veröffentlicht wird.
 
 ## Links und zugehörige Informationen {#links-and-related-information}
 
 * [Verwalten von Benutzern und Benutzergruppen](users.md)
 * [Communities-Gruppenkonsole](groups.md)
-* [Gruppenfunktion](functions.md#groups-function)
+* [group-Funktion](functions.md#groups-function)
 * [Gruppenvorlagen](tools-groups.md)

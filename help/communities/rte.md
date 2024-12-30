@@ -1,6 +1,6 @@
 ---
 title: Grundlagen zum Rich-Text-Editor
-description: Erfahren Sie mehr über die Grundlagen und Funktionen eines Rich-Text-Editors, mit dem Sie Text mit Markup eingeben können.
+description: Lernen Sie die Grundlagen und Funktionen eines Rich-Text-Editors kennen, mit dem Sie Text mit Markup eingeben können.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -22,15 +22,15 @@ ht-degree: 3%
 
 Mit einem Rich-Text-Editor (RTE) können Sie Text mit Markup eingeben.
 
-Bei Communities-Komponenten wirkt sich dies ähnlich wie der Rich-Text-Editor [ in der Autorenumgebung auf den in der Veröffentlichungsumgebung eingegebenen Text aus.](../../help/sites-authoring/rich-text-editor.md)
+Bei Communities-Komponenten wirkt sich dies ähnlich wie [Rich-Text-Editor in der Autorenumgebung](../../help/sites-authoring/rich-text-editor.md) auf Text aus, der in der Veröffentlichungsumgebung eingegeben wird.
 
-![Rich-Text-Editor](assets/rich-text-editor.png)
+![rich-text-editor](assets/rich-text-editor.png)
 
-## Rich-Text-Editor aktivieren {#enabling-rich-text-editor}
+## Aktivieren des Rich-Text-Editors {#enabling-rich-text-editor}
 
-Communities-Komponenten, die benutzergenerierte Inhalte (UGC) zulassen, können aktiviert werden, um den RTE zuzulassen. Wenn die Komponente einer Seite hinzugefügt oder in einer [Funktion](functions.md) enthalten war, kann der RTE standardmäßig aktiviert sein oder nicht.
+Communities-Komponenten, die benutzergenerierte Inhalte (User Generated Content, UGC) zulassen, können für den RTE aktiviert werden. Wenn die Komponente zu einer Seite hinzugefügt oder in eine [Funktion](functions.md) eingefügt wurde, kann RTE standardmäßig aktiviert sein oder nicht.
 
-Wenn diese Option nicht aktiviert ist, geben Sie einfach den Bearbeitungsmodus für Autoren ](sites-console.md#authoring-site-content) ein, wählen Sie die zu bearbeitende Komponente aus und aktivieren Sie das Kontrollkästchen `Rich Text Editor` .[
+Wenn diese Option nicht aktiviert ist, [ Sie einfach den ](sites-console.md#authoring-site-content) „author edit mode“ ein, wählen Sie die Komponente aus, die bearbeitet werden soll, und aktivieren Sie das Kontrollkästchen `Rich Text Editor` .
 
 RTE ist für die folgenden Communities-Komponenten verfügbar:
 
@@ -45,17 +45,17 @@ RTE ist für die folgenden Communities-Komponenten verfügbar:
 
 ## Anpassung {#customization}
 
-Die Anpassung des Rich-Text-Editors ist möglich, da die Implementierung auf [CKEditor](https://ckeditor.com/) basiert.
+Der Rich-Text-Editor kann angepasst werden, da die Implementierung auf [CKEditor](https://ckeditor.com/) basiert.
 
-Die aktuelle Konfiguration für Communities-Komponenten befindet sich im Ordner `cq.social.  scf   clientlib` im Repository unter
+Die aktuelle Konfiguration für Communities-Komponenten befindet sich im `cq.social.  scf   clientlib`, im Repository unter .
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 
-Eine Änderung der clientlib cq.social.scf wird nicht empfohlen, da zukünftige Upgrades Änderungen überschreiben können.
+Das Ändern der Client-Bibliothek „cq.social.scf“ wird nicht empfohlen, da zukünftige Upgrades alle Änderungen überschreiben können.
 
 ### Beispielanpassung: Inline-Links {#example-customization-inline-links}
 
-Aus Sicherheitsgründen sind die Hyperlink-Optionen nicht im Satz von Rich-Text-Symbolen enthalten, die Mitgliedern standardmäßig angezeigt werden. Die Fähigkeit, Unruhe zu stiften, ist groß, wenn href in UGC erlaubt sind.
+Aus Sicherheitsgründen sind die Hyperlink-Optionen nicht in dem Satz von Rich-Text-Symbolen enthalten, der Mitgliedern standardmäßig angezeigt wird. Die Fähigkeit, Unfug zu stiften, ist groß, wenn in benutzergenerierten Inhalten erlaubt sind.
 
 So fügen Sie die Hyperlink-Optionen zur Symbolleiste hinzu:
 

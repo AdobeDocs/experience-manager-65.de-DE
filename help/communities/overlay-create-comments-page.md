@@ -1,6 +1,6 @@
 ---
-title: Seite "Kommentare erstellen"
-description: Erfahren Sie, wie Sie mit dem Handbuch zu Community-Komponenten mühelos über die Kommentarkomponente navigieren können.
+title: Seite „Kommentare erstellen“
+description: Erfahren Sie, wie Sie mit dem Handbuch für Community-Komponenten die Überlagerung der Komponente Kommentare einfach erleben können.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 ---
 
-# Seite &quot;Kommentare erstellen&quot; {#create-comments-page}
+# Seite „Kommentare erstellen“ {#create-comments-page}
 
-**[⇐ Überlagerungskommentkomponente](overlay-comments.md) [Knoten erstellen](overlay-create-nodes.md)**
+**[⇐ Komponente „Kommentare überlagern](overlay-comments.md) [Knoten erstellen ⇒](overlay-create-nodes.md)**
 
-## Kommentarseite {#comments-page}
+## Seite „Kommentare“ {#comments-page}
 
-Im [Handbuch zu Community-Komponenten](components-guide.md) können Sie mühelos das Überlagern der Kommentarkomponente erleben.
+Mit dem [Handbuch für Community](components-guide.md)Komponenten können Sie die Überlagerung der Kommentar-Komponente leicht erleben.
 
 Zeigen Sie die Seite in der Autoreninstanz an:
 
@@ -30,4 +30,4 @@ Zeigen Sie die Seite in der Autoreninstanz an:
 
 ![Kommentare](assets/comments.png)
 
-**[⇐ Überlagerungskommentkomponente](overlay-comments.md) [Knoten erstellen](overlay-create-nodes.md)**
+**[⇐ Komponente „Kommentare überlagern](overlay-comments.md) [Knoten erstellen ⇒](overlay-create-nodes.md)**

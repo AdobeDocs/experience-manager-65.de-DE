@@ -1,6 +1,6 @@
 ---
-title: Komponenten, Funktionen und Funktionsgrundlagen
-description: Funktionsweise von Community-Sites, Vorlagen und Gruppen
+title: Komponenten-, Funktions- und Funktionsgrundlagen
+description: Funktionsweise von Community-Sites, -Vorlagen und -Gruppen
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -16,24 +16,24 @@ ht-degree: 16%
 
 ---
 
-# Komponenten, Funktionen und Funktionsgrundlagen  {#component-function-and-feature-essentials}
+# Komponenten-, Funktions- und Funktionsgrundlagen  {#component-function-and-feature-essentials}
 
-Adobe Experience Manager (AEM) Communities-Funktionen erfordern, dass Site-Besucher Mitglieder werden und sich bei der [Community-Site](overview.md#communitiessites) anmelden, bevor sie Inhalte veröffentlichen können. Daher sind [Community-Site-Vorlagen](sites.md), aus denen eine Community-Site [erstellt wurde](sites-console.md), so konzipiert, dass sie eine Anmeldefunktion und Benutzerprofile, Messaging, Suche, Moderation und Übersetzung enthalten.
+Adobe Experience Manager (AEM) Communities-Funktionen erfordern, dass Besuchende der Site Mitglied werden und sich bei der [Community-Site](overview.md#communitiessites) anmelden, bevor sie Inhalte posten können. Daher [Community-Site-Vorlagen](sites.md) aus denen eine Community-Site [erstellt](sites-console.md) erstellt wird, so konzipiert, dass sie eine Anmeldefunktion und Benutzerprofile, Messaging, Suche, Moderation und Übersetzung enthalten.
 
-Eine Community-Site unterstützt Mitglieder, die Community-Gruppen erstellen, wenn die Funktion [Community-Gruppen](functions.md#groups-function) in der ausgewählten Community-Site-Vorlage enthalten ist.
+Eine Community-Site unterstützt Mitglieder beim Erstellen von Community[Gruppen, wenn die Funktion ](functions.md#groups-function)Community-Gruppen“ in der ausgewählten Community-Site-Vorlage enthalten ist.
 
-Im Folgenden finden Sie Links zu wichtigen Informationen zu Communities-Komponenten, -Funktionen und -Funktionen.
+Im Folgenden finden Sie Links zu wichtigen Informationen zu Komponenten, Funktionen und Funktionen von Communities.
 
 ## Basiskomponenten {#base-components}
 
 * [Kommentare](essentials-comments.md)
 * [Bewertungen](reviews-basics.md)
-* [Tally](tally.md)
+* [Strichliste](tally.md)
 
    * [Likes](essentials-liking.md)
    * [Bewertung](rating-basics.md)
    * [Abstimmung](essentials-voting.md)
-   * *Umfrage (nicht mehr verfügbar)*
+   * *Abfrage (nicht mehr verfügbar)*
 
 ## Komponenten mit Funktionen {#components-with-functions}
 
@@ -54,10 +54,10 @@ Im Folgenden finden Sie Links zu wichtigen Informationen zu Communities-Komponen
 * [Client-Bibliotheken](clientlibs.md)
 * [Community-Sites](sites-for-developers.md)
 * [Komponenten-OSGi-Ereignisse](events.md)
-* [Komponenten-Sideloading](sideloading.md)
+* [Komponenten-Seitenladevorgang](sideloading.md)
 * [Messaging](essentials-messaging.md)
 * [Rich-Text-Editor](rte.md)
-* [Scoring und Abzeichen](configure-scoring.md)
+* [Punktzahl und Abzeichen](configure-scoring.md)
 * [Suchen](search-implementation.md)
 * [Soziales Diagramm](essentials-socialgraph.md)
 * [Speicherressourcenanbieter](srp-and-ugc.md) `(SRP)`
@@ -66,18 +66,18 @@ Im Folgenden finden Sie Links zu wichtigen Informationen zu Communities-Komponen
 
 ## Javadocs {#javadocs}
 
-Die [Online-JavaAdocs](../../help/sites-developing/reference-materials.md) entsprechen den APIs, die in AEM Version 6.3 verfügbar sind.
-Communities-APIs befinden sich in `com.adobe.cq.social.*` -Paketen.
+Die [Online](../../help/sites-developing/reference-materials.md)Javadocs spiegeln die in der Version AEM 6.3 verfügbaren APIs wider.
+Communities-APIs sind in `com.adobe.cq.social.*` Paketen enthalten.
 
-Für jedes [Feature Pack](deploy-communities.md#latestfeaturepack) wird eine JavaScript-JAR bereitgestellt. Weitere Informationen finden Sie unter [Verwenden von Maven für Communities](maven.md#javadocs).
+Für jedes [Feature Pack](deploy-communities.md#latestfeaturepack) wird eine JavaDoc-JAR bereitgestellt. Weitere Informationen finden Sie unter [Verwenden von Maven für Communities](maven.md#javadocs).
 
 ## Zusätzliche Informationen {#additional-information}
 
 * [Social Component Framework (SCF)](scf.md)
 
-   * [Clientseitige Anpassungen](client-customize.md)
-   * [Serverseitige Anpassungen](server-customize.md)
-   * [Übersicht über den Speicheranbieter](srp.md)
+   * [Client-seitige Anpassungen](client-customize.md)
+   * [Server-seitige Anpassungen](server-customize.md)
+   * [Speicherressourcenanbieter - Übersicht](srp.md)
 
 * [Codierungsrichtlinien ](code-guide.md)
 * [Tutorials](tutorials.md)

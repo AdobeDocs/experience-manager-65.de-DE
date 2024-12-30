@@ -18,18 +18,18 @@ ht-degree: 5%
 
 # Communities-Sites {#communities-sites}
 
-Dieser Abschnitt richtet sich an diejenigen, die AEM Communities verwalten und mit AEM Communities-Funktionen vertraut sind.
+Dieser Abschnitt richtet sich an alle, die AEM Communities verwalten, und geht von ihrer Vertrautheit mit AEM Communities-Funktionen aus.
 
 ## Überblick {#overview}
 
-Einen Überblick und die ersten Schritte finden Sie unter:
+Einen Überblick und Tutorials zu den ersten Schritten finden Sie unter:
 
 * [Übersicht über AEM Communities](overview.md)
 * [Erste Schritte mit AEM Communities](getting-started.md)
 
 ## Administrations- und Konfigurationsthemen {#administration-and-configuration-topics}
 
-### Communities Site-Erstellung und -Verwaltung {#communities-site-creation-and-management}
+### Erstellen und Verwalten von Communities-Sites {#communities-site-creation-and-management}
 
 * Communities [Konsolen](consoles.md)
 
@@ -38,10 +38,10 @@ Einen Überblick und die ersten Schritte finden Sie unter:
       * [Gruppen (Untergruppen)](groups.md)
 
    * [Moderation](moderation.md)
-   * [Mitglieder und Gruppenverwaltung](members.md)
+   * [Mitglieder- und Gruppenverwaltung](members.md)
    * [Berichte](reports.md)
 
-* Communities [*tools*](tools.md):
+* Communities [*Tools*](tools.md):
 
    * [Site-Vorlagen](sites.md)
    * [Gruppenvorlagen](tools-groups.md)
@@ -53,45 +53,45 @@ Einen Überblick und die ersten Schritte finden Sie unter:
 
 ### Benutzergenerierte Inhalte {#user-generated-content}
 
-Eine wichtige Funktion von AEM Communities ist die Erstellung benutzergenerierter Inhalte (UGC), die von angemeldeten Site-Besuchern (Mitgliedern) erstellt wurden. Weitere Informationen zur Arbeit mit UGC finden Sie unter:
+Eine wichtige Funktion von AEM Communities ist die Generierung benutzergenerierter Inhalte (User Generated Content, UGC) durch angemeldete Site-Besucher (Mitglieder). Weitere Informationen zum Arbeiten mit benutzergenerierten Inhalten finden Sie unter:
 
-* [Allgemeiner UGC-Store](working-with-srp.md): Auswahl von SRP für freigegebenen Speicher von UGC
-* [Moderieren von benutzergenerierten Inhalten](moderate-ugc.md): vertrauenswürdige Mitglieder können benutzergenerierte Inhalte in großen Mengen oder im Kontext moderieren
-* [Tagging von UGC](tag-ugc.md): Funktionen können so konfiguriert sein, dass Mitglieder Inhalte taggen können.
-* [UGC übersetzen](translate-ugc.md): Funktionen können so konfiguriert sein, dass alle benutzergenerierten Inhalte übersetzt werden oder es Mitgliedern gestattet ist, ausgewählte Beiträge zu übersetzen
-* [Analytics-Konfiguration](analytics.md): Aktivierung von Adobe Analytics für Berichte zu verschiedenen Metriken zur Mitgliederaktivität
+* [Common UGC Store](working-with-srp.md): Auswahl von SRP für die gemeinsame Speicherung von UGC
+* [Moderieren von UGC](moderate-ugc.md): vertrauenswürdige Mitglieder können UGC massenweise oder im Kontext moderieren
+* [Tagging von UGC](tag-ugc.md): Funktionen können so konfiguriert werden, dass Mitglieder Inhalte mit Tags versehen können
+* [UGC übersetzen](translate-ugc.md): Funktionen können so konfiguriert werden, dass alle UGC übersetzt werden oder Mitgliedern die Übersetzung ausgewählter Beiträge ermöglicht wird
+* [Analytics-Konfiguration](analytics.md): Ermöglicht es Adobe Analytics, Berichte zu verschiedenen Metriken bezüglich der Mitgliederaktivität zu erstellen
 
 ### Community-Mitglieder {#community-members}
 
 * [Verwalten von Benutzern und Benutzergruppen](users.md): Details zu Community-Mitgliedern und Mitgliedergruppen, einschließlich privilegierter Mitglieder.
-* [Beitragsbeschränkungen](limits.md): Möglichkeit, die Veröffentlichung durch neue Mitglieder zu beschränken.
-* [Tunneldienst](deploy-communities.md#tunnel-service-on-author): ermöglicht den Zugriff auf Mitglieder und Mitgliedergruppen auf der Veröffentlichungsseite über die Autorenumgebung.
-* [Mitglieder und Gruppen-Konsolen](members.md): Ermöglicht die Erstellung und Verwaltung von Mitgliedern und Mitgliedergruppen auf der Veröffentlichungsseite über die Autorenumgebung.
-* [Benutzersynchronisierung](sync.md): zum Synchronisieren von Mitgliedern und Mitgliedergruppen über mehrere Veröffentlichungsinstanzen hinweg.
-* [Social-Anmeldung bei Facebook und Twitter](social-login.md): Möglichkeit für Site-Besucher, mit ihren Facebook- oder Twitter-Anmeldeinformationen Community-Mitglied zu werden.
-* [Scoring und Badges](implementing-scoring.md): Möglichkeit, Abzeichen zuzuweisen, um Rollen eines Mitglieds zu identifizieren, und Abzeichen zu sammeln, indem Mitglieder an der Community teilnehmen.
-* [Benachrichtigungen](notifications.md): Möglichkeit für Mitglieder, über die ihnen anschließende Aktivität informiert zu werden.
-* [Abonnements](subscriptions.md): Möglichkeit für Mitglieder, mit der Community per externer E-Mail zu interagieren.
+* [Beitragsbeschränkungen](limits.md): Möglichkeit, die Entsendung neuer Mitglieder einzuschränken.
+* [Tunneldienst](deploy-communities.md#tunnel-service-on-author): Ermöglicht den Zugriff auf Mitglieder und Mitgliedergruppen auf der Veröffentlichungsseite über die Autorenumgebung.
+* [Mitglieder- und Gruppenkonsolen](members.md): Ermöglicht die Erstellung und Verwaltung von Mitgliedern auf der Veröffentlichungsseite und von der Autorenumgebung aus.
+* [Benutzersynchronisierung](sync.md): für die Synchronisierung von Mitgliedern und Mitgliedergruppen über mehrere Veröffentlichungsinstanzen hinweg.
+* [Social-Media-Anmeldung mit Facebook und Twitter](social-login.md): Möglichkeit für Site-Besuchende, mit ihren Facebook- oder Twitter-Anmeldeinformationen Community-Mitglied zu werden.
+* [Punktzahl und Abzeichen](implementing-scoring.md): Möglichkeit, Abzeichen zuzuweisen, um die Rollen eines Mitglieds zu identifizieren und Abzeichen durch die Teilnahme an der Community zu erwerben.
+* [Benachrichtigungen](notifications.md): Möglichkeit für Mitglieder, über Aktivitäten benachrichtigt zu werden, denen sie folgen.
+* [Abonnements](subscriptions.md): Möglichkeit für Mitglieder, über externe E-Mails mit der Community zu interagieren.
 * [Messaging](messaging.md): Möglichkeit für Mitglieder, mithilfe interner Nachrichten mit der Community zu interagieren.
 
 ### Bereitstellung {#deployment}
 
-Der Abschnitt &quot;Bereitstellung&quot;enthält AEM Communities-spezifische Informationen.
+Der Abschnitt Bereitstellung enthält spezifische Informationen zu AEM Communities.
 
-Die Art der Arbeit mit Community-Inhalten beeinflusst die Struktur der Implementierung:
+Die Art der Arbeit mit Community-Inhalten beeinflusst die Struktur der Bereitstellung:
 
 * [Empfohlene Topologien für Communities](topologies.md)
 
-Es ist wichtig, die neueste Communities-Version auf der AEM zu installieren:
+Es ist wichtig, die neueste Communities-Version auf der AEM-Plattform zu installieren:
 
 * [Neuestes Communities Feature Pack](deploy-communities.md#latestfeaturepack)
 
-Auf der Bereitstellungsseite finden Sie weitere Communities-spezifische Informationen, z. B. für die [Aktualisierung](upgrade.md), [Dispatcher](dispatcher.md) und die [Replikation](deploy-communities.md#replication-agents-on-author).
+Auf der Bereitstellungsseite finden Sie weitere Communities-spezifische Informationen, z. B. für [Upgrade](upgrade.md), [Dispatcher](dispatcher.md) und [Replikation](deploy-communities.md#replication-agents-on-author).
 
-## Verwandte Communities - Dokumentation {#related-communities-documentation}
+## Verwandte Communities-Dokumentation {#related-communities-documentation}
 
-* Besuchen Sie [Communities bereitstellen](deploy-communities.md) , wo Sie Informationen zu empfohlenen Bereitstellungen erhalten.
+* Unter [Bereitstellen von Communities](deploy-communities.md) erfahren Sie mehr über empfohlene Bereitstellungen.
 
-* Besuchen Sie [Entwickeln von Communities](communities.md) , wo Sie mehr über das Social-Komponenten-Framework (SCF) und die Anpassung von Communities-Komponenten und -Funktionen erfahren.
+* Unter [Entwicklung von Communities](communities.md) können Sie sich mit dem Social Component Framework (SCF) vertraut machen und Communities-Komponenten und -Funktionen anpassen.
 
-* Besuchen Sie [Authoring von Communities-Komponenten](author-communities.md) , wo Sie erfahren können, wie Sie Communities-Komponenten erstellen und konfigurieren.
+* Unter [Authoring von Communities-Komponenten](author-communities.md) erfahren Sie, wie Sie Communities-Komponenten verwenden und konfigurieren können.

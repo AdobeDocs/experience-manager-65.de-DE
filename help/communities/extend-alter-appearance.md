@@ -1,6 +1,6 @@
 ---
 title: Erscheinungsbild ändern (HBS)
-description: Erfahren Sie, wie Sie das Erscheinungsbild (HBS) ändern können, indem Sie die HBS-Skripte bearbeiten.
+description: Erfahren Sie, wie Sie das Erscheinungsbild (HBS) ändern, indem Sie die HBS-Skripte bearbeiten.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -19,17 +19,17 @@ ht-degree: 0%
 
 # Erscheinungsbild ändern (HBS) {#alter-the-appearance-hbs}
 
-Nachdem die Komponenten für das benutzerdefinierte Kommentarsystem im Anwendungsverzeichnis (/apps) vorhanden sind, wobei ein resourceSuperType auf das standardmäßige Kommentarsystem verweist und das benutzerdefinierte Modell/die benutzerdefinierte Ansicht registriert ist, können Sie die Implementierung bearbeiten.
+Nachdem die Komponenten für das System mit benutzerdefinierten Kommentaren im Anwendungsverzeichnis (/apps) eingerichtet sind und ein resourceSuperType auf das standardmäßige Kommentarsystem verweist und das benutzerdefinierte Modell/die benutzerdefinierte Ansicht registriert ist, können Sie die Implementierung bearbeiten.
 
-Für eine einfache Demonstration, eine visuelle Funktion, wird der Avatar des angemeldeten Benutzers entfernt, der einen Kommentar veröffentlicht.
+Als einfache Demonstration wird eine visuelle Funktion, der Avatar des angemeldeten Benutzers, der einen Kommentar postet, entfernt.
 
 >[!NOTE]
 >
->Um die Erweiterung zu verwenden, muss die Instanz des Kommentar-Systems auf einer Website, auf die sich die Auswirkungen auswirken sollen (/content), seinen resourceType als benutzerdefiniertes Kommentarsystem festlegen.
+>Um die Erweiterung zu verwenden, muss die Instanz des Kommentarsystems in einer Website, die betroffen sein soll (/content), als resourceType den benutzerdefinierten Kommentarsystem festlegen.
 
-## HBS-Skripte ändern {#modify-the-hbs-scripts}
+## Ändern der HBS-Skripte {#modify-the-hbs-scripts}
 
-Verwenden von [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Verwendet [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Öffnen Sie [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
@@ -43,7 +43,7 @@ Verwenden von [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
 
 * Öffnen Sie [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
-   * Kommentieren Sie das Tag aus, das den Avatar für den nächsten Kommentar-Eintrag enthält (~ Zeile 44):
+   * Kommentieren Sie das Tag aus, das den Avatar für den nächsten Kommentareintrag enthält (~ Zeile 44):
 
      ```
        <!--
@@ -57,24 +57,24 @@ Verwenden von [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
 
 Nachdem die Anwendung geändert wurde, muss die benutzerdefinierte Komponente erneut repliziert werden.
 
-Eine Möglichkeit hierfür ist:
+Eine Möglichkeit, dies zu tun, ist:
 
-* Über das Hauptmenü
+* Vom Hauptmenü
 
    * Wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Replikation]** aus.
-   * Wählen Sie **[!UICONTROL Baum aktivieren]**.
-   * Setzen Sie `Start Path` auf `/apps/custom`.
-   * Heben Sie die Auswahl von **[!UICONTROL Nur geändert]** auf.
-   * Wählen Sie die Schaltfläche **[!UICONTROL Aktivieren]** aus.
+   * Wählen Sie **[!UICONTROL Baum aktivieren]** aus.
+   * Legen Sie `Start Path` auf `/apps/custom` fest.
+   * Deaktivieren Sie **[!UICONTROL Nur geänderte]**.
+   * Klicken Sie **[!UICONTROL Schaltfläche]** Aktivieren“.
 
-### Anzeigen von geänderten Kommentaren auf der veröffentlichten Beispielseite {#view-modified-comment-on-published-sample-page}
+### Geänderten Kommentar auf veröffentlichter Beispielseite anzeigen {#view-modified-comment-on-published-sample-page}
 
-[Um das Erlebnis](/help/communities/extend-sample-page.md#publish-sample-page) in der Veröffentlichungsinstanz fortzusetzen, die noch als derselbe Benutzer angemeldet ist, ist es jetzt möglich, die Seite in der Veröffentlichungsumgebung zu aktualisieren, um die Änderung anzuzeigen und den Avatar zu entfernen:
+[Fortsetzen des Erlebnisses](/help/communities/extend-sample-page.md#publish-sample-page) auf der Veröffentlichungsinstanz, die weiterhin als derselbe Benutzer angemeldet ist, ist es jetzt möglich, die Seite in der Veröffentlichungsumgebung zu aktualisieren, um die Änderung anzuzeigen und den Avatar zu entfernen:
 
 ![view-modified-content](assets/view-modified-content.png)
 
-### Beispielpaket für Kommentar-Erweiterung {#sample-comment-extension-package}
+### Beispiel für ein Kommentar-Erweiterungspaket {#sample-comment-extension-package}
 
-Angehängt ist ein Paket der benutzerdefinierten Kommentaranwendung, die in diesem Tutorial erstellt wurde.
+Beigefügt ist ein Paket des Programms für benutzerdefinierte Kommentare, das in diesem Tutorial erstellt wurde.
 
 [Datei abrufen](assets/sample-comment-extension-6-1-fp3.zip)

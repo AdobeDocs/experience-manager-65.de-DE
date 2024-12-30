@@ -1,6 +1,6 @@
 ---
 title: Entwickeln von Sandbox-Inhalten
-description: Erfahren Sie mehr über das Erkunden von Community-Funktionen in der Sandbox neben dem Komponentenleitfaden für Community-Komponenten und den Grundlagen zu Funktionen zur Referenz.
+description: Erfahren Sie mehr über die Funktionen der Community in der Sandbox zusammen mit dem Handbuch zu den Community-Komponenten und den Funktionsgrundlagen als Referenz.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -20,4 +20,4 @@ ht-degree: 0%
 
 **[Clientlibs hinzufügen](add-clientlibs.md)**
 
-An dieser Stelle ist es möglich, Community-Funktionen in der Sandbox gemeinsam mit der Verwendung von [We-Retail Community](../../help/sites-developing/we-retail.md), dem [Community Components Guide](components-guide.md) und den [Feature Essentials](essentials.md) als Referenz zu durchsuchen.
+An dieser Stelle ist es möglich, Community-Funktionen in der Sandbox zusammen mit der Verwendung von [We-Retail](../../help/sites-developing/we-retail.md), dem [Community-Komponentenhandbuch](components-guide.md) und [Feature ](essentials.md)) zu untersuchen.

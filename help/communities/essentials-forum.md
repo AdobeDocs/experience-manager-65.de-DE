@@ -1,6 +1,6 @@
 ---
-title: Forumsgrundlagen
-description: Erfahren Sie mehr über die Grundlagen der Arbeit mit der Funktion Forum in Adobe Experience Manager Communities.
+title: Forum Essentials
+description: Erfahren Sie mehr über die Grundlagen der Arbeit mit der Forenfunktion in Adobe Experience Manager Communities.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -16,11 +16,11 @@ ht-degree: 2%
 
 ---
 
-# Forumsgrundlagen {#forum-essentials}
+# Forum Essentials {#forum-essentials}
 
-Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forumsfunktion.
+Diese Seite enthält die wesentlichen Informationen für die Arbeit mit der Forenfunktion.
 
-## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -29,15 +29,15 @@ Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forum
    <td>social/forum/components/hbs/forum<br /> social/forum/components/hbs/topic<br /> social/forum/components/hbs/post</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>Einschließlich</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.stimms<br /> cq.social.hbs.forum</td>
+   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
+   <td>CQ.CKEditor<br /> CQ.Social.HBS.Voting<br /> CQ.Social.HBS.Forum</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>Vorlagen</strong></td>
    <td> /libs/social/forum/components/hbs/forum/forum.hbs<br /> /libs/social/forum/components/hbs/post/post.hbs<br /> /libs/social/forum/components/hbs/topic/topic.hbs<br /> /libs/social/forum/components/hbs/topic/list-item.hbs<br /> </td>
   </tr>
   <tr>
@@ -46,37 +46,37 @@ Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forum
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Siehe <a href="forum.md">Forumsfunktion</a></td>
+   <td>Siehe <a href="forum.md">Forenfunktion</a></td>
   </tr>
  </tbody>
 </table>
 
-* [Clientseitige Anpassungen](client-customize.md)
+* [Client-seitige Anpassungen](client-customize.md)
 
-## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
+## Grundlagen für Server-seitige {#essentials-for-server-side}
 
 * [Forum-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
 
 * [Forum-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
 
-* [Serverseitige Anpassungen](server-customize.md)
+* [Server-seitige Anpassungen](server-customize.md)
 
 ### Forumsfunktion {#forum-function}
 
-Eine Community-Site-Struktur, die die Funktion [Forum](functions.md#forum-function) enthält, enthält eine konfigurierte Komponente `forum` sowie Einstellungen, die sich auf Moderation, Tagging und Übersetzung auswirken.
+Eine Community-Site-Struktur, die die [Forum-Funktion](functions.md#forum-function), eine konfigurierte `forum`-Komponente und Einstellungen, die sich auf die Moderation, das Tagging und die Übersetzung auswirken, enthält.
 
-### Zugriff auf Forumbeiträge (UGC) {#accessing-forum-posts-ugc}
+### Zugriff auf Forumsbeiträge (UGC) {#accessing-forum-posts-ugc}
 
-UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
+UGC sollte mit einer der Standardmethoden für die Mäßigung moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab Adobe Experience Manager 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für benutzergenerierte Inhalte den programmatischen Zugriff auf benutzergenerierte Inhalte, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab Adobe Experience Manager 6.1 Communities umfasst die Verwendung eines [Common Store](working-with-srp.md) für benutzergenerierten Inhalt programmgesteuerten Zugriff auf benutzergenerierten Inhalt, unabhängig von der ausgewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
 
-**Speicherort und Format des UGC im Repository können sich ohne Warnung ändern**.
+**Speicherort und Format des benutzergenerierten Inhalts im Repository können sich ohne Warnung ändern**.
 
 Siehe:
 
-* [Übersicht über den Speicheranbieter](srp.md) - Übersicht über die Einführung und die Repository-Nutzung.
-* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
-* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
-* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
+* [Speicherressourcenanbieter - Übersicht](srp.md) - Einführung und Repository-Nutzung - Übersicht.
+* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Hilfsmethoden und -Beispiele.
+* [Zugriff auf benutzergenerierten Inhalt mit SRP](accessing-ugc-with-srp.md) - Codierungs-Richtlinien.
+* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnung veralteter Hilfsmethoden zu aktuellen SRP-Hilfsmethoden.

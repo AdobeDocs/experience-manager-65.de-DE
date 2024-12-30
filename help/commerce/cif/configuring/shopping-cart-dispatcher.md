@@ -1,13 +1,13 @@
 ---
 title: Einrichtung von Warenkorb und Dispatcher
-description: Erfahren Sie mehr über den Warenkorb und die Adobe Experience Manager Dispatcher-Einrichtung.
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+description: Erfahren Sie mehr über den Warenkorb und das Adobe Experience Manager Dispatcher-Setup.
+exl-id: c9a17f42-91d7-4315-9dc3-5ae8d620fe92
+source-git-commit: 23d3796e15294b0fc7486096ea02bcbedbed69f3
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 87%
 
 ---
-
 
 # Einrichtung von Warenkorb und Dispatcher
 

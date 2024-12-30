@@ -1,6 +1,6 @@
 ---
 title: Community-Gruppen
-description: Erfahren Sie, wie Sie mit der Funktion "Community-Gruppen"von autorisierten Benutzern in Publish und der Autoreninstanz dynamisch eine Subcommunity auf einer Community-Site erstellen können.
+description: Erfahren Sie, wie Sie mit der Funktion „Community-Gruppen“ von autorisierten Benutzenden in Publish und Author dynamisch eine Unter-Community innerhalb einer Community-Site erstellen können.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -19,33 +19,33 @@ ht-degree: 1%
 
 # Community-Gruppen {#community-groups}
 
-Die Funktion &quot;Community-Gruppen&quot;ermöglicht die dynamische Erstellung einer Subcommunity auf einer Community-Site durch autorisierte Benutzer (Community-Mitglieder und Autoren) aus der Veröffentlichungs- und Autorenumgebung.
+Die Funktion „Community-Gruppen“ bietet die Möglichkeit, dass autorisierte Benutzer (Community-Mitglieder und Autoren) aus der Veröffentlichungs- und Autorenumgebung innerhalb einer Community-Site dynamisch eine Untergemeinschaft erstellen.
 
-Diese Funktion ist vorhanden, wenn die [Gruppenfunktion](/help/communities/functions.md#groups-function) in der Struktur der [Community-Site](/help/communities/sites-console.md) vorhanden ist.
+Diese Fähigkeit ist vorhanden, wenn [Gruppenfunktion](/help/communities/functions.md#groups-function) in der [Community Site](/help/communities/sites-console.md)-Struktur vorhanden ist.
 
 Eine [Community-Gruppenvorlage](/help/communities/tools-groups.md) stellt das Design der Community-Gruppenseite bereit, wenn eine Community-Gruppe dynamisch erstellt wird.
 
-Eine oder mehrere Gruppenvorlagen werden für die Gruppenfunktion ausgewählt, wenn die Funktion zur Struktur einer Community-Site oder zu einer Community-Site-Vorlage hinzugefügt wird. Diese Liste von Gruppenvorlagen wird dem Mitglied oder Autor angezeigt, der dynamisch eine Gruppe aus der Community-Site erstellt.
+Eine oder mehrere Gruppenvorlagen werden für die Gruppenfunktion ausgewählt, wenn die Funktion zur Struktur einer Community-Site oder zu einer Community-Site-Vorlage hinzugefügt wird. Diese Liste von Gruppenvorlagen wird dem Mitglied oder Autor angezeigt, das bzw. der dynamisch eine Gruppe auf der Community-Site erstellt.
 
 ## Erstellen einer neuen Gruppe {#creating-a-new-group}
 
-Die Möglichkeit, eine Community-Gruppe zu erstellen, hängt von der Existenz einer Community-Site ab, die die Gruppenfunktion enthält, z. B. eine aus der [Referenz-Site-Vorlage](/help/communities/sites.md) erstellte.
+Die Möglichkeit zum Erstellen einer Community-Gruppe hängt davon ab, dass eine Community-Site vorhanden ist, die die Gruppenfunktion enthält, z. B. eine aus der [Referenz-Site-Vorlage](/help/communities/sites.md) erstellte.
 
 In den folgenden Beispielen wird die aus dem `Reference Site Template` erstellte Community-Site verwendet, wie im Tutorial [Erste Schritte mit AEM Communities](/help/communities/getting-started.md) beschrieben.
 
-Dies ist die Seite, die bei der Veröffentlichung geladen wird, wenn das Menüelement **Gruppen** ausgewählt ist:
+Dies ist die Seite, die bei der Veröffentlichung geladen wird, wenn **Menüelement „Gruppen** ausgewählt wird:
 
 ![new-group](assets/new-group.png)
 
-Wenn Sie das Symbol **Neue Gruppe** auswählen, wird ein Dialogfeld zum Bearbeiten geöffnet.
+Wenn Sie das Symbol **Neue Gruppe** auswählen, wird ein Dialogfeld „Bearbeiten“ geöffnet.
 
-Auf der Registerkarte **Einstellungen** stellen Sie die grundlegenden Funktionen der Gruppe bereit:
+Auf der **Einstellungen** geben Sie die grundlegenden Funktionen der Gruppe an:
 
 ![group-settings](assets/group-settings.png)
 
 * **Gruppenname**
 
-  Der Titel der Gruppe, die auf der Community-Site angezeigt werden soll. Vermeiden Sie den Unterstrich (_) und Suchbegriffe wie Ressourcen und Konfiguration im Gruppennamen.
+  Der Titel der Gruppe, die Sie auf der Community-Site anzeigen möchten. Vermeiden Sie Unterstriche (_) und Schlüsselwörter wie Ressourcen und Konfiguration im Gruppennamen.
 
 * **Beschreibung**
 
@@ -53,7 +53,7 @@ Auf der Registerkarte **Einstellungen** stellen Sie die grundlegenden Funktionen
 
 * **Einladen**
 
-  Eine Liste der Mitglieder, die zur Gruppe eingeladen werden sollen. Die Suche nach einem Typ bietet Vorschläge für Community-Mitglieder, die eingeladen werden sollen.
+  Eine Liste der Mitglieder, die zur Gruppe eingeladen werden sollen. Die Suche mit automatischer Textvervollständigung bietet Vorschläge für Community-Mitglieder, die eingeladen werden können.
 
 * **Gruppen-URL-Name**
 
@@ -61,36 +61,36 @@ Auf der Registerkarte **Einstellungen** stellen Sie die grundlegenden Funktionen
 
 * **Gruppe öffnen**
 
-  Wenn Sie &quot;`Open Group`&quot; auswählen, bedeutet dies, dass ein anonymer Site-Besucher den Inhalt anzeigen kann, und dass die Auswahl von &quot;`Member Only Group`&quot;aufgehoben wird.
+  Wenn Sie `Open Group` auswählen, zeigt dies an, dass anonyme Site-Besucher den Inhalt anzeigen können, und hebt die Auswahl von `Member Only Group` auf.
 
-* **Gruppe &quot;Nur Mitglied&quot;**
+* **Gruppe nur für Mitglieder**
 
-  Wenn Sie &quot;`Member Only Group`&quot; auswählen, bedeutet dies, dass nur Mitglieder der Gruppe den Inhalt anzeigen können, und dass die Auswahl von &quot;`Open Group`&quot;aufgehoben wird.
+  Wenn Sie `Member Only Group` auswählen, können nur Mitglieder der Gruppe den Inhalt anzeigen, und die Auswahl wird `Open Group`.
 
-Auf der Registerkarte **Vorlage** können Sie aus der Liste der Community-Gruppenvorlagen auswählen. Diese Vorlagen wurden angegeben, wenn die Funktion &quot;Gruppen&quot;in die Struktur der Community-Site oder in eine Community-Site-Vorlage aufgenommen wurde.
+Auf der Registerkarte **Vorlage** können Sie aus der Liste der Community-Gruppenvorlagen auswählen. Diese Vorlagen wurden angegeben, als die Funktion „Gruppen“ in die Struktur der Community-Site oder in eine Community-Site-Vorlage aufgenommen wurde.
 
 ![group-template](assets/group-template.png)
 
-Auf der Registerkarte **Bild** können Sie ein Bild hochladen, das für die Gruppe auf der Seite &quot;Gruppen&quot;der Community-Site angezeigt werden soll. Das Standard-Stylesheet vergrößert das Bild auf 170 x 90 Pixel.
+Unter der Registerkarte **Bild** können Sie ein Bild hochladen, das für die Gruppe auf der Seite Gruppen der Community-Site angezeigt werden soll. Das standardmäßige Stylesheet dimensioniert das Bild auf 170 x 90 Pixel.
 
 ![group-image](assets/group-image.png)
 
-Durch Auswahl von **Gruppe erstellen** werden die Seiten für die Gruppe auf der Grundlage der ausgewählten Vorlage erstellt. Eine Benutzergruppe wird für die Mitgliedschaft erstellt und die Seite Gruppen wird aktualisiert, um die neue Subcommunity anzuzeigen.
+Wenn Sie **Gruppe erstellen** wählen, werden die Seiten für die Gruppe basierend auf der ausgewählten Vorlage erstellt, und eine Benutzergruppe wird für die Mitgliedschaft erstellt und die Seite Gruppen wird aktualisiert, um die neue Untergemeinschaft anzuzeigen.
 
-Beispielsweise wird die Seite &quot;Gruppen&quot;mit einer neuen Untergemeinschaft mit dem Namen &quot;Fokusgruppe&quot;, für die eine Miniaturansicht hochgeladen wurde, wie folgt angezeigt (noch als Community-Gruppenadministrator angemeldet):
+Beispielsweise wird die Seite Gruppen mit der neuen Untergemeinschaft „Fokusgruppe“, für die ein Miniaturbild hochgeladen wurde, wie folgt angezeigt (weiterhin als Community-Gruppenadministrator angemeldet):
 
 ![group-page](assets/group-page.png)
 
-Durch Auswahl des Links &quot;`Focus Group`&quot; wird die Seite &quot;Fokusgruppe&quot;im Browser geöffnet, die ausgehend von der ausgewählten Vorlage ein erstes Erscheinungsbild aufweist und ein Untermenü unter dem Menü der Haupt-Community-Site enthält:
+Wenn Sie auf den Link `Focus Group` klicken, wird die Seite „Fokusgruppe“ im Browser geöffnet, die ein anfängliches Erscheinungsbild basierend auf der ausgewählten Vorlage aufweist und ein Untermenü unter dem Menü der Haupt-Community-Site enthält:
 
 ![open-group-page](assets/open-group-page.png)
 
-### Komponente &quot;Community Group Member List&quot; {#community-group-member-list-component}
+### Komponente „Community-Gruppenmitgliedsliste“ {#community-group-member-list-component}
 
-Die Komponente `Community Group Member List` ist für Entwickler von Gruppenvorlagen vorgesehen.
+Die `Community Group Member List`-Komponente ist für die Verwendung durch Entwickler von Gruppenvorlagen vorgesehen.
 
 ### Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Entwickler-Seite [Community-Gruppengrundlagen](/help/communities/essentials-groups.md) .
+Weitere Informationen finden Sie auf der Seite [Community Group Essentials](/help/communities/essentials-groups.md) für Entwickler.
 
 Weitere Informationen zu Community-Gruppen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](/help/communities/users.md).

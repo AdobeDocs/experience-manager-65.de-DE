@@ -1,6 +1,6 @@
 ---
 title: Tagging benutzergenerierter Inhalte
-description: Durch das Tagging benutzergenerierter Inhalte (UGC) können Community-Mitglieder anderen Mitgliedern bei der Suche nach Inhalten helfen.
+description: Mit Tagging von benutzergenerierten Inhalten (UGC) können Community-Mitglieder anderen Mitgliedern bei der Suche nach Inhalten helfen
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -20,15 +20,15 @@ ht-degree: 4%
 
 ## Überblick {#overview}
 
-Das Tagging benutzergenerierter Inhalte (UGC) ist das Mittel, mit dem Community-Mitglieder anderen Mitgliedern bei der Suche nach Inhalten helfen können.
+Mit Tagging von benutzergenerierten Inhalten (UGC) können Community-Mitglieder anderen Mitgliedern bei der Suche nach Inhalten helfen.
 
-In der Regel werden Tags von Autoren und Administratoren in der Autorenumgebung angewendet. Das Tagging von UGC ist insofern einzigartig, als UGC-Tags von Community-Mitgliedern in der Veröffentlichungsumgebung angewendet werden.
+Normalerweise werden Tags von Autoren und Administratoren in der Autorenumgebung angewendet. Tagging von UGC ist insofern einzigartig, als UGC-Tags von Community-Mitgliedern in der Veröffentlichungsumgebung angewendet werden.
 
-Die Tag-Namespaces und Taxonomien sind für beide Anwendungen gleich.
+Die Tag-Namespaces und Taxonomien sind für beide Anwendungen identisch.
 
 ## Communities-Funktionen {#communities-features}
 
-Die AEM Communities-Funktionen, die für das Tagging konfiguriert werden können, sind:
+Zu den AEM Communities-Funktionen, die für Tagging konfiguriert werden können, gehören:
 
 * [Blog](blog-feature.md)
 * [Kalender](calendar.md)
@@ -38,20 +38,20 @@ Die AEM Communities-Funktionen, die für das Tagging konfiguriert werden können
 
 ## Verwalten von Tags {#administering-tags}
 
-Informationen zum Erstellen und Verwalten von Tag-Namespaces und Taxonomien finden Sie unter [Verwalten von Tags](../../help/sites-administering/tags.md#tagging-console) .
+Siehe [Verwalten von Tags](../../help/sites-administering/tags.md#tagging-console) zum Erstellen und Verwalten von Tag-Namespaces und Taxonomien.
 
-Entwicklerinformationen finden Sie unter [Tag Essentials](tag.md) .
+Entwicklerinformationen finden [ unter ](tag.md)Tag Essentials“.
 
-Informationen zum Hinzufügen einer Social-Tag-Cloud-Komponente zu einer Seite finden Sie unter [Verwenden der Social-Tag-Cloud](tagcloud.md) , um die Suche nach veröffentlichten benutzergenerierten Inhalten mithilfe der angewendeten Tags zu erleichtern.
+Siehe [Verwenden von Social Tag Cloud](tagcloud.md) zum Hinzufügen einer Social-Tag-Cloud-Komponente zu einer Seite, um die Suche nach veröffentlichten benutzergenerierten Inhalten mithilfe der angewendeten Tags zu erleichtern.
 
 ### Tag-Berechtigungen {#tag-permissions}
 
-Die Standardberechtigungen sind so eingestellt, dass Tag-Namespaces nicht von allen in der Veröffentlichungsumgebung gelesen werden können.
+Die Standardberechtigungen sind so eingestellt, dass Tag-Namespaces nicht von allen Personen in der Veröffentlichungsumgebung gelesen werden können.
 
-Da Tags in der Veröffentlichungsumgebung auf UGC angewendet werden, muss die Leseberechtigung für Community-Mitglieder aktiviert sein, damit sie Tags auswählen können, die angewendet werden sollen.
+Da Tags auf benutzergenerierten Inhalt (UGC) in der Veröffentlichungsumgebung angewendet werden, muss die Leseberechtigung für Community-Mitglieder aktiviert werden, damit sie Tags auswählen können, die angewendet werden sollen.
 
-Siehe [Festlegen von Tag-Berechtigungen](../../help/sites-administering/tags.md#setting-tag-permissions).
+Siehe [Festlegen von Tag-](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-Im Folgenden sehen Sie, wie es in CRXDE angezeigt wird, wenn ein Administrator Leseberechtigungen für die Gruppe `Community Engage Members` auf `/etc/tag/discussions` anwendet.
+Im Folgenden wird dargestellt, wie es in CRXDE aussieht, wenn ein Administrator Leseberechtigungen auf `/etc/tag/discussions` für die `Community Engage Members` anwendet.
 
 ![tag-permissions](assets/tag-permissions.png)

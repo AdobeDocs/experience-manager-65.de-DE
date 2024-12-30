@@ -9,7 +9,7 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '4439'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -577,7 +577,7 @@ Eine Promotion kann entweder in einem Erlebnis oder direkt in der Kampagne gespe
 
 >[!NOTE]
 >
->[hybris-Promotions](https://www.hybris.com/modules/promotion) und [hybris-Gutscheine](https://www.hybris.com/en/modules/voucher) decken alles ab, was sich auf den Warenkorb auswirkt und mit der Preisgestaltung in Zusammenhang steht. Promotion-spezifische Marketing-Inhalte (wie Banner usw.) sind nicht Teil der hybris-Promotion.
+>[hybris-Promotions](https://www.hybris.com/modules/promotion) und [hybris-Gutscheine](https://www.hybris.com/en/modules/voucher) decken alles ab, was sich auf den Warenkorb auswirkt und mit der Preisgestaltung in Zusammenhang steht. Promotionsspezifische Marketing-Inhalte (wie Banner usw.) sind nicht Teil der Hybris-Promotion.
 
 ## Personalisierung  {#personalization}
 

@@ -1,6 +1,6 @@
 ---
 title: Ersteinrichtung
-description: Erfahren Sie, wie Sie Adobe Experience Manager Communities zum ersten Mal einrichten.
+description: Erfahren Sie, wie Sie Adobe Experience Manager Communities anfänglich einrichten.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
@@ -18,94 +18,94 @@ ht-degree: 2%
 
 # Ersteinrichtung {#initial-setup}
 
-## Starten von Autoren- und Publish-Instanzen {#start-author-and-publish-instances}
+## Starten von Authoring- und Publish-Instanzen {#start-author-and-publish-instances}
 
-Für Entwicklungs- und Demonstrationszwecke ist es erforderlich, eine Autoren- und eine Veröffentlichungsinstanz auszuführen.
+Zu Entwicklungs- und Demonstrationszwecken ist es erforderlich, eine Autoren- und eine Veröffentlichungsinstanz auszuführen.
 
-Befolgen Sie dazu die grundlegenden Anweisungen für Adobe Experience Manager (AEM) [Erste Schritte](../../help/sites-deploying/deploy.md#getting-started), die zu Folgendem führen:
+Befolgen Sie dazu die grundlegenden Anweisungen in Adobe Experience Manager (AEM) [Erste Schritte](../../help/sites-deploying/deploy.md#getting-started), die Folgendes bewirken:
 
 * Autorenumgebung auf [localhost:4502](http://localhost:4502/)
 * Publish-Umgebung auf [localhost:4503](http://localhost:4503/)
 
-Für AEM Communities:
+Für AEM Communities
 
-* Die Autorenumgebung dient folgenden Zwecken:
+* Die Autorenumgebung ist für Folgendes vorgesehen:
 
    * Entwicklung von Sites, Vorlagen und Komponenten.
-   * Verwaltung und Konfiguration
+   * Administrations- und Konfigurationsaufgaben.
 
-* Die Publish-Umgebung dient folgenden Zwecken:
+* Die Publish-Umgebung ist für Folgendes vorgesehen:
 
-   * Die Community-Erfahrung beim Posten und Moderieren von Inhalten.
-   * Erstellung von Community-Gruppen, Mitgliedern und Mitgliedergruppen.
+   * Die Community-Erfahrung mit dem Posten und Moderieren von Inhalten.
+   * Erstellen von Community-Gruppen, Mitgliedern und Mitgliedergruppen.
 
 >[!NOTE]
 >
->Wenn Sie nicht mit AEM vertraut sind, lesen Sie die Dokumentation zu [Grundlegender Umgang](../../help/sites-authoring/basic-handling.md) und eine [Kurzanleitung zum Erstellen von Seiten](../../help/sites-authoring/qg-page-authoring.md).
+>Wenn Sie nicht mit AEM vertraut sind, lesen Sie die Dokumentation unter [Grundlegende Handhabung](../../help/sites-authoring/basic-handling.md) und eine [Kurzanleitung zur Seitenbearbeitung](../../help/sites-authoring/qg-page-authoring.md).
 
-## Neueste Communities-Version installieren {#install-latest-communities-release}
+## Installieren der neuesten Communities-Version {#install-latest-communities-release}
 
-Dieses Tutorial erstellt eine [Community-Site für Interaktionen](overview.md#engagement-community) und basiert auf AEM Communities 6.2 Feature Pack-Version 1.10.
+In diesem Tutorial wird eine [Interaktions-Community](overview.md#engagement-community)Site erstellt, die auf AEM Communities 6.2 Feature Pack 1.10 basiert.
 
-Um sicherzustellen, dass das neueste Feature Pack installiert ist, gehen Sie zu:
+Um sicherzustellen, dass das neueste Feature Pack installiert ist, besuchen Sie:
 
-* [Neueste Versionen](deploy-communities.md#latest-releases)
+* [Aktuelle Versionen](deploy-communities.md#latest-releases)
 
 ## Analytics konfig. {#configure-analytics}
 
-Wenn [Adobe Analytics für die Community-Site konfiguriert ist](analytics.md), stehen Informationen zur Community-Aktivität zur Verfügung, die das Erlebnis des Community-Mitglieds verbessern und Administratoren der Site Feedback geben.
+Wenn [Adobe Analytics für die Community-Site konfiguriert ist](analytics.md) sind Informationen über Community-Aktivitäten verfügbar, die das Erlebnis der Community-Mitglieder verbessern und den Administratoren der Site Feedback geben.
 
 Die Integration mit Adobe Analytics ist optional.
 
-## E-Mail für Benachrichtigungen konfigurieren {#configure-email-for-notifications}
+## Konfigurieren von E-Mails für Benachrichtigungen {#configure-email-for-notifications}
 
-Die Benachrichtigungsfunktion, die standardmäßig für alle mit der Konsole `Communities Sites` erstellten Sites verfügbar ist, stellt einen E-Mail-Kanal für Benachrichtigungen bereit.
+Die Benachrichtigungsfunktion, die standardmäßig für alle Sites verfügbar ist, die mit der `Communities Sites`-Konsole erstellt wurden, bietet einen E-Mail-Kanal für Benachrichtigungen.
 
-E-Mail muss für die Site ordnungsgemäß konfiguriert werden.
+E-Mails müssen jedoch ordnungsgemäß für die Website konfiguriert sein.
 
-Siehe [Konfigurieren von E-Mail](email.md).
+Siehe [Konfigurieren von E-](email.md).
 
 ## Aktivieren des Tunneldienstes {#enable-the-tunnel-service}
 
-Beim Erstellen einer Community-Site in der Autorenumgebung ermöglicht der Tunneldienst die Zuweisung von Rollen an vertrauenswürdige Community-Mitglieder, die in der Publish-Umgebung registriert sind. Der Tunneldienst ermöglicht auch den Zugriff auf Community-Mitglieder aus den [Mitgliedern und Gruppen-Konsolen](members.md) in der Autorenumgebung.
+Beim Erstellen einer Community-Site in der Autorenumgebung ermöglicht der Tunneldienst die Zuweisung von Rollen zu vertrauenswürdigen Community-Mitgliedern, die in der Publish-Umgebung registriert sind. Der Tunnel-Service ermöglicht auch den Zugriff auf Community-Mitglieder über die Konsolen [Mitglieder und Gruppen](members.md) in der Autorenumgebung.
 
-Die Konvention ist für Mitglieder und Mitgliedergruppen bestimmt, die in der Publish-Umgebung erstellt wurden, um *nicht* in der Autorenumgebung neu zu erstellen. Weitere Informationen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](users.md).
+Die Konvention sieht vor, dass Mitglieder und Mitgliedsgruppen, die in der Publish-Umgebung erstellt wurden *in* Autorenumgebung nicht neu erstellt werden. Weitere Informationen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](users.md).
 
-Einfache Anweisungen zum Aktivieren des Tunneldienstes in einer **Autoreninstanz** finden Sie unter [Tunneldienst](deploy-communities.md#tunnel-service-on-author).
+Einfache Anweisungen zum Aktivieren des Tunneldienstes auf einer **Author**-Instanz finden Sie unter [Tunneldienst](deploy-communities.md#tunnel-service-on-author).
 
 ## Community-Administratorrolle {#community-administrator-role}
 
-Mitglieder der Community-Administratoren-Gruppe können Community-Sites erstellen, Sites verwalten, Mitglieder verwalten (sie können Mitglieder der Community verbieten) und Inhalte moderieren.
+Mitglieder der Community-Administratorgruppe können Community-Sites erstellen, Sites verwalten, Mitglieder verwalten (sie können Mitglieder aus der Community verbannen) und Inhalte moderieren.
 
 ### Benutzer erstellen {#create-user}
 
-Erstellen Sie einen Benutzer für *author*, dem die Rolle &quot;Community-Administrator&quot;zugewiesen wurde:
+Erstellen Sie einen Benutzer in *author*, dem die Rolle Community-Administrator zugewiesen ist:
 
-* Auf der Autoreninstanz
+* In der Autoreninstanz
 
    * Beispiel: [http://localhost:4502/](http://localhost:4503/)
 
-* Anmelden mit Administratorrechten
+* Mit Administratorrechten anmelden
 
-   * Beispiel: Benutzername &quot;admin&quot;/ Kennwort &quot;admin&quot;
+   * Beispiel: Benutzername &#39;admin&#39; / Kennwort &#39;admin&#39;
 
-* Navigieren Sie in der Hauptkonsole zu &quot;**[!UICONTROL Tools]**&quot;> &quot;**[!UICONTROL Vorgänge]**&quot;> &quot;**[!UICONTROL Sicherheit]**&quot;> &quot;**[!UICONTROL Benutzer]**&quot;.
-* Wählen Sie im Menü **Bearbeiten** die Option **[!UICONTROL Benutzer hinzufügen]**
+* Navigieren Sie in der Hauptkonsole zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**.
+* Wählen Sie im **Bearbeiten** die Option **[!UICONTROL Benutzer hinzufügen]**
 
 * Geben Sie im Dialogfeld `Create New User` Folgendes ein:
 
    * **[!UICONTROL ID]**: sirius
-   * **[!UICONTROL E-Mail-Adresse]**: sirius.nilson@mailinator.com
+   * **[!UICONTROL E-Mail-]**: sirius.nilson@mailinator.com
    * **[!UICONTROL Kennwort:]** password
    * **[!UICONTROL Kennwort bestätigen&amp;ast;]**: Kennwort
    * **[!UICONTROL Vorname]**: Sirius
    * **[!UICONTROL Nachname]**: Nilson
 
-### Zuweisen von Sirius zur Community-Administratorengruppe {#assign-sirius-to-community-administrators-group}
+### Sirius der Gruppe der Community-Administratoren zuweisen {#assign-sirius-to-community-administrators-group}
 
 Scrollen Sie nach unten zu `Add User to Groups`:
 
-* Geben Sie &quot;C&quot;zur Suche ein.
+* Zum Suchen „C“ eingeben
 
    * Klicken Sie auf `Community Administrators`
    * Klicken Sie auf `Community Enablement Managers`
@@ -114,22 +114,22 @@ Scrollen Sie nach unten zu `Add User to Groups`:
 
 ![create-user](assets/create-user.png)
 
-## Social-Anmeldung aktivieren {#enable-social-login}
+## Social-Media-Anmeldung aktivieren {#enable-social-login}
 
-Bevor die Demonstrationsversionen für die Anmeldung in sozialen Netzwerken mit Facebook und Twitter verwendet werden können, ist es erforderlich,
+Bevor die Demoversionen der Social-Media-Anmeldung mit Facebook und Twitter verwendet werden können, müssen Sie Folgendes tun
 
-1. Installieren Sie ein Fixpack oder das [neueste Feature Pack](deploy-communities.md#latestfeaturepack) (für Facebook-API-Änderungen vom März 2017).
-1. [Aktivieren Sie den OAuth-Provider](social-login.md#adobe-granite-oauth-authentication-handler) in der Veröffentlichungsumgebung.
+1. Installieren Sie ein Fix Pack oder [neueste Feature Pack](deploy-communities.md#latestfeaturepack) (für Änderungen an der Facebook-API im März 2017).
+1. [Aktivieren des OAuth](social-login.md#adobe-granite-oauth-authentication-handler)Anbieters in der Veröffentlichungsumgebung.
 
-Für Produktionsserver ist es erforderlich, die Cloud-Services zu erstellen, die für die Anmeldung über soziale Netzwerke erforderlich sind.
+Für Produktions-Server ist es erforderlich, die Cloud-Services zu erstellen, die für die Bereitstellung der Social-Media-Anmeldung erforderlich sind.
 
-Siehe [Anmeldung in sozialen Netzwerken mit Facebook und Twitter](social-login.md).
+Siehe [Social-Anmeldung mit Facebook und Twitter](social-login.md).
 
-## Erstellen von Tutorial-Tags {#create-tutorial-tags}
+## Tutorial-Tags erstellen {#create-tutorial-tags}
 
-Erstellen Sie Tags, damit Sie sie für die Tutorials zum Interagieren verwenden können, indem Sie den Tag-Namespace von `Tutorial` verwenden.
+Erstellen Sie Tags, damit Sie sie für die Engage-Tutorials verwenden können, indem Sie den Tag-Namespace von `Tutorial` verwenden.
 
-Verwenden Sie die [Tagging-Konsole](../../help/sites-administering/tags.md#tagging-console) , um die folgenden Tags zu erstellen:
+Verwenden Sie die [Tagging-Konsole](../../help/sites-administering/tags.md#tagging-console) um die folgenden Tags zu erstellen:
 
 * `Tutorial: Sports / Baseball`
 * `Tutorial: Sports / Gymnastics`
@@ -142,17 +142,17 @@ Verwenden Sie die [Tagging-Konsole](../../help/sites-administering/tags.md#taggi
 
 Folgen Sie dann den Anweisungen, um:
 
-1. [Legen Sie die Tag-Berechtigungen fest](../../help/sites-administering/tags.md#setting-tag-permissions).
-1. [Publish der Tags](../../help/sites-administering/tags.md#publishing-tags).
+1. [Festlegen der Tag-Berechtigungen](../../help/sites-administering/tags.md#setting-tag-permissions).
+1. [Publish die Tags](../../help/sites-administering/tags.md#publishing-tags).
 
-Beispielpaket mit Tags, die für die Tutorials für die ersten Schritte mit AEM Communities erstellt wurden
+Beispielpaket von Tags, die für die Tutorials „Erste Schritte“ in AEM Communities erstellt wurden
 
 [Datei abrufen](assets/tutorial_tags-v63.zip)
 
 ## MongoDB für UGC Common Store {#mongodb-for-ugc-common-store}
 
-Es wird empfohlen, ist jedoch optional, [MSRP](msrp.md) (MongoDB) als [gemeinsamen Speicher](working-with-srp.md) festzulegen, um die Flexibilität zu erleben, alle benutzergenerierten Inhalte entweder in der Veröffentlichungs- und/oder der Autorenumgebung zu moderieren.
+Es wird empfohlen, jedoch optional, [MSRP](msrp.md) (MongoDB) als [Common Store](working-with-srp.md) festzulegen, um die Flexibilität der Moderation aller UGC in Veröffentlichungs- und/oder Autorenumgebungen zu nutzen.
 
 Anweisungen finden Sie unter [Einrichten von MongoDB für Demo](demo-mongo.md).
 
-Standardmäßig führt die Installation der Autoren- und Veröffentlichungsinstanzen dazu, dass benutzergenerierte Inhalte (UGC) im [JCR Tar Storage](../../help/sites-deploying/platform.md) gespeichert werden, auf den mit [JSRP](jsrp.md) zugegriffen wird. JSRP ist kein allgemeiner Speicher, d. h. UGC ist nur in der Instanz sichtbar, in der es eingegeben wurde. Normalerweise wird UGC in einer Veröffentlichungsinstanz eingegeben und ist nicht in der Autorenumgebung sichtbar, sodass alle Moderationsaufgaben die Veröffentlichungsinstanz verwenden müssen.
+Standardmäßig führt die Installation der Authoring- und Publishing-AEM-Instanzen dazu, dass benutzergenerierte Inhalte (User Generated Content, UGC) im [JCR-Tar-Speicher) gespeichert ](../../help/sites-deploying/platform.md), auf den über [JSRP](jsrp.md) zugegriffen wird. JSRP ist kein gewöhnlicher Speicher, was bedeutet, dass UGC nur in der Instanz sichtbar ist, in der sie eingegeben wurde. Normalerweise wird der benutzergenerierte Inhalt (UGC) in einer Veröffentlichungsinstanz eingegeben und wäre in der Autorenumgebung nicht sichtbar, was dazu führt, dass alle Moderationsaufgaben die Veröffentlichungsinstanz verwenden müssen.

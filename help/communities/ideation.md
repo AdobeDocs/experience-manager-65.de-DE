@@ -1,6 +1,6 @@
 ---
-title: Ideengrundlagen
-description: Erfahren Sie mehr über die Grundlagen der Arbeit mit der Funktion "Ideen"in Communities, die einem Forum ähnlich ist, jedoch kollaborativer ist.
+title: Ideation Essentials
+description: Erfahren Sie mehr über die Grundlagen der Arbeit mit der Ideenfunktion in Communities, die einem Forum ähnelt, aber ein stärker gemeinschaftliches Gefühl vermittelt.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -16,11 +16,11 @@ ht-degree: 3%
 
 ---
 
-# Ideengrundlagen {#ideation-essentials}
+# Ideation Essentials {#ideation-essentials}
 
-Auf dieser Seite finden Sie die wichtigsten Informationen für die Arbeit mit der Ideenfunktion, die einem Forum ähnlich ist, jedoch mit der Möglichkeit, als Entwurf zu speichern und ein kollaboratives Gefühl zu entwickeln.
+Diese Seite enthält die wesentlichen Informationen für die Arbeit mit der Ideenfunktion, die einem Forum ähnelt, aber die Möglichkeit hat, als Entwurf zu speichern und ein kooperativeres Gefühl zu vermitteln.
 
-## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -29,15 +29,15 @@ Auf dieser Seite finden Sie die wichtigsten Informationen für die Arbeit mit de
    <td>social/ideation/components/hbs/ideation</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inklusive</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.hbs.stimating<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td>
+   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
+   <td>CQ.social.hbs.vote<br /> CQ.social.hbs.liking<br /> CQ.social.hbs.ideation</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>Vorlagen</strong></td>
    <td> /libs/social/ideation/components/hbs/ideation/ideation.hbs<br /> /libs/social/ideation/components/hbs/ideation/ideationlists.hbs<br /> /libs/social/ideation/components/hbs/ideation/composer.hbs</td>
   </tr>
   <tr>
@@ -46,13 +46,13 @@ Auf dieser Seite finden Sie die wichtigsten Informationen für die Arbeit mit de
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Siehe <a href="ideation-feature.md">Ideenfunktion</a></td>
+   <td>Siehe <a href="ideation-feature.md">Ideationsfunktion</a></td>
   </tr>
  </tbody>
 </table>
 
-* [Clientseitige Anpassungen](client-customize.md)
+* [Client-seitige Anpassungen](client-customize.md)
 
 ### Ideen-Funktion {#ideation-function}
 
-Eine Community-Site-Struktur, die die [Ideen-Funktion](functions.md#ideation-function) enthält, enthält eine konfigurierte `ideation` -Komponente.
+Eine Community-Site-Struktur mit der [Ideationsfunktion](functions.md#ideation-function) enthält eine konfigurierte `ideation`.

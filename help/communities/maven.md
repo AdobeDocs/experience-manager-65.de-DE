@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Maven für Communities
-description: Erfahren Sie mehr über die Adobe Experience Manager Uber API-JAR zur Verwendung in Communities.
+description: Erfahren Sie mehr über Adobe Experience Manager Uber API Jar zur Verwendung in Communities.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -20,23 +20,23 @@ ht-degree: 0%
 
 ## Überblick {#overview}
 
-Dieser Abschnitt der Dokumentation zu Adobe Experience Manager (AEM) Communities ergänzt Folgendes:
+Dieser Abschnitt der Dokumentation zu Adobe Experience Manager (AEM) Communities ergänzt:
 
-* [Erstellen AEM Projekts mit Apache Maven](../../help/sites-developing/ht-projects-maven.md).
+* [Erstellen von AEM-Projekten mit Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
-Es gibt nur ein &quot;uber&quot;-Artefakt, das einzelne Artefakte ersetzt:
+Es gibt nur ein „uber“-Artefakt, das einzelne Artefakte ersetzt:
 
-* AEM [Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* AEM [Uber API Jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 >[!NOTE]
 >
->Ab AEM 6.4 werden die Communities-APIs nicht explizit veröffentlicht. Alle Communities-APIs sind jetzt in der UberJar selbst enthalten.
+>Ab AEM 6.4 werden die Communities-APIs nicht mehr explizit veröffentlicht. Alle Communities-APIs sind jetzt im UberJar selbst enthalten.
 >
->Behalten Sie die neueste Version der Communities bei.
+>Halten Sie sich über die neueste Version von Communities auf dem Laufenden.
 >
->Siehe Abschnitt [Neueste Versionen](deploy-communities.md#latest-releases) , in dem Sie die neueste Version ermitteln können.
+>Im Abschnitt [Neueste Versionen](deploy-communities.md#latest-releases) finden Sie die neueste Version.
 
-## Beispiel einer Maven-Abhängigkeit {#maven-dependency-example}
+## Beispiel für eine Maven-Abhängigkeit {#maven-dependency-example}
 
 ```xml
 <dependency>
@@ -49,7 +49,7 @@ Es gibt nur ein &quot;uber&quot;-Artefakt, das einzelne Artefakte ersetzt:
 
 >[!NOTE]
 >
->Siehe [AEM Uber jar repository](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) , wo Sie das neueste Uber jar-Artefakt identifizieren können.
+>Siehe das [AEM UberJar-Repository](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) in dem Sie das neueste UberJar-Artefakt identifizieren können.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:

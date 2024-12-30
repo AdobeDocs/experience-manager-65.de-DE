@@ -1,5 +1,5 @@
 ---
-title: Best Practices zur Überwachung der Bereitstellung von  [!DNL Assets]
+title: 'Best Practices zur Überwachung der Bereitstellung von  [!DNL Assets] '
 description: Best Practices zur Überwachung der Umgebung und Leistung der Implementierung von [!DNL Adobe Experience Manager] nach der Bereitstellung.
 contentOwner: AG
 role: Admin, Architect

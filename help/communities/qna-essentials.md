@@ -1,6 +1,6 @@
 ---
-title: Grundlagen der quantitativen Lockerung
-description: Lernen Sie die Grundlagen der Arbeit mit der Funktion Fragen und Antworten (QnA) Forum in Adobe Experience Manager Communities kennen.
+title: QnA Essentials
+description: Lernen Sie die Grundlagen der Arbeit mit der Funktion „Questions and Answers“ (QnA)-Forum in Adobe Experience Manager Communities kennen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -16,11 +16,11 @@ ht-degree: 2%
 
 ---
 
-# Grundlagen der quantitativen Lockerung {#qna-essentials}
+# QnA Essentials {#qna-essentials}
 
-Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forumsfunktion Fragen und Antworten (QnA).
+Diese Seite enthält die wesentlichen Informationen für die Arbeit mit der Funktion „Fragen und Antworten (QnA)“ im Forum.
 
-## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -33,50 +33,50 @@ Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forum
    <td>Nein</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md">clientllibs</a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.stimating<br /> cq.social.hbs.qna</td>
+   <td> <a href="clientlibs.md">clientlibs</a></td>
+   <td>CQ.CKEditor<br /> CQ.Social.HBS.Voting<br /> CQ.Social.HBS.QNA</td>
   </tr>
   <tr>
-   <td> templates</td>
+   <td> Vorlagen</td>
    <td> /libs/social/qna/components/hbs/qnaforum/qnaforum.hbs<br /> /libs/social/qna/components/hbs/qnaforum/activity-title.hbs</td>
   </tr>
   <tr>
-   <td> css</td>
+   <td> CSS</td>
    <td> /libs/social/qna/components/hbs/qnaforum/clientlibs/qnaforum.css</td>
   </tr>
   <tr>
    <td> properties</td>
-   <td>Siehe <a href="working-with-qna.md">Fragen und Antworten zur Forumsfunktion</a></td>
+   <td>Siehe <a href="working-with-qna.md">Frage- und Antwortforum-Funktion</a></td>
   </tr>
  </tbody>
 </table>
 
-* [Clientseitige Anpassungen](client-customize.md)
+* [Client-seitige Anpassungen](client-customize.md)
 
-## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
+## Grundlagen für Server-seitige {#essentials-for-server-side}
 
 * [QnA-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
 * [QnA-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
-* [Serverseitige Anpassungen](server-customize.md)
+* [Server-seitige Anpassungen](server-customize.md)
 
 ### Fragen/Antworten-Funktion {#qna-function}
 
-Eine Community-Site-Struktur mit der [QnA-Funktion](functions.md#qna-function) verfügt über eine konfigurierte `QnA` -Komponente und Einstellungen, die sich auf die Moderation und das Tagging auswirken. Die Funktion &quot;Fragen und Antworten&quot;unterstützt die Identifizierung einer [berechtigten Mitgliederbenutzergruppe](users.md#privileged-members-group).
+Eine Community-Site-Struktur, die die [QnA](functions.md#qna-function)Funktion enthält, verfügt über eine konfigurierte `QnA`-Komponente und Einstellungen, die sich auf die Moderation und das Tagging auswirken. Die QnA-Funktion unterstützt die Identifizierung einer [privilegierten Benutzergruppe](users.md#privileged-members-group).
 
-### Zugreifen auf QnA-Forumbeiträge (UGC) {#accessing-qna-forum-posts-ugc}
+### Zugreifen auf und Forumsbeiträge (UGC) {#accessing-qna-forum-posts-ugc}
 
-UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
+UGC sollte mit einer der Standardmethoden für die Mäßigung moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für benutzergenerierte Inhalte den programmatischen Zugriff auf benutzergenerierte Inhalte, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [Common Store](working-with-srp.md) für UGC den programmgesteuerten Zugriff auf UGC, unabhängig von der gewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
 
-**Speicherort und Format des UGC im Repository können sich ohne Warnung ändern**.
+**Speicherort und Format des benutzergenerierten Inhalts im Repository können sich ohne Warnung ändern**.
 
 Siehe:
 
-* [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
-* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
-* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
+* [Storage Resource Provider-Übersicht](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
+* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Hilfsmethoden und -Beispiele.
+* [Zugriff auf benutzergenerierten Inhalt mit SRP](accessing-ugc-with-srp.md) - Codierungs-Richtlinien.
+* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnung veralteter Hilfsmethoden zu aktuellen SRP-Hilfsmethoden.

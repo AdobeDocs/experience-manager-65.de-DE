@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 9014a7dd3c9279a4da3944c1b095fd60352fdbeb
 workflow-type: tm+mt
 source-wordcount: '977'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Neben der Unterstützung einer Vielzahl von Dateiformaten und Profilen bietet di
 
 ## Unterstützte Plattformen {#supported-platforms}
 
-Die Imaging Transcoding Library ist nur für RHEL 8-, RHEL 7- und CentOS 7-Distributionen verfügbar.
+Die Imaging Transcoding Library ist nur für RHEL 8-, RHEL 7- und CentOS 7-Distributionen verfügbar.
 
 >[!NOTE]
 >

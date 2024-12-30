@@ -1,6 +1,6 @@
 ---
 title: Communities-Tools
-description: Erfahren Sie, wie Sie über Ihre Autoreninstanz auf die Konsole Communities Tools zugreifen können.
+description: Erfahren Sie, wie Sie über Ihre Autoreninstanz auf die Tools-Konsole für Communities zugreifen können.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -19,20 +19,20 @@ ht-degree: 0%
 
 # Communities-Tools {#communities-tools}
 
-Um auf die Communities Tools-Konsole zuzugreifen, melden Sie sich bei Ihrer Autoreninstanz an:
+Melden Sie sich bei Ihrer Autoreninstanz an, um auf die Tools-Konsole für Communities zuzugreifen:
 
-* Von der globalen Navigation: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**.
+* Über die globale Navigation: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**.
 
-  ![communities](assets/communities-home.png)
+  ![Communities](assets/communities-home.png)
 
-* [Site-Vorlagen](sites.md) - Konsole für die Erstellung und Verwaltung von Site-Vorlagen.
+* [Site-Vorlagen](sites.md) - Konsole für die Erstellung und Verwaltung von Site-Vorlagen
 
 * [Gruppenvorlagen](tools-groups.md) - Konsole für die Erstellung und Verwaltung von Gruppenvorlagen.
 
 * [Community-Funktionen](functions.md) - Konsole für die Erstellung und Verwaltung von Community-Funktionen.
 
-* [Speicherkonfiguration](srp-config.md) - Konsole für die Konfiguration und Auswahl des [standardmäßigen SRP](working-with-srp.md).
+* [Speicherkonfiguration](srp-config.md) - Konsole für die Konfiguration und Auswahl des [Standard-SRP](working-with-srp.md).
 
-* [Komponentenleitfaden](components-guide.md) - Öffnet eine interaktive Site, auf der Sie experimentieren können, wie die SCF-Komponenten funktionieren und wie sie konfiguriert oder angepasst werden können.
+* [Komponentenleitfaden](components-guide.md) - Öffnet eine interaktive Website, auf der Sie ausprobieren können, wie die SCF-Komponenten funktionieren und wie sie konfiguriert oder angepasst werden können.
 
-* [Abzeichen](badges.md) - Konsole, in der benutzerdefinierte Abzeichen zur Verwendung in [Scoring- und Badging-Regeln hinzugefügt werden können](implementing-scoring.md)
+* [Badges](badges.md) - Konsole, über die benutzerdefinierte Badges zur Verwendung in (Scoring[ und Badging-Regeln hinzugefügt werden können](implementing-scoring.md)

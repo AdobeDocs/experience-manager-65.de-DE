@@ -1,6 +1,6 @@
 ---
-title: SCF Handlebars Helpers
-description: Handlebars Helper-Methoden zur Erleichterung der Arbeit mit SCF
+title: SCF Handlebars-Helfer
+description: Handlebars-Hilfsmethoden zur Erleichterung der Arbeit mit SCF
 topic-tags: developing
 content-type: reference
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
@@ -14,51 +14,51 @@ ht-degree: 4%
 
 ---
 
-# SCF Handlebars Helpers {#scf-handlebars-helpers}
+# SCF Handlebars-Helfer {#scf-handlebars-helpers}
 
-| **[⇐ Funktionsgrundlagen](essentials.md)** | **[Serverseitige Anpassung](server-customize.md)** |
+| **[⇐ Feature Essentials](essentials.md)** | **[Server-seitige ⇒](server-customize.md)** |
 |---|---|
-|   | **[Clientseitige Anpassung](client-customize.md)** |
+|   | **[Client-seitige ⇒](client-customize.md)** |
 
-Handlebars Helpers (helpers) sind Methoden, die von Handlebars-Skripten aufgerufen werden können, um die Arbeit mit SCF-Komponenten zu erleichtern.
+Handlebars-Helfer (Helper) sind Methoden, die von Handlebars-Skripten aus aufgerufen werden können, um die Arbeit mit SCF-Komponenten zu erleichtern.
 
-Die Implementierung umfasst eine Client-seitige und eine Server-seitige Definition. Es ist auch möglich, dass Entwickler benutzerdefinierte Helfer erstellen.
+Die Implementierung umfasst eine Client- und eine Server-seitige Definition. Es ist auch möglich, dass Entwicklerinnen und Entwickler benutzerdefinierte Helper erstellen.
 
-Die benutzerdefinierten SCF-Helfer, die mit AEM Communities bereitgestellt werden, werden in der [Client-Bibliothek](../../help/sites-developing/clientlibs.md) definiert:
+Die benutzerdefinierten SCF-Helper, die mit AEM Communities bereitgestellt werden, sind in der [Client-Bibliothek](../../help/sites-developing/clientlibs.md) definiert:
 
 * `/etc/clientlibs/social/commons/scf/helpers.js`
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Sie das [neueste Feature Pack für Communities](deploy-communities.md#latestfeaturepack) installieren.
+>Installieren Sie unbedingt das [neueste Communities Feature Pack](deploy-communities.md#latestfeaturepack).
 
-## Abkürzung {#abbreviate}
+## kürzen {#abbreviate}
 
-Hilfsmittel zum Zurückgeben einer abgekürzten Zeichenfolge, die den Eigenschaften maxWords und maxLength entspricht.
+Ein Helper zum Zurückgeben einer abgekürzten Zeichenfolge, die den Eigenschaften maxWords und maxLength entspricht.
 
-Die abzukürzende Zeichenfolge wird als Kontext bereitgestellt. Wenn kein Kontext angegeben wird, wird eine leere Zeichenfolge zurückgegeben.
+Die Zeichenfolge, die abgekürzt werden soll, wird als Kontext bereitgestellt. Wenn kein Kontext angegeben wird, wird eine leere Zeichenfolge zurückgegeben.
 
-Zunächst wird der Kontext auf maxLength reduziert, dann wird der Kontext in Wörter aufgeteilt und auf maxWords reduziert.
+Zuerst wird der Kontext auf maxLength gekürzt, dann wird der Kontext in Wörter aufgeteilt und auf maxWords reduziert.
 
-Wenn safeString auf &quot;true&quot;gesetzt ist, ist die zurückgegebene Zeichenfolge ein SafeString.
+Wenn safeString auf „true“ gesetzt ist, dann ist die zurückgegebene Zeichenfolge ein SafeString.
 
 ### Parameter {#parameters}
 
-* **context**: String
+* **context**: Zeichenfolge
 
-  (Optional) Standardmäßig ist die leere Zeichenfolge
+  (Optional) Standard ist die leere Zeichenfolge
 
 * **maxLength**: Zahl
 
-  (Optional) Der Standardwert ist die Länge des Kontexts.
+  (Optional) Standard ist die Länge des Kontexts.
 
 * **maxWords**: Zahl
 
-  (Optional) Die Standardeinstellung ist die Anzahl der Wörter in der gekürzten Zeichenfolge.
+  (Optional) Der Standardwert ist die Anzahl der Wörter in der gekürzten Zeichenfolge.
 
 * **safeString**: Boolesch
 
-  (Optional) Gibt einen Handlebars.SafeString() zurück, wenn &quot;true&quot;. Der Standardwert ist &quot;false&quot;.
+  (Optional) Gibt eine Handlebars.SafeString() zurück, wenn „true“. Der Standardwert ist „false“.
 
 ### Beispiele {#examples}
 
@@ -86,31 +86,31 @@ Then abbreviate would return
 */
 ```
 
-## Content-loadmore {#content-loadmore}
+## content-loadmore {#content-loadmore}
 
-Ein Hilfsprogramm zum Hinzufügen von zwei Bereichen unter einem div, einer für den Volltext und der andere für den weniger Text, mit der Möglichkeit, zwischen den beiden Ansichten umzuschalten.
+Ein Helper zum Hinzufügen von zwei Bereichen unter einem div, einer für den Volltext und einer für den weniger Text, mit der Möglichkeit, zwischen den beiden Ansichten umzuschalten.
 
 ### Parameter {#parameters-1}
 
-* **context**: String
+* **context**: Zeichenfolge
 
   (Optional) Der Standardwert ist die leere Zeichenfolge.
 
 * **numChars**: Zahl
 
-  (Optional) Die Anzahl der Zeichen, die angezeigt werden sollen, wenn kein Volltext angezeigt wird. Der Standardwert ist 100.
+  (Optional) Die Anzahl der Zeichen, die angezeigt werden, wenn kein Volltext angezeigt wird. Der Standardwert ist 100.
 
-* **moreText**: String
+* **moreText**: Zeichenfolge
 
-  (Optional) Der anzuzeigende Text, der angibt, dass mehr Text angezeigt werden soll. Der Standardwert ist &quot;more&quot;.
+  (Optional) Der anzuzeigende Text, der angibt, dass mehr Text angezeigt werden soll. Der Standardwert ist „more“.
 
 * **ellipsesText**: Zeichenfolge
 
-  (Optional) Der Text, der anzeigt, dass ausgeblendeter Text vorhanden ist. Der Standardwert ist &quot;...&quot;.
+  (Optional) Der anzuzeigende Text, der angibt, dass ein ausgeblendeter Text vorhanden ist. Der Standardwert lautet &quot;…“.
 
 * **safeString**: Boolesch
 
-  (Optional) Boolescher Wert, der angibt, ob Handlebars.SafeString() angewendet werden soll, bevor das Ergebnis zurückgegeben wird. Der Standardwert ist &quot;false&quot;.
+  (Optional) Boolescher Wert, der angibt, ob Handlebars.SafeString() vor der Rückgabe des Ergebnisses angewendet werden soll. Der Standardwert ist „false“.
 
 ### Beispiel {#example}
 
@@ -128,17 +128,17 @@ Then content-loadmore would return
 
 ## DateUtil {#dateutil}
 
-Hilfsmittel zum Zurückgeben einer formatierten Datums-Zeichenfolge.
+Ein Helper zum Zurückgeben einer formatierten Datumszeichenfolge.
 
 ### Parameter {#parameters-2}
 
-* **context**: Number
+* **context**: number
 
-  (Optional) ein Millisekunden-Wert, der vom 1. Januar 1970 (Epoche) versetzt wurde. Der Standardwert ist das aktuelle Datum.
+  (Optional) Ein Millisekundenwert, der ab dem 1. Januar 1970 (Epoche) versetzt wurde. Standard ist das aktuelle Datum.
 
-* **format**: String
+* **format**: Zeichenfolge
 
-  (Optional) Das anzuwendende Datumsformat. Der Standardwert ist &quot;`YYYY-MM-DDTHH:mm:ss.sssZ`&quot; und das Ergebnis wird als &quot;`2015-03-18T18:17:13-07:00`&quot; angezeigt
+  (Optional) Das anzuwendende Datumsformat. Der Standardwert ist &quot;`YYYY-MM-DDTHH:mm:ss.sssZ`&quot;, und das Ergebnis wird als &quot;`2015-03-18T18:17:13-07:00`&quot; angezeigt.
 
 ### Beispiele {#examples-1}
 
@@ -156,15 +156,15 @@ Hilfsmittel zum Zurückgeben einer formatierten Datums-Zeichenfolge.
 
 ## Gleich {#equals}
 
-Hilfsmittel zum Zurückgeben von Inhalten in Abhängigkeit von einer Gleichheitsbedingung.
+Ein Helper zum Zurückgeben von Inhalten abhängig von einer bedingten Gleichheit.
 
 ### Parameter {#parameters-3}
 
-* **lvalue**: String
+* **lvalue**: Zeichenfolge
 
-  Der zu vergleichende linke Wert.
+  Der zu vergleichende Wert auf der linken Seite.
 
-* **rvalue**: String
+* **rvalue**: Zeichenfolge
 
   Der zu vergleichende Wert auf der rechten Seite.
 
@@ -178,19 +178,19 @@ Hilfsmittel zum Zurückgeben von Inhalten in Abhängigkeit von einer Gleichheits
 {{/equals}}
 ```
 
-## If-wcm-mode {#if-wcm-mode}
+## if-wcm-mode {#if-wcm-mode}
 
-Ein Block-Helfer, der den aktuellen Wert von [WCM mode](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) anhand einer durch eine Zeichenfolge getrennten Liste von Modi testet.
+Ein Block-Helper, der den aktuellen Wert von [WCM-Modus](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) anhand einer durch eine Zeichenfolge getrennten Liste von Modi testet.
 
 ### Parameter {#parameters-4}
 
-* **context**: String
+* **context**: Zeichenfolge
 
   (Optional) Die zu übersetzende Zeichenfolge. Erforderlich, wenn kein Standardwert angegeben wurde.
 
-* **mode**: String
+* **mode**: Zeichenfolge
 
-  (Optional) Eine kommagetrennte Liste von [WCM-Modi](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html), die getestet werden sollen, falls festgelegt.
+  (Optional) Eine kommagetrennte Liste von [WCM-Modi](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) um zu testen, ob sie festgelegt sind.
 
 ### Beispiel {#example-2}
 
@@ -204,21 +204,21 @@ Ein Block-Helfer, der den aktuellen Wert von [WCM mode](https://developer.adobe.
 
 ## i18n {#i-n}
 
-Dieser Helfer überschreibt den Handlebars-Helfer &#39;i18n&#39;.
+Dieser Helper überschreibt den Handlebars-Helper „i18n“.
 
-Siehe auch [Internationalisieren von Zeichenfolgen im JavaScript-Code](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
+Siehe auch [Internationalisieren von Zeichenfolgen in JavaScript-Code](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
 
 ### Parameter {#parameters-5}
 
-* **context**: String
+* **context**: Zeichenfolge
 
   (Optional) Die zu übersetzende Zeichenfolge. Erforderlich, wenn kein Standardwert angegeben wurde.
 
-* **default**: String
+* **default**: Zeichenfolge
 
   (Optional) Die zu übersetzende Standardzeichenfolge. Erforderlich, wenn kein Kontext angegeben wurde.
 
-* **comment**: String
+* **comment**: Zeichenfolge
 
   (Optional) Ein Übersetzungshinweis
 
@@ -231,39 +231,39 @@ Siehe auch [Internationalisieren von Zeichenfolgen im JavaScript-Code](../../hel
 
 ## Einschließen {#include}
 
-Hilfsmittel zum Einschließen einer Komponente als nicht vorhandene Ressource in eine Vorlage.
+Ein Helper zum Einschließen einer Komponente als nicht vorhandene Ressource in einer Vorlage.
 
-Diese Methode ermöglicht die programmgesteuerte Anpassung der Ressource, als es für eine Ressource möglich ist, die als JCR-Knoten hinzugefügt wird. Siehe [Hinzufügen oder Einschließen einer Communities-Komponente](scf.md#add-or-include-a-communities-component).
+Mit dieser Methode kann die Ressource programmgesteuert einfacher angepasst werden, als dies für eine Ressource möglich ist, die als JCR-Knoten hinzugefügt wird. Siehe [Hinzufügen oder Einschließen einer Communities-Komponente](scf.md#add-or-include-a-communities-component).
 
-Es sind nur einige ausgewählte Communities-Komponenten verfügbar, die einbezogen werden können. <!-- OBSOLETE/OLD  NEED TO UPDATE FOR 6.5  For AEM 6.1, those that are includable are [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md), and [voting](essentials-voting.md). -->
+Es stehen nur einige ausgewählte Communities-Komponenten zum Einschließen zur Verfügung. <!-- OBSOLETE/OLD  NEED TO UPDATE FOR 6.5  For AEM 6.1, those that are includable are [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md), and [voting](essentials-voting.md). -->
 
-Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die [cq:include](../../help/sites-developing/taglib.md) für JSP-Skripte ähneln.
+Dieser Helper, der nur für die Serverseite geeignet ist, bietet für JSP-Skripte ähnliche Funktionen [cq:include](../../help/sites-developing/taglib.md).
 
 ### Parameter {#parameters-6}
 
-* **context**: String oder Objekt
+* **context**: Zeichenfolge oder Objekt
 
   (Optional, sofern kein relativer Pfad angegeben wird)
 
-  Verwenden Sie `this` , um den aktuellen Kontext weiterzugeben.
+  Verwenden Sie `this`, um den aktuellen Kontext zu übergeben.
 
-  Verwenden Sie `this.id` , um die Ressource unter `id` abzurufen und den angeforderten resourceType zu rendern.
+  Verwenden Sie `this.id`, um die Ressource unter `id` für das Rendern des angeforderten resourceType abzurufen.
 
-* **resourceType**: String
+* **resourceType**: Zeichenfolge
 
-  (Optional) Der Ressourcentyp ist standardmäßig auf den Ressourcentyp aus dem Kontext eingestellt.
+  (Optional) Der Ressourcentyp ist standardmäßig auf den Ressourcentyp aus dem Kontext festgelegt.
 
-* **template**: String
+* **template**: Zeichenfolge
 
   Pfad zum Komponentenskript.
 
-* **path**: String
+* **path**: Zeichenfolge
 
-  (Erforderlich) Der Pfad zur Ressource. Wenn der Pfad relativ ist, muss ein Kontext angegeben werden. Andernfalls wird die leere Zeichenfolge zurückgegeben.
+  (Erforderlich) Der Pfad zur Ressource. Wenn der Pfad relativ ist, muss ein Kontext angegeben werden, andernfalls wird die leere Zeichenfolge zurückgegeben.
 
 * **authoringDisabled**: Boolesch
 
-  (Optional) Der Standardwert ist &quot;false&quot;. Nur zur internen Verwendung.
+  (Optional) Der Standardwert ist „false“. Nur zur internen Verwendung.
 
 ### Beispiel {#example-4}
 
@@ -271,31 +271,31 @@ Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die [cq:inc
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-Enthält eine neue Kommentarkomponente unter `this.id` + /comments.
+Beinhaltet eine neue Kommentarkomponente unter `this.id` + /comments.
 
-## IncludeClientLib {#includeclientlib}
+## includeClientLib {#includeclientlib}
 
-Ein Hilfsprogramm, das eine AEM HTML-Client-Bibliothek enthält, die eine JS-, CSS- oder Design-Bibliothek sein kann. Für mehrere Einschlüsse verschiedener Typen, z. B. js und css, muss dieses Tag im Handlebars-Skript mehrmals verwendet werden.
+Ein Helper mit einer AEM-HTML-Client-Bibliothek, bei der es sich um eine JS-, CSS- oder Design-Bibliothek handeln kann. Für mehrere Einschlüsse verschiedener Typen, z. B. js und css, muss dieses Tag mehrmals im Handlebars-Skript verwendet werden.
 
-Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die [ui:includeClientLib](../../help/sites-developing/taglib.md) für JSP-Skripte ähneln.
+Dieser Helper, der nur für die Serverseite geeignet ist, bietet für JSP[Skripte ähnliche Funktionen wie ui:includeClientLib](../../help/sites-developing/taglib.md).
 
 ### Parameter {#parameters-7}
 
-* **categories**: String
+* **categories**: Zeichenfolge
 
-  (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Schließen Sie alle JavaScript- und CSS-Bibliotheken für die jeweiligen Kategorien ein. Der Designname wird aus der Abfrage extrahiert.
+  (Optional) Eine durch Kommas getrennte Liste der Client-Bibliothekskategorien. Schließen Sie alle JavaScript- und CSS-Bibliotheken für die angegebenen Kategorien ein. Der Designname wird aus der Abfrage extrahiert.
 
 * **theme**: String
 
-  (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Schließen Sie alle themenbezogenen Bibliotheken (CSS und JS) für die angegebenen Kategorien ein. Der Designname wird aus der Abfrage extrahiert.
+  (Optional) Eine durch Kommas getrennte Liste der Client-Bibliothekskategorien. Schließen Sie alle designbezogenen Bibliotheken (CSS und JS) für die jeweiligen Kategorien ein. Der Designname wird aus der Abfrage extrahiert.
 
-* **js**: String
+* **js**: Zeichenfolge
 
-  (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Umfasst alle JavaScript-Bibliotheken für die angegebenen Kategorien.
+  (Optional) Eine durch Kommas getrennte Liste der Client-Bibliothekskategorien. Umfasst alle JavaScript-Bibliotheken für die angegebenen Kategorien.
 
-* **css**: String
+* **css**: Zeichenfolge
 
-  (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Umfasst alle CSS-Bibliotheken für die angegebenen Kategorien.
+  (Optional) Eine durch Kommas getrennte Liste der Client-Bibliothekskategorien. Umfasst alle CSS-Bibliotheken für die angegebenen Kategorien.
 
 ### Beispiele {#examples-2}
 
@@ -337,20 +337,20 @@ Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die [ui:inc
     <link href="/etc/clientlibs/social/hbs/comments.css" rel="stylesheet" type="text/css">
 ```
 
-## Pretty-time {#pretty-time}
+## hübsche Zeit {#pretty-time}
 
-Ein Hilfsmittel, mit dem angezeigt wird, wie viel Zeit bis zu einem Cutoff-Punkt vergangen ist, nach dem ein reguläres Datumsformat angezeigt wird.
+Ein Helper, der anzeigt, wie viel Zeit bis zu einem Cutoff-Punkt vergangen ist. Danach wird ein reguläres Datumsformat angezeigt.
 
 Zum Beispiel:
 
-* Vor 12 Stunden
-* Vor 7 Tagen
+* vor 12 Stunden
+* vor 7 Tagen
 
 ### Parameter {#parameters-8}
 
-* **context**: Number
+* **context**: number
 
-  Eine Zeit in der Vergangenheit, um mit &quot;jetzt&quot;zu vergleichen. Die Zeit wird als Millisekunden-Wertversatz ab dem 1. Januar 1970 (Epoche) ausgedrückt.
+  Eine Zeit in der Vergangenheit, die mit „jetzt“ verglichen werden kann. Die Zeit wird als Millisekundenwert-Offset vom 1. Januar 1970 (Epoche) angegeben.
 
 * **daysCutoff**: Zahl
 
@@ -372,15 +372,15 @@ Depending on how long in the past, may return
 */
 ```
 
-## Xss-html {#xss-html}
+## xss-html {#xss-html}
 
-Ein Hilfsprogramm, das eine Quellzeichenfolge für HTML-Elementinhalte kodiert, um den Schutz vor XSS zu unterstützen.
+Ein Helper, der eine Quellzeichenfolge für das HTML von Elementinhalten kodiert, um XSS zu verhindern.
 
-HINWEIS: Dieser Assistent ist kein Validator und darf nicht zum Schreiben von Attributwerten verwendet werden.
+HINWEIS: Dieser Helper ist kein Validator und darf nicht zum Schreiben von Attributwerten verwendet werden.
 
 ### Parameter {#parameters-9}
 
-* **context**: object
+* **context**: Objekt
 
   Die zu kodierende HTML.
 
@@ -392,13 +392,13 @@ HINWEIS: Dieser Assistent ist kein Validator und darf nicht zum Schreiben von At
 
 ## Xss-htmlAttr {#xss-htmlattr}
 
-Ein Hilfsprogramm, das eine Quellzeichenfolge zum Schreiben in einen HTML-Attributwert kodiert, um den Schutz vor XSS zu erleichtern.
+Ein Helper, der eine Quellzeichenfolge zum Schreiben in einen HTML-Attributwert codiert, um XSS zu verhindern.
 
-HINWEIS: Dieser Helfer ist kein Validator und darf nicht zum Schreiben von verwertbaren Attributen (href, src, event handlers) verwendet werden.
+HINWEIS: Dieser Helper ist kein Validator und darf nicht zum Schreiben von verwertbaren Attributen (href, src, Ereignis-Handler) verwendet werden.
 
 ### Parameter {#parameters-10}
 
-* **context**: Object
+* **context**: Objekt
 
   Die zu kodierende HTML.
 
@@ -410,13 +410,13 @@ HINWEIS: Dieser Helfer ist kein Validator und darf nicht zum Schreiben von verwe
 
 ## Xss-jsString {#xss-jsstring}
 
-Ein Hilfsprogramm, das eine Quellzeichenfolge zum Schreiben in JavaScript-Zeichenfolgeninhalte kodiert, um den Schutz vor XSS zu unterstützen.
+Ein Helper, der eine Quellzeichenfolge zum Schreiben in JavaScript-Zeichenfolgeninhalte kodiert, um XSS zu verhindern.
 
-HINWEIS: Dieser Helfer ist kein Validator und darf nicht zum Schreiben in beliebige JavaScript verwendet werden.
+HINWEIS: Dieser Helper ist kein Validator und darf nicht zum Schreiben in beliebige JavaScript verwendet werden.
 
 ### Parameter {#parameters-11}
 
-* **context**: Object
+* **context**: Objekt
 
   Die zu kodierende HTML.
 
@@ -428,13 +428,13 @@ var input = {{xss-jsString topic-title}}
 
 ## Xss-validHref {#xss-validhref}
 
-Ein Helfer, der eine URL zum Schreiben als HTML href- oder srce-Attributwert bereinigt, um den Schutz vor XSS zu unterstützen.
+Ein Helper, der eine URL bereinigt, damit sie als HTML href- oder srce-Attributwert geschrieben wird, um XSS zu verhindern.
 
-HINWEIS: Dieser Helfer kann eine leere Zeichenfolge zurückgeben.
+HINWEIS: Dieser Helper kann eine leere Zeichenfolge zurückgeben.
 
 ### Parameter {#parameters-12}
 
-* **context**: Object
+* **context**: Objekt
 
   Die zu bereinigende URL.
 
@@ -444,28 +444,28 @@ HINWEIS: Dieser Helfer kann eine leere Zeichenfolge zurückgeben.
 <a href="{{xss-validHref url}}">my link</a>
 ```
 
-## Handlebars.js - Grundlegende Übersicht {#handlebars-js-basic-overview}
+## Grundlegende Übersicht über Handlebars.js {#handlebars-js-basic-overview}
 
-* Ein Handlebars helper -Aufruf ist eine einfache Kennung (der *Name* des Helfers), gefolgt von null oder mehr durch Leerzeichen getrennten Parametern.
-* Parameter können ein einfaches String-, number-, boolesches oder JSON-Objekt und eine optionale Sequenz von Schlüssel-Wert-Paaren (Hash-Argumenten) als letzte Parameter sein.
-* Die Schlüssel in Hash-Argumenten müssen einfache Bezeichner sein.
-* Die Werte in den Hash-Argumenten sind Handlebars-Ausdrücke: einfache Bezeichner, Pfade oder Zeichenfolgen.
-* Der aktuelle Kontext, `this`, ist immer für Handlebars-Helfer verfügbar.
-* Der Kontext kann ein String-, number-, boolesches oder JSON-Datenobjekt sein.
-* Es ist möglich, ein im aktuellen Kontext verschachteltes Objekt als Kontext zu übergeben, z. B. `this.url` oder `this.id` (siehe die folgenden Beispiele für einfache und Blockhilfen).
+* Ein Handlebars-Helper-Aufruf ist eine einfache Kennung (*name* des Helpers), gefolgt von null oder mehr durch Leerzeichen getrennten Parametern.
+* Parameter können ein einfaches String-, Number-, Boolean- oder JSON-Objekt und eine optionale Sequenz von Schlüssel-Wert-Paaren (Hash-Argumente) als letzte Parameter sein.
+* Die Schlüssel in Hash-Argumenten müssen einfache Kennungen sein.
+* Die Werte in Hash-Argumenten sind Handlebars-Ausdrücke: einfache Kennungen, Pfade oder Zeichenfolgen.
+* Der aktuelle Kontext `this` ist für Handlebars-Helfer immer verfügbar.
+* Der Kontext kann eine Zeichenfolge, eine Zahl, ein boolescher Wert oder ein JSON-Datenobjekt sein.
+* Es ist möglich, ein im aktuellen Kontext verschachteltes Objekt als Kontext zu übergeben, z. B. `this.url` oder `this.id` (siehe die folgenden Beispiele für einfache und Block-Helper).
 
-* Block Helpers sind Funktionen, die von überall in der Vorlage aufgerufen werden können. Sie können einen Block der Vorlage jedes Mal null oder mehrmals mit einem anderen Kontext aufrufen. Sie enthalten einen Kontext zwischen `{{#*name*}}` und `{{/*name*}}`.
+* Block-Helper sind Funktionen, die von einer beliebigen Stelle in der Vorlage aufgerufen werden können. Sie können einen Block der Vorlage null oder mehr Mal mit jeweils einem anderen Kontext aufrufen. Sie enthalten einen Kontext zwischen `{{#*name*}}` und `{{/*name*}}`.
 
-* Handlebars bieten einen endgültigen Parameter für Helfer mit dem Namen &quot;options&quot;. Das Sonderobjekt &#39;options&#39; enthält
+* Handlebars stellen einen endgültigen Parameter für Helper mit dem Namen „options“ bereit. Das spezielle Objekt „options“ umfasst
 
    * Optionale private Daten (options.data)
-   * Optionale Tastenwerteigenschaften aus dem Aufruf (options.hash)
-   * Möglichkeit zum Aufrufen selbst (options.fn())
-   * Möglichkeit, das Umkehren von sich selbst aufzurufen (options.inverse())
+   * Optionale Schlüssel-Wert-Eigenschaften aus dem Aufruf (options.hash)
+   * Möglichkeit, sich selbst aufzurufen (options.fn())
+   * Möglichkeit, die Inverse von sich selbst aufzurufen (options.inverse())
 
-* Es wird empfohlen, den von einem Helfer zurückgegebenen HTML String-Inhalt als SafeString zu verwenden.
+* Es wird empfohlen, dass der von einem Helper zurückgegebene HTML-Zeichenfolgeninhalt ein SafeString ist.
 
-### Ein Beispiel für einen einfachen Helfer aus der Handlebars.js-Dokumentation: {#an-example-of-a-simple-helper-from-handlebars-js-documentation}
+### Ein Beispiel für einen einfachen Helper aus der Dokumentation zu Handlebars.js: {#an-example-of-a-simple-helper-from-handlebars-js-documentation}
 
 ```
 Handlebars.registerHelper('link_to', function(title, options) {
@@ -485,13 +485,13 @@ var template = Handlebars.compile(source);
 template(context);
 ```
 
-würde rendern:
+würde Folgendes rendern:
 
 &lt;ul>
-&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>Post!&lt;/a>&lt;/li>
+&lt;li>&lt;a href=&quot;/posts/hello-world“>Beitrag!&lt;/a>&lt;/li>
 &lt;/ul>
 
-### Ein Beispiel für einen Block-Helfer aus der Handlebars.js-Dokumentation: {#an-example-of-a-block-helper-from-handlebars-js-documentation}
+### Beispiel für einen Block-Helper aus der Dokumentation zu Handlebars.js: {#an-example-of-a-block-helper-from-handlebars-js-documentation}
 
 ```
 Handlebars.registerHelper('link', function(options) {
@@ -511,19 +511,19 @@ var template = Handlebars.compile(source);
 template(data);
 ```
 
-würde rendern:
+würde Folgendes rendern:
 &lt;ul>
-&lt;li>&lt;a href=&quot;/people/1&quot;>Alan&lt;/a>&lt;/li>
-&lt;li>&lt;a href=&quot;/people/2&quot;>Yehuda&lt;/a>&lt;/li>
+&lt;li>&lt;a href=&quot;/people/1“>Alan&lt;/a>&lt;/li>
+&lt;li>&lt;a href=&quot;/people/2“>Yehuda&lt;/a>&lt;/li>
 &lt;/ul>
 
 ## Benutzerdefinierte SCF-Helfer {#custom-scf-helpers}
 
-Benutzerdefinierte Helfer müssen auf Server- und Client-Seite implementiert werden, insbesondere bei der Übergabe von Daten. Bei SCF werden die meisten Vorlagen serverseitig kompiliert und gerendert, da der Server die HTML für eine bestimmte Komponente generiert, wenn die Seite angefordert wird.
+Benutzerdefinierte Helper müssen Server- und Client-seitig implementiert werden, insbesondere bei der Übergabe von Daten. Bei SCF werden die meisten Vorlagen Server-seitig kompiliert und gerendert, da der Server die HTML für eine bestimmte Komponente generiert, wenn die Seite angefordert wird.
 
-### Benutzerdefinierte Helfer serverseitig {#server-side-custom-helpers}
+### Server-seitige benutzerdefinierte Helper {#server-side-custom-helpers}
 
-Um einen benutzerdefinierten SCF-Helfer serverseitig zu implementieren und zu registrieren, implementieren Sie einfach die Java™-Schnittstelle [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), machen Sie sie zu einem [OSGi-Dienst](../../help/sites-developing/the-basics.md#osgi) und installieren Sie sie als Teil eines OSGi-Bundles.
+Um einen benutzerdefinierten SCF-Helper Server-seitig zu implementieren und zu registrieren, implementieren Sie einfach die Java™-Schnittstelle [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), machen Sie sie zu einem [OSGi-Service](../../help/sites-developing/the-basics.md#osgi) und installieren Sie sie als Teil eines OSGi-Bundles.
 
 Zum Beispiel:
 
@@ -565,13 +565,13 @@ public class FooTextHelper implements TemplateHelper<String>{
 
 >[!NOTE]
 >
->Ein für die serverseitige Benutzeroberfläche erstellter Helfer muss auch für die Client-Seite erstellt werden.
+>Ein für die Server-Seite erstellter Helper muss auch für die Client-Seite erstellt werden.
 >
->Die Komponente wird für den angemeldeten Benutzer clientseitig erneut gerendert. Wenn der clientseitige Helfer nicht gefunden wird, verschwindet die Komponente.
+>Die Komponente wird für den angemeldeten Benutzer Client-seitig erneut gerendert. Wenn der Client-seitige Helper nicht gefunden wird, verschwindet die Komponente.
 
-### Clientseitige benutzerdefinierte Helfer {#client-side-custom-helpers}
+### Client-seitige benutzerdefinierte Helper {#client-side-custom-helpers}
 
-Die clientseitigen Helfer sind Handlebars-Skripte, die durch Aufrufen von `Handlebars.registerHelper()` registriert werden.
+Die Client-seitigen Helper sind Handlebars-Skripte, die durch Aufrufen von `Handlebars.registerHelper()` registriert werden.
 Zum Beispiel:
 
 ### custom-helpers.js {#custom-helpers-js}
@@ -589,15 +589,15 @@ function(Handlebars, SCF, $CQ) {
 })(Handlebars, SCF, $CQ);
 ```
 
-Die benutzerdefinierten clientseitigen Helfer müssen einer benutzerdefinierten Client-Bibliothek hinzugefügt werden.
+Die benutzerdefinierten Client-seitigen Helper müssen zu einer benutzerdefinierten Client-Bibliothek hinzugefügt werden.
 Die clientlib muss:
 
 * Fügen Sie eine Abhängigkeit von `cq.social.scf` hinzu.
-* Laden nach Laden der Handlebars.
-* Sei [include](clientlibs.md).
+* Laden, nachdem Handlebars geladen wurde.
+* [enthalten](clientlibs.md).
 
 Hinweis: Die SCF-Helfer sind in `/etc/clientlibs/social/commons/scf/helpers.js` definiert.
 
-| **[⇐ Funktionsgrundlagen](essentials.md)** | **[Serverseitige Anpassung](server-customize.md)** |
+| **[⇐ Feature Essentials](essentials.md)** | **[Server-seitige ⇒](server-customize.md)** |
 |---|---|
-|   | **[Clientseitige Anpassung](client-customize.md)** |
+|   | **[Client-seitige ⇒](client-customize.md)** |

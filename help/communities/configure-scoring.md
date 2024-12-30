@@ -1,6 +1,6 @@
 ---
-title: Grundlagen zu Scoring und Abzeichen
-description: Erfahren Sie, wie mit der Funktion für die Bewertung und Abzeichen in Adobe Experience Manager Communities Community-Mitglieder identifiziert und belohnt werden.
+title: Grundlagen zu Bewertungen und Abzeichen
+description: Erfahren Sie, wie die Adobe Experience Manager Communities-Funktion Bewertung und Abzeichen Community-Mitglieder identifiziert und belohnt.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -17,19 +17,19 @@ ht-degree: 0%
 
 ---
 
-# Grundlagen zu Scoring und Abzeichen {#scoring-and-badges-essentials}
+# Grundlagen zu Bewertungen und Abzeichen {#scoring-and-badges-essentials}
 
-Mit der AEM Communities-Scoring- und Badges-Funktion werden Community-Mitglieder identifiziert und belohnt.
+Die AEM Communities-Funktion mit Scoring- und Abzeichen identifiziert und belohnt Community-Mitglieder.
 
-Die Details zur Einrichtung der Funktion finden Sie unter
+Einzelheiten zur Einrichtung der Funktion finden Sie unter
 
-* [Communities-Scoring und -Abzeichen](/help/communities/implementing-scoring.md)
+* [Vergabe von Bewertungen und Abzeichen in Communities](/help/communities/implementing-scoring.md)
 
-Diese Seite enthält zusätzliche technische Details:
+Diese Seite enthält zusätzliche technische Details :
 
-* Anzeigen eines Zeichens](#displaying-badges) als Bild oder Text in [
-* Aktivieren der umfangreichen [Debug-Protokollierung](#debug-log-for-scoring-and-badging)
-* Zugriff auf UGC](#ugc-for-scoring-and-badging) im Zusammenhang mit Scoring und Badging durch [
+* So zeigen [ ein Badge ](#displaying-badges) Bild oder Text an
+* Anleitung zum Aktivieren der umfangreichen [Debug-Protokollierung](#debug-log-for-scoring-and-badging)
+* Wie Sie [UGC) zugreifen](#ugc-for-scoring-and-badging) im Zusammenhang mit der Bewertung und dem Badging
 
 >[!CAUTION]
 >
@@ -37,9 +37,9 @@ Diese Seite enthält zusätzliche technische Details:
 
 ## Anzeigen von Abzeichen {#displaying-badges}
 
-Ob ein Badge als Text oder Bild angezeigt wird, wird auf der Clientseite in der HBS-Vorlage gesteuert.
+Ob ein Badge als Text oder Bild angezeigt wird, wird Client-seitig in der HBS-Vorlage gesteuert.
 
-Suchen Sie beispielsweise in `/libs/social/forum/components/hbs/topic/list-item.hbs` nach `this.isAssigned`:
+Suchen Sie beispielsweise nach `this.isAssigned` in `/libs/social/forum/components/hbs/topic/list-item.hbs`:
 
 ```
 {{#each author.badges}}
@@ -67,33 +67,33 @@ Suchen Sie beispielsweise in `/libs/social/forum/components/hbs/topic/list-item.
 {{/each}}
 ```
 
-Wenn &quot;true&quot;, zeigt `isAssigned` an, dass das Zeichen für eine Rolle zugewiesen wurde und das Zeichen als Text angezeigt werden sollte.
+Wenn „true“, zeigt `isAssigned` an, dass das Abzeichen für eine Rolle zugewiesen wurde und als Text angezeigt werden soll.
 
-Wenn &quot;false&quot;, zeigt `isAssigned` an, dass der Badge für einen Gewinn zuerkannt wurde und der Badge als Bild angezeigt werden sollte.
+Wenn „false“, zeigt `isAssigned` an, dass das Abzeichen für einen erreichten Wert vergeben wurde und als Bild angezeigt werden sollte.
 
-Alle Änderungen an diesem Verhalten sollten in einem benutzerdefinierten Skript vorgenommen werden (entweder Überschreiben oder Überlagerung). Siehe [Clientseitige Anpassung](/help/communities/client-customize.md).
+Alle Änderungen an diesem Verhalten sollten in einem benutzerdefinierten Skript vorgenommen werden (entweder überschreiben oder überlagern). Siehe [Client-seitige Anpassung](/help/communities/client-customize.md).
 
-## Debug-Protokoll für Scoring und Badging {#debug-log-for-scoring-and-badging}
+## Debug-Protokoll für Bewertung und Badging {#debug-log-for-scoring-and-badging}
 
-Um Scoring und Badging zu debuggen, kann eine benutzerdefinierte Protokolldatei eingerichtet werden. Der Inhalt dieser Protokolldatei kann dann dem Support zur Verfügung gestellt werden, wenn Probleme mit der Funktion auftreten.
+Um die Fehlerbehebung bei der Bewertung und dem Badging zu erleichtern, kann eine benutzerdefinierte Protokolldatei eingerichtet werden. Der Inhalt dieser Protokolldatei kann dann dem Support bereitgestellt werden, wenn bei der Funktion Probleme auftreten.
 
-Detaillierte Anweisungen finden Sie unter [Benutzerdefinierte Protokolldatei erstellen](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
+Detaillierte Anweisungen finden Sie unter [Erstellen einer benutzerdefinierten Protokolldatei](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
 
 So richten Sie schnell eine Slinglog-Datei ein:
 
-1. Zugriff auf die **Adobe Experience Manager Web Console Log Support**, z. B.
+1. Greifen Sie auf die Protokollunterstützung für die **Adobe Experience Manager Web Console zu** z. B.
 
    * https://localhost:4502/system/console/slinglog
 
-1. Wählen Sie **Neuen Logger hinzufügen** aus.
+1. Wählen Sie **Neue Protokollierung hinzufügen**
 
-   1. Wählen Sie `DEBUG` für **Protokollebene** aus
+   1. Wählen Sie `DEBUG` für **Protokollebene**
 
-   1. Geben Sie einen Namen für **Protokolldatei** ein, beispielsweise
+   1. Geben Sie einen Namen für **Protokolldatei** ein, z. B.
 
       * logs/scoring-debug.log
 
-   1. Geben Sie zwei **Logger** (class)-Einträge ein (mit dem Symbol `+` ).
+   1. Geben Sie zwei **Logger**-Einträge (Klasse) ein (mit `+` Symbol)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
@@ -106,9 +106,9 @@ So zeigen Sie Protokolleinträge an:
 
 * Über die Web-Konsole
 
-   * Unter dem Menü **Status**
+   * Im Menü **Status**
    * Wählen Sie **Protokolldateien**
-   * Suchen Sie nach dem Namen Ihrer Protokolldatei, z. B. `scoring-debug`.
+   * Suchen Sie nach Ihrem Protokolldateinamen, z. B. `scoring-debug`
 
 * Auf der lokalen Festplatte des Servers
 
@@ -118,36 +118,36 @@ So zeigen Sie Protokolleinträge an:
 
 ![scoring-log](assets/scoring-log.png)
 
-## UGC für Scoring und Badging {#ugc-for-scoring-and-badging}
+## UGC für Bewertung und Badging {#ugc-for-scoring-and-badging}
 
-Es ist möglich, die UGC im Zusammenhang mit Scoring und Badging anzuzeigen, wenn das ausgewählte SRP entweder JSRP oder MSRP, aber nicht ASRP ist. (Wenn Sie diese Begriffe nicht kennen, finden Sie weitere Informationen unter [Community-Inhaltsspeicherung](/help/communities/working-with-srp.md) und [Übersicht über den Speicher-Ressourcenanbieter](/help/communities/srp.md).)
+Der UGC für die Bewertung und das Badging kann angezeigt werden, wenn das ausgewählte SRP entweder JSRP oder MSRP, aber nicht ASRP ist. (Wenn Sie mit diesen Begriffen nicht vertraut sind, finden Sie weitere Informationen unter [Community-](/help/communities/working-with-srp.md) und [Speicherressourcenanbieter - Übersicht](/help/communities/srp.md).)
 
-Die Beschreibungen für den Zugriff auf Scoring- und Badging-Daten verwenden JSRP, da der Zugriff auf die UGC über [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) leicht möglich ist.
+Die Beschreibungen für den Zugriff auf Scoring- und Badging-Daten verwenden JSRP, da der UGC über [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) leicht zugänglich ist.
 
-**JSRP für Autor**: Beim Experimentieren in der Autorenumgebung wird UGC angezeigt, der nur in der Autorenumgebung sichtbar ist.
+**JSRP auf Author**: Experimentieren in der Authoring-Umgebung führt zu UGC, der nur in der Authoring-Umgebung sichtbar ist.
 
-**JSRP bei Veröffentlichung**: Ebenso ist es beim Testen in der Veröffentlichungsumgebung erforderlich, auf CRXDE Lite mit Administratorrechten auf einer Veröffentlichungsinstanz zuzugreifen. Wenn die Veröffentlichungsinstanz im [Produktionsmodus](/help/sites-administering/production-ready.md) ausgeführt wird (Ausführungsmodus nosamplecontent), muss CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md) aktiviert werden.[
+**JSRP bei der Veröffentlichung**: Entsprechend ist es beim Testen in der Veröffentlichungsumgebung erforderlich, auf CRXDE Lite mit Administratorrechten in einer Veröffentlichungsinstanz zuzugreifen. Wenn die Veröffentlichungsinstanz im [Produktionsmodus) ausgeführt wird ](/help/sites-administering/production-ready.md)Ausführungsmodus „nosamplecontent„), müssen Sie [CRXDE Lite aktivieren](/help/sites-administering/enabling-crxde-lite.md).
 
 Der Basisspeicherort von UGC auf JSRP ist `/content/usergenerated/asi/jcr/`.
 
 ### Scoring- und Badging-APIs {#scoring-and-badging-apis}
 
-Die folgenden APIs stehen zur Verwendung bereit:
+Die folgenden APIs sind zur Verwendung verfügbar:
 
 * [com.adobe.cq.social.scoring.api in 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)
 * [com.adobe.cq.social.badging.api in 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)
 
-Die neuesten Javadocs für das installierte Feature Pack stehen Entwicklern aus dem Adobe-Repository zur Verfügung. Siehe [Verwenden von Maven für Communities: Javadocs](/help/communities/maven.md#javadocs).
+Die neuesten Javadocs für das installierte Feature Pack stehen Entwicklern im Adobe-Repository zur Verfügung. Siehe [Verwenden von Maven für Communities : Javadocs](/help/communities/maven.md#javadocs).
 
-**Speicherort und Format des UGC im Repository können sich ohne Warnung ändern**.
+**Speicherort und Format des benutzergenerierten Inhalts im Repository können sich ohne Warnung ändern**.
 
-### Beispieleinrichtung {#example-setup}
+### Beispiel-Setup {#example-setup}
 
-Die Screenshots von Repository-Daten stammen aus der Einrichtung von Scoring und Badging für ein Forum auf zwei verschiedenen AEM Sites :
+Die Screenshots von Repository-Daten stammen vom Einrichten einer Bewertung für ein Forum auf zwei verschiedenen AEM-Sites :
 
-1. Eine AEM Site *mit* einer eindeutigen ID (Community-Site, die mithilfe des Assistenten erstellt wurde) :
+1. Eine AEM-Site *mit* einer eindeutigen ID (Community-Site, die mithilfe des Assistenten erstellt wurde) :
 
-   * Verwenden der Site &quot;Erste Schritte - Tutorial&quot;(Interaktion), die während des [Erste Schritte-Tutorials](/help/communities/getting-started.md) erstellt wurde
+   * Verwenden der Website „Erste Schritte-Tutorial (Engage)“, die während des Tutorials [Erste Schritte“ erstellt wurde](/help/communities/getting-started.md)
    * Suchen Sie den Knoten der Forumsseite .
 
      `/content/sites/engage/en/forum/jcr:content`
@@ -164,20 +164,20 @@ Die Screenshots von Repository-Daten stammen aus der Einrichtung von Scoring und
    /libs/settings/community/badging/rules/forums-scoring]
    ```
 
-   * Suchen Sie den Knoten der Forumkomponente .
+   * Suchen Sie den Komponentenknoten Forum .
 
      `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Um Badges anzuzeigen, fügen Sie eine Eigenschaft hinzu
+   * Um Abzeichen anzuzeigen, fügen Sie die Eigenschaft hinzu
 
      `allowBadges = true`
 
-   * Ein Benutzer meldet sich an, erstellt ein Forenthema und erhält ein Bronze-Zeichen
+   * Ein Benutzer meldet sich an, erstellt ein Forumsthema und erhält ein Bronze-Abzeichen
 
-1. Eine AEM Site *ohne* eindeutige ID :
+1. Eine AEM-Site *ohne* eindeutige ID :
 
-   * Verwenden des Leitfadens [Community-Komponenten](/help/communities/components-guide.md)
+   * Verwenden des [Community-Komponentenhandbuchs](/help/communities/components-guide.md)
    * Suchen Sie den Knoten der Forumsseite .
 
      `/content/community-components/en/forum/jcr:content`
@@ -194,85 +194,85 @@ Die Screenshots von Repository-Daten stammen aus der Einrichtung von Scoring und
    /libs/settings/community/badging/rules/forums-badging]
    ```
 
-   * Suchen Sie den Knoten der Forumkomponente .
+   * Suchen Sie den Komponentenknoten Forum .
 
      `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Um Badges anzuzeigen, fügen Sie eine Eigenschaft hinzu
+   * Um Abzeichen anzuzeigen, fügen Sie die Eigenschaft hinzu
 
      `allowBadges = true`
 
-   * Ein Benutzer meldet sich an, erstellt ein Forenthema und erhält ein Bronze-Zeichen
+   * Ein Benutzer meldet sich an, erstellt ein Forumsthema und erhält ein Bronze-Abzeichen
 
-1. Benutzern wird über cURL ein Moderatorzeichen zugewiesen:
+1. Einem Benutzer wird mithilfe von cURL ein Moderator-Badge zugewiesen:
 
    ```shell
    curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
    ```
 
-   Da ein Benutzer zwei Bronze-Abzeichen gesammelt und ein Moderatorenabzeichen erhalten hat, wird der Benutzer mit seinem Forumseintrag wie folgt angezeigt:
+   Da ein Benutzer zwei Bronze-Abzeichen verdient hat und ein Moderator-Abzeichen erhalten hat, erscheint der Benutzer mit seinem Forumseintrag wie folgt:
 
-   ![moderator](assets/moderator.png)
+   ![Moderator](assets/moderator.png)
 
 >[!NOTE]
 >
 >Dieses Beispiel folgt nicht den folgenden Best Practices:
 >
->* Scoring-Regelnamen sollten global eindeutig sein. Sie sollten nicht mit demselben Namen enden.
+>* Bewertungsregelnamen sollten global eindeutig sein und nicht mit demselben Namen enden.
 >
->  Ein Beispiel dafür, was *nicht* zu tun hat:
+>  Ein Beispiel dafür *was* tun:
 >
 >  /libs/settings/community/scoring/rules/site1/forums-scoring
 >  /libs/settings/community/scoring/rules/site2/forums-scoring
 >
->* Erstellen von Unique Badge-Bildern für verschiedene AEM Sites
+>* Erstellen eindeutiger Badge-Bilder für verschiedene AEM-Sites
 
-### Auf Scoring-UGC zugreifen {#access-scoring-ugc}
+### Zugriff auf Bewertungsbenutzeroberfläche {#access-scoring-ugc}
 
-Die Verwendung der [APIs](#scoring-and-badging-apis) wird empfohlen.
+Die Verwendung der [APIs](#scoring-and-badging-apis) wird bevorzugt.
 
-Zu Ermittlungszwecken wird mithilfe von JSRP zum Beispiel der Basisordner mit Bewertungen
+Zu Ermittlungszwecken wird im Beispiel mit JSRP der Basisordner mit Scores verwendet
 
 * `/content/usergenerated/asi/jcr/scoring`
 
-Der untergeordnete Knoten von `scoring` ist der Name der Scoring-Regel. Daher empfiehlt es sich, dass die Namen von Scoring-Regeln auf einem Server global eindeutig sind.
+Der untergeordnete Knoten von `scoring` ist der Name der Bewertungsregel. Daher empfiehlt es sich, die Namen von Bewertungsregeln auf einem Server global eindeutig zu definieren.
 
-Für die Geometrixx Engage-Site befinden sich der Benutzer und sein Ergebnis in einem Pfad, der mit dem Namen der Scoring-Regel, der Site-ID der Community-Site ( `engage-ba81p`), einer eindeutigen ID und der ID des Benutzers konstruiert wurde:
+Für die Geometrixx Engage-Site befinden sich die Benutzerin bzw. der Benutzer und deren Wert in einem Pfad, der mit dem Namen der Bewertungsregel, der Site-ID der Community-Site (`engage-ba81p`), einer eindeutigen ID und der Benutzer-ID erstellt wurde:
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
-Auf der Guide-Site &quot;Community-Komponenten&quot;befinden sich der Benutzer und sein Ergebnis in einem Pfad, der mit dem Namen der Scoring-Regel, einer Standard-ID ( `default-site`), einer eindeutigen ID und der ID des Benutzers konstruiert wurde:
+Auf der Website für das Handbuch der Community-Komponenten befinden sich der Benutzer und sein Score in einem Pfad, der aus dem Namen der Bewertungsregel, einer Standard-ID (`default-site`), einer eindeutigen ID und der Benutzer-ID besteht:
 
 * `.../scoring/forums-scoring/default-site/b27a17cb4910a9b69fe81fb1b492ba672d2c086e/riley`
 
-Die Punktzahl wird in der Eigenschaft `scoreValue_tl` gespeichert, die nur einen Wert enthalten oder indirekt auf einen atomicCounter verweisen kann.
+Der Wert wird in der Eigenschaft `scoreValue_tl` gespeichert, die nur einen Wert enthalten oder indirekt auf einen atomischen Zähler verweisen kann.
 
 ![access-scoring-ugc](assets/access-scoring-ugc.png)
 
-### Zugriffsabzeichen-UGC {#access-badging-ugc}
+### Zugriff auf Badging-UGC {#access-badging-ugc}
 
-Die Verwendung der [APIs](#scoring-and-badging-apis) wird empfohlen.
+Die Verwendung der [APIs](#scoring-and-badging-apis) wird bevorzugt.
 
-Zu Untersuchungszwecken wird mithilfe von JSRP beispielsweise der Basisordner mit Informationen zu zugewiesenen oder vergebenen Abzeichen wie folgt angezeigt:
+Zu Untersuchungszwecken wird beispielsweise JSRP verwendet. Der Basisordner mit Informationen zu zugewiesenen oder zugewiesenen Abzeichen ist
 
 * `/content/usergenerated/asi/jcr`
 
-gefolgt von dem Pfad zum Profil des Benutzers, der in einen Badges-Ordner endet, z. B.:
+gefolgt vom Pfad zum Profil des Benutzers, der in einem Abzeichenordner endet, z. B.:
 
 * `/home/users/community/w271OOup2Z4DjnOQrviv/profile/badges`
 
-#### Ausgezeichnetes Zeichen {#awarded-badge}
+#### Ausgezeichnetes Abzeichen {#awarded-badge}
 
-![delivered-badging-ugc](assets/access-badging-ugc.png)
+![award-badging-ugc](assets/access-badging-ugc.png)
 
-#### Zugewiesenes Zeichen {#assigned-badge}
+#### Zugewiesene Abzeichen {#assigned-badge}
 
 ![assigned-badge](assets/assigned-badge.png)
 
 ## Zusätzliche Informationen {#additional-information}
 
-So zeigen Sie eine sortierte Liste von Mitgliedern basierend auf Punkten an:
+So zeigen Sie eine sortierte Liste von Elementen basierend auf Punkten an:
 
-* [Leaderboard-Funktion](/help/communities/functions.md#leaderboard-function) zur Aufnahme in eine Community-Site oder Gruppenvorlage.
-* [Leaderboard-Komponente](/help/communities/enabling-leaderboard.md), die Komponente mit Funktionen für Leaderboard, zum Erstellen von Seiten.
+* [Leaderboardfunktion](/help/communities/functions.md#leaderboard-function) zur Aufnahme in eine Community-Site oder Gruppenvorlage.
+* [Leaderboardkomponente](/help/communities/enabling-leaderboard.md), die vorgestellte Komponente der Funktion Leaderboard für die Seitenbearbeitung.

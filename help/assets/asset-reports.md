@@ -45,7 +45,7 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
 [!DNL Experience Manager Assets] generiert die folgenden standardmäßigen Berichte für Sie:
 
 * Hochladen
-* Download
+* Herunterladen
 * Ablauf
 * Änderung
 * Veröffentlichen
@@ -126,7 +126,7 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
 Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre speziellen Anforderungen anzuzeigen:
 
 * Hochladen
-* Download
+* Herunterladen
 * Ablauf
 * Änderung
 * Veröffentlichen

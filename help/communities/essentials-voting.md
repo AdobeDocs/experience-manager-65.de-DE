@@ -1,6 +1,6 @@
 ---
-title: Abstimmungsgrundlagen
-description: Erfahren Sie, wie Sie die Komponente Abstimmung verwenden, mit der Mitglieder einen bestimmten Inhalt bewerten können, indem Sie Pfeile nach oben oder unten auswählen, um ihre Meinung anzugeben.
+title: Grundlagen zur Abstimmung
+description: Erfahren Sie, wie Sie die Abstimmungskomponente verwenden, mit der Mitglieder ein bestimmtes Inhaltselement bewerten können, indem sie Pfeile nach oben oder unten auswählen, um ihre Meinung anzugeben.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -16,32 +16,32 @@ ht-degree: 1%
 
 ---
 
-# Abstimmungsgrundlagen {#voting-essentials}
+# Grundlagen zur Abstimmung {#voting-essentials}
 
-Die Abstimmungskomponente, eine Unterklasse [tally](tally.md), ist ein nützliches Werkzeug, mit dem Mitglieder einen bestimmten Inhalt bewerten können, indem sie einfach Pfeile nach oben oder unten auswählen, um ihre Meinung anzugeben.
+Die Abstimmkomponente, eine [tally](tally.md)-Unterklasse, ist ein nützliches Tool, das es Mitgliedern ermöglicht, ein bestimmtes Inhaltselement zu bewerten, indem sie einfach Pfeile nach oben oder unten auswählen, um ihre Meinung anzugeben.
 
-Das Platzieren mehrerer Instanzen einer Abstimmungskomponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name` -Eigenschaft konfiguriert werden.
+Die Platzierung mehrerer Instanzen einer Abstimmkomponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name`-Eigenschaft konfiguriert werden.
 
-Die anonyme Veröffentlichung einer Abstimmung wird nicht unterstützt. Besucher der Website müssen sich registrieren und sich anmelden, um nur einmal an der Abstimmung teilnehmen zu können. Der angemeldete Besucher (Mitglied) kann seine Stimme jederzeit ändern.
+Die anonyme Abgabe einer Stimme wird nicht unterstützt. Besuchende der Website müssen sich nur einmal registrieren und anmelden, um an der Abstimmung teilzunehmen. Der angemeldete Besucher (Mitglied) kann seine Stimme jederzeit ändern.
 
-## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/tally/components/hbs/stimmberechtigt</td>
+   <td>social/tally/components/hbs/vote</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
-   <td>Ja - Eigenschaften können im Modus <i>design </i> bearbeitet werden</td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inklusive</strong></a></td>
+   <td>Ja - Eigenschaften können im Design<i>Modus bearbeitet </i>.</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
    <td> cq.social.hbs.voting</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>Vorlagen</strong></td>
    <td><p> /libs/social/tally/components/hbs/voting/voting.hbs<br /> /libs/social/tally/components/hbs/voting/activity-title.hbs</p> </td>
   </tr>
   <tr>
@@ -50,33 +50,33 @@ Die anonyme Veröffentlichung einer Abstimmung wird nicht unterstützt. Besucher
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td><p>Siehe <a href="voting.md">Verwenden der Abstimmung</a> .</p> </td>
+   <td><p>Siehe <a href="voting.md">Verwenden von Abstimmungen</a></p> </td>
   </tr>
  </tbody>
 </table>
 
-* [Clientseitige Anpassungen](client-customize.md)
+* [Client-seitige Anpassungen](client-customize.md)
 
-## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
+## Grundlagen für Server-seitige {#essentials-for-server-side}
 
 * [Tally-APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tally Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
-* [Serverseitige Anpassungen](server-customize.md)
+* [Server-seitige Anpassungen](server-customize.md)
 
-### Zugreifen auf gepostete Abstimmung (UGC) {#accessing-posted-voting-ugc}
+### Zugriff auf veröffentlichte Abstimmungen (UGC) {#accessing-posted-voting-ugc}
 
-UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
+UGC sollte mit einer der Standardmethoden für die Mäßigung moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für benutzergenerierte Inhalte den programmatischen Zugriff auf benutzergenerierte Inhalte, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [Common Store](working-with-srp.md) für UGC den programmgesteuerten Zugriff auf UGC, unabhängig von der gewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
 
-**Speicherort und Format des UGC im Repository können sich ohne Warnung ändern**.
+**Speicherort und Format des benutzergenerierten Inhalts im Repository können sich ohne Warnung ändern**.
 
 Siehe:
 
-* [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
-* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
-* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
+* [Storage Resource Provider-Übersicht](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
+* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Hilfsmethoden und -Beispiele.
+* [Zugriff auf benutzergenerierten Inhalt mit SRP](accessing-ugc-with-srp.md) - Codierungs-Richtlinien.
+* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnung veralteter Hilfsmethoden zu aktuellen SRP-Hilfsmethoden.

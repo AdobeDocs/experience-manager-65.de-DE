@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Kommentaren zur Beispielseite
+title: Kommentar zur Beispielseite hinzufügen
 description: Erfahren Sie, wie eine Instanz des Kommentarsystems einer Website ihren resourceType als benutzerdefiniertes Kommentarsystem festlegen und alle erforderlichen Client-Bibliotheken einschließen muss.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -17,56 +17,56 @@ ht-degree: 0%
 
 ---
 
-# Hinzufügen von Kommentaren zur Beispielseite  {#add-comment-to-sample-page}
+# Kommentar zur Beispielseite hinzufügen  {#add-comment-to-sample-page}
 
-Nachdem sich die Komponenten für das benutzerdefinierte Kommentarsystem im Anwendungsverzeichnis (/apps) befinden, kann die erweiterte Komponente verwendet werden. Die Instanz des Kommentarsystems auf einer Website, auf die sich die Auswirkungen auswirken sollen, muss ihren resourceType als benutzerdefiniertes Kommentarsystem festlegen und alle erforderlichen Client-Bibliotheken einschließen.
+Nachdem die Komponenten für das benutzerdefinierte Kommentarsystem nun im Anwendungsverzeichnis (/apps) vorhanden sind, kann die erweiterte Komponente verwendet werden. Die Instanz des Kommentarsystems in einer betroffenen Website muss ihren resourceType als benutzerdefiniertes Kommentarsystem festlegen und alle erforderlichen Client-Bibliotheken einschließen.
 
 ## Erforderliche Clientlibs identifizieren {#identify-required-clientlibs}
 
 Die Client-Bibliotheken, die für den Stil und die Funktionsweise der Standardkommentare erforderlich sind, sind auch für erweiterte Kommentare erforderlich.
 
-Im [Community Components Guide](/help/communities/components-guide.md) werden die erforderlichen Client-Bibliotheken identifiziert. Navigieren Sie zum Komponentenleitfaden und zeigen Sie die Komponente Kommentare an, z. B.:
+Im [Community-Komponentenhandbuch](/help/communities/components-guide.md) werden die erforderlichen Client-Bibliotheken angegeben. Navigieren Sie zum Komponentenhandbuch und zeigen Sie die Komponente Kommentare an, z. B.:
 
 [https://localhost:4502/content/community-components/en/comments.html](https://localhost:4502/content/community-components/en/comments.html)
 
-Beachten Sie die drei Client-Bibliotheken, die erforderlich sind, damit Kommentare gerendert und ordnungsgemäß funktioniert. Diese müssen enthalten sein, wenn auf die erweiterten Kommentare und die Client-Bibliothek ](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`) der [erweiterten Kommentare verwiesen wird.
+Beachten Sie die drei Client-Bibliotheken, die für Kommentare erforderlich sind, damit sie ordnungsgemäß gerendert werden und funktionieren. Diese müssen dort eingefügt werden, wo auf die erweiterten Kommentare verwiesen wird, und in der [Client-Bibliothek der erweiterten Kommentare](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
 
 ![comments-component1](assets/comments-component1.png)
 
 ### Hinzufügen benutzerdefinierter Kommentare zu einer Seite {#add-custom-comments-to-a-page}
 
-Da pro Seite nur ein Kommentarsystem erstellt werden kann, ist es einfacher, eine Beispielseite zu erstellen, wie im kurzen Tutorial [Erstellen einer Beispielseite](/help/communities/create-sample-page.md) beschrieben.
+Da pro Seite nur ein Kommentarsystem vorhanden sein kann, ist es einfacher, eine Beispielseite zu erstellen, wie im kurzen Tutorial [Erstellen einer Beispielseite](/help/communities/create-sample-page.md) beschrieben.
 
-Wechseln Sie nach der Erstellung in den Designmodus und stellen Sie die benutzerdefinierte Komponentengruppe bereit, damit die Komponente `Alt Comments` zur Seite hinzugefügt werden kann.
+Wechseln Sie nach der Erstellung in den Designmodus und stellen Sie die benutzerdefinierte Komponentengruppe zur Verfügung, damit die `Alt Comments` Komponente zur Seite hinzugefügt werden kann.
 
-Damit der Kommentar angezeigt wird und ordnungsgemäß funktioniert, müssen die Client-Bibliotheken für Kommentare der Clientlibsliste für die Seite hinzugefügt werden (siehe [Clientlibs für Communities-Komponenten](/help/communities/clientlibs.md)).
+Damit der Kommentar angezeigt wird und ordnungsgemäß funktioniert, müssen die Client-Bibliotheken für Kommentare zur clientlibs-Liste für die Seite hinzugefügt werden (siehe [Clientlibs für Communities-Komponenten](/help/communities/clientlibs.md)).
 
 #### Kommentare zu Clientlibs auf Beispielseite {#comments-clientlibs-on-sample-page}
 
 ![comments-clientlibs-crxde](assets/comments-clientlibs-crxde.png)
 
-#### Autor: Alt-Kommentar auf Beispielseite {#author-alt-comment-on-sample-page}
+#### Autor: ALT-Kommentar auf Beispielseite {#author-alt-comment-on-sample-page}
 
-![alt-comment](assets/alt-comment.png)
+![Alt-Kommentar](assets/alt-comment.png)
 
-#### Autor: Knoten für Beispielseitenkommentare {#author-sample-page-comments-node}
+#### Autor: Beispielseitenkommentarknoten {#author-sample-page-comments-node}
 
-Sie können den resourceType in CRXDE überprüfen, indem Sie die Eigenschaften des Kommentarknotens für die Beispielseite unter `/content/sites/sample/en/jcr:content/content/primary/comments` anzeigen.
+Sie können resourceType in CRXDE überprüfen, indem Sie die Eigenschaften des Kommentarknotens für die Beispielseite unter `/content/sites/sample/en/jcr:content/content/primary/comments` anzeigen.
 
 ![verify-comment-crxde](assets/verify-comment-crxde.png)
 
 #### Publish-Beispielseite {#publish-sample-page}
 
-Nachdem die benutzerdefinierte Komponente der Seite hinzugefügt wurde, müssen Sie die Seite auch (erneut) [veröffentlichen](/help/communities/sites-console.md#publishing-the-site).
+Nachdem die benutzerdefinierte Komponente zur Seite hinzugefügt wurde, müssen Sie auch die Seite (erneut) [veröffentlichen](/help/communities/sites-console.md#publishing-the-site).
 
-#### Publish: Alt-Kommentar auf Beispielseite {#publish-alt-comment-on-sample-page}
+#### Publish: ALT-Kommentar auf Beispielseite {#publish-alt-comment-on-sample-page}
 
-Nach der Veröffentlichung des benutzerdefinierten Programms und der Beispielseite können Sie einen Kommentar eingeben. Wenn Sie angemeldet sind, entweder mit einem [Demobenutzer](/help/communities/tutorials.md#demo-users) oder Administrator, können Sie einen Kommentar posten.
+Nach dem Veröffentlichen sowohl des benutzerdefinierten Programms als auch der Beispielseite ist es möglich, einen Kommentar einzugeben. Wenn Sie angemeldet sind, entweder mit einem [Demo-Benutzer](/help/communities/tutorials.md#demo-users) oder Administrator, ist es möglich, einen Kommentar zu posten.
 
-Hier aaron.mcdonald@mailinator.com posten Sie einen Kommentar:
+Hier ist aaron.mcdonald@mailinator.com, das einen Kommentar postet:
 
 ![publish-alt-comment](assets/publish-alt-comment.png)
 
 ![publish-alt-comment1](assets/publish-alt-comment1.png)
 
-Nachdem sich herausstellt, dass die erweiterte Komponente ordnungsgemäß mit dem standardmäßigen Erscheinungsbild funktioniert, ist es an der Zeit, das Erscheinungsbild zu ändern.
+Jetzt, da die erweiterte Komponente mit dem standardmäßigen Erscheinungsbild korrekt funktioniert, ist es an der Zeit, das Erscheinungsbild zu ändern.

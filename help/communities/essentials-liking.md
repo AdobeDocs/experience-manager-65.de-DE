@@ -1,6 +1,6 @@
 ---
-title: Gefällt mir-Grundlagen
-description: Erfahren Sie, wie Sie die Komponente "Liking"verwenden, ein nützliches Werkzeug, mit dem Mitglieder durch Auswahl des Herzenssymbols eine positive Meinung zu bestimmten Inhalten äußern können.
+title: Grundlagen zur Interaktion
+description: Erfahren Sie, wie Sie die Komponente „Gefällt mir“ verwenden, ein nützliches Tool, mit dem Mitglieder eine positive Meinung zu bestimmten Inhalten äußern können, indem sie auf das Herz-Symbol klicken.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -17,32 +17,32 @@ ht-degree: 1%
 
 ---
 
-# Gefällt mir-Grundlagen {#liking-essentials}
+# Grundlagen zur Interaktion {#liking-essentials}
 
-Die Komponente &quot;Gefällt mir&quot;, eine Unterklasse vom Typ [tally](tally.md), ist ein nützliches Tool, mit dem Mitglieder eine positive Meinung zu einem bestimmten Inhaltselement äußern können, indem sie einfach das Herzsymbol auswählen.
+Die Komponente „Gefällt mir[, eine ](tally.md) Unterklasse, ist ein nützliches Tool, mit dem Mitglieder eine positive Meinung über ein bestimmtes Inhaltselement ausdrücken können, indem sie einfach das Herzsymbol auswählen.
 
-Das Platzieren mehrerer Instanzen einer liken Komponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name` -Eigenschaft konfiguriert werden.
+Die Platzierung mehrerer Instanzen einer verknüpfenden Komponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name`-Eigenschaft konfiguriert werden.
 
-Das anonyme Posten eines &quot;Gefällt mir&quot;-Klicks wird nicht unterstützt. Besucher der Site müssen sich registrieren und sich anmelden, um an &quot;Gefällt mir&quot;teilzunehmen. Der angemeldete Besucher (Mitglied) kann sich jederzeit ein- und ausschalten.
+Das anonyme Posten eines Like wird nicht unterstützt. Besuchende der Site müssen sich registrieren und anmelden, um an der Verknüpfung teilzunehmen. Der angemeldete Besucher (Mitglied) kann jederzeit wie ein- und ausschalten.
 
-## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/tally/components/hbs/liken</td>
+   <td>social/tally/components/hbs/liking</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
-   <td>Ja - Eigenschaften können im Modus <i>design </i> bearbeitet werden</td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inklusive</strong></a></td>
+   <td>Ja - Eigenschaften können im Design<i>Modus bearbeitet </i>.</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
    <td> cq.social.hbs.liking</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>Vorlagen</strong></td>
    <td><p> /libs/social/tally/components/hbs/liking/liking.hbs<br /> /libs/social/tally/components/hbs/liking/activity-icon.hbs<br /> /libs/social/tally/components/hbs/liking/activity-title.hbs</p> </td>
   </tr>
   <tr>
@@ -51,33 +51,33 @@ Das anonyme Posten eines &quot;Gefällt mir&quot;-Klicks wird nicht unterstützt
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td><p>Siehe <a href="liking.md">Verwenden von "Gefällt mir"-Klicks</a></p> </td>
+   <td><p>Siehe <a href="liking.md">Verwendung von „Gefällt mir</a></p> </td>
   </tr>
  </tbody>
 </table>
 
-* [Clientseitige Anpassungen](client-customize.md)
+* [Client-seitige Anpassungen](client-customize.md)
 
-## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
+## Grundlagen für Server-seitige {#essentials-for-server-side}
 
 * [Tally-APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tally Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
-* [Serverseitige Anpassungen](server-customize.md)
+* [Server-seitige Anpassungen](server-customize.md)
 
-### Zugreifen auf gepostete Abstimmung (UGC) {#accessing-posted-voting-ugc}
+### Zugriff auf veröffentlichte Abstimmungen (UGC) {#accessing-posted-voting-ugc}
 
-UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
+UGC sollte mit einer der Standardmethoden für die Mäßigung moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für benutzergenerierte Inhalte den programmatischen Zugriff auf benutzergenerierte Inhalte, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [Common Store](working-with-srp.md) für UGC den programmgesteuerten Zugriff auf UGC, unabhängig von der gewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
 
-**Speicherort und Format des UGC im Repository können sich ohne Warnung ändern**.
+**Speicherort und Format des benutzergenerierten Inhalts im Repository können sich ohne Warnung ändern**.
 
 Siehe:
 
-* [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
-* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
-* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
+* [Storage Resource Provider-Übersicht](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
+* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Hilfsmethoden und -Beispiele.
+* [Zugriff auf benutzergenerierten Inhalt mit SRP](accessing-ugc-with-srp.md) - Codierungs-Richtlinien.
+* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnung veralteter Hilfsmethoden zu aktuellen SRP-Hilfsmethoden.

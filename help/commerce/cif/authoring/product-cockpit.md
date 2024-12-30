@@ -1,6 +1,6 @@
 ---
 title: Produkt-Cockpit
-description: Die Arbeit mit dem Produkt-Cockpit bietet einen einheitlichen Überblick über verknüpfte Produktkataloge und zugehörige Inhalte.
+description: 'Die Arbeit mit dem Produkt-Cockpit bietet einen einheitlichen Überblick über verknüpfte Produktkataloge und zugehörige Inhalte. '
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework

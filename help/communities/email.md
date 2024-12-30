@@ -13,7 +13,7 @@ feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '796'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -24,26 +24,26 @@ AEM Communities verwendet E-Mail für:
 * [Communities-Benachrichtigungen](notifications.md)
 * [Communities-Abonnements](subscriptions.md)
 
-Standardmäßig ist die E-Mail-Funktion nicht funktionsfähig, da sie die Spezifikation eines SMTP-Servers und SMTP-Benutzers erfordert.
+Die E-Mail-Funktion ist standardmäßig nicht funktionsfähig, da sie die Angabe eines SMTP-Servers und eines SMTP-Benutzers erfordert.
 
 >[!CAUTION]
 >
->E-Mail für Benachrichtigungen und Abonnements darf nur für den [primären Herausgeber](deploy-communities.md#primary-publisher) konfiguriert werden.
+>E-Mails für Benachrichtigungen und Abonnements dürfen nur auf dem [primären Herausgeber“ konfiguriert ](deploy-communities.md#primary-publisher).
 
-## Standard-E-Mail-Dienstkonfiguration {#default-mail-service-configuration}
+## Standardkonfiguration für den E-Mail-Dienst {#default-mail-service-configuration}
 
-Der Standard-E-Mail-Dienst ist sowohl für Benachrichtigungen als auch für Abonnements erforderlich.
+Der standardmäßige E-Mail-Dienst ist sowohl für Benachrichtigungen als auch für Abonnements erforderlich.
 
-* Melden Sie sich mit Administratorrechten beim primären Herausgeber an und greifen Sie auf die [Web-Konsole](../../help/sites-deploying/configuring-osgi.md) zu:
+* Melden Sie sich beim primären Herausgeber mit Administratorberechtigung an und greifen Sie auf die [Web-Konsole](../../help/sites-deploying/configuring-osgi.md) zu:
 
    * Beispiel: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Suchen Sie den `Day CQ Mail Service`.
+* Suchen Sie die `Day CQ Mail Service`.
 * Wählen Sie das Bearbeitungssymbol aus.
 
-Dies basiert auf der Dokumentation für [Konfigurieren der E-Mail-Benachrichtigung](../../help/sites-administering/notification.md), allerdings mit einem Unterschied, dass das Feld `"From" address` den Wert *nicht* aufweist und leer gelassen werden sollte.
+Dies basiert auf der Dokumentation zum [Konfigurieren von E-Mail](../../help/sites-administering/notification.md)Benachrichtigungen. Der Unterschied besteht jedoch darin, dass das Feld `"From" address` (*)* ist und leer gelassen werden sollte.
 
-Beispiel: (nur zu Veranschaulichungszwecken mit Werten gefüllt):
+Beispiel (nur zur Veranschaulichung mit Werten ausgefüllt):
 
 ![email-config](assets/email-config.png)
 
@@ -63,160 +63,160 @@ Beispiel: (nur zu Veranschaulichungszwecken mit Werten gefüllt):
 
   *(Erforderlich)* Das Kennwort des SMTP-Benutzers.
 
-* **[!UICONTROL &quot;From&quot; address]**
+* **[!UICONTROL „Von“-Adresse]**
 
   Leer lassen
-* **[!UICONTROL SMTP verwenden SSL]**
+* **[!UICONTROL SMTP - SSL verwenden]**
 
   Wenn diese Option aktiviert ist, wird eine sichere E-Mail gesendet. Stellen Sie sicher, dass der Port auf 465 oder wie für einen SMTP-Server erforderlich eingestellt ist.
 * **[!UICONTROL E-Mail debuggen]**
 
-  Wenn diese Option aktiviert ist, ermöglicht dies die Protokollierung von SMTP-Serverinteraktionen.
+  Wenn diese Option aktiviert ist, können SMTP-Server-Interaktionen protokolliert werden.
 
 ## AEM Communities-E-Mail-Konfiguration {#aem-communities-email-configuration}
 
-Sobald der [Standard-E-Mail-Dienst](#default-mail-service-configuration) konfiguriert ist, funktionieren die beiden vorhandenen Instanzen der in der Version enthaltenen `AEM Communities Email Reply Configuration` OSGi-Konfiguration.
+Sobald der [Standard-E-](#default-mail-service-configuration)-Service) konfiguriert ist, werden die beiden vorhandenen Instanzen der `AEM Communities Email Reply Configuration` OSGi-Konfiguration, die in der Version enthalten sind, funktionsfähig.
 
-Nur die Instanz für Abonnements muss weiter konfiguriert werden, wenn E-Mail-Antworten zugelassen werden.
+Nur die Instanz für Abonnements muss weiter konfiguriert werden, wenn Antworten per E-Mail zugelassen werden.
 
-1. Instanz [E-Mail](#configuration-for-notifications) :
+1. [E-Mail](#configuration-for-notifications)-Instanz:
 
-   Bei Benachrichtigungen, die keine Antwort-E-Mail unterstützen und nicht geändert werden sollten.
+   Für Benachrichtigungen, die keine Antwort-E-Mails unterstützen und nicht geändert werden sollten.
 
-1. Instanz [Abonnements-email](#configuration-for-subscriptions) :
+1. [Subscriptions-email](#configuration-for-subscriptions)-Instanz:
 
-   Erfordert eine Konfiguration, um die Erstellung von Beiträgen aus einer Antwort-E-Mail vollständig zu aktivieren.
+   Erfordert eine Konfiguration, um das Erstellen von POST aus einer Antwort-E-Mail vollständig zu aktivieren.
 
-So greifen Sie auf die Communities-E-Mail-Konfigurationsinstanzen zu:
+So erreichen Sie die Instanzen der Communities-E-Mail-Konfiguration:
 
-* Melden Sie sich mit Administratorrechten beim primären Herausgeber an und greifen Sie auf die [Web-Konsole](../../help/sites-deploying/configuring-osgi.md) zu
+* Melden Sie sich beim primären Herausgeber mit Administratorberechtigung an und greifen Sie auf die [Web-Konsole](../../help/sites-deploying/configuring-osgi.md) zu
 
    * Beispiel: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Suchen Sie `AEM Communities Email Reply Configuration`.
 
-![email-response-config](assets/email-reply-config.png)
+![email-reply-config](assets/email-reply-config.png)
 
 ### Konfiguration für Benachrichtigungen {#configuration-for-notifications}
 
-Die Instanz der OSGi-Konfiguration `AEM Communities Email Reply Configuration` mit der E-Mail-Adresse Name ist die Funktion für Benachrichtigungen. Diese Funktion enthält keine E-Mail-Antwort.
+Die Instanz `AEM Communities Email Reply Configuration` OSGi-Konfiguration mit dem Namen email ist die Funktion forenotifications . Diese Funktion umfasst keine E-Mail-Antwort.
 
 Ändern Sie diese Konfiguration nicht.
 
-* Suchen Sie den `AEM Communities Email Reply Configuration`.
+* Suchen Sie die `AEM Communities Email Reply Configuration`.
 * Wählen Sie das Bearbeitungssymbol aus.
-* Stellen Sie sicher, dass der **Name** `email` ist.
+* Überprüfen Sie, ob **Name** `email` ist.
 
-* Stellen Sie sicher, dass **Beitrag aus Antwort-E-Mail erstellen** `unchecked` ist.
+* Stellen Sie sicher **dass „Beitrag aus Antwort-E** Mail erstellen“ `unchecked` ist.
 
-![configure-email-response](assets/configure-email-reply.png)
+![configure-email-reply](assets/configure-email-reply.png)
 
 ### Konfiguration für Abonnements {#configuration-for-subscriptions}
 
-Bei Communities-Abonnements ist es möglich, die Möglichkeit für ein Mitglied zu aktivieren oder zu deaktivieren, Inhalte zu posten, indem es auf eine E-Mail antwortet.
+Bei Communities-Abonnements ist es möglich, die Möglichkeit für ein Mitglied zu aktivieren oder zu deaktivieren, Inhalte zu veröffentlichen, indem es auf eine E-Mail antwortet.
 
-* Suchen Sie den `AEM Communities Email Reply Configuration`.
+* Suchen Sie die `AEM Communities Email Reply Configuration`.
 * Wählen Sie das Bearbeitungssymbol aus.
-* Stellen Sie sicher, dass der **Name** `subscriptions-email` ist.
+* Überprüfen Sie, ob **Name** `subscriptions-email` ist.
 
   ![configure-email-subscription](assets/configure-email-subscriptions.png)
 
 * **[!UICONTROL Name]**
 
-  *(Erforderlich)* `subscriptions-email`. Nicht bearbeiten.
+  *(erforderlich)* `subscriptions-email`. Nicht bearbeiten.
 
 * **[!UICONTROL Beitrag aus Antwort-E-Mail erstellen]**
 
-  Wenn diese Option aktiviert ist, kann der Empfänger einer Abonnement-E-Mail Inhalte durch Senden einer Antwort posten. Die Option Standard ist aktiviert.
-* **[!UICONTROL Hinzufügen der getrackten ID zur Kopfzeile]**
+  Wenn diese Option aktiviert ist, kann der Empfänger einer Abonnement-E-Mail Inhalt posten, indem er eine Antwort sendet. Die Standardeinstellung ist aktiviert.
+* **[!UICONTROL Verfolgte ID zur Kopfzeile hinzufügen]**
 
   Der Standardwert ist `Reply-To`.
 
 * **[!UICONTROL Maximale Länge des Betreffs]**
 
-  Wenn die Tracker-ID zur Betreffzeile hinzugefügt wird, ist dies die maximale Länge des Betreffs, ausgenommen die verfolgte ID, nach der sie abgeschnitten wird. Dies sollte so klein wie möglich sein, um zu verhindern, dass getrackte ID-Informationen verloren gehen. Der Standardwert lautet 200.
+  Wenn der Betreffzeile eine Tracker-ID hinzugefügt wird, ist dies die maximale Länge des Betreffs, mit Ausnahme der getrackten ID, nach der er gekürzt wird. Dieser sollte so klein wie möglich sein, um zu verhindern, dass getrackte ID-Informationen verloren gehen. Der Standardwert lautet 200.
 
-* **[!UICONTROL &quot;Antwort-auf&quot; E-Mail-Adresse]**
+* **[!UICONTROL E-Mail-Adresse „Antwort an“]**
 
-  Adresse, die als &quot;Antwort&quot;-E-Mail-Adresse verwendet wird. Der Standardwert ist `no-reply@example.com`.
+  Adresse, die als Antwortadresse verwendet wird. Der Standardwert ist `no-reply@example.com`.
 
-* **[!UICONTROL Antwort an Trennzeichen]**
+* **[!UICONTROL Trennzeichen für Antworten]**
 
-  Wenn die Tracker-ID zur Kopfzeile Antwort hinzugefügt wird, wird dieses Trennzeichen verwendet. Der Standardwert ist &quot;`+`&quot;(Pluszeichen).
+  Wenn der Antwortkopfzeile eine Tracker-ID hinzugefügt wird, wird dieses Trennzeichen verwendet. Der Standardwert ist `+` (Pluszeichen).
 
-* **[!UICONTROL Präfix der Tracker-ID im Betreff]**
+* **[!UICONTROL Tracker-ID-Präfix im Betreff]**
 
-  Wenn die Tracker-ID der Betreffzeile hinzugefügt wird, wird dieses Präfix verwendet. Der Standardwert ist `post#`.
+  Wenn die Tracker-ID zur Betreffzeile hinzugefügt wird, wird dieses Präfix verwendet. Der Standardwert ist `post#`.
 
-* **[!UICONTROL Präfix der Tracker-ID im Nachrichtentext]**
+* **[!UICONTROL Tracker-ID-Präfix im Nachrichtentext]**
 
   Wenn die Tracker-ID zum Nachrichtentext hinzugefügt wird, wird dieses Präfix verwendet. Der Standardwert ist `Please do not remove this:`.
 
-* **[!UICONTROL E-Mail als HTML]**: Ist diese Option aktiviert, wird der Inhaltstyp der E-Mail auf `"text/html;charset=utf-8"` gesetzt. Die Option Standard ist aktiviert.
+* **[!UICONTROL E-Mail als HTML]**: Wenn diese Option aktiviert ist, wird der Inhaltstyp der E-Mail als `"text/html;charset=utf-8"` festgelegt. Die Standardeinstellung ist aktiviert.
 
 * **[!UICONTROL Standardbenutzername]**
 
   Dieser Name wird für Benutzer ohne Namen verwendet. Der Standardwert ist `no-reply@example.com`.
 
-* **[!UICONTROL Stammpfad der Vorlagen]**
+* **[!UICONTROL Vorlagen-Stammpfad]**
 
-  Die E-Mail wird mithilfe einer Vorlage erstellt, die in diesem Stammverzeichnis gespeichert ist. Der Standardwert ist `/etc/community/templates/subscriptions-email`.
+  Die E-Mail wird mithilfe einer Vorlage erstellt, die unter diesem Stammpfad gespeichert ist. Der Standardwert ist `/etc/community/templates/subscriptions-email`.
 
-## Abruf-Importtool konfigurieren {#configure-polling-importer}
+## Abruf-Import-Tool konfigurieren {#configure-polling-importer}
 
-Damit die E-Mail in das Repository geladen werden kann, muss ein Abruf-Importtool konfiguriert und die Eigenschaften im Repository manuell konfiguriert werden.
+Damit die E-Mail in das Repository importiert werden kann, muss ein Abruf-Import-Tool konfiguriert und seine Eigenschaften im Repository manuell konfiguriert werden.
 
-### Neuen Abruf-Importtool hinzufügen {#add-new-polling-importer}
+### Neues Abruf-Import-Tool hinzufügen {#add-new-polling-importer}
 
-* Melden Sie sich mit Administratorrechten beim primären Herausgeber an und navigieren Sie zur Abruf-Importtool-Konsole:
+* Melden Sie sich beim primären Herausgeber mit Administratorberechtigung an und wechseln Sie zur Konsole des Abruf-Importtools:
 
   Beispiel: [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
 
-* Wählen Sie **[!UICONTROL Hinzufügen]**
+* Wählen Sie **[!UICONTROL Hinzufügen]** aus
 
-  ![olling-importer](assets/polling-importer.png)
+  ![polling-importer](assets/polling-importer.png)
 
 * **[!UICONTROL Typ]**
 
-  *(Erforderlich)* Pulldown zum Auswählen `POP3 (over SSL)`.
+  *(Erforderlich)* Pulldown zur Auswahl von `POP3 (over SSL)`.
 
 * **[!UICONTROL URL]**
 
-  *(Erforderlich)* Der ausgehende Mail-Server. Zum Beispiel: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
+  *(Erforderlich)* Der Postausgangsserver. Zum Beispiel: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
-* **[!UICONTROL Import to Path]**&amp;ast;
+* **[!UICONTROL In Pfad importieren]**&amp;ast;
 
-  *(Erforderlich)* Auf `/content/usergenerated/mailFolder/postEmails` setzen
-indem Sie zum Ordner `postEmails`navigieren und **OK** auswählen.
+  *(Erforderlich)* Auf `/content/usergenerated/mailFolder/postEmails` festgelegt
+Navigieren Sie zum Ordner `postEmails` und wählen Sie **OK** aus.
 
-* **[!UICONTROL Intervall in Sekunden aktualisieren]**
+* **[!UICONTROL Aktualisierungsintervall in Sekunden]**
 
-  *(Optional)* Der für den Standard-E-Mail-Dienst konfigurierte Mailserver kann Anforderungen hinsichtlich des Aktualisierungsintervallwerts haben. Gmail erfordert beispielsweise möglicherweise ein Intervall von `300`.
+  *(Optional)* Der für den Standard-E-Mail-Service konfigurierte E-Mail-Server kann Anforderungen an den Wert für das Aktualisierungsintervall haben. Für Gmail kann beispielsweise ein Intervall von `300` erforderlich sein.
 
 * **[!UICONTROL Anmelden]**
 
-  *(Optional)*
+  *(optional)*
 
 * **[!UICONTROL Kennwort]**
 
-  *(Optional)*
+  *(optional)*
 
 * Wählen Sie **[!UICONTROL OK]** aus.
 
-### Anpassen des Protokolls für den neuen Abruf-Importtool {#adjust-protocol-for-new-polling-importer}
+### Protokoll für neuen Abruf-Importer anpassen {#adjust-protocol-for-new-polling-importer}
 
-Nachdem die neue Abruffunktion gespeichert wurde, müssen die Eigenschaften des E-Mail-Importtools für Abonnements weiter geändert werden, um das Protokoll von `POP3` in `emailreply` zu ändern.
+Nachdem die neue Abrufkonfiguration gespeichert wurde, müssen die Eigenschaften des Abonnement-E-Mail-Importtools weiter geändert werden, um das Protokoll von `POP3` in `emailreply` zu ändern.
 
-Verwenden von [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Verwendet [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
-* Melden Sie sich mit Administratorberechtigungen beim primären Herausgeber an und navigieren Sie zu &quot;[https://&lt;Server>:&lt;Port>/crx/de/index.jsp#/etc/importers/olling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling)&quot;.
+* Melden Sie sich beim primären Herausgeber mit Administratorberechtigung an und navigieren Sie zu [https://&lt;Server>:&lt;Port>/crx/de/index.jsp#/etc/importers/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
 * Wählen Sie die neu erstellte Konfiguration aus und ändern Sie die folgenden Eigenschaften:
 
    * **feedType**: Ersetzen Sie `pop3s` durch **`emailreply`**
-   * **source**: Ersetzen Sie das Quellprotokoll `pop3s://` durch **`emailreply://`**
+   * **source**: Ersetzen Sie die `pop3s://` der Quelle durch **`emailreply://`**
 
-![Polling-protocol](assets/polling-protocol.png)
+![polling-protocol](assets/polling-protocol.png)
 
-Die roten Dreiecke geben die geänderten Eigenschaften an. Achten Sie darauf, die Änderungen zu speichern:
+Die roten Dreiecke zeigen die geänderten Eigenschaften an. Denken Sie daran, die Änderungen zu speichern:
 
 * Klicken Sie auf **[!UICONTROL Alle speichern]**.

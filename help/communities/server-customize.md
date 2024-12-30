@@ -1,6 +1,6 @@
 ---
-title: Serverseitige Anpassung
-description: Erfahren Sie, wie Sie die serverseitige Anpassung in Adobe Experience Manager Communities vornehmen.
+title: Server-seitige Anpassung
+description: Erfahren Sie, wie Sie in Adobe Experience Manager Communities Server-seitig anpassen können.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -16,47 +16,47 @@ ht-degree: 0%
 
 ---
 
-# Serverseitige Anpassung {#server-side-customization}
+# Server-seitige Anpassung {#server-side-customization}
 
-| **[⇐ Funktionsgrundlagen](essentials.md)** | **[Clientseitige Anpassung](client-customize.md)** |
+| **[⇐ Feature Essentials](essentials.md)** | **[Client-seitige ⇒](client-customize.md)** |
 |---|---|
-|   | **[SCF Handlebars Helpers](handlebars-helpers.md)** |
+|   | **[SCF Handlebars Helpers ⇒](handlebars-helpers.md)** |
 
 ## Java™-APIs {#java-apis}
 
 >[!NOTE]
 >
->Der Paketspeicherort der Communities-APIs kann sich ändern, wenn von einer Hauptversion zur nächsten aktualisiert wird.
+>Der Paketspeicherort von Communities-APIs kann sich beim Upgrade von einer Hauptversion zur nächsten ändern.
 
-### SocialComponent-Schnittstelle {#socialcomponent-interface}
+### SocialComponent-Benutzeroberfläche {#socialcomponent-interface}
 
-SocialComponents sind POJOs, die eine Ressource für eine AEM Communities-Funktion darstellen. Idealerweise stellt jede SocialComponent einen bestimmten resourceType mit offen gelegten GETters dar, die dem Client Daten bereitstellen, damit die Ressource korrekt dargestellt wird. Die gesamte Geschäfts- und Ansichtslogik ist in die SocialComponent eingeschlossen, einschließlich der Sitzungsinformationen des Site-Besuchers, sofern erforderlich.
+Social-Komponenten sind POJOs, die eine Ressource für eine AEM Communities-Funktion darstellen. Idealerweise stellt jede SocialComponent einen bestimmten resourceType mit bereitgestellten GETters dar, die dem Client Daten bereitstellen, damit die Ressource korrekt dargestellt wird. Die gesamte Geschäfts- und Ansichtslogik ist in der SocialComponent gekapselt, einschließlich der Sitzungsinformationen der Site-Besuchenden, falls erforderlich.
 
-Die Schnittstelle definiert einen grundlegenden Satz von GETters, die für die Darstellung einer Ressource erforderlich sind. Wichtig ist, dass die Schnittstelle die Methoden Map&lt;String, Object> getAsMap() und String toJSONString() vorschreibt, die zum Rendern von Handlebars-Vorlagen und zum Bereitstellen von GET JSON-Endpunkten für Ressourcen erforderlich sind.
+Die -Schnittstelle definiert einen grundlegenden Satz von GETters, die zur Darstellung einer Ressource erforderlich sind. Wichtig ist, dass die Schnittstelle die Map&lt;String, Object> getAsMap()- und String toJSONString()-Methoden festlegt, die zum Rendern von Handlebars-Vorlagen und zum Offenlegen von GET-JSON-Endpunkten für Ressourcen erforderlich sind.
 
-Alle SocialComponent-Klassen müssen die Schnittstelle `com.adobe.cq.social.scf.SocialComponent` implementieren
+Alle SocialComponent-Klassen müssen die `com.adobe.cq.social.scf.SocialComponent` implementieren
 
 ### SocialCollectionComponent-Schnittstelle {#socialcollectioncomponent-interface}
 
-Die Schnittstelle SocialCollectionComponent erweitert die Schnittstelle SocialComponent , um Ressourcen besser darzustellen, die Sammlungen anderer Ressourcen sind.
+Die SocialCollectionComponent-Schnittstelle erweitert die SocialComponent-Schnittstelle, um Ressourcen besser darzustellen, die Auflistungen anderer Ressourcen sind.
 
 Alle SocialCollectionComponent-Klassen müssen die Schnittstelle com.adobe.cq.social.scf.SocialCollectionComponent implementieren
 
 ### SocialComponentFactory-Schnittstelle {#socialcomponentfactory-interface}
 
-Eine SocialComponentFactory (Factory) registriert eine SocialComponent mit dem Framework. Die Factory bietet eine Möglichkeit, dem Framework mitzuteilen, welche SocialComponents für einen bestimmten resourceType verfügbar sind, und seine Prioritätsstufe zu geben, wenn mehrere SocialComponents identifiziert werden.
+Eine SocialComponentFactory (Factory) registriert eine SocialComponent im Framework. Die Factory bietet eine Möglichkeit, dem Framework mitzuteilen, welche Social-Komponenten für einen bestimmten resourceType verfügbar sind, und deren Prioritätsreihenfolge, wenn mehrere Social-Komponenten identifiziert werden.
 
-Eine SocialComponentFactory ist für das Erstellen einer Instanz der ausgewählten SocialComponent verantwortlich, die es ermöglicht, alle Abhängigkeiten, die von der SocialComponent benötigt werden, mithilfe von DI-Verfahren aus der Factory einzufügen.
+Eine SocialComponentFactory ist für die Erstellung einer Instanz der ausgewählten SocialComponent verantwortlich, sodass alle von der SocialComponent benötigten Abhängigkeiten von der Factory mithilfe von ID-Praktiken eingefügt werden können.
 
 Eine SocialComponentFactory ist ein OSGi-Dienst und hat Zugriff auf andere OSGi-Dienste, die über einen Konstruktor an die SocialComponent übergeben werden können.
 
 Alle SocialComponentFactory-Klassen müssen die Schnittstelle `com.adobe.cq.social.scf.SocialComponentFactory` implementieren
 
-Eine Implementierung der Methode SocialComponentFactory.getPriority() sollte den höchsten Wert für die Factory zurückgeben, die für den angegebenen resourceType verwendet werden soll, wie von getResourceType() zurückgegeben.
+Eine Implementierung der Methode SocialComponentFactory.getPriority() sollte den höchsten Wert für die Factory zurückgeben, die für den angegebenen resourceType verwendet werden soll, wie er von getResourceType() zurückgegeben wird.
 
 ### SocialComponentFactoryManager-Schnittstelle {#socialcomponentfactorymanager-interface}
 
-Der SocialComponentFactoryManager (manager) verwaltet alle im Framework registrierten SocialComponents und ist für die Auswahl der SocialComponentFactory für eine bestimmte Ressource (resourceType) verantwortlich. Wenn für einen bestimmten resourceType keine Fabriken registriert sind, gibt der Manager eine Factory mit dem nächsten Supertyp für die jeweilige Ressource zurück.
+Der SocialComponentFactoryManager (Manager) verwaltet alle beim Framework registrierten SocialComponents und ist für die Auswahl der für eine bestimmte Ressource (resourceType) zu verwendenden SocialComponentFactory verantwortlich. Wenn für einen bestimmten resourceType keine Factories registriert sind, gibt der Manager eine Factory mit dem nächsten Supertyp für die angegebene Ressource zurück.
 
 Ein SocialComponentFactoryManager ist ein OSGi-Dienst und hat Zugriff auf andere OSGi-Dienste, die über einen Konstruktor an die SocialComponent übergeben werden können.
 
@@ -66,65 +66,65 @@ Ein Handle für den OSGi-Dienst wird durch Aufrufen von `com.adobe.cq.social.scf
 
 #### PostOperation-Klasse {#postoperation-class}
 
-Die HTTP-API-POST-Endpunkte sind PostOperation-Klassen, die durch Implementierung der `SlingPostOperation` -Schnittstelle (package `org.apache.sling.servlets.post`) definiert werden.
+Die Endpunkte der HTTP-API-POST sind PostOperation-Klassen, die durch die Implementierung der `SlingPostOperation`-Schnittstelle (Package `org.apache.sling.servlets.post`) definiert werden.
 
-Die Implementierung des Endpunkts `PostOperation` setzt `sling.post.operation` auf einen Wert, auf den der Vorgang reagiert. Alle POST-Anfragen mit einem:operation -Parameter, der auf diesen Wert gesetzt ist, werden dieser Implementierungsklasse zugewiesen.
+Die `PostOperation`-Endpunktimplementierung setzt `sling.post.operation` auf einen Wert, auf den der Vorgang antwortet. Alle POST-Anforderungen, für die ein:operation-Parameter auf diesen Wert festgelegt ist, werden an diese Implementierungsklasse delegiert.
 
 Die `PostOperation` ruft die `SocialOperation` auf, die die für den Vorgang erforderlichen Aktionen ausführt.
 
-Die `PostOperation` erhält das Ergebnis von der `SocialOperation` und gibt die entsprechende Antwort an den Client zurück.
+Der `PostOperation` empfängt das Ergebnis vom `SocialOperation` und gibt die entsprechende Antwort an den Client zurück.
 
 #### SocialOperation-Klasse {#socialoperation-class}
 
-Jeder `SocialOperation` -Endpunkt erweitert die Klasse AbstractSocialOperation und überschreibt die Methode `performOperation()`. Diese Methode führt alle Aktionen aus, die zum Abschließen des Vorgangs und zum Zurückgeben eines `SocialOperationResult` erforderlich sind, sonst wird ein `OperationException` ausgegeben. In diesem Fall wird anstelle des normalen JSON-Antwort- oder Erfolgs-HTTP-Status-Codes ein HTTP-Fehlerstatus mit einer Nachricht zurückgegeben, sofern verfügbar.
+Jeder `SocialOperation` Endpunkt erweitert die AbstractSocialOperation-Klasse und überschreibt die `performOperation()`. Diese Methode führt alle Aktionen aus, die zum Abschließen des Vorgangs und Zurückgeben eines `SocialOperationResult` erforderlich sind. Andernfalls wird ein `OperationException` ausgelöst. In diesem Fall wird anstelle der normalen JSON-Antwort oder des Erfolgs-HTTP-Status-Codes ein HTTP-Fehlerstatus mit einer Meldung zurückgegeben, sofern verfügbar.
 
 Die Erweiterung von `AbstractSocialOperation` ermöglicht die Wiederverwendung von `SocialComponents` zum Senden von JSON-Antworten.
 
 #### SocialOperationResult-Klasse {#socialoperationresult-class}
 
-Die `SocialOperationResult` -Klasse wird als Ergebnis des `SocialOperation` zurückgegeben und besteht aus einer `SocialComponent`-, HTTP-Status-Code- und HTTP-Statusmeldung.
+Die `SocialOperationResult`-Klasse wird als Ergebnis der `SocialOperation` zurückgegeben und besteht aus einer `SocialComponent`, einem HTTP-Status-Code und einer HTTP-Statusmeldung.
 
-Der `SocialComponent` stellt die Ressource dar, die vom Vorgang betroffen war.
+Die `SocialComponent` stellt die Ressource dar, die von dem Vorgang betroffen war.
 
-Bei einem Vorgang vom Typ Erstellen steht der im `SocialOperationResult` enthaltene `SocialComponent` für die erstellte Ressource und bei einem Vorgang vom Typ Aktualisieren für die Ressource, die durch den Vorgang verändert wurde. Für einen Löschvorgang wird kein `SocialComponent` zurückgegeben.
+Bei einem Erstellungsvorgang stellt der im `SocialOperationResult` enthaltene `SocialComponent` die erstellte Ressource dar und bei einem Aktualisierungsvorgang die Ressource, die durch den Vorgang geändert wurde. Für einen Löschvorgang wird kein `SocialComponent` zurückgegeben.
 
-Folgende Erfolgs-HTTP-Status-Codes werden verwendet:
+Die verwendeten HTTP-Erfolgs-Status-Codes sind:
 
-* 201 für Vorgänge zum Erstellen
+* 201 für Vorgänge vom Typ Erstellen
 * 200 für Aktualisierungsvorgänge
 * 204 für Löschvorgänge
 
 #### OperationException-Klasse {#operationexception-class}
 
-Beim Ausführen eines Vorgangs wird ein `OperationExcepton` ausgegeben, wenn die Anfrage ungültig ist oder ein anderer Fehler auftritt. Zum Beispiel interne Fehler, ungültige Parameterwerte oder falsche Berechtigungen. Eine `OperationException` besteht aus einem HTTP-Statuscode und einer Fehlermeldung, die als Antwort auf die `PostOperatoin` an den Client zurückgegeben werden.
+Beim Ausführen eines Vorgangs wird ein `OperationExcepton` ausgelöst, wenn die Anfrage ungültig ist oder ein anderer Fehler auftritt. Beispielsweise interne Fehler, ungültige Parameterwerte oder falsche Berechtigungen. Ein `OperationException` besteht aus einem HTTP-Status-Code und einer Fehlermeldung, die als Antwort auf die `PostOperatoin` an den Client zurückgegeben werden.
 
 #### OperationService-Klasse {#operationservice-class}
 
-Das Social-Komponenten-Framework empfiehlt, dass die für die Ausführung des Vorgangs verantwortliche Geschäftslogik nicht innerhalb der `SocialOperation` -Klasse implementiert, sondern stattdessen an einen OSGi-Dienst delegiert wird. Durch die Verwendung eines OSGi-Diensts für Geschäftslogik kann ein `SocialComponent`, auf das ein `SocialOperation` -Endpunkt reagiert, in anderen Code integriert werden und unterschiedliche Geschäftslogik angewendet werden.
+Im Social Component Framework wird empfohlen, die für die Durchführung des Vorgangs verantwortliche Geschäftslogik nicht innerhalb der `SocialOperation`-Klasse zu implementieren, sondern stattdessen an einen OSGi-Dienst zu delegieren. Durch die Verwendung eines OSGi-Dienstes für die Geschäftslogik kann ein `SocialComponent`, auf den ein `SocialOperation`-Endpunkt einwirkt, in anderen Code integriert werden und eine andere Geschäftslogik angewendet werden.
 
-Alle `OperationService` Klassen erweitern `AbstractOperationService`, wodurch zusätzliche Erweiterungen möglich sind, die in den ausgeführten Vorgang eingebunden werden können. Jeder Vorgang im Dienst wird durch eine `SocialOperation` -Klasse dargestellt. Die `OperationExtensions`-Klasse kann während der Vorgangsausführung durch Aufruf der Methoden aufgerufen werden
+Alle `OperationService` Klassen erweitern `AbstractOperationService` und ermöglichen so zusätzliche Erweiterungen, die in den ausgeführten Vorgang eingebunden werden können. Jeder Vorgang im Dienst wird durch eine `SocialOperation`-Klasse dargestellt. Die `OperationExtensions`-Klasse kann während der Ausführung des Vorgangs durch Aufruf der Methoden aufgerufen werden
 
 * `performBeforeActions()`
 
-  Ermöglicht Vorab-Prüfungen/Vorab-Bearbeitung und Überprüfungen
+  Ermöglicht Vorabprüfungen/Vorab-Bearbeitung und Validierungen
 * `performAfterActions()`
 
   Ermöglicht die weitere Bearbeitung von Ressourcen oder das Aufrufen benutzerdefinierter Ereignisse, Workflows usw.
 
 #### OperationExtension-Klasse {#operationextension-class}
 
-Die `OperationExtension` -Klassen sind benutzerdefinierte Code-Abschnitte, die in einen Vorgang eingefügt werden können, der eine Anpassung der Vorgänge an die Geschäftsanforderungen ermöglicht. Die Verbraucher der Komponente können der Komponente dynamisch und schrittweise Funktionen hinzufügen. Das Erweiterungs-/Erweiterungs-Muster ermöglicht es Entwicklern, sich ausschließlich auf die Erweiterungen selbst zu konzentrieren, und macht das Kopieren und Überschreiben ganzer Vorgänge und Komponenten überflüssig.
+Die `OperationExtension` Klassen sind benutzerdefinierte Code-Abschnitte, die in einen Vorgang eingefügt werden können, um die Anpassung von Vorgängen an Geschäftsanforderungen zu ermöglichen. Die Benutzer der Komponente können der Komponente dynamisch und inkrementell Funktionen hinzufügen. Das Erweiterungs-/Hook-Muster ermöglicht es Entwicklerinnen und Entwicklern, sich ausschließlich auf die Erweiterungen selbst zu konzentrieren, und macht das Kopieren und Überschreiben ganzer Vorgänge und Komponenten überflüssig.
 
 ## Beispielcode {#sample-code}
 
-Beispielcode ist im Repository [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) verfügbar. Suchen Sie nach Projekten mit dem Präfix `aem-communities` oder `aem-scf`.
+Beispielcode ist im Repository [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) verfügbar. Nach Projekten mit dem Präfix `aem-communities` oder `aem-scf` suchen.
 
 ## Best Practices {#best-practices}
 
-Im Abschnitt [Coding Guidelines](code-guide.md) finden Sie verschiedene Codierungsrichtlinien und Best Practices für AEM Communities-Entwickler.
+Im Abschnitt [Kodierungsrichtlinien](code-guide.md) finden Sie verschiedene Kodierungsrichtlinien und Best Practices für AEM Communities-Entwickler.
 
-Weitere Informationen zum Zugriff auf benutzergenerierte Inhalte finden Sie unter [SRP (Storage Resource Provider) für UGC](srp.md) .
+Informationen [ Zugriff auf benutzergenerierte Inhalte finden Sie unter ](srp.md)Speicherressourcenanbieter (SRP) für benutzergenerierte Inhalte).
 
-| **[⇐ Funktionsgrundlagen](essentials.md)** | **[Clientseitige Anpassung](client-customize.md)** |
+| **[⇐ Feature Essentials](essentials.md)** | **[Client-seitige ⇒](client-customize.md)** |
 |---|---|
-|   | **[SCF Handlebars Helpers](handlebars-helpers.md)** |
+|   | **[SCF Handlebars Helpers ⇒](handlebars-helpers.md)** |

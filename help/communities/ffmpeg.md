@@ -20,47 +20,47 @@ ht-degree: 1%
 
 ## Überblick {#overview}
 
-FFmpeg ist eine Lösung zum Konvertieren und Streaming von Audio und Video und wird bei Installation für die ordnungsgemäße Transkodierung von [Video-Assets](../../help/sites-authoring/default-components-foundation.md#video) verwendet.
+FFmpeg ist eine Lösung zum Konvertieren und Streamen von Audio und Video und wird, wenn installiert, für die korrekte Transkodierung von [Video-Assets](../../help/sites-authoring/default-components-foundation.md#video) verwendet.
 
 ## Installieren von FFmpeg {#installing-ffmpeg}
 
-FFmpeg sollte auf den Servern installiert sein, auf denen die AEM *author* -Instanz(en) gehostet wird.
+FFmpeg sollte auf den Servern installiert sein, die die AEM-(*)*.
 
-1. Wechseln Sie zu [https://www.ffmpeg.org](https://www.ffmpeg.org/).
+1. Navigieren Sie zu [https://www.ffmpeg.org](https://www.ffmpeg.org/).
 1. Laden Sie die neueste Version von FFmpeg für Ihre spezifische Umgebung (Macintosh, Windows oder Linux) herunter.
 
-   * Es ist wichtig, FFmpeg aufgrund von Sicherheitslücken in älteren Versionen auf dem neuesten Stand zu halten.
+   * Es ist wichtig, FFmpeg aufgrund von Sicherheitslücken in älteren Versionen aktuell zu halten.
 
-1. Installieren Sie FFmpeg anhand der Anweisungen für das Betriebssystem.
+1. Installieren Sie FFmpeg wie folgt für das Betriebssystem.
 
-1. Stellen Sie sicher, dass die ausführbare FFmpeg-Datei in Ihrem Systempfad festgelegt ist.
+1. Stellen Sie sicher, dass die ausführbare Datei FFmpeg in Ihrem Systempfad festgelegt ist.
 
-   Sie sollten in der Lage sein, FFmpeg aus einem beliebigen Verzeichnis in Ihrem System auszuführen.
+   Sie sollten FFmpeg von einem beliebigen Verzeichnis in Ihrem System aus ausführen können.
 
    * Zum Beispiel: `ffmpeg -version`.
 
-## FFmpeg Transcoding Service konfigurieren {#configure-ffmpeg-transcoding-service}
+## Konfigurieren des FFmpeg-Transkodierungs-Service {#configure-ffmpeg-transcoding-service}
 
-Standardmäßig werden bei installiertem FFmpeg mehrere Ausgabedarstellungen gemäß der Workflow-Definition für [!UICONTROL DAM-Update-Asset] konfiguriert (Transkodierungen).
+Standardmäßig werden bei der Installation von FFmpeg mehrere Ausgabedarstellungen (Transkodierungen) gemäß der Workflow-Definition [!UICONTROL DAM Update Asset] konfiguriert.
 
-Da die Transkodierungen CPU-intensiv sind, wird empfohlen, die Liste der Zielausgabeformate zu ändern. In den meisten Fällen ist eine Transkodierung nicht erforderlich.
+Da die Transkodierungen CPU-intensiv sind, wird empfohlen, die Liste der Ziel-Ausgabedarstellungen zu ändern. In den meisten Fällen ist keine Transkodierung erforderlich.
 
-So ändern Sie den Workflow [!UICONTROL DAM-Update-Asset] und deaktivieren Sie in diesem Beispiel die Transkodierung:
+So ändern Sie den [!UICONTROL DAM Update Asset]-Workflow und deaktivieren in diesem Beispiel die Transkodierung:
 
 * Melden Sie sich mit Administratorrechten bei der Autoreninstanz an.
-* Navigieren Sie von der globalen Navigation zu &quot;**[!UICONTROL Tools]**&quot;> &quot;**[!UICONTROL Workflow]**&quot;> &quot;**[!UICONTROL Modelle]**&quot;.
-* Suchen Sie nach **[!UICONTROL DAM Update Asset]**.
-* Doppelklicken Sie auf , um den Workflow zur Bearbeitung in der klassischen Benutzeroberfläche zu öffnen.
+* Navigieren Sie in der globalen Navigation zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
+* Suchen Sie **[!UICONTROL DAM-Update-Asset]**.
+* Doppelklicken Sie, um den Workflow zur Bearbeitung in der klassischen Benutzeroberfläche zu öffnen.
 
-  Resultierender Speicherort: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
+  Ergebnisspeicherort: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
-* Doppelklicken Sie auf den Schritt **[!UICONTROL FFmpeg-Transkodierung]** , um auf das Dialogfeld &quot;Schritteigenschaften&quot;zuzugreifen.
-* Auf der Registerkarte **[!UICONTROL Prozess]** :
+* Doppelklicken Sie auf den Schritt **[!UICONTROL FFmpeg]**, um auf das Dialogfeld Schritteigenschaften zuzugreifen.
+* Auf der Registerkarte **[!UICONTROL Prozess]**:
 
-   * **[!UICONTROL Argumente]**: Löschen Sie alle Einträge, um die Transkodierung von Standardwerten zu deaktivieren: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
+   * **[!UICONTROL Argumente]**: Alle Einträge löschen, um die Transkodierung zu deaktivieren Standardwerte: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
   ![configure-ffmpeg](assets/configure-ffmpeg.png)
 
-* Wählen Sie **[!UICONTROL OK]** aus, um das Dialogfeld `Step Properties` zu schließen.
+* Klicken Sie **[!UICONTROL OK]**, um das Dialogfeld &quot;`Step Properties`&quot; zu schließen.
 
-* Wählen Sie **[!UICONTROL Speichern]** aus, um den Workflow `DAM Update Asset` zu speichern.
+* Wählen Sie **[!UICONTROL Speichern]**, um den `DAM Update Asset` Workflow zu speichern.

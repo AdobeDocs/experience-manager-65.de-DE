@@ -1,6 +1,6 @@
 ---
-title: Verwenden von Bewertungen
-description: Erfahren Sie, wie Sie eine Bewertungskomponente zu einer Seite hinzufügen, über die angemeldete Community-Mitglieder ihre Meinung durch Inhaltsbewertung äußern können.
+title: Verwendung von Bewertungen
+description: Erfahren Sie, wie Sie einer Seite eine Bewertungskomponente hinzufügen, mit der angemeldete Community-Mitglieder ihre Meinung durch Bewertung von Inhalten ausdrücken können.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -16,23 +16,23 @@ ht-degree: 1%
 
 ---
 
-# Verwenden von Bewertungen {#using-ratings}
+# Verwendung von Bewertungen {#using-ratings}
 
-Die Komponente `Rating` wird eigenständig oder mit anderen Communities-Funktionen verwendet. Diese Komponente ermöglicht es angemeldeten Community-Mitgliedern, ihre Meinung durch Bewertung von Inhalten zu äußern.
+Die `Rating`-Komponente wird eigenständig oder mit anderen Communities-Funktionen verwendet. Diese Komponente ermöglicht es angemeldeten Community-Mitgliedern, ihre Meinungen durch die Bewertung von Inhalten auszudrücken.
 
 ## Hinzufügen einer Bewertung zu einer Seite {#adding-a-rating-to-a-page}
 
-Um eine `Rating` -Komponente im Autorenmodus zu einer Seite hinzuzufügen, suchen Sie die Komponente `Communities / Rating` und ziehen Sie sie auf eine Seite, z. B. eine Position relativ zur Funktion, die Mitglieder bewerten sollen.
+Um einer Seite im Autorenmodus eine `Rating` Komponente hinzuzufügen, suchen Sie die `Communities / Rating` und ziehen Sie sie an die gewünschte Position auf der Seite, z. B. relativ zur Funktion, die Mitglieder bewerten sollen.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
+Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [ erforderlichen clientseitigen Bibliotheken](rating-basics.md#essentials-for-client-side) enthalten sind, wird die Komponente `Rating` so angezeigt.
+Wenn die [erforderlichen Client-seitigen ](rating-basics.md#essentials-for-client-side) enthalten sind, wird die `Rating` Komponente wie folgt angezeigt.
 
 ![rating](assets/rating.png)
 
-## Konfigurieren der Bewertung {#configuring-rating}
+## Rating konfigurieren {#configuring-rating}
 
-Wählen Sie die platzierte Komponente `Rating` aus, damit Sie auf das Symbol `Configure` zugreifen und dieses auswählen können, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte `Rating` aus, um auf das Symbol `Configure` zuzugreifen, das das Dialogfeld „Bearbeiten“ öffnet.
 
 ![configure-new](assets/configure-new.png)
 
@@ -40,19 +40,19 @@ Auf der Registerkarte **[!UICONTROL Texte und Beschriftungen]** geben Sie die in
 
 ![tallyname](assets/tallyname.png)
 
-**[!UICONTROL Tally Name]**
+**[!UICONTROL Tally-Name]**
 (*Erforderlich*) Ein einfacher Name für die `Rating`, der diese Instanz eindeutig identifiziert. Muss ein gültiger Knotenname für das Repository sein.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
 ### Mitglieder {#members}
 
-Pro Mitglied ist nur eine Bewertung zulässig. Das Mitglied kann sein Rating jederzeit ändern.
+Pro Mitglied ist nur eine Bewertung zulässig. Das Mitglied kann seine Bewertung jederzeit ändern.
 
 ### Anonym {#anonymous}
 
-Das anonyme Posten einer Bewertung wird nicht unterstützt. Besucher der Site müssen sich registrieren (Mitglied werden) und sich anmelden, um teilnehmen zu können.
+Die anonyme Veröffentlichung einer Bewertung wird nicht unterstützt. Besucher der Website müssen sich registrieren (Mitglied werden) und sich anmelden, um teilzunehmen.
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Entwickler-Seite [Bewertungsgrundlagen](rating-basics.md) .
+Weitere Informationen finden Sie auf der Seite [Rating Essentials](rating-basics.md) für Entwickler.

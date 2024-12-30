@@ -12,7 +12,7 @@ role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '11203'
 ht-degree: 100%
 
@@ -600,7 +600,7 @@ Mit der Funktion für mehrfache Untertitel und Audiospuren in Dynamic Media kön
 
 Für das Hinzufügen von mehrfachen Untertiteln und Audiospuren zu Ihrem primären Video sind unter anderem die folgenden Anwendungsfälle zu berücksichtigen:
 
-| Typ | Nutzungsszenario |
+| Typ | Anwendungsfall |
 |--- |--- |
 | **Untertitel** | Unterstützung mehrerer Sprachen |
 |  | Beschreibender Text für Barrierefreiheit |
@@ -741,7 +741,7 @@ Alle hochgeladenen Audiospurdateien können jedoch als Standardaudio festgelegt 
 
 >[!NOTE]
 >
->Die Standardaudio-Wiedergabe kann auch von den Einstellungen in den folgenden Browsern abhängen:
+>Die Standardaudiowiedergabe kann auch von den Einstellungen in den folgenden Browsern abhängen:
 >
 >* Chrome: Es wird das im Video festgelegte Standardaudio wiedergegeben.
 >* Safari: Wenn die Standardsprache in Safari festgelegt ist, werden Audioinhalte mit der festgelegten Standardsprache wiedergegeben, sofern mit dem Video-Manifest verfügbar. Andernfalls wird das Standardaudio wiedergegeben, das als Teil der Eigenschaften eines Videos festgelegt ist.
@@ -958,7 +958,7 @@ Siehe [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
 
 1. Speichern Sie die `.vtt`-Datei mit UTF-8-Kodierung, um Problemen mit der Zeichendarstellung im Text der Kapiteltitel vorzubeugen.
 
-   Grundsätzlich sollte die Kapitel-VTT-Datei denselben Namen haben wie die Videodatei und über den Dateinamenanhang „chapters“ verfügen. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen Web-Content-Management-System zu automatisieren.
+   Grundsätzlich sollte die VTT-Datei der Kapitel denselben Namen haben wie die Videodatei und über den Dateinamenanhang „chapters“ verfügen. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen Web-Content-Management-System zu automatisieren.
 1. Laden Sie die WebVTT-Kapiteldatei in Experience Manager hoch.
 
    Siehe [Hochladen von Assets](/help/assets/manage-assets.md#uploading-assets).

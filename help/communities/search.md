@@ -18,82 +18,82 @@ ht-degree: 1%
 
 # Suchfunktion {#search-feature}
 
-Die Suchfunktion kann mit verschiedenen anderen Funktionen wie Foren verwendet werden, um die Suche nach Inhalten zu ermöglichen.
+Die Suchfunktion arbeitet mit verschiedenen anderen Funktionen wie Foren zusammen, um die Suche nach Inhalten zu ermöglichen.
 
-Beim Hinzufügen der Möglichkeit, Beiträge von Community-Mitgliedern zu durchsuchen, die als benutzergenerierte Inhalte (UGC) bezeichnet werden, gibt es zwei Komponenten: [Suche](#search) und [Suchergebnisse](#search-results).
+Beim Hinzufügen der Möglichkeit, Beiträge zu durchsuchen, die von Community-Mitgliedern eingegeben wurden (als benutzergenerierte Inhalte (User Generated Content, UGC) bezeichnet), gibt es zwei Komponenten: [Suche](#search) und [Suchergebnisse](#search-results).
 
-Die Seite, die die Komponente `Search Results` enthält, unterstützt sowohl die Suche als auch die Anzeige der Ergebnisse.
+Die Seite, die die `Search Results`-Komponente enthält, unterstützt sowohl die Suche als auch die Anzeige von Ergebnissen.
 
-Die Seite, die die Komponente `Search` enthält, bietet einen Ort zum Starten einer Suche mit Ergebnissen, die auf der Seite `Search Results` angezeigt werden.
+Die Seite, die die `Search` enthält, bietet einen Ort, an dem Sie eine Suche starten können, bei der die Ergebnisse auf der `Search Results` Seite angezeigt werden.
 
-Die Suchfunktion kann mit jeder anderen Funktion verwendet werden, die es Site-Besuchern und Mitgliedern ermöglicht, Inhalte anzuzeigen.
+Die Suchfunktion kann mit jeder anderen Funktion verwendet werden, die es Besuchern und Mitgliedern der Site ermöglicht, Inhalte anzuzeigen.
 
 ## Suchen {#search-features}
 
 ### Hinzufügen einer Suche zu einer Seite {#add-search-to-a-page}
 
-Um eine `Search` -Komponente im Autorenmodus zu einer Seite hinzuzufügen, suchen Sie im Komponenten-Browser nach `Communities / Search` und ziehen Sie sie an die gewünschte Stelle auf einer Seite. Für die Verwendung von `Search` ist eine zweite Seite für die `Search Results.` erforderlich.
+Um einer Seite im Autorenmodus eine `Search` Komponente hinzuzufügen, verwenden Sie den Komponenten-Browser, um `Communities / Search` zu suchen und sie auf einer Seite abzulegen. Die Verwendung von `Search` erfordert eine zweite Seite für die `Search Results.`
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
+Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die erforderliche clientseitige Bibliothek `cq.social.hbs.search` enthalten ist, wird die Komponente `Search` so angezeigt.
+Wenn die erforderliche Client-seitige Bibliothek `cq.social.hbs.search` enthalten ist, wird die `Search` Komponente wie folgt angezeigt.
 
 ![add-search](assets/add-search.png)
 
 ### Konfigurieren der hinzugefügten Suche {#configure-the-added-search}
 
-Wählen Sie die platzierte Komponente `Search` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte `Search` aus, auf die Sie zugreifen möchten, und wählen Sie das `Configure` aus, das das Dialogfeld „Bearbeiten“ öffnet.
 
-![config](assets/configure-new.png)
+![Konfigurieren](assets/configure-new.png)
 
-Geben Sie auf der Registerkarte **[!UICONTROL Sucheinstellungen]** an, welche Pfade gesucht werden sollen, wenn ein Besucher eine Abfrage eingibt.
+Geben **[!UICONTROL auf der Registerkarte]** Sucheinstellungen“ an, welche Pfade durchsucht werden sollen, wenn eine Abfrage von einem Besucher eingegeben wird.
 
 ![search-settings](assets/search-settings.png)
 
 * **[!UICONTROL Suchpfade]**
-Durch Hinzufügen von Suchpfaden mit der Schaltfläche Element hinzufügen ist die Inhaltssuche eingeschränkt. Um beispielsweise die Suche auf ein bestimmtes Forum zu beschränken, wählen Sie eine Forumskomponente aus, die auf einer Seite platziert wird:
+Durch Hinzufügen von Suchpfaden mit der Schaltfläche Element hinzufügen wird die Inhaltssuche eingeschränkt. Um die Suche beispielsweise auf ein bestimmtes Forum zu beschränken, wählen Sie eine Forenkomponente aus, die in einer Seite platziert wird:
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL Ergebnisseite]**
-Die Ergebnisse werden auf einer separaten Seite angezeigt, die über den Browser angegeben wird, um eine Seite auszuwählen, die die Komponente `Search Results` enthält.
+Die Ergebnisse werden auf einer separaten Seite angezeigt, die mithilfe des Browsers angegeben wird, um eine Seite auszuwählen, die die `Search Results` enthält.
 
 ## Suchergebnisse {#search-results}
 
 ### Suchergebnisse zu einer Seite hinzufügen {#add-search-results-to-a-page}
 
-Möchten Sie im Autorenmodus einer Seite die Komponente `Search Results` hinzufügen, suchen Sie mit dem Komponenten-Browser nach
+Um einer Seite im Autorenmodus eine `Search Results` Komponente hinzuzufügen, suchen Sie im Komponenten-Browser nach
 
 * `Communities / Search Results`
 
-und ziehen Sie sie an die gewünschte Stelle auf einer Seite. Im Gegensatz zur Suchkomponente ist keine zweite Seite erforderlich, da die Ergebnisse auf derselben Seite angezeigt werden.
+und ziehen Sie sie auf eine Seite. Im Gegensatz zur Such-Komponente ist keine zweite Seite erforderlich, da die Ergebnisse auf derselben Seite angezeigt werden.
 
-Wenn Sie die Suche an einer anderen Stelle auf der Website verwenden, kann diese eine Seite mit `Search Results` so konfiguriert werden, dass sie die `Result Page` für eine oder alle Instanzen von `Search` ist.
+Wenn Sie die Suche an einer anderen Stelle auf der Website verwenden, kann diese eine Seite mit `Search Results` so konfiguriert werden, dass sie die `Result Page` für alle oder alle Instanzen von `Search` ist.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
+Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die erforderliche clientseitige Bibliothek `cq.social.hbs.search` enthalten ist, wird die Komponente `Search Result` so angezeigt:
+Wenn die erforderliche Client-seitige Bibliothek `cq.social.hbs.search` enthalten ist, wird die `Search Result` Komponente wie folgt angezeigt:
 
 ![search-result](assets/search-result1.png)
 
 ### Konfigurieren des hinzugefügten Suchergebnisses {#configure-the-added-search-result}
 
-Wählen Sie die platzierte Komponente `Search Results` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte `Search Results` aus, auf die Sie zugreifen möchten, und wählen Sie das `Configure` aus, das das Dialogfeld „Bearbeiten“ öffnet.
 
-![configure](assets/configure-new.png)
+![Konfigurieren](assets/configure-new.png)
 
-Auf der Registerkarte **[!UICONTROL Suchergebniseinstellungen]** können Sie festlegen, welche Pfade bei der Suche einbezogen werden sollen, wenn ein Besucher eine Abfrage eingibt.
+Auf der Registerkarte **[!UICONTROL Suchergebniseinstellungen]** können Sie angeben, welche Pfade in die Suche einbezogen werden sollen, wenn eine Abfrage von einem Besucher eingegeben wird.
 
 ![search-result-settings](assets/search-result-settings.png)
 
 * **[!UICONTROL Suchergebnisse pro Seite]**
 
-  Definieren Sie die Anzahl der Themen/Beiträge, die pro Seite angezeigt werden. Der Standardwert ist 10.
+  Anzahl der angezeigten Themen/Beiträge pro Seite definieren. Der Standardwert ist 10.
 
 * **[!UICONTROL Suchpfade]**
 
-  Durch Hinzufügen von Suchpfaden mit der Schaltfläche Element hinzufügen ist die Inhaltssuche eingeschränkt.
+  Durch Hinzufügen von Suchpfaden mit der Schaltfläche Element hinzufügen wird die Inhaltssuche eingeschränkt.
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Entwickler-Seite [Suchgrundlagen](search-implementation.md) .
+Weitere Informationen finden Sie auf der Seite [Search Essentials](search-implementation.md) für Entwickler.

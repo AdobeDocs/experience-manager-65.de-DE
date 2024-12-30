@@ -1,6 +1,6 @@
 ---
 title: MySQL-Konfiguration für DSRP
-description: Herstellen einer Verbindung zum MySQL-Server und Einrichten der UGC-Datenbank
+description: Verbindung zum MySQL-Server und Einrichtung der UGC-Datenbank
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -18,33 +18,33 @@ ht-degree: 1%
 
 # MySQL-Konfiguration für DSRP {#mysql-configuration-for-dsrp}
 
-MySQL ist eine relationale Datenbank, in der benutzergenerierte Inhalte (UGC) gespeichert werden können.
+MySQL ist eine relationale Datenbank, die zum Speichern von benutzergenerierten Inhalten (User Generated Content, UGC) verwendet werden kann.
 
 In diesen Anweisungen wird beschrieben, wie Sie eine Verbindung zum MySQL-Server herstellen und die UGC-Datenbank einrichten.
 
 ## Voraussetzungen {#requirements}
 
-* [Neueste Communities Feature Pack](deploy-communities.md#latestfeaturepack)
+* [Neuestes Communities Feature Pack](deploy-communities.md#latestfeaturepack)
 * [JDBC-Treiber für MySQL](deploy-communities.md#jdbc-driver-for-mysql)
 * Eine relationale Datenbank:
 
-   * [MySQL Server](https://dev.mysql.com/downloads/mysql/) Community-Server, Version 5.6 oder neuer
+   * [MySQL Server](https://dev.mysql.com/downloads/mysql/) Community Server Version 5.6 oder höher
 
-      * Kann auf demselben Host wie AEM ausgeführt oder remote ausgeführt werden
+      * Kann auf demselben Host wie AEM oder remote ausgeführt werden
 
-   * [MySQL-Workbench](https://dev.mysql.com/downloads/tools/workbench/)
+   * [MySQL Workbench](https://dev.mysql.com/downloads/tools/workbench/)
 
-## MySQL installieren {#installing-mysql}
+## Installieren von MySQL {#installing-mysql}
 
-[MySQL](https://dev.mysql.com/downloads/mysql/) sollte heruntergeladen und entsprechend den Anweisungen für das Ziel-OS installiert werden.
+[MySQL](https://dev.mysql.com/downloads/mysql/) sollte heruntergeladen und gemäß den Anweisungen für das Zielbetriebssystem installiert werden.
 
-### Tabellennamen mit Kleinbuchstaben {#lower-case-table-names}
+### Tabellennamen in Kleinbuchstaben {#lower-case-table-names}
 
-Da bei SQL nicht zwischen Groß- und Kleinschreibung unterschieden wird, müssen bei Betriebssystemen, bei denen zwischen Groß- und Kleinschreibung unterschieden wird, alle Tabellennamen in Kleinbuchstaben geschrieben werden.
+Da SQL bei Betriebssystemen, bei denen zwischen Groß- und Kleinschreibung unterschieden wird, nicht zwischen Groß- und Kleinschreibung unterscheidet, ist es erforderlich, eine Einstellung für alle Tabellennamen in Kleinbuchstaben einzuschließen.
 
-So geben Sie beispielsweise alle Tabellennamen mit Kleinbuchstaben unter Linux an:
+So geben Sie beispielsweise alle Tabellennamen in Kleinbuchstaben unter einem Linux-Betriebssystem an:
 
-* Datei bearbeiten `/etc/my.cnf`
+* `/etc/my.cnf` bearbeiten
 * Fügen Sie im Abschnitt `[mysqld]` die folgende Zeile hinzu:
 
   `lower_case_table_names = 1`
@@ -53,13 +53,13 @@ So geben Sie beispielsweise alle Tabellennamen mit Kleinbuchstaben unter Linux a
 
 Um eine bessere mehrsprachige Unterstützung zu bieten, ist es erforderlich, den UTF8-Zeichensatz zu verwenden.
 
-Ändern Sie MySQL so, dass UTF8 als Zeichensatz verwendet wird:
+Ändern Sie MySQL in UTF8 als Zeichensatz:
 
-* mysql > SET NAMES &#39;utf8&#39;;
+* mysql > SET NAMES &#39;UTF8&#39;;
 
-Ändern Sie die MySQL-Datenbank in UTF8:
+Ändern Sie die MySQL-Datenbank auf den Standardwert UTF8:
 
-* Datei bearbeiten `/etc/my.cnf`
+* `/etc/my.cnf` bearbeiten
 * Fügen Sie im Abschnitt `[client]` die folgende Zeile hinzu:
 
   `default-character-set=utf8`
@@ -70,93 +70,93 @@ Um eine bessere mehrsprachige Unterstützung zu bieten, ist es erforderlich, den
 
 ## Installieren von MySQL Workbench {#installing-mysql-workbench}
 
-MySQL Workbench bietet eine Benutzeroberfläche zum Ausführen von SQL-Skripten, die das Schema und die Anfangsdaten installieren.
+MySQL Workbench bietet eine Benutzeroberfläche zum Ausführen von SQL-Skripts, die das Schema und die Anfangsdaten installieren.
 
-MySQL Workbench sollte heruntergeladen und entsprechend den Anweisungen für das Zielbetriebssystem installiert werden.
+MySQL Workbench sollte heruntergeladen und gemäß den Anweisungen für das Zielbetriebssystem installiert werden.
 
 ## Communities-Verbindung {#communities-connection}
 
-Wenn die MySQL Workbench zum ersten Mal gestartet wird, sofern sie nicht bereits für andere Zwecke verwendet wird, werden noch keine Verbindungen angezeigt:
+Wenn MySQL Workbench zum ersten Mal gestartet wird, werden noch keine Verbindungen angezeigt, es sei denn, es wird bereits für andere Zwecke verwendet:
 
 ![mysqlconnection](assets/mysqlconnection.png)
 
 ### Neue Verbindungseinstellungen {#new-connection-settings}
 
-1. Wählen Sie das Symbol `+` rechts von `MySQL Connections` aus.
-1. Geben Sie im Dialogfeld `Setup New Connection` die für Ihre Plattform geeigneten Werte ein.
+1. Wählen Sie das `+` rechts von `MySQL Connections` aus.
+1. Geben Sie im `Setup New Connection` die für Ihre Plattform geeigneten Werte ein
 
-   Zu Demonstrationszwecken mit der Autoreninstanz AEM MySQL auf demselben Server:
+   Zu Demonstrationszwecken mit der Authoring-AEM-Instanz und MySQL auf demselben Server:
 
    * Verbindungsname: `Communities`
    * Verbindungsmethode: `Standard (TCP/IP)`
-   * Hostname: `127.0.0.1`
+   * Host-Name: `127.0.0.1`
    * Benutzername: `root`
    * Passwort: `no password by default`
    * Standardschema: `leave blank`
 
-1. Wählen Sie `Test Connection` aus, um die Verbindung zum ausgeführten MySQL-Dienst zu überprüfen.
+1. Wählen Sie `Test Connection` aus, um die Verbindung zum ausgeführten MySQL-Service zu überprüfen
 
-**Notizen**:
+**Hinweise**:
 
-* Der Standardanschluss ist `3306`
-* Der ausgewählte Verbindungsname wird als Datenquellenname in der [JDBC OSGi-Konfiguration](#configurejdbcconnections) angegeben.
+* Der Standard-Port ist `3306`
+* Der ausgewählte Verbindungsname wird in der JDBC-OSGi-Konfiguration als [ eingegeben](#configurejdbcconnections)
 
 #### Neue Communities-Verbindung {#new-communities-connection}
 
-![ community-connection](assets/community-connection.png)
+![Community-Verbindung](assets/community-connection.png)
 
-## Datenbankeinrichtung {#database-setup}
+## Datenbank-Setup {#database-setup}
 
-Öffnen Sie die Communities-Verbindung, um die Datenbank zu installieren.
+Öffnen Sie die Communities -Verbindung, um die Datenbank zu installieren.
 
 ![install-database](assets/install-database.png)
 
-### Abrufen des SQL-Skripts {#obtain-the-sql-script}
+### Abrufen des SQL-Scripts {#obtain-the-sql-script}
 
-Das SQL-Skript wird aus dem AEM Repository abgerufen:
+Das SQL-Script wird aus dem AEM-Repository abgerufen:
 
-1. Zu CRXDE Lite navigieren
+1. Zum CRXDE Lite navigieren
 
    * Beispiel: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. Wählen Sie den Ordner /libs/social/config/datastore/dsrp/schema aus.
-1. Herunterladen `init-schema.sql`
+1. `init-schema.sql` herunterladen
 
    ![database-schema-crxde](assets/database-schema-crxde.png)
 
-Eine Methode zum Herunterladen des Schemas ist:
+Eine Methode zum Herunterladen des Schemas besteht darin:
 
-* Wählen Sie den Knoten `jcr:content` für die SQL-Datei aus.
-* Beachten Sie, dass der Wert für die Eigenschaft `jcr:data` ein Ansichtslink ist.
+* `jcr:content` Knoten für die SQL-Datei auswählen
+* Beachten Sie, dass der Wert für die Eigenschaft `jcr:data` ein Link zum Anzeigen ist
 
-* Klicken Sie auf den Ansichtslink, um die Daten in einer lokalen Datei zu speichern.
+* Klicken Sie auf den Link Anzeigen , um die Daten in einer lokalen Datei zu speichern
 
 ### DSRP-Datenbank erstellen {#create-the-dsrp-database}
 
-Gehen Sie wie folgt vor, um die Datenbank zu installieren. Der Standardname der Datenbank ist `communities`.
+Gehen Sie wie folgt vor, um die Datenbank zu installieren. Der Standardname der Datenbank lautet `communities`.
 
-Wenn der Datenbankname im Skript geändert wird, müssen Sie ihn auch in der [JDBC-Konfiguration](#configurejdbcconnections) ändern.
+Wenn der Datenbankname im Skript geändert wird, müssen Sie ihn auch in der „JDBC[Konfiguration“ ](#configurejdbcconnections).
 
 #### Schritt 1: SQL-Datei öffnen {#step-open-sql-file}
 
 In der MySQL Workbench
 
-* Wählen Sie im Pulldown-Menü &quot;Datei&quot;die Option **[!UICONTROL SQL Script öffnen]**
-* Wählen Sie das heruntergeladene Skript `init_schema.sql` aus
+* Wählen Sie aus dem Pulldown-Menü Datei die Option **[!UICONTROL SQL-Script öffnen]** aus
+* Heruntergeladenes `init_schema.sql` auswählen
 
 ![select-sql-script](assets/select-sql-script.png)
 
 #### Schritt 2: SQL-Script ausführen {#step-execute-sql-script}
 
-Wählen Sie im Workbench-Fenster für die in Schritt 1 geöffnete Datei die `lightening (flash) icon` aus, um das Skript auszuführen.
+Wählen Sie im Workbench-Fenster für die in Schritt 1 geöffnete Datei die `lightening (flash) icon` aus, die das Skript ausführen soll.
 
-In der folgenden Abbildung ist die Datei `init_schema.sql` zur Ausführung bereit:
+Im folgenden Bild kann die `init_schema.sql`-Datei ausgeführt werden:
 
 ![execute-sql-script](assets/execute-sql-script.png)
 
 #### Aktualisieren {#refresh}
 
-Nachdem das Skript ausgeführt wurde, muss der Abschnitt &quot;`SCHEMAS`&quot;des Felds &quot;`Navigator`&quot;aktualisiert werden, damit die neue Datenbank angezeigt wird. Verwenden Sie das Aktualisierungssymbol rechts neben &quot;SCHEMAS&quot;:
+Nachdem das Skript ausgeführt wurde, muss der `SCHEMAS` Abschnitt der `Navigator` aktualisiert werden, um die neue Datenbank anzuzeigen. Verwenden Sie das Aktualisierungssymbol rechts neben „SCHEMAS“:
 
 ![refresh-schema](assets/refresh-schema.png)
 
@@ -164,17 +164,17 @@ Nachdem das Skript ausgeführt wurde, muss der Abschnitt &quot;`SCHEMAS`&quot;de
 
 Die OSGi-Konfiguration für **Day Commons JDBC Connections Pool** konfiguriert den MySQL JDBC-Treiber.
 
-Alle Veröffentlichungs- und AEM-Instanzen sollten auf denselben MySQL-Server verweisen.
+Alle Veröffentlichungs- und Autoren-AEM-Instanzen sollten auf denselben MySQL-Server verweisen.
 
-Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, muss der Hostname des Servers anstelle von &quot;localhost&quot;im JDBC-Connector angegeben werden.
+Wenn MySQL auf einem anderen Server als AEM ausgeführt wird, muss der Host-Name des Servers im JDBC-Connector anstelle von „localhost“ angegeben werden.
 
-* Auf jeder Autoren- und Veröffentlichungsinstanz AEM.
+* In jeder Autoren- und Veröffentlichungs-AEM-Instanz.
 * Mit Administratorrechten angemeldet.
 * Rufen Sie die [Web-Konsole](../../help/sites-deploying/configuring-osgi.md) auf.
 
    * Beispiel: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
-* Suchen Sie den `Day Commons JDBC Connections Pool`
+* Suchen des `Day Commons JDBC Connections Pool`
 * Wählen Sie das Symbol `+` aus, um eine Verbindungskonfiguration zu erstellen.
 
   ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
@@ -184,18 +184,18 @@ Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, mu
    * **[!UICONTROL JDBC-Treiberklasse]**: `com.mysql.jdbc.Driver`
    * **[!UICONTROL JDBC-Verbindungs-URI]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-     Geben Sie den Server anstelle von localhost an, wenn der MySQL-Server nicht derselbe ist wie dieser AEM Server *communities* der Standarddateiname für die Datenbank (Schema) ist.
+     Geben Sie den Server anstelle von localhost an, wenn der MySQL-Server nicht mit „this“ identisch ist. Der AEM *Server (Communities* ist der Standardname der Datenbank (Schema).
 
    * **[!UICONTROL Benutzername]**: `root`
 
-     Oder geben Sie den konfigurierten Benutzernamen für den MySQL-Server ein, falls nicht &quot;root&quot;.
+     Oder geben Sie den konfigurierten Benutzernamen für den MySQL-Server ein, wenn nicht „root“.
 
    * **[!UICONTROL Kennwort]**:
 
-     Löschen Sie dieses Feld, wenn kein Kennwort für MySQL festgelegt wurde.
+     Löschen Sie dieses Feld, wenn kein Kennwort für MySQL festgelegt ist.
 
-     Geben Sie andernfalls das konfigurierte Kennwort für den MySQL-Benutzernamen ein.
+     Sonst geben Sie das konfigurierte Passwort für den MySQL-Benutzernamen ein.
 
-   * **[!UICONTROL Datenquellenname]**: Name, der für die [MySQL-Verbindung](#new-connection-settings) eingegeben wurde, z. B. &quot;communities&quot;.
+   * **[!UICONTROL Datenquellenname]**: Name, der für die [MySQL-Verbindung](#new-connection-settings) eingegeben wurde, z. B. „Communities“.
 
 * Wählen Sie **[!UICONTROL Speichern]** aus
