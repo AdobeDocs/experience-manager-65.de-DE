@@ -12,7 +12,7 @@ role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -57,7 +57,7 @@ So erstellen Sie ein Abonnementformular und konfigurieren es für die Anmeldung 
    >
    >Ihr Dialogfeld unterscheidet sich je nach E-Mail-Dienstleister möglicherweise vom hier beschriebenen.
 
-1. Wählen Sie auf der Registerkarte **Formular** die Dankeseite aus, auf die Benutzende nach Absenden des Formulars weitergeleitet werden sollen (wird dieses Feld leer gelassen, wird nach dem Absenden erneut das Formular angezeigt). Klicken Sie auf **OK**. Im Formular wird eine **E-Mail-ID**-Komponente angezeigt, mit deren Hilfe Sie ein Formular erstellen können, in das Benutzende ihre E-Mail-Adresse zur Anmeldung oder Abmeldung aus der Mailingliste eingeben können.
+1. Wählen Sie auf der **Formular** die Dankeseite aus, die Benutzer sehen sollen, nachdem sie das Formular gesendet haben. (Wenn Sie das Feld leer lassen, wird das Formular bei der Übermittlung erneut angezeigt.) Klicken Sie **OK**. Im Formular wird eine **E-Mail-ID**-Komponente angezeigt, mit deren Hilfe Sie ein Formular erstellen können, in das Benutzende ihre E-Mail-Adresse zur Anmeldung oder Abmeldung aus der Mailingliste eingeben können.
 1. Fügen Sie im Sidekick die Schaltflächenkomponente **Senden** für das **Formular** hinzu.
 
    Ihr Formular ist fertig. Veröffentlichen Sie die in den oben genannten Schritten konfigurierte Seite gemeinsam mit der **Dankeseite** in der Veröffentlichungsinstanz. Alle potenziellen Abonnentinnen und Abonnenten, die die Seite besuchen, können das Formular ausfüllen und sich bei der in der Konfiguration angegebenen Liste anmelden.
@@ -105,7 +105,7 @@ So konfigurieren Sie eine automatische Antwort-E-Mail für einen E-Mail-Dienst:
 1. **Wählen Sie eine Klassifikation aus** (diese Klassifikation wird zum Versenden der E-Mail verwendet).
 1. Wählen Sie die **Dankeseite** aus (die Seite, auf die Benutzer weitergeleitet werden, wenn sie das Formular senden).
 
-   Wählen Sie auf der Registerkarte **Formular** die Dankeseite aus, die Benutzer sehen sollen, nachdem sie das Formular gesendet haben. (Erfolgt hier keine Angabe, wird das Formular nach der Übermittlung erneut angezeigt.) Klicken Sie auf **OK**.
+   Wählen Sie auf der Registerkarte **Formular** die Dankeseite aus, die Benutzer sehen sollen, nachdem sie das Formular gesendet haben. (Wenn Sie das Feld leer lassen, wird das Formular nach der Übermittlung erneut angezeigt.) Klicken Sie **OK**.
 
 1. Exportieren Sie die Schlüssel des Autors zur Veröffentlichung.
 1. Fügen Sie im Sidekick die Schaltflächenkomponente **Senden** für das **Formular** hinzu.

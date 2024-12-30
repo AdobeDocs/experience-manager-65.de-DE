@@ -1,5 +1,5 @@
 ---
-title: Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor
+title: 'Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor '
 description: Erfahren Sie, wie Sie mit dem Musterdetektor die Komplexität Ihres Upgrades bewerten können.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES

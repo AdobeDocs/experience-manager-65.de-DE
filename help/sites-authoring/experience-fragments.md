@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
 source-git-commit: 382368d7a91ba2229ce1cdfe19f3b9871b93498e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 100%
 

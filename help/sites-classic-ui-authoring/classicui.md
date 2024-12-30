@@ -1,6 +1,6 @@
 ---
 title: Bearbeiten in der klassischen Benutzeroberfläche
-description: Die klassische Benutzeroberfläche ist die speziell an den Einsatz am Desktop angepasste Version, die seit CQ5 verfügbar ist. Die folgende Dokumentation zur Bearbeitung bezieht sich auf diese Benutzeroberfläche. Die Touch-optimierte Benutzeroberfläche ist die neue Standardoberfläche für AEM, die sowohl auf Touch- als auch Desktop-Geräten verwendet werden kann. Weitere Informationen finden Sie in der Standarddokumentation zum Authoring.
+description: 'Die klassische Benutzeroberfläche ist die speziell an den Einsatz am Desktop angepasste Version, die seit CQ5 verfügbar ist. Die folgende Dokumentation zur Bearbeitung bezieht sich auf diese Benutzeroberfläche. Die Touch-optimierte Benutzeroberfläche ist die neue Standardoberfläche für AEM, die sowohl auf Touch- als auch Desktop-Geräten verwendet werden kann. Weitere Informationen finden Sie in der Standarddokumentation zum Authoring. '
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction

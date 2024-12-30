@@ -8,7 +8,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 44903bc3e68f46f9880d31c33b7dc9e7598ddc38
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 99%
 
 Der Rich-Text-Editor (RTE) ist ein grundlegender Baustein für die Eingabe von Textinhalten in AEM. Er bildet die Grundlage für verschiedene Komponenten, darunter:
 
-* [Text](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
-* [Tabelle](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
+* [Text](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/wcm-components/text)
+* [Tabelle](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/wcm-components/text#table)
 
 ## Bearbeiten im Kontext {#in-place-editing}
 

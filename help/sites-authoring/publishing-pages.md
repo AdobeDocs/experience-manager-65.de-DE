@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1669'
 ht-degree: 100%
 

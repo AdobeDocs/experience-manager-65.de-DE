@@ -177,7 +177,7 @@ Prüfen Sie, ob Sie alle Zeichenfolgen in Ihrer Benutzeroberfläche internationa
 
 `USR_*Default-String*_尠`
 
-Die folgende Abbildung zeigt die Platzhalterübersetzung für die AEM-Homepage:
+Die folgende Abbildung zeigt die Platzhalterübersetzung für die AEM-Startseite:
 
 ![chlimage_1](assets/chlimage_1a.jpeg)
 
