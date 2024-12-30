@@ -1,5 +1,5 @@
 ---
-title: SPA-Modell-Routing
+title: 'SPA-Modell-Routing '
 description: Bei Single Page Applications in AEM ist die App für das Routing verantwortlich. In diesem Dokument werden der Routing-Mechanismus, der Vertrag und die verfügbaren Optionen beschrieben.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

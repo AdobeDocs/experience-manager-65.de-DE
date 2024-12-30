@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Sling Resource Merger in AEM
+title: 'Verwenden des Sling Resource Merger in AEM  '
 description: Der Sling Resource Merger bietet Dienste für den Zugriff auf Ressourcen und für das Zusammenführen von Ressourcen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
