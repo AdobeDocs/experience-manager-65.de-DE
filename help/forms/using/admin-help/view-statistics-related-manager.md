@@ -12,13 +12,13 @@ role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1215'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
 # Anzeigen von Statistiken mit Bezug auf Work Manager {#view-statistics-related-to-work-manager}
 
-Auf der Registerkarte „Work Manager“ werden Statistiken angezeigt, die mit Work Manager-Elementen zusammenhängen.  Diese Arbeitselemente weisen je nachdem, wo sie sich in ihrem Prozess befinden, unterschiedliche Status auf. (Siehe [Status (nur für Standard-, Workflow- oder Ereigniskategorien)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) Sie können die Informationen filtern, um nur eine Teilmenge der Elemente anzuzeigen, indem Sie die verschiedenen zur Verfügung stehenden Optionen verwenden (z. B. Status oder Kategorie). Sie können die entstehenden Arbeits- oder Auftragselemente (in aufsteigender oder absteigender Reihenfolge) sortieren, indem Sie auf einen der Spaltenüberschriften klicken.  Sie können die Arbeitselemente außerdem mithilfe der Vorgangswerkzeuge verwalten, die über der Liste der Arbeitselemente angezeigt werden.
+Auf der Registerkarte „Work Manager“ werden Statistiken angezeigt, die mit Work Manager-Elementen zusammenhängen.  Diese Arbeitselemente weisen je nachdem, wo sie sich in ihrem Prozess befinden, unterschiedliche Status auf. (Siehe [Status (nur für Standard-, Workflow- oder Ereigniskategorien)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) Sie können die Informationen so filtern, dass nur eine Teilmenge der Elemente angezeigt wird, indem Sie die verschiedenen verfügbaren Optionen verwenden (z. B. Status oder Kategorie). Sie können die entstehenden Arbeits- oder Auftragselemente (in aufsteigender oder absteigender Reihenfolge) sortieren, indem Sie auf einen der Spaltenüberschriften klicken.  Sie können die Arbeitselemente außerdem mithilfe der Vorgangswerkzeuge verwalten, die über der Liste der Arbeitselemente angezeigt werden.
 
 ## Filtern von Arbeitselementen {#filter-the-work-items}
 
@@ -47,7 +47,7 @@ Auf der Registerkarte „Work Manager“ werden Statistiken angezeigt, die mit W
 
 **Fertig:** Zeigt alle Arbeitselemente an, die erfolgreich ausgeführt wurden. Permanente Arbeitselemente verbleiben in diesem Status, und nicht permanente Elemente werden beim Beenden von Rückrufen an die Rückruf-Handler gelöscht. Zum Löschen dieser Elemente verwenden Sie den Vorgang „Elemente löschen“.  (Siehe Arbeitselemente oder Aufträge verwalten.)
 
-**Fehlgeschlagen:** Zeigt alle Arbeitselemente an, die aufgrund eines Fehlers nicht erfolgreich beendet wurden. Diese Arbeitselemente können mehrmals durch Verwenden des Vorgangs „Elemente wiederholen“ wiederholt werden. (Siehe Arbeitselemente oder Aufträge verwalten.) Mithilfe der Fehlerverknüpfung in der Statuszeile können Sie auf Details über den Fehler zugreifen.
+**Fehlgeschlagen:** Zeigt alle Arbeitselemente an, die aufgrund eines Fehlers nicht erfolgreich beendet wurden. Diese Arbeitselemente können mehrmals durch Verwenden des Vorgangs „Elemente wiederholen“ wiederholt werden. (Siehe Arbeitselemente oder Aufträge verwalten.) Über einen Fehlerlink in der Spalte Status können Sie auf Details zum Fehler zugreifen.
 
 **Unbekannt:** Zeigt alle Arbeitselemente an, deren Status unbekannt ist.
 

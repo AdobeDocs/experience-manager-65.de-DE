@@ -12,7 +12,7 @@ role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '790'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -193,7 +193,7 @@ In diesem Abschnitt wird die Installation und Konfiguration der EMC NetWorker-So
    * Öffnen Sie eine Eingabeaufforderung, und wechseln Sie zu `[NetWorker_root]\Legato\nsr\bin`.
    * Führen Sie den folgenden Befehl aus: `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
 
-1. Erstellen Sie die ausführbaren Batch-Dateien (.bat) zum Sichern der Datenbank. (Weitere Informationen finden Sie in der NetWorker-Dokumentation.) Legen Sie die Details in den Batch-Dateien gemäß Ihrer Installation fest.
+1. Erstellen Sie die ausführbaren Batch-Dateien (.bat) zum Sichern der Datenbank. (Siehe NetWorker-Dokumentation.) Legen Sie die Details in den Batch-Dateien entsprechend Ihrer Installation fest.
 
    * Vollständige Datenbanksicherung (nsrnmddbf.bat):
 

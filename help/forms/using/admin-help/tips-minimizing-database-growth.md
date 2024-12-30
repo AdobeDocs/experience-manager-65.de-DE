@@ -1,6 +1,6 @@
 ---
 title: Tipps zum Minimieren des Datenbankwachstums
-description: Langlebige Prozesse speichern Prozessdaten in der AEM Forms-Datenbank. Das Wachstum der AEM Forms-Datenbank kann mithilfe weniger einfacher Prozessentwurfs- und Produktkonfigurationsstrategien minimiert werden.
+description: 'Langlebige Prozesse speichern Prozessdaten in der AEM Forms-Datenbank. Das Wachstum der AEM Forms-Datenbank kann mithilfe weniger einfacher Prozessentwurfs- und Produktkonfigurationsstrategien minimiert werden. '
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -12,7 +12,7 @@ role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -34,4 +34,4 @@ Verwenden Sie einfache Variablentypen (z. B. String oder Int) und vermeiden Sie
 
 Verwenden Sie den globalen Dokumentenspeicher (GDS) effizient.  Das GDS-Verzeichnis auf dem Formular-Server wird unter anderem zum Speichern von Dateien verwendet, die an Dienste übergeben werden, die Teil von AEM Forms in Prozessen sind. Zum Verbessern der Leistung werden kleinere Dokumente stattdessen im Arbeitsspeicher gespeichert und bleiben in der Datenbank erhalten.
 
-Die Administrationskonsole stellt die Eigenschaft „Standardmäßige Maximalgröße für Inline-Dokumente“ zum Konfigurieren der Maximalgröße von Dokumenten bereit, die im Arbeitsspeicher gespeichert werden und in der Datenbank erhalten bleiben. (Siehe [Konfigurieren allgemeiner AEM Forms-Einstellungen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Wenn Sie für diese Eigenschaft einen niedrigen Wert festgelegt haben, bleiben die meisten Dokumente im GDS-Verzeichnis und nicht in der Datenbank erhalten. Der Vorteil besteht darin, dass Sie nicht mehr benötigte Dateien leichter löschen können, wenn sie im GDS-Verzeichnis gespeichert sind.
+Die Administrationskonsole stellt die Eigenschaft „Standardmäßige Maximalgröße für Inline-Dokumente“ zum Konfigurieren der Maximalgröße von Dokumenten bereit, die im Arbeitsspeicher gespeichert werden und in der Datenbank erhalten bleiben. (Siehe [Konfigurieren allgemeiner AEM-Formulareinstellungen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Wenn Sie diese Eigenschaft auf einen niedrigen Wert setzen, bleiben die meisten Dokumente im Ordner des globalen Dokumentenspeichers (GDS) und nicht in der Datenbank erhalten. Der Vorteil besteht darin, dass Sie nicht mehr benötigte Dateien leichter löschen können, wenn sie im GDS-Verzeichnis gespeichert sind.

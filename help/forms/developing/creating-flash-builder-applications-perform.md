@@ -12,7 +12,7 @@ feature: Adaptive Forms,Document Security
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1783'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -872,7 +872,7 @@ Die folgenden Abschnitte enthalten zusätzliche Details, die die Kommunikation z
 
 ### Eine neue Authentification erfolgt {#a-new-authentication-occurs}
 
-In diesem Fall versucht der Benutzer zum ersten Mal, sich von einer Client-Anwendung bei AEM Forms anzumelden. (Es gibt keine vorherige Sitzung, an der der Benutzer beteiligt ist.) Bei Eintreten des Ereignisses `applicationComplete` wird die Methode `SSOManager.singleSignOn` aufgerufen, die eine Anfrage an den User Manager sendet.
+In diesem Fall versucht der Benutzer zum ersten Mal, sich von einer Client-Anwendung bei AEM Forms anzumelden. (Es gibt keine vorherige Sitzung, an der der Benutzer beteiligt ist.) Im `applicationComplete` Ereignis wird die `SSOManager.singleSignOn` Methode aufgerufen, die eine Anfrage an den User Manager sendet.
 
 `GET /um/login?um%5Fno%5Fredirect=true HTTP/1.1`
 

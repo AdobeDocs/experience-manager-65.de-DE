@@ -1,6 +1,6 @@
 ---
-title: Verwenden der Abstimmung
-description: Erfahren Sie, wie Sie die Komponente Abstimmung zu einer Seite hinzufügen, auf der angemeldete Community-Mitglieder bestimmte Inhalte bewerten können, z. B. eine Antwort.
+title: Abstimmung verwenden
+description: Erfahren Sie, wie Sie die Abstimmungskomponente zu einer Seite hinzufügen, auf der angemeldete Community-Mitglieder einen bestimmten Inhalt, z. B. eine Antwort, bewerten können.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -16,39 +16,39 @@ ht-degree: 1%
 
 ---
 
-# Verwenden der Abstimmung {#using-voting}
+# Abstimmung verwenden {#using-voting}
 
-Die Komponente `Voting` ist ein nützliches Tool, mit dem Community-Mitglieder bestimmte Inhalte bewerten können, z. B. eine Antwort innerhalb einer QnA-Komponente. Bei der Komponente `Voting` wählen die Mitglieder Pfeile nach oben oder unten aus, um ihre Meinung anzugeben.
+Die `Voting` ist ein nützliches Tool, mit dem Community-Mitglieder ein bestimmtes Inhaltselement bewerten können, z. B. eine Antwort innerhalb einer QnA-Komponente. Bei der Komponente `Voting` wählen die Mitglieder nach oben oder unten, um ihre Meinung anzugeben.
 
 ## Hinzufügen von Abstimmungen zu einer Seite {#adding-voting-to-a-page}
 
-Verwenden Sie den Komponenten-Browser, um im Autorenmodus einer Seite die Komponente `Voting` hinzuzufügen. Suchen Sie `Communities / Voting` und ziehen Sie es an die gewünschte Stelle auf einer Seite, z. B. an eine Position relativ zur Funktion, über die Benutzer abstimmen können.
+Um einer Seite im Autorenmodus eine `Voting` Komponente hinzuzufügen, verwenden Sie den Komponenten-Browser. Suchen Sie `Communities / Voting` und ziehen Sie es an eine Position auf einer Seite, z. B. eine Position relativ zur Funktion, über die Benutzer abstimmen können.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
+Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [ erforderlichen clientseitigen Bibliotheken](essentials-voting.md#essentials-for-client-side) enthalten sind, wird die Komponente `Voting` so angezeigt.
+Wenn die [erforderlichen Client-seitigen ](essentials-voting.md#essentials-for-client-side) enthalten sind, wird die `Voting` Komponente wie folgt angezeigt.
 
-![stimmkomponente](assets/voting-component.png)
+![Abstimmungskomponente](assets/voting-component.png)
 
-## Konfigurieren der Abstimmung {#configuring-voting}
+## Abstimmung konfigurieren {#configuring-voting}
 
-Wählen Sie die platzierte Komponente `Voting` aus, damit Sie auf das Symbol `Configure` zugreifen und dieses auswählen können, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte `Voting` aus, um auf das Symbol `Configure` zuzugreifen, das das Dialogfeld „Bearbeiten“ öffnet.
 
-![configure](assets/configure-new.png)
+![Konfigurieren](assets/configure-new.png)
 
-Geben Sie auf der Registerkarte **[!UICONTROL Texte und Beschriftungen]** die Eigenschaften an, die zum Aufzeichnen von Stimmen verwendet werden.
+Geben Sie auf **[!UICONTROL Registerkarte]** Texte und Beschriftungen“ die Eigenschaften an, die zum Aufzeichnen der Abstimmungen verwendet werden sollen.
 
-![stimmbeschriftung](assets/voting-label.png)
+![Voting-label](assets/voting-label.png)
 
-* **[!UICONTROL Bezeichnung der positiven Antwort]**
+* **[!UICONTROL Positive Response Label]**
 
   (*Erforderlich*) Der interne Eigenschaftsname für eine positive Antwort.
 
-* **[!UICONTROL Bezeichnung der negativen Antwort]**
+* **[!UICONTROL Beschriftung für negative Antwort]**
 
   (*Erforderlich*) Der interne Eigenschaftsname für eine negative Antwort.
 
-* **[!UICONTROL Tally Name]**
+* **[!UICONTROL Tally-Name]**
 
   (*Erforderlich*) Der interne, identifizierbare Eigenschaftsname für diese Instanz einer Abstimmungskomponente.
 
@@ -56,12 +56,12 @@ Geben Sie auf der Registerkarte **[!UICONTROL Texte und Beschriftungen]** die Ei
 
 ### Mitglieder {#members}
 
-Die Mitglieder dürfen nur einmal abstimmen, können jedoch ihre Stimme jederzeit ändern.
+Die Abgeordneten können nur einmal abstimmen, können aber ihre Stimme jederzeit ändern.
 
 ### Anonym {#anonymous}
 
-Anonyme Abstimmungen werden nicht unterstützt. Besucher müssen sich registrieren (Mitglied werden) und sich anmelden, um einmal an der Abstimmung teilzunehmen.
+Anonyme Abstimmung wird nicht unterstützt. Besuchende der Website müssen sich registrieren (Mitglied werden) und sich einmalig zur Teilnahme an der Abstimmung anmelden.
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Entwickler-Seite [Grundlegende Stimmrechte](essentials-voting.md) .
+Weitere Informationen finden Sie auf der Seite [Voting Essentials](essentials-voting.md) für Entwickler.

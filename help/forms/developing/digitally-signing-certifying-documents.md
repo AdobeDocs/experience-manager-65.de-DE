@@ -12,7 +12,7 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '16917'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -93,7 +93,7 @@ Abrufen eines PDF-Dokuments, dem ein Signaturfeld hinzugefügt wurde.
 
 **Hinzufügen eines Signaturfelds**
 
-Um einem PDF-Dokument erfolgreich ein Signaturfeld hinzuzufügen, geben Sie Koordinatenwerte an, die die Position des Signaturfelds angeben. (Wenn Sie ein unsichtbares Signaturfeld hinzufügen, sind diese Werte nicht erforderlich.) Sie können auch angeben, welche Felder im PDF-Dokument gesperrt werden, nachdem eine Signatur auf das Signaturfeld angewendet wurde.
+Um einem PDF-Dokument erfolgreich ein Signaturfeld hinzuzufügen, geben Sie Koordinatenwerte an, die die Position des Signaturfelds angeben. (Wenn Sie ein unsichtbares Signaturfeld hinzufügen, sind diese Werte nicht erforderlich.) Außerdem können Sie angeben, welche Felder im PDF-Dokument gesperrt werden, nachdem eine Signatur auf das Signaturfeld angewendet wurde.
 
 **Speichern des PDF-Dokuments als PDF-Datei**
 

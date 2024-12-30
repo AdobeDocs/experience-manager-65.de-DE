@@ -12,7 +12,7 @@ role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '7192'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -67,7 +67,7 @@ Wenn der Auftrag mehrere Eingabedateien umfasst, müssen die Benutzenden einen O
 
 Wenn die Eingabe ein Ordner ist und die Ausgabe mehrere Dateien umfasst, erstellt AEM Forms einen Ausgabeordner mit dem Namen des Eingabeordners und kopiert die Ausgabedateien in diesen Ordner. Besteht die Ausgabe aus einer Dokumentzuordnung mit einem Schlüssel-Wert-Paar, wie z. B. die Ausgabe eines Ausgabeprozesses, wird der Schlüssel als Ausgabedateiname verwendet.
 
-Die Ausgabedateinamen, die aus einem Endpunktprozess resultieren, dürfen keine anderen Zeichen als Buchstaben, Zahlen und einen Punkt (.)  vor der Dateierweiterung enthalten. AEM Forms konvertiert andere Zeichen in Hexadezimalwerte.
+Die Namen der Ausgabedateien, die aus einem Endpunktprozess resultieren, dürfen keine anderen Zeichen als Buchstaben, Zahlen und einen Punkt (.) vor der Dateierweiterung enthalten. AEM Forms konvertiert andere Zeichen in Hexadezimalwerte.
 
 Client-Anwendungen rufen die Zieldokumente aus dem Ergebnisordner des überwachten Ordners ab.  Prozessfehler werden im Fehlerordner des überwachten Ordners protokolliert.
 

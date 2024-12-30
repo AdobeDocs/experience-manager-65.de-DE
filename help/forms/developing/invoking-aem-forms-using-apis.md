@@ -1,6 +1,6 @@
 ---
 title: Aufrufen von AEM Forms mithilfe von APIs
-description: Erfahren Sie, wie Sie AEM Forms-Dienste über eine Java™-API, Web-Dienste, Remoting und REST aufrufen können.
+description: 'Erfahren Sie, wie Sie AEM Forms-Dienste über eine Java™-API, Web-Dienste, Remoting und REST aufrufen können. '
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

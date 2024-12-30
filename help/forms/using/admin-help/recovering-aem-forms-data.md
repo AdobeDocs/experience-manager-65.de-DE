@@ -12,7 +12,7 @@ role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1118'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -54,7 +54,7 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, di
 1. Erstellen Sie bei Bedarf das physische System aus einem Systembild neu. Zum Beispiel ist dieser Schritt möglicherweise nicht erforderlich, wenn der Grund für die Wiederherstellung ein fehlerhafter Datenbank-Server ist.
 1. Wenden Sie Patches oder Aktualisierungen auf AEM Forms an, die seit der Erstellung des Bildes angewendet wurden. Diese Informationen wurden im Sicherungsverfahren erfasst. Bei AEM Forms müssen Patches entsprechend dem Patch-Level zum Zeitpunkt der Systemsicherung angewendet werden.
 1. (WebSphere® Anwendungs-Server) Wenn Sie eine neue Instanz des WebSphere® Anwendungs-Servers wiederherstellen, führen Sie den Befehl „restoreConfig.bat/sh“ aus.
-1. Zum Wiederherstellen der AEM Forms-Datenbank müssen Sie zuerst einen Datenbankwiederherstellungsvorgang unter Verwendung der Datenbanksicherungsdateien ausführen und anschließend die Protokolle zum Wiederholen von Transaktionen auf die wiederhergestellte Datenbank anwenden. (Siehe [AEM Forms-Datenbank](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Weitere Informationen finden Sie in einem dieser Knowledgebase-Artikel:
+1. Zum Wiederherstellen der AEM Forms-Datenbank müssen Sie zuerst einen Datenbankwiederherstellungsvorgang unter Verwendung der Datenbanksicherungsdateien ausführen und anschließend die Protokolle zum Wiederholen von Transaktionen auf die wiederhergestellte Datenbank anwenden. (Siehe [AEM Forms-](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Weitere Informationen finden Sie in einem der folgenden Knowledgebase-Artikel:
 
    * [DB2](/help/forms/using/admin-help/files-back-recover.md#db2)
    * [Oracle-Backup und Wiederherstellung für AEM Forms](/help/forms/using/admin-help/files-back-recover.md#oracle)

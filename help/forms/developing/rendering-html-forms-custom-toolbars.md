@@ -13,7 +13,7 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2328'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -177,7 +177,7 @@ Bevor Sie einen vom Forms-Service unterstützten Vorgang programmgesteuert ausf�
 
 **Referenzieren einer benutzerdefinierten fscmenu-XML-Datei**
 
-Um ein HTML-Formular mit einer benutzerdefinierten Symbolleiste wiederzugeben, referenzieren Sie eine fscmenu-XML-Datei, die die Symbolleiste beschreibt. (Dieser Abschnitt enthält zwei Beispiele für eine fscmenu-XML-Datei.) Stellen Sie außerdem sicher, dass die Datei fscmenu.xml die Speicherorte aller referenzierten Dateien richtig angibt. Stellen Sie wie zuvor in diesem Abschnitt erwähnt sicher, dass alle Dateien durch das Keyword `FSToolBarURI` oder ihre absoluten Positionen referenziert werden.
+Um ein HTML-Formular mit einer benutzerdefinierten Symbolleiste wiederzugeben, referenzieren Sie eine fscmenu-XML-Datei, die die Symbolleiste beschreibt. (Dieser Abschnitt enthält zwei Beispiele für eine fscmenu-XML-Datei.) Stellen Sie außerdem sicher, dass die Datei „fscmenu.xml“ die Speicherorte aller referenzierten Dateien korrekt angibt. Stellen Sie wie zuvor in diesem Abschnitt erwähnt sicher, dass alle Dateien durch das Keyword `FSToolBarURI` oder ihre absoluten Positionen referenziert werden.
 
 **Rendern eines HTML-Formulars**
 

@@ -1,5 +1,5 @@
 ---
-title: 'DB2&reg; Datenbank: Prozess wöchentlich ausführen'
+title: 'DB2&reg;-Datenbank: Einen Prozess wöchentlich ausführen'
 description: Erfahren Sie, wie Sie die Leistung Ihrer AEM Forms-DB2®-Datenbank verbessern können.
 contentOwner: admin
 content-type: reference

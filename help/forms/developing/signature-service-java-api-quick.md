@@ -12,7 +12,7 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '868'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -270,7 +270,7 @@ Im folgenden Java-Code-Beispiel werden die Namen von Signaturfeldern in einem PD
 
 ## Schnellstart (SOAP-Modus): Ändern eines Signaturfelds mithilfe der Java-API {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein Signaturfeld namens „SignatureField1“ geändert, indem alle Felder im Formular gesperrt werden, wenn eine Signatur auf das Signaturfeld angewendet wird, und sichergestellt ist, dass keine Änderungen zulässig sind. Nachdem der Signatur-Service das PDF-Dokument mit dem geänderten Signaturfeld zurückgegeben hat, wird das PDF-Dokument als PDF-Datei mit dem Namen „LoanSig.pdf“ gespeichert. (In diesem Beispiel wird die an den Signatur-Service übergebene PDF-Datei überschrieben.) (Siehe [Ändern von Signaturfeldern](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
+Im folgenden Java-Codebeispiel wird ein Signaturfeld namens „SignatureField1“ geändert, indem alle Felder im Formular gesperrt werden, wenn eine Signatur auf das Signaturfeld angewendet wird, und sichergestellt ist, dass keine Änderungen zulässig sind. Nachdem der Signatur-Service das PDF-Dokument mit dem geänderten Signaturfeld zurückgegeben hat, wird das PDF-Dokument als PDF-Datei mit dem Namen „LoanSig.pdf“ gespeichert. (Dieses Beispiel überschreibt die PDF-Datei, die an den Signature-Service übergeben wird.) (Siehe [Ändern von Signaturfeldern](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
 
 ```java
  /*

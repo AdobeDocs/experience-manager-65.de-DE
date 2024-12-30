@@ -43,6 +43,6 @@ Die AEM-Desktop-App verwendet das WebDAV-Protokoll unter Microsoft® Windows und
 
    >[!NOTE]
    >
-   > Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+   > Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
    Wird die Verbindung erfolgreich hergestellt, füllt die App die Ordner `content/dam` und `content/dam/formsanddocuments`. Neben dem Verschieben von Dateien aus obigen Ordnern in lokale Ordner und umgekehrt können Sie mit der App auch Inhalte zwischen automatisch befüllten Ordnern verschieben.

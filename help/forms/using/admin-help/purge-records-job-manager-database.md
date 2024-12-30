@@ -1,6 +1,6 @@
 ---
 title: Bereinigen von Datensätzen aus der Job Manager-Datenbank
-description: Große Prozessdaten können zu niedrigerer AEM Forms-Leistung führen. Es ist empfehlenswert, Prozessdaten zu bereinigen, wenn die Einträge nicht mehr benötigt werden.
+description: 'Große Prozessdaten können zu niedrigerer AEM Forms-Leistung führen. Es ist empfehlenswert, Prozessdaten zu bereinigen, wenn die Einträge nicht mehr benötigt werden. '
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor

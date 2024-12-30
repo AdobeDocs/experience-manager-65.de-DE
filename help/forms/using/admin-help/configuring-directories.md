@@ -12,7 +12,7 @@ role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '3229'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -121,7 +121,7 @@ Wenn Sie in den Ordnereinstellungen „Verweise aktivieren“ ausgewählt haben,
 
 Obwohl „Basis-DN“ eine obligatorische Einstellung in der Administrationskonsole ist, erfordern einige Verzeichnis-Server wie IBM Domino Enterprise Server möglicherweise einen leeren Basis-DN. Um einen leeren Basis-DN anzugeben, exportieren Sie die Datei „config.xml“, bearbeiten Sie die Einstellung in dieser Datei und importieren Sie sie dann wieder. (Siehe [Importieren und Exportieren der Konfigurationsdatei](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
-**Suchfilter:** (Obligatorisch) Der Suchfilter, der verwendet werden soll, um den Eintrag zu finden, der dem Benutzer zugeordnet ist. Sie können eine Suche auf einer Ebene oder auf Unterebenen durchführen. (Siehe Syntax für Suchfilter oder RFC 2254.) Weitere Informationen für das Microsoft AD-Schema finden Sie unter Active Directory-Schema.
+**Suchfilter:** (Obligatorisch) Der Suchfilter, der verwendet werden soll, um den Eintrag zu finden, der dem Benutzer zugeordnet ist. Sie können eine Suche auf einer Ebene oder auf Unterebenen durchführen. (Siehe Syntax für Suchfilter oder RFC 2254.) Weitere Informationen zum Microsoft AD-Schema finden Sie unter Active Directory-Schema.
 
 **Beschreibung:** Das Schemaattribut für die Beschreibung des Benutzers.
 

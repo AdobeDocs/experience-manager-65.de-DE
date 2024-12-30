@@ -12,7 +12,7 @@ role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '10266'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Wenn Sie IPv6 verwenden, geben Sie die Basis-URL als den Computer-Namen oder den
 >
 >Die Basis-URL ist in durch Richtlinien geschützte Dateien eingebettet. Sie wird von Client-Anwendungen verwendet, um sich wieder mit dem Server zu verbinden. Geschützte Dateien enthalten die Basis-URL auch dann weiter, wenn diese später geändert wird. Wenn Sie die Basis-URL ändern, müssen die Konfigurationsinformationen für alle sich mit dem Server verbindenden Clients geändert werden.
 
-**Standardmäßiger Offline-Lease-Zeitraum:** Der standardmäßige Zeitraum, den ein Benutzer ein geschütztes Dokument offline nutzen darf. Diese Einstellung bestimmt den ursprünglichen Wert der Einstellung für die Automatische Offline-Nutzungsdauer, wenn Sie eine Richtlinie erstellen. (Siehe Richtlinien erstellen und bearbeiten.) Nach Ablauf der Nutzungsdauer muss der Empfänger das Dokument erneut synchronisieren, um es weiter verwenden zu können.
+**Standardmäßiger Offline-Lease-Zeitraum:** Der standardmäßige Zeitraum, den ein Benutzer ein geschütztes Dokument offline nutzen darf. Diese Einstellung bestimmt den ursprünglichen Wert der Einstellung für die Automatische Offline-Nutzungsdauer, wenn Sie eine Richtlinie erstellen. (Siehe Erstellen und Bearbeiten von Richtlinien.) Nach Ablauf der Nutzungsdauer muss der Empfänger das Dokument erneut synchronisieren, um es weiter verwenden zu können.
 
 Weitere Informationen zur Funktionsweise der Offline-Nutzung und Synchronisation finden Sie unter [Primer zum Konfigurieren der Offline-Nutzung und Synchronisation](https://blogs.adobe.com/security/2009/05/primer_on_configuring_offline.html).
 
@@ -425,7 +425,7 @@ Diese Einstellungen steuern den im Dialogfeld für die Zertifikatauthentifizieru
 
 **Client-Zertifikatanzeige anpassen**
 
-**Nur Herausgeber von vertrauenswürdigen Berechtigungen anzeigen:** Wenn diese Option aktiviert ist, legt die Client-Anwendung dem Benutzer nur Zertifikate von Zertifizierungsstellen vor, die von AEM Forms laut Konfiguration als vertrauenswürdig eingestuft sind (siehe Verwalten von Zertifikaten und Berechtigungen.) Wenn diese Option nicht ausgewählt ist, wird der Person eine Liste aller Zertifikate angezeigt, die sich auf ihrem System befinden.
+**Nur Herausgeber von vertrauenswürdigen Berechtigungen anzeigen:** Wenn diese Option aktiviert ist, legt die Client-Anwendung dem Benutzer nur Zertifikate von Zertifizierungsstellen vor, die von AEM Forms laut Konfiguration als vertrauenswürdig eingestuft sind (siehe Verwalten von Zertifikaten und Berechtigungen.) Wenn diese Option nicht ausgewählt ist, wird dem Benutzer eine Liste aller Zertifikate im System des Benutzers angezeigt.
 
 ## Konfigurieren dynamischer Wasserzeichen {#configure-dynamic-watermarks}
 
@@ -558,7 +558,7 @@ Die Dokumentensicherheit generiert automatisch eine Einladungs-E-Mail zur Regist
 
 Die Registrierungs-E-Mail enthält einen Link zu einer Registrierungsseite sowie Informationen zur Registrierung.  Nachdem sich die eingeladene Person registriert hat, sendet die Dokumentensicherheit eine Aktivierungs-E-Mail mit einem Link zu einer Aktivierungsseite.  Nach der Aktivierung bleibt das Konto gültig, bis Sie es deaktivieren oder löschen.
 
-Wenn Sie die integrierte Registrierung aktivieren, geben Sie Ihren SMTP-Server, die Details der Registrierungs-E-Mail, die Zugriffsmöglichkeiten und den Text der E-Mail-Nachricht zum Zurücksetzen des Kennworts nur einmal an.  Bevor Sie die integrierte Registrierung aktivieren, stellen Sie sicher, dass Sie in der Benutzerverwaltung eine lokale Domäne erstellt und den entsprechenden Benutzenden und Gruppen in Ihrem Unternehmen die Rolle „Dokumentensicherheit – Benutzer einladen“ zugewiesen haben. (Siehe [Lokale Domain hinzufügen](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) und [Rollen erstellen und konfigurieren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Wenn Sie „Integrierte Registrierung“ nicht verwenden, müssen Sie über ein eigenes mit dem AEM Forms-SDK erstelltes Benutzerregistrierungssystem verfügen. Siehe die Hilfe zu „Entwickeln von SPIs für AEM-Formulare“ in [Programmieren mit AEM Forms](/help/forms/developing/introducing-java-api-soap-quick.md). Wenn Sie die integrierte Registrierung nicht verwenden, ist es ratsam, eine Meldung in der Aktivierungs-E-Mail sowie auf dem Client-Anmeldebildschirm zu konfigurieren, um Benutzende zu informieren, wie sie die Admins für ein neues Kennwort oder andere Informationen kontaktieren können.
+Wenn Sie die integrierte Registrierung aktivieren, geben Sie Ihren SMTP-Server, die Details der Registrierungs-E-Mail, die Zugriffsmöglichkeiten und den Text der E-Mail-Nachricht zum Zurücksetzen des Kennworts nur einmal an.  Bevor Sie die integrierte Registrierung aktivieren, stellen Sie sicher, dass Sie in der Benutzerverwaltung eine lokale Domäne erstellt und den entsprechenden Benutzenden und Gruppen in Ihrem Unternehmen die Rolle „Dokumentensicherheit – Benutzer einladen“ zugewiesen haben. (Siehe [Lokale Domain hinzufügen](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) und [Rollen erstellen und konfigurieren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Wenn Sie keine integrierte Registrierung verwenden, müssen Sie über ein eigenes Benutzerregistrierungssystem verfügen, das mithilfe der AEM Forms-SDK erstellt wurde. Siehe die Hilfe zu „Entwickeln von SPIs für AEM-Formulare“ in [Programmieren mit AEM Forms](/help/forms/developing/introducing-java-api-soap-quick.md). Wenn Sie die integrierte Registrierung nicht verwenden, ist es ratsam, eine Meldung in der Aktivierungs-E-Mail sowie auf dem Client-Anmeldebildschirm zu konfigurieren, um Benutzende zu informieren, wie sie die Admins für ein neues Kennwort oder andere Informationen kontaktieren können.
 
 **Aktivieren und Konfigurieren der Registrierung für eingeladene Benutzende**
 

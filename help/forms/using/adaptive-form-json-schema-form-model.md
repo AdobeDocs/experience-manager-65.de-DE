@@ -91,11 +91,11 @@ Diese Zuordnung von JSON-Elementen zu Komponenten adaptiver Formulare ist wie fo
   </tr>
   <tr>
    <td>Zahleneigenschaft<br /> </td>
-   <td>Numerisches Feld mit Subtyp „float“.<br /> </td>
+   <td>Numerisches Feld mit Subtyp „float“<br /> </td>
   </tr>
   <tr>
    <td>Ganzzahl-Eigenschaft<br /> </td>
-   <td>Numerisches Feld mit Subtyp „integer“.<br /> </td>
+   <td>Numerisches Feld mit Subtyp „integer“<br /> </td>
   </tr>
   <tr>
    <td>Boolesche Eigenschaft<br /> </td>

@@ -12,7 +12,7 @@ role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '301'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 Eine *Berechtigung* enthält Informationen zu Ihrem privaten Schlüssel, der zum Signieren bzw. Identifizieren von Dokumenten benötigt wird. Ein *Zertifikat* enthält Informationen zum öffentlichen Schlüssel, den Sie für die Trust Store-Verwaltung konfigurieren. AEM Forms verwendet Zertifikate und Berechtigungen für mehrere Zwecke:
 
 * Acrobat Reader DC Extensions verwendet Anmeldeinformationen zur Aktivierung von Adobe Reader-Verwendungsrechten in PDF-Dokumenten. (Siehe [Konfigurieren von Berechtigungen für die Verwendung mit Acrobat Reader DC-Erweiterungen](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
-* Sie können Rights Management konfigurieren, um nur Berechtigungen vertrauenswürdiger Herausgeberinnen und Herausgeber für die Verwendung in Acrobat anzuzeigen.  (Siehe [Konfigurieren der Anzeigeeinstellungen für Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).)  Der CN (Common Name) muss im Zertifikat vorhanden sein.
+* Sie können Rights Management konfigurieren, um nur Berechtigungen vertrauenswürdiger Herausgeberinnen und Herausgeber für die Verwendung in Acrobat anzuzeigen.  (Siehe [Konfigurieren der Zertifikatanzeigeeinstellungen](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) Der Gebrauchsname (CN) muss im Rights Management vorhanden sein.
 * Der Signature-Dienst greift auf Zertifikate und Berechtigungen zu.  Weitere Informationen zum Signature-Dienst finden Sie in der [Dienste-Referenz](https://www.adobe.com/go/learn_aemforms_services_65_de).
 
 **Generieren eines Schlüsselpaars**

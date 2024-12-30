@@ -12,7 +12,7 @@ role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '7403'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -226,7 +226,7 @@ Mit diesen Optionen werden Farb-, Graustufen- und Schwarzweißbilder konfigurier
 
 **Kurzberechnung auf**: Wählt ein Pixel in der Mitte des Auswahlbereichs aus und ersetzt den gesamten Bereich durch dieses Pixel mit der angegebenen Auflösung. Die Kurzberechnung verkürzt im Vergleich zur Neuberechnung die Konvertierungsdauer deutlich, führt jedoch zu weniger feinen bzw. weniger regelmäßigen Bildern.
 
-Die Auflösungseinstellung für Farben und Graustufen sollte dem 1,5- bis 2-Fachen der Rasterweitenlinierung entsprechen, mit der die Datei gedruckt wird. (Sofern Sie diese empfohlene Auflösungseinstellung nicht unterschreiten, sind Bilder ohne Geraden bzw. geometrische oder sich wiederholende Muster nicht von einer niedrigeren Auflösung betroffen.) Die Auflösung von Schwarzweißbildern sollte der des Ausgabegeräts entsprechen. Durch Speichern eines Schwarzweißbilds mit einer höheren Auflösung als 1500 dpi erhöht sich jedoch die Dateigröße, ohne dass sich die Bildqualität erkennbar verbessert.
+Die Auflösungseinstellung für Farben und Graustufen sollte dem 1,5- bis 2-Fachen der Rasterweitenlinierung entsprechen, mit der die Datei gedruckt wird. (Wenn Sie diese empfohlene Auflösungseinstellung nicht unterschreiten, werden Bilder, die keine geraden Linien oder geometrische oder sich wiederholende Muster enthalten, von einer niedrigeren Auflösung nicht beeinflusst.) Bei Schwarzweißbildern sollte die Auflösung mit der des Ausgabegeräts übereinstimmen. Durch Speichern eines Schwarzweißbilds mit einer höheren Auflösung als 1500 dpi erhöht sich jedoch die Dateigröße, ohne dass sich die Bildqualität erkennbar verbessert.
 
 Berücksichtigen Sie auch, ob Benutzende eine Seite vergrößern müssen. Wenn Sie beispielsweise ein PDF-Dokument einer Karte erstellen, sollten Sie eine höhere Bildauflösung in Betracht ziehen, damit Benutzende einen Kartenausschnitt vergrößern können.
 

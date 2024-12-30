@@ -12,13 +12,13 @@ role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '149'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
 # Angeben der XCI-Konfigurationsoptionen {#specifying-xci-configuration-options}
 
-Mit Forms können Sie eine benutzerdefinierte XCI-Datei angeben, die für das Rendern verwendet werden kann. (Siehe [Konfigurieren von Speicherorten für Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) Standardmäßig überschreibt Forms einige der in der XCI-Datei angegebenen Optionen, darunter die folgenden:
+Mit Forms können Sie eine benutzerdefinierte XCI-Datei angeben, die für das Rendern verwendet werden kann. (Siehe [Konfigurieren von Speicherorten für Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) Standardmäßig überschreibt Forms einige der in der XCI-Datei angegebenen Optionen, einschließlich der folgenden:
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`

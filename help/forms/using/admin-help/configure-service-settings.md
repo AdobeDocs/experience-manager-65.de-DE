@@ -12,7 +12,7 @@ role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '10824'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Sie können die Dienstverwaltungsseite verwenden, um Einstellungen für jeden de
 
 ## Einstellungen des Audit Workflow-Dienstes {#audit-workflow-service-settings}
 
-Workbench gibt Ihnen die Möglichkeit, Prozessinstanzen während der Ausführung zur Laufzeit aufzuzeichnen und anschließend wiederzugeben, um das Verhalten des Prozesses zu untersuchen. (Siehe [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de).) Zum Einsparen von Speicherplatz im Dateisystem des Formular-Servers können Sie die Menge der zu speichernden Prozessaufzeichnungsdaten begrenzen. Sie können die folgenden Eigenschaften des Audit Workflow-Dienstes (`AuditWorkflowService`) konfigurieren:
+Workbench gibt Ihnen die Möglichkeit, Prozessinstanzen während der Ausführung zur Laufzeit aufzuzeichnen und anschließend wiederzugeben, um das Verhalten des Prozesses zu untersuchen. (Siehe [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de).) Um im Dateisystem des Forms-Servers Speicherplatz zu sparen, können Sie die Menge der gespeicherten Prozessaufzeichnungsdaten begrenzen. Sie können die folgenden Eigenschaften des Audit Workflow-Dienstes (`AuditWorkflowService`) konfigurieren:
 
 **maxNumberOfRecordingInstances**: Die maximale Anzahl von zu speichernden Aufzeichnungen. Wenn die maximale Anzahl gespeichert ist, wird beim Erstellen einer neuen Aufzeichnung die älteste Aufzeichnung aus dem Dateisystem gelöscht. Diese Eigenschaft ist nützlich, wenn Sie dazu neigen, viele Aufzeichnungen zu erstellen, und alte Aufzeichnungen automatisch löschen möchten. Der Standardwert ist 50.
 
@@ -295,7 +295,7 @@ Sonderzeichen in Benutzernamen (nur Windows)**: Gibt Zeichen an, welche die Vorg
 
 Beim Erstellen eines Guides werden einige Ressourcen, wie z. B. die Guide-Definition, in den Guide eingebettet. Die Ressourcen können auch als Verweise auf Anwendungs-Assets vorhanden sein, die lokal oder auf dem AEM-Formular-Server gespeichert sind. Der Guide enthält keine Daten und die Werte für den Absendeort und die Eingaben sind nicht für alle externen Umgebungen geeignet.
 
-In den meisten Fällen reichen die standardmäßigen Render-Dienste für Guides aus, um einen Guide für die Verwendung in Workspace oder anderen externen Umgebungen vorzubereiten. (In der Ansicht „Dienste“ in Workbench ist der Standarddienst „Guides (System)/Processes/Render Guide - 1.0“.) Mit dem Guide Utilities-Dienst (`GuidesUtility`) können Sie, sofern erforderlich, einen benutzerdefinierten Prozess zum Rendern eines Guides erstellen.
+In den meisten Fällen reichen die standardmäßigen Render-Dienste für Guides aus, um einen Guide für die Verwendung in Workspace oder anderen externen Umgebungen vorzubereiten. (In der Ansicht „Services“ ist in Workbench der standardmäßige Service Guides (System)/Processes/Render Guide - 1.0.) Mit dem Guide Utilities-Dienst (`GuidesUtility`) können Sie, sofern erforderlich, einen benutzerdefinierten Prozess zum Wiedergeben eines Guides erstellen.
 
 Mithilfe der Guide Utilities-Vorgänge können Sie einem Prozess die folgenden Guide-Rendering-Aufgaben hinzufügen:
 
@@ -316,7 +316,7 @@ Die Standardwerte für den Guide Utilities-Dienst unterstützen die meisten Anwe
 
 **collateralExpiryInSeconds**: Das Intervall in Sekunden, nach dem eine Anforderung für einen Zusatz von einem Client abläuft. Der Standardwert ist 315576000.
 
-**mismatchExpiryInSeconds**: Das Intervall in Sekunden, nach dem eine Anforderung für einen Zusatz von einem Client abläuft, wenn das eTag (Entity Tag) nicht übereinstimmt. (Ein eTag ist eine HTTP-Antwortkopfzeile.) Der Standardwert ist 1.
+**mismatchExpiryInSeconds**: Das Intervall in Sekunden, nach dem eine Anforderung für einen Zusatz von einem Client abläuft, wenn das eTag (Entity Tag) nicht übereinstimmt. (Ein eTag ist eine HTTP-Antwort-Kopfzeile.) Der Standardwert ist 1.
 
 **guideContext**: Der Kontextstamm des Web-Programms Guides. Stimmt mit dem in der Guides-Webanwendung festgelegten Wert überein. Die Standardeinstellung ist /Guides/.
 
@@ -688,7 +688,7 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar.
 
 ## Einstellungen des Watched Folder-Dienstes {#watched-folder-service-settings}
 
-Der Watched Folder-Dienst (`WatchedFolder`) konfiguriert gemeinsame Attribute für alle Endpunkte überwachter Ordner. Außerdem werden Standardwerte für Endpunkte überwachter Ordner bereitgestellt. (Siehe [Konfigurieren von Endpunkten für überwachte Ordner](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Er wird weder durch externe Client-Anwendungen aufgerufen noch in Prozessen verwendet, die in Workbench erstellt werden.
+Der Watched Folder-Dienst (`WatchedFolder`) konfiguriert gemeinsame Attribute für alle Endpunkte überwachter Ordner. Außerdem werden Standardwerte für Endpunkte überwachter Ordner bereitgestellt. (Siehe [Endpunkte für überwachte Ordner konfigurieren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Es wird nicht von externen Client-Anwendungen aufgerufen oder in in Workbench erstellten Prozessen verwendet.
 
 Folgende Einstellungen sind für den Watched Folder-Dienst verfügbar:
 

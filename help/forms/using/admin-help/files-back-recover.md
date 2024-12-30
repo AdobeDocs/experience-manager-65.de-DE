@@ -12,7 +12,7 @@ role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '2017'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -110,7 +110,7 @@ DB2 verfügt über integrierte Funktionen zum Sichern einer Datenbank in Tivoli 
 
 ### Oracle {#oracle}
 
-Verwenden Sie Snapshot-Sicherungen oder konfigurieren Sie Ihre Oracle-Datenbank für die Ausführung im Archivprotokollmodus.  (Siehe [Oracle Backup: Eine Einführung](https://www.databasedesign-resource.com/oracle-backup.md)) Weitere Informationen zum Sichern und Wiederherstellen von Oracle-Datenbanken finden Sie auf den folgenden Sites:
+Verwenden Sie Snapshot-Sicherungen oder konfigurieren Sie Ihre Oracle-Datenbank für die Ausführung im Archivprotokollmodus.  (Siehe [Oracle-Backup: Eine Einführung](https://www.databasedesign-resource.com/oracle-backup.md).) Weitere Informationen zum Sichern und Wiederherstellen der Oracle-Datenbank finden Sie auf den folgenden Websites:
 
 [Oracle Backup and Recovery:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Erläutert die Konzepte bei Sicherung und Wiederherstellung und beschreibt detailliert die gängigsten Verfahren zum Verwenden von Recovery Manager (RMAN) für die Sicherung, Wiederherstellung und Berichterstellung und bietet weitere Informationen zum Entwickeln einer Sicherungs- und Wiederherstellungsstrategie.
 
@@ -131,7 +131,7 @@ Weitere Informationen finden Sie unter [Sicherung und Wiederherstellung](https:/
 
 ### MySQL {#mysql}
 
-Verwenden Sie MySQLAdmin oder ändern Sie die INI-Dateien unter Windows so, dass die MySQL-Datenbank im binären Protokollmodus ausgeführt wird.  (Siehe [Binäre Protokollierung in MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).)  Ein Tool für die Sicherung bei laufendem Betrieb für MySQL ist außerdem bei InnoBase Software verfügbar.  (Siehe [Innobase-Sicherungen im laufenden Betrieb [Hot Backup]](https://www.innodb.com/hot-backup/features.md).)
+Verwenden Sie MySQLAdmin oder ändern Sie die INI-Dateien unter Windows so, dass die MySQL-Datenbank im binären Protokollmodus ausgeführt wird.  (Siehe [MySQL-Binärprotokollierung](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Ein Hot-Backup-Tool für MySQL ist auch von der InnoBase-Software verfügbar. (Siehe [Innobase-Sicherungen im laufenden Betrieb [Hot Backup]](https://www.innodb.com/hot-backup/features.md).)
 
 >[!NOTE]
 >

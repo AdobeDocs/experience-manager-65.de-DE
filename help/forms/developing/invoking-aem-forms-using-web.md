@@ -12,7 +12,7 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '9814'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -1229,7 +1229,7 @@ Ein Client-Programm kann die Bestätigung von jeder AuthenticationManager-API in
 * Authentifizieren des Benutzers mithilfe einer der Authentifizierungsmethoden, die von der AuthenticationManager-API verfügbar gemacht werden. Normalerweise würden der Benutzername und das Kennwort verwendet. Sie können jedoch auch die Zertifikatauthentifizierung verwenden.
 * Mithilfe der Methode `AuthenticationManager.getAuthResultOnBehalfOfUser`. Mithilfe dieser Methode kann ein Client-Programm für einen beliebigen AEM Forms-Benutzer ein `AuthResult`-Objekt abrufen.
 
-AEM Forms-Benutzende können mithilfe eines SAML-Tokens authentifiziert werden, das abgerufen wird. Diese SAML-Bestätigung (XML-Fragment) kann als Teil der WS-Security-Kopfzeile mit dem Aufruf des Web-Services zur Benutzerauthentifizierung gesendet werden. In der Regel hat ein Client-Programm einen Benutzer authentifiziert, aber die Anmeldeinformationen des Benutzers nicht gespeichert. (Oder der Benutzer hat sich bei diesem Client über einen anderen Mechanismus als die Verwendung eines Benutzernamens und Kennworts angemeldet.) In dieser Situation muss das Client-Programm AEM Forms aufrufen und einen bestimmten Benutzer verkörpern, der berechtigt ist, AEM Forms aufzurufen.
+AEM Forms-Benutzende können mithilfe eines SAML-Tokens authentifiziert werden, das abgerufen wird. Diese SAML-Bestätigung (XML-Fragment) kann als Teil der WS-Security-Kopfzeile mit dem Aufruf des Web-Services zur Benutzerauthentifizierung gesendet werden. In der Regel hat ein Client-Programm einen Benutzer authentifiziert, aber die Anmeldeinformationen des Benutzers nicht gespeichert. (Oder der Benutzer hat sich bei diesem Client über einen anderen Mechanismus als die Verwendung eines Benutzernamens und Kennworts angemeldet.) In diesem Fall muss das Client-Programm AEM Forms aufrufen und einen bestimmten Benutzer verkörpern, der berechtigt ist, AEM Forms aufzurufen.
 
 Um einen bestimmten Benutzer zu verkörpern, rufen Sie die Methode `AuthenticationManager.getAuthResultOnBehalfOfUser` mithilfe eines Web-Services auf. Diese Methode gibt eine `AuthResult`-Instanz zurück, die die SAML-Bestätigung für diesen Benutzer enthält.
 

@@ -1,6 +1,6 @@
 ---
 title: Tutorials
-description: Beispiele zur Unterstützung beim Lernen und Arbeiten mit Adobe Experience Manager (AEM) Communities Social Component Framework (SCF)
+description: Beispiele für die Hilfe beim Lernen und Arbeiten mit dem Adobe Experience Manager (AEM) Communities Social Component Framework (SCF)
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -18,37 +18,37 @@ ht-degree: 2%
 
 # Tutorials {#tutorials}
 
-Dies sind Beispiele, die Ihnen beim Lernen und Arbeiten mit Adobe Experience Manager (AEM) 6.1 Communities [Social Component Framework (SCF)](scf.md) helfen.
+Dies sind Beispiele, die beim Lernen und Arbeiten mit Adobe Experience Manager (AEM) 6.1 Communities (Social Component [ Framework (SCF)) hilfreich ](scf.md).
 
-## Clientseitige Anpassung {#client-side-customization}
+## Client-seitige Anpassung {#client-side-customization}
 
 Siehe auch:
 
-* [Clientseitige Anpassung von SCF](client-customize.md)
+* [Client-seitige SCF-Anpassung](client-customize.md)
 
-* [Handbuch zu Community-Komponenten](components-guide.md)
+* [Handbuch der Community-Komponenten](components-guide.md)
 
-* [Komponente &quot;Overlay Comments&quot;](overlay-comments.md)
+* [Überlagern der Komponente „Kommentare“](overlay-comments.md)
 
-* [Erweitern der Kommentarkomponente](extend-comments.md)
+* [Komponente „Kommentare erweitern“](extend-comments.md)
 
-## Serverseitige Anpassung {#server-side-customization}
+## Server-seitige Anpassung {#server-side-customization}
 
-Siehe auch [SCF Server-seitige Anpassung](server-customize.md).
+Siehe auch [Server-seitige Anpassung von SCF](server-customize.md).
 
-Beispielcode ist im Repository [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) verfügbar:
+Beispielcode ist im [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud)-Repository verfügbar:
 
-* [SCF-Komponentenbeispiel anpassen](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
+* [Beispiel für die Anpassung einer SCF-Komponente](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
-* [Beispiel für eine SCF-Komponente für Überlagerung](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
+* [Beispiel für Überlagerungsskriptkomponenten](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
 
 * [Beispiel für SCF-Komponente erweitern](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
 
 ## Anleitungen {#how-to-instructions}
 
-* [AEM Communities To do MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
+* [AEM Communities TODO MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
-  ToDo MVC demonstriert, wie eine SCF+SRP-Komponente von Grund auf neu entwickelt wird.
+  In ToDo MVC wird gezeigt, wie eine SCF+SRP-Komponente von Grund auf neu entwickelt wird.
 
 * [Erste Schritte mit AEM Communities](getting-started.md)
 
@@ -58,15 +58,15 @@ Beispielcode ist im Repository [Adobe Experience Cloud GitHub](https://github.co
 
 * [Erstellen einer Beispielseite](create-sample-page.md)
 
-## Demobenutzer {#demo-users}
+## Demo-Benutzer {#demo-users}
 
-Das Geometrixx samples-Paket enthält Demobenutzer. Es gibt oft einen Unterschied im Erlebnis zwischen einem Besucher (nicht angemeldet) oder einem Mitglied (angemeldet). Solange die Geometrixx samples-Pakete installiert bleiben, können Sie diese Benutzer verwenden, um einen angemeldeten Status zu simulieren, wenn Sie mit dem [Community Components Guide](components-guide.md) arbeiten.
+Das Geometrixx-Beispielpaket enthält Demo-Benutzer. Oft besteht ein Unterschied im Erlebnis zwischen Besucher (nicht angemeldet) und Mitglied (angemeldet). Und solange die Geometrixx-Beispielpakete installiert bleiben, können Sie diese Benutzenden verwenden, um einen angemeldeten Status zu simulieren, wenn Sie mit dem [Community-Komponenten-Handbuch](components-guide.md)
 
-Um eine vollständige Liste der Demobenutzer zu erhalten, navigieren Sie über die Leiste zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Sicherheit > Benutzer]**. Oder verwenden Sie die klassische Benutzeroberfläche [Sicherheitskonsole](http://localhost:4502/useradmin) für die Verwaltung von Benutzern und Gruppen.
+Eine vollständige Liste der Demo-Benutzer finden Sie in der Leiste unter **[!UICONTROL >]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Sicherheit > Benutzer]**. Oder verwenden Sie die klassische Benutzeroberfläche [Sicherheitskonsole](http://localhost:4502/useradmin) zum Verwalten von Benutzern und Gruppen.
 
-Wenn eine [Community-Site erstellt wurde](getting-started.md), können Demobenutzer den [Community-Benutzergruppen](users.md) zugewiesen werden.
+Wenn eine [Community-Site erstellt wurde](getting-started.md) ist es möglich, Demo-Benutzer ihren [Community-Benutzergruppen“ ](users.md).
 
-***user id* / *password***:
+***Benutzer-ID* / *Kennwort***:
 
 * aaron.mcdonald@mailinator.com / password
 * emily.andrews@mailinator.com / password

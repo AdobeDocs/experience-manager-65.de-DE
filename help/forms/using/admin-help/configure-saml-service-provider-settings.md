@@ -12,7 +12,7 @@ role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ Security Assertion Markup Language (SAML) ist eine der Optionen, die Sie beim Ko
 Eine Erläuterung von SAML finden Sie unter [Security Assertion Markup Language (SAML) V2.0 Technische Übersicht](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Benutzerverwaltung“ > „Konfiguration“ > „SAML-Dienstanbietereinstellungen“.
-1. Geben Sie in das Feld „Dienstanbieter-Entitäts-ID“ eine eindeutige ID als Kennung für die AEM Forms-Dienstanbieterimplementierung ein.  Sie müssen diese eindeutige ID auch beim Konfigurieren Ihres Identitätsanbieters (IDP) (z. B. `um.lc.com` angeben.) Sie können außerdem die URL verwenden, die zum Zugreifen auf AEM Forms verwendet wird (z. B. `https://AEMformsserver`).
+1. Geben Sie in das Feld „Dienstanbieter-Entitäts-ID“ eine eindeutige ID als Kennung für die AEM Forms-Dienstanbieterimplementierung ein.  Sie müssen diese eindeutige ID auch beim Konfigurieren Ihres Identitätsanbieters (IDP) angeben (z. B. `um.lc.com`.). Sie können auch die URL verwenden, die für den Zugriff auf AEM-Formulare verwendet wird (z. B. `https://AEMformsserver`).
 1. Geben Sie in das Feld für die Dienstanbieter-Basis-URL die Basis-URL für Ihren Formular-Server ein (z. B. `https://AEMformsserver:8080`).
 1. (Optional) Wenn Sie möchten, dass AEM Forms signierte Authentifizierungsanforderungen an den Identitätsanbieter sendet, führen Sie die folgenden Aufgaben aus:
 

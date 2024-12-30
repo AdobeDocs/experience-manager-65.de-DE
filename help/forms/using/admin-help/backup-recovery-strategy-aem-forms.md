@@ -93,7 +93,7 @@ Wenn die AEM Forms-Hauptdatenbank verschoben oder geändert wird, lesen Sie die 
 
 >[!NOTE]
 > 
-> Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ### Ändern des AEM Forms-Host-Namen oder der IP-Adresse {#changing-the-aem-forms-hostname-or-ip-address}
 

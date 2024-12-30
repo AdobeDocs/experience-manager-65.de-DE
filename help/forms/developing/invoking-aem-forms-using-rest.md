@@ -12,7 +12,7 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2481'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Beim Aufrufen von AEM Forms-Services mithilfe von REST-Anfragen werden die folge
 
   Wenn ein Forms-Service einen Parameter `com.adobe.idp.Document` benötigt, kann der Service nur mithilfe der HTTP-POST-Methode aufgerufen werden. Wenn der Service einen Parameter `com.adobe.idp.Document` erfordert, wird der Textkörper der HTTP-Anfrage zum Inhalt des Eingabedokumenobjekts.
 
-  Wenn für einen AEM Forms-Service mehrere Eingabeparameter erforderlich sind, muss der Textkörper der HTTP-Anfrage eine mehrteilige MIME-Nachricht gemäß RFC 1867 sein. (RFC 1867 ist ein Standard, der von Webbrowsern zum Hochladen von Dateien auf Websites verwendet wird.) Jeder Eingabeparameter muss als separater Teil der mehrteiligen Nachricht gesendet werden und im Format `multipart/form-data` codiert sein. Der Name jedes Teils muss mit dem Namen des Parameters übereinstimmen.
+  Wenn für einen AEM Forms-Service mehrere Eingabeparameter erforderlich sind, muss der Textkörper der HTTP-Anfrage eine mehrteilige MIME-Nachricht gemäß RFC 1867 sein. (RFC 1867 ist ein Standard, der von Webbrowsern zum Hochladen von Dateien auf Websites verwendet wird.) Jeder Eingabeparameter muss als separater Teil der mehrteiligen Nachricht gesendet werden und im `multipart/form-data` Format codiert sein. Der Name jedes Teils muss mit dem Namen des Parameters übereinstimmen.
 
   Listen und Zuordnungen werden auch als Eingabewerte für AEM Forms-Prozesse verwendet, die in Workbench erstellt wurden. Daher können Sie diese Datentypen bei Verwendung einer REST-Anfrage verwenden. Java-Arrays werden nicht unterstützt, da sie nicht als Eingabewert für einen AEM Forms-Prozess dienen.
 

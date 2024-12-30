@@ -12,7 +12,7 @@ feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '7848'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -209,7 +209,7 @@ So konvertieren Sie ein Microsoft Word-Dokument mithilfe der Generate PDF-API (W
 1. Erstellen Sie einen Generate PDF-Client.
 
    * Erstellen Sie ein `GeneratePDFServiceClient`-Objekt unter Verwendung seines standardmäßigen Konstruktors.
-   * Erstellen Sie ein `GeneratePDFServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Sie brauchen das Attribut `lc_version` nicht zu verwenden. Geben Sie jedoch `?blob=mtom` an.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `GeneratePDFServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.). Sie müssen das `lc_version`-Attribut nicht verwenden. Geben Sie jedoch `?blob=mtom` an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des Feldes `GeneratePDFServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
@@ -366,7 +366,7 @@ So konvertieren Sie HTML-Inhalte mithilfe der Generate PDF-API (Webservice) in e
 1. Erstellen Sie einen Generate PDF-Client.
 
    * Erstellen Sie ein `GeneratePDFServiceClient`-Objekt unter Verwendung seines standardmäßigen Konstruktors.
-   * Erstellen Sie ein `GeneratePDFServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Sie brauchen das Attribut `lc_version` nicht zu verwenden. Geben Sie jedoch `?blob=mtom` an.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `GeneratePDFServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.). Sie müssen das `lc_version`-Attribut nicht verwenden. Geben Sie jedoch `?blob=mtom` an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des Feldes `GeneratePDFServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
@@ -517,7 +517,7 @@ Konvertieren Sie ein PDF-Dokument mithilfe der Generate PDF API (Webservice) in 
 1. Erstellen Sie einen Generate PDF-Client.
 
    * Erstellen Sie ein `GeneratePDFServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
-   * Erstellen Sie ein `GeneratePDFServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Sie brauchen das Attribut `lc_version` nicht zu verwenden. Geben Sie jedoch `?blob=mtom` an.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `GeneratePDFServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.). Sie müssen das `lc_version`-Attribut nicht verwenden. Geben Sie jedoch `?blob=mtom` an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des Feldes `GeneratePDFServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
@@ -731,7 +731,7 @@ Nachdem Sie diese XML-Dateien zur Datei „adobe-appmondata.jar“ hinzugefügt 
 1. Öffnen Sie mit einem Tool wie WinZip oder WinRAR die Datei adobe-livecycle-native-jboss-x86_win32.earfile > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar.
 1. Fügen Sie die Dialogfeld- und Skript-XML-Dateien zur Datei „appmondata.jar“ hinzu oder ändern Sie bestehende XML-Dateien in dieser Datei. (Siehe [Erstellen oder Ändern einer XML-Skript-Datei für ein natives Programm](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application) und [Erstellen oder Ändern einer zusätzlichen XML-Dialogfelddatei für ein natives Programm](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).)
 1. Öffnen Sie mit einem Tool wie WinZip oder WinRAR die Datei adobe-generatepdf-dsc.jar > adobe-appmondata.jar.
-1. Fügen Sie die Dialogfeld- und Skript-XML-Dateien zur Datei „appmondata.jar“ hinzu oder ändern Sie bestehende XML-Dateien in dieser Datei. (Siehe [Erstellen oder Ändern einer XML-Skript-Datei für ein natives Programm](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application) und [Erstellen oder Ändern einer zusätzlichen XML-Dialogfelddatei für ein natives Programm](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).) Nachdem Sie die XML-Dateien zur Datei „adobe-appmondata.jar“ hinzugefügt haben, platzieren Sie die neue Datei „adobe-appmondata.jar“ in die Datei „adobe-generatepdf-dsc.jar“.
+1. Fügen Sie die Dialogfeld- und Skript-XML-Dateien zur Datei „appmondata.jar“ hinzu oder ändern Sie bestehende XML-Dateien in dieser Datei. (Siehe [Erstellen oder Ändern einer XML-Skriptdatei für ein natives Programm](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application) und [Erstellen oder Ändern einer zusätzlichen XML-Dialogfelddatei für ein natives Programm](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).) Nachdem Sie die XML-Dateien zur Datei „adobe-appmondata.jar“ hinzugefügt haben, fügen Sie die neue Datei „adobe-appmondata.jar“ in die Datei „adobe-generatepdf-dsc.jar“ ein.
 1. Wenn Sie Unterstützung für ein zusätzliches natives Dateiformat hinzugefügt haben, erstellen Sie eine Systemumgebungsvariable, die den Pfad des Programms bereitstellt (siehe [Erstellen einer Umgebungsvariable zum Suchen des nativen Programms](converting-file-formats-pdf.md#creating-an-environment-variable-to-locate-the-native-application)).
 
 **So stellen Sie die GeneratePDF-Komponente erneut bereit**

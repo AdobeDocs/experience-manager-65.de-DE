@@ -12,7 +12,7 @@ role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1322'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -103,4 +103,4 @@ AEM Forms verwendet einen webdienstbasierten IPC/RPC-Mechanismus. Über diesen M
 Dieser Mechanismus unterstützt keine Online-Erstellung von HSM-Profilen oder Statusprüfungen.  Allerdings gibt es zwei Möglichkeiten, HSM-Profile zu erstellen und Statusprüfungen auszuführen:
 
 * Erstellen Sie eine AEM Forms-Client-Berechtigung durch Übergabe des Zertifikats der unterzeichnenden Person.  Führen Sie die Schritte unter [Konfigurieren von HSM-Support für AEM Forms ES mit Sun JDK auf Windows 64-Bit-Plattform](https://kb2.adobe.com/cps/808/cpsid_80835.html) aus. Der Web-Dienst-Speicherort wird als Berechtigungseigenschaft übergeben.  Offline-HSM-Profile, die entweder mit DER- oder SHA-1-Hexadezimal-Zertifikat erstellt wurden, werden ebenfalls unterstützt.  Wenn Sie jedoch aus einer früheren AEM Forms-Version auf AEM Forms aktualisiert haben, nehmen Sie Client-Änderungen vor, da die Berechtigung Zertifikats- und Web-Dienst-Informationen enthielt.
-* Der Speicherort des Web-Dienstes wird in der Administrationskonsole für den Signature-Dienst angegeben.  (Siehe [Einstellungen des Signature-Dienstes](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).)  Hier enthielt der Client nur den Alias des HSM-Profils im Trust Store.  Sie können diese Option nahtlos ohne Client-Änderungen verwenden, auch wenn Sie aus einer früheren AEM Forms-Version auf AEM Forms aktualisiert haben.  Diese Option unterstützt keine HSM-Profile, die ein SHA-1-Zertifikat verwenden.
+* Der Speicherort des Web-Dienstes wird in der Administrationskonsole für den Signature-Dienst angegeben.  (Siehe [Signature-Service-Einstellungen](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Hier trug der Client nur den Alias des HSM-Profils im Trust Store. Sie können diese Option nahtlos ohne Client-Änderungen verwenden, auch wenn Sie aus einer früheren AEM Forms-Version auf AEM Forms aktualisiert haben.  Diese Option unterstützt keine HSM-Profile, die ein SHA-1-Zertifikat verwenden.
