@@ -232,7 +232,7 @@ Adobe Campaign Classic:
 
 >[!NOTE]
 >
-Es ist zwar möglich, nicht genehmigte Inhalte mit einem Versand in Adobe Campaign zu synchronisieren, es ist jedoch nicht möglich, einen solchen Versand durchzuführen. Ein Versand mit Campaign lässt sich nur mit genehmigten Inhalten versenden.
+>Es ist zwar möglich, nicht genehmigte Inhalte mit einem Versand in Adobe Campaign zu synchronisieren, es ist jedoch nicht möglich, einen solchen Versand durchzuführen. Ein Versand mit Campaign lässt sich nur mit genehmigten Inhalten versenden.
 
 ## Verknüpfen von AEM mit Adobe Campaign Standard und Adobe Campaign Classic {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic}
 
@@ -256,7 +256,7 @@ Auf diese Weise können Sie den Inhalt versenden.  Ob ein Newsletter mit einem 
 
 >[!NOTE]
 >
-Ist ein Newsletter mit mehreren Bereitstellungen verknüpft, wird die Anzahl der verknüpften Bereitstellungen (nicht jedoch jede ID) angezeigt.
+>Ist ein Newsletter mit mehreren Bereitstellungen verknüpft, wird die Anzahl der verknüpften Bereitstellungen (nicht jedoch jede ID) angezeigt.
 
 So verknüpfen Sie in AEM erstellte Seiten mit Adobe Campaign-E-Mails:
 
@@ -272,7 +272,7 @@ So verknüpfen Sie in AEM erstellte Seiten mit Adobe Campaign-E-Mails:
 
    >[!NOTE]
    >
-   Wenn die Option **Mit Adobe Experience Manager-Inhalt verknüpfen** nicht in der Aktionsleiste angezeigt wird, prüfen Sie, ob der **Inhaltsbearbeitungsmodus** ordnungsgemäß konfiguriert und in den E-Mail-Einstellungen **Adobe Experience Manager** festgelegt wurde.
+   >Wenn die Option **Mit Adobe Experience Manager-Inhalt verknüpfen** nicht in der Aktionsleiste angezeigt wird, prüfen Sie, ob der **Inhaltsbearbeitungsmodus** ordnungsgemäß konfiguriert und in den E-Mail-Einstellungen **Adobe Experience Manager** festgelegt wurde.
 
    ![chlimage_1-38](assets/chlimage_1-38a.png)
 
@@ -287,7 +287,7 @@ So verknüpfen Sie in AEM erstellte Seiten mit Adobe Campaign-E-Mails:
 
    >[!NOTE]
    >
-   Standardmäßig werden die Inhalte ausgeblendet, die bereits mit einem Versand synchronisiert wurden. Sie können sie jedoch anzeigen und verwenden. Wenn Sie beispielsweise Inhalt als Vorlage für mehrere Sendungen verwenden möchten.
+   >Standardmäßig werden die Inhalte ausgeblendet, die bereits mit einem Versand synchronisiert wurden. Sie können sie jedoch anzeigen und verwenden. Wenn Sie beispielsweise Inhalt als Vorlage für mehrere Sendungen verwenden möchten.
 
    Wurde die E-Mail mit AEM-Inhalten verknüpft, können ihre Inhalte nicht in Adobe Campaign bearbeitet werden.
 
@@ -296,11 +296,11 @@ So verknüpfen Sie in AEM erstellte Seiten mit Adobe Campaign-E-Mails:
 
    >[!NOTE]
    >
-   Wenn der Inhalt in AEM aktualisiert wird, während er mit einer E-Mail verknüpft ist, wird er in Adobe Campaign automatisch während der Analyse aktualisiert.  Die Synchronisierung kann auch manuell mithilfe der Option **Adobe Experience Manager-Inhalt aktualisieren** in der Inhaltsaktionsleiste durchgeführt werden.
+   >Wenn der Inhalt in AEM aktualisiert wird, während er mit einer E-Mail verknüpft ist, wird er in Adobe Campaign automatisch während der Analyse aktualisiert.  Die Synchronisierung kann auch manuell mithilfe der Option **Adobe Experience Manager-Inhalt aktualisieren** in der Inhaltsaktionsleiste durchgeführt werden.
    >
-   Sie können die Verknüpfung einer E-Mail mit AEM-Inhalten löschen, indem Sie **Verknüpfung mit Adobe Experience Manager-Inhalt löschen** aus der Inhaltsaktionsleiste auswählen. Diese Schaltfläche steht nur zur Verfügung, wenn der Inhalt bereits mit dem Versand verknüpft ist.  Um einen anderen Inhalt mit einem Versand zu verknüpfen, müssen Sie die aktuelle Verknüpfung des Inhalts löschen, bevor Sie eine neue Verknüpfung erstellen können.
+   >Sie können die Verknüpfung einer E-Mail mit AEM-Inhalten löschen, indem Sie **Verknüpfung mit Adobe Experience Manager-Inhalt löschen** aus der Inhaltsaktionsleiste auswählen. Diese Schaltfläche steht nur zur Verfügung, wenn der Inhalt bereits mit dem Versand verknüpft ist.  Um einen anderen Inhalt mit einem Versand zu verknüpfen, müssen Sie die aktuelle Verknüpfung des Inhalts löschen, bevor Sie eine neue Verknüpfung erstellen können.
    >
-   Ist die Verknüpfung gelöscht, werden lokale Inhalte beibehalten und diese können in Adobe Campaign bearbeitet werden.  Wenn Sie den Inhalt nach der Änderung wieder verknüpfen, gehen alle Änderungen verloren.
+   >Ist die Verknüpfung gelöscht, werden lokale Inhalte beibehalten und diese können in Adobe Campaign bearbeitet werden.  Wenn Sie den Inhalt nach der Änderung wieder verknüpfen, gehen alle Änderungen verloren.
 
 ### Synchronisieren von in AEM erstelltem Inhalt mit einem Versand von Adobe Campaign Classic {#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic}
 
@@ -319,11 +319,11 @@ Ist ein Newsletter in AEM mit einer Bereitstellung verknüpft, wird der Bereitst
 
 >[!NOTE]
 >
-Ist der Newsletter mit mehreren Bereitstellungen verknüpft, wird die Anzahl der verknüpften Bereitstellungen (nicht jedoch jede ID) angezeigt.
+>Ist der Newsletter mit mehreren Bereitstellungen verknüpft, wird die Anzahl der verknüpften Bereitstellungen (nicht jedoch jede ID) angezeigt.
 >
-[!NOTE]
+>[!NOTE]
 >
-Der Workflow-Schritt **In Adobe Campaign veröffentlichen** ist in AEM 6.1 veraltet. Dieser Schritt war Teil der Integration von AEM 6.0 in Adobe Campaign und ist nicht mehr erforderlich.
+>Der Workflow-Schritt **In Adobe Campaign veröffentlichen** ist in AEM 6.1 veraltet. Dieser Schritt war Teil der Integration von AEM 6.0 in Adobe Campaign und ist nicht mehr erforderlich.
 
 So synchronisieren Sie in AEM erstellte Inhalte mit einem Versand von Adobe Campaign:
 
@@ -335,7 +335,7 @@ So synchronisieren Sie in AEM erstellte Inhalte mit einem Versand von Adobe Cam
 
    >[!NOTE]
    >
-   Sollte die Option **Synchronisieren** nicht in der Bereitstellungssymbolleiste angezeigt werden, prüfen Sie, ob das Feld **Inhaltsbearbeitungsmodus** in **AEM** richtig konfiguriert ist, indem Sie **Eigenschaften** > **Erweitert** auswählen.
+   >Sollte die Option **Synchronisieren** nicht in der Bereitstellungssymbolleiste angezeigt werden, prüfen Sie, ob das Feld **Inhaltsbearbeitungsmodus** in **AEM** richtig konfiguriert ist, indem Sie **Eigenschaften** > **Erweitert** auswählen.
 
    ![chlimage_1-41](assets/chlimage_1-41a.png)
 
@@ -350,7 +350,7 @@ So synchronisieren Sie in AEM erstellte Inhalte mit einem Versand von Adobe Cam
 
    >[!NOTE]
    >
-   Standardmäßig werden die Inhalte ausgeblendet, die bereits mit einem Versand synchronisiert wurden. Sie können sie jedoch anzeigen und verwenden. Wenn Sie beispielsweise Inhalt als Vorlage für mehrere Sendungen verwenden möchten.
+   >Standardmäßig werden die Inhalte ausgeblendet, die bereits mit einem Versand synchronisiert wurden. Sie können sie jedoch anzeigen und verwenden. Wenn Sie beispielsweise Inhalt als Vorlage für mehrere Sendungen verwenden möchten.
 
    ![chlimage_1-42](assets/chlimage_1-42a.png)
 
@@ -360,8 +360,8 @@ So synchronisieren Sie in AEM erstellte Inhalte mit einem Versand von Adobe Cam
 
    >[!NOTE]
    >
-   * Nachdem Versand und Inhalt synchronisiert worden sind, wird der Versandinhalt in Adobe Campaign schreibgeschützt. Die Betreffzeile der E-Mail und ihr Inhalt können nicht mehr geändert werden.
-   * Wenn der Inhalt in AEM aktualisiert wird, während er mit einem Versand in Adobe Campaign verknüpft ist, wird er während der Versandanalyse automatisch in dem Versand aktualisiert. Die Synchronisierung kann mithilfe der Schaltfläche **Inhalt jetzt aktualisieren** auch manuell durchgeführt werden.
-   * Die Synchronisierung von Bereitstellung und AEM-Inhalten kann mithilfe der Schaltfläche **Synchronisierung aufheben** abgebrochen werden. Dies ist nur verfügbar, wenn bereits ein Inhalt mit dem Versand synchronisiert wurde. Um einen anderen Inhalt mit einem Versand zu synchronisieren, müssen Sie die Synchronisierung des aktuellen Inhalts abbrechen, bevor Sie eine neue Verknüpfung erstellen können.
-   * Wenn die Synchronisierung aufgehoben wird, wird der lokale Inhalt beibehalten und kann in Adobe Campaign bearbeitet werden. Wenn Sie den Inhalt nach einer Änderung erneut synchronisieren, gehen alle Änderungen verloren.
-   * Bei wiederkehrenden und kontinuierlichen Sendungen wird die Synchronisierung mit AEM-Inhalten bei jeder Ausführung des Versands angehalten.
+   >* Nachdem Versand und Inhalt synchronisiert worden sind, wird der Versandinhalt in Adobe Campaign schreibgeschützt. Die Betreffzeile der E-Mail und ihr Inhalt können nicht mehr geändert werden.
+   >* Wenn der Inhalt in AEM aktualisiert wird, während er mit einem Versand in Adobe Campaign verknüpft ist, wird er während der Versandanalyse automatisch in dem Versand aktualisiert. Die Synchronisierung kann mithilfe der Schaltfläche **Inhalt jetzt aktualisieren** auch manuell durchgeführt werden.
+   >* Die Synchronisierung von Bereitstellung und AEM-Inhalten kann mithilfe der Schaltfläche **Synchronisierung aufheben** abgebrochen werden. Dies ist nur verfügbar, wenn bereits ein Inhalt mit dem Versand synchronisiert wurde. Um einen anderen Inhalt mit einem Versand zu synchronisieren, müssen Sie die Synchronisierung des aktuellen Inhalts abbrechen, bevor Sie eine neue Verknüpfung erstellen können.
+   >* Wenn die Synchronisierung aufgehoben wird, wird der lokale Inhalt beibehalten und kann in Adobe Campaign bearbeitet werden. Wenn Sie den Inhalt nach einer Änderung erneut synchronisieren, gehen alle Änderungen verloren.
+   >* Bei wiederkehrenden und kontinuierlichen Sendungen wird die Synchronisierung mit AEM-Inhalten bei jeder Ausführung des Versands angehalten.

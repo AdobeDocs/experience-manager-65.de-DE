@@ -48,7 +48,7 @@ Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-authoring
 
 >[!NOTE]
 >
-Die Tastaturbefehle des Editors sind immer aktiv, unabhängig davon, ob die [Tastaturbefehle der Konsole deaktiviert sind](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+>Die Tastaturbefehle des Editors sind immer aktiv, unabhängig davon, ob die [Tastaturbefehle der Konsole deaktiviert sind](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Betriebssystemspezifische Modifikatortasten {#os-specific-modifier-keys}
 
