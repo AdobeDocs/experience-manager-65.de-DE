@@ -461,7 +461,7 @@ Führen Sie die folgenden Schritte aus, um die Regeln zu schreiben:
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. Ziehen Sie das Feld **Gehalt des Partners** aus der Registerkarte „Formularobjekte“ in das Feld **Legen Sie das Objekt ab oder wählen Sie hier aus**. Stattdessen können Sie auch das Feld **Objekt hier einfügen oder auswählen** auswählen und das Feld **Gehalt des Partners** aus dem Popup-Menü wählen, in dem sämtliche Formularobjekte im Formular aufgeführt sind.
+1. Ziehen Sie das Feld **Partnergehalt** aus der Registerkarte „Formularobjekte“ in das Feld **Legen Sie das Objekt ab oder wählen Sie hier aus**. Stattdessen können Sie auch das Feld **Objekt hier einfügen oder auswählen** auswählen und das Feld **Gehalt des Partners** aus dem Popup-Menü wählen, in dem sämtliche Formularobjekte im Formular aufgeführt sind.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 

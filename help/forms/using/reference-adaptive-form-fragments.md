@@ -81,7 +81,7 @@ Enthält Felder für Informationen über ein oder mehrere abhängige Familienmit
 
 ](assets/dependents-info-1.png)-->
 
-## Beschäftigungshintergrund {#employment-history}
+## Beschäftigungshistorie {#employment-history}
 
 Enthält Felder zur Erfassung der Beschäftigungshistorie. Es ermöglicht das Hinzufügen mehrerer Organisationen.
 
@@ -91,7 +91,7 @@ Enthält Felder zur Erfassung der Beschäftigungshistorie. Es ermöglicht das Hi
 
 ](assets/emp-history-1.png)-->
 
-## Umsatz und Ausgaben {#income-expenditure}
+## Einkommen und Ausgaben {#income-expenditure}
 
 Enthält Felder zur Erfassung von monatlichen Cashflows und Ausgaben. Formulare, in denen Benutzer finanzielle Details bereitstellen müssen, können dieses Fragment verwenden, um Einkommen und Ausgaben zu erfassen.
 

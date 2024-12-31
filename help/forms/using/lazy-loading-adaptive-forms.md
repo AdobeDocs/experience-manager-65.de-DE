@@ -1,5 +1,5 @@
 ---
-title: Verbessern der Performance umfangreicher Formulare durch verzögertes Laden
+title: 'Verbessern der Performance umfangreicher Formulare durch verzögertes Laden '
 description: Verzögertes Laden (Lazy Loading) verbessert die Leistung von umfangreichen und komplexen adaptiven Formularen erheblich, indem Formularfragmente erst dann initialisiert und geladen werden, wenn sie sichtbar werden.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop

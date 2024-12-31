@@ -1,6 +1,6 @@
 ---
 title: Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur
-description: Erfahren Sie, wie Sie adaptive Formulare in AEM mithilfe der Freihandsignatur signieren. Sie können die Freihandsignatur und den Signaturschritt verwenden, um die Signatur in einem Formular zu zeichnen.
+description: 'Erfahren Sie, wie Sie adaptive Formulare in AEM mithilfe der Freihandsignatur signieren. Sie können die Freihandsignatur und den Signaturschritt verwenden, um die Signatur in einem Formular zu zeichnen. '
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
@@ -56,7 +56,7 @@ Sie können das Symbol **Konfigurieren** ![configure](assets/configure.png) ausw
 
 1. Erstellen Sie ein adaptives Formular mit aktivierter Option „Datensatzdokument“ oder basierend auf eine Formularvorlage. Einzelschritte finden Sie unter [Erstellen eines adaptiven Formulars](../../forms/using/creating-adaptive-form.md).
 1. Ziehen Sie die Komponente **Freihandsignatur** aus dem Komponenten-Browser in das adaptive Formular.
-1. Wählen Sie das Symbol **Konfigurieren** ![configure](assets/configure.png) aus. Dadurch wird der Eigenschaftenbrowser geöffnet und Eigenschaften der Komponente „Freihandsignatur“ angezeigt. Konfigurieren Sie die Eigenschaften der Komponente „Freihandsignatur“.
+1. Wählen Sie das Symbol **Konfigurieren** ![configure](assets/configure.png) aus. Dadurch wird der Eigenschaften-Browser geöffnet und es werden die Eigenschaften der Komponente „Freihandsignatur“ angezeigt. Konfigurieren Sie die Eigenschaften der Komponente „Freihandsignatur“.
 1. Ziehen Sie die Signaturschritt-Komponente aus dem Komponenten-Browser in das adaptive Formular.
 
    >[!NOTE]

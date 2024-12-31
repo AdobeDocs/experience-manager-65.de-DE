@@ -24,7 +24,7 @@ Der Output-Dienst ist als OSGi-Dienst Teil der AEM-Dokumentendienste. Der Ausgab
 
 Dabei können Sie mit dem Output-Service Programme mit folgenden Funktionen erstellen:
 
-* Erzeugen fertiger Formulardokumente durch Füllen von Vorlagendateien mit XML-Daten
+* Erzeugen fertiger Formulardokumente durch Füllen von Vorlagendateien mit XML-Daten.
 * Generieren von Ausgabeformularen in verschiedenen Formaten einschließlich nicht interaktiver PDF-, PostScript-, PCL- und ZPL-Druckdatenströme
 * Generieren von druckbaren PDFs aus XFA-Formular-PDFs
 * Generieren von PDF-, PostScript-, PCL- und ZPL-Dokumenten in großen Mengen durch Zusammenführen mehrerer Datensätze mit den bereitgestellten Vorlagen

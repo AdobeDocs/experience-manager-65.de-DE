@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
 exl-id: 14a52bc1-c1b4-4a12-b8e1-54523e5f30bd
 source-git-commit: 23d3796e15294b0fc7486096ea02bcbedbed69f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 100%
 
@@ -252,7 +252,7 @@ Nachdem Sie Ihre Client-Bibliothek in Ihrer Forms CS-Umgebung bereitgestellt hab
 1. Öffnen Sie das Formular im Bearbeitungsmodus. Um ein Formular im Bearbeitungsmodus zu öffnen, wählen Sie ein Formular aus und wählen Sie dann **[!UICONTROL Bearbeiten]**.
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
 1. Klicken Sie auf das Symbol „Guide-Container-Eigenschaften“. Das Dialogfeld „Container für adaptive Formulare“ wird geöffnet.
-1. Öffnen Sie die Registerkarte **[!UICONTROL Allgemein]** und wählen Sie den Namen der Kategorie **[!UICONTROL der Client-Bibliothek]** aus der Dropdown-Liste aus (in diesem Fall wählen Sie `customfunctionscategory`).
+1. Öffnen Sie die Registerkarte **[!UICONTROL Einfach]** und wählen Sie den Namen der **[!UICONTROL Client-Bibliothekskategorie]** aus der Dropdown-Liste aus (in diesem Fall `customfunctionscategory`).
 
    ![Hinzufügen der benutzerdefinierten Funktion zur Client-Bibliothek](/help/forms/using//assets/custom-function-category-name-core-component.png)
 

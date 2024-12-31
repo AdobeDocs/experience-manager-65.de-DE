@@ -7,7 +7,7 @@ feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
 source-git-commit: 7f1283898cbeebdedb7bdea6f0a8d9db567617ee
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3385'
 ht-degree: 100%
 
@@ -158,8 +158,8 @@ Der Rückgabetyp gibt den Typ des Werts an, den die benutzerdefinierte Funktion 
 * number: Stellt einen einzelnen numerischen Wert dar.
 * boolean: Stellt einen einzelnen booleschen Wert dar (true oder false).
 * string[]: Stellt ein Array von Zeichenfolgenwerten dar.
-* number[]: Stellt ein Array von numerischen Werten dar.
-* boolean[]: Stellt ein Array von booleschen Werten dar.
+* number[]: Stellt ein Array numerischer Werte dar.
+* boolean[]: Stellt ein Array boolescher Werte dar.
 * date: Stellt einen einzelnen Datumswert dar.
 * date[]: Stellt ein Array von Datumswerten dar.
 * array: Stellt ein generisches Array dar, das Werte verschiedener Typen enthält.

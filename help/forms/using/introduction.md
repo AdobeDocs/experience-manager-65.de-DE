@@ -1,6 +1,6 @@
 ---
 title: Einführung in HTML5-Formulare
-description: „HTML5-Formulare“ ist eine neue Funktion in Adobe Experience Manager 6.0 (AEM 6.0), die XFA-Formularvorlagen im HTML5-Format rendern kann.
+description: '„HTML5-Formulare“ ist eine neue Funktion in Adobe Experience Manager 6.0 (AEM 6.0), die XFA-Formularvorlagen im HTML5-Format rendern kann. '
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65

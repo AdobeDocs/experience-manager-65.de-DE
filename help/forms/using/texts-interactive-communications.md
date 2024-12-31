@@ -1,6 +1,6 @@
 ---
 title: Texte in interaktiver Kommunikation
-description: 'Erstellen und Bearbeiten von Textdokumentfragmenten für interaktive Kommunikationen: Text ist eine der vier Arten von Dokumentfragmenten, die zum Erstellen von interaktive Kommunikationen verwendet werden. Die anderen drei sind Bedingungen, Listen und Layout-Fragmente.  '
+description: 'Erstellen und Bearbeiten von Textdokumentfragmenten für interaktive Kommunikationen: Text ist eine der vier Arten von Dokumentfragmenten, die zum Erstellen von interaktive Kommunikationen verwendet werden. Die anderen drei sind Bedingungen, Listen und Layout-Fragmente.'
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
