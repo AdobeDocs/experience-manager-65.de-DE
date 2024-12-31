@@ -95,7 +95,7 @@ Sie können das AEM-Benutzerprofil mithilfe der Benutzerprofil-Connector-Konfigu
 
 >[!NOTE]
 >
-Die Konfiguration des Cloud Services-Ordners ist erforderlich, um Cloud Services für RESTful-, SOAP- und OData-Services zu konfigurieren.
+>Die Konfiguration des Cloud Services-Ordners ist erforderlich, um Cloud Services für RESTful-, SOAP- und OData-Services zu konfigurieren.
 
 Alle Cloud-Service-Konfigurationen in AEM werden im Ordner `/conf` im AEM-Repository zusammengefasst. Standardmäßig enthält der Ordner `conf` den Ordner `global`, in dem Sie Cloud Service-Konfigurationen erstellen können. Sie müssen ihn jedoch manuell für Cloud-Konfigurationen aktivieren. Sie können auch zusätzliche Ordner in `conf` erstellen, um Cloud Service-Konfigurationen zu erstellen und zu organisieren.
 
@@ -193,8 +193,8 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Stellen Si
 
 >[!NOTE]
 >
-Das Formulardatenmodell unterstützt [OData Version 4](https://www.odata.org/documentation/).
-Eine schrittweise Anleitung zum Konfigurieren von Microsoft Dynamics 365, online oder On-Premise, finden Sie unter [Microsoft Dynamics OData-Konfiguration](/help/forms/using/ms-dynamics-odata-configuration.md).
+>Das Formulardatenmodell unterstützt [OData Version 4](https://www.odata.org/documentation/).
+>Eine schrittweise Anleitung zum Konfigurieren von Microsoft Dynamics 365, online oder On-Premise, finden Sie unter [Microsoft Dynamics OData-Konfiguration](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
@@ -208,7 +208,7 @@ Eine schrittweise Anleitung zum Konfigurieren von Microsoft Dynamics 365, online
 
    >[!NOTE]
    >
-   Wählen Sie den OAuth 2.0-Authentifizierungstyp, um eine Verbindung mit Microsoft Dynamics-Diensten herzustellen, die den OData-Endpunkt als Dienststamm nutzen.
+   >Wählen Sie den OAuth 2.0-Authentifizierungstyp, um eine Verbindung mit Microsoft Dynamics-Diensten herzustellen, die den OData-Endpunkt als Dienststamm nutzen.
 
 1. Wählen Sie **Erstellen**, um die Cloud-Konfiguration für den OData-Service zu erstellen.
 
