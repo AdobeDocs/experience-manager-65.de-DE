@@ -9,9 +9,9 @@ exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '671'
 ht-degree: 100%
 
 ---
@@ -23,6 +23,10 @@ Die Abwesenheitsfunktion ermöglicht es Benutzern und Administratoren, Zeiträum
 Beim Erstellen eines Prozesses können Workbench-Benutzende festlegen, ob eine Aufgabe aufgrund von Abwesenheitseinstellungen weitergeleitet werden darf.
 
 ## Anzeigen der Abwesenheitsinformationen von Benutzenden {#view-a-user-s-out-of-office-information}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Forms Workflow“ > „Abwesenheit“.
 1. Sie haben im Feld oben auf der Seite „Abwesenheit“ folgende Möglichkeiten:

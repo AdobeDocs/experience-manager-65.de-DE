@@ -8,14 +8,18 @@ feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '6188'
+source-wordcount: '6200'
 ht-degree: 100%
 
 ---
 
 # Konfigurieren von Dateitypeinstellungen {#configuring-file-type-settings}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 In PDF Generator können Sie die Anwendungseinstellungen für unterstützte Dateitypen einrichten. Unter Windows können Sie die Anwendungseinstellungen für jeden unterstützten Dateityp einrichten. Unter UNIX und Linux können Sie die Anwendungseinstellungen für HTML-to-PDF und OpenOffice einrichten.
 

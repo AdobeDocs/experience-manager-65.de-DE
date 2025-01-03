@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '10266'
+source-wordcount: '10278'
 ht-degree: 98%
 
 ---
 
 # Konfigurieren des Dokumentensicherheits-Servers {#configure-the-document-security-server}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Document Security“ > „Konfiguration“ > „Server-Konfiguration“.
 1. Konfigurieren Sie die Einstellungen und klicken Sie auf „OK“.

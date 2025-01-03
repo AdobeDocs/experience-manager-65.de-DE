@@ -9,9 +9,9 @@ exl-id: 5f4467c1-0f3f-4dc6-9bd5-98259f327295
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '636'
 ht-degree: 100%
 
 ---
@@ -39,6 +39,10 @@ Nach der Freigabe können diese Aufgaben von der Person mit Zugriff auf die Wart
 >Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
 
 ### Konfigurieren des Zugriffs auf eine ausgewählte Benutzerwarteschlange {#configuring-access-to-a-selected-user-queue}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 1. Melden Sie sich mit einem Adminkonto bei der Administrationskonsole an.
 1. Wählen Sie **Dienste** > **Forms-Workflow** > **Freigegebene Warteschlange**.

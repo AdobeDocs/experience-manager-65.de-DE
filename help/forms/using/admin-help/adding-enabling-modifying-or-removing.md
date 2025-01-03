@@ -9,14 +9,18 @@ exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '381'
 ht-degree: 100%
 
 ---
 
 # Hinzufügen, Aktivieren, Ändern oder Entfernen von Endpunkten {#adding-enabling-modifying-or-removing-endpoints}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 ## Hinzufügen eines Endpunkts zu einem Dienst {#add-an-endpoint-to-a-service}
 

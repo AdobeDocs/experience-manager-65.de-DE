@@ -9,9 +9,9 @@ exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2631'
+source-wordcount: '2643'
 ht-degree: 100%
 
 ---
@@ -35,6 +35,10 @@ Damit AEM Forms eingehende E-Mail-Nachrichten von Benutzern empfangen und verarb
 Wenn Ihre Prozesse so entworfen und implementiert sind, dass sie keine E-Mails benötigen, muss keine der Optionen auf der Seite „E-Mail-Einstellungen“ konfiguriert werden.
 
 ### Konfigurieren von Einstellungen für ausgehende E-Mails {#configure-outgoing-email-settings}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Forms Workflow“ > „Servereinstellungen“ > „E-Mail-Einstellungen“.
 1. Wählen Sie „Ausgehende Nachrichten aktivieren“ aus.

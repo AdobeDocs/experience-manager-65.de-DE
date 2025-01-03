@@ -9,14 +9,18 @@ exl-id: 7e29c9d4-fb82-4308-aac7-0f5cb1f4aef2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '159'
 ht-degree: 100%
 
 ---
 
 # Ändern der Reihenfolge der Auswertung für die Authentifizierung {#change-the-order-of-evaluation-for-authentication}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Wenn Sie mehrere Authentifizierungsanbieter konfiguriert haben, können Sie die Reihenfolge ändern, in der AEM Forms diese Anbieter zur Authentifizierung auswertet. Die Reihenfolge, in der die Authentifizierungsanbieter in der Datei „config.xml“ aufgelistet werden, bestimmt die Reihenfolge der Auswertung für die Authentifizierung.
 

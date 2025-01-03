@@ -9,9 +9,9 @@ exl-id: 21a2317d-3542-4ccb-98db-3cedf20c89ea
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1643'
 ht-degree: 100%
 
 ---
@@ -183,6 +183,10 @@ Wenn Sie einen Vorgang wiederholen, wird Forms Workflow eine Aufforderung zum Ne
 1. Wählen Sie den Vorgang aus und klicken Sie auf „Erneut versuchen“.
 
 ## Arbeiten mit Vorgängen {#working-with-operations}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Auf der Seite „Vorgangsdetails“ wird die Zusammenfassung eines in einem Prozess enthaltenen Vorgangs mit seinen aktuellen Benutzerzuweisungen angezeigt.
 

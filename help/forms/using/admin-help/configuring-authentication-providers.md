@@ -9,14 +9,18 @@ exl-id: d72a3977-1423-49e0-899b-234bb76be378
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1592'
 ht-degree: 100%
 
 ---
 
 # Konfigurieren von Authentifizierungsanbietern {#configuring-authentication-providers}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Hybrid-Domains erfordern mindestens einen Authentifizierungsanbieter und für Unternehmens-Domains ist mindestens ein Authentifizierungs- oder Ordneranbieter erforderlich.
 

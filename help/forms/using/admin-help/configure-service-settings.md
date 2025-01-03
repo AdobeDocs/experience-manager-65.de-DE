@@ -9,14 +9,18 @@ exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '10824'
+source-wordcount: '10836'
 ht-degree: 99%
 
 ---
 
 # Konfigurieren von Diensteinstellungen {#configure-service-settings}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Sie können die Dienstverwaltungsseite verwenden, um Einstellungen für jeden der Dienste zu konfigurieren, die Bestandteil von AEM Forms sind. Die verfügbaren Einstellungen sind vom zu konfigurierenden Dienst abhängig.
 

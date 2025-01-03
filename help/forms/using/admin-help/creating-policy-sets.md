@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: 736926af-ae41-4da3-b181-444de72407bd
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1309'
 ht-degree: 100%
 
 ---
 
 # Erstellen und Verwalten von Richtliniensätzen {#creating-and-managing-policy-sets}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Richtliniensätze dienen zum Gruppieren von Richtlinien mit einem gemeinsamen Geschäftszweck. Richtliniensätze können einer Teilmenge der Benutzenden im System zur Verfügung gestellt werden.
 

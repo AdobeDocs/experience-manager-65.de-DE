@@ -9,9 +9,9 @@ exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '558'
 ht-degree: 100%
 
 ---
@@ -36,6 +36,10 @@ Der Trust Store enthält möglicherweise mehr als eine Berechtigung für Acrobat
 >Sie können Berechtigungen auch programmgesteuert importieren und löschen. (Siehe [Programmieren mit AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de).)
 
 ## Importieren einer Berechtigung für Acrobat Reader DC-Erweiterungen {#import-a-acrobat-reader-dc-extensions-credential}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Klicken Sie auf „Importieren“ und wählen Sie unter „Trust Store-Typ“ die Berechtigung für Acrobat Reader DC-Erweiterungen aus.

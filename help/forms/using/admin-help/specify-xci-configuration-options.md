@@ -9,14 +9,18 @@ exl-id: 8fbff12a-4923-4151-a758-c1e44dee9160
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '161'
 ht-degree: 100%
 
 ---
 
 # Angeben von XCI-Konfigurationsoptionen {#specify-xci-configuration-options}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Mit Output können Sie eine benutzerdefinierte XCI-Datei angeben, die zum Rendern verwendet wird. Siehe [Dateispeicherorte für Output angeben](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).
 

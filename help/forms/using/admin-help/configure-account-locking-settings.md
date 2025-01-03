@@ -9,14 +9,18 @@ exl-id: eb8c748d-51d9-4684-97c5-e982ad84ba9f
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '208'
 ht-degree: 100%
 
 ---
 
 # Konfigurieren der Einstellungen für die Kontosperrung {#configure-account-locking-settings}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Wenn Sie eine Domain hinzufügen, geben Sie an, ob die Kontosperrung aktiviert werden soll. Wenn die Option „Kontosperrung aktivieren“ aktiviert ist, werden Benutzerkonten nach einer bestimmten Anzahl aufeinanderfolgender Authentifizierungsfehler gesperrt. Nach einem bestimmten Zeitraum können Benutzende dann eine erneute Authentifizierung versuchen. Dies verhindert, dass Benutzende versuchen, verschiedene Berechtigungskombinationen für den Systemzugriff zu verwenden.
 

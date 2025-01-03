@@ -9,14 +9,18 @@ exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '3796'
+source-wordcount: '3808'
 ht-degree: 99%
 
 ---
 
 # Konfigurieren von E-Mail-Endpunkten {#configuring-email-endpoints}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 E-Mail-Endpunkte ermöglichen es Benutzenden, einen Dienst durch Senden eines oder mehrerer Dokumente (als E-Mail-Anlage) an ein bestimmtes E-Mail-Konto aufzurufen. Der E-Mail-Posteingang fungiert als Sammelstelle für die Anlagen. Der Dienst überwacht den Posteingang und verarbeitet die Anlagen. Die Ergebnisse der Konvertierung werden an die Person weitergeleitet, die im Endpunkt festgelegt ist.
 

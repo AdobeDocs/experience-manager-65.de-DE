@@ -9,14 +9,18 @@ exl-id: 1e2b82d6-ca1f-4421-9a51-ec97fdc315d3
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '162'
 ht-degree: 100%
 
 ---
 
 # Hinzufügen und Entfernen von Anmeldeinformationen mit Benutzernamen und Kennwort {#adding-and-removing-user-name-and-password-credentials}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Auf der Seite „Trust Store-Verwaltung“ können Sie Benutzer- und Kennwortberechtigungen hinzufügen bzw. entfernen, die der Forms-Dienst verwendet, wenn er eine Anforderung mit SOAP-Sicherheitsstufe empfängt.
 

@@ -9,14 +9,18 @@ exl-id: 50f0c963-8007-4e2a-aa73-d99b97d9a1aa
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '285'
 ht-degree: 100%
 
 ---
 
 # Konfigurieren von Connector for IBM® Content Manager{#configuring-connector-for-ibm-content-manager}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Connector for IBM® Content Manager ermöglicht die Kommunikation zwischen AEM Forms und IBM® Content Manager. Weitere Hintergrundinformationen finden Sie unter „Connectors for ECM“ in der [Dienstreferenz](https://www.adobe.com/go/learn_aemforms_services_63).
 

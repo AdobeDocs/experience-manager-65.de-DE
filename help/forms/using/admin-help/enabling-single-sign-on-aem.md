@@ -9,14 +9,18 @@ exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: c941de0b069b5bea9edb822eca0ebbb5483ae9ed
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1716'
 ht-degree: 98%
 
 ---
 
 # Aktivieren der einmaligen Anmeldung in AEM Forms{#enabling-single-sign-on-in-aem-forms}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 AEM Forms bietet zwei Möglichkeiten zum Aktivieren von Single Sign-on (SSO) – HTTP-Kopfzeile und SPNEGO:
 

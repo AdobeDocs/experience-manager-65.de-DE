@@ -9,14 +9,18 @@ exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '494'
 ht-degree: 100%
 
 ---
 
 # Verwalten der in Workspace angezeigten Kategorien {#managing-the-categories-displayed-in-workspace}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 In Workspace werden die Prozesse, die Benutzende starten können, in Kategorien im linken Navigationsbereich angezeigt. Sie können die Kategorien in der Administrationskonsole einrichten oder bei der Prozessentwicklung in Workbench einrichten lassen. Wenn bei der Prozessentwicklung Prozesse erstellt werden, werden ihnen Kategorien zugewiesen.
 

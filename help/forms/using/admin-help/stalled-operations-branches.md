@@ -9,14 +9,18 @@ exl-id: c96faae0-2b0f-4334-b61c-f13b2d1ec179
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '719'
 ht-degree: 100%
 
 ---
 
 # Arbeiten mit angehaltenen Vorgängen und Zweigen {#working-with-stalled-operations-and-branches}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Auf den Seiten „Angehaltene Vorgänge“ und „Angehaltene Verzweigungen“ werden die Prozesse angezeigt, die angehalten haben. Ein Prozess kann anhalten, wenn ein Fehler während oder nach der Ausführung eines Vorgangs auftritt, oder wegen eines absichtlichen Anhaltevorgangs im Prozess:
 

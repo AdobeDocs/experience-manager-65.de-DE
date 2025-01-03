@@ -9,9 +9,9 @@ feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '7403'
+source-wordcount: '7415'
 ht-degree: 99%
 
 ---
@@ -82,6 +82,10 @@ Druckaufträge mit Schriften, die nicht eingebettet werden können, schlagen feh
 **Standard**: Erstellt PDF-Dateien für die Ausgabe auf Desktop-Druckern und Digitalkopierern, die Veröffentlichung auf einer CD oder zum Übertragen an einen Kunden als Prüfdruck. Bei dieser Gruppe von Optionen werden Komprimierung und Neuberechnung verwendet, um die Dateigröße zu reduzieren. Es werden jedoch auch die Untergruppen aller in der Datei verwendeten Schriften eingebettet und alle Farben in sRGB konvertiert. Ferner erfolgt die Druckausgabe mit einer mittleren Auflösung, um eine ausreichend präzise Ausgabedarstellung des Originaldokuments zu erreichen. Beachten Sie, dass Microsoft Windows-Schriftuntergruppen nicht standardmäßig eingebettet werden. Diese PDF-Dateien können in Acrobat 5 und Acrobat Reader 5.0 oder höher geöffnet werden.
 
 ## Hinzufügen oder Bearbeiten von PDF-Einstellungen {#add-or-edit-pdf-settings}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Die PDF-Einstellungen bestimmen genau die Konvertierungsmethode und die sich ergebende PDF-Struktur und deren Eigenschaften. Definieren Sie eine neue PDF-Einstellung oder bearbeiten Sie eine Einstellung, die Sie zuvor erstellt haben. Sie können diese vordefinierten Einstellungen nicht ändern, allerdings können Sie eine Einstellung auf Grundlage einer vorhandenen erstellen, indem Sie diese bearbeiten und unter einem neuen Namen speichern.
 

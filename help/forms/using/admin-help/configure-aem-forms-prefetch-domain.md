@@ -9,14 +9,18 @@ exl-id: cf5283a5-dbfb-460d-a8bd-11cd15ab8640
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '192'
 ht-degree: 100%
 
 ---
 
 # Konfigurieren Sie AEM Forms zum vorherigen Abrufen von Domain-Informationen {#configure-aem-forms-to-prefetchdomain-information}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Bei Benutzenden kann es zu einer langsameren Reaktionszeit kommen, wenn sie vielen Gruppen angehören (z. B. 500 oder mehr) oder wenn die Gruppen tief verschachtelt sind (z. B. 30 Ebenen). Wenn dieses Problem auftritt, können Sie AEM Forms so konfigurieren, dass Informationen aus bestimmten Domains vorher abgerufen werden.
 

@@ -9,14 +9,18 @@ exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '607'
 ht-degree: 95%
 
 ---
 
 # Konfigurieren der SAML-Dienstanbietereinstellungen{#configure-saml-service-provider-settings}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Security Assertion Markup Language (SAML) ist eine der Optionen, die Sie beim Konfigurieren der Autorisierung für eine Unternehmens- oder Hybrid-Domain auswählen können. SAML wird hauptsächlich zum Unterstützen der einmaligen Anmeldung in mehreren Domains verwendet. Wenn SAML als Ihr Authentifizierungsanbieter konfiguriert ist, melden sich Benutzende bei AEM Forms an und authentifizieren sich über einen angegebenen Identitätsanbieter (IDP) von Drittanbietern.
 

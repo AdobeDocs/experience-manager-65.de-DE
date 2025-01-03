@@ -9,9 +9,9 @@ exl-id: facbeab2-de95-4778-894c-faa771d3391e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1334'
 ht-degree: 98%
 
 ---
@@ -29,6 +29,10 @@ AEM Forms Digital Signatures kann Berechtigungen verwenden, die in einem HSM ges
 >Nachdem Sie die HSM-Konfiguration geändert haben, müssen Sie den AEM-Formular-Server neu starten.
 
 ## Erstellen eines Alias für eine HSM-Berechtigung, wenn das HSM-Gerät online ist {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Trust Store-Verwaltung“ > „HSM-Berechtigungen“ und dann auf „Hinzufügen“.
 1. Geben Sie in das Feld „Profilname“ eine Zeichenfolge zur Identifizierung des Alias ein.  Dieser Wert wird als Eigenschaft für einige Digital Signatures-Vorgänge wie etwa das Signieren eines Signaturfelds verwendet.

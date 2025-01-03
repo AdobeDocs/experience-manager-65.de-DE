@@ -9,14 +9,18 @@ exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '730'
 ht-degree: 91%
 
 ---
 
 # Konfigurieren einer zertifikatbasierten Authentifizierung {#configuring-certificate-based-authentication}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Die Benutzerverwaltung führt die Authentifizierung in der Regel mithilfe eines Benutzernamens und Kennworts durch. Die Benutzerverwaltung unterstützt auch die zertifikatbasierte Authentifizierung, die Sie zum Authentifizieren von Benutzenden über Acrobat oder zum programmgesteuerten Authentifizieren von Benutzenden verwenden können. Weitere Informationen zum programmgesteuerten Authentifizieren von Benutzenden finden Sie unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).
 

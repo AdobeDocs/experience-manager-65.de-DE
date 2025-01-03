@@ -9,14 +9,18 @@ exl-id: 1da1f6de-ac0d-4e0d-b8bb-956420e42699
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '484'
 ht-degree: 100%
 
 ---
 
 # Benutzerverwaltung {#user-management}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Mit der Benutzerverwaltung können Sie für AEM Forms-Module und Anwendungen, die durch Netegrity SiteMinder geschützt sind, mithilfe von Security Assertion Markup Language (SAML) die Single Sign-on(SSO)-Funktion aktivieren. Wenn SSO implementiert ist, sind die AEM Forms-Anmeldeseiten nicht erforderlich und werden nicht angezeigt, wenn Benutzende bereits durch das Firmenportal authentifiziert wurden.
 

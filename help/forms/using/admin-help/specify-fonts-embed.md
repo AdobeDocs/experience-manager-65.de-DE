@@ -9,14 +9,18 @@ exl-id: 02c28b2c-0cab-4431-9fab-fa332c96e092
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '283'
 ht-degree: 100%
 
 ---
 
 # Angeben der einzubettenden Schriftarten{#specify-fonts-to-embed}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Sie können angeben, welche Schriftarten immer oder nie in Formulare eingebettet werden sollen, die von der Ausgabe verwendet werden. Das Einbetten von Schriften erhöht die Dateigröße von Formularen. Betten Sie ungewöhnliche Schriftarten ein, die Benutzende eher selten installiert haben, während gängige Schriften, die vermutlich installiert sind, nicht eingebettet werden sollten.
 

@@ -9,9 +9,9 @@ exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1527'
 ht-degree: 100%
 
 ---
@@ -120,6 +120,10 @@ Sie können die `LCBackupMode`-Skripte verwenden, um AEM Forms über die Befehls
    Weitere Informationen zum Wechseln in den Sicherungsmodus über die Befehlszeilenschnittstelle finden Sie in der Readme-Datei im Verzeichnis „BackupRestoreCommandline“.
 
 ### Verlassen der Sicherungsmodi {#leaving-backup-modes}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Sie können entweder die Administrationskonsole oder die Befehlszeilenoption verwenden, um den Sicherungsmodus zu deaktivieren.
 

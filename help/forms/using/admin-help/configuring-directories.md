@@ -9,12 +9,13 @@ exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: e9afc12af78140ae0ec12cc2ee95fc9e175f8d94
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3241'
 ht-degree: 99%
 
 ---
+
 
 # Konfigurieren von Verzeichnissen {#configuring-directories}
 
@@ -25,6 +26,10 @@ Für jede Unternehmens-Domain, die Sie konfigurieren, geben Sie die Ordner an, a
 Für jede Unternehmens-Domain, die Sie konfigurieren, geben Sie die Ordner an, aus denen der Authentifizierungsanbieter Benutzerdaten abfragt. Sie können einen Ordner zu einer bestehenden Unternehmens-Domain hinzufügen oder zu einer neuen Unternehmens-Domain, die Sie gerade hinzufügen. Sie können mehrere Ordner für eine Domain konfigurieren. Sie können eine Domain auch für die Verwendung einer benutzerdefinierten SPI (Service Provider Interface) zur Synchronisierung konfigurieren.
 
 ### Hinzufügen eines Verzeichnisses {#add-a-directory}
+
+>[!NOTE]
+>
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Klicken Sie auf „Neue Unternehmens-Domain“ oder wählen Sie eine bestehende Unternehmens-Domain aus.

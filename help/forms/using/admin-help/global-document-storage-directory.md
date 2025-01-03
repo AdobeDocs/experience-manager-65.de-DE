@@ -9,9 +9,9 @@ exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '684'
 ht-degree: 100%
 
 ---
@@ -82,13 +82,15 @@ Nach Abschluss der Installation von AEM Forms können Sie den Speicherort des gl
 
 >[!NOTE]
 >
->Migrieren Sie die Daten auf folgende Weise, damit keine Daten verloren gehen.
+> * Migrieren Sie die Daten auf folgende Weise, damit keine Daten verloren gehen.
+> * Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+
 
 1. Melden Sie sich bei der Administrationskonsole an und klicken Sie auf „Einstellungen“ > „Core-Systemeinstellungen“ > „Konfigurationen“.
-1. Geben Sie in das Feld „Verzeichnis des globalen Dokumentenspeichers“ den vollständigen Pfad des neuen Verzeichnisses des globalen Dokumentenspeichers ein und klicken Sie auf „OK“.
-1. Fahren Sie sofort den Anwendungs-Server herunter.
-1. Verschieben Sie alle Dateien aus dem alten Verzeichnis des globalen Dokumentenspeichers unter Beibehaltung der internen Verzeichnisstruktur an den neuen Speicherort.
-1. Starten Sie den Anwendungs-Server neu.
+2. Geben Sie in das Feld „Verzeichnis des globalen Dokumentenspeichers“ den vollständigen Pfad des neuen Verzeichnisses des globalen Dokumentenspeichers ein und klicken Sie auf „OK“.
+3. Fahren Sie sofort den Anwendungs-Server herunter.
+4. Verschieben Sie alle Dateien aus dem alten Verzeichnis des globalen Dokumentenspeichers unter Beibehaltung der internen Verzeichnisstruktur an den neuen Speicherort.
+5. Starten Sie den Anwendungs-Server neu.
 
 ## Informationen zu Bereitstellungsdateien {#about-deployment-files}
 

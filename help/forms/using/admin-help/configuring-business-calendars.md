@@ -9,9 +9,9 @@ exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1901'
 ht-degree: 97%
 
 ---
@@ -64,26 +64,28 @@ Wenn in Ihrer Organisation verschiedene Benutzergruppen mit unterschiedlichen ge
 
 >[!NOTE]
 >
->Wenn Sie keinen Geschäftskalender erstellen, wird der Standardkalender verwendet.
+> * Wenn Sie keinen Geschäftskalender erstellen, wird der Standardkalender verwendet.
+> * Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Formular-Workflow“ > „Geschäftskalender“.
-1. Um einen neuen Geschäftskalender hinzuzufügen, klicken Sie auf ![bus_cal_plus](assets/bus_cal_plus.png). In der Dropdown-Liste wird der Text „*Neuer Kalender*“ angezeigt. Markieren Sie den Text und geben Sie einen anderen Namen für Ihren Kalender ein.
+2. Um einen neuen Geschäftskalender hinzuzufügen, klicken Sie auf ![bus_cal_plus](assets/bus_cal_plus.png). In der Dropdown-Liste wird der Text „*Neuer Kalender*“ angezeigt. Markieren Sie den Text und geben Sie einen anderen Namen für Ihren Kalender ein.
 
    Wählen Sie zum Bearbeiten eines vorhandenen Geschäftskalenders diesen aus der Dropdown-Liste aus.
 
-1. Wählen Sie unter „Geschäftsfreier Standardtag“ alle geschäftsfreien Wochentage aus, wie z. B. Wochenenden.
-1. [Optional] Wählen Sie „Geschäftszeiten verwenden“ und geben Sie die Anfangs- und Endzeiten für die Geschäftstage an.
+3. Wählen Sie unter „Geschäftsfreier Standardtag“ alle geschäftsfreien Wochentage aus, wie z. B. Wochenenden.
+4. [Optional] Wählen Sie „Geschäftszeiten verwenden“ und geben Sie die Anfangs- und Endzeiten für die Geschäftstage an.
 
    Wenn Sie diese Option wählen, wird ein Ereignis, das vor dem angegebenen Zeitraum eintritt, an den Anfang des Zeitraums verschoben, und ein Ereignis, das nach dem Zeitraum eintritt, wird an die Anfangszeit des nächsten Geschäftstages verschoben.
 
    Nehmen wir zum Beispiel an, dass einer Person an einem Dienstag um 2:00 Uhr morgens eine Aufgabe zugewiesen wird und die Erinnerung für diese Aufgabe auf zwei Arbeitstage eingestellt ist. Ohne Geschäftszeiten erfolgt die Erinnerung am Donnerstag um 2:00 Uhr morgens. Sind die Geschäftszeiten auf 8:00 Uhr bis 17:00 Uhr festgelegt, wird die Erinnerung auf Donnerstag 8:00 Uhr verlegt. Ohne Geschäftszeiten würde eine Erinnerung, wenn das Erinnerungsereignis am Dienstag um 18:00 Uhr erstellt wurde, am Donnerstag nach Feierabend erfolgen. Sind die Geschäftszeiten auf 8:00 Uhr bis 17:00 Uhr festgelegt, erfolgt die Erinnerung am Freitag um 8:00 Uhr morgens.
 
-1. Doppelklicken Sie im Kalender auf der linken Seite auf alle weiteren geschäftsfreien Tage, wie z. B. Feiertage. Tage, die in der Vergangenheit liegen, können nicht ausgewählt werden. Die von Ihnen ausgewählten geschäftsfreien Tage werden in einer Liste auf der rechten Seite angezeigt, wobei das Datum zweimal pro Zeile angezeigt wird. Wählen Sie das linke Datum aus, um einen Namen oder eine Beschreibung für den geschäftsfreien Tag einzugeben.
+5. Doppelklicken Sie im Kalender auf der linken Seite auf alle weiteren geschäftsfreien Tage, wie z. B. Feiertage. Tage, die in der Vergangenheit liegen, können nicht ausgewählt werden. Die von Ihnen ausgewählten geschäftsfreien Tage werden in einer Liste auf der rechten Seite angezeigt, wobei das Datum zweimal pro Zeile angezeigt wird. Wählen Sie das linke Datum aus, um einen Namen oder eine Beschreibung für den geschäftsfreien Tag einzugeben.
 
    Um einen arbeitsfreien Tag aus der Liste zu entfernen, klicken Sie auf ![Bus_cal_trash](assets/bus_cal_trash.png) neben dem Tag.
 
-1. [Optional] Wenn dieser Kalender der Standardkalender sein soll, wählen Sie „Standardkalender“. Der Standardkalender wird verwendet, wenn keine anderen Kalenderzuordnungen für Benutzenden zugeordnete Ereignisse vorhanden sind oder wenn kein Geschäftskalender für das Timer-Ereignis oder den Wait-Dienst festgelegt ist. Der Standardkalender kann nicht gelöscht werden.
-1. Wenn die Definition der geschäftsfreien Tage fertig gestellt ist, wählen Sie „Kalender aktiviert“, um den Kalender zu aktivieren, und klicken dann auf „Speichern“.
+6. [Optional] Wenn dieser Kalender der Standardkalender sein soll, wählen Sie „Standardkalender“. Der Standardkalender wird verwendet, wenn keine anderen Kalenderzuordnungen für Benutzenden zugeordnete Ereignisse vorhanden sind oder wenn kein Geschäftskalender für das Timer-Ereignis oder den Wait-Dienst festgelegt ist. Der Standardkalender kann nicht gelöscht werden.
+7. Wenn die Definition der geschäftsfreien Tage fertig gestellt ist, wählen Sie „Kalender aktiviert“, um den Kalender zu aktivieren, und klicken dann auf „Speichern“.
 
    Wenn Sie einen vorhandenen Kalender aktualisieren, wird die neue Version sofort gültig und wird für alle Geschäftskalenderberechnungen verwendet, einschließlich Aufgaben, die bereits ausgeführt werden.
 

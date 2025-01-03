@@ -9,12 +9,13 @@ exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 0835dca60d8011ce8660f1e7fdefb2b14ccd6129
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1015'
 ht-degree: 100%
 
 ---
+
 
 # Synchronisieren von Verzeichnissen {#synchronizing-directories}
 
@@ -50,11 +51,13 @@ Das User Management führt die folgenden Schritte aus, wenn die Delta-Ordnersync
 
 >[!NOTE]
 >
->Benutzende und Gruppen, die aus dem Ordner entfernt wurden, werden erst dann aus der User Management-Datenbank gelöscht, wenn Sie eine vollständige Ordnersynchronisierung durchführen.
+> * Benutzende und Gruppen, die aus dem Ordner entfernt wurden, werden erst dann aus der User Management-Datenbank gelöscht, wenn Sie eine vollständige Ordnersynchronisierung durchführen.
+> * Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
-1. Aktivieren Sie unter „Delta-Synchronisation“ das Kontrollkästchen und klicken Sie auf „Speichern“.
-1. Bearbeiten Sie die Ordnereinstellungen für jede Unternehmens-Domain, die die Delta-Ordnersynchronisierungsfunktion verwenden soll. Suchen Sie auf der Seite „Benutzereinstellungen“ und auf der Seite „Gruppeneinstellungen“ die Einstellung „Zeitstempel ändern“ und geben Sie den Wert `modify TimeStamp` ein. Weitere Einzelheiten über das Bearbeiten von Unternehmens-Domains finden Sie unter [Bestehende Domains bearbeiten und konvertieren](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
+2. Aktivieren Sie unter „Delta-Synchronisation“ das Kontrollkästchen und klicken Sie auf „Speichern“.
+3. Bearbeiten Sie die Ordnereinstellungen für jede Unternehmens-Domain, die die Delta-Ordnersynchronisierungsfunktion verwenden soll. Suchen Sie auf der Seite „Benutzereinstellungen“ und auf der Seite „Gruppeneinstellungen“ die Einstellung „Zeitstempel ändern“ und geben Sie den Wert `modify TimeStamp` ein. Weitere Einzelheiten über das Bearbeiten von Unternehmens-Domains finden Sie unter [Bestehende Domains bearbeiten und konvertieren](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## Aktivieren oder Deaktivieren der detaillierten Protokollierung während der Synchronisierung {#enable-or-disable-detailed-logging-during-synchronization}
 

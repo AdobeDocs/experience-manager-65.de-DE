@@ -9,14 +9,18 @@ exl-id: 55bf5196-22c6-4286-8c92-ff44d81dde49
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '311'
 ht-degree: 100%
 
 ---
 
 # Starten und Anhalten von Diensten {#starting-and-stopping-services}
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Es gibt zwei Arten von Diensten, die Teil von AEM Formularen sind:
 

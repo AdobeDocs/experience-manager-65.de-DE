@@ -9,9 +9,9 @@ exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1882'
 ht-degree: 100%
 
 ---
@@ -100,6 +100,10 @@ Dokumente, die die Inline-Maximalgröße überschreiten, werden im lokalen Datei
 Wenn der Dokumentinhalt kleiner als die Inline-Maximalgröße ist, wird er als Teil der Serialisierungs-Payload des Dokuments in der Datenbank gespeichert. Eine Erhöhung der Inline-Maximalgröße kann sich also auf die Datenbankgröße auswirken.
 
 **Ändern der Inline-Maximalgröße**
+
+>[!NOTE]
+> 
+> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Core-Systemeinstellungen“ > „Konfigurationen“.
 1. Geben Sie einen Wert in das Feld „Standardmäßige Maximalgröße für Inline-Dokumente“ ein und klicken Sie auf „OK“.
