@@ -9,10 +9,10 @@ feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: d5fb67933676c9ea5fdbeafe592960403e78af79
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 100%
+source-wordcount: '529'
+ht-degree: 97%
 
 ---
 
@@ -62,15 +62,11 @@ Die **Live Copy-Übersicht** kann beim Anzeigen der Eigenschaften einer Blueprin
 
 1. Wählen Sie **Live Copy-Übersicht** aus, um eine Übersicht aller Live Copies mit Bezug zur aktuellen Blueprint-Seite anzuzeigen und zu verwenden.
 
-   >[!NOTE]
-   >
-   >Weitere Informationen finden Sie im Knowledgebase-Artikel [Live Copy-Statusmeldung – Up-to-date/Green/In Sync-Synchronisierung](https://helpx.adobe.com/de/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
-
 1. Verwenden Sie **Schließen**, um den Vorgang zu beenden, und kehren Sie zur **Sites-Konsole** zurück.
 
 ## Verwenden der Live Copy-Übersicht {#using-the-live-copy-overview}
 
-Mit der **Live Copy-Übersicht** können auch Aktionen für die Live Copy durchgeführt werden:
+Mit **Live Copy-Übersicht** können auch Aktionen in der Live Copy durchgeführt werden:
 
 1. Öffnen Sie die **Live Copy-Übersicht**.
 1. Wählen Sie die erforderliche Blueprint- oder Live Copy-Seite aus. Die Symbolleiste wird dann mit den verfügbaren Aktionen aktualisiert. Die verfügbaren [Aktionen](/help/sites-administering/msm.md#terms-used) hängen davon ab, ob Sie eine [Blueprint](#actions-for-a-blueprint-page)- oder eine [Live Copy](#actions-for-a-live-copy-page)-Seite auswählen:
