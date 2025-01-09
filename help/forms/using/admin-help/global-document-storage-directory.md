@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '684'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ Nach Abschluss der Installation von AEM Forms können Sie den Speicherort des gl
 >[!NOTE]
 >
 > * Migrieren Sie die Daten auf folgende Weise, damit keine Daten verloren gehen.
-> * Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+> * Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 
 1. Melden Sie sich bei der Administrationskonsole an und klicken Sie auf „Einstellungen“ > „Core-Systemeinstellungen“ > „Konfigurationen“.

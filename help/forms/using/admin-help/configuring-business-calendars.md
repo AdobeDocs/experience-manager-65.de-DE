@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1901'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -46,9 +46,9 @@ Wenn einige Personen in Ihrer Organisation unterschiedliche geschäftsfreie Tage
 
     Die Methode zum Zuweisen von Geschäftskalenderschlüsseln zu Benutzern ist davon abhängig, ob eine Unternehmens-, eine lokale oder eine Hybrid-Domain verwendet wird. Detaillierte Informationen zum Einrichten von Domains finden Sie unter [Hinzufügen von Domains](/help/forms/using/admin-help/adding-domains.md#adding-domains). 
 
-    Wenn Sie eine lokale oder Hybrid-Domain verwenden, werden Informationen zu Benutzern nur in der User Management-Datenbank gespeichert. Um den Geschäftskalenderschlüssel für diese Benutzenden festzulegen, geben Sie beim Hinzufügen oder Bearbeiten einer Person in der Benutzerverwaltung im Feld „Geschäftskalenderschlüssel“ eine Zeichenfolge ein. (Siehe [Hinzufügen und Konfigurieren von Benutzern](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) Anschließend ordnen Sie die Geschäftskalenderschlüssel (die Zeichenfolgen) Geschäftskalendern im Arbeitsablauf für Formulare zu. (Siehe [Zuordnen von Benutzenden und Gruppen zu einem Geschäftskalender](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+    Wenn Sie eine lokale oder Hybrid-Domain verwenden, werden Informationen zu Benutzern nur in der User Management-Datenbank gespeichert. Um den Geschäftskalenderschlüssel für diese Benutzenden festzulegen, geben Sie beim Hinzufügen oder Bearbeiten einer Person in der Benutzerverwaltung im Feld „Geschäftskalenderschlüssel“ eine Zeichenfolge ein. (Siehe [Hinzufügen und Konfigurieren von Benutzenden](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) Anschließend ordnen Sie die Geschäftskalenderschlüssel (die Zeichenfolgen) den Geschäftskalendern im Forms-Workflow zu. (Siehe [Zuordnen von Benutzenden und Gruppen zu einem Geschäftskalender](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
-    Wenn Sie eine Unternehmens-Domain verwenden, befinden sich Informationen zu Benutzern in einem Speichersystem von Drittanbietern wie etwa einem LDAP-Ordner, der von User Management mit der User Management-Datenbank synchronisiert wird. Dies ermöglicht Ihnen die Zuordnung eines Geschäftskalenderschlüssels zu einem Feld im LDAP-Ordner. Wenn beispielsweise jeder Benutzerdatensatz in Ihrem Ordner ein Feld „Land“ enthält und Sie Geschäftskalender auf Grundlage des Landes zuweisen möchten, in dem sich die Person befindet, geben Sie den Feldnamen von „Land“ im Feld „Geschäftskalenderschlüssel“ an, wenn Sie die Benutzereinstellungen für den Ordner angeben. (Siehe [Konfigurieren von Verzeichnissen](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) Sie können dann die Geschäftskalenderschlüssel (die für das Feld „Land“ im LDAP-Verzeichnis definierten Werte) Geschäftskalendern im Arbeitsablauf für Formulare zuordnen. (Siehe [Zuordnen von Benutzenden und Gruppen zu einem Geschäftskalender](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+    Wenn Sie eine Unternehmens-Domain verwenden, befinden sich Informationen zu Benutzern in einem Speichersystem von Drittanbietern wie etwa einem LDAP-Ordner, der von User Management mit der User Management-Datenbank synchronisiert wird. Dies ermöglicht Ihnen die Zuordnung eines Geschäftskalenderschlüssels zu einem Feld im LDAP-Ordner. Wenn beispielsweise jeder Benutzerdatensatz in Ihrem Ordner ein Feld „Land“ enthält und Sie Geschäftskalender auf Grundlage des Landes zuweisen möchten, in dem sich die Person befindet, geben Sie den Feldnamen von „Land“ im Feld „Geschäftskalenderschlüssel“ an, wenn Sie die Benutzereinstellungen für den Ordner angeben. (Siehe [Konfigurieren von Verzeichnissen](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) Anschließend können Sie die Geschäftskalenderschlüssel (die für das Feld „Land“ im LDAP-Verzeichnis definierten Werte) Geschäftskalendern im Forms-Workflow zuordnen. (Siehe [Zuordnen von Benutzenden und Gruppen zu einem Geschäftskalender](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
 1. Definieren Sie im Forms-Workflow einen Kalender für jede Gruppe von Benutzenden, die dieselben geschäftsfreien Tage haben. (Siehe [Erstellen oder Aktualisieren eines Geschäftskalenders](configuring-business-calendars.md#create-or-update-a-business-calendar).)
 1. Ordnen Sie im Forms-Workflow die Geschäftskalenderschlüssel oder Gruppenmitgliedschaften für jeden Kalender zu. (Siehe [Zuordnen von Benutzenden und Gruppen zu einem Geschäftskalender](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
@@ -65,7 +65,7 @@ Wenn in Ihrer Organisation verschiedene Benutzergruppen mit unterschiedlichen ge
 >[!NOTE]
 >
 > * Wenn Sie keinen Geschäftskalender erstellen, wird der Standardkalender verwendet.
-> * Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+> * Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Formular-Workflow“ > „Geschäftskalender“.

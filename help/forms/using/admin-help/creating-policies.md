@@ -10,9 +10,9 @@ exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4725'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 
 >[!NOTE]
 > 
-> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+> Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Eine *Richtlinie* definiert einen Satz von Vertraulichkeitseinstellungen sowie die Benutzenden, die auf ein Dokument zugreifen dürfen, für das die Richtlinie gilt. Ein *Richtliniensatz* dient zum Gruppieren verschiedener Richtlinien mit einem gemeinsamen Zweck. Diese Richtliniensätze werden dann einer Untergruppe von Benutzenden im System zur Verfügung gestellt. Einzelheiten zu den Richtlinien finden Sie unter [Richtlinien und richtliniengeschützte Dokumente](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
 
@@ -150,7 +150,7 @@ Geben Sie im Bereich „Benutzer und Gruppen“ die Personen an, die Zugriff auf
 
 Nach der Registrierung können eingeladene Personen richtliniengeschützte Dokumente nutzen, für die sie autorisiert sind. Abhängig von den Funktionen, die von den Admins aktiviert werden, sind externe Benutzende eventuell auch dazu berechtigt, Richtlinien auf Dokumente anzuwenden, Richtlinien zu erstellen, zu bearbeiten und zu löschen sowie weitere externe Benutzende zu Richtlinien hinzuzufügen.
 
-**Anonymen Benutzer hinzufügen:** Um den anonymen Benutzerzugriff zuzulassen, klicken Sie auf „Anonymen Benutzer hinzufügen“. Diese Option ist nur verfügbar, wenn der Administrator den anonymen Benutzerzugriff für Document Security aktiviert hat. (Siehe Document Security-Server konfigurieren.) Diese Option gewährt allen Benutzern Zugriff auf Dokumente, die durch diese Richtlinie geschützt sind, unabhängig davon, ob sie über ein Document Security-Konto verfügen. Bei Aktivierung dieser Option können Sie dieser Richtlinie keine anderen Benutzertypen hinzufügen.
+**Anonymen Benutzer hinzufügen:** Um den anonymen Benutzerzugriff zuzulassen, klicken Sie auf „Anonymen Benutzer hinzufügen“. Diese Option ist nur verfügbar, wenn der Administrator den anonymen Benutzerzugriff für Document Security aktiviert hat. (Siehe „Konfigurieren des Document Security-Servers“.) Diese Option erlaubt allen Benutzenden den Zugriff auf von dieser Richtlinie geschützte Dokumente, auch wenn sie kein Konto für die Dokumentensicherheit haben. Bei Aktivierung dieser Option können Sie dieser Richtlinie keine anderen Benutzertypen hinzufügen.
 
 >[!NOTE]
 >

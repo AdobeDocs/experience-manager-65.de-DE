@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1527'
 ht-degree: 100%
 
@@ -123,7 +123,7 @@ Sie können die `LCBackupMode`-Skripte verwenden, um AEM Forms über die Befehls
 
 >[!NOTE]
 > 
-> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+> Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Sie können entweder die Administrationskonsole oder die Befehlszeilenoption verwenden, um den Sicherungsmodus zu deaktivieren.
 

@@ -1,5 +1,5 @@
 ---
-title: Verwalten lokaler Anmeldeinformationen
+title: Verwalten lokaler Berechtigungen
 description: Erfahren Sie, wie Sie lokale Berechtigungen mithilfe der Trust Store-Verwaltung verwalten. AEM Formulare unterstützen RSA- und DSA-Anmeldeinformationen im PKCS12-Standardformular.
 contentOwner: admin
 content-type: reference
@@ -10,17 +10,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '533'
 ht-degree: 100%
 
 ---
 
-# Verwalten lokaler Anmeldeinformationen {#managing-local-credentials}
+# Verwalten lokaler Berechtigungen {#managing-local-credentials}
 
 >[!NOTE]
 > 
-> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+> Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Lokale Berechtigungen sind auf privaten Schlüsseln basierende Berechtigungen, für welche die Trust Store-Verwaltung als Host dient. Eine *lokale Berechtigung* gibt an, wo die DES-Berechtigung einer Benutzerin oder eines Benutzers gespeichert wird. Über die Trust Store-Verwaltung können Sie Ihre lokalen Berechtigungen importieren und verwalten, indem Sie beispielsweise vorhandene PFX-Dateien verwenden, sodass Sie lokale Berechtigungen importieren, bearbeiten und löschen können.
 

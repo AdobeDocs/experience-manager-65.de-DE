@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '228'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 >[!NOTE]
 > 
-> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+> Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Stellen Sie sicher, dass die in einem Formular verwendeten Schriften für den J2EE-Anwendungs-Server zur Verfügung stehen, der als Host für AEM Forms dient. Betrachten Sie beispielsweise das folgende Szenario. Eine Formularentwicklerin oder ein Formularentwickler fügt dem Schriftartenverzeichnis, das von Designer verwendet wird, eine Schrift hinzu und erstellt ein Formular, das diese Schrift verwendet, auf einem separaten Computer. Damit der Ausgabe-Service diese Schrift verwenden kann, legen Sie sie im Verzeichnis für Kundenschriftarten ab. Wenn das Verzeichnis für Kundenschriftarten nicht vorhanden ist, erstellen Sie ein entsprechendes Verzeichnis auf dem J2EE-Anwendungs-Server, der als Host für AEM Forms dient.
 

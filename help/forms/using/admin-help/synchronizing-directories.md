@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 0835dca60d8011ce8660f1e7fdefb2b14ccd6129
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1015'
 ht-degree: 100%
 
@@ -52,7 +52,7 @@ Das User Management führt die folgenden Schritte aus, wenn die Delta-Ordnersync
 >[!NOTE]
 >
 > * Benutzende und Gruppen, die aus dem Ordner entfernt wurden, werden erst dann aus der User Management-Datenbank gelöscht, wenn Sie eine vollständige Ordnersynchronisierung durchführen.
-> * Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+> * Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.

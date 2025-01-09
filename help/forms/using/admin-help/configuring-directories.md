@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e9afc12af78140ae0ec12cc2ee95fc9e175f8d94
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3241'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Für jede Unternehmens-Domain, die Sie konfigurieren, geben Sie die Ordner an, a
 
 >[!NOTE]
 >
-> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+> Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Klicken Sie auf „Neue Unternehmens-Domain“ oder wählen Sie eine bestehende Unternehmens-Domain aus.
@@ -126,7 +126,7 @@ Wenn Sie in den Ordnereinstellungen „Verweise aktivieren“ ausgewählt haben,
 
 Obwohl „Basis-DN“ eine obligatorische Einstellung in der Administrationskonsole ist, erfordern einige Verzeichnis-Server wie IBM Domino Enterprise Server möglicherweise einen leeren Basis-DN. Um einen leeren Basis-DN anzugeben, exportieren Sie die Datei „config.xml“, bearbeiten Sie die Einstellung in dieser Datei und importieren Sie sie dann wieder. (Siehe [Importieren und Exportieren der Konfigurationsdatei](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
-**Suchfilter:** (Obligatorisch) Der Suchfilter, der verwendet werden soll, um den Eintrag zu finden, der dem Benutzer zugeordnet ist. Sie können eine Suche auf einer Ebene oder auf Unterebenen durchführen. (Siehe Syntax für Suchfilter oder RFC 2254.) Weitere Informationen zum Microsoft AD-Schema finden Sie unter Active Directory-Schema.
+**Suchfilter:** (Obligatorisch) Der Suchfilter, der verwendet werden soll, um den Eintrag zu finden, der dem Benutzer zugeordnet ist. Sie können eine Suche auf einer Ebene oder auf Unterebenen durchführen. (Siehe Syntax für Suchfilter oder RFC 2254.) Weitere Informationen zum Microsoft AD-Schema finden Sie unter „Active Directory-Schema“.
 
 **Beschreibung:** Das Schemaattribut für die Beschreibung des Benutzers.
 

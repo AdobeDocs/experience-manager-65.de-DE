@@ -1,5 +1,5 @@
 ---
-title: Bestehende Domains bearbeiten und konvertieren
+title: Bearbeiten und Konvertieren bestehender Domains
 description: Erfahren Sie, wie Sie auf der Seite „Domain-Verwaltung“ die Einstellungen für bestehende Domains ändern. Konvertieren Sie eine bestehende Unternehmens-Domain in eine Hybrid-Domain oder umgekehrt.
 contentOwner: admin
 content-type: reference
@@ -10,17 +10,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
 ht-degree: 100%
 
 ---
 
-# Bestehende Domains bearbeiten und konvertieren{#editing-and-converting-existing-domains}
+# Bearbeiten und Konvertieren bestehender Domains{#editing-and-converting-existing-domains}
 
 >[!NOTE]
 > 
-> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+> Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Sie können auf der Seite „Domain-Verwaltung“ die Einstellungen für bestehende Domains ändern. Sie können auch eine bestehende Unternehmens-Domain in eine Hybrid-Domain umwandeln.
 

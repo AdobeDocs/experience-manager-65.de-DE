@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3808'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 
 >[!NOTE]
 > 
-> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+> Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 E-Mail-Endpunkte ermöglichen es Benutzenden, einen Dienst durch Senden eines oder mehrerer Dokumente (als E-Mail-Anlage) an ein bestimmtes E-Mail-Konto aufzurufen. Der E-Mail-Posteingang fungiert als Sammelstelle für die Anlagen. Der Dienst überwacht den Posteingang und verarbeitet die Anlagen. Die Ergebnisse der Konvertierung werden an die Person weitergeleitet, die im Endpunkt festgelegt ist.
 
@@ -36,7 +36,7 @@ Alle E-Mail-Endpunkte werden mit einem autorisierten Benutzernamen und Kennwort 
 
 Wenn Benutzer Dokumente mit westeuropäischen Sprachzeichen in Datei- und Konvertierungspfadnamen senden, müssen Sie eine E-Mail-Anwendung einsetzen, welche die erforderlichen Kodierungstypen (Latin1 [ISO-8859-1], Westeuropäisch [Windows] oder UTF-8) unterstützt. Weitere Informationen hierzu finden Sie im Dokument *Installieren und Bereitstellen von AEM Forms* für Ihren Anwendungs-Server.
 
-Bevor Sie einen E-Mail-Endpunkt konfigurieren, richten Sie den E-Mail-Dienst ein. (Siehe [Standardeinstellungen für E-Mail-Endpunkte konfigurieren](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Die Konfigurationsparameter des E-Mail-Service haben zwei Zwecke:
+Bevor Sie einen E-Mail-Endpunkt konfigurieren, richten Sie den E-Mail-Dienst ein. (Siehe [Konfigurieren von Standardeinstellungen für E-Mail-Endpunkte](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Die Konfigurationsparameter des E-Mail-Dienstes haben zwei Zwecke:
 
 * Konfigurieren von Attributen, die für alle E-Mail-Endpunkte gültig sind
 * Bereitstellen von Standardwerten für alle E-Mail-Endpunkte

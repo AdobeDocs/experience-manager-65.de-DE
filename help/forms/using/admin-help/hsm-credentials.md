@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1334'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ AEM Forms Digital Signatures kann Berechtigungen verwenden, die in einem HSM ges
 
 >[!NOTE]
 > 
-> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+> Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Trust Store-Verwaltung“ > „HSM-Berechtigungen“ und dann auf „Hinzufügen“.
 1. Geben Sie in das Feld „Profilname“ eine Zeichenfolge zur Identifizierung des Alias ein.  Dieser Wert wird als Eigenschaft für einige Digital Signatures-Vorgänge wie etwa das Signieren eines Signaturfelds verwendet.
@@ -107,4 +107,4 @@ AEM Forms verwendet einen webdienstbasierten IPC/RPC-Mechanismus. Über diesen M
 Dieser Mechanismus unterstützt keine Online-Erstellung von HSM-Profilen oder Statusprüfungen.  Allerdings gibt es zwei Möglichkeiten, HSM-Profile zu erstellen und Statusprüfungen auszuführen:
 
 * Erstellen Sie eine AEM Forms-Client-Berechtigung durch Übergabe des Zertifikats der unterzeichnenden Person.  Führen Sie die Schritte unter [Konfigurieren von HSM-Support für AEM Forms ES mit Sun JDK auf Windows 64-Bit-Plattform](https://kb2.adobe.com/cps/808/cpsid_80835.html) aus. Der Web-Dienst-Speicherort wird als Berechtigungseigenschaft übergeben.  Offline-HSM-Profile, die entweder mit DER- oder SHA-1-Hexadezimal-Zertifikat erstellt wurden, werden ebenfalls unterstützt.  Wenn Sie jedoch aus einer früheren AEM Forms-Version auf AEM Forms aktualisiert haben, nehmen Sie Client-Änderungen vor, da die Berechtigung Zertifikats- und Web-Dienst-Informationen enthielt.
-* Der Speicherort des Web-Dienstes wird in der Administrationskonsole für den Signature-Dienst angegeben.  (Siehe [Signature-Service-Einstellungen](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Hier trug der Client nur den Alias des HSM-Profils im Trust Store. Sie können diese Option nahtlos ohne Client-Änderungen verwenden, auch wenn Sie aus einer früheren AEM Forms-Version auf AEM Forms aktualisiert haben.  Diese Option unterstützt keine HSM-Profile, die ein SHA-1-Zertifikat verwenden.
+* Der Speicherort des Web-Dienstes wird in der Administrationskonsole für den Signature-Dienst angegeben.  (Siehe [Einstellungen des Signature-Dienstes](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Hier enthielt der Client nur den Alias des HSM-Profils im Trust Store. Sie können diese Option nahtlos ohne Client-Änderungen verwenden, auch wenn Sie aus einer früheren AEM Forms-Version auf AEM Forms aktualisiert haben.  Diese Option unterstützt keine HSM-Profile, die ein SHA-1-Zertifikat verwenden.

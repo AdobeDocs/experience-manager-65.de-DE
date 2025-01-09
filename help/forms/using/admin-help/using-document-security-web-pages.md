@@ -10,7 +10,7 @@ exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '933'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 >[!NOTE]
 > 
-> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+> Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Benutzende und Admins nutzen die Dokumentensicherheits-Web-Seiten zum Erstellen und Verwalten von Richtlinien, zum Verwalten richtliniengeschützter Dokumente und zum Überwachen von Ereignissen in Verbindung mit richtliniengeschützten Dokumenten.  Admins nutzen Webseiten auch zum Erstellen von Richtliniensätzen und Zuweisen von Richtliniensatzkoordinatorinnen bzw. -koordinatoren, zum Konfigurieren von Dokumentensicherheits-Standardeinstellungen, zum Verwalten der Registrierung eingeladener Benutzender und deren Konten sowie zum Überwachen und Verwalten von Server-, Richtlinien-, Benutzer- und Dokumenten-bezogenen Ereignissen.
 

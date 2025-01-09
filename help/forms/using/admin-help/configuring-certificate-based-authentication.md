@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '730'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 91%
 
 >[!NOTE]
 > 
-> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+> Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Die Benutzerverwaltung führt die Authentifizierung in der Regel mithilfe eines Benutzernamens und Kennworts durch. Die Benutzerverwaltung unterstützt auch die zertifikatbasierte Authentifizierung, die Sie zum Authentifizieren von Benutzenden über Acrobat oder zum programmgesteuerten Authentifizieren von Benutzenden verwenden können. Weitere Informationen zum programmgesteuerten Authentifizieren von Benutzenden finden Sie unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).
 
@@ -51,7 +51,7 @@ Wenn Sie ein Zertifikat testen, lädt die Benutzerverwaltung die Zertifikatüber
 1. Klicken Sie auf „Neue Zertifikatzuordnung“ und wählen Sie in der Liste „Für Herausgeber“ den in der Trust Store-Verwaltung konfigurierten Zertifikatalias aus.
 1. Weisen Sie eines der Zertifikatattribute einem Benutzerattribut zu. Sie können beispielsweise den allgemeinen Namen des Zertifikats der Anmelde-ID der Person zuordnen.
 
-   Wenn sich der Inhalt des Attributs im Zertifikat von dem Inhalt des Benutzerattributs in der Benutzerverwaltungsdatenbank unterscheidet, können Sie einen regulären Java-Ausdruck (Java Regular Expression, Regex) verwenden, um die beiden Attribute abzustimmen. Wenn beispielsweise die allgemeinen Namen der Zertifikate Namen wie *Alex Pink (Authentifizierung)* und *Alex Pink (Signierung)* sind und der allgemeine Name in der User Management-Datenbank *Alex Pink* lautet, verwenden Sie einen Regex, um den erforderlichen Teil des Zertifikatattributs zu extrahieren (in diesem Beispiel *Alex Pink*.). Der von Ihnen angegebene reguläre Ausdruck muss der Java-Regex-Spezifikation entsprechen.
+   Wenn sich der Inhalt des Attributs im Zertifikat von dem Inhalt des Benutzerattributs in der Benutzerverwaltungsdatenbank unterscheidet, können Sie einen regulären Java-Ausdruck (Java Regular Expression, Regex) verwenden, um die beiden Attribute abzustimmen. Wenn beispielsweise die allgemeinen Namen der Zertifikate *Alex Pink (Authentifizierung)* und *Alex Pink (Signieren)* lauten und der allgemeine Name in der Benutzerverwaltungsdatenbank *Alex Pink* ist, sollten Sie den erforderlichen Teil des Zertifikatattributs (in diesem Beispiel *Alex Pink*) über einen regulären Ausdruck extrahieren. Der von Ihnen angegebene reguläre Ausdruck muss der Java-Regex-Spezifikation entsprechen.
 
    Sie können den Ausdruck transformieren, indem Sie im Feld „Benutzerdefinierte Reihenfolge“ die Reihenfolge der Gruppen angeben. Die benutzerdefinierte Reihenfolge wird mit der Methode `java.util.regex.Matcher.replaceAll()` verwendet. Das Verhalten entspricht dem Verhalten der Methode, und die Eingabezeichenfolge (die benutzerdefinierte Reihenfolge) muss entsprechend angegeben werden.
 

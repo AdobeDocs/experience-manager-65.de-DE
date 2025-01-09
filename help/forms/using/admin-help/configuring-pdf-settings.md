@@ -10,9 +10,9 @@ exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7415'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ Druckaufträge mit Schriften, die nicht eingebettet werden können, schlagen feh
 
 >[!NOTE]
 > 
-> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+> Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Die PDF-Einstellungen bestimmen genau die Konvertierungsmethode und die sich ergebende PDF-Struktur und deren Eigenschaften. Definieren Sie eine neue PDF-Einstellung oder bearbeiten Sie eine Einstellung, die Sie zuvor erstellt haben. Sie können diese vordefinierten Einstellungen nicht ändern, allerdings können Sie eine Einstellung auf Grundlage einer vorhandenen erstellen, indem Sie diese bearbeiten und unter einem neuen Namen speichern.
 

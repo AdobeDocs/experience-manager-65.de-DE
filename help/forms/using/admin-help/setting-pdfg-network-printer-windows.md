@@ -10,7 +10,7 @@ exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '616'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 >[!NOTE]
 > 
-> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+> Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Mit dem PDFG-Netzwerkdrucker können Benutzende ein PDF-Dokument aus jeder Anwendung heraus erstellen, die Druckfunktionen unterstützt. Nachdem ein Benutzer den PDFG-Netzwerkdrucker installiert hat, wird ein neuer Drucker mit dem Namen *PDF Generator* im Bereich „Drucker“ in der Windows-Systemsteuerung angezeigt. Wenn bereits ein Drucker mit demselben Namen vorhanden ist, wird die Person aufgefordert, einen anderen Namen einzugeben.
 
@@ -47,7 +47,7 @@ Zum Einrichten eines PDFG-Netzwerkdruckers sind folgende Schritte erforderlich:
 
    * E-Mail-Adresse, die beim Versenden der PDF-Dateien an die Benutzenden verwendet werden soll.
    * Betreff der E-Mail-Nachricht.
-   * Kopfzeile, Nachrichtentext und Fußzeile der E-Mail-Nachricht. In der E-Mail-Nachricht wird &lt;Empfängername> durch den vollständigen Namen der Person ersetzt, die das Dokument gedruckt hat.
+   * Kopfzeile, Nachrichtentext und Fußzeile der E-Mail-Nachricht. In der E-Mail-Nachricht wird &lt;receiverName> durch den vollständigen Namen der Person ersetzt, die das Dokument gedruckt hat.
 
 1. Um die konvertierten PDF-Dateien an einen AEM Forms-Dienst oder -Prozess zu senden, wählen Sie die Option „Konvertierte PDF an den angegebenen AEM Forms-Dienst oder -Prozess weiterleiten“ aus und geben Sie die folgenden Informationen an:
 

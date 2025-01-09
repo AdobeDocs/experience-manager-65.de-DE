@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '607'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,14 +20,14 @@ ht-degree: 95%
 
 >[!NOTE]
 > 
-> Stellen Sie sicher, dass Benutzende über Administratorberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
+> Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 Security Assertion Markup Language (SAML) ist eine der Optionen, die Sie beim Konfigurieren der Autorisierung für eine Unternehmens- oder Hybrid-Domain auswählen können. SAML wird hauptsächlich zum Unterstützen der einmaligen Anmeldung in mehreren Domains verwendet. Wenn SAML als Ihr Authentifizierungsanbieter konfiguriert ist, melden sich Benutzende bei AEM Forms an und authentifizieren sich über einen angegebenen Identitätsanbieter (IDP) von Drittanbietern.
 
 Eine Erläuterung von SAML finden Sie unter [Security Assertion Markup Language (SAML) V2.0 Technische Übersicht](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Benutzerverwaltung“ > „Konfiguration“ > „SAML-Dienstanbietereinstellungen“.
-1. Geben Sie in das Feld „Dienstanbieter-Entitäts-ID“ eine eindeutige ID als Kennung für die AEM Forms-Dienstanbieterimplementierung ein.  Sie müssen diese eindeutige ID auch beim Konfigurieren Ihres Identitätsanbieters (IDP) angeben (z. B. `um.lc.com`.). Sie können auch die URL verwenden, die für den Zugriff auf AEM-Formulare verwendet wird (z. B. `https://AEMformsserver`).
+1. Geben Sie in das Feld „Dienstanbieter-Entitäts-ID“ eine eindeutige ID als Kennung für die AEM Forms-Dienstanbieterimplementierung ein.  Geben Sie diese eindeutige ID auch beim Konfigurieren Ihres Identitätsanbieters (IDP) an (z. B. `um.lc.com`.). Sie können auch die URL nutzen, die für den Zugriff auf AEM-Formulare verwendet wird (z. B. `https://AEMformsserver`).
 1. Geben Sie in das Feld für die Dienstanbieter-Basis-URL die Basis-URL für Ihren Formular-Server ein (z. B. `https://AEMformsserver:8080`).
 1. (Optional) Wenn Sie möchten, dass AEM Forms signierte Authentifizierungsanforderungen an den Identitätsanbieter sendet, führen Sie die folgenden Aufgaben aus:
 
