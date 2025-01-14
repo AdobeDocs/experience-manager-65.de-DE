@@ -1,12 +1,12 @@
 ---
-title: Erstellen und Synchronisieren von Live CopYs
+title: Erstellen und Synchronisieren von Live Copies
 description: Erfahren Sie, wie Sie in Adobe Experience Manager Live Copies erstellen und synchronisieren.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: d5fb67933676c9ea5fdbeafe592960403e78af79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4177'
 ht-degree: 100%
 
@@ -267,7 +267,7 @@ Die [Rollout-Aktion ist auch über die Live Copy-Übersicht verfügbar](/help/s
 
 1. Öffnen Sie die [Live Copy-Übersicht](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) und wählen Sie eine Blueprint-Seite aus.
 1. Wählen Sie in der Symbolleiste die Option **Rollout** aus.
-1. Geben Sie die Seiten und etwaigen Unterseiten an und bestätigen Sie den Vorgang durch Setzen eines Häkchens:
+1. Geben Sie die Seiten und etwaige Unterseiten an und bestätigen Sie den Vorgang durch Setzen eines Häkchens:
 
    ![Auswählen der Seiten und Unterseiten](assets/chlimage_1-223.png)
 
@@ -287,7 +287,7 @@ Synchronisieren Sie eine Live Copy-Seite, um Änderungen von der Quelle per Pul
 
 #### Synchronisieren von Live Copies über Seiteneigenschaften {#synchronize-a-live-copy-from-page-properties}
 
-Synchronisieren Sie eine Live-Kopie, um Änderungen aus der Quelle in die Live-Kopie zu übernehmen.
+Synchronisieren Sie eine Live Copy, um Änderungen von der Quelle per Pull auf die Live Copy zu übertragen.
 
 >[!NOTE]
 >
@@ -583,7 +583,7 @@ Zum Nachverfolgen der von Ihnen durchgeführten Änderungen können Sie die Blue
    * **Mit Blueprint vergleichen** (bei Auswahl einer Live Copy-Seite)
    * **Mit Live Copy vergleichen** (bei Auswahl einer Blueprint-Seite)
 
-   Beispiel:
+   Zum Beispiel:
 
    ![Vergleichen](assets/chlimage_1-235.png)
 
