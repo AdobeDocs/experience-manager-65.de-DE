@@ -9,18 +9,16 @@ exl-id: daf7bf39-a105-46eb-ab7b-1c59484949e2
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 3%
+source-wordcount: '930'
+ht-degree: 0%
 
 ---
 
 # Single Page Applications (SPA){#single-page-applications}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 [Single Page Applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA) haben eine kritische Masse erreicht und gelten weithin als das effektivste Muster für die Erstellung nahtloser Erlebnisse mit Web-Technologie. Wenn Sie einem SPA-Muster folgen, können Sie eine Anwendung erstellen, die mit einer Desktop- oder mobilen Anwendung identisch ist, aber aufgrund ihrer Grundlage in offenen Webstandards eine Vielzahl von Geräteplattformen und Formfaktoren erreicht.
 

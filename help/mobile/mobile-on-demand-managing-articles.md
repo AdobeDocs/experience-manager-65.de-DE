@@ -9,18 +9,16 @@ exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 4%
+source-wordcount: '653'
+ht-degree: 1%
 
 ---
 
 # Artikel verwalten{#managing-articles}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 Content-Management-Aktionen sind die Bausteine, mit denen Sie Artikel in einem Programm erstellen und verwalten können. Die folgenden Aktionen werden für Artikel innerhalb der Anwendung ausgeführt.
 

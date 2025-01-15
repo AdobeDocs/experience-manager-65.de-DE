@@ -8,18 +8,16 @@ exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 3%
+source-wordcount: '1130'
+ht-degree: 1%
 
 ---
 
 # Erstellen und Hinzufügen von Vorlagen und Komponenten {#creating-and-adding-templates-and-components}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 AEM Mobile On-Demand bietet eine vollständig konfigurierte App-Vorlage, eine Artikelvorlage und Artikelkomponenten.
 

@@ -9,18 +9,16 @@ exl-id: daafc8b8-3c01-4c97-a14b-f1b706600249
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 9%
+source-wordcount: '582'
+ht-degree: 5%
 
 ---
 
 # AEM Mobile-Anwendungs-Dashboard {#aem-mobile-application-dashboard}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 Sie können Ihre Mobile App und Ihre Mobile-App-Inhalte über das Dashboard der AEM Mobile-App oder das Control Center verwalten.
 

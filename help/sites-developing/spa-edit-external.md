@@ -5,10 +5,10 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
 workflow-type: tm+mt
-source-wordcount: '2391'
-ht-degree: 100%
+source-wordcount: '2387'
+ht-degree: 99%
 
 ---
 
@@ -80,7 +80,7 @@ In diesem Beispiel wird `ModelManager` initialisiert und ein leerer `ModelStore`
 
 * `path` – Bei der Initialisierung wird das Modell vom definierten Pfad abgerufen und im `ModelStore` gespeichert. Auf diese Weise können Sie bei Bedarf das `rootModel` bei der Initialisierung abrufen.
 * `modelClient` - Ermöglicht die Bereitstellung eines benutzerdefinierten Clients, der für das Abrufen des Modells verantwortlich ist.
-* `model` - Ein `model`-Objekt, das als Parameter übergeben wird und typischerweise bei der [Verwendung von SSR](spa-ssr.md) gefüllt wird.
+* `model` : Ein `model`, das als Parameter übergeben wird und normalerweise bei der Verwendung von SSR ausgefüllt wird.
 
 ### Bearbeitbare AEM-Blattkomponenten {#authorable-leaf-components}
 
@@ -375,4 +375,3 @@ Das folgende Referenzmaterial kann hilfreich sein, um SPAs im Kontext der AEM zu
 * [SPA-Referenzmaterialien (API-Referenzen)](spa-reference-materials.md)
 * [SPA-Blueprint und PageModelManager](spa-blueprint.md#pagemodelmanager)
 * [SPA-Modell-Routing](spa-routing.md)
-* [Single Page Applications (SPAs) und Server-seitiges Rendering](spa-ssr.md)

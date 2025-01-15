@@ -9,18 +9,16 @@ exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1218'
-ht-degree: 4%
+source-wordcount: '1197'
+ht-degree: 2%
 
 ---
 
 # Programmkachel verwalten{#manage-app-tile}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 Über die Kachel **`Manage App`** im App-Dashboard können Sie Details zur Anwendung bearbeiten. Um die Detailseite zu öffnen, klicken Sie auf den Link Details der **`Manage App`**. Von der Seite **`Manage App`** aus können Sie die Einstellungen für die PhoneGap-Anwendungskonfiguration (config.xml) bearbeiten und Ihren Antrag für die Übermittlung an die verschiedenen Anwendungsspeicher vorbereiten.
 

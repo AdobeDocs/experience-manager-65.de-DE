@@ -9,18 +9,16 @@ exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 6%
+source-wordcount: '419'
+ht-degree: 1%
 
 ---
 
 # Anwendungserstellungs- und Konfigurationsaktionen{#application-create-and-configuration-actions}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 ## Erstellen einer On-Demand-Anwendung {#creating-an-on-demand-application}
 

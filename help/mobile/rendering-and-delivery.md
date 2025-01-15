@@ -8,18 +8,16 @@ exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 11%
+source-wordcount: '553'
+ht-degree: 7%
 
 ---
 
 # Rendering und Versand{#rendering-and-delivery}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 Adobe Experience Manager (AEM)-Inhalte können einfach über „Sling Standard[Servlets“ gerendert werden](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) um ([) ](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) andere Formate zu rendern.
 

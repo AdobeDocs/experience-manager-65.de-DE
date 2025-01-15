@@ -9,18 +9,16 @@ exl-id: fbeceb70-b199-478b-907b-253ed212ff99
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 6%
+source-wordcount: '637'
+ht-degree: 2%
 
 ---
 
 # Entwickeln von Apps mit PhoneGap CLI{#developing-apps-with-phonegap-cli}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 Als Entwickler können Sie Ihre App jederzeit auf einem Gerät oder in einem Emulator ausführen, vorausgesetzt, Sie haben Ihre Entwicklungsumgebung konfiguriert.
 

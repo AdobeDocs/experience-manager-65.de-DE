@@ -9,18 +9,16 @@ exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 6%
+source-wordcount: '473'
+ht-degree: 2%
 
 ---
 
 # Konfigurieren von Benutzern und Benutzergruppen {#configure-your-users-and-user-groups}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 In diesem Kapitel werden die Benutzerrollen und die Konfiguration Ihrer Benutzer und Gruppen beschrieben, um die Erstellung und Verwaltung Ihrer Mobile Apps zu unterstützen.
 

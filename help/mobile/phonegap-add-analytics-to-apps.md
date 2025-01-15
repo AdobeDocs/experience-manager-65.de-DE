@@ -9,18 +9,16 @@ exl-id: 8d965e94-c368-481d-b000-6e22456c34db
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 2%
+source-wordcount: '883'
+ht-degree: 0%
 
 ---
 
 # Adobe Analytics zu Ihrer Mobile App hinzufügen{#add-adobe-analytics-to-your-mobile-application}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 Möchten Sie ansprechende und relevante Erlebnisse für Benutzer Ihrer Mobile App erstellen? Wenn Sie die Adobe Mobile Services SDK nicht zur Überwachung und Messung des Anwendungslebenszyklus und der Anwendungsnutzung verwenden, worauf gründen Sie dann Ihre Entscheidungen? Wo sind Ihre treuesten Kunden? Wie können Sie garantieren, dass Sie relevant bleiben und Konversionen optimieren?
 

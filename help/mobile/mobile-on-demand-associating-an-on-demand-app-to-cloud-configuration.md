@@ -9,18 +9,16 @@ exl-id: 37428543-c310-4712-a4ec-1f482579fb4b
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 11%
+source-wordcount: '391'
+ht-degree: 6%
 
 ---
 
 # Cloud-Konfiguration{#cloud-configuration}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 Durch die Verknüpfung einer On-Demand-App mit einer Cloud-Konfiguration kann Adobe Experience Manager (AEM) direkt mit einem auf Anfrage gehosteten mobilen Projekt kommunizieren, indem ein bidirektionaler Link eingerichtet wird. Durch die Verknüpfung Ihrer App mit einem Mobile-On-Demand-Projekt können Sie Inhalte wie Artikel, Banner und Sammlungen innerhalb von AEM erstellen, diese Inhalte aber auch Mobile On-Demand bereitstellen.
 

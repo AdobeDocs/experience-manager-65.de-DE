@@ -9,18 +9,16 @@ exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2675'
-ht-degree: 2%
+source-wordcount: '2654'
+ht-degree: 1%
 
 ---
 
 # Erstellen und Bearbeiten von Apps mit der Apps-Konsole{#creating-and-editing-apps-using-the-apps-console}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 Im Entwicklungsprozess für AEM-Mobile-Apps wird anerkannt, dass Nutzer mit unterschiedlichen Fachkenntnissen zur Entwicklung von Mobile Apps beitragen. Die folgende Prozesskarte veranschaulicht die allgemeine Reihenfolge, in der Inhaltsautoren und Anwendungsentwickler Aufgaben ausführen.
 

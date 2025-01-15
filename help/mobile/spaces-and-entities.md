@@ -8,18 +8,16 @@ exl-id: 44591900-b01b-4a33-9910-839564477e7d
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1206'
-ht-degree: 7%
+source-wordcount: '1185'
+ht-degree: 5%
 
 ---
 
 # Leerzeichen und Entitäten{#spaces-and-entities}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 Ein Space ist ein praktischer Speicherort, um Entitäten zu speichern, die über die Content Services-REST-API verfügbar gemacht werden. Dies ist besonders nützlich, da eine App (oder ein beliebiger Kanal) mit vielen Entitäten verknüpft werden kann. Das Erzwingen von Entitäten innerhalb eines Bereichs erzwingt die Best Practice zum Gruppieren der Anforderungen einer App. Optional können Sie eine App in AEM mit einer geringen Anzahl von Leerzeichen verknüpfen.
 

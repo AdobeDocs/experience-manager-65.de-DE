@@ -9,18 +9,16 @@ exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 3%
+source-wordcount: '1007'
+ht-degree: 1%
 
 ---
 
 # Erstellen von Mobile Apps{#building-mobile-applications}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 Erstellen Sie Ihre Anwendung für die Installation auf einem Gerät oder Simulator zum Testen oder Veröffentlichen in App Stores. Sie können Anwendungen lokal mit der PhoneGap-Befehlszeilenschnittstelle oder in der Cloud mit PhoneGap Build erstellen.
 

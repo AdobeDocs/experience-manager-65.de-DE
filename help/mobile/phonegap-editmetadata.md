@@ -9,18 +9,16 @@ exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 11%
+source-wordcount: '356'
+ht-degree: 5%
 
 ---
 
 # Bearbeiten von App-Metadaten {#editing-app-metadata}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 Die Kachel **Programm verwalten** und die Seite „App verwalten“ bietet eine Möglichkeit zum Anzeigen und Bearbeiten von Anwendungsmetadaten. App-Metadaten sind erforderlich, um eine Anwendung im Store eines Anbieters freizugeben. Dies kann allgemeine Metadaten, iOS-Metadaten und Screenshots umfassen. Weitere Informationen zu allgemeinen und iOS[Metadaten finden Sie unter ](/help/mobile/phonegap-app-details-tile.md)App-Kachel verwalten“.
 

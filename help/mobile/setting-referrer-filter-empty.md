@@ -9,18 +9,16 @@ exl-id: 2f02f541-92db-469b-bf23-ec64d2e282ff
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 12%
+source-wordcount: '149'
+ht-degree: 0%
 
 ---
 
 # Festlegen des Referrer-Filters auf „Leer zulassen“{#setting-your-referrer-filter-to-allow-empty}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 Damit der Adobe Experience Manager (AEM) Mobile App Viewer Apps auf Ihrer Autoreninstanz anzeigen kann, müssen Sie Ihren HTML-Referrer-Filter auf „Leer zulassen“ einstellen.
 

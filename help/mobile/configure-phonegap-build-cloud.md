@@ -9,18 +9,16 @@ exl-id: d91a00d1-12fa-4c84-a426-49413f61c126
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 5%
+source-wordcount: '626'
+ht-degree: 1%
 
 ---
 
 # Konfigurieren des Adobe PhoneGap Build-Cloud Service {#configure-your-adobe-phonegap-build-cloud-service}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 Mit der **PhoneGap Build-Kachel** im Anwendungs-Dashboard können Sie Ihre PhoneGap-Mobile-App über den Adobe PhoneGap Build-Service erstellen und verteilen.
 

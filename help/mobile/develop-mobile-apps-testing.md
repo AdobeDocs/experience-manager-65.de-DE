@@ -9,18 +9,16 @@ exl-id: e10e1904-7016-4eb0-9408-36297285f378
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 3%
+source-wordcount: '954'
+ht-degree: 1%
 
 ---
 
 # Mobile Apps testen{#testing-mobile-apps}
 
->[!NOTE]
->
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+{{ue-over-mobile}}
 
 Angesichts der breiten Palette von Geräten auf dem Markt und Geräten, die veröffentlicht werden, ist das Testen Ihrer Apps zwingend erforderlich geworden. Dies ist ein Bereich, in dem Funktionalität und Benutzerfreundlichkeit in einem App-Store niedrige Bewertungen erhalten können, aber ein einziger Fehler kann dazu führen, dass Ihre App deinstalliert wird. Bei Ihren Testplänen und der Qualitätssicherung muss sorgfältig darauf geachtet werden. Unter dem folgenden Link werden viele der Themen behandelt, die im Allgemeinen behandelt werden müssen, z. B. die Identifizierung Ihrer Umgebung, die Definition von Testfällen, Arten von Tests, Annahmen und die Beteiligung von Kunden. Außerdem werden Tools erläutert, die bei den Tests helfen können. Interne Tools wie [Hobbes](/help/sites-developing/hobbes.md) können bei Web-basierten Benutzeroberflächentests hilfreich sein. [Tough Day](/help/sites-developing/tough-day.md) kann Ihre Instanzen mit einer simulierten Last belasten. Wenn Ihre Testumgebung bereits über Erfahrung mit Tools von Drittanbietern wie Selenium verfügt, können auch diese verwendet werden.
 
