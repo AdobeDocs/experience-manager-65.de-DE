@@ -5,16 +5,19 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
 source-wordcount: '2387'
 ht-degree: 99%
 
 ---
 
+
 # Bearbeiten einer externen SPA in Adobe Experience Manager {#editing-external-spa-within-aem}
 
 Wenn Sie entscheiden, welchen Grad der Integration Sie zwischen Ihrer externen SPA und Adobe Experience Manager (AEM) haben möchten, müssen Sie oft die SPA in AEM anzeigen und bearbeiten können.
+
+{{ue-over-spa}}
 
 ## Übersicht {#overview}
 

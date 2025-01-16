@@ -9,12 +9,13 @@ exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '978'
 ht-degree: 100%
 
 ---
+
 
 # Erste Schritte mit SPAs in AEM – Angular{#getting-started-with-spas-in-aem-angular}
 
@@ -26,9 +27,7 @@ Die SPA-Autorenfunktion bietet eine umfassende Lösung zur Unterstützung von SP
 >
 >Dieser Artikel basiert auf dem Angular-Framework. Das entsprechende Dokument für das React-Framework finden Sie unter [Erste Schritte mit SPAs in AEM – React](/help/sites-developing/spa-getting-started-react.md).
 
->[!NOTE]
->
->Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendern auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
+{{ue-over-spa}}
 
 ## Einführung {#introduction}
 

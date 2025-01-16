@@ -9,22 +9,21 @@ exl-id: 3d66e861-aaf4-4227-b31a-3545bb3561d0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '92'
 ht-degree: 100%
 
 ---
 
+
 # SPA-Referenzmaterial {#spa-reference-materials}
+
+{{ue-over-spa}}
 
 ## JavaScript-API-Referenzen für SPAs{#spa-javascript-api-references}
 
 Im Folgenden finden Sie die verfügbaren JavaScript-API-Referenzen der NPM-Module für das AEM SPA Editor SDK-Framework.
-
->[!NOTE]
->
->Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendern auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
 
 * [Komponentenzuordnung](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Seitenmodell-Manager](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)

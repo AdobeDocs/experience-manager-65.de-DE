@@ -9,20 +9,19 @@ exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2023'
 ht-degree: 100%
 
 ---
+
 
 # SPA-Blueprint{#spa-blueprint}
 
 Damit die Autorin oder der Autor mit dem AEM-SPA-Editor den Inhalt einer SPA bearbeiten kann, muss die SPA die in diesem Dokument beschriebenen Anforderungen erfüllen.
 
->[!NOTE]
->
->Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendern auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
+{{ue-over-spa}}
 
 ## Einführung {#introduction}
 
