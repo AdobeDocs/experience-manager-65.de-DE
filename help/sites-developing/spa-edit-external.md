@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2387'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ In diesem Beispiel wird `ModelManager` initialisiert und ein leerer `ModelStore`
 
 * `path` – Bei der Initialisierung wird das Modell vom definierten Pfad abgerufen und im `ModelStore` gespeichert. Auf diese Weise können Sie bei Bedarf das `rootModel` bei der Initialisierung abrufen.
 * `modelClient` - Ermöglicht die Bereitstellung eines benutzerdefinierten Clients, der für das Abrufen des Modells verantwortlich ist.
-* `model` : Ein `model`, das als Parameter übergeben wird und normalerweise bei der Verwendung von SSR ausgefüllt wird.
+* `model` – Ein `model`-Objekt, das als Parameter übergeben und typischerweise bei der Verwendung von SSR befüllt wird.
 
 ### Bearbeitbare AEM-Blattkomponenten {#authorable-leaf-components}
 

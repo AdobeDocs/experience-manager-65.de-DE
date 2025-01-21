@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3701'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 {{ue-over-mobile}}
 
-Das Erstellen einer mobilen Website ähnelt dem Erstellen einer Standardwebsite, da auch Vorlagen und Komponenten erstellt werden müssen Weitere Informationen zum Erstellen von Vorlagen und Komponenten finden Sie auf den folgenden Seiten: [Vorlagen](/help/sites-developing/templates.md), [Komponenten](/help/sites-developing/components.md) und [Erste Schritte bei der Entwicklung von AEM Sites](/help/sites-developing/getting-started.md). Der Hauptunterschied besteht im Aktivieren der integrierten Mobile-Funktionen von Adobe Experience Manager (AEM) innerhalb der Site. Hierzu wird eine Vorlage erstellt, die auf der Mobile-Seitenkomponente basiert.
+Das Erstellen einer mobilen Site ähnelt dem Erstellen einer Standard-Site, da auch Vorlagen und Komponenten erstellt werden müssen Weitere Informationen zum Erstellen von Vorlagen und Komponenten finden Sie auf den folgenden Seiten: [Vorlagen](/help/sites-developing/templates.md), [Komponenten](/help/sites-developing/components.md) und [Erste Schritte bei der Entwicklung von AEM Sites](/help/sites-developing/getting-started.md). Der Hauptunterschied besteht im Aktivieren der integrierten Mobile-Funktionen von Adobe Experience Manager (AEM) innerhalb der Site. Hierzu wird eine Vorlage erstellt, die auf der Mobile-Seitenkomponente basiert.
 
 Sie sollten in Betracht ziehen, ein [responsives Design](/help/sites-developing/responsive.md) zu verwenden und eine einzelne Site zu erstellen, die mehrere Bildschirmgrößen unterstützt.
 
