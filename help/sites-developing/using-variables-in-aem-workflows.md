@@ -9,9 +9,9 @@ exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 8305f77e895ad383a398cf8d4effa2b64cd45677
 workflow-type: tm+mt
-source-wordcount: '1941'
+source-wordcount: '1935'
 ht-degree: 100%
 
 ---
@@ -63,7 +63,7 @@ Um eine Variable zu erstellen:
    * Formulardatenmodell – Geben Sie einen Pfad für ein Formulardatenmodell an.
    * ArrayList – Geben Sie einen Untertyp für die Auflistung an.
 
-1. Geben Sie eine optionale Beschreibung für die Variable an und wählen Sie das ![Symbol „Speichern“ aus, das durch einen Haken in einem Kästchen dargestellt wird](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png), um die Änderungen zu speichern. Die Variable wird in der im linken Bereich verfügbaren Liste angezeigt.
+1. Geben Sie eine optionale Beschreibung für die Variable an und wählen Sie das ![Symbol „Speichern“ aus, das durch einen Haken in einem Kästchen dargestellt wird](assets/Done_Icon.png), um die Änderungen zu speichern. Die Variable wird in der im linken Bereich verfügbaren Liste angezeigt.
 
 Berücksichtigen Sie beim Erstellen von Variablen die folgenden Punkte:
 
@@ -93,10 +93,10 @@ Sie können bestimmte Elemente einer JSON- oder XML-Typvariablen auch mittels JS
 Gehen Sie wie folgt vor, um eine Zuordnung zwischen Variablen hinzuzufügen:
 
 1. Wählen Sie auf der Seite für das Bearbeiten des Workflows das Symbol „Schritte“ aus, das im Sidekick des Workflow-Modells verfügbar ist.
-1. Ziehen Sie den Schritt **Variable festlegen** per Drag-and-Drop in den Workflow-Editor, wählen Sie den Schritt und das ![Symbol „Konfigurieren“ aus, das durch einen Schraubenschlüssel dargestellt wird](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Konfigurieren).
+1. Ziehen Sie den Schritt **Variable festlegen** per Drag-and-Drop in den Workflow-Editor, wählen Sie den Schritt und das ![Symbol „Konfigurieren“ aus, das durch einen Schraubenschlüssel dargestellt wird](assets/configure_icon.png) (Konfigurieren).
 1. Wählen Sie im Dialogfeld „Variable festlegen“ die Option **[!UICONTROL Zuordnung]** > **[!UICONTROL Zuordnung hinzufügen]** aus.
 1. Wählen Sie im Abschnitt **Variable zuordnen** die Variable aus, in der Daten gespeichert werden sollen, wählen Sie den Zuordnungsmodus aus und geben Sie einen Wert an, der in der Variablen gespeichert werden soll. Die Zuordnungsmodi variieren je nach Variablentyp.
-1. Ordnen Sie weitere Variablen zu, damit Sie einen aussagekräftigen Ausdruck bilden können. Wählen Sie das ![Symbol „Speichern“ aus, das durch einen Haken in einem Kästchen dargestellt wird](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png), um die Änderungen zu speichern.
+1. Ordnen Sie weitere Variablen zu, damit Sie einen aussagekräftigen Ausdruck bilden können. Wählen Sie das ![Symbol „Speichern“ aus, das durch einen Haken in einem Kästchen dargestellt wird](assets/Done_Icon.png), um die Änderungen zu speichern.
 
 ### Beispiel 1: Abfragen einer XML-Variablen, um den Wert für eine Zeichenfolgenvariable festzulegen {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -251,8 +251,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Bearbeiten einer Variablen {#edit-a-variable}
 
 1. Wählen Sie auf der Seite „Workflow bearbeiten“ das Symbol „Variablen“ im Sidekick des Workflow-Modells aus. Im Abschnitt „Variablen“ im linken Bereich werden alle vorhandenen Variablen angezeigt.
-1. Wählen Sie das Symbol ![„Bearbeiten“ aus, dargestellt durch ein Bleistiftsymbol](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Bearbeiten) neben dem Namen der Variablen, die Sie bearbeiten möchten.
-1. Bearbeiten Sie die Variableninformationen und wählen Sie das Symbol ![„Speichern“ aus, dargestellt durch ein Häkchen](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png), um die Änderungen zu speichern. Die Felder **[!UICONTROL Name]** und **[!UICONTROL Typ]** für eine Variable können Sie nicht bearbeiten.
+1. Wählen Sie das Symbol ![„Bearbeiten“ aus, dargestellt durch ein Bleistiftsymbol](assets/edit.png) (Bearbeiten) neben dem Namen der Variablen, die Sie bearbeiten möchten.
+1. Bearbeiten Sie die Variableninformationen und wählen Sie das Symbol ![„Speichern“ aus, dargestellt durch ein Häkchen](assets/Done_Icon.png), um die Änderungen zu speichern. Die Felder **[!UICONTROL Name]** und **[!UICONTROL Typ]** für eine Variable können Sie nicht bearbeiten.
 
 ## Löschen einer Variablen {#delete-a-variable}
 
@@ -262,4 +262,4 @@ So löschen Sie eine Variable,
 
 1. Wählen Sie auf der Seite „Workflow bearbeiten“ das Symbol „Variablen“ im Sidekick des Workflow-Modells aus. Im Abschnitt „Variablen“ im linken Bereich werden alle vorhandenen Variablen angezeigt.
 1. Wählen Sie das Symbol „Löschen“ neben dem Namen der Variablen aus, die Sie löschen möchten.
-1. Wählen Sie das Symbol ![„Fertig“ aus, dargestellt durch ein Häkchen](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png), um zu bestätigen, dass die Variable gelöscht werden soll.
+1. Wählen Sie das Symbol ![„Fertig“ aus, dargestellt durch ein Häkchen](assets/Done_Icon.png), um zu bestätigen, dass die Variable gelöscht werden soll.
