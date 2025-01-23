@@ -7,10 +7,10 @@ feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: f941782f9a4201e7bff898853d3fc18954418500
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 100%
+source-wordcount: '908'
+ht-degree: 98%
 
 ---
 
@@ -66,7 +66,7 @@ Ziele:
 * Erstellen einer Sendeaktion zum Senden einer E-Mail mit Formularinhalt.
 * Anzeigen eines adaptiven Formulars in der Vorschau und Senden des Formulars.
 
-[![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
+[![Siehe Handbuch](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
 ## Schritt 2: Erstellen Sie ein Formulardatenmodell {#step-create-form-data-model}
 
@@ -82,7 +82,7 @@ Ziele:
 * Konfigurieren der Lese- und Schreibdienste für Datenmodellobjekte.
 * Testen des Formulardatenmodells und der konfigurierten Dienste mit Testdaten.
 
-[![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
+[![Siehe Handbuch](assets/see-the-guide-sm.png)](create-form-data-model.md)
 
 ## Schritt 3: Wenden Sie Regeln auf adaptive Formularfelder an {#step-apply-rules-to-adaptive-form-fields}
 
@@ -95,7 +95,7 @@ Ziele:
 * Erstellen und Anwenden von Regeln in adaptiven Formularfeldern.
 * Verwenden von Regeln zum Auslösen von Formulardatenmodelldiensten, um Daten in der Datenbank zu aktualisieren.
 
-[![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
+[![Siehe Handbuch](assets/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
 ## Schritt 4: Gestalten Sie Ihr adaptives Formular {#step-style-your-adaptive-form}
 
@@ -109,7 +109,7 @@ Ziele:
 * Erstellen eines Designs für ein adaptives Formular mit dem Design-Editor.
 * Verwenden von Web Fonts in einem benutzerdefinierten Design.
 
-[![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
+[![Siehe Handbuch](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
 ## Schritt 5: Veröffentlichen Sie Ihr adaptives Formular {#step-publish-your-adaptive-form}
 
@@ -123,4 +123,4 @@ Ziele:
 * Einbetten des adaptiven Formulars in eine AEM [!DNL Sites]-Seite.
 * Einbetten des adaptiven Formulars in eine externe Web-Seite (eine außerhalb von AEM gehostete, nicht zu AEM gehörende Web-Seite).
 
-[![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)
+[![Siehe Handbuch](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)
