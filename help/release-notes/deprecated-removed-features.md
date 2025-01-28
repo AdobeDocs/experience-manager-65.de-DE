@@ -5,10 +5,10 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 191c4b02274ca7e3e9d4622b72cd585870581f47
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 100%
+source-wordcount: '1747'
+ht-degree: 98%
 
 ---
 
@@ -68,7 +68,8 @@ In diesem Abschnitt werden die Merkmale und Funktionen aufgelistet, die aus AEM�
 
 | Bereich | Funktion | Ersatz | Version (SP) |
 |--- |--- |--- |--- |
-| Integration mit [!DNL Experience Cloud] | Sie können Ihre Assets mit [!DNL Experience Cloud] synchronisieren, mithilfe einer Konfiguration über [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] hieß zuvor [!DNL Adobe Experience Cloud]. | Bei Fragen [wenden Sie sich an den Kunden-Support von Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de#support). |  |
+| Commerce  | AEM CIF Classic wurde entfernt. | Sie sollten zu [AEM CIF](/help/commerce/cif/migration.md) migrieren. Wenn Sie weiterhin CIF Classic benötigen, wurde ein Kompatibilitätspaket erstellt (wenden Sie [ an den Adobe-Support](https://experienceleague.adobe.com/de?support-solution=General#support). | 6.5.22.0 |
+| Integration mit [!DNL Experience Cloud] | Sie können Ihre Assets mit [!DNL Experience Cloud] synchronisieren, mithilfe einer Konfiguration über [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] hieß zuvor [!DNL Adobe Experience Cloud]. | Bei Fragen [wenden Sie sich an den Kunden-Support von Adobe](https://experienceleague.adobe.com/de?support-solution=General#support). |  |
 | Analytics Activity Map | Die Version der Activity Map, die in AEM enthalten ist. | Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden. Verwenden Sie das [von Adobe Analytics bereitgestellte Activity Map-Plug-in](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de). |  |
 | Integrationen | Die ExactTarget-Integration wurde aus der Standardverteilung (Quickstart) entfernt und ist nicht mehr verfügbar. | Kein Ersatz. |  |
 | Integrationen | Die Salesforce Force-API-Integration wurde aus der Standardverteilung (Quickstart) entfernt und ist jetzt ein zusätzliches, über [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) zu installierendes Paket. | Die Funktion ist immer noch verfügbar. |
