@@ -6,10 +6,10 @@ exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 01fa8cd75c00b04578fe103d07fa52553d2b6b93
 workflow-type: tm+mt
-source-wordcount: '3652'
-ht-degree: 100%
+source-wordcount: '3656'
+ht-degree: 99%
 
 ---
 
@@ -217,6 +217,7 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
    >* zlib.x86-64 (1.2.7-17)
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
+   >* glibc-locale.x86_64 (2.17 oder höher)
 
 1. Produktionsimplementierungen von Microsoft® Windows werden für Kundinnen und Kunden unterstützt, die ein Upgrade auf 6.5 durchführen, sowie für die Nutzung außerhalb der Produktion. Neue Bereitstellungen erfolgen auf Anfrage für AEM Sites und Assets.
 1. AEM Forms wird auf Microsoft Windows® Server ohne die Einschränkungen von Support-Level R unterstützt.
