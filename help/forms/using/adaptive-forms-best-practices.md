@@ -7,10 +7,10 @@ feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: c55c959123f7feaa6571835974f1ce6fe3ead22b
 workflow-type: tm+mt
-source-wordcount: '5538'
-ht-degree: 100%
+source-wordcount: '5597'
+ht-degree: 98%
 
 ---
 
@@ -210,6 +210,7 @@ Erwägen Sie die folgenden Best Practices, um Leistungsprobleme bei großen Form
 * Schließen Sie nur die Felder und Bereiche in adaptiven Formularen, die Informationen vom Benutzer erfassen. Versuchen Sie, statische Inhalte auf ein Minimum zu reduzieren, oder verwenden Sie URLs, um sie in einem separaten Fenster zu öffnen.
 * Zwar wird jedes Formular für einen bestimmten Zweck entwickelt, dennoch gibt es bei den meisten Formularen auch gemeinsame Abschnitte. Ein Beispiel hierfür sind etwa persönliche Daten, die Adresse, Angaben zur Beschäftigung usw. Erstellen Sie [adaptive Formularfragmente](/help/forms/using/adaptive-form-fragments.md) für allgemeine Formularelemente und -abschnitte und verwenden Sie diese in allen Formularen. Sie können auch ein Panel in einem vorhandenen Formular als Fragment speichern. Jede Änderung in einem Fragment wird in allen zugehörigen adaptiven Formularen widergespiegelt. Es unterstützt gemeinsames Authoring, da mehrere Verfasser an verschiedenen Fragmenten, die ein Formular bilden, gleichzeitig arbeiten können.
 
+   * Erwägen Sie das Erstellen von Formularfragmenten auch für nicht wiederverwendbare Abschnitte während der Formularerstellung. Wenn Formulare größer und komplexer werden, kann die Unterteilung in Fragmente den Erstellungsprozess erheblich vereinfachen und die Pflege des Formulars vereinfachen. Auf diese Weise können Sie sich auf kleinere, besser verwaltbare Teile des Formulars konzentrieren, anstatt das gesamte Formular auf einmal zu bearbeiten.
    * Ähnlich wie bei adaptiven Formularen wird empfohlen, dass alle fragmentspezifischen Stile und benutzerdefinierten Skripte mithilfe des Fragment-Container-Dialogfelds in der Client-Bibliothek definiert werden. Außerdem sollten Sie eigenständige Fragmente erstellen, die nicht von externen Objekten abhängig sind.
    * Außerdem sollten Sie Cross-Fragments-Skripterstellung vermeiden. Wenn es ein Objekt außerhalb des Fragments gibt, auf das Sie verweisen möchten, müssen Sie das Objekt als Teil des übergeordneten Formulars einarbeiten. Wenn sich das Objekt dennoch in einem anderen Fragment befinden muss, verweisen Sie im Skript anhand seines Namens darauf.
 
