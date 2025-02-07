@@ -7,9 +7,9 @@ user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Mana
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
 source-git-commit: b5a87404435758d660f136d2e236de699ecad541
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7475'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1217,7 +1217,7 @@ ht-degree: 99%
       + [Konfigurieren von und Fehlerbehebung für AEM Forms auf einem JEE-Server-Cluster](/help/forms/developing/configure-server-cluster.md)
       + [Erzeugen und Verwenden von Hashes in dynamischen PDF-Formularen](/help/forms/developing/hashing-forms.md)
       + [Übergeben von Anmeldeinformationen mithilfe von WS-Security-Kopfzeilen](/help/forms/developing/passing-credentials.md)
-   + {#aem-forms-glossary}
+   + Glossar {#aem-forms-glossary}
 +[AEM Forms-Glossare](/help/forms/using/aem-forms-glossary.md)
 + Content and Commerce {#commerce}
    + [Einführung und Übersicht](/help/commerce/cif/introduction.md)
