@@ -1,6 +1,6 @@
 ---
 title: Responsives Layout für Ihre Inhaltsseiten
-description: Mit Adobe Experience Manager können Sie ein responsives Layout für Ihre Seiten erstellen.
+description: Mit Adobe Experience Manager können Sie ein responsives Layout für Ihre Seiten erstellen, indem Sie die Layout-Container -Komponente verwenden.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,18 +9,27 @@ exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 41da3aef16e650d8dc33e96991d0a997564c9224
 workflow-type: tm+mt
-source-wordcount: '1798'
-ht-degree: 100%
+source-wordcount: '1853'
+ht-degree: 94%
 
 ---
 
+
 # Responsives Layout{#responsive-layout}
 
-AEM ermöglicht das Erstellen eines responsiven Layouts für Ihre Seiten mithilfe der Komponente **Layout-Container**.
+Mit Adobe Experience Manager können Sie ein responsives Layout für Ihre Seiten erstellen, indem Sie die **Layout-Container**-Komponente verwenden.
 
-Dies bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout entsprechend der Geräte-/Fenstergröße und dem Format neu anordnen. Die Komponente wird zusammen mit dem [**Layout-Modus**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode) verwendet, in dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
+>[!TIP]
+>
+>Dieses Dokument bietet einen Überblick über die Funktionen des Layout-Containers, der für Inhaltsautorinnen und -autoren verfügbar ist.
+>
+>Für Site-Admins und -Entwickler werden Informationen zum Konfigurieren des Layout-Containers für Ihre Sites im Dokument [Konfigurieren des Layout-Containers und des Layout-Modus“ beschrieben](/help/sites-authoring/responsive-layout.md)
+
+## Überblick {#overview}
+
+Die **Layout-Container**-Komponente bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout entsprechend der Geräte-/Fenstergröße und dem Format neu anordnen. Die Komponente wird zusammen mit dem [**Layout-Modus**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode) verwendet, in dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
 
 Der Layout-Container:
 

@@ -10,20 +10,27 @@ exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 100%
+source-wordcount: '1479'
+ht-degree: 88%
 
 ---
 
+
 # Konfigurieren von Layout-Container und Layout-Modus{#configuring-layout-container-and-layout-mode}
 
-Ein [responsives Layout](/help/sites-authoring/responsive-layout.md) ist eine Methode, um ein [responsives Webdesign](https://de.wikipedia.org/wiki/Responsive_Webdesign) zu realisieren. Damit lassen sich Web-Seiten erstellen, deren Layout und Abmessungen von dem Gerät des Benutzers abhängen.
+Erfahren Sie, wie Sie Layout-Container und den Layout-Modus konfigurieren.
 
->[!NOTE]
+>[!TIP]
 >
->Dieser Ansatz ist vergleichbar mit den Mechanismen für [mobile Websites](/help/sites-developing/mobile-web.md), die adaptives Webdesign nutzen (in erster Linie für die klassische Benutzeroberfläche).
+>Dieses Dokument bietet einen Überblick über das responsive Design für Site-Admins und Entwicklerinnen und Entwickler, die beschreiben, wie Funktionen in AEM realisiert werden.
+>
+>Informationen zur Verwendung responsiver Design-Funktionen auf einer Inhaltsseite für Inhaltsautoren finden Sie im Dokument [Responsives Layout für Inhaltsseiten.](/help/sites-authoring/responsive-layout.md)
+
+## Überblick {#overview}
+
+Ein [responsives Layout](/help/sites-authoring/responsive-layout.md) ist eine Methode, um ein [responsives Webdesign](https://de.wikipedia.org/wiki/Responsive_Webdesign) zu realisieren. Damit lassen sich Web-Seiten erstellen, deren Layout und Abmessungen von dem Gerät des Benutzers abhängen.
 
 Das responsive Layout für Ihre Seiten wird von AEM durch eine Kombination von Mechanismen ermöglicht:
 
@@ -33,7 +40,7 @@ Das responsive Layout für Ihre Seiten wird von AEM durch eine Kombination von M
 
    * Die standardmäßige **Layout-Container**-Komponente ist definiert unter:
 
-     /libs/wcm/foundation/components/responsivegrid
+     `/libs/wcm/foundation/components/responsivegrid`
 
    * Sie können Layout-Container definieren:
 
@@ -49,10 +56,6 @@ Sobald der Layout-Container auf der Seite positioniert ist, können Sie im **Lay
 * [**Emulator**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 Auf diese Weise können Sie responsive Websites erstellen und bearbeiten, deren Layout sich durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße anpasst. Die Benutzerin bzw. der Benutzer kann dann mit dem Emulator sehen, wie der Inhalt wiedergegeben wird.
 
->[!CAUTION]
->
->Auch wenn die **Layout-Container**-Komponente in der klassischen Benutzeroberfläche verfügbar ist, steht der vollständige Funktionsumfang nur in der Touch-optimierten Benutzeroberfläche zur Verfügung.
-
 Mit diesen responsiven Rastermechanismen können Sie:
 
 * Breakpoints verwenden (die die Gerätegruppierung angeben), um je nach Geräte-Layout ein unterschiedliches Inhaltsverhalten zu definieren.
@@ -60,9 +63,17 @@ Mit diesen responsiven Rastermechanismen können Sie:
 * Horizontales Einrasten am Raster verwenden (Komponenten im Raster platzieren, die Größe nach Bedarf ändern oder definieren, wann ein Reduzieren/Umfließen erfolgen soll, damit sie nebeneinander oder über-/untereinander angeordnet werden).
 * Realisieren einer Spaltensteuerung.
 
+>[!TIP]
+>
+>Adobe stellt eine [GitHub-Dokumentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) zum responsiven Layout als Referenz bereit. Diese kann Frontend-Entwickelnden zur Verfügung gestellt werden, damit sie das AEM-Raster außerhalb von AEM verwenden können, um beispielsweise statische HTML-Modelle für künftige AEM Sites zu erstellen.
+
 >[!NOTE]
 >
 >Bei einer vorab konfigurierten Installation wurde das responsive Layout für die [We.Retail-Referenzwebsite](/help/sites-developing/we-retail.md) konfiguriert. [Aktivieren Sie die Layout-Container-Komponente](#enable-the-layout-container-component-for-page) für andere Seiten.
+
+>[!CAUTION]
+>
+>Auch wenn die **Layout-Container**-Komponente in der klassischen Benutzeroberfläche verfügbar ist, steht der vollständige Funktionsumfang nur in der Touch-optimierten Benutzeroberfläche zur Verfügung.
 
 ## Konfigurieren des responsiven Emulators {#configuring-the-responsive-emulator}
 
@@ -148,7 +159,7 @@ Haltepunkte befinden sich im Abschnitt `<jcr:content>` der Datei `.context.html`
 
 Eine Beispieldefinition:
 
-```xml
+```html
 <cq:responsive jcr:primaryType="nt:unstructured">
   <breakpoints jcr:primaryType="nt:unstructured">
     <phone jcr:primaryType="nt:unstructured" title="{String}Phone" width="{Decimal}768"/>
@@ -186,13 +197,13 @@ Die folgenden beiden Beispiele veranschaulichen die Definition:
 
 * **HTL:**
 
-  ```xml
+  ```html
   <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
   ```
 
 * **JSP:**
 
-  ```
+  ```html
   <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
   ```
 
@@ -204,7 +215,7 @@ AEM verwendet LESS, um Teile des erforderlichen CSS zu generieren. Diese müssen
 
 Sie müssen auch eine [Client-Bibliothek](https://experienceleague.adobe.com/docs/?lang=de) erstellen, um zusätzliche Konfigurations- und Funktionsaufrufe bereitzustellen. Der folgende LESS-Extrakt ist ein Beispiel für das Minimum, das Sie zum Projekt hinzufügen müssen:
 
-```java
+```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
 
 /* maximum amount of grid cells to be provided */
@@ -311,3 +322,61 @@ Sie können die Anzahl der verfügbaren Spalten für jede spezifische Instanz de
    * Komponenten, die zur aktuellen Komponente hinzugefügt werden können:
 
       * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+
+## Verschachtelte responsive Raster {#nested-responsive-grids}
+
+Gelegentlich ist es erforderlich, responsive Raster zu verschachteln, um die Anforderungen Ihres Projekts zu erfüllen. Beachten Sie jedoch, dass es sich als Best Practice für die Adobe empfiehlt, die Struktur so flach wie möglich zu halten.
+
+Wenn Sie die Verwendung verschachtelter responsiver Raster nicht vermeiden können, stellen Sie Folgendes sicher:
+
+* Alle Container (Container, Registerkarten, Akkordeons usw.) haben die Eigenschaft `layout = responsiveGrid`.
+* Mischen Sie nicht die Eigenschaft `layout = simple` in der Container-Hierarchie.
+
+Dazu gehören alle strukturellen Container aus der Seitenvorlage.
+
+Die Spaltennummer des inneren Containers sollte nie größer sein als die des äußeren Containers. Das folgende Beispiel erfüllt diese Bedingung. Während die Spaltennummer des äußeren Containers für den Standardbildschirm (Desktop) 8 beträgt, ist die Spaltennummer des inneren Containers 4.
+
+>[!BEGINTABS]
+
+>[!TAB Beispielknotenstruktur]
+
+```text
+container
+  @layout = responsiveGrid
+  cq:responsive
+    default
+      @offset = 0
+      @width = 8
+  container
+  @layout = responsiveGrid
+    cq:responsive
+      default
+        @offset = 0
+        @width = 4
+    text
+      @text =" Text Column 1"
+```
+
+>[!TAB Beispiel für resultierendes HTML]
+
+```html
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
+  <div id="container-c9955c233c" class="cmp-container">
+    <div class="aem-Grid aem-Grid--8 aem-Grid--default--8 ">
+      <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <div id="container-8414e95866" class="cmp-container">
+          <div class="aem-Grid aem-Grid--4 aem-Grid--default--4 ">
+            <div class="text aem-GridColumn aem-GridColumn--default--4">
+              <div data-cmp-data-layer="..." id="text-1234567890" class="cmp-text">
+                <p>Text Column 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+>[!ENDTABS]
