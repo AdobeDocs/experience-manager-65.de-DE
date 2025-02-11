@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 7b0f1c79a019e01e5814d00d5a3de0861999b7fd
 workflow-type: tm+mt
 source-wordcount: '3681'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -217,7 +217,7 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
    >* zlib.x86-64 (1.2.7-17)
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
-   >* glibc-locale.x86_64 (2.17 oder höher)
+   >* glibc-locale.x86_64 (2.17 oder später)
 
 1. Produktionsimplementierungen von Microsoft® Windows werden für Kundinnen und Kunden unterstützt, die ein Upgrade auf 6.5 durchführen, sowie für die Nutzung außerhalb der Produktion. Neue Bereitstellungen erfolgen auf Anfrage für AEM Sites und Assets.
 1. AEM Forms wird auf Microsoft Windows® Server ohne die Einschränkungen von Support-Level R unterstützt.
@@ -548,7 +548,7 @@ Das Zurückschreiben von XMP-Daten wird für die folgenden Plattformen und Datei
 
 * **Betriebssysteme:**
 
-   * Linux® (Unterstützung von 32-Bit- und 64-Bit-Anwendungen auf 64-Bit-Systemen). Schritt-für-Schritt-Anleitungen zur Installation von 32-Bit-Client-Bibliotheken finden Sie unter [Aktivieren von XMP-Extraktion und -Writeback auf Red Hat Linux® (64 Bit)](https://helpx.adobe.com/de/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
+   * Linux® (Unterstützung von 32-Bit- und 32-Bit-Anwendungen auf 64-Bit-Systemen). Schritt-für-Schritt-Anleitungen zur Installation von 32-Bit-Client-Bibliotheken finden Sie unter [Aktivieren von XMP-Extraktion und -Writeback auf Red Hat Linux® (64 Bit)](https://helpx.adobe.com/de/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 
    * Windows Server
    * macOS X (64 Bit)
