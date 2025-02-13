@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1479'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ Erfahren Sie, wie Sie Layout-Container und den Layout-Modus konfigurieren.
 
 >[!TIP]
 >
->Dieses Dokument bietet einen Überblick über das responsive Design für Site-Admins und Entwicklerinnen und Entwickler, die beschreiben, wie Funktionen in AEM realisiert werden.
+>Dieses Dokument bietet einen Überblick über das responsive Design für Site-Admins und Entwickelnde, die beschreiben, wie Funktionen in AEM umgesetzt werden.
 >
->Informationen zur Verwendung responsiver Design-Funktionen auf einer Inhaltsseite für Inhaltsautoren finden Sie im Dokument [Responsives Layout für Inhaltsseiten.](/help/sites-authoring/responsive-layout.md)
+>Informationen zur Verwendung responsiver Design-Funktionen auf einer Inhaltsseite für Inhaltsautorinnen und -autoren finden Sie im Dokument [Responsives Layout für Ihre Inhaltsseiten](/help/sites-authoring/responsive-layout.md).
 
 ## Überblick {#overview}
 
@@ -65,7 +65,7 @@ Mit diesen responsiven Rastermechanismen können Sie:
 
 >[!TIP]
 >
->Adobe stellt eine [GitHub-Dokumentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) zum responsiven Layout als Referenz bereit. Diese kann Frontend-Entwickelnden zur Verfügung gestellt werden, damit sie das AEM-Raster außerhalb von AEM verwenden können, um beispielsweise statische HTML-Modelle für künftige AEM Sites zu erstellen.
+>Adobe stellt eine [GitHub-Dokumentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) zum responsiven Layout als Referenz bereit. Diese kann Frontend-Entwickelnden zur Verfügung gestellt werden, damit sie das AEM-Raster außerhalb von AEM verwenden können, um beispielsweise statische HTML-Modelle für künftige AEM-Sites zu erstellen.
 
 >[!NOTE]
 >
@@ -325,20 +325,20 @@ Sie können die Anzahl der verfügbaren Spalten für jede spezifische Instanz de
 
 ## Verschachtelte responsive Raster {#nested-responsive-grids}
 
-Gelegentlich ist es erforderlich, responsive Raster zu verschachteln, um die Anforderungen Ihres Projekts zu erfüllen. Beachten Sie jedoch, dass es sich als Best Practice für die Adobe empfiehlt, die Struktur so flach wie möglich zu halten.
+Gelegentlich ist es erforderlich, responsive Raster zu verschachteln, um die Anforderungen Ihres Projekts zu erfüllen. Beachten Sie jedoch, dass Adobe als Best Practice empfiehlt, die Struktur so flach wie möglich zu halten.
 
 Wenn Sie die Verwendung verschachtelter responsiver Raster nicht vermeiden können, stellen Sie Folgendes sicher:
 
 * Alle Container (Container, Registerkarten, Akkordeons usw.) haben die Eigenschaft `layout = responsiveGrid`.
-* Mischen Sie nicht die Eigenschaft `layout = simple` in der Container-Hierarchie.
+* Mischen Sie nicht die Eigenschaft `layout = simple` in die Container-Hierarchie.
 
-Dazu gehören alle strukturellen Container aus der Seitenvorlage.
+Dies betrifft alle strukturellen Container aus der Seitenvorlage.
 
-Die Spaltennummer des inneren Containers sollte nie größer sein als die des äußeren Containers. Das folgende Beispiel erfüllt diese Bedingung. Während die Spaltennummer des äußeren Containers für den Standardbildschirm (Desktop) 8 beträgt, ist die Spaltennummer des inneren Containers 4.
+Die Spaltenanzahl des inneren Containers darf nie größer sein als die des äußeren Containers. Das folgende Beispiel erfüllt diese Bedingung. Die Spaltenanzahl des äußeren Containers für den Standardbildschirm (Desktop) beträgt 8 und die des inneren Containers 4.
 
 >[!BEGINTABS]
 
->[!TAB Beispielknotenstruktur]
+>[!TAB Beispiel einer Knoten-Struktur]
 
 ```text
 container
@@ -357,7 +357,7 @@ container
       @text =" Text Column 1"
 ```
 
->[!TAB Beispiel für resultierendes HTML]
+>[!TAB Beispiel der resultierenden HTML]
 
 ```html
 <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
