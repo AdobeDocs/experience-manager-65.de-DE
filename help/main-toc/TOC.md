@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: b5a87404435758d660f136d2e236de699ecad541
-workflow-type: ht
-source-wordcount: '7475'
-ht-degree: 100%
+source-git-commit: 236dac79430bc974b9cc95299a566283a748476a
+workflow-type: tm+mt
+source-wordcount: '7474'
+ht-degree: 99%
 
 ---
 
@@ -542,7 +542,7 @@ ht-degree: 100%
       + [Architektur und Bereitstellungstopologien für AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
       + [Wählen eines Persistenztyps für eine AEM Forms-Installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md)
       + Installieren von AEM Forms on OSGi {#osgi-installation}
-         + [Unterstützte Plattformen für AEM Forms auf OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/introduction/technical-requirements.html?lang=de)
+         + [Unterstützte Plattformen für AEM Forms on OSGi](/help/forms/using/supported-platforms.md)
          + [Installieren und Konfigurieren von Dokumenten-Services](/help/forms/using/install-configure-document-services.md)
          + [Installieren und konfigurieren Sie Datenerfassungsfunktionen](/help/forms/using/installing-configuring-aem-forms-osgi.md)
          + [Installieren und Konfigurieren eines formularzentrierten Workflows auf OSGi](/help/forms/using/installing-configuring-forms-centric-workflow-on-osgi.md)
