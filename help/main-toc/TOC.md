@@ -7,9 +7,9 @@ user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Mana
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
 source-git-commit: 236dac79430bc974b9cc95299a566283a748476a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7474'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -542,7 +542,7 @@ ht-degree: 99%
       + [Architektur und Bereitstellungstopologien für AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
       + [Wählen eines Persistenztyps für eine AEM Forms-Installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md)
       + Installieren von AEM Forms on OSGi {#osgi-installation}
-         + [Unterstützte Plattformen für AEM Forms on OSGi](/help/forms/using/supported-platforms.md)
+         + [Unterstützte Plattformen für AEM Forms auf OSGi](/help/forms/using/supported-platforms.md)
          + [Installieren und Konfigurieren von Dokumenten-Services](/help/forms/using/install-configure-document-services.md)
          + [Installieren und konfigurieren Sie Datenerfassungsfunktionen](/help/forms/using/installing-configuring-aem-forms-osgi.md)
          + [Installieren und Konfigurieren eines formularzentrierten Workflows auf OSGi](/help/forms/using/installing-configuring-forms-centric-workflow-on-osgi.md)
