@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: 236dac79430bc974b9cc95299a566283a748476a
-workflow-type: ht
-source-wordcount: '7474'
-ht-degree: 100%
+source-git-commit: 0109abf51045224912d130ee29f67d7274cfc4f4
+workflow-type: tm+mt
+source-wordcount: '7471'
+ht-degree: 99%
 
 ---
 
@@ -884,7 +884,7 @@ ht-degree: 100%
       + [FormCalc-Referenz für Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65_de)
       + [Verwenden der Scribble-Signatur in HTML5-Formularen](/help/forms/using/scribble-signature.md)
       + [Ändern des Inhalts auf Seite Null in Designer](/help/forms/using/changing-page-zero-content-designer.md)
-      + [Best Practices für die Barrierefreiheit]{#accessibility-best-practices}
+      + Best Practices für Barrierefreiheit {#accessibility-best-practices}
          + [Einführung](/help/forms/using/introduction-accessibility-forms-designer.md)
          + [Best Practices zum Erstellen von Formularen](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
          + [Techniken zum Testen der Barrierefreiheit von Formularen](/help/forms/using/techniques-for-testing-form-accessibility.md)
@@ -1207,7 +1207,7 @@ ht-degree: 100%
       + [Verarbeiten von Dokumenten, auch wenn der AEM Forms-Server nicht vollständig betriebsbereit ist](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Ausgabe-Service, Forms-Service oder DoR-Service (Document of Record) kann nicht verwendet werden](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Abmildern von Struts 2 RCE-Schwachstellen für Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
-      + [Fehlschlagen des Datenbank-Backups beim Upgrade auf 6.5.12.0 für MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
+      + [Fehler beim Sichern der Datenbank beim Upgrade auf 6.5.12.0 für MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [Beim Drucken einer großen Anzahl von PDFs auf WorkBench schlägt die PDF-Generierung fehl](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [Ordnungsgemäßes Neustarten von AEM SDK](/help/forms/using/restart-aem-sdk.md)
       + [Der PaperCapture-Dienst kann OCRs auf PDF nicht ausführen](/help/forms/using/papercapture-service-resolution.md)
