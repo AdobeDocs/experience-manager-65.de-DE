@@ -7,9 +7,9 @@ feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 6ab943894398733d178f561430d3f391e8722195
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3059'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ So konfigurieren Sie Experience Manager manuell:
 
    Um jede `Client ID` hinzuzufügen, klicken Sie auf `+`. Klicken Sie auf **[!UICONTROL Speichern]**, nachdem Sie alle IDs hinzugefügt haben.
 
-1. Überprüfen Sie in der Konfiguration von **[!UICONTROL Adobe Granite OAuth Application and Provider]** die vorhandenen **[!UICONTROL Adobe Granite OAuth Application and Provider]**-Instanzen. Wenn Sie eine Instanz mit einem `Config ID`-Wert von `ims` finden, verwenden Sie diese für die Anweisungen in diesem Verfahren. Klicken Sie andernfalls auf `+`, um eine Konfigurationsinstanz zu erstellen. Legen Sie die folgenden Eigenschaftswerte fest und klicken Sie auf **[!UICONTROL Speichern]**.
+1. Überprüfen Sie in der Konfiguration von **[!UICONTROL Adobe Granite OAuth Application and Provider]** die vorhandenen Instanzen von **[!UICONTROL Adobe Granite OAuth Application and Provider]**. Wenn Sie eine Instanz mit einem `Config ID`-Wert von `ims` finden, verwenden Sie diese für die Anweisungen in diesem Verfahren. Klicken Sie andernfalls auf `+`, um eine Konfigurationsinstanz zu erstellen. Legen Sie die folgenden Eigenschaftswerte fest und klicken Sie auf **[!UICONTROL Speichern]**.
 
    * [!UICONTROL Client-ID]: Nicht ändern
    * [!UICONTROL Client-Geheimnis]: Nicht ändern
@@ -131,7 +131,7 @@ Eine zusätzliche Konfiguration ist nur erforderlich, wenn Sie verschiedene Adob
 1. Eine betriebsbereite Experience Manager-Instanz mit für AAL konfigurierter Bearer-Authentifizierung.
 1. Installieren Sie das folgende Paket (Service Pack 11) auf Ihrer Experience Manager 6.5-Instanz.
 
-   [Experience Manager-6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip) herunterladen
+   [Herunterladen von Experience Manager 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
 
 1. Wenden Sie sich an den [!UICONTROL Kunden-Support], um die Client-ID und den geheimen Schlüssel für die Bearer-Authentifizierung Ihrer IMS-Organisation zu erhalten.
 
