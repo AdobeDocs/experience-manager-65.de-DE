@@ -2,11 +2,10 @@
 title: Technische Anforderungen
 description: In diesem Dokument werden die unterstützten Client- und Server-Plattformen für Adobe Experience Manager aufgeführt.
 topic-tags: platform
-exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 7b0f1c79a019e01e5814d00d5a3de0861999b7fd
+source-git-commit: 9891d7e61e62c541073c177eb88c49d685cbcb5f
 workflow-type: ht
 source-wordcount: '3681'
 ht-degree: 100%
@@ -513,12 +512,12 @@ Windows x86:
 >Zusätzlich gilt Folgendes:
 >
 >* PDF Generator erfordert die 32-Bit-Version der [klassischen Acrobat 2020-Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) oder der Acrobat 2017-Version 17.011.30078, um die Konvertierung durchzuführen.
->* PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt®.
 >* PDF Generator unterstützt nur die 32-Bit-Version von Microsoft® Office Professional Plus und anderer für die Konvertierung erforderliche Software.
 >* Die Microsoft® Office Professional Plus-Installation kann eine Einzelhandels- oder MAK/KMS/AD-basierte Mengenlizenzierung verwenden.
 >* Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder unlizenziert wird, z. B. weil eine Installation mit Volumenlizenz einen KMS-Host nicht innerhalb eines bestimmten Zeitraums finden kann, können Konvertierungen fehlschlagen, bis die Installation neu lizenziert und reaktiviert wird.
 >* PDF Generator unterstützt 32-Bit- und 64-Bit-Versionen von OpenOffice unter dem Linux®-Betriebssystem.
 >* PDF Generator unterstützt nicht Microsoft® Office 365.
+>* PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt®.
 >* Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
 >* Eine Version von Acrobat ist im Lieferumfang von AEM Forms enthalten, um die PDF Generator-Funktionalität zu aktivieren. Die gebündelte Version sollte während der Laufzeit der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur programmatisch mit AEM Forms zugänglich sein. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* Der PDF Generator-Service unterstützt nicht Microsoft® Windows 10.
