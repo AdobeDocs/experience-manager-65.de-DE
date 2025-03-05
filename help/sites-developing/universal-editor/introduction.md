@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Flexibilität des universellen Editors 
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: bf9dc1695be7f7a10cb76160b531c9adbbfc8c34
+source-git-commit: d3dd827e93549c558284be1c1991b4e003c9e0e8
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 20%
+source-wordcount: '1252'
+ht-degree: 24%
 
 ---
 
@@ -34,6 +34,16 @@ Der universelle Editor ist ein Service, der mit AEM zusammenarbeitet, um Inhalte
 * Der universelle Editor-Dienst, der auf demselben Host wie Dispatcher ausgeführt wird, schreibt Änderungen zurück in die AEM-Autoreninstanz.
 
 ![Autorenfluss mit dem universellen Editor](assets/author-flow.png)
+
+## Voraussetzungen {#requirements}
+
+Der universelle Editor wird unterstützt von:
+
+* AEM 6.5 (Service Pack 21 oder 22 plus ein Feature Pack)
+   * Sowohl On-Premise- als auch AMS-Hosting werden unterstützt.
+* [AEM as a Cloud Service](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (Version `2023.8.13099` oder höher)
+
+Dieses Dokument konzentriert sich auf die Unterstützung von AEM 6.5 durch den universellen Editor.
 
 ## Einrichtung {#setup}
 
@@ -97,7 +107,7 @@ Das Feature Pack installiert eine Reihe neuer Pakete, für die eine zusätzliche
    * Geben Sie im Feld **Universal Editor Opening Mapping** (Universeller Editor – Zuordnung zum Öffnen) die Pfade an, für die der universelle Editor geöffnet wird.
    * Geben Sie im Feld **Sling:resourceTypes which shall be opened by Universal Editor** (sling:resourceTypes, die vom universellen Editor geöffnet werden sollen) eine Liste der Ressourcen an, die direkt vom universellen Editor geöffnet werden.
 1. Klicken Sie auf **Speichern**.
-1. Überprüfen Sie Ihre [Externalizer](/help/sites-developing/externalizer.md)Konfiguration und stellen Sie sicher, dass Sie zumindest die lokale Umgebung sowie die Autoren- und Veröffentlichungsumgebung wie im folgenden Beispiel festgelegt haben.
+1. Überprüfen Sie Ihre [Externalizer-Konfiguration](/help/sites-developing/externalizer.md) und stellen Sie sicher, dass Sie zumindest die lokale Umgebung sowie die Autoren- und Veröffentlichungsumgebung wie im folgenden Beispiel festgelegt haben.
 
    ```text
    "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
