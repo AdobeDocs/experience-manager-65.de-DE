@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '10517'
+source-wordcount: '10488'
 ht-degree: 99%
 
 ---
@@ -553,8 +553,6 @@ Für das Hinzufügen von mehrfachen Untertiteln und Audiospuren zu Ihrem primär
 |  | Beschreibendes Audio |
 
 Alle [in Dynamic Media unterstützten Videoformate](/help/assets/assets-formats.md) und alle Dynamic Media-Video-Viewer – mit Ausnahme des Dynamic Media-Viewers *Video_360* – werden für mehrfache Untertitel und Audiospuren unterstützt.
-
-Die Funktion für mehrfache Untertitel und Audiospuren ist für Ihr Dynamic Media-Konto über einen Funktionsumschalter verfügbar, der vom Adobe Kundensupport aktiviert (eingeschaltet) werden muss.
 
 ### Hinzufügen mehrfacher Untertitel und Audiospuren zu Ihrem Video {#add-msma}
 
@@ -1389,7 +1387,7 @@ Sie rufen das Servlet auf, indem Sie einen `GET`-Vorgang unter `/dmSample/dynami
 | `manifestType` | Optional. Der Parameter kann DASH oder HLS lauten. Wenn er nicht übergeben wird, wird standardmäßig DASH verwendet. |
 | `onlyIfPublished` | Optional. Wenn er übergeben wird, wird die `manifestUrl` nur zurückgegeben, wenn das Video veröffentlicht wurde. |
 
-Gehen wir in diesem Beispiel von den folgenden Einstellungen aus:
+Nehmen wir in diesem Beispiel die folgende Einrichtung an:
 
 * Die Firma ist `samplecompany`.
 * Die Autoreninstanz lautet `http://sample-aem-author.com`.

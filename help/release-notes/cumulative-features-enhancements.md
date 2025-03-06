@@ -7,10 +7,10 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
-source-git-commit: a49af471c5fc2f799687173bff6cdcb21505740a
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '2335'
-ht-degree: 100%
+source-wordcount: '2308'
+ht-degree: 95%
 
 ---
 
@@ -75,7 +75,7 @@ Siehe auch die [Versionshinweise zum neuesten Service Pack von Adobe Experience 
    * MongoDB 6.0 <!-- it was previously MongoDB 4.4 -->
    * MySQL JDBC Connector 8
 
-Wenn Sie eine Installation durchführen oder die Verwendung der neuesten Software für Ihre AEM 6.5 Forms auf JEE-Umgebung planen, empfiehlt Adobe die Verwendung des Vollinstallationsprogramms für AEM 6.5.18.0 Forms auf JEE. Die vollständige Liste der neu hinzugefügten und veralteten Software finden Sie in der Dokumentation zu AEM Forms auf JEE oder AEM Forms auf OSGi.
+Wenn Sie die neueste Software für Ihre AEM 6.5 Forms on JEE-Umgebung installieren oder verwenden möchten, empfiehlt Adobe die Verwendung des Vollinstallationsprogramms für AEM 6.5.18.0 Forms on JEE. Die vollständige Liste der neu hinzugefügten und veralteten Software finden Sie in der Dokumentation zu AEM Forms auf JEE oder AEM Forms auf OSGi.
 
 ## AEM 6.5, Service Pack 17 – 25. Mai 2023
 
@@ -86,7 +86,7 @@ Wenn Sie eine Installation durchführen oder die Verwendung der neuesten Softwar
 
   Sie müssen nicht erst zum Asset-Speicherort navigieren und seine Eigenschaften anzeigen, um diese Vorgänge durchzuführen.
 * **Dynamic Media _Snapshot_**– Experimentieren Sie mit Testbildern oder Dynamic Media-URLs, um die Ausgabe verschiedener Bildmodifikatoren zu sehen, und optimieren Sie die intelligente Bildbearbeitung für Dateigröße (mit WebP- und AVIF-Bereitstellung), Netzwerkbandbreite und Pixel-Seitenverhältnis der Geräte. Siehe [Dynamic Media Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=de).
-* **DASH Streaming mit Dynamic Media** – Neue Protokollunterstützung (DASH – Dynamic Adaptive Streaming über HTTP) für adaptives Streaming in Dynamic Media-Videobereitstellung (mit aktiviertem CMAF). Ist jetzt für alle Regionen verfügbar und [kann über ein Support-Ticket aktiviert werden](/help/assets/video.md#enable-dash-on-your-account-enable-dash).
+* **DASH-Streaming mit Dynamic Media** - Neues Protokoll (DASH - Dynamic Adaptive Streaming über HTTP) für adaptives Streaming in der Dynamic Media-Videobereitstellung (mit aktiviertem CMAF). Jetzt für alle Regionen verfügbar.
 * **Integration von Experience Manager Sites und Inhaltsfragmenten in Assets der nächsten Generation für Dynamic Media** – Benutzerinnen und Benutzer von Experience Manager Assets as a Cloud Service für Dynamic Media der nächsten Generation können diese in der Cloud gehosteten Assets jetzt für die Bearbeitung und Bereitstellung mit On-Premise- oder Managed Services-Instanzen von Experience Manager Sites 6.5 verwenden.
 
 ### [!DNL Forms]
@@ -102,13 +102,11 @@ Wenn Sie eine Installation durchführen oder die Verwendung der neuesten Softwar
 
 ## AEM 6.5, Service Pack 16 – 23. Februar 2023
 
-Die Unterstützung des neuen Protokolls DASH (Dynamic Adaptive Streaming over HTTP) wurde für adaptives Bit-Rate-Streaming in Dynamic Media-Videobereitstellung (mit aktiviertem CMAF, [Common Media Application Format]) eingeführt.
+Das neue Protokoll DASH (Dynamic Adaptive Streaming over HTTP) wurde für adaptives Bit-Rate-Streaming in der Dynamic Media-Videobereitstellung (mit aktiviertem CMAF [Common Media Application ]) eingeführt.
 
 * Adaptives Streaming (DASH/HLS) sorgt für ein besseres Anwendererlebnis bei der Videoanzeige.
 * DASH ist das internationale Standardprotokoll für adaptives Video-Streaming und wird in der Branche weitläufig verwendet.
-* Jetzt in Asien-Pazifik und Nordamerika verfügbar (kann über ein Support-Ticket aktiviert werden); in Kürze in Europa, im Nahen Osten und in Afrika erhältlich.
-
-Siehe [Aktivieren von DASH in Ihrem Konto](/help/assets/video.md#enable-dash).
+* Jetzt in Asien-Pazifik und Nordamerika verfügbar; in Kürze in Europa, im Nahen Osten und in Afrika verfügbar.
 
 ### [!DNL Forms]
 
