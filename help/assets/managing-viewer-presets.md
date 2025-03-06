@@ -11,9 +11,9 @@ feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
 workflow-type: tm+mt
-source-wordcount: '4422'
+source-wordcount: '4397'
 ht-degree: 99%
 
 ---
@@ -467,10 +467,6 @@ Beispiel: Beim *VideoPlayer*-Typ können Sie unter **[!UICONTROL Modifikatoren]*
       * Wenn der Browser DASH unterstützt, wird zuerst DASH-Streaming verwendet.
       * Wenn der Browser DASH nicht unterstützt, wird an zweiter Stelle HLS-Streaming verwendet.
       * Wenn der Browser weder DASH noch HLS unterstützt, wird als letzte Option die progressive Wiedergabe verwendet.
-
-   >[!NOTE]
-   >
-   >Um die **[!UICONTROL DASH]**-Option zu sehen und zu nutzen, muss sie zunächst vom technischen Adobe-Support für Ihr Konto aktiviert werden. Siehe [Aktivieren von DASH in Ihrem Konto](/help/assets/video.md#enable-dash).
 
 1. Wählen Sie im Pulldown-Menü **[!UICONTROL Ausgewählter Typ]** eine Komponente aus, deren Verhalten Sie ändern möchten.
 

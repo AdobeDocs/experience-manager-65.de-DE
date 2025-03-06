@@ -11,10 +11,10 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
 workflow-type: tm+mt
-source-wordcount: '3770'
-ht-degree: 100%
+source-wordcount: '3750'
+ht-degree: 99%
 
 ---
 
@@ -283,7 +283,7 @@ Sie können nun vorhandene Videokodierungsprofile bearbeiten, um von erweiterten
    <td><code>keyframe</code></td>
    <td>Die Zielzahl der Frames zwischen Keyframes. Berechnen Sie diesen Wert, damit alle 2 bis 10 Sekunden ein Keyframe generiert werden kann. Bei 30 Frames pro Sekunde sollte das Keyframe-Intervall zwischen 60 und 300 liegen.<br /> <br /> Niedrigere Keyframe-Intervalle verbessern das Verhalten bei Stream-Suche und Stream-Wechsel für adaptive Videoverschlüsselung und können auch die Qualität bei Videos mit viel Bewegung verbessern. Da Keyframes die Größe einer Datei erhöhen, bewirkt ein niedrigeres Keyframe-Intervall in der Regel eine niedrigere Videogesamtqualität bei einer bestimmten Bit-Rate.</td>
    <td><code>String</code></td>
-   <td><p>Positive Zahl.</p> <p>Der Standardwert ist 300.</p> <p>Der empfohlene Wert für DASH oder HLS ist 60-90. (Um DASH für Ihre Videos zu verwenden, muss es zunächst in Ihrem Konto aktiviert werden. Siehe <a href="/help/assets/video.md#enable-dash">Aktivieren von DASH in Ihrem Konto</a>.)</p> </td>
+   <td><p>Positive Zahl.</p> <p>Der Standardwert ist 300.</p> <p>Der empfohlene Wert für DASH oder HLS ist 60-90.</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
