@@ -283,7 +283,7 @@ Sie können nun vorhandene Videokodierungsprofile bearbeiten, um von erweiterten
    <td><code>keyframe</code></td>
    <td>Die Zielzahl der Frames zwischen Keyframes. Berechnen Sie diesen Wert, damit alle 2 bis 10 Sekunden ein Keyframe generiert werden kann. Bei 30 Frames pro Sekunde sollte das Keyframe-Intervall zwischen 60 und 300 liegen.<br /> <br /> Niedrigere Keyframe-Intervalle verbessern das Verhalten bei Stream-Suche und Stream-Wechsel für adaptive Videoverschlüsselung und können auch die Qualität bei Videos mit viel Bewegung verbessern. Da Keyframes die Größe einer Datei erhöhen, bewirkt ein niedrigeres Keyframe-Intervall in der Regel eine niedrigere Videogesamtqualität bei einer bestimmten Bit-Rate.</td>
    <td><code>String</code></td>
-   <td><p>Positive Zahl.</p> <p>Der Standardwert ist 300.</p> <p>Der empfohlene Wert für DASH oder HLS ist 60-90.</p> </td>
+   <td><p>Positive Zahl.</p> <p>Der Standardwert ist 300.</p> <p>Der empfohlene Wert für DASH oder HLS ist 60–90. </p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
