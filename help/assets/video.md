@@ -12,9 +12,9 @@ role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '10488'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1387,7 +1387,7 @@ Sie rufen das Servlet auf, indem Sie einen `GET`-Vorgang unter `/dmSample/dynami
 | `manifestType` | Optional. Der Parameter kann DASH oder HLS lauten. Wenn er nicht übergeben wird, wird standardmäßig DASH verwendet. |
 | `onlyIfPublished` | Optional. Wenn er übergeben wird, wird die `manifestUrl` nur zurückgegeben, wenn das Video veröffentlicht wurde. |
 
-Nehmen wir in diesem Beispiel die folgende Einrichtung an:
+Gehen wir in diesem Beispiel von den folgenden Einstellungen aus:
 
 * Die Firma ist `samplecompany`.
 * Die Autoreninstanz lautet `http://sample-aem-author.com`.
