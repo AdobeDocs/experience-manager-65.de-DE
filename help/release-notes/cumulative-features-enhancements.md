@@ -8,9 +8,9 @@ role: User,Admin,Architect,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
 source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2308'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Siehe auch die [Versionshinweise zum neuesten Service Pack von Adobe Experience 
 * Sites Polaris Picker in Inhaltsfragmenten hat eine verbesserte Leistung.
 * Ermöglicht den Benutzenden des Seiteneditors bzw. der Bildkomponente die Referenzierung von Assets aus dem Remote Assets Cloud Service.
 * Um in der Listenansicht, in der sich möglicherweise viele Projekte in Ihrem System befinden, schnell ein Projekt zu finden, unterstützt Adobe jetzt die Server-seitige Sortierung. Projektknoten werden nach der von Benutzenden ausgewählten Spalte im Backend sortiert, bevor sie in der Benutzeroberfläche gerendert werden.
-* AEM 6.5.18.0 unterstützt MongoDB 5.0 bis 6.0.
+* AEM 6.5.18.0 unterstützt MongoDB 5.0 bis 6.0.
 
 ### [!DNL Forms]
 
@@ -75,7 +75,7 @@ Siehe auch die [Versionshinweise zum neuesten Service Pack von Adobe Experience 
    * MongoDB 6.0 <!-- it was previously MongoDB 4.4 -->
    * MySQL JDBC Connector 8
 
-Wenn Sie die neueste Software für Ihre AEM 6.5 Forms on JEE-Umgebung installieren oder verwenden möchten, empfiehlt Adobe die Verwendung des Vollinstallationsprogramms für AEM 6.5.18.0 Forms on JEE. Die vollständige Liste der neu hinzugefügten und veralteten Software finden Sie in der Dokumentation zu AEM Forms auf JEE oder AEM Forms auf OSGi.
+Wenn Sie eine Installation durchführen oder die Verwendung der neuesten Software für Ihre AEM 6.5 Forms auf JEE-Umgebung planen, empfiehlt Adobe die Verwendung des Vollinstallationsprogramms für AEM 6.5.18.0 Forms auf JEE. Die vollständige Liste der neu hinzugefügten und veralteten Software finden Sie in der Dokumentation zu AEM Forms auf JEE oder AEM Forms auf OSGi.
 
 ## AEM 6.5, Service Pack 17 – 25. Mai 2023
 
@@ -86,7 +86,7 @@ Wenn Sie die neueste Software für Ihre AEM 6.5 Forms on JEE-Umgebung installier
 
   Sie müssen nicht erst zum Asset-Speicherort navigieren und seine Eigenschaften anzeigen, um diese Vorgänge durchzuführen.
 * **Dynamic Media _Snapshot_**– Experimentieren Sie mit Testbildern oder Dynamic Media-URLs, um die Ausgabe verschiedener Bildmodifikatoren zu sehen, und optimieren Sie die intelligente Bildbearbeitung für Dateigröße (mit WebP- und AVIF-Bereitstellung), Netzwerkbandbreite und Pixel-Seitenverhältnis der Geräte. Siehe [Dynamic Media Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=de).
-* **DASH-Streaming mit Dynamic Media** - Neues Protokoll (DASH - Dynamic Adaptive Streaming über HTTP) für adaptives Streaming in der Dynamic Media-Videobereitstellung (mit aktiviertem CMAF). Jetzt für alle Regionen verfügbar.
+* **DASH-Streaming mit Dynamic Media** – Neues Protokoll (DASH – Dynamic Adaptive Streaming over HTTP) für adaptives Streaming in Dynamic Media-Videobereitstellung (mit aktiviertem CMAF) eingeführt. Jetzt für alle Regionen verfügbar.
 * **Integration von Experience Manager Sites und Inhaltsfragmenten in Assets der nächsten Generation für Dynamic Media** – Benutzerinnen und Benutzer von Experience Manager Assets as a Cloud Service für Dynamic Media der nächsten Generation können diese in der Cloud gehosteten Assets jetzt für die Bearbeitung und Bereitstellung mit On-Premise- oder Managed Services-Instanzen von Experience Manager Sites 6.5 verwenden.
 
 ### [!DNL Forms]
@@ -102,7 +102,7 @@ Wenn Sie die neueste Software für Ihre AEM 6.5 Forms on JEE-Umgebung installier
 
 ## AEM 6.5, Service Pack 16 – 23. Februar 2023
 
-Das neue Protokoll DASH (Dynamic Adaptive Streaming over HTTP) wurde für adaptives Bit-Rate-Streaming in der Dynamic Media-Videobereitstellung (mit aktiviertem CMAF [Common Media Application ]) eingeführt.
+Das neue Protokoll DASH (Dynamic Adaptive Streaming over HTTP) wurde für adaptives Bitrate-Streaming in Dynamic Media-Videobereitstellung (mit aktiviertem CMAF, [Common Media Application Format]) eingeführt.
 
 * Adaptives Streaming (DASH/HLS) sorgt für ein besseres Anwendererlebnis bei der Videoanzeige.
 * DASH ist das internationale Standardprotokoll für adaptives Video-Streaming und wird in der Branche weitläufig verwendet.
@@ -137,7 +137,7 @@ Nur Fehlerbehebungen.
 
 * Bei der Erstellung einer Übersetzungsdatei für ein adaptives Formular ist nun die gleiche Abfolge von Texten in der generierten XLIFF-Datei identisch mit der Abfolge der Komponenten im entsprechenden adaptiven Formular.
 
-* Wenn Sie ein adaptives Formular lokalisierten und auch nur eine kleine Änderung am Text in der Basissprache vornahmen, ging die komplette Übersetzung für alle anderen Sprachen verloren. Das Problem wurde in [!DNL Experience Manager] 6.5.13.0 behoben.
+* Wenn Sie ein adaptives Formular lokalisierten und auch nur eine kleine Änderung am Text in der Basissprache vornahmen, ging die komplette Übersetzung für alle anderen Sprachen verloren. Das Problem wurde in [!DNL Experience Manager] 6.5.13.0 behoben.
 
 * Verbesserungen der Barrierefreiheit für Forms:
 
