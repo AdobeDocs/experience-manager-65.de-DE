@@ -7,10 +7,10 @@ feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: c55c959123f7feaa6571835974f1ce6fe3ead22b
-workflow-type: ht
-source-wordcount: '5597'
-ht-degree: 100%
+source-git-commit: 80c2ff4dcb826af99ecba5ccf7c303bd36abe745
+workflow-type: tm+mt
+source-wordcount: '5963'
+ht-degree: 93%
 
 ---
 
@@ -222,6 +222,36 @@ Erwägen Sie die folgenden Best Practices, um Leistungsprobleme bei großen Form
    * Markieren Sie einen Wert in einem verzögert geladenen Panel mit „Wert global verwenden“, wenn dieser Wert in einem anderen Teil des Formulars verwendet wird, sodass der Wert für die Verwendung verfügbar ist, wenn das enthaltene Panel entladen wird.
    * Erwägen Sie, Sichtbarkeitsregeln für Fragmente zu erstellen, die basierend auf einer Bedingung ein- bzw. ausgeblendet werden sollen.
 * Legen Sie den Wert der **Anzahl der Aufrufe pro Anfrage** im **Apache Sling Main Servlet** auf eine recht große Zahl fest. Dadurch kann der Formular-Server zusätzliche Aufrufe zulassen. Die Konfiguration zeigt den Standardwert 1500 an. Dieser Wert (1500 Aufrufe) ist für andere Experience Manager-Komponenten wie Sites und Assets bestimmt. Der Standardwert für adaptive Formulare ist 20.000. Wenn Sie auf `too many calls`-Fehler in den Protokollen stoßen sollten oder das Formular nicht gerendert werden kann, versuchen Sie, den Wert auf eine große Zahl zu erhöhen, um das Problem zu beheben. Wenn die Anzahl der Aufrufe 20.000 überschreitet, bedeutet das, dass das Formular komplex ist und es einige Zeit dauern kann, das Formular im Browser zu rendern. Dies geschieht nur beim ersten Laden des Formulars. Danach wird das Formular zwischengespeichert, und sobald das Formular zwischengespeichert wurde, gibt es keine wesentliche Auswirkung mehr auf die Leistung.
+
+### Überlegungen zur DOM-Größe und Browser-Leistung
+
+Beim Erstellen großer und komplexer adaptiver Formulare ist es wichtig, die Auswirkungen der DOM-Größe auf das Rendering und die Leistung zu berücksichtigen:
+
+* **Auswirkung auf DOM-Größe**: Es gibt zwar keine feste Grenze für DOM-Größe in AEM Forms, aber eine übermäßige DOM-Größe kann die Leistung erheblich beeinträchtigen, insbesondere bei der Verarbeitung von verzögert geladenen Fragmenten. Große DOM-Strukturen benötigen mehr Speicher und Verarbeitungszeit, um gerendert und bearbeitet zu werden.
+
+* **Unterschiede beim Browser-Rendering**: Die Rendering-Leistung kann von Browser zu Gerät erheblich variieren. Einige Browser-Rendering-Engines verarbeiten dynamische DOM-Aktualisierungen auf unterschiedliche Weise, mit unterschiedlichen Ansätzen für Stilneuberechnungen, Reflows und Neulackierungen. Dies macht sich besonders bei großen, dynamisch geladenen Inhalten bemerkbar. In einigen Browsern kann jede erhebliche DOM-Manipulation zu Triggern einer vollständigen Layout-Neuberechnung und Neulackierung der Seite führen, was Leistungsprobleme bei großen oder komplexen Formularen verstärkt.
+
+* **Leistungsfaktoren**: Mehrere Faktoren wirken sich auf die Lazy-Loading-Leistung aus:
+   * Größe und Komplexität der Fragmente
+   * Die auf Elemente angewendeten CSS-Stile
+   * Die Anzahl der durch dynamische Aktualisierungen ausgelösten Reflüsse
+   * Die Geräte- und Browser-Funktionen
+
+* **Auswirkungen auf die reale Welt**: In beobachteten Fällen kam es bei Formularen mit DOM-Größen um 400 KB zu erheblichen Rendering-Verzögerungen von bis zu 15 Sekunden in bestimmten Browsern. Diese Verzögerungen sind nicht nur auf die Fragmentgröße zurückzuführen, sondern auch auf die CSS-Verarbeitung und die Seitenumbrüche, die beim Einfügen dynamischer Inhalte ausgelöst werden.
+
+**Best Practices für die Verwaltung der DOM-Größe:**
+
+* Bei statischen Inhalten sollten Sie AEM-Inhaltsfragmente verwenden, anstatt große HTML-Blöcke durch verzögertes Laden dynamisch einzufügen. Durch diesen Ansatz können Rückflüsse, Neulackierungen und die JavaScript-Ausführungszeit reduziert werden, was die Gesamtleistung beim Laden der Seite verbessert.
+
+* Wenn Fragmente dynamisch und verzögert geladen sein müssen, unterteilen Sie große Fragmente in kleinere, besser verwaltbare Fragmente und laden Sie nur die erforderlichen Abschnitte nach Bedarf.
+
+* Implementieren Sie nach Bedarf progressive Offenlegungsmuster, sodass zusätzliche Formularfelder nur verfügbar sind, wenn sie auf der Grundlage von Benutzereingaben erforderlich sind.
+
+* Testen Sie Ihre Formulare über mehrere Browser und Geräte hinweg, insbesondere bei Verwendung von verzögert geladenen Fragmenten, um eine konsistente Leistung über verschiedene Umgebungen hinweg sicherzustellen.
+
+* Überwachen und optimieren Sie das in Ihren Formularen verwendete CSS, da umfangreiches oder schlecht strukturiertes CSS die Rendering-Zeit erheblich verlängern kann, insbesondere bei dynamischen Inhaltsaktualisierungen.
+
+Weitere technische Details dazu, wie verschiedene Browser-Rendering-Engines DOM-Aktualisierungen, -Reflüsse und -Neulackierungen handhaben, finden Sie in der Dokumentation zu Browser-Engines , wie sie von verschiedenen Browser-Anbietern bereitgestellt wird.
 
 ### Vorausfüllen adaptiver Formulare {#prefilling-adaptive-forms}
 
