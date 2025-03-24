@@ -8,9 +8,9 @@ exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 80c2ff4dcb826af99ecba5ccf7c303bd36abe745
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5963'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -227,31 +227,31 @@ Erwägen Sie die folgenden Best Practices, um Leistungsprobleme bei großen Form
 
 Beim Erstellen großer und komplexer adaptiver Formulare ist es wichtig, die Auswirkungen der DOM-Größe auf das Rendering und die Leistung zu berücksichtigen:
 
-* **Auswirkung auf DOM-Größe**: Es gibt zwar keine feste Grenze für DOM-Größe in AEM Forms, aber eine übermäßige DOM-Größe kann die Leistung erheblich beeinträchtigen, insbesondere bei der Verarbeitung von verzögert geladenen Fragmenten. Große DOM-Strukturen benötigen mehr Speicher und Verarbeitungszeit, um gerendert und bearbeitet zu werden.
+* **Auswirkungen der DOM-Größe**: Es gibt zwar keine feste Grenze für die DOM-Größe in AEM Forms, aber ein übermäßig großes DOM kann die Leistung erheblich beeinträchtigen, insbesondere bei der Verarbeitung von verzögert geladenen Fragmenten. Große DOM-Strukturen benötigen mehr Speicher und Verarbeitungszeit, um gerendert und bearbeitet zu werden.
 
-* **Unterschiede beim Browser-Rendering**: Die Rendering-Leistung kann von Browser zu Gerät erheblich variieren. Einige Browser-Rendering-Engines verarbeiten dynamische DOM-Aktualisierungen auf unterschiedliche Weise, mit unterschiedlichen Ansätzen für Stilneuberechnungen, Reflows und Neulackierungen. Dies macht sich besonders bei großen, dynamisch geladenen Inhalten bemerkbar. In einigen Browsern kann jede erhebliche DOM-Manipulation zu Triggern einer vollständigen Layout-Neuberechnung und Neulackierung der Seite führen, was Leistungsprobleme bei großen oder komplexen Formularen verstärkt.
+* **Unterschiede beim Browser-Rendering**: Die Rendering-Leistung kann auf unterschiedlichen Browsern und Geräten erheblich variieren. Einige Browser-Render-Engines verarbeiten dynamische DOM-Updates auf unterschiedliche Weise und mit verschiedenen Ansätzen für Neuberechnungen der Stile, Reflows und Neuzeichnen. Dies macht sich besonders bei großen, dynamisch geladenen Inhalten bemerkbar. In einigen Browsern kann jede erhebliche DOM-Bearbeitung eine vollständige Neuberechnung des Layouts und Neugestaltung der Seite auslösen, was die Leistungsprobleme bei großen oder komplexen Formularen verstärkt.
 
-* **Leistungsfaktoren**: Mehrere Faktoren wirken sich auf die Lazy-Loading-Leistung aus:
+* **Leistungsfaktoren**: Mehrere Faktoren wirken sich auf die Leistung des verzögerten Ladens aus:
    * Größe und Komplexität der Fragmente
    * Die auf Elemente angewendeten CSS-Stile
-   * Die Anzahl der durch dynamische Aktualisierungen ausgelösten Reflüsse
+   * Die Anzahl der durch dynamische Updates ausgelösten Reflows
    * Die Geräte- und Browser-Funktionen
 
-* **Auswirkungen auf die reale Welt**: In beobachteten Fällen kam es bei Formularen mit DOM-Größen um 400 KB zu erheblichen Rendering-Verzögerungen von bis zu 15 Sekunden in bestimmten Browsern. Diese Verzögerungen sind nicht nur auf die Fragmentgröße zurückzuführen, sondern auch auf die CSS-Verarbeitung und die Seitenumbrüche, die beim Einfügen dynamischer Inhalte ausgelöst werden.
+* **Auswirkungen in der Praxis**: In beobachteten Fällen kam es in bestimmten Browsern bei Formularen mit DOM-Größen um 400 KB zu erheblichen Rendering-Verzögerungen von bis zu 15 Sekunden. Diese Verzögerungen sind nicht nur auf die Fragmentgröße zurückzuführen, sondern auch auf die CSS-Verarbeitung und die Seiten-Reflows, die beim Einfügen dynamischer Inhalte ausgelöst werden.
 
 **Best Practices für die Verwaltung der DOM-Größe:**
 
-* Bei statischen Inhalten sollten Sie AEM-Inhaltsfragmente verwenden, anstatt große HTML-Blöcke durch verzögertes Laden dynamisch einzufügen. Durch diesen Ansatz können Rückflüsse, Neulackierungen und die JavaScript-Ausführungszeit reduziert werden, was die Gesamtleistung beim Laden der Seite verbessert.
+* Erwägen Sie bei statischen Inhalten die Verwendung von AEM-Inhaltsfragmenten, anstatt große HTML-Blöcke durch verzögertes Laden dynamisch einzufügen. Durch diesen Ansatz können Reflows, Neugestaltungen und die JavaScript-Ausführungszeit reduziert werden, was die Gesamtleistung beim Laden der Seite verbessert.
 
-* Wenn Fragmente dynamisch und verzögert geladen sein müssen, unterteilen Sie große Fragmente in kleinere, besser verwaltbare Fragmente und laden Sie nur die erforderlichen Abschnitte nach Bedarf.
+* Wenn Fragmente dynamisch und verzögert geladen werden müssen, unterteilen Sie große Fragmente in kleinere, besser verwaltbare Fragmente und laden Sie nur die erforderlichen Abschnitte nach Bedarf.
 
 * Implementieren Sie nach Bedarf progressive Offenlegungsmuster, sodass zusätzliche Formularfelder nur verfügbar sind, wenn sie auf der Grundlage von Benutzereingaben erforderlich sind.
 
-* Testen Sie Ihre Formulare über mehrere Browser und Geräte hinweg, insbesondere bei Verwendung von verzögert geladenen Fragmenten, um eine konsistente Leistung über verschiedene Umgebungen hinweg sicherzustellen.
+* Testen Sie Ihre Formulare über mehrere Browser und Geräte hinweg, insbesondere bei Verwendung von verzögert geladenen Fragmenten, um eine konsistente Leistung über die verschiedenen Umgebungen hinweg sicherzustellen.
 
 * Überwachen und optimieren Sie das in Ihren Formularen verwendete CSS, da umfangreiches oder schlecht strukturiertes CSS die Rendering-Zeit erheblich verlängern kann, insbesondere bei dynamischen Inhaltsaktualisierungen.
 
-Weitere technische Details dazu, wie verschiedene Browser-Rendering-Engines DOM-Aktualisierungen, -Reflüsse und -Neulackierungen handhaben, finden Sie in der Dokumentation zu Browser-Engines , wie sie von verschiedenen Browser-Anbietern bereitgestellt wird.
+Weitere technische Details dazu, wie verschiedene Browser-Render-Engines DOM-Updates, Reflows und Neugestaltungen handhaben, sollten Sie in der Dokumentation zu Browser-Engines finden, die von verschiedenen Browser-Anbietern bereitgestellt wird.
 
 ### Vorausfüllen adaptiver Formulare {#prefilling-adaptive-forms}
 
