@@ -5,10 +5,11 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 9891d7e61e62c541073c177eb88c49d685cbcb5f
+exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
+source-git-commit: 61f658fc4390610686a308d02a8d74505252434a
 workflow-type: tm+mt
-source-wordcount: '3681'
-ht-degree: 100%
+source-wordcount: '3638'
+ht-degree: 98%
 
 ---
 
@@ -157,15 +158,16 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 >
 >Die Adobe-Kundenunterstützung hilft beim Qualifizieren von Problemen, die mit der Verwendung von MongoDB mit AEM in Zusammenhang stehen.
 >
->Weitere Informationen finden Sie auf der Seite für [MongoDB für Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+>Weitere Informationen finden Sie auf der Seite von [MongoDB für Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 
+<!--
 >[!NOTE]
 >
->Unterstützte relationale Datenbanken wie oben aufgeführt sind Software von Drittanbietern und sind nicht im AEM-Lizenzierungspaket enthalten.
+>Supported relational databases as listed above are third-party software and are not included in the AEM licensing package.
 >
->Um AEM 6.5 mit einer unterstützten relationalen Datenbank ausführen zu können, ist ein separater Support-Vertrag mit einem Datenbankanbieter erforderlich. Die Adobe-Kundenunterstützung hilft beim Qualifizieren von Problemen, die mit der Verwendung von relationalen Datenbanken mit AEM 6.5 in Zusammenhang stehen.
+>To run AEM 6.5 with a supported relational database, a separate support contract with a database vendor is required. Adobe Customer Care assists qualifying issues related to the usage of relational databases with AEM 6.5.
 >
->**Die meisten relationalen Datenbanken werden derzeit in Level-R auf AEM 6.5 unterstützt, das mit Support-Kriterien und einem Support-Programm geliefert wird, wie in der obigen Beschreibung zu Level-R angegeben.**
+>**Most relational databases are currently supported within Level-R on AEM 6.5, which comes with support criteria and a support program as stated in the Level-R description above.**-->
 
 ### Servlet-Engines/Anwendungs-Server {#servlet-engines-application-servers}
 
@@ -450,6 +452,10 @@ Windows x86:
 
 ### Anforderungen für AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
+* Stellen Sie zum Testen von PDF-Konversionen auf einem SUSE® Linux®-Server die folgenden Konfigurationen sicher:
+   * Navigieren Sie zur `/etc/profile` Datei und legen Sie die `OpenOffice_PATH` Umgebungsvariable auf `/opt/openoffice4` fest, um sie global zu konfigurieren.
+   * Installieren Sie die 32-Bit-Version von OpenOffice auf dem Linux®-Betriebssystem
+
 ### Software-Support für PDF Generator {#software-support-for-pdf-generator}
 
 <table>
@@ -515,7 +521,7 @@ Windows x86:
 >* PDF Generator unterstützt nur die 32-Bit-Version von Microsoft® Office Professional Plus und anderer für die Konvertierung erforderliche Software.
 >* Die Microsoft® Office Professional Plus-Installation kann eine Einzelhandels- oder MAK/KMS/AD-basierte Mengenlizenzierung verwenden.
 >* Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder unlizenziert wird, z. B. weil eine Installation mit Volumenlizenz einen KMS-Host nicht innerhalb eines bestimmten Zeitraums finden kann, können Konvertierungen fehlschlagen, bis die Installation neu lizenziert und reaktiviert wird.
->* PDF Generator unterstützt 32-Bit- und 64-Bit-Versionen von OpenOffice unter dem Linux®-Betriebssystem.
+>* PDF Generator unterstützt die 32-Bit-Version von OpenOffice unter dem Linux®-Betriebssystem.
 >* PDF Generator unterstützt nicht Microsoft® Office 365.
 >* PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt®.
 >* Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
