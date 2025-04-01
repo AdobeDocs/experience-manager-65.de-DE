@@ -5,10 +5,10 @@ exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: ee990092f3174a8c29443eb451d7188c1e27fa7d
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 100%
+source-wordcount: '1043'
+ht-degree: 91%
 
 ---
 
@@ -46,7 +46,11 @@ Nachdem der Prozess mit der definierten Aktivität „Execute Script“ erstellt
 
 ## Erstellen von XML mit dem Service „Execute Script“ {#create-xml-execute-script-service}
 
-Nachdem ein Prozess, der den Service „Execute Script“ enthält, erstellt wurde, kann dieses Skript zur Erstellung von XML verwendet werden. Sie würden die unten beschriebenen Skripte in das Textfeld eingeben, das im Abschnitt „Hinzufügen eines Skripts zum Prozess mit dem Service `Execute Script`“ weiter oben beschrieben wurde.
+Nachdem ein Prozess, der den Service „Execute Script“ enthält, erstellt wurde, kann dieses Skript zur Erstellung von XML verwendet werden. Sie würden die unten beschriebenen Skripte in das Textfeld eingeben, das im Abschnitt Hinzufügen eines Skripts zum Prozess mit dem `Execute Script`-Service oben beschrieben wurde.
+
+>[!NOTE]
+>
+> Wenn der JAVA-Skript-Code 10 Zeilen überschreitet, wird empfohlen, den Code zu benutzerdefinierten DSCs (Document Service-Komponenten) hinzuzufügen, anstatt ihn direkt im Prozess zu schreiben. Benutzerdefinierte DSCs verbessern die Wartbarkeit, Wiederverwendbarkeit und Leistung, indem sie Workflows auf ein Minimum beschränken. Durch die Referenzierung dieser Komponenten in Workflows wird eine bessere Ausführungseffizienz gewährleistet und potenzielle Verzögerungen verhindert, die durch die Verarbeitung großer Codeblöcke innerhalb des Workflows verursacht werden.
 
 **Über die Technologie des Service „Execute Script“**
 
