@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 8fda6635ec0e28b95209431bd12d191f36df943b
+source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
 workflow-type: tm+mt
-source-wordcount: '4197'
-ht-degree: 92%
+source-wordcount: '4216'
+ht-degree: 98%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 92%
 
 <div class="preview">
 
-Adobe hat ein [Vollinstallationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) mit AEM 6.5 Forms Service Pack 18 (6.5.18.0) on JEE zusammen mit den Patch-Installationsprogrammen veröffentlicht. Das vollständige Installationsprogramm bietet Unterstützung für neue Plattformen, während das Patch-Installationsprogramm nur Fehlerkorrekturen enthält.
-Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Software für Ihre AEM 6.5 Forms on JEE-Umgebung planen, empfiehlt Adobe die Verwendung des Vollinstallationsprogramms für [AEM 6.5.18.0 Forms on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) vom 31. August 2023 anstelle des AEM 6.5 Forms-Installationsprogramms vom 08. April 2019 oder des AEM 6.5.12 Forms-Installationsprogramms vom 03. März 2022.
+Adobe hat ein [vollständiges Installationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) mit AEM 6.5 Forms Service Pack 18 (6.5.18.0) on JEE zusammen mit den Patch-Installationsprogrammen veröffentlicht. Das vollständige Installationsprogramm bietet Unterstützung für neue Plattformen, während das Patch-Installationsprogramm nur Fehlerkorrekturen enthält.
+Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Software für Ihre AEM 6.5 Forms on JEE-Umgebung planen, empfiehlt Adobe das [vollständige Installationsprogramm für AEM 6.5.18.0 Forms on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) vom 31. August 2023 anstelle des AEM 6.5 Forms-Installationsprogramms vom 8. April 2019 bzw. des AEM 6.5.12 Forms-Installationsprogramms vom 3. März 2022.
 
 </div>
 
@@ -43,7 +43,7 @@ In diesem Dokument werden die unterstützten Client- und Server-Plattformen für
 
 #### Vollständiges Installationsprogramm
 
-- **Upgrade-Unterstützung für vollständige Installationsprogramme**: Ein vollständiges Installationsprogramm wird mit jeder sechsten AEM Service Pack-Version veröffentlicht. Beispielsweise wurde ein Vollinstallationsprogramm mit 6.5.12.0 und 6.5.18.0 SP-Versionen veröffentlicht. AEM Forms ermöglicht direkte Upgrades ausschließlich über die letzten beiden vollständigen Installationsprogramme. Beispielsweise ermöglicht AEM Forms direkte Upgrades auf Version 6.5.18.0 nur von den letzten beiden vollständigen Installationsprogrammen, nämlich 6.5.12.0 und 6.5.6.0. Wenn Sie von einem früheren Upgrade aktualisieren müssen, können Sie ein Multi-Hop-Upgrade verwenden, um zunächst auf ein unterstütztes Vollinstallationsprogramm und dann auf die neueste Version zu wechseln.
+- **Upgrade-Unterstützung für vollständige Installationsprogramme**: Ein vollständiges Installationsprogramm wird mit jeder sechsten AEM Service Pack-Version veröffentlicht. Beispielsweise wurde ein vollständiges Installationsprogramm mit den SP-Versionen 6.5.12.0 und 6.5.18.0 veröffentlicht. AEM Forms ermöglicht direkte Upgrades ausschließlich über die letzten beiden vollständigen Installationsprogramme. Beispielsweise ermöglicht AEM Forms direkte Upgrades auf Version 6.5.18.0 nur über die beiden letzten vollständigen Installationsprogramme, nämlich 6.5.12.0 und 6.5.6.0. Wenn Sie von einem früheren Upgrade aktualisieren müssen, können Sie eine Multihop-Aktualisierung verwenden, um zunächst auf ein unterstütztes vollständiges Installationsprogramm und dann auf die neueste Version zu wechseln.
 
 - **Einstellung und Entfernung**: Die Plattformunterstützung wird mit jeder Version des vollständigen Installationsprogramms aktualisiert. Jede Software, die in einer Version des vollständigen Installationsprogramms in der Plattformmatrix als veraltet gekennzeichnet wurde, kann in einer nachfolgenden Version des vollständigen Installationsprogramms aus der Matrix der unterstützten Plattformen entfernt werden, was das Ende der Unterstützung für die Software angibt.
 
@@ -51,9 +51,9 @@ In diesem Dokument werden die unterstützten Client- und Server-Plattformen für
 
 - **Service Pack-Abdeckung**: Adobe bietet technischen Support für AEM Forms-Umgebungen mit den sechs neuesten Service Packs. Wenn Ihre aktuelle Version vor den sechs letzten Service Packs liegt, empfiehlt Adobe dringend ein Upgrade auf die neueste Version, um optimale Leistung, Sicherheit und kontinuierlichen Support zu erhalten.
 
-- **Richtlinien für Patch-Installationsprogramme**: Während die Patch-Installationsprogramme zur Aktualisierung verwendet werden, ist es wichtig zu überprüfen, ob die zugrunde liegende Version des vollständigen Installationsprogramms nicht um mehr als zwei Versionen zurückliegt. Stellen Sie beispielsweise bei der Installation von Service Pack 6.5.19.0 sicher, dass die zugrunde liegende Vollversion des Installationsprogramms entweder 6.5.18.0 oder 6.5.12.0 ist.
+- **Richtlinien für Patch-Installationsprogramme**: Während die Patch-Installationsprogramme zur Aktualisierung verwendet werden, ist es wichtig zu überprüfen, ob die zugrunde liegende Version des vollständigen Installationsprogramms nicht um mehr als zwei Versionen zurückliegt. Stellen Sie beispielsweise während der Installation von Service Pack 6.5.19.0 sicher, dass die zugrunde liegende Version des vollständigen Installationsprogramms 6.5.18.0 oder 6.5.12.0 ist.
 
-- **Patch-Upgrade-Support**: Sie können weiterhin auf das neueste Service Pack aktualisieren, bis Sie auch auf die neuesten unterstützten Plattformen aktualisieren. Beispielsweise ist ein Upgrade von Service Pack 6.5.12.0 auf 6.5.19.0 möglich, vorausgesetzt, Sie wechseln zu einer Plattformkombination, die für 6.5.19.0 unterstützt wird.
+- **Patch-Upgrade-Support**: Sie können weiterhin auf das neueste Service Pack aktualisieren, bis Sie auch auf die neuesten unterstützten Plattformen aktualisieren. Beispielsweise ist ein Upgrade von Service Pack 6.5.12.0 auf 6.5.19.0 möglich, sofern Sie zu einer Plattformkombination wechseln, die für 6.5.19.0 unterstützt wird.
 
 ### Empfohlene Konfigurationen {#recommendedconfigurations}
 
@@ -195,7 +195,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
   <tr>
   <tr>
    <td>MySQL 8.0.27</td>
-   <td>-</td>
+   <td>–</td>
    <td>R: Eingeschränkte Unterstützung </td>
   </tr>
  </tbody>
@@ -317,7 +317,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
    <td><p>Service Packs, kumulative Patches und wichtige Sicherheitsupdates</p> </td>
   </tr>
   <tr>
-   <td><p>SUSE® Linux® Enterprise Server 15 SP6 (64-Bit)</p> </td>
+   <td><p>SUSE® Linux® Enterprise Server 15 SP6 (64-Bit) </p> </td>
    <td><p>A: Unterstützt</p> </td>
    <td><p>Service Packs, kumulative Patches und wichtige Sicherheitsupdates</p> </td>
   </tr>
@@ -336,13 +336,13 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
 
 >[!NOTE]
 >
-> Für Linux®-basierte Server sind die erforderlichen Laufzeitabhängigkeiten:
+> Für Linux®-basierte Server sind die folgenden Laufzeitabhängigkeiten erforderlich:
 > - glibc.x86_64 (2.17-196)
 > - libX11.x86_64 (1.6.7-4)
 > - zlib.x86-64 (1.2.7-17)
 > - libxcb.x86_64 (1.13-1.el7)
 > - libXau.x86_64 (1.0.8-2.1.el7)
-> - glibc-locale.x86_64 ( 2.17 oder höher)
+> - glibc-locale.x86_64 (2.17 oder höher)
 
 #### Virtualisierte Umgebung {#virtualized-environment}
 
@@ -370,7 +370,7 @@ Sie können AEM Forms on JEE auf einem physischen Computer oder in einer virtuel
 Beachten Sie die folgenden Ausnahmen, wenn Sie eine Plattform auswählen, auf der Sie AEM Forms on JEE-Server einrichten.
 
 1. AEM Forms on JEE unterstützt IBM® WebSphere® mit MySQL nicht.
-1. AEM Forms on JEE unterstützt JBoss® nicht unter SUSE® Linux® Enterprise Server 12. Nur IBM® WebSphere® wird auf SUSE® Linux® Enterprise Server 12 unterstützt.
+1. AEM Forms on JEE unterstützt nicht JBoss® unter SUSE® Linux® Enterprise Server 12. Nur IBM® WebSphere® wird auf SUSE® Linux® Enterprise Server 12 unterstützt.
 1. AEM Forms on JEE unterstützt kein anderes JDK mit JBoss® als Oracle Java™ SE.
 1. AEM Forms on JEE unterstützt kein anderes JDK mit IBM® WebSphere® als IBM® JDK.
 1. CRX-Repository unterstützt Persistenz des Typs TarMK, MongoDB und relationale Datenbanken (RDBMK). Sie dürfen nicht zwei verschiedene Datenbanksysteme zwischen dem Anwendungsserver und dem CRX-Repository haben. In einer AEM Forms on JEE-Umgebung können Sie MongoMK jedoch mit dem CRX-Repository und einer unterstützten relationalen Datenbank mit Anwendungsserver verwenden.
@@ -465,11 +465,11 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
 - Cordova Windows 4.4.3
 
 
-### Voraussetzungen für PDF Generator
+### Anforderungen für PDF Generator
 
-- Stellen Sie zum Testen von PDF-Konversionen auf einem SUSE® Linux®-Server die folgenden Konfigurationen sicher:
-   - Navigieren Sie zur `/etc/profile` Datei und legen Sie die `OpenOffice_PATH` Umgebungsvariable auf `/opt/openoffice4` fest, um sie global zu konfigurieren.
-   - Installieren Sie die 32-Bit-Version von OpenOffice auf dem Linux®-Betriebssystem
+- Stellen Sie zum Testen von PDF-Konversionen auf SUSE® Linux®-Servern (SLES 15 SP6 oder höher) die folgenden Konfigurationen sicher:
+   - Navigieren Sie zur Datei `/etc/profile` und setzen Sie die Umgebungsvariable `OpenOffice_PATH` auf `/opt/openoffice4`, um sie global zu konfigurieren.
+   - Installieren Sie die 32-Bit-Version von OpenOffice.
 
 ### Software-Support für PDF Generator {#software-support-for-pdf-generator}
 
@@ -508,6 +508,7 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
 >
 >Zusätzlich gilt Folgendes:
 >
+>- Für PDF Generator ist eine 32-Bit-Version von [Acrobat 2020 Classic Track Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) erforderlich, um die Konvertierung durchzuführen.
 >- PDF Generator unterstützt nur die 32-Bit-Version von Microsoft® Office Professional Plus und anderer für die Konvertierung erforderliche Software.
 >- Die Microsoft® Office Professional Plus-Installation kann eine Einzelhandels- oder MAK/KMS/AD-basierte Mengenlizenzierung verwenden.
 >- Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder unlizenziert wird, z. B. weil eine Installation mit Volumenlizenz einen KMS-Host nicht innerhalb eines bestimmten Zeitraums finden kann, können Konvertierungen fehlschlagen, bis die Installation neu lizenziert und reaktiviert wird.
@@ -866,14 +867,14 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 -->
 
 
-### Version 6.5.22.0 (29. November 2024)
+### Version 6.5.22.0 (29. November 2024)
 
 | Unterstützung hinzugefügt | Unterstützung entfernt | Unterstützung eingestellt |
 | -------------- | --------------- | ------------------- |
 | SUSE® Linux® Enterprise Server 15 SP6 (64-Bit) | |  |
 
 
-### Version 6.5.19.1 (15. Dezember 2023)
+### Version 6.5.19.1 (15. Dezember 2023)
 
 | Unterstützung hinzugefügt | Unterstützung entfernt | Unterstützung eingestellt |
 | -------------- | --------------- | ------------------- |
@@ -881,19 +882,19 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | MongoDB Enterprise 5.0 |  |  |
 |  | |  |
 
-### Version 6.5.18.0 (31. August 2023)
+### Version 6.5.18.0 (31. August 2023)
 
 | Unterstützung hinzugefügt | Unterstützung entfernt | Unterstützung eingestellt |
 | -------------- | --------------- | ------------------- |
 | MongoDB Enterprise 4.4 | Windows Server 2016 (64 Bit) | Microsoft® Windows Server 2019 (64 Bit) |
 | Oracle WebLogic Server 14c | MongoDB Enterprise 4.0 | Microsoft® Active Directory 2016 |
-| My SQL JDBC Connector 8 | Oracle-Datenbank 12c Version 2 (12.2.0.1.0) |  |
+| My SQL JDBC Connector 8 | Oracle Database 12c Version 2 (12.2.0.1.0) |  |
 | Active Directory 2022 | MySQL 5.7.35 |  |
 | Microsoft® Windows Server 2022 (64 Bit) | Microsoft® SQL Server 2016 |  |
 |  | JBoss® EAP 7.1.4 |  |
 |  | My SQL JDBC Connector 5.1.44 |  |
-|  | Microsoft® SQL Server JDBC-Treiber 6.2.1.0 |  |
-|  | Microsoft® SQL Server JDBC-Treiber 6.2.2.0 |  |
+|  | Microsoft® SQL Server JDBC-Treiber 6.2.1.0 |  |
+|  | Microsoft® SQL Server JDBC-Treiber 6.2.2.0 |  |
 |  | Microsoft® JDBC-Treiber 8.x für SQL Server |  |
 |  |  |  |
 |  | **Unterstützung entfernt (PDF Generator und allgemein):** |  |
@@ -906,14 +907,14 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | Acrobat 2017 (klassische Version) Version 17.011.30078 oder höher |  |
 
 
-### Version 6.5.13.0 (2. Juni 2022)
+### Version 6.5.13.0 (2. Juni 2022)
 
 | Unterstützung hinzugefügt | Unterstützung entfernt | Unterstützung eingestellt |
 | -------------- | --------------- | ------------------- |
 |  |  | Microsoft® SharePoint 2016 |
 
 
-### Version 6.5.12.0 (3. März 2022)
+### Version 6.5.12.0 (3. März 2022)
 
 | Unterstützung hinzugefügt | Unterstützung entfernt | Unterstützung eingestellt |
 | -------------- | --------------- | ------------------- |
@@ -922,14 +923,14 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | Oracle Database 18c | IBM® DB2® 11.1 |
 |  | Oracle Unified Directory (OUD) 11g Version 2 | Oracle Database 12c Version 2 |
 |  | IBM® Lotus Domino 9.0 | MySQL 5.7.35 |
-|  | IBM® FileNet 5.2 | Microsoft® SQL Server JDBC-Treiber 6.2.1.0 |
+|  | IBM® FileNet 5.2 | Microsoft® SQL Server JDBC-Treiber 6.2.1.0 |
 |  | Adobe Flash Player | JBoss® Enterprise Application Platform (EAP) 7.1.4 |
 |  | | IBM® Content Manager Server 8.5 Fix Pack 2 |
 |  | | IBM® Content Manager Client 8.5 |
 |  | | Microsoft® SQL Server 2016 |
 |  | | Microsoft® Windows Server 2016 |
 
-### Version 6.5.10.0 (1. September 20222)
+### Version 6.5.10.0 (1. September 2022)
 
 | Unterstützung hinzugefügt | Unterstützung entfernt | Unterstützung eingestellt |
 | -------------- | --------------- | ------------------- |

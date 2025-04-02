@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 39ad2f3eedb35e98dc2239c0b81b3792a0ddc73f
+source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
 workflow-type: tm+mt
-source-wordcount: '6158'
-ht-degree: 88%
+source-wordcount: '6161'
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 88%
 
 ## Was in [!DNL Experience Manager] 6.5.22.0 enthalten ist {#what-is-included-in-aem-6522}
 
-[!DNL Experience Manager] 6.5.22.0 enthält neue Funktionen, wichtige von Kundschaft angeforderte Verbesserungen und Fehlerbehebungen. Diese Version enthält zudem Leistungs-, Stabilitäts- und Sicherheitsverbesserungen, die seit der ersten Verfügbarkeit der Version 6.5 im April 2019 veröffentlicht wurden. [Installieren Sie dieses Service Pack](#install) für [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.22.0 umfasst neue Funktionen, wichtige kundenseitig angeforderte Verbesserungen und Fehlerbehebungen. Diese Version enthält zudem Leistungs-, Stabilitäts- und Sicherheitsverbesserungen, die seit der ersten Verfügbarkeit der Version 6.5 im April 2019 veröffentlicht wurden. [Installieren Sie dieses Service Pack](#install) für [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -109,7 +109,7 @@ Die Registerkarte „IPTC“ bietet nun Unterstützung für die Textfelder [!UIC
    * **Problem mit dem Versionsvergleich:** Die Funktion „Mit aktueller Version vergleichen“ zeigte nur die aktuelle Version an, ohne Unterschiede zwischen den Versionen hervorzuheben. (SITES-23988)
 
 * Im Feld „Rich-Text-Editor (RTE)“ wird bei einer Kopier- und Einfügeaktion unerwarteterweise ein Tag `<br>` angezeigt, wenn der Wert `defaultPasteMode` auf `plaintext` gesetzt ist. Dieses Problem führt zu einem unterschiedlichen Markup für denselben Inhalt, sodass derselbe Textinhalt zweimal im Translation Memory einer Kundin bzw. eines Kunden übersetzt wird. (SITES-23606)
-* In AEM 6.5.20.0 trat bei der Funktion **Veröffentlichung verwalten“ ein** auf. Bei der Auswahl eines Knotens und der Planung seiner zukünftigen Veröffentlichung konnte beim Versuch, untergeordnete Knoten einzubeziehen, die Fehlermeldung „Untergeordnete Ressourcen für ausgewählte Elemente konnten nicht abgerufen werden“ angezeigt werden. Dieses Problem blockierte die Verwendung der Option **Untergeordnete Elemente einschließen** und verhinderte die vollständige Veröffentlichung der beabsichtigten Inhaltshierarchie. (SITES-23000)
+* In AEM 6.5.20.0 trat ein Problem mit der Funktion **Veröffentlichung verwalten** auf. Bei der Auswahl eines Knotens und der Planung seiner zukünftigen Veröffentlichung konnte beim Versuch, untergeordnete Knoten einzubeziehen, die Fehlermeldung „Untergeordnete Ressourcen für ausgewählte Elemente konnten nicht abgerufen werden“ angezeigt werden. Dieses Problem blockierte die Verwendung der Option **Untergeordnete Elemente einschließen** und verhinderte die vollständige Veröffentlichung der beabsichtigten Inhaltshierarchie. (SITES-23000)
 * Der Zeitstempel „Veröffentlicht“ einer Vorlage wurde in der Autorenumgebung nicht aktualisiert, obwohl die Vorlage in den Veröffentlichungsinstanzen erfolgreich repliziert wurde. Das erwartete Verhalten für einen Zeitstempel in der Autoreninstanz wäre, die neueste Veröffentlichung widerzuspiegeln, aber diese Aktualisierung erfolgte nicht wie gewünscht. (SITES-21585)
 * In der AEM-Autorenumgebung gab es eine Diskrepanz bei der Anzahl der eingehenden Links. Die linke Seitenleiste zeigte im Vergleich zur klassischen Benutzeroberfläche weniger Links. Auch einige eingehende Links, die legitim waren, funktionierten nicht. (SITES-24837)
 * Beim Anzeigen von Seitenversionen in der Timeline-Ansicht von AEM wurden extrem lange Ladezeiten gemeldet. Es dauerte bis zu 19 Minuten, bis Versionen angezeigt wurden. Dieses Problem bestand seit der Aktualisierung von AEM 6.4.8 auf 6.5.18, wodurch die Workflow-Effizienz erheblich beeinträchtigt wurde. (SITES-22468 und SITES-22467)
@@ -232,24 +232,24 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 ### Forms {#forms-bug-fixes-sp22}
 
 * Die URLs, die für Dateianhänge in gespeicherten Entwürfen in AEM Forms generiert werden, spiegeln die konfigurierten Apache Sling Resource Resolver Factory-Zuordnungen nicht wider. (FORMS-16949)
-* Wenn ein(e) Benutzende(r) in AEM Forms Service Pack 19 (6.5.19.0) eine Vorschau eines Briefs anzeigt, wird der Inhalt nicht richtig ausgerichtet, da die Leerzeichen fehlen und das Zeichen `x` an einigen Stellen angezeigt wird. (FORMS-16670)
-* Wenn ein(e) Benutzende(r) in AEM Forms Service Pack 18 (6.5.18.0) versucht, die Dateien mithilfe des CIFS-Protokolls zu drucken, schlägt dies mit dem folgenden Fehler fehl: (FORMS-16629)
+* Beim Aufrufen der Vorschau eines Briefs in AEM Forms Service Pack 19 (6.5.19.0) wird der Inhalt nicht richtig ausgerichtet, da an einigen Stellen die Leerzeichen fehlen und das Zeichen `x` angezeigt wird. (FORMS-16670)
+* Der Versuch, in AEM Forms Service Pack 18 (6.5.18.0) die Dateien mithilfe des CIF-Protokolls zu drucken, schlägt mit folgendem Fehler fehl: (FORMS-16629)
   `ALC-OUT-001-401: Unknown error while printing using CIFS on the Printer: \\\\\\\\NSMVPLUETEST01\\\\TH_Test`.
-* Wenn Benutzende von AEM Forms Service Pack 17 (6.5.17.0) auf AEM Forms Service Pack 20 (6.5.20.0) aktualisieren, wird das Symbol „Regeleditor“ nicht auf der Ebene des Formular-Containers angezeigt. (FORMS-16430)
-* Wenn Benutzende von AEM Forms Service Pack 17 (6.5.17.0) auf AEM Forms Service Pack 21 (6.5.21.0) aktualisieren, funktioniert der Übermittlungs-URL-Pfad für das geänderte adaptive Formular nicht. (FORMS-15894)
-* Auf AEM Forms Service Pack 19 (6.5.19.0) schlägt die AEM Forms 6.5 PDF/A-Validierung für bestimmte Dateien mit der `creation date and modification date mismatch with timezone` fehl, während sie auf der Acrobat Pro PDF/A-Validierung für eine Kompatibilitätsprüfung reibungslos ausgeführt wird. (FORMS-15840)
-* Wenn ein(e) Benutzende(r) Formularentwürfe mithilfe der Komponente „Entwürfe und Übermittlungen“ auf einer Siteseite in AEM Forms Service Pack 15 (6.5.15.0) auf OSGi löscht, schlägt der Löschvorgang fehl. (FORMS-15755)
+* Beim Aktualisieren von AEM Forms Service Pack 17 (6.5.17.0) auf AEM Forms Service Pack 20 (6.5.20.0) wird das Symbol für den Regeleditor nicht auf der Ebene des Formular-Containers angezeigt. (FORMS-16430)
+* Beim Aktualisieren von AEM Forms Service Pack 17 (6.5.17.0) auf AEM Forms Service Pack 21 (6.5.21.0) funktioniert der geänderte URL-Pfad für die Übermittlung adaptiver Formulare nicht mehr. (FORMS-15894)
+* In AEM Forms Service Pack 19 (6.5.19.0) schlägt die PDF/A-Validierung von AEM Forms 6.5 für bestimmte Dateien mit dem Fehler `creation date and modification date mismatch with timezone` fehl, während die Acrobat Pro PDF/A-Validierung für eine Konformitätsprüfung reibungslos ausgeführt wird. (FORMS-15840)
+* Wenn Benutzende Formularentwürfe mithilfe der Komponente „Entwürfe und Übermittlungen“ auf einer der Seiten der Site in AEM Forms Service Pack 15 (6.5.15.0) auf OSGi löschen möchten, schlägt der Löschvorgang fehl. (FORMS-15755)
 * Wenn Benutzende über eine SharePoint-Liste mit mehr als 999 Einträgen verfügen und das Formular einen Anhang enthält, schlägt die Übermittlung des Formulars fehl. (FORMS-15057)
 * Es wird eine Validierungsregel hinzugefügt, um sicherzustellen, dass das Enddatum nicht vor dem Startdatum liegt, sowie ein benutzerdefiniertes Skript für die Validierungsmeldung. Die Validierung wird jedoch nicht ausgelöst, wenn das Enddatum vor dem Startdatum liegt. (FORMS-14757)
 * Wenn Benutzende die Funktionalität zum Ein-/Ausblenden in einer Tabelle in einem adaptiven Formular verwenden, wird die Feldgröße verkleinert. Die Feldgröße wird beim Hinzufügen und Entfernen einer Zeile wieder korrigiert. (FORMS-14756)
-* Wenn ein(e) Benutzende(r) Formulare auf AEM Forms Service Pack 19 (6.5.19.0) druckt, werden einige Formulare auf dem Server nicht korrekt wiedergegeben, was zu Fehlern während des Druckvorgangs führt. (FORMS-14734)
-* Wenn Benutzende von AEM Forms Service Pack 15 (6.5.15.0) auf Service Pack 19 (6.5.19.0) aktualisieren, tritt ein Problem auf. Ein benutzerdefiniertes Anzeigemuster, das auf `num{$zzz,zz9.99}` festgelegt ist, wird in der Vorschau und der Agent-Benutzeroberfläche nicht korrekt gerendert. (FORMS-14694)
+* Beim Drucken von Formularen in AEM Forms Service Pack 19 (6.5.19.0) werden einige Formulare nicht ordnungsgemäß auf dem Server gerendert, was während des Druckvorgangs zu Fehlern führt. (FORMS-14734)
+* Beim Aktualisieren von AEM Forms Service Pack 15 (6.5.15.0) auf Service Pack 19 (6.5.19.0) tritt ein Problem auf. Ein benutzerdefiniertes Anzeigemuster, das auf `num{$zzz,zz9.99}` festgelegt ist, wird in der Vorschau und der Agent-Benutzeroberfläche nicht korrekt gerendert. (FORMS-14694)
 * Wenn Benutzende eine Vorschau eines Briefs in einer interaktiven Kommunikation mit einer gespeicherten Daten-XML anzeigen, bleibt der Brief in der AEM-Benutzeroberfläche im Status „Laden“ stecken. Die erneute Vorschau des Briefs mit derselben XML funktioniert einwandfrei. (FORMS-14521)
-* In AEM Forms Service Pack 20 (6.5.20.0) bemerken Benutzende, die E-Mails mit Anhängen über die Schaltfläche „E-Mail senden“ in adaptiven Formularen senden, ein Problem. Der Name des Anhangs wird in der nächsten Zeile und nicht inline angezeigt. (FORMS-14426)
+* In AEM Forms Service Pack 20 (6.5.20.0) tritt ein Problem auf, wenn Benutzende E-Mails mit Anhängen über die Schaltfläche „E-Mail senden“ in adaptiven Formularen senden. Der Name des Anhangs wird in der nächsten Zeile und nicht inline angezeigt. (FORMS-14426)
 * Wenn Benutzende eine PDF in AEM Forms generieren und für Aufzählungslisten der Standardstil „Datenträger“ festgelegt ist, schlägt die Barrierefreiheitsprüfung der PDF im Barrierefreiheits-Tool von Adobe Acrobat fehl. Bei Listen mit den Stilen „Aufzählungszeichen“ und „Quadrat“ funktioniert die Barrierefreiheitsprüfung. (FORMS-13802, LC-3922179)
 * Wenn Benutzende von AEMForms-6.5.0-0065 auf AEMForms-6.5.0-0087 auf der eigenständigen RHEL8-JBoss®-Einrichtung aktualisieren, kann keine Verbindung zum LiveCycle-Dienst-Container hergestellt werden. (FORMS-15907) *
 * In AEM Workspace in AEM Forms auf JEE führt die Auswahl eines zuvor übermittelten Formulars zum Starten eines neuen Formularprozesses zu einem Problem. Formulare mit vorausgefüllten Daten überschreiben alle zuvor übermittelten Daten und entfernen manuell ausgefüllte Felder. (FORMS-15376)
-* Auf AEM Forms Service Pack 20 (6.5.20.0) schlägt die Konvertierung einer TIFF-Datei in PDF mithilfe des PDFG-Dienstes mit folgendem Fehler fehl: (FORMS-14879) ALC-PDG-011-028-Fehler beim Konvertieren der Eingabebilddatei in PDF. com/sun/image/codec/jpeg/JPEGCodec
+* Wen Benutzende in AEM Forms Service Pack 20 (6.5.20.0) mithilfe des PDFG-Dienstes TIFF-Dateien in PDF konvertieren, schlägt der Vorgang mit diesem Fehler fehl: (FORMS-14879) ALC-PDG-011-028-Fehler beim Konvertieren eines Eingabebildes in das PDF-Format. com/sun/image/codec/jpeg/JPEGCodec
 * Aktualisierung in AEM Forms on JEE-JAR-Dateien: Die Bibliothek `commons-collections:commons-collections:jar` ist jetzt enthalten, um die Auflösung und Funktionalität von Abhängigkeiten für verschiedene AEM Forms JEE-Aufträge zu verbessern, z. B.:
    * Verbesserung von Assembler-Aufträgen, um die Auftragsverarbeitung und Fehlerbehandlung zu verbessern.
    * Verbesserung von PDF Generator-Aufträgen (PDFG), um reibungslosere Vorgänge für die Dokumenterstellung und -konvertierung sicherzustellen.
@@ -266,18 +266,18 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### XMLFM {#forms-xmlfm-sp22}
 
-* Wenn in AEM Forms Service Pack 21 (6.5.21.0) ein Benutzer mit XMLFM nicht standardmäßige Tags zu PDFs hinzufügt, entspricht das Dokument nicht den Anforderungen der PDF-Spezifikation. (LC-3922484)
-* Wenn ein(e) Benutzende(r) eine PDF mit dem Ausgabe-Service auf AEM Forms Service Pack 20 (6.5.20.0) generiert, schlägt dies mit CORBA.COMM_FAILURE fehl und zeigt den Fehler an: `15:04:35,973 ERROR [com.adobe.formServer.PA.XMLFormAgentWrapper] (default task-14) ALCOUT-002-013: XMLFormFactory, PAexecute failure: "org.omg.CORBA.COMM_FAILURE"`. Der Dienst ist erfolgreich, wenn die Barrierefreiheitsrolle „Verweis“ aus dem Teilformular der XDP-Vorlage ausgeschlossen ist. Diese Rolle ist jedoch erforderlich, um Konformität mit 508 zu gewährleisten. (LC-3922402)
+* Wenn Benutzende in AEM Forms Service Pack 21 (6.5.21.0) mit XMLFM nicht-standardmäßige Tags zu PDFs hinzufügen, entspricht das Dokument nicht den PDF-Spezifikationsanforderungen. (LC-3922484)
+* Wenn Benutzende mit dem Ausgabe-Service in AEM Forms Service Pack 20 (6.5.20.0) eine PDF generieren, schlägt dies mit CORBA.COMM_FAILURE fehl und es wird folgender Fehler angezeigt: `15:04:35,973 ERROR [com.adobe.formServer.PA.XMLFormAgentWrapper] (default task-14) ALCOUT-002-013: XMLFormFactory, PAexecute failure: "org.omg.CORBA.COMM_FAILURE"`. Der Dienst ist erfolgreich, wenn die Barrierefreiheitsrolle „Verweis“ aus dem Teilformular der XDP-Vorlage ausgeschlossen ist. Diese Rolle ist jedoch erforderlich, um Konformität mit 508 zu gewährleisten. (LC-3922402)
 * Wenn Benutzende ein XFA-Formular in eine AcroForm-PDF konvertieren, schlägt dies fehl. (LC-3922363)
-* Wenn in AEM Forms Service Pack 19 (6.5.19.0) Benutzende eine XDP mit den unbenannten Unterformularen erstellen, erscheint FS_DATA_SOM für unbenannte Unterformulare leer. (LC-3922034)
+* Wenn Benutzende in AEM Forms Service Pack 19 (6.5.19.0) eine XDP mit unbenannten Teilformularen erstellen, wird FS_DATA_SOM für die unbenannten Teilformulare leer angezeigt. (LC-3922034)
 
 #### Forms Designer {#forms-designer-sp22}
 
-* Wenn ein(e) Benutzende(r) eine Fragmentbibliothek öffnet, indem er/sie einen Fragmentordner in AEM Forms Designer Version 6.5.21.0 auswählt, stürzt er ab. (LC-3922439)
-* Wenn ein(e) Benutzende(r) die 32-Bit-Version von AEM Forms Designer 6.5.20.0 deinstalliert und AEM Forms Designer Version 6.5.21.0 installiert, kann Forms Designer nicht gestartet werden. Die Fehlerprotokolle zeigen eine unzureichende Speicherzuordnung für die Java Runtime Environment (JRE) an. (LC-3922404)
-* Nachdem ein Benutzer die AEM Forms Designer-Version 6.5.20.0 installiert hat, wird die Option „Makros“ nicht im Menü angezeigt, nur das standardmäßige Makro „Barrierefreiheitsprüfung“ wird angezeigt und kann nicht ausgeführt werden. (LC-3922321)
-* Wenn ein(e) Benutzende(r) einen neuen Vorlagenspeicherort zum Erstellen von XDPs in AEM Forms Designer Version 6.5.20.0 hinzufügt, stürzt Forms Designer ab. (LC-3922316)
-* Wenn ein(e) Benutzende(r) eine Ausgabe mit der ExportData-Methode in AEM Forms 6.5 Service Pack 15 (6.5.15.0) OSGI erstellt, sind die Daten unvollständig und falsch. (LC-3922340)
+* Wenn Benutzende eine Fragmentbibliothek durch Auswahl eines Fragmentordners in AEM Forms Designer 6.5.21.0 öffnen, kommt es zum Absturz. (LC-3922439)
+* Wenn Benutzende die 32-Bit-Version von AEM Forms Designer 6.5.20.0 deinstallieren und AEM Forms Designer 6.5.21.0 installieren, kann Forms Designer nicht gestartet werden. Die Fehlerprotokolle zeigen eine unzureichende Speicherzuordnung für die Java Runtime Environment (JRE) an. (LC-3922404)
+* Nachdem Benutzende die AEM Forms Designer-Version 6.5.20.0 installiert haben, wird im Menü nicht die Option „Makros“, sondern nur das standardmäßige Makro „Zugriffsprüfung“ angezeigt, das sich jedoch nicht ausführen lässt. (LC-3922321)
+* Wenn Benutzende einen neuen Vorlagenspeicherort zum Erstellen von XDPs in AEM Forms Designer Version 6.5.20.0 hinzufügen, stürzt Forms Designer ab. (LC-3922316)
+* Wenn Benutzende eine Ausgabe mithilfe der ExportData-Methode in AEM Forms 6.5 Service Pack 15 (6.5.15.0) OSGI generieren, werden unvollständige und falsche Daten erzeugt. (LC-3922340)
 
 
 <!-- #### [!DNL Adaptive Forms] {#forms-6522}
@@ -595,24 +595,25 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 ### Bekannte Probleme bei AEM Forms {#known-issues-aem-forms-6522}
 
-* Wenn die Konvertierung von HTML nach PDF auf dem SLES 15 SP6 Linux®-Server fehlschlägt, mit dem Fehler: `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`. Führen Sie zur Behebung dieses Problems folgende Schritte durch:
-   1. Starten Sie den Container und legen Sie die `OPENSSL_CONF` Umgebungsvariable mit dem folgenden Befehl fest:
+* Wenn die Konvertierung von HTML nach PDF auf dem SUSE® Linux®-Server (SLES 15 SP6 oder höher) mit dem Fehler fehlschlägt: `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`.
+Führen Sie zur Behebung dieses Problems folgende Schritte durch:
+   1. Starten Sie den Server und legen Sie die `OPENSSL_CONF` Umgebungsvariable mit dem folgenden Befehl fest:
       `export OPENSSL_CONF=/etc/ssl`
-Alternativ können Sie die Umgebungsvariable beim Starten des Containers festlegen:
+Alternativ können Sie die Umgebungsvariable beim Starten des Servers festlegen:
       `-e OPENSSL_CONF=/etc/ssl`
    1. Starten Sie den Server neu.
-* Wenn Sie nach der Installation von AEM Forms JEE Service Pack 21 (6.5.21.0) doppelte Einträge von Geode-Jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` im `<AEM_Forms_Installation>/lib/caching/lib`-Ordner (FORMS-14926) finden, führen Sie die folgenden Schritte aus, um das Problem zu beheben:
+* Wenn Sie nach der Installation von AEM Forms JEE Service Pack 21 (6.5.21.0) doppelte Einträge von Geode-JAR-Dateien `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` unter dem Ordner `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926) finden, führen Sie die folgenden Schritte durch, um das Problem zu beheben:
 
    1. Beenden der Locators, falls sie noch ausgeführt werden.
-   2. Beenden des AEM-Servers.
-   3. Wechseln zum Ordner `<AEM_Forms_Installation>/lib/caching/lib`.
-   4. Entfernen aller Geode-Patch-Dateien außer `geode-*-1.15.1.2.jar`. Bestätigen, dass nur die Geode-JAR-Dateien mit `version 1.15.1.2` vorhanden sind.
-   5. Öffnen der Eingabeaufforderung im Administratormodus.
-   6. Installieren des Geode-Patches mithilfe der Datei `geode-*-1.15.1.2.jar`.
+   1. Beenden des AEM-Servers.
+   1. Wechseln zum Ordner `<AEM_Forms_Installation>/lib/caching/lib`.
+   1. Entfernen aller Geode-Patch-Dateien außer `geode-*-1.15.1.2.jar`. Bestätigen, dass nur die Geode-JAR-Dateien mit `version 1.15.1.2` vorhanden sind.
+   1. Öffnen der Eingabeaufforderung im Administratormodus.
+   1. Installieren des Geode-Patches mithilfe der Datei `geode-*-1.15.1.2.jar`.
 
 * Wenn Benutzende versuchen, einen Briefentwurf mit gespeicherten XML-Daten in der Vorschau anzuzeigen, bleibt er für bestimmte Buchstaben im `Loading`-Zustand hängen. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-14521)
 
-* Nach dem Upgrade auf AEM Forms Service Pack 6.5.21.0 kann der `PaperCapture`-Service keine OCR-Vorgänge (Optical Character Recognition) für PDF-Dateien ausführen. Der Dienst generiert keine Ausgabe in Form einer PDF oder einer Protokolldatei. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (CQDOC-21680)
+* Nach der Aktualisierung auf AEM Forms Service Pack 6.5.21.0 kann der `PaperCapture`-Dienst keine OCR-Vorgänge (optische Zeichenerkennung) mehr für PDFs durchführen. Der Dienst generiert keine Ausgabe in Form einer PDF oder einer Protokolldatei. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (CQDOC-21680)
 
 * Bei Benutzenden, die von AEM 6.5 Forms Service Pack 18 oder 19 auf Service Pack 20 oder 21 aktualisiert haben, trat ein JSP-Kompilierungsfehler auf. Dieser Fehler hinderte sie daran, adaptive Formulare zu öffnen oder zu erstellen. Er hat auch Probleme mit anderen AEM-Schnittstellen verursacht. Diese Schnittstellen umfassten den Seiteneditor, die AEM Forms-Benutzeroberfläche, den Workflow-Editor und die Benutzeroberfläche der Systemübersicht. (FORMS-15256)
 
@@ -621,19 +622,19 @@ Alternativ können Sie die Umgebungsvariable beim Starten des Containers festleg
    1. Löschen Sie das Bundle `com.adobe.granite.ui.commons-5.10.26.jar`.
    1. Starten Sie den AEM-Server neu.
 
-* Nach der Aktualisierung auf AEM Forms Service Pack 20 (6.5.20.0) mit dem Forms-Add-on funktionieren Konfigurationen, die auf dem veralteten Adobe Analytics Cloud-Service basieren und eine berechtigungsbasierte Authentifizierung verwenden, nicht mehr. Dieses Problem verhinderte die ordnungsgemäße Ausführung von Analyseregeln. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-15428)
+* Nach der Aktualisierung auf AEM Forms Service Pack 20 (6.5.20.0) mit dem Forms-Add-on funktionieren Konfigurationen, die auf den alten Adobe Analytics Cloud-Dienst mithilfe der berechtigungsbasierten Authentifizierung angewiesen sind, nicht mehr. Dieses Problem verhinderte die ordnungsgemäße Ausführung von Analyseregeln. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-15428)
 
-* Wenn ein(e) Benutzende(r) auf dem JEE-Server auf AEM Forms Service Pack 20 (6.5.20.0) aktualisiert und mithilfe von Ausgabe-Services PDFs generiert, werden die PDFs mit Problemen mit der Barrierefreiheit gerendert. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922112)
+* Wenn Benutzende auf AEM Forms Service Pack 20 (6.5.20.0) auf dem JEE-Server aktualisieren und mithilfe von Ausgabe-Services PDF-Dateien generieren, gibt es beim Rendern der PDF-Dateien Probleme bezüglich der Barrierefreiheit. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922112)
 * Wenn Benutzende getaggte PDF-Dateien mit dem Ausgabe-Service auf JEE generieren, wird eine Warnung wegen einer unangemessenen Struktur angezeigt. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922038)
 * Wenn ein Formular auf AEM Forms JEE gesendet wird, werden die Instanzen eines sich wiederholenden XML-Elements aus den Daten entfernt. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922017)
 * Wenn Benutzende in einer Linux®-Umgebung ein adaptives Formular (auf JEE) in HTML rendern, schlägt das Rendern fehl. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921957)
 * Wenn Benutzende mithilfe des Ausgabe-Services von AEM Forms JEE eine XTG-Datei in das PostScript-Format konvertieren, schlägt der Vorgang mit folgendem Fehler fehl: `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE`. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921720)
-* Nach dem Upgrade auf AEM Forms Service Pack 18 (6.5.18.0) auf dem JEE-Server kann ein abstürzendes Formular, das von Benutzenden gesendet wird, nicht in HTML5 oder PDF forms gerendert werden und XMLFM stürzt ab. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921718)
+* Nach dem Upgrade auf AEM Forms Service Pack 18 (6.5.18.0) auf JEE Server wird ein von Benutzenden gesendetes Formular nicht als HTML5- oder PDF-Formular gerendert und XMLFM stürzt ab. Informationen zum Herunterladen und Installieren des Hotfixes finden Sie im Artikel [Hotfixes für Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921718)
 * In der Druckvorschau der Agent-Benutzeroberfläche für interaktive Kommunikationen wird das Währungssymbol (z. B. das Dollarzeichen $) für alle Feldwerte uneinheitlich angezeigt. Es wird für Werte bis 999 angezeigt, fehlt jedoch für Werte ab 1000. (FORMS-16557)
 * Änderungen am XDP von verschachtelten Layout-Fragmenten in einer interaktiven Kommunikation werden nicht im Editor für interaktive Kommunikationen angezeigt. (FORMS-16575)
 * In der Druckvorschau der Agent-Benutzeroberfläche für interaktive Kommunikationen werden einige berechnete Werte nicht korrekt angezeigt. (FORMS-16603)
 * Wenn der Brief in der Druckvorschau angezeigt wird, ändert sich der Inhalt. Einige Leerzeichen verschwinden und bestimmte Buchstaben werden durch „x“ ersetzt. (FORMS-15681)
-* Wenn ein(e) Benutzende(r) eine WebLogic 14c-Instanz konfiguriert, schlägt der PDFG-Service in AEM Forms Service Pack 21 (6.5.21.0) on JEE, der auf JBoss® ausgeführt wird, aufgrund von Klassenladerkonflikten mit der SLF4J-Bibliothek fehl. Der Fehler wird wie folgt angezeigt (CQDOC-22178):
+* Wenn Benutzende eine WebLogic 14c-Instanz konfigurieren, schlägt der PDFG-Dienst in AEM Forms Service Pack 21 (6.5.21.0) on JEE, wenn er auf JBoss® ausgeführt wird, aufgrund von Classloader-Konflikten mit der SLF4J-Bibliothek fehl. Der Fehler wird wie folgt angezeigt (CQDOC-22178):
 
   ```java
   Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"

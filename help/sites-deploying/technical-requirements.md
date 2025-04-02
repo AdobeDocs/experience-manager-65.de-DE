@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 61f658fc4390610686a308d02a8d74505252434a
+source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
 workflow-type: tm+mt
-source-wordcount: '3638'
+source-wordcount: '3632'
 ht-degree: 98%
 
 ---
@@ -158,7 +158,7 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 >
 >Die Adobe-Kundenunterstützung hilft beim Qualifizieren von Problemen, die mit der Verwendung von MongoDB mit AEM in Zusammenhang stehen.
 >
->Weitere Informationen finden Sie auf der Seite von [MongoDB für Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+>Weitere Informationen finden Sie auf der [Seite von MongoDB für Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 
 <!--
 >[!NOTE]
@@ -452,9 +452,9 @@ Windows x86:
 
 ### Anforderungen für AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
-* Stellen Sie zum Testen von PDF-Konversionen auf einem SUSE® Linux®-Server die folgenden Konfigurationen sicher:
-   * Navigieren Sie zur `/etc/profile` Datei und legen Sie die `OpenOffice_PATH` Umgebungsvariable auf `/opt/openoffice4` fest, um sie global zu konfigurieren.
-   * Installieren Sie die 32-Bit-Version von OpenOffice auf dem Linux®-Betriebssystem
+* Stellen Sie zum Testen von PDF-Konversionen auf SUSE® Linux®-Servern (SLES 15 SP6 oder höher) die folgenden Konfigurationen sicher:
+   * Navigieren Sie zur Datei `/etc/profile` und setzen Sie die Umgebungsvariable `OpenOffice_PATH` auf `/opt/openoffice4`, um sie global zu konfigurieren.
+   * Installieren Sie die 32-Bit-Version von OpenOffice.
 
 ### Software-Support für PDF Generator {#software-support-for-pdf-generator}
 
@@ -517,7 +517,7 @@ Windows x86:
 >
 >Zusätzlich gilt Folgendes:
 >
->* PDF Generator erfordert die 32-Bit-Version der [klassischen Acrobat 2020-Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) oder der Acrobat 2017-Version 17.011.30078, um die Konvertierung durchzuführen.
+>* Für PDF Generator ist eine 32-Bit-Version von [Acrobat 2020 Classic Track Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) erforderlich, um die Konvertierung durchzuführen.
 >* PDF Generator unterstützt nur die 32-Bit-Version von Microsoft® Office Professional Plus und anderer für die Konvertierung erforderliche Software.
 >* Die Microsoft® Office Professional Plus-Installation kann eine Einzelhandels- oder MAK/KMS/AD-basierte Mengenlizenzierung verwenden.
 >* Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder unlizenziert wird, z. B. weil eine Installation mit Volumenlizenz einen KMS-Host nicht innerhalb eines bestimmten Zeitraums finden kann, können Konvertierungen fehlschlagen, bis die Installation neu lizenziert und reaktiviert wird.
