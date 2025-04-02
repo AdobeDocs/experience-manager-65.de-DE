@@ -5,10 +5,10 @@ exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e67f19784abae1cd41819dd2a763ddd064beee08
+source-git-commit: 361f0a5f2d1484cf594edfda73250c5690ed7cab
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 86%
+source-wordcount: '1043'
+ht-degree: 91%
 
 ---
 
@@ -52,9 +52,6 @@ Nachdem ein Prozess, der den Service „Execute Script“ enthält, erstellt wur
 >
 > Wenn der JAVA-Skript-Code 10 Zeilen überschreitet, wird empfohlen, den Code zu benutzerdefinierten DSCs (Document Service-Komponenten) hinzuzufügen, anstatt ihn direkt im Prozess zu schreiben. Benutzerdefinierte DSCs verbessern die Wartbarkeit, Wiederverwendbarkeit und Leistung, indem sie Workflows auf ein Minimum beschränken. Durch die Referenzierung dieser Komponenten in Workflows wird eine bessere Ausführungseffizienz gewährleistet und potenzielle Verzögerungen verhindert, die durch die Verarbeitung großer Codeblöcke innerhalb des Workflows verursacht werden.
 
->[!NOTE]
->
-> Wenn der JAVA-Skript-Code 10 Zeilen überschreitet, wird empfohlen, den Code zu benutzerdefinierten DSCs (Document Service-Komponenten) hinzuzufügen, anstatt ihn direkt im Prozess zu schreiben. Benutzerdefinierte DSCs verbessern die Wartbarkeit, Wiederverwendbarkeit und Leistung, indem sie Workflows auf ein Minimum beschränken. Durch die Referenzierung dieser Komponenten in Workflows wird eine bessere Ausführungseffizienz gewährleistet und potenzielle Verzögerungen verhindert, die durch die Verarbeitung großer Codeblöcke innerhalb des Workflows verursacht werden.
 
 **Über die Technologie des Service „Execute Script“**
 
