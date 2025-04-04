@@ -6,9 +6,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 source-git-commit: 652878504d2225e50ea14885ec96bdd408f77ed0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1722'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Das Service Pack für Adobe Experience Manager (AEM) Forms enthält neue und akt
 
 >[!NOTE]
 >
-> * Adobe veröffentlicht mit jedem sechsten Service Pack ein vollständiges Installationsprogramm. AEM 6.5 Forms Service Pack 18 (6.5.18.0) ist das neueste Vollinstallationsprogramm für JEE. Das vollständige Installationsprogramm unterstützt neue Plattformen, während das reguläre Service Pack-Installationsprogramm neue Funktionen, Fehlerbehebungen und allgemeine Verbesserungen enthält. Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Software für Ihre AEM 6.5 Forms on JEE-Umgebung planen, empfiehlt Adobe die Verwendung des Vollinstallationsprogramms für AEM 6.5.18.0 Forms on JEE vom 31. August 2023 anstelle des AEM 6.5 Forms-Installationsprogramms vom 08. April 2019 oder des AEM 6.5.12.0 Forms-Installationsprogramms vom 03. März 2022. Nachdem Sie das vollständige Installationsprogramm verwendet haben, installieren Sie das neueste Service Pack.
+> * Adobe veröffentlicht mit jedem sechsten Service Pack ein vollständiges Installationsprogramm. AEM 6.5 Forms Service Pack 18 (6.5.18.0) ist das neueste vollständige Installationsprogramm für JEE. Das vollständige Installationsprogramm unterstützt neue Plattformen, während das reguläre Service Pack-Installationsprogramm neue Funktionen, Fehlerbehebungen und allgemeine Verbesserungen enthält. Wenn Sie eine Neuinstallation durchführen oder die neueste Software für Ihre AEM 6.5 Forms on JEE-Umgebung nutzen möchten, empfiehlt Adobe das vollständige Installationsprogramm für AEM 6.5.18.0 Forms on JEE vom 31. August 2023 anstelle des AEM 6.5 Forms-Installationsprogramms vom 8. April 2019 oder des AEM 6.5.12.0 Forms-Installationsprogramms vom 3. März 2022. Nachdem Sie das vollständige Installationsprogramm verwendet haben, installieren Sie das neueste Service Pack.
 > * Die im [AEM 6.5-Schnellstart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=de) verfügbaren AEM Forms-Funktionen, z. B. adaptive Formulare, dienen nur zu Kennenlern- und Evaluierungszwecken. Für die Verwendung in der Produktion ist es unerlässlich, eine gültige Lizenz für AEM Forms zu erwerben.
 
 <!--
@@ -115,7 +115,7 @@ Navigieren Sie zum entsprechenden Ordner und geben Sie in einer Shell Folgendes 
 
    * Sie können entweder die Option **Configuration Manager starten** deaktivieren, bevor Sie auf **[!UICONTROL Fertig]** klicken. Führen Sie **Configuration Manager** durch Verwendung der Datei **ConfigurationManager.bat** in `[aem-forms root]\configurationManager\bin` aus.
 
-   * Oder deaktivieren Sie die Option **Configuration Manager starten**, bevor Sie auf **[!UICONTROL Fertig]** klicken. Navigieren Sie vor der Ausführung von **Configuration Manager** mit **ConfigurationManager.exe** oder **ConfigurationManager_IPv6.exe** zum Verzeichnis *`<AEMForms_Install_Dir>\configurationManager\bin`* und ersetzen Sie die Dateien **ConfigurationManager.lax** und **ConfigurationManager_IPV6.lax** durch die neuesten [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) und [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax), suchen und ersetzen Sie **axis-1.4.1.1.jar** durch **axis-1.4.1.2.jar** diese beiden Dateien.
+   * Oder deaktivieren Sie die Option **Configuration Manager starten**, bevor Sie auf **[!UICONTROL Fertig]** klicken. Navigieren Sie vor der Ausführung von **Configuration Manager** mit **ConfigurationManager.exe** oder **ConfigurationManager_IPv6.exe** zum Verzeichnis *`<AEMForms_Install_Dir>\configurationManager\bin`*, ersetzen Sie **ConfigurationManager.lax** und **ConfigurationManager_IPV6.lax** durch die neuesten Versionen der Dateien [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) und [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) und ersetzen Sie in diesen beiden Dateien **axis-1.4.1.1.jar** überall durch **axis-1.4.1.2.jar**.
 
      >[!NOTE]
      >
@@ -137,7 +137,7 @@ Navigieren Sie zum entsprechenden Ordner und geben Sie in einer Shell Folgendes 
 >
 >* Nach der Installation von AEM Forms on JEE Service Pack müssen Sie das Add-On-Paket für Forms aus dem Ordner `crx-repository\install` entfernen, bevor Sie den Anwendungs-Server neu starten. Laden Sie das neueste Add-On-Paket für Forms vom [Software Distribution-Portal](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) herunter.
 >* Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
->* Für [Hotfix zur Behebung von Spring Framework-Schwachstellen für AEM Forms on JEE](/help/release-notes/aem-forms-hotfix.md) muss bei der Bereitstellung in einer Cluster-Umgebung unbedingt sichergestellt werden, dass Locators mit JDK 17 gestartet werden.
+>* Für den [Hotfix zum Beheben von Spring Framework-Schwachstellen für AEM Forms on JEE](/help/release-notes/aem-forms-hotfix.md) muss bei der Bereitstellung in einer Cluster-Umgebung unbedingt sichergestellt werden, dass Locators mit JDK 17 gestartet werden.
 
 +++
 
@@ -279,4 +279,4 @@ Es gibt zwei verschiedene Methoden, mit der Sie das Service Pack von [!DNL Exper
 
 * Überprüfen Sie die Überwachungsprotokolle (error.log) nach Abschluss der Installation auf Aktivitäten. Warten Sie ein paar Minuten, bis keine Aktivität in den Protokollen zu sehen ist. Starten Sie die AEM-Instanz neu.
 
-* Falls Sie nach der Installation **Service Packs von AEM Forms 6.5.15.0 oder höher einen Fehler Dienst nicht verfügbar** erhalten, [ Sie das Servlet-Fragment und -Paket ](/help/forms/using/aem-service-pack-installation-solution.md), um den Fehler zu beheben.
+* Falls Sie nach der Installation des neuesten Service Pack von AEM Forms 6.5.15.0 oder höher den Fehler **Dienst nicht verfügbar** erhalten, [installieren Sie das Servlet-Fragment und -Paket](/help/forms/using/aem-service-pack-installation-solution.md), um den Fehler zu beheben.
