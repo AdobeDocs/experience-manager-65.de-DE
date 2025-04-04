@@ -8,7 +8,7 @@ role: User, Developer
 source-git-commit: 361f0a5f2d1484cf594edfda73250c5690ed7cab
 workflow-type: tm+mt
 source-wordcount: '1043'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -46,11 +46,11 @@ Nachdem der Prozess mit der definierten Aktivität „Execute Script“ erstellt
 
 ## Erstellen von XML mit dem Service „Execute Script“ {#create-xml-execute-script-service}
 
-Nachdem ein Prozess, der den Service „Execute Script“ enthält, erstellt wurde, kann dieses Skript zur Erstellung von XML verwendet werden. Sie würden die unten beschriebenen Skripte in das Textfeld eingeben, das im Abschnitt Hinzufügen eines Skripts zum Prozess mit dem `Execute Script`-Service oben beschrieben wurde.
+Nachdem ein Prozess, der den Service „Execute Script“ enthält, erstellt wurde, kann dieses Skript zur Erstellung von XML verwendet werden. Sie würden die unten beschriebenen Skripte in das Textfeld eingeben, das im Abschnitt „Hinzufügen eines Skripts zum Prozess mit dem Service `Execute Script`“ weiter oben beschrieben wurde.
 
 >[!NOTE]
 >
-> Wenn der JAVA-Skript-Code 10 Zeilen überschreitet, wird empfohlen, den Code zu benutzerdefinierten DSCs (Document Service-Komponenten) hinzuzufügen, anstatt ihn direkt im Prozess zu schreiben. Benutzerdefinierte DSCs verbessern die Wartbarkeit, Wiederverwendbarkeit und Leistung, indem sie Workflows auf ein Minimum beschränken. Durch die Referenzierung dieser Komponenten in Workflows wird eine bessere Ausführungseffizienz gewährleistet und potenzielle Verzögerungen verhindert, die durch die Verarbeitung großer Codeblöcke innerhalb des Workflows verursacht werden.
+> Bei einem JAVA-Skript-Code mit mehr als 10 Zeilen wird empfohlen, den Code zu benutzerdefinierten Documentendienst-Komponenten (Document Service Components, DSCs) hinzuzufügen, anstatt ihn direkt in den Prozess zu schreiben. Benutzerdefinierte DSCs verbessern die Wartbarkeit, Wiederverwendbarkeit und Leistung, indem Workflows einfach gehalten werden. Durch das Referenzieren dieser Komponenten in Workflows wird zum einen eine höhere Ausführungseffizienz sichergestellt, zum anderen werden potenzielle Verzögerungen aufgrund der Verarbeitung großer Code-Blöcke im Workflow verhindert.
 
 
 **Über die Technologie des Service „Execute Script“**
