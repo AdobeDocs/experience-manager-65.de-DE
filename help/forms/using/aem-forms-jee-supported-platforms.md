@@ -10,9 +10,9 @@ exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4216'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -467,8 +467,8 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
 
 ### Anforderungen für PDF Generator
 
-- Stellen Sie zum Testen von PDF-Konversionen auf SUSE® Linux®-Servern (SLES 15 SP6 oder höher) die folgenden Konfigurationen sicher:
-   - Navigieren Sie zur Datei `/etc/profile` und setzen Sie die Umgebungsvariable `OpenOffice_PATH` auf `/opt/openoffice4`, um sie global zu konfigurieren.
+- Stellen Sie zum Testen von PDF-Konvertierungen auf einem SUSE® Linux®-Server (SLES 15 SP6 oder höher) sicher, dass die folgenden Konfigurationen vorhanden sind:
+   - Navigieren Sie zur Datei `/etc/profile` und legen Sie die Umgebungsvariable `OpenOffice_PATH` auf `/opt/openoffice4` fest, um sie global zu konfigurieren.
    - Installieren Sie die 32-Bit-Version von OpenOffice.
 
 ### Software-Support für PDF Generator {#software-support-for-pdf-generator}
@@ -508,7 +508,7 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
 >
 >Zusätzlich gilt Folgendes:
 >
->- Für PDF Generator ist eine 32-Bit-Version von [Acrobat 2020 Classic Track Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) erforderlich, um die Konvertierung durchzuführen.
+>- Für PDF Generator ist die 32-Bit-Version der [klassischen Acrobat 2020-Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) zur Konvertierung erforderlich.
 >- PDF Generator unterstützt nur die 32-Bit-Version von Microsoft® Office Professional Plus und anderer für die Konvertierung erforderliche Software.
 >- Die Microsoft® Office Professional Plus-Installation kann eine Einzelhandels- oder MAK/KMS/AD-basierte Mengenlizenzierung verwenden.
 >- Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder unlizenziert wird, z. B. weil eine Installation mit Volumenlizenz einen KMS-Host nicht innerhalb eines bestimmten Zeitraums finden kann, können Konvertierungen fehlschlagen, bis die Installation neu lizenziert und reaktiviert wird.

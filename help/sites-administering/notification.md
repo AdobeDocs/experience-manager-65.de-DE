@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 source-git-commit: efaff4557aba3557a355ed385a5358cf1108c159
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2154'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Es gelten die folgenden Beschränkungen:
 * Der **SMTP-Server-Port** muss 25 oder höher sein.
 
 * Der **SMTP-Server-Hostname** darf nicht leer sein.
-* Die **„Von“-** darf nicht leer sein und der Standardwert &quot;<noreply@day.com>&quot; muss geändert werden.
+* Die **„Von“-Adresse** darf nicht leer sein und der Standardwert „<noreply@day.com>“ muss geändert werden.
 
 Zum Debuggen eines Problems mit dem **Day CQ Mail Service** können Sie die Protokolle des Dienstes betrachten:
 
@@ -84,7 +84,7 @@ Gehen Sie wie folgt vor, um den Knoten in den Quellordnern des Inhaltspakets zu 
 
 ## Konfigurieren des E-Mail-Benachrichtigungsdiensts für Workflows {#configuring-the-workflow-email-notification-service}
 
-Wenn Sie E-Mail-Benachrichtigungen durch den Workflow erhalten, werden sowohl die E-Mail-Adresse als auch das Host-URL-Präfix auf Standardwerte gesetzt. Sie können diese Werte ändern, indem Sie den **Day CQ-E-Mail-Benachrichtigungsdienst für Workflows** in der Web-Konsole konfigurieren. In diesem Fall müssen Sie die Änderung im Repository beibehalten.
+Wenn Sie E-Mail-Benachrichtigungen durch den Workflow erhalten, werden sowohl die E-Mail-Adresse als auch das Host-URL-Präfix auf Standardwerte gesetzt. Sie können diese Werte ändern, indem Sie den **Day CQ-E-Mail-Benachrichtigungsdienst für Workflows** in der Web-Konsole konfigurieren. Wenn Sie dies tun, müssen Sie die Änderung im Repository beibehalten.
 
 Die Standardkonfiguration sieht in der Web-Konsole wie folgt aus:
 
