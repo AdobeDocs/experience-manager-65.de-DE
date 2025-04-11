@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6161'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -595,9 +595,9 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 ### Bekannte Probleme bei AEM Forms {#known-issues-aem-forms-6522}
 
-* Wenn die Konvertierung von HTML nach PDF auf dem SUSE® Linux®-Server (SLES 15 SP6 oder höher) mit dem Fehler fehlschlägt: `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`.
+* Die Konvertierung von HTML in PDF auf dem SUSE® Linux®-Server (SLES 15 SP6 oder höher) schlägt mit folgendem Fehler fehl: `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`.
 Führen Sie zur Behebung dieses Problems folgende Schritte durch:
-   1. Starten Sie den Server und legen Sie die `OPENSSL_CONF` Umgebungsvariable mit dem folgenden Befehl fest:
+   1. Starten Sie den Server und legen Sie die Umgebungsvariable `OPENSSL_CONF` mit dem folgenden Befehl fest:
       `export OPENSSL_CONF=/etc/ssl`
 Alternativ können Sie die Umgebungsvariable beim Starten des Servers festlegen:
       `-e OPENSSL_CONF=/etc/ssl`
