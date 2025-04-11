@@ -10,10 +10,10 @@ exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f965c449da06a1b7e60428e0734c621f004d318c
 workflow-type: tm+mt
 source-wordcount: '2791'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -139,13 +139,13 @@ In früheren Versionen befanden sich Client-Bibliotheksordner unter `/etc/client
 >
 >Um Code besser von Inhalt und Konfiguration zu isolieren, empfiehlt es sich, Client-Bibliotheken unter `/apps` zu platzieren und über `/etc.clientlibs` mithilfe der `allowProxy`-Eigenschaft freizulegen.
 
-Damit die Client-Bibliotheken unter `/apps` zugänglich sind, wird ein Proxy-Servlet verwendet. Die ACLs werden weiterhin im Client-Bibliotheksordner erzwungen, aber das Servlet ermöglicht, dass der Content über `/etc.clientlibs/` gelesen wird, wenn die `allowProxy`-Eigenschaft auf `true` gesetzt ist.
+Damit auf die Client-Bibliotheken unter `/apps` zugegriffen werden kann, wird ein Proxy-Servlet verwendet. Die ACLs werden weiterhin im Client-Bibliotheksordner erzwungen, aber das Servlet ermöglicht, dass der Content über `/etc.clientlibs/` gelesen wird, wenn die `allowProxy`-Eigenschaft auf `true` gesetzt ist.
 
 Eine statische Ressource kann nur über den Proxy abgerufen werden, wenn sie sich unter einer Ressource unter dem Client-Bibliotheksordner befindet.
 
 Beispiel:
 
-* Sie verfügen über eine Client-seitige Bibliothek unter `/apps/myproject/clientlibs/foo`.
+* Sie verfügen über eine Client-seitige Bibliothek unter `/apps/myprojects/clientlibs/foo`.
 * Sie verfügen über ein statisches Bild unter `/apps/myprojects/clientlibs/foo/resources/icon.png`.
 
 Sie legen die Eigenschaft `allowProxy` für `foo` auf „true“ fest.
