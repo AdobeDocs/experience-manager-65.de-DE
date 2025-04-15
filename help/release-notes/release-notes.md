@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
-workflow-type: ht
-source-wordcount: '6161'
-ht-degree: 100%
+source-git-commit: 461ec6a48bc41d46338c2c0162869525e49de97f
+workflow-type: tm+mt
+source-wordcount: '6138'
+ht-degree: 99%
 
 ---
 
@@ -595,13 +595,12 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 ### Bekannte Probleme bei AEM Forms {#known-issues-aem-forms-6522}
 
-* Die Konvertierung von HTML in PDF auf dem SUSE® Linux®-Server (SLES 15 SP6 oder höher) schlägt mit folgendem Fehler fehl: `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`.
-Führen Sie zur Behebung dieses Problems folgende Schritte durch:
-   1. Starten Sie den Server und legen Sie die Umgebungsvariable `OPENSSL_CONF` mit dem folgenden Befehl fest:
-      `export OPENSSL_CONF=/etc/ssl`
-Alternativ können Sie die Umgebungsvariable beim Starten des Servers festlegen:
-      `-e OPENSSL_CONF=/etc/ssl`
-   1. Starten Sie den Server neu.
+* Wenn die Konvertierung von HTML nach PDF auf einem SUSE® Linux®-Server (ab SLES 15 SP6) mit dem folgenden Fehler fehlschlägt:
+
+  ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
+Legen Sie dann die folgende Umgebungsvariable fest und starten Sie den Server neu:
+  `OPENSSL_CONF=/etc/ssl`
+
 * Wenn Sie nach der Installation von AEM Forms JEE Service Pack 21 (6.5.21.0) doppelte Einträge von Geode-JAR-Dateien `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` unter dem Ordner `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926) finden, führen Sie die folgenden Schritte durch, um das Problem zu beheben:
 
    1. Beenden der Locators, falls sie noch ausgeführt werden.

@@ -6,10 +6,10 @@ role: Admin, User, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: cf3247e437af7447fd6a6121c6a4e2ef750d06b7
+source-git-commit: 5dbdce2d8e558e6bf26c6713fd44d58038d38152
 workflow-type: tm+mt
-source-wordcount: '5660'
-ht-degree: 100%
+source-wordcount: '5724'
+ht-degree: 98%
 
 ---
 
@@ -232,7 +232,7 @@ Legen Sie Umgebungsvariablen für das 64-Bit-Java Development Kit, Anwendungen v
   <tr>
    <td><p><strong>OpenOffice</strong></p> </td>
    <td><p>OpenOffice_PATH</p> </td>
-   <td><p>C:\Programme (x86)\OpenOffice.org4</p> </td>
+   <td><p>C:\Program Dateien (x86)\OpenOffice 4</p> </td>
   </tr>
  </tbody>
 </table>
@@ -244,9 +244,12 @@ Legen Sie Umgebungsvariablen für das 64-Bit-Java Development Kit, Anwendungen v
 >* Die Umgebungsvariable OpenOffice_PATH wird auf den Installationsordner statt auf den Pfad der ausführbaren Datei festgelegt.
 >* Richten Sie für Microsoft® Office-Programme wie Word, PowerPoint, Excel und Project oder für AutoCAD keine Umgebungsvariablen ein. Wenn diese Anwendungen auf dem Server installiert sind, startet der Generate PDF-Dienst diese Anwendungen automatisch.
 >* Installieren Sie auf UNIX-basierten Plattformen OpenOffice als /root. Wenn OpenOffice nicht als „root“ installiert ist, kann der PDF Generator-Dienst OpenOffice-Dokumente nicht in PDF-Dokumente konvertieren. Falls Sie OpenOffice unter einem anderen Benutzer als /root installieren und ausführen müssen, gewähren Sie dem betreffenden Benutzer sudo-Rechte.
->* Wenn Sie OpenOffice auf einer UNIX-basierten Plattform verwenden, führen Sie den folgenden Befehl aus, um die PATH-Variable festzulegen:
->
->  `export OpenOffice_PATH=/opt/openoffice.org4`
+>* Wenn Sie OpenOffice auf einer UNIX-basierten Plattform verwenden, führen Sie den folgenden Befehl aus, um die PATH-Variable festzulegen:\
+> `export OpenOffice_PATH=/opt/openoffice.org4`
+>* Führen Sie auf SUSE® Linux®-basierten Plattformen (SLES 15 SP6 oder höher) die folgenden Schritte aus, um OpenOffice einzurichten:
+>     * Installieren Sie die neueste verfügbare 32-Bit-Variante von `OpenOffice 4.1.x` in einem Verzeichnis wie `/opt/openoffice4`.
+>     * Legen Sie die `OpenOffice_PATH` Umgebungsvariable so fest, dass sie auf diesen Speicherort verweist. Beispiel: `OpenOffice_PATH=/opt/openoffice4`.
+>     * Stellen Sie sicher, dass die `OpenOffice_PATH`-Variable global festgelegt ist (z. B. mithilfe von `/etc/profile` oder der systemspezifischen Entsprechung), damit sie für alle Benutzer bei der Anmeldung verfügbar ist.
 
 ### (Nur für IBM® WebSphere®) Konfigurieren des IBM® SSL-Socket-Anbieters {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
