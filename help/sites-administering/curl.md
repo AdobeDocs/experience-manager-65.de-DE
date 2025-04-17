@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 12b370e3041ff179cd249f3d4e6ef584c4339909
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1061'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -362,13 +362,13 @@ curl -u <user>:<password> -X POST -F cmd="unlockPage" -F path="/content/path/to/
 curl -u <user>:<password> -F cmd=copyPage -F destParentPath=/path/to/destination/parent -F srcPath=/path/to/source/location http://localhost:4502/bin/wcmcommand
 ```
 
-### Durchführen eines flachen Rollouts {#shallow-rollout}
+### Durchführen eines einfachen Rollouts {#shallow-rollout}
 
-Bei Verwendung von AEM as a Cloud Service kann es Fälle geben, in denen Sie eine einzelne, bestimmte Seite bereitstellen müssen, ohne ihre Unterseiten weiterzugeben. Wenn der curl-Befehl zum Rollout von Seiten nicht korrekt konfiguriert ist, enthält er möglicherweise versehentlich Unterseiten. In diesem Abschnitt wird beschrieben, wie Sie den curl-Befehl anpassen, um einen flachen Rollout einer bestimmten Seite zu erzielen und zusätzliche Unterseiten auszuschließen.
+Bei Verwendung von AEM as a Cloud Service kann es Fälle geben, in denen der Rollout einer einzelnen, bestimmten Seite nötig ist, ohne ihre Unterseiten zu übertragen. Wenn der curl-Befehl zum Rollout von Seiten nicht korrekt konfiguriert ist, enthält er möglicherweise versehentlich Unterseiten. In diesem Abschnitt wird beschrieben, wie Sie den curl-Befehl anpassen, um einen einfachen Rollout einer bestimmten Seite zu erzielen und zusätzliche Unterseiten auszuschließen.
 
-Gehen Sie wie folgt vor, um einen flachen Rollout durchzuführen:
+Gehen Sie zum Durchführen eines einfachen Rollouts wie folgt vor:
 
-1. Ändern Sie den vorhandenen curl-Befehl, indem Sie den Parameter von `type=deep` in `type=page` ändern.
+1. Ändern Sie den vorhandenen curl-Befehl, indem Sie den Parameter von `type=deep` zu `type=page` ändern.
 1. Verwenden Sie die folgende Syntax für den curl-Befehl:
 
 ```shell
@@ -379,12 +379,12 @@ curl -H "Authorization: Bearer <token>" "https://<instance-url>/bin/asynccommand
    -d path="/content/<your-path>"
 ```
 
-Überprüfen Sie außerdem Folgendes:
+Beachten Sie außerdem Folgendes:
 
-1. Ersetzen Sie `<token>` durch Ihr tatsächliches Autorisierungs-Token und `<instance-url>` Sie durch Ihre spezifische Instanz-URL.
+1. Ersetzen Sie `<token>` durch Ihr tatsächliches Autorisierungs-Token und `<instance-url>` durch Ihre spezifische Instanz-URL.
 1. Ersetzen Sie `/content/<your-path>` durch den Pfad der spezifischen Seite, für die Sie einen Rollout durchführen möchten.
 
-Durch Festlegen von `type=page` zielt der Befehl nur auf die angegebene Seite ab, wobei alle Unterseiten ausgeschlossen sind. Auf diese Weise ermöglicht diese Konfiguration eine präzise Kontrolle über die Inhaltsbereitstellung und stellt sicher, dass nur die beabsichtigten Änderungen über Umgebungen hinweg propagiert werden. Außerdem wird diese Anpassung daran angepasst, wie Rollouts über die AEM-Benutzeroberfläche bei der Auswahl einzelner Seiten verwaltet werden.
+Durch Festlegen von `type=page` zielt der Befehl nur auf die angegebene Seite ab, sodass alle Unterseiten ausgeschlossen werden. Auf diese Weise ermöglicht diese Konfiguration eine präzise Kontrolle über die Bereitstellung von Inhalten, wodurch sichergestellt wird, dass nur die beabsichtigten Änderungen umgebungsübergreifend übertragen werden. Außerdem entspricht diese Anpassung auch der Art und Weise, wie Rollouts über die grafische Benutzeroberfläche von AEM bei der Auswahl einzelner Seiten verwaltet werden.
 
 ### Workflows {#workflows}
 
