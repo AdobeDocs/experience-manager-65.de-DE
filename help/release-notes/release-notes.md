@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 source-git-commit: 461ec6a48bc41d46338c2c0162869525e49de97f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6138'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -595,7 +595,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 ### Bekannte Probleme bei AEM Forms {#known-issues-aem-forms-6522}
 
-* Wenn die Konvertierung von HTML nach PDF auf einem SUSE® Linux®-Server (ab SLES 15 SP6) mit dem folgenden Fehler fehlschlägt:
+* Die Konvertierung von HTML in PDF auf dem SUSE® Linux®-Server (SLES 15 SP6 oder höher) schlägt mit folgendem Fehler fehl:
 
   ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
 Legen Sie dann die folgende Umgebungsvariable fest und starten Sie den Server neu:
