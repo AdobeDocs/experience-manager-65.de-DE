@@ -5,10 +5,10 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: d2e2f330dadb7c327324e53a17e8398ef3a473a9
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 100%
+source-wordcount: '1567'
+ht-degree: 95%
 
 ---
 
@@ -21,6 +21,13 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
    * zum Rückgängigmachen einer Änderung an einer Seite
 * Vergleichen der aktuellen Version einer Seite mit einer früheren Version:
    * zum Hervorheben der Unterschiede im Text und in Bildern
+
+>[!NOTE]
+>
+>Im AEM-Repository wird nur der Inhalt versioniert. Dynamische Ressourcen wie Code, CSS und JavaScript werden nicht versioniert.
+>
+>* Beim Anzeigen von Versionen wird der Inhalt mit dem aktuellen Code, CSS und JavaScript des Repositorys angezeigt.
+>* Beim Wiederherstellen von Versionen wird nur der Inhalt wiederhergestellt und der aktuelle Code, CSS und JavaScript des Repositorys werden darauf angewendet.
 
 ## Erstellen einer neuen Version {#creating-a-new-version}
 
@@ -196,7 +203,7 @@ Timewarp ist eine Funktion, die den *Veröffentlichungsstatus* einer Seite zu ei
 
 >[!TIP]
 >
->[Timewarp kann auch mit Launches verwendet werden, um eine Vorschau der Zukunft anzuzeigen](/help/sites-authoring/launches.md), wenn AEM 6.5.10.0 oder höher ausgeführt wird.
+>[Timewarp kann auch mit Launches verwendet werden, um eine Vorschau der Zukunft anzuzeigen](/help/sites-authoring/launches.md) wenn AEM 6.5.10.0 oder höher ausgeführt wird.
 
 Die Inhaltserstellung ist ein fortlaufender und kollaborativer Prozess. Der Zweck von Timewarp besteht darin, Autorinnen und Autoren zu ermöglichen, die veröffentlichte Website im Laufe der Zeit zu verfolgen, um zu verstehen, wie sich der Inhalt verändert hat. Diese Funktion verwendet die Seitenversionen, um den Zustand der Veröffentlichungsumgebung zu bestimmen.
 
