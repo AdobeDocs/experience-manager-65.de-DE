@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: 8009e4cf7da17afbcfae7f90009157d32ee261fa
+source-git-commit: 1b551a4f8c05c14e40db1e70147542326cb82b80
 workflow-type: tm+mt
-source-wordcount: '7494'
+source-wordcount: '7520'
 ht-degree: 95%
 
 ---
@@ -78,7 +78,7 @@ ht-degree: 95%
    + [Einstellung der JWT-Anmeldedaten in Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [Einrichten von IMS-Integrationen für AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Sites {#sites}
-   + Erstellung {#authoring}
+   + Authoring {#authoring}
       + Wesentliche Aufgaben, Tools und Konzepte für das Authoring in AEM {#essentials}
          + [Erste Schritte für Autoren](/help/sites-authoring/first-steps.md)
          + [Bearbeiten von Seiten](/help/sites-authoring/page-authoring.md)
@@ -90,7 +90,7 @@ ht-degree: 95%
          + [Ihr Posteingang](/help/sites-authoring/inbox.md)
          + [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
          + [Auswahl der Benutzeroberfläche](/help/sites-authoring/select-ui.md)
-      + Erstellung {#authoring}
+      + Authoring {#authoring}
          + [Autorenumgebung und Tools](/help/sites-authoring/author-environment-tools.md)
          + [Anmerkungen beim Bearbeiten einer Seite](/help/sites-authoring/annotations.md)
          + [Erstellen und Organisieren von Seiten](/help/sites-authoring/managing-pages.md)
@@ -282,7 +282,7 @@ ht-degree: 95%
          + [Suchen](/help/sites-classic-ui-authoring/author-env-search.md)
          + [Ihr Posteingang](/help/sites-classic-ui-authoring/author-env-inbox.md)
          + [Tastaturbefehle für Konsolen](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)
-      + Erstellung {#authoring}
+      + Authoring {#authoring}
          + [Bearbeiten von Seiten (Authoring)](/help/sites-classic-ui-authoring/classic-page-author.md)
          + [Bearbeiten: Umgebung und Tools](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md)
          + [Erstellen und Organisieren von Seiten](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md)
@@ -1213,6 +1213,9 @@ ht-degree: 95%
       + [Der PaperCapture-Dienst kann OCRs auf PDF nicht ausführen](/help/forms/using/papercapture-service-resolution.md)
       + [Beheben von Spring Framework-Schwachstellen für AEM Forms on JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
       + [Beheben von Log4j2-Sicherheitslücken in Experience Manager Forms](/help/forms/using/aem-forms-vulnerability-cve.md)
+      + [Probleme für XFA-basierte PDF forms und richtliniengeschützte Dokumente anzeigen](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
+      + [Öffnen von XFA-basierten PDF forms in Firefox und Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
+      + [Schwachstelle von XML External Entity (XE) in BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)
       + [Fehler bei der EAR-Bereitstellung auf JEE-WebLogic-Server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
    + Alte Dokumentation {#legacy-documentation}
       + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](/help/forms/developing/building-xml.md)
@@ -1230,13 +1233,13 @@ ht-degree: 95%
       + [Drittanbieterlösung für den Handel](/help/commerce/cif/integrating/third-party.md)
    + AEM-Storefront {#storefront}
       + [Erste Schritte](/help/commerce/cif/getting-started.md)
-      + Erstellung {#authoring}
+      + Authoring {#authoring}
          + [Commerce-Erlebnisse](/help/commerce/cif/authoring/authoring-commerce-experiences.md)
          + [Produkt-Cockpit](/help/commerce/cif/authoring/product-cockpit.md)
          + [Anreicherung von Produktdaten mit zugehörigen Inhalten](/help/commerce/cif/authoring/enrich-product-associated-content.md)
          + [Produktempfehlungen](/help/commerce/cif/authoring/product-recommendations.md)
       + Verwalten {#administering}
-         + [Multi-Store-Setup](/help/commerce/cif/configuring/multi-store-setup.md)
+         + [Multi-Store-Einrichtung](/help/commerce/cif/configuring/multi-store-setup.md)
          + [Verwendung mehrerer Vorlagen](/help/commerce/cif/configuring/multi-template-usage.md)
          + [Konfigurieren von URLs für SEO](/help/commerce/cif/configuring/advanced-url-configuration.md)
          + [Zwischenspeicheroptionen](/help/commerce/cif/configuring/caching.md)
@@ -1398,7 +1401,7 @@ ht-degree: 95%
                + [So legen Sie alles zusammen](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/put-it-all-together.html?lang=de)
                + [Live-Schalten Ihres Headless-Programms](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/go-live.html?lang=de)
                + [Optional – Erstellen von Single Page Applications (SPAs) mit AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/create-spa.html?lang=de)
-            + Headless-Inhaltsarchitekten-Journey {#architect}
+            + Tour für Architektinnen und Architekten von Headless-Inhalten {#architect}
                + [Überblick über die AEM Headless-Inhaltsarchitekten-Tour](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/overview.html?lang=de)
                + [Inhaltsmodellierung für Headless mit AEM – Einführung](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/introduction.html?lang=de)
                + [Lernen Sie die Grundlagen der Inhaltsmodellierung für Headless mit AEM kennen](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/basics.html?lang=de)
