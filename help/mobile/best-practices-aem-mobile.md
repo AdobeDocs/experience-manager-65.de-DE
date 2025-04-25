@@ -28,8 +28,8 @@ Das Erstellen einer AEM Mobile On-demand Services-App unterscheidet sich vom Ers
 >
 >Ausführliche Informationen zu Plug-ins finden Sie in den folgenden Ressourcen:
 >
->* [Verwenden von Cordova-Plug-ins in AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
->* [Verwenden von AEM Mobile-spezifischen Cordova-fähigen Plug-ins](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
+>* [Verwenden von Cordova-Plug-ins in AEM Mobile](https://helpx.adobe.com/de/digital-publishing-solution/help/cordova-api.html)
+>* [Verwenden von AEM Mobile-spezifischen Cordova-fähigen Plug-ins](https://helpx.adobe.com/de/digital-publishing-solution/help/app-runtime-api.html)
 >
 
 * Vorlagen, die Plug-in-Funktionen verwenden, sollten so geschrieben werden, dass sie weiterhin im Browser autorisiert werden können, ohne dass die Plug-in-Brücke vorhanden ist.

@@ -55,7 +55,7 @@ Bei den in diesem Dokument beschriebenen Schritten wird vorausgesetzt, dass Sie 
 
 Bearbeitbare Vorlagen werden von Vorlagenautoren in erster Linie mit der [Vorlagenkonsole und dem Vorlagen-Editor](/help/sites-authoring/templates.md) erstellt. In diesem Abschnitt finden Sie einen Überblick über diesen Prozess, der anschließend aus technischer Perspektive beleuchtet wird.
 
-Informationen zur Verwendung bearbeitbarer Vorlagen in einem AEM-Projekt finden Sie unter [Erstellen eines AEM-Projekts mit Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
+Informationen zur Verwendung bearbeitbarer Vorlagen in einem AEM-Projekt finden Sie unter [Erstellen eines AEM-Projekts mit Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=de).
 
 Gehen Sie zum Erstellen einer bearbeitbaren Vorlage wie folgt vor:
 

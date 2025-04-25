@@ -24,7 +24,7 @@ Sobald Sie mit Content-Management-Aktionen für Artikel, Banner und Sammlungen v
 
 >[!NOTE]
 >
->Weitere Informationen über Entwurfsüberlegungen für AEM Mobile-Apps finden Sie unter [Entwurfsüberlegungen für AEM Mobile-Apps](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in der Online-Hilfe.
+>Weitere Informationen über Entwurfsüberlegungen für AEM Mobile-Apps finden Sie unter [Entwurfsüberlegungen für AEM Mobile-Apps](https://helpx.adobe.com/de/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in der Online-Hilfe.
 
 ## Veröffentlichen/Rückgängigmachen der Veröffentlichung von Inhalten {#publishing-unpublishing-the-content}
 

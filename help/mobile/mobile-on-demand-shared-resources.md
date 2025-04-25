@@ -24,7 +24,7 @@ Content-Management-Aktionen sind die Bausteine, mit denen Inhalte in einer Anwen
 
 >[!NOTE]
 >
->Weitere Informationen über Entwurfsüberlegungen für AEM Mobile-Apps finden Sie unter [Entwurfsüberlegungen für AEM Mobile-Apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in der Online-Hilfe.
+>Weitere Informationen über Entwurfsüberlegungen für AEM Mobile-Apps finden Sie unter [Entwurfsüberlegungen für AEM Mobile-Apps](https://helpx.adobe.com/de/digital-publishing-solution/help/design-app.html) in der Online-Hilfe.
 
 >[!CAUTION]
 >

@@ -37,7 +37,7 @@ Siehe auch [Konfigurieren von Dynamic Media – Scene7-Modus](/help/assets/conf
 
 1. Navigieren Sie in Ihrer Experience Manager-Instanz zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]** und wählen Sie **[!UICONTROL Benutzer erstellen]** aus. Dieser Dienstbenutzer benötigt *Lese-/Schreibberechtigungen* für `/content/dam.`
 1. Geben Sie in den Feldern **[!UICONTROL ID]** und **[!UICONTROL Kennwort]** einen Benutzernamen und ein Kennwort ein, z. B. **FTP-Benutzer**. Dieser Name wird in der Zeitleiste als der Benutzer angezeigt, der das Asset erstellt hat. Wenn ein Asset über FTP hochgeladen wird, gilt es als erstellt, sobald es auf den FTP-Server hochgeladen und in Experience Manager gepusht wurde.
-1. Kontaktieren Sie den [Kunden-Support von Adobe für Experience Manager](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de#support), um den Download von Feature Pack 18912 anzufordern. Sie benötigen möglicherweise die folgenden Informationen, wenn Sie sich an den Support wenden:
+1. Kontaktieren Sie den [Kunden-Support von Adobe für Experience Manager](https://experienceleague.adobe.com/de?support-solution=General&amp;lang=de#support), um den Download von Feature Pack 18912 anzufordern. Sie benötigen möglicherweise die folgenden Informationen, wenn Sie sich an den Support wenden:
 
    * Server-IP-Adresse für die Autoreninstanz einschließlich der Port-Nummer (standardmäßig 4502).
    * Benutzername und Kennwort des Experience Manager-Service-Benutzers aus dem vorherigen Schritt.

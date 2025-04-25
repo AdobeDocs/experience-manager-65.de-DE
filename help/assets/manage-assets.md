@@ -170,7 +170,7 @@ Dynamic Media ermöglicht das stapelweise Hochladen von Assets über FTP-Server.
 
 >[!NOTE]
 >
->Um Assets über FTP im Modus „Dynamic Media – Scene7“ hochzuladen, installieren Sie Feature Pack 18912 auf den [!DNL Experience Manager]-Autoreninstanzen. Wenden Sie sich an den [Adobe-Support](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de#support), um auf FP-18912 zugreifen zu können, und schließen Sie das Setup Ihres FTP-Kontos ab. Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für die Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md).
+>Um Assets über FTP im Modus „Dynamic Media – Scene7“ hochzuladen, installieren Sie Feature Pack 18912 auf den [!DNL Experience Manager]-Autoreninstanzen. Wenden Sie sich an den [Adobe-Support](https://experienceleague.adobe.com/de?support-solution=General&amp;lang=de#support), um auf FP-18912 zugreifen zu können, und schließen Sie das Setup Ihres FTP-Kontos ab. Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für die Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md).
 >
 >Die in [!DNL Experience Manager] angegebenen Upload-Einstellungen werden ignoriert, wenn Sie FTP zum Hochladen von Assets verwenden. Stattdessen werden Dateiverarbeitungsregeln, wie in Dynamic Media Classic definiert, verwendet.    
 

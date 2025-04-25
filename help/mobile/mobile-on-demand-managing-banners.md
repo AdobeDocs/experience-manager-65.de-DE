@@ -30,9 +30,9 @@ Banner stehen für normalerweise für grafische Werbelinks.
 >
 >In den folgenden Ressourcen in der Online-Hilfe erfahren Sie mehr über die folgenden Themen in AEM Mobile-Programmen:
 >
->* [Überlegungen zum Design](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [Überlegungen zum Design](https://helpx.adobe.com/de/digital-publishing-solution/help/design-app.html)
 >
->* [Erstellen von Bannern](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
+>* [Erstellen von Bannern](https://helpx.adobe.com/de/digital-publishing-solution/help/creating-banners.html)
 >
 
 ## Erstellen eines Banners {#creating-a-banner}

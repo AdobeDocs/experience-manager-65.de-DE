@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Wenn Sie Adobe Experience Manager (AEM) nicht als Inhaltsverwaltungsquelle verwenden, finden Sie weitere Informationen in der [AEM Mobile On-demand Services-Hilfe](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Wenn Sie Adobe Experience Manager (AEM) nicht als Inhaltsverwaltungsquelle verwenden, finden Sie weitere Informationen in der [AEM Mobile On-demand Services-Hilfe](https://helpx.adobe.com/de/digital-publishing-solution/topics.html).
 
 AEM bietet mehrere Tools, mit denen Sie Ihre Inhalte in mobile Anwendungen integrieren können.
 
@@ -32,7 +32,7 @@ Die AEM Preflight-App kann als Testumgebung betrachtet werden, um die App und de
 
 >[!NOTE]
 >
->Ausführliche Informationen zur Preflight-App finden Sie unter [Verwenden der AEM Preflight-App](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html) in der AEM Mobile On-demand Services-Hilfe.
+>Ausführliche Informationen zur Preflight-App finden Sie unter [Verwenden der AEM Preflight-App](https://helpx.adobe.com/de/digital-publishing-solution/help/preflight-app.html) in der AEM Mobile On-demand Services-Hilfe.
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
 
@@ -104,4 +104,4 @@ Informationen zu den ersten Schritten mit den Rollen und Zuständigkeiten eines 
 
 >[!NOTE]
 >
->Ein AEM-Autor ist auch für die Einrichtung von Berechtigungen, die Erstellung von Karten und Layouts sowie das Senden von Push-Benachrichtigungen verantwortlich. Weitere Informationen zu den Methoden zum Erstellen von Inhalten, Verwalten von Artikeln und Sammlungen, Erstellen von Bannern, Karten und Layouts in AEM Mobile finden Sie unter [AEM Mobile On-Demand-Portal](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2).
+>Ein AEM-Autor ist auch für die Einrichtung von Berechtigungen, die Erstellung von Karten und Layouts sowie das Senden von Push-Benachrichtigungen verantwortlich. Weitere Informationen zu den Methoden zum Erstellen von Inhalten, Verwalten von Artikeln und Sammlungen, Erstellen von Bannern, Karten und Layouts in AEM Mobile finden Sie unter [AEM Mobile On-Demand-Portal](https://helpx.adobe.com/de/digital-publishing-solution/topics.html#dynamicpod_reference_2).

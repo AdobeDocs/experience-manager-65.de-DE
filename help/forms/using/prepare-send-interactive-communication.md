@@ -180,7 +180,7 @@ Adobe empfiehlt, diese Anweisungen nacheinander auszuführen, um eine interaktiv
 
 Die Funktion „Als Entwurf speichern“ ist standardmäßig nicht aktiviert. Führen Sie zum Aktivieren der Funktion folgende Schritte durch:
 
-1. Implementieren Sie das [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) Service Provider Interface (SPI).
+1. Implementieren Sie das [ccrDocumentInstance](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) Service Provider Interface (SPI).
 
    Mit dem SPI können Sie die Entwurfsversion der interaktiven Kommunikation mit einer Entwurfs-ID als eindeutiger Kennung in der Datenbank speichern. Bei diesen Anweisungen wird davon ausgegangen, dass Sie über Vorkenntnisse zum Erstellen eines OSGi-Bundles mithilfe eines Maven-Projekts verfügen.
 

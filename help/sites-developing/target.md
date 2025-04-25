@@ -234,7 +234,7 @@ Um beispielsweise das Targeting für die Titelkomponenten der Seiten der Geometr
 >
 >Wenn Sie DTM nicht verwenden, senden Sie Bestellungsbestätigungen an Adobe Target.
 
-Um die Leistung Ihrer Website zu verfolgen, senden Sie Kaufinformationen von Ihrer Bestellungsbestätigungsseite an Adobe Target. (Siehe [Erstellen einer orderConfirmPage-mbox](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=de) und [Mbox für Bestellungsbestätigungen – Benutzerdefinierte Parameter hinzufügen.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)) Adobe Target erkennt mBox-Daten als Bestellungsbestätigungsdaten, wenn Ihr mBox-Name `orderConfirmPage` lautet, und verwendet die folgenden spezifischen Parameternamen:
+Um die Leistung Ihrer Website zu verfolgen, senden Sie Kaufinformationen von Ihrer Bestellungsbestätigungsseite an Adobe Target. (Siehe [Erstellen einer orderConfirmPage-mbox](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=de) und [Mbox für Bestellungsbestätigungen – Benutzerdefinierte Parameter hinzufügen.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779?profile.language=de)) Adobe Target erkennt mBox-Daten als Bestellungsbestätigungsdaten, wenn Ihr mBox-Name `orderConfirmPage` lautet, und verwendet die folgenden spezifischen Parameternamen:
 
 * productPurchasedId: Eine Liste der IDs, die die gekauften Produkte identifizieren.
 * orderId: Die ID der Bestellung.

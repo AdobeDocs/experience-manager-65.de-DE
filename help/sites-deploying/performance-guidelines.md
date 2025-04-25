@@ -304,7 +304,7 @@ In AEM können Binärdaten unabhängig von Inhaltsknoten gespeichert werden. Der
 
 >[!CAUTION]
 >
->Der RDB-Mikrokernel wird nur eingeschränkt unterstützt. Wenden Sie sich an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support), bevor Sie diese Art von Mikrokernel verwenden.
+>Der RDB-Mikrokernel wird nur eingeschränkt unterstützt. Wenden Sie sich an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?lang=de&amp;support-solution=General&amp;support-tab=home#support), bevor Sie diese Art von Mikrokernel verwenden.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 

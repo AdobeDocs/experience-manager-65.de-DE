@@ -23,7 +23,7 @@ Die Vergleichsfunktion in den Kernkomponenten für adaptive Forms hilft Formular
 
 ## Voraussetzung {#prerequisite-versioning}
 
-Um die Vergleichsfunktion in einem auf Kernkomponenten basierenden adaptiven Formular zu verwenden, stellen Sie sicher, dass [Kernkomponenten für adaptive Formulare](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) in Ihrer AEM 6.5 Forms-Umgebung aktiviert ist.
+Um die Vergleichsfunktion in einem auf Kernkomponenten basierenden adaptiven Formular zu verwenden, stellen Sie sicher, dass [Kernkomponenten für adaptive Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) in Ihrer AEM 6.5 Forms-Umgebung aktiviert ist.
 
 ## Vergleichen verschiedener adaptiver Formulare {#compare-af-65}
 

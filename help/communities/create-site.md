@@ -119,7 +119,7 @@ Zum Beispiel:
 
 >[!NOTE]
 >
->[Tunneldienst](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) Ermöglicht die Auswahl von Mitgliedern und Gruppen, die nur in der Veröffentlichungsumgebung vorhanden sind.
+>[Tunneldienst](https://helpx.adobe.com/de/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) Ermöglicht die Auswahl von Mitgliedern und Gruppen, die nur in der Veröffentlichungsumgebung vorhanden sind.
 
 ![Benutzerrollen auf neuer Site](assets/site-admin-1.png)
 

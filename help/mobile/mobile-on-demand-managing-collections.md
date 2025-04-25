@@ -30,9 +30,9 @@ Sammlungen stellen einen klar definierten *Bucket) dar* der mit Inhalten wie Art
 >
 >In den folgenden Ressourcen in der Online-Hilfe erfahren Sie mehr über die folgenden Themen in AEM Mobile-Programmen:
 >
->* [Überlegungen zum Design](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [Überlegungen zum Design](https://helpx.adobe.com/de/digital-publishing-solution/help/design-app.html)
 >
->* [Verwalten von Sammlungen](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
+>* [Verwalten von Sammlungen](https://helpx.adobe.com/de/digital-publishing-solution/help/creating-collections.html)
 >
 
 ## Erstellen von Sammlungen {#creating-a-collection}

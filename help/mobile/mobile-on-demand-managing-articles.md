@@ -30,9 +30,9 @@ Artikel stellen den Text zusammen mit der Kunst dar, um Informationen zu vermitt
 >
 >In den folgenden Ressourcen in der Online-Hilfe erfahren Sie mehr über die folgenden Themen in AEM Mobile-Programmen:
 >
->* [Überlegungen zum Design](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [Überlegungen zum Design](https://helpx.adobe.com/de/digital-publishing-solution/help/design-app.html)
 >
->* [Artikel verwalten](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
+>* [Artikel verwalten](https://helpx.adobe.com/de/digital-publishing-solution/help/creating-articles.html)
 >
 
 ## Erstellen eines Artikels {#creating-an-article}

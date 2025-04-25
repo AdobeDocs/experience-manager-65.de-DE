@@ -659,6 +659,6 @@ Adobe Analytics stellt APIs bereit, mit denen Sie auf Benutzerdaten zugreifen, d
 
 ## Ressourcen {#resources}
 
-* Adobe Experience Cloud: [Analytics-Hilfe und -Referenz](https://experienceleague.adobe.com/docs/analytics.html)
+* Adobe Experience Cloud: [Analytics-Hilfe und -Referenz](https://experienceleague.adobe.com/docs/analytics.html?lang=de)
 * AEM: [Integration mit Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * AEM: [Analytics mit externen Anbietern](/help/sites-administering/external-providers.md)
