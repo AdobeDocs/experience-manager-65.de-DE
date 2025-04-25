@@ -13,7 +13,7 @@ ht-degree: 87%
 
 [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) enthalten einen vorkonfigurierten [Warenkorb](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart), der einen Warenkorb und ein Kassenformular rendert. Der Warenkorb setzt ein [AEM Dispatcher mit GraphQL](https://github.com/adobe/aem-core-cif-components/blob/master/dispatcher)-Routing-Setup voraus. Im folgenden Video wird eine lokale Konfiguration und Einrichtung mit einem Docker-Image beschrieben.
 
->[!VIDEO](https://video.tv.adobe.com/v/29656/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/36373/?quality=12&captions=ger)
 
 Weitere Informationen zu diesem Thema finden Sie in den folgenden Ressourcen:
 

@@ -659,7 +659,7 @@ Das **Systemübersicht-Dashboard** bietet einen allgemeinen Überblick über die
 
 >[!NOTE]
 >
->Eine Einführung in das Systemübersicht-Dashboard erhalten Sie auch [in diesem Video](https://video.tv.adobe.com/v/21340).
+>Eine Einführung in das Systemübersicht-Dashboard erhalten Sie auch [in diesem Video](https://video.tv.adobe.com/v/40393?captions=ger).
 
 ### Zugriff {#how-to-access}
 

@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Adobe Commerce verfügt über eine Empfehlungs-Engine mit Adobe Sensei. Erfahren Sie, wie Sie diese Produktempfehlungen dynamisch in eine Adobe Experience Manager (AEM)-Storefront einfügen.
 
->[!VIDEO](https://video.tv.adobe.com/v/340130/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343071/?learn=on&captions=ger)

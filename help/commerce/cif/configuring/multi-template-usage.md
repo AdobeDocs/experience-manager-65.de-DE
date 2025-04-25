@@ -20,7 +20,7 @@ ht-degree: 100%
 
 [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) bieten Autoren von Inhalten die Möglichkeit, zusätzliche Kategorie- und Produktseiten zu erstellen. Diese Seiten können mit zusätzlichen Marketing-Inhalten angereichert und so konfiguriert werden, dass sie auf bestimmte Kategorien und Produkte ausgerichtet sind. Das folgende Video erläutert die Einrichtung dieser Funktion.
 
->[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/32784/?quality=12&captions=ger)
 
 Weitere Informationen zu diesem Thema finden Sie in der folgenden Ressource:
 
