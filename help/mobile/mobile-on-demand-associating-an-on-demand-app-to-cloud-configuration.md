@@ -34,7 +34,7 @@ Von dort aus wird die Veröffentlichung, Vorschau und Verwaltung von Inhalten m�
 
 Um Mobile On-Demand-Cloud Service zu konfigurieren, klicken Sie im Dashboard Ihrer Mobile App auf das oberste Zahnrad oben rechts **der Kachel** Verbindung verwalten“.
 
-Sie sollten mit dem App-Dashboard und den verfügbaren Kacheln vertraut sein. Weitere Informationen finden Sie unter {0](/help/mobile/mobile-apps-ondemand-application-dashboard.md) Dashboard der AEM Mobile-Anwendung .[
+Sie sollten mit dem App-Dashboard und den verfügbaren Kacheln vertraut sein. Weitere Informationen finden Sie unter &lbrace;0[&#128279;](/help/mobile/mobile-apps-ondemand-application-dashboard.md) Dashboard der AEM Mobile-Anwendung .
 
 ### Einrichten eines Links zur Cloud-Konfiguration {#setting-up-link-to-cloud-configuration}
 

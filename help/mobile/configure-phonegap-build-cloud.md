@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Mit der **PhoneGap Build-Kachel** im Anwendungs-Dashboard können Sie Ihre PhoneGap-Mobile-App über den Adobe PhoneGap Build-Service erstellen und verteilen.
 
-Alle unterstützten Plattformen, die in der Kachel **Programm verwalten** definiert sind, werden mit PhoneGap Build erstellt, wenn ein Remote-Build mit der Kachel **PhoneGap Build}** wird.
+Alle unterstützten Plattformen, die in der Kachel **Programm verwalten** definiert sind, werden mit PhoneGap Build erstellt, wenn ein Remote-Build mit der Kachel **PhoneGap Build&rbrace;** wird.
 
 Sie können einen Remote-Build per Push `https://build.phonegap.com` oder die Quelle herunterladen, um mit PhoneGap CLI unter `https://docs.phonegap.com/references/phonegap-cli/` lokal zu erstellen.
 
@@ -48,7 +48,7 @@ Gehen Sie wie folgt vor, um Cloud Services für Ihre App zu konfigurieren:
 
    ![chlimage_1-61](assets/chlimage_1-61.png)
 
-1. PhoneGap Build Wählen Sie **** Option auf dem Bildschirm **Cloud Service hinzufügen oder bearbeiten**.
+1. PhoneGap Build Wählen Sie **&#x200B;**&#x200B;Option auf dem Bildschirm **Cloud Service hinzufügen oder bearbeiten**.
 
    Klicken Sie auf **Weiter**.
 
@@ -97,7 +97,7 @@ phonegap run ios (or android, ...)
 >
 >Fügen Sie am Ende dieser Zeile —emulate hinzu, wenn Sie sie nicht auf dem verbundenen Gerät ausführen möchten.
 
-PhoneGap Build Nachdem Sie sich vergewissert haben, dass das oben Genannte funktioniert, verwenden Sie die Kachel **** zum **Herunterladen von Source**. Speichern und entpacken Sie die Datei auf Ihrem lokalen System. Sobald dies geschehen ist:
+PhoneGap Build Nachdem Sie sich vergewissert haben, dass das oben Genannte funktioniert, verwenden Sie die Kachel **&#x200B;**&#x200B;zum **Herunterladen von Source**. Speichern und entpacken Sie die Datei auf Ihrem lokalen System. Sobald dies geschehen ist:
 
 * Navigieren Sie zu dieser gespeicherten Datei (Ordner)
 * &#39;PhoneGap Run iOS&#39; (oder Android usw.) ausführen

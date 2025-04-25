@@ -182,9 +182,9 @@ Damit die E-Mail in das Repository importiert werden kann, muss ein Abruf-Import
 
 * **[!UICONTROL URL]**
 
-  *(Erforderlich)* Der Postausgangsserver. Zum Beispiel: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
+  *(Erforderlich)* Der Postausgangsserver. Zum Beispiel: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=**&#x200B;**`.
 
-* **[!UICONTROL In Pfad importieren]**&amp;ast;
+* **[!UICONTROL In Pfad importieren]**&ast;
 
   *(Erforderlich)* Auf `/content/usergenerated/mailFolder/postEmails` festgelegt
 Navigieren Sie zum Ordner `postEmails` und wählen Sie **OK** aus.

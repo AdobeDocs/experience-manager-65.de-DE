@@ -30,7 +30,7 @@ Die Details Ihrer App können im Dashboard oder AEM Mobile Control Center angeze
 >
 >AEM Mobile Das Dashboard besteht aus einer Reihe nützlicher Kacheln, die einen Überblick über den Inhalt, die Metadaten und den Verbindungsstatus der Mobile App bei Bedarf bieten.
 >
->Detaillierte Informationen finden Sie unter {0](/help/mobile/mobile-apps-ondemand-application-dashboard.md) Dashboard der AEM Mobile-Anwendung.[
+>Detaillierte Informationen finden Sie unter &lbrace;0[&#128279;](/help/mobile/mobile-apps-ondemand-application-dashboard.md) Dashboard der AEM Mobile-Anwendung.
 
 **So erstellen Sie eine On-Demand-App:**
 

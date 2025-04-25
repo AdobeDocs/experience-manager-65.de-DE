@@ -46,7 +46,7 @@ Verwendung von CRXDE Lite:
 
 ### Kopf- und Textskripte {#head-and-body-scripts}
 
-1. Navigieren Sie im Explorer **Fenster** CRXDE Lite} zu `/apps/an-scf-sandbox/components/playpage` und doppelklicken Sie auf die `playpage.jsp`, um sie im Bearbeitungsbereich zu öffnen.
+1. Navigieren Sie im Explorer **Fenster** CRXDE Lite&rbrace; zu `/apps/an-scf-sandbox/components/playpage` und doppelklicken Sie auf die `playpage.jsp`, um sie im Bearbeitungsbereich zu öffnen.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 

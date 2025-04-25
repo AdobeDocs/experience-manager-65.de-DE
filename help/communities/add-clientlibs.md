@@ -124,7 +124,7 @@ Die Include-Anweisung gehört in den `head` des `html`. Die **`foundation head.j
 
 **Kopieren Sie „headlibs.jsp“ und schließen Sie clientlibs:** ein
 
-1. Wählen Sie mithilfe von **** CRXDE Lite **`/libs/foundation/components/page/headlibs.jsp`**
+1. Wählen Sie mithilfe von **&#x200B;**&#x200B;CRXDE Lite **`/libs/foundation/components/page/headlibs.jsp`**
 
 1. Klicken Sie mit der rechten Maustaste und wählen **Kopieren** (oder wählen Sie Kopieren in der Symbolleiste)
 1. Klicken Sie auf **`/apps/an-scf-sandbox/components/playpage`**

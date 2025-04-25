@@ -28,7 +28,7 @@ Die Konsolen von AEM Communities, die in der Autorenumgebung über das globale N
 * Erstellen [benutzerdefinierte Abzeichen](badges.md)
 * Konfigurieren des [Standardspeichers für benutzergenerierten Inhalt](srp-config.md)
 
-Wenn [UGC-Speicher](working-with-srp.md) als gemeinsamer Speicher von Authoring- und Publish-Umgebungen konfiguriert ist, ](moderation.md) die [Moderationskonsole sowohl in Authoring- als auch in Publish-Umgebungen auf einer einzelnen Instanz von UGC.
+Wenn [UGC-Speicher](working-with-srp.md) als gemeinsamer Speicher von Authoring- und Publish-Umgebungen konfiguriert ist, [&#128279;](moderation.md) die Moderationskonsole sowohl in Authoring- als auch in Publish-Umgebungen auf einer einzelnen Instanz von UGC.
 
 In der Autorenumgebung sind die `Communities` Konsolen nach der Anmeldung mit Administratorrechten über die Konsolen Navigation und Tools verfügbar.
 

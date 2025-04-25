@@ -64,7 +64,7 @@ Nach der Anmeldung mit Administratorrechten gibt es verschiedene Möglichkeiten,
 
    ![CRXDE-Lite](assets/tools-crxde.png)
 
-2. Scrollen Sie auf der [Startseite der klassischen Benutzeroberfläche](http://localhost:4502/welcome.html) nach unten und klicken Sie ]**rechten Bedienfeld auf**[!UICONTROL  CRXDE Lite.
+2. Scrollen Sie auf der [Startseite der klassischen Benutzeroberfläche](http://localhost:4502/welcome.html) nach unten und klicken Sie **rechten Bedienfeld auf** CRXDE Lite.
 
    ![classic-ui-crxde](assets/classic-ui-crxde.png)
 

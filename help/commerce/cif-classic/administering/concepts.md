@@ -538,7 +538,7 @@ Mit Promotions können Sie in Verbindung mit Gutscheinen Szenarien umsetzen wie 
 
 Promotions werden nicht von Produktinformations-Managern verwaltet, sondern von Marketing-Managern:
 
-* Eine Promotion ist eine seitenbasierte Komponente, die mit der Websites-Konsole erstellt und bearbeitet wird. ``
+* Eine Promotion ist eine seitenbasierte Komponente, die mit der Websites-Konsole erstellt und bearbeitet wird. &grave;&grave;
 * Zu Promotions gehört:
 
    * Eine Priorität

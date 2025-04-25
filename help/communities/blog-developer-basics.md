@@ -108,7 +108,7 @@ Siehe :
 
 Wenn es sich bei der Bereitstellung um eine Veröffentlichungsfarm handelt, muss ein primärer Herausgeber identifiziert werden, der Artikel, die veröffentlicht werden sollen, abfragt.
 
-Weitere Informationen finden Sie unter {](/help/communities/deploy-communities.md#primary-publisher)}Primärer Herausgeber.[
+Weitere Informationen finden Sie unter {[&#128279;](/help/communities/deploy-communities.md#primary-publisher)}Primärer Herausgeber.
 
 ## Zulassen von Rich Media {#allowing-rich-media}
 

@@ -208,7 +208,7 @@ Die Installation von Experience Manager umfasst mehrere implementierte JobConsum
 | Auftragsthema | Service-PID | Beschreibung |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Mit Apache Sling installiert. Verarbeitet Aufträge, die vom OSGi-Event-Admin-Dienst aus Gründen der Abwärtskompatibilität generiert werden. |
-| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Ein Replikationsagent, der Auftrags-Payloads repliziert. |
+| com/day/cq/replication/job/&ast; | com.day.cq.replication.impl.AgentManagerImpl | Ein Replikationsagent, der Auftrags-Payloads repliziert. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -226,7 +226,7 @@ Verwenden Sie die Web-Konsole oder einen `sling:OsgiConfig`-Knoten, um die folge
 
 | Eigenschaftsname in der Web-Konsole | OSGi-ID | Beschreibung |
 |---|---|---|
-| Themen auf der Zulassungsliste | job.consumermanager.whitelist | Eine Liste von Themen, die der lokale JobManager-Dienst verarbeitet. Der Standardwert „&amp;ast;“ sorgt dafür, dass alle Themen an den registrierten TopicConsumer-Dienst gesendet werden. |
+| Themen auf der Zulassungsliste | job.consumermanager.whitelist | Eine Liste von Themen, die der lokale JobManager-Dienst verarbeitet. Der Standardwert „&ast;“ sorgt dafür, dass alle Themen an den registrierten TopicConsumer-Dienst gesendet werden. |
 | Themen auf der Blockierungsliste | job.consumermanager.blacklist | Eine Liste von Themen, die der lokale JobManager-Dienst nicht verarbeitet. |
 
 ## Erstellen von Replikationsagenten zum Auslagern {#creating-replication-agents-for-offloading}

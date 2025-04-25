@@ -130,7 +130,7 @@ Dieser Prozess startet einen Solr-HTTP-Server mit dem Standard-Port 8983. Sie k�
 >
 >Wenn die Solr-Konsole nicht verfügbar ist, überprüfen Sie die Protokolle unter &lt;solrinstall>/example/logs. Überprüfen Sie, ob SOLR versucht, eine Bindung an einen bestimmten Host-Namen herzustellen, der nicht aufgelöst werden kann (z. B. „user-macbook-pro„).
 >
-Wenn ja, aktualisieren Sie `etc/hosts` Datei mit einem neuen Eintrag für diesen Hostnamen (z. B. 127.0.0.1 user-macbook-pro), um Solr ordnungsgemäß zu starten.
+>Wenn ja, aktualisieren Sie `etc/hosts` Datei mit einem neuen Eintrag für diesen Hostnamen (z. B. 127.0.0.1 user-macbook-pro), um Solr ordnungsgemäß zu starten.
 
 ### SolrCloud {#solrcloud}
 

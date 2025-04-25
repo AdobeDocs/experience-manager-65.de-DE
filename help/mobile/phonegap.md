@@ -29,7 +29,7 @@ Um ein neues AEM Mobile-App-Erlebnis zu starten, müssen mehrere Personen mit un
 
 ## Authoring von PhoneGap-Anwendungen {#authoring-phonegap-applications}
 
-Ein ***AEM-* (oder *Marketer*)**kann die vordefinierten Vorlagen und Komponenten verwenden, um Seiten hinzuzufügen und zu bearbeiten. Sie können Komponenten per Drag-and-Drop aus dem DAM ziehen und Medien aller Art, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmenten), hinzufügen.
+Ein ***AEM-* (oder *Marketer*)**&#x200B;kann die vordefinierten Vorlagen und Komponenten verwenden, um Seiten hinzuzufügen und zu bearbeiten. Sie können Komponenten per Drag-and-Drop aus dem DAM ziehen und Medien aller Art, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmenten), hinzufügen.
 
 Sehen Sie sich die folgenden Ressourcen an:
 

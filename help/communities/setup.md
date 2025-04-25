@@ -97,7 +97,7 @@ Erstellen Sie einen Benutzer in *author*, dem die Rolle Community-Administrator 
    * **[!UICONTROL ID]**: sirius
    * **[!UICONTROL E-Mail-]**: sirius.nilson@mailinator.com
    * **[!UICONTROL Kennwort:]** password
-   * **[!UICONTROL Kennwort bestätigen&amp;ast;]**: Kennwort
+   * **[!UICONTROL Kennwort bestätigen&ast;]**: Kennwort
    * **[!UICONTROL Vorname]**: Sirius
    * **[!UICONTROL Nachname]**: Nilson
 

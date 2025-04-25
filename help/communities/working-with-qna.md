@@ -210,7 +210,7 @@ Auf der Registerkarte **Tag** sind die Tags, die angewendet werden können, wenn
 
 * **Vorschlagslimit**
 
-  Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht. Ein Wert von **-**1 bedeutet keine Beschränkungen. Der Standardwert ist 0.
+  Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht. Ein Wert von **-**&#x200B;1 bedeutet keine Beschränkungen. Der Standardwert ist 0.
 
 #### Registerkarte „Sortiereinstellungen“ {#sort-settings-tab}
 

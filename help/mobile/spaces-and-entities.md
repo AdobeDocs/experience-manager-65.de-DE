@@ -118,7 +118,7 @@ Mit **Funktion „Sprachkopie** können Autoren ihre primäre Sprachkopie kopier
    >
    >Sprachkopie-Knoten können nur als direkt untergeordnetes Element des Bereichs vorhanden sein.
 
-1. Wählen Sie **Inhaltspaket-Sprache&amp;ast;** aus und geben Sie den **Titel&amp;ast;** im Dialogfeld **Sprachkopie erstellen** ein.
+1. Wählen Sie **Inhaltspaket-Sprache&ast;** aus und geben Sie den **Titel&ast;** im Dialogfeld **Sprachkopie erstellen** ein.
 
    Klicken Sie auf **Erstellen**.
 

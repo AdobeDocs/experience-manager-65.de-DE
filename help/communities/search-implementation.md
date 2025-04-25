@@ -136,7 +136,7 @@ Im Folgenden finden Sie einige durchsuchbare Eigenschaften, die für verschieden
 
 ### Benennung benutzerdefinierter Eigenschaften {#naming-of-custom-properties}
 
-Wenn Sie benutzerdefinierte Eigenschaften hinzufügen, müssen diese Eigenschaften dem Eigenschaftsnamen ein Suffix hinzufügen, damit sie für Sortierungen und Suchen sichtbar sind[ ](#ugc-search-api) die mit der UGC *Such* API erstellt wurden.
+Wenn Sie benutzerdefinierte Eigenschaften hinzufügen, müssen diese Eigenschaften dem Eigenschaftsnamen ein Suffix hinzufügen, damit sie für Sortierungen und Suchen sichtbar sind[&#128279;](#ugc-search-api) die mit der UGC *Such* API erstellt wurden.
 
 Das Suffix bezieht sich auf Abfragesprachen, die ein Schema verwenden:
 

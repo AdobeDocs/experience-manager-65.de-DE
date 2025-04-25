@@ -192,7 +192,7 @@ Beachten Sie die GUID „24BA22ED-7D06-4330-B7EB-F6FC73251CA3“ im Pfad.
 
 Als PhoneGap-Entwickler befinden sich die Inhalte, um die Sie sich kümmern, unter dem Verzeichnis www . Verwenden Sie relative Pfade, um auf die App-Assets zuzugreifen.
 
-Um das Problem zu verschlimmern, verwendet Ihre PhoneGap-Anwendung das SPA-Muster (Single Page App), sodass der Basis-URI (ohne den Hash) sich nie ändert. Daher müssen alle Assets, Vorlagen oder Skripte, auf die Sie verweisen** relativ zu Ihrer Top-Level-Seite sein. **Die Seite der obersten Ebene initialisiert das Angular-Routing und die Controller aufgrund von `<name>.angular-app-module.js` und `<name>.angular-app-controllers.js`. Diese Seite sollte die Seite sein, die dem Stamm des Repositorys am nächsten ist und *keine* Sling:Redirect-Erweiterung ermöglicht.
+Um das Problem zu verschlimmern, verwendet Ihre PhoneGap-Anwendung das SPA-Muster (Single Page App), sodass der Basis-URI (ohne den Hash) sich nie ändert. Daher müssen alle Assets, Vorlagen oder Skripte, auf die Sie verweisen **&#x200B; relativ zu Ihrer Top-Level-Seite sein. &#x200B;** Die Seite der obersten Ebene initialisiert das Angular-Routing und die Controller aufgrund von `<name>.angular-app-module.js` und `<name>.angular-app-controllers.js`. Diese Seite sollte die Seite sein, die dem Stamm des Repositorys am nächsten ist und *keine* Sling:Redirect-Erweiterung ermöglicht.
 
 Für die Behandlung relativer Pfade stehen verschiedene Hilfsmethoden zur Verfügung:
 

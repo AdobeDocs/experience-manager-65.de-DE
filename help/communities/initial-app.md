@@ -70,9 +70,9 @@ In dieser Übung basieren alle Seiten auf einer einfachen Vorlage.
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   Klicken Sie **** Bedienfeld **[!UICONTROL Zugelassene übergeordnete Elemente]** auf „Weiter“.
+   Klicken Sie **&#x200B;**&#x200B;Bedienfeld **[!UICONTROL Zugelassene übergeordnete Elemente]** auf „Weiter“.
 
-   Klicken Sie **** Bedienfeld **[!UICONTROL Zugelassene untergeordnete Elemente]** auf „Weiter“.
+   Klicken Sie **&#x200B;**&#x200B;Bedienfeld **[!UICONTROL Zugelassene untergeordnete Elemente]** auf „Weiter“.
 
    Klicken Sie auf **[!UICONTROL OK]**.
 

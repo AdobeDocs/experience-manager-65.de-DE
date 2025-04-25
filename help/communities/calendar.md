@@ -92,7 +92,7 @@ Geben **auf der Registerkarte** Einstellungen“ an, ob Tags auf Kalendereinträ
 
 * **Max. Größe der angehängten Bilddatei**
 
-  Nur relevant, wenn Datei-Uploads zulassen aktiviert ist. Maximale Anzahl an Byte, die eine hochgeladene Bilddatei aufweisen darf. Der Standardwert lautet 2097152** ** (2 MB).
+  Nur relevant, wenn Datei-Uploads zulassen aktiviert ist. Maximale Anzahl an Byte, die eine hochgeladene Bilddatei aufweisen darf. Der Standardwert lautet 2097152 **&#x200B; ** (2 MB).
 
 * **Zulässige Cover-Bildtypen**
 
@@ -164,7 +164,7 @@ Auf der Registerkarte **Tag** sind die Tags, die angewendet werden können, wenn
 
 * **Vorschlagslimit**
 
-  Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht. Der Standardwert ist **-**1 (keine Beschränkungen).
+  Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht. Der Standardwert ist **-**&#x200B;1 (keine Beschränkungen).
 
 >[!NOTE]
 >

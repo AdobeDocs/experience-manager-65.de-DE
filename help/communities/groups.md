@@ -99,6 +99,7 @@ Der Standardstamm ist die übergeordnete Website, der Stamm kann jedoch an eine 
    * Überprüfen Sie den Namen, da er nach der Erstellung der Gruppe nicht einfach geändert werden kann.
    * Die Basis-URL wird unter dem `Community Group Name` angezeigt.
    * Hängen Sie für eine gültige URL &quot;.html“ an
+
      *zum*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * **Community-Gruppenvorlage** Menü

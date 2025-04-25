@@ -752,7 +752,7 @@ Nachdem Sie diese XML-Dateien zur Datei „adobe-appmondata.jar“ hinzugefügt 
 
 Wenn Sie Dateien an ein neues natives Programm weiterleiten möchten, müssen Sie eine XML-Skript-Datei für dieses Programm erstellen. Wenn Sie ändern möchten, wie der Generate PDF-Service mit einem bereits unterstützten nativen Programm interagiert, müssen Sie das Skript für dieses Programm ändern.
 
-Das Skript enthält Anweisungen, die durch die Fensterelemente des nativen Programms navigieren und jeweils spezifische Antworten für diese Elemente bereitstellen. Die Datei, die diese Informationen enthält, lautet `appmon.`[appname]`` `.script.`[locale]`.xml`. Ein Beispiel ist „appmon.notepad.script.de_DE.xml“.
+Das Skript enthält Anweisungen, die durch die Fensterelemente des nativen Programms navigieren und jeweils spezifische Antworten für diese Elemente bereitstellen. Die Datei, die diese Informationen enthält, lautet `appmon.`[appname]&grave;&grave; `.script.`[locale]`.xml`. Ein Beispiel ist „appmon.notepad.script.de_DE.xml“.
 
 #### Identifizieren der Schritte, die das Skript ausführen muss {#identifying-steps-the-script-must-execute}
 

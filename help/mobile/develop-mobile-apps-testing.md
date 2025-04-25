@@ -74,21 +74,21 @@ Weitere Informationen finden Sie unter [https://www.selenium.dev/](https://www.s
 * Ein Cloud-basierter Test-Service mit kontinuierlichen Integrations-Hooks und echten Gerätetests.
 * Dazu gehört ein App Crawler, der die Gerätekompatibilität überprüft, Protokolle analysiert, Ansichten durchläuft, Screenshots erstellt und die Leistung überwacht.
 
-https://testdroid.com/ Weitere Informationen finden Sie unter [](https://testdroid.com/).
+https://testdroid.com/ Weitere Informationen finden Sie unter [&#128279;](https://testdroid.com/).
 
 **Appium**
 
 * Appium ist ein beliebtes plattformübergreifendes Framework zur Automatisierung von Tests für Mobilgeräte.
 * Außerdem ist ein Inspektor mit Aufzeichnungsfunktionen enthalten, um Testfälle zu codieren.
 
-https://appium.io/ Weitere Informationen finden Sie unter [](https://appium.io/).
+https://appium.io/ Weitere Informationen finden Sie unter [&#128279;](https://appium.io/).
 
 **SauceLabs**
 
 * SauceLabs bietet Cloud-basierte Tests und lässt sich mit kontinuierlicher Integration integrieren.
 * Tests werden automatisch in der Cloud-Umgebung ausgeführt oder Sie können ein bestimmtes Gerät oder eine bestimmte Plattform starten und manuelle Tests durchführen, um Probleme zu debuggen.
 
-https://saucelabs.com/ Weitere Informationen finden Sie unter [](https://saucelabs.com/).
+https://saucelabs.com/ Weitere Informationen finden Sie unter [&#128279;](https://saucelabs.com/).
 
 <!-- **AppTestNow**
 
@@ -101,10 +101,10 @@ For more information, see [https://apptestnow.com/](https://apptestnow.com/). --
 
 * HockeyApp fällt unter die manuellen Tests, bei denen die Mobile App in einen persönlichen App-Store verschoben wird, wo Tester sie herunterladen und ausprobieren können.
 
-https://hockeyapp.net/features/ Weitere Informationen finden Sie unter [](https://hockeyapp.net/features/).
+https://hockeyapp.net/features/ Weitere Informationen finden Sie unter [&#128279;](https://hockeyapp.net/features/).
 
 **Jenkins**
 
 * Obwohl es sich nicht um ein Test-Tool handelt, ist Jenkins ein kontinuierliches Integrations-Framework, das das Rückgrat für automatisierte Tests bereitstellt. Es stehen zahlreiche Plug-ins von Drittanbietern zur Verfügung, um die Funktionalität zu erweitern. Beispielsweise stellt das SeleniumGrid-Plug-in eine Benutzeroberfläche bereit, die bei der Verwaltung des Selenium-Hub und der -Knoten hilft.
 
-https://www.jenkins.io/ Weitere Informationen finden Sie unter [](https://www.jenkins.io/) und [https://plugins.jenkins.io/](https://plugins.jenkins.io/).
+https://www.jenkins.io/ Weitere Informationen finden Sie unter [&#128279;](https://www.jenkins.io/) und [https://plugins.jenkins.io/](https://plugins.jenkins.io/).

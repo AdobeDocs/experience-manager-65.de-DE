@@ -219,7 +219,7 @@ Auf der Registerkarte **Tag** sind die Tags, die angewendet werden können, wenn
 
 * **Vorschlagslimit**
 
-  Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht. Der Standardwert ist **-**1 (keine Beschränkungen).
+  Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht. Der Standardwert ist **-**&#x200B;1 (keine Beschränkungen).
 
 #### Registerkarte „Übersetzung“ {#translation-tab}
 

@@ -93,7 +93,7 @@ In der Version sind drei Belohnungs-Abzeichen enthalten:
 * **Bronze**
   `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-  ![Award-BADGES](assets/awarded-badges.png)
+  ![[!BADGE Award-S]](assets/awarded-badges.png)
 
 >[!NOTE]
 >

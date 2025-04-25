@@ -335,7 +335,7 @@ Verwendet [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
   ![granite-crypto](assets/granite-crypto.png)
 
-* Nach einem Moment sollte **Dialogfeld**Erfolg“ angezeigt werden:
+* Nach einem Moment sollte **Dialogfeld**&#x200B;Erfolg“ angezeigt werden:
   `Operation completed successfully.`
 
 ### Apache HTTP-Server {#apache-http-server}

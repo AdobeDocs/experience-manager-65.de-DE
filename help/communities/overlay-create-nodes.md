@@ -24,7 +24,7 @@ ht-degree: 5%
 >
 >Der Inhalt des Ordners /libs wird niemals bearbeitet, da durch eine Neuinstallation oder Aktualisierung der Ordner /libs gelöscht oder ersetzt werden kann, während der Inhalt des Ordners /apps unberührt bleibt.
 
-CRXDE Lite Bei Verwendung von [](../../help/sites-developing/developing-with-crxde-lite.md) auf einer Autoreninstanz erstellen Sie zunächst einen Pfad im Ordner &quot;/apps“, der mit dem Pfad zu den überlagerten Komponenten im Ordner &quot;/libs“ identisch ist.
+CRXDE Lite Bei Verwendung von [&#128279;](../../help/sites-developing/developing-with-crxde-lite.md) auf einer Autoreninstanz erstellen Sie zunächst einen Pfad im Ordner &quot;/apps“, der mit dem Pfad zu den überlagerten Komponenten im Ordner &quot;/libs“ identisch ist.
 
 Der duplizierte Pfad lautet:
 

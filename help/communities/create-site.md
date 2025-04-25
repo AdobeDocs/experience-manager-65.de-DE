@@ -317,7 +317,7 @@ Nachdem die Site anfänglich erstellt wurde, können Autorinnen und Autoren das 
 
 Darüber hinaus können Admins das Symbol [Site bearbeiten](/help/communities/sites-console.md#modifying-site-properties) verwenden, um Eigenschaften der Site zu ändern, z. B. den Titel.
 
-Denken Sie nach jeder Änderung daran **die Website zu** und erneut **** Publish.
+Denken Sie nach jeder Änderung daran **die Website zu** und erneut **&#x200B;**&#x200B;Publish.
 
 >[!NOTE]
 >

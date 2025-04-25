@@ -346,7 +346,7 @@ Die nächsten Schritte sind für Facebook und Twitter gleich:
 
 ### AEM Communities Sites-Konsole {#aem-communities-sites-console}
 
-Nachdem ein Cloud-Service konfiguriert wurde, kann er für die entsprechende Einstellung zur Anmeldung bei einer Community-Site über das Unterbedienfeld [Benutzerverwaltung](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) „Einstellungen“ während der Erstellung einer Community[Site ](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) oder [](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties) aktiviert werden.
+Nachdem ein Cloud-Service konfiguriert wurde, kann er für die entsprechende Einstellung zur Anmeldung bei einer Community-Site über das Unterbedienfeld [Benutzerverwaltung](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) „Einstellungen“ während der Erstellung einer Community[Site ](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) oder [&#128279;](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties) aktiviert werden.
 
 1. Wählen Sie den Site-Konfigurationskontext aus, in dem Sie Ihre Konfigurationen für die Anmeldung über Social Media gespeichert haben.
 
@@ -391,7 +391,7 @@ Beispiel: http://localhost:4503/system/console/configMgr
 
 >[!CAUTION]
 >
->Achten Sie darauf, den Authentifizierungs-Handler nicht mit einer Facebook- oder Twitter-Instanz von *Adobe Granite OAuth Application and Provider} zu*.
+>Achten Sie darauf, den Authentifizierungs-Handler nicht mit einer Facebook- oder Twitter-Instanz von *Adobe Granite OAuth Application and Provider&rbrace; zu*.
 
 ![graniteOAuth1](assets/graniteoauth1.png)
 
@@ -474,17 +474,17 @@ Auf einer Autoreninstanz, mit Administratorrechten angemeldet:
 1. Ändern Sie die Eigenschaften des Knotens ntBaseLucene-oauth:
 
    * **[!UICONTROL indexPath]**: `/oak:index/ntBaseLucene-oauth`
-   * **[!UICONTROL name]**: `oauthid-123****`
+   * **[!UICONTROL name]**: `oauthid-123&#x200B;**&#x200B;**`
    * **[!UICONTROL neu indizieren]**: `true`
    * **[!UICONTROL reindexCount]**: `1`
 
 1. Unter dem Knoten /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties:
 
    * Löschen Sie alle untergeordneten Knoten außer cqTags.
-   * Umbenennen von cqTags in `oauthid-123****`
-   * Ändern der Eigenschaften von Knoten `oauthid-123****`
+   * Umbenennen von cqTags in `oauthid-123**&#x200B;**`
+   * Ändern der Eigenschaften von Knoten `oauthid-123**&#x200B;**`
 
-      * **[!UICONTROL name]**: `oauthid-123****`
+      * **[!UICONTROL name]**: `oauthid-123&#x200B;**&#x200B;**`
 
    * Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
