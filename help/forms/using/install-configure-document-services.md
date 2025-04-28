@@ -7,9 +7,9 @@ exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 source-git-commit: 5dbdce2d8e558e6bf26c6713fd44d58038d38152
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5724'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -232,7 +232,7 @@ Legen Sie Umgebungsvariablen für das 64-Bit-Java Development Kit, Anwendungen v
   <tr>
    <td><p><strong>OpenOffice</strong></p> </td>
    <td><p>OpenOffice_PATH</p> </td>
-   <td><p>C:\Program Dateien (x86)\OpenOffice 4</p> </td>
+   <td><p>C:\Programme (x86)\OpenOffice 4</p> </td>
   </tr>
  </tbody>
 </table>
@@ -247,9 +247,9 @@ Legen Sie Umgebungsvariablen für das 64-Bit-Java Development Kit, Anwendungen v
 >* Wenn Sie OpenOffice auf einer UNIX-basierten Plattform verwenden, führen Sie den folgenden Befehl aus, um die PATH-Variable festzulegen:\
 > `export OpenOffice_PATH=/opt/openoffice.org4`
 >* Führen Sie auf SUSE® Linux®-basierten Plattformen (SLES 15 SP6 oder höher) die folgenden Schritte aus, um OpenOffice einzurichten:
->     * Installieren Sie die neueste verfügbare 32-Bit-Variante von `OpenOffice 4.1.x` in einem Verzeichnis wie `/opt/openoffice4`.
->     * Legen Sie die `OpenOffice_PATH` Umgebungsvariable so fest, dass sie auf diesen Speicherort verweist. Beispiel: `OpenOffice_PATH=/opt/openoffice4`.
->     * Stellen Sie sicher, dass die `OpenOffice_PATH`-Variable global festgelegt ist (z. B. mithilfe von `/etc/profile` oder der systemspezifischen Entsprechung), damit sie für alle Benutzer bei der Anmeldung verfügbar ist.
+>     * Installieren Sie die neueste verfügbare 32-Bit-Variante von `OpenOffice 4.1.x` in einem Verzeichnis wie etwa `/opt/openoffice4`.
+>     * Legen Sie die Umgebungsvariable `OpenOffice_PATH` so fest, dass sie auf diesen Speicherort verweist. Beispiel: `OpenOffice_PATH=/opt/openoffice4`.
+>     * Stellen Sie sicher, dass die Variable `OpenOffice_PATH` global festgelegt ist (z. B. mithilfe von `/etc/profile` oder der systemspezifischen Entsprechung), damit sie für alle Benutzer bei der Anmeldung verfügbar ist.
 
 ### (Nur für IBM® WebSphere®) Konfigurieren des IBM® SSL-Socket-Anbieters {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
@@ -744,7 +744,7 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
       #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
       ```
 
- +++
++++
 
 +++ PDF Generator (PDFG)-Benutzer kann nicht hinzugefügt werden
 
@@ -785,7 +785,6 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
          adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=&lt;Absolute path to prov.xml>]
          
          ```
-
      
    * Serialisieren Sie das Paket nach Volumen (serialisieren Sie die vorhandene Installation mit der Datei „prov.xml“ und der neuen Seriennummer erneut): Führen Sie den folgenden Befehl aus dem PRTK-Installationsordner als Administrator aus, um die bereitgestellten Pakete auf Client-Computern zu serialisieren und zu aktivieren:
 
@@ -793,8 +792,8 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
          adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
          
          ```
-
-     * Verwenden Sie für Großinstallationen den [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html), um frühere Versionen von Reader und Acrobat zu entfernen. Passen Sie das Installationsprogramm an und stellen Sie es auf allen Computern in Ihrem Unternehmen bereit.
+     
+* Verwenden Sie für Großinstallationen den [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html), um frühere Versionen von Reader und Acrobat zu entfernen. Passen Sie das Installationsprogramm an und stellen Sie es auf allen Computern in Ihrem Unternehmen bereit.
 
 +++
 
