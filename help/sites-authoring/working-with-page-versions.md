@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 source-git-commit: d2e2f330dadb7c327324e53a17e8398ef3a473a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1567'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -203,7 +203,7 @@ Timewarp ist eine Funktion, die den *Veröffentlichungsstatus* einer Seite zu ei
 
 >[!TIP]
 >
->[Timewarp kann auch mit Launches verwendet werden, um eine Vorschau der Zukunft anzuzeigen](/help/sites-authoring/launches.md) wenn AEM 6.5.10.0 oder höher ausgeführt wird.
+>[Timewarp kann auch mit Launches verwendet werden, um eine Vorschau der Zukunft anzuzeigen](/help/sites-authoring/launches.md), wenn AEM 6.5.10.0 oder höher ausgeführt wird.
 
 Die Inhaltserstellung ist ein fortlaufender und kollaborativer Prozess. Der Zweck von Timewarp besteht darin, Autorinnen und Autoren zu ermöglichen, die veröffentlichte Website im Laufe der Zeit zu verfolgen, um zu verstehen, wie sich der Inhalt verändert hat. Diese Funktion verwendet die Seitenversionen, um den Zustand der Veröffentlichungsumgebung zu bestimmen.
 

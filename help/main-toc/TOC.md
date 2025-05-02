@@ -7,9 +7,9 @@ user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Mana
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
 source-git-commit: 1b551a4f8c05c14e40db1e70147542326cb82b80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7520'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1213,9 +1213,9 @@ ht-degree: 99%
       + [Der PaperCapture-Dienst kann OCRs auf PDF nicht ausführen](/help/forms/using/papercapture-service-resolution.md)
       + [Beheben von Spring Framework-Schwachstellen für AEM Forms on JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
       + [Behebung von Log4j2-Schwachstellen für Experience Manager Forms](/help/forms/using/aem-forms-vulnerability-cve.md)
-      + [Probleme für XFA-basierte PDF forms und richtliniengeschützte Dokumente anzeigen](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
-      + [Öffnen von XFA-basierten PDF forms in Firefox und Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
-      + [Schwachstelle von XML External Entity (XE) in BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)
+      + [Anzeigen von Problemen für XFA-basierte PDF-Formulare und richtliniengeschützte Dokumente](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
+      + [Öffnen von XFA-basierten PDF-Formularen in Firefox und Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
+      + [Schwachstelle von XML External Entity (XXE) in BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)
       + [Fehler bei der EAR-Bereitstellung auf JEE-WebLogic-Server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
    + Alte Dokumentation {#legacy-documentation}
       + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](/help/forms/developing/building-xml.md)
@@ -1245,7 +1245,7 @@ ht-degree: 99%
          + [Zwischenspeicheroptionen](/help/commerce/cif/configuring/caching.md)
          + [Benutzerdefinierte HTTP-Header](/help/commerce/cif/configuring/custom-http-headers.md)
          + [Einrichtung von Warenkorb und Dispatcher](/help/commerce/cif/configuring/shopping-cart-dispatcher.md)
-      + Entwickeln {#developing}
+      + Entwicklung {#developing}
          + [Entwickeln mit AEM](/help/commerce/cif/develop.md)
          + [Festlegen des Stils von CIF-Komponenten](/help/commerce/cif/customizing/style-cif-component.md)
          + [Anpassen von CIF-Komponenten](/help/commerce/cif/customizing/customize-cif-components.md)
@@ -1270,7 +1270,7 @@ ht-degree: 99%
          + [Konzepte](/help/commerce/cif-classic/administering/concepts.md)
          + [Verwalten von generischem E-Commerce](/help/commerce/cif-classic/administering/generic.md)
          + [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
-      + Entwickeln {#developing}
+      + Entwicklung {#developing}
          + [E-Commerce](/help/commerce/cif-classic/developing/ecommerce.md)
          + [Entwicklung (generisch)](/help/commerce/cif-classic/developing/generic.md)
          + [Entwicklung mit SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
@@ -1308,7 +1308,7 @@ ht-degree: 99%
       + [Veröffentlichen übersetzter Inhalte](/help/journey-headless/translation/publish-content.md)
    + [Was ist eine Dokumentations-Tour?](/help/journey-documentation/home.md)
 + Implementieren {#implementing}
-   + Entwickeln {#developing}
+   + Entwicklung {#developing}
       + Einführung für Entwicklerinnen und Entwickler {#introduction}
          + [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial](/help/sites-developing/getting-started.md)
          + [Grundlegende AEM-Konzepte](/help/sites-developing/the-basics.md)
