@@ -92,7 +92,7 @@ Geben **auf der Registerkarte** Einstellungen“ an, ob Tags auf Kalendereinträ
 
 * **Max. Größe der angehängten Bilddatei**
 
-  Nur relevant, wenn Datei-Uploads zulassen aktiviert ist. Maximale Anzahl an Byte, die eine hochgeladene Bilddatei aufweisen darf. Der Standardwert lautet 2097152 **&#x200B; ** (2 MB).
+  Nur relevant, wenn Datei-Uploads zulassen aktiviert ist. Maximale Anzahl an Byte, die eine hochgeladene Bilddatei aufweisen darf. Der Standardwert lautet 2097152 **&#x200B; &#x200B;** (2 MB).
 
 * **Zulässige Cover-Bildtypen**
 

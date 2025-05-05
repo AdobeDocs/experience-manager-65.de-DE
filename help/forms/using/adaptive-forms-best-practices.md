@@ -397,11 +397,11 @@ Eine der größten Herausforderungen für Unternehmen besteht im Umgang mit pers
 
 Der AEM Forms-Regeleditor bietet eine visuelle Benutzeroberfläche zum Erstellen und Verwalten von Regeln, wodurch sich der Programmieraufwand deutlich reduziert. Dies kann insbesondere für Business-Anwenderinnen und Business-Anwender oder Formularentwicklerinnen und Formularentwickler nützlich sein, die möglicherweise keine größeren Programmierkenntnisse besitzen, aber Geschäftsregeln in den Formularen definieren und verwalten müssen. Hier werden einige Anwendungsfälle besprochen, in denen der Regeleditor Folgendes ermöglicht:
 
-* <!-- Allows you --> Definieren von Geschäftsregeln für Ihre Formulare, ohne dass eine umfangreiche Programmierung erforderlich ist.
-* <!-- Use the Rule Editor when you need --> Implementieren von Bedingungslogik in Ihren Formularen. Dazu gehören das Ein- oder Ausblenden von Formularelementen, das Ändern von Feldwerten basierend auf bestimmten Bedingungen oder das dynamische Ändern des Verhaltens Ihrer Formulare.
-* <!--When you want --> Durchsetzen von Datenvalidierungsregeln bei Formularübermittlungen. Der Regeleditor kann hier zum Definieren von Validierungsbedingungen verwendet werden.
-* <!-- When you need --> Integrieren Ihrer Formulare in externe Datenquellen (Formulardatenmodell) oder Dienste. Der Regeleditor kann hier beim Definieren von Regeln zum Abrufen, Anzeigen oder Bearbeiten von Daten während Formularinteraktionen helfen.
-* <!-- If you want -->Erstellen dynamischer und interaktiver Formulare, die auf Benutzeraktionen reagieren. Mit dem Regeleditor können Sie hier Regeln definieren, die das Verhalten von Formularelementen in Echtzeit steuern.
+* &#x200B;<!-- Allows you --> Definieren von Geschäftsregeln für Ihre Formulare, ohne dass eine umfangreiche Programmierung erforderlich ist.
+* &#x200B;<!-- Use the Rule Editor when you need --> Implementieren von Bedingungslogik in Ihren Formularen. Dazu gehören das Ein- oder Ausblenden von Formularelementen, das Ändern von Feldwerten basierend auf bestimmten Bedingungen oder das dynamische Ändern des Verhaltens Ihrer Formulare.
+* &#x200B;<!--When you want --> Durchsetzen von Datenvalidierungsregeln bei Formularübermittlungen. Der Regeleditor kann hier zum Definieren von Validierungsbedingungen verwendet werden.
+* &#x200B;<!-- When you need --> Integrieren Ihrer Formulare in externe Datenquellen (Formulardatenmodell) oder Dienste. Der Regeleditor kann hier beim Definieren von Regeln zum Abrufen, Anzeigen oder Bearbeiten von Daten während Formularinteraktionen helfen.
+* &#x200B;<!-- If you want -->Erstellen dynamischer und interaktiver Formulare, die auf Benutzeraktionen reagieren. Mit dem Regeleditor können Sie hier Regeln definieren, die das Verhalten von Formularelementen in Echtzeit steuern.
 
 Der Regeleditor ist sowohl für Foundation-Komponenten als auch für Kernkomponenten von AEM Forms verfügbar.
 
