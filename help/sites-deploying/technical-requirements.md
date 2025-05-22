@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 6be26e991da6d53f2433991cb9e4919b46c494a8
+source-git-commit: cdd0e52c4f64080a76d67baf678a97e91ca7c711
 workflow-type: tm+mt
-source-wordcount: '3600'
-ht-degree: 100%
+source-wordcount: '3651'
+ht-degree: 98%
 
 ---
 
@@ -208,8 +208,8 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 | IBM® AIX® 7.2 | Z: Nicht unterstützt |
 
 1. Linux® Kernel 2.6, 3. x, 4. x, 5. x und 6. x umfasst Derivate der Red Hat-Verteilung, einschließlich Red Hat® Enterprise Linux®, CentOS, Oracle Linux und Amazon Linux®. Die Add-on-Funktionen von AEM Forms werden nur unter CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 und Red Hat® Enterprise Linux® 9 unterstützt.
-2. AEM Forms wird auf Ubuntu 20.04 LTS unterstützt.
-3. Die Linux®-Verteilung wird von Adobe Managed Services unterstützt.
+1. AEM Forms wird auf Ubuntu 20.04 LTS unterstützt.
+1. Die Linux®-Verteilung wird von Adobe Managed Services unterstützt.
 
    >[!NOTE]
    >
@@ -220,10 +220,13 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
    >* glibc-locale.x86_64 (2.17 oder später)
+   >* OpenSSL 3 (erforderlich am Standardspeicherort im Betriebssystem).
 
-4. Produktionsimplementierungen von Microsoft® Windows werden für Kundinnen und Kunden unterstützt, die ein Upgrade auf 6.5 durchführen, sowie für die Nutzung außerhalb der Produktion. Neue Bereitstellungen erfolgen auf Anfrage für AEM Sites und Assets.
-5. AEM Forms wird auf Microsoft Windows® Server ohne die Einschränkungen von Support-Level R unterstützt.
-6. AEM Forms unterstützt Microsoft® Windows Server 2016 nicht mehr.
+   *Für die OpenSSL 3-Installation: Die Bibliotheken libcrypto.so.3 und libssl.so.3 müssen im Standardbibliothekspfad verfügbar sein, der durch die Umgebungsvariable LD_LIBRARY_PATH dargestellt wird. Wenn sie an einem nicht standardmäßigen Speicherort installiert sind, stellen Sie sicher, dass dieser Pfad zu LD_LIBRARY_PATH hinzugefügt wird, bevor Sie den Server starten.*
+
+1. Produktionsimplementierungen von Microsoft® Windows werden für Kundinnen und Kunden unterstützt, die ein Upgrade auf 6.5 durchführen, sowie für die Nutzung außerhalb der Produktion. Neue Bereitstellungen erfolgen auf Anfrage für AEM Sites und Assets.
+1. AEM Forms wird auf Microsoft Windows® Server ohne die Einschränkungen von Support-Level R unterstützt.
+1. AEM Forms unterstützt Microsoft® Windows Server 2016 nicht mehr.
 
 >[!NOTE]
 >
