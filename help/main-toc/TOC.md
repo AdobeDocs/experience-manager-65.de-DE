@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: 1b551a4f8c05c14e40db1e70147542326cb82b80
-workflow-type: ht
-source-wordcount: '7520'
-ht-degree: 100%
+source-git-commit: 94bd50cffe65b495a19f29ce16c60203641e749c
+workflow-type: tm+mt
+source-wordcount: '7525'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 100%
 + Versionshinweise {#release-notes}
    + [Versionshinweise](/help/release-notes/release-notes.md)
    + Hinweise zu früheren Versionen {#service-pack}
+      + [6.5.22](/help/release-notes/previous/6-5-22.md)
       + [6.5.21](/help/release-notes/previous/6-5-21.md)
       + [6.5.20](/help/release-notes/previous/6-5-20.md)
       + [6.5.19](/help/release-notes/previous/6-5-19.md)
@@ -262,9 +263,9 @@ ht-degree: 100%
          + [Best Practices](/help/sites-administering/administer-best-practices.md)
          + [Best Practices für die Übersetzung](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html?lang=de)
          + [Best Practices für MSM](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html?lang=de)
-         + [AEM Sites – Einhaltung der Datenschutz-Grundverordnung](/help/sites-administering/gdpr-compliance-sites.md)
+         + [AEM Sites – Einhaltung der DSGVO](/help/sites-administering/gdpr-compliance-sites.md)
          + [Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html?lang=de)
-         + [AEM Commerce – Einhaltung der Datenschutz-Grundverordnung](/help/sites-administering/gdpr-compliance-commerce.md)
+         + [AEM Commerce – Einhaltung der DSGVO](/help/sites-administering/gdpr-compliance-commerce.md)
       + Content-Management {#contentmanagement}
          + [Package Manager](/help/sites-administering/package-manager.md)
          + [Verwalten von Tags](/help/sites-administering/tags.md)
@@ -1440,6 +1441,7 @@ ht-degree: 100%
             + [Einführung](/help/sites-developing/universal-editor/introduction.md)
       + Hybride und SPA-Entwicklung mit AEM {#spas}
          + [Hybrid-Architektur und SPAs mit AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+         + [Einstellung des SPA-Editors](/help/sites-developing/spa-editor-deprecation.md)
          + [Einführung in SPAs und exemplarische Anleitung](/help/sites-developing/spa-walkthrough.md)
          + [SPA-WKND-Tutorial](/help/sites-developing/spa-wknd.md)
          + [Erste Schritte mit React](/help/sites-developing/spa-getting-started-react.md)

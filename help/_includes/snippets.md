@@ -1,26 +1,26 @@
 ---
-source-git-commit: 3a934bed6d3077efa8d058cc1734fcac21a74506
+source-git-commit: bd29ae46ead836e16362ad3a9a63bb31548415ff
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 1%
+source-wordcount: '109'
+ht-degree: 60%
 
 ---
 # Snippets {#snippets}
 
-## Universeller Editor wird gegenüber SPA-Editor bevorzugt {#ue-over-spa}
+## Universeller Editor gegenüber SPA-Editor bevorzugt {#ue-over-spa}
 
 >[!IMPORTANT]
 >
->Der SPA-Editor wird weiterhin vom Adobe unterstützt, aber die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind jetzt:
+>Der SPA-Editor [wird für neue Projekte nicht mehr unterstützt.](/help/sites-developing/spa-editor-deprecation.md) Es wird von Adobe für bestehende Projekte unterstützt, sollte jedoch nicht für neue Projekte verwendet werden. Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind nun:
 >
->* [Der universelle Editor](/help/sites-developing/universal-editor/introduction.md) zum visuellen Bearbeiten von Headless-Inhalten.
->* [Der Inhaltsfragment-](/help/assets/content-fragments/content-fragments-managing.md) für die formularbasierte Bearbeitung von Headless-Inhalten.
+>* der [universelle Editor](/help/sites-developing/universal-editor/introduction.md) zum visuellen Bearbeiten von Headless-Inhalten.
+>* der [Inhaltsfragmenteditor](/help/sites-developing/universal-editor/introduction.md) zur formularbasierten Bearbeitung von Headless-Inhalten
 
 ## Universeller Editor wird gegenüber Mobile bevorzugt {#ue-over-mobile}
 
 >[!IMPORTANT]
 >
->Neuinstallationen von AEM 6.5 unterstützen keine AEM Mobile Apps-Funktionen. Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind jetzt:
+>Neue Installationen von AEM 6.5 unterstützen keine Funktionen von AEM Mobile Apps. Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind nun:
 >
->* [Der universelle Editor](/help/sites-developing/universal-editor/introduction.md) zum visuellen Bearbeiten von Headless-Inhalten.
->* [Der Inhaltsfragment-](/help/assets/content-fragments/content-fragments-managing.md) für die formularbasierte Bearbeitung von Headless-Inhalten.
+>* der [universelle Editor](/help/sites-developing/universal-editor/introduction.md) zum visuellen Bearbeiten von Headless-Inhalten.
+>* der [Inhaltsfragmenteditor](/help/sites-developing/universal-editor/introduction.md) zur formularbasierten Bearbeitung von Headless-Inhalten
