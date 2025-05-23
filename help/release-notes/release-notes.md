@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 122b5f1f76bd5c338b18102aff15b84ff3fbf0c6
+source-git-commit: 5c1955fdf714cd82fcd8d6b23ae11cd59d8ab1a6
 workflow-type: tm+mt
-source-wordcount: '5208'
+source-wordcount: '5204'
 ht-degree: 41%
 
 ---
@@ -97,7 +97,7 @@ Fehlerkorrektur - Ausnahme beim universellen Editor-URL-Service mit fehlenden Ex
 #### [!DNL Content Fragments]{#sites-contentfragments-6523}
 
 * Fehlerkorrektur - Validierungstest für `DeleteVariationIT.testUpdateBasic` funktioniert jetzt fehlerfrei. Der `DeleteVariationIT.testUpdateBasic` schlägt während der Validierungsläufe des Service Packs nicht mehr fehl. Mit dieser Korrektur wird ein fehlendes Problem bei der Textzuordnung in der JSON-Verarbeitungslogik behoben, wodurch die Teststabilität sichergestellt und unnötige Testunterbrechungen vermieden werden. (SITES-28022)
-* AEM verhindert jetzt eine Leistungsbeeinträchtigung durch falsch formatierte XMP-Metadaten in Bild-Assets. Assets, die ungültige oder nicht konforme XMP-Eigenschaftsnamen enthalten, z. B. solche mit numerischen Segmenten oder nicht qualifizierten Strukturen, Trigger während der Verarbeitung keine wiederholten Warnprotokolle mehr. Das System filtert problematische Metadaten heraus, um sicherzustellen, dass die Asset-Aufnahme und -Validierung fehlerfrei abgeschlossen werden. (SITES-30683) &lt;!— AEM 6.5 LTS SP1>
+* AEM verhindert jetzt eine Leistungsbeeinträchtigung durch falsch formatierte XMP-Metadaten in Bild-Assets. Assets, die ungültige oder nicht konforme XMP-Eigenschaftsnamen enthalten, z. B. solche mit numerischen Segmenten oder nicht qualifizierten Strukturen, Trigger während der Verarbeitung keine wiederholten Warnprotokolle mehr. Das System filtert problematische Metadaten heraus, um sicherzustellen, dass die Asset-Aufnahme und -Validierung fehlerfrei abgeschlossen werden. (SITES-30683) <!-- AEM 6.5 LTS SP1 -->
 
 
 <!-- #### [!DNL Content Fragments] - Admin{#sites-admin-6523}
@@ -193,11 +193,11 @@ Beheben von unerwarteten `<br>`-Tags im Rich-Text-Editor mit dem Einfügemodus f
 
 ### [!DNL Assets]{#assets-6523}
 
-* Die folgenden Probleme treten auf [!DNL AEM] On-Premise-Navigationsseite (6.5.22.0) auf, nachdem Sie ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**&#x200B;ausgewählt, zum Ordner&#x200B;**[!UICONTROL &#x200B; Adobe Stock durchsuchen &#x200B;]**&#x200B;navigiert und ein Stock-Bild ausgewählt haben:
+* Die folgenden Probleme treten auf [!DNL AEM] On-Premise-Navigationsseite (6.5.22.0) auf, nachdem Sie ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets ]**ausgewählt, zum Ordner**[!UICONTROL  Adobe Stock durchsuchen ]**navigiert und ein Stock-Bild ausgewählt haben:
    * Das ausgewählte Stock-Bild kann nicht lizenziert und gespeichert werden, da durch Klicken auf **[!UICONTROL Lizenz und Speichern]** eine leere Dropdown-Liste angezeigt wird.
    * Wenn Sie das Stock-Bild auswählen oder die URL der Stock-Seite erneut eingeben, wird zur [!DNL AEM]-Homepage weitergeleitet, wodurch der Zugriff auf das Adobe Stock-Bild verhindert wird. (ASSETS-48687)
 * Probleme bei der Verwaltung von Ordnern, wenn der Name des Ordners auf der [!DNL AEM] On-Premise-Navigationsseite (6.5.22.0) eine `/` im Namen enthält. (ASSETS-46740)
-* In [!DNL AEM] 6.5 wird die Seite mit Asset-Details aufgrund ![ hohen Speichernutzung nicht aus ](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL &#x200B; Ansicht &#x200B;]**&#x200B;Sammlung/Sammlungen“ geladen. (ASSETS-46738)
+* In [!DNL AEM] 6.5 wird die Seite mit Asset-Details aufgrund ![ hohen Speichernutzung nicht aus ](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL  Ansicht ]**Sammlung/Sammlungen“ geladen. (ASSETS-46738)
 * Integrationsprobleme mit [!DNL InDesign] as `Day CQ DAM Mime Type OSGI` Service identifizieren [!DNL InDesign]-Dateien fälschlicherweise als `x-adobe-indesign` anstatt als `x-indesign`. (ASSETS-45953)
 * [!DNL AEM 6.5.21] Sitzungsleck wurde auf den vorkonfigurierten Workflow-Schritt **[!UICONTROL Geplante Veröffentlichung in Brand Portal]** zurückverfolgt. (ASSETS-44104)
 * **[!UICONTROL Unzureichender Arbeitsspeicher (OOM)]** bei der Verarbeitung und Veröffentlichung von Bildern in [!DNL AEM] angezeigt. Dieses Problem war auf veraltete Methoden in Workflows zurückzuführen, z. B. **[!DNL Dam Asset update]** und **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
