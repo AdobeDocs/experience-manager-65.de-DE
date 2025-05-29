@@ -15,41 +15,41 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: e1a8a73e10101a380183658d64f08a7dc5933ee0
 workflow-type: tm+mt
 source-wordcount: '7992'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
 # Konfigurieren des Dynamic Media-Hybridmodus {#configuring-dynamic-media-hybrid-mode}
 
-## Dynamic Media - Hybrid-Add-on-Paket (AEM 6.5.23 und höher)
+## Dynamic Media – Hybrid-Add-on-Paket (AEM 6.5.23 und höher)
 
-Ab AEM 6.5 Service Pack 23 ist ein neues Add-on-Paket für den Dynamic Media-Hybridmodus verfügbar. Dieses Paket enthält das `cq-scene7-imaging`-Bundle, das speziell mit dem Dynamic Media-Hybrid-Ausführungsmodus kompatibel ist.
+Ab AEM 6.5 Service Pack 23 ist ein neues Add-on-Paket für den Hybridmodus von Dynamic Media verfügbar. Dieses Paket enthält das `cq-scene7-imaging`-Paket, das speziell mit dem Hybrid-Ausführungsmodus von Dynamic Media kompatibel ist.
 
-**Key Fix enthalten**
+**Wichtige enthaltene Fehlerbehebung**
 
-Es wurde ein Problem in Dynamic Media-Hybrid-Bereitstellungen behoben, bei dem Aktualisierungen des `catalog.expiration`-Parameters unter `/conf/global/settings/dam/dm/imageserver` nicht auf den Server- oder Autoren-URLs widergespiegelt wurden, obwohl die Replikation ohne Fehler erfolgreich war. Die Aktualisierung stellt konsistente Ablaufwerte zwischen CRX/DE, der Serverantwort und den URLs öffentlicher Sendungen sicher. Dadurch werden wiederum das Cache-Verhalten und die Zuverlässigkeit von Bildtransformationen verbessert. (ASSETS-44837)
+Es wurde ein Problem in den Hybrid-Bereitstellungen von Dynamic Media behoben, bei dem Aktualisierungen des `catalog.expiration`-Parameters unter `/conf/global/settings/dam/dm/imageserver` nicht auf den Server- oder Autoren-URLs widergespiegelt wurden, obwohl die Replikation ohne Fehler durchgeführt wurde. Die Aktualisierung stellt konsistente Ablaufwerte zwischen CRX/DE, der Server-Antwort und den öffentlichen Bereitstellungs-URLs sicher. Dadurch werden wiederum das Cache-Verhalten und die Zuverlässigkeit von Bildumwandlungen verbessert. (ASSETS-44837)
 
-**Wichtige Überlegungen**
+**Wichtige Aspekte**
 
-* Das `cq-scene7-imaging`-Bundle in der Basisinstallation von AEM 6.5.23 (und höher) ist *nicht kompatibel* mit dem Dynamic Media-Hybrid-Ausführungsmodus.
-* Wenn Sie Service Pack 23 (und höher) allein installieren, wird *vorhandenes `cq-scene7-imaging`-Bundle* für Dynamic Media konfigurierten AEM-Instanzen nicht automatisch aktualisiert (`-r dynamicmedia`-Ausführungsmodus).
+* Das `cq-scene7-imaging`-Paket in der Basisinstallation von AEM 6.5.23 (und höher) ist *nicht kompatibel* mit dem Hybrid-Ausführungsmodus von Dynamic Media.
+* Die Installation von Service Pack 23 (und höher) allein *führt nicht automatisch zur Aktualisierung* des vorhandenen `cq-scene7-imaging`-Pakets auf AEM-Instanzen, die für Hybrid-Bereitstellungen (`-r dynamicmedia`-Ausführungsmodus) von Dynamic Media konfiguriert sind.
 
-**Wann muss das Hybrid-Add-on-Paket installiert werden**
+**Wann muss das Hybrid-Add-on-Paket installiert werden?**
 
-* Beim direkten Upgrade auf AEM 6.5.23 (und höher) von AEM 6.5.19 oder früher.
-* Wenn Sie spezifische Fehlerbehebungen für die Funktion „Dynamic Media - Hybrid“ benötigen.
-* Bei der Bereitstellung einer neuen Dynamic Media-Hybrid-Instanz direkt von AEM 6.5 GA (allgemeine Verfügbarkeit) auf Service Pack 23 (und höher).
+* Beim direkten Upgrade auf AEM 6.5.23 (und höher) von AEM 6.5.19 oder früher.
+* Wenn Sie spezifische Fehlerbehebungen für die Hybrid-Funktionalität von Dynamic Media benötigen.
+* Bei der Bereitstellung einer neuen Hybrid-Instanz für Dynamic Media direkt von AEM 6.5 GA (allgemeine Verfügbarkeit) auf Service Pack 23 (und höher).
 
-**Hybrid-Add-on-Paket herunterladen**
+**Herunterladen des Hybrid-Add-on-Pakets**
 
 Das Hybrid-Add-on-Paket ist ab Donnerstag, dem 22. Mai 2025, mit der offiziellen Version von AEM 6.5.23, auf Adobe Software Distribution öffentlich verfügbar. Benutzer können es finden, indem sie in Software Distribution nach **AEM 6.5 Dynamic Media Hybrid-Add** on-Paket suchen.
 
 
-## Ende der Unterstützung für SSL 2.0 und 3.0 sowie TLS 1.0 und 1.1.
+## Ende der Unterstützung für SSL 2.0 und 3.0 sowie TLS 1.0 und 1.1
 
-Ende der Unterstützung für Secure Socket Layer 2.0 und 3.0 und Transport Layer Security 1.0 und 1.1
+Ende der Unterstützung für Secure Socket Layer 2.0 und 3.0 und Transport Layer Security 1.0 und 1.1.
 
-Seit dem Mittwoch, 30. April 2024 unterstützt Adobe Dynamic Media Folgendes nicht mehr:
+Seit Mittwoch, 30. April 2024 unterstützt Adobe Dynamic Media Folgendes nicht mehr:
 
 * SSL (Secure Socket Layer) 2.0
 * SSL 3.0
@@ -235,11 +235,11 @@ Zum Aktivieren von Dynamic Media müssen Sie den Ausführungsmodus für Dynamic 
    >
    >* ImageServer-&lt;PortId>-&lt;yyyy>&lt;mm>&lt;dd>.log – Das ImageServer-Protokoll enthält Statistiken und Analyseinformationen, die zum Analysieren des Verhaltens des internen ImageServer-Prozesses verwendet werden.
    >
-   >Beispiel für einen Image-Server-Protokolldateinamen: `ImageServer-57346-2020-07-25.log`
+   Beispiel für einen Image-Server-Protokolldateinamen: `ImageServer-57346-2020-07-25.log`
    >
-   >* s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - Im s7access-Protokoll werden alle Anfragen aufgezeichnet, die über `/is/image` und `/is/content` an Dynamic Media gesendet werden.
+   * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - Im s7access-Protokoll werden alle Anfragen aufgezeichnet, die über `/is/image` und `/is/content` an Dynamic Media gesendet werden.
    >
-   >Diese Protokolle werden nur verwendet, wenn Dynamic Media aktiviert ist. Sie sind nicht im Paket **Alles herunterladen** enthalten, das über die Seite `system/console/status-Bundlelist` generiert wird. Fügen Sie diese beiden Protokolle bei der Kontaktaufnahme mit dem Support an die Problembeschreibung an, wenn bei Ihnen ein Problem mit Dynamic Media besteht.
+   Diese Protokolle werden nur verwendet, wenn Dynamic Media aktiviert ist. Sie sind nicht im Paket **Alles herunterladen** enthalten, das über die Seite `system/console/status-Bundlelist` generiert wird. Fügen Sie diese beiden Protokolle bei der Kontaktaufnahme mit dem Support an die Problembeschreibung an, wenn bei Ihnen ein Problem mit Dynamic Media besteht.
 
 ### Bei Installation von Experience Manager über einen anderen Port oder Kontextpfad ... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
@@ -258,7 +258,7 @@ In einer Experience Manager QuickStart WAR-Bereitstellung können die Portnummer
 
 >[!NOTE]
 >
->Bei einer [eigenständigen Bereitstellung von Experience Manager Quickstart](/help/sites-deploying/deploy.md) muss in der Regel keine **Self-Domain** konfiguriert werden, da die Portnummer und der Kontextpfad automatisch konfiguriert werden können. Wenn jedoch alle Netzwerkschnittstellen deaktiviert sind, müssen Sie die **Self-Domain** konfigurieren.
+Bei einer [eigenständigen Bereitstellung von Experience Manager Quickstart](/help/sites-deploying/deploy.md) muss in der Regel keine **Self-Domain** konfiguriert werden, da die Portnummer und der Kontextpfad automatisch konfiguriert werden können. Wenn jedoch alle Netzwerkschnittstellen deaktiviert sind, müssen Sie die **Self-Domain** konfigurieren.
 
 ## Deaktivieren von Dynamic Media  {#disabling-dynamic-media}
 
@@ -280,9 +280,9 @@ Um Dynamic Media nach dem Aktivieren wieder zu deaktivieren, müssen Sie das Aus
 
    >[!NOTE]
    >
-   >Wenn der Dynamic Media-Ausführungsmodus deaktiviert wurde, wird der Workflow-Schritt zum Generieren der Ausgabedarstellungsformats `cqdam.pyramid.tiff` automatisch übersprungen. Hierbei werden auch die Unterstützung der dynamischen Ausgabedarstellungen und andere Dynamic Media-Funktionen deaktiviert.
+   Wenn der Dynamic Media-Ausführungsmodus deaktiviert wurde, wird der Workflow-Schritt zum Generieren der Ausgabedarstellungsformats `cqdam.pyramid.tiff` automatisch übersprungen. Hierbei werden auch die Unterstützung der dynamischen Ausgabedarstellungen und andere Dynamic Media-Funktionen deaktiviert.
    >
-   >Achtung: Wenn Sie den Dynamic Media-Ausführungsmodus nach der Konfiguration des Experience Manager-Servers deaktivieren, sind alle mit diesem Ausführungsmodus hochgeladenen Assets ungültig.
+   Achtung: Wenn Sie den Dynamic Media-Ausführungsmodus nach der Konfiguration des Experience Manager-Servers deaktivieren, sind alle mit diesem Ausführungsmodus hochgeladenen Assets ungültig.
 
 ## (Optional) Migration von Dynamic Media-Vorgaben und -Konfigurationen von 6.3 zu 6.5 ohne Ausfallzeit {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
@@ -290,7 +290,7 @@ Wenn Sie ein Upgrade von Experience Manager – Dynamic Media von 6.3 auf 6.5 du
 
 >[!NOTE]
 >
->Wenn Sie Ihre Experience Manager-Instanz im Kompatibilitätsmodus ausführen, d. h. wenn das Kompatibilitätspaket installiert ist, müssen Sie diese Befehle nicht ausführen.
+Wenn Sie Ihre Experience Manager-Instanz im Kompatibilitätsmodus ausführen, d. h. wenn das Kompatibilitätspaket installiert ist, müssen Sie diese Befehle nicht ausführen.
 
 Bei allen Upgrades – mit oder ohne Kompatibilitätspaket – können Sie die standardmäßig in Dynamic Media vorhandenen Viewer-Vorgaben kopieren, indem Sie unter Linux® den folgenden curl-Befehl ausführen:
 
@@ -315,13 +315,13 @@ Nachdem Sie den Replikationsagenten konfiguriert haben, müssen Sie [überprüfe
 
 >[!NOTE]
 >
->Die standardmäßige Speicherbegrenzung für die PTIFF-Erstellung beträgt für alle Workflows 3 GB. Beispielsweise können Sie ein Bild verarbeiten, für das 3 GB Speicher erforderlich sind, während andere Workflows angehalten werden. Sie können auch zehn Bilder parallel verarbeiten, die jeweils 300 MB Speicher erfordern.
+Die standardmäßige Speicherbegrenzung für die PTIFF-Erstellung beträgt für alle Workflows 3 GB. Beispielsweise können Sie ein Bild verarbeiten, für das 3 GB Speicher erforderlich sind, während andere Workflows angehalten werden. Sie können auch zehn Bilder parallel verarbeiten, die jeweils 300 MB Speicher erfordern.
 >
->Die Speicherbegrenzung ist konfigurierbar und sollte zur Verfügbarkeit der Systemressourcen und zur Art und Weise der Verarbeitung von Bildinhalten passen. Falls Sie über viele sehr große Assets verfügen und im System ausreichend Speicher vorhanden ist, können Sie diese Begrenzung erhöhen, um sicherzustellen, dass die Bilder parallel verarbeitet werden.
+Die Speicherbegrenzung ist konfigurierbar und sollte zur Verfügbarkeit der Systemressourcen und zur Art und Weise der Verarbeitung von Bildinhalten passen. Falls Sie über viele sehr große Assets verfügen und im System ausreichend Speicher vorhanden ist, können Sie diese Begrenzung erhöhen, um sicherzustellen, dass die Bilder parallel verarbeitet werden.
 >
->Ein Bild, das mehr als die maximale Speicherkapazität benötigt, wird abgelehnt.
+Ein Bild, das mehr als die maximale Speicherkapazität benötigt, wird abgelehnt.
 >
->Navigieren Sie zum Ändern der Speicherbegrenzung für die PTIFF-Erstellung zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** und ändern Sie den Wert **[!UICONTROL maxMemory]**.
+Navigieren Sie zum Ändern der Speicherbegrenzung für die PTIFF-Erstellung zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** und ändern Sie den Wert **[!UICONTROL maxMemory]**.
 
 ### Einrichten der Authentifizierung {#setting-up-authentication}
 
@@ -345,7 +345,7 @@ Richten Sie die Replikationsauthentifizierung auf der Autoreninstanz ein, damit 
 
    >[!NOTE]
    >
-   >Denken Sie an das Kennwort, da Sie es später, wenn Sie den Replikationsagenten konfigurieren, erneut eingeben müssen.
+   Denken Sie an das Kennwort, da Sie es später, wenn Sie den Replikationsagenten konfigurieren, erneut eingeben müssen.
 
    ![chlimage_1-508](assets/chlimage_1-508.png)
 
@@ -404,10 +404,10 @@ Replication test succeeded
 
 >[!NOTE]
 >
->Sie können die Überprüfung auch durchführen, indem Sie einen der folgenden Schritte ausführen:
+Sie können die Überprüfung auch durchführen, indem Sie einen der folgenden Schritte ausführen:
 >
->* Überprüfen Sie die Replikationsprotokolle, um sicherzustellen, dass das Asset repliziert wurde.
->* Veröffentlichen Sie ein Bild. Wählen Sie das Bild aus und klicken Sie im Dropdown-Menü auf **[!UICONTROL Viewer]**. Wählen Sie dann eine Viewer-Vorgabe aus. Klicken Sie auf **[!UICONTROL URL]**. Um sicherzustellen, dass das Bild angezeigt wird, kopieren Sie den URL-Pfad und fügen Sie ihn in den Browser ein.
+* Überprüfen Sie die Replikationsprotokolle, um sicherzustellen, dass das Asset repliziert wurde.
+* Veröffentlichen Sie ein Bild. Wählen Sie das Bild aus und klicken Sie im Dropdown-Menü auf **[!UICONTROL Viewer]**. Wählen Sie dann eine Viewer-Vorgabe aus. Klicken Sie auf **[!UICONTROL URL]**. Um sicherzustellen, dass das Bild angezeigt wird, kopieren Sie den URL-Pfad und fügen Sie ihn in den Browser ein.
 >
 
 ### Fehlerbehebung bei der Authentifizierung {#troubleshooting-authentication}
@@ -570,7 +570,7 @@ Im Rahmen der Konfiguration müssen Sie eine Registrierungs-ID, Videodienst-URL,
 
 >[!NOTE]
 >
->Stellen Sie vor dem Einrichten des Dynamic Media Cloud Service sicher, dass Sie Ihre Veröffentlichungsinstanz eingerichtet haben. Außerdem müssen Sie die Replikation einrichten, bevor Sie Dynamic Media Cloud Service konfigurieren.
+Stellen Sie vor dem Einrichten des Dynamic Media Cloud Service sicher, dass Sie Ihre Veröffentlichungsinstanz eingerichtet haben. Außerdem müssen Sie die Replikation einrichten, bevor Sie Dynamic Media Cloud Service konfigurieren.
 
 **So konfigurieren Sie Dynamic Media Cloud Services:**
 
@@ -710,7 +710,7 @@ Weitere Informationen finden Sie unter [Veröffentlichen von Viewer-Vorgaben](/h
 
 >[!NOTE]
 >
->Standardmäßig zeigt das System mehrere Ausgabedarstellungen an, wenn Sie **[!UICONTROL Ausgabedarstellungen]** auswählen, und mehrere Viewer-Vorgaben, wenn Sie in der Detailansicht des Assets **[!UICONTROL Viewer]** auswählen. Sie können die angezeigte Anzahl erhöhen oder verringern. Siehe [Erhöhung der Anzahl angezeigter Bildvorgaben](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) oder [Erhöhung der Anzahl angezeigter Viewer-Vorgaben](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+Standardmäßig zeigt das System mehrere Ausgabedarstellungen an, wenn Sie **[!UICONTROL Ausgabedarstellungen]** auswählen, und mehrere Viewer-Vorgaben, wenn Sie in der Detailansicht des Assets **[!UICONTROL Viewer]** auswählen. Sie können die angezeigte Anzahl erhöhen oder verringern. Siehe [Erhöhung der Anzahl angezeigter Bildvorgaben](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) oder [Erhöhung der Anzahl angezeigter Viewer-Vorgaben](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 ## Filtern von Assets für die Replikation {#filtering-assets-for-replication}
 
@@ -773,7 +773,7 @@ Wenn Sie Dynamic Media für die (1) Bildverarbeitung in der Produktion *oder* di
 
 >[!NOTE]
 >
->Filter gelten für MIME-Typen und können nicht pfadspezifisch sein.
+Filter gelten für MIME-Typen und können nicht pfadspezifisch sein.
 
 ### Einrichten von Asset-Filtern nur für die Bereitstellung von Videos {#setting-up-asset-filters-for-video-only-deployments}
 
@@ -815,9 +815,9 @@ Mit diesen Schritten wird die Experience Manager-Veröffentlichungsinstanz so ei
 
 >[!NOTE]
 >
->Wenn es für eine Autoreninstanz viele verschiedene Filter gibt, muss jedem Agenten eine andere Benutzerin bzw. ein anderer Benutzer zugewiesen werden.  Der Granite-Code erzwingt, dass pro Person nur ein Filter angewendet wird.  Deswegen sollten Sie für jeden eingerichteten Filter einen anderen Benutzer einrichten.
+Wenn es für eine Autoreninstanz viele verschiedene Filter gibt, muss jedem Agenten eine andere Benutzerin bzw. ein anderer Benutzer zugewiesen werden.  Der Granite-Code erzwingt, dass pro Person nur ein Filter angewendet wird.  Deswegen sollten Sie für jeden eingerichteten Filter einen anderen Benutzer einrichten.
 >
->Verwenden Sie mehr als einen Filter auf einem Server? Beispielsweise einen Filter für die zu veröffentlichende Replikation und einen zweiten Filter für s7delivery. Wenn dies der Fall ist, müssen Sie sicherstellen, dass diesen beiden Filtern im x-Knoten eine unterschiedliche userId zugewiesen ist. Wenn dies der Fall ist, müssen Sie sicherstellen, dass diesen beiden Filtern im `jcr:content`-Knoten eine unterschiedliche **userId** zugewiesen ist. Sehen Sie sich das folgende Bild an:
+Verwenden Sie mehr als einen Filter auf einem Server? Beispielsweise einen Filter für die zu veröffentlichende Replikation und einen zweiten Filter für s7delivery. Wenn dies der Fall ist, müssen Sie sicherstellen, dass diesen beiden Filtern im x-Knoten eine unterschiedliche userId zugewiesen ist. Wenn dies der Fall ist, müssen Sie sicherstellen, dass diesen beiden Filtern im `jcr:content`-Knoten eine unterschiedliche **userId** zugewiesen ist. Sehen Sie sich das folgende Bild an:
 
 ![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
 
@@ -868,7 +868,7 @@ Das Konfigurieren des Dynamic Media-Bild-Servers umfasst die Bearbeitung des Ad
 
 >[!NOTE]
 >
->Dynamic Media funktioniert vorkonfiguriert [nach der Aktivierung](#enabling-dynamic-media). Sie können für Ihre Installation optional aber eine Feineinstellung verwenden, indem Sie den Dynamic Media-Bildserver so konfigurieren, dass er bestimmte Spezifikationen oder Anforderungen erfüllt.
+Dynamic Media funktioniert vorkonfiguriert [nach der Aktivierung](#enabling-dynamic-media). Sie können für Ihre Installation optional aber eine Feineinstellung verwenden, indem Sie den Dynamic Media-Bildserver so konfigurieren, dass er bestimmte Spezifikationen oder Anforderungen erfüllt.
 
 **Voraussetzung**: Stellen Sie *vor* dem Konfigurieren des Dynamic Media-Bildservers sicher, dass Ihre Windows®-VM eine Installation der Microsoft® Visual C++-Bibliotheken enthält. Diese Bibliotheken werden benötigt, um den Dynamic Media-Bildserver auszuführen. Sie können das [Microsoft® Visual C++ 2010 Redistributable Package (x64) hier herunterladen](https://www.microsoft.com/de-de/download/details.aspx?id=26999).
 
@@ -887,7 +887,7 @@ So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
 
    >[!NOTE]
    >
-   >Für gewöhnlich ist keine Änderung der Standardwerte erforderlich. Falls Sie jedoch die Standardeinstellungen ändern, müssen Sie das Bundle neu starten, damit die Änderungen wirksam werden.
+   Für gewöhnlich ist keine Änderung der Standardwerte erforderlich. Falls Sie jedoch die Standardeinstellungen ändern, müssen Sie das Bundle neu starten, damit die Änderungen wirksam werden.
 
    | Eigenschaft | Standardwert | Beschreibung |
    | --- | --- | --- |
@@ -904,7 +904,7 @@ So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
 
    >[!NOTE]
    >
-   >Der Dynamic Media-Bildserver verwendet einen eigenen Datenträgercache für das Zwischenspeichern von Antworten. Der Experience Manager-HTTP-Cache und der Dispatcher können nicht genutzt werden, um Antworten vom Dynamic Media-Bild-Server zwischenzuspeichern.
+   Der Dynamic Media-Bildserver verwendet einen eigenen Datenträgercache für das Zwischenspeichern von Antworten. Der Experience Manager-HTTP-Cache und der Dispatcher können nicht genutzt werden, um Antworten vom Dynamic Media-Bild-Server zwischenzuspeichern.
 
    | Eigenschaft | Standardwert | Beschreibung |
    |---|---|---|
@@ -963,7 +963,7 @@ Für komplexere Anwendungsfälle kann der Modifikator `icc=` für die manuelle K
 
 >[!NOTE]
 >
->Der Standardsatz der Farbprofile von Adobe ist nur verfügbar, wenn Sie das [Feature Pack 12445 von Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installiert haben. Alle Feature Packs und Service Packs sind über [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) verfügbar. Das Feature Pack 12445 enthält die Farbprofile von Adobe.
+Der Standardsatz der Farbprofile von Adobe ist nur verfügbar, wenn Sie das [Feature Pack 12445 von Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installiert haben. Alle Feature Packs und Service Packs sind über [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) verfügbar. Das Feature Pack 12445 enthält die Farbprofile von Adobe.
 
 
 ### Installieren von Feature Pack 12445 {#installing-feature-pack}
@@ -1065,7 +1065,7 @@ Nach der Installation des Feature Pack müssen Sie die richtigen Standardfarbpro
 
 >[!NOTE]
 >
->Bei Eigenschaftsnamen wird zwischen Groß- und Kleinschreibung unterschieden. Es darf nur die Kleinschreibung verwendet werden.
+Bei Eigenschaftsnamen wird zwischen Groß- und Kleinschreibung unterschieden. Es darf nur die Kleinschreibung verwendet werden.
 
 **Tabelle „Farbprofile“**
 
@@ -1276,23 +1276,23 @@ Siehe [Bereitstellen von Assets mit Dynamic Media](/help/assets/delivering-dynam
   <tr>
    <td>Kopieren von Einbettungs-Code eines Viewers</td>
    <td><p>Im Dialogfeld zum Einbetten von Code wird ein Code-Schnipsel wie der folgende angezeigt (Code-Schnipsel dient nur zur Veranschaulichung):</p> <p><code class="code">&lt;style type="text/css"&gt;
-       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
+       #s7basiczoom_div.s7basiczoomviewer{
        width:100%;
        height:auto;
-       &rbrace;
+       }
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
        "containerId" : "s7basiczoom_div",
-       "params" : &lbrace;
+       "params" : {
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
-       &rbrace;).init();
+       "asset" : "/content/dam/path/to/Image.jpg" }
+       }).init();
        &lt;/script&gt;</code></p> <p>Hier verweist <code>PUBLISHNODE</code> auf den regulären Veröffentlichungsknoten von Experience Manager und <code>IMAGESERVICEPUBLISHNODE</code> auf die Bilddienst-URL.</p> <p>Siehe auch <a href="/help/assets/delivering-dynamic-media-assets.md">Bereitstellen von Dynamic Media-Assets</a>.</p> </td>
   </tr>
  </tbody>
