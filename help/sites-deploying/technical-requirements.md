@@ -7,9 +7,9 @@ feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 source-git-commit: cdd0e52c4f64080a76d67baf678a97e91ca7c711
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3651'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 | Speichern von Binärdateien in TAR-Dateien im Dateisystem `[1]` | Binärdateien | Z: Wird nicht für die Produktion unterstützt |
 | Amazon S3 | Binärdateien | A: Unterstützt |
 | Microsoft® Azure Blob Storage | Binärdateien | A: Unterstützt |
-| MongoDB Enterprise 6.0 | Repository | A: Unterstützt `[3, 4]` |
+| MongoDB Enterprise 6.0 | Repository | A: Unterstützt `[3, 4]` |
 | MongoDB Enterprise 5.0 | Repository | A: Unterstützt `[3, 4]` |
 | MongoDB Enterprise 4.4 | Repository | A: Unterstützt `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.2 | Repository | A: Unterstützt `[2, 3, 4, 7]` |
@@ -220,9 +220,9 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
    >* glibc-locale.x86_64 (2.17 oder später)
-   >* OpenSSL 3 (erforderlich am Standardspeicherort im Betriebssystem).
+   >* OpenSSL 3 (erforderlich am Standardspeicherort im Betriebssystem).
 
-   *Für die OpenSSL 3-Installation: Die Bibliotheken libcrypto.so.3 und libssl.so.3 müssen im Standardbibliothekspfad verfügbar sein, der durch die Umgebungsvariable LD_LIBRARY_PATH dargestellt wird. Wenn sie an einem nicht standardmäßigen Speicherort installiert sind, stellen Sie sicher, dass dieser Pfad zu LD_LIBRARY_PATH hinzugefügt wird, bevor Sie den Server starten.*
+   *Für die OpenSSL 3-Installation: Die Bibliotheken libcrypto.so.3 und libssl.so.3 müssen im Standardbibliothekspfad verfügbar sein, der durch die Umgebungsvariable LD_LIBRARY_PATH dargestellt wird. Wenn sie an einem nicht standardmäßigen Speicherort installiert sind, stellen Sie sicher, dass dieser Pfad zu LD_LIBRARY_PATH hinzugefügt wird, bevor Sie den Server starten.*
 
 1. Produktionsimplementierungen von Microsoft® Windows werden für Kundinnen und Kunden unterstützt, die ein Upgrade auf 6.5 durchführen, sowie für die Nutzung außerhalb der Produktion. Neue Bereitstellungen erfolgen auf Anfrage für AEM Sites und Assets.
 1. AEM Forms wird auf Microsoft Windows® Server ohne die Einschränkungen von Support-Level R unterstützt.
@@ -473,7 +473,7 @@ Windows x86:
    <td>XPS, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF und DWF</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2019</td>
+   <td>Microsoft® Office 2019</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF und TXT</td>
   </tr>
   <tr>

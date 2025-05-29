@@ -10,9 +10,9 @@ exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 source-git-commit: cdd0e52c4f64080a76d67baf678a97e91ca7c711
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4370'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -169,12 +169,12 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
    <td><p>Unterstützt</p> </td>
   </tr>
     <tr>
-   <td><p> MongoDB Enterprise 6.0 (veraltet) </p> </td>
+   <td><p> MongoDB Enterprise 6.0 (Veraltet) </p> </td>
    <td><p>Repository-Mikrokernel</p> </td>
    <td><p>Unterstützt</p> </td>
   </tr>
   <tr>
-   <td><p> MongoDB Enterprise 7.0 </p> </td>
+   <td><p> MongoDB Enterprise 7.0 </p> </td>
    <td><p>Repository-Mikrokernel</p> </td>
    <td><p>Unterstützt</p> </td>
   </tr>
@@ -194,12 +194,12 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
    <td></td>
   </tr>
   <tr>
-   <td><p>Microsoft® SQL Server 2019 (nicht mehr unterstützt) </p> </td>
+   <td><p>Microsoft® SQL Server 2019 (Veraltet) </p> </td>
    <td><p>Repository-Mikrokernel</p> </td>
    <td><p>Unterstützt</p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft® SQL Server 2022 </p> </td>
+   <td><p>Microsoft® SQL Server 2022 </p> </td>
    <td><p>Repository-Mikrokernel</p> </td>
    <td><p>Unterstützt</p> </td>
   </tr>
@@ -210,13 +210,13 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
   </tr>
   <tr>
   <tr>
-   <td>MySQL 8.0.27 (veraltet) </td>
+   <td>MySQL 8.0.27 (Veraltet) </td>
    <td>–</td>
    <td>R: Eingeschränkte Unterstützung </td>
   </tr>
   <tr>
   <tr>
-   <td>MySQL 8,4</td>
+   <td>MySQL 8.4</td>
    <td>–</td>
    <td>R: Eingeschränkte Unterstützung </td>
   </tr>
@@ -250,12 +250,12 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
   </tr>
   <tr>
    <td>Microsoft® SQL Server<br /> </td>
-   <td><p>Microsoft® SQL Server JDBC-Treiber 8.2.2 <br /> </p> <p>sqljdbc8.jar (veraltet) </p> </td>
+   <td><p>Microsoft® SQL Server JDBC-Treiber 8.2.2<br /> </p> <p>sqljdbc8.jar (Veraltet) </p> </td>
    <td><p>Laden Sie dies von der Microsoft®-Website herunter.</p> </td>
   </tr>
   <tr>
    <td>Microsoft® SQL Server<br /> </td>
-   <td><p>Microsoft® SQL Server JDBC-Treiber 12.8 <br /> </p> <p>sqljdbc8.jar</p> </td>
+   <td><p>Microsoft® SQL Server JDBC-Treiber 12.8 <br /> </p> <p>sqljdbc8.jar</p> </td>
    <td><p>Laden Sie dies von der Microsoft®-Website herunter.</p> </td>
   </tr>
   <tr>
@@ -329,7 +329,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
    <td>Service Packs und wichtige Updates</td>
   </tr>
   <tr>
-   <td><p>Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64-Bit) (nicht mehr unterstützt)</p> </td>
+   <td><p>Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64-Bit) (Veraltet)</p> </td>
    <td><p>A: Unterstützt</p> </td>
    <td><p>Nebenversionen, kumulative Updates und wichtige Updates</p> </td>
   </tr>
@@ -339,7 +339,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
    <td><p>Nebenversionen, kumulative Updates und wichtige Updates</p> </td>
   </tr>
   <tr>
-   <td><p>Red Hat® Enterprise Linux® 9 (Kernel 4.x) (64 Bit)</p> </td>
+   <td><p>Red Hat® Enterprise Linux® 9 (Kernel 4.x) (64-Bit)</p> </td>
    <td><p>A: Unterstützt</p> </td>
    <td><p>Nebenversionen, kumulative Updates und wichtige Updates</p> </td>
   </tr>
@@ -512,11 +512,11 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
    <td>XPS, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF und DWF</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2019 (nicht mehr unterstützt) </td>
+   <td>Microsoft® Office 2019 (Veraltet) </td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF und TXT</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2021</td>
+   <td>Microsoft® Office 2021</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF und TXT</td>
   </tr>
   <tr>
@@ -528,7 +528,7 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
    <td>PUB</td>
   </tr>
   <tr>
-   <td>Microsoft® Publisher 2021<br /> </td>
+   <td>Microsoft® Publisher 2021<br /> </td>
    <td>PUB</td>
   </tr>
   <tr>
@@ -679,7 +679,7 @@ Für zusätzliche Anforderungen siehe:
 - Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC
 - Administratorrechte für die Installation von Designer
 - Microsoft® Visual C++ 2019 (VC 14.28 oder höher) 32-Bit-Runtime
-- OpenSSL 3 (erforderlich am Standardspeicherort im Betriebssystem).
+- OpenSSL 3 (erforderlich am Standardspeicherort im Betriebssystem).
 
 >[!NOTE]
 >
@@ -815,7 +815,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -898,7 +898,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -907,16 +907,16 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 -->
 
-### Version 6.5.23.0 (29. Mai 2025)
+### Version 6.5.23.0 (29. Mai 2025)
 
 | Unterstützung hinzugefügt | Unterstützung entfernt | Unterstützung eingestellt |
 | -------------- | --------------- | ------------------- |
-| MongoDB Enterprise 7.0 | | MongoDB Enterprise 6.0 |
-| MYSQL 8.4 | | MYSQL 8.0.27 |
-| Microsoft® SQL Server 2022 | | Microsoft® SQL Server 2019 |
-| Microsoft® SQL Server JDBC-Treiber 12.8 | | Microsoft® SQL Server JDBC-Treiber 8.2 |
-| Microsoft® Office 2021 | | Microsoft® Office 2019 |
-| Red Hat® Enterprise Linux® 9 (Kernel 4.x) (64 Bit) | | Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 Bit) |
+| MongoDB Enterprise 7.0 | | MongoDB Enterprise 6.0 |
+| MYSQL 8.4 | | MYSQL 8.0.27 |
+| Microsoft® SQL Server 2022 | | Microsoft® SQL Server 2019 |
+| Microsoft® SQL Server JDBC-Treiber 12.8 | | Microsoft® SQL Server JDBC-Treiber 8.2 |
+| Microsoft® Office 2021 | | Microsoft® Office 2019 |
+| Red Hat® Enterprise Linux® 9 (Kernel 4.x) (64-Bit) | | Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64-Bit) |
 
 ### Version 6.5.22.0 (29. November 2024)
 
@@ -929,7 +929,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Unterstützung hinzugefügt | Unterstützung entfernt | Unterstützung eingestellt |
 | -------------- | --------------- | ------------------- |
-| MongoDB Enterprise 6.0 | MongoDB Enterprise 4.4 |  |
+| MongoDB Enterprise 6.0 | MongoDB Enterprise 4.4 |  |
 | MongoDB Enterprise 5.0 |  |  |
 |  | |  |
 
