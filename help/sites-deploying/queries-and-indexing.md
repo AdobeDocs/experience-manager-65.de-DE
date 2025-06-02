@@ -10,10 +10,10 @@ feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: eeeb31d81c22f8dace7a170953bf45a709f5ac73
 workflow-type: tm+mt
-source-wordcount: '3034'
-ht-degree: 100%
+source-wordcount: '3051'
+ht-degree: 99%
 
 ---
 
@@ -211,6 +211,10 @@ Das einzige Dokument, das beide Begriffe enthält, ist 200, wie im folgenden Bei
 | --- | --- | --- |
 
 Wenn mehrere Einträge gefunden werden, werden sie nach ihrer Punktzahl sortiert.
+
+>[!NOTE]
+>
+>Der in diesem Abschnitt beschriebene Suchmechanismus verwendet eine Lucene-Indizierung, keine partielle Übereinstimmung wie der Linux-`grep`.
 
 ### Der Lucene-Eigenschaftenindex {#the-lucene-property-index}
 
