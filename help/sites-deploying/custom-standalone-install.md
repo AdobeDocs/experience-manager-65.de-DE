@@ -7,10 +7,10 @@ exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 3effd4fa686ac89421ffe74e52bf34830ddd776c
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 100%
+source-wordcount: '1614'
+ht-degree: 99%
 
 ---
 
@@ -86,10 +86,6 @@ Dies kann für viele Anwendungsfälle besonders interessant sein:
 * Wenn etwas schiefgeht, sind die Web-Konsole und das Repository nicht erreichbar. Hiermit können Sie zusätzliche Bundles in diesem Verzeichnis ablegen, die dann installiert werden sollten.
 * Der Ordner `crx-quickstart/install` kann erstellt werden, bevor der Schnellstart gestartet wird, und es können zusätzliche Pakete darin abgelegt werden.
 
->[!NOTE]
->
->Weitere Informationen und Beispiele finden Sie in [So installieren Sie CRX-Pakete automatisch beim Serverstart](https://helpx.adobe.com/de/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html).
-
 ## Installieren und Starten von Adobe Experience Manager als Windows-Dienst {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
 >[!NOTE]
@@ -163,7 +159,7 @@ Weitere Optionen und Konventionen zur Umbenennung sind in der Schnellstart-Hilfe
 
 >[!CAUTION]
 >
->Diese Optionen gelten ab der ursprünglichen Version von AEM 6.5 (6.5.0.0). Änderungen in späteren SP-Versionen sind möglich.
+>Diese Optionen gelten ab der Originalversion von AEM 6.5 (6.5.0.0). Änderungen in späteren SP-Versionen sind möglich.
 
 ```shell
 Loading quickstart properties: default
