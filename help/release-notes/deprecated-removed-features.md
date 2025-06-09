@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 source-git-commit: bd29ae46ead836e16362ad3a9a63bb31548415ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1765'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
