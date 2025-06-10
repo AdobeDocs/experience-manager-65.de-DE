@@ -41,7 +41,7 @@ Der universelle Editor wird unterstützt von:
 
 * AEM 6.5
    * Es wird sowohl lokales als auch AMS-Hosting unterstützt.
-* [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
+* [AEM 6.5 LTS](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
    * Es wird sowohl lokales als auch AMS-Hosting unterstützt.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)
 
@@ -138,7 +138,7 @@ Nachdem AEM aktualisiert und konfiguriert wurde, können Sie einen lokalen unive
 1. Installieren Sie Node.js Version >=20.
 1. Laden Sie den neuesten universellen Editor-Service von [Software Distribution](https://experienceleague.adobe.com/de/docs/experience-cloud/software-distribution/home) herunter und entpacken Sie ihn.
 1. Konfigurieren des universellen Editor-Dienstes über Umgebungsvariablen oder `.env` Datei.
-   * [Weitere Informationen finden Sie in der Dokumentation zum universellen Editor von AEM as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
+   * [Weitere Informationen finden Sie in der Dokumentation zum universellen Editor von AEM as a Cloud Service.](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * Beachten Sie, dass Sie möglicherweise die Option `UES_MAPPING` verwenden müssen, wenn eine interne IP-Umschreibung erforderlich ist.
 1. Führen Sie `universal-editor-service.cjs` aus.
 
@@ -157,7 +157,7 @@ Wenn AEM konfiguriert ist und ein lokaler universeller Editor-Dienst ausgeführt
 
    >[!NOTE]
    >
-   >8080 ist der Standard-Port. Wenn Sie dies mit dem `UES_PORT` Parameter in [Ihrer `.env`-Datei](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) geändert haben, müssen Sie den Port-Wert hier entsprechend anpassen.
+   >8080 ist der Standard-Port. Wenn Sie dies mit dem `UES_PORT` Parameter in [Ihrer `.env`-Datei](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) geändert haben, müssen Sie den Port-Wert hier entsprechend anpassen.
 
 1. Starten Sie Apache neu.
 
@@ -165,7 +165,7 @@ Wenn AEM konfiguriert ist und ein lokaler universeller Editor-Dienst ausgeführt
 
 Wenn AEM aktualisiert wurde und ein lokaler universeller Editor-Dienst ausgeführt wird, können Sie mit der Bearbeitung von Headless-Inhalten mit dem universellen Editor beginnen.
 
-Ihre App muss jedoch so instrumentiert sein, dass sie den universellen Editor nutzen kann. Dazu gehören Meta-Tags, die den Editor anweisen, wie und wo der Inhalt beibehalten werden soll. Weitere Informationen zu dieser Instrumentierung finden Sie unter [Dokumentation zum universellen Editor für AEM as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
+Ihre App muss jedoch so instrumentiert sein, dass sie den universellen Editor nutzen kann. Dazu gehören Meta-Tags, die den Editor anweisen, wie und wo der Inhalt beibehalten werden soll. Weitere Informationen zu dieser Instrumentierung finden Sie unter [Dokumentation zum universellen Editor für AEM as a Cloud Service.](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
 
 Beachten Sie bei der Dokumentation für den universellen Editor mit AEM as a Cloud Service die folgenden Änderungen bei der Verwendung mit AEM 6.5.
 
@@ -185,7 +185,7 @@ Beachten Sie bei der Dokumentation für den universellen Editor mit AEM as a Clo
 
 >[!TIP]
 >
->Eine ausführliche Anleitung für Entwicklerinnen und Entwickler, die mit dem universellen Editor beginnen, finden Sie im Dokument [Übersicht über den universellen Editor für AEM-](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview)) in der AEM as a Cloud Service-Dokumentation. Beachten Sie dabei die erforderlichen Änderungen, die für die Unterstützung von AEM 6.5 erforderlich sind, wie in diesem Abschnitt erwähnt.
+>Eine ausführliche Anleitung für Entwicklerinnen und Entwickler, die mit dem universellen Editor beginnen, finden Sie im Dokument [Übersicht über den universellen Editor für AEM-](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview)) in der AEM as a Cloud Service-Dokumentation. Beachten Sie dabei die erforderlichen Änderungen, die für die Unterstützung von AEM 6.5 erforderlich sind, wie in diesem Abschnitt erwähnt.
 
 ## Unterschiede zwischen AEM 6.5 und AEM as a Cloud Service {#differences}
 
