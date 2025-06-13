@@ -11,10 +11,10 @@ feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 75c15b0f0e4de2ea7fff339ae46b88ce8f6af83f
 workflow-type: tm+mt
-source-wordcount: '6663'
-ht-degree: 100%
+source-wordcount: '6677'
+ht-degree: 97%
 
 ---
 
@@ -28,16 +28,16 @@ ht-degree: 100%
 
 Diese Integration ermöglicht es Ihnen, die Nutzung von Dynamic Media Viewers auf Ihrer Website mit Adobe Analytics zu verfolgen. Gleichzeitig können Sie die von den Viewern angezeigten Ereignisse und Daten mit jeder anderen Experience Platform Tags-Erweiterung von Adobe oder einem Drittanbieter verwenden.
 
-Weitere Informationen zu Erweiterungen von Adobe oder Drittanbietern finden Sie unter [Adobe-Erweiterungen](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html?lang=de) im Benutzerhandbuch zu Experience Platform Tags.
+Weitere Informationen zu Erweiterungen von Adobe oder Drittanbietern finden Sie unter [Adobe-Erweiterungen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/overview) im Benutzerhandbuch zu Experience Platform Tags.
 
 **Dieses Thema richtet sich an:** Site-Admins, Entwicklerinnen und Entwickler für die Experience Platform und Anwendende.
 
 ### Einschränkungen der Integration {#limitations-of-the-integration}
 
 * Die Experience Platform Tags-Integration für Dynamic Media Viewers funktioniert nicht im Experience Manager-Autorenmodus. Sie können kein Tracking für eine WCM-Seite anzeigen, bevor diese veröffentlicht wurde.
-* Die Experience Platform Tags-Integration für Dynamic Media Viewer wird nicht im Popup-Betriebsmodus unterstützt, bei dem die Viewer-URL über die Schaltfläche „URL“ auf der Seite „Asset-Details“ abgerufen wird.
+* Die Experience Platform Tags-Integration für Dynamic Media Viewers wird nicht im Popup-Betriebsmodus unterstützt, bei dem die Viewer-URL über die Schaltfläche „URL“ auf der Seite „Asset-Details“ abgerufen wird.
 * Die Experience Platform Tags-Integration kann nicht gleichzeitig mit der Analytics-Integration älterer Viewer verwendet werden (mit dem Parameter `config2=`).
-* Unterstützung für das Video-Tracking ist auf das Core-Wiedergabe-Tracking beschränkt, wie unter [Tracking-Übersicht](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=de) beschrieben. Insbesondere wird die Verfolgung von QoS, Anzeigen, Kapiteln/Segmenten oder Fehlern nicht unterstützt.
+* Unterstützung für das Video-Tracking ist auf das Core-Wiedergabe-Tracking beschränkt, wie unter [Tracking-Übersicht](https://experienceleague.adobe.com/en/docs/media-analytics/using/tracking/track-core-overview) beschrieben. Insbesondere wird die Verfolgung von QoS, Anzeigen, Kapiteln/Segmenten oder Fehlern nicht unterstützt.
 * Die Konfiguration der Speicherdauer für Datenelemente wird bei Datenelementen, die die Erweiterung *Dynamic Media Viewers* verwenden, nicht unterstützt. Die Speicherdauer muss auf **[!UICONTROL Ohne]** eingestellt sein.
 
 ### Anwendungsbeispiele für die Integration {#use-cases-for-the-integration}
@@ -68,13 +68,13 @@ Ein Datenelement in Experience Platform Tags ist eine benannte Eigenschaft, dere
 
 Optionen, die für eine Datenelementdefinition verfügbar sind, hängen von der Liste der Erweiterungen ab, die in der Experience Platform Tags-Eigenschaft installiert sind. Die Erweiterung „Core“ ist vorinstalliert und in jeder Konfiguration standardmäßig verfügbar. Mit der Erweiterung „Core“ können Sie ein Datenelement definieren, dessen Wert aus Cookies, JavaScript-Code, Abfragezeichenfolgen und vielen anderen Quellen stammen kann.
 
-Für das Tracking mit Adobe Analytics müssen mehrere zusätzliche Erweiterungen wie unter [Installation und Einrichtung von Erweiterungen](#installing-and-setup-of-extensions) beschrieben installiert werden. Die Dynamic Media Viewers-Erweiterung bietet die Möglichkeit, ein Datenelement zu definieren, dessen Wert ein Argument des Dynamic Media Viewers-Ereignisses ist. Beispielsweise können Sie auf den Viewer-Typ oder den Asset-Namen, der vom Viewer beim Laden gemeldet wird, auf den Zoom-Faktor, der beim Zoomen durch Endbenutzer gemeldet wird, und vieles mehr verweisen.
+Für das Tracking mit Adobe Analytics müssen mehrere zusätzliche Erweiterungen wie unter [Installation und Einrichtung von Erweiterungen](#installing-and-setup-of-extensions) beschrieben installiert werden. Die Dynamic Media Viewers-Erweiterung bietet die Möglichkeit, ein Datenelement zu definieren, dessen Wert ein Argument des Dynamic Media Viewers-Ereignisses ist. Beispielsweise können Sie auf den Viewer-Typ oder den Asset-Namen, der vom Viewer beim Laden gemeldet wird, auf den Zoom-Faktor, der beim Zoomen durch Endbenutzende gemeldet wird, und vieles mehr verweisen.
 
 Die Dynamic Media Viewers-Erweiterung sorgt dafür, dass die Werte der Datenelemente automatisch auf dem neuesten Stand sind.
 
 Nachdem Sie ein Datenelement definiert haben, können Sie es an anderen Stellen der Experience Platform Tags-Benutzeroberfläche verwenden. Nutzen Sie dazu das Widget zur Auswahl von Datenelementen. Insbesondere wird von der Aktion „Variablen festlegen“ der Adobe Analytics-Erweiterung in der Regel auf Datenelemente verwiesen, die für das Tracking von Dynamic Media Viewers definiert werden (siehe unten).
 
-Siehe [Datenelemente](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=de).
+Siehe [Datenelemente](https://experienceleague.adobe.com/de/docs/experience-platform/tags/ui/data-elements).
 
 #### Info zu Regeln in Experience Platform Tags {#about-rules-in-adobe-launch}
 
@@ -84,7 +84,7 @@ Eine Regel in Experience Platform Tags ist eine agnostische Konfiguration, die d
 * *Bedingungen*: (wenn) teilen Experience Platform Tags mit, welche zusätzlichen Einschränkungen beim Auslösen einer Regel zulässig oder nicht zulässig sind.
 * *Aktionen*: (dann) teilen Experience Platform Tags mit, was zu tun ist, wenn eine Regel ausgelöst wird.
 
-Die im Abschnitt „Ereignisse“, „Bedingungen“ und „Aktionen“ verfügbaren Optionen hängen von den Erweiterungen ab, die in der Experience Platform Tags-Eigenschaft installiert sind. Die Erweiterung *Core* ist vorinstalliert und in jeder Konfiguration standardmäßig verfügbar. Die Erweiterung bietet mehrere Optionen für Ereignisse, z. B. grundlegende Aktionen auf Browser-Ebene. Zu diesen Aktionen gehören Fokusänderung, Tastendruck und Formularübermittlung. Sie enthält zudem Optionen für Bedingungen, wie z. B. Cookie-Wert, Browser-Typ und mehr. Für Aktionen steht nur die Option „Benutzerspezifischer Code“ zur Verfügung.
+Die im Abschnitt „Ereignisse, Bedingungen und Aktionen“ verfügbaren Optionen hängen von den Erweiterungen ab, die in der Experience Platform Tags-Eigenschaft installiert sind. Die Erweiterung *Core* ist vorinstalliert und in jeder Konfiguration standardmäßig verfügbar. Die Erweiterung bietet mehrere Optionen für Ereignisse, z. B. grundlegende Aktionen auf Browser-Ebene. Zu diesen Aktionen gehören Fokusänderung, Tastendruck und Formularübermittlung. Sie enthält zudem Optionen für Bedingungen, wie z. B. Cookie-Wert, Browser-Typ und mehr. Für Aktionen steht nur die Option „Benutzerspezifischer Code“ zur Verfügung.
 
 Für das Tracking mit Adobe Analytics müssen mehrere zusätzliche Erweiterungen wie unter [Installation und Einrichtung von Erweiterungen](#installing-and-setup-of-extensions) beschrieben installiert werden. Insbesondere gilt:
 
@@ -100,7 +100,7 @@ Im Abschnitt „Aktionen“ müssen Sie über die Aktion *Variablen festlegen* v
 
 Auf die Aktion *Variablen festlegen* muss eine Aktion vom Typ *Beacon senden* folgen. Mit der Aktion *Beacon senden* werden tatsächlich Daten an den Analytics-Tracking-Server gesendet. Beide Aktionen (*Variablen festlegen* und *Beacon senden*) kommen aus der Adobe Analytics-Erweiterung.
 
-Siehe [Regeln](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=de).
+Siehe [Regeln](https://experienceleague.adobe.com/de/docs/experience-platform/tags/ui/rules).
 
 #### Beispielkonfiguration {#sample-configuration}
 
@@ -134,7 +134,7 @@ Wenn für die Verwendung von Adobe Analytics for Audio and Video ein Experience 
 
 Siehe [Installation und Einrichtung von Erweiterungen](#installing-and-setup-of-extensions).
 
-Derzeit ist die Unterstützung für Video-Tracking auf das Tracking „Core-Wiedergabe“ beschränkt, wie in der [Tracking-Übersicht](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=de) beschrieben. Insbesondere wird die Verfolgung von QoS, Anzeigen, Kapiteln/Segmenten oder Fehlern nicht unterstützt.
+Derzeit ist die Unterstützung für Video-Tracking auf das Tracking „Core-Wiedergabe“ beschränkt, wie in der [Tracking-Übersicht](https://experienceleague.adobe.com/en/docs/media-analytics/using/tracking/track-core-overview) beschrieben. Insbesondere wird die Verfolgung von QoS, Anzeigen, Kapiteln/Segmenten oder Fehlern nicht unterstützt.
 
 ## Verwenden der Dynamic Media Viewers-Erweiterung {#using-the-dynamic-media-viewers-extension}
 
@@ -158,13 +158,13 @@ Sie müssen die Konfigurationsschritte im Abschnitt [Konfigurieren von Adobe Ana
 
 Nach der ordnungsgemäßen Konfiguration können Sie Experience Platform Tags-Unterstützung zu einer Website mit einem Dynamic Media-Viewer hinzufügen.
 
-Weitere Informationen zur Verwendung des Einbettungs-Codes für die Experience Platform Tags-Bibliothek finden Sie unter [Hinzufügen von Einbettungs-Code für Experience Platform Tags](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code.html?lang=de).
+Weitere Informationen zur Verwendung des Einbettungs-Codes für die Experience Platform Tags-Bibliothek finden Sie unter [Hinzufügen von Einbettungs-Code für Experience Platform Tags](https://experienceleague.adobe.com/de/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code).
 
 <!-- To be reviewed and updated although this is found live in the Experience ManageraaCS version:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of Experience Manager Dynamic Media.
 -->
 
-**Tracking von Dynamic Media-Viewern mit Einbettungs-Code:**
+**Verfolgen Sie Dynamic Media-Viewer mit dem Einbettungs-Code:**
 
 1. Verwenden Sie eine Website, die bereit zum Einbetten eines Dynamic Media-Viewers ist.
 1. Rufen Sie den Einbettungs-Code für die Experience Platform Tags-Bibliothek ab, indem Sie sich zuerst bei Experience Platform Tags anmelden (siehe [Konfigurieren von Experience Platform Tags](#configuring-adobe-launch-for-the-integration)).
@@ -191,7 +191,7 @@ Die einzige Konfigurationsoption für die Dynamic Media Viewers-Erweiterung ist 
 
 Wenn Sie diese Option aktivieren und die Erweiterung „Adobe Media Analytics for Audio and Video“ installiert sowie konfiguriert haben, werden Videowiedergabemetriken an die Lösung „Adobe Analytics for Audio and Video“ gesendet. Durch Deaktivieren dieser Option wird das Video-Tracking deaktiviert.
 
-Wenn Sie diese Option aktivieren, *ohne* die Erweiterung „Adobe Media Analytics for Audio and Video“ installiert zu haben, hat diese Option keine Auswirkungen.
+Wenn Sie diese Option aktivieren, *ohne* die Adobe Media Analytics for Audio and Video-Erweiterung installiert zu haben, hat diese Option keine Auswirkungen.
 
 ![image2019-7-22_12-4-23](assets/image2019-7-22_12-4-23.png)
 
@@ -206,9 +206,9 @@ Wenn diese Option aktiviert ist, rendert der Datenelement-Editor ein Formular mi
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-Eine Liste der unterstützten Ereignisse nach Viewer-Typ finden Sie im [Dynamic Media Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=de#viewers-aem-assets-dmc). Konsultieren Sie den Abschnitt zum gewünschten Viewer und klicken Sie auf den Unterabschnitt „Support für Tracking mit Adobe Analytics“. Derzeit sind Ereignisargumente im Referenzhandbuch für Dynamic Media Viewers nicht dokumentiert.
+Eine Liste der unterstützten Ereignisse nach Viewer-Typ finden Sie im [Dynamic Media Viewers-Referenzhandbuch](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc). Gehen Sie zum Abschnitt über den gewünschten Viewer und wählen Sie dann den Unterabschnitt „Unterstützung für Adobe Analytics-Tracking“ aus. Derzeit sind Ereignisargumente im Referenzhandbuch für Dynamic Media Viewers nicht dokumentiert.
 
-Betrachten Sie nun den Lebenszyklus des *Datenelements* von Dynamic Media Viewers. Der Wert dieses Datenelements wird ausgefüllt, nachdem das entsprechende Dynamic Media-Viewer-Ereignis auf der Seite eintritt. Angenommen, das Datenelement verweist auf das Ereignis **[!UICONTROL LOAD]** und das zugehörige „asset“-Argument. In solchen Fällen empfängt der Wert dieses Datenelements gültige Daten, nachdem der Viewer das **[!UICONTROL LOAD]**-Ereignis zum ersten Mal ausgeführt hat. Wenn das Datenelement auf das **[!UICONTROL ZOOM]**-Ereignis und das zugehörige „scale“-Argument verweist, bleibt der Wert dieses Datenelements leer, bis der Viewer zum ersten Mal ein **[!UICONTROL ZOOM]**-Ereignis sendet.
+Betrachten Sie nun den Lebenszyklus des Dynamic Media Viewers *Datenelements*. Der Wert dieses Datenelements wird aufgefüllt, nachdem das entsprechende Dynamic Media-Viewer-Ereignis auf der Seite eintritt. Angenommen, das Datenelement verweist auf das Ereignis **[!UICONTROL LOAD]** und das zugehörige „asset“-Argument. In solchen Fällen empfängt der Wert dieses Datenelements gültige Daten, nachdem der Viewer das **[!UICONTROL LOAD]**-Ereignis zum ersten Mal ausgeführt hat. Wenn das Datenelement auf das **[!UICONTROL ZOOM]**-Ereignis und das zugehörige „scale“-Argument verweist, bleibt der Wert dieses Datenelements leer, bis der Viewer zum ersten Mal ein **[!UICONTROL ZOOM]**-Ereignis sendet.
 
 Gleichermaßen werden die Werte von Datenelementen automatisch aktualisiert, wenn der Viewer ein entsprechendes Ereignis auf der Seite sendet. Der Wert wird auch dann aktualisiert, wenn das betreffende Ereignis nicht in der Regelkonfiguration angegeben ist. Angenommen, das Datenelement **[!UICONTROL ZoomScale]** wird für den Parameter „scale“ des ZOOM-Ereignisses definiert. Die einzige in der Regelkonfiguration vorhandene Regel wird jedoch durch das Ereignis **[!UICONTROL LOAD]** ausgelöst. Der Wert von **[!UICONTROL ZoomScale]** wird dennoch immer dann aktualisiert, wenn ein Benutzer im Viewer einen Zoom ausführt.
 
@@ -236,17 +236,17 @@ Nehmen wir nun an, dass der Endbenutzer die Web-Seite mit beiden Viewern lädt. 
 Die Aktivitäten des Endbenutzers führen dazu, dass die folgenden beiden Tracking-Aufrufe an Adobe Analytics gesendet werden:
 
 * Der erste Aufruf erfolgt, weil die **[!UICONTROL TrackPan]**-Regel ausgelöst wird, wenn die Person in *Viewer1* schwenkt. Dieser Aufruf sendet 50 % als Wert des **[!UICONTROL ZoomScale]**-Datenelements, da das Datenelement weiß, dass die Regel von *Viewer1* ausgelöst wird, und den entsprechenden Skalierungswert abruft.
-* Der zweite Aufruf erfolgt, weil die **[!UICONTROL TrackKey]**-Regel ausgelöst wird, wenn der Benutzer eine Taste auf der Tastatur drückt. Bei diesem Aufruf werden 25 % als Wert des **[!UICONTROL ZoomScale]**-Datenelements gesendet, da die Regel nicht vom Viewer ausgelöst wurde. Daher gibt das Datenelement den aktuellsten Wert zurück.
+* Der zweite Aufruf erfolgt, weil die **[!UICONTROL TrackKey]**-Regel ausgelöst wird, wenn die Person eine Taste auf der Tastatur drückt. Bei diesem Aufruf werden 25 % als Wert des **[!UICONTROL ZoomScale]**-Datenelements gesendet, da die Regel nicht vom Viewer ausgelöst wurde. Daher gibt das Datenelement den aktuellsten Wert zurück.
 
-Das oben aufgestellte Beispiel wirkt sich auch auf die Lebensdauer des Datenelementwerts aus. Der Wert des vom Dynamic Media-Viewer verwalteten Datenelements wird im Code der Experience Platform Tags-Bibliothek gespeichert, auch wenn der Viewer selbst auf der Web-Seite beendet wird. Diese Funktion bedeutet, dass das Datenelement den letzten bekannten Wert zurückgibt, wenn es eine Regel gibt, die nicht von einer Dynamic Media Viewers-Erweiterung ausgelöst wird und auf dieses Datenelement verweist. Das gilt auch, wenn der Viewer nicht mehr auf der Website vorhanden ist.
+Das oben aufgestellte Beispiel wirkt sich auch auf die Lebensdauer des Datenelementwerts aus. Der Wert des vom Dynamic Media-Viewer verwalteten Datenelements wird im Code der Experience Platform Tags-Bibliothek gespeichert, auch wenn der Viewer selbst auf der Web-Seite beendet wird. Diese Funktion bedeutet, dass das Datenelement den letzten bekannten Wert zurückgibt, wenn es eine Regel gibt, die nicht von einer Dynamic Media Viewers-Erweiterung ausgelöst wird und auf dieses Datenelement verweist. Das gilt selbst dann, wenn der Viewer nicht mehr auf der Website vorhanden ist.
 
 In jedem Fall werden Werte von Datenelementen, die von Dynamic Media Viewers gesteuert werden, nicht im lokalen Speicher oder auf dem Server gespeichert. Sie werden stattdessen nur in der Client-seitigen Experience Platform Tags-Bibliothek gespeichert. Die Werte solcher Datenelemente verschwinden, wenn die Web-Seite neu geladen wird.
 
-Im Allgemeinen unterstützt der Datenelement-Editor eine [Festlegung der Speicherdauer](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=de#create-a-data-element). Datenelemente, die die Dynamic Media Viewers-Erweiterung verwenden, unterstützen jedoch als Speicherdauer nur die Option **[!UICONTROL Ohne]**. Das Festlegen eines anderen Werts ist in der Benutzeroberfläche möglich, in diesem Fall wird jedoch das Verhalten des Datenelements nicht definiert. Die Erweiterung verwaltet den Wert des Datenelements selbst: das Datenelement, das den Wert des Viewer-Ereignisarguments während des gesamten Lebenszyklus des Viewers beibehält.
+Im Allgemeinen unterstützt der Datenelement-Editor eine [Festlegung der Speicherdauer](https://experienceleague.adobe.com/de/docs/experience-platform/tags/ui/data-elements#create-a-data-element). Datenelemente, die die Dynamic Media Viewers-Erweiterung verwenden, unterstützen jedoch als Speicherdauer nur die Option **[!UICONTROL Ohne]**. Das Festlegen eines anderen Werts ist in der Benutzeroberfläche möglich, in diesem Fall wird jedoch das Verhalten des Datenelements nicht definiert. Die Erweiterung verwaltet den Wert des Datenelements selbst: das Datenelement, das den Wert des Viewer-Ereignisarguments während des gesamten Lebenszyklus des Viewers beibehält.
 
 ### Über Regeln in der Dynamic Media Viewers-Erweiterung {#about-rules-in-the-dynamic-media-viewers-extension}
 
-Im Regeleditor werden mit der Erweiterung neue Konfigurationsoptionen für den Ereigniseditor hinzugefügt. Darüber hinaus gibt es im Editor eine Option zum manuellen Verweisen auf Ereignisparameter im Aktionseditor als schnelle Alternative zur Nutzung vorkonfigurierter Datenelemente.
+Im Regeleditor werden mit der Erweiterung neue Konfigurationsoptionen für den Ereigniseditor hinzugefügt. Darüber hinaus gibt es im Editor eine Option zum manuellen Verweisen auf Ereignisparameter im Aktionseditor. Dabei handelt es sich um eine schnelle Alternative zur Nutzung vorkonfigurierter Datenelemente.
 
 #### Über den Ereigniseditor {#about-the-events-editor}
 
@@ -434,9 +434,9 @@ Nach der Konfiguration von Adobe Analytics wird Folgendes für die Integration e
 
 * Eine Report Suite ist vorhanden und ausgewählt.
 * Analytics-Variablen stehen zum Empfang von Verfolgungsdaten zur Verfügung.
-* Es gibt Berichte zur Anzeige der in Adobe Analytics erfassten Daten.
+* Berichte sind verfügbar, um erfasste Daten aus Adobe Analytics anzuzeigen.
 
-Siehe auch [Analytics-Implementierungshandbuch](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=de).
+Siehe auch [Analytics-Implementierungshandbuch](https://experienceleague.adobe.com/de/docs/analytics/implementation/home).
 
 **So konfigurieren Sie Adobe Analytics für die Integration:**
 
@@ -444,7 +444,7 @@ Siehe auch [Analytics-Implementierungshandbuch](https://experienceleague.adobe.c
 
    ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 
-   Wählen Sie jetzt eine Report Suite aus.
+   Wählen Sie nun eine Report Suite aus.
 
 ### Auswahl einer Report Suite {#selecting-a-report-suite}
 
@@ -454,13 +454,13 @@ Siehe auch [Analytics-Implementierungshandbuch](https://experienceleague.adobe.c
 
    Wenn keine Report Suite verfügbar ist, müssen Sie oder Ihr Adobe Analytics-Administrator eine erstellen, bevor Sie mit der Konfiguration fortfahren können.
 
-   Siehe [Berichte und Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=de) und [Report Suite erstellen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html?lang=de).
+   Siehe [Berichte und Report Suites](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin) und [Report Suite erstellen](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
    In Adobe Analytics werden Report Suites unter **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** verwaltet.
 
    ![2019-07-22_18-09-49](assets/2019-07-22_18-09-49.png)
 
-   Richten Sie jetzt Adobe Analytics-Variablen ein.
+   Richten Sie nun Adobe Analytics-Variablen ein.
 
 ### Einrichten von Adobe Analytics-Variablen {#setting-up-adobe-analytics-variables}
 
@@ -468,14 +468,14 @@ Siehe auch [Analytics-Implementierungshandbuch](https://experienceleague.adobe.c
 
    Es lassen sich beliebige Variablentypen verwenden, die von Adobe Analytics unterstützt werden. Die Entscheidung über den Variablentyp (z. B. Custom Traffic [props] und Konversion [eVar]) hängt von den spezifischen Anforderungen Ihrer Analytics-Implementierung ab.
 
-   Siehe [Übersicht über props und eVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=de#vars).
+   Siehe [Übersicht über props und eVars](https://experienceleague.adobe.com/de/docs/analytics/implementation/vars/page-vars/evar#vars).
 
    Für die Zwecke dieser Dokumentation wird nur eine Variable „Custom Traffic (props)“ verwendet, da diese in einem Analytics-Bericht innerhalb weniger Minuten nach dem Ausführen einer Aktion auf einer Web-Seite verfügbar ist.
 
    Um eine neue Custom Traffic-Variable zu aktivieren, navigieren Sie in Adobe Analytics in der Symbolleiste zu **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 
 1. Wählen Sie auf der Seite **[!UICONTROL Report Suite Manager]** den richtigen Bericht aus und navigieren Sie dann in der Symbolleiste zu **[!UICONTROL Einstellungen bearbeiten]** > **[!UICONTROL Traffic]** > **[!UICONTROL Traffic-Variablen]**.
-1. Wählen Sie eine nicht verwendete Variable aus, geben Sie ihr einen beschreibenden Namen (**[!UICONTROL Viewer-Asset (prop 30)]**) und ändern Sie das Kombinationsfeld in der Spalte „Aktiviert“ in „Aktiviert“.
+1. Wählen Sie eine nicht verwendete Variable aus, geben Sie ihr einen beschreibenden Namen (**[!UICONTROL Viewer-Asset (prop 30)]**) und setzen Sie das Kombinationsfeld in der Spalte „Aktiviert“ auf „Aktiviert“.
 
    Der folgende Screenshot ist ein Beispiel für eine Custom Traffic-Variable ( **[!UICONTROL prop30]**) zur Verfolgung eines vom Viewer verwendeten Asset-Namens:
 
@@ -485,7 +485,7 @@ Siehe auch [Analytics-Implementierungshandbuch](https://experienceleague.adobe.c
 
 ### Einrichten eines Berichts {#setting-up-a-report}
 
-1. Im Allgemeinen wird die Einrichtung eines Berichts in Adobe Analytics von den jeweiligen Projektanforderungen bestimmt. Die Einrichtung detaillierter Berichte ist daher für diese Integration nicht relevant.
+1. Im Allgemeinen wird die Einrichtung eines Berichts in Adobe Analytics von den jeweiligen Projektanforderungen bestimmt. Daher würde es für diese Integration den Rahmen sprengen, einen detaillierten Bericht einzurichten.
 
    Es ist ausreichend zu wissen, dass Custom Traffic-Berichte automatisch in Adobe Analytics verfügbar werden, nachdem Sie unter [Einrichten von Adobe Analytics-Variablen](#setting-up-adobe-analytics-variables) Custom Traffic-Variablen eingerichtet haben.
 
@@ -497,7 +497,7 @@ Siehe auch [Analytics-Implementierungshandbuch](https://experienceleague.adobe.c
 
 ## Konfigurieren von Experience Platform Tags für die Integration {#configuring-adobe-launch-for-the-integration}
 
-Nachdem Sie Experience Platform Tags konfiguriert haben, werden für die Integration folgende Schritte vorgenommen:
+Nach der Konfiguration von Experience Platform-Tags werden für die Integration folgende Schritte eingerichtet:
 
 * Erstellung einer neuen Eigenschaft, um alle Konfigurationen zusammenzuhalten.
 * Installation und Einrichtung von Erweiterungen. Der Client-seitige Code aller in der Eigenschaft installierten Erweiterungen wird in einer Bibliothek kompiliert. Diese Bibliothek wird später von der Web-Seite verwendet.
@@ -508,15 +508,13 @@ Nachdem Sie Experience Platform Tags konfiguriert haben, werden für die Integra
 
 1. Beginnen Sie, indem Sie über die Experience Cloud-[Startseite](https://experience.adobe.com/#/home) auf Experience Platform Tags zugreifen. Klicken Sie in der Menüleiste auf das Symbol **[!UICONTROL Lösungen]** (eine Matrix mit drei mal drei Punkten) oben rechts auf der Seite und klicken Sie dann auf **[!UICONTROL Tags]**.
 
-   Alternativ können Sie [Experience Platform Tags direkt öffnen](https://launch.adobe.com/).
-
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
 ### Erstellen einer Eigenschaft in Experience Platform Tags {#creating-a-property-in-adobe-launch}
 
 Bei einer Eigenschaft in Experience Platform Tags handelt es sich um eine benannte Konfiguration, die alle Ihre Einstellungen zusammenhält. Es wird eine Bibliothek der Konfigurationseinstellungen erstellt und in verschiedenen Umgebungsebenen (Entwicklung, Staging und Produktion) veröffentlicht.
 
-Siehe auch [Erstellen einer Experience Platform Tags-Eigenschaft](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=de).
+Siehe auch [Erstellen einer Experience Platform Tags-Eigenschaft](https://experienceleague.adobe.com/de/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags).
 
 1. Wählen Sie unter Experience Platform Tags **[!UICONTROL Neue Eigenschaft]** aus.
 1. Geben Sie im Dialogfeld **[!UICONTROL Eigenschaft erstellen]** im Feld **[!UICONTROL Name]** einen beschreibenden Namen ein, z. B. den Titel Ihrer Website. Beispiel: `DynamicMediaViewersProp.`
@@ -541,7 +539,7 @@ Wenn erforderlich, müssen die folgenden Erweiterungen installiert und konfiguri
 
 Es ist keine zusätzliche Konfiguration erforderlich; akzeptieren Sie die vorgeschlagenen Werte. Wenn Sie fertig sind, klicken Sie unbedingt auf **[!UICONTROL Speichern]**.
 
-Siehe [Adobe Experience Cloud Identity Service-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html?lang=de).
+Siehe [Adobe Experience Cloud Identity Service-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/id-service/overview).
 
 * (Erforderlich) *Adobe Analytics*-Erweiterung
 
@@ -557,11 +555,11 @@ Geben Sie auf der Seite „Erweiterung installieren“ die Report Suite-ID in da
 
 *Konfigurieren Sie das folgende Element nur, wenn Sie Video-Tracking verwenden möchten:*
 
-Erweitern Sie auf der Seite **[!UICONTROL Erweiterung installieren]** den Eintrag **[!UICONTROL Allgemein]** und geben Sie dann den Tracking-Server an. Der Tracking-Server folgt der Vorlage `<trackingNamespace>.sc.omtrdc.net`, wobei `<trackingNamespace>` die in der Bereitstellungs-E-Mail abgerufene Information darstellt.
+Erweitern Sie auf der Seite **[!UICONTROL Erweiterung installieren]** den Eintrag **[!UICONTROL Allgemein]** und geben Sie dann den Tracking-Server an. Der Tracking-Server folgt der Vorlage `<trackingNamespace>.sc.omtrdc.net`, wobei `<trackingNamespace>` die in der Bereitstellungs-E-Mail erhaltene Information darstellt.
 
 Wählen Sie **[!UICONTROL Speichern]** aus.
 
-Siehe [Adobe Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=de).
+Siehe [Adobe Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/analytics/overview).
 
 * (Optional, nur erforderlich, wenn Video-Tracking benötigt wird) Erweiterung *Adobe Media Analytics for Audio and Video*
 
@@ -569,7 +567,7 @@ Füllen Sie das Feld für den Tracking-Server aus. Der Tracking-Server für die 
 
 Alle anderen Felder sind optional.
 
-Siehe [Erweiterung Adobe Media Analytics for Audio and Video](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=de).
+Siehe [Erweiterung Adobe Media Analytics for Audio and Video](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/media-analytics/overview).
 
 * (Erforderlich) Erweiterung *Dynamic Media Viewer*
 
@@ -597,9 +595,9 @@ Detaillierte Informationen zu den Funktionen der Erweiterung finden Sie unter [K
 
 Um Änderungen an der Experience Platform Tags-Konfiguration vorzunehmen (einschließlich eingerichteter Eigenschaften, Erweiterungen, Regeln und Datenelemente), müssen Sie diese Änderungen *veröffentlichen*. Die Veröffentlichung in Experience Platform Tags erfolgt über die Registerkarte „Publishing“ unter der Eigenschaftskonfiguration.
 
-Experience Platform Tags kann über mehrere Entwicklungsumgebungen, eine Staging-Umgebung und eine Produktionsumgebung verfügen. Standardmäßig verweist die Experience Platform Tags Cloud-Konfiguration in Experience Manager den Experience Manager-Autorenknoten auf die Staging-Umgebung von Experience Platform Tags. Der Experience Manager-Veröffentlichungsknoten verweist auf die Produktionsumgebung von Experience Platform Tags. Deshalb muss mit den Standardeinstellungen für Experience Manager die Experience Platform Tags-Bibliothek in der Staging-Umgebung veröffentlicht werden. Auf diese Weise kann die Bibliothek im Experience Manager-Autorenknoten verwendet werden. Sie können sie dann in der Produktionsumgebung veröffentlichen, damit sie im Veröffentlichungsknoten von Experience Manager verwendet werden kann.
+Experience Platform Tags kann über mehrere Entwicklungsumgebungen, eine Staging-Umgebung und eine Produktionsumgebung verfügen. Standardmäßig verweist die Experience Platform Tags Cloud-Konfiguration in Experience Manager den Experience Manager-Autorenknoten auf die Staging-Umgebung von Experience Platform Tags. Der Experience Manager-Veröffentlichungsknoten verweist auf die Produktionsumgebung von Experience Platform Tags. Deshalb muss mit den Standardeinstellungen für Experience Manager die Experience Platform Tags-Bibliothek in der Staging-Umgebung veröffentlicht werden. Auf diese Weise können Sie sie im Experience Manager-Autorenknoten verwenden. Sie können sie dann in der Produktionsumgebung veröffentlichen, damit sie im Veröffentlichungsknoten von Experience Manager verwendet werden kann.
 
-Weitere Informationen zu Experience Platform Tags-Umgebungen finden Sie unter [Umgebungen](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=de).
+Weitere Informationen zu Experience Platform Tags-Umgebungen finden Sie unter [Umgebungen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/environments/environments).
 
 Das Veröffentlichen einer Bibliothek umfasst die folgenden zwei Schritte:
 
@@ -614,7 +612,7 @@ Das Veröffentlichen einer Bibliothek umfasst die folgenden zwei Schritte:
 
    ![image2019-7-15_14-43-17](assets/image2019-7-15_14-43-17.png)
 
-1. Geben Sie auf der Seite „Neue Bibliothek erstellen“ im Feld **[!UICONTROL Name]** einen beschreibenden Namen für die neue Bibliothek ein. Beispiel:
+1. Geben Sie auf der Seite „Neue Bibliothek erstellen“ in das Feld **[!UICONTROL Name]** einen beschreibenden Namen für die neue Bibliothek ein. Beispiel:
 
    *DynamicMediaViewersLib*
 
@@ -657,7 +655,7 @@ Das Veröffentlichen einer Bibliothek umfasst die folgenden zwei Schritte:
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   Weitere Informationen zum Veröffentlichungsverfahren in Experience Platform Tags finden Sie unter [Veröffentlichung](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=de).
+   Weitere Informationen zum Veröffentlichungsverfahren in Experience Platform Tags finden Sie unter [Veröffentlichung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview).
 
 ## Konfigurieren von Adobe Experience Manager für die Integration {#configuring-adobe-experience-manager-for-the-integration}
 
@@ -674,7 +672,7 @@ Die Experience Manager-Konfiguration besteht aus den folgenden zwei Hauptschritt
 
 ### Experience Manager IMS konfigurieren {#configuring-aem-ims}
 
-1. Klicken Sie im Experience Manager-Autorenknoten auf das **[!UICONTROL Werkzeugsymbol]** (Hammer) und navigieren Sie dann zu **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**.
+1. Klicken Sie im Experience Manager-Autorenknoten auf **[!UICONTROL Tools]**-Symbol (Hammer) und gehen Sie dann zu **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**.
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
@@ -711,9 +709,9 @@ Die Experience Manager-Konfiguration besteht aus den folgenden zwei Hauptschritt
 
 1. Gehen Sie auf der dritten Seite von **[!UICONTROL Neue Integration erstellen]** wie folgt vor:
 
-   * Geben Sie im Feld **[!UICONTROL Name]** einen beschreibenden Namen ein. Beispielsweise *DynamicMediaViewersIO*.
+   * Geben Sie in das Feld **[!UICONTROL Name]** einen beschreibenden Namen ein. Beispielsweise *DynamicMediaViewersIO*.
 
-   * Geben Sie im Feld **[!UICONTROL Beschreibung]** eine Beschreibung für die Integration ein.
+   * Geben Sie in das Feld **[!UICONTROL Description]** (Beschreibung) eine Beschreibung für die Integration ein.
 
    * Laden Sie im Bereich **[!UICONTROL Zertifikate mit öffentlichem Schlüssel]** Ihre Datei mit öffentlichem Schlüssel (&#42;.cert) hoch, die Sie in den Schritten zuvor heruntergeladen haben.
 
@@ -797,7 +795,7 @@ Beispiel: `https://ims-na1.adobelogin.com/`
 
 ## Konfigurieren von Experience Platform Tags Cloud für die Integration {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. Klicken Sie im Experience Manager-Autorenknoten in der oberen linken Ecke auf das **[!UICONTROL Werkzeugsymbol]** (Hammer), navigieren Sie dann zu **[!UICONTROL Cloud Services]** > **[!UICONTROL Experience Platform Tags-Konfigurationen]**.
+1. Klicken Sie im Experience Manager-Autorenknoten in der oberen linken Ecke auf das **[!UICONTROL Tools]**-Symbol (Hammer) und navigieren Sie dann zu **[!UICONTROL Cloud Services]** > **[!UICONTROL Experience Platform Tags-Konfigurationen]**.
 
    ![26.07.2019_12-10-38](assets/2019-07-26_12-10-38.png)
 
@@ -852,8 +850,8 @@ Beispiel: `https://ims-na1.adobelogin.com/`
 
 Derzeit unterstützt der Experience Manager-Autorenknoten nicht die Integration von Dynamic Media Viewern mit Experience Platform Tags.
 
-Sie wird jedoch im Experience Manager-Veröffentlichungsknoten unterstützt. Bei Verwendung der Standardeinstellungen der Experience Platform Tags Cloud-Konfiguration wird für den Experience Manager-Veröffentlichungsknoten die Produktionsumgebung von Experience Platform Tags verwendet. Daher müssen Experience Platform Tags-Bibliotheksaktualisierungen jedes Mal beim Test von der Entwicklungsumgebung in die Produktionsumgebung verschoben werden.
+Sie wird jedoch im Experience Manager-Veröffentlichungsknoten unterstützt. Bei Verwendung der Standardeinstellungen der Experience Platform Tags-Cloud-Konfiguration verwendet der Experience Manager-Veröffentlichungsknoten die Produktionsumgebung von Experience Platform Tags. Daher müssen Experience Platform Tags-Bibliotheksaktualisierungen jedes Mal beim Test von der Entwicklungsumgebung in die Produktionsumgebung verschoben werden.
 
 Es gibt eine Möglichkeit, diese Einschränkung zu umgehen. Geben Sie in der Experience Platform Tags Cloud-Konfiguration für den Experience Manager-Veröffentlichungsknoten oben die Entwicklungs- oder Staging-URL der Platform Tags-Bibliothek an. Dadurch verwendet der Experience Manager-Veröffentlichungsknoten die Entwicklungs- oder Staging-Version der Experience Platform Tags-Bibliothek.
 
-Weitere Informationen zum Einrichten der Experience Platform Tags Cloud-Konfiguration finden Sie unter [Integrieren von Experience Manager mit Experience Platform Tags über  [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=de).
+Weitere Informationen zum Einrichten der Experience Platform Tags Cloud-Konfiguration finden Sie unter [Integrieren von Experience Manager mit Experience Platform Tags über  [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/de/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview).

@@ -7,10 +7,10 @@ feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 100%
+source-wordcount: '780'
+ht-degree: 90%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=de) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata) |
 | AEM 6.5 | Dieser Artikel |
 
 Die XMP-Writeback-Funktion in [!DNL Adobe Experience Manager Assets] repliziert Änderungen von Metadaten in den Ausgabedarstellungen des Original-Assets. Wenn Sie die Metadaten für ein Asset aus Assets heraus ändern oder das Asset hochladen, werden die Änderungen zuerst im Metadaten-Knoten in der Asset-Hierarchie gespeichert.
@@ -47,7 +47,7 @@ Um Metadatenänderungen beim Hochladen des Assets in die Ausgabeformate zu propa
 
 ## Aktivieren von XMP-Writeback für bestimmte Ausgabeformate {#enabling-xmp-writeback-for-specific-renditions}
 
-Damit die XMP-Writeback-Funktion die Metadatenänderungen in die Ausgabedarstellungen kopieren kann, müssen Sie diese Ausgabeformate im Workflow-Schritt „XMP-Writeback-Vorgang“ des Workflows [!UICONTROL DAM-Metadaten-Writeback] angeben. Standardmäßig ist dieser Schritt mit dem ursprünglichen Format konfiguriert.
+Damit die XMP-Writeback-Funktion die Metadatenänderungen in die Ausgabedarstellungen kopieren kann, müssen Sie diese Ausgabeformate im Workflow-Schritt &quot;XMP-Writeback-Prozess“ des Workflows [!UICONTROL DAM-Metadaten-Writeback] angeben. Standardmäßig ist dieser Schritt mit dem ursprünglichen Format konfiguriert.
 
 Führen Sie folgende Schritte aus, damit die Funktion „XMP Writeback“ Metadaten in die Miniaturansichten „140.100.png“ und „319.319.png“ der Ausgabedarstellung überträgt.
 
@@ -66,11 +66,9 @@ Führen Sie folgende Schritte aus, damit die Funktion „XMP Writeback“ Metada
 
 1. Speichern Sie den Workflow.
 
-Die Metadatenänderungen werden in die Ausgabeformate „thumbnail.140.100.png“ und „thumbnail.319.319.png“ des Elements und nicht auf die anderen Ausgabeformate übertragen.
+Die Metadatenänderungen werden an die Ausgabedarstellungen „thumbnail.140.100.png“ und „thumbnail.319.319.png“ des Assets übertragen und nicht an die anderen.
 
 >[!NOTE]
->
->Informationen zu Problemen bezüglich XMP-Writeback unter 64-Bit-Linux finden Sie unter [XMP-Writeback unter 64-Bit-RedHat Linux aktivieren](https://helpx.adobe.com/de/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
 >Informationen zu den unterstützten Plattformen finden Sie unter [Voraussetzungen für XMP-Metadaten-Writeback](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 
@@ -92,7 +90,7 @@ Durch Filtern von XMP-Metadaten über die Zulassungsliste wird dieses Problem be
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. Um blockierte XMP-Eigenschaften nach dem Anwenden der Filterung über eine Zulassungsliste herauszufiltern, geben Sie diese im Feld **[!UICONTROL Blockierte XML-Namen für die XMP-Filterung]** an.
+1. Um blockierte XMP-Eigenschaften nach dem Anwenden der Filterung über die Zulassungsliste herauszufiltern, geben Sie diese im Feld **[!UICONTROL Blockierte XML-Namen für die XMP-Filterung]** an.
 
    >[!NOTE]
    >
