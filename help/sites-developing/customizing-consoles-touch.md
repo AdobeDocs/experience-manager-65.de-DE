@@ -151,6 +151,7 @@ Anpassen von Spalten in der Listenansicht:
 1. Optional:
 
    * Falls Sie zusätzliche Daten hinzufügen möchten, müssen Sie einen [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) mit einer
+
      `pageInfoProviderType`-Eigenschaft schreiben.
 
    Ein Beispiel sehen Sie im unten (aus GitHub) angehängten Class-Bundle.
