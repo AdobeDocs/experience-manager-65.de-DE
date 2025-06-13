@@ -56,7 +56,7 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >Siehe:
 >
->* Knowledgebase-Artikel zum [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935) für weitere Tipps und Tools.
+>* Knowledgebase-Artikel zum [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-16935) für weitere Tipps und Tools.
 >* AEM-Gems-Sitzung [AEM 6.0 Entwicklermodus](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=de).
 >
 

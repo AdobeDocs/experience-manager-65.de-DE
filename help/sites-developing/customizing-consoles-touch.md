@@ -64,7 +64,7 @@ Beispielsweise können die folgenden Speicherorte innerhalb der `/libs`-Struktur
 
 >[!NOTE]
 >
->Weitere Tipps und Informationen zu Tools finden Sie im Knowledge-Base-Artikel [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935).
+>Weitere Tipps und Informationen zu Tools finden Sie im Knowledge-Base-Artikel [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-16935).
 
 ## Anpassen der Standardansicht für eine Konsole {#customizing-the-default-view-for-a-console}
 

@@ -1133,7 +1133,7 @@ Wenn Ihrem System der Festplattenspeicher ausgeht oder Sie feststellen, dass die
 * Haben Sie die [Versionsbereinigung](/help/sites-deploying/version-purging.md) deaktiviert?
 * Wissensdatenbank:
 
-   * [Zu viele geöffnete Dateien]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html
+   * [Zu viele geöffnete Dateien]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=de
 
 ### Regelmäßige Leistungsbeeinträchtigung {#regular-performance-degradation}
 
@@ -1142,7 +1142,7 @@ Wenn sich die Leistung Ihrer Instanz nach jedem Neustart (manchmal eine Woche od
 * [Unzureichender Speicher](#outofmemory)
 * Die Wissensdatenbank:
 
-   * [Nicht geschlossener Ressourcen-Resolver](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761)
+   * [Nicht geschlossener Ressourcen-Resolver](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-23761)
 
 ### JVM-Optimierung {#jvm-tuning}
 

@@ -111,7 +111,7 @@ Wenn Funktionen für AEM WCM entwickelt werden, können JCR-Sitzungen geöffnet 
 * Es befinden sich viele „CacheManager: resizeAll“-Einträge in der Protokolldatei. Die folgende Zahl (size=&lt;x>) gibt die Anzahl an Caches an; jede Sitzung öffnet mehrere Caches.
 * Gelegentlich reicht der Speicherplatz des Systems nicht aus (nach einigen Stunden, Tagen oder Wochen – je nach Schweregrad).
 
-Informationen zum Starten der Analyse nicht geschlossener Sitzungen finden Sie im Knowledgebase-Artikel [Nicht geschlossener Ressourcen-Resolver](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761).
+Informationen zum Starten der Analyse nicht geschlossener Sitzungen finden Sie im Knowledgebase-Artikel [Nicht geschlossener Ressourcen-Resolver](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-23761).
 
 ### Verwenden der Adobe Experience Manager-Web-Konsole {#using-the-adobe-experience-manager-web-console}
 
