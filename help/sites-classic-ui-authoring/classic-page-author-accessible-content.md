@@ -10,10 +10,10 @@ exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '9070'
-ht-degree: 100%
+source-wordcount: '9057'
+ht-degree: 99%
 
 ---
 
@@ -314,7 +314,7 @@ Genaue Details zum Erstellen von Audiobeschreibungen für Videos würden den Rah
 * [Erfolgskriterien 1.2.3 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
 * [Adobe Encore CS5](https://helpx.adobe.com/de/premiere-pro/using/whats-new.html)
 
-### Untertitel (live) (1.2.4)          {#captions-live}
+### Untertitel (live) (1.2.4)  {#captions-live}
 
 * Erfolgskriterium 1.2.4
 * Level AA
@@ -328,12 +328,11 @@ Dieses Erfolgskriterium entspricht dem Erfolgskriterium zu [Untertitel (aufgezei
 
 Befolgen Sie die Anleitungen, die oben unter [Untertitel (voraufgezeichnet)](#captions-pre-recorded) genannt wurden. Da die Medien live übermittelt werden, muss die Bereitstellung der Untertitel so schnell wie möglich erfolgen und sofort auf das reagieren, was passiert. Daher sollten Sie Tools für die Echtzeit-Untertitelung oder für „Sprache in Text“ in Erwägung ziehen.
 
-Detaillierte Anweisungen dazu würden den Rahmen dieses Dokuments sprengen, doch in den folgenden Ressourcen finden Sie nützliche Informationen:
+Detaillierte Anweisungen würden den Rahmen dieses Dokuments sprengen, doch die folgende Ressource bietet hilfreiche Informationen:
 
 * [WebAIM: Echtzeit-Untertitelung](https://webaim.org/techniques/captions/realtime)
-* [AccessIT (University of Washington): Können Untertitel automatisch über die Spracherkennung erstellt werden?](https://www.washington.edu/doit/programs/accessit?1209)
 
-#### Weitere Informationen: Untertitel (Live) (1.2.4)     {#more-information-captions-live}
+#### Weitere Informationen: Untertitel (Live) (1.2.4)       {#more-information-captions-live}
 
 * [Erfolgskriterien 1.2.4 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
 * [Erfolgskriterien 1.2.4 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-real-time-captions)
@@ -642,7 +641,7 @@ Wenn es nicht möglich ist, die empfohlenen Kontraststufen zu erreichen, stellen
 * [Erfolgskriterien 1.4.3 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
 * [Erfolgskriterien 1.4.3 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-visual-audio-contrast-contrast)
 
-### Bilder von Text (1.4.5)     {#images-of-text}
+### Bilder von Text (1.4.5) {#images-of-text}
 
 * Erfolgskriterium 1.4.5
 * Level AA
@@ -672,7 +671,7 @@ Wenn Bilder von Text verwendet werden müssen, nutzen Sie CSS, um die Bilder von
 
 [Grundsatz 2: Bedienbar – Komponenten der Benutzerschnittstelle und der Navigation müssen bedienbar sein.](https://www.w3.org/TR/WCAG20/#operable)
 
-### Pausieren, Beenden, Ausblenden (2.2.2)          {#pause-stop-hide}
+### Pausieren, Beenden, Ausblenden (2.2.2)  {#pause-stop-hide}
 
 * Erfolgskriterium 2.2.2
 * Level A
@@ -718,7 +717,7 @@ Abhängig von der Art des Inhalts können Sie beim Erstellen von Web-Seiten mit 
 
 [Richtlinie 2.3 Anfälle: Gestalten Sie Inhalt nicht auf Arten, von denen bekannt ist, dass sie zu Anfällen führen.](https://www.w3.org/TR/WCAG20/#seizure)
 
-### Grenzwert von maximal dreimaligem Blitzen (2.3.1)     {#three-flashes-or-below-threshold}
+### Grenzwert von maximal dreimaligem Blitzen (2.3.1) {#three-flashes-or-below-threshold}
 
 * Erfolgskriterium 2.3.1
 * Level A
@@ -744,7 +743,7 @@ Gehen Sie wie folgt vor:
 * [Erfolgskriterium 2.3.1 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html)
 * [Erfolgskriterium 2.3.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#seizure)
 
-### Seite mit Titel versehen (2.4.2)          {#page-titled}
+### Mit Titel versehene Seite (2.4.2)  {#page-titled}
 
 * Erfolgskriterium 2.4.2
 * Level A
@@ -765,7 +764,7 @@ Sie können den Seitentitel auch gemeinsam mit der Seite bearbeiten, indem Sie *
 * [Erfolgskriterium 2.4.2 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html)
 * [Erfolgskriterium 2.4.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-title)
 
-### Link-Zweck (im Kontext) (2.4.4)          {#link-purpose-in-context}
+### Link-Zweck (im Kontext) (2.4.4)  {#link-purpose-in-context}
 
 * Erfolgskriterium 2.4.4
 * Level A

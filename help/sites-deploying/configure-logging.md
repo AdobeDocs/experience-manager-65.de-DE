@@ -9,9 +9,9 @@ feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '636'
 ht-degree: 100%
 
 ---
@@ -39,10 +39,6 @@ Die Konfiguration [Apache Sling Logging Configuration](/help/sites-deploying/osg
 * Anzahl der aufzubewahrenden Versionen
 * Versionsrotation; entweder maximale Größe oder Zeitintervall
 * Format zum Schreiben der Protokollmeldungen
-
->[!NOTE]
->
->In diesem [Knowledgebase-Artikel](https://helpx.adobe.com/de/experience-manager/kb/HowToRotateRequestAndAccessLog.html) wird das Rotieren von request.log- und access.log-Dateien erläutert.
 
 ## Logger und Writer für einzelne Dienste {#loggers-and-writers-for-individual-services}
 

@@ -9,9 +9,9 @@ exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1767'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ Ich möchte diese Erfahrungslücken schließen, indem ich meine eigenen Ideen zu
 
 ## Sieben einfache Regeln {#seven-simple-rules}
 
-### 1. Regel: Erst die Daten, dann die Struktur. Zumindest gegebenenfalls. {#rule-data-first-structure-later-maybe}
+### &#x200B;1. Regel: Erst die Daten, dann die Struktur. Zumindest gegebenenfalls. {#rule-data-first-structure-later-maybe}
 
 #### Erklärung {#explanation-1}
 
@@ -58,7 +58,7 @@ Weitere Datenbeschränkungen wie erforderliche oder Typ- und Wertebeschränkunge
 
 Dass im obigen Beispiel eine `lastModified`-Datumseigenschaft beispielsweise für den „blog post“-Knoten verwendet wird, bedeutet noch lange nicht, dass ein spezieller Knotentyp benötigt wird. Ich würde zumindest anfänglich auf jeden Fall `nt:unstructured` für meine „blog post“-Knoten verwenden. Da ich in meiner Blogging-Anwendung ohnehin nur das lastModified-Datum anzeigen möchte (und darauf möglicherweise die Funktion „Sortieren nach“ anwende), kümmert es mich nicht, ob dies überhaupt ein Datum ist. Da ich fest davon ausgehe, dass es in meiner Blogging-Anwendung sowieso ein Datum gibt, ist es nicht nötig, das Vorhandensein eines `lastModified`-Datums in Form eines Knotentyps zu deklarieren.
 
-### 2. Regel: Steuern Sie die Content-Hierarchie, anstatt sie dem Zufall zu überlassen. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
+### &#x200B;2. Regel: Steuern Sie die Content-Hierarchie, anstatt sie dem Zufall zu überlassen. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
 #### Erklärung {#explanation-2}
 
@@ -73,8 +73,6 @@ Ich persönlich ziehe es vor, zunächst Hierarchiekonventionen anstelle des Knot
 >[!CAUTION]
 >
 >Die Art und Weise, wie ein Content-Repository strukturiert ist, kann sich auch auf die Leistung auswirken. Die beste Leistung wird erzielt, wenn ein Content-Repository nicht mehr als 1.000 untergeordnete Knoten aufweist.
->
->Weitere Informationen finden Sie unter [Wie viele Daten kann CRX verarbeiten?](https://helpx.adobe.com/de/experience-manager/kb/CrxLimitation.html)
 
 #### Beispiel {#example-2}
 
@@ -96,7 +94,7 @@ Es scheint mir klar, dass sich die Struktur des Inhalts anhand des Beispiels ohn
 
 Mit dem obigen Content-Modell kann ich es „anonymen“ Benutzenden ohne Weiteres gestatten, Kommentare zu erstellen, ohne dabei den Schreibschutz für den Rest des Workspace für diese Benutzenden aufzuheben.
 
-### 3. Regel: Workspaces sind für „clone()“, „merge()“ und „update()“ vorgesehen. {#rule-workspaces-are-for-clone-merge-and-update}
+### &#x200B;3. Regel: Workspaces sind für „clone()“, „merge()“ und „update()“ vorgesehen. {#rule-workspaces-are-for-clone-merge-and-update}
 
 #### Erklärung {#explanation-3}
 
@@ -127,7 +125,7 @@ Für Folgendes sollten Workspaces nicht verwendet werden:
 * zur Unterscheidung von Inhalten für verschiedene Zielgruppen (öffentliche, private, lokale)
 * für Postfächer für verschiedene Benutzende
 
-### 4. Regel: Bei gleichgeordneten Elementen mit identischen Namen ist Vorsicht geboten. {#rule-beware-of-same-name-siblings}
+### &#x200B;4. Regel: Bei gleichgeordneten Elementen mit identischen Namen ist Vorsicht geboten. {#rule-beware-of-same-name-siblings}
 
 #### Erklärung {#explanation-4}
 
@@ -153,7 +151,7 @@ Anstelle von
 /content/blog[1]/post[2]
 ```
 
-### 5. Regel: Verweise richten Schaden an. {#rule-references-considered-harmful}
+### &#x200B;5. Regel: Verweise richten Schaden an. {#rule-references-considered-harmful}
 
 #### Erklärung {#explanation-5}
 
@@ -169,7 +167,7 @@ Also würde ich diese Verweise entweder über „schwache Referenzen“ modellie
 
 Möglicherweise gibt es Anwendungsfälle, in denen ein System wirklich nicht funktionieren kann, solange ein Verweis nicht zugeordnet wird, aber ein praktisches Beispiel fällt mir dazu nicht ein.
 
-### 6. Regel: Dateien sind Dateien. {#rule-files-are-files}
+### &#x200B;6. Regel: Dateien sind Dateien. {#rule-files-are-files}
 
 #### Erklärung {#explanation-6}
 
@@ -199,7 +197,7 @@ Es mag zwar Anwendungsfälle geben, in denen nur eine Binärdaten-Eigenschaft ve
 /content/myblog/posts/iphone_shipping/attachments/front.jpg/jcr:content [nt:resource]
 ```
 
-### 7. Regel: IDs sind schlecht. {#rule-ids-are-evil}
+### &#x200B;7. Regel: IDs sind schlecht. {#rule-ids-are-evil}
 
 #### Erklärung {#explanation-7}
 

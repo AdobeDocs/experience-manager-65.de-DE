@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 813ddbf98b65588752ffa94e9ac4a810cff45302
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '3651'
+source-wordcount: '3630'
 ht-degree: 98%
 
 ---
@@ -91,10 +91,10 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen der Java™ Vi
 | **Plattform** | **Unterstützungsebene** | **Verknüpfung** |
 |---|---|---|
 | Oracle Java™ SE 17 JDK | Z: Nicht unterstützt `[1]` |
-| Oracle Java™ SE 11 JDK − 64 Bit | A: Unterstützt `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
+| Oracle Java™ SE 11 JDK − 64 Bit | A: Unterstützt `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>) |
 | Oracle Java™ SE 10 JDK | Z: Nicht unterstützt `[1]` |
 | Oracle Java™ SE 9 JDK | Z: Nicht unterstützt `[1]` |
-| Oracle Java™ SE 8 JDK − 64 Bit | A: Unterstützt `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
+| Oracle Java™ SE 8 JDK − 64 Bit | A: Unterstützt `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10) |
 | IBM® J9 VM − Build 2.9, JRE 1.8.0 | A: Unterstützt `[2]` |
 | IBM® J9 VM − Build 2.8, JRE 1.8.0 | A: Unterstützt `[2]` |
 | Azul Zulu OpenJDK 11 − 64 Bit | A: Unterstützt `[3]` | |
@@ -554,7 +554,7 @@ Das Zurückschreiben von XMP-Daten wird für die folgenden Plattformen und Datei
 
 * **Betriebssysteme:**
 
-   * Linux® (Unterstützung von 32-Bit- und 32-Bit-Anwendungen auf 64-Bit-Systemen). Schritt-für-Schritt-Anleitungen zur Installation von 32-Bit-Client-Bibliotheken finden Sie unter [Aktivieren von XMP-Extraktion und -Writeback auf Red Hat Linux® (64 Bit)](https://helpx.adobe.com/de/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
+   * Linux® (Unterstützung von 32-Bit- und 32-Bit-Anwendungen auf 64-Bit-Systemen).
 
    * Windows Server
    * macOS X (64 Bit)

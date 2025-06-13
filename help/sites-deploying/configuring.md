@@ -9,10 +9,10 @@ feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '2093'
-ht-degree: 100%
+source-wordcount: '2085'
+ht-degree: 98%
 
 ---
 
@@ -184,7 +184,7 @@ Weitere Informationen zur Konfiguration finden Sie unter [Dispatcher](https://ex
 
 ### Konfigurieren von AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
-Mit der Veröffentlichung der AEM-Dokumentendienste und AEM-Dokumentsicherheit hat AEM jetzt die Möglichkeit, mithilfe der LiveCycle-Dokumentendienste ein XFA-Formular zu rendern, ein Dokument in das PDF-Format zu konvertieren und ein Dokument durch eine Richtlinie zu schützen. Weitere Informationen finden Sie unter [AEM LiveCycle Connector](https://helpx.adobe.com/de/livecycle/help/aem/aem-livecycle-connector.html).
+Mit der Veröffentlichung der AEM Doc Services und AEM Doc Security verfügt AEM nun über die Möglichkeit, die LiveCycle Doc Services aufzurufen, um ein XFA-Formular zu rendern, ein Dokument in PDF zu konvertieren und ein Dokument durch eine Richtlinie zu schützen.
 
 ### Abladung von Vorgängen und Topologieverwaltung {#job-offloading-and-topology-administration}
 

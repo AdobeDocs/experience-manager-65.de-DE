@@ -5,10 +5,10 @@ exl-id: 8221c2db-82d4-43df-ad38-e8e7831541ac
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 100%
+source-wordcount: '477'
+ht-degree: 99%
 
 ---
 
@@ -25,8 +25,6 @@ Der App Builder bietet Kunden eine Möglichkeit, Adobe Experience Manager in ver
 * Middleware-Erweiterbarkeit: Verbinden Sie externe Systeme mit Adobe-Anwendungen, indem Sie benutzerdefinierte Connectoren erstellen oder eine Suite vorgefertigter Integrationen nutzen.
 * Erweiterbarkeit der Hauptdienste: Erweiterung der Kernanwendungsfunktionen durch Erweiterung des Standardverhaltens um benutzerdefinierte Funktionen und Geschäftslogik.
 * Benutzererlebnis-Erweiterbarkeit: Erweitern Sie das Kernerlebnis, um Geschäftsanforderungen zu unterstützen oder kundenspezifische digitale Eigenschaften, Storefronts und Back-Office-Apps zu erstellen.
-
-App Builder steht seit Sommer 2020 für Unternehmenskunden und -partner über die Entwicklervorschau von Adobe zur Verfügung. Die allgemeine Verfügbarkeit von App Builder ist für Dezember 2021 geplant. Adobe lädt Entwicklerinnen und Entwickler dazu ein, App Builder über unser [Testprogramm](https://developer.adobe.com/app-builder/trial/) von Adobe auszuprobieren.
 
 >[!NOTE]
 >
@@ -45,13 +43,13 @@ Die folgende Abbildung zeigt, wie eine auf App Builder aufbauende Standardanwend
 
 ![Architektur](assets/appbuilder-architecture.jpg)
 
-Weitere Informationen zur App Builder-Architektur finden Sie unter [Überblick über die Architektur](https://developer.adobe.com/app-builder/docs/guides/).
+Weitere Informationen zur App Builder-Architektur finden Sie unter [Überblick über die Architektur](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview).
 
 ## Erste Schritte mit dem App Builder {#additional-resources}
 
 Um die ersten Schritte mit App Builder zu erleichtern, wurde für den Einstieg eine Reihe von Dokumentationen erstellt:
 
-* [App Builder – Erste Schritte](https://developer.adobe.com/app-builder/docs/getting_started/)
+* [App Builder – Erste Schritte](https://developer.adobe.com/app-builder/docs/get_started/)
 
 ## Weiteres Lernen mit Dokumentation {#appbuilder-documentation}
 

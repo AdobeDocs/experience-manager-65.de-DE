@@ -10,10 +10,10 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
 source-wordcount: '6216'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -657,7 +657,7 @@ CSP ermöglicht eine Feinabstimmung von Richtlinien. In einer komplexen Anwendun
 
 >[!NOTE]
 >
->Weitere Informationen zur Funktionsweise finden Sie auf der [OWASP-Seite zum Thema Inhaltssicherheitsrichtline](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>Weitere Informationen zur Funktionsweise finden Sie auf der [OWASP-Seite zum Thema Inhaltssicherheitsrichtline](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Dimensionierung {#sizing}
 

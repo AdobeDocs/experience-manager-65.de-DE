@@ -10,10 +10,10 @@ exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '4843'
-ht-degree: 100%
+source-wordcount: '4828'
+ht-degree: 99%
 
 ---
 
@@ -314,7 +314,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>Wenn diese Eigenschaft festgelegt ist, dient sie als Zellen-ID. Weitere Informationen finden Sie im Artikel <a href="https://helpx.adobe.com/de/experience-manager/kb/DesigneCellId.html">Erstellung von Design-Zellen-IDs</a> in der Wissensdatenbank.<br /> </td>
+   <td>Wenn festgelegt, wird diese Eigenschaft als Zell-ID angenommen.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>

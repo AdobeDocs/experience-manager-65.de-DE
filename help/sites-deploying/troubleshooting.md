@@ -9,9 +9,9 @@ exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1182'
 ht-degree: 100%
 
 ---
@@ -153,8 +153,3 @@ Wenn persistenter Speicher in das Installationsverzeichnis eingebettet ist, z. 
 >Adobe empfiehlt, das Repository zu sichern, bevor Sie AEM löschen. Wenn Sie das gesamte Installationsverzeichnis „&lt;cq-installation-directory>“ löschen, wird dabei auch das Repository gelöscht. Sichern Sie die Repository-Daten vor dem Löschen, indem Sie den Ordner „&lt;cq-installation-directory>/crx-quickstart/repository“ an einen anderen Speicherort verschieben oder kopieren, bevor Sie die anderen Ordner löschen.
 
 Wenn Ihre AEM-Installation externen Speicher verwendet, z. B. einen Datenbank-Server, werden beim Entfernen des Ordners zwar nicht automatisch die Daten entfernt, aber die Speicherkonfiguration, wodurch die Wiederherstellung der JCR-Inhalte schwierig wird.
-
-### JSP-Dateien werden unter JBoss® nicht kompiliert {#jsp-files-are-not-compiled-on-jboss}
-
-Wenn Sie JSP-Dateien auf JBoss® installieren oder auf Experience Manager aktualisieren und die entsprechenden Servlets nicht kompiliert sind, stellen Sie sicher, dass der JBoss®-JSP-Compiler korrekt konfiguriert ist. Weitere Informationen finden Sie im 
-Artikel [JSP-Kompilierungsprobleme in JBoss®](https://helpx.adobe.com/de/experience-manager/kb/jsps-dont-compile-jboss.html).

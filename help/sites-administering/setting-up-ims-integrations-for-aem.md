@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie IMS-Integrationen für AEM einrichten.
 feature: Security
 role: Admin
 exl-id: 3c6dbb7e-847f-407b-ac9c-4676dba671a5
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 100%
@@ -50,11 +50,11 @@ Weitere Informationen zu dieser Konfiguration finden Sie in der Dokumentation zu
 
 * Erstellen von neuen OAuth-Anmeldedaten:
 
-   * [OAuth-Implementierungshandbuch für Server-zu-Server-Anmeldedaten](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+   * [OAuth-Implementierungshandbuch für Server-zu-Server-Anmeldedaten](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
 * Migration von vorhandenen JWT-Anmeldedaten zu OAuth-Anmeldedaten:
 
-   * [Migration von JWT-Anmeldedaten (Service Account) zu OAuth-Server-zu-Server-Anmeldedaten](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+   * [Migration von JWT-Anmeldedaten (Service Account) zu OAuth-Server-zu-Server-Anmeldedaten](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration?lang=de)
 
 Zum Beispiel:
 
@@ -68,7 +68,7 @@ So erstellen Sie eine neue Adobe IMS-Integration mithilfe von OAuth:
 
 1. Wählen Sie **Erstellen** aus.
 
-1. Schließen Sie die Konfiguration basierend auf Details aus der [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/) ab. Zum Beispiel:
+1. Schließen Sie die Konfiguration basierend auf Details aus der [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) ab. Zum Beispiel:
 
    ![Erstellen einer OAuth-Konfiguration](assets/ims-create-oauth-configuration.png)
 

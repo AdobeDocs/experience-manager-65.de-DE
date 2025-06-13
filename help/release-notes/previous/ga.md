@@ -5,9 +5,9 @@ exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '4493'
+source-wordcount: '4477'
 ht-degree: 99%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 99%
 |---|---|
 | Version | 6.5 |
 | Typ | Hauptversion |
-| Datum der allgemeinen Verfügbarkeit | 8. April 2019 |
+| Datum der allgemeinen Verfügbarkeit | &#x200B;8. April 2019 |
 | Empfohlene Updates | Siehe [neueste Updates für AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de). |
 
 ### Wissenswertes {#trivia}
@@ -157,11 +157,9 @@ Weitere Informationen zu Änderungen in AEM Screens finden Sie in den Versionsh
      ```
 
    * Variablendeklarationen mit data-sly-set:
-
      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
    * Listen- und Wiederholungsparameter: begin, step, end:
-
      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * Kennungen für data-sly-unwrap:
@@ -234,7 +232,7 @@ Weitere Informationen zu Änderungen in AEM Screens finden Sie in den Versionsh
 
 #### Content-Targeting und -Simulation {#content-targeting-simulation}
 
-* Die ContextHub-Datenebene und die Client-seitige JavaScript-Regel-Engine wurden so aktualisiert, dass standardmäßig jQuery 3 verwendet wird.
+* Die ContextHub-Datenschicht und die Client-seitige JavaScript-Regel-Engine wurden so aktualisiert, dass standardmäßig jQuery 3 verwendet wird.
 
 #### AEM und Adobe Target {#aem-amp-adobe-target}
 
@@ -424,7 +422,7 @@ AEM 6.5 Forms wurde um mehrere neue Funktionen und Erweiterungen ergänzt. Hier 
 * Transaktionsberichte zum Nachverfolgen der Anzahl der übermittelten Formulare, verarbeiteten Dokumente und gerenderten Dokumente
 * Verbesserungen der Benutzerfreundlichkeit bei interaktiver Kommunikation
 * Cloud-basierte digitale Signaturen in adaptiven Formularen
-* Integration adaptiver Formulare und interaktiver Kommunikation in eine Einzelseitenanwendung (Single Page Application, SPA) für AEM Sites.
+* Einbettung adaptiver Formulare und interaktiver Kommunikation in eine Einzelseitenanwendung (Single Page Application, SPA) für AEM Sites.
 * Unterstützung für Variablen in AEM-Workflows
 * Unterstützung für Datenanzeigemuster bei interaktiver Kommunikation
 * Sortieren adaptiver Formulare und Tabellen zu interaktiver Kommunikation
@@ -436,7 +434,7 @@ Weitere Informationen zu neuen und verbesserten Funktionen sowie Dokumentationsr
 
 Adobe verwendet ein kundenorientiertes Entwicklungsmodell, das es den Kunden ermöglicht, zu allen Phasen des Entwicklungsprozesses von der Spezifikation über die Entwicklung bis hin zum Test beizutragen. Unser Dank geht an alle beteiligten Kunden und Partner in diesem Prozess.
 
-Adobe hält die erforderlichen Vorgehensweisen und Prozesse bereit, um die Erfassung, Priorisierung und Verfolgung kundenorientierter Fehlerbehebungen und eine auf Verbesserungswünsche bezogene Entwicklung zu ermöglichen. Das [Experience Manager-Supportportal](https://experienceleague.adobe.com/de?support-solution=Experience+Manager&amp;support-tab=home&amp;lang=de#support) ist mit dem Adobe Enhancement and Defect Tracking System integriert. Kundenprobleme werden, wenn möglich, gemeinsam mit dem Kunden-Support-Team identifiziert und gelöst. Bei einer Weiterleitung an Forschung und Entwicklung werden alle Kundeninformationen erfasst und zu Priorisierungs- und Reporting-Zwecken verwendet. Bei der Entwicklung haben bezahlter Support, Garantieprobleme sowie bezahlte Kundenerweiterungen Priorität.
+Adobe hält die erforderlichen Vorgehensweisen und Prozesse bereit, um die Erfassung, Priorisierung und Verfolgung kundenorientierter Fehlerbehebungen und eine auf Verbesserungswünsche bezogene Entwicklung zu ermöglichen. Das [Experience Manager-Supportportal](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home&lang=de#support) ist mit dem Adobe Enhancement and Defect Tracking System integriert. Kundenprobleme werden, wenn möglich, gemeinsam mit dem Kunden-Support-Team identifiziert und gelöst. Bei einer Weiterleitung an Forschung und Entwicklung werden alle Kundeninformationen erfasst und zu Priorisierungs- und Reporting-Zwecken verwendet. Bei der Entwicklung haben bezahlter Support, Garantieprobleme sowie bezahlte Kundenerweiterungen Priorität.
 
 Dieser Prozess der Priorisierung hat zu mehr als 750 kundenorientierten Änderungen geführt, die in AEM 6.5 vorgenommen wurden.
 
@@ -530,8 +528,6 @@ Für [!DNL Adobe Experience Manager] 6.5 sollten Sie die [Liste veralteter und 
    1. Bei einem Aufruf von `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`.
    2. Aktualisieren auf AEM 6.5.
    3. Ausführen von „Lazy Content Migration“ in AEM 6.5.
-
-  Ein [Knowledgebase](https://helpx.adobe.com/de/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html)-Artikel mit weiteren Details und einer Umgehungslösung für dieses Problem ist verfügbar.
 
 * Wenn Sie JDK 11 mit einer AEM 6.5-Instanz verwenden, werden einige der Seiten nach der Bereitstellung einiger Pakete möglicherweise als leer angezeigt. Die folgende Fehlermeldung wird in der Protokolldatei angezeigt:
 

@@ -9,9 +9,9 @@ exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1767'
 ht-degree: 100%
 
 ---
@@ -58,8 +58,6 @@ Auf dem Markt ist eine Vielzahl von Tools für Leistungstests erhältlich. Stell
 
 * AEM bietet vorkonfigurierte Tools, um problematische Abfragen, Anforderungen und Fehlermeldungen schnell anzuzeigen. Weitere Informationen finden Sie im Abschnitt [Diagnose-Tools](/help/sites-administering/operations-dashboard.md#diagnosis-tools) der Dokumentation zum Vorgangs-Dashboard.
 * Apache bietet ein Produkt namens **JMeter** an, das Leistungs- und Belastungstests sowie eine Überprüfung des Funktionsverhaltens ermöglicht. Es handelt sich um eine Open-Source-Software, die kostenlos verwendet werden kann, aber eine kleinere Funktion hat als Unternehmensprodukte und eine stärkere Lernkurve aufweist. JMeter können Sie auf der Apache-Website unter [https://jmeter.apache.org/](https://jmeter.apache.org/) herunterladen.
-
-* **Load Runner** ist ein Enterprise-Produkt für Auslastungstests. Eine kostenlose Evaluierungsversion ist verfügbar. Weitere Informationen finden Sie unter [https://www.microfocus.com/de-de/portfolio/performance-engineering/overview](https://www.microfocus.com/de-de/portfolio/performance-engineering/overview).
 
 * Website-Belastungstests-Tools wie [Vercara](https://vercara.com/website-performance-management) können ebenfalls verwendet werden.
 * Beim Testen mobiler oder responsiver Websites muss ein separater Satz von Tools verwendet werden. Diese drosseln die Netzwerkbrandbreite, um langsamere mobile Verbindungen wie 3G oder EDGE zu simulieren. Zu den gängigeren Tools gehören:
@@ -132,7 +130,7 @@ Der wichtigste Teil einer Bereitstellung, der Belastungstests unterzogen werden 
 
 Die Leistung der Website kann mithilfe automatisierter Test-Tools von Drittanbietern überprüft werden. Über diese Tools können Sie die Schritte aufzeichnen, die Benutzerinnen und Benutzer auf der Website durchführen, und viele dieser Sitzungen gleichzeitig ausführen, um die für eine Produktions-Website typische Auslastung zu simulieren.
 
-Die meisten Produktions-Websites verfügen über Optimierungsfunktionen wie Dispatcher-Caching und ein Netzwerk für die Inhaltsbereitstellung. Stellen Sie beim Testen sicher, dass diese Optimierungen auch für die Testumgebung verfügbar sind. Überwachen Sie nicht nur die Reaktionszeiten der Endbenutzerinnen und -benutzer, sondern behalten Sie auch die Systemmetriken auf den Veröffentlichungs-Servern und Dispatchern im Auge, um sicherzustellen, dass das System nicht durch Hardware-Ressourcen eingeschränkt wird.
+Die meisten Produktions-Websites verfügen über Optimierungsfunktionen wie Dispatcher-Caching und ein Content Delivery Network. Stellen Sie beim Testen sicher, dass diese Optimierungen auch für die Testumgebung verfügbar sind. Überwachen Sie nicht nur die Reaktionszeiten der Endbenutzerinnen und -benutzer, sondern behalten Sie auch die Systemmetriken auf den Veröffentlichungs-Servern und Dispatchern im Auge, um sicherzustellen, dass das System nicht durch Hardware-Ressourcen eingeschränkt wird.
 
 Auf einem System, das keine umfassende Personalisierung erfordert, sollte der Dispatcher die meisten Anforderungen zwischenspeichern. Daher sollte die Belastungskurve für die Publishing-Instanz relativ flach bleiben. Wenn ein hohes Maß an Personalisierung erforderlich ist, wird empfohlen, Technologien wie iFrames oder AJAX-Anforderungen für personalisierte Inhalte zu verwenden, um ein Maximum an Dispatcher-Caching zuzulassen.
 

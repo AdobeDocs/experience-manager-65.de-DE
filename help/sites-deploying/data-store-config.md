@@ -8,10 +8,10 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
 source-wordcount: '3461'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -445,7 +445,7 @@ Sie können die Konfigurationsdatei mit den folgenden Optionen verwenden:
 * azureSas=&quot;&quot;: In der Connector-Version 1.6.3 wurde Unterstützung für Azure Shared Access Signature (SAS) hinzugefügt. **Wenn in der Konfigurationsdatei sowohl SAS als auch Speicheranmeldeinformationen vorhanden sind, hat SAS Priorität.** Weitere Informationen zu SAS finden Sie in der [offiziellen Dokumentation](https://learn.microsoft.com/de-de/azure/storage/common/storage-sas-overview). Stellen Sie sicher, dass &#39;=&#39; wie folgt mit Escapezeichen versehen ist &#39;\=&#39;.
 
 * azureBlobEndpoint=&quot;&quot;: Der Azure-Blob-Endpunkt, z. B. https://&lt;Speicherkonto>.blob.core.windows.net.
-* accessKey=&quot;&quot;: Der Speicherkontoname. Weitere Informationen zu den Microsoft® Azure Anmeldeinformationen für die Authentifizierung finden Sie in der [offiziellen Dokumentation](https://azure.microsoft.com/de-de/documentation/articles/storage-create-storage-account).
+* accessKey=&quot;&quot;: Der Speicherkontoname. Weitere Informationen zu den Microsoft® Azure Anmeldeinformationen für die Authentifizierung finden Sie in der [offiziellen Dokumentation](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
 
 * secretKey=&quot;&quot;: Der Speicherzugriffsschlüssel. Stellen Sie sicher, dass &#39;=&#39; wie folgt mit Escapezeichen versehen ist &#39;\=&#39;.
 * container=&quot;&quot;: Der Name des Microsoft® Azure Blob Storage-Containers. Der Container ist eine Gruppierung einer Reihe von Blobs. Weitere Einzelheiten finden Sie der [offiziellen Dokumentation](https://learn.microsoft.com/de-de/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).

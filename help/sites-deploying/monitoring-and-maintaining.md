@@ -10,10 +10,10 @@ feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '5792'
-ht-degree: 100%
+source-wordcount: '5755'
+ht-degree: 99%
 
 ---
 
@@ -1100,16 +1100,7 @@ Im Folgenden finden Sie eine Liste mit Vorschlägen, was Sie überprüfen sollte
 >* [Thread-Dumps](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=de)
 >* [Analyse von Speicherproblemen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=de)
 >* [Analyse mit dem integrierten Profiler](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=de)
->* [Analyse langsamer und blockierter Prozesse](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
-
-### CPU bei 100 % {#cpu-at}
-
-Wenn die CPU Ihres Systems ständig zu 100 % ausgelastet ist, lesen Sie Folgendes:
-
-* Die Wissensdatenbank:
-
-   * [Analysieren langsamer und blockierter Prozesse](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 
 ### Unzureichender Speicher {#out-of-memory}
 
@@ -1124,7 +1115,7 @@ In diesen Fällen müssen Sie Folgendes überprüfen:
 * Die zum [Starten von AEM](/help/sites-deploying/deploy.md#getting-started) verwendeten JVM-Einstellungen
 * Die Wissensdatenbank:
 
-   * [Analyse von Speicherproblemen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=de)
+* [Analyse von Speicherproblemen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=de)
 
 ### Datenträger-E/A {#disk-i-o}
 
@@ -1142,8 +1133,7 @@ Wenn Ihrem System der Festplattenspeicher ausgeht oder Sie feststellen, dass die
 * Haben Sie die [Versionsbereinigung](/help/sites-deploying/version-purging.md) deaktiviert?
 * Wissensdatenbank:
 
-   * [Zu viele geöffnete Dateien](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=de)
-   * [Journal verbraucht zu viel Festplattenspeicher](https://helpx.adobe.com/de/experience-manager/kb/JournalTooMuchDiskSpace.html)
+   * [Zu viele geöffnete Dateien]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html
 
 ### Regelmäßige Leistungsbeeinträchtigung {#regular-performance-degradation}
 
@@ -1152,7 +1142,7 @@ Wenn sich die Leistung Ihrer Instanz nach jedem Neustart (manchmal eine Woche od
 * [Unzureichender Speicher](#outofmemory)
 * Die Wissensdatenbank:
 
-   * [Nicht beendete Sitzungen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeUnclosedSessions.html)
+   * [Nicht geschlossener Ressourcen-Resolver](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761)
 
 ### JVM-Optimierung {#jvm-tuning}
 
