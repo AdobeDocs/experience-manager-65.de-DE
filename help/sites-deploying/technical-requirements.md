@@ -9,7 +9,7 @@ exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
 source-wordcount: '3630'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -208,7 +208,7 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 | Oracle Solaris™ 11 | Z: Nicht unterstützt |
 | IBM® AIX® 7.2 | Z: Nicht unterstützt |
 
-1. Linux® Kernel 2.6, 3. x, 4. x, 5. x und 6. x umfasst Derivate der Red Hat®-Distribution, einschließlich Red Hat® Enterprise Linux®, Oracle Linux® und Amazon Linux®. AEM Forms-Add-on-Funktionen werden nur unter Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 und Red Hat® Enterprise Linux® 9 unterstützt.
+1. Linux® Kernel 2.6, 3. x, 4. x, 5. x und 6. x umfasst Derivate der Red Hat®-Verteilung, einschließlich Red Hat® Enterprise Linux®, Oracle Linux® und Amazon Linux®. Die Add-on-Funktionen von AEM Forms werden nur unter Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 und Red Hat® Enterprise Linux® 9 unterstützt.
 1. AEM Forms wird auf Ubuntu 20.04 LTS unterstützt.
 1. Die Linux®-Verteilung wird von Adobe Managed Services unterstützt.
 
@@ -402,7 +402,7 @@ Die folgenden Hardware-Anforderungen gelten für Linux® und Windows:
 
 Wenn Sie Dynamic Media auf Linux® verwenden, müssen die folgenden Voraussetzungen erfüllt sein:
 
-* Red Hat® Enterprise 7 und höher mit den neuesten Fehlerbehebungen
+* Red Hat® Enterprise 7 und höher mit den neuesten Fix-Patches
 * 64-Bit-Betriebssystem
 * Swapping deaktiviert (empfohlen)
 * SELinux deaktiviert (siehe folgenden Hinweis)
