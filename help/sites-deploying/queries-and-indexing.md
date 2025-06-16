@@ -11,9 +11,9 @@ exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eeeb31d81c22f8dace7a170953bf45a709f5ac73
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3051'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -214,7 +214,7 @@ Wenn mehrere Einträge gefunden werden, werden sie nach ihrer Punktzahl sortiert
 
 >[!NOTE]
 >
->Der in diesem Abschnitt beschriebene Suchmechanismus verwendet eine Lucene-Indizierung, keine partielle Übereinstimmung wie der Linux-`grep`.
+>Der in diesem Abschnitt beschriebene Suchmechanismus verwendet eine Lucene-Indizierung, keine partielle Übereinstimmung wie der Linux `grep`-Befehl.
 
 ### Der Lucene-Eigenschaftenindex {#the-lucene-property-index}
 

@@ -10,9 +10,9 @@ exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 source-git-commit: 813ddbf98b65588752ffa94e9ac4a810cff45302
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4357'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 97%
 <div class="preview">
 
 
-Adobe hat ein [Vollinstallationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) mit AEM 6.5.23.0 Forms Service Pack 23 (6.5.23.0) on JEE zusammen mit den Patch-Installationsprogrammen veröffentlicht. Das Vollinstallationsprogramm unterstützt neue Plattformen, während das Patch-Installationsprogramm nur Fehlerbehebungen enthält.
+Adobe hat ein [vollständiges Installationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) mit AEM 6.5.23.0 Forms Service Pack 23 (6.5.23.0) on JEE zusammen mit den Patch-Installationsprogrammen veröffentlicht. Das vollständige Installationsprogramm bietet Unterstützung für neue Plattformen, während das Patch-Installationsprogramm nur Fehlerkorrekturen enthält.
 
-Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Software für Ihre AEM 6.5.23.0 Forms on JEE-Umgebung planen, empfiehlt Adobe die Verwendung des Vollinstallationsprogramms für [AEM 6.5.23.0 Forms on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) vom 06. Juni 2025 anstelle des AEM 6.5.18 Forms-Installationsprogramms vom 31. August 2023 oder des AEM 6.5.12 Forms-Installationsprogramms vom 08. April 2019.
+Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Software für Ihre AEM 6.5.23.0 Forms on JEE-Umgebung planen, empfiehlt Adobe das vollständige Installationsprogramm für [AEM 6.5.23.0 Forms on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) vom 6. Juni 2025 anstelle des AEM 6.5.18 Forms-Installationsprogramms vom 31. August 2023 bzw. des AEM 6.5.12 Forms-Installationsprogramms vom 8. April 2019.
 
 
 </div>
@@ -914,7 +914,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -1011,7 +1011,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
 
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
@@ -1031,7 +1031,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit) | |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit)  |
 -->
 
-### Version 6.5.23.0 (Samstag, 6. Juni 2025)
+### Version 6.5.23.0 (6. Juni 2025)
 
 | Unterstützung hinzugefügt | Unterstützung entfernt | Unterstützung eingestellt |
 | -------------- | --------------- | ------------------- |
