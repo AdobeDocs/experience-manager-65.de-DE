@@ -9,7 +9,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 source-git-commit: 21d0ba51297b4e90645a9ab64d98016598c0a2be
 workflow-type: tm+mt
 source-wordcount: '6485'
-ht-degree: 77%
+ht-degree: 89%
 
 ---
 
@@ -53,11 +53,11 @@ ht-degree: 77%
 
 Einige wichtige Funktionen und Verbesserungen, die in dieser Version enthalten sind:
 
-* [Barrierefreie Hyperlinks mit Stilen für gemischten Text in statischen PDFs](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/using-designer.pdf): Hyperlinks, die Stile für gemischten Text in statischen PDFs enthalten, werden jetzt als einzelnes barrierefreies Element getaggt. Diese Verbesserung vereinfacht die Tag-Baumstruktur, verbessert die Navigation der Sprachausgabe und unterstützt eine bessere Einhaltung der Barrierefreiheitsanforderungen.
+* [Barrierefreie Hyperlinks mit verschiedenen Textstilen in statischen PDFs](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): Hyperlinks, die verschiedene Textstile in statischen PDFs enthalten, werden jetzt als einzelnes, barrierefreies Element getaggt. Diese Verbesserung vereinfacht die Tag-Baumstruktur sowie die Navigation der Bildschirmlesehilfe und unterstützt eine bessere Einhaltung von Vorgaben zur Barrierefreiheit.
 
 * [Aktualisierte unterstützte Plattform-Matrix](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
-  Die neueste Version führt Aktualisierungen der unterstützten Plattformmatrix ein, um die Kompatibilität mit neueren Technologien sicherzustellen.
+  Die neueste Version führt Aktualisierungen der unterstützten Plattform-Matrix ein, um die Kompatibilität mit neueren Technologien sicherzustellen.
 
    * IBM® Content Manager Client 8.7
 
@@ -69,9 +69,9 @@ Einige wichtige Funktionen und Verbesserungen, die in dieser Version enthalten s
 
    * Microsoft® SQL Server JDBC-Treiber 12.8
 
-   * Red Hat® Enterprise Linux® 9 (Kernel 4.x, 64-Bit) 
+   * Red Hat® Enterprise Linux® 9 (Kernel 4.x, 64 Bit) 
 
-* [Abgehärtete Dateianhang-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): Als Sicherheitsmaßnahme verhindert die Komponente jetzt die Übermittlung von Dateien mit geänderten Erweiterungen, die versuchen, zulässige Dateitypprüfungen zu umgehen. Solche Dateien werden während der Übermittlung blockiert, um sicherzustellen, dass nur gültige Dateitypen akzeptiert werden.
+* [Robuste Dateianhangskomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): Als Sicherheitsmaßnahme verhindert die Komponente jetzt die Übermittlung von Dateien mit geänderten Erweiterungen, die versuchen, Prüfungen zulässiger Dateitypen zu umgehen. Solche Dateien werden während der Übermittlung blockiert, um sicherzustellen, dass nur gültige Dateitypen akzeptiert werden.
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -215,11 +215,11 @@ Korrigieren von unerwarteten `<br>`-Tags im Rich-Text-Editor mit dem Einfügemod
 
 ### [!DNL Assets]{#assets-6523}
 
-* Die folgenden Probleme treten auf der [!DNL AEM] On-Premise-Navigationsseite (6.5.22.0) auf, nachdem Sie ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**&#x200B;ausgewählt haben, zum Ordner&#x200B;**[!UICONTROL &#x200B; Adobe Stock durchsuchen &#x200B;]**&#x200B;navigiert sind und ein Stockbild ausgewählt haben:
+* Die folgenden Probleme treten auf der [!DNL AEM] On-Premise-Navigationsseite (6.5.22.0) auf, nachdem Sie ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets ]**ausgewählt haben, zum Ordner**[!UICONTROL  Adobe Stock durchsuchen ]**navigiert sind und ein Stockbild ausgewählt haben:
    * Das ausgewählte Stockbild kann nicht lizenziert und gespeichert werden, da durch Klicken auf **[!UICONTROL Lizenzieren und speichern]** eine leere Dropdown-Liste angezeigt wird.
    * Wenn Sie das Stockbild auswählen oder die URL der Stock-Seite erneut eingeben, werden Sie zur [!DNL AEM]-Startseite weitergeleitet, wodurch der Zugriff auf das Adobe Stockbild verhindert wird. (ASSETS-48687)
 * Probleme beim Verwalten von Ordnern, wenn der Name des Ordners einen `/` auf der Navigationsseite von [!DNL AEM] On Premise (6.5.22.0) enthält. (ASSETS-46740)
-* In [!DNL AEM] 6.5 wird die Seite mit Asset-Details aufgrund einer hohen Speicherauslastung nicht über die Ansicht ![Sammlung](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Sammlungen &#x200B;]**&#x200B;geladen. (ASSETS-46738)
+* In [!DNL AEM] 6.5 wird die Seite mit Asset-Details aufgrund einer hohen Speicherauslastung nicht über die Ansicht ![Sammlung](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Sammlungen ]**geladen. (ASSETS-46738)
 * Integrationsprobleme mit [!DNL InDesign], da der Dienst `Day CQ DAM Mime Type OSGI` [!DNL InDesign]-Dateien fälschlicherweise als `x-adobe-indesign` statt als `x-indesign` identifiziert. (ASSETS-45953)
 * Das Sitzungsleck in [!DNL AEM 6.5.21] wurde auf den vorkonfigurierten Workflow-Schritt **[!UICONTROL Geplante Veröffentlichung in Brand Portal]** zurückverfolgt. (ASSETS-44104)
 * Fehler vom Typ **[!UICONTROL Unzureichender Arbeitsspeicher (OOM)]** werden bei der Verarbeitung und Veröffentlichung von Bildern in [!DNL AEM] angezeigt. Dieses Problem ist auf veraltete Methoden in Workflows zurückzuführen, z. B. **[!DNL Dam Asset update]** und **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
@@ -260,15 +260,15 @@ Das Hybrid-Add-on-Paket ist ab Donnerstag, dem 22. Mai 2025, mit der offiziell
 
 #### Forms Designer
 
-* Wenn ein(e) Benutzende(r) die Daten für eine XFA-basierte PDF mit der exportDataAPI exportiert, weist die resultierende XML Diskrepanzen im Vergleich zu den XML-Daten auf, die manuell mit Acrobat Reader exportiert wurden. In der Ausgabe fehlten Werte einiger Felder im Vergleich zur Ausgabe aus Acrobat Reader. (LC-3922791)
+* Wenn Benutzende die Daten für eine XFA-basierte PDF mit dem exportDataAPI exportieren, weist die resultierende XML Diskrepanzen im Vergleich zu den XML-Daten auf, die manuell mit Acrobat Reader exportiert wurden. In der Ausgabe fehlten Werte einiger Felder im Vergleich zu der von Acrobat Reader generierten Ausgabe. (LC-3922791)
 
 * Wenn Sie in AEM Forms 6.5.22.0 eine getaggte PDF mit dem Ausgabe-Service in Workbench generieren, wird ein unerwartetes Beschriftungs-Tag unter dem Referenz-Tag in einem Inhaltsverzeichniselement hinzugefügt. (LC-3922756)
 
-* Wenn Benutzende Feldbeschriftungen mit Ausrichtung unten oder rechts in AEM Forms Designer platzieren, enthält die Tag-Struktur nur die Beschriftung ohne den entsprechenden Wert, was zu unvollständigen Barrierefreiheits-Tags führt. (LC-3922619)
+* Wenn Benutzende Feldbeschriftungen mit Ausrichtung nach unten oder rechts in AEM Forms Designer platzieren, enthält die Tag-Baumstruktur nur die Beschriftung ohne den entsprechenden Wert, was zu unvollständigem Tagging für die Barrierefreiheit führt. (LC-3922619)
 
-* Beim Upgrade von AEM Forms 6.5 Service Pack 6 auf AEM Forms Service Pack 20 werden die QR-Codes in generierten PDF-Dateien unlesbar. Der Alternativtext für die QR-Codes schlägt auch die Barrierefreiheitsprüfung fehl, was sich auf die Kompatibilität der Bildschirmlesehilfen auswirkt. (LC-3922551)
+* Beim Upgrade von AEM Forms 6.5 Service Pack 6 auf das AEM Forms Service Pack 20 werden die QR-Codes in generierten PDF-Dateien unlesbar. Der Alternativtext für die QR-Codes besteht die Prüfung der Barrierefreiheit ebenfalls nicht, was sich auf die Kompatibilität der Bildschirmlesehilfen auswirkt. (LC-3922551)
 
-* Wenn ein(e) Benutzende(r) einen Brief in der Agent-Benutzeroberfläche auf AEM Forms Service Pack 18 rendert, kann der Inhalt aufgrund der FormService.render()-API nicht korrekt angezeigt werden. (LC-3922461)
+* Wenn Benutzende einen US-Letter in der Agent-Benutzeroberfläche im AEM Forms Service Pack 18 rendern, kann der Inhalt aufgrund des FormService.render()-API nicht korrekt angezeigt werden. (LC-3922461)
 
 #### Forms
 
@@ -276,71 +276,71 @@ Das Hybrid-Add-on-Paket ist ab Donnerstag, dem 22. Mai 2025, mit der offiziell
 
 * Das System ignoriert die benutzerdefinierten `sling:resourceType`, die über `aem:afProperties` in einem JSON-Schema in AEM 6.5 zugewiesen wurden. Der benutzerdefinierte Ressourcentyp wird beim Rendern ignoriert. (FORMS-19691)
 
-* Wenn ein Benutzer ein adaptives Formular mit vorausgefüllten Anhängen unter Verwendung von URIs sendet, schlägt die Formularübermittlung mit einer Null PointerException aufgrund fehlender Binärdaten fehl. (FORMS-19371) (FORMS-19486)
+* Wenn Benutzende ein adaptives Formular mit vorausgefüllten Anhängen unter Verwendung von URIs senden, schlägt die Formularübermittlung mit einer NullPointerException aufgrund fehlender Binärdaten fehl. (FORMS-19371) (FORMS-19486)
 
-* Wenn ein(e) Benutzende(r) eine PDF unter dem Abschnitt &quot;Forms und Dokumente“ in AEM 6.5 Forms hochlädt, funktioniert die Zeitleisten-Funktion nicht mehr. (FORMS-19407)(FORMS-19234)
+* Wenn Benutzende eine PDF-Datei unter dem Abschnitt „Formulare und Dokumente“ in AEM 6.5 Forms hochladen, funktioniert die Timeline-Funktion nicht mehr. (FORMS-19407)(FORMS-19234)
 
-* Wenn ein(e) Benutzende(r) Dateien mit der vordefinierten Dateianhangskomponente in AEM Forms hochlädt, werden Sicherheitslücken identifiziert. Dieses Problem führt möglicherweise dazu, dass der Übermittlungsprozess durch nicht autorisierte Entitäten abgefangen wird. (FORMS-19271)
+* Wenn Benutzende Dateien mit der vordefinierten Dateianhangskomponente in AEM Forms hochladen, werden Sicherheitslücken identifiziert. Dieses Problem führt möglicherweise dazu, dass der Übermittlungsprozess durch nicht autorisierte Entitäten abgefangen wird. (FORMS-19271)
 
 * Wenn ein(e) Benutzende(r) ein vorkonfiguriertes adaptives Formular in AEM Forms so konfiguriert, dass automatisch ein Datensatzdokument (DoR) generiert wird, wird im Feld „Titel“ in den Dokumenteigenschaften von Acrobat Reader der erfasste DoR-Titel nicht angezeigt. Standardmäßig wird der Formulartitel nicht anstelle des Dateinamens angezeigt. (FORMS-19263)
 
-* Wenn ein(e) Benutzende(r) eine interaktive Kommunikation in der Benutzeroberfläche für Agenten öffnet, können die vorausgefüllten Daten nicht vollständig gelöscht werden. Nach dem Entfernen werden sie automatisch mit denselben Daten erneut ausgefüllt. (FORMS-19151)
+* Wenn Benutzende eine interaktive Kommunikation in der Agent-Benutzeroberfläche öffnen, können die vorausgefüllten Daten nicht vollständig gelöscht werden. Nach dem Entfernen werden sie automatisch mit denselben Daten erneut ausgefüllt. (FORMS-19151)
 
 * Wenn ein(e) Benutzende(r) in der Benutzeroberfläche für Agenten ein Datumsfeld in der Vorschau anzeigt, ändert sich das Datum unerwartet. Dieses Problem tritt aufgrund von Zeitzonendiskrepanzen zwischen der UTC-Einstellung der virtuellen Maschine und der Datumsinterpretation des Systems auf. (FORMS-19115)
 
 * Wenn ein Benutzer ein Formular sendet, können Dateianhänge dupliziert werden, was zu mehreren Uploads derselben Datei führt. (FORMS-19045)(FORMS-19051)
 
-* Das Hinzufügen von Koordinatoren zu Richtliniensätzen in AEM 6.5 Document Security schlägt sowohl in Produktions- als auch in niedrigeren Umgebungen fehl. (FORMS-18603, FORMS-18212, FORMS-19697)
+* Das Hinzufügen von Koordinatoren zu Richtliniensätzen in AEM 6.5 Dokumentensicherheit schlägt sowohl in Produktions- als auch in niedrigeren Umgebungen fehl. (FORMS-18603, FORMS-18212, FORMS-19697)
 
-* Wenn ein(e) Benutzende(r) im Desktop-Modus mit einem leeren Feld in AEM Forms Service Pack 22 auf das Symbol „Datumsauswahl-Kalender“ klickt, tritt aufgrund der nicht definierten Variablen _$focusDate ein Fehler auf, der die zugehörigen benutzerdefinierten Skripte stört. (FORMS-18483)(FORMS-18268)
+* Wenn Benutzende im Desktop-Modus mit einem leeren Feld im AEM Forms Service Pack 22 auf das „Datumsauswahl-Kalender-Symbol“ klicken, tritt aufgrund der nicht definierten Variablen „_$focusDate“ ein Fehler auf, der die zugehörigen benutzerdefinierten Skripte beeinträchtigt. (FORMS-18483)(FORMS-18268)
 
-* Wenn ein Kunde in AEM Forms Service Pack 19 (6.5.19.0) eine Vorschau eines Briefs anzeigt, werden im Feld „Betrag in Worten“ die Zahlenwerte nicht korrekt angezeigt oder aktualisiert, was zu einer falschen Ausrichtung und fehlenden Leerzeichen im Inhalt führt. (FORMS-18437, FORMS-17330, FORMS-18209, FORMS-18557, CTG-4150848, FORMS-19614, LC-3922004)
+* Wenn Kunden in AEM Forms Service Pack 19 (6.5.19.0) die Vorschau eines US-Letters anzeigen, werden im Feld „Betrag in Worten“ die Zahlenwerte nicht korrekt angezeigt oder aktualisiert, was zu einer falschen Ausrichtung und fehlenden Leerzeichen im Inhalt führt. (FORMS-18437, FORMS-17330, FORMS-18209, FORMS-18557, CTG-4150848,FORMS-19614, LC-3922004)
 
-* Wenn ein Kunde einen gespeicherten Brief in AEM Forms 6.5 SP19 auf RHEL in der Vorschau anzeigt, werden der Inhalt falsch ausgerichtet, Leerzeichen fehlen und unerwartete Zeichen wie „x“ angezeigt. (FORMS-18422)(FORMS-17641)
+* Wenn Kunden die Vorschau eines gespeicherten US-Letters in AEM Forms 6.5 SP19 auf RHEL anzeigen, wird der Inhalt falsch ausgerichtet, Leerzeichen fehlen und unerwartete Zeichen wie „x“ werden angezeigt. (FORMS-18422)(FORMS-17641)
 
-* Wenn ein(e) Benutzende(r) in AEM Forms zwischen Registerkarten navigiert, reagiert die Auswahl von Komponenten auf der ersten Registerkarte nicht mehr. (FORMS-18345)
+* Wenn Benutzende in AEM Forms zwischen Registerkarten navigieren, reagiert die Auswahl von Komponenten auf der ersten Registerkarte nicht mehr. (FORMS-18345)
 
-* Wenn ein(e) Benutzende(r) in AEM Forms 6.5.21.0 eine HTML-Datei mithilfe der Option WebToPDF in PDF konvertiert, fehlt in der Ausgabe-PDF der Kopfzeilenabschnitt einschließlich der Metadaten- und Titel-Tags. (FORMS-18223, FORMS-17835, FORMS-19642, FORMS-18224)
+* Wenn Benutzende in AEM Forms 6.5.21.0 eine HTML-Datei mithilfe der Option „WebToPDF“ in eine PDF-Datei konvertiert, fehlt in der Ausgabe-PDF der Kopfzeilenabschnitt einschließlich der Metadaten- und Titel-Tags. (FORMS-18223, FORMS-17835, FORMS-19642, FORMS-18224)
 
-* Wenn in der AEM JEE Process Manager-SDK ein(e) Benutzende(r) die retryAction(long actionOid)-Methode aufruft, versucht das System fälschlicherweise die erste Aktion in der Tabelle tb_action_instance erneut. Dieser Workflow tritt auch dann auf, wenn eine bestimmte Aktions-ID angegeben wird oder die ID null ist, was zu unbeabsichtigtem Verhalten führt. (FORMS-18187)
+* Wenn Benutzende in der AEM JEE Process Manager-SDK die Methode „retryAction(long actionOid)“ aufruft, versucht das System fälschlicherweise, die erste Aktion in der Tabelle „tb_action_instance“ erneut auszuführen. Dieser Workflow tritt auch dann auf, wenn eine bestimmte Aktions-ID angegeben wird oder die ID null ist, was zu unbeabsichtigtem Verhalten führt. (FORMS-18187)
 
 * Nach der Aktualisierung auf SP22 treten Probleme auf, bei denen die gespeicherten Entwurfs- und Übermittlungsfunktionen fehlschlagen, ohne dass eine Fehlermeldung angezeigt wird. (FORMS-18069)
 
 * In AEM 6.5.21.0 verhindert der Übergang von XSD-basierten Foundation-Komponenten zu Kernkomponenten die Implementierung dateiübergreifender Verweise in JSON-Schemata, was sich auf die Migration von adaptiven Forms auswirkt. (FORMS-18065)
 
-* Wenn ein(e) Benutzende(r) in der Benutzeroberfläche für Agenten einen Brief in der Vorschau anzeigt, wird im Datumsfeld aufgrund von IC-Zeitkonvertierungsproblemen ein falscher Wert angezeigt. Diese Diskrepanzen ergeben sich aus Zeitzonenunterschieden zwischen der VM-Umgebung und der Zeitinterpretation des Systems (UTC versus lokale Zeit). (FORMS-17988) (FORMS-17248)
+* Wenn Benutzende in der Agent-Benutzeroberfläche die Vorschau eines US-Letters anzeigen, wird im Datumsfeld aufgrund von Problemen mit der IC-Zeitkonvertierung ein falscher Wert angezeigt. Diese Diskrepanzen ergeben sich aus Zeitzonenunterschieden zwischen der VM-Umgebung und der Zeitinterpretation des Systems (UTC versus lokale Zeit). (FORMS-17988) (FORMS-17248)
 
-* Bei der Vorschau von Briefen mithilfe von Benachrichtigungs-IC-Vorlagen in AEM Forms variieren die Generierungszeiten von PDF erheblich, von 1,5 Sekunden bis mehr als 10 Sekunden, selbst auf demselben Server. Diese Inkonsistenz wirkt sich auf geschäftskritische Workflows aus. (FORMS-17951)
+* Wenn Benutzende US-Letter mithilfe von Benachrichtigungs-IC-Vorlagen in AEM Forms anzeigen, variieren die Generierungszeiten der PDF-Dateien selbst auf demselben Server erheblich: von 1,5 Sekunden bis mehr als 10 Sekunden. Diese Inkonsistenz wirkt sich auf geschäftskritische Workflows aus. (FORMS-17951)
 
 * Wenn ein Benutzer ein Scribble-Signaturobjekt in einem adaptiven Formular mithilfe der Option „Datenquellen“ an eine XDP bindet, können Änderungen nicht gespeichert werden. Der Grund dafür sind anhaltende Fehler bei der Validierung des Seitenverhältnisses, selbst bei Verwendung gültiger Werte. (FORMS-17587)
 
 * Wenn ein(e) Benutzende(r) eine bestimmte XDP-Datei mit vielen ausgeblendeten Feldern für Dokumentfragmente verwendet, erstellt AEM CRX-Knoten mit der `cm:optional`-Eigenschaft „false“, was dazu führt, dass die Übermittlung der interaktiven Kommunikation (IC) fehlschlägt. (FORMS-17538)
 
-* Bei der Vorschau eines Briefs in AEM Forms 6.5.19.0 kann das numerische Feld negative Werte nicht korrekt verarbeiten, wenn Zifferngrenzen für Lead und Frac definiert sind. Dieses Problem tritt aufgrund der Verwendung von parseFloat auf, das das Minuszeichen als Teil der Zahl behandelt. (FORMS-17451)
+* Wenn Benutzende in AEM Forms 6.5.19.0 die Vorschau eines US-Letters anzeigen, kann das numerische Feld negative Werte nicht korrekt verarbeiten, wenn Zifferngrenzen für „Lead“ und „Frac“ definiert sind. Dieses Problem tritt aufgrund der Verwendung von parseFloat auf, das das Minuszeichen als Teil der Zahl behandelt. (FORMS-17451)
 
 * In AEM Forms 6.5 wird bei der Vorschau eines Briefs die Verwendung des Platzhalters &quot;*&quot; in der Datei &quot;Adobe.json“ bemerkt, was Bedenken hinsichtlich des Zwecks und einer möglichen Änderung aufwirft. (FORMS-17317)
 
 * Wenn ein(e) Benutzende(r) eine Bildschirmlesehilfe im `Apply for a Fixed Rate Saver joint account` verwendet, werden die Überschriften fälschlicherweise als `clickable` angekündigt, was zu Problemen mit der Barrierefreiheit führt. (FORMS-17038)
 
-* Wenn ein Formular eingebettet ist, fehlt im generierten iframe ein title-Attribut, was zu einem Problem mit der Barrierefreiheit führt. (FORMS-17010)
+* Wenn ein Formular eingebettet ist, fehlt im generierten iframe ein Attribut „title“, was zu einem Problem mit der Barrierefreiheit führt. (FORMS-17010)
 
 * Das Herunterladen eines Formulars über die Forms Manager-Benutzeroberfläche umfasst immer verknüpfte Abhängigkeiten wie Designs und Fragmente. (FORMS-15811)
 
 * Wenn ein Benutzer auf Mobilgeräten (iOS und Android™) auf das Formular zugreift, sind die Schaltflächen „Weiter“ und „Zurück“ auf der ersten Seite deaktiviert. Die Bildschirmlesehilfe erkennt sie jedoch nicht als deaktiviert. (FORMS-15773)
 
-* Wenn ein(e) Benutzende(r) ein großes Formular mit aktivierten Fragmenten und verzögertem Laden speichert, können keine Entwürfe abgerufen werden, wodurch der Workflow unterbrochen wird. (FORMS-19890, FORMS-19808)
+* Wenn Benutzende ein großes Formular mit aktivierten Fragmenten und verzögertem Laden speichert, können keine Entwürfe abgerufen werden, wodurch der Workflow unterbrochen wird. (FORMS-19890, FORMS-19808)
 
 #### FORMS JEE
 
-* Wenn ein(e) Benutzende(r) die Datenbank in AEM Forms neu konfiguriert, schlägt die Verbindung aufgrund von hartcodierten Parametern fehl. (FORMS-19568, FORMS-17621)
+* Wenn Benutzende die Datenbank in AEM Forms neu konfigurieren, schlägt die Verbindung aufgrund von fest kodierten Parametern fehl. (FORMS-19568, FORMS-17621)
 
 * Wenn ein Benutzer AEM 6.5 mit MySQL 8.4 unter Verwendung der partiellen Turnkey-Methode einrichtet, erkennt der LiveCycle Configuration Manager (LCM) den erforderlichen MySQL-Connector-Treiber nicht. Dies führt dazu, dass der Datenbankverbindungstest und die Einrichtung fehlschlagen. (FORMS-19442)
 
 * Wenn ein(e) Benutzende(r) LCM mit JDBC 12.8.1 unter JRE 11 in einer JEE-Umgebung ausführt, schlägt das Setup aufgrund von Inkompatibilitätsproblemen fehl. (FORMS-19276)
 
-* Wenn ein(e) Benutzende(r) eine Aufgabe in AEM On-Premise öffnet, führt das System das Workspace-Startaktionsprofil anstelle des zugewiesenen Benutzerprofils aus. (FORMS-19065)
+* Wenn Benutzende eine Aufgabe in AEM On-Premise öffnen, führt das System das Workspace-Startaktionsprofil anstelle des AssignedUserProfile aus. (FORMS-19065)
 
-* Wenn ein(e) Benutzende(r) die retryAction(long actionOid)-Methode im AEM JEE Process Manager verwendet, tritt ein unerwartetes Verhalten auf. (FORMS-18357)(FORMS-18187)
+* Wenn Benutzende die Methode „retryAction(long actionOid)“ im AEM JEE Process Manager verwenden, tritt ein unerwartetes Verhalten auf. (FORMS-18357)(FORMS-18187)
 
 * Auf AEM Forms 6.5.21.0 schlägt die PDFG-Konvertierung mit dem folgenden Fehler fehl: (FORMS-16851)(FORMS-14613)
 
@@ -676,7 +676,7 @@ Die Vorschau von Inhaltsfragmenten schlägt aufgrund des DoS-Schutzes für eine 
 
 ### Bekannte Probleme bei AEM Forms {#known-issues-aem-forms-6523}
 
-* Wenn ein Kunde von Struts 2.x auf 6.x aktualisiert, kann eine strengere Typüberprüfung zu stillen Fehlern führen - insbesondere dann, wenn Kontrollkästchen-Komponenten „false“ zurückgeben und an eine Liste (Ganzzahl *gebunden*. Dieser Wertkonflikt muss explizit behandelt werden, um Deserialisierungsfehler zu vermeiden. (FORMS-20203)
+* Wenn ein Kunde von Struts 2.x auf 6.x aktualisiert, kann eine strengere Typüberprüfung zu stillen Fehlern führen - insbesondere dann, wenn Kontrollkästchen-Komponenten „false“ zurückgeben und an eine Liste (Ganzzahl *gebunden*. Diese fehlende Übereinstimmung des Werts muss explizit korrigiert werden, um Deserialisierungsfehler zu vermeiden. (FORMS-20203)
 
 * Die Konvertierung von HTML in PDF auf dem SUSE® Linux®-Server (SLES 15 SP6 oder höher) schlägt mit folgendem Fehler fehl:
 
