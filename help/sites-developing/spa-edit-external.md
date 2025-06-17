@@ -5,8 +5,9 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
-workflow-type: ht
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+workflow-type: tm+mt
 source-wordcount: '2387'
 ht-degree: 100%
 
@@ -19,7 +20,7 @@ Wenn Sie entscheiden, welchen Grad der Integration Sie zwischen Ihrer externen S
 
 {{ue-over-spa}}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine AEM-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren des Authoring beschrieben.
 
@@ -111,7 +112,7 @@ In diesem Beispiel wird `ModelManager` initialisiert und ein leerer `ModelStore`
    >
    >In diesem Beispiel gibt es unterschiedliche Versionen der Komponente: in AEM eingeschlossene und nicht eingeschlossene React-Komponenten. Die eingeschlossene Version muss verwendet werden, wenn die Komponente explizit verwendet wird. Wenn die Komponente Teil einer Seite ist, können Sie weiterhin die Standardkomponente verwenden (wie derzeit im SPA-Editor).
 
-1. Rendern des Inhalts in der Komponente
+1. Rendern des Inhalts in der Komponente.
 
    Die JCR-Eigenschaften der Textkomponente werden wie folgt in AEM angezeigt.
 
