@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+source-git-commit: b5ee4815f981aa32faab24ff5e80a7ad9541e45e
 workflow-type: tm+mt
-source-wordcount: '3630'
-ht-degree: 99%
+source-wordcount: '3688'
+ht-degree: 98%
 
 ---
 
@@ -129,19 +129,21 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 | MongoDB Enterprise 3.4 | Repository | Z: Nicht unterstützt |
 | IBM® DB2® 10.5 | Repository und Forms-Datenbank | R: Eingeschränkte Unterstützung `[5]` |
 | Oracle Database 12c (12.1.x) | Repository und Forms-Datenbank | R: Eingeschränkte Unterstützung  |
+| Oracle-Datenbank 19c | Repository und Forms-Datenbank | R: Eingeschränkte Unterstützung  |
 | Microsoft® SQL Server 2016 | Forms-Datenbank | A: Unterstützt |
+| Microsoft® SQL Server 2019 (Veraltet) | Forms-Datenbank | A: Unterstützt |
+| Microsoft® SQL Server 2022 | Forms-Datenbank | A: Unterstützt |
 | **Apache Lucene (Schnellstart integriert)** | Suchdienst | A: Unterstützt |
 | Apache Solr | Suchdienst | A: Unterstützt |
 
 1. „Dateisystem“ umfasst den POSIX-konformen Blockspeicher. Dazu gehört auch die Netzwerkspeichertechnologie. Beachten Sie, dass die Leistung des Dateisystems variieren und die Gesamtleistung beeinflussen kann. Führen Sie Lasttests für AEM mit dem Netzwerk-/Remote-Dateisystem durch.
-1. Für die MongoDB Enterprise-Versionen 4.2 und 4.4 ist mindestens AEM 6.5 SP9 erforderlich.
-1. MongoDB Sharding wird in AEM nicht unterstützt.
-1. Nur MongoDB Storage Engine WiredTiger wird unterstützt.
-1. Wird für Kundinnen und Kunden von AEM Forms-Upgrades unterstützt. Wird für neue Installationen nicht unterstützt.
-1. Gilt nur für AEM Forms:
+2. Für die MongoDB Enterprise-Versionen 4.2 und 4.4 ist mindestens AEM 6.5 SP9 erforderlich.
+3. MongoDB Sharding wird in AEM nicht unterstützt.
+4. Nur MongoDB Storage Engine WiredTiger wird unterstützt.
+5. Wird für Kundinnen und Kunden von AEM Forms-Upgrades unterstützt. Wird für neue Installationen nicht unterstützt.
+6. Gilt nur für AEM Forms:
    * Die Unterstützung für Oracle Database 12c wurde entfernt und die Unterstützung für Oracle Database 19c wurde hinzugefügt.
-   * Die Unterstützung für Microsoft® SQL Server 2016 wurde entfernt und die Unterstützung für Microsoft® SQL Server 2019 wurde hinzugefügt.
-1. Wird nicht für AEM-Formulare unterstützt.
+   * Die Unterstützung für Microsoft® SQL Server 2016 wurde entfernt und die Unterstützung für Microsoft® SQL Server 2019 und Microsoft® SQL Server 2022 wurde hinzugefügt.
 
 >[!NOTE]
 >
@@ -182,14 +184,16 @@ Als Servlet-API-Version ist mindestens Servlet 3.1 erforderlich.
 | Oracle WebLogic Server 12.2 (12cR2) | Z: Nicht unterstützt |
 | Kontinuierliche Bereitstellung für IBM® WebSphere® Application Server (LibertyProfile) mit Web Profile 7.0 und IBM® JRE 1.8 | R: Eingeschränkte Unterstützung für neue Verträge `[2]` |
 | IBM® WebSphere® Application Server 9.0 und IBM® JRE 1.8 | R: Eingeschränkte Unterstützung für neue Verträge `[1]` `[2]` |
+| 9.0.0.10 des IBM® WebSphere®-Anwendungsservers | R: Eingeschränkte Unterstützung für neue Verträge `[1]` `[2]` |
 | Apache Tomcat 8.5.x | R: Eingeschränkte Unterstützung für neue Verträge `[2]` |
 | JBoss® EAP 7.2.x mit JBoss® Application Server | Z: Nicht unterstützt |
 | JBoss® EAP 7.1.4 mit JBoss® Application Server | R: Eingeschränkte Unterstützung für neue Verträge `[1]` `[2]` |
 | JBoss® EAP 7.0.x mit JBoss® Application Server | Z: Nicht unterstützt |
+| JBoss® EAP 7.4 mit JBoss® Application Server <sup>[2] [3] [7] | A: Unterstützt |
 
 1. Wird für Bereitstellungen mit AEM Forms empfohlen.
-1. Der Start von AEM 6.5-Bereitstellungen auf Anwendungs-Servern wird nun eingeschränkt unterstützt. Bestehende Kunden können auf AEM 6.5 aktualisieren und weiterhin Anwendungs-Server verwenden. Für neue Kundinnen und Kunden werden Support-Kriterien und ein Support-Programm zur Verfügung gestellt, wie oben in der Beschreibung zu Level-R angegeben.
-1. Gilt nur für AEM Forms:
+2. Der Start von AEM 6.5-Bereitstellungen auf Anwendungs-Servern wird nun eingeschränkt unterstützt. Bestehende Kunden können auf AEM 6.5 aktualisieren und weiterhin Anwendungs-Server verwenden. Für neue Kundinnen und Kunden werden Support-Kriterien und ein Support-Programm zur Verfügung gestellt, wie oben in der Beschreibung zu Level-R angegeben.
+3. Gilt nur für AEM Forms:
    * Unterstützung für JBoss® EAP 7.1.4 entfernt und Unterstützung für JBoss® EAP 7.4.10 hinzugefügt.
 
 ### Server-Betriebssysteme {#server-operating-systems}
@@ -202,15 +206,15 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 | Linux®, auf Basis der Debian-Verteilung einschl. Ubuntu | A: Unterstützt `[1]` `[2]` |
 | Linux®, auf Basis der SUSE®-Verteilung | A: Unterstützt `[1]` |
 | Microsoft® Windows Server 2022 | R: Eingeschränkte Unterstützung  |
-| Microsoft® Windows Server 2019 `[4]` | R: Eingeschränkte Unterstützung für neue Verträge `[5]` |
+| Microsoft® Windows Server 2019 `[4]` (nicht mehr unterstützt) | R: Eingeschränkte Unterstützung für neue Verträge `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R: Eingeschränkte Unterstützung für neue Verträge `[5]` |
 | Microsoft® Windows Server 2012 R2 | Z: Nicht unterstützt |
 | Oracle Solaris™ 11 | Z: Nicht unterstützt |
 | IBM® AIX® 7.2 | Z: Nicht unterstützt |
 
-1. Linux® Kernel 2.6, 3. x, 4. x, 5. x und 6. x umfasst Derivate der Red Hat®-Verteilung, einschließlich Red Hat® Enterprise Linux®, Oracle Linux® und Amazon Linux®. Die Add-on-Funktionen von AEM Forms werden nur unter Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 und Red Hat® Enterprise Linux® 9 unterstützt.
-1. AEM Forms wird auf Ubuntu 20.04 LTS unterstützt.
-1. Die Linux®-Verteilung wird von Adobe Managed Services unterstützt.
+1. Linux® Kernel 2.6, 3. x, 4. x, 5. x, 6. x und 9. x umfasst Derivate der Red Hat®-Verteilung, einschließlich Red Hat® Enterprise Linux®, Oracle Linux® und Amazon Linux®. Die Add-on-Funktionen von AEM Forms werden nur unter Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 und Red Hat® Enterprise Linux® 9 unterstützt.
+2. AEM Forms wird unter Ubuntu 20.04 und SUSE® Linux® Enterprise Server 15 SP6 (64-Bit) unterstützt.
+3. Die Linux®-Verteilung wird von Adobe Managed Services unterstützt.
 
    >[!NOTE]
    >
@@ -225,9 +229,9 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 
    *Für die OpenSSL 3-Installation: Die Bibliotheken libcrypto.so.3 und libssl.so.3 müssen im Standardbibliothekspfad verfügbar sein, der durch die Umgebungsvariable LD_LIBRARY_PATH dargestellt wird. Wenn sie an einem nicht standardmäßigen Speicherort installiert sind, stellen Sie sicher, dass dieser Pfad zu LD_LIBRARY_PATH hinzugefügt wird, bevor Sie den Server starten.*
 
-1. Produktionsimplementierungen von Microsoft® Windows werden für Kundinnen und Kunden unterstützt, die ein Upgrade auf 6.5 durchführen, sowie für die Nutzung außerhalb der Produktion. Neue Bereitstellungen erfolgen auf Anfrage für AEM Sites und Assets.
-1. AEM Forms wird auf Microsoft Windows® Server ohne die Einschränkungen von Support-Level R unterstützt.
-1. AEM Forms unterstützt Microsoft® Windows Server 2016 nicht mehr.
+4. Produktionsimplementierungen von Microsoft® Windows werden für Kundinnen und Kunden unterstützt, die ein Upgrade auf 6.5 durchführen, sowie für die Nutzung außerhalb der Produktion. Neue Bereitstellungen erfolgen auf Anfrage für AEM Sites und Assets.
+5. AEM Forms wird auf Microsoft Windows® Server ohne die Einschränkungen von Support-Level R unterstützt.
+6. AEM Forms unterstützt Microsoft® Windows Server 2016 nicht mehr.
 
 >[!NOTE]
 >

@@ -6,10 +6,10 @@ role: Admin, User, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 5dbdce2d8e558e6bf26c6713fd44d58038d38152
-workflow-type: ht
-source-wordcount: '5724'
-ht-degree: 100%
+source-git-commit: f1fc8554b35d7d9c152023a6b9094e31c1b49807
+workflow-type: tm+mt
+source-wordcount: '5806'
+ht-degree: 98%
 
 ---
 
@@ -184,6 +184,17 @@ Wenn Sie ein UNIX-basiertes Betriebssystem verwenden, installieren Sie die folge
    * libc.so.6
    * ld-linux.so.2
    * libexpat.so.1
+* (Nur PDF Generator) Um die WebKit-Route bei RHEL 8- oder RHEL 9-Setups zu aktivieren, ist die 32-Bit-`nspr` möglicherweise nicht standardmäßig verfügbar. Installieren Sie sie, falls nicht vorhanden.
+
+* (Nur PDF Generator) Wenn die WebToPDF-Konvertierung auf dem Unix®-Server mit dem folgenden Fehler fehlschlägt:
+
+  ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
+Legen Sie dann die folgende Umgebungsvariable fest und starten Sie den Server neu:
+  `OPENSSL_CONF=/etc/ssl`
+
+>[!NOTE]
+>
+> WebToPDF wird auch von der Diagrammfunktion in interaktiven Kommunikationen verwendet. Daher sind alle oben genannten Konfigurationsschritte für WebToPDF anwendbar, um sicherzustellen, dass die Diagrammfunktion ordnungsgemäß funktioniert.
 
 ## Vorinstallationskonfigurationen {#preinstallationconfigurations}
 
