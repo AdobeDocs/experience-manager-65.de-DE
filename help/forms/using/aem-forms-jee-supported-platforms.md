@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 117ce86870af450c43ae1f58cf500aff0fea6747
+source-git-commit: 64ffbf05eb3ae6ca3f2475fc99979e420cef15ec
 workflow-type: tm+mt
-source-wordcount: '3867'
-ht-degree: 96%
+source-wordcount: '3827'
+ht-degree: 97%
 
 ---
 
@@ -61,9 +61,10 @@ In diesem Dokument werden die unterstützten Client- und Server-Plattformen für
 
 - **Service Pack-Abdeckung**: Adobe bietet technischen Support für AEM Forms-Umgebungen mit den sechs neuesten Service Packs. Wenn Ihre aktuelle Version vor den sechs letzten Service Packs liegt, empfiehlt Adobe dringend ein Upgrade auf die neueste Version, um optimale Leistung, Sicherheit und kontinuierlichen Support zu erhalten.
 
-**Richtlinien für Patch-Installationsprogramme**: Während die Patch-Installationsprogramme zur Aktualisierung verwendet werden, ist es wichtig zu überprüfen, ob die zugrunde liegende Version des vollständigen Installationsprogramms nicht um mehr als zwei Versionen zurückliegt. Stellen Sie beispielsweise während der Installation von Service Pack 6.5.23.0 sicher, dass die zugrunde liegende Version des vollständigen Installationsprogramms 6.5.18.0 oder 6.5.12.0 ist.
+- **Patch-Aktualisierungsrichtlinien**: Wenn Sie die Patch-Installationsprogramme zur Aktualisierung verwenden, müssen Sie unbedingt sicherstellen, dass die zugrunde liegende Vollversion des Installationsprogramms nicht älter als zwei Versionen ist. Stellen Sie beispielsweise während der Installation von Service Pack 6.5.23.0 sicher, dass die zugrunde liegende Version des vollständigen Installationsprogramms 6.5.18.0 oder 6.5.12.0 ist.
 
-- **Unterstützung für Patch-**: Sie können mit dem Patch-Installationsprogramm von einem älteren Service Pack auf ein neueres Service Pack (z. B. von 6.5.18.0 auf 6.5.23.0) aktualisieren, solange die Zielplattform (Betriebssystem, JDK, Anwendungsserver usw.) vom neueren Service Pack unterstützt wird.
+<!--
+- **Patch Upgrade Support**: You can upgrade from an older service pack to a newer one (for example, from 6.5.18.0 to 6.5.23.0) using the patch installer, as long as the destination platform (OS, JDK, application server, etc.) is supported by the newer service pack.-->
 
 ### Empfohlene Konfigurationen {#recommendedconfigurations}
 
@@ -895,7 +896,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -992,7 +993,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
 
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
