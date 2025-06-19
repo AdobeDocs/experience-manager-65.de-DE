@@ -9,10 +9,10 @@ exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f1eb41d08bb35adb93237f0ad09daa5bcd07fac8
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 100%
+source-wordcount: '782'
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ Wenn ein Workflow-Modell gestartet (ausgeführt) wird, wird eine Workflow-Instan
 
 >[!CAUTION]
 >
->Die ausgeführten Schritte sind diejenigen, die vom Workflow-Modell *zum Zeitpunkt der Generierung der Instanz* festgelegt wurden. Unter [Entwickeln von Workflows](/help/sites-developing/workflows.md#model) finden Sie weitere Details.
+>Die ausgeführten Schritte sind diejenigen, die vom Workflow-Modell *zum Zeitpunkt der Generierung der Instanz* festgelegt wurden. Weitere [ finden Sie unter „Entwickeln und Erweitern ](/help/sites-developing/workflows.md#model) Workflows - Modelle“.
 
 Workflow-Instanzen schreiten durch den folgenden Lebenszyklus voran:
 
