@@ -1,16 +1,18 @@
 ---
-title: Bearbeiten der Eigenschaften von Inhaltsseiten
+title: Bearbeiten der Seiteneigenschaften
 description: Definieren Sie die erforderlichen Eigenschaften für eine Seite in Adobe Experience Manager.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+mini-toc-levels: 2
+source-git-commit: d0515a6a3d08e181eada4a22e0d128305148e6ea
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 100%
+source-wordcount: '2477'
+ht-degree: 63%
 
 ---
+
 
 # Bearbeiten der Seiteneigenschaften{#editing-page-properties}
 
@@ -22,237 +24,226 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 ### Allgemein {#basic}
 
-* **Titel**
+#### Titel und Tags {#tile}
 
-  Der Titel der Seite wird an verschiedenen Stellen angezeigt. Zum Beispiel in der Liste auf der Registerkarte **Websites** und in den Karten-/Listenansichten **Sites**.
-
-  Dies ist ein Pflichtfeld.
-
-* **Tags**
-
-  Hier können Sie Tags zur Seite hinzufügen oder von ihr entfernen, indem Sie die Liste im Auswahlfeld aktualisieren:
-
+* **Titel** - Der Titel der Seite wird an verschiedenen Stellen angezeigt
+   * Zum Beispiel in der Liste auf der Registerkarte **Websites** und in den Karten-/Listenansichten **Sites**.
+   * Dies ist ein Pflichtfeld.
+* **Tags** - Hier können Sie der Seite Tags hinzufügen oder Tags aus der Seite entfernen, indem Sie die Liste im Auswahlfeld aktualisieren.
    * Nachdem Sie ein Tag ausgewählt haben, wird es unterhalb des Auswahlfelds aufgelistet. Sie können ein Tag mit dem „x“ aus dieser Liste entfernen.
    * Sie können ein neues Tag eingeben, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
-
       * Das neue Tag wird erstellt, wenn Sie die Eingabetaste drücken.
       * Das neue Tag wird mit einem kleinen Stern auf der rechten Seite angezeigt, was bedeutet, dass es sich um ein neues Tag handelt.
-
-   * Mit der Dropdown-Funktion können Sie aus vorhandenen Tags auswählen.
+   * In der Dropdown-Liste können Sie aus vorhandenen Tags auswählen.
    * Wenn Sie den Mauszeiger über ein Tag im Auswahlfeld halten, wird ein „x“ angezeigt, mit dem Sie das Tag löschen können.
+   * Weitere Informationen zu Tags finden Sie unter [Verwenden von Tags.](/help/sites-authoring/tags.md)
+* **In der Navigation ausblenden** - Gibt an, ob die Seite in der Seitennavigation der resultierenden Site ein- oder ausgeblendet werden soll
 
-  Weitere Informationen zu Tags finden Sie unter [Verwenden von Tags](/help/sites-authoring/tags.md).
+#### Branding {#branding}
 
-* **In Navigation ausblenden**
+Wenden Sie eine konsistente Markenidentität auf allen Seiten an, indem Sie einen Marken-Slug an jeden Seitentitel anhängen. Diese Funktion erfordert die Verwendung der Seitenkomponente ab Version 2.14.0 der [Kernkomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 
-  Gibt an, ob die Seite in der Seitennavigation der resultierenden Seite ein- oder ausgeblendet sein soll.
+* **Überschreiben**: Aktivieren Sie diese Option, um den Marken-Slug auf dieser Seite zu definieren.
+   * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, deren Werte zum **Überschreiben** sind ebenfalls festgelegt.
+* **Überschreibungswert** - Der Text des Marken-Slugs, der an den Seitentitel angehängt werden soll
+   * Der Wert wird nach einem Pipe-Zeichen wie `Cycling Tuscany | Always ready for the WKND` an den Seitentitel angehängt
 
-* **Branding**
+#### Weitere Titel und Beschreibungen {#more}
 
-  Wenden Sie eine konsistente Markenidentität auf allen Seiten an, indem Sie einen Marken-Slug an jeden Seitentitel anhängen. Diese Funktion erfordert die Verwendung der Seitenkomponente ab Version 2.14.0 der [Kernkomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
+* **Seitentitel** - Ein Titel zur Verwendung auf der Seite
+   * Wird normalerweise von Titelkomponenten verwendet
+   * Wenn dies leer gelassen wird, wird der **Titel** verwendet.
+* **Navigationstitel** - Sie können einen separaten Titel für die Verwendung in der Navigation angeben (z. B. wenn Sie eine kürzere Alternative wählen möchten).
+   * Wenn dies leer gelassen wird, wird der **Titel** verwendet.
+* **Untertitel** - Ein Untertitel zur Verwendung auf der Seite
+* **Beschreibung** - Ihre Beschreibung der Seite, der Zweck oder beliebige andere Details, die Sie hinzufügen möchten
 
-   * **Überschreiben**: Aktivieren Sie diese Option, um den Marken-Slug auf dieser Seite zu definieren.
-      * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, deren Werte zum **Überschreiben** sind ebenfalls festgelegt.
-   * **Überschreibungswert** – Der Text des Marken-Slugs, der an den Seitentitel angehängt werden soll.
-      * Der Wert wird nach einem Pipe-Zeichen an den Seitentitel angehängt, z. B. „Cycling Tuscany | Always ready for the WKND“.
-* **Seitentitel**
+#### Einschaltzeit/Ausschaltzeit {#on-time}
 
-  Ein Titel zur Verwendung auf der Seite. Wird normalerweise von Titelkomponenten verwendet. Wenn dies leer gelassen wird, wird der **Titel** verwendet.
+Die Ein-/Ausschaltzeit für eine Seite ist eine praktische Methode, um bereits veröffentlichte Inhalte vorübergehend auszublenden. Der Inhalt bleibt auf der Veröffentlichungsinstanz, wenn er deaktiviert ist. Durch Deaktivieren einer Seite wird die Veröffentlichung des Inhalts nicht rückgängig gemacht.
 
-* **Navigationstitel**
+* **Einschaltzeit**: Zeitpunkt (Datum und Uhrzeit), zu dem die veröffentlichte Seite in der Publishing-Umgebung sichtbar (gerendert) wird. Die Seite muss entweder manuell oder durch vorkonfigurierte automatische Replikation veröffentlicht werden.
 
-  Sie können einen separaten Titel für die Verwendung in der Navigation angeben (z. B. wenn Sie eine kürzere Alternative wählen möchten). Wenn dies leer gelassen wird, wird der **Titel** verwendet.
+   * Wenn sie bereits [veröffentlicht](/help/sites-authoring/publishing-pages.md) ist diese Seite in der Veröffentlichungsinstanz verfügbar, ruht jedoch (ausgeblendet), bis sie zum angegebenen Zeitpunkt gerendert wird.
+   * Wenn die Seite nicht veröffentlicht und [für die automatische Replikation konfiguriert) ](/help/sites-deploying/replication.md), wird sie automatisch veröffentlicht und zum angegebenen Zeitpunkt gerendert.
+   * Wenn die Seite nicht veröffentlicht und nicht für die automatische Replikation konfiguriert ist, wird sie nicht automatisch veröffentlicht, sodass eine 404 angezeigt wird, wenn versucht wird, auf die Seite zuzugreifen.
 
-* **Untertitel**
+* **Ausschaltzeit**: Ähnlich wie und häufig in Kombination mit der **Einschaltzeit** wird hier der Zeitpunkt festgelegt, zu dem die Publishing-Umgebung auf der Veröffentlichungsseite ausgeblendet wird.
 
-  Ein Untertitel zur Verwendung auf der Seite.
+Lassen Sie diese Felder (**Einschaltzeit** und **Ausschaltzeit**) für Seiten, die Sie veröffentlichen möchten, leer und stehen sofort zur Verfügung und stehen in der Veröffentlichungsumgebung zur Verfügung, bis sie deaktiviert werden (das normale Szenario).
 
-* **Beschreibung**
+>[!NOTE]
+>Wenn entweder die **Einschaltzeit** oder die **Ausschaltzeit** in der Vergangenheit liegt und die automatische Replikation konfiguriert ist, wird die entsprechende Aktion sofort ausgelöst.
 
-  Ihre Beschreibung der Seite, ihr Zweck oder beliebige andere Details, die Sie hinzufügen möchten.
+>[!TIP]
+>
+>Ein-/Ausschaltzeiten behandeln ausschließlich bereits veröffentlichte Inhalte (entweder manuell oder über automatische Replikation). Aus diesem Grund werden Veröffentlichungs-Workflows, wie die zur Genehmigung von Inhalten, nicht durch Ein-/Ausschaltzeiten ausgelöst, und Ein-/Ausschaltzeiten wirken sich nicht auf den Veröffentlichungsstatus der Seite aus. Aus diesem Grund sind Ein-/Ausschaltzeiten am besten geeignet, um vorübergehend Inhalte anzuzeigen/auszublenden, die bereits genehmigt und veröffentlicht sind.
+>
+>Wenn Sie neue Inhalte mit allen zugehörigen Workflows veröffentlichen oder Inhalte vollständig von Ihrer Site entfernen (Veröffentlichung aufheben) möchten, sollten Sie [Veröffentlichung verwalten“](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-* **Einschaltzeit**
+#### Vanity-URL {#vanity-url}
 
-  Das Datum und die Uhrzeit, zu der die veröffentlichte Seite aktiviert wird. Nach der Veröffentlichung bleibt diese Seite bis zu dem angegebenen Zeitpunkt inaktiv.
+Ermöglicht die Eingabe einer Vanity-URL für diese Seite, sodass Sie eine kürzere bzw. aussagekräftigere URL verwenden können.
 
-  Lassen Sie diese Felder leer für Seiten, die Sie sofort veröffentlichen wollen (der Normalfall).
+Wenn z. B. die Vanity-URL `welcome` auf die Seite gesetzt wird, die durch den Pfad `/v1.0/startpage` für die Website `http://example.com,` identifiziert wird, wäre `http://example.com/welcome` die Vanity-URL von `http://example.com/content/v1.0/startpage`.
 
-* **Ausschaltzeit**
+>[!CAUTION]
+>
+>Vanity-URLs:
+>
+>* Muss eindeutig sein.
+>* unterstützen keine Regex-Muster.
+>* sollten nicht auf eine vorhandene Seite eingestellt sein.
 
-  Datum und Uhrzeit, um die veröffentlichte Seite zu deaktivieren.
+Konfigurieren Sie den Dispatcher, um den Zugriff auf Vanity-URLs zu aktivieren. Weitere Einzelheiten finden Sie unter [Aktivieren des Zugriffs auf Vanity-URLs](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#enabling-access-to-vanity-urls-vanity-urls).
 
-  Lassen Sie diese Felder bei sofortiger Ausführung leer.
-
-* **Vanity-URL**
-
-  Ermöglicht die Eingabe einer Vanity-URL für diese Seite, sodass Sie eine kürzere bzw. aussagekräftigere URL verwenden können.
-
-  Wenn z. B. die Vanity-URL `welcome` auf die Seite gesetzt wird, die durch den Pfad `/v1.0/startpage` für die Website `http://example.com,` identifiziert wird, wäre `http://example.com/welcome` die Vanity-URL von `http://example.com/content/v1.0/startpage`.
-
-  >[!CAUTION]
-  >
-  >Vanity-URLs:
-  >
-  >* Sie müssen eindeutig sein Stellen Sie sicher, dass der Wert nicht bereits von einer anderen Seite verwendet wird.
-  >* unterstützen keine Regex-Muster.
-  >* sollten nicht auf eine vorhandene Seite eingestellt sein.
-  >
-
-  Konfigurieren Sie den Dispatcher, um den Zugriff auf Vanity-URLs zu aktivieren. Weitere Einzelheiten finden Sie unter [Aktivieren des Zugriffs auf Vanity-URLs](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#enabling-access-to-vanity-urls-vanity-urls).
-
-* **Vanity-URL umleiten**
-
-  Gibt an, ob für die Seite eine Vanity-URL verwendet werden soll.
+* **Hinzufügen** - Tippen oder klicken Sie, um eine Vanity-URL hinzuzufügen.
+* **Entfernen** - Tippen oder klicken Sie, um eine Vanity-URL zu entfernen.
+  **Vanity-URL umleiten** - Gibt an, ob für die Seite eine Vanity-URL verwendet werden soll oder ob eine Umleitung zur tatsächlichen URL der Seite erfolgen soll.
 
 ### Erweitert {#advanced}
 
-* **Sprache**
+#### Einstellungen {#settings}
 
-  Die Seitensprache.
-
-* **Sprach-Stamm**
-
-  Muss aktiviert werden, wenn die Seite als Stamm einer Sprachkopie fungiert.
-
-* **Umleiten**
-
-  Geben Sie die Seite an, zu der diese Seite automatisch umgeleitet werden soll.
-
-* **Design**
-
-  Geben Sie das [Design](/help/sites-developing/designer.md) an, das für diese Seite verwendet werden soll.
-
-* **Alias**
-
-  Geben Sie einen Alias an, der für diese Seite verwendet werden soll.
-
+* **Sprache** – Die Seitensprache
+* **Sprachstamm** – Muss aktiviert werden, wenn die Seite als Stamm einer Sprachkopie fungiert.
+* **Umleiten** – Gibt die Seite an, zu der diese Seite automatisch umgeleitet werden soll.
+* **Design** - Gibt das [Design](/help/sites-developing/designer.md) an, das für diese Seite verwendet werden soll.
+* **Alias** – Gibt einen Alias an, der für diese Seite verwendet werden soll.
    * Beispiel: Wenn Sie einen Alias `private` für die Seite `/content/wknd/us/en/magazine/members-only` definieren, kann auf diese Seite über `/content/wknd/us/en/magazine/private` zugegriffen werden.
    * Durch die Erstellung eines Alias wird die Eigenschaft `sling:alias`, die sich nur auf die Ressource und nicht auf den Repository-Pfad auswirkt, auf dem Seitenknoten festgelegt.
    * Seiten, auf die im Editor über Aliasnamen zugegriffen wird, können nicht veröffentlicht werden. [Veröffentlichungsoptionen](/help/sites-authoring/publishing-pages.md) im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
    * Weitere Informationen finden Sie in [Lokalisierte Seitennamen](/help/managing/seo-and-url-management.md#localized-page-names) unter „Best Practices für SEO- und URL-Verwaltung“.
 
-* **Vererbt von &lt;*path*>**
+#### Konfiguration {#configuration}
 
-  Gibt an, ob die Seite vererbt wurde und von wo.
+* **Von &lt;*path* geerbt** - Aktivieren/Deaktivieren der Vererbung der **Cloud-Konfiguration** für die Seite
+* **Cloud-Konfiguration** – Der Pfad zur Konfiguration
 
-* **Cloud-Konfiguration**
+#### Vorlageneinstellungen {#templates}
 
-  Der Pfad zur Konfiguration.
+* **Erlaubte Vorlagen**: [Definiert die Liste der Vorlagen, die innerhalb dieses Unterzweigs verfügbar sind](/help/sites-authoring/templates.md#allowingatemplate)
 
-* **Zugelassene Vorlagen**
+#### Authentifizierungspflicht {#authentication}
 
-  [Definieren Sie die Liste der Vorlagen](/help/sites-authoring/templates.md#allowingatemplate), die in diesem Unterzweig verfügbar sein werden.
+* **Aktivieren** - Aktiviert (oder deaktiviert) die Verwendung der Authentifizierung, damit Sie auf die Seite zugreifen können
+* **Anmeldeseite** - Die für die Anmeldung zu verwendende Seite
 
-* **Aktivieren** (Authentifizierungspflicht)
+>[!NOTE]
+>
+>Geschlossene Benutzergruppen (CUGs) für die Seite werden auf der Registerkarte **[Berechtigungen](/help/sites-authoring/editing-page-properties.md#permissions)** definiert.
 
-  Aktivieren (oder deaktivieren) Sie die Verwendung der Authentifizierung, damit Sie auf die Seite zugreifen können.
+>[!CAUTION]
+>
+>Auf der Registerkarte **[Berechtigungen](#permissions)** können Sie CUG-Konfigurationen abhängig vom Vorhandensein des Mixins `granite:AuthenticationRequired` konfigurieren. Wenn Seitenberechtigungen mit veralteten CUG-Konfigurationen konfiguriert werden, die auf dem Vorhandensein der Eigenschaft `cq:cugEnabled` basieren, wird unter **Authentifizierungspflicht** eine Warnmeldung angezeigt und die Option ist nicht bearbeitbar, ebenso wenig wie die [Berechtigungen](/help/sites-authoring/editing-page-properties.md#permissions).
+>
+>
+>In diesem Fall müssen die CUG-Berechtigungen in der [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) bearbeitet werden.
 
-  >[!NOTE]
-  >
-  >Geschlossene Benutzergruppen (CUGs) für die Seite werden auf der Registerkarte **[Berechtigungen](/help/sites-authoring/editing-page-properties.md#permissions)** definiert.
+#### Export {#export}
 
-  >[!CAUTION]
-  >
-  >Auf der Registerkarte **[Berechtigungen](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** können Sie CUG-Konfigurationen abhängig vom Vorhandensein des Mixins `granite:AuthenticationRequired` konfigurieren. Wenn Seitenberechtigungen mit veralteten CUG-Konfigurationen konfiguriert werden, die auf dem Vorhandensein der Eigenschaft `cq:cugEnabled` basieren, wird unter **Authentifizierungspflicht** eine Warnmeldung angezeigt und die Option ist nicht bearbeitbar, ebenso wenig wie die [Berechtigungen](/help/sites-authoring/editing-page-properties.md#permissions).
-  >
-  >
-  >In diesem Fall müssen die CUG-Berechtigungen in der [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) bearbeitet werden.
+* **Konfiguration** - Gibt eine Exportkonfiguration an
 
-* **Anmeldeseite**
+#### SEO {#seo}
 
-  Die Seite, die für die Anmeldung verwendet werden soll.
+* **Kanonische URL** - Wird zum Überschreiben der kanonischen URL der Seite verwendet
+   * Wenn Sie das Feld leer lassen, ist die URL der Seite ihre kanonische URL.
+* **Robots-Tags** - Wählen Sie im Dropdown-Menü die Robots-Tags aus, um das Verhalten der Suchmaschinen-Crawler zu steuern
+   * Einige Optionen stehen im Konflikt miteinander, wobei in diesem Fall die Option mit größerer Berechtigung Vorrang hat.
+* **Sitemap generieren** - Wenn ausgewählt, wird ein `sitemap.xml` für diese Seite und ihre untergeordneten Elemente generiert.
 
-* **Exportkonfiguration**
+### Bilder {#images}
 
-  Geben Sie eine Exportkonfiguration an.
+#### Vorgestelltes Bild {#featured-image}
 
-### Miniaturansicht  {#thumbnail}
+In diesem Abschnitt wird das anzuzeigende Bild ausgewählt und konfiguriert. Dies wird in Komponenten verwendet, die auf die Seite verweisen. z. B. Teaser, Seitenlisten usw.
 
-Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
+* **Bild** - Sie können **Asset** „Auswählen“ oder nach einer hochzuladenden Datei suchen und dann **Bearbeiten** oder **Löschen** das ausgewählte Bild auswählen.
+* **Alternativtext** - Text, der die Bedeutung und/oder Funktion des Bildes wiedergibt und häufig von Sprachausgaben verwendet wird
+* **Vererben - Aus dem DAM-Asset stammender Wert** - Wenn diese Option aktiviert ist, wird der Alternativtext mit dem Wert der „Metadaten`dc:description` in DAM gefüllt.
 
-* **Vorschau generieren**
+#### Miniaturansicht {#thumbnail}
 
-  Erstellen Sie eine Vorschau der Seite, die Sie als Miniatur verwenden möchten.
+In diesem Abschnitt können Sie die Miniaturansicht für die Seite auswählen und konfigurieren. Dies wird in Komponenten verwendet, die auf die Seite verweisen. z. B. Teaser, Seitenlisten usw.
 
-* **Bild hochladen**
-
-  Laden Sie ein Bild hoch, das Sie als Miniatur verwenden möchten.
-
-* **Bild auswählen**
-
-  Wählen Sie ein vorhandenes Asset aus, das Sie als Miniatur verwendet möchten.
-
-* **Zurück zur letzten Version**
-
-  Diese Option wird verfügbar, nachdem Sie die Miniatur geändert haben. Wenn Sie Ihre Änderungen nicht behalten möchten, können Sie sie vor dem Speichern rückgängig machen.
-
-### Social Media {#social-media}
-
-* **Freigabe in Social Media**
-
-  Definiert die auf der Seite verfügbaren Freigabeoptionen. Zeigt die Optionen an, die für die [Freigabe der Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=de) zur Verfügung stehen.
-
-   * **Benutzerfreigabe für Facebook aktivieren**
-   * **Benutzerfreigabe für Pinterest aktivieren**
-   * **Bevorzugte XF-Variante**
-Definieren Sie die Experience-Fragment-Variante, die für die Erzeugung von Metadaten für eine Seite verwendet wird
+* **Vorschau generieren** - Erzeugt eine Vorschau der Seite, die als Miniatur verwendet werden soll
+* **Bild hochladen** - Lädt ein Bild hoch, das als Miniatur verwendet werden soll
+* **Bild auswählen** - Wählt ein vorhandenes Asset aus, das als Miniatur verwendet werden soll.
+* **Wiederherstellen** - Diese Option wird verfügbar, nachdem Sie die Miniaturansicht geändert haben. Wenn Sie Ihre Änderungen nicht behalten möchten, können Sie sie vor dem Speichern rückgängig machen.
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud Services**
-
-  Definieren Sie Eigenschaften für [Cloud-Services](/help/sites-developing/extending-cloud-config.md).
+* **Cloud Service-Konfigurationen** - Legt fest, welche Konfiguration für Cloud-Services für die Seite verwendet werden soll
+* **Vererbt von** - Für Live Copies und Sprachkopien werden Cloud-Konfigurationen standardmäßig von der Blueprint vererbt.
+   * Deaktivieren Sie diese Option, um die Vererbung zu überschreiben
 
 ### Personalisierung {#personalization}
 
-* **ContextHub-Konfigurationen**
+#### ContextHub-Konfigurationen {#contexthub}
 
-  Wählen Sie die [ContextHub-Konfiguration](/help/sites-developing/ch-configuring.md) und den [Segmentpfad](/help/sites-administering/segmentation.md).
+* **Vererbt von** - ContextHub-Konfigurationen werden standardmäßig von der übergeordneten Seite übernommen.
+   * Deaktivieren Sie diese Option, um die Vererbung zu überschreiben.
+* **ContextHub-Pfad** - Wählt die [ContextHub-Konfiguration](/help/sites-developing/ch-configuring.md)
+* **Segmentpfad** - Wählt den [Segmentpfad](/help/sites-administering/segmentation.md) aus.
 
-* **Konfiguration für Targeting**
+#### Konfiguration für Targeting {#targeting}
 
-  Wählen Sie eine [Marke, um einen Bereich für das Targeting anzugeben](/help/sites-authoring/target-adobe-campaign.md).
+Wählen Sie eine [Marke“, um einen Bereich für das Targeting anzugeben.](/help/sites-authoring/target-adobe-campaign.md)
 
-  >[!NOTE]
-  >Für diese Option muss das Benutzerkonto der `Target Adminstrators`-Gruppe angehören.
+>[!NOTE]
+>Für diese Option muss das Benutzerkonto der `Target Adminstrators`-Gruppe angehören.
 
 ### Berechtigungen {#permissions}
 
-* **Berechtigungen**
+Verwenden Sie die **Berechtigungen**, um festzulegen, welche Benutzenden, Gruppen oder [geschlossenen Benutzergruppen (CUGs)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=de) auf die Seite zugreifen und/oder sie ändern können.
 
-  Auf dieser Registerkarte können Sie:
+* [Berechtigungen hinzufügen](/help/sites-administering/user-group-ac-admin.md)
+* [Geschlossene Benutzergruppe bearbeiten](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
+* [Effektive Berechtigungen](/help/sites-administering/user-group-ac-admin.md) anzeigen 
 
-   * [Berechtigungen hinzufügen](/help/sites-administering/user-group-ac-admin.md)
-   * [Geschlossene Benutzergruppe bearbeiten](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
+>[!CAUTION]
+>
+>Auf der Registerkarte **Berechtigungen** können Sie CUG-Konfigurationen abhängig vom Vorhandensein des Mixins `granite:AuthenticationRequired` konfigurieren. Wenn Seitenberechtigungen unter Verwendung veralteter CUG-Konfigurationen konfiguriert werden, die auf dem Vorhandensein der Eigenschaft `cq:cugEnabled` basieren, wird eine Warnmeldung angezeigt, und die CUG-Berechtigungen können nicht bearbeitet werden, ebenso wenig wie die Authentifizierungspflicht auf der Registerkarte [Erweitert](/help/sites-authoring/editing-page-properties.md#advanced).
+>
+>
+>In diesem Fall müssen die CUG-Berechtigungen in der [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) bearbeitet werden.
 
-   * [Effektive Berechtigungen](/help/sites-administering/user-group-ac-admin.md) anzeigen 
-
-  >[!CAUTION]
-  >
-  >Auf der Registerkarte **Berechtigungen** können Sie CUG-Konfigurationen abhängig vom Vorhandensein des Mixins `granite:AuthenticationRequired` konfigurieren. Wenn Seitenberechtigungen unter Verwendung veralteter CUG-Konfigurationen konfiguriert werden, die auf dem Vorhandensein der Eigenschaft `cq:cugEnabled` basieren, wird eine Warnmeldung angezeigt, und die CUG-Berechtigungen können nicht bearbeitet werden, ebenso wenig wie die Authentifizierungspflicht auf der Registerkarte [Erweitert](/help/sites-authoring/editing-page-properties.md#advanced).
-  >
-  >
-  >In diesem Fall müssen die CUG-Berechtigungen in der [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) bearbeitet werden.
-
-  >[!NOTE]
-  >
-  >Die Registerkarte „Berechtigungen“ gestattet es nicht, leere CUG-Gruppen zu erstellen, was allerdings nützlich sein kann, um allen Benutzenden den Zugriff zu verwehren. Hierfür muss der CRX Explorer verwendet werden. Weitere Informationen finden Sie im Dokument [Verwaltung von Benutzenden, Gruppen und Zugriffsrechten](/help/sites-administering/user-group-ac-admin.md).
+>[!NOTE]
+>
+>Die Registerkarte „Berechtigungen“ gestattet es nicht, leere CUG-Gruppen zu erstellen, was allerdings nützlich sein kann, um allen Benutzenden den Zugriff zu verwehren. Hierfür muss der CRX Explorer verwendet werden. Weitere Informationen finden Sie im Dokument [Verwaltung von Benutzenden, Gruppen und Zugriffsrechten](/help/sites-administering/user-group-ac-admin.md).
 
 ### Blueprint {#blueprint}
 
-* **Blueprint**
+Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blueprints dienen als Grundlage für Live Copys und sind Teil des [Multi-Site-Managements](/help/sites-administering/msm.md).
 
-  Legen Sie Eigenschaften für eine Blueprint-Seite fest, die für die [Verwaltung mehrerer Websites](/help/sites-administering/msm.md) verwendet wird. Steuert die Umstände, unter denen Änderungen an die Live Copy weitergegeben werden.
+* **Rollout** - Startet einen Rollout von Blueprint-Inhalten auf die Live Copies
+* **Live Copy-Übersicht** - Öffnet ein Fenster zum Durchsuchen der Live Copy-Seitenstruktur
+* **Aktuelle Live Copies** - Eine Liste der Seiten, die auf der ausgewählten Blueprint-Seite basieren (also Live Copies davon sind)
+* **Rollout-Konfiguration** Definiert die Rollout-Konfiguration für die Seite.
 
 ### Live Copy {#live-copy}
 
-* **Live Copy**
+Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copys konfiguriert sind. Wie [ Blueprints sind ](#blueprint) Live Copies Teil von [Multi-Site-Management.](/help/sites-administering/msm.md)
 
-  Legen Sie Eigenschaften für eine Live Copy-Seite fest, die für die [Verwaltung mehrerer Websites](/help/sites-administering/msm.md) verwendet wird. Steuert die Umstände, unter denen Änderungen aus dem Blueprint weitergegeben werden.
+* **Synchronisieren** - Synchronisiert Live Copy mit Blueprint und behält lokale Änderungen bei
+* **Zurücksetzen** - Setzt die Live Copy auf den Status der Blueprint zurück und entfernt lokale Änderungen.
+* **Aussetzen** - Setzt die Live Copy von weiteren Änderungen beim Rollout aus
+* **Trennen** - Trennt Live Copy vom Blueprint
 
-### Site-Struktur {#site-structure}
+#### Quelle {#source}
 
-* Bieten Sie Links zu Seiten an, die eine Funktionalität für die ganze Site bieten, wie **Anmeldeseite**, **Offline-Seite** und andere.
+* Zeigt den Pfad des Blueprints für diese Live Copy an
+
+#### Status {#status}
+
+* Listet den aktuellen Live Copy-Status der Seite auf
+
+#### Konfiguration {#live-copy-config}
+
+* **Live Copy-Vererbung** - Bei Auswahl dieser Option gilt die Live Copy-Konfiguration für alle untergeordneten Elemente.
+* **Rollout-Konfigurationen von übergeordneter Seite übernehmen** - Wenn diese Option aktiviert ist, wird die Rollout-Konfiguration von der übergeordneten Seite übernommen.
+* **Rollout-Konfiguration auswählen**: Legt fest, unter welchen Umständen Änderungen aus dem Blueprint übernommen werden, und ist nur verfügbar, wenn **Rollout-Konfigurationen von übergeordneter Seite erben** nicht aktiviert ist.
+* **Liste der ausgeschlossenen Pfade**
 
 ## Bearbeiten der Seiteneigenschaften {#editing-page-properties-1}
 
