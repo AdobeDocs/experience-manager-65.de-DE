@@ -9,9 +9,9 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 64ffbf05eb3ae6ca3f2475fc99979e420cef15ec
+source-git-commit: 2920e7fd0ce336817a445952a3213c185b224ca9
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '4283'
 ht-degree: 97%
 
 ---
@@ -46,6 +46,7 @@ In diesem Dokument werden die unterstützten Client- und Server-Plattformen für
 
 >[!NOTE]
 >
+>- Eine vollständige Liste der Ausnahmen für unterstütze Server-Plattformen finden Sie unter [Ausnahmen für unterstützte Server-Plattformen](#p-exceptions-to-supported-server-platforms-p).
 >- AEM Forms on JEE unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
 
 ### Upgrade- und Support-Richtlinie
@@ -420,39 +421,37 @@ Sie können AEM Forms on JEE auf einem physischen Computer oder in einer virtuel
 </tbody>
 </table>
 
-
-<!--
-### Exceptions to supported server platforms {#exceptions-to-supported-server-platforms}
+### Ausnahmen für unterstützte Server-Plattformen {#exceptions-to-supported-server-platforms}
 
 
-Consider the following exceptions while choosing a platform to set up your AEM Forms on JEE server.
+Beachten Sie die folgenden Ausnahmen, wenn Sie eine Plattform auswählen, auf der Sie AEM Forms on JEE-Server einrichten.
 
 
-1. AEM Forms on JEE do not support IBM&reg; WebSphere&reg; with MySQL.
-1. AEM Forms on JEE do not support JBoss&reg; on SUSE&reg; Linux&reg; Enterprise Server 12. Only IBM&reg; WebSphere&reg; is supported on SUSE&reg; Linux&reg; Enterprise Server 12.
-1. AEM Forms on JEE do not support any JDK with JBoss&reg; other than Oracle Java&trade; SE.
-1. AEM Forms on JEE do not support any JDK with IBM&reg; WebSphere&reg; other than IBM&reg; JDK.
-1. CRX-repository supports persistence of type TarMK, MongoDB, and relational databases (RDBMK). You cannot have two different database systems between the application server and the CRX-repository. However, on an AEM Forms on JEE environment, you can use MongoMK with CRX-repository and a supported relational database with application server.
-1. AEM Forms on JEE do not support WebSphere&reg; application server on CentOS.
-1. AEM Forms on JEE do not support JBoss&reg; role-based access control (RBAC).
-1. AEM Forms on JEE support Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4 only.
-1. JDK versions higher than 1.8.0_281 are not supported for WebLogic server. (FORMS-8498)
-1. JDK 11.0.20 is not supported to install AEM Forms on JEE Installer. Only JDK 11.0.19 or earlier versions are supported to install AEM Forms on JEE Installer.
+1. AEM Forms on JEE unterstützt IBM® WebSphere® mit MySQL nicht.
+1. AEM Forms on JEE unterstützt nicht JBoss® unter SUSE® Linux® Enterprise Server 12. Nur IBM® WebSphere® wird auf SUSE® Linux® Enterprise Server 12 unterstützt.
+1. AEM Forms on JEE unterstützt kein anderes JDK mit JBoss® als Oracle Java™ SE.
+1. AEM Forms on JEE unterstützt kein anderes JDK mit IBM® WebSphere® als IBM® JDK.
+1. CRX-Repository unterstützt Persistenz des Typs TarMK, MongoDB und relationale Datenbanken (RDBMK). Sie dürfen nicht zwei verschiedene Datenbanksysteme zwischen dem Anwendungsserver und dem CRX-Repository haben. In einer AEM Forms on JEE-Umgebung können Sie MongoMK jedoch mit dem CRX-Repository und einer unterstützten relationalen Datenbank mit Anwendungsserver verwenden.
+1. AEM Forms on JEE unterstützt keinen WebSphere®-Anwendungs-Server unter CentOS.
+1. AEM Forms on JEE unterstützt keine rollenbasierte Zugriffssteuerung (RBAC) für JBoss®.
+1. AEM Forms on JEE unterstützt Oracle Java™ SE 11 (64 Bit) SDK nur für Anwendungs-Server® JBoss EAP 7.4.
+1. JDK-Versionen, die höher als 1.8.0_281 sind, werden für WebLogic-Server nicht unterstützt. (FORMS-8498)
+1. JDK 11.0.20 wird zur Installation des AEM Forms on JEE-Installationsprogramms nicht unterstützt. Nur JDK 11.0.19 oder frühere Versionen werden zur Installation des AEM Forms on JEE-Installationsprogramms unterstützt.
 
-2. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312)
-
-
-In addition, consider the following points while choosing software for Adobe AEM Forms on JEE deployments:
+1. [!DNL Microsoft® Windows Server 2019] unterstützt keine [!DNL MySQL 5.7] und [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] unterstützt keine schlüsselfertigen Installationen für [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312)
 
 
-- AEM Forms on JEE support updates, patches, and fix packs on top of the specified major and minor version of supported software. However, update to the next major or minor version is not supported unless specified.
-- Cluster-based installations do not support TarMK persistence. For information about supported persistence, see [Choosing a persistence type for an AEM Forms installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
-- AEM Forms on JEE support various third-party software as per Adobe's [Third-party software support Policy](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p).
-- AEM Forms on JEE support platforms as per the support provided by third-party vendors. Some combinations may not be allowed by third-party vendors. For example, many vendors have not certified their application servers with Oracle. As a result, AEM Forms on JEE also do not support these combinations. To ensure that you choose the supported software versions, check the support matrix for the third-party vendors as well.
-- AEM Forms on JEE do not support TarMK Cold Standby.
-- AEM Forms on JEE do not support vertical clustering.
-- AEM Forms on JEE do not support MySQL database on a clustered environment.
-- For the list of removed or updated platforms, see [AEM 6.5 Forms New Feature Summary](../../forms/using/whats-new.md) document.-->
+Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für Implementierungen von Adobe AEM Forms on JEE auswählen:
+
+
+- AEM Forms on JEE unterstützt Updates, Patches und Fix Packs zusätzlich zu der angegebenen Haupt- oder Nebenversion der unterstützten Software. Das Update auf die nächste Haupt- oder Nebenversion wird jedoch nur unterstützt wenn entsprechend angegeben.
+- Cluster-basierte Installationen unterstützen keine TarMK-Persistenz.  Weitere Informationen zur unterstützten Persistenz finden Sie unter [Auswählen eines Persistenztyps für eine AEM Forms-Installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
+- AEM Forms on JEE unterstützt die Software verschiedener Drittanbieter gemäß der [Richtlinie zur Unterstützung der Software von Drittanbietern](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p) von Adobe.
+- AEM Forms on JEE unterstützt Plattformen in Abhängigkeit der Unterstützung durch Drittanbieter.  Einige Kombinationen werden von Drittanbietern möglicherweise nicht zugelassen. Zum Beispiel haben viele Anbieter ihre Anwendungsserver nicht mit Oracle zertifiziert. Daher unterstützt auch AEM Forms on JEE diese Kombinationen nicht.  Um sicherzugehen, dass Sie die unterstützten Softwareversionen auswählen, sollten Sie auch die Support-Matrix dieser Drittanbieter überprüfen.
+- AEM Forms auf JEE unterstützt keine TarMK Cold Standby.
+- AEM Forms auf JEE unterstützt kein vertikales Clustering.
+- AEM Forms on JEE unterstützt nicht die MySQL-Datenbank in einer Cluster-Umgebung.
+- Eine Liste der entfernten bzw. der aktualisierten Plattformen finden Sie in dem Dokument [AEM 6.5 Forms - Übersicht über die neuen Funktionen](../../forms/using/whats-new.md).
 
 ### LDAP-Server (optional) {#ldap-servers-optional}
 
@@ -896,7 +895,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -993,7 +992,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
 
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
