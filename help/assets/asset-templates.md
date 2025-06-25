@@ -7,9 +7,9 @@ feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1558'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 91%
 
 Bei Asset-Vorlagen handelt es sich um eine spezielle Klasse von Assets, die das schnelle Wiederverwenden von visuell reichhaltigen Inhalten für digitale Medien und Printmedien ermöglichen.  Eine Asset-Vorlage enthält zwei Teile: den unveränderlichen Messaging-Abschnitt und den bearbeitbaren Abschnitt. Der unveränderliche Messaging-Abschnitt kann proprietären Inhalt enthalten, z. B. das Markenlogo und Copyright-Informationen, die nicht bearbeitet werden können. Der bearbeitbare Abschnitt kann visuelle Inhalte und Textinhalte in Feldern enthalten, die bearbeitet werden können, um das Messaging anzupassen.
 
-Asset-Vorlagen bieten die Flexibilität, eingeschränkte Bearbeitungen vorzunehmen und gleichzeitig die Sicherheit globaler Beschilderung zu gewährleisten. Diese Fähigkeit macht sie zu idealen Bausteinen für die schnelle Anpassung und Verteilung von Inhalten über verschiedene Funktionen hinweg. Durch die Wiederverwendung von Inhalten werden die Kosten für die Verwaltung von Druckkanälen und digitalen Kanälen reduziert und ganzheitliche und konsistente Umgebungen für diese Kanäle bereitgestellt.
+Asset-Vorlagen bieten die Flexibilität, begrenzte Änderungen vorzunehmen und gleichzeitig die globale Kennzeichnung sicher zu gewährleisten. Diese Fähigkeit macht sie zu idealen Bausteinen für die schnelle Anpassung und Verteilung von Inhalten über verschiedene Funktionen hinweg. Durch die Wiederverwendung von Inhalten werden die Kosten für die Verwaltung von Druckkanälen und digitalen Kanälen reduziert und ganzheitliche und konsistente Umgebungen für diese Kanäle bereitgestellt.
 
-Als Marketing-Fachkraft können Sie Vorlagen in [!DNL Experience Manager Assets] speichern und verwalten und eine zentrale Basisvorlage verwenden, um auf einfache Weise mehrere personalisierte Druckerlebnisse zu schaffen. Sie können verschiedene Arten von Marketingmaterial erstellen, einschließlich Broschüren, Flyern, Postkarten, Visitenkarten usw., um Ihre Marketing-Botschaft klar an Kunden zu vermitteln. Außerdem können Sie aus vorhandenen oder neuen Druckausgaben mehrseitige Druckausgaben zusammenstellen. Und das Beste ist: Sie können ohne großen Aufwand gleichzeitig digitale Erfahrungen und gedruckte Erfahrungen bereitstellen, um für Benutzende eine konsistente integrierte Erfahrung zu schaffen.
+Als Marketing-Fachkraft können Sie Vorlagen in [!DNL Experience Manager Assets] speichern und verwalten und eine zentrale Basisvorlage verwenden, um auf einfache Weise mehrere personalisierte Druckerlebnisse zu schaffen. Sie können verschiedene Arten von Marketing-Materialien erstellen, darunter Broschüren, Flyer, Postkarten, Visitenkarten usw. erstellen, um Ihre Marketing-Botschaft klar und deutlich an Ihre Kundschaft zu vermitteln. Außerdem können Sie aus vorhandenen oder neuen Druckausgaben mehrseitige Druckausgaben zusammenstellen. Und das Beste ist: Sie können ohne großen Aufwand gleichzeitig digitale Erfahrungen und gedruckte Erfahrungen bereitstellen, um für Benutzende eine konsistente integrierte Erfahrung zu schaffen.
 
 Bei Asset-Vorlagen handelt es sich zwar meistens um [!DNL Adobe InDesign]-Dateien, aber gute [!DNL Adobe InDesign]-Kenntnisse sind keine Grundvoraussetzung für die Erstellung von beeindruckenden Artefakten. Sie müssen die Felder Ihrer [!DNL Adobe InDesign]-Vorlage nicht den Produktfeldern zuordnen, wie dies sonst beim Erstellen von Katalogen der Fall ist. Sie können die Vorlagen im WYSIWYG-Modus direkt auf der Web-Benutzeroberfläche bearbeiten. Damit Ihre Änderungen von [!DNL Adobe InDesign] verarbeitet werden können, müssen Sie aber zuerst [!DNL Experience Manager Assets] für die Integration in [!DNL Adobe InDesign Server] konfigurieren.
 
-Die Möglichkeit, [!DNL Adobe InDesign] Vorlagen über die Web-Benutzeroberfläche zu bearbeiten, trägt dazu bei, die Zusammenarbeit zwischen Kreativ- und Marketingmitarbeitern zu verbessern. Die höhere Inhaltsgeschwindigkeit reduziert die Time-to-Market für Marketingmaterial.
+Die Möglichkeit zur Bearbeitung von [!DNL Adobe InDesign]-Vorlagen über die Web-Benutzeroberfläche trägt dazu bei, die Zusammenarbeit zwischen Kreativ- und Marketing-Mitarbeitenden zu verbessern. Die höhere Inhaltsgeschwindigkeit reduziert die Time-to-Market für Marketingmaterial.
 
 Sie können Asset-Vorlagen für folgende Zwecke nutzen:
 
@@ -67,7 +67,7 @@ Stellen Sie sich einen Fall vor, in dem Sie digitales, druckbares Material, z. 
 
 ## Bearbeiten von Marketing-Material {#editing-a-collateral}
 
-Sie können Marketing-Material sofort nach dem Erstellen bearbeiten. Alternativ können Sie es über die Seite [!UICONTROL Vorlagen] oder die Asset-Seite öffnen.
+Sie können Marketing-Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu können Sie es über die Seite [!UICONTROL Vorlagen] oder die Asset-Seite öffnen.
 
 1. Sie haben folgende Möglichkeiten, um das Marketingmaterial zur Bearbeitung zu öffnen:
 
@@ -90,7 +90,7 @@ Sie können Marketing-Material sofort nach dem Erstellen bearbeiten. Alternativ 
 
    >[!NOTE]
    >
-   >Integrieren Sie Ihre [!DNL Experience Manager]-Bereitstellung mit einer [!DNL InDesign Server], damit [!DNL Experience Manager Assets] Daten aus der [!DNL InDesign]-Vorlage extrahieren und für die Bearbeitung bereitstellen können. Weitere Informationen finden Sie unter [Integrieren von Experience Manager Assets in InDesign Server](/help/assets/indesign.md).
+   >Integrieren Sie Ihre [!DNL Experience Manager]-Bereitstellung in einen [!DNL InDesign Server], damit [!DNL Experience Manager Assets] Daten aus der [!DNL InDesign]-Vorlage extrahieren und zur Bearbeitung bereitstellen kann. Weitere Informationen finden Sie unter [Integrieren von Experience Manager Assets in InDesign Server](/help/assets/indesign.md).
 
 1. Klicken Sie zum Ändern des Texts in einem bearbeitbaren Feld in der Liste mit den entsprechenden Feldern auf das Textfeld und bearbeiten Sie den Text.
 
@@ -125,7 +125,7 @@ Sie können Marketing-Material sofort nach dem Erstellen bearbeiten. Alternativ 
    >Gehen Sie wie folgt vor, um für [!DNL Experience Manager] das Auflösen von Bildern zu ermöglichen:
    >
    >* Betten Sie Bilder ein, während Sie [!DNL InDesign]-Vorlagen erstellen (siehe [Informationen zu Links und eingebetteten Grafiken](https://helpx.adobe.com/de/indesign/using/graphics-links.html)).
-   >* Stellen Sie [!DNL Experience Manager] in Ihrem lokalen Dateisystem bereit und ordnen Sie dann die fehlenden Symbole den vorhandenen Assets in [!DNL Experience Manager] zu.
+   >* Stellen Sie [!DNL Experience Manager] in Ihrem lokalen Dateisystem bereit und ordnen Sie anschließend fehlende Symbole den vorhandenen Assets in [!DNL Experience Manager] zu.
    >
 
 1. Wählen Sie zum Generieren einer PDF-Ausgabedarstellung für die Broschüre im Dialogfeld die Acrobat-Option aus und klicken Sie anschließend auf **[!UICONTROL Weiter]**.

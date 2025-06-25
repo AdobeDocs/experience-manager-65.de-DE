@@ -1,14 +1,14 @@
 ---
-title: Allgemeine Versionshinweise zu  [!DNL Adobe Experience Manager]  6.5
-description: '[!DNL Adobe Experience Manager] 6.5 enthält Versionshinweise, Angaben zu neuen Funktionen und zur Installation sowie detaillierte Änderungslisten.'
+title: Allgemeine Versionshinweise zu [!DNL Adobe Experience Manager] 6.5
+description: Informationen zu[!DNL Adobe Experience Manager] 6.5 mit Versionshinweisen, Angaben zu neuen Funktionen und zur Installation sowie ausführlichen Änderungsauflistungen.
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4477'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -157,11 +157,9 @@ Weitere Informationen zu Änderungen in AEM Screens finden Sie in den Versionsh
      ```
 
    * Variablendeklarationen mit data-sly-set:
-
      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
    * Listen- und Wiederholungsparameter: begin, step, end:
-
      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * Kennungen für data-sly-unwrap:
@@ -436,7 +434,7 @@ Weitere Informationen zu neuen und verbesserten Funktionen sowie Dokumentationsr
 
 Adobe verwendet ein kundenorientiertes Entwicklungsmodell, das es den Kunden ermöglicht, zu allen Phasen des Entwicklungsprozesses von der Spezifikation über die Entwicklung bis hin zum Test beizutragen. Unser Dank geht an alle beteiligten Kunden und Partner in diesem Prozess.
 
-Adobe hält die erforderlichen Vorgehensweisen und Prozesse bereit, um die Erfassung, Priorisierung und Verfolgung kundenorientierter Fehlerbehebungen und eine auf Verbesserungswünsche bezogene Entwicklung zu ermöglichen. Das [Experience Manager-Supportportal](https://experienceleague.adobe.com/de?support-solution=Experience+Manager&support-tab=home&lang=de#support) ist mit dem Adobe Enhancement and Defect Tracking System integriert. Kundenprobleme werden, wenn möglich, gemeinsam mit dem Kunden-Support-Team identifiziert und gelöst. Bei einer Weiterleitung an Forschung und Entwicklung werden alle Kundeninformationen erfasst und zu Priorisierungs- und Reporting-Zwecken verwendet. Bei der Entwicklung haben bezahlter Support, Garantieprobleme sowie bezahlte Kundenerweiterungen Priorität.
+Adobe hält die erforderlichen Vorgehensweisen und Prozesse bereit, um die Erfassung, Priorisierung und Verfolgung kundenorientierter Fehlerbehebungen und eine auf Verbesserungswünsche bezogene Entwicklung zu ermöglichen. Das [Experience Manager-Supportportal](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home&lang=de#support) ist mit dem Adobe Enhancement and Defect Tracking System integriert. Kundenprobleme werden, wenn möglich, gemeinsam mit dem Kunden-Support-Team identifiziert und gelöst. Bei einer Weiterleitung an Forschung und Entwicklung werden alle Kundeninformationen erfasst und zu Priorisierungs- und Reporting-Zwecken verwendet. Bei der Entwicklung haben bezahlter Support, Garantieprobleme sowie bezahlte Kundenerweiterungen Priorität.
 
 Dieser Prozess der Priorisierung hat zu mehr als 750 kundenorientierten Änderungen geführt, die in AEM 6.5 vorgenommen wurden.
 
@@ -560,7 +558,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 * **Ordner „Metadatenschema“**: Nach dem Hinzufügen einer Auswahl-Schaltfläche werden die Felder „ID“ und „Wert“ nicht erwartungsgemäß gerendert und die Löschfunktion funktioniert nicht. (CQ-4261144)
 * Beim Umbenennen eines Assets ist es nicht möglich, ein Leerzeichen im Asset-Namen zu verwenden. (CQ-4266403)
 
-### Formulare {#forms}
+### Forms {#forms}
 
 * Wenn AEM Forms unter einem Linux®-Betriebssystem installiert ist, funktioniert die digitale Signatur nicht beim Modul für die Hardware-Sicherheit. (CQ-4266721)
 * (Nur AEM Forms auf WebSphere®) Die Option **Forms-Workflow** > **Aufgabensuche** gibt kein Ergebnis zurück, wenn Sie nach einem **Admin** anhand des **Benutzernamens** suchen. (CQ-4266457)

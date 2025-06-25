@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '9057'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -328,7 +328,7 @@ Dieses Erfolgskriterium entspricht dem Erfolgskriterium zu [Untertitel (aufgezei
 
 Befolgen Sie die Anleitungen, die oben unter [Untertitel (voraufgezeichnet)](#captions-pre-recorded) genannt wurden. Da die Medien live übermittelt werden, muss die Bereitstellung der Untertitel so schnell wie möglich erfolgen und sofort auf das reagieren, was passiert. Daher sollten Sie Tools für die Echtzeit-Untertitelung oder für „Sprache in Text“ in Erwägung ziehen.
 
-Detaillierte Anweisungen würden den Rahmen dieses Dokuments sprengen, doch die folgende Ressource bietet hilfreiche Informationen:
+Detaillierte Anweisungen dazu würden den Rahmen dieses Dokuments sprengen, doch in den folgenden Ressourcen finden Sie nützliche Informationen:
 
 * [WebAIM: Echtzeit-Untertitelung](https://webaim.org/techniques/captions/realtime)
 

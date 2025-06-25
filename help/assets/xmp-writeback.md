@@ -8,9 +8,9 @@ exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '780'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Um Metadatenänderungen beim Hochladen des Assets in die Ausgabeformate zu propa
 
 ## Aktivieren von XMP-Writeback für bestimmte Ausgabeformate {#enabling-xmp-writeback-for-specific-renditions}
 
-Damit die XMP-Writeback-Funktion die Metadatenänderungen in die Ausgabedarstellungen kopieren kann, müssen Sie diese Ausgabeformate im Workflow-Schritt &quot;XMP-Writeback-Prozess“ des Workflows [!UICONTROL DAM-Metadaten-Writeback] angeben. Standardmäßig ist dieser Schritt mit dem ursprünglichen Format konfiguriert.
+Damit die XMP-Writeback-Funktion die Metadatenänderungen in die Ausgabedarstellungen kopieren kann, müssen Sie diese Ausgabeformate im Workflow-Schritt „XMP-Writeback-Vorgang“ des Workflows [!UICONTROL DAM-Metadaten-Writeback] angeben. Standardmäßig ist dieser Schritt mit dem ursprünglichen Format konfiguriert.
 
 Führen Sie folgende Schritte aus, damit die Funktion „XMP Writeback“ Metadaten in die Miniaturansichten „140.100.png“ und „319.319.png“ der Ausgabedarstellung überträgt.
 
@@ -66,7 +66,7 @@ Führen Sie folgende Schritte aus, damit die Funktion „XMP Writeback“ Metada
 
 1. Speichern Sie den Workflow.
 
-Die Metadatenänderungen werden an die Ausgabedarstellungen „thumbnail.140.100.png“ und „thumbnail.319.319.png“ des Assets übertragen und nicht an die anderen.
+Die Metadatenänderungen werden in die Ausgabeformate „thumbnail.140.100.png“ und „thumbnail.319.319.png“ des Elements und nicht auf die anderen Ausgabeformate übertragen.
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ Durch Filtern von XMP-Metadaten über die Zulassungsliste wird dieses Problem be
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. Um blockierte XMP-Eigenschaften nach dem Anwenden der Filterung über die Zulassungsliste herauszufiltern, geben Sie diese im Feld **[!UICONTROL Blockierte XML-Namen für die XMP-Filterung]** an.
+1. Um blockierte XMP-Eigenschaften nach dem Anwenden der Filterung über eine Zulassungsliste herauszufiltern, geben Sie diese im Feld **[!UICONTROL Blockierte XML-Namen für die XMP-Filterung]** an.
 
    >[!NOTE]
    >

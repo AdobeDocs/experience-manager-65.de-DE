@@ -11,9 +11,9 @@ exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5755'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1133,7 +1133,7 @@ Wenn Ihrem System der Festplattenspeicher ausgeht oder Sie feststellen, dass die
 * Haben Sie die [Versionsbereinigung](/help/sites-deploying/version-purging.md) deaktiviert?
 * Wissensdatenbank:
 
-   * [Zu viele geöffnete Dateien]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=de
+   * [Zu viele geöffnete Dateien]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=de)
 
 ### Regelmäßige Leistungsbeeinträchtigung {#regular-performance-degradation}
 

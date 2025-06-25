@@ -9,9 +9,9 @@ exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1556'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Siehe [Verwenden von PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## Unterstützte Bildtranskodierungs-Bibliothek {#supported-image-transcoding-library}
 
-Die Adobe Imaging Transcoding Library ist eine Lösung zur Bildverarbeitung, die essenzielle Bildfunktionen übernimmt, darunter Bildkodierung, -transkodierung, -Resampling und Größenanpassung.
+Bei der Adobe Imaging Transcoding Library handelt es sich um eine Lösung zur Bildverarbeitung, die essenzielle Bildfunktionen übernimmt, darunter Bildkodierung, -transkodierung, -Resampling und Größenanpassung.
 
 Die Imaging Transcoding Library unterstützt Dateien in den Formaten JPG/JPEG, PNG (8-Bit und 16-Bit), GIF, BMP, TIFF/Komprimiertes TIFF (außer 32-Bit-TIFF- und PTIFF-Dateien), ICO sowie ICN MIME-Typen.
 
@@ -144,7 +144,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt:
 
 ## Unterstützte Archivformate {#supported-archive-formats}
 
-Die unterstützten Archivformate und die Anwendbarkeit der gängigen DAM-Workflows werden in der folgenden Tabelle beschrieben.
+Die unterstützten Archivformate und die Anwendbarkeit der allgemeinen DAM-Workflows werden in der folgenden Tabelle behandelt.
 
 | Formate | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung von Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -164,7 +164,7 @@ Die Anwendbarkeit der gängigen DAM-Funktionen für einige spezifische Dateiform
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JavaScript (wenn mit einer eigenen Bereitstellungs-Domain konfiguriert) | − | − | − | − | − | ✓ |
+| JavaScript (wenn mit eigener Bereitstellungs-Domain konfiguriert) | − | − | − | − | − | ✓ |
 
 >[!NOTE]
 >
@@ -172,7 +172,7 @@ Die Anwendbarkeit der gängigen DAM-Funktionen für einige spezifische Dateiform
 
 ## Unterstützte MIME-Typen {#supported-mime-types}
 
-Standardmäßig erkennt [!DNL Experience Manager] den Dateityp anhand der Dateierweiterung. [!DNL Experience Manager] kann ihn aber auch anhand des Inhalts der Dateien erkennen. Wählen Sie für letzteres die Option [!UICONTROL Detect MIME from content] in [!UICONTROL Day CQ DAM Mime Type Service] in der [!DNL Experience Manager] Web Console aus.
+Standardmäßig erkennt [!DNL Experience Manager] den Dateityp anhand der Dateierweiterung. [!DNL Experience Manager] kann ihn aber auch anhand des Inhalts der Dateien erkennen. Wählen Sie hierfür die Option [!UICONTROL Detect MIME from content] in [!UICONTROL Day CQ DAM Mime Type Service] in der [!DNL Experience Manager]-Web-Konsole aus.
 
 Eine Liste der unterstützten MIME-Typen finden Sie in CRXDE Lite unter `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
@@ -216,7 +216,7 @@ Eine Liste der unterstützten MIME-Typen finden Sie in CRXDE Lite unter `/conf/g
 | PICT | image/x-pict | | |
 | PNG | image/png | | |
 | PPT | application/vnd.ms-powerpoint | | |
-| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options)</li><li>[illustratorOptions] (https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options</li></ul> |
+| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options)</li><li>[illustratorOptions]&#x200B;(https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options</li></ul> |
 | PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options)</li><li>[photoshopLayerOptions](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options)</li></ul> |
 | RTF | application/rtf | | |
 | SVG | image/svg+xml | | |
@@ -285,7 +285,7 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 | PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Drehung](/help/assets/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Drehung](/help/assets/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Spin](/help/assets/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
 
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->

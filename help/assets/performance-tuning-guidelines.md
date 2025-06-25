@@ -8,9 +8,9 @@ feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2729'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Ein Setup von [!DNL Experience Manager Assets] umfasst eine Reihe von Hardware-,
 
 Außerdem schaffen Sie eine solide Grundlage für Ihre [!DNL Experience Manager Assets]-Bereitstellung, mit der Sie alle Anforderungen an Leistung, Skalierbarkeit und Zuverlässigkeit erfüllen, wenn Sie sich an bestimmte Richtlinien zur Optimierung der Hardware und Software halten.
 
-Eine schwache Leistung von [!DNL Experience Manager Assets] kann sich auf die Benutzerfreundlichkeit auswirken und die interaktive Leistung, Asset-Verarbeitung und Download-Geschwindigkeit und andere Bereiche beeinträchtigen.
+Eine schlechte Leistung in [!DNL Experience Manager Assets] kann sich auf das Anwendererlebnis in Bezug auf interaktive Leistung, Asset-Verarbeitung, Download-Geschwindigkeit und andere Bereiche auswirken.
 
 Daher gehört die Leistungsoptimierung zu den grundlegenden Aufgaben, bevor Sie Zielmetriken für Ihre Projekte erstellen.
 
@@ -30,13 +30,13 @@ In den folgenden Schlüsselbereichen sollten Sie besonders darauf achten, dass L
 
 ## Plattform {#platform}
 
-Während Experience Manager auf verschiedenen Plattformen unterstützt wird, hat Adobe die größte Unterstützung für native Tools unter Linux® und Windows gefunden, was zu optimaler Leistung und einfacher Implementierung beiträgt. Ein 64-Bit-Betriebssystem ist ideal für die hohen Speicheranforderungen einer [!DNL Experience Manager Assets]-Bereitstellung. Wie bei jeder Experience Manager-Bereitstellung sollten Sie nach Möglichkeit TarMK implementieren. TarMK kann zwar nicht über eine einzelne Autoreninstanz skaliert werden, erzielt jedoch erfahrungsgemäß eine bessere Leistung als MongoMK. Sie können TarMK-Offload-Instanzen hinzufügen, um die Leistung der Workflow-Verarbeitung Ihrer [!DNL Experience Manager Assets]-Bereitstellung zu erhöhen.
+Experience Manager wird auf einer Reihe von Plattformen unterstützt. Nach den Erfahrungen von Adobe werden die nativen Tools jedoch unter Linux® und Windows besonders gut unterstützt und können dort zur optimalen Leistung und Vereinfachung der Implementierung beitragen. Ein 64-Bit-Betriebssystem ist ideal für die hohen Speicheranforderungen einer [!DNL Experience Manager Assets]-Bereitstellung. Wie bei jeder Experience Manager-Bereitstellung sollten Sie nach Möglichkeit TarMK implementieren. TarMK kann zwar nicht über eine einzelne Autoreninstanz skaliert werden, erzielt jedoch erfahrungsgemäß eine bessere Leistung als MongoMK. Sie können TarMK-Offload-Instanzen hinzufügen, um die Leistung der Workflow-Verarbeitung Ihrer [!DNL Experience Manager Assets]-Bereitstellung zu erhöhen.
 
 ### Temporärer Ordner {#temp-folder}
 
-Nutzen Sie einen Hochleistungsspeicher für das temporäre Java-Verzeichnis, um das Hochladen der Assets zu beschleunigen. Unter Linux® und Windows kann ein RAM-Laufwerk oder eine SSD verwendet werden. In Cloud-basierten Umgebungen kann ein äquivalenter Hochgeschwindigkeitsspeicher verwendet werden. In Amazon EC2 kann beispielsweise ein [flüchtiges Laufwerk](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) als temporärer Ordner verwendet werden.
+Nutzen Sie einen Hochleistungsspeicher für das temporäre Java-Verzeichnis, um das Hochladen der Assets zu beschleunigen. Unter Linux® und Windows können Sie beispielsweise ein RAM- oder SSD-Laufwerk verwenden. In Cloud-basierten Umgebungen kann ein äquivalenter Hochgeschwindigkeitsspeicher verwendet werden. In Amazon EC2 kann beispielsweise ein [kurzlebiges Laufwerk](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) für den temporären Ordner verwendet werden.
 
-Bei einer großen Speicherkapazität des Servers kann ein RAM-Laufwerk konfiguriert werden. Führen Sie unter Linux® die folgenden Befehle aus, um ein RAM-Laufwerk mit 8 GB zu erstellen:
+Bei einer großen Speicherkapazität des Servers kann ein RAM-Laufwerk konfiguriert werden. Führen Sie unter Linux® die folgenden Befehle aus, um ein RAM-Laufwerk von 8 GB zu erstellen:
 
 ```shell
 mkfs -q /dev/ram1 800000
@@ -78,15 +78,15 @@ Allen [!DNL Experience Manager Assets]-Benutzern von wird angeraten, Datenspeich
 
 ### Konfigurieren der Maximalgröße des gepufferten Bilder-Caches   {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-Verringern Sie beim Hochladen großer Mengen an Assets in [!DNL Adobe Experience Manager] zur Berücksichtigung unerwarteter Spitzen bei der Speichernutzung und zur Verhinderung von JVM-Fehlern mit OutOfMemoryErrors die konfigurierte Maximalgröße des gepufferten Bilder-Caches. Betrachten wir ein Beispiel mit einem System, das über eine maximale Heap-Größe (-`Xmx`param) von 5 GB verfügt und bei dem der Oak-Blob-Cache auf 1 GB und der Dokumenten-Cache auf 2 GB eingestellt ist. In diesem Fall würde der gepufferte Cache maximal 1,25 GB und Speicher benötigen, sodass nur 0,75 GB Speicher für unerwartete Spitzen übrig bliebe.
+Verringern Sie beim Hochladen großer Mengen an Assets in [!DNL Adobe Experience Manager] zur Berücksichtigung unerwarteter Spitzen bei der Speichernutzung und zur Verhinderung von JVM-Fehlern mit OutOfMemoryErrors die konfigurierte Maximalgröße des gepufferten Bilder-Caches. Betrachten wir ein Beispiel mit einem System, das über eine maximale Heap-Größe (-`Xmx`param) von 5 GB verfügt und bei dem der Oak-Blob-Cache auf 1 GB und der Dokumenten-Cache auf 2 GB eingestellt ist. In diesem Fall würde der gepufferte Cache maximal 1,25 GB Speicher in Anspruch nehmen, wodurch nur 0,75 GB Speicher für unerwartete Spitzen verblieben.
 
 Konfigurieren Sie die Größe des gepufferten Cache in der OSGi-Web-Konsole. Legen Sie bei `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache` die Eigenschaft `cq.dam.image.cache.max.memory` in Byte fest. 1073741824 entspricht beispielsweise 1 GB (1024 x 1024 x 1024 = 1 GB).
 
-Wenn Sie über Experience Manager 6.1 SP1 einen `sling:osgiConfig`-Knoten zum Konfigurieren dieser Eigenschaft verwenden, stellen Sie sicher, dass Sie diesen Datentyp auf „Long“ einstellen.
+Wenn Sie über Experience Manager 6.1 SP1 einen `sling:osgiConfig`-Knoten zur Konfiguration dieser Eigenschaft verwenden, stellen Sie sicher, dass Sie diesen Datentyp auf „Long“ einstellen.
 
-### Gemeinsame Datenspeicher   {#shared-data-stores}
+### Gemeinsame Datenspeicher {#shared-data-stores}
 
-Mit der Implementierung eines S3-Datenspeichers oder Shared File Datastore sparen Sie Speicherplatz auf der Festplatte und erhöhen den Netzwerkdurchsatz in großen Implementierungen. Weitere Informationen zu den Vor- und Nachteilen des gemeinsamen Datenspeichers finden Sie in der [Anleitung zur Dimensionierung in Assets](/help/assets/assets-sizing-guide.md).
+Mit der Implementierung eines S3-Datenspeichers oder Shared File Datastore sparen Sie Speicherplatz auf der Festplatte und erhöhen den Netzwerkdurchsatz in großen Implementierungen. Weitere Informationen zu den Vor- und Nachteilen des gemeinsamen Datenspeichers finden Sie in der [Anleitung zur Größenänderung von Assets](/help/assets/assets-sizing-guide.md).
 
 ### S3-Datenspeicher {#s-data-store}
 
@@ -117,10 +117,10 @@ accessKey=<snip>
 
 Adobe empfiehlt die Aktivierung von HTTPS, da viele Unternehmen über Firewalls verfügen, die den HTTP-Verkehr überprüfen und sich dadurch negativ auf Uploads auswirken und Dateien beschädigen. Stellen Sie bei großen Datei-Uploads sicher, dass Benutzer über Kabelverbindungen zum Netzwerk verfügen, da ein WLAN-Netzwerk schnell überfordert ist. Richtlinien zur Ermittlung von Engpässen im Netzwerk finden Sie in der [Anleitung zur Größenänderung von Assets](/help/assets/assets-sizing-guide.md). Informationen zur Beurteilung der Netzwerkleistung mit einer Analyse der Netzwerktopologie finden Sie unter [Überlegungen zum Assets-Netzwerk](/help/assets/assets-network-considerations.md).
 
-Welche Strategie der Netzwerkoptimierung Sie verwenden, hängt in erster Linie von der verfügbaren Bandbreite und der Last auf Ihrer [!DNL Experience Manager]-Instanz ab. Allgemeine Konfigurationsoptionen, einschließlich Firewalls und Proxys, können die Netzwerkleistung verbessern. Die folgenden Aspekte sollten berücksichtigt werden:
+Welche Strategie der Netzwerkoptimierung Sie verwenden, hängt in erster Linie von der verfügbaren Bandbreite und der Last auf Ihrer [!DNL Experience Manager]-Instanz ab. Allgemeine Konfigurationsoptionen wie Firewalls oder Proxys können zur Verbesserung der Netzwerkleistung beitragen. Die folgenden Aspekte sollten berücksichtigt werden:
 
 * Stellen Sie je nach Instanztyp (klein, mittel, groß) sicher, dass die Netzwerkbandbreite für Ihre Experience Manager-Instanz ausreichend ist. Dies ist besonders wichtig, wenn [!DNL Experience Manager] auf AWS gehostet wird.
-* Wird Ihre [!DNL Experience Manager]-Instanz auf AWS gehostet, können Sie von einer flexiblen Skalierung profitieren. Instanz hochladen, wenn Benutzer eine hohe Auslastung erwarten. Verkleinern Sie die Instanz, wenn nur eine mäßige/geringe Belastung erwartet wird.
+* Wird Ihre [!DNL Experience Manager]-Instanz auf AWS gehostet, können Sie von einer flexiblen Skalierung profitieren. Erweitern Sie die Instanz, wenn die Benutzenden eine hohe Auslastung erwarten. Verkleinern Sie die Instanz, wenn nur eine mäßige/geringe Belastung erwartet wird.
 * HTTPS: Die meisten Benutzenden verfügen über Firewalls, die den HTTP-Traffic überwachen. Dies kann sich negativ auf das Hochladen von Dateien auswirken oder sogar Dateien beim Hochladen beschädigen.
 * Uploads großer Dateien: Stellen Sie sicher, dass die Benutzenden über Kabelverbindungen zum Netzwerk verfügen (WLAN-Verbindungen sind schnell gesättigt).
 
@@ -168,7 +168,7 @@ Das Festlegen einer Warteschlange auf die Hälfte der verfügbaren Prozessoren i
 
 Der [!UICONTROL DAM-Update-Asset]-Workflow enthält eine vollständige Suite an für Aufgaben konfigurierten Schritten, beispielsweise Dynamic Media PTIFF-Generierung und [!DNL Adobe InDesign Server]-Integration. Die meisten Benutzer benötigen jedoch nicht alle diese Schritte. Adobe empfiehlt die Erstellung einer benutzerdefinierten Kopie des [!UICONTROL DAM-Update-Asset]-Workflow-Modells, in der alle unnötigen Schritte entfernt wurden. Ändern Sie dann die Launcher für [!UICONTROL DAM-Update-Asset] so, dass sie auf das neue Modell zeigen.
 
-Wenn Sie den [!UICONTROL DAM Update Asset]-Workflow häufig ausführen, kann dadurch die Größe Ihres Dateidatenspeichers deutlich ansteigen. Die Ergebnisse eines von Adobe durchgeführten Experiments haben gezeigt, dass die Datenspeichergröße um ca. 400 GB ansteigt, wenn innerhalb von 8 Stunden etwa 5.500 Workflows ausgeführt werden.
+Wenn Sie den Workflow [!UICONTROL DAM-Update-Asset] häufig ausführen, kann hierdurch die Größe Ihres Dateidatenspeichers deutlich ansteigen. Die Ergebnisse eines von Adobe durchgeführten Experiments haben gezeigt, dass die Datenspeichergröße um ca. 400 GB ansteigt, wenn innerhalb von 8 Stunden etwa 5.500 Workflows ausgeführt werden.
 
 Hierbei handelt es sich um einen vorübergehenden Anstieg. Nach Ausführung der Aufgabe zur Speicherbereinigung weist der Datenspeicher wieder seine ursprüngliche Größe auf.
 
@@ -182,7 +182,7 @@ Kundinnen und Kunden verwenden Bilder unterschiedlicher Größe und Formate auf 
 
 Viele Sites-Kundinnen und -Kunden implementieren ein Bild-Servlet, das die Größe von Bildern zum Zeitpunkt ihrer Anforderung ändert oder sie zuschneidet. Dadurch wird der Publishing-Instanz eine zusätzliche Belastung auferlegt. Solange diese Bilder jedoch zwischengespeichert werden können, lässt sich dieses Problem abmildern.
 
-Ein alternativer Ansatz besteht darin, die Dynamic Media-Technologie zu verwenden, um die Bildbearbeitung vollständig abzugeben. Darüber hinaus können Sie eine Brand Portal bereitstellen, die nicht nur die Verantwortung für die Generierung von Ausgabedarstellungen von der [!DNL Experience Manager]-Infrastruktur übernimmt, sondern auch die gesamte Veröffentlichungsebene.
+Ein alternativer Ansatz besteht darin, die Dynamic Media-Technologie zu verwenden, um die Bildbearbeitung vollständig abzugeben. Darüber hinaus können Sie Brand Portal bereitstellen, das nicht nur die Verantwortung für die Generierung von Ausgabedarstellungen von der [!DNL Experience Manager]-Infrastruktur übernimmt, sondern auch die gesamte Veröffentlichungsebene.
 
 #### ImageMagick {#imagemagick}
 
@@ -211,9 +211,9 @@ Stellen Sie darüber hinaus in der Datei `configure.xml` (alternativ in der Umge
 
 >[!NOTE]
 >
->Die ImageMagick-`policy.xml` und -`configure.xml` sind unter `/usr/lib64/ImageMagick-&#42;/config/` verfügbar, nicht unter `/etc/ImageMagick/`. Siehe [ImageMagick-Dokumentation](https://www.imagemagick.org/script/resources.php) für den Speicherort der Konfigurationsdateien.
+>Die Dateien ImageMagick `policy.xml` und `configure.xml` sind unter `/usr/lib64/ImageMagick-&#42;/config/` anstelle von `/etc/ImageMagick/` verfügbar. Informationen zum Speicherort der Konfigurationsdateien finden Sie in der [ImageMagick-Dokumentation](https://www.imagemagick.org/script/resources.php).
 
-Wenn Sie [!DNL Experience Manager] in Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Adobe Support, wenn Sie viele große PSD- oder PSB-Dateien verarbeiten möchten. Wenden Sie sich an einen Support-Mitarbeiter von Adobe, um diese Best Practices für Ihre AMS-Bereitstellung zu implementieren und die bestmöglichen Tools und Modelle für die proprietären Formate von Adobe auszuwählen. [!DNL Experience Manager] kann keine sehr hochauflösenden PSB-Dateien verarbeiten, die mehr als 30000 x 23000 Pixel groß sind.
+Wenn Sie [!DNL Experience Manager] in Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Adobe Support, wenn Sie viele große PSD- oder PSB-Dateien verarbeiten möchten. Wenden Sie sich an den Adobe Kundensupport, um diese Best Practices für Ihre AMS-Bereitstellung zu implementieren und die bestmöglichen Tools und Modelle für die proprietären Formate von Adobe auszuwählen. [!DNL Experience Manager] kann keine sehr hochauflösenden PSB-Dateien verarbeiten, die mehr als 30000 x 23000 Pixel groß sind.
 
 ### XMP-Writeback {#xmp-writeback}
 
@@ -223,9 +223,9 @@ XMP-Writeback aktualisiert das Original-Asset, sobald Metadaten in [!DNL Experie
 * Eine Version des Assets wird erstellt
 * [!UICONTROL DAM-Update-Asset wird für das Asset ausgeführt.]
 
-Die aufgeführten Ergebnisse beanspruchen umfangreiche Ressourcen. Adobe empfiehlt daher, die XMP Writeback zu deaktivieren, wenn sie nicht erforderlich ist. Weitere Informationen finden Sie unter [XMP-Writeback](/help/assets/xmp-writeback.md).
+Die aufgeführten Ergebnisse beanspruchen umfangreiche Ressourcen. Adobe empfiehlt daher, die XMP Writeback zu deaktivieren, wenn sie nicht erforderlich ist. Weitere Informationen finden Sie unter [XMP Writeback](/help/assets/xmp-writeback.md).
 
-Der Import großer Metadatenmengen kann zu ressourcenintensiven XMP-Writeback-Aktivitäten führen, wenn das Flag „Workflows ausführen“ aktiviert ist. Planen Sie einen solchen Import während Zeiten geringer Server-Nutzung, um Leistungseinbußen für andere Benutzende zu vermeiden.
+Das Importieren einer großen Menge an Metadaten kann zu ressourcenintensiven XMP Writeback-Aktivitäten führen, wenn die Markierung „Workflows ausführen“ aktiviert ist. Planen Sie einen solchen Import während Zeiten geringer Server-Nutzung, um Leistungseinbußen für andere Benutzende zu vermeiden.
 
 ## Replikation {#replication}
 
@@ -245,7 +245,7 @@ Beim Replizieren von Assets in eine große Anzahl von Veröffentlichungsinstanze
 
 Installieren Sie [die neuesten Service Packs](/help/release-notes/release-notes.md) und leistungsbezogene Hotfixes, da diese häufig Aktualisierungen von Systemindizes enthalten. Informationen zur Indexoptimierung finden Sie unter [Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines).
 
-Erstellen Sie eigene Indizes für Abfragen, die Sie häufig ausführen. Weitere Informationen finden Sie unter [Methoden zur Analyse langsamer Abfragen](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) und [Erstellen benutzerdefinierter Indizes](/help/sites-deploying/queries-and-indexing.md). Weitere Einblicke in Best Practices bezüglich Abfragen und Indizes finden Sie unter [Best Practices für Abfragen und Indizierung](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+Erstellen Sie eigene Indizes für Abfragen, die Sie häufig ausführen. Weitere Informationen finden Sie unter [Methoden zur Analyse von langsamen Abfragen](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) und [Erstellen benutzerdefinierter Indizes](/help/sites-deploying/queries-and-indexing.md). Weitere Einblicke in Best Practices bezüglich Abfragen und Indizes finden Sie unter [Best Practices für Abfragen und Indizierung](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ### Lucene-Indexkonfigurationen {#lucene-index-configurations}
 
@@ -258,7 +258,7 @@ Für die Oak-Indexkonfigurationen können Optimierungen vorgenommen werden, mit 
 
 Wenn Ihre Benutzer keine Volltextsuche nach Assets durchführen müssen, z. B. durch die Textsuche in PDF-Dokumenten, deaktivieren Sie sie. Sie verbessern die Indexleistung, indem Sie die Volltextindizierung deaktivieren. Um die [!DNL Apache Lucene]-Textextraktion zu deaktivieren, führen Sie die folgenden Schritte aus:
 
-1. Greifen Sie in der [!DNL Experience Manager] auf [!UICONTROL Package Manager] zu.
+1. Greifen Sie in der Benutzeroberfläche [!DNL Experience Manager] auf [!UICONTROL Package Manager] zu.
 1. Laden Sie das Paket hoch und installieren Sie es unter [disable_indexingbinarytextextraktion-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### guessTotal {#guess-total}
@@ -279,13 +279,13 @@ Erstellen Sie für jede [!DNL Experience Manager]-Bereitstellung einen Plan für
 
 ### Netzwerktests   {#network-testing}
 
-Führen Sie für alle Netzwerkleistungsaspekte des Kunden die folgenden Aufgaben aus:
+Führen Sie für alle von Kundenseite angesprochenen Probleme mit der Netzwerkleistung die folgenden Aufgaben aus:
 
-* Testen Sie die Netzwerkleistung innerhalb des Kundennetzwerks.
+* Testen der Netzwerkleistung innerhalb des Kundennetzwerks
 * Testen Sie die Netzwerkleistung innerhalb des Adobe-Netzwerks. Arbeiten Sie bei AMS-Kunden mit CSE, um Tests innerhalb des Adobe-Netzwerks durchzuführen.
 * Testen Sie die Netzwerkleistung an anderen Zugriffspunkten.
 * Unter Verwendung eines Netzwerk-Benchmark-Tools.
-* Testen gegen die Dispatcher
+* Testen Sie mit dem Dispatcher.
 
 ### [!DNL Experience Manager]-Bereitstellungstests {#aem-deployment-testing}
 
