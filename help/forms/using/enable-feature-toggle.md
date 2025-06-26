@@ -46,7 +46,7 @@ Ein- oder Ausschalten von Funktionen für frühzeitige Benutzende oder neue Funk
 2. Navigieren Sie zu `http://<author-instance-url>:portnumber/system/console/configMgr`.
 3. Suchen Sie im Konfigurations-Manager nach **Adobe Granite Dynamic** Toggle Provider.
 4. Klicken Sie auf das Symbol ![Bleistiftsymbol](assets/illustratorcc_penciltool_cur_edit_2_17.png).
-5. Klicken Sie [!UICONTROL  Abschnitt „Aktivierte ]&quot; auf ![Bleistiftsymbol](assets/aem6forms_add.png).
+5. Klicken Sie [!UICONTROL &#x200B; Abschnitt „Aktivierte &#x200B;]&quot; auf ![Bleistiftsymbol](assets/aem6forms_add.png).
 6. Fügen Sie die Funktions-Umschalter-ID für die Funktion hinzu, wie in der Abbildung unten dargestellt.
    ![Umschalter hinzufügen](assets/add_toggle_number_forms.png)
 
@@ -64,7 +64,7 @@ Gehen Sie wie folgt vor, um die Umschalter für Funktionen zu deaktivieren, dere
 2. Navigieren Sie zu `http://<author-instance-url>:portnumber/system/console/configMgr`.
 3. Suchen Sie im Konfigurations-Manager nach **Adobe Granite Dynamic** Toggle Provider.
 4. Klicken Sie auf das Symbol ![Bleistiftsymbol](assets/illustratorcc_penciltool_cur_edit_2_17.png).
-5. Klicken Sie [!UICONTROL  Abschnitt „Deaktivierte ]&quot; auf ![Bleistiftsymbol](assets/aem6forms_add.png).
+5. Klicken Sie [!UICONTROL &#x200B; Abschnitt „Deaktivierte &#x200B;]&quot; auf ![Bleistiftsymbol](assets/aem6forms_add.png).
 6. Fügen Sie die Umschaltnummer hinzu, damit die Funktion deaktiviert wird.
    ![Umschalter entfernen](assets/remove_toggle_feature_forms.png)
 7. Klicken Sie auf „Speichern“.
