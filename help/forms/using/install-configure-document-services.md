@@ -7,9 +7,9 @@ exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 source-git-commit: f1fc8554b35d7d9c152023a6b9094e31c1b49807
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5806'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -184,9 +184,9 @@ Wenn Sie ein UNIX-basiertes Betriebssystem verwenden, installieren Sie die folge
    * libc.so.6
    * ld-linux.so.2
    * libexpat.so.1
-* (Nur PDF Generator) Um die WebKit-Route bei RHEL 8- oder RHEL 9-Setups zu aktivieren, ist die 32-Bit-`nspr` möglicherweise nicht standardmäßig verfügbar. Installieren Sie sie, falls nicht vorhanden.
+* (Nur PDF Generator) Um die WebKit-Route bei RHEL 8- oder RHEL 9-Setups zu aktivieren, ist die 32-Bit-Bibliothek `nspr` möglicherweise nicht standardmäßig verfügbar. Installieren Sie sie, falls nicht vorhanden.
 
-* (Nur PDF Generator) Wenn die WebToPDF-Konvertierung auf dem Unix®-Server mit dem folgenden Fehler fehlschlägt:
+* (Nur PDF Generator) Wenn die WebToPDF-Konversion auf dem Unix®-Server mit dem folgenden Fehler fehlschlägt:
 
   ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
 Legen Sie dann die folgende Umgebungsvariable fest und starten Sie den Server neu:
@@ -194,7 +194,7 @@ Legen Sie dann die folgende Umgebungsvariable fest und starten Sie den Server ne
 
 >[!NOTE]
 >
-> WebToPDF wird auch von der Diagrammfunktion in interaktiven Kommunikationen verwendet. Daher sind alle oben genannten Konfigurationsschritte für WebToPDF anwendbar, um sicherzustellen, dass die Diagrammfunktion ordnungsgemäß funktioniert.
+> WebToPDF wird auch von der Diagrammfunktion in interaktiven Kommunikationen verwendet. Daher sind alle oben aufgeführten Konfigurationsschritte für WebToPDF anwendbar, um sicherzustellen, dass die Diagrammfunktion ordnungsgemäß funktioniert.
 
 ## Vorinstallationskonfigurationen {#preinstallationconfigurations}
 
@@ -755,7 +755,7 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
       #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
       ```
 
- +++
++++
 
 +++ PDF Generator (PDFG)-Benutzer kann nicht hinzugefügt werden
 
@@ -796,7 +796,6 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
          adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=&lt;Absolute path to prov.xml>]
          
          ```
-
      
    * Serialisieren Sie das Paket nach Volumen (serialisieren Sie die vorhandene Installation mit der Datei „prov.xml“ und der neuen Seriennummer erneut): Führen Sie den folgenden Befehl aus dem PRTK-Installationsordner als Administrator aus, um die bereitgestellten Pakete auf Client-Computern zu serialisieren und zu aktivieren:
 
@@ -804,8 +803,8 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
          adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
          
          ```
-
-     * Verwenden Sie für Großinstallationen den [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html), um frühere Versionen von Reader und Acrobat zu entfernen. Passen Sie das Installationsprogramm an und stellen Sie es auf allen Computern in Ihrem Unternehmen bereit.
+     
+* Verwenden Sie für Großinstallationen den [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html), um frühere Versionen von Reader und Acrobat zu entfernen. Passen Sie das Installationsprogramm an und stellen Sie es auf allen Computern in Ihrem Unternehmen bereit.
 
 +++
 

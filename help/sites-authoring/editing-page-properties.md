@@ -7,9 +7,9 @@ feature: Authoring
 role: User,Admin,Architect,Developer
 mini-toc-levels: 2
 source-git-commit: d0515a6a3d08e181eada4a22e0d128305148e6ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2477'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -26,18 +26,18 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 #### Titel und Tags {#tile}
 
-* **Titel** - Der Titel der Seite wird an verschiedenen Stellen angezeigt
+* **Titel** – Der Titel der Seite wird an verschiedenen Stellen angezeigt. 
    * Zum Beispiel in der Liste auf der Registerkarte **Websites** und in den Karten-/Listenansichten **Sites**.
    * Dies ist ein Pflichtfeld.
-* **Tags** - Hier können Sie der Seite Tags hinzufügen oder Tags aus der Seite entfernen, indem Sie die Liste im Auswahlfeld aktualisieren.
+* **Tags** – Hier können Sie der Seite Tags hinzufügen oder Tags aus der Seite entfernen, indem Sie die Liste im Auswahlfeld aktualisieren.
    * Nachdem Sie ein Tag ausgewählt haben, wird es unterhalb des Auswahlfelds aufgelistet. Sie können ein Tag mit dem „x“ aus dieser Liste entfernen.
    * Sie können ein neues Tag eingeben, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
       * Das neue Tag wird erstellt, wenn Sie die Eingabetaste drücken.
       * Das neue Tag wird mit einem kleinen Stern auf der rechten Seite angezeigt, was bedeutet, dass es sich um ein neues Tag handelt.
-   * In der Dropdown-Liste können Sie aus vorhandenen Tags auswählen.
+   * Mit dem Dropdown-Menü können Sie aus vorhandenen Tags auswählen.
    * Wenn Sie den Mauszeiger über ein Tag im Auswahlfeld halten, wird ein „x“ angezeigt, mit dem Sie das Tag löschen können.
    * Weitere Informationen zu Tags finden Sie unter [Verwenden von Tags.](/help/sites-authoring/tags.md)
-* **In der Navigation ausblenden** - Gibt an, ob die Seite in der Seitennavigation der resultierenden Site ein- oder ausgeblendet werden soll
+* **In der Navigation ausblenden** – Gibt an, ob die Seite in der Seitennavigation der resultierenden Site ein- oder ausgeblendet werden soll.
 
 #### Branding {#branding}
 
@@ -45,41 +45,41 @@ Wenden Sie eine konsistente Markenidentität auf allen Seiten an, indem Sie eine
 
 * **Überschreiben**: Aktivieren Sie diese Option, um den Marken-Slug auf dieser Seite zu definieren.
    * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, deren Werte zum **Überschreiben** sind ebenfalls festgelegt.
-* **Überschreibungswert** - Der Text des Marken-Slugs, der an den Seitentitel angehängt werden soll
-   * Der Wert wird nach einem Pipe-Zeichen wie `Cycling Tuscany | Always ready for the WKND` an den Seitentitel angehängt
+* **Überschreibungswert** – Der Text des Marken-Slugs, der an den Seitentitel angehängt werden soll.
+   * Der Wert wird nach einem Pipe-Zeichen an den Seitentitel angehängt, z. B. `Cycling Tuscany | Always ready for the WKND`
 
 #### Weitere Titel und Beschreibungen {#more}
 
-* **Seitentitel** - Ein Titel zur Verwendung auf der Seite
+* **Seitentitel** – Ein Titel zur Verwendung auf der Seite
    * Wird normalerweise von Titelkomponenten verwendet
    * Wenn dies leer gelassen wird, wird der **Titel** verwendet.
-* **Navigationstitel** - Sie können einen separaten Titel für die Verwendung in der Navigation angeben (z. B. wenn Sie eine kürzere Alternative wählen möchten).
+* **Navigationstitel** – Sie können einen eigenen Titel für die Navigation angeben (z. B. wenn Sie einen kürzeren Titel wünschen). 
    * Wenn dies leer gelassen wird, wird der **Titel** verwendet.
-* **Untertitel** - Ein Untertitel zur Verwendung auf der Seite
-* **Beschreibung** - Ihre Beschreibung der Seite, der Zweck oder beliebige andere Details, die Sie hinzufügen möchten
+* **Untertitel** – Ein Untertitel zur Verwendung auf der Seite
+* **Beschreibung** – Ihre Beschreibung der Seite, der Zweck oder beliebige andere Details, die Sie hinzufügen möchten.
 
 #### Einschaltzeit/Ausschaltzeit {#on-time}
 
-Die Ein-/Ausschaltzeit für eine Seite ist eine praktische Methode, um bereits veröffentlichte Inhalte vorübergehend auszublenden. Der Inhalt bleibt auf der Veröffentlichungsinstanz, wenn er deaktiviert ist. Durch Deaktivieren einer Seite wird die Veröffentlichung des Inhalts nicht rückgängig gemacht.
+Die Einschaltzeit/Ausschaltzeit für eine Seite ist eine praktische Methode, um bereits veröffentlichte Inhalte vorübergehend auszublenden. Der Inhalt bleibt auf der Veröffentlichungsinstanz, wenn sie deaktiviert ist. Durch Deaktivieren einer Seite wird die Veröffentlichung des Inhalts nicht rückgängig gemacht.
 
 * **Einschaltzeit**: Zeitpunkt (Datum und Uhrzeit), zu dem die veröffentlichte Seite in der Publishing-Umgebung sichtbar (gerendert) wird. Die Seite muss entweder manuell oder durch vorkonfigurierte automatische Replikation veröffentlicht werden.
 
-   * Wenn sie bereits [veröffentlicht](/help/sites-authoring/publishing-pages.md) ist diese Seite in der Veröffentlichungsinstanz verfügbar, ruht jedoch (ausgeblendet), bis sie zum angegebenen Zeitpunkt gerendert wird.
-   * Wenn die Seite nicht veröffentlicht und [für die automatische Replikation konfiguriert) ](/help/sites-deploying/replication.md), wird sie automatisch veröffentlicht und zum angegebenen Zeitpunkt gerendert.
-   * Wenn die Seite nicht veröffentlicht und nicht für die automatische Replikation konfiguriert ist, wird sie nicht automatisch veröffentlicht, sodass eine 404 angezeigt wird, wenn versucht wird, auf die Seite zuzugreifen.
+   * Wenn sie bereits [veröffentlicht](/help/sites-authoring/publishing-pages.md) wurde, ist diese Seite in der Veröffentlichungsinstanz verfügbar, ruht jedoch (ausgeblendet), bis sie zum angegebenen Zeitpunkt gerendert wird.
+   * Wenn die Seite nicht veröffentlicht und [für die automatische Replikation konfiguriert](/help/sites-deploying/replication.md) ist, wird sie automatisch veröffentlicht und dann zum festgelegten Zeitpunkt gerendert.
+   * Wenn die Seite nicht veröffentlicht und nicht für die automatische Replikation konfiguriert ist, wird sie nicht automatisch veröffentlicht. Daher wird ein 404-Fehler angezeigt, wenn versucht wird, auf die Seite zuzugreifen.
 
-* **Ausschaltzeit**: Ähnlich wie und häufig in Kombination mit der **Einschaltzeit** wird hier der Zeitpunkt festgelegt, zu dem die Publishing-Umgebung auf der Veröffentlichungsseite ausgeblendet wird.
+* **Ausschaltzeit**: Ähnlich wie und häufig in Kombination mit der **Einschaltzeit** wird hier der Zeitpunkt festgelegt, zu dem die Veröffentlichungsumgebung auf der Veröffentlichungsseite ausgeblendet wird.
 
-Lassen Sie diese Felder (**Einschaltzeit** und **Ausschaltzeit**) für Seiten, die Sie veröffentlichen möchten, leer und stehen sofort zur Verfügung und stehen in der Veröffentlichungsumgebung zur Verfügung, bis sie deaktiviert werden (das normale Szenario).
+Lassen Sie diese Felder (**Einschaltzeit** und **Ausschaltzeit**) für Seiten, die Sie sofort veröffentlichen und verfügbar haben möchten und die in der Veröffentlichungsumgebung verfügbar sein sollen, leer, bis sie deaktiviert werden (der Normalfall).
 
 >[!NOTE]
 >Wenn entweder die **Einschaltzeit** oder die **Ausschaltzeit** in der Vergangenheit liegt und die automatische Replikation konfiguriert ist, wird die entsprechende Aktion sofort ausgelöst.
 
 >[!TIP]
 >
->Ein-/Ausschaltzeiten behandeln ausschließlich bereits veröffentlichte Inhalte (entweder manuell oder über automatische Replikation). Aus diesem Grund werden Veröffentlichungs-Workflows, wie die zur Genehmigung von Inhalten, nicht durch Ein-/Ausschaltzeiten ausgelöst, und Ein-/Ausschaltzeiten wirken sich nicht auf den Veröffentlichungsstatus der Seite aus. Aus diesem Grund sind Ein-/Ausschaltzeiten am besten geeignet, um vorübergehend Inhalte anzuzeigen/auszublenden, die bereits genehmigt und veröffentlicht sind.
+>Einschaltzeiten/Ausschaltzeiten gelten ausschließlich für bereits veröffentlichte Inhalte (entweder manuell oder über automatische Replikation). Aus diesem Grund werden Veröffentlichungs-Workflows, wie die zur Genehmigung von Inhalten, nicht durch Einschaltzeiten/Ausschaltzeiten ausgelöst, und Einschaltzeiten/Ausschaltzeiten wirken sich nicht auf den Veröffentlichungsstatus der Seite aus. Aus diesem Grund sind Einschaltzeiten/Ausschaltzeiten am besten geeignet, um bereits genehmigte und veröffentlichte Inhalte vorübergehend anzuzeigen/auszublenden.
 >
->Wenn Sie neue Inhalte mit allen zugehörigen Workflows veröffentlichen oder Inhalte vollständig von Ihrer Site entfernen (Veröffentlichung aufheben) möchten, sollten Sie [Veröffentlichung verwalten“](/help/sites-authoring/publishing-pages.md#manage-publication)
+>Wenn Sie neue Inhalte mit allen zugehörigen Workflows veröffentlichen oder Inhalte vollständig von Ihrer Site entfernen (Veröffentlichung rückgängig machen) möchten, sollten Sie die [Verwaltung Ihrer Veröffentlichung](/help/sites-authoring/publishing-pages.md#manage-publication) in Erwägung ziehen.
 
 #### Vanity-URL {#vanity-url}
 
@@ -91,15 +91,15 @@ Wenn z. B. die Vanity-URL `welcome` auf die Seite gesetzt wird, die durch den Pf
 >
 >Vanity-URLs:
 >
->* Muss eindeutig sein.
+>* Sie müssen eindeutig sein.
 >* unterstützen keine Regex-Muster.
 >* sollten nicht auf eine vorhandene Seite eingestellt sein.
 
 Konfigurieren Sie den Dispatcher, um den Zugriff auf Vanity-URLs zu aktivieren. Weitere Einzelheiten finden Sie unter [Aktivieren des Zugriffs auf Vanity-URLs](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#enabling-access-to-vanity-urls-vanity-urls).
 
-* **Hinzufügen** - Tippen oder klicken Sie, um eine Vanity-URL hinzuzufügen.
-* **Entfernen** - Tippen oder klicken Sie, um eine Vanity-URL zu entfernen.
-  **Vanity-URL umleiten** - Gibt an, ob für die Seite eine Vanity-URL verwendet werden soll oder ob eine Umleitung zur tatsächlichen URL der Seite erfolgen soll.
+* **Hinzufügen** – Tippen oder klicken Sie, um eine Vanity-URL hinzuzufügen.
+* **Entfernen** – Tippen oder klicken Sie, um eine Vanity-URL zu entfernen.
+  **Vanity-URL umleiten** – Gibt an, ob für die Seite eine Vanity-URL verwendet werden soll oder ob eine Umleitung zur tatsächlichen URL der Seite erfolgen soll.
 
 ### Erweitert {#advanced}
 
@@ -108,7 +108,7 @@ Konfigurieren Sie den Dispatcher, um den Zugriff auf Vanity-URLs zu aktivieren. 
 * **Sprache** – Die Seitensprache
 * **Sprachstamm** – Muss aktiviert werden, wenn die Seite als Stamm einer Sprachkopie fungiert.
 * **Umleiten** – Gibt die Seite an, zu der diese Seite automatisch umgeleitet werden soll.
-* **Design** - Gibt das [Design](/help/sites-developing/designer.md) an, das für diese Seite verwendet werden soll.
+* **Design** – Gibt das [Design](/help/sites-developing/designer.md) an, das für diese Seite verwendet werden soll.
 * **Alias** – Gibt einen Alias an, der für diese Seite verwendet werden soll.
    * Beispiel: Wenn Sie einen Alias `private` für die Seite `/content/wknd/us/en/magazine/members-only` definieren, kann auf diese Seite über `/content/wknd/us/en/magazine/private` zugegriffen werden.
    * Durch die Erstellung eines Alias wird die Eigenschaft `sling:alias`, die sich nur auf die Ressource und nicht auf den Repository-Pfad auswirkt, auf dem Seitenknoten festgelegt.
@@ -117,7 +117,7 @@ Konfigurieren Sie den Dispatcher, um den Zugriff auf Vanity-URLs zu aktivieren. 
 
 #### Konfiguration {#configuration}
 
-* **Von &lt;*path* geerbt** - Aktivieren/Deaktivieren der Vererbung der **Cloud-Konfiguration** für die Seite
+* **Vererbt von &lt;*Pfad*>** – Aktivieren/Deaktivieren Sie die Vererbung der **Cloud-Konfiguration** für die Seite.
 * **Cloud-Konfiguration** – Der Pfad zur Konfiguration
 
 #### Vorlageneinstellungen {#templates}
@@ -126,7 +126,7 @@ Konfigurieren Sie den Dispatcher, um den Zugriff auf Vanity-URLs zu aktivieren. 
 
 #### Authentifizierungspflicht {#authentication}
 
-* **Aktivieren** - Aktiviert (oder deaktiviert) die Verwendung der Authentifizierung, damit Sie auf die Seite zugreifen können
+* **Aktivieren** – Aktivieren (oder deaktivieren) Sie die Verwendung der Authentifizierung, damit Sie auf die Seite zugreifen können.
 * **Anmeldeseite** - Die für die Anmeldung zu verwendende Seite
 
 >[!NOTE]
@@ -142,15 +142,15 @@ Konfigurieren Sie den Dispatcher, um den Zugriff auf Vanity-URLs zu aktivieren. 
 
 #### Export {#export}
 
-* **Konfiguration** - Gibt eine Exportkonfiguration an
+* **Konfiguration** – Gibt eine Exportkonfiguration an
 
 #### SEO {#seo}
 
-* **Kanonische URL** - Wird zum Überschreiben der kanonischen URL der Seite verwendet
+* **Kanonische URL** – Wird zum Überschreiben der kanonischen URL der Seite verwendet
    * Wenn Sie das Feld leer lassen, ist die URL der Seite ihre kanonische URL.
-* **Robots-Tags** - Wählen Sie im Dropdown-Menü die Robots-Tags aus, um das Verhalten der Suchmaschinen-Crawler zu steuern
+* **Robots-Tags** – Verwenden Sie das Dropdown-Menü zum Auswählen der Robots-Tags, um das Verhalten der Suchmaschinen-Crawler zu steuern.
    * Einige Optionen stehen im Konflikt miteinander, wobei in diesem Fall die Option mit größerer Berechtigung Vorrang hat.
-* **Sitemap generieren** - Wenn ausgewählt, wird ein `sitemap.xml` für diese Seite und ihre untergeordneten Elemente generiert.
+* **Sitemap generieren** – Wenn ausgewählt, wird eine `sitemap.xml` für diese Seite und ihre Unterseiten generiert.
 
 ### Bilder {#images}
 
@@ -158,44 +158,44 @@ Konfigurieren Sie den Dispatcher, um den Zugriff auf Vanity-URLs zu aktivieren. 
 
 In diesem Abschnitt wird das anzuzeigende Bild ausgewählt und konfiguriert. Dies wird in Komponenten verwendet, die auf die Seite verweisen. z. B. Teaser, Seitenlisten usw.
 
-* **Bild** - Sie können **Asset** „Auswählen“ oder nach einer hochzuladenden Datei suchen und dann **Bearbeiten** oder **Löschen** das ausgewählte Bild auswählen.
-* **Alternativtext** - Text, der die Bedeutung und/oder Funktion des Bildes wiedergibt und häufig von Sprachausgaben verwendet wird
-* **Vererben - Aus dem DAM-Asset stammender Wert** - Wenn diese Option aktiviert ist, wird der Alternativtext mit dem Wert der „Metadaten`dc:description` in DAM gefüllt.
+* **Bild** – Sie können ein Asset **auswählen** oder nach einer hochzuladenden Datei suchen und dann das ausgewählte **bearbeiten** oder **löschen**.
+* **Alternativtext** – Ein Text, der die Bedeutung und/oder Funktion des Bildes wiedergibt; wird häufig von Bildschirmlesehilfen verwendet.
+* **Vererben – aus dem DAM-Asset stammender Wert** – Wenn diese Option aktiviert ist, wird der Alternativtext mit dem Wert der `dc:description`-Metadaten in DAM befüllt.
 
 #### Miniaturansicht {#thumbnail}
 
-In diesem Abschnitt können Sie die Miniaturansicht für die Seite auswählen und konfigurieren. Dies wird in Komponenten verwendet, die auf die Seite verweisen. z. B. Teaser, Seitenlisten usw.
+In diesem Abschnitt wird die Miniatur für die Seite ausgewählt und konfiguriert. Dies wird in Komponenten verwendet, die auf die Seite verweisen. z. B. Teaser, Seitenlisten usw.
 
-* **Vorschau generieren** - Erzeugt eine Vorschau der Seite, die als Miniatur verwendet werden soll
-* **Bild hochladen** - Lädt ein Bild hoch, das als Miniatur verwendet werden soll
-* **Bild auswählen** - Wählt ein vorhandenes Asset aus, das als Miniatur verwendet werden soll.
-* **Wiederherstellen** - Diese Option wird verfügbar, nachdem Sie die Miniaturansicht geändert haben. Wenn Sie Ihre Änderungen nicht behalten möchten, können Sie sie vor dem Speichern rückgängig machen.
+* **Vorschau generieren** – Eine Vorschau der Seite wird erstellt, die Sie als Miniatur verwenden möchten.
+* **Bild hochladen** – Ein Bild wird hochgeladen, das Sie als Miniatur verwenden möchten.
+* **Bild auswählen** – Ein vorhandenes Asset wird ausgewählt, das Sie als Miniatur verwendet möchten.
+* **Zurück zur letzten Version** – Diese Option wird verfügbar, nachdem Sie die Miniatur geändert haben. Wenn Sie Ihre Änderungen nicht behalten möchten, können Sie sie vor dem Speichern rückgängig machen.
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud Service-Konfigurationen** - Legt fest, welche Konfiguration für Cloud-Services für die Seite verwendet werden soll
-* **Vererbt von** - Für Live Copies und Sprachkopien werden Cloud-Konfigurationen standardmäßig von der Blueprint vererbt.
-   * Deaktivieren Sie diese Option, um die Vererbung zu überschreiben
+* **Cloud-Service-Konfigurationen** - Es wird festgelegt, welche Konfiguration für Cloud-Services für die Seite verwendet werden soll.
+* **Vererbt von** – Für Live Copies und Sprachkopien werden Cloud-Konfigurationen standardmäßig von der Blueprint vererbt.
+   * Zum Überschreiben der Vererbung deaktivieren
 
 ### Personalisierung {#personalization}
 
 #### ContextHub-Konfigurationen {#contexthub}
 
-* **Vererbt von** - ContextHub-Konfigurationen werden standardmäßig von der übergeordneten Seite übernommen.
+* **Vererbt von** – ContextHub-Konfigurationen werden standardmäßig von der übergeordneten Seite vererbt.
    * Deaktivieren Sie diese Option, um die Vererbung zu überschreiben.
-* **ContextHub-Pfad** - Wählt die [ContextHub-Konfiguration](/help/sites-developing/ch-configuring.md)
-* **Segmentpfad** - Wählt den [Segmentpfad](/help/sites-administering/segmentation.md) aus.
+* **ContextHub-Pfad** – Die [ContextHub-Konfiguration](/help/sites-developing/ch-configuring.md) wird ausgewählt.
+* **Segmentpfad** – Der [Segmentpfad](/help/sites-administering/segmentation.md) wird ausgewählt.
 
 #### Konfiguration für Targeting {#targeting}
 
-Wählen Sie eine [Marke“, um einen Bereich für das Targeting anzugeben.](/help/sites-authoring/target-adobe-campaign.md)
+Wählen Sie eine [Marke, um einen Bereich für das Targeting anzugeben.](/help/sites-authoring/target-adobe-campaign.md)
 
 >[!NOTE]
 >Für diese Option muss das Benutzerkonto der `Target Adminstrators`-Gruppe angehören.
 
 ### Berechtigungen {#permissions}
 
-Verwenden Sie die **Berechtigungen**, um festzulegen, welche Benutzenden, Gruppen oder [geschlossenen Benutzergruppen (CUGs)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=de) auf die Seite zugreifen und/oder sie ändern können.
+Verwenden Sie die Registerkarte **Berechtigungen**, um festzulegen, welche Benutzenden, Gruppen oder [geschlossenen Benutzergruppen (Closed User Groups, CUGs)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=de) auf die Seite zugreifen und/oder sie ändern können.
 
 * [Berechtigungen hinzufügen](/help/sites-administering/user-group-ac-admin.md)
 * [Geschlossene Benutzergruppe bearbeiten](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
@@ -216,23 +216,23 @@ Verwenden Sie die **Berechtigungen**, um festzulegen, welche Benutzenden, Gruppe
 
 Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blueprints dienen als Grundlage für Live Copys und sind Teil des [Multi-Site-Managements](/help/sites-administering/msm.md).
 
-* **Rollout** - Startet einen Rollout von Blueprint-Inhalten auf die Live Copies
-* **Live Copy-Übersicht** - Öffnet ein Fenster zum Durchsuchen der Live Copy-Seitenstruktur
-* **Aktuelle Live Copies** - Eine Liste der Seiten, die auf der ausgewählten Blueprint-Seite basieren (also Live Copies davon sind)
-* **Rollout-Konfiguration** Definiert die Rollout-Konfiguration für die Seite.
+* **Rollout** – Ein Rollout von Blueprint-Inhalten an die Live Copies wird gestartet.
+* **Live Copy-Übersicht** – Ein Fenster zum Durchsuchen der Live Copy-Seitenstruktur wird geöffnet.
+* **Aktuelle Live Copies** – Eine Liste von Seiten, die auf der ausgewählten Blueprint-Seite basieren (das heißt, Live Copies dieser Seite sind).
+* **Rollout-Konfiguration** – Die Rollout-Konfiguration für die Seite wird definiert.
 
 ### Live Copy {#live-copy}
 
-Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copys konfiguriert sind. Wie [ Blueprints sind ](#blueprint) Live Copies Teil von [Multi-Site-Management.](/help/sites-administering/msm.md)
+Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copys konfiguriert sind. Wie [Blueprints](#blueprint) sind Live Copys Teil des [Multi-Site-Managements.](/help/sites-administering/msm.md)
 
-* **Synchronisieren** - Synchronisiert Live Copy mit Blueprint und behält lokale Änderungen bei
-* **Zurücksetzen** - Setzt die Live Copy auf den Status der Blueprint zurück und entfernt lokale Änderungen.
-* **Aussetzen** - Setzt die Live Copy von weiteren Änderungen beim Rollout aus
-* **Trennen** - Trennt Live Copy vom Blueprint
+* **Synchronisieren** – Live Copy wird mit Blueprint synchronisiert; lokale Änderungen werden beibehalten.
+* **Zurücksetzen** – Die Live Copy wird auf den Status der Blueprint zurückgesetzt; lokale Änderungen werden entfernt.
+* **Aussetzen** – Die Live Copy wird von weiteren Änderungen beim Rollout ausgesetzt.
+* **Trennen** – Die Live Copy wird von der Blueprint getrennt.
 
 #### Quelle {#source}
 
-* Zeigt den Pfad des Blueprints für diese Live Copy an
+* Zeigt den Pfad der Blueprint für diese Live Copy an
 
 #### Status {#status}
 
@@ -240,9 +240,9 @@ Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copys konfigurier
 
 #### Konfiguration {#live-copy-config}
 
-* **Live Copy-Vererbung** - Bei Auswahl dieser Option gilt die Live Copy-Konfiguration für alle untergeordneten Elemente.
-* **Rollout-Konfigurationen von übergeordneter Seite übernehmen** - Wenn diese Option aktiviert ist, wird die Rollout-Konfiguration von der übergeordneten Seite übernommen.
-* **Rollout-Konfiguration auswählen**: Legt fest, unter welchen Umständen Änderungen aus dem Blueprint übernommen werden, und ist nur verfügbar, wenn **Rollout-Konfigurationen von übergeordneter Seite erben** nicht aktiviert ist.
+* **Live Copy-Vererbung** – Wenn diese Option aktiviert ist, gilt die Live Copy-Konfiguration für alle untergeordneten Elemente.
+* **Rollout-Konfigurationen aus übergeordnetem Element übernehmen** – Wenn diese Option aktiviert ist, wird die Rollout-Konfiguration von der übergeordneten Seite übernommen.
+* **Rollout-Konfiguration auswählen**: Legt fest, unter welchen Umständen Änderungen aus der Blueprint übernommen werden, und ist nur verfügbar, wenn **Rollout-Konfigurationen von übergeordneter Seite erben** nicht aktiviert ist.
 * **Liste der ausgeschlossenen Pfade**
 
 ## Bearbeiten der Seiteneigenschaften {#editing-page-properties-1}

@@ -10,9 +10,9 @@ exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 source-git-commit: 9b28ab12422743cd7849d2761aef9916ec6710f5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4283'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -55,14 +55,14 @@ In diesem Dokument werden die unterstützten Client- und Server-Plattformen für
 
 - **Upgrade-Unterstützung für vollständige Installationsprogramme**: Ein vollständiges Installationsprogramm wird mit jeder sechsten AEM Service Pack-Version veröffentlicht. Beispielsweise wurde ein vollständiges Installationsprogramm mit den SP-Versionen 6.5.12.0 und 6.5.18.0 veröffentlicht. AEM Forms ermöglicht direkte Upgrades ausschließlich über die letzten beiden vollständigen Installationsprogramme. Beispielsweise ermöglicht AEM Forms direkte Upgrades auf Version 6.5.23.0 nur über die beiden letzten vollständigen Installationsprogramme, nämlich 6.5.18.0 und 6.5.12.0. Wenn Sie von einem früheren Upgrade aktualisieren müssen, können Sie eine Multihop-Aktualisierung verwenden, um zunächst auf ein unterstütztes vollständiges Installationsprogramm und dann auf die neueste Version zu wechseln.
 
-- **Einstellung**: Die Plattformunterstützung wird mit jeder vollständigen Installationsprogrammversion aktualisiert. Jegliche Software, die in der Plattform-Matrix als veraltet gekennzeichnet ist, kann in nachfolgenden Versionen oder wenn die Software das Ende der Unterstützung erreicht, von den unterstützten Plattformen entfernt werden.
+- **Einstellung**: Die Plattformunterstützung wird mit jeder Version des vollständigen Installationsprogramms aktualisiert. Jegliche Software, die in der Plattform-Matrix als veraltet gekennzeichnet ist, kann in nachfolgenden Versionen oder wenn die Software das Ende der Unterstützung erreicht, von den unterstützten Plattformen entfernt werden.
 
 #### Service Packs
 
 
 - **Service Pack-Abdeckung**: Adobe bietet technischen Support für AEM Forms-Umgebungen mit den sechs neuesten Service Packs. Wenn Ihre aktuelle Version vor den sechs letzten Service Packs liegt, empfiehlt Adobe dringend ein Upgrade auf die neueste Version, um optimale Leistung, Sicherheit und kontinuierlichen Support zu erhalten.
 
-- **Patch-Aktualisierungsrichtlinien**: Wenn Sie die Patch-Installationsprogramme zur Aktualisierung verwenden, müssen Sie unbedingt sicherstellen, dass die zugrunde liegende Vollversion des Installationsprogramms nicht älter als zwei Versionen ist. Stellen Sie beispielsweise während der Installation von Service Pack 6.5.23.0 sicher, dass die zugrunde liegende Version des vollständigen Installationsprogramms 6.5.18.0 oder 6.5.12.0 ist.
+- **Richtlinien für Patch-Updates**: Während die Patch-Installationsprogramme zur Aktualisierung verwendet werden, ist es wichtig zu überprüfen, ob die zugrunde liegende Version des vollständigen Installationsprogramms nicht um mehr als zwei Versionen zurückliegt. Stellen Sie beispielsweise während der Installation von Service Pack 6.5.23.0 sicher, dass die zugrunde liegende Version des vollständigen Installationsprogramms 6.5.18.0 oder 6.5.12.0 ist.
 
 <!--
 - **Patch Upgrade Support**: You can upgrade from an older service pack to a newer one (for example, from 6.5.18.0 to 6.5.23.0) using the patch installer, as long as the destination platform (OS, JDK, application server, etc.) is supported by the newer service pack.-->
@@ -261,7 +261,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
  </tr>
   <tr>
   <td>MySQL</td>
-  <td><p>MySQL-Connector/J 5.7 (veraltet)</p> </td>
+  <td><p>MySQL Connector/J 5.7 (veraltet)</p> </td>
   <td><p>AEM Forms on JEE-Installation im Paket enthalten</p> </td>
  </tr>
  <tr>
@@ -276,7 +276,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
  </tr>
  <tr>
   <td>Microsoft® SQL Server<br /> </td>
-  <td><p>Microsoft® SQL Server JDBC-Treiber 12.10.0<br /> </p> <p>sqljdbc12.10.0.jar</p> </td>
+  <td><p>Microsoft® SQL Server JDBC-Treiber 12.10.0 <br /> </p> <p>sqljdbc12.10.0.jar</p> </td>
   <td><p>Laden Sie dies von der Microsoft®-Website herunter.</p> </td>
  </tr>
  <tr>
@@ -395,7 +395,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
 > - glibc-locale.x86_64 (2.17 oder höher)
 > - OpenSSL 3 (erforderlich am Standardspeicherort im Betriebssystem).
 
-Für die OpenSSL 3-Installation: Die Bibliotheken libcrypto.so.3 und libssl.so.3 müssen im Standardbibliothekspfad verfügbar sein, der durch die Umgebungsvariable LD_LIBRARY_PATH dargestellt wird. Wenn sie an einem nicht standardmäßigen Speicherort installiert sind, stellen Sie sicher, dass dieser Pfad zu LD_LIBRARY_PATH hinzugefügt wird, bevor Sie den Server starten.
+Für die OpenSSL 3-Installation: Die Bibliotheken libcrypto.so.3 und libssl.so.3 müssen im Standardbibliothekspfad verfügbar sein, der durch die Umgebungsvariable LD_LIBRARY_PATH dargestellt wird. Wenn sie an einem nicht standardmäßigen Speicherort installiert sind, stellen Sie sicher, dass dieser Pfad zu LD_LIBRARY_PATH hinzugefügt wird, bevor Sie den Server starten.
 
 #### Virtualisierte Umgebung {#virtualized-environment}
 
@@ -438,7 +438,7 @@ Beachten Sie die folgenden Ausnahmen, wenn Sie eine Plattform auswählen, auf de
 1. JDK-Versionen, die höher als 1.8.0_281 sind, werden für WebLogic-Server nicht unterstützt. (FORMS-8498)
 1. JDK 11.0.20 wird zur Installation des AEM Forms on JEE-Installationsprogramms nicht unterstützt. Nur JDK 11.0.19 oder frühere Versionen werden zur Installation des AEM Forms on JEE-Installationsprogramms unterstützt.
 
-1. [!DNL Microsoft® Windows Server 2019] unterstützt keine [!DNL MySQL 5.7] und [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] unterstützt keine schlüsselfertigen Installationen für [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312)
+1. Da [!DNL Microsoft® Windows Server 2019] weder [!DNL MySQL 5.7] noch [!DNL JBoss® EAP 7.1] unterstützt, unterstützt [!DNL Microsoft® Windows Server 2019] keine schlüsselfertigen Installationen für [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312)
 
 
 Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für Implementierungen von Adobe AEM Forms on JEE auswählen:
@@ -895,7 +895,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -992,7 +992,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
 
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
@@ -1018,7 +1018,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | -------------- | --------------- | ------------------- |
 | MongoDB Enterprise 7.0 | MongoDB Enterprise 5.0 | MongoDB Enterprise 6.0 |
 | MYSQL 8.4 | SUSE® Linux® Enterprise Server 12 (64-Bit) | MYSQL 8.0.27 |
-| Microsoft® SQL Server 2022 | CentOS 7 | Microsoft® SQL Server 2019 |
+| Microsoft® SQL Server 2022 | Centos 7 | Microsoft® SQL Server 2019 |
 | Microsoft® SQL Server JDBC-Treiber 12.10.0 | | Microsoft® SQL Server JDBC-Treiber 8.2 |
 | Red Hat® Enterprise Linux® 9 (Kernel 4.x) (64-Bit) | | Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64-Bit) |
 
