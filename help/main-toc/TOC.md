@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: 94bd50cffe65b495a19f29ce16c60203641e749c
-workflow-type: ht
-source-wordcount: '7525'
-ht-degree: 100%
+source-git-commit: 6feebde8e1a2c89599f04e10e3e2a884a6202575
+workflow-type: tm+mt
+source-wordcount: '7535'
+ht-degree: 99%
 
 ---
 
@@ -964,7 +964,7 @@ ht-degree: 100%
          + [Anwendungen importieren und verwalten](/help/forms/using/admin-help/import-applications.md)
       + Verwalten von Services {#manage-services}
          + [Diensteinstellungen konfigurieren](/help/forms/using/admin-help/configure-service-settings.md)
-         + [Dienste starten und beenden](/help/forms/using/admin-help/starting-stopping-services.md)
+         + [Dienste starten und stoppen](/help/forms/using/admin-help/starting-stopping-services.md)
       + Verwalten von Endpunkten {#manage-endpoints}
          + [Endpunkte hinzufügen aktivieren, ändern oder entfernen](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
       + [E-Mail-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-email-endpoints.md)
@@ -1071,7 +1071,7 @@ ht-degree: 100%
          + [Ordner des globalen Dokumentenspeichers](/help/forms/using/admin-help/global-document-storage-directory.md)
          + [Betrachtungen beim Ausführen der Administration Console](/help/forms/using/admin-help/considerations-running-administration-console.md)
          + [Leistung des Anwendungsservers verbessern](/help/forms/using/admin-help/enhancing-application-server-performance.md)
-         + [Starten und Beenden von WebSphere Application Server](/help/forms/using/admin-help/starting-stopping-websphere-application-server.md)
+         + [Starten und Stoppen von WebSphere Application Server](/help/forms/using/admin-help/starting-stopping-websphere-application-server.md)
       + Sicherung und Wiederherstellung von AEM-Formularen {#aem-forms-backup-recovery}
          + [EMC Documentum-Repository sichern und wiederherstellen](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md)
          + [Abgesicherten Sicherungsmodus aktivieren und deaktivieren](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md)
@@ -1214,6 +1214,7 @@ ht-degree: 100%
       + [Der PaperCapture-Dienst kann OCRs auf PDF nicht ausführen](/help/forms/using/papercapture-service-resolution.md)
       + [Beheben von Spring Framework-Schwachstellen für AEM Forms on JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
       + [Behebung von Log4j2-Schwachstellen für Experience Manager Forms](/help/forms/using/aem-forms-vulnerability-cve.md)
+      + [Beheben der Anfälligkeit für die Ausführung von Remote-Code für AEM Forms on JEE](/help/forms/using/aem-forms-rce-vulnerability-mitigation-troubleshooting.md)
       + [Anzeigen von Problemen für XFA-basierte PDF-Formulare und richtliniengeschützte Dokumente](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
       + [Öffnen von XFA-basierten PDF-Formularen in Firefox und Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
       + [Schwachstelle von XML External Entity (XXE) in BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)
