@@ -7,9 +7,9 @@ user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Mana
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
 source-git-commit: 6feebde8e1a2c89599f04e10e3e2a884a6202575
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7535'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1214,7 +1214,7 @@ ht-degree: 99%
       + [Der PaperCapture-Dienst kann OCRs auf PDF nicht ausführen](/help/forms/using/papercapture-service-resolution.md)
       + [Beheben von Spring Framework-Schwachstellen für AEM Forms on JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
       + [Behebung von Log4j2-Schwachstellen für Experience Manager Forms](/help/forms/using/aem-forms-vulnerability-cve.md)
-      + [Beheben der Anfälligkeit für die Ausführung von Remote-Code für AEM Forms on JEE](/help/forms/using/aem-forms-rce-vulnerability-mitigation-troubleshooting.md)
+      + [Behebung der Schwachstelle für die Remote-Code-Ausführung für AEM Forms on JEE](/help/forms/using/aem-forms-rce-vulnerability-mitigation-troubleshooting.md)
       + [Anzeigen von Problemen für XFA-basierte PDF-Formulare und richtliniengeschützte Dokumente](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
       + [Öffnen von XFA-basierten PDF-Formularen in Firefox und Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
       + [Schwachstelle von XML External Entity (XXE) in BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)
