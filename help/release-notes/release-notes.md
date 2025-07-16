@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 16a75f6308319e07bed68b668fc9c20e0ef5f5c9
-workflow-type: ht
-source-wordcount: '6444'
-ht-degree: 100%
+source-git-commit: 80482da847b86c91963dbb0d37375e370a503588
+workflow-type: tm+mt
+source-wordcount: '6643'
+ht-degree: 97%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 100%
 
 Einige wichtige Funktionen und Verbesserungen, die in dieser Version enthalten sind:
 
-* [Barrierefreie Hyperlinks mit verschiedenen Textstilen in statischen PDFs](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/using-designer.pdf): Hyperlinks, die verschiedene Textstile in statischen PDFs enthalten, werden jetzt als einzelnes, barrierefreies Element getaggt. Diese Verbesserung vereinfacht die Tag-Baumstruktur sowie die Navigation der Bildschirmlesehilfe und unterstützt eine bessere Einhaltung von Vorgaben zur Barrierefreiheit.
+* [Barrierefreie Hyperlinks mit verschiedenen Textstilen in statischen PDFs](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): Hyperlinks, die verschiedene Textstile in statischen PDFs enthalten, werden jetzt als einzelnes, barrierefreies Element getaggt. Diese Verbesserung vereinfacht die Tag-Baumstruktur sowie die Navigation der Bildschirmlesehilfe und unterstützt eine bessere Einhaltung von Vorgaben zur Barrierefreiheit.
 
 * [Aktualisierte unterstützte Plattform-Matrix](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
@@ -72,6 +72,10 @@ Einige wichtige Funktionen und Verbesserungen, die in dieser Version enthalten s
    * Red Hat® Enterprise Linux® 9 (Kernel 4.x, 64 Bit) 
 
 * [Robuste Dateianhangskomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): Als Sicherheitsmaßnahme verhindert die Komponente jetzt die Übermittlung von Dateien mit geänderten Erweiterungen, die versuchen, Prüfungen zulässiger Dateitypen zu umgehen. Solche Dateien werden während der Übermittlung blockiert, um sicherzustellen, dass nur gültige Dateitypen akzeptiert werden.
+
+* FORMS-20533: AEM Forms umfasst jetzt ein Upgrade der Struts-Version von 2.5.33 auf 6.x für die Formularkomponente. Dies liefert zuvor verpasste Struts-Änderungen, die nicht in SP23 enthalten waren. Die Unterstützung wurde über einen [Hotfix](/help/release-notes/aem-forms-hotfix.md) hinzugefügt, den Sie [herunterladen und ](/help/release-notes/aem-forms-hotfix.md) können, um Unterstützung für die neueste Version von Struts hinzuzufügen.
+
+* FORMS-20532: AEM Forms umfasst jetzt ein Upgrade der Struts-Version von 2.5.33 auf 6.x für die Ausgabekomponente. Dies liefert zuvor verpasste Struts-Änderungen, die nicht in SP23 enthalten waren. Die Unterstützung wurde über einen [Hotfix](/help/release-notes/aem-forms-hotfix.md) hinzugefügt, den Sie [herunterladen und ](/help/release-notes/aem-forms-hotfix.md) können, um Unterstützung für die neueste Version von Struts hinzuzufügen.
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -654,7 +658,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
   "refresh": true
   ```
 
-* Wenn Sie Ihre [!DNL Experience Manager]-Instanz von 6.5.0 bis 6.5.4 auf das neueste Service Pack für Java™ 11 aktualisieren, sehen Sie `RRD4JReporter`-Ausnahmen in der Datei `error.log`. Um die Ausnahmen zu beenden, starten Sie Ihre Instanz von [!DNL Experience Manager] neu. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
+* Wenn Sie Ihre [!DNL Experience Manager]-Instanz von 6.5.0 bis 6.5.4 auf das neueste Service Pack für Java™ 11 aktualisieren, sehen Sie `RRD4JReporter`-Ausnahmen in der Datei `error.log`. Um die Ausnahmen zu beenden, starten Sie Ihre [!DNL Experience Manager]-Instanz neu. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
 
 * Benutzende können einen Ordner in einer Hierarchie in [!DNL Assets] umbenennen und einen verschachtelten Ordner in [!DNL Brand Portal] veröffentlichen. Der Titel des Ordners wird jedoch erst dann in [!DNL Brand Portal] aktualisiert, wenn der Stammordner erneut veröffentlicht wird.
 
@@ -680,14 +684,14 @@ Die Vorschau von Inhaltsfragmenten schlägt aufgrund des DoS-Schutzes für eine 
 >
 > Führen Sie kein Upgrade auf Service Pack 6.5.23.0 für Probleme durch, für die keine Hotfixes verfügbar sind, da dies zu unerwarteten Fehlern führen kann. Führen Sie erst ein Upgrade auf Service Pack 6.5.23.0 durch, nachdem die erforderlichen Hotfixes veröffentlicht wurden.
 
-* Wenn ein Upgrade von Struts von AEM Service Pack 2.5.x auf AEM Forms Service Pack 6.x durchgeführt wird, werden in der Richtlinien-Benutzeroberfläche nicht alle Konfigurationen angezeigt, beispielsweise die Option zum Hinzufügen eines Wasserzeichens. (FORMS-20203)
+* Wenn ein Upgrade von Struts von AEM Service Pack 2.5.x auf AEM Forms Service Pack 6.x durchgeführt wird, werden in der Richtlinien-Benutzeroberfläche nicht alle Konfigurationen angezeigt, beispielsweise die Option zum Hinzufügen eines Wasserzeichens. Sie können [Hotfix herunterladen und installieren](/help/release-notes/aem-forms-hotfix.md) um das Problem zu beheben.  (FORMS-20203)
 * Nach dem Upgrade auf AEM Forms Service Pack 6.5.23.0 schlägt der ImageToPDF-Konvertierungsdienst mit dem folgenden Fehler fehl (FORMS-20360):
-  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
+  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp``` Sie können [Hotfix herunterladen und installieren](/help/release-notes/aem-forms-hotfix.md) um das Problem zu beheben.
 
 * Wenn Sie nach der Installation von AEM Forms JEE Service Pack 21 (6.5.21.0) doppelte Einträge von Geode-JAR-Dateien `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` unter dem Ordner `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926) finden, führen Sie die folgenden Schritte durch, um das Problem zu beheben:
 
-   1. Beenden der Locators, falls sie noch ausgeführt werden.
-   2. Beenden des AEM-Servers.
+   1. Stoppen der Locators, falls sie noch ausgeführt werden.
+   2. Stoppen des AEM-Servers.
    3. Wechseln zum Ordner `<AEM_Forms_Installation>/lib/caching/lib`.
    4. Entfernen aller Geode-Patch-Dateien außer `geode-*-1.15.1.2.jar`. Bestätigen, dass nur die Geode-JAR-Dateien mit `version 1.15.1.2` vorhanden sind.
    5. Öffnen der Eingabeaufforderung im Administratormodus.
@@ -715,6 +719,8 @@ Die Vorschau von Inhaltsfragmenten schlägt aufgrund des DoS-Schutzes für eine 
   (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
   have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
   ```
+
+* FORMS-20478: Beim Versuch, TIFF-Dateien vom Typ 7/8 in PDF zu konvertieren, schlägt der Konvertierungsprozess mit dem Fehler „ALC-PDG-001-000-Image2PDF-Konvertierung fehlgeschlagen“ fehl, verursacht durch: com/sun/image/codec/jpeg/JPEGCodec“ und „ALC-PDG-016-003-Ein unbekannter/unerwarteter Fehler ist während der PDF-Nachbearbeitung aufgetreten.“ Das System versucht, einen erneuten Versuch mit TM ImageIO TIFF Decoder durchzuführen, kann den Vorgang jedoch nicht abschließen. Sie können [Hotfix herunterladen und installieren](/help/release-notes/aem-forms-hotfix.md) um das Problem zu beheben.
 
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
