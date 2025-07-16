@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 80482da847b86c91963dbb0d37375e370a503588
+source-git-commit: 59d667004bb41a973847e9c53333afaa188ccac1
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1160'
 ht-degree: 91%
 
 ---
@@ -30,7 +30,7 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
     <td><strong>Behobene Probleme</strong></td>
   </tr>
   <tr>
-    <td>SP23 Hotfix hochgeladen auf SD-</td>
+    <td>SP23 Hotfix-</td>
     <td>
     <ul>
     <li><strong>JBoss:</strong></li>
