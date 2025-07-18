@@ -106,7 +106,7 @@ Wenn Sie beim Erstellen einer Seite nur den **Titel** angeben, leitet AEM den **
 | Titel | Abgeleiteter Name |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;ç+ | sc---c-.html |
+| SC%&amp;&ast;ç+ | sc---c-.html |
 
 #### Name {#name}
 
