@@ -1,5 +1,5 @@
 ---
-title: Erstellen benutzerspezifischer Erweiterungen
+title: Benutzerdefinierte Adobe Campaign-Erweiterungen
 description: Sie können Ihren benutzerdefinierten Code in Adobe Campaign aus AEM oder aus AEM nach Adobe Campaign aufrufen
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,15 @@ exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 100%
+source-wordcount: '503'
+ht-degree: 92%
 
 ---
 
-# Erstellen benutzerspezifischer Erweiterungen{#creating-custom-extensions}
+
+# Benutzerdefinierte Adobe Campaign-Erweiterungen{#creating-custom-extensions}
 
 Im Allgemeinen verwenden Sie beim Implementieren eines Projekts benutzerdefinierten Code in AEM und Adobe Campaign. Mit der vorhandenen API können Sie Ihren benutzerdefinierten Code in Adobe Campaign aus AEM oder aus AEM nach Adobe Campaign aufrufen. In diesem Dokument wird beschrieben, wie Sie dies durchführen.
 
@@ -35,17 +36,13 @@ Die Standardintegration zwischen AEM und Campaign basiert auf JSON und JSSP (Jav
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
 
->[!NOTE]
->
->[Für dieses Beispiel verwenden Sie Geometrixx](/help/sites-developing/we-retail.md), das bei Package Share erhältlich ist.
-
 In diesem Beispiel wurde eine neue benutzerdefinierte JSSP-Datei erstellt und diese von der AEM-Seite aus aufgerufen, um das Ergebnis abzurufen. So können Sie beispielsweise Daten von Adobe Campaign abrufen oder Daten in Adobe Campaign speichern.
 
 1. Um in Adobe Campaign eine JSSP-Datei zu erstellen, klicken Sie auf das Symbol **Neu**.
 
    ![Das Symbol „Neu“ wird durch eine Seite mit einem Stern in der Nähe der oberen linken Ecke gekennzeichnet.](do-not-localize/chlimage_1-4a.png)
 
-1. Geben Sie den Namen dieser JSSP-Datei ein. In diesem Beispiel wird **cus:custom.jssp** verwendet (d. h. es liegt im Namespace **cus**).
+1. Geben Sie den Namen dieser JSSP-Datei ein. In diesem Beispiel wird **cus:custom.jssp** verwendet (was bedeutet, dass es sich im Namespace **cus** befindet).
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -173,11 +170,11 @@ AEM bietet vordefinierte APIs zum Abrufen der Objekte, die überall in der sitea
 
 Für jeden Knoten im Explorer gibt es eine API, die damit verknüpft ist. Beispielsweise für den Knoten:
 
-* [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
+* [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommendations](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
 
 Die API lautet:
 
-* [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
+* [http://localhost:4502/content/campaigns/geometrixx/scott-recommendations.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
 Das Ende der URL **.1.json** kann durch **.2.json**, **.3.json** ersetzt werden, je nach der Anzahl der Unterebenen, die Sie erhalten möchten. Um alle Suchbegriffe abzurufen, kann das Schlüsselwort **infinity** verwendet werden:
 

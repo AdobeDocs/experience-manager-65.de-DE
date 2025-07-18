@@ -9,20 +9,18 @@ exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: ad8f849384e58511de97611d1b26c4fc96022062
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '297'
 ht-degree: 100%
 
 ---
 
+
 # Erstellen benutzerdefinierter AEM-Seitenvorlagen mit Adobe Campaign-Formularkomponenten{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
 Auf dieser Seite wird anhand der Implementierung der Geometrixx Outdoors-Vorlage (`/apps/geometrixx-outdoors/components/page_campaign_profile`) erläutert, wie Sie eine benutzerdefinierte Seitenvorlage auf Basis von [Adobe Campaign-Formularkomponenten](/help/sites-authoring/adobe-campaign-components.md) erstellen. Darüber hinaus erhalten Sie wichtige Informationen, die Sie möglicherweise beim Erstellen Ihrer eigenen benutzerdefinierten Vorlage benötigen.
-
->[!NOTE]
->
->[E-Mail- und Formularbeispiele sind nur in Geometrixx verfügbar](/help/sites-developing/we-retail.md). Laden Sie Geometrixx-Beispielinhalt aus Package Share herunter.
 
 >[!CAUTION]
 >

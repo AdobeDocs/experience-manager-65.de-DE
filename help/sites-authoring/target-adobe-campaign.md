@@ -9,9 +9,9 @@ exl-id: fc6fccba-41c5-4c13-aac0-b4ef67767abe
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '421'
 ht-degree: 100%
 
 ---
@@ -66,47 +66,3 @@ So erstellen Sie Erlebnisse für Segmente:
 1. Klicken Sie auf **Bearbeiten** und unterhalb der Segmente auf **Element hinzufügen**.
 1. Geben Sie den Pfad zum Segment „männlich“ ein, zum Beispiel **/etc/segmentation/ac-segments/male**, und klicken Sie auf **OK**. Es sollte die folgende Meldung angezeigt werden: *Erlebnis ist ausgerichtet auf: Männlich*.
 1. Wiederholen Sie die vorherigen Schritte, um ein Erlebnis für alle Segmente zu erstellen, zum Beispiel eine weibliche Zielgruppe.
-
-## Erstellen eines Newsletters mit zielgerichteten Inhalten {#creating-a-newsletter-with-targeted-content}
-
-Nachdem Sie Segmente, eine Marke, eine Kampagne und ein Erlebnis erstellt haben, können Sie einen Newsletter mit zielgerichteten Inhalten erstellen. Nachdem Sie das Erlebnis erstellt haben, verknüpfen Sie Erlebnisse mit Ihren Segmenten.
-
->[!NOTE]
->
->[E-Mail-Muster stehen nur in Geometrixx zur Verfügung](/help/sites-developing/we-retail.md). Laden Sie Geometrixx-Beispielinhalt aus Package Share herunter.
-
-So erstellen Sie einen Newsletter mit zielgerichteten Inhalten:
-
-1. Erstellen eines Newsletters mit zielgerichteten Inhalten: Klicken Sie unter „E-Mail-Kampagnen“ in Geometrixx Outdoors auf **Erstellen** > **Seite** und wählen Sie eine der Adobe Campaign-E-Mail-Vorlagen.
-
-   ![chlimage_1-188](assets/chlimage_1-188.png)
-
-1. Fügen Sie dem Newsletter eine Text- und Personalisierungs-Komponente hinzu.
-1. Fügen Sie der Text- und Personalisierungs-Komponente Text hinzu, beispielsweise: „Dies ist der Standardtext.“
-1. Klicken Sie auf den Pfeil neben **Bearbeiten** und wählen Sie **Targeting** aus.
-1. Wählen Sie die entsprechende Marke aus dem Dropdown-Menü aus und klicken Sie auf Ihre Kampagne. (Hierbei handelt es sich um die Marke und Kampagne, die Sie zuvor erstellt haben).
-1. Klicken Sie auf **Targeting starten**. Die Segmente werden nun im Zielgruppenbereich angezeigt. Sollte ein Besucher nicht in eines der festgelegten Segmente passen, wird er zum Standarderlebnis weitergeleitet.
-
-   >[!NOTE]
-   >
-   >Standardmäßig werden die in AEM enthaltenen E-Mail-Beispiele als Zielgruppenbestimmungs-Engine für Adobe Campaign verwendet. Bei benutzerdefinierten Newslettern müssen Sie möglicherweise Adobe Campaign als Zielgruppenbestimmungs-Engine auswählen. Klicken Sie während des Targetings in der Symbolleiste auf „+“, geben Sie einen Namen für die neue Aktivität ein und wählen Sie **Adobe Campaign** als Targeting-Engine aus.
-
-1. Klicken Sie auf **Standard** und dann auf die Komponente „Text und Personalisierung“, die Sie hinzugefügt haben, und Sie sehen eine Zielscheibe mit darin steckendem Pfeil. Klicken Sie auf das Symbol, um diese Komponente als Ziel festzulegen.
-
-   ![chlimage_1-189](assets/chlimage_1-189.png)
-
-1. Navigieren Sie zu einem anderen Segment („Männlich“), klicken Sie auf **Angebot hinzufügen** und klicken Sie auf das Pluszeichen (+). Bearbeiten Sie anschließend das Angebot.
-1. Navigieren Sie zu einem anderen Segment („Weiblich“), klicken Sie auf **Angebot hinzufügen** und dann auf das Pluszeichen (+). Bearbeiten Sie anschließend dieses Angebot.
-1. Klicken Sie auf **Weiter**, um die Zuordnung anzuzeigen, und klicken Sie dann auf **Weiter**, um die Einstellungen anzuzeigen, die nicht für Adobe Campaign gelten, und klicken Sie auf **Speichern**.
-
-   AEM generiert automatisch den richtigen Zielgruppenbestimmungs-Code für Adobe Campaign, wenn der Inhalt in Adobe Campaign für einen Versand genutzt wird.
-
-1. Erstellen Sie in Adobe Campaign einen Versand: Klicken Sie auf **E-Mail-Versand mit AEM-Inhalten**, wählen Sie das passende lokale AEM-Konto aus und bestätigen Sie die Änderungen.
-
-   In der HTML-Ansicht sind die verschiedenen Erlebnisse zielgerichteter Komponenten im Zielgruppenbestimmungs-Code für Adobe Campaign enthalten.
-
-   ![chlimage_1-190](assets/chlimage_1-190.png)
-
-   >[!NOTE]
-   >
-   >Sollten Sie die Segmente auch in Adobe Campaign festgelegt haben, werden Ihnen beim Klicken auf **Vorschau** die Erlebnisse für die unterschiedlichen Segmente angezeigt.

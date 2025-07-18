@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: 6feebde8e1a2c89599f04e10e3e2a884a6202575
-workflow-type: ht
-source-wordcount: '7535'
-ht-degree: 100%
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
+workflow-type: tm+mt
+source-wordcount: '7528'
+ht-degree: 99%
 
 ---
 
@@ -151,7 +151,6 @@ ht-degree: 100%
          + [Erstellen und Verwalten von Angeboten](/help/sites-authoring/offerlib.md)
          + [Grundlegendes zur Segmentierung](/help/sites-authoring/segmentation-overview.md)
       + AEM und Adobe Campaign {#aem-adobe-campaign}
-         + [Arbeiten mit Adobe Campaign](/help/sites-authoring/adobe-campaign.md)
          + [Arbeiten mit Adobe Campaign Classic und Adobe Campaign Standard](/help/sites-authoring/campaign.md)
          + [Targeting von Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md)
          + [Erstellen von Adobe Campaign-Formularen in AEM](/help/sites-authoring/adobe-campaign-forms.md)
@@ -215,7 +214,6 @@ ht-degree: 100%
          + [Personalisierung](/help/sites-administering/personalization.md)
          + [Konfigurieren von ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/personlization/ch-configuring.html?lang=de)
          + [Client-Kontext](/help/sites-administering/client-context.md)
-         + [Kampagnen](/help/sites-administering/campaigns.md)
          + [Konfigurieren der Segmentierung mit ContextHub](/help/sites-administering/segmentation.md)
          + [Konfigurieren der Segmentierung](/help/sites-administering/campaign-segmentation.md)
          + [Erweitern und Konfigurieren des Design-Import-Tools für Einstiegsseiten](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
@@ -236,7 +234,6 @@ ht-degree: 100%
          + [SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse](/help/sites-administering/sharepoint-connector-licenses.md)
          + [Häufig gestellte Fragen zur Einstellung der Unterstützung für DHTML-Viewer](/help/sites-administering/dhtml-viewer-endoflifefaqs.md)
          + [Integration mit Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md)
-         + [Verwandte Community-Artikel](/help/sites-administering/related-community-articles.md)
          + [Integrieren mit Adobe Campaign Standard](/help/sites-administering/campaignstandard.md)
          + [Hinweis zum End of Life von Flash-Viewern](/help/sites-administering/flash-viewers-eol.md)
          + [Integrieren mit Adobe Dynamic Tag Management](/help/sites-administering/dtm.md)
@@ -1516,7 +1513,7 @@ ht-degree: 100%
          + Cloud Services{#extending-cloud-services}
             + [Cloud Service-Konfigurationen](/help/sites-developing/extending-cloud-config.md)
             + [Erstellen eines individuellen Cloud-Service](/help/sites-developing/extending-cloud-config-custom-cloud.md)
-         + [Erstellen benutzerspezifischer Erweiterungen](/help/sites-developing/extending-campaign-extensions.md)
+         + [Benutzerdefinierte Adobe Campaign-Erweiterungen](/help/sites-developing/extending-campaign-extensions.md)
          + Forms{#extending-forms}
             + [Erstellen benutzerdefinierter Formularzuordnungen](/help/sites-developing/extending-campaign-form-mapping.md)
             + [Erstellen benutzerdefinierter AEM-Seitenvorlagen mit Adobe Campaign-Formularkomponenten](/help/sites-developing/extending-campaign-custom-template.md)

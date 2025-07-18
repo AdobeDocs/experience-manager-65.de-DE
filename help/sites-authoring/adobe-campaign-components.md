@@ -10,12 +10,14 @@ exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '2859'
-ht-degree: 100%
+source-wordcount: '2857'
+ht-degree: 99%
 
 ---
+
 
 # Adobe Campaign-Komponenten{#adobe-campaign-components}
 
@@ -265,7 +267,7 @@ Im Editor für die Bearbeitung im Kontext können Sie Text hinzufügen, die Ausr
 
 >[!NOTE]
 >
->Nur die Felder, die im Schema **nms:seedMember** oder einer seiner Erweiterungen festgelegt wurden, werden berücksichtigt. Die Attribute der mit **nms:seedMember** verknüpften Tabellen stehen nicht zur Verfügung.
+>Nur die Felder, die im **nms:seedMember**-Schema oder einer seiner Erweiterungen definiert sind, werden berücksichtigt. Die Attribute der mit „nms **verknüpften:seedMember** sind nicht verfügbar.
 
 ## Adobe Campaign-Formular-Komponenten {#adobe-campaign-form-components}
 
