@@ -5,10 +5,10 @@ exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 383192083ec84176f67882a869550374f6074eef
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 100%
+source-wordcount: '2476'
+ht-degree: 96%
 
 ---
 
@@ -187,7 +187,7 @@ Sobald Sie eine Seite erstellt und geöffnet haben, können Sie [Inhalte mithilf
 
 Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstellen, bevor Sie mit der Erstellung von Inhalten beginnen können:
 
-1. Öffnen Sie die Sites-Konsole, (z. B. [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content).).
+1. Öffnen Sie die Sites-Konsole (z. B. [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
 1. Navigieren Sie zum Speicherort, an dem Sie die neue Seite erstellen möchten.
 1. Öffnen Sie das Dropdown-Menü über **Erstellen** in der Symbolleiste und wählen Sie **Seite** aus der Liste aus:
 
@@ -326,10 +326,9 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
    Dadurch wird der Assistent zum Verschieben von Seiten geöffnet.
 
-1. Im Schritt **Umbenennung** des Assistenten haben Sie folgende Möglichkeiten:
+1. Der Schritt **Umbenennen** des Assistenten liefert **Informationen** zur Seite einschließlich Erstellungsdatum, Pfad und Anzahl der direkten Verweise. Von hier aus haben Sie folgende Möglichkeiten:
 
    * Geben Sie den Namen an, den die Seite nach dem Verschieben aufweisen soll, und klicken Sie dann auf **Weiter**, um den Vorgang fortzusetzen.
-
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
 
    ![caop-07](assets/caop-07.png)
@@ -365,7 +364,8 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
    >[!NOTE]
    >
-   >Wenn die Seite weder verknüpft ist noch darauf verwiesen wurde, ist dieser Schritt nicht verfügbar.
+   >* Wenn die Seite weder verknüpft ist noch darauf verwiesen wurde, ist dieser Schritt nicht verfügbar.
+   >* Dieser Schritt listet sowohl direkte als auch indirekte Referenzen auf. Dies kann sich von der Menge unterscheiden, die im **Umbenennen** des Assistenten sowie von den in der Leiste „Verweise“ gemeldeten Verweisen gemeldet wird, die beide aus Leistungsgründen nur direkte Verweise melden.
 
    ![caop-09](assets/caop-09.png)
 
@@ -397,7 +397,7 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
 
 >[!NOTE]
 >
->Für die asynchrone Seitenverschiebung ist AEM 6.5.3.0 oder höher erforderlich.
+>Für die asynchrone Seitenverschiebung ist AEM 6.5.3.0 oder höher erforderlich.
 
 ### Löschen einer Seite {#deleting-a-page}
 

@@ -5,10 +5,10 @@ exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 100%
+source-wordcount: '1087'
+ht-degree: 98%
 
 ---
 
@@ -76,7 +76,7 @@ Dies ist eine Liste der Sites Admin-Funktionen der klassischen Benutzeroberfläc
 | Siehe „Sprachkopien“ | Umfassend |  |
 | Suchen und Ersetzen | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
 | Benachrichtigungs-Posteingang (JCR-Ereignisse) | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. Wird in Zukunft durch eine andere Implementierung ersetzt. |
-| Verweise | Umfassend | Anzeige eingehender Seitenlinks, die zu AEM 6.5 hinzugefügt wurden. |
+| Verweise | Umfassend | Anzeige eingehender Seitenlinks, die zu AEM 6.5 hinzugefügt wurden Aus Leistungsgründen werden nur direkte Links zur Seite angezeigt. |
 
 ## Funktionsstatus: Seiten-Editor {#feature-status-page-editor}
 
