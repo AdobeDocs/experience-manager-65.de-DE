@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1898'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -106,7 +106,7 @@ Wenn Sie beim Erstellen einer Seite nur den **Titel** angeben, leitet AEM den **
 | Titel | Abgeleiteter Name |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&ast;ç+ | sc---c-.html |
+| SC%&amp;&amp;ast;ç+ | sc---c-.html |
 
 #### Name {#name}
 
@@ -266,7 +266,7 @@ So verschieben oder benennen Sie eine Seite um:
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
-   Die Seite listet auch alle Seiten auf, die direkt oder indirekt auf die verschobene Seite verweisen. Je nach Status der referenzierenden Seite können Sie diese Links möglicherweise anpassen und/oder die Seiten erneut veröffentlichen.
+   Die Seite listet auch alle Seiten auf, die direkt oder indirekt auf die Seite verweisen, die verschoben wird. Je nach Status der referenzierenden Seite können Sie diese Links möglicherweise anpassen und/oder die Seiten erneut veröffentlichen.
 
 1. Füllen Sie je nach Bedarf die folgenden Felder aus:
 

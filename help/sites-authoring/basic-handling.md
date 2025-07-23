@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2965'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -568,7 +568,7 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 ### Verweise {#references}
 
-**Verweise** zeigen Verbindungen zur ausgewählten Ressource an. In der **Sites**-Konsole wird zum Beispiel folgendes für [Verweise](/help/sites-authoring/author-environment-tools.md#showingpagereferences) für Seiten angezeigt:
+**Verweise** zeigen Verbindungen zur ausgewählten Ressource an. In der **Sites**-Konsole wird zum Beispiel Folgendes für [Verweise](/help/sites-authoring/author-environment-tools.md#showingpagereferences) für Seiten angezeigt:
 
 * [Blueprints](/help/sites-administering/msm.md)
 * [Launches](/help/sites-authoring/launches.md#launches-in-references-sites-console)
@@ -577,7 +577,7 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 * Inhaltsverweise:
 
    * Direkte Links von anderen Seiten zur ausgewählten Seite
-   * Inhalte, die von der Referenzkomponente der ausgewählten Seite geliehen, verliehen oder beidem hinzugefügt wurden
+   * Inhalte, die die Verweiskomponente von der ausgewählte Seite geliehen oder an sie verliehen hat, oder beides
 
 ![bh-28](assets/bh-28.png)
 

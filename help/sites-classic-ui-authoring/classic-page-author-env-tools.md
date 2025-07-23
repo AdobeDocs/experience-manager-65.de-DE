@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '931'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -156,7 +156,7 @@ Sie können in einer Suchabfrage eine beliebige Anzahl an Platzhaltern verwenden
 
 In AEM können Sie anzeigen, welche Seiten mit der aktuell bearbeiteten Seite verknüpft sind.
 
-Anzeigen von Seitenverweisen:
+So zeigen Sie Seitenverweise an:
 
 1. Wählen Sie im Sidekick das Registerkartensymbol **Seite** aus.
 
@@ -166,7 +166,7 @@ Anzeigen von Seitenverweisen:
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
-AEM zeigt alle Seiten an, die direkt auf die ausgewählte Seite verweisen, sowie alle indirekten Verweise. Dies ist hilfreich, um alle Links zu verstehen, die aktualisiert werden, wenn Sie die Seite verschieben oder löschen müssen.
+AEM zeigt alle Seiten an, die direkt auf die ausgewählte Seite verweisen, sowie alle indirekten Verweise. Dies hilft bei der Ermittlung aller Links, die aktualisiert werden, wenn Sie die Seite verschieben oder löschen müssen.
 
 ## Zusätzliche Sidekick-Aktionen {#additional-actions}
 
