@@ -1,6 +1,6 @@
 ---
 title: Benutzerdefinierte Adobe Campaign-Erweiterungen
-description: Sie können Ihren benutzerdefinierten Code in Adobe Campaign aus AEM oder aus AEM nach Adobe Campaign aufrufen
+description: Sie können Ihren benutzerdefinierten Code in Adobe Campaign aus AEM oder aus AEM nach Adobe Campaign aufrufen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '503'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ In diesem Beispiel wurde eine neue benutzerdefinierte JSSP-Datei erstellt und di
 
    ![Das Symbol „Neu“ wird durch eine Seite mit einem Stern in der Nähe der oberen linken Ecke gekennzeichnet.](do-not-localize/chlimage_1-4a.png)
 
-1. Geben Sie den Namen dieser JSSP-Datei ein. In diesem Beispiel wird **cus:custom.jssp** verwendet (was bedeutet, dass es sich im Namespace **cus** befindet).
+1. Geben Sie den Namen dieser JSSP-Datei ein. In diesem Beispiel wird **cus:custom.jssp** verwendet (d. h., sie liegt im Namespace **cus**).
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -170,11 +170,11 @@ AEM bietet vordefinierte APIs zum Abrufen der Objekte, die überall in der sitea
 
 Für jeden Knoten im Explorer gibt es eine API, die damit verknüpft ist. Beispielsweise für den Knoten:
 
-* [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommendations](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
+* [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
 
-Die API lautet:
+Das API lautet:
 
-* [http://localhost:4502/content/campaigns/geometrixx/scott-recommendations.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
+* [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
 Das Ende der URL **.1.json** kann durch **.2.json**, **.3.json** ersetzt werden, je nach der Anzahl der Unterebenen, die Sie erhalten möchten. Um alle Suchbegriffe abzurufen, kann das Schlüsselwort **infinity** verwendet werden:
 

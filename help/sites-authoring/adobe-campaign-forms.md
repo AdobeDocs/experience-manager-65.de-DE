@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1280'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Weitere Informationen hierzu finden Sie in der [Vorlagendokumentation](/help/sit
 
 >[!NOTE]
 >
->Stellen Sie sicher **dass die Eigenschaft** acMapping“ im Knoten **jcr:content** der Seite auf **mapRecipient** oder **profile** eingestellt ist, wenn Sie Adobe Campaign Classic bzw. Adobe Campaign Standard verwenden
+>Stellen Sie sicher, dass die Eigenschaft **acMapping** im Knoten **jcr:content** der Seite auf **mapRecipient** oder **profile** eingestellt ist, wenn Sie mit Adobe Campaign Classic bzw. Adobe Campaign Standard arbeiten.
 >
 
 1. Navigieren Sie in AEM unter „Sites“ an den Ort, an dem Sie eine Seite erstellen möchten.
@@ -78,7 +78,7 @@ Eigens für Adobe Campaign erstellte Formulare haben bestimmte Komponenten. Dies
 
 >[!NOTE]
 >
->Ist die gewünschte Vorlage nicht verfügbar, finden Sie weitere Informationen hierzu unter [Verfügbarmachen von Vorlagen.](/help/sites-authoring/campaign.md)
+>Ist die gewünschte Vorlage nicht verfügbar, finden Sie weitere Informationen hierzu unter [Verfügbarmachen von Vorlagen](/help/sites-authoring/campaign.md).
 
 In diesem Abschnitt werden nur für Adobe Campaign spezifische Verknüpfungen behandelt. Weitere Informationen und einen allgemeineren Überblick darüber, wie Sie Formulare in Adobe Experience Manager verwenden, finden Sie unter [Komponenten des Bearbeitungsmodus](/help/sites-authoring/default-components-foundation.md).
 
