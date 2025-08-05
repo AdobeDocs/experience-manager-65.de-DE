@@ -9,7 +9,7 @@ role: Admin
 exl-id: 9fade12f-a038-4fd6-8767-1c30966574c5
 solution: Experience Manager, Experience Manager Forms
 release-date: 2025-08-05T00:00:00Z
-source-git-commit: f57b2e7874aae10dd2112e688f8db6a660f2cbb9
+source-git-commit: cacad43c2c32a1a14de0ea5f845818018ba8b2ec
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 8%
@@ -77,7 +77,7 @@ Mit dieser Vorsichtsmaßnahme können Sie den Originalzustand wiederherstellen, 
 
 ### Option 2: (Für Benutzer auf 6.5.18.0 - 6.5.22.0) Manuelle Hotfix-Installation
 
-+++ Manuelle Hotfix-Installation für 6.5.18.0 - 6.5.22.0
++++Manuelle Hotfix-Installation für 6.5.18.0 - 6.5.22.0
 
 **Schritt 1: Herunterladen und Extrahieren des Hotfix-Pakets**
 
