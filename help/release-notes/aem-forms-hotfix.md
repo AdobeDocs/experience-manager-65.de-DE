@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: f472766dbfeb8d84b0b97f621828b1c0491529c4
+source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 87%
+source-wordcount: '1789'
+ht-degree: 65%
 
 ---
 
@@ -30,7 +30,67 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
     <td><strong>Behobene Probleme</strong></td>
   </tr>
   <tr>
-    <td>SP23 Hotfix-</td>
+    <td>
+      <strong>5. August 2025</strong><br>
+      <em>Gilt für:</em> AEM 6.5 Forms Service Pack 23<br>
+      <em>Setup-Anweisungen:</em>
+      <a href="/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md#option-1-for-users-on-version-65230-install-latest-hotfix">
+        Beheben von Schwachstellen in XXE, Konfiguration und Remote-Code-Ausführung (CVE-2025-49533) für AEM Forms on JEE
+      </a>
+    </td>
+    <td>
+    <ul>
+    <li><strong>JBoss:</strong></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-jboss.zip">Hotfix2 für AEM Service Pack 6.5.23.0 unter Windows für JBoss JEE-Server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-jboss.tar.gz">Hotfix2 für AEM Service Pack 6.5.23.0 unter Linux für JBoss JEE-Server</a></li>
+    <li><strong>Weblogic:</strong></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-weblogic.zip">Hotfix2 für AEM Service Pack 6.5.23.0 unter Windows für Weblogic JEE-Server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-weblogic.tar.gz">Hotfix2 für AEM Service Pack 6.5.23.0 unter Linux für Weblogic JEE-Server</a></li>
+    <li><strong>Websphere:</strong></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-websphere.zip">Hotfix2 für AEM Service Pack 6.5.23.0 unter Windows für Websphere JEE Server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-websphere.zip">Hotfix2 für AEM Service Pack 6.5.23.0 unter Linux für Websphere JEE Server</a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li>Verbesserte Sicherheit durch Behebung einer RCE-Schwachstelle in Adobe Experience Manager (AEM) Forms. Das Problem stand im Zusammenhang mit dem Struts-Entwicklungsmodus in der Admin-Benutzeroberfläche (UI), der die Evaluierung der beliebigen Object-Graph Navigation Language (OGNL) durch die Debugging-Funktion ermöglichte. Durch diese Fehlerbehebung wird sichergestellt, dass der Struts-Entwicklungsmodus deaktiviert ist und geeignete Sicherheitsfilter angewendet werden, um einen nicht autorisierten Zugriff zu verhindern.</li>
+    <li>Verbesserter Schutz vor Sicherheitslücken in Extensible Markup Language (XML) External Entity (XXE) im Modul der elektronischen Dokumentkomponente (EDC) von Adobe Experience Manager (AEM) Forms. Die Sicherheitslücken waren auf eine fehlerhafte Verarbeitung von XML-Dokumenten ohne XDM-Schutz zurückzuführen, was zu lokalen Dateilesevorgängen führen konnte. Die Fehlerbehebung umfasst:
+      <ul>
+        <li>Sicherstellen, dass die in der SecurityCheckHandler-Klasse verwendete DocumentBuilderFactory konfiguriert ist, um XDE-Angriffe zu verhindern.</li>
+        <li>Der EDC-Webservice wird aktualisiert, um XML-Dokumente sicher zu verarbeiten und nicht autorisierten Zugriff auf lokale Dateien zu verhindern.</li>
+      </ul>
+    </li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>
+      <strong>5. August 2025</strong><br>
+      <em>Gilt für:</em> AEM 6.5 Forms Service Pack 18 - 22<br>
+      <em>Setup-Anweisungen:</em>
+      <a href="/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md#option-2-for-users-on-65180---65220-manual-hotfix-installation">
+        Manuelle Hotfix-Installation für Service Packs 18-22
+      </a>
+    </td>
+    <td>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-xxe-configuration-hotfix.zip">Patch für AEM 6.5 Forms Service Pack 18 - AEM 6.5 Forms Service Pack 22 </a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li>Verbesserte Sicherheit durch Behebung einer RCE-Schwachstelle in Adobe Experience Manager (AEM) Forms. Das Problem stand im Zusammenhang mit dem Struts-Entwicklungsmodus in der Admin-Benutzeroberfläche (UI), der die Evaluierung der beliebigen Object-Graph Navigation Language (OGNL) durch die Debugging-Funktion ermöglichte. Durch diese Fehlerbehebung wird sichergestellt, dass der Struts-Entwicklungsmodus deaktiviert ist und geeignete Sicherheitsfilter angewendet werden, um einen nicht autorisierten Zugriff zu verhindern.</li>
+    <li>Verbesserter Schutz vor Sicherheitslücken im Document Security-Modul von Adobe Experience Manager (AEM) Forms in Extensible Markup Language (XML) External Entity (XE). Die Sicherheitslücken waren auf eine fehlerhafte Verarbeitung von XML-Dokumenten ohne XDM-Schutz zurückzuführen, was zu lokalen Dateilesevorgängen führen konnte. Die Fehlerbehebung umfasst:
+      <ul>
+        <li>Sicherstellen, dass die in der SecurityCheckHandler-Klasse verwendete DocumentBuilderFactory konfiguriert ist, um XDE-Angriffe zu verhindern.</li>
+        <li>Der Document Security-Webservice wird aktualisiert, um XML-Dokumente sicher zu verarbeiten und nicht autorisierten Zugriff auf lokale Dateien zu verhindern.</li>
+      </ul>
+    </li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>10. Juli 2025-</td>
     <td>
     <ul>
     <li><strong>JBoss:</strong></li>
@@ -192,7 +252,7 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
   <tbody>
 </table>
 
-## Herunterladen und Installieren eines Hotfixes {#download-install-hotfix}
+## Herunterladen und Installieren eines OSGi-Hotfixes {#download-install-hotfix}
 
 Führen Sie die folgenden Schritte aus, um das Hotfix herunterzuladen und zu installieren:
 
@@ -200,6 +260,10 @@ Führen Sie die folgenden Schritte aus, um das Hotfix herunterzuladen und zu ins
 1. Extrahieren Sie die Hotfix-Archivdatei, damit Sie ein Experience Manager-Paket (.zip) und Bundle-Dateien (.jar) abrufen können.
 1. Laden Sie das Paket (.zip) über den [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=de#accessing) hoch und installieren Sie es.
 1. Öffnen Sie die Bundles des Konfigurations-Managers `https://server:host/system/console/bundles`, laden Sie sie hoch und installieren Sie das Bundle (.jar). Das Hotfix wird installiert.
+
+## Installieren eines JEE-Patches {#download-install-jee-patch}
+
+Anweisungen zum Installieren eines JEE-Patches finden Sie in der [Dokumentation zum AEM Forms JEE-Patch-Installationsprogramm](/help/release-notes/jee-patch-installer-65.md).
 
 
 ## Herunterladen und Installieren des Hotfixes für das Problem mit Briefentwürfen {#install-hotfix}
