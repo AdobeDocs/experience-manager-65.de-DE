@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: b5e44b78659f0cb1b8b0025be30143b98c0bf8df
+source-git-commit: 62baf682b75823f52f968a70960aff2388d49cad
 workflow-type: tm+mt
-source-wordcount: '10051'
+source-wordcount: '10085'
 ht-degree: 53%
 
 ---
@@ -253,6 +253,12 @@ Der Installationsprozess für die Installation von Adobe Acrobat Pro DC für Mic
 * **Bereitstellungstyp**: Ein Benutzer oder mehrere Benutzer
 
 Jede Registerkarte enthält maßgeschneiderte Anweisungen, die für Ihr spezifisches Setup optimiert sind. So vermeiden Sie Konfigurationsprobleme und stellen eine ordnungsgemäße Lizenzierung sicher.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469669)
+
+>[!NOTE]
+>
+>Das Video zeigt den Installationsprozess für eine Einzelhandelslizenz - Konfiguration für einen einzelnen Benutzer. Für andere Bereitstellungsszenarien (Einzelhandel - Mehrere Benutzer, Volumenlizenz - Einzelbenutzer oder Volumenlizenz - Mehrere Benutzer) verwenden Sie die spezifischen Anweisungen von Schritt 9 auf den entsprechenden Registerkarten unten, um einen ordnungsgemäßen Serverstart und eine ordnungsgemäße Lizenzaktivierung für Ihren Bereitstellungstyp sicherzustellen.
 
 >[!BEGINTABS]
 
@@ -701,7 +707,7 @@ Nachdem Sie die vorherige Version deinstalliert haben, müssen Sie eine kompatib
 Führen Sie nach Abschluss aller Prozesse einen Schnellaktionstest durch, um zu bestätigen, dass die Installation gültig ist:
 
 1. Verwenden Sie Remote Desktop (RDP), um sich beim -Server anzumelden und den AEM Forms-Server mithilfe von Services zu starten.
-2. Verwenden Sie Remotedesktop (RDP), um sich beim Server anzumelden und den AEM Forms-Server mit Windows-Diensten zu starten. Sobald der Server ausgeführt wird, schließen Sie nicht einfach das RDP-Fenster. Melden Sie sich stattdessen ordnungsgemäß ab, indem Sie sich vom Benutzer abmelden. Dadurch wird sichergestellt, dass die Sitzung sauber endet, während der Service im Hintergrund weiter ausgeführt wird.
+2. Sobald der Server ausgeführt wird, schließen Sie nicht einfach das RDP-Fenster. Melden Sie sich stattdessen ordnungsgemäß ab, indem Sie sich vom Benutzer abmelden. Dadurch wird sichergestellt, dass die Sitzung sauber endet, während der Service im Hintergrund weiter ausgeführt wird.
 
 ###### Schritt 10: Testen des PDF Generator-Service
 
