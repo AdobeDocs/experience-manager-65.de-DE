@@ -326,7 +326,7 @@ Greifen Sie mithilfe der entsprechenden -Methode auf den Server zu, auf dem AEM 
 
 1. Öffnen Sie die Windows-Systemsteuerung.
 2. Navigieren Sie zu **Einstellungen** und öffnen Sie **Apps**.
-3. Adobe Acrobat Suchen Sie **** in der Liste der installierten Programme
+3. Adobe Acrobat Suchen Sie **&#x200B;**&#x200B;in der Liste der installierten Programme
 4. Wählen Sie **Deinstallieren** und befolgen Sie die Anweisungen, um die Anwendung zu entfernen. Starten Sie bei Aufforderung den Server neu
 5. Stellen Sie sicher, dass alle klassischen Versionen des Programms deinstalliert sind. Verwenden Sie das [Adobe Acrobat Cleaner-Tool](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) falls erforderlich, um eine vollständige Entfernung durchzuführen.
 
@@ -476,7 +476,7 @@ Greifen Sie mithilfe der entsprechenden -Methode auf den Server zu, auf dem AEM 
 
 1. Öffnen Sie die Windows-Systemsteuerung.
 2. Navigieren Sie zu **Einstellungen** und öffnen Sie **Apps**.
-3. Adobe Acrobat Suchen Sie **** in der Liste der installierten Programme
+3. Adobe Acrobat Suchen Sie **&#x200B;**&#x200B;in der Liste der installierten Programme
 4. Wählen Sie **Deinstallieren** und befolgen Sie die Anweisungen, um die Anwendung zu entfernen. Starten Sie bei Aufforderung den Server neu
 5. Stellen Sie sicher, dass alle klassischen Versionen des Programms deinstalliert sind. Verwenden Sie das [Adobe Acrobat Cleaner-Tool](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) falls erforderlich, um eine vollständige Entfernung durchzuführen.
 
@@ -632,7 +632,7 @@ Greifen Sie mithilfe der entsprechenden -Methode auf den Server zu, auf dem AEM 
 
 1. Öffnen Sie die Windows-Systemsteuerung.
 2. Navigieren Sie zu **Einstellungen** und öffnen Sie **Apps**.
-3. Adobe Acrobat Suchen Sie **** in der Liste der installierten Programme
+3. Adobe Acrobat Suchen Sie **&#x200B;**&#x200B;in der Liste der installierten Programme
 4. Wählen Sie **Deinstallieren** und befolgen Sie die Anweisungen, um die Anwendung zu entfernen. Starten Sie bei Aufforderung den Server neu
 5. Stellen Sie sicher, dass alle klassischen Versionen des Programms deinstalliert sind. Verwenden Sie das [Adobe Acrobat Cleaner-Tool](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) falls erforderlich, um eine vollständige Entfernung durchzuführen.
 
@@ -789,7 +789,7 @@ Greifen Sie mithilfe der entsprechenden -Methode auf den Server zu, auf dem AEM 
 
 1. Öffnen Sie die Windows-Systemsteuerung.
 2. Navigieren Sie zu **Einstellungen** und öffnen Sie **Apps**.
-3. Adobe Acrobat Suchen Sie **** in der Liste der installierten Programme
+3. Adobe Acrobat Suchen Sie **&#x200B;**&#x200B;in der Liste der installierten Programme
 4. Wählen Sie **Deinstallieren** und befolgen Sie die Anweisungen, um die Anwendung zu entfernen. Starten Sie bei Aufforderung den Server neu
 5. Stellen Sie sicher, dass alle klassischen Versionen des Programms deinstalliert sind. Verwenden Sie das [Adobe Acrobat Cleaner-Tool](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) falls erforderlich, um eine vollständige Entfernung durchzuführen.
 
@@ -896,7 +896,7 @@ Führen Sie die folgenden Schritte aus:
 1. Öffnen Sie **Adobe Acrobat Pro DC** auf dem Server.
 2. Navigieren Sie **Menü** > **Voreinstellungen**.
 3. Wählen Sie im Fenster „Voreinstellungen **im linken Bereich die Option** Sicherheit (Erweitert)“ aus.
-4. Aktivieren Sie im **Sandbox** Schutz **** die Option **Geschützten Modus beim Start aktivieren“**.
+4. Aktivieren Sie im **Sandbox** Schutz **&#x200B;**&#x200B;die Option **Geschützten Modus beim Start aktivieren“**.
 5. Klicken Sie auf **Ja**, wenn Sie zur Bestätigung aufgefordert werden.
 6. Klicken Sie **OK**, um Ihre Änderungen zu speichern und das Fenster „Voreinstellungen“ zu schließen.
 7. Starten Sie Adobe Acrobat Pro DC neu, damit die Änderungen wirksam werden.
@@ -1451,7 +1451,7 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
       #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
       ```
 
-+++
+ +++
 
 <!-- +++ Unable to add a PDF Generator (PDFG) user
 
