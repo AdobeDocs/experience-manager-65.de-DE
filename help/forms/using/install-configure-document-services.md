@@ -905,7 +905,7 @@ Führen Sie die folgenden Schritte aus:
 >
 >Die Deaktivierung des abgesicherten Modus ist für Server-seitige Automatisierungsszenarien wie AEM Forms PDF Generator erforderlich. Diese Einstellung sollte nur in dedizierten Serverumgebungen geändert werden, nicht auf Desktops für Endbenutzer.
 
-Weitere Informationen finden Sie in der [Adobe-Dokumentation zum geschützten Modus](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Weitere Informationen finden Sie in der [Adobe-Dokumentation zum geschützten Modus](https://helpx.adobe.com/de/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
