@@ -8,7 +8,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
 workflow-type: tm+mt
 source-wordcount: '1789'
-ht-degree: 65%
+ht-degree: 74%
 
 ---
 
@@ -106,12 +106,12 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
     </td>
     <td>
     <ul>
-    <li><strong>Dieses Hotfix behebt Folgendes:</strong>
+    <li><strong>Dieser Hotfix behebt Folgendes:</strong>
       <ul>
-        <li><strong>FORMS-20533:</strong> AEM Forms enthält jetzt ein Upgrade der Struts-Version von 2.5.33 auf 6.x für die Formularkomponente. Dies liefert bis jetzt fehlende Struts-Änderungen, die nicht in SP23 enthalten waren. Die Unterstützung wurde über einen Hotfix hinzugefügt, den Sie herunterladen und installieren können, um Unterstützung für die neueste Version von Struts hinzuzufügen.</li>
-        <li><strong>FORMS-20532:</strong> AEM Forms enthält jetzt ein Upgrade der Struts-Version von 2.5.33 auf 6.x für die Ausgabekomponente. Dies liefert bis jetzt fehlende Struts-Änderungen, die nicht in SP23 enthalten waren. Die Unterstützung wurde über einen Hotfix hinzugefügt, den Sie herunterladen und installieren können, um Unterstützung für die neueste Version von Struts hinzuzufügen.</li>
-        <li><strong>FORMS-20203:</strong> Wenn ein Benutzer Struts von AEM Service Pack 2.5.x auf AEM Forms Service Pack 6.x aktualisiert, kann die Richtlinien-Benutzeroberfläche nicht alle Konfigurationen anzeigen, z. B. die Option zum Hinzufügen eines Wasserzeichens. Sie können den Hotfix zur Lösung dieses Problems herunterladen und installieren.</li>
-        <li><strong>FORMS-20360:</strong> Nach dem Upgrade auf AEM Forms Service Pack 6.5.23.0 schlägt der ImageToPDF-Konvertierungsdienst mit folgendem Fehler fehl:<br>
+        <li><strong>FORMS-20533:</strong> AEM Forms enthält jetzt eine Aktualisierung der Struts-Version von 2.5.33 auf 6.x für die Formularkomponente. Dies liefert bis jetzt fehlende Struts-Änderungen, die nicht in SP23 enthalten waren. Die Unterstützung wurde über einen Hotfix hinzugefügt. Diesen können Sie herunterladen und installieren, um Unterstützung für die neueste Version von Struts hinzuzufügen.</li>
+        <li><strong>FORMS-20532:</strong> AEM Forms enthält jetzt eine Aktualisierung der Struts-Version von 2.5.33 auf 6.x für die Output-Komponente. Dies liefert bis jetzt fehlende Struts-Änderungen, die nicht in SP23 enthalten waren. Die Unterstützung wurde über einen Hotfix hinzugefügt. Diesen können Sie herunterladen und installieren, um Unterstützung für die neueste Version von Struts hinzuzufügen.</li>
+        <li><strong>FORMS-20203:</strong> Wenn Benuztende Struts von AEM Service Pack 2.5.x auf AEM Forms Service Pack 6.x aktualisieren, werden in der Richtlinien-Benutzeroberfläche nicht alle Konfigurationen angezeigt, beispielsweise die Option zum Hinzufügen eines Wasserzeichens. Sie können den Hotfix herunterladen und installieren, um das Problem zu beheben.</li>
+        <li><strong>FORMS-20360:</strong> Nach der Aktualisierung auf AEM Forms Service Pack 6.5.23.0 schlägt der ImageToPDF-Konvertierungsdienst mit folgendem Fehler fehl:<br>
         <code>17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp</code><br>
         Sie können den Hotfix zur Lösung dieses Problems herunterladen und installieren.</li>
       </ul>
