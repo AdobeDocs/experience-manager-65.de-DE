@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1789'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -31,33 +31,33 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
   </tr>
   <tr>
     <td>
-      <strong>5. August 2025</strong><br>
-      <em>Gilt für:</em> AEM 6.5 Forms Service Pack 23<br>
+      <strong>5. August 2025</strong><br>
+      <em>Gilt für:</em> AEM 6.5 Forms Service Pack 23<br>
       <em>Setup-Anweisungen:</em>
       <a href="/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md#option-1-for-users-on-version-65230-install-latest-hotfix">
-        Beheben von Schwachstellen in XXE, Konfiguration und Remote-Code-Ausführung (CVE-2025-49533) für AEM Forms on JEE
+        Minimieren von Schwachstellen durch XXE, Konfiguration und Ausführung von Remote-Code (CVE-2025-49533) für AEM Forms auf JEE
       </a>
     </td>
     <td>
     <ul>
     <li><strong>JBoss:</strong></li>
-    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-jboss.zip">Hotfix2 für AEM Service Pack 6.5.23.0 unter Windows für JBoss JEE-Server</a></li>
-    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-jboss.tar.gz">Hotfix2 für AEM Service Pack 6.5.23.0 unter Linux für JBoss JEE-Server</a></li>
+    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-jboss.zip">Hotfix2 für AEM Service Pack 6.5.23.0 unter Windows für JBoss JEE-Server</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-jboss.tar.gz">Hotfix2 für AEM Service Pack 6.5.23.0 unter Linux für JBoss JEE-Server</a></li>
     <li><strong>Weblogic:</strong></li>
-    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-weblogic.zip">Hotfix2 für AEM Service Pack 6.5.23.0 unter Windows für Weblogic JEE-Server</a></li>
-    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-weblogic.tar.gz">Hotfix2 für AEM Service Pack 6.5.23.0 unter Linux für Weblogic JEE-Server</a></li>
+    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-weblogic.zip">Hotfix2 für AEM Service Pack 6.5.23.0 unter Windows für Weblogic JEE-Server</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-weblogic.tar.gz">Hotfix2 für AEM Service Pack 6.5.23.0 unter Linux für Weblogic JEE-Server</a></li>
     <li><strong>Websphere:</strong></li>
-    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-websphere.zip">Hotfix2 für AEM Service Pack 6.5.23.0 unter Windows für Websphere JEE Server</a></li>
-    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-websphere.zip">Hotfix2 für AEM Service Pack 6.5.23.0 unter Linux für Websphere JEE Server</a></li>
+    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-websphere.zip">Hotfix2 für AEM Service Pack 6.5.23.0 unter Windows für Websphere JEE-Server</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-websphere.zip">Hotfix2 für AEM Service Pack 6.5.23.0 unter Linux für Websphere JEE-Server</a></li>
     </ul>
     </td>
     <td>
     <ul>
-    <li>Verbesserte Sicherheit durch Behebung einer RCE-Schwachstelle in Adobe Experience Manager (AEM) Forms. Das Problem stand im Zusammenhang mit dem Struts-Entwicklungsmodus in der Admin-Benutzeroberfläche (UI), der die Evaluierung der beliebigen Object-Graph Navigation Language (OGNL) durch die Debugging-Funktion ermöglichte. Durch diese Fehlerbehebung wird sichergestellt, dass der Struts-Entwicklungsmodus deaktiviert ist und geeignete Sicherheitsfilter angewendet werden, um einen nicht autorisierten Zugriff zu verhindern.</li>
-    <li>Verbesserter Schutz vor Sicherheitslücken in Extensible Markup Language (XML) External Entity (XXE) im Modul der elektronischen Dokumentkomponente (EDC) von Adobe Experience Manager (AEM) Forms. Die Sicherheitslücken waren auf eine fehlerhafte Verarbeitung von XML-Dokumenten ohne XDM-Schutz zurückzuführen, was zu lokalen Dateilesevorgängen führen konnte. Die Fehlerbehebung umfasst:
+    <li>Verbesserte Sicherheit durch Behebung einer Schwachstelle bei der Ausführung von Remote-Code (RCE) in Adobe Experience Manager (AEM) Forms. Das Problem stand im Zusammenhang mit dem Struts-Entwicklungsmodus in der Admin-Benutzeroberfläche (UI), der eine beliebige Auswertung der Object-Graph Navigation Language (OGNL) durch die Debugging-Funktion ermöglichte. Durch diese Fehlerbehebung wird sichergestellt, dass der Struts-Entwicklungsmodus deaktiviert ist und geeignete Sicherheitsfilter angewendet werden, um einen nicht autorisierten Zugriff zu verhindern.</li>
+    <li>Verbesserter Schutz vor Sicherheitslücken in Extensible Markup Language (XML) External Entity (XXE) im Modul der elektronischen Dokumentkomponente (EDC) von Adobe Experience Manager (AEM) Forms. Die Sicherheitslücken waren auf eine unsichere Verarbeitung von XML-Dokumenten ohne XXE-Schutz zurückzuführen, was das Auslesen lokaler Dateien ermöglichen konnte. Die Korrektur umfasst Folgendes:
       <ul>
-        <li>Sicherstellen, dass die in der SecurityCheckHandler-Klasse verwendete DocumentBuilderFactory konfiguriert ist, um XDE-Angriffe zu verhindern.</li>
-        <li>Der EDC-Webservice wird aktualisiert, um XML-Dokumente sicher zu verarbeiten und nicht autorisierten Zugriff auf lokale Dateien zu verhindern.</li>
+        <li>Sie stellt sicher, dass die in der SecurityCheckHandler-Klasse verwendete DocumentBuilderFactory so konfiguriert ist, dass sie XXE-Angriffe verhindert.</li>
+        <li>Der EDC-Webservice wird aktualisiert, um XML-Dokumente sicher zu verarbeiten und einen nicht autorisierten Zugriff auf lokale Dateien zu verhindern.</li>
       </ul>
     </li>
     </ul>
@@ -66,31 +66,32 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
   <tr>
     <td>
       <strong>5. August 2025</strong><br>
-      <em>Gilt für:</em> AEM 6.5 Forms Service Pack 18 - 22<br>
+      <em>Gilt für:</em> AEM 6.5 Forms Service Pack 18–22<br>
       <em>Setup-Anweisungen:</em>
       <a href="/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md#option-2-for-users-on-65180---65220-manual-hotfix-installation">
-        Manuelle Hotfix-Installation für Service Packs 18-22
+        Manuelle Hotfix-Installation für Service Packs 18–22
       </a>
     </td>
     <td>
     <ul>
-    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-xxe-configuration-hotfix.zip">Patch für AEM 6.5 Forms Service Pack 18 - AEM 6.5 Forms Service Pack 22 </a></li>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-xxe-configuration-hotfix.zip">Patch für AEM 6.5 Forms Service Pack 18 – AEM 6.5 Forms Service Pack 22 </a></li>
     </ul>
     </td>
     <td>
     <ul>
-    <li>Verbesserte Sicherheit durch Behebung einer RCE-Schwachstelle in Adobe Experience Manager (AEM) Forms. Das Problem stand im Zusammenhang mit dem Struts-Entwicklungsmodus in der Admin-Benutzeroberfläche (UI), der die Evaluierung der beliebigen Object-Graph Navigation Language (OGNL) durch die Debugging-Funktion ermöglichte. Durch diese Fehlerbehebung wird sichergestellt, dass der Struts-Entwicklungsmodus deaktiviert ist und geeignete Sicherheitsfilter angewendet werden, um einen nicht autorisierten Zugriff zu verhindern.</li>
-    <li>Verbesserter Schutz vor Sicherheitslücken im Document Security-Modul von Adobe Experience Manager (AEM) Forms in Extensible Markup Language (XML) External Entity (XE). Die Sicherheitslücken waren auf eine fehlerhafte Verarbeitung von XML-Dokumenten ohne XDM-Schutz zurückzuführen, was zu lokalen Dateilesevorgängen führen konnte. Die Fehlerbehebung umfasst:
+    <li>Verbesserte Sicherheit durch Behebung einer Schwachstelle bei der Ausführung von Remote-Code (RCE) in Adobe Experience Manager (AEM) Forms. Das Problem stand im Zusammenhang mit dem Struts-Entwicklungsmodus in der Admin-Benutzeroberfläche (UI), der eine beliebige Auswertung der Object-Graph Navigation Language (OGNL) durch die Debugging-Funktion ermöglichte. Durch diese Fehlerbehebung wird sichergestellt, dass der Struts-Entwicklungsmodus deaktiviert ist und geeignete Sicherheitsfilter angewendet werden, um einen nicht autorisierten Zugriff zu verhindern.</li>
+    <li>Verbesserter Schutz vor Schwachstellen durch XML External Entity (XXE) im Document-Security-Modul von Adobe Experience Manager (AEM) Forms.
+Die Sicherheitslücken waren auf eine unsichere Verarbeitung von XML-Dokumenten ohne XXE-Schutz zurückzuführen, was das Auslesen lokaler Dateien ermöglichen konnte. Die Korrektur umfasst Folgendes:
       <ul>
-        <li>Sicherstellen, dass die in der SecurityCheckHandler-Klasse verwendete DocumentBuilderFactory konfiguriert ist, um XDE-Angriffe zu verhindern.</li>
-        <li>Der Document Security-Webservice wird aktualisiert, um XML-Dokumente sicher zu verarbeiten und nicht autorisierten Zugriff auf lokale Dateien zu verhindern.</li>
+        <li>Sie stellt sicher, dass die in der SecurityCheckHandler-Klasse verwendete DocumentBuilderFactory so konfiguriert ist, dass sie XXE-Angriffe verhindert.</li>
+        <li>Der Document Security-Webservice wird aktualisiert, um XML-Dokumente sicher zu verarbeiten und einen nicht autorisierten Zugriff auf lokale Dateien zu verhindern.</li>
       </ul>
     </li>
     </ul>
     </td>    
   </tr>
   <tr>
-    <td>10. Juli 2025-</td>
+    <td>10. Juli 2025</td>
     <td>
     <ul>
     <li><strong>JBoss:</strong></li>
