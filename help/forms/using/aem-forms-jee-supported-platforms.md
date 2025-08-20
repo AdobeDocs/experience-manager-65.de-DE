@@ -12,7 +12,7 @@ feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 source-git-commit: 1d16a131bd185145d9ad55d88749535d7a2dd84a
 workflow-type: tm+mt
 source-wordcount: '4039'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -49,9 +49,9 @@ In diesem Dokument werden die unterstützten Client- und Server-Plattformen für
 
 #### Service Packs
 
-- **Service Pack-Abdeckung**: Adobe bietet technischen Support für AEM Forms-Umgebungen, auf denen alle Service Packs ausgeführt werden, die in den letzten 18 Monaten veröffentlicht wurden. Wenn Ihre aktuelle Version dieses 18-monatige Zeitfenster überschreitet, empfiehlt Adobe dringend ein Upgrade auf das neueste Service Pack, um eine optimale Leistung, Sicherheit und kontinuierlichen Support zu gewährleisten.
+- **Service Pack-Abdeckung**: Adobe bietet technischen Support für AEM Forms-Umgebungen, auf denen alle Service Packs ausgeführt werden, die in den letzten 18 Monaten veröffentlicht wurden. Wenn Ihre aktuelle Version dieses 18-monatige Zeitfenster überschreitet, empfiehlt Adobe dringend ein Upgrade auf das neueste Service Pack, um optimale Leistung, Sicherheit und kontinuierlichen Support zu gewährleisten.
 
-- **Richtlinien für Patch-Installationsprogramme**: Während die Patch-Installationsprogramme zur Aktualisierung verwendet werden, ist es wichtig zu überprüfen, ob die zugrunde liegende Version des vollständigen Installationsprogramms nicht um mehr als zwei Versionen zurückliegt. Stellen Sie beispielsweise während der Installation von Service Pack 6.5.19.0 sicher, dass die zugrunde liegende Version des vollständigen Installationsprogramms 6.5.18.0 oder 6.5.12.0 ist.
+- **Richtlinien für Patch-Installationsprogramme**: Während der Verwendung der Patch-Installationsprogramme zur Aktualisierung ist es wichtig zu überprüfen, ob die zugrunde liegende Version des vollständigen Installationsprogramms nicht um mehr als zwei Versionen zurückliegt. Stellen Sie beispielsweise während der Installation von Service Pack 6.5.19.0 sicher, dass die zugrunde liegende Version des vollständigen Installationsprogramms 6.5.18.0 oder 6.5.12.0 ist.
 
 - **Patch-Upgrade-Support**: Sie können weiterhin auf das neueste Service Pack aktualisieren, bis Sie auch auf die neuesten unterstützten Plattformen aktualisieren. Beispielsweise ist ein Upgrade von Service Pack 6.5.12.0 auf 6.5.19.0 möglich, sofern Sie zu einer Plattformkombination wechseln, die für 6.5.19.0 unterstützt wird.
 
@@ -463,8 +463,8 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
    <th><p><strong>Unterstützte Formate für die Konvertierung ins PDF-Format </strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> neueste Version</td>
-   <td>XPS, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML und HTM</td>
+   <td><a href="https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> – neueste Version</td>
+   <td>XPS, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF und DWF</td>
   </tr>
 
 <tr>
@@ -485,13 +485,13 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
 >[!NOTE]
 >
 > - PDF Generator unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
-> - Für PDF Generator ist Adobe Acrobat Pro DC (32 Bit) für die Konvertierung erforderlich.
+> - PDF Generator erfordert für die Konvertierung Adobe Acrobat Pro DC (32 Bit).
 > - PDF Generator unterstützt nur die 32-Bit-Version von Microsoft® Office Professional Plus und anderer für die Konvertierung erforderliche Software.
 > - Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder unlizenziert wird, z. B. weil eine Installation mit Volumenlizenz einen KMS-Host nicht innerhalb eines bestimmten Zeitraums finden kann, können Konvertierungen fehlschlagen, bis die Installation neu lizenziert und reaktiviert wird.
 > - PDF Generator unterstützt nicht Microsoft® Office 365.
 > - PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt®.
 > - Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
-> - Eine Version von Acrobat ist im Lieferumfang von AEM Forms enthalten, um die PDF Generator-Funktionalität zu aktivieren. Auf die gebündelte Version sollte während der Laufzeit der AEM Forms-Lizenz nur programmgesteuert mit AEM Forms zugegriffen werden, nur zur Verwendung mit AEM Forms PDF Generator. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
+> - Eine Version von Acrobat ist im Lieferumfang von AEM Forms enthalten, um die PDF Generator-Funktionalität zu aktivieren. Die gebündelte Version sollte während der Laufzeit der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur programmatisch mit AEM Forms zugänglich sein. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 > - Der PDF Generator-Service unterstützt nicht Microsoft® Windows 11.
 
 
@@ -748,7 +748,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -831,7 +831,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
