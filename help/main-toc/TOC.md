@@ -7,9 +7,9 @@ user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Mana
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
 source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7541'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1212,7 +1212,7 @@ ht-degree: 99%
       + [Beheben von Spring Framework-Schwachstellen für AEM Forms on JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
       + [Behebung von Log4j2-Schwachstellen für Experience Manager Forms](/help/forms/using/aem-forms-vulnerability-cve.md)
       + [Behebung der Schwachstelle für die Remote-Code-Ausführung für AEM Forms on JEE](/help/forms/using/aem-forms-rce-vulnerability-mitigation-troubleshooting.md)
-      + [Beheben von Schwachstellen bei XE, Konfiguration und Remote-Code-Ausführung für AEM Forms on JEE](/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md)
+      + [Behebung der Schwachstellen bei der XXE-, Konfigurations- und Remote-Code-Ausführung für AEM Forms auf JEE](/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md)
       + [Anzeigen von Problemen für XFA-basierte PDF-Formulare und richtliniengeschützte Dokumente](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
       + [Öffnen von XFA-basierten PDF-Formularen in Firefox und Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
       + [Schwachstelle von XML External Entity (XXE) in BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)
