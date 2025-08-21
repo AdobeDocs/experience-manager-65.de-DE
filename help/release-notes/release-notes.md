@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 3f64cfa688ef1f0090b7ce0d821324593cbea693
+source-git-commit: 00161ecf48725b774c14ff6c89bd2817e00dc9f3
 workflow-type: tm+mt
-source-wordcount: '6707'
+source-wordcount: '6710'
 ht-degree: 99%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 99%
 
 Einige wichtige Funktionen und Verbesserungen, die in dieser Version enthalten sind:
 
-* [Barrierefreie Hyperlinks mit verschiedenen Textstilen in statischen PDFs](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/using-designer.pdf): Hyperlinks, die verschiedene Textstile in statischen PDFs enthalten, werden jetzt als einzelnes, barrierefreies Element getaggt. Diese Verbesserung vereinfacht die Tag-Baumstruktur sowie die Navigation der Bildschirmlesehilfe und unterstützt eine bessere Einhaltung von Vorgaben zur Barrierefreiheit.
+* [Barrierefreie Hyperlinks mit verschiedenen Textstilen in statischen PDFs](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): Hyperlinks, die verschiedene Textstile in statischen PDFs enthalten, werden jetzt als einzelnes, barrierefreies Element getaggt. Diese Verbesserung vereinfacht die Tag-Baumstruktur sowie die Navigation der Bildschirmlesehilfe und unterstützt eine bessere Einhaltung von Vorgaben zur Barrierefreiheit.
 
 * [Aktualisierte unterstützte Plattform-Matrix](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
@@ -75,7 +75,8 @@ Einige wichtige Funktionen und Verbesserungen, die in dieser Version enthalten s
 
 * FORMS-20533, FORMS-20532: AEM Forms enthält jetzt ein Upgrade der Struts-Version von 2.5.33 auf 6.x. Die Unterstützung wurde über einen [Hotfix](/help/release-notes/aem-forms-hotfix.md) hinzugefügt. Diesen können Sie [herunterladen und installieren](/help/release-notes/aem-forms-hotfix.md), um Unterstützung für die neueste Version von Struts hinzuzufügen.
 
-* **LC-3922769**: Für das ordnungsgemäße Funktionieren bestimmter AEM Forms-Funktionen ist jetzt OpenSSL 3 erforderlich. Auf dem System muss OpenSSL 3 mit den Bibliotheken `libcrypto.so.3` und `libssl.so.3` installiert sein. Da Sicherheitsaktualisierungen nur in Versionen mit OpenSSL 3.0.14 verfügbar sind und die SafeLogic-Unterstützung im Februar 2025 endet, haben wir bsafe entfernt und verwenden jetzt OpenSSL 3 für die Einhaltung von Sicherheitsvorschriften. Informationen zur Plattformkompatibilität und detaillierte Anforderungen finden Sie unter [Unterstützte Plattformen für AEM Forms on JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) und [Technische Anforderungen](/help/sites-deploying/technical-requirements.md).
+* **LC-3922769**: Für das ordnungsgemäße Funktionieren bestimmter AEM Forms-Funktionen ist jetzt OpenSSL 3 erforderlich. Auf dem System muss OpenSSL 3 zusammen mit den Bibliotheken `libcrypto.so.3` und `libssl.so.3` installiert sein. Da Sicherheits-Updates nur in Version 3.0.14 und höher verfügbar sind und die SafeLogic-Unterstützung im Februar 2025 endet, wurde BSAFE entfernt und OpenSSL 3 wird nun für die Einhaltung von Sicherheitsvorschriften verwendet.  Informationen zur Plattformkompatibilität und detaillierte Anforderungen finden Sie unter [Unterstützte Plattformen für AEM Forms on JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) und [Technische Anforderungen](/help/sites-deploying/technical-requirements.md).
+
 
   **So überprüfen Sie die OpenSSL 3-Installation:**
 
@@ -229,11 +230,11 @@ Korrigieren von unerwarteten `<br>`-Tags im Rich-Text-Editor mit dem Einfügemod
 
 ### [!DNL Assets]{#assets-6523}
 
-* Die folgenden Probleme treten auf der [!DNL AEM] On-Premise-Navigationsseite (6.5.22.0) auf, nachdem Sie ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**&#x200B;ausgewählt haben, zum Ordner&#x200B;**[!UICONTROL &#x200B; Adobe Stock durchsuchen &#x200B;]**&#x200B;navigiert sind und ein Stockbild ausgewählt haben:
+* Die folgenden Probleme treten auf der [!DNL AEM] On-Premise-Navigationsseite (6.5.22.0) auf, nachdem Sie ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets ]**ausgewählt haben, zum Ordner**[!UICONTROL  Adobe Stock durchsuchen ]**navigiert sind und ein Stockbild ausgewählt haben:
    * Das ausgewählte Stockbild kann nicht lizenziert und gespeichert werden, da durch Klicken auf **[!UICONTROL Lizenzieren und speichern]** eine leere Dropdown-Liste angezeigt wird.
    * Wenn Sie das Stockbild auswählen oder die URL der Stock-Seite erneut eingeben, werden Sie zur [!DNL AEM]-Startseite weitergeleitet, wodurch der Zugriff auf das Adobe Stockbild verhindert wird. (ASSETS-48687)
 * Probleme beim Verwalten von Ordnern, wenn der Name des Ordners einen `/` auf der Navigationsseite von [!DNL AEM] On Premise (6.5.22.0) enthält. (ASSETS-46740)
-* In [!DNL AEM] 6.5 wird die Seite mit Asset-Details aufgrund einer hohen Speicherauslastung nicht über die Ansicht ![Sammlung](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Sammlungen &#x200B;]**&#x200B;geladen. (ASSETS-46738)
+* In [!DNL AEM] 6.5 wird die Seite mit Asset-Details aufgrund einer hohen Speicherauslastung nicht über die Ansicht ![Sammlung](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Sammlungen ]**geladen. (ASSETS-46738)
 * Integrationsprobleme mit [!DNL InDesign], da der Dienst `Day CQ DAM Mime Type OSGI` [!DNL InDesign]-Dateien fälschlicherweise als `x-adobe-indesign` statt als `x-indesign` identifiziert. (ASSETS-45953)
 * Das Sitzungsleck in [!DNL AEM 6.5.21] wurde auf den vorkonfigurierten Workflow-Schritt **[!UICONTROL Geplante Veröffentlichung in Brand Portal]** zurückverfolgt. (ASSETS-44104)
 * Fehler vom Typ **[!UICONTROL Unzureichender Arbeitsspeicher (OOM)]** werden bei der Verarbeitung und Veröffentlichung von Bildern in [!DNL AEM] angezeigt. Dieses Problem ist auf veraltete Methoden in Workflows zurückzuführen, z. B. **[!DNL Dam Asset update]** und **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
