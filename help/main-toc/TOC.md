@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
-workflow-type: ht
-source-wordcount: '7541'
-ht-degree: 100%
+source-git-commit: a3284ca1e51eb92d04e86129bc5dd24c6fc03d8a
+workflow-type: tm+mt
+source-wordcount: '7556'
+ht-degree: 99%
 
 ---
 
@@ -535,7 +535,7 @@ ht-degree: 100%
          + [Referenzieren Sie adaptive Formularfragmente](/help/forms/using/reference-adaptive-form-fragments.md)
          + [Referenzthemen](/help/forms/using/reference-themes.md)
          + [Vorlagen für Empfehlungsschreiben](/help/forms/using/reference-cm-layout-templates.md)
-         + [Konfigurieren von Microsoft Dynamics 365 für den Hypotheken-Arbeitsablauf der We.Finance-Referenzwebsite](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)
+         + [Konfigurieren von Microsoft Dynamics 365 für den Hypotheken-Workflow der We.Finance-Referenzwebsite](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)
    + Installieren und Konfigurieren von AEM Forms {#install-aem-forms}
       + [Architektur und Bereitstellungstopologien für AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
       + [Wählen eines Persistenztyps für eine AEM Forms-Installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md)
@@ -698,7 +698,7 @@ ht-degree: 100%
       + [Formularzentrierte Workflows in OSGi - Schritt-Referenz](/help/forms/using/aem-forms-workflow-step-reference.md)
       + [Dynamische Auswahl eines Benutzers order einer Gruppe für AEM Forms-zentrierte Workflow-Schritte](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md)
       + [Aktionen und Funktionen formularorientierter AEM-Workflows in OSGi- und AEM Forms JEE-Workflows](/help/forms/using/capabilities-osgi-jee-workflows.md)
-      + [Starten Sie Document Services-APIs aus dem AEM-Arbeitsablauf](/help/forms/using/initiating-document-services-apis-aem.md)
+      + [Starten Sie Document Services-APIs aus dem AEM-Workflow](/help/forms/using/initiating-document-services-apis-aem.md)
       + [Protokollierung in AEM Forms-Workflows](/help/forms/using/forms-workflow-logs.md)
       + [Variablen in AEM-Workflows](/help/forms/using/variable-in-aem-workflows.md)
       + [Freigeben und Anfordern des Zugriffs auf Posteingangselemente eines Benutzers](/help/forms/using/configure-shared-queues-osgi.md)
@@ -1027,11 +1027,11 @@ ht-degree: 100%
          + [Einzubettende Schriften angeben](/help/forms/using/admin-help/specify-fonts-embed.md)
          + [Sicherheitseinstellungen angeben](/help/forms/using/admin-help/specify-security-settings.md)
          + [Den Zeichensatz ändern](/help/forms/using/admin-help/change-character-set.md)
-      + Konfigurieren des Arbeitsablaufs für Formulare{#configure-forms-workflow}
+      + Konfigurieren des Workflows für Formulare{#configure-forms-workflow}
          + [Informationen zur Administrations- und Prozessterminologie](/help/forms/using/admin-help/administration-process-terminology.md)
          + [Prozesse verwalten](/help/forms/using/admin-help/processes.md)
          + [Konfigurieren von Geschäftskalendern](/help/forms/using/admin-help/configuring-business-calendars.md)
-         + [Überblick über den Arbeitsablauf für Formulare](/help/forms/using/admin-help/overview-9.md)
+         + [Überblick über den Workflow für Formulare](/help/forms/using/admin-help/overview-9.md)
          + [Konfigurieren von Abwesenheitseinstellungen](/help/forms/using/admin-help/configuring-out-office-settings.md)
          + [Nach Prozessinstanzen suchen](/help/forms/using/admin-help/searching-process-instances.md)
          + [Servereinstellungen konfigurieren](/help/forms/using/admin-help/configuring-server-settings.md)
@@ -1049,7 +1049,7 @@ ht-degree: 100%
          + [Leistung von Systemüberwachung optimieren](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md)
          + [Statistiken mit Bezug auf Work Manager anzeigen](/help/forms/using/admin-help/view-statistics-related-manager.md)
          + [Systeminformationen anzeigen](/help/forms/using/admin-help/view-system-information.md)
-         + [Job Manager-Datenbank um Aufzeichnungen bereinigen](/help/forms/using/admin-help/purge-records-job-manager-database.md)
+         + [Bereinigen von Einträgen aus der Job Manager-Datenbank](/help/forms/using/admin-help/purge-records-job-manager-database.md)
       + Warten von AEM Forms {#maintain-aem-forms}
          + [Protokolldateien](/help/forms/using/admin-help/log-files.md)
          + [User Management](/help/forms/using/admin-help/user-management.md)
@@ -1307,6 +1307,9 @@ ht-degree: 100%
       + [Inhalte übersetzen](/help/journey-headless/translation/translate-content.md)
       + [Veröffentlichen übersetzter Inhalte](/help/journey-headless/translation/publish-content.md)
    + [Was ist eine Dokumentations-Tour?](/help/journey-documentation/home.md)
++ KI-Assistent in AEM 6.5 {#ai-assistant}
+   + [Konfigurieren des KI-Assistenten in AEM](/help/ai-assistant-in-aem-admin.md)
+   + [Über den KI-Assistenten in AEM](/help/ai-assistant-in-aem.md)
 + Implementieren {#implementing}
    + Entwicklung {#developing}
       + Einführung für Entwicklerinnen und Entwickler {#introduction}
