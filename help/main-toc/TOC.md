@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: a3284ca1e51eb92d04e86129bc5dd24c6fc03d8a
+source-git-commit: b120160d9368546ec7cec748a3efde497c7e40e1
 workflow-type: tm+mt
 source-wordcount: '7556'
 ht-degree: 99%
@@ -1307,7 +1307,7 @@ ht-degree: 99%
       + [Inhalte übersetzen](/help/journey-headless/translation/translate-content.md)
       + [Veröffentlichen übersetzter Inhalte](/help/journey-headless/translation/publish-content.md)
    + [Was ist eine Dokumentations-Tour?](/help/journey-documentation/home.md)
-+ KI-Assistent in AEM 6.5 {#ai-assistant}
++ KI-Assistent in AEM 6.5{#ai-assistant}
    + [Konfigurieren des KI-Assistenten in AEM](/help/ai-assistant-in-aem-admin.md)
    + [Über den KI-Assistenten in AEM](/help/ai-assistant-in-aem.md)
 + Implementieren {#implementing}
