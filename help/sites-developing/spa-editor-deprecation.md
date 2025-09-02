@@ -5,9 +5,9 @@ feature: Developing
 role: Admin, Architect, Developer
 exl-id: ea6e46ee-4a90-4236-8d93-292a4dda4dc0
 source-git-commit: d619c969604119a8686050fdc34d77c0ffee33cf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '910'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Der SPA-Editor von Adobe wird zwar weiterhin unterstützt, aber nachstehend erfa
 
 ## Zusammenfassung {#summary}
 
-Adobe hat den SPA-Editor mit [Version 6.5.23 von AEM 6.5 veraltet, was ](/help/release-notes/release-notes.md#spa-editor) bedeutet, dass keine weiteren Verbesserungen oder Aktualisierungen an seinen SDKs vorgenommen werden. Adobe empfiehlt Ihnen, den [universellen Editor](/help/sites-developing/universal-editor/introduction.md) für alle neuen Headless-Projekte zu verwenden, um die neuesten Innovationen von AEM zu nutzen.
+Adobe hat den SPA-Editor mit der [Version 6.5.23 von AEM 6.5](/help/release-notes/release-notes.md#spa-editor) eingestellt. Das bedeutet, dass an den entsprechenden SDKs keine weiteren Verbesserungen oder Aktualisierungen mehr vorgenommen werden. Adobe empfiehlt Ihnen den [universellen Editor](/help/sites-developing/universal-editor/introduction.md) für alle neuen Projekte, damit Sie die neuesten Innovationen von AEM nutzen können.
 
 ## Details zur Abschaffung {#details}
 
@@ -51,7 +51,7 @@ Welcher Ersatz für den SPA-Editor am besten geeignet ist, hängt von Ihren Proj
 
 * Der **[universelle Editor](/help/sites-developing/universal-editor/introduction.md)** ist der beste direkte Ersatz für den SPA-Editor.
    * Der universelle Editor ist ebenfalls ein visueller Editor und wurde speziell für entkoppelte Implementierungen entwickelt, und dies unter Berücksichtigung der gesamten Erfahrung von Adobe mit dem SPA-Editor.
-   * Der universelle Editor wurde ebenfalls [für AEM as a Cloud Service](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) veröffentlicht und unterstützt daher neben Cloud Services auch AMS- und On-Premise-Anwendungsfälle.
+   * Der universelle Editor wurde ebenfalls [für AEM als Cloud-Service veröffentlicht](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) und unterstützt daher neben Cloud-Services auch AMS- und lokale Anwendungsfälle.
 * Der **[Inhaltsfragmenteditor](/help/sites-developing/universal-editor/introduction.md)** ist eine Alternative für alle, die einen formularbasierten Editor bevorzugen.
    * Der Inhaltsfragmenteditor eignet sich am besten, wenn Ihre Inhalte als Inhaltsfragmente und nicht als Seiten strukturiert sind.
 

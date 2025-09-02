@@ -1,8 +1,8 @@
 ---
 source-git-commit: bd29ae46ead836e16362ad3a9a63bb31548415ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '109'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 # Snippets {#snippets}
@@ -11,12 +11,12 @@ ht-degree: 60%
 
 >[!IMPORTANT]
 >
->Der SPA-Editor [wird für neue Projekte nicht mehr unterstützt.](/help/sites-developing/spa-editor-deprecation.md) Es wird von Adobe für bestehende Projekte unterstützt, sollte jedoch nicht für neue Projekte verwendet werden. Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind nun:
+>Der SPA-Editor [wird für neue Projekte nicht mehr unterstützt.](/help/sites-developing/spa-editor-deprecation.md) Er wird von Adobe zwar weiterhin für bestehende Projekte unterstützt, sollte jedoch nicht für neue Projekte verwendet werden. Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind nun:
 >
 >* der [universelle Editor](/help/sites-developing/universal-editor/introduction.md) zum visuellen Bearbeiten von Headless-Inhalten.
 >* der [Inhaltsfragmenteditor](/help/sites-developing/universal-editor/introduction.md) zur formularbasierten Bearbeitung von Headless-Inhalten
 
-## Universeller Editor wird gegenüber Mobile bevorzugt {#ue-over-mobile}
+## Universeller Editor gegenüber Mobile bevorzugt {#ue-over-mobile}
 
 >[!IMPORTANT]
 >
