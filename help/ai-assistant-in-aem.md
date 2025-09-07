@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
-source-git-commit: c98a66a4b4be23145334b339a793ded1716e9889
+source-git-commit: 2e4293b68db12936068c434cda591be7a7de0f11
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1278'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Es ist direkt in AEM eingebettet und kann über die AEM Experience Hub-, Cloud M
 
 Das folgende 3-minütige 39-Sekunden-Video bietet eine schrittweise Anleitung zum KI-Assistenten in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470364?learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## Zugriff auf den KI-Assistenten in AEM{#get-access}
 
@@ -54,11 +54,11 @@ KI-Assistentenanfragen in AEM werden über Adobe Identity Management Services (I
 
     The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
 
-1. Der AEM-Administrator konfiguriert den KI-Assistenten für die Verwendung in der Organisation. Siehe [Konfigurieren des KI-Assistenten in AEM](/help/ai-assistant-in-aem-admin.md).
+1. AEM Admin konfiguriert den KI-Assistenten für die Verwendung in der Organisation. Siehe [Konfigurieren des KI-Assistenten in AEM](/help/ai-assistant-in-aem-admin.md).
 
 <!--
 >[!IMPORTANT]
->Be sure you have reviewed and submitted the user agreement so Adobe can enable the AI Assistant feature for you to test out and participate in the private beta program.
+>Be sure you have reviewed and submitted the user agreement so Adobe can enable AI Assistant feature for you to test out and participate in the private beta program.
 >
 >For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. -->
 
@@ -72,9 +72,9 @@ Der aktuelle Umfang des KI-Assistenten in AEM konzentriert sich auf Fragen zum P
 
 ## Datenschutz, Sicherheit und Governance{#privacy-security-governance}
 
-Der KI-Assistent in AEM ist so konzipiert, dass ein besonderer Schwerpunkt auf Datenschutz, Sicherheit und Governance gelegt wird.
+Der KI-Assistent in AEM ist so konzipiert, dass er großen Wert auf Datenschutz, Sicherheit und Governance legt.
 
-In diesem Artikel werden die vertrauensorientierten Funktionen beschrieben, die Sie vom KI-Assistenten in AEM erwarten können:
+In diesem Artikel werden die Funktionen beschrieben, die Sie vom KI-Assistenten in AEM erwarten können, um Vertrauen zu schaffen:
 
 * KI Assistant verwendet in AEM keine personenbezogenen Daten, auch nicht für Trainingszwecke.
 * Der KI-Assistent in AEM hat keinen Zugriff auf Verbraucherdaten.
@@ -93,7 +93,7 @@ Das Produktwissen umfasst Konzepte und Themen, die aus der Dokumentation zu Adob
 | Punktuelles Lernen | <ul><li>Was ist der universelle Editor?</li><li>Wie erstelle ich ein Programm in Cloud Manager?</li></ul> |
 | Erkennung öffnen | <ul><li>Wie verwende ich den universellen Editor?</li><li>Gibt es eine Möglichkeit, Inhalte von einer Umgebung in eine andere zu kopieren?</li></ul> |
 | Fehlerbehebung | <ul><li>Warum kann ich nicht auf den universellen Editor zugreifen?</li><li>Warum schlägt meine Pipeline fehl?</li></ul> |
-| **Support-Ticket-Erstellung** | **Nur für Support-Administratoren verfügbar &#x200B;**<br>**Beispiele** |
+| **Support-Ticket-Erstellung** | **Nur für Support-Administratoren verfügbar **<br>**Beispiele** |
 | Automatisierte Erstellung von Support-Tickets zur Erfassung des Verlaufs und Kontexts des KI-Assistenten | <ul><li>Erstellen Sie ein Support-Ticket für mich.</li></ul> |
 | Abrufen des Status des Support-Tickets | <ul><li>Zeigen Sie mir alle Support-Tickets, die ich geöffnet habe.</li><li>Status des Tickets „E“ -----------</li></ul> |
 
@@ -123,7 +123,7 @@ In Ihrer Eingabeaufforderung ist es beispielsweise hilfreich, die AEM-Lösung, i
 <!-- UNHIDE AFTER BETA or at GA
 ### Enable AI Assistant in AEM access through Admin Console 
 
-To use the AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
+To use AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
 
 ![AI Assistant in AEM in the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
 
@@ -131,9 +131,9 @@ From an employee's perspective, the process is straightforward: identify the pro
 
 Administrators should keep normal Cloud Manager governance in mind. Hold product administrator rights in the Admin Console to create profiles, manage user groups, or edit permissions. If users also need the Assistant's built-in **Create Support Ticket** feature, add the standard **Support Admin** role (standard Admin Console role) to the same individuals or group.
 
-![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
+![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
