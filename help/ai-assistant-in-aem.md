@@ -1,6 +1,6 @@
 ---
 title: KI-Assistent in AEM 6.5
-description: Verwenden Sie den KI-Assistenten, um Antworten auf die in Adobe Experience Manager verfügbaren Lösungen zu finden und Fehler zu beheben.
+description: Verwenden Sie den KI-Assistenten, um Antworten zu finden und Probleme mithilfe der in Adobe Experience Manager verfügbaren Lösungen zu beheben.
 solution: Experience Manager, Experience Manager 6.5
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -8,7 +8,7 @@ exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
 source-git-commit: 2e4293b68db12936068c434cda591be7a7de0f11
 workflow-type: tm+mt
 source-wordcount: '1278'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -35,7 +35,7 @@ Es ist direkt in AEM eingebettet und kann über die AEM Experience Hub-, Cloud M
 
 Das folgende 3-minütige 39-Sekunden-Video bietet eine schrittweise Anleitung zum KI-Assistenten in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470364?learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## Zugriff auf den KI-Assistenten in AEM{#get-access}
 
@@ -93,7 +93,7 @@ Das Produktwissen umfasst Konzepte und Themen, die aus der Dokumentation zu Adob
 | Punktuelles Lernen | <ul><li>Was ist der universelle Editor?</li><li>Wie erstelle ich ein Programm in Cloud Manager?</li></ul> |
 | Erkennung öffnen | <ul><li>Wie verwende ich den universellen Editor?</li><li>Gibt es eine Möglichkeit, Inhalte von einer Umgebung in eine andere zu kopieren?</li></ul> |
 | Fehlerbehebung | <ul><li>Warum kann ich nicht auf den universellen Editor zugreifen?</li><li>Warum schlägt meine Pipeline fehl?</li></ul> |
-| **Support-Ticket-Erstellung** | **Nur für Support-Administratoren verfügbar &#x200B;**<br>**Beispiele** |
+| **Support-Ticket-Erstellung** | **Nur für Support-Administratoren verfügbar **<br>**Beispiele** |
 | Automatisierte Erstellung von Support-Tickets zur Erfassung des Verlaufs und Kontexts des KI-Assistenten | <ul><li>Erstellen Sie ein Support-Ticket für mich.</li></ul> |
 | Abrufen des Status des Support-Tickets | <ul><li>Zeigen Sie mir alle Support-Tickets, die ich geöffnet habe.</li><li>Status des Tickets „E“ -----------</li></ul> |
 
@@ -133,7 +133,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
