@@ -7,9 +7,9 @@ user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Mana
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
 source-git-commit: fe1d00d1a3587cc768abeba6f995969c35203bad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7561'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 99%
    + [Einstellung der JWT-Anmeldedaten in Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [Einrichten von IMS-Integrationen für AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Experience Hub {#experience-hub}
-   + [Über Experience Hub](/help/experience-hub.md)
+   + [Informationen zu Experience Hub](/help/experience-hub.md)
 + Sites {#sites}
    + Authoring {#authoring}
       + Wesentliche Aufgaben, Tools und Konzepte für die Inhaltserstellung (Authoring) in AEM {#essentials}
@@ -1100,7 +1100,7 @@ ht-degree: 99%
       + [AEM Forms on JEE Java API-Referenz](https://helpx.adobe.com/de/experience-manager/6-5/forms/programlc/javadoc/index.html)
       + [Form Bridge APIs für HTML5-Formulare](/help/forms/using/form-bridge-apis.md)
       + [Referenz für JavaScript-Bibliotheks-API für adaptive Formulare](https://helpx.adobe.com/de/experience-manager/6-5/forms/javascript-api/index.html)
-      + [Assembler Service und DDX-Referenz](https://www.adobe.com/go/learn_aemforms_ddxRef_65_de)
+      + [Assembler-Dienst und DDX-Referenz](https://www.adobe.com/go/learn_aemforms_ddxRef_65_de)
       + [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_65_de)
       + Programmieren mit AEM Forms auf JEE {#programming-aem-forms-jee}
          + Einführung in das Programmieren mit AEM Forms auf JEE {#introduction-programming-aem-forms-jee}
@@ -1113,7 +1113,7 @@ ht-degree: 99%
          + Java API-Schnellstart – Code-Beispiele {#java-api-quick-start-code-examples}
             + [Application Manager Client JavaAPI Quick Start(SOAP)](/help/forms/developing/application-manager-client-java-api.md)
             + [Java API-Schnellstart (SOAP) für den Application Manager-Dienst](/help/forms/developing/application-manager-service-java-api.md)
-            + [Schnellstart der Assembler-Service Java-API (SOAP)](/help/forms/developing/assembler-service-java-api-quick.md)
+            + [Schnellstart der Assembler-Dienst Java-API (SOAP)](/help/forms/developing/assembler-service-java-api-quick.md)
             + [Java API-Schnellstart (SOAP) für den Acrobat Reader DC-Erweiterungsdienst](/help/forms/developing/acrobat-reader-dc-extensions-service.md)
             + [Sicherungs- und Wiederherstellungs-Service API-Schnellstarts](/help/forms/developing/backup-restore-service-api-quick.md)
             + [Java API-Schnellstart (SOAP) für den Barcode-Formulardienst](/help/forms/developing/barcoded-forms-service-java-api.md)
@@ -1309,9 +1309,9 @@ ht-degree: 99%
       + [Inhalte übersetzen](/help/journey-headless/translation/translate-content.md)
       + [Veröffentlichen übersetzter Inhalte](/help/journey-headless/translation/publish-content.md)
    + [Was ist eine Dokumentations-Tour?](/help/journey-documentation/home.md)
-+ KI-Assistent in AEM 6.5{#ai-assistant}
++ KI-Assistent in AEM 6.5{#ai-assistant}
    + [Konfigurieren des KI-Assistenten in AEM](/help/ai-assistant-in-aem-admin.md)
-   + [Über den KI-Assistenten in AEM](/help/ai-assistant-in-aem.md)
+   + [Informationen zum KI-Assistenten in AEM](/help/ai-assistant-in-aem.md)
 + Implementieren {#implementing}
    + Entwicklung {#developing}
       + Einführung für Entwicklerinnen und Entwickler {#introduction}
