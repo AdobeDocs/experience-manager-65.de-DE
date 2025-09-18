@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: fe1d00d1a3587cc768abeba6f995969c35203bad
-workflow-type: ht
-source-wordcount: '7561'
-ht-degree: 100%
+source-git-commit: ab25ac9701bd138ceb11bb9b11539e950dde02d9
+workflow-type: tm+mt
+source-wordcount: '7562'
+ht-degree: 99%
 
 ---
 
@@ -266,7 +266,7 @@ ht-degree: 100%
          + [Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html?lang=de)
          + [AEM Commerce – Einhaltung der DSGVO](/help/sites-administering/gdpr-compliance-commerce.md)
       + Content-Management {#contentmanagement}
-         + [Package Manager](/help/sites-administering/package-manager.md)
+         + [Paket-Manager](/help/sites-administering/package-manager.md)
          + [Verwalten von Tags](/help/sites-administering/tags.md)
          + [Das Seiten-Export-Tool](/help/sites-administering/page-exporter.md)
          + [Tagging-Konsole der klassischen Benutzeroberfläche](/help/sites-administering/classic-console.md)
@@ -1227,6 +1227,11 @@ ht-degree: 100%
       + [Übergeben von Anmeldeinformationen mithilfe von WS-Security-Kopfzeilen](/help/forms/developing/passing-credentials.md)
    + Glossar {#aem-forms-glossary}
 +[AEM Forms-Glossare](/help/forms/using/aem-forms-glossary.md)
++ KI in AEM {#ai-in-aem}
+   + [Überblick](/help/ai-in-aem/overview.md)
+   + KI-Assistent {#ai-assistant}
+      + [Konfigurieren des KI-Assistenten in AEM](/help/ai-assistant-in-aem-admin.md)
+      + [Info zum KI-Assistenten in AEM](/help/ai-assistant-in-aem.md)
 + Content and Commerce {#commerce}
    + [Einführung und Übersicht](/help/commerce/cif/introduction.md)
    + [Wesentliche Änderungen an AEM Content and Commerce](/help/commerce/cif/changes.md)
@@ -1309,9 +1314,6 @@ ht-degree: 100%
       + [Inhalte übersetzen](/help/journey-headless/translation/translate-content.md)
       + [Veröffentlichen übersetzter Inhalte](/help/journey-headless/translation/publish-content.md)
    + [Was ist eine Dokumentations-Tour?](/help/journey-documentation/home.md)
-+ KI-Assistent in AEM 6.5{#ai-assistant}
-   + [Konfigurieren des KI-Assistenten in AEM](/help/ai-assistant-in-aem-admin.md)
-   + [Informationen zum KI-Assistenten in AEM](/help/ai-assistant-in-aem.md)
 + Implementieren {#implementing}
    + Entwicklung {#developing}
       + Einführung für Entwicklerinnen und Entwickler {#introduction}
