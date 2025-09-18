@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 06824b3d-f912-4922-8fb6-ee2ca04c6326
-source-git-commit: 11be37d5a96dd7236f2011b6df3e39bf0b1904b7
+source-git-commit: 1aa70fc14e41ce4dd76be206723e8a44856e8c09
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 3%
+source-wordcount: '1148'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,11 @@ ht-degree: 3%
 
 <!-- badge: label="Beta" type="Positive" -->
 
-Um den KI-Assistenten in AEM (Adobe Experience Manager) verwenden zu können, muss sich Ihr Unternehmen auf Admin Console-Ebene anmelden. Ein Produktadministrator erstellt (oder wählt) eine Benutzergruppe und gewährt ihr die neue Berechtigung „KI-Assistent“. Jeder, der dieser Gruppe hinzugefügt wird, erhält sofort Zugriff auf den KI-Assistenten in AEM. Wenn das Ziel die unternehmensweite Verfügbarkeit ist, weist der Administrator einfach alle Benutzer dieser Gruppe zu.
+Um den KI-Assistenten in AEM (Adobe Experience Manager) zu verwenden, ist die Berechtigung für den Zugriff auf Produktkenntnisse über den KI-Assistenten obligatorisch. Diese Berechtigung ist standardmäßig aktiviert.
+
+Wenn Sie steuern möchten, wer auf Produktkenntnisse zugreifen kann, senden Sie eine E-Mail an [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse. Adobe kann die Zugriffssteuerung auf Benutzerebene aktivieren. Wenn diese Option aktiviert ist, kann Ihr Administrator Zugriff auf Benutzerebene gewähren, indem er die unten beschriebenen Schritte ausführt.
+
+Wenn Sie die Zugriffskontrolle auf Benutzerebene angefordert haben, muss sich Ihr Unternehmen über die Adobe Admin Console anmelden. Ein Produktadministrator erstellt (oder wählt) eine Benutzergruppe und gewährt ihr die neue Berechtigung „KI-Assistent“. Jeder, der dieser Gruppe hinzugefügt wird, erhält sofort Zugriff auf den KI-Assistenten in AEM. Wenn das Ziel die unternehmensweite Verfügbarkeit ist, weist der Administrator einfach alle Benutzer dieser Gruppe zu.
 
 Aus Mitarbeitersicht ist der Prozess einfach: Bestimmen Sie den Produktadministrator für Adobe Experience Manager in Ihrem Unternehmen und fordern Sie die Hinzufügung zur KI-aktivierten Benutzergruppe an. Sobald Sie in dieser Gruppe angezeigt werden, wird das Assistentensymbol automatisch angezeigt, wenn Sie sich das nächste Mal anmelden.
 
@@ -49,7 +53,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen e
 
 ## &#x200B;1. Erstellen eines neuen Produktprofils in der Adobe Admin Console{#create-profile}
 
-1. Befolgen Sie die detaillierten Anweisungen unter [Erstellen eines neuen Produktprofils in der Adobe Admin Console](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/ui/create-profile) in der Dokumentation zu Experience Platform.
+1. Befolgen Sie die detaillierten Anweisungen unter [Erstellen eines neuen Produktprofils in der Adobe Admin Console](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile) in der Dokumentation zu Experience Platform.
 
 1. Beim Erstellen des neuen Produktprofils können Sie die folgenden empfohlenen Werte für den KI-Assistenten verwenden.
 
@@ -65,7 +69,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen e
 
 Der Prozess zum Zuweisen benutzerdefinierter Berechtigungen zu Produktprofilen folgt dem standardmäßigen Workflow für benutzerdefinierte Berechtigungen in Adobe Cloud Manager.
 
-Referenzartikel: [Zuweisen benutzerdefinierter Berechtigungen zum neuen Produktprofil](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+Referenzartikel: [Zuweisen benutzerdefinierter Berechtigungen zum neuen Produktprofil](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
 1. Klicken Sie in der Admin Console auf den Namen Ihres neu erstellten Produktprofils (`AI Assistant in AEM`)
 
@@ -194,5 +198,5 @@ Bitten Sie einen Benutzer aus der zugewiesenen Gruppe, Folgendes zu tun:
 ## Siehe auch
 
 * [KI-Assistent in AEM](/help/ai-assistant-in-aem.md)
-* [Adobe Experience Platform-Zugriffskontrolle](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/ui/overview)
+* [Adobe Experience Platform-Zugriffskontrolle](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
 <!-- * [Cloud Manager Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md) -->
