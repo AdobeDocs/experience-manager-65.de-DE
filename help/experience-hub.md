@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: 8193e420-2e37-45a6-a1fc-01873fed539b
-source-git-commit: fa84767b13e3b13ee5115b7dc7d2032092a9063b
+source-git-commit: eb0deb1cb401964c86f38cc42961d2c428d9311c
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '593'
 ht-degree: 11%
 
 ---
@@ -20,7 +20,7 @@ Experience Hub bietet einen zentralen Ausgangspunkt für die Verwaltung von Inha
 
 Hier erhalten Sie einen kurzen Überblick über den neu gestalteten Arbeitsbereich von AEM Experience Hub (4 Minuten, 9 Sekunden).
 
->[!VIDEO](https://video.tv.adobe.com/v/3471450?learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -32,11 +32,11 @@ Available as a private beta, Experience Hub offers an optimized experience focus
    ![Adobe Experience Cloud-Startseite](/help/assets/assets-experience-hub/experience-cloud-experiencemanager-ams.png)
 
 1. Klicken Sie in **Schnellzugriff**-Gruppierung auf [**Experience Manager**](https://experience.adobe.com).
-1. Wenn Sie das erste Mal darauf zugreifen, klicken Sie auf der Seite **Sagen Sie uns, was Sie tun**) auf die gewünschte Option, damit Adobe Ihr Erlebnis anpassen kann.
+1. Beim ersten Zugriff weist das System Ihnen die **Inhaltsautor**-Vorgabe zu (in der oberen rechten Ecke der Seite). Es steuert die Widgets, Navigationselemente und Inhalte, die Sie sehen.
 
-   Sie können diese Einstellung jederzeit ändern.
+   Sie können diese Vorgabe jederzeit ändern.
 
-   ![Die Seite „Sagen Sie uns, was Sie tun möchten“](/help/assets/assets-experience-hub/experience-cloud-tellus-ams.png)
+   ![Die Dropdown-Liste mit der Inhaltsautorenvorgabe ist ausgewählt](/help/assets/assets-experience-hub/experience-hub-role-selection.png)
 
 Die Adobe Experience Manager-Seite wurde mit verbesserter Navigation und interaktiven Widgets aktualisiert. Die vorherige Sammlung von Lösungskarten bietet Zugriff auf Tools wie die folgenden:
 
@@ -59,7 +59,7 @@ Diese Funktionen sind für die primäre Produktionsumgebung verfügbar, auf die 
 
 ![Produktions- und Staging-Umgebungen](/help/assets/assets-experience-hub/experience-hub-prod-stage-ams.png)
 
-Die Experience Hub-Seite, die als zentraler Hub für Adobe Experience Manager dient, wird erweitert und enthält zusätzliche Widgets und Aktionen, die auf jede Benutzerrolle zugeschnitten sind. Die Seite ist vollständig anpassbar und ermöglicht die Auswahl des optimalen Layouts für Ihren Bildschirm. Widgets können so gefiltert werden, dass nur ausgewählte Widgets auf der Hauptseite angezeigt werden, was ein personalisiertes Erlebnis gewährleistet.
+Die Experience Hub-Seite, die als zentraler Hub für Adobe Experience Manager dient, wird erweitert und enthält zusätzliche Widgets und Aktionen, die auf jede Benutzerrolle (Voreinstellung) zugeschnitten sind. Die Seite ist vollständig anpassbar und ermöglicht die Auswahl des optimalen Layouts für Ihren Bildschirm. Widgets können so gefiltert werden, dass nur ausgewählte Widgets auf der Hauptseite angezeigt werden, was ein personalisiertes Erlebnis gewährleistet.
 
 ![Experience Hub angepasst](/help/assets/assets-experience-hub/experience-hub-custom-ams.png)
 
