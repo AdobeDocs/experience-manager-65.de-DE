@@ -20,7 +20,7 @@ Experience Hub bietet einen zentralen Ausgangspunkt für die Verwaltung von Inha
 
 Hier erhalten Sie einen kurzen Überblick über den neu gestalteten Arbeitsbereich von AEM Experience Hub (2 Minuten, 39 Sekunden).
 
->[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475201/?learn=on&enablevpops&captions=ger)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
