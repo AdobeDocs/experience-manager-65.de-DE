@@ -126,7 +126,7 @@ Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
    >[!TIP]
    >
-   >Weitere Informationen zum Debugging Ihres auf einer lokalen AEM-SDK ausgeführten Projekts finden Sie im Dokument [Remote-Debugging der AEM-SDK.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
+   >Weitere Informationen zum Debugging Ihres auf einer lokalen AEM-SDK ausgeführten Projekts finden Sie im Dokument [Remote-Debugging der AEM-SDK.](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
 
 1. Klicken Sie auf **Beenden**.
 
