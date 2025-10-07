@@ -7,9 +7,9 @@ user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Mana
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
 source-git-commit: ab25ac9701bd138ceb11bb9b11539e950dde02d9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7562'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
