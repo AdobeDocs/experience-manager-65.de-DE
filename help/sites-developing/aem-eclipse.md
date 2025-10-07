@@ -9,10 +9,10 @@ exl-id: 00473769-c447-4966-a71e-117c669e0151
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 172b8667b1ff0bd533a035b21c316e2e66721bf8
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 100%
+source-wordcount: '747'
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ Bevor Sie die AEM Developer Tools verwenden, gehen Sie wie folgt vor:
 
 Sobald Sie die oben genannten [Voraussetzungen](#requirements) erfüllt haben, können Sie das Plug-in wie folgt installieren:
 
-1. Durchsuchen Sie die Website **AEM Developer Tools** unter `https://eclipse.adobe.com/aem/dev-tools/`.
+1. Durchsuchen Sie die [AEM Developer Tools-Website](https://eclipse.adobe.com/).
 
 1. Kopieren Sie den **Installations-Link**.
 
