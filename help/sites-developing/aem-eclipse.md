@@ -39,7 +39,7 @@ Bevor Sie die AEM Developer Tools verwenden, müssen Sie Folgendes tun:
 
 * Herunterladen und Installieren von [Eclipse IDE for Enterprise Java and Web Developers.](https://www.eclipse.org/downloads/packages/)
    * Die Version 1.4.0 von AEM Developer Tools for Eclipse ist mit Eclipse 2022-12 (4.26) oder höher kompatibel und erfordert die Ausführung von Java 17 oder höher.
-* Konfigurieren Sie Ihre Eclipse-Installation, um sicherzustellen, dass Sie mindestens 1 GB Heap-Speicher haben, indem Sie Ihre `eclipse.ini` Konfigurationsdatei bearbeiten, wie in den häufig gestellten Fragen zu [ beschrieben](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
+* Konfigurieren Sie Ihre Eclipse-Installation, um sicherzustellen, dass Sie mindestens 1 GB Heap-Speicher haben, indem Sie Ihre `eclipse.ini` Konfigurationsdatei bearbeiten, wie in den häufig gestellten Fragen zu [&#x200B; beschrieben](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
 
 >[!NOTE]
 >
@@ -99,7 +99,7 @@ Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
 1. `com.adobe.aem : aem-project-archetype : <highest-number>` sollte automatisch in der Dropdown-Liste **Archetyp** ausgewählt werden. Wählen Sie bei Bedarf eine frühere Version aus. Klicken Sie auf **Weiter**.
 
-   ![Auswählen der Archetypversion ](assets/select-archetype.png)
+   ![Auswählen der Archetypversion &#x200B;](assets/select-archetype.png)
 
 1. Geben Sie in die folgenden Felder Daten für das Beispielprojekt ein:
 
