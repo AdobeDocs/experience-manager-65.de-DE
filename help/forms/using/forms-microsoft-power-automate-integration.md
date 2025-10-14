@@ -27,7 +27,7 @@ Sie können ein adaptives Formular so konfigurieren, dass bei der Übermittlung 
 * Führen Sie komplexe Berechnungen für erfasste Daten durch
 * Speichern Sie die Daten von adaptiven Formularen in Speichersystemen nach einem vordefinierten Zeitplan
 
-Der Editor für adaptive Formulare verfügt über die Übermittlungsaktion **Aufrufen eines Microsoft® Power Automate-Flusses** zum Senden von Daten, Anhängen und Datensatzdokumenten für adaptive Formulare an den Cloud-Fluss von Power Automate. Um die Übermittlungsaktion dazu zu verwenden, erfasste Daten an Microsoft® Power Automate zu senden, [verbinden Sie Ihre AEM Forms-Autoreninstanz mit Microsoft® Power Automate](#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
+Der Editor für adaptive Formulare verfügt über die Übermittlungsaktion **Aufrufen eines Microsoft® Power Automate-Flusses** zum Senden von Daten, Anhängen und Datensatzdokumenten für adaptive Formulare an den Cloud-Fluss von Power Automate. Um die Übermittlungsaktion dazu zu verwenden, erfasste Daten an Microsoft® Power Automate zu senden, [verbinden Sie Ihre AEM Forms-Autoreninstanz mit Microsoft® Power Automate] (#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
 
 ## Voraussetzungen
 
