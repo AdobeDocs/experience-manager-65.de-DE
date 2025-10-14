@@ -99,7 +99,7 @@ Wenn MySQL Workbench zum ersten Mal gestartet wird, werden noch keine Verbindung
 **Hinweise**:
 
 * Der Standard-Port ist `3306`
-* Der ausgewählte Verbindungsname wird in der JDBC-OSGi-Konfiguration als [ eingegeben](#configurejdbcconnections)
+* Der ausgewählte Verbindungsname wird in der JDBC-OSGi-Konfiguration als [&#x200B; eingegeben](#configurejdbcconnections)
 
 #### Neue Communities-Verbindung {#new-communities-connection}
 
@@ -135,7 +135,7 @@ Eine Methode zum Herunterladen des Schemas besteht darin:
 
 Gehen Sie wie folgt vor, um die Datenbank zu installieren. Der Standardname der Datenbank lautet `communities`.
 
-Wenn der Datenbankname im Skript geändert wird, müssen Sie ihn auch in der „JDBC[Konfiguration“ ](#configurejdbcconnections).
+Wenn der Datenbankname im Skript geändert wird, müssen Sie ihn auch in der „JDBC[Konfiguration“ &#x200B;](#configurejdbcconnections).
 
 #### Schritt 1: SQL-Datei öffnen {#step-open-sql-file}
 

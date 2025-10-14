@@ -40,7 +40,7 @@ Zu den AEM Communities-Funktionen, die für Tagging konfiguriert werden können,
 
 Siehe [Verwalten von Tags](../../help/sites-administering/tags.md#tagging-console) zum Erstellen und Verwalten von Tag-Namespaces und Taxonomien.
 
-Entwicklerinformationen finden [ unter ](tag.md)Tag Essentials“.
+Entwicklerinformationen finden [&#x200B; unter &#x200B;](tag.md)Tag Essentials“.
 
 Siehe [Verwenden von Social Tag Cloud](tagcloud.md) zum Hinzufügen einer Social-Tag-Cloud-Komponente zu einer Seite, um die Suche nach veröffentlichten benutzergenerierten Inhalten mithilfe der angewendeten Tags zu erleichtern.
 

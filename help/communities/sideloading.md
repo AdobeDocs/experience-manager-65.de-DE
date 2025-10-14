@@ -32,7 +32,7 @@ Die Schritte zum dynamischen Hinzufügen von SCF-Komponenten sind:
 
 1. [Hinzufügen der Komponente zum DOM](#dynamically-add-component-to-dom)
 
-1. [Laden Sie die Komponente ](#sideload-by-invoking-scf) einer von zwei Methoden:
+1. [Laden Sie die Komponente &#x200B;](#sideload-by-invoking-scf) einer von zwei Methoden:
 
 * [Dynamische Einbindung](#dynamic-inclusion)
    * Bootstrapping aller dynamisch hinzugefügten Komponenten

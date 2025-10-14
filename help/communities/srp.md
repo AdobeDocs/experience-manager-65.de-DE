@@ -24,7 +24,7 @@ Ab Adobe Experience Manager (AEM) Communities 6.1 werden Community-Inhalte, allg
 
 Es gibt mehrere SRP-Optionen, die alle über eine neue AEM Communities-Schnittstelle, die [SocialResourceProvider-API](srp-and-ugc.md) (SRP-API), auf UGC zugreifen. Diese umfasst alle CRUD-Vorgänge (Create, Read, Update, and Delete, Erstellen, Lesen, Aktualisieren und Löschen).
 
-Alle SCF-Komponenten werden mithilfe der SRP-API implementiert, sodass der Code ohne Kenntnis der [zugrunde liegenden Topologie) oder ](topologies.md) Speicherort des UGC entwickelt werden kann.
+Alle SCF-Komponenten werden mithilfe der SRP-API implementiert, sodass der Code ohne Kenntnis der [zugrunde liegenden Topologie) oder &#x200B;](topologies.md) Speicherort des UGC entwickelt werden kann.
 
 ***Die SocialResourceProvider-API steht nur lizenzierten AEM Communities-Kunden zur Verfügung.***
 
@@ -66,7 +66,7 @@ Wenn benutzergenerierter Inhalt im freigegebenen Speicher gespeichert wird, gibt
 >
 >Unter [SRP und UGC Essentials](srp-and-ugc.md) finden Sie Beispiel-Code und weitere Details.
 >
->Best [ für die Programmierung finden Sie unter ](accessing-ugc-with-srp.md)Zugriff auf benutzergenerierten Inhalt mit SRP) .
+>Best [&#x200B; für die Programmierung finden Sie unter &#x200B;](accessing-ugc-with-srp.md)Zugriff auf benutzergenerierten Inhalt mit SRP) .
 
 ### ASRP {#asrp}
 
@@ -117,7 +117,7 @@ Mithilfe der SRP-API führen alle SRP-Optionen vor allen CRUD-Vorgängen dieselb
 
 Die ACL-Prüfung verwendet eine Dienstprogrammmethode, die einen Pfad zurückgibt, der zum Überprüfen der auf den UGC der Ressource angewendeten Berechtigungen geeignet ist.
 
-Siehe [SRP und UGC ](srp-and-ugc.md) für Beispiel-Code.
+Siehe [SRP und UGC &#x200B;](srp-and-ugc.md) für Beispiel-Code.
 
 ### Für nicht vorhandene Ressourcen (NER) {#for-non-existing-resources-ners}
 

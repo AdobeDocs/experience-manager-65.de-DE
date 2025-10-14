@@ -32,7 +32,7 @@ Die Hauptaspekte der Bewertung und Abzeichen sind:
 
 * [Erweiterte Vergabe von Abzeichen](/help/communities/advanced.md) um Mitglieder als Experten zu identifizieren (Qualität der erstellten Inhalte).
 
-**Hinweis** dass die Vergabe von Abzeichen [nicht standardmäßig aktiviert) ](/help/communities/implementing-scoring.md#main-pars-text-237875536).
+**Hinweis** dass die Vergabe von Abzeichen [nicht standardmäßig aktiviert) &#x200B;](/help/communities/implementing-scoring.md#main-pars-text-237875536).
 
 >[!CAUTION]
 >
@@ -58,7 +58,7 @@ Mit der [Badges-Konsole](/help/communities/badges.md) von Communities können Si
 
 Rollenbasierte Abzeichen werden von einem Administrator den Community-Mitgliedern auf Grundlage ihrer Rolle in der Community zugewiesen.
 
-Zugewiesene (und vergebene) Abzeichen werden im ausgewählten ([) gespeichert ](/help/communities/srp.md) sind nicht direkt zugänglich. Bis eine grafische Benutzeroberfläche verfügbar ist, können rollenbasierte Abzeichen nur über Code oder cURL zugewiesen werden. cURL-Anweisungen finden Sie im Abschnitt mit dem Titel [Abzeichen zuweisen und widerrufen](#assign-and-revoke-badges).
+Zugewiesene (und vergebene) Abzeichen werden im ausgewählten ([) gespeichert &#x200B;](/help/communities/srp.md) sind nicht direkt zugänglich. Bis eine grafische Benutzeroberfläche verfügbar ist, können rollenbasierte Abzeichen nur über Code oder cURL zugewiesen werden. cURL-Anweisungen finden Sie im Abschnitt mit dem Titel [Abzeichen zuweisen und widerrufen](#assign-and-revoke-badges).
 
 In der Version sind drei rollenbasierte Abzeichen enthalten:
 
@@ -80,7 +80,7 @@ Belohnungsbasierte Abzeichen werden vom Scoring-Service an Community-Mitglieder 
 Damit Abzeichen als Belohnung für Aktivitäten angezeigt werden, müssen zwei Dinge passieren:
 
 * Das Badging muss [aktiviert](#enableforcomponent) für die Funktionskomponente sein.
-* Auf die Seite (oder den Vorgänger[ auf der sich die Komponente befindet](#applytopage) müssen Bewertungs- und Badging-Regeln angewendet werden.
+* Auf die Seite (oder den Vorgänger[&#x200B; auf der sich die Komponente befindet](#applytopage) müssen Bewertungs- und Badging-Regeln angewendet werden.
 
 In der Version sind drei Belohnungs-Abzeichen enthalten:
 
@@ -99,11 +99,11 @@ In der Version sind drei Belohnungs-Abzeichen enthalten:
 >
 >Scoring-Regeln können so konfiguriert werden, dass negative Punkte für als unangemessen gekennzeichnete Posts zugewiesen werden, was sich auf den Score-Wert auswirkt. Sobald ein Abzeichen erworben wurde, wird es jedoch aufgrund der Reduzierung der Scoring-Punkte oder von Änderungen der Scoring-Regeln nicht automatisch entfernt.
 >
->Erhaltene Abzeichen können auf die gleiche Weise wie zugewiesene Abzeichen widerrufen werden. Siehe den Abschnitt [Zuweisen und Widerrufen ](#assign-and-revoke-badges) Abzeichen“. Zukünftige Verbesserungen werden eine Benutzeroberfläche zur Verwaltung der Abzeichen von Mitgliedern umfassen.
+>Erhaltene Abzeichen können auf die gleiche Weise wie zugewiesene Abzeichen widerrufen werden. Siehe den Abschnitt [Zuweisen und Widerrufen &#x200B;](#assign-and-revoke-badges) Abzeichen“. Zukünftige Verbesserungen werden eine Benutzeroberfläche zur Verwaltung der Abzeichen von Mitgliedern umfassen.
 
 ### Benutzerdefinierte Abzeichen {#custom-badges}
 
-Benutzerdefinierte Badges können über die [Badges-Konsole“ installiert ](/help/communities/badges.md) oder in Badging-Regeln zugewiesen werden.
+Benutzerdefinierte Badges können über die [Badges-Konsole“ installiert &#x200B;](/help/communities/badges.md) oder in Badging-Regeln zugewiesen werden.
 
 Bei der Installation über die Konsole „Badges“ werden benutzerdefinierte Badges automatisch in die Veröffentlichungsumgebung repliziert.
 
@@ -140,7 +140,7 @@ Wenn der Knoten vom Typ `cq:Page` ist (empfohlen), fügen Sie mithilfe von CRXDE
 
 ### Aktivieren von Abzeichen für Komponenten {#enable-badges-for-component}
 
-Die Scoring- und Badging-Regeln sind nur für Instanzen von Komponenten wirksam, die das Badging aktiviert haben, indem die Komponentenkonfiguration im [Authoring-Modus) ](/help/communities/author-communities.md) wird.
+Die Scoring- und Badging-Regeln sind nur für Instanzen von Komponenten wirksam, die das Badging aktiviert haben, indem die Komponentenkonfiguration im [Authoring-Modus) &#x200B;](/help/communities/author-communities.md) wird.
 
 Eine boolesche Eigenschaft `allowBadges` aktiviert/deaktiviert die Anzeige von Badges für eine Komponenteninstanz. Sie kann im [Dialogfeld „Komponente bearbeiten](/help/communities/author-communities.md) für Forum-, QnA- und Kommentar-Komponenten über ein Kontrollkästchen mit der Bezeichnung **Badges anzeigen** konfiguriert werden.
 
@@ -203,7 +203,7 @@ Der Name der Unterregel folgt normalerweise dem Muster der Verwendung eines *Sub
 * member-comment-create
 * member-receive-vote
 
-Unterregeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf ihrem `jcr:content`Knoten, die die [Verben und Themen) ](#topics-and-verbs).
+Unterregeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf ihrem `jcr:content`Knoten, die die [Verben und Themen) &#x200B;](#topics-and-verbs).
 
 <table>
  <tbody>
@@ -387,7 +387,7 @@ Alle Änderungen oder Ergänzungen an Badging-Regeln oder Bildern, die in der Au
 
 ## Zuteilen und Entziehen von Abzeichen {#assign-and-revoke-badges}
 
-Abzeichen können Mitgliedern entweder über die [Mitgliederkonsole“ oder ](/help/communities/members.md#badges-tab) cURL-Befehlen zugewiesen werden.
+Abzeichen können Mitgliedern entweder über die [Mitgliederkonsole“ oder &#x200B;](/help/communities/members.md#badges-tab) cURL-Befehlen zugewiesen werden.
 
 Die folgenden cURL-Befehle zeigen, was für eine HTTP-Anfrage zum Zuweisen und Widerrufen von Badges erforderlich ist. Das Grundformat lautet:
 
@@ -444,7 +444,7 @@ Wenn Mitglieder mit Communities-Funktionen interagieren, werden Ereignisse gesen
 
 Die SocialEvent-Instanz einer Komponente zeichnet die Ereignisse als `actions` auf, die bei einem `topic` auftreten. SocialEvent enthält eine Methode zum Zurückgeben eines der Aktion zugeordneten `verb`. Es besteht eine *n-1*-Beziehung zwischen `actions` und `verbs`.
 
-Für die bereitgestellten Communitys-Komponenten beschreiben die folgenden Tabellen die `verbs`, die für jede `topic` definiert wurden, die in (Scoring[Unterregeln) ](#scoring-sub-rules) werden kann.
+Für die bereitgestellten Communitys-Komponenten beschreiben die folgenden Tabellen die `verbs`, die für jede `topic` definiert wurden, die in (Scoring[Unterregeln) &#x200B;](#scoring-sub-rules) werden kann.
 
 >[!NOTE]
 >
@@ -625,7 +625,7 @@ Stellen Sie als Nächstes sicher, dass die Komponenten Forum und Kommentare die 
 
 ![test-forum-component](assets/test-forum-component.png)
 
-Veröffentlichen [ als Nächstes ](/help/communities/sites-console.md#publishing-the-site) Community-Site erneut.
+Veröffentlichen [&#x200B; als Nächstes &#x200B;](/help/communities/sites-console.md#publishing-the-site) Community-Site erneut.
 
 Schließlich
 

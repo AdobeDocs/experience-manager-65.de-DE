@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Mit dem AEM Mobile-Dashboard können Sie Ihre Mobile App erstellen, erstellen und bereitstellen sowie Anwendungsmetadaten erstellen, löschen und bearbeiten. Sobald Ihre Anwendung live ist, können Sie die Anwendungsanalyse einschließlich Lebenszyklus- und Nutzungsmetriken analysieren, um die Kundenkonversion und die Markentreue zu verbessern.
 
-Informationen zum Erstellen Ihrer AEM Mobile-Anwendung finden Sie auf [ Seite zum Erstellen ](/help/mobile/building-app-mobile-phonegap.md) Mobile Apps .
+Informationen zum Erstellen Ihrer AEM Mobile-Anwendung finden Sie auf [&#x200B; Seite zum Erstellen &#x200B;](/help/mobile/building-app-mobile-phonegap.md) Mobile Apps .
 
 Informationen zum Einrichten Ihrer Umgebung und zu den ersten Schritten finden Sie unter [Verwalten von AEM zur Verwendung von AEM PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
 
@@ -102,7 +102,7 @@ Alternativ können Sie die Gerätequelle herunterladen, um lokal über die Phone
 >
 >Die Kachel Metriken wird erst angezeigt, nachdem Sie den Cloud-Service konfiguriert haben.
 >
->Weitere [ finden Sie unter „Konfigurieren des Adobe Mobile Services](/help/mobile/configure-adobe-mobile-cloud-service.md)Cloud Service&quot;.
+>Weitere [&#x200B; finden Sie unter „Konfigurieren des Adobe Mobile Services](/help/mobile/configure-adobe-mobile-cloud-service.md)Cloud Service&quot;.
 
 AEM Mobile lässt sich über [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=de) (AMS) mit Adobe Analytics integrieren.
 

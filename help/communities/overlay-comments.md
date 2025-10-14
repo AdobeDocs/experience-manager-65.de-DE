@@ -35,7 +35,7 @@ Um Kommentare zu überlagern, müssen Sie:
 
 **Überlagern von Benachrichtigungs-E-Mails**
 
-Angenommen, Sie möchten die Nachricht von E-Mail-Benachrichtigungen anpassen. Sie können dies tun, indem Sie [ Vorlagen unter `/libs/settings/community/templates/email/html` ](/help/communities/client-customize.md#overlays).
+Angenommen, Sie möchten die Nachricht von E-Mail-Benachrichtigungen anpassen. Sie können dies tun, indem Sie [&#x200B; Vorlagen unter `/libs/settings/community/templates/email/html` &#x200B;](/help/communities/client-customize.md#overlays).
 
 Angenommen, Sie möchten die Erwähnungen und E-Mail-Benachrichtigungen bearbeiten (für eine bestimmte Communities-Komponente, bei der benutzergenerierter Inhalt erstellt wird). Fügen Sie in solchen Fällen eine Wenn **&#x200B;**-Bedingung für **Erwähnung** in den Vorlagen der Komponenten hinzu, für die Sie die **@mentions**-Unterstützung aktiviert haben.
 

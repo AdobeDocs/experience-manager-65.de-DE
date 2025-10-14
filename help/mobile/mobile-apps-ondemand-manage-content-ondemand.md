@@ -48,7 +48,7 @@ Die folgenden Themen beschreiben die Erstellung und Verwaltung von Inhalten, nä
 
 >[!NOTE]
 >
->Im Allgemeinen sollten Sie Preflight vor der Veröffentlichung von Inhalten verwenden. Weitere Informationen finden [ unter „Vorschau mit ](/help/mobile/aem-mobile-manage-ondemand-services.md)&quot;.
+>Im Allgemeinen sollten Sie Preflight vor der Veröffentlichung von Inhalten verwenden. Weitere Informationen finden [&#x200B; unter „Vorschau mit &#x200B;](/help/mobile/aem-mobile-manage-ondemand-services.md)&quot;.
 
 ### Zusätzliche Ressourcen {#additional-resources}
 

@@ -78,7 +78,7 @@ Wählen Sie links auf der Seite in der Liste eine Komponente aus.
 Der Hauptteil des Handbuchs zeigt Folgendes an:
 
 1. Titel: Der Name der ausgewählten Komponente
-1. [Client-seitige ](#client-side-libraries): Eine Liste mit einer oder mehreren erforderlichen Kategorien
+1. [Client-seitige &#x200B;](#client-side-libraries): Eine Liste mit einer oder mehreren erforderlichen Kategorien
 1. [Einschließbar](scf.md#add-or-include-a-communities-component): Wenn die Komponente dynamisch eingeschlossen werden kann, kann der Status im Bearbeitungsmodus für Autoren umgeschaltet werden:
 
    * Wenn sie hinzugefügt wird, wird Text angezeigt: „Diese Komponente ist über ihren übergeordneten Knoten enthalten.“
@@ -93,7 +93,7 @@ Der Hauptteil des Handbuchs zeigt Folgendes an:
 
 ### Autoreninteraktionen {#author-interactions}
 
-Bei Verwendung des Handbuchs auf einer Autoreninstanz ist es möglich, die Konfiguration einer Komponente durch Öffnen des entsprechenden Dialogfelds zu erleben. Informationen für Entwickler finden Sie im Abschnitt [Komponenten und ](essentials.md)) der Dokumentation, während die Dialogeinstellungen für Autoren im Abschnitt [Communities-Komponenten](author-communities.md) beschrieben werden.
+Bei Verwendung des Handbuchs auf einer Autoreninstanz ist es möglich, die Konfiguration einer Komponente durch Öffnen des entsprechenden Dialogfelds zu erleben. Informationen für Entwickler finden Sie im Abschnitt [Komponenten und &#x200B;](essentials.md)) der Dokumentation, während die Dialogeinstellungen für Autoren im Abschnitt [Communities-Komponenten](author-communities.md) beschrieben werden.
 
 Für das Handbuch der Community-Komponenten werden einige Einstellungen für das Komponentendialogfeld mit dem [Einschließbar](scf.md#add-or-include-a-communities-component)-Umschalter überlagert. Um zwischen der Verwendung der vorhandenen Ressource oder einer dynamisch eingeschlossenen Ressource umzuschalten, wählen Sie im Bearbeitungsmodus sowohl die Komponente als auch den einzuschließenden Text aus und doppelklicken Sie, um das Dialogfeld „Bearbeiten“ zu öffnen:
 
@@ -133,7 +133,7 @@ Weitere Informationen finden Sie unter [Clientlibs für Communities-Komponenten]
 
 Verwenden Sie auf der Autoreninstanz, bei der häufig eine Person als Administrator oder Entwickler angemeldet ist, um die als ein anderer Benutzer angemeldete Komponente zu verwenden, das Textfeld links neben der Schaltfläche **[!UICONTROL Identität annehmen]**, um entweder den Benutzernamen einzugeben oder aus der Pulldown-Liste auszuwählen, und klicken Sie dann auf die Schaltfläche. Klicken Sie auf Wiederherstellen , um sich abzumelden und den Identitätswechsel zu beenden.
 
-Für die Veröffentlichungsinstanz ist keine Stellvertretung erforderlich. Verwenden Sie einfach den Anmelde-/Abmelde-Link, um die Identität verschiedener Benutzer anzunehmen, z. B[ Demo-Benutzer](tutorials.md#demo-users).
+Für die Veröffentlichungsinstanz ist keine Stellvertretung erforderlich. Verwenden Sie einfach den Anmelde-/Abmelde-Link, um die Identität verschiedener Benutzer anzunehmen, z. B[&#x200B; Demo-Benutzer](tutorials.md#demo-users).
 
 ## Anpassung {#customization}
 

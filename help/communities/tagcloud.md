@@ -36,7 +36,7 @@ Um einer Seite im Autorenmodus eine `Social Tag Cloud` Komponente hinzuzufügen,
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [erforderlichen Client-seitigen ](tag.md#essentials-for-client-side) enthalten sind, wird die `Social Tag Cloud` Komponente wie folgt angezeigt:
+Wenn die [erforderlichen Client-seitigen &#x200B;](tag.md#essentials-for-client-side) enthalten sind, wird die `Social Tag Cloud` Komponente wie folgt angezeigt:
 
 ![social-tag](assets/social-tag.png)
 
@@ -122,4 +122,4 @@ Geben Sie auf der Registerkarte **[!UICONTROL Social Tag Cloud (Design]** an, wi
 
 Weitere Informationen finden Sie auf der Seite [Tag Essentials](tag.md) für Entwickler.
 
-Informationen [ Erstellen und Verwalten von Tags finden ](tag-ugc.md) unter Tagging von benutzergenerierten Inhalten (UGC) .
+Informationen [&#x200B; Erstellen und Verwalten von Tags finden &#x200B;](tag-ugc.md) unter Tagging von benutzergenerierten Inhalten (UGC) .

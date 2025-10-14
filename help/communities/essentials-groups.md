@@ -88,7 +88,7 @@ Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack) ist es 
 
 Eine Community-Site-Struktur mit einer Funktion [Gruppen](functions.md#groups-function) unterstützt die Erstellung neuer `community groups` aus der Veröffentlichungs- und Autorenumgebung. Die erstellte Community-Gruppe enthält eine `community groups member list`-Komponente, in der die Mitglieder der Gruppe aufgeführt sind.
 
-Für [ Funktion Gruppen können eine oder mehrere ](tools-groups.md) (Community-Gruppenvorlagen) konfiguriert werden, die das Design der Community-Gruppenseiten bereitstellen. Dies ist der Fall, wenn die Funktion zu einer [Community-Site-Vorlage](sites.md) hinzugefügt oder in einer Community-Gruppenvorlage verschachtelt wird.
+Für [&#x200B; Funktion Gruppen können eine oder mehrere &#x200B;](tools-groups.md) (Community-Gruppenvorlagen) konfiguriert werden, die das Design der Community-Gruppenseiten bereitstellen. Dies ist der Fall, wenn die Funktion zu einer [Community-Site-Vorlage](sites.md) hinzugefügt oder in einer Community-Gruppenvorlage verschachtelt wird.
 
 Das Einschließen mehrerer Community-Gruppenvorlagen führt zu einer Auswahl. Das heißt, die Auswahl des Designs, das dem autorisierten Benutzer zum Zeitpunkt der Erstellung einer Community-Gruppe für die Community-Site präsentiert wird. Weitere Informationen finden Sie im Abschnitt [Community-](creating-groups.md)) für Autoren.
 

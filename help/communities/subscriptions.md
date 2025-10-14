@@ -40,7 +40,7 @@ Anweisungen zum Einrichten von E-Mails finden Sie unter [Konfigurieren von E-](e
 
 **Abonnements aktivieren und folgen**
 
-Komponenten müssen so konfiguriert sein, dass Abonnements *und* aktiviert werden. Zu den Funktionen, die Abonnements ermöglichen[ gehören ](blog-feature.md), [forum](forum.md) und [QnA](working-with-qna.md).
+Komponenten müssen so konfiguriert sein, dass Abonnements *und* aktiviert werden. Zu den Funktionen, die Abonnements ermöglichen[&#x200B; gehören &#x200B;](blog-feature.md), [forum](forum.md) und [QnA](working-with-qna.md).
 
 ## Abonnements von {#subscriptions-from-following}
 

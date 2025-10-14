@@ -22,11 +22,11 @@ Wenn AEM Communities-Komponenten mit aktiviertem Tagging konfiguriert sind, kön
 
 Die zugrunde liegende Infrastruktur für Tags, die in der Veröffentlichungsumgebung angewendet werden, ist dieselbe wie für Tags, die auf Inhalte in der Autorenumgebung, z. B. Seiten und Assets, angewendet werden:
 
-* Informationen [ Erstellen und Verwalten von Tags finden ](../../help/sites-administering/tags.md) unter Verwalten [ Tags und Tagging ](tag-ugc.md) benutzergenerierten Inhalten UGC).
+* Informationen [&#x200B; Erstellen und Verwalten von Tags finden &#x200B;](../../help/sites-administering/tags.md) unter Verwalten [&#x200B; Tags und Tagging &#x200B;](tag-ugc.md) benutzergenerierten Inhalten UGC).
 
 * Unter [Tagging für Entwickler](../../help/sites-developing/tags.md) finden Sie Informationen über das [Tagging-Framework](../../help/sites-developing/framework.md) sowie die Einbeziehung und Erweiterung von Tags in [benutzerdefinierten Anwendungen](../../help/sites-developing/building.md).
 
-* Informationen [ Autoren zum Hinzufügen einer `social tag cloud`-Komponente zu einer Seite, um die Tags hervorzuheben, die in der Veröffentlichungsumgebung auf benutzergenerierten Inhalt (UGC) angewendet werden, finden Sie unter „Verwenden von Social Tag ](tagcloud.md)&quot;.
+* Informationen [&#x200B; Autoren zum Hinzufügen einer `social tag cloud`-Komponente zu einer Seite, um die Tags hervorzuheben, die in der Veröffentlichungsumgebung auf benutzergenerierten Inhalt (UGC) angewendet werden, finden Sie unter „Verwenden von Social Tag &#x200B;](tagcloud.md)&quot;.
 
 Das Tagging von benutzergenerierten Inhalten kann bei der Konfiguration einer [Community-Site](sites-console.md#tagging) oder einer der folgenden Funktionen aktiviert werden:
 
@@ -81,6 +81,6 @@ Das Tagging von benutzergenerierten Inhalten kann bei der Konfiguration einer [C
 
 ## Tag-Suche {#tag-searching}
 
-Ab [Feature Pack 1](deploy-communities.md#latestfeaturepack) (FP1) wird die Tag-Suche mit „Tag[Titeln“ ](../../help/sites-developing/framework.md#tag-characteristics).
+Ab [Feature Pack 1](deploy-communities.md#latestfeaturepack) (FP1) wird die Tag-Suche mit „Tag[Titeln“ &#x200B;](../../help/sites-developing/framework.md#tag-characteristics).
 
-Vor FP1 wurde die Suche mit „Tag[IDs“ ](../../help/sites-developing/framework.md#tagid).
+Vor FP1 wurde die Suche mit „Tag[IDs“ &#x200B;](../../help/sites-developing/framework.md#tagid).

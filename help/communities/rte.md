@@ -30,7 +30,7 @@ Bei Communities-Komponenten wirkt sich dies ähnlich wie [Rich-Text-Editor in de
 
 Communities-Komponenten, die benutzergenerierte Inhalte (User Generated Content, UGC) zulassen, können für den RTE aktiviert werden. Wenn die Komponente zu einer Seite hinzugefügt oder in eine [Funktion](functions.md) eingefügt wurde, kann RTE standardmäßig aktiviert sein oder nicht.
 
-Wenn diese Option nicht aktiviert ist, [ Sie einfach den ](sites-console.md#authoring-site-content) „author edit mode“ ein, wählen Sie die Komponente aus, die bearbeitet werden soll, und aktivieren Sie das Kontrollkästchen `Rich Text Editor` .
+Wenn diese Option nicht aktiviert ist, [&#x200B; Sie einfach den &#x200B;](sites-console.md#authoring-site-content) „author edit mode“ ein, wählen Sie die Komponente aus, die bearbeitet werden soll, und aktivieren Sie das Kontrollkästchen `Rich Text Editor` .
 
 RTE ist für die folgenden Communities-Komponenten verfügbar:
 

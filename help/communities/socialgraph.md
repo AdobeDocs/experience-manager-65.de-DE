@@ -32,7 +32,7 @@ Wenn Sie einer Seite im Autorenmodus eine `Following` Komponente hinzufügen mö
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [erforderlichen Client-seitigen ](essentials-socialgraph.md#essentials-for-client-side) enthalten sind, wird die `Following` Komponente wie folgt angezeigt:
+Wenn die [erforderlichen Client-seitigen &#x200B;](essentials-socialgraph.md#essentials-for-client-side) enthalten sind, wird die `Following` Komponente wie folgt angezeigt:
 
 ![folgende](assets/following.png)
 

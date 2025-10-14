@@ -39,7 +39,7 @@ Bevor Sie eine Community-Site erstellen, *Sie (*):
 * Stellen Sie sicher, dass mindestens eine Publish-Instanz ausgeführt wird.
 * Aktivieren Sie den [Tunneldienst](/help/communities/deploy-communities.md#tunnel-service-on-author), um Mitglieder und Mitgliedergruppen zu verwalten.
 * Identifizieren Sie den [primären Herausgeber](/help/communities/deploy-communities.md#primary-publisher).
-* [Konfigurieren Sie die ](/help/communities/deploy-communities.md#replication-agents-on-author), wenn der primäre Publisher-Port nicht der Standard ist (4503).
+* [Konfigurieren Sie die &#x200B;](/help/communities/deploy-communities.md#replication-agents-on-author), wenn der primäre Publisher-Port nicht der Standard ist (4503).
 
 Um sicherzustellen, dass die Site für viele Funktionen bereit ist, sollten Sie die folgenden Schritte ausführen:
 
@@ -166,7 +166,7 @@ Das Bedienfeld Einstellungen enthält mehrere Unterbedienfelder mit zu konfiguri
 >
 >Mehrere Unterbedienfelder Einstellungen ermöglichen die Zuweisung eines vertrauenswürdigen Mitglieds zur moderaten Benutzergenerierung, zur Verwaltung von Gruppen oder als Ansprechpartner für Aktivierungsressourcen in der Veröffentlichungsumgebung.
 >
->Die Konvention sieht vor, dass [ Veröffentlichungsseite (Benutzer und Benutzergruppen](/help/communities/users.md) (Mitglieder und Mitgliedergruppen) in der Autorenumgebung nicht dupliziert wird.
+>Die Konvention sieht vor, dass [&#x200B; Veröffentlichungsseite (Benutzer und Benutzergruppen](/help/communities/users.md) (Mitglieder und Mitgliedergruppen) in der Autorenumgebung nicht dupliziert wird.
 >
 >Daher müssen beim Erstellen der Community-Site in der Autorenumgebung und beim Zuweisen vertrauenswürdiger Mitglieder zu verschiedenen Rollen die Mitgliederdaten aus der Veröffentlichungsumgebung abgerufen werden.
 >
@@ -210,13 +210,13 @@ Deaktivieren Sie diese Option für eine *private* Community-Site. Standard ist d
 >
 >**Zulassen von Social-Media-Anmeldungen**
 >
->Obwohl es möglicherweise Beispielkonfigurationen für Facebook und Twitter gibt, die für eine [Produktionsumgebung“ auswählbar ](/help/sites-administering/production-ready.md), müssen benutzerdefinierte Programme für Facebook und Twitter erstellt werden. Siehe [Social-Anmeldung mit Facebook und Twitter](/help/communities/social-login.md).
+>Obwohl es möglicherweise Beispielkonfigurationen für Facebook und Twitter gibt, die für eine [Produktionsumgebung“ auswählbar &#x200B;](/help/sites-administering/production-ready.md), müssen benutzerdefinierte Programme für Facebook und Twitter erstellt werden. Siehe [Social-Anmeldung mit Facebook und Twitter](/help/communities/social-login.md).
 
 #### TAGGING {#tagging}
 
 ![site-tagging](assets/site-tagging.png)
 
-Die Tags, die auf Community-Inhalte angewendet werden können, werden durch die Auswahl von Tag-Namespaces gesteuert, die zuvor über die [Tagging-Konsole“ definiert ](/help/sites-administering/tags.md#tagging-console).
+Die Tags, die auf Community-Inhalte angewendet werden können, werden durch die Auswahl von Tag-Namespaces gesteuert, die zuvor über die [Tagging-Konsole“ definiert &#x200B;](/help/sites-administering/tags.md#tagging-console).
 
 Darüber hinaus wird durch die Auswahl von Tag-Namespaces für die Community-Site die Auswahl eingeschränkt, die beim Definieren von Katalogen und Ressourcen angezeigt wird.
 
@@ -240,7 +240,7 @@ Die Suche nach Community-Mitgliedern gestaltet sich mithilfe der Suche mit autom
 
 * **Community Privileged Members**
 
-  Beginnen Sie mit der Eingabe, um ein oder mehrere Community-Mitglieder oder Mitgliedergruppen auszuwählen, denen die Möglichkeit zum Erstellen von Inhalten eingeräumt werden soll, wenn `Allow Privileged Member` für eine [Community-Funktion“ ausgewählt ](/help/communities/functions.md).
+  Beginnen Sie mit der Eingabe, um ein oder mehrere Community-Mitglieder oder Mitgliedergruppen auszuwählen, denen die Möglichkeit zum Erstellen von Inhalten eingeräumt werden soll, wenn `Allow Privileged Member` für eine [Community-Funktion“ ausgewählt &#x200B;](/help/communities/functions.md).
 
 * **Community-Administratoren**
 
@@ -254,7 +254,7 @@ Die globale Einstellung für die Moderation von benutzergenerierten Inhalten (Us
 
 * **Inhalte werden vormoderiert**
 
-  Wenn diese Option aktiviert ist, werden gepostete Community-Inhalte erst angezeigt, nachdem sie von einem Moderator genehmigt wurden. Standard ist deaktiviert. Weitere Informationen finden Sie unter &quot;[ von Community-Inhalten](/help/communities/moderate-ugc.md#premoderation).
+  Wenn diese Option aktiviert ist, werden gepostete Community-Inhalte erst angezeigt, nachdem sie von einem Moderator genehmigt wurden. Standard ist deaktiviert. Weitere Informationen finden Sie unter &quot;[&#x200B; von Community-Inhalten](/help/communities/moderate-ugc.md#premoderation).
 
 * **Kennzeichnen eines Schwellenwerts, bevor der Inhalt ausgeblendet wird**
 
@@ -266,7 +266,7 @@ Die globale Einstellung für die Moderation von benutzergenerierten Inhalten (Us
 
 * **Analytics aktivieren**
 
-  Nur verfügbar, wenn Adobe Analytics für Communities[Funktionen ](/help/communities/analytics.md) wurde.
+  Nur verfügbar, wenn Adobe Analytics für Communities[Funktionen &#x200B;](/help/communities/analytics.md) wurde.
 Standard ist deaktiviert. Wenn diese Option aktiviert ist, wird ein zusätzliches Auswahlmenü angezeigt:
 
 ![site-analytics-enable](assets/site-analytics-enable.png)
@@ -477,13 +477,13 @@ Es gibt einen Hinweis nach der erfolgreichen Veröffentlichung der Site.
 
 ### Veröffentlichen mit verschachtelten Gruppen {#publishing-with-nested-groups}
 
-Nach dem Veröffentlichen einer Community-Site ist es erforderlich, jede mithilfe der „Gruppen-Konsole“ erstellte Untercommunity (verschachtelte [) einzeln zu ](/help/communities/groups.md).
+Nach dem Veröffentlichen einer Community-Site ist es erforderlich, jede mithilfe der „Gruppen-Konsole“ erstellte Untercommunity (verschachtelte [) einzeln zu &#x200B;](/help/communities/groups.md).
 
 ## Exportieren der Site {#exporting-the-site}
 
 ![export-site](assets/export-site.png)
 
-Wählen Sie das Exportsymbol aus, bewegen Sie den Mauszeiger über die Website, damit Sie ein Paket der Community-Site erstellen können, das sowohl im [Package Manager“ gespeichert ](/help/sites-administering/package-manager.md) heruntergeladen wird.
+Wählen Sie das Exportsymbol aus, bewegen Sie den Mauszeiger über die Website, damit Sie ein Paket der Community-Site erstellen können, das sowohl im [Package Manager“ gespeichert &#x200B;](/help/sites-administering/package-manager.md) heruntergeladen wird.
 
 UGC ist nicht im Site-Paket enthalten.
 

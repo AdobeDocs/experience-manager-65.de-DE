@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Grundlagen zur Interaktion {#liking-essentials}
 
-Die Komponente „Gefällt mir[, eine ](tally.md) Unterklasse, ist ein nützliches Tool, mit dem Mitglieder eine positive Meinung über ein bestimmtes Inhaltselement ausdrücken können, indem sie einfach das Herzsymbol auswählen.
+Die Komponente „Gefällt mir[, eine &#x200B;](tally.md) Unterklasse, ist ein nützliches Tool, mit dem Mitglieder eine positive Meinung über ein bestimmtes Inhaltselement ausdrücken können, indem sie einfach das Herzsymbol auswählen.
 
 Die Platzierung mehrerer Instanzen einer verknüpfenden Komponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name`-Eigenschaft konfiguriert werden.
 

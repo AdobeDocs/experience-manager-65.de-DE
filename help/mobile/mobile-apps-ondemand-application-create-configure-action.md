@@ -62,7 +62,7 @@ Sie müssen über eine vorhandene Mobile-App-Vorlage (oder eine installierte App
 
 Nachdem Sie eine On-Demand-App über das Anwendungs-Dashboard erstellt haben, besteht der nächste Schritt darin, Ihre App mit der Cloud-Konfiguration zu verknüpfen.
 
-Weitere [ finden Sie unter „Verknüpfen Ihrer App mit ](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) Cloud-Konfiguration“.
+Weitere [&#x200B; finden Sie unter „Verknüpfen Ihrer App mit &#x200B;](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) Cloud-Konfiguration“.
 
 ### Vorwärtskommen {#getting-ahead}
 

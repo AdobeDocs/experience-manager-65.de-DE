@@ -58,7 +58,7 @@ Auf der Kachel **Verbindung verwalten** werden die AEM Mobile On-demand Services
 >
 >Klicken Sie oben rechts auf das Zahnrad, um eine Mobile On-Demand-Cloud-Konfiguration einzurichten.
 >
->Weitere [ finden Sie unter „Konfigurieren von Mobile On-Demand](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)Services“.
+>Weitere [&#x200B; finden Sie unter „Konfigurieren von Mobile On-Demand](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)Services“.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 

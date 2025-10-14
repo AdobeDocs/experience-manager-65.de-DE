@@ -37,7 +37,7 @@ Der Benutzer, der Content Services nicht für die Verwendung mit Platzierungen k
 >
 >Aktivieren Sie das Kontrollkästchen **AEM Content Services aktivieren**, um mit Leerzeichen zu arbeiten und sie in Ihrem AEM Mobile-Anwendungs-Dashboard zu aktivieren.
 >
->Weitere [ finden Sie unter Verwalten ](/help/mobile/developing-content-services.md) Content Services .
+>Weitere [&#x200B; finden Sie unter Verwalten &#x200B;](/help/mobile/developing-content-services.md) Content Services .
 
 Nachdem Sie Leerzeichen im Dashboard konfiguriert haben, führen Sie die folgenden Schritte aus, um Leerzeichen zu erstellen:
 

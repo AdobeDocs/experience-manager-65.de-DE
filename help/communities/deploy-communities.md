@@ -37,9 +37,9 @@ ht-degree: 2%
 
 * Installieren Sie die neuesten [AEM 6.5-Updates](#aem64updates)
 
-* Wenn Sie die Standard-Ports (4502, 4503) nicht verwenden, [ Sie „Replikationsagenten konfigurieren](#replication-agents-on-author)
+* Wenn Sie die Standard-Ports (4502, 4503) nicht verwenden, [&#x200B; Sie „Replikationsagenten konfigurieren](#replication-agents-on-author)
 * [Replizieren des Kryptoschlüssels](#replicate-the-crypto-key)
-* Wenn Sie die Globalisierung unterstützen[ richten Sie eine automatisierte Übersetzung ](/help/sites-administering/translation.md)
+* Wenn Sie die Globalisierung unterstützen[&#x200B; richten Sie eine automatisierte Übersetzung &#x200B;](/help/sites-administering/translation.md)
 (Beispiel-Setup wird für die Entwicklung bereitgestellt)
 
 **Für die Funktion [Communities](/help/communities/overview.md)**
@@ -169,9 +169,9 @@ Weitere Informationen finden Sie unter [Arbeiten mit Paketen](/help/sites-admini
 
 ## Empfohlene Bereitstellungen {#recommended-deployments}
 
-In AEM Communities wird ein Common Store zum Speichern von UGC verwendet und häufig als „Speicherressourcenanbieter[ bezeichnet](/help/communities/working-with-srp.md). Die empfohlene Bereitstellung konzentriert sich auf die Auswahl einer SRP-Option für den allgemeinen Speicher.
+In AEM Communities wird ein Common Store zum Speichern von UGC verwendet und häufig als „Speicherressourcenanbieter[&#x200B; bezeichnet](/help/communities/working-with-srp.md). Die empfohlene Bereitstellung konzentriert sich auf die Auswahl einer SRP-Option für den allgemeinen Speicher.
 
-Der Common Store unterstützt die Moderation und Analyse von benutzergenerierten Inhalten in der Publishing-Umgebung, sodass keine [ (Replikation) ](/help/communities/sync.md) benutzergenerierten Inhalten mehr erforderlich ist.
+Der Common Store unterstützt die Moderation und Analyse von benutzergenerierten Inhalten in der Publishing-Umgebung, sodass keine [&#x200B; (Replikation) &#x200B;](/help/communities/sync.md) benutzergenerierten Inhalten mehr erforderlich ist.
 
 * [Community-](/help/communities/working-with-srp.md): Erläutert die SRP-Speicheroptionen für AEM Communities
 
@@ -253,7 +253,7 @@ So aktivieren Sie den Tunneldienst:
 
 * Melden Sie sich mit Administratorrechten bei Ihrer Autoreninstanz an.
 * Wenn der Herausgeber nicht localhost:4503 oder der Transport-Benutzer nicht `admin` ist,
-Konfigurieren [ dann den Replikationsagenten](#replication-agents-on-author)
+Konfigurieren [&#x200B; dann den Replikationsagenten](#replication-agents-on-author)
 
 * Zugreifen auf die [Web-Konsole](/help/sites-deploying/configuring-osgi.md)
 
@@ -301,7 +301,7 @@ Beispiel:
 
 >[!CAUTION]
 >
->Wenn bereits eine andere Sicherheitsfunktion konfiguriert wurde, die auf den Kryptoschlüsseln basiert, kann das Replizieren der Kryptoschlüssel die Konfiguration beschädigen. Wenn Sie Hilfe benötigen[ wenden Sie sich an die ](https://experienceleague.adobe.com/de?lang=de&amp;support-solution=General&amp;support-tab=home#support).
+>Wenn bereits eine andere Sicherheitsfunktion konfiguriert wurde, die auf den Kryptoschlüsseln basiert, kann das Replizieren der Kryptoschlüssel die Konfiguration beschädigen. Wenn Sie Hilfe benötigen[&#x200B; wenden Sie sich an die &#x200B;](https://experienceleague.adobe.com/de?lang=de&support-solution=General&support-tab=home#support).
 
 #### Repository-Replikation {#repository-replication}
 
@@ -309,7 +309,7 @@ Das Schlüsselmaterial kann wie bei AEM 6.2 und früheren Versionen im Repositor
 
 >[!NOTE]
 >
->Stellen Sie sicher[ dass der Replikationsagent auf der Autoreninstanz ](#replication-agents-on-author) ist.
+>Stellen Sie sicher[&#x200B; dass der Replikationsagent auf der Autoreninstanz &#x200B;](#replication-agents-on-author) ist.
 
 Mit dem im Repository gespeicherten Schlüsselmaterial wird die Methode zum Replizieren des Kryptoschlüssels von der Autoreninstanz auf andere Instanzen wie folgt festgelegt:
 

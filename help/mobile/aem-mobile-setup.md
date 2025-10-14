@@ -117,7 +117,7 @@ Bei der Entwicklung von AEM Mobile-Apps gibt es drei verschiedene Rollen:
 * Entwicklerin oder Entwickler
 * Author
 
-Weitere Informationen zum Erstellen von Rollen mit unterschiedlichen Berechtigungen, z. B. für die Erstellung von Apps oder zum Erstellen und Veröffentlichen von Inhalten, finden Sie [ der Hilfe zu AEM Mobile ](https://helpx.adobe.com/de/digital-publishing-solution/help/account-admin-dps.html)Erstellen von Benutzerrollen und Gewähren von Zugriff“.
+Weitere Informationen zum Erstellen von Rollen mit unterschiedlichen Berechtigungen, z. B. für die Erstellung von Apps oder zum Erstellen und Veröffentlichen von Inhalten, finden Sie [&#x200B; der Hilfe zu AEM Mobile &#x200B;](https://helpx.adobe.com/de/digital-publishing-solution/help/account-admin-dps.html)Erstellen von Benutzerrollen und Gewähren von Zugriff“.
 
 >[!NOTE]
 >

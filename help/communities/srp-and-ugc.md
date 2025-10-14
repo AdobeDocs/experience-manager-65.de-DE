@@ -119,7 +119,7 @@ Beim Erstellen von benutzergenerierten Inhalten wird auch ein [Shadow-Knoten](sr
 
 **UGC-Speicherort**
 
-Der UGC wird an keinem dieser Orte erstellt und sollte nur über eine -Dienstprogrammmethode aufgerufen werden[ die ](#utility-method-to-access-ugc)-API aufruft.
+Der UGC wird an keinem dieser Orte erstellt und sollte nur über eine -Dienstprogrammmethode aufgerufen werden[&#x200B; die &#x200B;](#utility-method-to-access-ugc)-API aufruft.
 
 * Stammverzeichnis = `/content/usergenerated/asi/srp-choice`
 * UGC-Knoten für JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`

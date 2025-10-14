@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Tutorials {#tutorials}
 
-Dies sind Beispiele, die beim Lernen und Arbeiten mit Adobe Experience Manager (AEM) 6.1 Communities (Social Component [ Framework (SCF)) hilfreich ](scf.md).
+Dies sind Beispiele, die beim Lernen und Arbeiten mit Adobe Experience Manager (AEM) 6.1 Communities (Social Component [&#x200B; Framework (SCF)) hilfreich &#x200B;](scf.md).
 
 ## Client-seitige Anpassung {#client-side-customization}
 
@@ -64,7 +64,7 @@ Das Geometrixx-Beispielpaket enthält Demo-Benutzer. Oft besteht ein Unterschied
 
 Eine vollständige Liste der Demo-Benutzer finden Sie in der Leiste unter **[!UICONTROL >]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Sicherheit > Benutzer]**. Oder verwenden Sie die klassische Benutzeroberfläche [Sicherheitskonsole](http://localhost:4502/useradmin) zum Verwalten von Benutzern und Gruppen.
 
-Wenn eine [Community-Site erstellt wurde](getting-started.md) ist es möglich, Demo-Benutzer ihren [Community-Benutzergruppen“ ](users.md).
+Wenn eine [Community-Site erstellt wurde](getting-started.md) ist es möglich, Demo-Benutzer ihren [Community-Benutzergruppen“ &#x200B;](users.md).
 
 ***Benutzer-ID* / *Kennwort***:
 

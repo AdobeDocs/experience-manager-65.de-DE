@@ -34,7 +34,7 @@ Um die Vorteile von PhoneGap Build nutzen zu können, müssen Sie den AEM-PhoneG
 
 Wenn Sie derzeit noch kein Konto haben, navigieren Sie zu `https://build.phonegap.com` und melden Sie sich an! Wenn Sie Adobe Creative Cloud-Mitglied sind, unterstützen Sie möglicherweise bis zu 25 private Apps (Nicht-Open-Source-Apps).
 
-Nachdem Sie sich vergewissert haben, dass Ihr PhoneGap Build-Konto aktiv ist, navigieren Sie zu Ihrer AEM Cloud Management Console, insbesondere zum [PhoneGap Build Cloud Service ](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
+Nachdem Sie sich vergewissert haben, dass Ihr PhoneGap Build-Konto aktiv ist, navigieren Sie zu Ihrer AEM Cloud Management Console, insbesondere zum [PhoneGap Build Cloud Service &#x200B;](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
 
 Verwenden Sie die Kachel **Cloud Service verwalten**, um eine neue Cloud Service-Konfiguration zu konfigurieren.
 

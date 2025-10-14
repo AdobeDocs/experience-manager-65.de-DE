@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Seitenvorlagen für Mobile Apps {#page-templates-for-mobile-apps-1}
 
-Seitenkomponenten, die Sie für Ihre App erstellen, basieren auf der Komponente /libs/mobileapps/components/angular/ng-page ([auf einem lokalen CRXDE Lite-Server ](http://localhost:4502/crx/de/index.jsp#/libs/mobileapps/components/angular/ng-page)). Diese Komponente enthält die folgenden JSP-Skripte, die Ihre Komponente entweder erbt oder überschreibt:
+Seitenkomponenten, die Sie für Ihre App erstellen, basieren auf der Komponente /libs/mobileapps/components/angular/ng-page ([auf einem lokalen CRXDE Lite-Server &#x200B;](http://localhost:4502/crx/de/index.jsp#/libs/mobileapps/components/angular/ng-page)). Diese Komponente enthält die folgenden JSP-Skripte, die Ihre Komponente entweder erbt oder überschreibt:
 
 * ng-page.jsp
 * head.jsp

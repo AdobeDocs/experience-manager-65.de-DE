@@ -20,7 +20,7 @@ ht-degree: 5%
 
 Diese Seite enthält die wichtigsten Informationen zum Arbeiten mit der Leaderboard-Funktion.
 
-Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie „Community[Punktzahl und Abzeichen“ ](implementing-scoring.md).
+Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie „Community[Punktzahl und Abzeichen“ &#x200B;](implementing-scoring.md).
 
 Siehe [Grundlagen zu Bewertungen und Abzeichen](configure-scoring.md).
 

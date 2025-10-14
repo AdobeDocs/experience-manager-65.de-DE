@@ -42,7 +42,7 @@ Um einer Seite im Autorenmodus eine `QnA` Komponente hinzuzufügen, verwenden Si
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen Client-seitigen ](/help/communities/qna-essentials.md#essentials-for-client-side) enthalten sind, wird die `QnA` Komponente wie folgt angezeigt:
+Wenn die [erforderlichen Client-seitigen &#x200B;](/help/communities/qna-essentials.md#essentials-for-client-side) enthalten sind, wird die `QnA` Komponente wie folgt angezeigt:
 
 ![qna-component](assets/qna-component.png)
 
@@ -100,7 +100,7 @@ Geben Sie auf **Registerkarte** Einstellungen“ Einstellungen für Themen (Frag
 
 * **Folgendes zulassen**
 
-  Wenn diese Option aktiviert ist, wird folgende Funktion für Forumsbeiträge hinzugefügt, mit der Mitglieder über neue Beiträge [ werden ](/help/communities/notifications.md). Die Auswahl von Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, wird folgende Funktion für Forumsbeiträge hinzugefügt, mit der Mitglieder über neue Beiträge [&#x200B; werden &#x200B;](/help/communities/notifications.md). Die Auswahl von Standard ist deaktiviert.
 
 * **Anheften zulassen**
 
@@ -151,7 +151,7 @@ Geben Sie auf **Registerkarte** Einstellungen“ Einstellungen für Themen (Frag
 
 * **Erlauben Sie vorgestellte Inhalte**
 
-  Wenn diese Option aktiviert ist, kann die Idee als [vorgestellter Inhalt“ identifiziert ](/help/communities/featured.md). Die Auswahl von Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, kann die Idee als [vorgestellter Inhalt“ identifiziert &#x200B;](/help/communities/featured.md). Die Auswahl von Standard ist deaktiviert.
 
 * **Erwähnung aktivieren**
 

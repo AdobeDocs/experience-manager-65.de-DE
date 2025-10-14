@@ -31,7 +31,7 @@ Daher benötigt die erweiterte Scoring-Engine genügend Daten, um die Analyse au
 
 Die Einrichtung der erweiterten Bewertung ist praktisch identisch mit der grundlegenden Bewertung:
 
-* Grundlegende und erweiterte Scoring- und Badging[Regeln werden auf dieselbe Weise auf ](/help/communities/implementing-scoring.md#apply-rules-to-content) angewendet.
+* Grundlegende und erweiterte Scoring- und Badging[Regeln werden auf dieselbe Weise auf &#x200B;](/help/communities/implementing-scoring.md#apply-rules-to-content) angewendet.
 
    * Auf denselben Inhalt können einfache und erweiterte Scoring- und Badging-Regeln angewendet werden.
 

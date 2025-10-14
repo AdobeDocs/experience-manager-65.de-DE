@@ -38,7 +38,7 @@ Nachdem Sie Ihre App konfiguriert und einer Cloud-Konfiguration zugeordnet haben
 
 >[!NOTE]
 >
->Freigegebene Ressourcen verwenden ContentSync , um alle verschiedenen Ressourcen zu erfassen. Weitere Informationen finden [ unter „Mobile mit ](/help/mobile/mobile-ondemand-contentsync.md)&quot;.
+>Freigegebene Ressourcen verwenden ContentSync , um alle verschiedenen Ressourcen zu erfassen. Weitere Informationen finden [&#x200B; unter „Mobile mit &#x200B;](/help/mobile/mobile-ondemand-contentsync.md)&quot;.
 
 Führen Sie die folgenden Schritte aus, um Ihre freigegebenen Ressourcen für einen Artikel hochzuladen:
 

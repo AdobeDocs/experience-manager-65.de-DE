@@ -20,7 +20,7 @@ ht-degree: 5%
 
 {{ue-over-mobile}}
 
-Die Kachel **Programm verwalten** und die Seite „App verwalten“ bietet eine Möglichkeit zum Anzeigen und Bearbeiten von Anwendungsmetadaten. App-Metadaten sind erforderlich, um eine Anwendung im Store eines Anbieters freizugeben. Dies kann allgemeine Metadaten, iOS-Metadaten und Screenshots umfassen. Weitere Informationen zu allgemeinen und iOS[Metadaten finden Sie unter ](/help/mobile/phonegap-app-details-tile.md)App-Kachel verwalten“.
+Die Kachel **Programm verwalten** und die Seite „App verwalten“ bietet eine Möglichkeit zum Anzeigen und Bearbeiten von Anwendungsmetadaten. App-Metadaten sind erforderlich, um eine Anwendung im Store eines Anbieters freizugeben. Dies kann allgemeine Metadaten, iOS-Metadaten und Screenshots umfassen. Weitere Informationen zu allgemeinen und iOS[Metadaten finden Sie unter &#x200B;](/help/mobile/phonegap-app-details-tile.md)App-Kachel verwalten“.
 
 ## Bearbeiten der App-Daten {#editing-the-app-data}
 

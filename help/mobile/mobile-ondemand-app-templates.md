@@ -97,7 +97,7 @@ Wählen Sie &#39;**+**&#39; im linken Bereich, um Komponenten zu Ihrem Artikel h
 
 ### Erstellen von nativen Vorlagen {#creating-out-of-the-box-templates}
 
-Es gibt keine vordefinierten Artikelvorlagen. Es gibt jedoch eine Standardvorlage, die von benutzerdefinierten Vorlagen erweitert werden sollte. Weitere Informationen finden Sie unter Beispiel für eine Artikelvorlage [ Geometrixx Unlimited-App](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article).
+Es gibt keine vordefinierten Artikelvorlagen. Es gibt jedoch eine Standardvorlage, die von benutzerdefinierten Vorlagen erweitert werden sollte. Weitere Informationen finden Sie unter Beispiel für eine Artikelvorlage [&#x200B; Geometrixx Unlimited-App](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article).
 
 Zu den wichtigsten Eigenschaften, die über die normalen Eigenschaften von AEM-Vorlagen hinausgehen, gehören:
 
@@ -146,7 +146,7 @@ Sobald die Komponente zusammen mit einigen anderen Bausteinkomponenten bereits i
 
 >[!NOTE]
 >
->Sie können eine Komponente in AEM erstellen und diese mit „Entwickeln [ CRXDE Lite&quot; ](/help/sites-developing/developing-with-crxde-lite.md). Nachdem Sie die vorhandene Komponente als Ihre Anforderungen angepasst haben, können Sie sie Ihrer Seite hinzufügen, indem Sie die Option **Bearbeiten** unter **Artikel verwalten** verwenden, wie in der folgenden Abbildung dargestellt.
+>Sie können eine Komponente in AEM erstellen und diese mit „Entwickeln [&#x200B; CRXDE Lite&quot; &#x200B;](/help/sites-developing/developing-with-crxde-lite.md). Nachdem Sie die vorhandene Komponente als Ihre Anforderungen angepasst haben, können Sie sie Ihrer Seite hinzufügen, indem Sie die Option **Bearbeiten** unter **Artikel verwalten** verwenden, wie in der folgenden Abbildung dargestellt.
 
 >[!NOTE]
 >

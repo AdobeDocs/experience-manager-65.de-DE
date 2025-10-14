@@ -30,7 +30,7 @@ Und ziehen Sie es auf einer Seite, z. B. eine Position relativ zur Funktion, die
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [erforderlichen Client-seitigen ](essentials-liking.md#essentials-for-client-side) enthalten sind, wird die `Liking` Komponente wie folgt angezeigt.
+Wenn die [erforderlichen Client-seitigen &#x200B;](essentials-liking.md#essentials-for-client-side) enthalten sind, wird die `Liking` Komponente wie folgt angezeigt.
 
 ![liking-component](assets/liking-component.png)
 

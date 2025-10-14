@@ -49,7 +49,7 @@ Mitglieder der Gruppe app-author sind für das Authoring von AEM-Mobile-App-Inha
 
    Hinzufügen von app-authors zur Gruppe „Authors“
 
-1. Nachdem Sie nun die Benutzergruppe app-authors erstellt haben, können Sie dieser neuen Gruppe über die Admin Console „Benutzer[ einzelne Team-Mitglieder ](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Nachdem Sie nun die Benutzergruppe app-authors erstellt haben, können Sie dieser neuen Gruppe über die Admin Console „Benutzer[&#x200B; einzelne Team-Mitglieder &#x200B;](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 

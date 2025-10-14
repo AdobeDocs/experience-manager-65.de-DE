@@ -20,7 +20,7 @@ ht-degree: 16%
 
 Adobe Experience Manager (AEM) Communities-Funktionen erfordern, dass Besuchende der Site Mitglied werden und sich bei der [Community-Site](overview.md#communitiessites) anmelden, bevor sie Inhalte posten können. Daher [Community-Site-Vorlagen](sites.md) aus denen eine Community-Site [erstellt](sites-console.md) erstellt wird, so konzipiert, dass sie eine Anmeldefunktion und Benutzerprofile, Messaging, Suche, Moderation und Übersetzung enthalten.
 
-Eine Community-Site unterstützt Mitglieder beim Erstellen von Community[Gruppen, wenn die Funktion ](functions.md#groups-function)Community-Gruppen“ in der ausgewählten Community-Site-Vorlage enthalten ist.
+Eine Community-Site unterstützt Mitglieder beim Erstellen von Community[Gruppen, wenn die Funktion &#x200B;](functions.md#groups-function)Community-Gruppen“ in der ausgewählten Community-Site-Vorlage enthalten ist.
 
 Im Folgenden finden Sie Links zu wichtigen Informationen zu Komponenten, Funktionen und Funktionen von Communities.
 
@@ -79,6 +79,6 @@ Für jedes [Feature Pack](deploy-communities.md#latestfeaturepack) wird eine Jav
    * [Server-seitige Anpassungen](server-customize.md)
    * [Speicherressourcenanbieter - Übersicht](srp.md)
 
-* [Codierungsrichtlinien ](code-guide.md)
+* [Codierungsrichtlinien &#x200B;](code-guide.md)
 * [Tutorials](tutorials.md)
 * [Fehlerbehebung](troubleshooting.md)

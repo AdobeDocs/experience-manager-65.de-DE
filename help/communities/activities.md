@@ -40,7 +40,7 @@ und ziehen Sie sie auf eine Seite, auf der Aktivitätsströme angezeigt werden s
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen Client-seitigen ](/help/communities/essentials-activities.md#essentials-for-client-side) enthalten sind, wird die `Activity Streams` Komponente wie folgt angezeigt:
+Wenn die [erforderlichen Client-seitigen &#x200B;](/help/communities/essentials-activities.md#essentials-for-client-side) enthalten sind, wird die `Activity Streams` Komponente wie folgt angezeigt:
 
 ![activity-streams](assets/activity-component.png)
 
@@ -76,7 +76,7 @@ Geben **auf der Registerkarte** Benutzeraktivitäten“ an, welche Aktivitäten 
 
 ### folgende Ansicht {#following-view}
 
-Komponenten müssen so konfiguriert sein, dass Folgendes aktiviert wird. Funktionen, die Folgendes ermöglichen[ sind ](/help/communities/blog-feature.md)blog[, forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [file library](/help/communities/file-library.md) und [comments](/help/communities/comments.md).
+Komponenten müssen so konfiguriert sein, dass Folgendes aktiviert wird. Funktionen, die Folgendes ermöglichen[&#x200B; sind &#x200B;](/help/communities/blog-feature.md)blog[, forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [file library](/help/communities/file-library.md) und [comments](/help/communities/comments.md).
 
 ![folgende Ansicht](assets/following-activities.png)
 

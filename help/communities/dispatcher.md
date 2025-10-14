@@ -20,11 +20,11 @@ ht-degree: 8%
 
 ## AEM Communities {#aem-communities}
 
-Für AEM Communities ist es erforderlich, die Dispatcher so zu konfigurieren, dass eine ordnungsgemäße Funktionsweise der [Community-Sites“ ](overview.md#community-sites) ist. Zusätzliche Konfigurationen sind erforderlich, wenn Funktionen wie die Anmeldung bei sozialen Netzwerken einbezogen werden sollen.
+Für AEM Communities ist es erforderlich, die Dispatcher so zu konfigurieren, dass eine ordnungsgemäße Funktionsweise der [Community-Sites“ &#x200B;](overview.md#community-sites) ist. Zusätzliche Konfigurationen sind erforderlich, wenn Funktionen wie die Anmeldung bei sozialen Netzwerken einbezogen werden sollen.
 
 Erfahren Sie, was für Ihre bestimmte Bereitstellung und Ihr Site-Design erforderlich ist
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?lang=de&amp;support-solution=General&amp;support-tab=home#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?lang=de&support-solution=General&support-tab=home#support)
 
 Siehe auch die Hauptdokumentation zu [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de).
 
@@ -42,7 +42,7 @@ Wenn so konfiguriert ist, dass die Zwischenspeicherung in Dispatcher unterstütz
 
 ### Voraussetzungen {#requirements}
 
-* Dispatcher Dispatcher Version 4.1.2 oder höher (die neueste Version finden [ unter „Installieren von ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=de)„)
+* Dispatcher Dispatcher Version 4.1.2 oder höher (die neueste Version finden [&#x200B; unter „Installieren von &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=de)„)
 * [ACS AEM Commons-Paket](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Version 3.3.2 oder höher
@@ -69,7 +69,7 @@ Die OSGi-Konfiguration **ACS AEM Commons - Dispatcher Cache Control Header - Max
 
 ## Dispatcher-Filter {#dispatcher-filters}
 
-Der Abschnitt /filter der `dispatcher.any`-Datei ist unter &quot;[ auf Inhalte konfigurieren - /filter“ ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de).
+Der Abschnitt /filter der `dispatcher.any`-Datei ist unter &quot;[&#x200B; auf Inhalte konfigurieren - /filter“ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de).
 
 In diesem Abschnitt werden Einträge beschrieben, die wahrscheinlich für das ordnungsgemäße Funktionieren der Communities-Funktionen erforderlich sind.
 

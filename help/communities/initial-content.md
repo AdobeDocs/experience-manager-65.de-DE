@@ -18,7 +18,7 @@ ht-degree: 3%
 
 # Anfänglicher Sandbox-Inhalt {#initial-sandbox-content}
 
-In diesem Abschnitt erstellen Sie die folgenden Seiten, die alle die [Seitenvorlage“ ](initial-app.md#createthepagetemplate):
+In diesem Abschnitt erstellen Sie die folgenden Seiten, die alle die [Seitenvorlage“ &#x200B;](initial-app.md#createthepagetemplate):
 
 * SCF Sandbox-Site, die zur englischen Version der Hauptseite weiterleitet.
 
@@ -26,11 +26,11 @@ In diesem Abschnitt erstellen Sie die folgenden Seiten, die alle die [Seitenvorl
 
    * SCF Play - Untergeordnetes Element der Hauptseite, auf der gespielt werden soll.
 
-Dieses Tutorial geht nicht auf [Sprachkopien“ ](../../help/sites-administering/tc-prep.md). Stattdessen wurde er so konzipiert, dass die Stammseite die Erkennung der bevorzugten Sprache für den Benutzer über den HTML-Header implementieren und zur entsprechenden Hauptseite für die Sprache umleiten kann. Die Konvention besagt, dass der aus zwei Buchstaben bestehende Länder-Code für den Knotennamen der Seite verwendet wird, z. B. „en“ für Englisch und „fr“ für Französisch.
+Dieses Tutorial geht nicht auf [Sprachkopien“ &#x200B;](../../help/sites-administering/tc-prep.md). Stattdessen wurde er so konzipiert, dass die Stammseite die Erkennung der bevorzugten Sprache für den Benutzer über den HTML-Header implementieren und zur entsprechenden Hauptseite für die Sprache umleiten kann. Die Konvention besagt, dass der aus zwei Buchstaben bestehende Länder-Code für den Knotennamen der Seite verwendet wird, z. B. „en“ für Englisch und „fr“ für Französisch.
 
 ## Erste Seiten erstellen {#create-first-pages}
 
-Da es jetzt eine [Seitenvorlage“ ](initial-app.md#createthepagetemplate), können Sie die Stammseite der Website im Verzeichnis /content einrichten.
+Da es jetzt eine [Seitenvorlage“ &#x200B;](initial-app.md#createthepagetemplate), können Sie die Stammseite der Website im Verzeichnis /content einrichten.
 
 1. Die Standard-Benutzeroberfläche bietet derzeit Blueprints zum Erstellen von Sites. Da dieses Tutorial eine einfache Site erstellt, ist die klassische Benutzeroberfläche nützlich.
 

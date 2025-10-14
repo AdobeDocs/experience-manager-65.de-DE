@@ -32,7 +32,7 @@ Um einer Seite im Autorenmodus eine `Reviews` Komponente hinzuzufügen, suchen S
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [erforderlichen Client-seitigen ](reviews-basics.md#essentials-for-client-side) enthalten sind, wird die `Reviews` Komponente wie folgt angezeigt.
+Wenn die [erforderlichen Client-seitigen &#x200B;](reviews-basics.md#essentials-for-client-side) enthalten sind, wird die `Reviews` Komponente wie folgt angezeigt.
 
 ![create-review](assets/create-review.png)
 
@@ -178,7 +178,7 @@ Auf der Registerkarte **[!UICONTROL Zusammenfassung überprüfen]**
 
 * `Review Path`
 
-  Geben Sie die platzierte Instanz der `reviews`-Komponente ein oder navigieren Sie zu ihr, um sie zusammenzufassen. Wenn sie beispielsweise zur Web-Seite der [Geometrixx Engage-Site hinzugefügt wird, lautet ](getting-started.md) Pfad:
+  Geben Sie die platzierte Instanz der `reviews`-Komponente ein oder navigieren Sie zu ihr, um sie zusammenzufassen. Wenn sie beispielsweise zur Web-Seite der [Geometrixx Engage-Site hinzugefügt wird, lautet &#x200B;](getting-started.md) Pfad:
 
   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
@@ -212,7 +212,7 @@ Geben **[!UICONTROL auf der Registerkarte]** Ressourcentypen“ den benutzerdefi
 
 * **[!UICONTROL Systemressourcentyp kommentieren]**
 
-  Navigieren Sie zum resourceType einer erweiterten Komponente `comments`Kommentarsystem) in /apps. Leer lassen, es sei denn, [ Seitenvorlage fügt ](scf.md#add-or-include-a-communities-component) Kommentarsystem dem zugrunde liegenden Skript hinzu, anstatt zur Seite als Ressource hinzugefügt zu werden (Knoten „comments„). Weitere Informationen finden Sie im Abschnitt über den [`{{include}}` Helper](handlebars-helpers.md#include).
+  Navigieren Sie zum resourceType einer erweiterten Komponente `comments`Kommentarsystem) in /apps. Leer lassen, es sei denn, [&#x200B; Seitenvorlage fügt &#x200B;](scf.md#add-or-include-a-communities-component) Kommentarsystem dem zugrunde liegenden Skript hinzu, anstatt zur Seite als Ressource hinzugefügt zu werden (Knoten „comments„). Weitere Informationen finden Sie im Abschnitt über den [`{{include}}` Helper](handlebars-helpers.md#include).
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 

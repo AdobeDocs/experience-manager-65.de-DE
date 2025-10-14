@@ -37,7 +37,7 @@ AEM kann mit dem Adobe PhoneGap Build-Service (`https://build.phonegap.com/`) in
 
 ## Erstellen von Apps {#creating-apps}
 
-Entwicklerinnen und Entwickler können das [AEM PhoneGap Starter Kit ](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) zusammen mit zusätzlichen Ressourcen in [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) verwenden, um AEM-Apps mit PhoneGap zu bootstrappen, einschließlich einer nativen Referenz-App, in der Cordova Webviews ausgeführt wird.
+Entwicklerinnen und Entwickler können das [AEM PhoneGap Starter Kit &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) zusammen mit zusätzlichen Ressourcen in [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) verwenden, um AEM-Apps mit PhoneGap zu bootstrappen, einschließlich einer nativen Referenz-App, in der Cordova Webviews ausgeführt wird.
 
 Die Readme-Datei für das Git-Repository des Starter Kits enthält ein Tutorial für die Verwendung des Starter Kits:
 
@@ -70,7 +70,7 @@ IOS-Entwickler sollten sich über ein offenes Problem mit Cordova-Apps, die auf 
 
 >[!NOTE]
 >
->Weitere Informationen zu „App Transport Security“ finden Sie im folgenden Abschnitt der Vorabversionsdokumente für iOS9 von [Apple ](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) dieser [Stack Overflow-Diskussion](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
+>Weitere Informationen zu „App Transport Security“ finden Sie im folgenden Abschnitt der Vorabversionsdokumente für iOS9 von [Apple &#x200B;](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) dieser [Stack Overflow-Diskussion](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
 
 ## Entwickeln von Mobile Apps in AEM {#developing-mobile-applications-in-aem-1}
 

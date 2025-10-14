@@ -19,7 +19,7 @@ ht-degree: 7%
 
 {{ue-over-mobile}}
 
-Adobe Experience Manager (AEM)-Inhalte können einfach über „Sling Standard[Servlets“ gerendert werden](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) um ([) ](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) andere Formate zu rendern.
+Adobe Experience Manager (AEM)-Inhalte können einfach über „Sling Standard[Servlets“ gerendert werden](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) um ([) &#x200B;](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) andere Formate zu rendern.
 
 Diese vordefinierten Renderings führen normalerweise das Repository durch und geben die Inhalte unverändert zurück.
 

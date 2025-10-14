@@ -30,7 +30,7 @@ Siehe auch [Merkmale von SRP-Optionen](working-with-srp.md#characteristics-of-sr
 
    * Version 2.6 oder höher
    * Keine Notwendigkeit, Mongos oder Freigabe zu konfigurieren
-   * Es wird dringend empfohlen, einen [Replikatsatz“ zu ](#mongoreplicaset)
+   * Es wird dringend empfohlen, einen [Replikatsatz“ zu &#x200B;](#mongoreplicaset)
    * Kann auf demselben Host wie AEM oder remote ausgeführt werden
 
 * [Apache Solr](https://lucene.apache.org/solr/):
@@ -100,7 +100,7 @@ Der Solr-Sammlungsname.
 
 >[!NOTE]
 >
->Die mongoDB-Datenbank, die standardmäßig den Namen `communities` hat, sollte nicht auf den Namen einer Datenbank eingestellt werden, die für [Knotenspeicher oder Datenspeicher (binäre) verwendet ](../../help/sites-deploying/data-store-config.md). Siehe auch [Speicherelemente in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
+>Die mongoDB-Datenbank, die standardmäßig den Namen `communities` hat, sollte nicht auf den Namen einer Datenbank eingestellt werden, die für [Knotenspeicher oder Datenspeicher (binäre) verwendet &#x200B;](../../help/sites-deploying/data-store-config.md). Siehe auch [Speicherelemente in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 ### MongoDB-Replikat {#mongodb-replica-set}
 
@@ -134,7 +134,7 @@ Weitere Informationen zur Konfiguration finden Sie unter [Solr-Konfiguration fü
 
 Wenn Sie von einer früheren Version aktualisieren, die mit MSRP konfiguriert wurde, müssen Sie:
 
-1. Führen Sie das [Upgrade auf AEM Communities&quot; ](upgrade.md)
+1. Führen Sie das [Upgrade auf AEM Communities&quot; &#x200B;](upgrade.md)
 1. Installieren neuer Solr-Konfigurationsdateien
    * Für [Standard-MLS](solr.md#installing-standard-mls)
    * Für [erweiterte MLS](solr.md#installing-advanced-mls)
@@ -222,7 +222,7 @@ Informationen zum Einrichten von MSRP für eine Demonstrations- oder Entwicklung
 
 Stellen Sie sicher, dass MSRP als Standardanbieter konfiguriert wurde, indem Sie die Konfiguration der Speicheroption überprüfen. Standardmäßig ist der Speicherressourcenanbieter JSRP.
 
-Rufen Sie auf allen Autoren- und Veröffentlichungs-AEM-Instanzen die [Speicherkonfigurationskonsole“ erneut auf ](srp-config.md) überprüfen Sie das AEM-Repository:
+Rufen Sie auf allen Autoren- und Veröffentlichungs-AEM-Instanzen die [Speicherkonfigurationskonsole“ erneut auf &#x200B;](srp-config.md) überprüfen Sie das AEM-Repository:
 
 * In JCR, wenn [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -231,7 +231,7 @@ Rufen Sie auf allen Autoren- und Veröffentlichungs-AEM-Instanzen die [Speicherk
 
 ### UGC verschwindet nach dem Upgrade {#ugc-disappears-after-upgrade}
 
-Bei einem Upgrade von einer bestehenden AEM Communities 6.0-Site müssen alle bereits vorhandenen benutzergenerierten Inhalte nach dem Upgrade auf AEM Communities 6.3 so konvertiert werden, dass sie der Struktur entsprechen, [ für die ](srp.md)-API erforderlich ist.
+Bei einem Upgrade von einer bestehenden AEM Communities 6.0-Site müssen alle bereits vorhandenen benutzergenerierten Inhalte nach dem Upgrade auf AEM Communities 6.3 so konvertiert werden, dass sie der Struktur entsprechen, [&#x200B; für die &#x200B;](srp.md)-API erforderlich ist.
 
 Zu diesem Zweck steht auf GitHub ein Open-Source-Tool zur Verfügung:
 

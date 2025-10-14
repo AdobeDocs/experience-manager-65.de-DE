@@ -38,7 +38,7 @@ Und ziehen Sie es auf eine Seite.
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen Client-seitigen ](/help/communities/essentials-file-library.md#essentials-for-client-side) enthalten sind, wird die `File Library` Komponente wie folgt angezeigt:
+Wenn die [erforderlichen Client-seitigen &#x200B;](/help/communities/essentials-file-library.md#essentials-for-client-side) enthalten sind, wird die `File Library` Komponente wie folgt angezeigt:
 
 ![file-library1](assets/file-library1.png)
 

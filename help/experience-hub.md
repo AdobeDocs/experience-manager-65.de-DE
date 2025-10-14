@@ -83,4 +83,4 @@ Wenn keine Produktions-AEM Cloud Service- oder Managed Services-Umgebungen vorha
 
 ## KI-Assistent in AEM
 
-Für Kunden, [ die erforderlichen Kriterien erfüllt haben](/help/ai-assistant-in-aem.md#get-access) steht der KI-Assistent in AEM den Benutzenden ihres Unternehmens zur Verfügung. Siehe [KI-Assistent in AEM](/help/ai-assistant-in-aem.md).
+Für Kunden, [&#x200B; die erforderlichen Kriterien erfüllt haben](/help/ai-assistant-in-aem.md#get-access) steht der KI-Assistent in AEM den Benutzenden ihres Unternehmens zur Verfügung. Siehe [KI-Assistent in AEM](/help/ai-assistant-in-aem.md).

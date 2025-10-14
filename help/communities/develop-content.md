@@ -20,4 +20,4 @@ ht-degree: 0%
 
 **[Clientlibs hinzufügen](add-clientlibs.md)**
 
-An dieser Stelle ist es möglich, Community-Funktionen in der Sandbox zusammen mit der Verwendung von [We-Retail](../../help/sites-developing/we-retail.md), dem [Community-Komponentenhandbuch](components-guide.md) und [Feature ](essentials.md)) zu untersuchen.
+An dieser Stelle ist es möglich, Community-Funktionen in der Sandbox zusammen mit der Verwendung von [We-Retail](../../help/sites-developing/we-retail.md), dem [Community-Komponentenhandbuch](components-guide.md) und [Feature &#x200B;](essentials.md)) zu untersuchen.

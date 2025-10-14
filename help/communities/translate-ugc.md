@@ -36,7 +36,7 @@ In diesem Abschnitt wird erläutert, wie der Übersetzungs-Service mit benutzerg
 
 Wenn ein Übersetzungsdienstleister mit der Website verknüpft ist, verwaltet jede Sprachkopie der Website ihre eigenen Threads von UGC, die über SCF-Komponenten wie Kommentare veröffentlicht werden.
 
-Wenn zusätzlich zum Übersetzungsdienstleister eine Übersetzungsintegration konfiguriert ist, kann jede Sprachkopie der Website einen einzigen Thread von benutzergenerierten Inhalten gemeinsam nutzen und so eine globale Kommunikation über Sprachkopien hinweg sicherstellen. Anstelle eines nach Sprache getrennten Diskussions-Threads ermöglicht der konfigurierte [globale freigegebene ](#global-translation-of-ugc)) die Anzeige des gesamten Threads, unabhängig davon, von welcher Sprachkopie er angezeigt wird. Darüber hinaus können mehrere Übersetzungsintegrationskonfigurationen konfiguriert werden, die unterschiedliche globale Shared Stores für eine logische Gruppierung globaler Teilnehmer angeben, z.B. nach Regionen.
+Wenn zusätzlich zum Übersetzungsdienstleister eine Übersetzungsintegration konfiguriert ist, kann jede Sprachkopie der Website einen einzigen Thread von benutzergenerierten Inhalten gemeinsam nutzen und so eine globale Kommunikation über Sprachkopien hinweg sicherstellen. Anstelle eines nach Sprache getrennten Diskussions-Threads ermöglicht der konfigurierte [globale freigegebene &#x200B;](#global-translation-of-ugc)) die Anzeige des gesamten Threads, unabhängig davon, von welcher Sprachkopie er angezeigt wird. Darüber hinaus können mehrere Übersetzungsintegrationskonfigurationen konfiguriert werden, die unterschiedliche globale Shared Stores für eine logische Gruppierung globaler Teilnehmer angeben, z.B. nach Regionen.
 
 ## Der standardmäßige Übersetzungs-Service {#the-default-translation-service}
 
@@ -48,7 +48,7 @@ Beim [Erstellen einer Community](sites-console.md)Site wird der standardmäßige
 >
 >Der standardmäßige Übersetzungs-Service dient nur zur Demonstration.
 >
->Für ein Produktionssystem ist ein lizenzierter Übersetzungs-Service erforderlich. Wenn er nicht lizenziert ist, sollte der standardmäßige Übersetzungs-Service [deaktiviert) ](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
+>Für ein Produktionssystem ist ein lizenzierter Übersetzungs-Service erforderlich. Wenn er nicht lizenziert ist, sollte der standardmäßige Übersetzungs-Service [deaktiviert) &#x200B;](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
 
 ## Globale Übersetzung von UGC {#global-translation-of-ugc}
 

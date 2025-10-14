@@ -150,7 +150,7 @@ Skript-Tags in SCF-Skripten sollten beim Überlagern oder Überschreiben von Kom
 
 ## Clientlibs für SCF {#clientlibs-for-scf}
 
-Die Verwendung [ Client-seitigen ](../../help/sites-developing/clientlibs.md) (clientlibs) bietet eine Möglichkeit, die JavaScript und CSS, die zum Rendern von Inhalten auf dem Client verwendet werden, zu organisieren und zu optimieren.
+Die Verwendung [&#x200B; Client-seitigen &#x200B;](../../help/sites-developing/clientlibs.md) (clientlibs) bietet eine Möglichkeit, die JavaScript und CSS, die zum Rendern von Inhalten auf dem Client verwendet werden, zu organisieren und zu optimieren.
 
 Die Client-Bibliotheken für SCF folgen einem sehr spezifischen Benennungsmuster für zwei Varianten, die nur durch das Vorhandensein von „author“ im Kategorienamen variieren:
 
@@ -193,7 +193,7 @@ Zum Beispiel:
 
 Hinweis: Während Autoren-Client-Bibliotheken nie andere Bibliotheken einbetten, listen sie ihre Abhängigkeiten auf. Wenn die Abhängigkeiten in andere Bibliotheken eingebettet werden, werden sie nicht automatisch abgerufen und müssen ebenfalls eingebettet werden.
 
-Die erforderlichen Autoren-Client-Bibliotheken können identifiziert werden, indem „author“ in die Client-Bibliotheken eingefügt wird, die für jede SCF-Komponente im [Community-Komponentenhandbuch“ aufgeführt ](components-guide.md).
+Die erforderlichen Autoren-Client-Bibliotheken können identifiziert werden, indem „author“ in die Client-Bibliotheken eingefügt wird, die für jede SCF-Komponente im [Community-Komponentenhandbuch“ aufgeführt &#x200B;](components-guide.md).
 
 ### Überlegungen zur Verwendung {#usage-considerations}
 

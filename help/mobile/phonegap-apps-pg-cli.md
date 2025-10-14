@@ -30,7 +30,7 @@ PhoneGap CLI einrichten (`https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.
 
 Für iOS: Für die Entwicklung für iPhones und iPads benötigen Sie die Xcode-IDE von Apple.
 
-* Laden Sie es kostenlos herunter [hier](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
+* Laden Sie es kostenlos herunter [hier](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&path=%2Fdownload%2F&rv=1).
 * PhoneGap iOS-Plattformhandbuch (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
 Für Android™: Um für iPhones und iPads zu entwickeln, benötigen Sie die Android™ Studio-IDE von Google.

@@ -30,7 +30,7 @@ In der AEM-Autoreninstanz über die globale Navigation:
    * Wählen Sie das Kartenbild aus.
    * Wählen *nicht* Symbol aus.
 
-Dadurch wird die „Gruppen[Konsole“ ](/help/communities/groups.md):
+Dadurch wird die „Gruppen[Konsole“ &#x200B;](/help/communities/groups.md):
 
 ![create-group](assets/create-group.png)
 

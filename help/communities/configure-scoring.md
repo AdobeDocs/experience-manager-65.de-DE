@@ -27,7 +27,7 @@ Einzelheiten zur Einrichtung der Funktion finden Sie unter
 
 Diese Seite enthält zusätzliche technische Details :
 
-* So zeigen [ ein Badge ](#displaying-badges) Bild oder Text an
+* So zeigen [&#x200B; ein Badge &#x200B;](#displaying-badges) Bild oder Text an
 * Anleitung zum Aktivieren der umfangreichen [Debug-Protokollierung](#debug-log-for-scoring-and-badging)
 * Wie Sie [UGC) zugreifen](#ugc-for-scoring-and-badging) im Zusammenhang mit der Bewertung und dem Badging
 
@@ -126,7 +126,7 @@ Die Beschreibungen für den Zugriff auf Scoring- und Badging-Daten verwenden JSR
 
 **JSRP auf Author**: Experimentieren in der Authoring-Umgebung führt zu UGC, der nur in der Authoring-Umgebung sichtbar ist.
 
-**JSRP bei der Veröffentlichung**: Entsprechend ist es beim Testen in der Veröffentlichungsumgebung erforderlich, auf CRXDE Lite mit Administratorrechten in einer Veröffentlichungsinstanz zuzugreifen. Wenn die Veröffentlichungsinstanz im [Produktionsmodus) ausgeführt wird ](/help/sites-administering/production-ready.md)Ausführungsmodus „nosamplecontent„), müssen Sie [CRXDE Lite aktivieren](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP bei der Veröffentlichung**: Entsprechend ist es beim Testen in der Veröffentlichungsumgebung erforderlich, auf CRXDE Lite mit Administratorrechten in einer Veröffentlichungsinstanz zuzugreifen. Wenn die Veröffentlichungsinstanz im [Produktionsmodus) ausgeführt wird &#x200B;](/help/sites-administering/production-ready.md)Ausführungsmodus „nosamplecontent„), müssen Sie [CRXDE Lite aktivieren](/help/sites-administering/enabling-crxde-lite.md).
 
 Der Basisspeicherort von UGC auf JSRP ist `/content/usergenerated/asi/jcr/`.
 

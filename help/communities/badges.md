@@ -45,7 +45,7 @@ Diese Konsole zeigt die derzeit verfügbaren Abzeichen an, aus denen neue Abzeic
 
 Ein Badge wird erstellt, indem ein entsprechend kleines Bild (72 dpi mit einer Höhe zwischen 26 und 32 Pixel) hochgeladen und ein Name angegeben wird. Das Badge-Bild wird im Repository unter `/libs/settings/community/badging/images` gespeichert und automatisch in der Veröffentlichungsumgebung repliziert.
 
-Wenn die Veröffentlichungsumgebung eine Farm von Herausgebern ist, müssen Sie &quot;[&quot; ](/help/communities/sync.md).
+Wenn die Veröffentlichungsumgebung eine Farm von Herausgebern ist, müssen Sie &quot;[&quot; &#x200B;](/help/communities/sync.md).
 
 ![create-badge](assets/create-badge.png)
 

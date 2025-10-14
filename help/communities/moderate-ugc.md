@@ -209,7 +209,7 @@ Die Spam-Erkennung ist eine Funktion zur automatischen Moderation, die unerwüns
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
-Um jedoch die standardmäßigen Spam-Wörter anzupassen oder zu erweitern, erstellen Sie im Verzeichnis /apps einen Satz von Wörtern, der der Struktur der standardmäßigen Spam-Wörter mit &quot;[&quot; ](/help/communities/overlay-comments.md).
+Um jedoch die standardmäßigen Spam-Wörter anzupassen oder zu erweitern, erstellen Sie im Verzeichnis /apps einen Satz von Wörtern, der der Struktur der standardmäßigen Spam-Wörter mit &quot;[&quot; &#x200B;](/help/communities/overlay-comments.md).
 
 Ein benutzergenerierter Beitrag (über alle Inhaltstypen hinweg, z. B. Blogs, Foren und Kommentare), der Spam-Wörter enthält, ist mit dem Text „Dieser Beitrag wurde als Spam klassifiziert“ über dem Beitrag markiert.
 

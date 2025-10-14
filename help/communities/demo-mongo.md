@@ -115,7 +115,7 @@ Um eine Solr-Sammlung für MSRP für die Demo zu konfigurieren, müssen zwei Ent
 
 ### Eigenständiges Solr {#standalone-solr}
 
-Die Methode zum Ausführen von Solr kann je nach Version und Installationsart unterschiedlich sein. Die [ Dokumentation ](https://archive.apache.org/dist/lucene/solr/ref-guide/) das Solr-Referenzhandbuch.
+Die Methode zum Ausführen von Solr kann je nach Version und Installationsart unterschiedlich sein. Die [&#x200B; Dokumentation &#x200B;](https://archive.apache.org/dist/lucene/solr/ref-guide/) das Solr-Referenzhandbuch.
 
 Um das Beispiel zu vereinfachen, starten Sie Solr mit Version 4.10 im eigenständigen Modus:
 
@@ -183,7 +183,7 @@ Um den gemeinsamen Speicher von MongoDB zu testen und zu überprüfen, posten Si
 
 1. Stellen Sie sicher, dass MSRP als Standardanbieter konfiguriert wurde:
 
-   * Rufen Sie auf allen Autoren- und Veröffentlichungs-AEM[Instanzen die Speicherkonfigurationskonsole erneut auf ](srp-config.md) überprüfen Sie das AEM-Repository:
+   * Rufen Sie auf allen Autoren- und Veröffentlichungs-AEM[Instanzen die Speicherkonfigurationskonsole erneut auf &#x200B;](srp-config.md) überprüfen Sie das AEM-Repository:
 
    * Wenn [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) im JCR keinen &quot;[&quot;-](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) enthält, bedeutet dies, dass der Speicheranbieter JSRP ist.
    * Wenn der srpc-Knoten vorhanden ist und den Knoten [defaultConfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration) enthält, sollten die Eigenschaften der defaultConfiguration festlegen, dass MSRP der Standardanbieter ist.

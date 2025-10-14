@@ -111,7 +111,7 @@ Verwendet [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
 * Kopieren `comments.hbs`
 
    * Von [/libs/social/commons/components/hbs/comments](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments)
-   * So [ Sie/apps/custom/components/comments](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments)
+   * So [&#x200B; Sie/apps/custom/components/comments](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments)
 
 * `comments.hbs` bearbeiten nach:
 
@@ -128,7 +128,7 @@ Verwendet [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
 * Kopieren `comment.hbs`
 
    * Von [/libs/social/commons/components/hbs/comments/comment](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments/comment)
-   * So [ Sie/apps/custom/components/comments/comment](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment)
+   * So [&#x200B; Sie/apps/custom/components/comments/comment](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment)
 
 * `comment.hbs` bearbeiten nach:
 

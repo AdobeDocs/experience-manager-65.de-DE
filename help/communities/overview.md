@@ -203,7 +203,7 @@ Der [AEM-Demomaschine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine
 
 Der AEM-Demomaschine umfasst:
 
-* Eine [grafische ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/User%20Interface).
+* Eine [grafische &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/User%20Interface).
 * Apache ANT-Skripte mit konfigurierbaren [Eigenschaften](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Properties) und [Zielen](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Command%20Line).
 
 * Zu installierende Pakete.
@@ -214,7 +214,7 @@ Für den AEM-Demomaschine ist eine gültige AEM-Lizenz erforderlich.
 
 >[!NOTE]
 >
->Sehen Sie sich eine [Videoeinführung](https://www.youtube.com/watch?v=zEE_zkR9fVQ&amp;feature=youtu.be) zum AEM-Demomaschine an (13:26).
+>Sehen Sie sich eine [Videoeinführung](https://www.youtube.com/watch?v=zEE_zkR9fVQ&feature=youtu.be) zum AEM-Demomaschine an (13:26).
 
 ## Dokumentation zu AEM Communities {#aem-communities-documentation}
 

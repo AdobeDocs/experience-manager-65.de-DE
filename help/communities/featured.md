@@ -47,7 +47,7 @@ und ziehen Sie sie auf eine Seite, auf der der angezeigte Inhalt angezeigt werde
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [erforderlichen Client-seitigen ](essentials-featured.md#essentials-for-client-side) enthalten sind, wird die `Featured Content` Komponente wie folgt angezeigt:
+Wenn die [erforderlichen Client-seitigen &#x200B;](essentials-featured.md#essentials-for-client-side) enthalten sind, wird die `Featured Content` Komponente wie folgt angezeigt:
 
 ![featuresContent](assets/featuredcontent.png)
 
@@ -95,4 +95,4 @@ Der `Read More` verweist auf den tatsächlichen Beitrag.
 
 Weitere Informationen finden Sie auf der Seite [Vorgestellte Inhalte](essentials-featured.md) für Entwickler.
 
-Informationen zum Kennzeichnen von Inhalten als vorgestellt finden [ unter „Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
+Informationen zum Kennzeichnen von Inhalten als vorgestellt finden [&#x200B; unter „Moderieren benutzergenerierter Inhalte](moderate-ugc.md).

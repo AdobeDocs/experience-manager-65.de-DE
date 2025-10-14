@@ -36,7 +36,7 @@ Siehe Abschnitt [MSRP Reindex Tool](/help/communities/msrp.md#msrp-reindex-tool)
 
 ## Aktualisieren von AEM 6.0 {#upgrading-from-aem}
 
-Wenn bereits vorhandener benutzergenerierter Inhalt beibehalten werden muss, hängt die Möglichkeit dazu davon ab, ob der benutzergenerierte Inhalt in der Bereitstellung [On-Premise](#on-premise-storage) oder in der [Adobe-Cloud gespeichert ](#adobe-cloud-storage).
+Wenn bereits vorhandener benutzergenerierter Inhalt beibehalten werden muss, hängt die Möglichkeit dazu davon ab, ob der benutzergenerierte Inhalt in der Bereitstellung [On-Premise](#on-premise-storage) oder in der [Adobe-Cloud gespeichert &#x200B;](#adobe-cloud-storage).
 
 ### Adobe-Cloud-Speicher {#adobe-cloud-storage}
 

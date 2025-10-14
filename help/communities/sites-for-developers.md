@@ -74,7 +74,7 @@ Identifizieren Sie die benutzerdefinierte Vorlage, indem Sie dem Konfigurationsk
 
 Denken Sie daran **„Alle speichern** und benutzerdefinierten Code auf allen Adobe Experience Manager (AEM)-Instanzen zu replizieren (benutzerdefinierter Code ist nicht enthalten, wenn die Inhalte der Community-Site über die Konsole veröffentlicht werden).
 
-Die empfohlene Vorgehensweise für das Replizieren von benutzerdefiniertem Code besteht darin[ ein Paket zu erstellen ](../../help/sites-administering/package-manager.md#creating-a-new-package) es auf allen Instanzen bereitzustellen.
+Die empfohlene Vorgehensweise für das Replizieren von benutzerdefiniertem Code besteht darin[&#x200B; ein Paket zu erstellen &#x200B;](../../help/sites-administering/package-manager.md#creating-a-new-package) es auf allen Instanzen bereitzustellen.
 
 ## Community-Site exportieren {#exporting-a-community-site}
 

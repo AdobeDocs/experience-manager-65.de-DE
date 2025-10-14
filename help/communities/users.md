@@ -30,13 +30,13 @@ In AEM Communities können sich Benutzende in der Veröffentlichungsumgebung sel
 
 In der Veröffentlichungsumgebung registrierte Benutzer werden im Allgemeinen als *Community-Mitglieder (Mitglieder)) bezeichnet* um sie von *Benutzern* in der Autorenumgebung zu unterscheiden.
 
-Berechtigungen werden gewährt, indem Mitglieder einer der [ (Benutzer-)Gruppen zugewiesen werden](#publish-group-roles) die dynamisch erstellt werden, wenn die Community[Site in der Autorenumgebung erstellt ](sites-console.md) [geändert ](sites-console.md#modifying-site-properties). Wenn Sie in der Autorenumgebung arbeiten, werden Mitglieder von der Veröffentlichungsumgebung aus mithilfe des [Tunnelservice](#tunnel-service) angezeigt.
+Berechtigungen werden gewährt, indem Mitglieder einer der [&#x200B; (Benutzer-)Gruppen zugewiesen werden](#publish-group-roles) die dynamisch erstellt werden, wenn die Community[Site in der Autorenumgebung erstellt &#x200B;](sites-console.md) [geändert &#x200B;](sites-console.md#modifying-site-properties). Wenn Sie in der Autorenumgebung arbeiten, werden Mitglieder von der Veröffentlichungsumgebung aus mithilfe des [Tunnelservice](#tunnel-service) angezeigt.
 
 Standardmäßig sollten in der Veröffentlichungsumgebung erstellte Mitglieder und Mitgliedergruppen nicht in der Autorenumgebung angezeigt werden. In der Autorenumgebung erstellte Benutzer und Benutzergruppen sollen ebenfalls in der Autorenumgebung verbleiben.
 
 Wenn Benutzer in der Autoren- und der Veröffentlichungsumgebung aus derselben Benutzerliste stammen, z. B. aus demselben LDAP-Verzeichnis synchronisiert, werden sie nicht als derselbe Benutzer mit denselben Berechtigungen und Gruppenmitgliedschaften in der Autoren- und der Veröffentlichungsumgebung betrachtet. Die Rolle(n) von Mitgliedern und Benutzern muss (müssen) bei der Veröffentlichung bzw. bei der Autoreninstanz separat festgelegt werden.
 
-Für eine [Veröffentlichungsfarm](topologies.md) müssen Registrierung und Änderungen auf einer Veröffentlichungsinstanz mit anderen Veröffentlichungsinstanzen synchronisiert werden, damit diese auf dieselben Benutzerdaten zugreifen können. Weitere Informationen finden Sie unter [Benutzersynchronisierung](sync.md) in einem Abschnitt, in dem beschrieben wird[ was passiert, wenn…](sync.md#what-happens-when).
+Für eine [Veröffentlichungsfarm](topologies.md) müssen Registrierung und Änderungen auf einer Veröffentlichungsinstanz mit anderen Veröffentlichungsinstanzen synchronisiert werden, damit diese auf dieselben Benutzerdaten zugreifen können. Weitere Informationen finden Sie unter [Benutzersynchronisierung](sync.md) in einem Abschnitt, in dem beschrieben wird[&#x200B; was passiert, wenn…](sync.md#what-happens-when).
 
 ### Anteilslimits {#contribution-limits}
 
@@ -48,7 +48,7 @@ Weitere Informationen finden Sie unter [Obergrenze für Mitgliederbeiträge](lim
 
 Wenn eine neue Community-Site erstellt wird, werden neue Benutzergruppen dynamisch mit eindeutigen IDs (UID) und Berechtigungen erstellt, die für verschiedene Verwaltungsfunktionen geeignet sind, die zur Verwaltung der Community-Site entweder in der Autorenumgebung (siehe [Autorengruppen-Rollen](#author-group-roles)) oder der Veröffentlichungsumgebung (siehe [Publish-](#publish-group-roles)) erforderlich sind.
 
-Die Namen der Gruppen werden aus dem Namen generiert, der der Site bei der Erstellung [ Community-Site ](sites-console.md#step13asitetemplate) wurde. Die eindeutigen IDs vermeiden Namenskonflikte für ähnlich benannte Community-Sites und Community-Gruppen auf demselben Server.
+Die Namen der Gruppen werden aus dem Namen generiert, der der Site bei der Erstellung [&#x200B; Community-Site &#x200B;](sites-console.md#step13asitetemplate) wurde. Die eindeutigen IDs vermeiden Namenskonflikte für ähnlich benannte Community-Sites und Community-Gruppen auf demselben Server.
 
 Wenn der Site-Name beispielsweise &quot;*Engage*&quot; für eine Site mit dem Titel „Engage“ lautete, wäre eine der erstellten Benutzergruppen:
 
@@ -58,7 +58,7 @@ Wenn der Site-Name beispielsweise &quot;*Engage*&quot; für eine Site mit dem Ti
 
 ### Tunnelverkehr {#tunnel-service}
 
-Wenn Sie die Autorenumgebung zum [Erstellen von Sites](sites-console.md), [Ändern von Site-](sites-console.md#modifying-site-properties) und [Verwalten von Community-Mitgliedern und ](members.md)) verwenden, ist es erforderlich, auf in der Veröffentlichungsumgebung registrierte Benutzer und Benutzergruppen zuzugreifen.
+Wenn Sie die Autorenumgebung zum [Erstellen von Sites](sites-console.md), [Ändern von Site-](sites-console.md#modifying-site-properties) und [Verwalten von Community-Mitgliedern und &#x200B;](members.md)) verwenden, ist es erforderlich, auf in der Veröffentlichungsumgebung registrierte Benutzer und Benutzergruppen zuzugreifen.
 
 Der Tunnel-Service ermöglicht diesen Zugriff mithilfe des Replikationsagenten auf der Autoreninstanz.
 
@@ -91,7 +91,7 @@ Befolgen Sie unbedingt die [Sicherheitscheckliste](../../help/sites-administerin
 
 ### Mitglied werden {#becoming-a-member}
 
-In der Veröffentlichungsumgebung kann ein Site[Besucher je nach den ](sites-console.md#user-management) der Community-Site Community-Mitglied werden:
+In der Veröffentlichungsumgebung kann ein Site[Besucher je nach den &#x200B;](sites-console.md#user-management) der Community-Site Community-Mitglied werden:
 
 * Wenn die Community-Site privat (geschlossen) ist:
    * Auf Einladung
@@ -118,17 +118,17 @@ In der Veröffentlichungsumgebung kann ein Site[Besucher je nach den ](sites-con
 
 ### Zuweisen von Mitgliedern zu Publish-Gruppenrollen {#assigning-members-to-publish-group-roles}
 
-Beim [Erstellen einer Community](sites-console.md)Site in der Autorenumgebung oder beim [Ändern von Site-Eigenschaften können ](sites-console.md#modifying-site-properties) Mitgliedern verschiedene Rollen zugewiesen werden, die in der Veröffentlichungsumgebung ausgeführt werden, z. B. Moderatoren, Gruppenadministratoren, Ressourcenkontakte oder privilegierte Mitglieder.
+Beim [Erstellen einer Community](sites-console.md)Site in der Autorenumgebung oder beim [Ändern von Site-Eigenschaften können &#x200B;](sites-console.md#modifying-site-properties) Mitgliedern verschiedene Rollen zugewiesen werden, die in der Veröffentlichungsumgebung ausgeführt werden, z. B. Moderatoren, Gruppenadministratoren, Ressourcenkontakte oder privilegierte Mitglieder.
 
 [Aktivieren des Tunneldienstes](sync.md#accessingpublishusersfromauthor) führt dazu, dass Zuweisungsoptionen von Mitgliedern in der Veröffentlichungsinstanz anstelle von Benutzern in der Autoreninstanz angezeigt werden.
 
-Die ausgewählten Mitglieder werden automatisch der [entsprechenden Gruppe“ zugewiesen ](#publish-group-roles) ihre Mitgliedschaften werden bei der (erneuten) Veröffentlichung der Community-Site einbezogen.
+Die ausgewählten Mitglieder werden automatisch der [entsprechenden Gruppe“ zugewiesen &#x200B;](#publish-group-roles) ihre Mitgliedschaften werden bei der (erneuten) Veröffentlichung der Community-Site einbezogen.
 
 ### Gruppe privilegierter Mitglieder {#privileged-members-group}
 
 Der Zweck einer Sicherheitsgruppe mit privilegierten Mitgliedern besteht darin, die Erstellung von Inhalten für bestimmte Community-Funktionen auf eine privilegierte Untergruppe der Mitglieder einer Community-Site zu beschränken.
 
-Die Gruppe privilegierter Mitglieder ist eine Mitgliedergruppe, die mithilfe der [Communities-Konsole“ erstellt und ](members.md) wird.
+Die Gruppe privilegierter Mitglieder ist eine Mitgliedergruppe, die mithilfe der [Communities-Konsole“ erstellt und &#x200B;](members.md) wird.
 
 Nachdem eine Gruppe privilegierter Mitglieder erstellt wurde und der [Tunneldienst aktiviert](sync.md#accessingpublishusersfromauthor) kann die Struktur einer vorhandenen Community-Site [geändert](sites-console.md#modify-structure) um die Konfiguration ihrer Community-Funktionen auf „Privilegierte Mitglieder zulassen“ zu bearbeiten und die erstellte Gruppe hinzuzufügen.
 
@@ -198,7 +198,7 @@ Führen Sie dieselben Schritte aus wie das Erstellen und Zuweisen eines Benutzer
 
 ### LDAP-Integration {#ldap-integration}
 
-AEM unterstützt die Verwendung von LDAP für die Authentifizierung von Benutzern und die Erstellung von Benutzerkonten. Dies wird unter &quot;[ von LDAP mit AEM 6“ ](../../help/sites-administering/ldap-config.md).
+AEM unterstützt die Verwendung von LDAP für die Authentifizierung von Benutzern und die Erstellung von Benutzerkonten. Dies wird unter &quot;[&#x200B; von LDAP mit AEM 6“ &#x200B;](../../help/sites-administering/ldap-config.md).
 
 Im Folgenden finden Sie einige Konfigurationsdetails, die speziell für Community-Mitglieder und Mitgliedergruppen gelten.
 
@@ -227,7 +227,7 @@ Dies führt dazu, dass Benutzende automatisch der Mitgliedergruppe der Community
 
 Stellen Sie bei Verwendung einer [Veröffentlichungsfarm](topologies.md) sicher, dass Benutzende auf jeder Veröffentlichungsinstanz denselben Pfad haben, indem Sie die Benutzenden zuerst in eine Instanz importieren und [Benutzersynchronisierung aktivieren](sync.md) um Sling die Benutzenden an die anderen Veröffentlichungsinstanzen zu verteilen.
 
-Wenn Sie Benutzergruppen importieren, um sicherzustellen, dass die Benutzergruppen auf jeder Veröffentlichungsinstanz denselben Pfad haben, importieren Sie in eine Instanz und [ Sie dann „Paket erstellen](../../help/sites-administering/package-manager.md#creating-a-new-package) für den Export und installieren Sie dieses Paket auf allen anderen Veröffentlichungsinstanzen.
+Wenn Sie Benutzergruppen importieren, um sicherzustellen, dass die Benutzergruppen auf jeder Veröffentlichungsinstanz denselben Pfad haben, importieren Sie in eine Instanz und [&#x200B; Sie dann „Paket erstellen](../../help/sites-administering/package-manager.md#creating-a-new-package) für den Export und installieren Sie dieses Paket auf allen anderen Veröffentlichungsinstanzen.
 
 Während die Synchronisierung von Benutzergruppen über die Benutzersynchronisierung in einer zukünftigen Version enthalten ist, wird derzeit nur die *Mitgliedschaft* einer Benutzergruppe synchronisiert, wenn die Benutzersynchronisierung ausgeführt wird.
 

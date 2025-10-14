@@ -123,7 +123,7 @@ Beispielcode ist im Repository [Adobe Experience Cloud GitHub](https://github.co
 
 Im Abschnitt [Kodierungsrichtlinien](code-guide.md) finden Sie verschiedene Kodierungsrichtlinien und Best Practices für AEM Communities-Entwickler.
 
-Informationen [ Zugriff auf benutzergenerierte Inhalte finden Sie unter ](srp.md)Speicherressourcenanbieter (SRP) für benutzergenerierte Inhalte).
+Informationen [&#x200B; Zugriff auf benutzergenerierte Inhalte finden Sie unter &#x200B;](srp.md)Speicherressourcenanbieter (SRP) für benutzergenerierte Inhalte).
 
 | **[⇐ Feature Essentials](essentials.md)** | **[Client-seitige ⇒](client-customize.md)** |
 |---|---|

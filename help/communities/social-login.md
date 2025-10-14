@@ -134,7 +134,7 @@ Das Ergebnis ist eine [Adobe Granite OAuth Application and Provider](https://hel
 
 ### AEM Communities Facebook OAuth-Anbieter {#aem-communities-facebook-oauth-provider}
 
-Der AEM Communities-Anbieter erweitert die OAuth-Anwendungs- und Provider2-Instanz von [Adobe ](#adobe-granite-oauth-application-and-provider) Granite.
+Der AEM Communities-Anbieter erweitert die OAuth-Anwendungs- und Provider2-Instanz von [Adobe &#x200B;](#adobe-granite-oauth-application-and-provider) Granite.
 
 Dieser Anbieter muss für Folgendes bearbeitet werden:
 
@@ -286,7 +286,7 @@ Die [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
 
    * **[!UICONTROL Zu Benutzergruppen hinzufügen]**
 
-     Wählen Sie Benutzergruppe hinzufügen aus, um eine oder [ (](https://helpx.adobe.com/de/experience-manager/6-3/communities/using/users.html)) für die Community-Site auszuwählen, der Benutzer hinzugefügt werden sollen.
+     Wählen Sie Benutzergruppe hinzufügen aus, um eine oder [&#x200B; (](https://helpx.adobe.com/de/experience-manager/6-3/communities/using/users.html)) für die Community-Site auszuwählen, der Benutzer hinzugefügt werden sollen.
 
    >[!NOTE]
    >
@@ -346,7 +346,7 @@ Die nächsten Schritte sind für Facebook und Twitter gleich:
 
 ### AEM Communities Sites-Konsole {#aem-communities-sites-console}
 
-Nachdem ein Cloud-Service konfiguriert wurde, kann er für die entsprechende Einstellung zur Anmeldung bei einer Community-Site über das Unterbedienfeld [Benutzerverwaltung](https://helpx.adobe.com/de/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) „Einstellungen“ während der Erstellung einer Community[Site ](https://helpx.adobe.com/de/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) oder [&#128279;](https://helpx.adobe.com/de/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties) aktiviert werden.
+Nachdem ein Cloud-Service konfiguriert wurde, kann er für die entsprechende Einstellung zur Anmeldung bei einer Community-Site über das Unterbedienfeld [Benutzerverwaltung](https://helpx.adobe.com/de/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) „Einstellungen“ während der Erstellung einer Community[Site &#x200B;](https://helpx.adobe.com/de/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) oder [&#128279;](https://helpx.adobe.com/de/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties) aktiviert werden.
 
 1. Wählen Sie den Site-Konfigurationskontext aus, in dem Sie Ihre Konfigurationen für die Anmeldung über Social Media gespeichert haben.
 

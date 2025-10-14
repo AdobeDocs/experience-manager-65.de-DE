@@ -50,8 +50,8 @@ Zu den unterstützten Communities-Funktionen gehören:
 
 In diesem Abschnitt der Dokumentation wird beschrieben, wie Sie eine Analytics Report Suite mit Communities-Funktionen verbinden. Die grundlegenden Schritte sind:
 
-1. [Replizieren Sie den ](#replicate-the-crypto-key), um sicherzustellen, dass die Verschlüsselung/Entschlüsselung auf allen AEM-Instanzen ordnungsgemäß erfolgt.
-1. Adobe Analytics ([ Suite) ](#adobe-analytics-report-suite-for-video-reporting)
+1. [Replizieren Sie den &#x200B;](#replicate-the-crypto-key), um sicherzustellen, dass die Verschlüsselung/Entschlüsselung auf allen AEM-Instanzen ordnungsgemäß erfolgt.
+1. Adobe Analytics ([&#x200B; Suite) &#x200B;](#adobe-analytics-report-suite-for-video-reporting)
 1. Erstellen eines AEM Analytics [Cloud-Service](#aem-analytics-cloud-service-configuration) und [Frameworks](#aem-analytics-framework-configuration)
 
 1. [Analytics aktivieren](#enable-analytics-for-a-community-site) für eine Community-Site
@@ -62,7 +62,7 @@ In diesem Abschnitt der Dokumentation wird beschrieben, wie Sie eine Analytics R
 
 ## Voraussetzungen {#prerequisites}
 
-Zum Konfigurieren der Funktionen von Analytics for Communities müssen Sie ein Adobe Analytics-Konto und eine [Report Suite“ ](#adobe-analytics-report-suite-for-video-reporting) Ihrem Kontobeauftragten einrichten. Nach ihrer Festlegung sollten folgende Informationen verfügbar sein:
+Zum Konfigurieren der Funktionen von Analytics for Communities müssen Sie ein Adobe Analytics-Konto und eine [Report Suite“ &#x200B;](#adobe-analytics-report-suite-for-video-reporting) Ihrem Kontobeauftragten einrichten. Nach ihrer Festlegung sollten folgende Informationen verfügbar sein:
 
 * **Firmenname**
 
@@ -149,7 +149,7 @@ So aktivieren Sie Video Heartbeat-Berichte nach [Konfigurieren der Analytics Rep
 * Aktivieren [Analytics für eine Community-Site](#enable-analytics-for-a-community-site)
 * Verknüpfen der `Marketing Cloud Org Id` mit der Community-Site
 
-Die `Marketing Cloud Org Id` kann zum Zeitpunkt der Erstellung der [-Community-Site ](/help/communities/sites-console.md) später durch [ der Eigenschaften ](/help/communities/sites-console.md#modifying-site-properties) Community-Site eingegeben werden.
+Die `Marketing Cloud Org Id` kann zum Zeitpunkt der Erstellung der [-Community-Site &#x200B;](/help/communities/sites-console.md) später durch [&#x200B; der Eigenschaften &#x200B;](/help/communities/sites-console.md#modifying-site-properties) Community-Site eingegeben werden.
 
 ![marketing-org-id](assets/marketing-org-id.png)
 
@@ -316,7 +316,7 @@ Der Analytics-Cloud-Service und das Framework sind jetzt abgeschlossen. Die Zuor
 
 ### Für neue Community-Site aktivieren {#enable-for-new-community-site}
 
-So fügen Sie den Analytics Cloud-Service beim [ einer Community-Site hinzu](/help/communities/sites-console.md):
+So fügen Sie den Analytics Cloud-Service beim [&#x200B; einer Community-Site hinzu](/help/communities/sites-console.md):
 
 * In Schritt 3 auf der [Registerkarte ANALYTICS](/help/communities/sites-console.md#analytics):
    * Aktivieren Sie das **Analytics aktivieren**.
@@ -326,7 +326,7 @@ So fügen Sie den Analytics Cloud-Service beim [ einer Community-Site hinzu](/he
 
 ### Für vorhandene Community-Site aktivieren {#enable-for-existing-community-site}
 
-So fügen Sie den Analytics Cloud-Service zu einer [ Community-Site hinzu](/help/communities/sites-console.md#modifying-site-properties):
+So fügen Sie den Analytics Cloud-Service zu einer [&#x200B; Community-Site hinzu](/help/communities/sites-console.md#modifying-site-properties):
 
 * Navigieren Sie zur Konsole **Communities > Sites** .
 * Wählen Sie das Symbol Website bearbeiten der Community-Website aus.
@@ -370,7 +370,7 @@ Für eine **generische AEM-Site** die Communities-Komponenten enthält, aber nic
 
 Analytics wird automatisch für mehrere Communities-Funktionen verwendet.
 
-Die OSGi[Konfiguration der Autorenumgebung ](/help/sites-deploying/configuring-osgi.md), `AEM Communities Analytics Component Configuration`, bietet eine Liste der Komponenten, die für Analytics instrumentiert wurden. Die automatische Zuordnung von Variablen wird durch die aufgelisteten Komponenten bestimmt.
+Die OSGi[Konfiguration der Autorenumgebung &#x200B;](/help/sites-deploying/configuring-osgi.md), `AEM Communities Analytics Component Configuration`, bietet eine Liste der Komponenten, die für Analytics instrumentiert wurden. Die automatische Zuordnung von Variablen wird durch die aufgelisteten Komponenten bestimmt.
 
 Wenn neue benutzerdefinierte Komponenten erstellt werden, die für Analytics instrumentiert sind, sollten sie dieser Liste der konfigurierten Komponenten hinzugefügt werden.
 
@@ -608,7 +608,7 @@ Nachdem der Analytics Cloud-Service für eine Community-Site aktiviert und bei B
 
 ### Berichtverwaltung {#report-management}
 
-Die OSGi-Konfiguration [ Autors und ](/help/sites-deploying/configuring-osgi.md) primären Herausgebers, `AEM Communities Analytics Report Management`, wird zur Abfrage von Analytics verwendet.
+Die OSGi-Konfiguration [&#x200B; Autors und &#x200B;](/help/sites-deploying/configuring-osgi.md) primären Herausgebers, `AEM Communities Analytics Report Management`, wird zur Abfrage von Analytics verwendet.
 
 Auf der Autoreninstanz sind die Abfragen für Echtzeitberichte.
 

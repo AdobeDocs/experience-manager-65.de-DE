@@ -26,7 +26,7 @@ Nachdem Sie Ihre Mobile App mit HTML5 und PhoneGap erstellt haben, können Sie s
 
 Mit dem AEM Apps Control Center können Sie Ihre Mobile App erstellen und bereitstellen, Anwendungsmetadaten erstellen und bearbeiten, bevor Sie Ihre Mobile App veröffentlichen. Sie können gemeinsam neue und relevante Inhalte kuratieren und häufig veröffentlichen, ohne die Übermittlungsprozesse des Anwendungsspeichers überprüfen und Lebenszyklus- und Nutzungsmetriken analysieren zu müssen, um die Kundenkonversion und Markentreue zu verbessern.
 
-Informationen zum Erstellen Ihrer AEM Mobile-Anwendung finden Sie auf der Seite [Erstellen von Mobile ](/help/mobile/building-app-mobile-phonegap.md)&quot; im Abschnitt Entwickler .
+Informationen zum Erstellen Ihrer AEM Mobile-Anwendung finden Sie auf der Seite [Erstellen von Mobile &#x200B;](/help/mobile/building-app-mobile-phonegap.md)&quot; im Abschnitt Entwickler .
 
 Einrichten der Umgebung und erste Schritte mit dem Control Center
 

@@ -42,7 +42,7 @@ Die verschiedenen Facetten von Community-Gruppen sind:
 
 >[!NOTE]
 >
->Diese Gruppen -Konsole, auf die nur über die Communities-Sites -Konsole zugegriffen werden kann, ist nicht mit der Mitglieds-(Gruppen[Konsole) ](/help/communities/members.md) die Verwaltung von Mitgliedergruppen zu verwechseln.
+>Diese Gruppen -Konsole, auf die nur über die Communities-Sites -Konsole zugegriffen werden kann, ist nicht mit der Mitglieds-(Gruppen[Konsole) &#x200B;](/help/communities/members.md) die Verwaltung von Mitgliedergruppen zu verwechseln.
 >
 >Mitgliedsgruppen sind Benutzergruppen, die in der Veröffentlichungsumgebung registriert sind und über die Autorenumgebung mithilfe des [Tunnelservice](/help/communities/deploy-communities.md#tunnel-service-on-author) aufgerufen werden.
 
@@ -56,7 +56,7 @@ So greifen Sie auf die Gruppenkonsole zu:
 * Wählen Sie eine Instanz einer Community-Site im Ordner aus.
 
    * Die Struktur der Community-Site muss eine Gruppenfunktion enthalten.
-   * Diese Screenshots stammen aus dem Tutorial Erste Schritte nach [Erstellen von Gruppen in der ](/help/communities/published-site.md)).
+   * Diese Screenshots stammen aus dem Tutorial Erste Schritte nach [Erstellen von Gruppen in der &#x200B;](/help/communities/published-site.md)).
 
   ![create-group](assets/create-group.png)
 
@@ -173,7 +173,7 @@ Die Mitgliedschaftseinstellung ermöglicht die Auswahl einer der drei Möglichke
 
 * **Eingeschränkte Mitgliedschaft**
 
-  Wenn diese Option aktiviert ist, ist die Community-Gruppe eine geheime Gruppe. Community-Mitglieder müssen ausdrücklich eingeladen werden. Eingeladene Mitglieder werden in das Suchfeld eingegeben. Mitglieder können später über die Konsolen [Mitglieder und Gruppen“ in ](/help/communities/members.md) Autorenumgebung hinzugefügt werden. Standard ist nicht ausgewählt.
+  Wenn diese Option aktiviert ist, ist die Community-Gruppe eine geheime Gruppe. Community-Mitglieder müssen ausdrücklich eingeladen werden. Eingeladene Mitglieder werden in das Suchfeld eingegeben. Mitglieder können später über die Konsolen [Mitglieder und Gruppen“ in &#x200B;](/help/communities/members.md) Autorenumgebung hinzugefügt werden. Standard ist nicht ausgewählt.
 
 **MINIATURANSICHT**
 

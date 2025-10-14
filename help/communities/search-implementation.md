@@ -48,11 +48,11 @@ Der [UGC Common Store](working-with-srp.md) wird von einem von verschiedenen Spe
 
 ### ASRP-Suchen {#asrp-searches}
 
-Bei [ASRP](asrp.md) wird UGC in der Adobe-Cloud gespeichert. Während benutzergenerierter Inhalt in CRX nicht sichtbar ist[ ist ](moderate-ugc.md)Moderation“ sowohl in der Authoring- als auch in der Publish-Umgebung verfügbar. Die Verwendung der [UGC Search API](#ugc-search-api) funktioniert für ASRP genauso wie für andere SRPs.
+Bei [ASRP](asrp.md) wird UGC in der Adobe-Cloud gespeichert. Während benutzergenerierter Inhalt in CRX nicht sichtbar ist[&#x200B; ist &#x200B;](moderate-ugc.md)Moderation“ sowohl in der Authoring- als auch in der Publish-Umgebung verfügbar. Die Verwendung der [UGC Search API](#ugc-search-api) funktioniert für ASRP genauso wie für andere SRPs.
 
 Für die Verwaltung von ASRP-Suchen gibt es derzeit keine Tools.
 
-Beim Erstellen benutzerdefinierter Eigenschaften, die durchsuchbar sind, müssen Sie die [Namensanforderungen“ ](#naming-of-custom-properties).
+Beim Erstellen benutzerdefinierter Eigenschaften, die durchsuchbar sind, müssen Sie die [Namensanforderungen“ &#x200B;](#naming-of-custom-properties).
 
 ### MSRP-Suchen {#msrp-searches}
 
@@ -67,7 +67,7 @@ Zu MSRP und Solr:
 
 Benutzerdefinierte Suchfunktionen sollten die [UGC-Such-API](#ugc-search-api) verwenden.
 
-Beim Erstellen benutzerdefinierter Eigenschaften, die durchsuchbar sind, müssen Sie die [Namensanforderungen“ ](#naming-of-custom-properties).
+Beim Erstellen benutzerdefinierter Eigenschaften, die durchsuchbar sind, müssen Sie die [Namensanforderungen“ &#x200B;](#naming-of-custom-properties).
 
 ### JSRP-Suchen {#jsrp-searches}
 

@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Alle AEM Communities-Komponenten und -Funktionen basieren auf dem [Social Component Framework (SCF)](/help/communities/scf.md) das die SocialResourceProvider-API aufruft, um auf alle benutzergenerierten Inhalte zuzugreifen.
 
-Bevor eine Community-Site erstellt wird, muss [Speicherressourcenanbieter (SRP)) ](/help/communities/working-with-srp.md) werden, um eine Implementierung auszuwählen, die der zugrunde liegenden [Topologie) ](/help/communities/topologies.md). Die SRP-Implementierungen basieren auf drei Speicheroptionen :
+Bevor eine Community-Site erstellt wird, muss [Speicherressourcenanbieter (SRP)) &#x200B;](/help/communities/working-with-srp.md) werden, um eine Implementierung auszuwählen, die der zugrunde liegenden [Topologie) &#x200B;](/help/communities/topologies.md). Die SRP-Implementierungen basieren auf drei Speicheroptionen :
 
 1. [ASRP](/help/communities/asrp.md) - Adobe-On-Demand-Speicher
 1. [MSRP](/help/communities/msrp.md) - MongoDB

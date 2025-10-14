@@ -22,7 +22,7 @@ ht-degree: 5%
 
 Adobe Experience Manager (AEM) Communities vereinfacht die Erstellung und Anpassung von Community-Funktionen wie Foren, Benutzergruppen, Blogs, Fragen und Antworten, Kalendern, Kommentaren, Rezensionen, Abstimmungen, Bewertungen und Zuweisungen. Diese Funktionen führen dazu, dass benutzergenerierte Inhalte (User-Generated Content, UGC) in die Veröffentlichungsumgebung eingegeben werden.
 
-Die Grundlage einer [Community Site](overview.md#communitiessites) ist das [Social Component Framework](scf.md) (SCF). Die Erstellung einer Community-Site beginnt mit der Auswahl einer [Community-Site-Vorlage](sites-console.md) die aus „Community[Funktionen“ ](functions.md).
+Die Grundlage einer [Community Site](overview.md#communitiessites) ist das [Social Component Framework](scf.md) (SCF). Die Erstellung einer Community-Site beginnt mit der Auswahl einer [Community-Site-Vorlage](sites-console.md) die aus „Community[Funktionen“ &#x200B;](functions.md).
 
 Einen Überblick und Tutorials zu den ersten Schritten finden Sie unter:
 
@@ -31,7 +31,7 @@ Einen Überblick und Tutorials zu den ersten Schritten finden Sie unter:
 
 >[!NOTE]
 > 
->Es wird dringend empfohlen, mit den [ Versionen auf dem neuesten Stand zu ](deploy-communities.md#latest-releases).
+>Es wird dringend empfohlen, mit den [&#x200B; Versionen auf dem neuesten Stand zu &#x200B;](deploy-communities.md#latest-releases).
 
 ## Empfohlene Bereitstellungen {#recommended-deployments}
 

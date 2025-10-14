@@ -45,7 +45,7 @@ Und ziehen Sie es auf eine Seite, auf der das Forum erscheinen soll.
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen Client-seitigen ](/help/communities/essentials-forum.md#essentials-for-client-side) enthalten sind, wird die `Forum` Komponente wie folgt angezeigt:
+Wenn die [erforderlichen Client-seitigen &#x200B;](/help/communities/essentials-forum.md#essentials-for-client-side) enthalten sind, wird die `Forum` Komponente wie folgt angezeigt:
 
 ![forum-component](assets/forum-component.png)
 
@@ -100,7 +100,7 @@ Geben Sie auf **Registerkarte** Einstellungen“ Einstellungen für Themen und A
 
 * **Folgendes zulassen**
 
-  Wenn diese Option aktiviert ist, wird folgende Funktion für Forumsbeiträge hinzugefügt, mit der Mitglieder über neue Beiträge [ werden ](/help/communities/notifications.md). Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, wird folgende Funktion für Forumsbeiträge hinzugefügt, mit der Mitglieder über neue Beiträge [&#x200B; werden &#x200B;](/help/communities/notifications.md). Standard ist deaktiviert.
 
 * **Anheften zulassen**
 
@@ -108,7 +108,7 @@ Geben Sie auf **Registerkarte** Einstellungen“ Einstellungen für Themen und A
 
 * **Erlauben Sie vorgestellte Inhalte**
 
-  Wenn diese Option aktiviert ist, kann die Idee als [vorgestellter Inhalt“ identifiziert ](/help/communities/featured.md). Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, kann die Idee als [vorgestellter Inhalt“ identifiziert &#x200B;](/help/communities/featured.md). Standard ist deaktiviert.
 
 * **E-Mail-Abonnements zulassen**
 

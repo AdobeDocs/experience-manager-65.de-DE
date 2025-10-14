@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Im Abschnitt Authoring der Dokumentation wird beschrieben, wie Sie im Authoring-Bearbeitungsmodus Communities-Funktionen zu AEM-Sites hinzufügen und Komponentenkonfigurationen vornehmen.
 
-Komponenten können mithilfe einer AEM-Instanz und des interaktiven [Community-Komponentenhandbuchs“ untersucht ](components-guide.md).
+Komponenten können mithilfe einer AEM-Instanz und des interaktiven [Community-Komponentenhandbuchs“ untersucht &#x200B;](components-guide.md).
 
 ## Zugreifen auf Communities-Komponenten {#accessing-communities-components}
 
@@ -38,7 +38,7 @@ Weitere Informationen finden Sie in der Liste unter [Verfügbare Communities-Kom
 
 ### Wechseln in den Designmodus {#entering-design-mode}
 
-Wenn eine **Communities**-Komponente nicht im Komponenten-Browser (Sidekick) gefunden wird, müssen Sie `Design Mode` eingeben, um andere Communities-Komponenten hinzuzufügen. [Erforderliche Client-seitige ](#required-clientlibs)) (clientlibs) müssen möglicherweise auch hinzugefügt werden.
+Wenn eine **Communities**-Komponente nicht im Komponenten-Browser (Sidekick) gefunden wird, müssen Sie `Design Mode` eingeben, um andere Communities-Komponenten hinzuzufügen. [Erforderliche Client-seitige &#x200B;](#required-clientlibs)) (clientlibs) müssen möglicherweise auch hinzugefügt werden.
 
 Weitere Informationen finden Sie [Konfigurieren von Komponenten im Designmodus](../../help/sites-authoring/default-components-designmode.md).
 
@@ -70,7 +70,7 @@ Viele Communities-Funktionen können so konfiguriert werden, dass Mitglieder Inh
 
 Wenn Tagging zulässig ist, kann die Konfiguration der Community-Site so festgelegt werden, dass die Namespaces beschränkt bleiben, die Mitgliedern in der Veröffentlichungsumgebung präsentiert werden. Siehe die [Community-Sites-Konsole](sites-console.md#tagging).
 
-Funktionen, die das Tagging ermöglichen[ (](blog-feature.md)), [Kalender](calendar.md), [Dateibibliothek](file-library.md), [Forum](forum.md)
+Funktionen, die das Tagging ermöglichen[&#x200B; (](blog-feature.md)), [Kalender](calendar.md), [Dateibibliothek](file-library.md), [Forum](forum.md)
 
 Funktionen, die Tags verwenden: [Suche](search.md), [Social Tag Cloud](tagcloud.md)
 

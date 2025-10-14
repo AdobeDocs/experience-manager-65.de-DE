@@ -61,7 +61,7 @@ Um die Komponenten anzupassen oder zu erweitern, schreiben Sie nur die Überlage
    * Schreiben Sie eine [OperationExtension](server-customize.md#operationextension-class).
 * Hinzufügen eines benutzerdefinierten Vorgangs:
    * Erstellen Sie einen [Sling-POST-Vorgang](server-customize.md#postoperation-class).
-   * Verwenden Sie [ vorhandenen ](server-customize.md#operationservice-class) nach Bedarf.
+   * Verwenden Sie [&#x200B; vorhandenen &#x200B;](server-customize.md#operationservice-class) nach Bedarf.
    * Fügen Sie JavaScript-Code hinzu, um Ihren Vorgang nach Bedarf Client-seitig aufzurufen.
 
 ## Server-seitiges Framework {#server-side-framework}
@@ -154,7 +154,7 @@ Das Ergebnis ist ein untergeordneter JCR-Knoten unter einem para-Knoten, der Sli
 
 **Komponente einschließen**
 
-Das Einschließen einer Komponente bezieht sich auf den Prozess des Hinzufügens eines Verweises zu einer [ „nicht vorhandenen“ Ressource](srp.md#for-non-existing-resources-ners) (kein JCR-Knoten) innerhalb der Vorlage, z. B. mithilfe einer Skriptsprache.
+Das Einschließen einer Komponente bezieht sich auf den Prozess des Hinzufügens eines Verweises zu einer [&#x200B; „nicht vorhandenen“ Ressource](srp.md#for-non-existing-resources-ners) (kein JCR-Knoten) innerhalb der Vorlage, z. B. mithilfe einer Skriptsprache.
 
 Ab Adobe Experience Manager (AEM) 6.1 ist es möglich, die Eigenschaften der Komponente im Authoring-(Design)-Modus zu bearbeiten, wenn eine Komponente dynamisch eingefügt *hinzugefügt*.
 
@@ -167,7 +167,7 @@ Nur einige wenige AEM Communities-Komponenten können dynamisch eingebunden werd
 
 Das [Community-Komponentenhandbuch](components-guide.md) ermöglicht das Umschalten zwischen dem Hinzufügen und Einschließen von einschließbaren Komponenten.
 
-**Bei Verwendung der**-Vorlagensprache von Handlebars wird die nicht vorhandene Ressource mithilfe des [include helper) eingeschlossen, ](handlebars-helpers.md#include) Sie ihren resourceType angeben:
+**Bei Verwendung der**-Vorlagensprache von Handlebars wird die nicht vorhandene Ressource mithilfe des [include helper) eingeschlossen, &#x200B;](handlebars-helpers.md#include) Sie ihren resourceType angeben:
 
 `{{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}`
 
@@ -184,7 +184,7 @@ Das [Community-Komponentenhandbuch](components-guide.md) ermöglicht das Umschal
 
 ### Handlebars-Helfer {#handlebars-helpers}
 
-Eine Liste [ benutzerdefinierten Helper, die in SCF verfügbar ](handlebars-helpers.md), finden Sie unter „SCF Handlebars Helpers“.
+Eine Liste [&#x200B; benutzerdefinierten Helper, die in SCF verfügbar &#x200B;](handlebars-helpers.md), finden Sie unter „SCF Handlebars Helpers“.
 
 ## Client-seitiges Framework {#client-side-framework}
 

@@ -42,7 +42,7 @@ Mithilfe der [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.h
 
 Aaron McDonald (`aaron.mcdonald@mailinator.com`) wurde als vertrauenswürdiges Community-Mitglied identifiziert, indem er bei der Erstellung der Website der Gruppe community-engage-Moderators hinzugefügt wurde.
 
-Rebekah Larsen (`rebekah.larsen@trashymail.com`) kann über die „Mitglieder-Konsole“ als Mitglied der Community[Engage-Members-Gruppe ](members.md) werden.
+Rebekah Larsen (`rebekah.larsen@trashymail.com`) kann über die „Mitglieder-Konsole“ als Mitglied der Community[Engage-Members-Gruppe &#x200B;](members.md) werden.
 
 Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](users.md).
 
@@ -122,7 +122,7 @@ Hinweis:
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Wählen Sie das Menüelement Administration aus, damit Sie über die Publish[Umgebung auf die ](moderation.md)Moderationskonsole“ zugreifen können.
+Wählen Sie das Menüelement Administration aus, damit Sie über die Publish[Umgebung auf die &#x200B;](moderation.md)Moderationskonsole“ zugreifen können.
 
 Beachten Sie, dass für einen Administrator alle moderierbaren Inhalte sichtbar sind, nicht nur Inhalte von der Geometrixx Engage Community-Site.
 
@@ -145,7 +145,7 @@ Hinweis:
 
 ![community-forum-moderator](assets/community-forum-moderator.png)
 
-Wählen Sie das Menüelement Administration aus, damit Sie über die Publish[Umgebung auf die ](moderation.md)Moderationskonsole“ zugreifen können.
+Wählen Sie das Menüelement Administration aus, damit Sie über die Publish[Umgebung auf die &#x200B;](moderation.md)Moderationskonsole“ zugreifen können.
 
 Beachten Sie, dass für einen Community-Moderator nur moderierbare Inhalte von der Geometrixx Engage-Community-Site sichtbar sind.
 

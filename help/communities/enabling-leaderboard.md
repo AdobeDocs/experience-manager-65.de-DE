@@ -23,7 +23,7 @@ ht-degree: 2%
 
 Die `Leaderboard` Komponente hilft Ihnen, ein Gefühl dafür zu bekommen, wie Mitglieder innerhalb der Community interagieren, indem sie die Mitglieder nach den verdienten Punkten (einfache Punktzahl) oder ihrem Fachwissen (erweiterte Punktzahl) ordnen.
 
-Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie „Community[Punktzahl und Abzeichen“ ](/help/communities/implementing-scoring.md).
+Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie „Community[Punktzahl und Abzeichen“ &#x200B;](/help/communities/implementing-scoring.md).
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 

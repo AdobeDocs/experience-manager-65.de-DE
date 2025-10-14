@@ -24,7 +24,7 @@ Mit der Funktion Beitragsbeschränkungen können Sie die Beiträge von Community
 
 Wenn ein Mitglied eingeschränkt ist, führt jeder Beitrag, der die zulässige Anzahl von Beiträgen überschreitet, zu einem Warnhinweis, dass das Limit überschritten wurde und der Beitrag abgelehnt wird. Das Community-Mitglied kann sich dann an das Community-Message-Center wenden und sich an einen Community-Manager wenden, der die Beschränkungen bei Bedarf aufheben kann.
 
-Beitragsbeschränkungen können einzeln über die [Mitgliederkonsole“ aktiviert ](members.md)/oder so konfiguriert werden, dass sie automatisch aktiviert werden, wenn Site-Besucher neue Mitglieder werden.
+Beitragsbeschränkungen können einzeln über die [Mitgliederkonsole“ aktiviert &#x200B;](members.md)/oder so konfiguriert werden, dass sie automatisch aktiviert werden, wenn Site-Besucher neue Mitglieder werden.
 
 Über die Mitgliederkonsole können Beitragsbeschränkungen für ein Mitglied jederzeit proaktiv von einem Community-Manager entfernt werden oder reaktiv entfernt werden, wenn ein Mitglied eine Nachricht an einen Community-Manager sendet, der eine solche Anfrage stellt.
 
@@ -51,7 +51,7 @@ So erreichen Sie diese OSGi-Konfiguration:
 
 * **[!UICONTROL UGC-Beitragsbeschränkungen automatisch anwenden]**
 
-  Wenn diese Option aktiviert ist, werden für Benutzer bei der Registrierung als Community-Mitglieder automatisch Beitragsbeschränkungen festgelegt. Dies wird im Profil des Community-Mitglieds angezeigt und kann über die [Mitgliederkonsole“ aktiviert/deaktiviert ](members.md). Neue Mitglieder mit einer E-Mail-Adresse von einer Zulassungsliste von Domains werden niemals eingeschränkt.
+  Wenn diese Option aktiviert ist, werden für Benutzer bei der Registrierung als Community-Mitglieder automatisch Beitragsbeschränkungen festgelegt. Dies wird im Profil des Community-Mitglieds angezeigt und kann über die [Mitgliederkonsole“ aktiviert/deaktiviert &#x200B;](members.md). Neue Mitglieder mit einer E-Mail-Adresse von einer Zulassungsliste von Domains werden niemals eingeschränkt.
 
   Standard ist deaktiviert.
 

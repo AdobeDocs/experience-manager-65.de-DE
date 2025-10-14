@@ -43,7 +43,7 @@ Und ziehen Sie es auf eine Seite, wo die Idee erscheinen soll.
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen Client-seitigen ](/help/communities/ideation.md#essentials-for-client-side) enthalten sind, wird die `Ideation` Komponente wie folgt angezeigt:
+Wenn die [erforderlichen Client-seitigen &#x200B;](/help/communities/ideation.md#essentials-for-client-side) enthalten sind, wird die `Ideation` Komponente wie folgt angezeigt:
 
 ![Idee](assets/ideation.png)
 
@@ -135,13 +135,13 @@ Geben Sie auf **[!UICONTROL Registerkarte]** Einstellungen“ Einstellungen für
 
 * **Badges anzeigen**
 
-  Wenn diese Option aktiviert ist, werden [ und zugewiesene ](/help/communities/implementing-scoring.md) mit der Idee eines Mitglieds angezeigt. Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, werden [&#x200B; und zugewiesene &#x200B;](/help/communities/implementing-scoring.md) mit der Idee eines Mitglieds angezeigt. Standard ist deaktiviert.
 
 * **Auf der Listingseite werden keine Antworten angezeigt**
 
 * **Erlauben Sie vorgestellte Inhalte**
 
-  Wenn diese Option aktiviert ist, kann die Idee als [vorgestellter Inhalt“ identifiziert ](/help/communities/featured.md). Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, kann die Idee als [vorgestellter Inhalt“ identifiziert &#x200B;](/help/communities/featured.md). Standard ist deaktiviert.
 
 * **Erwähnung aktivieren**
 * **Max Erwähnungen**

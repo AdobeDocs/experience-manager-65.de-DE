@@ -54,7 +54,7 @@ In den folgenden Kapiteln erfahren Sie mehr über erweiterte Konzepte wie White 
 
 ## Schnelllinks für Administratoren {#quicklinks-for-administrators}
 
-Informationen [ Einrichten und Verwalten Ihrer Mobile App finden Sie unter Verwalten von Inhalten ](/help/mobile/administer-phonegap.md) Adobe PhoneGap Enterprise mit AEM .
+Informationen [&#x200B; Einrichten und Verwalten Ihrer Mobile App finden Sie unter Verwalten von Inhalten &#x200B;](/help/mobile/administer-phonegap.md) Adobe PhoneGap Enterprise mit AEM .
 
 >[!NOTE]
 >

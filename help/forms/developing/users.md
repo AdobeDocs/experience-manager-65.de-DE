@@ -545,7 +545,7 @@ Führen Sie die folgenden Aufgaben aus, um Benutzer, Gruppen und Domains mithilf
 
 1. Erstellen Sie einen DirectoryManagerService-Client.
 
-   Erstellen Sie ein `DirectoryManagerServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und ein `ServiceClientFactory`-Objekt übergeben, das Verbindungseigenschaften enthält. Weitere Informationen finden Sie unter [Festlegen von Verbindungseigenschaften ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
+   Erstellen Sie ein `DirectoryManagerServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und ein `ServiceClientFactory`-Objekt übergeben, das Verbindungseigenschaften enthält. Weitere Informationen finden Sie unter [Festlegen von Verbindungseigenschaften &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
 
 1. Rufen Sie die entsprechenden Benutzer- oder Gruppenvorgänge auf.
 

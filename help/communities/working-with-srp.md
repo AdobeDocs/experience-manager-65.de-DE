@@ -25,7 +25,7 @@ Ab AEM Communities 6.1 werden benutzergenerierte Inhalte in einem einzigen, geme
 
 Im Gegensatz zu früheren Versionen gibt es keine Rückwärts-/Vorwärtsreplikation von UGC über AEM-Instanzen hinweg. Stattdessen ermöglicht der SRP den direkten Zugriff auf den benutzergenerierten Inhalt für CRUD-Vorgänge (Create, Read, Update, and Delete, Erstellen, Lesen, Aktualisieren und Löschen) von allen Autoren- und Veröffentlichungsinstanzen, mit Ausnahme von JSRP.
 
-Nachstehend sind die [Merkmale jeder SRP-Option](#characteristics-of-srp-options) aufgeführt, die für den Entscheidungsprozess bei der Auswahl des geeigneten SRP und der [ Bereitstellung von entscheidender Bedeutung ](/help/communities/topologies.md).
+Nachstehend sind die [Merkmale jeder SRP-Option](#characteristics-of-srp-options) aufgeführt, die für den Entscheidungsprozess bei der Auswahl des geeigneten SRP und der [&#x200B; Bereitstellung von entscheidender Bedeutung &#x200B;](/help/communities/topologies.md).
 
 Einzelheiten zur Verwendung von SRP für UGC finden Sie unter [Speicherressourcenanbieter - Übersicht](/help/communities/srp.md).
 
@@ -130,7 +130,7 @@ Während Site-Inhalte repliziert werden, werden benutzergenerierte Inhalte nie r
 
 ### Verwalten von Benutzerdaten {#managing-user-data}
 
-Von Interesse für Communities sind auch [*Benutzer*, *Benutzergruppen* und *Benutzerprofile*](/help/communities/users.md). Wenn diese benutzerbezogenen Daten in der Veröffentlichungsumgebung erstellt und aktualisiert werden, müssen sie für andere Veröffentlichungsinstanzen verfügbar gemacht werden, wenn die Topologie eine [Veröffentlichungsfarm“ ](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
+Von Interesse für Communities sind auch [*Benutzer*, *Benutzergruppen* und *Benutzerprofile*](/help/communities/users.md). Wenn diese benutzerbezogenen Daten in der Veröffentlichungsumgebung erstellt und aktualisiert werden, müssen sie für andere Veröffentlichungsinstanzen verfügbar gemacht werden, wenn die Topologie eine [Veröffentlichungsfarm“ &#x200B;](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
 
 Ab AEM Communities 6.1 werden benutzerbezogene Daten mithilfe einer Sling-Verteilung und nicht mithilfe einer Replikation synchronisiert. Weitere Informationen finden Sie unter [Benutzersynchronisierung](/help/communities/sync.md).
 

@@ -51,7 +51,7 @@ Um auf die verschiedenen Communities-Konsolen zuzugreifen, wählen Sie in der gl
 
 * [Sites](sites-console.md)
 
-  Auf die Sites-Konsole kann in der Autorenumgebung zugegriffen werden, um Community-Sites und deren [ zu erstellen und zu ](groups.md).
+  Auf die Sites-Konsole kann in der Autorenumgebung zugegriffen werden, um Community-Sites und deren [&#x200B; zu erstellen und zu &#x200B;](groups.md).
 
 * [Moderation](moderation.md)
 
@@ -67,4 +67,4 @@ Um auf die verschiedenen Communities-Konsolen zuzugreifen, wählen Sie in der gl
 
 ## Tools-Konsole {#tools-console}
 
-So greifen Sie über [ globale Navigation auf ](tools.md)Communities-Tools“ (früher die Administration-Console) zu: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**
+So greifen Sie über [&#x200B; globale Navigation auf &#x200B;](tools.md)Communities-Tools“ (früher die Administration-Console) zu: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**

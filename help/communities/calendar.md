@@ -38,7 +38,7 @@ und ziehen Sie sie auf eine Seite, z. B. eine Position relativ zur Funktion, die
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen Client-seitigen ](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) enthalten sind, wird die `Calendar` Komponente wie folgt angezeigt.
+Wenn die [erforderlichen Client-seitigen &#x200B;](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) enthalten sind, wird die `Calendar` Komponente wie folgt angezeigt.
 
 ![calendar-component](assets/calendar-component.png)
 
@@ -120,7 +120,7 @@ Geben **auf der Registerkarte** Einstellungen“ an, ob Tags auf Kalendereinträ
 
 * **Erlauben Sie vorgestellte Inhalte**
 
-  Wenn diese Option aktiviert ist, kann die Idee als [vorgestellter Inhalt“ identifiziert ](/help/communities/featured.md). Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, kann die Idee als [vorgestellter Inhalt“ identifiziert &#x200B;](/help/communities/featured.md). Standard ist deaktiviert.
 
 Geben **auf der Registerkarte** Benutzermoderation) an, wie die veröffentlichten Themen und Antworten (benutzergenerierte Inhalte) verwaltet werden sollen. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 

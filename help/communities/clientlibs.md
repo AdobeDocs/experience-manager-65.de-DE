@@ -49,7 +49,7 @@ Wenn die erforderlichen clientlibs fehlen, kann [Hinzufügen einer Communitys-Ko
 
 Die grundlegenden Funktionsinformationen für Entwickler identifizieren die erforderlichen Clientlibs.
 
-Darüber hinaus bietet die Navigation auf einer AEM[Instanz zum -Komponentenhandbuch ](/help/communities/components-guide.md) Zugriff auf eine Liste der clientlib-Kategorien, die für eine Komponente erforderlich sind.
+Darüber hinaus bietet die Navigation auf einer AEM[Instanz zum -Komponentenhandbuch &#x200B;](/help/communities/components-guide.md) Zugriff auf eine Liste der clientlib-Kategorien, die für eine Komponente erforderlich sind.
 
 Beispielsweise werden oben auf der Seite [Überprüfungen](https://localhost:4502/content/community-components/en/reviews.html) die erforderlichen Client-Bibliotheken aufgeführt.
 
@@ -64,7 +64,7 @@ Wenn Sie einer Seite eine Communities -Komponente hinzufügen möchten, müssen 
 
 Mit [CRXDE|Lite](#using-crxde-lite) können Sie eine vorhandene clientlibs-Liste für eine Community-Site-Seite ändern.
 
-So fügen Sie mithilfe von [CRXDE Lite eine Client-Bibliothek für eine Community-Site ](/help/sites-developing/developing-with-crxde-lite.md):
+So fügen Sie mithilfe von [CRXDE Lite eine Client-Bibliothek für eine Community-Site &#x200B;](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Navigieren Sie zu [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de).
 * Suchen Sie den `clientlibslist` Knoten für die Seite, auf der Sie die Komponente hinzufügen möchten:

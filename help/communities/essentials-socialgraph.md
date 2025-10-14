@@ -20,7 +20,7 @@ ht-degree: 4%
 
 Die Fähigkeit eines Mitglieds der Community, [Aktivitäten](essentials-activities.md) zu verfolgen, wird durch zwei Komponenten festgelegt:
 
-Die `following`-Komponente muss mit einer anderen Ressource verknüpft sein, und diese Verknüpfung wurde bereits für bestehende Community-Mitglieder und -Funktionen auf einer [Community-Site“ ](overview.md#communitiessites).
+Die `following`-Komponente muss mit einer anderen Ressource verknüpft sein, und diese Verknüpfung wurde bereits für bestehende Community-Mitglieder und -Funktionen auf einer [Community-Site“ &#x200B;](overview.md#communitiessites).
 
 Die `following`-Komponente listet die Elemente auf, die entweder auf das aktuelle Element folgen oder auf die das aktuelle Element folgt. Dieses soziale Diagramm von Beziehungen zwischen Mitgliedern ist im Benutzerprofil enthalten, das für eine Community-Site erstellt wurde.
 

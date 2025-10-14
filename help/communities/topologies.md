@@ -43,7 +43,7 @@ Die Anforderung eines gemeinsamen Speichers führt zu den folgenden empfohlenen 
 
 >[!NOTE]
 >
->Weitere Informationen zur AEM-Plattform finden Sie unter [Empfohlene ](../../help/sites-deploying/recommended-deploys.md)&quot; und [Einführung in die AEM-Plattform](../../help/sites-deploying/data-store-config.md).
+>Weitere Informationen zur AEM-Plattform finden Sie unter [Empfohlene &#x200B;](../../help/sites-deploying/recommended-deploys.md)&quot; und [Einführung in die AEM-Plattform](../../help/sites-deploying/data-store-config.md).
 
 ## Für die Produktion {#for-production}
 
@@ -57,7 +57,7 @@ Zwei Beispiele:
 
 Für beide kann die Bereitstellung auf einem beliebigen OAK-Mikrokernel basieren.
 
-Bei der Auswahl des geeigneten gemeinsamen Speichers sollten die individuellen [ (](working-with-srp.md#characteristics-of-srp-options)) sorgfältig berücksichtigt werden.
+Bei der Auswahl des geeigneten gemeinsamen Speichers sollten die individuellen [&#x200B; (](working-with-srp.md#characteristics-of-srp-options)) sorgfältig berücksichtigt werden.
 
 Weitere Informationen zu Oak-Mikrokernels finden Sie unter [Empfohlene Bereitstellungen](../../help/sites-deploying/recommended-deploys.md).
 

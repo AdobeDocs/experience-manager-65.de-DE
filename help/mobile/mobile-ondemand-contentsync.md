@@ -168,7 +168,7 @@ Jede Eigenschaft kann einen der folgenden Werte aufweisen:
 
 * `REWRITE_RELATIVE`: Schreibt den Pfad mit einer relativen Position zur HTML-Datei der Seite im Dateisystem neu.
 
-* `REWRITE_EXTERNAL`: schreibt den Pfad neu, indem er auf die Ressource auf dem Server verweist, indem er den AEM-[Externalizer-Service) ](/help/sites-developing/externalizer.md).
+* `REWRITE_EXTERNAL`: schreibt den Pfad neu, indem er auf die Ressource auf dem Server verweist, indem er den AEM-[Externalizer-Service) &#x200B;](/help/sites-developing/externalizer.md).
 
 Mit dem AEM-Dienst **PathRewriterTransformerFactory** können Sie bestimmte HTML-Attribute konfigurieren, die neu geschrieben werden. Der Dienst kann in der Web-Konsole konfiguriert werden und verfügt über eine Konfiguration für jede Eigenschaft des `rewrite`: `clientlibs`, `images` und `links`.
 
@@ -214,7 +214,7 @@ Die folgende Liste zeigt eine Beispielkonfiguration für die Inhaltssynchronisie
 
 **etc.designs.default und etc.designs.mobile** - Die ersten beiden Einträge der Konfiguration sind offensichtlich. Da Sie mehrere mobile Seiten einbinden werden, benötigen Sie die zugehörigen Design-Dateien unter /etc/designs. Und da keine zusätzliche Verarbeitung erforderlich ist, reicht eine Kopie aus.
 
-**events.plist** - Dieser Eintrag ist etwas Besonderes. Wie in der Einführung erwähnt, sollte die Anwendung eine Kartenansicht mit Markierungen der Orte der Ereignisse bereitstellen. Die erforderlichen Ortsinformationen werden als separate Datei im PLIST-Format bereitgestellt. Dazu verfügt die Ereignislisten-Komponente, die auf der Indexseite verwendet wird, über ein Skript namens plist.jsp. Dieses Skript wird ausgeführt, wenn die Ressource der Komponente mit der `.plist` angefordert wird. Wie üblich wird der Komponentenpfad in der Pfadeigenschaft angegeben und der Typ ist auf „Inhalt“ festgelegt, da Sie die [Sling-Anfrageverarbeitung) verwenden ](/help/sites-developing/the-basics.md#sling-request-processing).
+**events.plist** - Dieser Eintrag ist etwas Besonderes. Wie in der Einführung erwähnt, sollte die Anwendung eine Kartenansicht mit Markierungen der Orte der Ereignisse bereitstellen. Die erforderlichen Ortsinformationen werden als separate Datei im PLIST-Format bereitgestellt. Dazu verfügt die Ereignislisten-Komponente, die auf der Indexseite verwendet wird, über ein Skript namens plist.jsp. Dieses Skript wird ausgeführt, wenn die Ressource der Komponente mit der `.plist` angefordert wird. Wie üblich wird der Komponentenpfad in der Pfadeigenschaft angegeben und der Typ ist auf „Inhalt“ festgelegt, da Sie die [Sling-Anfrageverarbeitung) verwenden &#x200B;](/help/sites-developing/the-basics.md#sling-request-processing).
 
 **events.touch.html** - Als Nächstes kommen die tatsächlichen Seiten, die in der App angezeigt werden. Die Pfadeigenschaft wird auf die Stammseite der Ereignisse festgelegt. Alle Ereignisseiten unterhalb dieser Seite werden ebenfalls eingeschlossen, da die Deep-Eigenschaft standardmäßig auf „true“ festgelegt ist. Sie verwenden Seiten als Konfigurationstyp, damit alle Bilder oder anderen Dateien, auf die von einer Bild- oder Download-Komponente auf einer Seite verwiesen wird, einbezogen werden. Darüber hinaus erhalten wir durch Festlegen des Touch-Selektors eine mobile Version der Seiten. Die Konfiguration im Feature Pack enthält weitere Einträge dieser Art, die hier jedoch der Einfachheit halber weggelassen werden.
 
@@ -254,7 +254,7 @@ Für jeden Konfigurationstyp gibt es einen *Content Update Handler*, eine OSGi-K
 * `com.day.cq.contentsync.handler.ContentUpdateHandler` - Schnittstelle, die alle Update-Handler implementieren müssen
 * `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Eine abstrakte Klasse, die das Rendering von Ressourcen mithilfe von Sling vereinfacht
 
-Registrieren Sie Ihre Klasse als OSGi-Komponenten-Factory und stellen Sie sie im OSGi-Container in einem Bundle bereit. Dies kann mit dem Maven[SCR-Plug-in ](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) JavaDoc-Tags oder -Anmerkungen erfolgen. Das folgende Beispiel zeigt die JavaDoc-Version:
+Registrieren Sie Ihre Klasse als OSGi-Komponenten-Factory und stellen Sie sie im OSGi-Container in einem Bundle bereit. Dies kann mit dem Maven[SCR-Plug-in &#x200B;](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) JavaDoc-Tags oder -Anmerkungen erfolgen. Das folgende Beispiel zeigt die JavaDoc-Version:
 
 ```java
 /*

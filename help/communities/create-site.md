@@ -38,7 +38,7 @@ So erstellen Sie eine Community-Site:
 
 ![Vorlage zum Erstellen der Site](assets/create-site.png)
 
-Geben Sie [ Schritt „Site-](/help/communities/sites-console.md#step2013asitetemplate)&quot; einen Titel, eine Beschreibung und den Namen für die URL ein und wählen Sie eine Community-Site-Vorlage aus, z. B.:
+Geben Sie [&#x200B; Schritt „Site-](/help/communities/sites-console.md#step2013asitetemplate)&quot; einen Titel, eine Beschreibung und den Namen für die URL ein und wählen Sie eine Community-Site-Vorlage aus, z. B.:
 
 * **Community-Site-Titel**: `Getting Started Tutorial`
 * **Community-Site-Beschreibung**: `A site for engaging with the community.`
@@ -188,7 +188,7 @@ Von links nach rechts sind sie:
 
 * **Website exportieren**
 
-  Durch Auswahl des Symbols „Exportieren“ wird ein Paket der Community-Site erstellt, das sowohl im [Package Manager“ gespeichert ](/help/sites-administering/package-manager.md) heruntergeladen wird. UGC ist nicht im Site-Paket enthalten.
+  Durch Auswahl des Symbols „Exportieren“ wird ein Paket der Community-Site erstellt, das sowohl im [Package Manager“ gespeichert &#x200B;](/help/sites-administering/package-manager.md) heruntergeladen wird. UGC ist nicht im Site-Paket enthalten.
 
 * **Site löschen**
 
@@ -223,7 +223,7 @@ Wenn die Community-Site erfolgreich veröffentlicht wurde, wird kurz die Meldung
 
 Neben der neuen Community-Site werden neue Benutzergruppen erstellt, die über die entsprechenden Berechtigungen für verschiedene Verwaltungsfunktionen verfügen. Weitere Informationen finden Sie unter [Benutzergruppen für Community-Sites](/help/communities/users.md#usergroupsforcommunitysites).
 
-Für diese neue Community-Site werden unter dem Site-Namen „engage“ in Schritt 1 die vier neuen Benutzergruppen in der [Gruppen-Konsole“ angezeigt ](/help/communities/members.md)globale Navigation: Communities, Gruppen):
+Für diese neue Community-Site werden unter dem Site-Namen „engage“ in Schritt 1 die vier neuen Benutzergruppen in der [Gruppen-Konsole“ angezeigt &#x200B;](/help/communities/members.md)globale Navigation: Communities, Gruppen):
 
 * Community-Manager einbinden
 * Community Engage-Gruppenadministratoren

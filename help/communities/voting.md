@@ -26,7 +26,7 @@ Um einer Seite im Autorenmodus eine `Voting` Komponente hinzuzufügen, verwenden
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [erforderlichen Client-seitigen ](essentials-voting.md#essentials-for-client-side) enthalten sind, wird die `Voting` Komponente wie folgt angezeigt.
+Wenn die [erforderlichen Client-seitigen &#x200B;](essentials-voting.md#essentials-for-client-side) enthalten sind, wird die `Voting` Komponente wie folgt angezeigt.
 
 ![Abstimmungskomponente](assets/voting-component.png)
 
