@@ -9,10 +9,10 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: c75cd7a0cbd0c19fd10cc7512bbfa14fae1e4f92
-workflow-type: ht
-source-wordcount: '955'
-ht-degree: 100%
+source-git-commit: 0487a5669fbaab35974eb85eb099b82e0847a4f9
+workflow-type: tm+mt
+source-wordcount: '962'
+ht-degree: 96%
 
 ---
 
@@ -112,7 +112,7 @@ So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/
 
       >[!NOTE]
       >
-      >* Wenn Sie eine andere Topologie einrichten, stellen Sie sicher, dass Sie die URLs für Übermitteln, Vorausfüllen und andere Funktionen auf der Dispatcher-Ebene in die Zulassungsliste eintragen.
+      >* Wenn Sie eine andere Topologie einrichten, stellen Sie sicher, dass die URLs für Senden, Vorausfüllen und andere erforderliche URLs zusammen mit den erforderlichen Selektoren (z. B. `/content/forms/*model.json`) zur Zulassungsliste auf Dispatcher-Ebene hinzugefügt werden.
 
    1. Speichern und schließen Sie die Datei.
 
@@ -132,13 +132,13 @@ So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/
 
    Nachdem das AEM-Archetyp-Projekt erfolgreich erstellt wurde, wird ein AEM-Paket generiert. Sie finden das Paket im [AEM-Archetyp-Projektordner]\all\target\[appid].all-[version].zip
 
-1. Verwenden Sie den [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) zur Bereitstellung des Pakets [AEM-Archetyp-Projektordner]\all\target\[appid].all-[version].zip auf allen Authoring- und Publishing-Instanzen.
+1. Verwenden Sie den [Paket-Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) zur Bereitstellung des Pakets [AEM-Archetyp-Projektordner]\all\target\[appid].all-[version].zip auf allen Authoring- und Publishing-Instanzen.
 
 >[!NOTE]
 >
 >
 >
-> * Falls Sie Schwierigkeiten haben, den Anmeldedialog auf einer Veröffentlichungsinstanz aufzurufen, um das Paket über den Package Manager zu installieren, versuchen Sie, sich über die URL `http://[Publish Server URL]:[PORT]/system/console` anzumelden. Auf diese Weise können Sie auf die Anmeldeseite bei der Veröffentlichungsinstanz zugreifen, sodass Sie mit dem Installationsprozess fortfahren können.
+> * Falls Sie Schwierigkeiten haben, den Anmeldedialog auf einer Veröffentlichungsinstanz aufzurufen, um das Paket über den Paket-Manager zu installieren, versuchen Sie, sich über die URL `http://[Publish Server URL]:[PORT]/system/console` anzumelden. Auf diese Weise können Sie auf die Anmeldeseite bei der Veröffentlichungsinstanz zugreifen, sodass Sie mit dem Installationsprozess fortfahren können.
 > * Löschen oder verwerfen Sie das Archetyp-Projekt nicht, nachdem Sie es in Ihrer Umgebung bereitgestellt haben. Das Archetyp-Projekt ist erforderlich, um Ihrer Umgebung benutzerdefinierte und neue Kernkomponenten-Designs für adaptive Formulare hinzuzufügen.
 
 Die Kernkomponenten sind für Ihre Umgebung aktiviert. Eine leere, auf Kernkomponenten basierende Vorlage für ein adaptives Formular und ein Canvas 3.0-Design werden in Ihrer Umgebung bereitgestellt, sodass Sie [auf Kernkomponenten basierende adaptive Formulare erstellen können](create-an-adaptive-form-core-components.md).
