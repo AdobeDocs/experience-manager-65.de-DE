@@ -7,10 +7,10 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
-source-wordcount: '2113'
-ht-degree: 100%
+source-wordcount: '2109'
+ht-degree: 99%
 
 ---
 
@@ -129,7 +129,7 @@ Schnittstelle und Klassen:
 
 * `com.day.cq.dam.api.handler.AssetHandler`-Schnittstelle: Diese Schnittstelle beschreibt den Dienst, der Unterstützung für bestimmte MIME-Typen hinzufügt. Wenn ein MIME-Typ hinzugefügt werden soll, muss diese Schnittstelle implementiert werden. Die Schnittstelle enthält Methoden zum Importieren und Exportieren der jeweiligen Dokumente, zum Erstellen von Miniaturbildern und zum Extrahieren von Metadaten.
 * `com.day.cq.dam.core.AbstractAssetHandler`-Klasse: Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen.
-* `com.day.cq.dam.core.AbstractSubAssetHandler`-Klasse: Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen sowie übliche Funktionen für die Extrahierung von Teil-Assets.
+* `com.day.cq.dam.core.AbstractSubAssetHandler`-Klasse: Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen sowie übliche Funktionen für die Extraktion von Teil-Assets.
 
 #### Beispiel: Erstellung eines spezifischen Text-Handlers {#example-create-a-specific-text-handler}
 
@@ -449,7 +449,7 @@ Mit [!DNL Experience Manager] können Sie ein beliebiges Befehlszeilen-Tool (z. 
 
 Die folgenden Konvertierungen können automatisch ausgeführt und in [!DNL Assets] gespeichert werden:
 
-* EPS- und AI-Umwandlung mithilfe von [ImageMagick](https://www.imagemagick.org/script/index.php) und [Ghostscript](https://www.ghostscript.com/).
+* EPS- und AI-Umwandlung mithilfe von `https://www.imagemagick.org/script/index.php` und [Ghostscript](https://www.ghostscript.com/).
 * FLV-Videotranskodierung mithilfe von [FFmpeg](https://ffmpeg.org/).
 * MP3-Kodierung mithilfe von [LAME](https://lame.sourceforge.io/).
 * Verarbeitung von Audiodaten mithilfe von [SOX](https://sourceforge.net/projects/sox/).
@@ -476,7 +476,7 @@ Verwenden Sie dafür [!DNL ImageMagick]. [!DNL ImageMagick] ist eine kostenlose 
 
 Installieren Sie [!DNL ImageMagick] auf der Festplatte, auf der der [!DNL Experience Manager]-Server gehostet wird:
 
-1. Installieren Sie [!DNL ImageMagick]: Siehe [ImageMagick-Dokumentation](https://www.imagemagick.org/script/download.php).
+1. Installieren Sie [!DNL ImageMagick]: Siehe `https://www.imagemagick.org/script/download.php` Website.
 1. Richten Sie das Tool so ein, dass Sie in der Befehlszeile `convert` ausführen können.
 1. Um festzustellen, ob das Tool ordnungsgemäß installiert wurde, führen Sie den Befehl `convert -h` über die Befehlszeile aus.
 

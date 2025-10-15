@@ -7,10 +7,10 @@ feature: Renditions
 exl-id: 1e4ddd73-a31c-4ddd-94eb-1dac6a4835b3
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 100%
+source-wordcount: '1062'
+ht-degree: 99%
 
 ---
 
@@ -92,7 +92,7 @@ In Experience Manager wird der Workflow „DAM Update Asset“ ausgeführt, wenn
 
 1. Um die Änderungen zu aktivieren, klicken Sie auf **[!UICONTROL Synchronisieren]**.
 
-Detaillierte Informationen zu den Befehlszeilenfunktionen von ImageMagick finden Sie unter [https://imagemagick.org](https://imagemagick.org).
+Detaillierte Informationen zu den Befehlszeilenfunktionen von ImageMagick finden Sie auf `https://imagemagick.org` Website .
 
 ## Erzeugen von Ausgabeformaten vorhandener Assets mithilfe des Experience Manager-Workflows {#generate-renditions-of-existing-assets-using-aem-workflow}
 

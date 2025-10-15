@@ -7,10 +7,10 @@ role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
-workflow-type: ht
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
+workflow-type: tm+mt
 source-wordcount: '2729'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -211,7 +211,7 @@ Stellen Sie darüber hinaus in der Datei `configure.xml` (alternativ in der Umge
 
 >[!NOTE]
 >
->Die Dateien ImageMagick `policy.xml` und `configure.xml` sind unter `/usr/lib64/ImageMagick-&#42;/config/` anstelle von `/etc/ImageMagick/` verfügbar. Informationen zum Speicherort der Konfigurationsdateien finden Sie in der [ImageMagick-Dokumentation](https://www.imagemagick.org/script/resources.php).
+>Die Dateien ImageMagick `policy.xml` und `configure.xml` sind unter `/usr/lib64/ImageMagick-&#42;/config/` anstelle von `/etc/ImageMagick/` verfügbar. In der Dokumentation zu ImageMagick (`https://www.imagemagick.org/script/resources.php` Website) finden Sie den Speicherort der Konfigurationsdateien.
 
 Wenn Sie [!DNL Experience Manager] in Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Adobe Support, wenn Sie viele große PSD- oder PSB-Dateien verarbeiten möchten. Wenden Sie sich an den Adobe Kundensupport, um diese Best Practices für Ihre AMS-Bereitstellung zu implementieren und die bestmöglichen Tools und Modelle für die proprietären Formate von Adobe auszuwählen. [!DNL Experience Manager] kann keine sehr hochauflösenden PSB-Dateien verarbeiten, die mehr als 30000 x 23000 Pixel groß sind.
 
@@ -229,7 +229,7 @@ Das Importieren einer großen Menge an Metadaten kann zu ressourcenintensiven XM
 
 ## Replikation {#replication}
 
-Beim Replizieren von Assets in eine große Anzahl von Veröffentlichungsinstanzen, z. B. in einer Sites-Implementierung, empfiehlt Adobe die Verwendung der Kettenreplikation. In diesem Fall repliziert die Authoring-Instanz auf eine einzelne Publishing-Instanz, die wiederum auf die anderen Publishing-Instanzen repliziert, wodurch die Authoring-Instanz freigehalten wird.
+Beim Replizieren von Assets in eine große Anzahl von Veröffentlichungsinstanzen, z. B. in einer Sites-Implementierung, empfiehlt Adobe die Verwendung der Kettenreplikation. In diesem Fall repliziert die Autoreninstanz auf eine einzelne Publishing-Instanz, die wiederum auf die anderen Publishing-Instanzen repliziert, wodurch die Autoreninstanz freigehalten wird.
 
 ### Konfiguration der Kettenreplikation   {#configure-chain-replication}
 
@@ -258,7 +258,7 @@ Für die Oak-Indexkonfigurationen können Optimierungen vorgenommen werden, mit 
 
 Wenn Ihre Benutzer keine Volltextsuche nach Assets durchführen müssen, z. B. durch die Textsuche in PDF-Dokumenten, deaktivieren Sie sie. Sie verbessern die Indexleistung, indem Sie die Volltextindizierung deaktivieren. Um die [!DNL Apache Lucene]-Textextraktion zu deaktivieren, führen Sie die folgenden Schritte aus:
 
-1. Greifen Sie in der Benutzeroberfläche [!DNL Experience Manager] auf [!UICONTROL Package Manager] zu.
+1. Greifen Sie in der Benutzeroberfläche [!DNL Experience Manager] auf den [!UICONTROL Paket-Manager] zu.
 1. Laden Sie das Paket hoch und installieren Sie es unter [disable_indexingbinarytextextraktion-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### guessTotal {#guess-total}

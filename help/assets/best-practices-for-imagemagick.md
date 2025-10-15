@@ -6,10 +6,10 @@ role: Admin
 feature: Renditions,Developer Tools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 94%
 
 ---
 
@@ -29,7 +29,7 @@ Um große Dateien mit ImageMagick zu verarbeiten, sollten Sie höhere Speicheran
 
 ImageMagick-Installationsdateien sind in mehreren Versionen für verschiedene Betriebssysteme verfügbar.  Verwenden Sie die entsprechende Version für Ihr Betriebssystem.
 
-1. Laden Sie die entsprechenden [ImageMagick-Installationsdateien](https://www.imagemagick.org/script/download.php) für Ihr Betriebssystem herunter.
+1. Laden Sie die entsprechenden ImageMagick-Installationsdateien (`https://www.imagemagick.org/script/download.php website`) für Ihr Betriebssystem herunter.
 1. Um ImageMagick auf der Festplatte zu installieren, auf der der [!DNL Experience Manager]-Server gehostet wird, starten Sie die Installationsdatei.
 
 1. Legen Sie die Path-Umgebungsvariable auf das ImageMagick-Installationsverzeichnis fest.
@@ -82,7 +82,7 @@ Sie können den Befehlszeilenprozessschritt für Ihren jeweiligen Anwendungsfall
 
 Die Verwendung von ImageMagick zur Bildverarbeitung ist mit mehreren Sicherheitslücken verbunden. Beispielsweise birgt die Verarbeitung von benutzerseitig übermittelten Bildern das Risiko einer ferngesteuerten Code-Ausführung (Remote Code Execution, RCE).
 
-Außerdem ist eine Reihe von Bildverarbeitungs-Plug-ins von der ImageMagick-Bibliothek abhängig, darunter „imagick“ von PHP, „rmagick“ und „paperclip“ von Ruby sowie „imagemagick“ von Nodejs.
+Darüber hinaus hängen verschiedene Bildverarbeitungs-Plug-ins von der ImageMagick-Bibliothek ab, einschließlich, aber nicht beschränkt auf PHP&#39;s imagick, Rubys magick und Paperclip und Nodejs&#39;s imagemagick.
 
 Wenn Sie ImageMagick oder eine betroffene Bibliothek verwenden, empfiehlt Adobe, die bekannten Sicherheitslücken zu minimieren, indem Sie mindestens eine der folgenden Aufgaben ausführen (vorzugsweise beide):
 
