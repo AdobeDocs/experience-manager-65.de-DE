@@ -37,7 +37,7 @@ Der Document Security-Server ist die zentrale Komponente, über die Document Sec
 
 Der Document Security-Server bietet eine Web-basierte Oberfläche (Web-Seite) zum Erstellen von Richtlinien, zum Verwalten richtliniengeschützter Dokumente und zum Überwachen von Ereignissen, die mit richtliniengeschützten Dokumenten verknüpft sind. Admins können auch globale Optionen wie Benutzerauthentifizierung, Auditing und Messaging für eingeladene Personen konfigurieren und Konten eingeladener Personen verwalten.
 
-Der Server ist im AEM Forms Document Security-Add-On-Angebot enthalten. Sie können sich an das [Verkaufs-Team](https://business.adobe.com/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&amp;s_iid=70114000002JHs3AAG) von AEM Forms wenden, um das Document Security-Add-On zu erwerben.
+Der Server ist im AEM Forms Document Security-Add-On-Angebot enthalten. Sie können sich an das [Verkaufs-Team](https://business.adobe.com/de/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&amp;s_iid=70114000002JHs3AAG) von AEM Forms wenden, um das Document Security-Add-On zu erwerben.
 
 ### Schützen von Dokumenten {#protect-documents}
 

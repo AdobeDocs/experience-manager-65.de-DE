@@ -29,7 +29,7 @@ AEM Mobile ist bereit, Kunden bei der Erfüllung ihrer DSGVO-Compliance-Verpflic
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Das Digital-Publishing-Produkt Adobe (das AEM Mobile vorausgeht) unterstützt Initiativen zur Einhaltung der DSGVO durch die Adobe. Siehe [https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/de/privacy/general-data-protection-regulation.html). Im Folgenden finden Sie Details zur Unterstützung für DSGVO-relevante Funktionen im Digital Publishing Suite-Produkt, einschließlich der Verwendung von Adobe zur Initiierung von DSGVO-bezogenen Anfragen.
+Das Digital-Publishing-Produkt Adobe (das AEM Mobile vorausgeht) unterstützt Initiativen zur Einhaltung der DSGVO durch die Adobe. Siehe [https://business.adobe.com/de/privacy/general-data-protection-regulation.html](https://business.adobe.com/de/privacy/general-data-protection-regulation.html). Im Folgenden finden Sie Details zur Unterstützung für DSGVO-relevante Funktionen im Digital Publishing Suite-Produkt, einschließlich der Verwendung von Adobe zur Initiierung von DSGVO-bezogenen Anfragen.
 
 Um sicherzustellen, dass Sie AEM Mobile nicht mit dem älteren Digital Publishing Suite-Produkt verwechseln, können Sie sich hier beim Digital Publishing Suite-Produkt anmelden:
 

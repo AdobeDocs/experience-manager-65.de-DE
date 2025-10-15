@@ -24,7 +24,7 @@ Möchten Sie ansprechende und relevante Erlebnisse für Benutzer Ihrer Mobile Ap
 
 Greifen Ihre Benutzer auf den gesamten Inhalt zu? Geben sie die App auf und wenn ja, wo? Wie oft bleiben sie in der App und wie oft kommen sie zurück, um die App zu verwenden? Welche Änderungen können eingeführt und dann gemessen werden, um die Kundenbindung zu erhöhen? Wie steht es mit Absturzraten? Stürzt Ihre Mobile App für Ihre Benutzer ab?
 
-Nutzen Sie [Mobile App Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) in Ihren Adobe Experience Manager (AEM) Apps durch die Integration mit [Adobe Mobile Services](https://business.adobe.com/products/campaign/mobile-marketing.html).
+Nutzen Sie [Mobile App Analytics](https://business.adobe.com/de/products/analytics/mobile-marketing.html) in Ihren Adobe Experience Manager (AEM) Apps durch die Integration mit [Adobe Mobile Services](https://business.adobe.com/de/products/campaign/mobile-marketing.html).
 
 Instrumentieren Sie Ihre AEM-Apps, um zu verfolgen, Berichte zu erstellen und zu verstehen, wie Ihre Benutzerinnen und Benutzer mit Ihrer Mobile App und Ihren Inhalten interagieren, und um wichtige Lebenszyklusmetriken wie Starts, Zeit in der App und Absturzrate zu messen.
 
