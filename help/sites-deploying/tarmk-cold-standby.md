@@ -331,7 +331,7 @@ Führen Sie hierzu die nachfolgend beschriebenen Schritte aus:
 1. Testen Sie die Instanz nach der Installation auf mögliche Probleme.
 1. Entfernen Sie die Cold-Standby-Instanz, indem Sie ihren Installationsordner löschen.
 1. Stoppen Sie die primäre Instanz und klonen Sie sie, indem Sie eine Dateisystemkopie ihres gesamten Installationsordners an den Speicherort der Cold-Standby-Instanz erstellen.
-1. Konfigurieren Sie den neu erstellten Klon so, dass er als Cold-Standby-Instanz agiert. Siehe [ Erstellen eines AEM-TarMK-Cold-Standby-Setups](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
+1. Konfigurieren Sie den neu erstellten Klon so, dass er als Cold-Standby-Instanz agiert. Siehe [&#x200B; Erstellen eines AEM-TarMK-Cold-Standby-Setups](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
 1. Starten Sie sowohl die primäre als auch die Cold-Standby-Instanz.
 
 ## Monitoring {#monitoring}
