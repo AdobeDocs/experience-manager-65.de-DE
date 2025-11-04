@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
-workflow-type: ht
-source-wordcount: '1789'
-ht-degree: 100%
+source-git-commit: 9d5ad43703d2fb3c1d40e10578f5289510a18230
+workflow-type: tm+mt
+source-wordcount: '1989'
+ht-degree: 90%
 
 ---
 
@@ -29,6 +29,48 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
     <td><strong>Hotfix-Downloadlink (AEM Software Distribution-Link)</strong></td>
     <td><strong>Behobene Probleme</strong></td>
   </tr>
+  <tr>
+    <td>
+      <strong>14. Oktober 2025</strong><br>
+      <em>Gilt für:</em> ImgToPdf schlägt mit AEM Forms SP23 Jboss Hotfix3(109) fehl<br>
+    </td>
+    <td>
+    <ul> Zur Lösung des Problems wenden Sie sich an den [Adobe Experience Manager Forms-Support](https://business.adobe.com/in/support/main.html)
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li> <b>(FORMS-22029):</b> Verbessert die Konvertierungszuverlässigkeit von PDF, indem ein Problem behoben wird, bei dem PDF Generator (PDFG) Bilddateien nach dem Upgrade auf SP23 mit Hotfix 3 nicht in PDF konvertieren kann, was zu unerwarteten Nachbearbeitungsfehlern führt.
+      <ul>
+  <tr>
+    <td>
+      <strong>23. September 2025</strong><br>
+    </td>
+    <td>
+    <ul>
+    <li><strong>JBoss:</strong></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/jboss/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-jboss.zip">Hotfix3 für AEM Service Pack 6.5.23.0 unter Windows für JBoss JEE-Server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/jboss/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-jboss.tar.gz">Hotfix3 für AEM Service Pack 6.5.23.0 unter Linux für JBoss JEE-Server</a></li>
+    <li><strong>Weblogic:</strong></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/weblogic/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-weblogic.zip">Hotfix3 für AEM Service Pack 6.5.23.0 unter Windows für Weblogic JEE-Server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/weblogic/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-weblogic.tar.gz">Hotfix3 für AEM Service Pack 6.5.23.0 unter Linux für Weblogic JEE-Server</a></li>
+    <li><strong>Websphere:</strong></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/websphere/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-websphere.zip">Hotfix3 für AEM Service Pack 6.5.23.0 unter Windows für Websphere JEE Server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/websphere/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-websphere.tar.gz">Hotfix3 für AEM Service Pack 6.5.23.0 unter Linux für Websphere JEE Server</a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <strong>Dieser Hotfix behebt Folgendes:</strong> 
+    <li> <b>(FORMS-21378):</b> Verbesserte Zuverlässigkeit der Formularübermittlung durch Beheben eines Problems, bei dem Übermittlungen fehlschlagen, wenn die Server-seitige Validierung (SSV) aktiviert ist und berechnete Meta-Informationen leer sind.
+
+<li> <b>(FORMS-21721):</b> Es wurde ein Problem behoben, bei dem Konvertierungen von PS in PDF und HTML in PDF (WebKit) nach der Bereitstellung von Hotfix 2 zusätzlich zu 6.5.23.0 fehlschlagen. 
+    </li>
+    </ul>
+    </td>    
+  </tr>
+    </ul>
+    </td>
   <tr>
     <td>
       <strong>5. August 2025</strong><br>
@@ -259,7 +301,7 @@ Führen Sie die folgenden Schritte aus, um das Hotfix herunterzuladen und zu ins
 
 1. Laden Sie das [Hotfix](#hotfix-for-adaptive-forms) über den Software Distribution-Link herunter.
 1. Extrahieren Sie die Hotfix-Archivdatei, damit Sie ein Experience Manager-Paket (.zip) und Bundle-Dateien (.jar) abrufen können.
-1. Laden Sie das Paket (.zip) über den [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=de#accessing) hoch und installieren Sie es.
+1. Laden Sie das Paket (.zip) über den [Paket-Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=de#accessing) hoch und installieren Sie es.
 1. Öffnen Sie die Bundles des Konfigurations-Managers `https://server:host/system/console/bundles`, laden Sie sie hoch und installieren Sie das Bundle (.jar). Das Hotfix wird installiert.
 
 ## Installieren eines JEE-Patches {#download-install-jee-patch}
@@ -272,4 +314,4 @@ Anweisungen zum Installieren eines JEE-Patches finden Sie in der [Dokumentation 
 Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
 
 1. Laden Sie den [Hotfix](#hotfix-for-adaptive-forms) über das Software-Verteilungsportal herunter.
-2. Laden Sie das Paket (.zip) über den [CRX Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=de#accessing) hoch und installieren Sie es.
+2. Laden Sie das Paket (.zip) über den [CRX-Paket-Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=de#accessing) hoch und installieren Sie es.
