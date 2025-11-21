@@ -8,15 +8,15 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Content and Commerce {#content-commerce}
 
-Mit Adobe Experience Manager Content and Commerce können Marken schneller skalieren und Innovationen entwickeln, um differenzierte Commerce-Erlebnisse zu gestalten und die wachsenden Online-Ausgaben zu erfassen. Adobe Experience Manager Content and Commerce kombiniert die interaktiven, Omni-Channel- und personalisierten Erlebnisse in Experience Manager mit einer beliebigen Anzahl von Commerce-Lösungen, um in allen Bereichen der Customer Journey für differenzierte Erlebnisse zu sorgen, die Wertschöpfungszeit zu verkürzen und höhere Conversion Rates zu erzielen.
+Mit Adobe Experience Manager Content and Commerce können Marken schneller skalieren und Innovationen entwickeln, um differenzierte Commerce-Erlebnisse zu gestalten und die wachsenden Online-Ausgaben zu erfassen. Adobe Experience Manager Content and Commerce kombiniert die interaktiven, Omni-Channel- und personalisierten Erlebnisse in Experience Manager mit einer beliebigen Anzahl von Lösungen für den Handel, um in allen Bereichen der Customer Journey für differenzierte Erlebnisse zu sorgen, die Wertschöpfungszeit zu verkürzen und höhere Conversion Rates zu erzielen.
 
 ## So bringt Content and Commerce Kunden auf Erfolgskurs
 
@@ -32,7 +32,7 @@ Marken können Experience Manager mit Adobe Commerce, das Teil von Adobe Experie
 
 ## Einführung in AEM Commerce Integration Framework (CIF) {#cif-intro}
 
-Diese Projekte müssen die Komplexität der Integration einer Commerce-Lösung bewältigen. Eine Commerce-Lösung kann eine beliebige Lösung sein, von einer Lösung für den Handel wie Adobe Commerce bis hin zu einer Reihe von anwenderdefinierten Commerce-Services. Die Integration hängt in hohem Maße von den Nutzungsszenarios und dem Ökosystem ab. Sie wirkt sich in der Regel auf verschiedene Bereiche aus und kann in unterschiedlichster Formen erfolgen:
+Diese Projekte müssen die Komplexität der Integration einer Lösung für den Handel bewältigen. Eine Commerce-Lösung kann eine beliebige Lösung sein, von einer Lösung für den Handel wie Adobe Commerce bis hin zu einer Reihe von anwenderdefinierten Commerce-Services. Die Integration hängt in hohem Maße von den Nutzungsszenarios und dem Ökosystem ab. Sie wirkt sich in der Regel auf verschiedene Bereiche aus und kann in unterschiedlichster Formen erfolgen:
 
 * Integration eines komplexen und dynamischen Ökosystems (Beispiel: Produktkataloge)
 * Notwendigkeit für Unternehmen, Produktinhalte mit eigenem Lebenszyklus effizient und kanalübergreifend zu verwalten
@@ -68,7 +68,7 @@ CIF ist für kontinuierliche Innovation mit einem stets aktuellen Add-on konzipi
 
 ### Integrationen
 
-Verbinden Sie Ihr Ökosystem (z. B. eine Commerce-Lösung) mit Experience Cloud, indem Sie [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), eine auf Micro-Services basierenden PaaS-Lösung ohne Server, und die [CIF-Referenzimplementierung](https://github.com/adobe/commerce-cif-graphql-integration-reference) nutzen.
+Verbinden Sie Ihr Ökosystem (z. B. eine Lösung für den Handel) mit Experience Cloud, indem Sie [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), eine auf Micro-Services basierenden PaaS-Lösung ohne Server, und die [CIF-Referenzimplementierung](https://github.com/adobe/commerce-cif-graphql-integration-reference) nutzen.
 
 ## Bewährte Muster und Best Practices
 

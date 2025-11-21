@@ -72,7 +72,7 @@ Derzeit stehen in AEM 6 zwei Speicher zur Verfügung: der **TAR-Speicher** und
 
 ### Tar-Speicher {#tar-storage}
 
-Der TAR-Speicher nutzt TAR-Dateien. Er speichert Inhalte als unterschiedliche Datensätze innerhalb größerer Segmente. Journale werden verwendet, um den aktuellen Status des Repositorys zu verfolgen.
+Der TAR-Speicher nutzt TAR-Dateien. Er speichert Inhalte als unterschiedliche Einträge innerhalb größerer Segmente. Journale werden verwendet, um den aktuellen Status des Repositorys zu verfolgen.
 
 Es gibt mehrere wichtige Design-Prinzipien, um die herum das System aufgebaut wurde:
 
@@ -84,11 +84,11 @@ Jedes Segment wird durch einen eindeutigen Bezeichner (Unique Identifier, UUID) 
 
 * **Lokalität**
 
-Verwandte Datensätze wie etwa ein Knoten und dessen unmittelbare, untergeordnete Elemente werden normalerweise im selben Segment gespeichert. Dadurch wird die Suche nach dem Repository beschleunigt, und es werden die meisten Cache-Fehler für typische Clients vermieden, die auf mehr als einen zugehörigen Knoten pro Sitzung zugreifen.
+Verwandte Einträge wie etwa ein Knoten und dessen unmittelbare, untergeordnete Elemente werden normalerweise im selben Segment gespeichert. Dadurch wird die Suche nach dem Repository beschleunigt, und es werden die meisten Cache-Fehler für typische Clients vermieden, die auf mehr als einen zugehörigen Knoten pro Sitzung zugreifen.
 
 * **Kompaktheit**
 
-Die Formatierung von Datensätzen ist für die Größe optimiert, um E/A-Kosten zu reduzieren und so viel Inhalt wie möglich in Caches zu integrieren.
+Die Formatierung von Einträgen ist für die Größe optimiert, um E/A-Kosten zu reduzieren und so viel Inhalt wie möglich in Caches zu integrieren.
 
 ### Mongo-Speicher {#mongo-storage}
 

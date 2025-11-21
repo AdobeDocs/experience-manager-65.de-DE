@@ -89,7 +89,7 @@ Alle Formulartypen unterstützen die folgenden Funktionen:
 
 Wenn Formulardaten gesendet wurden, verbindet Adobe Experience Manager die Formulardaten mit vorhandenen Systemen, Geschäftsregeln und den gewünschten Personen.
 
-AEM Forms umfasst Forms Workspace, eine Mobile App, die Ihre digitalen Geschäftsprozesse auf Mobilgeräte erweitert.  Mit Forms Workspace können Sie Daten auch dann erfassen und aufzeichnen, wenn Sie offline sind.  Forms Workspace nutzt die Funktionen Ihres Mobilgeräts und ermöglicht Ihnen das Erfassen von Fotos und Videos sowie das Erfassen von Daten wie Zeitstempeln und anderen Informationen. Wenn Sie das nächste Mal mit einem Netzwerk verbunden sind, können Sie dann die erfassten Daten synchronisieren.
+AEM Forms umfasst Forms Workspace, eine Mobile App, die Ihre digitalen Geschäftsprozesse auf Mobilgeräte erweitert.  Mit Forms Workspace können Sie Daten auch dann erfassen und aufzeichnen, wenn Sie offline sind. Forms Workspace nutzt die Funktionen Ihres Mobilgeräts und ermöglicht Ihnen das Erfassen von Fotos und Videos sowie das Erfassen von Daten wie Zeitstempeln und anderen Informationen. Wenn Sie das nächste Mal mit einem Netzwerk verbunden sind, können Sie dann die erfassten Daten synchronisieren.
 
 Besonders für Menschen, die viel unterwegs sind, ist es nützlich, Daten offline zu erfassen und sie zu synchronisieren, wenn sie das nächste Mal online sind.  Dies verbessert die Produktivität und reduziert Fehler.
 
@@ -97,7 +97,7 @@ Besonders für Menschen, die viel unterwegs sind, ist es nützlich, Daten offlin
 
 * Benutzerfreundliche HTML-Workspace-Anwendung für Aufgabenzuweisung und -Tracking
 * Workflow-Design-Umgebung mit Drag-and-Drop-Funktion
-* Enterprise Content Management-(ECM-)Connectoren
+* Enterprise-Content-Management-(ECM-)Connectoren
 * Unterstützung offener Standards, einschließlich XML und SOAP, um Formulardaten mit Unternehmenssystemen zu verbinden.
 * Standardmäßig verfügbare HTML-Berichte, um Arbeitsrückstände, Warteschlangen und wichtige Leistungsindikatoren (KPIs) zu überwachen.
 * Anpassbare Dashboards für Einblicke in Geschäftsvorgänge in Echtzeit

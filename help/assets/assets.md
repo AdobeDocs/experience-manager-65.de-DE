@@ -65,7 +65,7 @@ Bei der Arbeit mit digitalen Assets in [!DNL Experience Manager] ist es hilfreic
 
 * **Sammlung**: Eine Sammlung von Assets, entweder auf Grundlage ihres physischen Speicherorts (Ordner), allgemeinen Eigenschaften (gespeicherter Suchordner) oder Benutzerauswahl (Lightbox-Ordner).
 
-* **Metadaten**: [!DNL Assets] verfügen über Metadaten, darunter Autorin oder Autor, Ablaufdatum, Digital Rights Management(DRM)-Informationen usw. Metadaten sind unter der Zugangssteuerung zu finden. [!DNL Assets] unterstützt standardmäßig die folgenden allgemeinen Metadaten-Schemata:
+* **Metadaten**: [!DNL Assets] verfügen über Metadaten, darunter Autorin oder Autor, Ablaufdatum, Digital Rights Management(DRM)-Informationen usw. Metadaten sind unter der Zugangssteuerung zu finden. [!DNL Assets] unterstützt standardmäßig die folgenden allgemeinen Metadatenschemata:
 
    * Dublin Core: einschließlich Autorin oder Autor, Beschreibung, Datum, Thema usw.
    * IPTC: einschließlich Ereignis, Modell, Ort usw.
