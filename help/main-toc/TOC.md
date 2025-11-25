@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 61d2291418653a8d4f0c805d3722691cbbf8e1c0
 workflow-type: tm+mt
 source-wordcount: '7562'
 ht-degree: 99%
@@ -446,7 +446,7 @@ ht-degree: 99%
       + [[!DNL Assets] und MediaLibrary](/help/assets/medialibrary.md)
       + [Verwenden des PDF Rasterizer](/help/assets/aem-pdf-rasterizer.md)
       + [Konfigurieren von Upload-Beschränkungen](/help/assets/configuring-asset-upload-restrictions.md)
-      + [Integration mit [!DNL Experience Manager] und  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
+      + [Integration mit [!DNL Experience Manager] und  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
       + [Integrieren mit  [!DNL InDesign Server]](/help/assets/indesign.md)
       + [Digital Rights Management in Assets](/help/assets/drm.md)
       + [Verwenden des Demopakets für Assets Insights](/help/assets/use-demo-package-for-asset-insights.md)
@@ -1217,7 +1217,7 @@ ht-degree: 99%
       + [Behebung der Schwachstellen bei der XXE-, Konfigurations- und Remote-Code-Ausführung für AEM Forms auf JEE](/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md)
       + [Anzeigen von Problemen für XFA-basierte PDF-Formulare und richtliniengeschützte Dokumente](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
       + [Öffnen von XFA-basierten PDF-Formularen in Firefox und Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
-      + [Schwachstelle von XML External Entity (XXE) in BlazeDS](/help/forms/using/xxe-vulnerability-blaze-ds.md)
+      + [Schwachstelle von XML External Entity (XXE) in BlazeDS](/help/forms/using/xxe-vulnerability-blazeds.md)
       + [Fehler bei der EAR-Bereitstellung auf JEE-WebLogic-Server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
    + Alte Dokumentation {#legacy-documentation}
       + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](/help/forms/developing/building-xml.md)
@@ -1401,7 +1401,7 @@ ht-degree: 99%
                + [Grundlegendes zu Headless-Technologie in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/overview.html?lang=de)
                + [Erfahren Sie mehr über die CMS-Headless-Entwicklung](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/learn-about.html?lang=de)
                + [Erste Schritte mit AEM Headless as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/getting-started.html?lang=de)
-               + [Gestalten Ihres ersten Erlebnisses mit AEM Headless &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/path-to-first-experience.html?lang=de)
+               + [Gestalten Ihres ersten Erlebnisses mit AEM Headless ](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/path-to-first-experience.html?lang=de)
                + [Modellieren Ihres Inhalts als AEM-Inhaltsmodelle](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/model-your-content.html?lang=de)
                + [Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/access-your-content.html?lang=de)
                + [So aktualisieren Sie Ihre Inhalte über AEM Assets-APIs:](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/update-your-content.html?lang=de)
