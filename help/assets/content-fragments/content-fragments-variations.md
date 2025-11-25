@@ -476,7 +476,7 @@ Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisie
 
 >[!CAUTION]
 >
->Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**in die Variante* zu kopieren.
+>Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**&#x200B;in die Variante* zu kopieren.
 >
 >Nur das aktuelle Element der Variante wird synchronisiert.
 >
