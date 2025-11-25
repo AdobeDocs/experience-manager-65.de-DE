@@ -113,7 +113,7 @@ Wählen Sie eine Variable vom Typ „XML“ aus, um eine XML-Datei zu speichern.
 
 In diesem Beispiel wählen Sie eine XML-Variable **formdata** aus, um die Datei **cc-app.xml** zu speichern. Fragen Sie die Variable **formdata** ab, um den Wert für die Zeichenfolgenvariable **emailaddress** festzulegen, um den Wert für die Eigenschaft **emailAddress** zu speichern, die in der Datei **cc-app.xml** verfügbar ist.
 
-[Festlegen einer variablen ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4)
+[Festlegen einer variablen &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4)
 
 ### Beispiel 2: Verwenden eines Ausdrucks, um einen Wert basierend auf anderen Variablen zu speichern {#example2}
 
