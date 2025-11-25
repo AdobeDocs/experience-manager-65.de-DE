@@ -19,7 +19,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->[Kontaktieren Sie den Support](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=de#support), um weitere Informationen oder den Patch zu erhalten.
+>[Kontaktieren Sie den Support](https://experienceleague.adobe.com/de?support-solution=General&support-tab=home?lang=de#support), um weitere Informationen oder den Patch zu erhalten.
 
 ## Über das Patch-Installationsprogramm {#about-the-patch-installer}
 
@@ -97,4 +97,4 @@ Wenn Sie die SAML-Authentifizierung konfiguriert haben und Probleme mit großen 
 * Document Security
 * Foundation JEE
 
-[Support kontaktieren](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=de#support)
+[Support kontaktieren](https://experienceleague.adobe.com/de?support-solution=General&support-tab=home?lang=de#support)
