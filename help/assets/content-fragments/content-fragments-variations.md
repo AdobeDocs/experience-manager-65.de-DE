@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: b611d044c9dab5aa25a3e58cf2447faa42b4b7b6
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 100%
+source-wordcount: '2350'
+ht-degree: 98%
 
 ---
 
@@ -408,6 +408,12 @@ Es wird an der aktuellen Position in Ihrem Fragment als Verweis hinzugefügt.
 Varianten ermöglichen die Abänderung von **primärem** Inhalt für einen bestimmten Zweck (sofern notwendig).
 
 So erstellen Sie eine Variante:
+
+>[!NOTE]
+>
+>Varianten fügen einem Inhaltsfragment, der Autorenumgebung und der Bereitstellung Verarbeitungszeit hinzu. Es wird empfohlen, die Anzahl der Varianten auf ein überschaubares Minimum zu beschränken.
+>
+>Als Best Practice gilt, pro Inhaltsfragment maximal zehn Varianten zu verwenden.
 
 1. Öffnen Sie Ihr Fragment und stellen Sie sicher, dass das seitliche Bedienfeld sichtbar ist.
 1. Wählen Sie im seitlichen Bedienfeld in der Symbolleiste die Option **Varianten** aus.
