@@ -9,10 +9,10 @@ exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -71,117 +71,117 @@ Sie können den Anmeldebildschirm aller AEM Forms-Module ändern, die den AEM Fo
 
 1. Ändern Sie das folgende Code-Fragment für `/apps/livecycle/core/components/login/login.jsp`:
 
-***Gebietsschema ist Sprachcode***
+   ***Gebietsschema ist Sprachcode***
 
-```jsp
-String browserLocale = "en";
+   ```jsp
+   String browserLocale = "en";
+   
+       for(int i=0; i<locales.length; i++)
+       {
+           String prioperty = locales[i];
+           if(prioperty.trim().startsWith("en")) {
+               browserLocale = "en";
+               break;
+           }
+           if(prioperty.trim().startsWith("de")){
+               browserLocale = "de";
+               break;
+           }
+           if(prioperty.trim().startsWith("ja")){
+               browserLocale = "ja";
+               break;
+           }
+           if(prioperty.trim().startsWith("fr")){
+               browserLocale = "fr";
+               break;
+           }
+       }
+   ```
 
-    for(int i=0; i<locales.length; i++)
-    {
-        String prioperty = locales[i];
-        if(prioperty.trim().startsWith("en")) {
-            browserLocale = "en";
-            break;
-        }
-        if(prioperty.trim().startsWith("de")){
-            browserLocale = "de";
-            break;
-        }
-        if(prioperty.trim().startsWith("ja")){
-            browserLocale = "ja";
-            break;
-        }
-        if(prioperty.trim().startsWith("fr")){
-            browserLocale = "fr";
-            break;
-        }
-    }
-```
+   To
 
-To
+   ```jsp
+   String browserLocale = "en";
+       for(int i=0; i<locales.length; i++)
+       {
+           String prioperty = locales[i];
+           if(prioperty.trim().startsWith("ar")) {
+               browserLocale = "ar";
+               break;
+           }
+           if(prioperty.trim().startsWith("en")) {
+               browserLocale = "en";
+               break;
+           }
+           if(prioperty.trim().startsWith("de")){
+               browserLocale = "de";
+               break;
+           }
+           if(prioperty.trim().startsWith("ja")){
+               browserLocale = "ja";
+               break;
+           }
+           if(prioperty.trim().startsWith("fr")){
+               browserLocale = "fr";
+               break;
+           }
+       }
+   ```
 
-```jsp
-String browserLocale = "en";
-    for(int i=0; i<locales.length; i++)
-    {
-        String prioperty = locales[i];
-        if(prioperty.trim().startsWith("ar")) {
-            browserLocale = "ar";
-            break;
-        }
-        if(prioperty.trim().startsWith("en")) {
-            browserLocale = "en";
-            break;
-        }
-        if(prioperty.trim().startsWith("de")){
-            browserLocale = "de";
-            break;
-        }
-        if(prioperty.trim().startsWith("ja")){
-            browserLocale = "ja";
-            break;
-        }
-        if(prioperty.trim().startsWith("fr")){
-            browserLocale = "fr";
-            break;
-        }
-    }
-```
+   ```jsp
+   String browserLocale = "en";
+   
+       for(int i=0; i<locales.length; i++)
+       {
+           String prioperty = locales[i];
+           if(prioperty.trim().startsWith("en")) {
+               browserLocale = "en";
+               break;
+           }
+           if(prioperty.trim().startsWith("de")){
+               browserLocale = "de";
+               break;
+           }
+           if(prioperty.trim().startsWith("ja")){
+               browserLocale = "ja";
+               break;
+           }
+           if(prioperty.trim().startsWith("fr")){
+               browserLocale = "fr";
+               break;
+           }
+       }
+   ```
 
-```jsp
-String browserLocale = "en";
+   To
 
-    for(int i=0; i<locales.length; i++)
-    {
-        String prioperty = locales[i];
-        if(prioperty.trim().startsWith("en")) {
-            browserLocale = "en";
-            break;
-        }
-        if(prioperty.trim().startsWith("de")){
-            browserLocale = "de";
-            break;
-        }
-        if(prioperty.trim().startsWith("ja")){
-            browserLocale = "ja";
-            break;
-        }
-        if(prioperty.trim().startsWith("fr")){
-            browserLocale = "fr";
-            break;
-        }
-    }
-```
-
-To
-
-```jsp
-String browserLocale = "en";
-    for(int i=0; i<locales.length; i++)
-    {
-        String prioperty = locales[i];
-        if(prioperty.trim().equalsIgnoreCase("ar-DZ")) {
-            browserLocale = "ar-DZ";
-            break;
-        }
-        if(prioperty.trim().startsWith("en")) {
-            browserLocale = "en";
-            break;
-        }
-        if(prioperty.trim().startsWith("de")){
-            browserLocale = "de";
-            break;
-        }
-        if(prioperty.trim().startsWith("ja")){
-            browserLocale = "ja";
-            break;
-        }
-        if(prioperty.trim().startsWith("fr")){
-            browserLocale = "fr";
-            break;
-        }
-    }
-```
+   ```jsp
+   String browserLocale = "en";
+       for(int i=0; i<locales.length; i++)
+       {
+           String prioperty = locales[i];
+           if(prioperty.trim().equalsIgnoreCase("ar-DZ")) {
+               browserLocale = "ar-DZ";
+               break;
+           }
+           if(prioperty.trim().startsWith("en")) {
+               browserLocale = "en";
+               break;
+           }
+           if(prioperty.trim().startsWith("de")){
+               browserLocale = "de";
+               break;
+           }
+           if(prioperty.trim().startsWith("ja")){
+               browserLocale = "ja";
+               break;
+           }
+           if(prioperty.trim().startsWith("fr")){
+               browserLocale = "fr";
+               break;
+           }
+       }
+   ```
 
 ***So ändern Sie das Standardgebietsschema***
 
@@ -263,12 +263,12 @@ Beispiel:
 
 * Hinzufügen von Folgendem zu `/apps/livecycle/core/content/login/login.css`.
 
-```
-css.newLoginContentArea {
-    width: 700px;
-    padding: 100px 0px 0px 100px;
-   }
-```
+  ```
+  css.newLoginContentArea {
+      width: 700px;
+      padding: 100px 0px 0px 100px;
+  }
+  ```
 
 * Ändern Sie Folgendes in `/apps/livecycle/core/components/login.jsp`.
 
@@ -300,28 +300,28 @@ css.newLoginContentArea {
 1. Fügen Sie neue Stile in `/apps/livecycle/core/content/login/login.css,` hinzu, die den in `/apps/livecycle/core/content/login` hinzugefügten neuen Bildern entsprechen.
 1. Verwenden Sie die neuen Stile in `login.jsp` unter `/apps/livecycle/core/components`.
 
-Beispiel:
+   Beispiel:
 
 
-```css
-.newLoginContainerBkg {
+   ```css
+   .newLoginContainerBkg {
+   
+    background-image: url(my_Bg.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 727px;
+   }
+   ```
 
- background-image: url(my_Bg.gif);
- background-repeat: no-repeat;
- background-position: left top;
- width: 727px;
-}
-```
 
+   * Ändern Sie Folgendes in /apps/livecycle/core/components/login.jsp.
 
-    * Ändern Sie Folgendes in /apps/livecycle/core/components/login.jsp.
+   ```jsp
+   <div class="loginContainerBkg">
+   ```
 
-```jsp
-<div class="loginContainerBkg">
-```
+   An
 
-To
-
-```jsp
-<div class="newLginContainerBkg">
-```
+   ```jsp
+   <div class="newLginContainerBkg">
+   ```

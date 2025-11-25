@@ -9,9 +9,9 @@ role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '16917'
+source-wordcount: '16916'
 ht-degree: 99%
 
 ---
@@ -458,9 +458,9 @@ Speichern Sie das PDF-Dokument mit dem geänderten Signaturfeld als PDF-Datei, d
 
    * Erstellen Sie ein Objekt `PDFSignatureFieldProperties`, indem Sie den Konstruktor verwenden. Ein `PDFSignatureFieldProperties`-Objekt speichert Informationen zum Sperrwörterbuch für Signaturfelder und zum Seed-Wert-Wörterbuch.
    * Erstellen Sie ein Objekt `PDFSeedValueOptionSpec`, indem Sie den Konstruktor verwenden. Mit diesem Objekt können Sie Werte im Seed-Wert-Wörterbuch festlegen.
-   * Verhindern Sie Änderungen am PDF-Dokument, indem Sie die Methode `setMdpValue` des `PDFSeedValueOptionSpec`-Objekts aufrufen und den `MDPPermissions.NoChanges`-Auflistungswert übergeben.
+   * Verhindern Sie Änderungen am PDF-Dokument, indem Sie die Methode `setMdpValue` des `PDFSeedValueOptionSpec`-Objekts aufrufen und den `MDPPermissions.NoChanges`-Aufzählungswert übergeben.
    * Erstellen Sie ein Objekt `FieldMDPOptionSpec`, indem Sie den Konstruktor verwenden. Mit diesem Objekt können Sie Werte im Signaturfeldsperre-Wörterbuch festlegen.
-   * Sperren Sie alle Felder im PDF-Dokument, indem Sie die Methode `setMdpValue` des `FieldMDPOptionSpec`-Objekts aufrufen und den `FieldMDPAction.ALL`-Auflistungswert übergeben.
+   * Sperren Sie alle Felder im PDF-Dokument, indem Sie die Methode `setMdpValue` des `FieldMDPOptionSpec`-Objekts aufrufen und den `FieldMDPAction.ALL`-Aufzählungswert übergeben.
    * Legen Sie Informationen zum Seed-Wert-Wörterbuch fest, indem Sie die Methode `setSeedValue` des `PDFSignatureFieldProperties`-Objekts aufrufen und das `PDFSeedValueOptionSpec`-Objekt übergeben.
    * Legen Sie Informationen für das Wörterbuch für die Signaturfeldsperre fest, indem Sie die Methode `setFieldMDP` des `PDFSignatureFieldProperties`-Objekts aufrufen und das `FieldMDPOptionSpec`-Objekt übergeben.
 
@@ -520,9 +520,9 @@ So ändern Sie ein Signaturfeld mithilfe der Signature-API (Webservice):
 
    * Erstellen Sie ein Objekt `PDFSignatureFieldProperties`, indem Sie den Konstruktor verwenden. Dieses Objekt speichert Informationen zum Signaturfeldsperre-Wörterbuch und zum Seed-Wert-Wörterbuch.
    * Erstellen Sie ein Objekt `PDFSeedValueOptionSpec`, indem Sie den Konstruktor verwenden. Mit diesem Objekt können Sie Werte im Seed-Wert-Wörterbuch festlegen.
-   * Sie können Änderungen am PDF-Dokument verbieten, indem Sie dem Datenelement `mdpValue` des `PDFSeedValueOptionSpec`-Objekts den `MDPPermissions.NoChanges`-Auflistungswert zuweisen.
+   * Sie können Änderungen am PDF-Dokument verbieten, indem Sie dem Datenelement `mdpValue` des `PDFSeedValueOptionSpec`-Objekts den `MDPPermissions.NoChanges`-Aufzählungswert zuweisen.
    * Erstellen Sie ein Objekt `FieldMDPOptionSpec`, indem Sie den Konstruktor verwenden. Mit diesem Objekt können Sie Werte im Signaturfeldsperre-Wörterbuch festlegen.
-   * Sperren Sie alle Felder im PDF-Dokument, indem Sie den `FieldMDPAction.ALL`-Auflistungswert dem Datenelement `mdpValue` des `FieldMDPOptionSpec`-Objekts zuweisen.
+   * Sperren Sie alle Felder im PDF-Dokument, indem Sie den `FieldMDPAction.ALL`-Aufzählungswert dem Datenelement `mdpValue` des `FieldMDPOptionSpec`-Objekts zuweisen.
    * Legen Sie Informationen für das Seed-Wert-Wörterbuch fest, indem Sie das `PDFSeedValueOptionSpec`-Objekt dem Datenelement `seedValue` des `PDFSignatureFieldProperties`-Objekts zuweisen.
    * Legen Sie Informationen für das Wörterbuch für die Signaturfeldsperre fest, indem Sie das `FieldMDPOptionSpec`-Objekt dem Datenelement `fieldMDP` des `PDFSignatureFieldProperties`-Objekts zuweisen.
 
@@ -597,9 +597,9 @@ Sie können den folgenden Konfigurationswert zur Datei „cknfastrc“ hinzufüg
 
 Nachdem Sie diesen Konfigurationswert zur Datei „cknfastrc“ hinzugefügt haben, können die neuen Anmeldedaten verwendet werden, ohne den J2EE-Programm-Server neu starten zu müssen.
 
-    >[!NOTE]
-    >
-    > Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+>[!NOTE]
+>
+> Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 **Signatur ist nicht vertrauenswürdig**
 
@@ -1345,7 +1345,7 @@ Legen Sie diese PKI-Laufzeitoptionen fest, die der Signature-Service beim Überp
 
 Im Rahmen der Einstellung dieser Optionen können Sie den Überprüfungszeitpunkt festlegen. Sie können beispielsweise die aktuelle Zeit (die Zeit auf dem Computer des Validators bzw. der Validatorin) auswählen, was angibt, die aktuelle Zeit zu verwenden. Weitere Informationen zu den verschiedenen Zeitwerten finden Sie unter `VerificationTime` Aufzählungswert in [AEM Forms-API-Verweis](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-Sie können auch angeben, ob im Rahmen des Überprüfungsprozesses eine Sperrprüfung durchgeführt werden soll. Sie können beispielsweise eine Sperrprüfung durchführen, um festzustellen, ob das Zertifikat widerrufen wurde. Weitere Informationen zu den Optionen für die Sperrprüfung finden Sie unter `RevocationCheckStyle` Auflistungswert in [AEM Forms-API-Verweis](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Sie können auch angeben, ob im Rahmen des Überprüfungsprozesses eine Sperrprüfung durchgeführt werden soll. Sie können beispielsweise eine Sperrprüfung durchführen, um festzustellen, ob das Zertifikat widerrufen wurde. Weitere Informationen zu den Optionen für die Sperrprüfung finden Sie unter `RevocationCheckStyle` Aufzählungswert in [AEM Forms-API-Verweis](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 Um eine Widerrufsprüfung für ein Zertifikat durchzuführen, geben Sie mithilfe eines `CRLOptionSpec`-Objekts eine URL zu einem Zertifikatssperrlisten-Server (CRL) an. Wenn Sie jedoch keine URL für den CRL-Server angeben, ruft der Signature-Service die URL vom Zertifikat ab.
 
@@ -1439,7 +1439,7 @@ Sie können die Identität des Unterzeichners ermitteln, die einen der folgenden
 1. Bestimmen der Identität des Signierers
 
    * Ermitteln Sie die Identität der unterzeichnenden Person, indem Sie die Methode `getSigner` des `PDFSignatureVerificationInfo`-Objekts aufrufen. Diese Methode gibt ein `IdentityInformation`-Objekt zurück.
-   * Rufen Sie die Methode `getStatus` des `IdentityInformation`-Objekts auf, um die Identität der unterzeichnenden Person zu bestimmen. Diese Methode gibt einen Auflistungswert `IdentityStatus` zurück, der die Identität angibt. Wenn beispielsweise der Unterzeichner als vertrauenswürdig eingestuft wird, gibt diese Methode `IdentityStatus.TRUSTED` zurück.
+   * Rufen Sie die Methode `getStatus` des `IdentityInformation`-Objekts auf, um die Identität der unterzeichnenden Person zu bestimmen. Diese Methode gibt einen Aufzählungswert `IdentityStatus` zurück, der die Identität angibt. Wenn beispielsweise der Unterzeichner als vertrauenswürdig eingestuft wird, gibt diese Methode `IdentityStatus.TRUSTED` zurück.
 
 **Siehe auch**
 
@@ -1508,7 +1508,7 @@ Sie können die Identität des Unterzeichners ermitteln, die einen der folgenden
 1. Bestimmen der Identität des Signierers
 
    * Bestimmen Sie die Identität der unterzeichnenden Person, indem Sie den Wert des Datenelements `signer` des `PDFSignatureVerificationInfo`-Objekts abrufen. Dieses Element gibt ein `IdentityInformation`-Objekt zurück.
-   * Rufen Sie das Datenelement `status` des `IdentityInformation`-Objekts ab, um die Identität der unterzeichnenden Person zu bestimmen. Dieses Datenelement gibt einen `IdentityStatus`-Auflistungswert zurück, der die Identität angibt. Wenn beispielsweise der Unterzeichner als vertrauenswürdig eingestuft wird, gibt dieses Element `IdentityStatus.TRUSTED` zurück.
+   * Rufen Sie das Datenelement `status` des `IdentityInformation`-Objekts ab, um die Identität der unterzeichnenden Person zu bestimmen. Dieses Datenelement gibt einen `IdentityStatus`-Aufzählungswert zurück, der die Identität angibt. Wenn beispielsweise der Unterzeichner als vertrauenswürdig eingestuft wird, gibt dieses Element `IdentityStatus.TRUSTED` zurück.
 
 **Siehe auch**
 
@@ -1569,7 +1569,7 @@ Legen Sie diese PKI-Laufzeitoptionen fest, die der Signature-Dienst bei der Prü
 
 Im Rahmen der Einstellung dieser Optionen können Sie den Überprüfungszeitpunkt festlegen. Sie können beispielsweise die aktuelle Zeit (die Zeit auf dem Computer des Validators bzw. der Validatorin) auswählen, was angibt, die aktuelle Zeit zu verwenden. Weitere Informationen zu den verschiedenen Zeitwerten finden Sie unter `VerificationTime` Aufzählungswert in [AEM Forms-API-Verweis](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-Sie können auch angeben, ob im Rahmen des Überprüfungsprozesses eine Sperrprüfung durchgeführt werden soll. Sie können beispielsweise eine Sperrprüfung durchführen, um festzustellen, ob das Zertifikat widerrufen wurde. Weitere Informationen zu den Optionen für die Sperrprüfung finden Sie unter `RevocationCheckStyle` Auflistungswert in [AEM Forms-API-Verweis](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Sie können auch angeben, ob im Rahmen des Überprüfungsprozesses eine Sperrprüfung durchgeführt werden soll. Sie können beispielsweise eine Sperrprüfung durchführen, um festzustellen, ob das Zertifikat widerrufen wurde. Weitere Informationen zu den Optionen für die Sperrprüfung finden Sie unter `RevocationCheckStyle` Aufzählungswert in [AEM Forms-API-Verweis](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 Um eine Sperrprüfung für ein Zertifikat durchzuführen, geben Sie mit einem `CRLOptionSpec`-Objekt eine URL zu einem Zertifikatssperrlistenserver (CRL) an. Wenn Sie jedoch keine URL zu einem CRL-Server angeben, bezieht der Signature-Dienst die URL aus dem Zertifikat.
 
@@ -1636,8 +1636,8 @@ Iterieren Sie durch jede Signatur. Das heißt, für jede Signatur überprüfen S
 1. PKI-Laufzeitoptionen festlegen
 
    * Erstellen Sie ein Objekt `PKIOptions`, indem Sie den Konstruktor verwenden.
-   * Legen Sie die Überprüfungszeit fest, indem Sie die Methode `setVerificationTime` des `PKIOptions`-Objekts aufrufen und einen `VerificationTime`-Auflistungswert übergeben, der die Überprüfungszeit angibt.
-   * Legen Sie die Option für die Widerrufsprüfung fest, indem Sie die Methode `setRevocationCheckStyle` des `PKIOptions`-Objekts aufrufen und einen `RevocationCheckStyle`-Auflistungswert übergeben, der angibt, ob eine Widerrufsprüfung durchgeführt werden soll.
+   * Legen Sie die Überprüfungszeit fest, indem Sie die Methode `setVerificationTime` des `PKIOptions`-Objekts aufrufen und einen `VerificationTime`-Aufzählungswert übergeben, der die Überprüfungszeit angibt.
+   * Legen Sie die Option für die Widerrufsprüfung fest, indem Sie die Methode `setRevocationCheckStyle` des `PKIOptions`-Objekts aufrufen und einen `RevocationCheckStyle`-Aufzählungswert übergeben, der angibt, ob eine Widerrufsprüfung durchgeführt werden soll.
 
 1. Abrufen aller digitalen Signaturen
 
@@ -1702,8 +1702,8 @@ Iterieren Sie durch jede Signatur. Das heißt, für jede Signatur überprüfen S
 1. PKI-Laufzeitoptionen festlegen
 
    * Erstellen Sie ein Objekt `PKIOptions`, indem Sie den Konstruktor verwenden.
-   * Legen Sie die Überprüfungszeit fest, indem Sie dem Datenelement `verificationTime` des `PKIOptions`-Objekts einen `VerificationTime`-Auflistungswert zuweisen, der die Überprüfungszeit angibt.
-   * Legen Sie die Widerrufsprüfungsoption fest, indem Sie dem Datenelement `revocationCheckStyle` des `PKIOptions`-Objekts einen `RevocationCheckStyle`-Auflistungswert zuweisen, der angibt, ob eine Widerrufsprüfung durchgeführt werden soll.
+   * Legen Sie die Überprüfungszeit fest, indem Sie dem Datenelement `verificationTime` des `PKIOptions`-Objekts einen `VerificationTime`-Aufzählungswert zuweisen, der die Überprüfungszeit angibt.
+   * Legen Sie die Widerrufsprüfungsoption fest, indem Sie dem Datenelement `revocationCheckStyle` des `PKIOptions`-Objekts einen `RevocationCheckStyle`-Aufzählungswert zuweisen, der angibt, ob eine Widerrufsprüfung durchgeführt werden soll.
 
 1. Abrufen aller digitalen Signaturen
 

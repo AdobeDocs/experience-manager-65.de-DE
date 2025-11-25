@@ -2,11 +2,11 @@
 title: Erstellen von Übersetzungsprojekten
 description: Erfahren Sie, wie Sie in  [!DNL Adobe Experience Manager] Übersetzungsprojekte erstellen können.
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1889'
 ht-degree: 100%

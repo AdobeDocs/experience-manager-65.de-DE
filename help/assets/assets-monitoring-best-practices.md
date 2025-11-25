@@ -2,14 +2,14 @@
 title: 'Best Practices zur Überwachung der Bereitstellung von  [!DNL Assets] '
 description: Best Practices zur Überwachung der Umgebung und Leistung der Implementierung von [!DNL Adobe Experience Manager] nach der Bereitstellung.
 contentOwner: AG
-role: Admin, Architect
+role: Admin, Developer
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1639'
-ht-degree: 100%
+source-wordcount: '1638'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Es ist ratsam, die Live-Überwachung während der Leistungstestphase Ihres Entwi
 
 * [Iftop](https://www.ex-parrot.com/pdw/iftop/): Mit „Iftop“ werden ausführliche Informationen zur Ethernet-/Netzwerkauslastung angezeigt. Es werden Statistiken pro Kommunikationskanal auf den Entitäten zur Ethernet-Verwendung und zur genutzten Bandbreite angegeben. „Iftop“ kann auf den meisten Linux-Systemen mit dem Befehl `yum install iftop` oder `apt-get install iftop` installiert werden.
 
-* Java Flight Recorder (JFR): Ein kommerzielles Tool von Oracle, das Sie in Umgebungen, die nicht für die Produktion bestimmt sind, kostenlos nutzen können. Ausführliche Informationen finden Sie unter [Verwenden von Java Flight Recorder zum Diagnostizieren von CQ-Laufzeitproblemen](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
+* Java Flight Recorder (JFR): Ein kommerzielles Tool von Oracle, das Sie in produktionsfremden Umgebungen kostenlos nutzen können. Ausführliche Informationen finden Sie unter [Verwenden von Java Flight Recorder zum Diagnostizieren von CQ-Laufzeitproblemen](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
 * [!DNL Experience Manager]-Datei `error.log`: Sie können die [!DNL Experience Manager]-Datei `error.log` nach Details zu Fehlern durchsuchen, die im System protokolliert wurden. Verwenden Sie den Befehl `tail -F quickstart/logs/error.log`, um Fehler zu identifizieren, die untersucht werden müssen.
 * [Workflow-Konsole](/help/sites-administering/workflows.md): Nutzen Sie die Workflow-Konsole, um Workflows zu überwachen, die Verzögerungen aufweisen oder hängen.
 
@@ -131,7 +131,7 @@ Replikationsagenten
 Sitzungszähler
 
 * MBean: `org.apache.jackrabbit.oak:id=7,name="OakRepository Statistics",type="RepositoryStats"`
-* URL: */system/console/jmx/org.apache.jackrabbit.oak:id=7,name=&quot;OakRepository Statistics&quot;,type*=&quot;RepositoryStats&quot;
+* URL: */system/console/jmx/org.apache.jackrabbit.oak:id=7,name=„OakRepository-Statistiken“,type*=„RepositoryStats“
 * Instanzen: Alle Server
 * Alarmschwellenwert: Wenn geöffnete Sitzungen die Baseline um mehr als 50 % überschreiten.
 * Alarmdefinition: Sitzungen werden ggf. über einen Teil des Codes geöffnet und nicht geschlossen. Dies kann im Laufe der Zeit langsam erfolgen und schließlich zu Speicherlecks im System führen. Es ist zwar normal, dass die Anzahl von Sitzungen in einem System schwankt, aber sie sollte nicht beständig ansteigen.

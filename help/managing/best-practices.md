@@ -9,11 +9,11 @@ docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer,Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '3214'
-ht-degree: 100%
+source-wordcount: '3212'
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ Das Arbeitsblatt zum **Projekt-Heartbeat** liefert einen grafischen Überblick �
 
 ## Status nach Rolle {#status-by-role}
 
-Das Arbeitsblatt **Status nach Rolle** zeigt eine detaillierte Aufstellung der [**Konsistenz**, Qualität und **Vollständigkeit**](#projectheartbeat), sortiert nach **[Phase](#phases-and-milestones)** und **[Rolle](#persona)**.
+Das Arbeitsblatt **Status nach Rolle** schüsselt detailliert die [**Konsistenz**, Qualität und **Vollständigkeit**](#projectheartbeat) auf, sortiert nach **[Phase](#phases-and-milestones)** und **[Rolle](#persona)**.
 
 ## Phasen und Meilensteine {#phases-and-milestones}
 
@@ -66,7 +66,7 @@ Jede Phase enthält ihre eigenen Milestones. Für jede [Rolle](#persona) werden 
 
 >[!NOTE]
 >
->Es gibt keine direkte 1:1-Beziehung zwischen den einzelnen erforderlichen Dokumenten und zu erbringenden Leistungen.
+>Es besteht keine direkte 1:1-Beziehung zwischen den einzelnen erforderlichen Dokumenten und den zu erbringenden Leistungen.
 
 ### Vorbereitung {#preparation}
 
@@ -239,7 +239,7 @@ Die Entwicklungsplanung ist der Schlüssel, um zu gewährleisten, dass das Proje
 
   Vor der Entwicklung sollten alle Unterstützungsprozesse erstellt werden, die zur Bereitstellung, zur Veröffentlichung, zum Testen und zur Meldung von Problemen notwendig sind.
 
-  Informationen finden Sie auch im [Adobe Support-Portal](https://experienceleague.adobe.com/de?lang=de&amp;support-solution=General&amp;support-tab=home#support).
+  Informationen finden Sie auch im [Adobe Support-Portal](https://experienceleague.adobe.com/?lang=de&support-solution=General&support-tab=home#support).
 
 ### Betriebsplanung und Betrieb {#operations-planning-and-operations}
 
@@ -579,7 +579,7 @@ Die Leitung der Sicherheit:
 
 Die Checklisten enthalten die **erforderlichen Dokumente** und **Ergebnisse** für jeden Milestone.
 
-* Es besteht keine 1:1-Beziehung zwischen diesen beiden Aspekten. So kann beispielsweise eine Gruppe erforderlicher Dokumente in nur einer zu erbringenden Leistung münden.
+* Es gibt keine 1:1-Beziehung zwischen diesen. Beispielsweise kann eine Gruppe erforderlicher Dokumente zu einer einzigen Leistung führen.
 * Die zu erbringende Leistung einer Rolle kann ein erforderliches Dokument für eine andere Rolle während desselben Meilensteins sein.
 
 ### Erforderliche Dokumente {#required-documents}

@@ -4,8 +4,8 @@ description: Beginnen Sie hier mit einer geführten Tour durch die leistungsstar
 exl-id: b8cdbd0f-c034-4c9f-976f-5e39b1bd33bf
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 100%
@@ -62,7 +62,7 @@ Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch,
 | 3 | [Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten](references.md) | Erfahren Sie, wie Sie Verweise in Inhaltsfragmenten verwenden. Mit diesen können Sie auch mithilfe von verschachtelten Fragmenten mehrere Strukturebenen für Ihr Headless-CMS erstellen und verwalten. |
 | 4 | [Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente](metadata-tagging.md) | Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente. |
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Jetzt sind Sie bereit, mit Ihrer Adobe Headless-Tour zu beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Tour fortzufahren und den Artikel [Authoring für AEM Headless – Einführung.](introduction.md) zu lesen.
 
@@ -72,7 +72,7 @@ Jetzt sind Sie bereit, mit Ihrer Adobe Headless-Tour zu beginnen. Wir empfehlen 
 However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So consider these two options.
 
 * If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
-* If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=de) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
+* If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
 -->
 
 ## Zusätzliche Ressourcen {#additional-resources}

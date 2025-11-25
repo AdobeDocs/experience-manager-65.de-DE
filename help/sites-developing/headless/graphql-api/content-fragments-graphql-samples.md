@@ -5,10 +5,10 @@ feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 100%
+source-wordcount: '1577'
+ht-degree: 99%
 
 ---
 
@@ -1720,7 +1720,7 @@ Die folgenden Fragmente werden für das entsprechende Modell verwendet.
 | Lincoln |  Abe | |
 | Smith | Adam |   |
 | Slade |  Cutter |  Gameblitz<br>Gamestar |
-| Marsh |  Duke |   |   |
+| Marsh |  Duke |   |
 |  Smith |  Joe |   |
 | Croft |  Lara | Gamestar |
 | Caulfield |  Maximal |  Gameblitz |
@@ -1738,10 +1738,10 @@ Die folgenden Fragmente werden für das entsprechende Modell verwendet.
 
 | Name | Land | Einwohnerzahl | Kategorien |
 |--- |--- |--- |--- |
-| Basel | Schweiz | 172258 | city:emea |
+| Basel | Schweiz | 172258 | Stadt:emea |
 | Berlin | Deutschland | 3669491 | city:capital<br>city:emea |
 | Bukarest | Rumänien | 1821000 |  city:capital<br>city:emea |
 | San Francisco |  USA |  883306 |  city:beach<br>city:na |
-| San José |  USA |  102635 |  city:na |
-| Stuttgart |  Deutschland |  634830 |  city:emea |
+| San José |  USA |  102635 |  Stadt:na |
+| Stuttgart |  Deutschland |  634830 |  Stadt:emea |
 |  Zürich |  Schweiz |  415367 |  city:capital<br>city:emea |

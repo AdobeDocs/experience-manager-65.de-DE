@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie AEM mit einem Übersetzungs-Service verbinden
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 100%
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Erfahren Sie, wie Sie AEM mit einem Übersetzungs-Service verbinden.
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
 Im vorherigen Dokument der AEM Headless-Übersetzungs-Tour, [Erste Schritte mit der AEM Headless-Übersetzung](learn-about.md), haben Sie gelernt, wie Sie Ihre Headless-Inhalte organisieren und wie AEM Übersetzungs-Tools funktionieren. Sie sollten jetzt:
 
@@ -126,7 +126,7 @@ Gehen Sie dazu zum Sprachstamm Ihrer Inhalte. Für unsere Beispielzwecke ist die
 
 ![Wählen Sie Cloud-Service-Konfigurationen aus.](assets/select-cloud-service-configurations.png)
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Tour abgeschlossen haben, sollten Sie:
 

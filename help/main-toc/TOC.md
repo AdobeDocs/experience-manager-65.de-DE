@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: ab25ac9701bd138ceb11bb9b11539e950dde02d9
-workflow-type: ht
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '7562'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -162,7 +162,7 @@ ht-degree: 100%
       + Sites-Funktionen {#introduction}
          + [MSM und Übersetzungen](/help/sites-administering/msm-and-translation.md)
          + [Asynchrone Aufträge](/help/sites-administering/asynchronous-jobs.md)
-         + [Wiederverwenden von Inhalten: Multi Site Manager und Live Copy](/help/sites-administering/msm.md)
+         + [Wiederverwenden von Inhalten: Multi-Site Manager und Live Copy](/help/sites-administering/msm.md)
          + [Konsole „Live Copy-Übersicht“](/help/sites-administering/msm-livecopy-overview.md)
          + [Konfigurieren der Synchronisierung von Live Copies](/help/sites-administering/msm-sync.md)
          + [Erstellen und Synchronisieren von Live Copies](/help/sites-administering/msm-livecopy.md)
@@ -390,7 +390,7 @@ ht-degree: 100%
       + [Bild-Sets](/help/assets/image-sets.md)
       + [Panoramabilder](/help/assets/panoramic-images.md)
       + [Sets für gemischte Medien](/help/assets/mixed-media-sets.md)
-      + [Rotationssets](/help/assets/spin-sets.md)
+      + [Rotations-Sets](/help/assets/spin-sets.md)
       + [Video in Dynamic Media](/help/assets/video.md)
       + [Karussellbanner](/help/assets/carousel-banners.md)
       + [Interaktive Bilder](/help/assets/interactive-images.md)
@@ -580,11 +580,11 @@ ht-degree: 100%
       + Upgrade von AEM Forms auf JEE {#aem-forms-jee-upgrade}
          + [Vorbereiten der Aktualisierung von AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65_de)
          + [Adobe Experience Manager Forms on JEE – Checkliste für die Aktualisierung und Planung](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65_de)
-      + [Aktualisieren auf AEM 6.5 Forms on JEE](/help/forms/using/upgrade-forms-jee.md)
-      + [Aktualisieren auf Adobe Experience Manager Forms on JEE für JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_de)
-      + [Aktualisieren auf AEM Forms on JEE für JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_de)
-      + [Aktualisieren auf Adobe Experience Manager Forms on JEE für WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_de)
-      + [Aktualisieren auf Adobe Experience Manager Forms on JEE für WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65_de)
+         + [Aktualisieren auf AEM 6.5 Forms on JEE](/help/forms/using/upgrade-forms-jee.md)
+         + [Aktualisieren auf Adobe Experience Manager Forms on JEE für JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_de)
+         + [Aktualisieren auf AEM Forms on JEE für JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_de)
+         + [Aktualisieren auf Adobe Experience Manager Forms on JEE für WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_de)
+         + [Aktualisieren auf Adobe Experience Manager Forms on JEE für WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65_de)
    + Verwalten von AEM Forms {#manage-administer-aem-forms}
       + [AEM Forms für OSGi-Gruppen und -Berechtigungen](/help/forms/using/forms-groups-privileges-tasks.md)
       + [Erstellen neuer Ordner für die Formularkategorisierung](/help/forms/using/creating-new-folders-categorize-forms.md)
@@ -691,7 +691,7 @@ ht-degree: 100%
       + [Texte in interaktiver Kommunikation](/help/forms/using/texts-interactive-communications.md)
       + [Bedingungen in interaktiven Kommunikationen](/help/forms/using/conditions-interactive-communications.md)
       + [Interaktive Kommunikation mithilfe der Benutzeroberfläche für Agenten vorbereiten und senden](/help/forms/using/prepare-send-interactive-communication.md)
-      + [Druckkanal und Webkanal](/help/forms/using/web-channel-print-channel.md)
+      + [Druckkanal und Web-Kanal](/help/forms/using/web-channel-print-channel.md)
       + [Konfigurationseigenschaften für interaktive Kommunikation](/help/forms/using/interactive-communication-configuration-properties.md)
       + [Generieren mehrfacher interaktiver Kommunikation](/help/forms/using/generate-multiple-interactive-communication-using-batch-api.md)
       + [Verwenden des Layout-Modus zum Ändern der Größe von Komponenten](/help/forms/using/resize-using-layout-mode-interactive-communication.md)
@@ -966,12 +966,12 @@ ht-degree: 100%
          + [Dienste starten und stoppen](/help/forms/using/admin-help/starting-stopping-services.md)
       + Verwalten von Endpunkten {#manage-endpoints}
          + [Endpunkte hinzufügen aktivieren, ändern oder entfernen](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
-      + [E-Mail-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-email-endpoints.md)
-      + [Konfigurieren der oAuth2.0-Authentifizierung](/help/forms/using/oauth2-support-for-mail-service.md)
-      + [Remoting-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
-      + [Konfigurieren von Endpunkten für überwachte Ordner](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
-      + [Konfigurieren der Task Manager-Endpunkte](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
-      + [Arten von Endpunkten](/help/forms/using/admin-help/types-endpoints.md)
+         + [E-Mail-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-email-endpoints.md)
+         + [Konfigurieren der oAuth2.0-Authentifizierung](/help/forms/using/oauth2-support-for-mail-service.md)
+         + [Remoting-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
+         + [Konfigurieren von Endpunkten für überwachte Ordner](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
+         + [Konfigurieren der Task Manager-Endpunkte](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
+         + [Arten von Endpunkten](/help/forms/using/admin-help/types-endpoints.md)
       + Konfigurieren von Acrobat Reader DC Extensions {#configure-acrobat-reader-dc-extensions}
          + [Von Acrobat Reader DC Extensions verwendete Zertifikatstypen](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
          + [Gültige und abgelaufene Zertifikate in PDF-Dokumenten erkennen](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
@@ -1106,8 +1106,8 @@ ht-degree: 100%
          + Einführung in das Programmieren mit AEM Forms auf JEE {#introduction-programming-aem-forms-jee}
             + [Einführung in Java API QuickStart](/help/forms/developing/introducing-java-api-soap-quick.md)
             + [Aufrufen von AEM Forms mithilfe von APIs](/help/forms/developing/invoking-aem-forms-using-apis.md)
-         + [Grundlagen zu AEM Forms-Prozessen](/help/forms/developing/aem-forms-processes.md)
-         + [Dienst-Container](/help/forms/developing/service-container.md)
+            + [Grundlagen zu AEM Forms-Prozessen](/help/forms/developing/aem-forms-processes.md)
+            + [Dienst-Container](/help/forms/developing/service-container.md)
          + Entwickeln von SPIs für AEM Forms {#developing-spis-aem-forms}
             + [Erstellen eines Handlers zum Einladen externer Benutzender](/help/forms/developing/creating-invite-external-users-handler.md)
          + Java API-Schnellstart – Code-Beispiele {#java-api-quick-start-code-examples}
@@ -1174,7 +1174,7 @@ ht-degree: 100%
             + [Rendern von Formularen als HTML](/help/forms/developing/rendering-forms-html.md)
             + [Rendern von Formularen auf dem Client](/help/forms/developing/rendering-forms-client.md)
             + [Rendern von HTML-Formularen mit benutzerdefinierten CSS-Dateien](/help/forms/developing/rendering-html-forms-using-custom.md)
-            + [Rendern von HTML Forms mit CustomToolbars](/help/forms/developing/rendering-html-forms-custom-toolbars.md)
+            + [Rendern von HTML-Formularen mit CustomToolbars](/help/forms/developing/rendering-html-forms-custom-toolbars.md)
             + [Rendern interaktiver PDF-Formulare](/help/forms/developing/rendering-interactive-pdf-forms.md)
             + [Rendern von Formularen mit aktivierten Verwendungsrechten](/help/forms/developing/rendering-rights-enabled-forms.md)
             + [Validieren von DDX-Dokumenten](/help/forms/developing/validating-ddx-documents.md)
@@ -1217,7 +1217,7 @@ ht-degree: 100%
       + [Behebung der Schwachstellen bei der XXE-, Konfigurations- und Remote-Code-Ausführung für AEM Forms auf JEE](/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md)
       + [Anzeigen von Problemen für XFA-basierte PDF-Formulare und richtliniengeschützte Dokumente](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
       + [Öffnen von XFA-basierten PDF-Formularen in Firefox und Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
-      + [Schwachstelle von XML External Entity (XXE) in BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)
+      + [Schwachstelle von XML External Entity (XXE) in BlazeDS](/help/forms/using/xxe-vulnerability-blaze-ds.md)
       + [Fehler bei der EAR-Bereitstellung auf JEE-WebLogic-Server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
    + Alte Dokumentation {#legacy-documentation}
       + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](/help/forms/developing/building-xml.md)
@@ -1226,7 +1226,7 @@ ht-degree: 100%
       + [Erzeugen und Verwenden von Hashes in dynamischen PDF-Formularen](/help/forms/developing/hashing-forms.md)
       + [Übergeben von Anmeldeinformationen mithilfe von WS-Security-Kopfzeilen](/help/forms/developing/passing-credentials.md)
    + Glossar {#aem-forms-glossary}
-+[AEM Forms-Glossare](/help/forms/using/aem-forms-glossary.md)
+      + [AEM Forms-Glossare](/help/forms/using/aem-forms-glossary.md)
 + KI in AEM {#ai-in-aem}
    + [Überblick](/help/ai-in-aem/overview.md)
    + KI-Assistent {#ai-assistant}
@@ -1586,7 +1586,7 @@ ht-degree: 100%
          + [Oak-Abfragen und Indizierung](/help/sites-deploying/queries-and-indexing.md)
          + [Ausführen von AEM mit der TarMK-Cold-Standby-Funktion](/help/sites-deploying/tarmk-cold-standby.md)
          + [RDBMS-Unterstützung in AEM 6.5](/help/sites-deploying/rdbms-support-in-aem.md)
-         + [Indizieren mit dem Oak-run JAR](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
+         + [Indizierung mit dem Oak-run JAR](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
          + [Oak-run.jar – Indizierungsanwendungsfälle](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Fehlerbehebung bei Oak-Indizes](/help/sites-deploying/troubleshooting-oak-indexes.md)
          + [Aktivieren der aggregierten Sammlung von Nutzungsstatistiken](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)
@@ -1606,7 +1606,7 @@ ht-degree: 100%
          + [Überwachung und Wartung der AEM-Instanz](/help/sites-deploying/monitoring-and-maintaining.md)
          + [Abladen von Aufträgen](/help/sites-deploying/offloading.md)
          + [Ressourcenzuordnung](/help/sites-deploying/resource-mapping.md)
-         + [Konsistenz- und Ausnahmeprüfungen](/help/sites-deploying/consistency-check.md)
+         + [Konsistenz- und Durchlaufprüfungen](/help/sites-deploying/consistency-check.md)
          + [Leistungsrichtlinien](/help/sites-deploying/performance-guidelines.md)
          + [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md)
          + [Handbuch zur Leistung von Assets](/help/sites-deploying/assets-performance-sizing.md)

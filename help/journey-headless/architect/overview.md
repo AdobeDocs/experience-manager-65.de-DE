@@ -4,8 +4,8 @@ description: Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistun
 exl-id: 44c58ece-225e-4361-929c-faa110fe2842
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '784'
 ht-degree: 100%

@@ -9,9 +9,9 @@ exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '7192'
+source-wordcount: '7168'
 ht-degree: 99%
 
 ---
@@ -158,9 +158,9 @@ Sie können Dateimuster verwenden, um Folgendes auszuschließen:
 * Dateien mit bestimmten Namen, z. B. data.„*“ würde Dateien und Ordner mit den Namen *data1*, *data2* usw. ausschließen.
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
-   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-   * &ast;.[dD][Aa]&#39;port&#39;
-   * &ast;.[Xx][Mm][Ll]
+   * `[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
+   * &amp;ast;.`[dD][aA]`&#39;port&#39;
+   * &amp;ast;.`[Xx][Mm][Ll]`
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -174,9 +174,9 @@ Sie können Dateimuster verwenden, um Folgendes einzuschließen:
 * Dateien mit bestimmten Namen, z. B. data.„*“ würde Dateien und Ordner mit den Namen *data1*, *data2* usw. einschließen.
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
-   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-   * &ast;.[dD][Aa]&#39;port&#39;
-   * &ast;.[Xx][Mm][Ll]
+   * `[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
+   * &amp;ast;.`[dD][aA]`&#39;port&#39;
+   * &amp;ast;.`[Xx][Mm][Ll]`
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -196,7 +196,7 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](c
 * %s = Sekunde
 * %l = Millisekunde
 * %R = Zufallszahl (zwischen 0 und 9)
-* %P = Prozess- oder Vorgangs-ID
+* %P = Prozess- oder Auftrags-ID
 
 Wenn es zum Beispiel 20 Uhr am 17. Juli 2009 ist und Sie `C:/Test/WF0/failure/%Y/%M/%D/%H/` angeben, lautet der Ergebnisordner `C:/Test/WF0/failure/2009/07/17/20`.
 
@@ -242,13 +242,13 @@ Die Ausgabe des überwachten Ordners kann ein einzelnes Dokument, eine Liste von
 
 Admins können den Dateityp angeben, von dem ein Dienst aufgerufen werden kann. Für jeden überwachten Ordner können mehrere Dateimuster angegeben werden. Ein Dateimuster kann eine der folgenden Dateieigenschaften sein:
 
-* Dateien mit bestimmten Dateinamenerweiterungen, z. B. &ast;.dat, &ast;.xml, &ast;.pdf
+* Dateien mit bestimmten Dateinamenerweiterungen, z. B. &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
 * Dateien mit bestimmten Namen, z. B. data.*
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
-   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-   * &ast;.[dD][Aa]&#39;port&#39;
-   * &ast;.[Xx][Mm][Ll]
+   * `[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
+   * &amp;ast;.`[dD][aA]`&#39;port&#39;
+   * &amp;ast;.`[Xx][Mm][Ll]`
 
 Admins können das Dateimuster des Ausgabeordners definieren, in dem die Ergebnisse gespeichert werden sollen. Für die Ausgabeordner (Ergebnis, Beibehaltung und Fehler) können Admins eines der folgenden Dateimuster angeben:
 
@@ -286,7 +286,7 @@ Der Watched Folder-Dienst überprüft den Eingabeordner zum jeweiligen Wiederhol
 
 Die Drosselung verhindert, dass der Watched Folder-Dienst neue Aufträge aufruft, wenn die vorherigen Aufträge noch nicht abgeschlossen sind. Der Watched Folder-Dienst erkennt die in Bearbeitung befindlichen Aufträge und verarbeitet neue Aufträge auf Grundlage der Batch-Größe abzüglich der in Bearbeitung befindlichen Aufträge.  Wenn im zweiten Aufruf beispielsweise nur drei Aufträge abgeschlossen sind und ein Auftrag noch ausgeführt wird, ruft der Dienst für überwachte Ordner nur drei weitere Aufträge auf.
 
-* Der Dienst für überwachte Ordner verlässt sich bei der Ermittlung der Anzahl der laufenden Aufträge auf die Anzahl der im Bereitstellungsordner vorhandenen Dateien. Verbleiben Dateien unverarbeitet im Bereitstellungsordner, werden keine weiteren Aufträge vom Dienst „Überwachter Ordner“ aufgerufen. Wenn die Batch-Größe beispielsweise 4 beträgt und drei Aufträge angehalten sind, ruft der Watched Folder-Dienst bei Folgeaufrufen nur einen weiteren Auftrag auf. Es gibt mehrere Szenarien, in denen Dateien im Bereitstellungsordner unverarbeitet bleiben können. Wenn Aufträge angehalten sind, können die dazugehörigen Prozesse von Admins auf der Seite zur Verwaltung des Arbeitsablaufs für Formulare beendet werden, sodass diese Dateien vom Watched Folder-Dienst aus dem Bereitstellungsordner verschoben werden.
+* Der Dienst für überwachte Ordner verlässt sich bei der Ermittlung der Anzahl der laufenden Aufträge auf die Anzahl der im Bereitstellungsordner vorhandenen Dateien. Verbleiben Dateien unverarbeitet im Bereitstellungsordner, werden keine weiteren Aufträge vom Dienst „Überwachter Ordner“ aufgerufen. Wenn die Batch-Größe beispielsweise 4 beträgt und drei Aufträge angehalten sind, ruft der Watched Folder-Dienst bei Folgeaufrufen nur einen weiteren Auftrag auf. Es gibt mehrere Szenarien, in denen Dateien im Bereitstellungsordner unverarbeitet bleiben können. Wenn Aufträge angehalten sind, können die dazugehörigen Prozesse von Admins auf der Seite zur Verwaltung des Workflows für Formulare beendet werden, sodass diese Dateien vom Watched Folder-Dienst aus dem Bereitstellungsordner verschoben werden.
 * Wenn der Formular-Server heruntergefahren wird, bevor der Watched Folder-Dienst die Aufträge aufrufen kann, können die Admins die Dateien aus dem Bereitstellungsordner verschieben.  Weitere Informationen finden Sie unter [Fehlerquellen und Wiederherstellung](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 * Wenn zwar der Formular-Server, nicht aber der Watched Folder-Dienst ausgeführt wird, während der Job Manager-Dienst zurückruft (wozu es kommt, wenn Dienste nicht in der richtigen Reihenfolge starten), dann können die Admins die Dateien aus dem Bereitstellungsordner verschieben. Weitere Informationen finden Sie unter [Fehlerquellen und Wiederherstellung](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
@@ -347,7 +347,7 @@ Nachdem die Dateien in den Bereitstellungsordner verschoben wurden, werden Aufru
 Wenn der Dienst für überwachte Ordner die Quelldateien im Bereitstellungsordner nicht verarbeiten kann, können Sie die nicht verarbeiteten Dateien wiederherstellen.
 
 1. Starten Sie den Anwendungs-Server oder Knoten neu.
-1. (Optional) Beenden Sie den Watched Folder-Dienst, sodass keine neuen Eingabedateien verarbeitet werden. Wenn Sie diesen Schritt überspringen, ist es viel schwieriger zu bestimmen, welche Dateien im Bereitstellungsordner nicht verarbeitet wurden. Führen Sie eine der folgenden Aufgaben aus, um zu verhindern, dass der Dienst für überwachte Ordner neue Eingabedateien verarbeitet:
+1. (Optional) Stoppen Sie den Watched Folder-Dienst, sodass keine neuen Eingabedateien verarbeitet werden. Wenn Sie diesen Schritt überspringen, ist es viel schwieriger zu bestimmen, welche Dateien im Bereitstellungsordner nicht verarbeitet wurden. Führen Sie eine der folgenden Aufgaben aus, um zu verhindern, dass der Dienst für überwachte Ordner neue Eingabedateien verarbeitet:
 
    * Ändern Sie in „Anwendungen und Dienste“ den Parameter „Muster für einzuschließende Dateien“ für den überwachten Ordner-Endpunkt in ein Muster, das keiner der neuen Eingabedateien entspricht (geben Sie beispielsweise `NOMATCH` ein).
    * Setzen Sie den Prozess aus, der neue Eingabedateien erstellt.
@@ -372,7 +372,7 @@ Jeder überwachte Ordner ist mit einem Benutzernamen und einem Kennwort konfigur
 Im Folgenden finden Sie einige Tipps und Tricks zum Konfigurieren des Endpunkts vom Typ „Überwachter Ordner“:
 
 * Bei einem überwachten Ordner unter Windows, der Bilddateien verarbeitet, geben Sie Werte für die Optionen „Muster für einzuschließende Dateien“ bzw. „Muster für auszuschließende Dateien“ an, um zu verhindern, dass die automatisch von Windows erzeugte Datei „Thumbs.db“ vom überwachten Ordner abgerufen wird.
-* Wenn ein Cron-Ausdruck angegeben ist, wird das Wiederholungsintervall ignoriert. Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Vorgangsplanungssystem Quartz, Version 1.4.0.
+* Wenn ein Cron-Ausdruck angegeben ist, wird das Wiederholungsintervall ignoriert. Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssystem Quartz, Version 1.4.0.
 * Die Stapelgröße ist die Anzahl der Dateien und Ordner, die bei jeder Überprüfung des überwachten Ordners aufgenommen wird. Wenn die Stapelgröße auf „2“ festgelegt ist und zehn Dateien oder Ordner im überwachten Ordner abgelegt werden, werden bei jeder Überprüfung nur zwei aufgenommen. Bei der nächsten Überprüfung, die nach dem als Wiederholungsintervall angegebenen Zeitraum eintritt, werden die nächsten zwei Dateien aufgenommen.
 * Admins können reguläre Ausdrücke mit der zusätzlichen Unterstützung durch Platzhaltermuster als Dateimuster angeben. Bei der Überwachung von Ordnern wird der reguläre Ausdruck geändert, um Platzhaltermuster wie „*.*“ und „*.pdf“ zu unterstützen. Diese Platzhaltermuster werden nicht von regulären Ausdrücken unterstützt.
 * Der Watched Folder-Dienst überprüft den Eingabeordner auf Eingaben und erkennt nicht, ob die Quelldatei bzw. der Quellordner bereits vollständig in den Eingabeordner kopiert wurde, bevor mit der Verarbeitung der Datei oder des Ordners begonnen wird. Führen Sie die folgenden Schritte aus, um sicherzustellen, dass die Quelldatei bzw. der Quellordner vollständig in den Eingabeordner des überwachten Ordners kopiert wurde, bevor die Datei oder der Ordner aufgenommen wird:

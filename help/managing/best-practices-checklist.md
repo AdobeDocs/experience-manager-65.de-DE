@@ -8,11 +8,11 @@ content-type: reference
 exl-id: 16851d65-df55-471a-8848-c73c28db8ac0
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer,Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 100%
+source-wordcount: '317'
+ht-degree: 95%
 
 ---
 
@@ -51,6 +51,6 @@ Um ein qualitativ hochwertiges Projekt erfolgreich abzuliefern, müssen Sie alle
 
    >[!NOTE]
    >
-   >Es gibt keine direkte 1:1-Beziehung zwischen den einzelnen erforderlichen Dokumenten und zu erbringenden Leistungen.
+   >Es besteht keine direkte 1:1-Beziehung zwischen den einzelnen erforderlichen Dokumenten und den zu erbringenden Leistungen.
 
 1. Die Arbeitsblätter **[Projekt-Heartbeat](/help/managing/best-practices.md#project-heartbeat-dashboard)** und **[Status nach Rolle](/help/managing/best-practices.md#status-by-role)** werden basierend auf den Status der **[erforderlichen Dokumente](/help/managing/best-practices.md#required-documents)** und **[Leistungen](/help/managing/best-practices.md#deliverables)** automatisch aktualisiert, um Ihnen einen aktuellen Überblick über den Fortschritt und den Zustand Ihres Projekts zu geben.

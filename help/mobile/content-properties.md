@@ -9,9 +9,9 @@ exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '312'
 ht-degree: 22%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 22%
 
 Artikel, Banner und Sammlungen werden in AEM als cq:Pages dargestellt.
 
-Sie verwenden dieselben gemeinsamen Eigenschaften in jeder cq:Page zusätzlich zu mehreren anderen, die unten gezeigt werden und die Metadaten und Integrationseigenschaften von Adobe Experience Manager (AEM) Mobile On-Demand-Services darstellen.
+Sie verwenden dieselben gemeinsamen Eigenschaften wie in jedem CQ:Page zusätzlich zu mehreren anderen, die unten gezeigt werden und die Metadaten von Adobe Experience Manager (AEM) Mobile-On-Demand-Services sowie Integrationseigenschaften unterstützen.
 
 In den folgenden Tabellen werden die Inhaltseigenschaften und -knoten beschrieben.
 
@@ -30,12 +30,12 @@ In den folgenden Tabellen werden die Inhaltseigenschaften und -knoten beschriebe
 
 | **Eigenschaftsname** | **Typ** | **Standardwerte oder erwartete Werte** | **Beschreibung** |
 |---|---|---|---|
-| dps-id | Zeichenfolge |  | Von AEM Mobile zugewiesen und nach dem Hochladen in AEM Mobile oder dem Import aus AEM Mobile über AEM gespeichert |
-| dps-resourceType | Zeichenfolge | dps:Artikel | dps:Banner | dps:Sammlung | Entitätstyp-Eigenschaft |
+| dps-id | Zeichenfolge |  | Von AEM Mobile zugewiesen und von AEM gespeichert, sobald sie in AEM Mobile hochgeladen oder aus AEM Mobile importiert wurden |
+| dps-resourceType | Zeichenfolge | DPS:Article | `dps:Banner` \| `dps:Collection` \| `entity type property` |
 | dps-version | Zeichenfolge |  | Version der AEM Mobile-Entität (auch in der vollständigen AEM-ID enthalten) |
 | dps-lastSynced | Datum |  | Datum der letzten Synchronisierung/des letzten Imports aus AEM Mobile in AEM |
 | dps-lastUploaded | Datum |  | Datum des letzten Uploads von AEM nach AEM Mobile |
-| dps-lastUploadedBy | string:userId |  | ID des Benutzers, der die letzte Upload-Anfrage von AEM an AEM Mobile ausgeführt hat |
+| dps-lastUploadedBy | Zeichenfolge:userid |  | ID des Benutzers, der die letzte Upload-Anfrage von AEM an AEM Mobile ausgeführt hat |
 
 ## Core-Metadateneigenschaften {#core-metadata-properties}
 
@@ -57,7 +57,7 @@ In den folgenden Tabellen werden die Inhaltseigenschaften und -knoten beschriebe
 |---|---|---|
 | dps-author | Zeichenfolge |  |
 | dps-authorURL | Zeichenfolge |  |
-| dps-hideFromBrowsePage | Boolesch |  |
+| dps-hideFromBrowsePage | Boolescher Wert |  |
 | dps-access | Zeichenfolge | ProtectedAccess von {„protected“, „metered“, „free“} |
 | **Sozial** |  |  |
 | dps-socialShareURL | Zeichenfolge |  |
@@ -77,8 +77,8 @@ In den folgenden Tabellen werden die Inhaltseigenschaften und -knoten beschriebe
 |--- |--- |--- |
 | dps-productId | Zeichenfolge |  |
 | dps-readingPosition | Zeichenfolge | von {„Zurücksetzen“,„Beibehalten“} |
-| dps-horizontalSwipe | Boolesch |  |
-| dps-allowDownload | Boolesch |  |
+| dps-horizontalSwipe | Boolescher Wert |  |
+| dps-allowDownload | Boolescher Wert |  |
 | dps-openDefault | Zeichenfolge | von {„browsePage“,„contentView“} |
 | dps-layout | Zeichenfolge |  |
 

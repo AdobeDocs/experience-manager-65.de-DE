@@ -2,12 +2,12 @@
 title: Verwenden von Media Library für grundlegendes Asset-Management
 description: '[!DNL Experience Manager Assets] und Media Library für das Asset-Management.'
 contentOwner: AG
-role: Architect, Leader
+role: Developer, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 100%
@@ -88,7 +88,7 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >
 >Viele erweiterte DAM-Nutzungsszenarien werden von [!DNL Experience Manager Assets] erfüllt. Die Media Library-Lizenz berechtigt Sie nur dazu, die aufgelisteten Nutzungsszenarien mit Media Library zu erfüllen. Wenn ein Nutzungsszenario nicht aufgeführt ist, wenden Sie ihn nicht mit der Media Library-Lizenz an. Bei Fragen wenden Sie sich an den Support von Adobe.
 
-Beachten Sie, dass Sie ohne [!DNL Assets]-Lizenz keine Smart Tags, [!DNL Asset]-Link, [!DNL Asset]-Auswahl, Bulk-Tagging, modifizierte Asset-Workflows oder die Standard-[!DNL Adobe Experience Manager]-Benutzeroberfläche verwenden können, um auf die Medienbibliothek zuzugreifen.
+Beachten Sie, dass Sie ohne [!DNL Assets]-Lizenz keine Smart-Tags, [!DNL Asset]-Link, [!DNL Asset]-Auswahl, Bulk-Tagging, modifizierte Asset-Workflows oder die Standard-[!DNL Adobe Experience Manager]-Benutzeroberfläche verwenden können, um auf die Medienbibliothek zuzugreifen.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

@@ -8,8 +8,8 @@ topic-tags: best-practices
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
-source-git-commit: 207c6bcc25eca05d128115f7235e83a6965009c5
+role: Admin, Developer, Leader, User
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 100%
@@ -60,7 +60,7 @@ Weitere Informationen zur Verwaltung von DSGVO-Anfragen von betroffenen Personen
 
 ## ContextHub {#contexthub}
 
-AEM bietet mit [ContextHub](/help/sites-developing/contexthub.md) eine optionale Datenebene. Dadurch werden besucherspezifische Daten im Browser beibehalten, die für eine regelbasierte Personalisierung verwendet werden können.
+AEM bietet mit [ContextHub](/help/sites-developing/contexthub.md) eine optionale Datenschicht. Dadurch werden besucherspezifische Daten im Browser beibehalten, die für eine regelbasierte Personalisierung verwendet werden können.
 
 Standardmäßig werden diese Besucherdaten nicht in AEM gespeichert. AEM sendet Regeln an die Datenschicht, um im Browser Personalisierungsentscheidungen zu treffen.
 
@@ -77,7 +77,7 @@ Der Site-Eigentümer oder die Site-Eigentümerin muss eine Opt-out-Komponente ge
 Diese Richtlinien sehen eine standardmäßige Opt-in-Implementierung vor. Deshalb müssen Website-Besuchende klar zustimmen, bevor personenbezogene Daten im Persistenzspeicher des Browsers (auf Client-Seite) abgelegt werden.
 
 * Die Opt-out-Komponente sollte immer dann integriert werden, wenn die ContextHub-Komponente vorhanden ist.
-* Die Datenschutz-bezogenen Bedingungen für die Website müssen den Website-Besuchenden angezeigt werden, um ihnen Folgendes zu ermöglichen:
+* Die DSGVO-bezogenen Bedingungen für die Website müssen den Website-Besuchenden angezeigt werden, um ihnen Folgendes zu ermöglichen:
 
    * Akzeptieren der Bedingungen
    * Ablehnen der Bedingungen

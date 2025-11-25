@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer,Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '6926'
 ht-degree: 100%
@@ -64,11 +64,11 @@ Hierbei handelt es sich um Schulungen für die Mitarbeitenden, die Inhalte für 
 
 ### AEM-Zertifizierungsprüfung {#aem-certification-exam}
 
-Stellen Sie sicher, dass die entsprechenden Rollen für die jeweiligen [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) angemeldet sind.
+Stellen Sie sicher, dass die entsprechenden Rollen für die jeweiligen [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) angemeldet sind.
 
 ### AEM-zertifiziert {#aem-certified}
 
-Stellen Sie sicher, dass die entsprechenden Rollen die jeweiligen [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) bestanden haben.
+Stellen Sie sicher, dass die entsprechenden Rollen die jeweiligen [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) bestanden haben.
 
 ### Technische Schulungen zu AEM {#aem-technical-training}
 

@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer,Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '3699'
 ht-degree: 100%
@@ -57,7 +57,7 @@ Eine wichtige Überlegung ist, ob Sie:
 
 Beim Übergang von einer früheren Version zur aktuellen Version gibt es zwei Optionen:
 
-* Verwendung des [Package Manager](/help/sites-administering/package-manager.md), um den gesamten Inhalt und Anwendungscode aus dem alten System in das neue zu exportieren.
+* Verwendung des [Paket-Managers](/help/sites-administering/package-manager.md), um den gesamten Inhalt und Anwendungscode aus dem alten System in das neue zu exportieren.
 * Durchführung eines [Upgrade](/help/sites-deploying/upgrade.md) für das alte System. Diese Methode wird in der Regel empfohlen.
 
 ## Grundregeln {#basic-ground-rules}
@@ -307,7 +307,7 @@ Suchanfragen können erhebliche Auswirkungen auf Ihre Website haben, im Hinblick
 Das Festlegen von Zielen für Suchanfragen ist wiederum eine Frage der Erfahrung, die von mehreren Faktoren abhängt:
 
 * Erfahrung mit AEM
-* eine Einschätzung, wie oft die Suche im Vergleich zu anderen Zielen verwendet wird
+* eine Bewertung, wie oft die Suche im Vergleich zu anderen Zielen verwendet wird
 * Ihr Persistenzmanager
 * Ihr Suchindex
 * die Komplexität Ihrer Suchfunktion; eine einfache Suchfunktion, die die Eingabe eines Suchbegriffs ermöglicht, ist schneller als eine erweiterte Suche, mit der der Benutzer bzw. die Benutzerin komplexe Suchanweisungen mit „UND/ODER/NICHT“ erstellen kann.

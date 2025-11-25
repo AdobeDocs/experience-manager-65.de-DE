@@ -1,6 +1,6 @@
 ---
 title: Umgestaltung von Social Media-Dienstprogrammen
-description: Das Paket com.adobe.cq.social.ugcbase.SocialUtils ist seit AEM 6.1 veraltet
+description: Das Paket com.adobe.cq.social.ugcbase.SocialUtils wird in AEM 6.1 nicht mehr unterstützt
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -9,9 +9,9 @@ exl-id: 0f731ec6-a12e-4098-a1ec-ee4cd4dc1432
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
@@ -26,8 +26,8 @@ In den folgenden Tabellen sind die Methoden aufgeführt, die anstelle von `Socia
 
 ## SocialResourceUtilities-Paket  {#socialresourceutilities-package}
 
-| Methoden in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
-|---|
+| Methoden in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities | Anmerkungen |
+|---|---|
 | Boolean checkPermission(ResourceResolver, String path, String action) |  |
 | SocialResourceProvider getSocialResourceProvider(resource) |  |
 | SocialResourceConfiguration(resource) |  |
@@ -42,8 +42,8 @@ In den folgenden Tabellen sind die Methoden aufgeführt, die anstelle von `Socia
 | String UGCToResourcePath(String ugcPath) | Methodensignatur geändert |
 | String UGCToResourcePath(String ugcPath, ResourceResolver) | Neu |
 
-| Methoden in `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
-|---|
+| Methoden in `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities | Anmerkungen |
+|---|---|
 | SocialResourceProvider getSocialResourceProvider(resource) | ersetzt SocialResourceProvider: getConfigedProvider(resource) |
 
 ## SCFUtilities-Paket {#scfutilities-package}

@@ -8,10 +8,10 @@ exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 7%
+source-wordcount: '547'
+ht-degree: 6%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 7%
 
 {{ue-over-mobile}}
 
-Adobe Experience Manager (AEM)-Inhalte können einfach über „Sling Standard[Servlets“ gerendert werden](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) um ([) &#x200B;](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) andere Formate zu rendern.
+Adobe Experience Manager (AEM)-Inhalte können einfach über „Sling [&quot;-Standard-Servlets gerendert werden](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) um [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) und andere Formate zu rendern.
 
 Diese vordefinierten Renderings führen normalerweise das Repository durch und geben die Inhalte unverändert zurück.
 
-AEM unterstützt über Sling auch die Entwicklung und Bereitstellung benutzerdefinierter Sling-Renderer, um die volle Kontrolle über das gerenderte Schema und die gerenderten Inhalte zu übernehmen.
+AEM unterstützt mithilfe von Sling auch die Entwicklung und Bereitstellung benutzerdefinierter Sling-Renderer, um die volle Kontrolle über das gerenderte Schema und die gerenderten Inhalte zu übernehmen.
 
 Content Services Default Renderer füllen die Lücke zwischen standardmäßigen Sling-Standardwerten und benutzerdefinierter Entwicklung und ermöglichen die Anpassung und Kontrolle vieler Aspekte des gerenderten Inhalts ohne Entwicklung.
 
@@ -33,7 +33,7 @@ Das folgende Diagramm zeigt das Rendering von Content Services.
 
 ## JSON wird angefordert {#requesting-json}
 
-Verwenden Sie **&lt;RESOURCE.[.&lt;EXPORT-CONFIG][.&lt;EXPORT-CONFIG].json**, um JSON anzufordern.
+Verwenden Sie **&lt;RESOURCE.caas`[.<EXPORT-CONFIG][.&lt;DEPTH-INT&gt;]`.json** um JSON anzufordern.
 
 <table>
  <tbody>

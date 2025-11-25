@@ -9,10 +9,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '4308'
-ht-degree: 100%
+source-wordcount: '4307'
+ht-degree: 99%
 
 ---
 
@@ -34,14 +34,14 @@ In diesem Artikel erfahren Sie, wie Sie ein Datensatzdokument für adaptive Form
 
 >[!NOTE]
 >
-> Die Unterstützung zum Anpassen adaptiver Formularfragmente und der zugehörigen Felder im Editor für adaptive Formulare wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt.
+> Die Unterstützung zum Anpassen Ihrer adaptiven Formularfragmente und ihrer Felder im Editor für adaptive Formulare wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt.
 
 
 >[!NOTE]
 >
 >Die automatische Generierung von Datensatzdokumenten wird für XFA-basierte adaptive Formulare nicht unterstützt. Sie können jedoch die zum Erstellen des adaptiven Formulars verwendete XDP-Datei als Datensatzdokument verwenden.
 
-## Typen adaptiver Formulare und ihre Datensatzdokumente {#adaptive-form-types-and-their-documents-of-record}
+## Typen adaptiver Formulare und ihre archivierbaren Dokumente {#adaptive-form-types-and-their-documents-of-record}
 
 Beim Erstellen eines adaptiven Formulars können Sie ein Formularmodell auswählen. Ihre Optionen sind:
 
@@ -147,8 +147,8 @@ In den folgenden Abschnitten wird beschrieben, wie adaptive Formularelemente im 
    <td> </td>
   </tr>
   <tr>
-   <td>Optionsfeld</td>
-   <td>Optionsfeld</td>
+   <td>Optionsschaltfläche</td>
+   <td>Optionsschaltfläche</td>
    <td>Ja</td>
    <td> </td>
   </tr>
@@ -207,7 +207,7 @@ In den folgenden Abschnitten wird beschrieben, wie adaptive Formularelemente im 
 | Komponente des adaptiven Formulars | Zugehörige XFA-Komponente | Anmerkungen |
 |---|---|---|
 | Bild | Bild | Die Komponenten TextDraw und Image (egal ob gebunden oder nicht) werden immer im Datensatzdokument eines XSD-basierten adaptiven Formulars angezeigt, es sei denn, sie werden mithilfe der Datensatzdokument-Einstellungen ausgeschlossen. |
-| Text | Text |
+| Text | Text |  |
 
 >[!NOTE]
 >
@@ -271,7 +271,7 @@ Konfigurieren Sie die Datensatzdokument-Vorlage Ihres Formulars, damit Ihre Kund
 
 Führen Sie die folgenden Schritte aus, um ein Datensatzdokument für adaptive Formulare zu konfigurieren:
 
-1. Klicken Sie in der AEM-Autor-Instanz auf **Formulare > Formulare und Dokumente**.
+1. Klicken Sie in der AEM-Autoreninstanz auf **Formulare > Formulare und Dokumente**.
 1. Wählen Sie ein Formular aus und klicken Sie auf **Eigenschaften anzeigen**.
 1. Wählen Sie im Fenster „Eigenschaften“ **Formularmodell** aus.
 Sie können ein Formularmodell auch bei der Erstellung eines Formulars auswählen.
@@ -480,7 +480,7 @@ Beachten Sie die folgenden Hinweise und Einschränkungen beim Arbeiten mit einem
 * Datensatzdokument-Vorlagen unterstützen keinen Rich-Text. Rich-Text im statischen adaptiven Formular oder bei den von der Endbenutzerin oder dem Endbenutzer ausgefüllten Informationen wird daher im Datensatzdokument als Nur-Text angezeigt.
 * Dokumentfragmente in einem adaptiven Formular werden im Datensatzdokument nicht angezeigt. Adaptive Formularfragmente werden jedoch unterstützt.
 * Die Inhaltsbindung in Datensatzdokumenten, die für XML-Schema-Basierte adaptive Formulare generiert werden, wird nicht unterstützt.
-* Lokalisierte Versionen des Datensatzdokuments werden für ein Gebietsschema nach Bedarf erstellt, wenn die Benutzerin oder der Benutzer das Rendering des Datensatzdokuments anfordert. Die Lokalisierung des Datensatzdokuments erfolgt zusammen mit der Lokalisierung des adaptiven Formulars. Siehe [Verwenden von AEM-Übersetzungs-Arbeitsablauf zum Lokalisieren von adaptiven Formularen und Datensatzdokumenten](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
+* Lokalisierte Versionen des Datensatzdokuments werden für ein Gebietsschema nach Bedarf erstellt, wenn die Benutzerin oder der Benutzer das Rendering des Datensatzdokuments anfordert. Die Lokalisierung des Datensatzdokuments erfolgt zusammen mit der Lokalisierung des adaptiven Formulars. Siehe [Verwenden des AEM-Übersetzungs-Workflows zum Lokalisieren von adaptiven Formularen und Datensatzdokumenten](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
 
 ## Verwenden einer benutzerdefinierten XCI-Datei
 

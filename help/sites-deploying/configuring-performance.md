@@ -9,10 +9,10 @@ feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: ht
-source-wordcount: '6467'
-ht-degree: 100%
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
+source-wordcount: '6466'
+ht-degree: 99%
 
 ---
 
@@ -220,7 +220,7 @@ Um die Leistung zu verbessern, begrenzen Sie die Anzahl der gleichzeitig ausgef�
 
 Wenn beispielsweise Bilder (oder DAM-Assets im Allgemeinen) hochgeladen werden, importieren Workflows die Bilder automatisch in DAM. Bilder haben häufig eine hohe Auflösung und können problemlos Hunderte von MB an Heap für die Verarbeitung verbrauchen. Die parallele Behandlung dieser Bilder stellt eine hohe Belastung für das Speicher-Subsystems und die Speicherbereinigung dar.
 
-Die Workflow-Engine verwendet Apache Sling-Vorgangswarteschlangen für die Verarbeitung und Planung der Arbeitselemente. Die folgenden Auftragswarteschlangendienste wurden standardmäßig in der Apache Sling Job Queue Configuration Service Factory zur Verarbeitung von Workflow-Aufgaben erstellt:
+Die Workflow-Engine verwendet Apache Sling-Auftragswarteschlangen für die Verarbeitung und Planung der Arbeitselemente. Die folgenden Auftragswarteschlangendienste wurden standardmäßig in der Apache Sling Job Queue Configuration Service Factory zur Verarbeitung von Workflow-Aufgaben erstellt:
 
 * Granite Workflow-Warteschlange: Für die meisten Workflow-Schritte, wie diejenigen zur Verarbeitung von DAM-Assets, wird der Granite Workflow-Warteschlangendienst verwendet.
 * Granite Workflow Auftragswarteschlange für externe Prozesse: Dieser Dienst wird für spezielle externe Workflow-Schritte verwendet, die typischerweise für die Kontaktaufnahme mit einem externen System und die Abfrage von Ergebnissen verwendet werden. Beispielsweise wird der Schritt „InDesign Medien-Extraktionsvorgang“ als externer Prozess implementiert. Die Workflow-Engine verwendet die externe Warteschlange zur Verarbeitung der Abfrage. (Siehe [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
@@ -233,7 +233,7 @@ Konfigurieren Sie diese Dienste, um die maximale Anzahl der parallel ausgeführt
 
 #### Konfiguration im Repository {#configuration-in-the-repo}
 
-Wenn Sie die Dienste [mithilfe eines sling:OsgiConfig-Knotens](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) konfigurieren, müssen Sie die PID der vorhandenen Dienste suchen, zum Beispiel: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Sie können die PID mithilfe der Web-Konsole ermitteln.
+Wenn Sie die Dienste konfigurieren [mithilfe eines sling:OsgiConfig-Knotens](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), müssen Sie die PID der vorhandenen Dienste suchen, zum Beispiel: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Sie können die PID mithilfe der Web-Konsole ermitteln.
 
 Konfigurieren Sie die Eigenschaft mit dem Namen `queue.maxparallel`.
 
@@ -245,9 +245,9 @@ Konfigurieren Sie die Eigenschaft mit dem Namen „Maximum Parallel Jobs“.
 
 ### Konfigurieren der Warteschlange für einen spezifischen Workflow {#configure-the-queue-for-a-specific-workflow}
 
-Erstellen Sie eine Vorgangswarteschlange für ein bestimmtes Workflow-Modell, damit Sie die Vorgangsverarbeitung für dieses Workflow-Modell konfigurieren können. Auf diese Weise beeinflussen Ihre Konfigurationen die Verarbeitung für einen bestimmten Workflow, während die Konfiguration der standardmäßigen Granite-Workflow-Warteschlange die Verarbeitung anderer Workflows steuert.
+Erstellen Sie eine Auftragswarteschlange für ein bestimmtes Workflow-Modell, damit Sie die Auftragsverarbeitung für dieses Workflow-Modell konfigurieren können. Auf diese Weise beeinflussen Ihre Konfigurationen die Verarbeitung für einen bestimmten Workflow, während die Konfiguration der standardmäßigen Granite-Workflow-Warteschlange die Verarbeitung anderer Workflows steuert.
 
-Wenn Workflow-Modelle ausgeführt werden, erstellen sie Sling-Vorgänge für ein bestimmtes Thema. Standardmäßig entspricht das Thema den Themen, die für die allgemeine Granite-Workflow-Warteschlange oder die Granite-Workflow-Warteschlange für externe Prozessvorgänge konfiguriert sind:
+Wenn Workflow-Modelle ausgeführt werden, erstellen sie Sling-Aufträge für ein bestimmtes Thema. Standardmäßig entspricht das Thema den Themen, die für die allgemeine Granite-Workflow-Warteschlange oder die Granite-Workflow-Warteschlange für externe Prozessaufträge konfiguriert sind:
 
 * `com/adobe/granite/workflow/job*`
 * `com/adobe/granite/workflow/external/job*`
@@ -261,14 +261,14 @@ Daher können Sie eine Auftragswarteschlange für das Thema erstellen, das dem A
 Im Folgenden wird ein Workflow **DAM Update Asset** als Beispiel verwendet, um eine Auftragswarteschlange für einen Workflow zu erstellen.
 
 1. Führen Sie das Workflow-Modell aus, für das Sie die Auftragswarteschlange erstellen möchten, sodass Themenstatistiken generiert werden. Fügen Sie beispielsweise ein Bild zu Assets hinzu, um den Workflow **DAM-Update-Asset** auszuführen.
-1. Öffnen Sie die Sling Jobs-Konsole (`https://<host>:<port>/system/console/slingevent`).
+1. Öffnen Sie die Sling-Auftragskonsole (`https://<host>:<port>/system/console/slingevent`).
 1. Erfahren Sie mehr über die Workflow-bezogenen Themen in der Konsole. Für DAM Update Asset werden die folgenden Themen gefunden:
 
    * `com/adobe/granite/workflow/external/job/etc/workflow/models/dam/update_asset/jcr_content/model`
    * `com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model`
    * `com/adobe/granite/workflow/job/etc/workflow/models/dam-xmp-writeback/jcr_content/model`
 
-1. Erstellen Sie für jedes Thema eine Auftragswarteschlange. Um eine Vorgangswarteschlange zu erstellen, erstellen Sie eine Werkskonfiguration für den Factory-Dienst Apache Sling Job Queue.
+1. Erstellen Sie für jedes Thema eine Auftragswarteschlange. Um eine Auftragswarteschlange zu erstellen, erstellen Sie eine Werkskonfiguration für den Factory-Dienst Apache Sling Job Queue.
 
    Die Werkskonfigurationen sind ähnlich der Granite Workflow-Warteschlange, die in [Gleichzeitige Workflow-Verarbeitung](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing) beschrieben wird, mit der Ausnahme, dass die Themen-Eigenschaft mit dem Thema Ihrer Workflow-Aufträge übereinstimmt.
 
@@ -388,7 +388,7 @@ In beiden Fällen können Sie die erwartete Anzahl von Transaktionen pro Sekunde
 | Einzelbenutzer auf der Startseite | Durchschnitt | 1 | 1 |  |  |
 |   | Spitze | 1 | 3 |  |  |
 | Startseite 100 Benutzer | Durchschnitt | 100 | 3 |  |  |
-|   | Spitze | 100 | 3 |  |
+|   | Spitze | 100 | 3 |  |  |
 
 #### Tests kombinierter Komponenten {#combined-component-tests}
 
@@ -502,13 +502,13 @@ Mit der Cache-Verhältnis-Formel wird der ungefähre Prozentsatz der vom Cache g
 
 * Die Gesamtzahl der Anforderungen. Diese Information können Sie der Apache-Datei `access.log` entnehmen. Weitere Informationen finden Sie in der [offiziellen Apache-Dokumentation](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
-* Die Anzahl der Anforderungen, die von der Publishing-Instanz bereitgestellt wurden. Diese Information können Sie der Datei `request.log` der Instanz entnehmen. Weitere Informationen finden Sie unter [Interpretieren der Datei request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) und [Auffinden der Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files).
+* Die Anzahl der Anforderungen, die von der Veröffentlichungsinstanz bereitgestellt wurden. Diese Information können Sie der Datei `request.log` der Instanz entnehmen. Weitere Informationen finden Sie unter [Interpretieren der Datei request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) und [Auffinden der Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files).
 
 Die Formel zur Berechnung des Cache-Verhältnisses lautet:
 
 * (Die Gesamtzahl der Anfragen **minus** der Anzahl der Anfragen in der Veröffentlichungsumgebung) **geteilt durch** die Gesamtanzahl der Anfragen.
 
-Wenn beispielsweise die Gesamtzahl der Anfragen 129491 und die Anzahl der von der Publishing-Instanz bereitgestellten Anforderungen 58959 beträgt, dann ist das Cache-Verhältnis: **(129491 - 58959)/129491= 54,5 %**.
+Wenn beispielsweise die Gesamtzahl der Anfragen 129491 und die Anzahl der von der Veröffentlichungsinstanz bereitgestellten Anforderungen 58959 beträgt, dann ist das Cache-Verhältnis: **(129491 - 58959)/129491= 54,5 %**.
 
 Wenn Sie keine 1-zu-1-Kopplung zwischen Publisher und Dispatcher haben, fügen Sie Anfragen von allen Dispatchern und Publishern hinzu, um eine genaue Messung zu erhalten. Siehe auch [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
 
@@ -655,7 +655,7 @@ Die in diesem Dokument berichteten Ergebnisse stammen aus Benchmarks, die in ein
 * Hardware-RAID-Controller; acht Laufwerke in einem RAID0+5-Array
 * VMware Image CPU x 2 Intel Xeon® E5540 mit 2,53 GHz
 * Red Hat® Linux® 2.6.18-194.el5; Java™ 1.6.0_29
-* Einzelne Authoring-Instanz
+* Einzelne Autoreninstanz
 
 Das Festplatten-Subsystem auf diesem Server ist schnell und entspricht einer Hochleistungs-RAID-Konfiguration, die etwa auf einem Produktions-Server verwendet wird. Die Backup-Leistung kann abhängig von der Festplattenleistung sein, und die Ergebnisse in dieser Umgebung spiegeln die Leistung mit einer schnellen RAID-Konfiguration wider. Das VMware-Bild ist so konfiguriert, dass es über ein einzelnes großes Festplattenvolumen verfügt, das sich physisch im lokalen Festplattenspeicher auf dem RAID-Array befindet.
 
@@ -671,7 +671,7 @@ Die folgende Tabelle zeigt die Größe der Datenvolumen, die in den Backup-Bench
 | Kleiner Inhalt für inkrementelle Sicherung |  | +100 | +2 | +2 |
 | Großer Inhalt für vollständige Sicherung |  | +10 000 | +100 | +100 |
 
-Das Sicherungs-Benchmark wird mit den zusätzlichen Inhalten, die bei jeder Iteration hinzugefügt werden, wiederholt.
+Das Sicherungs-Benchmark wird mit den zusätzlichen Content-Sets wiederholt, die bei jeder Iteration hinzugefügt werden.
 
 #### Benchmark-Szenarios {#benchmark-scenarios}
 

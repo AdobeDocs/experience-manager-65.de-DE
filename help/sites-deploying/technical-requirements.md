@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: f7e0cc48dbee90af2440e83ba82316d8237dcbe4
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '3534'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -90,14 +90,14 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen der Java™ Vi
 
 | **Plattform** | **Unterstützungsebene** | **Verknüpfung** |
 |---|---|---|
-| Oracle Java™ SE 21 JDK | Z: Nicht unterstützt `[1]` |
-| Oracle Java™ SE 17 JDK | Z: Nicht unterstützt `[1]` |
+| Oracle Java™ SE 21 JDK | Z: Nicht unterstützt `[1]` |  |
+| Oracle Java™ SE 17 JDK | Z: Nicht unterstützt `[1]` |  |
 | Oracle Java™ SE 11 JDK − 64 Bit | A: Unterstützt `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>) |
-| Oracle Java™ SE 10 JDK | Z: Nicht unterstützt `[1]` |
-| Oracle Java™ SE 9 JDK | Z: Nicht unterstützt `[1]` |
+| Oracle Java™ SE 10 JDK | Z: Nicht unterstützt `[1]` |  |
+| Oracle Java™ SE 9 JDK | Z: Nicht unterstützt `[1]` |  |
 | Oracle Java™ SE 8 JDK − 64 Bit | A: Unterstützt `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10) |
-| IBM® J9 VM − Build 2.9, JRE 1.8.0 | A: Unterstützt `[2]` |
-| IBM® J9 VM − Build 2.8, JRE 1.8.0 | A: Unterstützt `[2]` |
+| IBM® J9 VM − Build 2.9, JRE 1.8.0 | A: Unterstützt `[2]` |  |
+| IBM® J9 VM − Build 2.8, JRE 1.8.0 | A: Unterstützt `[2]` |  |
 | Azul Zulu OpenJDK 11 − 64 Bit | A: Unterstützt `[3]` | |
 | Azul Zulu OpenJDK 8 − 64 Bit | A: Unterstützt `[3]` | |
 
@@ -214,7 +214,7 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 | Oracle Solaris™ 11 | Z: Nicht unterstützt |
 | IBM® AIX® 7.2 | Z: Nicht unterstützt |
 
-1. Linux® Kernel 2.6, 3. x, 4. x, 5. x, 6. x und 9. x umfasst Derivate der Red Hat®-Verteilung, einschließlich Red Hat® Enterprise Linux®, Oracle Linux® und Amazon Linux®. AEM Forms-Add-on-Funktionen werden nur unter Red Hat® Enterprise Linux® 8 und Red Hat® Enterprise Linux® 9 unterstützt.
+1. Linux® Kernel 2.6, 3. x, 4. x, 5. x, 6. x und 9. x umfasst Derivate der Red Hat®-Verteilung, einschließlich Red Hat® Enterprise Linux®, Oracle Linux® und Amazon Linux®. Die Add-on-Funktionen von AEM Forms werden nur unter Red Hat® Enterprise Linux® 8 und Red Hat® Enterprise Linux® 9 unterstützt.
 2. AEM Forms wird unter Ubuntu 20.04 und SUSE® Linux® Enterprise Server 15 SP6 (64 Bit) unterstützt.
 3. Die Linux®-Verteilung wird von Adobe Managed Services unterstützt.
 

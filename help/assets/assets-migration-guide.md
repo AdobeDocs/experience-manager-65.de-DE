@@ -1,12 +1,12 @@
 ---
 title: Migrieren von Assets in großen Mengen
-description: Beschreibt, wie Sie Assets in  [!DNL Adobe Experience Manager] einfügen, Metadaten anwenden, Ausgabedarstellungen erstellen und diese aktivieren können, um Instanzen zu veröffentlichen.
+description: Beschreibt, wie Sie Assets in  [!DNL Adobe Experience Manager] einfügen, Metadaten anwenden, Ausgabedarstellungen erstellen und diese auf Veröffentlichungsinstanzen aktivieren können.
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 100%

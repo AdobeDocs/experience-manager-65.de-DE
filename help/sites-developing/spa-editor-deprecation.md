@@ -2,10 +2,10 @@
 title: Einstellung des SPA-Editors
 description: Der SPA-Editor von Adobe wird zwar weiterhin unterstützt, aber nachstehend erfahren Sie, was die Einstellung für Ihr Projekt bedeutet und welche Optionen Sie bei zukünftigen Projekten haben.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Leader, User, Developer
 exl-id: ea6e46ee-4a90-4236-8d93-292a4dda4dc0
-source-git-commit: d619c969604119a8686050fdc34d77c0ffee33cf
-workflow-type: ht
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 100%
 

@@ -4,8 +4,8 @@ description: Erfahren Sie mehr über die Grundlagen der Modellierung von Inhalte
 exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 100%
@@ -83,7 +83,7 @@ AEM stellt die folgenden Datentypen bereit, mit denen Sie Ihren Inhalt modellier
 * Einzeilentext
 * Mehrzeilentext
 * Zahl
-* Boolesch
+* Boolescher Wert
 * Datum und Uhrzeit
 * Aufzählung
 * Tags

@@ -10,10 +10,10 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: ed7183efa57db6d97941e3acc99d126c2fc0f6c5
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '4919'
-ht-degree: 100%
+source-wordcount: '4923'
+ht-degree: 95%
 
 ---
 
@@ -49,7 +49,7 @@ Nachdem Sie alle Schritte ausgeführt haben, sollten Ihre Seiten wie folgt ausse
 
 **Endergebnis herunterladen**
 
-Laden Sie website-1.0.zip herunter, um dem Tutorial zu folgen, anstatt die Übungen durchzuführen. Diese Datei ist ein AEM-Inhaltspaket, das die Ergebnisse dieses Tutorials enthält. Verwenden Sie den [Package Manager](/help/sites-administering/package-manager.md), um das Paket in Ihrer Authoring-Instanz zu installieren.
+Laden Sie website-1.0.zip herunter, um dem Tutorial zu folgen, anstatt die Übungen durchzuführen. Diese Datei ist ein AEM-Inhaltspaket, das die Ergebnisse dieses Tutorials enthält. Verwenden Sie den [Paket-Manager](/help/sites-administering/package-manager.md), um das Paket in Ihrer Authoring-Instanz zu installieren.
 
 **HINWEIS**: Durch Installieren dieses Pakets werden alle Ressourcen in Ihrer Autoreninstanz überschrieben, die Sie im Rahmen dieses Tutorials erstellt haben.
 
@@ -103,7 +103,7 @@ Beispieldatei static.css und Bilder
 
 1. Wenn das Element „mywebsite“ nicht in der Tabelle aufgeführt wird, aktualisieren Sie die Baumansicht bzw. die Tabelle.
 
-1. [Greifen Sie über WebDAV](/help/sites-administering/webdav-access.md) auf die URL unter https://localhost:4502 zu und kopieren Sie die Beispieldatei `static.css` und den Ordner `images` aus der zuvor heruntergeladenen Datei mywebsite.zip in den Ordner `/etc/designs/mywebsite`.
+1. [WebDAV](/help/sites-administering/webdav-access.md) Zugriff auf die URL unter https://localhost:4502, kopieren Sie die `static.css`-Beispieldatei und `images` Ordner aus der heruntergeladenen Datei mywebsite.zip in den `/etc/designs/mywebsite` Ordner.
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
@@ -216,7 +216,7 @@ Fügen Sie dem Skript contentpage.jsp Code hinzu, um den Seiteninhalt zu definie
 
 In diesem Abschnitt wird erläutert, wie Sie die folgenden Seiten erstellen, die alle die contentpage-Vorlage verwenden: „Meine Website“, „Englisch“, „Produkte“, „Services“ und „Kunden“.
 
-1. Klicken Sie auf der AEM-Begrüßungsseite ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html)) auf „Websites“.
+1. Klicken Sie auf der AEM-Begrüßungsseite ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html)) auf Websites.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
@@ -266,7 +266,7 @@ In diesem Abschnitt wird erläutert, wie Sie die folgenden Seiten erstellen, die
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
-1. Öffnen Sie in einer neuen Registerkarte bzw. in einem neuen Fenster Ihres Webbrowsers [https://localhost:4502/content/mywebsite/en/products.html](https://localhost:4502/content/mywebsite/en/products.html), um die Seite „Produkteׅ“ anzuzeigen:
+1. Öffnen Sie in einer neuen Browser-Registerkarte oder einem neuen Fenster [https://localhost:4502/content/mywebsite/en/products.html](https://localhost:4502/content/mywebsite/en/products.html), um die Seite „Produkte“ anzuzeigen:
 
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
@@ -485,7 +485,7 @@ Die Seitenkomponente definiert Eigenschaften, mit denen Sie Untertitel für Seit
 1. Wiederholen Sie die vorherigen Schritte, um den Untertitel **Über unsere Services** zur Seite **Services** hinzuzufügen.
 1. Wiederholen Sie die vorherigen Schritte, um den Untertitel **Warum Sie uns vertrauen können** zur Seite **Kunden** hinzuzufügen.
 
-   **Tipp:** Wählen Sie in CRXDE Lite den Knoten /content/mywebsite/en/products/jcr:content aus, um zu sehen, dass die Eigenschaft „Untertitel“ hinzugefügt ist.
+   **Tipp:** Wählen Sie in CRXDE Lite den Knoten /content/mywebsite/en/products/jcr:content aus, um anzuzeigen, dass die Eigenschaft „subtitle“ hinzugefügt wurde.
 
 #### Verbessern der oberen Navigation mithilfe von Bildlinks {#enhance-top-navigation-by-using-image-links}
 
@@ -493,7 +493,7 @@ Verbessern Sie das Rendering-Skript der topnav-Komponente, sodass für die Navig
 
 Diese Übung zeigt die [Verarbeitung von Sling-Anfragen](/help/sites-developing/the-basics.md#sling-request-processing). Das Skript topnav.jsp wird geändert, um ein Skript aufzurufen, das dynamisch Bilder generiert, die für die Seitennavigations-Links verwendet werden. In dieser Übung analysiert Sling die URL der Bildquelldateien, um das Skript zu bestimmen, das zum Rendern der Bilder verwendet werden soll.
 
-Die Quelle für den Bild-Link zur Seite „Produkte“ könnte beispielsweise https://localhost:4502/content/mywebsite/en/products.navimage.png lauten. Sling analysiert diese URL, um den Ressourcentyp und das Skript zum Rendern der Ressource zu bestimmen:
+Die Quelle für den Bild-Link zur Seite „Produkte“ könnte beispielsweise https://localhost:4502/content/mywebsite/en/products.navimage.png sein. Sling analysiert diese URL, um den Ressourcentyp und das Skript zum Rendern der Ressource zu bestimmen:
 
 1. Sling bestimmt `/content/mwebysite/en/products.png.` als Pfad der Ressource.
 1. Sling ordnet diesen Pfad dem Knoten `/content/mywebsite/en/products` zu.
@@ -691,7 +691,7 @@ Erstellen Sie zwei Seiten unter der Seite „Produkte“. Für jede Seite, die z
 
 1. Legen Sie in CRXDE Lite eine Beschreibung und ein Datum für die Seite „Product 2“ fest:
 
-   1. Wählen Sie den Knoten /content/mywebsite/en/products/product2/jcr:content aus.
+   1. Wählen Sie den Knoten /content/mywebsite/en/products/product2/jcr:content aus.
    1. Geben Sie auf der Registerkarte **Eigenschaften** die folgenden Werte ein:
 
       * Name: jcr:description
@@ -1172,23 +1172,23 @@ In diesem Abschnitt wird beschrieben, wie Sie das Image-Skript erstellen.
 
 1. Speichern Sie die Änderungen.
 
-#### Erstellen des Knotens „Image cq:editConfig“ {#creating-the-image-cq-editconfig-node}
+#### Erstellen des Knotens „Image:editConfig&quot; {#creating-the-image-cq-editconfig-node}
 
 Über den Knoten `cq:editConfig` können Sie bestimmte Verhaltensweisen von Komponenten konfigurieren, indem Sie ihre Eigenschaften bearbeiten.
 
-In diesem Abschnitt verwenden Sie den Knoten „cq:editConfig“, um Assets aus der Inhaltssuche in Ihre Bildkomponente zu ziehen.
+In diesem Abschnitt verwenden Sie einen cq:editConfig-Knoten, mit dem Sie Assets aus der Inhaltssuche in die Bildkomponente ziehen können.
 
 1. Erstellen Sie in CRXDE Lite unter dem Knoten „/apps/mywebsite/components/image“ wie folgt einen Knoten:
 
    * Name: cq:editConfig.
    * Typ: cq:EditConfig.
 
-1. Erstellen Sie unter dem Knoten „cq:editConfig“ wie folgt einen Knoten:
+1. Erstellen Sie unter dem Knoten cq:editConfig einen Knoten wie folgt:
 
    * Name: cq:dropTargets.
    * Typ: cq:DropTargetConfig.
 
-1. Erstellen Sie unter dem Knoten „cq:dropTargets“ wie folgt einen Knoten:
+1. Erstellen Sie unter dem Knoten cq:dropTargets einen Knoten wie folgt:
 
    * Name: image.
    * Typ: nt:unstructured.
@@ -1197,7 +1197,7 @@ In diesem Abschnitt verwenden Sie den Knoten „cq:editConfig“, um Assets aus 
 
 | Name | Typ | Wert |
 |---|---|---|
-| Akzeptieren der Bedingungen | Zeichenfolge | image/(gif | jpeg | png) |
+| Akzeptieren der Bedingungen | Zeichenfolge | image/(gif\|jpeg\|png) |
 | Gruppen | Zeichenfolge | media |
 | propertyName | Zeichenfolge | ./imageReference |
 

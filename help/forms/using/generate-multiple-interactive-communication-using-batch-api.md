@@ -9,7 +9,7 @@ feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 066528bd9c2d7db9705a9d47ed6ea91a584129cb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 100%
@@ -20,15 +20,15 @@ ht-degree: 100%
 
 Sie können die Batch-API verwenden, um mehrere interaktive Kommunikationen aus einer Vorlage zu erstellen. Die Vorlage ist eine interaktive Kommunikation ohne Daten. Die Batch-API kombiniert Daten mit einer Vorlage, um eine interaktive Kommunikation zu erzeugen. Die API ist bei der Massenproduktion interaktiver Kommunikationen nützlich. Zum Beispiel Telefonrechnungen, Kreditkartenauszüge für mehrere Kunden.
 
-Die Batch-API akzeptiert Datensätze (Daten) im JSON-Format und aus einem Formulardatenmodell. Die Anzahl der erzeugten interaktiven Kommunikationen entspricht den Datensätzen, die in der JSON-Eingabedatei im konfigurierten Formulardatenmodell angegeben sind. Sie können die API verwenden, um sowohl Druck- als auch Web-Ausgaben zu erstellen. Die PRINT-Option erzeugt ein PDF-Dokument, und die WEB-Option erzeugt Daten im JSON-Format für jeden einzelnen Datensatz.
+Die Batch-API akzeptiert Einträge (Daten) im JSON-Format und aus einem Formulardatenmodell. Die Anzahl der erzeugten interaktiven Kommunikationen entspricht den Einträgen, die in der JSON-Eingabedatei im konfigurierten Formulardatenmodell angegeben sind. Sie können die API verwenden, um sowohl Druck- als auch Web-Ausgaben zu erstellen. Die PRINT-Option erzeugt ein PDF-Dokument, und die WEB-Option erzeugt Daten im JSON-Format für jeden einzelnen Eintrag.
 
 ## Verwenden der Batch-API {#using-the-batch-api}
 
 Sie können die Batch-API mit überwachten Ordnern oder als eigenständige REST-API verwenden. Sie konfigurieren eine Vorlage, einen Ausgabetyp (HTML, PRINT oder beides), ein Gebietsschema, einen Service zur Vorbefüllungs und einen Namen für die generierte interaktive Kommunikation, um die Batch-API zu verwenden.
 
-Sie kombinieren einen Datensatz mit einer Vorlage für interaktive Kommunikation, um eine interaktive Kommunikation zu erzeugen. Batch-APIs können Datensätze (Daten für interaktive Kommunikationsvorlagen) direkt aus einer JSON-Datei oder aus einer externen Datenquelle lesen, auf die über das Formulardatenmodell zugegriffen wird. Sie können jeden Datensatz in einer separaten JSON-Datei speichern oder ein JSON-Array erstellen, um alle Datensätze in einer Datei zu speichern.
+Sie kombinieren einen Eintrag mit einer Vorlage für interaktive Kommunikation, um eine interaktive Kommunikation zu erzeugen. Batch-APIs können Einträge (Daten für interaktive Kommunikationsvorlagen) direkt aus einer JSON-Datei oder aus einer externen Datenquelle lesen, auf die über das Formulardatenmodell zugegriffen wird. Sie können jeden Eintrag in einer separaten JSON-Datei speichern oder ein JSON-Array erstellen, um alle Einträge in einer Datei zu speichern.
 
-**Ein einzelner Datensatz in einer JSON-Datei**
+**Ein einzelner Eintrag in einer JSON-Datei**
 
 ```json
 {
@@ -41,7 +41,7 @@ Sie kombinieren einen Datensatz mit einer Vorlage für interaktive Kommunikation
 }
 ```
 
-**Mehrere Datensätze in einer JSON-Datei**
+**Mehrere Einträge in einer JSON-Datei**
 
 ```json
 [{
@@ -72,14 +72,14 @@ Sie kombinieren einen Datensatz mit einer Vorlage für interaktive Kommunikation
 
 Um die Arbeit mit der API zu erleichtern, bietet AEM Forms einen Service für überwachte Ordner, der schon für die Verwendung der Batch-API vorkonfiguriert ist. Sie können über die Benutzeroberfläche von AEM Forms auf den Service zugreifen, um mehrere interaktive Kommunikationen zu generieren. Sie können auch benutzerdefinierte Services entsprechend Ihren Anforderungen erstellen. Sie können die unten aufgeführten Methoden verwenden, um die Batch-API mit dem überwachten Ordner zu verwenden:
 
-* Geben Sie Eingabedaten (Datensätze) im JSON-Dateiformat an, um eine interaktive Kommunikation zu erstellen.
-* Verwenden Sie Eingabedaten (Datensätze), die in einer externen Datenquelle gespeichert sind und über ein Formulardatenmodell aufgerufen werden, um eine interaktive Kommunikation zu erstellen.
+* Geben Sie Eingabedaten (Einträge) im JSON-Dateiformat an, um eine interaktive Kommunikation zu erstellen.
+* Verwenden Sie Eingabedaten (Einträge), die in einer externen Datenquelle gespeichert sind und über ein Formulardatenmodell aufgerufen werden, um eine interaktive Kommunikation zu erstellen.
 
-#### Angeben von Datensätzen der Eingabedaten im JSON-Dateiformat, um eine interaktive Kommunikation zu erstellen {#specify-input-data-in-JSON-file-format}
+#### Angeben von Einträgen der Eingabedaten im JSON-Dateiformat, um eine interaktive Kommunikation zu erstellen {#specify-input-data-in-JSON-file-format}
 
-Sie kombinieren einen Datensatz mit einer Vorlage für interaktive Kommunikation, um eine interaktive Kommunikation zu erzeugen. Sie können für jeden Datensatz eine separate JSON-Datei erstellen oder ein JSON-Array erstellen, um alle Datensätze in einer Datei zu speichern:
+Sie kombinieren einen Eintrag mit einer Vorlage für interaktive Kommunikation, um eine interaktive Kommunikation zu erzeugen. Sie können für jeden Eintrag eine separate JSON-Datei erstellen oder ein JSON-Array erstellen, um alle Einträge in einer Datei zu speichern:
 
-So erstellen Sie eine interaktive Kommunikation aus Datensätzen, die in einer JSON-Datei gespeichert sind:
+So erstellen Sie eine interaktive Kommunikation aus Einträgen, die in einer JSON-Datei gespeichert sind:
 
 1. Erstellen Sie einen [überwachten Ordner](/help/forms/using/creating-configure-watched-folder.md) und konfigurieren Sie ihn für die Verwendung der Batch-API:
    1. Melden Sie sich bei der AEM Forms-Autoreninstanz an.
@@ -94,8 +94,8 @@ So erstellen Sie eine interaktive Kommunikation aus Datensätzen, die in einer J
       | Eigenschaft | Typ | Beschreibung |
       |--- |--- |--- |
       | templatePath | Zeichenfolge | Geben Sie den Pfad der zu verwendenden interaktiven Kommunikationsvorlage an. Beispiel: `/content/dam/formsanddocuments/testsample/mediumic`. Dies ist eine obligatorische Eigenschaft. |
-      | recordPath | Zeichenfolge | Der Wert des Felds recordPath hilft beim Festlegen des Namens einer interaktiven Kommunikation. Sie können den Pfad eines Datensatzfelds als Wert des Felds recordPath festlegen. Wenn Sie beispielsweise /employee/Id angeben, wird der Wert des ID-Felds zum Namen für die entsprechende interaktive Kommunikation. Der Standardwert ist eine [zufällige UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
-      | usePrefillService | Boolesch | Legen Sie den Wert auf „False“ fest. Sie können den Parameter usePrefillService verwenden, um die interaktive Kommunikation mit Daten vorzufüllen, die aus dem Vorbefüllungs-Service abgerufen wurden, der für die entsprechende interaktive Kommunikation konfiguriert ist. Wenn usePrefillService auf „true“ gesetzt ist, werden JSON-Eingabedaten (für jeden Datensatz) als FDM-Argumente behandelt. Der Standardwert lautet false. |
+      | recordPath | Zeichenfolge | Der Wert des Felds recordPath hilft beim Festlegen des Namens einer interaktiven Kommunikation. Sie können den Pfad eines Eintragsfelds als Wert des Felds recordPath festlegen. Wenn Sie beispielsweise /employee/Id angeben, wird der Wert des ID-Felds zum Namen für die entsprechende interaktive Kommunikation. Der Standardwert ist eine [zufällige UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
+      | usePrefillService | Boolesch | Legen Sie den Wert auf „False“ fest. Sie können den Parameter usePrefillService verwenden, um die interaktive Kommunikation mit Daten vorzufüllen, die aus dem Vorbefüllungs-Service abgerufen wurden, der für die entsprechende interaktive Kommunikation konfiguriert ist. Wenn usePrefillService auf „true“ gesetzt ist, werden JSON-Eingabedaten (für jeden Eintrag) als FDM-Argumente behandelt. Der Standardwert lautet false. |
       | batchType | Zeichenfolge | Setzen Sie den Wert auf PRINT, WEB oder WEB_AND_PRINT. Der Standardwert ist WEB_AND_PRINT. |
       | locale | Zeichenfolge | Geben Sie das Gebietsschema für die Ausgabe der interaktiven Kommunikation an. Der vordefinierte Service verwendet nicht die Gebietsschema-Option, Sie können jedoch einen benutzerdefinierten Service erstellen, um lokalisierte interaktive Kommunikationen zu generieren. Der Standardwert ist en_US |
 
@@ -106,12 +106,12 @@ So erstellen Sie eine interaktive Kommunikation aus Datensätzen, die in einer J
    1. Warten Sie, bis der überwachte Ordner die Datei verarbeitet hat. Wenn die Verarbeitung beginnt, werden die Eingabedatei und der Unterordner, die die Datei enthält, in den Staging-Ordner verschoben.
    1. Öffnen Sie den Ausgabeordner, um die Ausgabe anzuzeigen:
       * Wenn Sie in der Konfiguration des überwachten Ordners die PRINT-Option angeben, wird eine PDF-Ausgabe für die interaktive Kommunikation generiert.
-      * Wenn Sie in der Konfiguration des überwachten Ordners die WEB-Option angeben, wird eine JSON-Datei pro Datensatz generiert. Sie können die JSON-Datei zum [Vorausfüllen einer Web-Vorlage](#web-template) verwenden.
-      * Wenn Sie sowohl die PRINT- als auch die WEB-Option angeben, werden sowohl PDF-Dokumente als auch eine JSON-Datei pro Datensatz generiert.
+      * Wenn Sie in der Konfiguration des überwachten Ordners die WEB-Option angeben, wird eine JSON-Datei pro Eintrag generiert. Sie können die JSON-Datei zum [Vorausfüllen einer Web-Vorlage](#web-template) verwenden.
+      * Wenn Sie sowohl die PRINT- als auch die WEB-Option angeben, werden sowohl PDF-Dokumente als auch eine JSON-Datei pro Eintrag generiert.
 
 #### Verwenden Sie Eingabedaten, die in einer externen Datenquelle gespeichert sind und über das Formulardatenmodell aufgerufen werden, um eine interaktive Kommunikation zu erstellen. {#use-fdm-as-data-source}
 
-Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) mit einer interaktiven Kommunikationsvorlage, um eine interaktive Kommunikation zu erzeugen. Wenn Sie eine interaktive Kommunikation erstellen, verbinden Sie sie über ein Formulardatenmodell (FDM) mit einer externen Datenquelle, um auf Daten zuzugreifen. Sie können den Batch-Prozess-Service für überwachte Ordner konfigurieren, um Daten mit demselben Formulardatenmodell aus einer externen Datenquelle abzurufen. So [Erstellen Sie eine interaktive Kommunikation aus Datensätzen, die in einer externen Datenquelle gespeichert sind](/help/forms/using/work-with-form-data-model.md):
+Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Einträge) mit einer interaktiven Kommunikationsvorlage, um eine interaktive Kommunikation zu erzeugen. Wenn Sie eine interaktive Kommunikation erstellen, verbinden Sie sie über ein Formulardatenmodell (FDM) mit einer externen Datenquelle, um auf Daten zuzugreifen. Sie können den Batch-Prozess-Service für überwachte Ordner konfigurieren, um Daten mit demselben Formulardatenmodell aus einer externen Datenquelle abzurufen. So [Erstellen Sie eine interaktive Kommunikation aus Einträgen, die in einer externen Datenquelle gespeichert sind](/help/forms/using/work-with-form-data-model.md):
 
 1. So konfigurieren Sie das Formulardatenmodell der Vorlage:
    1. Öffnen Sie das Formulardatenmodell, das mit der Vorlage für interaktive Kommunikation verknüpft ist.
@@ -126,7 +126,7 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) m
    1. Speichern Sie die Eigenschaften und das Formulardatenmodell.
 1. So konfigurieren Sie den Wert für das Anfrageattribut:
    1. Erstellen Sie eine JSON-Datei in Ihrem Dateisystem und öffnen Sie sie zur Bearbeitung.
-   1. Erstellen Sie ein JSON-Array und geben Sie das primäre Attribut an, um Daten aus dem Formulardatenmodell abzurufen. Beispielsweise fordert die folgende JSON-Datei FDM auf, Daten von Datensätzen mit einer ID von 27126 oder 27127 zu senden:
+   1. Erstellen Sie ein JSON-Array und geben Sie das primäre Attribut an, um Daten aus dem Formulardatenmodell abzurufen. Beispielsweise fordert die folgende JSON-Datei FDM auf, Daten von Einträgen mit einer ID von 27126 oder 27127 zu senden:
 
       ```json
           [
@@ -154,8 +154,8 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) m
       | Eigenschaft | Typ | Beschreibung |
       |--- |--- |--- |
       | templatePath | Zeichenfolge | Geben Sie den Pfad der zu verwendenden interaktiven Kommunikationsvorlage an. Beispiel: /content/dam/formsanddocuments/testsample/mediumic. Dies ist eine obligatorische Eigenschaft. |
-      | recordPath | Zeichenfolge | Der Wert des Felds recordPath hilft beim Festlegen des Namens einer interaktiven Kommunikation. Sie können den Pfad eines Datensatzfelds als Wert des Felds recordPath festlegen. Wenn Sie beispielsweise /employee/Id angeben, wird der Wert des ID-Felds zum Namen für die entsprechende interaktive Kommunikation. Der Standardwert ist eine [zufällige UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
-      | usePrefillService | Boolesch | Legen Sie den Wert auf „True“ fest. Der Standardwert lautet „false“. Wenn der Wert auf „true“ gesetzt ist, liest die Batch-API Daten aus dem konfigurierten Formulardatenmodell und füllt sie in die interaktive Kommunikation. Wenn usePrefillService auf „true“ gesetzt ist, werden JSON-Eingabedaten (für jeden Datensatz) als FDM-Argumente behandelt. |
+      | recordPath | Zeichenfolge | Der Wert des Felds recordPath hilft beim Festlegen des Namens einer interaktiven Kommunikation. Sie können den Pfad eines Eintragsfelds als Wert des Felds recordPath festlegen. Wenn Sie beispielsweise /employee/Id angeben, wird der Wert des ID-Felds zum Namen für die entsprechende interaktive Kommunikation. Der Standardwert ist eine [zufällige UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
+      | usePrefillService | Boolesch | Legen Sie den Wert auf „True“ fest. Der Standardwert lautet „false“. Wenn der Wert auf „true“ gesetzt ist, liest die Batch-API Daten aus dem konfigurierten Formulardatenmodell und füllt sie in die interaktive Kommunikation. Wenn usePrefillService auf „true“ gesetzt ist, werden JSON-Eingabedaten (für jeden Eintrag) als FDM-Argumente behandelt. |
       | batchType | Zeichenfolge | Setzen Sie den Wert auf PRINT, WEB oder WEB_AND_PRINT. Der Standardwert ist WEB_AND_PRINT. |
       | locale | Zeichenfolge | Geben Sie das Gebietsschema für die Ausgabe der interaktiven Kommunikation an. Der vordefinierte Service verwendet nicht die Gebietsschema-Option, Sie können jedoch einen benutzerdefinierten Service erstellen, um lokalisierte interaktive Kommunikationen zu generieren. Der Standardwert ist en_US. |
 
@@ -166,8 +166,8 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) m
    1. Warten Sie, bis der überwachte Ordner die Datei verarbeitet hat. Wenn die Verarbeitung beginnt, werden die Eingabedatei und der Unterordner, die die Datei enthält, in den Staging-Ordner verschoben.
    1. Öffnen Sie den Ausgabeordner, um die Ausgabe anzuzeigen:
       * Wenn Sie in der Konfiguration des überwachten Ordners die PRINT-Option angeben, wird eine PDF-Ausgabe für die interaktive Kommunikation generiert.
-      * Wenn Sie in der Konfiguration des überwachten Ordners die WEB-Option angeben, wird eine JSON-Datei pro Datensatz generiert. Sie können die JSON-Datei zum [Vorausfüllen einer Web-Vorlage](#web-template) verwenden.
-      * Wenn Sie sowohl die PRINT- als auch die WEB-Option angeben, werden sowohl PDF-Dokumente als auch eine JSON-Datei pro Datensatz generiert.
+      * Wenn Sie in der Konfiguration des überwachten Ordners die WEB-Option angeben, wird eine JSON-Datei pro Eintrag generiert. Sie können die JSON-Datei zum [Vorausfüllen einer Web-Vorlage](#web-template) verwenden.
+      * Wenn Sie sowohl die PRINT- als auch die WEB-Option angeben, werden sowohl PDF-Dokumente als auch eine JSON-Datei pro Eintrag generiert.
 
 ## Rufen Sie die Batch-API mithilfe von REST-Anfragen auf.
 
@@ -325,14 +325,14 @@ Stellen Sie vor der Bereitstellung des Java™-Servlets sicher, dass Sie über e
 1. Ersetzen Sie im obigen Code den Vorlagenpfad (setTemplatePath) durch den Pfad Ihrer Vorlage und legen Sie den Wert der setBatchType-API fest:
    * Wenn Sie die PRINT-Option PDF angeben, wird eine Ausgabe für die interaktive Kommunikation generiert.
    * Wenn Sie die WEB-Option angeben, wird eine JSON-Datei pro Eintrag generiert. Sie können die JSON-Datei zum [Vorausfüllen einer Web-Vorlage](#web-template) verwenden.
-   * Wenn Sie sowohl die PRINT- als auch die WEB-Option angeben, werden sowohl PDF-Dokumente als auch eine JSON-Datei pro Datensatz generiert.
+   * Wenn Sie sowohl die PRINT- als auch die WEB-Option angeben, werden sowohl PDF-Dokumente als auch eine JSON-Datei pro Eintrag generiert.
 
 1. [Verwenden Sie Maven, um den aktualisierten Code für Ihre AEM-Instanz bereitzustellen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=de).
-1. Rufen Sie zum Generieren der interaktiven Kommunikationen die Batch-API auf.  Die Batch-API druckt und gibt einen Stream von PDF- und JSON-Dateien abhängig von der Anzahl der Datensätze zurück. Sie können die JSON-Datei zum [Vorausfüllen einer Web-Vorlage](#web-template) verwenden. Wenn Sie den oben genannten Code verwenden, wird die API unter `http://localhost:4502/bin/batchServlet` bereitgestellt. Der Code druckt und gibt einen Stream von PDF- und JSON-Dateien zurück.
+1. Rufen Sie zum Generieren der interaktiven Kommunikationen die Batch-API auf.  Die Batch-API druckt und gibt einen Stream von PDF- und JSON-Dateien abhängig von der Anzahl der Einträge zurück. Sie können die JSON-Datei zum [Vorausfüllen einer Web-Vorlage](#web-template) verwenden. Wenn Sie den oben genannten Code verwenden, wird die API unter `http://localhost:4502/bin/batchServlet` bereitgestellt. Der Code druckt und gibt einen Stream von PDF- und JSON-Dateien zurück.
 
 ### Vorausfüllen einer Web-Vorlage {#web-template}
 
-Wenn Sie den batchType so einstellen, dass der Web-Kanal gerendert wird, generiert die API eine JSON-Datei für jeden Datensatz. Sie können die folgende Syntax verwenden, um die JSON-Datei mit dem entsprechenden Web-Kanal zusammenzuführen und eine interaktive Kommunikation zu generieren:
+Wenn Sie den batchType so einstellen, dass der Web-Kanal gerendert wird, generiert die API eine JSON-Datei für jeden Dateneintrag. Sie können die folgende Syntax verwenden, um die JSON-Datei mit dem entsprechenden Web-Kanal zusammenzuführen und eine interaktive Kommunikation zu generieren:
 
 **Syntax**
 `http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`

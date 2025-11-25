@@ -11,10 +11,10 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
-workflow-type: ht
-source-wordcount: '10488'
-ht-degree: 100%
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
+source-wordcount: '10481'
+ht-degree: 99%
 
 ---
 
@@ -105,7 +105,7 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
 
 1. **Veröffentlichen Sie die Videos in Dynamic Media** anhand der folgenden Schritte:
 
-   * Wenn Sie Adobe Experience Manager als Web Content Management-System verwenden, können Sie Ihren Webseiten direkt Videos hinzufügen.
+   * Wenn Sie Adobe Experience Manager als Web-Content-Management-System verwenden, können Sie Ihren Webseiten direkt Videos hinzufügen.
 
       * [Hinzufügen von Videos zu Ihren Web-Seiten](adding-dynamic-media-assets-to-pages.md).
 
@@ -162,7 +162,7 @@ Welche Windows-Geräte dieses Videoformat unterstützen, können Sie hier einseh
    * Viewer für gemischte Medien, die sowohl Video- als auch Bildinhalte kombinieren
 
 * Konfigurieren von Video-Playern entsprechend Ihren Branding-Anforderungen
-* Integrieren von Videos in Websites, mobile Sites oder Mobile Apps mit einer einfachen URL oder mit Integrations-Code
+* Integrieren von Videos in Websites, mobile Sites oder Mobile Apps mit einer einfachen URL oder mit Einbettungs-Code
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
@@ -289,7 +289,7 @@ Der Workflow für die **Dynamic Media-Videokodierung** kodiert Videos, wenn Dyna
 
 <!-- DEAD The following are best-practice tips for encoding source video files.
 
-For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_de).
+For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en).
 
 * [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en). -->
 
@@ -304,9 +304,9 @@ Die folgende Tabelle beschreibt die empfohlenen Werte für Größe, Seitenverhä
 
 | Größe | Seitenverhältnis | Mindest-Bitrate |
 |--- |--- |--- |
-| 1024 x 768 | 4:3 | 4500 kBit/s für die meisten Videos |
-| 1280 x 720 | 16:9 | 3000–6000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
-| 1920 x 1080 | 16:9 | 6000–8000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
+| 1024 x 768 | 4 :3 | 4500 kBit/s für die meisten Videos |
+| 1280 x 720 | 16 :9 | 3000–6000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
+| 1920 x 1080 | 16 :9 | 6000–8000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
 
 ### Abrufen der Metadaten von Dateien {#obtaining-a-file-s-metadata}
 
@@ -328,12 +328,12 @@ Anhand der folgenden Tabelle können Sie die Formelergebnisse in gängige Seiten
 
 | Formelergebnis | Seitenverhältnis |
 |--- |--- |
-| 1,33 | 4:3 |
-| 0,75 | 3:4 |
-| 1,78 | 16:9 |
-| 0,56 | 9:16 |
+| 1,33 | 4 :3 |
+| 0,75 | 3 :4 |
+| 1,78 | 16 :9 |
+| 0,56 | 9 :16 |
 
-Beispiel: Ein Video mit einer Breite von 1440 und einer Höhe von 1080 hat ein Seitenverhältnis von 1440:1080 bzw. 1,33. In diesem Fall wählen Sie eine Videokodierungsvorgabe mit einem Seitenverhältnis von 4:3 aus, um die Videodatei zu kodieren.
+Beispielsweise hat ein Video mit einer Breite × Höhe von 1.440 und einem Seitenverhältnis von 1.440 zu 1.080 bzw. 1,33. In diesem Fall wählen Sie eine Videokodierungsvorgabe mit einem Seitenverhältnis von 4:3 aus, um die Videodatei zu kodieren.
 
 ### Bitrate {#bitrate}
 
@@ -464,7 +464,7 @@ Damit Videoberichte ordnungsgemäß funktionieren, wird automatisch eine Report 
 Aktualisieren Sie nur dann, wenn das Enddatum des Berichts der aktuelle Tag ist. Dadurch wird sichergestellt, dass Sie das Video-Tracking sehen, das seit der letzten Ausführung des Berichts vorgenommen wurde.
 
    * Klicken Sie in der Nähe der oberen rechten Ecke auf das Symbol **Datumsauswahl**.
-Geben Sie den Anfang und das Ende des Datumsbereichs an, für den Sie Videodaten anzeigen möchten, und klicken Sie dann auf **[!UICONTROL Bericht ausführen]**.
+Geben Sie den Start und das Ende des Datumsbereichs an, für den Sie Videodaten anzeigen möchten, und klicken Sie dann auf **[!UICONTROL Bericht ausführen]**.
 
    Im Gruppenfeld „Top-Metriken“ werden verschiedene aggregierte Messungen für alle *veröffentlichten* Videos auf der Site angegeben.
 
@@ -480,14 +480,14 @@ Verwenden Sie das [Adobe Dynamic Media-Viewer-Referenzhandbuch](https://experien
 
 1. Navigieren Sie zu einem veröffentlichten Video-Asset.
 1. Wählen Sie links oben auf der Seite des Assets aus der Dropdown-Liste die Option **[!UICONTROL Viewer]** aus.
-1. Wählen Sie eine Video-Viewer-Vorgabe aus und kopieren Sie den Integrations-Code.
-1. Suchen Sie im Integrations-Code die folgende Zeile:
+1. Wählen Sie eine Video-Viewer-Vorgabe aus und kopieren Sie den Einbettungs-Code.
+1. Suchen Sie im Einbettungs-Code die folgende Zeile:
 
    `videoViewer.setParam("config2", "<value>");`
 
    Der Parameter `config2` aktiviert die Verfolgung in HTML5-Viewern. Er ist außerdem eine firmenspezifische Vorgabe, die die Konfigurationsinformationen für Videoberichte und kundenspezifische Adobe Analytics-Konfigurationen enthält.
 
-   Den richtigen Wert für den Parameter „config2“ finden Sie sowohl im **[!UICONTROL Integrations-Code]** als auch in der Funktion **[!UICONTROL URL kopieren]**. Der in der URL des Befehls **[!UICONTROL URL kopieren]** zu suchende Parameter ist `&config2=<value>`. Der Wert lautet fast immer `companypreset`, kann aber in einigen Fällen auch `companypreset-1`, `companypreset-2` usw. lauten.
+   Den richtigen Wert für den Parameter „config2“ finden Sie sowohl im **[!UICONTROL Einbettungs-Code]** als auch in der Funktion **[!UICONTROL URL kopieren]**. Der in der URL des Befehls **[!UICONTROL URL kopieren]** zu suchende Parameter ist `&config2=<value>`. Der Wert lautet fast immer `companypreset`, kann aber in einigen Fällen auch `companypreset-1`, `companypreset-2` usw. lauten.
 
 1. Fügen Sie im benutzerspezifischen Video-Viewer-Code „AppMeasurementBridge.jsp“ wie folgt zur Viewer-Seite hinzu:
 
@@ -802,7 +802,7 @@ Verdeckte Untertitel ermöglichen auch einen besseren Zugang für Personen, die 
 
 Weitere Informationen finden Sie unter [Barrierefreiheit in Dynamic Media](/help/assets/accessibility-dm.md).
 
-Dynamic Media konvertiert Untertiteldateien in das JSON-Format (JavaScript Object Notation). Diese Konvertierung bedeutet, dass Sie den JSON-Text als verborgenes, aber vollständiges Transkript des Videos einfügen können. Suchmaschinen können dann den Inhalt durchsuchen und indizieren, damit Kundinnen und Kunden die Videos leichter finden können und zusätzliche Detailinformationen zum Videoinhalt erhalten.
+Dynamic Media konvertiert Untertiteldateien in das JSON-Format (JavaScript Object Notation). Diese Konvertierung bedeutet, dass Sie den JSON-Text als verborgenes, aber vollständiges Transkript des Videos einbetten können. Suchmaschinen können dann den Inhalt durchsuchen und indizieren, damit Kundinnen und Kunden die Videos leichter finden können und zusätzliche Detailinformationen zum Videoinhalt erhalten.
 
 Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie unter [Bereitstellen statischer Inhalte (keine Bilder)](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api).
 
@@ -828,7 +828,7 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
    >
    >Für globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard separate `.vtt`-Dateien und Abrufe für jede Sprache benötigt, die Sie unterstützen möchten.
 
-   Grundsätzlich sollte die `.vtt`-Untertiteldatei denselben Namen haben wie die Videodatei, an den dann ein Kürzel für die Sprache wie -EN, -FR oder -DE angehängt wird. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen Web-Content-Management-System zu automatisieren.
+   Grundsätzlich sollte die `.vtt`-Untertiteldatei denselben Namen haben wie die Videodatei, an den dann ein Kürzel für das Gebietsschema wie -EN, -FR oder -DE angehängt wird. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen Web-Content-Management-System zu automatisieren.
 
 1. Laden Sie in Experience Manager Ihre WebVTT-Untertiteldatei in das DAM hoch.
 1. Navigieren Sie zum *veröffentlichten* Video-Asset, das Sie mit der hochgeladenen Untertiteldatei verbinden möchten.
@@ -1124,7 +1124,7 @@ Im Folgenden finden Sie ein Beispiel der oben genannten API unter Verwendung von
 
 >[!TAB Hinzufügen einer Abhängigkeit in pom.xml]
 
-+++**Hinzufügen einer Abhängigkeit in pom.xml**
++++**Hinzufügen einer Abhängigkeit in pom.xml** 
 
 ```java
 dependency> 
@@ -1139,7 +1139,7 @@ dependency>
 
 >[!TAB Servlet-Beispiel]
 
-+++**Servlet-Beispiel**
++++**Servlet-Beispiel** 
 
 ```java
 @Component
@@ -1218,7 +1218,7 @@ public class ManifestServlet extends HttpServlet {
 
 >[!TAB Antwort-Klasse für Servlet]
 
-+++**Antwort-Klasse für Servlet**
++++**Antwort-Klasse für Servlet** 
 
 ```java
 public class ManifestUrl extends VideoResponse { 
@@ -1248,7 +1248,7 @@ public abstract class VideoResponse {
 
 >[!TAB Konstantendatei, auf die im Servlet verwiesen wird]
 
-+++**Konstantendatei, auf die im Servlet verwiesen wird**
++++**Konstantendatei, auf die im Servlet verwiesen wird** 
 
 ```java
 public final class Constants { 
@@ -1267,7 +1267,7 @@ public final class Constants {
 
 >[!TAB ServletContext]
 
-+++**ServletContext**
++++**ServletContext** 
 
 Bereitstellen des obigen Servlets mithilfe eines `servletContext`. Im Folgenden finden Sie ein Beispiel für `servletContext`.
 
@@ -1446,7 +1446,7 @@ When you create an Adobe Support case to enable DASH on your account, multiple c
 
 1. Select **[!UICONTROL Save]**.
 
-1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.

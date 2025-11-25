@@ -4,11 +4,11 @@ description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente für optimierte GraphQL
 exl-id: d78ec052-c091-49ca-9f36-a3d24eb9edd5
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 100%
+source-wordcount: '250'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ Um die Leistung Ihrer GraphQL-Filter zu optimieren, führen Sie eine Prozedur au
 
 ## Voraussetzungen {#prerequisites}
 
-Stellen Sie sicher, dass Sie mindestens Version 6.5.17.0 von AEM haben.
+Stellen Sie sicher, dass Sie mindestens über die 6.5.17.0 Version von AEM verfügen.
 
 ## Aktualisieren von Inhaltsfragmenten {#updating-content-fragments}
 

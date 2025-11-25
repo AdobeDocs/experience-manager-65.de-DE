@@ -2,14 +2,14 @@
 title: Konfigurieren von Asset-Upload-Beschränkungen
 description: Beschränken Sie den Typ der Assets (Dateien), die Benutzer hochladen können.
 contentOwner: AG
-role: Developer, Admin, Architect
+role: Developer, Admin
 feature: Asset Management,Upload
 exl-id: 0e009b9a-54c4-4715-98ee-0207839f90f6
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -26,4 +26,4 @@ Sie können [!DNL Adobe Experience Manager Assets] so konfigurieren, dass Benutz
 
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
-1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern. Wenn Sie MIME-Zeichenfolgen für zulässige MIME-Typen angeben, schlägt der Upload-Vorgang für alle Assets fehl, deren MIME-Typ nicht den in diesen Feldern konfigurierten MIME-Zeichenfolgen entspricht.
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern. Wenn Sie MIME-Zeichenfolgen für zulässige MIME-Typen angeben, schlägt der Upload-Vorgang für alle Assets fehl, deren MIME-Typ nicht mit den konfigurierten MIME-Zeichenfolgen in diesen Feldern übereinstimmt.
