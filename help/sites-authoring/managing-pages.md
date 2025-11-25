@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit Adobe Experience Manager Seiten erstellen
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 383192083ec84176f67882a869550374f6074eef
-workflow-type: ht
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+workflow-type: tm+mt
 source-wordcount: '2476'
 ht-degree: 100%
 

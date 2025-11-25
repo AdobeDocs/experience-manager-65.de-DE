@@ -3,12 +3,12 @@ title: AEM Forms – Patch-Installationsanweisungen für AEM Forms
 description: Installationsanweisungen für AEM Forms Service Pack für OSGi- und JEE-Umgebungen
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 813ddbf98b65588752ffa94e9ac4a810cff45302
-workflow-type: ht
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+workflow-type: tm+mt
 source-wordcount: '1722'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -55,7 +55,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 <!--
 ![JEE Installation](/help/forms/using/assets/jeeinstallation.png) -->
 
-+++1. Erstellen Sie ein Backup Ihrer bestehenden Umgebung
++++&#x200B;1. Erstellen Sie ein Backup Ihrer bestehenden Umgebung
 
 1. Sichern Sie Ihr [CRX-Repository, Datenbankschema und GDS (Global Document Storage)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html?lang=de).
 1. Sichern Sie den Ordner &lt;*AEM_forms_root*>/deploy.
@@ -66,7 +66,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++2. Laden Sie die erforderliche Software herunter
++++&#x200B;2. Laden Sie die erforderliche Software herunter
 
 * [AEM Forms on JEE Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de)
 
@@ -78,7 +78,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++3. Installieren Sie Microsoft Visual C++ Redistributable Packages
++++&#x200B;3. Installieren Sie Microsoft Visual C++ Redistributable Packages
 
 * Laden Sie die [64-Bit-Version der Microsoft Visual C++ Redistributable Packages for Visual Studio 2015, 2017, 2019 und 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) auf den Computer herunter, auf dem AEM 6.5 Forms installiert ist, und installieren Sie sie.
 
@@ -88,7 +88,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++4. Installieren Sie das AEM Forms on JEE Service Pack:
++++&#x200B;4. Installieren Sie das Service Pack von AEM Forms on JEE:
 
 1. Stoppen Sie den Programm-Server.
 1. Extrahieren Sie das **AEM Forms on JEE Service Pack-Installationsarchiv** auf Ihrer Festplatte:
@@ -141,7 +141,7 @@ Navigieren Sie zum entsprechenden Ordner und geben Sie in einer Shell Folgendes 
 
 +++
 
-+++5. Installieren Sie das Servlet-Fragment, falls es nicht installiert ist (**Erforderlicher Schritt**).
++++&#x200B;5. Installieren Sie das Servlet-Fragment, falls nicht installiert (**obligatorischer Schritt**)
 
 <!-- >[!NOTE] > > * If you are upgrading from **AEM Service Pack 6.5.15.0**, the installation of the **servlet fragment** is not required. For versions **AEM Service Pack 6.5.14.0** or earlier, it is **mandatory to install** the servlet fragment. -->
 
@@ -159,12 +159,12 @@ So laden Sie das Servlet-Fragment herunter und installieren es:
 
 +++
 
-+++6. Installieren des AEM Service Pack
++++&#x200B;6. Installieren des AEM Service Packs
 
 1. Starten Sie die Instanz vor der Installation neu, wenn sich die Instanz im Update-Modus befindet (wenn die Instanz von einer früheren Version aktualisiert wurde). Adobe empfiehlt einen Neustart, wenn die aktuelle Betriebszeit für eine Instanz hoch ist.
 1. Erstellen Sie vor der Installation eine Momentaufnahme oder ein neues Backup Ihrer [!DNL Experience Manager]-Instanz.
 1. Laden Sie das Service Pack von [Software Distribution](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) herunter. <!-- UPDATE FOR EACH NEW RELEASE -->
-1. Öffnen Sie Package Manager und wählen Sie dann **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen. Weitere Informationen finden Sie unter [Package Manager](/help/sites-administering/package-manager.md).
+1. Öffnen Sie den Paket-Manager und wählen Sie dann **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen. Weitere Informationen finden Sie unter [Paket-Manager](/help/sites-administering/package-manager.md).
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
 **Automatische Installation**
@@ -174,7 +174,7 @@ Es gibt zwei verschiedene Methoden, mit denen Sie das Service Pack von [!DNL Exp
 * Platzieren Sie das Paket in den Ordner `../crx-quickstart/install`, wenn der Server online verfügbar ist.
 Das Paket wird automatisch installiert.
 
-* Verwenden Sie die [HTTP-API von Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de). Verwenden Sie `cmd=install&recursive=true`, damit die verschachtelten Pakete installiert werden.
+* Verwenden Sie die [HTTP-API vom Paket-Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de). Verwenden Sie `cmd=install&recursive=true`, damit die verschachtelten Pakete installiert werden.
 
   >[!NOTE]
   >
@@ -190,7 +190,7 @@ Das Paket wird automatisch installiert.
 
 +++
 
-+++7. Installieren des Add-On-Pakets zu AEM Experience Manager Forms
++++&#x200B;7. Installieren des AEM Experience Manager Forms-Add-on-Pakets
 
 1. Stellen Sie sicher, dass Sie das [!DNL Experience Manager] Service Pack installiert haben.
 1. Wählen Sie unter den aufgeführten [AEM Forms-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) das für Ihr Betriebssystem passende Forms-Add-on-Paket aus und laden Sie es herunter.
@@ -205,7 +205,7 @@ Das Paket wird automatisch installiert.
 <!-- ![OSGi Installation Steps](/help/forms/using/assets/osgiinstallation.png)
 -->
 
-+++1. Erstellen Sie ein Backup Ihrer bestehenden Umgebung
++++&#x200B;1. Erstellen Sie ein Backup Ihrer bestehenden Umgebung
 
 1. Sichern Sie Ihr [CRX-Repository und Datenbankschema](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html?lang=de).
 
@@ -215,7 +215,7 @@ Das Paket wird automatisch installiert.
 
 +++
 
-+++2. Laden Sie die erforderliche Software herunter
++++&#x200B;2. Laden Sie die erforderliche Software herunter
 
 * [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=de)
 * [Forms-Add-on-Paket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de)
@@ -233,12 +233,12 @@ Das Paket wird automatisch installiert.
 
 +++
 
-+++4. Installieren des AEM Service Pack
++++&#x200B;4. Installieren des AEM Service Packs
 
 1. Starten Sie die Instanz vor der Installation neu, wenn sich die Instanz im Update-Modus befindet (wenn die Instanz von einer früheren Version aktualisiert wurde). Adobe empfiehlt einen Neustart, wenn die aktuelle Betriebszeit für eine Instanz hoch ist.
 1. Erstellen Sie vor der Installation eine Momentaufnahme oder ein neues Backup Ihrer [!DNL Experience Manager]-Instanz.
 1. Laden Sie das Service Pack von [Software Distribution](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) herunter. <!-- UPDATE FOR EACH NEW RELEASE -->
-1. Öffnen Sie Package Manager und wählen Sie dann **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen. Weitere Informationen finden Sie unter [Package Manager](/help/sites-administering/package-manager.md).
+1. Öffnen Sie den Paket-Manager und wählen Sie dann **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen. Weitere Informationen finden Sie unter [Paket-Manager](/help/sites-administering/package-manager.md).
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
 **Automatische Installation**
@@ -246,7 +246,7 @@ Das Paket wird automatisch installiert.
 Es gibt zwei verschiedene Methoden, mit der Sie das Service Pack von [!DNL Experience Manager] automatisch installieren können.<!--  UPDATE FOR EACH NEW RELEASE -->
 
 * Platzieren Sie das Paket in den Ordner `../crx-quickstart/install`, wenn der Server online verfügbar ist. Das Paket wird automatisch installiert.
-* Verwenden Sie die [HTTP-API von Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de). Verwenden Sie `cmd=install&recursive=true`, damit die verschachtelten Pakete installiert werden.
+* Verwenden Sie die [HTTP-API vom Paket-Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de). Verwenden Sie `cmd=install&recursive=true`, damit die verschachtelten Pakete installiert werden.
 
   >[!NOTE]
   >
@@ -264,7 +264,7 @@ Es gibt zwei verschiedene Methoden, mit der Sie das Service Pack von [!DNL Exper
 
 +++
 
-+++5. Installieren des Adobe Experience Manager Forms (AEM)-Add-On-Pakets
++++&#x200B;5. Installieren des Adobe Experience Manager Forms (AEM)-Add-on-Pakets
 
 1. Stellen Sie sicher, dass Sie das [!DNL Experience Manager] Service Pack installiert haben.
 1. Wählen Sie unter den aufgeführten [AEM Forms-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) das für Ihr Betriebssystem passende Forms-Add-on-Paket aus und laden Sie es herunter.
@@ -275,7 +275,7 @@ Es gibt zwei verschiedene Methoden, mit der Sie das Service Pack von [!DNL Exper
 
 ## Fehlerbehebung
 
-* Wenn das **Dialogfeld auf der Package Manager-Oberfläche** während der Installation des Service Packs beendet wird, warten Sie, bis sich die Fehlerprotokolle stabilisiert haben, bevor Sie auf die Bereitstellung zugreifen. Warten Sie auf die spezifischen Protokolle im Zusammenhang mit der Deinstallation des Aktualisierungspakets, bevor Sie sich vergewissern, dass die Installationen erfolgreich waren. Dieses Problem tritt in der Regel im Safari-Browser auf, kann aber zeitweise auch in jedem anderen Browser auftreten.
+* Wenn das **Dialogfeld auf der Paket-Manager-Oberfläche** während der Installation des Service Packs beendet wird, warten Sie, bis sich die Fehlerprotokolle stabilisiert haben, bevor Sie auf die Bereitstellung zugreifen. Warten Sie auf die spezifischen Protokolle im Zusammenhang mit der Deinstallation des Aktualisierungspakets, bevor Sie sich vergewissern, dass die Installationen erfolgreich waren. Dieses Problem tritt in der Regel im Safari-Browser auf, kann aber zeitweise auch in jedem anderen Browser auftreten.
 
 * Überprüfen Sie die Überwachungsprotokolle (error.log) nach Abschluss der Installation auf Aktivitäten. Warten Sie ein paar Minuten, bis keine Aktivität in den Protokollen zu sehen ist. Starten Sie die AEM-Instanz neu.
 

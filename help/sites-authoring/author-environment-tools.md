@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 100%
@@ -302,7 +302,7 @@ Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über d
 
 * [Design](/help/sites-authoring/default-components-designmode.md): Ermöglicht es Ihnen, Komponenten für die Verwendung auf einer Seite zu aktivieren bzw. zu deaktivieren und das Design der Komponente zu konfigurieren (wenn die Seite auf einer [statischen Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates) basiert).
 
-* [Zielsetzung:](/help/sites-authoring/content-targeting-touch.md) Steigerung der Inhaltsrelevanz durch Zielsetzung und Messung über alle Kanäle hinweg.
+* [Zielsetzung](/help/sites-authoring/content-targeting-touch.md): Steigerung der Inhaltsrelevanz durch Targeting und Messung über alle Kanäle hinweg.
 * [Activity Map:](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) Zeigt Analytics-Daten für die Seite an.
 
 * [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp): Ermöglicht es, eine Seite in dem Zustand anzuzeigen, den sie zu einem bestimmten früheren Zeitpunkt aufgewiesen hat.

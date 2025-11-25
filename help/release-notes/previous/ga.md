@@ -4,9 +4,9 @@ description: Informationen zu[!DNL Adobe Experience Manager] 6.5 mit Versionshi
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: ht
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+workflow-type: tm+mt
 source-wordcount: '4477'
 ht-degree: 100%
 
@@ -434,7 +434,7 @@ Weitere Informationen zu neuen und verbesserten Funktionen sowie Dokumentationsr
 
 Adobe verwendet ein kundenorientiertes Entwicklungsmodell, das es den Kunden ermöglicht, zu allen Phasen des Entwicklungsprozesses von der Spezifikation über die Entwicklung bis hin zum Test beizutragen. Unser Dank geht an alle beteiligten Kunden und Partner in diesem Prozess.
 
-Adobe hält die erforderlichen Vorgehensweisen und Prozesse bereit, um die Erfassung, Priorisierung und Verfolgung kundenorientierter Fehlerbehebungen und eine auf Verbesserungswünsche bezogene Entwicklung zu ermöglichen. Das [Experience Manager-Supportportal](https://experienceleague.adobe.com/de?support-solution=Experience+Manager&support-tab=home&lang=de#support) ist mit dem Adobe Enhancement and Defect Tracking System integriert. Kundenprobleme werden, wenn möglich, gemeinsam mit dem Kunden-Support-Team identifiziert und gelöst. Bei einer Weiterleitung an Forschung und Entwicklung werden alle Kundeninformationen erfasst und zu Priorisierungs- und Reporting-Zwecken verwendet. Bei der Entwicklung haben bezahlter Support, Garantieprobleme sowie bezahlte Kundenerweiterungen Priorität.
+Adobe hält die erforderlichen Vorgehensweisen und Prozesse bereit, um die Erfassung, Priorisierung und Verfolgung kundenorientierter Fehlerbehebungen und eine auf Verbesserungswünsche bezogene Entwicklung zu ermöglichen. Das [Experience Manager-Supportportal](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home&lang=de#support) ist mit dem Adobe Enhancement and Defect Tracking System integriert. Kundenprobleme werden, wenn möglich, gemeinsam mit dem Kunden-Support-Team identifiziert und gelöst. Bei einer Weiterleitung an Forschung und Entwicklung werden alle Kundeninformationen erfasst und zu Priorisierungs- und Reporting-Zwecken verwendet. Bei der Entwicklung haben bezahlter Support, Garantieprobleme sowie bezahlte Kundenerweiterungen Priorität.
 
 Dieser Prozess der Priorisierung hat zu mehr als 750 kundenorientierten Änderungen geführt, die in AEM 6.5 vorgenommen wurden.
 

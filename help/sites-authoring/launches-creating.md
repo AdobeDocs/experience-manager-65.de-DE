@@ -9,11 +9,11 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
-source-git-commit: 82597d52ed774f08ce7136d271148e720b56fcf1
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 100%
+source-wordcount: '1096'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
    >
    >Wenn eine Site Sprachstämme unterhalb der obersten Ebene enthält, müssen sich die Seiten und Verzweigungen für einen Launch unterhalb eines gemeinsamen Sprachstamms befinden.
    >
-   >Wenn Sie versuchen, einen Launch mit einer übergeordneten oder untergeordneten Seite im Quellpfad zu erstellen, schlägt er fehl und gibt den Fehler „Ziel existiert bereits unter :Pfad der Seite“ zurück.
+   >Wenn Sie versuchen, einen Launch mit einer übergeordneten oder untergeordneten Seite im Quellpfad zu erstellen, schlägt dies fehl und gibt den Fehler „Das Ziel existiert bereits :path auf der Seite“ zurück.
 
 1. Für jeden Eintrag können Sie angeben, ob Sie Folgendes möchten:
 

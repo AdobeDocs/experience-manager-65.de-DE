@@ -4,10 +4,10 @@ description: Definieren Sie die erforderlichen Eigenschaften für eine Seite in 
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 mini-toc-levels: 2
-source-git-commit: d0515a6a3d08e181eada4a22e0d128305148e6ea
-workflow-type: ht
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 100%
 
@@ -251,7 +251,7 @@ Sie können Seiteneigenschaften definieren:
 
 * In der **Sites**-Konsole:
 
-   * [Erstellen einer neuen Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) (eine Untergruppe der Eigenschaften)
+   * [Erstellen einer neuen Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) (eine Teilmenge der Eigenschaften)
 
    * durch Klicken oder Tippen auf **Eigenschaften**
 
@@ -338,7 +338,7 @@ Nach dem Start der Massenbearbeitung können Sie Folgendes tun:
 
       * Wie beim Anzeigen von Eigenschaften für eine einzelne Seite werden die Eigenschaften unter Registerkarten angeordnet.
 
-   * Eine Untergruppe von Eigenschaften
+   * Eine Teilmenge von Eigenschaften
 
       * Eigenschaften, die auf allen ausgewählten Seiten verfügbar sind und explizit als für die Massenbearbeitung verfügbar definiert wurden, sind sichtbar.
       * Wenn Sie die Seitenauswahl auf eine Seite reduzieren, sind alle Eigenschaften sichtbar.

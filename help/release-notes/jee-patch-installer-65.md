@@ -7,8 +7,8 @@ hide: true
 hidefromtoc: true
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 100%
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->[Kontaktieren Sie den Support](https://experienceleague.adobe.com/de?support-solution=General&amp;support-tab=home?lang=de#support), um weitere Informationen oder den Patch zu erhalten.
+>[Kontaktieren Sie den Support](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=de#support), um weitere Informationen oder den Patch zu erhalten.
 
 ## Über das Patch-Installationsprogramm {#about-the-patch-installer}
 
@@ -58,7 +58,7 @@ Wechseln Sie in den entsprechenden Ordner und geben Sie an einer Eingabeaufforde
 1. **[Nur für Windows]:** Gehen Sie wie folgt vor:
    * Sie können entweder die Option **Configuration Manager starten** deaktivieren, bevor Sie auf **[!UICONTROL Fertig]** klicken. Führen Sie **Configuration Manager** durch Verwendung der Datei **ConfigurationManager.bat** in `[aem-forms root]\configurationManager\bin` aus.
 
-   * Oder deaktivieren Sie die Option **Configuration Manager starten**, bevor Sie auf **[!UICONTROL Fertig]** klicken. Navigieren Sie vor der Ausführung von **Configuration Manager** mit **ConfigurationManager.exe** oder **ConfigurationManager_IPv6.exe** zu *`<AEMForms_Install_Dir>\configurationManager\bin`* und ersetzen Sie **ConfigurationManager.lax** und **ConfigurationManager_IPV6.lax** durch die neuesten Dateien [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) und [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) und ersetzen Sie in diesen beiden Dateien **axis-1.4.1.1.jar** überall durch **axis-1.4.1.2.jar**.
+   * Oder deaktivieren Sie die Option **Configuration Manager starten**, bevor Sie auf **[!UICONTROL Fertig]** klicken. Navigieren Sie vor der Ausführung von **Configuration Manager** mit **ConfigurationManager.exe** oder **ConfigurationManager_IPv6.exe** zum Verzeichnis *`<AEMForms_Install_Dir>\configurationManager\bin`*, ersetzen Sie **ConfigurationManager.lax** und **ConfigurationManager_IPV6.lax** durch die neuesten Versionen der Dateien [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) und [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) und ersetzen Sie in diesen beiden Dateien **axis-1.4.1.1.jar** überall durch **axis-1.4.1.2.jar**.
 
    >[!NOTE]
    >
@@ -97,4 +97,4 @@ Wenn Sie die SAML-Authentifizierung konfiguriert haben und Probleme mit großen 
 * Document Security
 * Foundation JEE
 
-[Support kontaktieren](https://experienceleague.adobe.com/de?support-solution=General&amp;support-tab=home?lang=de#support)
+[Support kontaktieren](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=de#support)

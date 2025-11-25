@@ -4,8 +4,8 @@ description: Konfigurieren von Adobe Experience Manager-Komponenten im Design-Mo
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 100%
@@ -112,7 +112,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![screen_shot_2018-03-22at103113-1](assets/screen_shot_2018-03-22at103113-1.png)
 
-1. Klicken Sie auf eine Komponente mit einem blauen Rahmen. In diesem Beispiel ist eine Hero-Bildkomponente ausgewählt.
+1. Klicken Sie auf eine Komponente mit einem blauen Rahmen. In diesem Beispiel ist eine Hero-Image-Komponente ausgewählt.
 
    ![screen_shot_2018-03-22at103434](assets/screen_shot_2018-03-22at103434.png)
 

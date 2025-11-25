@@ -9,8 +9,8 @@ docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 100%

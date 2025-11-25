@@ -4,8 +4,8 @@ description: Projekte ermöglichen es Ihnen, Ressourcen innerhalb einer Entität
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 100%
@@ -214,7 +214,7 @@ Die verschiedenen Benutzerrollen werden in einer Projektvorlage festgelegt und w
 
 Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherheits- und Kontrollberechtigungen verwalten können.
 
-| Rolle | Beschreibung | Berechtigungen | Gruppenmitgliedschaft |
+| Rolle | Beschreibung | Berechtigungen | Gruppenzugehörigkeit |
 |---|---|---|---|
 | Beobachter | Ein Benutzer mit dieser Rolle kann Projektdetails, einschließlich des Projektstatus, anzeigen. | Nur-Lese-Zugriff auf ein Projekt | `workflow-users`-Gruppe |
 | Bearbeiter | Ein Benutzer mit dieser Rolle kann Inhalt in ein Projekt hochladen und Projektinhalte bearbeiten. | Lese- und Schreibzugriff auf ein Projekt, zugehörige Metadaten und zugehörige Assets<br>Berechtigungen zum Hochladen einer Einstellungsliste, zum Fotografieren sowie zum Überprüfen und Genehmigen von Assets<br>Schreibberechtigung für `/etc/commerce`<br>Ändern der Berechtigung für ein bestimmtes Projekt | `workflow-users`-Gruppe |

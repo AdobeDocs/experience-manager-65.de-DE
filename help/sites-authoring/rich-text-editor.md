@@ -4,8 +4,8 @@ description: Verwenden Sie den Rich-Text-Editor, um Inhalte in Adobe Experience 
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 44903bc3e68f46f9880d31c33b7dc9e7598ddc38
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 100%

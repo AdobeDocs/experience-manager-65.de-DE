@@ -4,9 +4,9 @@ description: Sie können in Adobe Experience Manager verschiedene Versionen eine
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: d2e2f330dadb7c327324e53a17e8398ef3a473a9
-workflow-type: ht
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+workflow-type: tm+mt
 source-wordcount: '1567'
 ht-degree: 100%
 
@@ -161,7 +161,7 @@ Diese Methode kann verwendet werden, um eine Version eines Baums, wie er zu eine
 
    * Wenn diese Option aktiviert (ausgewählt) ist, werden alle Seiten ohne Versionierung beibehalten und von der Wiederherstellung nicht beeinflusst.
 
-   * Wenn diese Option deaktiviert (nicht ausgewählt) ist, werden alle Seiten ohne Versionierung entfernt, da sie nicht im versionierten Baum vorhanden waren.
+   * Wenn diese Option inaktiv (nicht ausgewählt) ist, werden alle Seiten ohne Versionierung entfernt, da sie nicht im versionierten Baum vorhanden waren.
 
 1. Wählen Sie **Wiederherstellen** für die ausgewählte Version des Baums, die als *aktuelle* Version wiederhergestellt werden soll.
 
@@ -242,4 +242,4 @@ Timewarp bemüht sich nach Kräften, eine Seite zu einem bestimmten Zeitpunkt zu
 
 >[!CAUTION]
 >
->Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihres Inhalts zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
+>Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihres Inhalts zu unterstützen. Es ist nicht als Auditprotokoll oder zu rechtlichen Zwecken gedacht.

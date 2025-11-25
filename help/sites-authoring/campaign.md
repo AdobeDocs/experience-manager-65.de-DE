@@ -8,11 +8,11 @@ topic-tags: personalization
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '2770'
-ht-degree: 100%
+source-wordcount: '2769'
+ht-degree: 99%
 
 ---
 
@@ -177,7 +177,7 @@ So fügen Sie Personalisierung ein:
    >
    >**Adobe Campaign Classic:**
    >
-   >* Verfügbare Kontextfelder werden dynamisch aus dem Adobe Campaign-Schema **nms:seedMember** abgerufen. Erweiterungsdaten des Zieldatensatzes werden dynamisch aus dem Workflow abgerufen, der die mit dem Inhalt synchronisierte Bereitstellung enthält. (Siehe den Abschnitt [Synchronisieren von in AEM erstelltem Inhalt mit einer Bereitstellung von Adobe Campaign](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic).)
+   >* Verfügbare Kontextfelder werden dynamisch aus dem Adobe Campaign-Schema **nms:seedMember** abgerufen. Erweiterungsdaten des Zieldatensatzes werden dynamisch aus dem Workflow abgerufen, der die mit dem Inhalt synchronisierte Bereitstellung enthält. (Siehe den Abschnitt [Synchronisieren von in AEM erstelltem Inhalt mit einer Bereitstellung von Adobe Campaign](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic).)
    >
    >* Informationen zum Hinzufügen oder Ausblenden von Personalisierungselementen finden Sie unter [Verwalten von Personalisierungsfeldern und -blöcken](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
    >* **Wichtig**: Alle Seed-Tabellenfelder müssen sich ebenfalls in der Empfängertabelle (oder der entsprechenden Kontakttabelle) befinden.
@@ -307,7 +307,7 @@ So verknüpfen Sie in AEM erstellte Seiten mit Adobe Campaign-E-Mails:
 In Adobe Campaign können Sie in AEM erstellte Inhalte mithilfe der folgenden Optionen synchronisieren und wiederherstellen:
 
 * Eine Kampagnenversand
-* Eine Versandsaktivität in einem Kampagnenarbeitsablauf
+* Eine Versandsaktivität in einem Kampagnen-Workflow
 * Ein wiederkehrender Versand
 * Ein fortlaufender Versand
 * Ein Message Center-Versand

@@ -9,11 +9,11 @@ docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
-source-git-commit: 7c4be888c392520c82ef7b2172d0eee61fc3ee44
-workflow-type: ht
-source-wordcount: '892'
-ht-degree: 100%
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+workflow-type: tm+mt
+source-wordcount: '896'
+ht-degree: 99%
 
 ---
 
@@ -115,7 +115,7 @@ Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermög
 
 * über die Konsole **Tools**: **Tools** > **Sites** > **Launches**.
 
-* oder direkt über [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
+* Oder direkt mit [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
 
 ## Launches in „Verweise“ (Sites-Konsole) {#launches-in-references-sites-console}
 

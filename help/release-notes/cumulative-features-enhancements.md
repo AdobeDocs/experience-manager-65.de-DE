@@ -4,11 +4,11 @@ description: Eine kumulative Liste der wichtigsten Funktionen und Verbesserungen
 content-type: reference
 docset: aem65
 feature: Release Information
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
-source-git-commit: eef3ad559612c338de0c4232aadc4133c910aaf8
-workflow-type: ht
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+workflow-type: tm+mt
 source-wordcount: '3109'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Siehe auch die [Versionshinweise zum neuesten Service Pack von Adobe Experience 
 
 ### Forms {#forms-sp23}
 
-* [Barrierefreie Hyperlinks mit verschiedenen Textstilen in statischen PDFs](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/using-designer.pdf): Hyperlinks, die verschiedene Textstile in statischen PDFs enthalten, werden jetzt als einzelnes, barrierefreies Element getaggt. Diese Verbesserung vereinfacht die Tag-Baumstruktur sowie die Navigation der Bildschirmlesehilfe und unterstützt eine bessere Einhaltung von Vorgaben zur Barrierefreiheit.
+* [Barrierefreie Hyperlinks mit verschiedenen Textstilen in statischen PDFs](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): Hyperlinks, die verschiedene Textstile in statischen PDFs enthalten, werden jetzt als einzelnes, barrierefreies Element getaggt. Diese Verbesserung vereinfacht die Tag-Baumstruktur sowie die Navigation der Bildschirmlesehilfe und unterstützt eine bessere Einhaltung von Vorgaben zur Barrierefreiheit.
 
 * [Aktualisierte unterstützte Plattform-Matrix](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
@@ -124,7 +124,7 @@ Die Registerkarte „IPTC“ bietet nun Unterstützung für die Textfelder [!UIC
    * ECDSA – Elliptische Kurve P256 mit SHA256-Digest-Algorithmus
    * ECDSA – Elliptische Kurve P384 mit SHA384-Digest-Algorithmus
    * ECDSA – Elliptische Kurve P512 mit SHA512-Digest-Algorithmus
-* **Nahtlose Kompatibilität von Forms Designer mit Windows 11**: AEM Forms Designer unterstützt nun Windows 11. Dadurch werden eine reibungslose Installation und ein reibungsloser Betrieb sichergestellt. Benutzende können problemlos auf Windows 11 aktualisieren, ohne Forms Designer neu installieren zu müssen oder sich um Kompatibilitätsprobleme zu sorgen. Dies ermöglicht unterbrechungsfreie Arbeitsabläufe.
+* **Nahtlose Kompatibilität von Forms Designer mit Windows 11**: AEM Forms Designer unterstützt nun Windows 11. Dadurch werden eine reibungslose Installation und ein reibungsloser Betrieb sichergestellt. Benutzende können problemlos auf Windows 11 aktualisieren, ohne Forms Designer neu installieren zu müssen oder sich um Kompatibilitätsprobleme zu sorgen. Dies ermöglicht unterbrechungsfreie Workflows.
 * **Verbesserte Barrierefreiheit mit der benutzerdefinierten Rolle „Beschriftung“ in AEM Forms Designer**: AEM Forms Designer umfasst nun eine benutzerdefinierte Rolle für Barrierefreiheit. Sie heißt „Beschriftung“ und ermöglicht es Benutzenden, XDPs mit personalisierten Beschriftungselementen zu erstellen. Diese Funktion verbessert die Barrierefreiheit, da Benutzende damit benutzerdefinierte Beschriftungen in ihre Dokumententwürfe integrieren können, wodurch sie die Inklusion und das Anwendererlebnis verbessern können.
 
 ## AEM 6.5, Service Pack 19 – 7. Dezember 2023

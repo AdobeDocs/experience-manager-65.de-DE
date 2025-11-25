@@ -8,9 +8,9 @@ topic-tags: personalization
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
-workflow-type: ht
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 100%
 
@@ -48,7 +48,7 @@ Weitere Informationen hierzu finden Sie in der [Vorlagendokumentation](/help/sit
 
 ## Erstellen von Formularen {#creating-a-form}
 
-Überprüfen Sie zunächst, ob die Verbindung zwischen der Authoring- und der Publishing-Instanz und Adobe Campaign funktioniert. Siehe [Integration mit Adobe Campaign Standard](/help/sites-administering/campaignstandard.md) bzw. [Integration mit Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md).
+Überprüfen Sie zunächst, ob die Verbindung zwischen der Authoring- und der Veröffentlichungsinstanz und Adobe Campaign funktioniert. Siehe [Integration mit Adobe Campaign Standard](/help/sites-administering/campaignstandard.md) bzw. [Integration mit Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md).
 
 >[!NOTE]
 >

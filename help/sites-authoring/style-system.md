@@ -7,11 +7,11 @@ topic-tags: site-features
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 100%
+source-wordcount: '1296'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ Das Stilsystem ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für
 
 Dadurch entfällt die Notwendigkeit, eine benutzerdefinierte Komponente für jeden Stil zu entwickeln oder das Komponentendialogfeld anzupassen, um eine solche Stilfunktion zu aktivieren. Das Resultat sind mehr wiederverwendbare Komponenten, die schnell und einfach an die Bedürfnisse von Inhaltsautoren angepasst werden können, ohne dass eine AEM-Backend-Entwicklung erforderlich ist.
 
-## Nutzungsszenario {#use-case}
+## Anwendungsfall {#use-case}
 
 Vorlagenautorinnen und -autoren benötigen nicht nur die Möglichkeit, die Funktionsweise von Komponenten für Inhaltsautorinnen und -autoren zu konfigurieren, sondern müssen auch in der Lage sein, eine Reihe alternativer visueller Varianten einer Komponente zu konfigurieren.
 
@@ -129,7 +129,7 @@ Ist die Komponente entsprechend konfiguriert, fügt AEM die von den Seitenautori
 
 ### Aktivieren der Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ {#enable-styles-tab-edit}
 
-Ab AEM-Version 6.5.3.0 ist jetzt eine optionale Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ verfügbar. Im Gegensatz zur Registerkarte im Dialogfeld „Design“ ist die Registerkarte im Dialogfeld „Bearbeiten“ für die Funktion des Stilsystems nicht unbedingt erforderlich. Sie stellt jedoch eine optionale alternative Oberfläche dar, über die ein Inhaltsautor Stile festlegen kann.
+Ab der AEM-Version 6.5.3.0 ist jetzt eine optionale Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ verfügbar. Im Gegensatz zur Registerkarte im Dialogfeld „Design“ ist die Registerkarte im Dialogfeld „Bearbeiten“ für die Funktion des Stilsystems nicht unbedingt erforderlich. Sie stellt jedoch eine optionale alternative Oberfläche dar, über die ein Inhaltsautor Stile festlegen kann.
 
 Die Registerkarte für das Dialogfeld „Bearbeiten“ kann auf ähnliche Weise wie die Registerkarte für das Dialogfeld „Design“ eingebunden werden:
 

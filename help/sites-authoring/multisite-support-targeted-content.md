@@ -8,8 +8,8 @@ topic-tags: personalization
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
-role: User,Admin,Architect,Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2838'
 ht-degree: 100%
@@ -94,7 +94,7 @@ Durch die Verwendung von Multisite für zielgerichtete Inhalte können Sie Perso
 
 Es gibt vier Geografie-basierte Versionen derselben Site:
 
-* Die Site für die **Vereinigten Staaten** befindet sich oben links und dient als primäre Site. In diesem Beispiel ist sie im Zielgruppen-Modus geöffnet.
+* Die Site für die **Vereinigten Staaten** befindet sich oben links und dient als primäre Site. In diesem Beispiel ist sie im Targeting-Modus geöffnet.
 * Die drei übrigen Versionen sind diejenigen für **Kanada**, **Großbritannien** und **Australien**, wobei es sich bei diesen um Live Copies handelt. Diese Sites sind im Vorschaumodus geöffnet.
 
 ![chlimage_1-271](assets/chlimage_1-271.png)

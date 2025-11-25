@@ -4,8 +4,8 @@ description: Erfahren Sie mehr über die Foundation-Komponenten in Adobe Experie
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '6873'
 ht-degree: 100%
@@ -1414,7 +1414,7 @@ Die Komponente „Datei-Upload“ bietet Benutzern die Möglichkeit, eine Datei 
 
 >[!NOTE]
 >
->Sie können eine individuelle Upload-Komponente erstellen, um Dateien in ein Sling Servlet hochzuladen. Weitere Informationen finden Sie unter [Hochladen von Dateien in Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276?profile.language=de).
+>Sie können eine individuelle Upload-Komponente erstellen, um Dateien in ein Sling Servlet hochzuladen. Weitere Informationen finden Sie unter [Hochladen von Dateien in Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276).
 
 ### Ausgeblendetes Feld {#hidden-field}
 
@@ -1538,7 +1538,7 @@ Sie können auf der spezialisierten Registerkarte verschiedene Parameter festleg
    * **Zugelassene Namespaces**
 
       * **Geometrixx Outdoors**
-      * **Arbeitsablauf**
+      * **Workflow**
       * **Forum**
       * **Bildarchiv**
       * **Geometrixx Media**

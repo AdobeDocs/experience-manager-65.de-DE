@@ -4,8 +4,8 @@ description: Verwalten Ihrer Aufgaben mit dem Posteingang in Adobe Experience Ma
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 100%
