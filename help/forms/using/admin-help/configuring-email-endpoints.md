@@ -89,7 +89,7 @@ Damit der Forms-Workflow eingehende E-Mail-Nachrichten von Benutzenden empfängt
 
 **Domain-Muster:** Das Domain-Namensmuster, das zum Filtern eingehender E-Mails verwendet wird. Wenn beispielsweise adobe.com verwendet wird, werden nur E-Mails aus der Domain „adobe.com“ verarbeitet, während E-Mails aus anderen Domains ignoriert werden.
 
-**Dateimuster:** Gibt die Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Hierzu gehören Dateien mit bestimmten Erweiterungen (&amp;ast;.dat, &amp;ast;.xml), Dateien mit bestimmten Namen (data) sowie Dateien mit zusammengesetzten Ausdrücken im Namen und in der Erweiterung (.``[dD][aA]``&#39;port&#39;). Der Standardwert lautet &amp;ast;.&amp;ast;.
+**Dateimuster:** Gibt die Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Hierzu gehören Dateien mit bestimmten Erweiterungen (&ast;.dat, &ast;.xml), Dateien mit bestimmten Namen (data) sowie Dateien mit zusammengesetzten Ausdrücken im Namen und in der Erweiterung (.``[dD][aA]``&#39;port&#39;). Der Standardwert lautet &ast;.&ast;.
 
 **Empfänger erfolgreicher Aufträge:** Eine oder mehrere E-Mail-Adressen, an die Benachrichtigungen über erfolgreiche Aufträge per E-Mail gesendet werden. Standardmäßig wird immer eine Benachrichtigung über erfolgreiche Aufträge an die Absenderin bzw. den Absender des Ausgangsauftrags gesendet. Es werden bis zu 100 Empfänger unterstützt. Zum Deaktivieren dieser Einstellung lassen Sie das Feld leer.
 
@@ -167,7 +167,7 @@ Mithilfe der folgenden Einstellungen können Sie einen E-Mail-Endpunkt konfiguri
 
 **Domain-Muster:** Gibt die Domain-Muster für eingehende E-Mails an, die vom Anbieter akzeptiert werden. Wenn beispielsweise „adobe.com“ verwendet wird, werden nur E-Mails aus der Domain „adobe.com“ verarbeitet, während E-Mails aus anderen Domains ignoriert werden.
 
-**Dateimuster:** Gibt das Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Erweiterungen (&amp;ast;.dat, &amp;ast;.xml), bestimmte Namen (Daten) oder zusammengesetzte Ausdrücke im Namen und in der Erweiterung (&amp;ast;.`[dD][aA]`&#39;port&#39;).
+**Dateimuster:** Gibt das Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Erweiterungen (&ast;.dat, &ast;.xml), bestimmte Namen (Daten) oder zusammengesetzte Ausdrücke im Namen und in der Erweiterung (&ast;.`[dD][aA]`&#39;port&#39;).
 
 **Empfänger erfolgreicher Aufträge:** Eine E-Mail-Adresse, an die Benachrichtigungen über erfolgreiche Aufträge gesendet werden. Standardmäßig werden Benachrichtigungen über erfolgreiche Aufträge immer an den Absender gesendet. Wenn Sie „sender“ eingeben, werden E-Mail-Ergebnisse an den Absender gesendet. Es werden bis zu 100 Empfänger unterstützt. Geben Sie zusätzliche Empfängerinnen und Empfänger mit durch Kommas (,) getrennte E-Mail-Adressen an.
 
@@ -235,7 +235,7 @@ Der Standardwert ist „asynchron“.
 
 **Wörtlich:** Die E-Mail verwendet den Wert, der in das Feld eingegeben wird, so wie er angezeigt wird.
 
-**Variable:** Sie können eine Zeichenfolge aus dem E-Mail-Betreff, dem Textkörper, der Kopfzeile oder der E-Mail-Adresse des Absenders zuordnen. Verwenden Sie dazu eines der folgenden Schlüsselwörter: %SUBJECT%, %BODY%, %HEADER% oder %SENDER%. Wenn Sie z. B. %SUBJECT%, angeben, wird der Inhalt des E-Mail-Betreffs als Eingabeparameter verwendet. Zum Auswählen von Anhängen geben Sie ein Dateimuster ein, das vom E-Mail-Endpunkt zum Auswählen der angehängten Dokumente verwendet werden kann. Durch die Eingabe von „*.pdf“ werden beispielsweise alle angehängten Dokumente mit einer PDF-Dateinamenerweiterung ausgewählt. Die Eingabe von „&amp;ast;“ wählt ein angehängtes Dokument aus. Durch die Eingabe von „beispiel.pdf“ werden alle angehängten Dokumente namens „beispiel.pdf“ ausgewählt.
+**Variable:** Sie können eine Zeichenfolge aus dem E-Mail-Betreff, dem Textkörper, der Kopfzeile oder der E-Mail-Adresse des Absenders zuordnen. Verwenden Sie dazu eines der folgenden Schlüsselwörter: %SUBJECT%, %BODY%, %HEADER% oder %SENDER%. Wenn Sie z. B. %SUBJECT%, angeben, wird der Inhalt des E-Mail-Betreffs als Eingabeparameter verwendet. Zum Auswählen von Anhängen geben Sie ein Dateimuster ein, das vom E-Mail-Endpunkt zum Auswählen der angehängten Dokumente verwendet werden kann. Durch die Eingabe von „*.pdf“ werden beispielsweise alle angehängten Dokumente mit einer PDF-Dateinamenerweiterung ausgewählt. Die Eingabe von „&ast;“ wählt ein angehängtes Dokument aus. Durch die Eingabe von „beispiel.pdf“ werden alle angehängten Dokumente namens „beispiel.pdf“ ausgewählt.
 
 **Zuordnungen von Ausgabeparametern:** Wird zum Konfigurieren der Ausgabe des Dienstes und Vorgangs verwendet. Die folgenden Zeichen in den Zuordnungswerten von Ausgabeparametern werden im Dateinamen des Anhangs erweitert:
 
@@ -245,7 +245,7 @@ Der Standardwert ist „asynchron“.
 
 Alle Vorkommen von \ (Backslash) werden durch %% ersetzt.
 
-***Hinweis **: Wenn die Service-Anforderungsnachricht mehrere Dateianhänge enthält, können die Parameter „%F“ und „%E“ nicht für die Eigenschaft „Zuordnungen von Ausgabeparametern“ des Endpunkts verwendet werden. Wenn die Dienstantwort mehrere Dateianhänge zurückgibt, können Sie nicht denselben Dateinamen für mehr als einen Anhang angeben. Wenn Sie diese Empfehlungen nicht befolgen, werden die Namen für die zurückgegebenen Dateien vom aufgerufenen Dienst erstellt und sind nicht vorhersehbar.*
+***Hinweis &#x200B;**: Wenn die Service-Anforderungsnachricht mehrere Dateianhänge enthält, können die Parameter „%F“ und „%E“ nicht für die Eigenschaft „Zuordnungen von Ausgabeparametern“ des Endpunkts verwendet werden. Wenn die Dienstantwort mehrere Dateianhänge zurückgibt, können Sie nicht denselben Dateinamen für mehr als einen Anhang angeben. Wenn Sie diese Empfehlungen nicht befolgen, werden die Namen für die zurückgegebenen Dateien vom aufgerufenen Dienst erstellt und sind nicht vorhersehbar.*
 
 Die folgenden Werte sind verfügbar:
 

@@ -340,7 +340,7 @@ Abhängig davon, ob Sie eine standardmäßige oder benutzerdefinierte Vorlage au
 
   Wenn die von Ihnen ausgewählte benutzerdefinierte XDP-Vorlage mehrere Masterseiten enthält, werden die Eigenschaften für diese Seiten im Abschnitt **[!UICONTROL Inhalt]** auf der Registerkarte **[!UICONTROL Datensatzdokument]** angezeigt.
 
-  ![Eigenschaften primäre seite ](assets/master-page-properties.png)
+  ![Eigenschaften primäre seite &#x200B;](assets/master-page-properties.png)
 
   Die Eigenschaften der Masterseiten umfassen Logobild, Kopfzeilentext, Formulartitel, Haftungsausschlussüberschrift und Haftungsausschlusstext. Sie können Eigenschaften für adaptive Formulare oder XDP-Vorlagen auf das Datensatzdokument anwenden. AEM Forms wendet standardmäßig die Vorlageneigenschaften auf das Datensatzdokument an. Sie können auch benutzerdefinierte Werte für die Eigenschaften der Masterseiten definieren. Informationen zum Anwenden mehrerer Masterseiten in einem Datensatzdokument finden Sie unter [Anwenden mehrerer Masterseiten in einem Datensatzdokument](#apply-multiple-master-pages-dor).
 

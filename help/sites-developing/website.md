@@ -1289,7 +1289,7 @@ Wenn Sie fertig sind, sollte Ihr Eingabefeld für die Suche auf der Seite **Eng
 1. Kopieren Sie die folgenden Knoten und fügen Sie sie in den Knoten „apps/mywebsite/components/search“ ein:
 
    * `/libs/foundation/components/search/dialog`
-   * `` `/libs/foundation/components/search/i18n`
+   * &grave;&grave; `/libs/foundation/components/search/i18n`
 
    * `/libs/foundation/components/search/icon.png`
 

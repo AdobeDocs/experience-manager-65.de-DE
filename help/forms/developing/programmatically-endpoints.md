@@ -429,7 +429,7 @@ So fügen Sie mithilfe der AEM Forms-Java-API einen Endpunkt des Typs „Überwa
    * Ein Zeichenfolgenwert, der den Namen des Eingabeparameters angibt. Beispielsweise lautet der Name des Eingabeparameters für den EncryptDocument-Service `InDoc`.
    * Ein Zeichenfolgenwert, der den Datentyp des Eingabeparameters angibt. Der Datentyp des Eingabeparameters `InDoc` ist beispielsweise `com.adobe.idp.Document`.
    * Ein Zeichenfolgenwert, der den Zuordnungstyp angibt. Sie können beispielsweise `variable` angeben.
-   * Ein Zeichenfolgenwert, der den Wert des Zuordnungstyps angibt. Beispielsweise können Sie &amp;ast;.pdf als Dateimuster angeben.
+   * Ein Zeichenfolgenwert, der den Wert des Zuordnungstyps angibt. Beispielsweise können Sie &ast;.pdf als Dateimuster angeben.
 
    >[!NOTE]
    >
@@ -566,7 +566,7 @@ Beim programmgesteuerten Hinzufügen eines E-Mail-Endpunkts zu einem Service wer
 * **userName**: Der Benutzername, der beim Aufrufen eines Ziel-Service aus einer E-Mail verwendet wird. Der Standardwert ist `SuperAdmin`.
 * **domainName**: Ein obligatorischer Konfigurationswert. Der Standardwert ist `DefaultDom`.
 * **domainPattern**: Gibt die Domain-Muster für eingehende E-Mails an, die vom Anbieter akzeptiert werden. Wenn beispielsweise „`adobe.com`“ verwendet wird, werden nur E-Mails aus der Domain „adobe.com“ verarbeitet, während E-Mails aus anderen Domains ignoriert werden.
-* **filePattern**: Gibt die Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Dateinamenerweiterungen (&amp;ast;.dat, &amp;ast;.xml), Dateien mit bestimmten Namen („data“) und Dateien mit zusammengesetzten Ausdrücken im Namen und in der Erweiterung (&amp;ast;.``[dD][aA]``&#39;port&#39;). Der Standardwert ist `*`.
+* **filePattern**: Gibt die Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Dateinamenerweiterungen (&ast;.dat, &ast;.xml), Dateien mit bestimmten Namen („data“) und Dateien mit zusammengesetzten Ausdrücken im Namen und in der Erweiterung (&ast;.``[dD][aA]``&#39;port&#39;). Der Standardwert ist `*`.
 * **recipientSuccessfulJob**: Eine E-Mail-Adresse, an die Benachrichtigungen über erfolgreiche Aufträge gesendet werden. Standardmäßig wird eine Benachrichtigung über erfolgreiche Aufträge immer an den Absender gesendet. Wenn Sie `sender` eingeben, werden E-Mail-Ergebnisse an den Absender gesendet. Es werden bis zu 100 Empfänger unterstützt. Geben Sie zusätzliche Empfänger mit E-Mail-Adressen an, von denen jeder durch ein Komma getrennt ist. Zum Deaktivieren dieser Option lassen Sie das Feld unausgefüllt. Es kann Fälle geben, in denen Sie einen Prozess auslösen möchten, ohne ein Benachrichtigung per E-Mail zum Ergebnis erhalten zu wollen. Der Standardwert ist `sender`.
 * **recipientFailedJob**: Eine E-Mail-Adresse, an die Benachrichtigungen über fehlgeschlagene Aufträge gesendet werden. Standardmäßig wird eine Benachrichtigung über einen fehlgeschlagenen Auftrag immer an den Absender gesendet. Wenn Sie `sender` eingeben, werden E-Mail-Ergebnisse an den Absender gesendet. Es werden bis zu 100 Empfänger unterstützt. Geben Sie zusätzliche Empfänger mit E-Mail-Adressen an, von denen jeder durch ein Komma getrennt ist. Zum Deaktivieren dieser Option lassen Sie das Feld unausgefüllt. Der Standardwert ist `sender`.
 * **inboxHost**: Der Hostname oder die IP-Adresse für den Posteingang, der/die vom E-Mail-Anbieter überprüft werden soll.
@@ -674,7 +674,7 @@ Fügen Sie mithilfe der Java-API einen E-Mail-Endpunkt hinzu:
    * Ein Zeichenfolgenwert, der den Namen des Eingabeparameters angibt. Beispielsweise lautet der Name des Eingabeparameters für den EncryptDocument-Service `InDoc`.
    * Ein Zeichenfolgenwert, der den Datentyp des Eingabeparameters angibt. Der Datentyp des Eingabeparameters `InDoc` ist beispielsweise `com.adobe.idp.Document`.
    * Ein Zeichenfolgenwert, der den Zuordnungstyp angibt. Sie können beispielsweise `variable` angeben.
-   * Ein Zeichenfolgenwert, der den Wert des Zuordnungstyps angibt. Beispielsweise können Sie &amp;ast;.pdf als Dateimuster angeben.
+   * Ein Zeichenfolgenwert, der den Wert des Zuordnungstyps angibt. Beispielsweise können Sie &ast;.pdf als Dateimuster angeben.
 
    >[!NOTE]
    >
@@ -801,7 +801,7 @@ Geben Sie die folgenden Werte an, um einen Remoting-Endpunkt für einen Service 
 * **Beschreibung**: Gibt die Beschreibung des Endpunkts an.
 * **Name**: Gibt den Namen des Endpunkts an.
 * **Service-Kennungswert**: Gibt den Service an, zu dem der Endpunkt gehört. Um beispielsweise einen Remoting-Endpunkt zu dem Prozess hinzuzufügen, der in diesem Abschnitt vorgestellt wird (ein Prozess wird zu einem Service, wenn er in Workbench aktiviert wird), geben Sie `EncryptDocument` an.
-* **Vorgangsname**: Gibt den Namen des Vorgangs an, der mithilfe des Endpunkts aufgerufen wird. Geben Sie beim Erstellen eines Remoting-Endpunkts ein Platzhalterzeichen (&amp;ast;) an.
+* **Vorgangsname**: Gibt den Namen des Vorgangs an, der mithilfe des Endpunkts aufgerufen wird. Geben Sie beim Erstellen eines Remoting-Endpunkts ein Platzhalterzeichen (&ast;) an.
 
 **Erstellen eines Remoting-Endpunkts**
 

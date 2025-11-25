@@ -36,7 +36,7 @@ Die Tabelle bietet folgende Arbeitsblätter:
    * Enthält Anweisungen zur Verwendung der Tabelle sowie Erläuterungen zu den verwendeten Mechanismen.
 * **[Projekt-Heartbeat](/help/managing/best-practices.md#project-heartbeat-dashboard)**
 * **[Status nach Rolle](/help/managing/best-practices.md#status-by-role)**
-* Eine Reihe von Checklisten gemäß [Persona](/help/managing/best-practices.md#persona), [ Phase und Meilenstein](/help/managing/best-practices.md#phases-and-milestones)
+* Eine Reihe von Checklisten gemäß [Persona](/help/managing/best-practices.md#persona), [&#x200B; Phase und Meilenstein](/help/managing/best-practices.md#phases-and-milestones)
 * **Glossar**
    * Das Glossar listet Details aller lieferbaren Dokumente aus der Projektcheckliste auf.
    * Das [Glossar](/help/managing/best-practices-glossary.md) ist auch als Teil der Dokumentation verfügbar.

@@ -159,8 +159,8 @@ Sie können Dateimuster verwenden, um Folgendes auszuschließen:
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
    * `[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[Xx][Mm][Ll]`
+   * &ast;.`[dD][aA]`&#39;port&#39;
+   * &ast;.`[Xx][Mm][Ll]`
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -175,8 +175,8 @@ Sie können Dateimuster verwenden, um Folgendes einzuschließen:
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
    * `[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[Xx][Mm][Ll]`
+   * &ast;.`[dD][aA]`&#39;port&#39;
+   * &ast;.`[Xx][Mm][Ll]`
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -242,13 +242,13 @@ Die Ausgabe des überwachten Ordners kann ein einzelnes Dokument, eine Liste von
 
 Admins können den Dateityp angeben, von dem ein Dienst aufgerufen werden kann. Für jeden überwachten Ordner können mehrere Dateimuster angegeben werden. Ein Dateimuster kann eine der folgenden Dateieigenschaften sein:
 
-* Dateien mit bestimmten Dateinamenerweiterungen, z. B. &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
+* Dateien mit bestimmten Dateinamenerweiterungen, z. B. &ast;.dat, &ast;.xml, &ast;.pdf
 * Dateien mit bestimmten Namen, z. B. data.*
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
    * `[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[Xx][Mm][Ll]`
+   * &ast;.`[dD][aA]`&#39;port&#39;
+   * &ast;.`[Xx][Mm][Ll]`
 
 Admins können das Dateimuster des Ausgabeordners definieren, in dem die Ergebnisse gespeichert werden sollen. Für die Ausgabeordner (Ergebnis, Beibehaltung und Fehler) können Admins eines der folgenden Dateimuster angeben:
 

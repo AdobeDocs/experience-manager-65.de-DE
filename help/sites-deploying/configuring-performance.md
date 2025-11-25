@@ -299,9 +299,9 @@ In diesem Abschnitt erhalten Sie einen Überblick über Probleme bei der Definit
 Im Folgenden wird die übliche Vorgehensweise bei der Durchführung von Leistungstests bei einer AEM-Anwendung in der *Veröffentlichungsumgebung* beschrieben. Dieser Leistungstest umfasst die folgenden fünf Phasen:
 
 * [Überprüfung des Wissens](#verification-of-knowledge)
-* [Definition des Umfangs ](#scope-definition)
+* [Definition des Umfangs &#x200B;](#scope-definition)
 * [Testmethoden](#test-methodologies)
-* [Definition von Leistungszielen ](#defining-the-performance-goals)
+* [Definition von Leistungszielen &#x200B;](#defining-the-performance-goals)
 * [Optimierung](#optimization)
 
 Die Steuerung ist ein zusätzlicher, allumfassender Prozess – notwendig, aber nicht auf Tests beschränkt.
@@ -430,7 +430,7 @@ Bei der Konzeption dieser Tests sollte beachtet werden, dass nicht alle Szenarie
 
 | Fehlerszenario | Fehlertyp | Anzahl der Benutzer | Tx/Sek (erwartet) | Tx/Sek (getestet) | Beschreibung |
 |---|---|---|---|---|---|
-| Überlastung der Suchkomponente | Suche mit einem globalen Platzhalter (Sternchen) | 10 | 1 |  | Es wird nur nach &amp;ast;&amp;ast;&amp;ast; gesucht. |
+| Überlastung der Suchkomponente | Suche mit einem globalen Platzhalter (Sternchen) | 10 | 1 |  | Es wird nur nach &ast;&ast;&ast; gesucht. |
 |   | Stoppwort | 20 | 2 |  | Suchen nach einem Stoppwort. |
 |   | Leere Zeichenfolge | 10 | 1 |  | Suchen nach einer leeren Zeichenfolge. |
 |   | Sonderzeichen | 10 | 1 |  | Suchen nach Sonderzeichen. |
@@ -722,4 +722,4 @@ Die tatsächlichen Auswirkungen des Durchsatzes einer laufenden Sicherung hänge
 ### Verweise {#references}
 
 * [Verwaltung – Sichern und Wiederherstellen](/help/sites-administering/backup-and-restore.md)
-* [Verwaltung – Kapazität und Volumen ](/help/managing/best-practices-further-reference.md#capacity-and-volume)
+* [Verwaltung – Kapazität und Volumen &#x200B;](/help/managing/best-practices-further-reference.md#capacity-and-volume)
