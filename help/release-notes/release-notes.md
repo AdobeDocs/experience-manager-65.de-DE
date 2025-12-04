@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 6eccdab5cd492686dda2aca3fee4df171a2d9011
+source-git-commit: 2580bb494bb81da0a923a34c88d37933d7575bec
 workflow-type: tm+mt
-source-wordcount: '8932'
+source-wordcount: '8905'
 ht-degree: 26%
 
 ---
@@ -393,11 +393,9 @@ Die Veröffentlichung von AEM Target-Aktivitäten schlägt nicht mehr fehl, wenn
 #### Security{#foundation-security-6524}
 -->
 
-
 #### Sling{#foundation-sling-6524}
 
-* Das Caching-Verhalten auf SAML-geschützten Seiten wurde korrigiert. AEM fügt die richtige Cache-Steuerung hinzu und variiert die Metadaten für authentifizierte Sitzungen, sodass Proxys und Dispatcher das Caching personalisierter Antworten überspringen. Anonymer Inhalt wird weiterhin normal zwischengespeichert, während angemeldete Ansichten benutzerspezifisch bleiben. (NPR-42640)
-
+* Fehlerkorrektur - Im Bundle `org.apache.sling.scripting.jsp:2.6.0` tritt jetzt kein unerwarteter JSP-Kompilierungsfehler mehr auf. (SLING-12442)
 * Die Plattform aktualisiert die Kern-Sling-Engine von 2.16.2 auf 2.16.6. Die neuere Engine härtet die Eingabevalidierung ab und stabilisiert die Anforderungsverarbeitung unter Last. (NPR-43105)
 
 #### SPA-Editor {#foundation-spa-editor-6524}
