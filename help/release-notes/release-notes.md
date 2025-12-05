@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 2580bb494bb81da0a923a34c88d37933d7575bec
+source-git-commit: f852fa8d682241ffdddc60148fcd9dce7b89fed4
 workflow-type: tm+mt
-source-wordcount: '8905'
+source-wordcount: '8809'
 ht-degree: 26%
 
 ---
@@ -541,20 +541,6 @@ Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind n
 ## Bekannte Probleme{#known-issues}
 
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
-
-* **Problem mit dem JSP-Skriptpaket in AEM 6.5.21-6.5.24 und AEM 6.5 LTS GA**
-AEM 6.5.21 bis 6.5.24 und AEM 6.5 LTS GA werden mit dem `org.apache.sling.scripting.jsp:2.6.0`-Bundle ausgeliefert, das ein bekanntes Problem enthält. Das Problem tritt in der Regel bei hoher Auslastung auf, wenn die AEM-Instanz viele Anfragen gleichzeitig verarbeitet.
-
-  Wenn dieses Problem auftritt, kann eine der folgenden Ausnahmen in den Fehlerprotokollen neben Verweisen auf `org.apache.sling.scripting.jsp:2.6.0` angezeigt werden:
-
-   * `java.io.IOException: classFile.delete() failed`
-   * `java.io.IOException: tmpFile.renameTo(classFile) failed`
-   * `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
-   * `java.io.FileNotFoundException`
-
-  Wenn dieser Fehler auftritt, besteht die einzige Wiederherstellungsmethode darin, die AEM-Instanz neu zu starten.
-
-  Wenden Sie sich an den Kunden-Support unter Adobe und referenzieren Sie diese Versionshinweise für eine Lösung.
 
 * **Bezogen auf Oak
 Ab Service Pack 13 wird das folgende Fehlerprotokoll angezeigt, das sich auf den Persistenz-Cache auswirkt:**
