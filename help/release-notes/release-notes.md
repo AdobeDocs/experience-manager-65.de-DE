@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: f852fa8d682241ffdddc60148fcd9dce7b89fed4
+source-git-commit: ae66b28497bfb12686152b324e1758ad2d8592ee
 workflow-type: tm+mt
-source-wordcount: '8809'
-ht-degree: 26%
+source-wordcount: '9451'
+ht-degree: 24%
 
 ---
 
@@ -40,11 +40,12 @@ ht-degree: 26%
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
-<!--
-## Key features and enhancements
--->
 
+## Wichtige Funktionen und Verbesserungen
 
+### Forms
+
+* **Unterstützung für die Übergabe benutzerdefinierter XCI:** Es wurde Unterstützung für die Übergabe benutzerdefinierter XCI in Parameter der Befehlszeilenanwendung xmlformcmd hinzugefügt. Dies ermöglicht es Benutzenden, benutzerdefinierte XCI-Dateien für Tests anzugeben, was die Flexibilität und Kontrolle über den Testprozess verbessert. (LC-3923248)
 
 
 ## Behobene Probleme im Service Pack 24 {#fixed-issues}
@@ -302,25 +303,40 @@ Das Konfigurieren des Authentifizierungs-Handlers für Abfrage-Token verwirrte B
 
 ### [!DNL Forms]{#forms-6524}
 
+<!--
 >[!NOTE]
 >
->Die Fehlerbehebungen in [!DNL Experience Manager] Forms werden eine Woche nach dem geplanten Veröffentlichungsdatum des [!DNL Experience Manager] Service Packs über ein separates Add-on-Paket bereitgestellt. In diesem Fall werden die Add-on-Pakete am Donnerstag, 4. Dezember 2025 veröffentlicht. Darüber hinaus wird diesem Abschnitt eine Liste mit Forms-Korrekturen und -Verbesserungen hinzugefügt.
-
-<!--
-#### Forms Designer 
-
-#### Forms
-
-#### Forms JEE 
-
-#### Forms Captcha {#forms-captcha-6524} 
-
-#### XMLFM {#forms-xmlfm-6524}
-
-#### [!DNL Forms Designer] {#forms-designer-6524}
-
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, December 4, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
 -->
 
+#### Forms Designer
+
+* Benutzende hatten Probleme mit Hyperlinks, auf die in bestimmten Testfällen nicht geklickt werden konnte, was sich auf ihre Fähigkeit auswirkte, innerhalb der Anwendung zu navigieren und Links zu überprüfen. (LC-3923505)
+* Benutzende hatten Probleme mit der Barrierefreiheit von PDFs, die mit AEM Forms Designer 6.5.23 für nicht lateinische Sprachen generiert wurden. Pfad-Tags wurden nicht in einem Artefakt-Container platziert, was zu Fehlern bei der PAC- und Bildschirmlesehilfe-Prüfung führte. (LC-3923295)
+* Benutzende haben fehlerhafte Hyperlinks in PDF-Textfeldern (Portable Document Format) erlebt, nachdem sie von Version 6.5.21 auf 6.5.23 mit dem Ausgabe-Service gepatcht hatten. (LC-3923290)
+* Benutzende hatten Probleme mit der Barrierefreiheit bei Datensatzdokument-Formularen (DoR). Wenn Eingabefelder leer waren, lesen Sprachausgaben nur die Feldbeschriftungen und nicht die Werte. Dadurch wird es für Benutzende mit Behinderungen schwierig, effektiv in den Formularen zu navigieren. (LC-3923234)
+* Benutzende sahen sich mit Barrierefreiheitsproblemen in DoR PDF forms konfrontiert, wo NVDA fälschlicherweise für Kontrollkästchen, Optionsfelder und Textfelder „nicht verfügbar“ las, was häufig die Meldung wiederholte und für Benutzende der Bildschirmlesehilfe Verwirrung stiftete. (LC-3923201)
+* Beim Hinzufügen neuer Felder trat in der XDP eine Diskrepanz in der Tabulatorreihenfolge auf. Die vorhandene Registerkartenreihenfolge hat sich unerwartet geändert, was sich auf die Formularnavigation ausgewirkt hat. (LC-3923183, LC-3922630)
+* Benutzende hatten Probleme mit dem HTML-Rendering. Bei Verwendung des `docReady`-Ereignisses ist der Trigger in HTML nicht korrekt, sodass Skripte nicht wie erwartet ausgeführt werden. (LC-3923118)
+* Benutzende hatten Probleme mit PDF-Rendering-Skripten, die nicht in der AEM Forms Cloud-Produktionsumgebung funktionierten. (LC-3923082 )
+* Benutzende hatten Probleme mit schwebenden Feldern in Formularen. Bei Verwendung verschiedener Datendateien werden schwebende Felder mit einer Datei korrekt gerendert, aber nicht mit der anderen, trotz geringfügiger Unterschiede, die nicht mit den Feldern zusammenhängen. (LC-3923056)
+* Benutzende erlebten eine leere spanische Musterseite, wenn in einem XDP (XML-Datenpaket) mit mehreren Musterseiten nur englischer Inhalt ausgewählt wurde. (LC-3923009)
+* In der AEM Designer haben Nutzer veraltete Copyright-Jahr-Informationen beobachtet. Dies trat im Popup-Feld beim Start, im Abschnitt „Über“ und im Abschnitt „Rechtliche Hinweise“ auf, wo „2003-2024“ anstelle von „2003-2025“ angezeigt wurde. (LC-3923005)
+* Benutzende entdeckten eine leere PDF-Seite bei Verwendung von Paginierung in AEM Forms Designer. Bei der Auswahl von „Anfang der nächsten Seite/Anfang der Seite“ für den WireAdvice-Header trat ein Problem auf, das das Layout von Dateniterationen störte. (LC-3922997, LC-3922830)
+* Bei Benutzenden trat ein Problem auf, bei dem der filedigest-Wert für XML-Schemadefinition (Extensible Markup Language) in der 64-Bit-Version von AEM Forms Designer nicht beibehalten wurde. (LC-3922924)
+* In AEM Designer 6.5.19 kam es zu einer instabilen Hyperlink-Formatierung, bei der Hyperlinks in einem Textfeld fälschlicherweise Stile aus dem umgebenden Text übernahmen, z. B. die Formatierung des ersten Zeichens. (LC-3922376)
+* Bei Benutzenden traten Probleme beim Rendern von HTML-Formularen über das mobile Rendering auf MAC mit AEM Forms OSGI v6.5.22 auf. (LC-3923058)
+* Bei der Verwendung von mit Designer 6.5.23 erstellten und mit PAC 2024 analysierten XDP-Vorlagen in Dateien mit Portable Document Format (PDF) traten Fehler vom Typ „Pfadobjekt ohne Tags“ auf. (LC-3923013)
+* Benutzende haben einen Fehler mit der Hintergrundfarbe der Überschrift „Dati Richiedente“ in Portable Application Component (PAC) erhalten und die Nachricht „path object not tagged“ erhalten. (LC-3922912)
+* Bei Benutzenden trat ein Problem auf, bei dem bestimmte Vorlagen die beabsichtigte Schriftart durch eine verkürzte Schriftart ersetzt haben. (LC-3922330)
+
+#### Adaptive Formulare
+
+* Benutzende hatten fehlende Optionen im Regeleditor. Wenn Autoren Regeln für Zahleneingaben geschrieben haben, waren die Optionen Abfrage, UTM und Browser-Details nicht verfügbar. (FORMS-21660)
+* Bei der Interaktion mit OdataResponse kam es aufgrund einer Nullzeiger-Ausnahme zu Anwendungsabstürzen. (FORMS-20344)
+* Benutzende hatten Probleme beim Erstellen von Regeln, um einen Bereich anzuzeigen und den Fokus auf ein darin enthaltenes Element zu legen. Die setFocus-Regel, die vor der Aktualisierung der Sichtbarkeit ausgeführt wurde, was dazu führte, dass die Fokusaktion fehlschlug. (FORMS-19563)
+* Benutzende hatten Probleme mit der Komponentenauswahl in der AEM Forms-Autoreninstanz. Beim Navigieren zwischen Registerkarten im Bearbeitungsmodus konnten einige Container nicht mehr ausgewählt werden, was eine einfache Identifizierung und Interaktion verhinderte. (FORMS-18525)
+* Beim Versuch, Assets in AEM 6.5.22 mit Anmerkungen zu versehen, ist ein Fehler „Ungültige URL“ aufgetreten. (NPR-42684)
 
 ### Foundation {#foundation-6524}
 
