@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 100%
+source-wordcount: '2295'
+ht-degree: 86%
 
 ---
 
@@ -300,3 +300,47 @@ Um Ihre Inhaltsfragmente zum Erstellen von Seiten zu verwenden, benötigen Sie a
 ## Anwendungsbeispiel {#example-usage}
 
 Ein Fragment samt seinen Elementen und Varianten kann zur Erstellung von kohärentem Inhalt für verschiedene Kanäle verwendet werden. Bei der Gestaltung Ihres Fragments müssen Sie berücksichtigen, was verwendet wird und wo es verwendet wird.
+
+## Best Practices {#best-practices}
+
+Inhaltsfragmente können verwendet werden, um komplexe Strukturen zu bilden. Adobe bietet Empfehlungen für Best Practices beim Definieren und Verwenden von sowohl Modellen als auch Fragmenten.
+
+### Es einfach halten {#keep-it-simple}
+
+Halten Sie bei der Modellierung strukturierter Inhalte in AEM die Inhaltsstrukturen so einfach wie möglich, um eine starke Systemleistung und optimierte Governance sicherzustellen.
+
+### Anzahl der Modelle {#number-of-models}
+
+Erstellen Sie so viele Inhaltsmodelle wie nötig, aber nicht mehr.
+
+Zu viele Modelle erschweren die Governance und können GraphQL-Abfragen verlangsamen. Eine kleine Anzahl von Modellen, maximal niedrige Zehner, ist in der Regel ausreichend. Wenn Sie sich den hohen Zehnern oder mehr nähern, überdenken Sie Ihre Modellierungsstrategie.
+
+### Verschachteln von Modellen und Fragmenten (sehr wichtig) {#nesting-models-and-fragments}
+
+Vermeiden Sie eine tiefe oder übermäßige Verschachtelung von Inhaltsfragmenten mithilfe von Inhaltsfragmentverweisen, die es Fragmenten ermöglichen, auf andere Fragmente zu verweisen, manchmal über mehrere Ebenen hinweg.
+
+Eine starke Verwendung von Inhaltsfragmentverweisen kann sich erheblich auf die Systemleistung, die Reaktionsfähigkeit der Benutzeroberfläche und die Ausführung von GraphQL-Abfragen auswirken. Ziel ist es, die Verschachtelung auf maximal zehn Ebenen zu belassen.
+
+## Anzahl der Datenfelder und Datentypen pro Modell {#number-of-data-fields-and-types-per-model}
+
+Schließen Sie nur die Datenfelder und Typen ein, die ein Modell wirklich benötigt.
+
+Übermäßig komplexe Modelle führen zu übermäßig komplexen Fragmenten, die das Authoring erschweren und die Leistung des Editors verringern können.
+
+### Rich-Text-Felder {#rich-text-fields}
+
+Verwenden Sie Rich-Text-Felder **Datentyp Mehrzeiliger Text**) unter Berücksichtigung von Folgendem.
+
+Begrenzen Sie die Anzahl der Rich-Text-Felder pro Modell. Außerdem die Textmenge, die in jedem Fragment gespeichert ist, und den Umfang der HTML-Formatierung. Sehr große Rich-Text-Inhalte können die Systemleistung beeinträchtigen.
+
+### Anzahl der Varianten {#number-of-variations}
+
+Erstellen Sie so viele Fragmentvarianten wie nötig, aber nicht mehr.
+
+Varianten fügen einem Inhaltsfragment, der Autorenumgebung und der Bereitstellung Verarbeitungszeit hinzu. Es wird empfohlen, die Anzahl der Varianten auf ein überschaubares Minimum zu beschränken.
+
+Als Best Practice gilt, pro Inhaltsfragment maximal zehn Varianten zu verwenden.
+
+### Vor der Produktion testen {#test-before-production}
+
+Erstellen Sie im Zweifelsfall einen Prototyp für die gewünschten Inhaltsstrukturen, bevor Sie sie in die Produktion einführen. Frühzeitige Machbarkeitsstudien sowie angemessene Tests, sowohl in technischer Hinsicht als auch in Bezug auf die Akzeptanz der Benutzer, können dazu beitragen, Probleme zu einem späteren Zeitpunkt zu vermeiden, wenn Produktionstermine eingehalten werden.

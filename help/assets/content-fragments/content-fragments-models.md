@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: e3a35099a48088d5746aa23be45c3e81a1a8b02e
-workflow-type: ht
-source-wordcount: '2339'
-ht-degree: 100%
+source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+workflow-type: tm+mt
+source-wordcount: '2355'
+ht-degree: 99%
 
 ---
 
@@ -22,6 +22,10 @@ Verwenden von Inhaltsfragmentmodellen
 1. [Erstellen](#creating-a-content-fragment-model) und [konfigurieren](#defining-your-content-fragment-model) Sie Ihre Inhaltsfragmentmodelle.
 1. [Aktivieren Sie Ihre Inhaltsfragmentmodelle](#enabling-disabling-a-content-fragment-model) zur Verwendung beim Erstellen von Inhaltsfragmenten.
 1. [Lassen Sie Ihre Inhaltsfragmentmodelle in den erforderlichen Asset-Ordnern zu](#allowing-content-fragment-models-assets-folder), indem Sie **Richtlinien** konfigurieren.
+
+>[!NOTE]
+>
+>Beachten Sie die [Best Practices](/help/assets/content-fragments/content-fragments.md#best-practices) beim Arbeiten mit Ihren Inhaltsfragmentmodellen und Inhaltsfragmenten.
 
 ## Erstellen eines Inhaltsfragmentmodells {#creating-a-content-fragment-model}
 
@@ -240,10 +244,10 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 >AEM bietet einen Wiederholungsschutz für:
 >
 >* Inhaltsreferenzen
->Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
+>  Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
 >
 >* Fragmentverweise in GraphQL
->Wenn Sie eine Deep-Abfrage erstellen, die mehrere, sich gegenseitig referenzierende Inhaltsfragmente zurückgibt, gibt sie beim ersten Auftreten NULL zurück.
+>  Wenn Sie eine tiefe Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten null zurück.
 
 ### Inhaltsreferenz {#content-reference}
 
