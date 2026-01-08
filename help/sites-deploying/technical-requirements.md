@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 965585c68107bf3e8a9e118b80f7d46f2dbda852
 workflow-type: tm+mt
-source-wordcount: '3534'
-ht-degree: 100%
+source-wordcount: '3490'
+ht-degree: 99%
 
 ---
 
@@ -495,9 +495,8 @@ Windows x86:
 >* PDF Generator unterstützt nur die 32-Bit-Version von Microsoft® Office Professional Plus und anderer für die Konvertierung erforderliche Software.
 >* Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder unlizenziert wird, z. B. weil eine Installation mit Volumenlizenz einen KMS-Host nicht innerhalb eines bestimmten Zeitraums finden kann, können Konvertierungen fehlschlagen, bis die Installation neu lizenziert und reaktiviert wird.
 >* PDF Generator unterstützt nicht Microsoft® Office 365.
->* PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt®.
+>* PDF Generator-Konvertierungen für OpenOffice werden unter Windows und Linux® unterstützt.
 >* Die Funktionen von OCR PDF, PDF optimieren und PDF exportieren werden nur unter Windows unterstützt.
->* Eine Version von Acrobat ist im Lieferumfang von AEM Forms enthalten, um die PDF Generator-Funktionalität zu aktivieren. Die gebündelte Version sollte während der Laufzeit der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur programmatisch mit AEM Forms zugänglich sein. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 >* Der PDF Generator-Service unterstützt nicht Microsoft® Windows 11.
 
 ### Anforderungen für AEM Forms Designer {#requirements-for-aem-forms-designer}
@@ -533,3 +532,5 @@ Das Zurückschreiben von XMP-Daten wird für die folgenden Plattformen und Datei
 ### Anforderungen für die Verarbeitung von Metadaten-lastigen Assets durch AEM Assets unter Linux® {#assetsonlinux}
 
 Für den XMPFilesProcessor-Prozess ist die Bibliothek GLIBC_2.14 erforderlich. Verwenden Sie einen Linux®-Kernel, der GLIBC_2.14 enthält, zum Beispiel Linux®-Kernel Version 3.1.x. Dies verbessert die Leistung bei der Verarbeitung von Assets, die eine große Menge an Metadaten enthalten, z. B. PSD-Dateien. Die Verwendung einer früheren Version von GLIBC führt zu Fehlern in Protokollen, die mit `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` beginnen.
+
+Wenden Sie sich bei Fragen zu unterstützten Formaten oder Plattformversionen an den [AEM Forms-Support](https://business.adobe.com/de/support/main.html)
