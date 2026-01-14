@@ -1,6 +1,6 @@
 ---
 title: Videoprofile
-description: Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Sie können für Ihre Videos auch smartes Zuschneiden nutzen.
+description: Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Sie können für Ihre Videos auch intelligenten Zuschnitt nutzen.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -11,10 +11,10 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
-workflow-type: ht
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+workflow-type: tm+mt
 source-wordcount: '3730'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ Informationen hierzu finden Sie auch im Thema über die [Best Practices für die
 
 >[!NOTE]
 >
->Um die Metadaten eines Videos und die zugehörigen Videobild-Miniaturansichten zu generieren, muss das Video selbst den Kodierungsprozess in Dynamic Media durchlaufen. In Adobe Experience Manager kodiert der Workflow für **[!UICONTROL Dynamic Media-Videokodierung]** Videos, wenn Dynamic Media aktiviert und Video-Cloud Services eingerichtet sind. Dieser Workflow erfasst den Verlauf der Workflow-Prozesse und Informationen zu Fehlern. Siehe [Überwachen der Videokodierung und des YouTube-Veröffentlichungs-Fortschritts](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Wenn Sie Dynamic Media aktiviert und Video-Cloud Services eingerichtet haben, wird der Workflow für die **[!UICONTROL Videokodierung mit Dynamic Media]** automatisch beim Hochladen eines Videos wirksam. (Wenn Sie Dynamic Media nicht verwenden, wird der Workflow **[!UICONTROL DAM Update Asset]** wirksam.)
+>Um die Metadaten eines Videos und die zugehörigen Videobild-Miniaturansichten zu generieren, muss das Video selbst den Kodierungsprozess in Dynamic Media durchlaufen. In Adobe Experience Manager kodiert der Workflow für **[!UICONTROL Dynamic Media-Videokodierung]** Videos, wenn Dynamic Media aktiviert und Video-Cloud-Services eingerichtet sind. Dieser Workflow erfasst den Verlauf der Workflow-Prozesse und Informationen zu Fehlern. Siehe [Überwachen der Videokodierung und des YouTube-Veröffentlichungs-Fortschritts](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Wenn Sie Dynamic Media aktiviert und Video-Cloud-Services eingerichtet haben, wird der Workflow für die **[!UICONTROL Videokodierung mit Dynamic Media]** automatisch beim Hochladen eines Videos wirksam. (Wenn Sie Dynamic Media nicht verwenden, wird der Workflow **[!UICONTROL DAM Update Asset]** wirksam.)
 >
 >Metadaten sind nützlich, wenn Sie nach Assets suchen. Die Miniaturen sind statische Videobilder, die bei der Kodierung generiert werden. Sie sind für das Adobe Experience Manager-System erforderlich und werden in der Benutzeroberfläche eingesetzt, damit Sie Videos in der Kartenansicht, der Suchergebnisansicht und der Asset-Listenansicht einfacher identifizieren können. Sie können die generierten Miniaturen sehen, wenn Sie auf das Ausgabedarstellungs-Symbol (eine Malerpalette) eines kodierten Videos klicken.
 
@@ -97,37 +97,37 @@ In der folgenden Tabelle werden die Best Practice Codierungsprofile für das ada
  </tbody>
 </table>
 
-## Über die Verwendung von smartem Zuschneiden in Videoprofilen {#about-smart-crop-video}
+## Über die Verwendung von intelligentem Zuschnitt in Videoprofilen {#about-smart-crop-video}
 
-Intelligentes Zuschneiden für Videos – eine optionale Funktion, die in Videoprofilen verfügbar ist – ist ein Tool, das die Leistungsfähigkeit künstlicher Intelligenz in Adobe Sensei nutzt. Es erkennt den Fokus automatisch in jedem adaptiven Video oder progressiven Video, das Sie hochgeladen haben, unabhängig von der Größe, und schneidet entsprechend zu.
+Smartes Zuschneiden für Videos - eine optionale Funktion, die in Videoprofilen verfügbar ist - ist ein Tool, das die Leistungsfähigkeit von künstlicher Intelligenz in Adobe AI nutzt. Es erkennt den Fokus automatisch in jedem adaptiven Video oder progressiven Video, das Sie hochgeladen haben, unabhängig von der Größe, und schneidet entsprechend zu.
 
-Zu den unterstützten Videoformaten für smartes Zuschneiden gehören MP4, MKV, MOV, AVI, FLV und WMV.
+Zu den unterstützten Videoformaten für intelligenten Zuschnitt gehören MP4, MKV, MOV, AVI, FLV und WMV.
 
-Für die maximal unterstützte Videodateigröße beim smarten Zuschneiden gelten folgende Kriterien:
+Für die maximal unterstützte Videodateigröße beim intelligenten Zuschnitt gelten folgende Kriterien:
 
 * Dauer von fünf Minuten.
 * 30 Frames pro Sekunde (FPS).
 * Dateigröße 300 MB.
 
-Adobe Sensei ist auf 9000 Frames beschränkt. Das heißt: fünf Minuten bei 30 FPS. Wenn Ihr Video eine höhere FPS-Rate aufweist, verringert sich die maximal unterstützte Videodauer entsprechend. Beispielsweise darf ein 60-FPS-Video maximal 2,5 Minuten lang sein, damit es von Adobe Sensei und smartem Zuschneiden unterstützt werden kann.
+Adobe AI ist auf 9.000 Frames beschränkt. Das heißt: fünf Minuten bei 30 FPS. Wenn Ihr Video eine höhere FPS-Rate aufweist, verringert sich die maximal unterstützte Videodauer entsprechend. Beispielsweise muss ein 60-FPS-Video zweieinhalb Minuten lang sein, damit es von Adobe AI und smartem Zuschneiden unterstützt werden kann.
 
-![Smartes Zuschneiden für Video](assets/smart-crop-video.png)
+![Intelligenter Zuschnitt für Video](assets/smart-crop-video.png)
 
 >[!IMPORTANT]
 >
->Damit das smarte Zuschneiden für Videos funktioniert, müssen Sie mindestens eine Vorgabe für Videokodierung in Ihr Videoprofil einschließen.
+>Damit der intelligente Zuschnitt für Videos funktioniert, müssen Sie mindestens eine Vorgabe für Videokodierung in Ihr Videoprofil einschließen.
 
-Wenn Sie smartes Zuschneiden für Videos verwenden möchten, erstellen Sie ein Profil für adaptive oder progressive Videoverschlüsselung. Verwenden Sie im Rahmen Ihres Profils das Tool **[!UICONTROL Smart Crop Ratio]**, um vordefinierte Seitenverhältnisse auszuwählen. Nachdem Sie Ihre Vorgaben für die Videokodierung definiert haben, können Sie beispielsweise eine Definition für „Mobiles Querformat“ mit einem Seitenverhältnis von 16 × 9 und eine Definition für „Mobiles Hochformat“ mit einem Seitenverhältnis von 9 × 16 hinzufügen. Andere verfügbare Seiten- oder Zuschneideverhältnisse sind 1 × 1, 4 × 3 und 4 × 5.
+Wenn Sie intelligenten Zuschnitt für Videos verwenden möchten, erstellen Sie ein Profil für adaptive oder progressive Videoverschlüsselung. Verwenden Sie im Rahmen Ihres Profils das Tool **[!UICONTROL Verhältnis für intelligenten Zuschnitt]**, um vordefinierte Seitenverhältnisse auszuwählen. Nachdem Sie Ihre Vorgaben für die Videokodierung definiert haben, können Sie beispielsweise eine Definition für „Mobiles Querformat“ mit einem Seitenverhältnis von 16 × 9 und eine Definition für „Mobiles Hochformat“ mit einem Seitenverhältnis von 9 × 16 hinzufügen. Andere verfügbare Seiten- oder Zuschneideverhältnisse sind 1 × 1, 4 × 3 und 4 × 5.
 
-![Bearbeiten von Videokodierungsprofilen mit smartem Zuschneiden](assets/edit-smart-crop-video2.png)
+![Bearbeiten von Videokodierungsprofilen mit intelligentem Zuschnitt](assets/edit-smart-crop-video2.png)
 
-Sie können mit dem Schieberegler ganz rechts neben **[!UICONTROL Seitenverhältnis für intelligentes Zuschneiden]** in der Benutzeroberfläche das intelligente Zuschneiden im Videoprofil aktivieren oder deaktivieren.
+Sie können mit dem Schieberegler ganz rechts neben **[!UICONTROL Verhältnis für intelligenten Zuschnitt]** in der Benutzeroberfläche den intelligenten Zuschnitt im Videoprofil aktivieren oder deaktivieren.
 
 Nachdem Sie Ihr Videoprofil erstellt und gespeichert haben, können Sie es auf die gewünschten Ordner anwenden.
 
 Siehe [Anwenden eines Videoprofils auf bestimmte Ordner](#applying-video-profiles-to-specific-folders) oder [Globales Anwenden eines Videoprofils](#applying-a-video-profile-globally).
 
-Siehe auch [Smartes Zuschneiden für Bilder](image-profiles.md).
+Siehe auch [Intelligenter Zuschnitt für Bilder](image-profiles.md).
 
 ## Erstellen eines Videoprofils für Streaming mit adaptiver Bit-Rate {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
@@ -180,8 +180,8 @@ Klicken Sie auf das Informationssymbol neben den einzelnen Optionen, um zusätzl
    * Wiederholen Sie Schritt 4 bis 10, um weitere Kodierungsvorgaben zu erstellen. (Das adaptive Video-Streaming erfordert mehrere Videovorgaben.)
    * Fahren Sie mit dem nächsten Schritt fort.
 
-1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, smartes Zuschneiden hinzuzufügen:
-   * Klicken Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Seitenverhältnis für intelligentes Zuschneiden“ auf **[!UICONTROL Neu hinzufügen]**.
+1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, intelligenten Zuschnitt hinzuzufügen:
+   * Klicken Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Seitenverhältnis für intelligenten Zuschnitt“ auf **[!UICONTROL Neu hinzufügen]**.
    * Geben Sie im Feld „Name“ einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht erkennen können.
    * Wählen Sie aus der Dropdown-Liste **[!UICONTROL Zuschnittverhältnis]** das Verhältnis aus, das Sie verwenden möchten.
 
@@ -235,9 +235,9 @@ Klicken Sie auf das Informationssymbol neben den einzelnen Optionen, um zusätzl
    * Wiederholen Sie die Schritte 4 bis 9, um weitere Codierungsvorgaben zu erstellen.
    * Fahren Sie mit dem nächsten Schritt fort.
 
-1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, smartes Zuschneiden hinzuzufügen:
+1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, intelligenten Zuschnitt hinzuzufügen:
 
-   * Klicken Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Seitenverhältnis für intelligentes Zuschneiden“ auf **[!UICONTROL Neu hinzufügen]**.
+   * Klicken Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Seitenverhältnis für intelligenten Zuschnitt“ auf **[!UICONTROL Neu hinzufügen]**.
    * Geben Sie im Feld „Name“ einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht erkennen können.
    * Wählen Sie aus der Dropdown-Liste **[!UICONTROL Zuschnittverhältnis]** das Verhältnis aus, das Sie verwenden möchten.
 
@@ -413,9 +413,9 @@ Siehe auch [Erneutes Verarbeiten von Assets in einem Ordner nach Bearbeitung se
   ![chlimage_1-519](assets/chlimage_1-519.png)
 * Sie können [den Fortschritt eines Videoprofil-Verarbeitungsauftrags überwachen](#monitoring-the-progress-of-an-encoding-job).
 
-## Überwachen des Fortschritts eines Videoprofil-Verarbeitungsvorgangs {#monitoring-the-progress-of-an-encoding-job}
+## Überwachen des Fortschritts eines Videoprofil-Verarbeitungsauftrags {#monitoring-the-progress-of-an-encoding-job}
 
-Eine Verarbeitungsanzeige (oder Statusleiste) wird angezeigt, damit Sie den Fortschritt eines Videoprofil-Verarbeitungsvorgangs visuell überwachen können.
+Eine Verarbeitungsanzeige (oder Statusleiste) wird angezeigt, damit Sie den Fortschritt eines Videoprofil-Verarbeitungsauftrags visuell überwachen können.
 
 In der Datei `error.log` können Sie den Fortschritt des Kodierungsvorgangs ebenfalls anzeigen. Sie können prüfen, ob die Kodierung abgeschlossen ist oder ob Auftragsfehler angezeigt werden. Die Datei `error.log` befindet sich im `logs`-Protokollordner, in dem Ihre Instanz von Adobe Experience Manager installiert ist.
 

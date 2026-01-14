@@ -5,16 +5,16 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
-workflow-type: ht
-source-wordcount: '2129'
-ht-degree: 100%
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+workflow-type: tm+mt
+source-wordcount: '2130'
+ht-degree: 99%
 
 ---
 
 # Vorbereiten von [!DNL Assets] für Smart-Tagging {#configure-asset-tagging-using-the-smart-content-service}
 
-Bevor Sie mit dem Tagging Ihrer Assets per Smart Content Services beginnen können, integrieren Sie [!DNL Experience Manager Assets] mit der Adobe Developer Console, um den Smart Service von [!DNL Adobe Sensei] zu nutzen. Nach der Konfiguration trainieren Sie den Service mit einigen Bildern und einem Tag.
+Bevor Sie mit dem Tagging Ihrer Assets per Smart Content Services beginnen können, integrieren Sie [!DNL Experience Manager Assets] mit der Adobe Developer Console, um den Smart Service von [!DNL Adobe AI] zu nutzen. Nach der Konfiguration trainieren Sie den Service mit einigen Bildern und einem Tag.
 
 <!--
 >[!NOTE]
@@ -115,7 +115,7 @@ Weitere Informationen zu dieser Konfiguration finden Sie in der Dokumentation zu
 
 1. Wählen Sie auf der Seite **[!UICONTROL Produktprofile auswählen]** die Option **[!UICONTROL Smart Content Services]** aus und klicken Sie anschließend auf die Option **[!UICONTROL Konfiguriertes API speichern]**.
 
-   Auf einer Seite werden weitere Informationen zur Konfiguration angezeigt. Lassen Sie diese Seite geöffnet, um diese Werte zu kopieren und in den [!UICONTROL Einstellungen des Smart Tagging Service für Assets] in der Cloud-Konfiguration in [!DNL Experience Manager] zuzufügen, um Smart Tags zu konfigurieren.
+   Auf einer Seite werden weitere Informationen zur Konfiguration angezeigt. Lassen Sie diese Seite geöffnet, um diese Werte zu kopieren und in den [!UICONTROL Einstellungen des Smart-Tagging-Service für Assets] in der Cloud-Konfiguration in [!DNL Experience Manager] zuzufügen, um Smart Tags zu konfigurieren.
 
    ![OAuth-Anmeldedaten in der Developer Console](assets/ims-configuration-developer-console.png)
 
@@ -151,7 +151,7 @@ Sie müssen die Konfiguration eines technischen IMS-Kontos mithilfe der folgende
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 -->
@@ -291,7 +291,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 
@@ -434,7 +434,7 @@ Sie können festlegen, dass der Smart Content Service regelmäßig mit den Asset
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Wenn Sie diese Option für einen Ordner auswählt haben, führt [!DNL Experience Manager] automatisch einen Trainings-Workflow aus, um den Smart Content Service mit den Assets im Ordner und deren Tags zu trainieren. Standardmäßig wird der Trainings-Workflow jede Woche samstags um 00:30 Uhr ausgeführt.
+Wenn Sie diese Option für einen Ordner auswählt haben, führt [!DNL Experience Manager] automatisch einen Trainings-Workflow aus, um den Smart Content Service mit den Assets im Ordner und deren Tags zu trainieren. Standardmäßig wird der Trainings-Workflow wöchentlich samstags um 12 :30 ausgeführt.
 
 ### Training bei Bedarf {#on-demand-training}
 
@@ -480,6 +480,6 @@ Um sicherzustellen, dass der Smart Content Service auf Ihre Tags im Asset-Traini
 
 >[!MORELIKETHIS]
 >
->* [Überblick über Smart Tags und deren Training](enhanced-smart-tags.md)
+>* [Überblick über Smart-Tags und deren Training](enhanced-smart-tags.md)
 >* [Fehlerbehebung für Smart-Tags hinsichtlich OAuth-Anmeldedaten](config-oauth.md)
 >* [Video-Tutorial zu Smart-Tags](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/metadata/image-smart-tags)

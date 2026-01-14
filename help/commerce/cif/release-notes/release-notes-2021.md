@@ -5,10 +5,10 @@ exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 100%
+source-wordcount: '1087'
+ht-degree: 96%
 
 ---
 
@@ -88,7 +88,7 @@ ht-degree: 100%
 
 * Während der AEM CS-Bereitstellung und bei Nichtverwendung Client-seitiger Komponenten treten keine JS-Fehler mehr auf
 
-* Eine CIF-Cloud-Konfiguration kann nicht in Ordnern erstellt werden, die einen sling:configs-Knoten haben
+* Die CIF-Cloud-Konfiguration kann nicht in Ordnern erstellt werden, die über einen sling:configs-Knoten verfügen
 
 ## Veröffentlichungsdatum: August 2021
 
@@ -131,7 +131,7 @@ ht-degree: 100%
    * Visueller Indikator für gestaffelte Produktdaten im Authoring-Modus für bessere Sichtbarkeit bevorstehender Änderungen
    * Neue Sitemap-Komponente für Inhalte und Commerce-Seiten
 
-* Unterstützung für [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/de/products/magento/product-recommendations.html) in der AEM-Storefront mit vordefinierten oder direkt erstellten Empfehlungen
+* Unterstützung für [Adobe Commerce AI Product Recommendation, powered by Adobe AI](https://business.adobe.com/ai/adobe-genai.html) in der AEM-Storefront mit vordefinierten oder direkt erstellten Empfehlungen
 
 ## Veröffentlichungsdatum: Juni 2021
 
@@ -146,7 +146,7 @@ ht-degree: 100%
 * Neue CIF-Produkt- und Kategoriereferenzdatentypen für Inhaltsfragmente (inkl. Benutzeroberflächenunterstützung für Produkt-/Kategorieauswahl)
 * Neue Commerce-Inhaltsfragment-Kernkomponente
 * Im AEM-Backend unterstützte E-Commerce-Volltext-Suche
-* Commerce-Kernkomponenten unterstützen die Adobe Commerce Sensei Recs-Datenerfassung
+* Commerce-Kernkomponenten unterstützen die Datenerfassung in Adobe Commerce AI Recs .
 * Verbesserte SEO-freundliche URLs für Kategorieseiten
 * Unterstützung benutzerdefinierter HTTP-Header pro Website/Konfiguration
 

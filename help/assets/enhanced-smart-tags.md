@@ -7,10 +7,10 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 5aff321eb52c97e076c225b67c35e9c6d3371154
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
 source-wordcount: '1581'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ Damit der Smart Content Service die richtigen Tags anwendet, müssen Sie ihn dar
 
 Sobald ein Tag trainiert wurde und bereit ist, kann der Dienst dieses Tag über einen Tagging-Workflow auf Assets anwenden.
 
-Im Hintergrund verwendet der Smart Content Service das KI-Framework von Adobe Sensei und trainiert damit seinen Bilderkennungsalgorithmus auf die Tag-Struktur und Taxonomie Ihres Unternehmens. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
+Im Hintergrund verwendet der Smart Content Service das KI-Framework von Adobe, um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
 
 Smart Content Service ist ein Cloud-Service, der auf [!DNL Adobe Developer Console] gehostet wird. Um ihn in [!DNL Adobe Experience Manager] zu verwenden, muss die bzw. der Systemadmin Ihre [!DNL Experience Manager]-Bereitstellung mit [!DNL Adobe Developer Console] integrieren.
 
@@ -103,7 +103,7 @@ Fügen Sie die Assets zu einem Ordner hinzu und wenden Sie die Tags auf jedes As
 
 ## Grundlegendes zu [!DNL Experience Manager]-Suchergebnissen mit Smart-Tags {#understandsearch}
 
-Die [!DNL Experience Manager]-Suche kombiniert die Suchbegriffe standardmäßig mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Die Verwendung von Smart-Tags fügt eine zusätzliche `OR`-Klausel hinzu, um alle Suchbegriffe zu finden, die mit den Smart-Tags in Verbindung stehen. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
+Die [!DNL Experience Manager]-Suche kombiniert die Suchbegriffe standardmäßig mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Die Verwendung von Smart-Tags fügt eine zusätzliche `OR`-Klausel hinzu, um alle Suchbegriffe zu finden, die mit den Smart-Tags in Verbindung stehen. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchabfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
 * Assets mit den Keywords `woman` und `running` in den Metadaten.
 
@@ -133,15 +133,15 @@ Sie können den Tagging-Workflow periodisch oder nur bei Bedarf ausführen.
 
 Sie können den Smart Content Service aktivieren, um Assets in einem Ordner regelmäßig mit Tags zu versehen. Öffnen Sie die Eigenschaftsseite Ihres Asset-Ordners, wählen Sie **[!UICONTROL Smart-Tags aktivieren]** in der Registerkarte **[!UICONTROL Details]** aus und speichern Sie die Änderungen.
 
-Wenn diese Option für einen Ordner ausgewählt ist, versieht der Smart Content Service die Assets innerhalb des Ordners automatisch mit Tags. Standardmäßig wird der Tagging-Workflow jeden Tag um 0:00 Uhr ausgeführt.
+Wenn diese Option für einen Ordner ausgewählt ist, versieht der Smart Content Service die Assets innerhalb des Ordners automatisch mit Tags. Standardmäßig wird der Tagging-Workflow täglich um 12:00 :00 ausgeführt.
 
 ### Tagging bei Bedarf {#on-demand-tagging}
 
-Sie können den Tagging-Workflow über die Workflow-Konsole oder die Zeitleiste auslösen, um Ihre Assets sofort mit Tags zu versehen.
+Sie können den Tagging-Workflow über die Workflow-Konsole oder die Timeline auslösen, um Ihre Assets sofort mit Tags zu versehen.
 
 >[!NOTE]
 >
->Wenn Sie den Tagging-Workflow über die Zeitleiste ausführen, können Sie Tags gleichzeitig auf maximal 15 Assets anwenden.
+>Wenn Sie den Tagging-Workflow über die Timeline ausführen, können Sie Tags gleichzeitig auf maximal 15 Assets anwenden.
 
 #### Tagging von Assets über die Workflow-Konsole {#tagging-assets-from-the-workflow-console}
 
@@ -157,10 +157,10 @@ Sie können den Tagging-Workflow über die Workflow-Konsole oder die Zeitleiste 
 
    Um zu überprüfen, ob der Smart Content Service Ihre Assets ordnungsgemäß mit Tags versehen hat, gehen Sie zum Asset-Ordner und überprüfen Sie die Tags.
 
-#### Tagging von Assets über die Zeitleiste {#tagging-assets-from-the-timeline}
+#### Tagging von Assets über die Timeline {#tagging-assets-from-the-timeline}
 
 1. Wählen Sie über die [!DNL Assets]-Benutzeroberfläche den Ordner mit Assets oder bestimmte Assets aus, auf die Sie Smart-Tags anwenden möchten.
-1. Öffnen Sie die **[!UICONTROL Zeitleiste]** oben links.
+1. Öffnen Sie die **[!UICONTROL Timeline]** oben links.
 1. Öffnen Sie die Aktionen unten in der linken Seitenleiste und klicken Sie auf **[!UICONTROL Workflow starten]**.
 
    ![start_workflow](assets/start_workflow.png)
@@ -192,8 +192,8 @@ Darüber hinaus können Sie Tags einen höheren Rang zuweisen, um ihre Relevanz 
 
 * Verwenden Sie zum Trainieren des Modells die am besten geeigneten Bilder. Das Training kann nicht rückgängig gemacht werden, das Trainings-Modell kann nicht entfernt werden. Ihre Tagging-Genauigkeit hängt von der aktuellen Schulung ab. Gehen Sie daher sorgfältig vor.
 * Die Nutzung des Smart Content Services ist auf bis zu 2 Millionen getaggte Bilder pro Jahr beschränkt. Alle doppelten Bilder, die verarbeitet und mit Tags versehen werden, werden als getaggtes Bild gezählt.
-* Wenn Sie den Tagging-Workflow über die Zeitleiste ausführen, können Sie Tags gleichzeitig auf maximal 15 Assets anwenden.
-* Smart-Tags funktionieren nur für die Bildformate PNG und JPG. Unterstützte Assets, deren Ausgabedarstellungen in diesen beiden Formaten erstellt wurden, werden also mit Smart Tags versehen.
+* Wenn Sie den Tagging-Workflow über die Timeline ausführen, können Sie Tags gleichzeitig auf maximal 15 Assets anwenden.
+* Smart-Tags funktionieren nur für die Bildformate PNG und JPG. Unterstützte Assets, deren Ausgabedarstellungen in diesen beiden Formaten erstellt wurden, werden also mit Smart-Tags versehen.
 
 >[!MORELIKETHIS]
 >

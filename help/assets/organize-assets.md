@@ -7,10 +7,10 @@ feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -47,9 +47,9 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, sie in Or
 
 ## Organisieren von Assets mit Tags {#use-tags-to-organize-assets}
 
-Mithilfe von Tags als Metadaten können Sie mühelos Assets suchen, Sammlungen mithilfe der Suchergebnisse erstellen, das Suchergebnis-Ranking für einige Assets verbessern und KI-Algorithmen von Adobe Sensei zur Asset-Erkennung nutzen.
+Mithilfe von Tags als Metadaten können Sie mühelos Assets suchen, Sammlungen mithilfe der Suchergebnisse erstellen, das Suchranking für einige Assets verbessern und Algorithmen der künstlichen Intelligenz von Adobe AI zur Asset-Erkennung verwenden.
 
-[!DNL Adobe Experience Manager Assets] verwendet einen selbstlernenden Algorithmus, um hochgradig beschreibende Tags zu erstellen, mit denen Sie das richtige Asset mit nur wenigen Klicks finden können. Smart-Tagging nutzt Adobe Sensei, die künstliche Intelligenz von Adobe und ein Framework für maschinelles Lernen, das trainiert werden kann, um standardmäßige und geschäftsspezifische Tags zu erkennen und auf Bilder anzuwenden. Smart-Tags können auch Inhalte, einzelne Wörter oder Ausdrücke identifizieren und automatisch beschreibende Tags auf Assets anwenden.
+[!DNL Adobe Experience Manager Assets] verwendet einen selbstlernenden Algorithmus, um hochgradig beschreibende Tags zu erstellen, mit denen Sie das richtige Asset mit nur wenigen Klicks finden können. Smart-Tagging nutzt Adobe AI, das Adobe-Framework für künstliche Intelligenz und maschinelles Lernen, das trainiert werden kann, um standardmäßige und geschäftsspezifische Tags zu erkennen und auf Bilder anzuwenden. Smart-Tags können auch Inhalte, einzelne Wörter oder Ausdrücke identifizieren und automatisch beschreibende Tags auf Assets anwenden.
 
 Weitere Informationen finden Sie in den folgenden Artikeln:
 
