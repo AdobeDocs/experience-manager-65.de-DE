@@ -5,22 +5,25 @@ feature: Transaction Reports
 exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: eb059bc4c9f4b5064b8038a2b037670086a9139b
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 87%
 
 ---
 
+
 # Aktivieren und Anzeigen von Transaktionsberichten für AEM Forms on JEE {#transaction-reports-overview}
 
-<!--Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
+<span> Die Funktion „Transaktionsberichte“ wurde für AEM Forms on JEE von AEM Forms 6.5.20.0 eingeführt. Diese Funktion ist standardmäßig deaktiviert und kann über die Admin-Benutzeroberfläche aktiviert werden.</span>
 
-* Submission of a document
-* Rendition of a document
-* Conversion of a document from one file format to another 
+Mit Transaktionsberichten in AEM Forms on JEE können Sie alle Transaktionen zählen, die in Ihrer AEM Forms-Bereitstellung stattgefunden haben. Ziel ist es, Informationen über die Produktnutzung bereitzustellen und geschäftlichen Stakeholdern dabei zu helfen, ihre digitalen Verarbeitungsvolumen zu verstehen. Beispiele für eine Transaktion sind:
 
-For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis-jee.md). Transaction log helps you to gain information about the number of documents submitted, rendered, and converted.-->
+* Einreichung eines Dokuments
+* Ausgabedarstellung eines Dokuments
+* Konvertieren eines Dokuments aus einem Dateiformat in ein anderes
+
+Weitere Informationen darüber, was als Transaktion gilt, finden Sie unter [Abrechnungsfähige APIs](../../forms/using/transaction-reports-billable-apis-jee.md).
 
 ## Aktivieren von Transaktionsberichten {#enable-transaction-reporting}
 
