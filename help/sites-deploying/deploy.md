@@ -10,8 +10,8 @@ exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: ht
+source-git-commit: 36cb540cda7faeca5949028c9c14ab2ecf860402
+workflow-type: tm+mt
 source-wordcount: '1779'
 ht-degree: 100%
 
@@ -160,7 +160,7 @@ Im folgenden Abschnitt wird die **eigenständige Installation** beschrieben. Wei
 
    UNIX®-Installationsspeicherort: **/opt/aem**
 
-   Windows-Installationsspeicherort: **`C:\Program Files\aem`**
+   Windows-Installationsspeicherort: **`C:\aem`**
 
    Ebenso ist es üblich, Beispielinstanzen in einem Ordner direkt auf dem Desktop zu installieren. In jedem Fall wird bei Adobe dieser Speicherort meist wie folgt bezeichnet:
 
@@ -196,7 +196,7 @@ Lassen Sie Ihren Browser für den Zugriff auf die Instanz auf die folgende URL v
 
 **`https://localhost:4502`**
 
-Das Ergebnis in der Erstellungsinstanz wird automatisch so konfiguriert, dass eine Verbindung zu einer **Veröffentlichungsinstanz** auf **`localhost:4503`** hergestellt wird.
+Das Ergebnis in der Autoreninstanz wird automatisch so konfiguriert, dass eine Verbindung zu einer **Veröffentlichungsinstanz** auf **`localhost:4503`** hergestellt wird.
 
 ### Installation von Erstellungs- und Veröffentlichungsinstanzen {#author-and-publish-installs}
 
