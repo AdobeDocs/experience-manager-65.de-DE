@@ -167,7 +167,7 @@ Viele Asset-Management-Aufgaben wie CRUD-Vorgänge, das Herunterladen von Assets
 Bei Metadatenvorgängen, die normalerweise von Rollen wie Marketing-Experten und Administratoren ausgeführt werden, verbessern die folgenden Funktionen die Barrierefreiheit:
 
 * Die Option [!UICONTROL Speichern und schließen] auf der Seite [!UICONTROL Eigenschaften] des Assets kann jetzt über die Tastatur aufgerufen werden.
-* Bildschirmlesehilfen geben die Optionen zum Löschen der ausgewählten Tags auf der Registerkarte [!UICONTROL Standard] des Assets (Eigenschaften[!UICONTROL  an].
+* Bildschirmlesehilfen geben die Optionen zum Löschen der ausgewählten Tags auf der Registerkarte [!UICONTROL Standard] des Assets (Eigenschaften[!UICONTROL &#x200B; an].
 * Benutzende können das Popup-Dialogfeld für die Datumsauswahl mit einer Tastatur verwenden. Das Benutzeroberflächenelement zur Datumsauswahl wird verwendet, um Ein- und Ausschaltzeiten festzulegen und ein Datum auszuwählen.
 * Die Funktion zum Ziehen mit der Tastatur funktioniert [!UICONTROL Metadatenschema-Editor] im Durchsuchen-Modus der Bildschirmlesehilfe korrekt.
 * Ein Benutzer kann die Tastatur verwenden, um den Fokus auf das Feld **Benutzer oder Gruppe hinzufügen** zu verschieben.
@@ -222,5 +222,5 @@ Um Feedback zu geben, Fragen zu stellen und Produktverbesserungen in Bezug auf d
 >
 >* [Funktionen für die Barrierefreiheit in  [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 >* [Versionshinweise zu den in den einzelnen Service Pack-Versionen vorgenommenen Verbesserungen](/help/release-notes/release-notes.md).
->* Hinweise zur Barrierefreiheit in [[!DNL Adobe Experience Manager] ](/help/managing/web-accessibility.md).
+>* Hinweise zur Barrierefreiheit in [[!DNL Adobe Experience Manager] &#x200B;](/help/managing/web-accessibility.md).
 >* [Konformitätsberichte (ACR) und VPAT-Liste für Adobe-Lösungen](https://www.adobe.com/accessibility/compliance.html).
