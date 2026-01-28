@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: 0aea56ae4f180e2e4208697a24ee67a716754584
+source-git-commit: 4305b4c7089fe4ac2b1bfe2dc6e4919181b3d892
 workflow-type: tm+mt
-source-wordcount: '7564'
+source-wordcount: '7571'
 ht-degree: 99%
 
 ---
@@ -219,8 +219,8 @@ ht-degree: 99%
          + [Client-Kontext](/help/sites-administering/client-context.md)
          + [Konfigurieren der Segmentierung mit ContextHub](/help/sites-administering/segmentation.md)
          + [Konfigurieren der Segmentierung](/help/sites-administering/campaign-segmentation.md)
-         + [Erweitern und Konfigurieren des Design-Import-Tools für Einstiegsseiten](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
-         + [Integrieren von Einstiegsseiten in Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
+         + [Erweitern und Konfigurieren des Design-Import-Tools für Landingpages](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
+         + [Integrieren von Landingpages in Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
       + Integration {#integration}
          + [Integrieren mit Services von Dritten](/help/sites-administering/third-party-services.md)
          + [Integration mit Salesforce](/help/sites-administering/salesforce.md)
@@ -317,7 +317,7 @@ ht-degree: 99%
       + Personalisierung {#personalization}
          + [Grundlegendes zur Segmentierung](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
          + [Kampagnenmanagement](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)
-         + [Landing-Pages](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
+         + [Landingpages](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
          + [Adobe Target-Angebote](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
          + [E-Mail-Marketing](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
          + [Nachverfolgen nicht zugestellter E-Mails](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
@@ -325,7 +325,7 @@ ht-degree: 99%
          + [Konzeption einer Kampagne](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
          + [Veröffentlichen von E-Mails bei E-Mail-Dienstanbietern](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
          + [Arbeiten mit dem Marketing Campaign Manager](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
-         + [Erstellen einer effektiven Einstiegsseite für Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
+         + [Erstellen einer effektiven Landingpage für Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
          + [Verwalten von Abonnements](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
       + Adobe Campaign {#campaign}
          + [Arbeiten mit Adobe Campaign 6.1 und Adobe Campaign Standard](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md)
@@ -355,7 +355,7 @@ ht-degree: 99%
       + [Überprüfen von Ordner-Assets und Sammlungen](/help/assets/bulk-approval.md)
       + [Optimierte Smart-Tags](/help/assets/enhanced-smart-tags.md)
       + [Fehlerbehebung für Smart-Tags hinsichtlich OAuth-Anmeldedaten](/help/assets/config-oauth.md)
-      + [Aktivitäts-Stream in der Zeitleiste](/help/assets/activity-stream.md)
+      + [Aktivitäts-Stream in der Timeline](/help/assets/activity-stream.md)
       + [Verarbeiten von Assets](/help/assets/assets-workflow.md)
       + [Hinzufügen von Imagemaps](/help/assets/image-maps.md)
       + [Wiederverwenden von Assets mit MSM](/help/assets/reuse-assets-using-msm.md)
@@ -447,7 +447,7 @@ ht-degree: 99%
       + [[!DNL Assets] und MediaLibrary](/help/assets/medialibrary.md)
       + [Verwenden des PDF Rasterizer](/help/assets/aem-pdf-rasterizer.md)
       + [Konfigurieren von Upload-Beschränkungen](/help/assets/configuring-asset-upload-restrictions.md)
-      + [Integration mit [!DNL Experience Manager] und  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
+      + [Integration mit [!DNL Experience Manager] und  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
       + [Integrieren mit  [!DNL InDesign Server]](/help/assets/indesign.md)
       + [Digital Rights Management in Assets](/help/assets/drm.md)
       + [Verwenden des Demopakets für Assets Insights](/help/assets/use-demo-package-for-asset-insights.md)
@@ -981,7 +981,7 @@ ht-degree: 99%
          + [Konfigurieren von Berechtigungen für die Verwendung mit Acrobat Reader DC Extensions](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md)
          + [Verwendungsrechte einer PDF-Datei überprüfen](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
          + [Onlinekommentierung für Adobe Reader-Webbrowser-Plug-In aktivieren](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
-         + [Zeitlimitwerte zur Verwendung mit Acrobat Reader DC Extensions festlegen](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
+         + [Timeout-Werte zur Verwendung mit Acrobat Reader DC Extensions festlegen](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
          + [Aktualisieren abgelaufener Readererweiterungs-Dienstzertifikate](/help/forms/using/admin-help/updating-expired-reader-extension-certificates.md)
       + Arbeiten mit PDF Generator {#work-with-pdf-generator}
          + [Einführung in das Arbeiten mit PDF Generator](/help/forms/using/admin-help/overview-5.md)
@@ -1220,6 +1220,7 @@ ht-degree: 99%
       + [Öffnen von XFA-basierten PDF-Formularen in Firefox und Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
       + [Schwachstelle von XML External Entity (XXE) in BlazeDS](/help/forms/using/xxe-vulnerability-blazeds.md)
       + [Fehler bei der EAR-Bereitstellung auf JEE-WebLogic-Server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
+      + [Beheben von Schwachstellen in CVE-2025-64775 (Apache Struts)](/help/forms/using/mitigating-cve-apache-struts.md)
    + Alte Dokumentation {#legacy-documentation}
       + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](/help/forms/developing/building-xml.md)
       + [Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefinierten DSC von AEM Forms auf JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
@@ -1402,7 +1403,7 @@ ht-degree: 99%
                + [Grundlegendes zu Headless-Technologie in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/overview.html?lang=de)
                + [Erfahren Sie mehr über die CMS-Headless-Entwicklung](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/learn-about.html?lang=de)
                + [Erste Schritte mit AEM Headless as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/getting-started.html?lang=de)
-               + [Gestalten Ihres ersten Erlebnisses mit AEM Headless &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/path-to-first-experience.html?lang=de)
+               + [Gestalten Ihres ersten Erlebnisses mit AEM Headless ](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/path-to-first-experience.html?lang=de)
                + [Modellieren Ihres Inhalts als AEM-Inhaltsmodelle](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/model-your-content.html?lang=de)
                + [Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/access-your-content.html?lang=de)
                + [So aktualisieren Sie Ihre Inhalte über AEM Assets-APIs:](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/update-your-content.html?lang=de)
