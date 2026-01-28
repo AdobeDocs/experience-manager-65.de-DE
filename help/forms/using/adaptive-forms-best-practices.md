@@ -7,9 +7,9 @@ feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 6ec4eca0c0ad5ecfe18ffc766e6415a0f48506a9
-workflow-type: ht
-source-wordcount: '5963'
+source-git-commit: 5699f5814daf16a397eb6129b881ac2035456e39
+workflow-type: tm+mt
+source-wordcount: '5888'
 ht-degree: 100%
 
 ---
@@ -63,7 +63,7 @@ Weitere Informationen finden Sie unter[ Erstellen von AEM-Projekten mit Apache M
 Nachdem Sie Ihr AEM-Projekt eingerichtet haben, definieren Sie eine Strategie für das Authoring und Anpassen von Vorlagen für adaptive Formulare und Komponenten.
 
 * Eine adaptive Formularvorlage ist eine spezielle AEM-Seite, die die Struktur und die Informationen für Kopfzeile und Fußzeile eines adaptiven Formulars definiert. Eine Vorlage enthält vorkonfigurierte Layouts, Stile und eine einfache Struktur für ein adaptives Formular. AEM Forms bietet Standardvorlagen und -Komponenten, die Sie verwenden können, um adaptive Formulare zu erstellen. Sie können jedoch benutzerdefinierte Vorlagen und Komponenten entsprechend Ihren Anforderungen erstellen. Es wird empfohlen, Anforderungen für zusätzliche Vorlagen und Komponenten zu erfassen, die Sie in Ihren adaptiven Formularen benötigen. Weitere Informationen finden Sie unter [Anpassen von adaptiven Formularen und Komponenten](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
-* Es wird empfohlen, die Formularpakete über die Benutzeroberfläche von Form Manager anstelle der Benutzeroberfläche von CRX Package Manager hochzuladen, da das Hochladen von Paketen über CRX Package Manager manchmal zu Anomalien führen kann.
+* Es wird empfohlen, die Formularpakete über die Benutzeroberfläche von Form Manager anstelle der Benutzeroberfläche von CRX Package Manager hochzuladen, da das Hochladen von Paketen über den CRX-Paket-Manager manchmal zu Anomalien führen kann.
 * Mit AEM Forms können Sie adaptive Formulare erstellen, die auf folgenden Formularmodellen basieren. Die Formularmodelle fungieren als Schnittstelle für den Datenaustausch zwischen einem Formular und einem AEM-System und liefern eine XML-basierte Struktur für den Datenfluss innerhalb und außerhalb eines adaptiven Formulars. Außerdem legen die Formularmodelle die Regeln und Beschränkungen für adaptive Formulare in Form von Schema- und XFA-Beschränkungen fest.
 
    * **Keine**: Adaptive Formulare, die mit dieser Option erstellt worden sind, verwenden kein Formularmodell. Die XML-Datendatei, die aus diesen Formularen generiert wird, hat eine flache Struktur mit Feldern und entsprechenden Werten.
@@ -285,7 +285,7 @@ Sie können die Funktion der mehrfachen Signaturen von Adobe Sign in adaptiven F
 
 Ein Datensatzdokument (Document of Record, DoR) ist eine komprimierte PDF-Version eines adaptiven Formulars, die Sie drucken, signieren oder archivieren können.
 
-* Je nach dem Formular-Datenmodell, auf dem ein adaptives Formular basiert, können Sie eine Vorlage für ein DoR wie folgt konfigurieren:
+* Je nach dem Formulardatenmodell, auf dem ein adaptives Formular basiert, können Sie eine Vorlage für ein DoR wie folgt konfigurieren:
 
    * **XFA-Formularvorlage**: Verwendet die zugeordnete XDP-Datei als DoR-Vorlage.
    * **XSD-Schema**: Verwendet die zugeordnete XFA-Vorlage, die das gleiche XML-Schema wie das adaptive Formular verwendet.
@@ -296,17 +296,17 @@ Ein Datensatzdokument (Document of Record, DoR) ist eine komprimierte PDF-Versio
 * Ausgeblendete Felder aus DoR ausschließen.
 * Verwenden Sie den Aufforderungsparameter `afAcceptLang`; um DoR in einem anderen Gebietsschema anzuzeigen.
 
-### Debuggen und Testen von adaptiven Formularen {#debugging-and-testing-adaptive-forms}
+<!--### Debugging and testing adaptive forms {#debugging-and-testing-adaptive-forms}
 
-Das [AEM-Chrome-Plug-in](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/) ist eine Browser-Erweiterung für Google Chrome, die Tools zum Debugging adaptiver Formulare bereitstellt. Formularautorinnen und -autoren sowie Entwickelnde können diese Tools für Folgendes verwenden:
+[AEM Chrome Plug-in](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/) is a browser extension for Google Chrome that provides tools for debugging adaptive forms. Form authors and developers can use these tools to:
 
-* Identifizieren von Engpässen und Optimieren der Leistung der Formularwiedergabe
-* Debuggen von Schlüsselwörtern und bindRef-Fehlern im Formular
-* Aktivieren und Konfigurieren von Protokollen
-* Debuggen von Regeln und Skripten im Formular
-* Erkunden von guideBridge APIs, um mehr darüber zu erfahren
+* Identify bottlenecks and optimize performance of form rendering
+* Debug keywords and bindRef errors in the form
+* Enable and configure logs
+* Debug rules and scripts in the form
+* Explore and learn about guideBridge APIs
 
-Weitere Informationen finden Sie unter [AEM-Plug-In für Chrome – Adaptive Formulare](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).
+For more information, see [AEM Chrome Plug-in - Adaptive Form](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).-->
 
 ### Validieren von adaptiven Formularen auf dem AEM-Server {#validating-adaptive-forms-on-aem-server}
 
@@ -395,7 +395,7 @@ Eine der größten Herausforderungen für Unternehmen besteht im Umgang mit pers
 
 <!--The AEM Forms Rule Editor offers predefined functions for defining rules in adaptive forms without extensive programming. It facilitates the implementation of conditional logic, data validation, and integration with external sources. This visual interface is especially valuable for business users and form designers, enabling them to create dynamic and complex rules with ease, here we discusss few use cases where rule editor allows you to:-->
 
-Der AEM Forms-Regeleditor bietet eine visuelle Benutzeroberfläche zum Erstellen und Verwalten von Regeln, wodurch sich der Programmieraufwand deutlich reduziert. Dies kann insbesondere für Business-Anwenderinnen und Business-Anwender oder Formularentwicklerinnen und Formularentwickler nützlich sein, die möglicherweise keine größeren Programmierkenntnisse besitzen, aber Geschäftsregeln in den Formularen definieren und verwalten müssen. Hier werden einige Anwendungsfälle besprochen, in denen der Regeleditor Folgendes ermöglicht:
+Der AEM Forms-Regeleditor bietet eine visuelle Benutzeroberfläche zum Erstellen und Verwalten von Regeln, wodurch sich der Programmieraufwand deutlich reduziert. Dies kann insbesondere für Business-Anwenderinnen und Business-Anwender oder Formular-Designerinnen und -Designer nützlich sein, die möglicherweise keine größeren Programmierkenntnisse besitzen, aber Geschäftsregeln in den Formularen definieren und verwalten müssen. Hier werden einige Anwendungsfälle besprochen, in denen der Regeleditor Folgendes ermöglicht:
 
 * <!-- Allows you --> Definieren von Geschäftsregeln für Ihre Formulare, ohne dass eine umfangreiche Programmierung erforderlich ist.
 * <!-- Use the Rule Editor when you need --> Implementieren von Bedingungslogik in Ihren Formularen. Dazu gehören das Ein- oder Ausblenden von Formularelementen, das Ändern von Feldwerten basierend auf bestimmten Bedingungen oder das dynamische Ändern des Verhaltens Ihrer Formulare.
