@@ -694,7 +694,7 @@ Für die folgenden Probleme ist ein Hotfix zum Herunterladen und Installieren ve
 
 * **FORMS-21378**: Wenn die Server-seitige Validierung (SSV) aktiviert ist, können die Formularübermittlungen fehlschlagen. Wenn dieses Problem auftritt, wenden Sie sich bitte an den Adobe-Support.
 
-* **FORMS-23703**: Wenn die `contains` ohne Standardwert konfiguriert ist, schlägt die Server-seitige Validierung für ein adaptives Formular fehl. Sie können die neueste Version von [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) installieren, um das Problem zu beheben.
+* **FORMS-23703**: Wenn die `contains` ohne Standardwert konfiguriert ist, schlägt die Server-seitige Validierung für ein adaptives Formular fehl. Sie können die neueste Version von [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) installieren, um das Problem zu beheben.
 
 * Die Authentifizierung von Formulardatenmodell-Connectoren kann fehlschlagen, da die erforderlichen Schlüsselwörter und Regex-Muster standardmäßig nicht zulässig sind. Um das Problem zu beheben, fügen Sie Folgendes über den Configuration Manager (`/system/console/configmgr`) hinzu:
 
@@ -703,7 +703,7 @@ Für die folgenden Probleme ist ein Hotfix zum Herunterladen und Installieren ve
 
      >[!VIDEO](https://video.tv.adobe.com/v/3479697)
 
-* **FORMS-23979.**: Bei der HTML-zu-PDF-Konvertierung (PDFG) kann es zu zeitweisen Timeouts kommen. Anschließend wurde eine neuere Version des Forms-Add-ons für SP24 veröffentlicht, die die Fehlerbehebung enthält. Wenn dieses Problem auftritt, aktualisieren Sie Ihre Umgebung auf das [neueste veröffentlichte Forms-Add-on für 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* **FORMS-23979.**: Bei der HTML-zu-PDF-Konvertierung (PDFG) kann es zu zeitweisen Timeouts kommen. Anschließend wurde eine neuere Version des Forms-Add-ons für SP24 veröffentlicht, die die Fehlerbehebung enthält. Wenn dieses Problem auftritt, aktualisieren Sie Ihre Umgebung auf das [neueste veröffentlichte Forms-Add-on für 6.5.24.0](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23722** (Dateianhänge fehlen in „Aufgabe zuweisen„): Wenn ein Formular mit einem Feld **Dateianhang** an einen AEM-Workflow übermittelt wird, der einen Schritt **Aufgabe zuweisen** verwendet, werden die Anhänge nicht angezeigt, wenn die Aufgabe aus dem Posteingang geöffnet wird. Die Dateien werden korrekt im Repository gespeichert und sind in CRX sichtbar. Nur in der Benutzeroberfläche des Schritts „Aufgabe zuweisen“ werden sie nicht angezeigt.
 
