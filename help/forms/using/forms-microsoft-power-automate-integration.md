@@ -6,10 +6,10 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 0487a5669fbaab35974eb85eb099b82e0847a4f9
+source-git-commit: 385803015a09a11bcc97fed979d529d85f7facb8
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 99%
+source-wordcount: '1283'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 99%
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM 6.5 | Dieser Artikel |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/integrate/set-submit-action/forms-microsoft-power-automate-integration) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/set-submit-action/forms-microsoft-power-automate-integration) |
 
 Sie können ein adaptives Formular so konfigurieren, dass bei der Übermittlung ein Cloud-Fluss bei Microsoft® Power Automate ausgeführt wird. Das konfigurierte adaptive Formular sendet erfasste Daten, Anhänge und das Datensatzdokument zur Verarbeitung an den Cloud-Fluss von Power Automate. Dies hilft Ihnen beim Erstellen benutzerdefinierter Datenerfassungsprozesse und nutzt gleichzeitig die Leistungsfähigkeit von Microsoft® Power Automate, um Geschäftslogiken zu erfassten Daten zu erstellen und Kunden-Workflows zu automatisieren. Im Folgenden finden Sie einige Beispiele dafür, was Sie nach der Integration eines adaptiven Formulars in Microsoft® Power Automate tun können:
 
@@ -27,7 +27,7 @@ Sie können ein adaptives Formular so konfigurieren, dass bei der Übermittlung 
 * Führen Sie komplexe Berechnungen für erfasste Daten durch
 * Speichern Sie die Daten von adaptiven Formularen in Speichersystemen nach einem vordefinierten Zeitplan
 
-Der Editor für adaptive Formulare verfügt über die Übermittlungsaktion **Aufrufen eines Microsoft® Power Automate-Flusses** zum Senden von Daten, Anhängen und Datensatzdokumenten für adaptive Formulare an den Cloud-Fluss von Power Automate. Um die Übermittlungsaktion dazu zu verwenden, erfasste Daten an Microsoft® Power Automate zu senden, [verbinden Sie Ihre AEM Forms-Autoreninstanz mit Microsoft® Power Automate] (#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
+Der Editor für adaptive Formulare verfügt über die Übermittlungsaktion **Aufrufen eines Microsoft® Power Automate-Flusses** zum Senden von Daten, Anhängen und Datensatzdokumenten für adaptive Formulare an den Cloud-Fluss von Power Automate. Um die Übermittlungsaktion dazu zu verwenden, erfasste Daten an Microsoft® Power Automate zu senden, [verbinden Sie Ihre AEM Forms-Autoreninstanz mit Microsoft® Power Automate](#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
 
 ## Voraussetzungen
 
@@ -118,6 +118,14 @@ Führen Sie die folgenden Schritte aus, um Ihre AEM Forms-Autoreninstanz mit Mic
 1. Wählen Sie auf der Seite „Veröffentlichen“ die Option **[!UICONTROL Alle Konfigurationen]** und dann die Option **[!UICONTROL Veröffentlichen]** aus. Veröffentlichen Sie sowohl die Cloud-Konfigurationen des Power Automate Dataverse als auch die des Power Automate Flow Service.
 
 Ihre AEM Forms-Autoreninstanz ist jetzt mit Microsoft® Power Automate verbunden. Sie können jetzt Daten von adaptiven Formularen an einen Power Automate-Fluss senden.
+
+>[!IMPORTANT]
+>
+>Token, die für die Microsoft® Power Automate-Verbindung verwendet werden, laufen nach 90 Tagen ab.
+>
+> Führen Sie die Schritte aus, die unter [Veröffentlichen der Cloud-Konfigurationen von Microsoft® Power Automate Dataverse und Microsoft® Power Automate Flow Service dokumentiert sind, bevor oder nach Ablauf des Tokens der Vorgang fortgesetzt wird, um die Integration zu funktionieren und sowohl die Cloud-Konfigurationen des Microsoft® Power Automate Dataverse als auch des Microsoft® Power Automate Flow Service erneut zu authentifizieren und ](#publish-microsoft-power-automate-dataverse-cloud-configuration).
+>
+> Details zu Token-Lebensdauerrichtlinien finden Sie in der [Microsoft Entra-Dokumentation zu konfigurierbaren Token-Lebensdauern](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens). Wenn das Token nicht erneuert wird, können Formularübermittlungen an Power Automate fehlschlagen.
 
 ## Verwenden der Übermittlungsaktion „Microsoft® Power Automate-Fluss aufrufen“, um Daten an einen Power Automate-Fluss zu senden {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
