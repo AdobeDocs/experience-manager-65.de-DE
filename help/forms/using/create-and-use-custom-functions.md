@@ -64,7 +64,7 @@ Syntax: `@private` Eine Private-Funktion ist nicht als benutzerdefinierte Funkti
 
 * **Name**
 Syntax: `@name funcName <Function Name>`
-Alternativ dazu ist es möglich`,``@function funcName <Function Name>` **oder** `@func` `funcName <Function Name>` zu verwenden.
+Alternativ dazu ist es möglich`,` `@function funcName <Function Name>` **oder** `@func` `funcName <Function Name>` zu verwenden.
   `funcName` ist der Name der Funktion (Leerzeichen sind nicht zulässig).
   `<Function Name>` ist der Anzeigename der Funktion.
 
