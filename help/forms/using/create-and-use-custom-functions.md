@@ -4,16 +4,20 @@ description: AEM Forms unterstützt benutzerdefinierte Funktionen, sodass Benutz
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
 exl-id: 14a52bc1-c1b4-4a12-b8e1-54523e5f30bd
-source-git-commit: 23d3796e15294b0fc7486096ea02bcbedbed69f3
+source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 100%
+source-wordcount: '1116'
+ht-degree: 97%
 
 ---
 
 # Benutzerdefinierte Funktionen in adaptiven Formularen
 
 ## Einführung
+
+>[!NOTE]
+>
+> Benutzerdefinierte Funktionen müssen mit ECMAScript 5 (ES5) kompatibel sein. Foundation Forms unterstützt nur ES5. Die Verwendung neuerer ECMAScript-Versionen (ES6 und höher) wird nicht unterstützt und kann zu Fehlern oder unerwartetem Verhalten führen.
 
 AEM Forms 6.5 bietet nun die Möglichkeit, JavaScript-Funktionen zu definieren, mit denen komplexe Geschäftsregeln mithilfe des Regeleditors definiert werden können. AEM Forms bietet eine Reihe solcher benutzerdefinierten Funktionen standardmäßig, aber Sie müssen Ihre eigenen benutzerdefinierten Funktionen definieren und sie in mehreren Formularen verwenden.
 
@@ -56,8 +60,7 @@ Stellen Sie sicher, dass die benutzerdefinierte Funktion, die Sie schreiben, mit
 Unterstützte `jsdoc`-Tags:
 
 * **Private** (Privat)
-Syntax: `@private`  
-Eine Private-Funktion ist nicht als benutzerdefinierte Funktion enthalten.
+Syntax: `@private` Eine Private-Funktion ist nicht als benutzerdefinierte Funktion enthalten.
 
 * **Name**
 Syntax: `@name funcName <Function Name>`
@@ -75,9 +78,9 @@ Alternativ dazu ist es möglich, `@argument` `{type} name <Parameter Description
 Zeigt die von der Funktion verwendeten Parameter an. In einer Funktion können mehrere Parameter-Tags vorhanden sein (je ein Tag für jeden Parameter in der Reihenfolge ihres Auftretens).
   `{type}` gibt den Parametertyp an. Zulässige Parametertypen sind:
 
-   1. String (Zeichenfolge)
+   1. Zeichenfolge
    2. Number (Zahl)
-   3. Boolean (Boolesch)
+   3. Boolesch
    4. Scope (Umfang)
 
   Der Umfang wird für die Verweise auf Felder eines adaptiven Formulars verwendet. Wenn ein Formular verzögertes Laden (Lazy Loading) verwendet, können Sie `scope` verwenden, um auf dessen Felder zuzugreifen. Sie können auf Felder zugreifen, wenn die Felder geladen wurden oder wenn die Felder als „global“ gekennzeichnet sind.
@@ -88,11 +91,11 @@ Zeigt die von der Funktion verwendeten Parameter an. In einer Funktion können m
 Syntax: `@return {type}`
 Alternativ ist es möglich, `@returns {type}` zu verwenden.
 Fügt Informationen über die Funktion hinzu (z. B. ihren Zweck).
-Die Zeichenfolge „{type}“ gibt den Rückgabetyp der Funktion an. Zulässige Rückgabetypen sind:
+  {type} gibt den Rückgabetyp der Funktion an. Zulässige Rückgabetypen sind:
 
-   1. String (Zeichenfolge)
+   1. Zeichenfolge
    1. Number (Zahl)
-   1. Boolean (Boolesch)
+   1. Boolesch
 
   Alle anderen Rückgabetypen fallen in eine der oben genannten Kategorien. Keine Angabe wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Bei Rückgabetypen wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 

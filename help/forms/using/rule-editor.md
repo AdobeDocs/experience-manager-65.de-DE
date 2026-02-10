@@ -9,10 +9,10 @@ docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
 workflow-type: tm+mt
-source-wordcount: '6607'
-ht-degree: 100%
+source-wordcount: '6639'
+ht-degree: 99%
 
 ---
 
@@ -196,7 +196,7 @@ Die folgende Abbildung zeigt ein Beispiel für das dynamische Hinzufügen von Ko
 
 **Instanz entfernen**: Entfernt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile.
 
-**Navigieren zu**: Navigiert zu anderen adaptiven Formularen, anderen Assets (wie Bildern oder Dokument-Fragmenten) oder zu einer externen URL. Weitere Informationen finden Sie unter [Hinzufügen einer Schaltfläche zur interaktiven Kommunikation](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
+**Navigieren zu**: Navigiert zu anderen adaptiven Formularen für die interaktive Kommunikation, anderen Assets (wie Bildern oder Dokument-Fragmenten) oder zu einer externen URL. Weitere Informationen finden Sie unter [Hinzufügen einer Schaltfläche zur interaktiven Kommunikation](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
 
 ### Wert festlegen {#set-value-of}
 
@@ -340,8 +340,8 @@ So definieren Sie eine auf einem Formulardatenmodell basierende Regel:
 
 1. Wählen Sie **Service-Ausgabe** in der Dropdown-Liste aus.
 1. Wählen Sie das Datenmodellobjekt aus.
-1. Wählen Sie in der Dropdown-Liste **Wert anzeigen** eine Datenmodell-Objekteigenschaft aus. Die Anzahl der Kontrollkästchen im adaptiven Formular wird von der Anzahl der Instanzen abgeleitet, die für diese Eigenschaft in der Datenbank definiert wurden.
-1. Wählen Sie in der Dropdown-Liste **Wert speichern** eine Datenmodell-Objekteigenschaft.
+1. Wählen Sie in der Dropdown-Liste **Wert anzeigen** eine Datenmodellobjekt-Eigenschaft aus. Die Anzahl der Kontrollkästchen im adaptiven Formular wird von der Anzahl der Instanzen abgeleitet, die für diese Eigenschaft in der Datenbank definiert wurden.
+1. Wählen Sie in der Dropdown-Liste **Wert speichern** eine Datenmodellobjekt-Eigenschaft.
 
 ![FDM-Set-Optionen](assets/fdm_set_options_new.png)
 
@@ -489,13 +489,13 @@ Führen Sie die folgenden Schritte aus, um die Regeln zu schreiben:
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. Wählen Sie **[!UICONTROL Option auswählen]** und dann **[!UICONTROL Mathematischer Ausdruck]** aus. Ein Feld, in dem Sie mathematische Ausdrücke schreiben können, wird geöffnet.
+1. Wählen Sie **[!UICONTROL Option auswählen]** und dann **[!UICONTROL Mathematischer Ausdruck]** aus. Ein Feld, in das Sie mathematische Ausdrücke schreiben können, wird geöffnet.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
 1. Gehen Sie in diesem Ausdrucksfeld wie folgt vor:
 
-   * Wählen Sie das Feld **Gehalt**   im ersten Feld **Legen Sie das Objekt ab oder wählen Sie hier aus** aus oder ziehen Sie es von der Registerkarte „Formularobjekt“ hierhin.
+   * Wählen Sie das Feld **Gehalt** im ersten Feld **Legen Sie das Objekt ab oder wählen Sie hier aus** aus oder ziehen Sie es von der Registerkarte „Formularobjekt“ hierhin.
 
    * Wählen Sie aus dem Feld **Operator auswählen** die Option **plus** aus.
 
@@ -564,6 +564,10 @@ Beim Schreiben von JavaScript-Code in den Regeleditor helfen Ihnen die folgenden
 
 #### Benutzerdefinierte Funktionen im Regeleditor {#custom-functions}
 
+>[!NOTE]
+>
+> Benutzerdefinierte Funktionen müssen mit ECMAScript 5 (ES5) kompatibel sein. Foundation Forms unterstützt nur ES5. Die Verwendung neuerer ECMAScript-Versionen (ES6 und höher) wird nicht unterstützt und kann zu Fehlern oder unerwartetem Verhalten führen.
+
 Zusätzlich zu den vorkonfigurierten Funktionen wie beispielsweise *Summe von*, die unter „Funktionenausgabe“ aufgeführt sind, können Sie auch benutzerdefinierte Funktionen erstellen, die Sie häufig benötigen. Stellen Sie sicher, dass für die Funktion, die Sie schreiben, ein `jsdoc` vorhanden ist.
 
 Dieses dazugehörige `jsdoc` ist aus den folgenden Gründen erforderlich:
@@ -576,8 +580,7 @@ Weitere Informationen finden Sie unter [usejsdoc.org](https://jsdoc.app/).
 Unterstützte `jsdoc`-Tags:
 
 * **Private** (Privat)
-Syntax: `@private`  
-Eine Private-Funktion ist nicht als benutzerdefinierte Funktion enthalten.
+Syntax: `@private` Eine Private-Funktion ist nicht als benutzerdefinierte Funktion enthalten.
 
 * **Name**
 Syntax: `@name funcName <Function Name>`
@@ -595,9 +598,9 @@ Alternativ dazu ist es möglich, `@argument` `{type} name <Parameter Description
 Zeigt die von der Funktion verwendeten Parameter an. In einer Funktion können mehrere Parameter-Tags vorhanden sein (je ein Tag für jeden Parameter in der Reihenfolge ihres Auftretens).
   `{type}` gibt den Parametertyp an. Zulässige Parametertypen sind:
 
-   1. String (Zeichenfolge)
+   1. Zeichenfolge
    1. Number (Zahl)
-   1. Boolean (Boolesch)
+   1. Boolesch
    1. Scope (Umfang)
 
   Der Umfang wird für die Verweise auf Felder eines adaptiven Formulars verwendet. Wenn ein Formular verzögertes Laden (Lazy Loading) verwendet, können Sie `scope` verwenden, um auf dessen Felder zuzugreifen. Sie können auf Felder zugreifen, wenn die Felder geladen wurden oder wenn die Felder als „global“ gekennzeichnet sind.
@@ -608,11 +611,11 @@ Zeigt die von der Funktion verwendeten Parameter an. In einer Funktion können m
 Syntax: `@return {type}`
 Alternativ ist es möglich, `@returns {type}` zu verwenden.
 Fügt Informationen über die Funktion hinzu (z. B. ihren Zweck).
-Die Zeichenfolge „{type}“ gibt den Rückgabetyp der Funktion an. Zulässige Rückgabetypen sind:
+  {type} gibt den Rückgabetyp der Funktion an. Zulässige Rückgabetypen sind:
 
-   1. String (Zeichenfolge)
+   1. Zeichenfolge
    1. Number (Zahl)
-   1. Boolean (Boolesch)
+   1. Boolesch
 
   Alle anderen Rückgabetypen fallen in eine der oben genannten Kategorien. Keine Angabe wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Bei Rückgabetypen wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 
