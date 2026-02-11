@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: a750a6093ae8ba6b43c46af52077ed3773d59a20
+source-git-commit: 71e85d8d140d0d478c9ef27daf90960747df295f
 workflow-type: tm+mt
-source-wordcount: '9595'
+source-wordcount: '9567'
 ht-degree: 20%
 
 ---
@@ -652,9 +652,10 @@ Die Vorschau von Inhaltsfragmenten schlägt aufgrund des DoS-Schutzes für eine 
 
 #### Probleme mit verfügbaren Hotfixes {#aem-forms-issues-with-hotfixes}
 
+<!-- 
 >[!NOTE]
 >
->Vermeiden Sie ein Upgrade auf Service Pack 6.5.24.0 für Probleme ohne verfügbaren Hotfix. Dies kann zu unerwarteten Fehlern führen. Führen Sie erst ein Upgrade auf Service Pack 6.5.24.0 durch, nachdem die erforderlichen Hotfixes veröffentlicht wurden.
+>Avoid upgrading to Service Pack 6.5.24.0 for issues without an available hotfix. It may lead to unexpected errors. Upgrade to Service Pack 6.5.24.0 only after the required hotfixes are released. -->
 
 Für die folgenden Probleme ist ein Hotfix zum Herunterladen und Installieren verfügbar. Sie können [den Hotfix herunterladen und installieren](/help/release-notes/aem-forms-hotfix.md), um diese Probleme zu beheben:
 
@@ -676,7 +677,7 @@ Für die folgenden Probleme ist ein Hotfix zum Herunterladen und Installieren ve
    2. Löschen Sie das Bundle `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Starten Sie den AEM-Server neu.
 
-* **FORMS-23703** Wenn die `contains` ohne Standardwert konfiguriert ist, schlägt die Server-seitige Validierung für ein adaptives Formular fehl. Sie können die neueste Version von [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) installieren, um das Problem zu beheben.
+* **FORMS-23703** Wenn die `contains` ohne Standardwert konfiguriert ist, schlägt die Server-seitige Validierung für ein adaptives Formular fehl. Sie können die neueste Version von [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) installieren, um das Problem zu beheben.
 
 * Die Authentifizierung von Formulardatenmodell-Connectoren kann fehlschlagen, da die erforderlichen Schlüsselwörter und Regex-Muster standardmäßig nicht zulässig sind. Um das Problem zu beheben, fügen Sie Folgendes über den Configuration Manager (`/system/console/configmgr`) hinzu:
 
@@ -685,13 +686,13 @@ Für die folgenden Probleme ist ein Hotfix zum Herunterladen und Installieren ve
 
      >[!VIDEO](https://video.tv.adobe.com/v/3479697)
 
-* Bei der **FORMS-23979**-Konvertierung von HTML in PDF (PDFG) können zeitweise Zeitüberschreitungen auftreten. Anschließend wurde eine neuere Version des Forms-Add-ons für SP24 veröffentlicht, die die Fehlerbehebung enthält. Wenn dieses Problem auftritt, aktualisieren Sie Ihre Umgebung auf das [neueste veröffentlichte Forms-Add-on für 6.5.24.0](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* Bei der **FORMS-23979**-Konvertierung von HTML in PDF (PDFG) können zeitweise Zeitüberschreitungen auftreten. Anschließend wurde eine neuere Version des Forms-Add-ons für SP24 veröffentlicht, die die Fehlerbehebung enthält. Wenn dieses Problem auftritt, aktualisieren Sie Ihre Umgebung auf das [neueste veröffentlichte Forms-Add-on für 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23717** Nach dem Upgrade auf **AEM Forms-6.5.24.0** können `server.log` und `error.log` mit wiederholten WARNMELDUNGEN wie *Erstellung der sicheren Parserfactory fehlgeschlagen* oder *Sicherheitsattribut … wird nicht unterstützt*. Protokolle können um ca. **5-10 Zeilen pro Sekunde (** von MB pro Stunde) zunehmen, wodurch Festplatten ausgefüllt und der Produktions-Rollout blockiert werden kann. **Fehlerbehebung:** in AEM Forms **6.5.25.0** enthalten. **Bis dahin:**
 
   Um das Protokollvolumen zu reduzieren, legen Sie die Protokollierungsebene für `com.adobe.util.XMLSecurityUtil` in Ihrer Anwendungsserverkonfiguration oder über die JVM-`ERROR` auf `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR` fest. Dadurch werden nur die Nachrichten ausgeblendet, die zugrunde liegende Ursache wird nicht behoben.
 
-* **FORMS-23875** Bei der Formulardatenmodellsuche wird ein HTML-Tag in der Benutzeroberfläche angezeigt, auch wenn keine relevante Entität vorhanden ist. Um das Problem zu beheben, laden Sie den Hotfix von [dem Link“ herunter und &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip) Sie ihn.
+* **FORMS-23875** Bei der Formulardatenmodellsuche wird ein HTML-Tag in der Benutzeroberfläche angezeigt, auch wenn keine relevante Entität vorhanden ist. Um das Problem zu beheben, laden Sie den Hotfix von [dem Link“ herunter und ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip) Sie ihn.
 
 ## Enthaltene OSGi- und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
