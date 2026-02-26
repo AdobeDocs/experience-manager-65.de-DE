@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
-workflow-type: ht
+source-git-commit: cbdb64772f66e5e69de5e4e7ae1cd0d023276b34
+workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ Die exemplarische Anleitung basiert auf AEM-Standardfunktionen und der beispielh
 * [Die Beispiel-Anwendung des WKND SPA-Projekts ist auf GitHub verfügbar](https://github.com/adobe/aem-guides-wknd-spa)
    * Laden Sie die [neueste Version der React-Anwendung herunter.](https://github.com/adobe/aem-guides-wknd-spa/releases) Sie wird ähnlich benannt wie `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
    * Laden Sie die [neuesten Beispielbilder](https://github.com/adobe/aem-guides-wknd-spa/releases) für die Anwendung herunter. Sie wird ähnlich benannt wie `wknd-spa-sample-images-X.Y.Z.zip`.
-   * [Verwenden Sie den Package Manager](/help/sites-administering/package-manager.md), um die Pakete zu installieren, wie Sie es mit jedem anderen Paket in AEM tun würden.
+   * [Verwenden Sie den Paket-Manager](/help/sites-administering/package-manager.md), um die Pakete zu installieren, wie Sie es mit jedem anderen Paket in AEM tun würden.
    * Für die Zwecke dieser schrittweisen Anleitung muss die Anwendung nicht mit Maven installiert werden.
 
 >[!CAUTION]
