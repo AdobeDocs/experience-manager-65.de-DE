@@ -655,7 +655,7 @@ Die Vorschau von Inhaltsfragmenten schlägt aufgrund des DoS-Schutzes für eine 
 * **FORMS-16575** Alle Änderungen an der XDP verschachtelter Layout-Fragmente in einer interaktiven Kommunikation werden nicht im IC-Editor übernommen.
 * **FORMS-21378** Wenn die Server-seitige Validierung (SSV) aktiviert ist, können die Formularübermittlungen fehlschlagen. Wenn dieses Problem auftritt, wenden Sie sich bitte an den Adobe-Support.
 * **FORMS-23722** Wenn ein Formular mit einem Feld **Dateianhang**, das `bindref` verwendet, an einen AEM-Workflow mit dem Schritt **Aufgabe zuweisen** gesendet wird, werden die Anlagen nicht angezeigt. Daher werden sie nicht angezeigt, wenn die Aufgabe aus dem Posteingang geöffnet wird. Die Dateien werden korrekt im Repository gespeichert, aber in der Benutzeroberfläche des Schritts „Aufgabe zuweisen“ können die Anlagen nicht angezeigt werden.
-* **Benutzerdefinierte FORMS-23802**-Funktionen können nicht in der Vorschau geladen oder veröffentlicht werden, wenn ein adaptives Formular in eine Sites-Seite eingebettet ist. Dieses Problem tritt auf, wenn die **aem-forms-core-component**-Bibliotheksversion vor 1.1.76 liegt. Möglicherweise wird ein Fehler wie `InvalidFormContainerException: No form container found` in den Protokollen angezeigt. AEM Forms Um dieses Problem zu beheben[ laden Sie den Hotfix für ](/help/release-notes/aem-forms-hotfix.md) SP24 (AddOn 6.0.1454) herunter und installieren Sie ihn.
+* **Benutzerdefinierte FORMS-23802**-Funktionen können nicht in der Vorschau geladen oder veröffentlicht werden, wenn ein adaptives Formular in eine Sites-Seite eingebettet ist. Dieses Problem tritt auf, wenn die **aem-forms-core-component**-Bibliotheksversion vor 1.1.76 liegt. Möglicherweise wird ein Fehler wie `InvalidFormContainerException: No form container found` in den Protokollen angezeigt. AEM Forms Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) SP24 (AddOn 6.0.1454) herunter und installieren Sie ihn.
 
 #### Bekannte Probleme mit verfügbaren Hotfixes {#aem-forms-issues-with-hotfixes}
 
@@ -668,11 +668,11 @@ Für die folgenden Probleme ist ein Hotfix zum Herunterladen und Installieren ve
 
 <!--* FORMS-23881 On AEM Forms JEE deployments set up using the 6.5.23.0 full installer, Output Service fails to process requests when a custom XCI file is supplied in the invocation. To resolve this issue, install the latest AEM 6.5.24.0 Forms Service Pack from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.-->
 
-* **FORMS-23789** (nur AEM Forms auf JEE): Bei Benutzenden traten Probleme mit Log4j in AEM Forms auf JEE SP24 auf, was zu Störungen bei der Protokollierung und Überwachung für Unternehmenskunden führte. Um dieses Problem zu beheben, [ Sie unter „Herunterladen und Installieren des ](/help/release-notes/aem-forms-hotfix.md)&quot; für AEM Forms on JEE Service Pack 6.5.24.0.
+* **FORMS-23789** (nur AEM Forms auf JEE): Bei Benutzenden traten Probleme mit Log4j in AEM Forms auf JEE SP24 auf, was zu Störungen bei der Protokollierung und Überwachung für Unternehmenskunden führte. Um dieses Problem zu beheben, [&#x200B; Sie unter „Herunterladen und Installieren des &#x200B;](/help/release-notes/aem-forms-hotfix.md)&quot; für AEM Forms on JEE Service Pack 6.5.24.0.
 
 * **Benutzerdefinierte FORMS-23802**-Funktionen werden nicht in der Vorschau- oder Veröffentlichungsinstanz geladen, wenn sich das Formular auf einer Sites-Seite mit einer älteren Version der Kernkomponente „aem-forms-core-component“ (&lt;1.1.76) befindet. Um dieses Problem zu beheben, installieren Sie den [AEM Forms-AddOn-Hotfix 6.0.1454](/help/release-notes/aem-forms-hotfix.md) für SP24.
 
-* **FORMS-23789** (nur AEM Forms auf JEE): Bei Benutzenden traten Probleme mit Log4j in AEM Forms auf JEE SP24 auf, was zu Störungen bei der Protokollierung und Überwachung für Unternehmenskunden führte. Um dieses Problem zu beheben, [ Sie unter „Herunterladen und Installieren des ](/help/release-notes/aem-forms-hotfix.md)&quot; für AEM Forms on JEE Service Pack 6.5.24.0.
+* **FORMS-23789** (nur AEM Forms auf JEE): Bei Benutzenden traten Probleme mit Log4j in AEM Forms auf JEE SP24 auf, was zu Störungen bei der Protokollierung und Überwachung für Unternehmenskunden führte. Um dieses Problem zu beheben, [&#x200B; Sie unter „Herunterladen und Installieren des &#x200B;](/help/release-notes/aem-forms-hotfix.md)&quot; für AEM Forms on JEE Service Pack 6.5.24.0.
 
 * **Benutzerdefinierte FORMS-23802**-Funktionen werden nicht in der Vorschau- oder Veröffentlichungsinstanz geladen, wenn sich das Formular auf einer Sites-Seite mit einer älteren Version der Kernkomponente „aem-forms-core-component“ (&lt;1.1.76) befindet. Um dieses Problem zu beheben, installieren Sie den [AEM Forms-AddOn-Hotfix 6.0.1454](/help/release-notes/aem-forms-hotfix.md) für SP24.
 
@@ -696,7 +696,7 @@ Für die folgenden Probleme ist ein Hotfix zum Herunterladen und Installieren ve
 
 * **FORMS-23703** Wenn die `contains` ohne Standardwert konfiguriert ist, schlägt die Server-seitige Validierung für ein adaptives Formular fehl. Sie können die neueste Version von [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) installieren, um das Problem zu beheben.
 
-* **GRANITE-63681** Formulardatenmodell-Connectoren können möglicherweise nicht authentifiziert werden, da die erforderlichen Schlüsselwörter und Regex-Muster standardmäßig nicht zulässig sind. Um das Problem zu beheben, laden Sie den Hotfix vom (Link[ herunter und installieren ](/help/release-notes/aem-forms-hotfix.md) ihn.
+* **GRANITE-63681** Formulardatenmodell-Connectoren können möglicherweise nicht authentifiziert werden, da die erforderlichen Schlüsselwörter und Regex-Muster standardmäßig nicht zulässig sind. Um das Problem zu beheben, laden Sie den Hotfix vom (Link[&#x200B; herunter und installieren &#x200B;](/help/release-notes/aem-forms-hotfix.md) ihn.
 
   <!--To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
 
@@ -711,7 +711,7 @@ Für die folgenden Probleme ist ein Hotfix zum Herunterladen und Installieren ve
 
 Um das Protokollvolumen zu reduzieren, legen Sie in Ihrer Anwendungsserverkonfiguration oder über die JVM-`com.adobe.util.XMLSecurityUtil` die Protokollierungsebene für `ERROR` auf `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR` fest. Diese Funktion blendet nur die Nachrichten aus und behebt nicht die zugrunde liegende Ursache.
 
-* **FORMS-23875** Bei der Formulardatenmodellsuche wird ein HTML-Tag in der Benutzeroberfläche angezeigt, auch wenn keine relevante Entität vorhanden ist. Um das Problem zu beheben, laden Sie den Hotfix von [dem Link“ herunter und ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip) Sie ihn.
+* **FORMS-23875** Bei der Formulardatenmodellsuche wird ein HTML-Tag in der Benutzeroberfläche angezeigt, auch wenn keine relevante Entität vorhanden ist. Um das Problem zu beheben, laden Sie den Hotfix von [dem Link“ herunter und &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip) Sie ihn.
 
 ## Enthaltene OSGi- und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
