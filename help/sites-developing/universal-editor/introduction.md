@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Flexibilität des universellen Editors 
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: 9f91063e51aa599ef48967f832aa359ecf100fc2
-workflow-type: ht
-source-wordcount: '1183'
-ht-degree: 100%
+source-git-commit: 28e44586c6a8596037a44fa10d21b3fdcdea1606
+workflow-type: tm+mt
+source-wordcount: '1208'
+ht-degree: 96%
 
 ---
 
@@ -40,9 +40,9 @@ Der universelle Editor ist ein Service, der mit AEM zusammenarbeitet, um Inhalte
 Der universelle Editor wird unterstützt von:
 
 * AEM 6.5
-   * Es wird sowohl lokales als auch AMS-Hosting unterstützt.
+   * Sowohl On-Premise- als auch AMS*-Hosting werden unterstützt.
 * [AEM 6.5 LTS](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
-   * Es wird sowohl lokales als auch AMS-Hosting unterstützt.
+   * Sowohl On-Premise- als auch AMS*-Hosting werden unterstützt.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)
 
 Dieses Dokument konzentriert sich auf die Unterstützung von AEM 6.5 durch den universellen Editor. Um den universellen Editor mit AEM 6.5 zu verwenden, benötigen Sie Folgendes:
@@ -50,6 +50,10 @@ Dieses Dokument konzentriert sich auf die Unterstützung von AEM 6.5 durch den u
 * AEM 6.5 mit Service Pack 23 oder höher
    * Die Service Packs 21 und 22 werden auch mit [einem Feature Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip) unterstützt.
 * Dispatcher ordnungsgemäß konfiguriert
+
+>[!NOTE]
+>
+>*Wenn Sie Adobe Managed Services (AMS) verwenden, wenden Sie sich an Ihren Customer Success Engineer (CSE), wenn Sie den universellen Editor verwenden möchten.
 
 ## Einrichtung {#setup}
 
