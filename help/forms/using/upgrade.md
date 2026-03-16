@@ -9,10 +9,10 @@ role: Admin,User
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 4f9129101f537e035b8a7ec52fbc046ae6f93f92
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 100%
+source-wordcount: '362'
+ht-degree: 88%
 
 ---
 
@@ -45,7 +45,7 @@ Eine Multihop-Aktualisierung ist möglich von:
 
 Das folgende Diagramm zeigt die verfügbaren Aktualisierungspfade für AEM Forms on JEE:
 
-![JEE-Aktualisierung 6.5](do-not-localize/jee-upgrade-6-5.png)
+![JEE-Aktualisierung 6.5](do-not-localize/upgradepathjee.png)
 
 
 Sie können von hier aus eine direkte Aktualisierung durchführen:
@@ -61,9 +61,9 @@ Eine Multihop-Aktualisierung ist möglich von:
 * AEM 6.1 Forms on JEE
 * AEM 6.2 Forms on JEE
 
-AEM 6.5.18.0 Forms on JEE bietet zwei Arten von Installationsprogrammen: ein [Vollinstallationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) und ein [Patch-Installationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de).
+AEM 6.5.18.0 Forms on JEE bietet zwei Arten von Installationsprogrammen: [Vollinstallationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) und [Patch-](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de).
 
-**Vollinstallationsprogramm**: Sie können das Vollinstallationsprogramm verwenden, um neue AEM Forms-Instanzen einzurichten oder Upgrades von AEM 6.5.x.x Forms on JEE auf AEM 6.5.18.0 Forms on JEE durchzuführen.
+**Vollinstallationsprogramm**: Sie können das Vollinstallationsprogramm verwenden, um neue AEM Forms-Instanzen einzurichten oder Aktualisierungen von AEM 6.5.x.x Forms on JEE auf AEM 6.5.18.0 Forms on JEE durchzuführen.
 
 **Patch-Installationsprogramm**: Das Patch-Installationsprogramm ist für Kundinnen und Kunden vorgesehen, die bereits AEM 6.5.x.x verwenden. Mit dem Patch-Installationsprogramm können Sie eine Aktualisierung auf die neueste Version von AEM Forms durchführen.
 
@@ -78,7 +78,7 @@ Weitere Informationen zum Installieren des neuesten Service Pack für die JEE-Um
 
 Migration involves moving only assets (PDF, XDP, images, adaptive forms, correspondence management assets) from one server to another - processes (LCA), settings, configurations, and a few other pieces of metadata are not migrated. Perform the following steps to migrate to AEM 6.3 Forms:
 
-1. Set up a fresh environment of [AEM 6.3 Forms](https://adobe.com/go/learn_aemforms_documentation_63_de).
+1. Set up a fresh environment of [AEM 6.3 Forms](https://adobe.com/go/learn_aemforms_documentation_63).
 1. Move XDP or other compatible assets to the freshly set instance. For detailed instructions, see [Importing and exporting assets to AEM Forms](../../forms/using/import-export-forms-templates.md). [
    ](../../forms/using/import-export-forms-templates.md)
 1. Build the required services, if any.
