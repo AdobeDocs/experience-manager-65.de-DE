@@ -235,7 +235,7 @@ Genaue Details zum Erstellen von Audiobeschreibungen für Videos würden den Rah
 * [Erfolgskriterien 1.2.3 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
 
 <!--
-* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
+* [Adobe Encore](https://www.adobe.com/de/products/encore.html) - a DVD authoring software tool
 -->
 
 ### Untertitel (live) (1.2.4)  {#captions-live}
