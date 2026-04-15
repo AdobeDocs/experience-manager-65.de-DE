@@ -123,7 +123,7 @@ Ihre AEM Forms-Autoreninstanz ist jetzt mit Microsoft® Power Automate verbunden
 >
 >Token, die für die Microsoft® Power Automate-Verbindung verwendet werden, laufen nach 90 Tagen ab.
 >
-> Führen Sie die Schritte aus, die unter [Veröffentlichen der Cloud-Konfigurationen von Microsoft® Power Automate Dataverse und Microsoft® Power Automate Flow Service dokumentiert sind, bevor oder nach Ablauf des Tokens der Vorgang fortgesetzt wird, um die Integration zu funktionieren und sowohl die Cloud-Konfigurationen des Microsoft® Power Automate Dataverse als auch des Microsoft® Power Automate Flow Service erneut zu authentifizieren und ](#publish-microsoft-power-automate-dataverse-cloud-configuration).
+> Führen Sie die Schritte aus, die unter [Veröffentlichen der Cloud-Konfigurationen von Microsoft® Power Automate Dataverse und Microsoft® Power Automate Flow Service dokumentiert sind, bevor oder nach Ablauf des Tokens der Vorgang fortgesetzt wird, um die Integration zu funktionieren und sowohl die Cloud-Konfigurationen des Microsoft® Power Automate Dataverse als auch des Microsoft® Power Automate Flow Service erneut zu authentifizieren und &#x200B;](#publish-microsoft-power-automate-dataverse-cloud-configuration).
 >
 > Details zu Token-Lebensdauerrichtlinien finden Sie in der [Microsoft Entra-Dokumentation zu konfigurierbaren Token-Lebensdauern](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens). Wenn das Token nicht erneuert wird, können Formularübermittlungen an Power Automate fehlschlagen.
 
