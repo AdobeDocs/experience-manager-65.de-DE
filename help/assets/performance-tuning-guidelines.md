@@ -7,9 +7,9 @@ role: Developer, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 02649ffea62200b472b4f3c446489a9dd974d21c
 workflow-type: tm+mt
-source-wordcount: '2729'
+source-wordcount: '2721'
 ht-degree: 99%
 
 ---
@@ -144,7 +144,7 @@ Stellen Sie den Workflow [!UICONTROL DAM-Update-Asset] nach Möglichkeit auf „
 
 Wenn keine Übergangs-Workflows verwendet werden können, führen Sie regelmäßig Workflow-Bereinigungen durch, um archivierte [!UICONTROL DAM-Update-Asset]-Workflows zu löschen. So verhindern Sie eine Beeinträchtigung der Systemleistung.
 
-Führen Sie die Bereinigungs-Workflows normalerweise wöchentlich aus. In ressourcenintensiven Szenarien wie z. B. einer umfangreichen Asset-Erfassung kann die Bereinigung auch häufiger ausgeführt werden.
+Führen Sie die Bereinigungs-Workflows normalerweise wöchentlich aus. In ressourcenintensiven Szenarien wie z. B. einer umfangreichen Asset-Aufnahme kann die Bereinigung auch häufiger ausgeführt werden.
 
 Um die Workflow-Bereinigung zu konfigurieren, fügen Sie über die OSGi-Konsole eine neue Adobe Granite-Workflow-Purge-Konfiguration hinzu. Konfigurieren und planen Sie anschließend den Workflow als Teil des wöchentlichen Wartungsfensters.
 
@@ -221,7 +221,6 @@ XMP-Writeback aktualisiert das Original-Asset, sobald Metadaten in [!DNL Experie
 
 * Das Asset selbst wird geändert
 * Eine Version des Assets wird erstellt
-* [!UICONTROL DAM-Update-Asset wird für das Asset ausgeführt.]
 
 Die aufgeführten Ergebnisse beanspruchen umfangreiche Ressourcen. Adobe empfiehlt daher, die XMP Writeback zu deaktivieren, wenn sie nicht erforderlich ist. Weitere Informationen finden Sie unter [XMP Writeback](/help/assets/xmp-writeback.md).
 
