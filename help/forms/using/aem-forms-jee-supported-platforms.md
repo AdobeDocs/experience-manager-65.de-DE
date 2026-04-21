@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: b2ef2498976ffb46238c4dee75df32a214c82300
+source-git-commit: d5e24f8bdb3c43c482c2e468b44c6d78cc0a43be
 workflow-type: tm+mt
 source-wordcount: '3708'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -354,7 +354,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
   <td><p>Nebenversionen, kumulative Updates und wichtige Updates</p> </td>
  </tr>
  <tr>
-  <td><p>Red Hat® Enterprise Linux® 9 (Kernel 4.x) (64-Bit)</p> </td>
+  <td><p>Red Hat® Enterprise Linux® 9 (Kernel 5.x) (64-Bit)</p> </td>
   <td><p>A: Unterstützt</p> </td>
   <td><p>Nebenversionen, kumulative Updates und wichtige Updates</p> </td>
  </tr>
@@ -833,7 +833,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
 - Microsoft&reg; SharePoint 2016
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -904,7 +904,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Added support**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platform:
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
@@ -928,7 +928,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | MYSQL 8.4 | SUSE® Linux® Enterprise Server 12 (64-Bit) | MYSQL 8.0.27 |
 | Microsoft® SQL Server 2022 | Centos 7 | Microsoft® SQL Server 2019 |
 | Microsoft® SQL Server JDBC-Treiber 12.10.0 | Red Hat® Enterprise Linux® 7 (Kernel 4.x) (64-Bit) | Microsoft® SQL Server JDBC-Treiber 8.2 |
-| Red Hat® Enterprise Linux® 9 (Kernel 4.x) (64-Bit) | | Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64-Bit) |
+| Red Hat® Enterprise Linux® 9 (Kernel 5.x) (64-Bit) | | Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64-Bit) |
 
 ### Version 6.5.22.0 (29. November 2024)
 
