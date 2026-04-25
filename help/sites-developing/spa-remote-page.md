@@ -46,7 +46,7 @@ Weitere Informationen zu bearbeitbaren externen SPAs in AEM finden Sie im Artike
 
 ## Einschränkungen {#limitations}
 
-* Die RemotePage-Komponente erwartet, dass die Implementierung ein Asset-Manifest wie das hier [ bereitstellt](https://github.com/shellscape/webpack-manifest-plugin) Die RemotePage-Komponente wurde jedoch nur für die Zusammenarbeit mit dem React-Framework (und Next.js über die Komponente „remote-page-next“) getestet und unterstützt daher nicht das Fernladen von Anwendungen aus anderen Frameworks, wie z. B. Angular.
+* Die RemotePage-Komponente erwartet, dass die Implementierung ein Asset-Manifest wie das hier [&#x200B; bereitstellt](https://github.com/shellscape/webpack-manifest-plugin) Die RemotePage-Komponente wurde jedoch nur für die Zusammenarbeit mit dem React-Framework (und Next.js über die Komponente „remote-page-next“) getestet und unterstützt daher nicht das Fernladen von Anwendungen aus anderen Frameworks, wie z. B. Angular.
 * Internes CSS, das in der Stamm-HTML-Datei der Anwendung definiert ist, sowie Inline-CSS im Stamm-DOM-Knoten sind beim Remote-Rendering in AEM nicht verfügbar.
 
 ## Technische Details {#technical-details}

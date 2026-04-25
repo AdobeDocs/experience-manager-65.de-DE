@@ -480,7 +480,7 @@ Sie können verschiedene Schriftarten verwenden, um ein adaptives Formular zu en
 9. Gehen Sie zum neu erstellten Ordner `clientlibs` und fügen Sie die Eigenschaften `allowProxy` und `categories` hinzu.
 10. Navigieren Sie zu `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` und erstellen Sie einen neuen CSS-Ordner.
 11. Gehen Sie zum angelegten CSS-Ordner und erstellen Sie eine Datei. Erstellen Sie beispielsweise eine Datei `fonts.css` und fügen Sie den Einbettungs-Code zusammen mit der URL ein.
-   ![Ordnerstruktur](/help/forms/using/assets/fonts-add-in-crxde.png)
+    ![Ordnerstruktur](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Speichern Sie die Änderungen.
 
 >[!NOTE]

@@ -64,7 +64,7 @@ In den folgenden Tabellen sind die Funktionen von AEM Fluid Experiences mit eine
 |---|
 | [Benutzerverwaltung](/help/sites-administering/user-group-ac-admin.md) |
 | [Mehrsprachiges Asset-Management](/help/assets/multilingual-assets.md) |
-| [Internationalisierung ](/help/sites-developing/i18n.md) |
+| [Internationalisierung &#x200B;](/help/sites-developing/i18n.md) |
 | [Inhaltsübersetzung](/help/sites-administering/translation.md) |
 | [Überwachung](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Sicherung](/help/sites-administering/backup-and-restore.md) |

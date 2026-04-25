@@ -134,7 +134,7 @@ Außerdem können Sie mit der Option **Ersetzen** in der Symbolleiste die vorhan
 
 Die Seitensymbolleiste oben bietet Optionen, mit denen Sie die interaktive Kommunikation in der Vorschau anzeigen und ihre Eigenschaften ändern können. Sie können beim Bearbeiten die interaktive Kommunikation in der Vorschau anzeigen und die gewünschten Änderungen vornehmen. In der Seitensymbolleiste wird Folgendes angezeigt:
 
-* Seitliches Bedienfeld ein/aus![ toggle-side-panel](assets/toggle-side-panel.png): Hiermit können Sie die Seitenleiste ein- oder ausblenden.
+* Seitliches Bedienfeld ein/aus![&#x200B; toggle-side-panel](assets/toggle-side-panel.png): Hiermit können Sie die Seitenleiste ein- oder ausblenden.
 * Seiteninformationen ![pageinformationad](assets/pageinformationad.png): Hiermit können Sie die Seiteneigenschaften anzeigen.
 * Emulator ![ruler](assets/ruler.png): Hiermit können Sie die Darstellung der interaktiven Kommunikation für verschiedene Display-Größen (z. B. für Tablets und Smartphones) emulieren.
 * Bearbeiten: Hiermit können Sie andere Modi auswählen, wie etwa: Bearbeiten, Stil, Entwickler und Design.

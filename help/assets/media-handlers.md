@@ -124,7 +124,7 @@ Die folgenden Methoden müssen implementiert werden:
 
 Hier eine Beispielvorlage:
 
-package my.own.Stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=„true“ &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the relevant parts }
+package my.own.Stuff; /&ast;&ast; &ast; @scr.component inherit=„true“ &ast; @scr.service &ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the relevant parts }
 
 Schnittstelle und Klassen:
 
