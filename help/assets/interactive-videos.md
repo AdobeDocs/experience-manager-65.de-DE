@@ -33,7 +33,7 @@ Um ein interaktives Video mit Shopping-Funktion in Aktion zu sehen, wählen Sie 
 
 * Wählen Sie die Miniatur aus, wenn Sie das Video anhalten und die Schnellansicht des Produkts öffnen möchten. Sie können beispielsweise im Video auf das KitchenAid-Miniaturbild klicken, um eine 360-Grad-Rotationsansicht des Mixers anzuzeigen, oder heranzoomen, um die Details des Mixers zu sehen.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=de. This now needs to call a new interactive video-->
 
 ![Ein Frame aus einem interaktiven Video mit Shopping-Funktion](assets/chlimage_1-126.png) *Ein Frame aus einem interaktiven Video mit Shopping-Funktion.*
 
