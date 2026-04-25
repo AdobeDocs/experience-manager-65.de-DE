@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0948231a-bd9e-4d29-946d-2d8c17e27c28
-source-git-commit: 16b46340c5e0775d19f22f57bca5ea9ab584c51e
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '4362'
 ht-degree: 100%
 
 ---
@@ -63,7 +63,7 @@ In den folgenden Abschnitten werden die Richtlinien zu Section 508 und WCAG den 
 | Prüfpunkt | Beschreibung des Prüfpunkts | Erforderliche Best Practices für LiveCycle Designer zur Einhaltung der Richtlinien | Anmerkungen |
 |------------|------------------------|-----------------------------------------------------------|-------|
 | [1.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html?lang=de#tech-text-equivalent) | Geben Sie für jedes nichttextliche Element ein Textäquivalent an (z. B. über „alt“, „longdesc“ oder im Elementinhalt). Dazu gehören Bilder, grafische Darstellungen von Text (einschließlich Symbolen), Imagemap-Bereiche, Animationen (z. B. animierte GIFs), Applets und programmatische Objekte, ASCII-Grafiken, Frames, Skripte, als Aufzählungszeichen verwendete Bilder, Abstände, grafische Schaltflächen, Töne (mit oder ohne Benutzerinteraktion wiedergegeben), eigenständige Audiodateien, Audiospuren von Videos und Video. | <ul><li>2.4 Angeben von Textäquivalenten für Bilder</li> <li>2.12 Zugänglichmachen von allen Multimedia-Inhalten</li> | |
-|  [1.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html?lang=de#tech-redundant-server-links) | Stellen Sie redundante Text-Links für jede aktive Region einer Server-seitigen Imagemaps bereit. | Nicht zutreffend | |
+| [1.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html?lang=de#tech-redundant-server-links) | Stellen Sie redundante Text-Links für jede aktive Region einer Server-seitigen Imagemaps bereit. | Nicht zutreffend | |
 | [1.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html?lang=de#tech-auditory-descriptions) | Bis Benutzeragenten automatisch das Textäquivalent einer visuellen Spur vorlesen können, stellen Sie eine auditive Beschreibung der wichtigen Informationen der visuellen Spur einer Multimedia-Präsentation bereit. | 2.12 Zugänglichmachen von allen Multimedia-Inhalten | |
 | [1.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html?lang=de#tech-synchronize-equivalents) | Bei zeitbasierten Multimedia-Präsentationen (z. B. einem Film oder einer Animation) sollten entsprechende Alternativen (etwa Untertitel oder akustische Beschreibungen der visuellen Spur) mit der Präsentation synchronisiert werden. | 2.12 Zugänglichmachen von allen Multimedia-Inhalten | |
 | [2.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html?lang=de#tech-color-convey) | Stellen Sie sicher, dass alle Informationen, die durch Farben vermittelt werden, auch ohne Farben verfügbar sind, z. B. über Kontext oder Markup. | 2.8 Verantwortungsvolle Verwendung von Farben | |

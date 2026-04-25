@@ -6,10 +6,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
-source-git-commit: 7f1283898cbeebdedb7bdea6f0a8d9db567617ee
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3385'
-ht-degree: 100%
+source-wordcount: '3498'
+ht-degree: 99%
 
 ---
 
@@ -346,7 +346,7 @@ Bevor Sie mit dem Hinzufügen einer benutzerdefinierten Funktion zu Ihrem adapti
 ## Erstellen einer benutzerdefinierten Funktion {#create-custom-function}
 
 Die Schritte zum Erstellen benutzerdefinierter Funktionen sind die Folgenden:
-1. [Erstellen einer Client-seitigen Bibliothek mit dem AEM-Projektarchetyp und Hinzufügen einer benutzerdefinierten Funktion](#create-client-library-archetype)
+1. [Erstellen Sie eine Client-seitige Bibliothek mit dem AEM-Projektarchetyp und fügen Sie eine benutzerdefinierte Funktion hinzu](#create-client-library-archetype)
 ODER
    [Erstellen benutzerdefinierter Funktionen über CRXDE](#create-add-custom-function)
 1. [Hinzufügen einer Client-Bibliothek zu einem adaptiven Formular](#add-client-library)
@@ -572,7 +572,7 @@ Sehen wir uns das Formular in der Vorschau an, um zu sehen, wie die benutzerdefi
 
 >[!NOTE]
 >
-> Sie können auf den folgenden Ordner [Benutzerdefinierte Funktionen](/help/forms/using/assets/customfunctions.zip) verweisen. Laden Sie diesen Ordner herunter und installieren Sie ihn mithilfe von [Package Manager](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager) in Ihrer AEM-Instanz.
+> Sie können auf den folgenden Ordner [Benutzerdefinierte Funktionen](/help/forms/using/assets/customfunctions.zip) verweisen. Laden Sie diesen Ordner herunter und installieren Sie ihn mithilfe des [Paket-Managers](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager) in Ihrer AEM-Instanz.
 
 ### Unterstützung für asynchrone Funktionen in benutzerdefinierten Funktionen {#support-of-async-functions}
 
@@ -633,7 +633,8 @@ Feldobjekte beziehen sich auf die einzelnen Komponenten oder Elemente in einem F
 >
 > Der `param {scope} globals` muss der letzte Parameter sein und wird nicht im Regeleditor eines adaptiven Formulars angezeigt.
 
-<!-- Let us look at the following code snippet:
+<!--
+Let us look at the following code snippet:
 
 ```JavaScript
    
@@ -653,7 +654,8 @@ Feldobjekte beziehen sich auf die einzelnen Komponenten oder Elemente in einem F
     }
 ```
 
-In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form.
+-->
 
 Im Folgenden erfahren wir, wie benutzerdefinierte Funktionen für verschiedene Anwendungsfälle Feld- und global-Objekte mithilfe eines `Contact Us`-Formulars verwenden.
 
@@ -816,8 +818,8 @@ Wenn jemand mehr als 15 Zeichen in das Textfeld „Kommentare“ eingibt, wird d
 
 #### **Anwendungsfall**: Übermittlung geänderter Daten an den Server
 
-Diese Codezeile
-`globals.functions.submitForm(globals.functions.exportData(), false);` wird verwendet, um die Formulardaten nach der Bearbeitung zu senden.
+Die folgende Codezeile:
+`globals.functions.submitForm(globals.functions.exportData(), false);` wird verwendet, um die Formulardaten nach der Bearbeitung zu übermitteln.
 * Das erste Argument sind die zu übermittelnden Daten.
 * Das zweite Argument gibt an, ob das Formular vor der Übermittlung validiert werden soll. Es ist `optional` und standardmäßig auf `true` festgelegt.
 * Das dritte Argument ist der `contentType` der Übermittlung, der ebenfalls optional ist und den Standardwert `multipart/form-data` hat. Die anderen Werte können `application/json` und `application/x-www-form-urlencoded` sein.

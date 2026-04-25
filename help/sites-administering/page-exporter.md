@@ -5,10 +5,10 @@ exl-id: 15d08758-cf75-43c0-9818-98a579d64183
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 100%
+source-wordcount: '1060'
+ht-degree: 96%
 
 ---
 
@@ -45,10 +45,10 @@ Wählen Sie die erforderliche Vorlage für Ihre Website aus und bestätigen Sie 
 1. Fragen Sie die Seite für den Export an und ersetzen Sie dabei in der URL das Suffix `html` durch `export.zip`.
 
    Beispiel:
-   * localhost:4502/content/we-retail/language-masters/de.html
+   * localhost:4502/content/we-retail/language-masters/en.html
 
    Zugriff über:
-   * localhost:4502/content/we-retail/language-masters/de.export.zip
+   * localhost:4502/content/we-retail/language-masters/en.export.zip
 
 1. Laden Sie die Archivdatei auf Ihr Dateisystem herunter.
 
@@ -66,7 +66,7 @@ Wählen Sie die erforderliche Vorlage für Ihre Website aus und bestätigen Sie 
 
 Das Seiten-Export-Tool basiert auf dem [Inhaltssynchronisierungs-Framework](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Die Konfigurationen, die im Dialogfeld **Seiteneigenschaften** verfügbar sind, sind Exportvorlagen, die die erforderlichen Abhängigkeiten für eine Seite definieren.
 
-Wenn ein Seitenexport ausgelöst wird, wird auf die Exportvorlage verwiesen. Der Seitenpfad und der Designpfad werden dynamisch angewendet. Anschließend wird die ZIP-Datei erstellt, indem die Standardfunktion zur Inhaltssynchronisierung genutzt wird.
+Wenn ein Seitenexport ausgelöst wird, wird auf die Exportvorlage verwiesen. Sowohl der Seitenpfad als auch der Designpfad werden dynamisch angewendet. Anschließend wird die ZIP-Datei erstellt, indem die Standardfunktion zur Inhaltssynchronisierung genutzt wird.
 
 Eine vorkonfigurierte AEM-Installation enthält unter `/etc/contentsync/templates/default` eine Standardvorlage.
 
@@ -110,7 +110,8 @@ Wenn Ihre Vorlage konfiguriert ist, stellen Sie sie zur Verfügung:
 
 Die Vorlage besteht aus einer Knotenstruktur, da sie das [Content Sync-Framework](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html) verwendet. Jeder Knoten verfügt über die Eigenschaft `type`, die eine spezifische Aktion beim Erstellungsprozess der ZIP-Datei definiert.
 
-<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
+<!--
+For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 Mit den folgenden Knoten können Sie eine Export-Vorlage erstellen:
@@ -180,7 +181,8 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 Um bestimmte Anforderungen zu erfüllen, implementieren Sie einen [benutzerdefinierten Update-Handler](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
+<!--
+To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Programmatisches Exportieren einer Seite {#programmatically-exporting-a-page}

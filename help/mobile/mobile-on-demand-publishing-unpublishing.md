@@ -1,5 +1,5 @@
 ---
-title: Publish - Veröffentlichung von Inhalten aufheben
+title: Veröffentlichen von Inhalt aufheben der Veröffentlichung
 description: Wenn Sie mit Content-Management-Aktionen für Artikel, Banner und Sammlungen vertraut sind, erfahren Sie auf dieser Seite , wie Sie Ihre Inhalte veröffentlichen können. Außerdem können Sie die Veröffentlichung Ihres Inhalts aufheben.
 contentOwner: User
 content-type: reference
@@ -9,14 +9,14 @@ exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 2%
+source-wordcount: '268'
+ht-degree: 1%
 
 ---
 
-# Publish - Veröffentlichung von Inhalten aufheben{#publish-unpublish-content}
+# Veröffentlichen von Inhalt aufheben der Veröffentlichung{#publish-unpublish-content}
 
 {{ue-over-mobile}}
 
@@ -24,11 +24,11 @@ Sobald Sie mit Content-Management-Aktionen für Artikel, Banner und Sammlungen v
 
 >[!NOTE]
 >
->Weitere Informationen über Entwurfsüberlegungen für AEM Mobile-Apps finden Sie unter [Entwurfsüberlegungen für AEM Mobile-Apps](https://helpx.adobe.com/de/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in der Online-Hilfe.
+>Weitere Informationen über Entwurfsüberlegungen für AEM Mobile-Apps finden Sie unter [Entwurfsüberlegungen für AEM Mobile-Apps](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in der Online-Hilfe.
 
 ## Veröffentlichen/Rückgängigmachen der Veröffentlichung von Inhalten {#publishing-unpublishing-the-content}
 
-Dies unterscheidet sich von einem &quot;AEM Publish&quot;. Sie übertragen Inhalte nicht an eine AEM Publish-Server-Instanz, um sie öffentlich sichtbar zu machen. Hier teilen Sie Mobile On-Demand mit, dass der ausgewählte Inhalt in der Live Mobile On-Demand-App veröffentlicht werden soll.
+Dies unterscheidet sich von einer &quot;AEM-Veröffentlichung“. Inhalte werden nicht an eine AEM-Veröffentlichungs-Server-Instanz gepusht, um sie öffentlich sichtbar zu machen. Hier teilen Sie Mobile On-Demand mit, dass der ausgewählte Inhalt in der Live Mobile On-Demand-App veröffentlicht werden soll.
 
 >[!NOTE]
 >
@@ -39,12 +39,14 @@ Der allgemeine Workflow zum Veröffentlichen/Rückgängigmachen der Veröffentli
 1. Wählen Sie unter Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
 1. Artikel auswählen.
 1. Fügen Sie bei Bedarf weitere Artikel aus der Listenansicht hinzu.
-1. Wählen Sie in der Aktionsleiste Publish aus. Nach einigen Augenblicken werden Ihre Artikel nun öffentlich sein.
+1. Wählen Sie Veröffentlichen in der Aktionsleiste aus. Nach einigen Augenblicken werden Ihre Artikel nun öffentlich sein.
 1. Gehen Sie wie oben beschrieben vor, um die Veröffentlichung von Artikeln rückgängig zu machen.
 
-<!-- FAIL >>[!NOTE]
+<!--
+FAIL >>[!NOTE]
 >
->Generally, you should preflight before publishing. See [Previewing with Preflight](/content/docs/en/aem/6-3/administer/mobile-apps/aem-mobile/previewing-with-preflight-on-demand-services.md) for more details.-->
+>Generally, you should preflight before publishing. See [Previewing with Preflight](/content/docs/en/aem/6-3/administer/mobile-apps/aem-mobile/previewing-with-preflight-on-demand-services.md) for more details.
+-->
 
 ![chlimage_1-9](assets/chlimage_1-9.gif)
 
@@ -55,4 +57,4 @@ Nachdem Sie sich mit dem Erstellen und Veröffentlichen von Inhalten vertraut ge
 * [Entwickeln von AEM-Inhalten für AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Verwalten von Inhalten zur Verwendung von AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
-Wenn Sie weiterhin mehr über die Authoring-Themen erfahren möchten, finden Sie weitere Informationen unter [Authoring von AEM-Inhalten für AEM Mobile On-demand Services Apps](/help/mobile/mobile-apps-ondemand.md).
+Wenn Sie weiterhin mehr über die Authoring-Themen erfahren möchten, finden Sie weitere Informationen unter [Authoring von AEM-Inhalten für AEM Mobile On-demand Services-Apps](/help/mobile/mobile-apps-ondemand.md).

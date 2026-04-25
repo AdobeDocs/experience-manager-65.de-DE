@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
-workflow-type: ht
-source-wordcount: '2023'
-ht-degree: 100%
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+workflow-type: tm+mt
+source-wordcount: '2114'
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,7 @@ In diesem Dokument wird der Generalvertrag beschrieben, den jedes SPA-Framework 
 >
 >Die folgenden Anforderungen sind Framework-unabhängig. Wenn diese Anforderungen erfüllt sind, kann eine Framework-spezifische Ebene aus Modulen, Komponenten und Diensten bereitgestellt werden.
 >
->**Für die React- und Angular-Frameworks werden diese Anforderungen in AEM bereits erfüllt.** Die Anforderungen im vorliegenden Blueprint sind nur relevant, wenn Sie ein anderes Framework zur Verwendung mit AEM implementieren möchten.
+>**Diese Anforderungen sind für die React- und Angular-Frameworks in AEM bereits erfüllt.** Die Anforderungen in diesem Blueprint sind nur relevant, wenn Sie ein anderes Framework zur Verwendung mit AEM implementieren möchten.
 
 >[!CAUTION]
 >

@@ -10,10 +10,10 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: aee0e36fe488af764459494c1bc802fb519b1a54
 workflow-type: tm+mt
-source-wordcount: '2007'
-ht-degree: 100%
+source-wordcount: '2018'
+ht-degree: 98%
 
 ---
 
@@ -34,13 +34,13 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
 1. Gibt es Einschränkungen bei der Verwendung wiederholbarer Teilformulare?
 
-   Antwort: Wiederholbare Teilformulare müssen eine Anfangszahl von 1 oder höher haben. Wiederholbare Teilformulare mit einer Anfangszahl von Null werden nicht unterstützt. Sie können auch ein wiederholbares Teilformular verwenden und es nicht anzeigen, wenn das Formular geladen wird. Um den Anwendungsfall zu erreichen: 
+   Antwort: Wiederholbare Teilformulare müssen eine Anfangszahl von 1 oder höher haben. Wiederholbare Teilformulare mit einer Anfangszahl von Null werden nicht unterstützt. Sie können auch ein wiederholbares Teilformular verwenden und es nicht anzeigen, wenn das Formular geladen wird. Um den Anwendungsfall zu erreichen:
 
    1. Legen Sie die Anfangszahl des wiederholbaren Teilformulars auf 1 fest.
 
       ![intial-count](assets/intial-count.png)
 
-   1. Verwenden Sie das initialize-Ereignis des Formulars, um die primäre Instanz des Teilformulars auszublenden. Der folgende Code blendet beispielsweise die primäre Instanz des Teilformulars bei der Formularinitialisierung aus. Außerdem überprüft es den App-Typ, um sicherzustellen, dass das Skript nur auf der Clientseite ausgeführt wird: 
+   1. Verwenden Sie das initialize-Ereignis des Formulars, um die primäre Instanz des Teilformulars auszublenden. Der folgende Code blendet beispielsweise die primäre Instanz des Teilformulars bei der Formularinitialisierung aus. Außerdem überprüft es den App-Typ, um sicherzustellen, dass das Skript nur auf der Clientseite ausgeführt wird:
 
       ```javascript
       if ((xfa.host.appType == "HTML 5" || xfa.host.appType == "Exchange-Pro" || xfa.host.appType == "Reader")&&(_RepeatSubform.count == 1)&&(form1.Page1.Subform1.RepeatSubform.Key.rawValue == null)) {
@@ -66,7 +66,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
    1. Öffnen Sie das Skript zum Entfernen einer Instanz des Teilformulars zum Bearbeiten. Fügen Sie Code ähnlich dem folgenden zum Entfernen einer Instanz des Teilformulars hinzu.
 
-      Der Code überprüft die Anzahl der Teilformulare. Wenn die Anzahl der Teilformulare 1 erreicht, blendet der Code das Teilformular aus, anstatt es zu löschen. 
+      Der Code überprüft die Anzahl der Teilformulare. Wenn die Anzahl der Teilformulare 1 erreicht, blendet der Code das Teilformular aus, anstatt es zu löschen.
 
       ```javascript
       if (RepeatSubform.instanceManager.count == 1) {
@@ -134,8 +134,8 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
    Antwort: Ja barrierefreie Tabellen haben die folgenden Einschränkungen:
 
    * Geschachtelte Tabellen und Teilformulare innerhalb einer Tabelle werden nicht unterstützt.
-   * Kopfzeilen werden nur für die erste Zeile bzw. die linken Spalten der Tabelle unterstützt. Kopfzeilen werden nicht für mittige Tabellenelemente unterstützt. Sie können Kopfzeilen auf mehrere Zeilen anwenden und Spaltenüberschriften und Spaltenüberschriften werden unterstützt, wenn alle derartigen Zeilen und Spalten auf der obersten Zeile oder in der ganz linken Spalte der Tabelle sind. 
-   * `Rowspan` und`colspan` von einer beliebigen Stelle in der Tabelle wird nicht unterstützt. 
+   * Kopfzeilen werden nur für die erste Zeile bzw. die linken Spalten der Tabelle unterstützt. Kopfzeilen werden nicht für mittige Tabellenelemente unterstützt. Sie können Kopfzeilen auf mehrere Zeilen anwenden und Spaltenüberschriften und Spaltenüberschriften werden unterstützt, wenn alle derartigen Zeilen und Spalten auf der obersten Zeile oder in der ganz linken Spalte der Tabelle sind.
+   * `Rowspan` und`colspan` von einer beliebigen Stelle in der Tabelle wird nicht unterstützt.
 
    * Sie können Instanzen von Zeilen, die Elemente mit rowspan-Werten größer als 1 enthalten, nicht dynamisch hinzufügen oder entfernen.
 
@@ -158,10 +158,12 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
    Antwort: Wenn ein Unterformular auf Flussinhalt eingestellt ist und das Unterformular ein ausgeblendetes Randelement hat, wird der Rand der nebeneinander platzierten Felder nicht richtig ausgerichtet oder die Unterformulare erscheinen überlappend. Um das Problem zu beheben, können Sie die versteckten &lt;border>-Elemente aus dem entsprechenden XDP entfernen oder mit Kommentaren versehen. Beispielsweise wird das folgende &lt;border>-Element als Kommentar markiert:
 
    ```xml
-               <!--<border>
+               <!--
+               <border>
                   <edge presence="hidden"/>
                   <corner thickness="0.175mm" presence="hidden"/>
-               </border> -->
+               </border>
+               -->
    ```
 
 1. Warum funktionieren Bildschirmlesehilfen nicht ordnungsgemäß mit dem Datums-/Uhrzeitfeldobjekt?
@@ -213,7 +215,7 @@ Antwort: Das Datumsfeld akzeptiert das ISO-Format JJJJ-MM-TT. Wenn Sie ein Datum
 
 1. Führen HTML5-Formulare das Initialisierungsskript und das Formularbereitschaftsereignis mehrmals aus?
 
-   Antwort: Ja, die Initialisierungsskripte und Formularbereitschaftsereignisse werden mehrfach ausgeführt, mindestens einmal auf dem Server und einmal auf der Client-Seite. Es wird empfohlen, Skripte wie „initialize“ oder „form:ready“-Ereignisse basierend auf einer Geschäftslogik (Formular- oder Felddaten) zu schreiben, sodass die Aktion basierend auf dem Status der Daten und „idempotent“ (wenn die Daten gleich sind) ausgeführt wird.
+   Antwort: Ja, die Initialisierungsskripte und Formularbereitschaftsereignisse werden mehrfach ausgeführt, mindestens einmal auf dem Server und einmal auf der Client-Seite. Es wird empfohlen, Skripte wie initialize oder form:ready-Ereignisse basierend auf einer Geschäftslogik (Formular- oder Felddaten) zu schreiben, sodass die Aktion basierend auf dem Status der Daten und idempotent (wenn die Daten gleich sind) ausgeführt wird.
 
 ### XDP-Entwurf {#designing-xdp}
 

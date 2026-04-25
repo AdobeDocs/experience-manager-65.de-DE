@@ -8,9 +8,9 @@ user-guide-description: Erstellen und verwalten Sie Inhalte für Mobile Apps.
 feature: Mobile
 role: User
 hide: true
-source-git-commit: 829eadb61062f20be74e36b52175627f1f377c50
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '329'
 ht-degree: 13%
 
 ---
@@ -26,17 +26,17 @@ ht-degree: 13%
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
    + [AEM Mobile - Einhaltung der DSGVO](aem-mobile-gdpr-compliance.md)
    + [Mobile Apps entwickeln](develop-mobile-apps.md)
-+ Erstellen von On-Demand-Services-App-{#authoring}
++ Erstellen der On-Demand-Services-App {#authoring}
    + [Mobile On-Demand](mobile-apps-ondemand.md)
    + [Verwalten von Inhalt](mobile-apps-ondemand-manage-content-ondemand.md)
-   + [Publish - Veröffentlichung von Inhalten aufheben](mobile-on-demand-publishing-unpublishing.md)
+   + [Veröffentlichen von Inhalt aufheben der Veröffentlichung](mobile-on-demand-publishing-unpublishing.md)
    + [AEM Mobile-Anwendungs-Dashboard](mobile-apps-ondemand-application-dashboard.md)
    + [Anwendungserstellungs- und Konfigurationsaktionen](mobile-apps-ondemand-application-create-configure-action.md)
    + [Artikel verwalten](mobile-on-demand-managing-articles.md)
    + [Hochladen freigegebener Ressourcen](mobile-on-demand-shared-resources.md)
    + [Cloud-Konfiguration](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
    + [Verwalten von Bannern](mobile-on-demand-managing-banners.md)
-+ Entwickeln von On-Demand Services App-{#developing}
++ Entwickeln einer On-Demand-Service-App {#developing}
    + [AEM Mobile On-Demand](aem-mobile-on-demand.md)
    + [Programmvorlagen und -komponenten](app-templates-and-components1.md)
    + [Inhaltseigenschaften und Knoten](content-properties.md)
@@ -50,7 +50,7 @@ ht-degree: 13%
    + [Rendering und Versand](rendering-and-delivery.md)
    + [Content Services](developing-content-services.md)
    + [Inhaltsbereitstellung](develop-content-as-a-service.md)
-+ Administration von On-Demand Services App {#administering}
++ Administration der On-Demand-Services-App {#administering}
    + [AEM Mobile On-Demand](aem-mobile.md)
    + [AEM Mobile-Setup](aem-mobile-setup.md)
    + [Konfigurieren von Benutzern und Benutzergruppen](aem-mobile-configure-users.md)
@@ -59,7 +59,7 @@ ht-degree: 13%
    + [Modelle - Übersicht](model-management.md)
    + [Leerzeichen und Entitäten](spaces-and-entities.md)
    + [Verwalten von Sammlungen](mobile-on-demand-managing-collections.md)
-+ Authoring von Adobe PhoneGap Enterprise {#author-phonegap}
++ Authoring mit Adobe PhoneGap Enterprise {#author-phonegap}
    + [PhoneGap](phonegap.md)
    + [Bearbeiten von App-Metadaten](phonegap-editmetadata.md)
    + [App-Definitionen](phonegap-app-definitions.md)
@@ -88,10 +88,10 @@ ht-degree: 13%
    + [Mobile Apps testen](develop-mobile-apps-testing.md)
    + [Strukturieren einer App](phonegap-structure-an-app.md)
    + [App-Leistung mit Adobe Mobile Analytics verfolgen](phonegap-intro-to-app-analytics.md)
-+ Verwalten von Adobe PhoneGap Enterprise {#administering-phonegap}
++ Verwaltung von Adobe PhoneGap Enterprise {#administering-phonegap}
    + [Schnellstart für Mobilgeräte](phonegap-mobile-quickstart.md)
    + [Verwalten von Inhalten für Adobe PhoneGap Enterprise mit AEM](administer-phonegap.md)
-   + [Konfigurieren des Adobe PhoneGap Build-Cloud Service](configure-phonegap-build-cloud.md)
+   + [Konfigurieren von Adobe PhoneGap Build Cloud Service](configure-phonegap-build-cloud.md)
    + [Festlegen des Referrer-Filters auf „Leer zulassen“](setting-referrer-filter-empty.md)
-   + [Konfigurieren des Adobe Mobile Services-Cloud Service](configure-adobe-mobile-cloud-service.md)
+   + [Konfigurieren der Adobe Mobile Services-Cloud Service](configure-adobe-mobile-cloud-service.md)
    + [Konfigurieren von Benutzern und Benutzergruppen](configure-users-groups.md)

@@ -9,10 +9,10 @@ feature: Asset Management
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1497'
-ht-degree: 100%
+source-wordcount: '1504'
+ht-degree: 90%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Experience Manager umfasst mehr als 100 Bildbereitstellungsbefehle für Dy
 
 * JPG oder PNG sind die beste Wahl, um Bilder in guter Qualität und mit angemessener Größe bereitzustellen.
 * Wenn kein Formatsbefehl in der URL angegeben ist, wird standardmäßig JPG bei der Bildbereitstellung von Dynamic Media verwendet.
-* JPG nutzt ein Komprimierungsverhältnis von 10:1 und erzeugt normalerweise kleinere Bilddateien. PNG nutzt ein Komprimierungsverhältnis von 2:1, außer in einigen Fällen, z. B. wenn Bilder einen weißen Hintergrund aufweisen. Normalerweise sind PNG-Dateien jedoch größer als JPG-Dateien.
+* JPG komprimiert mit einem Verhältnis von 10:1 und erzeugt normalerweise kleinere Bilddateigrößen. PNG wird mit einem Verhältnis von etwa 2 % komprimiert:1 außer in einigen Fällen, z. B. wenn Bilder einen weißen Hintergrund enthalten. Normalerweise sind PNG-Dateien jedoch größer als JPG-Dateien.
 * JPG nutzt die verlustreiche Komprimierung. Das heißt, dass Bildelemente (Pixel) bei der Komprimierung verloren gehen. PNG verwendet dagegen die verlustfreie Komprimierung.
 * JPG komprimiert Fotos oft mit besserer Wiedergabetreue als synthetische Bilder mit scharfen Kanten und Kontrast.
 * Wenn Bilder Transparenz enthalten, verwenden Sie PNG, da JPG keine Transparenz unterstützt.
@@ -48,8 +48,10 @@ Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bi
 
 Das Whitepaper mit Best Practices für das [Scharfzeichnen von Bildern in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf), das auch für Experience Manager gilt.
 
-<!-- To be reviewed and updated: Broken link.
-See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
+<!--
+To be reviewed and updated: Broken link.
+See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+-->
 
 Mit Experience Manager können Sie Bilder bei der Aufnahme, bei der Ausgabe oder bei beidem scharfzeichnen. Normalerweise sollten Sie Bilder nur mit der einen oder der anderen Methode scharfzeichnen, jedoch nicht mit beiden. Normalerweise erhalten Sie die besten Ergebnisse beim Scharfzeichnen von Bildern bei der Bereitstellung mit einer URL.
 
@@ -63,7 +65,7 @@ Es gibt zwei Methoden zum Scharfzeichnen von Bildern:
       * **[!UICONTROL *amount *]**(0-5, Stärke des Effekts)
       * **[!UICONTROL *radius *]**(0-250, Breite der „Scharfzeichnungslinien“ um das scharfgezeichnete Objekt, in Pixel gemessen)
 
-     Denken Sie daran, dass die Parameter „radius“und „amount“ sich gegenseitig beeinflussen. Wenn Sie „radius“ reduzieren, können Sie dies durch eine Erhöhung von „amount“ kompensieren. Der Radius ermöglicht eine genauere Kontrolle, da mit einem niedrigeren Wert nur die Kantenpixel scharfgezeichnet werden, während mit einem höheren Wert mehr Pixel scharfgezeichnet werden.
+     Denken Sie daran, dass sich die Parameter „radius“ und „amount“ gegenseitig beeinflussen. Verringernde Radien können durch steigende Menge kompensiert werden. Der Radius ermöglicht eine genauere Kontrolle, da mit einem niedrigeren Wert nur die Kantenpixel scharfgezeichnet werden, während mit einem höheren Wert mehr Pixel scharfgezeichnet werden.
 
       * **[!UICONTROL *threshold *]**(0-255, Sensitivität des Effekts)
 
@@ -88,7 +90,7 @@ Erhöhen Sie den Wert schrittweise von 1,75 auf maximal 4. Wenn die Scharfzeichn
 
 Belassen Sie die Einstellung des Parameters „monochrome“ auf 0.
 
-### Best Practices für JPEG-Komprimierung (`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
+### Best Practices für die JPEG-Komprimierung (`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
 
 * Dieser Parameter steuert die Qualität der JPG-Kodierung. Ein höherer Wert führt zu einer höheren Bildqualität, aber auch zu einer größeren Datei. Ein niedrigerer Wert dagegen bedeutet eine niedrigere Bildqualität, aber auch eine kleinere Datei. Der Bereich für diesen Parameter liegt zwischen 0 und 100.
 * Um die Qualität zu optimieren, setzen Sie den Parameterwert nicht auf 100. Die Unterschiede zwischen einer Einstellung von 90 oder 95 und 100 sind fast nicht wahrnehmbar, aber die Einstellung 100 erhöht die Größe der Bilddatei unnötigerweise. Um die Qualität zu optimieren, aber zu vermeiden, dass Bilddateien zu groß werden, setzen Sie daher den Wert von `qlt= value` auf 90 oder 95.
@@ -97,15 +99,15 @@ Belassen Sie die Einstellung des Parameters „monochrome“ auf 0.
 * Verwendung der Chroma-Markierung in `qlt=`
 
    * Der Parameter `qlt=` verfügt über eine zweite Einstellung, mit der Sie das RGB-Chromatizitäts-Downsampling aktivieren (mit dem Wert `,1`) oder deaktivieren (mit dem Wert `,0`) können.
-   * Beginnen Sie der Einfachheit halber mit ausgeschaltetem RGB-Chromatizitäts-Downsampling (`,0`). Diese Einstellung führt normalerweise zu einer höheren Bildqualität, insbesondere bei synthetischen Bildern mit vielen scharfen Kanten und Kontrasten.
+   * Um die Sache möglichst unkompliziert zu gestalten, sollten Sie zunächst das Downsampling der RGB-Chromatizität deaktivieren (`,0`). Diese Einstellung führt in der Regel zu einer besseren Bildqualität, insbesondere für synthetische Bilder mit vielen scharfen Kanten und Kontrast.
 
 Verwenden Sie als Best Practice für die JPG-Komprimierung `&qlt=85,0`.
 
-## Best Practices für die JPEG-Skalierung (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
+## Best Practices für die Dimensionierung in JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
 jpegSize ist ein nützlicher Parameter, wenn Sie garantieren möchten, dass ein Bild eine bestimmte Größe für die Bereitstellung an Geräten mit begrenztem Speicher nicht übersteigt.
 
-* Dieser Parameter wird in Kilobyte festgelegt (`jpegSize=&lt;size_in_kilobytes&gt;`). Damit wird die maximal zulässige Größe für die Bildbereitstellung definiert.
+* Dieser Parameter wird in Kilobyte (`jpegSize=&lt;size_in_kilobytes&gt;`) festgelegt. Sie definiert die maximal zulässige Größe für die Bildbereitstellung.
 * `&jpegSize=` interagiert mit dem JPG-Komprimierungsparameter `&qlt=`. Wenn die JPG-Antwort mit dem angegebenen JPG-Komprimierungsparameter (`&qlt=`) nicht den Wert von „jpegSize“ überschreitet, wird das Bild mit dem definierten Wert für `&qlt=` zurückgegeben. Andernfalls wird `&qlt=` nach und nach reduziert, bis das Bild der maximal zulässigen Größe entspricht oder bis das System bestimmt, dass die Bildgröße nicht erreicht werden kann, und einen Fehler zurückgibt.
 
 Legen Sie als Best Practice `&jpegSize=` fest und fügen Sie den Parameter `&qlt=` hinzu, wenn Sie JPG-Bilder an Geräte mit begrenztem Speicher bereitstellen.
@@ -118,7 +120,7 @@ Um eine hohe Bildqualität und kleine Dateien zu erreichen, wird als Best Practi
 
 Diese Kombination von Einstellungen sorgt in den meisten Fällen für hervorragende Ergebnisse.
 
-Wenn das Bild weiter optimiert werden muss, passen Sie die Parameter für die Scharfzeichnung (Unschärfemaske) schrittweise an, beginnend mit einem Radius von 0,2 oder 0,3. Erhöhen Sie dann den Wert schrittweise von 1,75 auf maximal 4 (entspricht 400 % in Photoshop). Prüfen Sie, ob das gewünschte Ergebnis erreicht wird.
+Wenn das Bild weiter optimiert werden muss, können Sie die Schärfungsparameter (Unschärfemaske) schrittweise optimieren, indem Sie mit einem Radius von 0,2 oder 0,3 beginnen. Erhöhen Sie dann schrittweise den Betrag von 1,75 auf maximal 4 (entspricht 400 % in Photoshop). Prüfen Sie, ob das gewünschte Ergebnis erreicht wird.
 
 Wenn die Scharfzeichnungsergebnisse noch immer nicht zufriedenstellend sind, erhöhen Sie den Radius in Dezimalschritten. Beginnen Sie den Wert bei jedem Dezimalschritt bei 1,75 und erhöhen Sie diesen schrittweise auf 4. Wiederholen Sie diesen Vorgang, bis Sie das gewünschte Ergebnis erzielen. Die oben genannten Werte stellen zwar einen von Kreativstudios anerkannten Ansatz dar, Sie können aber auch mit anderen Werten beginnen und andere Strategien verfolgen. Sie entscheiden subjektiv, wann die Ergebnisse zufriedenstellend sind. Daher ist strukturiertes Experimentieren entscheidend.
 

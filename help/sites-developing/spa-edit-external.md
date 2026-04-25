@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
-workflow-type: ht
-source-wordcount: '2387'
-ht-degree: 100%
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+workflow-type: tm+mt
+source-wordcount: '2476'
+ht-degree: 99%
 
 ---
 
@@ -83,7 +83,7 @@ In diesem Beispiel wird `ModelManager` initialisiert und ein leerer `ModelStore`
 `initializationAsync` kann optional ein `options`-Objekt als Parameter akzeptieren:
 
 * `path` – Bei der Initialisierung wird das Modell vom definierten Pfad abgerufen und im `ModelStore` gespeichert. Auf diese Weise können Sie bei Bedarf das `rootModel` bei der Initialisierung abrufen.
-* `modelClient` - Ermöglicht die Bereitstellung eines benutzerdefinierten Clients, der für das Abrufen des Modells verantwortlich ist.
+* `modelClient` – Ermöglicht die Bereitstellung eines benutzerdefinierten Clients, der für das Abrufen des Modells verantwortlich ist.
 * `model` – Ein `model`-Objekt, das als Parameter übergeben und typischerweise bei der Verwendung von SSR befüllt wird.
 
 ### Bearbeitbare AEM-Blattkomponenten {#authorable-leaf-components}
@@ -373,8 +373,8 @@ Die RemotePage-Komponente erwartet, dass die Implementierung ein Asset-Manifest 
 
 Das folgende Referenzmaterial kann hilfreich sein, um SPAs im Kontext der AEM zu verstehen.
 
-* [AEM-Projekt-Archetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de)
-* [WKND-SPA-Projekt](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de)
+* [Der AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de)
+* [Das WKND-SPA-Projekt](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de)
 * [Erste Schritte mit SPAs in AEM unter Verwendung von React](spa-getting-started-react.md)
 * [SPA-Referenzmaterialien (API-Referenzen)](spa-reference-materials.md)
 * [SPA-Blueprint und PageModelManager](spa-blueprint.md#pagemodelmanager)

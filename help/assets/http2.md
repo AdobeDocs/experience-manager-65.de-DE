@@ -9,10 +9,10 @@ role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: Publishing,Configuration
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f749892bf7fba9889adfc930771178154b92fa5d
-workflow-type: ht
-source-wordcount: '735'
-ht-degree: 100%
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+workflow-type: tm+mt
+source-wordcount: '766'
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,8 @@ Von Adobe durchgeführte Prüfungen führten zu folgenden Ergebnissen:
 <!--
 The following demonstration illustrates the difference between HTTP/1 versus HTTP/2 loading:
 
-[https://http2.akamai.com/demo](https://http2.akamai.com/demo) -->
+[https://http2.akamai.com/demo](https://http2.akamai.com/demo)
+-->
 
 ## Bin ich berechtigt, auf HTTP/2 umzustellen? {#am-i-eligible-to-switch-over-to-http}
 
@@ -62,7 +63,7 @@ Um HTTP/2 verwenden zu können, müssen Sie die folgenden Voraussetzungen erfül
 
 Sie müssen den Wechsel auf HTTP/2 beantragen, da er nicht automatisch erfolgt.
 
-1. Um zu HTTP/2 zu wechseln, starten Sie eine Anfrage an den Kunden-Support von Adobe. Siehe [Öffnen eines Support-Tickets](https://experienceleague.adobe.com/de?support-solution=General&lang=de&support-tab=home#support).
+1. Um zu HTTP/2 zu wechseln, starten Sie eine Anfrage an den Kunden-Support von Adobe. Siehe [Öffnen eines Support-Tickets](https://experienceleague.adobe.com/?support-solution=General&lang=de&support-tab=home#support).
 
    1. In der Anfrage geben Sie folgende Informationen an:
 
@@ -78,7 +79,7 @@ Sie müssen den Wechsel auf HTTP/2 beantragen, da er nicht automatisch erfolgt.
 
       Da der Browser nicht auf diese Tatsache hinweist, muss eine Erweiterung heruntergeladen werden.
 
-      Für Firefox und Chrome gibt es eine Erweiterung namens „HTTP/2 and SPDY Indicator“. Da Browser HTTP/2 nur bei sicheren Verbindungen unterstützen, muss für die Verifizierung eine URL mit https aufgerufen werden. Wenn HTTP/2 unterstützt wird, zeigt die Erweiterung dies mit einem blauen Blitzsymbol und der Kopfzeile `X-Firefox-Spdy` : `h2` an.
+      Für Firefox und Chrome gibt es eine Erweiterung namens „HTTP/2 and SPDY Indicator“. Da Browser HTTP/2 nur bei sicheren Verbindungen unterstützen, muss für die Verifizierung eine URL mit https aufgerufen werden. Wenn HTTP/2 unterstützt wird, gibt die Erweiterung i an. Die Erweiterung hat die Form eines blauen Blitzsymbols und die Kopfzeile `X-Firefox-Spdy` : `h2`.
 
 ## Wann kann ich mit der Umstellung auf HTTP/2 rechnen? {#when-can-i-expect-to-be-transitioned-over-to-http}
 

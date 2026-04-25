@@ -10,10 +10,10 @@ role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 100%
+source-wordcount: '1398'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Profile sind Rezepte, die vorgeben, welche Optionen auf Assets angewendet werden, die in einen Ordner hochgeladen werden. Beispielsweise können Sie angeben, welches Metadatenprofil und welches Videokodierungsprofil auf Video-Assets angewendet wird, die Sie hochladen. Alternativ können Sie angeben, welche Imaging-Profile auf Image-Assets angewendet werden, damit sie entsprechend zugeschnitten werden.
 
-Dazu kann das Hinzufügen von Metadaten, das smarte Zuschneiden von Bildern oder die Erstellung von Videokodierungsprofilen gehören. In Adobe Experience Manager können Sie drei Arten von Profilen erstellen. Sie werden unter den folgenden Links detailliert vorgestellt:
+Dazu kann das Hinzufügen von Metadaten, der intelligente Zuschnitt von Bildern oder die Erstellung von Videokodierungsprofilen gehören. In Adobe Experience Manager können Sie drei Arten von Profilen erstellen. Sie werden unter den folgenden Links detailliert vorgestellt:
 
 * [Metadatenprofile](/help/assets/metadata-config.md#metadata-profiles)
 * [Bildprofile](/help/assets/image-profiles.md)
@@ -44,11 +44,11 @@ Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen m
 
 >[!NOTE]
 >
->Gilt für den *Dynamic Media-Scene7-Modus* nur in Experience Manager 6.4.6.0 oder höher.
+>Gilt für *Dynamic Media - Scene7-Modus* nur in Experience Manager 6.4.6.0 oder höher.
 
 Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Verarbeitungsprofil verfügt, das Sie nachträglich geändert haben.
 
-Angenommen, Sie haben ein Bildprofil erstellt und es einem Ordner zugewiesen. Bei allen Bild-Assets, die Sie in den Ordner hochgeladen haben, wurde automatisch das Bildprofil auf die Assets angewendet. Später entscheiden Sie sich jedoch, dem Profil ein neues Verhältnis für den smarten Zuschnitt hinzuzufügen. Anstatt die Assets erneut auszuwählen und in den Ordner hochzuladen, führen Sie einfach den Workflow *Dynamic Media-Neuverarbeitung* <!-- *Scene7: Reprocess Assets* -->aus.
+Angenommen, Sie haben ein Bildprofil erstellt und es einem Ordner zugewiesen. Bei allen Bild-Assets, die Sie in den Ordner hochgeladen haben, wurde automatisch das Bildprofil auf die Assets angewendet. Später entscheiden Sie sich jedoch, dem Profil ein neues Verhältnis für den intelligenten Zuschnitt hinzuzufügen. Anstatt die Assets erneut auszuwählen und in den Ordner hochzuladen, führen Sie einfach den Workflow *Dynamic Media-Neuverarbeitung* <!-- *Scene7: Reprocess Assets* -->aus.
 
 Sie können den Neuverarbeitungs-Workflow für ein Asset ausführen, bei dem die Verarbeitung beim ersten Mal fehlgeschlagen ist. Selbst wenn Sie kein Verarbeitungsprofil bearbeitet oder angewendet haben, können Sie den Neuverarbeitungs-Workflow jederzeit für einen Asset-Ordner ausführen.
 
@@ -76,7 +76,7 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
    * Wenn sich im ausgewählten Hauptordner ein oder mehrere Unterordner mit Assets befinden, verarbeitet der Workflow jedes Asset in der Ordnerhierarchie neu.
    * Es empfiehlt sich, diesen Workflow nicht in einer Ordnerhierarchie mit mehr als 1.000 Assets auszuführen.
 
-1. Wählen Sie links oben auf der Seite aus dem Dropdown-Menü die Option **[!UICONTROL Zeitleiste]**.
+1. Wählen Sie links oben auf der Seite aus dem Dropdown-Menü die Option **[!UICONTROL Timeline]**.
 1. Klicken Sie unten links auf der Seite rechts neben dem Kommentarfeld auf das Caret-Symbol (**^**).
 
    ![Workflow zur Neuverarbeitung von Assets 1](/help/assets/assets/reprocess-assets1.png)
@@ -102,8 +102,8 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
    ![Seite „Workflow-Modelle“ mit in der Kartenansicht ausgewähltem Workflow „Dynamic Media erneut verarbeiten“](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. In einer neuen Browser-Registerkarte öffnet sich die Workflow-Modellseite „Dynamic Media-Neuverarbeitung“.
-1. Klicken Sie oben rechts auf der Workflow-Seite „Dynamic Media-Neuverarbeitung“ auf **[!UICONTROL Bearbeiten]**, um den Workflow zu entsperren.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. Eine neue Browser-Registerkarte öffnet die Workflow-Modellseite „Dynamic Media Reprocess“.
+1. Klicken Sie oben rechts auf der Workflow-Seite „Dynamic Media Reprocess“ auf **[!UICONTROL Bearbeiten]**, um den Workflow zu entsperren.
 1. Wählen Sie im Workflow die Komponente „Massen-Upload in Scene7“ aus, um die Symbolleiste zu öffnen, und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Konfigurieren]**.
 
    ![Komponente „Massen-Upload in Scene7“](/help/assets/assets-dm/reprocess-assets8.png)
@@ -124,9 +124,10 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
    ![Synchronisieren des Workflow-Modells](/help/assets/assets-dm/reprocess-assets1.png)
 
-1. Schließen Sie die Browser-Registerkarte, auf der das Workflow-Modell „Dynamic Media-Neuverarbeitung“ angezeigt wird.
+1. Schließen Sie die Browser-Registerkarte, auf der das Workflow-Modell „Dynamic Media Reprocess“ angezeigt wird.
 
-<!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
+<!--
+1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
@@ -144,4 +145,5 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
 1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
-1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.-->
+1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.
+-->

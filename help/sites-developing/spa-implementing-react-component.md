@@ -11,15 +11,15 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
-workflow-type: ht
-source-wordcount: '523'
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+workflow-type: tm+mt
+source-wordcount: '548'
 ht-degree: 100%
 
 ---
 
 
-# Implementieren einer React-Komponente für SPAs {#implementing-a-react-component-for-spa}
+# Implementieren einer React-Komponente für SPAs{#implementing-a-react-component-for-spa}
 
 Single Page Applications (SPAs) können Nutzerinnen und Nutzern von Websites ein überzeugendes Erlebnis bieten. Entwicklerinnen und Entwickler möchten in der Lage sein, Sites mithilfe von SPA-Frameworks zu erstellen. Autorinnen und Autoren möchten wiederum Inhalte innerhalb von Adobe Experience Manager (AEM) für eine mit SPA-Frameworks erstellte Site nahtlos bearbeiten können.
 
@@ -36,7 +36,7 @@ Dieser Artikel veranschaulicht das Beispiel der Wetterkomponente in der Beispiel
 Sie sollten mit der [Struktur einer SPA für AEM](/help/sites-developing/spa-getting-started-react.md) vor dem Lesen dieses Artikels vertraut sein.
 
 >[!CAUTION]
->In diesem Dokument dient die [We.Retail Journal-App](https://github.com/adobe/aem-sample-we-retail-journal) ausschließlich zu Demonstrationszwecken. Verwenden Sie sie nicht für Projektaufgaben.
+>In diesem Dokument dient die [We.Retail Journal-App](https://github.com/adobe/aem-sample-we-retail-journal) ausschließlich zu Demonstrationszwecken. Verwenden Sie sie nicht für Projektarbeiten.
 >
 >Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK verwendet.
 

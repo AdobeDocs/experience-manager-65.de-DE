@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: d5e24f8bdb3c43c482c2e468b44c6d78cc0a43be
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '3708'
-ht-degree: 98%
+source-wordcount: '3899'
+ht-degree: 97%
 
 ---
 
@@ -64,7 +64,8 @@ In diesem Dokument werden die unterstützten Client- und Server-Plattformen für
 - **Richtlinien für Patch-Updates**: Während die Patch-Installationsprogramme zur Aktualisierung verwendet werden, ist es wichtig zu überprüfen, ob die zugrunde liegende Version des vollständigen Installationsprogramms nicht um mehr als zwei Versionen zurückliegt. Stellen Sie beispielsweise während der Installation von Service Pack 6.5.23.0 sicher, dass die zugrunde liegende Version des vollständigen Installationsprogramms 6.5.18.0 oder 6.5.12.0 ist.
 
 <!--
-- **Patch Upgrade Support**: You can upgrade from an older service pack to a newer one (for example, from 6.5.18.0 to 6.5.23.0) using the patch installer, as long as the destination platform (OS, JDK, application server, etc.) is supported by the newer service pack.-->
+- **Patch Upgrade Support**: You can upgrade from an older service pack to a newer one (for example, from 6.5.18.0 to 6.5.23.0) using the patch installer, as long as the destination platform (OS, JDK, application server, etc.) is supported by the newer service pack.
+-->
 
 ### Empfohlene Konfigurationen {#recommendedconfigurations}
 
@@ -83,7 +84,7 @@ Adobe empfiehlt die folgenden Konfigurationen und bietet vollständige oder eing
   <td>Adobe bietet vollständige Unterstützung und Wartung für diese Konfiguration. Diese Konfiguration wird über den Qualitätssicherungsvorgang von Adobe abgedeckt.</td>
  </tr>
  <tr>
-  <td>R: Eingeschränkte Unterstützung </td>
+  <td>R: Eingeschränkte Unterstützung</td>
   <td>Adobe bietet vollständige Unterstützung für diese Konfiguration, sofern bestimmte Voraussetzungen erfüllt sind. Kontaktieren Sie den Unternehmens-Support von Adobe, um mehr über die Voraussetzungen zu erfahren und stellen Sie eine Supportanfrage.</td>
  </tr>
  <tr>
@@ -106,8 +107,7 @@ Adobe empfiehlt die folgenden Konfigurationen und bietet vollständige oder eing
 >[!NOTE]
 >
 >Um Kunden und Kundinnen von AEM Forms dabei zu helfen, die Nutzungskosten zu reduzieren, die Bereitstellungsarchitektur zu vereinfachen und den Entwicklungs-Stack zu modernisieren, wird die Enterprise-Plattform Adobe Experience Manager von Anwendungsserver-basierten Bereitstellungen auf eigenständige OSGi-basierte Bereitstellungen umgestellt. Adobe unterstützt weiterhin den JEE-Stack von AEM Forms mit einer reduzierten Matrix von Infrastrukturkomponenten.
-><br>
->Mit der Veröffentlichung von 6.5 werden die folgenden Infrastrukturkomponenten, die von Adobe-Kundinnen und -Kunden am wenigsten genutzt werden, nicht mehr unterstützt:
+><br>>Mit der Veröffentlichung von 6.5 werden die folgenden Infrastrukturkomponenten, die von Adobe-Kundinnen und -Kunden am wenigsten genutzt werden, nicht mehr unterstützt:
 >
 > - IBM® DB2®-Datenbank
 > - IBM® AIX®- und Sun Solaris™-Betriebssysteme
@@ -217,19 +217,19 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
  <tr>
   <td>IBM® DB2® 11.1 (veraltet)</td>
   <td>Repository-Mikro-Kernel</td>
-  <td>R: Eingeschränkte Unterstützung </td>
+  <td>R: Eingeschränkte Unterstützung</td>
  </tr>
  <tr>
  <tr>
   <td>MySQL 8.0.27 (Veraltet) </td>
   <td>–</td>
-  <td>R: Eingeschränkte Unterstützung </td>
+  <td>R: Eingeschränkte Unterstützung</td>
  </tr>
  <tr>
  <tr>
   <td>MySQL 8.4</td>
   <td>–</td>
-  <td>R: Eingeschränkte Unterstützung </td>
+  <td>R: Eingeschränkte Unterstützung</td>
  </tr>
 </tbody>
 </table>
@@ -423,7 +423,7 @@ Beachten Sie die folgenden Ausnahmen, wenn Sie eine Plattform auswählen, auf de
 1. CRX-Repository unterstützt Persistenz des Typs TarMK, MongoDB und relationale Datenbanken (RDBMK). Sie dürfen nicht zwei verschiedene Datenbanksysteme zwischen dem Anwendungsserver und dem CRX-Repository haben. In einer AEM Forms on JEE-Umgebung können Sie MongoMK jedoch mit dem CRX-Repository und einer unterstützten relationalen Datenbank mit Anwendungs-Server verwenden.
 @@ -432,12 +359,12 @@ Beachten Sie die folgenden Ausnahmen bei der Auswahl einer Plattform zur Einrichtung Ihres AEM F
 1. JDK-Versionen, die höher als 1.8.0_281 sind, werden für WebLogic-Server nicht unterstützt. (FORMS-8498)
-1. JDK 11.0.20 wird zur Installation des AEM Forms on JEE-Installationsprogramms nicht unterstützt. Nur JDK 11.0.19 oder frühere Versionen werden zur Installation des AEM Forms on JEE-Installationsprogramms unterstützt.
+1. JDK 11.0.20 wird zur Installation des AEM Forms on JEE-Installationsprogramms nicht unterstützt. Nur JDK 11.0.19 oder frühere Versionen werden zur Installation des AEM Forms auf JEE-Installationsprogramms unterstützt.
 
 1. Da [!DNL Microsoft® Windows Server 2019] weder [!DNL MySQL 5.7] noch [!DNL JBoss® EAP 7.1] unterstützt, unterstützt [!DNL Microsoft® Windows Server 2019] keine schlüsselfertigen Installationen für [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312)
 
@@ -432,7 +432,7 @@ Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für 
 
 
 - AEM Forms on JEE unterstützt Updates, Patches und Fix Packs zusätzlich zu der angegebenen Haupt- oder Nebenversion der unterstützten Software. Das Update auf die nächste Haupt- oder Nebenversion wird jedoch nur unterstützt wenn entsprechend angegeben.
-- Cluster-basierte Installationen unterstützen keine TarMK-Persistenz.  Weitere Informationen zur unterstützten Persistenz finden Sie unter [Auswählen eines Persistenztyps für eine AEM Forms-Installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
+- Cluster-basierte Installationen unterstützen keine TarMK-Persistenz. Weitere Informationen zur unterstützten Persistenz finden Sie unter [Auswählen eines Persistenztyps für eine AEM Forms-Installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
 - AEM Forms on JEE unterstützt die Software verschiedener Drittanbieter gemäß der [Richtlinie zur Unterstützung der Software von Drittanbietern](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p) von Adobe.
 @@ -449,274 +376,219 @@ Beachten Sie außerdem Folgendes bei der Auswahl von Software für Adobe AEM
 
@@ -505,7 +505,7 @@ Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für 
 ### Unterstützung für Cordova {#support-for-cordova}
 
 
-AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifischen Versionen von Cordova werden unterstützt:
+Die AEM Forms-App unterstützt jetzt Apache Cordova. Im Folgenden finden Sie die unterstützten plattformspezifischen Versionen von Cordova:
 
 
 - Apache Cordova 6.4.0
@@ -519,7 +519,7 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
  <tbody>
   <tr>
    <th><p><strong>Produkt</strong></p> </th>
-   <th><p><strong>Unterstützte Formate für die Konvertierung ins PDF-Format </strong></p> </th>
+   <th><p><strong>Unterstützte Formate für die Konvertierung ins PDF-Format</strong></p> </th>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> – neueste Version</td>
@@ -561,8 +561,10 @@ Die Microsoft® Office Professional Plus-Installation kann eine Einzelhandels- o
 
 Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder unlizenziert wird, z. B. weil eine Installation mit Volumenlizenz einen KMS-Host nicht innerhalb eines bestimmten Zeitraums finden kann, können Konvertierungen fehlschlagen, bis die Installation neu lizenziert und reaktiviert wird.
 
-<!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
->- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->
+<!--
+Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
+>- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.
+-->
 
 
 ### Ausnahmen der Barrierefreiheit {#exceptions-to-accessibility-support}
@@ -683,8 +685,8 @@ Für zusätzliche Anforderungen siehe:
 
 - Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 oder Windows® 11
 - Prozessor mit 1 GHz oder höher mit Unterstützung für PAE, NX und SSE2.
-- 1 GB RAM für 32-Bit- oder 2 GB RAM für 64-Bit-Betriebssysteme
-@@ -729,49 +601,45 @@ Weitere Informationen zu Anforderungen:
+- 1 GB RAM für 32-Bit-Betriebssysteme oder 2 GB RAM für 64-Bit-Betriebssysteme
+@@ -729,49 +601,45 @@ Weitere Informationen zu den Anforderungen finden Sie unter:
 - Administratorrechte für die Installation von Designer
 - Microsoft® Visual C++ 2019 (VC 14.28 oder höher) 32-Bit-Runtime
 
@@ -833,7 +835,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
 - Microsoft&reg; SharePoint 2016
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -904,7 +906,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Added support**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platform:
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
@@ -918,6 +920,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Microsoft&reg; SQL Server JDBC driver 12.8 | | Microsoft&reg; SQL Server JDBC driver 8.2 |
 | Microsoft&reg; Office 2021 | | Microsoft&reg; Office 2019 |
 | Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit) | |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit)  |
+
 -->
 
 ### Version 6.5.23.0 (6. Juni 2025)
@@ -1004,4 +1007,4 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
    - [!DNL Microsoft&reg;&reg; SQL Server 2019]
 - Sep 09, 2020
    - Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.
-   -->
+-->

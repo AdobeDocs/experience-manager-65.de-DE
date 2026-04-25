@@ -10,10 +10,10 @@ feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '5914'
-ht-degree: 100%
+source-wordcount: '6186'
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ Um ein interaktives Video mit Shopping-Funktion in Aktion zu sehen, wählen Sie 
 
 * Wählen Sie die Miniatur aus, wenn Sie das Video anhalten und die Schnellansicht des Produkts öffnen möchten. Sie können beispielsweise im Video auf das KitchenAid-Miniaturbild klicken, um eine 360-Grad-Rotationsansicht des Mixers anzuzeigen, oder heranzoomen, um die Details des Mixers zu sehen.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=de. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![Ein Frame aus einem interaktiven Video mit Shopping-Funktion](assets/chlimage_1-126.png) *Ein Frame aus einem interaktiven Video mit Shopping-Funktion.*
 
@@ -50,7 +50,8 @@ Obwohl die Videoeinführung mit Assets on Demand erstellt wurde, gelten die Prin
 
 Im Webinar „Verwenden von interaktiven Videos, Link- und YouTube-Freigabe in Experience Manager Assets“ erfahren Sie, wie mit interaktiven Videos und anderen Funktionen konversionsgesteuerte Ereignisse in Video-Marketing-Inhalte eingebunden werden.
 
-<!-- NOT FOUND; FIND REPLACEMENT
+<!--
+NOT FOUND; FIND REPLACEMENT
 >[!NOTE]
 >
 >[Using Interactive Video, Link Sharing, and YouTube sharing in Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/). 
@@ -89,8 +90,8 @@ Siehe [Hochladen eines Videos und der zugehörigen Miniatur-Assets](#uploading-a
    >Das MXF-Videoformat wird noch nicht für die Verwendung mit interaktiven Videos in Dynamic Media unterstützt.
 
 1. **Hinzufügen von Interaktivität zum Video**: Fügen Sie dem Video mindestens ein Zeitsegment hinzu. Verknüpfen Sie dann Miniaturen mit diesen Zeitsegmenten. Weisen Sie jeder Miniatur eine Aktion wie einen Hyperlink, eine Schnellansicht oder ein Experience Fragment zu.
-(Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihre interaktiven Inhalte über Links mit relativen URLs verfügen, insbesondere über Links zu Seiten in Experience Manager Sites.)
-Schließen Sie den Vorgang ab, indem Sie die interaktiven Video-Assets veröffentlichen. Durch das Veröffentlichen wird der Einbettungs-Code oder die URL erstellt, die Sie schließlich kopieren und auf die Landingpage Ihrer Website anwenden. Siehe [Hinzufügen von Interaktivität zum Video](#adding-interactivity-to-your-video).
+(Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Experience Manager Sites.)
+Veröffentlichen Sie abschließend die interaktiven Video-Assets. Durch das Veröffentlichen wird der Einbettungs-Code oder die URL erstellt, die Sie schließlich kopieren und auf die Landingpage Ihrer Website anwenden. Siehe [Hinzufügen von Interaktivität zum Video](#adding-interactivity-to-your-video).
 Siehe [Veröffentlichen von Assets](/help/assets/publishing-dynamicmedia-assets.md).
 
 1. **Hinzufügen eines interaktiven Videos zu Ihrer Website oder Ihrer Website in Experience Manager**: Wenn Sie Experience Manager Sites, Experience Manager eCommerce oder beides verwenden, können Sie das interaktive Video zu einer Web-Seite hinzufügen. Ziehen Sie die interaktive Medienkomponente auf die Seite im Experience Manager. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
@@ -236,9 +237,9 @@ Wenn Sie in der Authoring-Umgebung auf eine Miniatur klicken, wird eine Vorschau
 
 Sie können optional eine eigene benutzerdefinierte Viewer-Vorgabe für interaktive Videos erstellen. Sie können unter anderem den Stil des Video-Players, die interaktiven Miniaturen und die Miniatur-Rasteransicht, die am Ende des Videos angezeigt wird, bestimmen.
 
-Eine Viewer-Vorgabe für interaktive Videos rendert das Video entsprechend sowie alle Zeitleistensegmente, die Sie hinzugefügt haben. Sie verwendet zudem eine standardmäßige Beispielschnellansicht, wenn Sie im Vorschaumodus auf eine Produktminiatur klicken. Auf diese Weise können Sie vor dem Veröffentlichen ihre Interaktivität testen.
+Eine Viewer-Vorgabe für interaktive Videos rendert das Video entsprechend sowie alle Timeline-Segmente, die Sie hinzugefügt haben. Sie verwendet zudem eine standardmäßige Beispielschnellansicht, wenn Sie im Vorschaumodus auf eine Produktminiatur klicken. Auf diese Weise können Sie vor dem Veröffentlichen ihre Interaktivität testen.
 
-Nachdem Sie die Viewer-Vorgabe gespeichert haben, wird ihr Status automatisch auf der Seite „Viewer-Vorgaben“ auf **Ein** festgelegt. Dieser Status bedeutet, dass sie in der Komponente Dynamic Media sichtbar ist und immer dann, wenn Sie die Vorschau eines Videos damit anzeigen. Denken Sie daran, die neue Viewer-Vorgabe auch manuell zu veröffentlichen.
+Nachdem Sie die Viewer-Vorgabe gespeichert haben, wird ihr Status auf der Seite „Viewer **Vorgaben** automatisch auf Ein gesetzt. Dieser Status bedeutet, dass es in der Dynamic Media-Komponente und bei jeder Vorschau eines Videos mit ihr sichtbar ist. Denken Sie daran, die neue Viewer-Vorgabe auch manuell zu veröffentlichen.
 
 Siehe [Erstellen einer neuen Viewer-Vorgabe](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset), um eine eigene Viewer-Vorgabe für interaktive Videos zu erstellen.
 
@@ -263,9 +264,9 @@ Siehe [Hochladen von Assets mit FTP-Auftragsplanung](/help/assets/manage-assets.
 
 ## Hinzufügen von Interaktivität zu einem Video {#adding-interactivity-to-your-video}
 
-Sie fügen einem Video mithilfe des integrierten visuellen Editors auf der Seite „Interaktives Video erstellen“ Zeitleistensegmente hinzu.
+Sie fügen einem Video mithilfe des integrierten visuellen Editors auf der Seite „Interaktives Video erstellen“ Timeline-Segmente hinzu.
 
-Nach dem Hinzufügen von Zeitleistensegmenten fügen Sie Miniaturbilder in jedem Segment hinzu. Für jede Miniaturansicht, die Sie hinzufügen, wenden Sie eine Aktion darauf an. Beispielsweise können Sie eine Schnellansicht auf die Miniaturansicht anwenden. Alternativ können Sie ihr einen Hyperlink oder ein Experience Fragment zuweisen.
+Nach dem Hinzufügen von Timeline-Segmenten fügen Sie Miniaturbilder in jedem Segment hinzu. Für jede Miniaturansicht, die Sie hinzufügen, wenden Sie eine Aktion darauf an. Beispielsweise können Sie eine Schnellansicht auf die Miniaturansicht anwenden. Alternativ können Sie ihr einen Hyperlink oder ein Experience Fragment zuweisen.
 
 Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-authoring/experience-fragments.md).
 
@@ -300,9 +301,9 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
    * Um die Wiedergabe des Videos zu starten, wählen Sie die Schaltfläche **[!UICONTROL Abspielen]**. Wenn bestimmte Produkte, Services oder Einzelheiten, die Sie hervorheben möchten, in der Ansicht angezeigt werden, klicken Sie auf **[!UICONTROL Pause]**. Wählen Sie **[!UICONTROL Segment hinzufügen]** aus.
 
-     Fahren Sie mit dem Wiedergeben und Anhalten des Videos an den Punkten entlang der Zeitleiste fort, an denen Sie ein Segment hinzufügen möchten, bis Sie das Ende des Videos erreicht haben.
+     Fahren Sie mit dem Wiedergeben und Anhalten des Videos an den Punkten entlang der Timeline fort, an denen Sie ein Segment hinzufügen möchten, bis Sie das Ende des Videos erreicht haben.
 
-1. (Optional) Ziehen Sie den **[!UICONTROL Regler für Schnittfensterskalierung]** nach links, um einzuzoomen, oder nach rechts, um auszuzoomen. Dadurch können Sie bestimmen, wie viele Details in den von Ihnen hinzugefügten Segmenten zu sehen sind.
+1. (Optional) Ziehen Sie den **[!UICONTROL Regler für die Timeline-Skalierung]** nach links, um einzuzoomen, oder nach rechts, um auszuzoomen. Dadurch können Sie bestimmen, wie viele Details in den von Ihnen hinzugefügten Segmenten zu sehen sind.
 
    ![chlimage_1-22](assets/chlimage_1-128.png)
 
@@ -337,33 +338,33 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
       </tbody>
     </table>
 
-   Die Zeitleiste des Videos beansprucht so viel Platz auf dem Bildschirm, wie für sie verfügbar ist. Daher behalten die hinzugefügten Segmente ihre korrekte Breite bei, wenn die Größe des Browsers geändert wird.
+   Die Timeline des Videos beansprucht so viel Platz auf dem Bildschirm, wie für sie verfügbar ist. Daher behalten die hinzugefügten Segmente ihre korrekte Breite bei, wenn die Größe des Browsers geändert wird.
 
-   Dies wird durch die folgenden drei Screenshots veranschaulicht, die auf demselben Video basieren. Beachten Sie, dass die Breite jedes Segments abhängig von der Einstellung für die Zeitleistenskalierung geändert wird.
+   Dies wird durch die folgenden drei Screenshots veranschaulicht, die auf demselben Video basieren. Beachten Sie, dass die Breite jedes Segments abhängig von der Einstellung für die Timeline-Skalierung geändert wird.
 
    ![chlimage_1-23](assets/chlimage_1-129.png)
 
    Screenshot A
 
-   Screenshot A oben zeigt die Standardansicht eines 29 Sekunden langen Produktvideos. Die Zeitleistenskalierung ist auf den Standardwert von 5 Sekunden eingestellt.
+   Screenshot A oben zeigt die Standardansicht eines 29 Sekunden langen Produktvideos. Die Timeline-Skalierung ist auf den Standardwert von 5 Sekunden eingestellt.
 
    ![chlimage_1-130](assets/chlimage_1-130.png)
 
    Screenshot B
 
-   Im Screenshot B oben wurde der Regler für die Zeitleistenskalierung vom Standardwert von 5 Sekunden auf 3 Sekunden gezogen. Beachten Sie, dass für die individuellen Zeitstempel der Zeitleistenskalierung jetzt 3-Sekunden-Intervalle gelten.
+   Im Screenshot B oben wurde der Regler für die Timeline-Skalierung vom Standardwert von 5 Sekunden auf 3 Sekunden gezogen. Beachten Sie, dass für die individuellen Zeitstempel der Timeline-Skalierung jetzt 3-Sekunden-Intervalle gelten.
 
    ![chlimage_1-25](assets/chlimage_1-131.png)
 
    Screenshot C
 
-   Im Screenshot C oben wurde die Einstellung der Zeitleistenskalierung auf 8 Sekunden gezogen. Beachten Sie, wie die Segmente, die Produktminiaturen enthalten, verkleinert wurden. Auf diese Weise herauszuzoomen ist nützlich, wenn Sie ein langes Video haben und eine Übersicht über weitere Segmente sehen möchten, die normalerweise in die Seitenbreite passen würden.
+   Im Screenshot C oben wurde die Einstellung der Timeline-Skalierung auf 8 Sekunden gezogen. Beachten Sie, wie die Segmente, die Produktminiaturen enthalten, verkleinert wurden. Auf diese Weise herauszuzoomen ist nützlich, wenn Sie ein langes Video haben und eine Übersicht über weitere Segmente sehen möchten, die normalerweise in die Seitenbreite passen würden.
 
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
    * So passen Sie die Start- und Endzeit eines Segments an:
 
-     Wählen Sie ein Segment und ziehen Sie das blaue ovale Symbol am Anfang oder Ende, um die Zeit für den Beginn bzw. das Ende anzupassen. Der angezeigte Video-Frame wechselt basierend auf Ihren Anpassungen zur entsprechenden Stelle im Video. Die Verschiebung des Zeitleistensegments ist auf Grundlage der benachbarten Segmente in der Zeitleiste beschränkt. Die minimale zulässige Segmentzeit beträgt eine Sekunde.
+     Wählen Sie ein Segment und ziehen Sie das blaue ovale Symbol am Anfang oder Ende, um die Zeit für den Beginn bzw. das Ende anzupassen. Der angezeigte Video-Frame wechselt basierend auf Ihren Anpassungen zur entsprechenden Stelle im Video. Die Verschiebung des Timeline-Segments ist auf Grundlage der benachbarten Segmente in der Timeline beschränkt. Die minimale zulässige Segmentzeit beträgt eine Sekunde.
 
      Verwenden Sie die folgenden Navigationsverknüpfungen, um Ihre Videosegmente schnell zu überprüfen und zu optimieren:
 
@@ -373,13 +374,13 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
    ![chlimage_1-26](assets/chlimage_1-132.png)
 
-   Neupositionierung des Endes eines Zeitleistensegments
+   Neupositionierung des Endes eines Timeline-Segments
 
    * So löschen Sie ein Segment:
 
-     Wählen Sie das letzte Segment in der Zeitleiste aus und wählen Sie dann in der Symbolleiste die Option **[!UICONTROL Segment löschen]**. Wenn zwei oder mehr Segmente ausgewählt werden, ist **[!UICONTROL Segment löschen]** deaktiviert.
+     Wählen Sie das letzte Segment in der Timeline aus und wählen Sie dann in der Symbolleiste die Option **[!UICONTROL Segment löschen]**. Wenn zwei oder mehr Segmente ausgewählt werden, ist **[!UICONTROL Segment löschen]** deaktiviert.
 
-     Sie können nur das letzte Segment löschen. Wenn Sie beispielsweise alle Segmente auf der Zeitachse löschen möchten, müssen Sie immer das letzte auswählen und dann **[!UICONTROL Segment löschen]** wählen.
+     Sie können nur das letzte Segment löschen. Wenn Sie beispielsweise alle Segmente auf der Timeline löschen möchten, müssen Sie immer das letzte auswählen und dann **[!UICONTROL Segment löschen]** wählen.
 
 1. Wählen Sie ein Zeitsegment aus, mit dem Sie das oder die Miniaturbild(er) verknüpfen möchten.
 1. Klicken Sie auf der rechten Seite des Videos auf die Registerkarte **[!UICONTROL Inhalt]**.
@@ -390,15 +391,15 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
    <table>
       <tbody>
         <tr>
-        <td>So verknüpfen Sie eine Miniatur mit einem ausgewählten Zeitleistensegment-Segment</td>
-        <td><p>Klicken Sie auf das Bild im Asset-Auswahlbereich auf der rechten Seite.</p> <p>Sie können so viele Miniaturen hinzufügen, wie in einem Zeitleistensegment-Segment vorhanden sein sollen. Für jedes von Ihnen ausgewählte Bild wird ein Häkchen über dem Bild in der Asset-Auswahl angezeigt.</p> </td>
+        <td>So verknüpfen Sie eine Miniatur mit einem ausgewählten Timeline-Segment</td>
+        <td><p>Klicken Sie auf das Bild im Asset-Auswahlbereich auf der rechten Seite.</p> <p>Sie können so viele Miniaturen hinzufügen, wie in einem Timeline-Segment vorhanden sein sollen. Für jedes von Ihnen ausgewählte Bild wird ein Häkchen über dem Bild in der Asset-Auswahl angezeigt.</p> </td>
         </tr>
         <tr>
-        <td>So entfernen Sie eine Miniatur aus dem ausgewählten Zeitleistensegment-Segment</td>
+        <td>So entfernen Sie eine Miniatur aus dem ausgewählten Timeline-Segment</td>
         <td><p>Führen Sie einen der folgenden Schritte aus:</p>
           <ul>
-          <li>Klicken Sie im Asset-Auswahlbereich auf ein Bild mit einem Häkchen, um seine Auswahl aufzuheben. Das Bild-Asset wird aus dem Zeitleistensegment-Segment entfernt.<br /> </li>
-          <li>Klicken Sie in einem ausgewählten Zeitleistensegment auf ein Bild und klicken Sie dann in der Symbolleiste auf <strong>Produkt löschen</strong>.</li>
+          <li>Klicken Sie im Asset-Auswahlbereich auf ein Bild mit einem Häkchen, um seine Auswahl aufzuheben. Das Bild-Asset wird aus dem Timeline-Segment entfernt.<br /> </li>
+          <li>Klicken Sie in einem ausgewählten Timeline-Segment auf ein Bild und klicken Sie dann in der Symbolleiste auf <strong>Produkt löschen</strong>.</li>
           </ul> </td>
         </tr>
       </tbody>
@@ -406,9 +407,9 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
    ![Asset-Auswahl](assets/chlimage_1-133.png)
 
-   Durch Klicken wird ein Bild in einem Asset-Auswahlbereich dem ausgewählten Zeitleistensegment hinzugefügt.
+   Durch Klicken wird ein Bild in einem Asset-Auswahlbereich dem ausgewählten Timeline-Segment hinzugefügt.
 
-1. Wählen Sie ein einzelnes Miniaturbild in einem der Zeitleistensegmente und klicken Sie dann auf die Registerkarte **[!UICONTROL Aktionen]**.
+1. Wählen Sie ein einzelnes Miniaturbild in einem der Timeline-Segmente und klicken Sie dann auf die Registerkarte **[!UICONTROL Aktionen]**.
 1. Führen Sie einen der folgenden Schritte aus:
    <table> 
     <tbody> 
@@ -437,18 +438,18 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
       <td>So verknüpfen Sie das ausgewählte Miniaturbild mit einem Experience Fragment</td> 
       <td><p>Klicken Sie unter „Aktionstyp“ auf <strong>Experience Fragment</strong> und führen Sie dann einen der folgenden Schritte aus:<p> 
        <ul> 
-       <li>Wenn Sie AEM Sites-Kunde sind, klicken Sie auf das Suchsymbol (Lupe), um die Seite „Experience Fragment“ zu öffnen. Wählen Sie das Experience Fragment aus, das Sie verwenden möchten, und wählen Sie dann <strong>Auswählen</strong> in der rechten oberen Ecke der Seite, um zum Bereich „Aktionen“ auf der vorherigen Seite zurückzukehren.<br /> Weitere Informationen finden Sie unter <a href="/help/sites-authoring/experience-fragments.md">Experience Fragments</a>.</li> 
+       <li>Wenn Sie AEM Sites-Kunde sind, klicken Sie auf das Suchsymbol (Lupe), um die Seite „Experience Fragment“ zu öffnen. Wählen Sie das Experience Fragment aus, das Sie verwenden möchten, und wählen <strong>Auswählen</strong> in der oberen rechten Ecke der Seite, um zum Bereich „Aktionen“ auf der vorherigen Seite zurückzukehren.<br /> Weitere Informationen finden Sie unter <a href="/help/sites-authoring/experience-fragments.md">Experience Fragments</a>.</li> 
       </ul> 
        <ul> 
        <li>Legen Sie die Breite und Höhe des Experience Fragment fest, so wie es im Video angezeigt werden soll.</li>
        </ul><strong>Hinweis</strong>: Im interaktiven Video werden die Tools zur Freigabe in Social Media nicht unterstützt, wenn Sie den Viewer in ein Experience Fragment einbetten. Um dies zu vermeiden, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.</p></tr>&lt; 
       <tr> 
       <td>So bearbeiten Sie eine bereits einem Miniaturbild zugewiesene Aktion:</td> 
-      <td>Wählen Sie innerhalb eines Zeitleistensegments ein Miniaturbild aus, das rechts von seiner Textbeschriftung ein Kettenglied aufweist. Das Kettenglied deutet darauf hin, dass eine Aktion zugewiesen ist. Wählen Sie die Registerkarte <strong>Aktionen</strong> aus, damit Sie Ihre Änderungen vornehmen können.</td> 
+      <td>Wählen Sie innerhalb eines Timeline-Segments ein Miniaturbild aus, das rechts von seiner Textbeschriftung ein Kettenglied aufweist. Das Kettenglied deutet darauf hin, dass eine Aktion zugewiesen ist. Wählen Sie die Registerkarte <strong>Aktionen</strong> aus, damit Sie Ihre Änderungen vornehmen können.</td> 
       </tr> 
       <tr> 
       <td>So ändern Sie die Textbeschriftung eines Miniaturbildes</td> 
-      <td><p>Standardmäßig verwendet die Textbeschriftung das <code>Title</code>-Metadatenfeld des Miniaturbilds. Wenn <code>Title</code> nicht vorhanden ist, wird stattdessen der Dateiname des Miniaturbilds verwendet, jedoch ohne die Erweiterung.</p> <p>Um das Textfeld eines Miniaturbilds zu ändern, geben Sie den gewünschten Text auf der Registerkarte <strong>Aktionen</strong> direkt unter dem angezeigten Bild-Asset ein. Sehen Sie sich dazu den folgenden Screenshot an.</p> <p>Das neue Textfeld wird nur durch den Video-Player an sich und den Miniaturtext verwendet, der im Zeitleistensegment angezeigt wird. Die Änderung des Textfelds wirkt sich nicht auf das Metadatenfeld „Titel“ des Miniaturbilds oder auf den Dateinamen aus.</p> </td> 
+      <td><p>Standardmäßig verwendet die Textbeschriftung das <code>Title</code>-Metadatenfeld des Miniaturbilds. Wenn <code>Title</code> nicht vorhanden ist, wird stattdessen der Dateiname des Miniaturbilds verwendet, jedoch ohne die Erweiterung.</p> <p>Um das Textfeld eines Miniaturbilds zu ändern, geben Sie den gewünschten Text auf der Registerkarte <strong>Aktionen</strong> direkt unter dem angezeigten Bild-Asset ein. Sehen Sie sich dazu den folgenden Screenshot an.</p> <p>Das neue Textfeld wird nur durch den Video-Player an sich und den Miniaturtext verwendet, der im Timeline-Segment angezeigt wird. Die Änderung des Textfelds wirkt sich nicht auf das Metadatenfeld „Titel“ des Miniaturbilds oder auf den Dateinamen aus.</p> </td> 
       </tr> 
       <tr> 
       <td>Um eine Änderung rückgängig zu machen:</td> 
@@ -463,14 +464,14 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Wiederholen Sie die Schritte 6 bis 11, um den Zeitleistensegmenten des Videos weitere Miniaturbilder hinzuzufügen.
+   * Wiederholen Sie die Schritte 6 bis 11, um den Timeline-Segmenten des Videos weitere Miniaturbilder hinzuzufügen.
    * Fahren Sie mit dem optionalen Schritt 13 fort.
 
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
    * **[!UICONTROL Segment zusammenführen]**: Sie können zwei benachbarte Segmente (mit oder ohne zugewiesenen Miniaturen) in ein Segment zusammenführen.
 
-     Wählen Sie in der Zeitleiste zwei oder mehr zusammenhängende Segmente aus, die Sie zu einem einzigen zusammenführen möchten. Es gibt unten in dem Screenshot an den beiden ausgewählten Segmenten keine blauen ovalen Ziehpunkte.
+     Wählen Sie in der Timeline zwei oder mehr zusammenhängende Segmente aus, die Sie zu einem einzigen zusammenführen möchten. Es gibt unten in dem Screenshot an den beiden ausgewählten Segmenten keine blauen ovalen Ziehpunkte.
 
      Wählen Sie in der Symbolleiste **[!UICONTROL Segment zusammenführen]** aus.
 
@@ -480,7 +481,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
    * **[!UICONTROL Segment teilen]**: Sie können ein einzelnes Segment in zwei gleich lange Segmente unterteilen. Wenn dem Segment bereits Produktminiaturen zugewiesen sind, werden die Miniaturen im linken Segment zusammengefasst.
 
-     Klicken Sie in der Zeitleiste auf ein Segment, das Sie in der Hälfte teilen möchten, und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Segment teilen]**.
+     Klicken Sie in der Timeline auf ein Segment, das Sie in der Hälfte teilen möchten, und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Segment teilen]**.
 
      Wenn Sie zwei oder mehr Segmente auswählen, wird die Funktion **[!UICONTROL Segment teilen]** deaktiviert.
 
@@ -510,7 +511,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
    >
    >Um ein Video mit Shopping-Funktion und Schnellansichten zu veröffentlichen, stellen Sie sicher, dass Sie separat auch alle zugehörigen Bild-Assets des Videos aus Ihrem E-Commerce-Bereich veröffentlichen.
 
-   Nachdem Sie Zeitleistensegment-Segmente hinzugefügt und das interaktive Video veröffentlicht haben, sind Sie bereit, sie zur Landingpage Ihrer vorhandenen Website hinzuzufügen. Siehe [Integrieren eines interaktiven Videos in eine Website](#integrating-an-interactive-video-with-your-website).
+   Nachdem Sie Timeline-Segmente hinzugefügt und das interaktive Video veröffentlicht haben, sind Sie bereit, sie zur Landingpage Ihrer vorhandenen Website hinzuzufügen. Siehe [Integrieren eines interaktiven Videos in eine Website](#integrating-an-interactive-video-with-your-website).
 
 ## Veröffentlichen interaktiver Video-Assets {#publishing-interactive-video-assets}
 
@@ -518,7 +519,7 @@ Weitere Informationen zum Veröffentlichen von interaktiven Video-Assets finden 
 
 ## Integrieren eines interaktiven Videos mit einer Website {#integrating-an-interactive-video-with-your-website}
 
-Nachdem Sie ein Video hochgeladen, zu diesem Zeitleistensegmente hinzugefügt und das interaktive Video veröffentlicht haben, sind Sie nun in der Lage, es zu Ihrer vorhandenen Website hinzuzufügen.
+Nachdem Sie ein Video hochgeladen, zu diesem Timeline-Segmente hinzugefügt und das interaktive Video veröffentlicht haben, sind Sie nun in der Lage, es zu Ihrer vorhandenen Website hinzuzufügen.
 
 Wenn Sie Experience Manager Sites-Kunde sind, können Sie das interaktive Video hinzufügen, indem Sie die interaktive Medienkomponente auf Ihre Seite ziehen. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
@@ -603,7 +604,7 @@ In einem solchen Ereignis-Handler nimmt der Frontend-Code Folgendes vor:
 * Er erstellt anhand der Miniaturen eine Schnellansichts-URL.
 * Er löst den Schnellansichts-Ladevorgang vom Backend aus und rendert die Schnellansicht auf dem Bildschirm, um sie anzuzeigen.
 
-Außerdem unterstützt der interaktive Video-Viewer den Vollbildmodus. Endbenutzer lösen Schnellansichten aus, indem sie eine Miniaturansicht auswählen, ohne das Vollbild verlassen zu müssen. Um diese Funktion zu erzielen, ändern Sie den Frontend-Code so, dass das modale Dialogfeld für die Schnellansicht am Container des Viewers angehängt ist. Fügen Sie keinen Dokument-TEXT oder ein anderes Web-Seitenelement hinzu, das nicht verfügbar ist, wenn der Viewer im Vollbildmodus angezeigt wird. Der Code, der für diese Aufgabe zuständig ist, muss mindestens an einem weiteren Viewer-Callback lauschen, der gesendet wird, nachdem der Viewer auf der Seite geladen wurde.
+Außerdem unterstützt der interaktive Video-Viewer den Vollbildmodus. Endbenutzer lösen Schnellansichten aus, indem sie eine Miniaturansicht auswählen, ohne das Vollbild verlassen zu müssen. Um diese Funktion zu erzielen, ändern Sie den Frontend-Code so, dass das modale Dialogfeld für die Schnellansicht am Container des Viewers angehängt ist. Fügen Sie keinen Dokument-TEXT oder ein anderes Web-Seitenelement hinzu, das nicht verfügbar ist, wenn der Viewer im Vollbildmodus angezeigt wird. Der Code, der für diesen Auftrag zuständig ist, muss mindestens an einem weiteren Viewer-Callback lauschen, der gesendet wird, nachdem der Viewer auf der Seite geladen wurde.
 
 Der von Experience Manager zurückgegebene Einbettungs-Code verfügt über einen einsatzbereiten Ereignis-Handler. Er ist auskommentiert, wie im folgenden hervorgehobenen Code-Fragment zu sehen ist:
 
@@ -687,7 +688,7 @@ Der Prozess der Erstellung der Schnellansichts-URL ist im Prinzip das Gegenteil 
   </tbody>
 </table>
 
-Der letzte Schritt besteht darin, die Schnellansichts-URL auszulösen, und für das Aktivieren des Schnellansichtsbereichs ist höchstwahrscheinlich die Unterstützung eines Frontend-IT-Mitarbeiters aus Ihrer IT-Abteilung erforderlich. Er verfügt am ehesten über das entsprechende Fachwissen, um die Schnellansichtsimplementierung aus dem entsprechenden Schritt entsprechend auszulösen, um über eine einsatzbereite Schnellansichts-URL zu verfügen.
+Der letzte Schritt besteht darin, die Schnellansichts-URL auszulösen, und für das Aktivieren des Schnellansichtsbereichs ist höchstwahrscheinlich die Unterstützung eines Frontend-IT-Mitarbeiters aus Ihrer IT-Abteilung erforderlich. Diese Fachkraft verfügt am ehesten über das entsprechende Fachwissen, um mithilfe einer vordefinierten Schnellansichts-URL die Implementierung der Schnellansicht im entsprechenden Schritt auszulösen.
 
 Sie können sehen, wie diese Schritte auf die Demowebsite angewendet werden, um den Schnellansichts-Code vollständig in ein interaktives Video zu integrieren. Zuvor in diesem Thema wurde die Struktur der Schnellansichts-URL wie folgt ermittelt:
 

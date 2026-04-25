@@ -8,10 +8,10 @@ feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
-source-git-commit: 9eb74c1b95837d977b8abe9614421a0a2c0be73e
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '6448'
-ht-degree: 100%
+source-wordcount: '6595'
+ht-degree: 99%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 100%
 
 Die Beispiele in diesem Dokument sind hilfreich für das Verständnis und die Verwendung von AEM Document Services in einer AEM Forms on OSGi-Umgebung. Beispiele für die AEM Forms on JEE-Umgebung finden Sie unter
 
-* [Schnellstart der Java-API für den Signature-Dienst](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=de#programming-aem-forms-jee)
+* [Schnellstart für die Signature-Dienst-Java-API](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=de#programming-aem-forms-jee)
 
-* [Schnellstart der Java-API für den Encryption-Dienst](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?lang=de#developer-reference)
+* [Java-API-Schnellstart für den Verschlüsselungs-Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?lang=de#developer-reference)
 
-* [Schnellstart für die Java-API des Acrobat Reader-Erweiterungendienstes](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=de#developer-reference)
+* [Schnellstart für die Acrobat Reader Extensions-Service-Java-API](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=de#developer-reference)
 
 ## Voraussetzung {#prerequisite}
 
@@ -75,7 +75,7 @@ Sie können mithilfe des DocAssurance-Dienstes folgende Vorgänge durchführen:
 
 ### Hinzufügen eines unsichtbaren Signaturfeldes {#adding-an-invisible-signature-field}
 
-Digitale Signaturen werden in Signaturfeldern angezeigt, die eine grafische Darstellung der Signatur enthaltende Formularfelder sind. Signaturfelder können sichtbar oder unsichtbar sein. Unterzeichnende können ein bereits vorhandenes Signaturfeld verwenden, oder ein Signaturfeld kann programmgesteuert hinzugefügt werden. In beiden Fällen muss das Signaturfeld vorhanden sein, bevor ein PDF-Dokument signiert werden kann. Sie können ein Signaturfeld programmgesteuert hinzufügen, indem Sie die Java-API des Signatur-Dienstes oder die Signatur-Webservice-API verwenden. Sie können mehr als ein Signaturfeld zu einem PDF-Dokument hinzufügen. Jeder Signaturfeldname muss jedoch eindeutig sein.
+Digitale Signaturen werden in Signaturfeldern angezeigt, die eine grafische Darstellung der Signatur enthaltende Formularfelder sind. Signaturfelder können sichtbar oder unsichtbar sein. Unterzeichnende können ein bereits vorhandenes Signaturfeld verwenden, oder ein Signaturfeld kann programmgesteuert hinzugefügt werden. In beiden Fällen muss das Signaturfeld vorhanden sein, bevor ein PDF-Dokument signiert werden kann. Sie können ein Signaturfeld programmgesteuert hinzufügen, indem Sie die Java-API des Signatur-Dienstes oder die Signatur-Webservice-API verwenden. Sie können mehr als ein Signaturfeld zu einem PDF-Dokument hinzufügen. Jeder der Signaturfeldnamen muss jedoch eindeutig sein.
 
 **Syntax**: `addInvisibleSignatureField(Document inDoc, String signatureFieldName, FieldMDPOptionSpec fieldMDPOptionsSpec, PDFSeedValueOptionSpec seedValueOptionsSpec, UnlockOptions unlockOptions)`
 
@@ -245,7 +245,7 @@ sigAppearence.setSigningFormat(signingFormat);
 signOptions.setSigAppearence(sigAppearence);
 ```
 
-### Hinzufügen eines Signaturfelds  {#adding-a-signature-field-nbsp}
+### Hinzufügen eines Signaturfelds  {#adding-a-signature-field-nbsp}
 
 Sie können ein Signaturfeld programmgesteuert hinzufügen, indem Sie die Java-API des Signatur-Dienstes oder die Signatur-Webservice-API verwenden. Sie können einem PDF-Dokument mehrere Signaturfelder hinzufügen. Jeder der Signaturfeldnamen muss jedoch eindeutig sein.
 
@@ -756,9 +756,9 @@ public class GetSignature {
 }
 ```
 
-### Abrufen der Signaturfeldliste {#getting-signature-field-list-nbsp}
+### Abrufen der Signaturfeldliste  {#getting-signature-field-list-nbsp}
 
-Sie können die Namen aller Signaturfelder abrufen, die sich in einem PDF-Dokument befinden, das Sie signieren oder zertifizieren möchten. Wenn Sie nicht sicher sind, wie die Signaturfeldnamen in einem PDF-Dokument lauten, können Sie diese programmgesteuert abrufen und prüfen. Der Signature-Dienst gibt den vollqualifizierten Namen des Signaturfelds zurück, z. B. `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+Sie können die Namen aller Signaturfelder abrufen, die sich in einem PDF-Dokument befinden, das Sie signieren oder zertifizieren möchten. Wenn Sie nicht sicher sind, wie die Signaturfeldnamen in einem PDF-Dokument lauten, können Sie diese programmgesteuert abrufen und prüfen. Der Signature-Dienst gibt den vollqualifizierten Namen des Signaturfelds an, z. B. `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Syntax**: `public List <PDFSignatureField> getSignatureFieldList (Document inDoc, UnlockOptions unlockOptions)`
 
@@ -871,7 +871,7 @@ public class GetSignatureFields {
 }
 ```
 
-### Ändern von Signaturfeldern  {#modifying-signature-fields-nbsp}
+### Ändern von Signaturfeldern  {#modifying-signature-fields-nbsp}
 
 Sie können Signaturfelder in einem PDF-Dokument ändern. Das Ändern eines Signaturfelds umfasst das Manipulieren seiner Signaturfeldsperre- oder Seed-Wert-Lexikonwerte.
 
@@ -1038,7 +1038,7 @@ public class ModifySignatureField {
 }
 ```
 
-### Zertifizieren von PDF-Dokumenten  {#certifying-pdf-documents-nbsp}
+### Zertifizieren von PDF-Dokumenten  {#certifying-pdf-documents-nbsp}
 
 Sie können ein PDF-Dokument absichern, indem Sie es mit einem bestimmten Signaturtyp (nämlich einer zertifizierten Signatur) zertifizieren. Eine zertifizierte Signatur unterscheidet sich wie folgt von einer digitalen Signatur:
 
@@ -1370,7 +1370,7 @@ Darüber hinaus liefern Zertifikatsperrlisten Informationen zu Zertifikaten, die
 
 >[!NOTE]
 >
->Bevor ein PDF-Dokument mit einem Zertifikat verschlüsselt werden kann, müssen Sie sicherstellen, dass das Zertifikat zu AEM Trust Store hinzugefügt wird. 
+>Bevor ein PDF-Dokument mit einem Zertifikat verschlüsselt werden kann, müssen Sie sicherstellen, dass das Zertifikat zu AEM Trust Store hinzugefügt wird.
 
 **Anwenden von Nutzungsrechten auf PDF-Dokumente**
 
@@ -1408,7 +1408,7 @@ Nach dem Zertifizieren eines PDF-Dokuments können Sie weitere Signaturfelder di
 
 Beim Signieren wird das Dokument auf bestimmte Arten von Inhalten geprüft, die den Inhalt des Dokuments missverständlich oder irreführend machen könnten.
 
-Beispiel: Das Ausfüllen von Formularen oder Einfügen von Kommentaren kann in dem Dokument zulässig sein. Wenn der Autor festlegt, dass eine bestimmte Änderung nicht zulässig ist, 
+Beispiel: Das Ausfüllen von Formularen oder Einfügen von Kommentaren kann in dem Dokument zulässig sein. Wenn der Autor festlegt, dass eine bestimmte Änderung nicht zulässig ist,
 
 Acrobat verhindert auf diese Weise, dass Benutzende das Dokument ändern. Wenn solche Änderungen vorgenommen werden, etwa durch Verwenden einer anderen Anwendung, wird die zertifizierte Signatur ungültig und Acrobat gibt eine Warnung aus, wenn jemand das Dokument öffnet. (Bei nicht zertifizierten Signaturen werden Änderungen nicht verhindert und normale Bearbeitungsvorgänge führen nicht dazu, dass die ursprüngliche Signatur ungültig wird.)
 
@@ -3075,7 +3075,7 @@ Sie können eine neue digitale Signatur erst auf ein Signaturfeld anwenden, nach
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>Der Name des Signaturfelds.<br />  </td>
+   <td>Der Name des Signaturfelds.<br /> </td>
   </tr>
   <tr>
    <td><code>unlockOptions</code><br /> </td>
@@ -3639,14 +3639,14 @@ Der Ausgabedienst stellt APIs zum Rendern einer XDP-Datei in den Formaten .pdf, 
 * **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** Generiert ein PDF-Dokument, indem ein Formularentwurf mit auf einem Netzwerkspeicherort, lokalen Dateisystem oder HTTP-Speicherort als Literalwerte gespeicherten Daten zusammengeführt wird.
 
 * **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** Generiert ein PDF-Dokument, indem ein Formularentwurf mit in einer Anwendung gespeicherten Daten zusammengeführt wird.
-* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):** Führt einen Formularentwurf mit Daten zusammen, um ein PDF-Dokument zu erstellen. Optional wird für jeden Datensatz eine Metadatendatei generiert oder es wird die Ausgabe in einer PDF-Datei gespeichert.
+* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):** Führt einen Formularentwurf mit Daten zusammen, um ein PDF-Dokument zu erstellen. Optional wird für jeden Eintrag eine Metadatendatei generiert, oder die Ausgabe wird in einer PDF-Datei gespeichert.
 * **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** Generiert eine PCL-, PostScript- oder ZPL-Ausgabe aus einem Formularentwurf und einer Datendatei, die auf einem Netzwerkspeicherort, lokalen Dateisystem oder einem HTTP-Speicherort als Literalwerte gespeichert sind.
 
 * **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** Generiert eine PCL-, PostScript- und ZPL-Ausgabe aus einem Formularentwurf und einer Datendatei, die in einer Anwendung gespeichert sind.
 
 ### generatePDFOutput {#generatepdfoutput}
 
-Die generatePDFOutput-API generiert ein PDF-Dokument, indem ein Formularentwurf mit Daten zusammengeführt wird. Optional wird für jeden Datensatz eine Metadatendatei generiert, oder die Ausgabe wird in einer PDF-Datei gespeichert. Verwenden Sie die generatePDFOutput-API für die Formularentwürfe oder Daten, die auf einem Netzwerkspeicherort, einem lokalen Dateisystem oder HTTP-Speicherort als Literalwerte gespeichert sind. Wenn der Formularentwurf und die XML-Daten in einer Anwendung gespeichert werden, verwenden Sie die [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)-API.
+Die generatePDFOutput-API generiert ein PDF-Dokument, indem ein Formularentwurf mit Daten zusammengeführt wird. Optional wird für jeden Eintrag eine Metadatendatei generiert, oder die Ausgabe wird in einer PDF-Datei gespeichert. Verwenden Sie die generatePDFOutput-API für die Formularentwürfe oder Daten, die auf einem Netzwerkspeicherort, einem lokalen Dateisystem oder HTTP-Speicherort als Literalwerte gespeichert sind. Wenn der Formularentwurf und die XML-Daten in einer Anwendung gespeichert werden, verwenden Sie die [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)-API.
 
 **Syntax:** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
@@ -3668,7 +3668,7 @@ Die generatePDFOutput-API generiert ein PDF-Dokument, indem ein Formularentwurf 
   </tr>
   <tr>
    <td>options</td>
-   <td>Gibt Werte von contentRoot-, locale-, AcrobatVersion-, linearizedPDF- und taggedPDF-Variablen an. Der Optionsparameter akzeptiert Objekte vom Typ „PDFOutputOptions“. <br />  </td>
+   <td>Gibt Werte von contentRoot-, locale-, AcrobatVersion-, linearizedPDF- und taggedPDF-Variablen an. Der Optionsparameter akzeptiert Objekte vom Typ „PDFOutputOptions“. <br /> </td>
   </tr>
  </tbody>
 </table>
@@ -3753,7 +3753,7 @@ Im folgenden Java-Code-Beispiel wird ein PDF-Dokument generiert, indem ein Formu
 
 ### generatePDFOutput {#generatepdfoutput-1}
 
-Die generatePDFOutput-API generiert ein PDF-Dokument, indem ein Formularentwurf mit Daten zusammengeführt wird. Generieren Sie optional eine Metadatendatei für jeden Datensatz oder speichern Sie die Ausgabe in einer PDF-Datei. Verwenden Sie die generatePrintedOutput-API für die Formularentwürfe oder Daten, die in einer Anwendung gespeichert sind. Wenn der Formularentwurf und die XML-Daten auf einem Netzwerk-, lokalen oder auf einem HTTP-Speicherort als Literalwerte gespeichert sind, verwenden Sie die [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)-API.
+Die generatePDFOutput-API generiert ein PDF-Dokument, indem ein Formularentwurf mit Daten zusammengeführt wird. Generieren Sie optional eine Metadatendatei für jeden Eintrag oder speichern Sie die Ausgabe in einer PDF-Datei. Verwenden Sie die generatePrintedOutput-API für die Formularentwürfe oder Daten, die in einer Anwendung gespeichert sind. Wenn der Formularentwurf und die XML-Daten auf einem Netzwerk-, lokalen oder auf einem HTTP-Speicherort als Literalwerte gespeichert sind, verwenden Sie die [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)-API.
 
 **Syntax:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
@@ -3863,7 +3863,7 @@ Im folgenden Java-Code-Beispiel wird ein PDF-Dokument generiert, indem ein Formu
 
 ### generatePDFOutputBatch {#generatepdfoutputbatch}
 
-Führt einen Formularentwurf mit Daten zusammen, um ein PDF-Dokument zu erstellen. Optional wird für jeden Datensatz eine Metadatendatei generiert, oder die Ausgabe wird in einer PDF-Datei gespeichert. Verwenden Sie die generatePDFOutputBatch-API für die Formularentwürfe oder Daten, die auf einem Netzwerkspeicherort, einem lokalen Dateisystem oder HTTP-Speicherort als Literalwerte gespeichert sind.
+Führt einen Formularentwurf mit Daten zusammen, um ein PDF-Dokument zu erstellen. Optional wird für jeden Eintrag eine Metadatendatei generiert, oder die Ausgabe wird in einer PDF-Datei gespeichert. Verwenden Sie die generatePDFOutputBatch-API für die Formularentwürfe oder Daten, die auf einem Netzwerkspeicherort, einem lokalen Dateisystem oder HTTP-Speicherort als Literalwerte gespeichert sind.
 
 **Syntax:** `BatchResult generatePDFOutputBatch(Map templates, Map data, PDFOutputOptions options, BatchOptions batchOptions);`
 
@@ -4156,7 +4156,7 @@ Document doc=null;
 
 ### generatePrintedOutputBatch {#generateprintedoutputbatch}
 
-Erstellt ein Dokument im PS-, PCL- und ZPL-Format durch Zusammenführen eines Formularentwurfs mit Daten. Generieren Sie optional eine Metadatendatei für jeden Datensatz oder speichern Sie die Ausgabe in einer PDF-Datei. Verwenden Sie die generatePrintedOutputBatch-API bei Formularentwürfen oder Daten, die in einem lokalen Dateisystem, einem Netzwerk- oder einem HTTP-Speicherort als Literalwerte gespeichert wurden.
+Erstellt ein Dokument im PS-, PCL- und ZPL-Format durch Zusammenführen eines Formularentwurfs mit Daten. Generieren Sie optional eine Metadatendatei für jeden Eintrag oder speichern Sie die Ausgabe in einer PDF-Datei. Verwenden Sie die generatePrintedOutputBatch-API bei Formularentwürfen oder Daten, die in einem lokalen Dateisystem, einem Netzwerk- oder einem HTTP-Speicherort als Literalwerte gespeichert wurden.
 
 **Syntax`:`** `BatchResult generatePrintedOutputBatch(Map templates, Map data, PrintedOutputOptions options, BatchOptions batchOptions);`
 
@@ -5061,7 +5061,7 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
 
 ### Dokument-Dienstprogrammdienste {#doc-utility-services}
 
-<!-- Document utilities with synchronous APIs help you <!--convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
+<!-- Document utilities with synchronous APIs help you convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
 
 #### Automatisches Taggen von PDF-Dokumenten {#auto-tag-api}
 

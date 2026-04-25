@@ -9,10 +9,10 @@ feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3142'
-ht-degree: 100%
+source-wordcount: '3206'
+ht-degree: 96%
 
 ---
 
@@ -28,15 +28,17 @@ ht-degree: 100%
 
 Mit adaptiven Formularen können Sie Formulare erstellen, die ansprechend, reaktionsfähig, dynamisch und anpassungsfähig sind. AEM Forms bietet eine intuitive Benutzeroberfläche sowie vordefinierte Komponenten zum Erstellen und Verarbeiten von adaptiven Formularen. Sie können adaptive Formulare auf der Basis eines Formularmodells oder Schemas oder ohne Formularmodell erstellen. Es ist wichtig, sorgfältig ein Formularmodell zu wählen, das nicht nur Ihren Verwendungszwecken entspricht, sondern auch Ihre bestehenden Infrastrukturinvestitionen und -Assets erweitert. Zum Erstellen eines adaptiven Formulars werden die folgenden Optionen bereitgestellt:
 
-* **Verwendung eines Formulardatenmodell**
+* **Verwenden eines Formulardatenmodells**
   [Datenintegration](../../forms/using/data-integration.md) ermöglicht die Integration von Entitäten und Services aus unterschiedlichen Datenquellen in ein Formulardatenmodell, das Sie zum Erstellen adaptiver Formulare verwenden können. Wählen Sie das Formulardatenmodell, wenn Sie ein adaptives Formular erstellen, für das Daten aus mehreren Datenquellen abgerufen und in diese geschrieben werden sollen.
 
-* **Verwenden einer XDP-Formularvorlage** Dieses Formularmodell ist ideal, wenn bereits ein Bestand an XFA- oder XDP-basierten Formularen vorhanden ist. Es bietet eine direkte Möglichkeit, Ihre XFA-basierten Formulare in adaptive Formulare zu konvertieren. Alle vorhandenen XFA-Regeln bleiben in den zugehörigen adaptiven Formularen erhalten. Die resultierenden adaptiven Formulare unterstützen XFA-Konstrukte, z. B. Überprüfungen, Ereignisse, Eigenschaften und Muster.
+* **Verwenden einer XDP-Formularvorlage**
+Dies ist ein ideales Formularmodell, wenn Sie bereits über Investitionen in XFA- oder XDP-basierte Formulare verfügen. Es bietet eine direkte Möglichkeit, Ihre XFA-basierten Formulare in adaptive Formulare zu konvertieren. Alle vorhandenen XFA-Regeln bleiben in den zugehörigen adaptiven Formularen erhalten. Die resultierenden adaptiven Formulare unterstützen XFA-Konstrukte, z. B. Überprüfungen, Ereignisse, Eigenschaften und Muster.
 
-* **Verwendung einer XML-Schemadefinition (XSD) oder eines JSON-Schemas** XML- und JSON-Schemas stellen die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Sie können das Schema mit einem adaptiven Formular verknüpfen und dem Formular mithilfe der Elemente aus dem Schema dynamische Inhalte hinzufügen. Die Elemente des Schemas sind für die Verwendung auf der Registerkarte „Datenmodellobjekte“ des Content Browser verfügbar, wenn sie adaptive Formulare erstellen.
+* **Verwenden einer XML-Schemadefinition (XSD) oder eines JSON-Schemas**
+XML- und JSON-Schemata stellen die Struktur dar, in der Daten vom Back-End-System in Ihrer Organisation produziert oder genutzt werden. Sie können das Schema mit einem adaptiven Formular verknüpfen und dem Formular mithilfe der Elemente aus dem Schema dynamische Inhalte hinzufügen. Die Elemente des Schemas sind für die Verwendung auf der Registerkarte „Datenmodellobjekte“ des Content Browser verfügbar, wenn sie adaptive Formulare erstellen.
 
 * **Keines verwenden oder ohne Formularmodell**
-Bei dieser Option wird kein Formularmodell für die Erstellung der adaptiven Formulare verwendet. Die XML-Datendatei, die aus diesen Formularen generiert wird, hat eine flache Struktur mit Feldern und entsprechenden Werten.
+Adaptive Formulare, die mit dieser Option erstellt wurden, verwenden kein Formularmodell. Die XML-Datendatei, die aus diesen Formularen generiert wird, hat eine flache Struktur mit Feldern und entsprechenden Werten.
 
 Weitere Informationen zum Erstellen eines adaptiven Formulars finden Sie unter [Erstellen eines adaptiven Formulars](../../forms/using/creating-adaptive-form.md).
 
@@ -72,16 +74,19 @@ Die Seitenleiste ermöglicht Ihnen Folgendes:
 
 **A.** Inhalt-Browser **B.** Eigenschaften-Browser **C.** Assets-Browser **D.** Komponenten-Browser
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-](assets/sidebar-comps-1.png) -->
+](assets/sidebar-comps-1.png)
+-->
 
 Die Seitenleiste enthält folgende Browser:
 
-* **Inhalt-Browser**
-Im Inhalt-Browser können Sie Folgendes anzeigen
+* **Inhaltsbrowser**
+Im Inhaltsbrowser können Sie Folgendes anzeigen
 
-   * **Formularobjekte** Zeigt die Objekthierarchie des Formulars an. Der Autor kann zu bestimmten Formularkomponenten navigieren, indem er auf das entsprechende Element in der Formularobjektstruktur tippt. Der Autor kann in dieser Struktur Objekte suchen und neu anordnen.
+   * **Formularobjekte**
+Zeigt die Objekthierarchie des Formulars an Der Autor kann zu bestimmten Formularkomponenten navigieren, indem er auf das entsprechende Element in der Formularobjektstruktur tippt. Der Autor kann in dieser Struktur Objekte suchen und neu anordnen.
 
    * **Datenmodellobjekte**
 Hiermit können Sie die Formularmodellhierarchie anzeigen.
@@ -164,7 +169,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop auf das adaptive Form
    <td>Fügt die Kopfzeile hinzu, die normalerweise das Logo eines Unternehmens, den Titel des Formulars und eine Zusammenfassung enthält.<br /> </td>
   </tr>
   <tr>
-   <td>den Namen Fußzeile zu</td>
+   <td>Fußzeile</td>
    <td>Fügt die Fußzeile hinzu, die normalerweise Copyright-Informationen und Links zu anderen Seiten enthält. </td>
   </tr>
   <tr>
@@ -188,7 +193,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop auf das adaptive Form
    <td>Verwenden Sie „Numerische Schritte“ in Ihrem Formular, damit Ihre Kundschaft einen numerischen Wert eingeben kann, den sie basierend auf einem vordefinierten numerischen Schritt erhöhen oder verringern kann.</td>
   </tr>
   <tr>
-   <td>Bereich</td>
+   <td>Bedienfeld</td>
    <td><p>Fügt einen Bereich oder Unterbereich hinzu.</p> <p>Sie können auch eine Bedienfeldkomponente aus der Symbolleiste des übergeordneten Bedienfelds hinzufügen, indem Sie die Schaltfläche <span class="uicontrol">„Untergeordnetes Bedienfeld“</code> hinzufügen. In ähnlicher Weise können Sie mit der Funktion <span class="uicontrol">„Panel-Symbolleiste hinzufügen“ eine bedienfeldspezifische Symbolleiste</code> hinzufügen. Sie können die Position der Bedienfeld-Symbolleiste mithilfe des Dialogfelds „Bedienfeld bearbeiten“ konfigurieren.</p> </td>
   </tr>
   <tr>
@@ -204,7 +209,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop auf das adaptive Form
    <td>Fügt Optionsfelder hinzu.</td>
   </tr>
   <tr>
-   <td>Zurücksetzen-Schaltfläche</td>
+   <td>Schaltfläche „Zurücksetzen“</td>
    <td>Fügt eine Schaltfläche zum Zurücksetzen von Formularfeldern hinzu.</td>
   </tr>
   <tr>
@@ -228,7 +233,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop auf das adaptive Form
    <td>Ermöglicht es Ihnen, statischen Text anzugeben.</td>
   </tr>
   <tr>
-   <td>Schaltfläche „Absenden“</td>
+   <td>Schaltfläche „Senden“</td>
    <td>Fügt eine Schaltfläche zum Absenden hinzu, um das Formular an die konfigurierte Sendeaktion zu senden.</td>
   </tr>
   <tr>
@@ -244,7 +249,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop auf das adaptive Form
    <td>Fügt eine Tabelle hinzu, mit der Sie Daten in Zeilen und Spalten organisieren können. </td>
   </tr>
   <tr>
-   <td>Telefonnummer</td>
+   <td>Telefon</td>
    <td><p>Fügt ein Feld zum Erfassen der Telefonnummer hinzu. Mit der Komponente „Telefonnummer“ können Autoren einen der folgenden Telefonnummerntypen konfigurieren. Jeder Typ ist mit einem standardmäßigen regulären Ausdruck für die Validierung verknüpft.</p>
     <ul>
      <li>Der Typ „International“ wird durch <code>^[+][0-9]{0,14}$</code> validiert.</li>
@@ -298,7 +303,7 @@ Einige Best Practices und wichtige Hinweise zum Arbeiten mit Komponenten von ada
 * Geben Sie in den Komponenteneigenschaften Werte für Optionsfeld- und Kontrollkästchenelemente im Format `{value}={text}` an.
 * Die Dateianlagenkomponente ermöglicht es Benutzenden standardmäßig, nur eine Datei anzuhängen. Sie können die Komponenteneigenschaften jedoch so konfigurieren, dass mehrere Anhänge unterstützt werden. Wenn mehrere Dateien mit demselben Dateinamen angehängt werden, können die Anhänge einige Probleme verursachen. Daher wird empfohlen, bei der Formularübermittlung für jeden gesendeten Anhang eine eindeutige Kennung damit zu verknüpfen. Gehen Sie dazu wie folgt vor:
 
-   1. Navigieren Sie auf Ihrem AEM Forms-Server zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Webkonsole]**.
+   1. Navigieren Sie auf Ihrem AEM Forms-Server zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
    1. Suchen Sie nach **[!UICONTROL Konfigurationsdienst für adaptive Formulare]** und wählen Sie ihn aus.
    1. Aktivieren Sie im Dialog „Konfigurations-Service für adaptive Formulare“ **[!UICONTROL Dateinamen individualisieren]**. Diese Option ist standardmäßig deaktiviert.
 
@@ -371,7 +376,7 @@ J. **Andere**: Bietet weitere Optionen für die Arbeit mit der ausgewählten Kom
 * Bereich als Fragment speichern (nur für Bereiche)
 * Untergeordneten Bereich hinzufügen (nur für Bereiche)
 * Bedienfeld-Symbolleiste hinzufügen (nur für Bereiche)
-* Ersetzen (nicht für Bereiche)
+* Ersetzen (nicht für Bedienfelder)
 
 ### Seite mit adaptivem Formular {#af-page}
 
@@ -388,7 +393,7 @@ Die Inhaltsstruktur enthält in der Regel die folgenden Hauptkomponenten:
    * *Übermittlungsaktion*: Definiert, wie das Formular auf dem Server verarbeitet wird, sobald die Benutzenden das Formular absenden.
    * *Stile*: Gibt den Pfad zur CSS-Datei an, die zum Anpassen des Erscheinungsbilds des Formulars verwendet wird.
 
-* **rootPanel:** Der Stammbereich eines adaptiven Formulars. Er kann Unterbereiche unter dem Elementknoten enthalten. Jedem Bereich einschließlich des Stammbereichs kann ein Layout zugeordnet sein. Das Layout des Bereichs bestimmt das Layout des Formulars. Im Akkordeonlayout beispielsweise werden die Elemente als Akkordeonschritte angeordnet.
+* **rootPanel:** Der Stammbereich eines adaptiven Formulars. Es kann Unterbereiche unter dem Elementknoten enthalten. Jedem Bereich einschließlich des Stammbereichs kann ein Layout zugeordnet sein. Das Layout des Bereichs bestimmt das Layout des Formulars. Im Akkordeonlayout beispielsweise werden die Elemente als Akkordeonschritte angeordnet.
 
 * **Symbolleiste:** Ein Container für ein adaptives Formular verfügt über eine zugehörige globale Symbolleiste, die global für das Formular gilt. Diese Symbolleiste kann mit der Aktion **[!UICONTROL Symbolleiste hinzufügen]** in der Bearbeitungsleiste hinzugefügt werden. Damit können Autoren Aktionen wie Übermitteln, Speichern, Zurücksetzen usw. hinzufügen.
 

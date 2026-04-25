@@ -9,10 +9,10 @@ exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 100%
+source-wordcount: '939'
+ht-degree: 99%
 
 ---
 
@@ -171,7 +171,9 @@ Der folgende JSP-Beispiel-Code ruft eine Instanz der hsqldbds-Datenquelle ab, f�
 >Wenn die getDataSource-Methode eine Ausnahme ausgibt, da die Datenquelle nicht gefunden wird, stellen Sie sicher, dass die Konfiguration des Connections Pool-Diensts korrekt ist. Überprüfen Sie die Eigenschaftsnamen, Werte und Datentypen.
 >
 
-<!-- Link below redirects to the "Get started with AEM Sites - WKND tutorial"
+<!--
+Link below redirects to the "Get started with AEM Sites - WKND tutorial"
 >[!NOTE]
 >
->To learn how to inject a DataSourcePool into an OSGi bundle, see [Injecting a DataSourcePool Service into an Adobe Experience Manager OSGi bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html). -->
+>To learn how to inject a DataSourcePool into an OSGi bundle, see [Injecting a DataSourcePool Service into an Adobe Experience Manager OSGi bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html).
+-->

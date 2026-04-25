@@ -10,16 +10,16 @@ docset: aem65
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3875'
-ht-degree: 100%
+source-wordcount: '4051'
+ht-degree: 96%
 
 ---
 
 # Verwenden von [!DNL Adobe Sign] in einem adaptiven Formular{#using-adobe-sign-in-an-adaptive-form}
 
-<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -198,7 +198,7 @@ Sie können für ein adaptives Formular eine einzelne oder mehrere Unterzeichnun
 
    * **[!UICONTROL Titel]:** Geben Sie einen Titel an, um einen Unterzeichner eindeutig zu identifizieren.
 
-   * **[!UICONTROL Wird das Formular von ein und derselben Person ausgefüllt und unterzeichnet?]:** Wählen Sie **Ja**, wenn die Person, die das Formular ausfüllt, mit der Person identisch ist, die es als erste unterzeichnet. Wenn für die Option **Nein** eingestellt ist, können Sie die Komponente für den Signaturschritt nicht im adaptiven Formular verwenden. Wenn im Formular eine Komponente „Unterschriftsschritt“ enthalten ist, wird automatisch „Ja“ für das Feld festgelegt.
+   * **[!UICONTROL Wird das Formular von derselben Person ausgefüllt und signiert?]:** Wählen Sie **Ja**, wenn die Person, die das Formular ausfüllt, auch der erste Unterzeichner ist. Wenn für die Option **Nein** eingestellt ist, können Sie die Komponente für den Signaturschritt nicht im adaptiven Formular verwenden. Wenn im Formular eine Komponente „Unterschriftsschritt“ enthalten ist, wird automatisch „Ja“ für das Feld festgelegt.
 
    * **[!UICONTROL E-Mail-Adresse des Unterzeichners]:** Geben Sie die E-Mail-Adresse des Unterzeichners an. Der Unterzeichner erhält die zu unterschreibenden Dokumente/das Formular unter der angegebenen E-Mail-Adresse. Sie können eine E-Mail-Adresse verwenden, die in einem Formularfeld im AEM-Benutzerprofil der angemeldeten Person angegeben ist, oder manuell eine E-Mail-Adresse eingeben. Dieser Schritt ist obligatorisch. Vergewissern Sie sich, dass die E-Mail-Adresse der ersten bzw. einzigen unterzeichnenden Person (sofern es eine einzige gibt) nicht mit dem [!DNL Adobe Sign]-Konto identisch ist, das zum Konfigurieren von AEM-Cloud-Diensten verwendet wird.
 
@@ -222,9 +222,10 @@ Sie können für ein adaptives Formular eine einzelne oder mehrere Unterzeichnun
 
 Nachdem Sie [!DNL Adobe Sign]-Felder zu einem adaptiven Formular hinzugefügt, [!DNL Adobe Sign] aus dem Formular-Container aktiviert, den [!DNL Adobe Sign]-Cloud-Service ausgewählt und [!DNL Adobe Sign]-Signierer hinzugefügt haben, wählen Sie eine geeignete Aktion zum Übermitteln für das adaptive Formular aus. Ausführliche Informationen zu Übermittlungsaktionen für adaptive Formulare finden Sie unter [Konfigurieren der Übermittlungsaktion](../../forms/using/configuring-submit-actions.md).
 
-Ein für [!DNL Adobe Sign] aktiviertes adaptives Formular wird darüber hinaus erst übermittelt, nachdem alle Signierer es signiert haben. Teilweise signierte Formulare finden Sie im Abschnitt „Ausstehende Signatur“ im Forms-Portal. Der [!DNL Adobe Sign]-Konfigurations-Service fragt den [!DNL Adobe Sign]-Server in [regelmäßigen Abständen](../../forms/using/adobe-sign-integration-adaptive-forms.md) ab, um den Status der Signaturen zu überprüfen. Wenn alle Unterzeichner das Formular signiert haben, wird der Dienst für die Übermittlungsaktion gestartet und das Formular übermittelt. Wenn Sie eine benutzerdefinierte Übermittlungsaktion verwenden und im Formular [!DNL Adobe Sign] verwendet wird, sollten Sie Ihre benutzerdefinierte Übermittlungsaktion aktualisieren, sodass der Service für die Übermittlungsaktion verwendet wird.
+Ein für [!DNL Adobe Sign] aktiviertes adaptives Formular wird darüber hinaus erst übermittelt, nachdem alle Signierer es signiert haben. Teilweise signierte Formulare finden Sie im Abschnitt „Ausstehende Signatur“ des Formularportals. [!DNL Adobe Sign] Der Konfigurations-Service fragt [!DNL Adobe Sign] Server in [ Abständen ab](../../forms/using/adobe-sign-integration-adaptive-forms.md) um den Status der Signaturen zu überprüfen. Wenn alle Unterzeichner das Formular signiert haben, wird der Dienst für die Übermittlungsaktion gestartet und das Formular übermittelt. Wenn Sie eine benutzerdefinierte Übermittlungsaktion verwenden und im Formular [!DNL Adobe Sign] verwendet wird, sollten Sie Ihre benutzerdefinierte Übermittlungsaktion aktualisieren, sodass der Service für die Übermittlungsaktion verwendet wird.
 
-<!-- Remove when forms portal goes live
+<!--
+Remove when forms portal goes live
 >[!NOTE]
 >
 >Data of the adaptive form is stored temporarily on Forms Portal. Use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
@@ -242,7 +243,7 @@ Nachdem Sie die [Eigenschaften des adaptiven Formulars für Adobe Sign bearbeite
 
    ![Sign-Block](assets/sign-block-new.png)
 
-1. Wählen Sie die Komponente **[!UICONTROL Adobe Sign Block]** und dann das Symbol **Bearbeiten** ![aem_6_3_edit](assets/aem_6_3_edit.png) aus. Es werden Optionen zum Hinzufügen von Feldern und zum Formatieren der Darstellung von Feldern angezeigt.
+1. Wählen Sie die Komponente **[!UICONTROL Adobe Sign Block]** und das Symbol **Bearbeiten** ![aem_6_3_edit](assets/aem_6_3_edit.png) aus. Es werden Optionen zum Hinzufügen von Feldern und zum Formatieren der Darstellung von Feldern angezeigt.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
@@ -305,7 +306,7 @@ Führen Sie die folgenden Schritte aus, um die Signaturschritt-Komponente zu kon
 
    >[!NOTE]
    >
-   >* Wenn Sie die Komponente **[!UICONTROL Unterschriftsschritt]** in das Formular ziehen und dort ablegen, wird für die Option **[!UICONTROL Wird das Formular von derselben Person ausgefüllt und unterzeichnet?]** automatisch **Ja** festgelegt. Dies ist für die Funktionsfähigkeit des Formulars erforderlich.
+   >* Wenn Sie die Komponente „Unterschriftsschritt **[!UICONTROL in]** Formular ziehen und dort ablegen, wird die **[!UICONTROL Wird das Formular von derselben Person ausgefüllt und unterzeichnet?]** ist automatisch auf &quot;**&quot;**. Dies ist für die Funktionsfähigkeit des Formulars erforderlich.
    >* Um ein optimales Erlebnis zu erzielen, verwenden Sie nach der Signaturschrittkomponente die Komponente „Zusammenfassungsschritt“. Der „Zusammenfassungsschritt“ übermittelt das Formular automatisch und sofort, nachdem Sie das Unterzeichnen eines Formulars in der Signaturschrittkomponente abgeschlossen haben. Wenn Sie den „Zusammenfassungsschritt“ nicht verwenden, wird eine automatische Übermittlung erst nach dem Zeitintervall ausgelöst, das Sie unter Verwendung des [Adobe Sign-Konfigurationsservice](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status) festgelegt haben.
    >
    >Einige Best Practices sind:
@@ -323,7 +324,7 @@ Die Komponente **Zusammenfassungsschritt** übermittelt automatisch das Formular
 
 Damit ist der Ablauf zur formularinternen Unterzeichnung vollständig. Sie können das Formular in der Vorschau anzeigen, um das Signiererlebnis zu überprüfen.
 
-## Häufig gestellte Fragen  {#frequently-asked-questions}
+## Häufig gestellte Fragen {#frequently-asked-questions}
 
 **F:** Es ist möglich, ein adaptives Formular in ein anderes adaptives Formular einzubetten. Kann das eingebettete adaptive Formular für [!DNL Adobe Sign] aktiviert werden?
 **A:** Nein. Die Verwendung von adaptiven Formularen, in die [!DNL Adobe Sign] für die Unterzeichnung ein für aktiviertes adaptives Formular eingebettet ist, wird in AEM [!DNL Forms] nicht unterstützt.
@@ -346,7 +347,7 @@ Damit ist der Ablauf zur formularinternen Unterzeichnung vollständig. Sie könn
 ### Fehler bei der [!DNL Adobe Sign]-Vereinbarung {#adobe-sign-agreement-failures}
 
 **Problem**
-Wenn der [!DNL Adobe Sign]-Service für ein adaptives Formular konfiguriert ist, kann vom Service keine [!DNL Adobe Sign]-Vereinbarung für das zugrunde liegende adaptive Formular erstellt werden.
+Wenn [!DNL Adobe Sign] Dienst für ein adaptives Formular konfiguriert ist, kann vom Dienst keine [!DNL Adobe Sign] für das zugrunde liegende adaptive Formular erstellt werden.
 
 **Auflösung**
 
@@ -359,7 +360,7 @@ Wenn der [!DNL Adobe Sign]-Service für ein adaptives Formular konfiguriert ist,
 ### AEM [!DNL Forms]-Workflow, der für ein [!DNL Adobe Sign]-aktiviertes adaptives Formular konfiguriert wurde, wird nicht gestartet {#adobe-sign-aem-form-workflow-failures}
 
 **Problem**
-Wenn [!DNL Adobe Sign] für ein adaptives Formular konfiguriert ist, wird der mithilfe des Workflows „[!DNL Forms] aufrufen“ konfigurierte Workflow nicht gestartet.
+Wenn [!DNL Adobe Sign] für ein adaptives Formular konfiguriert ist, wird der mithilfe des Workflows &quot;[!DNL Forms] aufrufen“ konfigurierte Workflow nicht gestartet.
 
 **Auflösung**
 

@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
-workflow-type: ht
-source-wordcount: '92'
-ht-degree: 100%
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 92%
 
 ---
 
@@ -39,4 +39,4 @@ Im Folgenden sind die Open-Source-Repositorys auf GitHub für die SPA Bibliothek
 * [Seitenmodell-Manager](https://github.com/adobe/aem-spa-page-model-manager)
 * [Bearbeitbare React-Komponenten](https://github.com/adobe/aem-react-editable-components)
 * [Bearbeitbare Angular-Komponenten](https://github.com/adobe/aem-angular-editable-components)
-* [SPA-Projekt-Core](https://github.com/adobe/aem-spa-project-core)
+* [SPA-Projekt - Kern](https://github.com/adobe/aem-spa-project-core)

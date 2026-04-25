@@ -1,15 +1,15 @@
 ---
 title: Versionshinweise für [!DNL Adobe Experience Manager] 6.5
-description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
+description: Hier finden Sie Versionsinformationen, Informationen zu neuen Funktionen, Installationsanleitungen und eine detaillierte Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: cd71ed5d9516d330685afee29a86d530a10303aa
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '9811'
-ht-degree: 19%
+source-wordcount: '10136'
+ht-degree: 20%
 
 ---
 
@@ -17,10 +17,12 @@ ht-degree: 19%
 
 <!-- For an itemized list of all issues found in this release information, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/_layouts/15/Doc.aspx?sourcedoc=%7B3ea81ae4-e605-4153-b132-f2698c86f84e%7D&action=edit&wdinitialsession=d8c7b903-87fc-4f2d-9ef2-542a82169570&wdrldsc=3&wdrldc=1&wdrldr=SessionMemoryQuotaExceededDuringSession -->
 
-<!-- DO NOT DELETE THIS HIDDEN NOTE      DO NOT DELETE THIS HIDDEN NOTE
+<!--
+DO NOT DELETE THIS HIDDEN NOTE      DO NOT DELETE THIS HIDDEN NOTE
 >[!NOTE]
 >
->Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, May 29, 2025. In addition, a list of Forms fixes and enhancements is added to this section. -->
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, May 29, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
+-->
 
 ## Versionsinformationen {#release-information}
 
@@ -31,8 +33,10 @@ ht-degree: 19%
 | Datum | &#x200B;26. November 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Download-URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-<!-- OLD DOWNLOAD URL
-(https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip) -->
+<!--
+OLD DOWNLOAD URL
+(https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip)
+-->
 
 ## Was in [!DNL Experience Manager] 6.5.24.0 enthalten ist {#what-is-included-in-aem-6524}
 
@@ -451,7 +455,7 @@ Beim Aktivieren des Sling-Haupt **Servlets (Inhaltstyp überprüfen** werden `.m
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.24.0 erfordert [!DNL Experience Manager] 6.5. Detaillierte Anweisungen finden Sie in der [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md). <!-- UPDATE FOR EACH NEW RELEASE -->
+* [!DNL Experience Manager] 6.5.24.0 erfordert [!DNL Experience Manager] 6.5. Detaillierte Anweisungen finden [ in ](/help/sites-deploying/upgrade.md)Upgrade-Dokumentation“. <!-- UPDATE FOR EACH NEW RELEASE -->
 * Der Download des Service Packs ist über die [Adobe-Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip) verfügbar.
 * Bei einer Bereitstellung mit MongoDB und mehreren Instanzen installieren Sie [!DNL Experience Manager] 6.5.24.0 mit dem Package Manager auf einer der Autoreninstanzen.<!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -564,8 +568,8 @@ Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind n
 
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
 
-* **Bezogen auf Oak
-Ab Service Pack 13 wird das folgende Fehlerprotokoll angezeigt, das sich auf den Persistenz-Cache auswirkt:**
+* **Verwandt mit Oak**
+Ab Service Pack 13 und höher wird das folgende Fehlerprotokoll angezeigt, das sich auf den Persistenz-Cache auswirkt:
 
   ```shell
   org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
@@ -625,7 +629,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
   "refresh": true
   ```
 
-* Wenn Sie Ihre [!DNL Experience Manager]-Instanz von 6.5.0 bis 6.5.4 auf das neueste Service Pack für Java™ 11 aktualisieren, sehen Sie `RRD4JReporter`-Ausnahmen in der Datei `error.log`. Um die Ausnahmen zu beenden, starten Sie Ihre [!DNL Experience Manager]-Instanz neu. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
+* Wenn Sie Ihre [!DNL Experience Manager]-Instanz von 6.5.0 bis 6.5.4 auf das neueste Service Pack für Java™ 11 aktualisieren, sehen Sie `RRD4JReporter`-Ausnahmen in der Datei `error.log`. Um die Ausnahmen zu stoppen, starten Sie Ihre Instanz von [!DNL Experience Manager] neu. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
 
 * Benutzende können einen Ordner in einer Hierarchie in [!DNL Assets] umbenennen und einen verschachtelten Ordner in [!DNL Brand Portal] veröffentlichen. Der Titel des Ordners wird jedoch erst dann in [!DNL Brand Portal] aktualisiert, wenn der Stammordner erneut veröffentlicht wird.
 
@@ -649,30 +653,31 @@ Die Vorschau von Inhaltsfragmenten schlägt aufgrund des DoS-Schutzes für eine 
 
 * **FORMS-14521** Wenn ein(e) Benutzende(r) versucht, eine Vorschau eines Briefentwurfs mit gespeicherten XML-Daten anzuzeigen, bleibt er/sie für einige bestimmte Briefe im `Loading`-Status stecken.
 * **FORMS-16603** In der Druckvorschau der Benutzeroberfläche für interaktive Kommunikationsagenten werden einige berechnete Werte nicht korrekt angezeigt.
-* **FORMS-15681** Wenn der Brief in der Druckvorschau angezeigt wird, wird der Inhalt geändert. Das heißt, dass einige Leerzeichen ausgeblendet werden und bestimmte Buchstaben durch `x` ersetzt werden.
+* **FORMS-15681** Wenn der Brief in der Druckvorschau angezeigt wird, wird der Inhalt geändert. Einige Leerzeichen verschwinden und bestimmte Buchstaben werden durch `x` ersetzt.
 * **FORMS-15428** Nach der Aktualisierung auf AEM Forms Service Pack 20 (6.5.20.0) mit dem Forms-Add-on funktionieren Konfigurationen, die auf dem veralteten Adobe Analytics Cloud-Service basieren und eine berechtigungsbasierte Authentifizierung verwenden, nicht mehr. Dieses Problem verhinderte die ordnungsgemäße Ausführung von Analyseregeln.
-* **FORMS-16557** In der Druckvorschau der Benutzeroberfläche für interaktive Kommunikationsagenten wird das Währungssymbol (z. B. das Dollarzeichen $) nicht konsistent für alle Feldwerte angezeigt. Er wird für Werte bis 999 angezeigt, fehlt jedoch für Werte ab 1000.
+* **FORMS-16557** In der Druckvorschau der Benutzeroberfläche für interaktive Kommunikationsagenten wird das Währungssymbol (z. B. das Dollarzeichen $) nicht konsistent für alle Feldwerte angezeigt. Es wird für Werte bis 999 angezeigt, fehlt jedoch für Werte ab 1000.
 * **FORMS-16575** Alle Änderungen an der XDP verschachtelter Layout-Fragmente in einer interaktiven Kommunikation werden nicht im IC-Editor übernommen.
 * **FORMS-21378** Wenn die Server-seitige Validierung (SSV) aktiviert ist, können die Formularübermittlungen fehlschlagen. Wenn dieses Problem auftritt, wenden Sie sich bitte an den Adobe-Support.
 * **FORMS-23722** Wenn ein Formular mit einem Feld **Dateianhang**, das `bindref` verwendet, an einen AEM-Workflow mit dem Schritt **Aufgabe zuweisen** gesendet wird, werden die Anlagen nicht angezeigt. Daher werden sie nicht angezeigt, wenn die Aufgabe aus dem Posteingang geöffnet wird. Die Dateien werden korrekt im Repository gespeichert, aber in der Benutzeroberfläche des Schritts „Aufgabe zuweisen“ können die Anlagen nicht angezeigt werden.
-* **Benutzerdefinierte FORMS-23802**-Funktionen können nicht in der Vorschau geladen oder veröffentlicht werden, wenn ein adaptives Formular in eine Sites-Seite eingebettet ist. Dieses Problem tritt auf, wenn die **aem-forms-core-component**-Bibliotheksversion vor 1.1.76 liegt. Möglicherweise wird ein Fehler wie `InvalidFormContainerException: No form container found` in den Protokollen angezeigt. AEM Forms Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) SP24 (AddOn 6.0.1454) herunter und installieren Sie ihn.
+* **Benutzerdefinierte FORMS-23802**-Funktionen können nicht in der Vorschau geladen oder veröffentlicht werden, wenn ein adaptives Formular in eine Sites-Seite eingebettet ist. Dieses Problem tritt auf, wenn die **aem-forms-core-component**-Bibliotheksversion vor 1.1.76 liegt. Möglicherweise wird ein Fehler wie `InvalidFormContainerException: No form container found` in den Protokollen angezeigt. Um dieses Problem zu beheben[ laden Sie den Hotfix für ](/help/release-notes/aem-forms-hotfix.md) SP24 (AddOn 6.0.1454) herunter und installieren Sie ihn.
 
 #### Bekannte Probleme mit verfügbaren Hotfixes {#aem-forms-issues-with-hotfixes}
 
-<!-- 
+<!--
 >[!NOTE]
 >
->Avoid upgrading to Service Pack 6.5.24.0 for issues without an available hotfix. It may lead to unexpected errors. Upgrade to Service Pack 6.5.24.0 only after the required hotfixes are released. -->
+>Avoid upgrading to Service Pack 6.5.24.0 for issues without an available hotfix. It may lead to unexpected errors. Upgrade to Service Pack 6.5.24.0 only after the required hotfixes are released.
+-->
 
 Für die folgenden Probleme ist ein Hotfix zum Herunterladen und Installieren verfügbar. Sie können [den Hotfix herunterladen und installieren](/help/release-notes/aem-forms-hotfix.md), um diese Probleme zu beheben:
 
 * **FORMS-23881** Bei AEM Forms-JEE-Bereitstellungen, die mit dem 6.5.23.0-Vollinstallationsprogramm eingerichtet wurden, kann der Ausgabe-Service Anfragen nicht verarbeiten, wenn beim Aufruf eine benutzerdefinierte XCI-Datei angegeben wird. Um dieses Problem zu beheben, installieren Sie das neueste Service Pack von AEM 6.5.24.0 Forms über das [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html)-Portal.
 
-* **FORMS-23789** (nur AEM Forms auf JEE): Bei Benutzenden traten Probleme mit Log4j in AEM Forms auf JEE SP24 auf, was zu Störungen bei der Protokollierung und Überwachung für Unternehmenskunden führte. Um dieses Problem zu beheben, [&#x200B; Sie unter „Herunterladen und Installieren des &#x200B;](/help/release-notes/aem-forms-hotfix.md)&quot; für AEM Forms on JEE Service Pack 6.5.24.0.
+* **FORMS-23789** (nur AEM Forms auf JEE): Bei Benutzenden traten Probleme mit Log4j in AEM Forms auf JEE SP24 auf, was zu Störungen bei der Protokollierung und Überwachung für Unternehmenskunden führte. Um dieses Problem zu beheben, [ Sie unter „Herunterladen und Installieren des ](/help/release-notes/aem-forms-hotfix.md)&quot; für AEM Forms on JEE Service Pack 6.5.24.0.
 
 * **Benutzerdefinierte FORMS-23802**-Funktionen werden nicht in der Vorschau- oder Veröffentlichungsinstanz geladen, wenn sich das Formular auf einer Sites-Seite mit einer älteren Version der Kernkomponente „aem-forms-core-component“ (&lt;1.1.76) befindet. Um dieses Problem zu beheben, installieren Sie den [AEM Forms-AddOn-Hotfix 6.0.1454](/help/release-notes/aem-forms-hotfix.md) für SP24.
 
-* **FORMS-23789** (nur AEM Forms auf JEE): Bei Benutzenden traten Probleme mit Log4j in AEM Forms auf JEE SP24 auf, was zu Störungen bei der Protokollierung und Überwachung für Unternehmenskunden führte. Um dieses Problem zu beheben, [&#x200B; Sie unter „Herunterladen und Installieren des &#x200B;](/help/release-notes/aem-forms-hotfix.md)&quot; für AEM Forms on JEE Service Pack 6.5.24.0.
+* **FORMS-23789** (nur AEM Forms auf JEE): Bei Benutzenden traten Probleme mit Log4j in AEM Forms auf JEE SP24 auf, was zu Störungen bei der Protokollierung und Überwachung für Unternehmenskunden führte. Um dieses Problem zu beheben, [ Sie unter „Herunterladen und Installieren des ](/help/release-notes/aem-forms-hotfix.md)&quot; für AEM Forms on JEE Service Pack 6.5.24.0.
 
 * **Benutzerdefinierte FORMS-23802**-Funktionen werden nicht in der Vorschau- oder Veröffentlichungsinstanz geladen, wenn sich das Formular auf einer Sites-Seite mit einer älteren Version der Kernkomponente „aem-forms-core-component“ (&lt;1.1.76) befindet. Um dieses Problem zu beheben, installieren Sie den [AEM Forms-AddOn-Hotfix 6.0.1454](/help/release-notes/aem-forms-hotfix.md) für SP24.
 
@@ -687,45 +692,49 @@ Für die folgenden Probleme ist ein Hotfix zum Herunterladen und Installieren ve
    5. Öffnen der Eingabeaufforderung im Administratormodus.
    6. Installieren des Geode-Patches mithilfe der Datei `geode-*-1.15.1.2.jar`.
 
-* **FORMS-15256** Beim Upgrade von AEM 6.5 Forms Service Pack 18 oder 19 auf Service Pack 20 oder 21 ist ein JSP-Kompilierungsfehler aufgetreten. Dieser Fehler hinderte sie daran, adaptive Formulare zu öffnen oder zu erstellen. Er hat auch Probleme mit anderen AEM-Schnittstellen verursacht. Zu diesen Schnittstellen gehörten der Seiteneditor, die AEM Forms-Benutzeroberfläche, der Workflow-Editor und die Benutzeroberfläche „Systemübersicht“.
+* **FORMS-15256** Beim Upgrade von AEM 6.5 Forms Service Pack 18 oder 19 auf Service Pack 20 oder 21 ist ein JSP-Kompilierungsfehler aufgetreten. Dieser Fehler hinderte sie daran, adaptive Formulare zu öffnen oder zu erstellen. Er hat auch Probleme mit anderen AEM-Schnittstellen verursacht. Diese Schnittstellen umfassten den Seiteneditor, die AEM Forms-Benutzeroberfläche, den Workflow-Editor und die Benutzeroberfläche der Systemübersicht.
 
   Wenn ein solches Problem auftritt, führen Sie die folgenden Schritte aus, um es zu beheben:
    1. Navigieren Sie in CRXDE zum Verzeichnis `/libs/fd/aemforms/install/`.
    2. Löschen Sie das Bundle `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Starten Sie den AEM-Server neu.
 
-* **FORMS-23703** Wenn die `contains` ohne Standardwert konfiguriert ist, schlägt die Server-seitige Validierung für ein adaptives Formular fehl. Sie können die neueste Version von [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) installieren, um das Problem zu beheben.
+* **FORMS-23703** Wenn die `contains` ohne Standardwert konfiguriert ist, schlägt die Server-seitige Validierung für ein adaptives Formular fehl. Sie können die neueste Version von [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) installieren, um das Problem zu beheben.
 
-* **GRANITE-63681** Formulardatenmodell-Connectoren können möglicherweise nicht authentifiziert werden, da die erforderlichen Schlüsselwörter und Regex-Muster standardmäßig nicht zulässig sind. Um das Problem zu beheben, laden Sie den Hotfix vom (Link[&#x200B; herunter und installieren &#x200B;](/help/release-notes/aem-forms-hotfix.md) ihn.
+* **GRANITE-63681** Formulardatenmodell-Connectoren können möglicherweise nicht authentifiziert werden, da die erforderlichen Schlüsselwörter und Regex-Muster standardmäßig nicht zulässig sind. Um das Problem zu beheben, laden Sie den Hotfix vom (Link[ herunter und installieren ](/help/release-notes/aem-forms-hotfix.md) ihn.
 
-  <!--To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
+  <!--
+  To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
 
   * **Keywords:** `fdm-client-secret`, `oauth-client-secret`
   * **Regex:** `^\[/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+(?:,/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+)*\]$`
 
-    >[!VIDEO](https://video.tv.adobe.com/v/3479697)-->
+    >[!VIDEO](https://video.tv.adobe.com/v/3479697)
+  -->
 
-* Bei der **FORMS-23979**-Konvertierung von HTML in PDF (PDFG) können zeitweise Zeitüberschreitungen auftreten. Anschließend wurde eine neuere Version des Forms-Add-ons für SP24 veröffentlicht, die die Fehlerbehebung enthält. Wenn dieses Problem auftritt, aktualisieren Sie Ihre Umgebung auf das [neueste veröffentlichte Forms-Add-on für 6.5.24.0](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* Bei der **FORMS-23979**-Konvertierung von HTML in PDF (PDFG) können zeitweise Zeitüberschreitungen auftreten. Anschließend wurde eine neuere Version des Forms-Add-ons für SP24 veröffentlicht, die die Fehlerbehebung enthält. Wenn dieses Problem auftritt, aktualisieren Sie Ihre Umgebung auf das [neueste veröffentlichte Forms-Add-on für 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23717** Nach dem Upgrade auf **AEM Forms-6.5.24.0** können `server.log` und `error.log` mit wiederholten WARNMELDUNGEN wie *Erstellung der sicheren Parserfactory fehlgeschlagen* oder *Sicherheitsattribut … wird nicht unterstützt*. Protokolle können um ca. **5-10 Zeilen pro Sekunde (** von MB pro Stunde) zunehmen, wodurch Festplatten ausgefüllt und der Produktions-Rollout blockiert werden kann.
 
-Um das Protokollvolumen zu reduzieren, legen Sie in Ihrer Anwendungsserverkonfiguration oder über die JVM-`com.adobe.util.XMLSecurityUtil` die Protokollierungsebene für `ERROR` auf `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR` fest. Diese Funktion blendet nur die Nachrichten aus und behebt nicht die zugrunde liegende Ursache.
+Um das Protokollvolumen zu reduzieren, legen Sie in Ihrer Anwendungsserverkonfiguration oder über die JVM-`-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR` die Protokollierungsebene für `com.adobe.util.XMLSecurityUtil` auf `ERROR` fest. Diese Funktion blendet nur die Nachrichten aus und behebt nicht die zugrunde liegende Ursache.
 
-* **FORMS-23875** Bei der Formulardatenmodellsuche wird ein HTML-Tag in der Benutzeroberfläche angezeigt, auch wenn keine relevante Entität vorhanden ist. Um das Problem zu beheben, laden Sie den Hotfix von [dem Link“ herunter und &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip) Sie ihn.
+* **FORMS-23875** Bei der Formulardatenmodellsuche wird ein HTML-Tag in der Benutzeroberfläche angezeigt, auch wenn keine relevante Entität vorhanden ist. Um das Problem zu beheben, laden Sie den Hotfix von [dem Link“ herunter und ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip) Sie ihn.
 
 ## Enthaltene OSGi- und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
 In den nachfolgenden Textdokumenten sind die in dieser [!DNL Experience Manager] 6.5.Service Pack-Version enthaltenen OSGi-Bundles und Inhaltspakete aufgeführt:
 
-* [Liste der in Experience Manager 6.5.24.0](/help/release-notes/assets/65240-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE --> enthaltenen OSGi-Bundles
-* [Liste der in Experience Manager 6.5.24.0](/help/release-notes/assets/65240-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE --> enthaltenen Inhaltspakete
+* [Liste der in Experience Manager 6.5.24.0enthaltenen OSGi-Pakete](/help/release-notes/assets/65240-bundles.txt)
+<!-- UPDATE FOR EACH NEW RELEASE -->
+* [Liste der in Experience Manager 6.5.24.0enthaltenen Inhaltspakete](/help/release-notes/assets/65240-packages.txt)
+<!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Eingeschränkte Websites{#restricted-sites}
 
 Diese Websites sind nur für Kundinnen und Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/)
-* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >

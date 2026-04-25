@@ -9,10 +9,10 @@ exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 8%
+source-wordcount: '685'
+ht-degree: 19%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 8%
 
 ## AEM Communities {#aem-communities}
 
-Für AEM Communities ist es erforderlich, die Dispatcher so zu konfigurieren, dass eine ordnungsgemäße Funktionsweise der [Community-Sites“ &#x200B;](overview.md#community-sites) ist. Zusätzliche Konfigurationen sind erforderlich, wenn Funktionen wie die Anmeldung bei sozialen Netzwerken einbezogen werden sollen.
+Für AEM Communities ist es erforderlich, die Dispatcher so zu konfigurieren, dass eine ordnungsgemäße Funktionsweise der [Community-Sites“ ](overview.md#community-sites) ist. Zusätzliche Konfigurationen sind erforderlich, wenn Funktionen wie die Anmeldung bei sozialen Netzwerken einbezogen werden sollen.
 
 Erfahren Sie, was für Ihre bestimmte Bereitstellung und Ihr Site-Design erforderlich ist
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?lang=de&support-solution=General&support-tab=home#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?lang=de&support-solution=General&support-tab=home#support)
 
 Siehe auch die Hauptdokumentation zu [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de).
 
@@ -42,7 +42,7 @@ Wenn so konfiguriert ist, dass die Zwischenspeicherung in Dispatcher unterstütz
 
 ### Voraussetzungen {#requirements}
 
-* Dispatcher Dispatcher Version 4.1.2 oder höher (die neueste Version finden [&#x200B; unter „Installieren von &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=de)„)
+* Dispatcher Version 4.1.2 oder höher (die neueste Version finden [ unter „Installieren von ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=de)„)
 * [ACS AEM Commons-Paket](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Version 3.3.2 oder höher
@@ -69,7 +69,7 @@ Die OSGi-Konfiguration **ACS AEM Commons - Dispatcher Cache Control Header - Max
 
 ## Dispatcher-Filter {#dispatcher-filters}
 
-Der Abschnitt /filter der `dispatcher.any`-Datei ist unter &quot;[&#x200B; auf Inhalte konfigurieren - /filter“ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de).
+Der Abschnitt /filter der `dispatcher.any`-Datei ist unter &quot;[ auf Inhalte konfigurieren - /filter“ ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de).
 
 In diesem Abschnitt werden Einträge beschrieben, die wahrscheinlich für das ordnungsgemäße Funktionieren der Communities-Funktionen erforderlich sind.
 
@@ -94,7 +94,8 @@ Siehe auch:
 
 Die folgenden Einträge sollten am Ende des /filter-Abschnitts hinzugefügt werden, insbesondere nach allen abgelehnten Einträgen.
 
-<!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
+<!--
+New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
 
 ```shell
@@ -158,7 +159,8 @@ Die folgenden Einträge sollten am Ende des /filter-Abschnitts hinzugefügt werd
 ```
 
 
-<!-- existing content as of Dec 10, wrt CQDOC-16081
+<!--
+existing content as of Dec 10, wrt CQDOC-16081
 
 ```shell
 # design and template assets
@@ -226,7 +228,8 @@ Die folgenden Einträge sollten am Ende des /filter-Abschnitts hinzugefügt werd
 
 Im Abschnitt Regeln von `dispatcher.any` wird definiert, welche Antworten basierend auf der angeforderten URL zwischengespeichert werden sollen. Für Communities wird der Abschnitt Regeln verwendet, um zu definieren, was nie zwischengespeichert werden soll.
 
-<!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
+<!--
+New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
 
 ```shell
@@ -248,7 +251,8 @@ Im Abschnitt Regeln von `dispatcher.any` wird definiert, welche Antworten basier
 /0208 { /type "deny" /url "/content/usergenerated/*" }
 ```
 
-<!-- existing content as of Dec 10, wrt CQDOC-16081
+<!--
+existing content as of Dec 10, wrt CQDOC-16081
 
 ```shell
 # Never cache the client-side .social.json calls
@@ -280,7 +284,8 @@ Das erste Filtermuster wird häufig verwendet, um alles abzulehnen, sodass die f
 
 Im Folgenden finden Sie eine Beispieldatei für `dispatcher.any`, die die Ordner Communities /filters und /rules enthält.
 
-<!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
+<!--
+New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
 
 ```shell
@@ -594,7 +599,8 @@ Im Folgenden finden Sie eine Beispieldatei für `dispatcher.any`, die die Ordner
   }
 ```
 
-<!-- existing content as of Dec 10, wrt CQDOC-16081
+<!--
+existing content as of Dec 10, wrt CQDOC-16081
 
 ```shell
 # Each farm configures a set of load balanced renders (that is, remote servers)

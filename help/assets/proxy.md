@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '856'
 ht-degree: 100%
 
 ---
@@ -107,7 +107,8 @@ Nachstehend finden Sie ein Beispiel für die API-Verwendung:
 
 ### Cloud Service-Konfigurationen {#cloud-service-configurations}
 
-<!-- TBD: Cannot find com.day.cq.dam.api.proxy at https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
+<!--
+TBD: Cannot find com.day.cq.dam.api.proxy at https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
 >[!NOTE]
 >
 >Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
@@ -142,7 +143,7 @@ Sie können auch einen eigenen [!DNL Assets]-Proxy-Worker für entwickeln und k
 
 Für die Einrichtung eines eigenen benutzerdefinierten Proxy-Workers müssen Sie die folgenden Aufgaben ausführen:
 
-* Einrichten und Implementieren (mit Sling Eventing): 
+* Einrichten und Implementieren (mit Sling Eventing):
 
    * ein Thema für den benutzerdefinierten Auftrag
    * einen Ereignis-Handler für benutzerdefinierte Aufträge
@@ -168,11 +169,11 @@ Das folgende Diagramm und die folgenden Schritte beschreiben den weiteren Ablauf
 
 1. Mit dem externen Schritt wird das Ereignis ausgelöst, anschließend wird auf den Abschluss gewartet. Hierfür wird die ID abgerufen. Entwickeln Sie einen eigenen Schritt, um eine neue Funktionalität zu implementieren.
 
-   Implementieren Sie einen `WorkflowExternalProcess`. Bereiten Sie dann mit der JobService-API und Ihrem Auftragsthema ein Auftragsereignis vor und senden Sie es an den JobService (einen OSGi-Dienst). 
+   Implementieren Sie einen `WorkflowExternalProcess`. Bereiten Sie dann mit der JobService-API und Ihrem Auftragsthema ein Auftragsereignis vor und senden Sie es an den JobService (einen OSGi-Dienst).
 
    Als Beispiel dient `INDDMediaExtractProcess`.java für den IDS-Proxy-Worker.
 
-1. Implementieren Sie einen Auftrags-Handler für Ihr Thema. Der Handler muss entwickelt werden, damit er die von Ihnen gewünschte spezifische Aktion ausführt und als Worker-Implementierung betrachtet wird. 
+1. Implementieren Sie einen Auftrags-Handler für Ihr Thema. Der Handler muss entwickelt werden, damit er die von Ihnen gewünschte spezifische Aktion ausführt und als Worker-Implementierung betrachtet wird.
 
    Als Beispiel dient `IDSJobProcessor.java` für den IDS-Proxy-Worker.
 

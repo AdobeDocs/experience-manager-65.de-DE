@@ -5,10 +5,10 @@ exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Developer
-source-git-commit: 9278eb7dab4a764403fa0769f6e80dd7e8fb0cb9
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 100%
+source-wordcount: '1993'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >
 >Bevor Sie diese Optimierungsempfehlungen anwenden, empfehlen wir Ihnen, [Ihre Inhaltsfragmente für Paging und Sortierung in der GraphQL-Filterung zu aktualisieren](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md), um eine optimale Leistung zu erzielen.
 
-Diese Richtlinien helfen Ihnen, Leistungsprobleme bei GraphQL-Abfragen zu vermeiden.
+Diese Richtlinien helfen Ihnen bei der Vermeidung von Leistungsproblemen bei Ihren GraphQL-Abfragen.
 
 ## GraphQL-Checkliste {#graphql-checklist}
 
@@ -53,7 +53,7 @@ Die für Ihr Service Pack geeignete Version finden Sie in den Versionshinweisen.
 >
 >Installieren Sie dieses Paket nur einmal pro Instanz. Es muss nicht mit jedem Service Pack neu installiert werden.
 
-**Weitere Informationen**
+**Weitere Hinweise**
 Siehe:
 
 * [Installieren des GraphQL-Indexpakets für Experience Manager-Inhaltsfragmente](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package)
@@ -86,13 +86,13 @@ Siehe:
 
 * [Verwenden von CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de#using-dispatcher-with-a-cdn)
 
-#### Festlegen von HTTP-Cache-Control-Headern {#set-http-cache-control-headers}
+#### Festlegen der HTTP-Cache-Control-Kopfzeilen {#set-http-cache-control-headers}
 
 **Empfehlung**
 
 Bei der Verwendung persistierter GraphQL-Abfragen mit einem CDN wird empfohlen, geeignete HTTP-Cache-Control-Header festzulegen.
 
-Jede persistierte Abfrage kann über einen eigenen spezifischen Satz von Cache-Control-Headern verfügen. Die Header können über die [GraphQL-API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) festgelegt werden.
+Jede persistierte Abfrage kann über einen eigenen spezifischen Satz von Cache-Control-Kopfzeilen verfügen. Die Header können über die [GraphQL-API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) festgelegt werden.
 
 Sie können auch mithilfe des Befehlszeilen-Tools **cURL** festgelegt werden: Verwenden Sie beispielsweise eine `PUT`-Anfrage zum Erstellen einer umschlossenen einfachen Abfrage mit Cache-Steuerung.
 
@@ -105,7 +105,8 @@ $ curl -X PUT \
 '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
 ```
 
-<!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
+<!--
+or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache).
 -->
 
 **Weitere Informationen**
@@ -182,12 +183,12 @@ Die Reaktionszeit komplexer Abfragen mit großen Ergebnismengen kann durch die S
 
 GraphQL in AEM unterstützt zwei Arten der Seitennummerierung:
 
-* [Limit-/Offset-basierte Seitennummerierung](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
-Diese Methode wird für Listenabfragen verwendet; diese enden mit `List`. Zum Beispiel: `articleList`.
+* [Limit-/Offset-basierte Paginierung](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
+Dies wird für Listenabfragen verwendet. Diese enden mit `List`. Beispiel: `articleList`.
 Um sie zu verwenden, müssen Sie die Position des ersten Elements angeben, das zurückgegeben werden soll (`offset`) und die Anzahl der zurückzugebenden Elemente (`limit` oder Seitengröße).
 
-* [Cursor-basierte Paginierung](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (dargestellt durch `first` und `after`) 
-Bei dieser Methode wird für jedes Element eine eindeutige ID bereitgestellt; auch als Cursor bezeichnet.
+* [Cursor-basierte Paginierung](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (dargestellt durch `first`und `after`)
+Dadurch wird für jedes Element eine eindeutige ID bereitgestellt; auch als Cursor bezeichnet.
 In der Abfrage geben Sie den Cursor des letzten Elements der vorherigen Seite sowie die Seitengröße (die maximale Anzahl der zurückzugebenden Elemente) an.
 
   Da die Cursor-basierte Paginierung nicht zu den Datenstrukturen von listenbasierten Abfragen passt, hat AEM den Abfragetyp `Paginated` eingeführt, zum Beispiel `articlePaginated`. Die verwendeten Datenstrukturen und Parameter entsprechen der [GraphQL Cursor ConnectionSpecification](https://relay.dev/graphql/connections.htm).

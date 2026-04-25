@@ -6,10 +6,10 @@ role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 75c15b0f0e4de2ea7fff339ae46b88ce8f6af83f
-workflow-type: ht
-source-wordcount: '1550'
-ht-degree: 100%
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+workflow-type: tm+mt
+source-wordcount: '1579'
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Um Dateien, die Sie mit [!DNL Adobe InDesign] erstellt haben, vollständig in [!
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] gibt es als zwei separate Angebote. Das [Adobe InDesign](https://www.adobe.com/de/products/indesign.html)-Desktop-Programm, das zum Entwerfen von Seiten-Layouts für den Druck und die digitale Distribution verwendet wird. [Adobe InDesign Server](https://www.adobe.com/de/products/indesignserver.html) ermöglicht die programmgesteuerte automatisierte Erstellung von Dokumenten, die auf denen basieren, die Sie mit [!DNL InDesign] entworfen haben. Die Engine fungiert als Dienst, der eine Schnittstelle seiner ExtendScript-Engine bereitstellt. Die Skripte werden in [!DNL ExtendScript] geschrieben, das Ähnlichkeiten mit [!DNL JavaScript] aufweist. 
+>[!DNL Adobe InDesign] gibt es als zwei separate Angebote. Das [Adobe InDesign](https://www.adobe.com/de/products/indesign.html)-Desktop-Programm, das zum Entwerfen von Seiten-Layouts für den Druck und die digitale Distribution verwendet wird. [Adobe InDesign Server](https://www.adobe.com/de/products/indesignserver.html) ermöglicht die programmgesteuerte automatisierte Erstellung von Dokumenten, die auf denen basieren, die Sie mit [!DNL InDesign] entworfen haben. Die Engine fungiert als Dienst, der eine Schnittstelle seiner ExtendScript-Engine bereitstellt. Die Skripte werden in [!DNL ExtendScript] geschrieben, das Ähnlichkeiten mit [!DNL JavaScript] aufweist.
 
 ## So funktioniert die Extraktion {#how-the-extraction-works}
 
@@ -59,7 +59,7 @@ Dieses Befehlsskript führt folgende Aktionen aus:
 1. Nach der Extraktion und Ausgabegenerierung:
 
    * Die Struktur wird auf einer `cq:Page` repliziert (Ausgabetyp).
-   * Der extrahierte Text und die Dateien werden in [!DNL Experience Manager Assets] gespeichert. 
+   * Der extrahierte Text und die Dateien werden in [!DNL Experience Manager Assets] gespeichert.
    * Alle Ausgabedarstellungen werden in [!DNL Experience Manager Assets] im Asset selbst gespeichert.
 
 ## Integration von [!DNL InDesign Server] mit Experience Manager {#integrating-the-indesign-server-with-aem}
@@ -94,28 +94,29 @@ Um den [!DNL InDesign Server] für die Verwendung mit [!DNL Experience Manager] 
 
 [!DNL Experience Manager Assets] verfügt über den vorkonfigurierten Workflow **[!UICONTROL DAM-Update-Asset]**, der mehrere Prozessschritte speziell für [!DNL InDesign] umfasst:
 
-* [Extrahierung von Medien](#media-extraction)
-* [Extrahierung von Seiten  ](#page-extraction)
+* [Extraktion von Medien](#media-extraction)
+* [Extraktion von Seiten](#page-extraction)
 
 Dieser Workflow wird mit Standardwerten konfiguriert, die für Ihr Setup in den verschiedenen Autoreninstanzen angepasst werden können (dies ist ein Standard-Workflow, weitere Informationen finden Sie unter [Bearbeiten eines Workflows](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Wenn Sie die Standardwerte (einschließlich SOAP-Port) verwenden, ist keine Konfiguration erforderlich.
 
 Nach Abschluss des Setups löst das Hochladen von [!DNL InDesign]-Dateien in [!DNL Experience Manager Assets] (mithilfe einer der üblichen Methoden) den Workflow für die Verarbeitung des Assets und Vorbereitung der verschiedenen Ausgabedarstellungen aus. Testen Sie Ihre Konfiguration, indem Sie eine INDD-Datei in [!DNL Experience Manager Assets] hochladen und auf diese Weise überprüfen, ob IDS verschiedene Ausgabedarstellungen unter `<*your_asset*>.indd/Renditions` erstellt.
 
-#### Extrahierung von Medien {#media-extraction}
+#### Extraktion von Medien {#media-extraction}
 
 Dieser Schritt steuert die Extrahierung von Medien aus der INDD-Datei.
 
 Zur Anpassung können Sie die Registerkarte **[!UICONTROL Argumente]** im Schritt **[!UICONTROL Medienextrahierung]** bearbeiten.
 
-![Argumente und Skriptpfade zum Extrahieren von Medien](assets/media_extraction_arguments_scripts.png)
+![Argumente und Skriptpfade zur Extraktion von Medien](assets/media_extraction_arguments_scripts.png)
 
-Argumente und Skriptpfade zum Extrahieren von Medien
+Argumente und Skriptpfade zur Extraktion von Medien
 
 * **ExtendScript-Bibliothek**: Dies ist eine einfache HTTP-GET/POST-Methodenbibliothek, die von anderen Skripten benötigt wird.
 
 * **Skripte erweitern**: Hier können Sie unterschiedliche Skriptkombinationen angeben. Wenn Ihre eigenen Skripte auf [!DNL InDesign Server] ausgeführt werden sollen, speichern Sie die Skripte unter `/apps/settings/dam/indesign/scripts`.
 
-<!-- TBD: Hiding this link since ADC is not available anymore. 
+<!--
+TBD: Hiding this link since ADC is not available anymore. 
 For information about [!DNL Adobe InDesign] scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 -->
 
@@ -123,20 +124,20 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 >
 >Ändern Sie nicht die ExtendScript-Bibliothek. Diese Bibliothek bietet die HTTP-Funktionen, die für die Kommunikation mit Sling erforderlich sind. Diese Einstellung legt die Bibliothek fest, die zur Verwendung an [!DNL InDesign Server] gesendet werden soll.
 
-Das Skript `ThumbnailExport.jsx`, das vom Workflow-Schritt „Extrahierung von Medien“ ausgeführt wird, generiert eine Miniaturansicht im JPG-Format. Diese Ausgabedarstellung wird vom Workflow-Schritt „Miniaturansichten verarbeiten“ dazu verwendet, die für [!DNL Experience Manager] erforderlichen statischen Ausgabedarstellungen zu rendern.
+Das Skript `ThumbnailExport.jsx`, das vom Workflow-Schritt „Extraktion von Medien“ ausgeführt wird, generiert eine Miniaturansicht im JPG-Format. Diese Ausgabedarstellung wird vom Workflow-Schritt „Miniaturansichten verarbeiten“ dazu verwendet, die für [!DNL Experience Manager] erforderlichen statischen Ausgabedarstellungen zu rendern.
 
 Sie können den Workflow-Schritt „Miniaturansichten verarbeiten“ so konfigurieren, dass statische Darstellungen in verschiedenen Größen generiert werden. Stellen Sie sicher, dass Sie die Voreinstellungen nicht entfernen, da sie für die Benutzeroberfläche von [!DNL Experience Manager Assets] erforderlich sind. Abschließend entfernt der Workflow-Schritt „Bildvorschau-Wiedergabe löschen“ die JPG-Miniaturansicht, da sie nicht mehr benötigt wird.
 
-#### Extrahierung von Seiten {#page-extraction}
+#### Extraktion von Seiten {#page-extraction}
 
-Dabei wird eine [!DNL Experience Manager]-Seite aus den extrahierten Elementen erstellt. Das Extrahieren von Daten aus einem Ausgabeformat (aktuell HTML oder IDML) erfolgt mithilfe eines Extrahierungs-Handlers. Diese Daten werden verwendet, um eine Seite mit Page Builder zu erstellen.
+Dabei wird eine [!DNL Experience Manager]-Seite aus den extrahierten Elementen erstellt. Die Extraktion von Daten aus einem Ausgabeformat (aktuell HTML oder IDML) erfolgt mithilfe eines Extraktions-Handlers. Diese Daten werden verwendet, um eine Seite mit Page Builder zu erstellen.
 
-Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Seiten]** auf der Registerkarte **[!UICONTROL Argumente]** vornehmen.
+Anpassungen können Sie im Schritt **[!UICONTROL Extraktion von Seiten]** auf der Registerkarte **[!UICONTROL Argumente]** vornehmen.
 
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
-* **Handler zur Extrahierung von Seite**: Wählen Sie in der Dropdown-Liste den zu verwendenden Handler aus. Ein Extrahierungs-Handler arbeitet mit einem bestimmten Ausgabeformat, das mit einem entsprechenden `RenditionPicker` ausgewählt wird (siehe `ExtractionHandler`-API). Bei einer standardmäßigen [!DNL Experience Manager]-Installation sind folgende Optionen verfügbar:
-   * IDML-Export-Extrahierungs-Handler: Bearbeitet die `IDML`-Ausgabedarstellung, die im Schritt „MediaExtract“ generiert wurde.
+* **Handler zur Extraktion von Seite**: Wählen Sie in der Dropdown-Liste den zu verwendenden Handler aus. Ein Extraktions-Handler arbeitet mit einem bestimmten Ausgabeformat, das mit einem entsprechenden `RenditionPicker` ausgewählt wird (siehe `ExtractionHandler`-API). Bei einer standardmäßigen [!DNL Experience Manager]-Installation sind folgende Optionen verfügbar:
+   * IDML-Export-Extraktions-Handler: Bearbeitet die `IDML`-Ausgabedarstellung, die im Schritt „MediaExtract“ generiert wurde.
 
 * **Seitenname**: Geben Sie den Namen an, den Sie der resultierenden Seite zuweisen möchten. Wenn Sie das Feld leer lassen, wird als Name „Seite“ gewählt (oder eine Ableitung, falls „Seite“ bereits vorhanden ist).
 
@@ -235,7 +236,7 @@ Sie können die standardmäßigen Admin-Anmeldeinformationen (Benutzername und P
 
 1. Wechseln zu `/etc/cloudservices/proxy.html`.
 1. Geben Sie im Dialogfeld den neuen Benutzernamen und das neue Passwort an.
-1. Speichern Sie die Anmeldeinformationen. 
+1. Speichern Sie die Anmeldeinformationen.
 
 >[!MORELIKETHIS]
 >

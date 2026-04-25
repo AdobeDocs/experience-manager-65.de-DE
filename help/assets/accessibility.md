@@ -6,10 +6,10 @@ feature: Asset Management
 role: User, Developer, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 3524c1e6d299576ac9691292fb29eb0cf8a48bc2
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1881'
-ht-degree: 56%
+source-wordcount: '1932'
+ht-degree: 57%
 
 ---
 
@@ -69,7 +69,8 @@ Die Kernfunktionen in [!DNL Assets] sind leichter zugänglich als zuvor und werd
 
 Viele Elemente der Benutzeroberfläche, die mit einem Zeiger angeklickt oder bearbeitet werden können, können auch mit einer Tastatur genutzt werden. Mithilfe einer Tastatur können Benutzer auf Elemente der Benutzeroberfläche fokussieren und eine gewünschte Aktion ausführen. Benutzerinnen und Benutzer können direkt Tastaturbefehle verwenden, um einen Trigger oder eine Aktion auszuführen, ohne sich auf Benutzeroberflächenelemente konzentrieren zu müssen, und sie mithilfe der Tastatur Trigger. Beispielsweise können Benutzer die Zeitleiste eines Assets auf der linken Seite der Benutzeroberfläche öffnen. Navigieren Sie über die Tastatur zum Steuerelement der Benutzeroberfläche, wählen Sie `Return` und anschließend `Alt + 2` Tastaturbefehl aus.
 
-<!-- TBD items:
+<!--
+TBD items:
 
 * The option to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
@@ -112,7 +113,8 @@ Nach der Anmeldung können DAM-Benutzer über eine Tastatur in der [!DNL Assets]
 
 Wenn Benutzende die Hilfe- oder Benutzerprofiloption im Menü erweitern, gibt die Sprachausgabe die entsprechende Option oder den entsprechenden Status aus. Wenn ein Benutzer die Benutzerprofiloption erweitert, können die verfügbaren Optionen über eine Tastatur ausgewählt werden. Ein Administrator kann beispielsweise die Identität eines anderen Benutzers annehmen. Wenn ein Benutzer über die Option [!UICONTROL Hilfe] nach einer Zeichenfolge sucht, gibt die Sprachausgabe „Hilfe bei der Suche“ aus, um anzugeben, dass eine Suche ausgeführt wird.
 
-<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
+<!--
+TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
 ![Keyboard navigation of top options in [!DNL Experience Manager] user interface](assets/keyboard-navigation-in-aem.gif)
 
@@ -123,7 +125,8 @@ Wenn Benutzende die Hilfe- oder Benutzerprofiloption im Menü erweitern, gibt di
 
 In der [!DNL Assets] Benutzeroberfläche können Benutzer die Tastatur verwenden, um digitale Assets im DAM-Repository zu durchsuchen und ein Asset in der Vorschau anzuzeigen oder herunterzuladen. Benutzer können auch generierte Ausgabedarstellungen anzeigen, Ansichten wechseln und die Timeline, den Versionsverlauf, Kommentare und Verweise überprüfen. Darüber hinaus können Benutzer Metadaten anzeigen und verwalten.
 
-<!-- TBD: Not sure about the following list items mean:
+<!--
+TBD: Not sure about the following list items mean:
 
 In [!DNL Experience Manager] header section, when navigating in browse mode, screen reader now announces,
   
@@ -149,7 +152,8 @@ Beim Durchsuchen des Asset-Repositorys wird Barrierefreiheit durch folgende Funk
 * Kommentare zu einem Asset sind in der Asset-Timeline verfügbar. Sie ist verfügbar, wenn über eine Tastatur oder einen Tastaturbefehl auf die linke Leiste zugegriffen wird.
 * Die [!UICONTROL Anzeigeeinstellungen] in [!DNL Experience Manager] sind über eine Tastatur zugänglich. Benutzer können mithilfe der Pfeiltasten durch die verfügbaren Kartengrößen sowie durch die Registerkarten navigieren und in der Ansicht „Anzeigeeinstellungen“ andere Elemente auswählen.
 
-<!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
+<!--
+TBD: Gradually, as more enhancements are done in these categories, add more content.
 
 ## Add and upload digital assets {#upload}
 
@@ -167,7 +171,7 @@ Viele Asset-Management-Aufgaben wie CRUD-Vorgänge, das Herunterladen von Assets
 Bei Metadatenvorgängen, die normalerweise von Rollen wie Marketing-Experten und Administratoren ausgeführt werden, verbessern die folgenden Funktionen die Barrierefreiheit:
 
 * Die Option [!UICONTROL Speichern und schließen] auf der Seite [!UICONTROL Eigenschaften] des Assets kann jetzt über die Tastatur aufgerufen werden.
-* Bildschirmlesehilfen geben die Optionen zum Löschen der ausgewählten Tags auf der Registerkarte [!UICONTROL Standard] des Assets (Eigenschaften[!UICONTROL &#x200B; an].
+* Bildschirmlesehilfen geben die Optionen zum Löschen der ausgewählten Tags auf der Registerkarte [!UICONTROL Standard] des Assets (Eigenschaften[!UICONTROL  an].
 * Benutzende können das Popup-Dialogfeld für die Datumsauswahl mit einer Tastatur verwenden. Das Benutzeroberflächenelement zur Datumsauswahl wird verwendet, um Ein- und Ausschaltzeiten festzulegen und ein Datum auszuwählen.
 * Die Funktion zum Ziehen mit der Tastatur funktioniert [!UICONTROL Metadatenschema-Editor] im Durchsuchen-Modus der Bildschirmlesehilfe korrekt.
 * Ein Benutzer kann die Tastatur verwenden, um den Fokus auf das Feld **Benutzer oder Gruppe hinzufügen** zu verschieben.
@@ -192,7 +196,8 @@ Beim Filtern der Suchergebnisse:
 
 ## Freigeben von Assets {#share-assets}
 
-<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
+<!--
+TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
 -->
 
 Beim Freigeben von Assets verbessern folgende Funktionen die Barrierefreiheit:
@@ -222,5 +227,5 @@ Um Feedback zu geben, Fragen zu stellen und Produktverbesserungen in Bezug auf d
 >
 >* [Funktionen für die Barrierefreiheit in  [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 >* [Versionshinweise zu den in den einzelnen Service Pack-Versionen vorgenommenen Verbesserungen](/help/release-notes/release-notes.md).
->* Hinweise zur Barrierefreiheit in [[!DNL Adobe Experience Manager] &#x200B;](/help/managing/web-accessibility.md).
+>* Hinweise zur Barrierefreiheit in [[!DNL Adobe Experience Manager] ](/help/managing/web-accessibility.md).
 >* [Konformitätsberichte (ACR) und VPAT-Liste für Adobe-Lösungen](https://www.adobe.com/accessibility/compliance.html).

@@ -8,10 +8,10 @@ feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 100%
+source-wordcount: '2199'
+ht-degree: 98%
 
 ---
 
@@ -44,7 +44,7 @@ Sie können eine Sammlung mit [statischen Referenzen](#creating-a-collection-wi
 
 ### Erstellen von Sammlungen mit statischen Referenzen {#creating-a-collection-with-static-references}
 
-Sie können eine Sammlung mit statischen Referenzen erstellen, z. B. eine Sammlung mit Referenzen zu Assets, Ordnern, Sammlungen, Rotations-Sets und Bildsets.
+Sie können eine Sammlung mit statischen Referenzen erstellen, z. B. eine Sammlung mit Referenzen zu Assets, Ordnern, Sammlungen, Rotations-Sets und Bild-Sets.
 
 1. Navigieren Sie zur Konsole **[!UICONTROL Sammlungen]**.
 1. Klicken Sie auf der Symbolleiste auf **[!UICONTROL Erstellen]**.
@@ -130,7 +130,7 @@ Smart-Sammlungen werden durch Speichern von Suchvorgängen erstellt. Das heißt,
 1. Klicken Sie auf der [!DNL Assets]-Benutzeroberfläche auf die Suchoption ![Suchoption](assets/do-not-localize/search_icon.png) auf der Symbolleiste.
 1. Betätigen Sie bei in das OmniSearch-Feld gesetztem Cursor die `Return`-Taste.
 1. Öffnen Sie in der [!DNL Experience Manager]-Benutzeroberfläche Bereich „Filter“.
-1. Wählen Sie in der Liste **[!UICONTROL Gespeicherte Suchen]** die Smart-Sammlung aus, die Sie ändern möchten. Im Suchbereich werden die für die gespeicherte Suche konfigurierten Filter angezeigt.
+1. Wählen Sie in **[!UICONTROL Liste „Gespeicherte]**&quot; die Smart-Sammlung aus, die Sie ändern möchten. Im Suchbereich werden die für die gespeicherte Suche konfigurierten Filter angezeigt.
 
    ![select_smart_collection](assets/select_smart_collection.png)
 
@@ -269,7 +269,7 @@ Gehen Sie wie folgt vor, um gespeicherte Suchen zu löschen:
 Sie können einen Workflow für die Assets in einer Sammlung ausführen. Wenn die Sammlung verschachtelte Sammlungen enthält, wird der Workflow auch für die Assets innerhalb der verschachtelten Sammlungen ausgeführt. Wenn die Sammlung und die verschachtelte Sammlung jedoch doppelte Assets enthalten, wird der Workflow für diese Assets nur einmal ausgeführt.
 
 1. Öffnen Sie **[!UICONTROL Assets]** > **[!UICONTROL Sammlungen]**. Um einen Workflow für eine bestimmte Sammlung auszuführen, wählen Sie diese aus.
-1. Öffnen Sie die **[!UICONTROL Zeitleiste]**. Klicken Sie auf den ![Pfeil nach oben](assets/do-not-localize/chevron-up-icon.png) und dann auf **[!UICONTROL Workflow starten]**.
+1. Öffnen Sie die **[!UICONTROL Timeline]**. Klicken Sie auf den ![Pfeil nach oben](assets/do-not-localize/chevron-up-icon.png) und dann auf **[!UICONTROL Workflow starten]**.
 1. Wählen Sie im Abschnitt **[!UICONTROL Workflow starten]** ein Workflow-Modell aus der Liste aus. Wählen Sie beispielsweise das **[!UICONTROL DAM Update Asset]**-Modell aus.
 1. Geben Sie einen Titel für den Workflow ein und klicken Sie auf **[!UICONTROL Starten]**.
 1. Klicken Sie im Dialogfeld auf **[!UICONTROL Fortfahren]**. Der Workflow verarbeitet alle Assets in der ausgewählten Sammlung.

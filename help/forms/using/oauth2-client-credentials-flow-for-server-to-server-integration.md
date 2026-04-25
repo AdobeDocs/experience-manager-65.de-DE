@@ -5,14 +5,14 @@ exl-id: 4c356aa6-ebd4-40b9-89e3-bc4519e4a7c5
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 100%
+source-wordcount: '461'
+ht-degree: 98%
 
 ---
 
-# Integration von Salesforce mithilfe des OAuth 2.0-Client-Anmeldedatenflusses {#configure-salesforce-with-ouath-2.0-client-credential}
+# Integration von Salesforce mithilfe des OAuth 2.0-Flusses der Client-Anmeldeinformationen  {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -34,18 +34,17 @@ Die Verwendung von OAuth 2.0-Client-Anmeldeinformationen für die Authentifizie
 
 Tun Sie Folgendes, bevor Sie die Kommunikation zwischen einer Salesforce-Anwendung und einer AEM-Umgebung einrichten:
 
-* Erstellen Sie eine [mit Salesforce verbundene App mit OAuth 2.0 Client Credential Flow](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5) sowie eine reine API-Benutzerin bzw. einen reinen API-Benutzer für Ihre Organisation und rufen Sie Consumer Key und Consumer Secret für die App ab.
+* Erstellen Sie eine [mit Salesforce verbundene App mit OAuth 2.0 Client Credential Flow](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) sowie eine reine API-Benutzerin bzw. einen reinen API-Benutzer für Ihre Organisation und rufen Sie Consumer Key und Consumer Secret für die App ab.
 
 * Stellen Sie sicher, dass Ihre Swagger-Datei entsprechend den APIs Ihrer Organisation konfiguriert ist. Sie können auch eine [Swagger-Datei komplett neu erstellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=de), die auf die Nutzung in Ihrer AEM-Umgebung zugeschnitten ist.
+
 >[!NOTE]
 >
 > AEM 6.5 unterstützt nur Swagger 2.0-Dateispezifikationen.
 
-+++
-
 ## Schritte zum Konfigurieren von Salesforce mit Client-Anmeldedatenfluss {#steps-to-create-aem-datasource-configuration}
 
-1. Melden Sie sich bei Ihrer Authoring-Instanz an.
+1. Melden Sie sich bei Ihrer Autoreninstanz an.
 1. Wechseln Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Datenquellen]**.
 1. Wählen Sie den Konfigurationsordner aus.
 1. Klicken Sie auf **[!UICONTROL Erstellen]** und das Bedienfeld **[!UICONTROL Datenquellenkonfiguration erstellen]** erscheint.

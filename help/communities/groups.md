@@ -11,9 +11,9 @@ role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1727'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,8 @@ Die verschiedenen Facetten von Community-Gruppen sind:
 * **Kontrolle**: Gruppe kann offen oder geheim sein.
 * **Verschachtelung**: Gruppe kann null oder mehr Gruppen enthalten.
 
-<!-- This is a 404 on helpx. Update or remove.
+<!--
+This is a 404 on helpx. Update or remove.
 >[!NOTE]
 >
 >Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), is not listed in the Community Groups console, and thus, are not modifiable using the console.
@@ -42,7 +43,7 @@ Die verschiedenen Facetten von Community-Gruppen sind:
 
 >[!NOTE]
 >
->Diese Gruppen -Konsole, auf die nur über die Communities-Sites -Konsole zugegriffen werden kann, ist nicht mit der Mitglieds-(Gruppen[Konsole) &#x200B;](/help/communities/members.md) die Verwaltung von Mitgliedergruppen zu verwechseln.
+>Diese Gruppen -Konsole, auf die nur über die Communities-Sites -Konsole zugegriffen werden kann, ist nicht mit der Mitglieds-(Gruppen[Konsole) ](/help/communities/members.md) die Verwaltung von Mitgliedergruppen zu verwechseln.
 >
 >Mitgliedsgruppen sind Benutzergruppen, die in der Veröffentlichungsumgebung registriert sind und über die Autorenumgebung mithilfe des [Tunnelservice](/help/communities/deploy-communities.md#tunnel-service-on-author) aufgerufen werden.
 
@@ -56,13 +57,13 @@ So greifen Sie auf die Gruppenkonsole zu:
 * Wählen Sie eine Instanz einer Community-Site im Ordner aus.
 
    * Die Struktur der Community-Site muss eine Gruppenfunktion enthalten.
-   * Diese Screenshots stammen aus dem Tutorial Erste Schritte nach [Erstellen von Gruppen in der &#x200B;](/help/communities/published-site.md)).
+   * Diese Screenshots stammen aus dem Tutorial Erste Schritte nach [Erstellen von Gruppen in der ](/help/communities/published-site.md)).
 
   ![create-group](assets/create-group.png)
 
 * Wählen Sie den **Ordner „Gruppen** aus, damit Sie ihn öffnen können.
 
-  Wenn sie geöffnet wird, werden alle vorhandenen Gruppen angezeigt, unabhängig davon, ob sie in der Autoreninstanz oder in Publish erstellt wurden.
+  Wenn sie geöffnet wird, werden alle vorhandenen Gruppen angezeigt, unabhängig davon, ob sie in der Autoren- oder der Veröffentlichungsinstanz erstellt wurden.
 
   In dieser Gruppen -Konsole ist es möglich, neue Gruppen zu erstellen.
 
@@ -99,7 +100,6 @@ Der Standardstamm ist die übergeordnete Website, der Stamm kann jedoch an eine 
    * Überprüfen Sie den Namen, da er nach der Erstellung der Gruppe nicht einfach geändert werden kann.
    * Die Basis-URL wird unter dem `Community Group Name` angezeigt.
    * Hängen Sie für eine gültige URL &quot;.html“ an
-
      *zum*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * **Community-Gruppenvorlage** Menü
@@ -173,7 +173,7 @@ Die Mitgliedschaftseinstellung ermöglicht die Auswahl einer der drei Möglichke
 
 * **Eingeschränkte Mitgliedschaft**
 
-  Wenn diese Option aktiviert ist, ist die Community-Gruppe eine geheime Gruppe. Community-Mitglieder müssen ausdrücklich eingeladen werden. Eingeladene Mitglieder werden in das Suchfeld eingegeben. Mitglieder können später über die Konsolen [Mitglieder und Gruppen“ in &#x200B;](/help/communities/members.md) Autorenumgebung hinzugefügt werden. Standard ist nicht ausgewählt.
+  Wenn diese Option aktiviert ist, ist die Community-Gruppe eine geheime Gruppe. Community-Mitglieder müssen ausdrücklich eingeladen werden. Eingeladene Mitglieder werden in das Suchfeld eingegeben. Mitglieder können später über die Konsolen [Mitglieder und Gruppen“ in ](/help/communities/members.md) Autorenumgebung hinzugefügt werden. Standard ist nicht ausgewählt.
 
 **MINIATURANSICHT**
 
@@ -283,9 +283,9 @@ Das Bedienfeld [MITGLIEDSCHAFT](#membership) dient nur zu Informationszwecken. E
 
 ### Miniaturansicht ändern {#modify-thumbnail}
 
-Das [MINIATUR](#thumbnail)-Bedienfeld ermöglicht den Upload eines Bildes, das die Community-Gruppe für Site-Besucher in der Publish-Umgebung darstellt, und in die Communities-Site-Gruppenkonsole in der Autorenumgebung.
+Das [MINIATURANSICHT](#thumbnail)-Bedienfeld ermöglicht den Upload eines Bildes, das die Community-Gruppe für Site-Besucher in der Veröffentlichungsumgebung und in der Communities-Site-Gruppenkonsole in der Autorenumgebung darstellt.
 
-## Publish - die Gruppe {#publish-the-group}
+## Veröffentlichen der Gruppe {#publish-the-group}
 
 ![publish-site](assets/publish-site.png)
 

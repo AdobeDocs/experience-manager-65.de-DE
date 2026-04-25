@@ -8,10 +8,10 @@ feature: Upgrading
 exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1464'
-ht-degree: 100%
+source-wordcount: '1494'
+ht-degree: 94%
 
 ---
 
@@ -28,8 +28,8 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
 * [Adobe Analytics-Client-Bibliotheken](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-analytics-client-libraries)
 * [Vom klassischen Microsoft Word zu Web-Seiten-Designs](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#classic-microsoft-word-to-web-page-designs)
 * [Konfigurationen für den Mobilgeräte-Emulator](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#mobile-device-emulator-configurations)
-* [Blueprint-Konfigurationen für den Multi-Site-Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#multi-site-manager-blueprint-configurations)
-* [Rollout-Konfigurationen für den Multi-Site-Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#multi-site-manager-rollout-configurations)
+* [Blueprint-Konfigurationen für den Multi-Site Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#multi-site-manager-blueprint-configurations)
+* [Rollout-Konfigurationen für den Multi-Site Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#multi-site-manager-rollout-configurations)
 * [E-Mail-Vorlage für Seitenereignis-Benachrichtigung](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
 * [Seiten-Strukturvorlage](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-scaffolding)
 * [Responsives Raster (LESS)](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#responsive-grid-less)
@@ -58,10 +58,10 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
     <ol>
      <li>Kopieren Sie alle neuen oder geänderten ContextHub-Segmente vom vorherigen Speicherort an den neuen Speicherort (/<code>apps</code>, <code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>).</li>
      <li>Aktualisieren Sie die Verweise auf ContextHub-Segmente am vorherigen Speicherort auf die migrierten ContextHub-Segmente an den neuen Speicherorten (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
-    </ol> <p>Die folgende Abfrage mit QueryBuilder findet alle Verweise auf ContextHub-Segmente in den vorherigen Speicherorten.<br /> <br /> <code class="code">path=/content
+    </ol> <p>Die folgende QueryBuilder-Abfrage sucht alle Verweise auf ContextHub-Segmente in den vorherigen Speicherorten.<br /> <br /> <code class="code">path=/content
        property=cq:segments
        property.operation=like
-       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> Dies kann über die <a href="/help/sites-developing/querybuilder-api.md" target="_blank">Benutzeroberfläche von QueryBuilder Debugger AEM</a> geschehen. Beachten Sie, dass es sich um eine traversierende Abfrage handelt, führen Sie sie also nicht gegen die Produktion aus und stellen Sie sicher, dass die Traversalgrenzen bei Bedarf angepasst werden.</p> </td>
+       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> Dies kann über die <a href="/help/sites-developing/querybuilder-api.md" target="_blank">AEM QueryBuilder Debugger-Benutzeroberfläche ausgeführt </a>. Beachten Sie, dass es sich um eine traversierende Abfrage handelt, führen Sie sie also nicht gegen die Produktion aus und stellen Sie sicher, dass die Durchlaufgrenzen bei Bedarf angepasst werden.</p> </td>
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
@@ -92,7 +92,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
    <td><p>Bei einer benutzerdefinierten Verwendung dieser Client-Bibliotheken sollte der Verweis auf die Client-Bibliothek nach Kategorie und nicht nach Pfad erfolgen:</p>
     <ol>
-     <li>Alle Verweise auf die Client-Bibliothek nach Pfad am vorherigen Speicherort sollten aktualisiert werden, sodass sie das <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">Referenzierungssystem für Client-Bibliotheken von AEM</a> verwenden.</li>
+     <li>Alle Verweise auf die Client-Bibliothek nach Pfad am vorherigen Speicherort sollten so aktualisiert werden, dass sie das <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">Referenzierungssystem von AEM für Client-Bibliotheken</a> verwenden.</li>
      <li>Sollte das Referenzierungssystem für Client-Bibliotheken von AEM nicht verwendet werden können, kann über das Proxy-Servlet für Client-Bibliotheken von AEM auf den absoluten Pfad der Client-Bibliotheken verwiesen werden.
       <ul>
        <li><code>/etc.clientlibs/cq/analytics/clientlibs/sitecatalyst/appmeasurement.js</code></li>
@@ -167,23 +167,23 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
    <td>Alle neuen Konfigurationen für den Mobilgeräte-Emulator müssen an den neuen Speicherort migriert werden.
     <ol>
      <li>Kopieren Sie alle neuen Konfigurationen für den Mobilgeräte-Emulator vom vorherigen Speicherort an den neuen Speicherort (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
-     <li>Aktualisieren Sie für alle AEM Sites-Seiten, die von diesen Konfigurationen für den Mobilgeräte-Emulator abhängen, den Knoten <span class="code">
+     <li>Aktualisieren Sie für alle AEM Sites-Seiten, die von diesen Konfigurationen für den Mobilgeräte-Emulator abhängen, den der Seite <span class="code">
        <code>
         jcr
        </code>
        <code>
         :content
-       </code></span> der Seite: <br /> <span class="code">[cq:Page]/jcr:content@cq:
+       </code></span>: <br /> <span class="code">[cq:Page]/jcr:content@cq:
        <code>
         deviceGroups
        </code> = String[ mobile/groups/responsive ]</span></li>
-     <li>Aktualisieren Sie die bearbeitbaren Vorlagen für alle bearbeitbaren Vorlagen, die von diesen Konfigurationen für den Mobilgeräte-Emulator abhängen, indem Sie <span class="code">
+     <li>Aktualisieren Sie die bearbeitbaren Vorlagen für alle bearbeitbaren Vorlagen, die von diesen Konfigurationen für den Mobilgeräte-Emulator abhängen, indem Sie auf Folgendes verweisen <span class="code">
        <code>
         cq
        </code>:
-       <code>
+       An den neuen Speicherort <code>
         deviceGroups
-       </code></span> auf den neuen Speicherort verweisen.</li>
+       </code></span>.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -200,7 +200,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
  </tbody>
 </table>
 
-### Blueprint-Konfigurationen für den Multi-Site-Manager {#multi-site-manager-blueprint-configurations}
+### Blueprint-Konfigurationen für den Multi-Site Manager {#multi-site-manager-blueprint-configurations}
 
 <table>
  <tbody>
@@ -214,20 +214,20 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td><p>Alle neuen oder geänderten Blueprint-Konfigurationen für den Multi-Site-Manager müssen an den neuen Speicherort (<code>/apps</code>) migriert werden.</p>
+   <td><p>Alle neuen oder geänderten Blueprint-Konfigurationen für den Multi-Site Manager müssen an den neuen Speicherort (<code>/apps</code>) migriert werden.</p>
     <ol>
-     <li>Kopieren Sie alle neuen oder modifizierten Blueprint-Konfigurationen für den Multi-Site-Manager vom vorherigen an den neuen Speicherort (<code>/apps</code>).</li>
-     <li>Entfernen Sie alle migrierten Blueprint-Konfigurationen für den Multi-Site-Manager vom vorherigen Speicherort.</li>
+     <li>Kopieren Sie alle neuen oder modifizierten Blueprint-Konfigurationen für den Multi-Site Manager vom vorherigen an den neuen Speicherort (<code>/apps</code>).</li>
+     <li>Entfernen Sie alle migrierten Blueprint-Konfigurationen für den Multi-Site Manager vom vorherigen Speicherort.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
-   <td><p>Alle von AEM bereitgestellten Blueprint-Konfigurationen für den Multi-Site-Manager sind am neuen Speicherort unter <code>/libs</code> verfügbar.</p> <p>Der Inhalt verweist nicht auf die Blueprint-Konfigurationen für den Multi-Site-Manager, sodass keine Inhaltsverweise angepasst werden müssen.</p> </td>
+   <td><p>Alle von AEM bereitgestellten Blueprint-Konfigurationen für den Multi-Site Manager sind am neuen Speicherort unter <code>/libs</code> verfügbar.</p> <p>Der Inhalt verweist nicht auf die Blueprint-Konfigurationen für den Multi-Site Manager, sodass keine Inhaltsverweise angepasst werden müssen.</p> </td>
   </tr>
  </tbody>
 </table>
 
-### Rollout-Konfigurationen für den Multi-Site-Manager {#multi-site-manager-rollout-configurations}
+### Rollout-Konfigurationen für den Multi-Site Manager {#multi-site-manager-rollout-configurations}
 
 <table>
  <tbody>
@@ -241,15 +241,15 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td><p>Alle neuen oder modifizierten Rollout-Konfigurationen für den Multi-Site-Manager müssen an den neuen Speicherort migriert werden.</p>
+   <td><p>Alle neuen oder modifizierten Rollout-Konfigurationen für den Multi-Site Manager müssen an den neuen Speicherort migriert werden.</p>
     <ol>
-     <li>Kopieren Sie alle neuen oder modifizierten Rollout-Konfigurationen für den Multi-Site-Manager vom vorherigen an den neuen Speicherort (<code>/apps</code>).</li>
-     <li>Aktualisieren Sie alle Verweise auf AEM-Seiten auf Rollout-Konfigurationen für den Multi-Site-Manager am vorherigen Speicherort, um auf ihre Gegenstücke an den neuen Speicherorten zu verweisen (<code>/libs</code> oder <code>/apps</code>).</li>
-    </ol> <p>Entfernen Sie alle migrierten Rollout-Konfigurationen für den Multi-Site-Manager vom vorherigen Speicherort.</p> </td>
+     <li>Kopieren Sie alle neuen oder modifizierten Rollout-Konfigurationen für den Multi-Site Manager vom vorherigen an den neuen Speicherort (<code>/apps</code>).</li>
+     <li>Aktualisieren Sie alle Verweise auf AEM-Seiten auf Rollout-Konfigurationen für den Multi-Site Manager am vorherigen Speicherort, um auf ihre Gegenstücke an den neuen Speicherorten zu verweisen (<code>/libs</code> oder <code>/apps</code>).</li>
+    </ol> <p>Entfernen Sie alle migrierten Rollout-Konfigurationen für den Multi-Site Manager vom vorherigen Speicherort.</p> </td>
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
-   <td>Wenn migrierte Rollout-Konfigurationen für den Multi-Site-Manager nicht vom vorherigen Speicherort entfernt werden, bekommen AEM-Autorinnen und -Autoren doppelte Rollout-Optionen angezeigt.</td>
+   <td>Wenn migrierte Rollout-Konfigurationen für den Multi-Site Manager nicht vom vorherigen Speicherort entfernt werden, bekommen AEM-Autorinnen und -Autoren doppelte Rollout-Optionen angezeigt.</td>
   </tr>
  </tbody>
 </table>
@@ -374,7 +374,8 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
  </tbody>
 </table>
 
-<!-- Search&Promote is end of life as of September 1, 2022 ### Adobe Search and Promote Integration Client Libraries {#adobe-search-and-promote-integration-client-libraries}
+<!--
+Search&Promote is end of life as of September 1, 2022 ### Adobe Search and Promote Integration Client Libraries {#adobe-search-and-promote-integration-client-libraries}
 
 <table>
  <tbody>
@@ -405,7 +406,8 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
     </ul> </td>
   </tr>
  </tbody>
-</table> -->
+</table>
+-->
 
 ### Client-Bibliotheken für die Integration mit Adobe Target {#adobe-target-integration-client-libraries}
 
@@ -423,7 +425,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
    <td><p>Bei einer benutzerdefinierten Verwendung dieser Client-Bibliotheken sollte der Verweis auf die Client-Bibliothek nach Kategorie und nicht nach Pfad erfolgen.</p>
     <ol>
-     <li>Alle Verweise auf die Client-Bibliothek nach Pfad am vorherigen Speicherort sollten aktualisiert werden, sodass sie das <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">Referenzierungssystem für Client-Bibliotheken von AEM</a> verwenden.</li>
+     <li>Alle Verweise auf die Client-Bibliothek nach Pfad am vorherigen Speicherort sollten so aktualisiert werden, dass sie das <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">Referenzierungssystem von AEM für Client-Bibliotheken</a> verwenden.</li>
      <li>Sollte das Referenzierungssystem für Client-Bibliotheken von AEM nicht verwendet werden können, kann über das Proxy-Servlet für Client-Bibliotheken von AEM auf den absoluten Pfad der Client-Bibliotheken verwiesen werden:</li>
     </ol>
     <ul>
@@ -468,7 +470,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
    <td><p>Bei einer benutzerdefinierten Verwendung dieser Client-Bibliotheken sollte der Verweis auf die Client-Bibliothek nach Kategorie und nicht nach Pfad erfolgen.</p>
     <ol>
-     <li>Alle Verweise auf die Client-Bibliothek nach Pfad am vorherigen Speicherort sollten so aktualisiert werden, dass sie das <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">Referenzierungssystem von AEM für Client-Bibliotheken</a> verwenden.</li>
+     <li>Alle Verweise auf die Client-Bibliothek nach Pfad am vorherigen Speicherort sollten aktualisiert werden, sodass sie das <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">Referenzierungssystem für Client-Bibliotheken von AEM</a> verwenden.</li>
      <li>Sollte das Referenzierungssystem für Client-Bibliotheken von AEM nicht verwendet werden können, kann über das Proxy-Servlet für Client-Bibliotheken von AEM auf den absoluten Pfad der Client-Bibliotheken verwiesen werden.</li>
     </ol>
     <ul>

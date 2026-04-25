@@ -7,14 +7,14 @@ feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '5466'
-ht-degree: 99%
+source-wordcount: '5596'
+ht-degree: 97%
 
 ---
 
-# Verwalten von Video-Assets  {#manage-video-assets}
+# Verwalten von Video-Assets {#manage-video-assets}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -154,11 +154,11 @@ So konfigurieren Sie Google Cloud-Einstellungen:
 
 1. Gehen Sie auf der Seite zum **[!UICONTROL Anmeldedaten zu Projekt hinzufügen]** in Schritt 1 wie folgt vor:
 
-   * Wählen Sie in der Dropdown-Liste **[!UICONTROL Welche API verwenden Sie?]** die Option **[!UICONTROL YouTube Data API v3]**.
+   * Wählen Sie in der **[!UICONTROL Welche API verwenden Sie?]** die Option **[!UICONTROL YouTube Data API v3]**.
 
-   * Wählen Sie aus der Dropdown-Liste **[!UICONTROL Von wo wird die API abgerufen?]** die Option **[!UICONTROL Webserver (z. B. node.js, Tomcat)]**
+   * Wählen Sie in der **[!UICONTROL Von wo wird die API abgerufen?]** die Option **[!UICONTROL Webserver (z. B. node.js, Tomcat)]**
 
-   * Wählen Sie in der Dropdown-Liste **[!UICONTROL Auf welche Daten wird zugegriffen?]** die Option **[!UICONTROL Nutzerdaten]** aus.
+   * Wählen Sie in der **[!UICONTROL Auf welche Daten wird zugegriffen?]** die Option **[!UICONTROL Benutzerdaten]**.
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
@@ -340,7 +340,7 @@ Lassen Sie das Dialogfeld „YouTube-Kontoeinstellungen“ geöffnet, da Sie gle
 
    Wählen Sie zum Löschen eines von Ihnen hinzugefügten Tags das Tag aus und klicken Sie auf **X**.
 
-1. Wenn Sie mit dem Hinzufügen der gewünschten Tags fertig sind, klicken Sie auf **[!UICONTROL OK]**. 
+1. Wenn Sie mit dem Hinzufügen der gewünschten Tags fertig sind, klicken Sie auf **[!UICONTROL OK]**.
 
    Nun können Sie Videos in Ihrem YouTube-Kanal veröffentlichen.
 
@@ -489,7 +489,7 @@ Wenn Sie die Veröffentlichung eines Video-Assets in Experience Manager aufheben
 
 1. Navigieren Sie zu den Video-Assets, deren Veröffentlichung in Ihrem YouTube-Kanal Sie aufheben möchten.
 1. Wählen Sie in einem Asset-Auswahlmodus eines oder mehrere der veröffentlichten Video-Assets aus.
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**. Wählen Sie das Symbol mit den drei Punkten (.) .) in der Symbolleiste, sodass **[!UICONTROL Veröffentlichung verwalten“]**.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**. Wählen Sie das Symbol mit den drei Punkten ( ) aus. . .) in der Symbolleiste, sodass **[!UICONTROL Veröffentlichung verwalten]** geöffnet wird.
 1. Klicken Sie auf der Seite „Veröffentlichung verwalten“ auf **[!UICONTROL Veröffentlichung rückgängig machen]**.
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Weiter]**.
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Veröffentlichung rückgängig machen]**.
@@ -514,19 +514,19 @@ Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angew
 
    ![chlimage_1-431](assets/chlimage_1-431.png)
 
-1. Anzeigen des Fortschritts in den Asset-Details. Wenn Sie auf ein Asset klicken, öffnen Sie das Dropdown-Menü und wählen Sie die Option **[!UICONTROL Zeitleiste]** aus. Um die Ergebnisse auf Workflow-Aktivitäten wie Kodierung oder YouTube-Veröffentlichung zu begrenzen, wählen Sie **[!UICONTROL Workflows]**.
+1. Anzeigen des Fortschritts in den Asset-Details. Wenn Sie auf ein Asset klicken, öffnen Sie das Dropdown-Menü und wählen Sie die Option **[!UICONTROL Timeline]** aus. Um die Ergebnisse auf Workflow-Aktivitäten wie Kodierung oder YouTube-Veröffentlichung zu begrenzen, wählen Sie **[!UICONTROL Workflows]**.
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
-   Workflow-Informationen wie Kodierung werden in der Zeitleiste angezeigt. Bei YouTube-Veröffentlichungen enthält die Workflow-Zeitleistensegment auch den Namen des YouTube-Kanals und die URL zum YouTube-Video. In der Workflow-Zeitleistensegment werden Sie nach der Veröffentlichung auch über eventuelle Fehler benachrichtigt.
+   Workflow-Informationen wie Kodierung werden in der Timeline angezeigt. Bei YouTube-Veröffentlichungen enthält die Workflow-Timeline auch den Namen des YouTube-Kanals und die URL zum YouTube-Video. In der Workflow-Timeline werden Sie nach der Veröffentlichung auch über eventuelle Fehler benachrichtigt.
 
    >[!NOTE]
    >
-   >Die endgültige Aufzeichnung von Fehlschlag-/Fehlernachrichten kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) mehrere Workflow-Konfigurationen vorliegen, beispielsweise:
+   >Die endgültige Aufzeichnung von Fehlschlag-/Fehlermeldungen kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** von [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) mehrere Workflow-Konfigurationen vorliegen, beispielsweise:
    >
    >* Konfiguration der Warteschlange für Apache Sling-Aufträge
    >* Handler für externe Prozessaufträge im Adobe Granite-Workflow
-   >* Granite-Workflow – Zeitlimit-Warteschlange
+   >* Granite-Workflow – Timeout-Warteschlange
    >
    >In diesen Konfigurationen können Sie die Eigenschaften für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** anpassen.
 
@@ -554,11 +554,11 @@ Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angew
 
    >[!NOTE]
    >
-   >Die endgültige Aufzeichnung von Fehlernachrichten kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) mehrere Workflow-Konfigurationen vorliegen, beispielsweise:
+   >Die endgültige Aufzeichnung von Fehlermeldungen kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** von [https://localhost:4502/system/console/configMgr} mehrere Workflow-Konfigurationen vorliegen](https://localhost:4502/system/console/configMgr) Beispiel:
    >
    >* Konfiguration der Warteschlange für Apache Sling-Aufträge
    >* Handler für externe Prozessaufträge im Adobe Granite-Workflow
-   >* Granite-Workflow – Zeitlimit-Warteschlange
+   >* Granite-Workflow – Timeout-Warteschlange
    >
    >In diesen Konfigurationen können Sie die Eigenschaften für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** anpassen.
 
@@ -580,7 +580,7 @@ Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angew
 
 Wie Sie Benachrichtigungen konfigurieren, hängt davon ab, ob Sie Benachrichtigungen für Kodierungs- oder YouTube-Veröffentlichungsaufträge benötigen:
 
-* Kodierungsaufträge: Sie können unter **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Webkonsole]** auf die Konfigurationsseite für alle Experience Manager-Workflows zugreifen – und indem Sie nach **[!UICONTROL E-Mail-Benachrichtigungsservice für Day CQ-Workflow]** suchen. Siehe [Konfigurieren der E-Mail-Benachrichtigung in Experience Manager](/help/sites-administering/notification.md). Sie können die Kontrollkästchen **[!UICONTROL Bei Abbruch benachrichtigen]** oder **[!UICONTROL Bei Abschluss benachrichtigen]** entsprechend aktivieren oder deaktivieren.
+* Kodierungsaufträge: Sie können unter **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]** auf die Konfigurationsseite für alle Experience Manager-Workflows zugreifen – und indem Sie nach **[!UICONTROL E-Mail-Benachrichtigungsservice für Day CQ-Workflow]** suchen. Siehe [Konfigurieren der E-Mail-Benachrichtigung in Experience Manager](/help/sites-administering/notification.md). Sie können die Kontrollkästchen **[!UICONTROL Bei Abbruch benachrichtigen]** oder **[!UICONTROL Bei Abschluss benachrichtigen]** entsprechend aktivieren oder deaktivieren.
 
 * Gehen Sie bei YouTube-Veröffentlichungsaufträgen wie folgt vor:
 
@@ -626,9 +626,9 @@ Wie Sie Benachrichtigungen konfigurieren, hängt davon ab, ob Sie Benachrichtigu
 
    ![Suchen nach einer Zeit in einem Video, die um die angegebenen Sekunden übersprungen werden soll](assets/seek-in-video.png)
 
-1. Klicken Sie auf eine Anmerkung, um sie in der Zeitleiste anzuzeigen. Um die Anmerkung aus der Zeitleiste zu löschen, klicken Sie auf **[!UICONTROL Löschen]**.
+1. Klicken Sie auf eine Anmerkung, um sie in der Timeline anzuzeigen. Um die Anmerkung aus der Timeline zu löschen, klicken Sie auf **[!UICONTROL Löschen]**.
 
-   ![Anzeigen von Anmerkungen und Details in der Zeitleiste](assets/timeline-view-annotation.png)
+   ![Anzeigen von Anmerkungen und Details in der Timeline](assets/timeline-view-annotation.png)
 
 >[!MORELIKETHIS]
 >

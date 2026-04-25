@@ -7,9 +7,9 @@ feature: Asset Insights,Asset Reports
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '797'
 ht-degree: 100%
 
 ---
@@ -87,4 +87,4 @@ Assets Insights ruft Nutzungsdaten für Assets regelmäßig aus den Adobe Analyt
 
    ![chlimage_1-99](assets/chlimage_1-304.png)
 
-1. Geben Sie im Ausdruck für die Eigenschaftsplanung die gewünschte Planungsfrequenz und die Startzeit für den Vorgang an. Speichern Sie die Änderungen.
+1. Geben Sie im Ausdruck für die Eigenschaftsplanung die gewünschte Planungsfrequenz und die Startzeit für den Auftrag an. Speichern Sie die Änderungen.

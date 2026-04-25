@@ -8,10 +8,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: cbdb64772f66e5e69de5e4e7ae1cd0d023276b34
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '1925'
-ht-degree: 100%
+source-wordcount: '1983'
+ht-degree: 99%
 
 ---
 
@@ -34,12 +34,12 @@ Ziel der vorliegenden Einführung und exemplarischen Anleitung ist es, einem AEM
 
 ## Voraussetzungen {#requirements}
 
-Die exemplarische Anleitung basiert auf AEM-Standardfunktionen und der beispielhaften WKND SPA Project-App. Um dieser schrittweisen Anleitung zu folgen, müssen Sie über Folgendes verfügen.
+Die exemplarische Anleitung basiert auf AEM-Standardfunktionen und der beispielhaften WKND SPA Project-App. Um dieser Anleitung folgen zu können, müssen Sie über Folgendes verfügen:
 
 * [AEM Version 6.5.4 oder neuer](/help/release-notes/release-notes.md)
    * Sie müssen über Administratorrechte für das System verfügen.
-* [Die Beispiel-Anwendung des WKND SPA-Projekts ist auf GitHub verfügbar](https://github.com/adobe/aem-guides-wknd-spa)
-   * Laden Sie die [neueste Version der React-Anwendung herunter.](https://github.com/adobe/aem-guides-wknd-spa/releases) Sie wird ähnlich benannt wie `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
+* [Die Beispiel-App „WKND SPA Project“ ist auf GitHub verfügbar](https://github.com/adobe/aem-guides-wknd-spa)
+   * Laden Sie die [neueste Version der React-App herunter.](https://github.com/adobe/aem-guides-wknd-spa/releases) Sie wird ähnlich benannt wie `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
    * Laden Sie die [neuesten Beispielbilder](https://github.com/adobe/aem-guides-wknd-spa/releases) für die Anwendung herunter. Sie wird ähnlich benannt wie `wknd-spa-sample-images-X.Y.Z.zip`.
    * [Verwenden Sie den Paket-Manager](/help/sites-administering/package-manager.md), um die Pakete zu installieren, wie Sie es mit jedem anderen Paket in AEM tun würden.
    * Für die Zwecke dieser schrittweisen Anleitung muss die Anwendung nicht mit Maven installiert werden.
@@ -139,7 +139,7 @@ Weitere Authoring-Werkzeuge wie das Ziehen und Ablegen zusätzlicher Komponenten
 
 Wenn Sie wissen, wie sich eine SPA beim Endbenutzer verhält, und dann die SPA-Seite prüfen, können Sie besser verstehen, wie eine SAP-Anwendung mit dem SPA-Editor in AEM zusammenarbeitet.
 
-### Verwenden einer SPA-Anwendung {#using-an-spa-application}
+### Verwenden eines SPA-Programms {#using-an-spa-application}
 
 1. Laden Sie die WKND-SPA-Projekt-Anwendung entweder auf den Veröffentlichungs-Server oder mithilfe der Option **Als veröffentlicht anzeigen** im Menü **Seiteninformationen** des Seiteneditors.
 
@@ -215,7 +215,7 @@ Der nächste Abschnitt, [Laden einer SPA-Anwendung](#loading-an-spa-application)
 
 ### Interaktion mit dem SPA-Editor {#interaction-with-the-spa-editor}
 
-Mithilfe der exemplarischen WKND-SPA-Projekt-Anwendung wird deutlich, wie sich die App verhält und beim Veröffentlichen geladen wird. Dabei kommen Inhaltsdienste für die JSON-Inhaltsbereitstellung und das asynchrone Laden von Ressourcen zum Einsatz.
+Mithilfe der exemplarischen WKND-SPA-Projektanwendung wird deutlich, wie sich die App verhält und beim Veröffentlichen geladen wird. Dabei kommen Inhaltsdienste für die JSON-Inhaltsbereitstellung und das asynchrone Laden von Ressourcen zum Einsatz.
 
 Darüber hinaus ist die Inhaltserstellung mit einem SPA-Editor für den Inhaltsautor in AEM nahtlos.
 

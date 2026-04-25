@@ -9,9 +9,9 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1959'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 100%
 | AEM 6.5 | Dieser Artikel |
 
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine herausfordernde Aufgabe und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
 
@@ -51,18 +51,18 @@ AEM Forms-Benutzende können den reCAPTCHA-Service von Google verwenden, um CAPT
 1. Erstellen Sie einen [API-Schlüssel](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) und einen [Site-Schlüssel für Websites](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
 1. Erstellen Sie einen Konfigurations-Container für Cloud-Dienste.
 
-   1. Wählen Sie **[!UICONTROL „Tools“ > „Allgemein“ > „Konfigurationsbrowser“]**. Weitere Informationen finden Sie in der Dokumentation zum [Konfigurationsbrowser](/help/sites-administering/configurations.md).
-   1. Gehen Sie folgendermaßen vor, um den globalen Ordner für Cloud-Konfigurationen zu aktivieren, oder überspringen Sie diesen Schritt, um einen anderen Ordner für Cloud Service-Konfigurationen zu erstellen und zu konfigurieren.
+   1. Wählen Sie **[!UICONTROL Tools > Allgemein > Konfigurationsbrowser]**. Weitere Informationen finden Sie in der Dokumentation zum [Konfigurationsbrowser](/help/sites-administering/configurations.md).
+   1. Gehen Sie folgendermaßen vor, um den globalen Ordner für Cloud-Konfigurationen zu aktivieren, oder überspringen Sie diesen Schritt, um einen anderen Ordner für Cloud-Service-Konfigurationen zu erstellen und zu konfigurieren.
       1. Wählen Sie im Konfigurations-Browser den Ordner **[!UICONTROL Global]** und klicken Sie auf **[!UICONTROL Eigenschaften]**.
       1. Aktivieren Sie im Dialogfeld „Konfigurationseigenschaften“ die Option **[!UICONTROL Cloud-Konfigurationen]**.
       1. Wählen Sie **[!UICONTROL Speichern und schließen]**, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
 
    1. Wählen Sie im Konfigurations-Browser **[!UICONTROL Erstellen]** aus.
    1. Legen Sie im Dialogfeld „Konfiguration erstellen“ einen Titel für den Ordner fest und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**.
-   1. Wählen Sie **[!UICONTROL Erstellen]** aus, um den für Cloud-Service-Konfigurationen aktivierten Ordner zu erstellen.
-1. Konfigurieren Sie den Cloud Service für reCAPTCHA Enterprise.
+   1. Wählen Sie **[!UICONTROL Erstellen]**, um den für Cloud-Service-Konfigurationen aktivierten Ordner zu erstellen.
+1. Konfigurieren Sie den Cloud-Service für reCAPTCHA Enterprise.
 
-   1. Gehen Sie in der Experience Manager-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud-Services]**.
+   1. Gehen Sie in der Experience Manager-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
    1. Wählen Sie **[!UICONTROL reCAPTCHA]** aus. Die Konfigurationsseite öffnet sich. Wählen Sie den im vorherigen Schritt erstellten Konfigurations-Container und dann **[!UICONTROL Erstellen]** aus.
    1. Wählen Sie die Version „reCAPTCHA Enterprise“ und geben Sie den Namen, die Projekt-ID, den Site-Schlüssel und den API-Schlüssel (erhalten in Schritt 2 und 3) für den reCAPTCHA Enterprise-Dienst an.
    1. Wählen Sie den Schlüsseltyp aus. Der Schlüsseltyp sollte mit dem im Google Cloud-Projekt konfigurierten Site-Schlüssel übereinstimmen, z. B. **Checkbox site key** oder **Score-based site key**.
@@ -85,8 +85,8 @@ Sobald der reCAPTCHA Enterprise-Dienst aktiviert ist, kann er in adaptiven Formu
 
 1. Rufen Sie ein [reCAPTCHA-API-Schlüsselpaar](https://www.google.com/recaptcha/admin) von Google ab. Er enthält einen **Site-Schlüssel** und einen **geheimen Schlüssel**.
 1. Erstellen Sie einen Konfigurations-Container für Cloud-Dienste.
-   1. Wählen Sie **[!UICONTROL „Tools“ > „Allgemein“ > „Konfigurationsbrowser“]**. Weitere Informationen finden Sie in der Dokumentation zum [Konfigurationsbrowser](/help/sites-administering/configurations.md).
-   1. Gehen Sie folgendermaßen vor, um den globalen Ordner für Cloud-Konfigurationen zu aktivieren, oder überspringen Sie diesen Schritt, um einen anderen Ordner für Cloud Service-Konfigurationen zu erstellen und zu konfigurieren.
+   1. Wählen Sie **[!UICONTROL Tools > Allgemein > Konfigurationsbrowser]**. Weitere Informationen finden Sie in der Dokumentation zum [Konfigurationsbrowser](/help/sites-administering/configurations.md).
+   1. Gehen Sie folgendermaßen vor, um den globalen Ordner für Cloud-Konfigurationen zu aktivieren, oder überspringen Sie diesen Schritt, um einen anderen Ordner für Cloud-Service-Konfigurationen zu erstellen und zu konfigurieren.
 
       1. Wählen Sie im Konfigurations-Browser den Ordner **[!UICONTROL Global]** und klicken Sie auf **[!UICONTROL Eigenschaften]**.
 
@@ -95,9 +95,9 @@ Sobald der reCAPTCHA Enterprise-Dienst aktiviert ist, kann er in adaptiven Formu
 
    1. Wählen Sie im Konfigurations-Browser **[!UICONTROL Erstellen]** aus.
    1. Legen Sie im Dialogfeld „Konfiguration erstellen“ einen Titel für den Ordner fest und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**.
-   1. Wählen Sie **[!UICONTROL Erstellen]** aus, um den für Cloud-Service-Konfigurationen aktivierten Ordner zu erstellen.
+   1. Wählen Sie **[!UICONTROL Erstellen]**, um den für Cloud-Service-Konfigurationen aktivierten Ordner zu erstellen.
 
-1. Konfigurieren Sie den Cloud Service für reCAPTCHA v2.
+1. Konfigurieren Sie den Cloud-Service für reCAPTCHA v2.
 
    1. Navigieren Sie in der AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **Cloud-Services**.
    1. Wählen Sie **[!UICONTROL reCAPTCHA]** aus. Die Konfigurationsseite öffnet sich. Wählen Sie den im vorherigen Schritt erstellten Konfigurations-Container und dann **[!UICONTROL Erstellen]** aus.
@@ -117,7 +117,7 @@ So verwenden Sie reCAPTCHA in adaptiven Formularen:
 
    >[!NOTE]
    >
-   >Stellen Sie sicher, dass der beim Erstellen des adaptiven Formulars ausgewählte Konfigurations-Container den reCAPTCHA-Cloud Service enthält. Sie können auch adaptive Formulareigenschaften bearbeiten, um den Konfigurationscontainer zu ändern, der dem Formular zugeordnet ist.
+   >Stellen Sie sicher, dass der beim Erstellen des adaptiven Formulars ausgewählte Konfigurations-Container den reCAPTCHA-Cloud-Service enthält. Sie können auch adaptive Formulareigenschaften bearbeiten, um den Konfigurationscontainer zu ändern, der dem Formular zugeordnet ist.
 
 1. Ziehen Sie die **CAPTCHA**-Komponente im Komponenten-Browser in das adaptive Formular und legen Sie sie dort ab.
 
@@ -132,7 +132,7 @@ So verwenden Sie reCAPTCHA in adaptiven Formularen:
 1. Wählen Sie die hinzugefügte Captcha-Komponente und dann ![cmppr](assets/cmppr.png) aus, um die zugehörigen Eigenschaften zu bearbeiten.
 1. Geben Sie einen Titel für das CAPTCHA-Widget an. Der Standardwert ist **CAPTCHA**. Wählen Sie **Titel ausblenden**, wenn der Titel nicht angezeigt werden soll.
 1. Wählen Sie aus der Dropdown-Liste **Captcha-Service** die Option **reCAPTCHA**, um den reCAPTCHA-Service zu aktivieren, wenn Sie ihn wie unter [reCAPTCHA-Service von Google](#google-reCAPTCHA) beschrieben konfiguriert haben.
-1. Wählen Sie eine Konfiguration aus der Dropdown-Liste „Einstellungen“. 
+1. Wählen Sie eine Konfiguration aus der Dropdown-Liste „Einstellungen“.
 1. **Wenn die ausgewählte Konfiguration die Version reCAPTCHA Enterprise aufweist**:
    1. Sie können die reCAPTCHA-Cloud-Konfiguration auswählen, wobei der **Schlüsseltyp** als **Kontrollkästchen** ausgewählt ist. Beim Schlüsseltyp „Kontrollkästchen“ wird die angepasste Fehlermeldung als Inline-Meldung angezeigt, wenn die Captcha-Validierung fehlschlägt. Sie können zwischen den Größen **[!UICONTROL Normal]** und **[!UICONTROL Kompakt]** wählen.
    1. Sie können die reCAPTCHA-Cloud-Konfiguration auswählen, wobei der **Schlüsseltyp** als **punktebasiert** ausgewählt ist. Beim bewerteten Schlüsseltyp wird die angepasste Fehlermeldung als Popup-Meldung angezeigt, wenn die Captcha-Validierung fehlschlägt.
@@ -342,4 +342,5 @@ public interface GuideCaptchaValidator {
 
 `captchaPropertyNodePath` Refers to the resource path of the CAPTCHA component in the Sling repository. Use this property to include details specific to the CAPTCHA component. For example, `captchaPropertyNodePath` includes information for the reCAPTCHA cloud configuration configured on the CAPTCHA component. The cloud configuration information provides **[!UICONTROL Site Key]** and **[!UICONTROL Secret Key]** settings for implementing the reCAPTCHA service.
 
-`userResponseToken` Refers to the `g_reCAPTCHA_response` that gets generated after solving a CAPTCHA in a form. -->
+`userResponseToken` Refers to the `g_reCAPTCHA_response` that gets generated after solving a CAPTCHA in a form.
+-->

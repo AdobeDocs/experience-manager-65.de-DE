@@ -8,10 +8,10 @@ hidefromtoc: true
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '593'
+ht-degree: 91%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->[Kontaktieren Sie den Support](https://experienceleague.adobe.com/de?support-solution=General&support-tab=home?lang=de#support), um weitere Informationen oder den Patch zu erhalten.
+>[Kontaktieren Sie den Support](https://experienceleague.adobe.com/?lang=de&support-solution=General&support-tab=home#support), um weitere Informationen oder den Patch zu erhalten.
 
 ## Über das Patch-Installationsprogramm {#about-the-patch-installer}
 
@@ -37,13 +37,13 @@ Das AEM 6.5 Forms JEE Patch-Installationsprogramm enthält alle behobenen Proble
 1. Im Ordner mit dem Namen entsprechend des von Ihnen verwendeten Betriebssystems:
 
    * **Windows**
-Navigieren Sie zu dem entsprechenden Verzeichnis auf dem Installationsmedium oder dem Ordner auf Ihrer Festplatte, in den Sie das Installationsprogramm kopiert haben, und doppelklicken Sie auf die Datei „aemforms65_cfp_install.exe“.
+Navigieren Sie zu dem entsprechenden Verzeichnis auf dem Installationsmedium oder dem Ordner auf Ihrer Festplatte, in den Sie das Installationsprogramm kopiert haben, und doppelklicken Sie auf die Datei aemforms65_cfp_install.exe.
 
       * (Windows 32-Bit) `Windows\Disk1\InstData\VM`
       * (Windows 64-Bit) `Windows_64Bit`\ `Disk1\InstData\VM`
 
-   * **Linux**:
-Wechseln Sie in den entsprechenden Ordner und geben Sie an einer Eingabeaufforderung Folgendes ein:`./aem65_cfp_install.bin`
+   * **Linux®**
+Navigieren Sie zum entsprechenden Verzeichnis und geben Sie an einer Eingabeaufforderung `./aem65_cfp_install.bin` ein.
 
       * (Linux®) `Linux/Disk1/InstData/NoVM`
 
@@ -72,7 +72,7 @@ Wechseln Sie in den entsprechenden Ordner und geben Sie an einer Eingabeaufforde
 1. Wählen Sie je nach Anwendungs-Server eines der folgenden Dokumente aus und befolgen Sie die Anweisungen im Bereich *Konfigurieren und Bereitstellen von AEM Forms*.
 
    * [Installieren und Bereitstellen von AEM Forms for JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_de)
-   * [Installieren und Bereitstellen von AEM Forms für WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_de)
+   * [Installieren und Bereitstellen von AEM Forms for WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_de)
 
 1. (Nur JBoss®) Löschen Sie nach der Installation des Patches und der Konfiguration des Servers die Ordner „tmp“ und „work“ des JBoss®-Anwendungs-Servers.
 
@@ -89,7 +89,7 @@ Wenn Sie die SAML-Authentifizierung konfiguriert haben und Probleme mit großen 
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ## Betroffene Module {#impacted-modules}
 
@@ -97,4 +97,4 @@ Wenn Sie die SAML-Authentifizierung konfiguriert haben und Probleme mit großen 
 * Document Security
 * Foundation JEE
 
-[Support kontaktieren](https://experienceleague.adobe.com/de?support-solution=General&support-tab=home?lang=de#support)
+[Support kontaktieren](https://experienceleague.adobe.com/?support-solution=General&support-tab=home&lang=de#support)

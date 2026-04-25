@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
-workflow-type: ht
-source-wordcount: '783'
-ht-degree: 100%
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+workflow-type: tm+mt
+source-wordcount: '786'
+ht-degree: 98%
 
 ---
 
@@ -181,4 +181,4 @@ Wenn der Inhalt in AEM vorhanden ist, kann er direkt in die SPA eingefügt werde
 
 ![Pfad für zusammengesetzte Komponente in Knotenstruktur](assets/composite-path.png)
 
-Die Komponente `AEMCard` entspricht der Definition [im vorherigen Anwendungsfall.](#content-does-not-exist) Hier wird der Inhalt, der am oben genannten Speicherort im AEM-Projekt definiert ist, in die SPA aufgenommen.
+Die `AEMCard`-Komponente entspricht der Definition [im vorherigen Anwendungsfall.](#content-does-not-exist) Hier wird der Inhalt, der am oben genannten Speicherort im AEM-Projekt definiert ist, in die SPA aufgenommen.

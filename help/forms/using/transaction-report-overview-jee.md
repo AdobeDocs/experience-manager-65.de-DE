@@ -5,9 +5,9 @@ feature: Transaction Reports
 exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 5699f5814daf16a397eb6129b881ac2035456e39
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '638'
 ht-degree: 87%
 
 ---
@@ -79,7 +79,7 @@ For Jboss Cluster:
 "<Jboss home>/transaction_log.log"
 ```
 
-Beispiel eines Transaktionseintrags:
+Beispiel für einen Beispiel-Transaktionsdatensatz:
 `[2024-02-28 06:11:27] [INFO] TransactionRecord{service='GeneratePDFService', operation='HtmlFileToPDF', internalService='GeneratePDFService', internalOperation='HtmlFileToPDF', transactionOperationType='CONVERT', transactionCount=1, elapsedTime=1906, transactionDate=Wed Feb 28 06:11:25 UTC 2024}`
 
 #### Transaktionseintrag {#transaction-record-structure-jee}
@@ -135,7 +135,8 @@ Die Häufigkeit der Aufzeichnung von Transaktionen wird durch die Aktualisierung
 
 * In den **Transaktionsprotokollen** erfolgt die Aktualisierung für jede Transaktion sofort, wenn ein Formular gesendet, gerendert oder konvertiert wurde.
 
-<!-- A transaction remains in the buffer for a specified period (Flush Buffer time + Reverse replication time). By default, it takes approximately 90 seconds for the transaction count to reflect in the transaction report.
+<!--
+A transaction remains in the buffer for a specified period (Flush Buffer time + Reverse replication time). By default, it takes approximately 90 seconds for the transaction count to reflect in the transaction report.
 
 Actions like submitting a PDF Form, using Agent UI to preview an interactive communication, or using non-standard form submission methods are not accounted as transactions. AEM Forms provides an API to record such transactions. Call the API from your custom implementations to record a transaction.
 
@@ -157,7 +158,8 @@ The transaction count is reverse replicated from publish instances to author or 
 * Enable the **Show transactions from publish only** option on the author instance to view cumulative transactions from all publish instances. You can also view transaction reports on each publish instance for actual transactions on that particular publish instance only.
 * Do not use author instances to run workflows and process documents.
 * Before using transaction reporting, if you are have a toplogy with publish servers, ensure that the reverse replication is enabled for all the publish instances.
-* Transaction data is reverse-replicated from a publish instance to only corresponding author or processing instance. The author or processing instance cannot further replicate data to another instance. For example, if you have author-processing-publish topology, aggregated transaction data is replicated only to the processing instance.-->
+* Transaction data is reverse-replicated from a publish instance to only corresponding author or processing instance. The author or processing instance cannot further replicate data to another instance. For example, if you have author-processing-publish topology, aggregated transaction data is replicated only to the processing instance.
+-->
 
 ## Verwandte Artikel {#related-articles}
 

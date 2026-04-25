@@ -8,9 +8,9 @@ feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '3284'
+source-wordcount: '3312'
 ht-degree: 100%
 
 ---
@@ -72,7 +72,7 @@ Führen Sie einen der folgenden Schritte aus, um eine Live Copy aus einem oder 
 * Methode 1: Wählen Sie die Quell-Assets aus und klicken Sie oben in der Symbolleiste auf **[!UICONTROL Erstellen]** > **[!UICONTROL Live Copy]**.
 * Methode 2: Klicken Sie oben rechts in der [!DNL Experience Manager]-Benutzeroberfläche auf **[!UICONTROL Erstellen]** > **[!UICONTROL Live Copy]**.
 
-Sie können Live Copies eines Assets oder Ordners einzeln erstellen. Sie können Live Copies erstellen, die aus einem Asset oder Ordner abgeleitet werden, der ebenfalls eine Live Copy ist. Inhaltsfragmente werden für das Nutzungsszenario nicht unterstützt. Wenn Sie versuchen, deren Live Copies zu erstellen, werden die Inhaltsfragmente wie vorliegend und ohne Beziehung kopiert. Die kopierten Inhaltsfragmente sind eine Momentaufnahme und werden nicht zusammen mit den ursprünglichen Inhaltsfragmenten aktualisiert.
+Sie können Live Copies eines Assets oder Ordners einzeln erstellen. Sie können Live Copys erstellen, die aus einem Asset oder Ordner abgeleitet werden, der ebenfalls eine Live Copy ist. Inhaltsfragmente werden für das Nutzungsszenario nicht unterstützt. Wenn Sie versuchen, deren Live Copies zu erstellen, werden die Inhaltsfragmente wie vorliegend und ohne Beziehung kopiert. Die kopierten Inhaltsfragmente sind eine Momentaufnahme und werden nicht zusammen mit den ursprünglichen Inhaltsfragmenten aktualisiert.
 
 Führen Sie folgende Schritte aus, um Live Copies mit der ersten Methode zu erstellen:
 
@@ -116,7 +116,7 @@ Die folgenden beiden Methoden funktionieren für Assets und Ordner:
 >
 >Tipp: Um den Status einiger separater Live Copy zu überprüfen, verwenden Sie die erste Methode, die die Seite **[!UICONTROL Eigenschaften]** anzeigt. Zum Prüfen des Status vieler Live Copys können Sie die zweite Methode verwenden. Lesen Sie also die Seite **[!UICONTROL Beziehungsstatus]**.
 
-### Informationen und Status von Live Copies   {#statuslcasset}
+### Informationen und Status von Live Copies {#statuslcasset}
 
 Führen Sie folgende Schritte aus, um Informationen und Status eines Live Copy-Assets oder -Ordners zu prüfen.
 
@@ -174,7 +174,7 @@ Klicken Sie für eine bestimmte Live Copy auf **[!UICONTROL Live Copy bearbeit
 
 *Abbildung: Aussetzen der Beziehung oder Ändern der Rollout-Konfiguration einer bestimmten Live Copy.*
 
-### Schnellaktionen in der Leiste „Verweise“ für Live Copies   {#ref-rail-lc}
+### Schnellaktionen in der Leiste „Verweise“ für Live Copies {#ref-rail-lc}
 
 Für Live Copy-Assets oder -Ordner können Sie die folgenden Informationen über die Leiste „Verweise“ anzeigen und die folgenden Aktionen von dort aus direkt ausführen:
 
@@ -188,11 +188,11 @@ Wählen Sie Live Copy-Asset oder -Ordner aus, öffnen Sie die linke Leiste und 
 
 *Abbildung: In der Leiste „Verweise“ für die ausgewählte Live Copy verfügbare Aktionen.*
 
-## Übertragen von Änderungen von der Quelle an Live Copies   {#rolloutsync}
+## Übertragen von Änderungen von der Quelle an Live Copies {#rolloutsync}
 
 Nach der Bearbeitung einer Quelle können die Änderungen entweder mithilfe einer Aktion „Synchronisieren“ oder „Rollout“ an die Live Copies übertragen werden. Informationen zu den Unterschieden zwischen beiden Aktionen finden Sie im [Glossar](#glossary).
 
-### Aktion „Rollout“  {#rollout}
+### Aktion „Rollout“ {#rollout}
 
 Sie können eine Aktion „Rollout“ über das Quell-Asset initiieren und alle oder einige ausgewählte Live Copies aktualisieren.
 
@@ -215,7 +215,7 @@ Sie können eine Aktion „Rollout“ auch über die Leiste „Verweise“ initi
 
 *Abbildung: Rollout von Quelländerungen an die ausgewählte Live Copy.*
 
-### Wissenswertes über die Aktion „Synchronisieren“  {#about-sync}
+### Wissenswertes über die Aktion „Synchronisieren“ {#about-sync}
 
 Durch eine Aktion „Synchronisieren“ werden die Änderungen einer Quelle nur an die ausgewählte Live Copy übertragen. Die Aktion „Synchronisieren“ respektiert und bewahrt die lokalen Änderungen, die nach dem Abbrechen der Vererbung vorgenommen wurden. Die lokalen Änderungen werden nicht überschrieben und die abgebrochene Vererbung wird nicht wiederhergestellt. Sie haben drei Möglichkeiten, um eine Aktion „Synchronisieren“ zu initiieren.
 
@@ -225,7 +225,7 @@ Durch eine Aktion „Synchronisieren“ werden die Änderungen einer Quelle nur 
 | Symbolleiste auf der Seite [!UICONTROL Eigenschaften] | Initiieren von Synchronisationen bei bereits öffneten Live Copy-Eigenschaften | Siehe [Synchronisieren von Live Copies](#sync-lc) |
 | [!UICONTROL Konsole „Live Copy-Übersicht“] | Schnelles Synchronisieren mehrerer Assets (nicht unbedingt von allen), wenn der Quellordner ausgewählt oder die Konsole [!UICONTROL Live Copy-Übersicht] bereits geöffnet ist; Initiieren der Aktion „Synchronisieren“ für jeweils ein Asset, aber eine schnellere Methode, um mehrere Assets auf einmal zu synchronisieren | Siehe [Aktionen für viele Assets in einem Live Copy-Ordner](#bulk-actions) |
 
-### Synchronisieren von Live Copies   {#sync-lc}
+### Synchronisieren von Live Copies {#sync-lc}
 
 Um eine Aktion „Synchronisieren“ zu starten, öffnen Sie die Seite **[!UICONTROL Eigenschaften]** einer Live Copy, klicken Sie auf **[!UICONTROL Live Copy]** und dann auf die gewünschte Aktion in der Symbolleiste.
 
@@ -259,7 +259,7 @@ Sie können alle lokalen Änderungen rückgängig machen und das Asset auf den S
 
 *Abbildung: Aktion „Zurücksetzen“ – Überschreiben lokaler Bearbeitungen und Abgleichen der Live Copy mit der zugehörigen Quelle*
 
-## Entfernen von Live-Beziehungen   {#detach}
+## Entfernen von Live-Beziehungen {#detach}
 
 Sie können die Beziehung zwischen Quelle und Live Copy mit der Aktion „Trennen“ vollständig entfernen. Nach dem Trennen wird die Live Copy zu einem eigenständigen Asset oder Ordner. Sie wird unmittelbar nach dem Trennen als neues Asset in der [!DNL Experience Manager]-Oberfläche angezeigt. Führen Sie die folgenden Schritte aus, um eine Live Copy von ihrer Quelle zu trennen.
 

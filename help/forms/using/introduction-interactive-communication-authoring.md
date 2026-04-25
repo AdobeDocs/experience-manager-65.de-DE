@@ -9,10 +9,10 @@ feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 100%
+source-wordcount: '1316'
+ht-degree: 91%
 
 ---
 
@@ -40,9 +40,11 @@ Wenn Sie eine [interaktive Kommunikation erstellen oder eine vorhandene bearbeit
 
 **A.** Kanal-Browser **B.** Inhalts-Browser **C.** Eigenschaften-Browser **D.** Asset-Browser **E.** Komponenten-Browser **F.** Datenquellen-Browser – Datenmodell **G.** Datenquellen-Browser – Übergeordnete Inhalte
 
-<!-- Click to enlarge
+<!--
+Click to enlarge
 
-![sidebar-comps-3](assets/sidebar-comps-3.png)-->
+![sidebar-comps-3](assets/sidebar-comps-3.png)
+-->
 
 Die Seitenleiste beinhaltet Folgendes:
 
@@ -50,32 +52,36 @@ Die Seitenleiste beinhaltet Folgendes:
 
 Mit dem Kanal-Browser können Sie zwischen Druck- und Internet-Kanal der interaktiven Kommunikation wechseln. Je nach dem Kanal, den Sie im Kanal-Browser ausgewählt haben, zeigen die Browser, z. B. Inhalts- und Komponenten-Browser, die Optionen an.
 
-* **Inhalts-Browser**: Im Inhalts-Browser können Sie die Objekthierarchie des Dokuments für den ausgewählten Kanal sehen. Autorinnen und Autoren können zu bestimmten Formularkomponenten navigieren, indem sie auf das entsprechende Element in der Dokumentobjektstruktur tippen. Autorinnen und Autoren können Objekte im Web-Kanal suchen und in dieser Struktur neu anordnen.
+* **Inhaltsbrowser**
+Im Inhaltsbrowser können Sie die Objekthierarchie des Dokuments für den ausgewählten Kanal sehen. Autorinnen und Autoren können zu bestimmten Formularkomponenten navigieren, indem sie auf das entsprechende Element in der Dokumentobjektstruktur tippen. Autorinnen und Autoren können Objekte im Web-Kanal suchen und in dieser Struktur neu anordnen.
 
 * **Eigenschaften-Browser**
 
-  Hier können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. So zeigen Sie beispielsweise die Eigenschaften des Dokument-Containers an: 
-Wählen Sie eine Komponente, dann ![field-level](assets/field-level.png) > **Dokument-Container** und schließlich ![cmppr](assets/cmppr.png) aus.
+  Hier können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. So zeigen Sie beispielsweise die Eigenschaften des Dokumentcontainers an:
+Wählen Sie eine Komponente aus, wählen Sie ![field-level](assets/field-level.png) > **Dokumenten-Container** und klicken Sie dann auf ![cmppr](assets/cmppr.png).
 
-* **Assets-Browser** Trennt verschiedene Arten von Inhalten wie Layout-Fragmente, Bilder, Dokumente, Seiten, Videos. Der Autor kann Assets in die interaktive Kommunikation ziehen und ablegen.
+* **Assets-Browser**
+Trennt verschiedene Inhaltstypen wie Layout-Fragmente, Bilder, Dokumente, Seiten, Videos. Der Autor kann Assets in die interaktive Kommunikation ziehen und ablegen.
 
-* **Komponentenbrowser** Enthält Komponenten, mit denen Sie die Druck- und Webkanäle eines Dokuments erstellen können. Sie können Komponenten per Drag-und-Drop in die interaktive Kommunikation ziehen, um Elemente hinzuzufügen, und hinzugefügte Elemente gemäß den Anforderungen konfigurieren. In der folgenden Tabelle werden die im Komponentenbrowser aufgelisteten Komponenten für Druck- und Webkanäle beschrieben. 
+* **Komponenten-Browser**
+Enthält Komponenten, mit denen Sie die Druck- und Webkanäle eines Dokuments erstellen können. Sie können Komponenten per Drag-und-Drop in die interaktive Kommunikation ziehen, um Elemente hinzuzufügen, und hinzugefügte Elemente gemäß den Anforderungen konfigurieren. In der folgenden Tabelle werden die im Komponentenbrowser aufgelisteten Komponenten für Druck- und Web-Kanäle beschrieben.
 
 | **Komponente** | **Druckkanal** | **Web-Kanal** | **Funktionalität** |
 |---|---|---|---|
 | Diagramm | ✓ | ✓ | Fügt ein Diagramm hinzu, das Sie in interaktiver Kommunikation zur visuellen Darstellung von zweidimensionalen Daten verwenden können, die aus einem FDM-Sammlungselement abgerufen werden. |
 | Dokumentfragment | ✓ | ✓ | Ermöglicht Ihnen das Hinzufügen einer wiederverwendbaren Komponente, eines Textes, einer Liste oder einer Bedingung zu einer interaktiven Kommunikation. Die wiederverwendbare Komponente, die Sie einer interaktiven Kommunikation hinzufügen, kann entweder formulardatenmodellbasiert sein oder ohne ein Formulardatenmodell sein. |
 | Bild | ✓ | ✓ | Ermöglicht das Einfügen eines Bildes. |
-| Bedienfeld | - | ✓ | Die Bedienfeldkomponente ist ein Platzhalter zum Gruppieren anderer Komponenten und steuert, wie eine Gruppe von Komponenten in einer interaktiven Kommunikation angeordnet wird. Mit einer Bedienfeldkomponente können Sie auch eine Gruppe von Komponenten für die Endbenutzenden wiederholbar machen, z. B. in mehreren Einträgen, die zum Ausfüllen von Bildungsnachweisen erforderlich sind. Es ist sinnvoll, einen Bereich jeweils für eine Registerkarte einer interaktiven Kommunikation mit mehreren Registerkarten zu verwenden. |
+| Bedienfeld | – | ✓ | Die Bedienfeldkomponente ist ein Platzhalter zum Gruppieren anderer Komponenten und steuert, wie eine Gruppe von Komponenten in einer interaktiven Kommunikation angeordnet wird. Mit einer Bedienfeldkomponente können Sie auch eine Gruppe von Komponenten für die Endbenutzenden wiederholbar machen, z. B. in mehreren Einträgen, die zum Ausfüllen von Bildungsnachweisen erforderlich sind. Es ist sinnvoll, einen Bereich jeweils für eine Registerkarte einer interaktiven Kommunikation mit mehreren Registerkarten zu verwenden. |
 | Tabelle | &#42; | ✓ | Fügt eine Tabelle hinzu, mit der Sie Daten in Zeilen und Spalten organisieren können. |
 | Zielbereich | &#42;&#42; | ✓ | Fügt einen Zielbereich in einen Web-Kanal ein, um die Web-kanalspezifischen Komponenten zu organisieren. |
-| Text | - | ✓ | Fügt Text zum Web-Kanal einer interaktiven Kommunikation hinzu. Text kann Formulardatenmodellobjekte verwenden, um den Inhalt dynamisch zu gestalten. |
+| Text | – | ✓ | Fügt Text zum Web-Kanal einer interaktiven Kommunikation hinzu. Text kann Formulardatenmodellobjekte verwenden, um den Inhalt dynamisch zu gestalten. |
 
 &#42; Verwenden Sie Layout-Fragmente im Druckkanal, um Tabellen hinzuzufügen.
 
 &#42;&#42; Im Druckkanal sind Zielbereiche in der XDP-/Druckvorlage vordefiniert. Sie können keine neuen Zielbereiche mithilfe der Autorenoberfläche für die interaktive Kommunikation hinzufügen.
 
-* **Datenquellenbrowser** Datenquellenbrowser zeigt die verfügbaren Datenquellen in dem Formulardatenmodell an, das Sie beim Erstellen der interaktiven Kommunikation ausgewählt haben.
+* **Datenquellen-Browser**
+Datenquellenbrowser zeigt die verfügbaren Datenquellen in dem Formulardatenmodell an, das Sie beim Erstellen der interaktiven Kommunikation ausgewählt haben.
 
 ### Wichtige Punkte beim Arbeiten mit Komponenten {#key-points-for-working-with-components}
 
@@ -96,11 +102,11 @@ Die wichtigsten Punkte beim Arbeiten mit interaktiven Kommunikationskomponenten 
 
 Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, über die Sie mit ihr arbeiten können. Sie erhalten Optionen zum Ausschneiden, Einfügen, Verschieben und Angeben von Eigenschaften der Komponenten. Ihre Optionen sind:
 
-A. **Konfigurieren**: Wenn Sie **Konfigurieren** auswählen, werden in der Seitenleiste die Komponenteneigenschaften sichtbar.
+A. **Konfigurieren**: Wenn Sie **Konfigurieren** auswählen, werden die Komponenteneigenschaften in der Seitenleiste sichtbar.
 
 B. **Regeln bearbeiten**: Wenn Sie „Regeln bearbeiten“ auswählen, wird der Regeleditor angezeigt, in dem Sie Regeln für die ausgewählte Komponente bearbeiten und erstellen können. Im Regeleditor können Sie auch andere Formularobjekte (Komponenten) auswählen und Regeln für diese Formularobjekte bearbeiten/erstellen.
 
-C. **Kopieren**: Sie können die Kopieroption verwenden, um eine Komponente zu kopieren und an andere Positionen im Formular einzufügen.
+C. **Kopieren**: Sie können die Kopieroption verwenden, um eine Komponente zu kopieren und an andere Positionen in der interaktiven Kommunikation einzufügen.
 
 D. **Ausschneiden**: Sie können die Option zum Ausschneiden verwenden, um in der interaktiven Kommunikation eine Komponente von einer Position an eine andere zu verschieben.
 
@@ -120,7 +126,7 @@ K: **Gruppieren von Objekten im Bereich**: Hiermit können Sie die Komponenten i
 
 L. **Untergeordnetes Bedienfeld hinzufügen** (nur für Bedienfelder): Hiermit können Sie dem Bedienfeld ein untergeordnetes Bedienfeld hinzufügen.
 
-M: **Symbolleiste hinzufügen** (Nur für Bedienfelder): Hiermit können Sie die Symbolleisten-Komponente für Bedienfelder hinzufügen. Sie können dann weitere Aktionen in der Symbolleiste ausführen.
+M: **Symbolleiste hinzufügen** (nur für Bereiche):Lets Sie fügen die Symbolleisten-Komponente für Bereiche hinzu. Sie können dann weitere Aktionen in der Symbolleiste ausführen.
 
 Außerdem können Sie mit der Option **Ersetzen** in der Symbolleiste die vorhandene Komponente durch eine andere Komponente ersetzen. Die Option ist für die Bedienfeldkomponente nicht verfügbar.
 
@@ -130,7 +136,7 @@ Die Seitensymbolleiste oben bietet Optionen, mit denen Sie die interaktive Kommu
 
 * Seitliches Bedienfeld ein/aus![ toggle-side-panel](assets/toggle-side-panel.png): Hiermit können Sie die Seitenleiste ein- oder ausblenden.
 * Seiteninformationen ![pageinformationad](assets/pageinformationad.png): Hiermit können Sie die Seiteneigenschaften anzeigen.
-* Emulator ![ruler](assets/ruler.png): Hiermit können Sie die Darstellung des Formulars für verschiedene Display-Größen (z. B. für Tablets und Smartphones) emulieren.
+* Emulator ![ruler](assets/ruler.png): Hiermit können Sie die Darstellung der interaktiven Kommunikation für verschiedene Display-Größen (z. B. für Tablets und Smartphones) emulieren.
 * Bearbeiten: Hiermit können Sie andere Modi auswählen, wie etwa: Bearbeiten, Stil, Entwickler und Design.
 
    * Bearbeiten: Hiermit können Sie die Eigenschaften der interaktiven Kommunikation und ihre Komponenten bearbeiten. Dies tun Sie, indem Sie beispielsweise eine Komponente hinzufügen, ein Bild ablegen oder obligatorische Felder festlegen.

@@ -7,9 +7,9 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1581'
+source-wordcount: '1611'
 ht-degree: 97%
 
 ---
@@ -31,7 +31,7 @@ Damit der Smart Content Service die richtigen Tags anwendet, müssen Sie ihn dar
 
 Sobald ein Tag trainiert wurde und bereit ist, kann der Dienst dieses Tag über einen Tagging-Workflow auf Assets anwenden.
 
-Im Hintergrund verwendet der Smart Content Service das KI-Framework von Adobe, um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
+Im Hintergrund verwendet der Smart Content Service das Adobe AI-Framework, um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
 
 Smart Content Service ist ein Cloud-Service, der auf [!DNL Adobe Developer Console] gehostet wird. Um ihn in [!DNL Adobe Experience Manager] zu verwenden, muss die bzw. der Systemadmin Ihre [!DNL Experience Manager]-Bereitstellung mit [!DNL Adobe Developer Console] integrieren.
 
@@ -81,7 +81,7 @@ Der Service wendet Smart-Tags auf Asset-Ausgabedarstellungen der folgenden MIME-
 
 ## Onboarding {#onboarding}
 
-Der Smart Content Service kann als Add-on zu [!DNL Experience Manager] erworben werden. Nach dem Kauf wird eine E-Mail mit einem Link zu [!DNL Adobe I/O] an die oder den Admin Ihres Unternehmens gesendet. 
+Der Smart Content Service kann als Add-on zu [!DNL Experience Manager] erworben werden. Nach dem Kauf wird eine E-Mail mit einem Link zu [!DNL Adobe I/O] an die oder den Admin Ihres Unternehmens gesendet.
 
 Die bzw. der Admin kann über diesen Link den Smart Content Service mit [!DNL Experience Manager] integrieren. Weitere Informationen zum Integrieren des Services mit [!DNL Experience Manager Assets] finden Sie im Abschnitt [Konfigurieren von Smart-Tags](config-smart-tagging.md).
 

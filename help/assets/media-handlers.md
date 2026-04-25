@@ -7,10 +7,10 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2109'
-ht-degree: 99%
+source-wordcount: '2152'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,8 @@ Medien-Handler sind Dienste innerhalb von [!DNL Assets], die spezielle Aktionen 
 
 Die folgenden Medien-Handler sind in [!DNL Assets] verfügbar und verarbeiten die gängigsten MIME-Typen:
 
-<!-- TBD: Java versions should not be set to 1.5. Must be updated.
+<!--
+TBD: Java versions should not be set to 1.5. Must be updated.
 -->
 
 | Handler-Name | Dienstname (in der Systemkonsole) | Unterstützte MIME-Typen |
@@ -123,7 +124,7 @@ Die folgenden Methoden müssen implementiert werden:
 
 Hier eine Beispielvorlage:
 
-package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // die relevanten Teile implementieren }
+package my.own.Stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=„true“ &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the relevant parts }
 
 Schnittstelle und Klassen:
 
@@ -456,7 +457,7 @@ Die folgenden Konvertierungen können automatisch ausgeführt und in [!DNL Asset
 
 >[!NOTE]
 >
->Auf Nicht-Windows-Systemen gibt das FFMpeg-Tool einen Fehler aus, wenn Ausgabedarstellungen für ein Video-Asset erstellt werden, dessen Dateiname ein einfaches Anführungszeichen (&#39;) enthält. Wenn der Name Ihrer Videodatei ein einfaches Anführungszeichen enthält, entfernen Sie es, bevor Sie das Asset auf [!DNL Experience Manager] hochladen. 
+>Auf Nicht-Windows-Systemen gibt das FFMpeg-Tool einen Fehler aus, wenn Ausgabedarstellungen für ein Video-Asset erstellt werden, dessen Dateiname ein einfaches Anführungszeichen (&#39;) enthält. Wenn der Name Ihrer Videodatei ein einfaches Anführungszeichen enthält, entfernen Sie es, bevor Sie das Asset auf [!DNL Experience Manager] hochladen.
 
 Der Prozess `CommandLineProcess` führt folgende Vorgänge in der angegebenen Reihenfolge aus:
 

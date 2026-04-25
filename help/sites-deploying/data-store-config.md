@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6
-description: Erfahren Sie, wie Knotenspeicher bzw. Datenspeicher konfiguriert werden und wie eine automatische Bereinigung des Datenspeichers durchgeführt wird.
+description: Erfahren Sie, wie Knotenspeicher bzw. Datenspeicher konfiguriert werden und wie eine automatische Datenspeicherbereinigung durchgeführt wird.
 content-type: reference
 topic-tags: deploying
 docset: aem65
@@ -8,14 +8,14 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: ht
-source-wordcount: '3461'
-ht-degree: 100%
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+workflow-type: tm+mt
+source-wordcount: '3615'
+ht-degree: 97%
 
 ---
 
-# Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6 {#configuring-node-stores-and-data-stores-in-aem}
+# Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6{#configuring-node-stores-and-data-stores-in-aem}
 
 ## Einführung {#introduction}
 
@@ -56,7 +56,7 @@ Der Segmentknotenspeicher ist die Grundlage für die Adobe-AEM6-TarMK-Implementi
 
 >[!CAUTION]
 >
->Die PID für den Segment-Knotenspeicher hat sich von `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` in AEM 6 zu `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` in AEM 6.3 geändert. Stellen Sie sicher, dass Sie die erforderlichen Konfigurationsanpassungen vornehmen, um diese Änderung widerzuspiegeln.
+>Die PID für den Segmentknotenspeicher hat sich von der `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` von AEM 6 in die `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` in AEM 6.3 geändert. Achten Sie darauf, die erforderlichen Konfigurationsanpassungen vorzunehmen, um diese Änderung widerzuspiegeln.
 
 Sie können die folgenden Optionen konfigurieren:
 
@@ -236,26 +236,26 @@ Sie können die Konfigurationsdatei mit den unten beschriebenen Optionen verwend
 | --- | --- | --- | --- |
 | accessKey | Greifen Sie auf die Schlüssel-ID für den IAM-Benutzer zu, der Zugriff auf den Bucket hat. | | Ja, wenn keine IAM-Rollen verwendet werden. |
 | secretKey | Geheimer Zugriffsschlüssel für den IAM-Benutzer mit Zugriff auf den Bucket. | | Ja, wenn keine IAM-Rollen verwendet werden. |
-| cacheSize | Die Größe (in Byte) des lokalen Caches. | 64 GB | Anzahl  |
-| connectionTimeout | Legen Sie die Wartezeit (in Millisekunden) bis zum Timeout beim erstmaligen Herstellen einer Verbindung fest. | 10000 | Anzahl  |
-| maxCachedBinarySize | Binärdateien mit einer Größe kleiner oder gleich diesem Wert (in Bytes) werden im Speichercache gespeichert. | 17408 (17 KB) | Anzahl  |
-| maxConnections | Legen Sie die maximale Anzahl der zulässigen offenen HTTP-Verbindungen fest. | 50 | Anzahl  |
-| maxErrorRetry | Legen Sie die maximale Anzahl von Wiederholungsversuchen für fehlgeschlagene (wiederholbare) Anfragen fest. | 3 | Anzahl  |
-| minRecordLength | Die Mindestgröße eines Objekts (in Bytes), das im Datenspeicher gespeichert werden soll. | 16384 | Anzahl  |
-| path | Der lokale Pfad des AEM-Datenspeichers. | `crx-quickstart/repository/datastore` | Anzahl  |
-| proxyHost | Legen Sie den optionalen Proxy-Host fest, über den der Client eine Verbindung herstellen soll. | | Anzahl  |
-| proxyPort | Legen Sie den optionalen Proxy-Port fest, über den der Client eine Verbindung herstellen soll. | | Anzahl  |
+| cacheSize | Die Größe (in Byte) des lokalen Caches. | 64 GB | Anzahl |
+| connectionTimeout | Legen Sie die Wartezeit (in Millisekunden) bis zum Timeout beim erstmaligen Herstellen einer Verbindung fest. | 10000 | Anzahl |
+| maxCachedBinarySize | Binärdateien mit einer Größe kleiner oder gleich diesem Wert (in Bytes) werden im Speichercache gespeichert. | 17408 (17 KB) | Anzahl |
+| maxConnections | Legen Sie die maximale Anzahl der zulässigen offenen HTTP-Verbindungen fest. | 50 | Anzahl |
+| maxErrorRetry | Legen Sie die maximale Anzahl von Wiederholungsversuchen für fehlgeschlagene (wiederholbare) Anfragen fest. | 3 | Anzahl |
+| minRecordLength | Die Mindestgröße eines Objekts (in Bytes), das im Datenspeicher gespeichert werden soll. | 16384 | Anzahl |
+| path | Der lokale Pfad des AEM-Datenspeichers. | `crx-quickstart/repository/datastore` | Anzahl |
+| proxyHost | Legen Sie den optionalen Proxy-Host fest, über den der Client eine Verbindung herstellen soll. | | Anzahl |
+| proxyPort | Legen Sie den optionalen Proxy-Port fest, über den der Client eine Verbindung herstellen soll. | | Anzahl |
 | s3Bucket | Name des S3-Buckets. | | Ja |
-| s3EndPoint | Endpunkt der S3 REST-API. | | Anzahl  |
-| s3Region | Region, in der sich der Bucket befindet. Weitere Informationen finden Sie auf dieser [Seite](https://docs.aws.amazon.com/general/latest/gr/s3.html). | Region, in der die AWS-Instanz ausgeführt wird. | Anzahl  |
-| socketTimeout | Legen Sie die Wartezeit (in Millisekunden) für Daten fest, die über eine eingerichtete, offene Verbindung übertragen werden sollen, bevor die Verbindung unterbrochen und geschlossen wird. | 50000 | Anzahl  |
-| stagingPurgeInterval | Das Intervall (in Sekunden) zum endgültigen Löschen fertiggestellter Uploads aus dem Staging-Cache. | 300 | Anzahl  |
-| stagingRetryInterval | Das Intervall (in Sekunden) zum Wiederholen fehlgeschlagener Uploads. | 600 | Anzahl  |
-| stagingSplitPercentage | Der Prozentsatz von `cacheSize` zur Verwendung für das Staging asynchroner Uploads. | 10 | Anzahl  |
-| uploadThreads | Die Anzahl der Upload-Threads, die für asynchrone Uploads verwendet werden. | 10 | Anzahl  |
-| writeThreads | Die Anzahl der parallelen Threads, die zum Schreiben über S3 Transfer Manager verwendet werden. | 10 | Anzahl  |
+| s3EndPoint | Endpunkt der S3 REST-API. | | Anzahl |
+| s3Region | Region, in der sich der Bucket befindet. Weitere Informationen finden Sie auf dieser [Seite](https://docs.aws.amazon.com/general/latest/gr/s3.html). | Region, in der die AWS-Instanz ausgeführt wird. | Anzahl |
+| socketTimeout | Legen Sie die Wartezeit (in Millisekunden) für Daten fest, die über eine eingerichtete, offene Verbindung übertragen werden sollen, bevor die Verbindung unterbrochen und geschlossen wird. | 50000 | Anzahl |
+| stagingPurgeInterval | Das Intervall (in Sekunden) zum endgültigen Löschen fertiggestellter Uploads aus dem Staging-Cache. | 300 | Anzahl |
+| stagingRetryInterval | Das Intervall (in Sekunden) zum Wiederholen fehlgeschlagener Uploads. | 600 | Anzahl |
+| stagingSplitPercentage | Der Prozentsatz von `cacheSize` zur Verwendung für das Staging asynchroner Uploads. | 10 | Anzahl |
+| uploadThreads | Die Anzahl der Upload-Threads, die für asynchrone Uploads verwendet werden. | 10 | Anzahl |
+| writeThreads | Die Anzahl der parallelen Threads, die zum Schreiben über S3 Transfer Manager verwendet werden. | 10 | Anzahl |
 
-<!---
+<!--
 ### Bucket region options {#bucket-region-options}
 
 <table>
@@ -314,7 +314,7 @@ Der lokale Cache wird auf die Aufzeichnung der Datei-/Blob-Anforderung geprüft,
 
 #### Asynchrone Uploads {#async-upload}
 
-Der Cache unterstützt asynchrone Uploads in den Datenspeicher. Die Dateien werden lokal im Cache (im Dateisystem) bereitgestellt und ein asynchroner Vorgang startet das Hochladen der Datei. Die Anzahl der asynchronen Uploads ist durch die Größe des Staging-Cache begrenzt. Die Größe des Staging-Cache wird mithilfe des `stagingSplitPercentage`-Parameters konfiguriert. Dieser Parameter definiert den Prozentsatz der Cachegröße, der für den Staging-Cache verwendet werden soll. Außerdem wird der Prozentsatz des für Downloads verfügbaren Cache wie folgt berechnet: **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
+Der Cache unterstützt asynchrone Uploads in den Datenspeicher. Die Dateien werden lokal im Cache (im Dateisystem) bereitgestellt und ein asynchroner Auftrag startet das Hochladen der Datei. Die Anzahl der asynchronen Uploads ist durch die Größe des Staging-Cache begrenzt. Die Größe des Staging-Cache wird mithilfe des `stagingSplitPercentage`-Parameters konfiguriert. Dieser Parameter definiert den Prozentsatz der Cachegröße, der für den Staging-Cache verwendet werden soll. Außerdem wird der Prozentsatz des für Downloads verfügbaren Cache wie folgt berechnet: **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
 
 Asynchrone Uploads verlaufen in mehreren Threads und die Anzahl der Threads wird mithilfe des `uploadThreads`-Parameters konfiguriert.
 
@@ -326,8 +326,8 @@ Fehlgeschlagene Uploads (etwa aufgrund von Netzwerkstörungen) werden in eine Wa
 
 Die folgenden Schritte sind erforderlich, um nicht binäre Replikationen mit S3 zu konfigurieren:
 
-1. Installieren Sie die Authoring- und Publishing-Instanzen und stellen Sie sicher, dass diese ordnungsgemäß gestartet werden.
-1. Gehen Sie zu den Einstellungen für den Replikationsagenten, indem Sie eine Seite in *https://localhost:4502/etc/replication/agents.author/publish.html* öffnen.
+1. Installieren Sie die Authoring- und Veröffentlichungsinstanzen und stellen Sie sicher, dass diese ordnungsgemäß gestartet werden.
+1. Gehen Sie zu den Einstellungen für den Replikationsagenten, indem Sie eine Seite unter *https://localhost:4502/etc/replication/agents.author/publish.html* öffnen.
 1. Wählen Sie im Abschnitt **Einstellungen** die Schaltfläche **Bearbeiten**.
 1. Ändern Sie die Option für den **Serialisierungs** typ in **Nicht binär**.
 
@@ -335,7 +335,7 @@ Die folgenden Schritte sind erforderlich, um nicht binäre Replikationen mit S3 
 
    *https://localhost:4503/bin/receive?sling:authRequestLogin=1&amp;binaryless=true*
 
-1. Starten Sie alle Authoring- und Publishing-Instanzen neu, damit die Änderungen wirksam werden.
+1. Starten Sie alle Authoring- und Veröffentlichungsinstanzen neu, damit die Änderungen wirksam werden.
 
 #### Erstellen eines Clusters unter Verwendung von S3 und MongoDB {#creating-a-cluster-using-s-and-mongodb}
 
@@ -480,8 +480,8 @@ Im Rahmen der automatischen Datenspeicherbereinigung werden nicht verwendete Dat
 
 Sie können die automatische Datenspeicherbereinigung wie folgt ausführen:
 
-1. Rufen Sie die JMX-Konsole unter der folgenden Adresse auf: *https://&lt;serveraddress:port>/system/console/jmx*
-1. Suchen Sie nach **RepositoryManagement.** Wenn Sie das MBean „Repository Manager“ gefunden haben, klicken Sie darauf, um die verfügbaren Optionen aufzurufen.
+1. Wechseln Sie zur JMX-Konsole unter *https://&lt;Server-Adresse:port/system/console/jmx*.
+1. Suchen Sie nach **RepositoryManagement.** Sobald Sie das MBean „Repository Manager“ gefunden haben, klicken Sie darauf, um die verfügbaren Optionen aufzurufen.
 1. Scrollen Sie zum Ende der Seite und klicken Sie auf den Link **startDataStoreGC(boolesches markOnly)**.
 1. Geben Sie im folgenden Dialogfeld für den Parameter `false` den Wert `markOnly` ein und klicken Sie auf **Invoke**:
 
@@ -489,17 +489,17 @@ Sie können die automatische Datenspeicherbereinigung wie folgt ausführen:
 
    >[!NOTE]
    >
-   >Der Parameter `markOnly` gibt an, ob die Sweeping-Phase der automatischen Bereinigung ausgeführt wird oder nicht.
+   >Der Parameter `markOnly` gibt an, ob die Sweeping-Phase der Speicherbereinigung ausgeführt wird oder nicht.
 
 ## Automatische Datenspeicherbereinigung für einen freigegebenen Datenspeicher {#data-store-garbage-collection-for-a-shared-data-store}
 
 >[!NOTE]
 >
->Wenn Sie die automatische Bereinigung für einen eingerichteten Cluster- oder freigegebenen Datenspeicher (mit Mongo oder Segment-Tar) durchführen, werden im Protokoll möglicherweise Warnungen angezeigt, wonach bestimmte Blob-IDs nicht gelöscht werden können. Blob-IDs, die in einer früheren automatischen Bereinigung gelöscht wurden, werden von anderen Cluster- oder Freigabeknoten, die keine Informationen über die ID-Löschungen haben, fälschlicherweise erneut referenziert. Daher wird bei der automatischen Bereinigung eine Warnung protokolliert, wenn versucht wird, eine bereits im vorherigen Durchgang gelöschte ID zu entfernen. Dieses Verhalten wirkt sich weder auf die Leistung noch auf die Funktionalität aus.
+>Wenn Sie die Speicherbereinigung für einen eingerichteten Cluster- oder freigegebenen Datenspeicher (mit Mongo oder Segment-Tar) durchführen, werden im Protokoll möglicherweise Warnungen angezeigt, wonach bestimmte Blob-IDs nicht gelöscht werden können. Blob-IDs, die in einer früheren Speicherbereinigung gelöscht wurden, werden von anderen Cluster- oder Freigabeknoten, die keine Informationen über die ID-Löschungen haben, fälschlicherweise erneut referenziert. Daher wird bei der Speicherbereinigung eine Warnung protokolliert, wenn versucht wird, eine bereits im vorherigen Durchgang gelöschte ID zu entfernen. Dieses Verhalten wirkt sich weder auf die Leistung noch auf die Funktionalität aus.
 
 >[!NOTE]
 >
->Wenn Sie ein freigegebenes Datenspeicher-Setup verwenden und die automatische Speicherbereinigung deaktiviert ist, kann das Ausführen der Aufgabe „Lucene-Binärdatei-Bereinigung“ plötzlich den verwendeten Speicherplatz erhöhen. Deaktivieren Sie BlobTracker für alle Authoring- und Publishing-Instanzen, indem Sie Folgendes tun:
+>Wenn Sie ein freigegebenes Datenspeicher-Setup verwenden und die automatische Speicherbereinigung deaktiviert ist, kann das Ausführen der Aufgabe „Lucene-Binärdatei-Bereinigung“ plötzlich den verwendeten Speicherplatz erhöhen. Deaktivieren Sie BlobTracker für alle Authoring- und Veröffentlichungsinstanzen, indem Sie Folgendes tun:
 >
 >1. Halten Sie die AEM-Instanz an.
 >2. Fügen Sie den `blobTrackSnapshotIntervalInSecs=L"0"`-Parameter in der Datei `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` hinzu. Für diesen Parameter ist Oak 1.12.0, 1.10.2 oder höher erforderlich.
@@ -508,7 +508,7 @@ Sie können die automatische Datenspeicherbereinigung wie folgt ausführen:
 In neueren AEM-Versionen kann die automatische Datenspeicherbereinigung auch in einem Datenspeicher durchgeführt werden, der von mehreren Repositorys genutzt wird. Führen Sie die folgenden Schritte aus, um eine automatische Datenspeicherbereinigung in einem freigegebenen Datenspeicher durchführen zu können:
 
 1. Stellen Sie sicher, dass etwaige für die automatische Datenspeicherbereinigung konfigurierten Wartungsaufgaben auf allen Repository-Instanzen, die denselben Datenspeicher nutzen, deaktiviert sind.
-1. Führen Sie die unter [Automatische Bereinigung von Binärdaten](/help/sites-deploying/data-store-config.md#data-store-garbage-collection) erwähnten Schritte einzeln auf **allen** Repository-Instanzen aus, die denselben Datenspeicher nutzen. Achten Sie jedoch darauf, den Wert `true` für den Parameter `markOnly` einzugeben, bevor Sie auf die Schaltfläche „Invoke“ klicken:
+1. Führen Sie die unter [Speicherbereinigung für Binärdaten](/help/sites-deploying/data-store-config.md#data-store-garbage-collection) erwähnten Schritte einzeln auf **allen** Repository-Instanzen aus, die denselben Datenspeicher nutzen. Achten Sie jedoch darauf, den Wert `true` für den Parameter `markOnly` einzugeben, bevor Sie auf die Schaltfläche „Invoke“ klicken:
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 

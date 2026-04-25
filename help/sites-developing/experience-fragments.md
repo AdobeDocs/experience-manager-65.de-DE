@@ -10,10 +10,10 @@ exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: e1acbef9b75af865ca07c41f318d21166227aa33
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 100%
+source-wordcount: '1812'
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe 
 
 Diese ist über den Browser verfügbar, aber ihr Hauptzweck besteht darin, anderen Anwendungen (beispielsweise Web-Anwendungen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) direkten Zugriff auf den Experience Fragment-Inhalt zu ermöglichen, und zwar allein über die URL.
 
-Bei der einfachen HTML-Ausgabedarstellung werden das Protokoll, der Host und der Kontextpfad zu Pfaden hinzugefügt, die:
+Die einfache HTML-Ausgabedarstellung fügt das Protokoll, den Host und den Kontextpfad zu Pfaden hinzu, die:
 
 * den folgenden Typ aufweisen: `src`, `href` oder `action`
 
@@ -49,7 +49,7 @@ Zum Beispiel:
 
 >[!NOTE]
 >
->Links verweisen immer auf die Publishing-Instanz. Sie werden von Dritten verwendet, weswegen der Link immer von der Veröffentlichungsinstanz und nicht von der Autoreninstanz aufgerufen wird.
+>Links verweisen immer auf die Veröffentlichungsinstanz. Sie werden von Dritten verwendet, weswegen der Link immer von der Veröffentlichungsinstanz und nicht von der Autoreninstanz aufgerufen wird.
 >
 >Weitere Informationen finden Sie unter [Externalisieren von URLs](/help/sites-developing/externalizer.md).
 
@@ -121,7 +121,8 @@ Dadurch können Benutzer Experience Fragments in /content/experience-fragments e
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
 -->
 
-<!-- >[!NOTE]
+<!--
+>[!NOTE]
 >
 >[Allowed templates](/help/sites-authoring/experience-fragments.md#configuring-allowed-templates) can be configured in the Experience Fragments console.
 -->
@@ -187,7 +188,7 @@ Für diese Anwendungsfälle stellt AEM die Link Rewriter Provider-Schnittstelle 
 
 >[!NOTE]
 >
->Diese Benutzeroberfläche wurde in [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/previous/6-5-1.md) eingeführt.
+>Diese Benutzeroberfläche wurde in [AEM 6.5 SP1 (6.5.1.0) eingeführt](/help/release-notes/previous/6-5-1.md).
 
 Für kompliziertere Fälle, die nicht vom [Standard](#default-link-rewriting) abgedeckt werden, bietet AEM die Link Rewriter Provider-Schnittstelle. Dies ist eine `ConsumerType`-Schnittstelle, die Sie als Service in Ihren Bundles implementieren können. Sie umgeht die Änderungen, die AEM an internen Links eines HTML-Angebots vornimmt, die aus einem Experience Fragment gerendert wurden. Diese Schnittstelle ermöglicht es Ihnen, das Umschreiben interner HTML-Links an Ihre geschäftlichen Anforderungen anzupassen.
 
@@ -352,7 +353,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 >[!NOTE]
 >
->Wenn über die oben beschriebene Methode `null` zurückgegeben wird, belässt das System „In Target exportieren“ den Link unverändert (ein relativer Link zu einer Ressource).
+>Wenn die oben beschriebene Methode `null` zurückgibt, lässt das System „In Target exportieren“ den Link so, wie er ist (ein relativer Link zu einer Ressource).
 
 #### Prioritäten – getPriority {#priorities-getpriority}
 

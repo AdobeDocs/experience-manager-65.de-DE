@@ -9,9 +9,9 @@ role: Developer
 exl-id: 744df8b2-0c61-410f-89e9-20b8adddbf45
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1323'
 ht-degree: 98%
 
 ---
@@ -34,7 +34,7 @@ Hier wird beschrieben, wie Sie mit der Distiller Service API (Java- und Webdiens
 
 >[!NOTE]
 >
->Weitere Informationen über den Distiller-Dienst finden Sie unter [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Distiller-Dienst finden Sie unter [Dienst-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -108,8 +108,8 @@ Konvertieren Sie eine PostScript-Datei mithilfe der Distiller Service API (Java)
    * Ein `java.lang.String`-Objekt, das den Namen der zu konvertierenden Datei enthält
    * Ein `java.lang.String`-Objekt, das den Namen der zu verwendenden Adobe PDF-Einstellungen enthält
    * Ein `java.lang.String`-Objekt, das den Namen der zu verwendenden Sicherheitseinstellungen enthält
-   * Ein optionales `com.adobe.idp.Document` Objekt, das Einstellungen enthält, die bei der Erstellung des PDF-Dokuments angewendet werden sollen
-   * Ein optionales `com.adobe.idp.Document`-Objekt, das Metadaten enthält, die auf das PDF-Dokument angewendet werden sollen.
+   * Ein optionales `com.adobe.idp.Document`-Objekt, das Einstellungen enthält, die beim Generieren des PDF-Dokuments angewendet werden sollen
+   * Ein optionales `com.adobe.idp.Document`-Objekt, das Metadateninformationen enthält, die auf das PDF-Dokument angewendet werden sollen
 
    Die `createPDF`-Methode gibt ein `CreatePDFResult`-Objekt zurück, das das neue PDF-Dokument und eine eventuell erzeugte Protokolldatei enthält. Die Protokolldatei enthält in der Regel Fehler- oder Warnmeldungen, die durch den Konvertierungsauftrag erzeugt werden.
 
@@ -122,7 +122,7 @@ Konvertieren Sie eine PostScript-Datei mithilfe der Distiller Service API (Java)
 
    Um das Protokolldokument abzurufen, führen Sie die folgenden Schritte aus.
 
-   * Rufen Sie die `CreatePDFResult` Methode des `getLogDocument` Objekts auf. Dadurch wird ein `com.adobe.idp.Document`-Objekt zurückgegeben.
+   * Rufen Sie die `CreatePDFResult`-Objekt`getLogDocument`-Methode auf. Dadurch wird ein `com.adobe.idp.Document`-Objekt zurückgegeben.
    * Um das Protokolldokument zu entnehmen, rufen Sie die `copyToFile`Methode des `com.adobe.idp.Document`-Objekts auf.
 
 **Siehe auch**
@@ -150,7 +150,7 @@ Konvertieren Sie eine PostScript-Datei in ein PDF-Dokument, indem Sie die Distil
 1. Erstellen Sie einen Distiller-Dienstclient.
 
    * Erstellen Sie ein `DistillerServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `DistillerServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/DistillerService?blob=mtom`.). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `DistillerServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/DistillerService?blob=mtom`.) Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `DistillerServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
@@ -176,7 +176,7 @@ Konvertieren Sie eine PostScript-Datei in ein PDF-Dokument, indem Sie die Distil
    * Eine Zeichenfolge, die den Pfadnamen der zu konvertierenden Datei enthält
    * Ein Zeichenfolgenobjekt, das die zu verwendenden Adobe PDF-Einstellungen enthält (z. B. `Standard`)
    * Ein string -Objekt, das die zu verwendenden Sicherheitseinstellungen enthält (z. B. `No Securit`y)
-   * Ein optionales `BLOB`-Objekt, das Einstellungen enthält, die beim Generieren des PDF-Dokuments angewendet werden sollen
+   * Ein optionales `BLOB` Objekt, das Einstellungen enthält, die bei der Erstellung des PDF-Dokuments angewendet werden sollen
    * Ein optionales `BLOB`-Objekt, das Metadateninformationen enthält, die auf das PDF-Dokument angewendet werden sollen
    * Ein `BLOB`-Ausgabeparameter, der zum Speichern des PDF-Dokuments verwendet wird
    * Ein `BLOB`-Ausgabeparameter, der zum Speichern des Protokolls verwendet wird
@@ -192,7 +192,8 @@ Konvertieren Sie eine PostScript-Datei in ein PDF-Dokument, indem Sie die Distil
 
 [Zusammenfassung der Schritte](converting-postscript-pdf-documents.md#summary-of-steps)
 
-<!-- UNRESOLVED LINKS
+<!--
+UNRESOLVED LINKS
 [Quick Start (MTOM): Converting a PostScript file to a PDF document using the web service API](unresolvedlink-lc-qs-distiller-di.xml#ws624e3cba99b79e12e69a9941333732bac8-7f01.2)
 
 [Quick Start (SwaRef): Converting a PostScript file to a PDF document using the web service API](unresolvedlink-lc-qs-distiller-di.xml#ws624e3cba99b79e12e69a9941333732bac8-7eff.2)

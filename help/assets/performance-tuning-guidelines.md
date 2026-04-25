@@ -7,9 +7,9 @@ role: Developer, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 02649ffea62200b472b4f3c446489a9dd974d21c
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '2721'
+source-wordcount: '2794'
 ht-degree: 99%
 
 ---
@@ -57,10 +57,11 @@ Sobald das temporäre Hochleistungs-Volume bereit ist, stellen Sie den JVM-Param
 
 Adobe empfiehlt die Bereitstellung von [!DNL Experience Manager Assets] auf Java 8, um die Leistung zu optimieren.
 
-<!-- TBD: Link to the latest official word around Java.
+<!--
+TBD: Link to the latest official word around Java.
 -->
 
-### JVM-Parameter  {#jvm-parameters}
+### JVM-Parameter {#jvm-parameters}
 
 Legen Sie die folgenden JVM Parameter fest:
 
@@ -76,7 +77,7 @@ Legen Sie die folgenden JVM Parameter fest:
 
 Allen [!DNL Experience Manager Assets]-Benutzern von wird angeraten, Datenspeicher und Segmentspeicher zu trennen. Außerdem kann die Leistung durch die Konfiguration der Parameter `maxCachedBinarySize` und `cacheSizeInMB` maximiert werden. Stellen Sie `maxCachedBinarySize` auf die kleinste im Cache unterstützte Dateigröße ein. Geben Sie die Größe des Arbeitsspeicher-Cache für den Datenspeicher in `cacheSizeInMB` ein. Adobe empfiehlt, diesen Wert zwischen 2 und 10 % der gesamten Heap-Größe festzulegen. Mithilfe von Last- bzw. Leistungstests lässt sich die ideale Einstellung herausfinden.
 
-### Konfigurieren der Maximalgröße des gepufferten Bilder-Caches   {#configure-the-maximum-size-of-the-buffered-image-cache}
+### Konfigurieren der Maximalgröße des gepufferten Bilder-Caches {#configure-the-maximum-size-of-the-buffered-image-cache}
 
 Verringern Sie beim Hochladen großer Mengen an Assets in [!DNL Adobe Experience Manager] zur Berücksichtigung unerwarteter Spitzen bei der Speichernutzung und zur Verhinderung von JVM-Fehlern mit OutOfMemoryErrors die konfigurierte Maximalgröße des gepufferten Bilder-Caches. Betrachten wir ein Beispiel mit einem System, das über eine maximale Heap-Größe (-`Xmx`param) von 5 GB verfügt und bei dem der Oak-Blob-Cache auf 1 GB und der Dokumenten-Cache auf 2 GB eingestellt ist. In diesem Fall würde der gepufferte Cache maximal 1,25 GB Speicher in Anspruch nehmen, wodurch nur 0,75 GB Speicher für unerwartete Spitzen verblieben.
 
@@ -152,7 +153,7 @@ Dauert die Bereinigung zu lange, kommt es zu einem Timeout. Daher sollten Sie si
 
 Wenn Sie zahlreiche Nicht-Übergangs-Workflows ausgeführt haben, die Workflow-Instanzknoten erstellen, können Sie das Tool [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) auf Ad-hoc-Basis ausführen. Es entfernt redundante, abgeschlossene Workflow-Instanzen sofort, ohne dass Sie auf die Ausführung des Adobe Granite-Workflow-Bereinigungsplaners warten müssen.
 
-### Maximal parallel ausführbare Aufträge   {#maximum-parallel-jobs}
+### Maximal parallel ausführbare Aufträge {#maximum-parallel-jobs}
 
 Standardmäßig kann [!DNL Experience Manager] maximal so viele Aufträge parallel ausführen wie Prozessoren auf dem Server vorhanden sind. In Zeiten hoher Auslastung ist diese Einstellung jedoch problematisch, da alle Prozessoren von den [!UICONTROL DAM-Update-Asset]-Workflows beansprucht werden und dadurch die Reaktionsfähigkeit der Benutzeroberfläche verlangsamt wird. Auch kann [!DNL Experience Manager] andere Prozesse zum Schutz von Server-Leistung und -Stabilität nicht ausführen. Es hat sich bewährt, diese Einstellung so zu wählen, dass nur die Hälfte der auf dem Server verfügbaren Prozessoren verwendet wird:
 
@@ -230,7 +231,7 @@ Das Importieren einer großen Menge an Metadaten kann zu ressourcenintensiven XM
 
 Beim Replizieren von Assets in eine große Anzahl von Veröffentlichungsinstanzen, z. B. in einer Sites-Implementierung, empfiehlt Adobe die Verwendung der Kettenreplikation. In diesem Fall repliziert die Autoreninstanz auf eine einzelne Veröffentlichungsinstanz, die wiederum auf die anderen Veröffentlichungsinstanzen repliziert, wodurch die Autoreninstanz freigehalten wird.
 
-### Konfiguration der Kettenreplikation   {#configure-chain-replication}
+### Konfiguration der Kettenreplikation {#configure-chain-replication}
 
 1. Wählen Sie die Veröffentlichungsinstanz, mit der Sie die Replikationen verketten möchten.
 1. Fügen Sie in dieser Veröffentlichungsinstanz Replikationsagenten hinzu, die auf die anderen Veröffentlichungsinstanzen verweisen
@@ -240,7 +241,7 @@ Beim Replizieren von Assets in eine große Anzahl von Veröffentlichungsinstanze
 >
 >Adobe rät von der automatischen Aktivierung von Assets ab. Falls jedoch notwendig, sollte dies der letzte Schritt in einem Workflow, normalerweise „DAM-Update-Asset“, sein.
 
-## Durchsuchen von Indizes   {#search-indexes}
+## Durchsuchen von Indizes {#search-indexes}
 
 Installieren Sie [die neuesten Service Packs](/help/release-notes/release-notes.md) und leistungsbezogene Hotfixes, da diese häufig Aktualisierungen von Systemindizes enthalten. Informationen zur Indexoptimierung finden Sie unter [Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines).
 
@@ -276,7 +277,7 @@ Entsprechend kann es bei Dateien, die in einem gemeinsamen S3-Datenspeicher eine
 
 Erstellen Sie für jede [!DNL Experience Manager]-Bereitstellung einen Plan für Leistungstests, der Engpässe schnell identifizieren und beseitigen kann. Konzentrieren Sie sich dabei auf die folgenden Schlüsselaspekte.
 
-### Netzwerktests   {#network-testing}
+### Netzwerktests {#network-testing}
 
 Führen Sie für alle von Kundenseite angesprochenen Probleme mit der Netzwerkleistung die folgenden Aufgaben aus:
 
@@ -303,7 +304,7 @@ Führen Sie für alle von Kundenseite angesprochenen Probleme mit der Netzwerkle
 * Deaktivieren Sie das Erzeugen von Unter-Assets. Ist diese Option aktiviert, erstellt der Workflow in AEM für jede Seite eines mehrseitigen Assets ein separates Asset. Jede dieser Seiten ist selbst Asset, das zusätzlichen Speicherplatz belegt sowie Versionierung und zusätzliche Workflow-Verarbeitung erfordert. Wenn Sie keine separaten Seiten benötigen, deaktivieren Sie das Erzeugen von Unter-Assets und die Seitenextraktion.
 * Aktivieren Sie Übergangs-Workflows.
 * Stimmen Sie die Granit-Workflow-Warteschlangen ab, um gleichzeitige Aufträge einzuschränken.
-* Konfigurieren Sie [!DNL ImageMagick] so, dass der Ressourcenverbrauch eingeschränkt ist. 
+* Konfigurieren Sie [!DNL ImageMagick] so, dass der Ressourcenverbrauch eingeschränkt ist.
 * Entfernen Sie unnötige Schritte aus dem [!UICONTROL DAM-Update-Asset]-Workflow.
 * Konfigurieren Sie Workflow- und Versionsbereinigung.
 * Optimieren Sie die Indizes mit den neuesten Service Packs und Hotfixes. Fragen Sie den Adobe-Kunden-Support nach verfügbaren zusätzlichen Indexoptimierungen.

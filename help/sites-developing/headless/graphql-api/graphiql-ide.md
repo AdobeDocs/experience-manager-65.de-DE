@@ -5,10 +5,10 @@ exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 100%
+source-wordcount: '792'
+ht-degree: 97%
 
 ---
 
@@ -139,14 +139,14 @@ Wenn Sie Ihre [persistierte Abfrage](/help/sites-developing/headless/graphql-api
 
 >[!NOTE]
 >
->Für den Cache `Time To Live` der persistenten Abfrage {&quot;cache-control&quot;:&quot;parameter&quot;:value} ist der Standardwert von 2 Stunden (7.200 Sekunden) definiert.
+>Für den Cache der persistenten Abfrage `Time To Live` {„cache-control“:„parameter“:value} ist der Standardwert von 2 Stunden (7.200 Sekunden) definiert.
 
 ## Kopieren der URL, um direkt auf die Abfrage zuzugreifen {#copy-url}
 
 Mit der Option **URL kopieren** können Sie eine Abfrage simulieren, indem Sie die URL kopieren, mit der Sie direkt auf die persistente Abfrage zugreifen und die Ergebnisse sehen. Diese kann dann zu Testzwecken verwendet werden, z. B. durch Zugriff in einem Browser:
 
 <!--
-  >[!NOTE]
+>[!NOTE]
   >
   >The URL will need [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
   >
@@ -181,7 +181,7 @@ Nachdem Sie Ihre persistente Abfrage mit GraphiQL entwickelt und getestet haben,
 Es gibt eine Auswahl von Tastaturbefehlen, die direkten Zugriff auf Aktionssymbole in der IDE bieten:
 
 * Abfrage schön machen:  `Shift-Control-P`
-* Abfrage fusionieren:  `Shift-Control-M`
+* Abfrage zusammenführen:  `Shift-Control-M`
 * Abfrage ausführen:  `Control-Enter`
 * Automatisch vervollständigen:  `Control-Space`
 

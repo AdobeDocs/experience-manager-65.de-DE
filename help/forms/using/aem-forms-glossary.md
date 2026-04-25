@@ -6,9 +6,9 @@ role: Admin, User, Developer
 hidefromtoc: true
 hide: true
 exl-id: 1b327871-c861-48c8-aac6-cff864398bee
-source-git-commit: d42788ed12bd4ea9f00859f5b01ea5ded38f658d
-workflow-type: ht
-source-wordcount: '1773'
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+workflow-type: tm+mt
+source-wordcount: '2818'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Eine Bereitstellungsoption von AEM Forms, die Java Enterprise Edition (JEE)-Serv
 
 ## [AEM Forms auf OSGi](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/deploying/introduction/technical-requirements)
 
-Bei einer AEM Forms auf OSGi-Umgebung handelt es sich um ein standardmäßiges AEM Author oder AEM Publish mit einem darauf bereitgestellten AEM Forms-Paket. Sie können AEM Forms on OSGi in Einzel-Server-Umgebungen sowie Farm- und Cluster-Setups ausführen. Das Cluster-Setup ist nur für AEM-Autoreninstanzen verfügbar. 
+Bei einer AEM Forms auf OSGi-Umgebung handelt es sich um ein standardmäßiges AEM Author oder AEM Publish mit einem darauf bereitgestellten AEM Forms-Paket. Sie können AEM Forms on OSGi in Einzel-Server-Umgebungen sowie Farm- und Cluster-Setups ausführen. Das Cluster-Setup ist nur für AEM-Autoreninstanzen verfügbar.
 
 ## [Adobe Sign in AEM Forms](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms)
 

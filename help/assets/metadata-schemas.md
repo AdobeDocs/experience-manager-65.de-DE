@@ -8,10 +8,10 @@ feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3595'
-ht-degree: 100%
+source-wordcount: '3637'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Um eine Liste von Formularen oder Vorlagen anzuzeigen, gehen Sie in der [!DNL Ex
 | [!UICONTROL default] | | Dies ist das Basis-Metadatenschema-Formular für Assets. |
 | | Die folgenden untergeordneten Formulare übernehmen die Eigenschaften des [!UICONTROL Standard]-Formulars: | |
 | | <ul><li>[!UICONTROL Dm_video]</li></ul> | Schemaformular für Dynamic Media-Videos. |
-| | <ul><li>[!UICONTROL image]</li></ul> | Schemaformular für Bilder mit dem MIME-Typ wie z. B. `image/jpeg` und `image/png`. <br> Das Formular [!UICONTROL Bild] weist die folgenden untergeordneten Formularvorlagen auf: <ul><li> [!UICONTROL jpeg]: Schemaformular für Assets mit dem Untertyp [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schemaformular für Assets mit dem Untertyp „tiff“.</li></ul> |
+| | <ul><li>[!UICONTROL Bild]</li></ul> | Schemaformular für Bilder mit dem MIME-Typ wie `image/jpeg` und `image/png`. <br> Das [!UICONTROL Bild]-Formular weist die folgenden untergeordneten Formularvorlagen auf: <ul><li> [!UICONTROL jpeg]: Schemaformular für Assets mit dem Untertyp [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schemaformular für Assets mit dem Untertyp „tiff“.</li></ul> |
 | | <ul><li>[!UICONTROL Anwendung]</li></ul> | Schemaformular für Assets mit dem MIME-Typ wie z. B. `application/pdf` und `application/zip`. <br>[!UICONTROL pdf]: Schemaformular für Assets mit dem Untertyp „pdf“. |
 | | <ul><li>[!UICONTROL Video]</li></ul> | Schemaformular für Video-Assets mit dem MIME-Typ wie z. B. `video/avi` und `video/mp4`. |
 | [!UICONTROL collection] | | Schemaformular für Sammlungen. |
@@ -81,7 +81,7 @@ Sie können ein neu hinzugefügtes oder vorhandenes Metadatenschema-Formular bea
 
 1. Wählen Sie auf der Seite [!UICONTROL Metadatenschema-Formulare] ein Formular aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
 
-1. Passen Sie auf der Seite **[!UICONTROL Metadatenschema-Formular-Editor]** das Metadaten-Formular an. Ziehen Sie die erforderlichen Komponenten von der Registerkarte **[!UICONTROL Formular erstellen]** auf eine der Registerkarten.
+1. Passen Sie auf der Seite **[!UICONTROL Metadatenschema-Formular-Editor]** das Metadatenformular an. Ziehen Sie die erforderlichen Komponenten von der Registerkarte **[!UICONTROL Formular erstellen]** auf eine der Registerkarten.
 
 1. Um eine Komponente zu konfigurieren, wählen Sie diese aus und ändern Sie ihre Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen]**.
 
@@ -125,7 +125,7 @@ Um sicherzustellen, dass die Komponente ordnungsgemäß im Metadatenschema-Formu
 * **Platzhalter**: Verwenden Sie diese Eigenschaft, um relevanten Platzhaltertext für die Metadateneigenschaft anzugeben.
 * **Erforderlich**: Mit dieser Eigenschaft können Sie eine Metadateneigenschaft auf der Eigenschaftsseite als obligatorisch markieren.
 * **Bearbeitung deaktivieren**: Verwenden Sie diese Eigenschaft, um die Bearbeitung einer Eigenschaft auf der Eigenschaftsseite zu verbieten.
-* **Leeres Feld schreibgeschützt anzeigen**: Markieren Sie diese Eigenschaft, um eine Metadateneigenschaft auch dann auf der Eigenschaftenseite anzuzeigen, wenn sie keinen Wert aufweist. Standardmäßig werden Metadateneigenschaften ohne Werte nicht auf der Eigenschaftenseite aufgeführt.
+* **Leeres Feld anzeigen bei Schreibgeschützt**: Markieren Sie diese Eigenschaft, um eine Metadateneigenschaft auf der Eigenschaftsseite anzuzeigen, selbst wenn sie keinen Wert hat. Wenn eine Metadateneigenschaft keinen Wert hat, wird sie standardmäßig nicht auf der Eigenschaftsseite aufgelistet.
 * **Liste geordnet anzeigen**: Mit dieser Eigenschaft zeigen Sie eine geordnete Liste von Optionen an.
 * **Wahlen**: Mit dieser Eigenschaft legen Sie Optionen in einer Liste fest.
 * **Beschreibung**: Mit dieser Eigenschaft können Sie eine kurze Beschreibung für die Metadatenkomponente hinzufügen.
@@ -138,9 +138,9 @@ Um sicherzustellen, dass die Komponente ordnungsgemäß im Metadatenschema-Formu
 
 Wenn Sie die Option **[!UICONTROL Erforderlich]** auswählen, können Sie nach Assets suchen, denen obligatorische Metadaten fehlen. Erweitern Sie im Bedienfeld **[!UICONTROL Filter]** die Eigenschaft **[!UICONTROL Metadatenvalidierung]** und wählen Sie die Option **[!UICONTROL Ungültig]**. Die Suchergebnisse zeigen Assets an, denen erforderliche Metadaten fehlen, die Sie über das Schemaformular konfiguriert haben.
 
- ![In der Eigenschaft „Metadatenvalidierung“ des Bedienfelds „Filter“ ausgewählte Option](assets/invalid-metadata-predicate.png)
+![In der Eigenschaft „Metadatenvalidierung“ des Bedienfelds „Filter“ ausgewählte Option](assets/invalid-metadata-predicate.png)
 
-Wenn Sie die Komponente „Kontextuelle Metadaten“ in eine beliebige Registerkarte eines Schemaformulars einfügen, wird sie in der Eigenschaftenseite der Assets als Liste angezeigt, auf die das jeweilige Schema angewendet wird. Die Liste enthält alle anderen Registerkarten außer der Registerkarte, auf die Sie die Komponente „Kontextuelle Metadaten“ angewendet haben. Derzeit bietet diese Funktion grundlegende Funktionalität zur Steuerung der Anzeige von Metadaten, die auf dem Kontext basieren.
+Wenn Sie die Komponente „Kontextuelle Metadaten“ zu einer beliebigen Registerkarte eines beliebigen Schemaformulars hinzufügen, erscheint die Komponente als Liste auf der Eigenschaftsseite der Assets, auf die das jeweilige Schema angewendet wird. Die Liste enthält alle anderen Registerkarten außer der Registerkarte, auf die Sie die Komponente „Kontextuelle Metadaten“ angewendet haben. Derzeit bietet diese Funktion grundlegende Funktionalität zur Steuerung der Anzeige von Metadaten, die auf dem Kontext basieren.
 
 ![Registerkarten für die Auflistung von kontextbezogenen Metadaten-Komponenten von Asset-Eigenschaften](assets/metadata-contextual-component-list.png)
 
@@ -193,9 +193,9 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 1. Gehen Sie in der [!DNL Experience Manager]-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenschemata]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Schemaformulare]** ein Schemaformular aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten]**, um das Schema zu bearbeiten.
 
-   ![Auswahlformular](assets/select_form.png)
+   ![select_form](assets/select_form.png)
 
-1. (Optional) Erstellen Sie im Metadatenschema-Editor ein Feld zur Konditionalisierung.  Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** einen Namen und einen Eigenschaftspfad an. 
+1. (Optional) Erstellen Sie im Metadatenschema-Editor ein Feld zur Konditionalisierung. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** einen Namen und einen Eigenschaftspfad an.
 
    Um eine Registerkarte zu erstellen, klicken Sie auf `+`, um eine Registerkarte sowie anschließend ein Metadatenfeld hinzuzufügen.
 
@@ -381,5 +381,6 @@ Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hoc
    >
    >Die Metadaten-Überprüfungen sind ressourcenintensiv und können die Leistung Ihres Systems beeinträchtigen. Planen Sie die Überprüfungen entsprechend. Wenn der Server die Last nicht bewältigen kann, versuchen Sie, diesen Auftrag zu deaktivieren.
 
-<!-- TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
+<!--
+TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
 -->

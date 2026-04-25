@@ -8,9 +8,9 @@ user-guide-description: Gestalten Sie Online-Erlebnisse wie Foren, Benutzergrupp
 feature: Communities
 role: User
 hide: true
-source-git-commit: e0db340b4fd4e4f7fe7ed623fb2ee9f1b789e39e
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '427'
 ht-degree: 13%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 13%
    + [Vergabe von Bewertungen und Abzeichen in Communities](implementing-scoring.md)
    + [Verwalten von Benutzern und Benutzergruppen](users.md)
    + [Konsole für Community-Gruppen](groups.md)
-   + [Social-Media-Anmeldung mit Facebook und Twitter](social-login.md)
+   + [Social Login mit Facebook und Twitter](social-login.md)
    + [SRP - Community-Inhaltsspeicher](working-with-srp.md)
    + [Communities-Sites-Konsole](sites-console.md)
    + [Mitglieder- und Gruppenverwaltungskonsolen](members.md)
@@ -70,14 +70,14 @@ ht-degree: 13%
    + [Übersetzen benutzergenerierter Inhalte](translate-ugc.md)
    + [Communities-Benutzersynchronisierung](sync.md)
    + [Obergrenze des Mitgliederbeitrags](limits.md)
-+ Entwickeln {#develop}
++ Entwicklung {#develop}
    + [Entwicklung von Communities](communities.md)
    + [Social Component Framework](scf.md)
    + [Handbuch der Community-Komponenten](components-guide.md)
    + [Komponenten-, Funktions- und Funktionsgrundlagen](essentials.md)
    + [Tutorials](tutorials.md)
    + [Fehlerbehebung](troubleshooting.md)
-   + [Codierungsrichtlinien &#x200B;](code-guide.md)
+   + [Codierungsrichtlinien](code-guide.md)
    + [Server-seitige Anpassung](server-customize.md)
    + [Client-seitige Anpassung](client-customize.md)
    + [SCF Handlebars-Helfer](handlebars-helpers.md)

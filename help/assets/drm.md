@@ -7,9 +7,9 @@ feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1440'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ Sie können den Ablaufstatus für ein Asset in der Konsole [!DNL Assets] sowohl 
 
 *Abbildung: In der Listenansicht zeigt die [!UICONTROL Status]-Spalte zeigt das Banner [!UICONTROL Abgelaufen] an.*
 
-Sie können den Ablaufstatus eines Assets in der [!UICONTROL Zeitleiste] in der linken Leiste einsehen.
+Sie können den Ablaufstatus eines Assets in der [!UICONTROL Timeline] in der linken Leiste einsehen.
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -76,7 +76,7 @@ Damit die [!DNL Assets]-Konsole die verweisenden ebenenübergreifenden Assets ne
 1. Öffnen Sie [!DNL Experience Manager] Configuration Manager.
 1. Wählen Sie **[!UICONTROL Adobe CQ DAM-Ablaufbenachrichtigung]** aus. Standardmäßig wird **[!UICONTROL Zeitbasierter Planer]** ausgewählt, womit ein Auftrag geplant wird, der zu einem bestimmten Zeitpunkt prüft, ob ein Asset abgelaufene Teil-Assets aufweist. Nach Abschluss des Auftrags werden Assets mit abgelaufenen Teil-Assets und verwiesenen Assets in den Suchergebnissen als abgelaufen angezeigt.
 
-1. Um den Auftrag regelmäßig auszuführen, löschen Sie das Feld **[!UICONTROL Regel für zeitbasierten Planer]** und ändern Sie die Dauer in Sekunden im Feld **[!UICONTROL Periodischer Planer]**. Beispielsweise löst der Beispielausdruck `0 0 0 * * ?` den Vorgang um 00 Uhr aus.
+1. Um den Auftrag regelmäßig auszuführen, löschen Sie das Feld **[!UICONTROL Regel für zeitbasierten Planer]** und ändern Sie die Dauer in Sekunden im Feld **[!UICONTROL Periodischer Planer]**. Beispielsweise löst der Beispielausdruck `0 0 0 * * ?` den Auftrag um 00 Uhr aus.
 1. Wählen Sie **[!UICONTROL E-Mail senden]** aus, um bei Ablauf von Assets E-Mails zu erhalten.
 
    >[!NOTE]

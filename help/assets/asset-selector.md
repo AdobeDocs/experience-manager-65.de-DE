@@ -7,9 +7,9 @@ role: User
 hide: true
 exl-id: c84ce84a-1e52-48fd-a16c-38c7769df9af
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '534'
 ht-degree: 100%
 
 ---
@@ -59,7 +59,7 @@ Sie können die folgenden Anfrageparameter in einer URL übergeben, um den Asset
 
    ![chlimage_1-443](assets/chlimage_1-443.png)
 
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Auswählen]**. 
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Auswählen]**.
 
 >[!MORELIKETHIS]
 >

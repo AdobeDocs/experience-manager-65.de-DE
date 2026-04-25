@@ -8,10 +8,10 @@ exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
 solution: Experience Manager, Experience Manager Forms
 feature: Release Information
 role: Admin, User, Developer
-source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 94%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 100%
 | Typ | Service Pack-Version |
 | Datum | Freitag, 8. Dezember 2023 |
 
-## Was ist im Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0) enthalten?
+## Was in Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0) enthalten ist
 
-Experience Manager 6.5.19.0 enthält neue Funktionen, wichtige von Kundinnen und Kunden angeregte Verbesserungen, Fehlerkorrekturen sowie Leistungs-, Stabilitäts- und Sicherheitsverbesserungen, die seit der ersten Verfügbarkeit von 6.5 im April 2019 veröffentlicht wurden. [Installieren Sie dieses Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=de) auf Experience Manager 6.5.
+Experience Manager 6.5.19.0 enthält neue Funktionen, wichtige von Kundschaft angeforderte Verbesserungen, Fehlerkorrekturen sowie Leistungs-, Stabilitäts- und Sicherheitsverbesserungen, die seit der ersten Verfügbarkeit von 6.5 im April 2019 veröffentlicht wurden. [Installieren Sie dieses Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=de) auf Experience Manager 6.5.
 
 ### Neue Funktionen
 
@@ -132,7 +132,7 @@ There are several improvements in the Web channel layout auto-generated using th
 
 ### Use Adobe Sign's cloud-based digital signatures in Adaptive Forms {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
 
-[Cloud-based digital signatures](https://helpx.adobe.com/de/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures.
+[Cloud-based digital signatures](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures.
 
 #### Embed an Adaptive Form or Interactive Communication in AEM Sites Single Page Applications {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
 
@@ -274,6 +274,7 @@ In line with planned EOL of Adobe Flash Player and overall direction of migratin
 
 #### Accessibility improvements {#accessibility-improvements}
 
-AEM 6.5 Forms has improved accessibility of AEM Forms Workspace. 
-!-->
+AEM 6.5 Forms has improved accessibility of AEM Forms Workspace.
+
+-->
 

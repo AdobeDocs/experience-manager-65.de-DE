@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
-source-git-commit: 712693e4be9b8f357e4fc27ecc30a39a9850680c
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '11685'
-ht-degree: 99%
+source-wordcount: '11719'
+ht-degree: 98%
 
 ---
 
@@ -102,7 +102,7 @@ Abbildung 1: **Objektbibliothek-Bedienfeld**
 
 Wenn Sie andere Objekte verwenden, werden diese möglicherweise von Hilfstechnologien ignoriert. Wenn Sie nur Standardobjekte verwenden, spart Ihnen dies den zusätzlichen Aufwand beim Definieren der Barrierefreiheitseigenschaften für Objekte, die Sie selbst erstellt haben. Wenn Sie eigene benutzerdefinierte Objekte erstellen und verwenden, stellen Sie sicher, dass Sie die Palette „Ein-/Ausgabehilfe“ verwenden, um Barrierefreiheitseigenschaften wie Rolle, QuickInfo, Bildschirmlesehilfen-Rangfolge und benutzerdefinierten Text für Bildschirmlesehilfen festlegen. Um die Palette „Ein-/Ausgabehilfe“ anzuzeigen, wählen Sie „Fenster“ > „Barrierefreiheit“.
 
-**Verwandte Checkpoints**
+**Verwandte Prüfpunkte**
 * Section 508 §1194.21
    * c) Es ist eine klar definierte Bildschirmanzeige des aktuellen Fokus anzugeben, die sich zwischen den interaktiven Schnittstellenelementen bewegt, wenn sich der Eingabefokus ändert. Der Fokus muss programmatisch offen gelegt werden, damit Hilfstechnologien den Fokus und Fokusänderungen nachverfolgen können.
    * d) Für Hilfstechnologien müssen ausreichende Informationen über ein Element der Benutzeroberfläche, einschließlich Identität, Betrieb und Zustand des Elements, verfügbar sein. Wenn ein Bild ein Programmelement darstellt, müssen die vom Bild vermittelten Informationen auch im Text verfügbar sein.
@@ -200,8 +200,8 @@ Abbildung 4: **Festlegen von benutzerdefiniertem Bildschirmlesehilfe-Text, wenn 
 
 Wenn sehbehinderte Benutzende mit der Tabulatortaste in ein Optionsfeld wechseln, muss die Bildschirmlesehilfe zwei Dinge vorlesen:
 * Eine Angabe des Zwecks der Gruppe von Optionsfeldern
-* Eine aussagekräftige Beschriftung für jedes Optionsfeld
-So werden Optionsfelder mithilfe der Schaltflächenbeschriftungen barrierefrei gemacht:
+* Eine aussagekräftige Beschriftung für jede Optionsschaltfläche
+So machen Sie Optionsschaltflächen mithilfe der Schaltflächenbeschriftungen zugänglich:
    1. Wählen Sie in der Palette „Hierarchie“ die Ausschlussgruppe aus.
    1. Klicken Sie auf die Palette „Ein-/Ausgabehilfe“ und geben Sie im Feld „Benutzerdefinierter Bildschirmlesehilfen-Text“ den Text ein, der für diese Gruppe vorgelesen werden soll. Geben Sie beispielsweise für eine Ausschlussgruppe, die Optionen für die Zahlung mit verschiedenen Kreditkarten angibt, „Zahlungsmethode auswählen“ ein.
    1. Wenn die Beschriftungen für jedes Optionsfeld einen Text enthalten, der beim Aussprechen durch eine Bildschirmlesehilfe aussagekräftig ist, wählen Sie in der Palette „Objekt“ die Registerkarte „Bindung“ aus und deaktivieren Sie die Option „Elementwert angeben“.
@@ -523,13 +523,13 @@ Sie können beim Erstellen von Tabellen die folgenden Rollen für Tabellenelemen
 * Tabelle
 Weist dem ausgewählten Teilformular die Rolle einer Tabelle zu. Wenn Benutzende zu diesem Teilformular navigieren, erkennen die meisten Bildschirmlesehilfen es als Tabelle und geben die Anzahl der Zeilen und Spalten an.
 * Kopfzeile
-Weist dem ausgewählten Teilformular bzw. der ausgewählten Tabellenzeile die Rolle einer Kopfzeile zu. Beim Lesen des Inhalts einer Textzeilenzelle wird von den meisten Bildschirmlesehilfen zunächst der Inhalt der zugehörigen Kopfzeilenzelle bestimmt.
+Weist dem ausgewählten Teilformular oder der ausgewählten Tabellenzeile die Rolle einer Kopfzeile zu. Beim Lesen des Inhalts einer Textzeilenzelle wird von den meisten Bildschirmlesehilfen zunächst der Inhalt der zugehörigen Kopfzeilenzelle bestimmt.
 * Textzeile
-Weist dem ausgewählten Teilformular bzw. der ausgewählten Tabellenzeile die Rolle einer Textzeile zu. Enthält eine Zelle ein Teilformular, lesen Bildschirmlesehilfen normalerweise den Inhalt der zugehörigen Zelle in der Kopfzeile und anschließend die Felder im Teilformular.
+Weist dem ausgewählten Teilformular oder der ausgewählten Tabellenzeile die Rolle einer Textzeile zu. Enthält eine Zelle ein Teilformular, lesen Bildschirmlesehilfen normalerweise den Inhalt der zugehörigen Zelle in der Kopfzeile und anschließend die Felder im Teilformular.
 * Fußzeile
-Weist dem ausgewählten Teilformular bzw. der ausgewählten Tabellenzeile die Rolle einer Fußzeile zu.
-* (Keine)
-Gibt eine Zeile an, die Informationen über die Tabelle oder ihren Inhalt vermittelt. Die Zeile wird nicht als Teil der Tabelle angesehen, ihr Inhalt wird jedoch von der Bildschirmlesehilfe vorgelesen.
+Weist dem ausgewählten Teilformular oder der ausgewählten Tabellenzeile die Rolle einer Fußzeile zu.
+* (Ohne)
+Gibt eine Zeile an, die Informationen über die Tabelle oder ihren Inhalt übermittelt. Die Zeile wird nicht als Teil der Tabelle angesehen, ihr Inhalt wird jedoch von der Bildschirmlesehilfe vorgelesen.
 
 Bei entsprechender Verwendung bieten Tabellen eine effektive Möglichkeit, tabellarische Informationen zu organisieren und darzustellen. Vermeiden Sie übermäßig komplexe Tabellen, etwa Tabellen, die verschachtelte Tabellen und Abschnitte enthalten.
 
@@ -540,7 +540,7 @@ Es werden Tabellen mit einfachen Layouts empfohlen. Einfache Tabellen beginnen m
 Beachten Sie beim Entwerfen einfacher Tabellen für Barrierefreiheit folgende Richtlinien:
 
 * Die Tab-Reihenfolge für eine Tabelle ist die geografische Reihenfolge, die auch für das Formular selbst gilt. Der Tabelleninhalt sollte so angeordnet sein, dass er beim Lesen der Tabelle von links nach rechts und von oben nach unten problemlos erfasst werden kann.
-* Die meisten Bildschirmlesehilfen interpretieren die erste Zeile einer Tabelle als Kopfzeile. Beim Lesen des Inhalts einer Textzeilenzelle mit einer Bildschirmlesehilfe wird zunächst der Inhalt der zugehörigen Kopfzeilenzelle gelesen. Jede Kopfzeilenzelle sollte daher eine aussagekräftige Beschreibung des Spalteninhalts enthalten. 
+* Die meisten Bildschirmlesehilfen interpretieren die erste Zeile einer Tabelle als Kopfzeile. Beim Lesen des Inhalts einer Textzeilenzelle mit einer Bildschirmlesehilfe wird zunächst der Inhalt der zugehörigen Kopfzeilenzelle gelesen. Jede Kopfzeilenzelle sollte daher eine aussagekräftige Beschreibung des Spalteninhalts enthalten.
 * Vermeiden Sie Zellen, die zwei oder mehrere Spalten umfassen, sowie verschachtelte Tabellen oder Tabellenabschnitte. Diese Funktionen werden von einigen Bildschirmlesehilfen oft nicht korrekt interpretiert und daher möglicherweise ignoriert. Wenn z. B. eine Zelle in einer Textzeile zwei Spalten umfasst, können Bildschirmlesehilfen möglicherweise beim Lesen der nächsten Zelle in der Zeile den korrekten Zelleninhalt in der Kopfzeile nicht referenzieren.
 
 ### Barrierefreies Gestalten komplexer Tabellen
@@ -553,14 +553,14 @@ Mithilfe der Palette „Ein-/Ausgabehilfe“ können Sie tabellenbezogene Rollen
 
 Bei der Erstellung von Tabellen mit Teilformularobjekten anstelle von Tabellenobjekten sind einige zusätzliche Schritte erforderlich:
 * Legen Sie auf der Registerkarte „Teilformular“ für jedes Teilformular den Typ auf „Position“ fest.
-* Legen Sie in der Palette „Ein-/Ausgabehilfe“ für jedes Teilformular der Tabelle eine geeignete Teilformularrolle fest. Weisen Sie z. B. dem Teilformular, das als Tabellenüberschrift dienen soll, die Rolle „Kopfzeile“ zu. 
+* Legen Sie in der Palette „Ein-/Ausgabehilfe“ für jedes Teilformular der Tabelle eine geeignete Teilformularrolle fest. Weisen Sie z. B. dem Teilformular, das als Tabellenüberschrift dienen soll, die Rolle „Kopfzeile“ zu.
 * Weisen Sie Zeilen, die Informationen über die Tabelle oder deren Inhalt enthalten, aber nicht als Teil der Tabelle anzusehen sind, die Teilformularrolle „Keine“ zu. Die Bildschirmlesehilfe liest den Zeileninhalt.
 
 Die von der Bildschirmlesehilfe unterstützten Funktionen bestimmen, welche Informationen für eine komplexe Tabelle gelesen werden. Betrachten Sie beispielsweise eine Tabelle, die eine Kopfzeile und einen Abschnitt mit einer Kopfzeile enthält. Wenn Benutzende zu einer Textzeilenzelle im Tabellenabschnitt navigieren, lesen Bildschirmlesehilfen normalerweise den folgenden Inhalt in dieser Reihenfolge:
 * Inhalt der entsprechenden Zelle in der Kopfzeile der Tabelle
 * Inhalt der entsprechenden Zelle in der Kopfzeile des Abschnitts
-* Inhalt der ausgewählten Zelle
-Einige Bildschirmlesehilfen lesen jedoch möglicherweise nicht den Inhalt der beiden Kopfzeilen.
+* Inhalt aus der ausgewählten Zelle
+Einige Bildschirmlesehilfen lesen jedoch möglicherweise nicht den Inhalt aus beiden Kopfzeilen.
 
 Erstellen Sie aussagekräftige, sichtbare Namen oder Titel für Ihre Tabellen. Sie können einen Tabellennamen als statischen Text in Adobe LiveCycle Designer erstellen und ihn vor der Tabelle platzieren. Sie können eine Tabelle und ihren Namen in einem Teilformular gruppieren. Teilformulare sind besonders nützlich, wenn Sie verknüpfte Objekte in einem Layout kombinieren möchten.
 
@@ -598,8 +598,8 @@ Intelligente Felder können das Ausfüllen einiger Formulare erleichtern. So kan
 
 Mithilfe der Palette „Ein-/Ausgabehilfe“ können Sie Objekten je nach Verwendungszweck des Objekts Rollen zuweisen. Diese Rollen können angewendet werden, um Überschriften auf unterschiedlichen Ebenen zu erstellen.
 
-![Festlegen einer Überschriftenrolle in der Palette „Ein-/Ausgabehilfe“](/help/forms/using/assets/image-15.png)
-Abbildung 15: **Festlegen einer Überschriftenrolle in der Palette „Ein-/Ausgabehilfe“**
+![Festlegen einer Überschriftenrolle in der Palette „Barrierefreiheit“](/help/forms/using/assets/image-15.png)
+Abbildung 15: **Festlegen einer Überschriftenrolle in der Palette „Barrierefreiheit“**
 
 Führen Sie die folgenden Schritte aus, um eine Überschrift in Ihrem Formular zu erstellen:
 

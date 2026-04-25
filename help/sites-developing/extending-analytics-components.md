@@ -9,10 +9,10 @@ exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Developer
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1244'
-ht-degree: 100%
+source-wordcount: '1277'
+ht-degree: 97%
 
 ---
 
@@ -39,7 +39,7 @@ Der ContextHub-Eintrag sollte direkt unter dem `<head>`-Tag erfolgen, während C
 
 Mit dem `contexthub`-Skript, das Sie nach dem `<head>`-Element einfügen, werden die ContextHub-Funktionen zur Seite hinzugefügt.
 
-Die `cloudservices`-Skripte, die Sie in den Abschnitten `<head>` und `<body>` hinzufügen, gelten für die Cloud Services-Konfigurationen, die der Seite hinzugefügt werden. (Falls die Seite mehr als eine Cloud-Services-Konfiguration verwendet, müssen Sie die ContextHub-JSP und Cloud-Services-JSP nur einmal einschließen.)
+Die `cloudservices`-Skripte, die Sie in den Abschnitten `<head>` und `<body>` hinzufügen, gelten für die Cloud-Services-Konfigurationen, die der Seite hinzugefügt werden. (Falls die Seite mehr als eine Cloud-Services-Konfiguration verwendet, müssen Sie die ContextHub-JSP und Cloud-Services-JSP nur einmal einschließen.)
 
 Wenn der Seite ein Adobe Analytics-Framework hinzugefügt wird, generieren die `cloudservices`-Skripte Adobe Analytics-bezogenes JavaScript und Verweise auf Client-seitige Bibliotheken, ähnlich wie im folgenden Beispiel:
 
@@ -84,12 +84,14 @@ CQ_Analytics.CCM.addListener("storesinitialize", function(e) {
      $CQ(document).trigger("sitecatalystAfterCollect");
     }
 });
-//-->
+//
+-->
 </script>
 <script type="text/javascript">
 <!--
 if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
-//-->
+//
+-->
 </script>
 <noscript><img src="https://daydocumentation.112.2o7.net/b/ss/daydocumentation/1/H.25--NS/1380120772954?cdp=3&gn=content%3Ageometrixx-outdoors%3Aen" height="1" width="1" border="0" alt=""/></noscript>
 <span data-tracking="{event:'pageView', values:{}, componentPath:'foundation/components/page'}"></span>
@@ -174,25 +176,25 @@ Konfigurieren Sie die topnav-Komponente und bearbeiten Sie die JSP-Datei, um das
 1. Fügen Sie die folgende Eigenschaft zum Knoten „analytics“ hinzu, um das Tracking-Ereignis zu benennen:
 
    * Name: cq:trackevents
-   * Typ: String
+   * Typ: Zeichenfolge
    * Wert: topnavClick
 
 1. Fügen Sie die folgende Eigenschaft zum Knoten „analytics“ hinzu, um die Datenvariablen zu benennen:
 
    * Name: cq:trackvars
-   * Typ: String
+   * Typ: Zeichenfolge
    * Wert: topnavTarget,topnavLocation
 
 1. Fügen Sie die folgende Eigenschaft zum Knoten „analytics“ hinzu, um die Komponente für den Sidekick zu benennen:
 
    * Name: cq:componentName
-   * Typ: String
+   * Typ: Zeichenfolge
    * Wert: topnav (tracking)
 
 1. Fügen Sie die folgende Eigenschaft zum Knoten „analytics“ hinzu, um die Komponentengruppe für den Sidekick zu benennen:
 
    * Name: cq:componentGroup
-   * Typ: String
+   * Typ: Zeichenfolge
    * Wert: General
 
 1. Klicken Sie auf „Alle speichern“.
@@ -363,7 +365,7 @@ Der Knoten `analytics` der Komponente muss die Namen der Variablen anzeigen, die
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-Das E-Commerce-Modul stellt mehrere Komponenten bereit, die Daten für die Variable „s.products“ generieren. Die Komponente `submitorder` ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) erzeugt beispielsweise JavaScript, das dem folgenden Beispiel ähnelt:
+Das E-Commerce-Modul stellt mehrere Komponenten bereit, die Daten für die Variable „s.products“ generieren. Beispielsweise generiert die `submitorder`-Komponente ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) eine JavaScript, die dem folgenden Beispiel ähnelt:
 
 ```
 <script type="text/javascript">

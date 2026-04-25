@@ -8,9 +8,9 @@ exl-id: f6c24894-c322-4c44-b001-8978954d6e53
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '548'
 ht-degree: 100%
 
 ---
@@ -42,39 +42,47 @@ Das Beryl-Design wird vom adaptiven We.Gov-Formular verwendet, und hebt die Verw
 
 ![Beryl-Design](assets/beryl.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/beryl-1.png)-->
+](assets/beryl-1.png)
+-->
 
 ## Exec {#exec}
 
-Das Exec-Design vermeidet einfarbige Hintergrundfüllungen, um die Formularkomponenten hervorzuheben.  Das Auswählen von und Klicken auf Komponenten ändert die Schriftfarben.  Im Vergleich zum standardmäßigen Arbeitsflächen-Design ändert sich die Schriftfarbe des Textes auf der ausgewählten Registerkarte zu Dunkelblau. Beachten Sie, wie sich die Navigations- und Senden-Schaltflächen vom Beryl-Design unterscheiden.
+Das Exec-Design vermeidet einfarbige Hintergrundfüllungen, um die Formularkomponenten hervorzuheben. Das Auswählen von und Klicken auf Komponenten ändert die Schriftfarben. Im Vergleich zum standardmäßigen Arbeitsflächen-Design ändert sich die Schriftfarbe des Textes auf der ausgewählten Registerkarte zu Dunkelblau. Beachten Sie, wie sich die Navigations- und Senden-Schaltflächen vom Beryl-Design unterscheiden.
 
 ![Exec-Design](assets/exec.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/exec-1.png)-->
+](assets/exec-1.png)
+-->
 
 ## Exec Light {#exec-light}
 
-Das Exec Light-Design verwendet Leerräume, um ein nahtloses Erlebnis zu erstellen.  Die Schaltflächen „Weiter“ und „Senden“ erhalten eine durchgehende Füllung und einen 3D-Schatten.  Ausgewählte Registerkarten links erhalten einen Pfeil statt Doppelhäkchen.
+Das Exec Light-Design verwendet Leerräume, um ein nahtloses Erlebnis zu erstellen. Die Schaltflächen „Weiter“ und „Senden“ erhalten eine durchgehende Füllung und einen 3D-Schatten. Ausgewählte Registerkarten links erhalten einen Pfeil statt Doppelhäkchen.
 
 ![Exec light-Design](assets/exec-light.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/exec-light-1.png)-->
+](assets/exec-light-1.png)
+-->
 
 ## Liberty {#liberty}
 
-Das Liberty-Design verwendet eine minimalistische Herangehensweise, um das Wichtige hervorzuheben.  Beispielsweise ändert sich die Schriftfarbe der besuchten Registerkarte zu Grün.  Sie können nur die untere Kontur des Textfelds sehen, was den Look eines papierbasierten Formulars mit Linien simuliert.  Die untere Kontur des aktiven Textfelds ist schwarze, während die untere Kontur anderer Felder hellgrau ist.
+Das Liberty-Design verwendet eine minimalistische Herangehensweise, um das Wichtige hervorzuheben. Beispielsweise ändert sich die Schriftfarbe der besuchten Registerkarte zu Grün. Sie können nur die untere Kontur des Textfelds sehen, was den Look eines papierbasierten Formulars mit Linien simuliert. Die untere Kontur des aktiven Textfelds ist schwarze, während die untere Kontur anderer Felder hellgrau ist.
 
 ![Liberty-Design](assets/liberty.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/liberty-1.png)-->
+](assets/liberty-1.png)
+-->
 
 ## Tranquil {#tranquil}
 
@@ -82,9 +90,11 @@ Das Tranquil-Design bietet helle und dunkle Schattierungen des Tranquil-Farbsche
 
 ![Tranquil-Design](assets/tranquil.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tranquil-1.png)-->
+](assets/tranquil-1.png)
+-->
 
 ## Ultramarine {#ultramarine}
 
@@ -100,9 +110,11 @@ Das Urban-Design betont einen minimalistischen und funktionalen Look für Ihr Fo
 
 ![Urbane-Design](assets/urbane.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/urbane-1.png)-->
+](assets/urbane-1.png)
+-->
 
 ## U.S. Web Design Standards {#u-s-web-design-standards}
 
@@ -110,6 +122,8 @@ Das U.S. Webdesign Standard-Design, verwendet, wie der Name sagt, Schriftbilder 
 
 ![U.S. Web Design Standards-Design](assets/us-web-standards.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/usgov.png)-->
+](assets/usgov.png)
+-->

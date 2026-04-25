@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: bafa8061d73a5c82ba012457fb1133d99341fcd9
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '3472'
+source-wordcount: '3736'
 ht-degree: 97%
 
 ---
@@ -64,7 +64,7 @@ Adobe empfiehlt diese Konfigurationen und bietet im Zuge der standardmäßigen V
    <td>Adobe bietet vollständige Unterstützung und Wartung für diese Konfiguration. Diese Konfiguration wird über den Qualitätssicherungsvorgang von Adobe abgedeckt.</td>
   </tr>
   <tr>
-   <td><strong>R: Eingeschränkte Unterstützung </strong></td>
+   <td><strong>R: Eingeschränkte Unterstützung</strong></td>
    <td>Um den Projekterfolg unserer Kundinnen und Kunden sicherzustellen, bietet Adobe im Rahmen eines eingeschränkten Support-Programms volle Unterstützung an. Dafür müssen bestimmte Bedingungen erfüllt sein. Der Support auf R-Ebene erfordert eine formelle Kundenanfrage und eine Bestätigung durch Adobe. Weitere Informationen erhalten Sie bei der Kundenunterstützung von Adobe.</td>
   </tr>
  </tbody>
@@ -130,8 +130,8 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 | MongoDB Enterprise 3.6 | Repository | Z: Nicht unterstützt |
 | MongoDB Enterprise 3.4 | Repository | Z: Nicht unterstützt |
 | IBM® DB2® 10.5 | Repository und Forms-Datenbank | R: Eingeschränkte Unterstützung `[5]` |
-| Oracle Database 12c (12.1.x) | Repository und Forms-Datenbank | R: Eingeschränkte Unterstützung  |
-| Oracle Database 19c | Repository und Forms-Datenbank | R: Eingeschränkte Unterstützung  |
+| Oracle Database 12c (12.1.x) | Repository und Forms-Datenbank | R: Eingeschränkte Unterstützung |
+| Oracle Database 19c | Repository und Forms-Datenbank | R: Eingeschränkte Unterstützung |
 | Microsoft® SQL Server 2016 | Forms-Datenbank | A: Unterstützt |
 | Microsoft® SQL Server 2019 (Veraltet) | Forms-Datenbank | A: Unterstützt |
 | Microsoft® SQL Server 2022 | Forms-Datenbank | A: Unterstützt |
@@ -172,7 +172,8 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 >
 >To run AEM 6.5 with a supported relational database, a separate support contract with a database vendor is required. Adobe Customer Care assists qualifying issues related to the usage of relational databases with AEM 6.5.
 >
->**Most relational databases are currently supported within Level-R on AEM 6.5, which comes with support criteria and a support program as stated in the Level-R description above.**-->
+>**Most relational databases are currently supported within Level-R on AEM 6.5, which comes with support criteria and a support program as stated in the Level-R description above.**
+-->
 
 ### Servlet-Engines/Anwendungs-Server {#servlet-engines-application-servers}
 
@@ -207,7 +208,7 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 | **Linux®, basierend auf der Red Hat®-Verteilung** | A: Unterstützt `[1]` `[3]` |
 | Linux®, auf Basis der Debian-Verteilung einschl. Ubuntu | A: Unterstützt `[1]` `[2]` |
 | Linux®, auf Basis der SUSE®-Verteilung | A: Unterstützt `[1]` |
-| Microsoft® Windows Server 2022 | R: Eingeschränkte Unterstützung  |
+| Microsoft® Windows Server 2022 | R: Eingeschränkte Unterstützung |
 | Microsoft® Windows Server 2019 `[4]` (Veraltet) | R: Eingeschränkte Unterstützung für neue Verträge `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R: Eingeschränkte Unterstützung für neue Verträge `[5]` |
 | Microsoft® Windows Server 2012 R2 | Z: Nicht unterstützt |
@@ -376,11 +377,11 @@ Der Betrieb ist nahtlos, da keine spezielle Konfiguration erforderlich ist. Sie 
 
 Wenn eine IP-Adresse angegeben werden muss, können Sie (nach Bedarf) aus folgenden Optionen auswählen:
 
-* Eine IPv6-Adresse.  Beispiel: `https://[ab12::34c5:6d7:8e90:1234]:4502`
+* Eine IPv6-Adresse. Beispiel: `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
-* Eine IPv4-Adresse.  Beispiel: `https://123.1.1.4:4502`
+* Eine IPv4-Adresse. Beispiel: `https://123.1.1.4:4502`
 
-* Einen Server-Namen.  Beispiel: `https://www.yourserver.com:4502`
+* Einen Server-Namen. Beispiel: `https://www.yourserver.com:4502`
 
 * Der Standardfall `localhost` wird für IPv4- und IPv6-Netzwerkinstallationen angenommen. Beispiel: `https://localhost:4502`
 
@@ -466,7 +467,7 @@ Windows x86:
  <tbody>
   <tr>
    <th><p><strong>Produkt</strong></p> </th>
-   <th><p><strong>Unterstützte Formate für die Konvertierung ins PDF-Format </strong></p> </th>
+   <th><p><strong>Unterstützte Formate für die Konvertierung ins PDF-Format</strong></p> </th>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> – neueste Version</td>
@@ -531,6 +532,6 @@ Das Zurückschreiben von XMP-Daten wird für die folgenden Plattformen und Datei
 
 ### Anforderungen für die Verarbeitung von Metadaten-lastigen Assets durch AEM Assets unter Linux® {#assetsonlinux}
 
-Für den XMPFilesProcessor-Prozess ist die Bibliothek GLIBC_2.14 erforderlich. Verwenden Sie einen Linux®-Kernel, der GLIBC_2.14 enthält, zum Beispiel Linux®-Kernel Version 3.1.x. Dies verbessert die Leistung bei der Verarbeitung von Assets, die eine große Menge an Metadaten enthalten, z. B. PSD-Dateien. Die Verwendung einer früheren Version von GLIBC führt zu Fehlern in Protokollen, die mit `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` beginnen.
+Für den XMPFilesProcessor-Prozess ist die Bibliothek GLIBC_2.14 erforderlich. Verwenden Sie einen Linux®-Kernel, der GLIBC_2.14 enthält, zum Beispiel Linux®-Kernel Version 3.1.x. Dies verbessert die Leistung bei der Verarbeitung von Assets, die eine große Menge an Metadaten enthalten, z. B. PSD-Dateien. Die Verwendung einer früheren Version von GLIBC führt zu Fehlern in Protokollen, die mit `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` beginnen.
 
 Wenden Sie sich bei Fragen zu unterstützten Formaten oder Plattformversionen an den [AEM Forms-Support](https://business.adobe.com/de/support/main.html)
