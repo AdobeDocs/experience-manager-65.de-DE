@@ -6,7 +6,7 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: d2e16ff36c5910e43f647a68330ae82e3dd61456
 workflow-type: tm+mt
 source-wordcount: '10489'
 ht-degree: 98%
@@ -293,7 +293,7 @@ Diese Schritte sind mit *Systemadministrator*-Zugriff auf die Adobe Admin Consol
    | Plattform konfigurieren | Windows 64-Bit | Apple macOS wird zurzeit nicht unterstützt |
    | Lokal aktivieren | Sprache des Betriebssystems verwenden | Standardeinstellung |
    | Sprache | Ihre bevorzugte Sprache | Für die Benutzeroberfläche von Acrobat |
-   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat &#x200B;](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
+   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat ](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
    | Applikationen auswählen – Ausgewählte Programme | Nur Lizenzdatei in ausgewählten Programmen beibehalten | Standardeinstellung für die FRL-Bereitstellung |
    | Plug-ins | Keine Änderungen auf diesem Bildschirm vornehmen | |
    | Optionen | Keine Änderungen auf diesem Bildschirm vornehmen | |
@@ -443,7 +443,7 @@ Diese Schritte sind mit *Systemadministrator*-Zugriff auf die Adobe Admin Consol
    | Plattform konfigurieren | Windows 64-Bit | Apple macOS wird zurzeit nicht unterstützt |
    | Lokal aktivieren | Sprache des Betriebssystems verwenden | Standardeinstellung |
    | Sprache | Ihre bevorzugte Sprache | Für die Benutzeroberfläche von Acrobat |
-   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat &#x200B;](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
+   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat ](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
    | Applikationen auswählen – Ausgewählte Programme | Nur Lizenzdatei in ausgewählten Programmen beibehalten | Standardeinstellung für die FRL-Bereitstellung |
    | Plug-ins | Keine Änderungen auf diesem Bildschirm vornehmen | |
    | Optionen | Keine Änderungen auf diesem Bildschirm vornehmen | |
@@ -599,7 +599,7 @@ Diese Schritte sind mit *Systemadministrator*-Zugriff auf die Adobe Admin Consol
    | Plattform konfigurieren | Windows 64-Bit | Apple macOS wird zurzeit nicht unterstützt |
    | Lokal aktivieren | Sprache des Betriebssystems verwenden | Standardeinstellung |
    | Sprache | Ihre bevorzugte Sprache | Für die Benutzeroberfläche von Acrobat |
-   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat &#x200B;](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
+   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat ](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
    | Applikationen auswählen – Ausgewählte Programme | Nur Lizenzdatei in ausgewählten Programmen beibehalten | Standardeinstellung für die FRL-Bereitstellung |
    | Plug-ins | Keine Änderungen auf diesem Bildschirm vornehmen | |
    | Optionen | Keine Änderungen auf diesem Bildschirm vornehmen | |
@@ -756,7 +756,7 @@ Diese Schritte sind mit *Systemadministrator*-Zugriff auf die Adobe Admin Consol
    | Plattform konfigurieren | Windows 64-Bit | Apple macOS wird zurzeit nicht unterstützt |
    | Lokal aktivieren | Sprache des Betriebssystems verwenden | Standardeinstellung |
    | Sprache | Ihre bevorzugte Sprache | Für die Benutzeroberfläche von Acrobat |
-   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat &#x200B;](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
+   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat ](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
    | Applikationen auswählen – Ausgewählte Programme | Nur Lizenzdatei in ausgewählten Programmen beibehalten | Standardeinstellung für die FRL-Bereitstellung |
    | Plug-ins | Keine Änderungen auf diesem Bildschirm vornehmen | |
    | Optionen | Keine Änderungen auf diesem Bildschirm vornehmen | |
@@ -886,8 +886,6 @@ Führen Sie nach Abschluss aller Prozesse einen Schnellaktionstest durch, um zu 
 4. Vergewissern Sie sich, dass der Lizenzstatus als aktiviert angezeigt wird.
 
 >[!ENDTABS]
-
-
 
 ### Geschützten Modus beim Start in Acrobat deaktivieren
 
@@ -1543,7 +1541,6 @@ Wenn Sie Microsoft Excel 2019 auf Microsoft Windows Server 2019 in PDF konvertie
 Um das Problem zu beheben, [erstellen Sie einen funktionsspezifischen Registrierungsschlüssel unter Windows](https://helpx.adobe.com/de/acrobat/kb/unable-convert-xps-to-pdfs.html).
 
 +++
-
 
 ## Nächste Schritte {#next-steps}
 

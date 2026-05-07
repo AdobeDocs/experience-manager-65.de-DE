@@ -4,11 +4,10 @@ description: Erfahren Sie, wie Sie mit dem AEM Forms JEE Patch-Installationsprog
 content-type: reference
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 hide: true
-hidefromtoc: true
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 91%
@@ -19,7 +18,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->[Kontaktieren Sie den Support](https://experienceleague.adobe.com/de?lang=de&support-solution=General&support-tab=home#support), um weitere Informationen oder den Patch zu erhalten.
+>[Kontaktieren Sie den Support](https://experienceleague.adobe.com/?lang=de&support-solution=General&support-tab=home#support), um weitere Informationen oder den Patch zu erhalten.
 
 ## Über das Patch-Installationsprogramm {#about-the-patch-installer}
 
@@ -97,4 +96,4 @@ Wenn Sie die SAML-Authentifizierung konfiguriert haben und Probleme mit großen 
 * Document Security
 * Foundation JEE
 
-[Support kontaktieren](https://experienceleague.adobe.com/de?support-solution=General&support-tab=home&lang=de#support)
+[Support kontaktieren](https://experienceleague.adobe.com/?support-solution=General&support-tab=home&lang=de#support)
