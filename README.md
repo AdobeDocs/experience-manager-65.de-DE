@@ -1,10 +1,16 @@
 ---
-source-git-commit: d4bc00353812d963d2318cd148c6dbbac6bb2334
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7'
-ht-degree: 0%
+source-wordcount: '87'
+ht-degree: 10%
 
 ---
-# ARCHIVIERT
+# Dokumentation zu Adobe Experience Manager 6.5
 
-Dieses Repository wurde nach <https://github.com/Adobe-Enterprise-Docs/experience-manager-65.de-DE> migriert.
+Dies ist das Repository für die Dokumentation zu Adobe Experience Manager 6.5. Diese Dokumentation behandelt die Installation, Verwaltung, Verwendung der Authoring-Funktion und die Anpassung von AEM.
+
+Ihre Beiträge zur Dokumentation sind willkommen. Sehen Sie sich die folgenden Ressourcen an:
+
+* [contributor.md](contributing.md) Einen Überblick darüber, wie Sie zur Dokumentation beitragen können.
+* [guidelines.md](guidelines.md) Einen Überblick darüber, was an Beiträgen erwartet wird und wie Sie Ihre Dokumentationsbeiträge zusammenstellen.
+* [code-of-conduct.md](code-of-conduct.md) Einen Überblick über die Verhaltensnormen, die wir von Ihnen erwarten, wenn Sie zu diesem Dokumentationsprojekt beitragen.
