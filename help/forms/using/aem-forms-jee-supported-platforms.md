@@ -9,7 +9,7 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: d81e0bbce421f0a63f70457b782f380be149d08c
+source-git-commit: 5bbec6c99d12054cbc2f9669da4a086779485830
 workflow-type: tm+mt
 source-wordcount: '3908'
 ht-degree: 97%
@@ -933,7 +933,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Microsoft® SQL Server 2022 | Centos 7 | Microsoft® SQL Server 2019 |
 | Microsoft® SQL Server JDBC-Treiber 12.10.0 | Red Hat® Enterprise Linux® 7 (Kernel 4.x) (64-Bit) | Microsoft® SQL Server JDBC-Treiber 8.2 |
 | Red Hat® Enterprise Linux® 9 (Kernel 5.x) (64-Bit) | | Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64-Bit) |
-| Microsoft® Office 2024 | | |
+| Microsoft® Office 2024 |  |  |
 
 ### Version 6.5.22.0 (29. November 2024)
 
