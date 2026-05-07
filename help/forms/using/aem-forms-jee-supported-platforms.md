@@ -9,9 +9,9 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+source-git-commit: d81e0bbce421f0a63f70457b782f380be149d08c
 workflow-type: tm+mt
-source-wordcount: '3899'
+source-wordcount: '3908'
 ht-degree: 97%
 
 ---
@@ -543,6 +543,7 @@ Die AEM Forms-App unterstützt jetzt Apache Cordova. Im Folgenden finden Sie die
 
 >[!NOTE]
 >
+>- PDF Generator unterstützt Microsoft® Office 2024.
 >- PDF Generator unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
 >- PDF Generator erfordert für die Konvertierung Adobe Acrobat Pro DC (32 Bit).
 >- PDF Generator unterstützt nur die 32-Bit-Version von Microsoft® Office Professional Plus und anderer für die Konvertierung erforderliche Software.
@@ -835,7 +836,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
 - Microsoft&reg; SharePoint 2016
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -906,7 +907,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Added support**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platform:
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
@@ -932,6 +933,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Microsoft® SQL Server 2022 | Centos 7 | Microsoft® SQL Server 2019 |
 | Microsoft® SQL Server JDBC-Treiber 12.10.0 | Red Hat® Enterprise Linux® 7 (Kernel 4.x) (64-Bit) | Microsoft® SQL Server JDBC-Treiber 8.2 |
 | Red Hat® Enterprise Linux® 9 (Kernel 5.x) (64-Bit) | | Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64-Bit) |
+| Microsoft® Office 2024 | | |
 
 ### Version 6.5.22.0 (29. November 2024)
 
