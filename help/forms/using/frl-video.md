@@ -1,10 +1,13 @@
 ---
-source-git-commit: b5e44b78659f0cb1b8b0025be30143b98c0bf8df
-workflow-type: ht
-source-wordcount: '1065'
-ht-degree: 100%
+title: 'Videoskript: Einrichten Lizenzierung mit Funktionseinschränkungen (FRL) für Adobe Acrobat auf AEM Forms'
+description: Einrichten einer funktionsbeschränkten Lizenzierung (FRL) für Adobe Acrobat auf AEM Forms
+source-git-commit: 5477c768542b65750945dc9789224c0eb223f3c4
+workflow-type: tm+mt
+source-wordcount: '1095'
+ht-degree: 98%
 
 ---
+
 # Videoskript: Einrichten Lizenzierung mit Funktionseinschränkungen (FRL) für Adobe Acrobat auf AEM Forms
 
 | Visuell | Titel | Sprecher-Skript |
