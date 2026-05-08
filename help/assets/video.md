@@ -11,10 +11,10 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
 workflow-type: tm+mt
-source-wordcount: '10813'
-ht-degree: 96%
+source-wordcount: '10724'
+ht-degree: 97%
 
 ---
 
@@ -241,7 +241,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
    <td>HLS-Streaming mit adaptiver Bitrate.</td>
   </tr>
   <tr>
-   <td>Mobilgerät</td>
+   <td>Mobilgeräte</td>
    <td>Chrome (Android™ 6 oder früher)</td>
    <td>Progressiver Download.</td>
   </tr>
@@ -266,7 +266,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
    <td>HLS-Streaming mit adaptiver Bitrate.</td>
   </tr>
   <tr>
-   <td>Mobilgerät</td>
+   <td>Mobilgeräte</td>
    <td>BlackBerry®</td>
    <td>DASH*- oder HLS-Streaming mit adaptiver Bit-Rate./td&gt;
   </tr>
@@ -819,20 +819,20 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
    Auf zahlreichen Websites werden sowohl kostenlose als auch Premium-Tools und -Dienste angeboten, die Sie verwenden können, um WebVTT-Untertitel/Untertiteldateien außerhalb von Dynamic Media zu erstellen. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!--
-[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
+   [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-Die besten Ergebnisse erzielen Sie, wenn Sie das Tool in Internet Explorer 9 oder höher, Google Chrome oder Safari verwenden.
+   For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-Fügen Sie im Tool im Feld **[!UICONTROL URL der Videodatei]** kopierte URL Ihrer Videodatei ein und klicken Sie dann auf **[!UICONTROL Laden]**. Unter [Abrufen einer URL für ein Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) erhalten Sie die URL für die Videodatei selbst, die Sie dann in das Feld **[!UICONTROL URL der Videodatei eingeben“]**. Internet Explorer, Chrome oder Safari können das Video dann nativ wiedergeben.
--->
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.
+   -->
 
-Folgen Sie auf der Site den Anweisungen auf dem Bildschirm, um Ihre WebVTT-Datei zu erstellen und zu speichern. Wenn Sie fertig sind, kopieren Sie den Inhalt der Untertiteldatei und fügen Sie ihn in einen Texteditor ein. Speichern Sie ihn dann mit der Dateierweiterung `.vtt`.
+   Folgen Sie auf der Site den Anweisungen auf dem Bildschirm, um Ihre WebVTT-Datei zu erstellen und zu speichern. Wenn Sie fertig sind, kopieren Sie den Inhalt der Untertiteldatei und fügen Sie ihn in einen Texteditor ein. Speichern Sie ihn dann mit der Dateierweiterung `.vtt`.
 
->[!NOTE]
->
->Für globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard separate `.vtt`-Dateien und Abrufe für jede Sprache benötigt, die Sie unterstützen möchten.
+   >[!NOTE]
+   >
+   >Für globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard separate `.vtt`-Dateien und Abrufe für jede Sprache benötigt, die Sie unterstützen möchten.
 
-Grundsätzlich sollte die `.vtt`-Untertiteldatei denselben Namen haben wie die Videodatei, an den dann ein Kürzel für das Gebietsschema wie -EN, -FR oder -DE angehängt wird. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen Web-Content-Management-System zu automatisieren.
+   Grundsätzlich sollte die `.vtt`-Untertiteldatei denselben Namen haben wie die Videodatei, an den dann ein Kürzel für das Gebietsschema wie -EN, -FR oder -DE angehängt wird. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen Web-Content-Management-System zu automatisieren.
 
 1. Laden Sie in Experience Manager Ihre WebVTT-Untertiteldatei in das DAM hoch.
 1. Navigieren Sie zum *veröffentlichten* Video-Asset, das Sie mit der hochgeladenen Untertiteldatei verbinden möchten.

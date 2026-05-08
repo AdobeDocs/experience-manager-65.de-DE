@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
 workflow-type: tm+mt
 source-wordcount: '2149'
 ht-degree: 92%
@@ -95,7 +95,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 1. Extrahieren Sie das **AEM Forms on JEE Service Pack-Installationsarchiv** auf Ihrer Festplatte:
 
    * **Windows**
-Navigieren Sie zum entsprechenden Verzeichnis auf dem Installationsmedium oder dem Ordner auf Ihrer Festplatte, in den Sie kopiert haben     Installieren Sie das Installationsprogramm, und doppelklicken Sie auf die `aemforms65_cfp_install.exe`.
+Navigieren Sie zu dem entsprechenden Verzeichnis auf dem Installationsmedium oder dem Ordner auf Ihrer Festplatte, in den Sie das Installationsprogramm kopiert haben, und doppelklicken Sie auf die `aemforms65_cfp_install.exe`.
 
       * (Windows 32-Bit) `Windows\Disk1\InstData\VM`
       * (Windows 64-Bit) `Windows_64Bit`\ `Disk1\InstData\VM`
