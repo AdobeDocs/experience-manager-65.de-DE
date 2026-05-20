@@ -7,18 +7,22 @@ exl-id: ae7340c8-38cc-4b2b-ba17-22011471fd7d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 100%
+source-wordcount: '977'
+ht-degree: 98%
 
 ---
 
 # Einrichten des Visual Studio-Projekts und Erstellen des Windows-Programms{#set-up-the-visual-studio-project-and-build-the-windows-app}
 
+>[!NOTE]
+>
+>Die AEM Forms-App wird derzeit nicht mehr unterstützt. Bei Fragen oder Hilfe wenden Sie sich an [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 In AEM Forms wird der vollständige Quell-Code des AEM Forms-Programms bereitgestellt. Die Quelle enthält alle Komponenten, die für ein benutzerdefiniertes Arbeitsbereich-Programm erforderlich sind. Das Quell-Code-Archiv `adobe-lc-mobileworkspace-src-<version>.zip` ist Bestandteil des `adobe-aemfd-forms-app-src-pkg-<version>.zip`-Pakets auf Software Distribution.
 
-Um die Quelle des AEM Forms-Programms zu erhalten, führen Sie die folgenden Schritte aus:
+Um die AEM Forms App-Quelle zu erhalten, führen Sie die folgenden Schritte aus:
 
 1. Öffnen Sie [Software Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
 1. Wählen Sie im Kopfzeilenmenü **[!UICONTROL Adobe Experience Manager]** aus.
@@ -26,10 +30,10 @@ Um die Quelle des AEM Forms-Programms zu erhalten, führen Sie die folgenden Sch
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** aus.
    2. Wählen Sie die Version aus und geben Sie sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
 1. Wählen Sie den für Ihr Betriebssystem zutreffenden Paketnamen, dann **[!UICONTROL EULA-Bedingungen akzeptieren]** und dann **[!UICONTROL Herunterladen]** aus.
-1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
+1. Öffnen Sie den [Paket-Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
-1. Um das Quell-Code-Archiv herunterzuladen, öffnen Sie `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in Ihrem Browser.\
+1. Öffnen Sie `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in Ihrem Browser, um das Quell-Code-Archiv herunterzuladen.\
    Das Quellpaket wird auf Ihr Gerät heruntergeladen.
 
 Die folgende Abbildung zeigt den extrahierten Inhalt von `adobe-lc-mobileworkspace-src-<version>.zip`.
@@ -114,7 +118,7 @@ Es gibt zwei Möglichkeiten zum Installieren der Anwendung auf einem Windows-Ger
 
 1. Klicken Sie mit der rechten Maustaste auf die PowerShell-Datei (`Add-AppDevPackage.ps1)` und wählen Sie **Ausführen mit PowerShell**.
 
-1. Bei der Einrichtung werden Sie dazu aufgefordert, eine Entwicklerlizenz zu erwerben.  Verwenden Sie die Microsoft-Kontoanmeldeinformationen zum Erwerben der Entwicklerlizenz.\
+1. Bei der Einrichtung werden Sie dazu aufgefordert, eine Entwicklerlizenz zu erwerben. Verwenden Sie die Microsoft-Kontoanmeldeinformationen zum Erwerben der Entwicklerlizenz.\
    Diese Lizenz ist für 30 Tage gültig und Sie können Sie kostenlos verlängern.
 1. Wenn Sie die Entwicklerlizenz erwerben, installiert das Setup-Programm das selbstsignierte Zertifikat auf dem System und die Anwendung wird erfolgreich installiert.
 

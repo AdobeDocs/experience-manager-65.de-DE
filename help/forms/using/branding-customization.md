@@ -9,14 +9,18 @@ exl-id: 9333705b-9944-4a74-a30f-7d9ec85fd824
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 100%
+source-wordcount: '910'
+ht-degree: 98%
 
 ---
 
 # Branding-Anpassung {#branding-customization}
+
+>[!NOTE]
+>
+>Die AEM Forms-App wird derzeit nicht mehr unterstützt. Bei Fragen oder Hilfe wenden Sie sich an [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Sie können das Symbol und den Namen der Anwendung, Startbilder und die Anmeldeseite anpassen und dadurch ein auf Ihr Unternehmen zugeschnittenes Erscheinungsbild für Ihre Organisation in der AEM Forms-App gestalten. Sie können beispielsweise die Bilder ändern und stattdessen Logos Ihrer Organisation verwenden. Die AEM Forms-App unterstützt die folgenden Anpassungen:
 
@@ -155,7 +159,7 @@ Stellen Sie sicher, dass Sie über die folgenden Bilder verfügen:
 
 1. Öffnen Sie das Projekt `Capture.xcodeproj` in Xcode.
 
-1. Navigieren Sie zum Ordner `www/wsmobile/images`. 
+1. Navigieren Sie zum Ordner `www/wsmobile/images`.
 1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `LC-logo.png` durch die benutzerdefinierte Datei `LC-logo.png`.
 1. Um den Hintergrund zu ändern, ersetzen Sie die standardmäßige Datei `Landing_bg.jpeg` mit der benutzerdefinierten Datei `Landing_bg.jpeg`.
 1. Bauen Sie die AEM Forms-App auf einem iOS-Gerät oder einem iOS-Simulator auf und führen Sie sie aus.
@@ -164,7 +168,7 @@ Stellen Sie sicher, dass Sie über die folgenden Bilder verfügen:
 
 1. Öffnen Sie das Android-Projekt in Eclipse.
 
-1. Navigieren Sie zum Ordner `assets/www/wsmobile/images`. 
+1. Navigieren Sie zum Ordner `assets/www/wsmobile/images`.
 1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `LC-logo.png` durch die benutzerdefinierte Datei `LC-logo.png`.
 1. Um den Hintergrund zu ändern, ersetzen Sie die standardmäßige Datei `Landing_bg.jpeg` mit der benutzerdefinierten Datei `Landing_bg.jpeg`.
 1. Erstellen Sie die AEM Forms-App auf einem Android-Gerät und führen Sie sie aus.
@@ -173,7 +177,7 @@ Stellen Sie sicher, dass Sie über die folgenden Bilder verfügen:
 
 1. Öffnen Sie das `MWSWindows.sln`-Projekt in Visual Studio.
 
-1. Navigieren Sie zum Ordner `MWSWindows\www\wsmobile\images`. 
+1. Navigieren Sie zum Ordner `MWSWindows\www\wsmobile\images`.
 1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `LC-logo.png` durch die benutzerdefinierte Datei `LC-logo.png`.
 1. Um den Hintergrund zu ändern, ersetzen Sie die standardmäßige Datei `Landing_bg.jpeg` mit der benutzerdefinierten Datei `Landing_bg.jpeg`.
 1. Bauen Sie die AEM Forms-App auf einem Windows-Gerät auf und führen Sie sie aus.
@@ -205,7 +209,7 @@ Stellen Sie sicher, dass Sie über das folgende Bild verfügen:
 
 1. Öffnen Sie das Projekt `Capture.xcodeproj` in Xcode.
 
-1. Navigieren Sie zum Ordner `www/wsmobile/images`. 
+1. Navigieren Sie zum Ordner `www/wsmobile/images`.
 1. Um das Logo zu ändern, ersetzen Sie die standardmäßige Datei `aem_icon.png` durch die benutzerdefinierte Datei `aem_icon.png`.
 1. Bauen Sie die AEM Forms-App auf einem iOS-Gerät oder einem iOS-Simulator auf und führen Sie sie aus.
 
@@ -213,7 +217,7 @@ Stellen Sie sicher, dass Sie über das folgende Bild verfügen:
 
 1. Öffnen Sie das Android-Projekt in Eclipse.
 
-1. Navigieren Sie zum Ordner `assets/www/wsmobile/images`. 
+1. Navigieren Sie zum Ordner `assets/www/wsmobile/images`.
 1. Um das Logo zu ändern, ersetzen Sie die standardmäßige Datei `aem_icon.png` durch die benutzerdefinierte Datei `aem_icon.png`.
 1. Erstellen Sie die AEM Forms-App auf einem Android-Gerät und führen Sie sie aus.
 
@@ -221,6 +225,6 @@ Stellen Sie sicher, dass Sie über das folgende Bild verfügen:
 
 1. Öffnen Sie das `MWSWindows.sln`-Projekt in Visual Studio.
 
-1. Navigieren Sie zum Ordner `MWSWindows\www\wsmobile\images`. 
+1. Navigieren Sie zum Ordner `MWSWindows\www\wsmobile\images`.
 1. Um das Logo zu ändern, ersetzen Sie die standardmäßige Datei `aem_icon.png` durch die benutzerdefinierte Datei `aem_icon.png`.
 1. Erstellen und wählen Sie „AEM Forms App“ auf dem Windows-Gerät.

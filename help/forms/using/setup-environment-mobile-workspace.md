@@ -10,14 +10,18 @@ exl-id: 1d1f9db2-83cf-4612-ac8c-d2638c3bbaea
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 100%
+source-wordcount: '234'
+ht-degree: 86%
 
 ---
 
 # Einrichten einer Umgebung für die AEM Forms-App{#set-up-environment-for-aem-forms-app}
+
+>[!NOTE]
+>
+>Die AEM Forms-App wird derzeit nicht mehr unterstützt. Bei Fragen oder Hilfe wenden Sie sich an [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Sie benötigen die folgende Hardware, Software und Lizenzen, um die AEM Forms-App zu erstellen und bereitzustellen:
 
@@ -44,4 +48,4 @@ Sie benötigen die folgende Hardware, Software und Lizenzen, um die AEM Forms-Ap
 
 >[!NOTE]
 >
->Die Datei „adobe-lc-mobileworkspace-src.zip“ enthält PhoneGap SDK 5.0. Vergewissern Sie sich, dass PhoneGap SDK nicht vorinstalliert ist.
+>Die Datei „adobe-lc-mobileworkspace-src.zip“ enthält PhoneGap SDK 5.0. Stellen Sie sicher, dass PhoneGap SDK nicht vorinstalliert ist.

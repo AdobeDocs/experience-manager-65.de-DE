@@ -8,14 +8,18 @@ exl-id: caec5fc3-db52-4bf5-8eb2-17e5189ab819
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 100%
+source-wordcount: '697'
+ht-degree: 94%
 
 ---
 
 # Fehlerbehebung der AEM Forms-App {#troubleshoot-aem-forms-app}
+
+>[!NOTE]
+>
+>Die AEM Forms-App wird derzeit nicht mehr unterstützt. Bei Fragen oder Hilfe wenden Sie sich an [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 In diesem Artikel werden die Fehlermeldungen beschrieben, die beim Erstellen der AEM Forms-App möglicherweise angezeigt werden, sowie die Schritte zu ihrer Behebung.
 
@@ -32,9 +36,9 @@ Die Abschnitte in diesem Artikel beinhalten:
 
 Die AEM Forms-App für iOS, die für die Synchronisierung mit AEM Forms unter OSGi konfiguriert ist, unterstützt nur Anlagen auf Feldebene. Alle Anlagen müssen eindeutige Namen haben. Wenn mehrere Anlagen denselben Namen haben, wird nur eine Anlage beibehalten und alle anderen mit identischem Namen gehen verloren. Führen Sie die folgenden Schritte aus, um Benutzer auf iOS-Geräten vor Datenverlust zu bewahren:
 
-1. Auf dem verbundenen Server navigieren Sie zu: **Adobe Experience Manager > Werkzeuge > Vorgänge > Webkonsole**.
+1. Auf dem verbundenen Server navigieren Sie zu: **Adobe Experience Manager > Werkzeuge > Vorgänge > Web-Konsole**.
 1. Suchen Sie nach **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** und klicken Sie darauf.
-1. Aktivieren Sie im Dialog [!UICONTROL Adaptives Formular und interaktive Kommunikation Webkanal-Konfiguration] die Option **Dateinamen individualisieren**.
+1. Aktivieren Sie im Dialog [!UICONTROL Adaptives Formular und interaktive Kommunikation Web-Kanal-Konfiguration] die Option **Dateinamen individualisieren**.
 
    Wenn die Einstellung **Dateinamen individualisieren** deaktiviert ist, können die Benutzer Daten verlieren, wenn sie versuchen, adaptive Formulare mit mehreren Anlagen zu versenden.
 
@@ -50,11 +54,11 @@ Bei HTML5-Formularen, die in der AEM Forms-Anwendung mit dem HTML-Renderprofil *
 
 1. Im Stammpfad von CRXDE, in der Zugriffssteuerungsliste unter Zugriffssteuerung klicken Sie auf **+**.
 1. Klicken Sie im Dialogfeld **Neuen Eintrag hinzufügen** auf die Schaltfläche für die Gruppensuche im Feld „Prinzipal“.
-1. Geben Sie im Feld „Name“ des Dialogfelds „Prinzipal auswählen“ `PERM_WORKSPACE_USER` ein und klicken Sie auf **„Suchen“**. 
+1. Geben Sie im Feld „Name“ des Dialogfelds „Prinzipal auswählen“ `PERM_WORKSPACE_USER` ein und klicken Sie auf **„Suchen“**.
 1. Wählen Sie `PERM_WORKSPACE_USER`-Gruppe im Dialogfeld „Prinzipal wählen“ und klicken Sie auf **OK**.
 1. Im Dialogfeld „Neuen Eintrag hinzufügen“ wird `PERM_WORKSPACE_USER`-Gruppe im Feld „Prinzipal“ ausgewählt.
 
-    Aktivieren Sie `jcr:read`-Berechtigungen für die Benutzergruppe.
+   Aktivieren Sie `jcr:read`-Berechtigungen für die Benutzergruppe.
 
 1. Klicken Sie auf **OK**.
 
@@ -99,7 +103,7 @@ Die Fehlermeldung wird angezeigt, wenn Sie die Option **APK erstellen** aus dem 
 
 **Lösung:** Öffnen Sie die Datei **Gradle Scripts** > **gradle-wrapper.properties** und bearbeiten Sie die Eigenschaft **distributionUrl**.
 
-Beispielsweise empfiehlt die Android Studio-Konsole ein Downgrade der Gradle-Version auf 3.5. Bearbeiten Sie die Version in **distributionUrl** der **gradle-wrapper.properties**-Datei.
+Beispielsweise empfiehlt die Android Studio-Konsole ein Downgrade der Gradle-Version auf 3.5. Bearbeiten Sie die Version in **Datei** distributionUrl **ofGradle-wrapper.properties**.
 
 Wählen Sie erneut **Erstellen** > **APK erstellen**, um den Fehler zu beheben und die .apk-Datei zu generieren.
 

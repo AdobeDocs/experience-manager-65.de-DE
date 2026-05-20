@@ -8,14 +8,18 @@ exl-id: b4a23b2e-ab18-402c-8dfa-2533ee692912
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 100%
+source-wordcount: '511'
+ht-degree: 97%
 
 ---
 
 # Speichern einer Aufgabe oder eines Formulars als Entwurf {#saving-a-task-or-form-as-a-draft}
+
+>[!NOTE]
+>
+>Die AEM Forms-App wird derzeit nicht mehr unterstützt. Bei Fragen oder Hilfe wenden Sie sich an [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Bei der Option „Als Entwurf speichern“ wird ein Schnappschuss einer Aufgabe oder eines Formulars zusammen mit den Daten im dazugehörigen Formular gespeichert. Sie können einen Entwurf auch aus einer Vorlage erstellen. Die Entwürfe werden auf dem Mobilgerät gespeichert und mit Adobe Experience Manager Forms-Server für den späteren Abruf synchronisiert.
 
@@ -41,6 +45,6 @@ Sie können Entwürfe sowohl im Online- als auch im Offline-Modus verwerfen. Bei
 Führen Sie die folgenden Schritte aus, um einen Entwurf zu löschen:
 
 1. Navigieren Sie in der AEM Forms-App zu **Formulare**.
-1. Wählen Sie **Entwürfe** aus der Dropdown-Liste neben „Suchen“. 
+1. Wählen Sie **Entwürfe** aus der Dropdown-Liste neben „Suchen“.
 1. Bei einem Formular mit dem Bearbeitungssymbol ![edit-draft-app](assets/edit-draft-app.png) handelt es sich um einen Entwurf. Wählen Sie die Auslassungspunkte neben dem Entwurf aus.
 1. Wählen Sie in den Optionen, die bei Auswahl der Auslassungspunkte angezeigt werden, die Option **Entwurf löschen** aus.
