@@ -1,6 +1,6 @@
 ---
-title: Richten Sie das Android™-Studioprojekt ein und erstellen Sie eine Android™-App
-description: Schritte zum Einrichten des Android™ Studio-Projekts und Erstellen des Installationsprogramms für die Adobe Experience Manager (AEM) Forms-App
+title: Einrichten des Android&trade; -Studioprojekts und Erstellen der Android&trade; -App
+description: Schritte zum Einrichten des Android&trade; Studio-Projekts und zum Erstellen des Installationsprogramms für die Forms-App von Adobe Experience Manager (AEM)
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
@@ -8,18 +8,22 @@ exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 100%
+source-wordcount: '613'
+ht-degree: 90%
 
 ---
 
 # Richten Sie das Android™-Studioprojekt ein und erstellen Sie eine Android™-App {#set-up-the-android-studio-project-and-build-the-android-app}
 
-Dieser Artikel gilt für das Erstellen der AEM Forms-App 6.3.1.1 und höheren Versionen. Zum Erstellen einer App aus dem Quell-Code der AEM Forms App 6.3 siehe [Einrichten des Eclipse-Projekts und Erstellen der Android™-App](/help/forms/using/setup-eclipse-project-build-installer.md).
+>[!NOTE]
+>
+>Die AEM Forms-App wird derzeit nicht mehr unterstützt. Bei Fragen oder Hilfe wenden Sie sich an [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
-In AEM Forms wird der vollständige Quell-Code der AEM Forms-App bereitgestellt. Die Quelle enthält alle Komponenten, die für eine benutzerdefinierte AEM Forms-App erforderlich sind. Das Quell-Code-Archiv `adobe-lc-mobileworkspace-src-<version>.zip` ist Bestandteil des Pakets `adobe-aemfd-forms-app-src-pkg-<version>.zip` in Software Distribution.
+Dieser Artikel dient zum Erstellen der AEM Forms-App 6.3.1.1 und neueren Versionen. Zum Erstellen einer App aus dem Quell-Code der AEM Forms App 6.3 siehe [Einrichten des Eclipse-Projekts und Erstellen der Android™-App](/help/forms/using/setup-eclipse-project-build-installer.md).
+
+In AEM Forms wird der vollständige Quell-Code der AEM Forms-App bereitgestellt. Die Quelle enthält alle Komponenten, die für eine benutzerdefinierte AEM Forms-App erforderlich sind. Das Quell-Code-Archiv `adobe-lc-mobileworkspace-src-<version>.zip` ist Bestandteil des `adobe-aemfd-forms-app-src-pkg-<version>.zip`-Pakets auf Software Distribution.
 
 Um die AEM Forms App-Quelle zu erhalten, führen Sie die folgenden Schritte aus:
 
@@ -29,7 +33,7 @@ Um die AEM Forms App-Quelle zu erhalten, führen Sie die folgenden Schritte aus:
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** aus.
    2. Wählen Sie die Version aus und geben Sie sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
 1. Wählen Sie den für Ihr Betriebssystem zutreffenden Paketnamen, dann **[!UICONTROL EULA-Bedingungen akzeptieren]** und dann **[!UICONTROL Herunterladen]** aus.
-1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
+1. Öffnen Sie den [Paket-Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
 Die folgende Abbildung zeigt den extrahierten Inhalt von `adobe-lc-mobileworkspace-src-<version>.zip`.
@@ -58,7 +62,7 @@ Die folgende Abbildung zeigt die Verzeichnisstruktur des Ordners `android` im Or
 
 1. Extrahieren Sie das Archiv im folgenden Verzeichnis:
 
-   **Für Mac-Benutzende:** `[User_Home]/Projects/[your-project]`
+   **Für Mac-Benutzende**: `[User_Home]/Projects/[your-project]`
 
    **Für Windows®-Benutzende**: `%HOMEPATH%\Projects\[your-project]`
 
@@ -103,6 +107,6 @@ Nachdem Sie das Projekt erstellt haben, haben Sie folgende Möglichkeiten zum In
 
 Sie können die Anwendung über [Android™ Debug Bridge](https://developer.android.com/tools/adb) mit folgendem Befehl auf einem Android™-Gerät installieren:
 
-**Für Mac-Benutzende**:`adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
+**Für Mac-Benutzende**: `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
 
 **Für Windows®-Benutzende**: `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`

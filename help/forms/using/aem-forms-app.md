@@ -9,14 +9,18 @@ exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 100%
+source-wordcount: '2485'
+ht-degree: 95%
 
 ---
 
 # Einführung in die AEM Forms Workspace-App {#aem-forms-app}
+
+>[!NOTE]
+>
+>Die AEM Forms-App wird derzeit nicht mehr unterstützt. Bei Fragen oder Hilfe wenden Sie sich an [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 ## Übersicht {#overview}
 
@@ -26,17 +30,18 @@ Der Quellcode der AEM Forms-App ist für Kunden über die Software Distribution 
 
 Die AEM Forms-App wird auf iOS-, Android- und Windows-Geräten unterstützt. Sie können die Mobile App von AEM Forms für Android über Google Play, für iOS über den App Store und für Windows über den Windows Store installieren.
 
-    [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+    [&#x200B; ![Google_Play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
-    [ ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
+    [&#x200B; ![App_Store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8)
     
-    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [&#x200B; ![Microsoft-Badge-Icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 Informationen zum Installieren, Anpassen und Verteilen der App auf iOS-, Android- oder Windows-Geräten finden Sie unter [Anpassen, Erstellen und Verteilen der AEM Forms-App](#customize-build-distribute).
 
 ## Voraussetzungen {#prerequisites}
 
-Die AEM Forms-App erfordert einen AEM Forms-Server. Benutzer können Formulare wiedergeben, die Sie im AEM Forms-Server erstellt haben, sie ausfüllen, als Entwürfe speichern und senden. Die App stellt eine Verbindung zum Server her und ruft aktivierte Formulare ab. Die AEM Forms-App wird mit dem Server synchronisiert, und sobald Formulare in der App geladen werden, können Benutzende im Offline-Modus arbeiten. Wenn die App offline ist, werden die Daten auf dem Gerät gespeichert. Die Daten werden mit dem Server synchronisiert, wenn die App wieder online ist.
+Die AEM Forms-App erfordert einen AEM Forms-Server. Benutzer können Formulare wiedergeben, die Sie in der AEM Forms erstellt haben
+Server, sie ausfüllen, als Entwürfe speichern und senden. Die App stellt eine Verbindung zum Server her und ruft aktivierte Formulare ab. Die AEM Forms-App wird mit dem Server synchronisiert, und sobald Formulare in der App geladen werden, können Benutzende im Offline-Modus arbeiten. Wenn die App offline ist, werden die Daten auf dem Gerät gespeichert. Die Daten werden mit dem Server synchronisiert, wenn die App wieder online ist.
 
 ### AEM Forms-App bei Servern mit AEM Forms Workflow {#aem-forms-app-with-servers-using-aem-forms-workflow}
 
@@ -59,7 +64,7 @@ Formular in der AEM Forms-App synchronisieren
 1. Klicken Sie auf der Eigenschaftenseite auf **[!UICONTROL Erweitert]**.
 1. Aktivieren Sie unter „Erweitert“ die Option **[!UICONTROL Mit AEM Forms-App synchronisieren]** und wählen Sie **[!UICONTROL Speichern]** aus.
 
-Wenn das Formular veröffentlicht ist, synchronisiert sich die App mit dem Server und ruft das Formular ab. Um mehrere Formulare zu synchronisieren, wählen Sie in der Authoring-Instanz mehrere Formulare in Forms Manager und dann **[!UICONTROL Mit AEM Forms-App synchronisieren]** aus.
+Wenn das Formular veröffentlicht ist, synchronisiert sich die App mit dem Server und ruft das Formular ab. Um mehrere Formulare zu synchronisieren, wählen Sie in der Autoreninstanz mehrere Formulare in Forms Manager und dann **[!UICONTROL Mit AEM Forms-App synchronisieren]** aus.
 
 ## Unterstützung für Mobilgeräte {#mobile-device-support}
 
@@ -71,7 +76,7 @@ Siehe [AEM Forms-App (vorher bekannt als Mobile Workspace)](/help/forms/using/ae
 
 Sie können Ihre App mit dem AEM Forms-Server synchronisieren und auf Ihrem Mobilgerät Formulare bearbeiten.
 
-Auf einem AEM Forms-Server können Sie ein Formular einem Startpunkt in einem Workbench-Vorgang und einer AEM Inbox-Anwendung zuordnen. Einer AEM-Posteingangs-Anwendung kann ein adaptives Formular zugeordnet werden. Einem Startpunkt kann ein adaptives Formular, ein HTML5-Formular oder ein Formularsatz zugeordnet werden. Es ist möglich, einen Startpunkt als Aufgabe zu senden oder die Aufgabe als Entwurf zu speichern. Weitere Informationen zu den Unterschieden zwischen einer AEM Inbox-Anwendung und einem Startpunkt finden Sie unter [Aktionen und Funktionen formularzentrierter AEM-Workflows auf OSGi- und AEM Forms-JEE-Workflows](capabilities-osgi-jee-workflows.md).
+Auf einem AEM Forms-Workflow-Server können Sie ein Formular einem Startpunkt in einem Workbench-Vorgang und einer AEM Inbox-Anwendung zuordnen. Einer AEM-Posteingangs-Anwendung kann ein adaptives Formular zugeordnet werden. Einem Startpunkt kann ein adaptives Formular, ein HTML5-Formular oder ein Formularsatz zugeordnet werden. Es ist möglich, einen Startpunkt als Aufgabe zu senden oder die Aufgabe als Entwurf zu speichern. Weitere Informationen zu den Unterschieden zwischen einer AEM Inbox-Anwendung und einem Startpunkt finden Sie unter [Aktionen und Funktionen formularzentrierter AEM-Workflows auf OSGi- und AEM Forms-JEE-Workflows](capabilities-osgi-jee-workflows.md).
 
 Bei AEM Forms-Servern ohne AEM Forms Workflow werden Formulare, für die die Synchronisierung in der App aktiviert ist, in der AEM Forms-App gerendert. Formulare sind auf der Registerkarte „Formulare“ der App verfügbar und können gesendet oder als Entwurf gespeichert werden. In der App werden adaptive und mobile Formulare unterstützt.
 
@@ -122,7 +127,7 @@ Weitere Informationen finden Sie unter [Verwenden der automatischen Speicherung 
 
 ## Unterschiede zwischen den Funktionen von AEM Inbox und AEM Forms-App {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Zwei der bekanntesten Möglichkeiten zum Starten eines formularbasierten Workflows sind der [AEM-Posteingang](/help/forms/using/manage-applications-inbox.md) und die Mobile App von AEM Forms. Die Funktionen von AEM Inbox und AEM Forms-App sind jedoch unterschiedlich. Der AEM-Posteingang funktioniert nur mit [formularzentrierten Workflows](/help/forms/using/aem-forms-workflow.md), während die AEM Forms-App sowohl mit formularzentrierten Workflows als auch mit der Prozessverwaltung verwendet werden kann. Weitere Informationen zu den Unterschieden zwischen den Funktionen des AEM-Posteingangs und der Mobile App von AEM Forms finden Sie unter [Aktionen und Funktionen von formularbasierten AEM-Workflows auf OSGi und AEM Forms-JEE-Workflows](capabilities-osgi-jee-workflows.md).
+Zwei der bekanntesten Möglichkeiten zum Starten eines formularbasierten Workflows sind der [AEM-Posteingang](/help/forms/using/manage-applications-inbox.md) und die Mobile App von AEM Forms. Die Funktionen von AEM Inbox und AEM Forms-App sind jedoch unterschiedlich. Der AEM-Posteingang funktioniert nur mit [Formular-zentrierten Workflows](/help/forms/using/aem-forms-workflow.md), während die AEM Forms-App sowohl mit Formular-zentrierten Workflows als auch mit der Prozessverwaltung verwendet werden kann. Weitere Informationen zu den Unterschieden zwischen den Funktionen des AEM-Posteingangs und der Mobile App von AEM Forms finden Sie unter [Aktionen und Funktionen von formularbasierten AEM-Workflows auf OSGi und AEM Forms-JEE-Workflows](capabilities-osgi-jee-workflows.md).
 
 ## Unterstützte Formulare {#supported-forms}
 
@@ -187,7 +192,7 @@ Um die AEM Forms App-Quelle zu erhalten, führen Sie die folgenden Schritte aus:
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** aus.
    2. Wählen Sie die Version aus und geben Sie sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
 1. Wählen Sie den für Ihr Betriebssystem zutreffenden Paketnamen, dann **[!UICONTROL EULA-Bedingungen akzeptieren]** und dann **[!UICONTROL Herunterladen]** aus.
-1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
+1. Öffnen Sie den [Paket-Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
 **Für iOS**:
@@ -212,7 +217,8 @@ Weitere Informationen zum Verteilen der App über MDM finden Sie unter [Verteile
 
 Wenn Sie auf die neueste Version der AEM Forms-App aktualisieren, achten Sie darauf, dass Sie folgende Punkte lesen:
 
-* **Wenn Sie eine frühere Version der App vom Play Store auf Android installiert haben** können Sie die App direkt vom Play Store aktualisieren.
+* **Wenn Sie eine frühere Version der App vom Play Store auf Android installiert haben**
+Sie können die App direkt im Play Store aktualisieren.
 
 * **Wenn eine frühere Version der Mobile App mithilfe des Quell-Codes erstellt und installiert wird (gilt für iOS und Android)**:
 

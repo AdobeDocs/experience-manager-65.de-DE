@@ -9,14 +9,18 @@ exl-id: 3e74cda2-ba3e-4ee9-b7d0-76a804232199
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 100%
+source-wordcount: '406'
+ht-degree: 96%
 
 ---
 
 # Aktualisieren von allgemeinen Einstellungen{#updating-general-settings}
+
+>[!NOTE]
+>
+>Die AEM Forms-App wird derzeit nicht mehr unterstützt. Bei Fragen oder Hilfe wenden Sie sich an [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 In den allgemeinen Einstellungen der AEM Forms-App können Sie Einstellungen wie das Abrufen von Anlagen, den Offline-Modus, den Landingscreen, die Standardkategorie und die Häufigkeit der automatischen Speicherung festlegen.
 

@@ -10,14 +10,18 @@ exl-id: 1603eef1-d7c8-47d3-8cfa-55ec3eaadd64
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 100%
+source-wordcount: '309'
+ht-degree: 86%
 
 ---
 
 # Verwenden der automatischen Speicherung in der AEM Forms-App{#using-autosave-in-aem-forms-app}
+
+>[!NOTE]
+>
+>Die AEM Forms-App wird derzeit nicht mehr unterstützt. Bei Fragen oder Hilfe wenden Sie sich an [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Wenn Sie Daten in die Adobe Experience Manager Forms-App eingeben, speichert die Funktion sie automatisch in regelmäßigen Abständen. Die automatische Speicherung in der AEM Forms-App hilft Ihnen, Datenverlust zu vermeiden, wenn die App versehentlich geschlossen wird.
 
@@ -42,4 +46,4 @@ Führen Sie die folgenden Schritte aus, um die automatische Speicherung in der A
 1. Wenn Sie die App neu starten und sich als derselbe Benutzer anmelden, werden Sie aufgefordert, Ihre Aufgabe mit dem Dialogfeld „Nicht gespeicherte Aufgabe wiederherstellen“ wiederherzustellen. Klicken Sie in diesem Dialogfeld auf **OK**, um die Arbeit an der gespeicherten Aufgabe fortzusetzen. Klicken Sie auf **Abbrechen**, um die gespeicherten Daten entsprechend der zuletzt ausgelösten automatischen Speicherung zu löschen und an einer neuen Aufgabe zu arbeiten.
 
    Wenn Sie auf **OK** klicken, wird die Aufgabe mit den Daten entsprechend der zuletzt ausgelösten automatischen Speicherung vor Absturz der App wiederhergestellt. Sie enthält die Formulardaten und alle Anlagen, die mit der Aufgabe verbunden sind.
-   [![Wiederherstellen einer Aufgabe ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** Ein Formular für laufende Arbeiten **B.** Schließen der App wurde erzwungen **C.** App wurde mit dem Dialogfeld „Nicht gespeicherte Aufgabe wiederherstellen“ erneut gestartet **D.** Formular wurde mit Originaldaten wiederhergestellt
+   [![Wiederherstellen einer Aufgabe &#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**a.** Ein Formular mit laufenden Arbeiten (**.**-Programm wurde erzwungen geschlossen **C.**-Programm wurde mit dem Dialogfeld „Nicht gespeicherte Aufgabe wiederherstellen“ neu gestartet **D.** Formular wurde mit Originaldaten wiederhergestellt

@@ -9,14 +9,18 @@ exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '583'
+ht-degree: 97%
 
 ---
 
 # Hinzufügen von Anhängen{#adding-attachments}
+
+>[!NOTE]
+>
+>Die AEM Forms-App wird derzeit nicht mehr unterstützt. Bei Fragen oder Hilfe wenden Sie sich an [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 ## Hinzufügen von Anhängen in Formularen, die mit AEM Forms Workflow-Server (AEM Forms on JEE) synchronisiert werden {#adding-annotations}
 
@@ -26,7 +30,7 @@ Ihre Optionen sind:
 
 * **Galerie**: Hiermit können Sie ein Bild aus den auf dem Gerät gespeicherten Bildern hinzufügen.
 
-* **Kamera**: Hiermit können Sie ein Foto aufnehmen und es zum Formular hinzufügen. 
+* **Kamera**: Hiermit können Sie ein Foto aufnehmen und es zum Formular hinzufügen.
 
 * **Hinweise**: Hiermit können Sie eine Notiz oder Textanmerkung hinzufügen. Verwenden Sie ![Freihand](assets/scribble.png), um eine Notiz hinzuzufügen und ![Tastatur](assets/keyboard.png), um einen Textkommentar hinzuzufügen.
 

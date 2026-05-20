@@ -9,14 +9,18 @@ exl-id: 78ce6107-8821-47d6-86ab-7ab968945e7c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 100%
+source-wordcount: '839'
+ht-degree: 98%
 
 ---
 
 # Einrichten des Xcode-Projekts und Erstellen der iOS-App{#set-up-the-xcode-project-and-build-the-ios-app}
+
+>[!NOTE]
+>
+>Die AEM Forms-App wird derzeit nicht mehr unterstützt. Bei Fragen oder Hilfe wenden Sie sich an [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 In AEM Forms wird der vollständige Quellcode der AEM Forms-App bereitgestellt. Die Quelle enthält alle Komponenten, die für eine benutzerdefinierte AEM Forms-App erforderlich sind. Das Quell-Code-Archiv `adobe-lc-mobileworkspace-src-<version>.zip` ist Bestandteil des `adobe-aemfd-forms-app-src-pkg-<version>.zip`-Pakets auf Software Distribution.
 
@@ -28,7 +32,7 @@ Um die AEM Forms App-Quelle zu erhalten, führen Sie die folgenden Schritte aus:
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** aus.
    2. Wählen Sie die Version aus und geben Sie sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
 1. Wählen Sie den für Ihr Betriebssystem zutreffenden Paketnamen, dann **[!UICONTROL EULA-Bedingungen akzeptieren]** und dann **[!UICONTROL Herunterladen]** aus.
-1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
+1. Öffnen Sie den [Paket-Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
 1. Öffnen Sie `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in Ihrem Browser, um das Quell-Code-Archiv herunterzuladen.
@@ -86,7 +90,7 @@ Weitere Informationen zu Codesignaturen und zum Hinzufügen von Geräten im iOS 
 1. Erweitern Sie auf der Liste **Einstellungen** die Option **Code-Signierung**.
 1. Wählen Sie für **Code Signing Identity** die entsprechende Signatur. Weitere Informationen zum Erstellen neuer Signaturen erhalten Sie unter [Erstellen und Herunterladen von Entwicklungsbereitstellungsprofilen](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html).
 1. Achten Sie darauf, dass dieselbe Signatur für die Optionen **Debug**, **Release** und **Any iOS SDK** ausgewählt wird.
-1. Ersetzen Sie den folgenden Code in der Datei `AEM Forms-info.plist`: 
+1. Ersetzen Sie den folgenden Code in der Datei `AEM Forms-info.plist`:
 
    ```xml
    <key>NSAppTransportSecurity</key>
@@ -135,7 +139,7 @@ Weitere Informationen zu Codesignaturen und zum Hinzufügen von Geräten im iOS 
    Ein provisioniertes Gerät (iPad Air 2) ist ausgewählt.
 
 1. Wählen Sie **Produkt** > **Bereinigen** aus.
-1. Wählen Sie **Produkt** > **Build** aus.
+1. Wählen Sie **Produkt** > **Aufbauen** aus.
 
 ## Installationsprogramm für die AEM Forms-App erstellen {#build-the-installer-for-the-mobile-workspace-app}
 
@@ -153,7 +157,7 @@ Sie müssen das Xcode-Projekt archivieren, um das Installationsprogramm (eine .i
 1. Wählen Sie **Produkt** > **Archivieren** aus.
 1. Wählen Sie in Organizer unter „Archive“ das neueste Archiv Ihres Projekts aus und klicken Sie auf **Verteilen**.
 1. Wählen Sie die Verteilungsmethode **Für Unternehmens- oder Ad-hoc-Bereitstellung speichern** aus und klicken Sie auf **Weiter**.
-1. Wählen Sie die entsprechende Option unter **Code-Signaturidentität** aus und klicken Sie auf **Weiter**.  Klicken Sie auf **Zulassen**, um die Signatur anzuwenden.
+1. Wählen Sie die entsprechende Option unter **Code-Signaturidentität** aus und klicken Sie auf **Weiter**. Klicken Sie auf **Zulassen**, um die Signatur anzuwenden.
 1. Geben Sie den Namen der App an und wählen Sie **Für Unternehmensverteilung speichern** aus.
 1. Geben Sie die **Anwendungs-URL** für die App an. Um beispielsweise das Programm auf einem CRX-Server zu hosten, geben Sie die URL `https://[LC_host]:'port'/lc/content/distribution/mobileworkspace/APP_NAME.ipa` an.
 1. Geben Sie im Feld **Titel** „AEM Forms“ an.
