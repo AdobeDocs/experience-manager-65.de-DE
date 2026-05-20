@@ -44,7 +44,7 @@ Um einen Prozess aus der Adobe Experience Manager Forms-Anwendung zu initiieren,
 
 1. Geben Sie die Details in das Formular für den **[!UICONTROL Startpunkt]** ein.
 
-   Sie können dieser Aufgabe mithilfe der Schaltfläche[ Anlage](../../forms/using/add-attachments.md) Anmerkungen hinzufügen.
+   Sie können dieser Aufgabe mithilfe der Schaltfläche[&#x200B; Anlage](../../forms/using/add-attachments.md) Anmerkungen hinzufügen.
 
 1. Nachdem Sie das Formular ausgefüllt haben, wählen Sie die Schaltfläche **[!UICONTROL Absenden]** aus.
 
