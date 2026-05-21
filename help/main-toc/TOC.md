@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
+source-git-commit: d0adc4dcbe6b6045739e0b7e102c58a752fe7c14
 workflow-type: tm+mt
-source-wordcount: '8246'
+source-wordcount: '8247'
 ht-degree: 96%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 96%
 + Versionshinweise {#release-notes}
    + [Versionshinweise](/help/release-notes/release-notes.md)
    + Hinweise zu früheren Versionen {#service-pack}
+      + [6.5.24](/help/release-notes/previous/6-5-24.md)
       + [6.5.23](/help/release-notes/previous/6-5-23.md)
       + [6.5.22](/help/release-notes/previous/6-5-22.md)
       + [6.5.21](/help/release-notes/previous/6-5-21.md)
@@ -408,7 +409,7 @@ ht-degree: 96%
       + [Verwenden von Regelsätzen zum Konvertieren von URLs](/help/assets/using-rulesets-to-transform-urls.md)
       + [Veröffentlichen von Dynamic Media-Assets](/help/assets/publishing-dynamicmedia-assets.md)
       + [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](/help/assets/selective-publishing.md)
-      + [Invalidierung des CDN-Cache mithilfe von Dynamic Media](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+      + [Ungültig machen des CDN-Cache mithilfe von Dynamic Media](/help/assets/invalidate-cdn-cache-dynamic-media.md)
       + [Ungültig machen des CDN-Cache mithilfe von Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
       + [Installieren des Feature Pack 18912 für die Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md)
       + [Arbeiten mit Selektoren](/help/assets/working-with-selectors.md)
