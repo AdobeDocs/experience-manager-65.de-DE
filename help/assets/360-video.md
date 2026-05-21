@@ -10,10 +10,15 @@ feature: 360 VR Video
 role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: beef1f49b7563d824357043f4ed78fdaf70015cd
+autotag-review: '2026-05-18T18:33:16.243Z'
+TQID: 'https://experienceleague.adobe.com/t3-PFZjnQPbbgNMFEjG7SDwG1Pt1TkvD9wNNYYgaEyE'
+product_v2: id: e14eb250-3c22-4a07-9061-a78112b2b826id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 100%
+source-wordcount: 1191
+ht-degree: 92%
 
 ---
 
@@ -34,7 +39,7 @@ Informationen hierzu finden Sie in [Verwalten von Viewer-Vorgaben](/help/assets/
 Wählen Sie [Space Station 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS), um ein Browser-Fenster zu öffnen und ein 360-Grad-Video anzusehen. Ziehen Sie während der Videowiedergabe den Mauszeiger an eine neue Position, um den Anzeigewinkel zu ändern.
 
 ![360-Grad-Videobeispiel mit der im Weltraum schwebenden internationalen Raumstation und der Erde und Sonne dahinter.](assets/6_5_360videoiss_simplified.png)
-*Videoframe aus Space Station 360*
+*Videoframe von Space Station 360*
 
 ## 360-Grad-/VR-Video und Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
@@ -47,7 +52,7 @@ Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](http
 Beim Hochladen in Adobe Experience Manager werden 360-Grad-Video-Assets wie normale Video-Assets auf der Asset-Seite als **Multimedia** gekennzeichnet.
 
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
-*Ein hochgeladenes 360-Grad-Video-Asset in der Kartenansicht. Das Asset wird als „Multimedia“ gekennzeichnet.*
+*Ein hochgeladenes 360-Grad-Video-Asset, das in der Kartenansicht angezeigt wird. Das Asset wird als „Multimedia“ gekennzeichnet.*
 
 **Hochladen von Assets für die Verwendung mit dem 360-Grad-Video-Viewer:**
 
@@ -79,7 +84,7 @@ Beim Hochladen in Adobe Experience Manager werden 360-Grad-Video-Assets wie norm
 
 Hochgeladene Assets sind als 360-Grad-Videos und für die Verwendung mit dem 360-Grad-Video-Viewer geeignet, wenn sie ein Seitenverhältnis von 2 aufweisen.
 
-Standardmäßig erkennt Experience Manager Videos als „360“, wenn ihr Seitenverhältnis (Breite/Höhe) 2,0 beträgt. Als Admin können Sie das Standardseitenverhältnis von 2 außer Kraft setzen, indem Sie die optionale Eigenschaft `s7video360AR` in CRXDE Lite unter folgendem Pfad festlegen:
+Standardmäßig erkennt Experience Manager Videos als „360“, wenn ihr Seitenverhältnis (Breite/Höhe) 2,0 beträgt. Als Admin können Sie das Standardseitenverhältnis von 2 außer Kraft setzen, indem Sie die optionale Eigenschaft `s7video360AR` in CRXDE Lite unter folgendem Pfad festlegen:
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 

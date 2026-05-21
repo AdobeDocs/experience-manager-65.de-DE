@@ -9,10 +9,16 @@ feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+autotag-review: '2026-05-18T18:43:11.851Z'
+TQID: 'https://experienceleague.adobe.com/Qejzp9vTp-wLn92GsZdPdKEdA-84PnmYIROxdVrB4MU'
+product_v2: id: e14eb250-3c22-4a07-9061-a78112b2b826id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: '2354'
-ht-degree: 100%
+source-wordcount: 2419
+ht-degree: 98%
 
 ---
 
@@ -41,7 +47,7 @@ Siehe auch [Unterstützte 3D-Formate](/help/assets/assets-formats.md).
 | GLB | Binäre GL-Übertragung | model/gltf-binary | Umfasst die Materialien und Texturen als ein Asset. |
 | OBJ | WaveFront 3D-Objektdatei | application/x-tgif |  |
 | STL | Stereolithografie | application/vnd.ms-pki.stl |  |
-| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Nur Erfassung unterstützt, keine Anzeige oder Interaktion möglich.* USDZ ist ein proprietäres 3D-Format, das von Safari- and iOS-Endgeräten nativ angezeigt werden kann. |
+| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Unterstützung nur für die Aufnahme; keine Anzeige oder Interaktion verfügbar.* USDZ ist ein proprietäres 3D-Format, das von Safari- und iOS-Geräten nativ angezeigt werden kann. |
 
 >[!NOTE]
 >
@@ -152,7 +158,7 @@ Siehe auch [Vorschau von Assets über die Software-Schnittstelle](/help/assets/p
    * Löschen Sie `/editor.html` aus der Seiten-URL im Browser.
 
    ![3D-Asset, das innerhalb der 3D-Medien-Komponente angezeigt wird](/help/assets/assets-dm/3d-asset-in-3d-media.png)
-Ein vollständig interaktives 3D-Asset, wie im **[!UICONTROL Vorschaumodus]** angezeigt.
+Ein vollständig interaktives 3D-Asset, wie im **[!UICONTROL Vorschau]**-Modus angezeigt.
 
 1. Führen Sie im **[!UICONTROL Vorschaumodus]** einen der folgenden Schritte aus:
 
