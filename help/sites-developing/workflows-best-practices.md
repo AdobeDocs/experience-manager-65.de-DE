@@ -1,18 +1,14 @@
 ---
 title: Best Practices für Workflows
 description: Erfahren Sie mehr über die Best Practices für die Arbeit mit Workflows in Adobe Experience Manager.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: extending-aem
-content-type: reference
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: b3af1a140abc1c202fa58704440c5660f1d43123
 workflow-type: tm+mt
-source-wordcount: '1925'
-ht-degree: 100%
+source-wordcount: '1962'
+ht-degree: 84%
 
 ---
 
@@ -32,13 +28,13 @@ Beim Konfigurieren von Workflow-Prozessen (angepasst und/oder vorkonfiguriert) s
 
 Um hohe Aufnahmemengen zu optimieren, können Sie einen [Workflow als vorübergehend](/help/sites-developing/workflows.md#transient-workflows) definieren.
 
-Wenn ein Workflow vorübergehend ist, werden die Laufzeitdaten, die sich auf die Zwischenarbeitsschritte beziehen, bei ihrer Ausführung nicht im JCR festgehalten (die Ausgabedarstellungen werden aber beibehalten).
+Wenn ein Workflow vorübergehend ist, werden die Laufzeitdaten, die sich auf die Zwischenarbeitsschritte beziehen, bei der Ausführung nicht im JCR beibehalten (die Ausgabedarstellungen werden beibehalten).
 
 Zu den Vorteilen zählen:
 
-* Verringerung der Verarbeitungszeit des Workflows um bis zu 10 %.
+* Reduzierung der Workflow-Verarbeitungszeit um bis zu 10 %.
 * Erhebliche Verringerung des Repository-Wachstums.
-* Es sind keine CRUD-Workflows mehr zum Bereinigen erforderlich.
+* Es müssen keine weiteren CRUD-Workflows bereinigt werden.
 * Darüber hinaus wird die Anzahl der zu komprimierenden TAR-Dateien reduziert.
 
 >[!CAUTION]
@@ -51,7 +47,7 @@ Richtlinien zur Leistungsoptimierung von DAM-Workflows finden Sie im [Handbuch z
 
 ### Konfigurieren der maximalen Anzahl gleichzeitiger Workflows {#configure-the-maximum-number-of-concurrent-workflows}
 
-AEM kann die gleichzeitige Ausführung mehrerer Workflow-Threads zulassen. Standardmäßig ist die Anzahl der Threads auf die Hälfte der Anzahl der Prozessorkerne des Systems festgelegt.
+AEM kann die gleichzeitige Ausführung mehrerer Workflow-Threads zulassen. Standardmäßig ist die Anzahl der Threads so konfiguriert, dass sie der Hälfte der Anzahl der Prozessorkerne im System entspricht.
 
 In Fällen, in denen die ausgeführten Workflows sehr viele Systemressourcen beanspruchen, kann dies bedeuten, dass AEM für andere Aufgaben wie das Rendern der Authoring-Benutzeroberfläche wenig Ressourcen zur Verfügung stehen. Dies kann dazu führen, dass das System bei Aktivitäten wie etwa dem Massenhochladen von Bildern nur noch langsam reagiert.
 
@@ -67,13 +63,13 @@ Darüber hinaus gibt es eine separate Konfiguration für die **Granite-Workflow-
 
 ### Konfigurieren einzelner Auftragswarteschlangen {#configure-individual-job-queues}
 
-In einigen Fällen ist es nützlich, einzelne Auftragswarteschlangen zu konfigurieren, um parallele Threads oder andere Warteschlangenoptionen auf Basis einzelner Aufträge zu steuern. Sie können eine einzelne Warteschlange von der Web-Konsole aus über die **Apache Sling Job Queue Configuration**-Factory hinzufügen und konfigurieren. Führen Sie zum Ermitteln des entsprechenden Themas das Modell Ihres Workflows aus und suchen Sie es in der Konsole **Sling Jobs**, beispielsweise unter `http://localhost:4502/system/console/slingevent`.
+In einigen Fällen ist es nützlich, einzelne Auftragswarteschlangen zu konfigurieren, um gleichzeitige Threads oder andere Warteschlangenoptionen auf Einzelauftragsbasis zu steuern. Sie können eine einzelne Warteschlange von der Web-Konsole aus über die **Apache Sling Job Queue Configuration**-Factory hinzufügen und konfigurieren. Führen Sie zum Ermitteln des entsprechenden Themas das Modell Ihres Workflows aus und suchen Sie es in der Konsole **Sling-Aufträge**, beispielsweise unter `http://localhost:4502/system/console/slingevent`.
 
 Individuelle Auftragswarteschlangen können auch für Verlaufs-Workflows hinzugefügt werden.
 
 ### Konfigurieren der Workflow-Bereinigung {#configure-workflow-purging}
 
-In einer standardmäßigen Installation bietet AEM eine Wartungskonsole, in der tägliche und wöchentliche Wartungsaktivitäten geplant und konfiguriert werden können, z. B. bei:
+Bei einer Standardinstallation bietet AEM eine Wartungskonsole, in der tägliche und wöchentliche Wartungsaktivitäten geplant und konfiguriert werden können, z. B. unter:
 
 `http://localhost:4502/libs/granite/operations/content/maintenance.html`
 
@@ -230,8 +226,8 @@ Wie bei jeder benutzerdefinierten Entwicklung empfiehlt es sich, nach Möglichke
 Wenn Sie einen Workflow-Prozess implementieren, gilt Folgendes:
 
 * Eine Workflow-Sitzung wird bereitgestellt und sollte verwendet werden, solange kein zwingender Grund dagegenspricht.
-* Auf der Grundlage von Workflow-Schritten sollten keine neuen Sitzungen erstellt werden, da dies zu Inkonsistenzen beim Zustand sowie zu möglichen Parallelitätsproblemen in der Workflow-Engine führt.
-* Über einen Prozessschritt in einem Workflow sollte keine neue JCR-Sitzung initiiert werden. Passen Sie die von der Prozessschritt-API bereitgestellte Workflow-Sitzung an eine JCR-Sitzung an. Beispiel:
+* Es sollten keine neuen Sitzungen aus Workflow-Schritten erstellt werden, da dies zu Inkonsistenzen im Status bzw. in den Status sowie zu möglichen Problemen mit gleichzeitigen Workflows in der Workflow-Engine führt.
+* Sie sollten innerhalb eines Prozessschritts in einem Workflow keine neue JCR-Sitzung abrufen. Sie sollten die von der Prozess-Schritt-API bereitgestellte Workflow-Sitzung an eine JCR-Sitzung anpassen. Beispiel:
 
 ```
 public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
@@ -244,17 +240,17 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 Speichern einer Sitzung:
 
-* Wenn innerhalb eines Workflow-Prozesses `WorkflowSession` verwendet wird, um das Repository zu ändern, führen Sie keine explizite Speicherung der Sitzung durch. Die Sitzung wird nach Abschluss des Workflows gespeichert.
+* Wenn innerhalb eines Workflow-Prozesses die `WorkflowSession` verwendet wird, um das Repository zu ändern, führen Sie keine explizite Speicherung der Sitzung durch. Die Sitzung wird nach Abschluss des Workflows gespeichert.
 * `Session.Save` darf nicht innerhalb eines Workflow-Schritts aufgerufen werden:
 
-   * Es wird empfohlen, die Workflow-JCR-Sitzung anzupassen. In diesem Fall wird `save` nicht benötigt, da die Workflow-Engine die Sitzung nach Abschluss der Workflow-Ausführung automatisch speichert.
-   * Ein Prozessschritt sollte keine eigene JCR-Sitzung erstellen.
+   * Es wird empfohlen, die Workflow-JCR-Sitzung anzupassen. In diesem Fall ist keine `save` erforderlich, da die Workflow-Engine die Sitzung nach Abschluss der Workflow-Ausführung automatisch speichert.
+   * Es wird nicht empfohlen, dass ein Prozessschritt eine eigene JCR-Sitzung erstellt.
 
 * Unnötige Speichervorgänge zu vermeiden, bedeutet weniger Mehraufwand und somit eine höhere Workflow-Effizienz.
 
 >[!CAUTION]
 >
->Sollten Sie entgegen den hier angegebenen Empfehlungen eine eigene JCR-Sitzung erstellen, muss diese gespeichert werden.
+>Wenn Sie entgegen den hier angegebenen Empfehlungen eine eigene JCR-Sitzung erstellen, muss diese gespeichert werden.
 
 ### Verringern von Anzahl/Umfang der Starter {#minimize-the-number-scope-of-launchers}
 
@@ -282,15 +278,15 @@ Die benutzerdefinierte [Starter-Konfiguration](/help/sites-administering/workflo
 
 Durch die Objekterstellung im Speicher sowie durch die Knotenüberwachung im Repository können Workflows zu erheblichem Mehraufwand führen. Es empfiehlt sich daher, die Verarbeitung eines Workflows innerhalb dieses Workflows abzuwickeln, anstatt weitere Workflows zu starten.
 
-Ein Beispiel wäre etwa ein Workflow, der einen Geschäftsprozess für eine Gruppe von Inhalten implementiert und die Inhalte anschließend aktiviert. Es ist besser, einen benutzerdefinierten Workflow-Prozess zu erstellen, der jeden dieser Knoten aktiviert, anstatt für jeden der zu veröffentlichenden Inhaltsknoten ein Modell vom Typ **Inhalt aktivieren** zu starten. Dieser Ansatz führt zwar zu einem höheren Entwicklungsaufwand, ist aber effizienter, als für jede Aktivierung eine separate Workflow-Instanz zu starten.
+Ein Beispiel wäre etwa ein Workflow, der einen Geschäftsprozess für eine Gruppe von Inhalten implementiert und die Inhalte anschließend aktiviert. Es ist besser, einen benutzerdefinierten Workflow-Prozess zu erstellen, der jeden dieser Knoten aktiviert, anstatt für jeden der zu veröffentlichenden Inhaltsknoten ein Modell vom Typ **Inhalt aktivieren** zu starten. Dieser Ansatz erfordert zusätzliche Entwicklungsarbeiten, ist jedoch effizienter, wenn er ausgeführt wird, als für jede Aktivierung eine separate Workflow-Instanz zu starten.
 
 Ein weiteres Beispiel wäre ein Workflow, der mehrere Knoten verarbeitet, ein Workflow-Paket erstellt und dieses Paket anschließend aktiviert. Anstatt das Paket zu erstellen und anschließend einen separaten Workflow mit dem Paket als Payload zu erstellen, können Sie im Paketerstellungsschritt die Payload Ihres Workflows ändern und dann den Paketaktivierungsschritt innerhalb desselben Workflow-Modells aufrufen.
 
 ### Handler-Fortschritt {#handler-advance}
 
-Wenn Sie ein Workflow-Modell entwerfen, können Sie den Handler-Fortschritt für Ihre Workflow-Schritte aktivieren. Sie können Ihrem Workflow-Schritt auch Code hinzufügen, um den als Nächstes auszuführenden Schritt zu bestimmen und auszuführen.
+Beim Entwerfen eines Workflow-Modells haben Sie die Möglichkeit, den Handler-Fortschritt für Ihre Workflow-Schritte zu aktivieren. Sie können Ihrem Workflow-Schritt auch Code hinzufügen, um den als Nächstes auszuführenden Schritt zu bestimmen und auszuführen.
 
-Es wird empfohlen, den Handler-Fortschritt zu verwenden, da sich dadurch die Leistung verbessert.
+Es wird empfohlen, den Handler-Fortschritt zu verwenden, da er eine bessere Leistung bietet.
 
 ### Phasen eines Workflows {#workflow-stages}
 
