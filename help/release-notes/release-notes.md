@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 7eafeae8f504ab27a27ec54a0fc1e29cc881bcf7
+source-git-commit: cc10229ca767a803fe0b24b1b4b47111e6c88cdd
 workflow-type: tm+mt
 source-wordcount: '7111'
 ht-degree: 24%
@@ -623,16 +623,6 @@ Für die folgenden Probleme ist ein Hotfix zum Herunterladen und Installieren ve
 
 * **FORMS-23703** Wenn die `contains` ohne Standardwert konfiguriert ist, schlägt die Server-seitige Validierung für ein adaptives Formular fehl. Sie können die neueste Version von [AEM Forms 6.5.25.0 Service Pack](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) installieren, um das Problem zu beheben.
 * **GRANITE-63681** Formulardatenmodell-Connectoren können möglicherweise nicht authentifiziert werden, da die erforderlichen Schlüsselwörter und Regex-Muster standardmäßig nicht zulässig sind. Um das Problem zu beheben, laden Sie den Hotfix vom (Link[&#x200B; herunter und installieren &#x200B;](/help/release-notes/aem-forms-hotfix.md) ihn.
-
-  <!--
-  To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
-
-  * **Keywords:** `fdm-client-secret`, `oauth-client-secret`
-  * **Regex:** `^\[/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+(?:,/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+)*\]$`
-
-    >[!VIDEO](https://video.tv.adobe.com/v/3479697)
-  -->
-
 * Bei der **FORMS-23979**-Konvertierung von HTML in PDF (PDFG) können zeitweise Zeitüberschreitungen auftreten. Anschließend wurde eine neuere Version des Forms-Add-ons für SP24 veröffentlicht, die die Fehlerbehebung enthält. Wenn dieses Problem auftritt, aktualisieren Sie Ihre Umgebung auf das [neueste veröffentlichte Forms-Add-on für 6.5.25.0](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 * **FORMS-23717** Nach dem Upgrade auf **AEM Forms-6.5.25.0** können `server.log` und `error.log` mit wiederholten WARNMELDUNGEN wie *Erstellung der sicheren Parserfactory fehlgeschlagen* oder *Sicherheitsattribut … wird nicht unterstützt*. Protokolle können um ca. **5-10 Zeilen pro Sekunde (** von MB pro Stunde) zunehmen, wodurch Festplatten ausgefüllt und der Produktions-Rollout blockiert werden kann.
 
