@@ -53,7 +53,7 @@ Er ist direkt in AEM eingebettet und kann über die AEM Experience Hub-, Cloud M
 
 Das folgende Video (3 Minuten und 25 Sekunden lang) bietet eine schrittweise Anleitung zum KI-Assistenten in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475367/?captions=ger&learn=on&enablevpops)
 
 ## Zugriff auf den KI-Assistenten in AEM erhalten{#get-access}
 
