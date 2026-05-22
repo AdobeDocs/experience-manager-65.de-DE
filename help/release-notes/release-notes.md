@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: d60ff7278e62833c732c55d328882a2976bfd964
+source-git-commit: e12267324516982a654ce61ff6c11554f8c87d8a
 workflow-type: tm+mt
 source-wordcount: '7116'
 ht-degree: 24%
@@ -634,9 +634,9 @@ Um das Protokollvolumen zu reduzieren, legen Sie in Ihrer Anwendungsserverkonfig
 
 Die folgenden ZIP-Dateien enthalten die Textdokumente, in denen die in dieser Version [!DNL Experience Manager] 6.5 Service Pack enthaltenen OSGi-Bundles und Inhaltspakete aufgelistet sind:
 
-* [Liste der in Experience Manager 6.5.25.0enthaltenen OSGi-Pakete](/help/release-notes/assets/65250-bundles.zip)
+* [Liste der in Experience Manager 6.5.25.0](/help/release-notes/assets/65250-bundles.zip) enthaltenen OSGi-Bundles
 <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Liste der in Experience Manager 6.5.25.0enthaltenen Inhaltspakete](/help/release-notes/assets/65250-packages.zip)
+* [Liste der in Experience Manager 6.5.25.0](/help/release-notes/assets/65250-packages.zip) enthaltenen Inhaltspakete
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Eingeschränkte Websites{#restricted-sites}
