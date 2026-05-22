@@ -27,7 +27,7 @@ Dieses Tutorial bietet ein End-to-End-Framework zum Erstellen einer interaktiven
 
 Die folgende Abbildung zeigt die Bausteine, die zum Erstellen einer interaktiven Kommunikation erforderlich sind.
 
-![ Workflow](assets/workflow.gif)
+![&#x200B; Workflow](assets/workflow.gif)
 
 Am Ende dieses Tutorials können Sie Folgendes:
 
