@@ -7,8 +7,8 @@ feature: Headless,Content Fragments
 role: Admin, Developer
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 100%
+source-wordcount: '813'
+ht-degree: 99%
 
 ---
 

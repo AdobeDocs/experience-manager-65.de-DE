@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 100%
+source-wordcount: '1046'
+ht-degree: 98%
 
 ---
 
@@ -47,8 +47,8 @@ Ein Telekommunikationsanbieter sendet monatliche Rechnungen per E-Mail an seine 
 
 ## Voraussetzungen {#prerequisites}
 
-* Richten Sie eine AEM-Author-Instanz ein.
-* Installieren Sie das [AEM Forms-Add-On](/help/forms/using/installing-configuring-aem-forms-osgi.md) auf der Author-Instanz
+* Richten Sie eine AEM-Autoreninstanz ein.
+* Installieren Sie das [AEM Forms-Add-On](/help/forms/using/installing-configuring-aem-forms-osgi.md) auf der Autoreninstanz
 * Richten Sie die MYSQL-Datenbank ein
 * Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Die Beispiele in diesem Tutorial basieren auf der MySQL-Datenbank und verwenden den [MySQL JDBC-Datenbanktreiber von Oracle](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
@@ -68,7 +68,7 @@ So erstellen Sie eine Anatomie für die interaktive Kommunikation mit den folgen
 * Bedingte Daten
 * Bilder
 
-[](/help/forms/using/planning-interactive-communications.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
 
 ## Schritt 2: Erstellen eines Formulardatenmodells {#step-create-form-data-model}
 
@@ -80,14 +80,14 @@ Mit einem Formulardatenmodell können Sie eine interaktive Kommunikation mit unt
 
 * Konfigurieren der Datenbankinstanz (MySQL-Datenbank) als eine Datenquelle
 * Erstellen des Formulardatenmodells mithilfe der MySQL-Datenbank als Datenquelle
-* Hinzufügen von Datenmodellobjekten zum Datenmodell
-* Konfigurieren der Lese- und Schreibdienste für Datenmodellobjekte
+* Hinzufügen von Datenmodellobjekten zum Formulardatenmodell
+* Konfigurieren der Lese- und Schreibdienste für das Formulardatenmodell
 * Erstellen von Verknüpfungen zwischen den Datenmodellobjekten
 * Anzeigen automatisch generierter Beispieldaten
 * Beispieldaten bearbeiten
 * Testen des Formulardatenmodells und der konfigurierten Dienste mit Testdaten
 
-[](/help/forms/using/create-form-data-model0.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-form-data-model0.md)
 
 ## Schritt 3: Erstellen Sie Dokumentfragmente {#step-create-document-fragments}
 
@@ -101,7 +101,7 @@ Dokumentfragmente sind wiederverwendbare Komponenten einer Korrespondenz, die zu
 * Erstellen von Variablen
 * Erstellen und Anwenden von Regeln
 
-[](/help/forms/using/create-document-fragments.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-document-fragments.md)
 
 ## Schritt 4: Erstellen Sie Vorlagen {#step-create-templates}
 
@@ -119,7 +119,7 @@ Die Vorlagen für den Web-Kanal werden in AEM erstellt. Autorinnen und Autoren s
 * Hochladen der XDP-Vorlagen auf den AEM Forms-Server
 * Erstellen und Aktivieren von Vorlagen für den Web-Kanal
 
-[](/help/forms/using/create-templates-print-web.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
 
 ## Schritt 5: Erstellen Sie interaktive Kommunikation {#step-create-an-interactive-communication}
 
@@ -138,7 +138,7 @@ Eine interaktive Kommunikation kann über zwei Kanäle bereitgestellt werden: de
 * Erstellen eines Diagramms in der Web-Version der interaktiven Kommunikation
 * Erstellen von Hyperlinks in der Web-Version von interaktiver Kommunikation
 
-[](/help/forms/using/create-interactive-communication0.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
 
 ## Schritt 6: Veröffentlichen Sie Ihre interaktive Kommunikation {#step-publish-your-interactive-communication}
 

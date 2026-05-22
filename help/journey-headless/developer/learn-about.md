@@ -7,7 +7,7 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1639'
 ht-degree: 100%
 
 ---
@@ -115,7 +115,7 @@ Als Branchenführer im Bereich Digital Experience Management hat Adobe erkannt, 
 
 Diese Tour konzentriert sich auf das reine Headless-Modell der Inhaltsbereitstellung. Sobald Sie jedoch über dieses Grundwissen verfügen, können Sie weiter erkunden, wie Sie die Leistungsfähigkeit beider Modelle nutzen können.
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Danke für Ihren Einstieg in die AEM Headless-Tour! Nachdem Sie dieses Dokument gelesen haben, sollten Sie:
 

@@ -8,8 +8,8 @@ exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f941782f9a4201e7bff898853d3fc18954418500
-workflow-type: ht
-source-wordcount: '908'
+workflow-type: tm+mt
+source-wordcount: '997'
 ht-degree: 100%
 
 ---
@@ -46,7 +46,7 @@ Die Website wird mit Adobe Experience Manager (AEM) ausgeführt und verwendet AE
 ### Voraussetzung {#prerequisite}
 
 * Richten Sie eine [AEM-Autoreninstanz ein](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html?lang=de#author-and-publish-installs)
-* Installieren Sie das [AEM Forms-Add-On](../../forms/using/installing-configuring-aem-forms-osgi.md) auf der Author-Instanz.
+* Installieren Sie das [AEM Forms-Add-On](../../forms/using/installing-configuring-aem-forms-osgi.md) auf der Autoreninstanz.
 * Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Die Beispiele im Tutorial basieren auf einer [!DNL MySQL]-Datenbank und verwenden [!DNL Oracle's] [MySQL JDBC-Datenbanktreiber](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 * Richten Sie eine Datenbank mit Kundendaten in den unten gezeigten Feldern ein. Eine Datenbank ist nicht unbedingt notwendig zum Erstellen eines adaptiven Formulars. In diesem Tutorial wird eine Datenbank zur Demonstration der Formulardatenmodell- und Persistenzfunktionen von AEM [!DNL Forms] verwendet.
@@ -79,7 +79,7 @@ Ziele:
 * Konfigurieren der Datenbankinstanz der Website ([!DNL MySQL]-Datenbank) als Datenquelle.
 * Erstellen des Formulardatenmodells mithilfe der [!DNL MySQL]-Datenbank als Datenquelle.
 * Hinzufügen von Datenmodellobjekten zum Datenmodell.
-* Konfigurieren der Lese- und Schreibdienste für Datenmodellobjekte.
+* Konfigurieren der Lese- und Schreibdienste für das Formulardatenmodell.
 * Testen des Formulardatenmodells und der konfigurierten Dienste mit Testdaten.
 
 [![Siehe Handbuch](assets/see-the-guide-sm.png)](create-form-data-model.md)

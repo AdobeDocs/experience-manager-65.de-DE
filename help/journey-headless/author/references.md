@@ -7,8 +7,8 @@ feature: Headless,Content Fragments
 role: Admin, Developer, User, Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 100%
+source-wordcount: '724'
+ht-degree: 96%
 
 ---
 
@@ -61,7 +61,7 @@ Bei Ihnen sind möglicherweise die folgenden Inhaltsfragmentmodelle definiert:
 * Person
 * Auszeichnungen
 
-Es scheint ziemlich einfach, aber ein Unternehmen hat sowohl einen CEO als auch Angestellte …und dies sind alles Leute, die jeweils als Person definiert sind.
+Es scheint ziemlich einfach zu sein, aber ein Unternehmen hat sowohl einen CEO als auch Mitarbeiter…. und das sind alles Personen, die jeweils als Person definiert sind.
 
 Und eine Person kann eine Auszeichnung bekommen (oder vielleicht zwei).
 

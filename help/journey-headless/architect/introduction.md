@@ -7,8 +7,8 @@ feature: Headless,Content Fragments
 role: Admin, Developer
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 100%
+source-wordcount: '746'
+ht-degree: 96%
 
 ---
 
@@ -71,7 +71,7 @@ Das ist eher ein Entwicklungsdetail – aber es könnte Sie interessieren, nur u
 
 Nachdem Sie die Inhaltsfragmentmodelle erstellt haben und Ihre Autorinnen und Autoren sie zur Erstellung der Inhalte verwendet haben, müssen die Headless-Anwendungen auf diese Inhalte zugreifen.
 
-Mit Adobe Experience Manager (AEM) können Sie über die AEM-GraphQL-API selektiv auf Ihre Inhaltsfragmente zugreifen, um nur die benötigten Inhalte zurückzugeben. Mithilfe der API kann ein Entwickler Abfragen formulieren, die bestimmte Inhalte auswählen. Dieser Auswahlprozess basiert auf *Ihren* Inhaltsfragmentmodellen.
+Mit Adobe Experience Manager (AEM) können Sie über die AEM-GraphQL-API selektiv auf Ihre Inhaltsfragmente zugreifen, um nur die benötigten Inhalte zurückzugeben. Mithilfe der API kann ein Entwickler Abfragen formulieren, die bestimmte Inhalte auswählen.Dieser Auswahlprozess basiert auf *Ihren* Inhaltsfragmentmodellen.
 
 Dies bedeutet, dass Sie die Headless-Bereitstellung von strukturierten Inhalten zur Verwendung in Ihren Programmen umsetzen können.
 

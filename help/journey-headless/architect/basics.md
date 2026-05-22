@@ -7,8 +7,8 @@ feature: Headless,Content Fragments
 role: Admin, Developer
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 100%
+source-wordcount: '897'
+ht-degree: 95%
 
 ---
 
@@ -103,7 +103,7 @@ Zwei Datentypen bieten Verweise auf Inhalte außerhalb eines bestimmten Fragment
 Dies bietet einen einfachen Verweis auf andere Inhalte beliebigen Typs.
 Sie können beispielsweise auf ein Bild an einer bestimmten Stelle verweisen.
 
-* **Fragmentreferenz**
+* **Fragmentverweis**
 Dies bietet Verweise auf andere Inhaltsfragmente.
 Dieser Referenztyp wird verwendet, um verschachtelte Inhalte zu erstellen und die Beziehungen einzuführen, die zum Modellieren Ihres Inhalts erforderlich sind.
 Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
@@ -133,7 +133,7 @@ Bei Ihnen sind möglicherweise die folgenden Inhaltsfragmentmodelle definiert:
 * Person
 * Auszeichnungen
 
-Es scheint ziemlich einfach, aber ein Unternehmen hat sowohl einen CEO als auch Angestellte …und dies sind alles Leute, die jeweils als Person definiert sind.
+Es scheint ziemlich einfach zu sein, aber ein Unternehmen hat sowohl einen CEO als auch Mitarbeiter…. und das sind alles Personen, die jeweils als Person definiert sind.
 
 Und eine Person kann eine Auszeichnung bekommen (oder vielleicht zwei).
 

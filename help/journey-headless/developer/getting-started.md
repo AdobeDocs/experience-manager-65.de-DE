@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '2999'
-ht-degree: 100%
+source-wordcount: '3072'
+ht-degree: 99%
 
 ---
 
@@ -176,7 +176,7 @@ Planen Sie die Übersetzung ganz am Anfang des Projekts. Betrachten Sie den Übe
 Erstellen Sie einen Plan zur benötigten Übersetzung von Inhalten.
 
 * Benötigen Sie nur verschiedene Sprachen oder auch Sprachvarianten zur Anpassung an regionale Besonderheiten?
-* Müssen Rich-Media-Inhalte wie Bilder oder Videos für verschiedene Länder unterschiedlich sein?
+* Müssen Rich-Media-Inhalte wie Bilder oder Videos für verschiedene Gebietsschemata unterschiedlich sein?
 
 Verschaffen Sie sich Klarheit über Ihren Workflow zur Aktualisierung von Inhalten. Wie sieht der Genehmigungsprozess aus, den das System unterstützen muss? Können AEM-Workflows genutzt werden, um diesen Prozess zu automatisieren?
 
@@ -191,7 +191,7 @@ Die Ordnerhierarchie kann zwei wesentliche Probleme im Zusammenhang mit dem Cont
 * [Übersetzung](#translation): AEM verwaltet die Übersetzung von Inhalten, indem Kopien von Inhalten in gebietsschemaspezifischen Ordnern verwaltet werden.
 * Organisation: Ordner werden verwendet, um eine Inhaltshierarchie zu definieren, die zur Unterstützung der Anforderungen an die Übersetzung sowie zur logischen Verwaltung von Inhaltsfragmenten erforderlich ist.
 
-AEM ermöglicht eine sehr flexible Inhaltsstruktur und eine Hierarchie kann beliebig groß sein. Es ist jedoch wichtig zu verstehen, dass Änderungen an der Ordnerstruktur unbeabsichtigte Folgen für bestehende Abfragen haben können, die [auf den Inhaltspfad angewiesen sind.](#developer) Daher kann eine klar definierte Hierarchie, die im Voraus festgelegt ist, für Inhaltsautoren äußerst hilfreich sein.
+AEM ermöglicht eine sehr flexible Inhaltsstruktur und eine Hierarchie kann beliebig groß sein. Es ist jedoch wichtig zu verstehen, dass Änderungen an der Ordnerstruktur unbeabsichtigte Folgen für bestehende Abfragen haben können, die [auf den Inhaltspfad angewiesen sind.](#developer) Daher kann eine klar definierte Hierarchie, die im Voraus festgelegt ist, für Inhaltsautorinnen und -autoren äußerst hilfreich sein.
 
 Ordner können auch darauf beschränkt werden, nur bestimmte Inhaltstypen zuzulassen (basierend auf Inhaltsfragmentmodellen). Es wird allgemein empfohlen, immer explizit anzugeben, welche Modelle für alle Ordner in der Hierarchie zulässig sind. Das Angeben von zulässigen Inhalten für einen bestimmten Ordner:
 
@@ -263,7 +263,7 @@ Oft haben verschiedene Bereiche von Erlebnissen unterschiedliche Häufigkeiten v
 * Müssen bestimmte Inhaltstypen nach einem bestimmten Zeitraum ablaufen?
 * Gibt es Elemente, die benutzerspezifisch sind und daher nicht zwischengespeichert werden können?
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Tour abgeschlossen haben, sollten Sie über die folgenden Kenntnisse verfügen:
 
@@ -285,12 +285,12 @@ Es wird zwar empfohlen, zum nächsten Teil der Headless-Development-Tour voranzu
 * [AEM Headless-Übersetzungs-Tour](/help/journey-headless/translation/overview.md) – Diese Dokumentations-Tour vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie sowie davon, wie AEM Headless Inhalte bereitstellt und wie Sie sie übersetzen können.
 
 * [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de): Nutzen Sie diese praxisnahen Tutorials, um herauszufinden, wie Sie die verschiedenen Optionen für die Bereitstellung von Inhalten an Headless-Endpunkte mit AEM verwenden können, und wählen Sie aus, was für Sie am besten geeignet ist.
-* [Headless Content Management mit GraphQL-APIs](https://experienceleague.adobe.com/de?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses): In diesem Kurs erhalten Sie einen Überblick über die in AEM implementierte GraphQL-API. Eine Authentifizierung über Adobe ID ist erforderlich.
+* [Headless-Content-Management mit GraphQL-APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses): In diesem Kurs erhalten Sie einen Überblick über die in AEM implementierte GraphQL-API. Eine Authentifizierung über Adobe ID ist erforderlich.
 * [AEM-Handbuch zu WKND – GraphQL](https://github.com/adobe/aem-guides-wknd-graphql): Dieses GitHub-Projekt enthält Beispielprogramme zu den AEM-GraphQL-APIs.
 * [Authoring-Konzepte](/help/sites-authoring/author.md): Technische Dokumentation für die Authoring-Umgebung von AEM einschließlich Details zur Einrichtung von Autoren- und Veröffentlichungsinstanzen.
 * [Veröffentlichen von Seiten](/help/sites-authoring/publishing-pages.md): Technische Dokumentation zur Veröffentlichung von Inhalten auf AEM.
 * [Benennungskonventionen](/help/sites-developing/naming-conventions.md): Technische Dokumentation zu den Seitenbenennungsbeschränkungen in AEM.
-* [Multi Site Manager und Übersetzung](/help/sites-administering/msm-and-translation.md): Technische Dokumentation zu den leistungsstarken Übersetzungsfunktionen von AEM.
+* [Multi-Site Manager und Übersetzung](/help/sites-administering/msm-and-translation.md): Technische Dokumentation zu den leistungsstarken Übersetzungsfunktionen von AEM.
 * [AEM-Workflows](/help/sites-authoring/workflows.md): Technische Dokumentation zur Automatisierung von Workflows in AEM
 * [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md): Technische Dokumentation für Inhaltsfragmente.
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md): Technische Dokumentation für Inhaltsfragmentmodelle.

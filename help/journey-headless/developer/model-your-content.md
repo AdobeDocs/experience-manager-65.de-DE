@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 100%
+source-wordcount: '1833'
+ht-degree: 98%
 
 ---
 
@@ -86,7 +86,7 @@ Beispielsweise Werbung für Sonderveranstaltungen für alle Schulen in der Regio
 
 Was Sie beschreiben möchten, wird als **Entitäten** bezeichnet – im Grunde die „Dinge“, über die Informationen gespeichert werden sollen.
 
-Die Informationen, die über sie gespeichert werden sollen, sind die **Attribute** (Eigenschaften), z. B. die Namen und Qualifikationen der Lehrkräfte.
+Die Informationen, die über sie gespeichert werden sollen, sind die **Attribute** (Eigenschaften), z. B. die Namen und Qualifizierungen der Lehrkräfte.
 
 Dann gibt es verschiedene **Beziehungen** zwischen den Entitäten. Beispielsweise hat eine Schule in der Regel nur eine(n) Schulleiter(in) und viele Lehrkräfte (und normalerweise ist der Schulleiter auch Lehrer).
 
@@ -184,7 +184,7 @@ AEM stellt die folgenden Datentypen bereit, mit denen Sie Ihren Inhalt modellier
 * Einzeiliger Text
 * Mehrzeiliger Text
 * Zahl
-* Boolesch
+* Boolescher Wert
 * Datum und Uhrzeit
 * Aufzählung
 * Tags
@@ -200,7 +200,7 @@ Zwei Datentypen bieten Verweise auf Inhalte außerhalb eines bestimmten Fragment
 Dies bietet einen einfachen Verweis auf andere Inhalte beliebigen Typs.
 Sie können beispielsweise auf ein Bild an einer bestimmten Stelle verweisen.
 
-* **Fragmentreferenz**
+* **Fragmentverweis**
 Dies bietet Verweise auf andere Inhaltsfragmente.
 Dieser Referenztyp wird verwendet, um verschachtelte Inhalte zu erstellen und die Beziehungen einzuführen, die zum Modellieren Ihres Inhalts erforderlich sind.
 Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
@@ -249,7 +249,7 @@ Nachdem das Fragment erstellt wurde, können Sie es im Inhaltsfragmenteditor öf
 
 ### Erstellen von Inhaltsfragmenten {#creating-content-fragments}
 
-Nach Auswahl des entsprechenden Modells wird ein Inhaltsfragment zur Bearbeitung im Inhaltsfragment-Editor geöffnet:
+Nach Auswahl des entsprechenden Modells wird ein Inhaltsfragment zur Bearbeitung im Inhaltsfragmenteditor geöffnet:
 
 ![Inhaltsfragmente-Editor](assets/cfm-editor.png)
 
