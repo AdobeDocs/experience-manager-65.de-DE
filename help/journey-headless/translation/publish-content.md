@@ -7,7 +7,7 @@ feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1348'
 ht-degree: 100%
 
 ---
@@ -73,7 +73,7 @@ Unter diesem Pfad befinden sich Unterordner für jede Übersetzungssprache und S
 1. Vergewissern Sie sich im Fenster **Veröffentlichung verwalten**, dass unter **Aktion** automatisch **Veröffentlichen** und unter **Planung** **Jetzt** ausgewählt ist. Klicken Sie auf **Weiter**.
    ![Veröffentlichungsoptionen verwalten](assets/manage-publication-options.png)
 1. Bestätigen Sie im nächsten Fenster, **Veröffentlichung verwalten**, dass die richtigen Pfade ausgewählt sind. Klicken Sie auf **Veröffentlichen**.
-   ![Verwalten des Veröffentlichungsumfangs](assets/manage-publication-scope.png)
+   ![Umfang der Veröffentlichung verwalten](assets/manage-publication-scope.png)
 1. AEM bestätigt die Veröffentlichungsaktion mit einer Popup-Meldung am unteren Bildschirmrand.
    ![Banner „Ressourcen veröffentlicht“](assets/resources-published-message.png)
 
@@ -95,7 +95,7 @@ Der Prozess unterscheidet sich jedoch geringfügig, je nachdem, ob Sie sich für
 
 ### Aktualisieren eines automatisch erstellten Übersetzungsprojekts {#updating-automatic-project}
 
-1. Gehen Sie zu **Navigation** > **Assets** > **Dateien**.  Beachten Sie, dass Headless-Inhalte in AEM als Assets gespeichert werden. Diese werden auch als Inhaltsfragmente bezeichnet.
+1. Gehen Sie zu **Navigation** > **Assets** > **Dateien**. Beachten Sie, dass Headless-Inhalte in AEM als Assets gespeichert werden. Diese werden auch als Inhaltsfragmente bezeichnet.
 1. Wählen Sie den Sprachstamm Ihres Projekts aus. In diesem Fall wird `/content/dam/wknd/en` ausgewählt.
 1. Klicken Sie auf die Leistenauswahl und zeigen Sie das Bedienfeld **Verweise** an.
 1. Klicken Sie auf **Sprachkopien**.
