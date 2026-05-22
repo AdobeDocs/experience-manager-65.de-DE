@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 100%
+source-wordcount: '1108'
+ht-degree: 98%
 
 ---
 
@@ -265,7 +265,7 @@ Nutzung erfolgt über:
 
 `GET /{cfParentPath}/{cfName}.json`
 
-Zum Beispiel:
+Beispiel:
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -305,7 +305,7 @@ Weitere Informationen zur Verwendung der AEM Assets REST-API finden Sie unter:
 * Adobe Experience Manager Assets-HTTP-API (Zusätzliche Ressourcen)
 * Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API (Zusätzliche Ressourcen)
 
-## Wie geht es weiter {#whats-next}
+## So geht es weiter {#whats-next}
 
 Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Tour abgeschlossen haben, sollten Sie über die folgenden Kenntnisse verfügen:
 
@@ -327,11 +327,11 @@ Sie sollten Ihre AEM Headless-Tour fortsetzen, indem Sie sich das Dokument [So g
 * [Assets-HTTP-API](/help/assets/mac-api-assets.md)
 * [Inhaltsfragment-REST-API](/help/assets/assets-api-content-fragments.md)
    * [API-Referenz](/help/assets/assets-api-content-fragments.md#api-reference)
-* [Adobe Experience Manager Assets API – Inhaltsfragmente](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets-API - Inhaltsfragmente](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
 * [AEM-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 * [Erklärung: CORS/AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [Video: Entwicklung für CORS mit AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-* Eine [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
+* [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
 * Das [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
 * [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)
