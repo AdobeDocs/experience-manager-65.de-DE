@@ -7,7 +7,7 @@ feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '845'
 ht-degree: 100%
 
 ---
@@ -64,7 +64,7 @@ Es gibt eine **Übersetzungskonfigurations**-Konsole, die zum Konfigurieren von 
 
 In der Benutzeroberfläche der **Übersetzungskonfiguration** stehen verschiedene Optionen für Ihre Übersetzungsregeln zur Verfügung. Hier werden die wichtigsten und typischsten Schritte hervorgehoben, die für eine einfache Konfiguration der Headless-Lokalisierung erforderlich sind.
 
-1. Klicken Sie auf **Kontext hinzufügen**, womit Sie einen Pfad hinzufügen können.  Dies ist der Pfad der Inhalte, die von der Regel betroffen sind.
+1. Klicken Sie auf **Kontext hinzufügen**, womit Sie einen Pfad hinzufügen können. Dies ist der Pfad der Inhalte, die von der Regel betroffen sind.
    ![Kontext hinzufügen](assets/add-translation-context.png)
 1. Verwenden Sie den Pfad-Browser, um den erforderlichen Pfad auszuwählen, und klicken Sie zum Speichern auf die Schaltfläche **Bestätigen**. Denken Sie daran, dass Inhaltsfragmente, die Headless-Inhalte enthalten, sich im Allgemeinen unter `/content/dam/<your-project>` befinden.
    ![Pfad auswählen](assets/select-context.png)

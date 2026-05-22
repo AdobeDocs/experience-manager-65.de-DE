@@ -12,7 +12,7 @@ feature: Authoring,Content Fragments
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1138'
+source-wordcount: '1158'
 ht-degree: 100%
 
 ---
@@ -134,7 +134,7 @@ Im entsprechenden Konfigurationsdialogfeld können Sie die verfügbaren Paramete
 
 * **Überschriften als separate Absätze behandeln**
 
-### Schnelle Verbindung zum Fragmenteditor     {#quick-connection-to-fragment-editor}
+### Schnelle Verbindung zum Fragmenteditor {#quick-connection-to-fragment-editor}
 
 Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols **Bearbeiten** in der Komponenten-Symbolleiste öffnen. Damit können Sie [das Inhaltsfragment bearbeiten und verwalten](/help/assets/content-fragments/content-fragments.md).
 
@@ -162,7 +162,7 @@ Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
 >[!NOTE]
 >
->Sie können auch [visuelle Assets (Bilder) in das Fragment selbst einfügen](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>Sie können auch [visuelle Elemente (Bilder) in das Fragment selbst einfügen](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
 >Die in das Inhaltsfragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz verbunden. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden.
 
@@ -184,7 +184,7 @@ Wenn Sie [verknüpfte Inhalte](/help/assets/content-fragments/content-fragments-
 
 >[!NOTE]
 >
->Es gibt verschiedene Methoden zum Hinzufügen von [visuellen Assets (z. B. Bildern)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite.
+>Es gibt diverse Methoden, um [visuelle Assets (zum Beispiel Fotos)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zum Fragment und/oder der Seite hinzuzufügen.
 
 >[!NOTE]
 >

@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '2115'
-ht-degree: 100%
+source-wordcount: '2121'
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ Sie erhalten eine Nachricht, dass das Projekt erstellt wurde.
 
 >[!NOTE]
 >
->Es wird davon ausgegangen, dass die erforderliche Sprachstruktur für die Übersetzungssprachen bereits im Rahmen der [Definition Ihrer Inhaltsstruktur erstellt wurde.](getting-started.md#content-structure) Dies sollte in Zusammenarbeit mit dem Inhaltsarchitekten erfolgen.
+>Es wird davon ausgegangen, dass die erforderliche Sprachstruktur für die Übersetzungssprachen bereits im Rahmen der [Definition Ihrer Inhaltsstruktur“ erstellt wurde](getting-started.md#content-structure) Dies sollte in Zusammenarbeit mit der Inhaltsarchitektin bzw. dem Inhaltsarchitekten erfolgen.
 >
 >Wenn die Sprachordner nicht vorab erstellt werden, können Sie keine Sprachkopien, wie in den vorherigen Schritten beschrieben, erstellen.
 
