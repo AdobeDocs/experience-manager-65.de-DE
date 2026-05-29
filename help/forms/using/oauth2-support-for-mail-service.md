@@ -16,7 +16,7 @@ ht-degree: 95%
 
 Um es Unternehmen zu ermöglichen, sichere E-Mail-Anforderungen zu erfüllen, bietet AEM Forms OAuth 2.0-Unterstützung für die Integration mit Microsoft® Office 365-Mailserver-Protokollen. Sie können den OAuth 2.0-Authentifizierungsdienst von Azure Active Directory (Azure AD) verwenden, um sich mit verschiedenen Protokollen wie IMAP, POP oder SMTP zu verbinden und auf die E-Mail-Daten von Office 365-Benutzenden zuzugreifen. Nachfolgend finden Sie eine schrittweise Anleitung zur Konfiguration der Microsoft® Office 365-Mailserver-Protokolle für die Authentifizierung über den OAuth 2.0-Dienst:
 
-1. Melden Sie sich bei [https://portal.azure.com/](https://portal.azure.com/) an, suchen Sie in der **nach**Azure Active Directory, und klicken Sie auf das Ergebnis.
+1. Melden Sie sich bei [https://portal.azure.com/](https://portal.azure.com/) an, suchen Sie in der **nach**&#x200B;Azure Active Directory, und klicken Sie auf das Ergebnis.
 Alternativ können Sie direkt zu [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview navigieren](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Klicken Sie auf **Hinzufügen** > **App-Registrierung** > **Neue Registrierung**.
 
