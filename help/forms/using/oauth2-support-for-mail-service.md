@@ -5,10 +5,10 @@ exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 9b4dd5a4a137e529be8142fff1ddbfca889e64ae
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 100%
+source-wordcount: '1032'
+ht-degree: 95%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 100%
 
 Um es Unternehmen zu ermöglichen, sichere E-Mail-Anforderungen zu erfüllen, bietet AEM Forms OAuth 2.0-Unterstützung für die Integration mit Microsoft® Office 365-Mailserver-Protokollen. Sie können den OAuth 2.0-Authentifizierungsdienst von Azure Active Directory (Azure AD) verwenden, um sich mit verschiedenen Protokollen wie IMAP, POP oder SMTP zu verbinden und auf die E-Mail-Daten von Office 365-Benutzenden zuzugreifen. Nachfolgend finden Sie eine schrittweise Anleitung zur Konfiguration der Microsoft® Office 365-Mailserver-Protokolle für die Authentifizierung über den OAuth 2.0-Dienst:
 
-1. Melden Sie sich unter [https://portal.azure.com/](https://portal.azure.com/) an, suchen Sie in der Suchleiste nach **Azure Active Directory** und klicken Sie auf das Ergebnis.
-Alternativ können Sie direkt zu [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) navigieren
+1. Melden Sie sich bei [https://portal.azure.com/](https://portal.azure.com/) an, suchen Sie in der **nach**Azure Active Directory, und klicken Sie auf das Ergebnis.
+Alternativ können Sie direkt zu [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview navigieren](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Klicken Sie auf **Hinzufügen** > **App-Registrierung** > **Neue Registrierung**.
 
    ![App-Registrierung](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
 1. Füllen Sie die Informationen entsprechend Ihren Anforderungen aus und klicken Sie dann auf **Registrieren**.
-   ![Unterstütztes Konto](/help/forms/using/assets/azure_suuportedaccountype.png) 
-In dem Fall oben ist die Option **Konten in einem beliebigen Organisationsverzeichnis (beliebiges Azure AD-Verzeichnis – Multitenant) und persönliche Microsoft®-Konten (z. B. Skype, Xbox)** ausgewählt.
+   ![Unterstütztes Konto](/help/forms/using/assets/azure_suuportedaccountype.png)
+Im obigen Fall ist die Option **Konten in einem beliebigen Organisationsverzeichnis (Beliebiges Azure AD-Verzeichnis - Multitenant) und persönliche Microsoft®-Konten (z.B. Skype, Xbox** ausgewählt.
 
    >[!NOTE]
    >
@@ -71,7 +71,7 @@ Als Nächstes müssen Sie den Autorisierungs-Code generieren, wie in den folgend
 
 1. Öffnen Sie die folgende URL im Browser, nachdem Sie `clientID` durch `<client_id>` und `redirect_uri` durch den Redirect-URI Ihrer Anwendung ersetzt haben:
 
-   ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login```
+   `https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
    >[!NOTE]
    >
