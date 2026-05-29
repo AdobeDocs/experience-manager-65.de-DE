@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 7df2debfd24bb6caca27ecea2f1b98966095a553
+source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
 workflow-type: tm+mt
-source-wordcount: '10489'
+source-wordcount: '10527'
 ht-degree: 98%
 
 ---
@@ -74,8 +74,8 @@ Bevor Sie mit der Installation und Konfiguration der AEM Forms-Dokumentendienste
 
 * Die Client-Software, die von PDF Generator für die Konvertierung unter Microsoft® Windows und Linux® benötigt wird, wird installiert:
 
-   * **Microsoft® Windows**: [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) oder [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) installieren
-   * **Linuxx®**: [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) installieren
+   * **Microsoft® Windows**: [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) oder [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) installieren
+   * **Linuxx®**: [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) installieren
 
 >[!NOTE]
 >
@@ -214,7 +214,9 @@ Wenn Sie den PDF Generator-Service verwenden, um native Dateiformate wie Microso
 >* Starten Sie die installierte Software mindestens einmal. Schließen Sie alle Dialogfelder für alle Benutzer, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
 >* [Überprüfen Sie das Ablaufdatum der Adobe Acrobat-Seriennummern](https://helpx.adobe.com/de/enterprise/kb/volume-license-expiration-check.html) und legen Sie ein Datum für das Aktualisieren der Lizenz fest oder [migrieren Sie die Seriennummer](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) auf der Grundlage des Ablaufdatums.
 
-### Installieren von Adobe Acrobat Pro DC
+### Installieren von Adobe Acrobat Pro DC {#install-adobe-acrobat-pro-dc}
+
+Informationen zu unterstützten Acrobat-Produkten und -Versionen für PDF Generator finden Sie [Überlegungen zu PDF Generator](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) im Artikel Von AEM Forms auf JEE unterstützte Plattformen . Die Verfahren in diesem Abschnitt beschreiben die eingeschränkte Lizenzierung (Feature Restricted Licensing, FRL) für **Adobe Acrobat Pro DC**.
 
 #### Voraussetzungen
 
@@ -1367,7 +1369,6 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
 +++ Adobe Acrobat
 
 * Stellen Sie sicher, dass nur [unterstützte Versionen](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von Microsoft® Office (32 Bit) und Adobe Acrobat installiert sind und Dialogfelder, die sich öffnen, abgebrochen werden.
-<!-- (Acrobat 2020 only) Ensure that Adobe Acrobat Update Service is disabled. -->
 * Stellen Sie sicher, dass die Batch-Datei [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) mit Administratorrechten ausgeführt wurde.
 * Stellen Sie sicher, dass in der PDF-Konfigurationsoberfläche ein Benutzer von PDF Generator hinzugefügt wird.
 * Stellen Sie sicher, dass für den Benutzer von PDF-Generator die Berechtigung zum [Ersetzen eines Tokens auf Prozessebene](#grant-the-replace-a-process-level-token-privilege) hinzugefügt wurde.
@@ -1458,7 +1459,7 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
 <!--
 +++ Unable to add a PDF Generator (PDFG) user
 
-* (Acrobat 2020 only) Ensure Microsoft&reg; Visual C++ 2012 x86 and Microsoft&reg; Visual C++ 2013 x86 (32-bit) redistributable are installed on Windows.
+* (Legacy Acrobat guidance — retained for reference only) Ensure Microsoft&reg; Visual C++ 2012 x86 and Microsoft&reg; Visual C++ 2013 x86 (32-bit) redistributable are installed on Windows.
 
 +++
 -->
@@ -1471,7 +1472,7 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
 +++
 
 <!--
-+++ (Acrobat 2020 only) Multiple user conversion failures 
++++ (Legacy Acrobat guidance — retained for reference only) Multiple user conversion failures 
 
 * Verify the server logs to check if the conversion is failing for a particular user.(Process Explorer can help you check running process for different users)
 
@@ -1487,7 +1488,7 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
 -->
 
 <!--
-(Acrobat 2020 only) License of Adobe Acrobat installed on AEM Forms Server expires
+(Legacy Acrobat guidance — retained for reference only) License of Adobe Acrobat installed on AEM Forms Server expires
 
 * If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
@@ -1508,7 +1509,7 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
 
 * For large-scale installations, use the [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) to remove previous versions of Reader and Acrobat. Customize the installer and deploy it to all the machines of your organization.
 
-(Acrobat 2020 only) AEM Forms Server is in an offline or secure environment and internet is not available to activate Acrobat.
+(Legacy Acrobat guidance — retained for reference only) AEM Forms Server is in an offline or secure environment and internet is not available to activate Acrobat.
 
 * You can go online within 7 days of the first launch of your Adobe product to complete an online activation and registration or use an internet-enabled device and your product's serial number to complete this process. For detailed instructions, see [Offline Activation](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 

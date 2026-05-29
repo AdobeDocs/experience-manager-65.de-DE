@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: eaeb4be3cc28ed958b33276f89ebe2302d4330f3
+source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
 workflow-type: tm+mt
-source-wordcount: '3851'
-ht-degree: 94%
+source-wordcount: '3958'
+ht-degree: 92%
 
 ---
 
@@ -126,7 +126,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
 <table>
 <tbody>
  <tr>
-  <th><p><strong>Plattform</strong></p> </th>
+  <th><p><strong>Platform</strong></p> </th>
   <th><p><strong>Unterstützungsebene</strong></p> </th>
   <th><p><strong>Unterstützte Patch-Definitionen</strong></p> </th>
  </tr>
@@ -175,7 +175,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
 <table>
 <tbody>
  <tr>
-  <td><p><strong>Plattform</strong></p> </td>
+  <td><p><strong>Platform</strong></p> </td>
   <td><p><strong> Beschreibung</strong></p> </td>
   <td><p><strong>Unterstützungsebene</strong></p> </td>
  </tr>
@@ -513,7 +513,7 @@ Die AEM Forms-App unterstützt jetzt Apache Cordova. Im Folgenden finden Sie die
 - Cordova Android™ 6.0.0
 - Cordova Windows 4.4.3
 
-### Überlegungen zu PDF Generator
+### Überlegungen zu PDF Generator {#software-support-for-pdf-generator}
 
 <table>
  <tbody>
@@ -522,7 +522,7 @@ Die AEM Forms-App unterstützt jetzt Apache Cordova. Im Folgenden finden Sie die
    <th><p><strong>Unterstützte Formate für die Konvertierung ins PDF-Format</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> – neueste Version</td>
+   <td><a href="https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> (fortlaufende Spur, neueste Version)</td>
    <td>XPS, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF und DWF</td>
   </tr>
 
@@ -544,7 +544,7 @@ Die AEM Forms-App unterstützt jetzt Apache Cordova. Im Folgenden finden Sie die
 >[!NOTE]
 >
 >- PDF Generator unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
->- Für die Konvertierung benötigt PDF Generator 32-Bit Adobe Acrobat Pro DC und Microsoft® Office Professional Plus.
+>- Für Acrobat-gesteuerte native Konvertierungen erfordert PDF Generator einen unterstützten 32-Bit-Windows-Build von Adobe Acrobat Pro DC (Continuous Track, neueste Version) und für Microsoft® Windows 32-Bit-Konvertierungen mit Microsoft® Office Professional Plus. Aktivieren Sie Acrobat über die eingeschränkte Lizenzierung (Feature Restricted Licensing, FRL) oder Ihren Adobe Enterprise-Bereitstellungsprozess. Siehe [Installieren von Adobe Acrobat Pro DC](install-configure-document-services.md#install-adobe-acrobat-pro-dc) im Artikel Document Services-Installation.
 >- Die Microsoft® Office Professional Plus-Installation kann eine Einzelhandels- oder MAK/KMS/AD-basierte Mengenlizenzierung verwenden.
 >- Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder unlizenziert wird, z. B. bei einer Installation mit Volumenlizenz, die einen KMS-Host innerhalb eines bestimmten Zeitraums nicht finden kann, können Konvertierungen fehlschlagen, bis die Installation erneut lizenziert und reaktiviert wird.
 >- PDF Generator unterstützt nicht Microsoft® Office 365.
@@ -622,14 +622,16 @@ Für zusätzliche Anforderungen siehe:
   <th><p><strong>Unterstützte Patch-Definitionen</strong></p> </th>
  </tr>
  <tr>
-  <td>Acrobat 2020 (Classic)</td>
-  <td>Version 20.004.30006 oder neuer<br /> </td>
+  <td>Adobe Acrobat Pro DC (Fortlaufender Modus, neueste Version)</td>
+  <td>Neueste Version, wie in den Versionshinweisen zu <a href="https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat und Reader beschrieben</a><br /> </td>
  </tr>
  </tbody>
 </table>
 
 
 >[!NOTE]
+>
+>Adobe Acrobat 2020 (klassischer Modus) wird von AEM Forms nicht unterstützt. Verwenden Sie stattdessen Adobe Acrobat Pro DC (Continuous Track, neueste Version).
 >
 >Die Acrobat DC-Produktfamilie führt zwei Linien für Acrobat und Reader ein, wobei es sich um zwei verschiedene Produkte handelt: „Klassik“ und „Fortlaufend“. Weitere Informationen und einen Vergleich der beiden Linien finden Sie unter [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
@@ -917,6 +919,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Unterstützung hinzugefügt | Unterstützung entfernt | Unterstützung eingestellt |
 | -------------- | --------------- | ------------------- |
 | Microsoft® Office 2024 | | Microsoft® Office 2021 |
+| Adobe Acrobat Pro DC (Continuous Track, neueste Version) für PDF Generator und zugehörige Dokumenten-Services | Adobe Acrobat 2020 (Klassischer Modus) |  |
 
 ### Version 6.5.23.0 (6. Juni 2025)
 
