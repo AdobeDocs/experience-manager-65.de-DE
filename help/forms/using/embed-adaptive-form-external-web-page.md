@@ -8,7 +8,7 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 20ee89572d58ade43d899b9292497717cb82c8b2
+source-git-commit: fb26d0c08644f8b84e406adeb7fb14496e8e9fd0
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 76%
@@ -144,7 +144,7 @@ wird wie folgt an den AEM-Server gesendet:
 https://publish.example.com/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
 ```
 
-Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, müssen Sie auch CORS in der AEM-Veröffentlichungsinstanz konfigurieren. Führen Sie die im Abschnitt &quot;AEM Forms [&#x200B; Bereitstellung adaptiver Formulare auf einer Domain-übergreifenden Site aktivieren“ &#x200B;](#cross-site).
+Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, müssen Sie auch CORS in der AEM-Veröffentlichungsinstanz konfigurieren. Führen Sie die im Abschnitt &quot;AEM Forms [&#x200B; Bereitstellung adaptiver Formulare auf einer Domain-übergreifenden Site aktivieren“ &#x200B;](#enable-aem-forms-to-serve-adaptive-forms-to-a-cross-domain-site-cross-site).
 
 ## Beispieltopologie {#sample-topology}
 
@@ -221,3 +221,4 @@ Wenn Sie einen Reverse-Proxy verwenden oder das adaptive Formular ohne die Guide
 1. Geben Sie im Feld Zulässige Hosts die Domain an, in der sich die Webseite befindet. Dadurch kann der Host POST-Anforderungen an den AEM-Server senden. Sie können auch einen regulären Ausdruck verwenden, um eine Reihe von externen Anwendungs-Domains anzugeben.
 
 >[!ENDTABS]
+
