@@ -8,7 +8,7 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 20ee89572d58ade43d899b9292497717cb82c8b2
+source-git-commit: fb26d0c08644f8b84e406adeb7fb14496e8e9fd0
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 76%
@@ -33,7 +33,7 @@ Führen Sie folgende Schritte aus, bevor Sie ein adaptives Formular in eine exte
 
 * Veröffentlichen Sie das einzubettende adaptive Formular in der Veröffentlichungsinstanz des AEM Forms-Servers.
 * Erstellen Sie auf Ihrer Website eine Web-Seite oder legen Sie sie fest, um dort das adaptive Formular zu hosten. Stellen Sie sicher, dass die Web-Seite [jQuery-Dateien von einem CDN lesen](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) kann oder eine lokale jQuery-Kopie eingebettet hat. jQuery ist erforderlich, um ein adaptives Formular zu rendern.
-* Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, führen Sie die im Abschnitt „Konfigurieren [&#x200B; absoluten Anforderungs-URLs mit GuideBridge“ und &quot;](#configure-base-url) [&#x200B; von AEM Forms, um adaptive Formulare auf einer Domain-übergreifenden Site bereitzustellen“ &#x200B;](#cross-site).
+* Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, führen Sie die im Abschnitt „Konfigurieren [ absoluten Anforderungs-URLs mit GuideBridge“ und &quot;](#configure-base-url) [ von AEM Forms, um adaptive Formulare auf einer Domain-übergreifenden Site bereitzustellen“ ](#cross-site).
 
 ## Adaptives Formular einbetten {#embed-adaptive-form}
 
@@ -144,7 +144,7 @@ wird wie folgt an den AEM-Server gesendet:
 https://publish.example.com/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
 ```
 
-Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, müssen Sie auch CORS in der AEM-Veröffentlichungsinstanz konfigurieren. Führen Sie die im Abschnitt &quot;AEM Forms [&#x200B; Bereitstellung adaptiver Formulare auf einer Domain-übergreifenden Site aktivieren“ &#x200B;](#cross-site).
+Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, müssen Sie auch CORS in der AEM-Veröffentlichungsinstanz konfigurieren. Führen Sie die im Abschnitt &quot;AEM Forms [ Bereitstellung adaptiver Formulare auf einer Domain-übergreifenden Site aktivieren“ ](#enable-aem-forms-to-serve-adaptive-forms-to-a-cross-domain-site-cross-site).
 
 ## Beispieltopologie {#sample-topology}
 
@@ -193,8 +193,8 @@ Berücksichtigen Sie beim Einbetten eines adaptiven Formulars in eine Web-Seite 
 
 * Stellen Sie sicher, dass die Formatierungsregeln im Web-Seiten-CSS nicht mit dem Formularobjekt-CSS in Konflikt stehen. Um Konflikte zu vermeiden, können Sie das Web-Seiten-CSS im Design für das adaptive Formular mithilfe der AEM-Client-Bibliothek wiederverwenden. Weitere Informationen zur Verwendung der Client-Bibliothek in den Designs für adaptive Formulare finden Sie unter [Designs in AEM Forms](../../forms/using/themes.md).
 * Verwenden Sie für den Formular-Container auf der Web-Seite die gesamte Fensterbreite. So wird sichergestellt, dass die für mobile Geräte konfigurierten CSS-Regeln ohne Änderungen funktionieren. Wenn der Formular-Container nicht die gesamte Fensterbreite einnimmt, müssen Sie ein benutzerdefiniertes CSS schreiben, damit sich das Formular an verschiedene mobile Geräte anpasst.
-* Verwenden Sie die API `[getData](https://helpx.adobe.com/de/experience-manager/6-3/forms/javascript-api/GuideBridge.html)`, um die XML- oder JSON-Darstellung der Formulardaten im Client abzurufen.
-* Verwenden Sie die API `[unloadAdaptiveForm](https://helpx.adobe.com/de/experience-manager/6-3/forms/javascript-api/GuideBridge.html)`, um das adaptive Formular aus HTML DOM zu entfernen.
+* Verwenden Sie die API `[getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)`, um die XML- oder JSON-Darstellung der Formulardaten im Client abzurufen.
+* Verwenden Sie die API `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)`, um das adaptive Formular aus HTML DOM zu entfernen.
 * Richten Sie den Header „access-control-origin“ ein, wenn Sie eine Antwort von einem AEM-Server senden.
 
 ## Bereitstellung adaptiver Formulare auf einer Domain-übergreifenden Site durch AEM Forms {#cross-site}
@@ -221,3 +221,4 @@ Wenn Sie einen Reverse-Proxy verwenden oder das adaptive Formular ohne die Guide
 1. Geben Sie im Feld Zulässige Hosts die Domain an, in der sich die Webseite befindet. Dadurch kann der Host POST-Anforderungen an den AEM-Server senden. Sie können auch einen regulären Ausdruck verwenden, um eine Reihe von externen Anwendungs-Domains anzugeben.
 
 >[!ENDTABS]
+
