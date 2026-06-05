@@ -8,10 +8,10 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 60cc4096c4fd1b51e1d37b6e6f4cdb8806fd79eb
+source-git-commit: 17a9c95166644a2a4e665e97c71b5fb744af6362
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 100%
+source-wordcount: '1388'
+ht-degree: 76%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 | AEM 6.5 | Dieser Artikel |
 
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird ein älterer Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird ein älterer Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 Sie können [adaptive Formulare in eine AEM Sites-Seite](/help/forms/using/embed-adaptive-form-aem-sites.md) oder eine außerhalb von AEM gehostete Webseite einbetten. Das eingebettete adaptive Formular ist voll funktionsfähig, und Benutzende können es ausfüllen und senden, ohne die Seite zu verlassen. Es hilft Benutzenden, im Kontext anderer Elemente auf der Web-Seite zu bleiben und gleichzeitig mit dem Formular zu interagieren.
 
@@ -33,7 +33,7 @@ Führen Sie folgende Schritte aus, bevor Sie ein adaptives Formular in eine exte
 
 * Veröffentlichen Sie das einzubettende adaptive Formular in der Veröffentlichungsinstanz des AEM Forms-Servers.
 * Erstellen Sie auf Ihrer Website eine Web-Seite oder legen Sie sie fest, um dort das adaptive Formular zu hosten. Stellen Sie sicher, dass die Web-Seite [jQuery-Dateien von einem CDN lesen](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) kann oder eine lokale jQuery-Kopie eingebettet hat. jQuery ist erforderlich, um ein adaptives Formular zu rendern.
-* Wenn der AEM-Server und die Web-Seite sich in verschiedenen Domains befinden, führen Sie die im Abschnitt [Bereitstellung adaptiver Formulare auf einer Domain-übergreifenden Site durch AEM Forms](#cross-site) beschriebenen Schritte aus.
+* Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, führen Sie die im Abschnitt „Konfigurieren [&#x200B; absoluten Anforderungs-URLs mit GuideBridge“ und &quot;](#configure-base-url) [&#x200B; von AEM Forms, um adaptive Formulare auf einer Domain-übergreifenden Site bereitzustellen“ &#x200B;](#cross-site).
 
 ## Adaptives Formular einbetten {#embed-adaptive-form}
 
@@ -118,6 +118,34 @@ Das adaptive Formular wird in die Web-Seite eingebettet. Beobachten Sie Folgende
 * Die Experience Targeting- und A/B-Test-Konfigurationen im Originalformular funktionieren nicht im eingebetteten adaptiven Formular.
 * Wenn Adobe Analytics im ursprünglichen Formular konfiguriert ist, werden die Analysedaten vom Adobe Analytics-Server erfasst. Sie sind jedoch nicht im Formularanalysebericht verfügbar.
 
+## Konfigurieren absoluter Anforderungs-URLs mit GuideBridge {#configure-base-url}
+
+Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, können Sie die GuideBridge-API verwenden, um den von den GuideRuntime-Bibliotheken generierten Anfragen einen absoluten AEM-Veröffentlichungsursprung voranzustellen. Verwenden Sie die `baseUrl`-Konfiguration, um guideRuntime anzuweisen, Anforderungen wie Formularübermittlung, Datenabruf zum Vorbefüllen, Generierung von Datensatzdokumenten, Datei-Uploads und internen Übermittlungsvorgängen den angegebenen absoluten Ursprung voranzustellen.
+
+Fügen Sie der einbettenden Web-Seite das folgende Snippet zusammen mit der vorhandenen `guideBridge.connect`-Implementierung hinzu:
+
+```javascript
+window.guideBridge.connect(function () {
+    window.guideBridge.registerConfig("baseUrl", "https://publish.example.com");
+});
+```
+
+Ersetzen Sie `https://publish.example.com` durch die Veröffentlichungs-URL des AEM Forms-Servers.
+
+Mit dieser Konfiguration wird eine Anfrage-URL ähnlich dem folgenden Beispiel angezeigt:
+
+```text
+/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
+```
+
+wird wie folgt an den AEM-Server gesendet:
+
+```text
+https://publish.example.com/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
+```
+
+Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, müssen Sie auch CORS in der AEM-Veröffentlichungsinstanz konfigurieren. Führen Sie die im Abschnitt &quot;AEM Forms [&#x200B; Bereitstellung adaptiver Formulare auf einer Domain-übergreifenden Site aktivieren“ &#x200B;](#cross-site).
+
 ## Beispieltopologie {#sample-topology}
 
 Die externe Web-Seite, in die das adaptive Formular eingebettet wird, sendet Anfragen an den AEM-Server, der sich in der Regel hinter der Firewall in einem privaten Netzwerk befindet. Um sicherzustellen, dass die Anfragen sicher an den AEM-Server weitergeleitet werden, wird empfohlen, einen Reverse-Proxy-Server einzurichten.
@@ -171,6 +199,25 @@ Berücksichtigen Sie beim Einbetten eines adaptiven Formulars in eine Web-Seite 
 
 ## Bereitstellung adaptiver Formulare auf einer Domain-übergreifenden Site durch AEM Forms {#cross-site}
 
+Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, konfigurieren Sie die AEM-Veröffentlichungsinstanz mit einer der folgenden Optionen.
+
+>[!BEGINTABS]
+
+>[!TAB Verwenden der GuideBridge-baseUrl-Konfiguration]
+
+Wenn Sie die [GuideBridge-`baseUrl`-Konfiguration](#configure-base-url) verwenden, konfigurieren Sie CORS auf der AEM-Veröffentlichungsinstanz so, dass der AEM-Server geeignete Kopfzeilen für die Endpunkte „Übermittlung“, „Vorbefüllen“ und „Datensatzdokument“ zurückgibt.
+
+1. Gehen Sie in der AEM-Veröffentlichungsinstanz zum Konfigurations-Manager der AEM-Web-Konsole unter `https://'[server]:[port]'/system/console/configMgr`.
+1. Suchen und öffnen Sie die Konfiguration **Adobe Granite Cross-Origin Resource Sharing Policy** (`com.adobe.granite.cors.impl.CORSPolicyImpl`).
+1. Fügen Sie den zulässigen Ursprüngen den Ursprung der einbettenden Web-Seite hinzu. Beispiel: `https://www.example.com`.
+1. Stellen Sie sicher, dass die zulässigen Pfade die AEM Forms-Endpunkte enthalten, die von eingebetteten adaptiven Formularen verwendet werden, z. B. URLs zum Senden, Vorbefüllen und Datensatzdokument unter `/content/forms/af/`.
+
+>[!TAB Apache Sling Referrer Filter]
+
+Wenn Sie einen Reverse-Proxy verwenden oder das adaptive Formular ohne die GuideBridge-`baseUrl`-Konfiguration einbetten, konfigurieren Sie den Apache Sling Referrer-Filter auf der AEM-Veröffentlichungsinstanz.
+
 1. Gehen Sie in der AEM-Veröffentlichungsinstanz zum Konfigurations-Manager der AEM-Web-Konsole unter `https://'[server]:[port]'/system/console/configMgr`.
 1. Suchen Sie die Konfiguration **Apache Sling Referrer Filter** und öffnen Sie sie.
 1. Geben Sie im Feld Zulässige Hosts die Domain an, in der sich die Webseite befindet. Dadurch kann der Host POST-Anforderungen an den AEM-Server senden. Sie können auch einen regulären Ausdruck verwenden, um eine Reihe von externen Anwendungs-Domains anzugeben.
+
+>[!ENDTABS]
