@@ -33,7 +33,7 @@ Führen Sie folgende Schritte aus, bevor Sie ein adaptives Formular in eine exte
 
 * Veröffentlichen Sie das einzubettende adaptive Formular in der Veröffentlichungsinstanz des AEM Forms-Servers.
 * Erstellen Sie auf Ihrer Website eine Web-Seite oder legen Sie sie fest, um dort das adaptive Formular zu hosten. Stellen Sie sicher, dass die Web-Seite [jQuery-Dateien von einem CDN lesen](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) kann oder eine lokale jQuery-Kopie eingebettet hat. jQuery ist erforderlich, um ein adaptives Formular zu rendern.
-* Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, führen Sie die im Abschnitt „Konfigurieren [ absoluten Anforderungs-URLs mit GuideBridge“ und &quot;](#configure-base-url) [ von AEM Forms, um adaptive Formulare auf einer Domain-übergreifenden Site bereitzustellen“ ](#cross-site).
+* Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, führen Sie die im Abschnitt „Konfigurieren [&#x200B; absoluten Anforderungs-URLs mit GuideBridge“ und &quot;](#configure-base-url) [&#x200B; von AEM Forms, um adaptive Formulare auf einer Domain-übergreifenden Site bereitzustellen“ &#x200B;](#cross-site).
 
 ## Adaptives Formular einbetten {#embed-adaptive-form}
 
@@ -144,7 +144,7 @@ wird wie folgt an den AEM-Server gesendet:
 https://publish.example.com/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
 ```
 
-Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, müssen Sie auch CORS in der AEM-Veröffentlichungsinstanz konfigurieren. Führen Sie die im Abschnitt &quot;AEM Forms [ Bereitstellung adaptiver Formulare auf einer Domain-übergreifenden Site aktivieren“ ](#cross-site).
+Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, müssen Sie auch CORS in der AEM-Veröffentlichungsinstanz konfigurieren. Führen Sie die im Abschnitt &quot;AEM Forms [&#x200B; Bereitstellung adaptiver Formulare auf einer Domain-übergreifenden Site aktivieren“ &#x200B;](#cross-site).
 
 ## Beispieltopologie {#sample-topology}
 
