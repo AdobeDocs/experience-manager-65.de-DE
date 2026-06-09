@@ -10,10 +10,10 @@ exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 33bf1d9f64c32691f6a9c0568c1c5cb2150f331a
 workflow-type: tm+mt
-source-wordcount: '2246'
-ht-degree: 100%
+source-wordcount: '2262'
+ht-degree: 91%
 
 ---
 
@@ -43,7 +43,7 @@ Sie können eine Seite mit dem Seiteneditor bearbeiten. Zum Beispiel:
 >
 >Sie können diese Tour überspringen und jederzeit wiederholen, indem Sie sie im Menü **Seiteninformationen** auswählen.
 
-## Aufrufen der Hilfe   {#accessing-help}
+## Aufrufen der Hilfe {#accessing-help}
 
 Wenn Sie eine Seite bearbeiten, können Sie folgendermaßen auf die **Hilfe** zugreifen:
 
@@ -120,7 +120,7 @@ Wenn der Asset-Browser geöffnet ist, können Sie alle für die Seite verfügbar
 
 ![ateat-08](assets/ateat-08.png)
 
-Um ein Asset zu der Seite hinzuzufügen, wählen Sie es aus und ziehen Sie es an die gewünschte Position. Dabei kann es sich um Folgendes handeln:
+Um ein Asset zu Ihrer Seite hinzuzufügen, wählen Sie es aus und ziehen Sie es an die gewünschte Position. Dies kann sein:
 
 * Eine vorhandene Komponente des entsprechenden Typs.
 
@@ -153,7 +153,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
   Der Asset-Browser deckt die gesamte bearbeitete Seite ab.
 
-  Um der Seite ein Asset hinzuzufügen, berühren und halten Sie das gewünschte Asset und verschieben Sie es nach rechts. Der Asset-Browser wird geschlossen und die Seite wird erneut angezeigt. Jetzt können Sie das Asset der gewünschten Komponente hinzufügen.
+  Um der Seite ein Asset hinzuzufügen, berühren und halten Sie das gewünschte Asset und verschieben Sie es nach rechts. Der Asset-Browser wird geschlossen und die Seite wird erneut angezeigt. Dort können Sie das Asset der gewünschten Komponente hinzufügen.
 
   ![ateat-09](assets/ateat-09.png)
 
@@ -177,7 +177,7 @@ Die Inhaltsstruktur befindet sich auf einer Registerkarte im seitlichen Bedienfe
 
 ![Inhaltsstruktur](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-Wenn Sie das seitliche Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. Wählen Sie ggf. die Registerkarte **Inhaltsstruktur** aus. Mit dieser Strukturansicht Ihrer Seite oder Vorlage können Sie leicht nachvollziehen, wie die darauf verwendeten Komponenten hierarchisch strukturiert sind. Auf einer komplexer gestalteten Seite können Sie so zudem einfacher zwischen Komponenten auf der Seite wechseln.
+Wenn Sie das seitliche Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. Wählen Sie ggf. die Registerkarte **Inhaltsstruktur** aus. Wenn sie geöffnet ist, wird eine Baumstrukturdarstellung Ihrer Seite oder Vorlage angezeigt, sodass es leichter verständlich ist, wie ihr Inhalt hierarchisch strukturiert ist. Auf einer komplexer gestalteten Seite können Sie so zudem einfacher zwischen Komponenten auf der Seite wechseln.
 
 ![ateat-11](assets/ateat-11.png)
 
@@ -237,7 +237,7 @@ Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Brows
 
 Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen. In bestimmten Situationen sind weitere Aktionen verfügbar, wenn Sie einen bestimmten Verweis auswählen, z. B.:
 
-* **Eingehende Links** enthält eine Liste der Seiten, die auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen. 
+* **Eingehende Links** enthält eine Liste der Seiten, die auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen.
 
    * Es können nur statische Links angezeigt werden, nicht dynamisch generierte Links, z. B. aus der Listenkomponente.
 
@@ -255,19 +255,19 @@ Sie können beispielsweise einen beschädigten Verweis innerhalb einer Verweisko
 
 ## Ereignisse: Timeline {#events-timeline}
 
-Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites**-Konsole oder Assets aus der **Asset**-Konsole) kann die [Timeline dazu verwendet werden, die zuletzt durchgeführten Aktivitäten für ausgewählte Elemente anzuzeigen](/help/sites-authoring/basic-handling.md#timeline).
+Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites**-Konsole oder Assets aus der **Assets**-Konsole) kann die [Zeitleiste“ verwendet werden, um die zuletzt durchgeführten Aktivitäten für ausgewählte Elemente anzuzeigen](/help/sites-authoring/basic-handling.md#timeline).
 
 Öffnen Sie die gewünschte Konsole, navigieren Sie zur gewünschten Ressource und öffnen Sie die **Timeline** wie folgt:
 
 ![ateat-15](assets/ateat-15.png)
 
-[Wählen Sie die gewünschte Ressource ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)und danach entweder **Alle anzeigen** oder **Aktivitäten** aus, um die mit den ausgewählten Ressourcen zuletzt ausgeführten Aktionen aufzulisten:
+[Wählen Sie die gewünschte Ressource &#x200B;](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)und danach entweder **Alle anzeigen** oder **Aktivitäten** aus, um die mit den ausgewählten Ressourcen zuletzt ausgeführten Aktionen aufzulisten:
 
 ![ateat-16](assets/ateat-16.png)
 
 ## Seiteninformationen {#page-information}
 
-Mit der Schaltfläche „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch Details zur letzten Bearbeitung und zur letzten Aktivierung enthält. Abhängig von den Eigenschaften der Seite (und der Website, zu der sie gehört) sind u. U. weitere Optionen verfügbar:
+Mit der Schaltfläche „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch Details zur letzten Bearbeitung und zur letzten Aktivierung enthält. Je nach den Eigenschaften der Seite, ihrer Site, Ihrer Instanz und Ihren Berechtigungen stehen möglicherweise mehr oder weniger Optionen zur Verfügung:
 
 ![ateat-17](assets/ateat-17.png)
 
@@ -295,9 +295,9 @@ Darüber hinaus können über die **Seiteninformationen** ggf. auch Analysen und
 Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über die jeweils unterschiedliche Aktionen durchgeführt werden können:
 
 * [Bearbeiten](/help/sites-authoring/editing-content.md): Verwenden Sie diesen Modus zum Bearbeiten des Seiteninhalts.
-* [Layout](/help/sites-authoring/responsive-layout.md): Ermöglicht es Ihnen, Ihr responsives Layout gerätespezifisch zu erstellen und zu bearbeiten (wenn die Seite auf einem Layout-Container basiert).
+* [Layout](/help/sites-authoring/responsive-layout.md) - ermöglicht das Erstellen und Bearbeiten des responsiven Layouts in Abhängigkeit vom Gerät (wenn die Seite auf einem Layout-Container basiert).
 
-* [Strukturvorlage](/help/sites-authoring/scaffolding.md): Hilft Ihnen bei der Erstellung einer großen Anzahl von Seiten, die unterschiedliche Inhalte, aber eine einheitliche Struktur aufweisen sollen.
+* [Strukturvorlage](/help/sites-authoring/scaffolding.md) - Hilft Ihnen bei der Erstellung einer großen Anzahl von Seiten, die eine gemeinsame Struktur, aber unterschiedliche Inhalte aufweisen.
 * [Entwicklung](/help/sites-developing/developer-mode.md): Ermöglicht die Durchführung verschiedener Aktionen (erfordert Berechtigungen). Dazu gehört die Überprüfung der technischen Details einer Seite und ihrer Komponenten.
 
 * [Design](/help/sites-authoring/default-components-designmode.md): Ermöglicht es Ihnen, Komponenten für die Verwendung auf einer Seite zu aktivieren bzw. zu deaktivieren und das Design der Komponente zu konfigurieren (wenn die Seite auf einer [statischen Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates) basiert).
@@ -307,7 +307,7 @@ Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über d
 
 * [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp): Ermöglicht es, eine Seite in dem Zustand anzuzeigen, den sie zu einem bestimmten früheren Zeitpunkt aufgewiesen hat.
 * [Live Copy-Status:](/help/sites-authoring/editing-content.md#live-copy-status): Für einen schnellen Überblick über den Live Copy-Status und darüber, welche Komponenten übernommen oder nicht übernommen wurden.
-* [Vorschau](/help/sites-authoring/editing-content.md#previewing-pages): Dient zur Anzeige der Darstellung der Seite in der Veröffentlichungsumgebung oder zur Navigation anhand der Links im Inhalt.
+* [Vorschau](/help/sites-authoring/editing-content.md#previewing-pages) - wird verwendet, um die Seite so anzuzeigen, wie sie in der Veröffentlichungsumgebung angezeigt wird, oder um mithilfe von Links im Inhalt zu navigieren.
 
 * [Anmerken](/help/sites-authoring/annotations.md): In diesem Modus können Sie Anmerkungen auf der Seite hinzufügen oder anzeigen.
 

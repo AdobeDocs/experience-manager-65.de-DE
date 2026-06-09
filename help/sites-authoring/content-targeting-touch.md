@@ -10,16 +10,16 @@ exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: ee6294a03b2e4faf4e3c2dc8a466d03a0fb8a28a
 workflow-type: tm+mt
-source-wordcount: '5284'
-ht-degree: 99%
+source-wordcount: '5344'
+ht-degree: 95%
 
 ---
 
 # Verfassen zielgerichteter Inhalte im Targeting-Modus{#authoring-targeted-content-using-targeting-mode}
 
-Verfassen von zielgerichteten Inhalten im Targeting-Modus von AEM. Im Targeting-Modus und in der Targeting-Komponente stehen verschiedene Werkzeuge zur Verfügung, mit deren Hilfe sich Inhalte für Erlebnisse erstellen lassen:
+Im Targeting-Modus können Sie zielgerichtete Inhalte für AEM erstellen. Im Targeting-Modus und in der Targeting-Komponente stehen verschiedene Werkzeuge zur Verfügung, mit deren Hilfe sich Inhalte für Erlebnisse erstellen lassen:
 
 * Erkennen Sie problemlos zielgerichtete Inhalte auf einer Seite. Zielgerichtete Inhalte werden mit einer gepunkteten Linie umrandet.
 * Wählen Sie eine Marke und eine Aktivität aus, um die Erlebnisse anzuzeigen.
@@ -37,11 +37,11 @@ Sie können entweder AEM oder Adobe Target als Targeting-Engine verwenden (für 
 Die im Targeting-Modus sichtbaren Aktivitäten und Erlebnisse spiegeln die Optionen der [Aktivitätskonsole](/help/sites-authoring/activitylib.md) wider:
 
 * Änderungen, die Sie im Targeting-Modus an Aktivitäten und Erlebnissen vornehmen, werden in der Aktivitätskonsole angezeigt.
-* Änderungen, die in der Aktivitätskonsole vorgenommen werden, werden im Targeting-Modus angezeigt.
+* Änderungen, die in der Aktivitätskonsole vorgenommen werden, werden in den Targeting-Modus übernommen.
 
 >[!NOTE]
 >
->Wenn Sie eine Kampagne in Adobe Target erstellen, wird jeder Kampagne eine Eigenschaft mit dem Namen `thirdPartyId` hinzugefügt. Sollten Sie die Kampagne in Adobe Target löschen, wird die Eigenschaft „thirdPartyId“ jedoch nicht gelöscht. Die `thirdPartyId` kann nicht für Kampagnen unterschiedlicher Typen (A/B, XT) wiederverwendet werden und lässt sich nicht manuell löschen. Um dieses Problem zu umgehen, geben Sie jeder Kampagne einen eindeutigen Namen. Kampagnennamen lassen sich nicht für verschiedene Kampagnentypen wiederverwenden.
+>Wenn Sie eine Kampagne in Adobe Target erstellen, wird jeder Kampagne eine Eigenschaft mit dem Namen `thirdPartyId` hinzugefügt. Sollten Sie die Kampagne in Adobe Target löschen, wird die Eigenschaft „thirdPartyId“ jedoch nicht gelöscht. Die `thirdPartyId` kann nicht für Kampagnen unterschiedlicher Typen (A/B, XT) wiederverwendet werden und lässt sich nicht manuell löschen. Um dieses Problem zu vermeiden, benennen Sie jede Kampagne mit einem eindeutigen Namen. Kampagnennamen können nicht in verschiedenen Kampagnentypen wiederverwendet werden.
 >
 >Wenn Sie denselben Namen im selben Kampagnentyp verwenden, wird die vorhandene Kampagne überschrieben.
 >
@@ -72,7 +72,7 @@ Verwenden Sie den Targeting-Modus, um einer Marke eine Aktivität hinzuzufügen.
 
 Außerdem haben Sie die Möglichkeit, Adobe Target-Aktivitäten mit AEM zu erstellen und zu verwalten, indem Sie die entsprechende Targeting-Engine (AEM oder Adobe Target) und den Aktivitätstyp (Erlebnis-Targeting oder A/B-Test) auswählen.
 
-Darüber hinaus können Sie Ziele und Metriken für alle Adobe Target-Aktivitäten verwalten und Ihre Adobe Target-Zielgruppen verwalten. Zu guter Letzt steht Ihnen auch das Aktivitäts-Reporting von Adobe Target zur Verfügung, die unter anderem auch die Konvertierung der im A/B-Test am besten abschneidenden Erlebnisse umfasst.
+Darüber hinaus können Sie Ziele und Metriken für alle Adobe Target-Aktivitäten verwalten und Ihre Adobe Target-Zielgruppen verwalten. Adobe Target-Aktivitätsberichte (einschließlich Konvertierung der Gewinner für A/B-Tests) sind ebenfalls enthalten.
 
 Fügen Sie eine Aktivität hinzu, erscheint diese auch in der [Aktivitätskonsole](/help/sites-authoring/activitylib.md).
 
@@ -92,7 +92,7 @@ So fügen Sie eine Aktivität hinzu:
 
    >[!NOTE]
    >
-   >Wenn Sie eine neue Aktivität erstellen und der Seite oder einer der ihr übergeordneten Seiten eine Adobe Target-Cloud-Konfiguration angehängt ist, wird von AEM automatisch Adobe Target als Engine festgelegt.
+   >Wenn Sie eine Aktivität erstellen und eine Adobe Target-Cloud-Konfiguration an die Seite oder eines ihrer übergeordneten Elemente angehängt wird, geht AEM automatisch von Adobe Target als Engine aus.
 
 1. Wählen Sie aus dem Dropdown-Menü **Targeting** die gewünschte Targeting-Engine aus.
 
@@ -112,7 +112,7 @@ So fügen Sie eine Aktivität hinzu:
 Der Targeting-Modus ermöglicht die Konfiguration verschiedener Aspekte einer Aktivität. Verwenden Sie den folgenden dreistufigen Prozess zum Erstellen zielgerichteter Inhalte für eine Markenaktivität:
 
 1. [Erstellen](#create-authoring-the-experiences): Fügen Sie Erlebnisse hinzu oder entfernen Sie welche und fügen Sie Angebote für jedes Erlebnis hinzu.
-1. [Zielgruppe](#diagramtargetconfiguringtheaudiences): Geben Sie die Zielgruppe an, an die sich die jeweiligen Erlebnisse richten. Sie können eine bestimmte Zielgruppe ansprechen und bei Verwendung von A/B-Tests entscheiden, welcher Prozentsatz des Traffics auf welches Erlebnis ausgerichtet wird.
+1. [Zielgruppe](#diagramtargetconfiguringtheaudiences): Geben Sie die Zielgruppe an, an die sich die jeweiligen Erlebnisse richten. Sie können eine bestimmte Zielgruppe ansprechen. Wenn Sie A/B-Tests verwenden, können Sie entscheiden, welcher Prozentsatz des Traffics an welches Erlebnis gesendet wird.
 1. [Ziele und Einstellungen](#settingsgoalssettingsconfiguringtheactivityandsettinggoals): Planen Sie die Aktivität und legen Sie die Priorität fest. Außerdem lassen sich auch Ziele für Erfolgsmetriken bestimmen.
 
 Führen Sie die folgenden Schritte aus, um den Targeting-Prozess für den Inhalt einer Aktivität zu starten.
@@ -135,7 +135,7 @@ So fügen Sie eine Aktivität hinzu:
 
 ## Erstellen: Verfassen der Erlebnisse {#create-authoring-the-experiences}
 
-Im Erstellungsschritt des Inhalts-Targetings werden Erlebnisse geschaffen. n diesem Schritt können Sie die Erlebnisse der Aktivität erstellen oder löschen und jedem Erlebnis Angebote hinzufügen.
+Im Erstellungsschritt des Inhalts-Targetings werden Erlebnisse geschaffen. In diesem Schritt können Sie die Erlebnisse der Aktivität erstellen oder löschen und jedem Erlebnis Angebote hinzufügen.
 
 ### Anzeigen von Erlebnisangeboten im Targeting-Modus {#seeing-experience-offers-in-targeting-mode}
 
@@ -202,7 +202,7 @@ So benennen Sie Erlebnisse im Targeting-Modus um:
 
 1. Klicken Sie auf den Pfeil neben dem Erlebnisnamen.
 1. Klicken Sie auf **Erlebnis umbenennen** und geben Sie den neuen Namen ein.
-1. Klicken Sie auf einen anderen Bereich des Bildschirms, um die Änderungen zu speichern.
+1. Klicken Sie auf eine andere Stelle auf dem Bildschirm, um die Änderungen zu speichern.
 
 #### Bearbeiten von Zielgruppen im Targeting-Modus {#editing-audiences-using-targeting-mode}
 
@@ -268,7 +268,7 @@ Weitere Informationen zur Anpassung dieser Komponente finden Sie unter [Konfigur
 
 Da es sich bei der Target-Komponente um einen Container handelt, wird sie als Ablagebereich für andere Komponenten dargestellt.
 
-Im Targeting-Modus hat die Target-Komponente einen blauen Rand und die Ablagezielmeldung gibt die Art der Komponente an.
+Im Target-Modus hat die Target-Komponente einen blauen Rahmen und die Drop-Target-Nachricht zeigt die Zielnatur an.
 
 ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -297,7 +297,7 @@ Möchten Sie Targeting-Inhalte bearbeiten, müssen Sie zunächst auf **Targeting
    >Hier können Admins entscheiden, ob diese Konfiguration erforderlich ist: **http://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
    >
    >
-   >Um Benutzer zur Eingabe eines Pfads aufzufordern, aktivieren Sie das Kontrollkästchen **Ortsangabe erzwingen**.
+   >Sollen Benutzer zur Eingabe eines Pfads aufgefordert werden, aktivieren Sie das Kontrollkästchen **Ortsangabe erzwingen**.
 
 1. Wählen Sie das Erlebnis aus, für das Sie das Angebot erstellen möchten.
 1. Erstellen Sie das Angebot:
@@ -397,7 +397,7 @@ Konvertieren Sie ein Bibliotheksangebot in ein benutzerdefiniertes Angebot, um d
 
 ## Target: Konfigurieren der Zielgruppen {#target-configuring-the-audiences}
 
-Im Target-Schritt des [Targeting-Verfahrens](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) werden Zielgruppen mit den Erlebnissen verknüpft, die Sie während des Erstellungsschritts bearbeitet haben. Auf der Target-Seite werden die Zielgruppen angezeigt, die von den einzelnen Erlebnissen angesprochen werden. Sie können die Zielgruppe für jedes Erlebnis festlegen oder ändern. Sollten Sie mit Adobe Target arbeiten, können Sie zudem A/B-Tests erstellen, die es Ihnen ermöglichen, einen bestimmten Anteil des Traffics einer Zielgruppe auf ein bestimmtes Erlebnis umzuleiten.
+Im Target-Schritt des [Targeting-Verfahrens](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) werden Zielgruppen mit den Erlebnissen verknüpft, die Sie während des Erstellungsschritts bearbeitet haben. Die Seite Target zeigt die Zielgruppen an, auf die jedes Erlebnis abzielt. Sie können die Zielgruppe für jedes Erlebnis festlegen oder ändern. Wenn Sie Adobe Target verwenden, können Sie auch A/B-Tests erstellen, mit denen Sie einen bestimmten Prozentsatz des Traffics für eine Zielgruppe auf ein bestimmtes Erlebnis ausrichten können.
 
 ### Wenn Sie AEM-Targeting oder Adobe Target (Erlebnis-Targeting) verwenden … {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
@@ -421,7 +421,7 @@ Gehen Sie wie folgt vor, um ein Erlebnis mit einer Zielgruppe zu verknüpfen, we
 1. (Optional) Klicken Sie auf **Bearbeiten** und geben Sie dann einen Suchbegriff ein, um nach dem gewünschten Segment zu suchen.
 1. Wählen Sie aus der Zielgruppenliste die gewünschte Zielgruppe aus und klicken Sie auf **OK**.
 
-### Wenn Sie A/B-Tests (Adobe Target) verwenden …     {#if-you-are-using-a-b-testing-adobe-target}
+### Wenn Sie A/B-Tests (Adobe Target) verwenden … {#if-you-are-using-a-b-testing-adobe-target}
 
 Wenn Sie über eine A/B-Test-Aktivität verfügen, befinden sich die Zielgruppen auf der linken Seite, der Prozentsatz, in dem jedes Erlebnis angezeigt wird, befindet sich in der Mitte und die Erlebnisse befinden sich auf der rechten Seite.
 
@@ -434,12 +434,12 @@ Sie können die Prozentsätze ändern, solange sie in der Summe 100 Prozent erge
 1. Klicken Sie auf das Dropdown-Feld neben der Zielgruppe, die dem Erlebnis zugeordnet ist.
 1. (Optional) Klicken oder tippen Sie auf **Bearbeiten** und geben Sie den Suchbegriff ein, nach dem das gewünschte Segment durchsucht werden soll.
 1. Klicken Sie auf **OK**.
-1. Geben Sie Prozentsätze ein, um zu konfigurieren, wie der Zielgruppen-Traffic zu den einzelnen Erlebnissen geleitet wird. Die Gesamtsumme muss 100 betragen.
+1. Geben Sie Prozentsätze ein, um zu konfigurieren, wie der Zielgruppen-Traffic an die einzelnen Erlebnisse weitergeleitet wird. Die Gesamtsumme muss 100 betragen.
 1. (Optional) Bearbeiten Sie den Erlebnisnamen, indem Sie auf das Dropdown-Menü neben dem Erlebnisnamen klicken.
 
 ## Ziele und Einstellungen: Konfigurieren der Aktivität und Festlegen von Zielen {#goals-settings-configuring-the-activity-and-setting-goals}
 
-Im Schritt „Ziele und Einstellungen“ des [Targeting-Verfahrens](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) wird das Verhalten der Markenaktivität konfiguriert. Geben Sie an, wann die Aktivität beginnt und endet, und geben Sie die Aktivitätspriorität an. Darüber hinaus verfolgen Sie auch Ziele. Insbesondere können Sie entscheiden, was Sie mit Ihren Aktivitäten messen möchten.
+Im Schritt „Ziele und Einstellungen“ des [Targeting-Verfahrens](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) wird das Verhalten der Markenaktivität konfiguriert. Geben Sie den Beginn und das Ende der Aktivität sowie die Aktivitätspriorität an. Darüber hinaus können Sie auch Ziele verfolgen. Insbesondere können Sie entscheiden, was Sie mit Ihren Aktivitäten messen möchten.
 
 Zielmetriken sind nur verfügbar, wenn Sie Adobe Target für Ihre Targeting-Engine verwenden. Sie müssen mindestens eine Zielmetrik definieren. Wenn Sie Adobe Analytics konfiguriert haben und eine A4T Analytics-Cloud-Konfiguration haben, können Sie auswählen, ob die Berichtsquelle Adobe Target oder Adobe Analytics sein soll.
 
@@ -530,7 +530,7 @@ Verwenden Sie die erweiterten Einstellungen, um zu bestimmen, was passiert, **na
  </tbody>
 </table>
 
-Weitere Informationen zu Erfolgsmetriken finden Sie in der [Adobe Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=de).
+Weitere Informationen zu Erfolgsmetriken finden Sie in [&#128279;](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=de) Dokumentation zu Adobe Target .
 
 ### Konfigurieren von Einstellungen (AEM Targeting) {#configuring-settings-aem-targeting}
 

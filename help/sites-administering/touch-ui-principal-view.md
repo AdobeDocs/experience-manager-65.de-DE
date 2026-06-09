@@ -10,10 +10,10 @@ exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+source-git-commit: 8adc566113beedc408698dccc3a4c072349af5dc
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
+source-wordcount: '777'
+ht-degree: 87%
 
 ---
 
@@ -74,7 +74,7 @@ Berechtigungen können hinzugefügt werden, indem Sie mithilfe des Textfelds suc
 >
 >Eine vollständige Liste der Berechtigungen und Beschreibungen finden Sie unter [Verwaltung von Benutzenden, Gruppen und Zugriffsrechten](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![Suchberechtigung für einen bestimmten Pfad.](assets/image2019-3-21_0-5-47.png) ![Fügen Sie neuen Eintrag für „dam-users“ hinzu, wie durch einen in vertikalen Spalten ausgewählten Pfad gezeigt.](assets/image2019-3-21_0-6-53.png)
+![Suchberechtigung für einen bestimmten Pfad.](assets/image2019-3-21_0-5-47.png) ![Fügen Sie einen neuen Eintrag für „dam-users“ hinzu, wie durch einen in vertikalen Spalten ausgewählten Pfad angezeigt.](assets/image2019-3-21_0-6-53.png)
 
 Nachdem die Liste der Berechtigungen ausgewählt wurde, lässt sich der Berechtigungstyp auswählen: „Ablehnen“ oder „Zulassen“, wie unten dargestellt.
 
@@ -82,7 +82,7 @@ Nachdem die Liste der Berechtigungen ausgewählt wurde, lässt sich der Berechti
 
 ### Verwenden von Einschränkungen {#using-restrictions}
 
-Zusätzlich zur Liste der Berechtigungen und dem Berechtigungstyp für einen bestimmten Pfad können auf diesem Bildschirm auch Einschränkungen für fein abgestufte Zugriffssteuerungsmöglichkeiten hinzugefügt werden:
+Zusätzlich zur Liste der Berechtigungen und des Berechtigungstyps für einen bestimmten Pfad können Sie auf diesem Bildschirm auch Einschränkungen für die differenzierte Zugriffssteuerung hinzufügen, wie unten dargestellt:
 
 ![Einschränkungen hinzufügen](assets/image2019-3-21_1-4-14.png)
 
@@ -94,7 +94,7 @@ Einschränkungen können wie unten dargestellt hinzugefügt werden, indem Sie de
 
 ![Einschränkungstyp hinzufügen](assets/sapte-1.png) ![Einschränkungstyp hinzufügen](assets/opt-1.png)
 
-Der neue ACE wird in der Zugriffssteuerungsliste wie unten dargestellt angezeigt. Beachten Sie, dass `jcr:write` eine aggregierte Berechtigung ist, die `jcr:removeNode` enthält. Diese Berechtigung wurde oben hinzugefügt, wird aber unten nicht angezeigt, da sie unter `jcr:write` aufgeführt wird.
+Der neue ACE wird in der Zugriffssteuerungsliste wie unten dargestellt angezeigt. Beachten Sie, dass `jcr:write` eine aggregierte Berechtigung ist, die `jcr:removeNode` enthält, die oben hinzugefügt wurden, unten jedoch nicht angezeigt werden, da sie unter `jcr:write` behandelt wird.
 
 ### Bearbeiten von ACEs {#editing-aces}
 
@@ -112,7 +112,7 @@ Hier wird die Berechtigung `addChildNodes` für **dam-users** auf dem bestimmten
 
 ![Berechtigung hinzufügen](assets/image2019-3-21_0-45-35.png)
 
-Änderungen können gespeichert werden, indem Sie oben rechts auf die Schaltfläche **Speichern** klicken. Die geänderten Berechtigungen für **dam-users** werden wie unten dargestellt übernommen:
+Änderungen können gespeichert werden, indem Sie oben rechts auf **Speichern** klicken und wie unten dargestellt in die neuen Berechtigungen für **dam-users** übernommen werden:
 
 ![Speichern Sie die Änderungen](assets/zece-1.png)
 
@@ -122,7 +122,7 @@ Zugriffssteuerungseinträge können gelöscht werden, um alle Berechtigungen zu 
 
 ![Löschen von ACEs](assets/image2019-3-21_0-53-19.png) ![Löschen von ACEs](assets/unspe.png)
 
-### Berechtigungskombinationen in der klassischen Benutzeroberfläche {#classic-ui-privilege-combinations}
+### Berechtigungskombinationen auf der klassischen Benutzeroberfläche {#classic-ui-privilege-combinations}
 
 In der neuen Benutzeroberfläche für Berechtigungen wird explizit der grundlegende Satz von Berechtigungen, anstelle vordefinierter Kombinationen verwendet, die nicht immer exakt die gewährten Berechtigungen wiedergegeben.
 
@@ -131,7 +131,7 @@ Das führte in der Vergangenheit zu Unklarheit, was genau konfiguriert wird. In 
 <table>
  <tbody>
   <tr>
-   <th>Berechtigungskombinationen in der klassischen Benutzeroberfläche</th>
+   <th>Berechtigungskombinationen auf der klassischen Benutzeroberfläche</th>
    <th>Berechtigungen der Berechtigungs-Benutzeroberfläche</th>
   </tr>
   <tr>

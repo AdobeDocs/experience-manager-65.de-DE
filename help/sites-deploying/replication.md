@@ -10,10 +10,10 @@ feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: e4c42f989baf1a91e94944c612ee6b8de1dc331a
 workflow-type: tm+mt
-source-wordcount: '3363'
-ht-degree: 100%
+source-wordcount: '3334'
+ht-degree: 93%
 
 ---
 
@@ -80,8 +80,8 @@ Um diesem Beispiel zu folgen und die standardmäßigen Replikationsagenten zu ve
 >* Agenten für Autor: Rückwärtsreplikationsagent („publish_reverse“)
 >* Agenten bei Veröffentlichung: Rückwärtsreplikation („outbox“)
 >
->Der Status des Agenten oder der Warteschlange kann mithilfe der **Tools-Konsole** überprüft werden.
->Weitere Informationen finden Sie unter [Überwachen der Replikationsagenten](#monitoring-your-replication-agents).
+>Um den Status des Agenten oder der Warteschlange zu überprüfen, verwenden Sie die **Tools**-Konsole.
+>Siehe [Überwachen der Replikationsagenten](#monitoring-your-replication-agents).
 
 #### Replikation (von der Autoren- in die Veröffentlichungsinstanz) {#replication-author-to-publish}
 
@@ -95,9 +95,9 @@ Um diesem Beispiel zu folgen und die standardmäßigen Replikationsagenten zu ve
 
 Diese Replikation wird von der Autorenumgebung aus durch folgende Komponente durchgeführt:
 
-* **Standardagent („publish“)**
-Dieser Agent repliziert Inhalte in die standardmäßige Veröffentlichungsinstanz.
-Der Zugriff auf entsprechende Details (Konfiguration und Protokolle) ist über die Tools-Konsole der Autorenumgebung oder
+* **Standardagent (publish)**
+Dieser Agent repliziert Inhalte auf der Standard-Veröffentlichungsinstanz.
+Details hierzu (Konfiguration und Protokolle) können über die Tools -Konsole der Autorenumgebung aufgerufen werden oder:
   `https://localhost:4502/etc/replication/agents.author/publish.html` möglich.
 
 #### Replikationsagenten – vorkonfiguriert {#replication-agents-out-of-the-box}
@@ -105,18 +105,18 @@ Der Zugriff auf entsprechende Details (Konfiguration und Protokolle) ist über d
 Die folgenden Agenten sind in der AEM-Standardinstallation verfügbar:
 
 * [Standardagent](#replication-author-to-publish)
-Dient zum Replizieren von der Autoren- in die Veröffentlichungsinstanz.
+Wird für die Replikation von der Autoren- zur Veröffentlichungsinstanz verwendet.
 
-* Dispatcher Flush
-Dient zum Verwalten des Dispatcher-Caches. Weitere Informationen finden Sie unter [Invalidieren des Dispatcher-Cache aus der Autorenumgebung](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de#invalidating-dispatcher-cache-from-the-authoring-environment) und [Invalidieren des Dispatcher-Cache von einer Veröffentlichungsinstanz](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de#invalidating-dispatcher-cache-from-a-publishing-instance).
+* Dispatcher-Leerung
+Dies wird für die Verwaltung des Dispatcher-Caches verwendet. Weitere Informationen finden Sie unter [Invalidieren des Dispatcher-Cache aus der Autorenumgebung](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de#invalidating-dispatcher-cache-from-the-authoring-environment) und [Invalidieren des Dispatcher-Cache von einer Veröffentlichungsinstanz](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de#invalidating-dispatcher-cache-from-a-publishing-instance).
 
 * [Rückwärtsreplikation](#reverse-replication-publish-to-author)
-Dient zum Replizieren von der Veröffentlichungs- in die Autoreninstanz. Die Rückwärtsreplikation wird nicht für Communities-Funktionen wie Foren, Blogs und Kommentare verwendet. Sie ist effektiv deaktiviert, da der Postausgang nicht aktiviert ist. Für die Rückwärtsreplikation ist eine benutzerdefinierte Konfiguration erforderlich.
+Wird für die Replikation von der Veröffentlichungs- auf die Autoreninstanz verwendet. Die Rückwärtsreplikation wird nicht für Communities-Funktionen wie Foren, Blogs und Kommentare verwendet. Sie ist effektiv deaktiviert, da der Postausgang nicht aktiviert ist. Für die Rückwärtsreplikation ist eine benutzerdefinierte Konfiguration erforderlich.
 
 * Statischer Agent
-Dies ist ein „Agent, der eine statische Repräsentation eines Knotens im Dateisystem speichert“.
-Bei den Standardeinstellungen werden beispielsweise Inhaltsseiten und DAM-Assets unter `/tmp` gespeichert, entweder im HTML- oder im entsprechenden Asset-Format. Weitere Einzelheiten zur Konfiguration finden Sie auf den Registerkarten `Settings` und `Rules`.
-Der Grund hierfür war, dass die Inhalte sichtbar sein sollten, wenn die Seite direkt vom Anwendungs-Server angefordert wird. Hierbei handelt es sich um einen speziellen Agenten, der (wahrscheinlich) für den Großteil der Instanzen nicht benötigt wird.
+Dies ist ein „Agent, der eine statische Darstellung eines Knotens im Dateisystem speichert“.
+Bei den Standardeinstellungen werden beispielsweise Inhaltsseiten und DAM-Assets unter `/tmp` gespeichert, entweder im HTML- oder im entsprechenden Asset-Format. Weitere Informationen zur Konfiguration finden Sie auf den Registerkarten `Settings` und `Rules` .
+Dies wurde angefordert, damit der Inhalt angezeigt wird, wenn die Seite direkt vom Anwendungs-Server angefordert wird. Dies ist ein spezialisierter Agent, der (wahrscheinlich) für die meisten Instanzen nicht erforderlich ist.
 
 ## Replikationsagenten – Konfigurationsparameter {#replication-agents-configuration-parameters}
 
@@ -166,7 +166,7 @@ Beim Konfigurieren eines Replikationsagenten in der Tools-Konsole stehen vier Re
 
   >[!CAUTION]
   >
-  >Für einen Agenten in der Autorenumgebung *muss* dieses Konto Lesezugriff auf alle Pfade haben, die repliziert werden sollen.
+  >Für einen Agenten in der Autorenumgebung *dieses Konto (*) Lesezugriff auf alle Pfade haben, die repliziert werden sollen.
 
   >[!CAUTION]
   >
@@ -219,11 +219,11 @@ Beim Konfigurieren eines Replikationsagenten in der Tools-Konsole stehen vier Re
 
 * **NTLM-Domäne**
 
-  Die Domäne für die NTLM-Authentifizierung.
+  Domain für NTLM-Authentifizierung.
 
 * **NTLM-Host**
 
-  Der Host für die NTLM-Authentifizierung.
+  Host für NTLM-Authentifizierung.
 
 * **Relaxed SSL aktivieren**
 
@@ -381,7 +381,7 @@ Die Rückwärtsreplikation dient dazu, Benutzerinhalte abzurufen, die in einer V
 
 Aus Sicherheitsgründen lassen die meisten Netzwerktopologien keine Verbindungen *aus* der „demilitarisierten Zone“ (DMZ) zu (ein Subnetzwerk, das externe Dienste für ein nicht vertrauenswürdiges Netzwerk wie das Internet bereitstellt).
 
-Da sich die Veröffentlichungsumgebung in der Regel in der DMZ befindet, muss eine Verbindung von der Autoreninstanz aus initiiert werden, um Inhalte an die Autorenumgebung zurückzuleiten. Dies geschieht mithilfe:
+Da sich die Veröffentlichungsumgebung normalerweise in der DMZ befindet, muss die Verbindung von der Autoreninstanz aus initiiert werden, um Inhalte an die Autorenumgebung zurückzuleiten. Dies geschieht mithilfe:
 
 * eines *Postausgangs* in der Veröffentlichungsumgebung, in dem die Inhalte abgelegt werden.
 * eines Agenten ( „publish“) in der Autorenumgebung, der den Postausgang regelmäßig hinsichtlich neuer Inhalte abfragt.
@@ -444,14 +444,14 @@ Sie können dann einen Funktionstest durchführen, indem Sie eine Seite in der A
 
 Die Aktualisierungen werden in allen Veröffentlichungsinstanzen angezeigt, die wie oben beschrieben konfiguriert wurden.
 
-Falls Probleme auftreten, können Sie die Protokolle der Autoreninstanz überprüfen. Abhängig vom erforderlichen Detaillierungsgrad können Sie die Einstellung für die **Protokollebene** auf `Debug` festlegen. Verwenden Sie hierzu das Dialogfeld **Agenteneinstellungen**, wie oben beschrieben.
+Falls Probleme auftreten, können Sie die Protokolle der Autoreninstanz überprüfen. Je nach erforderlichem Detaillierungsgrad können Sie die Einstellung **Protokollebene** auf `Debug` festlegen, indem Sie das Dialogfeld **Agenteneinstellungen** wie oben beschrieben verwenden.
 
 >[!NOTE]
 >
 >Diese Einstellung kann zusammen mit der [Agenten-Benutzer-ID](#agentuserid) verwendet werden, um andere Inhalte für die Replikation in den einzelnen Veröffentlichungsumgebungen auszuwählen. Gehen Sie für jede Veröffentlichungsumgebung wie folgt vor:
 >
 >1. Konfigurieren Sie einen Replikationsagenten für die Replikation in dieser Veröffentlichungsumgebung.
->1. Konfigurieren Sie ein Benutzerkonto mit den nötigen Zugriffsrechten zum Lesen der Inhalte, die in der spezifischen Veröffentlichungsumgebung repliziert werden.
+>1. Konfigurieren Sie ein Benutzerkonto mit den Zugriffsrechten, die zum Lesen des Inhalts erforderlich sind, der in dieser bestimmten Veröffentlichungsumgebung repliziert wird.
 >1. Weisen Sie das Benutzerkonto als **Agenten-Benutzer-ID** für den Replikationsagenten zu.
 >
 
@@ -559,11 +559,11 @@ So überwachen Sie einen Replikationsagenten:
 
 ## Batch-Replikation {#batch-replication}
 
-Die Batch-Replikation repliziert keine einzelnen Seiten oder Assets, sondern wartet darauf, dass der erste Schwellenwert der beiden ausgelöst wird, basierend auf Zeit oder Größe.
+Die Batch-Replikation repliziert keine einzelnen Seiten oder Assets. Stattdessen wartet sie darauf, dass die erste Schwelle der beiden (basierend auf Zeit oder Größe) ausgelöst wird.
 
 Anschließend werden alle Replikationselemente in einem Paket zusammengefasst, das dann als einzelne Datei in die Veröffentlichungsinstanz repliziert wird.
 
-Dort werden alle Elemente entpackt, gespeichert und der Autoreninstanz gemeldet.
+Der Publisher entpackt alle Elemente, speichert sie und meldet dies dem Autor.
 
 ### Konfigurieren der Batch-Replikation {#configuring-batch-replication}
 

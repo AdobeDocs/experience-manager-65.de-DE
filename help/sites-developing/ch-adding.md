@@ -5,10 +5,10 @@ exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 2b39796a6ede351258adaa28e6a3f1f54f83ec92
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 100%
+source-wordcount: '924'
+ht-degree: 93%
 
 ---
 
@@ -92,7 +92,7 @@ Darüber hinaus bietet die Klasse [`ContextHub.Utils.JSON`](contexthub-api.md#c
 
 ## Interagieren mit ContextHub-Stores {#interacting-with-contexthub-stores}
 
-Verwenden Sie das JavaScript-Objekt [`ContextHub`](contexthub-api.md#ui-event-constants), um einen Speicher als JavaScript-Objekt abzurufen. Nach dem Abrufen des Store-Objekts können Sie die darin enthaltenen Daten bearbeiten. Verwenden Sie zum Abrufen des Stores die Funktion [`getAllStores`](contexthub-api.md#getallstores) oder [`getStore`](contexthub-api.md#getstore-name).
+Verwenden Sie das JavaScript-Objekt [`ContextHub`](contexthub-api.md#ui-event-constants), um einen Speicher als JavaScript-Objekt abzurufen. Sobald Sie das Storeobjekt erhalten haben, können Sie die darin enthaltenen Daten bearbeiten. Verwenden Sie zum Abrufen des Stores die Funktion [`getAllStores`](contexthub-api.md#getallstores) oder [`getStore`](contexthub-api.md#getstore-name).
 
 ### Zugreifen auf Store-Daten {#accessing-store-data}
 
@@ -110,7 +110,7 @@ Beachten Sie, dass benutzerdefinierte Speicherkandidaten weitere Funktionen defi
 
 >[!NOTE]
 >
->Standardmäßig sind die derzeit bei Veröffentlichungs-Servern angemeldeten Benutzenden ContextHub nicht bekannt und werden von ContextHub als anonyme Benutzende betrachtet.
+>Standardmäßig ist ContextHub der aktuell angemeldete Benutzer auf Veröffentlichungs-Servern nicht bekannt und diese Benutzer werden als „anonym“ betrachtet.
 >
 >Sie können ContextHub über angemeldete Benutzerinnen und Benutzer informieren, indem Sie den Profilspeicher laden. Den Beispiel-Code finden Sie [auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
@@ -137,7 +137,7 @@ Die folgenden Segmente werden mit der [WKND-Tutorial-Site](getting-started.md) i
 
 Die Regeln zur Auflösung dieser Segmente werden wie folgt zusammengefasst:
 
-* Zunächst wird der [geolocation](ch-samplestores.md#contexthub-geolocation-sample-store-candidate)-Store zur Bestimmung des Breitengrads des Benutzers verwendet.
+* Zunächst wird [&#x200B; Speicher &#x200B;](ch-samplestores.md#contexthub-geolocation-sample-store-candidate)Geolocation“ verwendet, um den Breitengrad des Benutzers zu bestimmen.
 * Dann bestimmt das Datenelement für den Monat des [surferinfo](ch-samplestores.md#contexthub-surferinfo-sample-store-candidate)-Stores, in welcher Jahreszeit sich dieser Breitengrad befindet.
 
 >[!WARNING]
