@@ -9,10 +9,10 @@ exl-id: 2cf3ac3f-ee17-480d-a32a-c57631502693
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f6a903263eca2c412c6ca9af2f5e51ea1c5878aa
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '701'
+ht-degree: 94%
 
 ---
 
@@ -26,7 +26,7 @@ Bei einer Standardinstallation werden die Standardeinstellungen als Eigenschafte
 
 `/libs/wcm/core/config.author/com.day.cq.wcm.undo.UndoConfig`
 
-Dieser Knoten umfasst die Eigenschaften `cq.wcm.undo.whitelist` und `cq.wcm.undo.blacklist`; bei den anderen Eigenschaften werden die Standardwerte übernommen.
+Dieser Knoten enthält `cq.wcm.undo.whitelist`- und `cq.wcm.undo.blacklist`. Für die anderen Eigenschaften werden die Standardwerte übernommen.
 
 >[!CAUTION]
 >
@@ -51,7 +51,7 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
    * **Standard**: `Selected`
    * **Typ**: `Boolean`
 
-* **Pfad**
+* **path**
 ( `cq.wcm.undo.path`)
 
    * **Beschreibung**: Der Repository-Pfad zum Beibehalten von Rückgängig-Binärdaten. Wenn Autorinnen und Autoren Binärdaten wie Bilder ändern, wird die ursprüngliche Version der Daten hier beibehalten. Wenn Änderungen an den Binärdaten rückgängig gemacht werden, werden diese Rückgängig-Binärdaten auf der Seite wiederhergestellt.
@@ -88,7 +88,7 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
    * **Typ**: `String`
 
 * **Persistenzmodus**
-(`cq.wcm.undo.persistence.mode`)
+( `cq.wcm.undo.persistence.mode`)
 
    * **Beschreibung**: Legt fest, wann der Verlauf der Rückgängigmachungen beibehalten wird. Aktivieren Sie diese Option, damit der Verlauf der Rückgängigmachungen nach jeder Seitenbearbeitung beibehalten wird. Deaktivieren Sie diese Option, damit der Verlauf nur beim erneuten Laden einer Seite beibehalten wird (etwa wenn die Person zu einer anderen Seite navigiert).
 
@@ -98,7 +98,7 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
    * **Typ**: `Boolean`
 
 * **Markierungsmodus**
-(`cq.wcm.undo.markermode`)
+( `cq.wcm.undo.markermode`)
 
    * **Beschreibung**: Gibt den visuellen Hinweis an, der verwendet wird, um die von einem Rückgängig- oder Wiederherstellen-Vorgang betroffenen Absätze anzugeben. Die folgenden Werte sind gültig:
 
@@ -111,7 +111,7 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
 * **Gute Komponenten**
 ( `cq.wcm.undo.whitelist`)
 
-   * **Beschreibung**: Eine Liste von Komponenten, für die die Befehle „Rückgängig“ und „Wiederherstellen“ angewendet werden sollen. Fügen Sie dieser Liste Komponentenpfade hinzu, wenn sie korrekt mit „Rückgängig“ und „Wiederherstellen“ funktionieren. Hängen Sie ein Sternchen (&amp;ast;) an, um eine Gruppe von Komponenten anzugeben:
+   * **Beschreibung**: Eine Liste von Komponenten, für die die Befehle „Rückgängig“ und „Wiederherstellen“ angewendet werden sollen. Fügen Sie dieser Liste Komponentenpfade hinzu, wenn sie korrekt mit „Rückgängig“ und „Wiederherstellen“ funktionieren. Hängen Sie ein Sternchen (*) an, um eine Gruppe von Komponenten anzugeben:
 
       * Der folgende Wert legt die Foundation-Textkomponente fest:
 
@@ -126,7 +126,7 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
    * **Standard**: Die Eigenschaft wird mit vielen von AEM bereitgestellten Komponenten aufgefüllt.
    * **Typ**: `String[]`
 
-* **Ungültige Komponenten**
+* **Fehlerhafte Komponenten**
 ( `cq.wcm.undo.blacklist`)
 
    * **Beschreibung**: Eine Liste der Komponenten und/oder Komponentenvorgänge, für die die Befehle „Rückgängig“ und „Wiederherstellen“ nicht angewendet werden sollen. Fügen Sie Komponenten und Komponentenvorgänge hinzu, die sich beim Anwenden des Befehls „Rückgängig“ nicht ordnungsgemäß verhalten:
@@ -147,3 +147,4 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
 
    * **Standard**: Die Eigenschaft wird mit mehreren Komponentenvorgängen aufgefüllt.
    * **Typ**: `String[]`
+
