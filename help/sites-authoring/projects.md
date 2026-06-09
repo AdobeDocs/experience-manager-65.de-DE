@@ -5,10 +5,10 @@ exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 35042bcda42d01a9f21afc2230556475cb2983d8
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 100%
+source-wordcount: '1373'
+ht-degree: 83%
 
 ---
 
@@ -25,9 +25,9 @@ Als Benutzer haben Sie folgende Möglichkeiten:
 
 ## Zugriffsanfrorderungen {#access-requirements}
 
-„Projekte“ ist eine standardmäßige AEM-Funktion und erfordert keine zusätzliche Einrichtung.
+Projekte sind eine standardmäßige AEM-Funktion und erfordern keine zusätzliche Einrichtung.
 
-Damit Benutzer in „Projekte“ andere Benutzer/Gruppen sehen können, während sie mit Projektfunktionen wie Erstellen von Projekten, Erstellen von Aufgaben/Workflows, Anzeigen und Verwalten des Teams arbeiten, benötigen sie Lesezugriff auf `/home/users` und `/home/groups`.
+Damit Benutzer in Projekten andere Benutzer/Gruppen sehen können, während sie mit Projektfunktionen wie Erstellen von Projekten, Erstellen von Aufgaben/Workflows, Anzeigen und Verwalten des Teams arbeiten, benötigen sie Lesezugriff auf `/home/users` und `/home/groups`.
 
 Um dies umzusetzen, erteilen Sie am besten der Gruppe **projects-users** Lesezugriff auf `/home/users` und `/home/groups`.
 
@@ -37,7 +37,7 @@ In der Projektekonsole können Sie innerhalb von AEM auf Ihre Projekte zugreifen
 
 ![Die Projektekonsole](assets/screen-shot_2019-03-05at125110.png)
 
-Die Projektekonsole ähnelt anderen Konsolen in AEM, ermöglicht verschiedene Aktionen für einzelne Projekte und passt Ihre Ansicht der Projekte an.
+Die Projektekonsole ähnelt anderen Konsolen in AEM. Sie ermöglicht mehrere Aktionen für einzelne Projekte und kann Ihre Ansicht der Projekte anpassen.
 
 ### Modus umschalten {#modes}
 
@@ -49,11 +49,11 @@ Sie können die Leistenauswahl verwenden, um zwischen den Konsolenmodi zu wechse
 
 „Nur Inhalte“ ist der Standardmodus beim Öffnen der Konsole. Er zeigt alle Ihre Projekte.
 
-#### Zeitleiste {#timeline}
+#### Timeline {#timeline}
 
-In der Timeline-Ansicht können Sie ein einzelnes Projekt auswählen und die Aktivitäten in diesem Projekt anzeigen. Verwenden Sie die Leistenauswahl oder den Hotkey `alt+1`, um zu dieser Ansicht zu wechseln.
+In der Zeitleisten -Ansicht können Sie ein einzelnes Projekt auswählen und dessen Aktivität anzeigen. Verwenden Sie die Leistenauswahl oder den Hotkey `alt+1`, um zu dieser Ansicht zu wechseln.
 
-![Zeitleistenmodus](assets/project-timeline.png)
+![Timeline-Modus](assets/project-timeline.png)
 
 ### Ansicht umschalten {#views}
 
@@ -89,7 +89,7 @@ Sie können die folgenden Kacheln mit Ihrem Projekt verknüpfen.
 * [Links](#links)
 * [Projektinformationen](#project-info)
 * [Team](#team)
-* [Landing Pages](#landing-pages)
+* [Landingpages](#landing-pages)
 * [E-Mails](#emails)
 * [Workflows](#workflows)
 * [Launches](#launches)
@@ -156,13 +156,13 @@ In dieser Kachel können Sie die Mitglieder des Projekt-Teams angeben. Geben Sie
 
 Sie können Team-Mitglieder zum Team hinzufügen und aus ihm löschen. Darüber hinaus können Sie die [Benutzerrolle](#userroles) bearbeiten, die dem jeweiligen Team-Mitglied zugewiesen ist.
 
-### Landing Pages {#landing-pages}
+### Landingpages {#landing-pages}
 
 Über die Kachel **Landingpages** können Sie eine neue Landingpage anfragen.
 
 ![Landingpage-Kachel](assets/project-tile-landing.png)
 
-Dieser Workflow wird im Dokument [Erstellen eines Landingpage-Workflows](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow) beschrieben.
+Dieser Workflow wird im Dokument [Erstellen eines Landingpage-Workflows“ ](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
 
 ### E-Mails {#emails}
 
@@ -178,7 +178,7 @@ Sie können Workflows für Ihr Projekt starten. Wenn Workflows ausgeführt werde
 
 ![Workflows-Kachel](assets/project-tile-workflows.png)
 
-Je nachdem, welches Projekt Sie erstellen, sind unterschiedliche Workflows verfügbar.
+Je nach erstelltem Projekt stehen verschiedene Workflows zur Verfügung.
 
 Diese werden unter [Arbeiten mit Projekt-Workflows](/help/sites-authoring/projects-with-workflows.md) beschrieben.
 
@@ -203,14 +203,14 @@ Vorlagen dienen als Grundlage für den Projektstart. AEM stellt diese Standardpr
 * **[Übersetzungsprojekt](/help/sites-administering/translation.md)**: Dies ist ein beispielhaftes Referenzprojekt für die Verwaltung von übersetzungsbezogenen Aktivitäten. Es enthält grundlegende Rollen und Workflows für die Verwaltung von Übersetzungen.
 * **Einfaches Projekt**: Dies ist ein Referenzbeispiel für alle Projekte, die nicht in andere Kategorien passen. Es umfasst drei grundlegende Rollen und vier allgemeine AEM-Workflows.
 
-Je nach ausgewählter Vorlage stehen Ihnen im Projekt verschiedene Optionen zur Verfügung, z. B. die Benutzerrollen und Workflows.
+Je nach ausgewählter Vorlage stehen innerhalb des Projekts verschiedene Optionen zur Verfügung, z. B. die Benutzerrollen und Workflows.
 
 ## Benutzerrollen in einem Projekt {#user-roles-in-a-project}
 
 Die verschiedenen Benutzerrollen werden in einer Projektvorlage festgelegt und werden in erster Linie aus zwei Gründen verwendet:
 
 1. Berechtigungen: Die Benutzerrollen fallen in eine der drei genannten Kategorien: Beobachter, Bearbeiter, Verantwortlicher. Ein Fotograf oder Werbetexter hat z. B. dieselben Berechtigungen wie ein Bearbeiter. Über die Berechtigungen wird festgelegt, inwiefern ein Benutzer Inhalte in einem Projekt ändern kann.
-1. Workflows: Mit Workflows wird festgelegt, wem welche Aufgaben in einem Projekt zugewiesen sind. Die Aufgaben können einer Projektrolle zugeordnet werden. Beispielsweise kann Fotografen eine Aufgabe zugewiesen werden, sodass alle Team-Mitglieder mit der Rolle „Fotograf“ die Aufgabe erhalten.
+1. Workflows: Mit Workflows wird festgelegt, wem welche Aufgaben in einem Projekt zugewiesen sind. Die Aufgaben können einer Projektrolle zugeordnet werden. Beispielsweise kann Fotografen eine Aufgabe zugewiesen werden, sodass allen Team-Mitgliedern mit der Rolle „Fotograf“ die Aufgabe zugewiesen wird.
 
 Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherheits- und Kontrollberechtigungen verwalten können.
 
@@ -226,9 +226,9 @@ Für kreative Projekte stehen zusätzliche Rollen, z. B. Fotografen, zur Verfüg
 
 Wenn Sie das Projekt erstellen und den verschiedenen Rollen Benutzer hinzufügen, werden mit dem Projekt verknüpfte Gruppen automatisch erstellt, um die zugehörigen Berechtigungen zu verwalten.
 
-Ein Projekt mit dem Namen Myproject könnte z. B. drei Gruppen **Myproject-Eigentümer**, **Myproject-Editor**, **Myproject-Beobachter** haben.
+Ein Projekt mit dem Namen Myproject könnte z. B. drei Gruppen haben **&quot;**&quot;, **Myproject-**, **Myproject-Beobachter**.
 
-Wenn das Projekt gelöscht wird, werden diese Gruppen nur gelöscht, [wenn Sie beim Löschen des Projekts die entsprechende Option auswählen.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Eine bzw. ein Admin kann die Gruppen unter **Tools** > **Sicherheit** > **Gruppen** manuell löschen.
+Wenn das Projekt gelöscht wird, werden diese Gruppen nur gelöscht, wenn Sie die entsprechende Option auswählen [beim Löschen des Projekts.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Eine bzw. ein Admin kann die Gruppen unter **Tools** > **Sicherheit** > **Gruppen** manuell löschen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

@@ -10,9 +10,9 @@ role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9c0089e1305ffba72d88842a07bf36b6f923834c
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1538'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ Die Moderation von UGC ist nützlich, um positive Beiträge zu erkennen und nega
 
 * [Kontextbezogene Moderation](in-context.md)
 
-  Die Moderation in der Publish-Umgebung kann von Administratoren und Community-Moderatoren direkt auf der Seite durchgeführt werden, auf der der Inhalt veröffentlicht wurde.
+  Die Moderation in der Veröffentlichungsumgebung kann von Administratoren und Community-Moderatoren direkt auf der Seite durchgeführt werden, auf der der Inhalt veröffentlicht wurde.
 
 ## Moderationsaktionen {#moderation-actions}
 
@@ -173,7 +173,7 @@ Ein Moderator kann die Sichtbarkeit von benutzergenerierten Inhalten auf der ver
 
 Die Aktion „Schließen“ gilt für den gesamten Konversations-Thread (ein Forumsthema oder der ursprüngliche Kommentar) und umfasst alle nachfolgenden Beiträge oder Antworten.
 
-Nach Abschluss des Vorgangs sind nicht nur keine weiteren Antworten möglich, sondern es sind auch keine Moderationsmaßnahmen zulässig.
+Nach dem Schließen sind keine weiteren Antworten oder Moderationsaktionen zulässig.
 
 Um Vorgänge auszuführen, muss das Thema oder der Kommentar erneut geöffnet werden.
 
@@ -183,7 +183,7 @@ Die Aktion „Schließen/Erneut öffnen“ kann von Administratoren oder Communi
 
 Das Kennzeichnen ist ein Mittel für jedes angemeldete Mitglied mit Ausnahme des Erstellers des Inhalts, um anzugeben, dass ein Problem mit dem Inhalt eines Posts besteht. Nach der Kennzeichnung wird das Symbol zum Aufheben der Kennzeichnung angezeigt, sodass dasselbe Mitglied die Kennzeichnung des Inhalts aufheben kann.
 
-Kontextbezogene Moderation kann so konfiguriert werden, dass Mitglieder beim Kennzeichnen eines Beitrags einen Grund auswählen können. Die Liste der auswählbaren Markierungsgründe ist konfigurierbar, einschließlich der Frage, ob ein benutzerdefinierter Grund eingegeben werden kann. Der Markierungsgrund wird beim UGC gespeichert, aber der Grund hat keinen Trigger für eine bestimmte Aktion. Nur die Anzahl der Markierungen gibt Triggern eine Benachrichtigung. Markierte Inhalte werden als solche kommentiert, sodass Moderatoren darauf reagieren können.
+Kontextbezogene Moderation kann so konfiguriert werden, dass Mitglieder beim Kennzeichnen eines Beitrags einen Grund auswählen können. Die Liste der auswählbaren Markierungsgründe ist konfigurierbar, einschließlich der Frage, ob ein benutzerdefinierter Grund eingegeben werden kann. Der Markierungsgrund wird im benutzergenerierten Inhalt gespeichert, der Grund Trigger jedoch keine bestimmte Aktion. Nur die Anzahl der Markierungen gibt Triggern eine Benachrichtigung. Markierte Inhalte werden als solche kommentiert, sodass Moderatoren darauf reagieren können.
 
 Das System verfolgt alle Markierungen, die markiert wurden, und den Markierungsgrund und sendet ein Ereignis, wenn der Schwellenwert erreicht wurde. Wenn der UGC von einem Community-Moderator zugelassen wird, werden diese Flags archiviert. Wenn nach dem Zulassen und Archivieren nachfolgende Markierungen vorhanden sind, werden diese so archiviert, als ob es keine vorherigen Markierungen gegeben hätte.
 
@@ -209,11 +209,11 @@ Die Spam-Erkennung ist eine Funktion zur automatischen Moderation, die unerwüns
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
-Um jedoch die standardmäßigen Spam-Wörter anzupassen oder zu erweitern, erstellen Sie im Verzeichnis /apps einen Satz von Wörtern, der der Struktur der standardmäßigen Spam-Wörter mit &quot;[&quot; &#x200B;](/help/communities/overlay-comments.md).
+Um jedoch die standardmäßigen Spam-Wörter anzupassen oder zu erweitern, erstellen Sie im Verzeichnis /apps einen Satz von Wörtern, der der Struktur der standardmäßigen Spam-Wörter mit &quot;[&quot; ](/help/communities/overlay-comments.md).
 
-Ein benutzergenerierter Beitrag (über alle Inhaltstypen hinweg, z. B. Blogs, Foren und Kommentare), der Spam-Wörter enthält, ist mit dem Text „Dieser Beitrag wurde als Spam klassifiziert“ über dem Beitrag markiert.
+Ein benutzergenerierter Beitrag (über alle Inhaltstypen wie Blogs, Foren und Kommentare hinweg), der Spam-Wörter enthält, ist mit dem Text „Dieser Beitrag wurde als Spam klassifiziert“ über dem Beitrag markiert.
 
-Moderator kann einen solchen Beitrag sehen und markieren Sie den gleichen, um zu erlauben oder zu verweigern, auf der Website zu erscheinen. Moderationsaktionen für diese Beiträge können entweder kontextbezogen oder über die Benutzeroberfläche für die Massenmoderation ausgeführt werden.
+Moderatoren können einen solchen Beitrag sehen und markieren Sie es nicht auf der Website erscheinen. Moderationsaktionen für diese Beiträge können entweder kontextbezogen oder über die Benutzeroberfläche für die Massenmoderation ausgeführt werden.
 
 ![SpamDetection](assets/spamdetection.png)
 
@@ -232,11 +232,11 @@ Gehen Sie wie folgt vor, um die Spam-Erkennungs-Engine zu aktivieren:
 
 ### Empfindung {#sentiment}
 
-Die Stimmung wird anhand der Anzahl positiver und negativer Keywords ([watchwords](#configuringwatchwords)) in einem Beitrag (UGC) berechnet.
+Sentiment wird anhand der Anzahl positiver und negativer Keywords ([watchwords](#configuringwatchwords)) in einem Beitrag (UGC) berechnet.
 
-Die Stimmungsanalyse verwendet einen Satz vorkonfigurierter Regeln und berechnet die Stimmungslage des benutzergenerierten Inhalts (UGC). Die Standardregeln sind unter `/libs/cq/workflow/components/workflow/social/sentiments/rules`.
+Die Sentiment-Analyse verwendet einen Satz vorkonfigurierter Regeln und berechnet die Sentiment des benutzergenerierten Inhalts (UGC). Die Standardregeln sind unter `/libs/cq/workflow/components/workflow/social/sentiments/rules`.
 
-Die Regeln erzeugen einen Wert von 1 (alle negativen, keine positiven Wörter) bis 10 (alle positiven, keine negativen Wörter). Ein Gefühlswert von 5 ist eine neutrale Empfindung und der Standardwert.
+Die Regeln erzeugen einen Wert von 1 (alle negativen, keine positiven Wörter) bis 10 (alle positiven, keine negativen Wörter). Ein Sentiment-Wert von 5 ist ein neutraler Sentiment und der Standardwert.
 
 Die in der /libs-Komponente definierten Regeln sind:
 
@@ -245,25 +245,25 @@ Die in der /libs-Komponente definierten Regeln sind:
 * Regel 3: Setzen Sie den Wert auf 3, wenn mehr negative Wörter als positive Wörter vorhanden sind.
 * Regel 4: Setzen Sie den Wert auf 8, wenn mehr positive als negative Wörter vorhanden sind.
 
-Um Regeln zu überschreiben oder hinzuzufügen, erstellen Sie im Verzeichnis /apps einen Regelsatz entsprechend der Struktur der Standardregeln. Bearbeiten Sie die Konfiguration der Gefühle, damit Sie den Speicherort der Regeln identifizieren können.
+Um Regeln zu überschreiben oder hinzuzufügen, erstellen Sie im Verzeichnis /apps einen Regelsatz entsprechend der Struktur der Standardregeln. Bearbeiten Sie die Sentiment-Konfiguration, damit Sie den Speicherort der Regeln identifizieren können.
 
-Nach der Analyse wird die Stimmung mit dem UGC gespeichert.
+Nach der Analyse wird die Sentiment mit dem UGC gespeichert.
 
-In der [Konsole für die Massenmoderation](/help/communities/moderation.md) ist es möglich, benutzergenerierten Inhalt zu filtern und anzuzeigen, je nachdem, ob die Stimmung negativ, neutral oder positiv ist.
+Über die [Massenmoderationskonsole](/help/communities/moderation.md) können Sie benutzergenerierten Inhalt filtern und anzeigen, je nachdem, ob die Sentiment negativ, neutral oder positiv ist.
 
 #### Schlagwörter {#watchwords}
 
-AEM Communities bietet einen *Schlagwortanalysator* als Schritt bei der Auswertung von [Sentiment](#sentiment). Der Beitrag zum Sentimentwert von Schlagwörtern beruht auf einem Vergleich von negativen und positiven Schlagwörtern, die im geposteten Inhalt verwendet werden, und verbotenen Wörtern.
+AEM Communities bietet einen *Schlagwort-Analyzer* als Schritt zum Auswerten von [Sentiment](#sentiment). Der Beitrag von watchwords zum Sentiment-Wert beruht auf einem Vergleich von negativen und positiven Watchwords, die im geposteten Inhalt verwendet werden, und verbotenen Wörtern.
 
-#### Konfigurieren von Sentiments und Schlagwörtern {#configure-sentiment-and-watchwords}
+#### Sentiment und Schlagwörter konfigurieren {#configure-sentiment-and-watchwords}
 
-Die Liste der positiven und negativen Schlagwörter kann angepasst werden, ebenso wie die Stimmungsregeln.
+Die Liste der positiven und negativen Schlagwörter kann angepasst werden, ebenso wie die Sentiment-Regeln.
 
 Die Standardliste von Schlüsselwörtern kann als Eigenschaften eines Knotens im Repository eingegeben werden, ähnlich wie bei der Standardliste, oder indem die Standardeinstellung überschrieben wird, indem der OSGi-Dienst `sentimentprocess.name` mit der Liste der Wörter konfiguriert wird.
 
-Der **sentimentprocess.name** kann auch geändert werden, um auf den Speicherort eines benutzerdefinierten Satzes von Stimmungsregeln zu verweisen.
+Der **sentimentprocess.name** kann auch geändert werden, um auf den Speicherort eines benutzerdefinierten Satzes von Sentiment-Regeln zu verweisen.
 
-So konfigurieren Sie Stimmung und Schlagwörter:
+So konfigurieren Sie Sentiment und Schlagwörter:
 
 * Melden Sie sich bei Ihrer Autoreninstanz als Administrator an.
 * Öffnen Sie [Web-Konsole](https://localhost:4502/system/console/configMgr).
@@ -274,19 +274,19 @@ So konfigurieren Sie Stimmung und Schlagwörter:
 
 * **Positive Schlagwörter**
 
-  Eine kommagetrennte Liste von Wörtern, die zu einer positiven Stimmung beitragen, welche die Standardeinstellungen überschreibt. Standard ist eine leere Liste.
+  Eine kommagetrennte Liste von Wörtern, die zu einer positiven Sentiment beitragen, welche die Standardwerte überschreiben. Standard ist eine leere Liste.
 
 * **Negative Schlagwörter**
 
-  Eine kommagetrennte Liste von Wörtern, die zu einer negativen Stimmung beitragen, welche die Standardeinstellungen überschreibt. Standard ist eine leere Liste.
+  Eine kommagetrennte Liste von Wörtern, die zu einer negativen Sentiment beitragen, welche die Standardwerte überschreiben. Standard ist eine leere Liste.
 
 * **Expliziter Pfad zum Watchwords-Knoten**
 
   Der Repository-Speicherort eines Knotens, der `positive` und `negative` Eigenschaften enthält, die Standard-Schlagwörter spezifizieren. Der Standardwert ist `/libs/settings/community/watchwords/default`.
 
-* **Stimmungsregeln**
+* **Sentiment-Regeln**
 
-  Der Repository-Speicherort der Regeln für die Berechnung der Stimmung basierend auf positiven und negativen Schlagwörtern. Der Standardwert ist `/libs/cq/workflow/components/workflow/social/sentiments/rules` (es ist jedoch kein Workflow mehr beteiligt).
+  Der Repository-Speicherort der Regeln für die Berechnung von Sentiment basierend auf positiven und negativen Schlagwörtern. Der Standardwert ist `/libs/cq/workflow/components/workflow/social/sentiments/rules` (es ist jedoch kein Workflow mehr beteiligt).
 
 Im Folgenden finden Sie ein Beispiel für einen benutzerdefinierten Eintrag für die Standard-Schlagwörter, wenn `Explicit Path to Watchwords Node` auf `/libs/settings/community/watchwords/default` gesetzt ist.
 

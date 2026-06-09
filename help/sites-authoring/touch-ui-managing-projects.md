@@ -9,10 +9,10 @@ exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 2b2c54f2a59c73747fd9cdd982aa8b059e554c23
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 100%
+source-wordcount: '971'
+ht-degree: 86%
 
 ---
 
@@ -27,9 +27,9 @@ Unter Verwendung der Konsole können Sie ein Projekt erstellen, Ressourcen mit I
 
 ## Zugriffsanforderungen {#access-requirements}
 
-„Projekte“ ist eine standardmäßige AEM-Funktion und erfordert keine zusätzliche Einrichtung.
+Projekte sind eine standardmäßige AEM-Funktion und erfordern keine zusätzliche Einrichtung.
 
-Damit Benutzer in „Projekte“ andere Benutzer/Gruppen sehen können, während sie mit Projektfunktionen wie Erstellen von Projekten, Erstellen von Aufgaben/Workflows, Anzeigen und Verwalten des Teams arbeiten, benötigen sie Lesezugriff auf `/home/users` und `/home/groups`.
+Damit Benutzer in Projekten andere Benutzer/Gruppen sehen können, während sie mit Projektfunktionen wie Erstellen von Projekten, Erstellen von Aufgaben/Workflows, Anzeigen und Verwalten des Teams arbeiten, benötigen sie Lesezugriff auf `/home/users` und `/home/groups`.
 
 Um dies umzusetzen, erteilen Sie am besten der Gruppe **projects-users** Lesezugriff auf `/home/users` und `/home/groups`.
 
@@ -52,7 +52,7 @@ Die Vorgehensweise zum Erstellen eines Projekts ist für alle Projektvorlagen id
 
 ### Zuordnen von Ressourcen zum Projekt {#associating-resources-with-your-project}
 
-„Projekte“ ermöglicht es Ihnen, Ressourcen zu einer Einheit zu gruppieren, um sie insgesamt zu verwalten. Daher müssen Sie Ressourcen mit dem Projekt verknüpfen. Diese Ressourcen werden innerhalb des Projekts als **Kacheln** gruppiert. Die Ressourcentypen, die Sie mit einem Projekt verknüpfen können, werden unter [Projektkacheln](/help/sites-authoring/projects.md#project-tiles) beschrieben.
+„Projekte“ ermöglicht es Ihnen, Ressourcen zu einer Einheit zu gruppieren, um sie insgesamt zu verwalten. Daher müssen Sie Ressourcen mit Ihrem Projekt verknüpfen. Diese Ressourcen werden innerhalb des Projekts als **Kacheln** gruppiert. Die Ressourcentypen, die Sie mit einem Projekt verknüpfen können, werden unter [Projektkacheln](/help/sites-authoring/projects.md#project-tiles) beschrieben.
 
 So ordnen Sie Ihrem Projekt Ressourcen zu:
 
@@ -95,14 +95,14 @@ Dazu öffnen Sie die Kachel, sodass Sie ihre Elemente anzeigen und ändern könn
 
    ![Projektaufgaben](assets/project-tasks.png)
 
-### Anzeigen einer Projekt-Zeitleiste {#viewing-a-project-timeline}
+### Anzeigen einer Projekt-Timeline {#viewing-a-project-timeline}
 
-Die Projekt-Zeitleiste enthält Informationen dazu, wann Assets des Projekts zuletzt verwendet wurden. Gehen Sie wie folgt vor, um die Projekt-Zeitleiste anzuzeigen.
+Die Projekt-Timeline enthält Informationen dazu, wann Assets des Projekts zuletzt verwendet wurden. Gehen Sie wie folgt vor, um die Projekt-Timeline anzuzeigen.
 
 1. Klicken Sie in der **Projektekonsole** in der Leistenauswahl oben links auf **Timeline**.
-   ![Auswahl des Zeitleisten-Modus](assets/projects-timeline-rail.png)
+   ![Auswahl des Timeline-Modus](assets/projects-timeline-rail.png)
 2. Wählen Sie in der Konsole das Projekt aus, dessen Zeitleiste Sie anzeigen möchten.
-   ![Projekt-Zeitleisten-Ansicht](assets/project-timeline-view.png)
+   ![Projekt-Timeline-Ansicht](assets/project-timeline-view.png)
 
 Assets werden in der Leiste angezeigt. Verwenden Sie die Leistenauswahl, um nach Abschluss zur normalen Ansicht zurückzukehren.
 
@@ -122,7 +122,7 @@ Es stehen mehrere Optionen zur Verfügung, um Ihre Projekte zu organisieren und 
 
 In der **Projektekonsole** können Sie Ordner erstellen, um ähnliche Projekte zu gruppieren und zu organisieren.
 
-1. Klicken in der **Projektekonsole** auf **Erstellen** und anschließend auf **Ordner erstellen**.
+1. Klicken Sie in **Projekte**-Konsole auf **Erstellen** und dann auf **Ordner erstellen**.
 
    ![Ordner erstellen](assets/project-create-folder.png)
 
@@ -161,4 +161,4 @@ Gehen Sie wie folgt vor, um ein Projekt zu löschen.
    ![Optionen zum Löschen von Projekten](assets/project-delete-options.png)
 1. Klicken Sie auf **Löschen**, um das Projekt mit den ausgewählten Optionen zu löschen.
 
-Weitere Einzelheiten zu automatisch von Projekten erstellten Gruppen finden Sie unter [Automatische Gruppenerstellung](/help/sites-authoring/projects.md#auto-group-creation).
+Weitere Informationen zu automatisch von Projekten erstellten Gruppen finden Sie unter [Automatische Gruppenerstellung](/help/sites-authoring/projects.md#auto-group-creation).

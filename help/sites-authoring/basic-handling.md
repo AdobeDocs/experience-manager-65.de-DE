@@ -10,10 +10,10 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 8cb06cb2240f4ba460493dda1615cb64006d4646
 workflow-type: tm+mt
-source-wordcount: '2965'
-ht-degree: 100%
+source-wordcount: '3016'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ Da die AEM-Benutzeroberfläche Touch-optimiert ist, können Sie auf Ihren Touch-
 
 ### Erste Schritte {#first-steps}
 
-Unmittelbar nach der Anmeldung gelangen Sie zum [Navigationsfenster](#navigation-panel). Wenn Sie eine der Optionen auswählen, wird die entsprechende Konsole geöffnet.
+Unmittelbar nach der Anmeldung gelangen Sie zum [Navigationsbereich](#navigation-panel). Wenn Sie eine der Optionen auswählen, wird die entsprechende Konsole geöffnet.
 
 ![Navigation](assets/bh-01.png)
 
@@ -55,7 +55,7 @@ Wenn eine Benutzerin oder ein Benutzer zum ersten Mal auf eine Konsole zugreift,
 
 Klicken Sie auf **Weiter**, um zur nächsten Seite des Überblicks zu wechseln. Klicken Sie zum Schließen auf **Schließen** oder auf eine beliebige Stelle außerhalb des Dialogfelds „Überblick“.
 
-Der Überblick wird bei Ihrem nächsten Zugriff auf eine Konsole neu gestartet, es sei denn, Sie haben alle Folien angesehen oder die Option **Nicht mehr anzeigen** aktiviert.
+Die Übersicht wird bei Ihrem nächsten Zugriff auf eine Konsole neu gestartet, sofern Sie nicht die Option **Nicht mehr anzeigen** aktivieren.
 
 ## Globale Navigation {#global-navigation}
 
@@ -67,11 +67,11 @@ Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließe
 
 >[!NOTE]
 >
->Bei Ihrer ersten Anmeldung wird das **Navigationsfenster** geöffnet.
+>Bei der ersten Anmeldung wird das Bedienfeld **Navigation** angezeigt
 
 Die globale Navigation verfügt über zwei Fenster, die am linken Bildschirmrand durch Symbole dargestellt werden:
 
-* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** – dargestellt durch einen Kompass 
+* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** – dargestellt durch einen Kompass
 * **[Tools](/help/sites-authoring/basic-handling.md#tools-panel)** – dargestellt durch einen Hammer
 
 Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
@@ -101,7 +101,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
    <td>In dieser Konsole können Sie <a href="/help/communities/sites-console.md">Community-Sites</a> für die <a href="/help/communities/overview.md#engagement-community">Interaktion</a> und die <a href="/help/communities/overview.md#enablement-community">Aktivierung</a> erstellen und verwalten.</td>
   </tr>
   <tr>
-   <td>Commerce </td>
+   <td>Commerce</td>
    <td>Damit können Sie Produkte, Produktkataloge und Bestellungen verwalten, die zu Ihren <a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerce</a>-Sites gehören.</td>
   </tr>
   <tr>
@@ -155,7 +155,7 @@ Die Kopfzeile befindet sich immer am oberen Rand des Bildschirms. Die meisten Op
 
   Sie können auch den [Tastaturbefehl](/help/sites-authoring/keyboard-shortcuts.md) `/` (Schrägstrich) verwenden, um von jeder beliebigen Konsole aus die Suche zu starten.
 
-* [Lösungen](https://business.adobe.com/de/)
+* [Lösungen](https://business.adobe.com/)
 
   ![Lösungen](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -181,7 +181,7 @@ Die Kopfzeile befindet sich immer am oberen Rand des Bildschirms. Die meisten Op
 
   ![Liste der Leistenauswahl, die auf der linken Seite des Adobe Experience Manager-Bildschirms angezeigt wird.](do-not-localize/screen_shot_2018-03-23at103943.png)
 
-  Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z. B. in **Sites** nur Inhalt (Standard), die Zeitleiste, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
+  Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z. B. in **Sites** nur Inhalt (Standard), die Timeline, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
 
   ![Leistenauswahl](assets/screen_shot_2018-03-23at104029.png)
 
@@ -189,7 +189,7 @@ Die Kopfzeile befindet sich immer am oberen Rand des Bildschirms. Die meisten Op
 
   ![Breadcrumbs](assets/bh-05.png)
 
-  Werden in der Mitte der Leiste angezeigt und zeigen immer die Beschreibung des aktuell ausgewählten Elements an. Sie ermöglichen Ihnen damit die Navigation innerhalb einer bestimmten Konsole.  In der Sites-Konsole können Sie damit durch die Ebenen Ihrer Website navigieren.
+  Breadcrumbs werden in der Mitte der Leiste angezeigt. Dabei wird immer die Beschreibung des aktuell ausgewählten Elements angezeigt. Mit den Breadcrumbs können Sie innerhalb einer bestimmten Konsole navigieren. In der Sites-Konsole können Sie damit durch die Ebenen Ihrer Website navigieren.
 
   Durch Klicken auf den Breadcrumb-Text wird eine Dropdown-Liste mit den Hierarchieebenen des aktuell ausgewählten Elements geöffnet. Klicken Sie auf einen Eintrag, um zu dieser Position zu springen.
 
@@ -209,7 +209,7 @@ Die Kopfzeile befindet sich immer am oberen Rand des Bildschirms. Die meisten Op
 
 * [Ansichten](/help/sites-authoring/basic-handling.md#viewingandselectingyourresourcescardlistcolumn)
 
-  Das Ansichtssymbol befindet sich ganz rechts in der AEM-Symbolleiste. Da es auch die aktuelle Ansicht anzeigt, ändert es sich. In der Standardansicht wird beispielsweise in der **Spaltenansicht** Folgendes angezeigt:
+  Das Ansichtssymbol befindet sich ganz rechts in der AEM-Symbolleiste. Da dies auch für die aktuelle Ansicht gilt, ändert sich ihr Erscheinungsbild. In der Standardansicht (Spaltenansicht **wird beispielsweise Folgendes**:
 
   ![Spaltenansicht](assets/bh-07.png)
 
@@ -241,7 +241,7 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
 * **Seiten-Editor**
 
-  Wenn Sie zum ersten Mal eine Seite bearbeiten, wird der Seiten-Editor durch eine Reihe von Folien vorgestellt.
+  Beim ersten Bearbeiten einer Seite wird der Seiteneditor durch eine Reihe von Folien eingeführt.
 
   ![Seiteneditor](assets/bh-11.png)
 
@@ -254,10 +254,10 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
   Über die **Tools**-Konsole können Sie auch auf die externen **Ressourcen** zugreifen:
 
    * **Dokumentation**
-Dokumentation für Web Experience Management anzeigen
+Dokumentation zu Web Experience Management anzeigen
 
    * **Entwicklungsressourcen**
-Entwicklungsressourcen und Downloads
+Ressourcen und Downloads für Entwickler
 
   >[!NOTE]
   >
@@ -280,7 +280,7 @@ In der Symbolleiste werden immer nur jene Aktionen angezeigt, die Sie bei den je
 
 Wie Sie [eine Ressource auswählen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), hängt von der Ansicht ab.
 
-Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbolleiste schnell länger als der verfügbare Platz werden. In diesem Fall werden weitere Optionen angezeigt. Durch Klicken oder Tippen auf die Auslassungspunkte (drei Punkte bzw. **…**) wird eine Dropdown-Auswahl geöffnet, die alle verbleibenden Aktionen enthält. Beispiel: Sie haben eine Seite in der **Sites-Konsole** ausgewählt:
+Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbolleiste schnell länger als der verfügbare Platz werden. In diesem Fall werden weitere Optionen angezeigt. Durch Klicken oder Tippen auf die drei Punkte (die drei Punkte oder **…**) Öffnet eine Dropdown-Auswahl, die alle verbleibenden Aktionen enthält. Beispiel: Sie haben eine Seite in der **Sites-Konsole** ausgewählt:
 
 ![Aktionssymbolleiste](assets/bh-12.png)
 
@@ -441,7 +441,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
    * eine visuelle Darstellung des Seiteninhalts
    * den Seitentitel
    * wichtige Daten (z. B. zuletzt bearbeitet, zuletzt veröffentlicht)
-   * ob die Seite gesperrt, ausgeblendet oder Teil einer Live Copy ist
+   * Wenn die Seite gesperrt, ausgeblendet oder Teil einer Live Copy ist.
    * wann Sie im Zuge eines Workflows eine Aktion ausführen müssen, falls zutreffend.
 
       * Markierungen, die die erforderlichen Aktionen angeben, können mit Einträgen in Ihrem [Posteingang](/help/sites-authoring/inbox.md) in Verbindung gebracht werden.
@@ -494,7 +494,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
   >
   >Das Ändern der Reihenfolge funktioniert nur innerhalb eines sortierten Ordners, der den Wert `jcr:primaryType` als `sling:OrderedFolder` hat.
 
-  ![Reihenfolge ändern](assets/bh-22.png)
+  ![Änderungsauftrag](assets/bh-22.png)
 
   Klicken Sie auf die vertikale Auswahlleiste und ziehen Sie das Element an die gewünschte Position in der Liste.
 
@@ -512,7 +512,7 @@ Die **Schienenauswahl** befindet sich im Fenster oben links. Je nach Konsole ste
 
 ![Leistenauswahl](assets/bh-25.png)
 
-So können Sie z. B. in Sites nur Inhalt (Standard), die Inhaltsstruktur, die Zeitleiste, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
+So können Sie z. B. in Sites nur Inhalt (Standard), die Inhaltsstruktur, die Timeline, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
 
 Wenn „Nur Inhalt“ ausgewählt ist, wird lediglich das Schienensymbol angezeigt. Bei Auswahl einer anderen Option wird der Optionsname neben dem Schienensymbol angezeigt.
 
@@ -534,7 +534,7 @@ Mithilfe des Seitenbereichs der Inhaltsstruktur können Benutzerinnen und Benutz
 >
 >Siehe den Abschnitt [Tastaturbefehle](/help/sites-authoring/keyboard-shortcuts.md) für weitere Informationen.
 
-### Zeitleiste {#timeline}
+### Timeline {#timeline}
 
 Die Timeline kann zur Anzeige und/oder Einleitung von Ereignissen in Verbindung mit der ausgewählten Ressource verwendet werden. Öffnen Sie die Timeline-Spalte mithilfe der Leistenauswahl.
 
@@ -564,7 +564,7 @@ In der Timeline-Spalte haben Sie folgende Möglichkeiten:
 
 Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
-![Zeitleiste](assets/bh-27.png)
+![Timeline](assets/bh-27.png)
 
 ### Verweise {#references}
 

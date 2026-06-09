@@ -9,10 +9,10 @@ exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 7ed4f3a4bd5b6a607f2bb29faade9ad248e0acb9
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 100%
+source-wordcount: '1766'
+ht-degree: 99%
 
 ---
 
@@ -58,7 +58,7 @@ Der Service kann entweder mithilfe der [Web-Konsole](/help/sites-deploying/confi
 * **Web-Konsole:** Um die Benutzeroberfläche anzuzeigen, wählen Sie die Eigenschaft „Benutzeroberfläche anzeigen“ aus. Um die Benutzeroberfläche auszublenden, heben Sie die Auswahl dieser Eigenschaft aus.
 * **JCR-Knoten:** Legen Sie die boolesche Eigenschaft `com.adobe.granite.contexthub.show_ui` auf `true` fest, um die Benutzeroberfläche anzuzeigen. Legen Sie die Eigenschaft auf `false` fest, um die Benutzeroberfläche auszublenden.
 
-Wenn die ContextHub-Benutzeroberfläche angezeigt wird, erscheint sie nur auf den Seiten von AEM-Authoring-Instanzen. Auf Seiten von Publishing-Instanzen wird die Benutzeroberfläche nicht angezeigt.
+Wenn die ContextHub-Benutzeroberfläche angezeigt wird, erscheint sie nur auf den Seiten von AEM-Autoreninstanzen. Auf Seiten von Veröffentlichungsinstanzen wird die Benutzeroberfläche nicht angezeigt.
 
 ## Hinzufügen von ContextHub-UI-Modi und -Modulen {#adding-contexthub-ui-modes-and-modules}
 
@@ -186,7 +186,7 @@ Der Store „contexthub.generic-jsonp“ wird so konfiguriert, dass Daten für d
 
 ### Erstellen des Stores „contexthub.generic-jsonp“ {#creating-a-contexthub-generic-jsonp-store}
 
-Mit dem Store-Beispielkandidaten „contexthub.generic-jsonp“ können Sie Daten aus einem JSONP-Service oder einem Webservice abrufen, der JSON-Daten zurückgibt. Verwenden Sie für diesen Store-Kandidaten die Store-Konfiguration, um Details zu dem JSONP-Service anzugeben, der genutzt werden soll.
+Mit dem Store-Beispielkandidaten „contexthub.generic-jsonp“ können Sie Daten aus einem JSONP-Service einem Webservice abrufen, der JSON-Daten zurückgibt. Verwenden Sie für diesen Store-Kandidaten die Store-Konfiguration, um Details zu dem JSONP-Service anzugeben, der genutzt werden soll.
 
 Mit der Funktion [init](/help/sites-developing/contexthub-api.md#init-name-config) der JavaScript-Klasse `ContextHub.Store.JSONPStore` wird ein `config`-Objekt definiert, das diesen Store-Kandidaten initialisiert. Das `config`-Objekt enthält ein `service`-Objekt mit Details zum JSONP-Service. Zum Konfigurieren des Stores geben Sie das `service`-Objekt im JSON-Format als Wert für die Eigenschaft „Detailkonfiguration“ an.
 
@@ -242,9 +242,9 @@ Ein Debugging-Modus für ContextHub kann aktiviert werden, um die Fehlerbehebung
 
 ### Per Konfiguration {#via-the-configuration}
 
-Bearbeiten Sie die Konfiguration von ContextHub und aktivieren Sie die Option **Debuggen**.
+Bearbeiten Sie die Konfiguration von ContextHub und aktivieren Sie die Option **Debug**.
 
-1. Klicken Sie in der Leiste auf **Tools > Sites > ContextHub**.
+1. Klicken Sie in der Leiste auf **Tools > Sites > ContextHub**
 1. Klicken Sie auf den standardmäßigen **Konfigurations-Container**.
 1. Wählen Sie die **ContextHub-Konfiguration** aus und klicken Sie auf **Ausgewähltes Element bearbeiten**.
 1. Klicken Sie auf **Debugging** und dann auf **Speichern**.
@@ -264,7 +264,7 @@ Verwenden Sie CRXDE Lite, um die Eigenschaft `debug` unter auf **true** festzule
 
 Im unbeaufsichtigten Modus werden alle Debug-Informationen unterdrückt. Im Gegensatz zur normalen Debug-Option, die für jede ContextHub-Konfiguration einzeln festgelegt werden kann, ist der unbeaufsichtigte Modus eine globale Einstellung, die Vorrang vor allen Debug-Einstellungen auf der Ebene der ContextHub-Konfiguration hat.
 
-Dies ist für Ihre Publishing-Instanz hilfreich, für die Sie keine Debug-Informationen benötigen. Da es sich um eine globale Einstellung handelt, wird sie per OSGi aktiviert.
+Dies ist für Ihre Veröffentlichungsinstanz hilfreich, für die Sie keine Debug-Informationen benötigen. Da es sich um eine globale Einstellung handelt, wird sie per OSGi aktiviert.
 
 1. Öffnen Sie die **Konfiguration der Adobe Experience Manager-Web-Konsole** unter `http://<host>:<port>/system/console/configMgr`.
 1. Suchen Sie nach **Adobe Granite ContextHub**.

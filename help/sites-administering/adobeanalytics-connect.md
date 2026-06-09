@@ -10,10 +10,10 @@ exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: 36265810f0284acfd13dfd01d89c250d9923cd45
 workflow-type: tm+mt
-source-wordcount: '1484'
-ht-degree: 100%
+source-wordcount: '1491'
+ht-degree: 94%
 
 ---
 
@@ -43,7 +43,7 @@ Das Adobe Analytics-Konto muss:
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-Bevor Sie fortfahren, stellen Sie sicher, dass Sie sich mit Ihren Anmeldedaten bei Adobe Analytics anmelden können. Mit einer der folgenden Methoden:
+Bevor Sie fortfahren, stellen Sie sicher, dass Sie sich mit Ihren Anmeldedaten wie folgt bei Adobe Analytics anmelden können:
 
 * [Adobe Experience Cloud-Anmeldung](https://experience.adobe.com/de/#/@login/home)
 
@@ -100,15 +100,15 @@ Verwenden Sie die [Web-Konsole zum Konfigurieren des OSGi-Bundles](/help/sites-d
 
 Für die von Ihnen verwendete Report Suite-ID (RSID) können Sie steuern, welche Server-Instanzen (Autor, Veröffentlichung oder beides) Daten zur Report Suite beitragen:
 
-* **Alle**: Informationen aus der Authoring- und der Publishing-Instanz werden in die Report Suite eingefügt.
-* **Autor**: Die Report Suite wird nur mit Informationen aus der Authoring-Instanz gefüllt.
+* **Alle**: Informationen aus der Authoring- und der Veröffentlichungsinstanz werden in die Report Suite eingefügt.
+* **Autor**: Die Report Suite wird nur mit Informationen aus der Autoreninstanz gefüllt.
 * **Veröffentlichen**: Die Report Suite wird nur mit Informationen aus der Veröffentlichungsinstanz gefüllt.
 
 >[!NOTE]
 >
 >Durch die Auswahl des Typs der Server-Instanz werden Aufrufe nicht auf Adobe Analytics beschränkt, sondern lediglich gesteuert, welche Aufrufe die RSID enthalten.
 >
->Beispielsweise ist ein Framework so konfiguriert, dass es die Report Suite *diiweretail* verwendet und „Autor“ die ausgewählte Server-Instanz ist. Wenn Seiten zusammen mit dem Framework veröffentlicht werden, werden weiterhin Aufrufe an Adobe Analytics gesendet, diese Aufrufe enthalten jedoch keine RSID. Nur Aufrufe von der Autoreninstanz beinhalten die Report Suite-ID.
+>Beispielsweise ist ein Framework so konfiguriert, dass es die Report Suite *diiweretail* verwendet und „Autor“ die ausgewählte Server-Instanz ist. Wenn Seiten zusammen mit dem Framework veröffentlicht werden, werden weiterhin Aufrufe an Adobe Analytics gesendet. Diese Aufrufe enthalten jedoch nicht die RSID. Nur Aufrufe von der Autoreninstanz beinhalten die Report Suite-ID.
 
 1. Wählen Sie unter **Navigation** die Option **Tools** > **Cloud Services** und dann **Legacy-Cloud-Services** aus.
 1. Blättern Sie zu **Adobe Analytics** und wählen Sie **Konfigurationen anzeigen** aus.
@@ -182,7 +182,7 @@ Untergeordnete Elemente der Seite übernehmen die Verknüpfung mit dem Framework
 
 1. Klicken Sie auf **Speichern und schließen**.
 1. So aktivieren Sie die Seite und alle verbundenen Konfigurationen/Dateien: **[Veröffentlichen](/help/sites-authoring/publishing-pages.md)** Sie die Seite.
-1. Der letzte Schritt besteht darin, die Seite in der Publishing-Instanz zu besuchen und nach einem Keyword (z. B. Aubergine) zu suchen, indem Sie die **Suche**-Komponente verwenden.
+1. Der letzte Schritt besteht darin, die Seite in der Veröffentlichungsinstanz zu besuchen und nach einem Keyword (z. B. Aubergine) zu suchen, indem Sie die **Suche**-Komponente verwenden.
 1. Sie können dann Aufrufe an Adobe Analytics mit einem entsprechenden Tool überprüfen. Zum Beispiel mit [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=de).
 1. Unter Verwendung des angegebenen Beispiels sollte der Aufruf den in eVar7 eingegebenen Wert (d. h. Aubergine) enthalten und die Ereignisliste sollte „event3“ enthalten.
 
@@ -196,16 +196,17 @@ Siehe [Anzeigen von Seitenanalysedaten](/help/sites-authoring/page-analytics-usi
 
 Konfigurieren Sie die entsprechende Instanz des Dienstes **Adobe AEM Analytics Report Sling Importer**:
 
-* **Abrufversuche**: 
+* **Abrufversuche**:
 Anzahl der Versuche, einen Bericht in der Warteschlange abzurufen.
 Der Standardwert lautet `6`.
 
-* **Abrufverzögerung**: 
-Die Anzahl der Millisekunden zwischen den Versuchen, einen Bericht in der Warteschlange abzurufen.
-Der Standardwert lautet `10000`. Da dies in Millisekunden angegeben wird, entspricht es 10 Sekunden.
+* **Abrufverzögerung**:
+Die Anzahl der Millisekunden zwischen Versuchen, einen Bericht in der Warteschlange abzurufen.
+Der Standardwert lautet `10000`. Da dies in Millisekunden geschieht, entspricht es 10 Sekunden.
 
-* **Abrufhäufigkeit**:Ein Ausdruck `cron` zum Bestimmen der Häufigkeit für das Abrufen des Analyseberichts.
-Der Standardwert ist `0 0 0/12 * * ?`, was 12 Abrufen pro Stunde entspricht.
+* **Abrufhäufigkeit**:
+Ein `cron` Ausdruck, um die Häufigkeit des Abrufs des Analytics-Berichts zu bestimmen.
+Der Standardwert ist `0 0 0/12 * * ?`. Dies entspricht 12 Abrufen pro Stunde.
 
 Zum Konfigurieren dieses OSGi-Service können Sie entweder die [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder einen [osgiConfig-Knoten im Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) verwenden (die Service-PID lautet `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
 

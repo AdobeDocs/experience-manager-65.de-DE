@@ -10,10 +10,10 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+source-git-commit: 2cc34ce568fc533d41f53d8007825264ca9baad3
 workflow-type: tm+mt
-source-wordcount: '5412'
-ht-degree: 100%
+source-wordcount: '5471'
+ht-degree: 93%
 
 ---
 
@@ -40,9 +40,9 @@ Ihr Hauptzweck besteht darin, Verwaltungsvorgänge zu vereinfachen, indem die An
 * Eine Rolle innerhalb der Anwendung, z. B. eine Person, die den Inhalt surfen darf, oder eine Person, die Inhalte hinzufügen darf.
 * Ihre eigene Organisation, wobei Sie die Rollen erweitern können, um zwischen Mitwirkenden aus verschiedenen Abteilungen zu unterscheiden, wenn diese auf unterschiedliche Zweige in der Inhaltsstruktur beschränkt sind.
 
-Deshalb sind Gruppen an sich meist stabil, während Benutzende häufiger wechseln.
+Daher bleiben Gruppen meist stabil, während Benutzende häufiger wechseln.
 
-Bei entsprechender Planung und einer sauberen Struktur kann die Verwendung von Gruppen Ihrer Struktur entsprechen, sodass Sie einen klaren Überblick haben und Ihnen ein effizienter Mechanismus für Aktualisierungen zur Verfügung steht.
+Mit Planung und einem sauberen Design kann die Verwendung von Gruppen Ihre Struktur widerspiegeln, sodass Sie einen klaren Überblick und einen effizienten Mechanismus für Aktualisierungen erhalten.
 
 ### Integrierte Benutzende und Gruppen {#built-in-users-and-groups}
 
@@ -58,7 +58,7 @@ In der folgenden Tabelle finden Sie eine Aufstellung der einzelnen Elemente zusa
 <table>
  <tbody>
   <tr>
-   <td>Benutzer-ID </td>
+   <td>Benutzer-ID</td>
    <td>Typ</td>
    <td>Beschreibung</td>
    <td>Empfehlung</td>
@@ -73,12 +73,12 @@ In der folgenden Tabelle finden Sie eine Aufstellung der einzelnen Elemente zusa
    <td><p>Anonym</p> <p> </p> </td>
    <td>User</td>
    <td><p>Besitzt die Standardrechte für nicht authentifizierten Zugriff auf eine Instanz. Dieses Konto verfügt standardmäßig über die Mindestzugriffsrechte.</p> <p>Wenn Sie dieses Konto versehentlich löschen, wird es beim Start neu erstellt. Das Konto kann zwar nicht dauerhaft gelöscht, aber deaktiviert werden.</p> </td>
-   <td>Löschen oder deaktivieren Sie dieses Konto nicht, da dies die Funktionalität von Authoring-Instanzen beeinträchtigen kann. Wenn es Sicherheitsanforderungen gibt, die Sie dazu verpflichten, es zu löschen, stellen Sie sicher, dass Sie zuerst die Auswirkungen auf Ihre Systeme ordnungsgemäß testen.</td>
+   <td>Löschen oder deaktivieren Sie dieses Konto nicht, da dies die Funktionalität von Autoreninstanzen beeinträchtigen kann. Wenn es Sicherheitsanforderungen gibt, die Sie dazu verpflichten, es zu löschen, stellen Sie sicher, dass Sie zuerst die Auswirkungen auf Ihre Systeme ordnungsgemäß testen.</td>
   </tr>
   <tr>
    <td><p>author</p> <p>Standardpasswort: author</p> </td>
    <td>User</td>
-   <td><p>Ein Autorenkonto, das zu Schreibvorgängen unter „/content“ berechtigt ist. Umfasst Berechtigungen für Mitwirkende und Menschen, die surfen.</p> <p>Kann als Webmaster verwendet werden, da es Zugriff auf die gesamte „/content“-Baumstruktur hat.</p> <p>Bei diesem Konto handelt es sich nicht um einen integrierten Benutzer, sondern um einen weiteren Geometrixx-Demobenutzer</p> </td>
+   <td><p>Ein Autorenkonto, das zu Schreibvorgängen unter „/content“ berechtigt ist. Umfasst Berechtigungen für Mitwirkende und Menschen, die surfen.</p> <p>Kann als Webmaster verwendet werden, da es Zugriff auf die gesamte /content-Baumstruktur hat.</p> <p>Bei diesem Konto handelt es sich nicht um einen integrierten Benutzer, sondern um einen weiteren Geometrixx-Demobenutzer.</p> </td>
    <td><p>Adobe empfiehlt, entweder das Konto vollständig zu löschen oder das Standardpasswort zu ändern.</p> <p>Vorzugsweise sollte dies bei der Installation geschehen, es ist aber auch später möglich.</p> </td>
   </tr>
   <tr>
@@ -108,7 +108,7 @@ In der folgenden Tabelle finden Sie eine Aufstellung der einzelnen Elemente zusa
   <tr>
    <td>everyone</td>
    <td>Gruppe</td>
-   <td><p>Jeder und jede Benutzende in AEM ist ein Mitglied der Gruppe „everyone“, auch wenn diese Gruppe oder Mitgliedschaftsbeziehung nicht in allen Tools angezeigt wird.</p> <p>Diese Gruppe kann als Standardberechtigungen betrachtet werden, da sie verwendet werden kann, um Berechtigungen für alle anzuwenden, selbst für Benutzende, die in Zukunft erstellt werden.</p> </td>
+   <td><p>Jeder und jede Benutzende in AEM ist ein Mitglied der Gruppe „everyone“, auch wenn diese Gruppe oder Mitgliedschaftsbeziehung nicht in allen Tools angezeigt wird.</p> <p>Diese Gruppe kann als Standardrechte betrachtet werden, da sie verwendet werden kann, um Berechtigungen für alle anzuwenden, selbst für Benutzer, die in Zukunft erstellt werden.</p> </td>
    <td><p>Ändern oder löschen Sie diese Gruppe nicht.</p> <p>Eine Änderung dieses Kontos hat weitere Auswirkungen auf die Sicherheit.</p> </td>
   </tr>
   <tr>
@@ -169,7 +169,7 @@ Aktionen können auf einer Seite (Ressource) ausgeführt werden. Für jede Seite
     <ul>
      <li>vorhandenen Inhalt auf der Seite und auf untergeordneten Seiten ändern.</li>
      <li>Absätze auf der Seite oder auf einer untergeordneten Seite erstellen.</li>
-    </ul> <p>Auf JCR-Ebene können Benutzende eine Ressource bearbeiten, indem sie ihre Eigenschaften, Sperr- und Versionierungsvorgänge sowie nt-Änderungen bearbeiten. Außerdem verfügen sie über volle Schreibrechte für Knoten, die einen untergeordneten jcr:content-Knoten definieren. Zum Beispiel: cq:Page, nt:file, cq:Asset.</p> </td>
+    </ul> <p>Auf JCR-Ebene können Benutzende eine Ressource bearbeiten, indem sie ihre Eigenschaften, Sperr- und Versionierungsvorgänge sowie nt-Änderungen bearbeiten. Außerdem verfügen sie über volle Schreibrechte für Knoten, die einen untergeordneten jcr:content-Knoten definieren. Beispielsweise cq:Page, nt:file, cq:Asset, dam:Asset.</p> </td>
   </tr>
   <tr>
    <td>Erstellen</td>
@@ -233,7 +233,7 @@ Zugriffssteuerungslisten bestehen aus den individuellen Berechtigungen und werde
 >
 >Im Gegensatz zu vorherigen CQ-Versionen sollten die Rechte **Erstellen** und **Löschen** nicht mehr erteilt werden, wenn jemand nur Seiten ändern darf. Gewähren Sie stattdessen die Aktion **Ändern** nur, wenn Sie möchten, dass Benutzende Komponenten auf bestehenden Seiten erstellen, ändern oder löschen können.
 >
->Aus Gründen der Abwärtskompatibilität berücksichtigen die Tests für Aktionen nicht die Sonderbehandlung von Knoten, die **jcr:content** definieren.
+>Aus Gründen der Abwärtskompatibilität berücksichtigen die Tests für Aktionen nicht die Sonderbehandlung von Knoten, die &quot;**&quot;:content**.
 
 | **Aktion** | **Beschreibung** |
 |---|---|
@@ -269,7 +269,7 @@ Wenn Sie den Mauszeiger über das Sternchen oder Ausrufezeichen bewegen, liefert
   </tr>
   <tr>
    <td>Unterer Teil</td>
-   <td>Listet die ineffektiven Einträge auf, die sich an anderer Stelle der Struktur auswirken können (wie durch ein spezielles Attribut im entsprechenden Zugriffssteuerungseintrag angegeben, das den Umfang des Eintrags einschränkt). Dies kann auch ein Eintrag sein, dessen Wirkung von einem anderen Eintrag, der unter dem angegebenen Pfad oder in einem Vorgängerknoten definiert wurde, aufgehoben wurde.</td>
+   <td>Listet die ineffektiven Einträge auf, die sich an anderer Stelle der Struktur auswirken können (wie durch ein spezielles Attribut im entsprechenden Zugriffssteuerungseintrag angegeben, das den Umfang des Eintrags einschränkt). Alternativ ist es ein Eintrag, dessen Wirkung von einem anderen Eintrag, der unter dem angegebenen Pfad oder in einem Vorgängerknoten definiert wurde, aufgehoben wird.</td>
   </tr>
  </tbody>
 </table>
@@ -284,10 +284,10 @@ Im Folgenden finden Sie Empfehlungen zur Verwaltung von Zugriffssteuerungslisten
 
 * Weisen Sie Benutzenden keine Berechtigungen direkt zu. Weisen Sie diese nur Gruppen zu.
 
-  Dies vereinfacht die Wartung, da die Anzahl der Gruppen deutlich kleiner ist als die Anzahl der Benutzenden und damit weniger Schwankungen ausgesetzt ist.
+  Dies vereinfacht die Wartung, da die Anzahl der Gruppen deutlich kleiner ist als die Anzahl der Benutzer und damit weniger Schwankungen unterliegt.
 
 * Wenn Sie möchten, dass eine Gruppe/Person nur in der Lage sein soll, Seiten zu ändern, dürfen Sie keine Rechte zum Erstellen oder Ablehnen gewähren. Gewähren Sie in diesem Fall ausschließlich Änderungs- und Leseberechtigungen.
-* Setzen Sie „Ablehnen“ sparsam ein. Verwenden Sie, soweit möglich, nur „Zulassen“.
+* Setzen Sie „Ablehnen“ sparsam ein. Lassen Sie so viel wie möglich zu.
 
   Die Verwendung von „Ablehnen“ kann unerwartete Folgen haben, wenn die Berechtigungen in einer anderen Reihenfolge als der erwarteten angewendet werden. Ist eine Person Mitglied in mehr als einer Gruppe, kann die Anweisung „Ablehnen“ einer Gruppe die Anweisung „Zulassen“ einer anderen Gruppe aufheben und umgekehrt. Es ist schwierig, einen Überblick zu behalten, wenn so etwas passiert, und es kann leicht zu unvorhergesehenen Ergebnissen führen. Durch Zuweisung von „Zulassen“ lassen sich solche Konflikte hingegen ausschließen.
 
@@ -359,7 +359,7 @@ Mit dieser Funktion können Stellvertreter-Konten Aufgaben so erledigen, als ob 
 
 >[!CAUTION]
 >
->Wird stellvertretend für andere Benutzende agiert, ist es möglich, eine Seite zu sperren. Eine auf diese Weise gesperrte Seite kann nur von der Person, für die stellvertretend agiert wurde, oder von einer Person mit Administratorrechten entsperrt werden.
+>Wird stellvertretend für andere Benutzende agiert, ist es möglich, eine Seite zu sperren. Eine auf diese Weise gesperrte Seite kann jedoch nur dann entsperrt werden, wenn dies der Benutzer ist, für den stellvertretend agiert wurde, oder wenn er über Administratorrechte verfügt.
 >
 >Seiten können nicht entsperrt werden, indem man sich als die Person ausgibt, der die Seite gesperrt hat.
 
@@ -416,7 +416,7 @@ In der linken Struktur werden alle Benutzenden und Gruppen aufgelistet, die sich
 | Eigenschaften | Listet Informationen über Benutzenden oder eine Gruppe auf, z. B. E-Mail-Adresse, Beschreibung und Namen. Außerdem können Sie das Passwort einer Benutzerin oder eines Benutzers ändern. Siehe [Erstellen von Benutzenden und Gruppen](#creating-users-and-groups), [Ändern von Benutzer- und Gruppeneigenschaften](#modifying-user-and-group-properties) und [Ändern von Benutzerkennwörtern](#changing-a-user-password). |
 | Gruppen | Listet alle Gruppen auf, denen die/der ausgewählte Benutzende oder die ausgewählte Gruppe angehört. Sie können die/den ausgewählte(n) Benutzenden oder die ausgewählte Gruppe zusätzlichen Gruppen zuweisen oder aus Gruppen entfernen. Siehe [Gruppen](#adding-users-or-groups-to-a-group). |
 | Mitglieder | Nur für Gruppen verfügbar. Es werden nur die Mitglieder einer bestimmten Gruppe aufgeführt. Siehe [Mitglieder](#members-adding-users-or-groups-to-a-group). |
-| Berechtigungen | Sie können Benutzenden oder Gruppen Berechtigungen zuweisen. Hiermit können Sie Folgendes steuern:<ul><li>Berechtigungen für bestimmte Seiten/Knoten. Siehe [Festlegen von Zugriffsberechtigungen](#setting-permissions). </li><li>Berechtigungen zum Erstellen und Löschen von Seiten und zum Ändern der Hierarchie. Sie können [Berechtigungen zuweisen](#settingprivileges), z. B. Hierarchieänderung, mit denen Sie Seiten erstellen und löschen können.</li><li>Berechtigungen im Zusammenhang mit [Replikationsberechtigungen](#setting-replication-privileges) (normalerweise von der Autoren- zur Veröffentlichungsinstanz) anhand eines Pfads.</li></ul> |
+| Berechtigungen | Sie können einem Benutzer oder einer Gruppe Berechtigungen zuweisen, mit denen Sie Folgendes steuern können:<ul><li>Berechtigungen für bestimmte Seiten/Knoten. Siehe [Festlegen von Zugriffsberechtigungen](#setting-permissions). </li><li>Berechtigungen im Zusammenhang mit dem Erstellen und Löschen von Seiten und Hierarchieänderungen, mit denen Sie [Berechtigungen zuweisen“ können](#settingprivileges) wie Hierarchieänderungen, mit denen Sie Seiten erstellen und löschen können,</li><li>Berechtigungen im Zusammenhang mit [Replikationsberechtigungen](#setting-replication-privileges) (normalerweise von der Autoren- zur Veröffentlichungsinstanz) anhand eines Pfads.</li></ul> |
 | Stellvertretender | Ermöglicht es anderen Benutzenden, die Identität des Kontos zu übernehmen. Dies ist nützlich, wenn ein/e Benutzende stellvertretend für andere agieren soll. Siehe [Stellvertretendes Agieren für Benutzende](#impersonating-another-user). |
 | Voreinstellungen | Legt [Voreinstellungen für die Gruppe oder Benutzende](#setting-user-and-group-preferences) fest, etwa Sprachvoreinstellungen. |
 
@@ -499,7 +499,7 @@ Gehen Sie wie folgt vor, um das Passwort einer/eines Benutzenden zu ändern.
 
 1. Doppelklicken Sie in der **Sicherheitskonsole** auf den Namen der/des Benutzenden, deren bzw. dessen Passwort geändert werden soll.
 1. Klicken Sie auf die Registerkarte **Eigenschaften** (sofern noch nicht aktiv).
-1. Klicken Sie auf **Kennwort festlegen**. Daraufhin wird das Fenster „Kennwort festlegen“ geöffnet, in dem Sie das Kennwort ändern können.
+1. Klicken Sie auf **Kennwort festlegen**. Das Fenster Kennwort festlegen wird geöffnet, in dem Sie das Kennwort ändern können.
 
    ![cqsecurityuserpassword](assets/cqsecurityuserpassword.png)
 
@@ -670,11 +670,11 @@ Im Suchfeld stehen Ihnen folgende Möglichkeiten zur Verfügung:
 | Nach-unten-Taste | Startet die Suche erneut. |
 | Eingabetaste | Wählt einen Unterknoten aus und lädt ihn in das Strukturraster. |
 
-* Volltextsuche – Wenn die Suchzeichenfolge nicht mit „/“ beginnt, wird eine Volltextsuche in allen Knoten unter dem Pfad /content ausgeführt.
+* Volltextsuche - Wenn die Suchzeichenfolge nicht mit &quot;/&quot; beginnt, wird eine Volltextsuche auf allen Knoten unter dem Pfad &quot;/content“ ausgeführt.
 
 ![cqsecurityfulltextsearch](assets/cqsecurityfulltextsearch.png)
 
-So führen Sie eine Pfad- oder Volltextsuche durch:
+So suchen Sie nach Pfaden oder Volltext:
 
 1. Wählen Sie in der Sicherheitskonsole eine Benutzerin, einen Benutzer oder eine Gruppe aus und klicken Sie dann auf die Registerkarte **Berechtigungen**.
 
@@ -730,13 +730,13 @@ So richten Sie Benutzende oder Admins mit Berechtigungen zum Löschen/Aktivieren
 
 Wenn Sie planen, anwendungsspezifische Berechtigungen zu implementieren, wird in den folgenden Informationen beschrieben, was Sie wissen müssen, um eine benutzerdefinierte Berechtigung zu implementieren, und wie Sie sie in CQ durchsetzen können:
 
-Die Berechtigung zum Ändern der Hierarchie wird von einer Kombination von jcr-Berechtigungen abgedeckt. Die Replikationsberechtigung **crx:replicate** wird mit anderen Berechtigungen im jcr-Repository gespeichert/evaluiert. Sie wird jedoch nicht auf jcr-Ebene durchgesetzt.
+Die Berechtigung zum Ändern der Hierarchie wird von einer Kombination von jcr-Berechtigungen abgedeckt. Die Replikationsberechtigung **crx:replicate**, die zusammen mit anderen Berechtigungen im JCR-Repository gespeichert/ausgewertet wird. Sie wird jedoch nicht auf jcr-Ebene durchgesetzt.
 
 Die Definition und Registrierung benutzerdefinierter Berechtigungen sind ab Version 2.4 offizieller Bestandteil der [Jackrabbit-API](https://jackrabbit.apache.org/oak/docs/security/privilege.html) (siehe auch [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)). Die weitere Verwendung wird über die JCR-Zugriffssteuerungsverwaltung abgedeckt, wie in [JSR 283](https://jcp.org/en/jsr/detail?id=283) (Abschnitt 16) definiert. Außerdem definiert die Jackrabbit-API verschiedene Erweiterungen.
 
 Der Mechanismus zur Berechtigungsregistrierung befindet sich auf der Benutzeroberfläche unter **Repository Configuration**.
 
-Die Registrierung neuer (benutzerdefinierter) Berechtigungen ist selbst durch eine integrierte Berechtigung geschützt, die auf Repository-Ebene erteilt werden muss. In JCR: Übergeben von „null“ als Parameter „absPath“ in der ac-mgt-API; für Details siehe „jsr 333“. Standardmäßig wird diese Berechtigung dem Profil **admin** und allen Mitgliedern der Administratorgruppe erteilt.
+Die Registrierung neuer (benutzerdefinierter) Berechtigungen ist selbst durch eine integrierte Berechtigung geschützt, die auf Repository-Ebene erteilt werden muss. In JCR: Übergeben von „null“ als Parameter „absPath“ in der ac-mgt-API; für Details siehe „jsr 333“. Standardmäßig wird diese Berechtigung dem Profil **admin** und allen Mitgliedern der Administratorgruppe erteilt.
 
 >[!NOTE]
 >

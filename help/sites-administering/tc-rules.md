@@ -6,10 +6,10 @@ feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: ffa4c2522bfe98d99693e3c17666b728377337f9
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 100%
+source-wordcount: '1154'
+ht-degree: 88%
 
 ---
 
@@ -29,7 +29,7 @@ Die Datei gilt für alle Übersetzungsprojekte.
 
 >[!NOTE]
 >
->Nach einem Upgrade auf 6.4 wird empfohlen, die Datei aus /etc. zu verschieben. Weitere Informationen finden Sie unter [Repository-Neustrukturierung für alle Lösungen in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules).
+>Nach einem Upgrade auf 6.4 wird empfohlen, die Datei aus &quot;/etc“ zu verschieben. Weitere Informationen finden [ unter „Repository-Neustrukturierung für alle Lösungen in ](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) 6.5“.
 
 Die Regeln umfassen die folgenden Informationen:
 
@@ -65,7 +65,7 @@ Jedes dieser `node`-Elemente hat die folgenden Eigenschaften:
 * Die untergeordneten `property`-Elemente identifizieren die Knoteneigenschaften, die für alle Ressourcentypen zu übersetzen sind:
 
    * Das Attribut `name` enthält den Eigenschaftsnamen.
-   * Das optionale Attribut `translate` ist gleich `false`, wenn die Eigenschaft nicht übersetzt ist. Standardmäßig lautet der Wert `true`. Dieses Attribut ist nützlich für die Außerkraftsetzung vorheriger Regeln.
+   * Das optionale Attribut `translate` ist gleich `false`, wenn die Eigenschaft nicht übersetzt ist. Standardmäßig ist der Wert `true`. Dieses Attribut ist nützlich für die Außerkraftsetzung vorheriger Regeln.
 
 * Die untergeordneten `node`-Elemente identifizieren die Knoteneigenschaften, die für bestimmte Ressourcentypen zu übersetzen sind:
 
@@ -80,7 +80,7 @@ Die folgende Beispielregel veranlasst, dass alle `text`-Eigenschaften für alle 
 </node>
 ```
 
-Das folgende Beispiel übersetzt den Inhalt aller `text`-Eigenschaften sowie andere Eigenschaften der Foundation-Bildkomponente. Wenn andere Komponenten über Eigenschaften mit demselben Namen verfügen, gilt die Regel nicht für sie.
+Im folgenden Beispiel werden sowohl der Inhalt aller `text` als auch andere Eigenschaften der Foundation-Bildkomponente übersetzt. Wenn andere Komponenten über Eigenschaften mit demselben Namen verfügen, gilt die Regel nicht für sie.
 
 ```xml
 <node path="/content">
@@ -170,7 +170,7 @@ Es gibt vier Attribute, die Sie über die Benutzeroberfläche ändern können: `
 
 **isDeep** Dieses Attribut lässt sich auf Knotenfilter anwenden und ist standardmäßig auf „true“ eingestellt. Es prüft, ob der Knoten oder seine Vorgängerelemente die Eigenschaft mit dem im Filter angegebenen Eigenschaftswert enthalten. Bei „false“ wird die Überprüfung nur für den aktuellen Knoten durchgeführt.
 
-Beispielsweise werden untergeordnete Knoten einem Übersetzungsauftrag selbst dann hinzugefügt, wenn beim übergeordneten Knoten die Eigenschaft `draftOnly` auf „true“ eingestellt ist, um Entwurfsinhalte zu kennzeichnen. Hier kommt `isDeep` ins Spiel, prüft, ob bei den übergeordneten Knoten die Eigenschaft `draftOnly` auf „true“ eingestellt ist, und schließt diese untergeordneten Knoten aus.
+Beispielsweise werden untergeordnete Knoten einem Übersetzungsauftrag selbst dann hinzugefügt, wenn beim übergeordneten Knoten die Eigenschaft `draftOnly` auf „true“ eingestellt ist, um Entwurfsinhalte zu kennzeichnen. `isDeep` prüft, ob bei den übergeordneten Knoten die Eigenschaft „true“ `draftOnly` ist, und schließt diese untergeordneten Knoten aus.
 
 Im Editor können Sie **Is Deep** auf der Registerkarte **Filter** aktivieren/deaktivieren.
 
@@ -184,7 +184,7 @@ Im folgenden Beispiel ist die xml dargestellt, die generiert wird, wenn **Is Dee
 </filter>
 ```
 
-**inherit** Dies lässt sich auf Eigenschaften anwenden. Standardmäßig werden alle Eigenschaften übernommen. Sollten Sie jedoch wünschen, dass eine bestimmte Eigenschaft nicht für das untergeordnete Element übernommen wird, können Sie diese Eigenschaft als „false“ markieren, sodass sie nur auf diesen spezifischen Knoten angewendet wird.
+**inherit** Dies gilt für Eigenschaften. Standardmäßig werden alle Eigenschaften vererbt. Wenn Sie jedoch möchten, dass eine Eigenschaft nicht vom untergeordneten Element vererbt wird, können Sie diese Eigenschaft als „false“ markieren, sodass sie nur auf diesen bestimmten Knoten angewendet wird.
 
 In der Benutzeroberfläche können Sie **Übernehmen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren.
 
@@ -194,7 +194,7 @@ In der Benutzeroberfläche können Sie **Übernehmen** auf der Registerkarte **E
 
 In der Benutzeroberfläche können Sie **Übersetzen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren.
 
-**updateDestinationLanguage** Dieses Attribut wird für Eigenschaften verwendet, die keinen Text, sondern Sprach-Codes enthalten, wie zum Beispiel jcr:language. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
+**updateDestinationLanguage** Dieses Attribut wird für Eigenschaften verwendet, die keinen Text, sondern Sprach-Codes wie `jcr:language` enthalten. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
 
 In der Benutzeroberfläche können Sie **Übersetzen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren, außer bei den spezifischen Eigenschaften mit Sprach-Codes als Wert.
 

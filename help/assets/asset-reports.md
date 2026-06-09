@@ -7,10 +7,10 @@ feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+source-git-commit: 555cb326a4a554d98904cf1a2b27b609ba67c806
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 99%
+source-wordcount: '1173'
+ht-degree: 92%
 
 ---
 
@@ -99,7 +99,7 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
 
    Der Bericht **[!UICONTROL Linkfreigabe]** zeigt URLs zu Assets an, die für externe Benutzer aus [!DNL Assets] freigegeben wurden. Er enthält E-Mail-IDs des Benutzers, der die Assets freigegeben hat, E-Mail-IDs von Benutzern, für die die Assets freigegeben wurden, Freigabedatum und Ablaufdatum des Links. Die Spalten können nicht angepasst werden.
 
-   Der Bericht **[!UICONTROL Linkfreigabe]** umfasst keine Optionen für Unterordner und Ausgabedarstellungen, da er lediglich die freigegebenen URLs veröffentlicht, die unter `/var/dam/share` zu finden sind.
+   Der **[!UICONTROL Linkfreigabe]**-Bericht enthält keine Optionen für Unterordner und Ausgabedarstellungen, da er lediglich die freigegebenen URLs veröffentlicht, die unter `/var/dam/share` angezeigt werden.
 
    ![Detailseite des Berichts „Linkfreigabe“](assets/link_share.png)
 
@@ -109,7 +109,7 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
 
    ![Auswählen oder Aufheben der Auswahl von Berichtsspalten](assets/configure_columns.png)
 
-   Um einen benutzerdefinierten Spaltennamen oder Eigenschaftspfad anzuzeigen, konfigurieren Sie die Eigenschaften für die Asset-Binärdatei im `jcr:content`-Knoten in CRX. Alternativ können Sie sie über die Auswahl für den Eigenschaftspfad hinzufügen.
+   Um einen benutzerdefinierten Spaltennamen oder Eigenschaftspfad anzuzeigen, konfigurieren Sie die Eigenschaften für die Asset-Binärdatei im `jcr:content`-Knoten in CRX. Sie können es auch über die Eigenschaftenpfadauswahl hinzufügen.
 
    ![Auswählen oder Aufheben der Auswahl von Berichtsspalten](assets/custom_columns.png)
 

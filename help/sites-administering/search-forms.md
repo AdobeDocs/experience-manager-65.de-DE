@@ -9,10 +9,10 @@ exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: d4b1cd8bc04ea21378c8084f4fac8cd66d6c1d3c
 workflow-type: tm+mt
-source-wordcount: '2072'
-ht-degree: 100%
+source-wordcount: '2079'
+ht-degree: 89%
 
 ---
 
@@ -229,7 +229,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad   </td>
+   <td>Pfad </td>
    <td>Suche nach Assets unter einem bestimmten Pfad.</td>
    <td>
     <ul>
@@ -332,10 +332,10 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
 
 >[!NOTE]
 >
->* Die allgemeinen Suchprädikate sind hier definiert:
+>* Die allgemeinen Sucheigenschaften sind definiert in:
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->* Sucheigenschaften, die nur mit siteadmin (klassische Benutzeroberfläche) verbunden sind, befinden sich unter:
+>* Sucheigenschaften, die sich nur auf siteadmin (klassische Benutzeroberfläche) beziehen, befinden sich unter:
 >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * Sie sind veraltet und nur aus Gründen der Abwärtskompatibilität verfügbar.
 >
@@ -343,7 +343,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
 
 ### Prädikateinstellungen {#predicate-settings}
 
-Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfügung:
+Je nach Prädikat stehen verschiedene Einstellungen zur Konfiguration zur Verfügung:
 
 * **Feldbezeichnung**
 
@@ -361,11 +361,11 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 
   Die Eigenschaft, nach der gesucht werden soll. Sie nutzt einen relativen Pfad und die Platzhaltersymbole `*/*/*` geben die Tiefe der Eigenschaft in Relation zum `jcr:content`-Knoten an (jeder Asterisk steht für eine Knotenebene).
 
-  Wenn Sie nur nach dem untergeordneten Knoten der ersten Ebene der Ressource suchen möchten, die die Eigenschaft `x` auf dem Knoten `jcr:content` aufweist, nutzen Sie `*/jcr:content/x`.
+  Wenn Sie nur nach einem untergeordneten Knoten der ersten Ebene der Ressource suchen möchten, der über die `x` Eigenschaft auf dem `jcr:content` verfügt, verwenden Sie `*/jcr:content/x`
 
 * **Eigenschaftstiefe**
 
-  Die maximale Tiefe, die bei der Suche nach dieser Eigenschaft innerhalb der Ressourcen berücksichtigt werden soll. So können Sie eine Suche nach dieser Eigenschaft auf einer Ressource und rekursiven untergeordneten Elementen durchführen, bis die Ebene der untergeordneten Elemente der festgelegten Tiefe entspricht.
+  Die maximale Tiefe, die bei der Suche nach dieser Eigenschaft innerhalb der Ressourcen berücksichtigt werden soll. Daher kann eine Suche nach dieser Eigenschaft für eine Ressource und rekursive untergeordnete Elemente durchgeführt werden, bis die Ebene der untergeordneten Elemente der angegebenen Tiefe entspricht.
 
 * **Eigenschaftswert**
 
@@ -385,14 +385,16 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Optionsknotenpfad** Praktisch dasselbe wie der **Optionspfad**, mit dem Unterschied, dass dieser Pfad sich im gemeinsamen Prädikatsfeld befindet, während der andere Pfad nur für Assets gilt.
+* **Options-Knotenpfad**
+Effektiv dasselbe wie der **Options Path**, nur dieser befindet sich im gemeinsamen Prädikatsfeld, der andere ist spezifisch für Assets.
 
-* **Einzelauswahl** Wenn diese Option aktiviert ist, werden die Optionen als Kontrollkästchen gerendert, die nur eine Einzelauswahl zulassen. Wenn die Option versehentlich ausgewählt wurde, kann sie per Kontrollkästchen deaktiviert werden.
+* **Einzelauswahl**
+Wenn diese Option aktiviert ist, werden die Optionen als Kontrollkästchen gerendert, die nur eine einzige Auswahl zulassen. Wenn die Option versehentlich ausgewählt wurde, kann sie per Kontrollkästchen deaktiviert werden.
 
-* **Veröffentlichungs- und Live Copy-Eigenschaftsnamen**
-Die Bezeichnungen für die Veröffentlichungs- und Live Copy-Kontrollkästchen für das Sites-spezifische Prädikat.
+* **Eigenschaftsnamen der Veröffentlichung und Live Copy**
+Die Beschriftungen für die Kontrollkästchen „Veröffentlichen“ und „Live Copy“ für die Website-spezifischen Eigenschaften.
 
-* Das Sternchen (*) bei den Feldbezeichnungen auf der Registerkarte **Einstellungen** kennzeichnet Pflichtfelder. Werden diese nicht ausgefüllt, wird eine Fehlermeldung angezeigt.
+* Der Asterisk (&amp;ast;) bei den Feldbezeichnungen auf der Registerkarte **Einstellungen** bedeutet, dass die Felder Pflichtfelder sind. Wird er leer gelassen, wird eine Fehlermeldung angezeigt.
 
 ## Konfigurieren Ihrer Suchformulare {#configuring-your-search-forms}
 
@@ -466,7 +468,7 @@ Wenn Sie eine Konfiguration angepasst haben, werden die Standardwerte überschri
 
 >[!NOTE]
 >
->Sie können keine der beiden Standardkonfigurationen löschen.
+>Sie können keine der Standardkonfigurationen löschen.
 
 Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
 
@@ -480,7 +482,7 @@ Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
 
 Mit Optionsprädikaten (Optionen, Optionseigenschaft) können Sie ein Element konfigurieren, nach dem gesucht werden soll. Sie werden verwendet, um etwas direkt unter der Seite zu suchen, z. B. eine Eigenschaft auf dem Seitenknoten.
 
-Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstellt wird) verdeutlicht die einzelnen Schritte:
+Das folgende Beispiel (für die Suche nach der Vorlage, mit der eine Seite erstellt wurde) veranschaulicht die Schritte:
 
 1. Erstellen Sie den Knoten, der die zu suchende Eigenschaft enthält.
 
@@ -551,7 +553,7 @@ In der folgenden Tabelle sind die Berechtigungen aufgeführt, die Benutzer benö
   </tr>
   <tr>
    <td>Vorschau</td>
-   <td>Lese-, Schreib- und Löschberechtigungen für den Knoten <code>/var/dam/content</code>.<br /> Lese- und Schreibberechtigungen für den Knoten <code>/apps</code>.</td>
+   <td>Lese-, Schreib- und Löschberechtigungen für den <code>/var/dam/content</code> Knoten.<br /> Lese- und Schreibberechtigungen für den <code>/apps</code>.</td>
   </tr>
  </tbody>
 </table>

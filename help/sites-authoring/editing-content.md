@@ -10,10 +10,10 @@ exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: ed9b9f3835af2dc40ed4c5d3f9e3209dfc6bed90
 workflow-type: tm+mt
-source-wordcount: '3015'
-ht-degree: 100%
+source-wordcount: '3030'
+ht-degree: 96%
 
 ---
 
@@ -189,7 +189,7 @@ Dies gilt für folgende Asset-Typen (einige sind von der Seite/dem Absatzsystem 
    <td>Produkt</td>
   </tr>
   <tr>
-   <td>Video </td>
+   <td>Video</td>
    <td>Flash</td>
   </tr>
   <tr>
@@ -343,14 +343,14 @@ Die exakten Bearbeitungsoptionen hängen von der jeweiligen Komponente ab. Für 
 
 ### Drag-and-Drop von Assets in Komponenten {#drag-and-drop-assets-into-component}
 
-Bei bestimmten Komponententypen (z. B. Bildern) können Sie Assets aus dem Asset-Browser direkt in die Komponente ziehen und dort ablegen, um den Inhalt zu aktualisieren:
+Bei bestimmten Komponententypen können Sie Assets aus dem Asset-Browser direkt in die Komponente ziehen und dort ablegen, um den Inhalt zu aktualisieren:
 
 | **Asset-Typ** | **Komponententyp** |
 |---|---|
 | Bild | Bild |
 | Dokument | Download |
 | Produkt | Produkt |
-| Video  | Flash |
+| Video | Flash |
 | Inhaltsfragment | Inhaltsfragment |
 
 ## Bearbeiten (Inhalt) – Vollbildmodus {#edit-content-full-screen-mode}
@@ -372,7 +372,7 @@ Z. B. die **Textkomponente**:
 So verschieben Sie eine Absatzkomponente:
 
 1. Wählen Sie durch Tippen und Halten bzw. Klicken und Halten den Absatz aus, der verschoben werden soll.
-1. Ziehen Sie den Absatz an die neue Position. AEM zeigt an, wo der Absatz abgelegt werden kann. Legen Sie ihn an der gewünschten Position ab.
+1. Ziehen Sie den Absatz an die neue Position. AEM gibt an, wo der Absatz platziert werden kann. Legen Sie ihn an der gewünschten Position ab.
 
    ![Verschieben einer Absatzkomponente](assets/screen_shot_2018-03-22at121821.png)
 
@@ -524,13 +524,13 @@ Eine Seite kann wie folgt gesperrt werden:
    1. Wählen Sie das Symbol für die **Seiteninformationen** aus, um das Menü zu öffnen.
    1. Wählen Sie die Option **Seite sperren** aus.
 
-Nach der Sperrung werden die Informationen der Konsolenansicht aktualisiert und beim Bearbeiten wird in der Symbolleiste ein Vorhängeschlosssymbol angezeigt.
+Nach der Sperre werden die Informationen zur Konsolenansicht aktualisiert und beim Bearbeiten eines Sperrsymbols in der Symbolleiste angezeigt.
 
 ![Vorhängeschlosssymbol](assets/screen_shot_2018-03-22at135010.png)
 
 >[!CAUTION]
 >
->Seiten können gesperrt werden, wenn [anstelle eines Benutzers agiert wird](/help/sites-administering/security.md#impersonating-another-user). Eine auf diese Weise gesperrte Seite kann dann jedoch nur von der Person, die stellvertretend agiert hat, oder von Admins entsperrt werden.
+>Seiten können gesperrt werden, wenn [anstelle eines Benutzers agiert wird](/help/sites-administering/security.md#impersonating-another-user). Eine auf diese Weise gesperrte Seite kann jedoch nur von der Person, für die stellvertretend agiert wurde, oder von Admins entsperrt werden.
 >
 >Seiten können nicht entsperrt werden, indem man sich als die Person ausgibt, der die Seite gesperrt hat.
 
@@ -599,4 +599,4 @@ Für Formularfelder, die durch Formular-Komponenten erzeugt werden, dürfen beim
 
 >[!NOTE]
 >
->Änderungen an Dateien und Bildern können für einen Verlauf von mindestens zehn Stunden rückgängig gemacht werden. Bei länger zurückliegenden Änderungen ist dies unter Umständen nicht mehr möglich. Ihre Admins können die Standardzeit von zehn Stunden ändern.
+>Änderungen an Dateien und Bildern können für einen Verlauf von mindestens zehn Stunden rückgängig gemacht werden. Nach dieser Zeit ist die Umkehr der Veränderungen jedoch nicht mehr gewährleistet. Ihre Admins können die Standardzeit von zehn Stunden ändern.
