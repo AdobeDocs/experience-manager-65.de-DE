@@ -29,7 +29,7 @@ Die Datei gilt für alle Übersetzungsprojekte.
 
 >[!NOTE]
 >
->Nach einem Upgrade auf 6.4 wird empfohlen, die Datei aus &quot;/etc“ zu verschieben. Weitere Informationen finden [ unter „Repository-Neustrukturierung für alle Lösungen in ](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) 6.5“.
+>Nach einem Upgrade auf 6.4 wird empfohlen, die Datei aus &quot;/etc“ zu verschieben. Weitere Informationen finden [&#x200B; unter „Repository-Neustrukturierung für alle Lösungen in &#x200B;](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) 6.5“.
 
 Die Regeln umfassen die folgenden Informationen:
 

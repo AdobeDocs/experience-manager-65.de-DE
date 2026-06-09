@@ -530,7 +530,7 @@ Verwenden Sie die erweiterten Einstellungen, um zu bestimmen, was passiert, **na
  </tbody>
 </table>
 
-Weitere Informationen zu Erfolgsmetriken finden Sie in ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=de) Dokumentation zu Adobe Target .[
+Weitere Informationen zu Erfolgsmetriken finden Sie in [&#128279;](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=de) Dokumentation zu Adobe Target .
 
 ### Konfigurieren von Einstellungen (AEM Targeting) {#configuring-settings-aem-targeting}
 

@@ -261,7 +261,7 @@ Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites**-Konsole oder Assets au
 
 ![ateat-15](assets/ateat-15.png)
 
-[Wählen Sie die gewünschte Ressource ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)und danach entweder **Alle anzeigen** oder **Aktivitäten** aus, um die mit den ausgewählten Ressourcen zuletzt ausgeführten Aktionen aufzulisten:
+[Wählen Sie die gewünschte Ressource &#x200B;](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)und danach entweder **Alle anzeigen** oder **Aktivitäten** aus, um die mit den ausgewählten Ressourcen zuletzt ausgeführten Aktionen aufzulisten:
 
 ![ateat-16](assets/ateat-16.png)
 
