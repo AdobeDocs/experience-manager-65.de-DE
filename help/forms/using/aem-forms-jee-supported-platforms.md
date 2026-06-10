@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: ca3f909f4085537a085fd4c8d92f4dcef66f1cab
+source-git-commit: 518481c75e22655bce0b104fe2eb5614f1d8a3b9
 workflow-type: tm+mt
-source-wordcount: '3839'
-ht-degree: 89%
+source-wordcount: '3920'
+ht-degree: 87%
 
 ---
 
@@ -308,17 +308,17 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
   <td>Service Pack und wichtige Updates</td>
  </tr>
  <tr>
-  <td><p>JBoss® Enterprise Application-Plattform (EAP) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
+  <td><p>JBoss® Enterprise Application-Plattform (EAP) 7.4.23 <sup>[2] [3] [7]</sup> </p> </td>
   <td><p>A: Unterstützt</p> </td>
   <td><p>Patches und kumulative Patches für die unterstützte EAP-Version</p> </td>
  </tr>
 </tbody>
 </table>
 
-
 >[!NOTE]
 >
->IBM® WebSphere®-Cluster werden nur in Network Deployment-Editionen unterstützt.
+>- Ab AEM Forms Service Pack 6.5.25.0 wird JBoss® Enterprise Application Platform (EAP) 7.4.23 unterstützt. Sie können JBoss® EAP 7.4.23 über das Software Distribution-Portal unter diesem [Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/jboss-eap-7.4.23-1.0.16.zip) herunterladen.
+>- IBM® WebSphere®-Cluster werden nur in Network Deployment-Editionen unterstützt.
 
 ### Server-Betriebssysteme {#server-operating-systems}
 
@@ -488,12 +488,8 @@ Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für 
   <td>5.5.2</td>
  </tr>
  <tr>
-  <td>IBM® Content Manager Server (veraltet) </td>
-  <td>8.5 Fixpack 2</td>
- </tr>
-  <tr>
-  <td> IBM® Content Manager Client (veraltet)</td>
-  <td>8.5 </td>
+  <td>IBM® Content Manager Client</td>
+  <td>8,7</td>
  </tr>
   <td>Microsoft® Sharepoint </td>
   <td>2019<br /> </td>
@@ -676,10 +672,9 @@ Für zusätzliche Anforderungen siehe:
 ### Designer {#designer}
 
 
-- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 oder Windows® 11
+- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10, Windows® 11 oder Microsoft® Windows Terminal Server 2025
 - Prozessor mit 1 GHz oder höher mit Unterstützung für PAE, NX und SSE2.
 - 1 GB RAM für 32-Bit-Betriebssysteme oder 2 GB RAM für 64-Bit-Betriebssysteme
-@@ -729,49 +601,45 @@ Weitere Informationen zu den Anforderungen finden Sie unter:
 - Administratorrechte für die Installation von Designer
 - Microsoft® Visual C++ 2019 (VC 14.28 oder höher) 32-Bit-Runtime
 
@@ -826,7 +821,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
 - Microsoft&reg; SharePoint 2016
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -897,7 +892,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Added support**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platform:
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
@@ -913,6 +908,15 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit) | |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit)  |
 
 -->
+
+### Version 6.5.25.0 (28. Mai 2026)
+
+| Unterstützung hinzugefügt | Unterstützung entfernt | Unterstützung eingestellt |
+| -------------- | --------------- | ------------------- |
+| JBoss® Enterprise Application-Plattform (EAP) 7.4.23 | JBoss® Enterprise Application-Plattform (EAP) 7.4.10 | |
+| IBM® Content Manager Client 8.7 | IBM® Content Manager Client 8.5 | |
+| Microsoft® Windows Terminal Server 2025 | | |
+
 
 ### Version 6.5.24.0 (26. November 2025)
 

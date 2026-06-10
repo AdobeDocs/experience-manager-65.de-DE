@@ -9,7 +9,7 @@ exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: 1785216a13a809117cf178bd2dabf921e36dd9af
+source-git-commit: 512fb704c7edafc84f6c5856d076e7de503d5c22
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 100%
@@ -40,7 +40,7 @@ Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Commerce�
 | Konsolen | `?` | Hilfe zu Tastaturbefehlen |
 |  | `/` | Aufrufen der [Suche](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Umschalten zwischen den anzuzeigenden [Schienenauswahloptionen](/help/sites-authoring/basic-handling.md#rail-selector) |
-|  | `Backtick` | Ausblenden der Schiene |
+|  | `` ` `` | Ausblenden der Schiene |
 |  | `e` | Bearbeiten |
 |  | `p` | Eigenschaften |
 |  | `m` | Verschieben |
