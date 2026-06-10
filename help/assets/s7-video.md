@@ -25,7 +25,7 @@ Die Dynamic Media Classic-Videointegration erweitert die Reichweite optimierter 
 
 * Die Komponente **[!UICONTROL Scene7-Video]** führt automatisch eine Geräte- und Bandbreitenerkennung durch, damit Videos auf Desktop-, Tablet- und Mobilgeräten im richtigen Format und in einer geeigneten Qualität wiedergegeben werden.
 * Assets – Sie können adaptive Videosets statt einzelner Video-Assets verwenden. Ein adaptives Videoset enthält alle Videoausgabedarstellungen, die für die nahtlose Wiedergabe des Videos auf mehreren Bildschirmen erforderlich sind. Es umfasst Versionen desselben Videos, die mit unterschiedlichen Bitraten und Formaten kodiert wurden, wie 400 kBit/s, 800 kBit/s und 1000 kBit/s. Ein adaptives Videoset wird zusammen mit der S7-Videokomponente für adaptives Video-Streaming auf mehreren Bildschirmen verwendet, einschließlich Desktop-Geräten und iOS-, Android™-, BlackBerry®- und Windows-Mobilgeräten.
-<!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
+<!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/de_DE/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
 ## Informationen zu FFMPEG und Dynamic Media Classic {#about-ffmpeg-and-scene}
 
