@@ -6,10 +6,10 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
+source-git-commit: 2b097caa05ec889ae445d74a905fb6c3f8457cee
 workflow-type: tm+mt
-source-wordcount: '10527'
-ht-degree: 98%
+source-wordcount: '10688'
+ht-degree: 96%
 
 ---
 
@@ -1026,7 +1026,7 @@ Sie können Benutzern, die keine Administratoren sind, die Verwendung des PDF Ge
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ### (Nur Windows) Deaktivieren der Benutzerkontensteuerung (UAC) {#disable-user-account-control-uac}
 
@@ -1128,7 +1128,7 @@ Das AEM Forms Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. 
 
    >[!NOTE]
    >
-   >Die Rechte zur Verwendung von Schriftarten anderer Anbieter als Adobe unterliegen dem Lizenzvertrag dieser Anbieter von Schriftarten und werden nicht von der Lizenz für die Adobe-Software abgedeckt. Adobe empfiehlt, dass Sie vor der Verwendung von Drittanbieter-Schriften in Verbindung mit Adobe-Software alle relevanten Lizenzverträge der Drittanbieter lesen und dafür sorgen, dass Sie diese Verträge einhalten. Dies gilt insbesondere für die Verwendung von Schriften in einer Server-Umgebung.
+   >Ihr Recht zur Verwendung von Schriftarten anderer Anbieter als Adobe unterliegt den Lizenzvereinbarungen, die Ihnen von diesen Anbietern mit diesen Schriftarten bereitgestellt werden, und fällt nicht unter Ihre Lizenz zur Verwendung der Adobe-Software. Adobe empfiehlt, dass Sie vor der Verwendung von Nicht-Adobe-Schriftarten mit Adobe-Software alle geltenden Lizenzvereinbarungen von Drittanbietern überprüfen und sicherstellen, dass Sie diese einhalten, insbesondere in Bezug auf die Verwendung von Schriftarten in einer Serverumgebung.
    >Starten Sie die AEM Forms-Instanz neu, wenn Sie neue Zeichensätze im Zeichensatzordner installieren.
    >
 
@@ -1139,6 +1139,27 @@ Zum Ausführen des PDF Generator-Dienstes ist ein lokales Benutzerkonto erforder
 1. Öffnen Sie die Seite [Konfiguration von AEM Forms PDF Generator](http://localhost:4502/libs/fd/pdfg/config/ui.html).
 
 1. Geben Sie auf der Registerkarte **[!UICONTROL Benutzerkonten]** die Anmeldeinformationen für ein lokales Benutzerkonto ein und klicken Sie auf **[!UICONTROL Senden]**. Wenn Microsoft® Windows Sie dazu auffordert, erlauben Sie dem Benutzer den Zugriff. Nach erfolgreichem Hinzufügen wird der konfigurierte Benutzer unter dem Abschnitt **[!UICONTROL Ihre Benutzerkonten]** auf der Registerkarte **[!UICONTROL Benutzerkonten]** angezeigt.
+
+### (Nur Windows) Aktivieren von PDF Generator-Konvertierungen mit mehreren Threads
+
+Um Dokumentkonvertierungen mit mehreren Threads auszuführen, während AEM Forms als Windows-Dienst ausgeführt wird, verarbeitet PDF Generator Konvertierungen unter einem einzigen konfigurierten Benutzerkonto.
+
+>[!NOTE]
+>
+> In diesem Modus werden mehrere Instanzen von **Microsoft® Word** (doc/docx) und **Excel** (xls/xlsx) unter demselben Benutzer ausgeführt und verarbeiten Konversionen gleichzeitig. **Microsoft® PowerPoint** (ppt/pptx) unterstützt diesen Modus nicht. PDF Generator startet jeweils nur eine PowerPoint-Instanz. Daher werden für PowerPoint keine Multithread-Konvertierungen unterstützt.
+
+So aktivieren Sie Multithreadkonvertierungen für Word und Excel:
+
+1. Konfigurieren Sie ein [lokales Benutzerkonto](#configure-a-local-user-account-to-run-the-pdf-generator-service) für PDF Generator.
+1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** >>**[!UICONTROL Werkzeuge]** > **[!UICONTROL Formulare]** > **[!UICONTROL PDF Generator konfigurieren]**. Die Standard-URL ist <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
+1. Legen Sie auf **[!UICONTROL Registerkarte]** Allgemeine Konfiguration“ die folgenden Optionen fest (Konfigurieren von PDFMaker für Word und Native2PDF für Excel):
+
+   * **Einzelbenutzermodus für PDFMaker aktivieren:** **true**
+   * **PDFMaker Single User Process Pool-Größe:** Sie nach Bedarf ein. Dieser Wert ist die maximale Anzahl von Word-Instanzen, die Konvertierungen gleichzeitig ausführen können.
+   * **Aktivieren des Einzelbenutzermodus für nativ2PDF:** **true**
+   * **native2PDF-Single-User-Process-Pool-Größe** Nach Bedarf festlegen. Dieser Wert ist die maximale Anzahl von Excel-Instanzen, die Konversionen gleichzeitig ausführen können.
+
+1. Starten Sie den AEM Forms-Server neu.
 
 ### Zeitlimiteinstellungen konfigurieren {#configure-the-time-out-settings}
 
@@ -1226,7 +1247,7 @@ Stellen Sie vor dem Einrichten der Zertifikate Folgendes sicher:
 
 * Passwort des privaten Schlüssels, der mit dem Zertifikat geliefert wird.
 
-* Alias für privaten Schlüssel. Sie können den Java-Keytool-Befehl ausführen, um den Alias für den privaten Schlüssel anzuzeigen:
+* Alias für privaten Schlüssel. Sie können den keytool-Befehl von Java ausführen, um den Alias für den privaten Schlüssel anzuzeigen:
   `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
 * Kennwort für KeyStore-Datei. Wenn Sie das Adobe Reader Extensions-Zertifikat verwenden, ist das Kennwort der Keystore-Datei immer dasselbe wie das Kennwort für den privaten Schlüssel.

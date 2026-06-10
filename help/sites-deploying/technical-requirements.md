@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
+source-git-commit: 2493f25c9f22a165360107e9f642ef3f8c07e957
 workflow-type: tm+mt
-source-wordcount: '3790'
-ht-degree: 93%
+source-wordcount: '3772'
+ht-degree: 92%
 
 ---
 
@@ -101,7 +101,7 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen der Java™ Vi
 | Azul Zulu OpenJDK 11 − 64 Bit | A: Unterstützt `[3]` | |
 | Azul Zulu OpenJDK 8 − 64 Bit | A: Unterstützt `[3]` | |
 
-1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10 und Java™ 12 sind Nicht-LTS-Versionen von Oracle (weitere Informationen finden Sie in der [Roadmap für Oracle Java™ SE-Support](https://www.oracle.com/technetwork/java/eol-135779.html)). Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Verteilung des Oracle Java™ SE JDK, einschließlich aller Wartungs-Updates der LTS-Versionen, werden von Adobe direkt für alle AEM-Kunden unterstützt, die die Oracle Java™ SE-Technologie verwenden. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+1. Oracle hat für Oracle Java™ SE-Produkte ein LTS-Modell (Long Term Support) eingeführt. Java™ 9, Java™ 10 und Java™ 12 sind Nicht-LTS-Versionen von Oracle (weitere Informationen finden Sie in der Roadmap für den [Oracle Java™ SE-Support](https://www.oracle.com/technetwork/java/eol-135779.html)). Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe nur die LTS-Versionen von Java™. Der Support und die Verteilung des Oracle Java™ SE JDK, einschließlich aller Wartungs-Updates der LTS-Versionen, werden von Adobe direkt für alle AEM-Kunden unterstützt, die die Oracle Java™ SE-Technologie verwenden. Siehe die [Java™-Support-Richtlinie für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
    **Wichtig: Oracle Java™ 17 und 21 werden auf [AEM 6.5 LTS](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements) unterstützt.**
 
 1. Die IBM® JRE wird nur zusammen mit WebSphere Application Server unterstützt.
@@ -198,6 +198,7 @@ Als Servlet-API-Version ist mindestens Servlet 3.1 erforderlich.
 2. Der Start von AEM 6.5-Bereitstellungen auf Anwendungs-Servern wird nun eingeschränkt unterstützt. Bestehende Kunden können auf AEM 6.5 aktualisieren und weiterhin Anwendungs-Server verwenden. Für neue Kundinnen und Kunden werden Support-Kriterien und ein Support-Programm zur Verfügung gestellt, wie oben in der Beschreibung zu Level-R angegeben.
 3. Gilt nur für AEM Forms:
    * Unterstützung für JBoss® EAP 7.1.4 entfernt und Unterstützung für JBoss® EAP 7.4.10 hinzugefügt.
+   * Ab AEM Forms Service Pack 6.5.25.0 wird Unterstützung für JBoss® EAP 7.4.23 hinzugefügt. Sie können JBoss® EAP 7.4.23 über das Software Distribution-Portal unter diesem [Link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/jboss-eap-7.4.23-1.0.16.zip) herunterladen.
 
 ### Server-Betriebssysteme {#server-operating-systems}
 
@@ -206,7 +207,7 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 | **Plattform** | **Unterstützungsebene** |
 |---|---|
 | **Linux®, basierend auf der Red Hat®-Verteilung** | A: Unterstützt `[1]` `[3]` |
-| Linux®, auf Basis der Debian-Verteilung einschl. Ubuntu | A: Unterstützt `[1]` `[2]` |
+| Linux®, basierend auf Debian Distribution inkl. Ubuntu | A: Unterstützt `[1]` `[2]` |
 | Linux®, auf Basis der SUSE®-Verteilung | A: Unterstützt `[1]` |
 | Microsoft® Windows Server 2022 | R: Eingeschränkte Unterstützung |
 | Microsoft® Windows Server 2019 `[4]` (Veraltet) | R: Eingeschränkte Unterstützung für neue Verträge `[5]` |
@@ -503,7 +504,7 @@ OpenOffice 4.1.15 </td>
 
 ### Anforderungen für AEM Forms Designer {#requirements-for-aem-forms-designer}
 
-* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 oder Windows® 11
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10, Windows® 11 oder Microsoft® Windows Terminal Server 2025
 * Prozessor mit 1 GHz oder höher mit Unterstützung für PAE, NX und SSE2.
 * 1 GB RAM für 32-Bit-Betriebssysteme oder 2 GB RAM für 64-Bit-Betriebssysteme
 * 16 GB Speicherplatz für 32-Bit-Betriebssysteme oder 20 GB Speicherplatz für 64-Bit-Betriebssysteme

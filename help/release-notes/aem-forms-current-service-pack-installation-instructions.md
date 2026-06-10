@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
+source-git-commit: 8ad159ce65fd11c6d1d75a2bc75061f6996f173e
 workflow-type: tm+mt
-source-wordcount: '2149'
-ht-degree: 92%
+source-wordcount: '2144'
+ht-degree: 91%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 92%
 
 | Produkt | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| Version | 6.5.24.0 |
+| Version | 6.5.25.0 |
 | Typ | Service Pack-Version |
-| Datum | &#x200B;4. Dezember 2025 |
+| Datum | &#x200B;10. Juni 2026 |
 | Download-URL | [Neueste AEM Forms-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) |
 
 >[!NOTE]
@@ -176,14 +176,14 @@ So laden Sie das Servlet-Fragment herunter und installieren es:
 
 Es gibt zwei verschiedene Methoden, mit der Sie das Service Pack von [!DNL ExperienceManager] automatisch installieren können.<!--       UPDATE FOR EACH NEW RELEASE -->
 
-* Platzieren Sie das Paket in den Ordner `../crx-quickstart/install`, wenn der Server online verfügbar ist.
+* Platzieren Sie das Paket in `../crx-quickstart/install` Ordner, wenn der Server online verfügbar ist.
 Das Paket wird automatisch installiert.
 
 * Verwenden Sie die [HTTP-API vom Paket-Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de). Verwenden Sie `cmd=install&recursive=true`, damit die verschachtelten Pakete installiert werden.
 
   >[!NOTE]
   >
-  >Das Service Pack von Experience Manager unterstützt keine Bootstrap-installation. <!-- UPDATE FOR EACH NEW RELEASE -->
+  >Das Service Pack von Experience Manager unterstützt keine Bootstrap-Installation. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validierung der Installation**
 

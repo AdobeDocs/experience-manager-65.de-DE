@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 7e225038e925468f6e4dbdcf1d3dce6eceee9292
+source-git-commit: e8b2b6b52c4071aa90fddaf2cd19fec1236b8472
 workflow-type: tm+mt
-source-wordcount: '7149'
-ht-degree: 22%
+source-wordcount: '8148'
+ht-degree: 20%
 
 ---
 
@@ -43,9 +43,22 @@ Die Sicherheits-Backports beheben XSS-Schwachstellen und verbessern die Handhabu
 
 Inhaltsfragmente und die GraphQL-API erhalten außerdem Verbesserungen hinsichtlich der Zuverlässigkeit, einschließlich eingebetteter Bildverweise, der Verarbeitung persistierter Abfragen und der Lokalisierung des Editors.
 
+
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
-<!-- ## Key features and enhancements -->
+### Wichtige Funktionen und Verbesserungen für Forms
+
+* [Multithread-PDF Generator-Konvertierungen](/help/forms/using/install-configure-document-services.md#windows-only-enable-multi-threaded-pdf-generator-conversions): Es wurde Unterstützung für die gleichzeitige Ausführung von Microsoft Word (doc/docx)- und Excel (xls/xlsx)-Konvertierungen hinzugefügt, wenn AEM Forms als Windows-Service unter einem einzigen konfigurierten Benutzerkonto ausgeführt wird.
+
+* [Hierarchische Lesezeichen für XFA-basierte PDFs](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/using-designer.pdf): Output Service und AEM Forms Designer generieren jetzt strukturierte Lesezeichenhierarchien in statischen interaktiven und einfachen XFA-basierten PDFs. Lesezeichen folgen Überschriftenebenen (H1-H6), die in den Barrierefreiheitseigenschaften für Textfelder festgelegt sind, sodass H2-H6-Einträge unter dem richtigen übergeordneten Element verschachtelt werden, anstatt parallel angezeigt zu werden.
+
+* [Details auf Formularebene in JEE-](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): AEM Forms on JEE zeichnet jetzt Details auf Formularebene in `transaction_log.log` für jede Transaktion auf, zusätzlich zu den vorhandenen Service- und Vorgangsinformationen. Admins können bei der Analyse von Übermittlungen, Ausgabedarstellungen und Konversionen Transaktionsberichterstellungsdaten mit bestimmten Formularen korrelieren. (FORMS-21574)
+
+* [Aktualisierte unterstützte Plattformmatrix](/help/forms/using/aem-forms-jee-supported-platforms.md): AEM Forms on JEE Service Pack 6.5.25.0 unterstützt nun die Kompatibilität mit den folgenden neueren Technologien:
+   * JBoss® Enterprise Application-Plattform (EAP) 7.4.23
+   * IBM® Content Manager Client 8.7
+   * AEM Forms Designer unter Microsoft® Windows Terminal Server 2025
+
 
 
 ## Behobene Probleme in Service Pack 25 {#fixed-issues}
@@ -274,41 +287,43 @@ Das Dropdown-Menü Untertitel und Audiospuren zeigt jetzt Arabisch als unterstü
 
 ### [!DNL Forms]{#forms-6525}
 
->[!NOTE]
->
->Fehlerbehebungen in [!DNL Experience Manager] Forms werden über ein separates Add-on-Paket eine Woche nach dem geplanten Veröffentlichungsdatum des [!DNL Experience Manager] Service Packs bereitgestellt. In diesem Fall ist geplant, das -Add-on-Paket am Donnerstag, dem 28. Mai 2026, zu veröffentlichen. Darüber hinaus wird diesem Abschnitt eine Liste mit Forms-Korrekturen und -Verbesserungen hinzugefügt.
+* Die Vorschau der interaktiven Kommunikation lädt Inhalte jetzt korrekt nach dem AEM Forms Service Pack 6.5.24.0. Text wird nicht mehr langsam mit fehlenden Leerzeichen geladen, sodass die Vorschau mit dem erstellten Inhalt übereinstimmt und leichter zu lesen ist. (FORMS-25346)
+* Validierungsdetails werden jetzt, nachdem Sie ein Validierungsmuster konfiguriert und das Formular gespeichert haben, in den Kernkomponenten des adaptiven Forms angezeigt. Das Muster bleibt in der Authoring-Oberfläche sichtbar. (FORMS-25236)
+* Die Dokumenterstellung verarbeitet jetzt verschachtelte Extensible Forms Description Language (XDP)-Fragmente in Umgebungen mit AEM Forms 6.5 Service Pack 23 und AEM Forms Service Pack 6.5.24.0 korrekt. (FORMS-25234)
+* Lokalisierter Text außerhalb von Formularfragmenten wird jetzt während der Server-seitigen Überprüfung des adaptiven Formss mit der Rhino-Engine in der richtigen Sprache angezeigt. Der Text wird nach der Übermittlung nicht mehr auf die Standardsprache zurückgesetzt. (FORMS-25224)
+* Der Ausgabe-Service stürzt nach dem Upgrade auf AEM Forms Service Pack 6.5.24.0 unter Red Hat Enterprise Linux (RHEL) 8 nicht mehr mit einem Fehler wegen unzulässiger Anweisungen ab. Die Dokumenterstellung und Formularausgabe werden ohne abrupte Service-Stopps abgeschlossen. (FORMS-25192)
+* Dynamisch mit der Funktion addInstance() in Adaptive Forms hinzugefügte Bereiche und Inhalte werden jetzt angezeigt, wenn die anfängliche Anzahl von Instanzen auf 0 gesetzt ist. (FORMS-25169, FORMS-25124)
+* Traditionelles Chinesisch (Hongkong) wird nach dem Upgrade auf AEM Forms Service Pack 6.5.24.0 jetzt in Autoren- und Veröffentlichungsumgebungen korrekt angezeigt. Lokalisierte zh-HK-Inhalte werden nicht mehr in der falschen Sprache angezeigt oder fallen unerwartet auf Standardzeichenfolgen zurück. (FORMS-25042)
+* Durch die Tastaturnavigation im Feld „Freihandsignatur“ in Adaptive Forms wird der Fokus jetzt konsistent in den und aus dem Signaturbereich verschoben, während das Formular mit der Tabulatortaste durchlaufen wird. (FORMS-25011)
+* WSDL-Dateien (Web Services Description Language) werden jetzt bei Konfigurations- und Aktualisierungsvorgängen im Schritt Webservice aufrufen korrekt geladen. (FORMS-24992, FORMS-24789, FORMS-24188)
+* In Briefentwürfen werden jetzt Zeilenumbrüche beibehalten, wenn Bedingungen auf Textfragmente angewendet werden. Mehrzeiliger Inhalt wird nicht mehr als eine einzige durchgehende Zeile angezeigt. (FORMS-24602)
+* Adobe Sign-Workflows in AEM Forms auf Adobe Managed Services (AMS) bleiben nicht länger stehen, wenn die Antwort zum Signaturstatus nach Erreichen des Adobe Sign-Schritts nicht zurückgegeben wird. (FORMS-24514)
+* Die Konvertierung von HTML in Portable Document Format (PDF) wird in AEM Forms Service Pack 6.5.24.0 nicht mehr zeitweise beendet, auch nicht bei größeren oder komplexen Konvertierungsaufträgen. (FORMS-23978)
+* Die Verwaltung des abgesicherten Sicherungsmodus in der Admin-Benutzeroberfläche funktioniert jetzt nach der Installation des Patches AEMForms-6.5.0-0112 ordnungsgemäß. Benutzer können den abgesicherten Sicherungsmodus deaktivieren oder deaktivieren, wenn die Option verfügbar ist. (FORMS-23976, FORMS-23718)
+* Die Suche nach der Formulardatenmodell-Datenquelle schlägt nicht mehr fehl oder zeigt rohe HyperText Markup Language (HTML)-Tags in den Suchergebnissen an. Die Ergebnisse zeigen lesbaren Text. (FORMS-23875)
+* Benutzerdefinierte Funktionen werden jetzt zur Laufzeit geladen, wenn adaptive Forms mithilfe unterstützter Kernkomponentenversionen im AEM Forms Service Pack 6.5.24.0 in Sites-Seiten eingebettet werden. (FORMS-23802)
+* Numerische Regeln für interaktive Kommunikation werten Werte jetzt beim Analysieren mit der aktualisierten Sling Commons JavaScript Object Notation (JSON)-Bibliothek korrekt aus. Numerische Felder verarbeiten BigDecimal-Analyseänderungen konsistent. (FORMS-23733)
+* Das Datensatzdokument-Verhalten ist jetzt in allen Versionen von Version 6.5.0 und späteren Versionen konsistent. Die Formularausgabe und die zugehörige Verarbeitung entsprechen dem erwarteten Verhalten neuerer Umgebungen. (FORMS-23338)
 
+#### FORMS JEE {#forms-jee-6525}
 
+* Der Anwendungsstart schlägt beim Laden der Protokollierungskomponente nicht mehr fehl, da für den org.owasp.esapi.reference.JavaLogFactory-Fehler keine Klasse gefunden wurde. Betroffene Umgebungen werden korrekt initialisiert, ohne dass ein Neustart oder eine Neukonfiguration des Services erforderlich ist. (FORMS-25348)
+* Der Start wird nach der Anwendung von Service Pack 25 erfolgreich abgeschlossen. Der System-Bootstrap-Prozess schlägt nicht mehr fehl, bevor die Initialisierung abgeschlossen ist. (FORMS-25347)
+* Kernkomponenten im Portable Document Format (PDF) (CPDF) werden jetzt korrekt in Linux-Umgebungen erstellt und ausgeführt, ohne während der Ausführung unerwartet angehalten zu werden. (FORMS-25115)
+* Die Barcode-Dekodierung schlägt bei der Verarbeitung bestimmter PDF-Dateien (Portable Document Format) während der Barcode-Extraktion nicht mehr mit DecodingException-Fehlern fehl. (FORMS-23534, FORMS-23449)
 
-<!-- ALL THE FORMS BUG FIXES LISTED BELOW GO WITH AEM 6.5.25 FORMS MAY 28 2026 RELEASE!! UNHIDE THEM!! -->
+#### Forms Designer {#forms-designer-6525}
 
-
-
-
-<!-- #### Forms Designer {#forms-designer-6525} -->
-
-<!-- 
-* The Output API now handles dynamic form content consistently when PDF generation uses client rendering. Generated PDFs retain scripted description text across affected sections instead of leaving some fields blank. (LC-3928858)
-* Document of Record generation now handles repeated panel pagination correctly when parent and child panels use the same "Place Top of Next Page" configuration. Authors no longer lose child panel data during the first repeated panel instance in generated output documents. (LC-3923274)
-* Long multiline text fields in PDF preview now flow correctly across pages. The generated PDF no longer duplicates page content or drops hidden text during printing. (LC-3924324)
-* Fillable PDFs now reset accessibility data when users clear form fields. Screen readers announce the cleared state correctly instead of reading old field values that no longer appear in the form. (LC-3923872)
-* The Accessibility Checker now handles Nepali text correctly during PDF validation. Users can check Nepali-language documents without false accessibility errors tied to character encoding. (LC-3922988) 
--->
-
-<!-- #### XMLFM {#forms-xmlfm-6525} -->
-
-<!-- 
-* Generated PDFs now include proper tags for supported form fields that use borders in the template. Screen readers can identify numeric fields, date fields, text fields, and checkboxes more reliably. (LC-3923534)
-* Document of Record output now applies the correct tag structure to supported fields that include borders in the template. Numeric, date, text, and checkbox fields remain accessible in the generated PDF. (LC-3923265)
--->
-
-<!-- #### XTG {#forms-xtg-6525} -->
-
-<!-- 
-* Forms output now merges XML data correctly when generatePDFOutputBatch generates PDFs in batch mode. The batch process no longer creates documents with blank or missing merged fields. (LC-3924192) 
-* Document of Record output now includes nested child panels in the first occurrence of a repeatable panel. Forms that use Top of Next Page pagination no longer drop child panel data from the generated output. (LC-3923923)
-* Custom bullet characters in XDP templates now map correctly for accessible PDF output. PAC validation no longer reports that text object characters cannot map to Unicode. (LC-3923079) 
--->
+* Die ExportData-Ausgabe stimmt jetzt mit Formulardaten überein, wenn ExportData in Version 6.5 verwendet wird. Exportierte XML-Felder (Extensible Markup Language) werden an den in den Originalformularen angezeigten Werten ausgerichtet. (LC-3922791)
+* Der Ausgabe-Service generiert jetzt die richtigen Tags für Barrierefreiheit in Dateien im Portable Document Format (PDF), die in AEM Forms Service Pack 6.5.22.0 erstellt wurden. Hilfstechnologien lesen Inhalte in der richtigen Reihenfolge, ohne Elemente zu überspringen. (LC-3922756)
+* Der Ausgabe-Service spiegelt jetzt den Status ausgeblendeter oder deaktivierter Felder korrekt wider, wenn Formulare im Portable Document Format (PDF) mit aktiviertem Tagging reduziert werden. (LC-3922708)
+* Felder mit unteren Beschriftungen in Workbench erhalten jetzt ein korrektes Tagging, wodurch die Konsistenz und Zugänglichkeit der generierten Dokumente verbessert wird. (LC-3922619)
+* QR-Codes auf Formularen bleiben nach der Aktualisierung auf AEM Forms Service Pack 6.5.20.0 durchsuchbar. Standard-Scanner lesen die erzeugten QR-Codes zuverlässig. (LC-3922551)
+* Forms Service Render erzeugt jetzt eine konsistente Ausgabe, wenn über verschiedene Service Packs hinweg identische Eingaben verwendet werden. Die gerenderten Werte in AEM Forms Service Pack 6.5.17.0 und AEM Forms Service Pack 6.5.18.0 unterscheiden sich nicht mehr. (LC-3922461)
+* PDF/A-Dokumente, die aus XML Data Package (XDP)-Vorlagen generiert wurden, rendern jetzt Formatvorlagen für gesunkene quadratische Rahmen korrekt. Das Erscheinungsbild der Formularfelder entspricht dem entworfenen Layout. (LC-3922180)
+* Reduzierte PDF-Übermittlungen (Portable Document Format) behalten jetzt Daten in allen Abschnitten bei. Die eingegebenen Werte verbleiben im endgültigen reduzierten Dokument. (LC-3922008)
+* Konvertierte statische PDF-Dateien (Portable Document Format) generieren nicht mehr mehrere Link-Tags aus einem einzelnen Link in der Original-XDP-Vorlage. (LC-3921997)
+* Der Export von Einreichungen aus AEM Forms umfasst nun alle Felder in den exportierten Ausgabedateien. (LC-3921983)
 
 
 ### Foundation {#foundation-6525}
