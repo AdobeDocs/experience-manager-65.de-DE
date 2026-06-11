@@ -251,7 +251,7 @@ AEM lädt jetzt die richtigen Vorlagen, wenn Autorinnen und Autoren Varianten vo
 
 #### MSM – Live Copies{#sites-msm-live-copies-6525}
 
-* Mit der Live Copy-Übersicht werden Datumsformate jetzt in der Ansicht Beziehungsstatus lokalisiert. Die Felder **Letzte Änderung“,****Letzte Änderung der Live Copy** und **Letztes Rollout** zeigen Datumsangaben, die mit dem Gebietsschema des Benutzers übereinstimmen. (SITES-40756)
+* Mit der Live Copy-Übersicht werden Datumsformate jetzt in der Ansicht Beziehungsstatus lokalisiert. Die Felder **Letzte Änderung“,**&#x200B;**Letzte Änderung der Live Copy** und **Letztes Rollout** zeigen Datumsangaben, die mit dem Gebietsschema des Benutzers übereinstimmen. (SITES-40756)
 * MSM protokolliert jetzt weitere Details für Push-on-Modify-Ereignisse. Mit den hinzugefügten Ereignisinformationen können Teams Rollout-Aktivitäten verfolgen und die Quelle unerwarteter Seitenänderungen identifizieren. (SITES-38029)
 
 #### Seiteneditor{#sites-pageeditor-6525}
@@ -403,7 +403,7 @@ Die Statuswerte des Übersetzungsprojekts werden jetzt nach dem Upgrade korrekt 
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.25.0 erfordert [!DNL Experience Manager] 6.5. Detaillierte Anweisungen finden [ in ](/help/sites-deploying/upgrade.md)Upgrade-Dokumentation“. <!-- UPDATE FOR EACH NEW RELEASE -->
+* [!DNL Experience Manager] 6.5.25.0 erfordert [!DNL Experience Manager] 6.5. Detaillierte Anweisungen finden [&#x200B; in &#x200B;](/help/sites-deploying/upgrade.md)Upgrade-Dokumentation“. <!-- UPDATE FOR EACH NEW RELEASE -->
 * Der Download des Service Packs ist über die [Adobe-Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip) verfügbar.
 * Bei einer Bereitstellung mit MongoDB und mehreren Instanzen installieren Sie [!DNL Experience Manager] 6.5.25.0 mit dem Package Manager auf einer der Autoreninstanzen.<!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -611,7 +611,7 @@ Die Vorschau von Inhaltsfragmenten schlägt aufgrund des DoS-Schutzes für eine 
 
 Für die folgenden Probleme ist ein Hotfix zum Herunterladen und Installieren verfügbar. Sie können [den Hotfix herunterladen und installieren](/help/release-notes/aem-forms-hotfix.md), um diese Probleme zu beheben:
 
-* **NPR-44100** Nach der Installation von AEM 6.5 Service Pack 25 auf WAR/JEE-Bereitstellungen (einschließlich AEM Forms on JEE) bleibt das `com.adobe.cq.screens.sessions`-Bundle im Status Installiert und wird nie aktiv. Um dieses Problem zu beheben[ laden Sie den Hotfix für ](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
+* **NPR-44100** Nach der Installation von AEM 6.5 Service Pack 25 auf WAR/JEE-Bereitstellungen (einschließlich AEM Forms on JEE) bleibt das `com.adobe.cq.screens.sessions`-Bundle im Status Installiert und wird nie aktiv. Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
 * **FORMS-14926** Führen Sie nach der Installation von AEM Forms JEE Service Pack 21 (6.5.21.0) die folgenden Schritte aus, um das Problem zu beheben, wenn Sie doppelte Einträge von Geode-Jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` im `<AEM_Forms_Installation>/lib/caching/lib`-Ordner finden:
 
    1. Stoppen der Locators, falls sie noch ausgeführt werden.
