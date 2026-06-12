@@ -10,8 +10,8 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 100%
+source-wordcount: '800'
+ht-degree: 96%
 
 ---
 
@@ -43,8 +43,8 @@ Sie erstellen eine **adaptive Vorlage** und wenden das Design auf die Vorlage an
 >
 >Wenn Sie diesen Schritten mithilfe der Namen folgen, sollte die resultierende Vorlage in etwa dem folgenden Snapshot ähneln:
 
-![Momentaufnahme des adaptiven Formulars mit Waldthemen](assets/thumbnail.png)
-**Abbildung**: *Beispiel für Waldthemen*
+![ Momentaufnahme des adaptiven Formulars mit Waldthemen](assets/thumbnail.png)
+**Abbildung:** *Beispiel für Waldthemen*
 
 1. Erstellen Sie einen Knoten des Typs `cq:ClientLibraryFolder` unter dem Knoten `/apps`.
 
@@ -228,7 +228,7 @@ Nachdem Sie das Thema für adaptives Formular erstellt haben, führen Sie die fo
 
    1. **Optional:** Überschreiben Sie die benutzerdefinierte Seite, überschreiben Sie je nach Bedarf „header.hsp“, „footer.jsp“ und „body.jsp“.
 
-1. Erstellen Sie eine benutzerdefinierte Vorlage (zum Beispiel: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) deren „jcr:content“ auf die benutzerdefinierte Seite zeigt, die im vorangehenden Schritt erstellt wurde (zum Beispiel: `myAfCustomizations/myAfPages/forestPage)`.
+1. Erstellen Sie eine benutzerdefinierte Vorlage (zum Beispiel: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) deren „jcr:content auf die benutzerdefinierte Seite verweist, die im vorherigen Schritt erstellt wurde (zum Beispiel: `myAfCustomizations/myAfPages/forestPage)`.
 
    ![Snapshot zum CRX-Repository](assets/2-1.png)
 

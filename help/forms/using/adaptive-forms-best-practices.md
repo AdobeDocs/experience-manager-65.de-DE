@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '6061'
-ht-degree: 100%
+source-wordcount: '6030'
+ht-degree: 99%
 
 ---
 
@@ -104,10 +104,10 @@ Sie können ein adaptives Formular mithilfe der in **Konfigurations-Browser** ak
 Die Formularvorlagen können auch aus Paketen mit adaptiven Formularen, die auf einem anderen Autoren-Computer erstellt werden, hochgeladen werden. Formularvorlagen werden durch die Installation von [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) verfügbar gemacht. Zu den empfohlenen Best Practices gehören:
 
 * Der Ausführungsmodus **nosamplecontent** wird nur für Autor- und nicht für Veröffentlichungsknoten empfohlen.
-* Die Bearbeitung von Assets wie adaptiven Formularen, Designs, Vorlagen oder Cloud-Konfigurationen erfolgt nur über Autorknoten, die auf den konfigurierten Veröffentlichungsknoten veröffentlicht werden können.
+* Das Authoring von Assets wie adaptiven Formularen, Designs, Vorlagen oder Cloud-Konfigurationen wird nur über Autorknoten durchgeführt, die auf den konfigurierten Veröffentlichungsknoten veröffentlicht werden können.
 Weitere Informationen finden Sie unter [Veröffentlichung von Formularen und Dokumenten und Veröffentlichungen rückgängig machen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=de)
-* Das Add-On-Paket für Forms ist für Authoring und Publishing erforderlich, um die Document Service-Vorgänge zu unterstützen. Daher kann es als Abhängigkeit betrachtet werden.
-Wenn Sie nur Forms-bezogene Beispielvorlagen, Designs und DOR-Pakete möchten, können Sie sie von [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=de) herunterladen.
+* Das Forms-Add-on-Paket ist für das Authoring und für die Veröffentlichung erforderlich, um die Document Service-Vorgänge zu unterstützen. Daher kann es als Abhängigkeit betrachtet werden.
+Wenn Sie nur Forms-bezogene Beispielvorlagen, Designs und DOR-Pakete möchten, können Sie sie von [aemforms-references-* packages“ ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=de).
 
 Weitere Informationen finden Sie im Abschnitt zu empfohlenen Vorgehensweisen unter [Einführung in das Authoring adaptiver Formulare](/help/forms/using/introduction-forms-authoring.md).
 

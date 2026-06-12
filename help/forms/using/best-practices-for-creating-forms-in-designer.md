@@ -8,8 +8,8 @@ hide: true
 exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
 source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
 workflow-type: tm+mt
-source-wordcount: '11719'
-ht-degree: 98%
+source-wordcount: '11350'
+ht-degree: 97%
 
 ---
 
@@ -33,8 +33,8 @@ Mit LiveCycle Designer können Sie unter Einhaltung der Richtlinien aus Abschnit
 
 ## Einfache und benutzerfreundliche Gestaltung von Formularen {#keep-simple}
 
-Ein Formular gilt als nicht barrierefrei, wenn es nicht einfach zu verwenden ist. Sie sollten versuchen, simple und einfach nutzbare Formulare zu entwerfen. Ein einfaches Layout mit Steuerelementen und Feldern mit klaren, aussagekräftigen Beschriftungen und QuickInfos erleichtert allen Benutzenden die Verwendung des Formulars.
-Übersichtlich und logisch aufgebaute Formulare, die klare und einfache Anweisungen enthalten, können von allen Benutzenden so leicht wie nur möglich ausgefüllt werden. Navigationsfunktionen wie die Registerkarten-Reihenfolge und Tastaturbefehle sollten der logischen Reihenfolge der Objekte im Formular zuträglich sein.
+Auf ein Formular kann nur dann zugegriffen werden, wenn es einfach zu verwenden ist. Sie sollten versuchen, Formulare zu entwerfen, die einfach und verwendbar sind. Ein einfaches Layout von Steuerelementen und Feldern mit klaren, aussagekräftigen Beschriftungen und QuickInfos erleichtert die Verwendung des Formulars für alle Benutzer erheblich.
+Das Entwerfen von Formularen, die übersichtlich und logisch angeordnet sind und klare und einfache Anweisungen bieten, hilft allen Benutzern, Formulare so einfach wie möglich auszufüllen. Navigationsfunktionen wie die Reihenfolge der Registerkarten und Tastaturbefehle sollten die logische Reihenfolge der Objekte im Formular unterstützen.
 
 ### Vermeiden von blinkenden, blitzenden oder sich bewegenden Inhalten
 
@@ -152,8 +152,8 @@ Die Beschriftung oder der Untertitel eines Formularsteuerelements gibt an, was d
 
 ### Festlegen des Textes für die barrierefreie Beschriftung über die Palette „Ein-/Ausgabehilfe“
 
-Die Beschriftung, die von Bildschirmlesehilfen wahrgenommen wird, muss nicht unbedingt mit der visuellen Beschriftung übereinstimmen. In einigen Fällen möchten Sie den Zweck des Steuerelements möglicherweise genauer angeben.
-Für jedes Feldobjekt in einem Formular können die Barrierefreiheitsoptionen (s. Bild 3) verwendet werden, um anzugeben, wie das Bildschirmlesegerät das entsprechende Formularfeld identifizieren soll.
+Die Beschriftung, die von Benutzenden der Bildschirmlesehilfe wahrgenommen wird, muss nicht unbedingt mit der visuellen Beschriftung übereinstimmen. In einigen Fällen empfiehlt es sich, den Zweck des Steuerelements genauer zu beschreiben.
+Für jedes Feldobjekt in einem Formular kann die Palette Barrierefreiheit (siehe Abbildung 3) verwendet werden, um anzugeben, was die Bildschirmlesehilfe ankündigt, um das spezifische Formularfeld zu identifizieren.
 
 Gehen Sie wie folgt vor, um die Palette „Ein-/Ausgabehilfe“ zu verwenden:
 
@@ -247,8 +247,8 @@ Die folgende Tabelle bietet einen Überblick über die Platzierungsregeln für h
 
 ### Dynamisches Ausfüllen einer QuickInfo oder von benutzerdefiniertem Bildschirmlesehilfen-Text
 
-Sie können auch die Textalternative eines Formularsteuerelements, z. B. die QuickInfo, dynamisch mit einem Wert aus einer Datenquelle ausfüllen. Sie können beispielsweise eine benutzerdefinierte QuickInfo für ein Objekt anzeigen, das in französischer Sprache ist.
-Das Schema, zu dem Sie eine Verbindung herstellen, könnte die folgende Definition für eine QuickInfo enthalten:
+Sie können auch die Textalternative eines Formularsteuerelements, z. B. die QuickInfo, dynamisch mit einem Wert aus einer Datenquelle füllen. Sie können beispielsweise eine benutzerdefinierte QuickInfo für ein Objekt in französischer Sprache anzeigen.
+Für das Schema, mit dem Sie eine Verbindung herstellen, könnte Folgendes für eine QuickInfo definiert sein:
 
 
 ```html
@@ -391,15 +391,15 @@ Teilformulare, Optionsfelder und Inhaltsbereiche wirken sich alle zusammen mit d
 
 ### Erstellen einer benutzerdefinierten Tab-Reihenfolge mithilfe der Palette „Tab-Reihenfolge“
 
-Sie können die standardmäßige Tab-Reihenfolge ändern, wenn Sie eine andere Reihenfolge im Formular benötigen und die Änderung nicht durch Positionieren oder Gruppieren in Teilformularen erreicht werden kann. Um die standardmäßige Tab-Reihenfolge zu ändern, können Sie über die Palette „Tab-Reihenfolge“ eine benutzerdefinierte Tab-Reihenfolge erstellen.
-Über die Palette „Tab-Reihenfolge“ (siehe Abbildung 12) können Sie die Reihenfolge überprüfen und ändern, in der die Objekte in Ihrem Formular mithilfe von Hilfstechnologien gelesen werden und in der mit der Tabulatortaste navigiert wird.
+Sie können die Standardreihenfolge der Registerkarten ändern, wenn Sie eine andere Sequenz in Ihrem Formular benötigen und die Änderung nicht durch Positionierung oder Gruppierung in Teilformularen erreicht werden kann. Um die Standardreihenfolge der Registerkarten zu ändern, können Sie über die Palette „Registerkartenreihenfolge“ eine benutzerdefinierte Registerkartenreihenfolge erstellen.
+Mit der Palette „Registerkartenreihenfolge“ (siehe Abbildung 12) können Sie die Reihenfolge überprüfen und ändern, in der Objekte in Ihrem Formular von Hilfstechnologien gelesen und mit der Tabulatortaste des Benutzers navigiert werden.
 
 ![Palette „Tab-Reihenfolge“](/help/forms/using/assets/image-12.png)
 
 Abbildung 12: **Palette „Tab-Reihenfolge“**
 
-Die Palette „Tab-Reihenfolge“ bietet eine alternative Ansicht der Tab-Reihenfolge im Formular. Sie zeigt alle Objekte im Formular als nummerierte Liste an, wobei jede Zahl die Position des Objekts im Tab-Fluss darstellt.
-Um die Palette „Tab-Reihenfolge“ zu öffnen, wählen Sie „Fenster“ > „Tab-Reihenfolge“ aus.
+Die Palette Registerkartenreihenfolge bietet eine alternative Ansicht der Registerkartenreihenfolge im Formular. Alle Objekte im Formular werden als nummerierte Liste angezeigt, wobei jede Zahl die Position des Objekts im Registerkarten-Fluss darstellt.
+Um die Palette „Registerkartenreihenfolge“ zu öffnen, wählen Sie „Fenster“ > „Registerkartenreihenfolge“.
 
 
 Die Palette „Tab-Reihenfolge“ enthält die folgenden visuellen Marken:
@@ -588,8 +588,8 @@ Durch die Bereitstellung von Mechanismen, die es den Benutzenden ermöglichen, z
 
 Sehende Benutzende können eine Seite in beliebiger Reihenfolge überfliegen. Sie können etwa beginnen, indem sie sich die rechte untere Ecke der Seite ansehen und den Inhalt dann rückwärts überfliegen. Benutzende einer Bildschirmlesehilfe haben diese Option nicht, da die Bildschirmlesehilfe mit dem Lesen der Seite oben links (wie im Quell-Code dargestellt) beginnt und sich in einer linearen Reihenfolge bewegt. Darüber hinaus können sehende Benutzende die Seite nach interessanten Links durchsuchen und diese mit der Maus aktivieren. Benutzende der Bildschirmlesehilfe müssen sich der Reihe nach durch die Seite bewegen.
 
-Die einfachste und effektivste Methode, eine navigierbare Formularstruktur zu bieten, besteht darin, Strukturüberschriften und richtig definierte Listen im Formular zu verwenden.
-Sie können auch Mechanismen bereitstellen, mit denen Benutzende zu anderen Bereichen des Formulars springen können, z. B. durch Hinzufügen von Navigationsschaltflächen oben und unten im Formular. Am Anfang Ihres Formulars könnten Sie folgende Schaltflächen einfügen: „Datendatei öffnen“, „Vorherige Seite“ oder „Nächste Seite“. Am Formularende könnten z. B. folgende Schaltflächen verwendet werden: „Daten speichern“, „Daten per E-Mail senden“, „Zum Anfang“ oder „Drucken“.
+Die einfachste und effektivste Möglichkeit, eine navigierbare Formularstruktur bereitzustellen, besteht darin, strukturelle Überschriften und ordnungsgemäß definierte Listen in Ihrem Formular zu verwenden.
+Sie können auch Mechanismen bereitstellen, mit denen Benutzende zu anderen Bereichen des Formulars wechseln können, z. B. indem Sie oben und unten im Formular Navigationsschaltflächen hinzufügen. Oben in einem Formular können Sie Schaltflächen wie „Datendatei öffnen“, „Vorherige Seite“ und „Nächste Seite“ einfügen. Unten im Formular können Sie Schaltflächen wie Daten speichern, E-Mail-Daten, Zum Seitenanfang wechseln und Drucken einfügen.
 
 Intelligente Felder können das Ausfüllen einiger Formulare erleichtern. So kann z. B. ein Formular für die Reisekostenabrechnung über mehrere Zeilen und Spalten von Feldern verfügen. Wenn eine bestimmte Zeile leer bleibt, kann das Drücken der Tabulatortaste für das letzte Element in dieser Zeile den Sprung zum nächsten Abschnitt des Formulars bewirken, anstatt weiterhin durch eine Reihe von Feldern zu springen, die leer sind.
 
@@ -687,8 +687,8 @@ Beachten Sie beim Entwerfen von Skripten für die Barrierefreiheit die folgenden
 
 ## Sicherstellen, dass auf alle Audio- und Videoinhalte zugegriffen werden kann{#ensure-audio-video-accessible}
 
-Wenn Ihre Formulare Audio- oder Videoinhalte enthalten, einschließlich Audio- und Video-Clips, müssen Sie sicherstellen, dass diese Inhalte zugänglich sind. Achten Sie insbesondere darauf, dass in Formulare integrierte Video-Clips Untertitel für gehörlose und schwerhörige Benutzende sowie Videobeschreibungen für blinde Benutzende enthalten. Für Audiodateien, die nicht mit Videoinhalten synchronisiert werden, reicht ein einfaches Transkript aus.
-Informationen zur Bereitstellung von Untertiteln für Flash-basierte Medien finden Sie unter diesem [Link](/help/forms/using/best-practices-for-creating-forms-in-designer.md).
+Wenn Ihre Formulare Audio- oder Videoinhalte enthalten, einschließlich Audio- und Videoclips, müssen Sie sicherstellen, dass diese Inhalte verfügbar sind. Stellen Sie insbesondere sicher, dass die in Formulare integrierten Videoclips Untertitel (manchmal auch als Untertitel bezeichnet) für gehörlose und schwerhörige Benutzende sowie Videobeschreibungen für blinde Benutzende enthalten. Für Audiodateien, die nicht mit Videoinhalten synchronisiert sind, reicht ein einfaches Transkript aus.
+Informationen zu Untertiteln für Flash[basierte Medien finden Sie ](/help/forms/using/best-practices-for-creating-forms-in-designer.md)link).
 
 **Verwandte Prüfpunkte**:
 * Section 508 §1194.22

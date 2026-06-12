@@ -8,8 +8,8 @@ role: Admin, User, Developer
 exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3498'
-ht-degree: 99%
+source-wordcount: '3342'
+ht-degree: 97%
 
 ---
 
@@ -60,8 +60,8 @@ Der **Name** wird verwendet, um die benutzerdefinierte Funktion im Regeleditor e
 
 >[!NOTE]
 >`[functionName]` ist der Name der Funktion. Leerzeichen sind nicht zulässig.
->`<Function Name>` ist der Anzeigename der Funktion im Regeleditor von adaptiven Formularen.
->Wenn der Anzeigename der Funktion mit dem Namen der Funktion selbst übereinstimmt, können Sie in der Syntax `[functionName]` weglassen.
+>`<Function Name>` ist der Anzeigename der Funktion im Regeleditor von Adaptive Forms.
+>Wenn der Funktionsname mit dem Namen der Funktion selbst identisch ist, können Sie `[functionName]` in der Syntax weglassen.
 
 #### Parameter
 
@@ -346,7 +346,7 @@ Bevor Sie mit dem Hinzufügen einer benutzerdefinierten Funktion zu Ihrem adapti
 ## Erstellen einer benutzerdefinierten Funktion {#create-custom-function}
 
 Die Schritte zum Erstellen benutzerdefinierter Funktionen sind die Folgenden:
-1. [Erstellen Sie eine Client-seitige Bibliothek mit dem AEM-Projektarchetyp und fügen Sie eine benutzerdefinierte Funktion hinzu](#create-client-library-archetype)
+1. [Erstellen einer Client-seitigen Bibliothek mit dem AEM-Projektarchetyp und Hinzufügen einer benutzerdefinierten Funktion](#create-client-library-archetype)
 ODER
    [Erstellen benutzerdefinierter Funktionen über CRXDE](#create-add-custom-function)
 1. [Hinzufügen einer Client-Bibliothek zu einem adaptiven Formular](#add-client-library)
@@ -355,8 +355,8 @@ ODER
 
 ### Erstellen einer Client-Bibliothek mit dem AEM-Projektarchetyp{#create-client-library-archetype}
 
-Sie können benutzerdefinierte Funktionen hinzufügen, indem Sie [unter Verwendung des AEM-Projektarchetyps](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/using#getting-started) eine Client-Bibliothek zu dem erstellten Projekt hinzufügen.
-Wenn Sie über ein vorhandenes Projekt verfügen <!--and have already the project structure as shown in the image below,-->, können Sie Ihrem lokalen Projekt direkt [benutzerdefinierte Funktionen](#create-add-custom-function) hinzufügen.
+Sie können benutzerdefinierte Funktionen hinzufügen, indem Sie eine Client-Bibliothek zu dem erstellten Projekt hinzufügen [mithilfe des AEM-Projektarchetyps](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+Wenn Sie über ein vorhandenes Projekt verfügen<!--and have already the project structure as shown in the image below,--> können Sie Ihrem lokalen Projekt direkt [benutzerdefinierte Funktionen](#create-add-custom-function) hinzufügen.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
 
@@ -476,8 +476,8 @@ Wenn Sie die aktuellsten Versionen von AEM Forms- und des Forms-Add-ons verwende
 Die erstellte Ordnerstruktur sieht wie folgt aus:
 
    ![Erstellte Ordnerstruktur der Client-Bibliothek](/help/forms/using/assets/clientlibrary_folderstructure.png)
-1. Doppelklicken Sie auf die Datei `functions.js`, um den Editor zu öffnen. Die Datei enthält den Code für die benutzerdefinierte Funktion.
-Fügen wir der JavaScript-Datei den folgenden Code hinzu, um das Alter basierend auf dem Geburtsdatum (JJJJ-MM-TT) zu berechnen.
+1. Doppelklicken Sie auf die `functions.js`, um den Editor zu öffnen. Die Datei enthält den Code für die benutzerdefinierte Funktion.
+Fügen wir der JavaScript-Datei den folgenden Code hinzu, um das Alter auf der Grundlage des Geburtsdatums (JJJJ-MM-TT) zu berechnen.
 
    ```javascript
        /**
@@ -536,8 +536,8 @@ Im Folgenden erfahren Sie, wie Sie einen benutzerdefinierten Fehler-Handler mit 
 
 ## Verwenden von benutzerdefinierten Funktionen in einem adaptiven Formular. {#use-custom-functions}
 
-In einem adaptiven Formular können Sie [benutzerdefinierte Funktionen im Regeleditor](/help/forms/using/rule-editor-core-components.md) verwenden.
-Fügen Sie der JavaScript-Datei (`Function.js`) den folgenden Code hinzu, um das Alter basierend auf dem Geburtsdatum (JJJJ-MM-TT) zu berechnen. Erstellen Sie eine benutzerdefinierte Funktion als `calculateAge()`, die das Geburtsdatum als Eingabe annimmt und das Alter zurückgibt:
+In einem adaptiven Formular können Sie [benutzerdefinierte Funktionen im Regeleditor) ](/help/forms/using/rule-editor-core-components.md).
+Fügen wir der JavaScript-Datei (`Function.js`-Datei) folgenden Code hinzu, um das Alter auf der Grundlage des Geburtsdatums (JJJJ-MM-TT) zu berechnen. Erstellen Sie eine benutzerdefinierte Funktion als `calculateAge()`, die das Geburtsdatum als Eingabe verwendet und ein Alter zurückgibt:
 
 ```javascript
     /**
@@ -659,7 +659,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 Im Folgenden erfahren wir, wie benutzerdefinierte Funktionen für verschiedene Anwendungsfälle Feld- und global-Objekte mithilfe eines `Contact Us`-Formulars verwenden.
 
-![Kontaktformular &#x200B;](/help/forms/using/assets/contact-us-form.png)
+![Kontaktformular ](/help/forms/using/assets/contact-us-form.png)
 
 #### **Anwendungsfall**: Anzeigen eines Bedienfelds mithilfe der `SetProperty`-Regel
 
@@ -697,11 +697,11 @@ Erstellen wir eine Regel für die Schaltfläche `Next`, die das Bedienfeld `pers
 
 In der folgenden Abbildung sehen Sie, wie das Bedienfeld `personaldetails` beim Klicken auf die Schaltfläche `Next` validiert wird. Falls alle Felder innerhalb der `personaldetails` validiert werden, wird das Bedienfeld `feedback` angezeigt.
 
-![Festlegen der Vorschau für das Eigenschaftsformular &#x200B;](/help/forms/using/assets/set-property-form-preview.png)
+![Festlegen der Vorschau für das Eigenschaftsformular ](/help/forms/using/assets/set-property-form-preview.png)
 
 Wenn Fehler in den Feldern des Bedienfelds `personaldetails` vorhanden sind, werden sie beim Klicken auf die Schaltfläche `Next` auf Feldebene angezeigt und das Bedienfeld `feedback` bleibt unsichtbar.
 
-![Festlegen der Vorschau für das Eigenschaftsformular &#x200B;](/help/forms/using/assets/set-property-panel.png)
+![Festlegen der Vorschau für das Eigenschaftsformular ](/help/forms/using/assets/set-property-panel.png)
 
 #### **Anwendungsfall**: Das Feld validieren.
 
@@ -776,8 +776,8 @@ In der folgenden Abbildung sehen Sie, dass der Bereich `personaldetails` zurück
 
 #### **Anwendungsfall**: Eine benutzerdefinierte Nachricht auf Feldebene anzeigen und das Feld als ungültig markieren
 
-Mit der Funktion `markFieldAsInvalid()` können Sie ein Feld als ungültig definieren und eine benutzerdefinierte Fehlermeldung auf Feldebene festlegen. Der Wert `fieldIdentifier` kann `fieldId`, `field qualifiedName` oder `field dataRef` lauten. Der Wert des Objekts namens `option` kann `{useId: true}`, `{useQualifiedName: true}` oder `{useDataRef: true}` lauten.
-Die Syntaxen, die zum Markieren des Felds als ungültig und zum Festlegen der benutzerdefinierten Nachricht verwendet werden, sind:
+Mit der Funktion `markFieldAsInvalid()` können Sie ein Feld als ungültig definieren und benutzerdefinierte Fehlermeldungen auf Feldebene festlegen. Der `fieldIdentifier` kann `fieldId`, `field qualifiedName` oder `field dataRef` sein. Der Wert des Objekts mit dem Namen `option` kann `{useId: true}`, `{useQualifiedName: true}` oder `{useDataRef: true}` sein.
+Folgende Syntaxen werden verwendet, um ein Feld als ungültig zu markieren und benutzerdefinierte Nachrichten festzulegen:
 
 * `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`
 * `globals.functions.markFieldAsInvalid(field.$qualifiedName, "[custom message]", {useQualifiedName: true});`
