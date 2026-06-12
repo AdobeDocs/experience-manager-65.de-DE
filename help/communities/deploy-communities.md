@@ -301,7 +301,7 @@ Beispiel,
 
 >[!CAUTION]
 >
->Wenn bereits eine andere Sicherheitsfunktion konfiguriert wurde, die auf den Kryptoschlüsseln basiert, kann das Replizieren der Kryptoschlüssel die Konfiguration beschädigen. Wenn Sie Hilfe benötigen[&#x200B; wenden Sie sich an die &#x200B;](https://experienceleague.adobe.com/?lang=de&support-solution=General&support-tab=home#support).
+>Wenn bereits eine andere Sicherheitsfunktion konfiguriert wurde, die auf den Kryptoschlüsseln basiert, kann das Replizieren der Kryptoschlüssel die Konfiguration beschädigen. Wenn Sie Hilfe benötigen[&#x200B; wenden Sie sich an die &#x200B;](https://experienceleague.adobe.com/de?lang=de&support-solution=General&support-tab=home#support).
 
 #### Repository-Replikation {#repository-replication}
 
@@ -366,7 +366,7 @@ Achten Sie insbesondere darauf, im `RedirectMatch` den richtigen Server-Namen, n
 Wenn Sie eine Dispatcher verwenden, lesen Sie Folgendes:
 
 * Dokumentation zu AEM {[&#128279;](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates)}Dispatcher
-* [Installieren von Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
+* [Installieren von Dispatcher](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [Konfigurieren von Dispatcher für Communities](/help/communities/dispatcher.md)
 * [Bekannte Probleme](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 
