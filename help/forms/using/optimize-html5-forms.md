@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 100%
+source-wordcount: '284'
+ht-degree: 97%
 
 ---
 
@@ -60,8 +60,8 @@ Apache kann mithilfe des HTTP- oder AJP-Protokolls mit JBoss kommunizieren.
    >Wenn Sie einen Proxy verwenden, sind die folgenden Konfigurationsänderungen erforderlich:
    >
    >* Zugriff: *https://&lt;server>:&lt;port>/system/console/configMgr*
-   * Bearbeiten der Konfiguration für den Apache Sling-Referrer-Filter
-   * Den Eintrag für den Proxy-Server unter „Hosts zulassen“ hinzufügen.
+   >* Bearbeiten der Konfiguration für den Apache Sling-Referrer-Filter
+   >* Den Eintrag für den Proxy-Server unter „Hosts zulassen“ hinzufügen.
 
 1. Aktivieren Sie die Komprimierung.
 

@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '7608'
-ht-degree: 100%
+source-wordcount: '7800'
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ In der folgenden Tabelle werden gängige Prozesse beschrieben, die Sicherheitsl�
   </tr> 
   <tr> 
    <td><p>Private IP-Adressen</p> </td> 
-   <td><p>Verwenden Sie auf AEM Forms-Programm-Servern durch NAT (Network Address Translation) geschützte private IP-Adressen gemäß RFC 1918. Weisen Sie private IP-Adressen (10.0.0.0/8, 172.16.0.0/12 und 192.168.0.0/16) zu, um es einem Angreifer zu erschweren, Netzwerkverkehr über das Internet zu und von einem internen Host mit NAT zu leiten.</p> </td> 
+   <td><p>Verwenden Sie Network Address Translation (NAT) mit privaten RFC 1918-IP-Adressen auf dem AEM Forms-Anwendungsserver. Weisen Sie private IP-Adressen (10.0.0.0/8, 172.16.0.0/12 und 192.168.0.0/16) zu, um es einem Angreifer zu erschweren, Traffic über das Internet zu und von einem internen Host der NAT zu leiten.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Firewalls</p> </td> 
@@ -130,7 +130,7 @@ In diesem Abschnitt werden Verfahren beschrieben, die Sie während des AEM Forms
   </tr> 
   <tr> 
    <td><p>Festplattenpartitionen</p> </td> 
-   <td><p>Platzieren Sie AEM Forms on JEE auf einer dedizierten Festplattenpartition. Die Festplattenaufteilung ist ein Prozess, bei dem bestimmte Daten auf dem Server auf separaten physischen Festplatten verwaltet werden, um die Sicherheit zu erhöhen. Durch eine solche Datenanordnung lässt sich das Risiko von Directory Traversal-Angriffen verringern. Planen Sie die Erstellung einer von der Systempartition getrennten Partition, auf der Sie das AEM Forms on JEE-Inhaltsverzeichnis installieren können. (Unter Windows enthält die Systempartition das Verzeichnis „system32“, das auch als Boot-Partition bezeichnet wird.)</p> </td> 
+   <td><p>Platzieren Sie AEM Forms on JEE auf einer dedizierten Festplattenpartition. Die Festplattenaufteilung ist ein Prozess, bei dem bestimmte Daten auf dem Server auf separaten physischen Festplatten verwaltet werden, um die Sicherheit zu erhöhen. Durch eine solche Datenanordnung lässt sich das Risiko von Verzeichnisdurchlauf-Angriffen verringern. Planen Sie die Erstellung einer von der Systempartition getrennten Partition, auf der Sie das AEM Forms on JEE-Inhaltsverzeichnis installieren können. (Unter Windows enthält die Systempartition das Verzeichnis „system32“, das auch als Boot-Partition bezeichnet wird.)</p> </td> 
   </tr> 
   <tr> 
    <td><p>Komponenten</p> </td> 
@@ -177,7 +177,7 @@ Um den Anwendungs-Server, auf dem AEM Forms on JEE bereitgestellt wird, mit eine
    >Sie können diese Einstellung für PDF Generator nicht ändern.
 
 1. Wählen Sie **Starten** > **Einstellungen** > **Admin Tools** > **Dienste** aus.
-1. Doppelklicken Sie auf JBoss für AEM Forms on JEE und beenden Sie den Dienst.
+1. Doppelklicken Sie auf JBoss für AEM Forms on JEE und stoppen Sie den Dienst.
 1. Wählen Sie auf der Registerkarte **Anmelden** die Option **Dieses Konto** aus, suchen Sie das von Ihnen erstellte Benutzerkonto und geben Sie das Passwort für das Konto ein.
 1. Öffnen Sie im MMC die Option **Lokale Sicherheitseinstellungen** und wählen Sie **Lokale Richtlinien** > **Zuweisen von Benutzerrechten** aus.
 1. Weisen Sie dem Benutzerkonto, unter dem der Formular-Server ausgeführt wird, die folgenden Berechtigungen zu:
@@ -191,8 +191,8 @@ Um den Anwendungs-Server, auf dem AEM Forms on JEE bereitgestellt wird, mit eine
    * **CRX-Repository-Verzeichnis**: Der Standardspeicherort lautet `[AEM-Forms-installation-location]\crx-repository`
    * **Temporäre Verzeichnisse von AEM Forms**:
       * (Windows) TMP- oder TEMP-Pfad gemäß Einstellung in den Umgebungsvariablen
-      * (AIX, Linux oder Solaris) Basisordner der angemeldeten Person
-Auf UNIX-basierten Systemen kann eine Benutzerin oder ein Benutzer ohne Stammordner den folgenden Ordner als temporären Ordner verwenden:
+      * (AIX, Linux oder Solaris) Basisverzeichnis der angemeldeten Person
+Auf UNIX-basierten Systemen kann ein Nicht-Root-Benutzer den folgenden Ordner als temporären Ordner verwenden:
       * (Linux) /var/tmp oder /usr/tmp
       * (AIX) /tmp oder /usr/tmp
       * (Solaris) /var/tmp oder /usr/tmp
@@ -235,7 +235,7 @@ Configuration Manager verwendete ein auf Ihrem Anwendungsserver bereitgestelltes
    <!-- bootstrapper end-->
    ```
 
-1. Beenden Sie den AEM Forms-Server.
+1. Stoppen Sie den AEM Forms-Server.
 1. Kommentieren Sie die Module „adobe-bootstrapper.war“ und „adobe-lcm-bootstrapper-redirectory.war“ aus. wie folgt aus:
 
    ```java
@@ -262,7 +262,7 @@ Configuration Manager verwendete ein auf Ihrem Anwendungsserver bereitgestelltes
 1. Starten Sie den AEM Forms-Server.
 1. Geben Sie die nachstehende URL in einen Browser ein, um die Änderung zu testen und sicherzustellen, dass sie nicht mehr funktioniert.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Sperren des Remote-Zugriffs auf den Trust Store**
 
@@ -361,11 +361,11 @@ Unter Oracle benötigt das verwendete Datenbankkonto nur die Berechtigungen CONN
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
    ```
 
-1. Fügen Sie die Datei „sqljdbc_auth.dll“ zum Windows-Systempfad (C:\Windows) auf dem Computer hinzu, auf dem der Anwendungsserver ausgeführt wird. Die Datei „sqljdbc_auth.dll“ wird zusammen mit dem Microsoft SQL JDBC 6.2.1.0-Treiber installiert.
+1. Fügen Sie die Datei „sqljdbc_auth.dll“ zum Windows-Systempfad (C:\Windows) auf dem Computer hinzu, auf dem der Anwendungsserver ausgeführt wird. Die Datei „sqljdbc_auth.dll“ befindet sich zusammen mit der Microsoft SQL JDBC-6.2.1.0.
 1. Ändern Sie die Eigenschaft des JBoss Windows-Dienstes (JBoss for AEM Forms on JEE) für „Anmelden als“ von „Lokales System“ in ein Anmeldekonto mit einer AEM Forms-Datenbank und einem Mindestsatz von Berechtigungen. Wenn Sie JBoss von der Befehlszeile und nicht als Windows-Dienst ausführen, ist dieser Schritt nicht erforderlich.
 1. Ändern Sie die Sicherheitseinstellung von SQL Server von **Gemischt** in **Nur Windows-Authentifizierung**.
 
-#### Integrierte Sicherheit für SQL Server unter Windows für WebLogic konfigurieren  {#configuring-integrated-security-for-sql-server-on-windows-for-weblogic}
+#### Integrierte Sicherheit für SQL Server unter Windows für WebLogic konfigurieren {#configuring-integrated-security-for-sql-server-on-windows-for-weblogic}
 
 1. Starten Sie die Administration-Console von WebLogic Server, indem Sie die folgende URL in die Adresszeile eines Webbrowsers eingeben:
 
@@ -378,7 +378,7 @@ Unter Oracle benötigt das verwendete Datenbankkonto nur die Berechtigungen CONN
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarte **Configuration** und dann auf die Registerkarte **Connection Pool**. Geben Sie in das Feld **Properties** den Eintrag `integratedSecurity=true` ein.
 1. Klicken Sie unter „Domain Structure“ auf **[base_domain]** > **Services** > **JDBC** > **Data Sources** und klicken Sie im rechten Bereich auf **RM_DS**.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarte **Configuration** und dann auf die Registerkarte **Connection Pool**. Geben Sie in das Feld **Properties** den Eintrag `integratedSecurity=true` ein.
-1. Fügen Sie die Datei „sqljdbc_auth.dll“ zum Windows-Systempfad (C:\Windows) auf dem Computer hinzu, auf dem der Anwendungsserver ausgeführt wird. Die Datei „sqljdbc_auth.dll“ wird zusammen mit dem Microsoft SQL JDBC 6.2.1.0-Treiber installiert.
+1. Fügen Sie die Datei „sqljdbc_auth.dll“ zum Windows-Systempfad (C:\Windows) auf dem Computer hinzu, auf dem der Anwendungsserver ausgeführt wird. Die Datei „sqljdbc_auth.dll“ befindet sich zusammen mit der Microsoft SQL JDBC-6.2.1.0.
 1. Ändern Sie die Sicherheitseinstellung von SQL Server von **Gemischt** in **Nur Windows-Authentifizierung**.
 
 #### Konfigurieren der integrierten Sicherheit für SQL Server unter Windows für WebSphere {#configuring-integrated-security-for-sql-server-on-windows-for-websphere}
@@ -709,7 +709,7 @@ Der Referrer-Filter funktioniert wie folgt:
 
 AEM Forms auf JEE bietet einen Referrer-Filter, um Referrer anzugeben, denen der Zugriff auf Server-Ressourcen erlaubt wird. Der Referrer-Filter filtert standardmäßig keine Anfragen, die eine sichere HTTP-Methode, z. B. GET, verwenden, es sei denn, *CSRF_CHECK_GETS* ist auf „true“ festgelegt. Wenn die Port-Nummer für den Eintrag eines zulässigen Referrers auf 0 festgelegt ist, lässt AEM Forms auf JEE alle Anfragen mit Referrern von diesem Host unabhängig von der Port-Nummer zu. Wenn keine Anschlussnummer angegeben wird, werden nur Anforderungen vom Standardanschluss 80 (HTTP) oder von Anschluss 443(HTTPS) zugelassen. Der Referrer-Filter wird deaktiviert, wenn alle Einträge in der Liste der zulässigen Referrer gelöscht werden.
 
-Wenn Sie Document Services zum ersten Mal installieren, wird die Liste für zulässige Referrer mit der Adresse des Servers aktualisiert, auf dem Document Services installiert wird. Die Einträge für den Server enthalten den vollständig Servernamen, die IPv4-Adresse, die IPv6-Adresse, wenn IPv6 aktiviert ist, die Loopback-Adresse und einen „localhost“-Eintrag. Die Namen, die zur Liste der zulässigen verweisenden Stellen (auch als Liste „Zulässige Referrer“ bezeichnet)“ hinzugefügt wurden, werden vom Betriebssystem des Hosts zurückgegeben. Beispielsweise enthält ein Server mit der IP-Adresse 10.40.54.187 die folgenden Einträge: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Für nicht qualifizierten Namen, die vom Host-Betriebssystem zurückgegeben wurden (Namen, die keine IPv4-Adresse, IPv6-Adresse oder qualifizierte Domain-Namen haben), erfolgt keine Aktualisierung der Zulassungsliste. Ändern Sie die Liste der zulässigen verweisenden Stellen entsprechend Ihrer Geschäftsumgebung. Stellen Sie den Formular-Server nicht mit der Standardliste der zulässigen Referrer in der Produktionsumgebung bereit. Nachdem Sie die zulässigen Referrer, Referrer-Ausnahmen oder URIs geändert haben, müssen Sie den Server neu starten, damit die Änderungen wirksam werden.
+Wenn Sie Document Services zum ersten Mal installieren, wird die Liste für zulässige Referrer mit der Adresse des Servers aktualisiert, auf dem Document Services installiert wird. Die Einträge für den Server enthalten den vollständig Servernamen, die IPv4-Adresse, die IPv6-Adresse, wenn IPv6 aktiviert ist, die Loopback-Adresse und einen „localhost“-Eintrag. Die Namen, die zur Liste der zulässigen verweisenden Stellen (auch als Liste „Zulässige Referrer“ bezeichnet)“ hinzugefügt wurden, werden vom Betriebssystem des Hosts zurückgegeben. Beispiel: Ein Server mit der IP-Adresse 10.40.54.187 enthält die folgenden Einträge: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Für nicht qualifizierten Namen, die vom Host-Betriebssystem zurückgegeben wurden (Namen, die keine IPv4-Adresse, IPv6-Adresse oder qualifizierte Domain-Namen haben), erfolgt keine Aktualisierung der Zulassungsliste. Ändern Sie die Liste der zulässigen verweisenden Stellen entsprechend Ihrer Geschäftsumgebung. Stellen Sie den Formular-Server nicht mit der Standardliste der zulässigen Referrer in der Produktionsumgebung bereit. Nachdem Sie die zulässigen Referrer, Referrer-Ausnahmen oder URIs geändert haben, müssen Sie den Server neu starten, damit die Änderungen wirksam werden.
 
 **Verwalten der Liste der zulässigen verweisenden Stellen**
 
@@ -1017,8 +1017,8 @@ Bei der AEM Forms on JEE-Turnkey-Installation wird standardmäßig unter Verwend
    * **CRX-Repository-Verzeichnis**: Der Standardspeicherort lautet `[AEM-Forms-installation-location]\crx-repository`
    * **Temporäre Verzeichnisse von AEM Forms**:
       * (Windows) TMP- oder TEMP-Pfad gemäß Einstellung in den Umgebungsvariablen
-      * (AIX, Linux oder Solaris) Basisordner der angemeldeten Person
-Auf UNIX-basierten Systemen kann eine Benutzerin oder ein Benutzer ohne Stammordner den folgenden Ordner als temporären Ordner verwenden:
+      * (AIX, Linux oder Solaris) Basisverzeichnis der angemeldeten Person
+Auf UNIX-basierten Systemen kann ein Nicht-Root-Benutzer den folgenden Ordner als temporären Ordner verwenden:
       * (Linux) /var/tmp oder /usr/tmp
       * (AIX) /tmp oder /usr/tmp
       * (Solaris) /var/tmp oder /usr/tmp
