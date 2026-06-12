@@ -12,8 +12,8 @@ feature: Developing,Content Fragments
 role: Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 100%
+source-wordcount: '690'
+ht-degree: 94%
 
 ---
 
@@ -158,7 +158,7 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
     <tr>
      <td><code>elements</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>erforderlich</p> </td>
-     <td><p>Knoten, der die Definition der Elemente des Inhaltsfragments enthält. Er ist erforderlich und muss mindestens einen untergeordneten Knoten für das <strong>Haupt</strong>-Element enthalten, kann aber [1..n] untergeordnete Knoten enthalten.</p> <p>Wenn die Vorlage verwendet wird, wird die Unterverzweigung der Elemente in die Modellunterverzweigung des Fragments kopiert.</p> <p>Das erste Element (wie in CRXDE Lite angezeigt) wird automatisch als <i>Haupt</i>-Element betrachtet; der Knotenname ist irrelevant und der Knoten selbst hat keine besondere Bedeutung, abgesehen von der Tatsache, dass er durch das Hauptelement repräsentiert wird. Die anderen Elemente werden als Unterelemente behandelt.</p> </td>
+     <td><p>Knoten, der die Definition der Elemente des Inhaltsfragments enthält. Sie ist obligatorisch und muss mindestens einen untergeordneten Knoten für das <strong>Main</strong>-Element enthalten, kann jedoch [1…n] untergeordnete Knoten enthalten.</p> <p>Wenn die Vorlage verwendet wird, wird die Unterverzweigung der Elemente in die Modellunterverzweigung des Fragments kopiert.</p> <p>Das erste Element (wie in CRXDE Lite angezeigt) wird automatisch als <i>Haupt</i>-Element betrachtet; der Knotenname ist irrelevant und der Knoten selbst hat keine besondere Bedeutung, abgesehen von der Tatsache, dass er durch das Hauptelement repräsentiert wird. Die anderen Elemente werden als Unterelemente behandelt.</p> </td>
     </tr>
    </tbody>
   </table>

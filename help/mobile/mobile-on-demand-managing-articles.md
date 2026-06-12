@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '685'
 ht-degree: 1%
 
 ---
@@ -30,9 +30,9 @@ Artikel stellen den Text zusammen mit der Kunst dar, um Informationen zu vermitt
 >
 >In den folgenden Ressourcen in der Online-Hilfe erfahren Sie mehr über die folgenden Themen in AEM Mobile-Programmen:
 >
->* [Überlegungen zum Design](https://helpx.adobe.com/de/digital-publishing-solution/help/design-app.html)
+>* [Überlegungen zum Design](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Artikel verwalten](https://helpx.adobe.com/de/digital-publishing-solution/help/creating-articles.html)
+>* [Artikel verwalten](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
 >
 
 ## Erstellen eines Artikels {#creating-an-article}
@@ -70,7 +70,7 @@ Der Workflow zum Importieren eines neuen Artikels
 
 ## Bearbeiten eines Artikels {#editing-an-article}
 
-Verwenden Sie den integrierten AEM-Drag-and-Drop-Editor, um einen Artikel hinzuzufügen oder zu ändern. Komponenten wie Text und Bilder können hinzugefügt/entfernt werden. Bilder von DAM Assets können eingefügt werden.
+Verwenden Sie den integrierten Drag-and-Drop-Editor von AEM, um einen Artikel hinzuzufügen oder zu ändern. Komponenten wie Text und Bilder können hinzugefügt/entfernt werden. Bilder von DAM Assets können eingefügt werden.
 
 >[!CAUTION]
 >
@@ -79,7 +79,7 @@ Verwenden Sie den integrierten AEM-Drag-and-Drop-Editor, um einen Artikel hinzuz
 Der Workflow zum Bearbeiten eines Artikels:
 
 1. Wählen Sie unter Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Wählen Sie einen Artikel aus der AEM-Quelle aus der Kachel **Artikel verwalten**.
+1. Wählen Sie einen Artikel aus AEM aus der Kachel **Artikel verwalten**.
 1. Klicken Sie auf den hervorgehobenen Artikel in der Listenansicht, um ihn im Inhaltseditor zu öffnen.
 1. Verwenden Sie den Inhaltseditor, um Artikelinhalte (Manuskripte, Bilder, Text usw.) per Drag-and-Drop zu verschieben.
 

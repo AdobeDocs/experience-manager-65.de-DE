@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2444'
-ht-degree: 100%
+source-wordcount: '2661'
+ht-degree: 98%
 
 ---
 
@@ -32,12 +32,12 @@ Auf dieser Seite erfahren Sie, wie Sie die Funktionen von Multi Site Manager erw
 >Wir empfehlen, diese Seite in Verbindung mit [Wiederverwenden von Inhalten: Multi Site Manager](/help/sites-administering/msm.md) zu lesen.
 >
 >Die folgenden Abschnitte der Sites-Repository-Neustrukturierung könnten ebenfalls von Interesse sein:
->* [Blueprint-Konfigurationen für den Multi-Site-Manager](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html?lang=de#multi-site-manager-blueprint-configurations)
->* [Rollout-Konfigurationen für den Multi-Site-Manager](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html?lang=de#multi-site-manager-rollout-configurations)
+>* [Blueprint-Konfigurationen für den Multi-Site Manager](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html?lang=de#multi-site-manager-blueprint-configurations)
+>* [Rollout-Konfigurationen für den Multi-Site Manager](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html?lang=de#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >
->Multi Site Manager und die dazugehörige API werden beim Erstellen einer Website verwendet und sind daher ausschließlich für die Nutzung in einer Authoring-Umgebung gedacht.
+>Multi-Site Manager und die dazugehörige API werden beim Erstellen einer Website verwendet und sind daher ausschließlich für die Nutzung in einer Authoring-Umgebung gedacht.
 
 ## Überblick über die Java-API {#overview-of-the-java-api}
 
@@ -237,7 +237,7 @@ Fügen Sie untergeordnete Knoten des Typs `cq:LiveSyncAction` hinzu, um Synchron
 1. **Erstellen** Sie einen Knoten mit den folgenden Knoteneigenschaften:
 
    * **Name**: Der Knotenname der Synchronisierungsaktion.
-Der Name muss dem **Aktionsnamen** in der Tabelle unter [Synchronisierungsaktionen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) entsprechen, z. B. `contentCopy` oder `workflow`.
+Der Name muss mit dem **Aktionsnamen“ in** Tabelle unter „Synchronisierungsaktionen[ übereinstimmen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) z. B. `contentCopy` oder `workflow`.
    * **Typ**: `cq:LiveSyncAction`
 
 1. Fügen Sie so viele Synchronisierungsaktionsknoten hinzu wie erforderlich und konfigurieren Sie sie. Ordnen Sie die Aktionsknoten so an, dass sie die Reihenfolge aufweisen, in der sie ausgeführt werden sollen. Der oberste Aktionsknoten wird zuerst ausgeführt.
@@ -552,13 +552,13 @@ Erstellen Sie die MSM-Rollout-Konfiguration, die die von Ihnen erstellte `LiveAc
 
    * **Titel**: Beispiel-Rollout-Konfiguration
    * **Name**: examplerolloutconfig
-   * **cq:trigger**: `publish`
+   * **CQ:trigger**: `publish`
 
 ### Hinzufügen der Live-Aktion zur Rollout-Beispielkonfiguration {#add-the-live-action-to-the-example-rollout-configuration}
 
 Konfigurieren Sie die beim vorhergehenden Verfahren erstellte Rollout-Konfiguration so, dass sie die Klasse `ExampleLiveActionFactory` verwendet.
 
-1. Öffnen Sie CRXDE Lite; z. B. [https://localhost:4502/crx/de](https://localhost:4502/crx/de).
+1. Öffnen Sie CRXDE Lite. Beispiel: [https://localhost:4502/crx/de](https://localhost:4502/crx/de).
 1. Erstellen Sie den entsprechenden Knoten unter `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
    * **Name**: `exampleLiveAction`
@@ -636,7 +636,7 @@ Die Sprachliste ist unter dem Knoten `/libs/wcm/core/resources/languages` gespei
 
 So bearbeiten Sie die Sprachen:
 
-1. Öffnen Sie CRXDE Lite in Ihrem Webbrowser; z. B. [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
+1. Öffnen Sie CRXDE Lite in Ihrem Webbrowser, z. B. [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
 1. Wählen Sie den Ordner `/apps` aus und klicken Sie auf **Erstellen** und dann auf **Ordner erstellen**.
 
    Geben Sie dem neuen Ordner den Namen `wcm`.

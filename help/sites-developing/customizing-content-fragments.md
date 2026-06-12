@@ -10,8 +10,8 @@ feature: Content Fragments
 role: Developer
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '2728'
-ht-degree: 100%
+source-wordcount: '2867'
+ht-degree: 95%
 
 ---
 
@@ -87,13 +87,13 @@ Inhaltsfragmente mit strukturierten Inhalten (d. h. basierend auf einem Inhalts
      `jcr:content/data/master`
 
    * Varianten werden in einem Unterknoten gespeichert, der den Namen der Variante hat:
-z. B. `jcr:content/data/myvariation`
+zum Beispiel `jcr:content/data/myvariation`
 
    * Die Daten der einzelnen Elemente werden im entsprechenden Unterknoten als Eigenschaft mit dem Elementnamen gespeichert:
-Das Inhaltselement `text` wird beispielsweise mit der Eigenschaft `text` in `jcr:content/data/master` gespeichert.
+Beispielsweise wird der Inhalt des Elements `text` als Eigenschaft `text` auf `jcr:content/data/master` gespeichert
 
-* Metadaten und verknüpfte Inhalte werden unter `jcr:content/metadata` gespeichert. 
-Eine Ausnahme bilden der Titel und die Beschreibung, die nicht als Metadaten im herkömmlichen Sinne gelten und in `jcr:content` gespeichert werden.
+* Metadaten und verknüpfte Inhalte werden unten gespeichert `jcr:content/metadata`
+Mit Ausnahme des Titels und der Beschreibung, die nicht als traditionelle Metadaten gelten und in `jcr:content` gespeichert werden
 
 #### Zuordnen von einfachen Inhaltsfragmenten zu Assets {#mapping-simple-content-fragments-to-assets}
 
@@ -164,9 +164,10 @@ Die Backend-Implementierung von Inhaltsfragmenten ist beispielsweise dafür vera
 Die erforderlichen Parameter können in der [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) für das OSGi-Bundle **Konfiguration der Inhaltsfragmentkomponente** konfiguriert werden.
 
 * **Ressourcentypen**
-Es kann eine Liste von `sling:resourceTypes` angegeben werden, um zu definieren, welche Komponenten zum Rendern der Inhaltsfragmente verwendet werden sollen und worauf die Hintergrundverarbeitung angewendet werden soll.
+Eine Liste von `sling:resourceTypes` kann bereitgestellt werden, um zu definieren, welche Komponenten zum Rendern der Inhaltsfragmente verwendet werden sollen und worauf die Hintergrundverarbeitung angewendet werden soll.
 
-* **Verweiseigenschaften** Eine Liste der konfigurierbaren Eigenschaften, die angeben, wo der Verweis auf das Fragment für die entsprechende Komponente gespeichert werden soll.
+* **Referenzeigenschaften**
+Eine Liste der Eigenschaften kann so konfiguriert werden, dass angegeben wird, wo der Verweis auf das Fragment für die entsprechende Komponente gespeichert werden soll.
 
 >[!NOTE]
 >
@@ -303,7 +304,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
   >[!CAUTION]
   >
-  >Es wird dringend empfohlen, über diese Schnittstelle auf ein Fragment zuzugreifen.  Das direkte Ändern der Inhaltsstruktur sollte vermieden werden.
+  >Es wird dringend empfohlen, über diese Schnittstelle auf ein Fragment zuzugreifen. Das direkte Ändern der Inhaltsstruktur sollte vermieden werden.
 
   Die Schnittstelle bietet folgende Möglichkeiten:
 
@@ -393,7 +394,7 @@ Beachten Sie Folgendes:
 
    * Beim Entfernen vorhandener Varianten wird die Datenstruktur nicht aktualisiert.
 
-## Client-seitige API für die Inhaltsfragmentverwaltung   {#the-content-fragment-management-api-client-side}
+## Client-seitige API für die Inhaltsfragmentverwaltung {#the-content-fragment-management-api-client-side}
 
 >[!CAUTION]
 >
@@ -433,13 +434,13 @@ Folgende Prozesse sind involviert:
 
 * Beenden einer Sitzung
 
-   * Das automatische Speichern wird beendet.
+   * Das automatische Speichern wird gestoppt.
    * Beim Speichern:
 
       * Die Daten zur letzten Änderung werden aktualisiert.
       * Cookies werden entfernt.
 
-   * Beim Zurücksetzen:
+   * Beim Rollback:
 
       * Die Version des Inhaltsfragments, die beim Starten der Bearbeitungssitzung erstellt wurde, wird wiederhergestellt.
       * Cookies werden entfernt.

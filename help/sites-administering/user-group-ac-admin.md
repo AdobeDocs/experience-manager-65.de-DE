@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '3073'
+source-wordcount: '3107'
 ht-degree: 100%
 
 ---
@@ -233,13 +233,13 @@ Sie müssen beim entsprechenden Arbeitsbereich angemeldet sein und können dann 
 
 * **ntlmhash**
 
-   Wird automatisch jedem neuen Konto zugewiesen und bei Änderung des Kennworts aktualisiert
+  Wird automatisch jedem neuen Konto zugewiesen und bei Änderung des Kennworts aktualisiert
 
 * Sie können neue Eigenschaften hinzufügen, indem Sie einen Namen, einen Typ und den Wert definieren. Klicken Sie für jede neue Eigenschaft auf „Speichern“ (grünes Häkchensymbol).
 
-**Gruppenmitgliedschaft**
+**Gruppenzugehörigkeit**
 
-Hier werden alle Gruppen angezeigt, die zu diesem Konto gehören. Die Spalte Übernommen zeigt Mitgliedschaften an, die durch eine Mitgliedschaft bei einer anderen Gruppe übernommen wurden.
+Hier werden alle Gruppen angezeigt, die zu diesem Konto gehören. Die Spalte „Übernommen“ zeigt Zugehörigkeiten an, die durch eine Zugehörigkeit zu einer anderen Gruppe übernommen wurden.
 
 Durch Klicken auf eine Gruppen-ID (falls verfügbar) wird die [Gruppenverwaltung](#group-administration) für diese Gruppe geöffnet.
 
@@ -268,7 +268,7 @@ Wenn ein Konto stellvertretend für ein anderes Konto agiert, ist dies schwer zu
 1. Das Dialogfeld wird erweitert, sodass Sie Folgendes tun können:
 
    1. Konfigurieren Sie **Eigenschaften**.
-   1. Zeigen Sie die **Gruppenmitgliedschaft** an.
+   1. Zeigen Sie die **Gruppenzugehörigkeit** an.
    1. Definieren Sie **Darsteller**.
 
 >[!NOTE]
@@ -357,9 +357,9 @@ Sie müssen beim entsprechenden Arbeitsbereich angemeldet sein und können dann 
 
   Sie können Benutzer oder andere Gruppen als Mitglieder dieser Gruppe hinzufügen.
 
-**Gruppenmitgliedschaft**
+**Gruppenzugehörigkeit**
 
-Hier werden alle Gruppen angezeigt, die zu diesem aktuellen Gruppenkonto gehören. Die Spalte Übernommen zeigt Mitgliedschaften an, die durch eine Mitgliedschaft bei einer anderen Gruppe übernommen wurden.
+Hier werden alle Gruppen angezeigt, die zu diesem aktuellen Gruppenkonto gehören. Die Spalte „Übernommen“ zeigt Zugehörigkeiten an, die durch eine Zugehörigkeit zu einer anderen Gruppe übernommen wurden.
 
 Durch Klicken auf eine Gruppen-ID wird das Dialogfeld für diese Gruppe geöffnet.
 
@@ -386,7 +386,7 @@ Die Spalte **Übernommen** zeigt Mitgliedschaften an, die durch eine Mitgliedsch
 1. Das Dialogfeld wird erweitert, sodass Sie folgende Schritte ausführen können:
 
    1. Konfigurieren Sie **Eigenschaften**.
-   1. Zeigen Sie die **Gruppenmitgliedschaft** an.
+   1. Zeigen Sie die **Gruppenzugehörigkeit** an.
    1. **Mitglieder** verwalten.
 
 ### Aktualisieren eines Gruppenkontos {#updating-a-group-account}
