@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 100%
+source-wordcount: '2350'
+ht-degree: 97%
 
 ---
 
@@ -202,7 +202,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
    <td><a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PDFOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePDFOutputBatch</a></td>
    <td>Führt Daten und Vorlagen zusammen, um einen Satz von PDF-Dokumenten zu erstellen.</td>
    <td>Verarbeitete Dokumente</td>
-   <td> Die generatePDFOutputBatch-API kombiniert eine Formularvorlage mit einem Datensatz und generiert eine PDF-Datei. Wenn Sie einen Datensatz-Batch verarbeiten, zählt der Transaktionsberichts-Service jeden Datensatz als separate PDF-Ausgabedarstellung. <br> Sie können das Flag <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> verwenden, um mehrere Ausgabedarstellungen zu einer einzigen PDF-Datei zu kombinieren. Unabhängig vom Status des Flags zählt der Service jeden Datensatz als separate PDF-Ausgabedarstellung. </td>
+   <td> Die generatePDFOutputBatch-API kombiniert eine Formularvorlage mit einem Eintrag und generiert eine PDF-Datei. Wenn Sie einen Datensatz-Batch verarbeiten, zählt der Transaktionsberichts-Service jeden Datensatz als separate PDF-Ausgabedarstellung. <br> Sie können das Flag <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> verwenden, um mehrere Ausgabedarstellungen zu einer einzigen PDF-Datei zu kombinieren. Unabhängig vom Status des Flags zählt der Service jeden Eintrag als separate PDF-Ausgabedarstellung. </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
@@ -220,7 +220,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
    <td><a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
    <td>Konvertiert einen Satz von XDP- und PDF-Dokumenten in die Formate PostScript (PS), Printer Command Language (PCL) und ZPL. </td>
    <td>Verarbeitete Dokumente</td>
-   <td> Die generatePDFOutputBatch-API kombiniert eine Formularvorlage mit einem Datensatz und generiert eine PDF-Datei. Wenn Sie einen Datensatz-Batch verarbeiten, zählt der Transaktionsberichts-Service jeden Datensatz als separate PDF-Ausgabedarstellung. <br> Sie können das Flag <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> verwenden, um mehrere Ausgabedarstellungen zu einer einzigen PDF-Datei zu kombinieren. Unabhängig vom Status des Flags zählt der Service jeden Datensatz als separate PDF-Ausgabedarstellung. </td>
+   <td> Die generatePDFOutputBatch-API kombiniert eine Formularvorlage mit einem Eintrag und generiert eine PDF-Datei. Wenn Sie einen Datensatz-Batch verarbeiten, zählt der Transaktionsberichts-Service jeden Datensatz als separate PDF-Ausgabedarstellung. <br> Sie können das Flag <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> verwenden, um mehrere Ausgabedarstellungen zu einer einzigen PDF-Datei zu kombinieren. Unabhängig vom Status des Flags zählt der Service jeden Eintrag als separate PDF-Ausgabedarstellung. </td>
   </tr>
  </tbody>
 </table>
@@ -294,7 +294,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
  </tbody>
 </table>
 
-### Assembler-Service {#assembler-service}
+### Assembler-Dienst {#assembler-service}
 
 <table>
  <tbody>
@@ -318,7 +318,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
    <td><a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td>
    <td>Führt das angegebene DDX-Dokument aus und gibt ein <a href="https://helpx.adobe.com/de/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a>-Objekt zurück, das die resultierenden Dokumente enthält. </td>
    <td>Verarbeitete Dokumente</td>
-   <td>Der Assembler-Service unterstützt alle Eingabedateiformate, die von PDF Generator, Forms und Ausgabe-Services unterstützt werden, als Ausgabedateiformate. </td>
+   <td>Der Assembler-Dienst unterstützt alle Eingabedateiformate, die von PDF Generator, Forms und Ausgabe-Services unterstützt werden, als Ausgabedateiformate. </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#toPDFA-com.adobe.aemfd.docmanager.Document-com.adobe.fd.assembler.client.PDFAConversionOptionSpec-">toPDFA</a></td>
@@ -336,8 +336,8 @@ Die Verwendung der invoke-API wird als Transaktion gezählt, wenn Sie einen oder
 
 >[!NOTE]
 >
->* Die invoke-API des Assembler-Services kann abhängig von der Eingabe intern eine kostenpflichtige API eines anderen Services aufrufen. Daher kann die invoke-API als keine, eine einzige oder auch mehrere Transaktionen verbucht werden. Die Anzahl der gezählten Transaktionen hängt von der Eingabe und den aufgerufenen internen APIs ab.
->* Ein einzelnes PDF-Dokument, das mit dem Assembler-Service erstellt wurde, kann als keine, eine einzige oder auch mehrere Transaktionen erfasst werden. Die Anzahl der gezählten Transaktionen hängt vom bereitgestellten DDX-Code ab.
+>* Die invoke-API des Assembler-Dienstes kann abhängig von der Eingabe intern eine kostenpflichtige API eines anderen Services aufrufen. Daher kann die invoke-API als keine, eine einzige oder auch mehrere Transaktionen verbucht werden. Die Anzahl der gezählten Transaktionen hängt von der Eingabe und den aufgerufenen internen APIs ab.
+>* Ein einzelnes PDF-Dokument, das mit dem Assembler-Dienst erstellt wurde, kann als keine, eine einzige oder auch mehrere Transaktionen erfasst werden. Die Anzahl der gezählten Transaktionen hängt vom bereitgestellten DDX-Code ab.
 
 ### PDF Utility-Service  {#pdf-utility-service}
 
@@ -431,7 +431,7 @@ Alle Übermittlungsereignisse von adaptiven Formularen, HTML5-Formularen und For
 
 Die Schritte der Zuweisung von Aufgaben und der Dokumenten-Services von formularzentrierten AEM-Workflows unter OSGi und alle Ausgabedarstellungen von interaktiver Kommunikation werden als Transaktionen verbucht. Die Vorschau einer interaktiven Kommunikation auf der Autoreninstanz und die Vorschau auf der Veröffentlichungsinstanz mithilfe der Agent-Benutzeroberfläche werden nicht als Transaktionen verbucht. Wenn durch einen Workflow-Schritt eine Transaktion verbucht wird und der Workflow nicht abgeschlossen werden kann, wird die Transaktionsanzahl nicht zurückgesetzt.
 
-### Webkanal für interaktive Kommunikation {#interactive-communication-web-channel}
+### Web-Kanal für interaktive Kommunikation {#interactive-communication-web-channel}
 
 <table>
  <tbody>
