@@ -11,8 +11,8 @@ feature: Developing,Search,Query Builder
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2313'
-ht-degree: 100%
+source-wordcount: '2381'
+ht-degree: 93%
 
 ---
 
@@ -71,10 +71,10 @@ Unterstützt die Facettenextraktion. Erstellt für jeden Wert (`true` oder `fals
 #### Eigenschaften {#properties}
 
 * **boolproperty**
-Relativer Pfad der Eigenschaft, z. B. `myFeatureEnabled` oder `jcr:content/myFeatureEnabled`.
+Relativer Pfad der Eigenschaft, z. B. `myFeatureEnabled` oder `jcr:content/myFeatureEnabled`.
 
-* **Wert**
-Wert, auf den die Eigenschaft geprüft werden soll, „`true`“ oder „`false`“.
+* **value**
+Wert, auf den die Eigenschaft überprüft werden soll, &quot;`true`&quot; oder &quot;`false`&quot;.
 
 ### contentfragment {#contentfragment}
 
@@ -86,7 +86,8 @@ Facettenextraktion wird nicht unterstützt.
 
 #### Eigenschaften {#properties-1}
 
-* **contentfragment** Kann mit jedem Wert verwendet werden, um auf Inhaltsfragmente zu prüfen.
+* **contentfragment**
+Sie kann mit jedem Wert verwendet werden, um auf Inhaltsfragmente zu prüfen.
 
 ### dateComparison {#datecomparison}
 
@@ -110,7 +111,8 @@ Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
 
 ### daterange {#daterange}
 
-Dieses Prädikat gleicht JCR-Datumseigenschaften mit einem Datums-/Zeitintervall ab. Hierbei wird das ISO8601-Format für Daten und Uhrzeiten (`YYYY-MM-DDTHH:mm:ss.SSSZ`) verwendet, wobei auch Teildarstellungen möglich sind, z. B. `YYYY-MM-DD`. Alternativ kann der Zeitstempel als Anzahl von Millisekunden seit 1970 in der UTC-Zeitzone, dem UNIX®-Zeitformat, angegeben werden.
+Dieses Prädikat gleicht JCR-Datumseigenschaften mit einem Datums-/Zeitintervall ab. Hierbei wird ISO8601 verwendet
+-Format für Datums- und Uhrzeitangaben (`YYYY-MM-DDTHH:mm:ss.SSSZ`) und ermöglicht auch partielle Darstellungen, z. B. `YYYY-MM-DD`. Alternativ kann der Zeitstempel als Anzahl von Millisekunden seit 1970 in der UTC-Zeitzone, dem UNIX®-Zeitformat, angegeben werden.
 
 Sie können nach allen Elementen zwischen zwei Zeitstempeln suchen, nach allem, was neuer oder älter als ein jeweiliges Datum ist, und aus inklusiven oder offenen Intervallen auswählen.
 
@@ -379,7 +381,7 @@ Unterstützt die Facettenextraktion. Stellt für jeden eindeutigen Eigenschaftsw
 
 * **depth**
 
-  Anzahl der Platzhalterebenen, unter denen die Eigenschaft/der relative Pfad vorhanden sein kann (z. B. wird mit `property=size depth=2` Knoten/Größe, Knoten/*/Größe und Knoten/*/*/Größe überprüft).
+  Anzahl der Platzhalterebenen, unter denen die Eigenschaft/der relative Pfad vorhanden sein kann (z. B. `property=size depth=2` überprüft Knoten/Größe, Knoten/&amp;ast;/Größe und Knoten/&amp;ast;/&amp;ast;/Größe).
 
 ### rangeproperty {#rangeproperty}
 
@@ -413,7 +415,7 @@ Facettenextraktion wird nicht unterstützt.
 
 * **decimal**
 
-   „`true`“, wenn die aktivierte Eigenschaft vom Typ „Decimal“ ist.
+  „`true`“, wenn die aktivierte Eigenschaft vom Typ „Decimal“ ist.
 
 ### relativedaterange {#relativedaterange}
 
@@ -424,7 +426,7 @@ Beispiel:
 * `upperBound=1h` (und keine `lowerBound`) wählt alles in der folgenden Stunde aus.
 * `lowerBound=-1d` (und keine `upperBound`) wählt alles in den vergangenen 24 Stunden aus.
 * `lowerBound=-6M` und `upperBound=-3M` wählt alles aus, was zwischen sechs und drei Monaten alt ist.
-* `lowerBound=-1500` und `upperBound=5500` wählt alles aus, was im Zeitraum zwischen einschließlich 1500 Millisekunden in der Vergangenheit und einschließlich 5500 Millisekunden in der Zukunft liegt. 
+* `lowerBound=-1500` und `upperBound=5500` wählt alles aus, was im Zeitraum zwischen einschließlich 1500 Millisekunden in der Vergangenheit und einschließlich 5500 Millisekunden in der Zukunft liegt.
 * `lowerBound=1d` und `upperBound=2d` wählt alles am übernächsten Tag aus.
 
 Schaltjahre werden nicht berücksichtigt, und alle Monate haben 30 Tage.
@@ -469,7 +471,7 @@ Der Name „root“ wird in Abfragen nie verwendet, er ist implizit.
 
 * **p.hits**
 
-   (nur für das JSON-Servlet) Legt fest, wie Treffer als JSON geschrieben werden. Folgende Standardmethoden stehen zur Auswahl (erweiterbar über den Dienst „ResultHitWriter“):
+  (nur für das JSON-Servlet) Legt fest, wie Treffer als JSON geschrieben werden. Folgende Standardmethoden stehen zur Auswahl (erweiterbar über den Dienst „ResultHitWriter“):
 
    * **einfach**:
 
@@ -481,7 +483,7 @@ Der Name „root“ wird in Abfragen nie verwendet, er ist implizit.
 
    * **selective**:
 
-     Nur in `p.properties` angegebene Eigenschaften. Dies ist eine mit Leerzeichen getrennte (verwenden Sie „+“ in URLs) Liste relativer Pfade. Wenn der relative Pfad eine Tiefe > 1 aufweist, werden sie als untergeordnete Objekte angezeigt. Die spezielle Eigenschaft „jcr:path“ umfasst den Pfad des Treffers.
+     Nur in `p.properties` angegebene Eigenschaften. Dabei handelt es sich um eine mit Leerzeichen getrennte (verwenden Sie &quot;+&quot; in URLs) Liste relativer Pfade. Wenn der relative Pfad eine Tiefe >1 aufweist, werden sie als untergeordnete Elemente angezeigt. Die spezielle jcr:path-Eigenschaft umfasst den Pfad des Treffers.
 
 ### savedquery {#savedquery}
 
@@ -491,7 +493,7 @@ Dadurch wird keine zusätzliche Abfrage ausgeführt, sondern die aktuelle Abfrag
 
 Abfragen können programmgesteuert anhand von `QueryBuilder#storeQuery()` persistiert werden. Das Format kann entweder eine String-Eigenschaft mit mehreren Zeilen oder ein `nt:file`-Knoten sein, der die Abfrage als Textdatei im Java™-Eigenschaftsformat enthält.
 
-Die Facettenextraktion wird für die Prädikate der gespeicherten Abfrage nicht unterstützt 
+Die Facettenextraktion wird für die Prädikate der gespeicherten Abfrage nicht unterstützt
 
 #### Eigenschaften {#properties-19}
 
@@ -510,8 +512,8 @@ Filtern wird nicht unterstützt. Facettenextraktion wird nicht unterstützt.
 * **similar**
 Absoluter Pfad zum Knoten, für den ähnliche Knoten gefunden werden sollen.
 
-* **local**
-Ein relativer Pfad zu einem untergeordneten Knoten oder `.` für den aktuellen Knoten (optional; der Standard lautet `.`).
+* **lokal**
+Ein relativer Pfad zu einem untergeordneten Knoten oder `.` für den aktuellen Knoten (optional, der Standardwert lautet &quot;`.`„).
 
 ### tag {#tag}
 

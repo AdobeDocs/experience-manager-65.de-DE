@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 5575628c54e2e588dfae4c34383af7d6d55ce859
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2695'
 ht-degree: 93%
 
 ---
@@ -31,7 +31,7 @@ Inhalte werden linear zwischen der primären Instanz und den Standby-Instanzen s
 >
 >Die Cold-Standby-Funktion ist für Szenarien bestimmt, in denen eine hohe Verfügbarkeit für **Autoreninstanzen** erforderlich ist. In Situationen, in den eine hohe Verfügbarkeit für **Veröffentlichungsinstanzen** unter Verwendung des Tar-Mikro-Kernels erforderlich ist, empfiehlt Adobe den Einsatz einer Veröffentlichungsfarm.
 >
->Weitere Informationen zu verfügbaren Bereitstellungen finden Sie auf der Seite [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md). 
+>Weitere Informationen zu verfügbaren Bereitstellungen finden Sie auf der Seite [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Die Standby-Instanz fordert regelmäßig die Segment-ID des aktuellen Heads der 
 >
 >Standby-Instanzen empfangen keine Anfragen, da sie nur im Synchronisierungsmodus ausgeführt werden. Der einzige auf einer Standby-Instanz verfügbare Bereich ist die Web-Konsole, um die Konfiguration von Bundles und Diensten zu vereinfachen.
 
-Eine typische TarMK-Cold-Standby-Bereitstellung: 
+Eine typische TarMK-Cold-Standby-Bereitstellung:
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -86,8 +86,8 @@ Darüber hinaus können Sie festlegen, welche Standby-Instanzen eine Verbindung 
 >
 >Die PID für den Segment-Knotenspeicher und den Standby-Speicherdienst wurde in AEM 6.3 im Vergleich zu den vorherigen Versionen wie folgt geändert:
 >
->* von org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService für org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
->* von org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService für org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
+>* von org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService zu org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
+>* von org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService zu org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
 >
 >Nehmen Sie die erforderlichen Konfigurationsanpassungen vor, um dieser Änderung Rechnung zu tragen.
 
@@ -149,7 +149,7 @@ Gehen Sie wie folgt vor, um ein Setup mit einer primären und einer Standby-Inst
    java -jar quickstart.jar -r primary,crx3,crx3tar
    ```
 
-1. Erstellen Sie einen neuen Apache Sling Logging Logger für das Paket **org.apache.jackrabbit.oak.segment**. Setzen Sie die Protokollstufe auf „Debugging“ und legen Sie fest, dass die Protokollausgabe in einer separaten Datei gespeichert wird, z. B. */logs/tarmk-coldstandby.log*.  Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
+1. Erstellen Sie einen neuen Apache Sling Logging Logger für das Paket **org.apache.jackrabbit.oak.segment**. Setzen Sie die Protokollstufe auf „Debugging“ und legen Sie fest, dass die Protokollausgabe in einer separaten Datei gespeichert wird, z. B. */logs/tarmk-coldstandby.log*. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
 1. Navigieren Sie zum Speicherort der **Standby**-Instanz und starten Sie sie, indem Sie die JAR-Datei ausführen.
 1. Erstellen Sie dieselbe Protokollierungskonfiguration wie für die primäre Instanz. Stoppen Sie anschließend die Instanz.
 1. Bereiten Sie dann die Standby-Instanz vor. Hierzu können Sie dieselben Schritte wie für die primäre Instanz ausführen:
@@ -331,7 +331,7 @@ Führen Sie hierzu die nachfolgend beschriebenen Schritte aus:
 1. Testen Sie die Instanz nach der Installation auf mögliche Probleme.
 1. Entfernen Sie die Cold-Standby-Instanz, indem Sie ihren Installationsordner löschen.
 1. Stoppen Sie die primäre Instanz und klonen Sie sie, indem Sie eine Dateisystemkopie ihres gesamten Installationsordners an den Speicherort der Cold-Standby-Instanz erstellen.
-1. Konfigurieren Sie den neu erstellten Klon so, dass er als Cold-Standby-Instanz agiert. Siehe [&#x200B; Erstellen eines AEM-TarMK-Cold-Standby-Setups](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
+1. Konfigurieren Sie den neu erstellten Klon so, dass er als Cold-Standby-Instanz agiert. Siehe [ Erstellen eines AEM-TarMK-Cold-Standby-Setups](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
 1. Starten Sie sowohl die primäre als auch die Cold-Standby-Instanz.
 
 ## Monitoring {#monitoring}

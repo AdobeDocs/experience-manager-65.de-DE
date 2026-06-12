@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '548'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten für die Verwe
 >
 >Vollständige Informationen zu Feldern finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
-Verwenden Sie das Foundation-Framework der Granite-Benutzeroberfläche zum Entwickeln und/oder Erweitern von Granite-Komponenten.  Dieses umfasst zwei Elemente:
+Verwenden Sie das Foundation-Framework der Granite-Benutzeroberfläche zum Entwickeln und/oder Erweitern von Granite-Komponenten. Dieses umfasst zwei Elemente:
 
 * Server-seitig:
 
@@ -62,7 +62,7 @@ Beispiele finden Sie hier:
 
 >[!NOTE]
 >
->Da dieser Mechanismus JSP verwendet, werden i18n und XSS nicht vorgefertigt bereitgestellt.  Daher müssen Sie die Zeichenfolgen internationalisieren und mit Escape-Zeichen versehen.  Das folgende Verzeichnis enthält die generischen Felder aus einer Standardinstanz, die Sie als Referenz verwenden können:
+>Da dieser Mechanismus JSP verwendet, werden i18n und XSS nicht vorgefertigt bereitgestellt. Daher müssen Sie die Zeichenfolgen internationalisieren und mit Escape-Zeichen versehen. Das folgende Verzeichnis enthält die generischen Felder aus einer Standardinstanz, die Sie als Referenz verwenden können:
 >
 >`/libs/granite/ui/components/foundation/form`-Verzeichnis
 
@@ -78,7 +78,7 @@ Das benutzerdefinierte Feld sollte das `render.jsp`-Skript nur überschreiben, w
 
    `render.jsp`
 
-   In diesem Skript müssen Sie das Hypermedia-Markup (das heißt das erweiterte Markup mit Hypermedia-Angebot) erzeugen, damit der Client Anweisungen erhält, wie er mit dem erstellten Element interagieren soll.  Verwenden Sie dabei den Server-seitigen Code-Stil der Granite-Benutzeroberfläche.
+   In diesem Skript müssen Sie das Hypermedia-Markup (das heißt das erweiterte Markup mit Hypermedia-Angebot) erzeugen, damit der Client Anweisungen erhält, wie er mit dem erstellten Element interagieren soll. Verwenden Sie dabei den Server-seitigen Code-Stil der Granite-Benutzeroberfläche.
 
    Bei der Anpassung *müssen* Sie nur festlegen, dass der (in `init.jsp` initialisierte) Formularwert wie folgt aus der Anforderung gelesen wird:
 
@@ -105,4 +105,4 @@ Gehen Sie wie folgt vor, um der Komponente ein bestimmtes Client-seitiges Verhal
 
    >[!NOTE]
    >
-   >Derzeit stellt die Granite-Benutzeroberfläche keine vorgefertigten Listener oder Hooks bereit, die Sie direkt zum Hinzufügen von JS-Verhalten verwenden können.  Um der JS-Komponente zusätzliches Verhalten hinzuzufügen, müssen Sie daher einen JS-Hook in einer benutzerdefinierten Klasse implementieren, die Sie der Komponente bei der Markup-Erzeugung zuweisen.
+   >Derzeit stellt die Granite-Benutzeroberfläche keine vorgefertigten Listener oder Hooks bereit, die Sie direkt zum Hinzufügen von JS-Verhalten verwenden können. Um der JS-Komponente zusätzliches Verhalten hinzuzufügen, müssen Sie daher einen JS-Hook in einer benutzerdefinierten Klasse implementieren, die Sie der Komponente bei der Markup-Erzeugung zuweisen.

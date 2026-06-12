@@ -12,8 +12,8 @@ feature: Deploying
 role: Admin
 source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '743'
+ht-degree: 95%
 
 ---
 
@@ -36,7 +36,7 @@ Derzeit stehen in AEM 6 zwei Knotenspeicher zur Verfügung: der TAR-Speicher u
 
 >[!CAUTION]
 >
->Die PID für den Segment-Knotenspeicher wurde von org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService in früheren Versionen von AEM 6 auf org.apache.jackrabbit.oak.segment.SegmentNodeStoreService in AEM 6.3 geändert. Stellen Sie sicher, dass die erforderlichen Konfigurationsanpassungen vorgenommen werden, damit die Änderungen übernommen werden.
+>Die PID für den Segmentknotenspeicher hat sich von org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService in früheren Versionen von AEM 6 in org.apache.jackrabbit.oak.segment.SegmentNodeStoreService in AEM 6.3 geändert. Stellen Sie sicher, dass die erforderlichen Konfigurationsanpassungen vorgenommen werden, damit die Änderungen übernommen werden.
 
 Standardmäßig verwendet AEM 6 den TAR-Speicher zum Speichern von Knoten und Binärdateien mit den Standardkonfigurationsoptionen. Sie können die Speichereinstellungen manuell wie folgt konfigurieren:
 

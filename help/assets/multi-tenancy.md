@@ -8,8 +8,8 @@ exl-id: f95560c9-f1b9-4e86-94a7-70347d268d8f
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 100%
+source-wordcount: '228'
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,8 @@ ht-degree: 100%
 
 Mit der Multi-Tenancy-Funktion können Sie Inhalte in CRX auf Basis von Präfix und ID der Organisation trennen, um die Inhalte vor unberechtigtem Zugriff durch Anwender von anderen Unternehmen zu schützen.
 
-[!DNL Adobe Experience Manager Assets] speichert Daten für jede Organisation in einem anderen Pfad. Jeder organisationsspezifische Pfad wird durch das Organisationspräfix und die Organisations-ID angegeben, die am herkömmlichen Speicherort enthalten ist, in dem unterschiedliche Typen von Assets in CRX gespeichert werden.
+[!DNL Adobe Experience Manager Assets] speichert Daten für jede Organisation in einem anderen Pfad. Jeder organisationsspezifische Pfad wird durch das Organisationspräfix und die Organisations-ID identifiziert
+Dies ist am herkömmlichen Speicherort enthalten, an dem verschiedene Arten von Assets in CRX gespeichert werden.
 
 Wenn Sie beispielsweise einen Ordner mit dem Namen `Demo` erstellen, speichert [!DNL Experience Manager] Assets speichert den Ordner herkömmlicherweise unter `../content/dam/Demo`. Bei aktivierter Multi-Tenancy-Funktionen können Sie die Daten jetzt unter `../content/dam/<organization prefix>/<organization id>Demo` speichern.
 

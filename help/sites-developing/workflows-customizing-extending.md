@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3499'
-ht-degree: 100%
+source-wordcount: '3628'
+ht-degree: 98%
 
 ---
 
@@ -370,7 +370,7 @@ Beim Erstellen einer benutzerdefinierten Schritt-Komponente ist das Objekt `meta
 
 ## Entwickeln von Prozessschrittimplementierungen {#developing-process-step-implementations}
 
-Wenn Prozessschritte während des Prozesses gestartet werden, senden die Schritte eine Anfrage an einen OSGi-Dienst oder führen ein ECMA-Skript aus. Entwickeln Sie den Dienst oder das ECMA-Skript, der bzw. das die Aktionen ausführt, die für Ihren Workflow erforderlich sind.
+Wenn Prozessschritte während der Verarbeitung eines Workflows gestartet werden, senden die Schritte eine Anfrage an einen OSGi-Dienst oder führen ein ECMA-Skript aus. Entwickeln Sie den Dienst oder das ECMA-Skript, der bzw. das die Aktionen ausführt, die für Ihren Workflow erforderlich sind.
 
 >[!NOTE]
 >

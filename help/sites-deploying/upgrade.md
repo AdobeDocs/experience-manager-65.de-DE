@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 100%
+source-wordcount: '703'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 Dieser Abschnitt behandelt das Upgrade einer AEM-Installation auf AEM 6.5:
 
 * [Planung von Upgrades](/help/sites-deploying/upgrade-planning.md)
-* [Bewertung der Komplexität des Upgrades mit dem Musterdetektor ](/help/sites-deploying/pattern-detector.md)
+* [Bewertung der Komplexität des Upgrades mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md)
 * [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md)
   <!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 * [Upgrade-Verfahren](/help/sites-deploying/upgrade-procedure.md)
@@ -63,9 +63,9 @@ Die Befehlszeilenoptionen des crx2oak-Tools wurden geändert, um die Automatisie
 
 Die Prüfungen nach einem Upgrade wurden ebenfalls automatisierungsfreundlich gestaltet.
 
-Zu den regelmäßig durchzuführenden Routinewartungsaufgaben gehören jetzt die regelmäßige Revisionsbereinigung und die Bereinigung des Datenspeichers. Mit der Einführung von AEM 6.3 unterstützt und empfiehlt Adobe die Online-Revisionsbereinigung. Siehe [Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md) für Informationen zur Konfiguration dieser Aufgaben.
+Zu den regelmäßig durchzuführenden Routinewartungsaufgaben gehören jetzt die regelmäßige Revisionsbereinigung und die Datenspeicherbereinigung. Mit der Einführung von AEM 6.3 unterstützt und empfiehlt Adobe die Online-Revisionsbereinigung. Siehe [Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md) für Informationen zur Konfiguration dieser Aufgaben.
 
-Neu in AEM ist der [Musterdetektor](/help/sites-deploying/pattern-detector.md), mit dem Sie bei der Planung des Upgrades die Komplexität der Aktualisierung ermitteln können. In 6.5 liegt der Fokus auf der [Abwärtskompatibilität](/help/sites-deploying/backward-compatibility.md) der Funktionen. Außerdem wurden Best Practices für [nachhaltige Upgrades](/help/sites-deploying/sustainable-upgrades.md) hinzugefügt.
+Neu in AEM ist der [Musterdetektor](/help/sites-deploying/pattern-detector.md), mit dem Sie bei der Planung des Upgrades die Komplexität der Aktualisierung bewerten können. In 6.5 liegt der Fokus auf der [Abwärtskompatibilität](/help/sites-deploying/backward-compatibility.md) der Funktionen. Außerdem wurden Best Practices für [nachhaltige Upgrades](/help/sites-deploying/sustainable-upgrades.md) hinzugefügt.
 
 Weitere Informationen zu den Änderungen der letzten AEM Versionen finden Sie in den vollständigen Versionshinweisen:
 
@@ -81,7 +81,7 @@ Die Aktualisierung von AEM ist ein mehrstufiger Prozess, der in manchen Fällen 
 
 Das folgende Diagramm zeigt den für das Upgrade empfohlenen Ablauf. Beachten Sie den Verweis auf die neuen Funktionen, die Adobe eingeführt hat. Das Upgrade sollte damit starten, dass mit dem Musterdetektor ein Bericht über vorhandene Muster erstellt wird (siehe [Bewertung der Komplexität des Upgrades mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md)), mit dessen Hilfe Sie entscheiden können, welchem Pfad Sie für die Kompatibilität mit AEM 6.4 folgen möchten.
 
-In 6.5 wurde viel Wert darauf gelegt, alle neuen Funktionen abwärtskompatibel zu halten. Wenn Sie jedoch noch Probleme mit der Abwärtskompatibilität bemerken, können Sie mit dem Kompatibilitätsmodus die Entwicklung vorübergehend zurückstellen, um Ihren benutzerdefinierten Code mit 6.5 kompatibel zu halten. Dieser Ansatz hilft Ihnen, Entwicklungsaufwand unmittelbar nach dem Upgrade zu vermeiden (weitere Informationen finden Sie unter [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
+In 6.5 haben wir einen starken Fokus darauf gelegt, alle neuen Funktionen abwärtskompatibel zu gestalten. In Fällen, in denen mit der Abwärtskompatibilität weiterhin Probleme auftreten, können Sie mit dem Kompatibilitätsmodus jedoch die Entwicklung aufschieben und so Ihren benutzerdefinierten Code vorübergehend mit 6.5 kompatibel halten. Mit diesem Ansatz vermeiden Sie sofort nach dem Upgrade Entwicklungsaufwand (siehe [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
 
 In Ihrem 6.5-Entwicklungszyklus helfen Ihnen abschließend die unter „Nachhaltige Upgrades“ eingeführten Funktionen (siehe [Nachhaltige Upgrades](/help/sites-deploying/sustainable-upgrades.md)), Best Practices einzuhalten, um zukünftige Upgrades sogar noch effizienter und nahtloser durchzuführen.
 

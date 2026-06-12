@@ -12,7 +12,7 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -23,15 +23,15 @@ ht-degree: 0%
 
 Alle AEM Communities-Komponenten und -Funktionen basieren auf dem [Social Component Framework (SCF)](/help/communities/scf.md) das die SocialResourceProvider-API aufruft, um auf alle benutzergenerierten Inhalte zuzugreifen.
 
-Bevor eine Community-Site erstellt wird, muss [Speicherressourcenanbieter (SRP)) &#x200B;](/help/communities/working-with-srp.md) werden, um eine Implementierung auszuwählen, die der zugrunde liegenden [Topologie) &#x200B;](/help/communities/topologies.md). Die SRP-Implementierungen basieren auf drei Speicheroptionen :
+Bevor eine Community-Site erstellt wird, muss [Speicherressourcenanbieter (SRP)) ](/help/communities/working-with-srp.md) werden, um eine Implementierung auszuwählen, die der zugrunde liegenden [Topologie) ](/help/communities/topologies.md). Die SRP-Implementierungen basieren auf drei Speicheroptionen :
 
-1. [ASRP](/help/communities/asrp.md) - Adobe-On-Demand-Speicher
+1. [ASRP](/help/communities/asrp.md) - Adobe On-Demand-Speicher
 1. [MSRP](/help/communities/msrp.md) - MongoDB
 1. [JSRP](/help/communities/jsrp.md) - JCR
 
 ## Über UGC-Speicher {#about-ugc-storage}
 
-Was Sie über die Speicherung von UGC wissen sollten, ist Folgendes: Wenn eine Site für die Verwendung von ASRP oder MSRP konfiguriert ist, wird der eigentliche UGC nicht im [Knotenspeicher](/help/sites-deploying/data-store-config.md) (JCR) von AEM gespeichert.
+Was Sie über das Speichern von benutzergenerierten Inhalten wissen müssen, ist Folgendes: Wenn eine Site für die Verwendung von ASRP oder MSRP konfiguriert ist, wird der eigentliche benutzergenerierte Inhalt nicht im [Knotenspeicher](/help/sites-deploying/data-store-config.md) (JCR) von AEM gespeichert.
 
 Es kann zwar Knoten im JCR geben, die den UGC zur Bereitstellung nützlicher Metadaten überschatten, diese Knoten sind jedoch nicht mit dem tatsächlichen UGC zu verwechseln.
 
