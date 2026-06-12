@@ -10,8 +10,8 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3371'
-ht-degree: 100%
+source-wordcount: '3263'
+ht-degree: 99%
 
 ---
 
@@ -119,9 +119,9 @@ Einige wichtige Punkte zu dieser Integration:
 * Wenn Assets aus Adobe Stock in [!DNL Experience Manager] gespeichert werden, werden sie zu regulären [!DNL Assets]. Die Binärdateien werden im [!DNL Experience Manager]-Repository gespeichert. Einige zu [!DNL Adobe Stock] gehörige Metadaten werden für das Asset in [!DNL Experience Manager] gespeichert. Ansonsten verläuft die Aufnahme wie bei jeder anderen Datei. Wenn beispielsweise Smart-Tags aktiv sind, werden die Tags beim Speichern diesen Assets hinzugefügt.
 * Das in [!DNL Experience Manager] gespeicherte Asset ist eine Kopie, kein Link zurück zu [!DNL Adobe Stock].
 
-**Arbeiten mit Assets, die aus [!DNL Adobe Stock] in [!DNL Experience Manager] in[!DNL Creative Cloud]** gespeichert wurden. Diese Integration ist unabhängig von [!DNL Adobe Asset Link], aber [!DNL Adobe Asset Link] erkennt diese Assets, die aus [!DNL Stock] gespeichert wurden, und zeigt zusätzliche Metadaten und ein [!DNL Adobe Stock]-Logo auf diesen Assets in der [!DNL Adobe Asset Link]-Erweiterungs-Benutzeroberfläche in [!DNL Photoshop], [!DNL Illustrator] oder [!DNL InDesign] an. Die Dateien sind zum Durchsuchen, Öffnen usw. verfügbar, da sie durch das Speichern in [!DNL Experience Manager] zu regulären Assets werden.
-Kreativprofis, die in [!DNL Creative Cloud]-Programmen mit vorhandener[!DNL Adobe Asset Link]-Erweiterung arbeiten, haben zusätzlich zum Zugriff auf bereits lizenzierte Assets aus [!DNL Adobe Stock] in [!DNL Experience Manager] auch Zugriff auf das [!DNL Creative Cloud]-Libraries-Bedienfeld, um [!DNL Adobe Stock]-Assets zu suchen, in einer Vorschau anzuzeigen und zu lizenzieren.
-[!DNL Assets] aus [!DNL Adobe Stock], die lizenziert und in [!DNL Experience Manager] gespeichert wurden, stehen umfangreicheren Teams zur Verfügung, die auf die [!DNL Experience Manager Assets]-Bereitstellung zugreifen. Kreativprofis hingegen, die Assets aus [!DNL Adobe Stock] über das [!DNL Creative Cloud]-Libraries-Bedienfeld lizenzieren, stehen die Assets standardmäßig lediglich in ihrem eigenen [!DNL Creative Cloud]-Konto zur Verfügung.
+**Arbeiten mit Assets, die aus [!DNL Adobe Stock] in [!DNL Experience Manager] in[!DNL Creative Cloud]** gespeichert wurden. Diese Integration ist unabhängig von [!DNL Adobe Asset Link], aber [!DNL Adobe Asset Link] erkennt diese Assets, die aus [!DNL Stock] gespeichert wurden, und zeigt zusätzliche Metadaten und ein [!DNL Adobe Stock]-Logo auf diesen Assets in [!DNL Adobe Asset Link] Erweiterungs-Benutzeroberfläche in [!DNL Photoshop], [!DNL Illustrator] oder [!DNL InDesign] an. Die Dateien sind zum Durchsuchen, Öffnen usw. verfügbar, da sie durch das Speichern in [!DNL Experience Manager] zu regulären Assets werden.
+Creative-Benutzende, die in [!DNL Creative Cloud]-Programmen mit [!DNL Adobe Asset Link] Erweiterung arbeiten, haben zusätzlich zum Zugriff auf bereits lizenzierte Assets aus [!DNL Adobe Stock] in [!DNL Experience Manager] auch Zugriff auf [!DNL Creative Cloud] Libraries-Bedienfeld, um [!DNL Adobe Stock] Assets zu suchen, in einer Vorschau anzuzeigen und zu lizenzieren.
+[!DNL Assets] aus [!DNL Adobe Stock], die lizenziert und in [!DNL Experience Manager] gespeichert wurden, stehen umfangreicheren Teams zur Verfügung, die auf [!DNL Experience Manager Assets] -Bereitstellung zugreifen. Kreativprofis hingegen, die Assets aus [!DNL Adobe Stock] über [!DNL Creative Cloud] -Libraries-Bedienfeld lizenzieren, stehen die Assets standardmäßig nur in ihrem [!DNL Creative Cloud]-Konto zur Verfügung.
 
 <!-- 
 TBD: A condensed version of the below content is better placed in the Adobe DAM introduction article.

@@ -11,8 +11,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 0%
+source-wordcount: '897'
+ht-degree: 1%
 
 ---
 
@@ -66,9 +66,9 @@ Ein Handle für den OSGi-Dienst wird durch Aufrufen von `com.adobe.cq.social.scf
 
 #### PostOperation-Klasse {#postoperation-class}
 
-Die Endpunkte der HTTP-API-POST sind PostOperation-Klassen, die durch die Implementierung der `SlingPostOperation`-Schnittstelle (Package `org.apache.sling.servlets.post`) definiert werden.
+Die POST-Endpunkte der HTTP-API sind PostOperation-Klassen, die durch die Implementierung der `SlingPostOperation`-Schnittstelle (Package `org.apache.sling.servlets.post`) definiert werden.
 
-Die `PostOperation`-Endpunktimplementierung setzt `sling.post.operation` auf einen Wert, auf den der Vorgang antwortet. Alle POST-Anforderungen, für die ein:operation-Parameter auf diesen Wert festgelegt ist, werden an diese Implementierungsklasse delegiert.
+Die `PostOperation`-Endpunktimplementierung setzt `sling.post.operation` auf einen Wert, auf den der Vorgang antwortet. Alle POST-Anfragen, bei denen :operation Parameter auf diesen Wert gesetzt ist, werden an diese Implementierungsklasse delegiert.
 
 Die `PostOperation` ruft die `SocialOperation` auf, die die für den Vorgang erforderlichen Aktionen ausführt.
 
@@ -115,7 +115,7 @@ Alle `OperationService` Klassen erweitern `AbstractOperationService` und ermögl
 
 Die `OperationExtension` Klassen sind benutzerdefinierte Code-Abschnitte, die in einen Vorgang eingefügt werden können, um die Anpassung von Vorgängen an Geschäftsanforderungen zu ermöglichen. Die Benutzer der Komponente können der Komponente dynamisch und inkrementell Funktionen hinzufügen. Das Erweiterungs-/Hook-Muster ermöglicht es Entwicklerinnen und Entwicklern, sich ausschließlich auf die Erweiterungen selbst zu konzentrieren, und macht das Kopieren und Überschreiben ganzer Vorgänge und Komponenten überflüssig.
 
-## Beispielcode {#sample-code}
+## Beispiel-Code {#sample-code}
 
 Beispielcode ist im Repository [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) verfügbar. Nach Projekten mit dem Präfix `aem-communities` oder `aem-scf` suchen.
 

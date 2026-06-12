@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2969'
-ht-degree: 100%
+source-wordcount: '2996'
+ht-degree: 97%
 
 ---
 
@@ -105,9 +105,9 @@ Durch die ClientContext-Komponente lädt die Seite die Client-Bibliotheken, die 
 * Das ClientContext-Framework, das Sitzungsspeicher und Ereignisverwaltung unterstützt.
 * Segmente, die definiert sind.
 * Die init.js-Skripte, die für jede Kontextspeicherkomponente generiert werden, die zu Client Context hinzugefügt wurde.
-* (Nur Authoring-Instanz) Die Client Context-Benutzeroberfläche.
+* (Nur Autoreninstanz) Die Client Context-Benutzeroberfläche.
 
-Die Client Context-Benutzeroberfläche ist nur in der Authoring-Instanz verfügbar.
+Die Client Context-Benutzeroberfläche ist nur in der Autoreninstanz verfügbar.
 
 ## Erweitern von Client Context {#extending-client-context}
 
@@ -220,13 +220,13 @@ Wenn Client Context initialisiert wird, werden diese Knoten verarbeitet.
 
 Fügen Sie Ihrer Komponente eine init.js.jsp-Datei hinzu, um JavaScript-Code zu generieren, der den Sitzungsspeicher für Ihre Kontextspeicherkomponente initialisiert. Verwenden Sie beispielsweise das Initialisierungsskript, um die Konfigurationseigenschaften der Komponente abzurufen und in den Sitzungsspeicher einzuspeisen.
 
-Der generierte JavaScript-Code wird der Seite hinzugefügt, wenn Client Context beim Laden der Seite sowohl auf der Authoring- als auch auf der Publishing-Instanz initialisiert wird. Diese JSP wird ausgeführt, bevor die Instanz der Kontextspeicherkomponente geladen und gerendert wird.
+Der generierte JavaScript-Code wird der Seite hinzugefügt, wenn Client Context beim Laden der Seite sowohl auf der Authoring- als auch auf der Veröffentlichungsinstanz initialisiert wird. Diese JSP wird ausgeführt, bevor die Instanz der Kontextspeicherkomponente geladen und gerendert wird.
 
 Im Code muss der MIME-Typ der Datei auf `text/javascript` festgelegt sein, andernfalls wird er nicht ausgeführt.
 
 >[!CAUTION]
 >
->Das Skript „init.js.jsp“ wird auf der Authoring- und Publishing-Instanz ausgeführt, jedoch nur, wenn die Kontextspeicherkomponente zu Client Context hinzugefügt wird.
+>Das Skript „init.js.jsp“ wird auf der Authoring- und Veröffentlichungsinstanz ausgeführt, jedoch nur, wenn die Kontextspeicherkomponente zu Client Context hinzugefügt wird.
 
 Im folgenden Verfahren wird die Skriptdatei „init.js.jsp“ erstellt und der Code hinzugefügt, der den richtigen MIME-Typ festlegt. Der Code für die Speicherinitialisierung würde danach folgen.
 
@@ -302,7 +302,7 @@ Die Kontextspeicherkomponente `/libs/cq/personalization/components/contextstores
 
 Um Speicherdaten mithilfe einer genericstore-Komponente zu rendern, müssen Sie Folgendes tun:
 
-* der JSP-Skriptkomponete das Tag personalization:storeRendererTag hinzufügen, um den Namen des Sitzungsspeichers zu identifizieren.
+* Fügen Sie das Personalisierungs:storeRendererTag-Tag zum Komponenten-JSP-Skript hinzu, um den Namen des Sitzungsspeichers zu identifizieren.
 * eine Rendering-Methode für die Sitzungsspeicherklasse implementieren.
 
 #### Ermitteln des genericstore-Sitzungsspeichers {#identifying-the-genericstore-session-store}
@@ -323,10 +323,10 @@ Das Tag weist folgendes Format auf:
 
 Für Ihren Sitzungsspeicher ist eine „Rendering“-Methode erforderlich, die immer dann abgerufen wird, wenn die Komponente gerendert werden muss. Die Rendering-Funktion wird mit zwei Parametern aufgerufen:
 
-* @param {String} store
+* {String} @param
 Der zu rendernde Speicher
 * @param {String} divId
-Die ID des div-Elements, in das der Speicher gerendert werden muss.
+ID des div-Elements, in das der Speicher gerendert werden muss.
 
 ## Interagieren mit Sitzungsspeichern {#interacting-with-session-stores}
 
@@ -490,9 +490,9 @@ In diesem Beispiel erstellen Sie eine Kontextspeicherkomponente, die Daten von e
 
 Erstellen Sie eine CQ-Anwendung und fügen Sie die Geoloc-Komponente hinzu.
 
-1. Öffnen Sie CRXDE Lite in Ihrem Webbrowser ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. https://localhost Öffnen Sie CRXDE Lite in Ihrem Webbrowser ([:4502/crx/de](https://localhost:4502/crx/de)).
 1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps` und klicken Sie auf „Erstellen“ > „Ordner erstellen“. Geben Sie für `myapp` einen Namen ein und klicken Sie auf „OK“.
-1. Erstellen Sie auch unter `myapp` einen Ordner mit dem Namen `contextstores`. ``
+1. Erstellen Sie auch unter `myapp` einen Ordner mit dem Namen `contextstores`. &grave;&grave;
 1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps/myapp/contextstores` und klicken Sie auf „Erstellen“ > „Komponente erstellen“. Geben Sie folgende Eigenschaftswerte an und klicken Sie auf „Weiter“:
 
    * Titel: Geoloc
@@ -595,7 +595,7 @@ Fügen Sie der JSP-Datei der Geoloc-Komponente den Code hinzu, um die Speicherda
 
 Fügen Sie die Standortspeicher-Komponente zu Client Context hinzu, damit sie beim Laden der Seite initialisiert wird.
 
-1. Öffnen Sie die Geometrixx Outdoors-Homepage auf der Autoreninstanz ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Öffnen Sie die Geometrixx Outdoors-Startseite auf der Autoreninstanz ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Betätigen Sie Tastenkombination Strg+Alt+C (Windows) oder Ctrl+Wahl+C (Mac), um ClientContext zu öffnen.
 1. Klicken Sie auf das Bearbeitungssymbol oben in Client Context, um Client Context-Designer zu öffnen.
 
@@ -624,7 +624,7 @@ enthält den Inhalt des benutzerdefinierten ClientContext.
   `/contextstores`
 ermöglicht es Ihnen, verschiedene Konfigurationen für die Kontextspeicher festzulegen.
 
-Um Ihren benutzerdefinierten ClientContext zu verwenden, bearbeiten Sie die Eigenschaft
+Um Ihren benutzerdefinierten ClientContext zu verwenden, bearbeiten Sie die Eigenschaft .
 `path`
 im Designstil der ClientContext-Komponente, wie in der Seitenvorlage enthalten. Beispielsweise als Standardspeicherort von:
 `/libs/cq/personalization/components/clientcontext/design_dialog/items/path`

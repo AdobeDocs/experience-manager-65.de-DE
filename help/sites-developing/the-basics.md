@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3251'
-ht-degree: 100%
+source-wordcount: '3364'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ Der Java™ Content-Repository-Standard (JCR) [JSR 283](https://developer.adobe.
 
 Die Leitung der Spezifikation liegt bei Adobe Research (Schweiz) AG.
 
-Das [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)-Paket, javax.jcr.&amp;ast; wird für den direkten Zugriff und die Bearbeitung von Repository-Inhalten verwendet.
+Das [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)-Paket javax.jcr.&ast; wird für den direkten Zugriff auf und die Bearbeitung von Repository-Inhalten verwendet.
 
 ## Experience Server (CRX) und Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -60,7 +60,7 @@ AEM ist auf [Sling](https://sling.apache.org/index.html) aufgebaut, einem auf RE
 
 Bei Verwendung von Sling ist der Typ des zu rendernden Inhalts nicht die erste Verarbeitungsüberlegung. Stattdessen ist die Hauptüberlegung, ob die URL zu einem Inhaltsobjekt aufgelöst wird, für das dann ein Skript gefunden werden kann, um das Rendering durchzuführen. Dies bietet Autorinnen und Autoren von Web-Inhalten eine hervorragende Unterstützung beim Erstellen von Seiten, die einfach an ihre Anforderungen angepasst werden können.
 
-Die Vorteile dieser Flexibilität zeigen sich in Programmen mit einer großen Auswahl verschiedener Inhaltselemente oder wenn Sie Seiten benötigen, die einfach angepasst werden können. Insbesondere bei der Implementierung eines Web Content Management-Systems wie WCM in der AEM-Lösung.
+Die Vorteile dieser Flexibilität zeigen sich in Programmen mit einer großen Auswahl verschiedener Inhaltselemente oder wenn Sie Seiten benötigen, die einfach angepasst werden können. Insbesondere bei der Implementierung eines Web-Content-Management-Systems wie WCM in der AEM-Lösung.
 
 Siehe [Entdecken Sie Sling in 15 Minuten](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) für die ersten Schritte zur Entwicklung mit Sling.
 
@@ -103,7 +103,7 @@ Sie lässt sich in ihre Bestandteile zerlegen:
 
 | protocol | host | content path | selectors | Erweiterung |  | Suffix |  | params |
 |---|---|---|---|---|---|---|---|---|
-| https:// | Myhost  | tools/spy | .printable.a4. | html | / | a/b | ? | x=12 |
+| https:// | Myhost | tools/spy | .printable.a4. | html | / | a/b | ? | x=12 |
 
 **protocol** – HTTP
 
@@ -174,9 +174,9 @@ Unter Verwendung des obigen Beispiels, wenn der `sling:resourceType` `hr/jobs` l
 
 * GET/HEAD-Anfragen und URLs, die auf .HTML enden (Standardanfragetypen, Standardformat)
 
-  Das Skript lautet „/apps/hr/jobs/jobs.esp“. Der letzte Abschnitt von „sling:resourceType“ bildet den Dateinamen.
+  Das Skript lautet /apps/hr/jobs/jobs.esp. Der letzte Abschnitt des Sling:resourceType bildet den Dateinamen.
 
-* POST-Anfragen (alle Anfragetypen außer GET/HEAD, der Methodenname muss in Großbuchstaben angegeben werden)
+* POST-Anfragen (alle Anforderungstypen außer GET/HEAD, der Methodenname muss in Großbuchstaben angegeben werden)
 
   POST wird im Skriptnamen verwendet.
 
@@ -196,7 +196,7 @@ Unter Verwendung des obigen Beispiels, wenn der `sling:resourceType` `hr/jobs` l
 
   Das Skript ist `/apps/hr/jobs/jobs.print.esp`. Der Selektor wird zum Skriptnamen hinzugefügt.
 
-* Wenn kein „sling:resourceType“ definiert wurde, gilt Folgendes:
+* Wenn kein :resourceType definiert ist, gilt Folgendes:
 
    * Der Inhaltspfad wird für die Suche nach einem geeigneten Skript verwendet (wenn der pfadbasierte „ResourceTypeProvider“ aktiv ist).
 
@@ -279,21 +279,21 @@ Wenn Sie die Repräsentation (das Skript) direkt aufrufen, blenden Sie die Resso
 * automatische Handhabung von HTTP-Methoden außer GET, einschließlich:
 
    * POST, PUT, DELETE, die mit einer Sling-Standardimplementierung behandelt werden
-   * Das `POST.jsp`-Skript in Ihrem sling:resourceType-Speicherort
+   * Das `POST.jsp`-Skript in Ihrem Sling:resourceType-Speicherort
 
 * Ihre Code-Architektur ist nicht mehr so sauber oder so klar strukturiert, wie sie es sein sollte. Dies ist besonders wichtig für die Entwicklung in großem Maßstab.
 
 ### Sling-API {#sling-api}
 
-Hierbei wird das Sling-API-Paket „org.apache.sling“ verwendet.&amp;ast; und -Tag-Bibliotheken.
+Hierbei werden das Sling-API-Paket „org.apache.sling.last;“ und Tag-Bibliotheken verwendet.
 
-### Referenzieren von vorhandenen Elementen mithilfe von sling:include {#referencing-existing-elements-using-sling-include}
+### Referenzieren vorhandener Elemente mithilfe von Sling:include {#referencing-existing-elements-using-sling-include}
 
 Eine letzte Überlegung ist die Notwendigkeit, auf vorhandene Elemente innerhalb der Skripte zu verweisen.
 
 Komplexere Skripte (aggregierende Skripte) müssen auf mehrere Ressourcen zugreifen (z. B. Navigation, Seitenleiste, Fußzeile, Elemente einer Liste) und tun dies durch Einbeziehen der *Ressource*.
 
-Verwenden Sie hierzu den Befehl „sling:include(&quot;/&lt;path>/&lt;resource>&quot;)“. Dieser umfasst effektiv die Definition der referenzierten Ressource, wie in der folgenden Anweisung, die auf eine vorhandene Definition für das Rendern von Bildern verweist:
+Verwenden Sie dazu den Befehl sling:include(“/&lt;path>/&lt;resource>„). Dieser umfasst effektiv die Definition der referenzierten Ressource, wie in der folgenden Anweisung, die auf eine vorhandene Definition für das Rendern von Bildern verweist:
 
 ```xml
 %><sling:include resourceType="geometrixx/components/image/img"/><%
@@ -342,7 +342,7 @@ Weitere Informationen zum Bearbeiten von Elementobjekten finden Sie in den [Java
 
 Knoten definieren die Inhaltsstruktur, und ihre Eigenschaften speichern den tatsächlichen Inhalt und die Metadaten.
 
-Inhaltsknoten steuern das Rendering. Sling ruft den Inhaltsknoten von der eingehenden Anfrage ab. Die Eigenschaft „sling:resourceType“ dieses Knotens verweist auf die zu verwendende Sling-Rendering-Komponente.
+Inhaltsknoten steuern das Rendering. Sling ruft den Inhaltsknoten von der eingehenden Anfrage ab. Die Eigenschaft „sling:resourceType dieses Knotens verweist auf die zu verwendende Sling-Rendering-Komponente.
 
 Ein Knoten, bei dem es sich um einen JCR-Namen handelt, wird in der Sling-Umgebung auch als Ressource bezeichnet.
 
@@ -385,7 +385,7 @@ Sie definiert die Seitenkomponente, die zum Rendern der Seite verwendet wird, un
 
 **Seite** Eine Seite ist eine „Instanz“ einer Vorlage.
 
-Eine Seite hat einen Hierarchieknoten vom Typ cq:Page und einen Inhaltsknoten vom Typ cq:PageContent. Die Eigenschaft „sling:resourceType“ des Inhaltsknotens verweist auf die Seitenkomponente, die zum Rendern der Seite verwendet wird.
+Eine Seite hat einen Hierarchieknoten vom Typ CQ:Page und einen Inhaltsknoten vom Typ CQ:PageContent. Die Eigenschaft „sling:resourceType des Inhaltsknotens verweist auf die Seitenkomponente, die zum Rendern der Seite verwendet wird.
 
 Um beispielsweise den Namen der aktuellen Seite abzurufen, können Sie in Ihrem Skript den folgenden Code verwenden:
 
@@ -417,7 +417,7 @@ Die folgende Liste gibt einen Überblick über die Struktur, die Sie im Reposito
 
 * `/apps`
 
-   Anwendungsbezogen; enthält für Ihre Website spezifische Komponentendefinitionen. Die von Ihnen entwickelten Komponenten können auf den Standardkomponenten basieren, die unter `/libs/foundation/components` verfügbar sind.
+  Anwendungsbezogen; enthält für Ihre Website spezifische Komponentendefinitionen. Die von Ihnen entwickelten Komponenten können auf den Standardkomponenten basieren, die unter `/libs/foundation/components` verfügbar sind.
 
 * `/content`
 
@@ -431,7 +431,7 @@ Die folgende Liste gibt einen Überblick über die Struktur, die Sie im Reposito
 
 * `/libs`
 
-   Bibliotheken und Definitionen, die zum Kern von AEM gehören. Die Unterordner in `/libs` repräsentieren die vorkonfigurierten AEM-Funktionen wie Suche oder Replikation. Inhalte in `/libs` sollten nicht geändert werden, da dies die Funktionsweise von AEM beeinflusst. Spezielle Funktionen für Ihre Website sollten unter `/apps` entwickelt werden (siehe [Anpassen von Komponenten und anderen Elementen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+  Bibliotheken und Definitionen, die zum Kern von AEM gehören. Die Unterordner in `/libs` repräsentieren die vorkonfigurierten AEM-Funktionen wie Suche oder Replikation. Inhalte in `/libs` sollten nicht geändert werden, da dies die Funktionsweise von AEM beeinflusst. Spezielle Funktionen für Ihre Website sollten unter `/apps` entwickelt werden (siehe [Anpassen von Komponenten und anderen Elementen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
@@ -439,7 +439,7 @@ Die folgende Liste gibt einen Überblick über die Struktur, die Sie im Reposito
 
 * `/var`
 
-   Dateien, die sich ändern und vom System aktualisiert werden; wie Audit-Logs, Statistiken, Event-Handling.
+  Dateien, die sich ändern und vom System aktualisiert werden; wie Auditprotokolle, Statistiken, Event-Handling.
 
 ## Umgebungen {#environments}
 

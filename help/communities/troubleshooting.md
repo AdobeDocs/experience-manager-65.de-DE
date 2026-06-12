@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Daher muss sich jeder Code, der die RelativeTimeFormat()-API verwendet, ändern:
 * Von: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * An: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-Der Fehler ist bei Author und Publish anders. Auf der Autoreninstanz schlägt es still fehl und zeigt einfach nicht die Forumsthemen an. In Publish wird der Fehler auf der Seite angezeigt.
+Der Fehler ist bei der Autoren- und der Veröffentlichungsinstanz unterschiedlich. Auf der Autoreninstanz schlägt es still fehl und zeigt einfach nicht die Forumsthemen an. Bei der Veröffentlichung wird der Fehler auf der Seite angezeigt.
 
 Weitere Informationen finden Sie in der [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html)-API.
 

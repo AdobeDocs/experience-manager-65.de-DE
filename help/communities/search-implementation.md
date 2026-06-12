@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1207'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 ## Überblick {#overview}
 
-Die Suchfunktion ist eine wichtige Funktion von Adobe Experience Manager (AEM) Communities. Zusätzlich zu den Funktionen der [AEM](../../help/sites-deploying/queries-and-indexing.md)Plattformsuche stellt AEM Communities die [UGC-Such-API](#ugc-search-api) für die Suche nach benutzergenerierten Inhalten (UGC) bereit. UGC verfügt über eindeutige Eigenschaften, da sie getrennt von anderen AEM-Inhalten und Benutzerdaten eingegeben und gespeichert werden.
+Die Suchfunktion ist eine wichtige Funktion von Adobe Experience Manager (AEM) Communities. Zusätzlich zu den Funktionen der [AEM](../../help/sites-deploying/queries-and-indexing.md)Plattformsuche stellt AEM Communities die [UGC-Such-API](#ugc-search-api) für die Suche nach benutzergenerierten Inhalten (User-Generated Content, UGC) bereit. UGC verfügt über eindeutige Eigenschaften, da sie getrennt von anderen AEM-Inhalten und Benutzerdaten eingegeben und gespeichert werden.
 
 Für Communities werden im Allgemeinen die beiden folgenden Elemente durchsucht:
 
@@ -48,7 +48,7 @@ Der [UGC Common Store](working-with-srp.md) wird von einem von verschiedenen Spe
 
 ### ASRP-Suchen {#asrp-searches}
 
-Bei [ASRP](asrp.md) wird UGC in der Adobe-Cloud gespeichert. Während benutzergenerierter Inhalt in CRX nicht sichtbar ist[&#x200B; ist &#x200B;](moderate-ugc.md)Moderation“ sowohl in der Authoring- als auch in der Publish-Umgebung verfügbar. Die Verwendung der [UGC Search API](#ugc-search-api) funktioniert für ASRP genauso wie für andere SRPs.
+Bei [ASRP](asrp.md) wird der benutzergenerierte Inhalt (UGC) in der Adobe Cloud gespeichert. Während der benutzergenerierte Inhalt in CRX nicht sichtbar ist[&#x200B; ist &#x200B;](moderate-ugc.md)Moderation“ sowohl in der Autoren- als auch in der Veröffentlichungsumgebung verfügbar. Die Verwendung der [UGC Search API](#ugc-search-api) funktioniert für ASRP genauso wie für andere SRPs.
 
 Für die Verwaltung von ASRP-Suchen gibt es derzeit keine Tools.
 
@@ -56,7 +56,7 @@ Beim Erstellen benutzerdefinierter Eigenschaften, die durchsuchbar sind, müssen
 
 ### MSRP-Suchen {#msrp-searches}
 
-Bei [MSRP](msrp.md) wird der UGC in MongoDB gespeichert, das für die Verwendung von Solr für die Suche konfiguriert ist. UGC ist in CRX nicht sichtbar, aber [Moderation](moderate-ugc.md) ist sowohl in der Authoring- als auch in der Publish-Umgebung verfügbar.
+Bei [MSRP](msrp.md) wird der UGC in MongoDB gespeichert, das für die Verwendung von Solr für die Suche konfiguriert ist. UGC ist in CRX nicht sichtbar, aber [Moderation](moderate-ugc.md) ist sowohl in der Authoring- als auch in der Publishing-Umgebung verfügbar.
 
 Zu MSRP und Solr:
 
@@ -71,23 +71,23 @@ Beim Erstellen benutzerdefinierter Eigenschaften, die durchsuchbar sind, müssen
 
 ### JSRP-Suchen {#jsrp-searches}
 
-Bei [JSRP](jsrp.md) wird der benutzergenerierte Inhalt (UGC) in [Oak](../../help/sites-deploying/platform.md) gespeichert und ist nur im Repository der AEM-Autoren- oder Publish-Instanz sichtbar, in der er eingegeben wurde.
+Bei [JSRP](jsrp.md) wird der benutzergenerierte Inhalt (UGC) in [Oak](../../help/sites-deploying/platform.md) gespeichert und ist nur im Repository der AEM-Autoren- oder Veröffentlichungsinstanz sichtbar, in der er eingegeben wurde.
 
-Da benutzergenerierter Inhalt normalerweise in der Publish-Umgebung eingegeben wird, ist es bei Produktionssystemen mit mehreren Herausgebern erforderlich, einen [Veröffentlichungs-Cluster](topologies.md) und keine Veröffentlichungsfarm zu konfigurieren, damit der eingegebene Inhalt von allen Herausgebern sichtbar ist.
+Da benutzergenerierter Inhalt normalerweise in der Veröffentlichungsumgebung eingegeben wird, ist es bei Produktionssystemen mit mehreren Herausgebern erforderlich, einen [Veröffentlichungs-Cluster](topologies.md) und keine Veröffentlichungsfarm zu konfigurieren, damit der eingegebene Inhalt von allen Herausgebern sichtbar ist.
 
-Bei JSRP ist der in der Publish-Umgebung eingegebene benutzergenerierte Inhalt nie in der Autorenumgebung sichtbar. Daher finden alle [Moderationsaufgaben](moderate-ugc.md) in der Publish-Umgebung statt.
+Bei JSRP ist der in der Veröffentlichungsumgebung eingegebene benutzergenerierte Inhalt nie in der Autorenumgebung sichtbar. Daher finden alle [Moderations](moderate-ugc.md)-Aufgaben in der Veröffentlichungsumgebung statt.
 
 Benutzerdefinierte Suchfunktionen sollten die [UGC-Such-API](#ugc-search-api) verwenden.
 
 #### Oak-Indizierung {#oak-indexing}
 
-Oak-Indizes werden zwar seit AEM 6.2 nicht automatisch für die AEM-Plattformsuche erstellt, aber sie wurden für AEM Communities hinzugefügt, um die Leistung zu verbessern und die Paginierung bei der Darstellung von UGC-Suchergebnissen zu unterstützen.
+Oak-Indizes werden zwar seit AEM 6.2 nicht mehr automatisch für die AEM-Plattformsuche erstellt, aber sie wurden für AEM Communities hinzugefügt, um die Leistung zu verbessern und die Paginierung bei der Darstellung von UGC-Suchergebnissen zu unterstützen.
 
 Wenn benutzerdefinierte Eigenschaften verwendet werden und Suchvorgänge langsam sind, müssen zusätzliche Indizes für die benutzerdefinierten Eigenschaften erstellt werden, um sie leistungsfähiger zu machen. Um die Portabilität zu gewährleisten, müssen Sie die [Benennungsanforderungen](#naming-of-custom-properties) beim Erstellen von benutzerdefinierten Eigenschaften beachten, die durchsuchbar sind.
 
 Informationen zum Ändern vorhandener Indizes oder Erstellen benutzerdefinierter Indizes finden Sie unter [Oak-Abfragen und -Indizierung](../../help/sites-deploying/queries-and-indexing.md).
 
-Der [Oak Index Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) ist über ACS AEM Commons verfügbar. Es bietet:
+Der [Oak Index Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) ist bei ACS AEM Commons verfügbar. Es bietet:
 
 * Eine Ansicht der vorhandenen Indizes.
 * Die Möglichkeit, eine Neuindizierung zu starten.
@@ -111,7 +111,7 @@ Im Folgenden finden Sie einige durchsuchbare Eigenschaften, die für verschieden
 | lesen | *Boolesch* |
 | beeinflussen | *Boolesch* |
 | Anhänge | *Boolesch* |
-| Überzeugung | *Lang* |
+| Sentiment | *Lang* |
 | markiert | *Boolesch* |
 | hinzugefügt | *Datum* |
 | modifiedDate | *Datum* |
@@ -136,7 +136,7 @@ Im Folgenden finden Sie einige durchsuchbare Eigenschaften, die für verschieden
 
 ### Benennung benutzerdefinierter Eigenschaften {#naming-of-custom-properties}
 
-Wenn Sie benutzerdefinierte Eigenschaften hinzufügen, müssen diese Eigenschaften dem Eigenschaftsnamen ein Suffix hinzufügen, damit sie für Sortierungen und Suchen sichtbar sind[&#128279;](#ugc-search-api) die mit der UGC *Such* API erstellt wurden.
+Wenn Sie benutzerdefinierte Eigenschaften hinzufügen, müssen diese Eigenschaften dem Eigenschaftsnamen ein Suffix hinzufügen, damit sie für Sortierungen und Suchen sichtbar sind[&#x200B; &#x200B;](#ugc-search-api) die mit der UGC *Such* API erstellt wurden.
 
 Das Suffix bezieht sich auf Abfragesprachen, die ein Schema verwenden:
 
@@ -227,7 +227,7 @@ Abfrage an Solr lautet: `sort=timestamp+desc&bl=en&pl=en&start=0&rows=10 &q=%2Bt
 
 Der Wert des `q` ist die Abfrage. Sobald die URL-Codierung decodiert ist, kann die Abfrage zur weiteren Fehlerbehebung an das Solr Admin Query Tool übergeben werden.
 
-## Verwandte Ressourcen {#related-resources}
+## Zugehörige Ressourcen {#related-resources}
 
 * [Community-Inhaltsspeicher](working-with-srp.md) - Erläutert die verfügbaren SRP-Optionen für einen gemeinsamen Speicher für benutzergenerierten Inhalt.
 * [Speicherressourcenanbieter - Übersicht](srp.md) - Einführung und Repository-Nutzung - Übersicht.

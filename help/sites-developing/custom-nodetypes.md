@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1848'
-ht-degree: 100%
+source-wordcount: '1799'
+ht-degree: 96%
 
 ---
 
@@ -317,7 +317,7 @@ Definiert die Konfiguration für „EditBar“.
 
 **Beschreibung**
 
-Konfiguriert ein Ablageziel einer Komponente.  Der Name dieses Knotens wird als ID für per Drag-and-Drop zu verschiebende Komponenten verwendet.
+Konfiguriert ein Ablageziel einer Komponente. Der Name dieses Knotens wird als ID für per Drag-and-Drop zu verschiebende Komponenten verwendet.
 
 * `@prop accept` – Liste der MIME-Typen, die von diesem Ablageziel akzeptiert werden, beispielsweise `["image/*"]`
 * `@prop groups` - Liste der Drag-and-Drop-Gruppen, die eine Quelle akzeptieren.
@@ -335,7 +335,7 @@ Konfiguriert ein Ablageziel einer Komponente.  Der Name dieses Knotens wird als
 
 **Beschreibung**
 
-Definiert eine virtuelle CQ-Komponente.  Wird derzeit nur für den neuen Assistenten zum Verschieben von Komponenten per Drag-and-Drop verwendet.
+Definiert eine virtuelle CQ-Komponente. Wird derzeit nur für den neuen Assistenten zum Verschieben von Komponenten per Drag-and-Drop verwendet.
 
 * `@prop jcr:title` - Titel dieser Komponente.
 * `@prop jcr:description` - Beschreibung dieser Komponente.
@@ -450,7 +450,7 @@ Container-Liste
 Der Knotentyp `cq:attributes` ist für die ContentBus-Version-Tags. Dieser Knoten weist nur eine Reihe von Eigenschaften auf, von denen drei vordefiniert sind: „created“, „csd“ und „timestamp“.
 
 * `@prop created (long) mandatory copy` - Zeitstempel der Erstellung der Versionsinformationen, in der Regel der Zeitpunkt des Eincheckens der Vorgängerversion oder der Seitenerstellung.
-* `@prop csd (string) mandatory copy` - csd-Standardattribut, Kopie der Eigenschaft „cq:csd“ des Seitenknotens
+* `@prop csd (string) mandatory copy` - csd-Standardattribut, Kopie der :csd cq: des Seitenknotens
 * `@prop timestamp (long) mandatory copy` - Zeitstempel der letzten Versionsänderung, in der Regel die Eincheckzeit.
 * `@prop * (string) copy` - Zusätzliche Attribute, die mit derselben Versionsangabe wie der übergeordnete Knoten versehen sind.
 
@@ -472,7 +472,7 @@ Die Elemente in einer `cq:Cq4ContentPage` sind:
 
 * `@prop cq:csd` - Die ContentBus-CSD der Seite.
 * `@node cq:content` - Der Inhalt der Seite. Dieser untergeordnete Knoten ist nicht vorhanden, wenn der Seitenknoten keinen Inhalt aufweist oder gelöscht wurde.
-* `@node cq:attributes` - Die Liste der Seitenattribute, die zuvor als Versionstags bezeichnet wurden. Dieser Knoten ist für den Typ „cq:contentPage“ obligatorisch. Der Knoten „attributes“ wird mit Versionsangaben versehen, wenn der Seitenknoten Versionsangaben aufweist.
+* `@node cq:attributes` - Die Liste der Seitenattribute, die zuvor als Versionstags bezeichnet wurden. Dieser Knoten ist für den cq:contentPage-Typ obligatorisch. Der Knoten „attributes“ wird mit Versionsangaben versehen, wenn der Seitenknoten Versionsangaben aufweist.
 
 **Definition**
 
@@ -489,7 +489,7 @@ Die Elemente in einer `cq:Cq4ContentPage` sind:
 Abrufkonfiguration
 
 * `@prop source (String) mandatory` – Datenquellen-URI. Dieser ist erforderlich und darf nicht leer sein.
-* `@prop target (String)` – Der Zielspeicherort, an dem die aus der Datenquelle abgerufenen Daten gespeichert werden. Dieser ist optional und standardmäßig auf den Knoten „cq:PollConfig“ festgelegt.
+* `@prop target (String)` – Der Zielspeicherort, an dem die aus der Datenquelle abgerufenen Daten gespeichert werden. Optional und standardmäßig auf den Knoten cq:PollConfig festgelegt.
 * `@prop interval (Long)` – Das Intervall in Sekunden, in dem neue oder aktualisierte Daten aus der Datenquelle abgerufen werden. Dies ist optional und standardmäßig auf 30 Minuten (1800 Sekunden) festgelegt.
 * [Erstellen benutzerdefinierter Datenimportdienste für Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
@@ -806,7 +806,7 @@ Nur Autoren/Eigentümer dürfen den Inhalt mit Tags versehen (moderiertes/verwal
 
 **Beschreibung**
 
-Jeder Benutzer/jede öffentliche Website kann den Inhalt (im Web 2.0-Stil) mit Tags versehen, der innerhalb cq:userContent verwendet wird.
+Jeder Benutzer/jede öffentliche Website kann den Inhalt (im Web2.0-Stil) mit Tags versehen, der in cq:userContent verwendet wird.
 
 **Definition**
 
@@ -941,7 +941,7 @@ Feld
 
 ## Wiki {#wiki}
 
-### wiki:Topic {#wiki-topic}
+### Wiki:Topic {#wiki-topic}
 
 **Beschreibung**
 
@@ -962,7 +962,7 @@ Wiki-Thema
    * `- wiki:logMessage (string)`
    * `- wiki:quietSave (boolean)`
 
-### wiki:User {#wiki-user}
+### Wiki:User {#wiki-user}
 
 **Beschreibung**
 
@@ -973,7 +973,7 @@ Wiki-Benutzer
 * `[wiki:User] mixin`
    * `- wiki:subscriptions (string) multiple`
 
-### wiki:Properties {#wiki-properties}
+### Wiki:Properties {#wiki-properties}
 
 **Beschreibung**
 
