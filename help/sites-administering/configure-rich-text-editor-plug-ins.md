@@ -8,8 +8,8 @@ feature: Configuring
 role: Admin
 source-git-commit: f64a1014dfd1155bcf815e75a27102244ef6c6de
 workflow-type: tm+mt
-source-wordcount: '4391'
-ht-degree: 100%
+source-wordcount: '4473'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ Standardmäßig sind die Plug-ins `format`, `link`, `list`, `justify` und `contr
       * ein alternativer Konfigurationsknoten: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
 
-   * Sie weisen den folgenden Typ auf: **jcr:primaryType** `cq:Widget`
+   * sind vom Typ: **jcr:primaryType** `cq:Widget`
    * Beide verfügen über die folgenden Eigenschaften:
 
       * **Name** `name`
@@ -86,7 +86,7 @@ Bei Verwendung von RTE können Autorinnen und Autoren Inhalte in einem der folge
 
 * **MS® Word-Modus**: Fügen Sie den Text, einschließlich Tabellen, beim Kopieren aus MS® Word mit Formatierung ein. Das Kopieren und Einfügen von Text aus einer anderen Quelle wie einer Web-Seite oder MS® Excel wird nicht unterstützt und dabei wird nur ein Teil der Formatierung beibehalten.
 
-### Konfigurieren der in der RTE-Symbolleiste verfügbaren Einfüge-Optionen   {#configure-paste-options-available-on-the-rte-toolbar}
+### Konfigurieren der in der RTE-Symbolleiste verfügbaren Einfüge-Optionen  {#configure-paste-options-available-on-the-rte-toolbar}
 
 Sie können Ihren Autoren in der RTE-Symbolleiste nur einige, alle oder keine dieser drei Symbole zur Verfügung stellen:
 
@@ -123,7 +123,7 @@ Die Konfiguration ermöglicht die folgenden drei Arten von Anwendungsfällen:
 
 ### Konfigurieren der beim Einfügen von Inhalten zulässigen Formate {#pasteformats}
 
-Der Modus „paste-as-Microsoft-Word“ (`paste-wordhtml`) kann weiter konfiguriert werden. So können Sie explizit festlegen, welche Stile beim Einfügen von Inhalten in AEM von einem anderen Programm wie beispielsweise Microsoft® Word aus zulässig sind. 
+Der Modus „paste-as-Microsoft-Word“ (`paste-wordhtml`) kann weiter konfiguriert werden. So können Sie explizit festlegen, welche Stile beim Einfügen von Inhalten in AEM von einem anderen Programm wie beispielsweise Microsoft® Word aus zulässig sind.
 
 Sollen beim Einfügen von Inhalten in AEM zum Beispiel nur fett gedruckte Formate und Listen zulässig sein, können Sie die anderen Formate herausfiltern. Dieser Vorgang wird als konfigurierbare Filterung beim Einfügen bezeichnet, die für Folgendes verwendet werden kann:
 
@@ -271,7 +271,7 @@ Geben Sie dann die Speicherorte für die Stylesheets an, auf die Sie verweisen m
 
    * **Name** `cssName`
    * **Typ** `String`
-   * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
+   * **Wert** Der Name der CSS-Klasse (ohne vorangestelltes &quot;.“; z. B. `cssClass` anstelle von `.cssClass`)
 
 1. Fügen Sie demselben Knoten die Eigenschaft `text` hinzu. Dadurch wird der im Auswahlfeld angezeigte Text definiert:
 
@@ -460,12 +460,10 @@ Sobald die Eigenschaft gespeichert wurde, wird das entsprechende Zeichen in CRXD
 1. Fügen Sie unter diesem Knoten (der entsprechend dem Sonderzeichenbereich benannt wurde) die folgenden beiden Eigenschaften hinzu:
 
    * **Name** `rangeStart`
-
      **Typ** `Long`
      **Wert:** Die [Unicode](https://unicode.org/)-Darstellung (Dezimalzahl) der ersten Zeichen des Bereichs
 
    * **Name** `rangeEnd`
-
      **Typ** `Long`
      **Wert:** Die [Unicode](https://unicode.org/)-Darstellung (Dezimalzahl) des letzten Zeichens des Bereichs
 
@@ -505,8 +503,8 @@ Stile werden in der Regel auf Text angewendet, es kann jedoch auch ein separater
    >* **Typ** `String[]`
    >
    >* **Wert** Nach Bedarf einen oder beide der folgenden Werte:
-   >* `table` – um die Bearbeitung von Tabelleneigenschaften zuzulassen, einschließlich der Stile.
-   >* `cellprops` – um die Bearbeitung von Zelleneigenschaften zuzulassen, einschließlich der Stile.
+   >   * `table` – um die Bearbeitung von Tabelleneigenschaften zuzulassen, einschließlich der Stile.
+   >   * `cellprops` – um die Bearbeitung von Zelleneigenschaften zuzulassen, einschließlich der Stile.
 
 1. Definieren Sie den Speicherort von CSS-Stylesheets, um auf diese verweisen zu können. Siehe [Festlegen des Stylesheet-Speicherorts](#locationofstylesheet), da dieser derselbe wie bei der Definition der [Textstile](#textstyles) ist. Der Speicherort wurde möglicherweise bereits beim Definieren anderer Stile definiert.
 1. Erstellen Sie unter dem Knoten `table` die folgenden neuen Knoten (nach Bedarf):
@@ -693,13 +691,13 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
 
       * **Name** `cssInternal`
       * **Typ** `String`
-      * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
+      * **Wert** der Name der CSS-Klasse (ohne vorangestelltes &quot;.“; z. B. `cssClass` anstelle von `.cssClass`)
 
    * CSS-Stil für externe Links
 
       * **Name** `cssExternal`
       * **Typ** `String`
-      * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
+      * **Wert** der Name der CSS-Klasse (ohne vorangestelltes &quot;.“; z. B. `cssClass` anstelle von `.cssClass`)
 
    * Array von gültigen **Protokollen**. Die unterstützten Protokolle sind `http://`, `https://`, `file://` und `mailto:`.
 

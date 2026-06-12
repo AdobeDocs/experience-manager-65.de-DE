@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2030'
-ht-degree: 100%
+source-wordcount: '1956'
+ht-degree: 96%
 
 ---
 
@@ -48,22 +48,23 @@ Nachdem Sie einen Ordner erstellt haben, öffnen Sie den Ordner und führen Sie 
 1. Wählen Sie in der Vorlagenkonsole im erstellten Ordner die Option **Erstellen** aus.
 1. Wählen Sie im Abschnitt zur Auswahl des Vorlagentyps die Option **Adaptive Formularvorlage** und dann **Weiter** aus.
 
-1. Geben Sie im Abschnitt „Vorlagendetails“ einen Namen für die Vorlage an und wählen Sie **Erstellen** aus.
-Sie können eine Beschreibung und eine Miniaturansicht hinzufügen, die angezeigt wird, wenn sich beim Verfassen von Formularen die erstellte Vorlage auswählen lässt.
+1. Geben Sie im Abschnitt „Vorlagendetails“ einen Vorlagentitel ein und wählen Sie **Erstellen**.
+Sie können eine Beschreibung und eine Miniaturansicht angeben, die angezeigt wird, wenn Sie die erstellte Vorlage zum Zeitpunkt der Formularerstellung auswählen.
 
-1. Wählen Sie **Fertig** aus, um zur Konsole zurückzukehren, oder **Öffnen**, um die Vorlage im Editor zu öffnen.
+1. Wählen Sie **Fertig**, um zur Konsole zurückzukehren, oder **Öffnen**, um die Vorlage im Editor zu öffnen.
 
 ### Benutzeroberfläche des Vorlageneditors {#template-editor-ui}
 
 Wenn Sie eine Vorlage zum Bearbeiten öffnen, können Sie die folgenden AEM-Editor-Komponenten sehen:
 
-* **Seitensymbolleiste**: Enthält die folgenden Optionen:
+* **Seitensymbolleiste**
+Enthält die folgenden Optionen:
 
    * **Seitliches Bedienfeld ein/aus**: Hier können Sie die Seitenleiste ein- oder ausblenden.
    * **Seiteninformationen**: Ermöglicht Ihnen die Angabe von Informationen wie dem Zeitpunkt der Veröffentlichung oder der Zurücknahme der Veröffentlichung, Miniaturen, Client-seitigen Bibliotheken, einer Seitenrichtlinie und dem Seiten-Design einer Client-seitigen Bibliothek.
    * **Emulator**: Hier können Sie das Erscheinungsbild für verschiedene Geräte simulieren und anpassen.
-   * **Ebenenselektor**: Hiermit können Sie die Ebene ändern.
-Sie können die Ebene **Struktur** oder die Ebene **Anfänglicher Inhalt** auswählen. In der Ebene „Struktur“ können Sie die Kopf- und Fußzeile hinzufügen und anpassen. In der Ebene „Anfänglicher Inhalt“ können Sie den Formularinhalt anpassen.
+   * **Ebenenselektor** Hiermit können Sie die Ebene ändern.
+Sie können die Ebene **Struktur** oder die Ebene **Anfänglicher Inhalt** auswählen. In der Strukturebene können Sie die Kopf- und Fußzeile hinzufügen und anpassen. In der Ebene „Anfänglicher Inhalt“ können Sie den Formularinhalt anpassen.
 
    * **Vorschau**: Hier können Sie das Aussehen der Vorlage bei Veröffentlichung in einer Vorschau simulieren. Sie können den Ebenenselektor und die Vorschau verwenden, um zwischen Bearbeitungs- und Vorschau-Modus zu wechseln.
 
@@ -114,7 +115,7 @@ Beispielsweise können Sie die Kopfzeilenkomponente zur Vorlage hinzufügen. Wen
 
 Wenn die Option „Anfänglicher Inhalt“ ausgewählt ist, wird der Container für das adaptive Formular der Vorlage wie ein adaptives Formular zur Bearbeitung geöffnet. Wie beim Authoring eines adaptiven Formulars können Sie anfängliche Einstellungen festlegen, z. B. das Design und die Übermittlungsaktionen.
 
-Formularautorinnen und -autoren verwenden sie als Grundlage zum Erstellen eines Formulars. Die Struktur des Inhaltsflusses wird in der Ebene „Anfänglicher Inhalt“ der Vorlage angegeben. Um zur Bearbeitung des anfänglichen Inhalts der Formularvorlage zu wechseln, bevor Sie die Vorschau in der Seitensymbolleiste anzeigen, wählen Sie ![canvas-drop-down](assets/canvas-drop-down.png) **Anfänglicher Inhalt** aus.
+Formularautoren verwenden es als Basis zum Erstellen eines Formulars. Die Struktur des Inhaltsflusses wird in der Ebene Anfänglicher Inhalt der Vorlage angegeben. Um zum Bearbeiten des anfänglichen Inhalts der Formularvorlage zu wechseln, bevor Sie die Vorschau in der Seitensymbolleiste anzeigen, wählen Sie ![canvas-drop-down](assets/canvas-drop-down.png) **> Anfänglicher Inhalt** aus.
 ![Ebene „Anfänglicher Inhalt“ im Vorlageneditor](assets/initial-content-layer.png)
 
 In der Ebene „Anfänglicher Inhalt“ im Vorlageneditor ist der Container des adaptiven Formulars zum Festlegen von Eigenschaften ausgewählt.
@@ -129,7 +130,7 @@ Weitere Informationen finden Sie unter [Randleiste](../../forms/using/introducti
 >
 >Wenn Sie als Übermittlungsaktion „Inhalt speichern“ oder „PDF speichern“ auswählen, wird die Option zum Angeben des Speicherpfads angezeigt. Wenn Sie den Pfad in der Vorlage angeben, haben alle daraus erstellten Formulare denselben Pfad. Sie können den richtigen Speicherpfad angeben oder sicherstellen, dass Formularautorinnen und -autoren ihn aktualisieren, um zu verhindern, dass Daten aus jedem Formular an demselben Speicherort gespeichert werden.
 
-#### Erstellen einer adaptiven Formularvorlage mit Registerkarten und Bedienfeldern  {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
+#### Erstellen einer adaptiven Formularvorlage mit Registerkarten und Bedienfeldern  {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
 Nehmen wir an, Sie möchten eine Vorlage mit den folgenden Registerkarten erstellen:
 
@@ -166,8 +167,8 @@ Wenn Sie eine Vorlage erstellen, wird sie als Entwurf hinzugefügt. Aktivieren S
 1. Navigieren Sie zu **Adobe Experience Manager > Werkzeuge > Vorlagen** und öffnen Sie den Ordner, in dem Sie die Vorlage erstellt haben.
 
 1. Die Vorlage, die Sie erstellt haben, ist als Entwurf gekennzeichnet.
-1. Wählen Sie die Vorlage und dann in der Symbolleiste die Option **Aktivieren** aus.
-Wenn Sie ein adaptives Formular erstellen, wird die Vorlage aufgeführt, wenn Sie aufgefordert werden, eine Vorlage auszuwählen.
+1. Wählen Sie die Vorlage aus und wählen **Aktivieren** in der Symbolleiste aus.
+Wenn Sie ein adaptives Formular erstellen, wird die Vorlage angezeigt, wenn Sie aufgefordert werden, eine Vorlage auszuwählen.
 
 ## Importieren oder Exportieren einer Vorlage {#importing-or-exporting-a-template}
 
@@ -183,7 +184,7 @@ Sie können benutzerdefinierte Vorlagen für adaptive Formulare erstellen, um di
 
 Führen Sie die folgenden Schritte aus, um Vorlagen ein- bzw. auszublenden:
 
-1. Melden Sie sich bei der Autor-Instanz von AEM Forms an und navigieren Sie zu **Tools** > **Vorgänge** > **Web-Konsole**.
+1. Melden Sie sich bei der Autoreninstanz von AEM Forms an und navigieren Sie zu **Tools** > **Vorgänge** > **Web-Konsole**.
 
    >[!NOTE]
    >
@@ -199,5 +200,5 @@ Führen Sie die folgenden Schritte aus, um Vorlagen ein- bzw. auszublenden:
 ## Empfehlungen {#recommendations}
 
 * Wenn Sie Eigenschaften des Formulars im Vorlageneditor ändern, verwenden Sie nicht die Eigenschaft „BindReference“.
-* Wenn Sie einen Haltepunkt hinzufügen möchten, erstellen Sie ihn, wenn Sie eine Vorlage für ein adaptives Formular bearbeiten.
+* Wenn Sie einen Haltepunkt hinzufügen möchten, erstellen Sie ihn, wenn Sie eine Vorlage für ein adaptives Formular erstellen.
 Weitere Informationen zu Haltepunkten finden Sie unter [Responsive Layout](/help/sites-authoring/responsive-layout.md).

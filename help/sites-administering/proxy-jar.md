@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 100%
+source-wordcount: '1189'
+ht-degree: 98%
 
 ---
 
@@ -85,7 +85,7 @@ So überprüfen Sie, ob Keep-Alive funktioniert:
 
 **Finden verlorener Anfragen**
 
-Sollten Anfragen in einer komplexen Server-Umgebung, zum Beispiel mit einer Firewall und einem Dispatcher, verloren gehen, können Sie mithilfe des Proxy-Servers herausfinden, wo die Anfrage verloren ging.  Wenn eine Firewall vorhanden ist:
+Sollten Anfragen in einer komplexen Server-Umgebung, zum Beispiel mit einer Firewall und einem Dispatcher, verloren gehen, können Sie mithilfe des Proxy-Servers herausfinden, wo die Anfrage verloren ging. Wenn eine Firewall vorhanden ist:
 
 1. Starten Sie einen Proxy vor der Firewall.
 1. Starten Sie einen weiteren Proxy hinter der Firewall.
@@ -143,17 +143,17 @@ Sehen Sie sich diese einfache Vorlage an, die bei Anforderung folgenden Code erz
 </html>
 ```
 
-Wenn AEM auf „localhost:4303“ ausgeführt wird, starten Sie den Proxy-Server wie folgt:
+Wenn AEM auf localhost:4303 ausgeführt wird, starten Sie den Proxy-Server wie folgt:
 
 ```xml
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-Sie können ohne den Proxy-Server auf den Server zugreifen (`localhost:4303`). Wenn Sie jedoch über `localhost:4444` auf ihn zugreifen, protokolliert der Proxy-Server die Kommunikation. Öffnen Sie einen Browser und rufen Sie eine Seite auf, die mit der vorherigen Vorlage erstellt wurde.  Sehen Sie sich anschließend die Protokolldatei an.
+Sie können ohne den Proxy-Server auf den Server zugreifen (`localhost:4303`). Wenn Sie jedoch über `localhost:4444` auf ihn zugreifen, protokolliert der Proxy-Server die Kommunikation. Öffnen Sie einen Browser und rufen Sie eine Seite auf, die mit der vorherigen Vorlage erstellt wurde. Sehen Sie sich anschließend die Protokolldatei an.
 
 >[!NOTE]
 >
->Bis zur Version 1.14 von proxy.jar werden die Protokolleinträge einer Verbindung nicht synchronisiert, was bedeutet, dass die Protokolleinträge einer Client-/Server-Verbindung nicht zwangsläufig in der sequenziellen Reihenfolge angegeben sind.  Bei neueren Versionen (ab 1.14) des Proxy-Servers tritt dieses Problem nicht auf.
+>Bis zur Version 1.14 von proxy.jar werden die Protokolleinträge einer Verbindung nicht synchronisiert, was bedeutet, dass die Protokolleinträge einer Client-/Server-Verbindung nicht zwangsläufig in der sequenziellen Reihenfolge angegeben sind. Bei neueren Versionen (ab 1.14) des Proxy-Servers tritt dieses Problem nicht auf.
 
 Beim Starten werden die folgenden Informationen in das Protokoll geschrieben:
 
@@ -192,7 +192,7 @@ C-0-#000514 -> [ ]
 S-0-#000000 -> [HTTP/1.0 200 OK ]
 ```
 
-Der Server schließt die Verbindung 0 nach der Anfrage.  Eine Keep-Alive-Verbindung ist nicht möglich, da die Anfrage ein Fragezeichen enthält.  Dies bedeutet, dass der Server keine Cache-gespeicherte Version zurückgeben und deshalb an diesem Punkt auch nicht die Länge des Inhalts bestimmen kann. Dies ist jedoch für eine Keep-Alive-Verbindung erforderlich.
+Der Server schließt die Verbindung 0 nach der Anfrage. Eine Keep-Alive-Verbindung ist nicht möglich, da die Anfrage ein Fragezeichen enthält. Dies bedeutet, dass der Server keine Cache-gespeicherte Version zurückgeben und deshalb an diesem Punkt auch nicht die Länge des Inhalts bestimmen kann. Dies ist jedoch für eine Keep-Alive-Verbindung erforderlich.
 
 ```xml
 S-0-#000017 -> [Connection: Close ]
@@ -268,7 +268,7 @@ S-1-#000167 -> [GIF87a..........................,.......
 ...I....0.A..8......YDA.W...1..`i.`..6...Z...$@.F..)`..f..A.....iu.........$..;]
 ```
 
-Nachdem die maximale Wartezeit für das Keep-Alive erreicht wurde, wird auch die Verbindung 1 geschlossen:
+Nachdem der Timeout für das Keep-Alive erreicht wurde, wird auch die Verbindung 1 geschlossen:
 
 ```xml
 S-1-Finished: 291 bytes (0.0 kb/s)
@@ -280,4 +280,4 @@ Das obige Beispiel ist verhältnismäßig einfach, da die beiden Verbindungen na
 * Zuerst gibt der Server den HTML-Code zurück;
 * dann fordert der Browser das Bild an und öffnet eine neue Verbindung.
 
-In der Praxis generiert eine Seite möglicherweise viele parallele Anforderungen für Bilder, Stylesheets und JavaScript-Dateien. Dies bedeutet, dass die Protokolle sich überlappende Einträge von parallel geöffneten Verbindungen enthalten.  In diesem Fall empfiehlt Adobe der Lesbarkeit halber, die Option „-i“ zu verwenden.
+In der Praxis generiert eine Seite möglicherweise viele parallele Anforderungen für Bilder, Stylesheets und JavaScript-Dateien. Dies bedeutet, dass die Protokolle sich überlappende Einträge von parallel geöffneten Verbindungen enthalten. In diesem Fall empfiehlt Adobe der Lesbarkeit halber, die Option „-i“ zu verwenden.

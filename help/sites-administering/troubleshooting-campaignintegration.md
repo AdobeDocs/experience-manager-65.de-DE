@@ -11,7 +11,7 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '826'
 ht-degree: 100%
 
 ---
@@ -38,7 +38,7 @@ Vergewissern Sie sich, dass Sie in Adobe Campaign Classic den Operator **`aemse
 
 ## Wenn in der Adobe Campaign Classic-Konsole keine Bilder angezeigt werden {#if-images-do-not-appear-in-the-adobe-campaign-console}
 
-Überprüfen Sie die HTML-Quelle und prüfen Sie, ob Sie die URL vom Clientcomputer aus öffnen können. Wenn die URL `localhost:4503` enthält, ändern Sie die Konfiguration von Day CQ Link Externalizer in Ihrer AEM Authoring-Instanz. Sie muss auf eine Publishing-Instanz verweisen, die vom Adobe Campaign Classic-Konsolen-Computer aus erreicht werden kann.
+Überprüfen Sie die HTML-Quelle und prüfen Sie, ob Sie die URL vom Clientcomputer aus öffnen können. Wenn die URL `localhost:4503` enthält, ändern Sie die Konfiguration von Day CQ Link Externalizer in Ihrer AEM Autoreninstanz. Sie muss auf eine Veröffentlichungsinstanz verweisen, die vom Adobe Campaign Classic-Konsolen-Computer aus erreicht werden kann.
 
 Siehe [Konfigurieren des Externalizers](/help/sites-administering/campaignstandard.md#configuring-the-externalizer).
 
@@ -66,7 +66,7 @@ Beim Starten des Apache HTTPD-Dienstes für Adobe Campaign Classic wird möglich
 
 Vergewissern Sie sich, dass Sie `en_CA.ISO-8859-15 locale` auf Ihrem Adobe Campaign Classic-Server installiert haben.
 
-* Mit `local -a` können Sie überprüfen, ob es installiert ist. 
+* Mit `local -a` können Sie überprüfen, ob es installiert ist.
 * Wenn es nicht installiert ist, können Sie das Skript `/usr/local/neolane/nl6/env.sh` patchen und das Gebietsschema in ein installiertes Gebietsschema ändern.
 
 ## Wenn beim Kompilieren des Skripts „get_nms_amcGetSeedMetaData_jssp“ ein Fehler auftritt {#if-you-get-an-error-while-compiling-script-get-nms-amcgetseedmetadata-jssp}
@@ -125,7 +125,7 @@ Wenn Sie versuchen, Inhalte in der Adobe Campaign Classic-Bereitstellung zu sync
 
 * Gehostetes Adobe Campaign mit HTTPS für die Kommunikation mit AEM Author
 * Reverse-Proxy, der SSL beendet
-* On-Premise-AEM Authoring-Instanz
+* On-Premise-AEM Autoreninstanz
 
 Gehen Sie wie folgt vor, um dieses Problem zu beheben:
 

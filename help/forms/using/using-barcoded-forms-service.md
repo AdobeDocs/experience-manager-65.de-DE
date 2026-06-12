@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1046'
 ht-degree: 97%
 
 ---
@@ -94,7 +94,7 @@ Der Dienst „Barcode-Formulare“ gibt nach Dekodierung der Barcodes das folgen
 
 ### Workflows, die mit Barcode versehene Formulare verwenden {#workflows-that-use-barcoded-forms}
 
-Autorinnen und Autoren von Formularen erstellen interaktive Formulare mit Barcode mithilfe von Designer. (Siehe [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63_de).) Wenn ein Benutzer ein Barcode-Formular mithilfe von Adobe Reader oder Acrobat ausfüllt, wird der Barcode automatisch aktualisiert, um die Formulardaten zu codieren.
+Autorinnen und Autoren von Formularen erstellen interaktive Formulare mit Barcode mithilfe von Designer. (Weitere Informationen finden Sie in der [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63_de).) Wenn ein Benutzer ein Barcode-Formular mit Adobe Reader oder Acrobat ausfüllt, wird der Barcode automatisch aktualisiert, um die Formulardaten zu codieren.
 
 Der Dienst „Barcode-Formulare“ dient zum Konvertieren von Daten, die in Papierform vorliegen, in ein vom Computer lesbares Format. Beispiel: Wenn ein mit Barcode versehenes Formular ausgefüllt und gedruckt wird, kann die gedruckte Kopie gescannt werden und als Eingabe für den Dienst „Barcode-Formulare“ dienen.
 
@@ -102,7 +102,7 @@ Der Dienst „Barcode-Formulare“ dient zum Konvertieren von Daten, die in Papi
 
 ### Empfohlene Kodierungs- und Dekodierungsformate {#recommended-encoding-and-decoding-formats}
 
-Erstellende von Barcode-Formularen sollten bei der Kodierung von Daten in Barcodes ein einfaches Format mit Trennzeichen (z. B. Tabulatoren) verwenden.  Außerdem sollten Zeilenumbrüche als Feldtrennzeichen vermieden werden. Designer bietet eine Auswahl von Kodierungen mit Trennzeichen, die automatisch ein JavaScript-Skript für die Kodierung von Barcodes generieren. Die dekodierten Daten haben den Feldnamen in der ersten Zeile und ihre Werte in der zweiten Zeile, mit Tabulatoren zwischen jedem Feld.
+Erstellende von Barcode-Formularen sollten bei der Kodierung von Daten in Barcodes ein einfaches Format mit Trennzeichen (z. B. Tabulatoren) verwenden. Außerdem sollten Zeilenumbrüche als Feldtrennzeichen vermieden werden. Designer bietet eine Auswahl von Kodierungen mit Trennzeichen, die automatisch ein JavaScript-Skript für die Kodierung von Barcodes generieren. Die dekodierten Daten haben den Feldnamen in der ersten Zeile und ihre Werte in der zweiten Zeile, mit Tabulatoren zwischen jedem Feld.
 
 Geben Sie beim Dekodieren von Barcodes das Zeichen an, das zum Trennen von Feldern dient. Das für die Dekodierung angegebene Zeichen muss dem für die Kodierung des Barcodes verwendeten Zeichen entsprechen. Wenn jemand beispielsweise das empfohlene Format mit Tabulatoren als Trennzeichen nutzt, muss der Tabulator auch als Standardwert für das Feldtrennzeichen im Vorgang „Als XML extrahieren“ verwendet werden.
 
@@ -129,7 +129,7 @@ Beachten Sie auch die folgenden Einschränkungen bei der Verwendung des Barcoded
 
 Der Service kann zusätzlich sämtliche Strichcodes dekodieren, die unterstützte Symbologien nutzen, sofern die oben genannten Beschränkungen berücksichtigt werden. Weitere Informationen dazu, wie Sie interaktive Formulare mit Strichcode erstellen, finden Sie unter [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63_de).
 
-## Konfigurieren der Eigenschaften des Dienstes  {#configureproperties}
+## Konfigurieren der Eigenschaften des Dienstes   {#configureproperties}
 
 Sie können den **AEMFD-Dienst „Barcode-Formulare“** in der AEM-Konsole verwenden, um Eigenschaften für diesen Dienst zu konfigurieren. Die Standard-URL der AEM-Konsole lautet `https://[host]:'port'/system/console/configMgr`.
 

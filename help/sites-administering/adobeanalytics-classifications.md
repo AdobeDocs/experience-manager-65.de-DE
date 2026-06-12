@@ -11,7 +11,7 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '619'
 ht-degree: 100%
 
 ---
@@ -47,15 +47,15 @@ Dies konfigurieren Sie wie folgt:
    | Aktiviert | Wählen Sie **Ja**, um die Adobe Classifications-Einstellungen zu aktivieren. |
    | Bei Konflikt überschreiben | Wählen Sie **Ja**, um etwaige Datenkollisionen zu überschreiben. Standardmäßig ist dies auf **Nein** festgelegt. |
    | Bearbeitete löschen | Wenn dies auf **Ja** festgelegt ist, werden verarbeitete Knoten nach dem Export gelöscht. Der Standard hierfür ist **Falsch**. |
-   | Beschreibung des Exportvorgangs | Geben Sie eine Beschreibung für den Adobe Classifications-Vorgang ein. |
+   | Beschreibung des Exportauftrags | Geben Sie eine Beschreibung für den Adobe Classifications-Auftrag ein. |
    | Benachrichtigungs-E-Mail | Geben Sie eine E-Mail-Adresse für Adobe Classifications-Benachrichtigungen ein. |
-   | Report Suite | Geben Sie die Report Suite ein, für die der Importvorgang ausgeführt werden soll. |
-   | Datensatz | Geben Sie die Datensatzbeziehungs-ID ein, für die der Importvorgang ausgeführt werden soll. |
+   | Report Suite | Geben Sie die Report Suite ein, für die der Importauftrag ausgeführt werden soll. |
+   | Datensatz | Geben Sie die Datensatzbeziehungs-ID ein, für die der Importauftrag ausgeführt werden soll. |
    | Transformer | Wählen Sie im Dropdown-Menü eine Transformer-Implementierung aus. |
    | Datenquelle | Navigieren Sie zum Pfad für den Daten-Container. |
    | Exportzeitplan | Wählen Sie den Zeitplan für den Export aus. Der Standard ist alle 30 Minuten. |
 
-1. Klicken Sie auf **OK**, um Ihre Einstellungen zu speichern. 
+1. Klicken Sie auf **OK**, um Ihre Einstellungen zu speichern.
 
 ## Ändern der Seitengröße {#modifying-page-size}
 
@@ -79,7 +79,7 @@ So ändern Sie die Seitengröße:
 
 Ein Exporter kann einen Transformer verwenden, um die Exportdaten in ein bestimmtes Format umzuwandeln. Für Adobe Classifications wird die Unterschnittstelle `SAINTTransformer<String[]>` bereitgestellt, die die Transformatorschnittstelle implementiert. Diese Schnittstelle dient dazu, den Datentyp auf den von der SAINT-API verwendeten Datentyp `String[]` zu beschränken und eine Markierungsschnittstelle für die Suche nach entsprechenden Services für die Auswahl zu erhalten.
 
-In der Standardimplementierung (SAINTDefaultTransformer) werden die untergeordneten Ressourcen der Exporter-Quelle als Datensätze (mit Eigenschaftsnamen als Schlüssel und Eigenschaftswerten als Werte) behandelt. Die Spalte **Schlüssel** wird automatisch als erste Spalte hinzugefügt und enthält den Knotennamen. Eigenschaften mit Namespace (enthalten `:`) werden ignoriert.
+In der Standardimplementierung (SAINTDefaultTransformer) werden die untergeordneten Ressourcen der Exporter-Quelle als Einträge (mit Eigenschaftsnamen als Schlüssel und Eigenschaftswerten als Werte) behandelt. Die Spalte **Schlüssel** wird automatisch als erste Spalte hinzugefügt und enthält den Knotennamen. Eigenschaften mit Namespace (enthalten `:`) werden ignoriert.
 
 *Knotenstruktur:*
 
@@ -117,11 +117,11 @@ Die Eigenschaften umfassen Folgendes:
   </tr>
   <tr>
    <td>Report Suites</td>
-   <td>Report-Suite-IDs, für die der Importvorgang ausgeführt werden soll. </td>
+   <td>Report-Suite-IDs, für die der Importauftrag ausgeführt werden soll. </td>
   </tr>
   <tr>
    <td>Datensatz</td>
-   <td>Datensatzbeziehungs-ID, für die der Importvorgang ausgeführt werden soll. </td>
+   <td>Datensatzbeziehungs-ID, für die der Importauftrag ausgeführt werden soll. </td>
   </tr>
   <tr>
    <td>description</td>
@@ -129,7 +129,7 @@ Die Eigenschaften umfassen Folgendes:
   </tr>
   <tr>
    <td>overwrite</td>
-   <td>Flag zum Überschreiben von Datenkollisionen. Der Standardwert lautet <strong>false</strong>. </td>
+   <td>Flag zum Überschreiben von Datenkollisionen. Der Standardwert lautet <strong>false</strong>.</td>
   </tr>
   <tr>
    <td>checkdivisions</td>

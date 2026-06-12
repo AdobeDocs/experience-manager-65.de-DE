@@ -11,7 +11,7 @@ feature: Configuring
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '154'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ Mit Adobe Experience Manager-Apps können Sie den Inhalt Ihrer Anwendung OTA (ov
 So konfigurieren Sie den Referrer-Filterdienst:
 
 * Öffnen Sie die Apache Felix-Konsole (**Konfigurationen**) bei:
-* https://&lt;Server>:&lt;Port-Nummer>/system/console/configMgr
+* https://<Server>:<Port-Nummer>/system/console/configMgr
 * Melden Sie sich als admin an.
 * Wählen Sie im Menü **Configurations**: *Apache Sling Referrer Filter*.
 * Aktivieren Sie das Feld „Leeres Feld zulassen“, um leere/fehlende Referrer-Header zuzulassen.

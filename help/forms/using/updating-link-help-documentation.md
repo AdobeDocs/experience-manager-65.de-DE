@@ -11,7 +11,7 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '142'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ Um die URL der Onlinedokumentation zu aktualisieren, führen Sie die Schritte un
    ```html
    <ul class="helpmenu">
      <li>
-       <a href="https://www.adobe.com/go/learn_aemforms_documentation_63_de" title="<%= $.t('index.header.dropdown.WorkspaceHelp')%>" target="_blank"><%= $.t('index.header.dropdown.WorkspaceHelp')%></a>
+       <a href="https://www.adobe.com/go/learn_aemforms_documentation_63" title="<%= $.t('index.header.dropdown.WorkspaceHelp')%>" target="_blank"><%= $.t('index.header.dropdown.WorkspaceHelp')%></a>
      </li>
    ```
 

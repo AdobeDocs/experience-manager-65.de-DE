@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
-workflow-type: ht
-source-wordcount: '1479'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1502'
+ht-degree: 96%
 
 ---
 
@@ -51,10 +51,10 @@ Das responsive Layout für Ihre Seiten wird von AEM durch eine Kombination von M
         Sie können den Layout-Container als Standard für die Seite festlegen und es den Benutzern gleichzeitig erlauben, weitere Layout-Container darin hinzuzufügen, z. B. für die Spaltensteuerung.
 
 * **[Layout-Modus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-Sobald der Layout-Container auf der Seite positioniert ist, können Sie im **Layout**-Modus Inhalte im responsiven Raster positionieren.
+Sobald der Layout-Container auf Ihrer Seite positioniert ist, können Sie den **Layout**-Modus verwenden, um Inhalte im responsiven Raster zu positionieren.
 
 * [**Emulator**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
-Auf diese Weise können Sie responsive Websites erstellen und bearbeiten, deren Layout sich durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße anpasst. Die Benutzerin bzw. der Benutzer kann dann mit dem Emulator sehen, wie der Inhalt wiedergegeben wird.
+Auf diese Weise können Sie responsive Websites erstellen und bearbeiten, deren Layout durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße angepasst wird. Die Benutzerin bzw. der Benutzer kann dann mit dem Emulator sehen, wie der Inhalt wiedergegeben wird.
 
 Mit diesen responsiven Rastermechanismen können Sie:
 
@@ -325,12 +325,12 @@ Sie können die Anzahl der verfügbaren Spalten für jede spezifische Instanz de
 
 ## Verschachtelte responsive Raster {#nested-responsive-grids}
 
-Gelegentlich ist es erforderlich, responsive Raster zu verschachteln, um die Anforderungen Ihres Projekts zu erfüllen. Beachten Sie jedoch, dass Adobe als Best Practice empfiehlt, die Struktur so flach wie möglich zu halten.
+Gelegentlich ist es erforderlich, responsive Raster zu verschachteln, um die Anforderungen Ihres Projekts zu erfüllen. Beachten Sie jedoch, dass Adobe als Best Practice empfiehlt, die Struktur so flach wie möglich zu halten.
 
 Wenn Sie die Verwendung verschachtelter responsiver Raster nicht vermeiden können, stellen Sie Folgendes sicher:
 
-* Alle Container (Container, Registerkarten, Akkordeons usw.) haben die Eigenschaft `layout = responsiveGrid`.
-* Mischen Sie nicht die Eigenschaft `layout = simple` in die Container-Hierarchie.
+* Alle Container (Container, Registerkarten, Akkordeons usw.) Lassen Sie die Eigenschaft `layout = responsiveGrid`.
+* Mischen Sie nicht die Eigenschaft `layout = simple` in der Container-Hierarchie.
 
 Dies betrifft alle strukturellen Container aus der Seitenvorlage.
 
@@ -357,7 +357,7 @@ container
       @text =" Text Column 1"
 ```
 
->[!TAB Beispiel der resultierenden HTML]
+>[!TAB Beispiel des HTML-Ergebnisses]
 
 ```html
 <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">

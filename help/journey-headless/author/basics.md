@@ -7,8 +7,8 @@ feature: Headless,Content Fragments
 role: Admin, Developer, User, Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 96%
+source-wordcount: '1653'
+ht-degree: 95%
 
 ---
 
@@ -193,8 +193,8 @@ OK, dies mag ein etwas seltsamer Abschnitt sein, aber sobald Sie den Inhaltsfrag
 
 * **Inhaltsfragmentmodelle**
 
-  Der Name des Inhaltsfragmentmodells wird oben im Editor angezeigt – direkt unter dem Namen des Fragments. Dies ist auch ein Link, über den Sie zum Modell-Editor gelangen.
-Inhaltsfragmentmodelle sind für Ihre Inhaltsfragmente von entscheidender Bedeutung, da sie die zu verwendende Struktur definieren. Für die Erstellung und Bearbeitung ist jedoch (in der Regel) eine andere Rolle, der Inhaltsarchitekt, verantwortlich.
+  Der Name des Inhaltsfragmentmodells wird oben im Editor angezeigt - direkt unter dem Fragmentnamen. Dies ist auch ein Link, über den Sie zum Modell-Editor gelangen.
+Inhaltsfragmentmodelle sind für Ihre Inhaltsfragmente von entscheidender Bedeutung, da sie die verwendete Struktur definieren. Für die Erstellung und Bearbeitung ist jedoch (in der Regel) eine andere Rolle, der Inhaltsarchitekt, verantwortlich.
 
   >[!NOTE]
   >
