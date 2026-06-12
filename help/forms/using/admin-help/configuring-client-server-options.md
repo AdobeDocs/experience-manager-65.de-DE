@@ -59,13 +59,13 @@ Weitere Informationen zur Funktionsweise der Offline-Nutzung und Synchronisation
 
 Wenn Sie diese Option auswählen, können Client-Anwendungen die erweiterte Authentifizierung verwenden. Mit der erweiterten Authentifizierung können auf dem AEM-Formular-Server angepasste Authentifizierungsprozesse und verschiedene Authentifizierungsoptionen konfiguriert werden. Beispielsweise können Benutzende die SAML-basierte Authentifizierung anstelle des AEM Forms-Benutzernamens/Kennworts von Acrobat- und Reader-Clients aus nutzen. Standardmäßig enthält die Landingpage-URL *localhost* als Server-Namen. Ersetzen Sie den Server-Namen durch einen vollständig qualifizierten Host-Namen. Der Host-Name in der Landingpage-URL wird automatisch mit der Basis-URL gefüllt, wenn die erweiterte Authentifizierung noch nicht aktiviert ist. Siehe [Hinzufügen des Anbieters für die erweiterte Authentifizierung](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
-***Hinweis **: Erweiterte Authentifizierung wird auf Apple Mac OS X mit Adobe Acrobat ab Version 11.0.6 unterstützt.*
+***Hinweis &#x200B;**: Erweiterte Authentifizierung wird auf Apple Mac OS X mit Adobe Acrobat ab Version 11.0.6 unterstützt.*
 
 **Bevorzugte HTML-Kontrollbreite für erweiterte Authentifizierung** Geben Sie die Breite des Dialogfelds für erweiterte Authentifizierung an, das in Acrobat zur Eingabe von Benutzeranmeldeinformationen geöffnet wird.
 
 **Bevorzugte HTML-Steuerelementhöhe für erweiterte Authentifizierung** Geben Sie die Höhe des Dialogfelds für die erweiterte Authentifizierung an, das in Acrobat zur Eingabe von Benutzeranmeldeinformationen geöffnet wird.
 
-***Hinweis **: Die Grenzen der Breite und Höhe für dieses Dialogfeld sind wie folgt:*
+***Hinweis &#x200B;**: Die Grenzen der Breite und Höhe für dieses Dialogfeld sind wie folgt:*
 Breite: Minimum = 400, Maximum = 900
 
 Höhe: Minimum = 450; Maximum = 800
@@ -88,7 +88,7 @@ Diese Liste wird dem Richtliniensatzkoordinator angezeigt und dient zum Einschr�
 
 1. Richten Sie nach der Installation und Konfiguration der AEM Forms-Umgebung mit Document Security alle gewünschten Domains in User Management ein. <!-- Fix broken link (See Setting up and managing domains) -->
 
-   ***Hinweis **: Das Erstellen von Domains muss vor dem Erstellen von Richtlinien erfolgen.*
+   ***Hinweis &#x200B;**: Das Erstellen von Domains muss vor dem Erstellen von Richtlinien erfolgen.*
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Document Management“ > „Richtlinien“ und dann auf die Registerkarte „Richtliniensätze“.
 1. Wählen Sie den globalen Richtliniensatz aus und klicken Sie auf die Registerkarte „Sichtbare Benutzer und Gruppen“.
@@ -489,7 +489,7 @@ Sie können Vorlagen für dynamische Wasserzeichen erstellen. Diese Vorlagen ble
 1. Klicken Sie auf Neu.
 1. Geben Sie in das Feld „Name“ einen Namen für das neue Wasserzeichen ein.
 
-   ***Hinweis **: Einige Sonderzeichen können nicht in den Namen oder Beschreibungen von Wasserzeichen oder Wasserzeichenelementen verwendet werden. Weitere Informationen zu den Einschränkungen finden Sie unter [Überlegungen zum Bearbeiten von Richtlinien](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
+   ***Hinweis &#x200B;**: Einige Sonderzeichen können nicht in den Namen oder Beschreibungen von Wasserzeichen oder Wasserzeichenelementen verwendet werden. Weitere Informationen zu den Einschränkungen finden Sie unter [Überlegungen zum Bearbeiten von Richtlinien](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
 
 1. Geben Sie unter „Name“ neben dem Pluszeichen einen aussagekräftigen Namen für das Wasserzeichenelement ein, z. B. „Kopfzeile“. Fügen Sie dann eine neue Beschreibung hinzu. Anschließend klicken Sie auf das Pluszeichen, um die Optionen anzuzeigen.
 1. Wählen Sie unter „Quelle“ den Typ des Wasserzeichens aus, entweder „Text“ oder „PDF“.
@@ -498,11 +498,11 @@ Sie können Vorlagen für dynamische Wasserzeichen erstellen. Diese Vorlagen ble
    * Wählen Sie die zu berücksichtigenden Wasserzeichentypen aus. Wenn Sie „Benutzerdefinierter Text“ auswählen, geben Sie in das Feld daneben den für das Wasserzeichen anzuzeigenden Text ein. Beachten Sie die Textlänge des Wasserzeichens.
    * Geben Sie die Eigenschaften für die Textformatierung wie Schriftartname, Schriftgröße und Vorder- sowie Hintergrundfarbe für den Textinhalt des Wasserzeichentextes an. Geben Sie die Vorder- und Hintergrundfarbe als Hexadezimalwerte an.
 
-     ***Hinweis **: Wenn Sie die Skalierungsoption als „An Seite anpassen“ wählen, steht die Eigenschaft der Schriftgröße nicht zur Bearbeitung zur Verfügung.*
+     ***Hinweis &#x200B;**: Wenn Sie die Skalierungsoption als „An Seite anpassen“ wählen, steht die Eigenschaft der Schriftgröße nicht zur Bearbeitung zur Verfügung.*
 
 1. Wenn Sie „PDF“ für komplexe Wasserzeichen ausgewählt haben, klicken Sie neben der Option „Wasserzeichen-PDF auswählen“ auf **Durchsuchen**, um das PDF -Dokument auszuwählen, das als Wasserzeichen verwendet werden soll.
 
-   ***Hinweis **: Verwenden Sie kein kennwortgeschütztes PDF-Dokument. Wenn Sie ein kennwortgeschütztes PDF als Wasserzeichenelement angeben, wird das Wasserzeichen nicht angewendet.*
+   ***Hinweis &#x200B;**: Verwenden Sie kein kennwortgeschütztes PDF-Dokument. Wenn Sie ein kennwortgeschütztes PDF als Wasserzeichenelement angeben, wird das Wasserzeichen nicht angewendet.*
 
 1. Wählen Sie für „Als Hintergrund verwenden“ entweder „Ja“ oder „Nein“ aus.
 
@@ -584,9 +584,9 @@ Sie können die Registrierung bei der Dokumentensicherheit auf bestimmte externe
 
 Die folgenden Einstellungen befinden sich im Bereich „Filter für E-Mail-Adressen“ auf der Seite „Registrierung für eingeladene Benutzer“.
 
-**Ausschluss:** Geben Sie die E-Mail-Adresse eines Benutzers oder einer Gruppe ein, die Sie ausschließen möchten. Um mehrere Benutzende oder Gruppen auszuschließen, geben Sie jede E-Mail-Adresse in eine neue Zeile ein. Um alle Benutzer, die zu einer bestimmten Domain gehören, auszuschließen, geben Sie einen Platzhalter und den Domain-Namen ein. Um beispielsweise alle Benutzer in der Domain example.com auszuschließen, geben Sie &amp;ast;.example.com ein.
+**Ausschluss:** Geben Sie die E-Mail-Adresse eines Benutzers oder einer Gruppe ein, die Sie ausschließen möchten. Um mehrere Benutzende oder Gruppen auszuschließen, geben Sie jede E-Mail-Adresse in eine neue Zeile ein. Um alle Benutzer, die zu einer bestimmten Domain gehören, auszuschließen, geben Sie einen Platzhalter und den Domain-Namen ein. Um beispielsweise alle Benutzer in der Domain example.com auszuschließen, geben Sie &ast;.example.com ein.
 
-**Einbeziehung:** Geben Sie die E-Mail-Adresse eines Benutzers oder einer Gruppe ein, die Sie einbeziehen möchten. Um mehrere Benutzende oder Gruppen einzubeziehen, geben Sie jede E-Mail-Adresse in eine neue Zeile ein. Um alle Benutzer, die zu einer bestimmten Domäne gehören, einzubeziehen, geben Sie einen Platzhalter und den Domänennamen ein. Um beispielsweise alle Benutzer in die Domain example.com einzuschließen, geben Sie &amp;ast;.example.com ein.
+**Einbeziehung:** Geben Sie die E-Mail-Adresse eines Benutzers oder einer Gruppe ein, die Sie einbeziehen möchten. Um mehrere Benutzende oder Gruppen einzubeziehen, geben Sie jede E-Mail-Adresse in eine neue Zeile ein. Um alle Benutzer, die zu einer bestimmten Domäne gehören, einzubeziehen, geben Sie einen Platzhalter und den Domänennamen ein. Um beispielsweise alle Benutzer in die Domain example.com einzuschließen, geben Sie &ast;.example.com ein.
 
 ### Server- und Registrierungskontoparameter {#server-and-registration-account-parameters}
 
@@ -951,7 +951,7 @@ In diesem Beispiel werden alle Anforderungen von einer Microsoft PowerPoint 2007
 
 Standardmäßig können Sie in einem Wasserzeichen maximal fünf Elemente angeben. Die maximale Dateigröße des PDF-Dokuments, das Sie als Wasserzeichen verwenden möchten, ist auf 100 KB beschränkt. Sie können diese Parameter in der Datei config.xml ändern.
 
-***Hinweis **: Sie sollten diese Parameter mit Vorsicht ändern.*
+***Hinweis &#x200B;**: Sie sollten diese Parameter mit Vorsicht ändern.*
 
 1. Exportieren Sie die Document Security-Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Konfigurationsdatei für die Dokumentensicherheit](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Öffnen Sie die Konfigurationsdatei in einem Editor und suchen Sie den Knoten `ServerSettings`.

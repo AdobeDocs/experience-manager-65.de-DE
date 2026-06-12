@@ -308,7 +308,7 @@ Lassen Sie die Seite YouTube-Konfiguration erstellen geöffnet. Sie werden gleic
 1. Wählen Sie **[!UICONTROL Erstellen]**.
 1. Geben Sie im Dialogfeld „YouTube-Kontoeinstellungen“ im Feld **[!UICONTROL Anwendungsname]** die Google-Projekt-ID ein.
 
-   Sie haben die Projekt-ID bereits während der [ Konfiguration der Google-Cloud](/help/assets/video.md#configuring-google-cloud-settings)Einstellungen angegeben.
+   Sie haben die Projekt-ID bereits während der [&#x200B; Konfiguration der Google-Cloud](/help/assets/video.md#configuring-google-cloud-settings)Einstellungen angegeben.
 Lassen Sie das Dialogfeld YouTube-Kontoeinstellungen geöffnet, da Sie gleich zu ihm zurückkehren werden.
 
 1. Öffnen Sie die in der vorherigen Aufgabe zum Konfigurieren von Google Cloud-Einstellungen heruntergeladene und gespeicherte JSON-Datei in einem Nur-Text-Editor.
@@ -359,7 +359,7 @@ So automatisieren Sie die Einstellung von YouTube-Standardeigenschaften für hoc
 1. Klicken Sie unter der Überschrift „YouTube-Publishing“ auf **[!UICONTROL YouTube-Kategorie]**.
 1. Führen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** rechts auf der Seite folgende Schritte aus:
 
-   * Wählen **[!UICONTROL im Textfeld]**Zu Eigenschaft zuordnen“ den Wert aus und kopieren Sie ihn.
+   * Wählen **[!UICONTROL im Textfeld]**&#x200B;Zu Eigenschaft zuordnen“ den Wert aus und kopieren Sie ihn.
 Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie Ihr Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
 
    * Wählen **[!UICONTROL unter]** den Standardwert aus, den Sie verwenden möchten (z. B. „Personen und Blogs“ oder „Wissenschaft und Technik„).
@@ -368,7 +368,7 @@ Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen 
 1. Klicken Sie unter der Überschrift „Veröffentlichen auf YouTube“ auf **[!UICONTROL YouTube-Datenschutz]**.
 1. Führen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** rechts auf der Seite folgende Schritte aus:
 
-   * Wählen **[!UICONTROL im Textfeld]**Zu Eigenschaft zuordnen“ den Wert aus und kopieren Sie ihn.
+   * Wählen **[!UICONTROL im Textfeld]**&#x200B;Zu Eigenschaft zuordnen“ den Wert aus und kopieren Sie ihn.
 Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie Ihr Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
 
    * Wählen **[!UICONTROL unter]** den Standardwert aus, den Sie verwenden möchten, und kopieren Sie ihn. Beachten Sie, dass Auswahlmöglichkeiten in Paaren von zwei Werten gruppiert sind. Das untere Feld im Paar ist der Standardwert, den Sie kopieren möchten, z. B. „Öffentlich“, „Nicht aufgeführt“ oder „Privat“.
@@ -554,7 +554,7 @@ Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angew
 
    >[!NOTE]
    >
-   >Die endgültige Aufzeichnung von Fehlermeldungen kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** von [https://localhost:4502/system/console/configMgr} mehrere Workflow-Konfigurationen vorliegen](https://localhost:4502/system/console/configMgr) Beispiel:
+   >Die endgültige Aufzeichnung von Fehlermeldungen kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** von [https://localhost:4502/system/console/configMgr&rbrace; mehrere Workflow-Konfigurationen vorliegen](https://localhost:4502/system/console/configMgr) Beispiel:
    >
    >* Konfiguration der Warteschlange für Apache Sling-Aufträge
    >* Handler für externe Prozessaufträge im Adobe Granite-Workflow
