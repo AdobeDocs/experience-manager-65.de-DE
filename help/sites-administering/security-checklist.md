@@ -324,7 +324,7 @@ So verhindern Sie einen Missbrauch infolge von DoS-Angriffen:
 >
 >Diese Abmilderung sollte nur für AEM-Umgebungen durchgeführt werden, die keine Formulare verwenden.
 
-Da AEM keine vorkonfigurierten Indizes für `FormChooserServlet` bereitstellt, löst die Verwendung der Formularauswahl in Abfragen einen aufwändigen Repository-Durchlauf aus, der meist die AEM-Instanz zum Stoppen bringt. Formularauswahl-Instanzen können anhand der Zeichenfolge **&ast;.form.&ast;** in Abfragen erkannt werden.
+Da AEM keine vorkonfigurierten Indizes für `FormChooserServlet` bereitstellt, löst die Verwendung der Formularauswahl in Abfragen einen aufwändigen Repository-Durchlauf aus, der meist die AEM-Instanz zum Stoppen bringt. Formularauswahl-Instanzen können anhand der Zeichenfolge **&amp;ast;.form.&amp;ast;** in Abfragen erkannt werden.
 
 Um dieses Problem abzumildern, können Sie die folgenden Schritte durchführen:
 

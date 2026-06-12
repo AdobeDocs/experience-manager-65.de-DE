@@ -318,7 +318,7 @@ Wenn ein Gerät auf Ihre mobile Website zugreift, erkennt AEM das Gerät, ordnet
 #### Installieren einer anderen WURFL™-Datenbank {#installing-a-different-wurfl-database}
 
 Die abgeschnittene WURFL™-Datenbank, die mit AEM installiert wird, ist eine Version, die älter ist als
-&#x200B;30. August 2011. Wenn Ihre WURFL-Version nach dem 30. August 2011 veröffentlicht wurde, vergewissern Sie sich, dass Ihre Verwendung Ihrer Lizenz entspricht.
+30. August 2011. Wenn Ihre WURFL-Version nach dem 30. August 2011 veröffentlicht wurde, vergewissern Sie sich, dass Ihre Verwendung Ihrer Lizenz entspricht.
 
 So installieren Sie eine WURFL™-Datenbank:
 
