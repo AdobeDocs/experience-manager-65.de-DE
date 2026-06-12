@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 100%
+source-wordcount: '2057'
+ht-degree: 89%
 
 ---
 
@@ -98,7 +98,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Erstellt eine neue Workflow-Instanz. Es gibt folgende Parameter: <br /> – <code>model</code>: die ID (URI) des entsprechenden Workflow-Modells <br /> – <code>payloadType</code>: enthält den Payload-Typ (z. B. <code>JCR_PATH</code> oder URL).<br /> Die Payload wird als Parameter<code>payload</code> gesendet. Eine <code>201</code> (<code>CREATED</code>)-Antwort wird mit Orts-Header zurückgesendet, der die URL der neuen Workflow-Instanzressource enthält.</p> </td>
+   <td><p>Erstellt eine neue Workflow-Instanz. Die Parameter sind: <br /> - <code>model</code>: die ID (URI) des entsprechenden Workflow-Modells<br /> - <code>payloadType</code>: enthält den Payload-Typ (z. B. <code>JCR_PATH</code> oder URL).<br /> Die Payload wird als Parameter <code>payload</code> gesendet. Eine <code>201</code> (<code>CREATED</code>)-Antwort wird mit Orts-Header zurückgesendet, der die URL der neuen Workflow-Instanzressource enthält.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -131,7 +131,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Ändert den Status der Instanz. Der neue Status wird als Parameter <code>state</code> gesendet und muss einen der folgenden Werte aufweisen: <code>RUNNING</code>, <code>SUSPENDED</code> oder <code>ABORTED</code>.<br /> Wenn der neue Status nicht erreicht werden kann (z. B. wenn versucht wird, eine beendete Instanz zu pausieren), wird eine Antwort <code>409</code> (<code>CONFLICT</code>) an den Client zurückgesendet.</td>
+   <td>Ändert den Status der Instanz. Der neue Status wird als <code>state</code> gesendet und muss einen der folgenden Werte aufweisen: <code>RUNNING</code>, <code>SUSPENDED</code> oder <code>ABORTED</code>.<br /> Wenn der neue Status nicht erreicht werden kann (z. B. wenn eine beendete Instanz ausgesetzt wird), wird eine <code>409</code> (<code>CONFLICT</code>)-Antwort an den Client gesendet.</td>
   </tr>
  </tbody>
 </table>
@@ -154,7 +154,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Erstellt ein neues Workflow-Modell. Wenn der Parameter <code>title</code> gesendet wird, wird ein neues Modell mit dem angegebenen Titel erstellt. Wenn eine JSON-Modelldefinition als Parameter <code>model</code> angehängt wird, wird ein neues Workflow-Modell entsprechend der angegebenen Definition erstellt.<br /> Eine <code>201</code>-Antwort (<code>CREATED</code>) wird mit einem Orts-Header zurückgesendet, der die URL der neuen Workflow-Modellressource enthält.<br /> Dies geschieht auch, wenn eine Modelldefinition als Dateiparameter mit dem Namen <code>modelfile</code> angehängt wird.<br /> In den beiden Fällen der Parameter <code>model</code> und <code>modelfile</code> ist ein zusätzlicher Parameter namens <code>type</code> erforderlich, um das Serialisierungsformat zu definieren. Neue Serialisierungsformate können mithilfe der OSGi-API integriert werden.  Mit der Workflow-Engine wird ein standardmäßiges JSON-Serialisierungsprogramm bereitgestellt. Es weist den Typ „JSON“ auf. Unten sehen Sie ein Beispiel für das Format.</td>
+   <td>Erstellt ein neues Workflow-Modell. Wenn der Parameter <code>title</code> gesendet wird, wird ein neues Modell mit dem angegebenen Titel erstellt. Durch Anhängen einer JSON-Modelldefinition als Parameter <code>model</code> wird ein neues Workflow-Modell entsprechend der angegebenen Definition erstellt.<br /> Eine <code>201</code> Antwort (<code>CREATED</code>) wird mit Orts-Header zurückgesendet, der die URL der neuen Workflow-Modellressource enthält.<br /> Dies geschieht auch, wenn eine Modelldefinition als Dateiparameter mit dem Namen <code>modelfile</code> angehängt wird.<br /> In den beiden Fällen der Parameter <code>model</code> und <code>modelfile</code> ist ein zusätzlicher Parameter namens <code>type</code> erforderlich, um das Serialisierungsformat zu definieren. Neue Serialisierungsformate können mithilfe der OSGi-API integriert werden. Mit der Workflow-Engine wird ein standardmäßiges JSON-Serialisierungsprogramm bereitgestellt. Es weist den Typ „JSON“ auf. Unten sehen Sie ein Beispiel für das Format.</td>
   </tr>
  </tbody>
 </table>
@@ -239,7 +239,7 @@ Wo `*{uri}*` der Pfad zum Modellknoten im Repository ist.
   </tr>
   <tr>
    <td><code>PUT</code></td>
-   <td>Aktualisiert die <code>HEAD</code>-Version des Modells (erstellt eine neue Version).<br /> Die vollständige Modelldefinition für die neue Modellversion muss als Parameter namens <code>model</code> hinzugefügt werden. Außerdem wird ein <code>type</code>-Parameter wie bei der Erstellung neuer Modelle benötigt, der den Wert <code>JSON</code> aufweisen muss.<br /> </td>
+   <td>Aktualisiert die <code>HEAD</code> Version des Modells (erstellt eine neue Version).<br /> Die vollständige Modelldefinition für die neue Modellversion muss als Parameter namens <code>model</code> hinzugefügt werden. Außerdem wird ein <code>type</code>-Parameter wie bei der Erstellung neuer Modelle benötigt, der den Wert <code>JSON</code> aufweisen muss.<br /> </td>
   </tr>
   <tr>
    <td><code>POST</code></td>
@@ -358,7 +358,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Schließt das Arbeitselement ab, dessen URI als Parameter <code>item</code> gesendet wird, und leitet die entsprechende Workflow-Instanz an die nächsten Knoten weiter, die bei einem Rückschritt durch den Parameter <code>route</code> oder <code>backroute</code> definiert werden.<br /> Wenn der Parameter <code>delegatee</code> gesendet wird, wird das vom Parameter <code>item</code> benannte Element an den angegebenen Teilnehmer delegiert.</td>
+   <td>Schließt das Arbeitselement ab, dessen URI als Parameter <code>item</code> gesendet wird und leitet die entsprechende Workflow-Instanz an die nächsten Knoten weiter, die durch den Parameter <code>route</code> definiert werden, oder <code>backroute</code>, wenn ein Schritt zurückgesetzt wird.<br /> Wenn der <code>delegatee</code> gesendet wird, wird das vom <code>item</code> benannte Arbeitselement an den angegebenen Teilnehmer delegiert.</td>
   </tr>
  </tbody>
 </table>
@@ -576,10 +576,10 @@ Sie [können die OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md)�
 Wenn Sie einen **Teilnehmerschritt** fortführen müssen, der innerhalb eines festgelegten Zeitraums nicht abgeschlossen wurde, stehen Ihnen folgende Möglichkeiten zur Verfügung:
 
 1. Implementieren Sie einen OSGI-Ereignis-Listener für die Erstellung und Bearbeitung von Aufgaben.
-1. Geben Sie ein Zeit-Limit (eine Deadline) an und erstellen Sie anschließend einen geplanten Sling-Auftrag, der zu diesem Zeitpunkt ausgelöst wird.
-1. Erstellen Sie einen Auftrags-Handler, der benachrichtigt wird, wenn das Zeitlimit abgelaufen ist, und den Auftrag auslöst.
+1. Geben Sie einn Timeout (eine Deadline) an und erstellen Sie anschließend einen geplanten Sling-Auftrag, der zu diesem Zeitpunkt ausgelöst wird.
+1. Erstellen Sie einen Auftrags-Handler, der benachrichtigt wird, wenn der Timeout abgelaufen ist, und den Auftrag auslöst.
 
-    Dieser Handler führt die erforderlichen Handlungen zum Auftrag durch, wenn dieser noch nicht abgeschlossen ist.
+   Dieser Handler führt die erforderlichen Handlungen zum Auftrag durch, wenn dieser noch nicht abgeschlossen ist.
 
 >[!NOTE]
 >

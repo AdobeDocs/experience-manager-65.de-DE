@@ -12,8 +12,8 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 100%
+source-wordcount: '559'
+ht-degree: 95%
 
 ---
 
@@ -55,7 +55,7 @@ In den folgenden Schritten wird davon ausgegangen, dass es sich bei den neuen lo
 
 >[!NOTE]
 >
->Den Browser-Sprachschema-Code Ihres Browsers finden. Öffnen Sie `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
+>Den Browser-Gebietsschema-Code Ihres Browsers finden. Öffnen Sie `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
 
 ![collapsing_panels_image](assets/collapsing_panels_image.png)
 
@@ -80,7 +80,7 @@ Um die Bilder zu lokalisieren, führen Sie die folgenden Schritte aus:
 
 1. Führen Sie alle semantischen Änderungen durch, die im Artikel [Anpassung von Workspace](../../forms/using/introduction-customizing-html-workspace.md) aufgeführt sind.
 1. Navigieren Sie zum Ordner */js/runtime/utility* und öffnen Sie die Datei *usersession.js* zur Bearbeitung.
-1. Suchen Sie den Code, der im ursprünglichen Code-Block aufgeführt ist und fügen Sie die folgende Bedingung hinzu: *lang !== &#39;nw&#39;* to the if statement:
+1. Suchen Sie den Code, der im ursprünglichen Code-Block aufgeführt ist, und fügen Sie die Bedingung *lang !== &#39;nw* zur if-Anweisung hinzu:
 
    ```javascript
    // Orignal code

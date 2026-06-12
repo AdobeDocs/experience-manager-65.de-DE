@@ -11,8 +11,8 @@ feature: Deploying
 role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 100%
+source-wordcount: '1186'
+ht-degree: 99%
 
 ---
 
@@ -27,8 +27,8 @@ In diesem Abschnitt erfahren Sie, wie Sie Adobe Experience Manager (AEM) mit ein
 
 Es werden die Installationsschritte der folgenden Anwendungs-Server beschrieben:
 
-* [WebSphere](#websphere)
-* [JBoss](#jboss-eap)
+* [WebSphere® 8.5](#websphere)
+* [JBoss® EAP 6.3.0/6.4.0](#jboss-eap)
 * [Oracle WebLogic 12.1.3/12.2](#oracle-weblogic)
 * [Tomcat 8/8.5](#tomcat)
 
@@ -170,7 +170,7 @@ Hierbei wird ein einfaches Server-Layout mit nur einem Administrator-Server verw
 **Bereitstellung der AEM-Webanwendung**
 
 * Laden Sie die AEM-WAR-Datei herunter.
-* Legen Sie die AEM-WAR-Datei im Ordner „${myDomain}/packages/cq“ ab.
+* Legen Sie die AEM-WAR-Datei im Ordner ${myDomain}/packages/cq ab
 * Nehmen Sie bei Bedarf Konfigurationen in `WEB-INF/web.xml` vor (siehe oben unter „Allgemeine Beschreibung“).
 
    * Entpacken Sie die Datei `WEB-INF/web.xml`.

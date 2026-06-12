@@ -9,8 +9,8 @@ exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '3109'
-ht-degree: 100%
+source-wordcount: '3356'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Siehe auch die [Versionshinweise zum neuesten Service Pack von Adobe Experience 
 
 ### Forms {#forms-sp23}
 
-* [Barrierefreie Hyperlinks mit verschiedenen Textstilen in statischen PDFs](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/using-designer.pdf): Hyperlinks, die verschiedene Textstile in statischen PDFs enthalten, werden jetzt als einzelnes, barrierefreies Element getaggt. Diese Verbesserung vereinfacht die Tag-Baumstruktur sowie die Navigation der Bildschirmlesehilfe und unterstützt eine bessere Einhaltung von Vorgaben zur Barrierefreiheit.
+* [Barrierefreie Hyperlinks mit verschiedenen Textstilen in statischen PDFs](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): Hyperlinks, die verschiedene Textstile in statischen PDFs enthalten, werden jetzt als einzelnes, barrierefreies Element getaggt. Diese Verbesserung vereinfacht die Tag-Baumstruktur sowie die Navigation der Bildschirmlesehilfe und unterstützt eine bessere Einhaltung von Vorgaben zur Barrierefreiheit.
 
 * [Aktualisierte unterstützte Plattform-Matrix](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
@@ -41,7 +41,7 @@ Siehe auch die [Versionshinweise zum neuesten Service Pack von Adobe Experience 
 
    * Microsoft® SQL Server JDBC-Treiber 12.8
 
-   * Red Hat® Enterprise Linux® 9 (Kernel 4.x, 64 Bit) 
+   * Red Hat® Enterprise Linux® 9 (Kernel 4.x, 64 Bit)
 
 * [Robuste Dateianhangskomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): Als Sicherheitsmaßnahme verhindert die Komponente jetzt die Übermittlung von Dateien mit geänderten Erweiterungen, die versuchen, Prüfungen zulässiger Dateitypen zu umgehen. Solche Dateien werden während der Übermittlung blockiert, um sicherzustellen, dass nur gültige Dateitypen akzeptiert werden.
 
@@ -129,7 +129,7 @@ Die Registerkarte „IPTC“ bietet nun Unterstützung für die Textfelder [!UIC
 
 ## AEM 6.5, Service Pack 19 – 7. Dezember 2023
 
-* Ermöglicht den Benutzenden des Seiteneditors bzw. der Bildkomponente die Referenzierung von Assets aus dem Remote Assets Cloud Service.  (SITES-13448, SITES-13433)
+* Ermöglicht den Benutzenden des Seiteneditors bzw. der Bildkomponente die Referenzierung von Assets aus dem Remote Assets Cloud Service. (SITES-13448, SITES-13433)
 * AEM unterstützt jetzt die Server-seitige Sortierung für eine schnellere Projektnavigation in der Listenansicht. Projektknoten werden nach der von der Benutzerin bzw. dem Benutzer ausgewählten Spalte sortiert, bevor sie in der Benutzeroberfläche angezeigt werden.
 
 ### [!DNL Forms]
@@ -171,7 +171,7 @@ Die Registerkarte „IPTC“ bietet nun Unterstützung für die Textfelder [!UIC
    * **Verbesserte Transparenz mit dem Audit-Protokoll für Adobe Sign-Dokumente** – Verwenden Sie die Audit-Protokoll-Funktion, um detaillierte Erkenntnisse zum Lebenszyklus Ihrer Adobe Sign-Dokumente zu erhalten. Mit dem Audit-Protokoll können Sie jetzt eine umfassende Aufzeichnung aller Aktionen und Interaktionen führen, die mit Ihren Dokumenten verbunden sind. Zu diesen Aktionen und Interaktionen gehören Details wie etwa die Personen, die das Dokument angesehen, bearbeitet oder unterschrieben haben, sowie Zeitstempel für jedes Ereignis. Diese Verbesserung ist entscheidend für die Einhaltung von Vorschriften, die Beilegung von Streitigkeiten und die Gewährleistung der Integrität Ihrer digitalen Vereinbarungen.
 
 
-   * **Erweiterte Rollen für Empfängerinnen und Empfänger von Vereinbarungen über die Unterzeichnenden hinaus** – Adobe Acrobat Sign bietet die Möglichkeit, die Rollen für Empfängerinnen und Empfänger von Vereinbarungen über die Personen hinaus zu erweitern, die unterzeichnet haben, um die Anforderungen an den Workflow besser zu erfüllen.  Wenn diese Option aktiviert ist, kann die Rolle jeder Empfängerin und jedes Empfängers in einem Vertrag einzeln konfiguriert werden, wobei die Unterzeichnerin bzw. der Unterzeichner die Standardeinstellung ist.
+   * **Erweiterte Rollen für Empfängerinnen und Empfänger von Vereinbarungen über die Unterzeichnenden hinaus** – Adobe Acrobat Sign bietet die Möglichkeit, die Rollen für Empfängerinnen und Empfänger von Vereinbarungen über die Personen hinaus zu erweitern, die unterzeichnet haben, um die Anforderungen an den Workflow besser zu erfüllen. Wenn diese Option aktiviert ist, kann die Rolle jeder Empfängerin und jedes Empfängers in einem Vertrag einzeln konfiguriert werden, wobei die Unterzeichnerin bzw. der Unterzeichner die Standardeinstellung ist.
 
 
 * **[AEM Forms auf JEE-Vollinstallationsprogramm](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)** – Das Service Pack enthält ein vollständiges Installationsprogramm für AEM Forms auf JEE, das mehrere neue Software-Kombinationen unterstützt, darunter:
@@ -193,10 +193,10 @@ Wenn Sie eine Installation durchführen oder die Verwendung der neuesten Softwar
 
   Sie müssen nicht erst zum Asset-Speicherort navigieren und seine Eigenschaften anzeigen, um diese Vorgänge durchzuführen.
 
-* **Dynamic Media _Snapshot_**ermöglicht die Vorschau von Bild-Modifikatoren und Optimierungen der intelligenten Bildbearbeitung – wie WebP- oder AVIF-Ausgabe, bandbreitenabhängige Komprimierung und Skalierung des Geräte-Pixel-Verhältnisses – mithilfe von Testbildern oder Dynamic Media-URLs. Sie können dann sofort vergleichen, wie sich die einzelnen Einstellungen auf die Qualität und die Dateigröße auswirken.
-Siehe [Dynamic Media Snapshot](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+* **Dynamic Media _Momentaufnahme_**ermöglicht die Vorschau von Bildmodifikatoren und Optimierungen der intelligenten Bildbearbeitung - wie WebP- oder AVIF-Ausgabe, bandbreitenabhängige Komprimierung und Skalierung des Gerätepixelverhältnisses - mithilfe von Testbildern oder Dynamic Media-URLs. Sie können dann sofort vergleichen, wie sich jede Einstellung auf die Qualität und Dateigröße auswirkt.
+Siehe [Dynamic Media-Momentaufnahme](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 * **DASH-Streaming mit Dynamic Media** – Neues Protokoll (DASH – Dynamic Adaptive Streaming over HTTP) für adaptives Streaming in Dynamic Media-Videobereitstellung (mit aktiviertem CMAF) eingeführt. Jetzt für alle Regionen verfügbar.
-* **Integration von Experience Manager Sites und Inhaltsfragmenten mit Dynamic Media der nächsten Generation in Assets** – Benutzende können jetzt ihre in der Cloud gehosteten Assets in Experience Manager Sites 6.5 verwenden. Sie können diese Assets auf On-Premise- oder Managed Services-Instanzen erstellen und bereitstellen.
+* **Integration von Experience Manager Sites und Inhaltsfragmenten mit Assets Dynamic Media der nächsten Generation** - Anwender können jetzt ihre in der Cloud gehosteten Assets in Experience Manager Sites 6.5 verwenden. Sie können diese Assets On-Premise- oder Managed Services-Instanzen erstellen und bereitstellen.
 
 ### [!DNL Forms]
 
