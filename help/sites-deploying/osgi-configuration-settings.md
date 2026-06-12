@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 100%
+source-wordcount: '3293'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 OSGi „*stellt die standardisierten Primitive bereit, mit denen Anwendungen aus kleinen, wiederverwendbaren und gemeinsamen Komponenten konstruiert werden können. Diese Komponenten können zu einer Anwendung zusammengestellt und bereitgestellt werden*“.
 
-Diese Funktionalität ermöglicht eine einfache Verwaltung von Bundles, da diese einzeln beendet, installiert und gestartet werden können. Die gegenseitigen Abhängigkeiten werden automatisch verwaltet. Jede OSGi-Komponente (siehe [OSGi-Spezifikation](https://docs.osgi.org/specification/)) ist in einem der Bundles enthalten. Bei der Arbeit mit AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Bundles. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
+Diese Funktionalität ermöglicht eine einfache Verwaltung von Bundles, da diese einzeln gestoppt, installiert und gestartet werden können. Die gegenseitigen Abhängigkeiten werden automatisch verwaltet. Jede OSGi-Komponente (siehe [OSGi-Spezifikation](https://docs.osgi.org/specification/)) ist in einem der Bundles enthalten. Bei der Arbeit mit AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Bundles. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
 Die folgenden OSGi-Konfigurationseinstellungen (aufgeführt nach Bundle) sind für die Projektimplementierung relevant. Nicht alle aufgeführten Einstellungen müssen angepasst werden. Einige werden nur zum besseren Verständnis von AEM erwähnt.
 
@@ -47,7 +47,7 @@ Die folgenden OSGi-Konfigurationseinstellungen (aufgeführt nach Bundle) sind f�
 
 * Die **Ausführungsmodi**, in denen Replikationsereignisse an Listener verteilt werden. Bei einer Definition als Authoring wird die Replikation z. B. vom System „initiiert“.
 
-* Der Ausführungsmodus **Veröffentlichen** muss hinzugefügt werden, wenn der Projekt-Code Replikationsereignisse (Rückwärtsreplikation) in einer Veröffentlichungsumgebung verarbeitet. Dies ist beispielsweise der Fall, wenn der Dispatcher zum Leeren aus der Publishing-Umgebung verwendet wird oder wenn eine standardmäßige Replikation zu anderen Publishing-Instanzen erfolgt.
+* Der Ausführungsmodus **Veröffentlichen** muss hinzugefügt werden, wenn der Projekt-Code Replikationsereignisse (Rückwärtsreplikation) in einer Veröffentlichungsumgebung verarbeitet. Dies ist beispielsweise der Fall, wenn der Dispatcher zum Leeren aus der Publishing-Umgebung verwendet wird oder wenn eine standardmäßige Replikation zu anderen Veröffentlichungsinstanzen erfolgt.
 
 **AEM-Repository-Änderungs-Listener** Konfigurieren Sie:
 
@@ -66,7 +66,7 @@ Die folgenden OSGi-Konfigurationseinstellungen (aufgeführt nach Bundle) sind f�
 >
 >Stellen Sie sicher, dass Sie Folgendes konfigurieren:
 >
->**Benutzername** und **Kennwort**: die Anmeldedaten für den Zugriff auf die Apache Felix Web Management Console.
+>**Benutzername** und **Kennwort** die Anmeldeinformationen für den Zugriff auf die Apache Felix Web Management Console.
 >Das Kennwort muss nach der ersten Installation geändert werden, damit die [Sicherheit](/help/sites-administering/security-checklist.md) Ihrer Instanz gewährleistet ist.
 
 >[!NOTE]
@@ -83,17 +83,17 @@ Siehe [AEM-Protokollierung](/help/sites-deploying/configure-logging.md) und [Sli
 
 * **Minimale Poolgröße** und **Maximale Poolgröße**, die Größe des Pools, der zum Speichern von Ereignis-Threads verwendet wird.
 
-* **Warteschlangengröße**, die maximale Größe der Thread-Warteschlange, wenn der Pool erschöpft ist.
+* **Queue Size**, die maximale Größe der Thread-Warteschlange, wenn der Pool erschöpft ist.
 Der empfohlene Wert ist `-1`, da dadurch die Warteschlange auf unbegrenzt gesetzt wird. Wenn ein Limit festgelegt ist, kann es bei Überschreitung zu Verlusten kommen.
 
-* Das Ändern dieser Einstellungen kann die Leistung in Szenarien mit einer hohen Anzahl von Ereignissen verbessern, z. B. bei starker Nutzung von AEM DAM oder Workflow.
+* Das Ändern dieser Einstellungen kann die Leistung in Szenarien mit einer hohen Anzahl von Ereignissen verbessern. Beispielsweise starke Nutzung von AEM DAM oder Workflows.
 * Für Ihr Szenario spezifische Werte sollten mithilfe von Tests festgelegt werden.
 * Diese Einstellungen können sich auf die Leistung Ihrer Instanz auswirken. Ändern Sie sie daher nicht ohne Grund und nur nach reiflicher Überlegung.
 
 **Apache Sling GET Servlet** Konfigurieren Sie einige Aspekte des Renderings:
 
 * **Auto Index** zum Aktivieren/Deaktivieren der Verzeichnisausgabe beim Browsen.
-* **Aktivieren** (oder Deaktivieren) von Standardwiedergaben, wie **HTML**, **Nur Text**, **JSON** oder **XML**.
+* **Aktivieren** (oder Deaktivieren) von Standardwiedergaben, z. B. **HTML**, **Nur Text**, **JSON** oder **XML**.
 Deaktivieren Sie JSON nicht.
 
 >[!NOTE]
@@ -112,7 +112,7 @@ Bestimmte Einstellungen können sich auf die Leistung auswirken. Deaktivieren Si
 
 **Apache Sling JCR Installer** Diese Parameter müssen wahrscheinlich nicht konfiguriert werden. Es ist jedoch nützlich, diese beim Entwickeln oder Debuggen zu kennen. Die Installationsordner können beispielsweise zum Ein- oder Auschecken oder zum Erstellen eines Pakets nützlich sein.
 
-* **Name des Installationsordners regexp** und **Maximale Hierarchietiefe von Installationsordnern** – geben an, wo und bis zu welcher Tiefe die Repository-Ordner nach zu installierenden Ressourcen durchsucht werden. Wenn ein Platzhalter verwendet wird (wie in.&#42;/install), werden alle passenden Ordner durchsucht, z. B. hier `/libs/sling/install` und `/libs/cq/core/install`.
+* **Name des Installationsordners regexp** und **Maximale Hierarchietiefe von Installationsordnern** – geben an, wo und bis zu welcher Tiefe die Repository-Ordner nach zu installierenden Ressourcen durchsucht werden. Wenn ein Platzhalter verwendet wird (wie in .&#42;/install), werden alle passenden Ordner durchsucht, z. B. `/libs/sling/install` und `/libs/cq/core/install`.
 
 * **Search Path** listet die Pfade auf, in denen jcrinstall nach zu installierenden Ressourcen sucht, und eine Ziffer, die den Gewichtungsfaktor für den Pfad angibt.
 
@@ -234,8 +234,8 @@ Siehe: [https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Reso
 
 Es können verschiedene Parameter festgelegt werden, darunter:
 
-* **Ausführungspfade** – Listet die Pfade für die Suche nach ausführbaren Skripten auf. Durch die Konfiguration bestimmter Pfade können Sie einschränken, welche Skripte ausgeführt werden können. Wenn kein Pfad konfiguriert ist, wird der Standard verwendet (`/` = Stammpfad), sodass alle Skripte ausgeführt werden können.
-Falls ein konfigurierter Pfadwert mit einem Schrägstrich endet, wird die gesamte Unterstruktur durchsucht. Ohne einen solchen Schrägstrich wird das Skript nur bei einer exakten Übereinstimmung ausgeführt.
+* **Ausführungspfade** - Listet die Pfade für die Suche nach ausführbaren Skripten auf. Durch die Konfiguration bestimmter Pfade können Sie einschränken, welche Skripte ausgeführt werden können. Wenn kein Pfad konfiguriert ist, wird der Standard verwendet (`/` = Stamm), sodass alle Skripte ausgeführt werden können.
+Wenn ein konfigurierter Pfadwert mit einem Schrägstrich endet, wird die gesamte Unterstruktur durchsucht. Ohne einen solchen Schrägstrich wird das Skript nur ausgeführt, wenn es eine exakte Übereinstimmung ist.
 
 * **Skript-Benutzer**: Diese optionale Eigenschaft kann das Repository-Benutzerkonto angeben, das zum Lesen der Skripte verwendet wird. Wenn kein Konto angegeben wird, wird standardmäßig `admin` als Benutzer verwendet.
 
@@ -332,41 +332,44 @@ Mit AEM Root Mapping können Sie die Benutzeroberfläche konfigurieren, die Sie 
 
 **Adobe Granite-SSO-Authentifizierungs-Handler** – Konfigurieren von SSO-Details (Single Sign-On). Diese Details werden oft in Authoring-Setups für Unternehmen benötigt, oft mit LDAP.
 
-Verschiedene Eigenschaften können konfiguriert werden: 
+Verschiedene Eigenschaften können konfiguriert werden:
 
-* **Pfad**
+* **path**
 Der Pfad, für den dieser Authentifizierungs-Handler aktiv ist. Wenn dieser Parameter nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert. Beispielsweise wird beim Pfad / der Authentifizierungs-Handler für das gesamte Repository verwendet.
 
-* **Service Ranking** Der Rangfolge-Wert für den OSGi-Framework-Dienst gibt die Reihenfolge an, in der dieser Dienst aufgerufen wird. Dieser Wert ist ein `int`-Wert, wobei höhere Werte eine höhere Priorität bezeichnen.
+* **Service-Ranking**
+Der Rangfolgewert für den OSGi-Framework-Dienst gibt die Reihenfolge an, in der dieser Dienst aufgerufen wird. Dieser Wert ist ein `int` Wert, bei dem höhere Werte eine höhere Priorität angeben.
 Der Standardwert ist `0`.
 
-* **Kopfzeilen-Namen**
+* **Kopfzeilennamen**
 Die Namen von Kopfzeilen, die möglicherweise eine Benutzer-ID enthalten.
 
 * **Cookie-Namen**
 Die Namen von Cookies, die möglicherweise eine Benutzer-ID enthalten.
 
-* **Parameter-Namen**
+* **Parameternamen**
 Die Namen von Anfrageparametern, die möglicherweise eine Benutzer-ID angeben.
 
-* **User Map** Für bestimmte Benutzer kann der aus der HTTP-Anforderung extrahierte Benutzername im Anmeldedaten-Objekt durch einen anderen Namen ersetzt werden. Die Zuordnung ist hier definiert. Falls der Benutzername `admin` auf beiden Seiten der Zuordnung angezeigt wird, wird die Zuordnung ignoriert. Das Zeichen „=“ muss mit einem vorangestellten „\“ versehen werden.
+* **Benutzerzuordnung**
+Für ausgewählte Benutzer kann der aus der HTTP-Anfrage extrahierte Benutzername im Anmeldedaten-Objekt durch einen anderen Namen ersetzt werden. Die Zuordnung ist hier definiert. Falls der Benutzername `admin` auf beiden Seiten der Zuordnung angezeigt wird, wird die Zuordnung ignoriert. Das Zeichen „=“ muss mit einem vorangestellten „\“ versehen werden.
 
-* **Format** Gibt das Format an, in dem die Benutzer-ID angegeben ist. Verwenden Sie:
+* **format**
+Gibt das Format an, in dem die Benutzer-ID angegeben ist. Verwenden Sie:
 
    * `Basic`, falls die Benutzer-ID im HTTP-Standard-Authentifizierungsformat kodiert ist
    * `AsIs`, falls die Benutzer-ID im Nur-Text-Format bereitgestellt wird, oder jeder für reguläre Ausdrücke gültige Wert unverändert bzw. jeder reguläre Ausdruck verwendet werden soll
 
-**Day CQ WCM Debug Filter** Dies ist beim Entwickeln hilfreich, da Suffixe wie ?debug=layout beim Zugriff auf eine Seite verwendet werden können. Zum Beispiel liefert https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout Layout-Informationen, die für Entwicklungspersonen von Interesse sein können.
+**Day CQ WCM Debug Filter** Dies ist beim Entwickeln hilfreich, da Suffixe wie ?debug=layout beim Zugriff auf eine Seite verwendet werden können. Beispielsweise enthält https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout Layout-Informationen, die für Entwickler von Interesse sein können.
 
 * Um Leistung und Sicherheit zu gewährleisten, deaktivieren Sie diese Option auf Produktionsinstanzen.
 
 **Day CQ WCM Filter** Konfigurieren Sie:
 
 * **WCM-Modus**, um den Standardmodus festzulegen.
-* Bei einer Authoring-Instanz kann dieser Modus `edit`, `disable,preview` oder `analytics` sein.
-Auf die anderen Modi kann über den Sidekick zugegriffen werden, oder es kann das Suffix `?wcmmode=disabled` zum Emulieren einer Produktionsumgebung verwendet werden.
+* Bei einer Autoreninstanz kann dieser Modus `edit`, `disable,preview` oder `analytics` sein.
+Auf die anderen Modi kann über den Sidekick zugegriffen werden. Oder das `?wcmmode=disabled` Suffix kann zum Emulieren einer Produktionsumgebung verwendet werden.
 
-* Bei einer Publishing-Instanz muss dieser Modus auf `disabled` gesetzt werden, um sicherzustellen, dass kein anderer Modus zugänglich ist.
+* Bei einer Veröffentlichungsinstanz muss dieser Modus auf `disabled` gesetzt werden, um sicherzustellen, dass kein anderer Modus zugänglich ist.
 
 >[!NOTE]
 >
@@ -384,7 +387,7 @@ Auf die anderen Modi kann über den Sidekick zugegriffen werden, oder es kann da
 
 * **Paths**, eine Liste der Speicherorte, die das System auf Seitenänderungen überwacht, bevor ein `jcr:Event` ausgelöst wird.
 
-**Adobe Page Impressions Tracker** Konfigurieren Sie für eine Authoring-Instanz Folgendes:
+**Adobe Page Impressions Tracker** Konfigurieren Sie für eine Autoreninstanz Folgendes:
 
 * **sling.auth.requirements**: Legen Sie für diese Eigenschaft den Wert auf `-/libs/wcm/stats/tracker` fest.
 
@@ -438,7 +441,7 @@ Dies ist eine Werkskonfiguration, sodass mehrere Instanzen konfiguriert werden k
 * Zugriff auf die Ressource von AEM über das CDN beim ersten Mal (oder nachdem sie im Cache abgelaufen ist).
 * Sicherer Zugriff auf die im CDN zwischengespeicherte Ressource. Nachdem die Ressource im CDN zwischengespeichert wurde, wird die Anfrage nicht an AEM gesendet und alle Benutzenden, die Zugriff auf diese Ressource haben, sollten vom CDN aus bedient werden.
 
-AEM bietet einen Rewriter zum Neuschreiben interner Asset-URLs in externe CDN-URLs. Er schreibt die an das CDN weiterzuleitenden Links um und fügt eine JWS-Signatur und eine Ablaufzeit hinzu, damit der Zugriff auf das Asset sicher ist. Diese Funktion wird in Authoring-Instanzen verwendet.
+AEM bietet einen Rewriter zum Neuschreiben interner Asset-URLs in externe CDN-URLs. Er schreibt die an das CDN weiterzuleitenden Links um und fügt eine JWS-Signatur und eine Ablaufzeit hinzu, damit der Zugriff auf das Asset sicher ist. Diese Funktion wird in Autoreninstanzen verwendet.
 
 Der Gesamtablauf ist wie folgt:
 
@@ -457,7 +460,7 @@ Der Fluss zwischen dem Browser des Benutzers, dem CDN und AEM sieht wie folgt au
 
 >[!NOTE]
 >
->Diese Funktion ist derzeit nur für die AEM-Authoring-Instanzen aktiviert.
+>Diese Funktion ist derzeit nur für die AEM-Autoreninstanzen aktiviert.
 
 **CDNConfigServiceImpl** Bietet CDN-Konfigurationen
 

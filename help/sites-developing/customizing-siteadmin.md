@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 100%
+source-wordcount: '760'
+ht-degree: 91%
 
 ---
 
@@ -115,12 +115,12 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 Wenn Sie die Websites-Administrationskonsole öffnen und Ihre Site durchsuchen, gibt der Browser einen Ajax-Aufruf aus, um das JSON-Objekt abzurufen, das zum Erstellen der Konsole verwendet wird. Wenn Sie beispielsweise zum Ordner `/content/geometrixx` navigieren, wird die folgende Anforderung an den AEM-Server gesendet, um die Konsole zu erstellen:
 
-[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=SiteAdmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 Gehen Sie wie folgt vor, um sicherzustellen, dass der neue Dienst nach der Bereitstellung des Bundles, das ihn enthält, ausgeführt wird:
 
 1. Lassen Sie Ihren Browser auf die folgende URL verweisen:
-   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=SiteAdmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 1. Die Antwort sollte die neuen Eigenschaften wie folgt anzeigen:
 
@@ -138,8 +138,8 @@ Der letzte Schritt besteht darin, die Knotenstruktur der Websites-Administration
 
    * Entfernen Sie **pageText**.
 
-   * Legen Sie **pathRegex** auf `/content/geometrixx(/.*)?` fest
-Dadurch wird die Rasterkonfiguration für alle Geometrixx-Websites aktiviert.
+   * Legen **pathRegex** auf fest. `/content/geometrixx(/.*)?`
+Dadurch ist die Rasterkonfiguration für alle Geometrixx-Websites aktiviert.
 
    * Legen Sie **storeProxySuffix** auf `.pages.json` fest
 
@@ -147,11 +147,11 @@ Dadurch wird die Rasterkonfiguration für alle Geometrixx-Websites aktiviert.
 
    * Um die MSM-Funktion zu aktivieren, fügen Sie die folgenden MSM-Parameter zu der aus mehreren Zeichenfolgen bestehenden Eigenschaft **storeReaderFields** hinzu:
 
-      * **msm:isSource**
-      * **msm:isInBlueprint**
-      * **msm:isLiveCopy**
+      * **MSM:isSource**
+      * **MSM:isInBlueprint**
+      * **MSM:isLiveCopy**
 
-1. Fügen Sie einen Knoten `starred` (des Typs **nt:unstructured**) unter `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` mit den folgenden Eigenschaften hinzu:
+1. Fügen Sie einen `starred` Knoten (vom Typ **nt:unstructured**) unter `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` mit den folgenden Eigenschaften hinzu:
 
    * **dataIndex**: `starred` des Typs „String“
 
@@ -162,7 +162,7 @@ Dadurch wird die Rasterkonfiguration für alle Geometrixx-Websites aktiviert.
 1. (optional) Verschieben Sie die Spalten, die Sie nicht anzeigen möchten, per Drag-and-Drop nach `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
 1. `/siteadmin` ist ein Vanity-Pfad, der standardmäßig auf `/libs/wcm/core/content/siteadmin` verweist.
-Um ihn an Ihre SiteAdmin-Version auf `/apps/wcm/core/content/siteadmin` umzuleiten, definieren Sie die Eigenschaft `sling:vanityOrder` so, dass sie einen höheren Wert aufweist, als auf `/libs/wcm/core/content/siteadmin` definiert ist. Der Standardwert lautet 300, also sind alle höheren Werte geeignet.
+Um diesen an Ihre Version von siteadmin auf `/apps/wcm/core/content/siteadmin` umzuleiten, definieren Sie die Eigenschaft `sling:vanityOrder` so, dass sie einen höheren Wert aufweist, als auf `/libs/wcm/core/content/siteadmin` definiert. Der Standardwert ist 300, daher sind alle höheren Werte geeignet.
 
 1. Wechseln Sie zu Websites-Administrationskonsole und navigieren Sie zur folgenden Geometrixx-Website:
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).

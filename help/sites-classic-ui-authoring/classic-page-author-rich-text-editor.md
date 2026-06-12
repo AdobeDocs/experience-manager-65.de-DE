@@ -10,8 +10,8 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 100%
+source-wordcount: '1788'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +57,7 @@ Derzeit ist der Kontext-Bearbeitungsmodus für Seitenelemente aktiviert, die von
 
 ## Funktionen des Rich-Text-Editors {#features-of-the-rich-text-editor}
 
-Der Rich-Text-Editor bietet verschiedene Funktionen, die [von der Konfiguration](/help/sites-administering/rich-text-editor.md) der einzelnen Komponente abhängen. Die Funktionen sind sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche verfügbar.
+Der Rich-Text-Editor bietet eine Reihe von Funktionen, die [ von der Konfiguration ](/help/sites-administering/rich-text-editor.md) einzelnen Komponente abhängen. Die Funktionen sind sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche verfügbar.
 
 ### Grundlegende Zeichenformate {#basic-character-formats}
 
@@ -106,7 +106,7 @@ Es sind die Standardfunktionen **[!UICONTROL Ausschneiden]** und **[!UICONTROL K
 * Ausschneiden (Strg+X)
 * Kopieren (Strg-C)
 * Einfügen
-Dies ist das Standard-Einfügeverfahren (Strg+V) für die Komponente. Für Standardinstallationen ist [!UICONTROL Aus Word einfügen] festgelegt.
+Dies ist der Standard-Einfügemechanismus (Strg+V) für die Komponente. Für Standardinstallationen ist hier „Aus Word einfügen[!UICONTROL  festgelegt].
 
 * Als Text einfügen: Hierbei werden alle Stile und Formatierungen entfernt und der Inhalt wird als reiner Text eingefügt.
 
@@ -258,7 +258,7 @@ Sowohl in der Komponente **Text** als auch in der Komponente **Tabelle** sind di
 
 >[!NOTE]
 >
->In der Komponente **Tabelle** ist außerdem eine spezielle Symbolleiste verfügbar, die neben den Standard-Funktionen für die Bearbeitung von Rich-Text auch eine Untergruppe tabellenspezifischer Funktionen enthält.
+>In der Komponente **Tabelle** ist außerdem eine spezielle Symbolleiste verfügbar, die neben den Standard-Funktionen für die Bearbeitung von Rich-Text auch eine Teilmenge tabellenspezifischer Funktionen enthält.
 
 Die tabellenspezifischen Funktionen sind:
 
@@ -267,7 +267,7 @@ Die tabellenspezifischen Funktionen sind:
 * [Zeilen hinzufügen oder löschen](#add-or-delete-rows)
 * [Spalten hinzufügen oder löschen](#add-or-delete-columns)
 * [Ganze Zeilen oder Spalten auswählen](#selecting-entire-rows-or-columns)
-* [Zellen verbinden](#merge-cells)
+* [Zellen zusammenführen](#merge-cells)
 * [Zellen teilen](#split-cells)
 * [Verschachtelte Tabellen](#creating-nested-tables)
 * [Tabelle entfernen](#remove-table)
@@ -339,8 +339,8 @@ Dadurch wird die gesamte Zeile bzw. Spalte ausgewählt. Anschließend sind besti
 
 ![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
-* Wenn Sie eine Gruppe von Zellen ausgewählt haben, können Sie sie zu einer einzigen Zelle fusionieren.
-* Wenn Sie nur eine Zelle ausgewählt haben, können Sie diese Zelle mit der Zelle rechts davon oder der Zelle unterhalb davon fusionieren.
+* Wenn Sie eine Gruppe von Zellen ausgewählt haben, können Sie sie zu einer einzigen Zelle zusammenführen.
+* Wenn Sie nur eine Zelle ausgewählt haben, können Sie diese Zelle mit der Zelle rechts davon oder der Zelle unterhalb davon zusammenführen.
 
 #### Teilen von Zellen {#split-cells}
 

@@ -137,7 +137,7 @@ Die folgenden Segmente werden mit der [WKND-Tutorial-Site](getting-started.md) i
 
 Die Regeln zur Auflösung dieser Segmente werden wie folgt zusammengefasst:
 
-* Zunächst wird [&#x200B; Speicher &#x200B;](ch-samplestores.md#contexthub-geolocation-sample-store-candidate)Geolocation“ verwendet, um den Breitengrad des Benutzers zu bestimmen.
+* Zunächst wird [ Speicher ](ch-samplestores.md#contexthub-geolocation-sample-store-candidate)Geolocation“ verwendet, um den Breitengrad des Benutzers zu bestimmen.
 * Dann bestimmt das Datenelement für den Monat des [surferinfo](ch-samplestores.md#contexthub-surferinfo-sample-store-candidate)-Stores, in welcher Jahreszeit sich dieser Breitengrad befindet.
 
 >[!WARNING]

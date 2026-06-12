@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: ht
-source-wordcount: '649'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '689'
+ht-degree: 96%
 
 ---
 
@@ -25,11 +25,11 @@ ht-degree: 100%
 
 AEM bietet verschiedene Methoden zum Anpassen von Konsolen (und der [Seitenbearbeitungsfunktionen](/help/sites-developing/customizing-page-authoring-touch.md)) Ihrer Autoreninstanz.
 
-* Client-Bibliotheken 
+* Clientlibs
 Mit Client-Bibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden wiederverwenden. Bei der Anpassung können Sie unter `/apps.` Ihre eigene Client-Bibliothek erstellen. Sie kann beispielsweise den Code enthalten, der für Ihre benutzerdefinierte Komponente erforderlich ist.
 
 * Überlagerungen
-Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, die Standardfunktionen (in `/libs`) mit Ihren eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die Sling-Ressourcenzusammenführung das Vererben zulässt.
+Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, Standardfunktionen (in `/libs`) mit Ihren eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen:1 ist keine 1:1-Kopie des Originals erforderlich, da die Sling-Ressourcenzusammenführung das Vererben zulässt.
 
 Überlagerungen können auf viele Arten zum Erweitern Ihrer AEM-Konsolen verwendet werden. Einige davon sind nachstehend (allgemein) beschrieben.
 

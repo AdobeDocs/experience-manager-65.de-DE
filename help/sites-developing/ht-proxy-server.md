@@ -11,7 +11,7 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '954'
 ht-degree: 100%
 
 ---
@@ -47,7 +47,7 @@ Hierbei handelt es sich um die Hostadresse der CRX-Instanz, zu der Sie eine Verb
 
 `<remoteport>`
 
-Hierbei handelt es sich um den Port der CRX-Zielinstanz. Der Standardport für eine neue AEM-Installation lautet zum Beispiel **`4502`** und der Standardport für eine neue AEM-Erstellungsinstanz `4502`.
+Hierbei handelt es sich um den Port der CRX-Zielinstanz. Der Standardport für eine neue AEM-Installation lautet zum Beispiel **`4502`** und der Standardport für eine neue AEM-Autoreninstanz `4502`.
 
 `<localport>`
 
@@ -218,7 +218,7 @@ So überprüfen Sie, ob Keep-Alive funktioniert:
 
 **Finden verlorener Anfragen**
 
-Sollten Anfragen in einer komplexen Server-Umgebung, zum Beispiel mit einer Firewall und einem Dispatcher, verloren gehen, können Sie mithilfe des Proxy-Servers herausfinden, wo die Anfrage verloren ging.  Wenn eine Firewall vorhanden ist:
+Sollten Anfragen in einer komplexen Server-Umgebung, zum Beispiel mit einer Firewall und einem Dispatcher, verloren gehen, können Sie mithilfe des Proxy-Servers herausfinden, wo die Anfrage verloren ging. Wenn eine Firewall vorhanden ist:
 
 * Starten Sie einen Proxy vor der Firewall.
 * Starten Sie einen weiteren Proxy hinter der Firewall.

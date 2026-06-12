@@ -155,7 +155,7 @@ Die Kopfzeile befindet sich immer am oberen Rand des Bildschirms. Die meisten Op
 
   Sie können auch den [Tastaturbefehl](/help/sites-authoring/keyboard-shortcuts.md) `/` (Schrägstrich) verwenden, um von jeder beliebigen Konsole aus die Suche zu starten.
 
-* [Lösungen](https://business.adobe.com/de/)
+* [Lösungen](https://business.adobe.com/)
 
   ![Lösungen](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -555,7 +555,7 @@ In der Timeline-Spalte haben Sie folgende Möglichkeiten:
 
       * Alle anzeigen
 
-* [Hinzufügen/Anzeigen von Kommentaren zum gewählten Element &#x200B;](#timelineaddingandviewingcomments) Das Feld **Kommentare** wird unten in der Ereignisliste angezeigt. Wenn Sie einen Kommentar gefolgt von der Eingabetaste eingeben, wird der Kommentar registriert. Er wird angezeigt, wenn **Kommentare** oder **Alle anzeigen** ausgewählt ist.
+* [Hinzufügen/Anzeigen von Kommentaren zum gewählten Element ](#timelineaddingandviewingcomments) Das Feld **Kommentare** wird unten in der Ereignisliste angezeigt. Wenn Sie einen Kommentar gefolgt von der Eingabetaste eingeben, wird der Kommentar registriert. Er wird angezeigt, wenn **Kommentare** oder **Alle anzeigen** ausgewählt ist.
 
 * Bestimmte Konsolen verfügen über zusätzliche Funktionen. In der Sites-Konsole können Sie beispielsweise Folgendes tun:
 

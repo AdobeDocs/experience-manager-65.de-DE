@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 47aac4b19bfbd29395fb09f3c27c981e7aa908f6
 workflow-type: tm+mt
-source-wordcount: '4984'
-ht-degree: 100%
+source-wordcount: '5053'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Die Verwendung der GraphQL-API in AEM ermöglicht die effiziente Bereitstellung 
 
 * Vermeiden von iterativen API-Anfragen wie bei REST,
 * Sicherstellen, dass die Bereitstellung auf die spezifischen Anforderungen beschränkt ist,
-* Ermöglichen der Massenbereitstellung von genau dem, was zum Rendern als Antwort auf eine einzelne API-Anfrage benötigt wird.
+* Ermöglichen der Massenbereitstellung von genau dem, was zum Rendern als Antwort auf eine einzelne API-Abfrage benötigt wird.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Die Verwendung der GraphQL-API in AEM ermöglicht die effiziente Bereitstellung 
 
 ## Voraussetzungen {#prerequisites}
 
-Kunden und Kundinnen, die GraphQL verwenden, sollten das AEM-Inhaltsfragment mit GraphQL Index Package 1.0.5 installieren. Siehe [Versionshinweise](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) für weitere Informationen.
+Kunden und Kundinnen, die GraphQL verwenden, sollten das AEM-Inhaltsfragment mit GraphQL Index Package 1.0.5 installieren. Weitere Informationen finden [ in ](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) Versionshinweisen .
 
 ## Die GraphQL-API {#graphql-api}
 
@@ -61,7 +61,7 @@ Weitere Informationen zur GraphQL-API finden Sie in den folgenden Abschnitten (n
 
    * [Einführung in GraphQL](https://graphql.org/learn)
 
-   * [GraphQL-Spezifikation](https://spec.graphql.org/)
+   * [Die GraphQL-Spezifikation](https://spec.graphql.org/)
 
 * Unter [graphql.com](https://graphql.com):
 
@@ -70,9 +70,9 @@ Weitere Informationen zur GraphQL-API finden Sie in den folgenden Abschnitten (n
 
 Die Implementierung von GraphQL für AEM basiert auf der standardmäßigen GraphQL-Java™-Bibliothek. Siehe:
 
-* [graphQL.org – Java](https://graphql.org/code/#java)
+* [graphQL.org - Java](https://graphql.org/code/#java)
 
-* [GraphQL-Java™ auf GitHub](https://github.com/graphql-java)
+* [GraphQL Java™ auf GitHub](https://github.com/graphql-java)
 
 ### GraphQL-Terminologie {#graphql-terminology}
 
@@ -197,8 +197,8 @@ Wenn Benutzende beispielsweise ein Inhaltsfragmentmodell mit dem Namen `Article`
 
    * Drei von ihnen wurden auf Benutzerseite kontrolliert: `author`, `main`, und `referencearticle`.
 
-   * Die anderen Felder wurden automatisch von AEM hinzugefügt und stellen hilfreiche Methoden dar, um Informationen zu einem bestimmten Inhaltsfragment bereitzustellen. In diesem Beispiel sind dies
-(die [Helferfelder](#helper-fields)) `_path`, `_metadata`, `_variations`.
+   * Die anderen Felder wurden automatisch von AEM hinzugefügt und stellen hilfreiche Methoden dar, um Informationen zu einem bestimmten Inhaltsfragment bereitzustellen. In diesem Beispiel
+(die [Hilfsfelder](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. Nachdem ein Benutzer ein Inhaltsfragment basierend auf dem Modell „Article“ erstellt hat, kann es über GraphQL abgefragt werden. Beispiele finden Sie in den [Beispielabfragen](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries) (basierend auf einer [Beispielstruktur für Inhaltsfragmente zur Verwendung mit GraphQL](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
@@ -254,15 +254,15 @@ GraphQL für AEM unterstützt eine Liste von Typen. Alle unterstützten Datentyp
 
 | Datentyp für Inhaltsfragmentmodelle | GraphQL-Typ | Beschreibung |
 |--- |--- |--- |
-| Einzeiliger Text | `String`, `[String]` |  Wird für einfache Zeichenfolgen wie Autorennamen, Ortsnamen usw. verwendet. |
+| Einzeiliger Text | `String`, `[String]` |  Wird für einfache Zeichenfolgen wie Autorennamen, Ortsnamen usw. verwendet. |
 | Mehrzeiliger Text | `String` |  Wird für die Ausgabe von Text verwendet, z. B. für den Textkörper eines Artikels |
 | Zahl |  `Float`, `[Float]` | Wird für die Anzeige von Gleitkommazahlen und regulären Zahlen verwendet |
-| Boolesch |  `Boolean` |  Wird für die Anzeige von Kontrollkästchen → einfachen Wahr/Falsch-Aussagen verwendet |
+| Boolescher Wert |  `Boolean` |  Wird für die Anzeige von Kontrollkästchen → einfachen Wahr/Falsch-Aussagen verwendet |
 | Datum und Uhrzeit | `Calendar` |  Wird verwendet, um Datum und Uhrzeit in einem ISO 8086-Format anzuzeigen. Je nach ausgewähltem Typ gibt es drei Varianten, die in AEM-GraphQL verwendet werden können: `onlyDate`, `onlyTime`, `dateTime` |
 | Aufzählung |  `String` |  Wird verwendet, um eine Option aus einer Liste von Optionen anzuzeigen, die bei der Modellerstellung definiert wurde |
 |  Tags |  `[String]` |  Wird verwendet, um eine Liste von Zeichenfolgen anzuzeigen, die in AEM verwendete Tags darstellen |
 | Inhaltsreferenz |  `String` |  Wird verwendet, um den Pfad zu einem anderen Asset in AEM anzuzeigen |
-| Fragmentreferenz | *Ein Modelltyp* <br><br>Einzelnes Feld: `Model` – Modelltyp, direkt referenziert <br><br>Multifeld, mit einem referenzierten Typ: `[Model]`: Array vom Typ `Model`, direkt referenziert von Array <br><br>Multifeld, mit mehreren referenzierten Typen: `[AllFragmentModels]`: Array aller Modelltypen, referenziert von Array mit Vereinigungstyp  |  Wird verwendet, um auf ein oder mehrere Inhaltsfragmente bestimmter Modelltypen zu verweisen, die beim Erstellen des Modells definiert wurden |
+| Fragmentreferenz |  *Ein Modelltyp* <br><br>Einzelnes Feld: `Model` – Modelltyp, direkt referenziert <br><br>Multifeld, mit einem referenzierten Typ: `[Model]`: Array vom Typ `Model`, direkt referenziert von Array <br><br>Multifeld, mit mehreren referenzierten Typen: `[AllFragmentModels]`: Array aller Modelltypen, referenziert von Array mit Vereinigungstyp |  Wird verwendet, um auf ein oder mehrere Inhaltsfragmente bestimmter Modelltypen zu verweisen, die beim Erstellen des Modells definiert wurden |
 
 {style="table-layout:auto"}
 
@@ -272,7 +272,7 @@ Zusätzlich zu den Datentypen für benutzergenerierte Felder generiert GraphQL f
 
 Diese [Hilfsfelder](#helper-fields) sind durch ein vorangestelltes `_` gekennzeichnet, um zu unterscheiden, was vom Benutzer bzw. von der Benutzerin definiert und was automatisch generiert wurde.
 
-#### Pfad  {#path}
+#### Pfad {#path}
 
 Das Pfadfeld wird in AEM GraphQL als Kennung verwendet. Es stellt den Pfad des Inhaltsfragment-Assets im AEM Repository dar. Dieser Pfad wird als Kennung eines Inhaltsfragments gewählt, da er:
 
@@ -291,7 +291,7 @@ Der folgende Code zeigt die Pfade aller Inhaltsfragmente an, die auf der Grundla
 }
 ```
 
-Um ein einzelnes Inhaltsfragment eines bestimmten Typs abzurufen, müssen Sie zunächst auch dessen Pfad bestimmen. Zum Beispiel:
+Um ein einzelnes Inhaltsfragment eines bestimmten Typs abzurufen, müssen Sie zunächst auch dessen Pfad bestimmen. Beispiel:
 
 ```graphql
 {
@@ -366,7 +366,7 @@ Weitere Informationen finden Sie unter [Beispielabfrage für Metadaten – Liste
 
 #### Varianten {#variations}
 
-Das Feld `_variations` wurde implementiert, um die Abfrage der Varianten eines Inhaltsfragments zu vereinfachen. Zum Beispiel:
+Das Feld `_variations` wurde implementiert, um die Abfrage der Varianten eines Inhaltsfragments zu vereinfachen. Beispiel:
 
 ```graphql
 {
@@ -609,7 +609,7 @@ Die Sortierkriterien:
    * ASC (aufsteigend) oder DESC (absteigend); standardmäßig wird ASC angewendet
    * die Richtung kann pro Feld angegeben werden. Diese Fähigkeit bedeutet, dass Sie ein Feld in aufsteigender Reihenfolge sortieren können, ein anderes in absteigender Reihenfolge (name, firstName DESC)
 
-Zum Beispiel:
+Beispiel:
 
 ```graphql
 query {
@@ -641,7 +641,7 @@ Sie können auch ein Feld innerhalb eines verschachtelten Fragments mithilfe des
 >
 >Dieses Format kann sich negativ auf die Leistung auswirken.
 
-Zum Beispiel:
+Beispiel:
 
 ```graphql
 query {
@@ -708,7 +708,7 @@ Der Abfragetyp `...Paginated` verwendet die meisten `...List`-Abfragetypfunktion
 
 * `first`: Die `n` ersten zurückzugebenden Elemente.
 Der Standardwert lautet `50`.
-Der Maximalwert ist `100`.
+Das Maximum ist `100`.
 * `after`: Der Cursor, der den Anfang der angeforderten Seite bestimmt. Das durch den Cursor dargestellte Element ist nicht in der Ergebnismenge enthalten. Der Cursor einer Position wird durch das Feld `cursor` der Struktur `edges` bestimmt.
 
 Ein Beispiel für die Ausgabe einer Ergebnisseite mit bis zu fünf Abenteuern, beginnend mit dem angegebenen Cursor-Element in der *vollständigen* Ergebnisliste:
@@ -1073,11 +1073,11 @@ Außerdem müssen Sie Folgendes beachten:
 
       * Diese Felder weisen unterschiedliche Datentypen auf.
 
-   * Zum Beispiel:
+   * Beispiel:
 
       * Wenn zwei (oder mehr) Fragmente mit verschiedenen Modellen (z. B. `M1`, `M2`) als mögliche Verweise (Inhaltsverweis oder Fragmentverweis) aus einem anderen Fragment verwendet werden, z. B. `Fragment1` `MultiField/List`,
-      * und diese beiden Fragmente mit verschiedenen Modellen (`M1`, `M2`) Felder mit demselben Namen, aber unterschiedlichen Typen haben.
-Beispiel:
+      * Diese beiden Fragmente mit unterschiedlichen Modellen (`M1`, `M2`) enthalten Felder mit demselben Namen, aber unterschiedlichen Typen.
+Veranschaulichen:
          * `M1.Title` als `Text`
          * `M2.Title` als `Text/MultiField`
       * Dann tritt ein Feldkonfliktfehler auf, wenn die GraphQL-Abfrage das `Title`-Feld enthält.
@@ -1092,9 +1092,9 @@ Es wurden folgende Fragen aufgeworfen:
 
 1. **F**: „*Wie unterscheidet sich die GraphQL-API für AEM von der Query Builder-API?*“
 
-   * **A**:
-„*Die AEM-GraphQL-API bietet vollständige Kontrolle über die JSON-Ausgabe und ist ein Industriestandard für die Abfrage von Inhalten.
-In Zukunft plant AEM, in die AEM GraphQL-API zu investieren.*“
+   * **a**:
+&quot;*Die AEM GraphQL-API bietet vollständige Kontrolle über die JSON-Ausgabe und ist ein Branchenstandard für die Abfrage von Inhalten.
+AEM plant, in Zukunft in die AEM GraphQL-API zu investieren.*&quot;
 
 ## Tutorial – Erste Schritte mit AEM Headless und GraphQL {#tutorial}
 
