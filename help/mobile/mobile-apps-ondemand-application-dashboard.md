@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '590'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ Auf der Kachel **Verbindung verwalten** werden die AEM Mobile On-demand Services
 >
 >Klicken Sie oben rechts auf das Zahnrad, um eine Mobile On-Demand-Cloud-Konfiguration einzurichten.
 >
->Weitere [&#x200B; finden Sie unter „Konfigurieren von Mobile On-Demand](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)Services“.
+>Weitere [ finden Sie unter „Konfigurieren von Mobile On-Demand](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)Services“.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -70,7 +70,7 @@ Diese drei Kacheln bieten einen Überblick über den Zustand des Inhalts einer A
 * **Artikel**
 * **Sammlungen**
 
-Jede Kachel kann erweitert werden, um eine detailliertere Listenansicht zu erhalten, indem Sie auf die Auslassungspunkte (…) in der rechten unteren Ecke klicken. Diese Listenansichten bieten eine alternative Möglichkeit, auf gängige Mobile-On-Demand-Aktionen wie Löschen, Hochladen und Bearbeiten von Eigenschaften zuzugreifen.
+Jede Kachel kann durch Klicken auf die Auslassungspunkte (…) erweitert werden, um eine detailliertere Listenansicht zu erhalten. in der unteren rechten Ecke. Diese Listenansichten bieten eine alternative Möglichkeit, auf gängige Mobile-On-Demand-Aktionen wie Löschen, Hochladen und Bearbeiten von Eigenschaften zuzugreifen.
 
 ### Die Kachel Banner verwalten {#the-manage-banners-tile}
 
@@ -80,7 +80,7 @@ Jede Kachel kann erweitert werden, um eine detailliertere Listenansicht zu erhal
 * **TITLE**: Name des Banners
 * **MODIFIED**: zuletzt geändert in AEM
 * **UPLOADED**: zuletzt von AEM hochgeladen
-* **VERÖFFENTLICHT**: AEM des zuletzt veröffentlichten Anfrageformulars
+* **VERÖFFENTLICHT**: Zuletzt veröffentlichte Anforderung von AEM
 * **SOURCE**: Quelle (AEM lokal oder remote über Mobile On Demand)
 
 Die folgende Abbildung zeigt die Kachel **Banner verwalten** im Dashboard der AEM Mobile-Anwendung:
@@ -99,7 +99,7 @@ Die folgende Abbildung zeigt die Kachel **Banner verwalten** im Dashboard der AE
 * **TITLE**: Name des Artikels
 * **MODIFIED**: zuletzt geändert in AEM
 * **UPLOADED**: zuletzt von AEM hochgeladen
-* **VERÖFFENTLICHT**: AEM des zuletzt veröffentlichten Anfrageformulars
+* **VERÖFFENTLICHT**: Zuletzt veröffentlichte Anforderung von AEM
 * **SOURCE**: Quelle (AEM lokal oder remote von Mobile On-Demand)
 
 Die folgende Abbildung zeigt die Kachel **Artikel verwalten** im Dashboard der AEM Mobile-Anwendung:
@@ -118,7 +118,7 @@ Die folgende Abbildung zeigt die Kachel **Artikel verwalten** im Dashboard der A
 * **TITLE**: Name der Sammlung
 * **MODIFIED**: zuletzt geändert in AEM
 * **UPLOADED**: zuletzt von AEM hochgeladen
-* **VERÖFFENTLICHT**: AEM des zuletzt veröffentlichten Anfrageformulars
+* **VERÖFFENTLICHT**: Zuletzt veröffentlichte Anforderung von AEM
 * **SOURCE**: Quelle (AEM lokal oder remote von Mobile On-Demand)
 
 Die folgende Abbildung zeigt die Kachel **Sammlungen verwalten** im Dashboard der AEM Mobile-Anwendung:

@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '803'
 ht-degree: 2%
 
 ---
@@ -30,9 +30,9 @@ Sammlungen stellen einen klar definierten *Bucket) dar* der mit Inhalten wie Art
 >
 >In den folgenden Ressourcen in der Online-Hilfe erfahren Sie mehr über die folgenden Themen in AEM Mobile-Programmen:
 >
->* [Überlegungen zum Design](https://helpx.adobe.com/de/digital-publishing-solution/help/design-app.html)
+>* [Überlegungen zum Design](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Verwalten von Sammlungen](https://helpx.adobe.com/de/digital-publishing-solution/help/creating-collections.html)
+>* [Verwalten von Sammlungen](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
 >
 
 ## Erstellen von Sammlungen {#creating-a-collection}
@@ -69,12 +69,12 @@ Der Workflow zum Importieren einer neuen Sammlung
 
 ## Bearbeiten von Sammlungen {#editing-a-collection}
 
-Verwenden Sie den integrierten AEM-Drag-and-Drop-Editor, um einen Artikel hinzuzufügen oder zu ändern. Komponenten wie Text und Bilder können hinzugefügt/entfernt werden. Bilder von DAM Assets können eingefügt werden.
+Verwenden Sie den integrierten Drag-and-Drop-Editor von AEM, um einen Artikel hinzuzufügen oder zu ändern. Komponenten wie Text und Bilder können hinzugefügt/entfernt werden. Bilder von DAM Assets können eingefügt werden.
 
 Der Workflow zum Bearbeiten einer Sammlung:
 
 1. Wählen Sie unter Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Wählen Sie einen Artikel aus der AEM-Quelle aus der Kachel **Sammlungen verwalten**.
+1. Wählen Sie einen Artikel aus AEM aus der Kachel **Sammlungen verwalten**.
 1. Klicken Sie in der Listenansicht auf die hervorgehobene Sammlung, um sie im Inhaltseditor zu öffnen.
 1. Verwenden Sie den Inhaltseditor, um Sammlungsinhalte (Manuskripte, Bilder, Text usw.) zu ziehen.
 

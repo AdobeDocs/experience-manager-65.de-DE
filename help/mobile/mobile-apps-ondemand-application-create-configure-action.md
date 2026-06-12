@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '380'
 ht-degree: 1%
 
 ---
@@ -28,9 +28,9 @@ Die Details Ihrer App können im Dashboard oder AEM Mobile Control Center angeze
 
 >[!NOTE]
 >
->AEM Mobile Das Dashboard besteht aus einer Reihe nützlicher Kacheln, die einen Überblick über den Inhalt, die Metadaten und den Verbindungsstatus der Mobile App bei Bedarf bieten.
+>Das Dashboard besteht aus einer Reihe nützlicher Kacheln, die einen Überblick über den Inhalt, die Metadaten und den Verbindungsstatus der Mobile App bei Bedarf bieten.
 >
->Detaillierte Informationen finden Sie unter &lbrace;0[&#128279;](/help/mobile/mobile-apps-ondemand-application-dashboard.md) Dashboard der AEM Mobile-Anwendung.
+>Detaillierte Informationen finden Sie unter {0](/help/mobile/mobile-apps-ondemand-application-dashboard.md) Dashboard der AEM Mobile-Anwendung.[
 
 **So erstellen Sie eine On-Demand-App:**
 
@@ -62,7 +62,7 @@ Sie müssen über eine vorhandene Mobile-App-Vorlage (oder eine installierte App
 
 Nachdem Sie eine On-Demand-App über das Anwendungs-Dashboard erstellt haben, besteht der nächste Schritt darin, Ihre App mit der Cloud-Konfiguration zu verknüpfen.
 
-Weitere [&#x200B; finden Sie unter „Verknüpfen Ihrer App mit &#x200B;](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) Cloud-Konfiguration“.
+Weitere [ finden Sie unter „Verknüpfen Ihrer App mit ](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) Cloud-Konfiguration“.
 
 ### Vorwärtskommen {#getting-ahead}
 
@@ -74,7 +74,7 @@ Wenn Sie mit dem Erstellen eines On-Demand-Programms und dem Verknüpfen dieses 
 * [Verwalten von Bannern](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Verwalten von Sammlungen](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Hochladen freigegebener Ressourcen](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Publish - Veröffentlichung von Inhalten aufheben](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Veröffentlichen von Inhalt aufheben der Veröffentlichung](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 Informationen zu den Rollen und Zuständigkeiten eines Administrators bzw. einer Administratorin und eines Entwicklers finden Sie in den folgenden Ressourcen:
 
