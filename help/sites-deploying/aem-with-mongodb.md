@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: ht
-source-wordcount: '6216'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '6582'
+ht-degree: 99%
 
 ---
 
@@ -32,13 +32,13 @@ MongoDB wird normalerweise zur Unterstützung von AEM-Authoring-Bereitstellungen
 * hohe Anzahl von Seitenbearbeitungen;
 * große Rollouts oder Aktivierungen.
 
-Die oben genannten Kriterien gelten nur für die Autoreninstanzen und nicht für Veröffentlichungsinstanzen, die alle auf TarMK basieren sollten. Die Anzahl der Benutzer bzw. Benutzerinnen bezieht sich auf authentifizierte Benutzer bzw. Benutzerinnen, da Authoring-Instanzen keinen nicht-authentifizierten Zugriff zulassen.
+Die oben genannten Kriterien gelten nur für die Autoreninstanzen und nicht für Veröffentlichungsinstanzen, die alle auf TarMK basieren sollten. Die Anzahl der Benutzer bzw. Benutzerinnen bezieht sich auf authentifizierte Benutzer bzw. Benutzerinnen, da Autoreninstanzen keinen nicht-authentifizierten Zugriff zulassen.
 
 Werden die Kriterien nicht erfüllt, wird zwecks Verfügbarkeit eine aktive TarMK-Bereitstellung bzw. eine Standby-TarMK-Bereitstellung empfohlen. Im Allgemeinen sollte MongoDB in Situationen berücksichtigt werden, in denen die Skalierungsanforderungen größer sind, als mit einem einzelnen Hardware-Element erzielt werden kann.
 
 >[!NOTE]
 >
->Weitere Informationen zur Größenanpassung von Authoring-Instanzen und zur Definition gleichzeitiger Benutzer bzw. Benutzerinnen finden Sie in den [Richtlinien zur Hardware-Skalierung](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel).
+>Weitere Informationen zur Größenanpassung von Autoreninstanzen und zur Definition gleichzeitiger Benutzer bzw. Benutzerinnen finden Sie in den [Richtlinien zur Hardware-Skalierung](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel).
 
 ### Minimale MongoDB-Bereitstellung für AEM {#minimal-mongodb-deployment-for-aem}
 
@@ -48,7 +48,7 @@ Nachfolgend wird eine minimale Bereitstellung für AEM auf MongoDB aufgeführt. 
 
 Eine minimale Bereitstellung setzt voraus, dass `mongod`-Instanzen als Replikatgruppe konfiguriert sind. Eine Instanz wird als primäres Replikat gewählt, die beiden anderen sind sekundäre Replikate; die Wahl wird von `mongod` verwaltet. Angebunden an jede Instanz ist eine lokale Festplatte. So kann der Cluster die Auslastung unterstützen. Es wird ein Mindestdurchsatz von 12 MB pro Sekunde mit mehr als 3000 I/O Operations per Second (IOPS) empfohlen.
 
-Die AEM-Autoren sind mit den `mongod`-Instanzen verbunden, wobei jeweils eine Verbindung zu allen drei `mongod`-Instanzen besteht. Schreibvorgänge werden an die primäre Instanz gesendet und Lesevorgänge können von jeder der Instanzen gelesen werden. Der Traffic wird basierend auf dem Laden durch einen Dispatcher an eine der aktiven AEM-Authoring-Instanzen verteilt. Der Oak-Datenspeicher ist ein `FileDataStore` und die MongoDB-Überwachung erfolgt je nach Bereitstellungsort über MMS oder MongoDB Ops Manager. Die Betriebssystemebene und die Protokollüberwachung werden von Drittanbieterlösungen wie Splunk oder Ganglia bereitgestellt.
+Die AEM-Autoren sind mit den `mongod`-Instanzen verbunden, wobei jeweils eine Verbindung zu allen drei `mongod`-Instanzen besteht. Schreibvorgänge werden an die primäre Instanz gesendet und Lesevorgänge können von jeder der Instanzen gelesen werden. Der Traffic wird basierend auf dem Laden durch einen Dispatcher an eine der aktiven AEM-Autoreninstanzen verteilt. Der Oak-Datenspeicher ist ein `FileDataStore` und die MongoDB-Überwachung erfolgt je nach Bereitstellungsort über MMS oder MongoDB Ops Manager. Die Betriebssystemebene und die Protokollüberwachung werden von Drittanbieterlösungen wie Splunk oder Ganglia bereitgestellt.
 
 In dieser Bereitstellung sind alle Komponenten für eine erfolgreiche Implementierung erforderlich. Jede fehlende Komponente macht die Implementierung funktionsunfähig.
 
@@ -263,7 +263,7 @@ MongoDB läuft auf verschiedenen Betriebssystemen, einschließlich einer Vielzah
    * Wert für andkernel.threads-max: 64000
 
 * Stellen Sie sicher, dass für Ihr System der Auslagerungsspeicher konfiguriert ist. Detaillierte Informationen zu den Größenanforderungen finden Sie in der Dokumentation zu Ihrem Betriebssystem.
-* Stellen Sie sicher, dass der Standardwert des Systems für TCP-Keepalive richtig festgelegt ist. Der Wert „300“ bietet häufig eine bessere Performance für Replikatsätze und freigegebene Cluster. Siehe: [Wirkt sich die TCP-Keepalive-Zeit auf MongoDB-Bereitstellungen aus? ](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) in den häufig gestellten Fragen für weitere Informationen.
+* Stellen Sie sicher, dass der Standardwert des Systems für TCP-Keepalive richtig festgelegt ist. Der Wert „300“ bietet häufig eine bessere Performance für Replikatsätze und freigegebene Cluster. Siehe: [Wirkt sich die TCP-Keepalive-Zeit auf MongoDB-Bereitstellungen aus?](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) in den häufig gestellten Fragen für weitere Informationen.
 
 #### Windows {#windows}
 
@@ -289,7 +289,7 @@ Beim Schreiben auf die Festplatte schreibt WiredTiger alle in einem Snapshot ent
 
 MongoDB konfiguriert WiredTiger so, dass Checkpoints (d. h. das Schreiben des Snapshots auf die Festplatte) in Intervallen von 60 Sekunden oder für jeweils 2 GB Journaldaten erstellt werden.
 
-Während des Schreibens eines neuen Checkpoints ist der vorherige Checkpoint weiterhin gültig. Daher kann MongoDB den letzten gültigen Checkpoint nach einem Neustart auch dann wiederherstellen, wenn es während des Schreibens des neuen Checkpoints zu einem Fehler oder einem Absturz kommt.
+Während des Schreibens eines neuen Checkpoints ist der vorherige Checkpoint weiterhin gültig. Daher kann MongoDB den letzten gültigen Checkpoint nach einem Neustart auch dann wiederherstellen, wenn es während des Schreibens des neuen Checkpoints zu einem Fehler oder einer Beendigung kommt.
 
 Der neue Checkpoint wird verfügbar und dauerhaft, wenn die Metadatentabelle von WiredTiger automatisch aktualisiert wird, um auf den neuen Checkpoint zu verweisen. Sobald der neue Checkpoint verfügbar ist, gibt WiredTiger die Seiten des alten Checkpoints frei.
 
@@ -307,7 +307,7 @@ Siehe [Journaling mit WiredTiger](https://docs.mongodb.com/manual/core/journalin
 
 >[!NOTE]
 >
->Die minimale Protokolldatensatzgröße für WiredTiger beträgt 128 Bytes. Wenn ein Protokolldatensatz 128 Bytes oder kleiner ist, komprimiert WiredTiger diesen Datensatz nicht.
+>Die minimale Protokolleintragsgröße für WiredTiger beträgt 128 Bytes. Wenn ein Protokolleintrag 128 Bytes oder kleiner ist, komprimiert WiredTiger diesen Eintrag nicht.
 >
 >Sie können das Journal deaktivieren, indem Sie für [storage.journal.enabled](https://docs.mongodb.com/manual/reference/configuration-options/#storage.journal.enabled) „false“ festlegen. So können Sie den Mehraufwand für die Pflege des Journals verringern.
 >
@@ -453,7 +453,7 @@ sudo blockdev --setra <value> <device>
 
 #### NTP aktivieren {#enable-ntp}
 
-Vergewissern Sie sich, dass NTP auf dem Computer installiert ist, auf dem die MongoDB-Datenbanken gehostet werden. Beispielsweise können Sie NTP über Yum Package Manager auf einem CentOS-Rechner installieren:
+Vergewissern Sie sich, dass NTP auf dem Computer installiert ist, auf dem die MongoDB-Datenbanken gehostet werden. Beispielsweise können Sie NTP über Yum-Paket-Manager auf einem CentOS-Rechner installieren:
 
 ```shell
 sudo yum install ntp
@@ -591,7 +591,7 @@ Stellen Sie zudem sicher, dass alle Bibliotheken im Build auf dem aktuellen Stan
 
 Eine typische Dispatcher-Konfiguration verarbeitet das zehn- bis 20-Fache des Anforderungsdurchsatzes einer AEM-Einzelinstanz.
 
-Da der Dispatcher hauptsächlich ohne Status ist, kann er mit Leichtigkeit horizontal skaliert werden. In einigen Bereitstellungen müssen Autorinnen und Autoren am Zugriff auf bestimmte Ressourcen gehindert werden. Es wird empfohlen, einen Dispatcher mit den Authoring-Instanzen zu verwenden.
+Da der Dispatcher hauptsächlich ohne Status ist, kann er mit Leichtigkeit horizontal skaliert werden. In einigen Bereitstellungen müssen Autorinnen und Autoren am Zugriff auf bestimmte Ressourcen gehindert werden. Es wird empfohlen, einen Dispatcher mit den Autoreninstanzen zu verwenden.
 
 Wenn AEM ohne Dispatcher ausgeführt wird, müssen die SSL-Beendigung und der Lastenausgleich von einer anderen Anwendung durchgeführt werden. Dies ist erforderlich, weil Sitzungen eine Affinität gegenüber der AEM-Instanz aufweisen müssen, auf der sie erstellt wurden. Dieses Konzept ist auch als Sticky-Verbindung bekannt. Damit soll sichergestellt werden, dass die Aktualisierungen der Inhalte mit minimaler Latenz erfolgen.
 
@@ -599,7 +599,7 @@ Weitere Informationen zur entsprechenden Konfiguration finden Sie in der [Dispat
 
 ### Zusätzliche Konfiguration {#additional-configuration}
 
-#### Sticky-Verbindungen  {#sticky-connections}
+#### Sticky-Verbindungen {#sticky-connections}
 
 Sticky-Verbindungen stellen sicher, dass personalisierte Seiten und Sitzungsdaten für einen Benutzer bzw. eine Benutzerin alle auf derselben Instanz von AEM erstellt werden. Diese Daten werden in der Instanz gespeichert, sodass nachfolgende Anforderungen desselben Benutzers bzw. Benutzerin an dieselbe Instanz zurückgegeben werden.
 

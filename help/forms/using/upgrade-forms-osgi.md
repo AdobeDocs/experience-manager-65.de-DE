@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi, AEM Forms Upgrade
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 100%
+source-wordcount: '1040'
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ Die direkte Aktualisierung von **AEM 6.0 Forms, AEM 6.1 Forms**, und **AEM 6.2 F
 
 Führen Sie die folgenden Schritte durch, um von AEM 6.3 Forms oder AEM 6.4 Forms auf AEM 6.5 Forms zu aktualisieren:
 
-1. Aktualisieren Sie die bestehende AEM-Instanz auf AEM 6.5. Dies umfasst die folgenden Schritte:
+1. Aktualisieren Sie die bestehende AEM-Instanz auf AEM 6.5. Die Schritte sind hier aufgeführt:
 
    1. Installieren Sie das aktuelle Service Pack und die Patches für AEM 6.3 Forms bzw. AEM 6.4 Forms. Weitere Informationen finden Sie unter [AEM Sustenance-Hub](https://helpx.adobe.com/de/experience-manager/aem-releases-updates.html).
    1. Bereiten Sie die Quellinstanz für die Aktualisierung vor. Ausführliche Anweisungen finden Sie unter [Aktualisieren auf AEM 6.5](/help/sites-deploying/upgrade.md).
@@ -33,7 +33,7 @@ Führen Sie die folgenden Schritte durch, um von AEM 6.3 Forms oder AEM 6.4 Form
 
       `chmod -R 755 ../crx-quickstart`
 
-   1. Aktualisieren Sie Ihre AEM-Instanz auf AEM 6.3. Anweisungen in Einzelschritten finden Sie unter [Aktualisieren auf AEM 6.5](/help/sites-deploying/upgrade.md).
+   1. Aktualisieren Sie Ihre AEM-Instanz auf AEM 6.3. Eine schrittweise Anleitung finden Sie unter [Aktualisieren auf AEM 6.5](/help/sites-deploying/upgrade.md).
 
       Bevor Sie mit den nächsten Schritten fortfahren, warten Sie, bis die Nachrichten ServiceEvent REGISTERED und ServiceEvent UNREGISTERED nicht mehr in der Datei &lt;crx-repository>/error.log angezeigt werden.
 
@@ -49,7 +49,7 @@ Führen Sie die folgenden Schritte durch, um von AEM 6.3 Forms oder AEM 6.4 Form
       1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** aus.
       1. Wählen Sie die Version aus und geben Sie sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
    1. Wählen Sie den für Ihr Betriebssystem zutreffenden Paketnamen, dann **[!UICONTROL EULA-Bedingungen akzeptieren]** und dann **[!UICONTROL Herunterladen]** aus.
-   1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
+   1. Öffnen Sie den [Paket-Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
    1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
       Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
@@ -62,7 +62,7 @@ Führen Sie die folgenden Schritte durch, um von AEM 6.3 Forms oder AEM 6.4 Form
 
    >[!NOTE]
    >
-   >Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+   > Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 1. Führen Sie nach der Installation folgende Aktivitäten durch.
 

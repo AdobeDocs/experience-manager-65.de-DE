@@ -11,7 +11,7 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2210'
 ht-degree: 98%
 
 ---
@@ -28,8 +28,8 @@ Nach der Konfiguration der Integration müssen Sie bei Änderungen an den Dynami
 >
 >Wenn Sie DTM mit einer benutzerdefinierten Proxy-Konfiguration verwenden, müssen Sie beide HTTP-Client-Proxy-Konfigurationen vornehmen, da manche Funktionen von AEM 3.x-APIs verwenden und andere wiederum 4.x-APIs:
 >
->* 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert.
->* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert.
+>* 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert
+>* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert
 >
 
 ## Implementierungsoptionen {#deployment-options}
@@ -163,7 +163,7 @@ Beim Hosten der dynamischen Tag-Management-Bibliotheken in AEM konfiguriert AEM 
   </tr>
   <tr>
    <td>Wert für Terminplan</td>
-   <td>(Wird angezeigt und ist erforderlich, wenn Abruf-Import-Tool aktivieren ausgewählt ist.) Ein Cron-Ausdruck, der steuert, wann die Dynamic Tag Management-Bibliotheken heruntergeladen werden.</td>
+   <td>(Wird angezeigt und ist erforderlich, wenn „Abruf-Import-Tool aktivieren“ ausgewählt ist.) Ein Cron-Ausdruck, der steuert, wann die Dynamic Tag Management-Bibliotheken heruntergeladen werden.</td>
   </tr>
  </tbody>
 </table>

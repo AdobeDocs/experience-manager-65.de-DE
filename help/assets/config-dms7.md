@@ -13,8 +13,8 @@ feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '6675'
-ht-degree: 98%
+source-wordcount: '6444'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ Das folgende Architekturdiagramm beschreibt die Funktionsweise von Dynamic Media
 
 Mit der neuen Architektur ist Experience Manager für Assets aus Primärquellen und Synchronisierungen mit Dynamic Media für die Verarbeitung und Veröffentlichung von Assets zuständig:
 
-1. Wenn das Primärquellen-Asset in Experience Manager hochgeladen wird, wird es nach Dynamic Media repliziert. Ab diesem Punkt übernimmt Dynamic Media die gesamte Asset-Verarbeitung und die Erstellung von Ausgabedarstellungen, z. B. Videokodierung und dynamische Varianten eines Bilds.
+1. Wenn das Primärquellen-Asset in Experience Manager hochgeladen wird, wird es nach Dynamic Media repliziert. Ab diesem Zeitpunkt übernimmt Dynamic Media die gesamte Asset-Verarbeitung und die Generierung von Ausgabedarstellungen, z. B. Videokodierung und dynamische Varianten eines Bildes.
 (Im Dynamic Media-Scene7-Modus beträgt die standardmäßige Upload-Dateigröße 2 GB oder weniger. Informationen zum Hochladen von Dateigrößen von 2 GB bis 15 GB finden Sie unter [(Optional) Konfigurieren des Dynamic Media-Scene7-Modus für das Hochladen von Assets mit mehr als 2 GB](#optional-config-dms7-assets-larger-than-2gb).)
 1. Nachdem die Ausgabedarstellungen generiert wurden, kann Experience Manager sicher auf die Remote-Dynamic Media-Ausgabedarstellungen zugreifen und eine Vorschau davon anzeigen (es werden keine Binärdateien an die Experience Manager-Instanz zurückgesendet).
 1. Nachdem der Inhalt bereit zur Genehmigung und Veröffentlichung ist, wird der Dynamic Media-Service ausgelöst und pusht Inhalte an Bereitstellungs-Server und Cache-Inhalte in das CDN (Content Delivery Network).
@@ -76,7 +76,7 @@ Führen Sie zum Migrieren der von Ihren erstellten benutzerdefinierten Vorgaben 
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
-## Installieren von Feature Pack 18912 für die Massenmigration von Assets {#installing-feature-pack-for-bulk-asset-migration}
+## Installieren des Feature Pack 18912 für die Massenmigration von Assets {#installing-feature-pack-for-bulk-asset-migration}
 
 Die Installation von Feature Pack 18912 ist *optional*.
 
@@ -140,15 +140,15 @@ Weitere Informationen finden Sie unter [Installieren des Feature Pack 18912 für
 
       * **[!UICONTROL Selektive Veröffentlichung]** Mit dieser Option können Sie steuern, welche Ordner in Dynamic Media veröffentlicht werden. Damit können Sie Funktionen wie intelligenten Zuschnitt oder dynamische Ausgabedarstellungen verwenden oder bestimmen, welche Ordner ausschließlich in Experience Manager zur Vorschau veröffentlicht werden. Die gleichen Assets werden *nicht* in Dynamic Media veröffentlicht, um sie in der öffentlichen Domain bereitzustellen.<br>Sie können diese Option hier in der **[!UICONTROL Konfiguration von Dynamic Media Cloud“ festlegen]** oder, wenn Sie es vorziehen, diese Option auf Ordnerebene in den **[!UICONTROL Eigenschaften]** eines Ordners festlegen.<br>Siehe [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](/help/assets/selective-publishing.md).<br>Wenn Sie diese Konfiguration später ändern oder auf Ordnerebene ändern, wirken sich diese Änderungen nur auf neue Assets aus, die Sie ab diesem Zeitpunkt hochladen. Der Veröffentlichungsstatus vorhandener Assets im Ordner bleibt unverändert, bis Sie ihn im Dialogfeld **[!UICONTROL Quick Publish]** oder **[!UICONTROL Veröffentlichung verwalten]** manuell ändern.
 
-   * **[!UICONTROL Sicherer Vorschau-Server]** – bietet Ihnen die Möglichkeit, den URL-Pfad zu Ihrem Vorschau-Server für sichere Ausgaben anzugeben. Nachdem die Ausgabedarstellungen generiert wurden, kann Experience Manager sicher auf die Remote-Dynamic Media-Ausgabedarstellungen zugreifen und eine Vorschau davon anzeigen (es werden keine Binärdateien an die Experience Manager-Instanz zurückgesendet).
+   * **[!UICONTROL Sicherer Vorschau-Server]** - ermöglicht Ihnen, den URL-Pfad zu Ihrem Vorschau-Server für sichere Ausgaben anzugeben. Das heißt, nachdem Ausgabedarstellungen generiert wurden, kann Experience Manager sicher auf die Remote-Dynamic Media-Ausgabedarstellungen zugreifen und eine Vorschau davon anzeigen (es werden keine Binärdateien an die Experience Manager-Instanz zurückgesendet).
 Sofern Sie keine gesonderte Vereinbarung zum Verwenden Ihrer eigenen Unternehmens-Server oder eines speziellen Servers getroffen haben, empfiehlt Adobe, diese Einstellung nicht zu verändern.
 
    * **[!UICONTROL Alle Inhalte synchronisieren]** – <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->ist standardmäßig ausgewählt. Deaktivieren Sie diese Option, wenn Sie Assets aus der Synchronisierung mit Dynamic Media gezielt ein- oder ausschließen möchten. Wenn Sie diese Option deaktivieren, können Sie aus den beiden folgenden Synchronisierungsmodi für Dynamic Media wählen:
 
    * **[!UICONTROL Synchronisierungsmodus für Dynamic Media]**
       * **[!UICONTROL Standardmäßig aktiviert]** – Die Konfiguration wird auf alle Ordner angewendet, es sei denn, Sie markieren einen Ordner speziell zum Ausschließen. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-      * **[!UICONTROL Standardmäßig deaktiviert]** – Die Konfiguration wird auf einen Ordner erst dann angewendet, wenn Sie einen ausgewählten Ordner explizit zur Synchronisierung mit Dynamic Media markieren.
-Um einen ausgewählten Ordner zur Synchronisierung mit Dynamic Media zu markieren, wählen Sie einen Asset-Ordner aus und wählen Sie dann in der Symbolleiste **[!UICONTROL Eigenschaften]** aus. Wählen Sie auf der Registerkarte **[!UICONTROL Details]** in der Dropdown-Liste **[!UICONTROL Synchronisierungsmodus für Dynamic Media]** eine der folgenden drei Optionen aus. Wenn Sie fertig sind, wählen Sie **[!UICONTROL Speichern]** aus. *Denken Sie daran: Diese drei Optionen stehen nicht zur Verfügung, wenn Sie zuvor **[!UICONTROL Alle Inhalte synchronisieren]**&#x200B;ausgewählt haben.* Siehe auch [Arbeiten mit selektiver Veröffentlichung auf der Ordnerebene in Dynamic Media](/help/assets/selective-publishing.md).
+      * **[!UICONTROL Standardmäßig deaktiviert]** - Die Konfiguration wird auf einen Ordner erst dann angewendet, wenn Sie einen ausgewählten Ordner explizit zur Synchronisierung mit Dynamic Media markieren.
+Um einen ausgewählten Ordner zur Synchronisierung mit Dynamic Media zu markieren, wählen Sie einen Asset-Ordner aus und wählen Sie dann in der Symbolleiste **[!UICONTROL Eigenschaften]** aus. Wählen Sie auf **[!UICONTROL Registerkarte]** in der Dropdown-Liste **[!UICONTROL Synchronisierungsmodus für Dynamic]**) eine der folgenden drei Optionen aus. Wenn Sie fertig sind, wählen Sie **[!UICONTROL Speichern]**. *Denken Sie daran: Diese drei Optionen sind nicht verfügbar, wenn Sie zuvor **[!UICONTROL Alle Inhalte synchronisieren]**&#x200B;ausgewählt haben.* Siehe auch [Arbeiten mit selektiver Veröffentlichung auf der Ordnerebene in Dynamic Media](/help/assets/selective-publishing.md).
          * **[!UICONTROL Vererbt]** – Kein expliziter Synchronisierungswert für den Ordner. Stattdessen übernimmt der Ordner den Synchronisierungswert von einem seiner Vorgängerordner oder den Standardmodus in der Cloud-Konfiguration. Der detaillierte Status für geerbte Daten wird als QuickInfo angezeigt.
          * **[!UICONTROL Aktivieren für Unterordner]**: Schließt alle Elemente in dieser Unterstruktur zur Synchronisierung mit Dynamic Media ein. Die ordnerspezifischen Einstellungen setzen den Standardmodus in der Cloud-Konfiguration außer Kraft.
          * **[!UICONTROL Deaktiviert für Unterordner]**: Schließt alle Elemente in dieser Unterstruktur von der Synchronisierung mit Dynamic Media aus.
@@ -299,7 +299,7 @@ Wenn Sie diese Funktion verwenden möchten, beachten Sie die folgenden Vorausset
 
 1. Suchen Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** unter der Spalte **[!UICONTROL Name]** den Eintrag `sizeLimit`.
 1. Doppelklicken Sie rechts neben dem Namen `sizeLimit` unter der Spalte **[!UICONTROL Wert]** auf das Wertefeld.
-1. Geben Sie den entsprechenden Wert in Byte ein, um die maximale Upload-Größe festlegen zu können. Um beispielsweise die maximale Asset-Größe für den Upload auf 10 GB zu erhöhen, geben Sie im Wertefeld `10737418240` ein.
+1. Geben Sie den entsprechenden Wert in Byte ein, um die maximale Upload-Größe festlegen zu können. Um beispielsweise die maximale Asset-Größe für den Upload auf 10 GB zu erhöhen, geben Sie `10737418240` in das Wertefeld ein.
 Sie können einen Wert von bis zu 15 GB (`2013265920` Byte) eingeben. In diesem Fall werden hochgeladene Assets, die größer als 15 GB sind, nicht hochgeladen.
 
    ![Größenbeschränkungswert](/help/assets/assets-dm/uploadassets15gb_c.png)

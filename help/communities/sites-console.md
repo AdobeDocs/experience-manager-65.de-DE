@@ -12,7 +12,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '3084'
+source-wordcount: '2963'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ In [Erste Schritte mit AEM Communities](/help/communities/getting-started.md) er
 
 Bevor Sie eine Community-Site erstellen, *Sie (*):
 
-* Stellen Sie sicher, dass mindestens eine Publish-Instanz ausgeführt wird.
+* Stellen Sie sicher, dass mindestens eine Veröffentlichungsinstanz ausgeführt wird.
 * Aktivieren Sie den [Tunneldienst](/help/communities/deploy-communities.md#tunnel-service-on-author), um Mitglieder und Mitgliedergruppen zu verwalten.
 * Identifizieren Sie den [primären Herausgeber](/help/communities/deploy-communities.md#primary-publisher).
 * [Konfigurieren Sie die &#x200B;](/help/communities/deploy-communities.md#replication-agents-on-author), wenn der primäre Publisher-Port nicht der Standard ist (4503).
@@ -61,7 +61,7 @@ Um eine Community-Site zu erstellen, klicken Sie auf das Symbol **Erstellen** .
 
 Um auf eine vorhandene Community-Site zum Erstellen, Ändern, Veröffentlichen, Exportieren oder Hinzufügen einer verschachtelten Gruppe zuzugreifen, wählen Sie das Ordnersymbol der Site aus.
 
-## Site-Erstellung {#site-creation}
+## Erstellung einer Site {#site-creation}
 
 Die Konsole zur Site-Erstellung bietet einen schrittweisen Ansatz zum Zusammenstellen von Funktionen der Site basierend auf einer ausgewählten [Community-Site-Vorlage](/help/communities/sites.md) und Einstellungen.
 
@@ -196,13 +196,13 @@ Standard ist deaktiviert.
 
 * **Social-Media-Anmeldungen zulassen: Facebook**
 
-  Wenn diese Option aktiviert ist, können sich Website-Besuchende mit ihren Facebook-Kontoanmeldeinformationen anmelden. Die ausgewählte [Facebook-Cloud](/help/communities/social-login.md#create-a-facebook-connect-cloud-service)Konfiguration sollte so konfiguriert werden, dass Benutzende zur Mitgliedergruppe der Community-Site hinzugefügt werden, sobald die Community-Site erstellt wurde.
+  Wenn diese Option aktiviert ist, können sich Besucher der Website mit ihren Facebook-Kontoanmeldeinformationen anmelden. Die ausgewählte [Facebook-Cloud](/help/communities/social-login.md#create-a-facebook-connect-cloud-service)Konfiguration sollte so konfiguriert werden, dass Benutzer zur Mitgliedergruppe der Community-Site hinzugefügt werden, sobald die Community-Site erstellt wurde.
 Wenn diese Option deaktiviert ist, wird keine Facebook-Anmeldung angezeigt.
 Deaktivieren Sie diese Option für eine *private* Community-Site. Standard ist deaktiviert.
 
 * **Social-Media-Anmeldungen zulassen: Twitter**
 
-  Wenn diese Option aktiviert ist, können sich Website-Besuchende mit ihren Twitter-Kontoanmeldeinformationen anmelden. Die ausgewählte [Twitter-Cloud](/help/communities/social-login.md#create-a-twitter-connect-cloud-service)Konfiguration sollte so konfiguriert werden, dass Benutzende zur Mitgliedergruppe der Community-Site hinzugefügt werden, sobald die Community-Site erstellt wurde.
+  Wenn diese Option aktiviert ist, können sich Besucher der Website mit ihren Twitter-Kontoanmeldeinformationen anmelden. Die ausgewählte [Twitter-Cloud](/help/communities/social-login.md#create-a-twitter-connect-cloud-service)Konfiguration sollte so konfiguriert werden, dass Benutzer zur Mitgliedergruppe der Community-Site hinzugefügt werden, sobald die Community-Site erstellt wurde.
 Wenn diese Option deaktiviert ist, wird keine Twitter-Anmeldung angezeigt.
 Deaktivieren Sie diese Option für eine *private* Community-Site. Standard ist deaktiviert.
 
@@ -210,7 +210,7 @@ Deaktivieren Sie diese Option für eine *private* Community-Site. Standard ist d
 >
 >**Zulassen von Social-Media-Anmeldungen**
 >
->Obwohl es möglicherweise Beispielkonfigurationen für Facebook und Twitter gibt, die für eine [Produktionsumgebung“ auswählbar &#x200B;](/help/sites-administering/production-ready.md), müssen benutzerdefinierte Programme für Facebook und Twitter erstellt werden. Siehe [Social-Anmeldung mit Facebook und Twitter](/help/communities/social-login.md).
+>Obwohl es möglicherweise Facebook- und Twitter-Beispielkonfigurationen gibt, die für eine [Produktionsumgebung“ auswählbar &#x200B;](/help/sites-administering/production-ready.md), müssen benutzerdefinierte Facebook- und Twitter-Anwendungen erstellt werden. Siehe [Social-Anmeldung mit Facebook und Twitter](/help/communities/social-login.md).
 
 #### TAGGING {#tagging}
 
@@ -371,7 +371,7 @@ Wenn Sie den Mauszeiger über eine Site mit der Maus bewegen oder eine Site-Kart
 
 ## Verfassen von Site-Inhalten {#authoring-site-content}
 
-Der Inhalt einer Website kann mit den gleichen Tools wie jede andere AEM-Website erstellt werden. Um die Site für das Authoring zu öffnen, wählen Sie das `Open Site` aus, das angezeigt wird, wenn Sie den Mauszeiger über die Site bewegen. Die Site wird auf einer neuen Registerkarte geöffnet, sodass die Communities-Sites-Konsole weiterhin verfügbar ist.
+Der Inhalt einer Website kann mit denselben Tools wie jede andere AEM-Website erstellt werden. Um die Site für das Authoring zu öffnen, wählen Sie das `Open Site` aus, das angezeigt wird, wenn Sie den Mauszeiger über die Site bewegen. Die Site wird auf einer neuen Registerkarte geöffnet, sodass die Communities-Sites-Konsole weiterhin verfügbar ist.
 
 ![site-content](assets/site-content.png)
 
@@ -458,7 +458,7 @@ Das Bedienfeld EINSTELLUNGEN ermöglicht den Zugriff auf die meisten Einstellung
 * [Tags](#tagging)
 * [Moderation](#moderation)
 * [Mitgliederrollen](#roles)
-* [Analyse](#analytics)
+* [Analytics](#analytics)
 * [Übersetzung](#translation)
 
 ### Miniaturansicht ändern {#modify-thumbnail}
@@ -510,8 +510,8 @@ Weitere Informationen finden Sie [Verwalten von Benutzern und Benutzergruppen](/
 
 >[!NOTE]
 >
->Wenn [Social-Media-Anmeldung zulassen: Facebook](#user-management) aktiviert ist, sobald die Benutzergruppe `community-<site-name>-<uid>-members`
->erstellt wurde, sollte der angewendete [Facebook-Cloud](/help/communities/social-login.md#createafacebookcloudservice)Service so konfiguriert werden, dass Benutzer zu dieser Gruppe hinzugefügt werden.
+>Wenn [Social-Media-Anmeldung zulassen: &#x200B;](#user-management) aktiviert ist, sobald die Benutzergruppe `community-<site-name>-<uid>-members`
+>erstellt wird, sollte der angewendete [Facebook-Cloud](/help/communities/social-login.md#createafacebookcloudservice)Service so konfiguriert werden, dass Benutzer zu dieser Gruppe hinzugefügt werden.
 
 ## Authentifizierungsfehler konfigurieren {#configure-for-authentication-error}
 
@@ -531,7 +531,7 @@ Um eine korrekte Weiterleitung durchzuführen, nachdem eine Site konfiguriert un
 
   `/content/sites/<site-name>/path/to/login/page:/content/sites/<site-name>`
 
-  Zum Beispiel:
+  Beispiel:
   `/content/sites/engage/en/signin:/content/sites/engage/en`
 
 * Wählen Sie **Speichern** aus.

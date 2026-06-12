@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1858'
-ht-degree: 100%
+source-wordcount: '1870'
+ht-degree: 96%
 
 ---
 
@@ -76,7 +76,7 @@ Um die Verwendung eines Formularentwurfsskripts zu veranschaulichen, wird in die
 
 ![cf_cf_caldata](assets/cf_cf_caldata.png)
 
-**A.** Ein Feld namens NumericField1 **B.** Ein Feld namens NumericField2 **C.** Ein Feld namens NumericField3
+**a.** Ein Feld mit dem Namen NumericField1 **B.** Ein Feld mit dem Namen NumericField2 **C.** Ein Feld namens NumericField3
 
 Die Syntax des Skripts in diesem Formularentwurf lautet wie folgt:
 
@@ -123,13 +123,13 @@ Nachdem Sie überprüft haben, dass der mit einem gesendeten Formular verknüpft
 
 **Siehe auch**
 
-[Einbeziehen von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[Berechnen von Formulardaten mit der Java-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
-[Berechnen von Formulardaten mit der Webservice-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
-[Festlegen von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Einschließlich AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Berechnen von Formulardaten mithilfe der Java-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
+[Berechnen von Formulardaten mithilfe der Webservice-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
+[Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 [Kurzanleitungen zur Forms Service-API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
-[Rendern interaktiver PDF-Formulare](/help/forms/developing/rendering-interactive-pdf-forms.md)
-[Erstellen von Web-Anwendungen, die PDF-Formulare rendern](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Rendern von interaktiven PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Erstellen von Web-Anwendungen, die Forms rendern](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Berechnen von Formulardaten mithilfe der Java-API {#calculate-form-data-using-the-java-api}
 
@@ -169,8 +169,8 @@ So berechnen Sie die Formulardaten mithilfe der Forms API (Java):
 **Siehe auch**
 
 
-[Einbeziehen von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[Festlegen von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Einschließlich AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Berechnen von Formulardaten mithilfe der Webservice-API {#calculate-form-data-using-the-web-service-api}
 
@@ -201,14 +201,14 @@ So berechnen Sie Formulardaten mithilfe der Forms API (Webservice):
       * Ein Zeichenfolgenwert, der den Wert der `HTTP_USER_AGENT`-Kopfzeile angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen speichert. Für weitere Informationen, .
       * Ein leeres `BLOBHolder`-Objekt, das von der Methode aufgefüllt wird.
-      * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das von der Methode gefüllt wird.
-      * Ein leeres `BLOBHolder`-Objekt, das von der Methode gefüllt wird.
-      * Ein leeres `BLOBHolder`-Objekt, das von der Methode gefüllt wird.
+      * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das von der Methode aufgefüllt wird.
+      * Ein leeres `BLOBHolder`-Objekt, das von der Methode aufgefüllt wird.
+      * Ein leeres `BLOBHolder`-Objekt, das von der Methode aufgefüllt wird.
       * Ein leeres `javax.xml.rpc.holders.ShortHolder`-Objekt, das von der Methode gefüllt wird.
       * Ein leeres `MyArrayOf_xsd_anyTypeHolder`-Objekt, das von der Methode gefüllt wird. Dieser Parameter wird zum Speichern von Dateianhängen verwendet, die zusammen mit dem Formular gesendet werden.
       * Ein leeres `FormsResultHolder`-Objekt, das von der Methode mit dem gesendeten Formular gefüllt wird.
 
-     Die Methode `processFormSubmission` füllt den Parameter `FormsResultHolder` mit den Ergebnissen der Formularübermittlung. Die Methode `processFormSubmission` gibt ein `FormsResult`-Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
+     Die Methode `processFormSubmission` füllt den Parameter `FormsResultHolder` mit den Ergebnissen der Formularübermittlung. Die `processFormSubmission`-Methode gibt ein `FormsResult`-Objekt aus, das die Ergebnisse der Formularübermittlung enthält.
 
    * Überprüfen Sie, ob der Verarbeitungsstatus eines übermittelten Formulars `1` ist, indem Sie die Methode `getAction` des `FormsResult`-Objekts aufrufen. Wenn diese Methode den Wert `1` zurückgibt, wurde die Berechnung durchgeführt und die Daten können in den Client-Webbrowser zurückgeschrieben werden.
 

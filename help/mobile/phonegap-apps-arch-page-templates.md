@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2548'
+source-wordcount: '2649'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Seitenvorlagen für Mobile Apps {#page-templates-for-mobile-apps-1}
 
-Seitenkomponenten, die Sie für Ihre App erstellen, basieren auf der Komponente /libs/mobileapps/components/angular/ng-page ([auf einem lokalen CRXDE Lite-Server &#x200B;](http://localhost:4502/crx/de/index.jsp#/libs/mobileapps/components/angular/ng-page)). Diese Komponente enthält die folgenden JSP-Skripte, die Ihre Komponente entweder erbt oder überschreibt:
+Seitenkomponenten, die Sie für Ihre App erstellen, basieren auf der Komponente /libs/mobileapps/components/angular/ng-page ([Öffnen von in CRXDE Lite auf einem lokalen Server](http://localhost:4502/crx/de/index.jsp#/libs/mobileapps/components/angular/ng-page)). Diese Komponente enthält die folgenden JSP-Skripte, die Ihre Komponente entweder erbt oder überschreibt:
 
 * ng-page.jsp
 * head.jsp
@@ -54,7 +54,7 @@ Gemäß den Best Practices enthält die App den CSS-Teil der Client-Bibliotheken
 
 ### body.jsp {#body-jsp}
 
-Der Hauptteil einer Angular-Seite wird unterschiedlich gerendert, je nachdem, ob wcmMode erkannt wird (!= WCMode.DISABLED), um zu bestimmen, ob die Seite für das Authoring oder als veröffentlichte Seite geöffnet wird.
+Der Text einer Angular-Seite wird unterschiedlich gerendert, je nachdem, ob wcmMode erkannt wird (!= WCMMode.DISABLED), um zu bestimmen, ob die Seite für das Authoring oder als veröffentlichte Seite geöffnet wird.
 
 **Autorenmodus**
 
@@ -70,11 +70,11 @@ Der include template.jsp ist in ein `div`-Element eingeschlossen, das die `ng-co
 </div>
 ```
 
-**Publish-Modus**
+**Veröffentlichungsmodus**
 
-Im Veröffentlichungsmodus (z. B. wenn die App mithilfe der Inhaltssynchronisierung exportiert wird) werden alle Seiten zu einer Einzelseiten-App (SPA). (Weitere Informationen zu SPA finden Sie im Angular-Tutorial, insbesondere unter [https://docs.angularjs.org/tutorial/step_07](https://docs.angularjs.org/tutorial/step_07).)
+Im Veröffentlichungsmodus (z. B. wenn die App mithilfe der Inhaltssynchronisierung exportiert wird) werden alle Seiten zu einer Einzelseiten-App (SPA). (Um mehr über SPAs zu erfahren, verwenden Sie das Angular-Tutorial, insbesondere [https://docs.angularjs.org/tutorial/step_07](https://docs.angularjs.org/tutorial/step_07).)
 
-Eine SPA enthält nur eine HTML-Seite (eine Seite, die das `<html>` enthält). Diese Seite wird als „Layout-Vorlage“ bezeichnet. In der Angular-Terminologie ist dies &quot;…eine Vorlage, die für alle Ansichten in unserer Anwendung gleich ist“. Diese Seite als „App-Seite der obersten Ebene“ betrachten. Standardmäßig ist die App-Seite der obersten Ebene der `cq:Page` Knoten Ihres Programms, der dem Stamm am nächsten ist (und keine Umleitung darstellt).
+In einer SPA gibt es nur eine HTML-Seite (eine Seite, die das `<html>` enthält). Diese Seite wird als „Layout-Vorlage“ bezeichnet. In der Terminologie von Angular handelt es sich dabei um &quot;…eine Vorlage, die für alle Ansichten in unserer Anwendung gleich ist“. Diese Seite als „App-Seite der obersten Ebene“ betrachten. Standardmäßig ist die App-Seite der obersten Ebene der `cq:Page` Knoten Ihres Programms, der dem Stamm am nächsten ist (und keine Umleitung darstellt).
 
 Da sich der tatsächliche URI Ihrer App im Veröffentlichungsmodus nicht ändert, müssen Verweise auf externe Assets von dieser Seite relative Pfade verwenden. Daher wird eine spezielle Bildkomponente bereitgestellt, die diese Seite der obersten Ebene beim Rendern von Bildern für den Export berücksichtigt.
 
@@ -84,7 +84,7 @@ Als SPA generiert diese Layoutvorlagenseite einfach ein div-Element mit einer ng
  <div ng-view ng-class="transition"></div>
 ```
 
-Der Angular-Routendienst verwendet dieses Element, um den Inhalt aller Seiten in der App anzuzeigen, einschließlich des bearbeitbaren Inhalts der aktuellen Seite (in template.jsp).
+Der Angular-Routendienst verwendet dieses Element, um den Inhalt aller Seiten in der App anzuzeigen, einschließlich des bearbeitbaren Inhalts der aktuellen Seite (enthalten in template.jsp).
 
 Die Datei body.jsp enthält die Dateien header.jsp und footer.jsp, die leer sind. Wenn Sie statischen Inhalt auf jeder Seite bereitstellen möchten, können Sie diese Skripte in Ihrer App überschreiben.
 
@@ -98,11 +98,11 @@ Dieses Script definiert das Angular-Modul der Anwendung. Die Ausgabe dieses Skri
 ng-app="<c:out value='${applicationName}'/>"
 ```
 
-Dieses Attribut gibt Angular an, dass der Inhalt dieses DOM-Elements mit dem folgenden Modul verknüpft werden soll. Dieses Modul verknüpft die Ansichten (in AEM wären dies cq:Page-Ressourcen) mit den entsprechenden Controllern.
+Dieses Attribut weist Angular darauf hin, dass der Inhalt dieses DOM-Elements mit dem folgenden Modul verknüpft werden soll. Dieses Modul verknüpft die Ansichten (in AEM wären dies CQ:Page-Ressourcen) mit entsprechenden Controllern.
 
 Dieses Modul definiert auch einen Controller der obersten Ebene mit dem Namen `AppController`, der die `wcmMode` für den Bereich bereitstellt, und konfiguriert den URI, von dem die Payloads für die Inhaltssynchronisierung-Aktualisierung abgerufen werden sollen.
 
-Schließlich durchläuft dieses Modul jede untergeordnete Seite (einschließlich sich selbst) und rendert den Inhalt des Routenfragments jeder Seite (über den Selektor und die Erweiterung &quot;angular-route-fragment.js„), einschließlich als Konfigurationseintrag für Angular $routeProvider. Mit anderen Worten: Der $routeProvider teilt der App mit, welcher Inhalt gerendert werden soll, wenn ein bestimmter Pfad angefordert wird.
+Schließlich durchläuft dieses Modul jede untergeordnete Seite (einschließlich sich selbst) und rendert den Inhalt des Routenfragments jeder Seite (über den Selektor und die Erweiterung angular-route-fragment.js ), einschließlich als Konfigurationseintrag für $routeProvider in Angular. Mit anderen Worten: Der $routeProvider teilt der App mit, welcher Inhalt gerendert werden soll, wenn ein bestimmter Pfad angefordert wird.
 
 ### angular-route-fragment.js.jsp {#angular-route-fragment-js-jsp}
 
@@ -129,7 +129,7 @@ Bei Bedarf können Sie dieses Skript überschreiben, um komplexere Pfade zu vera
 
 ### angular-app-controllers.js.jsp {#angular-app-controllers-js-jsp}
 
-Beim Angular vernetzen Controller Variablen im $scope und stellen sie der Ansicht zur Verfügung. Das Skript angular-app-controllers.js.jsp folgt dem von angular-app-module.js.jsp dargestellten Muster, indem es jede untergeordnete Seite (einschließlich sich selbst) durchläuft und das von jeder Seite definierte Controller-Fragment ausgibt (über controller.js.jsp). Das von ihm definierte Modul heißt `cqAppControllers` und muss als Abhängigkeit vom App-Modul der obersten Ebene aufgelistet werden, damit die Seiten-Controller verfügbar gemacht werden.
+In Angular verkabeln Controller Variablen im $scope, um sie für die Ansicht verfügbar zu machen. Das Skript angular-app-controllers.js.jsp folgt dem von angular-app-module.js.jsp dargestellten Muster, indem es jede untergeordnete Seite (einschließlich sich selbst) durchläuft und das von jeder Seite definierte Controller-Fragment ausgibt (über controller.js.jsp). Das von ihm definierte Modul heißt `cqAppControllers` und muss als Abhängigkeit vom App-Modul der obersten Ebene aufgelistet werden, damit die Seiten-Controller verfügbar gemacht werden.
 
 ### controller.js.jsp {#controller-js-jsp}
 
@@ -145,7 +145,7 @@ Das Skript controller.js.jsp generiert das Controller-Fragment für jede Seite. 
 ])
 ```
 
-Der `data`-Variable wird die von der Angular-`$http.get` zurückgegebene Zusage zugewiesen. Jede auf dieser Seite enthaltene Komponente kann bei Bedarf JSON-Inhalte verfügbar machen (über das Skript angular.json.jsp ) und die Inhalte dieser Anfrage bearbeiten, wenn sie aufgelöst wird. Die Anfrage ist auf Mobilgeräten sehr schnell, da sie einfach auf das Dateisystem zugreift.
+Der `data`-Variable wird die von der Angular-`$http.get` zurückgegebene Zusage zugewiesen. Jede auf dieser Seite enthaltene Komponente kann bei Bedarf JSON-Inhalte verfügbar machen (über das Skript angular.json.jsp ) und diese Anfrage bearbeiten, wenn sie aufgelöst wird. Die Anfrage ist auf Mobilgeräten sehr schnell, da sie einfach auf das Dateisystem zugreift.
 
 Damit eine Komponente auf diese Weise Teil des Controllers ist, sollte sie die Komponente /libs/mobileapps/components/angular/ng-component erweitern und die Eigenschaft `frameworkType: angular` einschließen.
 
@@ -153,11 +153,11 @@ Damit eine Komponente auf diese Weise Teil des Controllers ist, sollte sie die K
 
 Die Datei „template.jsp“, die zuerst im Abschnitt body.jsp eingeführt wurde, enthält einfach das ParSys der Seite. Im Veröffentlichungsmodus wird dieser Inhalt direkt referenziert (unter &lt;page-path>.template.html) und über die im $routeProvider konfigurierte templateUrl in die SPA geladen.
 
-Das parsys in diesem Skript kann so konfiguriert werden, dass es jeden Komponententyp akzeptiert. Bei Komponenten, die für eine herkömmliche Website (im Gegensatz zu SPA) erstellt wurden, muss jedoch Vorsicht geboten sein. Beispielsweise funktioniert die Foundation-Bildkomponente nur auf der App-Seite der obersten Ebene ordnungsgemäß, da sie nicht für Verweise auf Assets konzipiert ist, die sich in einer App befinden.
+Das parsys in diesem Skript kann so konfiguriert werden, dass es jeden Komponententyp akzeptiert. Bei Komponenten, die für eine herkömmliche Website erstellt wurden (im Gegensatz zu einer SPA), muss jedoch Vorsicht geboten sein. Beispielsweise funktioniert die Foundation-Bildkomponente nur auf der App-Seite der obersten Ebene ordnungsgemäß, da sie nicht für Verweise auf Assets konzipiert ist, die sich in einer App befinden.
 
 ### angular-module-list.js.jsp {#angular-module-list-js-jsp}
 
-Dieses Script gibt einfach die Angular-Abhängigkeiten des Angular-App-Moduls der obersten Ebene aus. Es wird von angular-app-module.js.jsp referenziert.
+Dieses Skript gibt einfach die Angular-Abhängigkeiten des Angular-App-Moduls der obersten Ebene aus. Es wird von angular-app-module.js.jsp referenziert.
 
 ### header.jsp {#header-jsp}
 
@@ -192,7 +192,7 @@ Beachten Sie die GUID „24BA22ED-7D06-4330-B7EB-F6FC73251CA3“ im Pfad.
 
 Als PhoneGap-Entwickler befinden sich die Inhalte, um die Sie sich kümmern, unter dem Verzeichnis www . Verwenden Sie relative Pfade, um auf die App-Assets zuzugreifen.
 
-Um das Problem zu verschlimmern, verwendet Ihre PhoneGap-Anwendung das SPA-Muster (Single Page App), sodass der Basis-URI (ohne den Hash) sich nie ändert. Daher müssen alle Assets, Vorlagen oder Skripte, auf die Sie verweisen **&#x200B; relativ zu Ihrer Top-Level-Seite sein. &#x200B;** Die Seite der obersten Ebene initialisiert das Angular-Routing und die Controller aufgrund von `<name>.angular-app-module.js` und `<name>.angular-app-controllers.js`. Diese Seite sollte die Seite sein, die dem Stamm des Repositorys am nächsten ist und *keine* Sling:Redirect-Erweiterung ermöglicht.
+Um das Problem zu verschlimmern, verwendet Ihre PhoneGap-Anwendung das Einzelseiten-App (SPA)-Muster, sodass sich der Basis-URI (ohne Hash) nie ändert. Daher müssen alle Assets, Vorlagen oder Skripte, auf die Sie verweisen **&#x200B; relativ zu Ihrer Top-Level-Seite sein. &#x200B;** Die Seite der obersten Ebene initialisiert das Angular-Routing und die Controller gemäß `<name>.angular-app-module.js` und `<name>.angular-app-controllers.js`. Diese Seite sollte die Seite sein, die dem Stamm des Repositorys am nächsten ist und die *kein* Sling erweitert:redirect.
 
 Für die Behandlung relativer Pfade stehen verschiedene Hilfsmethoden zur Verfügung:
 
@@ -218,7 +218,7 @@ Links müssen die `ng-click="go('/path')"`-Funktion verwenden, um alle WCM-Modi 
 
 Bei der `$scope.wcmMode == true` behandeln wir jedes Navigationsereignis auf die übliche Weise, sodass sich der Pfad und/oder der Seitenteil der URL ändern.
 
-Alternativ führt jedes Navigationsereignis, falls `$scope.wcmMode == false`, zu einer Änderung des Hash-Teils der URL, die intern vom Angular nRoute-Modul aufgelöst wird.
+Alternativ führt jedes Navigationsereignis, falls `$scope.wcmMode == false`, zu einer Änderung des Hash-Teils der URL, die intern vom ngRoute-Modul von Angular aufgelöst wird.
 
 ### Details zum Komponentenskript {#component-script-details}
 
@@ -230,7 +230,7 @@ Dieses Skript zeigt entweder den Komponenteninhalt oder einen geeigneten Platzha
 
 ### template.jsp {#template-jsp-1}
 
-Das Skript „template.jsp“ rendert das Markup der Komponente. Wenn die betreffende Komponente durch JSON-Daten gesteuert wird, die aus AEM extrahiert wurden (z. B. „ng-text“: /libs/mobileapps/components/angular/ng-text/template.jsp), ist dieses Skript für die Verkabelung des Markups mit Daten verantwortlich, die vom Controller-Umfang der Seite verfügbar gemacht werden.
+Das Skript „template.jsp“ rendert das Markup der Komponente. Wenn die betreffende Komponente durch aus AEM extrahierte JSON-Daten gesteuert wird (z. B. „ng-text“: /libs/mobileapps/components/angular/ng-text/template.jsp), ist dieses Skript für die Verkabelung des Markups mit Daten verantwortlich, die vom Controller-Umfang der Seite verfügbar gemacht werden.
 
 Allerdings schreiben die Leistungsanforderungen manchmal vor, dass keine Client-seitigen Vorlagen (auch als Datenbindung bezeichnet) ausgeführt werden. In diesem Fall rendern Sie einfach das Markup der Komponente auf der Server-Seite und sie wird in den Inhalt der Seitenvorlage aufgenommen.
 
@@ -240,11 +240,11 @@ In Komponenten, die von JSON-Daten gesteuert werden (z. B. „ng-text“: /libs/
 
 ### controller.js.jsp {#controller-js-jsp-1}
 
-Wie unter [AEM-Seitenvorlagen](/help/mobile/apps-architecture.md) beschrieben, kann jede Komponente ein JavaScript-Fragment ausgeben, um den JSON-Inhalt zu nutzen, der von der `data` bereitgestellt wird. Nach den Angular-Konventionen sollte ein Controller nur zum Zuweisen von Variablen zum Bereich verwendet werden.
+Wie unter [AEM-Seitenvorlagen](/help/mobile/apps-architecture.md) beschrieben, kann jede Komponente ein JavaScript-Fragment ausgeben, um den von der `data`-Zusage bereitgestellten JSON-Inhalt zu nutzen. Gemäß den Konventionen in Angular sollte ein Controller nur zum Zuweisen von Variablen zum Bereich verwendet werden.
 
 ### angular.json.jsp {#angular-json-jsp}
 
-Dieses Skript wird als Fragment in die seitenweite Datei &quot;&lt;page-name>.angular.json“ eingefügt, die für jede Seite exportiert wird, die ng-page erweitert. In dieser Datei kann der Komponentenentwickler jede JSON-Struktur verfügbar machen, die für die Komponente erforderlich ist. Im „ng-text“-Beispiel enthält diese Struktur einfach den Textinhalt der Komponente und ein Flag, das angibt, ob die Komponente Rich-Text enthält oder nicht.
+Dieses Skript wird als Fragment in die seitenweite Datei &quot;&lt;page-name>.angular.json“ eingefügt, die für jede Seite, die ng-page erweitert, exportiert wird. In dieser Datei kann der Komponentenentwickler jede JSON-Struktur verfügbar machen, die für die Komponente erforderlich ist. Im „ng-text“-Beispiel enthält diese Struktur einfach den Textinhalt der Komponente und ein Flag, das angibt, ob die Komponente Rich-Text enthält oder nicht.
 
 Die We.Retail-App-Produktkomponente ist ein komplexeres Beispiel (/apps/weretail-app/components/angular/ng-product):
 
@@ -311,7 +311,7 @@ Dieses Verzeichnis enthält die [CLI-Hooks](https://gist.github.com/jlcarvalho/2
 
 ### .cordova/hooks/after-platform_add/ {#cordova-hooks-after-platform-add}
 
-Der Ordner „after-platform_add“ enthält die `copy_AMS_Conifg.js`. Dieses Skript kopiert eine Konfigurationsdatei, um die Erfassung von Adobe Mobile Services Analytics zu unterstützen.
+Der Ordner „after-platform_add“ enthält die `copy_AMS_Conifg.js`. Dieses Skript kopiert eine Konfigurationsdatei, um die Erfassung von Adobe Mobile Services-Analysen zu unterstützen.
 
 ### .cordova/hooks/after-preparation/ {#cordova-hooks-after-prepare}
 
@@ -364,7 +364,7 @@ Das Plug-in-Verzeichnis wird von jedem Plug-in gefüllt, das in der `.cordova/ho
 
 ### www/ {#www}
 
-Das www-Verzeichnis enthält alle Web-Inhalte (HTML-, JS- und CSS-Dateien), die das Erscheinungsbild und Verhalten der App implementieren. Mit Ausnahme der unten beschriebenen Ausnahmen stammt dieser Inhalt von AEM und wird über die Inhaltssynchronisierung in seine statische Form exportiert.
+Das Verzeichnis www enthält alle Web-Inhalte (HTML-, JS- und CSS-Dateien), die das Erscheinungsbild und Verhalten der App implementieren. Mit Ausnahme der unten beschriebenen Ausnahmen stammt dieser Inhalt von AEM und wird über die Inhaltssynchronisierung in seine statische Form exportiert.
 
 ### www/config.xml {#www-config-xml}
 
@@ -400,8 +400,8 @@ Das Anwendungsverzeichnis enthält Code, der mit der Splash-Seite in Verbindung 
 
 Das Inhaltsverzeichnis enthält den Rest des Web-Inhalts der App. Der Inhalt kann die folgenden Dateien enthalten, ist aber nicht darauf beschränkt:
 
-* HTML von Seiteninhalten, die direkt in AEM verfasst werden
-* Bild-Assets, die AEM-Komponenten zugeordnet sind
+* HTML-Seiteninhalte, die direkt in AEM verfasst werden
+* Mit AEM-Komponenten verknüpfte Bild-Assets
 * JavaScript-Inhalte, die von serverseitigen Skripten generiert werden
 * JSON-Dateien, die Seiten- oder Komponenteninhalte beschreiben
 

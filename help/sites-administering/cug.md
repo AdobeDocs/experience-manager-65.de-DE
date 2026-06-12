@@ -12,8 +12,8 @@ feature: Security
 role: Admin
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 100%
+source-wordcount: '748'
+ht-degree: 96%
 
 ---
 
@@ -80,7 +80,7 @@ So wenden Sie die CUG auf eine oder mehrere Seiten an:
 
    1. Aktivieren Sie das Kontrollkästchen **Aktivieren**.
 
-   1. Fügen Sie den Pfad zu Ihrer **Anmeldeseite** hinzu.
+   1. Fügen Sie den Pfad zu Ihrer **Anmeldeseite“**.
 Dies ist optional. Wenn Sie das Feld leer lassen, wird die standardmäßige Anmeldeseite verwendet.
 
    ![CUG hinzugefügt](assets/cug-authentication-requirement.png)
@@ -134,8 +134,7 @@ Konfigurieren Sie das [Sitzungsmanagement in der Datei dispatcher.any](https://e
 
 >[!NOTE]
 >
->Wenn für eine Dispatcher-Farm das Sitzungsmanagement aktiviert ist, werden alle von der Farm verarbeiteten Seiten nicht zwischengespeichert. Um Seiten zwischenzuspeichern, die sich außerhalb der CUG befinden, erstellen Sie eine zweite Farm in der Datei dispatcher.any
->, die die Nicht-CUG-Seiten verarbeitet.
+>Wenn für eine Dispatcher-Farm das Sitzungsmanagement aktiviert ist, werden alle von der Farm verarbeiteten Seiten nicht zwischengespeichert. Um Seiten zwischenzuspeichern, die sich außerhalb der CUG befinden, erstellen Sie eine zweite Farm in dispatcher.any>, die die Nicht-CUG-Seiten verarbeitet.
 
 1. Konfigurieren Sie [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#enabling-secure-sessions-sessionmanagement), indem Sie `/directory` festlegen, zum Beispiel:
 

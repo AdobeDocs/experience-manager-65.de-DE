@@ -11,8 +11,8 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 2%
+source-wordcount: '903'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 AEM Communities-Funktionen erfordern oft, dass Besuchende einer Website registriert und angemeldet sind, bevor sie an einer Community in der Veröffentlichungsumgebung teilnehmen. Ihre Benutzerregistrierung muss nur in der Veröffentlichungsumgebung vorhanden sein und wird gemeinhin als &quot;*&quot; bezeichnet* um sie von &quot;*&quot;* unterscheiden.
 
-### Mitglieder (Benutzer) in Publish {#members-users-on-publish}
+### Mitglieder (Benutzer) bei Veröffentlichung {#members-users-on-publish}
 
 Mithilfe der Konsolen „Mitglieder“ und „Gruppen“ von Communities können Mitglieder und Mitgliedergruppen, die in der *Publishing*-Umgebung registriert sind, in der *author*-Umgebung erstellt und verwaltet werden. Dies ist nur möglich, wenn [Tunneldienst](deploy-communities.md#tunnel-service-on-author) aktiviert ist.
 
@@ -118,7 +118,7 @@ Wenn die ID standardmäßig auf die E-Mail-Adresse festgelegt ist, ändert *ID*,
 Unter Kontoeinstellungen ist es für einen Community-Administrator möglich:
 
 * **[!UICONTROL Status]**
-   * Banned
+   * Verboten
 Ein Mitglied kann sich nicht anmelden und kann daher keine Seiten anzeigen oder an Aktivitäten teilnehmen, für die eine Anmeldung erforderlich ist. Sie können weiterhin anonym eine offene Community-Site besuchen.
 
    * Nicht verboten

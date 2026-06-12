@@ -9,7 +9,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1675'
 ht-degree: 98%
 
 ---
@@ -431,7 +431,7 @@ Der Einfachheit halber können Sie den folgenden XML-Code in Ihre Projektdatei p
 * Apache Felix Maven Bundle-Plug-in: Erstellt das Bundle und das Manifest.
 * Apache Felix Maven SCR-Plug-in: Erstellt die Komponentendeskriptordatei und konfiguriert den Manifest-Header der Dienstkomponente.
 
-**Hinweis:** Zur Verfassungszeit dieses Textes ist das Maven SCR-Plug-in nicht mit dem m2e-Plug-in für Eclipse kompatibel. (Siehe [Felix bug 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Um die Eclipse-IDE zu verwenden, installieren Sie Maven und verwenden Sie die Befehlszeilenschnittstelle, um Builds durchzuführen.
+**Hinweis:** Zur Verfassungszeit dieses Textes ist das Maven SCR-Plug-in nicht mit dem m2e-Plug-in für Eclipse kompatibel. (Siehe [Felix Bug 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Um die Eclipse-IDE zu verwenden, installieren Sie Maven und verwenden Sie die Befehlszeilenschnittstelle, um Builds durchzuführen.
 
 #### POM-Beispieldatei {#example-pom-file}
 

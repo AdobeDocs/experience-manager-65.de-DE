@@ -12,9 +12,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
-workflow-type: ht
-source-wordcount: '3701'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '3807'
+ht-degree: 97%
 
 ---
 
@@ -32,8 +32,8 @@ Um eine Mobile-Site zu erstellen, gehen Sie folgendermaßen vor:
 
 1. Erstellen Sie die Seitenkomponente:
 
-   * Legen Sie die Eigenschaft `sling:resourceSuperType` auf `wcm/mobile/components/page` fest.
-Auf diese Weise beruht die Komponente auf der Mobile-Seiten-Komponente.
+   * Legen Sie die `sling:resourceSuperType`-Eigenschaft fest auf `wcm/mobile/components/page`
+Auf diese Weise beruht die Komponente auf der mobilen Seitenkomponente.
 
    * Erstellen Sie die Datei `body.jsp` mit der projektspezifischen Logik.
 
@@ -62,7 +62,7 @@ Die Mobile-Seiten-Komponente (`/libs/wcm/mobile/components/page`):
 
 ## Erstellen einer Mobile-Site mit dem Multi-Site-Manager {#creating-a-mobile-site-with-the-multi-site-manager}
 
-Verwenden Sie den Multi-Site-Manager (MSM), um eine mobile Live Copy von einer Standardseite zu erstellen. Die Standard-Site wird automatisch in eine Mobile-Site umgewandelt: Die Mobile-Site weist alle Funktionen von Mobile-Sites auf (z. B. die Bearbeitung in einem Emulator) und kann synchron mit der Standard-Site verwaltet werden. Siehe den Abschnitt [Erstellen einer Live Copy für unterschiedliche Kanäle](/help/sites-administering/msm.md) auf der Multi-Site-Manager-Seite.
+Verwenden Sie den Multi-Site-Manager (MSM), um eine mobile Live Copy von einer Standardseite zu erstellen. Die Standard-Site wird automatisch in eine Mobile-Site umgewandelt: Die Mobile-Site weist alle Funktionen von Mobile-Sites auf (z. B. die Bearbeitung in einem Emulator) und kann synchron mit der Standard-Site verwaltet werden. Siehe den Abschnitt [Erstellen einer Live Copy für unterschiedliche Kanäle](/help/sites-administering/msm.md) auf der Multi-Site Manager-Seite.
 
 ## Server-seitige Mobile-API {#server-side-mobile-api}
 
@@ -142,7 +142,7 @@ Das AEM-Mobile-Framework ermöglicht die Entwicklung von Komponenten, die auf da
 * den Gerätebenutzeragenten abrufen:
   `String userAgent = device.getUserAgent();`
 
-* die Gerätegruppenliste (Gerätegruppen, die der Seite vom Autor zugewiesen wurden) von der aktuellen Seite abrufen:
+* die Gerätegruppenliste (Gerätegruppen, die der Site vom Autor zugewiesen wurden) von der aktuellen Seite abrufen:
   `DeviceGroupList deviceGroupList = currentPage.adaptTo(DeviceGroupList.class);`
 
 * Überprüfen Sie, ob die Gerätegruppe Bilder unterstützt.
@@ -170,8 +170,8 @@ Informationen zum Erstellen eines Emulators finden Sie unter [Erstellen eines be
 
 **Hauptmerkmale von Mobile-Emulatoren**
 
-* Eine Gerätegruppe besteht aus einem oder mehreren Emulatoren: die Gerätegruppen-Konfigurationsseite, z. B. „/etc/mobile/groups/touch“, enthält die Eigenschaft `emulators` unterhalb des Knotens `jcr:content`.
-Hinweis: Obwohl es möglich ist, dass derselbe Emulator zu mehreren Gerätegruppen gehört, hat das wenig Sinn.
+* Eine Gerätegruppe besteht aus einem oder mehreren Emulatoren: die Gerätegruppen-Konfigurationsseite, z. B. /etc/mobile/groups/touch, enthält die `emulators` Eigenschaft unterhalb des `jcr:content`.
+Hinweis: Obwohl es möglich ist, dass derselbe Emulator zu mehreren Gerätegruppen gehört, ist dies nicht sehr sinnvoll.
 
 * Über das Konfigurationsdialogfeld der Gerätegruppe wird die Eigenschaft `emulators` mit dem Pfad der gewünschten Emulatoren festgelegt. Beispiel: `/libs/wcm/mobile/components/emulators/iPhone4`.
 
@@ -317,8 +317,8 @@ Wenn ein Gerät auf Ihre mobile Website zugreift, erkennt AEM das Gerät, ordnet
 
 #### Installieren einer anderen WURFL™-Datenbank {#installing-a-different-wurfl-database}
 
-Die reduzierte WURFL™-Datenbank, die mit AEM installiert wird, ist eine Veröffentlichung, die vor dem 
-30. August 2011 vorlag. Wenn Ihre WURFL-Version nach dem 30. August 2011 veröffentlicht wurde, vergewissern Sie sich, dass Ihre Verwendung Ihrer Lizenz entspricht.
+Die abgeschnittene WURFL™-Datenbank, die mit AEM installiert wird, ist eine Version, die älter ist als
+&#x200B;30. August 2011. Wenn Ihre WURFL-Version nach dem 30. August 2011 veröffentlicht wurde, vergewissern Sie sich, dass Ihre Verwendung Ihrer Lizenz entspricht.
 
 So installieren Sie eine WURFL™-Datenbank:
 
@@ -339,7 +339,7 @@ Fügen Sie einen Benutzeragenten als regulären Ausdruck unter /apps/wcm/mobile/
 1. Erstellen Sie in **CRXDE Lite** einen Knoten unterhalb von „/apps/wcm/mobile/devicespecs/regexp“, zum Beispiel `apple_ipad_ver1`.
 1. Fügen Sie dem Knoten folgende Eigenschaften hinzu:
 
-   * **regexp**: regulärer Ausdruck, der Benutzeragenten definiert, zum Beispiel:&#42;Mozilla.&#42;iPad.&#42;AppleWebKit.&#42;Safari.&#42;
+   * **regexp**: regulärer Ausdruck, der Benutzeragenten definiert, z. B. .&#42;Mozilla.&#42;iPad.&#42;AppleWebKit.&#42;Safari.&#42;
    * **deviceId**: Die Geräte-ID, wie in wurfl.xml definiert, zum Beispiel `apple_ipad_ver1`
 
 Die obige Konfiguration führt dazu, dass Geräte, für die der Benutzeragent dem angegebenen regulären Ausdruck entspricht, der WURFL™-Geräte-ID apple_ipad_ver1 zugeordnet werden, sofern diese vorhanden ist.

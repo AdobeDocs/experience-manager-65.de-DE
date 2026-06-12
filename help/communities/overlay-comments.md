@@ -25,7 +25,7 @@ Die Absicht [Überlagerung](/help/communities/client-customize.md#overlays) eine
 
 **Komponente „Kommentare überlagern“**
 
-Angenommen, Sie möchten die Kommentarfunktion so ändern, dass sie dem Design Ihrer Website entspricht, indem Sie die Kopfzeile des Kommentars ändern, sodass der Avatar für keinen Kommentar mehr angezeigt wird. Die Lösungen zum Ausblenden des Avatars verwenden entweder CSS oder überlagern, wie hier beschrieben, die Datei header.jsp im Anwendungsordner, sodass die HTML mit dem Avatar nie an den Client gesendet wird.
+Angenommen, Sie möchten die Kommentarfunktion so ändern, dass sie dem Design Ihrer Website entspricht, indem Sie die Kopfzeile des Kommentars ändern, sodass der Avatar für keinen Kommentar mehr angezeigt wird. Die Lösungen zum Ausblenden des Avatars verwenden entweder CSS oder überlagern, wie hier beschrieben, die Datei header.jsp im Programmordner, sodass die HTML, die den Avatar enthält, nie an den Client gesendet wird.
 
 Um Kommentare zu überlagern, müssen Sie:
 

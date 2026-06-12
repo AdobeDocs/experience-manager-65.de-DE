@@ -28,7 +28,7 @@ Der Pfad zur Komponente ist eindeutig und verweist auf die Standardkomponente al
 
 ## Beispiel {#example}
 
-Angenommen, die Kopfzeile für die Kommentarkomponente muss auf einer Site der AEM-Instanz mit einer anderen Darstellung angezeigt werden, während sie auf einer anderen Site mit der Standardanzeige erscheint. Anstatt den Standardkommentar zu überlagern, der die Kommentarkomponente für alle Instanzen ändert, ist eine bessere Lösung, sicherzustellen, dass mehrere Kommentarkomponenten für die Verwendung auf verschiedenen Sites verfügbar sind.
+Angenommen, die Kopfzeile für die Kommentarkomponente muss auf einer Site der AEM-Instanz auf einer anderen Site angezeigt werden, während auf einer anderen Site die Standardanzeige erscheint. Anstatt den Standardkommentar zu überlagern, der die Kommentarkomponente für alle Instanzen ändert, ist eine bessere Lösung, sicherzustellen, dass mehrere Kommentarkomponenten für die Verwendung auf verschiedenen Sites verfügbar sind.
 
 Um diese Lösung zu implementieren, erstellen Sie eine Komponente, die die vorhandene erweitert (überschreibt) und das Handlebars-Skript ändert. Der Bereich der Site, der die neuen Kommentare verwendet, kann den erweiterten verwenden, während die Sites, die das standardmäßige Erscheinungsbild verwenden, nicht betroffen sind.
 

@@ -11,8 +11,8 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 3%
+source-wordcount: '508'
+ht-degree: 4%
 
 ---
 
@@ -26,7 +26,7 @@ In diesem Abschnitt erstellen Sie die folgenden Seiten, die alle die [Seitenvorl
 
    * SCF Play - Untergeordnetes Element der Hauptseite, auf der gespielt werden soll.
 
-Dieses Tutorial geht nicht auf [Sprachkopien“ &#x200B;](../../help/sites-administering/tc-prep.md). Stattdessen wurde er so konzipiert, dass die Stammseite die Erkennung der bevorzugten Sprache für den Benutzer über den HTML-Header implementieren und zur entsprechenden Hauptseite für die Sprache umleiten kann. Die Konvention besagt, dass der aus zwei Buchstaben bestehende Länder-Code für den Knotennamen der Seite verwendet wird, z. B. „en“ für Englisch und „fr“ für Französisch.
+Dieses Tutorial geht nicht auf [Sprachkopien“ &#x200B;](../../help/sites-administering/tc-prep.md). Stattdessen ist sie so konzipiert, dass die Stammseite die Erkennung der bevorzugten Sprache für den Benutzer über den HTML-Header implementieren und zur entsprechenden Hauptseite für die Sprache umleiten kann. Die Konvention besagt, dass der aus zwei Buchstaben bestehende Länder-Code für den Knotennamen der Seite verwendet wird, z. B. „en“ für Englisch und „fr“ für Französisch.
 
 ## Erste Seiten erstellen {#create-first-pages}
 

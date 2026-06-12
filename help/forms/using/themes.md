@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '6086'
-ht-degree: 100%
+source-wordcount: '5966'
+ht-degree: 95%
 
 ---
 
@@ -82,8 +82,8 @@ Hochladen von Designs
 1. Klicken Sie auf **Adobe Experience Manager**, klicken Sie auf **Formulare** und dann auf **Designs**.
 
 1. Auf der Seite „Designs“ klicken Sie auf **Erstellen > Datei-Upload**.
-1. In der Eingabeaufforderung zu „Datei-Upload“ suchen Sie ein Design-Paket auf Ihrem Computer, wählen es aus und klicken auf **Hochladen**.
-Das hochgeladene Design ist auf der Seite „Designs“ verfügbar.
+1. In der Eingabeaufforderung zur Dateiaktualisierung suchen Sie ein Designpaket auf Ihrem Computer, wählen es aus und klicken auf **Hochladen**.
+Das hochgeladene Design ist auf der Seite Designs verfügbar.
 
 ## Metadaten eines Designs {#metadata-of-a-theme}
 
@@ -180,7 +180,7 @@ Liste der Metaeigenschaften eines Designs (auf der Eigenschaftenseite eines Desi
      <li>Der benutzerdefinierte Pfad für das Repository innerhalb von „/etc“, unter dem Client-Bibliotheken für dieses Design gespeichert werden.</li>
      <li>Standardwert: „/etc/clientlibs/fd/themes“ + relativer Pfad des Design-Assets.</li>
      <li>Wenn der Speicherort nicht vorhanden ist, wird die Ordnerhierarchie automatisch generiert.</li>
-     <li>Wenn dieser Wert geändert wird, wird die clientlib-Knotenstruktur an den eingegebenen neuen Speicherort verschoben.<br /> <em><strong>Hinweis</strong>: Wenn Sie den standardmäßigen clientlib-Speicherort ändern, weisen Sie im CRXDE-Repository <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code> sowie <code>jcr:read</code> zu <code>forms-users</code> und <code>crx:replicate</code> sowie <code>jcr:read</code> zu <code>fd-service</code> am neuen Speicherort zu. Fügen Sie außerdem eine weitere ACL hinzu, indem Sie <code>deny jcr:addChildNodes</code> für <code>forms-user</code></em> hinzufügen</li>
+     <li>Wenn dieser Wert geändert wird, wird die Knotenstruktur der clientlib an den neu eingegebenen Speicherort verschoben.<br /> <em><strong>Hinweis:</strong> Wenn Sie den standardmäßigen Clientlib-Speicherort ändern, weisen Sie im CRXDE-Repository <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code> zu <code>forms-users</code> und <code>crx:replicate</code>, <code>jcr:read</code> zu <code>fd-service</code> neuen Speicherort zu. Fügen Sie außerdem eine weitere ACL hinzu, indem Sie <code>deny jcr:addChildNodes</code> für <code>forms-user</code></em> hinzufügen</li>
     </ul> </td>
   </tr>
   <tr>
@@ -212,11 +212,12 @@ Der Design-Editor ist in zwei Bereiche unterteilt:
 
    * **Selektor:** Zeigt die für die Formatierung ausgewählte Komponente und die Eigenschaften, die Sie gestalten können, an. Der Selektor stellt alle Komponenten eines bestimmten Typs dar. Wenn Sie eine Textfeld-Komponente in einem Design für die Formatierung auswählen, übernehmen alle Textfelder im Formular oder in der interaktiven Kommunikation diesen Stil. Mit Selektoren können Sie eine generische Komponente oder eine bestimmte Komponente für die Gestaltung auswählen. Beispielsweise ist eine Feldkomponente eine allgemeine Komponente, und ein Textfeld ist eine spezielle Komponente.
 
-     **Formatierung allgemeiner Komponenten:**
+     **Formatieren allgemeiner Komponenten:**
 Ein Feld kann ein numerisches Feld wie Alter oder ein Textfeld wie Adresse sein.
 Wenn Sie einen Stil für ein Feld definieren, werden alle Felder wie Alter, Name, Adresse entsprechend formatiert.
 
-     **Formatierung einer spezifischen Komponente**: Eine spezifische Komponente wirkt sich auf die Objekte der betreffenden Kategorie aus. Wenn Sie im Design für die Komponente „Numerisches Feld“ einen Stil definieren, wird der Stil nur auf das numerische Feldobjekt angewendet.
+     **Formatieren einer spezifischen Komponente**:
+Eine bestimmte Komponente wirkt sich auf die Objekte der betreffenden Kategorie aus. Wenn Sie im Design für die Komponente „Numerisches Feld“ einen Stil definieren, wird der Stil nur auf das numerische Feldobjekt angewendet.
 
      Beispiel: Ein Textfeld wie Adresse ist länger und ein numerisches Feld wie Alter ist kürzer. Sie können ein numerisches Feld auswählen, seine Länge verkürzen und es auf Ihr Formular anwenden. Die Breite aller numerischen Felder wird in Ihrem Formular verringert.
 
@@ -229,9 +230,9 @@ Wenn Sie einen Stil für ein Feld definieren, werden alle Felder wie Alter, Name
 
    * **CSS anzeigen**: Ermöglicht das Anzeigen von CSS für die ausgewählte Komponente
 
-  Zusätzlich befindet sich unten in der Seitenleiste ein Pfeil. Wenn Sie auf den Pfeil klicken, erhalten Sie zwei zusätzliche Optionen: **Erfolg simulieren** und **Fehler simulieren.** Diese Optionen werden zusammen mit den oben beschriebenen Optionen [nachfolgend](../../forms/using/themes.md#using-rail) detailliert erläutert.
+  Zusätzlich befindet sich unten in der Seitenleiste ein Pfeil. Wenn Sie auf den Pfeil klicken, erhalten Sie zwei weitere Optionen: **Erfolg simulieren** und **Fehler simulieren.** Diese Optionen werden zusammen mit den oben beschriebenen Optionen im Detail ([) &#x200B;](../../forms/using/themes.md#using-rail).
 
-[![Design-Editor mit hervorgehobener Leiste und Arbeitsfläche.](assets/themes.png)](assets/themes-1.png) **A.** Seitenleiste **B.** Arbeitsfläche
+[![Design-Editor mit hervorgehobener Leiste und Arbeitsfläche.](assets/themes.png)](assets/themes-1.png) **a.** Seitenleiste **b.** Arbeitsfläche
 
 ### Formatieren von Komponenten {#styling-components}
 
@@ -341,7 +342,7 @@ Die Schaltflächen „Wiederholen“/„Rückgängig“ werden angezeigt, wenn S
 
 Mit dem Design-Editor können Sie ein Design bearbeiten, das Sie erstellt oder hochgeladen haben. Navigieren Sie zu **Formulare und Dokumente > Designs**, wählen Sie ein Design aus und öffnen Sie es. Das Design wird im Design-Editor geöffnet.
 
-Wie bereits erwähnt, besteht der Design-Editor aus zwei Bereichen: Seitenleiste und Arbeitsfläche.
+Wie bereits erwähnt, verfügt der Design-Editor über zwei Bedienfelder: Seitenleiste und Arbeitsfläche.
 ![theme-editor](assets/theme-editor.png)
 
 Anpassen der Gestaltung für den Erfolgsstatus der Komponente Widget „Textfeld“ im Design-Editor. Die Komponente wird auf der Arbeitsfläche ausgewählt und ihr Status wird in der Seitenleiste ausgewählt. Die in der Seitenleiste verfügbaren Stiloptionen werden verwendet, um das Erscheinungsbild einer Komponente anzupassen.
@@ -381,8 +382,8 @@ Komponenten-Symbolleiste auf dem numerischen Feld auf der Arbeitsfläche
 
 Die Seitenleiste im Design-Editor bietet Optionen zum Anpassen von Stilen für Komponenten in einem Design und zum Verwenden von Selektoren. Mit Selektoren können Sie eine Gruppe von Komponenten oder einzelne Komponenten auswählen und in der Seitenleiste nach Selektoren suchen. Sie können Selektoren für benutzerdefinierte Komponenten schreiben.
 
-Wenn Sie eine Komponente auf der Arbeitsfläche oder Selektoren in der Seitenleiste auswählen, werden in der Seitenleiste alle Optionen angezeigt, mit denen Sie die zugehörigen Stile anpassen können.
-Im Folgenden sehen Sie die Optionen, die in der Seitenleiste angezeigt werden, wenn Sie eine Komponente auswählen:
+Wenn Sie eine Komponente auf der Arbeitsfläche oder Selektoren in der Seitenleiste auswählen, zeigt die Seitenleiste alle Optionen an, mit denen Sie die zugehörigen Stile anpassen können.
+Im Folgenden finden Sie die Optionen, die bei der Auswahl einer Komponente in der Seitenleiste angezeigt werden:
 
 * Status
 * Eigenschaftenblatt
@@ -426,7 +427,7 @@ Die Optionen für die Anpassung der Statusstile variieren je nach Komponente.
    <td><p>Erweitert</p> </td>
    <td><p>Hiermit können Sie Folgendes hinzufügen:</p>
     <ul>
-     <li>Eigenschaften für die Pseudo-Elemente <code>::before</code> und <code>::after</code> zum Hinzufügen von Inhalten nach oder vor dem Standardinhalt im Selektor und deren Formatierung.<br /> Siehe <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">CSS-Pseudo-Elemente</a>.</li>
+     <li>Eigenschaften für <code>::before</code> und <code>::after</code> Pseudo-Elemente zum Hinzufügen von Inhalten nach oder vor dem Standardinhalt im Selektor und deren Formatierung.<br /> Siehe <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">CSS-Pseudo-Elemente</a>.</li>
      <li>Benutzerdefinierten CSS-Inline-Code zu einer Komponente. Außerdem können Sie benutzerdefinierte Selektoren schreiben. </li>
     </ul> <p>Wenn Sie benutzerdefinierten CSS-Code hinzufügen, überschreibt dieser die Anpassungen, die Sie mithilfe der Optionen in der Seitenleiste hinzugefügt haben. </p> </td>
   </tr>
@@ -440,7 +441,7 @@ Die Optionen „Fehler simulieren“ und „Erfolg simulieren“ sind am unteren
 Fügen Sie beispielsweise Ihrem Formular ein numerisches Feld hinzu und legen Sie seine Formatierung im Design-Editor fest. Sobald ein Benutzer einen alphanumerischen Wert im Feld eingibt, soll sich die Hintergrundfarbe des Textfelds ändern. Wählen Sie das numerische Feld im Thema aus und verwenden Sie die Statusoption in der Seitenleiste. Wählen Sie in der Seitenleiste den Status „Fehler“ und ändern Sie die Hintergrundfarbe zu Rot. Um das Verhalten in der Vorschau anzuzeigen, können Sie die Option „Fehler simulieren“ verwenden, die in der Seitenleiste verfügbar ist. Die Optionen „Fehler simulieren“ und „Erfolg simulieren“ werden hier genauer beschrieben:
 
 * **Erfolg simulieren**:
-Hier können Sie sehen, wie eine Komponente aussieht, wenn Sie die Formatierung für den Erfolgsstatus festlegen. Beispiel: In einem Formular legen Kunden Kennwörter fest. Benutzer können Kennwörter gemäß Richtlinien festlegen, die Sie erstellen. Wenn Benutzende ein Passwort eingeben, das allen von Ihnen angegebenen Richtlinien entspricht, wird das Textfeld grün. Wenn das Textfeld grün wird, zeigt es damit den Erfolgsstatus an. Sie können die Formatierung für eine Komponente im Erfolgsstatus festlegen und das Erscheinungsbild mit der Option „Erfolg simulieren“ simulieren.
+Hiermit können Sie sehen, wie eine Komponente aussieht, wenn Sie die Formatierung für den Erfolgsstatus festlegen. Beispiel: In einem Formular legen Kunden Kennwörter fest. Benutzer können Kennwörter gemäß Richtlinien festlegen, die Sie erstellen. Wenn Benutzende ein Passwort eingeben, das allen von Ihnen angegebenen Richtlinien entspricht, wird das Textfeld grün. Wenn das Textfeld grün wird, zeigt es damit den Erfolgsstatus an. Sie können die Formatierung für eine Komponente im Erfolgsstatus festlegen und das Erscheinungsbild mit der Option „Erfolg simulieren“ simulieren.
 
 * **Fehler simulieren**:
 Hier können Sie sehen, wie eine Komponente aussieht, wenn Sie die Formatierung für den Fehlerstatus festlegen. Beispiel: In einem Formular legen Kunden Kennwörter fest. Benutzer können Kennwörter gemäß Richtlinien festlegen, die Sie erstellen. Wenn Benutzende ein Passwort eingeben, das nicht allen von Ihnen angegebenen Richtlinien entspricht, wird das Textfeld rot. Wenn das Textfeld rot wird, zeigt es damit den Fehlerstatus an. Sie können die Gestaltung für eine Komponente mit Fehlerstatus festlegen und ihr Erscheinungsbild mit der Option „Fehler simulieren“ simulieren.
@@ -458,8 +459,8 @@ Führen Sie die folgenden Schritte aus, um die Formatierung für eine bestimmte 
    * **Feld-Widget** ![field-level](assets/field-level.png)
 
 1. Wählen Sie **Widget „Numerisches Feld“**.
-1. Der Titel der Seitenleiste ändert sich zu „Widget ‚Numerisches Feld‘“, und sie enthält die Optionen zum Anpassen des Erscheinungsbildes.
-Ändern Sie mit der Option **Abmessung und Position** in der Seitenleiste die Größe der Komponente. Stellen Sie sicher, dass der Status **Standard** lautet.
+1. Der Titel der Seitenleiste ändert sich zu Widget „Numerisches Feld“ und zeigt Optionen zum Anpassen des Erscheinungsbilds an.
+Verwenden Sie die Option **Dimension und Position** in der Seitenleiste, um die Größe der Komponente anzupassen. Stellen Sie sicher, dass der Status **Standard** lautet.
 
 Wählen Sie in der Komponenten-Symbolleiste statt **Widget „Numerisches Feld“** die Option **Widget „Feld“** und führen Sie die oben genannten Schritte durch. Wenn Sie Abmessungen für die Option **Widget „Feld“** auswählen, haben alle Textfelder mit Ausnahme des numerischen Felds die gleiche Größe.
 
@@ -469,8 +470,8 @@ Mit der Komponenten-Symbolleiste können Sie auch die Gestaltung von Komponenten
 
 Führen Sie die folgenden Schritte aus, um die Formatierung für eine Komponente mit einem bestimmten Status anzupassen:
 
-1. Wählen Sie eine Komponente auf der Arbeitsfläche aus und wählen Sie die entsprechende Option in der Komponenten-Symbolleiste.
-In der Seitenleiste werden die Optionen zum Anpassen der Formatierung für die Komponente angezeigt.
+1. Wählen Sie eine Komponente auf der Arbeitsfläche aus und wählen Sie die entsprechende Option in der Komponenten-Symbolleiste aus.
+In der Seitenleiste werden Optionen zum Anpassen der Formatierung für die Komponente angezeigt.
 1. Wählen Sie in der Seitenleiste einen Status aus. Beispielsweise den Status „Fehler“.
 1. Verwenden Sie Optionen wie **Rahmen, Hintergrund** in der Seitenleiste, um das Erscheinungsbild der Komponente anzupassen.
 1. Durch Auswahl der Option **Fehler simulieren** am unteren Rand der Seitenleiste können Sie während der Bearbeitung sehen, wie die Formatierung aussieht.
@@ -486,7 +487,7 @@ Verwenden Sie das Lineal auf der Arbeitsfläche, um Haltepunkte für Geräte mit
 So formatieren Sie Komponenten für verschiedene Haltepunkte:
 
 1. Wählen Sie auf der Arbeitsfläche einen Haltepunkt über dem Lineal aus.
-Ein Haltepunkt steht für ein Mobilgerät und dessen Displaygröße.
+Ein Haltepunkt stellt ein Mobilgerät und dessen Displaygröße dar.
 1. Verwenden Sie die Seitenleiste, um die Formatierung von Komponenten für Formulare oder die interaktive Kommunikation im Design entsprechend der ausgewählten Anzeigegröße anzupassen.
 1. Stellen Sie sicher, dass die Anpassung gespeichert wird.
 
@@ -508,7 +509,7 @@ Führen Sie die folgenden Schritte aus, um Adobe Fonts in AEM zu konfigurieren:
 
 Führen Sie die folgenden Schritte aus, um ein Design so zu konfigurieren, dass es die Adobe Fonts-Konfiguration verwendet:
 
-1. Öffnen Sie in der Author-Instanz im Design-Editor ein Design.
+1. Öffnen Sie in der Autoreninstanz im Design-Editor ein Design.
 1. Navigieren Sie im Design-Editor zu **Themenoptionen** ![Themenoptionen](assets/theme-options.png) > **Konfigurieren**.
 1. Wählen Sie im Feld **Adobe Fonts-Konfiguration** ein Kit aus und klicken Sie auf **Speichern**.
 
@@ -650,9 +651,9 @@ Zum Anzeigen der generierten CSS-Datei stehen die folgenden Optionen zur Verfüg
       1. Wählen Sie auf der Registerkarte „Erweitert“ im Feld „Clientlib-Speicherort“ die Client-Bibliothek aus, die Sie verwenden möchten.
       1. Klicken Sie auf **Speichern**.
 
-     Die Formatierung, die Sie in der Client-Bibliothek angeben, wird in das Design importiert, das sie verwendet. Beispiel: Geben Sie die Formatierung für das Textfeld und das numerische Feld ein und wechseln Sie zur Client-Bibliothek. Wenn Sie die Client-Bibliothek in das Design importieren, wird die Formatierung für das Textfeld, das numerische Feld und den Umschalter importiert. Sie können dann andere Komponenten mithilfe des Design-Editors formatieren.
+     Die Stile, die Sie in der Client-Bibliothek angeben, werden in das Design importiert, das sie verwendet. Sie können beispielsweise in der Client-Bibliothek Stile für Textfelder, numerische Felder und Umschalter angeben. Beim Importieren der Client-Bibliothek im Design wird die Formatierung für Textfeld, numerisches Feld und Umschalter importiert. Sie können dann andere Komponenten mithilfe des Design-Editors formatieren.
 Sie können auch ein Design erstellen, Kopien davon anfertigen und dann die in den kopierten Designs enthaltenen Stile für ähnliche Anwendungsfälle abändern.
-Siehe [Kreieren eines bestimmten Looks mithilfe von Designs](#specific-af-appearance)
+Siehe [Kreieren eines bestimmten Erscheinungsbildes mithilfe von Designs](#specific-af-appearance)
 
    * **Themen-Editor:**
 
@@ -672,5 +673,5 @@ Siehe [Kreieren eines bestimmten Looks mithilfe von Designs](#specific-af-appear
 
 * **Verwendung des Formular- oder Design-Editors für die Arbeit mit Kopf- und Fußzeile**
 
-  Verwenden Sie den Design-Editor, wenn Sie Kopf- und Fußzeilen mit Formatierungsoptionen wie Schriftschnitt, Hintergrund und Transparenz formatieren möchten.
-Wenn Sie Informationen wie ein Logo, einen Firmennamen in der Kopfzeile und Copyright-Informationen in der Fußzeile angeben möchten, verwenden Sie dazu die im Formular-Editor verfügbaren Optionen.
+  Verwenden Sie den Design-Editor, wenn Sie Kopf- und Fußzeilen mit Stiloptionen wie Schriftschnitt, Hintergrund und Transparenz formatieren möchten.
+Wenn Sie Informationen wie ein Logobild, einen Firmennamen in der Kopfzeile und Copyright-Informationen in der Fußzeile angeben möchten, verwenden Sie die Optionen des Formular-Editors.

@@ -7,7 +7,7 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1173'
 ht-degree: 100%
 
 ---
@@ -95,7 +95,7 @@ In dieser Ansicht werden die Elemente nach Kalenderdatum und entsprechend der vo
 
 Sie haben folgende Möglichkeiten:
 
-* eine bestimmte Ansicht auswählen (**Zeitleiste**,**Spalte** oder **Liste**)
+* eine bestimmte Ansicht auswählen (**Timeline**,**Spalte** oder **Liste**)
 
 * festlegen, dass die Aufgaben gemäß einem **Zeitplan** angezeigt werden sollen (**Alle**, **Geplant**, **In Bearbeitung**, **Bald fällig** oder **Überfällig**)
 

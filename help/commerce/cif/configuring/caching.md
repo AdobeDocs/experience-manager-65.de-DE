@@ -7,8 +7,8 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 100%
+source-wordcount: '882'
+ht-degree: 99%
 
 ---
 
@@ -64,6 +64,6 @@ Beim TTL-basierten Caching definiert ein Entwickler normalerweise eine oder mehr
 
 ## Zusätzliche Ressourcen
 
-- [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia)
+- [Venia Referenz-Store](https://github.com/adobe/aem-cif-guides-venia)
 - [GraphQL-Caching-Konfiguration](https://github.com/adobe/commerce-cif-graphql-client#caching)
 - [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)

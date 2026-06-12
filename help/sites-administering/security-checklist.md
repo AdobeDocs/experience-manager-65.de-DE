@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2959'
-ht-degree: 100%
+source-wordcount: '3025'
+ht-degree: 97%
 
 ---
 
@@ -86,8 +86,8 @@ Weitere Informationen zum Ändern des Kennworts für die Web-Konsole finden Sie 
 
 Ändern Sie das Passwort für den Zugriff auf die Web-Konsole. Dies geschieht mithilfe einer [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md), um die folgenden Eigenschaften der **Apache Felix OSGi Management Console** zu aktualisieren:
 
-* **Benutzername** und **Kennwort**: die Anmeldeinformationen für den Zugriff auf die Apache Felix Web Management Console.
-Das Kennwort muss *nach* der ersten Installation geändert werden, damit die Sicherheit Ihrer Instanz gewährleistet ist.
+* **Benutzername** und **Kennwort** die Anmeldeinformationen für den Zugriff auf die Apache Felix Web Management Console.
+Das Kennwort muss (*) nach* ersten Installation geändert werden, um die Sicherheit Ihrer Instanz zu gewährleisten.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Das Kennwort muss *nach* der ersten Installation geändert werden, damit die Sic
 
 **So ändern Sie das Administratorpasswort der OSGi-Web-Konsole**:
 
-1. Öffnen Sie über das Menü **Tools**, **Vorgänge** die **Web-Konsole** und navigieren Sie zum Abschnitt **Konfiguration**.
+1. Öffnen Sie über das **Tools**, **Vorgänge** das **Web-** und navigieren Sie zum Abschnitt **Konfiguration**.
 Zum Beispiel unter `<server>:<port>/system/console/configMgr`.
 1. Navigieren Sie zum Eintrag für die **Management-Konsole für Apache Felix OSGi** und öffnen Sie ihn.
 1. Ändern Sie den **Benutzernamen** und das **Kennwort**.
@@ -130,7 +130,7 @@ Aus Sicherheitsgründen sollten beide geändert werden, um dem jeweiligen Anwend
 
 * **Transport-Benutzer** dürfen keine Admin-Benutzer sein. Richten Sie stattdessen einen Benutzer im Veröffentlichungssystem ein, der nur über Zugriffsrechte für die relevanten Teile des Veröffentlichungssystems verfügt, und verwenden Sie die Anmeldeinformationen dieses Benutzers für den Transport.
 
-    Sie können mit dem gebündelten Benutzer „Replikations-Empfänger“ beginnen und die Zugriffsrechte dieses Benutzenden so konfigurieren, dass sie Ihren Anforderungen entsprechen.
+  Sie können mit dem gebündelten Benutzer „Replikations-Empfänger“ beginnen und die Zugriffsrechte dieses Benutzenden so konfigurieren, dass sie Ihren Anforderungen entsprechen.
 
 * Der **Replikationsbenutzer** oder die **Agenten-Benutzer-ID** sollte auch nicht der Admin-Benutzer sein, sondern ein Benutzer, der nur replizierte Inhalte sehen kann. Der Replikationsbenutzende wird auch zum Erfassen von Inhalten verwendet, die auf dem Autorensystem repliziert werden sollen, bevor sie an den Publisher gesendet werden.
 
@@ -146,7 +146,7 @@ Alle Beispielinhalte und -benutzer (z. B. das Geometrixx-Projekt und seine Komp
 
 >[!NOTE]
 >
->Die `We.Retail`-Beispielanwendungen werden entfernt, wenn diese Instanz im [produktionsbereiten Modus](/help/sites-administering/production-ready.md) ausgeführt wird. Wenn dieses Szenario nicht zutrifft, können Sie den Beispielinhalt deinstallieren, indem Sie zum Package Manager navigieren und alle `We.Retail`-Pakete suchen und deinstallieren.
+>Die `We.Retail`-Beispielanwendungen werden entfernt, wenn diese Instanz im [produktionsbereiten Modus](/help/sites-administering/production-ready.md) ausgeführt wird. Wenn dieses Szenario nicht zutrifft, können Sie den Beispielinhalt deinstallieren, indem Sie zum Paket-Manager navigieren und alle `We.Retail`-Pakete suchen und deinstallieren.
 
 Siehe [Arbeiten mit Paketen](package-manager.md).
 
@@ -287,7 +287,7 @@ Durch diesen Ansatz wird Sling zu einem leistungsstarken und flexiblen Tool, abe
 
 So verhindern Sie einen Missbrauch infolge von DoS-Angriffen:
 
-1. Binden Sie Kontrollen auf Anwendungsebene ein. Aufgrund der Anzahl der möglichen Varianten ist eine Standardkonfiguration nicht praktikabel.
+1. Integrieren Sie Kontrollen auf Anwendungsebene. Aufgrund der Anzahl der möglichen Varianten ist eine Standardkonfiguration nicht möglich.
 
    In Ihrem Programm sollten Sie Folgendes tun:
 
@@ -324,7 +324,7 @@ So verhindern Sie einen Missbrauch infolge von DoS-Angriffen:
 >
 >Diese Abmilderung sollte nur für AEM-Umgebungen durchgeführt werden, die keine Formulare verwenden.
 
-Da AEM keine vorkonfigurierten Indizes für `FormChooserServlet` bereitstellt, löst die Verwendung der Formularauswahl in Abfragen einen aufwändigen Repository-Durchlauf aus, der meist die AEM-Instanz zum Stoppen bringt. Formularauswahl-Instanzen können anhand der Zeichenfolge **&amp;ast;.form.&amp;ast;** in Abfragen erkannt werden.
+Da AEM keine vorkonfigurierten Indizes für `FormChooserServlet` bereitstellt, löst die Verwendung der Formularauswahl in Abfragen einen aufwändigen Repository-Durchlauf aus, der meist die AEM-Instanz zum Stoppen bringt. Formularauswahl-Instanzen können anhand der Zeichenfolge **&ast;.form.&ast;** in Abfragen erkannt werden.
 
 Um dieses Problem abzumildern, können Sie die folgenden Schritte durchführen:
 
@@ -429,7 +429,7 @@ Um Ihre Schlüssel über Instanzen hinweg zu replizieren, müssen Sie sie daher 
 
 Im Einzelnen müssen Sie Folgendes tun:
 
-1. Greifen Sie auf die AEM-Instanz zu, auf der sich die zu kopierenden Schlüsseldaten befinden. In der Regel handelt es sich dabei um eine Authoring-Instanz.
+1. Greifen Sie auf die AEM-Instanz zu, auf der sich die zu kopierenden Schlüsseldaten befinden. In der Regel handelt es sich dabei um eine Autoreninstanz.
 1. Suchen Sie im lokalen Dateisystem das Bundle com.adobe.granite.crypto.file. Es kann sich z. B. unter diesem Pfad befinden:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`

@@ -13,7 +13,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2856'
+source-wordcount: '2911'
 ht-degree: 3%
 
 ---
@@ -158,7 +158,7 @@ Bewertungsregeln sind die Grundlage für die Bewertung von Abzeichen.
 
 Jede Bewertungsregel ist eine Liste aus einer oder mehreren Unterregeln. Auf den Inhalt der Community-Site werden Bewertungsregeln angewendet, um die Regeln zu identifizieren, die bei aktivierten Abzeichen anzuwenden sind.
 
-Bewertungsregeln werden vererbt, sind aber nicht additiv. Zum Beispiel:
+Bewertungsregeln werden vererbt, sind aber nicht additiv. Beispiel:
 
 * Wenn Seite2 die Bewertungsregel2 und ihre Vorgängerseite1 die Bewertungsregel1 enthält.
 * Eine Aktion in einer „page2“-Komponente ruft „rule1“ und „rule2“ auf.
@@ -181,8 +181,7 @@ Scores werden in SRP gespeichert.
 >
 >Ein Beispiel dafür *was* tun:
 >
->/libs/settings/community/scoring/rules/site1/forums-scoring
->/libs/settings/community/scoring/rules/site2/forums-scoring
+>/libs/settings/community/scoring/rules/site1/forums-scoring>/libs/settings/community/scoring/rules/site2/forums-scoring
 
 ### Unterregeln für die Bewertung {#scoring-sub-rules}
 
@@ -198,7 +197,7 @@ Standardmäßig werden Punkte an das Mitglied vergeben, das eine Aktion durchfü
 
 Jede Unterregel kann in einer oder mehreren Bewertungsregeln enthalten sein.
 
-Der Name der Unterregel folgt normalerweise dem Muster der Verwendung eines *Subjekt*, *Objekt* und *Verb*. Zum Beispiel:
+Der Name der Unterregel folgt normalerweise dem Muster der Verwendung eines *Subjekt*, *Objekt* und *Verb*. Beispiel:
 
 * member-comment-create
 * member-receive-vote
@@ -239,7 +238,7 @@ Unterregeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf ihrem `jcr:cont
   </tr>
   <tr>
    <td><code>forOwner</code></td>
-   <td>Boolesch</td>
+   <td>Boolescher Wert</td>
    <td>
     <ul>
      <li>Optional; nicht relevant, wenn ein Mitglied Inhalte bearbeitet, deren Eigentümer es ist</li>
@@ -312,7 +311,7 @@ Badging-Regeln verknüpfen Bewertungsregeln mit Abzeichen, indem Folgendes angeg
 
 Badging-Regeln sind Knoten vom Typ `cq:Page` mit Eigenschaften auf ihrem `jcr:content` Knoten, die Bewertungsregeln mit Bewertungen und Abzeichen korrelieren.
 
-Die Badging-Regeln bestehen aus einer obligatorischen `thresholds`-Eigenschaft, die eine geordnete Liste von Werten ist, die Abzeichen zugeordnet sind. Die Punktzahlen müssen in aufsteigender Reihenfolge sortiert werden. Zum Beispiel:
+Die Badging-Regeln bestehen aus einer obligatorischen `thresholds`-Eigenschaft, die eine geordnete Liste von Werten ist, die Abzeichen zugeordnet sind. Die Punktzahlen müssen in aufsteigender Reihenfolge sortiert werden. Beispiel:
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
@@ -376,7 +375,7 @@ In dieser Version sind zwei Badging-Regeln enthalten, die den [Bewertungsregeln 
 
 **Anmerkungen:**
 
-* `rules` Knoten sind vom Typ cq:Page.
+* `rules` Knoten sind vom Typ CQ:Page.
 * `rules` sollten sich an einem Repository-Speicherort mit Leseberechtigung für alle befinden.
 
    * Regelnamen müssen unabhängig vom Speicherort eindeutig sein.
@@ -393,13 +392,13 @@ Die folgenden cURL-Befehle zeigen, was für eine HTTP-Anfrage zum Zuweisen und W
 
 cURL -i -X POST -H *Header* -u *signin* -F *operation* -F *badge* *member-profile-url*
 
-*header* = „Accept:Application/json“
+*header* = „Accept:application/json“
 Benutzerdefinierte Kopfzeile, die an den Server übergeben wird (erforderlich)
 
 *signin* = Administrator-ID:password
 Beispiel: admin:admin
 
-*operation* = &quot;:operation=social:assignBadge“ ODER &quot;:operation=social:deleteBadge“
+*operation* = &quot;:operation=social:assignBadge&quot; ODER &quot;:operation=social:deleteBadge&quot;
 
 *badge* = „badgeContentPath=*badge-image-file*&quot;
 
@@ -460,7 +459,7 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 | AKTUALISIEREN | Kalenderereignis oder -kommentar des Nutzers wird bearbeitet |
 | LÖSCHEN | Kalenderereignis oder Kommentar des Nutzers wird gelöscht |
 
-**[Komponente „Kommentare](/help/communities/comments.md)**
+**[Komponente „Kommentare“](/help/communities/comments.md)**
 SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verb** | **Beschreibung** |
@@ -512,7 +511,7 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 | UNSELECT | Die Antwort des Nutzers wurde deaktiviert |
 | LÖSCHEN | Eine Frage oder Antwort eines Mitglieds wird gelöscht |
 
-**[Reviews-Komponente](/help/communities/reviews.md)**
+**[Komponente „Überprüfungen“](/help/communities/reviews.md)**
 SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verb** | **Beschreibung** |
@@ -529,7 +528,7 @@ SocialEvent `topic`= com/adobe/cq/social/tally/rating
 | BEWERTUNG HINZUFÜGEN | Der Inhalt des Abonnenten wurde aktualisiert |
 | WERTUNG ENTFERNEN | Der Inhalt des Abonnenten wurde als unzureichend bewertet |
 
-**[Abstimmungskomponente](/help/communities/voting.md)**
+**[Stimmrechtskomponente](/help/communities/voting.md)**
 SocialEvent `topic`= com/adobe/cq/social/tally/vote
 
 | **Verb** | **Beschreibung** |

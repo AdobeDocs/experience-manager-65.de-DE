@@ -12,7 +12,7 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1558'
 ht-degree: 100%
 
 ---
@@ -54,7 +54,7 @@ Bevor Sie sich einen Überblick über die Besonderheiten verschaffen, hier eine 
       * [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode)
       * [Als veröffentlicht anzeigen](/help/sites-authoring/editing-content.md#view-as-published)
 
-* Versionen werden nicht aus dem Seiteneditor gestartet/erstellt. Dies erfolgt jetzt über die Sites-Konsole (über **Erstellen** oder [Zeitleiste](/help/sites-authoring/basic-handling.md#timeline) für die jeweilige Ressource).   
+* Versionen werden nicht aus dem Seiteneditor gestartet/erstellt. Dies erfolgt jetzt über die Sites-Konsole (über **Erstellen** oder [Timeline](/help/sites-authoring/basic-handling.md#timeline) für die jeweilige Ressource).
 
 >[!NOTE]
 >
@@ -127,7 +127,7 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions) sind verfügbar:
 
 1. [Navigieren Sie zu der Seite,](#finding-your-page) mit der Sie eine Aktion ausführen möchten.
-1. Bewegen Sie den Mauszeiger über die Karte für die gewünschte Ressource. Die Schnellaktionen werden angezeigt: 
+1. Bewegen Sie den Mauszeiger über die Karte für die gewünschte Ressource. Die Schnellaktionen werden angezeigt:
 
    ![screen_shot_2018-03-21at160503-1](assets/screen_shot_2018-03-21at160503-1.png)
 
@@ -280,7 +280,7 @@ Diese Aktionen können alle wie folgt ausgelöst werden:
    >
    >Löschen ist nicht als Schnellaktion verfügbar.
 
-### Sperren (und Entsperren) Ihrer Seite  {#locking-your-page-then-unlocking}
+### Sperren (und Entsperren) Ihrer Seite {#locking-your-page-then-unlocking}
 
 [Sperren einer Seite](/help/sites-authoring/editing-content.md#locking-a-page): Verhindert, dass andere Autoren daran arbeiten, während Sie dies tun. Das Symbol bzw. die Schaltfläche „Sperren“ (und „Entsperren“) ist verfügbar:
 
@@ -310,11 +310,11 @@ Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:
 
 So erstellen Sie eine [Version](/help/sites-authoring/working-with-page-versions.md) Ihrer Seite:
 
-1. Wählen Sie zum Öffnen der Zeitleiste die Option **[Zeitleiste](/help/sites-authoring/basic-handling.md#timeline)** mithilfe des Symbolleistensymbols (vor oder nach dem [Auswählen Ihrer Seite](#selecting-your-page-for-further-action)):
+1. Wählen Sie zum Öffnen der Timeline die Option **[Timeline](/help/sites-authoring/basic-handling.md#timeline)** mithilfe des Symbolleistensymbols (vor oder nach dem [Auswählen Ihrer Seite](#selecting-your-page-for-further-action)):
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
-1. Klicken Sie unten rechts in der Spalte „Zeitleiste“ auf den Nach-oben-Pfeil, um weitere Schaltflächen einzublenden, darunter auch **Als Version speichern**.
+1. Klicken Sie unten rechts in der Spalte „Timeline“ auf den Nach-oben-Pfeil, um weitere Schaltflächen einzublenden, darunter auch **Als Version speichern**.
 
    ![screen-shot_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
 
@@ -324,7 +324,7 @@ So erstellen Sie eine [Version](/help/sites-authoring/working-with-page-versions
 
 Beim Wiederherstellen und/oder Vergleichen von Seitenversionen wird dasselbe grundlegende Verfahren eingesetzt:
 
-1. Wählen Sie mithilfe des Symbolleistensymbols die Option **[Zeitleiste](/help/sites-authoring/basic-handling.md#timeline)** (vor oder nach dem [Auswählen Ihrer Seite](#selecting-your-page-for-further-action)):
+1. Wählen Sie mithilfe des Symbolleistensymbols die Option **[Timeline](/help/sites-authoring/basic-handling.md#timeline)** (vor oder nach dem [Auswählen Ihrer Seite](#selecting-your-page-for-further-action)):
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
