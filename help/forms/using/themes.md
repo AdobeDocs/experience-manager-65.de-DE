@@ -230,7 +230,7 @@ Eine bestimmte Komponente wirkt sich auf die Objekte der betreffenden Kategorie 
 
    * **CSS anzeigen**: Ermöglicht das Anzeigen von CSS für die ausgewählte Komponente
 
-  Zusätzlich befindet sich unten in der Seitenleiste ein Pfeil. Wenn Sie auf den Pfeil klicken, erhalten Sie zwei weitere Optionen: **Erfolg simulieren** und **Fehler simulieren.** Diese Optionen werden zusammen mit den oben beschriebenen Optionen im Detail ([) ](../../forms/using/themes.md#using-rail).
+  Zusätzlich befindet sich unten in der Seitenleiste ein Pfeil. Wenn Sie auf den Pfeil klicken, erhalten Sie zwei weitere Optionen: **Erfolg simulieren** und **Fehler simulieren.** Diese Optionen werden zusammen mit den oben beschriebenen Optionen im Detail ([) &#x200B;](../../forms/using/themes.md#using-rail).
 
 [![Design-Editor mit hervorgehobener Leiste und Arbeitsfläche.](assets/themes.png)](assets/themes-1.png) **a.** Seitenleiste **b.** Arbeitsfläche
 
