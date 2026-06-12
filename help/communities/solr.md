@@ -190,7 +190,7 @@ Die Standard-MLS-Dateien werden im AEM-Repository gespeichert.
 
    1. Kopieren Sie die heruntergeladenen **schema.xml** und **solrconfig.xml** nach *new-config-dir*, um vorhandene Dateien zu überschreiben.
 
-1. [Laden Sie die neue Konfiguration ](#upload-a-configuration-to-zookeeper) ZooKeeper hoch.
+1. [Laden Sie die neue Konfiguration &#x200B;](#upload-a-configuration-to-zookeeper) ZooKeeper hoch.
 1. [Erstellen Sie eine Sammlung](#create-a-collection) und geben Sie die erforderlichen Parameter an, z. B. die Anzahl der Shards, die Anzahl der Replikate und den Konfigurationsnamen.
 1. Wenn der Konfigurationsname bei der Erstellung der Sammlung *nicht* angegeben wurde, [verknüpfen Sie diese neu erstellte Sammlung](#link-a-collection-to-a-configuration-set) mit der auf ZooKeeper hochgeladenen Konfiguration.
 
@@ -254,7 +254,7 @@ Installationsanweisungen - Beachten Sie die Unterschiede für Solr4 und Solr5:
    1. Für Solr5: Kopieren Sie `solr_install_dir/server/solr/configsets/sample_techproducts_configs/conf/lang/*.txt` nach `new-config-dir/lang/`
    1. Kopieren Sie den extrahierten **Stoppwörter/**-Ordner nach *new-config-dir* was zu `new-config-dir/stopwords/*.txt` führt
 
-1. [Laden Sie die neue Konfiguration ](#upload-a-configuration-to-zookeeper) ZooKeeper hoch.
+1. [Laden Sie die neue Konfiguration &#x200B;](#upload-a-configuration-to-zookeeper) ZooKeeper hoch.
 1. Kopieren Sie den neuen **Ordner Profile/** …
 
    * Für Solr4: Kopieren Sie in die Ressourcen/Ordner jedes Knotens
@@ -275,7 +275,7 @@ Installationsanweisungen - Beachten Sie die Unterschiede für Solr4 und Solr5:
    * *solr-install-dir/contributb/analysis-extras/lucene-libs/*.jar
 
 1. [Erstellen Sie eine Sammlung](#create-a-collection) und geben Sie die erforderlichen Parameter an, z. B. die Anzahl der Shards, die Anzahl der Replikate und den Konfigurationsnamen.
-1. Wenn der Konfigurationsname bei *Erstellung der Sammlung* angegeben wurde, verknüpfen [ diese neu erstellte Sammlung ](#link-a-collection-to-a-configuration-set) der Konfiguration, die in ZooKeeper hochgeladen wurde.
+1. Wenn der Konfigurationsname bei *Erstellung der Sammlung* angegeben wurde, verknüpfen [&#x200B; diese neu erstellte Sammlung &#x200B;](#link-a-collection-to-a-configuration-set) der Konfiguration, die in ZooKeeper hochgeladen wurde.
 
 1. Führen Sie für MSRP [MSRP Reindex Tool](#msrpreindextool) aus, es sei denn, diese Installation ist neu.
 
