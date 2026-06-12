@@ -241,7 +241,7 @@ Um den Vorbefüllungsdienst zu aktivieren, müssen Sie die standardmäßige Vorb
 >Die Vorbefüllungs-Dienstkonfiguration ist auf adaptive Formulare, HTML5-Formulare und HTML5-Formularsätze anwendbar.
 
 1. Öffnen Sie die **[!UICONTROL Adobe Experience Manager Web-Konsolenkonfiguration]** über die URL:\
-   https://<server>:<port>/system/console/configMgr
+   https://&lt;server>:&lt;port>/system/console/configMgr
 1. Suchen und öffnen Sie die **[!UICONTROL standardmäßige Vorbefüllungs-Service-Konfiguration]**.
 
    ![Vobefüllungskonfiguration](assets/prefill_config_new.png)
