@@ -12,7 +12,7 @@ role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
    * Hier gibt es mehrere Möglichkeiten:
    * Überprüfen Sie, ob die Seite korrekt repliziert wurde. Überprüfen Sie den Seitenstatus und ggf. den Status der Replikations-Warteschlange.
    * Löschen Sie den Cache des lokalen Browsers und rufen Sie die Seite erneut auf.
-   * Fügen Sie dem Ende der Seiten-URL `?` hinzu:
+   * Fügen Sie am Ende der Seiten-URL `?` hinzu. Beispiel:
 
      `http://localhost:4502/sites.html/content?`
 

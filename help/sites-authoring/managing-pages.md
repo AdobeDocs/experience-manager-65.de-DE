@@ -7,8 +7,8 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '2476'
-ht-degree: 100%
+source-wordcount: '2505'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Organisieren Sie als Autorin oder Autor Ihre Website innerhalb von AEM. Dazu geh
 
 Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) organisieren.
 
-Die Struktur einer Website kann als Baumstruktur gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet. Der Titel wird zusammen mit dem Seiteninhalt angezeigt.
+Die Struktur einer Website kann als Baumstruktur gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet, während der Titel angezeigt wird, wenn der Inhalt der Seite aufgerufen wird.
 
 Im Folgenden sehen Sie ein Beispiel von der Website We.Retail, auf der eine Seite mit Cargo-Shorts (`desert-sky-shorts`) aufgerufen wird:
 
@@ -148,18 +148,18 @@ Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben
 
 In AEM gibt eine Vorlage einen speziellen Seitentyp an. Eine Vorlage wird als Grundlage für jede neue Seite verwendet, die erstellt wird.
 
-Die Vorlage definiert die Seitenstruktur, u. a. eine Miniaturansicht und andere Eigenschaften. Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
+Die Vorlage definiert die Struktur einer Seite, einschließlich eines Miniaturbilds und anderer Eigenschaften. Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
 
 Im Lieferumfang von AEM sind diverse Vorlagen enthalten. Welche Vorlagen verfügbar sind, hängt von der jeweiligen Website ab. Die wichtigsten Felder sind:
 
-* **Titel**
-Der Titel, der auf der resultierenden Web-Seite angezeigt wird.
+* **title**
+Der auf der resultierenden Web-Seite angezeigte Titel.
 
-* **Name**
+* **name**
 Wird beim Benennen der Seite verwendet.
 
-* **Vorlage**
-Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden können.
+* **template**
+Eine Liste der Vorlagen, die beim Generieren der neuen Seite verwendet werden können.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden k�
 
 ### Komponenten {#components}
 
-Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM ist mit [einsatzbereiten Komponenten](/help/sites-authoring/default-components-console.md) ausgestattet, die umfangreiche Funktionen bieten, wie:
+Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM ist mit einer Reihe [&#x200B; Komponenten ausgestattet, &#x200B;](/help/sites-authoring/default-components-console.md) umfangreiche Funktionen bieten. Dazu gehören:
 
 * Text
 * Bild
@@ -416,7 +416,7 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
    * Mit **Löschen** bestätigen Sie die Aktion.
 
       * Wenn die Seite keine Verweise enthält, wird sie gelöscht.
-      * Wenn die Seite Referenzen enthält, werden Sie in einem Meldungsfeld darüber informiert, dass **auf eine oder mehrere Seiten verwiesen wird.** Sie können **Löschen erzwingen** oder **Abbrechen** auswählen.
+      * Wenn die Seite Verweise enthält, werden Sie in einem Meldungsfeld darüber informiert, dass **auf eine oder mehrere Seiten verwiesen wird.** Sie können **Löschen erzwingen** oder **Abbrechen** auswählen.
 
 >[!NOTE]
 >

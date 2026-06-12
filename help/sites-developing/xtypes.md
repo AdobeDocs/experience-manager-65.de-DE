@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3865'
-ht-degree: 100%
+source-wordcount: '7653'
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.wcm.Annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Annotation)
 
-   Ein spezielles Fenster mit einem Formular im Hauptteil und einer Schaltflächengruppe in der Fußzeile. Es wird in der Regel zum Bearbeiten von Inhalten verwendet, kann aber auch nur zur Anzeige von Informationen genutzt werden.
+  Ein spezielles Fenster mit einem Formular im Hauptteil und einer Schaltflächengruppe in der Fußzeile. Es wird in der Regel zum Bearbeiten von Inhalten verwendet, kann aber auch nur zur Anzeige von Informationen genutzt werden.
 
 * arraystore
 
@@ -68,7 +68,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.wcm.msm.BlueprintConfig](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintConfig)
 
-   BlueprintConfig stellt ein Feld bereit, in dem Sie die Live Copies eines Blueprint anzeigen und die Blueprint-Eigenschaften („Synchronisierungsauslöser“ und „Aktionen synchronisieren“) bearbeiten können.
+  BlueprintConfig stellt ein Feld bereit, in dem Sie die Live Copies eines Blueprint anzeigen und die Blueprint-Eigenschaften („Synchronisierungsauslöser“ und „Aktionen synchronisieren“) bearbeiten können.
 
 * blueprintstatus
 
@@ -392,7 +392,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.Ext.data.GroupingStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)
 
-  Eine spezielle Speicherimplementierung zum Gruppieren von Datensätzen nach einem der verfügbaren Felder. Dies wird mit einer [CQ.Ext.grid.GroupingView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GroupingView) verwendet, um das Datenmodell für ein gruppiertes GridPanel zu bestätigen.
+  Eine spezielle Speicherimplementierung zum Gruppieren von Einträgen nach einem der verfügbaren Felder. Dies wird mit einer [CQ.Ext.grid.GroupingView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GroupingView) verwendet, um das Datenmodell für ein gruppiertes GridPanel zu bestätigen.
 
 * heavymovedialog
 
@@ -612,7 +612,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.form.Password](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.Password)
 
-   „Password“ ist einem [CQ.Ext.form.TextField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextField) ähnlich, die darin enthaltenen Werte bleiben jedoch privat, sodass Benutzer vertrauliche Daten eingeben können.
+  „Password“ ist einem [CQ.Ext.form.TextField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextField) ähnlich, die darin enthaltenen Werte bleiben jedoch privat, sodass Benutzer vertrauliche Daten eingeben können.
 
 * pathcompletion
 
@@ -764,7 +764,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.form.SmartImage](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SmartImage)
 
-  SmartImage ist ein intelligenter Bild-Uploader, der Tools zum Verarbeiten von hochgeladenen Bildern bereitstellt, beispielsweise ein Definitions-Tool für Bildzuordnungen und einen Bildzuschneider.
+  SmartImage ist ein intelligenter Bild-Uploader, der Tools zum Verarbeiten von hochgeladenen Bildern bereitstellt, beispielsweise ein Definitions-Tool für Imagemaps und einen Bildzuschneider.
 
   Die Komponente ist für die Verwendung auf einer separaten Dialogfeld-Registerkarte bestimmt.
 
@@ -784,7 +784,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.Ext.SplitButton](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.SplitButton)
 
-   Eine unterteilte Schaltfläche, die einen integrierten Abwärtspfeil bereitstellt, der ein Ereignis separat zu einem Standard-Klick-Ereignis der Schaltfläche auslösen kann. Sie wird in der Regel verwendet, um ein Dropdown-Menü anzuzeigen, das zusätzliche Optionen zur Hauptaktion der Schaltfläche bereitstellt. Jeder benutzerdefinierte Handler kann jedoch den Pfeilklick implementieren.
+  Eine unterteilte Schaltfläche, die einen integrierten Abwärtspfeil bereitstellt, der ein Ereignis separat zu einem Standard-Klick-Ereignis der Schaltfläche auslösen kann. Sie wird in der Regel verwendet, um ein Dropdown-Menü anzuzeigen, das zusätzliche Optionen zur Hauptaktion der Schaltfläche bereitstellt. Jeder benutzerdefinierte Handler kann jedoch den Pfeilklick implementieren.
 
 * static
 
@@ -796,13 +796,13 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.wcm.Statistics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Statistics)
 
-   „Statistics“ zeigt die Seitenimpressionen als Diagramm an. Das Widget ermöglicht die Auswahl eines Zeitraums, für den die Statistiken angezeigt werden sollen.
+  „Statistics“ zeigt die Seitenimpressionen als Diagramm an. Das Widget ermöglicht die Auswahl eines Zeitraums, für den die Statistiken angezeigt werden sollen.
 
 * store
 
   [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)
 
-  Die Store-Klasse kapselt einen Client-seitigen Cache der [Datensatz](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Record)-Objekte, die Eingabedaten für die Komponenten [GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel), [ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox) oder [DataView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DataView) liefern.
+  Die Store-Klasse kapselt einen Client-seitigen Cache der [Eintrags](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Record)-Objekte, die Eingabedaten für die Komponenten [GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel), [ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox) oder [DataView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DataView) liefern.
 
 * suggestfield
 
@@ -814,7 +814,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.Switcher](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Switcher)
 
-   „Switcher“ stellt eine Gruppe von Schaltflächen für die Kopfzeilenleiste in einer Konsole bereit, mit denen Benutzer zwischen Websites, digitalen Assets, Tools, Workflows und Sicherheit wechseln können.
+  „Switcher“ stellt eine Gruppe von Schaltflächen für die Kopfzeilenleiste in einer Konsole bereit, mit denen Benutzer zwischen Websites, digitalen Assets, Tools, Workflows und Sicherheit wechseln können.
 
 * tableedit
 
@@ -832,7 +832,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.Ext.TabPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.TabPanel)
 
-  Ein allgemeiner Container für Registerkarten. TabPanels kann zu Layout-Zwecken genauso wie ein standardmäßiges [CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel) verwendet werden, verfügt aber auch über spezielle Unterstützung für darin enthaltene untergeordnete Komponenten ([`items` ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container)).
+  Ein allgemeiner Container für Registerkarten. TabPanels kann zu Layout-Zwecken genauso wie ein standardmäßiges [CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel) verwendet werden, verfügt aber auch über spezielle Unterstützung für darin enthaltene untergeordnete Komponenten ([`items` &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container)).
 
 * tags
 
@@ -874,7 +874,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
 * tip
 
-  [CQ.Ext.Tip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tip)
+  [CQ.Ext.Tipp](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tip)
 
   @xtype tip. Dieses ist die allgemeine Klasse für [CQ.Ext.QuickTip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTip) und [CQ.Ext.Tooltip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tooltip), die das grundlegende Layout und die Platzierung bereitstellt, die für alle Klassen mit QuickInfo erforderlich sind. Diese Klasse kann direkt für einfache, statisch platzierte QuickInfos verwendet werden.
 

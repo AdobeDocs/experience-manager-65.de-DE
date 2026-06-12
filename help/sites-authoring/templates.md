@@ -12,7 +12,7 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '4832'
+source-wordcount: '4886'
 ht-degree: 99%
 
 ---
@@ -54,7 +54,7 @@ Ausführliche Informationen zur Funktionsweise von bearbeitbaren Vorlagen auf te
 
 Achten Sie auf Folgendes, bevor Sie beginnen:
 
-* Das Erstellen einer Vorlage erfordert eine Zusammenarbeit.  Aus diesem Grund wird für jede Aufgabe eine [Rolle](#roles) angezeigt.
+* Das Erstellen einer Vorlage erfordert eine Zusammenarbeit. Aus diesem Grund wird für jede Aufgabe eine [Rolle](#roles) angezeigt.
 
 * Je nach Konfiguration Ihrer Instanz bietet AEM jetzt [zwei grundlegende Arten von Vorlagen](/help/sites-authoring/templates.md#editable-and-static-templates). Dies hat keinen Einfluss auf die Art und Weise, wie Sie [eine Seite mit einer Vorlage erstellen](#using-a-template-to-create-a-page), aber auf die Art von Vorlage, die Sie erstellen können, und wie eine Seite mit ihrer Vorlage in Beziehung steht.
 
@@ -182,7 +182,7 @@ Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlage
    >
    >Wenn eine neue Vorlage erstellt wird, wird sie in der Konsole als **Entwurf** markiert, was bedeutet, dass sie noch nicht für Seitenautoren zur Verfügung steht.
 
-### Definieren von Vorlageneigenschaften – Vorlagenautor  {#defining-template-properties-template-author}
+### Definieren von Vorlageneigenschaften – Vorlagenautor {#defining-template-properties-template-author}
 
 Eine Vorlage kann die folgenden Eigenschaften aufweisen:
 
@@ -266,7 +266,7 @@ Eine Vorlage kann für bestimmte Seitenverzweigungen verfügbar oder nicht verf�
 
 1. Verwenden Sie unter **Vorlageneinstellungen** die Option **Feld hinzufügen**, um die Pfade zu Ihren Vorlagen anzugeben.
 
-   Der Pfad kann explizit sein oder Muster verwenden. Ein Beispiel:
+   Der Pfad kann explizit sein oder Muster verwenden. Beispiel:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 

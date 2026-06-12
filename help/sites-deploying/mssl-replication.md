@@ -1,6 +1,6 @@
 ---
 title: Replizieren mit bidirektionaler SSL-Kommunikation
-description: Erfahren Sie, wie Sie AEM so konfigurieren, dass ein Replikationsagent auf der Autoreninstanz gegenseitiges SSL (MSSL) für die Verbindung mit der Veröffentlichungsinstanz verwendet. Bei Verwendung von MSSL verwenden der Replikationsagent und der HTTP-Dienst auf der Publishing-Instanz Zertifikate, um sich gegenseitig zu authentifizieren.
+description: Erfahren Sie, wie Sie AEM so konfigurieren, dass ein Replikationsagent auf der Autoreninstanz gegenseitiges SSL (MSSL) für die Verbindung mit der Veröffentlichungsinstanz verwendet. Bei Verwendung von MSSL verwenden der Replikationsagent und der HTTP-Dienst auf der Veröffentlichungsinstanz Zertifikate, um sich gegenseitig zu authentifizieren.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,33 +11,33 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 100%
+source-wordcount: '1409'
+ht-degree: 98%
 
 ---
 
 # Replizieren mit bidirektionaler SSL-Kommunikation{#replicating-using-mutual-ssl}
 
-Konfigurieren Sie AEM so, dass ein Replikationsagent auf der Autoreninstanz gegenseitiges SSL (MSSL) für die Verbindung mit der Veröffentlichungsinstanz verwendet Bei Verwendung von MSSL verwenden der Replikationsagent und der HTTP-Dienst auf der Publishing-Instanz Zertifikate, um sich gegenseitig zu authentifizieren.
+Konfigurieren Sie AEM so, dass ein Replikationsagent auf der Autoreninstanz gegenseitiges SSL (MSSL) für die Verbindung mit der Veröffentlichungsinstanz verwendet Bei Verwendung von MSSL verwenden der Replikationsagent und der HTTP-Dienst auf der Veröffentlichungsinstanz Zertifikate, um sich gegenseitig zu authentifizieren.
 
 Die Konfiguration von MSSL für die Replikation umfasst die folgenden Schritte:
 
-1. Erstellen oder beziehen Sie private Schlüssel und Zertifikate für die Authoring- und Publishing-Instanzen.
+1. Erstellen oder beziehen Sie private Schlüssel und Zertifikate für die Authoring- und Veröffentlichungsinstanzen.
 1. Installieren Sie die Schlüssel und Zertifikate auf der Autoren- und Veröffentlichungsinstanz:
 
    * Authoring-Instanz: Privater Schlüssel von Author und Zertifikat von Publish.
    * Publishing-Instanz: Privater Schlüssel von Publish und Zertifikat von Author. Das Zertifikat ist mit dem Benutzerkonto verknüpft, das mit dem Replikationsagenten authentifiziert ist.
 
-1. Konfigurieren Sie den Jetty-basierten HTTP-Dienst auf der Publishing-Instanz.
+1. Konfigurieren Sie den Jetty-basierten HTTP-Dienst auf der Veröffentlichungsinstanz.
 1. Konfigurieren Sie die Transport- und SSL-Eigenschaften des Replikationsagenten.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-Bestimmen Sie, welches Benutzerkonto die Replikation durchführt. Bei der Installation des vertrauenswürdigen Autorenzertifikats auf der Publishing-Instanz wird das Zertifikat mit diesem Benutzerkonto verknüpft.
+Bestimmen Sie, welches Benutzerkonto die Replikation durchführt. Bei der Installation des vertrauenswürdigen Autorenzertifikats auf der Veröffentlichungsinstanz wird das Zertifikat mit diesem Benutzerkonto verknüpft.
 
 ## Abrufen oder Erstellen von Anmeldeinformationen für MSSL {#obtaining-or-creating-credentials-for-mssl}
 
-Sie benötigen einen privaten Schlüssel und ein öffentliches Zertifikat für die Authoring- und Publishing-Instanz:
+Sie benötigen einen privaten Schlüssel und ein öffentliches Zertifikat für die Authoring- und Veröffentlichungsinstanz:
 
 * Private Schlüssel müssen im PKCS#12- oder JKS-Format vorliegen.
 * Zertifikate müssen im PKCS#12- oder JKS-Format vorliegen. Zusätzlich kann das im Format „CER“ enthaltene Zertifikat auch dem Granite Truststore hinzugefügt werden.
@@ -57,7 +57,7 @@ Führen Sie mit dem Java-`keytool` folgende Schritte aus, um den privaten Schlü
 
 1. Importieren Sie das Zertifikat in einen TrustStore.
 
-Führen Sie die folgenden Schritte aus, um einen privaten Schlüssel und ein selbst signiertes Zertifikat für die Authoring- und Publishing-Instanz zu erstellen. Verwenden Sie entsprechend unterschiedliche Werte für die Befehlsoptionen.
+Führen Sie die folgenden Schritte aus, um einen privaten Schlüssel und ein selbst signiertes Zertifikat für die Authoring- und Veröffentlichungsinstanz zu erstellen. Verwenden Sie entsprechend unterschiedliche Werte für die Befehlsoptionen.
 
 1. Öffnen Sie eine Befehlszeile oder ein Terminal. Um das Schlüsselpaar aus öffentlich-privaten Schlüssel zu erstellen, geben Sie den folgenden Befehl ein und verwenden die Optionswerte aus der folgenden Tabelle:
 
@@ -136,16 +136,16 @@ Generieren Sie einen privaten Schlüssel und ein Zertifikat im PKCS#12-Format. V
 
 ## Installieren des privaten Schlüssels und des TrustStore auf der Authoring-Instanz {#install-the-private-key-and-truststore-on-author}
 
-Installieren Sie die folgenden Elemente auf der Authoring-Instanz:
+Installieren Sie die folgenden Elemente auf der Autoreninstanz:
 
-* Der private Schlüssel der Authoring-Instanz.
-* Das Zertifikat der Publishing-Instanz.
+* Der private Schlüssel der Autoreninstanz.
+* Das Zertifikat der Veröffentlichungsinstanz.
 
-Um das folgende Verfahren durchzuführen, müssen Sie als Admin der Authoring-Instanz angemeldet sein.
+Um das folgende Verfahren durchzuführen, müssen Sie als Admin der Autoreninstanz angemeldet sein.
 
 ### Installieren des privaten Authoring-Schlüssels {#install-the-author-private-key}
 
-1. Öffnen Sie die Benutzerverwaltungs-Seite für die Authoring-Instanz. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
+1. Öffnen Sie die Benutzerverwaltungs-Seite für die Autoreninstanz. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Um die Eigenschaften Ihres Benutzerkontos zu öffnen, klicken Sie auf Ihren Benutzernamen.
 1. Wenn der Link „KeyStore erstellen“ im Bereich Kontoeinstellungen angezeigt wird, klicken Sie auf ihn. Konfigurieren Sie ein Kennwort und klicken Sie auf „OK“.
 1. Klicken Sie im Bereich „Kontoeinstellungen“ auf „Keystore verwalten“.
@@ -164,7 +164,7 @@ Um das folgende Verfahren durchzuführen, müssen Sie als Admin der Authoring-In
 
 ### Installieren des Veröffentlichungszertifikats {#install-the-publish-certificate}
 
-1. Öffnen Sie die Benutzerverwaltungs-Seite für die Authoring-Instanz. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
+1. Öffnen Sie die Benutzerverwaltungs-Seite für die Autoreninstanz. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Um die Eigenschaften Ihres Benutzerkontos zu öffnen, klicken Sie auf Ihren Benutzernamen.
 1. Wenn der Link „TrustStore erstellen“ im Bereich „Kontoeinstellungen“ angezeigt wird, klicken Sie auf den Link, erstellen Sie ein Kennwort für den TrustStore und klicken Sie auf „OK“.
 1. Klicken Sie im Bereich „Kontoeinstellungen“ auf „TrustStore verwalten“.
@@ -179,16 +179,16 @@ Um das folgende Verfahren durchzuführen, müssen Sie als Admin der Authoring-In
 
 ## Installieren von privatem Schlüssel und TrustStore auf der Publishing-Instanz {#install-private-key-and-truststore-on-publish}
 
-Installieren Sie die folgenden Elemente auf der Publishing-Instanz:
+Installieren Sie die folgenden Elemente auf der Veröffentlichungsinstanz:
 
-* Den privaten Schlüssel der Publishing-Instanz.
+* Den privaten Schlüssel der Veröffentlichungsinstanz.
 * Das Zertifikat der Autoreninstanz. Verknüpfen Sie das Zertifikat mit der Person, die für die Ausführung von Replikationsanforderungen verantwortlich ist.
 
-Um das folgende Verfahren durchzuführen, müssen Sie als Admin der Publishing-Instanz angemeldet sein.
+Um das folgende Verfahren durchzuführen, müssen Sie als Admin der Veröffentlichungsinstanz angemeldet sein.
 
 ### Installieren des privaten Publishing-Schlüssels {#install-the-publish-private-key}
 
-1. Öffnen Sie die Seite „Benutzerverwaltung“ der Publishing-Instanz. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
+1. Öffnen Sie die Seite „Benutzerverwaltung“ der Veröffentlichungsinstanz. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Um die Eigenschaften Ihres Benutzerkontos zu öffnen, klicken Sie auf Ihren Benutzernamen.
 1. Wenn der Link „KeyStore erstellen“ im Bereich Kontoeinstellungen angezeigt wird, klicken Sie auf ihn. Konfigurieren Sie ein Kennwort und klicken Sie auf „OK“.
 1. Klicken Sie im Bereich „Kontoeinstellungen“ auf „Keystore verwalten“.
@@ -199,7 +199,7 @@ Um das folgende Verfahren durchzuführen, müssen Sie als Admin der Publishing-I
 
 ### Installieren des Authoring-Zertifikats {#install-the-author-certificate}
 
-1. Öffnen Sie die Seite „Benutzerverwaltung“ der Publishing-Instanz. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
+1. Öffnen Sie die Seite „Benutzerverwaltung“ der Veröffentlichungsinstanz. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Wenn der Link „TrustStore erstellen“ im Bereich „Global Trust Store“ angezeigt wird, klicken Sie auf den Link, erstellen Sie ein Kennwort für den TrustStore und klicken Sie auf „OK“.
 1. Klicken Sie im Bereich „Kontoeinstellungen“ auf „TrustStore verwalten“.
 1. Klicken Sie auf „Zertifikat aus CER-Datei hinzufügen“.
@@ -208,7 +208,7 @@ Um das folgende Verfahren durchzuführen, müssen Sie als Admin der Publishing-I
 
 ## Konfigurieren des HTTP-Dienstes auf der Publishing-Instanz {#configure-the-http-service-on-publish}
 
-Konfigurieren Sie die Eigenschaften des Apache Felix Jetty-basierten HTTP-Dienstes auf der Publishing-Instanz so, dass beim Zugriff auf Granite Keystore HTTPS verwendet wird. Die PID des Dienstes ist `org.apache.felix.http`.
+Konfigurieren Sie die Eigenschaften des Apache Felix Jetty-basierten HTTP-Dienstes auf der Veröffentlichungsinstanz so, dass beim Zugriff auf Granite Keystore HTTPS verwendet wird. Die PID des Dienstes ist `org.apache.felix.http`.
 
 In der folgenden Tabelle sind die OSGi-Eigenschaften aufgeführt, die Sie konfigurieren müssen, wenn Sie die Web-Konsole verwenden.
 

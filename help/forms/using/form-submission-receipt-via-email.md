@@ -11,7 +11,7 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '550'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ In diesem Artikel werden die Schritte erläutert, mit denen die E-Mail-Aktion f�
 >
 >Sie können auch die Option **[!UICONTROL PDF per E-Mail senden]** verwenden, um das ausgefüllte Formular per E-Mail als PDF-Anlage zu senden. Die Konfigurationsoptionen für diese Aktion sind mit den Optionen identisch, die für die Aktion **[!UICONTROL E-Mail senden]** verfügbar sind. Die E-Mail-PDF-Aktion ist nur für XFA-basierte adaptive Formulare verfügbar.
 
-## Aktion „E-Mail senden“  {#email-action}
+## Aktion „E-Mail senden“ {#email-action}
 
 Mit der Aktion „E-Mail senden“ kann ein Autor automatisch eine E-Mail an einen oder mehrere Empfänger senden lassen, wenn das adaptive Formular erfolgreich übermittelt wurde.
 
@@ -52,7 +52,7 @@ Mit der Aktion „E-Mail senden“ kann ein Autor automatisch eine E-Mail an ein
 
    Geben Sie den Betreff und den Text der E-Mail in den Feldern **[!UICONTROL Betreff]** bzw. **[!UICONTROL E-Mail-Vorlage]** an.
 
-   Sie können auch variable Platzhalter in den Feldern angeben. In diesem Fall werden die Feldwerte verarbeitet, wenn das Formular erfolgreich von Endbenutzenden gesendet wurde.  Weitere Informationen finden Sie unter [Verwenden der Feldnamen in adaptiven Formularen, um E-Mail-Inhalte dynamisch zu erstellen](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
+   Sie können auch variable Platzhalter in den Feldern angeben. In diesem Fall werden die Feldwerte verarbeitet, wenn das Formular erfolgreich von Endbenutzenden gesendet wurde. Weitere Informationen finden Sie unter [Verwenden der Feldnamen in adaptiven Formularen, um E-Mail-Inhalte dynamisch zu erstellen](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
 
    Aktivieren Sie **[!UICONTROL Anhänge einschließen]**, wenn das Formular Dateianhänge enthält und Sie diese Dateien in der E-Mail anhängen möchten.
 

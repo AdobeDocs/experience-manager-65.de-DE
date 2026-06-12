@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 100%
+source-wordcount: '1830'
+ht-degree: 98%
 
 ---
 
@@ -381,19 +381,19 @@ Jeder Teil des Bulk Editors kann konfiguriert werden. In der folgenden Tabelle s
   </tr>
   <tr>
    <td>saveButton</td>
-   <td>Widget-Konfiguration für die Schaltfläche „Speichern“ </td>
+   <td>Widget-Konfiguration für die Schaltfläche „Speichern“</td>
   </tr>
   <tr>
    <td>searchButton</td>
-   <td>Widget-Konfiguration für die Schaltfläche „Suche“ </td>
+   <td>Widget-Konfiguration für die Schaltfläche „Suche“</td>
   </tr>
   <tr>
    <td>exportButton</td>
-   <td>Widget-Konfiguration für die Schaltfläche „Export“ </td>
+   <td>Widget-Konfiguration für die Schaltfläche „Export“</td>
   </tr>
   <tr>
    <td>importButton</td>
-   <td>Widget-Konfiguration für die Schaltfläche „Import“ </td>
+   <td>Widget-Konfiguration für die Schaltfläche „Import“</td>
   </tr>
   <tr>
    <td>searchPanel</td>
@@ -529,7 +529,7 @@ Das Abfrage-Servlet funktioniert wie folgt: Es empfängt eine GQL-Abfrage und di
 
 Im Fall der Produktlisten-Komponente werden zwei Parameter wie folgt an das Abfrage-Servlet gesendet:
 
-* query: &quot;path:/content/geometrixx/en/customers/jcr:content/par/productlist Cube&quot;
+* Abfrage: „path:/content/geometrixx/en/customers/jcr:content/par/productlist Cube“
 * cols: &quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
 
 Und der JSON-Stream wird wie folgt zurückgegeben:
@@ -555,7 +555,7 @@ Sie können das Abfrage-Servlet erweitern, um ein komplexes Vererbungsmodell zur
 
 ### Speicher-Servlet {#save-servlet}
 
-In der Standardkonfiguration des Bulk Editors ist jede Zeile ein Knoten, und der Pfad dieses Knotens wird im Zeilendatensatz gespeichert. Der Bulk Editor behält die Verbindung zwischen der Zeile und dem Knoten über den JCR-Pfad bei. Wenn Benutzende das Raster bearbeiten, wird eine Liste aller Änderungen erstellt. Klicken Benutzende auf **Speichern**, wird eine POST-Abfrage an jeden Pfad mit den aktualisierten Eigenschaftswerten gesendet. Dies ist die Grundlage des Sling-Konzepts und funktioniert gut, wenn jede Zelle eine Eigenschaft des Knotens ist. Wenn jedoch das Abfrage-Servlet für die Vererbungsberechnung implementiert ist, kann dieses Modell nicht funktionieren, da eine vom Abfrage-Servlet zurückgegebene Eigenschaft von einem anderen Knoten geerbt werden kann.
+In der Standardkonfiguration des Bulk Editors ist jede Zeile ein Knoten, und der Pfad dieses Knotens wird im Zeileneintrag gespeichert. Der Bulk Editor behält die Verbindung zwischen der Zeile und dem Knoten über den JCR-Pfad bei. Wenn Benutzende das Raster bearbeiten, wird eine Liste aller Änderungen erstellt. Klicken Benutzende auf **Speichern**, wird eine POST-Abfrage an jeden Pfad mit den aktualisierten Eigenschaftswerten gesendet. Dies ist die Grundlage des Sling-Konzepts und funktioniert gut, wenn jede Zelle eine Eigenschaft des Knotens ist. Wenn jedoch das Abfrage-Servlet für die Vererbungsberechnung implementiert ist, kann dieses Modell nicht funktionieren, da eine vom Abfrage-Servlet zurückgegebene Eigenschaft von einem anderen Knoten geerbt werden kann.
 
 Das Konzept des Speicher-Servlets besteht darin, dass die Änderungen nicht direkt an die einzelnen Knoten gesendet werden, sondern an ein Servlet, das die Speicherfunktion übernimmt. Dadurch kann dieses Servlet die Änderungen analysieren und die Eigenschaften auf dem richtigen Knoten speichern.
 

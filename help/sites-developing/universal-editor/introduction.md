@@ -6,7 +6,7 @@ role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
 source-git-commit: 28e44586c6a8596037a44fa10d21b3fdcdea1606
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1361'
 ht-degree: 96%
 
 ---
@@ -70,7 +70,7 @@ Der universelle Editor nutzt mehrere Pakete, für die eine zusätzliche Konfigur
 
 #### Legen Sie das SameSite-Attribut für das Cookie `login-token` fest. {#samesite-attribute}
 
-1. Öffnen Sie den Configuration Manager. 
+1. Öffnen Sie den Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
 1. Suchen Sie **Adobe Granite Token Authentication Handler** in der Liste und klicken Sie auf **Konfigurationswerte ändern**.
 1. Ändern Sie im Dialogfeld den Wert **SameSite-Attribut für das Cookie des Anmelde-Tokens** (`token.samesite.cookie.attr`) auf `Partitioned`.
@@ -78,7 +78,7 @@ Der universelle Editor nutzt mehrere Pakete, für die eine zusätzliche Konfigur
 
 #### Entfernen Sie die Option „X-Frame“ für `SAMEORIGIN`-Header. {#sameorigin}
 
-1. Öffnen Sie den Configuration Manager. 
+1. Öffnen Sie den Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
 1. Suchen Sie **Apache Sling Main Servlet** in der Liste und klicken Sie auf **Edit the configuration values** (Konfigurationswerte bearbeiten).
 1. Löschen Sie den Wert `X-Frame-Options=SAMEORIGIN` aus dem Attribut **Zusätzliche Antwortkopfzeilen** (`sling.additional.response.headers`), falls vorhanden.
@@ -86,7 +86,7 @@ Der universelle Editor nutzt mehrere Pakete, für die eine zusätzliche Konfigur
 
 #### Konfigurieren Sie den Adobe Granite Query Parameter Authentication Handler. {#query-parameter}
 
-1. Öffnen Sie den Configuration Manager. 
+1. Öffnen Sie den Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
 1. Suchen Sie **Adobe Granite Query Parameter Authentication Handler** in der Liste und klicken Sie auf **Edit the configuration values** (Konfigurationswerte bearbeiten).
 1. Fügen Sie im Feld **Pfad** (`path`) `/` hinzu, um zu aktivieren.
@@ -95,7 +95,7 @@ Der universelle Editor nutzt mehrere Pakete, für die eine zusätzliche Konfigur
 
 #### Definieren Sie, für welche Inhaltspfade oder `sling:resourceTypes` der universelle Editor geöffnet werden soll. {#paths}
 
-1. Öffnen Sie den Configuration Manager. 
+1. Öffnen Sie den Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
 1. Suchen Sie **Universal Editor URL Service** in der Liste und klicken Sie auf **Edit the configuration values** (Konfigurationswerte bearbeiten).
 1. Definieren Sie, für welche Inhaltspfade oder `sling:resourceTypes` der universelle Editor geöffnet werden soll.
@@ -142,7 +142,7 @@ Nachdem AEM aktualisiert und konfiguriert wurde, können Sie einen lokalen unive
 1. Installieren Sie eine Version >=20 von Node.js.
 1. Laden Sie den neuesten universellen Editor-Service von [Software-Verteilung](https://experienceleague.adobe.com/de/docs/experience-cloud/software-distribution/home) herunter und entpacken Sie ihn.
 1. Konfigurieren Sie den universellen Editor-Dienst über Umgebungsvariablen oder die `.env`-Datei.
-   * [Weitere Informationen finden Sie in der Dokumentation zum universellen Editor von AEM as a Cloud Service](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service).
+   * [Weitere Informationen finden Sie in der Dokumentation zum universellen Editor von AEM as a Cloud Service .](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * Beachten Sie, dass Sie möglicherweise die Option `UES_MAPPING` verwenden müssen, wenn eine interne IP-Umschreibung erforderlich ist.
 1. Führen Sie `universal-editor-service.cjs` aus.
 

@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 100%
+source-wordcount: '450'
+ht-degree: 96%
 
 ---
 
@@ -35,17 +35,17 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
   </tr>
   <tr>
    <td>Unterschriftsfeld<br /> </td>
-   <td><strong>Digitale Signaturen</strong> werden nicht unterstützt, aber ein neues <strong>Freihand-Signatur</strong>-Feld wurde für papierähnliche Signaturen hinzugefügt. Die Signatur kann im Feld <strong>Freihand-Signatur</strong> auf dem Formular eingegeben werden. Die Signatur wird auf dem Formular als Bild gespeichert.  Sie können die Geotagging-Informationen im Feld <strong>Freihand-Signatur</strong> speichern.</td>
+   <td><strong>Digitale Signaturen</strong> werden nicht unterstützt, aber ein neues <strong>Freihand-Signatur</strong>-Feld wurde für papierähnliche Signaturen hinzugefügt. Die Signatur kann im Feld <strong>Freihand-Signatur</strong> auf dem Formular eingegeben werden. Die Signatur wird auf dem Formular als Bild gespeichert. Sie können die Geotagging-Informationen im Feld <strong>Freihand-Signatur</strong> speichern.</td>
    <td>Signaturfeld für <strong>digitale Signaturen</strong> verfügbar.</td>
   </tr>
   <tr>
    <td>Datenzusammenführung</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Bilder</td>
-   <td>Das Daten-URI-Schema wird für die Darstellung von Bildern verwendet.  Alle modernen Browser unterstützen dieses Schema, es gibt jedoch Unterschiede bei den Bildformaten, die die einzelnen Browser unterstützen.<br /> </td>
+   <td>Das Daten-URI-Schema wird für die Darstellung von Bildern verwendet. Alle modernen Browser unterstützen dieses Schema, es gibt jedoch Unterschiede bei den Bildformaten, die die einzelnen Browser unterstützen.<br /> </td>
    <td>Die Formate .gif, .png, .jpeg, .bmp und .tiff werden unterstützt.</td>
   </tr>
   <tr>
@@ -55,7 +55,7 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
   </tr>
   <tr>
    <td>Kopf- und Fußzeilen </td>
-   <td>Unterstützt. <br /> <br /> Da HTML5-Mobile Forms Seitenumbrüche nicht unterstützen, werden Kopf- und Fußzeilen nur einmal angezeigt. Sie können sie jedoch im Layout so einrichten, dass sie an mehreren Stellen in der Vorschau für Mobile-Formulare angezeigt werden.<br /> </td>
+   <td>Unterstützt. <br /> <br /> Da HTML5 Mobile Forms Seitenumbrüche nicht unterstützen, werden Kopf- und Fußzeilen nur einmal angezeigt. Sie können sie jedoch im Layout so einrichten, dass sie an mehreren Stellen in der Vorschau für Mobile-Formulare angezeigt werden.<br /> </td>
    <td>Unterstützt.</td>
   </tr>
   <tr>
@@ -76,7 +76,7 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
   <tr>
    <td>Unterstützung für Sprachen mit Rechts-nach-links-Schreibrichtung </td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
  </tbody>
 </table>

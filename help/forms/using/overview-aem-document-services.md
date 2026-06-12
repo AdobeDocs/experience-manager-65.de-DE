@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1447'
 ht-degree: 100%
 
 ---
@@ -48,10 +48,10 @@ Die folgenden vier Output-Dienstvorgänge stehen zur Verfügung:
 * **generatePDFOuput**: Führt einen Formularentwurf mit Daten zusammen, um ein PDF-Dokument zu erstellen.
 * **generatePrintedOutput**: Führt einen Formularentwurf mit Formulardaten zusammen, um ein Dokument zu erstellen, das entweder an einer Laserdrucker oder einen Beschriftungsnetzwerkdrucker gesendet werden soll.
 
-* **generatePDFOutputBatch**: Führt mehrere Vorlagen mit mehreren Datensätzen in einem einzigen Aufruf zusammen, um einen Batch PDF-Dateien zu generieren. Es gibt auch eine Option zum Generieren einer einzigen PDF durch Kombinieren aller PDFs.
+* **generatePDFOutputBatch**: Führt mehrere Vorlagen mit mehreren Einträgen in einem einzigen Aufruf zusammen, um einen Batch mit PDF-Dateien zu generieren. Es gibt auch eine Option zum Generieren einer einzigen PDF durch Kombinieren aller PDFs.
 * **generatePrintedOutputBatch**: Führt mehrere Vorlagen mit mehreren Dateneinträgen in einem einzigen Aufruf zusammen, um einen Stapel gedruckter Dokumente (PS, PCL, ZPL, DPL, IPL, TPCL) zu erzeugen. Es gibt auch eine Option zum Generieren eines einzigen Druckdokuments.
 
-## Assembler-Service {#assembler-service}
+## Assembler-Dienst {#assembler-service}
 
 Mit dem Assembler-Dienst können Sie PDF- und XDP-Dokumente kombinieren, neu anordnen und erweitern sowie Informationen zu PDF-Dokumenten erhalten. Jeder an den Assembler-Dienst übermittelte Auftrag umfasst ein DDX-Dokument (Document Description XML), Quelldokumente und externe Ressourcen (Zeichenfolgen und Grafiken). Das DDX-Dokument enthält Anweisungen dazu, wie die Quelldokumente zum Erstellen eines Satzes von Zieldokumenten verwendet werden.
 

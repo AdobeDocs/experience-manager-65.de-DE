@@ -7,8 +7,8 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 100%
+source-wordcount: '2662'
+ht-degree: 95%
 
 ---
 
@@ -65,7 +65,7 @@ Sie klonen das [Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) un
 
 Die Produkt-Teaser-Komponente wird im Laufe dieses Tutorials erweitert. Als ersten Schritt fügen Sie der Startseite eine Instanz des Produkt-Teasers hinzu. So können Sie sich mit den Grundfunktionen vertraut machen.
 
-1. Navigieren Sie zur **Startseite** der Site: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. Navigieren Sie zur **Startseite** der Website: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
 2. Fügen Sie auf der Seite eine neue **Produkt-Teaser**-Komponente in den Haupt-Layout-Container ein.
 
@@ -73,7 +73,7 @@ Die Produkt-Teaser-Komponente wird im Laufe dieses Tutorials erweitert. Als erst
 
 3. Erweitern Sie das seitliche Bedienfeld (falls noch nicht geschehen) und wechseln Sie im Dropdown-Menü der Asset-Suche zu **Produkte**. Nun sollte eine Liste mit verfügbaren Produkten einer verbundenen Adobe Commerce-Instanz angezeigt werden. Wählen Sie ein Produkt aus und ziehen Sie es auf der Seite per **Drag-and-Drop** auf die Komponente **Produkt-Teaser**.
 
-   ![Produkt-Teaser ziehen und ablegen ](../assets/customize-cif-components/drag-drop-product-teaser.png)
+   ![Produkt-Teaser ziehen und ablegen &#x200B;](../assets/customize-cif-components/drag-drop-product-teaser.png)
 
    >[!NOTE]
    >
@@ -395,7 +395,7 @@ In diesem Fall möchten Sie ein Banner über dem Teaser darstellen, um anzuzeige
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. Öffnen Sie ein neues Browser-Fenster. Navigieren Sie zu AEM und dann zur **OSGi-Konsole** > **Status** > **Sling-Modelle**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
+1. Öffnen Sie ein neues Browser-Fenster und navigieren Sie zu AEM und **OSGi-Konsole** > **Status** > **Sling Models**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
 
 1. Suchen Sie nach `MyProductTeaserImpl`; Sie sollten eine Zeile sehen, die wie folgt aussieht:
 
@@ -405,7 +405,7 @@ In diesem Fall möchten Sie ein Banner über dem Teaser darstellen, um anzuzeige
 
    Dies bedeutet, dass das Sling-Modell ordnungsgemäß bereitgestellt und der richtigen Komponente zugeordnet wurde.
 
-1. Aktualisieren Sie zur **Venia-Startseite** unter [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html), wo der Produkt-Teaser hinzugefügt wurde.
+1. Aktualisieren Sie die **Venia-Startseite** unter [http://localhost /editor.html/content/venia/us/en.html:4502](http://localhost:4502/editor.html/content/venia/us/en.html), wo der Produkt-Teaser hinzugefügt wurde.
 
    ![Nachricht für „Umweltfreundlich“ wird angezeigt](../assets/customize-cif-components/eco-friendly-text-displayed.png)
 
@@ -474,7 +474,7 @@ An diesem Punkt funktioniert die Logik dafür, wann das Zeichen **Umweltfreundli
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. Aktualisieren Sie zur **Venia-Startseite** unter [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html), wo der Produkt-Teaser hinzugefügt wurde.
+1. Aktualisieren Sie die **Venia-Startseite** unter [http://localhost /editor.html/content/venia/us/en.html:4502](http://localhost:4502/editor.html/content/venia/us/en.html), wo der Produkt-Teaser hinzugefügt wurde.
 
    ![Abzeichen für „Umweltfreundlich“ – endgültige Implementierung](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
@@ -491,8 +491,8 @@ Sie haben Ihre erste AEM-CIF-Komponente angepasst. Laden Sie die [fertigen Lösu
 ## Zusätzliche Ressourcen {#additional-resources}
 
 - [AEM-Archetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de)
-- [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
-- [Anpassen von AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
+- [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
+- [Anpassen der AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
 - [Anpassen der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=de)
 - [Erste Schritte mit AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de)
 - [Verwenden der CIF-Produkt- und Kategorieauswahl](use-cif-pickers.md)

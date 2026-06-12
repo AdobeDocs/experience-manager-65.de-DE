@@ -8,8 +8,8 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 100%
+source-wordcount: '803'
+ht-degree: 94%
 
 ---
 
@@ -64,11 +64,11 @@ Um PWA Studio mit dem GraphQL-Endpunkt von AEM zu verbinden, können Sie die [AE
    Weitere Informationen zur Anpassung der Navigationskomponente finden Sie in [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) und in der Dokumentation zum [Erweiterbarkeits-Framework](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) von PWA Studio.
 
 1. Der Apollo-Client erwartet den AEM GraphQL-Endpunkt bei `<https://pwa-studio/endpoint.js>`. Um den Endpunkt diesem Speicherort zuzuordnen, müssen Sie die UPWARD-Konfiguration Ihrer PWA Studio-Anwendung anpassen:
-a. Fügen Sie die Variable AEM_CFM_GRAPHQL zu `pwa-root/.env` hinzu und passen Sie sie an, sodass sie auf Ihren GraphQL-Endpunkt für AEM-Inhaltsfragmente verweist.
+a. Fügen Sie `pwa-root/.env` die Variable AEM_CFM_GRAPHQL hinzu und passen Sie sie an, sodass sie auf Ihren GraphQL-Endpunkt für AEM-Inhaltsfragmente verweist.
 
    Beispiel: AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
 
-   b. Fügen Sie Ihrer UPWARD-Konfiguration einen Proxy-Resolver hinzu. Eine Beispiel-UPWARD-Konfiguration könnte wie folgt aussehen:
+   B. Fügen Sie Ihrer UPWARD-Konfiguration einen Proxy-Resolver hinzu. Eine Beispiel-UPWARD-Konfiguration könnte wie folgt aussehen:
 
 ```json
    response:

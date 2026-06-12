@@ -11,7 +11,7 @@ feature: Administering
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1340'
 ht-degree: 100%
 
 ---
@@ -184,7 +184,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
    <td>Repository-Optimierung</td>
    <td>
     <ul>
-     <li><a href="https://helpx.adobe.com/de/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">Tipps zur Leistungsoptimierung </a></li>
+     <li><a href="https://helpx.adobe.com/de/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">Tipps zur Leistungsoptimierung</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#configuring-for-performance">Konfiguration zur Leistungsoptimierung</a></li>
      <li><a href="https://www.slideshare.net/jukka/repository-performance-tuning">Optimierung der Repository-Leistung</a></li>
     </ul> </td>

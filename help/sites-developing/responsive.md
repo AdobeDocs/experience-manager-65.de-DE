@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
-workflow-type: ht
-source-wordcount: '5272'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '5461'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Gestalten Sie Ihre Seiten so, dass sie sich dem Client-Darstellungsfeld anpassen
 * Textgröße: Verwenden Sie in größeren Darstellungsfeldern eine größere Textgröße (wo passend, z. B. Überschriften).
 * Inhalt: Schließen Sie bei der Anzeige auf kleineren Geräten nur die wichtigsten Inhalte ein.
 * Navigation: Für den Zugriff auf andere Seiten werden gerätespezifische Tools bereitgestellt.
-* Bilder: Stellen Sie anhand der Fenstergröße dem Client-Darstellungsfeld entsprechende Bilddarstellungen zur Verfügung.
+* Bilder: Bereitstellen von Bildausgabedarstellungen, die für den Client-Viewport geeignet sind. entsprechend den Fensterabmessungen.
 
 ![chlimage_1-4](assets/chlimage_1-4a.png)
 
@@ -350,7 +350,8 @@ Wenn der Browser die Seite lädt, fordert er das Bild mit dem Wert des src-Attri
 
 Der Knoten `image_0` hat einen `jcr:resourceType`-Wert von `foundation/components/image`, der einen `sling:resourceSuperType`-Wert von `foundation/components/parbase` hat. Die Komponente „parbase“ enthält das Skript „img.GET.java“, das dem Selektor und der Dateinamenerweiterung der Anfrage-URL entspricht. CQ verwendet dieses Skript (Servlet) zum Rendern des Bildes.
 
-Öffnen Sie mit CRXDE Lite die Datei `/libs/foundation/components/parbase/img.GET.java`, um den Quell-Code des Skripts zu anzuzeigen.
+Verwenden Sie CRXDE Lite, um den Quell-Code des Skripts zu öffnen. `/libs/foundation/components/parbase/img.GET.java`
+-Datei.
 
 ## Skalieren von Bildern für die aktuelle Darstellungsfeldgröße {#scaling-images-for-the-current-viewport-size}
 
@@ -704,7 +705,7 @@ Beispielsweise enthält die Beispielanwendung „geometrixx-media“ die Kompone
 
 Das Design, das der Seitenkomponente „geometrixx-media“ (`/etc/designs/geometrixx-media`) zugeordnet ist, umfasst den ClientLibraryFolder `clientlibs`. Dieser ClientLibraryFolder definiert CSS-Stile für `row-fluid`-Klassen, `span*`-Klassen und `span*`-Klassen, die untergeordnete Elemente von `row-fluid`-Klassen sind. Medienabfragen ermöglichen die Neudefinition von Stilen für verschiedene Größen von Darstellungsfeldern.
 
-Das folgende Beispiel-CSS ist eine Untergruppe dieser Stile. Diese Untergruppe konzentriert sich auf die Klassen `span12`, `span8` und `span4` sowie Medienabfragen für zwei Darstellungsfeldgrößen. Beachten Sie die folgenden Eigenschaften des CSS:
+Das folgende Beispiel-CSS ist eine Teilmenge dieser Stile. Diese Teilmenge konzentriert sich auf die Klassen `span12`, `span8` und `span4` sowie Medienabfragen für zwei Darstellungsfeldgrößen. Beachten Sie die folgenden Eigenschaften des CSS:
 
 * Die `.span`-Stile definieren Elementbreiten anhand absoluter Zahlenwerte.
 * Die `.row-fluid .span*`-Stile definieren Elementbreiten als Prozentsatz des übergeordneten Elements. Prozentsätze werden anhand der absoluten Breiten berechnet.

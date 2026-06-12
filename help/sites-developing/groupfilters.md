@@ -12,9 +12,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
-workflow-type: ht
-source-wordcount: '735'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '782'
+ht-degree: 97%
 
 ---
 
@@ -94,7 +94,7 @@ Die Funktion `matches` gibt `true` zurück, wenn die Gerätefunktionen alle Filt
 * Der Name des Benutzeragenten
 * Ein Map-Objekt, das die Gerätefunktionen enthält. Die Zuordnungsschlüssel sind die Namen der WURFL™-Funktionalität, und die Werte sind die entsprechenden Werte aus der WURFL™-Datenbank.
 
-Die Schnittstelle[ com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) enthält eine Teilmenge der WURFL™ -Fähigkeitsnamen in statischen Feldern. Verwenden Sie diese Feldkonstanten als Schlüssel beim Abrufen von Werten aus der Karte der Gerätefunktionen.
+Die Schnittstelle[&#x200B; com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) enthält eine Teilmenge der WURFL™ -Fähigkeitsnamen in statischen Feldern. Verwenden Sie diese Feldkonstanten als Schlüssel beim Abrufen von Werten aus der Karte der Gerätefunktionen.
 
 Zum Beispiel bestimmt das folgende Codebeispiel, ob das Gerät CSS unterstützt:
 
@@ -188,7 +188,7 @@ Der folgende POM-Code ist nützlich, wenn Sie Maven zum Erstellen Ihrer Anwendun
 
 Die DeviceGroup- und DeviceGroupFilter-Schnittstellen sind im Day Communique 5 WCM Mobile API-Bundle enthalten. Die Felix-Anmerkungen sind im Bundle Apache Felix Declarative Services enthalten. Sie können diese JAR-Datei über das öffentliche Adobe-Repository beziehen.
 
-Zum Zeitpunkt der Erstellung ist 5.5.2 die Version des WCM Mobile API-Bundles, das in der neuesten Version von AEM enthalten ist. Verwenden Sie die Adobe-Web-Konsole ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)), um sicherzustellen, dass es sich um die Paketversion handelt, die in Ihrer Umgebung bereitgestellt wird.
+Zum Zeitpunkt der Erstellung ist 5.5.2 die Version des WCM Mobile API-Bundles, das in der neuesten Version von AEM enthalten ist. Verwenden Sie die Adobe-Web-Konsole ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)), um sicherzustellen, dass es sich um die Bundle-Version handelt, die in Ihrer Umgebung bereitgestellt wird.
 
 **POM:** (Ihr POM verwendet eine andere Gruppen-ID und Version.)
 

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: ht
-source-wordcount: '1182'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1219'
+ht-degree: 92%
 
 ---
 
@@ -32,9 +32,9 @@ Die folgende Entscheidungsstruktur bietet eine Anleitung zum Eingrenzen des Engp
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
-## Konfigurieren von Protokolldateien und Prüfprotokollen {#configuring-log-files-and-audit-logs}
+## Konfigurieren von Protokolldateien und Auditprotokollen {#configuring-log-files-and-audit-logs}
 
-AEM zeichnet detaillierte Protokolle auf, die Sie konfigurieren können, um Installationsprobleme möglicherweise zu beheben. Weitere Informationen finden Sie im Abschnitt [Arbeiten mit Prüfdatensätzen und Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
+AEM zeichnet detaillierte Protokolle auf, die Sie konfigurieren können, um Installationsprobleme möglicherweise zu beheben. Weitere Informationen finden Sie im Abschnitt [Arbeiten mit Auditeinträgen und Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ## Verwenden der Option „verbose“ (ausführlich) {#using-the-verbose-option}
 
@@ -72,7 +72,7 @@ Gehen Sie zur Fehlerbehebung wie folgt vor:
 
 CRX selbst benötigt nur wenig Speicherplatz. Wenn die in CRX ausgeführte Anwendung größere Mengen Arbeitsspeicher benötigt oder Vorgänge anfordert, die viel Arbeitsspeicher belegen, etwa große Transaktionen, muss die JVM-Instanz, in der CRX ausgeführt wird, mit den entsprechenden Speichereinstellungen gestartet werden.
 
-Verwenden Sie Java™-Befehlsoptionen, um die Speichereinstellungen der JVM zu definieren (z. B. „java -Xmx512m -jar crx*.jar“, um die Heap-Größe auf 512 MB festzulegen).
+Verwenden Sie Java™-Befehlsoptionen, um die Speichereinstellungen der JVM zu definieren (z. B. „java -Xmx512m -jar crx&ast;.jar“, um die Heap-Größe auf 512 MB festzulegen).
 
 Geben Sie die Speichereinstellungsoption beim Starten von AEM WCM über die Befehlszeile an. Die Start-/Stopp-Skripte für AEM WCM oder benutzerdefinierten Skripte zur Verwaltung des Starts von AEM WCM können ebenfalls geändert werden, um die erforderlichen Speichereinstellungen zu definieren.
 
@@ -80,7 +80,7 @@ Wenn Sie die Heap-Größe bereits auf 512 MB festgelegt haben, können Sie das 
 
 Verwenden Sie den folgenden Befehl, um automatisch ein Heap-Abbild zu erstellen, wenn nicht genügend Arbeitsspeicher verfügbar ist:
 
-java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
+java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &ast;.jar
 
 Diese Methode generiert eine Heap-Dump-Datei (**java_…hprof**) immer dann, wenn dem Prozess der Speicher ausgeht. Der Vorgang läuft möglicherweise noch weiter, nachdem das Heap-Abbild erstellt wurde.
 
@@ -101,11 +101,11 @@ Diese können verglichen werden, um Änderungen zu sehen und festzustellen, wie 
 
 In bestimmten Situationen werden die AEM WCM-Begrüßungsbildschirme nicht automatisch angezeigt, obwohl das Repository selbst fehlerfrei läuft. Dieses Problem kann von der Einrichtung des Betriebssystems, der Browser-Konfiguration oder ähnlichen Faktoren abhängen.
 
-Ein häufiges Symptom ist, dass im AEM WCM-Schnellstartfenster die Meldung „AEM WCM starting up, waiting for server startup...“ angezeigt wird. Sollte diese Meldung über einen relativ langen Zeitraum bestehen bleiben, geben Sie die AEM WCM-URL manuell in das Browser-Fenster ein und verwenden Sie den Standardport 4502 oder den Port, über den die Instanz läuft: http://localhost:4502/.
+Ein häufiges Symptom ist, dass im AEM WCM-Schnellstartfenster die Meldung „AEM WCM starting up, waiting for server startup...“ angezeigt wird. Wenn diese Meldung über einen relativ langen Zeitraum angezeigt wird, geben Sie die AEM WCM-URL manuell in das Browserfenster ein und verwenden Sie dabei den Standardport 4502 oder den Port, über den die Instanz ausgeführt wird: http://localhost:4502/.
 
 Es ist auch möglich, den Grund dafür, dass der Browser nicht startet, in Protokollen zu finden.
 
-Manchmal wird die Meldung „AEM WCM wird über http://localhost:port/ ausgeführt.“ im AEM WCM-Schnellstartfenster angezeigt und der Browser startet nicht automatisch. Klicken Sie in diesem Fall auf die URL im AEM WCM-Schnellstartfenster (es handelt sich um einen Hyperlink) oder geben Sie die URL manuell im Browser ein.
+Manchmal wird im AEM WCM-Schnellstartfenster die Meldung &quot;AEM WCM wird auf http://localhost:port/ ausgeführt“ angezeigt und der Browser startet nicht automatisch. Klicken Sie in diesem Fall auf die URL im AEM WCM-Schnellstartfenster (es handelt sich um einen Hyperlink) oder geben Sie die URL manuell im Browser ein.
 
 Sollte das Problem durch keinen der Vorschläge gelöst werden können, überprüfen Sie die Protokolle, um herauszufinden, was passiert ist.
 

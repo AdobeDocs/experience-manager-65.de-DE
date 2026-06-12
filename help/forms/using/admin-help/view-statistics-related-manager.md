@@ -1,6 +1,6 @@
 ---
 title: Anzeigen von Statistiken mit Bezug auf Work Manager
-description: Auf der Registerkarte „Work Manager“ werden Statistiken angezeigt, die mit Work Manager-Elementen zusammenhängen.  Erfahren Sie, wie Sie die Arbeitselemente anzeigen und filtern können.
+description: Auf der Registerkarte „Work Manager“ werden Statistiken angezeigt, die mit Work Manager-Elementen zusammenhängen. Erfahren Sie, wie Sie die Arbeitselemente anzeigen und filtern können.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
@@ -11,14 +11,14 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 95%
+source-wordcount: '1217'
+ht-degree: 97%
 
 ---
 
 # Anzeigen von Statistiken mit Bezug auf Work Manager {#view-statistics-related-to-work-manager}
 
-Auf der Registerkarte „Work Manager“ werden Statistiken angezeigt, die mit Work Manager-Elementen zusammenhängen.  Diese Arbeitselemente weisen je nachdem, wo sie sich in ihrem Prozess befinden, unterschiedliche Status auf. (Siehe [Status (nur für Standard-, Workflow- oder Ereigniskategorien)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) Sie können die Informationen so filtern, dass nur eine Teilmenge der Elemente angezeigt wird, indem Sie die verschiedenen verfügbaren Optionen verwenden (z. B. Status oder Kategorie). Sie können die entstehenden Arbeits- oder Auftragselemente (in aufsteigender oder absteigender Reihenfolge) sortieren, indem Sie auf einen der Spaltenüberschriften klicken.  Sie können die Arbeitselemente außerdem mithilfe der Vorgangswerkzeuge verwalten, die über der Liste der Arbeitselemente angezeigt werden.
+Auf der Registerkarte „Work Manager“ werden Statistiken angezeigt, die mit Work Manager-Elementen zusammenhängen. Diese Arbeitselemente weisen je nachdem, wo sie sich in ihrem Prozess befinden, unterschiedliche Status auf. (Siehe [Status (nur für Standard-, Workflow- oder Ereigniskategorien)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) Sie können die Informationen so filtern, dass nur eine Teilmenge der Elemente angezeigt wird, indem Sie die verschiedenen verfügbaren Optionen verwenden (z. B. Status oder Kategorie). Sie können die entstehenden Arbeits- oder Auftragselemente (in aufsteigender oder absteigender Reihenfolge) sortieren, indem Sie auf einen der Spaltenüberschriften klicken. Sie können die Arbeitselemente außerdem mithilfe der Vorgangswerkzeuge verwalten, die über der Liste der Arbeitselemente angezeigt werden.
 
 ## Filtern von Arbeitselementen {#filter-the-work-items}
 
@@ -29,7 +29,7 @@ Auf der Registerkarte „Work Manager“ werden Statistiken angezeigt, die mit W
 
 **Standard:** Alle Arbeitselemente, denen der Client beim Übermitteln keine Kategorie zugewiesen hat. Work Manager verwaltet diese Elemente, daher gehören die Status zu Work Manager.
 
-**Job Manager:** Alle Aufträge, die zu Job Manager gehören. Job Manager verwaltet seine eigenen Aufträge und verfügt über seine eigenen Auftragsstatus.  Informationen hierzu finden Sie in den spezifischen, unten beschriebenen Auftragsstatus.
+**Job Manager:** Alle Aufträge, die zu Job Manager gehören. Job Manager verwaltet seine eigenen Aufträge und verfügt über seine eigenen Auftragsstatus. Informationen hierzu finden Sie in den spezifischen, unten beschriebenen Auftragsstatus.
 
 **Workflow:** Alle Arbeitselemente, die zur Workflow-Ausführung gehören. Workflow verwaltet keine eigenen Arbeitselemente, sondern verlässt sich auf Work Manager. Daher gehören die Status zu Work Manager.
 
@@ -45,9 +45,9 @@ Auf der Registerkarte „Work Manager“ werden Statistiken angezeigt, die mit W
 
 **In Arbeit:** Zeigt alle Arbeitselemente an, die der Work Manager des Anwendungsservers ausgewählt hat und die entweder abgeschlossen werden oder fehlschlagen. Sie können für diese Arbeitselemente keine Vorgänge verwenden.
 
-**Fertig:** Zeigt alle Arbeitselemente an, die erfolgreich ausgeführt wurden. Permanente Arbeitselemente verbleiben in diesem Status, und nicht permanente Elemente werden beim Beenden von Rückrufen an die Rückruf-Handler gelöscht. Zum Löschen dieser Elemente verwenden Sie den Vorgang „Elemente löschen“.  (Siehe Arbeitselemente oder Aufträge verwalten.)
+**Fertig:** Zeigt alle Arbeitselemente an, die erfolgreich ausgeführt wurden. Permanente Arbeitselemente verbleiben in diesem Status, und nicht permanente Elemente werden beim Beenden von Rückrufen an die Rückruf-Handler gelöscht. Zum Löschen dieser Elemente verwenden Sie den Vorgang „Elemente löschen“. (Siehe Arbeitselemente oder Aufträge verwalten.)
 
-**Fehlgeschlagen:** Zeigt alle Arbeitselemente an, die aufgrund eines Fehlers nicht erfolgreich beendet wurden. Diese Arbeitselemente können mehrmals durch Verwenden des Vorgangs „Elemente wiederholen“ wiederholt werden. (Siehe Arbeitselemente oder Aufträge verwalten.) Über einen Fehlerlink in der Spalte Status können Sie auf Details zum Fehler zugreifen.
+**Fehlgeschlagen:** Zeigt alle Arbeitselemente an, die aufgrund eines Fehlers nicht erfolgreich beendet wurden. Diese Arbeitselemente können mehrmals durch Verwenden des Vorgangs „Elemente wiederholen“ wiederholt werden. (Siehe Arbeitselemente oder Aufträge verwalten.) Mithilfe der Fehlerverknüpfung in der Statuszeile können Sie auf Details über den Fehler zugreifen.
 
 **Unbekannt:** Zeigt alle Arbeitselemente an, deren Status unbekannt ist.
 
@@ -77,7 +77,7 @@ Auf der Registerkarte „Work Manager“ werden Statistiken angezeigt, die mit W
 
 ### Server-Name {#server-name}
 
-Nur für Cluster-Server: Wählen Sie den Namen des Knotens aus, der die Arbeitselemente oder Auftragselemente anzeigen soll, die nur auf diesem Server erstellt wurden.  Wenn die Option „Alle anzeigen“ ausgewählt ist, werden alle Arbeitselemente für alle Knoten im Cluster angezeigt.
+Nur für Cluster-Server: Wählen Sie den Namen des Knotens aus, der die Arbeitselemente oder Auftragselemente anzeigen soll, die nur auf diesem Server erstellt wurden. Wenn die Option „Alle anzeigen“ ausgewählt ist, werden alle Arbeitselemente für alle Knoten im Cluster angezeigt.
 
 ### Erstellungszeit {#create-time}
 
@@ -85,7 +85,7 @@ Wählen Sie in diesem Filter eine Option aus, um nur die Arbeitselemente anzuzei
 
 ### Vor {#prior-to}
 
-Legt das Datum und die Zeit fest, die der Filter „Erstellungszeit“ als Enddatum verwendet.  Lassen Sie die Option „Aktuelles Datum/Zeit verwenden“ ausgewählt, um vom aktuellen Datum und Uhrzeit aus nach hinten zu filtern. Sie können die Auswahl für die Option auch aufheben und die entsprechenden Werte eingeben.  Klicken Sie entweder auf die Kalender- oder Uhrsymbole, um Werte mithilfe dieser Tools auszuwählen.
+Legt das Datum und die Zeit fest, die der Filter „Erstellungszeit“ als Enddatum verwendet. Lassen Sie die Option „Aktuelles Datum/Zeit verwenden“ ausgewählt, um vom aktuellen Datum und Uhrzeit aus nach hinten zu filtern. Sie können die Auswahl für die Option auch aufheben und die entsprechenden Werte eingeben. Klicken Sie entweder auf die Kalender- oder Uhrsymbole, um Werte mithilfe dieser Tools auszuwählen.
 
 Wenn Sie beispielsweise „Erstellungszeit = 1 Tag“ und „Vor = Aktuelles Datum/Zeit verwenden“ auswählen, werden alle Arbeitselemente zurückgegeben, die innerhalb der letzten 24 Stunden erstellt wurden.
 
@@ -95,7 +95,7 @@ Wenn Sie beispielsweise „Erstellungszeit = 1 Tag“ und „Vor = Aktuelles Dat
 
 ## Informationen zur Oberfläche der Registerkarte „Work Manager“ {#about-the-work-manager-tab-interface}
 
-Wenn Sie eine Work Manager-Abfrage oder einen Vorgang an einem Arbeitselement oder Auftrag ausführen, wird über der Liste eine Meldung angezeigt.  Diese bietet Ihnen eine Rückmeldung über die von Ihnen initiierte Aktion und in einigen Fällen eine Verknüpfung „Mehr Informationen“, die weitere Details zur Verfügung stellt. Wenn beispielsweise der von Ihnen initiierte Vorgang fehlgeschlagen ist, gibt die Meldung Informationen darüber an und stellt eine Verknüpfung zum Abrufen von Details über den Fehler bereit.
+Wenn Sie eine Work Manager-Abfrage oder einen Vorgang an einem Arbeitselement oder Auftrag ausführen, wird über der Liste eine Meldung angezeigt. Diese bietet Ihnen eine Rückmeldung über die von Ihnen initiierte Aktion und in einigen Fällen eine Verknüpfung „Mehr Informationen“, die weitere Details zur Verfügung stellt. Wenn beispielsweise der von Ihnen initiierte Vorgang fehlgeschlagen ist, gibt die Meldung Informationen darüber an und stellt eine Verknüpfung zum Abrufen von Details über den Fehler bereit.
 
 Wenn Sie auf „Weitere Informationen“ klicken, zeigt das Dialogfeld „Vorgangsdetails“ eine Liste der Arbeitselemente oder Aufträge an, die während des Vorgangs ausgewählt wurden. Sie können auf jedes Listenelement klicken, um die Fehlerdetails unten im Dialogfeld anzuzeigen.
 
@@ -115,14 +115,14 @@ Wenn Sie auf „Weitere Informationen“ klicken, zeigt das Dialogfeld „Vorgan
 
    **Elemente wiederholen:** Versucht, die ausgewählten Arbeitselemente oder Aufträge von ihrem aktuellen Zustand an erneut auszuführen.
 
-   Sie können überprüfen, ob ein Vorgang erfolgreich war, indem Sie über der Liste auf „Weitere Informationen“ klicken.  Es wird ein Dialogfeld angezeigt, das die ausgewählten Arbeitselemente oder Aufträge sowie ihre Status enthält.
+   Sie können überprüfen, ob ein Vorgang erfolgreich war, indem Sie über der Liste auf „Weitere Informationen“ klicken. Es wird ein Dialogfeld angezeigt, das die ausgewählten Arbeitselemente oder Aufträge sowie ihre Status enthält.
 
 ## Weitere Informationen über die Status der Arbeitselemente {#additional-information-about-work-item-statuses}
 
 Ein typischer Statusübergang für ein Arbeitselement ist „Neu“ > „Geplant“ > „Wird ausgeführt“ > „Abgeschlossen“ oder „Fehler“.
 
-Der Status „Angehalten“ unterbricht diesen normalen Fluss.  Diese Unterbrechung kann entweder von der Client-Anwendung oder von Systemadmins initiiert werden (z. B. zu Wartungs- oder Aktualisierungszwecken).  Sie können diese Aktion umkehren, indem Sie mithilfe des Vorgangs „Fortsetzen“ das Arbeitselement zurück in den Status „Geplant“ versetzen.
+Der Status „Angehalten“ unterbricht diesen normalen Fluss. Diese Unterbrechung kann entweder von der Client-Anwendung oder von Systemadmins initiiert werden (z. B. zu Wartungs- oder Aktualisierungszwecken). Sie können diese Aktion umkehren, indem Sie mithilfe des Vorgangs „Fortsetzen“ das Arbeitselement zurück in den Status „Geplant“ versetzen.
 
-Ein Arbeitselement im Status „Geplant“ befindet sich in der Warteschlange für eine Ausführung, die noch nicht begonnen hat. Diese Elemente können angehalten oder gelöscht werden, oder sie werden in den Status „Wird ausgeführt“ versetzt, wenn der Work Manager sie aus der Warteschlange nimmt. Arbeitselemente, die ausgeführt werden, können nicht bearbeitet werden.  Sie werden entweder abgeschlossen oder es tritt ein Fehler auf.
+Ein Arbeitselement im Status „Geplant“ befindet sich in der Warteschlange für eine Ausführung, die noch nicht begonnen hat. Diese Elemente können angehalten oder gelöscht werden, oder sie werden in den Status „Wird ausgeführt“ versetzt, wenn der Work Manager sie aus der Warteschlange nimmt. Arbeitselemente, die ausgeführt werden, können nicht bearbeitet werden. Sie werden entweder abgeschlossen oder es tritt ein Fehler auf.
 
-Der Status „Fehlgeschlagen“ ist das Ergebnis eines Fehlers, der bei der Ausführung des Arbeitselements aufgetreten ist.  Wenn Sie vermuten, dass die Fehler durch die Umstände bedingt sind (aufgrund des Kontextes zum Zeitpunkt der Ausführung), können Sie versuchen, die Ausführung erneut durchzuführen, indem Sie das Arbeitselement zurück in die Warteschlange versetzen. Es ist nur eine begrenzte Anzahl von Neuversuchen zulässig.
+Der Status „Fehlgeschlagen“ ist das Ergebnis eines Fehlers, der bei der Ausführung des Arbeitselements aufgetreten ist. Wenn Sie vermuten, dass die Fehler durch die Umstände bedingt sind (aufgrund des Kontextes zum Zeitpunkt der Ausführung), können Sie versuchen, die Ausführung erneut durchzuführen, indem Sie das Arbeitselement zurück in die Warteschlange versetzen. Es ist nur eine begrenzte Anzahl von Neuversuchen zulässig.
