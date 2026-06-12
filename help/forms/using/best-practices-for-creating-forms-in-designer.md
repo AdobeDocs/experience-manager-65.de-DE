@@ -688,7 +688,7 @@ Beachten Sie beim Entwerfen von Skripten für die Barrierefreiheit die folgenden
 ## Sicherstellen, dass auf alle Audio- und Videoinhalte zugegriffen werden kann{#ensure-audio-video-accessible}
 
 Wenn Ihre Formulare Audio- oder Videoinhalte enthalten, einschließlich Audio- und Videoclips, müssen Sie sicherstellen, dass diese Inhalte verfügbar sind. Stellen Sie insbesondere sicher, dass die in Formulare integrierten Videoclips Untertitel (manchmal auch als Untertitel bezeichnet) für gehörlose und schwerhörige Benutzende sowie Videobeschreibungen für blinde Benutzende enthalten. Für Audiodateien, die nicht mit Videoinhalten synchronisiert sind, reicht ein einfaches Transkript aus.
-Informationen zu Untertiteln für Flash[basierte Medien finden Sie ](/help/forms/using/best-practices-for-creating-forms-in-designer.md)link).
+Informationen zu Untertiteln für Flash[basierte Medien finden Sie &#x200B;](/help/forms/using/best-practices-for-creating-forms-in-designer.md)link).
 
 **Verwandte Prüfpunkte**:
 * Section 508 §1194.22

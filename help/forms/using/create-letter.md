@@ -160,7 +160,7 @@ Analysieren Sie jeden Brief, um die verschiedenen Teile freizulegen, die den Bri
 * Die Bedingungen, unter denen Business-Anwenderinnen und -Anwender, etwa bei der Schadensregulierung oder der Sachbearbeitung, Inhalte oder Teile davon im Brief ändern.
 * Szenarien beschreiben das Benutzererlebnis, die Anforderungen und die Vorteile der Brieflösung.
 * Szenarien bieten auch :The erforderlichen Fertigkeiten und Tools, die Sie für Ihr Projekt benötigen.
-* Empfohlene Vorgehensweisen für die Planung Ihrer Implementierung. ``Allgemeine Übersicht über die Implementierung.
+* Empfohlene Vorgehensweisen für die Planung Ihrer Implementierung. &grave;&grave;Allgemeine Übersicht über die Implementierung.
 
 ## Vorteile der Analyse {#benefits-of-performing-the-analysis}
 

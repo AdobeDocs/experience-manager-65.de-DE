@@ -536,7 +536,7 @@ Im Folgenden erfahren Sie, wie Sie einen benutzerdefinierten Fehler-Handler mit 
 
 ## Verwenden von benutzerdefinierten Funktionen in einem adaptiven Formular. {#use-custom-functions}
 
-In einem adaptiven Formular können Sie [benutzerdefinierte Funktionen im Regeleditor) ](/help/forms/using/rule-editor-core-components.md).
+In einem adaptiven Formular können Sie [benutzerdefinierte Funktionen im Regeleditor) &#x200B;](/help/forms/using/rule-editor-core-components.md).
 Fügen wir der JavaScript-Datei (`Function.js`-Datei) folgenden Code hinzu, um das Alter auf der Grundlage des Geburtsdatums (JJJJ-MM-TT) zu berechnen. Erstellen Sie eine benutzerdefinierte Funktion als `calculateAge()`, die das Geburtsdatum als Eingabe verwendet und ein Alter zurückgibt:
 
 ```javascript
@@ -659,7 +659,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 Im Folgenden erfahren wir, wie benutzerdefinierte Funktionen für verschiedene Anwendungsfälle Feld- und global-Objekte mithilfe eines `Contact Us`-Formulars verwenden.
 
-![Kontaktformular ](/help/forms/using/assets/contact-us-form.png)
+![Kontaktformular &#x200B;](/help/forms/using/assets/contact-us-form.png)
 
 #### **Anwendungsfall**: Anzeigen eines Bedienfelds mithilfe der `SetProperty`-Regel
 
@@ -697,11 +697,11 @@ Erstellen wir eine Regel für die Schaltfläche `Next`, die das Bedienfeld `pers
 
 In der folgenden Abbildung sehen Sie, wie das Bedienfeld `personaldetails` beim Klicken auf die Schaltfläche `Next` validiert wird. Falls alle Felder innerhalb der `personaldetails` validiert werden, wird das Bedienfeld `feedback` angezeigt.
 
-![Festlegen der Vorschau für das Eigenschaftsformular ](/help/forms/using/assets/set-property-form-preview.png)
+![Festlegen der Vorschau für das Eigenschaftsformular &#x200B;](/help/forms/using/assets/set-property-form-preview.png)
 
 Wenn Fehler in den Feldern des Bedienfelds `personaldetails` vorhanden sind, werden sie beim Klicken auf die Schaltfläche `Next` auf Feldebene angezeigt und das Bedienfeld `feedback` bleibt unsichtbar.
 
-![Festlegen der Vorschau für das Eigenschaftsformular ](/help/forms/using/assets/set-property-panel.png)
+![Festlegen der Vorschau für das Eigenschaftsformular &#x200B;](/help/forms/using/assets/set-property-panel.png)
 
 #### **Anwendungsfall**: Das Feld validieren.
 

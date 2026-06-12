@@ -172,7 +172,7 @@ Nachdem Sie serverseitige Änderungen vorgenommen haben, starten Sie das Baustei
 
 1. Suchen Sie das Asset Composer-Baustein-Bundle von Adobe. Starten Sie das Bundle neu: Klicken Sie auf „Anhalten“ und klicken Sie dann auf „Start“.
 
-   ![Asset Composer-Baustein von Adobe ](assets/6_assetcomposerbuildingblockbundle.png)
+   ![Asset Composer-Baustein von Adobe &#x200B;](assets/6_assetcomposerbuildingblockbundle.png)
 
 Nach dem Neustart des Adobe Asset Composer-Baustein-Bundles wird die benutzerdefinierte Schaltfläche auf der Benutzeroberfläche „Korrespondenz erstellen“ angezeigt. Sie können einen Brief in der Benutzeroberfläche „Korrespondenz erstellen“ öffnen, um eine Vorschau der benutzerdefinierten Schaltfläche anzuzeigen.
 

@@ -129,7 +129,7 @@ Sie können PDF-Einstellungen dauerhaft löschen, wenn sie nicht mehr benötigt 
 
 ## Allgemeine Optionen {#general-options}
 
-Geben Sie in den allgemeinen Optionen die Acrobat-Version an, die zwecks Dateikompatibilität und für andere Datei- und Geräteoptionen verwendet werden soll. Anweisungen zum Zugriff auf die allgemeinen Optionen finden Sie unter [Hinzufügen und Bearbeiten von PDF-Einstellungen ](configuring-pdf-settings.md#add-or-edit-pdf-settings).
+Geben Sie in den allgemeinen Optionen die Acrobat-Version an, die zwecks Dateikompatibilität und für andere Datei- und Geräteoptionen verwendet werden soll. Anweisungen zum Zugriff auf die allgemeinen Optionen finden Sie unter [Hinzufügen und Bearbeiten von PDF-Einstellungen &#x200B;](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
 ### Dateioptionen {#file-options}
 

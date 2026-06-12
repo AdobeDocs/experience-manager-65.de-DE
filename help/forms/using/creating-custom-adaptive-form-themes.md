@@ -43,7 +43,7 @@ Sie erstellen eine **adaptive Vorlage** und wenden das Design auf die Vorlage an
 >
 >Wenn Sie diesen Schritten mithilfe der Namen folgen, sollte die resultierende Vorlage in etwa dem folgenden Snapshot ähneln:
 
-![ Momentaufnahme des adaptiven Formulars mit Waldthemen](assets/thumbnail.png)
+![&#x200B; Momentaufnahme des adaptiven Formulars mit Waldthemen](assets/thumbnail.png)
 **Abbildung:** *Beispiel für Waldthemen*
 
 1. Erstellen Sie einen Knoten des Typs `cq:ClientLibraryFolder` unter dem Knoten `/apps`.
