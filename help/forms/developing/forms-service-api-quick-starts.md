@@ -1,6 +1,6 @@
 ---
 title: Schnellstarts mit der Forms Service-API
-description: Erfahren Sie, wie Sie interaktive PDFs, HTML-Formulare und Fragmente mithilfe der Java™-API rendern.
+description: Erfahren Sie, wie Sie interaktive PDF, HTML Forms und Fragmente mithilfe der Java&trade;-API rendern können.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1529'
-ht-degree: 100%
+source-wordcount: '1556'
+ht-degree: 99%
 
 ---
 
@@ -22,17 +22,17 @@ ht-degree: 100%
 
 Folgende Kurzanleitungen sind für den Forms-Service verfügbar:
 
-[Schnellstart (SOAP-Modus): Rendern eines interaktiven PDF-Formulars mithilfe der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api)
+[Schnellstart (SOAP-Modus): Rendern eines interaktiven PDF-Formulars mithilfe der Java™-API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Rendern eines Formulars auf dem Client mithilfe der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
+[Schnellstart (SOAP-Modus): Rendern eines Formulars auf dem Client mithilfe der Java™-API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Rendern eines Formulars, das auf Fragmenten basiert, mithilfe der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
+[Schnellstart (SOAP-Modus): Rendern eines Formulars, das auf Fragmenten basiert, mithilfe der Java™-API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Rendern eines Formulars mit aktivierten Rechten mithilfe der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
+[Schnellstart (SOAP-Modus): Rendern eines Formulars mit aktivierten Rechten mithilfe der Java™-API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Rendern eines HTML-Formulars mithilfe der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
+[Schnellstart (SOAP-Modus): Rendern eines HTML-Formulars mithilfe der Java™-API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Rendern eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste mithilfe der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
+[Schnellstart (SOAP-Modus): Rendern eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste mithilfe der Java™-API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
 [Schnellstart (SOAP-Modus): Handhabung von PDF-Formularen, die als XML mit der Java™-API übermittelt wurden](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
@@ -40,17 +40,17 @@ Folgende Kurzanleitungen sind für den Forms-Service verfügbar:
 
 [Schnellstart (SOAP-Modus): Handhabung von HTML-Formularen, die als XML mit der Java™-API übermittelt wurden](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Erstellen von PDF-Dokumenten mit übermittelten XML-Daten mithilfe der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
+[Schnellstart (SOAP-Modus): Erstellen von PDF-Dokumenten mit gesendeten XML-Daten mithilfe der Java™-API](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Vorausfüllen von Formularen mit flexiblen Layouts mithilfe der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[Schnellstart (SOAP-Modus): Vorausfüllen von Formularen mit flexiblen Layouts mithilfe der Java™-API](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Verarbeiten eines Formulars, das ein Berechnungsskript enthält, mithilfe der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api)
+[Schnellstart (SOAP-Modus): Verarbeiten eines Formulars, das ein Berechnungsskript enthält, mithilfe der Java™-API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Optimieren der Leistung mithilfe der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
+[Schnellstart (SOAP-Modus): Optimieren der Leistung mithilfe der Java™-API](forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Rendern nach Wert mithilfe der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[Schnellstart (SOAP-Modus): Rendern nach Wert mithilfe der Java™-API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Übergeben von Dokumenten an den Forms-Dienst mithilfe der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
+[Schnellstart (SOAP-Modus): Übergeben von Dokumenten an den Forms-Dienst mithilfe der Java™-API](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
 Anwendungslogik, die die Forms Service-API verwendet, wird in Form von Java™-Servlets implementiert. AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 

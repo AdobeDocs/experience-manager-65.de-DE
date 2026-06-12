@@ -1,6 +1,6 @@
 ---
-title: Java™-API-Schnellstart (SOAP) für den Assembler-Dienst
-description: Erfahren Sie, wie Sie mit der Schnellstartanleitung (SOAP) für die Assembler Service Java™-API ein PDF-Dokument zusammenführen, aufteilen und dynamisch erstellen.
+title: Assembler Service Java&trade; API QuickStart(SOAP)
+description: Erfahren Sie, wie Sie ein PDF-Dokument mithilfe des Assembler-Service Java&trade; API QuickStart (SOAP) zusammenstellen, aufteilen und dynamisch erstellen.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,14 +11,14 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 100%
+source-wordcount: '1011'
+ht-degree: 93%
 
 ---
 
 # Java™-API-Schnellstart (SOAP) für den Assembler-Dienst {#assembler-service-java-api-quickstart-soap}
 
-Der Java-API-Schnellstart (SOAP) ist für den Assembler-Service verfügbar
+Der Java-API-Schnellstart (SOAP) ist für den Assembler-Dienst verfügbar
 
 [Schnellstart (SOAP-Modus): Zusammenstellen eines PDF-Dokuments mit der Java-API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
 
@@ -30,7 +30,7 @@ Der Java-API-Schnellstart (SOAP) ist für den Assembler-Service verfügbar
 
 [Schnellstart (SOAP-Modus): Zusammenstellen eines nicht interaktiven PDF-Dokuments mithilfe der Java-API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Bestimmen, ob ein Dokument mit PDF/A kompatibel ist, mithilfe der Java-API ](assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)
+[Schnellstart (SOAP-Modus): Bestimmen, ob ein Dokument mit PDF/A kompatibel ist, mithilfe der Java-API](assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)
 
 [Schnellstart (SOAP-Modus): Überprüfen von DDX-Dokumenten mithilfe der Java-API](assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api)
 
@@ -194,7 +194,7 @@ Im folgenden Java-Codebeispiel werden zwei PDF-Quelldokumente mit dem Namen *map
 
 ## Schnellstart (SOAP-Modus): Aufteilen eines PDF-Dokuments mithilfe der Java-API {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *AssemblerResultPDF.pdf* aufgeteilt. Beachten Sie, dass der Name des DDX-Dokuments *shell_disassemble.xml* lautet. Jedes aufgeteilte PDF-Dokument trägt den Namen `ResultPDF[Number].pdf`. Das bedeutet, dass das erste aufgeteilte PDF-Dokument *ResultPDF1.pdf heißt.* Informationen zum in diesem Codebeispiel verwendeten DDX-Dokument *shell_disassemble.xml* finden Sie unter [Programmgesteuerte Aufteilung von PDF-Dokumenten](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
+Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *AssemblerResultPDF.pdf* aufgeteilt. Beachten Sie, dass der Name des DDX-Dokuments *shell_disassemble.xml* lautet. Jedes aufgeteilte PDF-Dokument trägt den Namen `ResultPDF[Number].pdf`. Das heißt, das erste aufgeteilte PDF-Dokument heißt *ResultPDF1.pdf.* Weitere Informationen zum in *Codebeispiel verwendeten DDX-* „shell_disassemble.xml“ finden Sie unter [Programmgesteuerte Aufteilung von PDF-Dokumenten](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
 
 ```java
  /*
@@ -456,7 +456,7 @@ Im folgenden Java-Codebeispiel wird ein kennwortverschlüsseltes PDF-Dokument zu
 
 ## Schnellstart (SOAP-Modus): Zusammenstellen eines PDF-Dokuments mit Bates-Nummerierung mithilfe der Java-API {#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit Einzelseitenkennungen (Bates-Nummerierung) zusammengestellt. Beachten Sie, dass der Name des DDX-Dokuments *shell_Bates.xml* lautet. Das vom Assembler-Service zurückgegebene PDF-Dokument wird als PDF-Datei mit dem Namen *AssemblerResultBatesPDF.pdf* gespeichert. (Siehe [Zusammenstellen von Dokumenten mit Bates-Nummerierung](/help/forms/developing/assembling-pdf-documents.md#assembling-documents-using-bates-numbering).)
+Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit Einzelseitenkennungen (Bates-Nummerierung) zusammengestellt. Beachten Sie, dass der Name des DDX-Dokuments *shell_Bates.xml* lautet. Das vom Assembler-Dienst zurückgegebene PDF-Dokument wird als PDF-Datei mit dem Namen *AssemblerResultBatesPDF.pdf* gespeichert. (Siehe [Zusammenstellen von Dokumenten mit Bates-Nummerierung](/help/forms/developing/assembling-pdf-documents.md#assembling-documents-using-bates-numbering).)
 
 ```java
  /*
@@ -614,7 +614,7 @@ Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit Einzelseitenkennungen (
 
 ## Schnellstart (SOAP-Modus): Zusammenstellen eines nicht interaktiven PDF-Dokuments mithilfe der Java-API {#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein nicht interaktives PDF-Dokument zusammengestellt. Das interaktive PDF-Dokument, das an den Assembler-Service übergeben wird, heißt *Loan.pdf*. Beachten Sie, dass der Name des DDX-Dokuments *shell_XFA.xml* lautet. Das nicht interaktive PDF-Dokument wird als PDF-Datei mit dem Namen *AssembleNonInteractivePDF.pdf* gespeichert. (Siehe [Zusammenstellen nicht interaktiver PDF-Dokumente](/help/forms/developing/assembling-pdf-documents.md#assembling-non-interactive-pdf-documents).)
+Im folgenden Java-Codebeispiel wird ein nicht interaktives PDF-Dokument zusammengestellt. Das interaktive PDF-Dokument, das an den Assembler-Dienst übergeben wird, heißt *Loan.pdf*. Beachten Sie, dass der Name des DDX-Dokuments *shell_XFA.xml* lautet. Das nicht interaktive PDF-Dokument wird als PDF-Datei mit dem Namen *AssembleNonInteractivePDF.pdf* gespeichert. (Siehe [Zusammenstellen nicht interaktiver PDF-Dokumente](/help/forms/developing/assembling-pdf-documents.md#assembling-non-interactive-pdf-documents).)
 
 ```java
  /*
@@ -736,9 +736,9 @@ Im folgenden Java-Codebeispiel wird ein nicht interaktives PDF-Dokument zusammen
  
 ```
 
-## Schnellstart (SOAP-Modus): Bestimmen, ob ein Dokument mit PDF/A kompatibel ist, mithilfe der Java-API  {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
+## Schnellstart (SOAP-Modus): Bestimmen, ob ein Dokument mit PDF/A kompatibel ist, mithilfe der Java-API {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ermittelt, ob das PDF-Eingabedokument PDF/A-kompatibel ist. Das PDF-Eingabedokument, das an den Assembler-Service übergeben wird, heißt *Loan.pdf*. Der Name des DDX-Dokuments ist shell_PDFA.xml. Das XML-Dokument, das vom Assembler-Dienst zurückgegeben wird und angibt, ob das PDF-Eingabedokument PDF/A-kompatibel ist, wird als XML-Datei mit dem Namen „result.xml“ gespeichert. Weitere Informationen über das in diesem Code-Beispiel verwendete DDX-Dokument *shell_PDFA.xml* finden Sie unter [Bestimmen, ob Dokumente PDF/A-konform sind](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
+Im folgenden Java-Codebeispiel wird ermittelt, ob das PDF-Eingabedokument PDF/A-kompatibel ist. Das PDF-Eingabedokument, das an den Assembler-Dienst übergeben wird, heißt *Loan.pdf*. Der Name des DDX-Dokuments ist shell_PDFA.xml. Das XML-Dokument, das vom Assembler-Dienst zurückgegeben wird und angibt, ob das PDF-Eingabedokument PDF/A-kompatibel ist, wird als XML-Datei mit dem Namen „result.xml“ gespeichert. Weitere Informationen über das in diesem Code-Beispiel verwendete DDX-Dokument *shell_PDFA.xml* finden Sie unter [Bestimmen, ob Dokumente PDF/A-konform sind](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
 
 ```java
  /*
@@ -1187,11 +1187,11 @@ Im folgenden Java-Code-Beispiel wird ein PDF-Dokument zusammengestellt, das Lese
 
 Im folgenden Java-Code-Beispiel wird dynamisch ein DDX-Dokument erstellt, das ein PDF-Dokument zerlegt. Für jedes Lesezeichen der Ebene 1 im eingegebenen PDF-Dokument wird ein neues PDF-Dokument erstellt. Dieses Code-Beispiel enthält zwei benutzerdefinierte Methoden:
 
-* `createDDX`: Erstellt ein `org.w3c.dom.Document`-Objekt, das das DDX-Dokument darstellt, welches an den Assembler-Service gesendet wird. Diese benutzerdefinierte Methode gibt das `org.w3c.dom.Document`-Objekt zurück.
+* `createDDX`: Erstellt ein `org.w3c.dom.Document`-Objekt, das das DDX-Dokument darstellt, welches an den Assembler-Dienst gesendet wird. Diese benutzerdefinierte Methode gibt das `org.w3c.dom.Document`-Objekt zurück.
 * `convertDDX`: Konvertiert ein `org.w3c.dom.Document`-Objekt in ein `com.adobe.idp.Document`-Objekt. Diese Methode akzeptiert ein `org.w3c.dom.Document`-Objekt als Eingabeparameter und gibt ein `com.adobe.idp.Document`-Objekt zurück.
 
-  Beide Methoden werden in dieser Kurzanleitung aufgerufen. (Siehe [Dynamisches Erstellen von DDX-Dokumenten](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).)
-
+  Beide Methoden werden in dieser Kurzanleitung aufgerufen. (Siehe [Dynamisches Erstellen von DDX-](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents))
+&quot;
 
 ```java
 /*

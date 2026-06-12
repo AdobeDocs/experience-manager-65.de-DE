@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3842'
-ht-degree: 100%
+source-wordcount: '3826'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Ein Datenwörterbuch ist eine unabhängige Darstellung von Metadaten, die die zu
 
 Ein Datenwörterbuch besteht aus Datenwörterbuchelementen (DDEs), von denen es drei Typen gibt: Elemente des Typs „Simple“, „Composite“ und „Collection“. Primitive-DDEs sind primitive Elemente wie Zeichenfolgen, Zahlen, Daten und boolesche Werte, die Informationen wie z. B. den Ortsnamen enthalten. Ein Composite-DDE enthält andere DDEs, die vom Typ „Primitive“, „Composite“ oder „Collection“ sein können. Das kann z. B. eine Adresse sein, die aus einer Straße, einer Stadt, einem Bezirk, einem Land und einer Postleitzahl besteht. Eine Sammlung ist eine Liste ähnlicher Simple- oder Composite-DDEs. Beispiel: eine Kundin oder ein Kunde mit mehreren Standorten oder unterschiedlichen Abrechnungs- und Versandadressen.
 
-Das Correspondence Management verwendet Backend- sowie kunden- und empfängerspezifische Daten, die zur Erstellung unterschiedlicher Kundenkorrespondenzen gemäß der Datenwörterbuchstruktur gespeichert sind. Beispielsweise kann ein Dokument mit einer freundlichen Anrede erstellt werden, wie „Lieber {Vorname}“, „Herr“ {Nachname}&quot;.
+Das Correspondence Management verwendet Backend- sowie kunden- und empfängerspezifische Daten, die zur Erstellung unterschiedlicher Kundenkorrespondenzen gemäß der Datenwörterbuchstruktur gespeichert sind. Beispielsweise kann ein Dokument mit benutzerfreundlichen Namen wie „Sehr geehrter {First Name}&quot;, „Herr {Last Name}&quot; erstellt werden.
 
 In der Regel müssen Geschäftsbenutzer keine Kenntnisse über Metadatendarstellungen wie XSD (XML-Schema) und Java-Klassen haben. Sie müssen allerdings in der Regel Zugriff auf diese Datenstrukturen und Attribute haben, um Lösungen erstellen zu können.
 
@@ -88,7 +88,7 @@ Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs o
    * Name, Referenzname und Elementtypen sind obligatorische Felder für Datenwörterbücher und DDEs.
    * Der Referenzname muss eindeutig sein.
    * Ein übergeordnetes DDE (Composite) darf nicht zwei untergeordnete DDEs mit demselben Namen haben.
-   * „Enums“ enthalten nur Primitive-Zeichenfolgentypen.
+   * Aufzählungen enthalten nur primitive-Zeichenfolgentypen.
 
    Weitere Informationen zu Composite-, Collection- und Primitive-Elementen und zum Arbeiten mit Datenwörterbuchelementen finden Sie unter [Zuordnen von Datenwörterbuchelementen zum XML-Schema](#mappingddetoschema).
 
@@ -198,8 +198,8 @@ Beim Bearbeiten oder Anzeigen eines Datenwörterbuchs können Sie sehen, welche 
 
 1. Nachdem die Dateneinträge vorgenommen wurden, können Sie diese XML-Datei verwenden, wenn Sie einen Brief mit Testdaten in der Vorschau anzeigen.
 
-   Sie können diese Testdaten mit DD hinzufügen (wählen Sie „DD“ und „Testdaten hochladen“ aus und laden Sie diese XML-Datei hoch)
-Wenn Sie danach den Brief normal in der Vorschau anzeigen (nicht benutzerdefiniert), werden diese XML-Daten in dem Brief verwendet. Sie können auch „Benutzerdefiniert“ auswählen und dann diese XML-Datei hochladen.
+   Sie können diese Testdaten mit DD hinzufügen (Wählen Sie DD aus, wählen Sie Testdaten hochladen aus und laden Sie diese XML-Datei hoch)
+Wenn Sie danach den Brief normal in der Vorschau anzeigen (nicht benutzerdefiniert), werden diese XML-Daten im Brief verwendet. Sie können auch „Benutzerdefiniert“ auswählen und dann diese XML-Datei hochladen.
 
 ## Stichproben {#samples}
 
@@ -273,7 +273,7 @@ In der folgenden Tabelle sind die allgemeinen Attribute aufgeführt, die mit ein
   <tr>
    <td>Name</td>
    <td>Zeichenfolge</td>
-   <td>Erforderlich.<br /> Name des DDEs. Er muss eindeutig sein.</td>
+   <td>Erforderlich.<br /> Name des DDE. Er muss eindeutig sein.</td>
   </tr>
   <tr>
    <td>Referenzname<br /></td>
@@ -318,7 +318,7 @@ In der folgenden Tabelle sind die allgemeinen Attribute aufgeführt, die mit ein
   <tr>
    <td>valueSet</td>
    <td>Liste</td>
-   <td>Ein Satz zulässiger Werte für ein DDE vom Typ „Enum“. Beispielsweise kann der Kontotyp nur Werte (Speichern, Aktuell) enthalten.</td>
+   <td>Ein Satz zulässiger Werte für ein DDE vom Typ „enum“. Beispielsweise kann der Kontotyp nur Werte (Speichern, Aktuell) enthalten.</td>
   </tr>
   <tr>
    <td>extendedProperties</td>
@@ -342,7 +342,7 @@ In der folgenden Tabelle sind die allgemeinen Attribute aufgeführt, die mit ein
 
 Ein Datenwörterbuch kann auch berechnete Elemente enthalten. Ein berechnetes Datenwörterbuchelement ist immer mit einem Ausdruck verknüpft. Der Ausdruck wird geprüft, um den Wert eines Datenwörterbuchelements zur Laufzeit abzurufen. Ein berechneter DDE-Wert ist eine Funktion anderer DDE-Werte oder -Literale. Standardmäßig werden JSP Expression Language(EL)-Ausdrücke unterstützt. Die EL-Ausdrücke verwenden ${ }-Zeichen, und gültige Ausdrücke können Literale, Operatoren, Variablen (Datenwörterbuchelement-Verweise) und Funktionsaufrufe enthalten. Beim Verweisen auf ein Datenwörterbuchelement im Ausdruck wird der DDE-Verweisname verwendet. Der Verweisname ist für jedes Datenwörterbuchelement in einem Datenwörterbuch eindeutig.
 
-Ein berechneter DDE PersonFullName kann mit einem EL-Verkettungsausdruck wie „${PersonFirstName} ${PersonLastName}“ verknüpft werden.
+Ein berechneter DDE PersonFullName kann einem EL-Verkettungsausdruck wie ${PersonFirstName} ${PersonLastName} zugeordnet werden.
 
 ## Datentypzuordnung zwischen XSD und Datenwörterbuch {#data-type-mapping-between-xsd-and-data-dictionary-br}
 
@@ -362,7 +362,7 @@ Das Exportieren einer XSD-Datei erfordert eine bestimmte Datenzuordnung, die in 
   </tr>
   <tr>
    <td><p>xs:element, wobei maxOccurs &gt; 1<br /> </p> </td>
-   <td>DDE des Typs COLLECTION <br /> Ein DDE-Knoten wird neben dem COLLECTION-DDE erstellt, das Informationen aus dem übergeordneten COLLECTION-Knoten erfasst. Derselbe Knoten wird für die Collection der Simple-/Composite-Datentypen erstellt. Bei einer COLLECTION des Typs „Composite“ erfasst die Baumstruktur des Datenwörterbuchs die einzelnen Felder in den untergeordneten Elementen des DDE, die zum Erfassen von Typinformationen erstellt wurden.<br /> – DDE (COLLECTION)<br /> – DDE(COMPOSITE für Typinfo)<br /> – DDE(STRING) field1<br /> – DDE(STRING) field2<br /> <br /> </p> </td>
+   <td>DDE des Typs COLLECTION <br /> Ein DDE-Knoten wird neben dem COLLECTION-DDE erstellt, das Informationen aus dem übergeordneten COLLECTION-Knoten erfasst. Derselbe Knoten wird für die Collection der Simple-/Composite-Datentypen erstellt. Wenn Sie über eine SAMMLUNG des Typs „Verbund“ verfügen, erfasst die Datenwörterbuchstruktur die einzelnen Felder in den untergeordneten Elementen des DDE, das zur Erfassung von Typinformationen erstellt wurde.<br /> - DDE (COLLECTION)<br /> - DDE(COMPOSITE für Typinformationen)<br /> - DDE(STRING) field1<br /> - DDE(STRING) field2<br /> <br /> </p> </td>
    <td>java.util.List<br /> </td>
   </tr>
   <tr>
@@ -376,17 +376,17 @@ Das Exportieren einer XSD-Datei erfordert eine bestimmte Datenzuordnung, die in 
    <td>java.lang.String<br /> </td>
   </tr>
   <tr>
-   <td>xs:attribute/xs:element des Typs „xs: boolean“ <br />  </td>
-   <td>DDE des Typs „Boolean“ <br />  </td>
+   <td>xs:attribute/xs:element des Typs „xs: boolean“ <br /> </td>
+   <td>DDE des Typs „Boolean“ <br /> </td>
    <td>java.lang.Boolean<br /> </td>
   </tr>
   <tr>
-   <td>xs:attribute/xs:element des Typs „xs:date“  </td>
+   <td>xs:attribute/xs:element des Typs „xs:date“ </td>
    <td>DDE des Typs DATE </td>
    <td>java.lang.String</td>
   </tr>
   <tr>
-   <td>xs:attribute/xs:element des Typs „xs:integer“  </td>
+   <td>xs:attribute/xs:element des Typs „xs:integer“ </td>
    <td>DDE des Typs NUMBER </td>
    <td>java.lang.Double</td>
   </tr>
@@ -401,7 +401,7 @@ Das Exportieren einer XSD-Datei erfordert eine bestimmte Datenzuordnung, die in 
    <td>java.lang.Double</td>
   </tr>
   <tr>
-   <td>Element des Typs „Enum“ und „baseType“ – xs:string</td>
+   <td>Element des Typs „enum“ und „baseType“ – xs:string</td>
    <td>DDE des<br /> Typs - STRING<br /> subtype - ENUM<br /> valueSet - der zulässige Wert für ENUM<br /> </td>
    <td>java.lang.String</td>
   </tr>
@@ -413,19 +413,19 @@ Das Exportieren einer XSD-Datei erfordert eine bestimmte Datenzuordnung, die in 
 Nachdem Sie ein Datenwörterbuch erstellt haben, können Sie es in eine XML-Beispieldatendatei herunterladen, um darin Texteinträge vorzunehmen.
 
 1. Wählen Sie auf der Seite „Datenwörterbücher“ **Auswählen** und dann ein Datenwörterbuch aus.
-1. Wählen Sie **XML-Beispieldaten herunterladen**. 
+1. Wählen Sie **XML-Beispieldaten herunterladen**.
 1. Wählen Sie in der Warnmeldung **OK** aus.
 
    Das Correspondence Management erstellt eine XML-Datei, die auf der ausgewählten Datenwörterbuchstruktur basiert, und lädt sie auf Ihren Computer mit dem Namen &lt;datenwörterbuchname>-SampleData herunter. Jetzt können Sie diese Datei in einem XML- oder einem Texteditor bearbeiten, um beim [Erstellen eines Briefs](../../forms/using/create-letter.md) Dateneinträge vorzunehmen.
 
 ## Internationalisierung von Metadaten {#internationalization-of-meta-data}
 
-Wenn Sie denselben Brief in verschiedenen Sprachen senden möchten, können Sie den Anzeigenamen, die Beschreibung und die Enum-Wertsätze des Datenwörterbuchs und der Datenwörterbuchelemente lokalisieren.
+Wenn Sie denselben Brief in verschiedenen Sprachen senden möchten, können Sie den Anzeigenamen, die Beschreibung und die Aufzählungswertsätze des Datenwörterbuchs und der Datenwörterbuchelemente lokalisieren.
 
 ### Datenwörterbuch lokalisieren {#localize-data-dictionary}
 
 1. Wählen Sie auf der Seite „Datenwörterbücher“ die Option **Auswählen** und dann ein Datenwörterbuch aus.
-1. Wählen Sie **Lokalisierungsdaten herunterladen** aus. 
+1. Wählen Sie **Lokalisierungsdaten herunterladen** aus.
 1. Wählen Sie bei der Warnmeldung **OK** aus. Correspondence Management lädt eine ZIP-Datei auf Ihrem Computer mit dem Namen DataDictionary-&lt;DDname>.zip herunter.
 1. Die ZIP-Datei enthält eine Datei des Typs „.properties“. Diese Datei definiert das heruntergeladene Datenwörterbuch. Der Inhalt der Eigenschaftsdatei ähnelt dem folgenden:
 
@@ -439,7 +439,7 @@ Wenn Sie denselben Brief in verschiedenen Sprachen senden möchten, können Sie 
    DataDictionaryElement.person.displayName=person
    ```
 
-   In der Struktur der Eigenschaftsdatei ist jeweils eine Zeile für die Beschreibung und den Anzeigenamen des Datenwörterbuchs sowie jedes Datenwörterbuchelements im Datenwörterbuch definiert. Darüber hinaus ist in der Eigenschaftsdatei jeweils eine Zeile für einen Enum-Wertsatz jedes Datenwörterbuchelements definiert. Wie ein Datenwörterbuch kann auch die entsprechende Eigenschaftsdatei über mehrere Datenwörterbuchelement-Definitionen verfügen. Zudem kann die Datei die Definitionen für einen oder mehrere Enum-Wertsätze enthalten.
+   In der Struktur der Eigenschaftsdatei ist jeweils eine Zeile für die Beschreibung und den Anzeigenamen des Datenwörterbuchs sowie jedes Datenwörterbuchelements im Datenwörterbuch definiert. Darüber hinaus ist in der Eigenschaftsdatei jeweils eine Zeile für einen Aufzählungswertsatz jedes Datenwörterbuchelements definiert. Wie ein Datenwörterbuch kann auch die entsprechende Eigenschaftsdatei über mehrere Datenwörterbuchelement-Definitionen verfügen. Zudem kann die Datei die Definitionen für einen oder mehrere Aufzählungswertsätze enthalten.
 
 1. Um die Eigenschaftsdatei in ein anderes Gebietsschema zu ändern, aktualisieren Sie Werte für den Anzeigenamen und die Beschreibung in der Datei. Erstellen Sie weitere Instanzen der Datei für jede Sprache, die Sie lokalisieren wollen. Nur Französisch, Deutsch, Japanisch und Englisch werden unterstützt.
 
@@ -580,13 +580,13 @@ Im folgenden Beispiel wird das Schema für eine Anmerkung gezeigt.
 
 ### Zuordnen von Collection-Elementen {#mapping-collection-elements}
 
-Ein Collection-Element wird nur einem anderen Collection-Element zugeordnet, das eine Kardinalität von > 1 aufweist.  Die untergeordneten DDEs eines Collection-DDE verfügen über eine relative (lokale) XML-Bindung in Bezug auf ihre übergeordnete XML-Bindung.  Da die untergeordneten DDEs eines Collection-Elements dieselbe Kardinalität wie das übergeordnete Element aufweisen müssen, ist die relative Bindung notwendig, um sicherzustellen, dass die Kardinalitätseinschränkungen derart sind, dass die untergeordneten DDEs nicht auf ein nicht wiederholtes XML-Schemaelement verweisen.  Im nachfolgenden Beispiel muss die Kardinalität von „TokenID“ dieselbe sein wie die von „Tokens“, dem übergeordneten Collection-DDE.
+Ein Collection-Element wird nur einem anderen Collection-Element zugeordnet, das eine Kardinalität von > 1 aufweist. Die untergeordneten DDEs eines Collection-DDE verfügen über eine relative (lokale) XML-Bindung in Bezug auf ihre übergeordnete XML-Bindung. Da die untergeordneten DDEs eines Collection-Elements dieselbe Kardinalität wie das übergeordnete Element aufweisen müssen, ist die relative Bindung notwendig, um sicherzustellen, dass die Kardinalitätseinschränkungen derart sind, dass die untergeordneten DDEs nicht auf ein nicht wiederholtes XML-Schemaelement verweisen. Im nachfolgenden Beispiel muss die Kardinalität von „TokenID“ dieselbe sein wie die von „Tokens“, dem übergeordneten Collection-DDE.
 
 Beim Zuordnen eines Collection DDE zu einem XML-Schema muss Folgendes beachtet werden:
 
 * Die Bindung für das DDE, das dem Collection-Element entspricht, muss der absolute XPfad sein
 
-* Es sollte keine Bindung für das DDE, das den Typ des Collection-Elements darstellt, angegeben werden.  Wenn eine Bindung angegeben wird, wird sie ignoriert.
+* Es sollte keine Bindung für das DDE, das den Typ des Collection-Elements darstellt, angegeben werden. Wenn eine Bindung angegeben wird, wird sie ignoriert.
 
 * Die Bindung für alle untergeordneten DDEs muss relativ zum übergeordneten Collection-Element sein.
 

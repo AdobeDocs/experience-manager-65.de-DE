@@ -9,8 +9,8 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
-source-wordcount: '4534'
-ht-degree: 100%
+source-wordcount: '4813'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Dieses Paket wurde für **AEM Forms 6.4 OSGI-Autor** erstellt. Es wurde getestet
 
 Dieses Paket enthält eine Cloud-Konfiguration, die die folgenden Plattformversionen unterstützt:
 
-| CLOUD-PROVIDER | SERVICE-VERSION | STATUS |
+| CLOUD-ANBIETER | SERVICE-VERSION | STATUS |
 |---|---|---|
 | Adobe Sign | v5-API | **Unterstützt** |
 | Microsoft® Dynamics 365 | 1710 (9.1.0.3020) | **Unterstützt** |
@@ -88,7 +88,7 @@ Dieser Abschnitt enthält Informationen zur Installation des Demopakets.
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** aus.
    2. Wählen Sie die Version aus und geben Sie sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
 1. Wählen Sie den Paketnamen **we-gov-forms.pkg.all-&lt;version>.zip**, dann **[!UICONTROL EULA-Bedingungen akzeptieren]** und schließlich **[!UICONTROL Herunterladen]** aus.
-1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
+1. Öffnen Sie den [Paket-Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
    ![WeGov-Formularpaket](assets/wegov_forms_package.jpg)
@@ -115,7 +115,7 @@ Dieser Abschnitt enthält Informationen zur Installation des Demopakets.
 
 ### Installieren neuer Paketversionen {#installing-new-package-versions}
 
-Um eine neue Paketversion zu installieren, führen Sie die unter 4.1 und 4.2 definierten Schritte aus. Es ist möglich, eine neuere Paketversion zu installieren, während bereits ein älteres Paket installiert ist. Es wird jedoch empfohlen, die ältere Paketversion zuerst zu deinstallieren. Gehen Sie dazu wie folgt vor.
+Um eine neue Paketversion zu installieren, führen Sie die in 4.1 und 4.2 definierten Schritte aus. Es ist möglich, eine neuere Paketversion zu installieren, während bereits ein älteres Paket installiert ist, es wird jedoch empfohlen, zuerst die ältere Paketversion zu deinstallieren. Gehen Sie dazu wie folgt vor.
 
 1. Navigieren Sie zu *https://&lt;aemserver>:&lt;port>/crx/packmgr/index.jsp*
 1. Suchen Sie die ältere Datei **we-gov-forms.pkg.all-&lt;version>.zip**.
@@ -225,14 +225,14 @@ Dieser Abschnitt enthält Details und Anweisungen zur MS® Dynamics-Cloud-Konfig
 
 **Verweise:**
 
-1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
+1. [Microsoft® Dynamics OData-Konfiguration](/help/forms/using/ms-dynamics-odata-configuration.md)
 1. [Konfigurieren von Microsoft® Dynamics für AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html?lang=de)
 
 #### MS® Dynamics OData-Cloud-Service {#ms-dynamics-odata-cloud-service}
 
 1. Gehen Sie zu:
 
-   https://&lt;aemserver>:&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://<aemserver>:<port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. Stellen Sie sicher, dass Sie auf den Server zugreifen, indem Sie dieselbe Umleitungs-URL verwenden, die in der Registrierung des MS® Dynamics-Programms konfiguriert wurde.
 
@@ -320,7 +320,7 @@ Sobald die Cloud-Konfiguration abgeschlossen ist, sollten Sie das Formulardatenm
 
    >[!NOTE]
    >
-   >Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+   > Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 #### Testen des Formulardatenmodells (Derby) {#test-fdm-derby}
 
@@ -480,13 +480,14 @@ Um AEM Forms mit dem Konvertierungs-Tool von Adobe Forms zu installieren und zu 
 
 Überprüfen Sie Folgendes, bevor Sie weitere Anweisungen lesen:
 
-* [Dienst zur automatischen Formularkonvertierung konfigurieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=de)
+* [Konfigurieren des Dienstes für die automatische Formularkonvertierung](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=de)
 
 #### Erstellen einer IMS-Konfiguration, Teil 1 {#creating-ims-config}
 
 Damit der Service ordnungsgemäß mit dem Konvertierungs-Tool für Formulare kommunizieren kann, müssen Benutzende den Identity Management-System(IMS)-Dienst konfigurieren, damit sie sich bei Adobe I/O registrieren können.
 
-1. Navigieren Sie zu https://&lt;aemserver>:&lt;port> und klicken Sie links oben auf „Adobe Experience Manager“ > „Tools“ > „Sicherheit“ > „Adobe IMS-Konfiguration“.
+1. Navigieren Sie zu https://&lt;aemserver>:&lt;port> und klicken Sie auf Adobe Experience
+Manager oben links > Tools > Sicherheit > Adobe IMS-Konfiguration.
 
 1. Klicken Sie auf „Erstellen“.
 
@@ -578,7 +579,7 @@ Sobald die IMS-Konfiguration abgeschlossen ist, können Sie die Cloud-Konfigurat
 
 1. Für diese Konfiguration haben wir die beiden Kontrollkästchenwerte leer gelassen.
 
-   * Weitere Informationen zu diesen Optionen finden Sie unter [Konfigurieren von Cloud Service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=de#configure-the-cloud-service).
+   * Weitere Informationen zu diesen Optionen finden Sie unter [Konfigurieren von Cloud-Service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=de#configure-the-cloud-service).
 
 #### Konfigurieren der Cloud-Konfiguration (We.Finance AFC Production) {#configure-cloud-configuration-wefinance}
 
@@ -652,7 +653,7 @@ Zum Service der automatischen Formularkonvertierung gehören bestimmte [Best Pra
 
 1. Erzeugen Sie das Formular mit der Option „Generieren Adaptiver Formulare ohne Datenbindung“, wenn Sie das Formular nach der Konvertierung an einen FDM binden möchten.
 
-1. Stellen Sie sicher, dass im Vorlagenordner die Berechtigung „jcr:read“ für alle aktiviert ist. Andernfalls können die Benutzenden des Services die Vorlage nicht aus dem Repository lesen, und die Konvertierung schlägt fehl.
+1. Stellen Sie sicher, dass im Vorlagenordner die Berechtigung „jcr:read für alle“ aktiviert ist. Andernfalls kann der Service-Benutzer die Vorlage nicht aus dem Repository lesen, und die Konvertierung schlägt fehl.
 
 ## Anpassung von Demopaketen {#demo-package-customizations}
 
@@ -751,7 +752,7 @@ Dieser Abschnitt enthält Informationen zu Demo-Funktionen und Design-Entscheidu
 ### Bekannte Probleme {#known-issues}
 
 * (AGRS-120) Die Site-Navigationskomponente unterstützt derzeit keine verschachtelten untergeordneten Seiten, die mehr als zwei Ebenen tief sind.
-* (AGRS-159) Der aktuelle MS® Dynamics-FDM muss zwei Vorgänge ausführen, um zunächst die Daten des adaptiven Anmeldungsformulars per POST an Dynamics zu senden und dann den Benutzerdatensatz abzurufen, um die Kontakt-ID zu erhalten. Im aktuellen Zustand schlägt das Abrufen der Kontakt-ID fehl, wenn in Dynamics mehr als zwei Benutzende mit dem gleichen Namen vorhanden sind, wodurch die Übermittlung des adaptiven Anmeldungsformulars nicht zugelassen wird.
+* (AGRS-159) Der aktuelle MS® Dynamics-FDM muss zwei Vorgänge ausführen, um zunächst die Daten des adaptiven Anmeldungsformulars per POST an Dynamics zu senden und dann den Benutzereintrag abzurufen, um die Kontakt-ID zu erhalten. Im aktuellen Zustand schlägt das Abrufen der Kontakt-ID fehl, wenn in Dynamics mehr als zwei Benutzende mit dem gleichen Namen vorhanden sind, wodurch die Übermittlung des adaptiven Anmeldungsformulars nicht zugelassen wird.
 
 ## Konfigurieren von Zugänglichkeitstests {#configure-accessibility-testing}
 
@@ -774,9 +775,9 @@ Wenn Benutzende diese exportieren möchten, können sie auf die drei Schaltfläc
 ### Ultramarine-Design {#ultramarine-theme}
 
 Das öffentlich verfügbare Ultramarine-Design, das von Adobe gepflegt wird, ist in die
-`we-gov-forms.pkg.all-<version>.zip` installierbare ZIP-Datei integriert. Sobald dieses Paket mit CRX installiert ist.
+`we-gov-forms.pkg.all-<version>.zip` installierbare ZIP-Datei Sobald dieses Paket mit CRX installiert ist.
 
-Package Manager, Anwender können auf das Ultramarine-Design in AEM Forms zugreifen, indem sie zu **Forms** > **Designs** > **Referenz-Designs** > **Ultramarine-zugänglich** navigieren.
+Paket-Manager, Anwender können auf das Ultramarine-Design in AEM Forms zugreifen, indem sie zu **Forms** > **Designs** > **Referenz-Designs** > **Ultramarine-zugänglich** navigieren.
 
 ![Ultramarine-Design](assets/aftia-ultramarine-theme.jpg)
 

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2190'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ Ein Layout bestimmt das grafische Layout eines Briefs/Druckkanals einer interakt
 
 Führen Sie die folgenden Schritte aus, um Layouts für Briefe/Druckkanäle der interaktiven Kommunikation zu erstellen:
 
-1. Prüfen Sie das Layout und legen Sie den Inhalt fest, der auf allen Seiten wiederholt wird. Normalerweise fallen Seitenkopf und -fußzeile in diese Kategorie. Dieser Inhalt wird auf Layout-Musterseiten hinterlegt. Der restliche Inhalt wird auf Layout-Hauptteilseiten übertragen. In einer Richtlinienhülle können das Logo und die Firmenadresse zur Kopf- und Fußzeile der Musterseite hinzugefügt werden. Dasselbe Layout wird z. B. von der Abbruchsmitteilung genutzt.
+1. Prüfen Sie das Layout und legen Sie den Inhalt fest, der auf allen Seiten wiederholt wird. Normalerweise fallen Seiten-Header und -Footer in diese Kategorie. Dieser Inhalt wird auf Layout-Musterseiten hinterlegt. Der restliche Inhalt wird auf Layout-Hauptteilseiten übertragen. In einer Richtlinienhülle können das Logo und die Firmenadresse zur Kopf- und Fußzeile der Musterseite hinzugefügt werden. Dasselbe Layout wird z. B. von der Abbruchsmitteilung genutzt.
 1. Unterteilen Sie beim Entwerfen von Hauptteilseiten den Seiteninhalt in Abschnitte. Jeder Abschnitt wird als Teilformular konzipiert, das in das Layout selbst oder als Fragment-Layout eingebettet wird. Wenn der Abschnitt eine Tabelle enthält, modellieren Sie ihn als Layout-Fragment.
 1. Ein Layout kann wie folgt gestaltet werden:
 
@@ -217,7 +217,7 @@ Verwenden Sie ein Feld, wenn Sie Moduldaten oder Datenlexikonelement-Daten in da
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td><p>Innerhalb des Teilformulars ist ein Textfeld vorhanden.  Das Teilformular kann an Größe zunehmen, ohne darunter angeordnete Layout-Objekte zu überschreiben.</p> </td>
+   <td><p>Innerhalb des Teilformulars ist ein Textfeld vorhanden. Das Teilformular kann an Größe zunehmen, ohne darunter angeordnete Layout-Objekte zu überschreiben.</p> </td>
    <td><p>Sie benötigen einen einfachen Zugriff auf die Daten im Nachbearbeitungsprozess.</p> </td>
   </tr>
  </tbody>
@@ -225,10 +225,10 @@ Verwenden Sie ein Feld, wenn Sie Moduldaten oder Datenlexikonelement-Daten in da
 
 ## Einrichten sich wiederholender Elemente {#setting-up-repetitive-elements}
 
-Wenn Elemente wie das Logo und die Adresse Ihres Unternehmens auf allen Seiten eines Briefs/einer interaktiven Kommunikation angezeigt werden, erstellen Sie Formularfelder für diese Elemente und platzieren Sie diese auf der primären Seite.  Nehmen Sie die Bindung für diese Felder über den Feldnamen vor.
+Wenn Elemente wie das Logo und die Adresse Ihres Unternehmens auf allen Seiten eines Briefs/einer interaktiven Kommunikation angezeigt werden, erstellen Sie Formularfelder für diese Elemente und platzieren Sie diese auf der primären Seite. Nehmen Sie die Bindung für diese Felder über den Feldnamen vor.
 
 ## Festlegen des Server-Render-Formats {#specify-the-server-nbsp-render-format}
 
-Verwenden Sie das Server-Render-Format des Layouts für das dynamische XML-Formular. Andernfalls können Briefe/interaktive Kommunikation, die auf diesem Layout basieren, nicht korrekt gerendert werden.  Das Server-Renderformat ist in Forms Designer standardmäßig auf das dynamische XML-Formular eingestellt. Sicherstellen, dass das richtige Format verwendet wird:
+Verwenden Sie das Server-Render-Format des Layouts für das dynamische XML-Formular. Andernfalls können Briefe/interaktive Kommunikation, die auf diesem Layout basieren, nicht korrekt gerendert werden. Das Server-Renderformat ist in Forms Designer standardmäßig auf das dynamische XML-Formular eingestellt. Sicherstellen, dass das richtige Format verwendet wird:
 
 * Klicken Sie in Designer auf **Datei** > **Formulareigenschaften** > **Standard**, und vergewissern Sie sich, dass „PDF-Wiedergabeformat“ auf „Dynamisches XML-Formular“ eingestellt ist.
