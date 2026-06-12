@@ -958,7 +958,7 @@ Wenn Daten in einem bestimmten Format eingegeben werden müssen, sollten Sie die
 
 Wenn die Eingabe für ein Formularfeld obligatorisch ist, machen Sie dies deutlich, indem Sie das erforderliche Wort als Teil der Bezeichnung verwenden. AEM fügt ein Sternchen hinzu, wenn ein Feld erforderlich ist. Idealerweise sollte jedoch das Wort `required` (erforderlich) direkt in die Beschriftung eingefügt werden (im Feld **Titel** im Bearbeitungsdialogfeld).
 
-![ Hinzufügen zusätzlicher Informationen (das Wort „erforderlich“) für Menschen, die eine Bildschirmlesehilfe nutzen, im Feld „Titel“ ](assets/chlimage_1-25a.png)
+![&#x200B; Hinzufügen zusätzlicher Informationen (das Wort „erforderlich“) für Menschen, die eine Bildschirmlesehilfe nutzen, im Feld „Titel“ &#x200B;](assets/chlimage_1-25a.png)
 
 Die Positionierung von Kennzeichnungen ist ebenfalls wichtig, da sie beim Suchen nach geeigneten Feldern hilft. Dies ist besonders wichtig, wenn die Person mit einem komplexen Formular konfrontiert ist. Befolgen Sie die nachstehende Konvention:
 

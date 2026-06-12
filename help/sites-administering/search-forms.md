@@ -394,7 +394,7 @@ Wenn diese Option aktiviert ist, werden die Optionen als Kontrollkästchen geren
 * **Eigenschaftsnamen der Veröffentlichung und Live Copy**
 Die Beschriftungen für die Kontrollkästchen „Veröffentlichen“ und „Live Copy“ für die Website-spezifischen Eigenschaften.
 
-* Der Asterisk (&amp;ast;) bei den Feldbezeichnungen auf der Registerkarte **Einstellungen** bedeutet, dass die Felder Pflichtfelder sind. Wird er leer gelassen, wird eine Fehlermeldung angezeigt.
+* Der Asterisk (&ast;) bei den Feldbezeichnungen auf der Registerkarte **Einstellungen** bedeutet, dass die Felder Pflichtfelder sind. Wird er leer gelassen, wird eine Fehlermeldung angezeigt.
 
 ## Konfigurieren Ihrer Suchformulare {#configuring-your-search-forms}
 
@@ -493,7 +493,7 @@ Das folgende Beispiel (für die Suche nach der Vorlage, mit der eine Seite erste
    * `jcr:title` – die Feldbezeichnung, die in der Suchschiene angezeigt werden soll
    * `value` – der Eigenschaftswert, nach dem gesucht werden soll
 
-   ![ Hinzufügen von Optionen in CRXDE](assets/chlimage_1-379.png)
+   ![&#x200B; Hinzufügen von Optionen in CRXDE](assets/chlimage_1-379.png)
 
    >[!NOTE]
    >
