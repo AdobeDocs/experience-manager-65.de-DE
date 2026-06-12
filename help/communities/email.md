@@ -12,7 +12,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '846'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ Die E-Mail-Funktion ist standardmäßig nicht funktionsfähig, da sie die Angabe
 
 >[!CAUTION]
 >
->E-Mails für Benachrichtigungen und Abonnements dürfen nur auf dem [primären Herausgeber“ konfiguriert &#x200B;](deploy-communities.md#primary-publisher).
+>E-Mails für Benachrichtigungen und Abonnements dürfen nur auf dem [primären Herausgeber“ konfiguriert ](deploy-communities.md#primary-publisher).
 
 ## Standardkonfiguration für den E-Mail-Dienst {#default-mail-service-configuration}
 
@@ -182,11 +182,11 @@ Damit die E-Mail in das Repository importiert werden kann, muss ein Abruf-Import
 
 * **[!UICONTROL URL]**
 
-  *(Erforderlich)* Der Postausgangsserver. Zum Beispiel: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=**&#x200B;**`.
+  *(Erforderlich)* Der Postausgangsserver. Zum Beispiel: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
-* **[!UICONTROL In Pfad importieren]**&ast;
+* **[!UICONTROL In Pfad importieren]***
 
-  *(Erforderlich)* Auf `/content/usergenerated/mailFolder/postEmails` festgelegt
+  *(Erforderlich)* festgelegt auf `/content/usergenerated/mailFolder/postEmails`
 Navigieren Sie zum Ordner `postEmails` und wählen Sie **OK** aus.
 
 * **[!UICONTROL Aktualisierungsintervall in Sekunden]**

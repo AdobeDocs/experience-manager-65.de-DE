@@ -8,8 +8,8 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 100%
+source-wordcount: '757'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ Das Onboarding für AEM Content and Commerce erfolgt in zwei Schritten:
 
 1. Installieren des AEM Content and Commerce-Add-Ons für AEM 6.5
 
-2. Verbinden von AEM mit Ihrem E-Commerce-System
+2. Verbinden von AEM mit Ihrer Lösung für den Handel
 
 ### Installieren des AEM Content and Commerce-Add-Ons für AEM 6.5 {#install-add-on}
 
@@ -81,7 +81,7 @@ Die folgenden Eigenschaften können konfiguriert werden:
 
   >[!NOTE]
   >
-  >Die Unterstützung für UIDs wurde in Adobe Commerce 2.4.2 eingeführt. Aktivieren Sie diese nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
+  >Die Unterstützung für UIDs wurde in Adobe Commerce 2.4.2 eingeführt. Aktivieren Sie diese Option nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
 
 - Kennung der Stammkategorie des Katalogs – die Kennung (UID oder ID) des Stammverzeichnisses des Shops
 
@@ -96,5 +96,5 @@ Komplexere Setups mit mehreren AEM-Website-Strukturen in Kombination mit verschi
 ## Zusätzliche Ressourcen {#additional-resources}
 
 - [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype)
-- [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
+- [AEM Venia-Referenz-Store](https://github.com/adobe/aem-cif-guides-venia)
 - [Multi-Store-Einrichtung in Commerce](configuring/multi-store-setup.md)

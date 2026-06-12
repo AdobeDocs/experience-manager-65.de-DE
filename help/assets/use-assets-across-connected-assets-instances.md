@@ -10,8 +10,8 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '4019'
-ht-degree: 99%
+source-wordcount: '3999'
+ht-degree: 98%
 
 ---
 
@@ -162,8 +162,8 @@ Verwenden von [!DNL Dynamic Media] mit Connected Assets:
 
 So konfigurieren Sie [!DNL Dynamic Media] in [!DNL Assets]- und [!DNL Sites]-Bereitstellungen:
 
-1. Aktivieren und konfigurieren Sie [!DNL Dynamic Media] als globale Konfiguration auf der Remote-Bereitstellung der Autoreninstanz [!DNL Assets]. Informationen zum Konfigurieren von Dynamic Media finden Sie unter [Konfigurieren von Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
-Wählen Sie in der Remote-Bereitstellung von [!DNL Assets] im Modus [!UICONTROL Dynamic Media-Synchronisation] die Option **[!UICONTROL Standardmäßig aktiviert]** aus.
+1. Aktivieren und konfigurieren Sie [!DNL Dynamic Media] als globale Konfiguration auf der Remote-Bereitstellung der [!DNL Assets]-Autoreninstanz. Informationen zum Konfigurieren von Dynamic Media finden Sie [Konfigurieren von Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
+Wählen Sie in der Remote-[!DNL Assets]-Bereitstellung [!UICONTROL Synchronisierungsmodus für Dynamic ]) **[!UICONTROL Standardmäßig aktiviert]** aus.
 
 1. Erstellen Sie die Konfiguration für Connected Assets wie unter [Konfigurieren der Verbindung zwischen Websites und Asset-Bereitstellungen](#configure-a-connection-between-sites-and-assets-deployments) beschrieben. Wählen Sie außerdem die Option **[!UICONTROL Abrufen der ursprünglichen Ausgabedarstellung für Dynamic Media Connected Assets]**.
 

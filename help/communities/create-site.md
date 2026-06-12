@@ -12,8 +12,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 1%
+source-wordcount: '1624'
+ht-degree: 2%
 
 ---
 
@@ -38,7 +38,7 @@ So erstellen Sie eine Community-Site:
 
 ![Vorlage zum Erstellen der Site](assets/create-site.png)
 
-Geben Sie [&#x200B; Schritt „Site-](/help/communities/sites-console.md#step2013asitetemplate)&quot; einen Titel, eine Beschreibung und den Namen für die URL ein und wählen Sie eine Community-Site-Vorlage aus, z. B.:
+Geben Sie [ Schritt „Site-](/help/communities/sites-console.md#step2013asitetemplate)&quot; einen Titel, eine Beschreibung und den Namen für die URL ein und wählen Sie eine Community-Site-Vorlage aus, z. B.:
 
 * **Community-Site-Titel**: `Getting Started Tutorial`
 * **Community-Site-Beschreibung**: `A site for engaging with the community.`
@@ -51,7 +51,7 @@ Geben Sie [&#x200B; Schritt „Site-](/help/communities/sites-console.md#step201
    * Überprüfen Sie den Namen , da er nach der Erstellung der Site nicht einfach geändert werden kann
    * Die anfängliche URL wird unter dem Namen der Community-Site angezeigt
    * Hängen Sie für eine gültige URL einen Basissprachcode + &quot;.html“ an
-   * *Beispiel*, https://localhost:4502/content/sites/ `engage/en.html`
+   * *Beispiel:* https://localhost:4502/content/sites/ `engage/en.html`
 
 * **Vorlage**: Pulldown zur Auswahl von `Reference Site`
 
@@ -86,12 +86,12 @@ Aktivieren Sie alle Kontrollkästchen für [Benutzerverwaltung](/help/communitie
 * So erlauben Sie Besuchenden der Website die Selbstregistrierung
 * So können Besuchende der Site die Site anzeigen, ohne sich anzumelden
 * So können Mitglieder Nachrichten von anderen Community-Mitgliedern senden und empfangen
-* So lassen Sie die Anmeldung bei Facebook zu, anstatt ein Profil zu registrieren und zu erstellen
-* So lassen Sie die Anmeldung mit Twitter zu, anstatt ein Profil zu registrieren und zu erstellen
+* So lassen Sie die Anmeldung bei Facebook zu, anstatt sich zu registrieren und ein Profil zu erstellen
+* So lassen Sie die Anmeldung mit Twitter zu, anstatt sich zu registrieren und ein Profil zu erstellen
 
 >[!NOTE]
 >
->Für eine Produktionsumgebung ist es erforderlich, benutzerdefinierte Facebook- und Twitter-Anwendungen zu erstellen. Siehe [Social-Anmeldung mit Facebook und Twitter](/help/communities/social-login.md).
+>Für eine Produktionsumgebung müssen benutzerdefinierte Facebook- und Twitter-Anwendungen erstellt werden. Siehe [Social-Anmeldung mit Facebook und Twitter](/help/communities/social-login.md).
 
 ![Community-Site-Einstellungen](assets/site-settings.png)
 
@@ -119,7 +119,7 @@ Zum Beispiel:
 
 >[!NOTE]
 >
->[Tunneldienst](https://helpx.adobe.com/de/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) Ermöglicht die Auswahl von Mitgliedern und Gruppen, die nur in der Veröffentlichungsumgebung vorhanden sind.
+>[Tunneldienst](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) Ermöglicht die Auswahl von Mitgliedern und Gruppen, die nur in der Veröffentlichungsumgebung vorhanden sind.
 
 ![Benutzerrollen auf neuer Site](assets/site-admin-1.png)
 
@@ -160,7 +160,7 @@ Wenn der Vorgang abgeschlossen ist, wird der Ordner für die neue Site in der Co
 
 ![CommunitiesSitesConsole](assets/communitiessitesconsole.png)
 
-## Publish - die Community-Site {#publish-the-community-site}
+## Veröffentlichen der Community-Site {#publish-the-community-site}
 
 Die erstellte Site sollte über die Communities - Sites -Konsole verwaltet werden, über dieselbe Konsole, über die auch neue Sites erstellt werden können.
 
@@ -182,13 +182,13 @@ Von links nach rechts sind sie:
 
   Wenn Sie das Eigenschaftensymbol auswählen, wird die Community-Site zur Bearbeitung von Eigenschaften wie dem Titel oder zum Ändern des Designs geöffnet.
 
-* **Publish-Site**
+* **Website veröffentlichen**
 
-  Wenn Sie das Welt -Symbol auswählen, wird die Community-Site veröffentlicht (z. B. wenn Ihr Veröffentlichungs-Server auf Ihrem lokalen Computer ausgeführt wird, dann standardmäßig auf localhost:4503).
+  Wenn Sie das Welt -Symbol auswählen, wird die Community-Site veröffentlicht (z. B. wenn Ihr Veröffentlichungs-Server auf Ihrem lokalen Computer ausgeführt wird, :4503 standardmäßig auf localhost ).
 
 * **Website exportieren**
 
-  Durch Auswahl des Symbols „Exportieren“ wird ein Paket der Community-Site erstellt, das sowohl im [Package Manager“ gespeichert &#x200B;](/help/sites-administering/package-manager.md) heruntergeladen wird. UGC ist nicht im Site-Paket enthalten.
+  Durch Auswahl des Symbols „Exportieren“ wird ein Paket der Community-Site erstellt, das sowohl im [Package Manager“ gespeichert ](/help/sites-administering/package-manager.md) heruntergeladen wird. UGC ist nicht im Site-Paket enthalten.
 
 * **Site löschen**
 
@@ -211,7 +211,7 @@ Von links nach rechts sind sie:
 >1. Wählen Sie **[!UICONTROL OK]** aus.
 >1. (Optional) Wählen Sie **[!UICONTROL Löschen]** oder **[!UICONTROL Wiederholen erzwingen]**, um die Replikationswarteschlange zurückzusetzen.
 
-### Publish auswählen {#select-publish}
+### Veröffentlichen auswählen {#select-publish}
 
 Nachdem Sie sichergestellt haben, dass der Veröffentlichungsserver ausgeführt wird, wählen Sie das Symbol Welt aus, um die Community-Site zu veröffentlichen.
 
@@ -223,7 +223,7 @@ Wenn die Community-Site erfolgreich veröffentlicht wurde, wird kurz die Meldung
 
 Neben der neuen Community-Site werden neue Benutzergruppen erstellt, die über die entsprechenden Berechtigungen für verschiedene Verwaltungsfunktionen verfügen. Weitere Informationen finden Sie unter [Benutzergruppen für Community-Sites](/help/communities/users.md#usergroupsforcommunitysites).
 
-Für diese neue Community-Site werden unter dem Site-Namen „engage“ in Schritt 1 die vier neuen Benutzergruppen in der [Gruppen-Konsole“ angezeigt &#x200B;](/help/communities/members.md)globale Navigation: Communities, Gruppen):
+Für diese neue Community-Site werden unter dem Site-Namen „engage“ in Schritt 1 die vier neuen Benutzergruppen in der [Gruppen-Konsole“ angezeigt ](/help/communities/members.md)globale Navigation: Communities, Gruppen):
 
 * Community-Manager einbinden
 * Community Engage-Gruppenadministratoren
@@ -272,7 +272,7 @@ Erste Schritte:
       * **Name** localhost.4503
 (*verwenden* &#39;:&#39;)
 
-      * **type** [sling:mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+      * **Typ** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. Bei ausgewähltem neu erstellten `localhost.4503`-Knoten:
 
@@ -291,9 +291,9 @@ Erste Schritte:
 
 1. Wählen Sie **Alle speichern.**
 1. (Optional) Löschen des Navigationsverlaufs.
-1. Navigieren Sie zu https://localhost:4503/ .
+1. Navigieren Sie zu https://localhost:4503/.
 
-   * Ankunft bei https://localhost:4503/content/sites/engage/en.html
+   * Ankunft unter https://localhost:4503/content/sites/engage/en.html
 
 >[!NOTE]
 >
@@ -309,7 +309,7 @@ Wenn Änderungen nicht gespeichert werden können, stellen Sie sicher, dass der 
 
 #### Fehlerbehebung: Weiterleitung fehlgeschlagen {#troubleshooting-fail-to-redirect}
 
-Das &quot;**$**&quot; am Ende des regulären Ausdrucks (`sling:match`) ist wichtig, damit nur `https://localhost:4503/` zugeordnet wird. Andernfalls wird der Umleitungswert jedem Pfad vorangestellt, der möglicherweise nach dem „server:port“-Eintrag in der URL vorhanden ist. Wenn AEM versucht, zur Anmeldeseite umzuleiten, schlägt dies fehl.
+Das &quot;**$**&quot; am Ende des regulären Ausdrucks (`sling:match`) ist wichtig, damit nur `https://localhost:4503/` zugeordnet wird. Andernfalls wird der Umleitungswert jedem Pfad vorangestellt, der möglicherweise nach dem Server in :port URL vorhanden ist. Wenn AEM versucht, zur Anmeldeseite umzuleiten, schlägt dies fehl.
 
 ### Ändern der Site {#modify-the-site}
 
@@ -317,7 +317,7 @@ Nachdem die Site anfänglich erstellt wurde, können Autorinnen und Autoren das 
 
 Darüber hinaus können Admins das Symbol [Site bearbeiten](/help/communities/sites-console.md#modifying-site-properties) verwenden, um Eigenschaften der Site zu ändern, z. B. den Titel.
 
-Denken Sie nach jeder Änderung daran **die Website zu** und erneut **&#x200B;**&#x200B;Publish.
+Denken Sie nach jeder Änderung daran **die Site zu** und erneut **veröffentlichen**.
 
 >[!NOTE]
 >

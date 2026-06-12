@@ -25,7 +25,7 @@ Die Absicht [Überlagerung](/help/communities/client-customize.md#overlays) eine
 
 **Komponente „Kommentare überlagern“**
 
-Angenommen, Sie möchten die Kommentarfunktion so ändern, dass sie dem Design Ihrer Website entspricht, indem Sie die Kopfzeile des Kommentars ändern, sodass der Avatar für keinen Kommentar mehr angezeigt wird. Die Lösungen zum Ausblenden des Avatars verwenden entweder CSS oder überlagern, wie hier beschrieben, die Datei header.jsp im Anwendungsordner, sodass die HTML mit dem Avatar nie an den Client gesendet wird.
+Angenommen, Sie möchten die Kommentarfunktion so ändern, dass sie dem Design Ihrer Website entspricht, indem Sie die Kopfzeile des Kommentars ändern, sodass der Avatar für keinen Kommentar mehr angezeigt wird. Die Lösungen zum Ausblenden des Avatars verwenden entweder CSS oder überlagern, wie hier beschrieben, die Datei header.jsp im Programmordner, sodass die HTML, die den Avatar enthält, nie an den Client gesendet wird.
 
 Um Kommentare zu überlagern, müssen Sie:
 
@@ -35,9 +35,9 @@ Um Kommentare zu überlagern, müssen Sie:
 
 **Überlagern von Benachrichtigungs-E-Mails**
 
-Angenommen, Sie möchten die Nachricht von E-Mail-Benachrichtigungen anpassen. Sie können dies tun, indem Sie [&#x200B; Vorlagen unter `/libs/settings/community/templates/email/html` &#x200B;](/help/communities/client-customize.md#overlays).
+Angenommen, Sie möchten die Nachricht von E-Mail-Benachrichtigungen anpassen. Sie können dies tun, indem Sie [ Vorlagen unter `/libs/settings/community/templates/email/html` ](/help/communities/client-customize.md#overlays).
 
-Angenommen, Sie möchten die Erwähnungen und E-Mail-Benachrichtigungen bearbeiten (für eine bestimmte Communities-Komponente, bei der benutzergenerierter Inhalt erstellt wird). Fügen Sie in solchen Fällen eine Wenn **&#x200B;**-Bedingung für **Erwähnung** in den Vorlagen der Komponenten hinzu, für die Sie die **@mentions**-Unterstützung aktiviert haben.
+Angenommen, Sie möchten die Erwähnungen und E-Mail-Benachrichtigungen bearbeiten (für eine bestimmte Communities-Komponente, bei der benutzergenerierter Inhalt erstellt wird). Fügen Sie in solchen Fällen eine Wenn ****-Bedingung für **Erwähnung** in den Vorlagen der Komponenten hinzu, für die Sie die **@mentions**-Unterstützung aktiviert haben.
 
 ```java
 {{#equals this.verb "mention"}}\

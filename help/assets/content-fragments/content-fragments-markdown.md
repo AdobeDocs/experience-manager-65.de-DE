@@ -6,9 +6,9 @@ role: User
 exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 2809ae0f2c712ce8e6d94e18211649f2fa6ab8b4
-workflow-type: ht
-source-wordcount: '522'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 96%
 
 ---
 
@@ -130,7 +130,7 @@ Sie können verschachtelte Blockzitate nutzen. Beispiel:
 
 Sie können sowohl sortierte als auch unsortierte Listen erstellen
 
-Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den Elementen in der Liste. Beispiel:
+Um eine ungeordnete Liste zu erstellen, verwenden Sie das Symbol &quot;*&quot; vor den Elementen in der Liste. Beispiel:
 
     `* item in list`
 

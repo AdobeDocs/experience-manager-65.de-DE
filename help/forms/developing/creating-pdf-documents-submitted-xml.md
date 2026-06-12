@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1334'
 ht-degree: 100%
 
 ---
@@ -54,7 +54,7 @@ Um ein nicht interaktives PDF-Dokument mit gesendeten XML-Daten zu erstellen und
 1. Erstellen Sie mithilfe des Ausgabe-Services ein nicht interaktives PDF-Dokument.
 1. Speichern Sie das PDF-Formular mithilfe des Document Management-Services in Content Services (veraltet).
 
-**Projektdateien einbeziehen**
+**Einschließen von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -99,18 +99,18 @@ So erstellen Sie mithilfe der Forms-, Ausgabe- und Document Management-API (Java
 
 1. Abrufen von Formulardaten mithilfe des Forms-Services
 
-   * Rufen Sie die Methode `processFormSubmission` des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
+   * Rufen Sie die `processFormSubmission`-Methode des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
       * Das `com.adobe.idp.Document`-Objekt, das die Formulardaten enthält.
       * Ein Zeichenfolgenwert, der Umgebungsvariablen angibt, einschließlich aller relevanten HTTP-Kopfzeilen. Geben Sie den zu verarbeitenden Inhaltstyp an, indem Sie einen oder mehrere Werte für die Umgebungsvariable `CONTENT_TYPE` angeben. Um beispielsweise XML-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=text/xml`.
       * Ein Zeichenfolgenwert, der den Wert der `HTTP_USER_AGENT`-Kopfzeile angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * A `RenderOptionsSpec` -Objekt, das Laufzeitoptionen speichert.
+      * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen speichert.
 
      Die `processFormSubmission`-Methode gibt ein `FormsResult`-Objekt aus, das die Ergebnisse der Formularübermittlung enthält.
 
    * Stellen Sie fest, ob der Forms-Dienst die Verarbeitung der Formulardaten abgeschlossen hat, indem Sie die `getAction`-Methode des `FormsResult`-Objekts aufrufen. Wenn diese Methode den Wert `0` zurückgibt, können die Daten verarbeitet werden.
    * Abrufen von Formulardaten durch Erstellen eines `com.adobe.idp.Document`-Objekts durch Aufrufen der `getOutputContent`-Methode des `FormsResult`-Objekts. (Dieses Objekt enthält Formulardaten, die an den Output-Dienst gesendet werden können.)
-   * Erstellen Sie ein `java.io.InputStream`-Objekt durch Aufrufen des `java.io.DataInputStream`-Konstruktor und Übergabe des `com.adobe.idp.Document`-Objekts.
+   * Erstellen Sie ein `java.io.InputStream`-Objekt, indem Sie den `java.io.DataInputStream`-Konstruktor aufrufen und das `com.adobe.idp.Document`-Objekt übergeben.
    * Erstellen Sie ein `org.w3c.dom.DocumentBuilderFactory`-Objekt, indem Sie die `newInstance`-Methode des statischen `org.w3c.dom.DocumentBuilderFactory`-Objekts aufrufen.
    * Erstellen Sie ein `org.w3c.dom.DocumentBuilder`-Objekt, indem Sie die `newDocumentBuilder`-Methode des `org.w3c.dom.DocumentBuilderFactory`-Objekts aufrufen.
    * Erstellen Sie ein `org.w3c.dom.Document`-Objekt, indem Sie die `parse`-Methode des `org.w3c.dom.DocumentBuilder`-Objekts aufrufen und das `java.io.InputStream`-Objekt übergeben.
@@ -120,12 +120,12 @@ So erstellen Sie mithilfe der Forms-, Ausgabe- und Document Management-API (Java
 
    Erstellen Sie ein PDF-Dokument, indem Sie die Methode `generatePDFOutput` des Objekts `OutputClient` aufrufen und die folgenden Werte weitergeben:
 
-   * Ein `TransformationFormat` Aufzählungs-Wert. Um ein PDF-Dokument zu generieren, legen Sie `TransformationFormat.PDF` fest.
+   * Einen `TransformationFormat` Aufzählungswert. Um ein PDF-Dokument zu generieren, geben Sie `TransformationFormat.PDF` an.
    * Ein string-Wert, der den Namen des Formularentwurfs angibt. Stellen Sie sicher, dass der Formularentwurf mit den vom Forms-Dienst abgerufenen Formulardaten kompatibel ist.
    * Ein Zeichenfolgenwert, der den Inhaltsstamm angibt, in dem sich der Formularentwurf befindet.
    * Ein `PDFOutputOptionsSpec`-Objekt, das PDF-Laufzeitoptionen enthält.
    * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen zum Rendern enthält.
-   * Das `com.adobe.idp.Document`-Objekt, das die XML-Datenquelle enthält, die Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen. Stellen Sie sicher, dass dieses Objekt von der Methode `getOutputContent` des Objekts `FormsResult` zurückgegeben wurde.
+   * Das `com.adobe.idp.Document`-Objekt, das die XML-Datenquelle mit den Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen. Stellen Sie sicher, dass dieses Objekt von der Methode `getOutputContent` des Objekts `FormsResult` zurückgegeben wurde.
    * Die `generatePDFOutput`-Methode gibt ein Objekt `OutputResult` zurück, das das Ergebnis der Authentifizierung enthält.
    * Rufen Sie das nicht interaktive PDF-Dokument ab, indem Sie die Methode `getGeneratedDoc` des Objekts `OutputResult` aufrufen. Diese Methode gibt eine `com.adobe.idp.Document`-Instanz zurück, die das nicht interaktive PDF-Dokument darstellt.
 
@@ -139,7 +139,7 @@ So erstellen Sie mithilfe der Forms-, Ausgabe- und Document Management-API (Java
    * Ein Zeichenfolge-Wert, der den Knotentyp angibt. Um neuen Inhalt hinzuzufügen, z. B. eine PDF-Datei, legen Sie `{https://www.alfresco.org/model/content/1.0}content` fest. Dieser Wert ist ein obligatorischer Parameter.
    * Ein `com.adobe.idp.Document`-Objekt, das den Inhalt darstellt. Dieser Wert ist ein obligatorischer Parameter.
    * Ein Zeichenfolge-Wert, der den Kodierungswert angibt (z. B. `UTF-8`). Dieser Wert ist ein obligatorischer Parameter.
-   * Ein `UpdateVersionType`-Auflistungs-Wert, der angibt, wie Versionsinformationen verarbeitet werden (z. B. `UpdateVersionType.INCREMENT_MAJOR_VERSION`, um die Inhaltsversion zu erhöhen. ) Dieser Wert ist ein obligatorischer Parameter.
+   * Ein `UpdateVersionType`-Aufzählungs-Wert, der angibt, wie Versionsinformationen verarbeitet werden (z. B. `UpdateVersionType.INCREMENT_MAJOR_VERSION`, um die Inhaltsversion zu erhöhen. ) Dieser Wert ist ein obligatorischer Parameter.
    * Eine `java.util.List`-Instanz, die die mit dem Inhalt zusammenhängenden Aspekte angibt. Dieser Wert ist ein optionaler Parameter, und Sie können `null` festlegen.
    * Ein `java.util.Map`-Objekt, das Inhaltsattribute speichert.
 
