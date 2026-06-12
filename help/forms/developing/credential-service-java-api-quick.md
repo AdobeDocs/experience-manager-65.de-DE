@@ -1,6 +1,6 @@
 ---
-title: Java™-API-Schnellstart (SOAP) für den Berechtigungs-Service
-description: Erfahren Sie, wie Sie mithilfe des Java™-API-Schnellstarts (SOAP) Anmeldeinformationen in AEM Forms importieren und löschen können.
+title: Credential-Dienst Java&trade; API-Schnellstart(SOAP)
+description: Erfahren Sie, wie Sie Anmeldeinformationen mithilfe der Java&trade;-API-Kurzanleitung (SOAP) in AEM Forms importieren und löschen.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 100%
+source-wordcount: '233'
+ht-degree: 89%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 100%
 
 Der Java™-API-Schnellstart (SOAP) ist für den Berechtigungs-Service verfügbar.
 
-[Schnellstart (SOAP-Modus): Importieren von Anmeldedaten mithilfe der Java-API](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[Schnellstart (SOAP-Modus): Importieren von Anmeldedaten mithilfe der Java™-API](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Löschen von Anmeldedaten mithilfe der Java-API](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Schnellstart (SOAP-Modus): Löschen von Anmeldedaten mithilfe der Java™-API](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 

@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 100%
+source-wordcount: '1076'
+ht-degree: 98%
 
 ---
 
@@ -181,7 +181,7 @@ Das folgende Java-Codebeispiel erstellt eine neue Richtlinie mit dem Namen *Kopi
 
 ## Schnellstart (SOAP-Modus): Ändern einer Richtlinie mit der Java-API {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
 
-Das folgende Java-Codebeispiel ändert eine Richtlinie mit dem Namen *Kopieren zulassen*, indem es die Offline-Leasingdauer auf 40 Tage festlegt. (Siehe [Ändern von Richtlinien](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
+Das folgende Java-Code-Beispiel ändert eine Richtlinie mit dem Namen *Kopieren zulassen*, indem es die Offline-Nutzungsdauer auf 40 Tage festlegt. (Siehe [Ändern von Richtlinien](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
 
 ```java
  /*
@@ -701,7 +701,7 @@ Das folgende Java-Codebeispiel hebt ein richtliniengeschütztes Dokument mit dem
 
 ## Schnellstart (SOAP-Modus): Überprüfung richtliniengeschützter PDF-Dokumente mit der Java-API {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
 
-Das folgende Java-Codebeispiel überprüft ein richtliniengeschütztes PDF-Dokument mit dem Namen *PolicyProtectedLoanDoc.pdf*. (Siehe [Überprüfen von richtliniengeschützten PDF-Dokumenten](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).)
+Das folgende Java-Codebeispiel überprüft ein richtliniengeschütztes PDF-Dokument mit dem Namen *PolicyProtectedLoanDoc.pd* f. (Siehe [Überprüfen von richtliniengeschützten PDF-Dokumenten](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).)
 
 ```java
  /*
