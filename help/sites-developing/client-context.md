@@ -492,7 +492,7 @@ Erstellen Sie eine CQ-Anwendung und fügen Sie die Geoloc-Komponente hinzu.
 
 1. https://localhost Öffnen Sie CRXDE Lite in Ihrem Webbrowser ([:4502/crx/de](https://localhost:4502/crx/de)).
 1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps` und klicken Sie auf „Erstellen“ > „Ordner erstellen“. Geben Sie für `myapp` einen Namen ein und klicken Sie auf „OK“.
-1. Erstellen Sie auch unter `myapp` einen Ordner mit dem Namen `contextstores`. ``
+1. Erstellen Sie auch unter `myapp` einen Ordner mit dem Namen `contextstores`. &grave;&grave;
 1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps/myapp/contextstores` und klicken Sie auf „Erstellen“ > „Komponente erstellen“. Geben Sie folgende Eigenschaftswerte an und klicken Sie auf „Weiter“:
 
    * Titel: Geoloc
