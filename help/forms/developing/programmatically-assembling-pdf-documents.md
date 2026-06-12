@@ -1,6 +1,6 @@
 ---
 title: Programmatisches Zusammenstellen von PDF-Dokumenten
-description: Verwenden Sie die Assembler Service-API, um mithilfe der Java-API und der Webservice-API mehrere PDF-Dokumente in einem PDF-Dokument zusammenzuführen.
+description: Verwenden Sie die Assembler-Dienst-API, um mithilfe der Java-API und der Webservice-API mehrere PDF-Dokumente in einem PDF-Dokument zusammenzuführen.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2105'
+source-wordcount: '2139'
 ht-degree: 100%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 100%
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
 
-Sie können die Assembler Service-API verwenden, um mehrere PDF-Dokumente in einem PDF-Dokument zusammenzuführen. Die folgende Abbildung zeigt, wie drei PDF-Dokumente in ein einziges PDF-Dokument zusammengeführt werden.
+Sie können die Assembler-Dienst-API verwenden, um mehrere PDF-Dokumente in einem PDF-Dokument zusammenzuführen. Die folgende Abbildung zeigt, wie drei PDF-Dokumente in ein einziges PDF-Dokument zusammengeführt werden.
 
 ![pa_pa_document_assembly](assets/pa_pa_document_assembly.png)
 
-Zum Zusammenführen von zwei oder mehr PDF-Dokumenten in ein PDF-Dokument benötigen Sie ein DDX-Dokument. Ein DDX-Dokument beschreibt das PDF-Dokument, das der Assembler-Service erzeugt. Das heißt, das DDX-Dokument erteilt dem Assembler-Service Anweisungen, welche Aktionen er durchführen soll.
+Zum Zusammenführen von zwei oder mehr PDF-Dokumenten in ein PDF-Dokument benötigen Sie ein DDX-Dokument. Ein DDX-Dokument beschreibt das PDF-Dokument, das der Assembler-Dienst erzeugt. Das heißt, das DDX-Dokument erteilt dem Assembler-Dienst Anweisungen, welche Aktionen er durchführen soll.
 
 Nehmen Sie für dieses Thema bitte an, dass das folgende DDX-Dokument verwendet wird.
 
@@ -47,13 +47,13 @@ In diesem DDX-Dokument werden zwei PDF-Dokumente mit den Namen *map.pdf* und *di
 
 >[!NOTE]
 >
->Weitere Informationen zum Assembler-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Assembler-Dienst finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Weitere Informationen zu einem DDX-Dokument finden Sie in der [Assembler-Service- und DDX-Referenz](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Weitere Informationen zu einem DDX-Dokument finden Sie in der [Assembler-Dienst- und DDX-Referenz](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
-## Überlegungen beim Aufrufen des Assembler-Services mithilfe von Web-Services {#considerations-when-invoking-assembler-service-using-web-services}
+## Überlegungen beim Aufrufen des Assembler-Dienstes mithilfe von Web-Services {#considerations-when-invoking-assembler-service-using-web-services}
 
 Wenn Sie beim Zusammenstellen großer Dokumente Kopf- und Fußzeilen hinzufügen, kann ein `OutOfMemory`-Fehler auftreten, und die Dateien werden nicht zusammengestellt. Um die Wahrscheinlichkeit zu verringern, dass dieses Problem auftritt, fügen Sie ein `DDXProcessorSetting`-Element zu Ihrem DDX-Dokument hinzu, wie im folgenden Beispiel gezeigt.
 
@@ -73,7 +73,7 @@ Um ein einzelnes PDF-Dokument aus mehreren PDF-Dokumenten zusammenzuführen, fü
 1. Stellen Sie die PDF-Eingabedokumente zusammen.
 1. Extrahieren Sie die Ergebnisse.
 
-**Einschließen von Projektdateien**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -91,23 +91,23 @@ Wenn AEM Forms auf einem unterstützten J2EE-Programm-Server bereitgestellt wird
 
 Bevor Sie einen Assembler-Vorgang programmgesteuert durchführen können, müssen Sie einen Assembler-Client erstellen.
 
-**Referenzieren eines bestehenden DDX-Dokuments**
+**Vorhandenes DDX-Dokument referenzieren**
 
-Zum Zusammenführen eines PDF-Dokuments muss auf ein DDX-Dokument verwiesen werden. Betrachten Sie beispielsweise das DDX-Dokument, das in diesem Abschnitt eingeführt wurde. Dieses DDX-Dokument weist den Assembler-Service an, zwei PDF-Dokumente in ein PDF-Dokument zusammenzuführen.
+Zum Zusammenführen eines PDF-Dokuments muss auf ein DDX-Dokument verwiesen werden. Betrachten Sie beispielsweise das DDX-Dokument, das in diesem Abschnitt eingeführt wurde. Dieses DDX-Dokument weist den Assembler-Dienst an, zwei PDF-Dokumente in ein PDF-Dokument zusammenzuführen.
 
 **Referenzieren der PDF-Eingabedokumente**
 
-Referenzieren Sie die PDF-Eingabedokumente, die Sie an den Assembler-Service übergeben möchten. Wenn Sie beispielsweise zwei Eingabedokumente mit den Namen „Map“ und „Directions“ übergeben möchten, müssen Sie die entsprechenden PDF-Dateien übergeben.
+Referenzieren Sie die PDF-Eingabedokumente, die Sie an den Assembler-Dienst übergeben möchten. Wenn Sie beispielsweise zwei Eingabedokumente mit den Namen „Map“ und „Directions“ übergeben möchten, müssen Sie die entsprechenden PDF-Dateien übergeben.
 
 Sowohl die Datei „map.pdf“ als auch die Datei „directions.pdf“ müssen in einem Sammlungsobjekt platziert werden. Der Name des Schlüssels muss mit dem Wert des PDF-Quellattributs im DDX-Dokument übereinstimmen. Es spielt keine Rolle, wie der Name der PDF-Datei lautet, wenn der Schlüssel und das Quellattribut im DDX-Dokument übereinstimmen.
 
 >[!NOTE]
 >
->Ein `AssemblerResult`-Objekt, das ein Sammlungsobjekt enthält, wird zurückgegeben, wenn Sie den Vorgang `invokeDDX` aufrufen. Dieser Vorgang wird verwendet, wenn Sie zwei oder mehr PDF-Eingabedokumente an den Assembler-Service übergeben. Wenn Sie jedoch nur eine einzige Eingabe-PDF an den Assembler-Service übergeben und nur ein Rückgabedokument erwarten, rufen Sie den Vorgang `invokeOneDocument` auf. Beim Aufrufen dieses Vorgangs wird ein einzelnes Dokument zurückgegeben. Weitere Informationen zur Verwendung dieses Vorgangs finden Sie unter [Zusammenstellen verschlüsselter PDF-Dokumente](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents).
+>Ein `AssemblerResult`-Objekt, das ein Sammlungsobjekt enthält, wird zurückgegeben, wenn Sie den Vorgang `invokeDDX` aufrufen. Dieser Vorgang wird verwendet, wenn Sie zwei oder mehr PDF-Eingabedokumente an den Assembler-Dienst übergeben. Wenn Sie jedoch nur eine einzige Eingabe-PDF an den Assembler-Dienst übergeben und nur ein Rückgabedokument erwarten, rufen Sie den Vorgang `invokeOneDocument` auf. Beim Aufrufen dieses Vorgangs wird ein einzelnes Dokument zurückgegeben. Weitere Informationen zur Verwendung dieses Vorgangs finden Sie unter [Zusammenstellen verschlüsselter PDF-Dokumente](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents).
 
 **Festlegen von Laufzeitoptionen**
 
-Sie können Laufzeitoptionen festlegen, die das Verhalten des Assembler-Services während der Ausführung eines Auftrags steuern. Sie können beispielsweise eine Option festlegen, mit der der Assembler-Service angewiesen wird, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt. Weitere Informationen zu den Laufzeitoptionen, die Sie festlegen können, finden Sie in der `AssemblerOptionSpec`-Klassenreferenz in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Sie können Laufzeitoptionen festlegen, die das Verhalten des Assembler-Dienstes während der Ausführung eines Auftrags steuern. Sie können beispielsweise eine Option festlegen, mit der der Assembler-Dienst angewiesen wird, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt. Informationen zu den Laufzeitoptionen, die Sie festlegen können, finden Sie in der `AssemblerOptionSpec`-Klassenreferenz in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Zusammenstellen der PDF-Eingabedokumente**
 
@@ -115,7 +115,7 @@ Nachdem Sie den Service-Client erstellt, eine DDX-Datei referenziert, ein Auflis
 
 **Extrahieren der Ergebnisse**
 
-Der Assembler-Service gibt ein `java.util.Map`-Objekt zurück, das vom `AssemblerResult`-Objekt abgerufen werden kann und Vorgangsergebnisse enthält. Das zurückgegebene `java.util.Map`-Objekt enthält die resultierenden Dokumente und alle Ausnahmen.
+Der Assembler-Dienst gibt ein `java.util.Map`-Objekt zurück, das vom `AssemblerResult`-Objekt abgerufen werden kann und Vorgangsergebnisse enthält. Das zurückgegebene `java.util.Map`-Objekt enthält die resultierenden Dokumente und alle Ausnahmen.
 
 Die folgende Tabelle fasst einige der Schlüsselwerte und Objekttypen zusammen, die in dem zurückgegebenen `java.util.Map`-Objekt enthalten sein können.
 
@@ -141,7 +141,7 @@ Die folgende Tabelle fasst einige der Schlüsselwerte und Objekttypen zusammen, 
   <tr>
    <td><p><code>OutputMapConstants.LOG_NAME</code></p></td>
    <td><p><code>com.adobe.idp.Documen</code></p></td>
-   <td><p>Enthält das Vorgangslog</p></td>
+   <td><p>Enthält das Auftragslog</p></td>
   </tr>
  </tbody>
 </table>
@@ -156,7 +156,7 @@ Die folgende Tabelle fasst einige der Schlüsselwerte und Objekttypen zusammen, 
 
 ## Zusammenführen von PDF-Dokumenten mithilfe der Java-API {#assemble-pdf-documents-using-the-java-api}
 
-Zusammenführen eines PDF-Dokuments mithilfe der Assembler Service API (Java):
+Zusammenführen eines PDF-Dokuments mithilfe der Assembler-Dienst-API (Java):
 
 1. Schließen Sie Projektdateien ein.
 
@@ -185,7 +185,7 @@ Zusammenführen eines PDF-Dokuments mithilfe der Assembler Service API (Java):
 1. Legen Sie Laufzeitoptionen fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen speichert, indem Sie seinen Konstruktor verwenden.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Service anzuweisen, die Verarbeitung eines Auftrags im Falle eines Fehlers fortzusetzen, rufen Sie die Methode `setFailOnError` des `AssemblerOptionSpec`-Objekts auf und übergeben Sie `false`.
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, die Verarbeitung eines Auftrags auch dann fortzusetzen, wenn ein Fehler auftritt, rufen Sie die Methode `setFailOnError` des `AssemblerOptionSpec`-Objekts auf und übergeben `false`.
 
 1. Stellen Sie die PDF-Eingabedokumente zusammen.
 
@@ -193,16 +193,16 @@ Zusammenführen eines PDF-Dokuments mithilfe der Assembler Service API (Java):
 
    * Ein `com.adobe.idp.Document`-Objekt, das das zu verwendende DDX-Dokument darstellt
    * Ein `java.util.Map`-Objekt, das die PDF-Eingabedateien enthält, die zusammengeführt werden sollen
-   * Ein `com.adobe.livecycle.assembler.client.AssemblerOptionSpec`-Objekt, das die Laufzeitoptionen angibt, einschließlich standardmäßiger Schriftart und Vorgangslog-Ebene
+   * Ein `com.adobe.livecycle.assembler.client.AssemblerOptionSpec`-Objekt, das die Laufzeitoptionen angibt, einschließlich standardmäßiger Schriftart und Auftragslog-Ebene
 
-   Die `invokeDDX`-Methode gibt ein `com.adobe.livecycle.assembler.client.AssemblerResult`-Objekt zurück, das die Ergebnisse des Vorgangs sowie alle aufgetretenen Ausnahmen enthält.
+   Die Methode `invokeDDX` gibt ein `com.adobe.livecycle.assembler.client.AssemblerResult`-Objekt zurück, das die Ergebnisse des Auftrags und eventuell aufgetretene Ausnahmen enthält.
 
 1. Extrahieren Sie die Ergebnisse.
 
    Führen Sie die folgenden Schritte aus, um das neu erstellte PDF-Dokument abzurufen:
 
    * Rufen Sie die `AssemblerResult`-Objekt`getDocuments`-Methode auf. Dadurch wird ein `java.util.Map`-Objekt zurückgegeben.
-   * Durchsuchen Sie das `java.util.Map`-Objekt, bis Sie das entstandene `com.adobe.idp.Document`-Objekt gefunden haben. (Sie können das im DDX-Dokument angegebene PDF-Ergebniselement verwenden, um das Dokument abzurufen.)
+   * Iterieren Sie durch das `java.util.Map`-Objekt, bis Sie das resultierende `com.adobe.idp.Document`-Objekt finden. (Sie können das im DDX-Dokument angegebene PDF-Ergebniselement verwenden, um das Dokument abzurufen.)
    * Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um das PDF-Dokument zu extrahieren.
 
    >[!NOTE]
@@ -219,7 +219,7 @@ Zusammenführen eines PDF-Dokuments mithilfe der Assembler Service API (Java):
 
 ## Zusammenführen von PDF-Dokumenten mithilfe der Web-Service-API {#assemble-pdf-documents-using-the-web-service-api}
 
-Zusammenführen von PDF-Dokumenten mithilfe der Assembler Service API (Web-Service):
+Zusammenführen von PDF-Dokumenten mithilfe der Assembler-Dienst-API (Web-Service):
 
 1. Schließen Sie Projektdateien ein.
 
@@ -232,41 +232,41 @@ Zusammenführen von PDF-Dokumenten mithilfe der Assembler Service API (Web-Servi
 1. Erstellen Sie einen PDF Assembler-Client.
 
    * Erstellen Sie ein `AssemblerServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
-   * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address` -Objekt mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekr, indem Sie den Wert des Felds `AssemblerServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie brauchen das Attribut `lc_version` nicht zu verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `AssemblerServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `AssemblerServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `AssemblerServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den Konstantenwert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Referenzieren Sie ein vorhandenes DDX-Dokument.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des DDX-Dokuments verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des DDX-Dokuments und den Modus enthält, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekt gespeichert wird. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
-   * Füllen Sie das `BLOB`-Objekt mit den Inhalten des Byte-Arrays, indem Sie seine `MTOM`-Eigenschaft zuweisen.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seine `MTOM`-Eigenschaft mit dem Inhalt des Byte-Arrays belegen.
 
 1. Referenzieren Sie die PDF-Eingabedokumente.
 
    * Erstellen Sie für jedes PDF-Eingabedokument ein `BLOB`-Objekt, indem Sie seinen Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Eingabedokuments verwendet.
-   * Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des PDF-Eingabedokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des Eingabe-PDF-Dokuments und den Modus enthält, in dem die Datei geöffnet werden soll.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
-   * Füllen Sie das `BLOB`-Objekt mit den Inhalten des Byte-Arrays, indem Sie sein `MTOM`-Feld zuweisen.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
    * Erstellen Sie ein `MyMapOf_xsd_string_To_xsd_anyType`-Objekt. Dieses Sammlungsobjekt wird zum Speichern von PDF-Eingabedokumenten verwendet.
    * Erstellen Sie für jedes PDF-Eingabedokument ein `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt. Wenn beispielsweise zwei PDF-Eingabedokumente verwendet werden, erstellen Sie zwei `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekte.
    * Weisen Sie dem Feld `key` des `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekts einen Zeichenfolgenwert zu, der den Schlüsselnamen darstellt. Dieser Wert muss mit dem Wert des im DDX-Dokument angegebenen PDF-Quellelements übereinstimmen. (Führen Sie diese Aufgabe für jedes PDF-Eingabedokument aus.)
    * Weisen Sie das `BLOB`-Objekt, das das PDF-Dokument speichert, dem Feld `value` des `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekts zu. (Führen Sie diese Aufgabe für jedes PDF-Eingabedokument aus.)
-   * Fügen Sie das `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt zum `MyMapOf_xsd_string_To_xsd_anyType`-Objekt hinzu. Rufen Sie die Methode `Add` des `MyMapOf_xsd_string_To_xsd_anyType`-Objekts auf, und übergeben Sie das `MyMapOf_xsd_string_To_xsd_anyType`-Objekt. (Führen Sie diese Aufgabe für jedes PDF-Eingabedokument aus.)
+   * Fügen Sie das `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt dem `MyMapOf_xsd_string_To_xsd_anyType`-Objekt zu. Rufen Sie die `Add`-Methode des `MyMapOf_xsd_string_To_xsd_anyType`-Objekts auf, und übergeben Sie das `MyMapOf_xsd_string_To_xsd_anyType`-Objekt. (Führen Sie diese Aufgabe für jedes PDF-Eingabedokument aus.)
 
 1. Legen Sie Laufzeitoptionen fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen speichert, indem Sie seinen Konstruktor verwenden.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie einem Datenelement, das zum `AssemblerOptionSpec`-Objekt gehört, einen Wert zuweisen. Um beispielsweise den Assembler-Service anzuweisen, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt, weisen Sie dem Datenelement `failOnError` des `AssemblerOptionSpec`-Objekts `false` zu.
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie einem Datenelement, das zum `AssemblerOptionSpec`-Objekt gehört, einen Wert zuweisen. Um beispielsweise den Assembler-Dienst anzuweisen, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt, weisen Sie dem `failOnError`-Datenelement.des `AssemblerOptionSpec`-Objekts `false` zu.
 
 1. Stellen Sie die PDF-Eingabedokumente zusammen.
 
@@ -276,7 +276,7 @@ Zusammenführen von PDF-Dokumenten mithilfe der Assembler Service API (Web-Servi
    * Das `mapItem`-Array, das die PDF-Eingabedokumente enthält. Seine Schlüssel müssen mit den Namen der PDF-Quelldateien übereinstimmen, und seine Werte müssen die `BLOB`-Objekte sein, die diesen Dateien entsprechen.
    * Ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen angibt.
 
-   Die Methode `invoke` gibt ein `AssemblerResult`-Objekt zurück, das die Ergebnisse des Vorgangs und eventuell aufgetretene Ausnahmen enthält.
+   Die Methode `invoke` gibt ein `AssemblerResult`-Objekt zurück, das die Ergebnisse des Auftrags und eventuell aufgetretene Ausnahmen enthält.
 
 1. Extrahieren Sie die Ergebnisse.
 
@@ -284,7 +284,7 @@ Zusammenführen von PDF-Dokumenten mithilfe der Assembler Service API (Web-Servi
 
    * Greifen Sie auf das Feld `documents` des `AssemblerResult`-Objekts zu, das ein `Map`-Objekt ist, welches die PDF-Ergebnisdokumente enthält.
    * Iterieren Sie durch das `Map`-Objekt, bis Sie den Schlüssel finden, der dem Namen des Ergebnisdokuments entspricht. Dann wandeln Sie das `value` dieses Array-Elements in ein `BLOB` um.
-   * Extrahieren Sie die Binärdaten, die das PDF-Dokument darstellen, indem Sie auf die `MTOM`-Eigenschaft seines `BLOB`-Objekts zugreifen. Dadurch wird ein Array von Bytes zurückgegeben, die Sie in eine PDF-Datei schreiben können.
+   * Extrahieren Sie die Binärdaten, die das PDF-Dokument darstellen, indem Sie auf die `MTOM`-Eigenschaft von dessen `BLOB`-Objekt zugreifen. Dadurch wird ein Array von Bytes zurückgegeben, die Sie in eine PDF-Datei schreiben können.
 
    >[!NOTE]
    >

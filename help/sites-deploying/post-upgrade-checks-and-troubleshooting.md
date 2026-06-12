@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1798'
-ht-degree: 100%
+source-wordcount: '1803'
+ht-degree: 96%
 
 ---
 
@@ -101,9 +101,9 @@ Für eine Reihe von Funktionen in AEM sind nach einem Upgrade zusätzliche Schri
 
 ### Überprüfen der Konfigurationen für die geplante Wartung {#verify-scheduled-maintenance-configurations}
 
-#### Aktivieren der Bereinigung des Datenspeichers {#enable-data-store-garbage-collection}
+#### Aktivieren der Datenspeicherbereinigung {#enable-data-store-garbage-collection}
 
-Wenn Sie einen Dateidatenspeicher verwenden, stellen Sie sicher, dass die Aufgabe „Data Store-Abfallsammlung“ aktiviert ist und zur Liste für die wöchentliche Wartung hinzugefügt wurde. Anweisungen hierzu finden Sie unter [Revisionsbereinigung](/help/sites-administering/data-store-garbage-collection.md).
+Wenn Sie einen Dateidatenspeicher verwenden, stellen Sie sicher, dass die Aufgabe „Datenspeicherbereinigung“ aktiviert ist und zur Liste für die wöchentliche Wartung hinzugefügt wurde. Anweisungen hierzu finden Sie unter [Revisionsbereinigung](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
@@ -133,7 +133,7 @@ Diese Szenarien sollen dabei helfen, die Grundursache der mit der Aktualisierung
 
 ### Fehlschlagen der Repository-Migration  {#repository-migration-failing-}
 
-Die Datenmigration von CRX2 auf Oak sollte für alle Szenarien mit Quellinstanzen auf Basis von CQ 5.4 durchführbar sein. Stellen Sie sicher, dass Sie die Upgrade-Anweisungen in diesem Dokument genau befolgen. Dazu gehört auch, dass Sie die Datei `repository.xml` entsprechend vorbereiten und sicherstellen, dass keine benutzerdefinierte Authentifizierung über JAAS gestartet wurde und dass die Instanz vor dem Start der Migration auf Inkonsistenzen überprüft wurde.
+Die Datenmigration von CRX2 zu Oak sollte für jedes Szenario möglich sein, das mit Source-Instanzen auf der Grundlage von CQ 5.4 beginnt. Stellen Sie sicher, dass Sie die Upgrade-Anweisungen in diesem Dokument genau befolgen, einschließlich der Vorbereitung der `repository.xml`, und stellen Sie sicher, dass keine benutzerdefinierte Authentifizierung über JAAS gestartet wurde und die Instanz vor dem Start der Migration auf Inkonsistenzen überprüft wurde.
 
 Wenn bei der Migration weiterhin Fehler auftreten, können Sie die Grundursache bestimmen, indem Sie die Datei `upgrade.log` überprüfen. Wenn das Problem bislang unbekannt ist, melden Sie es dem Kunden-Support.
 
@@ -143,7 +143,7 @@ Stellen Sie vor Beginn der vorbereitenden Schritte sicher, dass zuerst die **Que
 
 ### Fehlerhafte Aktualisierung von Paketen  {#packages-and-bundles-fail-to-update-}
 
-Wenn Pakete während des Upgrades nicht installiert werden können, werden die darin enthaltenen Pakete ebenfalls nicht aktualisiert. Diese Kategorie von Problemen geht auf eine Fehlkonfiguration des Datenspeichers zurück.  Sie werden auch als **ERROR**- und **WARN**-Meldungen in der Datei error.log angezeigt. Da in den meisten dieser Fälle die Standardanmeldung möglicherweise nicht funktioniert, können Sie CRXDE direkt verwenden, um die Konfigurationsprobleme zu untersuchen und zu finden.
+Wenn Pakete während des Upgrades nicht installiert werden können, werden die darin enthaltenen Pakete ebenfalls nicht aktualisiert. Diese Kategorie von Problemen geht auf eine Fehlkonfiguration des Datenspeichers zurück. Sie werden auch als **ERROR**- und **WARN**-Meldungen in der Datei error.log angezeigt. Da in den meisten dieser Fälle die Standardanmeldung möglicherweise nicht funktioniert, können Sie CRXDE direkt verwenden, um die Konfigurationsprobleme zu untersuchen und zu finden.
 
 ### Einige AEM-Pakete wechseln nicht in den aktiven Status {#some-aem-bundles-are-not-switching-to-the-active-state}
 

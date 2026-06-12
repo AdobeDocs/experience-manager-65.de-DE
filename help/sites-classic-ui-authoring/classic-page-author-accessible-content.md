@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: ht
-source-wordcount: '9057'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '9584'
+ht-degree: 91%
 
 ---
 
@@ -61,9 +61,9 @@ Im folgenden Abschnitt finden Sie die [WCAG 2.0-Richtlinien](https://www.w3.org
 >* Die Nummerierung der [WCAG 2.0-Richtlinien](https://www.w3.org/TR/WCAG20/#guidelines) zur Erleichterung von Querverweisen zur WCAG-Website.
 >
 
-## Grundsatz 1: Erkennbar     {#principle-perceivable}
+## Grundsatz 1: Erkennbar {#principle-perceivable}
 
-[Grundsatz 1: Erkennbar – Informationen und Komponenten der Benutzeroberfläche müssen für die Benutzer so dargestellt sein, dass sie sie erkennen können.](https://www.w3.org/TR/WCAG20/#perceivable)
+[Grundsatz 1: Wahrnehmbar - Informationen und Komponenten der Benutzeroberfläche müssen den Benutzenden so präsentiert werden, wie sie es wahrnehmen können.](https://www.w3.org/TR/WCAG20/#perceivable)
 
 ### Textalternativen (1.1) {#text-alternatives}
 
@@ -77,7 +77,7 @@ Im folgenden Abschnitt finden Sie die [WCAG 2.0-Richtlinien](https://www.w3.org
 
 #### Zweck: Nichttextliche Inhalte (1.1.1) {#purpose-non-text-content}
 
-Informationen auf einer Web-Seite können in vielen verschiedenen nichttextlichen Formaten bereitgestellt werden, z. B. in Bildern, Videos, Animationen, Diagrammen und Graphen. Blinde Personen oder Personen mit schweren Sehbehinderungen können nichttextlichen Inhalt nicht sehen, sie können jedoch auf Textinhalte zugreifen, indem sie sie von einer Bildschirmlesehilfe lesen lassen oder von einem Braille-Anzeigegerät in taktiler Form präsentiert bekommen. Indem Sie also zu Inhalten in grafischem Format Textalternativen bereitstellen, können Personen, die diesen grafischen Inhalt nicht sehen können, auf eine äquivalente Version der Informationen zugreifen, die im Inhalt geboten werden.
+Informationen auf einer Web-Seite können in vielen verschiedenen nichttextlichen Formaten bereitgestellt werden, z. B. in Bildern, Videos, Animationen, Diagrammen und Graphen. Blinde Menschen oder Menschen mit schweren Sehbehinderungen können nichttextlichen Inhalt nicht sehen, sie können jedoch auf Textinhalte zugreifen, indem sie ihn von einer Bildschirmlesehilfe lesen lassen oder in taktiler Form von einem Braille-Anzeigegerät präsentiert bekommen. Indem Sie also zu Inhalten in grafischem Format Textalternativen bereitstellen, können Personen, die diesen grafischen Inhalt nicht sehen können, auf eine äquivalente Version der Informationen zugreifen, die im Inhalt geboten werden.
 
 Ein nützlicher weiterer Vorteil besteht darin, dass Textalternativen es ermöglichen, nichttextliche Inhalte durch Suchmaschinentechnologie zu indizieren.
 
@@ -184,14 +184,14 @@ Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderli
 
 #### Weitere Informationen: Nichttextlicher Inhalt (1.1.1) {#more-information-non-text-content}
 
-* [Erfolgskriterien 1.1.1 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
-* [Erfolgskriterien 1.1.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#text-alternatives)
+* [Grundlagen zu Erfolgskriterien 1.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html?lang=de)
+* [Erfüllen von Erfolgskriterien 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#text-alternatives)
 * [W3C: HTML5-Techniken zur Bereitstellung nützlicher Textalternativen](https://html.spec.whatwg.org/multipage/images.html#alt)
 * [W3C-Erklärung und Alternativen zu CAPTCHAs](https://www.w3.org/TR/turingtest/)
 
 ### Zeitbasierte Medien (1.2) {#time-based-media}
 
-[Richtlinie 1.2 Zeitbasierte Medien: Bereitstellen von Alternativen für zeitbasierte Medien.](https://www.w3.org/TR/WCAG20/#text-equiv)
+[Richtlinie 1.2 Zeitbasierte Medien: Bereitstellung von Alternativen für zeitbasierte Medien.](https://www.w3.org/TR/WCAG20/#text-equiv)
 
 Diese Informationen behandeln Web-Inhalte, die *zeitbasiert* sind. Hier werden Inhalte behandelt, die die Benutzerin oder der Benutzer abspielen kann (z. B. Video, Audio und animierte Inhalte) und die entweder voraufgezeichnet sind oder als Live-Stream wiedergegeben werden.
 
@@ -216,7 +216,7 @@ Video oder Audio kann auch für Personen unzugänglich sein, die Browser oder Ge
 
 Wenn Sie diese Informationen in einem anderen Format bereitstellen, z. B. Text (oder Audio für Video ohne Audio), können Sie sie für Personen verfügbar machen, die nicht auf den ursprünglichen Inhalt zugreifen können.
 
-#### Erfüllen: Nur-Audio und Nur-Video (aufgezeichnet) (1.2.1)     {#how-to-meet-audio-only-and-video-only-pre-recorded}
+#### Erfüllen: Nur-Audio und Nur-Video (aufgezeichnet) (1.2.1) {#how-to-meet-audio-only-and-video-only-pre-recorded}
 
 * Wenn es sich bei dem Inhalt um aufgezeichnetes Audio ohne Video (wie zum Beispiel einen Podcast) handelt:
 
@@ -237,20 +237,20 @@ Das Einfügen von Multimedia-Inhalten, insbesondere von Flash-Inhalten, in Ihren
 
 >[!NOTE]
 >
->Wenn Sie Multimedia mit informativem Inhalt verwenden, müssen Sie auch Links zu Alternativen erstellen. Beispielsweise müssen Sie zum Hinzufügen eines Texttranskripts eine HTML-Seite für die Anzeige des Transkripts erstellen und dann neben oder unter dem Audioinhalt einen Link hinzufügen.
+>Wenn Sie Multimedia mit informativem Inhalt verwenden, müssen Sie auch Links zu Alternativen erstellen. Um beispielsweise ein Texttranskript einzuschließen, erstellen Sie eine HTML-Seite, auf der das Transkript angezeigt wird, und fügen Sie dann einen Link neben oder unter dem Audioinhalt hinzu.
 
 #### Weitere Informationen: Nur-Audio und Nur-Video (aufgezeichnet) (1.2.1) {#more-information-audio-only-and-video-only-pre-recorded}
 
-* [Erfolgskriterien 1.2.1 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html)
-* [Erfolgskriterien 1.2.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#time-based-media)
+* [Grundlegendes zu Erfolgskriterien 1.2.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html?lang=de)
+* [Erfüllen von Erfolgskriterien 1.2.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#time-based-media)
 
-### Untertitel (aufgezeichnet) (1.2.2)     {#captions-pre-recorded}
+### Untertitel (aufgezeichnet) (1.2.2) {#captions-pre-recorded}
 
 * Erfolgskriterium 1.2.2
 * Level A
 * Untertitel (aufgezeichnet): Untertitel werden für alle aufgezeichneten Audioinhalte in synchronisierten Medien bereitgestellt, außer wenn das Medium eine Medienalternative für Text und als solche ausdrücklich gekennzeichnet ist.
 
-#### Zweck: Untertitel (aufgezeichnet) (1.2.2)     {#purpose-captions-pre-recorded}
+#### Zweck: Untertitel (aufgezeichnet) (1.2.2) {#purpose-captions-pre-recorded}
 
 Menschen, die taub oder schwerhörig sind, können Audioinhalte überhaupt nicht oder nur mit großen Schwierigkeiten aufrufen. Untertitel sind Textäquivalente für gesprochene und nicht-gesprochene Audioinhalte, die zum entsprechenden Zeitpunkt während des Videos auf dem Bildschirm angezeigt werden. Sie ermöglichen es Menschen, die das Audio nicht hören können, zu verstehen, was passiert.
 
@@ -258,7 +258,7 @@ Menschen, die taub oder schwerhörig sind, können Audioinhalte überhaupt nicht
 >
 >Untertitel sind nicht erforderlich, wenn auf derselben Seite wie das Video oder die Animation geeignete Text- oder Nicht-Text-Entsprechungen (die direkt gleichwertige Informationen bereitstellen) verfügbar sind.
 
-#### Erfüllen: Untertitel (aufgezeichnet) (1.2.2)     {#how-to-meet-captions-pre-recorded}
+#### Erfüllen: Untertitel (aufgezeichnet) (1.2.2) {#how-to-meet-captions-pre-recorded}
 
 Es gibt zwei Arten von Untertiteln:
 
@@ -275,18 +275,18 @@ Wenn Sie offene Untertitel verwenden müssen, betten Sie den Text in die Videosp
 
 #### Weitere Informationen: Untertitel (voraufgezeichnet) (1.2.2) {#more-information-captions-pre-recorded}
 
-* [Erfolgskriterium 1.2.2 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html):
+* [Erfolgskriterium 1.2.2 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html?lang=de):
 * [Erfolgskriterien 1.2.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#time-based-media)
 * [W3C: Synchronisiertes Multimedia](https://www.w3.org/AudioVideo/)
-* [Untertitel, Transkripte und Audiobeschreibungen – mit WebAIM](https://webaim.org/techniques/captions/)
+* [Untertitel, Transkripte und Audiobeschreibungen - von WebAIM](https://webaim.org/techniques/captions/)
 
-### Audiobeschreibung oder Medienalternative (aufgezeichnet) (1.2.3)     {#audio-description-or-media-alternative-pre-recorded}
+### Audiobeschreibung oder Medienalternative (aufgezeichnet) (1.2.3) {#audio-description-or-media-alternative-pre-recorded}
 
 * Erfolgskriterium 1.2.3
 * Level A
 * Audiobeschreibung oder Medienalternative (voraufgezeichnet): Eine Alternative für zeitbasierte Medien oder Audiobeschreibung des voraufgezeichneten Videoinhalts wird für synchronisierte Medien bereitgestellt, es sei denn, das Medium ist eine Medienalternative für Text und ist als solche eindeutig gekennzeichnet.
 
-#### Zweck: Audiobeschreibung oder Medienalternative (aufgezeichnet) (1.2.3)     {#purpose-audio-description-or-media-alternative-pre-recorded}
+#### Zweck: Audiobeschreibung oder Medienalternative (aufgezeichnet) (1.2.3) {#purpose-audio-description-or-media-alternative-pre-recorded}
 
 Für Blinde oder sehbehinderte Menschen ist die Barrierefreiheit eingeschränkt, wenn die Informationen in einem Video oder einer Animation nur visuell bereitgestellt werden. Oder wenn der Soundtrack nicht genügend Informationen bereitstellt, um zu verstehen, was visuell geschieht.
 
@@ -310,8 +310,8 @@ Genaue Details zum Erstellen von Audiobeschreibungen für Videos würden den Rah
 
 #### Weitere Informationen: Audiobeschreibung oder Medienalternative (aufgezeichnet) (1.2.3) {#more-information-audio-description-or-media-alternative-pre-recorded}
 
-* [Erfolgskriterien 1.2.3 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
-* [Erfolgskriterien 1.2.3 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
+* [Erfolgskriterien 1.2.3 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html?lang=de):
+* [Erfüllen von Erfolgskriterien 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
 * [Adobe Encore CS5](https://helpx.adobe.com/de/premiere-pro/using/whats-new.html)
 
 ### Untertitel (live) (1.2.4)  {#captions-live}
@@ -326,39 +326,39 @@ Dieses Erfolgskriterium entspricht dem Erfolgskriterium zu [Untertitel (aufgezei
 
 #### Erfüllen: Untertitel (Live) (1.2.4) {#how-to-meet-captions-live}
 
-Befolgen Sie die Anleitungen, die oben unter [Untertitel (voraufgezeichnet)](#captions-pre-recorded) genannt wurden. Da die Medien live übermittelt werden, muss die Bereitstellung der Untertitel so schnell wie möglich erfolgen und sofort auf das reagieren, was passiert. Daher sollten Sie Tools für die Echtzeit-Untertitelung oder für „Sprache in Text“ in Erwägung ziehen.
+Befolgen Sie die Anleitungen unter [Untertitel (aufgezeichnet)](#captions-pre-recorded) oben. Da die Medien live übermittelt werden, muss die Bereitstellung der Untertitel so schnell wie möglich erfolgen und sofort auf das reagieren, was passiert. Daher sollten Sie Tools für die Echtzeit-Untertitelung oder für „Sprache in Text“ in Erwägung ziehen.
 
 Detaillierte Anweisungen dazu würden den Rahmen dieses Dokuments sprengen, doch in den folgenden Ressourcen finden Sie nützliche Informationen:
 
-* [WebAIM: Echtzeit-Untertitelung](https://webaim.org/techniques/captions/realtime)
+* [WebAIM: Echtzeit-Untertitel](https://webaim.org/techniques/captions/realtime)
 
-#### Weitere Informationen: Untertitel (Live) (1.2.4)       {#more-information-captions-live}
+#### Weitere Informationen: Untertitel (Live) (1.2.4) {#more-information-captions-live}
 
-* [Erfolgskriterien 1.2.4 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
-* [Erfolgskriterien 1.2.4 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-real-time-captions)
+* [Grundlegendes zu Erfolgskriterien 1.2.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html?lang=de)
+* [Erfüllen von Erfolgskriterien 1.2.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-real-time-captions)
 
-### Audiobeschreibung (aufgezeichnet) (1.2.5)          {#audio-description-pre-recorded}
+### Audiobeschreibung (aufgezeichnet) (1.2.5)  {#audio-description-pre-recorded}
 
 * Erfolgskriterium 1.2.5
 * Level AA
 * Audiobeschreibung (aufgezeichnet): Audiobeschreibung wird für alle aufgezeichneten Videoinhalte in synchronisierten Medien bereitgestellt.
 
-#### Zweck: Audiobeschreibung (aufgezeichnet) (1.2.5)     {#purpose-audio-description-pre-recorded}
+#### Zweck: Audiobeschreibung (aufgezeichnet) (1.2.5) {#purpose-audio-description-pre-recorded}
 
 Dieses Erfolgskriterium entspricht dem Erfolgskriterium zu [Audiobeschreibung oder Medienalternative (aufgezeichnet)](#audio-description-or-media-alternative-pre-recorded), mit dem Unterschied, dass Autoren eine wesentlich detailliertere Audiobeschreibung verfassen müssen, um Level AA zu erfüllen.
 
-#### Erfüllen: Audiobeschreibung (aufgezeichnet) (1.2.5)     {#how-to-meet-audio-description-pre-recorded}
+#### Erfüllen: Audiobeschreibung (aufgezeichnet) (1.2.5) {#how-to-meet-audio-description-pre-recorded}
 
 Befolgen Sie die Anweisungen für [Audiobeschreibung oder Medienalternative (aufgezeichnet)](#audio-description-or-media-alternative-pre-recorded).
 
-#### Weitere Informationen: Audiobeschreibung (aufgezeichnet) (1.2.5)     {#more-information-audio-description-pre-recorded}
+#### Weitere Informationen: Audiobeschreibung (aufgezeichnet) (1.2.5) {#more-information-audio-description-pre-recorded}
 
-* [Erfolgskriterien 1.2.5 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html)
-* [Erfolgskriterien 1.2.5 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc-only)
+* [Grundlegendes zu Erfolgskriterien 1.2.5](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html?lang=de)
+* [Erfüllen von Erfolgskriterien 1.2.5](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc-only)
 
 ### Anpassbar (1.3) {#adaptable}
 
-[Richtlinie 1.3 Anpassbar: Erstellen Sie Inhalte, die auf unterschiedliche Weise präsentiert werden können (z. B. einfacheres Layout), ohne Informationen oder Struktur zu verlieren.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
+[Richtlinie 1.3 Anpassbar: Erstellen Sie Inhalte, die auf unterschiedliche Weise präsentiert werden können (z. B. einfacheres Layout), ohne Informationen oder Struktur zu verlieren.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
 
 Diese Richtlinie deckt die Anforderungen ab, die zur Unterstützung der folgenden Personen erforderlich sind:
 
@@ -366,7 +366,7 @@ Diese Richtlinie deckt die Anforderungen ab, die zur Unterstützung der folgende
 
 * Personen, die eine Nur-Audio-Darstellung oder alternative visuelle Darstellung wie Großdruck oder hohen Kontrast verwenden wollen.
 
-### Informationen und Beziehungen (1.3.1)              {#info-and-relationships}
+### Informationen und Beziehungen (1.3.1)  {#info-and-relationships}
 
 * Erfolgskriterium 1.3.1
 * Level A
@@ -378,7 +378,7 @@ Viele Hilfstechnologien, die von Menschen mit Behinderungen genutzt werden, sind
 
 Dieses Erfolgskriterium besteht, um sicherzustellen, dass derartige Strukturinformationen über HTML bereitgestellt werden, damit die Browser und Hilfstechnologien auf die Informationen zugreifen und davon profitieren können.
 
-#### Erfüllen: Informationen und Beziehungen (1.3.1)       {#how-to-meet-info-and-relationships}
+#### Erfüllen: Informationen und Beziehungen (1.3.1) {#how-to-meet-info-and-relationships}
 
 AEM erleichtert den Aufbau von Web-Seiten mit den entsprechenden HTML-Elementen. Öffnen Sie Ihren Seiteninhalt im RTE (eine Text-Komponente), und geben Sie im Menü **Format** das entsprechende Strukturelement (zum Beispiel Absatz und Überschrift) an.
 
@@ -509,10 +509,10 @@ Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechend
 
 #### Weitere Informationen: Informationen und Beziehungen (1.3.1) {#more-information-info-and-relationships}
 
-* [Erfolgskriterien 1.3.1 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html)
-* [Erfolgskriterien 1.3.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-content-structure-separation-programmatic)
+* [Grundlegendes zu Erfolgskriterien 1.3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html?lang=de)
+* [Erfüllen von Erfolgskriterien 1.3.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-content-structure-separation-programmatic)
 
-### Sensorische Eigenschaften (1.3.3)          {#sensory-characteristics}
+### Sensorische Eigenschaften (1.3.3)  {#sensory-characteristics}
 
 * Erfolgskriterium 1.3.3
 * Level A
@@ -520,7 +520,7 @@ Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechend
 
 #### Zweck: Sensorische Eigenschaften (1.3.3) {#purpose-sensory-characteristics}
 
-Entwickler nutzen bei der Präsentation von Informationen oft visuelle Design-Mittel wie Farbe, Form, Textstil oder die absolute oder relative Position eines Inhaltselements. Hierbei kann es sich um leistungsstarke Design-Techniken zur Informationsübermittlung handeln. Blinde oder sehbehinderte Personen können möglicherweise nicht auf Informationen zugreifen, die eine visuelle Identifizierung von Attributen wie Position, Farbe oder Form erfordern.
+Designerinnen und Designer nutzen bei der Präsentation von Informationen oft visuelle Design-Mittel wie Farbe, Form, Textstil oder die absolute oder relative Position eines Inhaltselements. Hierbei kann es sich um leistungsstarke Design-Techniken zur Informationsübermittlung handeln. Blinde oder sehbehinderte Personen können möglicherweise nicht auf Informationen zugreifen, die eine visuelle Identifizierung von Attributen wie Position, Farbe oder Form erfordern.
 
 Entsprechend sind Informationen, für die zwischen verschiedenen Klängen unterschieden werden muss (z. B. Inhalte, die von einer Frau oder einem Mann gesprochen werden), für Menschen mit eingeschränktem Hörvermögen nicht verfügbar, wenn sie nicht in Textalternativen für den Audioinhalt umgesetzt wurden.
 
@@ -541,12 +541,12 @@ Stellen Sie sicher, dass alle Informationen, die sich auf visuelle Eigenschaften
 
 #### Weitere Informationen – Sensorische Eigenschaften (1.3.3) {#more-information-sensory-characteristics}
 
-* [Erfolgskriterien 1.3.3 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html)
+* [Grundlegendes zu Erfolgskriterien 1.3.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html?lang=de)
 * [Erfolgskriterien 1.3.3 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-content-structure-separation-understanding)
 
 ### Unterscheidbar (1.4) {#distinguishable}
 
-[Richtlinie 1.4 Unterscheidbar: Erleichtern Sie den Benutzern das Sehen und Hören von Inhalt einschließlich der Unterscheidung von Vorder- und Hintergrund.](https://www.w3.org/TR/WCAG20/#visual-audio-contrast)
+[Richtlinie 1.4 Unterscheidbar: Machen Sie es Benutzenden leichter, Inhalte zu sehen und zu hören, einschließlich der Trennung von Vordergrund und Hintergrund.](https://www.w3.org/TR/WCAG20/#visual-audio-contrast)
 
 ### Verwendung von Farbe (1.4.1)  {#use-of-color}
 
@@ -597,17 +597,17 @@ Wenn Farbe als Hinweis für die Bereitstellung von Informationen verwendet wird,
 
 #### Weitere Informationen – Verwendung von Farbe (1.4.1) {#more-information-use-of-color}
 
-* [Erfolgskriterien 1.4.1 verstehen](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [Erfolgskriterien 1.4.1 erfüllen](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [Anleitung für das Erzielen eines Kontrastverhältnisses von 3:1 mit einer Liste Web-sicherer Farben](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [Grundlegendes zu Erfolgskriterien 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [Erfüllen von Erfolgskriterien 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [Anleitung für das Erzielen eines Kontrastverhältnisses von :1 3 % mit einer Liste Web-sicherer Farben](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 
 ### Kontrast (Minimum) (1.4.3) {#contrast-minimum}
 
 * Erfolgskriterium 1.4.3
 * Level AA
-* Kontrast (Minimum): Die visuelle Darstellung von Text und Abbildungen von Text hat ein Kontrastverhältnis von mindestens 4,5:1, mit den folgenden Ausnahmen:
+* Kontrast (Minimum): Die visuelle Darstellung von Text und Bildern von Text hat ein Kontrastverhältnis von mindestens 4,5:1 mit den folgenden Ausnahmen:
 
-   * Großer Text: Großformatiger Text und Bilder von großformatigem Text weisen ein Kontrastverhältnis von mindestens 3:1 auf.
+   * Großer Text: Großformatiger Text und Bilder von großformatigem Text haben ein Kontrastverhältnis von mindestens 3:1.
    * Beiläufig: Für Text oder Textbilder, die Teil einer inaktiven Komponente der Benutzeroberfläche sind, die reine Dekoration darstellen oder für niemanden sichtbar sind, oder die Teil eines Bildes sind, das signifikanten anderen visuellen Inhalt enthält, ist kein Kontrast erforderlich.
    * Firmenschriftzüge: Für Text, der Teil eines Logos oder eines Markennamens ist, gibt es keine Kontrastanforderungen.
 
@@ -626,9 +626,9 @@ Menschen mit bestimmten Sehbehinderungen können möglicherweise nicht zwischen 
 
 Achten Sie darauf, dass der Text einen ausreichenden Kontrast zu seinem Hintergrund aufweist. Die Kontrastverhältnisse hängen von der Größe und dem Stil des jeweiligen Textes ab:
 
-* Für Text mit einer Größe von weniger als 18 Punkt (oder 14 Punkt bei Fettschrift) sollte das Kontrastverhältnis zwischen Text/Bildern mit Text und dem Hintergrund mindestens 4,5:1 betragen.
-* Bei Text mit einer Größe von mindestens 18 Punkten (oder 14 Punkten und fett) sollte das Kontrastverhältnis mindestens 3:1 betragen.
-* Wenn ein Hintergrund gemustert ist, sollte der Hintergrund um jeden Text schattiert werden, sodass das Verhältnis von 4,5:1 bzw. 3:1 beibehalten wird.
+* Bei Text mit einer Größe von weniger als 18 Punkten (oder 14 Punkten und fett) sollte das Kontrastverhältnis zwischen Text und Bildern von Text und Hintergrund mindestens 4,5 % :1.
+* Bei Text mit einer Größe von mindestens 18 Punkten (oder 14 Punkten und fett) sollte das Kontrastverhältnis mindestens 3 % :1.
+* Wenn ein Hintergrund gemustert ist, sollte der Hintergrund um einen beliebigen Text schattiert werden, sodass das Verhältnis von :1,5 oder :1 beibehalten wird.
 
 Verwenden Sie ein Farbkontrast-Tool, um das Kontrastverhältnis zu prüfen, z. B. den [Farbkontrast-Analysator der Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) oder den [Farbkontrast-Checker von WebAIM](https://webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare prüfen und mögliche Kontrastprobleme erkennen.
 
@@ -638,8 +638,8 @@ Wenn es nicht möglich ist, die empfohlenen Kontraststufen zu erreichen, stellen
 
 #### Weitere Informationen - Kontrast (Minimum) (1.4.3) {#more-information-contrast-minimum}
 
-* [Erfolgskriterien 1.4.3 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
-* [Erfolgskriterien 1.4.3 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-visual-audio-contrast-contrast)
+* [Grundlegendes zu Erfolgskriterien 1.4.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html?lang=de)
+* [Erfüllen von Erfolgskriterien 1.4.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-visual-audio-contrast-contrast)
 
 ### Bilder von Text (1.4.5) {#images-of-text}
 
@@ -664,28 +664,28 @@ Wenn Bilder von Text verwendet werden müssen, nutzen Sie CSS, um die Bilder von
 
 #### Weitere Informationen: Bilder von Text (1.4.5) {#more-information-images-of-text}
 
-* [Erfolgskriterien 1.4.5 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html)
-* [Erfolgskriterien 1.4.5 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-visual-audio-contrast-text-presentation)
+* [Grundlegendes zu Erfolgskriterien 1.4.5](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html?lang=de)
+* [Erfüllen von Erfolgskriterien 1.4.5](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-visual-audio-contrast-text-presentation)
 
 ## Grundsatz 2: Bedienbar {#principle-operable}
 
-[Grundsatz 2: Bedienbar – Komponenten der Benutzerschnittstelle und der Navigation müssen bedienbar sein.](https://www.w3.org/TR/WCAG20/#operable)
+[Grundsatz 2: Bedienbar - Komponenten der Benutzerschnittstelle und der Navigation müssen bedienbar sein.](https://www.w3.org/TR/WCAG20/#operable)
 
-### Pausieren, Beenden, Ausblenden (2.2.2)  {#pause-stop-hide}
+### Pausieren, Stoppen, Ausblenden (2.2.2)  {#pause-stop-hide}
 
 * Erfolgskriterium 2.2.2
 * Level A
-* Pausieren, Beenden, Ausblenden: Für sich bewegende, blinkende, scrollende oder sich automatisch aktualisierende Informationen gelten folgenden Regeln:
+* Pausieren, Stoppen, Ausblenden: Für sich bewegende, blinkende, scrollende oder sich automatisch aktualisierende Informationen gelten folgenden Regeln:
 
    * Bewegen, Blinken, Scrollen: Für alle sich bewegenden, blinkenden oder scrollenden Informationen, die
       * a) automatisch gestartet werden,
       * b) länger als fünf Sekunden dauern und
-      * (c) parallel mit anderen Inhalten angezeigt werden,
-gibt es einen Mechanismus, mit dem Benutzende sie anhalten, stoppen oder verbergen können, es sei denn, die Bewegung, das Blinken oder das Scrollen ist ein wesentlicher Teil einer Aktivität.
+      * (c) parallel zu anderen Inhalten präsentiert wird,
+Es gibt einen Mechanismus, mit dem Benutzende sie anhalten, stoppen oder ausblenden können, es sei denn, die Bewegung, das Blinken oder das Scrollen ist Teil einer Aktivität, bei der es wesentlich ist.
    * Automatische Aktualisierung: Für alle automatisch aktualisierten Informationen, die
       * a) automatisch gestartet und
-      * (b) parallel zu anderen Inhalten angezeigt werden,
-gibt es einen Mechanismus, mit dem Benutzende sie pausieren, stoppen oder verbergen oder die Häufigkeit der Aktualisierung steuern können, es sei denn, die automatische Aktualisierung ist ein wesentlicher Teil einer Aktivität.
+      * (b) parallel zu anderen Inhalten präsentiert wird,
+Benutzende können den Workflow anhalten, stoppen oder ausblenden oder die Häufigkeit der Aktualisierung steuern, es sei denn, die automatische Aktualisierung ist ein wesentlicher Teil einer Aktivität.
 
 Folgendes sollte beachtet werden:
 
@@ -694,28 +694,28 @@ Folgendes sollte beachtet werden:
 1. Für Inhalte, die regelmäßig durch Software aktualisiert werden oder an den Benutzeragenten gestreamt werden, müssen Informationen, die zwischen der Initiierung der Pause und der Wiederaufnahme der Präsentation generiert oder empfangen wurden, nicht beibehalten oder präsentiert werden, da dies möglicherweise technisch nicht möglich ist und in vielen Situationen sogar irreführend sein könnte.
 1. Eine Animation, die im Rahmen einer Vorausladephase oder einer ähnlichen Situation auftritt, kann als wesentlich angesehen werden, wenn während dieser Phase keine Interaktion für alle Benutzenden stattfinden kann und wenn eine Nichtanzeige des Fortschritts die Benutzenden verwirren oder zu der Annahme führen könnte, dass der Inhalt eingefroren oder unterbrochen ist.
 
-#### Zweck - Pausieren, Beenden, Ausblenden (2.2.2) {#purpose-pause-stop-hide}
+#### Zweck - Pausieren, Stoppen, Ausblenden (2.2.2) {#purpose-pause-stop-hide}
 
 Bestimmte Benutzerinnen oder Benutzer empfinden bewegte Inhalte als störend und haben Schwierigkeiten, sich auf andere Bereiche der Seite zu konzentrieren. Darüber hinaus sind solche Inhalte für Menschen schwierig, die beim Lesen Probleme haben, bewegtem Text zu folgen.
 
-#### Erfüllen: Pausieren, Beenden, Ausblenden (2.2.2) {#how-to-meet-pause-stop-hide}
+#### Erfüllen: Pausieren, Stoppen, Ausblenden (2.2.2) {#how-to-meet-pause-stop-hide}
 
 Abhängig von der Art des Inhalts können Sie beim Erstellen von Web-Seiten mit sich bewegendem, aufblitzendem oder blinkendem Inhalt die folgenden Empfehlungen beachten:
 
 * Bieten Sie die Möglichkeit, das Scrollen von Inhalten anzuhalten, damit Benutzerinnen und Benutzer genügend Zeit zum Lesen haben. Beispielsweise Nachrichten-Ticker oder automatisch aktualisierter Text.
 * Stellen Sie sicher, dass blinkende Inhalte maximal fünf Sekunden lang blinken.
-* Nutzen Sie Technologien, mit denen die Anzeige von blinkenden Inhalten im Browser deaktiviert werden kann, z. B. Dateien im GIF- (Graphics Interchange Format) oder APNG-Format (Animated Portable Network Graphics).
+* Verwenden Sie geeignete Technologien, um blinkende Inhalte anzuzeigen, die vom Browser deaktiviert werden können. Beispielsweise Dateien im GIF (Graphics Interchange Format)- oder APNG (Animated Portable Network Graphics)-Format.
 * Stellen Sie ein Formularsteuerelement auf der Web-Seite bereit, mit dem Benutzerinnen und Benutzer alle blinkenden Inhalte auf der Seite deaktivieren können.
 * Wenn dies nicht möglich ist, geben Sie einen Link zu einer Seite an, die den gesamten Inhalt enthält, aber ohne Blinken.
 
-#### Weitere Informationen - Pausieren, Beenden, Ausblenden (2.2.2)       {#more-information-pause-stop-hide}
+#### Weitere Informationen - Pausieren, Stoppen, Ausblenden (2.2.2) {#more-information-pause-stop-hide}
 
-* [Erfolgskriterium 2.2.2 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html)
-* [Erfolgskriterium 2.2.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-time-limits-pause)
+* [Grundlegendes zu Erfolgskriterium 2.2.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html?lang=de)
+* [Erfüllen von Erfolgskriterium 2.2.2](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-time-limits-pause)
 
-### Anfälle (2.3)     {#seizures}
+### Anfälle (2.3) {#seizures}
 
-[Richtlinie 2.3 Anfälle: Gestalten Sie Inhalt nicht auf Arten, von denen bekannt ist, dass sie zu Anfällen führen.](https://www.w3.org/TR/WCAG20/#seizure)
+[Richtlinie 2.3 Anfälle: Gestalten Sie Inhalte nicht auf eine Weise, von der bekannt ist, dass sie Anfälle verursachen.](https://www.w3.org/TR/WCAG20/#seizure)
 
 ### Grenzwert von maximal dreimaligem Blitzen (2.3.1) {#three-flashes-or-below-threshold}
 
@@ -740,8 +740,8 @@ Gehen Sie wie folgt vor:
 
 #### Weitere Informationen – Grenzwert von maximal dreimaligem Blitzen (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
-* [Erfolgskriterium 2.3.1 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html)
-* [Erfolgskriterium 2.3.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#seizure)
+* [Grundlegendes zu Erfolgskriterium 2.3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html?lang=de)
+* [Erfüllen von Erfolgskriterium 2.3.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#seizure)
 
 ### Mit Titel versehene Seite (2.4.2)  {#page-titled}
 
@@ -761,8 +761,8 @@ Sie können den Seitentitel auch gemeinsam mit der Seite bearbeiten, indem Sie *
 
 #### Weitere Informationen – Seite mit Titel versehen (2.4.2) {#more-information-page-titled}
 
-* [Erfolgskriterium 2.4.2 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html)
-* [Erfolgskriterium 2.4.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-title)
+* [Grundlagen zu Erfolgskriterium 2.4.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html?lang=de)
+* [Erfüllen von Erfolgskriterium 2.4.2](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-title)
 
 ### Link-Zweck (im Kontext) (2.4.4)  {#link-purpose-in-context}
 
@@ -827,17 +827,17 @@ Alternativ können Skripte verwendet werden, damit innerhalb des Links selbst nu
 
 #### Weitere Informationen – Link-Zweck (im Kontext) (2.4.4) {#more-information-link-purpose-in-context}
 
-* [Erfolgskriterium 2.4.4 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html)
-* [Erfolgskriterium 2.4.4 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs)
-* [C7: Verwendung von CSS, um einen Teil des Link-Textes auszublenden](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
+* [Grundlegendes zu Erfolgskriterium 2.4.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html?lang=de)
+* [Erfüllen von Erfolgskriterium 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs)
+* [C7: Verwenden von CSS zum Ausblenden eines Teils des Link-Texts](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
 
-## Grundsatz 3: Verständlich     {#principle-understandable}
+## Grundsatz 3: Verständlich {#principle-understandable}
 
-[Grundsatz 3: Verständlich – Informationen und die Bedienung der Benutzerschnittstelle müssen verständlich sein.](https://www.w3.org/TR/WCAG20/#understandable)
+[Grundsatz 3: Verständlich - Informationen und die Bedienung der Benutzeroberfläche müssen verständlich sein.](https://www.w3.org/TR/WCAG20/#understandable)
 
-### Machen Sie Inhalt lesbar und verständlich (3.1) {#make-text-content-readable-and-understandable}
+### Machen Sie Inhalte lesbar und verständlich (3.1) {#make-text-content-readable-and-understandable}
 
-[Richtlinie 3.1 Lesbar: Machen Sie Inhalt lesbar und verständlich.](https://www.w3.org/TR/WCAG20/#meaning)
+[Richtlinie 3.1 Lesbar: Machen Sie Textinhalte lesbar und verständlich.](https://www.w3.org/TR/WCAG20/#meaning)
 
 ### Sprache der Seite (3.1.1) {#language-of-page}
 
@@ -865,8 +865,8 @@ In AEM wird die Standardsprache einer Seite bei ihrer Erstellung festgelegt, kan
 
 #### Weitere Informationen – Sprache der Seite (3.1.1) {#more-information-language-of-page}
 
-* [Erfolgskriterium 3.1.1 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
-* [Erfolgskriterium 3.1.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-doc-lang-id)
+* [Grundlegendes zu Erfolgskriterium 3.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html?lang=de)
+* [Erfüllen von Erfolgskriterium 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-doc-lang-id)
 * Die Codes basieren auf ISO 639-1. Eine ausführlichere Liste der Codes für jede Sprache finden Sie auf der [Website von W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
 
 ### Sprache von Teilen (3.1.2)  {#language-of-parts}
@@ -913,14 +913,14 @@ Um ein span-Element mit der entsprechenden Sprache hinzuzufügen, können Sie Ih
 
 #### Weitere Informationen – Sprache von Teilen (3.1.2) {#more-information-language-of-parts}
 
-* [Erfolgskriterium 3.1.2 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html)
-* [Erfolgskriterium 3.1.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-other-lang-id)
+* [Grundlegendes zu Erfolgskriterium 3.1.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html?lang=de)
+* [Erfüllen von Erfolgskriterium 3.1.2](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-other-lang-id)
 
-### Helfen Sie Benutzern, Fehler zu vermeiden und zu korrigieren (3.3)     {#help-users-avoid-and-correct-mistakes}
+### Helfen Sie Benutzern, Fehler zu vermeiden und zu korrigieren (3.3) {#help-users-avoid-and-correct-mistakes}
 
 [Richtlinie 3.3 Hilfestellung bei der Eingabe: Helfen Sie Benutzern, Fehler zu vermeiden und zu korrigieren.](https://www.w3.org/TR/WCAG20/#minimize-error)
 
-### Beschriftungen oder Anweisungen (3.3.2)     {#labels-or-instructions}
+### Beschriftungen oder Anweisungen (3.3.2) {#labels-or-instructions}
 
 * Erfolgskriterium 3.3.2
 * Level A
@@ -936,7 +936,7 @@ In AEM wird eine Standardbeschriftung eingefügt, wenn Sie eine Formularkomponen
 
 Dieses Feld **Titel** muss für Feldelemente verwendet werden, da es eine Kennzeichnung bereitstellt, die für Hilfstechnologien verfügbar ist. Das einfache Schreiben einer Kennzeichnung in Text neben dem Feld reicht nicht aus.
 
-Bei einigen Formularkomponenten ist es auch möglich, Kennzeichnungen mithilfe des Kontrollkästchens **Titel ausblenden** unsichtbar zu machen. Auf diese Weise ausgeblendete Kennzeichnungen sind weiterhin für Hilfstechnologien verfügbar, werden jedoch nicht auf dem Bildschirm angezeigt. Auch wenn dies in einigen Fällen ein guter Ansatz sein kann, ist es am besten, möglichst eine visuelle Bezeichnung einzufügen. Einige Benutzerinnen und Benutzer betrachten möglicherweise nur einen kleinen Bereich des Bildschirms (ein Feld nach dem anderen) und benötigen die Kennzeichnungen, um das Feld korrekt zu identifizieren.
+Bei einigen Formularkomponenten ist es auch möglich, Kennzeichnungen mithilfe des Kontrollkästchens **Titel ausblenden** unsichtbar zu machen. Auf diese Weise ausgeblendete Beschriftungen sind weiterhin für Hilfstechnologien verfügbar, werden jedoch nicht auf dem Bildschirm angezeigt. Auch wenn dies in einigen Fällen ein guter Ansatz sein kann, ist es am besten, möglichst eine visuelle Bezeichnung einzufügen. Einige Benutzerinnen und Benutzer betrachten möglicherweise nur einen kleinen Bereich des Bildschirms (ein Feld nach dem anderen) und benötigen die Kennzeichnungen, um das Feld korrekt zu identifizieren.
 
 #### Bild-Schaltflächen {#image-buttons}
 
@@ -974,5 +974,5 @@ In einfachen Formularen mit wenigen Funktionen kann eine passende Kennzeichnung 
 
 #### Weitere Informationen – Beschriftungen oder Anweisungen (3.3.2) {#more-information-labels-or-instructions}
 
-* [Erfolgskriterium 3.3.2 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html)
-* [Erfolgskriterium 3.3.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-minimize-error-cues)
+* [Grundlegendes zum Erfolgskriterium 3.3.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html?lang=de)
+* [Erfüllen von Erfolgskriterium 3.3.2](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-minimize-error-cues)

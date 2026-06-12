@@ -1,6 +1,6 @@
 ---
 title: Verwenden von cURL mit AEM
-description: 'Erfahren Sie, wie Sie cURL für gängige Aufgaben in Adobe Experience Manager verwenden. '
+description: Erfahren Sie, wie Sie cURL für gängige Aufgaben in Adobe Experience Manager verwenden.
 contentOwner: Silviu Raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 12b370e3041ff179cd249f3d4e6ef584c4339909
-workflow-type: ht
-source-wordcount: '1061'
+workflow-type: tm+mt
+source-wordcount: '1071'
 ht-degree: 100%
 
 ---
@@ -48,7 +48,7 @@ Um zu ermitteln, welchen Befehl Sie für den gewünschten Vorgang benötigen, er
 
 Die dafür nötigen Schritte werden nachfolgend am Beispiel der Erstellung einer neuen Seite im Chrome-Browser beschrieben.
 
-1. Bereiten Sie die Aktion vor, die Sie in AEM aufrufen möchten.  In diesem Beispiel sind wir am Ende des Assistenten **Seite erstellen** angekommen, haben jedoch noch nicht auf **Erstellen** geklickt.
+1. Bereiten Sie die Aktion vor, die Sie in AEM aufrufen möchten. In diesem Beispiel sind wir am Ende des Assistenten **Seite erstellen** angekommen, haben jedoch noch nicht auf **Erstellen** geklickt.
 
    ![chlimage_1-66](assets/chlimage_1-66a.png)
 
@@ -201,7 +201,7 @@ curl -u <user>:<password> -FaddMembers=testuser1 http://localhost:4502/home/grou
 curl -u <user>:<password> -FremoveMembers=testuser1 http://localhost:4502/home/groups/t/testGroup.rw.html
 ```
 
-#### Festlegen der Gruppenmitgliedschaft einer Benutzerin oder eines Benutzers {#set-a-user-s-group-membership}
+#### Festlegen der Gruppenzugehörigkeit einer Benutzerin oder eines Benutzers {#set-a-user-s-group-membership}
 
 ```shell
 curl -u <user>:<password> -Fmembership=contributor -Fmembership=testgroup http://localhost:4502/home/users/t/testuser.rw.html
@@ -231,7 +231,7 @@ Detaillierte Informationen finden Sie unter [Sichern und Wiederherstellen](/help
 curl -u <user>:<password> -Faction=start http://localhost:4502/system/console/bundles/<bundle-name>
 ```
 
-#### Beenden eines Bundles {#stopping-a-bundle}
+#### Stoppen eines Bundles {#stopping-a-bundle}
 
 ```shell
 curl -u <user>:<password> -Faction=stop http://localhost:4502/system/console/bundles/<bundle-name>
