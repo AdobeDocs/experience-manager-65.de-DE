@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '666'
 ht-degree: 3%
 
 ---
@@ -30,9 +30,9 @@ Banner stehen für normalerweise für grafische Werbelinks.
 >
 >In den folgenden Ressourcen in der Online-Hilfe erfahren Sie mehr über die folgenden Themen in AEM Mobile-Programmen:
 >
->* [Überlegungen zum Design](https://helpx.adobe.com/de/digital-publishing-solution/help/design-app.html)
+>* [Überlegungen zum Design](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Erstellen von Bannern](https://helpx.adobe.com/de/digital-publishing-solution/help/creating-banners.html)
+>* [Erstellen von Bannern](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
 >
 
 ## Erstellen eines Banners {#creating-a-banner}
@@ -69,7 +69,7 @@ Der Workflow zum Importieren eines neuen Artikels
 
 ## Bearbeiten eines Banners {#editing-a-banner}
 
-Verwenden Sie den integrierten AEM-Drag-and-Drop-Editor, um einen Artikel hinzuzufügen oder zu ändern. Komponenten wie Text und Bilder können hinzugefügt/entfernt werden. Bilder von DAM Assets können eingefügt werden.
+Verwenden Sie den integrierten Drag-and-Drop-Editor von AEM, um einen Artikel hinzuzufügen oder zu ändern. Komponenten wie Text und Bilder können hinzugefügt/entfernt werden. Bilder von DAM Assets können eingefügt werden.
 
 >[!CAUTION]
 >
@@ -78,7 +78,7 @@ Verwenden Sie den integrierten AEM-Drag-and-Drop-Editor, um einen Artikel hinzuz
 Der Workflow zum Bearbeiten eines Artikels:
 
 1. Wählen Sie unter Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Wählen Sie ein Banner aus AEM-Quellen aus der Kachel **Banner verwalten** aus.
+1. Wählen Sie ein Banner aus der AEM-Quelle aus der Kachel **Banner verwalten** aus.
 1. Klicken Sie in der Listenansicht auf das hervorgehobene Banner, um es im Inhaltseditor zu öffnen.
 1. Verwenden Sie den Inhaltseditor, um Bannerinhalte (Manuskripte, Bilder, Text usw.) in den Arbeitsbereich zu ziehen.
 

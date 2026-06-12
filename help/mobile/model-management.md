@@ -10,7 +10,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Die Modellverwaltung umfasst die Erstellung von **&#x200B;**, **Entitäten** und
 
 Ein Modell beschreibt den Inhaltstyp und gibt an, welche Informationen dem nativen Programm zur Verfügung stehen. Es ist eine Beschreibung dessen, woraus ein Teil des Inhalts besteht. Ein Inhaltsmodell ist die Regel, mit der ein Inhaltselement erstellt wird. Das Inhaltsmodell umfasst, welche Daten verfügbar sind, welche Assets verwendet werden können, die Beziehung zwischen Assets und Daten, die Beziehung zu anderen Inhaltsmodellen und die verfügbaren Metadaten.
 
-Modelle dienen auch als Möglichkeit, vorhandene AEM-Inhalte in Objekte umzuwandeln, die von nativen Mobile Apps einfach verwendet werden können.
+Mit -Modellen können auch vorhandene AEM-Inhalte in -Objekte umgewandelt werden, die von nativen Mobile Apps einfach verwendet werden können.
 
 Content Services bietet einige vordefinierte Modelle für gängige Objekte wie Assets, Asset-Sammlungen, HTML-Seiten, App-Konfigurationen und kanalunabhängige Seiten. Diese sind so konfigurierbar, dass sie spezifischen Kundenanforderungen gerecht werden, ohne dass ein AEM-Entwicklungsaufwand erforderlich ist.
 
@@ -56,13 +56,13 @@ Eine Entität ist eine Instanz eines Inhaltsmodells. Eine Entität wird über di
 
 Wenn bereits AEM-Inhalte vorhanden sind, wird eine Entität mithilfe eines Modells und der AEM-Inhaltsquelle generiert. Beispielsweise ist eine Seitenentität ein kanal- und layoutunabhängiges Objekt, das aus einer AEM-Seite und dem Seitenmodell generiert wird.
 
-Änderungen am referenzierten Inhalt einer Entität führen zu einer Änderung der Entität. Wenn beispielsweise eine *cq:page* aktualisiert wird, werden auch alle Entitäten aktualisiert, die auf dieser Seite basieren.
+Änderungen am referenzierten Inhalt einer Entität führen zu einer Änderung der Entität. Wenn beispielsweise ein *cq:page* aktualisiert wird, werden auch alle Entitäten aktualisiert, die auf dieser Seite basieren.
 
 Informationen zum Erstellen benutzerdefinierter Entitäten aus Modellen finden Sie unter **[Arbeiten mit Entitäten](/help/mobile/spaces-and-entities.md)**.
 
 >[!NOTE]
 >
->Wenn das Modell keinem vorhandenen AEM-Inhalt entspricht, z. B. wenn der Kunde ein Modell erstellt hat, gibt es eine Benutzeroberfläche, über die der Kunde eine Entität erstellen kann.
+>Wenn das Modell keinem bestehenden AEM-Inhalt entspricht, z. B. der Kunde hat ein Modell erstellt, gibt es eine Benutzeroberfläche, über die der Kunde eine Entität erstellen kann.
 >
 
 ### Leerzeichen im Inhaltsmodell {#spaces-in-content-model}

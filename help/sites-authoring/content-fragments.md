@@ -162,7 +162,7 @@ Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
 >[!NOTE]
 >
->Sie können auch [visuelle Elemente (Bilder) in das Fragment selbst einfügen](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>Sie können auch [visuelle Assets (Bilder) in das Fragment selbst einfügen](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
 >Die in das Inhaltsfragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz verbunden. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden.
 
@@ -184,7 +184,7 @@ Wenn Sie [verknüpfte Inhalte](/help/assets/content-fragments/content-fragments-
 
 >[!NOTE]
 >
->Es gibt diverse Methoden, um [visuelle Assets (zum Beispiel Fotos)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zum Fragment und/oder der Seite hinzuzufügen.
+>Es gibt verschiedene Methoden zum Hinzufügen von [visuellen Assets (z. B. Bildern)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite.
 
 >[!NOTE]
 >

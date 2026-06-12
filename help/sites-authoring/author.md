@@ -7,8 +7,8 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 100%
+source-wordcount: '499'
+ht-degree: 98%
 
 ---
 
@@ -66,20 +66,20 @@ Wenn die Inhalte der AEM-Site fertig sind, werden sie in der **Veröffentlichung
 
 Normalerweise befindet sich die Veröffentlichungsumgebung innerhalb der „entmilitarisierten Zone“, mit anderen Worten: für das Internet verfügbar, aber nicht mehr unter dem vollständigen Schutz des internen Netzwerks.
 
-Wenn die AEM-Site eine [ Community-Site](/help/communities/overview.md) ist oder [Community-Komponenten](/help/communities/author-communities.md) beinhaltet, können angemeldete Besucherinnen und Besucher der Site (Mitglieder) mit Community-Funktionen interagieren. Sie können beispielsweise in einem Forum posten, Kommentare abgeben oder anderen Mitgliedern folgen. Mitglieder erhalten möglicherweise die Berechtigung, Aktivitäten durchzuführen, die normalerweise nur in der Autorenumgebung verfügbar sind. Hierzu gehören unter anderem das Erstellen von neuen Seiten (Community-Gruppen) oder Blog-Beiträgen oder die Moderation der Beiträge anderer Mitglieder.
+Wenn die AEM-Site eine [&#x200B; Community-Site](/help/communities/overview.md) ist oder [Community-Komponenten](/help/communities/author-communities.md) beinhaltet, können angemeldete Besucherinnen und Besucher der Site (Mitglieder) mit Community-Funktionen interagieren. Sie können beispielsweise in einem Forum posten, Kommentare abgeben oder anderen Mitgliedern folgen. Mitglieder erhalten möglicherweise die Berechtigung, Aktivitäten durchzuführen, die normalerweise nur in der Autorenumgebung verfügbar sind. Hierzu gehören unter anderem das Erstellen von neuen Seiten (Community-Gruppen) oder Blog-Beiträgen oder die Moderation der Beiträge anderer Mitglieder.
 
 >[!NOTE]
 >
 >Leider gibt es manchmal Überschneidungen in der verwendeten Terminologie. Dies kann bei Folgendem vorkommen:
 >
->* **Veröffentlichen/Veröffentlichung rückgängig machen**
->  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
+>* **Veröffentlichen/Veröffentlichung aufheben**
+>  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung öffentlich verfügbar machen (oder nicht).
 >
 >* **Aktivieren/Deaktivieren**
->  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
+>  Diese Begriffe sind gleichbedeutend mit Veröffentlichen/Rückgängigmachen der Veröffentlichung.
 >
 >* **Replizieren/Replikation**
->  Dies sind technische Begriffe, die für die Verschiebung von Daten (z. B. Seiteninhalte, Dateien, Code, Benutzerkommentare) zwischen Umgebungen verwendet werden, z. B. beim Veröffentlichen oder beim Zurückreplizieren von Benutzerkommentaren.
+>  Dies sind die technischen Begriffe, die verwendet werden, um das Verschieben von Daten (z. B. Seiteninhalte, Dateien, Code, Benutzerkommentare) von einer Umgebung in eine andere anzugeben, d. h. beim Veröffentlichen oder Rückwärtsreplizieren von Benutzerkommentaren.
 >
 
 #### Dispatcher {#dispatcher}
