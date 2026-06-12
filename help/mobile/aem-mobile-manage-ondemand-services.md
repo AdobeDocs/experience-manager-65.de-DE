@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '266'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Mit der Mobile On-Demand Preflight-App können Sie alle Projekte anzeigen, auf d
 ## Vorschau mit Preflight {#previewing-with-preflight-1}
 
 1. Wählen Sie unter Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Klicken Sie auf die Auslassungszeichen (…) in der Kachel **Artikel verwalten** (oder Banner/Sammlungen).
+1. Klicken Sie auf die Auslassungspunkte (…) über die Kachel **Artikel verwalten** (oder Banner/Sammlungen).
 1. Wählen **Preflight** in der Aktionsleiste aus.
 1. Klicken Sie **Dialogfeld auf** Preflight aktivieren“.
 1. Ihre App ist jetzt für die Vorschau in der Mobile On-Demand Preflight-App bereit.
@@ -42,7 +42,7 @@ Mit der Mobile On-Demand Preflight-App können Sie alle Projekte anzeigen, auf d
 
 >[!NOTE]
 >
->Die AEM Preflight-App wird für die Vorschau von Inhalten und das Durchsuchen von Seiten verwendet. Um mehr über Preflight App zu erfahren, klicken Sie [hier](https://helpx.adobe.com/de/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>Die AEM Preflight-App wird für die Vorschau von Inhalten und das Durchsuchen von Seiten verwendet. Um mehr über Preflight App zu erfahren, klicken Sie [hier](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
 ### Vorwärtskommen {#getting-ahead}
@@ -57,4 +57,4 @@ Wenn Sie weiterhin weitere Informationen zum Erstellen von Inhalten benötigen, 
 Weitere Informationen zu den beiden anderen Rollen und Zuständigkeiten beim Erstellen einer AEM Mobile On-demand Services-App finden Sie in den folgenden Ressourcen:
 
 * [Entwickeln von AEM-Inhalten für AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
-* [Authoring von AEM-Inhalten für die AEM Mobile On-demand Services-App](/help/mobile/mobile-apps-ondemand.md)
+* [Verfassen von AEM-Inhalten für die AEM Mobile On-demand Services-App](/help/mobile/mobile-apps-ondemand.md)

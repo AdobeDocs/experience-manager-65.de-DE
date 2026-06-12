@@ -1,6 +1,6 @@
 ---
-title: Schnellstart (SOAP) für die Java™-API für den Verschlüsselungsdienst
-description: Erfahren Sie, wie Sie Verschlüsselungen vornehmen, die kennwortbasierte/zertifikatsbasierte Verschlüsselung entfernen, Entsperrungen vornehmen und den Verschlüsselungstyp für PDF-Dokumente mithilfe der Java™-API im SOAP-Modus ermitteln.
+title: Java&Trade; API-Schnellstart (SOAP) für den Verschlüsselungs-Service
+description: Erfahren Sie, wie Sie die kennwort-/zertifikatbasierte Verschlüsselung verschlüsseln, entfernen, den Verschlüsselungstyp für PDF-Dokumente mithilfe der Java&trade;-API im SOAP-Modus entsperren und bestimmen.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,24 +11,24 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 100%
+source-wordcount: '481'
+ht-degree: 93%
 
 ---
 
 # Schnellstart (SOAP) für die Java™-API für den Verschlüsselungsdienst {#encryption-service-java-api-quickstart-soap}
 
-[Schnellstart (SOAP-Modus): Verschlüsseln eines PDF-Dokuments unter Verwendung der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
+[Schnellstart (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mithilfe der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Entfernen einer kennwortbasierten Verschlüsselung unter Verwendung der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
+[Schnellstart (SOAP-Modus): Entfernen einer kennwortbasierten Verschlüsselung mithilfe der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mit einem Zertifikat unter Verwendung der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
+[Schnellstart (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mit einem Zertifikat mithilfe der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Entfernen einer zertifikatsbasierten Verschlüsselung unter Verwendung der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
+[Schnellstart (SOAP-Modus): Entfernen einer zertifikatsbasierten Verschlüsselung mithilfe der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Entsperren eines verschlüsselten PDF-Dokuments unter Verwendung der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
+[Schnellstart (SOAP-Modus): Entsperren eines verschlüsselten PDF-Dokuments mithilfe der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Bestimmen des Verschlüsselungstyps unter Verwendung der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
+[Schnellstart (SOAP-Modus): Bestimmen des Verschlüsselungstyps mithilfe der Java™-API](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 

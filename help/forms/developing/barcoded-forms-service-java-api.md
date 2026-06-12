@@ -1,6 +1,6 @@
 ---
-title: Java™-API-Schnellstart (SOAP) für den Dienst „Barcode-Formulare“
-description: Erfahren Sie, wie der Java™-API-Schnellstart (SOAP) für den Dienst „Barcode-Formulare“ in AEM Forms die nahtlose Verarbeitung von Barcodes ermöglicht.
+title: Java&Trade; API-Schnellstart (SOAP) für den Barcoded Forms-Service
+description: Erfahren Sie, wie der Java&trade; API-Schnellstart (SOAP) für den Barcoded Forms-Service in AEM Forms die nahtlose Verarbeitung von Barcodes ermöglicht.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 100%
+source-wordcount: '230'
+ht-degree: 87%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Der Java™-API-Schnellstart (SOAP) ist für den Dienst „Barcode-Formulare“ verfügbar:
 
-[Schnellstart (SOAP-Modus): Decodieren von Barcode-Formulardaten mithilfe der Java-API](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[Schnellstart (SOAP-Modus): Decodieren von Barcode-Formulardaten mithilfe der Java™-API](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 

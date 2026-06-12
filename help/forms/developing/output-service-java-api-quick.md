@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1302'
+source-wordcount: '1307'
 ht-degree: 100%
 
 ---
@@ -810,7 +810,7 @@ Die folgende Java-Kurzanleitung ruft die Datei *Loan.xdp* von Content Services a
 
 ## Schnellstart (SOAP-Modus): Erstellen eines PDF-Dokuments basierend auf Fragmenten mithilfe der Java-API {#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api}
 
-Im folgenden Java-Code-Beispiel wird ein PDF-Dokument erstellt, das auf einem Formularentwurf basiert, der vom Assembler-Service zusammengestellt wurde. Der Assembler-Dienst stellt Fragmente in mehreren XDP-Dateien zu einem einzigen Formularentwurf zusammen. Die Anwendungslogik, die den Assembler-Dienst aufruft, befindet sich in einer benutzerdefinierten Methode namens `GetFormDesign`. Das nicht interaktive Formular wird als PDF-Datei mit dem Namen „Loan.pdf“ auf dem Client-Computer gespeichert. (Siehe [Erstellen von PDF-Dokumenten mithilfe von Fragmenten](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments).)
+Im folgenden Java-Code-Beispiel wird ein PDF-Dokument erstellt, das auf einem Formularentwurf basiert, der vom Assembler-Dienst zusammengestellt wurde. Der Assembler-Dienst stellt Fragmente in mehreren XDP-Dateien zu einem einzigen Formularentwurf zusammen. Die Anwendungslogik, die den Assembler-Dienst aufruft, befindet sich in einer benutzerdefinierten Methode namens `GetFormDesign`. Das nicht interaktive Formular wird als PDF-Datei mit dem Namen „Loan.pdf“ auf dem Client-Computer gespeichert. (Siehe [Erstellen von PDF-Dokumenten mithilfe von Fragmenten](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments).)
 
 ```java
  /*

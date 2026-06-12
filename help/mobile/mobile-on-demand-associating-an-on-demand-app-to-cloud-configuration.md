@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '406'
 ht-degree: 6%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 6%
 
 {{ue-over-mobile}}
 
-Durch die Verknüpfung einer On-Demand-App mit einer Cloud-Konfiguration kann Adobe Experience Manager (AEM) direkt mit einem auf Anfrage gehosteten mobilen Projekt kommunizieren, indem ein bidirektionaler Link eingerichtet wird. Durch die Verknüpfung Ihrer App mit einem Mobile-On-Demand-Projekt können Sie Inhalte wie Artikel, Banner und Sammlungen innerhalb von AEM erstellen, diese Inhalte aber auch Mobile On-Demand bereitstellen.
+Durch die Verknüpfung einer On-Demand-App mit einer Cloud-Konfiguration kann Adobe Experience Manager (AEM) direkt mit einem auf Anfrage gehosteten mobilen Projekt kommunizieren, indem ein bidirektionaler Link eingerichtet wird. Durch die Verknüpfung Ihrer App mit einem Mobile-On-Demand-Projekt können Sie in AEM Inhalte wie Artikel, Banner und Sammlungen erstellen, diese Inhalte aber auch Mobile On-Demand bereitstellen.
 
-Von dort aus wird die Veröffentlichung, Vorschau und Verwaltung von Inhalten möglich. Sie können auch vorhandene Mobile-On-Demand-Inhalte in AEM importieren und Inhaltsbearbeitungen durchführen.
+Von dort aus wird die Veröffentlichung, Vorschau und Verwaltung von Inhalten möglich. Sie können auch vorhandene Mobile-On-Demand-Inhalte in AEM importieren und Inhalte bearbeiten.
 
 ## Einrichten der Cloud-Konfiguration {#setting-up-cloud-configuration}
 
@@ -32,9 +32,9 @@ Von dort aus wird die Veröffentlichung, Vorschau und Verwaltung von Inhalten m�
 >
 >Weitere Informationen finden Sie [Einrichten von AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) im Abschnitt zur Verwaltung.
 
-Um Mobile On-Demand-Cloud Service zu konfigurieren, klicken Sie im Dashboard Ihrer Mobile App auf das oberste Zahnrad oben rechts **der Kachel** Verbindung verwalten“.
+Um Mobile On-Demand-Cloud-Services zu konfigurieren, klicken Sie auf das oberste Zahnrad in der oberen rechten Ecke der Kachel **Verbindung verwalten** im Dashboard Ihrer App.
 
-Sie sollten mit dem App-Dashboard und den verfügbaren Kacheln vertraut sein. Weitere Informationen finden Sie unter &lbrace;0[&#128279;](/help/mobile/mobile-apps-ondemand-application-dashboard.md) Dashboard der AEM Mobile-Anwendung .
+Sie sollten mit dem App-Dashboard und den verfügbaren Kacheln vertraut sein. Weitere Informationen finden Sie unter {0](/help/mobile/mobile-apps-ondemand-application-dashboard.md) Dashboard der AEM Mobile-Anwendung .[
 
 ### Einrichten eines Links zur Cloud-Konfiguration {#setting-up-link-to-cloud-configuration}
 
