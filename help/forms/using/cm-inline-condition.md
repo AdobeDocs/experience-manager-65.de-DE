@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1670'
 ht-degree: 100%
 
 ---
@@ -93,11 +93,11 @@ Sie haben möglicherweise dynamische Daten in Ihren interaktiven Kommunikationen
 
 Außerdem können Sie eine Regel/Bedingung innerhalb des Wiederholungskonstrukts angeben, um die Daten/Einträge mit einer Bedingung zu versehen, die in der interaktiven Kommunikation/im Brief gerendert werden.
 
-### Beispiel: Verwenden der Wiederholungsfunktion in einem Brief, um eine Liste von Kreditkartentransaktionen zu formatieren, strukturieren und anzuzeigen {#example-using-repeat-in-an-interactive-communication-to-format-structure-and-display-a-list-of-credit-card-transactions}
+### Beispiel: Verwenden der Wiederholungsfunktion in einer interaktiven Kommunikation, um eine Liste von Kreditkartentransaktionen zu formatieren, strukturieren und anzuzeigen {#example-using-repeat-in-an-interactive-communication-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
 Das folgende Beispiel zeigt die Schritte für die Verwendung der Wiederholungsfunktion, um die Kreditkartentransaktionen in einer interaktiven Kommunikation zu strukturieren und zu rendern.
 
-1. Fügen Sie in ein auf einem Formulardatenmodell basierendes Textdokumentfragment die relevanten Objekte des Formulardatenmodells (und den eingebetteten Text, der für die Beschriftungen erforderlich ist, wie in diesem Beispiel) ein:
+1. Fügen Sie in ein auf einem Datenmodellobjekt für ein Formular basierendes Textdokumentfragment die relevanten Datenmodellobjekte (und den eingebetteten Text, der für die Beschriftungen erforderlich ist, wie in diesem Beispiel) ein:
 
    ![1_elementstext](assets/1_elementstext.png)
 
@@ -117,7 +117,7 @@ Das folgende Beispiel zeigt die Schritte für die Verwendung der Wiederholungsfu
 
 1. Wählen Sie „Zeilenumbruch“ als Trennzeichen und bei Bedarf „Bedingung hinzufügen“ aus, um eine Regel zu erstellen. Sie können auch Text als Trennzeichen verwenden und die Textzeichen angeben, die als Trennzeichen verwendet werden sollen.
 
-   Das Dialogfeld „Regel erstellen“ wird angezeigt. 
+   Das Dialogfeld „Regel erstellen“ wird angezeigt.
 
 1. Erstellen Sie eine Regel, um die Transaktionen anzuzeigen, die nach dem 28. Februar 2018 datiert sind, damit nur die Transaktionen für den Monat März in die interaktive Kommunikation einbezogen werden.
 

@@ -11,7 +11,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '628'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Siehe auch [Merkmale von SRP-Optionen](working-with-srp.md#characteristics-of-sr
 
 ### MySQL-Konfiguration {#mysql-configuration}
 
-Eine MySQL-Installation kann von Aktivierungsfunktionen und Common Store (DSRP) innerhalb desselben Verbindungspools gemeinsam genutzt werden, indem verschiedene Datenbank-(Schema-)Namen sowie verschiedene Verbindungen (server:port) verwendet werden.
+Eine MySQL-Installation kann von Aktivierungsfunktionen und Common Store (DSRP) innerhalb desselben Verbindungspools gemeinsam genutzt werden, indem verschiedene Datenbank-(Schema-)Namen sowie verschiedene Verbindungen (Server) verwendet :port.
 
 Informationen zur Installation und Konfiguration finden Sie unter [MySQL-Konfiguration für DSRP](dsrp-mysql.md).
 
@@ -64,11 +64,11 @@ So greifen Sie auf der Autoreninstanz auf die Speicherkonfigurationskonsole zu
    * Select **[!UICONTROL Communities]**
    * Wählen Sie **[!UICONTROL Speicherkonfiguration]**
 
-      * Der resultierende Speicherort ist beispielsweise: [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
+      * Der resultierende Speicherort ist beispielsweise: [http://localhost:4502/Communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
 
      >[!NOTE]
      >
-     >Die standardmäßige Speicherkonfiguration wird jetzt unter conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) gespeichert      anstelle `etc` Pfads (`/etc/socialconfig/srpc/defaultconfiguration`). Es wird empfohlen, die [Migrationsschritte“ zu befolgen](#zerodt-migration-steps) damit defaultsrp erwartungsgemäß funktioniert.
+     >Die standardmäßige Speicherkonfiguration wird jetzt in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) anstelle `etc` path (`/etc/socialconfig/srpc/defaultconfiguration`) gespeichert. Es wird empfohlen, die [Migrationsschritte“ zu befolgen](#zerodt-migration-steps) damit defaultsrp erwartungsgemäß funktioniert.
 
   ![dsrp-config](assets/dsrp-config.png)
 
@@ -91,7 +91,7 @@ So greifen Sie auf der Autoreninstanz auf die Speicherkonfigurationskonsole zu
 
    * **[ZooKeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) Host**
 
-     Lassen Sie diesen Wert leer, wenn Sie Solr mit dem internen ZooKeeper ausführen. Andernfalls müssen Sie bei der Ausführung [SolrCloud-Modus](solr.md#solrcloud-mode) mit einem externen ZooKeeper diesen Wert auf den URI für den ZooKeeper festlegen, z. B. *my.server.com:80*
+     Lassen Sie diesen Wert leer, wenn Sie Solr mit dem internen ZooKeeper ausführen. Andernfalls sollten Sie bei der Ausführung [SolrCloud-Modus](solr.md#solrcloud-mode) mit einem externen ZooKeeper diesen Wert auf den URI für den ZooKeeper festlegen, z. B. *my.server.com:80*
 
      *Standard*: *&lt;blank>*
 
@@ -107,10 +107,10 @@ So greifen Sie auf der Autoreninstanz auf die Speicherkonfigurationskonsole zu
 
 ### Keine Ausfallzeiten bei der Migration für Standardschritte {#zerodt-migration-steps}
 
-Um sicherzustellen, dass die standardmäßige srp-Seite [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) erwartungsgemäß funktioniert, führen Sie die folgenden Schritte aus:
+Gehen Sie wie folgt vor, um sicherzustellen, dass die Seite „defaultsrp:4502[http://localhost/Communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) erwartungsgemäß funktioniert:
 
 1. Benennen Sie den Pfad unter `/etc/socialconfig` in `/etc/socialconfig_old` um, damit die Systemkonfiguration auf „jsrp“ (Standard) zurückgesetzt wird.
-1. Wechseln Sie zur Seite „defaultsrp“ [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp), auf der JSRP konfiguriert ist. Klicken Sie auf **[!UICONTROL Senden]**, damit `/conf/global/settings/community/srpc` ein neuer Standardkonfigurationsknoten erstellt wird.
+1. Wechseln Sie zur Seite „defaultsrp“ [http://localhost:4502/Communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp), auf der jsrp konfiguriert ist. Klicken Sie auf **[!UICONTROL Senden]**, damit `/conf/global/settings/community/srpc` ein neuer Standardkonfigurationsknoten erstellt wird.
 1. Löschen Sie die erstellte `/conf/global/settings/community/srpc/defaultconfiguration`.
 1. Kopieren Sie im vorherigen Schritt die alte `/etc/socialconfig_old/srpc/defaultconfiguration` anstelle des gelöschten Knotens (`/conf/global/settings/community/srpc/defaultconfiguration`).
 1. Löschen Sie den alten `etc` Knoten `/etc/socialconfig_old`.

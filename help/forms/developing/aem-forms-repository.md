@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '9036'
+source-wordcount: '9089'
 ht-degree: 100%
 
 ---
@@ -97,11 +97,11 @@ Gehen Sie wie folgt vor, um einen Ordner zu erstellen:
 1. Erstellen Sie den Ordner.
 1. Schreiben Sie den Ordner in das Repository.
 
-**Projektdateien einschließen**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, schließen Sie die Proxy-Dateien ein.
 
-**Service-Client erstellen**
+**Dienstclient erstellen**
 
 Bevor Sie eine Ressourcensammlung programmgesteuert erstellen können, müssen Sie eine Verbindung herstellen und Anmeldeinformationen angeben. Dies wird durch das Erstellen eines Service-Clients erreicht.
 
@@ -228,7 +228,7 @@ Um eine Ressource zu schreiben, führen Sie die folgenden Schritte aus:
 1. Geben Sie den URI der zu lesenden Ressource an.
 1. Lesen Sie die Ressource.
 
-**Einschließen von Projektdateien**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, schließen Sie die Proxy-Dateien ein.
 
@@ -278,7 +278,7 @@ Schreiben Sie eine Ressource mit der Repository Service API (Java):
 
 1. Die URI des Zielordners für die Ressource angeben
 
-   Geben Sie die URI des Zielordners für die Ressource an. In diesem Fall, da die Ressource mit Namen `testResource` im Ordner mit dem Namen `testFolder` gespeichert wird, lautet der URI des Ordners `"/testFolder"`. Der URI wird als ein `java.lang.String`-Objekt gespeichert.
+   Geben Sie die URI des Zielordners für die Ressource an. In diesem Fall, da die Ressource mit dem Namen `testResource` im Ordner mit dem Namen `testFolder` gespeichert wird, lautet der URI des Ordners `"/testFolder"`. Der URI wird als ein `java.lang.String`-Objekt gespeichert.
 
 1. Ressource erstellen
 
@@ -326,7 +326,7 @@ Schreiben Sie eine Ressource mithilfe der Repository Service-API (Web-Dienst):
 
 1. Erstellen des Service-Clients
 
-   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen. Legen Sie die `Credentials`-Eigenschaft mithilfe eines `System.Net.NetworkCredential`-Objekts fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt durch Aufrufen des Standardkonstruktors. Legen Sie die `Credentials`-Eigenschaft mithilfe eines `System.Net.NetworkCredential`-Objekts fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Die URI des Zielordners für die Ressource angeben
 
@@ -366,7 +366,7 @@ Sie können Ressourcen durch die Auflistung von Ressourcen identifizieren. Für 
 
 Nachdem Sie Ihre Ressourcen organisiert haben, können Sie die von Ihnen erstellte Struktur überprüfen, indem Sie einen bestimmten Zweig der Struktur sehen, ähnlich wie bei einem Betriebssystem.
 
-Auflisten von Ressourcen funktioniert nach Beziehung: Ressourcen sind Mitglieder von Ordnern. Die Mitgliedschaft wird durch eine Beziehung des Typs „Mitglied von“ repräsentiert. Wenn Sie Ressourcen in einem bestimmten Ordner auflisten, fragen Sie nach Ressourcen, die mit einem bestimmten Ordner durch die Beziehung „Mitglied von“ verbunden sind. Beziehungen sind gerichtet: Ein Mitglied einer Beziehung hat eine Quelle, die Mitglied der Zielgruppe ist. Die Quelle ist die Ressource; das Ziel ist der übergeordnete Ordner.
+Auflisten von Ressourcen funktioniert nach Beziehung: Ressourcen sind Mitglieder von Ordnern. Die Zugehörigkeit wird durch eine Beziehung des Typs „Mitglied von“ repräsentiert. Wenn Sie Ressourcen in einem bestimmten Ordner auflisten, fragen Sie nach Ressourcen, die mit einem bestimmten Ordner durch die Beziehung „Mitglied von“ verbunden sind. Beziehungen sind gerichtet: Ein Mitglied einer Beziehung hat eine Quelle, die Mitglied der Zielgruppe ist. Die Quelle ist die Ressource; das Ziel ist der übergeordnete Ordner.
 
 >[!NOTE]
 >
@@ -381,11 +381,11 @@ Gehen Sie wie folgt vor, um Ressourcen aufzulisten:
 1. Geben Sie den Ordnerpfad an.
 1. Rufen Sie die Liste der Ressourcen ab.
 
-**Projektdateien einschließen**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, schließen Sie die Proxy-Dateien ein.
 
-**Service-Client erstellen**
+**Dienstclient erstellen**
 
 Bevor Sie eine Ressourcensammlung programmgesteuert erstellen können, müssen Sie eine Verbindung herstellen und Anmeldeinformationen angeben. Dies wird durch das Erstellen eines Service-Clients erreicht.
 
@@ -452,7 +452,7 @@ Auflisten von Ressourcen mithilfe der Repository Service-API (Web Service):
 
 1. Erstellen des Service-Clients
 
-   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen. Legen Sie die `Credentials`-Eigenschaft mithilfe eines `System.Net.NetworkCredential`-Objekts fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt durch Aufrufen des Standardkonstruktors. Legen Sie die `Credentials`-Eigenschaft mithilfe eines `System.Net.NetworkCredential`-Objekts fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Geben Sie den Ordnerpfad an
 
@@ -498,7 +498,7 @@ Gehen Sie wie folgt vor, um eine Ressource zu lesen:
 1. Geben Sie den URI der zu lesenden Ressource an.
 1. Lesen Sie die Ressource.
 
-**Einschließen von Projektdateien**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, schließen Sie die Proxy-Dateien ein.
 
@@ -562,12 +562,12 @@ So lesen Sie eine Ressource mit Hilfe der Repository Service-API (Webservice):
 
 1. Projektdateien einschließen
 
-   * Erstellen Sie eine Microsoft .NET-Client-Assembly, die die Repository-WSDL verwendet. (Siehe [Erstellen einer .NET-Client-Assembly, die die Base64-Codierung verwendet](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding).)
+   * Erstellen Sie eine Microsoft .NET Client-Assembly, die die Repository-WSDL verwendet. (Siehe [Erstellen einer .NET-Client-Assembly, die die Base64-Codierung verwendet](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding).)
    * Referenzieren Sie die Microsoft .NET-Client-Assembly. (Siehe [Erstellen einer .NET-Client-Assembly, die die Base64-Codierung verwendet](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding).)
 
 1. Erstellen des Service-Clients
 
-   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen. Legen Sie seine `Credentials`-Eigenschaft mithilfe eines `System.Net.NetworkCredential`-Objekts fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt durch Aufrufen des Standardkonstruktors. Legen Sie die `Credentials`-Eigenschaft mithilfe eines `System.Net.NetworkCredential`-Objekts fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Angeben des URI der zu lesenden Ressource
 
@@ -608,7 +608,7 @@ Gehen Sie wie folgt vor, um eine Ressource zu aktualisieren:
 1. Rufen Sie die zu aktualisierende Ressource ab.
 1. Aktualisieren Sie die Ressource.
 
-**Projektdateien einschließen**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, schließen Sie die Proxy-Dateien ein.
 
@@ -654,7 +654,7 @@ Aktualisieren einee Ressource mithilfe der Repository Service API (Java):
 
 1. Aktualisieren der Ressource
 
-   Aktualisieren der `Resource`-Objektinformationen. In diesem Beispiel rufen Sie zur Aktualisierung der Beschreibung die Methode `setDescription` des `Resource`-Objekts auf und übergeben die neue Beschreibungszeichenfolge als Parameter.
+   Aktualisieren Sie die `Resource`-Objektinformationen. In diesem Beispiel rufen Sie zur Aktualisierung der Beschreibung die Methode `setDescription` des `Resource`-Objekts auf und übergeben die neue Beschreibungszeichenfolge als Parameter.
 
    Rufen Sie dann das `ServiceClientFactory`-Objekt `updateResource` und übergeben Sie die folgenden Parameter:
 
@@ -683,7 +683,7 @@ Aktualisieren einer Ressource mithilfe der Repository-API (Webdienst):
 
 1. Erstellen des Service-Clients
 
-   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen. Legen Sie seine `Credentials`-Eigenschaft mit einem `System.Net.NetworkCredential`-Objekt fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt durch Aufrufen des Standardkonstruktors. Legen Sie die `Credentials`-Eigenschaft mithilfe eines `System.Net.NetworkCredential`-Objekts fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Zu aktualisierende Ressource abrufen
 
@@ -691,7 +691,7 @@ Aktualisieren einer Ressource mithilfe der Repository-API (Webdienst):
 
 1. Aktualisieren der Ressource
 
-   Aktualisieren Sie die `Resource`-Objektinformationen. Um in diesem Beispiel die Beschreibung zu aktualisieren, weisen Sie dem Feld `description` des Objekts `Resource` einen neuen Wert zu.
+   Aktualisieren der `Resource`-Objektinformationen. Um in diesem Beispiel die Beschreibung zu aktualisieren, weisen Sie dem Feld `description` des Objekts `Resource` einen neuen Wert zu.
 
 1. Rufen Sie die Methode `RepositoryServiceService` des Objekts `updateResource` auf und übergeben Sie die folgenden Parameter:
 
@@ -741,7 +741,7 @@ Gehen Sie folgendermaßen vor, um nach Ressourcen zu suchen:
 1. Suchen Sie nach den Ressourcen.
 1. Rufen Sie die Ressourcen aus dem Suchergebnis ab.
 
-**Projektdateien einschließen**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, schließen Sie die Proxy-Dateien ein.
 
@@ -857,7 +857,7 @@ Suchen Sie mithilfe der Repository-Service-API (Java) nach einer Ressource:
 Sie können Beziehungen zwischen Ressourcen im Repository angeben. Es gibt drei Arten von Beziehungen:
 
 * **Abhängigkeit**: eine Beziehung, in der eine Ressource von anderen Ressourcen abhängig ist, was bedeutet, dass alle damit verbundenen Ressourcen im Repository benötigt werden.
-* **Mitgliedschaft (Dateisystem)**: eine Beziehung, in der sich eine Ressource in einem bestimmten Ordner befindet.
+* **Zugehörigkeit (Dateisystem)**: eine Beziehung, in der sich eine Ressource in einem bestimmten Ordner befindet.
 * **Benutzerdefiniert**: eine Beziehung, die Sie zwischen Ressourcen angeben. Wenn beispielsweise eine Ressource veraltet ist und eine andere in das Repository eingefügt wird, können Sie Ihre eigene Ersatzbeziehung festlegen.
 
 Sie können auch eigene benutzerdefinierte Beziehungen anlegen. Wenn Sie beispielsweise eine HTML-Datei im Repository speichern und ein Bild verwendet wird, können Sie eine benutzerdefinierte Beziehung festlegen, um die HTML-Datei mit dem Bild zu verknüpfen (denn normalerweise werden nur XML-Dateien über eine repository-definierte Abhängigkeitsbeziehung mit Bildern verknüpft sind). Ein weiteres Beispiel für eine benutzerdefinierte Beziehung wäre, wenn Sie eine andere Ansicht des Repositorys mit einer zyklischen Diagrammstruktur anstatt einer Baumstruktur erstellen möchten. Sie können ein Kreisdiagramm zusammen mit einem Viewer definieren, um diese Beziehungen zu durchlaufen. Schließlich könnten Sie angeben, dass eine Ressource eine andere Ressource ersetzt, obwohl die beiden Ressourcen völlig verschieden sind. In diesem Fall können Sie einen Beziehungstyp außerhalb des reservierten Bereichs definieren und eine Beziehung zwischen diesen beiden Ressourcen erstellen. Ihr Programm wäre der einzige Client, der die Beziehung erkennen und verarbeiten könnte, und es könnte für die Suche nach dieser Beziehung verwendet werden.
@@ -877,7 +877,7 @@ Gehen Sie wie folgt vor, um eine Beziehung zwischen zwei Ressourcen anzugeben:
 1. Geben Sie die URIs der Ressourcen an, die verknüpft werden sollen.
 1. Erstellen Sie die Beziehung.
 
-**Projektdateien einschließen**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, schließen Sie die Proxy-Dateien ein.
 
@@ -919,7 +919,7 @@ Erstellen Sie mithilfe der Java-API des Repository-Service Beziehungsressourcen 
 
 1. Geben Sie die URIs der zu verknüpfenden Ressourcen an
 
-   Geben Sie die URIs der zu verknüpfenden Ressourcen an. Da die Ressourcen in diesem Fall `testResource1` und `testResource2` heißen und sich im Ordner `testFolder` befinden, lauten ihre URIs `"/testFolder/testResource1"` und `"/testFolder/testResource2"`. Die URIs werden als `java.lang.String`-Objekte gespeichert. In diesem Beispiel werden die Ressourcen zuerst in das Repository geschrieben und ihre URIs abgerufen. Weitere Informationen zum Schreiben einer Ressource finden Sie unter [Schreiben von Ressourcen](aem-forms-repository.md#writing-resources).
+   Geben Sie die URIs der zu verknüpfenden Ressourcen an. Da die Ressourcen in diesem Fall `testResource1` und `testResource2` heißen und sich in dem Ordner `testFolder` befinden, lauten ihre URIs `"/testFolder/testResource1"` und `"/testFolder/testResource2"`. Die URIs werden als `java.lang.String`-Objekte gespeichert. In diesem Beispiel werden die Ressourcen zuerst in das Repository geschrieben und ihre URIs abgerufen. Weitere Informationen zum Schreiben einer Ressource finden Sie unter [Schreiben von Ressourcen](aem-forms-repository.md#writing-resources).
 
 1. Erstellen Sie die Beziehung
 
@@ -928,12 +928,12 @@ Erstellen Sie mithilfe der Java-API des Repository-Service Beziehungsressourcen 
    * Der URI der Quellressource.
    * Der URI der Zielressource.
    * Typ der Beziehung, wobei es sich um eine der statischen Konstanten in der Klasse `com.adobe.repository.infomodel.bean.Relation` handelt. In diesem Beispiel wird eine Abhängigkeitsbeziehung durch Angabe des Werts `Relation.TYPE_DEPENDANT_OF` festgelegt.
-   * Ein `boolean`-Wert, der angibt, ob die Zielressource automatisch auf der `com.adobe.repository.infomodel.Id`-basierten Kennung der neuen Hauptressource aktualisiert wird. In diesem Beispiel wird aufgrund der Abhängigkeitsbeziehung der Wert `true` festgelegt ist.
+   * Ein `boolean`-Wert, der angibt, ob die Zielressource automatisch auf die `com.adobe.repository.infomodel.Id`-basierte Kennung der neuen Hauptressource aktualisiert wird. In diesem Beispiel wird aufgrund der Abhängigkeitsbeziehung der Wert `true` festgelegt.
 
-   Sie können auch eine Liste verwandter Ressourcen für eine bestimmte Ressource abrufen, indem Sie die Methode `getRelated` des `ResourceRepositoryClient`-Objekts aufrufen und die folgenden Parameter übergeben:
+   Sie können auch eine Liste verwandter Ressourcen für eine bestimmte Ressource abrufen, indem Sie die `getRelated`-Methode des `ResourceRepositoryClient`-Objekts aufrufen und die folgenden Parameter übergeben:
 
    * Der URI der Ressource, für die verwandte Ressourcen abgerufen werden sollen. In diesem Beispiel wird die Quellressource ( `"/testFolder/testResource1"`) angegeben.
-   * Ein `boolean`-Wert, der angibt, ob die angegebene Ressource die Quellressource in der Beziehung ist. In diesem Beispiel wird der Wert `true` angegeben, weil dies der Fall ist.
+   * Ein `boolean`-Wert, der angibt, ob die angegebene Ressource die Quellressource in der Beziehung ist. In diesem Beispiel wird der Wert `true` festgelegt, da dies der Fall ist.
    * Der Beziehungstyp, der eine der statischen Konstanten in der Klasse `Relation` ist. In diesem Beispiel wird eine Abhängigkeitsbeziehung mit demselben Wert angegeben, der bereits zuvor verwendet wurde: `Relation.TYPE_DEPENDANT_OF`.
 
    Die `getRelated`-Methode gibt ein `java.util.List` von `Resource`-Objekten zurück, durch die Sie iterieren können, um jede der zugehörigen Ressourcen abzurufen, wobei Sie die in `List` enthaltenen Objekte in `Resource` umwandeln. In diesem Beispiel wird erwartet, dass `testResource2` in der Liste der zurückgegebenen Ressourcen enthalten ist.
@@ -959,7 +959,7 @@ Erstellen Sie Beziehungsressourcen mithilfe der Repository-API (Webdienst):
 
 1. Erstellen des Service-Clients
 
-   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen. Setzen Sie seine `Credentials`-Eigenschaft mit einem `System.Net.NetworkCredential`-Objekt, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt durch Aufrufen des Standardkonstruktors. Legen Sie die `Credentials`-Eigenschaft mithilfe eines `System.Net.NetworkCredential`-Objekts fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Geben Sie die URIs der zu verknüpfenden Ressourcen an
 
@@ -1018,7 +1018,7 @@ Gehen Sie folgendermaßen vor, um Ressourcen zu sperren und zu entsperren:
 1. Rufen Sie die Sperren für die Ressource ab.
 1. Ressource entsperren
 
-**Projektdateien einschließen**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, schließen Sie die Proxy-Dateien ein.
 
@@ -1111,7 +1111,7 @@ Sperren Sie Ressourcen mithilfe der Repository Service API (Web Service):
 
 1. Erstellen des Service-Clients
 
-   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen. Legen Sie seine `Credentials`-Eigenschaft mit einem `System.Net.NetworkCredential`-Objekt fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt durch Aufrufen des Standardkonstruktors. Legen Sie die `Credentials`-Eigenschaft mithilfe eines `System.Net.NetworkCredential`-Objekts fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Geben Sie den URI der Ressource an, die gesperrt werden soll
 
@@ -1237,7 +1237,7 @@ Löschen einer Ressource mithilfe der Repository-API (Webdienst):
 
 1. Erstellen des Service-Clients
 
-   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen. Legen Sie seine `Credentials`-Eigenschaft mit einem `System.Net.NetworkCredential`-Objekt fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt durch Aufrufen des Standardkonstruktors. Legen Sie die `Credentials`-Eigenschaft mithilfe eines `System.Net.NetworkCredential`-Objekts fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Geben Sie den URI der Ressource an, die gelöscht werden soll
 

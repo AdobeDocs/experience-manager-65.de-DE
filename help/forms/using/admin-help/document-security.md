@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3301'
 ht-degree: 100%
 
 ---
@@ -46,7 +46,7 @@ Durch das Schützen eines Dokuments mit einer Richtlinie behalten Sie die Kontro
 
 Document Security besteht aus einem Server und einer Benutzeroberfläche:
 
-**Server:** Der Server ist die zentrale Komponente, über die Document Security Transaktionen wie z. B. die Authentifizierung von Benutzern, die Richtlinienverwaltung in Echtzeit und das Durchsetzen der Vertraulichkeit ausführt. Der Server stellt außerdem ein zentrales Repository für Richtlinien, Auditdatensätze und andere zugehörige Informationen bereit.
+**Server:** Der Server ist die zentrale Komponente, über die Document Security Transaktionen wie z. B. die Authentifizierung von Benutzern, die Richtlinienverwaltung in Echtzeit und das Durchsetzen der Vertraulichkeit ausführt. Der Server stellt außerdem ein zentrales Repository für Richtlinien, Auditeinträge und andere zugehörige Informationen bereit.
 
 **Web-Seiten:** Die Benutzeroberfläche, auf der Sie Richtlinien erstellen, richtliniengeschützte Dokumente verwalten und Ereignisse im Zusammenhang mit richtliniengeschützten Dokumenten überwachen. Admins können auch globale Optionen wie Benutzerauthentifizierung, Auditing und Messaging für eingeladene Benutzende konfigurieren und Konten eingeladener Benutzender verwalten.
 
@@ -207,7 +207,7 @@ Wenn Sie eine Kopie eines richtliniengeschützten Dokuments mit dem Menübefehl 
 
 ## Richtliniensätze {#policy-sets}
 
-*Richtliniensätze* dienen zum Gruppieren verschiedener Richtlinien mit einem gemeinsamen Zweck. Diese Richtliniensätze werden dann einer Untergruppe von Benutzenden im System zur Verfügung gestellt.
+*Richtliniensätze* dienen zum Gruppieren verschiedener Richtlinien mit einem gemeinsamen Zweck. Diese Richtliniensätze werden dann einer Teilmenge von Benutzenden im System zur Verfügung gestellt.
 
 Jedem Richtliniensatz können ein oder mehrere Richtliniensatz-Koordinatorinnen oder -Koordinatoren zugeordnet sein. Der Richtliniensatzkoordinator ist ein Administrator oder Benutzer mit zusätzlichen Berechtigungen. Die *Richtliniensatz-Koordinatorinnen und -Koordinatoren* sind in der Regel spezialisierte Personen in der Organisation, die die Richtlinien eines bestimmten Richtliniensatzes am besten erstellen können.
 
@@ -247,7 +247,7 @@ Richtlinien sind wiederverwendbare Sätze von Berechtigungen und Benutzergruppen
 
 Fügen Sie zu Richtlinien Benutzergruppen anstelle einzelner Benutzer hinzu. Dies erleichtert die Verwaltung und Anwendung von Richtlinien für viele Benutzende.
 
-* **Benutzerdefinierte Richtliniensätze erstellen**: Ein Richtliniensatz kombiniert mehrere Richtlinien zu einer verwaltbaren Entität. Erstellen Sie benutzerdefinierte Richtliniensätze für Ihre Organisation oder Abteilung, verwenden Sie sie zur Gruppierung verwandter Richtlinien und stellen Sie sie einer Untergruppe von Benutzern im System zur Verfügung.
+* **Benutzerdefinierte Richtliniensätze erstellen**: Ein Richtliniensatz kombiniert mehrere Richtlinien zu einer verwaltbaren Entität. Erstellen Sie benutzerdefinierte Richtliniensätze für Ihre Organisation oder Abteilung, verwenden Sie sie zur Gruppierung verwandter Richtlinien und stellen Sie sie einer Teilmenge von Benutzern im System zur Verfügung.
 
   Die Verwendung von Richtliniensätzen erleichtert die Zuweisung und Verwaltung von verwandten Richtlinien zu bestimmten Benutzern in einer Organisation oder Abteilung. So können beispielsweise separate Richtliniensätze für die Finanz- und Personalabteilung dazu beitragen, die damit verbundenen Richtlinien einfach zu verwalten und auf Dokumente anzuwenden, die für die jeweiligen Abteilungen bestimmt sind.
 
@@ -259,7 +259,7 @@ Fügen Sie zu Richtlinien Benutzergruppen anstelle einzelner Benutzer hinzu. Die
 
    * Verwenden Sie zusätzlich zum standardmäßigen Prozess zur Richtlinienbewertung einen Zugriffskontrollmechanismus, den Ihr Content-Management-System verwendet. Wenn der Dienst beispielsweise bestimmt, ob eine Person ein richtliniengeschütztes Dokument drucken kann, kann er den standardmäßigen Prozess zur Richtlinienbewertung verwenden. Außerdem kann er den Zugriffskontrollmechanismus verwenden, den Ihr Content-Management-System verwendet.
 
-  Obwohl es möglich ist, den Richtlinienbewertungsprozess von Document Security vollständig durch einen externen Autorisierungs-Handler zu ersetzen, wird empfohlen, dass Sie einen externen Autorisierungs-Handler in Verbindung mit dem Richtlinienbewertungsprozess verwenden. Dann kann der Dokumentzugriff über denselben Kontrollmechanismus gesteuert werden, den Ihr Content Management-System verwendet. Wenn beispielsweise der Document Security-Dienst bestimmt, ob eine Person ein richtliniengeschütztes Dokument drucken kann, wird der standardmäßige Prozess zur Richtlinienbewertung verwendet. Außerdem wird der Zugriffssteuerungsmechanismus verwendet, den Ihr Content-Management-System verwendet. Weitere Informationen finden Sie unter [Erstellen externer Autorisierungs-Handler](https://help.adobe.com/de_DE/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
+  Obwohl es möglich ist, den Richtlinienbewertungsprozess von Document Security vollständig durch einen externen Autorisierungs-Handler zu ersetzen, wird empfohlen, dass Sie einen externen Autorisierungs-Handler in Verbindung mit dem Richtlinienbewertungsprozess verwenden. Dann kann der Dokumentzugriff über denselben Kontrollmechanismus gesteuert werden, den Ihr Content-Management-System verwendet. Wenn beispielsweise der Document Security-Dienst bestimmt, ob eine Person ein richtliniengeschütztes Dokument drucken kann, wird der standardmäßige Prozess zur Richtlinienbewertung verwendet. Außerdem wird der Zugriffssteuerungsmechanismus verwendet, den Ihr Content-Management-System verwendet. Weitere Informationen finden Sie unter [Erstellen externer Autorisierungs-Handler](https://help.adobe.com/de_DE/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Beschränken Sie die Anzahl der Richtliniensätze auf ein Minimum**: Es gibt mehrere Faktoren, die zu einer ständigen Zunahme von Richtlinien und Richtliniensätzen führen. Einige häufige Faktoren sind:
 
