@@ -9,10 +9,10 @@ exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3545595dd67b5703d357964a752bf8979a38ea55
 workflow-type: tm+mt
-source-wordcount: '1769'
-ht-degree: 100%
+source-wordcount: '1795'
+ht-degree: 93%
 
 ---
 
@@ -156,14 +156,14 @@ Wenn Sie einen Namespace oder ein anderes Tag ausgewählt haben (indem Sie auf d
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-* **Titel**
-*(erforderlich)* Ein Anzeigetitel für das Tag.
+* **title**
+*(erforderlich) *Ein Anzeigetitel für das Tag.
 
-* **Name**
-*(optional) *Ein Name für das Tag. Wenn Sie keinen festlegen, wird ein gültiger Knotenname aus dem Titel erstellt. Siehe [TagID](/help/sites-developing/framework.md#tagid).
+* **name**
+*(optional) *Ein Name für das Tag. Wenn Sie keinen festlegen, wird ein gültiger Knotenname aus dem Titel erstellt. Siehe [TagID](/help/sites-developing/framework.md#tagid).
 
 * **Beschreibung**
-*(optional) *Eine Beschreibung des Tags.
+*(optional) *Eine Beschreibung des Tags.
 
 Wenn Sie die erforderlichen Informationen eingegeben haben:
 
@@ -197,10 +197,10 @@ Wenn ein Namespace oder ein anderes Tag ausgewählt wurden, können Tag-Admins u
   *(Lesezugriff)* Der aktuelle Pfad zum ausgewählten Tag.
 
 * **Verschieben nach**
-Wählen Sie den neuen Pfad aus, in den das Tag verschoben werden soll.
+Navigieren Sie zu dem neuen Pfad, in den Sie das Tag verschieben möchten.
 
 * **Umbenennen in**
-Zeigt zunächst den aktuellen `name` des Tags an. Sie können einen neuen `name`-Wert eingeben.
+Zeigt zunächst die aktuelle (`name`) des Tags an. Sie können einen neuen `name`-Wert eingeben.
 
 * Wählen Sie **Speichern** aus.
 
@@ -255,7 +255,7 @@ Tag-Berechtigungen sind [standardmäßig sicher](/help/sites-administering/produ
    * Melden Sie sich mit Administratorrechten an.
    * Rufen Sie die [Sicherheitskonsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) auf.
 
-      * z. B. unter http://localhost:4502/useradmin.
+      * Navigieren Sie beispielsweise zu http://localhost:4502/useradmin
 
    * Wählen Sie im linken Bedienfeld die Gruppe oder die Personen aus, für die eine [Leseberechtigung](/help/sites-administering/security.md#permissions) gelten soll.
    * Suchen Sie im rechten Bedienfeld den **Pfad** für den Tag-Namespace,
@@ -275,7 +275,7 @@ Tag-Berechtigungen sind [standardmäßig sicher](/help/sites-administering/produ
 
    * Replizieren Sie das Paket.
 
-      * Wählen Sie im Package Manager `Replicate` aus.
+      * Wählen Sie im Paket-Manager `Replicate` aus.
 
 ## Verwalten von Tags in verschiedenen Sprachen {#managing-tags-in-different-languages}
 
@@ -285,7 +285,7 @@ Die Eigenschaft `title` eines Tags kann in verschiedene Sprachen übersetzt werd
 
 Im folgenden Beispiel wird erklärt, wie Sie den `title` des Tags **Tiere** aus der deutschen in die englische und französische Sprache übersetzen.
 
-Wählen Sie zunächst das Tag im Namespace **Stockfotografie** aus und klicken Sie auf das Symbol **`Edit`** (siehe Abschnitt [Bearbeiten von Tags](#editing-tags)).
+Wählen Sie zunächst das Tag im Namespace **Stockfotografie** aus und klicken Sie auf das Symbol **`Edit`** (siehe Abschnitt [Bearbeiten von ](#editing-tags)).
 
 Im Bedienfeld „Tag bearbeiten“ können Sie die Sprachen auswählen, in die der Tag-Titel übersetzt werden soll.
 
@@ -312,3 +312,4 @@ Wenn Sie eine neue Sprache zum Dialogfeld hinzufügen möchten, finden Sie detai
   Informationen über das Tagging-Framework sowie die Erweiterung und Einbeziehung von Tags in benutzerdefinierten Anwendungen.
 
 * [Tagging-Konsole der klassischen Benutzeroberfläche](/help/sites-administering/classic-console.md)
+
