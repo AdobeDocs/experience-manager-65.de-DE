@@ -285,7 +285,7 @@ Die Eigenschaft `title` eines Tags kann in verschiedene Sprachen übersetzt werd
 
 Im folgenden Beispiel wird erklärt, wie Sie den `title` des Tags **Tiere** aus der deutschen in die englische und französische Sprache übersetzen.
 
-Wählen Sie zunächst das Tag im Namespace **Stockfotografie** aus und klicken Sie auf das Symbol **`Edit`** (siehe Abschnitt [Bearbeiten von ](#editing-tags)).
+Wählen Sie zunächst das Tag im Namespace **Stockfotografie** aus und klicken Sie auf das Symbol **`Edit`** (siehe Abschnitt [Bearbeiten von &#x200B;](#editing-tags)).
 
 Im Bedienfeld „Tag bearbeiten“ können Sie die Sprachen auswählen, in die der Tag-Titel übersetzt werden soll.
 
