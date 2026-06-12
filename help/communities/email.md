@@ -28,7 +28,7 @@ Die E-Mail-Funktion ist standardmäßig nicht funktionsfähig, da sie die Angabe
 
 >[!CAUTION]
 >
->E-Mails für Benachrichtigungen und Abonnements dürfen nur auf dem [primären Herausgeber“ konfiguriert ](deploy-communities.md#primary-publisher).
+>E-Mails für Benachrichtigungen und Abonnements dürfen nur auf dem [primären Herausgeber“ konfiguriert &#x200B;](deploy-communities.md#primary-publisher).
 
 ## Standardkonfiguration für den E-Mail-Dienst {#default-mail-service-configuration}
 

@@ -59,7 +59,7 @@ Anweisungen zum Einrichten von E-Mails finden Sie unter [Konfigurieren von E-](/
 
 **Enable Follow**
 
-Komponenten müssen so konfiguriert sein, dass Folgendes aktiviert wird. Funktionen, die Folgendes ermöglichen[ sind ](/help/communities/blog-feature.md)blog[, forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [filelilibrary](/help/communities/file-library.md) und [comments](/help/communities/comments.md).
+Komponenten müssen so konfiguriert sein, dass Folgendes aktiviert wird. Funktionen, die Folgendes ermöglichen[&#x200B; sind &#x200B;](/help/communities/blog-feature.md)blog[, forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [filelilibrary](/help/communities/file-library.md) und [comments](/help/communities/comments.md).
 
 **Hinweis**:
 
@@ -122,7 +122,7 @@ Wenn der E-Mail-Kanal aktiviert ist, erhält das Mitglied eine E-Mail, die einen
 
 ## E-Mail-Benachrichtigungen anpassen {#customize-email-notifications}
 
-Unternehmen können die E-Mail-Benachrichtigungen anpassen, indem [ die Vorlagen unter **/libs/settings/community/templates/email/html ](/help/communities/client-customize.md#overlays).**.
+Unternehmen können die E-Mail-Benachrichtigungen anpassen, indem [&#x200B; die Vorlagen unter **/libs/settings/community/templates/email/html &#x200B;](/help/communities/client-customize.md#overlays).**.
 
 Um beispielsweise die Erwähnungen in E-Mail-Benachrichtigungen zu ändern (für eine Communities-Komponente), fügen Sie eine **Wenn**-Bedingung für **Erwähnung** in den Vorlagen der Komponenten hinzu, für die Sie die **@mentions** Unterstützung aktiviert haben.
 

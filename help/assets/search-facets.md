@@ -122,7 +122,7 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 
 1. Stellen Sie sicher, dass **[!UICONTROL Einzelauswahl]** deaktiviert ist, damit Benutzer mehrere Optionen für Dateitypen gleichzeitig auswählen können (z. B. Bilder, Dokumente, Multimedia und Archive). Wenn Sie **[!UICONTROL Einzelauswahl]** aktivieren, können Benutzer jeweils nur eine Option für Dateitypen auswählen.
 
-   ![Die verfügbaren Felder in der Options-Eigenschaft ](assets/options_predicate.png)
+   ![Die verfügbaren Felder in der Options-Eigenschaft &#x200B;](assets/options_predicate.png)
 
    Die verfügbaren Felder in der Options-Eigenschaft
 

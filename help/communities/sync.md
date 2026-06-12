@@ -59,7 +59,7 @@ Detaillierte schrittweise Anweisungen zum Aktivieren der Synchronisierung in ein
 
 ### Veröffentlichen der Site über die Communities-Sites-Konsole {#publish-site-from-communities-sites-console}
 
-Wenn eine Community-Site in der Autoreninstanz über die [Communities-Sites-Konsole](/help/communities/sites-console.md) veröffentlicht wird, führt dies dazu, dass [ die zugehörigen Seiten (repliziert) ](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) und Sling die dynamisch erstellten Community-Benutzergruppen, einschließlich ihrer Mitgliedschaft, verteilt.
+Wenn eine Community-Site in der Autoreninstanz über die [Communities-Sites-Konsole](/help/communities/sites-console.md) veröffentlicht wird, führt dies dazu, dass [&#x200B; die zugehörigen Seiten (repliziert) &#x200B;](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) und Sling die dynamisch erstellten Community-Benutzergruppen, einschließlich ihrer Mitgliedschaft, verteilt.
 
 ### Benutzer wird erstellt oder bearbeitet Profil bei der Veröffentlichung {#user-is-created-or-edits-profile-on-publish}
 
@@ -149,7 +149,7 @@ So verbinden Sie Autoren- mit Herausgebern unter Verwendung autorisierter Benutz
 
    Verify-Eigenschaft **socialpubsync** - **publishUser.**
 
-1. Legen Sie den Benutzernamen und das Kennwort für den [autorisierten Benutzer“ ](/help/sites-administering/sync.md#createauthorizeduser).
+1. Legen Sie den Benutzernamen und das Kennwort für den [autorisierten Benutzer“ &#x200B;](/help/sites-administering/sync.md#createauthorizeduser).
 
    Beispiel: **usersync - admin**
 
@@ -217,7 +217,7 @@ So ändern Sie das Abrufintervall:
 
    * Stellen Sie das Intervall in Sekunden auf das gewünschte Intervall ein und speichern Sie.
 
-   ![scheduled-Trigger ](assets/scheduled-trigger.png)
+   ![scheduled-Trigger &#x200B;](assets/scheduled-trigger.png)
 
 ### AEM Communities User Sync Listener {#aem-communities-user-sync-listener}
 
@@ -339,13 +339,13 @@ Wenn die Sling-Verteilung fehlschlägt, führen Sie die folgenden Debugging-Schr
    Stellen Sie sicher, dass nicht mehrere Konfigurationen hinzugefügt oder bearbeitet werden. Stattdessen sollten die vorhandenen Standardkonfigurationen bearbeitet werden.
 1. **Überprüfen Sie die Konfigurationen**
 
-   Stellen Sie sicher[ dass alle ](/help/communities/sync.md#bestpractices)Konfigurationen“ in Ihrer AEM-Autoreninstanz korrekt festgelegt sind, wie in den Best [ beschrieben](/help/communities/sync.md#main-pars-header-863110628).
+   Stellen Sie sicher[&#x200B; dass alle &#x200B;](/help/communities/sync.md#bestpractices)Konfigurationen“ in Ihrer AEM-Autoreninstanz korrekt festgelegt sind, wie in den Best [&#x200B; beschrieben](/help/communities/sync.md#main-pars-header-863110628).
 
 1. **Überprüfen Sie die Berechtigungen autorisierter Benutzer**
 
    Wenn die Pakete nicht ordnungsgemäß installiert sind, überprüfen Sie, ob der [autorisierte Benutzer](/help/sites-administering/sync.md#createauthuser) der in der ersten Veröffentlichungsinstanz erstellt wurde, die richtigen ACLs hat.
 
-   Um dies zu validieren, ändern Sie anstelle des [erstellten autorisierten ](/help/sites-administering/sync.md#createauthuser) die Konfiguration [Adobe Granite Distribution - Encrypted Password Transport Secret Provider](/help/sites-administering/sync.md#adobegraniteencpasswrd) auf der Autoreninstanz, um Admin-Benutzeranmeldeinformationen zu verwenden. Versuchen Sie nun erneut, die Pakete zu installieren. Wenn die Benutzersynchronisierung mit Administratorberechtigungen problemlos funktioniert, bedeutet dies, dass der erstellte Veröffentlichungsbenutzer keine geeigneten ACLs hatte.
+   Um dies zu validieren, ändern Sie anstelle des [erstellten autorisierten &#x200B;](/help/sites-administering/sync.md#createauthuser) die Konfiguration [Adobe Granite Distribution - Encrypted Password Transport Secret Provider](/help/sites-administering/sync.md#adobegraniteencpasswrd) auf der Autoreninstanz, um Admin-Benutzeranmeldeinformationen zu verwenden. Versuchen Sie nun erneut, die Pakete zu installieren. Wenn die Benutzersynchronisierung mit Administratorberechtigungen problemlos funktioniert, bedeutet dies, dass der erstellte Veröffentlichungsbenutzer keine geeigneten ACLs hatte.
 
 1. **Überprüfen Sie die Konfiguration der Diff Observer Factory**
 
