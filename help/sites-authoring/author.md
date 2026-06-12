@@ -66,7 +66,7 @@ Wenn die Inhalte der AEM-Site fertig sind, werden sie in der **Veröffentlichung
 
 Normalerweise befindet sich die Veröffentlichungsumgebung innerhalb der „entmilitarisierten Zone“, mit anderen Worten: für das Internet verfügbar, aber nicht mehr unter dem vollständigen Schutz des internen Netzwerks.
 
-Wenn die AEM-Site eine [ Community-Site](/help/communities/overview.md) ist oder [Community-Komponenten](/help/communities/author-communities.md) beinhaltet, können angemeldete Besucherinnen und Besucher der Site (Mitglieder) mit Community-Funktionen interagieren. Sie können beispielsweise in einem Forum posten, Kommentare abgeben oder anderen Mitgliedern folgen. Mitglieder erhalten möglicherweise die Berechtigung, Aktivitäten durchzuführen, die normalerweise nur in der Autorenumgebung verfügbar sind. Hierzu gehören unter anderem das Erstellen von neuen Seiten (Community-Gruppen) oder Blog-Beiträgen oder die Moderation der Beiträge anderer Mitglieder.
+Wenn die AEM-Site eine [&#x200B; Community-Site](/help/communities/overview.md) ist oder [Community-Komponenten](/help/communities/author-communities.md) beinhaltet, können angemeldete Besucherinnen und Besucher der Site (Mitglieder) mit Community-Funktionen interagieren. Sie können beispielsweise in einem Forum posten, Kommentare abgeben oder anderen Mitgliedern folgen. Mitglieder erhalten möglicherweise die Berechtigung, Aktivitäten durchzuführen, die normalerweise nur in der Autorenumgebung verfügbar sind. Hierzu gehören unter anderem das Erstellen von neuen Seiten (Community-Gruppen) oder Blog-Beiträgen oder die Moderation der Beiträge anderer Mitglieder.
 
 >[!NOTE]
 >

@@ -237,7 +237,7 @@ Fügen Sie untergeordnete Knoten des Typs `cq:LiveSyncAction` hinzu, um Synchron
 1. **Erstellen** Sie einen Knoten mit den folgenden Knoteneigenschaften:
 
    * **Name**: Der Knotenname der Synchronisierungsaktion.
-Der Name muss mit dem **Aktionsnamen“ in** Tabelle unter „Synchronisierungsaktionen[ übereinstimmen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) z. B. `contentCopy` oder `workflow`.
+Der Name muss mit dem **Aktionsnamen“ in** Tabelle unter „Synchronisierungsaktionen[&#x200B; übereinstimmen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) z. B. `contentCopy` oder `workflow`.
    * **Typ**: `cq:LiveSyncAction`
 
 1. Fügen Sie so viele Synchronisierungsaktionsknoten hinzu wie erforderlich und konfigurieren Sie sie. Ordnen Sie die Aktionsknoten so an, dass sie die Reihenfolge aufweisen, in der sie ausgeführt werden sollen. Der oberste Aktionsknoten wird zuerst ausgeführt.
