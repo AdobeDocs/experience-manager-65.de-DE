@@ -1,6 +1,6 @@
 ---
 title: Erstellen von benutzerspezifischen Erscheinungsbildern in HTML5-Formularen
-description: Sie können mit Mobile-Formularen benutzerdefinierte Widgets einsetzen.  Sie können vorhandene jQuery Widgets erweitern oder Ihre eigenen benutzerdefinierten Widgets entwickeln.
+description: Sie können mit Mobile-Formularen benutzerdefinierte Widgets einsetzen. Sie können vorhandene jQuery Widgets erweitern oder Ihre eigenen benutzerdefinierten Widgets entwickeln.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,13 +13,13 @@ role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '635'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
 # Erstellen von benutzerspezifischen Erscheinungsbildern in HTML5-Formularen{#create-custom-appearances-in-html-forms}
 
-Sie können mit Mobile-Formularen benutzerdefinierte Widgets einsetzen.  Sie können mithilfe des Erscheinungsbild-Framework vorhandene jQuery Widgets erweitern oder Ihre eigenen benutzerdefinierten Widgets entwickeln. Die XFA-Engine verwendet verschiedene Widgets. Detaillierte Informationen finden Sie unter [Erscheinungsbild-Framework für adaptive und HTML5-Formulare](/help/forms/using/introduction-widgets.md).
+Sie können mit Mobile-Formularen benutzerdefinierte Widgets einsetzen. Sie können mithilfe des Erscheinungsbild-Framework vorhandene jQuery Widgets erweitern oder Ihre eigenen benutzerdefinierten Widgets entwickeln. Die XFA-Engine verwendet verschiedene Widgets. Detaillierte Informationen finden Sie unter [Erscheinungsbild-Framework für adaptive und HTML5-Formulare](/help/forms/using/introduction-widgets.md).
 
 ![Beispiel für ein standardmäßiges und benutzerdefiniertes Widget](assets/custom-widgets.jpg)
 
@@ -29,7 +29,7 @@ Beispiel für ein standardmäßiges und ein benutzerdefiniertes Widget
 
 ### Erstellen eines Profils  {#create-a-profile-nbsp}
 
-Erstellen Sie ein Profil oder wählen Sie ein vorhandenes Profil, um ein benutzerdefiniertes Widget hinzuzufügen.  Weitere Informationen über das Erstellen benutzerdefinierter Profile finden Sie unter [Erstellen eines benutzerfreundlichen Profils](/help/forms/using/custom-profile.md).
+Erstellen Sie ein Profil oder wählen Sie ein vorhandenes Profil, um ein benutzerdefiniertes Widget hinzuzufügen. Weitere Informationen über das Erstellen benutzerdefinierter Profile finden Sie unter [Erstellen eines benutzerfreundlichen Profils](/help/forms/using/custom-profile.md).
 
 ### Erstellen eines Widgets {#create-a-widget}
 
@@ -43,23 +43,23 @@ HTML5-Formulare bieten eine Implementierung des Widget-Frameworks, die zum Erste
   </tr>
   <tr>
    <td>render</td>
-   <td>Die Render-Funktion gibt das jQuery-Objekt für das standardmäßige HTML-Element des Widgets zurück.  Das standardmäßige HTML-Element sollte fokussierbar sein. Zum Beispiel &lt;a&gt;, &lt;input&gt; und &lt;li&gt;.  Das zurückgegebene Element wird als „$userControl“ verwendet.  Wenn $userControl die oben stehende Bedingung erfüllt, laufen die Funktionen der Klasse „AbstractWidget“ ordnungsgemäß. Ansonsten müssen einige allgemeine APIs (focus, click) geändert werden. </td>
+   <td>Die Render-Funktion gibt das jQuery-Objekt für das standardmäßige HTML-Element des Widgets zurück. Das standardmäßige HTML-Element sollte fokussierbar sein. Zum Beispiel &lt;a&gt;, &lt;input&gt; und &lt;li&gt;. Das zurückgegebene Element wird als „$userControl“ verwendet. Wenn $userControl die oben stehende Bedingung erfüllt, laufen die Funktionen der Klasse „AbstractWidget“ ordnungsgemäß. Ansonsten müssen einige allgemeine APIs (focus, click) geändert werden. </td>
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Gibt eine Zuordnung zur Konvertierung von HTML-Elementen zu XFA-Ereignissen zurück.  <br /> {<br /> blur: XFA_EXIT_EVENT,<br /> }<br /> Dieses Beispiel zeigt, dass „blur“ ein HTML-Ereignis und XFA_EXIT_EVENT das entsprechende XFA-Ereignis ist. </td>
+   <td>Gibt eine Zuordnung zum Konvertieren von HTML-Ereignissen in XFA-Ereignisse zurück. <br /> {<br /> blur: XFA_EXIT_EVENT,<br /> }<br /> Dieses Beispiel zeigt, dass „blur“ ein HTML-Ereignis und XFA_EXIT_EVENT das entsprechende XFA-Ereignis ist. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
-   <td>Gibt eine Zuordnung mit detaillierten Informationen zurück, wie eine Option geändert werden kann.  Die Schlüssel sind die Optionen, die dem Widget übergeben werden, und die Werte sind die Funktionen, die aufgerufen werden, wenn eine Änderung in der jeweiligen Option erkannt wird. Das Widget verfügt über Handler für alle allgemeinen Optionen (außer „value“ und „displayValue“).</td>
+   <td>Gibt eine Zuordnung mit detaillierten Informationen zurück, wie eine Option geändert werden kann. Die Schlüssel sind die Optionen, die dem Widget übergeben werden, und die Werte sind die Funktionen, die aufgerufen werden, wenn eine Änderung in der jeweiligen Option erkannt wird. Das Widget verfügt über Handler für alle allgemeinen Optionen (außer „value“ und „displayValue“).</td>
   </tr>
   <tr>
    <td>getCommitValue</td>
-   <td>Das Widget-Framework lädt Funktionen, sobald der Wert des Widgets im XFAModel gespeichert wird (beispielsweise bei einem exit-Ereignis für ein textField).  Die Implementierung sollte den Wert zurückgeben, der im Widget gespeichert wird. Der Handler erhält den neuen Wert für die Option.</td>
+   <td>Das Widget-Framework lädt Funktionen, sobald der Wert des Widgets im XFAModel gespeichert wird (beispielsweise bei einem exit-Ereignis für ein textField). Die Implementierung sollte den Wert zurückgeben, der im Widget gespeichert wird. Der Handler erhält den neuen Wert für die Option.</td>
   </tr>
   <tr>
    <td>showValue</td>
-   <td>Standardmäßig wird in XFA beim Ereignis „enter“ der rawValue des Felds angezeigt.  Diese Funktion wird aufgerufen, um der Benutzerin oder dem Benutzer den „rawValue“ zu zeigen. </td>
+   <td>Standardmäßig wird in XFA beim Ereignis „enter“ der rawValue des Felds angezeigt. Diese Funktion wird aufgerufen, um der Benutzerin oder dem Benutzer den „rawValue“ zu zeigen. </td>
   </tr>
   <tr>
    <td>showDisplayValue</td>
@@ -88,7 +88,7 @@ window.formBridge.registerConfig("widgetConfig",
 
 #### widgetConfigObject {#widgetconfigobject}
 
-Die Widget-Konfiguration wird als JSON-Objekt bereitgestellt (eine Sammlung von Schlüssel-Wert-Paaren), bei dem der Schlüssel die Felder identifiziert und der Wert für das Widget steht, das mit den Feldern verwendet werden soll.  Eine Beispielkonfiguration sieht wie folgt aus:
+Die Widget-Konfiguration wird als JSON-Objekt bereitgestellt (eine Sammlung von Schlüssel-Wert-Paaren), bei dem der Schlüssel die Felder identifiziert und der Wert für das Widget steht, das mit den Feldern verwendet werden soll. Eine Beispielkonfiguration sieht wie folgt aus:
 
 ```
 *{*
@@ -104,5 +104,5 @@ wobei „Kennung“ eine jQuery-CSS-Auswahl ist, die ein bestimmtes Feld, eine G
 | Typ des Bezeichners | ID | Beschreibung |
 |---|---|---|
 | Bestimmtes Feld mit dem Namen „fieldname“ | Kennung: &quot;div.fieldname&quot; | Alle Felder mit dem Namen „fieldname“ werden mithilfe des Widgets gerendert. |
-| Alle Felder des Typs „type“ („type“ ist hier „NumericField“, „DateField“ usw.): | Kennung: &quot;div.type&quot; | Für „TimeField“ und „DateTimeField“ ist der Typ „textfield“, da diese Felder nicht unterstützt werden. |
+| Alle Felder des Typs „type“ (wobei type „NumericField“, „DateField“ usw. ist): | Kennung: &quot;div.type&quot; | Für „TimeField“ und „DateTimeField“ ist der Typ „textfield“, da diese Felder nicht unterstützt werden. |
 | Alle Felder | Kennung: &quot;div.field&quot; |  |

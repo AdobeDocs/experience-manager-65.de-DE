@@ -59,7 +59,7 @@ In der folgenden Tabelle sind die WSDL-Definitionen des Services aufgeführt (un
 <table>
  <thead>
   <tr>
-   <th><p>Dienst</p></th>
+   <th><p>Service</p></th>
    <th><p>WSDL-Definition</p></th>
   </tr>
  </thead>
@@ -105,7 +105,7 @@ In der folgenden Tabelle sind die WSDL-Definitionen des Services aufgeführt (un
    <td><p><code>http://localhost:8080/soap/services/FormDataIntegration?wsdl</code></p></td>
   </tr>
   <tr>
-   <td><p>Generieren einer PDF</p></td>
+   <td><p>Generate PDF</p></td>
    <td><p><code>http://localhost:8080/soap/services/ GeneratePDFService?wsdl</code></p></td>
   </tr>
   <tr>
@@ -256,7 +256,7 @@ Im Folgenden wird der Zusammenhang zwischen den Übertragungsarten und dem Feld,
 
 >[!NOTE]
 >
->JAX WS-basierte Anwendungen, die das MTOM-Übertragungsprotokoll verwenden, sind auf 25 MB an gesendeten und empfangenen Daten beschränkt. Diese Begrenzung ist auf einen Fehler in JAX-WS zurückzuführen. Wenn die Gesamtgröße der gesendeten und empfangenen Dateien 25 MB überschreitet, verwenden Sie das SwaRef-Übertragungsprotokoll anstelle des MTOM-Protokolls. Andernfalls besteht die Möglichkeit einer `OutOfMemory`-Ausnahme.
+>JAX WS-basierte Anwendungen, die das MTOM-Übertragungsprotokoll verwenden, sind auf 25 MB an gesendeten und empfangenen Daten beschränkt. Diese Begrenzung ist auf einen Fehler in JAX-WS zurückzuführen. Wenn die Gesamtgröße der gesendeten und empfangenen Dateien 25 MB überschreitet, verwenden Sie das SwaRef-Übertragungsprotokoll anstelle des MTOM-Protokolls. Andernfalls besteht die Möglichkeit einer `OutOfMemory` Ausnahme.
 
 **MTOM-Übertragung von base64-kodierten Byte-Arrays**
 
@@ -648,7 +648,7 @@ Sie können den Service `MyApplication/EncryptDocument` (der in Workbench erstel
 1. Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `MyApplication_EncryptDocumentService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen.
 1. Legen Sie die Eigenschaft `Credentials` des `MyApplication_EncryptDocumentService`-Objekts mit einem `System.Net.NetworkCredential`-Objekt fest. Geben Sie im `System.Net.NetworkCredential`-Konstruktor einen AEM Forms-Benutzernamen und das entsprechende Kennwort an. Legen Sie Authentifizierungswerte fest, damit Ihre .NET-Client-Anwendung erfolgreich SOAP-Nachrichten mit AEM Forms austauschen kann.
 1. Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird verwendet, um ein PDF-Dokument zu speichern, das an den Prozess `MyApplication/EncryptDocument` übergeben wird.
-1. Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des PDF-Dokuments und den Modus angibt, in dem die Datei geöffnet werden soll.
+1. Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des PDF-Dokuments und den Modus angibt, in dem die Datei geöffnet werden soll.
 1. Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
 1. Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
 1. Befüllen Sie das `BLOB`-Objekt, indem Sie seiner `binaryData`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
@@ -735,7 +735,7 @@ Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 
 >[!NOTE]
 >
->JAX WS-basierte Anwendungen, die das MTOM-Übertragungsprotokoll verwenden, sind auf 25 MB an gesendeten und empfangenen Daten beschränkt. Diese Begrenzung ist auf einen Fehler in JAX-WS zurückzuführen. Wenn die Gesamtgröße der gesendeten und empfangenen Dateien 25 MB überschreitet, verwenden Sie das SwaRef-Übertragungsprotokoll anstelle des MTOM-Protokolls. Andernfalls besteht die Möglichkeit einer `OutOfMemory` Ausnahme.
+>JAX WS-basierte Anwendungen, die das MTOM-Übertragungsprotokoll verwenden, sind auf 25 MB an gesendeten und empfangenen Daten beschränkt. Diese Begrenzung ist auf einen Fehler in JAX-WS zurückzuführen. Wenn die Gesamtgröße der gesendeten und empfangenen Dateien 25 MB überschreitet, verwenden Sie das SwaRef-Übertragungsprotokoll anstelle des MTOM-Protokolls. Andernfalls besteht die Möglichkeit einer `OutOfMemory`-Ausnahme.
 
 Hier geht es um die Verwendung von MTOM innerhalb eines Microsoft .NET-Projekts zum Aufrufen von AEM Forms-Diensten. Das verwendete .NET-Framework ist 3.5 und die Entwicklungsumgebung ist Visual Studio 2008. Wenn Sie auf Ihrem Entwicklungscomputer Web Service Enhancements (WSE) installiert haben, entfernen sie. Das .NET 3.5-Framework unterstützt ein SOAP-Framework namens Windows Communication Foundation (WCF). Wenn Sie AEM Forms mithilfe von MTOM aufrufen, wird nur WCF (nicht WSE) unterstützt.
 
@@ -777,7 +777,7 @@ Beachten Sie den `MyApplication/EncryptDocument`-Prozess, der ein ungesichertes 
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=mtom
    ```
 
-   Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen. Stellen Sie jedoch sicher, dass Sie `?blob=mtom` angeben.
+   Sie brauchen das Attribut `lc_version` nicht zu verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen. Stellen Sie jedoch sicher, dass Sie `?blob=mtom` angeben.
 
    >[!NOTE]
    >
@@ -813,7 +813,7 @@ Beachten Sie den `MyApplication/EncryptDocument`-Prozess, der ein ungesichertes 
 1. Rufen Sie den Prozess `MyApplication/EncryptDocument` auf, indem Sie die Methode `invoke` des `MyApplication_EncryptDocumentClient`-Objekts aufrufen. Übergeben Sie das `BLOB`-Objekt, welches das PDF-Dokument enthält. Dieser Prozess gibt ein verschlüsseltes PDF-Dokument innerhalb eines `BLOB`-Objekts zurück.
 1. Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des gesicherten PDF-Dokuments darstellt.
 1. Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der `invoke`-Methode zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
-1. Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+1. Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
 1. Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 >[!NOTE]
@@ -969,7 +969,7 @@ Sie können den `MyApplication/EncryptDocument`-Dienst (der in Workbench erstell
 1. Erstellen Sie ein `System.UriBuilder`-Objekt, indem Sie seinen Konstruktor verwenden und den Wert des Datenelements `remoteURL` des zurückgegebenen `BLOB`-Objekts übergeben.
 1. Konvertieren Sie das `System.UriBuilder`-Objekt zu einem `System.IO.Stream`-Objekt. (Der C#-Schnellstart, der dieser Liste folgt, veranschaulicht, wie diese Aufgabe ausgeführt wird).
 1. Erstellen Sie ein Byte-Array und füllen Sie es mit den Daten aus dem `System.IO.Stream`-Objekt auf.
-1. Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+1. Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
 1. Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 ### Aufrufen eines Dienstes mit Java-Proxy-Klassen und BLOB-Daten über HTTP {#invoking-a-service-using-java-proxy-classes-and-blob-data-over-http}
@@ -1112,7 +1112,7 @@ Sie können einen Forms-Dienst mit DIME aufrufen. Beachten Sie den `MyApplicatio
 1. Erhalten Sie ein `System.IO.Stream`-Objekt, indem Sie den Wert des Datenelements `Stream` des `Attachment`-Objekts abrufen.
 1. Erstellen Sie ein Byte-Array und übergeben Sie dieses Byte-Array an die Methode `Read` des `System.IO.Stream`-Objekts. Diese Methode füllt das Byte-Array mit einem Datenstrom, der das verschlüsselte PDF-Dokument darstellt.
 1. Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der einen Speicherort der PDF-Datei darstellt. Dieses Objekt stellt das verschlüsselte PDF-Dokument dar.
-1. Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor verwenden und das `System.IO.FileStream`-Objekt übergeben.
+1. Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
 1. Schreiben Sie den Inhalt des Byte-Arrays in die PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 ### Erstellen von Apache Axis Java-Proxy-Klassen, die DIME verwenden {#creating-apache-axis-java-proxy-classes-that-use-dime}

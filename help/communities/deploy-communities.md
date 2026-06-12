@@ -12,8 +12,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1658'
-ht-degree: 2%
+source-wordcount: '1783'
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Voraussetzungen {#prerequisites}
 
-* [AEM 6.5-Plattform](/help/sites-deploying/deploy.md)
+* [AEM 6.5 Platform](/help/sites-deploying/deploy.md)
 
 * AEM Communities-Lizenz
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 * Wenn Sie die Standard-Ports (4502, 4503) nicht verwenden, [&#x200B; Sie „Replikationsagenten konfigurieren](#replication-agents-on-author)
 * [Replizieren des Kryptoschlüssels](#replicate-the-crypto-key)
-* Wenn Sie die Globalisierung unterstützen[&#x200B; richten Sie eine automatisierte Übersetzung &#x200B;](/help/sites-administering/translation.md)
+* Wenn Sie die Globalisierung unterstützen[&#x200B; richten Sie eine automatisierte Übersetzung ein.](/help/sites-administering/translation.md)
 (Beispiel-Setup wird für die Entwicklung bereitgestellt)
 
 **Für die Funktion [Communities](/help/communities/overview.md)**
@@ -75,17 +75,17 @@ ht-degree: 2%
       * Kein freigegebener UGC-Speicher (benutzergenerierter Inhalt) :
 
          * UGC wird nie repliziert
-         * UGC ist nur auf der AEM-Instanz oder dem Cluster sichtbar, in der bzw. dem er eingegeben wurde
+         * UGC ist nur auf der AEM-Instanz oder dem Cluster sichtbar, in dem er eingegeben wurde.
 
          * Der Standardwert ist JSRP
 
 ## Aktuelle Versionen {#latest-releases}
 
-AEM 6.5 Communities-GA umfasst Communities-Paket. Weitere Informationen zu Updates für AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities) finden Sie in den Versionshinweisen zu [AEM 6.5](/help/release-notes/release-notes.md#communities-release-notes.html).
+AEM 6.5 Communities-GA enthält Communities-Paket. Weitere Informationen zu Aktualisierungen in AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities) finden Sie in den [Versionshinweisen zu AEM 6.5](/help/release-notes/release-notes.md#communities-release-notes.html).
 
 ### AEM 6.5-Aktualisierungen {#aem-updates}
 
-Ab AEM 6.4 werden Communities-Updates im Rahmen von AEM Cumulative Fix Packs und Service Packs bereitgestellt.
+Ab AEM 6.4 werden Communities-Updates als Teil der AEM Cumulative Fix Packs und Service Packs bereitgestellt.
 
 Die neuesten Aktualisierungen zu AEM 6.5 finden Sie unter [Adobe Experience Manager 6.4 Cumulative Fix Packs and Service Packs](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates).
 
@@ -142,15 +142,15 @@ Der erweiterte MLS-Download (auch als `phasetwo` bezeichnet) ist im Adobe-Reposi
   Informationen zum Abrufen des erweiterten MLS-Pakets finden Sie unter [AEM Advanced MLS](deploy-communities.md#aem-advanced-mls) im Abschnitt Bereitstellen der Dokumentation.
 
    * Version 1.2.40, 6. April 2016
-   * AEM-SOLR-MLS-phasetwo-1.2.40.zip herunterladen
+   * Herunterladen von AEM-SOLR-MLS-phasetwo-1.2.40.zip
 
 Weitere Informationen und Installationsinformationen finden Sie unter [Solr-Konfiguration](/help/communities/solr.md) für SRP.
 
 ### Über Links zu Package Share {#about-links-to-package-share}
 
-**Pakete sichtbar in der Adobe-AEM-Cloud**
+**In Adobe AEM Cloud sichtbare Pakete**
 
-Die Links zu Paketen auf dieser Seite erfordern keine laufende Instanz von AEM, da sie zu Package Share auf `adobeaemcloud.com` gehören. Während die Pakete angezeigt werden können, ist die Schaltfläche `Install` für die Installation der Pakete auf einer gehosteten Adobe-Site. Wenn eine Installation auf einer lokalen AEM-Instanz beabsichtigt wird, führt die Auswahl von `Install` zu einem Fehler.
+Die Links zu Paketen auf dieser Seite erfordern keine laufende Instanz von AEM, da sie zu Package Share auf `adobeaemcloud.com` gehören. Während die Pakete angezeigt werden können, dient die Schaltfläche `Install` zur Installation der Pakete in einer von Adobe gehosteten Site. Wenn die Installation auf einer lokalen AEM-Instanz durchgeführt werden soll, führt die Auswahl von `Install` zu einem Fehler.
 
 **Installation auf einer lokalen AEM-Instanz**
 
@@ -159,11 +159,11 @@ Um die in `adobeaemcloud.com` sichtbaren Pakete auf einer lokalen AEM-Instanz zu
 * Registerkarte **Assets** auswählen
 * Wählen Sie **Auf Datenträger herunterladen**
 
-Verwenden Sie auf der lokalen AEM-Instanz Package Manager (z. B. [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), um das Paket-Repository der lokalen AEM hochzuladen.
+Verwenden Sie auf der lokalen AEM-Instanz Package Manager (z. B. [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), um das Paket-Repository von AEM in das lokale Paket-Repository hochzuladen.
 
-Alternativ können Sie über Package Share von der lokalen AEM-Instanz aus auf das Paket zugreifen (z. B. [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)). Dann lädt die Schaltfläche `Download` das Paket-Repository der lokalen AEM-Instanz herunter.
+Alternativ kann über Package Share von der lokalen AEM-Instanz aus auf das Paket zugegriffen werden (z. B. [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)). Die Schaltfläche &quot;`Download`&quot; wird dann in das Paket-Repository der lokalen AEM-Instanz heruntergeladen.
 
-Verwenden Sie Package Manager , um das Paket zu installieren, sobald es sich im Paket-Repository der lokalen AEM-Instanz befindet.
+Sobald Sie sich im Paket-Repository der lokalen AEM-Instanz befinden, installieren Sie das Paket mit Package Manager.
 
 Weitere Informationen finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md#package-share).
 
@@ -179,7 +179,7 @@ Der Common Store unterstützt die Moderation und Analyse von benutzergenerierten
 
 ## Aktualisieren {#upgrading}
 
-Beim Upgrade von früheren AEM-Versionen auf die AEM 6.5-Plattform ist es wichtig, Folgendes zu lesen [Upgrade auf AEM 6.5](/help/sites-deploying/upgrade.md).
+Beim Aktualisieren von früheren AEM-Versionen auf die AEM 6.5-Plattform ist es wichtig, Folgendes zu lesen [Aktualisieren auf AEM 6.5](/help/sites-deploying/upgrade.md).
 
 Lesen Sie neben dem Upgrade der -Plattform auch [Upgrade auf AEM Communities 6.5](/help/communities/upgrade.md), um mehr über Änderungen an Communities zu erfahren.
 
@@ -187,7 +187,7 @@ Lesen Sie neben dem Upgrade der -Plattform auch [Upgrade auf AEM Communities 6.5
 
 ### Primärer Herausgeber {#primary-publisher}
 
-Wenn es sich bei der Bereitstellung um [Veröffentlichungsfarm](/help/communities/topologies.md#tarmk-publish-farm) handelt, muss eine AEM-Veröffentlichungsinstanz als **`primary publisher`** für Aktivitäten identifiziert werden, die nicht auf allen Instanzen auftreten sollten. Beispielsweise Funktionen, die auf **Benachrichtigungen** oder **Adobe Analytics** basieren.
+Wenn es sich bei der ausgewählten Bereitstellung um [Veröffentlichungsfarm](/help/communities/topologies.md#tarmk-publish-farm) handelt, muss eine AEM-Veröffentlichungsinstanz als **`primary publisher`** für Aktivitäten identifiziert werden, die nicht auf allen Instanzen auftreten sollten. Beispielsweise Funktionen, die auf **Benachrichtigungen** oder **Adobe Analytics** basieren.
 
 Standardmäßig ist die `AEM Communities Publisher Configuration` OSGi-Konfiguration so konfiguriert, dass das Kontrollkästchen **`Primary Publisher`** aktiviert ist, sodass alle Veröffentlichungsinstanzen in einer Veröffentlichungsfarm sich selbst als primär identifizieren.
 
@@ -252,7 +252,7 @@ Der Tunnel-Service ermöglicht diesen Zugriff mithilfe des Replikationsagenten a
 So aktivieren Sie den Tunneldienst:
 
 * Melden Sie sich mit Administratorrechten bei Ihrer Autoreninstanz an.
-* Wenn der Herausgeber nicht localhost:4503 oder der Transport-Benutzer nicht `admin` ist,
+* Wenn der Herausgeber nicht localhost :4503 oder der Transport-Benutzer nicht `admin` ist,
 Konfigurieren [&#x200B; dann den Replikationsagenten](#replication-agents-on-author)
 
 * Zugreifen auf die [Web-Konsole](/help/sites-deploying/configuring-osgi.md)
@@ -268,7 +268,7 @@ Konfigurieren [&#x200B; dann den Replikationsagenten](#replication-agents-on-aut
 
 ### Replizieren des Crypto-Schlüssels {#replicate-the-crypto-key}
 
-Es gibt zwei Funktionen von AEM Communities, bei denen alle AEM-Serverinstanzen dieselben Verschlüsselungsschlüssel verwenden müssen. Diese sind [Analytics](/help/communities/analytics.md) und [ASRP](/help/communities/asrp.md).
+Es gibt zwei Funktionen von AEM Communities, für die alle AEM-Serverinstanzen dieselben Verschlüsselungsschlüssel verwenden müssen. Diese sind [Analytics](/help/communities/analytics.md) und [ASRP](/help/communities/asrp.md).
 
 Ab AEM 6.3 wird das Schlüsselmaterial im Dateisystem und nicht mehr im Repository gespeichert.
 
@@ -277,27 +277,27 @@ Um das Schlüsselmaterial aus der Autoreninstanz in alle anderen Instanzen zu ko
 * Greifen Sie auf die AEM-Instanz zu - normalerweise eine Autoreninstanz -, die das zu kopierende Schlüsselmaterial enthält
 
    * Suchen Sie das `com.adobe.granite.crypto.file` im lokalen Dateisystem,
-Beispiel:
+Beispiel,
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
       * Die `bundle.info` identifiziert das Bundle
 
    * Navigieren Sie zum Ordner „data“,
-Beispiel:
+Beispiel,
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
       * Kopieren Sie die hmac- und primären Knotendateien
 
-* Für jede Ziel-AEM-Instanz
+* Für jede AEM-Zielinstanz
 
    * Navigieren Sie zum Ordner „data“,
-Beispiel:
+Beispiel,
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
    * Fügen Sie die beiden zuvor kopierten Dateien ein
-   * Es ist erforderlich, das [-Bundle zu aktualisieren](#refresh-the-granite-crypto-bundle) wenn die Ziel-AEM-Instanz ausgeführt wird
+   * Es ist erforderlich, [das Granite Crypto-Bundle zu aktualisieren](#refresh-the-granite-crypto-bundle) wenn die AEM-Zielinstanz ausgeführt wird
 
 >[!CAUTION]
 >
@@ -305,7 +305,7 @@ Beispiel:
 
 #### Repository-Replikation {#repository-replication}
 
-Das Schlüsselmaterial kann wie bei AEM 6.2 und früheren Versionen im Repository gespeichert werden. Geben Sie die beim ersten Start jeder AEM-Instanz (die das anfängliche Repository erstellt) `-Dcom.adobe.granite.crypto.file.disable=true` Systemeigenschaft an.
+Das Schlüsselmaterial kann im Repository gespeichert werden, wie dies auch bei AEM 6.2 und früher der Fall war. Geben Sie die Systemeigenschaft an, die beim ersten Start jeder AEM-Instanz `-Dcom.adobe.granite.crypto.file.disable=true` wird (die das anfängliche Repository erstellt).
 
 >[!NOTE]
 >
@@ -338,7 +338,7 @@ Verwendet [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 * Nach einem Moment sollte **Dialogfeld**&#x200B;Erfolg“ angezeigt werden:
   `Operation completed successfully.`
 
-### Apache HTTP-Server {#apache-http-server}
+### Apache HTTP Server {#apache-http-server}
 
 Wenn Sie den Apache-HTTP-Server verwenden, stellen Sie sicher, dass Sie den richtigen Server-Namen für alle relevanten Einträge verwenden.
 
@@ -365,8 +365,8 @@ Achten Sie insbesondere darauf, im `RedirectMatch` den richtigen Server-Namen, n
 
 Wenn Sie eine Dispatcher verwenden, lesen Sie Folgendes:
 
-* AEM-[Dispatcher](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates)Dokumentation
-* [Installieren des Dispatchers](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
+* Dokumentation zu AEM {[&#128279;](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates)}Dispatcher
+* [Installieren von Dispatcher](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [Konfigurieren von Dispatcher für Communities](/help/communities/dispatcher.md)
 * [Bekannte Probleme](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

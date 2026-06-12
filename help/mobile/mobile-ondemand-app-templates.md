@@ -10,7 +10,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1160'
 ht-degree: 1%
 
 ---
@@ -97,15 +97,15 @@ Wählen Sie &#39;**+**&#39; im linken Bereich, um Komponenten zu Ihrem Artikel h
 
 ### Erstellen von nativen Vorlagen {#creating-out-of-the-box-templates}
 
-Es gibt keine vordefinierten Artikelvorlagen. Es gibt jedoch eine Standardvorlage, die von benutzerdefinierten Vorlagen erweitert werden sollte. Weitere Informationen finden Sie unter Beispiel für eine Artikelvorlage [&#x200B; Geometrixx Unlimited-App](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article).
+Es gibt keine vordefinierten Artikelvorlagen. Es gibt jedoch eine Standardvorlage, die von benutzerdefinierten Vorlagen erweitert werden sollte. Weitere Informationen finden Sie im [&#x200B; „Beispiel für Artikelvorlagen“ der Geometrixx Unlimited](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article).
 
-Zu den wichtigsten Eigenschaften, die über die normalen Eigenschaften von AEM-Vorlagen hinausgehen, gehören:
+Zu den wichtigsten Eigenschaften jenseits der normalen AEM-Vorlageneigenschaften gehören:
 
-***dps-resourceType=„dps:Article“***
+***dps-resourceType=„dps:Article&quot;***
 
-Diese Eigenschaft stellt sicher, dass die AEM-Seite als AEM Mobile-Zielartikelseite erkannt wird.
+Diese Eigenschaft stellt sicher, dass die AEM-Seite als AEM Mobile-zielgerichtete Artikelseite erkannt wird.
 
-Gemäß den AEM-Vorlagen können Sie dem Vorlagenknoten (jcr:content ***alle Standardeigenschaften oder untergeordneten*** hinzufügen.
+Gemäß den AEM-Vorlagen können Sie der Vorlage alle Standardeigenschaften oder untergeordneten Knoten ***jcr):content***.
 
 ### Banner- und Sammlungsvorlagen {#banner-and-collection-templates}
 
@@ -117,7 +117,7 @@ Gemäß den AEM-Vorlagen können Sie dem Vorlagenknoten (jcr:content ***alle Sta
 
 Komponenten verwenden Widgets und ermöglichen den Zugriff darauf. Diese werden zum Rendern des Inhalts verwendet.
 
-Im Code-Repository ist eine einfache Komponente enthalten, deren Quelle Sie in AEM finden. Anschließend kann es auch lokal in CRXDE Lite geöffnet werden.
+Das Code-Repository enthält eine einfache Komponente, deren Quelle Sie in AEM finden. Anschließend kann es auch lokal in CRXDE Lite geöffnet werden.
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Im Code-Repository ist eine einfache Komponente enthalten, deren Quelle Sie in A
 
 Sie können Komponenten zu Ihrer Seite hinzufügen. Jede Komponente kann in einer AEM Mobile-App verwendet werden, wird aber, wenn sie angewendet wird, möglicherweise nicht richtig gerendert.
 
-Benutzerdefinierte Komponenten können jedoch ohne einen benutzerdefinierten Synchronisierungs-Handler für Exportinhalte, der in AEM gerendert wird, möglicherweise nicht korrekt exportiert und in AEM Mobile On-demand Services hochgeladen werden.
+Benutzerdefinierte Komponenten können jedoch ohne einen benutzerdefinierten Synchronisierungs-Handler für Exportinhalte, der in AEM Mobile On-demand Services gerendert wird, möglicherweise nicht korrekt exportiert und in AEM hochgeladen werden.
 
 Sobald die Komponente zusammen mit einigen anderen Bausteinkomponenten bereits in einer AEM-Seite enthalten ist, können Sie der Seite eine weitere Komponente hinzufügen oder eine vorhandene bearbeiten.
 
@@ -146,7 +146,7 @@ Sobald die Komponente zusammen mit einigen anderen Bausteinkomponenten bereits i
 
 >[!NOTE]
 >
->Sie können eine Komponente in AEM erstellen und diese mit „Entwickeln [&#x200B; CRXDE Lite&quot; &#x200B;](/help/sites-developing/developing-with-crxde-lite.md). Nachdem Sie die vorhandene Komponente als Ihre Anforderungen angepasst haben, können Sie sie Ihrer Seite hinzufügen, indem Sie die Option **Bearbeiten** unter **Artikel verwalten** verwenden, wie in der folgenden Abbildung dargestellt.
+>Sie können eine Komponente in AEM erstellen und diese anpassen, indem Sie „Entwickeln [&#x200B; CRXDE Lite&quot; &#x200B;](/help/sites-developing/developing-with-crxde-lite.md). Nachdem Sie die vorhandene Komponente als Ihre Anforderungen angepasst haben, können Sie sie Ihrer Seite hinzufügen, indem Sie die Option **Bearbeiten** unter **Artikel verwalten** verwenden, wie in der folgenden Abbildung dargestellt.
 
 >[!NOTE]
 >

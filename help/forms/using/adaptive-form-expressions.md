@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2781'
-ht-degree: 100%
+source-wordcount: '2779'
+ht-degree: 98%
 
 ---
 
@@ -137,7 +137,7 @@ Der Ausdruck für die Überprüfung wird zur Überprüfung der Felder unter Verw
 
 **Gilt für**: Felder.
 
-**Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der den Überprüfungsstatus des Felds wiedergibt. Der Wert **false** bedeutet, dass das Feld ungültig ist, und **true** bedeutet, dass das Feld gültig ist.
+**Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der den Überprüfungsstatus des Felds darstellt. Der Wert **false** bedeutet, dass das Feld ungültig ist, und **true** bedeutet, dass das Feld gültig ist.
 **Beispiel**: Für ein Feld, das eine britische Postleitzahl enthalten soll, lautet der Ausdruck für die Überprüfung wie folgt:
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -146,7 +146,7 @@ Wenn im vorstehenden Beispiel der nicht leere Wert mit dem Muster nicht überein
 
 >[!NOTE]
 >
->Wenn Sie einen Überprüfungsausdruck für ein nicht obligatorisches oder ein obligatorisches Feld eingeben, wird der Ausdruck unabhängig vom Sichtbarkeitsstatus des Felds bewertet. Um die Validierung für die ausgeblendeten Felder zu beenden, setzen Sie die Eigenschaft „validationsDisabled“ im Initialisierungsskript oder im Skript zum Bestätigen von Werten auf „true“. Beispiel: `this.validationsDisabled=true`
+>Wenn Sie einen Überprüfungsausdruck für ein nicht obligatorisches oder ein obligatorisches Feld eingeben, wird der Ausdruck unabhängig vom Sichtbarkeitsstatus des Felds bewertet. Um die Validierung für die ausgeblendeten Felder zu stoppen, setzen Sie die Eigenschaft „validationsDisabled“ im Initialisierungsskript oder im Skript zum Bestätigen von Werten auf „true“. Beispiel: `this.validationsDisabled=true`
 
 ### Skript zum Bestätigen von Werten {#value-commit-script}
 
@@ -184,7 +184,7 @@ Der Ausdruck zum Abschluss von Schritten wird verwendet, um zu verhindern, dass 
 
 **Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der den Gültigkeitsstatus des aktuellen Panels wiedergibt. **True** bedeutet, dass der aktuelle Bereich gültig ist und der Benutzer zum nächsten Fenster navigieren kann.
 
-**Beispiel**: In einem Formular mit verschiedenen Panels wird das aktuelle Panel vor der Navigation zum nächsten Panel validiert. In solchen Fällen werden die Ausdrücke zum Abschluss von Schritten verwendet. Im Allgemeinen verwenden diese Ausdrücke die GuideBridge-Validierungs-API. Beispiel für einen Ausdruck zum Abschluss von Schritten:
+**Beispiel**: In einem Formular, das in verschiedenen Bereichen angeordnet ist, wird vor dem Navigieren zum nächsten Bereich der aktuelle Bereich validiert. In solchen Fällen werden die Ausdrücke zum Abschluss von Schritten verwendet. Im Allgemeinen verwenden diese Ausdrücke die GuideBridge-Validierungs-API. Beispiel für einen Ausdruck zum Abschluss von Schritten:
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## Überprüfungen in adaptiven Formularen {#validations-in-adaptive-form}
@@ -195,7 +195,7 @@ Es gibt folgende Methoden zum Hinzufügen von Validierungen zu Feldern:
 
 ### Erforderlich {#required}
 
-Um eine Komponente als obligatorisch festzulegen, können Sie im Dialogfeld **Bearbeiten** der Komponente die Option **Titel und Text > Erforderlich** auswählen. Sie können auch die entsprechende **erforderliche Meldung** (optional) hinzufügen. 
+Um eine Komponente als obligatorisch festzulegen, können Sie im Dialogfeld **Bearbeiten** der Komponente die Option **Titel und Text > Erforderlich** auswählen. Sie können auch die entsprechende **erforderliche Meldung** (optional) hinzufügen.
 
 ### Überprüfungsmuster {#validation-patterns}
 
@@ -221,13 +221,13 @@ GuideBridge ist eine Sammlung von APIs, die für die Interaktion mit adaptiven F
 
 #### GuideBridge-Verwendung in verschiedenen Ausdrücken {#guidebridge-usage-in-various-expressions}
 
-* Zum Zurücksetzen von Formularfeldern können Sie die `guideBridge.reset()`-API in dem Ausdruck für ein Klickereignis einer Schaltfläche auslösen. Ähnlich funktioniert eine Submit-API, die als ein Ausdruck für ein Klickereignis aufgerufen werden kann: `guideBridge.submit()`**.**
+* Zum Zurücksetzen von Formularfeldern können Sie das `guideBridge.reset()`-API in dem Ausdruck für ein Klickereignis einer Schaltfläche auslösen. Ähnlich funktioniert eine Submit-API, die als ein Ausdruck für ein Klickereignis aufgerufen werden kann: `guideBridge.submit()`**.**
 
 * Sie können die `setFocus()`-API verwenden, um den Fokus auf verschiedene Felder oder Bereiche zu legen (der Bereichsfokus ist automatisch auf das erste Feld festgelegt). `setFocus()` stellt eine große Auswahl von Optionen für Navigationszwecke bereit, wie zum Beispiel für das Navigieren über Bereiche hinweg, das Durchlaufen zum vorigen/nächsten Element, das Festlegen des Fokus auf ein bestimmtes Feld und vieles mehr. Wenn Sie beispielsweise in den nächsten Bereich wechseln möchten, können Sie den folgenden Ausdruck verwenden: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
 
 * Zum Validieren eines adaptiven Formulars oder seiner spezifischen Bereiche verwenden Sie `guideBridge.validate(errorList, somExpression).`
 
-#### Verwendung von GuideBridge außerhalb von Ausdrücken  {#using-guidebridge-outside-expressions-nbsp}
+#### Verwendung von GuideBridge außerhalb von Ausdrücken  {#using-guidebridge-outside-expressions-nbsp}
 
 Sie können die GuideBridge-APIs auch außerhalb von Ausdrücken verwenden. Sie können die GuideBridge-API beispielsweise dazu verwenden, die Kommunikation zwischen Seiten-HTML, in der das adaptive Formular integriert ist, und dem Formularmodell festzulegen. Darüber hinaus können Sie den Wert festlegen, der aus einem übergeordneten Element des iFrame kommt, in dem das Formular integriert ist.
 
@@ -278,11 +278,11 @@ Wie oben erwähnt, ermöglichen es adaptive Formulare Autorinnen und Autoren, Ü
 Führen Sie die folgenden Schritte durch, um ein benutzerspezifisches Muster für einen bestimmten Feldtyp zu erstellen und es dann für alle Felder desselben Typs wiederzuverwenden:
 
 1. Navigieren Sie in Ihrer Autoreninstanz zu CRXDE Lite.
-1. Erstellen Sie einen Ordner, um Ihre benutzerdefinierten Muster zu speichern. Erstellen Sie im /apps-Verzeichnis einen Knoten vom Typ „sling:folder“. Beispiel: Erstellen Sie einen Knoten mit dem Namen `customPatterns`. Erstellen Sie unter diesem Knoten einen weiteren Knoten des Typs `nt:unstructed` und geben Sie ihm den Namen `textboxpatterns`. Dieser Knoten enthält verschiedene benutzerdefinierte Muster, die Sie hinzufügen möchten.
+1. Erstellen Sie einen Ordner, um Ihre benutzerdefinierten Muster zu speichern. Erstellen Sie im /apps-Verzeichnis einen Knoten vom Typ sling:folder. Beispiel: Erstellen Sie einen Knoten mit dem Namen `customPatterns`. Erstellen Sie unter diesem Knoten einen weiteren Knoten des Typs `nt:unstructed` und geben Sie ihm den Namen `textboxpatterns`. Dieser Knoten enthält verschiedene benutzerdefinierte Muster, die Sie hinzufügen möchten.
 1. Öffnen Sie die Registerkarte „Eigenschaften“ des erstellten Knotens. Beispiel: Öffnen Sie die Registerkarte „Eigenschaften“ von `textboxpatterns`. Fügen Sie diesem Knoten die Eigenschaft `guideComponentType` hinzu und legen Sie ihren Wert auf *fd/af/components/formatter/guideTextBox* fest.
 
-1. Der Wert dieser Eigenschaft variiert je nach dem Feld, für das Sie die Muster definieren möchten. Bei numerischen Feldern lautet der Wert der Eigenschaft `guideComponentType` *fd/af/components/formatter/guideNumericBox*. Der Wert für das Feld „Datepicker“ lautet *fd/af/components/formatter/guideDatepicker*.
-``
+1. Der Wert dieser Eigenschaft variiert je nach dem Feld, für das Sie die Muster definieren möchten. Bei numerischen Feldern lautet der Wert der `guideComponentType`-Eigenschaft *fd/af/components/formatter/guideNumericBox*. Der Wert für das Feld „Datepicker“ lautet *fd/af/components/formatter/guideDatepicker*.
+&quot;
 1. Sie können ein benutzerspezifisches Muster hinzufügen, indem Sie dem Knoten `textboxpatterns` eine Eigenschaft zuweisen. Fügen Sie eine Eigenschaft mit einem Namen (z. B. `pattern1`) hinzu und legen Sie ihren Wert auf das Muster fest, das Sie hinzufügen möchten. Beispiel: Fügen Sie eine Eigenschaft `pattern1` mit dem Wert „Fax=text{99-999-9999999}“ hinzu. Das Muster ist für alle Textfelder verfügbar, die Sie in adaptiven Formularen verwenden.
 
    ![Erstellen benutzerspezifischer Muster für Felder in CrxDe](assets/creating-custom-patterns.png)

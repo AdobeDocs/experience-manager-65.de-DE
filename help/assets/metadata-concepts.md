@@ -8,8 +8,8 @@ exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 100%
+source-wordcount: '2751'
+ht-degree: 95%
 
 ---
 
@@ -87,11 +87,11 @@ ID3-Tags wurden für das MP3-Dateiformat entwickelt. Weitere Informationen zu Fo
 
 ### Exif {#exif}
 
-Exchangeable Image File Format (Exif, austauschbares Bilddateiformat) ist das in der digitalen Fotografie am häufigsten verwendete Metadatenformat. Es bietet eine Möglichkeit, ein festes Vokabular von Metadateneigenschaften in viele Dateiformate wie JPEG, TIFF, RIFF und WAV einzubetten. Exif speichert Metadaten als Paare aus Metadatenname und Metadatenwert. Diese Name-Wert-Paare für Metadaten werden auch als „Tags“ bezeichnet, nicht zu verwechseln mit dem Tagging in [!DNL Experience Manager]. Moderne Digitalkameras erstellen Exif-Metadaten und moderne Grafik-Software unterstützt sie. Das Exif-Format ist der kleinste gemeinsame Nenner für die Metadatenverwaltung, insbesondere für Bilder.
+Exchangeable Image File Format (Exif, austauschbares Bilddateiformat) ist das in der digitalen Fotografie am häufigsten verwendete Metadatenformular. Es bietet eine Möglichkeit, ein festes Vokabular von Metadateneigenschaften in viele Dateiformate wie JPEG, TIFF, RIFF und WAV einzubetten. Exif speichert Metadaten als Paare aus Metadatenname und Metadatenwert. Diese Name-Wert-Paare für Metadaten werden auch als „Tags“ bezeichnet, nicht zu verwechseln mit dem Tagging in [!DNL Experience Manager]. Moderne Digitalkameras erstellen Exif-Metadaten und moderne Grafik-Software unterstützt sie. Das Exif-Format ist der kleinste gemeinsame Nenner für die Metadatenverwaltung, insbesondere für Bilder.
 
 Eine wichtige Einschränkung von Exif besteht darin, dass das Format von einigen gängigen Bilddateiformaten wie BMP, GIF oder PNG nicht unterstützt wird.
 
-Von Exif definierte Metadatenfelder sind in der Regel technischer Natur und für die beschreibende Metadatenverwaltung nur begrenzt geeignet. Aus diesem Grund bietet [!DNL Experience Manager Assets] die Zuordnung von Exif-Eigenschaften zu [gängigen Metadaten-Schemata](metadata-schemas.md) und zu [XMP](xmp-writeback.md).
+Von Exif definierte Metadatenfelder sind in der Regel technischer Natur und für die beschreibende Metadatenverwaltung nur begrenzt geeignet. Aus diesem Grund bietet [!DNL Experience Manager Assets] die Zuordnung von Exif-Eigenschaften zu [gängigen Metadatenschemata](metadata-schemas.md) und zu [XMP](xmp-writeback.md).
 
 ### Andere Metadaten {#other-metadata}
 
@@ -112,7 +112,7 @@ Die unterstützten Metadatenschemata sind unten aufgeführt.
 * `Iptc4xmpCore` und `iptc4xmpExt` – Internationaler Standard für Pressekommunikation, enthält viele themenspezifische Metadaten.
 * RDF – Resource Description Framework: Für generische semantische Web-Metadaten.
 * XMP – [!DNL Extensible Metadata Platform].
-* `xmpBJ` – Einfaches Job-Ticketing.
+* `xmpBJ` – Einfaches Auftrags-Ticketing.
 
 ### Programmspezifische Metadaten {#application-specific-metadata}
 
@@ -213,16 +213,16 @@ Die [XMP-Spezifikation](https://www.adobe.com/devnet/xmp.html) wird von Adobe zu
 
 ### Was ist XMP? {#what-is-xmp}
 
-Adobe hat den XMP-Standard zunächst im Rahmen von Adobe Acrobat eingeführt. Mittlerweile ist der XMP-Standard weit verbreitet. [!DNL Assets] unterstützt nativ XMP (die Extensible Metadata Platform von Adobe). XMP ist ein Standard für die Verarbeitung und Speicherung von standardisierten und proprietären Metadaten in digitalen Assets. XMP ist als der gemeinsame Standard konzipiert, dank dem mehrere Programme effektiv mit Metadaten arbeiten können.
+Adobe führte den XMP-Standard erstmals als Teil des Adobe Acrobat-Softwareprodukts ein. Seitdem wurde der XMP-Standard weithin übernommen. [!DNL Assets] unterstützt nativ XMP (die Extensible Metadata Platform von Adobe). XMP ist ein Standard für die Verarbeitung und Speicherung von standardisierten und proprietären Metadaten in digitalen Assets. XMP ist als der gemeinsame Standard konzipiert, dank dem mehrere Programme effektiv mit Metadaten arbeiten können.
 
 Produktionsexperten nutzen beispielsweise die integrierte XMP-Unterstützung innerhalb der Adobe-Programme, um Informationen über mehrere Dateiformate hinweg zu übergeben. Das [!DNL Assets]-Repository extrahiert die XMP-Metadaten und verwaltet damit den Inhaltslebenszyklus. Außerdem wird die Erstellung von Automatisierungs-Workflows ermöglicht.
 
-XMP standardisiert die Art, wie Metadaten definiert, erstellt und verarbeitet werden, indem ein Datenmodell, ein Speichermodell und Schemata bereitgestellt werden. Diese Grundlagen werden alle in diesem Abschnitt behandelt.
+XMP standardisiert die Definition, Erstellung und Verarbeitung von Metadaten durch Bereitstellung eines Datenmodells, eines Speichermodells und von Schemata. Alle diese Konzepte werden in diesem Abschnitt behandelt.
 
 Alle veralteten Metadaten aus EXIF, ID3 oder Microsoft Office werden automatisch in XMP übersetzt. Diese können erweitert werden, um kundenspezifische Metadatenschemata wie Produktkataloge zu unterstützen.
 
-Metadaten in XMP bestehen aus einer Reihe von Eigenschaften. Diese Eigenschaften sind stets mit einer
-bestimmten Entität verknüpft, die als Ressource bezeichnet wird. Die Eigenschaften beziehen sich also auf die Ressource. Wenn XMP vorhanden ist, ist die Ressource immer das Asset.
+Metadaten in XMP bestehen aus einer Reihe von Eigenschaften. Diese Eigenschaften sind immer mit einem
+Bestimmte Entität, die als Ressource bezeichnet wird. Die Eigenschaften beziehen sich also auf die Ressource. Wenn XMP vorhanden ist, ist die Ressource immer das Asset.
 
 ### XMP-Ökosystem {#xmp-ecosystem}
 
@@ -251,7 +251,8 @@ In den folgenden Abschnitten werden die wesentlichen Grundlagen von XMP beschrie
 
 #### Namespaces und Schemata {#namespaces-and-schemata}
 
-Ein XMP-Schema ist ein Set aus Eigenschaftsnamen in einem gemeinsamen XML-Namespace, der den Datentyp und beschreibende Informationen umfasst. Ein XMP-Schema wird durch die zugehörige XML-Namespace-URI identifiziert. Durch Verwendung von Namespaces werden Konflikte zwischen Eigenschaften in verschiedenen Schemata verhindert, die denselben Namen, aber eine andere Bedeutung haben.
+Ein XMP-Schema ist ein Satz von Eigenschaftsnamen in einem gemeinsamen XML-Namespace, der Folgendes enthält
+Der Datentyp und beschreibende Informationen. Ein XMP-Schema wird anhand seines XML-Namespace-URI identifiziert. Die Verwendung von Namespaces verhindert Konflikte zwischen Eigenschaften in verschiedenen Schemata, die denselben Namen, aber eine andere Bedeutung haben.
 
 Beispiel: Die Eigenschaft `Creator` in zwei unabhängig voneinander entwickelten Schemata kann einerseits für die Person stehen, die das Asset erstellt hat, oder andererseits für das Programm, von dem das Asset erstellt wurde (z. B. Adobe Photoshop).
 

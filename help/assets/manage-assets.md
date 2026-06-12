@@ -10,8 +10,8 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '10234'
-ht-degree: 97%
+source-wordcount: '10112'
+ht-degree: 96%
 
 ---
 
@@ -197,8 +197,8 @@ Dynamic Media ermöglicht das stapelweise Hochladen von Assets über FTP-Server.
 1. Klicken Sie in der rechten unteren Ecke des Dialogfelds „Upload-Auftragsoptionen“ auf **[!UICONTROL Speichern]**.
 1. Klicken Sie in der rechten unteren Ecke der Seite „Hochladen“ auf **[!UICONTROL Upload starten]**.
 
-   Um den Upload-Fortschritt anzuzeigen, klicken Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Aufträge]**. Auf der Seite „Aufträge“ wird der Fortschritt des Uploads angezeigt. Sie können mit der Arbeit in [!DNL Experience Manager] fortfahren und jederzeit wieder in Dynamic Media Classic zur Seite „Aufträge“ zurückkehren, um einen gerade verarbeiteten Auftrag zu überprüfen.
-Um die laufende Verarbeitung eines Upload-Auftrags abzubrechen, klicken Sie neben „Dauer“ auf die Schaltfläche **[!UICONTROL Abbrechen]**.
+   Um den Fortschritt des Uploads anzuzeigen, klicken Sie in der Symbolleiste für globale Navigation auf **[!UICONTROL Aufträge]**. Auf der Seite „Aufträge“ wird der Upload-Fortschritt angezeigt. Sie können mit der Arbeit in [!DNL Experience Manager] fortfahren und jederzeit wieder in Dynamic Media Classic zur Seite „Aufträge“ zurückkehren, um einen gerade verarbeiteten Auftrag zu überprüfen.
+Um die laufende Verarbeitung eines Upload-Auftrags abzubrechen, klicken Sie neben **[!UICONTROL Zeit auf]** Abbrechen“.
 
 #### Upload-Auftragsoptionen {#upload-job-options}
 
@@ -290,7 +290,7 @@ Verwenden Sie die oben beschriebenen Optionen für [!UICONTROL Beschneiden] und 
 
 Wenn Sie eine PDF-Datei hochladen, können Sie sie auf verschiedene Arten formatieren. Sie können ihre Seiten zuschneiden, Suchbegriffe extrahieren, eine ppi (Pixel pro Zoll)-Auflösung eingeben und einen Farbraum auswählen. PDF-Dateien enthalten oft einen Zuschnittrand, Schnittmarken, Registrierungsmarken und andere Druckermarken. Sie können diese Marken von den Seitenrändern aus zuschneiden, wenn Sie eine PDF-Datei hochladen.
 
-Die maximale Seitenzahl einer PDF-Datei, die zur Extraktion infrage kommt, beträgt bei neuen Uploads 5.000 Seiten. Dieser Grenzwert wird am 31. Dezember 2022 auf 100 Seiten geändert (für alle PDF-Dateien). Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
+Die maximale Seitenzahl einer PDF-Datei, die zur Extraktion infrage kommt, beträgt bei neuen Uploads 5.000 Seiten. Dieser Grenzwert wird am 31. Dezember 2022 auf 100 Seiten geändert (für alle PDF-Dateien). Siehe auch [Grenzwerte für Dynamic Media](/help/assets/limitations.md).
 
 >[!NOTE]
 >

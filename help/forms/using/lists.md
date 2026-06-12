@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '6905'
-ht-degree: 100%
+source-wordcount: '6847'
+ht-degree: 97%
 
 ---
 
@@ -76,7 +76,7 @@ Die Lösung „Correspondence Management“ unterstützt zwei Arten von dynamisc
    ![Absatz-Symbolleiste](assets/fonteditingtoolbar.png)
 
    Absatz-Symbolleiste
-   [![ Ausrichtungs-Symbolleiste](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Ausrichtungs-Symbolleiste
+   [![&#x200B; Ausrichtungs-Symbolleiste](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Ausrichtungs-Symbolleiste
 
    ![Auflistungs-Symbolleiste](assets/bulleteditingtoolbar.png)
 
@@ -94,7 +94,7 @@ Die Lösung „Correspondence Management“ unterstützt zwei Arten von dynamisc
 
    >[!NOTE]
    >
-   >Die Formatierung des eingefügten Textes hat jedoch einige[ Einschränkungen](https://helpx.adobe.com/de/aem-forms/kb/cm-copy-paste-text-limitations.html).
+   >Die Formatierung des eingefügten Textes hat jedoch einige[&#x200B; Einschränkungen](https://helpx.adobe.com/de/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
 1. Fügen Sie bei Bedarf Sonderzeichen in das Dokumentfragment ein. Beispielsweise können Sie über die Sonderzeichenpalette die folgenden Zeichen einfügen:
 
@@ -125,11 +125,11 @@ Die Lösung „Correspondence Management“ unterstützt zwei Arten von dynamisc
 
    ![Platzhalterelemente](assets/placeholder_elements_in_xmldata.png)
 
-   Platzhalterelemente, wie in der von Ihnen erstellten Musterdatendatei eines Datenwörterbuchs angegeben
+   Platzhalterelemente, wie in der von Ihnen erstellten Beispieldatendatei eines Datenwörterbuchs angegeben
 
    ![Platzhalterelemente im Brief](assets/placeholder_elements_in_text.png)
 
-   Platzhalterelementwerte in der CCR-Ansicht wurden von den Datenwörterbuchvariablen aufgefüllt, wie in der von Ihnen erstellten Musterdatendatei angegeben
+   Platzhalterelementwerte in der CCR-Ansicht wurden von den Datenwörterbuchvariablen aufgefüllt, wie in der von Ihnen erstellten Beispieldatendatei angegeben
 
    Sie können auch das @-Symbol verwenden, um Datenwörterbuch- und Platzhalterelemente zu suchen und zum Texteditor hinzuzufügen. Platzieren Sie den Cursor an die Stelle, an der das Element eingefügt werden soll. Geben Sie @ ein, gefolgt von der Suchzeichenfolge. Der Texteditor führt den Suchvorgang für alle Datenwörterbuch- und Platzhalterelemente durch, die im Textdokumentfragment verfügbar sind. Der Suchvorgang ruft die Elemente ab, die die Suchzeichenfolge enthalten, und zeigt sie als Dropdown-Liste an. Navigieren Sie durch die Suchergebnisse und klicken Sie auf das Element, das Sie an der Position des Mauszeigers einfügen möchten. Drücken Sie Esc, um die Suchergebnisse auszublenden.
 
@@ -194,7 +194,7 @@ Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach einer beliebige
 
 1. Wenn Sie erneut auf „Suchen“ klicken, wird die Suche am Anfang der Seite fortgesetzt.
 
-   Verwenden Sie die Option „Alle ersetzen“, um alle Instanzen des Texts im Textmodul zu ersetzen. Wenn Sie `` verwenden, wird die Anzahl der Ersetzungen als Meldung im Dialogfeld „Suchen und Ersetzen“ angezeigt.
+   Verwenden Sie die Option „Alle ersetzen“, um alle Instanzen des Texts im Textmodul zu ersetzen. Wenn Sie &grave;&grave; verwenden, wird die Anzahl der Ersetzungen als Meldung im Dialogfeld „Suchen und Ersetzen“ angezeigt.
 
 #### Best Practices/Tipps und Tricks für Textmodule {#best-practices-tips-and-tricks-for-text-modules}
 
@@ -227,8 +227,8 @@ Eine Liste ist eine Gruppe von zusammenhängenden Inhalten, die in einer Briefvo
 * Beim Erstellen einer Liste können Sie einen Typ angeben, z. B.:
 * **Einfach**: Auf die Liste wird keine weitere Stilformatierung angewendet.
 * **Aufzählungszeichen**: Eine mit einem einfachen Aufzählungszeichen formatierte Liste.
-* **Nummeriert**: Eine numerische Liste mit den Zahlenformaten Standard (1,2,…), römische Großbuchstaben (I, II, …) oder römische Kleinbuchstaben (i, ii,…).
-* **Mit Buchstaben**: Eine alphabetische Liste mit der Buchstabenformatierung als Kleinbuchstaben (a, b, …) oder Großbuchstaben (A, B, …).
+* **Nummeriert**: Eine numerische Liste mit der Auswahl von Standard (1,2,…), römischer Großbuchstabe (I, II, …) und römischer Kleinbuchstabe (i, ii,…) Ziffern.
+* **Mit Buchstaben**: Eine alphabetische Liste mit der Auswahl von Kleinbuchstaben (a, b,…) und Großbuchstaben (A, B,…) Briefe
 * **Benutzerdefiniert**: Sie können beliebige Zahlen-/Buchstabentypen sowie Präfix- und Suffixwerte Ihrer Wahl erstellen.
 
 1. Wählen Sie **Formulare** > **Dokumentfragmente**.
@@ -250,7 +250,7 @@ Eine Liste ist eine Gruppe von zusammenhängenden Inhalten, die in einer Briefvo
    ![Assets zum Hinzufügen zur Liste auswählen](assets/selectassets.png)
 
 1. Die Assets werden der Seite „Listenelemente“ hinzugefügt.
-Um die Reihenfolge der Assets innerhalb der Liste zu ändern, wählen Sie das Pfeilsymbol (![dragndrop](assets/dragndrop.png)) aus, halten Sie es gedrückt und verwenden Sie die Drag-and-Drop-Funktion. Wenn der Benutzer auf der Benutzeroberfläche „Korrespondenz erstellen“ eine Briefvorlage öffnet, wird der Inhalt in der hier festgelegten Reihenfolge zusammengestellt.
+Um die Reihenfolge der Assets innerhalb der Liste zu ändern, wählen Sie das Pfeilsymbol ( ![dragndrop) aus, halten Sie die &#x200B;](assets/dragndrop.png) gedrückt und verwenden Sie die Drag-and-Drop-Funktion. Wenn der/die Benutzende in der Benutzeroberfläche „Korrespondenz erstellen“ eine Briefvorlage öffnet, wird der Inhalt in der hier definierten Reihenfolge zusammengestellt.
 
    ![Assets in einer Liste neu anordnen und konfigurieren](assets/listitems.png)
 
@@ -301,7 +301,6 @@ Wenn sich beispielsweise der Text der Geschäftsbedingungen in einem Brief je na
 * state = NC, select T&amp;C_NC Text-Absatz
 
 Mit dem Bedingungseditor können Sie eine Standardbedingung festlegen. Wenn der Wert der Steuerungsvariablen keiner der Bedingungen entspricht, wird der mit der Standardbedingung verknüpfte Inhalt verwendet. Im Rahmen des oben genannten Beispiel ließe sich folgende Bedingungszeile hinzufügen:
-
 * Default, select T&amp;C_Rest
 
 ### Erstellen einer Bedingung {#create-a-condition}
@@ -321,7 +320,7 @@ Mit dem Bedingungseditor können Sie eine Standardbedingung festlegen. Wenn der 
 1. Um ein Asset zur Bedingung hinzuzufügen, wählen Sie es auf der „Asset auswählen“-Seite aus und wählen Sie **Fertig**. Die Assets werden dem Bereich „Ausdruck“ hinzugefügt.
 1. Sie können mithilfe der folgenden Optionen festlegen, wie sich die Bedingung zur Laufzeit verhält:
 
-   * **Auswertung mehrerer Ergebnisse deaktivieren/Auswertung mehrerer Ergebnisse aktivieren**: Wenn diese Option aktiviert ist (angezeigt als „Auswertung...aktivieren”), werden alle Bedingungen ausgewertet, und das Ergebnis ist die Summe aller wahren Bedingungen. Wenn diese Option deaktiviert ist (angezeigt als „Auswertung...deaktivieren“), wird nur die erste Bedingung, die „true“ ergibt, ausgewertet und wird zur Ausgabe der Bedingung.
+   * **Auswertung mehrerer Ergebnisse deaktivieren/Auswertung mehrerer Ergebnisse aktivieren**: Wenn diese Option aktiviert ist (angezeigt als „Auswertung...aktivieren”), werden alle Bedingungen ausgewertet, und das Ergebnis ist die Summe aller wahren Bedingungen. Wenn diese Option deaktiviert ist (angezeigt als „Mehrere deaktivieren…„) Dann wird nur die erste Bedingung, die als „true“ erkannt wird, ausgewertet und wird zur Ausgabe der Bedingung.
    * **Seitenumbruch**: Wählen Sie diese Option (![break](assets/break.png)), um zwischen den Modulen der Bedingungen einen Seitenumbruch hinzuzufügen. Wenn diese Option nicht ausgewählt ist (![nobreak](assets/nobreak.png)) und die Bedingung über die aktuelle Seite hinausreichen würde, wird die ganze Bedingung auf die nächste Seite verschoben, anstatt innerhalb der Bedingung einen Seitenumbruch einzufügen.
 
 1. Um die Reihenfolge der Assets innerhalb der Bedingung zu ändern, wählen Sie das Pfeilsymbol, halten Sie es gedrückt (![Drag and Drop](assets/dragndrop.png)) und ziehen Sie die Assets. Wenn die Person auf der Benutzeroberfläche „Korrespondenz erstellen“ eine Briefvorlage öffnet, wird der Inhalt in der hier festgelegten Reihenfolge zusammengestellt.
@@ -406,7 +405,7 @@ Ein detailliertes Beispiel der Verwendung von statischen und dynamischen Tabelle
 
 1. Wählen Sie die Registerkarte **Tabelle** und geben Sie die folgenden Informationen für das Layout an:
 
-   * **Konfiguration für**: Wählen Sie die zu konfigurierende Tabelle aus. Als Suffix des Tabellennamens wird in der Dropdown-Liste „(Statisch)“ angezeigt, wenn die Tabelle statisch ist, oder „(Dynamisch)“, wenn es sich um eine dynamische Tabelle handelt. Statische Tabellen enthalten eine feste Anzahl von Zeilen. Statische Tabellen können Zielbereiche und -felder enthalten. Diese Zielbereiche und -felder können nicht an wiederholende DDEs gebunden werden. Die an Tabellenzellen gebundenen Daten bestimmen die Anzahl der Zeilen für dynamische Tabellen.
+   * **Konfiguration für**: Wählen Sie die zu konfigurierende Tabelle aus.Als Suffix an den Tabellennamen im Dropdown-Menü lautet (statisch), wenn es sich um eine statische Tabelle handelt, oder (dynamisch), wenn die Tabelle eine dynamische Tabelle ist. Statische Tabellen enthalten eine feste Anzahl von Zeilen. Statische Tabellen können Zielbereiche und -felder enthalten. Diese Zielbereiche und -felder können nicht an wiederholende DDEs gebunden werden. Die an Tabellenzellen gebundenen Daten bestimmen die Anzahl der Zeilen für dynamische Tabellen.
 
    * **Zeilen**: Wählen Sie die Anzahl der Zeilen für das Layout aus. Die konfigurierte Zeilenanzahl muss größer oder gleich der ursprünglichen Zeilenanzahl sein.
    * **Spalten**: Wählen Sie die Anzahl der Spalten für das Layout aus. Die konfigurierte Spaltenanzahl muss größer oder gleich der ursprünglichen Spaltenanzahl sein.
@@ -485,8 +484,8 @@ Viele Briefvorlagen enthalten Tabellen. Tabellen können statisch sein, z. B. e
 * **Statische Tabellen**: Tabellen werden manchmal mit Zeilen erstellt, die eine andere Anzahl von Spalten aufweisen, wie etwa bei einer Tabelle mit Nutzungsbedingungen. Dort stellt jede Zeile eine Bedingung dar und jede Bedingung kann verschiedene Unterteile aufweisen. Jeder Teil wird in einer separaten Spalte angezeigt.
 * **Dynamische Tabellen**: Layout-Fragmente stellen die Möglichkeit bereit, die Felder einer dynamischen Tabelle an Sammlungs-DDEs zu binden. Zum Zeitpunkt der Brieferstellung werden Tabellenzeilen entsprechend der Größe der Sammlungs-DDEs generiert.
 
-Das DD hat ein Sammlungselement Nominee_details, das Composite-Element mit drei primitiven Elementen enthält: Nominee_name, Nominee_address und Nominee_gender.
-Dynamische XDP verfügen außerdem über die gleichen Kopfzeilen. So können Sie die dynamischen XDP-Felder mit den oben genannten Felder von DD zuordnen.
+Das DD hat ein Sammlungselement Nominee_details, das ein zusammengesetztes Element mit drei primitiven Elementen hat: Nominee_name, Nominee_address und Nominee_gender.
+Die dynamische XDP hat dieselben Kopfzeilen. So können Sie die dynamischen XDP-Felder den oben genannten Feldern von DD zuordnen.
 
 ### Beispiel mit Beispieldateien: Verwenden von statischen und dynamischen Tabellen in einem Brief {#examplewithsamplefiles}
 
@@ -500,7 +499,7 @@ Dieses Beispiels zeigt, wie Sie eine dynamische und eine statische Tabelle erste
 
    ![Datenwörterbuchstruktur](assets/dd.jpeg)
 
-[Datei laden](assets/exportpackage_1431709897770.cmp.zip)
+   [Datei laden](assets/exportpackage_1431709897770.cmp.zip)
 
 1. Erstellen Sie in Designer zwei XDPs (Layout-Fragmente): eine dynamische Tabelle und eine statische Tabelle. Für beide Layouts:
 
@@ -512,14 +511,14 @@ Dieses Beispiels zeigt, wie Sie eine dynamische und eine statische Tabelle erste
    Weitere Informationen zum Arbeiten mit Layout-Fragmenten finden Sie unter [Layout-Fragmente](#layoutfragments).
 Weitere Informationen zum Entwerfen von Layouts finden Sie unter [Designer-Hilfe](https://help.adobe.com/de_DE/AEMForms/6.1/DesignerHelp/).
 
-[Datei abrufen](assets/static.xdp.zip)
+   [Datei abrufen](assets/static.xdp.zip)
 
-[Datei abrufen](assets/dynamic.xdp.zip)
+   [Datei abrufen](assets/dynamic.xdp.zip)
 
 1. Laden Sie die XDP-Dateien auf AEM Forms hoch.
 1. Erstellen Sie ein Layout-Fragment basierend auf der dynamischen XDP. Die Registerkarte „Tabelle“ der Eigenschaften zeigt an, dass die Tabelle dynamisch ist (Feld „Konfiguration für“). Die Anzahl der Zeilen (1) und Spalten (3) wird aus dem XDP-/Layout-Fragment abgeleitet.
 
-   Die Felder des Layouts werden später an das importierte Datenwörterbuch gebunden, und im Brief wird die Anzahl der Zeilen basierend auf der Anzahl der Datensätze in der Testdatendatei (die an das Datenwörterbuch angehängte Datendatei) dynamisch erstellt. 
+   Die Felder des Layouts werden später an das importierte Datenwörterbuch gebunden, und im Brief wird die Anzahl der Zeilen basierend auf der Anzahl der Einträge in der Testdatendatei (die an das Datenwörterbuch angehängte Datendatei) dynamisch erstellt.
 
    ![Bildschirm zum Erstellen eines Layout-Fragments](assets/dynamictableproperties.png)
 
@@ -527,20 +526,20 @@ Weitere Informationen zum Entwerfen von Layouts finden Sie unter [Designer-Hilfe
 
 1. Erstellen Sie ein Layout-Fragment basierend auf der statischen XDP. Die Registerkarte „Tabelle“ der Eigenschaften zeigt an, dass die Tabelle statisch ist (Feld „Konfiguration für“). Die Anzahl der Zeilen (1) und Spalten (3) wird aus dem XDP-/Layout-Fragment abgeleitet.
 
-   Sie können die Anzahl der Spalten und Zeilen hier ändern. Je nach Ihrer Auswahl auf diesem Bildschirm bleibt die Anzahl von Zeilen und Spalten einer statischen Tabelle in einem mit diesem Layout erstellten Brief unverändert.
+   Sie können die Anzahl der Spalten und Zeilen hier ändern. Je nach Auswahl auf diesem Bildschirm bleibt die Anzahl der Zeilen und Spalten einer statischen Tabelle in dem mit diesem Layout erstellten Brief unverändert.
    [![Bildschirm zum Erstellen eines Layout-Fragments](assets/statictableproperties.png)](assets/statictableproperties-1.png)
 
 1. Erstellen Sie einen Brief unter Verwendung beider Layout-Fragmente darin. Wenn Sie eine dynamische XDP in den Brief einfügen, legen Sie die Bindung seiner Felder auf die Sammlungselemente des Datenwörterbuchs fest.
 
    Weitere Informationen zum Erstellen von Briefen und Briefvorlagen finden Sie unter [Erstellen eines Briefes](/help/forms/using/create-letter.md).
 
-1. Speichern Sie den Brief und zeigen Sie ihn in der Vorschau an. Wenn Sie den Brief in der Vorschau anzeigen, werden die Werte aus dem Datenwörterbuch im Brief angezeigt. Für die dynamische Tabelle sind drei Zeilen vorhanden. Dies liegt daran, dass die Testdaten drei Datensätze für diese Zeilen aufweisen.
+1. Speichern Sie den Brief und zeigen Sie ihn in der Vorschau an. Wenn Sie den Brief in der Vorschau anzeigen, werden die Werte aus dem Datenwörterbuch im Brief angezeigt. Für die dynamische Tabelle sind drei Zeilen vorhanden. Dies liegt daran, dass die Testdaten drei Einträge für diese Zeilen aufweisen.
 
    Für die statische Tabelle sind so viele Zeilen und Spalten vorhanden, wie von Ihnen bei der Erstellung des Layout-Fragments festgelegt.
 
    ![Statische Tabelle im Brief](assets/statictableletter.png)
 
-   Für die dynamische Tabelle werden die drei Zeilen entsprechend der Anzahl der Datensätze in der Testdatendatei angezeigt. Dies verhält sich so, weil Sie beim Hinzufügen des Layouts zum Brief eine Bindung zwischen den Feldern der dynamischen Tabelle und den Collection-Elementen des Datenwörterbuchs erstellt haben. Die Werte „Name“, „Adresse“ und „Geschlecht“ werden aus der von Ihnen verwendeten Testdatendatei gefüllt.
+   Für die dynamische Tabelle werden die drei Zeilen entsprechend der Anzahl der Einträge in der Testdatendatei angezeigt. Dies verhält sich so, weil Sie beim Hinzufügen des Layouts zum Brief eine Bindung zwischen den Feldern der dynamischen Tabelle und den Collection-Elementen des Datenwörterbuchs erstellt haben. Die Werte „Name“, „Adresse“ und „Geschlecht“ werden aus der von Ihnen verwendeten Testdatendatei gefüllt.
 
    ![Dynamische Tabelle im Brief](assets/dynamictableletter.png)
 
