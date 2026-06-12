@@ -53,7 +53,7 @@ Jeder Anwendungs-Store eines Anbieters - z. B. Apple App Store oder Google Play 
 >
 >Mit der AEM Verify-App können Sie Screenshots direkt an Ihre App-Details in AEM senden.
 >
->Weitere Informationen finden [ unter „Mobile Quickstart for AEM Verify](/help/mobile/phonegap-mobile-quickstart.md).
+>Weitere Informationen finden [&#x200B; unter „Mobile Quickstart for AEM Verify](/help/mobile/phonegap-mobile-quickstart.md).
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 

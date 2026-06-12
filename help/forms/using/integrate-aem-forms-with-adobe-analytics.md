@@ -165,7 +165,7 @@ Führen Sie die folgenden Schritte aus, um Regeln auf der Grundlage der Erweiter
 
 1. Wählen Sie im Abschnitt **[!UICONTROL Aktionen]** das Pluszeichen (+) aus und geben Sie **[!UICONTROL Adobe Analytics]** als Namen der Erweiterung an.
 
-1. Wählen Sie **[!UICONTROL Aktionstyp]** Variablen löschen“ aus. Wählen **[!UICONTROL Änderungen beibehalten]** aus. Nachdem Sie diese Schritte ausgeführt haben, wird **[!UICONTROL Abschnitt]**Aktionen“ wie folgt angezeigt:
+1. Wählen Sie **[!UICONTROL Aktionstyp]** Variablen löschen“ aus. Wählen **[!UICONTROL Änderungen beibehalten]** aus. Nachdem Sie diese Schritte ausgeführt haben, wird **[!UICONTROL Abschnitt]**&#x200B;Aktionen“ wie folgt angezeigt:
    ![Konfiguration von Aktionen](/help/forms/using/assets/actions-config.png)
 
    Passen Sie den Abschnitt **[!UICONTROL Aktionen]** Ihren Anforderungen entsprechend an. Sie können beispielsweise zwei Schritte **Beacon senden** in einem Aktionsfluss definieren, um in einem Schritt Daten an [!DNL Adobe Analytics] zu senden und als Seitenansicht zu behandeln und im zweiten Schritt Daten an [!DNL Adobe Analytics] zu senden und nicht als Seitenansicht zu behandeln.
