@@ -12,7 +12,7 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '347'
 ht-degree: 100%
 
 ---
@@ -23,9 +23,9 @@ Ein Formularsatz ist eine Sammlung von HTML5-Formularen, die gruppiert sind und 
 
 AEM Forms Workspace unterstützt Formularsätze. Mit Formularsätzen können mehrere zu einem Dienst oder Prozess gehörige Formulare gruppiert werden, um einen Geschäftsprozess zu automatisieren, und anschließend für die Endbenutzenden bereitgestellt werden. In einem solchen Fall können die Benutzenden den gesamten Formularsatz als einzelnes Formular ausfüllen. Es besteht zudem keine Notwendigkeit, einzelne Formulare oder Prozesse zu archivieren, zu übermitteln oder nachzuverfolgen.
 
-## Ein Formularsatz in der AEM Forms Workspace-App dem Startpunkt zuweisen  {#attaching-a-formset-to-startpoint-in-an-aem-forms-workspace-app-br}
+## Ein Formularsatz in der AEM Forms Workspace-App dem Startpunkt zuweisen {#attaching-a-formset-to-startpoint-in-an-aem-forms-workspace-app-br}
 
-1. Erstellen Sie den Geschäftsprozess-Arbeitsablauf in Workbench. Weitere Informationen finden Sie in der [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de).
+1. Erstellen Sie den Geschäftsprozess-Workflow in Workbench. Weitere Informationen finden Sie in der [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de).
 1. In den Prozesseigenschaften des Startpunkts wählen Sie **Ein CRX-Element verwenden** in „Präsentation und Daten“ aus.
 
    ![1-3](assets/1-3.png)
@@ -36,7 +36,7 @@ AEM Forms Workspace unterstützt Formularsätze. Mit Formularsätzen können meh
 
 1. Klicken Sie auf die Registerkarte **Formularsatz**, wählen Sie in der Liste den betreffenden Formularsatz aus und klicken Sie dann auf **OK**.
 
-1. Stellen Sie das Programm bereit, nachdem Sie andere relevante Prozesseigenschaften aktualisiert haben. 
+1. Stellen Sie das Programm bereit, nachdem Sie andere relevante Prozesseigenschaften aktualisiert haben.
 
 ## Die Verwendung von Formularsätzen in AEM Forms Workspace {#using-formset-in-nbsp-aem-forms-workspace}
 

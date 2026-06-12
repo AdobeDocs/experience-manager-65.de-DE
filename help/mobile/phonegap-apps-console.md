@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2654'
+source-wordcount: '2617'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 {{ue-over-mobile}}
 
-Im Entwicklungsprozess für AEM-Mobile-Apps wird anerkannt, dass Nutzer mit unterschiedlichen Fachkenntnissen zur Entwicklung von Mobile Apps beitragen. Die folgende Prozesskarte veranschaulicht die allgemeine Reihenfolge, in der Inhaltsautoren und Anwendungsentwickler Aufgaben ausführen.
+Im Entwicklungsprozess für AEM-Mobile-Apps wird berücksichtigt, dass Benutzer mit unterschiedlichen Fachkenntnissen zur Entwicklung von Mobile Apps beitragen. Die folgende Prozesskarte veranschaulicht die allgemeine Reihenfolge, in der Inhaltsautoren und Anwendungsentwickler Aufgaben ausführen.
 
 ![chlimage_1-10](assets/chlimage_1-10.gif)
 
@@ -72,16 +72,16 @@ Mobile Apps basieren auf einem Blueprint, der eine Seitenstruktur und Eigenschaf
 * **Beschreibung:** Eine Beschreibung der Anwendung.
 * **Server-URL:** Die URL, die OTA-Inhaltsaktualisierungen (Over-the-Air) für die Anwendung bereitstellt. Der Standardwert ist die Veröffentlichungs-Server-URL der -Instanz, die zum Erstellen einer Anwendung verwendet wird (entnommen aus dem Externalizer-Service). Beachten Sie, dass es sich hierbei um eine Veröffentlichungs-Server-Instanz und nicht um einen Autor handeln muss, wofür eine Authentifizierung erforderlich ist.
 
-Sie können auch eine Bilddatei bereitstellen, die als Miniaturansicht der Anwendung verwendet werden soll, die zu verwendende PhoneGap Build-Konfiguration auswählen und die zu verwendende Mobile-App-Analysekonfiguration auswählen. Dieses Bild wird nur als Miniaturansicht verwendet, um Ihre Mobile App in der Mobile-Apps-Konsole im Experience Manager darzustellen.
+Sie können auch eine Grafikdatei bereitstellen, die als Miniaturansicht der Anwendung verwendet werden soll, die zu verwendende PhoneGap-Build-Konfiguration auswählen und die zu verwendende Mobile-App-Analytics-Konfiguration auswählen. Dieses Bild wird nur als Miniaturansicht verwendet, um Ihre Mobile App in der Mobile-App-Konsole in Experience Manager darzustellen.
 
 Es gibt zusätzliche (und optionale) Registerkarten für Build Cloud Service und die Integration des Adobe Mobile Services SDK-Plug-ins in Ihre App.
 
 * Build: Klicken Sie auf Konfigurationen verwalten und richten Sie Ihren build.phonegap.com Build-Dienst hier ein. Dann können Sie aus der Dropdown-Liste den neu erstellten PhoneGap-Build-Cloud-Service auswählen.
-* Analytics: Klicken Sie auf „Konfigurationen verwalten“ und richten Sie Ihren [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=de)-Cloud-Service ein. Anschließend können Sie aus der Dropdown-Liste den neu erstellten Mobile Service auswählen, der in Ihre Mobile App integriert werden soll.
+* Analytics: Klicken Sie auf Konfigurationen verwalten und richten Sie Ihren [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=de)-Cloud-Service ein. Anschließend können Sie aus der Dropdown-Liste den neu erstellten Mobile Service auswählen, der in Ihre Mobile App integriert werden soll.
 
 >[!NOTE]
 >
->Entwickler können das AEM PhoneGap Starter Kit verwenden, um Apps zu erstellen und sie zur Konsole hinzuzufügen.
+>Entwicklerinnen und Entwickler können das AEM PhoneGap-Starter-Kit verwenden, um Apps zu erstellen und sie zur Konsole hinzuzufügen.
 
 Beim folgenden Verfahren wird die Touch-optimierte Benutzeroberfläche verwendet, um eine Mobile App zu erstellen.
 
@@ -91,11 +91,11 @@ Beim folgenden Verfahren wird die Touch-optimierte Benutzeroberfläche verwendet
    ![Das Symbol „Erstellen“ wird durch ein Pluszeichen innerhalb eines Quadrats angezeigt.](do-not-localize/chlimage_1-7.png)
 
 1. (Optional) Geben Sie auf der Registerkarte „Erweitert“ eine Beschreibung für das Programm ein und ändern Sie bei Bedarf die Server-URL.
-1. (Optional) Wenn Sie PhoneGap Build zum Kompilieren des Programms verwenden, wählen Sie auf der Registerkarte Erstellen die zu verwendende Konfiguration aus.
+1. (Optional) Wenn Sie PhoneGap Build zum Kompilieren der Anwendung verwenden, wählen Sie auf der Registerkarte Erstellen die zu verwendende Konfiguration aus.
 
    Um eine PhoneGap-Build-Konfiguration zu erstellen, klicken Sie auf Konfigurationen verwalten .
 
-1. (Optional) Wenn Sie SiteCatalyst zur Verfolgung der Anwendungsaktivität verwenden, wählen Sie auf der Registerkarte „Analytics“ die zu verwendende Konfiguration aus.
+1. (Optional) Wenn Sie SiteCatalyst zur Verfolgung der Anwendungsaktivität verwenden, wählen Sie auf der Registerkarte Analytics die zu verwendende Konfiguration aus.
 
    Um eine Mobile-App-Konfiguration zu erstellen, klicken Sie auf Konfigurationen verwalten.
 
@@ -210,9 +210,9 @@ Schritte zum Erstellen einer App basierend auf einer App-Vorlage:
 
 ## Erkunden der Beispiel-Geometrixx Outdoors-App {#exploring-the-sample-geometrixx-outdoors-app}
 
-Die Geometrixx Outdoors-App ist eine Beispiel-PhoneGap-Anwendung, die die Funktionen des Standard-Blueprints für PhoneGap-Anwendungen und die Beispiel-Komponenten für Mobilgeräte veranschaulicht.
+Die Geometrixx Outdoors-App ist eine Beispiel-PhoneGap-Anwendung, die die Funktionen des standardmäßigen PhoneGap-Anwendungs-Blueprints und der Beispiel-Mobile-Komponenten veranschaulicht.
 
-Klicken Sie zum Öffnen der Anwendung in der Leiste auf Mobile Apps und wählen Sie Geometrixx Outdoors-App aus.
+Klicken Sie zum Öffnen der Anwendung in der Leiste auf Mobile Apps und wählen Sie dann Geometrixx Outdoors-App aus.
 
 ### Allgemeine Seitenfunktionen - Geometrixx Mobile App {#common-page-features-geometrixx-mobile-app}
 
@@ -258,7 +258,7 @@ Enthält eine Schaltfläche Zurück . Mit dem Absatzsystem können Sie Komponent
 
 Wenn Sie das Programm verwenden, ist die Seite „Überprüfungen“ über das Karussell auf der englischen Seite verfügbar.
 
-### Die News-Seite - Geometrixx Mobile App {#the-news-page-geometrixx-mobile-app}
+### Die Nachrichtenseite - Geometrixx Mobile App {#the-news-page-geometrixx-mobile-app}
 
 Enthält eine Schaltfläche Zurück . Mit dem Absatzsystem können Sie Komponenten hinzufügen.
 
@@ -278,7 +278,7 @@ Wenn Sie die Anwendung verwenden, ist die Seite Standorte über die Menüliste a
 
 ## Beispiele für Mobile-Komponenten {#sample-mobile-components}
 
-Beim Bearbeiten von Seiten einer Mobile App sind mehrere Komponenten sofort im Sidekick verfügbar. Die Komponenten gehören zur Komponentengruppe PhoneGap.
+Beim Bearbeiten von Seiten einer Mobile App sind in Sidekick sofort mehrere Komponenten verfügbar. Die Komponenten gehören zur Komponentengruppe PhoneGap.
 
 ### Karussell-Galerie {#swipe-carousel}
 

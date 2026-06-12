@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1206'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ Jeder Anwendungs-Store eines Anbieters - z. B. Apple App Store oder Google Play 
 >
 >Mit der AEM Verify-App können Sie Screenshots direkt an Ihre App-Details in AEM senden.
 >
->Siehe [Mobile-Schnellstart für AEM-Überprüfung](/help/mobile/phonegap-mobile-quickstart.md) für weitere Details.
+>Weitere Informationen finden [&#x200B; unter „Mobile Quickstart for AEM Verify](/help/mobile/phonegap-mobile-quickstart.md).
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -95,7 +95,7 @@ Die Metadaten für alle konfigurierten Plattformen werden jetzt gleichzeitig auf
 >
 >Die Platform-Metadatenabschnitte werden von PhoneGap während einer CLI oder eines Builds von Remote PhoneGap nicht verwendet. Stattdessen versucht AEM, Metadaten für Plattformen zu erfassen, damit sie später beim Senden an den Anwendungsspeicher des Zielanbieters verwendet werden können.
 
-Für Plattformen, die von AEM nicht verstanden werden, ist es dennoch möglich, dass ein AEM-Entwickler die Benutzeroberfläche erweitert, um diese Metadaten zu erfassen, die später exportiert und während des Antragsübermittlungsprozesses verwendet werden können.
+Für Plattformen, die von AEM nicht verstanden werden, ist es dennoch möglich, dass AEM-Entwicklerinnen und -Entwickler die Benutzeroberfläche erweitern, um diese Metadaten zu erfassen, die später während des Prozesses der Antragseinreichung exportiert und verwendet werden können.
 
 #### iOS-Metadaten {#ios-metadata}
 
@@ -119,7 +119,7 @@ Die Exportfunktion bietet eine praktische Möglichkeit, Screenshots und Metadate
 
 ### Server-URL für Inhaltsaktualisierung {#content-update-server-url}
 
-Eine der wichtigsten Funktionen von AEM-Apps ist die Möglichkeit, über ContentSync über eine Mobile App neue Inhalte anzufordern, wobei Inhalte HTML-Ressourcen, Seiten, Videos, Bilder, Text und mehr sein können. Nachdem ein Inhaltsautor Inhalte aktualisiert und dann veröffentlicht hat, stellt der Server die Inhaltsaktualisierung für die Mobile App zum Download bereit.
+Eine der wichtigsten Funktionen von AEM-Programmen ist die Möglichkeit, über ContentSync über eine Mobile App neue Inhalte anzufordern, wobei Inhalte HTML-Ressourcen, Seiten, Videos, Bilder, Text und mehr sein können. Nachdem ein Inhaltsautor Inhalte aktualisiert und dann veröffentlicht hat, stellt der Server die Inhaltsaktualisierung für die Mobile App zum Download bereit.
 
 Die URL-Eigenschaft des Inhaltsaktualisierungsservers ist die URL, die auf eine Veröffentlichungsinstanz verweisen muss, entweder direkt oder über Dispatcher oder CDN. Das Format der URL ist einfach:
 
@@ -127,7 +127,7 @@ Die URL-Eigenschaft des Inhaltsaktualisierungsservers ist die URL, die auf eine 
 
 >[!NOTE]
 >
->Wenn Ihre Autorenserverinstanz auf viele Veröffentlichungsserverinstanzen repliziert wird (allgemeine AEM-Architektur), hat jeder Veröffentlichungsserver dieselben Aktualisierungsinhalte. Der Grund dafür ist, dass die Aktualisierung auf der Autoreninstanz basiert und auf allen Veröffentlichungsinstanzen repliziert wird. Grundsätzlich werden Lastenausgleich und Failover vollständig unterstützt.
+>Wenn Ihre Autorenserverinstanz auf viele Veröffentlichungsserverinstanzen repliziert wird (eine gemeinsame Architektur für AEM), hat jeder Veröffentlichungsserver dieselben Aktualisierungsinhalte. Der Grund dafür ist, dass die Aktualisierung auf der Autoreninstanz basiert und auf allen Veröffentlichungsinstanzen repliziert wird. Grundsätzlich werden Lastenausgleich und Failover vollständig unterstützt.
 
 ### Registerkarte „Plug-ins“ {#the-plugins-tab}
 

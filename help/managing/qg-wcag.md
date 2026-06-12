@@ -7,8 +7,8 @@ feature: Compliance
 role: Developer, Leader, User
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 100%
+source-wordcount: '1880'
+ht-degree: 91%
 
 ---
 
@@ -40,12 +40,14 @@ Daher ist das Verständnis der Ziele von WCAG 2.1 und der Struktur der Richtlini
 
 Absicht von WCAG 2.1 ist es, Richtlinien mit folgenden Merkmalen bereitzustellen:
 
-* **Technologieunabhängig:** Mit anderen Worten Richtlinien, die auf eine Reihe von Web-Inhaltsformaten und nicht nur auf HTML angewendet werden können. So kann WCAG 2.1 Inhalte abdecken, die in den Formaten PDF, Flash, JavaScript und anderen aktuellen und künftigen Web-Technologien generiert oder bereitgestellt werden.
+* Sind **technologieunabhängig:**
+Mit anderen Worten Richtlinien, die auf eine Reihe von Web-Inhaltsformaten und nicht nur auf HTML angewendet werden können. So kann WCAG 2.1 Inhalte abdecken, die in den Formaten PDF, Flash, JavaScript und anderen aktuellen und künftigen Web-Technologien generiert oder bereitgestellt werden.
 
-* **Testfähig:** Jede Richtlinie ist so formuliert, dass sie objektiv getestet werden kann, um sicherzustellen, dass eine Gruppe von Fachleuten für Barrierefreiheit generell zustimmt, dass die Richtlinie eingehalten wird. Eine der Herausforderungen bei Richtlinien zur Barrierefreiheit besteht darin, dass einige zwar technisch prüfbar sind, andere jedoch menschliches Urteilsvermögen erfordern, um festzustellen, ob die Richtlinie erfolgreich umgesetzt wurde oder nicht.
+* Sind **testbar:**
+Jede Richtlinie ist so formuliert, dass sie objektiv getestet werden kann, um sicherzustellen, dass eine Gruppe von Fachleuten für Barrierefreiheit generell zustimmt, dass die Richtlinie eingehalten wird. Eine der Herausforderungen bei Richtlinien zur Barrierefreiheit besteht darin, dass einige zwar technisch prüfbar sind, andere jedoch menschliches Urteilsvermögen erfordern, um festzustellen, ob die Richtlinie erfolgreich umgesetzt wurde oder nicht.
 
-* Unterstützung einer **priorisierten und kontextbezogenen Implementierung:**
-Den WCAG 2.1-Richtlinien werden Prioritäten zugewiesen, die sich auf die wahrscheinlichen Auswirkungen der Nichtbeachtung einer Richtlinie auf eine bestimmte Gruppe von Anwendern mit Behinderungen beziehen. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Außerdem wird das Konzept *Barrierefreiheit unterstützend* eingeführt. Dadurch können Autorinnen und Autoren Entscheidungen dazu treffen, wie sie Web-Technologien nutzen, die möglicherweise nicht vollständig barrierefrei sind, oder ggf. festlegen, dass Anwendende über spezielle unterstützende Technologien und/oder Browser verfügen müssen, um von Barrierefreiheitsfunktionen zu profitieren.
+* Unterstützung **priorisierter und kontextueller Implementierung:**
+Den WCAG 2.1-Richtlinien werden Prioritäten zugewiesen, die sich auf die wahrscheinlichen Auswirkungen der Nichtbeachtung einer Richtlinie auf eine bestimmte Gruppe von Benutzern mit Behinderungen beziehen. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Außerdem wird das Konzept *Barrierefreiheit unterstützend* eingeführt. Dadurch können Autorinnen und Autoren Entscheidungen dazu treffen, wie sie Web-Technologien nutzen, die möglicherweise nicht vollständig barrierefrei sind, oder ggf. festlegen, dass Anwendende über spezielle unterstützende Technologien und/oder Browser verfügen müssen, um von Barrierefreiheitsfunktionen zu profitieren.
 
 Diese Ziele haben die Struktur von WCAG 2.1 wesentlich beeinflusst.
 
@@ -67,7 +69,7 @@ WCAG 2.1 besteht aus vier Grundprinzipien für barrierefreies Design, die manchm
 Zur Erklärung:
 * Zu jedem **Prinzip** gehören eine oder mehrere **Richtlinien**.
 
-* Richtlinien sind als Anweisungen formuliert, die entweder positiv oder negativ sind.
+* Richtlinien sind als Anweisungen formuliert, die entweder positiv sind (tun Sie dies…) oder negativ (tun Sie dies nicht…).
 * Die Richtlinien sind von 1.1 bis 4.1 nummeriert, wobei die erste Zahl dem übergeordneten Prinzip entspricht.
 * Jede Richtlinie besteht aus einem oder mehreren **Erfolgskriterien**.
 * Erfolgskriterien werden als Aussagen geschrieben, die für eine bestimmte Web-Seite entweder `True` oder `False` sind.

@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1763'
+source-wordcount: '1819'
 ht-degree: 100%
 
 ---
@@ -47,11 +47,11 @@ Der Assembler-Dienst kann nicht interaktive PDF-Dokumente zusammenstellen, ohne 
 
 >[!NOTE]
 >
->Weitere Informationen zum Assembler-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Assembler-Dienst finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Weitere Informationen zu einem DDX-Dokument finden Sie in der [Referenz für Assembler-Service und DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Weitere Informationen zu einem DDX-Dokument finden Sie in der [Referenz für Assembler-Dienst und DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -65,7 +65,7 @@ Führen Sie zum Zusammenführen eines nicht interaktiven PDF-Dokuments die folge
 1. Stellen Sie das PDF-Dokument zusammen.
 1. Speichern Sie das nicht interaktive PDF-Dokument.
 
-**Schließen Sie Projektdateien ein**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -83,7 +83,7 @@ Wenn AEM Forms auf einem anderen unterstützten J2EE-Anwendungsserver als JBoss 
 
 Bevor Sie einen Assembler-Vorgang programmgesteuert ausführen können, müssen Sie einen Assembler-Dienst-Client erstellen.
 
-**Referenzieren eines bestehenden DDX-Dokuments**
+**Vorhandenes DDX-Dokument referenzieren**
 
 Zum Zusammenführen eines PDF-Dokuments muss auf ein DDX-Dokument verwiesen werden. Dieses DDX-Dokument muss Folgendes enthalten: `NoXFA`-Element, das den Assembler-Dienst anweist, ein nicht interaktives PDF-Dokument zurückzugeben.
 
@@ -91,7 +91,7 @@ Zum Zusammenführen eines PDF-Dokuments muss auf ein DDX-Dokument verwiesen werd
 
 Ein interaktives PDF-Dokument muss referenziert und an den Assembler-Dienst übergeben werden, um ein nicht interaktives PDF-Dokument wiederherzustellen.
 
-**Laufzeitoptionen festlegen**
+**Festlegen von Laufzeitoptionen**
 
 Sie können Laufzeitoptionen festlegen, die das Verhalten des Assembler-Dienstes während der Ausführung eines Auftrags steuern. Sie können beispielsweise eine Option festlegen, mit der der Assembler-Dienst angewiesen wird, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt.
 
@@ -137,7 +137,7 @@ Assemblieren eines nicht interaktiven PDF-Dokuments mithilfe der Assembler-Diens
 1. Legen Sie Laufzeitoptionen fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen speichert, indem Sie seinen Konstruktor verwenden.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Service anzuweisen, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt, rufen Sie die Methode `setFailOnError` des `AssemblerOptionSpec`-Objekts auf und übergeben Sie `false`.
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, die Verarbeitung eines Auftrags im Falle eines Fehlers fortzusetzen, rufen Sie die Methode `setFailOnError` des Objekts `AssemblerOptionSpec` auf und geben Sie `false` weiter.
 
 1. Stellen Sie das PDF-Dokument zusammen.
 
@@ -145,7 +145,7 @@ Assemblieren eines nicht interaktiven PDF-Dokuments mithilfe der Assembler-Diens
 
    * Ein `com.adobe.idp.Document`-Objekt, das das DDX-Dokument darstellt. Stellen Sie sicher, dass dieses DDX-Dokument den Wert `inDoc` für das PDF-Quellelement enthält.
    * Ein `com.adobe.idp.Document`-Objekt, das das interaktive PDF-Dokument enthält.
-   * Ein `com.adobe.livecycle.assembler.client.AssemblerOptionSpec`-Objekt, das die Laufzeitoptionen angibt, einschließlich der standardmäßigen Schrift und Auftragsprotokollebene.
+   * Ein `com.adobe.livecycle.assembler.client.AssemblerOptionSpec`-Objekt, das die Laufzeitoptionen angibt, einschließlich der standardmäßigen Schriftart und Auftragslog-Ebene.
 
    Die `invokeOneDocument`-Methode gibt ein `com.adobe.idp.Document`-Objekt zurück, das ein nicht interaktives PDF-Dokument enthält.
 
@@ -158,7 +158,7 @@ Assemblieren eines nicht interaktiven PDF-Dokuments mithilfe der Assembler-Diens
 
 ## Zusammenführen eines nicht interaktiven PDF-Dokuments mithilfe der Webservice-API {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}
 
-Assemblieren eines nicht interaktiven PDF-Dokuments mithilfe der Assembler-Service-API (Webservice):
+Zusammenstellen eines nicht interaktiven PDF-Dokuments mithilfe der Assembler-Dienst-API (Webservice):
 
 1. Schließen Sie Projektdateien ein.
 
@@ -170,53 +170,53 @@ Assemblieren eines nicht interaktiven PDF-Dokuments mithilfe der Assembler-Servi
 
 1. Erstellen Sie einen Assembler-Client.
 
-   * Erstellen Sie ein `AssemblerServiceClient`-Objekt unter Verwendung seines Standardkonstruktors.
-   * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address` -Objekt mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekr, indem Sie den Wert des Felds `AssemblerServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Erstellen Sie ein `AssemblerServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
+   * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie brauchen das Attribut `lc_version` nicht zu verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `AssemblerServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `AssemblerServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `AssemblerServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den Konstantenwert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Referenzieren Sie ein vorhandenes DDX-Dokument.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des DDX-Dokuments verwendet.
    * Erstellen Sie ein Objekt `System.IO.FileStream`, indem Sie den Konstruktor aufrufen und einen String-Wert übergeben, der den Dateispeicherort des DDX-Dokuments und den Modus, in dem die Datei geöffnet werden soll, repräsentiert.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie den Inhalt des Byte-Arrays seinem `MTOM`-Feld zuweisen.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Referenzieren Sie ein interaktives PDF-Dokument.
 
-   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Eingabedokuments verwendet. Dieses `BLOB`-Objekt wird dem `invokeOneDocument` als Argument übergeben.
+   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Eingabedokuments verwendet. Dieses `BLOB`-Objekt wird an `invokeOneDocument` als Argument übergeben.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Eingabedokuments und den Modus zum Öffnen der Datei angibt.
-   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie dessen Feld `MTOM` mit dem Inhalt des Byte-Arrays belegen.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Legen Sie Laufzeitoptionen fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen speichert, indem Sie seinen Konstruktor verwenden.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie einem Datenelement, das zum `AssemblerOptionSpec`-Objekt gehört, einen Wert zuweisen. Um beispielsweise den Assembler-Dienst anzuweisen, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt, weisen Sie dem Datenelement `failOnError` des `AssemblerOptionSpec`-Objekts `false` zu.
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie einem Datenelement, das zum `AssemblerOptionSpec`-Objekt gehört, einen Wert zuweisen. Um beispielsweise den Assembler-Dienst anzuweisen, die Verarbeitung eines Auftrags im Falle eines Fehlers fortzusetzen, weisen Sie `false` dem Datenelement `failOnError` des Objekts `AssemblerOptionSpec` zu.
 
 1. Stellen Sie das PDF-Dokument zusammen.
 
    Rufen Sie die Methode `invokeOneDocument` des `AssemblerServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
-   * Ein `BLOB`-Objekt, das das DDX-Dokument darstellt
+   * A `BLOB`-Objekt, das das DDX-Dokument darstellt
    * Ein `BLOB`-Objekt, das das interaktive PDF-Dokument darstellt
    * Ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen angibt
 
-   Die `invokeOneDocument`-Methode gibt eine `BLOB`-Objekt zurück, das ein nicht interaktives PDF-Dokument enthält.
+   Die `invokeOneDocument`-Methode gibt ein `BLOB`-Objekt zurück, das ein nicht interaktives PDF-Dokument enthält.
 
 1. Speichern Sie das nicht interaktive PDF-Dokument.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des nicht interaktiven PDF-Dokuments und den Modus zum Öffnen der Datei darstellt.
    * Erstellen Sie ein Byte-Array, in dem der Inhalt des von der `invokeOneDocument`-Methode zurückgegebenen `BLOB`-Objekts gespeichert wird. Füllen Sie das Byte-Array, indem Sie den Wert des Felds `MTOM` des `BLOB`-Objekts abrufen.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 * „Schnellstartanleitung (MTOM): Zusammenstellen eines nicht interaktiven PDF-Dokuments mithilfe der Web-Service-API“.

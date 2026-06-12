@@ -13,8 +13,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1859'
-ht-degree: 100%
+source-wordcount: '1886'
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,7 @@ Die folgende Abbildung zeigt den Abschnitt zur Gesundheit des Patienten (sie ste
 
 ![am_am_formc](assets/am_am_formc.png)
 
-Dieses Fragment enthält zwei Teilformulare mit dem Namen *subPatientPhysical* und *subPatientHealth*. Beide Teilformulare werden im DDX-Dokument referenziert, das an den Assembler-Service übergeben wird. Mithilfe des Assembler-Services können Sie alle diese XDP-Fragmente zu einem einzelnen XDP-Dokument kombinieren, wie in der folgenden Abbildung dargestellt.
+Dieses Fragment enthält zwei Teilformulare mit dem Namen *subPatientPhysical* und *subPatientHealth*. Beide Teilformulare werden im DDX-Dokument referenziert, das an den Assembler-Dienst übergeben wird. Mithilfe des Assembler-Dienstes können Sie alle diese XDP-Fragmente zu einem einzelnen XDP-Dokument kombinieren, wie in der folgenden Abbildung dargestellt.
 
 ![am_am_formd](assets/am_am_formd.png)
 
@@ -51,7 +51,7 @@ Das folgende DDX-Dokument stellt mehrere XDP-Fragmente in einem XDP-Dokument zus
  </DDX>
 ```
 
-Das DDX-Dokument enthält ein XDP-`result`-Tag, das den Namen des Ergebnisses angibt. In diesem Fall ist der Wert `tuc018result.xdp`. Dieser Wert wird in der Anwendungslogik referenziert, die zum Abrufen des XDP-Dokuments verwendet wird, nachdem der Assembler-Service das Ergebnis zurückgegeben hat. Betrachten Sie beispielsweise die folgende Java-Anwendungslogik, die zum Abrufen des assemblierten XDP-Dokuments verwendet wird (beachten Sie, dass der Wert fett gedruckt ist):
+Das DDX-Dokument enthält ein XDP-`result`-Tag, das den Namen des Ergebnisses angibt. In diesem Fall ist der Wert `tuc018result.xdp`. Dieser Wert wird in der Anwendungslogik referenziert, die zum Abrufen des XDP-Dokuments verwendet wird, nachdem der Assembler-Dienst das Ergebnis zurückgegeben hat. Betrachten Sie beispielsweise die folgende Java-Anwendungslogik, die zum Abrufen des assemblierten XDP-Dokuments verwendet wird (beachten Sie, dass der Wert fett gedruckt ist):
 
 ```java
  //Iterate through the map object to retrieve the result XDP document
@@ -78,11 +78,11 @@ Für jedes Teilformular können Sie ein `XDPContent`-Element hinzufügen (dieses
 
 >[!NOTE]
 >
->Weitere Informationen zum Assembler-Service finden Sie unter [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Assembler-Dienst finden Sie unter [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Weitere Informationen zu einem DDX-Dokument finden Sie in der [Referenz für Assembler-Service und DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Weitere Informationen zu einem DDX-Dokument finden Sie in der [Referenz für Assembler-Dienst und DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -96,7 +96,7 @@ Um mehrere XDP-Fragmente zusammenzuführen, führen Sie die folgenden Aufgaben a
 1. Stellen Sie die mehreren XDP-Dokumente zusammen.
 1. Rufen Sie das zusammengestellte XDP-Dokument ab.
 
-**Einschließen von Projektdateien**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -110,7 +110,7 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 
 **PDF Assembler-Client erstellen**
 
-Bevor Sie einen Assembler-Vorgang programmgesteuert ausführen können, müssen Sie einen Assembler-Service-Client erstellen.
+Bevor Sie einen Assembler-Vorgang programmgesteuert ausführen können, müssen Sie einen Assembler-Dienst-Client erstellen.
 
 **Verweisen auf ein vorhandenes DDX-Dokument**
 
@@ -132,7 +132,7 @@ Sie können Laufzeitoptionen festlegen, die das Verhalten des Assembler-Dienstes
 
 **Zusammenführen mehrerer XDP-Dokumente**
 
-Um mehrere XDP-Dateien zusammenzuführen, rufen Sie den `invokeDDX`-Vorgang auf. Der Assembler-Service gibt das zusammengeführte XDP-Dokument innerhalb eines Sammlungsobjekts zurück.
+Um mehrere XDP-Dateien zusammenzuführen, rufen Sie den `invokeDDX`-Vorgang auf. Der Assembler-Dienst gibt das zusammengeführte XDP-Dokument innerhalb eines Sammlungsobjekts zurück.
 
 **Abrufen des zusammengeführten XDP-Dokuments**
 
@@ -154,7 +154,7 @@ Ein zusammengeführtes XDP-Dokument wird innerhalb eines Sammlungsobjekts zurüc
 
 ## Zusammenstellen mehrerer XDP-Fragmente mithilfe der Java-API {#assemble-multiple-xdp-fragments-using-the-java-api}
 
-So stellen Sie mehrere XDP-Fragmente mithilfe der Assembler Service-API (Java) zusammen:
+So stellen Sie mehrere XDP-Fragmente mithilfe der Assembler-Dienst-API (Java) zusammen:
 
 1. Schließen Sie Projektdateien ein.
 
@@ -182,7 +182,7 @@ So stellen Sie mehrere XDP-Fragmente mithilfe der Assembler Service-API (Java) z
 1. Legen Sie die Laufzeitoptionen fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen speichert, indem Sie seinen Konstruktor verwenden.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Service anzuweisen, die Verarbeitung eines Auftrags auch dann fortzusetzen, wenn ein Fehler auftritt, rufen Sie die Methode `setFailOnError` des `AssemblerOptionSpec`-Objekts auf und übergeben `false`.
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, die Verarbeitung eines Auftrags auch dann fortzusetzen, wenn ein Fehler auftritt, rufen Sie die Methode `setFailOnError` des `AssemblerOptionSpec`-Objekts auf und übergeben `false`.
 
 1. Stellen Sie die mehreren XDP-Dokumente zusammen.
 
@@ -190,7 +190,7 @@ So stellen Sie mehrere XDP-Fragmente mithilfe der Assembler Service-API (Java) z
 
    * Ein `com.adobe.idp.Document`-Objekt, das das zu verwendende DDX-Dokument darstellt
    * Ein `java.util.Map`-Objekt, das die XDP-Eingabedateien enthält
-   * Ein `com.adobe.livecycle.assembler.client.AssemblerOptionSpec`-Objekt, das die Laufzeitoptionen angibt, einschließlich der Standardschrift und der Auftragsprotokollebene
+   * Ein `com.adobe.livecycle.assembler.client.AssemblerOptionSpec`-Objekt, das die Laufzeitoptionen angibt, einschließlich der Standardschrift und der Auftragslog-Ebene
 
    Die Methode `invokeDDX` gibt ein `com.adobe.livecycle.assembler.client.AssemblerResult`-Objekt zurück, das das zusammengestellte XDP-Dokument enthält.
 
@@ -206,12 +206,12 @@ So stellen Sie mehrere XDP-Fragmente mithilfe der Assembler Service-API (Java) z
 
 [Zusammenstellen mehrerer XDP-Fragmente](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
 [Kurzanleitung (SOAP-Modus): Zusammenstellen mehrerer XDP-Fragmente mithilfe der Java-API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
-[Einschließen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[Festlegen der Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Einschließlich AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Zusammenstellen mehrerer XDP-Fragmente mithilfe der Webservice-API {#assemble-multiple-xdp-fragments-using-the-web-service-api}
 
-So stellen Sie mehrere XDP-Fragmente mithilfe der Assembler-Service-API (Webservice) zusammen:
+So stellen Sie mehrere XDP-Fragmente mithilfe der Assembler-Dienst-API (Webservice) zusammen:
 
 1. Schließen Sie Projektdateien ein.
 
@@ -229,7 +229,7 @@ So stellen Sie mehrere XDP-Fragmente mithilfe der Assembler-Service-API (Webserv
 
    * Erstellen Sie ein `AssemblerServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
    * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie brauchen das Attribut `lc_version` nicht zu verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekr, indem Sie den Wert des Felds `AssemblerServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `AssemblerServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
@@ -242,7 +242,7 @@ So stellen Sie mehrere XDP-Fragmente mithilfe der Assembler-Service-API (Webserv
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des DDX-Dokuments verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des DDX-Dokuments und den Modus enthält, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekt gespeichert wird. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die Länge des zu lesenden Streams.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seiner Eigenschaft `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
@@ -250,7 +250,7 @@ So stellen Sie mehrere XDP-Fragmente mithilfe der Assembler-Service-API (Webserv
 
    * Erstellen Sie für jede XDP-Eingabedatei ein `BLOB`-Objekt mithilfe seines Konstruktors. Das `BLOB`-Objekt wird zum Speichern der Eingabedatei verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgewert übergeben, der den Dateispeicherort der Eingabedatei und den Modus, in dem die Datei geöffnet werden soll, darstellt.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die Länge des zu lesenden Streams.
    * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `MTOM`-Feld den Inhalt des Byte-Arrays zuweisen.
    * Erstellen Sie ein `MyMapOf_xsd_string_To_xsd_anyType`-Objekt. Dieses Sammlungsobjekt wird zum Speichern von Eingabedateien verwendet, die zum Erstellen eines zusammengestellten XDP-Dokuments erforderlich sind.
@@ -262,7 +262,7 @@ So stellen Sie mehrere XDP-Fragmente mithilfe der Assembler-Service-API (Webserv
 1. Legen Sie Laufzeitoptionen fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen speichert, indem Sie seinen Konstruktor verwenden.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie einem Datenelement, das zum `AssemblerOptionSpec`-Objekt gehört, einen Wert zuweisen. Um beispielsweise den Assembler-Service anzuweisen, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt, weisen Sie dem `failOnError`-Datenelement.des `AssemblerOptionSpec`-Objekts `false` zu.
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie einem Datenelement, das zum `AssemblerOptionSpec`-Objekt gehört, einen Wert zuweisen. Um beispielsweise den Assembler-Dienst anzuweisen, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt, weisen Sie dem `failOnError`-Datenelement.des `AssemblerOptionSpec`-Objekts `false` zu.
 
 1. Stellen Sie die mehreren XDP-Dokumente zusammen.
 
@@ -284,5 +284,5 @@ So stellen Sie mehrere XDP-Fragmente mithilfe der Assembler-Service-API (Webserv
 
 **Siehe auch**
 
-[Zusammenfügen mehrerer XDP-Fragmente](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
+[Zusammenstellen mehrerer XDP-Fragmente](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
 [Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

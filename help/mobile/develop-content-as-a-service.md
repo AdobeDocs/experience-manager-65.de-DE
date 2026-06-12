@@ -10,7 +10,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '977'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Dazu gehören die Verwendung von Assets, Site-Inhalten, CAS-Inhalten (Over-the-A
 Es gibt drei Haupttypen von Material, das von Content Services bereitgestellt wird:
 
 1. **Assets**
-1. **Gepackter HTML-Inhalt (HTML/CSS/JS)**
+1. **Gepackte HTML-Inhalte (HTML/CSS/JS)**
 1. **Kanalunabhängiger Inhalt**
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
@@ -39,7 +39,7 @@ Es gibt drei Haupttypen von Material, das von Content Services bereitgestellt wi
 
 Asset-Sammlungen sind AEM-Konstrukte, die Verweise auf andere Sammlungen enthalten.
 
-Eine Asset-Sammlung kann über Content Services verfügbar gemacht werden. Der Aufruf einer Asset-Sammlung in einer Anfrage gibt ein -Objekt zurück, das eine Liste der Assets ist - einschließlich ihrer URLs. Der Zugriff auf Assets erfolgt über eine URL. Die URL wird in einem -Objekt bereitgestellt. Zum Beispiel:
+Eine Asset-Sammlung kann über Content Services verfügbar gemacht werden. Der Aufruf einer Asset-Sammlung in einer Anfrage gibt ein -Objekt zurück, das eine Liste der Assets ist - einschließlich ihrer URLs. Der Zugriff auf Assets erfolgt über eine URL. Die URL wird in einem -Objekt bereitgestellt. Beispiel:
 
 * Eine Seitenentität gibt die JSON-Datei (Seitenobjekt) zurück, die einen Bildverweis enthält. Der Bildverweis ist eine URL, mit der die Asset-Binärdatei für das Bild abgerufen wird.
 * Bei einer Anfrage nach einer Liste von Assets in einem Ordner wird die JSON mit Details zu allen Entitäten in diesem Ordner zurückgegeben. Diese Liste ist ein Objekt. Die JSON-Datei enthält URL-Referenzen, mit denen die Binärdaten der Assets für jedes Asset in diesem Ordner abgerufen werden.
@@ -54,7 +54,7 @@ Die Asset-Optimierung ist eine Server-seitige Funktion, die auf den in der API-A
 
 Der Asset-Workflow sieht wie folgt aus:
 
-1. Die Asset-Referenz ist vorkonfiguriert in der AEM verfügbar
+1. Die Asset-Referenz ist in AEM vorkonfiguriert verfügbar
 1. Erstellen einer Asset-Referenzentität für ihr Modell
 1. Entität bearbeiten
 
@@ -67,7 +67,7 @@ Das folgende Diagramm zeigt den Referenzworkflow für **Assets**:
 
 ### Verwalten von Assets {#managing-assets}
 
-Content Services bieten Zugriff auf AEM-verwaltete Assets, die nicht durch andere AEM-Inhalte referenziert werden können.
+Content Services bieten Zugriff auf von AEM verwaltete Assets, die nicht durch andere AEM-Inhalte referenziert werden können.
 
 #### Managed Assets {#existing-managed-assets}
 
@@ -83,7 +83,7 @@ Derzeit sind diese über das Assets-Repository verteilt. Die Dateien, auf die di
 
 #### Zugreifen auf CSS-Asset-Entitäten {#accessing-cs-asset-entities}
 
-Lassen wir vorerst die Schritte beiseite, in denen beschrieben wird, wie die Seite über die API verfügbar gemacht wird (sie wird von der Beschreibung der AEM-Benutzeroberfläche abgedeckt), und nehmen wir an, dass dies bereits geschehen ist. Asset-Entitäten wurden erstellt und dem Bereich „appImages“ hinzugefügt. Zu Organisationszwecken wurden unter dem Bereich zusätzliche Ordner erstellt. Die Asset-Entitäten werden also im AEM-JCR wie folgt gespeichert:
+Lassen wir vorerst die Schritte beiseite, in denen beschrieben wird, wie die Seite über die API verfügbar gemacht wird (sie wird von der Beschreibung der AEM-Benutzeroberfläche abgedeckt), und nehmen wir an, dass dies bereits geschehen ist. Asset-Entitäten wurden erstellt und dem Bereich „appImages“ hinzugefügt. Zu Organisationszwecken wurden unter dem Bereich zusätzliche Ordner erstellt. Die Asset-Entitäten werden also im AEM JCR wie folgt gespeichert:
 
 * /content/entities/appImages/logos/logo_light
 * /content/entities/appImages/logos/logo_dark
@@ -105,16 +105,16 @@ Die JSON-Datei stellt eine URL für jedes Bild bereit, das von Content Services 
 
 Um die Binärdatei für das Bild „Warenkorb“ abzurufen, wird die Client-Bibliothek erneut verwendet.
 
-## Inhalt der gepackten HTML {#packaged-html-content}
+## HTML-Paketinhalt {#packaged-html-content}
 
-HTML-Inhalte werden für Kunden benötigt, die das Layout der Inhalte beibehalten müssen. Dies ist für native Programme nützlich, die einen Web-Container - wie eine Cordova-Webansicht - zum Anzeigen des Inhalts verwenden.
+HTML-Inhalte werden für Kundinnen und Kunden benötigt, die das Layout der Inhalte beibehalten müssen. Dies ist für native Programme nützlich, die einen Web-Container - wie eine Cordova-Webansicht - zum Anzeigen des Inhalts verwenden.
 
-AEM Content Services stellt der mobilen App über die API HTML-Inhalte bereit. Kunden, die AEM-Inhalte als HTML bereitstellen möchten, können eine HTML-Seitenentität erstellen, die auf die AEM-Inhaltsquelle verweist.
+AEM Content Services stellt der Mobile App über die API HTML-Inhalte bereit. Kunden, die AEM-Inhalte als HTML bereitstellen möchten, können eine HTML-Seitenentität erstellen, die auf die AEM-Inhaltsquelle verweist.
 
 Die folgenden Optionen werden berücksichtigt:
 
 * **ZIP-Datei:** Damit auf dem Gerät die beste Chance zur ordnungsgemäßen Anzeige besteht, werden das referenzierte Material-css, JavaScript, Assets usw. der Seite in einer einzigen komprimierten Datei mit der Antwort enthalten. Die Verweise auf der HTML-Seite können so angepasst werden, dass sie einen relativen Pfad zu diesen Dateien verwenden.
-* **Streaming** Abrufen eines Manifests der erforderlichen Dateien von AEM. Verwenden Sie dieses Manifest dann, um alle Dateien (HTML, CSS, JS usw.) mit nachfolgenden Anfragen anzufordern.
+* **Streaming** Abrufen eines Manifests der erforderlichen Dateien aus AEM. Verwenden Sie dieses Manifest dann, um alle Dateien (HTML, CSS, JS usw.) mit nachfolgenden Anfragen anzufordern.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 
@@ -128,7 +128,7 @@ Diese Inhaltsentitäten werden mithilfe eines Inhaltsmodells generiert, um die A
 
 Inhalte können auf verschiedene Weise zur App gelangen.
 
-1. GET-Content-ZIPs über AEM Over-the-Air
+1. ABRUFEN VON ZIP-INHALTEN ÜBER AEM Over-the-Air
 
    * Inhaltssynchronisierungs-Handler können das ZIP-Paket direkt aktualisieren oder indem sie vorhandene Inhaltssenderer aufrufen
 
@@ -136,7 +136,7 @@ Inhalte können auf verschiedene Weise zur App gelangen.
       * AEM-Handler
       * Benutzerdefinierte Handler
 
-1. GET-Inhalte direkt über Content Renderer
+1. Inhalte direkt über Inhalts-Renderer abrufen
 
    * Vorkonfigurierte Standard-Sling-Renderer
    * Inhalts-Renderer für AEM Mobile/Content Services

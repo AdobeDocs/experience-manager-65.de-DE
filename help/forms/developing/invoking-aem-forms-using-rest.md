@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2481'
-ht-degree: 98%
+source-wordcount: '2399'
+ht-degree: 95%
 
 ---
 
@@ -66,9 +66,9 @@ Beim Aufrufen von AEM Forms-Services mithilfe von REST-Anfragen werden die folge
 
   Wenn eine Liste als Eingabeparameter dient, kann ein REST-Client diese senden, indem er den Parameter mehrmals (für jedes Element der Liste einmal) angibt. Wenn beispielsweise A eine Liste von Dokumenten ist, muss die Eingabe eine mehrteilige Nachricht sein, die aus mehreren Teilen namens A besteht. In diesem Fall wird jeder Teil mit dem Namen A zu einem Element der Eingabeliste. Wenn B eine Liste von Zeichenfolgen ist, kann die Eingabe eine `application/x-www-form-urlencoded`-Nachricht sein, die aus mehreren Feldern namens B besteht. In diesem Fall wird jedes Formularfeld mit dem Namen B zu einem Element der Eingabeliste.
 
-  Wenn eine Zuordnung als Eingabeparameter dient und es sich dabei um den einzigen Eingabeparameter der Services handelt, wird jeder Teil/jedes Feld der Eingabemeldung zu einem Schlüssel/Wert-Datensatz der Zuordnung. Der Name jedes Teils/Feldes wird zum Schlüssel des Datensatzes. Der Inhalt jedes Teils/Feldes wird zum Wert des Datensatzes.
+  Wenn eine Zuordnung als Eingabeparameter dient und es sich dabei um den einzigen Eingabeparameter der Services handelt, wird jeder Teil/jedes Feld der Eingabemeldung zu einem Schlüssel/Wert-Eintrag der Zuordnung. Der Name jedes Teils/Feldes wird zum Schlüssel des Eintrags. Der Inhalt jedes Teils/Feldes wird zum Wert des Eintrags.
 
-  Wenn eine Eingabezuordnung nicht der einzige Eingabeparameter für die Dienste ist, kann jeder Schlüssel/Wert-Datensatz, der zu der Zuordnung gehört, mithilfe eines Parameters gesendet werden, dessen Benennung eine Verkettung des Parameternamens und des Datensatzschlüssels ist. Beispielsweise kann eine Eingabezuordnung namens `attributes` mit einer Liste der folgenden Schlüssel/Werte-Paare gesendet werden:
+  Wenn eine Eingabezuordnung nicht der einzige Eingabeparameter für die Dienste ist, kann jeder Schlüssel/Wert-Eintrag, der zu der Zuordnung gehört, mithilfe eines Parameters gesendet werden, dessen Benennung eine Verkettung des Parameternamens und des Schlüssel des Eintrags ist. Beispielsweise kann eine Eingabezuordnung namens `attributes` mit einer Liste der folgenden Schlüssel/Werte-Paare gesendet werden:
 
   `attributesColor=red`
 
@@ -76,7 +76,7 @@ Beim Aufrufen von AEM Forms-Services mithilfe von REST-Anfragen werden die folge
 
   `attributesWidth=5`
 
-  Dies ergibt eine Zuordnung von drei Datensätzen: `Color=red`, `Shape=box` und `Width=5`.
+  Dies ergibt eine Zuordnung von drei Einträgen: `Color=red`, `Shape=box` und `Width=5`.
 
   Die Ausgabeparameter der Listen- und Zuordnungstypen werden Teil der resultierenden XML-Nachricht. Die Ausgabeliste wird in XML als eine Serie von XML-Elementen dargestellt, wobei für jedes Element der Liste genau ein XML-Element vorhanden ist. Jedes Element erhält den gleichen Namen wie der Ausgabelistenparameter. Der Wert jedes XML-Elements repräsentiert eine von zwei verschiedenen Möglichkeiten:
 
@@ -84,7 +84,7 @@ Beim Aufrufen von AEM Forms-Services mithilfe von REST-Anfragen werden die folge
 * eine URL, die auf den Inhalt des Dokuments verweist (wenn die Liste aus `com.adobe.idp.Document`-Objekten besteht)
 
   Im folgenden Beispiel wird eine XML-Nachricht von einem Service zurückgegeben, der einen einzigen Ausgabeparameter namens *Liste*, hier eine Liste von Ganzzahlen, aufweist.
-  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Ein ausgegebener Zuordnungsparameter wird in der resultierenden XML-Nachricht als Serie von XML-Elementen mit genau einem Element für jeden Datensatz in der Zuordnung dargestellt. Jedes Element erhält den gleichen Namen wie der Schlüssel des Zuordnungseintrags. Der Wert jedes Elements ist entweder eine Textdarstellung des Zuordnungseintragswerts (wenn die Zuordnung aus Einträgen mit einem Zeichenfolgenwert besteht) oder eine URL, die auf den Inhalt des Dokuments verweist (wenn die Zuordnung aus Einträgen mit dem Wert `com.adobe.idp.Document` besteht). Nachfolgend finden Sie ein Beispiel für eine XML-Nachricht, die von einem Service zurückgegeben wird, der einen einzigen Ausgabeparameter namens `map` aufweist. Dieser Parameterwert ist eine Zuordnung, die aus Datensätzen besteht, die Briefe mit `com.adobe.idp.Document`-Objekten verknüpfen.
+  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Ein ausgegebener Zuordnungsparameter wird in der resultierenden XML-Nachricht als Serie von XML-Elementen mit genau einem Element für jeden Datensatz in der Zuordnung dargestellt. Jedes Element erhält den gleichen Namen wie der Schlüssel des Zuordnungsdatensatzes. Der Wert jedes Elements ist entweder eine Textdarstellung des Zuordnungsdatensatzwerts (wenn die Zuordnung aus Datensätzen mit einem Zeichenfolgenwert besteht) oder eine URL, die auf den Inhalt des Dokuments verweist (wenn die Zuordnung aus Datensätzen mit dem `com.adobe.idp.Document` besteht). Nachfolgend finden Sie ein Beispiel für eine XML-Nachricht, die von einem Service zurückgegeben wird, der einen einzigen Ausgabeparameter namens `map` aufweist. Dieser Parameterwert ist eine Zuordnung, die aus Datensätzen besteht, die Briefe mit `com.adobe.idp.Document` Objekten verknüpfen.
   ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
 
 ## Asynchrone Aufrufe {#asynchronous-invocations}
@@ -177,7 +177,7 @@ Die folgenden Beispiele für REST-Aufrufe werden bereitgestellt:
 * Übergeben von Datumswerten an einen AEM Forms-Prozess
 * Übergeben von Dokumenten an einen AEM Forms-Prozess
 * Übergeben von Dokument- und Textwerten an einen AEM Forms-Prozess
-* Übergeben von Auflistungswerten an einen AEM Forms-Prozess
+* Übergeben von Aufzählungswerten an einen AEM Forms-Prozess
 * Aufrufen des Prozesses MyApplication/EncryptDocument mithilfe von REST
 * Aufrufen des Prozesses MyApplication/EncryptDocument aus Acrobat
 
@@ -185,7 +185,7 @@ Die folgenden Beispiele für REST-Aufrufe werden bereitgestellt:
 
 **Übergeben von booleschen Werten an einen Prozess**
 
-Im folgenden HTML-Beispiel werden zwei `Boolean`-Werte an einen AEM Forms-Prozess namens `RestTest2` übergeben. Der Name der Aufrufmethode lautet `invoke`, und die Version ist 1.0. Beachten Sie, dass die HTML-Post-Methode verwendet wird.
+Im folgenden HTML-Beispiel werden zwei `Boolean`-Werte an einen AEM Forms-Prozess namens `RestTest2` übergeben. Der Name der Aufrufmethode lautet `invoke` und die Version ist 1.0. Beachten Sie, dass die HTML-Post-Methode verwendet wird.
 
 ```html
  <html>
@@ -264,9 +264,9 @@ Im folgenden HTML-Beispiel wird ein AEM Forms-Prozess namens `RestTest3` aufgeru
  </html>
 ```
 
-**Übergeben von Auflistungswerten an einen Prozess**
+**Übergeben von Aufzählungswerten an einen Prozess**
 
-Im folgenden HTML-Beispiel wird ein AEM Forms-Prozess mit dem Namen `SOAPEchoService` aufgerufen, für den ein Auflistungswert erforderlich ist. Beachten Sie, dass die HTML-Post-Methode verwendet wird.
+Im folgenden HTML-Beispiel wird ein AEM Forms-Prozess mit dem Namen `SOAPEchoService` aufgerufen, für den ein Aufzählungswert erforderlich ist. Beachten Sie, dass die HTML-Post-Methode verwendet wird.
 
 ```html
  <html>

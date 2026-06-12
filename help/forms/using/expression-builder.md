@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 100%
+source-wordcount: '797'
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ Der Ausdrucksgenerator verwendet intern JSP EL-Bibliotheken, damit der Ausdruck 
 
 ![Ausdrucksgenerator](assets/expressionbuilder.png)
 
-### Operatoren  {#operators}
+### Operatoren {#operators}
 
 Die Operatoren, die zur Verwendung in Ausdrücken verfügbar sind, sind in der oberen Leiste des Ausdrucksgenerators verfügbar.
 
@@ -35,7 +35,7 @@ Die Operatoren, die zur Verwendung in Ausdrücken verfügbar sind, sind in der o
 Im Folgenden finden Sie einige häufig verwendete JSP EL-Beispiele, die Sie in Ihrer Correspondence Management-Lösung verwenden können:
 
 * Addieren zweier Zahlen: ${number1 + number2}
-* Verketten zweier Zeichenketten: ${str1} ${str2}
+* Verketten zweier Zeichenketten: ${str1} ${str2}
 * Vergleichen zwei Zahlen: ${age &lt; 18}
 
 Weitere Informationen finden Sie in der [JSP-EL-Spezifikation](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). Der Client-seitige Expression Manager unterstützt nicht alle Variablen und Funktionen in der JSP-EL-Spezifikation. Dabei gilt:
@@ -126,7 +126,7 @@ Sie können ein benutzerdefiniertes Bundle erstellen, um Ihre eigenen Remote-Fun
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-Der Eintrag exm.service=true erklärt dem Expression Manager, dass der Dienst Remote-Funktionen enthält, die für die Verwendung in Ausdrücken geeignet sind. Der &lt;service_id>-Wert muss eine gültige Java-Kennung sein (alphanumerisch, $, _, ohne weitere Sonderzeichen). Dieser Wert, dem das Schlüsselwort REMOTE_ vorangestellt ist, bildet das Präfix, das in Ausdrücken verwendet wird. Beispielsweise kann eine Schnittstelle mit einer kommentierten Methode „bar()“ und der Dienst-ID „foo“ in den Diensteigenschaften in Ausdrücken mithilfe von REMOTE_foo:bar() referenziert werden.
+Der Eintrag exm.service=true erklärt dem Expression Manager, dass der Dienst Remote-Funktionen enthält, die für die Verwendung in Ausdrücken geeignet sind. Der &lt;service_id>-Wert muss eine gültige Java-Kennung sein (alphanumerisch, $, _, ohne weitere Sonderzeichen). Dieser Wert, dem das Schlüsselwort REMOTE_ vorangestellt ist, bildet das Präfix, das in Ausdrücken verwendet wird. Beispielsweise kann eine Schnittstelle mit der Methode bar() und der Service-ID foo in den Service-Eigenschaften innerhalb von Ausdrücken mit REMOTE_foo() referenziert :bar.
 
 ```java
 package mergeandfuse.com;

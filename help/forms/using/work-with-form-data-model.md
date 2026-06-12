@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '4159'
-ht-degree: 100%
+source-wordcount: '4255'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Sie können Datenmodellobjekte und Services aus verfügbaren Datenquellen zum Fo
 
 Hinzufügen von Datenmodellobjekten und Services:
 
-1. Melden Sie sich bei der AEM-Autorinstanz an, navigieren Sie zu **[!UICONTROL Formulare > Datenintegrationen]** und öffnen Sie das Formulardatenmodell, in dem Sie Datenmodellobjekte hinzufügen möchten.
+1. Melden Sie sich bei der AEM-Autoreninstanz an, navigieren Sie zu **[!UICONTROL Formulare > Datenintegrationen]** und öffnen Sie das Formulardatenmodell, in dem Sie Datenmodellobjekte hinzufügen möchten.
 1. Erweitern Sie im Bereich „Data Sources“ die Datenquellen, um verfügbare Datenmodellobjekte und Services anzuzeigen.
 1. Wählen Sie Datenmodellobjekte und Dienste aus, die Sie dem Formulardatenmodell hinzufügen möchten, und wählen Sie **[!UICONTROL Ausgewählte hinzufügen]**.
 
@@ -92,7 +92,7 @@ Sie können zwar Datenmodellobjekte aus konfigurierten Datenquellen hinzufügen,
 
 So erstellen Sie ein Datenmodellobjekt ohne Datenquellen:
 
-1. Melden Sie sich bei der AEM-Autorinstanz an, navigieren Sie zu **[!UICONTROL Formulare > Datenintegrationen]** und öffnen Sie das Formulardatenmodell, zu dem Sie ein Datenmodellobjekt oder eine Entität hinzufügen möchten.
+1. Melden Sie sich bei der AEM-Autoreninstanz an, navigieren Sie zu **[!UICONTROL Formulare > Datenintegrationen]** und öffnen Sie das Formulardatenmodell, zu dem Sie ein Datenmodellobjekt oder eine Entität hinzufügen möchten.
 1. Wählen Sie **[!UICONTROL Entität erstellen]** aus.
 1. Geben Sie im Dialogfeld „Datenmodell erstellen“ einen Namen für das Datenmodellobjekt ein und wählen Sie **[!UICONTROL Hinzufügen]** aus. Ein Datenmodellobjekt wird dem Formulardatenmodell hinzugefügt. Das neu hinzugefügte Datenmodellobjekt ist nicht an eine Datenquelle gebunden und weist keine Eigenschaften auf, wie in folgender Abbildung dargestellt.
 
@@ -113,9 +113,9 @@ Erstellen einer untergeordneten Eigenschaft:
 
    Um eine untergeordnete Eigenschaft manuell mit einer Datenmodellobjekteigenschaft zu verknüpfen, wählen Sie das Symbol zum Durchsuchen neben dem Feld **[!UICONTROL Bindungsverweis]** aus. Im Dialogfeld **[!UICONTROL Objekt auswählen]** sind alle Eigenschaften des übergeordneten Datenmodellobjekts aufgeführt. Wählen Sie eine Eigenschaft aus, mit der Sie eine Verknüpfung erstellen möchten, und wählen Sie das Häkchensymbol aus. Beachten Sie, dass Sie nur eine Eigenschaft mit demselben Datentyp wie die untergeordnete Eigenschaft auswählen können.
 
-1. Wählen Sie **[!UICONTROL Fertig]** aus, um die untergeordnete Eigenschaft zu speichern, und wählen Sie dann **[!UICONTROL Speichern]** aus, um das Formulardatenmodell zu speichern. Die untergeordnete Eigenschaft wird jetzt zum Datenmodellobjekt hinzugefügt.
+1. Wählen Sie **[!UICONTROL Fertig]** aus, um die untergeordnete Eigenschaft zu speichern, und wählen Sie **[!UICONTROL Speichern]** aus, um das Formulardatenmodell zu speichern. Die untergeordnete Eigenschaft wird jetzt dem Datenmodellobjekt hinzugefügt.
 
-Nachdem Sie Datenmodellobjekte und -eigenschaften erstellt haben, können Sie weitere adaptive Formulare auf Grundlage des Formulardatenmodells erstellen. Wenn später Datenquellen verfügbar und konfiguriert sind, können Sie das Formulardatenmodell an Datenquellen binden. Die Bindung wird automatisch in zugeordneten adaptiven Formularen und interaktiver Kommunikation aktualisiert. Weitere Informationen zum Erstellen adaptiver Formulare und interaktiver Kommunikationen mithilfe des Formulardatenmodells finden Sie unter [Verwenden des Formulardatenmodells](/help/forms/using/using-form-data-model.md).
+Nachdem Sie Datenmodellobjekte und -eigenschaften erstellt haben, können Sie weitere adaptive Formulare und interaktive Kommunikationen auf Grundlage des Formulardatenmodells erstellen. Wenn später Datenquellen verfügbar und konfiguriert sind, können Sie das Formulardatenmodell an Datenquellen binden. Die Bindung wird automatisch in zugeordneten adaptiven Formularen und interaktiver Kommunikation aktualisiert. Weitere Informationen zum Erstellen adaptiver Formulare und interaktiver Kommunikationen mithilfe des Formulardatenmodells finden Sie unter [Verwenden des Formulardatenmodells](/help/forms/using/using-form-data-model.md).
 
 ### Binden von Datenmodellobjekten und -eigenschaften {#bind-data-model-objects-and-properties}
 
@@ -157,7 +157,7 @@ Um Daten für ein Datenmodellobjekt zu lesen und zu schreiben, gehen Sie folgend
 
 1. Wechseln Sie zu **[!UICONTROL Objekt auf oberster Ebene]**, um anzugeben, ob das Datenmodellobjekt ein Modellobjekt der obersten Ebene ist.
 
-   Datenmodellobjekte, die in einem Formulardatenmodell konfiguriert sind, stehen auf der Registerkarte „Datenmodellobjekte“ im Inhalts-Browser adaptiver Formulare zur Verfügung, die auf dem Formulardatenmodell basieren. Wenn Sie eine Verknüpfung zwischen zwei Datenmodellobjekten hinzufügen, wird das Ziel-Datenmodellobjekt auf der Registerkarte Datenmodellobjekte unter dem Ausgangs-Datenmodellobjekt geschachtelt. Wenn das verschachtelte Datenmodell ein Objekt der obersten Ebene ist, wird es auch separat auf der Registerkarte „Datenmodellobjekte“ angezeigt. Daher werden zwei Einträge angezeigt, einer innerhalb und einer außerhalb der geschachtelten Hierarchie, was für Autorinnen und Autoren von Formularen verwirrend sein kann. Damit das zugeordnete Datenmodellobjekt nur in der verschachtelten Hierarchie angezeigt wird, deaktivieren Sie die Eigenschaft „Top Level Object“. 
+   Datenmodellobjekte, die in einem Formulardatenmodell konfiguriert sind, stehen auf der Registerkarte „Datenmodellobjekte“ im Inhalts-Browser adaptiver Formulare zur Verfügung, die auf dem Formulardatenmodell basieren. Wenn Sie eine Verknüpfung zwischen zwei Datenmodellobjekten hinzufügen, wird das Ziel-Datenmodellobjekt auf der Registerkarte Datenmodellobjekte unter dem Ausgangs-Datenmodellobjekt geschachtelt. Wenn das verschachtelte Datenmodell ein Objekt der obersten Ebene ist, wird es auch separat auf der Registerkarte „Datenmodellobjekte“ angezeigt. Daher werden zwei Einträge angezeigt, einer innerhalb und einer außerhalb der geschachtelten Hierarchie, was für Autorinnen und Autoren von Formularen verwirrend sein kann. Damit das zugeordnete Datenmodellobjekt nur in der verschachtelten Hierarchie angezeigt wird, deaktivieren Sie die Eigenschaft „Top Level Object“.
 
 1. Wählen Sie Lese- und Schreib-Services für die ausgewählten Datenmodellobjekte aus. Die Argumente für die Services werden angezeigt.
 
@@ -381,7 +381,7 @@ Sobald Sie den `GET LINK`-Service auf der Registerkarte „Services“ im Formul
 
 >[!NOTE]
 >
->Die im Feld **Standardwert** des Arguments **NavigationPropertyName** verfügbaren Werte hängen vom Status des Schalters **Rückgabe-Array?** ab. Wenn er aktiviert ist, werden die Navigationseigenschaften des Sammlungstyps angezeigt.
+>Die im Feld **Standardwert** des Arguments **NavigationPropertyName** verfügbaren Werte hängen vom Status des Arrays **Return?** Schaltfläche umschalten. Wenn er aktiviert ist, werden die Navigationseigenschaften des Sammlungstyps angezeigt.
 
 In diesem Beispiel können Sie auch „Person“ als Ausgabemodellobjekt und als Argument für die Navigationseigenschaft „Friends“ oder „BestFriend“ wählen (abhängig davon, ob **Rückgabe-Array?** aktiviert oder deaktiviert ist).
 
@@ -399,7 +399,7 @@ Gehen Sie wie folgt vor, um Beispieldaten zu generieren und zu bearbeiten:
 
 1. Öffnen Sie ein Formulardatenmodell und wählen Sie **[!UICONTROL Beispieldaten bearbeiten]** aus. Es werden Beispieldaten im Fenster „Beispieldaten bearbeiten“ generiert und angezeigt.
 
-   ![Generieren von Musterdaten](assets/form_data_model_generate_sample_data_new.png)
+   ![Generieren von Beispieldaten](assets/form_data_model_generate_sample_data_new.png)
 
 1. Bearbeiten Sie im Fenster **[!UICONTROL Beispieldaten bearbeiten]** Daten je nach Bedarf und wählen Sie dann **[!UICONTROL Speichern]** aus.
 

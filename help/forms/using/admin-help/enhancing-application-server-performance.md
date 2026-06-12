@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1882'
+workflow-type: tm+mt
+source-wordcount: '1904'
 ht-degree: 100%
 
 ---
@@ -150,7 +150,7 @@ Wenn die Größe von Inline-Dokumenten auf einen hohen Wert festgelegt wird, erh
 
 Dies kann beispielsweise der Fall sein, wenn sich der JVM-Heap nach der Ausführung anderer Vorgänge auf dem Anwendungs-Server in einem fragmentierten Zustand befindet und der Garbage Collector den Heap nicht genügend komprimieren kann, sodass sich große, zusammenhängende Speicherblöcke bilden. Fehler wegen ungenügenden Speicherplatzes können auch dann noch auftreten, wenn die maximale JVM-Heap-Größe an die erhöhte Inline-Maximalgröße angepasst wurde.
 
-Um die Heap-Fragmentierung zu berücksichtigen, darf die Inline-Dokumentgröße auf nicht mehr als 0,1 % der gesamten Heap-Größe eingestellt werden.  Mit einer maximalen JVM-Heap-Größe von 512 MB kann beispielsweise eine Inline-Maximalgröße von 512 MB x 0,001 = 0,512 MB oder 512 KB unterstützt werden.
+Um die Heap-Fragmentierung zu berücksichtigen, darf die Inline-Dokumentgröße auf nicht mehr als 0,1 % der gesamten Heap-Größe eingestellt werden. Mit einer maximalen JVM-Heap-Größe von 512 MB kann beispielsweise eine Inline-Maximalgröße von 512 MB x 0,001 = 0,512 MB oder 512 KB unterstützt werden.
 
 ## Optimierungen für WebSphere Application Server {#websphere-application-server-enhancements}
 
@@ -173,13 +173,13 @@ Wenn Sie Configuration Manager ausführen oder versuchen, Enterprise JavaBeans(E
 
 In diesem Abschnitt werden Einstellungen beschrieben, die spezifisch für eine Microsoft Windows Server 2003-Betriebssystemumgebung gelten.
 
-Durch die Verwendung von Verbindungs-Pools bei der Suchverbindung kann die Anzahl der benötigten Anschlüsse um bis zu 50 % verringert werden.  Der Grund dafür ist, dass diese Verbindung immer dieselben Berechtigungen für eine bestimmte Domain verwendet und darüber hinaus der Kontext und die entsprechenden Objekte ausdrücklich geschlossen werden.
+Durch die Verwendung von Verbindungs-Pools bei der Suchverbindung kann die Anzahl der benötigten Anschlüsse um bis zu 50 % verringert werden. Der Grund dafür ist, dass diese Verbindung immer dieselben Berechtigungen für eine bestimmte Domain verwendet und darüber hinaus der Kontext und die entsprechenden Objekte ausdrücklich geschlossen werden.
 
 ### Konfigurieren eines Windows-Servers für die Verwendung von Verbindungs-Pools {#configure-your-windows-server-for-connection-pooling}
 
 1. Klicken Sie auf „Start“ > „Ausführen“, um den Registrierungs-Editor zu starten. Geben Sie dann in das Feld „Öffnen“ den Befehl `regedit` ein und klicken Sie auf „OK“.
 1. Wechseln Sie zum Registrierungsschlüssel `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
-1. Suchen Sie im rechten Bereich des Registrierungs-Editors den Wertnamen „TcpTimedWaitDelay“.  Falls der Name fehlt, wählen Sie in der Menüleiste „Bearbeiten“ > „Neu“ > „DWORD-Wert“ aus, um den Namen hinzuzufügen.
+1. Suchen Sie im rechten Bereich des Registrierungs-Editors den Wertnamen „TcpTimedWaitDelay“. Falls der Name fehlt, wählen Sie in der Menüleiste „Bearbeiten“ > „Neu“ > „DWORD-Wert“ aus, um den Namen hinzuzufügen.
 1. Geben Sie in das Feld „Name“`TcpTimedWaitDelay`
 
    >[!NOTE]
@@ -187,11 +187,11 @@ Durch die Verwendung von Verbindungs-Pools bei der Suchverbindung kann die Anzah
    >Wenn in dem Feld weder ein blinkender Cursor noch der Text `New Value #` angezeigt wird, klicken Sie mit der rechten Maustaste in den rechten Bereich, wählen Sie „Umbenennen“ und geben Sie im Feld „Name“ `TcpTimedWaitDelay`*ein.*
 
 1. Wiederholen Sie Schritt 4 für die Wertnamen „MaxUserPort“, „MaxHashTableSize“ und „MaxFreeTcbs“.
-1. Doppelklicken Sie im rechten Bereich, um den Wert „TcpTimedWaitDelay“ festzulegen.  Wählen Sie unter „Basis“ die Option „Dezimal“ und geben Sie in das Feld „Wert“ den Wert `30`.
+1. Doppelklicken Sie im rechten Bereich, um den Wert „TcpTimedWaitDelay“ festzulegen. Wählen Sie unter „Basis“ die Option „Dezimal“ und geben Sie in das Feld „Wert“ den Wert `30`.
 1. Doppelklicken Sie im rechten Bereich, um den Wert „MaxUserPort“ festzulegen. Wählen Sie unter „Basis“ die Option „Dezimal“ und geben Sie in das Feld „Wert“ den Wert `65534`.
 1. Doppelklicken Sie im rechten Bereich, um den Wert „MaxHashTableSize“ festzulegen. Wählen Sie unter „Basis“ die Option „Dezimal“ und geben Sie in das Feld „Wert“ den Wert `65536`.
 1. Doppelklicken Sie im rechten Bereich, um den Wert „MaxFreeTcbs“ festzulegen. Wählen Sie unter „Basis“ die Option „Dezimal“ und geben Sie in das Feld „Wert“ den Wert `16000`.
 
 >[!NOTE]
 >
->Wenn Sie mit dem Registrierungs-Editor oder einer anderen Methode fehlerhafte Änderungen an der Registrierung vornehmen, kann dies schwerwiegende Folgen haben.  Im Extremfall müssen Sie möglicherweise das Betriebssystem neu installieren.  Alle Änderungen an der Registrierung erfolgen auf eigenes Risiko.
+>Wenn Sie mit dem Registrierungs-Editor oder einer anderen Methode fehlerhafte Änderungen an der Registrierung vornehmen, kann dies schwerwiegende Folgen haben. Im Extremfall müssen Sie möglicherweise das Betriebssystem neu installieren. Alle Änderungen an der Registrierung erfolgen auf eigenes Risiko.

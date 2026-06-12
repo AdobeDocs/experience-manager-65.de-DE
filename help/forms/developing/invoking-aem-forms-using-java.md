@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '5333'
+source-wordcount: '5557'
 ht-degree: 100%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 100%
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
 
-AEM Forms kann mit der AEM Forms-Java-API aufgerufen werden.  Bei Verwendung der AEM Forms-Java-API können Sie entweder die Aufruf-API oder Java-Client-Bibliotheken verwenden. Java-Client-Bibliotheken sind für Dienste wie den Rights Management-Dienst verfügbar. Mit diesen stark typisierten APIs können Sie Java-Anwendungen entwickeln, die AEM Forms aufrufen.
+AEM Forms kann mit der AEM Forms-Java-API aufgerufen werden. Bei Verwendung der AEM Forms-Java-API können Sie entweder die Aufruf-API oder Java-Client-Bibliotheken verwenden. Java-Client-Bibliotheken sind für Dienste wie den Rights Management-Dienst verfügbar. Mit diesen stark typisierten APIs können Sie Java-Anwendungen entwickeln, die AEM Forms aufrufen.
 
-Die Aufruf-API sind Klassen, die sich im Paket `com.adobe.idp.dsc` befinden. Mit diesen Klassen können Sie eine Aufrufanforderung direkt an einen Dienst senden und eine zurückgegebene Aufruf-Antwort verarbeiten.  Verwenden Sie die Aufruf-API, um kurzlebige oder langlebige Prozesse aufzurufen, die mit Workbench erstellt wurden.
+Die Aufruf-API sind Klassen, die sich im Paket `com.adobe.idp.dsc` befinden. Mit diesen Klassen können Sie eine Aufrufanforderung direkt an einen Dienst senden und eine zurückgegebene Aufruf-Antwort verarbeiten. Verwenden Sie die Aufruf-API, um kurzlebige oder langlebige Prozesse aufzurufen, die mit Workbench erstellt wurden.
 
-Die empfohlene Methode zum programmgesteuerten Aufrufen eines Dienstes ist die Verwendung einer Java-Client-Bibliothek, die dem Dienst und nicht der Aufruf-API entspricht. Verwenden Sie zum Aufrufen des Verschlüsselungsdienstes beispielsweise die Client-Bibliothek des Verschlüsselungsdienstes.  Rufen Sie zum Ausführen eines Verschlüsselungsdienstvorgangs eine Methode auf, die zu dem Client-Objekt des Verschlüsselungsdienstes gehört.  Sie können ein PDF-Dokument mit einem Kennwort verschlüsseln, indem Sie die Methode `encryptPDFUsingPassword` des `EncryptionServiceClient`-Objekts aufrufen.
+Die empfohlene Methode zum programmgesteuerten Aufrufen eines Dienstes ist die Verwendung einer Java-Client-Bibliothek, die dem Dienst und nicht der Aufruf-API entspricht. Verwenden Sie zum Aufrufen des Verschlüsselungsdienstes beispielsweise die Client-Bibliothek des Verschlüsselungsdienstes. Rufen Sie zum Ausführen eines Verschlüsselungsdienstvorgangs eine Methode auf, die zu dem Client-Objekt des Verschlüsselungsdienstes gehört. Sie können ein PDF-Dokument mit einem Kennwort verschlüsseln, indem Sie die Methode `encryptPDFUsingPassword` des `EncryptionServiceClient`-Objekts aufrufen.
 
 Die Java-API unterstützt die folgenden Funktionen:
 
@@ -54,8 +54,8 @@ Die Java-API unterstützt die folgenden Funktionen:
 
 Um einen AEM Forms-Dienst programmgesteuert mithilfe der Java-API aufzurufen, fügen Sie die erforderlichen Bibliotheksdateien (JAR-Dateien) in den Klassenpfad Ihres Java-Projekts ein. Die JAR-Dateien, die Sie in den Klassenpfad Ihrer Client-Anwendung aufnehmen, hängen von mehreren Faktoren ab:
 
-* Der aufzurufende AEM Forms-Dienst.  Eine Client-Anwendung kann einen oder mehrere Dienste aufrufen.
-* Der Modus, in dem Sie einen AEM Forms-Dienst aufrufen möchten.  Sie können den EJB- oder SOAP-Modus verwenden. (Siehe [Einstellen von Verbindungseigenschaften](invoking-aem-forms-using-java.md#setting-connection-properties).)
+* Der aufzurufende AEM Forms-Dienst. Eine Client-Anwendung kann einen oder mehrere Dienste aufrufen.
+* Der Modus, in dem Sie einen AEM Forms-Dienst aufrufen möchten. Sie können den EJB- oder SOAP-Modus verwenden. (Siehe [Einstellen von Verbindungseigenschaften](invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 >[!NOTE]
 >
@@ -185,7 +185,7 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die zum Aufrufen von 
    <td>
     <ul>
      <li><p>adobe-rightsmanagement-client.jar</p></li>
-     <li><p>namespace.jar </p></li>
+     <li><p>namespace.jar</p></li>
      <li><p>jaxb-api.jar</p></li>
      <li><p>jaxb-impl.jar</p></li>
      <li><p>jaxb-libs.jar</p></li>
@@ -444,7 +444,7 @@ Um einen AEM Forms-Dienst erfolgreich aufzurufen, legen Sie die folgenden Verbin
 
 * **DSC_CREDENTIAL_USERNAME:** Gibt den AEM Forms-Benutzernamen an. Damit einen AEM Forms-Dienst aufrufen können, wird die Rolle „Dienstbenutzer“ benötigt. Es kann auch eine andere Rolle sein, die die Berechtigung zum Dienstaufruf enthält. Andernfalls wird eine Ausnahme ausgelöst, wenn versucht wird, einen Dienst aufzurufen. Wenn die Servicesicherheit jedoch deaktiviert ist, müssen keine Authentifizierungswerte angegeben werden.
 * **DSC_CREDENTIAL_PASSWORD:** Gibt den entsprechenden Kennwortwert an. Wenn die Service-Sicherheit jedoch deaktiviert ist, müssen keine Authentifizierungswerte angegeben werden.
-* **DSC_REQUEST_TIMEOUT:** Das Standardlimit für Anforderungszeitlimits für die SOAP-Anforderung beträgt 1200000 Millisekunden (20 Minuten). Manchmal kann eine Anfrage länger brauchen, um den Vorgang abzuschließen.  Beispielsweise kann eine SOAP-Anfrage, die eine große Menge von Einträgen abruft, ein längeres Zeitlimit erfordern. Mit `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` können Sie das Zeitlimit für Anforderungsaufrufe für die SOAP-Anforderungen erhöhen.
+* **DSC_REQUEST_TIMEOUT:** Das Standardlimit für Anforderungszeitlimits für die SOAP-Anforderung beträgt 1200000 Millisekunden (20 Minuten). Manchmal kann eine Anfrage länger brauchen, um den Vorgang abzuschließen. Beispielsweise kann eine SOAP-Anfrage, die eine große Menge von Einträgen abruft, einen längeren Timeout erfordern. Mit `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` können Sie den Timeout für Anfrageaufrufe für die SOAP-Anfragen erhöhen.
 
   **Hinweis**: Nur SOAP-basierte Aufrufe unterstützen die DSC_REQUEST_TIMEOUT Eigenschaft.
 
@@ -453,7 +453,7 @@ Führen Sie die folgenden Aufgaben aus, um Verbindungseigenschaften festzulegen:
 1. Erstellen Sie ein Objekt `java.util.Properties`, indem Sie den Konstruktor verwenden.
 1. Um die Verbindungseigenschaft `DSC_DEFAULT_EJB_ENDPOINT` festzulegen, rufen Sie die Methode `setProperty` des `java.util.Properties`-Objekts auf und übergeben die folgenden Werte:
 
-   * Der `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT`-Enumerationswert
+   * Der Aufzählungswert `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT`
    * Ein string-Wert, der die URL des J2EE-Anwendungsservers angibt, der AEM Forms hostet
 
    >[!NOTE]
@@ -636,9 +636,9 @@ In diesem Szenario wird eine Client-Anwendung in einer eigenen JVM ausgeführt u
 
 Das folgende Diagramm zeigt eine Client-Anwendung, die in einer eigenen JVM ausgeführt wird und eigenständige AEM Forms-Instanzen in einem Cluster aufruft.
 
-Dieses Szenario ähnelt dem einer Client-Anwendung, die eine eigenständige AEM Forms-Instanz aufruft. Die Provider-URL ist jedoch unterschiedlich.  Wenn eine Client-Anwendung eine Verbindung zu einem bestimmten J2EE-Anwendungs-Server herstellen möchte, muss die Anwendung die URL ändern, um auf den jeweiligen J2EE-Anwendungs-Server zu verweisen.
+Dieses Szenario ähnelt dem einer Client-Anwendung, die eine eigenständige AEM Forms-Instanz aufruft. Die Provider-URL ist jedoch unterschiedlich. Wenn eine Client-Anwendung eine Verbindung zu einem bestimmten J2EE-Anwendungs-Server herstellen möchte, muss die Anwendung die URL ändern, um auf den jeweiligen J2EE-Anwendungs-Server zu verweisen.
 
-Der Verweis auf einen bestimmten J2EE-Anwendungs-Server wird nicht empfohlen, da die Verbindung zwischen der Client-Anwendung und AEM Forms beendet wird, wenn der Anwendungs-Server beendet wird. Es wird empfohlen, dass die Provider-URL anstelle eines bestimmten J2EE-Anwendungs-Servers auf einen JNDI-Manager auf Zellenebene verweist.
+Der Verweis auf einen bestimmten J2EE-Anwendungs-Server wird nicht empfohlen, da die Verbindung zwischen der Client-Anwendung und AEM Forms gestoppt wird, wenn der Anwendungs-Server gestoppt wird. Es wird empfohlen, dass die Provider-URL anstelle eines bestimmten J2EE-Anwendungs-Servers auf einen JNDI-Manager auf Zellenebene verweist.
 
 Client-Anwendungen, die den SOAP-Verbindungsmodus verwenden, können den HTTP-Lastausgleichs-Port für den Cluster verwenden. Client-Anwendungen, die den EJB-Verbindungsmodus verwenden, können eine Verbindung zum EJB-Port eines bestimmten J2EE-Anwendungs-Servers herstellen. Diese Aktion behandelt den Lastausgleich zwischen Cluster-Knoten.
 
@@ -685,7 +685,7 @@ Das folgende Beispiel zeigt den Inhalt einer Datei „jndi.properties“, die zu
 
 ## Übergeben von Daten an AEM Forms-Dienste mithilfe der Java-API {#passing-data-to-aem-forms-services-using-the-java-api}
 
-AEM Forms-Dienstvorgänge verwenden normalerweise PDF-Dokumente oder erzeugen welche. Wenn Sie einen Dienst aufrufen, ist es manchmal erforderlich, ein PDF-Dokument (oder andere Dokumenttypen, wie XML-Daten) an den Dienst zu übergeben. Ebenso ist es manchmal notwendig, ein vom Dienst zurückgegebenes PDF-Dokument zu verwenden.  Die Java-Klasse, mit der Sie Daten an und von AEM Forms-Diensten übertragen können, ist `com.adobe.idp.Document`.
+AEM Forms-Dienstvorgänge verwenden normalerweise PDF-Dokumente oder erzeugen welche. Wenn Sie einen Dienst aufrufen, ist es manchmal erforderlich, ein PDF-Dokument (oder andere Dokumenttypen, wie XML-Daten) an den Dienst zu übergeben. Ebenso ist es manchmal notwendig, ein vom Dienst zurückgegebenes PDF-Dokument zu verwenden. Die Java-Klasse, mit der Sie Daten an und von AEM Forms-Diensten übertragen können, ist `com.adobe.idp.Document`.
 
 AEM Forms-Dienste akzeptieren ein PDF-Dokument nicht als andere Datentypen, wie z. B. ein Objekt `java.io.InputStream` oder ein Byte-Array. Ein `com.adobe.idp.Document`-Objekt kann auch verwendet werden, um andere Datentypen, z. B. XML-Daten, an Dienste zu übergeben.
 
@@ -1006,7 +1006,7 @@ Sie können den Repository-Dienst mit einer Java-Client-Bibliothek und den folge
 
 ## Aufrufen eines kurzlebigen Prozesses mithilfe der Aufruf-API {#invoking-a-short-lived-process-using-the-invocation-api}
 
-Sie können einen kurzlebigen Prozess mithilfe der Java-Aufruf-API aufrufen.  Wenn Sie einen kurzlebigen Prozess mit der Aufruf-API aufrufen, übergeben Sie die erforderlichen Parameterwerte mithilfe eines `java.util.HashMap`-Objekts. Rufen Sie für jeden Parameter, der an einen Dienst übergeben werden soll, die Methode `put` des `java.util.HashMap`-Objekts auf und geben Sie das Namen-Wert-Paar an, das durch den Dienst erforderlich ist, um den angegebenen Vorgang durchzuführen. Geben Sie den genauen Namen der Parameter an, die zu dem kurzlebigen Prozess gehören.
+Sie können einen kurzlebigen Prozess mithilfe der Java-Aufruf-API aufrufen. Wenn Sie einen kurzlebigen Prozess mit der Aufruf-API aufrufen, übergeben Sie die erforderlichen Parameterwerte mithilfe eines `java.util.HashMap`-Objekts. Rufen Sie für jeden Parameter, der an einen Dienst übergeben werden soll, die Methode `put` des `java.util.HashMap`-Objekts auf und geben Sie das Namen-Wert-Paar an, das durch den Dienst erforderlich ist, um den angegebenen Vorgang durchzuführen. Geben Sie den genauen Namen der Parameter an, die zu dem kurzlebigen Prozess gehören.
 
 >[!NOTE]
 >
@@ -1027,7 +1027,7 @@ Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 
 Rufen Sie den kurzlebigen Prozess `MyApplication/EncryptDocument` mithilfe der Java-Aufruf-API auf:
 
-1. Schließen Sie JAR-Dateien, beispielsweise „adobe-livecycle-client.jar“, in den Klassenpfad Ihres Java-Projekts ein.  (Siehe [Einbeziehen von AEM Forms Java-Bibliotheksdateien](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
+1. Schließen Sie JAR-Dateien, beispielsweise „adobe-livecycle-client.jar“, in den Klassenpfad Ihres Java-Projekts ein. (Siehe [Einbeziehen von AEM Forms Java-Bibliotheksdateien](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
 1. Erstellen Sie ein `ServiceClientFactory`-Objekt, das Verbindungseigenschaften enthält. (Siehe [Einstellung von Verbindungseigenschaften](invoking-aem-forms-using-java.md#setting-connection-properties).)
 1. Erstellen Sie ein `ServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben. Mit einem `ServiceClient` -Objekt können Sie einen Dienstvorgang aufrufen. Es erledigt Aufgaben wie das Auffinden, Versenden und Weiterleiten von Aufrufanforderungen.
 1. Erstellen Sie ein Objekt `java.util.HashMap`, indem Sie den Konstruktor verwenden.

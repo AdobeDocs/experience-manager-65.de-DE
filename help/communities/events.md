@@ -11,8 +11,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 6%
+source-wordcount: '696'
+ht-degree: 5%
 
 ---
 
@@ -38,7 +38,7 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 | AKTUALISIEREN | Kalenderereignis oder Kommentar des Nutzers wird bearbeitet |
 | LÖSCHEN | Kalenderereignis oder Kommentar des Nutzers wird gelöscht |
 
-[Komponente „Kommentare](essentials-comments.md)
+[Komponente „Kommentare“](essentials-comments.md)
 SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verb** | **Beschreibung** |
@@ -90,7 +90,7 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 | UNSELECT | Die Antwort des Nutzers wurde deaktiviert |
 | LÖSCHEN | Eine Frage oder Antwort eines Mitglieds wird gelöscht |
 
-[Reviews-Komponente](reviews-basics.md)
+[Komponente „Überprüfungen“](reviews-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verb** | **Beschreibung** |
@@ -107,7 +107,7 @@ SocialEvent `topic`= com/adobe/cq/social/tally
 | BEWERTUNG HINZUFÜGEN | Der Inhalt des Abonnenten wurde aktualisiert |
 | WERTUNG ENTFERNEN | Der Inhalt des Nutzers wurde als unzureichend eingestuft |
 
-[Abstimmungskomponente](essentials-voting.md)
+[Stimmrechtskomponente](essentials-voting.md)
 SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verb** | **Beschreibung** |

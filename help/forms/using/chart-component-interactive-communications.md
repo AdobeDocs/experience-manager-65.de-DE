@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2621'
-ht-degree: 100%
+source-wordcount: '2678'
+ht-degree: 96%
 
 ---
 
@@ -40,9 +40,9 @@ Führen Sie die folgenden Schritte aus, um ein Diagramm in einer interaktiven Ko
 
    Grundlegende Eigenschaften eines Zeilentypdiagramms im Druckkanal
 
-   ![Grundlegende Eigenschaften eines Zeilentypdiagramms im Webkanal](assets/chart_properties_web_new.png)
+   ![Grundlegende Eigenschaften eines Zeilentypdiagramms im Web-Kanal](assets/chart_properties_web_new.png)
 
-   Grundlegende Eigenschaften eines Zeilentypdiagramms im Webkanal
+   Grundlegende Eigenschaften eines Zeilentypdiagramms im Web-Kanal
 
 1. Konfigurieren Sie die [Diagrammeigenschaften](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) basierend auf dem Kanaltyp.
 1. (Nur Druckkanal) Legen Sie in den **[!UICONTROL Agenteneinstellungen]** fest, ob der Agent dieses Diagramm verwenden muss. Wenn die Option **[!UICONTROL Obligatorisch für Agenten, dieses Diagramm zu verwenden]** nicht ausgewählt ist, kann der Agent zum Ein- bzw. Ausblenden des Diagramms das Augensymbol für das Diagramm auf der Registerkarte **[!UICONTROL Inhalt]** der Agent-Benutzeroberfläche auswählen.
@@ -131,7 +131,7 @@ Konfigurieren Sie beim Erstellen von Diagrammen für Druck- und Web-Kanäle die 
   </tr>
   <tr>
    <td>Breite</td>
-   <td>Breite des Diagramms in Pixel. Sie können die Breite des Diagramms im Webkanal mithilfe der Stil-Ebene oder durch Anwenden eines Designs steuern.</td>
+   <td>Breite des Diagramms in Pixel. Sie können die Breite des Diagramms im Web-Kanal mithilfe der Stil-Ebene oder durch Anwenden eines Designs steuern.</td>
    <td>Druck</td>
   </tr>
   <tr>
@@ -151,7 +151,7 @@ Konfigurieren Sie beim Erstellen von Diagrammen für Druck- und Web-Kanäle die 
   </tr>
   <tr>
    <td>QuickInfo</td>
-   <td><p>Format, in dem die QuickInfo beim Mouseover auf einem Datenpunkt im Diagramm in Webkanal angezeigt wird. Der Standardwert ist ${x}(${y}). Je nach Diagrammtyp werden die Variablen ${x} und ${y} dynamisch durch die entsprechenden Werte für die X-Achse und Y-Achse ersetzt und in der QuickInfo angezeigt, wenn Sie die Maus über einen Punkt, ein Segment oder einen Balken in der Quickinfo bewegen.</p> <p>Wenn Sie QuickInfo deaktivieren möchten, lassen Sie das Feld <span class="uicontrol">QuickInfo</code> leer. Diese Option ist nicht auf Linien- und Bereichsdiagramme anwendbar. Beispiel: <a href="#chartoutputprintweb">Beispiel 1: Diagrammausgabe in Druck und Web</a>.</p> </td>
+   <td><p>Format, in dem die QuickInfo beim Mouseover auf einem Datenpunkt im Diagramm in Web-Kanal angezeigt wird. Der Standardwert ist ${x}(${y}). Je nach Diagrammtyp werden die Variablen ${x} und ${y} dynamisch durch die entsprechenden Werte für die X-Achse und Y-Achse ersetzt und in der QuickInfo angezeigt, wenn Sie die Maus über einen Punkt, ein Segment oder einen Balken in der Quickinfo bewegen.</p> <p>Wenn Sie QuickInfo deaktivieren möchten, lassen Sie das Feld <span class="uicontrol">QuickInfo</code> leer. Diese Option ist nicht auf Linien- und Bereichsdiagramme anwendbar. Beispiel: <a href="#chartoutputprintweb">Beispiel 1: Diagrammausgabe in Druck und Web</a>.</p> </td>
    <td>Web</td>
   </tr>
   <tr>
@@ -167,10 +167,10 @@ Konfigurieren Sie beim Erstellen von Diagrammen für Druck- und Web-Kanäle die 
      <li><strong>Referenzpunkt und Bindungstyp: </strong>Verfügbar für Quadrantendiagramme, um<strong> </strong>den Bindungstyp für den Referenzpunkt angeben. Verwenden Sie die statische Text- oder Datenmodellobjekteigenschaft, um den Wert für den Referenzpunkt zu definieren.</li>
      <li><strong>Bezugspunkt &gt; X-Achse: </strong>Verfügbar für Quadrantendiagramme, wenn Sie <span class="uicontrol">Statisch</code> aus der Dropdownliste „Bindungstyp“ wählen, um den X-Achsenwert für den Referenzpunkt anzugeben.</li>
      <li><strong>Bezugspunkt &gt; Y-Achse: </strong>Verfügbar für Quadrantendiagramme, wenn Sie <span class="uicontrol">Statisch</code> aus der Dropdownliste „Bindungstyp“ wählen, um den Y-Achsenwert für den Referenzpunkt anzugeben.</li>
-     <li><strong>Referenzpunkt &gt; Datenmodellobjekt für Serien: </strong>Verfügbar für Quadrantendiagramme mit mehreren Serien, wenn Sie <span class="uicontrol">Datenmodellobjekt</code> aus der Dropdown-Liste „Bindungstyp“ wählen. Definieren Sie die Formulareigenschaft des Formulardatenmodells, um die Serie für den Referenzpunkt zu identifizieren. </li>
+     <li><strong>Referenzpunkt &gt; Datenmodellobjekt für Serien: </strong>Verfügbar für Quadrantendiagramme mit mehreren Serien, wenn Sie <span class="uicontrol">Datenmodellobjekt</code> aus der Dropdown-Liste „Bindungstyp“ wählen. Definieren Sie die Eigenschaft des Datenmodellobjekts für das Formular, um die Serie für den Referenzpunkt zu identifizieren. </li>
      <li><strong>Referenzpunkt &gt; Datenmodellobjektwert für Serien: </strong>Verfügbar für Quadrantendiagramme mit mehreren Serien, wenn Sie <span class="uicontrol">Datenmodellobjekt</code> aus der Dropdown-Liste „Bindungstyp“ wählen. Die Eigenschaft des Formulardatenmodellobjekts für Serien und der in diesem Feld angegebene Wert werden verwendet, um die Serie für den Referenzpunkt zu identifizieren.</li>
-     <li><strong>Referenzpunkt &gt; Datenmodellobjekt für Referenzpunkt: </strong>Verfügbar für Quadrantendiagramme, wenn Sie <span class="uicontrol">Datenmodellobjekt</code> aus der Dropdown-Liste „Bindungstyp“ wählen. Definieren Sie eine Objekteigenschaft des Formulardatenmodells, die eine Geschwister-Entität der auf der X-Achse und der Y-Achse dargestellten Eigenschaften darstellt. Definieren Sie für mehrere Serien außerdem eine Datenmodellobjekteigenschaft, die eine untergeordnete Entität der für die Serie definierten Datenmodellobjekteigenschaft ist.</li>
-     <li><strong>Referenzpunkt &gt; Datenmodellobjektwert für Referenzpunkt: </strong>Verfügbar für Quadrantendiagramme, wenn Sie <span class="uicontrol">Datenmodellobjekt</code> aus der Dropdown-Liste „Bindungstyp“ wählen. Verwenden Sie die Objekteigenschaft des Formulardatenmodells für den Referenzpunkt und den in diesem Feld definierten Wert, um den Referenzpunkt für das Diagramm zu identifizieren.<br /> <strong>Quadrantenbeschriftungen &gt; Oben links</strong>: Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten oben links anzugeben.</li>
+     <li><strong>Referenzpunkt &gt; Datenmodellobjekt für Referenzpunkt: </strong>Verfügbar für Quadrantendiagramme, wenn Sie <span class="uicontrol">Datenmodellobjekt</code> aus der Dropdown-Liste „Bindungstyp“ wählen. Definieren Sie eine Eigenschaft des Datenmodellobjekts für das Formular, die eine Geschwister-Entität der auf der X-Achse und der Y-Achse dargestellten Eigenschaften darstellt. Definieren Sie für mehrere Serien außerdem eine Datenmodellobjekteigenschaft, die eine untergeordnete Entität der für die Serie definierten Datenmodellobjekteigenschaft ist.</li>
+     <li><strong>Referenzpunkt &gt; Datenmodellobjektwert für Referenzpunkt: </strong>Verfügbar für Quadrantendiagramme, wenn Sie <span class="uicontrol">Datenmodellobjekt</code> aus der Dropdown-Liste „Bindungstyp“ wählen. Verwenden Sie die Objekteigenschaft des Formulardatenmodells für den Referenzpunkt und den in diesem Feld definierten Wert, um den Referenzpunkt für das Diagramm zu identifizieren.<br /> <strong>Quadrantenbeschriftungen &gt; Oben links</strong> Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten oben links anzugeben.</li>
      <li><strong>Quadrantenbeschriftungen &gt; Oben rechts</strong>: Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten oben rechts anzugeben.</li>
      <li><strong>Quadranten Beschriftungen &gt; Unten rechts: </strong>Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten unten rechts anzugeben.</li>
      <li><strong>Quadranten Beschriftungen &gt; Unten links: </strong>Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten unten links anzugeben.</li>
@@ -233,7 +233,7 @@ Nachdem Sie eine benutzerdefinierte Funktion geschrieben haben, führen Sie die 
    * Fügen Sie die Eigenschaft `guideComponentType` mit einem Wert wie `fd/af/reducer` hinzu. (mandatory)
 
    * Fügen Sie die Eigenschaft `value` zu einem vollständig qualifizierten Namen der benutzerdefinierten JavaScript™-Funktion hinzu. (obligatorisch) und setzen Sie den Wert auf den Namen der benutzerdefinierten Funktion, z. B. Multiplizieren, fest.
-   * Fügen Sie die Eigenschaft `jcr:description` mit dem Wert hinzu, den Sie als Name der benutzerdefinierten Funktion anzeigen möchten, die in der Dropdown-Liste „Funktion“ angezeigt wird. Beispiel:**Multiplizieren**. 
+   * Fügen Sie die Eigenschaft `jcr:description` mit dem Wert hinzu, den Sie als Name der benutzerdefinierten Funktion anzeigen möchten, die in der Dropdown-Liste „Funktion“ angezeigt wird. Beispiel:**Multiplizieren**.
 
    * Fügen Sie die Eigenschaft `qtip` mit einem Wert hinzu, der eine kurze Beschreibung der benutzerdefinierten Funktion darstellt. Es wird als QuickInfo angezeigt, wenn der Mauszeiger über den Funktionsnamen in der Dropdown-Liste **Funktion** bewegt wird.
 

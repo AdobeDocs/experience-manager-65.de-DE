@@ -1,6 +1,6 @@
 ---
 title: Optimieren der Leistung bei der Systemüberwachung
-description: Erfahren Sie, wie Sie die Leistung der Systemüberwachung optimieren.  Steuern Sie die Systemstatistiken, die sich auf die Leistung der Formularumgebung auswirken, mithilfe der JAVA-Einstellungsoption.
+description: Erfahren Sie, wie Sie die Leistung der Systemüberwachung optimieren. Steuern Sie die Systemstatistiken, die sich auf die Leistung der Formularumgebung auswirken, mithilfe der JAVA-Einstellungsoption.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
@@ -11,14 +11,14 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '436'
 ht-degree: 100%
 
 ---
 
 # Optimieren der Leistung bei der Systemüberwachung{#fine-tuning-health-monitor-performance}
 
-Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werden, hat Auswirkungen auf die Leistung Ihrer AEM Forms-Umgebung.  Diese Auswirkungen können durch Festlegen der unten aufgeführten Java-Optionen in Ihrem Anwendungs-Server kontrolliert werden.
+Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werden, hat Auswirkungen auf die Leistung Ihrer AEM Forms-Umgebung. Diese Auswirkungen können durch Festlegen der unten aufgeführten Java-Optionen in Ihrem Anwendungs-Server kontrolliert werden.
 
 <table>
  <thead>
@@ -46,12 +46,12 @@ Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werde
   </tr>
   <tr>
    <td><p>adobe.cache.multicast-port</p></td>
-   <td><p>Der Multicast-Anschluss, der zum Kommunizieren mit anderen Mitgliedern des gelieferten Systems verwendet wird. Wenn dieser auf null festgelegt ist, wird Multicast für die Mitgliedererkennung und für den Vertrieb deaktiviert. </p><p>Hinweis: Wählen Sie verschiedene Multicast-Adressen und -Anschlüsse für verschiedene verteilte Systeme aus.  Verwenden Sie nicht nur verschiedene Adressen.</p></td>
+   <td><p>Der Multicast-Anschluss, der zum Kommunizieren mit anderen Mitgliedern des gelieferten Systems verwendet wird. Wenn dieser auf null festgelegt ist, wird Multicast für die Mitgliedererkennung und für den Vertrieb deaktiviert. </p><p>Hinweis: Wählen Sie verschiedene Multicast-Adressen und -Anschlüsse für verschiedene verteilte Systeme aus. Verwenden Sie nicht nur verschiedene Adressen.</p></td>
    <td><p>Kein Standardwert. Die gültigen Werte reichen von 0 bis 65535.</p></td>
   </tr>
   <tr>
    <td><p>statistic-sample-rate</p></td>
-   <td><p>Die Rate in Millisekunden, in der Statistiken neu berechnet werden.  Betriebssystemstatistiken werden nur aktualisiert, wenn ein Beispiel abgefragt wird.</p></td>
+   <td><p>Die Rate in Millisekunden, in der Statistiken neu berechnet werden. Betriebssystemstatistiken werden nur aktualisiert, wenn ein Beispiel abgefragt wird.</p></td>
    <td><p>600000</p></td>
   </tr>
   <tr>
@@ -64,7 +64,7 @@ Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werde
 
 ## Hinzufügen von Java-Optionen zu JBoss {#add-java-options-to-jboss}
 
-1. Beenden Sie den JBoss-Anwendungs-Server.
+1. Stoppen Sie den JBoss-Anwendungs-Server.
 1. Öffnen Sie „*[Programm-Server-Stammordner]*/bin/run.bat“ (Windows) oder „run.sh“ (Linux oder UNIX) in einem Texteditor und fügen Sie die Java-Optionen Ihren Anforderungen entsprechend hinzu.
 1. Starten Sie den Server neu.
 

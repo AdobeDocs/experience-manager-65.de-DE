@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '16916'
+source-wordcount: '17137'
 ht-degree: 99%
 
 ---
@@ -83,7 +83,7 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 
-**Erstellen eines Signatur-Clients**
+**Erstellen eines Signature-Clients**
 
 Bevor Sie einen Signature-Service-Vorgang programmgesteuert ausführen können, müssen Sie einen Signature-Service-Client erstellen.
 
@@ -168,24 +168,24 @@ So fügen Sie mithilfe der Signature-API (Webdienst) ein Signaturfeld hinzu:
 
 1. Erstellen eines Signatur-Clients
 
-   * Erstellen Sie mithilfe des betreffenden Standardkonstruktors ein `SignatureServiceClient`-Objekt.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Das Attribut `lc_version` muss nicht verwendet werden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `SignatureServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Erstellen Sie ein `SignatureServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `SignatureServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `SignatureServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Abrufen eines PDF-Dokuments, dem ein Signaturfeld hinzugefügt wurde
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB` -Objekt wird zum Speichern des PDF-Dokuments verwendet, das ein Signaturfeld enthalten wird.
-   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgewert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus, in dem die Datei geöffnet werden soll, darstellt.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
+   * Befüllen Sie das `BLOB`-Objekt mit dem Inhalt des Byte-Arrays durch Zuweisen der Eigenschaft `MTOM`.
 
 1. Hinzufügen eines Signaturfeldes
 
@@ -194,7 +194,7 @@ So fügen Sie mithilfe der Signature-API (Webdienst) ein Signaturfeld hinzu:
    * Ein `BLOB`-Objekt, welches das PDF-Dokument darstellt, dem ein Signaturfeld hinzugefügt werden soll.
    * Ein Zeichenkettenwert, der den Namen des Signaturfeldes angibt.
    * Ein Integer-Wert, der die Seitenzahl angibt, zu der ein Signaturfeld hinzugefügt wird.
-   * Ein `PositionRect`-Objekt, das den Speicherort des Signaturfelds angibt.
+   * Ein `PositionRect`-Objekt, das die Position des Signaturfelds angibt.
    * Ein `FieldMDPOptions`-Objekt, das Felder im PDF-Dokument angibt, die gesperrt werden, nachdem eine digitale Signatur auf das Signaturfeld angewendet wurde. Dieser Parameterwert ist optional und Sie können `null` übergeben.
    * Ein `PDFSeedValueOptions`-Objekt, das verschiedene Laufzeitwerte angibt. Dieser Parameterwert ist optional und Sie können `null` übergeben.
 
@@ -203,8 +203,8 @@ So fügen Sie mithilfe der Signature-API (Webdienst) ein Signaturfeld hinzu:
 1. Das PDF-Dokument als PDF-Datei speichern
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgewert übergeben, der den Dateispeicherort des PDF-Dokuments, welches das Signaturfeld enthalten soll, und den Modus, in dem die Datei geöffnet werden soll, darstellt.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das von der `addSignatureField`-Methode zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `binaryData` des `BLOB`-Objekts abrufen.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das von der Methode `addSignatureField` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `binaryData` des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
@@ -230,7 +230,7 @@ Um Signaturfeldnamen abzurufen, führen Sie die folgenden Aufgaben aus:
 1. Rufen Sie das PDF-Dokument ab, das Signaturfelder enthält.
 1. Rufen Sie die Namen der Signaturfelder ab.
 
-**Binden Sie Projektdateien ein**
+**Einschließen von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -242,9 +242,9 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 
-Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Weitere Informationen über den Speicherort dieser JAR-Dateien finden Sie unter [AEM Forms-Java-Bibliotheksdateien einbinden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Erstellen eines Signature-Clients**
+**Erstellen eines Signatur-Clients**
 
 Bevor Sie einen Signature-Service-Vorgang programmgesteuert ausführen können, müssen Sie einen Signature-Service-Client erstellen.
 
@@ -289,7 +289,7 @@ Abrufen von Signaturfeldnamen mithilfe der Signature-API (Java):
 1. Abrufen der Signaturfeldnamen
 
    * Rufen Sie die Namen der Signaturfelder ab, indem Sie die Methode `getSignatureFieldList` des `SignatureServiceClient`-Objekts aufrufen und das `com.adobe.idp.Document`-Objekt übergeben, das das PDF-Dokument mit den Signaturfeldern enthält. Diese Methode gibt eine `java.util.List` -Objekt zurück, in dem jedes Element eine `PDFSignatureField` -Objekt enthält. Mit diesem Objekt können Sie zusätzliche Informationen zu einem Signaturfeld abrufen, beispielsweise ob es sichtbar ist.
-   * Iterieren Sie durch das `java.util.List`-Objekt, um festzustellen, ob es Signaturfeldnamen gibt. Für jedes Signaturfeld im PDF-Dokument können Sie ein separates `PDFSignatureField`-Objekt erhalten. Um den Namen des Signaturfelds zu erhalten, rufen Sie die Methode `getName` des `PDFSignatureField`-Objekts auf. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Signaturfeldnamen angibt.
+   * Iterieren Sie durch das `java.util.List`-Objekt, um festzustellen, ob es Signaturfeldnamen gibt. Für jedes Signaturfeld im PDF-Dokument können Sie ein separates `PDFSignatureField`-Objekt erhalten. Um den Namen des Signaturfelds abzurufen, rufen Sie die Methode `getName` des `PDFSignatureField`-Objekts auf. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Signaturfeldnamen angibt.
 
 **Siehe auch**
 
@@ -315,9 +315,9 @@ Rufen Sie Signaturfeldnamen mit der Signature-API (Webdienst) ab:
 
 1. Erstellen eines Signatur-Clients
 
-   * Erstellen Sie mithilfe des betreffenden Standardkonstruktors ein `SignatureServiceClient`-Objekt.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Das Attribut `lc_version` muss nicht verwendet werden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `SignatureServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Erstellen Sie ein `SignatureServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
@@ -329,14 +329,14 @@ Rufen Sie Signaturfeldnamen mit der Signature-API (Webdienst) ab:
 1. Abrufen des PDF-Dokuments, das Signaturfelder enthält
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Dokuments verwendet, das Signaturfelder enthält.
-   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus, in dem die Datei geöffnet werden soll, darstellt.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
    * Füllen Sie das `BLOB`-Objekt durch Zuweisen des Inhalts des Byte-Arrays zu seinem Feld `MTOM`.
 
 1. Abrufen der Signaturfeldnamen
 
-   * Rufen Sie die Namen der Signaturfelder ab, indem Sie die Methode `getSignatureFieldList` des `SignatureServiceClient`-Objekts abrufen und das `BLOB`-Objekt übergeben, das das PDF-Dokument mit Signaturfehldern enthält. Diese Methode gibt ein `MyArrayOfPDFSignatureField`-Sammlungsobjekt zurück, in dem jedes Element ein `PDFSignatureField`-Objekt enthält.
+   * Rufen Sie die Namen der Signaturfelder ab, indem Sie die Methode `getSignatureFieldList` des `SignatureServiceClient`-Objekts abrufen und das `BLOB`-Objekt übergeben, das das PDF-Dokument mit Signaturfeldern enthält. Diese Methode gibt ein `MyArrayOfPDFSignatureField`-Sammlungsobjekt zurück, in dem jedes Element ein `PDFSignatureField`-Objekt enthält.
    * Gehen Sie schrittweise durch das `MyArrayOfPDFSignatureField`-Objekt, um festzustellen, ob Signaturfeldnamen vorhanden sind. Für jedes Signaturfeld im PDF-Dokument können Sie ein `PDFSignatureField`-Objekt erhalten. Um den Namen des Signaturfelds abzurufen, rufen Sie die Methode `getName` des `PDFSignatureField`-Objekts auf. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Signaturfeldnamen angibt.
 
 **Siehe auch**
@@ -372,7 +372,7 @@ Um Signaturfelder in einem PDF-Dokument zu ändern, führen Sie die folgenden Sc
 1. Klicken Sie auf das Signaturfeld.
 1. Speichern Sie das Formular als PDF-Datei.
 
-**Einschließen von Projektdateien**
+**Einbinden von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -480,7 +480,7 @@ Speichern Sie das PDF-Dokument mit dem geänderten Signaturfeld als PDF-Datei, d
 
 1. Das PDF-Dokument als PDF-Datei speichern
 
-   * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung .pdf ist.
+   * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung .pdf lautet.
    * Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um den Inhalt des `com.adobe.idp.Document`-Objekts in die Datei zu kopieren. Stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt verwenden, das die Methode `modifySignatureField` zurückgegeben hat.
 
 ### Ändern von Signaturfeldern mithilfe der Webservice-API {#modify-signature-fields-using-the-web-service-api}
@@ -497,24 +497,24 @@ So ändern Sie ein Signaturfeld mithilfe der Signature-API (Webservice):
 
 1. Erstellen eines Signatur-Clients
 
-   * Erstellen Sie mithilfe des betreffenden Standardkonstruktors ein `SignatureServiceClient`-Objekt.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Das Attribut `lc_version` muss nicht verwendet werden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `SignatureServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Erstellen Sie ein `SignatureServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `SignatureServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `SignatureServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Abrufen des PDF-Dokuments, welches das zu ändernde Signaturfeld enthält
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Die `BLOB` -Objekt wird verwendet, um das PDF-Dokument zu speichern, das das zu ändernde Signaturfeld enthält.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie seiner Eigenschaft `MTOM` den Inhalt des Byte-Arrays zuweisen.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
 1. Festlegen von Wörterbuchwerten
 
@@ -544,7 +544,7 @@ So ändern Sie ein Signaturfeld mithilfe der Signature-API (Webservice):
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments, das das Signaturfeld enthalten soll, und den Modus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das die Methode `addSignatureField` zurückgibt. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
@@ -721,7 +721,7 @@ Digitales Signieren eines PDF-Dokuments mithilfe der Signature-API (Java):
 
    Signieren Sie das PDF-Dokument, indem Sie die Methode `sign` des `SignatureServiceClient`-Objekts verwenden und die folgenden Werte übergeben:
 
-   * Ein `com.adobe.idp.Document`-Objekt, welches das zu signierende PDF-Dokument darstellt.
+   * Ein `com.adobe.idp.Document`-Objekt, das das zu signierende PDF-Dokument darstellt.
    * Ein Zeichenfolgenwert, der den Namen des Signaturfelds angibt, das die digitale Signatur enthalten wird.
    * Ein `Credential`-Objekt, das die Berechtigung darstellt, die zum digitalen Signieren des PDF-Dokuments verwendet werden. Erstellen Sie ein Objekt vom Typ `Credential`, indem Sie die statische Methode `getInstance` des `Credential`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Aliaswert angibt, welcher den Sicherheitsanmeldedaten entspricht.
    * Ein `HashAlgorithm`-Objekt, das ein statisches Datenelement angibt, das den Hash-Algorithmus darstellt, der für das Digest des PDF-Dokuments verwendet werden soll. Sie können beispielsweise `HashAlgorithm.SHA1` angeben, um den SHA1-Algorithmus zu verwenden.
@@ -729,8 +729,8 @@ Digitales Signieren eines PDF-Dokuments mithilfe der Signature-API (Java):
    * Ein Zeichenfolgenwert, der die Kontaktinformationen der unterzeichnenden Person darstellt.
    * Ein `PDFSignatureAppearanceOptions`-Objekt, das das Erscheinungsbild der digitalen Signatur steuert. Beispielsweise können Sie dieses Objekt verwenden, um einer digitalen Signatur ein benutzerdefiniertes Logo hinzuzufügen.
    * Ein `java.lang.Boolean`-Objekt, das angibt, ob eine Sperrprüfung für das Zertifikat des Unterzeichners durchgeführt werden soll.
-   * Ein `OCSPOptionSpec`-Objekt, das Einstellungen für die Unterstützung des Online Certificate Status Protocol (OCSP) speichert. Wenn keine Sperrprüfung durchgeführt wird, wird dieser Parameter nicht verwendet und Sie können `null` angeben.
-   * Ein `CRLPreferences`-Objekt, das Einstellungen für die Zertifikats-Sperrliste (CRL) speichert. Wenn keine Sperrprüfung durchgeführt wird, wird dieser Parameter nicht verwendet, und Sie können `null` angeben.
+   * Ein `OCSPOptionSpec`-Objekt, das Einstellungen für die Unterstützung des Online Certificate Status Protocol (OCSP) speichert. Wenn keine Sperrprüfung durchgeführt wird, wird dieser Parameter nicht verwendet, und Sie können `null` angeben.
+   * Ein `CRLPreferences`-Objekt, das die Voreinstellungen für die Zertifikatsperrliste (CRL) speichert. Wenn keine Sperrprüfung durchgeführt wird, wird dieser Parameter nicht verwendet, und Sie können `null` angeben.
    * Ein `TSPPreferences`-Objekt, das Einstellungen für die Unterstützung des Zeitstempelanbieters (TSP) speichert. Dieser Parameter ist optional und kann `null` sein. Weitere Informationen finden Sie in der [AEM Forms-API-Verweis](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
    Die `sign`-Methode gibt ein `com.adobe.idp.Document`-Objekt zurück, das das signierte PDF-Dokument darstellt.
@@ -765,29 +765,29 @@ Digitales Signieren eines PDF-Dokuments mithilfe der Signatur-API (Webdienst):
 1. Erstellen eines Signatur-Clients
 
    * Erstellen Sie ein `SignatureServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Das Attribut `lc_version` muss nicht verwendet werden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `SignatureServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `SignatureServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `SignatureServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. PDF-Dokument zum Signieren abrufen
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines signierten PDF-Dokuments verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Speicherort des zu signierenden PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie seiner Eigenschaft `MTOM` den Inhalt des Byte-Arrays zuweisen.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
 1. Signieren des PDF-Dokuments
 
    Signieren Sie das PDF-Dokument, indem Sie die Methode `sign` des `SignatureServiceClient`-Objekts verwenden und die folgenden Werte übergeben:
 
-   * Ein `BLOB`-Objekt, welches das zu signierende PDF-Dokument darstellt.
+   * Ein `BLOB`-Objekt, das das zu signierende PDF-Dokument darstellt.
    * Ein Zeichenfolgenwert, der den Namen des Signaturfelds angibt, das die digitale Signatur enthalten wird.
    * Ein `Credential`-Objekt, das die Berechtigung darstellt, die zum digitalen Signieren des PDF-Dokuments verwendet werden. Erstellen Sie ein Objekt vom Typ `Credential`, indem Sie seinen Konstruktor verwenden, und geben Sie den Alias an, indem Sie der Eigenschaft `alias` des `Credential`-Objekts einen Wert zuweisen.
    * Ein `HashAlgorithm`-Objekt, das ein statisches Datenelement angibt, das den Hash-Algorithmus darstellt, der für das Digest des PDF-Dokuments verwendet werden soll. Sie können beispielsweise `HashAlgorithm.SHA1` angeben, um den SHA1-Algorithmus zu verwenden.
@@ -796,18 +796,18 @@ Digitales Signieren eines PDF-Dokuments mithilfe der Signatur-API (Webdienst):
    * Ein Zeichenfolgenwert, der den Standort der unterzeichnenden Person darstellt.
    * Ein Zeichenfolgenwert, der die Kontaktinformationen der unterzeichnenden Person darstellt.
    * Ein `PDFSignatureAppearanceOptions`-Objekt, das das Erscheinungsbild der digitalen Signatur steuert. Beispielsweise können Sie dieses Objekt verwenden, um einer digitalen Signatur ein benutzerdefiniertes Logo hinzuzufügen.
-   * Ein `System.Boolean`-Objekt, das angibt, ob das Zertifikat des Signierers einer Sperrprüfung unterzogen werden soll. Wenn diese Sperrprüfung durchgeführt wird, wird dies in der Signatur eingebettet. Der Standardwert lautet `false`.
+   * Ein `System.Boolean`-Objekt, das angibt, ob eine Sperrprüfung für das Zertifikat des Unterzeichners durchgeführt werden soll. Wenn diese Sperrprüfung durchgeführt wird, wird dies in der Signatur eingebettet. Der Standardwert lautet `false`.
    * Ein `OCSPOptionSpec`-Objekt, das Voreinstellungen für die Unterstützung des Online Certificate Status Protocol (OCSP) speichert. Wenn keine Sperrprüfung durchgeführt wird, wird dieser Parameter nicht verwendet, und Sie können `null` angeben. Weitere Informationen zu diesem Objekt finden Sie in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Ein `CRLPreferences`-Objekt, das die Voreinstellungen für die Zertifikatsperrliste (CRL) speichert. Wenn keine Sperrprüfung durchgeführt wird, wird dieser Parameter nicht verwendet, und Sie können `null` angeben.
-   * Ein `TSPPreferences`-Objekt, das Voreinstellungen für die Unterstützung des Zeitstempelanbieters (TSP) speichert. Dieser Parameter ist optional und kann `null` sein.
+   * Ein `TSPPreferences`-Objekt, das Einstellungen für die Unterstützung des Zeitstempelanbieters (TSP) speichert. Dieser Parameter ist optional und kann `null` sein.
 
-   Die Methode `sign` gibt ein `BLOB`-Objekt zurück, das das signierte PDF-Dokument darstellt.
+   Die `sign`-Methode gibt ein `BLOB`-Objekt zurück, das das signierte PDF-Dokument darstellt.
 
 1. Speichern des signierten PDF-Dokuments
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des signierten PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das von der Methode `sign` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das von der `sign`-Methode zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
@@ -829,7 +829,7 @@ Das Ergebnis ist ein digital signiertes, interaktives PDF-Formular. Wenn Sie ein
 
 >[!NOTE]
 >
->Bevor Sie ein interaktives Formular digital signieren können, müssen Sie sicherstellen, dass Sie das Zertifikat zu AEM Forms hinzufügen. Ein Zertifikat wird über die Administration-Console oder programmgesteuert mithilfe der Trust Manager-API hinzugefügt. (Siehe [Importieren von Berechtigungen mithilfe der Trust Manager-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+>Bevor Sie ein interaktives Formular digital signieren können, müssen Sie sicherstellen, dass Sie das Zertifikat zu AEM Forms hinzufügen. Ein Zertifikat wird über die Administration-Console oder programmgesteuert mithilfe der Trust Manager-API hinzugefügt. (Siehe [Importieren von Anmeldeinformationen mithilfe der Trust Manager-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 Wenn Sie die Forms Service-API verwenden, setzen Sie die Laufzeitoption `GenerateServerAppearance` auf `true`. Diese Laufzeitoption stellt sicher, dass das Erscheinungsbild des auf dem Server generierten Formulars gültig bleibt, wenn es in Acrobat oder Adobe Reader geöffnet wird. Es wird empfohlen, diese Laufzeitoption zu setzen, wenn Sie ein interaktives Formular zum Signieren mithilfe der Forms-API generieren.
 
@@ -860,7 +860,7 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 
-Weitere Informationen über den Speicherort dieser JAR-Dateien finden Sie unter [AEM Forms-Java-Bibliotheksdateien einbinden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Erstellen eines Forms and Signatures-Client**
 
@@ -931,7 +931,7 @@ Digitales Signieren eines interaktiven Formulars mithilfe der Forms and Signatur
       * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen.
       * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert.
       * Ein `URLSpec`-Objekt, das URI-Werte enthält, die für den Forms-Service erforderlich sind. Für diesen Parameterwert können Sie `null` angeben.
-      * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` angeben, wenn Sie keine Dateien an das Formular anhängen möchten.
+      * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
 
      Die `renderPDFForm2`-Methode gibt ein `FormsResult`-Objekt zurück, das einen Formulardaten-Stream enthält
 
@@ -941,19 +941,19 @@ Digitales Signieren eines interaktiven Formulars mithilfe der Forms and Signatur
 
    Signieren Sie das PDF-Dokument, indem Sie die Methode `sign` des `SignatureServiceClient`-Objekts aufrufen und die folgenden Werte übergeben:
 
-   * Ein `com.adobe.idp.Document`-Objekt, das das zu signierende PDF-Dokument darstellt. Stellen Sie sicher, dass dieses Objekt das `com.adobe.idp.Document`-Objekt ist, das vom Forms-Service abgerufen wurde.
+   * Ein `com.adobe.idp.Document`-Objekt, welches das zu signierende PDF-Dokument darstellt. Stellen Sie sicher, dass dieses Objekt das `com.adobe.idp.Document`-Objekt ist, das vom Forms-Service abgerufen wurde.
    * Ein Zeichenfolgenwert, der den Namen des Signaturfelds darstellt, das eine Signatur enthält.
    * Ein `Credential`-Objekt, der die zum digitalen Signieren des PDF-Dokuments verwendeten Anmeldededaten darstellt. Erstellen Sie ein Objekt vom Typ `Credential`, indem Sie die statische Methode `getInstance` des `Credential`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Alias-Wert angibt, der den Sicherheitsanmeldedaten entspricht.
-   * Ein `HashAlgorithm`-Objekt, das ein statisches Datenelement angibt, das den Hash-Algorithmus darstellt, der für den Digest des PDF-Dokuments verwendet werden soll. Sie können beispielsweise `HashAlgorithm.SHA1` angeben, um den SHA1-Algorithmus zu verwenden.
+   * Ein `HashAlgorithm`-Objekt, das ein statisches Datenelement angibt, das den Hash-Algorithmus darstellt, der für das Digest des PDF-Dokuments verwendet werden soll. Sie können beispielsweise `HashAlgorithm.SHA1` angeben, um den SHA1-Algorithmus zu verwenden.
    * Ein Zeichenfolgenwert, der den Grund für die digitale Signatur des PDF-Dokuments angibt.
    * Ein Zeichenfolgenwert, der die Kontaktinformationen der unterzeichnenden Person darstellt.
    * Ein `PDFSignatureAppearanceOptions`-Objekt, das das Erscheinungsbild der digitalen Signatur steuert. Beispielsweise können Sie dieses Objekt verwenden, um einer digitalen Signatur ein benutzerdefiniertes Logo hinzuzufügen.
    * Ein `java.lang.Boolean`-Objekt, das angibt, ob eine Sperrprüfung für das Zertifikat des Unterzeichners durchgeführt werden soll.
-   * Ein `OCSPPreferences`-Objekt, das Einstellungen für die Unterstützung des Online Certificate Status Protocol (OCSP) speichert. Wenn keine Sperrprüfung durchgeführt wird, wird dieser Parameter nicht verwendet und Sie können `null` angeben.
-   * Ein `CRLPreferences`-Objekt, das Einstellungen für die Zertifikats-Sperrliste (CRL) speichert. Wenn keine Sperrprüfung durchgeführt wird, wird dieser Parameter nicht verwendet, und Sie können `null` angeben.
-   * Ein `TSPPreferences`-Objekt, das Voreinstellungen für die Unterstützung des Zeitstempelanbieters (TSP) speichert. Dieser Parameter ist optional und kann `null` sein.
+   * Ein `OCSPPreferences`-Objekt, das Einstellungen für die Unterstützung des Online Certificate Status Protocol (OCSP) speichert. Wenn keine Sperrprüfung durchgeführt wird, wird dieser Parameter nicht verwendet, und Sie können `null` angeben.
+   * Ein `CRLPreferences`-Objekt, das die Voreinstellungen für die Zertifikatsperrliste (CRL) speichert. Wenn keine Sperrprüfung durchgeführt wird, wird dieser Parameter nicht verwendet, und Sie können `null` angeben.
+   * Ein `TSPPreferences`-Objekt, das Einstellungen für die Unterstützung des Zeitstempelanbieters (TSP) speichert. Dieser Parameter ist optional und kann `null` sein.
 
-   Die Methode `sign` gibt ein `com.adobe.idp.Document`-Objekt zurück, das das signierte PDF-Dokument darstellt.
+   Die `sign`-Methode gibt ein `com.adobe.idp.Document`-Objekt zurück, das das signierte PDF-Dokument darstellt.
 
 1. Speichern des signierten PDF-Dokuments
 
@@ -980,7 +980,7 @@ So signieren Sie mit der Forms- und Signatur-API (Web-Service) ein interaktives 
 
    Verwenden Sie die folgende WSDL-Definition für den Service-Verweis, der mit dem Forms-Service verknüpft ist: `http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`.
 
-   Da der Datentyp `BLOB` für beide Service-Verweise verwendet wird, müssen Sie den Datentyp `BLOB` bei der Verwendung voll qualifizieren. Im entsprechenden Webservice-Schnellstart sind alle `BLOB`-Instanzen vollständig qualifiziert.
+   Da der `BLOB`-Datentyp für beide Service-Referenzen verwendet wird, müssen Sie den `BLOB`-Datentyp vollständig qualifizieren, wenn Sie ihn verwenden. Im entsprechenden Webservice-Schnellstart sind alle `BLOB`-Instanzen vollständig qualifiziert.
 
    >[!NOTE]
    >
@@ -988,9 +988,9 @@ So signieren Sie mit der Forms- und Signatur-API (Web-Service) ein interaktives 
 
 1. Erstellen eines Forms- and Signature-Clients
 
-   * Erstellen Sie ein Objekt `SignatureServiceClient`, indem Sie seinen standardmäßigen Konstruktor verwenden.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Das Attribut `lc_version` muss nicht verwendet werden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `SignatureServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Erstellen Sie ein `SignatureServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
@@ -1008,14 +1008,14 @@ So signieren Sie mit der Forms- und Signatur-API (Web-Service) ein interaktives 
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines signierten PDF-Dokuments verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Speicherort des zu signierenden PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie die Inhalte des Byte-Arrays seiner `MTOM`-Eigenschaft zuweisen.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern von Formulardaten verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort der XML-Datei, die Formulardaten enthält, und den Modus, in dem die Datei geöffnet werden soll, darstellt.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekt speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft die Inhalte des Byte-Arrays zuweisen.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
    * Erstellen Sie ein `PDFFormRenderSpec`-Objekt, das zum Festlegen von Laufzeitoptionen verwendet wird. Weisen Sie dem Feld `generateServerAppearance` des `PDFFormRenderSpec`-Objekts den Wert `true` zu.
    * Rufen Sie die Methode `renderPDFForm2` des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
@@ -1023,7 +1023,7 @@ So signieren Sie mit der Forms- und Signatur-API (Web-Service) ein interaktives 
       * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen.
       * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert.
       * Ein `URLSpec`-Objekt, das URI-Werte enthält, die für den Forms-Service erforderlich sind. Für diesen Parameterwert können Sie `null` angeben.
-      * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, und Sie können `null` angeben, wenn Sie keine Dateien an das Formular anhängen möchten.
+      * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
       * Ein Ausgabeparameter „long“, mit dem die Anzahl der Seiten im Formular gespeichert wird.
       * Ein Zeichenfolgen-Ausgabeparameter, der für den Gebietsschema-Wert verwendet wird.
       * Ein `FormResult`-Wert, der ein Ausgabeparameter ist, der zum Speichern des interaktiven Formulars verwendet wird.
@@ -1034,7 +1034,7 @@ So signieren Sie mit der Forms- und Signatur-API (Web-Service) ein interaktives 
 
    Signieren Sie das PDF-Dokument, indem Sie die Methode `sign` des `SignatureServiceClient`-Objekts aufrufen und die folgenden Werte übergeben:
 
-   * Ein `BLOB`-Objekt, das das zu signierende PDF-Dokument darstellt. Verwenden Sie die vom Forms-Service zurückgegebene `BLOB`-Instanz.
+   * Ein `BLOB`-Objekt, welches das zu signierende PDF-Dokument darstellt. Verwenden Sie die vom Forms-Service zurückgegebene `BLOB`-Instanz.
    * Ein Zeichenfolgenwert, der den Namen des Signaturfelds darstellt, das eine Signatur enthält.
    * Ein `Credential`-Objekt, der die zum digitalen Signieren des PDF-Dokuments verwendeten Anmeldededaten darstellt. Erstellen Sie ein Objekt vom Typ `Credential`, indem Sie seinen Konstruktor verwenden, und geben Sie den Alias an, indem Sie der Eigenschaft `alias` des `Credential`-Objekts einen Wert zuweisen.
    * Ein `HashAlgorithm`-Objekt, das ein statisches Datenelement angibt, das den Hash-Algorithmus darstellt, der für das Digest des PDF-Dokuments verwendet werden soll. Sie können beispielsweise `HashAlgorithm.SHA1` angeben, um den SHA1-Algorithmus zu verwenden.
@@ -1043,18 +1043,18 @@ So signieren Sie mit der Forms- und Signatur-API (Web-Service) ein interaktives 
    * Ein Zeichenfolgenwert, der den Standort der unterzeichnenden Person darstellt.
    * Ein Zeichenfolgenwert, der die Kontaktinformationen der unterzeichnenden Person darstellt.
    * Ein `PDFSignatureAppearanceOptions`-Objekt, das das Erscheinungsbild der digitalen Signatur steuert. Beispielsweise können Sie dieses Objekt verwenden, um einer digitalen Signatur ein benutzerdefiniertes Logo hinzuzufügen.
-   * Ein `System.Boolean`-Objekt, das angibt, ob das Zertifikat des Signierers einer Sperrprüfung unterzogen werden soll. Wenn diese Sperrprüfung durchgeführt wird, wird dies in der Signatur eingebettet. Der Standardwert lautet `false`.
+   * Ein `System.Boolean`-Objekt, das angibt, ob eine Sperrprüfung für das Zertifikat des Unterzeichners durchgeführt werden soll. Wenn diese Sperrprüfung durchgeführt wird, wird dies in der Signatur eingebettet. Der Standardwert lautet `false`.
    * Ein `OCSPPreferences`-Objekt, das Voreinstellungen für die Unterstützung des Online Certificate Status Protocol (OCSP) speichert. Wenn keine Sperrprüfung durchgeführt wird, wird dieser Parameter nicht verwendet, und Sie können `null` angeben. Weitere Informationen zu diesem Objekt finden Sie in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Ein `CRLPreferences`-Objekt, das die Voreinstellungen für die Zertifikatsperrliste (CRL) speichert. Wenn keine Sperrprüfung durchgeführt wird, wird dieser Parameter nicht verwendet, und Sie können `null` angeben.
-   * Ein `TSPPreferences`-Objekt, das Voreinstellungen für die Unterstützung des Zeitstempelanbieters (TSP) speichert. Dieser Parameter ist optional und kann `null` sein.
+   * Ein `TSPPreferences`-Objekt, das Einstellungen für die Unterstützung des Zeitstempelanbieters (TSP) speichert. Dieser Parameter ist optional und kann `null` sein.
 
-   Die Methode `sign` gibt ein `BLOB`-Objekt zurück, das das signierte PDF-Dokument darstellt.
+   Die `sign`-Methode gibt ein `BLOB`-Objekt zurück, das das signierte PDF-Dokument darstellt.
 
 1. Speichern des signierten PDF-Dokuments
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des signierten PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das von der Methode `sign` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das von der `sign`-Methode zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
@@ -1067,7 +1067,7 @@ So signieren Sie mit der Forms- und Signatur-API (Web-Service) ein interaktives 
 
 Sie können ein PDF-Dokument absichern, indem Sie es mit einem bestimmten Signaturtyp (nämlich einer zertifizierten Signatur) zertifizieren. Eine zertifizierte Signatur unterscheidet sich wie folgt von einer digitalen Signatur:
 
-* Sie muss die erste, auf das PDF-Dokument angewendete Signatur sein. Das heißt, zum Zeitpunkt, zu dem die zertifizierte Signatur angewendet wird, müssen alle anderen Signaturfelder im Dokument unsigniert sein. In einem PDF-Dokument ist nur eine zertifizierte Signatur zulässig. Wenn Sie ein PDF-Dokument signieren und zertifizieren möchten, müssen Sie es vor dem signieren zertifizieren. Nach dem Zertifizieren eines PDF-Dokuments können Sie weitere Signaturfelder digital signieren.
+* Es muss die erste auf das PDF-Dokument angewendete Signatur sein. Das heißt, zum Zeitpunkt, zu dem die zertifizierte Signatur angewendet wird, müssen alle anderen Signaturfelder im Dokument noch unsigniert sein. In einem PDF-Dokument ist nur eine zertifizierte Signatur zulässig. Wenn Sie ein PDF-Dokument signieren und zertifizieren möchten, müssen Sie es vor dem Signieren zertifizieren. Nach dem Zertifizieren eines PDF-Dokuments können Sie weitere Signaturfelder digital signieren.
 * Beim Signieren wird das Dokument auf bestimmte Arten von Inhalten geprüft, die den Inhalt des Dokuments missverständlich oder irreführend machen könnten. Beispiel: Das Ausfüllen von Formularen oder Einfügen von Kommentaren kann in dem Dokument zulässig sein. Wenn der Autor festlegt, dass eine bestimmte Änderung nicht zulässig ist, verhindert Acrobat, dass Benutzer das Dokument auf diese Weise ändern. Wenn solche Änderungen vorgenommen werden, etwa durch Verwenden einer anderen Anwendung, wird die zertifizierte Signatur ungültig und Acrobat gibt eine Warnung aus, wenn jemand das Dokument öffnet. (Bei nicht zertifizierten Signaturen werden Änderungen nicht verhindert und normale Bearbeitungsvorgänge führen nicht dazu, dass die ursprüngliche Signatur ungültig wird.)
 * Beim Signieren wird das Dokument auf bestimmte Arten von Inhalten geprüft, die den Inhalt des Dokuments missverständlich oder irreführend machen könnten. Beispiel: Eine Anmerkung kann Text auf einer Seite verdecken, der für das Verständnis dessen, was zertifiziert wird, wichtig ist. Eine Erläuterung (gültige Beglaubigung) zu solchen Inhalten kann bereitgestellt werden.
 
@@ -1115,9 +1115,9 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 
-Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Weitere Informationen über den Speicherort dieser JAR-Dateien finden Sie unter [AEM Forms-Java-Bibliotheksdateien einbinden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Erstellen eines Signatur-Clients**
+**Erstellen eines Signature-Clients**
 
 Bevor Sie einen Signaturvorgang programmgesteuert ausführen können, müssen Sie einen Signature-Client erstellen.
 
@@ -1191,11 +1191,11 @@ So zertifizieren Sie ein PDF-Dokument mithilfe der Signature-API (Java):
    * Ein `MDPPermissions`-Objekt, das Aktionen angibt, die mit dem PDF-Dokument ausgeführt werden können und dadurch die Signatur ungültig machen.
    * Ein `PDFSignatureAppearanceOptions`-Objekt, das das Erscheinungsbild der zertifizierten Signatur steuert. Ändern Sie bei Bedarf das Erscheinungsbild der Signatur, indem Sie eine Methode aufrufen, z. B. `setShowDate`.
    * Ein Zeichenfolgenwert, der erklärt, durch welche Aktionen die Signatur ungültig gemacht wird.
-   * Ein `java.lang.Boolean`-Objekt, das angibt, ob das Zertifikat des Signierers einer Sperrprüfung unterzogen werden soll. Wenn diese Sperrprüfung durchgeführt wird, wird dies in der Signatur eingebettet. Der Standardwert lautet `false`.
+   * Ein `java.lang.Boolean`-Objekt, das angibt, ob eine Sperrprüfung für das Zertifikat des Unterzeichners durchgeführt werden soll. Wenn diese Sperrprüfung durchgeführt wird, wird dies in der Signatur eingebettet. Der Standardwert lautet `false`.
    * Ein `java.lang.Boolean`-Objekt, das angibt, ob das zu zertifizierende Signaturfeld gesperrt ist. Wenn das Feld gesperrt ist, wird das Signaturfeld als schreibgeschützt markiert, seine Eigenschaften können nicht geändert werden und es kann von niemandem gelöscht werden, der nicht über die erforderlichen Berechtigungen verfügt. Der Standardwert lautet `false`.
    * Ein `OCSPPreferences`-Objekt, das Voreinstellungen für die Unterstützung des Online Certificate Status Protocol (OCSP) speichert. Wenn keine Sperrprüfung durchgeführt wird, wird dieser Parameter nicht verwendet, und Sie können `null` angeben. Weitere Informationen zu diesem Objekt finden Sie in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Ein `CRLPreferences`-Objekt, das die Voreinstellungen für die Zertifikatsperrliste (CRL) speichert. Wenn keine Sperrprüfung durchgeführt wird, wird dieser Parameter nicht verwendet, und Sie können `null` angeben.
-   * Ein `TSPPreferences`-Objekt, das Voreinstellungen für die Unterstützung des Zeitstempelanbieters (TSP) speichert. Nachdem Sie zum Beispiel ein `TSPPreferences`-Objekt erstellt haben, können Sie die URL des TSP-Servers festlegen, indem Sie die Methode `setTspServerURL` des `TSPPreferences`-Objekts aufrufen. Dieser Parameter ist optional und kann `null` sein. Weitere Informationen finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+   * Ein `TSPPreferences`-Objekt, das Einstellungen für die Unterstützung des Zeitstempelanbieters (TSP) speichert. Nachdem Sie zum Beispiel ein `TSPPreferences`-Objekt erstellt haben, können Sie die URL des TSP-Servers festlegen, indem Sie die Methode `setTspServerURL` des `TSPPreferences`-Objekts aufrufen. Dieser Parameter ist optional und kann `null` sein. Weitere Informationen finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
    Die Methode `certify` gibt ein `com.adobe.idp.Document`-Objekt zurück, das das zertifizierte PDF-Dokument darstellt.
 
@@ -1228,22 +1228,22 @@ So zertifizieren Sie ein PDF-Dokument mithilfe der Signature-API (Webservice):
 
 1. Erstellen eines Signatur-Clients
 
-   * Erstellen Sie mithilfe des betreffenden Standardkonstruktors ein `SignatureServiceClient`-Objekt.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Das Attribut `lc_version` muss nicht verwendet werden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `SignatureServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Erstellen Sie ein `SignatureServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `SignatureServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `SignatureServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Abrufen des zu zertifizierenden PDF-Dokuments
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines zertifizierten PDF-Dokuments verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des zu zertifizierenden PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
@@ -1263,20 +1263,20 @@ So zertifizieren Sie ein PDF-Dokument mithilfe der Signature-API (Webservice):
    * Ein boolescher Wert, der angibt, ob das `MDPPermissions`-Objekt verwendet werden soll, das als vorheriger Parameterwert übergeben wurde.
    * Ein Zeichenfolgenwert, der erklärt, durch welche Aktionen die Signatur ungültig gemacht wird.
    * Ein `PDFSignatureAppearanceOptions`-Objekt, das das Erscheinungsbild der zertifizierten Signatur steuert. Erstellen Sie ein Objekt `PDFSignatureAppearanceOptions`, indem Sie den Konstruktor verwenden. Sie können das Erscheinungsbild der Signatur ändern, indem Sie eines ihrer Datenelemente festlegen.
-   * Ein `System.Boolean`-Objekt, das angibt, ob das Zertifikat des Signierers einer Sperrprüfung unterzogen werden soll. Wenn diese Sperrprüfung durchgeführt wird, wird dies in der Signatur eingebettet. Der Standardwert lautet `false`.
+   * Ein `System.Boolean`-Objekt, das angibt, ob eine Sperrprüfung für das Zertifikat des Unterzeichners durchgeführt werden soll. Wenn diese Sperrprüfung durchgeführt wird, wird dies in der Signatur eingebettet. Der Standardwert lautet `false`.
    * Ein `System.Boolean`-Objekt, das angibt, ob das zu zertifizierende Signaturfeld gesperrt ist. Wenn das Feld gesperrt ist, wird das Signaturfeld als schreibgeschützt markiert, seine Eigenschaften können nicht geändert werden und es kann von niemandem gelöscht werden, der nicht über die erforderlichen Berechtigungen verfügt. Der Standardwert lautet `false`.
    * Ein `System.Boolean`-Objekt, das angibt, ob das Signaturfeld gesperrt ist. Das heißt, wenn Sie `true` an den vorherigen Parameter übergeben, übergeben Sie `true` an diesen Parameter.
    * Ein `OCSPPreferences`-Objekt, das Voreinstellungen für die Unterstützung des Online Certificate Status Protocol (OCSP) speichert, welches Informationen zum Status der Berechtigung bereitstellt, die zum Zertifizieren des PDF-Dokuments verwendet wird. Wenn keine Sperrprüfung durchgeführt wird, wird dieser Parameter nicht verwendet, und Sie können `null` angeben.
-   * Ein `CRLPreferences`-Objekt, das Einstellungen für die Zertifikats-Sperrliste (CRL) speichert. Wenn keine Sperrprüfung durchgeführt wird, wird dieser Parameter nicht verwendet, und Sie können `null` angeben.
-   * Ein `TSPPreferences`-Objekt, das Voreinstellungen für die Unterstützung des Zeitstempelanbieters (TSP) speichert. Nachdem Sie zum Beispiel ein Objekt vom Typ `TSPPreferences` erstellt haben, können Sie die URL des TSP festlegen, indem Sie das Datenelement `tspServerURL` des `TSPPreferences`-Objekts festlegen. Dieser Parameter ist optional und kann `null` sein.
+   * Ein `CRLPreferences`-Objekt, das die Voreinstellungen für die Zertifikatsperrliste (CRL) speichert. Wenn keine Sperrprüfung durchgeführt wird, wird dieser Parameter nicht verwendet, und Sie können `null` angeben.
+   * Ein `TSPPreferences`-Objekt, das Einstellungen für die Unterstützung des Zeitstempelanbieters (TSP) speichert. Nachdem Sie zum Beispiel ein Objekt vom Typ `TSPPreferences` erstellt haben, können Sie die URL des TSP festlegen, indem Sie das Datenelement `tspServerURL` des `TSPPreferences`-Objekts festlegen. Dieser Parameter ist optional und kann `null` sein.
 
    Die Methode `certify` gibt ein `BLOB`-Objekt zurück, das das zertifizierte PDF-Dokument darstellt.
 
 1. Speichern des zertifizierten PDF-Dokuments als PDF-Datei
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments, das das zertifizierte PDF-Dokument enthalten wird, sowie den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das von der Methode `certify` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `binaryData` des `BLOB`-Objekts abrufen.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das von der `certify`-Methode zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `binaryData` des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
@@ -1313,7 +1313,7 @@ Führen Sie zum Überprüfen einer digitalen Signatur die folgenden Aufgaben aus
 1. Bestimmen Sie den Status der Signatur.
 1. Bestimmen Sie die Identität des Signierers.
 
-**Einschließen von Projektdateien**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, schließen Sie die Proxy-Dateien ein.
 
@@ -1325,9 +1325,9 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 
-Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Weitere Informationen über den Speicherort dieser JAR-Dateien finden Sie unter [AEM Forms-Java-Bibliotheksdateien einbinden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Erstellen eines Signature-Clients**
+**Erstellen eines Signatur-Clients**
 
 Bevor Sie einen Vorgang des Signature-Services programmgesteuert ausführen, erstellen Sie einen Signature-Service-Client.
 
@@ -1347,9 +1347,9 @@ Im Rahmen der Einstellung dieser Optionen können Sie den Überprüfungszeitpunk
 
 Sie können auch angeben, ob im Rahmen des Überprüfungsprozesses eine Sperrprüfung durchgeführt werden soll. Sie können beispielsweise eine Sperrprüfung durchführen, um festzustellen, ob das Zertifikat widerrufen wurde. Weitere Informationen zu den Optionen für die Sperrprüfung finden Sie unter `RevocationCheckStyle` Aufzählungswert in [AEM Forms-API-Verweis](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-Um eine Widerrufsprüfung für ein Zertifikat durchzuführen, geben Sie mithilfe eines `CRLOptionSpec`-Objekts eine URL zu einem Zertifikatssperrlisten-Server (CRL) an. Wenn Sie jedoch keine URL für den CRL-Server angeben, ruft der Signature-Service die URL vom Zertifikat ab.
+Um eine Sperrprüfung für ein Zertifikat durchzuführen, geben Sie mit einem `CRLOptionSpec`-Objekt eine URL zu einem Zertifikatssperrlistenserver (CRL) an. Wenn Sie jedoch keine URL für den CRL-Server angeben, ruft der Signature-Service die URL vom Zertifikat ab.
 
-Anstelle eines CRL-Servers können Sie bei der Sperrprüfung einen OCSP-Server (Online Certificate Status Protocol) verwenden. Normalerweise wird bei Verwendung eines OCSP-Servers im Gegensatz zu einem CRL-Server die Sperrprüfung schneller durchgeführt. (Siehe [Online Certificate Status Protocol](https://tools.ietf.org/html/rfc2560).)
+Anstelle eines CRL-Servers können Sie bei der Sperrprüfung einen OCSP-Server (Online Certificate Status Protocol) verwenden. Normalerweise wird bei Verwendung eines OCSP-Servers im Gegensatz zu einem CRL-Server die Sperrprüfung schneller durchgeführt. (Siehe [Onlinezertifikat Statussprotokoll](https://tools.ietf.org/html/rfc2560).)
 
 Sie können die CRL- und OCSP-Serverreihenfolge festlegen, die der Signaturdienst mithilfe von Adobe Applications and Services verwendet. Wenn beispielsweise der OCSP-Server in Adobe Applications and Services zuerst festgelegt wird, wird der OCSP-Server überprüft, gefolgt vom CRL-Server.
 
@@ -1465,24 +1465,24 @@ Sie können die Identität des Unterzeichners ermitteln, die einen der folgenden
 
 1. Erstellen eines Signatur-Clients
 
-   * Erstellen Sie mithilfe des betreffenden Standardkonstruktors ein `SignatureServiceClient`-Objekt.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Das Attribut `lc_version` muss nicht verwendet werden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `SignatureServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Erstellen Sie ein `SignatureServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `SignatureServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `SignatureServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Rufen Sie das PDF-Dokument ab, das die zu prüfende Signatur enthält
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines PDF-Dokuments verwendet, das eine zu verifizierende digitale oder zertifizierte Signatur enthält.
-   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des signierten PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des signierten PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie seiner Eigenschaft `MTOM` den Inhalt des Byte-Arrays zuweisen.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
 1. PKI-Laufzeitoptionen festlegen
 
@@ -1537,7 +1537,7 @@ Um mehrere digitale Signaturen zu überprüfen, führen Sie die folgenden Aufgab
 1. Rufen Sie alle digitalen Signaturen ab.
 1. Iterieren Sie durch alle Signaturen.
 
-**Projektdateien einbinden**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, schließen Sie die Proxy-Dateien ein.
 
@@ -1549,9 +1549,9 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 
-Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Weitere Informationen über den Speicherort dieser JAR-Dateien finden Sie unter [AEM Forms-Java-Bibliotheksdateien einbinden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Erstellen eines Signature-Clients**
+**Erstellen eines Signatur-Clients**
 
 Bevor Sie einen Vorgang des Signature-Services programmgesteuert ausführen, erstellen Sie einen Signature-Service-Client.
 
@@ -1573,7 +1573,7 @@ Sie können auch angeben, ob im Rahmen des Überprüfungsprozesses eine Sperrpr�
 
 Um eine Sperrprüfung für ein Zertifikat durchzuführen, geben Sie mit einem `CRLOptionSpec`-Objekt eine URL zu einem Zertifikatssperrlistenserver (CRL) an. Wenn Sie jedoch keine URL zu einem CRL-Server angeben, bezieht der Signature-Dienst die URL aus dem Zertifikat.
 
-Anstelle eines CRL-Servers können Sie bei der Sperrprüfung einen OCSP-Server (Online Certificate Status Protocol) verwenden. In der Regel wird bei Verwendung eines OCSP-Servers anstelle eines CRL-Servers die Sperrprüfung schneller durchgeführt. (Siehe [Onlinezertifikat Statussprotokoll](https://tools.ietf.org/html/rfc2560).)
+Anstelle eines CRL-Servers können Sie bei der Sperrprüfung einen OCSP-Server (Online Certificate Status Protocol) verwenden. In der Regel wird bei Verwendung eines OCSP-Servers anstelle eines CRL-Servers die Sperrprüfung schneller durchgeführt. (Siehe [Online Certificate Status Protocol](https://tools.ietf.org/html/rfc2560).)
 
 Sie können die CRL- und OCSP-Serverreihenfolge festlegen, die der Signaturdienst mithilfe von Adobe Applications and Services verwendet. Wenn beispielsweise der OCSP-Server zuerst in Adobe Applications and Services festgelegt wird, wird der OCSP-Server überprüft, gefolgt vom CRL-Server.
 
@@ -1647,7 +1647,7 @@ Iterieren Sie durch jede Signatur. Das heißt, für jede Signatur überprüfen S
    * Ein `PKIOptions`-Objekt, das PKI-Laufzeitoptionen enthält.
    * Eine `VerifySPIOptions`-Instanz, die SPI-Informationen enthält. Sie können für diesen Parameter `null` angeben.
 
-   Die Methode `verifyPDFDocument` gibt ein `PDFDocumentVerificationInfo`-Objekt zurück, das Informationen zu allen digitalen Signaturen enthält, die sich im PDF-Dokument befinden.
+   Die Methode `verifyPDFDocument` gibt ein `PDFDocumentVerificationInfo`-Objekt zurück, das Informationen über alle digitalen Signaturen im PDF-Dokument enthält.
 
 1. Iteration durch alle Signaturen
 
@@ -1680,9 +1680,9 @@ Iterieren Sie durch jede Signatur. Das heißt, für jede Signatur überprüfen S
 
 1. Erstellen eines Signatur-Clients
 
-   * Erstellen Sie mithilfe des betreffenden Standardkonstruktors ein `SignatureServiceClient`-Objekt.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Das Attribut `lc_version` muss nicht verwendet werden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `SignatureServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Erstellen Sie ein `SignatureServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
@@ -1694,8 +1694,8 @@ Iterieren Sie durch jede Signatur. Das heißt, für jede Signatur überprüfen S
 1. Abrufen des PDF-Dokuments, das die zu überprüfenden Signaturen enthält
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt speichert ein PDF-Dokument, das mehrere zu überprüfende digitale Signaturen enthält.
-   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des PDF-Dokuments und den Modus angibt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des PDF-Dokuments und den Modus angibt, in dem die Datei geöffnet werden soll.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
@@ -1758,9 +1758,9 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 
-Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Weitere Informationen über den Speicherort dieser JAR-Dateien finden Sie unter [AEM Forms-Java-Bibliotheksdateien einbinden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Erstellen eines Signature-Clients**
+**Erstellen eines Signatur-Clients**
 
 Bevor Sie einen Signature-Service-Vorgang programmgesteuert ausführen können, müssen Sie einen Signature-Service-Client erstellen.
 
@@ -1844,9 +1844,9 @@ Entfernen einer digitalen Signatur mithilfe der Signature-API (Webdienst):
 
 1. Erstellen eines Signatur-Clients
 
-   * Erstellen Sie mithilfe des betreffenden Standardkonstruktors ein `SignatureServiceClient`-Objekt.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Das Attribut `lc_version` muss nicht verwendet werden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `SignatureServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Erstellen Sie ein `SignatureServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `SignatureServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/SignatureService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `SignatureServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
@@ -1859,9 +1859,9 @@ Entfernen einer digitalen Signatur mithilfe der Signature-API (Webdienst):
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines PDF-Dokuments, das eine zu entfernende digitale Signatur enthält, verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des signierten PDF-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
-   * Füllen Sie das `BLOB`-Objekt durch Zuweisen seiner `MTOM`-Eigenschaft mit dem Inhalt des Byte-Arrays.
+   * Befüllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
 1. Entfernen der digitalen Signatur aus dem Signaturfeld
 
@@ -1876,7 +1876,7 @@ Entfernen einer digitalen Signatur mithilfe der Signature-API (Webdienst):
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments darstellt, das ein leeres Signaturfeld enthält, und den Modus, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das von der `sign`-Methode zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in die PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**

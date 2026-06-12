@@ -11,8 +11,8 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
 workflow-type: tm+mt
-source-wordcount: '2087'
-ht-degree: 99%
+source-wordcount: '2208'
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ Variablen erstellen Sie mithilfe des Abschnitts „Variablen“ im Sidekick des 
 >
 >Workflows unterstützen für Datumsvariablen nur das ISO8601-Format.
 
-Sie benötigen das [AEM Forms Add-On-Paket](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) für die Datentypen „Dokument“ und „Formulardatenmodell“. Verwenden Sie den Datentyp „ArrayList“, um Variablenauflistungen zu erstellen. Sie können eine ArrayList-Variable für alle primitiven und komplexen Datentypen erstellen. Beispiel: Erstellen Sie eine ArrayList-Variable und wählen Sie als Untertyp „String“ aus, um mehrere Zeichenfolgenwerte in der Variablen zu speichern.
+Sie benötigen das [AEM Forms Add-On-Paket](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) für die Datentypen „Dokument“ und „Formulardatenmodell“.  Verwenden Sie den Datentyp „ArrayList“, um Variablenauflistungen zu erstellen. Sie können eine ArrayList-Variable für alle primitiven und komplexen Datentypen erstellen. Beispiel: Erstellen Sie eine ArrayList-Variable und wählen Sie als Untertyp „String“ aus, um mehrere Zeichenfolgenwerte in der Variablen zu speichern.
 
 Führen Sie die folgenden Schritte aus, um eine Variable zu erstellen:
 
@@ -113,7 +113,7 @@ Wählen Sie eine Variable vom Typ „XML“ aus, um eine XML-Datei zu speichern.
 
 In diesem Beispiel wählen Sie eine XML-Variable **formdata** aus, um die Datei **cc-app.xml** zu speichern. Fragen Sie die Variable **formdata** ab, um den Wert für die Zeichenfolgenvariable **emailaddress** festzulegen, um den Wert für die Eigenschaft **emailAddress** zu speichern, die in der Datei **cc-app.xml** verfügbar ist.
 
-[Festlegen einer variablen &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4)
+[Festlegen variabler Videowerte](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4)
 
 ### Beispiel 2: Verwenden eines Ausdrucks, um einen Wert basierend auf anderen Variablen zu speichern {#example2}
 
@@ -170,7 +170,7 @@ Sie können Variablen verwenden, um den Routing-Ausdruck mit dem Ausdruckseditor
 
 In diesem Beispiel verwenden Sie vor dem Definieren des Routing-Ausdrucks das [Beispiel 2](../../forms/using/variable-in-aem-workflows.md#example2), um den Wert für die Variable **totalvalue** festzulegen. Zweig 1 ist aktiv, wenn der Wert der Variablen **totalvalue** größer als 50000 ist. Auf ähnliche Weise können Sie eine Regel definieren, die den Zweig 2 aktivieren soll, wenn der Wert der Variablen **totalvalue** kleiner als 50000 ist.
 
-[ODER-Teilung-Video](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
+[ODER-Teilung Video](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
 Wählen Sie auf ähnliche Weise einen externen Skriptpfad aus oder geben Sie das ECMA-Skript an, damit Routing-Ausdrücke die aktive Verzweigung auswerten können. Wählen Sie **[!UICONTROL Verzweigung umbenennen]** aus, um einen alternativen Namen für die Verzweigung anzugeben.
 
@@ -279,8 +279,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ### Speichern sensibler Benutzerdaten außerhalb von JCR mit Hilfe von Workflow-Variablen {#jcr-independent-persistance}
 
-Daten, die mithilfe von Forms-Workflows verarbeitet werden, können sensible Benutzerdaten enthalten, wie z. B. persönlich identifizierbare Informationen und sensible persönliche Informationen. Unternehmen können sich dafür entscheiden, die Daten, die von verschiedenen Workflow-Schritten verarbeitet (und mit Hilfe von Workflow-Variablen übergeben) werden, außerhalb des JCR-Speichers in einem externen Datenspeicher zu speichern, der ihnen gehört und von ihnen verwaltet wird. Weitere Informationen über die Speicherung von Workflow-Daten in einem externen Speicher finden Sie unter [Verwendung von Workflow-Variablen für kundeneigene Datenspeicher](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
-[!DNL Adobe Experience Manager] bietet die Workflow-API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer), um Workflow-Variablen in externen Azure-Blob-Speichern zu speichern. Für Details zur Verwendung der API siehe [Verwenden von Workflow-Variablen zum Parametrisieren sensibler Daten und Speichern in externen Datenspeichern](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
+Daten, die mit Forms Workflow verarbeitet werden, können sensible Benutzerdaten enthalten, wie z. B. persönlich identifizierbare Informationen und sensible persönliche Informationen. Unternehmen können sich dafür entscheiden, die Daten, die von verschiedenen Workflow-Schritten verarbeitet (und mithilfe von Workflow-Variablen übergeben) werden, außerhalb des JCR-Speichers in einem externen Datenspeicher zu speichern, der ihnen gehört und von ihnen verwaltet wird. Weitere Informationen über die Speicherung von Workflow-Daten in einem externen Speicher finden Sie unter [Verwendung von Workflow-Variablen für kundeneigene Datenspeicher](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+[!DNL Adobe Experience Manager] bietet die Workflow-[&#x200B; (UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer), um Workflow-Variablen in externen Azure-Blob-Speichern zu speichern. Weitere Informationen zur Verwendung der API finden Sie unter [Verwenden von Workflow-Variablen zum Parametrisieren sensibler Daten und Speichern in externen Datenspeichern](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
 ## Bearbeiten einer Variablen {#edit-a-variable}
 

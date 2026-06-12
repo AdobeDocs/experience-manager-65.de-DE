@@ -8,7 +8,7 @@ role: User,Admin,Developer
 source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
 source-wordcount: '1900'
-ht-degree: 89%
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 
 | Bereich | Funktion | Ersatz | Version (SP) |
 |---|---|---|---|
-| Sites | Unterstützung von Inhaltsfragmenten in der AEM Assets-REST-API | AEM 6.5 LTS SP2 bietet moderne OpenAPIs für die Verwaltung von Inhaltsfragmenten und -modellen, sodass die älteren Endpunkte zur Unterstützung von Inhaltsfragmenten in der AEM Assets-REST-API jetzt nicht mehr unterstützt werden.<br>Adobe beabsichtigt, diese älteren Endpunkte bis zu einer Mitteilung über das Ende der Nutzungsdauer verfügbar zu halten. Adobe plant keine weiteren Verbesserungen an den veralteten Endpunkten. | 6.5.24 |
+| Sites | Unterstützung von Inhaltsfragmenten in der AEM Assets-REST-API | AEM 6.5 LTS SP2 bietet moderne OpenAPIs für die Verwaltung von Inhaltsfragmenten und -modellen. Daher wurden die älteren Endpunkte zur Unterstützung von Inhaltsfragmenten in der AEM Assets-REST-API jetzt eingestellt.<br>Adobe beabsichtigt, diese älteren Endpunkte bis zu einer Ankündigung zum Ende der Nutzungsdauer verfügbar zu halten. Adobe plant keine weiteren Verbesserungen an den veralteten Endpunkten. | 6.5.24 |
 | Sites | [SPA-Editor](/help/sites-developing/spa-editor-deprecation.md) | Bei Headless-Anwendungsfällen können Sie den [universellen Editor](/help/sites-developing/universal-editor/introduction.md) für die visuelle Bearbeitung oder den [Inhaltsfragment-Editor](/help/sites-developing/universal-editor/introduction.md) für die formularbasierte Bearbeitung nutzen. | 6.5.23 |
 | Sites | Der Dienst **Adobe AEM Managed Polling Configuration**: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | Der Dienst **Adobe AEM Analytics Report-Sling-Importer**. Siehe „Herstellen einer Verbindung zu Adobe Analytics und Erstellen von Frameworks“ – [Konfigurieren des Importintervalls](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
 | Screens | ActiveMQ in Adobe Experience Manager (AEM). ActiveMQ wurde für die Kommunikation zwischen zwei AEM-Veröffentlichungsinstanzen verwendet. | Adobe empfiehlt, dass Kundinnen und Kunden jetzt einen Lastenausgleich verwenden. | 6.5.18.0 |

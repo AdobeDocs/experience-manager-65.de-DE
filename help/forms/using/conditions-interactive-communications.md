@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 100%
+source-wordcount: '1403'
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ Beispiele:
 Die Assets in den Bedingungen, die basierend auf den angewendeten Regeln und den an die Regel übergebenen Werten gerendert werden. Die Regeln in den Bedingungen können Werte in den folgenden Datentypen überprüfen:
 
 * Eigenschaft des zugeordneten Formulardatenmodells
-* Beliebige Variablen, die Sie in der Bedingung erstellen 
+* Beliebige Variablen, die Sie in der Bedingung erstellen
 * Zeichenfolgen
 * Zahlen
 * Mathematische Ausdrücke
@@ -75,11 +75,11 @@ Die Assets in den Bedingungen, die basierend auf den angewendeten Regeln und den
 
    ![createconditionscreenassetsaddedannotated](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[A] Änderung ablehnen.** Wählen Sie dieses Symbol aus, um die Änderungen abzulehnen, die Sie möglicherweise an dem Asset und der Regel in der Bedingung vorgenommen haben.
+   **[A] Änderung ablehnen.** Wählen Sie dieses Symbol, um die Änderungen abzulehnen, die Sie möglicherweise an dem Asset und der Regel in der Bedingung vorgenommen haben.
    **[B] Änderung akzeptieren.** Wählen Sie dieses Symbol aus, um die Änderungen zu akzeptieren, die Sie an dem Asset und der Regel in der Bedingung vorgenommen haben.
-   **[C] Asset duplizieren.** Wählen Sie dieses Symbol aus, um eine Kopie des Assets zusammen mit der angewendeten Regel (falls vorhanden) in der Bedingung zu erstellen. Anschließend können Sie mit der Bearbeitung der Regel und des Assets für duplizierte Assets fortfahren. Das Duplizieren eines Assets ist für das Erstellen ähnlicher Regeln nützlich, um alternative Assets basierend auf einem bestimmten Kontext anzuzeigen.
-   **[D] Vorschau anzeigen.** Wählen Sie dieses Symbol aus, um auf der Seite „Bedingungen erstellen/bearbeiten“ eine Vorschau des Assets anzuzeigen.
-   **„server“ neu anordnen.** Wählen Sie dieses Symbol aus und halten Sie es, um Assets innerhalb einer Bedingung per Drag-and-Drop neu anzuordnen.
+   **[C] Asset duplizieren.** Wählen Sie dieses Symbol, um eine Kopie des Assets zusammen mit der angewendeten Regel (falls vorhanden) in der Bedingung zu erstellen. Anschließend können Sie die Regel und das Asset für das doppelte Asset bearbeiten. Das Duplizieren eines Assets ist nützlich, um ähnliche Regeln zu erstellen und alternative Assets basierend auf einem bestimmten Kontext anzuzeigen.
+   **[D] Vorschau anzeigen.** Wählen Sie dieses Symbol, um auf der Seite „Bedingungen erstellen/bearbeiten“ eine Vorschau des Assets anzuzeigen.
+   **&#39;server&#39; neu anordnen.** Wählen Sie dieses Symbol aus und halten Sie es gedrückt, um Assets innerhalb einer Bedingung per Drag-and-Drop neu anzuordnen.
 
    Sie können mithilfe der folgenden Optionen festlegen, wie sich die Bedingung zur Laufzeit verhält:
 
@@ -141,7 +141,7 @@ Mit dem Regeleditor in einer Bedingung können Sie Regeln erstellen, um Assets b
 
    >[!NOTE]
    >
-   >Die Sammlungseigenschaft wird nicht zum Erstellen von Regeln zum Anzeigen von Assets unterstützt. 
+   >Die Sammlungseigenschaft wird nicht zum Erstellen von Regeln zum Anzeigen von Assets unterstützt.
 
 1. Wählen Sie den entsprechenden Operator aus, um die Regel auszuwerten, z. B. Gleich ist, Enthält und Beginnt mit.
 1. Fügen Sie den auswertenden Ausdruck, die Zeichenfolge, das Datenmodell, die Eigenschaft, die Variable oder das Datum ein.
@@ -163,7 +163,7 @@ Mit dem Regeleditor in einer Bedingung können Sie Regeln erstellen, um Assets b
 Beim Erstellen oder Bearbeiten einer Regel in einer Bedingung können Sie ![icon_resize](assets/icon_resize.png) (Größe ändern) auswählen, um das Dialogfeld „Regel erstellen/Regel bearbeiten“ zu erweitern. Das erweiterte Vollbilddialogfeld ermöglicht Folgendes:
 
 * Erstellen und Verwenden von Variablen in der Regel
-* Ziehen der Eigenschaften und Variablen des Datenmodells per Drag-and-Drop in die Regel
+* Ziehen der Eigenschaften und Variablen des Formulardatenmodells per Drag-and-Drop in die Regel
 
 Wählen Sie erneut „Größe ändern“ aus, um zum Dialogfeld „Regel erstellen/Regel bearbeiten“ zurückzukehren.
 

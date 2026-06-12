@@ -11,8 +11,8 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 1%
+source-wordcount: '1195'
+ht-degree: 2%
 
 ---
 
@@ -90,7 +90,7 @@ So greifen Sie auf der Autoreninstanz auf die Speicherkonfigurationskonsole zu:
       * **[!UICONTROL Solr-URL]**
 Die URL, die für die Kommunikation mit Solr im eigenständigen Modus verwendet wird.
 Leer lassen, wenn im SolrCloud-Modus ausgeführt wird.
-        *Standard*: https://127.0.0.1:8983/solr/
+        *default*: https://127.0.0.1:8983/solr/
 
       * **[!UICONTROL Solr-Sammlung]**
 Der Solr-Sammlungsname.
@@ -222,7 +222,7 @@ Informationen zum Einrichten von MSRP für eine Demonstrations- oder Entwicklung
 
 Stellen Sie sicher, dass MSRP als Standardanbieter konfiguriert wurde, indem Sie die Konfiguration der Speicheroption überprüfen. Standardmäßig ist der Speicherressourcenanbieter JSRP.
 
-Rufen Sie auf allen Autoren- und Veröffentlichungs-AEM-Instanzen die [Speicherkonfigurationskonsole“ erneut auf &#x200B;](srp-config.md) überprüfen Sie das AEM-Repository:
+Rufen Sie auf allen AEM-Autoren- und Veröffentlichungsinstanzen die [Speicherkonfigurationskonsole“ erneut auf &#x200B;](srp-config.md) überprüfen Sie das AEM-Repository:
 
 * In JCR, wenn [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
