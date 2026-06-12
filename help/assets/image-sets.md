@@ -131,7 +131,7 @@ Sie können Bild-Sets über die Benutzeroberfläche oder die API erstellen. In d
 
 >[!NOTE]
 >
->Sie können Bildsets auch automatisch über [Stapelsatzvorgaben“ ](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>Sie können Bildsets auch automatisch über [Stapelsatzvorgaben“ &#x200B;](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 >**Wichtig** Stapelsätze werden vom IPS (Image Production System) im Rahmen der Asset-Aufnahme erstellt und sind nur im Scene7-Modus von Dynamic Media verfügbar.
 
 Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Reihenfolge hinzugefügt. Sie können die Anordnung oder Sortierung der Assets manuell ändern, nachdem sie hinzugefügt wurden.
@@ -193,7 +193,7 @@ Siehe auch [Grenzwerte für Dynamic Media](/help/assets/limitations.md).
 
    >[!NOTE]
    >
-   >Beim Erstellen des Bild-Sets können Sie die Miniaturansicht des Bild-Sets ändern oder zulassen, dass Experience Manager die Miniaturansicht anhand der Assets im Bild-Set automatisch auswählt. Wenn Sie eine Miniaturansicht auswählen möchten, wählen Sie **[!UICONTROL Miniatur ändern]** über dem Feld „Titel“ auf der Seite des Bild-Set-Editors aus und dann ein Bild. (Sie können auch zu anderen Ordnern navigieren, um dort Bilder zu suchen.) Wenn Sie eine Miniatur ausgewählt haben und möchten, dass Adobe Experience Manager eine Miniatur aus dem Bild-Set generiert, wählen Sie **[!UICONTROL Zu automatischer Miniatur]****[!UICONTROL wechseln]** aus.
+   >Beim Erstellen des Bild-Sets können Sie die Miniaturansicht des Bild-Sets ändern oder zulassen, dass Experience Manager die Miniaturansicht anhand der Assets im Bild-Set automatisch auswählt. Wenn Sie eine Miniaturansicht auswählen möchten, wählen Sie **[!UICONTROL Miniatur ändern]** über dem Feld „Titel“ auf der Seite des Bild-Set-Editors aus und dann ein Bild. (Sie können auch zu anderen Ordnern navigieren, um dort Bilder zu suchen.) Wenn Sie eine Miniatur ausgewählt haben und möchten, dass Adobe Experience Manager eine Miniatur aus dem Bild-Set generiert, wählen Sie **[!UICONTROL Zu automatischer Miniatur]**&#x200B;**[!UICONTROL wechseln]** aus.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus. Das neu erstellte Bild-Set wird in dem Ordner angezeigt, in dem es erstellt wurde.
 
