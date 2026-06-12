@@ -26,7 +26,7 @@ Die Websites-Administrationskonsole kann um die Anzeige benutzerdefinierter Spal
 In diesem Schritt-für-Schritt-Tutorial wird erläutert, wie Sie eine neue Spalte in der Websites-Administrationskonsole anzeigen, indem Sie die Schnittstelle `ListInfoProvider` implementieren. Es besteht aus folgenden Schritten:
 
 1. [Erstellen des OSGi-Dienstes](#creating-the-osgi-service) und Bereitstellen des Pakets, das ihn enthält, auf dem AEM-Server.
-1. (Optional) [ Testen des neuen Dienstes](#testing-the-new-service) durch Ausgabe eines JSON-Aufrufs, um das JSON-Objekt anzufordern, das zum Erstellen der Konsole verwendet wird.
+1. (Optional) [&#x200B; Testen des neuen Dienstes](#testing-the-new-service) durch Ausgabe eines JSON-Aufrufs, um das JSON-Objekt anzufordern, das zum Erstellen der Konsole verwendet wird.
 1. [Anzeigen der neuen Spalte](#displaying-the-new-column) durch Erweitern der Knotenstruktur der Konsole im Repository
 
 >[!NOTE]

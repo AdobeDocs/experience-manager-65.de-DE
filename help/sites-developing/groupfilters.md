@@ -94,7 +94,7 @@ Die Funktion `matches` gibt `true` zurück, wenn die Gerätefunktionen alle Filt
 * Der Name des Benutzeragenten
 * Ein Map-Objekt, das die Gerätefunktionen enthält. Die Zuordnungsschlüssel sind die Namen der WURFL™-Funktionalität, und die Werte sind die entsprechenden Werte aus der WURFL™-Datenbank.
 
-Die Schnittstelle[ com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) enthält eine Teilmenge der WURFL™ -Fähigkeitsnamen in statischen Feldern. Verwenden Sie diese Feldkonstanten als Schlüssel beim Abrufen von Werten aus der Karte der Gerätefunktionen.
+Die Schnittstelle[&#x200B; com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) enthält eine Teilmenge der WURFL™ -Fähigkeitsnamen in statischen Feldern. Verwenden Sie diese Feldkonstanten als Schlüssel beim Abrufen von Werten aus der Karte der Gerätefunktionen.
 
 Zum Beispiel bestimmt das folgende Codebeispiel, ob das Gerät CSS unterstützt:
 

@@ -72,7 +72,7 @@ Gehen Sie zur Fehlerbehebung wie folgt vor:
 
 CRX selbst benötigt nur wenig Speicherplatz. Wenn die in CRX ausgeführte Anwendung größere Mengen Arbeitsspeicher benötigt oder Vorgänge anfordert, die viel Arbeitsspeicher belegen, etwa große Transaktionen, muss die JVM-Instanz, in der CRX ausgeführt wird, mit den entsprechenden Speichereinstellungen gestartet werden.
 
-Verwenden Sie Java™-Befehlsoptionen, um die Speichereinstellungen der JVM zu definieren (z. B. „java -Xmx512m -jar crx&amp;ast;.jar“, um die Heap-Größe auf 512 MB festzulegen).
+Verwenden Sie Java™-Befehlsoptionen, um die Speichereinstellungen der JVM zu definieren (z. B. „java -Xmx512m -jar crx&ast;.jar“, um die Heap-Größe auf 512 MB festzulegen).
 
 Geben Sie die Speichereinstellungsoption beim Starten von AEM WCM über die Befehlszeile an. Die Start-/Stopp-Skripte für AEM WCM oder benutzerdefinierten Skripte zur Verwaltung des Starts von AEM WCM können ebenfalls geändert werden, um die erforderlichen Speichereinstellungen zu definieren.
 
@@ -80,7 +80,7 @@ Wenn Sie die Heap-Größe bereits auf 512 MB festgelegt haben, können Sie das 
 
 Verwenden Sie den folgenden Befehl, um automatisch ein Heap-Abbild zu erstellen, wenn nicht genügend Arbeitsspeicher verfügbar ist:
 
-java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
+java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &ast;.jar
 
 Diese Methode generiert eine Heap-Dump-Datei (**java_…hprof**) immer dann, wenn dem Prozess der Speicher ausgeht. Der Vorgang läuft möglicherweise noch weiter, nachdem das Heap-Abbild erstellt wurde.
 

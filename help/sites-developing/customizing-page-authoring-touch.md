@@ -54,7 +54,7 @@ Diese können auf viele Arten verwendet werden, um die Seitenbearbeitungsfunktio
 
 >[!CAUTION]
 >
->****** Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen.
+>**&#x200B;**&#x200B;** Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen.
 >
 >Der Grund dafür ist, dass der Inhalt von `/libs` überschrieben wird, wenn Sie Ihre Instanz das nächste Mal aktualisieren (und möglicherweise überschrieben wird, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
 >

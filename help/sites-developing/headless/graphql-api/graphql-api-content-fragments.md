@@ -33,7 +33,7 @@ Die Verwendung der GraphQL-API in AEM ermöglicht die effiziente Bereitstellung 
 
 ## Voraussetzungen {#prerequisites}
 
-Kunden und Kundinnen, die GraphQL verwenden, sollten das AEM-Inhaltsfragment mit GraphQL Index Package 1.0.5 installieren. Weitere Informationen finden [ in ](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) Versionshinweisen .
+Kunden und Kundinnen, die GraphQL verwenden, sollten das AEM-Inhaltsfragment mit GraphQL Index Package 1.0.5 installieren. Weitere Informationen finden [&#x200B; in &#x200B;](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) Versionshinweisen .
 
 ## Die GraphQL-API {#graphql-api}
 

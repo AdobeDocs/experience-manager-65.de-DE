@@ -430,7 +430,7 @@ Bei der Konzeption dieser Tests sollte beachtet werden, dass nicht alle Szenarie
 
 | Fehlerszenario | Fehlertyp | Anzahl der Benutzer | Tx/Sek (erwartet) | Tx/Sek (getestet) | Beschreibung |
 |---|---|---|---|---|---|
-| Überlastung der Suchkomponente | Suche mit einem globalen Platzhalter (Sternchen) | 10 | 1 |  | Es wird nur nach &amp;ast;&amp;ast;&amp;ast; gesucht. |
+| Überlastung der Suchkomponente | Suche mit einem globalen Platzhalter (Sternchen) | 10 | 1 |  | Es wird nur nach &ast;&ast;&ast; gesucht. |
 |   | Stoppwort | 20 | 2 |  | Suchen nach einem Stoppwort. |
 |   | Leere Zeichenfolge | 10 | 1 |  | Suchen nach einer leeren Zeichenfolge. |
 |   | Sonderzeichen | 10 | 1 |  | Suchen nach Sonderzeichen. |

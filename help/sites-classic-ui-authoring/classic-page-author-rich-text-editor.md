@@ -57,7 +57,7 @@ Derzeit ist der Kontext-Bearbeitungsmodus für Seitenelemente aktiviert, die von
 
 ## Funktionen des Rich-Text-Editors {#features-of-the-rich-text-editor}
 
-Der Rich-Text-Editor bietet eine Reihe von Funktionen, die [ von der Konfiguration ](/help/sites-administering/rich-text-editor.md) einzelnen Komponente abhängen. Die Funktionen sind sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche verfügbar.
+Der Rich-Text-Editor bietet eine Reihe von Funktionen, die [&#x200B; von der Konfiguration &#x200B;](/help/sites-administering/rich-text-editor.md) einzelnen Komponente abhängen. Die Funktionen sind sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche verfügbar.
 
 ### Grundlegende Zeichenformate {#basic-character-formats}
 
@@ -106,7 +106,7 @@ Es sind die Standardfunktionen **[!UICONTROL Ausschneiden]** und **[!UICONTROL K
 * Ausschneiden (Strg+X)
 * Kopieren (Strg-C)
 * Einfügen
-Dies ist der Standard-Einfügemechanismus (Strg+V) für die Komponente. Für Standardinstallationen ist hier „Aus Word einfügen[!UICONTROL  festgelegt].
+Dies ist der Standard-Einfügemechanismus (Strg+V) für die Komponente. Für Standardinstallationen ist hier „Aus Word einfügen[!UICONTROL &#x200B; festgelegt].
 
 * Als Text einfügen: Hierbei werden alle Stile und Formatierungen entfernt und der Inhalt wird als reiner Text eingefügt.
 
