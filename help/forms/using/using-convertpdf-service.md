@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 100%
+source-wordcount: '412'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ Mit dem Convert PDF-Dienst können Sie Folgendes erreichen:
 * Konvertiert PDF-Dokumente in PostScript. Beim Konvertieren in PostScript können Sie den Konvertierungsvorgang verwenden, um das Quelldokument anzugeben und festzulegen, ob es in PostScript-Ebene 2 oder 3 konvertiert werden soll. Das PDF-Dokument, das Sie in eine PostScript-Datei konvertieren, muss nicht interaktiv sein.
 * Sie können PDF-Dokumente in die Bildformate JPEG, JPEG 2000, PNG und TIFF konvertieren. Beim Konvertieren in diese Bildformate können Sie für den Konvertierungsvorgang das Quelldokument und eine Grafikoptionsspezifizierung angeben. Die Spezifizierung enthält verschiedene Voreinstellungen, z. B. das Bildkonvertierungsformat, die Bildauflösung und die Farbkonvertierung.
 
-## Konfigurieren der Eigenschaften des Dienstes  {#properties}
+## Konfigurieren der Eigenschaften des Dienstes   {#properties}
 
 Sie können den Dienst **AEMFD ConvertPDF** in der AEM-Konsole verwenden, um Eigenschaften für diesen Dienst zu konfigurieren. Die Standard-URL der AEM-Konsole lautet `https://[host]:'port'/system/console/configMgr`.
 
@@ -133,7 +133,9 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 
 Die Ausführung des ConvertPDF-Dienstes über einen Workflow ist ähnlich wie die Ausführung über JSP/Servlet.
 
-Der einzige Unterschied beim Ausführen des Dienstes über JSP/Servlet liegt darin, dass das Dokumentobjekt automatisch eine Instanz des ResourceResolver-Objekts vom ResourceResolverHelper-Objekt abruft. Dieser automatische Mechanismus funktioniert nicht, wenn der Code in einem Workflow aufgerufen wird. Bei einem Workflow müssen Sie ausdrücklich eine Instanz des ResourceResolver-Objekts an die Dokument-Klassen-Constructor übermitteln. Dann benutzt das Document-Objekt das bereitgestellte ResourceResolver-Objekt, um Inhalt aus dem Repository zu lesen.
+Der einzige Unterschied beim Ausführen des Dienstes über JSP/Servlet liegt darin, dass das Dokumentobjekt automatisch eine Instanz des ResourceResolver-Objekts vom ResourceResolverHelper-Objekt abruft. Dieser automatische Mechanismus
+funktioniert nicht, wenn der Code von einem Workflow aufgerufen wird. Bei einem Workflow müssen Sie ausdrücklich eine Instanz des ResourceResolver-Objekts an die Dokument-Klassen-Constructor übermitteln. Dann verwendet das Dokumentobjekt
+das bereitgestellte ResourceResolver-Objekt zum Lesen von Inhalten aus dem Repository.
 
 Das folgende Beispiel eines Workflow-Prozesses konvertiert das Eingabedokument in ein PostScript-Dokument. Der Code ist in ECMAScript geschrieben und das Dokument wird als Payload des Workflows übergeben:
 

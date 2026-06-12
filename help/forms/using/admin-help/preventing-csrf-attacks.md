@@ -11,8 +11,8 @@ feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 100%
+source-wordcount: '978'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Angenommen, Sie sind in einem Browser bei der Administrationskonsole angemeldet.
 
 Lassen Sie einen Null-Referrer auf SOAP- und REST-Endpunkten zu. Lassen Sie außerdem einen Null-Referrer auf allen URI-Anmeldeseiten wie „/adminui“ und „/contentspace“ und den entsprechenden zugeordneten Ressourcen zu. Beispielsweise ist „/contentspace/faces/jsp/login.jsp“ das zugeordnete Servlet für „/contentspace“, was eine Null-Referrer-Ausnahme sein sollte. Diese Ausnahme ist nur erforderlich, wenn Sie die GET-Filterung für die Web-Anwendung aktivieren. In Ihren Anwendungen kann angegeben werden, ob Null-Referrer zulässig sind. Siehe „Schutz vor Cross-Site Request Forgery-Angriffen“ in [Härtung und Sicherheit für AEM Forms](https://help.adobe.com/de_DE/livecycle/11.0/HardeningSecurity/index.html).
 
-**Zulässige Referrer-Ausnahme:** Dies ist eine Unterliste der Liste der zulässigen Referrer, von denen Anfragen blockiert werden. Zulässige Referrer-Ausnahmen sind spezifisch für eine Web-Anwendung. Wenn einer Untergruppe der zulässigen Referrer nicht erlaubt werden soll, eine bestimmte Web-Anwendung aufzurufen, können Sie die Referrer über die zulässigen Referrer-Ausnahmen auf eine Blockierungsliste setzen. Zulässige Referrer-Ausnahmen werden in der Datei „web.xml“ für Ihre Anwendung angegeben. (Siehe den Abschnitt zum Schutz vor Cross-Site Request Forgery-Angriffen in „Härtung und Sicherheit für AEM Forms“ auf der Seite „Hilfe und Tutorials“.)
+**Zulässige Referrer-Ausnahme:** Dies ist eine Unterliste der Liste der zulässigen Referrer, von denen Anfragen blockiert werden. Zulässige Referrer-Ausnahmen sind spezifisch für eine Web-Anwendung. Wenn einer Teilmenge der zulässigen Referrer nicht erlaubt werden soll, eine bestimmte Web-Anwendung aufzurufen, können Sie die Referrer über die zulässigen Referrer-Ausnahmen auf eine Blockierungsliste setzen. Zulässige Referrer-Ausnahmen werden in der Datei „web.xml“ für Ihre Anwendung angegeben. (Siehe den Abschnitt zum Schutz vor Cross-Site Request Forgery-Angriffen in „Härtung und Sicherheit für AEM Forms“ auf der Seite „Hilfe und Tutorials“.)
 
 ## Funktionsweise zulässiger Referrer {#how-allowed-referers-work}
 
@@ -68,7 +68,7 @@ AEM Forms ermöglicht eine Referrer-Filterung, was CSRF-Angriffe verhindern kann
 
 Wenn Sie Configuration Manager ausführen, werden der Standardhost und die IP-Adresse oder der Formular-Server der Liste für zulässige Referrer hinzugefügt. Sie können diese Liste in der Administrationskonsole bearbeiten.
 
-1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Benutzerverwaltung“ > „Konfiguration“ > „URLs für zulässige Referrer konfigurieren“. Die Liste für zulässige Referrer wird unten auf der Seite angezeigt.
+1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „URLs für zulässige Referrer konfigurieren“. Die Liste der zulässigen verweisenden Stellen wird unten auf der Seite angezeigt.
 1. Hinzufügen eines zulässigen Referrers:
 
    * Geben Sie einen Hostnamen oder eine IP-Adresse in das Feld „Zulässige Referrer“ ein. Um mehr als einen zulässigen Referrer gleichzeitig hinzuzufügen, geben Sie jeden Hostnamen oder jede IP-Adresse in eine neue Zeile ein.

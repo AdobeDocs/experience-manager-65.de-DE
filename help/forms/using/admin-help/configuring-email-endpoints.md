@@ -11,8 +11,8 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '3805'
-ht-degree: 95%
+source-wordcount: '3811'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ Alle E-Mail-Endpunkte werden mit einem autorisierten Benutzernamen und Kennwort 
 
 Wenn Benutzer Dokumente mit westeuropäischen Sprachzeichen in Datei- und Konvertierungspfadnamen senden, müssen Sie eine E-Mail-Anwendung einsetzen, welche die erforderlichen Kodierungstypen (Latin1 [ISO-8859-1], Westeuropäisch [Windows] oder UTF-8) unterstützt. Weitere Informationen hierzu finden Sie im Dokument *Installieren und Bereitstellen von AEM Forms* für Ihren Anwendungs-Server.
 
-Bevor Sie einen E-Mail-Endpunkt konfigurieren, richten Sie den E-Mail-Dienst ein. (Siehe [Standardeinstellungen für E-Mail-Endpunkte konfigurieren](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Die Konfigurationsparameter des E-Mail-Services haben zwei Zwecke:
+Bevor Sie einen E-Mail-Endpunkt konfigurieren, richten Sie den E-Mail-Dienst ein. (Siehe [Konfigurieren der standardmäßigen E-Mail-Endpunkteinstellungen](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Die Konfigurationsparameter des E-Mail-Service haben zwei Zwecke:
 
 * Konfigurieren von Attributen, die für alle E-Mail-Endpunkte gültig sind
 * Bereitstellen von Standardwerten für alle E-Mail-Endpunkte
@@ -83,13 +83,13 @@ Damit der Forms-Workflow eingehende E-Mail-Nachrichten von Benutzenden empfängt
 
 **Start des Auftrags verzögern:** Der Standardwert in Sekunden für die Verzögerung, bevor der Auftrag beginnt, den Endpunkt zu überprüfen. Der Standardwert lautet 0.
 
-**Batch-Größe:** Die Anzahl der E-Mails, die der Empfänger pro Überprüfung zur Optimierung der Leistung verarbeitet. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert lautet 2.
+**Batch-Größe:** Die Anzahl von E-Mails, die der Empfänger pro Überprüfung zur Optimierung der Leistung verarbeitet. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert lautet 2.
 
 **Asynchron:** Gibt den Aufruftyp als asynchron oder synchron an. Transiente und synchrone Prozesse können nur synchron aufgerufen werden. Der Standardwert lautet „asynchron“.
 
 **Domain-Muster:** Das Domain-Namensmuster, das zum Filtern eingehender E-Mails verwendet wird. Wenn beispielsweise adobe.com verwendet wird, werden nur E-Mails aus der Domain „adobe.com“ verarbeitet, während E-Mails aus anderen Domains ignoriert werden.
 
-**Dateimuster:** Gibt die Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Hierzu gehören Dateien mit bestimmten Erweiterungen (&ast;.dat, &ast;.xml), Dateien mit bestimmten Namen (data) sowie Dateien mit zusammengesetzten Ausdrücken im Namen und in der Erweiterung (.``[dD][aA]``&#39;port&#39;). Der Standardwert lautet &ast;.&ast;.
+**Dateimuster:** Gibt die Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Erweiterungen (&ast;.dat, &ast;.xml), bestimmte Namen (Daten) und zusammengesetzte Ausdrücke im Namen und in der Erweiterung (.``[dD][aA]``&#39;port&#39;). Der Standardwert ist &ast;.&ast;.
 
 **Empfänger erfolgreicher Aufträge:** Eine oder mehrere E-Mail-Adressen, an die Benachrichtigungen über erfolgreiche Aufträge per E-Mail gesendet werden. Standardmäßig wird immer eine Benachrichtigung über erfolgreiche Aufträge an die Absenderin bzw. den Absender des Ausgangsauftrags gesendet. Es werden bis zu 100 Empfänger unterstützt. Zum Deaktivieren dieser Einstellung lassen Sie das Feld leer.
 
@@ -159,7 +159,7 @@ Mithilfe der folgenden Einstellungen können Sie einen E-Mail-Endpunkt konfiguri
 
 **Start des Auftrags verzögern:** Die Zeitspanne, die nach dem Start des Schedulers mit dem Scannen abgewartet wird.
 
-**Batch-Größe:** Die Anzahl von E-Mails, die der Empfänger pro Überprüfung zur Optimierung der Leistung verarbeitet. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2.
+**Batch-Größe:** Die Anzahl von E-Mails, die der Empfänger pro Überprüfung zur Optimierung der Leistung verarbeitet. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert lautet 2.
 
 **Benutzername:** (Obligatorische Einstellung) Der Benutzername, mit dem ein Ziel-Service aus einer E-Mail heraus aufgerufen wird. Der Standardwert lautet „SuperAdmin“.
 
@@ -179,7 +179,7 @@ Zum Deaktivieren dieser Einstellung lassen Sie sie leer. Es kann Fälle geben, i
 
 **Posteingang - Host:** Der Host-Name oder die IP-Adresse für den Posteingang, der/die vom E-Mail-Anbieter überprüft werden soll.
 
-**Posteingang - Port:** Der Port, der vom E-Mail-Server verwendet wird. Der Standardwert ist für POP3 „110“ und für IMAP „143“. Wenn SSL aktiviert ist, lautet der Standardwert für POP3 „995“ und für IMAP „993“.
+**Posteingang - Port:** Der Port, der vom E-Mail-Server verwendet wird. Der Standardwert für POP3 ist 110 und für IMAP 143. Wenn SSL aktiviert ist, ist der Standardwert für POP3 „995“ und für IMAP „993“.
 
 **Posteingang - Protokoll:** Das E-Mail-Protokoll, das vom E-Mail-Endpunkt zum Überprüfen des Posteingangs verwendet werden soll. Die Werte sind IMAP oder POP3. Der Host-Mailserver des Posteingangs muss diese Protokolle unterstützen.
 
@@ -235,7 +235,7 @@ Der Standardwert ist „asynchron“.
 
 **Wörtlich:** Die E-Mail verwendet den Wert, der in das Feld eingegeben wird, so wie er angezeigt wird.
 
-**Variable:** Sie können eine Zeichenfolge aus dem E-Mail-Betreff, dem Textkörper, der Kopfzeile oder der E-Mail-Adresse des Absenders zuordnen. Verwenden Sie dazu eines der folgenden Schlüsselwörter: %SUBJECT%, %BODY%, %HEADER% oder %SENDER%. Wenn Sie z. B. %SUBJECT%, angeben, wird der Inhalt des E-Mail-Betreffs als Eingabeparameter verwendet. Zum Auswählen von Anhängen geben Sie ein Dateimuster ein, das vom E-Mail-Endpunkt zum Auswählen der angehängten Dokumente verwendet werden kann. Durch die Eingabe von „*.pdf“ werden beispielsweise alle angehängten Dokumente mit einer PDF-Dateinamenerweiterung ausgewählt. Die Eingabe von „&ast;“ wählt ein angehängtes Dokument aus. Durch die Eingabe von „beispiel.pdf“ werden alle angehängten Dokumente namens „beispiel.pdf“ ausgewählt.
+**Variable:** Sie können eine Zeichenfolge aus dem E-Mail-Betreff, dem Textkörper, der Kopfzeile oder der E-Mail-Adresse des Absenders zuordnen. Verwenden Sie dazu eines der folgenden Schlüsselwörter: %SUBJECT%, %BODY%, %HEADER% oder %SENDER%. Wenn Sie z. B. %SUBJECT%, angeben, wird der Inhalt des E-Mail-Betreffs als Eingabeparameter verwendet. Zum Auswählen von Anhängen geben Sie ein Dateimuster ein, das vom E-Mail-Endpunkt zum Auswählen der angehängten Dokumente verwendet werden kann. Durch die Eingabe von &quot;*.pdf“ werden beispielsweise alle angehängten Dokumente mit einer PDF-Dateinamenerweiterung ausgewählt. Durch die Eingabe von &quot;*&quot; wird ein angehängtes Dokument ausgewählt. Durch die Eingabe von „beispiel.pdf“ werden alle angehängten Dokumente namens „beispiel.pdf“ ausgewählt.
 
 **Zuordnungen von Ausgabeparametern:** Wird zum Konfigurieren der Ausgabe des Dienstes und Vorgangs verwendet. Die folgenden Zeichen in den Zuordnungswerten von Ausgabeparametern werden im Dateinamen des Anhangs erweitert:
 

@@ -12,7 +12,7 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1790'
 ht-degree: 100%
 
 ---
@@ -227,7 +227,6 @@ Es dient vor allem der Anpassung, denn es bietet Funktionen, um Folgendes zu gen
          * fr-FR - Enthält translation.json für Französisch.
          * ja-JP - Enthält translation.json für Japanisch.
          * html.jsp - Enthält Code, um das aktuelle Browser-Gebietsschema zu ermitteln.
-
 
       * html.jsp
       * GET.jsp

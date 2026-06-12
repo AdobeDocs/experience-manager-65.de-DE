@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 100%
+source-wordcount: '1192'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Mit AEM Forms können Formularentwickler adaptive Formulare und interaktive Kommunikation nahtlos in eine AEM Sites-Einzelseiten-Anwendung (SPA) einbetten. Das eingebettete adaptive Formular und die interaktive Kommunikation sind voll funktionsfähig und die Benutzer können es ausfüllen und abschicken, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Web-Seite zu bleiben und gleichzeitig mit dem Formular oder der interaktiven Kommunkation zu interagieren.
 
-In AEM Sites-Einzelseiten-Anwendungen können Sie ein adaptives Formular oder eine interaktive Kommunikation mit der [AEM Forms SPA-Container-Komponente](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[ hinzufügen.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Es handelt sich um eine AEM Forms-Komponente für AEM Sites SPA, die Sie Ihrer Sites-Seite hinzufügen können.
+In AEM Sites-Einzelseitenanwendungen können Sie ein adaptives Formular oder eine interaktive Kommunikation mithilfe der [AEM Forms SPA-Container-Komponente hinzufügen](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Es handelt sich um eine AEM Forms-Komponente für AEM Sites SPAs, die Sie Ihrer Sites-Seite hinzufügen können.
 
 Informationen zum Einbetten eines adaptiven Formulars in eine AEM Sites, die keine SPA ist, finden Sie unter [Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation in AEM Sites-Seite](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
@@ -72,7 +72,7 @@ Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation mit de
    * **Asset-Typ:** Wählen Sie den Typ des einzubettenden Assets. Die Optionen sind **adaptives Formular** und **interaktive Kommunikation**
 
    * **Asset Path**: Durchsuchen Sie das adaptive Formular oder die interaktive Kommunikation, die Sie einbetten möchten, und wählen Sie sie aus. Das Feld wird automatisch ausgefüllt, wenn ein adaptives Formular oder eine interaktive Kommunikation über den Assets-Browser eingefügt wird.
-   * **Kanal** (Nur interaktive Kommunikation): Wählen Sie den Typ des einzubettenden interaktiven Kanals aus. Die Optionen sind **Webkanal** und **Druckkanal**.
+   * **Kanal** (Nur interaktive Kommunikation): Wählen Sie den Typ des einzubettenden interaktiven Kanals aus. Die Optionen sind **Web-Kanal** und **Druckkanal**.
 
    * **Design**: Wählen Sie ein Design, das die Formatierung der Komponenten in Ihrem adaptiven Formular oder interaktiver Kommunikation definiert. Zur Formatierung gehören Eigenschaften des Erscheinungsbildes, wie Schriftschnitt, Hintergrundfarbe, Abmessungen und Ausrichtung.
 
@@ -90,10 +90,10 @@ Betrachten Sie die folgenden Szenarien für die Veröffentlichung eines eingebet
 
 Die AEM Sites-Seite behält einen Verweis auf das adaptive Formular und die interaktive Kommunikation im AEM Forms-Container bei. Deshalb werden alle Konfigurationen und Eigenschaften, beispielsweise Design, Stile und die Sendeaktion, die im ursprünglichen adaptiven Formular und der interaktiven Kommunikation konfiguriert wurden, im eingebetteten adaptiven Formular und der interaktiven Kommunikation beibehalten.
 
-Um eine Konfiguration oder Eigenschaft des eingebetteten adaptiven Formulars zu ändern, führen Sie einen der folgenden Schritte aus.
+Um eine Konfiguration oder Eigenschaft des eingebetteten adaptiven Formulars und der interaktiven Kommunikation zu ändern, führen Sie einen der folgenden Schritte aus.
 
 * Öffnen Sie das ursprüngliche Formular in adaptiven Formularen oder interaktiver Kommunikation in den entsprechenden Editoren und modifizieren Sie diese.
-* Wählen Sie das adaptive Formular oder die interaktive Kommunikation auf der Sites-Seite im Bearbeitungsmodus und dann **In neuem Fenster bearbeiten** aus. Das ursprügliche Formular wird im Bearbeitungsmodus geöffnet. 
+* Wählen Sie das adaptive Formular oder die interaktive Kommunikation auf der Sites-Seite im Bearbeitungsmodus und dann **In neuem Fenster bearbeiten** aus. Das ursprügliche Formular wird im Bearbeitungsmodus geöffnet.
 
 ## Aspekte und Best Practices {#considerations-and-best-practices}
 

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '928'
 ht-degree: 100%
 
 ---
@@ -140,7 +140,7 @@ Wenn Sie Bilder oder Videos über den Asset-Browser auswählen und zu einem adap
 
 Nach dem Veröffentlichen der Bilder und Videos müssen Sie die Veröffentlichung des adaptiven Formulars, das auf diese Assets verweist, rückgängig machen und das Formular erneut veröffentlichen.
 
-### Nur die erste Instanz eines adaptiven Formulars wird zwischengespeichert  {#only-first-instance-of-adaptive-forms-is-cached}
+### Nur die erste Instanz eines adaptiven Formulars wird zwischengespeichert {#only-first-instance-of-adaptive-forms-is-cached}
 
 #### Problem {#issue3}
 

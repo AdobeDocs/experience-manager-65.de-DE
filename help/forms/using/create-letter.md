@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3982'
-ht-degree: 100%
+source-wordcount: '4013'
+ht-degree: 99%
 
 ---
 
@@ -29,7 +29,7 @@ Der Correspondence Management-Workflow besteht aus vier Phasen:
 
 Die folgende Abbildung zeigt einen typischen Workflow zur Erstellung einer Korrespondenzvorlage.
 
-![Arbeitsablauf für das Erstellen einer Korrespondenzvorlage](assets/01.png)
+![Workflow für das Erstellen einer Korrespondenzvorlage](assets/01.png)
 
 Die einzelnen Workflow-Schritte:
 
@@ -81,7 +81,7 @@ Kundschaftsorientierte Mitarbeitende (z. B. in der Schadensregulierung oder Sac
 
 #### Systemgesteuert {#system-driven}
 
-Die Erstellung von Schriftstücken wird durch sogenannte Ereignistrigger ausgelöst und erfolgt automatisch. Beispiel: Ein Mahnschreiben zur Erinnerung an eine Steuervorauszahlung wird durch Zusammenfügung der vorab definierten Vorlage mit den Kontaktdaten des Empfängers generiert. Der endgültige Brief kann per E-Mail gesendet, ausgedruckt, als Fax verschickt oder archiviert werden.
+Die Erstellung von Schriftstücken wird durch sogenannte Ereignistrigger ausgelöst und erfolgt automatisch. Beispiel: Ein Mahnschreiben zur Erinnerung an eine Steuervorauszahlung wird durch Zusammenführung der vorab definierten Vorlage mit den Kontaktdaten des Empfängers generiert. Der endgültige Brief kann per E-Mail gesendet, ausgedruckt, als Fax verschickt oder archiviert werden.
 
 ![Systemgesteuerte Korrespondenz](assets/us_cm_generate.png)
 
@@ -116,7 +116,7 @@ Dieses Dokument einer Kündigungsmitteilung ist ein Beispiel für eine typische 
   </tr> 
   <tr> 
    <td>Daten aus Backend-Unternehmenssystemen</td> 
-   <td>Daten, die aus Backend-Unternehmenssystemen bezogen werden. Die Daten werden dynamisch mit der Korrespondenzvorlage kombiniert.</td> 
+   <td>Daten, die aus Backend-Unternehmenssystemen bezogen werden. Die Daten werden dynamisch mit der Korrespondenzvorlage zusammengeführt.</td> 
    <td>Datendatei<br />, die basierend auf einem Datenwörterbuch erstellt wurde</td> 
   </tr> 
   <tr> 
@@ -159,8 +159,8 @@ Analysieren Sie jeden Brief, um die verschiedenen Teile freizulegen, die den Bri
 
 * Die Bedingungen, unter denen Business-Anwenderinnen und -Anwender, etwa bei der Schadensregulierung oder der Sachbearbeitung, Inhalte oder Teile davon im Brief ändern.
 * Szenarien beschreiben das Benutzererlebnis, die Anforderungen und die Vorteile der Brieflösung.
-* Szenarien bieten außerdem die erforderlichen Fertigkeiten und Tools, die Sie für Ihr Projekt benötigen.
-* Empfohlene Vorgehensweisen für die Planung Ihrer Implementierung. ``Allgemeine Übersicht über die Implementierung.
+* Szenarien bieten auch :The erforderlichen Fertigkeiten und Tools, die Sie für Ihr Projekt benötigen.
+* Empfohlene Vorgehensweisen für die Planung Ihrer Implementierung. &grave;&grave;Allgemeine Übersicht über die Implementierung.
 
 ## Vorteile der Analyse {#benefits-of-performing-the-analysis}
 
@@ -384,7 +384,7 @@ Die folgenden Werte in der Tabelle
    <td>Nicht zutreffend</td> 
   </tr> 
   <tr> 
-   <td><strong>Zeit </strong></td> 
+   <td><strong>Zeit</strong></td> 
    <td>Ja</td> 
    <td>Nein</td> 
    <td>Ja</td> 

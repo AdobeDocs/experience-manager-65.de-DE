@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2459'
-ht-degree: 100%
+source-wordcount: '2541'
+ht-degree: 97%
 
 ---
 
@@ -61,7 +61,7 @@ Sie können zwei oder mehr Textzellen zusammenführen, indem Sie die zusammenzuf
 
 Sie können eine Zeile oder Spalte hinzufügen und löschen sowie eine Zeile in einer Tabelle nach oben und unten verschieben.
 
-Um eine Zeile bzw. Spalte hinzuzufügen oder zu löschen oder eine Zeile zu verschieben, klicken Sie auf eine beliebige Zelle in der Zeile bzw. Spalte.  Eine Dropdown-Liste wird jeweils am oberen Rand der Spalte und links neben der Zeile angezeigt. Das obere Menü enthält Optionen zum Hinzufügen bzw. Löschen der Spalte und das Menü links enthält Optionen zum Hinzufügen, Löschen oder Verschieben der Zeile.
+Um eine Zeile bzw. Spalte hinzuzufügen oder zu löschen oder eine Zeile zu verschieben, klicken Sie auf eine beliebige Zelle in der Zeile bzw. Spalte. Eine Dropdown-Liste wird jeweils am oberen Rand der Spalte und links neben der Zeile angezeigt. Das obere Menü enthält Optionen zum Hinzufügen bzw. Löschen der Spalte und das Menü links enthält Optionen zum Hinzufügen, Löschen oder Verschieben der Zeile.
 
 * Der Vorgang „Hinzufügen“ fügt eine Zeile unterhalb der ausgewählten Zeile bzw. eine Spalte rechts von der ausgewählten Spalte hinzu.
 * Der Vorgang „Löschen“ löscht die ausgewählte Zeile bzw. Spalte.
@@ -90,8 +90,8 @@ Im adaptiven Formular können Sie die Daten in einer Tabelle nach einer beliebig
 Die Sortierung kann auf Tabellenspalten angewendet werden, die Folgendes enthalten:
 
 * Statischer Text
-* Datenmodell-Objekteigenschaften
-* Kombination von statischem Text und Datenmodell-Objekteigenschaften
+* Datenmodellobjekt-Eigenschaften
+* Kombination von statischem Text und Datenmodellobjekt-Eigenschaften
 
 Um eine Sortierung auf Tabellenspalten anzuwenden, müssen die Zellen der Tabellenspalten eine der folgenden Komponenten enthalten: Numerisches Feld, numerische Schritte, Datumseingabefeld, Datumsauswahl, Text oder Textfeld.
 
@@ -128,7 +128,7 @@ Sie können den Stil für eine Tabelle definieren, indem Sie den Stilmodus in de
 
 1. Wählen Sie in der Symbolleiste „Seite“, vor „Vorschau“, ![canvas-drop-down](assets/canvas-drop-down.png) > **Stil** aus.
 
-1. Wählen Sie in der Seitenleiste die Tabelle und dann die Bearbeiten-Schaltfläche ![edit_button](assets/edit-button.png) aus.
+1. Wählen Sie in der Seitenleiste die Tabelle aus und klicken Sie auf die Schaltfläche zum Bearbeiten ![edit-button](assets/edit-button.png).
 Die Stileigenschaften werden in der Seitenleiste angezeigt.
 
 ![Anpassen der Stileigenschaften einer Tabelle](assets/style-table.png)
@@ -155,7 +155,7 @@ Zur Laufzeit werden die Schaltflächen **+** und *-* für das Hinzufügen bzw. L
 
 ## Ausdrücke in einer Tabelle {#expressions-in-a-table}
 
-Mithilfe von Tabellen in adaptiven Formularen können Sie Ausdrücke in JavaScript schreiben, um Verhaltensweisen auszulösen (z. B. das Ein- bzw. Ausblenden einer Tabelle oder Zeile, das Addieren aller Zahlen und das Anzeigen der Summe in einer Zelle, das Aktivieren bzw. Deaktivieren einer Zelle und das Überprüfen der Benutzereingabe).  Diese Ausdrücke nutzen Skriptmodell-APIs für adaptive Formulare.
+Mithilfe von Tabellen in adaptiven Formularen können Sie Ausdrücke in JavaScript schreiben, um Verhaltensweisen auszulösen (z. B. das Ein- bzw. Ausblenden einer Tabelle oder Zeile, das Addieren aller Zahlen und das Anzeigen der Summe in einer Zelle, das Aktivieren bzw. Deaktivieren einer Zelle und das Überprüfen der Benutzereingabe). Diese Ausdrücke nutzen Skriptmodell-APIs für adaptive Formulare.
 
 Während Tabellen und Zeilen nur Sichtbarkeitsausdrücke zur Steuerung ihrer Sichtbarkeit basierend auf dem von einem Ausdruck zurückgegebenen Wert unterstützen, unterstützen Zellen die folgenden Ausdrücke:
 
@@ -193,7 +193,7 @@ Desktopansicht einer Tabelle mit dem Layout „Kopfzeilen links“
 
 Mobilgeräteansicht einer Tabelle mit dem Layout „Kopfzeilen links“
 
-### Layout „Reduzierbare Spalten“  {#collapsible-columns-layout}
+### Layout „Reduzierbare Spalten“ {#collapsible-columns-layout}
 
 Im Layout „Reduzierbare Spalten“ werden die Spalten in der Tabelle je nach Gerätegröße ausgeblendet, um eine oder zwei Spalten anzuzeigen, während andere Spalten reduziert werden. Klicken Sie zum Anzeigen der anderen Spalten in der Tabelle auf das Symbol „Reduzieren/Erweitern“.
 
@@ -213,7 +213,7 @@ Erweiterte Spalte einer Tabelle auf einem Mobilgerät
 
 ## Zusammenführen von Daten in einer Tabelle {#merge-data-in-a-table}
 
-Tabellen in adaptiven Formularen ermöglichen es Ihnen, die Tabelle zur Laufzeit mit Daten aus einer XML-Datei aufzufüllen.  Die XML-Datendatei kann sich im lokalen Dateisystem des Computers befinden, auf dem der AEM Forms-Server ausgeführt wird, oder im CRX-Repository.
+Tabellen in adaptiven Formularen ermöglichen es Ihnen, die Tabelle zur Laufzeit mit Daten aus einer XML-Datei aufzufüllen. Die XML-Datendatei kann sich im lokalen Dateisystem des Computers befinden, auf dem der AEM Forms-Server ausgeführt wird, oder im CRX-Repository.
 
 Zum Beispiel soll folgende Zusammenfassungstabelle für Banktransaktionen mit Daten aus einer XML-Datei gefüllt werden.
 
@@ -287,7 +287,7 @@ Die XML-Datei, die Daten im folgenden Format enthält:
 
 In der XML-Beispieldatei werden die Daten für eine Zeile durch die `<Row1>`-Tags definiert, die den Elementnamen für die Zeile in der Tabelle festlegen. Innerhalb des `<Row1>`-Tags werden die Daten für die einzelnen Zellen innerhalb des Tags für dessen Elementnamen definiert (z. B. `<tableItem1>`, `<tableItem2>`, `<tableItem3>` und `<type>`).
 
-Um diese Daten mit der Tabelle zur Laufzeit zusammenzuführen, muss das adaptive Formular, das die Tabelle enthält, auf den absoluten Pfad der XML-Datei zeigen. Dabei muss „wcmmode“ aktiviert sein. Beispiel: Wenn sich das adaptive Formular unter *https://localhost:4502/myForms/bankTransaction.html* und die XML-Datendatei unter *C:/myTransactions/bankSummary.xml* befinden, können Sie die Tabelle mit Daten unter folgender URL abrufen:
+Um diese Daten mit der Tabelle zur Laufzeit zusammenzuführen, muss das adaptive Formular, das die Tabelle enthält, auf den absoluten Pfad der XML-Datei zeigen. Dabei muss „wcmmode“ aktiviert sein. Beispiel: Wenn sich das adaptive Formular unter *https://localhost:4502/myForms/bankTransaction.html* befindet und die XML-Datendatei unter *C:/myTransactions/bankSummary.xml* gespeichert ist, können Sie die Tabelle mit Daten unter folgender URL abrufen:
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 

@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 100%
+source-wordcount: '1098'
+ht-degree: 90%
 
 ---
 
@@ -127,21 +127,21 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Logodatei auf 
 
 1. Klicken Sie auf **Alle speichern**.
 
-   Unter der neuen, von Ihnen erstellten Datei (hier: BenutzerdefiniertesLogo.png) wird die Eigenschaft „jcr:content“ angezeigt.
+   Unter der neuen Datei, die Sie erstellt haben (hier CustomLogo.png), wird die Eigenschaft jcr:content angezeigt.
 
-1. Klicken Sie in der Ordnerstruktur auf „jcr:content“.
+1. Klicken Sie in :content Ordnerstruktur auf jcr. .
 
-   Die Eigenschaften von „jcr:content“ werden angezeigt.
+   Die Eigenschaften :content JCR werden angezeigt.
 
    ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
-1. Doppelklicken Sie auf die Eigenschaft **jcr:data**.
+1. Doppelklicken Sie auf die Eigenschaft **jcr:data**.
 
-   Das Dialogfeld „jcr:data bearbeiten“ wird angezeigt.
+   Das Dialogfeld „JCR:data bearbeiten“ wird angezeigt.
 
-   Klicken Sie jetzt auf den Ordner „newlogo.png“, doppelklicken Sie auf „jcr:content“ (dim-Option) und legen Sie den Typ „nt:resource“ fest. Falls sie nicht vorhanden ist, erstellen Sie zuerst eine Eigenschaft mit dem Namen „jcr:content“.
+   Klicken Sie nun auf den Ordner „newlogo.png“, doppelklicken Sie dann auf „jcr:content&quot; (dim-Option) und legen Sie den Typ „nt:resource&quot; fest. Wenn sie nicht vorhanden ist, erstellen Sie eine Eigenschaft mit dem Namen „jcr:content&quot;.
 
-1. Klicken Sie im Dialogfeld „jcr:data bearbeiten“, auf **Durchsuchen** und wählen Sie die Bilddatei, die Sie als Logo verwenden möchten (hier CustomLogo.png).
+1. Klicken Sie im Dialogfeld „jcr:data bearbeiten“ auf **Durchsuchen** und wählen Sie die Bilddatei aus, die Sie als Logo verwenden möchten (hier CustomLogo.png).
 
    Die unterstützten Bildformate werden vom Browser bestimmt, den Sie für den Zugriff auf AEM Forms verwenden. Alle Browser unterstützen JPEG, GIF und PNG. Weitere Informationen finden Sie in der Browser-spezifischen Dokumentation zu den unterstützten Bildformaten.
 
@@ -166,7 +166,7 @@ Führen Sie die folgenden Schritte aus, um das Stylesheet zum Rendern des Logos 
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner **css** und wählen Sie **Erstellen > Datei erstellen** aus.
    1. Geben Sie im Dialogfeld „Neue Datei“ als Namen des CSS `customcss.css` an (Sie können keinen anderen Dateinamen verwenden) und klicken Sie auf **OK**.
-   1. Fügen Sie den folgenden Code zu der neu erstellten CSS-Datei hinzu. Geben Sie unter „content:url“ im Code den Namen des Bilds ein, das Sie in den imgs-Ordner in CRXDE hochgeladen haben.
+   1. Fügen Sie den folgenden Code zu der neu erstellten CSS-Datei hinzu. Geben :url im Code den Bildnamen an, den Sie in den imgs-Ordner in CRXDE hochgeladen haben.
 
       ```css
       .logo, .logo:after {

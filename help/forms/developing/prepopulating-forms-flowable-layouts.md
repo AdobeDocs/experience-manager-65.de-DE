@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '3478'
-ht-degree: 100%
+source-wordcount: '3513'
+ht-degree: 97%
 
 ---
 
@@ -92,7 +92,7 @@ Die folgende Tabelle beschreibt die Schritte in diesem Diagramm.
  </tbody>
 </table>
 
-Das folgende Diagramm zeigt ein Beispielbestellformular. Die Informationen in der Tabelle können an die Anzahl der Datensätze in den XML-Daten angepasst werden.
+Das folgende Diagramm zeigt ein Beispielbestellformular. Die Informationen in der Tabelle können an die Anzahl der Einträge in den XML-Daten angepasst werden.
 
 ![pf_pf_poform](assets/pf_pf_poform.png)
 
@@ -185,7 +185,7 @@ Jede Datenuntergruppe muss XML-Elemente enthalten, die mit den Feldnamen im Teil
 
 >[!NOTE]
 >
->Wenn Sie versuchen, ein Formular mit einer Datenquelle zu füllen, die sich wiederholende XML-Elemente enthält, und die Option `RenderAtClient` auf `No` setzen, wird nur der erste Datensatz in das Formular eingebunden. Um sicherzustellen, dass alle Datensätze mit dem Formular zusammengeführt werden, setzen Sie `RenderAtClient` auf `Yes`. Für Informationen zur Option `RenderAtClient` siehe [Rendern von Formularen auf dem Client](/help/forms/developing/rendering-forms-client.md).
+>Wenn Sie versuchen, ein Formular mit einer Datenquelle zu füllen, die sich wiederholende XML-Elemente enthält, und die Option `RenderAtClient` auf `No` setzen, wird nur der erste Dateneintrag mit dem Formular zusammengeführt. Um sicherzustellen, dass alle Dateneinträge mit dem Formular zusammengeführt werden, setzen Sie `RenderAtClient` auf `Yes`. Für Informationen zur Option `RenderAtClient` siehe [Rendern von Formularen auf dem Client](/help/forms/developing/rendering-forms-client.md).
 
 >[!NOTE]
 >
@@ -262,7 +262,7 @@ So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms API (J
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
-   * Fügen Sie alle verbleibenden Elemente zum Kopfzeilenelement hinzu, indem Sie den letzten Unterschritt für jedes Feld wiederholen, das im statischen Teil des Formulars erscheint (im XML-Datenquellendiagramm werden diese Felder in Abschnitt A angezeigt. (Siehe [Grundlegendes zu Datenuntergruppen](#understanding-data-subgroups).)
+   * Fügen Sie alle verbleibenden Elemente zum Kopfzeilenelement hinzu, indem Sie den letzten Unterschritt für jedes Feld wiederholen, das im statischen Teil des Formulars erscheint (im Diagramm der XML-Datenquelle werden diese Felder in Abschnitt A angezeigt). (Siehe [Grundlagen zu Datenuntergruppen](#understanding-data-subgroups).)
    * Erstellen Sie das Detailelement der XML-Datenquelle, indem Sie die Methode `createElement` des `Document`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die Methode `createElement`. Wandeln Sie den Rückgabewert in `Element` um. Hängen Sie anschließend das Detailelement an das Stammelement an, indem Sie die Methode `appendChild` des `root`-Objekts aufrufen, und übergeben Sie das Objekt des Detailelements als Argument. Die XML-Elemente, die an das Detailelement angehängt werden, entsprechen dem dynamischen Teil des Formulars. Die folgenden Code-Zeilen zeigen diese Programmlogik:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
@@ -284,21 +284,21 @@ So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms API (J
    * Füllen Sie das Java `ByteArrayOutputStream`-Objekt, indem Sie die Methode `transform` des `javax.xml.transform.Transformer`-Objekts aufrufen und die Objekte `javax.xml.transform.dom.DOMSource` und `javax.xml.transform.stream.StreamResult` übergeben.
    * Erstellen Sie ein Byte-Array und weisen Sie diesem die Größe des `ByteArrayOutputStream`-Objekts zu.
    * Füllen Sie das Byte-Array auf, indem Sie die Methode `toByteArray` des Objekts `ByteArrayOutputStream` aufrufen.
-   * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie seinen Konstruktor aufrufen und ihm das Byte-Array übergeben.
+   * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie dessen Konstruktor verwenden und das Byte-Array übergeben.
 
 1. Rendern von im Voraus ausgefüllten Formularen
 
    Rufen Sie die Methode `renderPDFForm` des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
-   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs angibt, einschließlich der Dateinamenerweiterung.
+   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt.
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt verwenden, das in den Schritten 1 und 2 erstellt wurde.
-   * Ein `PDFFormRenderSpec`-Objekt, in dem Laufzeitoptionen gespeichert werden.
+   * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert.
    * Ein `URLSpec`-Objekt, das URI-Werte enthält, die für den Forms-Service erforderlich sind.
-   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, für den Sie `null` angeben können, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
 
-   Die Methode `renderPDFForm` gibt ein `FormsResult`-Objekt zurück, das einen Formulardatenstrom enthält, der in den Client-Webbrowser geschrieben werden muss.
+   Die Methode `renderPDFForm` gibt ein `FormsResult`-Objekt zurück, das einen Formulardaten-Stream enthält, der in den Client-Webbrowser geschrieben werden muss.
 
-   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Senden eines Formulardatenstroms an den Client-Webbrowser verwendet wird.
+   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Senden eines Formulardaten-Streams an den Client-Webbrowser verwendet wird.
    * Erstellen Sie ein Objekt vom Typ `com.adobe.idp.Document`, indem Sie die Methode `getOutputContent` des `FormsResult`-Objekts aufrufen.
    * Erstellen Sie ein Objekt vom Typ `java.io.InputStream`, indem Sie die Methode `getInputStream` des `com.adobe.idp.Document`-Objekts aufrufen.
    * Erstellen Sie ein Byte-Array und füllen Sie es mit dem Formulardatenstrom, indem Sie die Methode `read` des `InputStream`-Objekts aufrufen und das Byte-Array als Argument übergeben.
@@ -318,7 +318,7 @@ Führen Sie die folgenden Schritte aus, um ein Formular mit einem flexiblen Layo
 
 1. Projektdateien einschließen
 
-   * Erstellen Sie Java-Proxy-Klassen, die die WSDL des Forms-Services verwenden. (Siehe [Erstellen von Java-Proxy-Klassen mit Apache Axis](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis).)
+   * Erstellen Sie Java-Proxy-Klassen, welche die Forms-Dienst-WSDL verwenden. (Siehe [Erstellen von Java-Proxy-Klassen mit Apache Axis](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis).)
    * Schließen Sie die Java-Proxy-Klassen in Ihren Klassenpfad ein.
 
 1. Erstellen einer arbeitsspeicherinternen XML-Datenquelle
@@ -338,7 +338,7 @@ Führen Sie die folgenden Schritte aus, um ein Formular mit einem flexiblen Layo
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
-   * Fügen Sie alle verbleibenden Elemente zum Header-Element hinzu, indem Sie den letzten Unterschritt für jedes Feld wiederholen, das im statischen Teil des Formulars erscheint (im Diagramm der XML-Datenquelle werden diese Felder in Abschnitt A angezeigt). (Siehe [Grundlagen zu Datenuntergruppen](#understanding-data-subgroups).)
+   * Fügen Sie alle verbleibenden Elemente zum Kopfzeilenelement hinzu, indem Sie den letzten Unterschritt für jedes Feld wiederholen, das im statischen Teil des Formulars erscheint (im Diagramm der XML-Datenquelle werden diese Felder in Abschnitt A angezeigt). (Siehe [Grundlagen zu Datenuntergruppen](#understanding-data-subgroups).)
    * Erstellen Sie das Detailelement der XML-Datenquelle, indem Sie die Methode `createElement` des `Document`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die Methode `createElement`. Wandeln Sie den Rückgabewert in `Element` um. Hängen Sie anschließend das Detailelement an das Stammelement an, indem Sie die Methode `appendChild` des `root`-Objekts aufrufen, und übergeben Sie das Objekt des Detailelements als Argument. Die XML-Elemente, die an das Detailelement angehängt werden, entsprechen dem dynamischen Teil des Formulars. Die folgenden Code-Zeilen zeigen diese Anwendungslogik:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
@@ -366,10 +366,10 @@ Führen Sie die folgenden Schritte aus, um ein Formular mit einem flexiblen Layo
 
    Rufen Sie die Methode `renderPDFForm` des `FormsService`-Objekts auf und übergeben Sie die folgenden Werte:
 
-   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs angibt, einschließlich der Dateinamenerweiterung.
-   * Ein `BLOB`-Objekt mit Daten, die mit dem Formular zusammengeführt werden sollen. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das in den Schritten 1 und 2 erstellt wurde.
+   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt.
+   * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das in den Schritten 1 und 2 erstellt wurde.
    * Ein `PDFFormRenderSpecc`-Objekt, das Laufzeitoptionen speichert. Weitere Informationen finden Sie unter [API-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
-   * Ein `URLSpec` -Objekt mit URI-Werten, die für den Forms-Service erforderlich sind.
+   * Ein `URLSpec`-Objekt, das URI-Werte enthält, die für den Forms-Service erforderlich sind.
    * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
    * Ein leeres `com.adobe.idp.services.holders.BLOBHolder`-Objekt, das von der Methode gefüllt wird. Damit wird das wiedergegebene PDF-Formular gespeichert.
    * Ein leeres `javax.xml.rpc.holders.LongHolder`-Objekt, das von der Methode gefüllt wird. (Dieses Argument speichert die Anzahl der Seiten im Formular).

@@ -11,8 +11,8 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 98%
+source-wordcount: '831'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ Um die AEM Forms App-Quelle zu erhalten, führen Sie die folgenden Schritte aus:
 1. Öffnen Sie den [Paket-Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
-1. Öffnen Sie `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in Ihrem Browser, um das Quell-Code-Archiv herunterzuladen.
+1. Um das Quell-Code-Archiv herunterzuladen, öffnen Sie `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in Ihrem Browser.
 Das Quellpaket wird auf Ihr Gerät heruntergeladen.
 
 Die folgende Abbildung zeigt den extrahierten Inhalt von `adobe-lc-mobileworkspace-src-<version>.zip`.

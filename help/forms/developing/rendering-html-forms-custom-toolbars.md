@@ -1,5 +1,5 @@
 ---
-title: Rendern von HTML Forms mit CustomToolbars
+title: Rendern von HTML-Formularen mit CustomToolbars
 description: Verwenden Sie den Forms-Service, um eine Symbolleiste anzupassen, die mit einem HTML-Formular gerendert wird. Sie können ein HTML-Formular mit einer benutzerdefinierten Symbolleiste mithilfe der Java-API und einer Web Service-API rendern.
 contentOwner: admin
 content-type: reference
@@ -12,12 +12,12 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2358'
 ht-degree: 98%
 
 ---
 
-# Rendern von HTML Forms mit CustomToolbars {#rendering-html-forms-with-customtoolbars}
+# Rendern von HTML-Formularen mit CustomToolbars {#rendering-html-forms-with-customtoolbars}
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
 
@@ -155,7 +155,7 @@ Geben Sie außerdem einen gültigen Gebietsschemawert an, indem Sie die `setLoca
 >
 >Bevor Sie ein HTML-Formular rendern, das eine benutzerdefinierte Symbolleiste verwendet, müssen Sie wissen, wie HTML-Formulare gerendert werden. (Siehe [Rendern von Formularen als HTML](/help/forms/developing/rendering-forms-html.md).)
 
-Weitere Informationen zum Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Weitere Informationen über den Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -167,7 +167,7 @@ Um ein HTML-Formular mit einer benutzerdefinierten Symbolleiste zu rendern, füh
 1. Rendern Sie ein HTML-Formular.
 1. Schreiben Sie den Formular-Datenstrom in den Client-Webbrowser.
 
-**Einschließen von Projektdateien**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, schließen Sie die Proxy-Dateien ein.
 
@@ -223,7 +223,7 @@ Rendern eines HTML-Formular mit einer benutzerdefinierten Symbolleiste mithilfe 
 1. Verweisen Sie auf eine benutzerdefinierte fscmenu-XML-Datei
 
    * Erstellen Sie ein `HTMLRenderSpec`-Objekt mithilfe seines Konstruktors.
-   * Um ein HTML-Formular mit einer Symbolleiste zu rendern, rufen Sie die Methode `setHTMLToolbar` des `HTMLRenderSpec`-Objekts auf und übergeben einen `HTMLToolbar`-Auflistungswert. Um beispielsweise eine vertikale HTML-Symbolleiste anzuzeigen, übergeben Sie `HTMLToolbar.Vertical`.
+   * Um ein HTML-Formular mit einer Symbolleiste zu rendern, rufen Sie die Methode `setHTMLToolbar` des `HTMLRenderSpec`-Objekts auf und übergeben einen `HTMLToolbar`-Aufzählungswert. Um beispielsweise eine vertikale HTML-Symbolleiste anzuzeigen, übergeben Sie `HTMLToolbar.Vertical`.
    * Geben Sie den Speicherort der fscmenu-XML-Datei an, indem Sie die `setToolbarURI`-Methode des `HTMLRenderSpec`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den URI-Speicherort der XML-Datei angibt.
    * Legen Sie ggf. den Gebietsschemawert fest, indem Sie die `setLocale`-Methode des `HTMLRenderSpec`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Gebietsschemawert angibt. Der Standardwert ist Englisch.
 
@@ -233,15 +233,15 @@ Rendern eines HTML-Formular mit einer benutzerdefinierten Symbolleiste mithilfe 
 
 1. Rendern Sie ein HTML-Formular
 
-   Rufen Sie die Methode `renderHTMLForm` des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `renderHTMLForm`-Methode des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
-   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Ein `TransformTo`-Auflistungswert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit Dynamic HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
+   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs angibt, einschließlich der Dateinamenerweiterung. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Ein `TransformTo`-Aufzählungswert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit Dynamic HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document`-Objekt.
    * Das `HTMLRenderSpec`-Objekt, das HTML-Laufzeitoptionen speichert.
-   * Ein Zeichenfolgenwert, der den Kopfzeilenwert `HTTP_USER_AGENT` angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+   * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT`-Kopfzeilenwert angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
    * Ein `URLSpec`-Objekt, das URI-Werte speichert, die zum Rendern eines HTML-Formulars erforderlich sind.
-   * Ein `java.util.HashMap`-Objekt, das Dateianhänge speichert. Dies ist ein optionaler Parameter, und Sie können `null` angeben, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, für den Sie `null` angeben können, wenn Sie keine Dateien an das Formular anhängen möchten.
 
    Die `renderHTMLForm`-Methode gibt ein `FormsResult`-Objekt zurück, das einen Formulardatenstrom enthält, der in den Client-Webbrowser geschrieben werden muss.
 
@@ -249,8 +249,8 @@ Rendern eines HTML-Formular mit einer benutzerdefinierten Symbolleiste mithilfe 
 
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie die Methode `getOutputContent` des `FormsResult`-Objekts aufrufen.
    * Ermitteln Sie den Content-Typ des `com.adobe.idp.Document`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
-   * Legen Sie den Content-Typ des `javax.servlet.http.HttpServletResponse`-Objekts fest, indem Sie seine `setContentType`-Methode aufrufen und den Content-Typ des `com.adobe.idp.Document`-Objekts übergeben.
-   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das verwendet wird, um den Formular-Datenstrom in den Client-Webbrowser zu schreiben, indem Sie die `getOutputStream`-Methode des `javax.servlet.http.HttpServletResponse`-Objekts aufrufen.
+   * Legen Sie den Content-Typ des `javax.servlet.http.HttpServletResponse`-Objekts fest, indem Sie seine Methode `setContentType` aufrufen und den Content-Typ des `com.adobe.idp.Document`-Objekts übergeben.
+   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardatenstroms in den Client-Webbrowser verwendet wird, durch Aufrufen der `getOutputStream`-Methode des `javax.servlet.http.HttpServletResponse`-Objekts.
    * Erstellen Sie ein `java.io.InputStream`-Objekt, indem Sie die `getInputStream`-Methode des `com.adobe.idp.Document`-Objekts aufrufen.
    * Erstellen Sie ein Byte-Array und füllen Sie es mit dem Formulardaten-Stream, indem Sie die Methode `read` des `InputStream`-Objekts aufrufen und das Byte-Array als Argument übergeben.
    * Rufen Sie die Methode `write` des `javax.servlet.ServletOutputStream`-Objekts auf, um den Formulardaten-Stream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die Methode `write`.
@@ -279,7 +279,7 @@ Rendern Sie ein HTML-Formular mit einer benutzerdefinierten Symbolleiste mithilf
 1. Verweisen Sie auf eine benutzerdefinierte fscmenu-XML-Datei
 
    * Erstellen Sie ein `HTMLRenderSpec`-Objekt mithilfe seines Konstruktors.
-   * Um ein HTML-Formular mit einer Symbolleiste zu rendern, rufen Sie die Methode `setHTMLToolbar` des `HTMLRenderSpec`-Objekts auf und übergeben einen `HTMLToolbar`-Auflistungswert. Um beispielsweise eine vertikale HTML-Symbolleiste anzuzeigen, übergeben Sie `HTMLToolbar.Vertical`.
+   * Um ein HTML-Formular mit einer Symbolleiste zu rendern, rufen Sie die Methode `setHTMLToolbar` des `HTMLRenderSpec`-Objekts auf und übergeben einen `HTMLToolbar`-Aufzählungswert. Um beispielsweise eine vertikale HTML-Symbolleiste anzuzeigen, übergeben Sie `HTMLToolbar.Vertical`.
    * Geben Sie den Speicherort der fscmenu-XML-Datei an, indem Sie die `setToolbarURI`-Methode des `HTMLRenderSpec`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den URI-Speicherort der XML-Datei angibt.
    * Legen Sie ggf. den Gebietsschemawert fest, indem Sie die `setLocale`-Methode des `HTMLRenderSpec`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Gebietsschemawert angibt. Der Standardwert ist Englisch.
 
@@ -289,16 +289,16 @@ Rendern Sie ein HTML-Formular mit einer benutzerdefinierten Symbolleiste mithilf
 
 1. Rendern Sie ein HTML-Formular
 
-   Rufen Sie die Methode `renderHTMLForm` des `FormsService`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `renderHTMLForm`-Methode des `FormsService`-Objekts auf und übergeben Sie die folgenden Werte:
 
-   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Ein `TransformTo`-Auflistungswert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit Dynamic HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
+   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs angibt, einschließlich der Dateinamenerweiterung. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Ein `TransformTo`-Aufzählungswert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular zu rendern, das mit Dynamic HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
    * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`.
    * Das `HTMLRenderSpec`-Objekt, das HTML-Laufzeitoptionen speichert.
    * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT`-Kopfzeilenwert angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322`). Wenn Sie diesen Wert nicht festlegen möchten, können Sie eine leere Zeichenfolge übergeben.
    * Ein `URLSpec`-Objekt, das URI-Werte speichert, die zum Rendern eines HTML-Formulars erforderlich sind.
    * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dieser Parameter ist optional und Sie können `null` angeben, wenn Sie keine Dateien an das Formular anhängen möchten.
-   * Ein leeres `com.adobe.idp.services.holders.BLOBHolder`-Objekt, das von der `renderHTMLForm`-Methode gefüllt wird. Dieser Parameterwert speichert das gerenderte Formular.
+   * Ein leeres `com.adobe.idp.services.holders.BLOBHolder`-Objekt, das über die `renderHTMLForm`-Methode gefüllt wird. Dieser Parameterwert speichert das gerenderte Formular.
    * Ein leeres `com.adobe.idp.services.holders.BLOBHolder`-Objekt, das von der `renderHTMLForm`-Methode gefüllt wird. Dieser Parameter speichert die XML-Ausgabedaten.
    * Ein leeres `javax.xml.rpc.holders.LongHolder`-Objekt, das von der `renderHTMLForm`-Methode gefüllt wird. Dieses Argument speichert die Anzahl der Seiten im Formular.
    * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das von der `renderHTMLForm`-Methode gefüllt wird. Dieses Argument speichert den Gebietsschemawert.
@@ -309,12 +309,12 @@ Rendern Sie ein HTML-Formular mit einer benutzerdefinierten Symbolleiste mithilf
 
 1. Schreiben des Formulardaten-Streams in den Client-Webbrowser
 
-   * Erstellen Sie ein `FormResult`-Objekt, indem Sie den Wert des Datenelements `value` des `com.adobe.idp.services.holders.FormsResultHolder`-Objekts abrufen.
+   * Erstellen Sie ein `FormResult`-Objekt durch Abrufen des Werts des `value`-Daten-Members des `com.adobe.idp.services.holders.FormsResultHolder`-Objekts.
    * Erstellen Sie ein `BLOB`-Objekt, das Formulardaten enthält, indem Sie die Methode `getOutputContent` des `FormsResult`-Objekts aufrufen.
-   * Ermitteln Sie den Inhaltstyp des `BLOB`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
-   * Legen Sie den Content-Typ des `javax.servlet.http.HttpServletResponse`-Objekts fest, indem Sie seine `setContentType`-Methode aufrufen und den Content-Typ des `BLOB`-Objekts übergeben.
+   * Ermitteln Sie den Content-Typ des `BLOB`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
+   * Legen Sie den Content-Typ des `javax.servlet.http.HttpServletResponse`-Objekts fest, indem Sie seine Methode `setContentType` aufrufen und den Content-Typ des `BLOB`-Objekts übergeben.
    * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardatenstroms in den Client-Webbrowser verwendet wird, durch Aufrufen der `getOutputStream`-Methode des `javax.servlet.http.HttpServletResponse`-Objekts.
-   * Erstellen Sie ein Byte-Array und füllen Sie es durch Aufrufen der `getBinaryData`-Methode des `BLOB`-Objekts. Mit dieser Aufgabe wird dem Byte-Array der Inhalt des `FormsResult`-Objekts zugewiesen.
+   * Erstellen Sie ein Byte-Array und füllen Sie es auf, indem Sie die Methode `getBinaryData` des `BLOB`-Objekts aufrufen. Mit dieser Aufgabe wird dem Byte-Array der Inhalt des `FormsResult`-Objekts zugewiesen.
    * Rufen Sie die Methode `write` des `javax.servlet.http.HttpServletResponse`-Objekts auf, um den Formulardaten-Stream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die Methode `write`.
 
 **Siehe auch**

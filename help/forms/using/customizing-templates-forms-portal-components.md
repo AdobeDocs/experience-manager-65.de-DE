@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 100%
+source-wordcount: '1188'
+ht-degree: 89%
 
 ---
 
@@ -34,7 +34,7 @@ Gehen Sie wie folgt vor, damit Sie eine benutzerdefinierte Vorlage für verschie
 
 ## Erstellen einer benutzerdefinierten Vorlage {#creating-a-nbsp-custom-template}
 
-1. Erstellen eines sling:Folder-Knotens unter /apps
+1. Erstellen Sie einen sling:Folder-Knoten unter /apps
 
    Fügen Sie eine fpContentType-Eigenschaft hinzu. Geben Sie entsprechende Werte für die Eigenschaft abhängig von der Komponente an, für die Sie die benutzerdefinierte Vorlage definieren.
 
@@ -50,10 +50,10 @@ Gehen Sie wie folgt vor, damit Sie eine benutzerdefinierte Vorlage für verschie
 
    >[!NOTE]
    >
-   >Der Titel kann sich von dem Knotennamen des erstellten sling:Folder unterscheiden.
+   >Der Titel kann sich von dem Knotennamen des von :Folder erstellten Sling unterscheiden.
 
    Die folgende Abbildung zeigt die Konfiguration der Komponente „Search &amp; Lister“.
-   ![Erstellen eines sling:Folder](assets/1.png)
+   ![Erstellen eines Sling:Folder](assets/1.png)
 
 1. Erstellen Sie in diesem Ordner eine Datei namens „template.html“, die als benutzerdefinierte Vorlage dienen soll.
 1. Erstellen Sie die benutzerdefinierte Vorlage und verwenden Sie dafür benutzerdefinierte Metadaten wie unten beschrieben.
@@ -88,11 +88,11 @@ Das Formularportal bietet eine Syntax für Platzhalter zur Anzeige von benutzerd
 
 Um einen wiederholbaren Eintrag einzuschließen, konfigurieren Sie den Wert des Attributs **data-repeatable** als **true**.
 
-*Im gezeigten Beispiel sind oben in der benutzerdefinierten Vorlage zwei Div-Elemente vorhanden. Das erste mit der CSS-Klasse „__FP_boxes-container“ fungiert als Containerelement für die aufgelisteten Formulare. Das zweite mit der CSS-Klasse „__FP_boxes“ ist eine Vorlage für die Basiseinheiten, in diesem Fall ein Formular. Das Attribut **data-repeatable**im Div-Element weist den Wert **true**auf.*
+*Im gezeigten Beispiel sind oben in der benutzerdefinierten Vorlage zwei Div-Elemente vorhanden. Das erste mit der CSS-Klasse „__FP_boxes-container“ fungiert als Containerelement für die aufgelisteten Formulare. Das zweite mit der CSS-Klasse „__FP_boxes“ ist eine Vorlage für die Basiseinheiten, in diesem Fall ein Formular. Das Attribut **data-repeatable**&#x200B;im Div-Element weist den Wert **true**&#x200B;auf.*
 
-Jeder Platzhalter verfügt über einen exklusiven, vorkonfigurierten Metadatensatz. Um die benutzerdefinierten Metadaten an einer bestimmten Position im Formular anzuzeigen, fügen Sie die **Eigenschaft ${metadata_prop}** an der entsprechenden Position hinzu.
+Jeder Platzhalter verfügt über einen exklusiven, vorkonfigurierten Metadatensatz. Um die benutzerdefinierten Metadaten an einer bestimmten Position im Formular anzuzeigen, fügen Sie die **${metadata_prop}-Eigenschaft** Ort hinzu.
 
-*Im Beispiel wird die Metadateneigenschaft in mehreren Instanzen verwendet. Sie wird z. B. bei **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**und **path**in der genannten Weise verwendet.*
+*Im Beispiel wird die Metadateneigenschaft in mehreren Instanzen verwendet. Sie wird z. B. bei **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**&#x200B;und **path**&#x200B;in der genannten Weise verwendet.*
 
 ## Vorkonfigurierte Metadaten {#out-of-the-box-metadata}
 
@@ -120,10 +120,10 @@ Unterstützung für Lokalisierung, Sortierung und Verwendung von Konfigurationse
 1. **Lokalisierungsunterstützung**: Zur Lokalisierung von beliebigem statischem Text verwenden Sie das Attribut `${localize-YOUR_TEXT}` und stellen Sie den lokalisierten Wert bereit, sofern er nicht bereits vorhanden ist.
    *Im genannten Beispiel werden die Attribute `${localize-Apply}` und `${localize-Download}` verwendet, um den Text „Apply“ und „Download“ zu lokalisieren.*
 
-1. **Unterstützung für die Sortierung**: Klicken Sie auf das HTML-Element, um die Suchergebnisse zu sortieren. Um eine Sortierung in ein Tabellen-Layout einzufügen, fügen Sie der jeweiligen Tabellenkopfzeile das Attribut „data-sortKey“ hinzu. Fügen Sie außerdem seinen Wert als die Metadaten hinzu, nach denen Sie sortieren möchten.
-So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header „data-sortKey“ „title“. Klicken Sie auf die Überschrift, um die Werte in einer bestimmten Spalte zu sortieren.
+1. **Unterstützung für die Sortierung**: Klicken Sie auf das HTML-Element, um die Suchergebnisse zu sortieren. Um eine Sortierung in einem Tabellenlayout zu implementieren, fügen Sie dem jeweiligen Tabellenkopf das Attribut „data-sortKey“ hinzu. Fügen Sie außerdem seinen Wert als die Metadaten hinzu, nach denen Sie sortieren möchten.
+Beispielsweise lautet für die Kopfzeile „Title“ in der Rasteransicht der Wert der Kopfzeile „data-sortKey“ „title“. Klicken Sie auf die Überschrift, um die Werte in einer bestimmten Spalte zu sortieren.
 
-1. **Verwenden von Konfigurationseigenschaften**: Die Komponente „Search &amp; Lister“ verfügt über mehrere Konfigurationen, die Sie in der Benutzeroberfläche verwenden können. Verwenden Sie z. B. das Attribut `${config-htmlLinkText}`, um im Bearbeitungsdialogfeld gespeicherten HTML-QuickInfo-Text anzuzeigen.  **Verwenden Sie analog dazu für PDF-QuickInfo-Text das Attribut** `${config-pdfLinkText}`.
+1. **Verwenden von Konfigurationseigenschaften**: Die Komponente „Search &amp; Lister“ verfügt über mehrere Konfigurationen, die Sie in der Benutzeroberfläche verwenden können. Verwenden Sie z. B. das Attribut `${config-htmlLinkText}`, um im Bearbeitungsdialogfeld gespeicherten HTML-QuickInfo-Text anzuzeigen. **Verwenden Sie analog dazu für PDF-QuickInfo-Text das Attribut** `${config-pdfLinkText}`.
 
 ### Komponente „Link“ {#link-component}
 
@@ -158,13 +158,13 @@ So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header
 
 **A**. Container-Element
 
-**B.** „path“-Metadaten mit einer festen Hierarchie zum Abruf der für jedes Formular gespeicherten Miniatur.
+**B.** „path“-Metadaten mit einer festen Hierarchie zum Abrufen der für jedes Formular gespeicherten Miniaturansicht.
 
 **C.** Datenwiederholbares Attribut für den Vorlagenbereich jedes Formulars
 
-**D.** Zu lokalisierende Zeichenfolge„Apply“ 
+**D.** Zu lokalisierende Zeichenfolge„Apply“
 
-**E.** Verwenden der Konfigurationseigenschaft „pdfLinkText“ 
+**E.** Verwenden der Konfigurationseigenschaft „pdfLinkText“
 
 **F.** Verwenden der Metadaten „pdfUrl“
 

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '10836'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '10923'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 Sie können die Dienstverwaltungsseite verwenden, um Einstellungen für jeden der Dienste zu konfigurieren, die Bestandteil von AEM Forms sind. Die verfügbaren Einstellungen sind vom zu konfigurierenden Dienst abhängig.
 
 1. Klicken Sie in der Administration-Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
-1. Beenden Sie den Dienst, bevor Sie ihn ändern. (Siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
+1. Stoppen Sie den Dienst, bevor Sie ihn ändern. (Siehe [Starten und Stoppen von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
 1. Klicken Sie auf den Namen des Dienstes, der konfiguriert werden soll.
 1. Wenn der Dienst über eine Registerkarte „Konfiguration“ verfügt, ändern Sie dort seine Einstellungen. Weitere Informationen finden Sie in der Liste mit Links unten.
 
@@ -42,7 +42,7 @@ Sie können die Dienstverwaltungsseite verwenden, um Einstellungen für jeden de
 
 ## Einstellungen des Audit Workflow-Dienstes {#audit-workflow-service-settings}
 
-Workbench gibt Ihnen die Möglichkeit, Prozessinstanzen während der Ausführung zur Laufzeit aufzuzeichnen und anschließend wiederzugeben, um das Verhalten des Prozesses zu untersuchen. (Siehe [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de).) Zum Einsparen von Speicherplatz im Dateisystem des Formular-Servers können Sie die Menge der zu speichernden Prozessaufzeichnungsdaten begrenzen. Sie können die folgenden Eigenschaften des Audit Workflow-Dienstes (`AuditWorkflowService`) konfigurieren:
+Workbench gibt Ihnen die Möglichkeit, Prozessinstanzen während der Ausführung zur Laufzeit aufzuzeichnen und anschließend wiederzugeben, um das Verhalten des Prozesses zu untersuchen. (Siehe [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de).) Um im Dateisystem des Forms-Servers Speicherplatz zu sparen, können Sie die Menge der gespeicherten Prozessaufzeichnungsdaten begrenzen. Sie können die folgenden Eigenschaften des Audit Workflow-Dienstes (`AuditWorkflowService`) konfigurieren:
 
 **maxNumberOfRecordingInstances**: Die maximale Anzahl von zu speichernden Aufzeichnungen. Wenn die maximale Anzahl gespeichert ist, wird beim Erstellen einer neuen Aufzeichnung die älteste Aufzeichnung aus dem Dateisystem gelöscht. Diese Eigenschaft ist nützlich, wenn Sie dazu neigen, viele Aufzeichnungen zu erstellen, und alte Aufzeichnungen automatisch löschen möchten. Der Standardwert ist 50.
 
@@ -68,11 +68,11 @@ Folgende Einstellungen sind für den Dienst für Barcode-Formulare verfügbar:
 
 **Basisdateipfad**: Der Dateipfad, in dem die Parameter für die Batch-Eingabe und die Ausgabedatei für die Vorgänge „Run XML File Job“ und „Run Flat File Job“ aufgelöst werden. In Cluster-Konfigurationen muss der Basisdateipfad ein freigegebener Dateisystemspeicherort sein, auf den alle Cluster-Knoten Lese-/Schreibzugriff haben.
 
-**Datenquellenname**: Der Name der Datenquelle, die zur Pflege von Status- und Verlaufsinformationen zu Batch-Verarbeitungsvorgängen verwendet wird. Die angegebene Datenquelle muss globale (XA-)Transaktionen unterstützen.
+**Datenquellenname**: Der Name der Datenquelle, die zur Pflege von Status- und Verlaufsinformationen zu Batch-Verarbeitungsaufträgen verwendet wird. Die angegebene Datenquelle muss globale (XA-)Transaktionen unterstützen.
 
 ## Einstellungen für Central Migration Bridge-Dienst (veraltet) {#central-migration-bridge-service-settings}
 
-Der Central Migration Bridge-Dienst (`CentralMigrationBridge`) ruft eine Untergruppe von Funktionen aus Adobe Central Pro Output Server (Central-Funktionen) auf, zu der die Befehle JFMERGE, JFTRANS und XMLIMPORT gehören. Mit den Vorgängen des Central Migration Bridge-Dienstes können Sie die folgenden Central-Assets in AEM-Formularen wiederverwenden:
+Der Central Migration Bridge-Dienst (`CentralMigrationBridge`) ruft eine Teilmenge von Funktionen aus Adobe Central Pro Output Server (Central-Funktionen) auf, zu der die Befehle JFMERGE, JFTRANS und XMLIMPORT gehören. Mit den Vorgängen des Central Migration Bridge-Dienstes können Sie die folgenden Central-Assets in AEM-Formularen wiederverwenden:
 
 * Vorlagendesign (*.ifd)
 * Ausgabevorlagen (*.mdf)
@@ -86,7 +86,7 @@ Folgende Einstellung ist für den Central Migration Bridge-Dienst verfügbar:
 
 ## Einstellungen des Content Repository Connector for EMC Documentum-Dienstes {#content-repository-connector-for-emc-documentum-service-settings}
 
-Der Content Repository Connector für EMC Documentum-Dienst (`EMCDocumentumContentRepositoryConnector`) ermöglicht das Erstellen von Prozessen, die mit in einem Documentum-Repository gespeicherten Inhalten interagieren. 
+Der Content Repository Connector für EMC Documentum-Dienst (`EMCDocumentumContentRepositoryConnector`) ermöglicht das Erstellen von Prozessen, die mit in einem Documentum-Repository gespeicherten Inhalten interagieren.
 
 Folgende Einstellung ist für den Content Repository Connector für EMC Documentum-Dienst verfügbar:
 
@@ -124,7 +124,7 @@ Folgende Einstellungen sind für den Convert PDF-Dienst verfügbar:
 
 **Neu Erforderlich**: Es wird immer ein Transaktionskontext erstellt. Wenn bereits ein aktiver Transaktionskontext vorhanden ist, wird dieser ausgesetzt.
 
-**Transaktionszeitlimit (in Sek.)**: Die Anzahl der Sekunden, die ein zugrunde liegender Transaktionsanbieter wartet, bevor eine Transaktion rückgängig gemacht wird, die diesen Vorgang beinhaltet. Dieser Wert wird ignoriert, wenn ein vorhandener Transaktionskontext weitergegeben wird. Der Standardwert ist 180.
+**Transaktions-Timeout (in Sek.)**: Die Anzahl der Sekunden, die ein zugrunde liegender Transaktionsanbieter wartet, bevor eine Transaktion rückgängig gemacht wird, die diesen Vorgang beinhaltet. Dieser Wert wird ignoriert, wenn ein vorhandener Transaktionskontext weitergegeben wird. Der Standardwert ist 180.
 
 **Schwellenwert-Auflösung für Glättung (in dpi)**: Die Bildauflösung, unterhalb derer die Glättung (bzw. Anti-Aliasing) auf Text, Strichgrafiken und Bilder angewendet wird, wenn Sie die Optionen „Glättung anwenden auf“ für diese Elemente ausgewählt haben.
 
@@ -164,7 +164,7 @@ Neue Einstellungen können über die Benutzeroberfläche von PDF Generator erste
 >
 >Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Content-Management-System, das mit LiveCycle installiert wird. Es ermöglicht Benutzenden, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe [Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/de/support/products/enterprise/eol/eol_matrix.html).
 
-Der Document Management-Dienst (`DocumentManagementService`) ermöglicht, dass Prozesse die von Content Services (nicht mehr unterstützt) bereitgestellten Inhaltsverwaltungsfunktionen verwenden können. Document Management-Vorgänge bieten grundlegende Aufgaben, die zum Verwalten von Bereichen und Inhalten im Content-Management-System erforderlich sind. Beispiele für solche Aufgaben sind das Kopieren, Löschen, Verschieben, Abrufen und Speichern von Inhalten, das Erstellen von Bereichen und Zuordnungen sowie das Abrufen und Festlegen von Inhaltsattributen.
+Der Document Management-Dienst (`DocumentManagementService`) ermöglicht, dass Prozesse die von Content Services (nicht mehr unterstützt) bereitgestellten Content-Management-Funktionen verwenden können. Document Management-Vorgänge bieten grundlegende Aufgaben, die zum Verwalten von Bereichen und Inhalten im Content-Management-System erforderlich sind. Beispiele für solche Aufgaben sind das Kopieren, Löschen, Verschieben, Abrufen und Speichern von Inhalten, das Erstellen von Bereichen und Zuordnungen sowie das Abrufen und Festlegen von Inhaltsattributen.
 
 Folgende Einstellungen sind für den Document Management-Dienst verfügbar:
 
@@ -214,7 +214,7 @@ Die folgenden Einstellungen sind für den E-Mail-Dienst verfügbar.
 
 ## Einstellungen des Encryption-Dienstes {#encryption-service-settings}
 
-Der Encryption-Dienst (`EncryptionService`) ermöglicht das Ver- und Entschlüsseln von Dokumenten. Wenn ein Dokument verschlüsselt wird, ist sein Inhalt unlesbar. Eine autorisierte Person kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, muss der Benutzer das Kennwort zum Öffnen angeben, damit das Dokument in Adobe Reader oder Adobe Acrobat angezeigt werden kann. Ist ein PDF-Dokument mit einem Zertifikat verschlüsselt, muss die Benutzerin bzw. der Benutzer das PDF-Dokument mit dem öffentlichen Schlüssel entschlüsseln, der dem Zertifikat (privater Schlüssel) entspricht, das zur Verschlüsselung des PDF-Dokuments verwendet wurde.
+Der Encryption-Dienst (`EncryptionService`) ermöglicht das Ver- und Entschlüsseln von Dokumenten. Wird ein Dokument verschlüsselt, ist sein Inhalt nicht mehr lesbar. Eine autorisierte Person kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, muss der Benutzer das Kennwort zum Öffnen angeben, damit das Dokument in Adobe Reader oder Adobe Acrobat angezeigt werden kann. Ist ein PDF-Dokument mit einem Zertifikat verschlüsselt, muss die Benutzerin bzw. der Benutzer das PDF-Dokument mit dem öffentlichen Schlüssel entschlüsseln, der dem Zertifikat (privater Schlüssel) entspricht, das zur Verschlüsselung des PDF-Dokuments verwendet wurde.
 
 Die folgenden Einstellungen sind für den Verschlüsselungsdienst verfügbar.
 
@@ -268,8 +268,8 @@ Folgende Einstellungen sind für den Generate PDF-Dienst verfügbar:
 
 **Acrobat-basierte AutoCAD-Konvertierungen aktivieren (nur Windows):** Wenn diese Einstellung aktiviert ist, verwendet der Generate PDF-Dienst Acrobat für alle Konvertierungen von DWG in PDF. Diese Einstellung ist nur sinnvoll, wenn AutoCAD nicht auf dem Server installiert ist oder wenn der AutoCAD-Konvertierungsmechanismus nicht in der Lage ist, Dateien erfolgreich zu konvertieren.
 
-**Reguläre Ausdrücke zum Auffinden nicht zulässiger
-Sonderzeichen in Benutzernamen (nur Windows)**: Gibt Zeichen an, welche die Vorgänge zum Erstellen und Optimieren von PDF-Dateien beeinträchtigen, wenn die Zeichen im Benutzernamen enthalten sind.
+**Reguläre Ausdrücke zum Auffinden verbotener Sonderzeichen
+Zeichen im Benutzernamen (nur Windows):** Gibt Zeichen an, die den Export PDF- und PDF-Optimierungsvorgang beeinträchtigen, wenn die Zeichen im Benutzernamen enthalten sind.
 
 **ImageToPDF-Pool-Größe**: Die Pool-Größe des standardmäßigen (reinen Java) Bild-zu-PDF-Konverters im Generate PDF-Service. Mit dieser Einstellung steuern Sie die maximale Anzahl gleichzeitiger „Bild in PDF“-Konvertierungen, die der Generate PDF-Dienst ausführen kann. Der Standardwert dieser Einstellung (empfohlen für Einzelprozessorsysteme) ist 3, wobei der Wert für Multiprozessorsysteme erhöht werden kann.
 
@@ -299,7 +299,7 @@ Sonderzeichen in Benutzernamen (nur Windows)**: Gibt Zeichen an, welche die Vorg
 
 Beim Erstellen eines Guides werden einige Ressourcen, wie z. B. die Guide-Definition, in den Guide eingebettet. Die Ressourcen können auch als Verweise auf Anwendungs-Assets vorhanden sein, die lokal oder auf dem AEM-Formular-Server gespeichert sind. Der Guide enthält keine Daten und die Werte für den Absendeort und die Eingaben sind nicht für alle externen Umgebungen geeignet.
 
-In den meisten Fällen reichen die standardmäßigen Render-Dienste für Guides aus, um einen Guide für die Verwendung in Workspace oder anderen externen Umgebungen vorzubereiten. (In der Ansicht „Services“ ist in Workbench der standardmäßige Service Guides (System)/Processes/Render Guide - 1.0.) Mit dem Guide Utilities-Dienst (`GuidesUtility`) können Sie, sofern erforderlich, einen benutzerdefinierten Prozess zum Rendern eines Guides erstellen.
+In den meisten Fällen reichen die standardmäßigen Render-Dienste für Guides aus, um einen Guide für die Verwendung in Workspace oder anderen externen Umgebungen vorzubereiten. (In der Ansicht „Services“ ist in Workbench der standardmäßige Service Guides (System)/Processes/Render Guide - 1.0.) Mit dem Guide Utilities-Dienst (`GuidesUtility`) können Sie, sofern erforderlich, einen benutzerdefinierten Prozess zum Wiedergeben eines Guides erstellen.
 
 Mithilfe der Guide Utilities-Vorgänge können Sie einem Prozess die folgenden Guide-Rendering-Aufgaben hinzufügen:
 
@@ -320,7 +320,7 @@ Die Standardwerte für den Guide Utilities-Dienst unterstützen die meisten Anwe
 
 **collateralExpiryInSeconds**: Das Intervall in Sekunden, nach dem eine Anforderung für einen Zusatz von einem Client abläuft. Der Standardwert ist 315576000.
 
-**mismatchExpiryInSeconds**: Das Intervall in Sekunden, nach dem eine Anforderung für einen Zusatz von einem Client abläuft, wenn das eTag (Entity Tag) nicht übereinstimmt. (Ein eTag ist eine HTTP-Antwortkopfzeile.) Der Standardwert ist 1.
+**mismatchExpiryInSeconds**: Das Intervall in Sekunden, nach dem eine Anforderung für einen Zusatz von einem Client abläuft, wenn das eTag (Entity Tag) nicht übereinstimmt. (Ein eTag ist eine HTTP-Antwort-Kopfzeile.) Der Standardwert ist 1.
 
 **guideContext**: Der Kontextstamm des Web-Programms Guides. Stimmt mit dem in der Guides-Webanwendung festgelegten Wert überein. Die Standardeinstellung ist /Guides/.
 
@@ -340,7 +340,7 @@ Die Standardwerte für den Guide Utilities-Dienst unterstützen die meisten Anwe
 
 Das Rendern eines Guides in einem Server-Cluster, der keine Sticky-Sitzungen verwendet, schlägt mit einer NullPointerException fehl. Eine Guides-Anfrage nutzt sichere URLs, die standardmäßig für den Server, auf dem sie generiert werden, eindeutig sind. In einem Cluster, der Sticky-Sitzungen verwendet, werden nach dem Eintreffen einer Anfrage bei einem Knoten im Cluster alle nachfolgenden Anfragen für die Sitzung oder die Benutzenden ausschließlich auf diesen Server weitergeleitet. In dem Fall ist alles in Ordnung. In einem Cluster, der keine Sticky-Sitzungen verwendet, können nachfolgende Anfragen auf einen beliebigen Server im Cluster treffen. Wenn der Server, an den die Anfragen gesendet werden, nicht der Original-Server ist, kann die sichere URL nicht aufgelöst werden.
 
-Wenn Sie Guides in einem Server-Cluster verwenden, der keine Sticky-Sitzungen verwendet, stellen Sie den macKeySeed-Wert für den GuidesUtility-Service ein, halten Sie anschließend den Cluster an und starten Sie ihn wieder. 
+Wenn Sie Guides in einem Server-Cluster verwenden, der keine Sticky-Sitzungen verwendet, stellen Sie den macKeySeed-Wert für den GuidesUtility-Service ein, halten Sie anschließend den Cluster an und starten Sie ihn wieder.
 
 Der macKeySeed-Wert ist der Seed-Wert für den Zufallszahlengenerator, der zum Generieren der sicheren URLs verwendet wird. Wenn Sie diesen Wert festlegen, initialisiert jeder Cluster-Knoten den Zufallszahlengenerator auf die gleiche Weise und hat Zugriff auf dieselben sicheren URLs. Sie können eine willkürliche Zeichenfolge für diesen Seed-Wert verwenden.
 
@@ -388,9 +388,9 @@ Folgende Einstellungen sind für den JMS-Dienst verfügbar:
 
 **Connection Password:** Das Kennwort, das dem unter „Benutzername für Verbindung“ angegebenen Benutzernamen zugeordnet ist. Der Standardwert ist guest.
 
-**Other Properties:** Paare aus Eigenschaftenname und -wert, die an den JNDI-Service-Anbieter übergeben werden können. Diese Eigenschaften sind von der Implementierung und Konfiguration des verwendeten Anbieters abhängig. 
+**Other Properties:** Paare aus Eigenschaftenname und -wert, die an den JNDI-Service-Anbieter übergeben werden können. Diese Eigenschaften sind von der Implementierung und Konfiguration des verwendeten Anbieters abhängig.
 
-Die Paare aus Eigenschaftenname und -wert werden jeweils durch ein Semikolon **;** getrennt. Der folgende Text zeigt beispielsweise den Wert, der für zwei Eigenschaften namens „name1“ und „name2“ mit den Werten „value1“ und „value2“ angegeben wird: 
+Die Paare aus Eigenschaftenname und -wert werden jeweils durch ein Semikolon **;** getrennt. Der folgende Text zeigt beispielsweise den Wert, der für zwei Eigenschaften namens „name1“ und „name2“ mit den Werten „value1“ und „value2“ angegeben wird:
 
 `name1=value1;name2=value2`
 
@@ -480,9 +480,9 @@ Folgende Einstellungen sind für den Output-Dienst verfügbar.
 
 **Neu Erforderlich**: Es wird immer ein Transaktionskontext erstellt. Wenn bereits ein aktiver Transaktionskontext vorhanden ist, wird dieser ausgesetzt.
 
-**Transaktionszeitlimit (in Sek.)**: Die Anzahl der Sekunden, die der zugrunde liegende Transaktionsanbieter wartet, bevor eine Transaktion rückgängig gemacht wird, die diesen Vorgang beinhaltet. Dieser Wert wird ignoriert, wenn ein vorhandener Transaktionskontext weitergegeben wird.
+**Transaktions-Timeout (in Sek.)**: Die Anzahl der Sekunden, die der zugrunde liegende Transaktionsanbieter wartet, bevor eine Transaktion rückgängig gemacht wird, die diesen Vorgang beinhaltet. Dieser Wert wird ignoriert, wenn ein vorhandener Transaktionskontext weitergegeben wird.
 
-Bei der Verarbeitung großer Datendateien oder beim Betrieb auf einem ausgelasteten Server kann es erforderlich sein, das Zeit-Limit für den Output-Dienst zu erhöhen. Um den Zeit-Limit-Wert zu ändern, stellen Sie sicher, dass die Hardware-Server über ausreichend Speicher verfügen und dass der Speicher für den Java Application Server-Heap verfügbar ist. Der Standardwert ist `180`.
+Bei der Verarbeitung großer Datendateien oder beim Betrieb auf einem ausgelasteten Server kann es erforderlich sein, den Timeout für den Output-Dienst zu erhöhen. Um den Zeit-Limit-Wert zu ändern, stellen Sie sicher, dass die Hardware-Server über ausreichend Speicher verfügen und dass der Speicher für den Java Application Server-Heap verfügbar ist. Der Standardwert ist `180`.
 
 ## Einstellungen des PDFG Config-Dienstes {#pdfg-config-service-settings}
 
@@ -494,9 +494,9 @@ Folgende Einstellungen sind für den PDFG Config-Dienst (`PDFGConfigService`) ve
 
 **PS-Startdatei**: Der Name der für Adobe Acrobat Distiller erforderlichen Startdatei. Der Standardwert ist example.ps.
 
-**Konvertierungszeitlimit für Server:** Das maximale Zeitlimit für die Auftragskonvertierung (in Sekunden) für den Generate PDF-Service und den Distiller-Service. Diese Einstellung beschränkt den maximalen Konvertierungstimeout-Wert, der in der Datei „config.xml“ sowie auf den Administration Console-Seiten für PDF Generator angegeben werden kann. Der Standardwert ist 270.
+**Konvertierungs-Timeout für Server:** Der Timeout für die Auftragskonvertierung (in Sekunden) für den Generate PDF-Service und den Distiller-Service. Diese Einstellung beschränkt den maximalen Konvertierungstimeout-Wert, der in der Datei „config.xml“ sowie auf den Administration Console-Seiten für PDF Generator angegeben werden kann. Der Standardwert ist 270.
 
-**Globales Zeitlimit für Server**: Bei der Durchführung von PDF-Konvertierungen berücksichtigt ein Formular-Server dieses Zeitlimit. Konfigurieren Sie den Timeoutwert, um das Problem zu lösen.
+**Globaler Timeout für Server**: Bei der Durchführung von PDF-Konvertierungen berücksichtigt ein Formular-Server diesen Timeout. Konfigurieren Sie den Timeoutwert, um das Problem zu lösen.
 
 **Auftragsoptionenpräfix**: Ein Präfix, das vom Generate PDF-Service verwendet wird, um den Auftragsoptionendateien, die vorübergehend für die Verwendung durch Acrobat Distiller erstellt werden, eine kurze Zeichenfolge voranzustellen. Der Standardwert ist pdfg.
 
@@ -516,7 +516,7 @@ Der Standardwert von „PDFG-Bereinigungsprüfung (Sekunden)“ ist `43200` (12 
 
 **Standardgebietsschema**: Wird zum Außerkraftsetzen des Standardgebietsschemas (Land und Sprache) für den Server verwendet, auf dem der Generate PDF-Service bereitgestellt wird. Wenn dieser Parameter nicht angegeben ist, wird das Standardgebietsschema über das Betriebssystem ermittelt, unter dem der Dienst bereitgestellt ist. Dieser Parameter steuert die Sprache, in der die Fehlermeldungen an die APIs zurückgegeben werden.
 
-## Einstellungen des Data Services-Dienstes für den Arbeitsablauf für Formulare {#forms-workflow-data-services-service-settings}
+## Einstellungen des Data Services-Dienstes für den Workflow für Formulare {#forms-workflow-data-services-service-settings}
 
 Die folgenden Dienste erweitern Data Services und stellen Assembler bereit, die Workspace verwendet, um mit dem Server zu kommunizieren. Ändern Sie die Konfigurationsoptionen für diese Dienste nur, wenn Adobe Support Sie dazu auffordert. Diese Dienste sind nicht für den direkten Zugriff vorgesehen:
 
@@ -566,19 +566,23 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar.
 
 **Widerrufsinformationen beim Zertifizieren einbetten:** Gibt an, ob die Widerrufsinformationen beim Zertifizieren des PDF-Dokuments eingebettet werden. Der Standardwert lautet false.
 
-**Einbetten von Sperrinformationen für alle Zertifikate während der Signierung/Zertifizierung erzwingen:** Gibt an, ob ein Signierungs- oder Zertifizierungsvorgang abgebrochen werden soll, wenn keine gültigen Sperrinformationen für alle Zertifikate eingebettet sind. Beachten Sie, dass ein Zertifikat, das keine Zertifikatsperrlisten- oder Online-Zertifikatstatusprotokoll-Informationen enthält, als gültig angesehen wird, auch wenn keine Sperrinformationen abgerufen werden. Der Standardwert lautet false.
+**Einbetten von Sperrinformationen für alle Zertifikate erzwingen
+Während der Signierung/Zertifizierung** Gibt an, ob ein Signierungs- oder Zertifizierungsvorgang fehlschlägt, wenn keine gültigen Sperrinformationen für alle Zertifikate eingebettet sind. Beachten Sie, dass ein Zertifikat, das keine Zertifikatsperrlisten- oder Online-Zertifikatstatusprotokoll-Informationen enthält, als gültig angesehen wird, auch wenn keine Sperrinformationen abgerufen werden. Der Standardwert lautet false.
 
 **Reihenfolge der Sperrüberprüfungen:** Gibt die Reihenfolge der Sperrüberprüfungen an, wenn das Prüfen über die Mechanismen sowohl für Zertifikatsperrlisten (CRL) als auch für das Online-Zertifikatstatusprotokoll (OCSP) möglich ist. Der Standardwert ist OCSPFirst.
 
 **Maximale Größe der archivierten Sperrinformationen:** Die maximale Größe der archivierten Sperrinformationen in KB. AEM Forms versucht, so viele Sperrinformationen wie möglich zu speichern, ohne diesen Grenzwert zu überschreiten. Der Standardwert lautet 10 KB.
 
-**Unterstützen von Signaturen, die mit Pre-Release-Builds von Adobe-Produkten erstellt wurden:** Wenn diese Option aktiviert ist, wird eine Signatur, die mit einem Pre-Release-Build eines Adobe-Produkts erstellt wurde, trotzdem ordnungsgemäß validiert. Der Standardwert lautet false.
+**Unterstützen von Signaturen, die aus Pre-Release-Builds von erstellt wurden
+Adobe-Produkte** Wenn diese Option aktiviert ist, wird eine Signatur, die mit einer Vorabversion von Adobe-Produkten erstellt wurde, ordnungsgemäß validiert. Der Standardwert lautet false.
 
 **Option Zeitpunkt für die Überprüfung:** Gibt den Zeitpunkt für die Überprüfung des Zertifikats eines Signierers an. Der Standardwert ist „Secure Time Else Current Time“.
 
-**In Signatur archivierte Sperrinformationen für die Validierung verwenden:** Gibt an, ob die in der Signatur archivierten Sperrinformationen zur Sperrprüfung verwendet werden sollen. Der Standardwert lautet true.
+**In Signatur archivierte Sperrinformationen für verwenden
+Validierung:** Gibt an, ob die mit der Signatur archivierten Sperrinformationen zur Sperrprüfung verwendet werden sollen. Der Standardwert lautet true.
 
-**Verwendung der im Dokument gespeicherten Validierungsinformationen für die Validierung von Signaturen:** Wenn diese Option aktiviert ist, werden die im Dokument eingebetteten Validierungsinformationen (einschließlich Sperr- und Zeitstempelinformationen) zum Validieren von Signaturen verwendet. Der Standardwert lautet true.
+**Verwendung der im Dokument gespeicherten Validierungsinformationen für
+Validierung von Signaturen:** diese Option aktiviert ist, werden die im Dokument eingebetteten Validierungsinformationen (einschließlich Sperr- und Zeitstempelinformationen) zum Validieren von Signaturen verwendet. Der Standardwert lautet true.
 
 **Maximale zulässige Anzahl verschachtelter Überprüfungssitzungen:** Die maximale Anzahl verschachtelter Überprüfungssitzungen, die zulässig ist. AEM Forms verhindert mithilfe dieses Wertes die Entstehung einer Endlosschleife bei der Überprüfung der OCSP- bzw. Zertifikatsperrlisten-Signiererzertifikate, wenn das OCSP- bzw. Zertifikatsperrlistenzertifikat nicht ordnungsgemäß eingerichtet ist. Der Standardwert ist 10.
 
@@ -598,9 +602,9 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar.
 
 **Obergrenze für Downloads:** Die maximal zulässige Datenmenge in MB, die pro Verbindung empfangen werden kann. Der Mindestwert ist 1 MB, der Höchstwert 1.024 MB. Der Standardwert lautet 16 MB.
 
-**Zeitüberschreitung der Verbindung:** Gibt die maximale Zeit in Sekunden an, die gewartet werden soll, bevor eine neue Verbindung aufgebaut wird. Der Mindestwert ist 1, der Höchstwert 300. Der Standardwert ist 5.
+**Zeitüberschreitung der Verbindung:** Gibt die maximale Zeit in Sekunden an, die gewartet werden soll, bevor eine neue Verbindung aufgebaut wird. Der Mindestwert ist 1, der Höchstwert 300. Der Standardwert ist 5.
 
-**Socket-Zeitüberschreitung:** Die maximale Wartezeit, in Sekunden, bevor eine Socket-Zeitüberschreitung (beim Warten auf eine Datenübertragung) auftritt. Der Mindestwert ist 1, der Höchstwert 3600. Der Standardwert ist 30.
+**Socket-Zeitüberschreitung:** Der Timeout, in Sekunden, bevor eine Socket-Zeitüberschreitung (beim Warten auf eine Datenübertragung) auftritt. Der Mindestwert ist 1, der Höchstwert 3.600. Der Standardwert ist 30.
 
 ### Pfadüberprüfungsoptionen {#path-validation-options}
 
@@ -610,7 +614,7 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar.
 
 **Richtlinienzuordnung unterbinden:** Gibt an, ob Richtlinienzuordnung im Zertifizierungspfad zulässig ist. Der Standardwert lautet false.
 
-**Alle Pfade überprüfen:** Gibt an, ob alle Pfade überprüft werden sollen oder ob die Überprüfung nach Finden des ersten gültigen Pfades beendet werden soll. Wählen Sie „true“ oder „false“ aus. Der Standardwert lautet false.
+**Alle Pfade überprüfen:** Gibt an, ob alle Pfade überprüft werden sollen oder ob die Überprüfung nach Finden des ersten gültigen Pfades gestoppt werden soll. Wählen Sie „true“ oder „false“ aus. Der Standardwert lautet false.
 
 **LDAP-Server:** Der zum Suchen von Zertifikaten bei der Pfadüberprüfung verwendete LDAP-Server. Kein Standardwert.
 
@@ -618,7 +622,7 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar.
 
 **Grundlegende Einschränkungserweiterung in CA-Zertifikaten erforderlich:** Gibt an, ob die grundlegende Einschränkungserweiterung für Zertifikate der Zertifizierungsstelle (CA) für CA-Zertifikate vorhanden sein muss. Einige frühere deutsche zertifizierte Stammzertifikate (7 und früher) sind nicht mit RFC 3280 konform und enthalten keine grundlegende Einschränkungserweiterung. Wenn bekannt ist, dass ein EE-Zertifikat eines oder einer Benutzenden an einen solchen deutschen Stamm verkettet ist, deaktivieren Sie dieses Kontrollkästchen. Der Standardwert lautet true.
 
-**Gültige Zertifikatsignatur während der Kettenbildung erforderlich:** Gibt an, ob der Kettengenerator gültige Signaturen für Zertifikate erfordert, aus denen Ketten erzeugt werden. Wenn dieses Kontrollkästchen aktiviert ist, erzeugt der Kettengenerator keine Ketten mit ungültigen RSA-Signaturen aus Zertifikaten. Betrachten Sie die Kette CA > ICA > EE, bei der die Signatur der Zertifizierungsstelle (CA) für eine ICA ungültig ist. Wenn diese Einstellung „true“ ist, wird die Kettenbildung an der ICA beendet und die CA wird nicht in die Kette aufgenommen. Ist sie dagegen „false“, wird die vollständige Kette aus 3 Zertifikaten erzeugt. Diese Einstellung hat keine Auswirkungen auf DSA-Signaturen. Der Standardwert lautet false.
+**Gültige Zertifikatsignatur während der Kettenbildung erforderlich:** Gibt an, ob der Kettengenerator gültige Signaturen für Zertifikate erfordert, aus denen Ketten erzeugt werden. Wenn dieses Kontrollkästchen aktiviert ist, erzeugt der Kettengenerator keine Ketten mit ungültigen RSA-Signaturen aus Zertifikaten. Betrachten Sie die Kette CA > ICA > EE, bei der die Signatur der Zertifizierungsstelle (CA) für eine ICA ungültig ist. Wenn diese Einstellung „true“ ist, wird die Kettenbildung an der ICA gestoppt und die CA wird nicht in die Kette aufgenommen. Ist sie dagegen „false“, wird die vollständige Kette aus 3 Zertifikaten erzeugt. Diese Einstellung hat keine Auswirkungen auf DSA-Signaturen. Der Standardwert lautet false.
 
 ### Zeitstempelanbieter-Optionen {#timestamp-provider-options}
 
@@ -630,7 +634,7 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar.
 
 **Request Hash Algorithm:** Gibt den Hash-Algorithmus an, der beim Erstellen der Anforderung für den Zeitstempelanbieter zu verwenden ist. Der Standardwert ist SHA1.
 
-**Revocation Check Style:** Gibt die Methode zur Prüfung von Sperren an, die zum Ermitteln des Vertrauensstatus für das Zertifikat des Zeitstempelanbieters aus dessen festgestelltem Sperrstatus verwendet wird. Der Standardwert ist „BestEffort“. 
+**Revocation Check Style:** Gibt die Methode zur Prüfung von Sperren an, die zum Ermitteln des Vertrauensstatus für das Zertifikat des Zeitstempelanbieters aus dessen festgestelltem Sperrstatus verwendet wird. Der Standardwert ist „BestEffort“.
 
 **Send Nonce:** Gibt an, ob eine Nonce mit der Zeitstempelanbieter-Anforderung gesendet werden soll. Eine Nonce kann ein Zeitstempel, ein Besucherzähler auf einer Web-Seite oder eine spezielle Kennzeichnung zur Begrenzung oder Verhinderung der nicht autorisierten Wiedergabe oder Vervielfältigung einer Datei sein. Der Standardwert lautet true.
 
@@ -646,7 +650,7 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar.
 
 **Lokaler URI für die CRL-Suche:** URL des lokalen Zertifikatsperrlisten-Anbieters. Dieser Wert wird nur verwendet, wenn der oben angegebene Parameter „Zuerst lokalen URI prüfen“ auf „true“ festgelegt ist. Kein Standardwert.
 
-**Methode zur Prüfung von Sperren:** Gibt die Methode zur Prüfung von Sperren an, die zum Ermitteln des Vertrauensstatus für das Zertifikat des Zertifikatsperrlisten-Anbieters aus dessen festgestelltem Sperrstatus verwendet werden soll. Der Standardwert ist „BestEffort“. 
+**Methode zur Prüfung von Sperren:** Gibt die Methode zur Prüfung von Sperren an, die zum Ermitteln des Vertrauensstatus für das Zertifikat des Zertifikatsperrlisten-Anbieters aus dessen festgestelltem Sperrstatus verwendet werden soll. Der Standardwert ist „BestEffort“.
 
 **LDAP-Server für CRL-Suche:** Der zum Abrufen der Zertifikatsperrlisten zu verwendende LDAP-Server (wie www.ldap.com). Alle DN-basierten Abfragen nach Zertifikatsperrlisten werden an diesen Server gerichtet. Kein Standardwert.
 
@@ -660,9 +664,9 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar.
 
 **OCSP-Server-URL:** URL für den standardmäßigen OCSP-Server. Ob der über diese URL angegebene OCSP-Server verwendet wird, hängt von der Einstellung der Option „Zu verwendende URL“ ab. Kein Standardwert.
 
-**Option zu prüfende URLs:** Steuert die Liste und Reihenfolge der OCSP-Server, die zum Durchführen der Statusprüfung verwendet werden. Der Standardwert ist „UseAlAlnCert“. 
+**Option zu prüfende URLs:** Steuert die Liste und Reihenfolge der OCSP-Server, die zum Durchführen der Statusprüfung verwendet werden. Der Standardwert ist „UseAlAlnCert“.
 
-**Methode zur Sperrprüfung:** Gibt die Methode zur Prüfung von Sperren an, die zum Überprüfen des Zertifikats für den OCSP-Server verwendet werden sollen. Der Standardwert ist „CheckIfAvailable“. 
+**Methode zur Sperrprüfung:** Gibt die Methode zur Prüfung von Sperren an, die zum Überprüfen des Zertifikats für den OCSP-Server verwendet werden sollen. Der Standardwert ist „CheckIfAvailable“.
 
 **Nonce senden:** Gibt an, ob eine Nonce mit der OCSP-Anforderung gesendet werden soll. Eine Nonce kann ein Zeitstempel, ein Besucherzähler auf einer Web-Seite oder eine spezielle Kennzeichnung zur Begrenzung oder Verhinderung der nicht autorisierten Wiedergabe oder Vervielfältigung einer Datei sein. Der Standardwert lautet true.
 
@@ -692,25 +696,25 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar.
 
 ## Einstellungen des Watched Folder-Dienstes {#watched-folder-service-settings}
 
-Der Watched Folder-Dienst (`WatchedFolder`) konfiguriert gemeinsame Attribute für alle Endpunkte überwachter Ordner. Außerdem werden Standardwerte für Endpunkte überwachter Ordner bereitgestellt. (Siehe [Konfigurieren von Endpunkten des Typs „Überwachter Ordner“](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Dies wird weder durch externe Client-Anwendungen aufgerufen noch in Prozessen verwendet, die in Workbench erstellt werden.
+Der Watched Folder-Dienst (`WatchedFolder`) konfiguriert gemeinsame Attribute für alle Endpunkte überwachter Ordner. Außerdem werden Standardwerte für Endpunkte überwachter Ordner bereitgestellt. (Siehe [Konfigurieren von Endpunkten des Typs „Überwachter Ordner“](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Es wird nicht von externen Client-Programmen aufgerufen oder in in Workbench erstellten Prozessen verwendet.
 
 Folgende Einstellungen sind für den Watched Folder-Dienst verfügbar:
 
 **Cron-Ausdruck:** Der Cron-Ausdruck, wie er von Quartz zur zeitlichen Planung des Abrufs des Eingabeordners verwendet wird.
 
-**Anzahl der Wiederholungen:** Die Häufigkeit, mit der der Eingabeordner abgerufen wird. Der Standardwert für die Anzahl der Wiederholungen, der verwendet wird, wenn in der Endpunktkonfiguration kein Wert angegeben ist. Ein Wert von „-1“ bedeutet unbegrenztes Überprüfen des Ordners. Der Standardwert ist -1.
+**Anzahl der Wiederholungen:** Wie oft das Eingabeverzeichnis abgefragt wird. Der Standardwert für die Anzahl der Wiederholungen, der verwendet wird, wenn in der Endpunktkonfiguration kein Wert angegeben ist. Ein Wert von „-1“ bedeutet unbegrenztes Überprüfen des Ordners. Der Standardwert lautet -1.
 
 **Wiederholungsintervall:** Die Standardanzahl von Sekunden zwischen den einzelnen Abrufen. Dieser Wert wird als Wiederholungsintervall verwendet, sofern in der Endpunktkonfiguration für den überwachten Ordner kein anderer Wert angegeben ist. Der Standardwert ist 5. Weitere Informationen finden Sie in der Beschreibung der Einstellung „Stapelgröße“.
 
-**Asynchron:** Gibt den Aufruftyp als „asynchron“ oder „synchron“ an. Transiente und synchrone Prozesse können nur synchron aufgerufen werden. Der Standardwert ist „asynchron“.
+**Asynchron:** Gibt den Aufruftyp als asynchron oder synchron an. Transiente und synchrone Prozesse können nur synchron aufgerufen werden. Der Standardwert lautet „asynchron“.
 
 **Wartezeit:** Der Standardwert für den Zeitraum in Sekunden, nach dem die Dateien aus den Eingabeordnern abgerufen werden. Wenn Dateien oder Ordner älter sind als die in „Wartezeit“ angegebene Zeit, werden sie zur Verarbeitung abgerufen. Der Standardwert ist 0.
 
 **Batch-Größe:** Der Standardwert für die Anzahl der Dateien oder Ordner, die pro Überprüfung verarbeitet werden. Der Standardwert ist 2.
 
-Die Einstellungen „Wiederholungsintervall“ und „Stapelgröße“ bestimmen, wie viele Dateien bei jeder Überprüfung vom Watched Folder-Dienst ausgewählt werden. Der überwachte Ordner verwendet einen Quartz-Threadpool für die Überprüfung des Eingabeordners. Der Threadpool wird mit anderen Diensten gemeinsam verwendet. Wenn das Überprüfungsintervall kurz ist, wird der Eingabeordner häufig von den Threads überprüft.  Falls häufig Dateien im überwachten Ordner abgelegt werden, sollten Sie ein kurzes Überprüfungsintervall wählen. Wenn Dateien nicht häufig abgelegt werden, sollten Sie ein größeres Überprüfungsintervall verwenden, damit die anderen Dienste die Threads verwenden können.
+Die Einstellungen „Wiederholungsintervall“ und „Stapelgröße“ bestimmen, wie viele Dateien bei jeder Überprüfung vom Watched Folder-Dienst ausgewählt werden. Der überwachte Ordner verwendet einen Quartz-Threadpool für die Überprüfung des Eingabeordners. Der Threadpool wird mit anderen Diensten gemeinsam verwendet. Wenn das Überprüfungsintervall kurz ist, wird der Eingabeordner häufig von den Threads überprüft. Falls häufig Dateien im überwachten Ordner abgelegt werden, sollten Sie ein kurzes Überprüfungsintervall wählen. Wenn Dateien nicht häufig abgelegt werden, sollten Sie ein größeres Überprüfungsintervall einrichten, damit die anderen Dienste die Threads verwenden können.
 
-Falls eine große Anzahl von Dateien abgelegt wird, wählen Sie eine große Stapelgröße.  Wenn der vom Endpunkt des überwachten Ordners aufgerufene Dienst beispielsweise 700 Dateien pro Minute verarbeiten kann und die Benutzenden Dateien mit der gleichen Geschwindigkeit in den Eingabeordner ablegen, kann die Leistung des überwachten Ordners durch die Einstellung der Stapelgröße auf 350 und des Wiederholungsintervalls auf 30 Sekunden verbessert werden, ohne dass die Kosten für eine zu häufige Überprüfung des überwachten Ordners anfallen.
+Falls eine große Anzahl von Dateien abgelegt wird, wählen Sie eine große Stapelgröße. Wenn der vom Endpunkt des überwachten Ordners aufgerufene Dienst beispielsweise 700 Dateien pro Minute verarbeiten kann und die Benutzenden Dateien mit der gleichen Geschwindigkeit in den Eingabeordner ablegen, kann die Leistung des überwachten Ordners durch die Einstellung der Stapelgröße auf 350 und des Wiederholungsintervalls auf 30 Sekunden verbessert werden, ohne dass die Kosten für eine zu häufige Überprüfung des überwachten Ordners anfallen.
 
 Wenn Dateien im überwachten Ordner abgelegt werden, werden die Dateien in der Eingabe aufgelistet, was die Leistung beeinträchtigen kann, wenn jede Sekunde eine Überprüfung stattfindet. Ein Verlängern des Überprüfungsintervalls kann die Leistung verbessern. Wenn das Volumen der abzulegenden Dateien gering ist, passen Sie die Batch-Größe und das Wiederholungsintervall entsprechend an. Wenn beispielsweise jede Sekunde 10 Dateien abgelegt werden, versuchen Sie, das Wiederholungsintervall auf 1 Sekunde und die Batch-Größe auf 10 festzulegen.
 
@@ -737,9 +741,9 @@ In einer Cluster-Konfiguration skaliert sich die Batch-Größe für einen überw
 * %s = Sekunde
 * %l = Millisekunde
 * %R = Zufallszahl (von 0 bis 9)
-* %P = Prozess- oder Vorgangs-ID
+* %P = Prozess- oder Auftrags-ID
 
-Wenn es z. B. 20 Uhr am 17. Juli 2009 ist und Sie `C:/Test/WF0/failure/%Y/%M/%D/%H/` angeben, lautet der Ergebnisordner `C:/Test/WF0/failure/2009/07/17/20`.
+Wenn es zum Beispiel 20 Uhr am 17. Juli 2009 ist und Sie `C:/Test/WF0/failure/%Y/%M/%D/%H/` angeben, lautet der Ergebnisordner `C:/Test/WF0/failure/2009/07/17/20`.
 
 Wenn der Pfad nicht absolut, sondern relativ ist, wird der Ordner innerhalb des überwachten Ordners erstellt. Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -836,7 +840,7 @@ Standardsicherheitsprofile, die installiert sind, können Sie so konfigurieren, 
    * **INVOKE_PERM:** Aufrufen aller Vorgänge für den Dienst
    * **MODIFY_CONFIG_PERM:**&#x200B;Ändern der Konfiguration eines Dienstes
    * **SUPERVISOR_PERM:** Anzeigen der Prozessinstanzdaten für einen Dienst, der aus einem Prozess erstellt wurde
-   * **START_STOP_PERM:** Starten und Beenden eines Dienstes
+   * **START_STOP_PERM:** Starten und Stoppen eines Dienstes
    * **ADD_REMOVE_ENDPOINTS_PERM:** Hinzufügen, Entfernen und Ändern von Endpunkten für einen Dienst
    * **CREATE_VERSION_PERM:** Erstellen einer neuen Version des Dienstes
    * **DELETE_VERSION_PERM:** Löschen einer Version des Dienstes
@@ -866,7 +870,7 @@ Jeder Dienst kann die Pooling-Funktionen zum Verarbeiten eingehender Aufrufanfra
 1. Geben Sie in das Feld „Anfängliche Dienstinstanz-Pool-Größe“ die Anfangsgröße des Pools ein. Bei der Bereitstellung des Dienstes wird diese Zahl verwendet, um die Anzahl der Instanzen der Dienstimplementierung zu bestimmen, die erstellt und dem freien Pool zugewiesen werden und auf Aufrufanfragen warten. Dadurch kann der Dienst-Container sofort auf Aufrufanfragen reagieren, ohne erst eine Dienstinstanz initialisieren zu müssen.
 1. Geben Sie in das Feld „Maximale Dienstinstanz-Pool-Größe“ die maximale Anzahl von Instanzen im Pool für einen bestimmten Dienst ein. Diese Einstellung steuert die Anzahl der Threads, die einen bestimmten Dienst zu einer bestimmten Zeit ausführen können. Der Standardwert ist 0, was zu einer unbegrenzten Pool-Größe führt.
 1. Geben Sie in das Feld „Max. Anzahl asynchroner Dienstinstanzen“ die maximale Anzahl von Instanzen im Pool ein, die für die Verarbeitung asynchroner Anfragen zu einem bestimmten Zeitpunkt verwendet werden können. Diese Einstellung ermöglicht es dem Dienst, die Anzahl der Anfragen zu begrenzen, die parallel verarbeitet werden können.
-1. Geben Sie in das Feld „Aufrufwartezeit“ die Anzahl der Millisekunden ein, die gewartet werden soll, bis ein Dienst für eine Aufrufanfrage verfügbar ist. Wenn Sie für diese Einstellung keinen Wert angeben, ist der Standardwert 0, was zu keiner Wartezeit führt.
+1. Geben Sie in das Feld „Aufruf-Timeout“ die Anzahl der Millisekunden ein, die gewartet werden soll, bis ein Dienst für eine Aufrufanfrage verfügbar ist. Wenn Sie für diese Einstellung keinen Wert angeben, ist der Standardwert 0, was zu keiner Wartezeit führt.
 1. Klicken Sie auf Speichern.
 
 ### Entfernen von Pooling {#remove-pooling}
