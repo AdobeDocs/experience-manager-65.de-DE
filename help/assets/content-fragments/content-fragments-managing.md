@@ -7,8 +7,8 @@ exl-id: 25c91a85-06ff-4666-a809-46778a689e25
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
 workflow-type: tm+mt
-source-wordcount: '1728'
-ht-degree: 99%
+source-wordcount: '1741'
+ht-degree: 98%
 
 ---
 
@@ -197,7 +197,7 @@ Einige Funktionen in der oberen Symbolleiste stehen in mehreren Modi zur Verfüg
 
 * Über **Speichern** haben Sie Zugriff auf die Option **Speichern und schließen**.
 
-* Über die drei Punkte (**...**) können Sie auf weitere Aktionen zugreifen:
+* Die drei Punkte (**…**) über die Dropdown-Liste können Sie auf weitere Aktionen zugreifen:
    * **Seitenverweise aktualisieren**
       * Damit werden alle Seitenverweise aktualisiert.
    * **[Quick Publish](#publishing-and-referencing-a-fragment)**

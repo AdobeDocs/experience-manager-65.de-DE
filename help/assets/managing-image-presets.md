@@ -14,8 +14,8 @@ exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3792'
-ht-degree: 100%
+source-wordcount: '3900'
+ht-degree: 90%
 
 ---
 
@@ -67,7 +67,7 @@ Bildvorgaben verwalten Sie in Experience Manager, indem Sie auf das Experience M
 >
 >Das System zeigt verschiedene Ausgabedarstellungen, wenn Sie **[!UICONTROL Ausgabedarstellungen]** in der Detailansicht eines Assets auswählen. Sie können die Anzahl der angezeigten Bildvorgaben erhöhen oder verringern. Siehe [Erhöhung der Anzahl der angezeigten Bildvorgaben](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Smartes Zuschneiden, Adobe Illustrator (AI), Postscript (EPS) und PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Intelligenter Zuschnitt, Adobe Illustrator (AI), Postscript (EPS) und PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
 >[!NOTE]
 >
@@ -157,11 +157,11 @@ Für InDesign-Dateien werden nur dann Teil-Assets extrahiert, wenn der Adobe InD
 
 Siehe [Integrieren von Experience Manager Assets mit InDesign Server](/help/assets/indesign.md).
 
-Die Prozesskomponente zum Extrahieren von Medien im Workflow `DAM Update Asset` führt mehrere vorkonfigurierte ExtendScript-Skripte aus, um InDesign-Dateien zu verarbeiten.
+Die Prozesskomponente zur Extraktion von Medien im Workflow `DAM Update Asset` führt mehrere vorkonfigurierte ExtendScript-Skripte aus, um InDesign-Dateien zu verarbeiten.
 
-![Die ExtendScript-Pfade in den Argumenten des Prozesses zum Extrahieren von Medien](assets/6_5_mediaextractionprocess.png)
+![Die ExtendScript-Pfade in den Argumenten des Prozesses zur Extraktion von Medien](assets/6_5_mediaextractionprocess.png)
 
-Die ExtendScript-Pfade in den Argumenten der Prozesskomponente zum Extrahieren von Medien im Workflow [!UICONTROL DAM-Update-Asset]
+Die ExtendScript-Pfade in den Argumenten der Prozesskomponente zur Extraktion von Medien im Workflow [!UICONTROL DAM-Update-Asset]
 
 Die folgenden Skripte werden von der Dynamic Media-Integration verwendet:
 
@@ -196,7 +196,7 @@ Sie können die Größe von Miniaturen über die Einstellungen im Workflow **[!U
 
 Im Schritt **[!UICONTROL Bild-Assets-Prozess für Dynamic Media]** werden vom Bild-Server Miniaturen generiert. Diese Konfiguration ist unabhängig von der Konfiguration, die auf den Schritt **[!UICONTROL Prozessminiaturen]** angewendet wird. Das Generieren von Miniaturen mit dem Schritt **[!UICONTROL Miniaturen verarbeiten]** ist das langsamste und speicherintensivste Verfahren zum Erstellen von Miniaturen.
 
-Die Größe der Miniaturen wird im folgenden Format definiert: **`width:height:center`**, z. B. `80:80:false`. Breite und Höhe legen die Größe der Miniaturansicht in Pixel fest. Für den Center-Wert ist entweder false oder true festgelegt. Wenn true festgelegt ist, hat das Miniaturbild exakt die in der Konfiguration festgelegte Größe. Wenn das in der Größe angepasste Bild kleiner ist, wird es im Miniaturbildfenster zentriert.
+Die Größe der Miniaturen wird im folgenden Format definiert: **`width:height:center`**, z. B. `80:80:false`. Die Breite und Höhe legen die Größe der Miniaturansicht in Pixel fest. Der Mittelwert ist entweder false oder true. Wenn true festgelegt ist, hat das Miniaturbild exakt die in der Konfiguration festgelegte Größe. Wenn das in der Größe angepasste Bild kleiner ist, wird es im Miniaturbildfenster zentriert.
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ Erstellte Bildvorgaben sind auch als dynamische Ausgabedarstellungen verfügbar,
 
 **Erhöhen oder verringern Sie die Anzahl der angezeigten Dynamic Media-Bildvorgaben:**
 
-1. Navigieren Sie zu CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. https://localhost Navigieren Sie zu CRXDE Lite ([:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigieren Sie zum Knoten für die Bildvorgabenliste unter `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`.
 
    ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
@@ -248,10 +248,10 @@ Indem Sie eine Bildvorgabe erstellen, können Sie die entsprechenden Einstellung
 >Bei Verwendung von Internet Explorer 9 wird die Erstellung einer Vorgabe nicht sofort nach dem Speichern in der Vorgabenliste angezeigt. Um dieses Problem zu umgehen, deaktivieren Sie den Cache für IE9.
 
 Wenn Sie die Aufnahme von AI-, PDF- und EPS-Dateien unterstützen möchten, um aus diesen Dateiformaten dynamische Ausgabedarstellungen zu generieren, lesen Sie die folgenden Informationen, bevor Sie Bildvorgaben erstellen.
-Siehe [Dateiformate Adobe Illustrator (AI), Postscript (EPS) und PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
+Siehe Dateiformate [Adobe Illustrator (AI), PostScript (EPS) und PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 Wenn Sie die Aufnahme von INDD-Dateien unterstützen möchten, um aus diesem Dateiformat dynamische Ausgabedarstellungen zu generieren, sollten Sie die folgenden Informationen lesen, bevor Sie Bildvorgaben erstellen.
-Siehe [InDesign-Dateiformat (INDD)](#indesign-indd-file-format).
+Siehe [InDesign-Dateiformat (INDD](#indesign-indd-file-format).
 
 >[!NOTE]
 >
@@ -266,9 +266,9 @@ Siehe [InDesign-Dateiformat (INDD)](#indesign-indd-file-format).
 
    >[!NOTE]
    >
-   >Damit diese Bildvoreinstellung responsiv wird, löschen Sie die Werte in den Feldern **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** und lassen Sie sie leer.
+   >Damit diese Bildvorgabe responsiv wird, löschen Sie die Werte in den Feldern **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** und lassen Sie sie leer.
 
-1. Geben Sie Werte wie gewünscht in die Registerkarten **[!UICONTROL Allgemein]** und **[!UICONTROL Erweitert]** ein, einschließlich eines Namens. Die Optionen werden unter [Bildvoreinstellungsoptionen](#image-preset-options) beschrieben. Vorgaben werden im linken Bereich angezeigt und können nur zusammen mit anderen Assets verwendet werden.
+1. Geben Sie Werte wie gewünscht in die Registerkarten **[!UICONTROL Allgemein]** und **[!UICONTROL Erweitert]** ein, einschließlich eines Namens. Die Optionen werden unter [Bildvorgaben-Optionen](#image-preset-options) beschrieben. Vorgaben werden im linken Bereich angezeigt und können nur zusammen mit anderen Assets verwendet werden.
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
@@ -278,7 +278,7 @@ Siehe [InDesign-Dateiformat (INDD)](#indesign-indd-file-format).
 
 Um eine responsive Bildvorgabe zu erstellen, führen Sie die im Abschnitt [Erstellen von Bildvorgaben](#creating-image-presets) beschriebenen Schritte durch. Löschen Sie die Werte für Höhe und Breite im Fenster **[!UICONTROL Bildvorgabe bearbeiten]** und lassen Sie sie leer.
 
-Dadurch wird diese Vorgabe in Experience Manager als responsiv erkannt. Sie können die anderen Werte nach Bedarf anpassen.
+Dadurch wird diese Bildvorgabe in Experience Manager als responsiv erkannt. Sie können die anderen Werte nach Bedarf anpassen.
 
 
 
@@ -296,7 +296,7 @@ Dadurch wird diese Vorgabe in Experience Manager als responsiv erkannt. Sie kön
 
 Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeiten von Bildvorgaben verfügbar. Adobe empfiehlt zudem für den Anfang als Best Practice die Auswahl der folgenden Optionen:
 
-* **[!UICONTROL Format]** (Registerkarte **[!UICONTROL Allgemein]**) – Wählen Sie **[!UICONTROL JPEG]** oder ein anderes Format, das Ihren Anforderungen entspricht. Alle Webbrowser unterstützen das JPEG-Bildformat; es bietet eine gute Balance zwischen Dateigröße und Bildqualität. Bilder im JPEG-Format nutzen jedoch ein verlustbehaftetes Komprimierungsschema, das unerwünschte Bildartefakte hervorrufen kann, wenn die Komprimierungseinstellung zu niedrig ist. Aus diesem Grund empfiehlt Adobe, die Komprimierungsqualität auf 75 einzustellen. Diese Einstellung bietet einen angemessenen Ausgleich zwischen Bildqualität und kleiner Dateigröße.
+* **[!UICONTROL Format]** (Registerkarte **[!UICONTROL Standard]**) - Wählen Sie **[!UICONTROL JPEG]** oder ein anderes Format aus, das Ihren Anforderungen entspricht. Alle Webbrowser unterstützen das JPEG-Bildformat. Es bietet eine gute Balance zwischen kleinen Dateigrößen und Bildqualität. Bilder im JPEG-Format verwenden jedoch ein verlustbehaftetes Komprimierungsschema, das bei zu niedriger Komprimierungseinstellung unerwünschte Bildartefakte verursachen kann. Aus diesem Grund empfiehlt Adobe, die Komprimierungsqualität auf 75 einzustellen. Diese Einstellung bietet einen angemessenen Ausgleich zwischen Bildqualität und kleiner Dateigröße.
 
 * **[!UICONTROL Einfaches Scharfzeichnen aktivieren]**: Aktivieren Sie nicht die Option **[!UICONTROL Einfaches Scharfzeichnen aktivieren]** (dieser Scharfzeichnungsfilter bietet weniger Kontrolle als die Einstellungen für „Unschärfemaske“).
 
@@ -322,8 +322,8 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
    <td><strong>Format</strong></td>
    <td><p>Wählen Sie ein Format im Menü aus.</p> <p>Bei <strong>JPEG</strong> erhalten Sie die folgenden zusätzlichen Optionen:</p>
     <ul>
-     <li><strong>Qualität</strong>: Steuert die JPEG-Komprimierungsstufe. Diese Einstellung wirkt sich sowohl auf die Dateigröße als auch auf die Bildqualität aus. Die JPEG-Qualitätsskala reicht von 1 bis 100. Die Skala ist sichtbar, wenn Sie den Schieberegler bewegen.</li>
-     <li><strong>JPG-Chrominanz-Downsampling aktivieren</strong>: Da das menschliche Auge weniger empfindlich gegenüber hochfrequenten Farbinformationen als gegenüber hochfrequenter Luminanz ist, teilen JPEG-Bilder die Bildinformationen in Luminanz und Farbkomponenten. Wenn ein JPEG-Bild komprimiert wird, bleibt die Luminanzkomponente in der vollen Auflösung erhalten, während bei den Farbkomponenten ein Downsampling anhand einer Durchschnittsbildung von Pixelgruppen erfolgt. Beim Downsampling wird das Datenvolumen um die Hälfte oder ein Drittel reduziert, ohne dass dies entscheidende Auswirkungen auf die wahrgenommene Qualität hat. Downsampling kann nicht auf Graustufen-Bilder angewendet werden. Diese Technik reduziert den Komprimierungsgrad, was bei Bildern mit hohem Kontrast hilfreich ist (z. B. bei Bildern mit überlagertem Text).</li>
+     <li><strong>Qualität</strong> - Steuert den JPEG-Komprimierungsgrad. Diese Einstellung wirkt sich sowohl auf die Dateigröße als auch auf die Bildqualität aus. Die JPEG-Qualitätsskala ist 1-100. Die Skala wird angezeigt, wenn Sie den Schieberegler bewegen.</li>
+     <li><strong>JPG-Neuberechnung der Chrominanz aktivieren</strong> - Da das Auge weniger empfindlich auf hochfrequente Farbinformationen reagiert als hochfrequente Luminanz, unterteilen JPEG-Bilder Bildinformationen in Luminanz- und Farbkomponenten. Wenn ein JPEG-Bild komprimiert wird, wird die Luminanzkomponente in voller Auflösung belassen, während die Farbkomponenten durch Durchschnittsbildung von Pixelgruppen heruntergesampelt werden. Durch Downsampling wird das Datenvolumen um die Hälfte oder ein Drittel reduziert, ohne dass es zu Qualitätseinbußen kommt. Das Downsampling ist nicht auf Graustufenbilder anwendbar. Mit dieser Methode wird der Komprimierungsgrad für Bilder mit hohem Kontrast (z. B. Bilder mit überlagertem Text) reduziert.</li>
     </ul>
     <div>
       Bei Auswahl von <strong>GIF</strong> oder <strong>GIF mit Alpha</strong> werden die folgenden zusätzlichen Optionen für <strong>GIF-Farbquantisierung</strong> verfügbar:
@@ -369,10 +369,10 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
   </tr>
   <tr>
    <td><strong>Rendering-Intent</strong></td>
-   <td>Sie können den standardmäßigen Rendering-Intent überschreiben. Der Rendering-Intent legt fest, was mit Farben passiert, die im Farbprofil des Ziels nicht wiedergegeben werden können (außerhalb der Farbskala). Der Rendering-Intent wird ignoriert, wenn er nicht mit dem ICC-Profil kompatibel ist.
+   <td>Sie können den standardmäßigen Rendering-Intent überschreiben. Rendering-Absichten bestimmen, was mit Farben geschieht, die nicht im Zielfarbprofil (außerhalb der Farbskala) reproduziert werden können. Die Render-Absicht wird ignoriert, wenn sie nicht mit dem ICC-Profil kompatibel ist.
     <ul>
      <li>Wählen Sie <strong>Wahrnehmungsoptimiert</strong> aus, damit die gesamte Farbskala von einem Farbraum in einen anderen Farbraum komprimiert wird, wenn eine oder mehrere Farben im Originalbild außerhalb der Farbskala des Zielfarbraums liegen.</li>
-     <li>Wählen Sie <strong>Relativ farbmetrisch</strong> aus, wenn eine Farbe des aktuellen Farbraums im Zielfarbraum außerhalb der Farbskala liegt und auf die nächstmögliche Farbe der Farbskala des Zielfarbraums abgebildet werden soll, ohne dass andere Farben betroffen sind. </li>
+     <li>Wählen Sie <strong>Relativ farbmetrisch</strong> aus, wenn eine Farbe im aktuellen Farbraum im Zielfarbraum außerhalb der Farbskala liegt. Außerdem sollten Sie ihn der nächstmöglichen Farbe innerhalb der Farbskala des Zielfarbraums zuordnen, ohne andere Farben zu beeinflussen. </li>
      <li>Wählen Sie <strong>Sättigung</strong> aus, um die Sättigung des Originalbilds beim Konvertieren in den Zielfarbraum zu übernehmen. </li>
      <li>Wählen Sie <strong>Absolut farbmetrisch</strong> aus, um Farben exakt und ohne Weißpunkt- oder Schwarzpunktanpassung abzubilden, wodurch die Helligkeit verändert würde.</li>
     </ul> </td>
@@ -394,9 +394,9 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
      <li>Wählen Sie<strong> Unschärfemaske</strong>, um einen Scharfzeichnungsfiltereffekt für das endgültige Bild nach dem Downsampling zu optimieren. Sie können die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Schwellenwert für den Kontrast festlegen, der ignoriert werden soll. Dieser Effekt verwendet dieselben Optionen wie der Photoshop-Filter „Unscharf maskieren“.</li>
     </ul> <p>In <strong>Unschärfemaske</strong> sind die folgenden Optionen verfügbar:</p>
     <ul>
-     <li><strong>Betrag</strong>: Steuert den auf die Kantenpixel angewendeten Kontrastwert. Der Standardwert für die reelle Zahl ist 1,0. Bei hochauflösenden Bildern können Sie ihn auf bis zu 5,0 erhöhen. Der Wert dient hierbei als ein Maß für die Filterintensität.</li>
+     <li><strong>Betrag</strong>: Steuert den auf die Kantenpixel angewendeten Kontrastwert. Der Standardwert für die reelle Zahl ist 1,0. Bei hochauflösenden Bildern können Sie sie auf bis zu 5.0 erhöhen. Stellen Sie sich die Stärke als ein Maß für die Filterintensität vor.</li>
      <li><strong>Radius</strong>: Bestimmt die Anzahl der Pixel um die Kantenpixel, die sich auf die Scharfzeichnung auswirken. Geben Sie bei hochauflösenden Bildern eine reale Zahl zwischen 1 und 2 ein. Mit einem niedrigeren Wert werden nur die Kantenpixel scharfgezeichnet, während mit einem höheren Wert mehr Pixel scharfgezeichnet werden. Der richtige Wert hängt von der Bildgröße ab.</li>
-     <li><strong>Schwellenwert</strong>: Bestimmt den Kontrastbereich, der bei der Anwendung des Filters „Unschärfemaske“ ignoriert werden soll. In anderen Worten: Die Option bestimmt, wie stark sich die scharfgezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kantenpixel eingestuft und scharfgezeichnet werden. Um Rauschen zu vermeiden, experimentieren Sie mit Ganzzahlwerten von 2 bis 20. </li>
+     <li><strong>Schwellenwert</strong> - Bestimmt den Kontrastbereich, der beim Anwenden der Unschärfemaske ignoriert werden soll. Mit anderen Worten: Diese Option bestimmt, wie stark sich die scharfgezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kantenpixel eingestuft und scharfgezeichnet werden. Um Rauschen zu vermeiden, experimentieren Sie mit Ganzzahlwerten von 2 bis 20. </li>
      <li><strong>Anwenden auf</strong>: Bestimmt, ob die Unscharfzeichnung für jede Farbe oder Helligkeit gilt.</li>
     </ul>
     <div>
@@ -406,9 +406,9 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
   </tr>
   <tr>
    <td><strong>Resampling-Modus</strong></td>
-   <td>Wählen Sie eine Option für den <strong>Resampling-Modus</strong>. Diese Optionen sorgen dafür, dass das Bild beim Neuberechnen scharf bleibt:
+   <td>Wählen Sie eine Option <strong>Resampling-Modus</strong> aus. Diese Optionen schärfen das Bild, wenn es heruntergesampelt wird:
     <ul>
-     <li><strong>Bilinear</strong>: Die schnellste Resampling-Methode. Einige Aliasing-Artefakte sind sichtbar.</li>
+     <li><strong>Bi-Linear</strong> - Die schnellste Resampling-Methode. Einige Aliasing-Artefakte sind auffällig.</li>
      <li><strong>Bikubisch</strong>: Erhöht die CPU-Auslastung, bietet jedoch schärfere Bilder mit weniger deutlichen Aliasing-Artefakten.</li>
      <li><strong>Scharf2</strong>: Kann im Vergleich zu „Bikubisch“ etwas schärfere Ergebnisse erzeugen, ist jedoch CPU-intensiver.</li>
      <li><strong>Bi-Sharp</strong>: Wählt den Standard-Resampler in Photoshop zum Reduzieren der Bildgröße aus, was in Adobe Photoshop als <strong>bikubisch schärfer</strong> bezeichnet wird.</li>

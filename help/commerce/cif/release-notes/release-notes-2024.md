@@ -7,7 +7,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 1788e5f77d4c46a548710361e9e5dae3c6daab28
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '274'
 ht-degree: 100%
 
 ---

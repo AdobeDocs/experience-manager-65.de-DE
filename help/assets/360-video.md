@@ -21,8 +21,8 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: 1191
-ht-degree: 92%
+source-wordcount: 1093
+ht-degree: 91%
 
 ---
 
@@ -42,7 +42,7 @@ Informationen hierzu finden Sie in [Verwalten von Viewer-Vorgaben](/help/assets/
 
 Wählen Sie [Space Station 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS), um ein Browser-Fenster zu öffnen und ein 360-Grad-Video anzusehen. Ziehen Sie während der Videowiedergabe den Mauszeiger an eine neue Position, um den Anzeigewinkel zu ändern.
 
-![360-Grad-Videobeispiel mit der im Weltraum schwebenden internationalen Raumstation und der Erde und Sonne dahinter.](assets/6_5_360videoiss_simplified.png)
+![360-Grad-Videobeispiel mit der im Weltraum schwebenden internationalen Weltraumstation und der Erde und Sonne dahinter.](assets/6_5_360videoiss_simplified.png)
 *Videoframe von Space Station 360*
 
 ## 360-Grad-/VR-Video und Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
@@ -110,8 +110,8 @@ Siehe auch [Bearbeiten von Viewer-Vorgaben](/help/assets/managing-viewer-presets
 Wenn das 360-Grad-Video Ihren Vorstellungen entspricht, können Sie es veröffentlichen.
 
 Siehe [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/embed-code.md).
-Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
-Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Experience Manager Sites.
+Siehe [Hinzufügen von Dynamic Media Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **Vorschau von 360-Grad-Videos:**
 
@@ -145,7 +145,7 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynam
 
 Veröffentlichen Sie das 360-Grad-Video, damit Sie es verwenden können. Die Veröffentlichung eines 360-Grad-Videos aktiviert die URL und den Einbettungs-Code. Außerdem wird das 360-Grad-Video in der Dynamic Media-Cloud veröffentlicht, die für eine skalierbare und leistungsfähige Bereitstellung mit einem CDN integriert ist.
 
-Unter [Veröffentlichen von Dynamic Media-Assets](/help/assets/publishing-dynamicmedia-assets.md) finden Sie Details zum Veröffentlichen von 360-Grad-Videos.
+Weitere Informationen [&#x200B; Veröffentlichen von 360](/help/assets/publishing-dynamicmedia-assets.md)Grad-Videos finden Sie unter Veröffentlichen von Dynamic Media-Assets .
 Siehe auch [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/embed-code.md).
-Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
-Siehe auch [Hinzufügen von Dynamic Media Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Experience Manager Sites.
+Siehe auch [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).

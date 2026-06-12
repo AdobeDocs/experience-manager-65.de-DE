@@ -12,14 +12,14 @@ exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1506'
 ht-degree: 100%
 
 ---
 
 # Gemischte Mediensets{#mixed-media-sets}
 
-Mit gemischten Mediensets können Sie eine Mischung aus Bildern, Bildsets, Rotationssets und Videos in einer Präsentation bereitstellen.
+Mit gemischten Mediensets können Sie eine Mischung aus Bildern, Bild-Sets, Rotations-Sets und Videos in einer Präsentation bereitstellen.
 
 Gemischte Mediensets werden durch ein Banner mit dem Wort **[!UICONTROL MixedMediaSet]** gekennzeichnet. Darüber hinaus wird bei veröffentlichten Sets für gemischte Medien das Veröffentlichungsdatum (durch das **[!UICONTROL Welt]**-Symbol gekennzeichnet) zusammen mit dem Datum der letzten Änderung (durch das **[!UICONTROL Bleistift]**-Symbol gekennzeichnet) im Banner angezeigt.
 
@@ -35,7 +35,7 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 
 1. [Laden Sie die Assets hoch](#uploading-assets).
 
-   Laden Sie zunächst die Bilder und Videos für Ihre gemischten Mediensets hoch. Erstellen Sie bei Bedarf [Bildsets](/help/assets/image-sets.md) und [Rotationssets](/help/assets/spin-sets.md). Da Benutzer Bilder im Viewer für gemischte Mediensets einzoomen können, sollten Sie die Bilder sorgfältig auswählen. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat.
+   Laden Sie zunächst die Bilder und Videos für Ihre gemischten Mediensets hoch. Erstellen Sie bei Bedarf [Bild-Sets](/help/assets/image-sets.md) und [Rotations-Sets](/help/assets/spin-sets.md). Da Benutzer Bilder im Viewer für gemischte Mediensets einzoomen können, sollten Sie die Bilder sorgfältig auswählen. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat.
 
    Unter [Dynamic Media – Unterstützte Rasterbildformate](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) finden Sie eine Liste der Formate, die von gemischten Mediensets unterstützt werden.
 
@@ -59,7 +59,7 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 
 1. [Veröffentlichen Sie gemischte Mediensets](#publishing-mixed-media-sets).
 
-   Beim Veröffentlichen eines gemischten Mediensets wird die URL- und Integrationszeichenfolge aktiviert. Außerdem müssen Sie [die Viewer-Vorgabe veröffentlichen](/help/assets/managing-viewer-presets.md#publishing-viewer-presets).
+   Beim Veröffentlichen eines gemischten Mediensets wird die URL- und Einbettungszeichenfolge aktiviert. Außerdem müssen Sie [die Viewer-Vorgabe veröffentlichen](/help/assets/managing-viewer-presets.md#publishing-viewer-presets).
 
 1. [Verknüpfen Sie URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md) oder [betten Sie den Video- oder Bild-Viewer ein](/help/assets/embed-code.md).
 
@@ -79,13 +79,13 @@ Bei Bedarf können Sie die [gemischten Mediensets](#editing-mixed-media-sets) be
 
 Laden Sie zunächst die Bilder und Videos für Ihre gemischten Mediensets hoch. Da Benutzer Bilder im Viewer für gemischte Mediensets einzoomen können, sollten Sie die Bilder sorgfältig auswählen. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat.
 
-Wenn Sie außerdem Rotationssets oder Bildsets zum gemischten Medienset hinzufügen möchten, müssen Sie auch diese erstellen.
+Wenn Sie außerdem Rotations-Sets oder Bild-Sets zum gemischten Medienset hinzufügen möchten, müssen Sie auch diese erstellen.
 
 Unter [Dynamic Media – Unterstützte Rasterbildformate](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) finden Sie eine Liste der Formate, die von gemischten Mediensets unterstützt werden.
 
 ## Erstellen eines gemischten Mediensets {#creating-mixed-media-sets}
 
-Sie können Ihrem gemischten Medienset Bilder, Bildsets, Rotationssets und Videos hinzufügen. Achten Sie darauf, dass die Dateien, Bildsets und Rotationssets veröffentlicht werden können, bevor Sie diese dem Set für gemischte Medien hinzufügen.
+Sie können Ihrem gemischten Medienset Bilder, Bild-Sets, Rotations-Sets und Videos hinzufügen. Achten Sie darauf, dass die Dateien, Bild-Sets und Rotations-Sets veröffentlicht werden können, bevor Sie diese dem Set für gemischte Medien hinzufügen.
 
 Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Reihenfolge hinzugefügt. Sie können die Anordnung oder Sortierung der Assets manuell ändern, nachdem sie hinzugefügt wurden.
 

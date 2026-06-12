@@ -8,7 +8,7 @@ exl-id: e7c84385-efb3-4997-83ff-7a7f31582469
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '970'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ Für die Asset-Verarbeitung verwendet [!DNL Experience Manager] Workflows. Workf
 
 ## In [!DNL Experience Manager] verfügbare Standard-Workflows {#default-workflows}
 
-Standardmäßig werden alle hochgeladenen Assets mit dem Workflow [!UICONTROL DAM-Update-Asset] verarbeitet. Der Workflow wird für jedes hochgeladene Asset ausgeführt und führt grundlegende Aufgaben des Asset-Managements wie Generieren der Ausgabedarstellung, Zurückschreiben der Metadaten, Extrahieren von Seiten und Medien sowie Transkodieren durch.
+Standardmäßig werden alle hochgeladenen Assets mit dem Workflow [!UICONTROL DAM-Update-Asset] verarbeitet. Der Workflow wird für jedes hochgeladene Asset ausgeführt und führt grundlegende Aufgaben des Asset-Managements wie Generieren der Ausgabedarstellung, Zurückschreiben der Metadaten, Extraktion von Seiten und Medien sowie Transkodieren durch.
 
 Die standardmäßig verfügbaren Workflow-Modelle finden Sie unter **[!UICONTROL Tools > Workflow > Modelle]** in [!DNL Experience Manager].
 
@@ -48,7 +48,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 -->
 Gehen Sie wie folgt vor, um einen Workflow auf ein Asset anzuwenden:
 
-1. Navigieren Sie zum Speicherort des Assets, für das Sie einen Workflow beginnen möchten, und klicken Sie auf das Asset, um die Asset-Seite zu öffnen. Wählen Sie **[!UICONTROL Zeitleiste]** aus dem Menü aus, um die Zeitleiste anzuzeigen.
+1. Navigieren Sie zum Speicherort des Assets, für das Sie einen Workflow beginnen möchten, und klicken Sie auf das Asset, um die Asset-Seite zu öffnen. Wählen Sie **[!UICONTROL Timeline]** aus dem Menü aus, um die Timeline anzuzeigen.
 
    ![timeline-1](assets/timeline.png)
 
@@ -62,13 +62,13 @@ Gehen Sie wie folgt vor, um einen Workflow auf ein Asset anzuwenden:
 
    ![Workflow auswählen, Titel eingeben und auf „Start“ klicken](assets/start-workflow.png)
 
-1. Klicken Sie auf **[!UICONTROL Start]** und dann auf **[!UICONTROL Fortfahren]**. Jeder Schritt des Workflows wird in der Zeitleiste als ein Ereignis angezeigt.
+1. Klicken Sie auf **[!UICONTROL Start]** und dann auf **[!UICONTROL Fortfahren]**. Jeder Schritt des Workflows wird in der Timeline als ein Ereignis angezeigt.
 
    ![chlimage_1-256](assets/chlimage_1-52.png)
 
 ## Anwenden eines Workflows auf mehrere Assets {#applying-a-workflow-to-multiple-assets}
 
-1. Navigieren Sie in der [!DNL Assets]-Konsole zum Speicherort der Assets, für die Sie einen Workflow starten möchten, und wählen Sie die Assets aus. Wählen Sie **[!UICONTROL Zeitleiste]** aus dem Menü aus, um die Zeitleiste anzuzeigen.
+1. Navigieren Sie in der [!DNL Assets]-Konsole zum Speicherort der Assets, für die Sie einen Workflow starten möchten, und wählen Sie die Assets aus. Wählen Sie **[!UICONTROL Timeline]** aus dem Menü aus, um die Timeline anzuzeigen.
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 

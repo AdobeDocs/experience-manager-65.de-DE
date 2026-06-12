@@ -10,8 +10,8 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '5839'
-ht-degree: 98%
+source-wordcount: '5796'
+ht-degree: 97%
 
 ---
 
@@ -87,8 +87,8 @@ Die [!DNL Experience Manager]-Suche kombiniert die Suchbegriffe standardmäßig 
 * `woman.running`
 * `woman-running`
 
-Die Abfrage `woman -running` gibt jedoch Assets ohne `running` in den Metadaten zurück.
-Durch die Verwendung von Smart-Tags wird eine zusätzliche `OR`-Klausel hinzugefügt. Damit wird jeder Suchbegriff gefunden, der den angewendeten Smart-Tags entspricht. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird in einer solchen Suchabfrage auch angezeigt. Die Suchergebnisse sind also eine Kombination aus
+Die Abfrage gibt jedoch `woman -running` Assets ohne `running` in den Metadaten zurück.
+Durch die Verwendung von Smart-Tags wird eine zusätzliche `OR` hinzugefügt. Damit wird jeder Suchbegriff gefunden, der den angewendeten Smart-Tags entspricht. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird in einer solchen Suchanfrage auch angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
 * Assets mit den Keywords `woman` und `running` in den Metadaten (Standardverhalten).
 
