@@ -10,7 +10,7 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2170'
 ht-degree: 98%
 
 ---
@@ -116,7 +116,7 @@ Zum Erstellen einer Smart-Sammlung führen Sie die folgenden Schritte aus:
 
 Sie können einer Sammlung mit einer Liste referenzierter Assets oder Ordner Assets hinzufügen. Smart-Sammlungen verwenden eine Suchabfrage zum Ausfüllen von Assets. Daher sind statische Referenzen zu Assets und Ordnern für sie nicht anwendbar.
 
-1. Wählen Sie in der [!DNL A]ssets-Benutzeroberfläche das Asset aus und klicken Sie auf der Symbolleiste auf **[!UICONTROL Zu Sammlung]** ![Zu Sammlung hinzufügen](assets/do-not-localize/add-to-collection.png).
+1. Wählen Sie in der [!DNL A]ssets-Benutzeroberfläche das Asset aus und klicken Sie auf der Symbolleiste auf **[!UICONTROL Zu]**![Zu Sammlung hinzufügen](assets/do-not-localize/add-to-collection.png) .
 Alternativ können Sie das Asset in den Bereich **[!UICONTROL In Sammlung ablegen]** auf der Benutzeroberfläche ziehen. Fügen Sie die Assets hinzu, wenn sich die Bezeichnung der Region in **[!UICONTROL Zum Hinzufügen ablegen]** ändert.
 
 1. Wählen Sie auf der Seite **[!UICONTROL Zu Sammlung hinzufügen]** die Sammlung aus, der Sie das Asset hinzufügen möchten.

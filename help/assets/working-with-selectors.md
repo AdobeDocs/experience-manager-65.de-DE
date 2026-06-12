@@ -18,11 +18,11 @@ ht-degree: 100%
 
 # Arbeiten mit Selektoren {#working-with-selectors}
 
-Beim Arbeiten mit einem interaktiven Bild, interaktiven Videos oder Karussellbannern wählen Sie Assets sowie Sites und Produkte für Hotspots und Imagemaps zum Verknüpfen aus. Wenn Sie mit Bildsets, Rotationssets und Multimediasets arbeiten, wählen Sie mit dem Asset-Selektor Assets aus.
+Beim Arbeiten mit einem interaktiven Bild, interaktiven Videos oder Karussellbannern wählen Sie Assets sowie Sites und Produkte für Hotspots und Imagemaps zum Verknüpfen aus. Wenn Sie mit Bild-Sets, Rotations-Sets und Multimediasets arbeiten, wählen Sie mit dem Asset-Selektor Assets aus.
 
 Dieses Thema befasst sich damit, wie die Produkt-, Site- und Asset-Selektoren verwendet werden, einschließlich der Möglichkeit, in den Selektoren zu suchen, zu filtern und zu sortieren.
 
-Sie greifen auf die Selektoren beim Erstellen von Karussellsets, beim Hinzufügen von Hotspots und Imagemaps und beim Erstellen interaktiver Videos und Bilder zu.
+Sie greifen auf die Selektoren beim Erstellen von Karussell-Sets, beim Hinzufügen von Hotspots und Imagemaps und beim Erstellen interaktiver Videos und Bilder zu.
 
 In diesem Karussellbanner verwenden Sie beispielsweise den Produktselektor, wenn Sie einen Hotspot oder eine Imagemap mit einer Schnellansichtsseite verknüpfen. Verwenden Sie den Website-Selektor, wenn Sie einen Hotspot oder eine Imagemap mit einem Hyperlink verknüpfen. Verwenden Sie den Asset-Selektor, wenn Sie eine Folie erstellen.
 
@@ -34,7 +34,7 @@ Wenn Sie auswählen (statt dies manuell einzugeben), wo sich Hotspots oder Image
 
 Verwenden Sie den Produktselektor, um ein Produkt auszuwählen, wenn Sie möchten, dass ein Hotspot oder eine Imagemap eine Schnellansicht zu einem bestimmten Produkt in Ihrem Produktkatalog zur Verfügung zu stellt.
 
-1. Gehen Sie zum Karussellset, interaktiven Bild oder interaktiven Video und wählen Sie die Registerkarte **[!UICONTROL Aktionen]** (nur verfügbar, wenn Sie einen Hotspot oder eine Imagemap definiert haben).
+1. Gehen Sie zum Karussell-Set, interaktiven Bild oder interaktiven Video und wählen Sie die Registerkarte **[!UICONTROL Aktionen]** (nur verfügbar, wenn Sie einen Hotspot oder eine Imagemap definiert haben).
 
    Der Produktselektor befindet sich im Bereich **[!UICONTROL Aktionstyp]**.
 
@@ -72,7 +72,7 @@ Verwenden Sie den Produktselektor, um ein Produkt auszuwählen, wenn Sie möchte
 
 Verwenden Sie den Website-Selektor, um eine Web-Seite auszuwählen, wenn Sie einen Hotspot oder eine Imagemap mit einer Web-Seite verknüpfen möchten, die in Experience Manager Sites verwaltet wird.
 
-1. Gehen Sie zum Karussellset, interaktiven Bild oder interaktiven Video und wählen Sie die Registerkarte **[!UICONTROL Aktionen]** (nur verfügbar, wenn Sie einen Hotspot oder eine Imagemap definiert haben).
+1. Gehen Sie zum Karussell-Set, interaktiven Bild oder interaktiven Video und wählen Sie die Registerkarte **[!UICONTROL Aktionen]** (nur verfügbar, wenn Sie einen Hotspot oder eine Imagemap definiert haben).
 
    Der Site-Selektor befindet sich im Bereich **[!UICONTROL Aktionstyp]**.
 
@@ -90,11 +90,11 @@ Verwenden Sie den Website-Selektor, um eine Web-Seite auszuwählen, wenn Sie ein
 
 ## Verwenden der Asset-Auswahl {#selecting-assets}
 
-Verwenden Sie diesen Selektor, um Bilder zur Verwendung in Karussellbannern, interaktiven Videos, Bildsets, gemischten Mediensets und Rotationssets auszuwählen. In interaktiven Videos ist der Asset-Selektor verfügbar, wenn Sie auf **[!UICONTROL Assets auswählen]** auf der Registerkarte **[!UICONTROL Inhalt]** klicken. In Karussellsets ist der Asset-Selektor verfügbar, wenn Sie Folie erstellen. In Bildsets, gemischten Mediensets und Rotationssets ist der Asset-Selektor verfügbar, wenn Sie ein neues Bildset, gemischtes Medienset oder Rotationsset erstellen.
+Verwenden Sie diesen Selektor, um Bilder zur Verwendung in Karussellbannern, interaktiven Videos, Bild-Sets, gemischten Mediensets und Rotations-Sets auszuwählen. In interaktiven Videos ist der Asset-Selektor verfügbar, wenn Sie auf **[!UICONTROL Assets auswählen]** auf der Registerkarte **[!UICONTROL Inhalt]** klicken. In Karussell-Sets ist der Asset-Selektor verfügbar, wenn Sie Folie erstellen. In Bild-Sets, gemischten Mediensets und Rotations-Sets ist der Asset-Selektor verfügbar, wenn Sie ein neues Bild-Set, gemischtes Medienset oder Rotations-Set erstellen.
 
 Weitere Informationen finden Sie unter [Asset-Auswahl](search-assets.md#assetpicker).
 
-1. Gehen Sie zum Karussellset und erstellen Sie eine Folie. Gehen Sie alternativ zum interaktiven Video, zur Registerkarte **[!UICONTROL Inhalt]** und wählen Sie Assets aus. Erstellen Sie alternativ ein gemischtes Medienset, Bildset oder Rotationsset.
+1. Gehen Sie zum Karussell-Set und erstellen Sie eine Folie. Gehen Sie alternativ zum interaktiven Video, zur Registerkarte **[!UICONTROL Inhalt]** und wählen Sie Assets aus. Erstellen Sie alternativ ein gemischtes Medienset, Bild-Set oder Rotations-Set.
 1. Klicken Sie auf das Symbol **[!UICONTROL Asset-Selektor]** (Ordner mit Lupe) und gehen Sie zu einem Asset.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)

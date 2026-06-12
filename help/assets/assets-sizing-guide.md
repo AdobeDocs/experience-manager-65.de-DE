@@ -8,7 +8,7 @@ exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1645'
 ht-degree: 100%
 
 ---
@@ -110,13 +110,13 @@ Für [!DNL Assets] gibt es verschiedene Anwendungsfälle, bei denen die Netzwerk
 
 Bei der Größenanpassung einer Implementierung müssen die Systembeschränkungen beachtet werden. Wenn die vorgeschlagene Implementierung über diese Beschränkungen hinausgeht, setzen Sie auf kreative Strategien wie die Partitionierung der Assets über mehrere [!DNL Assets]-Implementierungen hinweg.
 
-Die Dateigröße ist nicht der einzige Faktor, der zu Speicherplatzproblemen („Out of Memory“, OOM) beiträgt. Sie treten auch in Abhängigkeit von den Bildabmessungen auf. Sie können OOM-Probleme durch eine höhere Heap-Größe beim Starten von [!DNL Experience Manager] vermeiden. 
+Die Dateigröße ist nicht der einzige Faktor, der zu Speicherplatzproblemen („Out of Memory“, OOM) beiträgt. Sie treten auch in Abhängigkeit von den Bildabmessungen auf. Sie können OOM-Probleme durch eine höhere Heap-Größe beim Starten von [!DNL Experience Manager] vermeiden.
 
 Außerdem können Sie die Eigenschaft für die Schwellenwertgröße der `com.day.cq.dam.commons.handler.StandardImageHandler`-Komponente in Configuration Manager so bearbeiten, dass eine temporäre Zwischendatei größer als null verwendet wird.
 
 ## Maximale Anzahl von Assets {#maximum-number-of-assets}
 
-Die Anzahl der Dateien, die in einem Datenspeicher vorhanden sein können, kann aufgrund von Dateisystembeschränkungen auf 2,1 Milliarden begrenzt sein.  Es ist wahrscheinlich, dass aufgrund einer großen Anzahl von Knoten lange vor Erreichen des Datenspeicherlimits Probleme mit dem Repository auftreten.
+Die Anzahl der Dateien, die in einem Datenspeicher vorhanden sein können, kann aufgrund von Dateisystembeschränkungen auf 2,1 Milliarden begrenzt sein. Es ist wahrscheinlich, dass aufgrund einer großen Anzahl von Knoten lange vor Erreichen des Datenspeicherlimits Probleme mit dem Repository auftreten.
 
 Verwenden Sie die Camera Raw-Bibliothek, wenn die Ausgabedarstellungen falsch generiert werden. In diesem Fall sollte die längste Seite des Bildes jedoch nicht größer als 65.000 Pixel sein. Außerdem sollte das Bild höchstens 512 MP (512 x 1024 x 1024 Pixel) enthalten. Die Größe des Assets spielt keine Rolle.
 

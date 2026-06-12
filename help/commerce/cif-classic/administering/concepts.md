@@ -8,7 +8,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '4439'
+source-wordcount: '4534'
 ht-degree: 99%
 
 ---
@@ -115,7 +115,7 @@ Das Integrations-Framework stellt die API, eine Reihe von Komponenten zur Verans
 
 AEM E-Commerce wird mit einer E-Commerce-Engine implementiert:
 
-* Das E-Commerce-Integrations-Framework ermöglicht Ihnen die unkomplizierte Integration einer E-Commerce-Engine in AEM. Die speziell entwickelte E-Commerce-Engine steuert Produktdaten, Warenkörbe, Bezahlungen und die Auftragserfüllung. AEM steuert die Datenanzeige und Marketing-Kampagnen.
+* Das E-Commerce-Integrations-Framework ermöglicht Ihnen die unkomplizierte Integration einer E-Commerce-Engine in AEM. Die speziell entwickelte E-Commerce-Engine steuert Produktdaten, Warenkörbe, Checkout und die Auftragserfüllung. AEM steuert die Datenanzeige und Marketing-Kampagnen.
 
 
 >[!NOTE]
@@ -538,7 +538,7 @@ Mit Promotions können Sie in Verbindung mit Gutscheinen Szenarien umsetzen wie 
 
 Promotions werden nicht von Produktinformations-Managern verwaltet, sondern von Marketing-Managern:
 
-* Eine Promotion ist eine seitenbasierte Komponente, die mit der Websites-Konsole erstellt und bearbeitet wird. &grave;&grave;
+* Eine Promotion ist eine seitenbasierte Komponente, die mit der Websites-Konsole erstellt und bearbeitet wird. ``
 * Zu Promotions gehört:
 
    * Eine Priorität
@@ -577,9 +577,9 @@ Eine Promotion kann entweder in einem Erlebnis oder direkt in der Kampagne gespe
 
 >[!NOTE]
 >
->[hybris-Promotions](https://www.hybris.com/modules/promotion) und [hybris-Gutscheine](https://www.hybris.com/en/modules/voucher) decken alles ab, was sich auf den Warenkorb auswirkt und mit der Preisgestaltung in Zusammenhang steht. Promotionsspezifische Marketing-Inhalte (wie Banner usw.) sind nicht Teil der Hybris-Promotion.
+>[hybris-Promotions](https://www.hybris.com/modules/promotion) und [hybris-Gutscheine](https://www.hybris.com/en/modules/voucher) decken alles ab, was sich auf den Warenkorb auswirkt und mit der Preisgestaltung in Zusammenhang steht. Promotionsspezifische Marketing-Inhalte (z. B. Banner usw.) ist nicht Teil der Hybris-Promotion.
 
-## Personalisierung  {#personalization}
+## Personalisierung {#personalization}
 
 ### Kundenregistrierung und -konten {#customer-registration-and-accounts}
 
@@ -645,7 +645,7 @@ Ihre Site muss eine Auswahl von Adressen speichern, einschließlich Versand-, Ab
 Mit der Adressbuch-Komponente können Sie:
 
 * Adressdaten im Buch bearbeiten
-* eine Adresse aus dem Buch für die Lieferadresse auswählen
+* eine Adresse aus dem Buch für die Versandadresse auswählen
 * eine Adresse aus dem Buch für die Rechnungsadresse auswählen
 
 Sie können auswählen, welche Adresse Sie als Standard verwenden möchten.
@@ -665,7 +665,7 @@ Das Adressbuch wird verwendet, wenn Sie mit Ihrem Warenkorb zum Checkout gehen:
 ![chlimage_1-15](/help/sites-administering/assets/chlimage_1-15.png)
 
 Adressen werden unter `user_home/profile/addresses` aufbewahrt.
-Die Adresse von Alison Parker befindet sich beispielsweise unter /home/users/geometrixx/aparker@geometrixx.info/profile/addresses.
+Beispiel: Für Alison Parker befindet sie sich unter /home/users/geometrixx/aparker@geometrixx.info/profile/addresses.
 
 Sie können auswählen, welche Adresse Sie als Standard festlegen möchten. Diese Information wird im Käuferprofil gespeichert, nicht zusammen mit der Anschrift. Als Wert für die Profileigenschaft `address.default` wird der Pfad der ausgewählten Adresse festgelegt.
 
@@ -756,7 +756,7 @@ Es werden verschiedene Informationen gespeichert, beispielsweise:
 
 * **Status**
 
-   Der Status der Bestellung z. B. „versendet“
+  Der Status der Bestellung z. B. „versendet“
 
 * **Währung**
 
@@ -794,7 +794,7 @@ Es werden verschiedene Informationen gespeichert, beispielsweise:
 
   Status der Zahlung.
 
-* **Lieferadresse**
+* **Versandadresse**
 
   Die Adresse, an die die Waren geliefert werden sollen.
 
@@ -812,7 +812,7 @@ Es werden verschiedene Informationen gespeichert, beispielsweise:
 
 >[!NOTE]
 >
->Welche Felder im Assistenten „Auftrag erstellen“ verwendet werden, hängt davon ab, ob für den Ort eine Touch-optimierte Strukturvorlage definiert ist. Im generischen Beispiel findet sich diese unter:
+>Welche Felder im Assistenten „Auftrag erstellen“ verwendet werden, hängt davon ab, ob für den Standort eine Touch-optimierte Strukturvorlage definiert ist. Im generischen Beispiel ist dies zu finden unter:
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 
 Wenn eine Bestellung in AEM gespeichert wird, zeigt die Bestellungs-Konsole Folgendes für jede Bestellung an:
