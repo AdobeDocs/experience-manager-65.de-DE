@@ -73,7 +73,7 @@ Die Produkt-Teaser-Komponente wird im Laufe dieses Tutorials erweitert. Als erst
 
 3. Erweitern Sie das seitliche Bedienfeld (falls noch nicht geschehen) und wechseln Sie im Dropdown-Menü der Asset-Suche zu **Produkte**. Nun sollte eine Liste mit verfügbaren Produkten einer verbundenen Adobe Commerce-Instanz angezeigt werden. Wählen Sie ein Produkt aus und ziehen Sie es auf der Seite per **Drag-and-Drop** auf die Komponente **Produkt-Teaser**.
 
-   ![Produkt-Teaser ziehen und ablegen ](../assets/customize-cif-components/drag-drop-product-teaser.png)
+   ![Produkt-Teaser ziehen und ablegen &#x200B;](../assets/customize-cif-components/drag-drop-product-teaser.png)
 
    >[!NOTE]
    >
