@@ -11,8 +11,8 @@ feature: Operations
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2314'
-ht-degree: 100%
+source-wordcount: '2225'
+ht-degree: 99%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 100%
 
 Es gibt zwei Möglichkeiten zum Sichern und Wiederherstellen von Repository-Inhalten in AEM:
 
-* Sie können ein externes Backup des Repositorys erstellen und dieses an einem sicheren Ort speichern.  Wenn das Repository abstürzt, können Sie den vorherigen Zustand des Repositorys wieder herstellen.
-* Sie können interne Versionen der Repository-Inhalte erstellen.  Diese Versionen werden zusammen mit den Inhalten im Repository gespeichert, sodass Sie Knoten und hierarchische Strukturen, die Sie gelöscht oder geändert haben, schnell wiederherstellen können.
+* Sie können ein externes Backup des Repositorys erstellen und dieses an einem sicheren Ort speichern. Wenn das Repository abstürzt, können Sie den vorherigen Zustand des Repositorys wieder herstellen.
+* Sie können interne Versionen der Repository-Inhalte erstellen. Diese Versionen werden zusammen mit den Inhalten im Repository gespeichert, sodass Sie Knoten und hierarchische Strukturen, die Sie gelöscht oder geändert haben, schnell wiederherstellen können.
 
 ## Allgemein {#general}
 
@@ -40,9 +40,9 @@ Führen Sie ein Backup nicht zeitgleich mit einer Datenspeicherbereinigung durch
 
 ## Offline-Backup {#offline-backup}
 
-Sie können immer ein Offline-Backup durchführen.  Dafür müssen Sie zwar AEM stoppen, dies kann aber hinsichtlich der benötigten Zeit im Vergleich zu einem Online-Backup effizienter sein.
+Sie können immer ein Offline-Backup durchführen. Dafür müssen Sie zwar AEM stoppen, dies kann aber hinsichtlich der benötigten Zeit im Vergleich zu einem Online-Backup effizienter sein.
 
-In den meisten Fällen erstellen Sie mithilfe eines Dateisystem-Snapshots eine schreibgeschützte Kopie der zu dem Zeitpunkt gespeicherten Inhalte.  Führen Sie folgende Schritte zum Erstellen eines Offline-Backups aus:
+In den meisten Fällen erstellen Sie mithilfe eines Dateisystem-Snapshots eine schreibgeschützte Kopie der zu dem Zeitpunkt gespeicherten Inhalte. Führen Sie folgende Schritte zum Erstellen eines Offline-Backups aus:
 
 * Stoppen Sie das Programm.
 * Erstellen Sie ein Snapshot-Backup.
@@ -52,18 +52,18 @@ Da das Snapshot-Backup normalerweise nur ein paar Sekunden dauert, ist die gesam
 
 ## Online-Backup {#online-backup}
 
-Bei dieser Backup-Methode erstellen Sie ein Backup vom gesamten Repository, einschließlich aller darunter bereitgestellten Anwendungen wie beispielsweise AEM.  Das Backup enthält die Inhalte, den Versionsverlauf, die Konfiguration, die Software, Hotfixes, benutzerdefinierte Anwendungen, Protokolldateien, Suchindizes usw.  Falls Sie die Clustering-Option verwenden oder der freigegebene Ordner ein Unterverzeichnis von `crx-quickstart` ist (entweder physikalisch oder per Softlink), wird das freigegebene Verzeichnis ebenfalls gesichert.
+Bei dieser Backup-Methode erstellen Sie ein Backup vom gesamten Repository, einschließlich aller darunter bereitgestellten Anwendungen wie beispielsweise AEM. Das Backup enthält die Inhalte, den Versionsverlauf, die Konfiguration, die Software, Hotfixes, benutzerdefinierte Anwendungen, Protokolldateien, Suchindizes usw. Falls Sie die Clustering-Option verwenden oder der freigegebene Ordner ein Unterverzeichnis von `crx-quickstart` ist (entweder physikalisch oder per Softlink), wird das freigegebene Verzeichnis ebenfalls gesichert.
 
 Sie können das gesamte Repository (und alle Anwendungen) zu einem späteren Zeitpunkt wiederherstellen.
 
-Bei dieser Methode wird ein „Hot“- oder „Online“-Backup durchgeführt, d. h. das Backup wird durchgeführt, während das Repository läuft.  So kann das Repository während des Backups verwendet werden. Diese Methode kann bei standardmäßigen, TAR-basierten Repository-Instanzen verwendet werden.
+Bei dieser Methode wird ein „Hot“- oder „Online“-Backup durchgeführt, d. h. das Backup wird durchgeführt, während das Repository läuft. So kann das Repository während des Backups verwendet werden. Diese Methode kann bei standardmäßigen, TAR-basierten Repository-Instanzen verwendet werden.
 
 Bei der Erstellung eines Backups haben Sie die folgenden Möglichkeiten:
 
 * Backup in einem Verzeichnis mithilfe des integrierten AEM-Backup-Tools
 * Backup in einem Verzeichnis mithilfe eines Dateisystem-Snapshots
 
-In jedem Fall wird während des Backups ein Image (oder Snapshot) des Repositorys erstellt.  Anschließend sollte der Backup-Agent des Systems dafür Sorge tragen, dass dieses Image an ein dediziertes Backup-System (Bandlaufwerk) übermittelt wird.
+In jedem Fall wird während des Backups ein Image (oder Snapshot) des Repositorys erstellt. Anschließend sollte der Backup-Agent des Systems dafür Sorge tragen, dass dieses Image an ein dediziertes Backup-System (Bandlaufwerk) übermittelt wird.
 
 >[!NOTE]
 >
@@ -71,11 +71,11 @@ In jedem Fall wird während des Backups ein Image (oder Snapshot) des Repository
 
 >[!CAUTION]
 >
->Bei dem Online-Backup wird nur das Dateisystem gesichert.  Wenn Sie die Repository-Inhalte und/oder die Repository-Dateien in einer Datenbank speichern, muss diese Datenbank separat gesichert werden.  Falls Sie AEM mit MongoDB verwenden, lesen Sie die Dokumentation zur Verwendung der [nativen Backup-Tools von MongoDB](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/).
+>Bei dem Online-Backup wird nur das Dateisystem gesichert. Wenn Sie die Repository-Inhalte und/oder die Repository-Dateien in einer Datenbank speichern, muss diese Datenbank separat gesichert werden. Falls Sie AEM mit MongoDB verwenden, lesen Sie die Dokumentation zur Verwendung der [nativen Backup-Tools von MongoDB](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/).
 
 ### AEM-Online-Backup {#aem-online-backup}
 
-Mithilfe eines Online-Backups von Ihrem Repository können Sie Backup-Dateien erstellen, herunterladen und löschen.  Dies ist eine „Hot“- oder „Online“-Backup-Funktion, d. h. sie kann während der normalen Verwendung des Repositorys im Lese-/Schreibmodus ausgeführt werden.
+Mithilfe eines Online-Backups von Ihrem Repository können Sie Backup-Dateien erstellen, herunterladen und löschen. Dies ist eine „Hot“- oder „Online“-Backup-Funktion, d. h. sie kann während der normalen Verwendung des Repositorys im Lese-/Schreibmodus ausgeführt werden.
 
 >[!CAUTION]
 >
@@ -106,8 +106,8 @@ Wenn unter **Zielpfad** ein Verzeichnis angegeben ist, wird das Image des Reposi
 
 **Verzögerung** Zeigt eine Zeitverzögerung (in Millisekunden) an, damit die Repository-Leistung nicht beeinträchtigt wird. Standardmäßig wird das Repository-Backup mit voller Geschwindigkeit ausgeführt. Sie können die Geschwindigkeit der Erstellung eines Online-Backups verringern, sodass das Backup nicht dazu führt, dass andere Aufgaben langsamer ausgeführt werden.
 
-Achten Sie bei der Festlegung einer sehr großen Verzögerung darauf, dass das Online-Backup nicht länger als 24 Stunden dauert. Andernfalls verwerfen Sie dieses Backup, da es möglicherweise nicht alle Binärdateien enthält.
- Eine Verzögerung von 1 ms führt in der Regel zu einer 10 %igen CPU-Auslastung und eine Verzögerung von 10 ms führt normalerweise zu einer CPU-Auslastung von weniger als 3 %. Die Gesamtverzögerung in Sekunden können Sie wie folgt schätzen: Repository-Größe (in MB) multipliziert mit der Verzögerung in Millisekunden geteilt durch 2 (wenn die ZIP-Option verwendet wird) bzw. geteilt durch 4 (wenn das Backup in einem Verzeichnis gespeichert wird). Das bedeutet, dass sich die Backup-Zeit durch Sichern eines 200 MB großen Repositorys in einem Verzeichnis bei einer Verzögerung von 1 Millisekunde um 50 Sekunden erhöht. 
+Stellen Sie bei Verwendung einer sehr großen Verzögerung sicher, dass das Online-Backup nicht länger als 24 Stunden dauert. Andernfalls verwerfen Sie dieses Backup, da es möglicherweise nicht alle Binärdateien enthält.
+Eine Verzögerung von 1 Millisekunde führt in der Regel zu einer 10%igen Nutzung von CPU, und eine Verzögerung von 10 Millisekunden führt in der Regel zu einer weniger als 3%igen Nutzung von CPU. Die Gesamtverzögerung in Sekunden kann wie folgt geschätzt werden: Repository-Größe in MB, multipliziert mit Verzögerung in Millisekunden, dividiert durch 2 (bei Verwendung der ZIP-Option) oder dividiert durch 4 (bei Sicherung in ein Verzeichnis). Das bedeutet, dass ein Backup auf ein Verzeichnis eines 200 MB-Repositorys mit einer Verzögerung von 1 ms die Backup-Zeit um etwa 50 Sekunden erhöht.
 
 >[!NOTE]
 >
@@ -248,13 +248,13 @@ Sie können ein Backup wie folgt wiederherstellen:
 
 ## Paket-Backup {#package-backup}
 
-Zum Sichern und Wiederherstellen von Inhalten können Sie eine der Package Manager-Versionen verwenden. Dabei werden Inhalte über das Inhaltspaketformat gesichert und wiederhergestellt. Der Package Manager bietet mehr Flexibilität beim Definieren und Verwalten von Paketen.
+Zum Sichern und Wiederherstellen von Inhalten können Sie eine der Paket-Manager-Versionen verwenden. Dabei werden Inhalte über das Inhaltspaketformat gesichert und wiederhergestellt. Der Paket-Manager bietet mehr Flexibilität beim Definieren und Verwalten von Paketen.
 
 Weitere Informationen zu den Funktionen und Austauschbeziehungen von jedem dieser einzelnen Inhaltspaketformate finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
 
 ### Backup-Umfang {#scope-of-backup}
 
-Wenn Sie Knoten entweder mit dem Package Manager oder dem Content Zipper sichern, speichert CRX die folgenden Informationen:
+Wenn Sie Knoten entweder mit dem Paket-Manager oder dem Content Zipper sichern, speichert CRX die folgenden Informationen:
 
 * die Repository-Inhalte unterhalb der Baumstruktur, die Sie ausgewählt haben.
 * die Knotentyp-Definitionen, die für die zu sichernden Inhalte verwendet werden.

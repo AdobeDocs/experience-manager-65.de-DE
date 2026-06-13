@@ -12,8 +12,8 @@ feature: Developing,Operations
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '4830'
-ht-degree: 100%
+source-wordcount: '4969'
+ht-degree: 99%
 
 ---
 
@@ -194,7 +194,7 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 
 * Zurückgegebener Wert: die Anzahl an abgeschlossenen Workflow-Instanzen.
 
-**purgeCompleted**: Entfernt Datensätze von abgeschlossenen Workflows eines bestimmten Alters aus dem Repository. Wenn Sie häufig Workflows verwenden, verringern Sie mit diesem Vorgang regelmäßig die Größe des Repositorys. Sie können abgeschlossene Instanzen für alle Modelle bereinigen oder nur die Instanzen für ein bestimmtes Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
+**purgeCompleted**: Entfernt Einträge von abgeschlossenen Workflows eines bestimmten Alters aus dem Repository. Wenn Sie häufig Workflows verwenden, verringern Sie mit diesem Vorgang regelmäßig die Größe des Repositorys. Sie können abgeschlossene Instanzen für alle Modelle bereinigen oder nur die Instanzen für ein bestimmtes Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
 
 * Argumente:
 
@@ -252,7 +252,7 @@ Informationen zum CRX-Repository.
   </tr>
   <tr>
    <td>identifier.stability</td>
-   <td>Gibt die Stabilität von nicht referenzierbaren Knoten-IDs an. Die folgenden Werte sind möglich:
+   <td>Gibt die Stabilität von nicht referenzierbaren Knotenkennungen an. Die folgenden Werte sind möglich:
     <ul>
      <li>identifier.stability.indefinite.duration: Die IDs ändern sich nicht.</li>
      <li>identifier.stability.method.duration: Die IDs können sich zwischen Methodenaufrufen ändern.</li>
@@ -605,7 +605,7 @@ Schreibgeschützt.
 
 * Argumente:
 
-   * `master`: Ein Zeichenfolgenwert, der für die IP-Adresse oder den Computernamen des Computers steht, auf dem der Master-Repository-Knoten ausgeführt wird. 
+   * `master`: Ein Zeichenfolgenwert, der für die IP-Adresse oder den Computernamen des Computers steht, auf dem der Master-Repository-Knoten ausgeführt wird.
    * `username`: Der Benutzername, der für die Authentifizierung beim Cluster genutzt werden soll.
    * `password`: Das Kennwort, dass für die Authentifizierung genutzt werden soll.
 
@@ -621,7 +621,7 @@ Der Wert des TimeSeries-Feldes für jeden Statistiktyp, den `org.apache.jackrabb
 
 * Domain: `com.adobe.granite`
 * Typ: `TimeSeries`
-* Name: einer der folgenden Werte aus der Enum-Klasse von `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type`:
+* Name: einer der folgenden Werte aus der Aufzählungsklasse von `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type`:
 
    * BUNDLE_CACHE_ACCESS_COUNTER
    * BUNDLE_CACHE_MISS_AVERAGE
@@ -684,14 +684,14 @@ Statistische Informationen zu Repository-Abfragen.
 * Argumente: keine
 * Zurückgegebener Wert: keiner
 
-## Replikations-Agenten {#replication-agents}
+## Replikationsagenten {#replication-agents}
 
 Überwachen Sie die Dienste für jeden Replikationsagenten. Wenn Sie einen Replikationsagenten erstellen, wird der Dienst automatisch in der JMX-Konsole angezeigt.
 
 * **Domain:** com.adobe.granite.replication
 * **Typ:** agent
 * **Name:** kein Wert
-* **Eigenschaften:** {id=&quot;*Name*&quot;}, wobei *Name* der Wert der Eigenschaft für den Agentennamen ist.
+* **Eigenschaften:** {id="*Name*"}, wobei *Name* der Wert der Eigenschaft für den Agentennamen ist.
 
 ### Attribute {#attributes-3}
 

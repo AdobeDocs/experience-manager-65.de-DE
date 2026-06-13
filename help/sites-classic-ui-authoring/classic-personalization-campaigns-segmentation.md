@@ -11,7 +11,7 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '556'
 ht-degree: 100%
 
 ---
@@ -51,7 +51,7 @@ Im Rahmen der Segmentierung wird die folgende Terminologie verwendet:
 * Interessensgebiete auf Ihrer Website, einschließlich besuchter Seiten und gekaufter Produkte.
 * Interessensgebiete auf der verweisenden Website, einschließlich verwendeter Suchbegriffe oder Anzeigen, auf die geklickt wurde.
 * Interessensgebiete auf anderen Sites, die durch Tools wie Spyjax ermittelt werden.
-* Loyalität der Besucherinnen und Besucher, Dauer des Besuchs, Häufigkeit der Besuche.
+* Treue der Besucherinnen und Besucher, Dauer des Besuchs, Häufigkeit der Besuche.
 
 **Demografische Eigenschaften**: Dabei handelt es sich um ausgewählte Merkmale der Population, darunter:
 
@@ -62,7 +62,7 @@ Im Rahmen der Segmentierung wird die folgende Terminologie verwendet:
 * Geschlecht
 * Standort
 
-**Abgeleitete Eigenschaften**  
+**Abgeleitete Eigenschaften**
 
 Manche demografischen Eigenschaften können ohne Registrierung nur schwer ermittelt werden, können jedoch durch Kombination von verhaltensbezogenen und demografischen Eigenschaften abgeleitet werden.
 
