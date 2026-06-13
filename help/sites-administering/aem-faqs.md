@@ -7,8 +7,8 @@ feature: Configuring
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 100%
+source-wordcount: '999'
+ht-degree: 89%
 
 ---
 
@@ -26,8 +26,8 @@ Bei aktiviertem Binary-Less-Modus enthalten die verteilten Inhaltspakete Verweis
 
 #### Wie aktiviere ich die Binary-Less-Verteilung? {#how-do-i-enable-binary-less-distribution}
 
-Stellen Sie zur Aktivierung der Binary-Less-Verteilung einen freigegebenen Blob-Speicher bereit.
-Überprüfen Sie die `useBinaryReferences`-Eigenschaft in der OSGi-Konfiguration mit der werkseitigen PID (`org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)*, die der Agent verwendet.
+Um die Binary-Less-Verteilung zu aktivieren, stellen Sie mit einem freigegebenen Blob-Speicher bereit.
+Überprüfen Sie die `useBinaryReferences`-Eigenschaft in der OSGi-Konfiguration mit der werkseitigen PID (`org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* die der Agent verwendet.
 
 #### Wie kann ich Berechtigungen aktivieren, während ich eine Sprachkopie für Inhaltsautorinnen und Inhaltsautoren in AEM erstelle? {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
 
@@ -39,8 +39,8 @@ Wenn Autorinnen und Autoren auch Projekte verwalten müssen, fügen Sie sie als 
 
 Erstellen Sie einen Sprachstamm und eine Sprachkopie innerhalb des Stamms, bevor Sie ein Übersetzungsprojekt erstellen.
 
-Beispiel: 
-Erstellen Sie einen Sprach-Stamm unter `/content/geometrixx` mit dem Namen `fr_LU` (und dem Titel „Französisch (Luxemburg)“). Erstellen Sie anschließend eine Sprachkopie der Seite aus dem Bereich „Verweise“ und navigieren Sie zur Option `Create structure only` in `Create & Translate`. Erstellen Sie abschließend ein Übersetzungsprojekt und fügen Sie dann die Sprachkopie zum Übersetzungsauftrag hinzu.
+Zum Beispiel:
+Erstellen Sie einen Sprachstamm unter `/content/geometrixx` mit dem Namen `fr_LU` (und dem Titel Französisch (Luxemburg)). Erstellen Sie anschließend eine Sprachkopie der Seite aus dem Bereich „Verweise“ und navigieren Sie zur Option `Create structure only` in `Create & Translate`. Erstellen Sie abschließend ein Übersetzungsprojekt und fügen Sie dann die Sprachkopie zum Übersetzungsauftrag hinzu.
 
 Einzelheiten finden Sie unter den folgenden zusätzlichen Themen:
 
@@ -49,8 +49,8 @@ Einzelheiten finden Sie unter den folgenden zusätzlichen Themen:
 
 #### Wie lassen sich AEM-Funktionen im Zusammenhang mit Anmeldeversuchen und ACL- oder Berechtigungsänderungen prüfen? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
-AEM bietet nun die Möglichkeit, administrative Änderungen zu protokollieren, um Fehlerbehebungen und Audits zu erleichtern. Standardmäßig werden die Informationen in der Datei `error.log` protokolliert. Um die Überwachung zu vereinfachen, empfiehlt es sich, diese Einträge in einer separaten Protokolldatei zu speichern.
-Informationen dazu, wie Sie Einträge in einer separaten Protokolldatei speichern, finden Sie unter [Prüfen von Benutzerverwaltungsvorgängen in AEM](/help/sites-administering/audit-user-management-operations.md).
+AEM bietet nun die Möglichkeit, administrative Änderungen zu protokollieren, um Fehlerbehebungen und Audits zu erleichtern. Standardmäßig werden die Informationen in der `error.log` protokolliert. Um die Überwachung zu vereinfachen, wird empfohlen, sie in eine separate Protokolldatei umzuleiten.
+Informationen dazu, wie Sie die Ausgabe in eine separate Protokolldatei umleiten, finden Sie unter [Prüfen von Benutzerverwaltungsvorgängen in AEM](/help/sites-administering/audit-user-management-operations.md).
 
 #### Wie kann ich SSL standardmäßig aktivieren? {#how-to-enable-ssl-by-default}
 
@@ -72,7 +72,7 @@ Wenn Entwicklerinnen und Entwickler eine Komponentenstruktur exportieren möchte
 
 #### Deaktivieren des AEM 6.4-Umfrage-Popups {#how-to-disable-aem-survey-pop-up}
 
-Sie können sich für die Erfassung von Nutzungsstatistiken entscheiden, indem Sie entweder die Touch-Benutzeroberfläche oder die Web-Konsole verwenden. Ausführliche Anweisungen finden Sie unter[ Entscheidung für die aggregierte Erfassung von Nutzungsstatistiken](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
+Sie können sich für die Erfassung von Nutzungsstatistiken entscheiden, indem Sie entweder die Touch-Benutzeroberfläche oder die Web-Konsole verwenden. Ausführliche Anweisungen finden Sie unter[&#x200B; Entscheidung für die aggregierte Erfassung von Nutzungsstatistiken](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
 #### Gibt es eine gute Ressource, die die wichtigsten Funktionen für ein Upgrade auf AEM 6.4 hervorhebt? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
 
@@ -88,10 +88,10 @@ Wenn die Person, die die Filmdateien hochlädt, keine Löschberechtigungen unter
 
 Wenn Sie über die Touch-Benutzeroberfläche eine Sprachkopie erstellen (**Verweise** > **Sprachkopie aktualisieren**), wird unter der neuen Sprache ein neuer DAM-Ordner erstellt und von dort aus wird auf Assets verwiesen.
 
-Dies ist die Standardeinstellung für vorkonfigurierte Konfigurationen. Sie können in Übersetzungskonfigurationen für die Option **Seiten-Assets übersetzen** die Einstellung **Nicht übersetzen** festlegen.
-Klicken Sie dazu in AEM 6.4 auf **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services**.
+Dies ist die Standardeinstellung für vordefinierte Konfigurationen. Sie können **Seite übersetzen Assets** in Übersetzungskonfigurationen auf **Nicht übersetzen** setzen.
+Klicken Sie dazu in AEM 6&#x200B;**auf** Tools **> Cloud-** > **Übersetzungs-Cloud-Services**.
 
-#### Wie lässt sich eine AEM-Komponente deaktivieren, die zu einem exponentiellen Wachstum des AEM-Segmentspeichers führt (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
+#### Wie lässt sich eine AEM-Komponente deaktivieren, die zu einem exponentiellen Wachstum des AEM SegmentStore führt (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 
 Sie können den OSGi Component Disabler deaktivieren. Informationen zur Nutzung dieses Dienstes finden Sie unter [OSGi Component Disabler](https://adobe-consulting-services.github.io/acs-aem-commons/features/osgi-disablers/component-disabler/index.html).
 
@@ -101,11 +101,11 @@ Als Problemumgehung können Sie die Komponente auch manuell deaktivieren und zwa
 
 #### Wie lassen sich Admin-Konsolen anpassen? {#how-to-customize-admin-consoles}
 
-AEM bietet verschiedene Methoden zum Anpassen von Konsolen und der Seitenbearbeitungsfunktionen Ihrer Autoreninstanz. Informationen zum Erstellen einer benutzerdefinierten Konsole und zum Anpassen einer Standardansicht für eine Konsole finden Sie unter [ Anpassen der Konsolen](/help/sites-developing/customizing-consoles-touch.md).
+AEM bietet verschiedene Methoden zum Anpassen von Konsolen und der Seitenbearbeitungsfunktionen Ihrer Autoreninstanz. Informationen zum Erstellen einer benutzerdefinierten Konsole und zum Anpassen einer Standardansicht für eine Konsole finden Sie unter [&#x200B; Anpassen der Konsolen](/help/sites-developing/customizing-consoles-touch.md).
 
 #### Was ist der Unterschied zwischen CoralUI 2- und CoralUI 3-basierten Komponenten? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-Für Coral3 wurde ein neuer Satz Sling-Komponenten der Granite-Benutzeroberflächen-Foundation erstellt, die sich unter [/libs/granite/ui/components/coral/foundation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html)Es gibt einen Satz für CoralUI 2-basierte Komponenten und einen Satz für CoralUI 3-basierte Komponenten. Bei dem neuen Satz handelt es sich nicht nur um eine eingefügte Kopie des alten Satzes, sondern dieser wird vielmehr bereinigt (z. B. Optimierung, Entfernung veralteter Funktionen). Daher wird empfohlen, dass eine Seite entweder nur CoralUI 3-basierte oder nur CoralUI 2-basierte Sätze verwendet.
+Für Coral3 wurde ein neuer Satz Sling-Komponenten der Granite-Benutzeroberflächen-Foundation erstellt, die sich unter [/libs/granite/ui/components/coral/foundation.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) Es gibt ein Set für CoralUI 2-basierte Komponenten und ein Set für CoralUI 3-basierte Komponenten. Bei dem neuen Satz handelt es sich nicht nur um eine eingefügte Kopie des alten Satzes, sondern dieser wird vielmehr bereinigt (z. B. Optimierung, Entfernung veralteter Funktionen). Daher wird empfohlen, dass eine Seite entweder nur CoralUI 3-basierte oder nur CoralUI 2-basierte Sätze verwendet.
 
 Ausführliche Informationen finden Sie im [Migrationsleitfaden für CoralUI 3-basierte Komponenten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
 

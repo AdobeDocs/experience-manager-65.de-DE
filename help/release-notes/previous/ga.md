@@ -7,8 +7,8 @@ feature: Release Information
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '4477'
-ht-degree: 100%
+source-wordcount: '4981'
+ht-degree: 96%
 
 ---
 
@@ -74,9 +74,9 @@ An der Benutzeroberfläche wurden verschiedene Verbesserungen vorgenommen, um si
 
 #### Aktualisierung {#upgrade}
 
-* Kunden mit AEM 6.2, 6.3 und 6.4 können direkt auf AEM 6.5 aktualisieren. Kunden, die 5.x oder 6.0/6.1 verwenden und ein direktes Upgrade durchführen möchten, müssen zunächst auf 6.4 aktualisieren. Aktualisieren Sie dann auf 6.5 oder aktualisieren Sie durch die Übertragung des Inhalts zwischen den Instanzen direkt auf AEM 6.5.
+* Kunden mit AEM 6.2, 6.3 und 6.4 können direkt auf AEM 6.5 aktualisieren. Kunden, die 5.x oder 6.0/6.1 verwenden und ein direktes Upgrade durchführen möchten, müssen zunächst auf 6.4 aktualisieren. Aktualisieren Sie dann auf 6.5 oder aktualisieren Sie durch die Übertragung des Inhalts zwischen den Instanzen direkt auf AEM 6.5.
 * Das Aktualisierungsverfahren bleibt in 6.5 größtenteils unverändert.
-* Wir unterstützen auch weiterhin die in 6.4 eingeführten Funktionen „Abwärtskompatibilität“, „Bewertung der Aktualisierungskomplexität“ und „Nachhaltige Aktualisierungen“. Für diese Bereiche wurden nach Bedarf versionsspezifische Aktualisierungen durchgeführt.
+* Wir unterstützen auch weiterhin die in 6.4 eingeführten Funktionen Abwärtskompatibilität , Bewertung der Aktualisierungskomplexität und Nachhaltige Aktualisierungen . Für diese Bereiche wurden bei Bedarf versionsspezifische Aktualisierungen vorgenommen.
 * Die Paketierung für Musterdetektoren wurde vereinfacht. Es gibt ein Paket, das Upgrades auf 6.5 für die verfügbaren Quellversionen prüft.
 * Weitere Informationen zum Upgrade-Verfahren finden Sie unter [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md).
 
@@ -206,7 +206,7 @@ Weitere Informationen zu Änderungen in AEM Screens finden Sie in den Versionsh
 * Der heruntergeladene Bericht eines Assets zeigt nun die entsprechenden Inhaltsfragmente an.
 * Hinzufügen von [Unterstützung von Inhaltsfragmenten zur HTTP-API von Assets](/help/assets/assets-api-content-fragments.md) über /api.json. Es sind APIs zum Erstellen, Aktualisieren, Lesen und Löschen von Inhaltsfragmenten vorhanden.
 
-#### Experience Fragments  {#experience-fragments}
+#### Experience Fragments {#experience-fragments}
 
 * Die Indizierung von [Experience Fragments](/help/sites-authoring/experience-fragments.md) wurde verbessert, sodass ihr Inhalt bei der Suche nach Seiten, auf denen sie verwendet werden, gefunden wird.
 * Mit der Option [In Ziel exportieren](/help/sites-administering/experience-fragments-target.md) können Sie nun das Experience Fragment als JSON (Standard ist HTML) oder beides senden.
@@ -255,7 +255,7 @@ Weitere Informationen zu Änderungen in AEM Screens finden Sie in den Versionsh
 
 #### AEM und Commerce {#aem-commerce}
 
-Verbesserungen am Commerce Integration Framework befinden sich seit AEM 6.4 in einem schnelleren Veröffentlichungszyklus. Weitere Informationen finden Sie unter [Integration von AEM und Adobe Commerce mithilfe des Commerce Integration Framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html?lang=de).
+Verbesserungen an der Commerce integration framework befinden sich seit AEM 6.4 in einem schnelleren Veröffentlichungszyklus. Weitere Informationen zur Integration von [AEM und Adobe Commerce mithilfe von Commerce integration framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html?lang=de).
 
 #### Communities-Add-on {#communities-add-on}
 
@@ -263,7 +263,8 @@ Informationen dazu, wie Sie die neueste Version erhalten, finden Sie in der Doku
 
 ##### Verbesserte Community-Aktivierung {#enhancements-to-community-engagement}
 
-Durch die **@Mentions-Unterstützung** von AEM Communities können registrierte Anwender nun im Zusammenhang mit anwendergenerierten Inhalten (User Generated Content, UGC) andere registrierte Mitglieder mit einem Tag versehen oder erwähnen („mention“), um deren Aufmerksamkeit zu erregen. Die getaggten (erwähnten) Mitglieder werden dann benachrichtigt, und zwar mit einem Deep-Link zu den entsprechenden anwendergenerierten Inhalten. Die Anwender können allerdings Web- und E-Mail-Benachrichtigungen deaktivieren/aktivieren.
+**@MentionsUnterstützung**
+In AEM Communities können registrierte Benutzer jetzt andere registrierte Mitglieder taggen (erwähnen), um ihre Aufmerksamkeit in benutzergenerierten Inhalten zu erregen. Die getaggten (erwähnten) Mitglieder werden dann benachrichtigt, und zwar mit einem Deep-Link zu den entsprechenden anwendergenerierten Inhalten. Die Anwender können allerdings Web- und E-Mail-Benachrichtigungen deaktivieren/aktivieren.
 
 ![@Mentions-Unterstützung](/help/release-notes/assets/at-mentions.png)
 
@@ -323,7 +324,7 @@ AEM 6.5 beinhaltet die folgenden neuen Funktionen und Erweiterungen mit denen A
 
 #### Integration mit [!DNL Adobe Creative Cloud] und kreative Workflows {#integration-with-adobe-creative-cloud-and-creative-workflows}
 
-[!DNL Adobe Experience Manager] bietet verschiedene Möglichkeiten, um zu integrieren und Assets für die Verwendung in Workflows freizugeben, in denen Kreativ-, Marketing- oder Business-Teams eng zusammenarbeiten. [!DNL Adobe Creative Cloud] [!DNL Experience Manager] 6.5 ermöglicht eine noch bessere Integration und stärkere Optimierung. Das Ergebnis: mehr Chancen und die Verbesserung vorhandener Methoden.
+[!DNL Adobe Experience Manager] bietet verschiedene Möglichkeiten, um mit [!DNL Adobe Creative Cloud] zu integrieren und Assets für die Verwendung in Workflows freizugeben, in denen Kreativ-, Marketing- oder Business-Teams eng zusammenarbeiten. In [!DNL Experience Manager] 6.5 wird die Integration weiter verbessert und weiter optimiert, um mehr Chancen zu bieten und die vorhandenen Methoden zu optimieren.
 
 Im Folgenden werden die spezifischen Funktionen und Integrationsmöglichkeiten von [!DNL Experience Manager] 6.5 beschrieben, mit denen Sie Ihre Content-Velocity-Anwendungsfälle optimal unterstützen können.
 
@@ -347,7 +348,7 @@ Weitere Informationen finden Sie unter [Verwenden von Adobe Stock-Assets in Expe
 
 *Abbildung: Vorschau [!DNL Adobe Stock] Bild und Lizenz von innerhalb [!DNL Experience Manager Assets].*
 
-![Durchsuchen und Filtern der lizenzierten Adobe Stock-Bilder in Experience Manager ](/help/release-notes/assets/aem-search-filters2.jpg)
+![Durchsuchen und Filtern der lizenzierten Adobe Stock-Bilder in Experience Manager &#x200B;](/help/release-notes/assets/aem-search-filters2.jpg)
 
 *Abbildung: Lizenzierte [!DNL Adobe Stock]-Bilder in [!DNL Experience Manager] suchen und filtern.*
 
@@ -478,7 +479,7 @@ Dieser Prozess der Priorisierung hat zu mehr als 750 kundenorientierten Änderun
 **Formulare**
 
 * [Pakete für AEM Forms-Funktionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de)
-* [AEM Forms – OSGi Client-SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
+* [AEM Forms OSGi Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## Sprachen {#languages}
 

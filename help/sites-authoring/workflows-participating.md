@@ -12,7 +12,7 @@ feature: Authoring,Workflow
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1534'
 ht-degree: 100%
 
 ---
@@ -75,7 +75,7 @@ Sie können einen Teilnehmerschritt wie folgt abschließen:
 
 * [im Posteingang](#completing-a-participant-step-inbox)
 * [im Seiten-Editor](#completing-a-participant-step-page-editor)
-* [Zeitleiste](#completing-a-participant-step-timeline)
+* [Timeline](#completing-a-participant-step-timeline)
 * beim [Öffnen eines Workflow-Elements zur Ansicht von Details](#opening-a-workflow-item-to-view-details-and-take-actions)
 
 #### Durchführen eines Teilnehmerschritts: Posteingang {#completing-a-participant-step-inbox}
@@ -97,11 +97,11 @@ Führen Sie die folgenden Schritte aus, um das Arbeitselement abzuschließen:
 1. Das Dialogfeld **Arbeitselement fertigstellen** wird geöffnet. Gehen Sie in der Dropdown-Auswahl zu **Nächster Schritt** und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
-#### Durchführen eines Teilnehmerschritts: Zeitleiste {#completing-a-participant-step-timeline}
+#### Durchführen eines Teilnehmerschritts: Timeline {#completing-a-participant-step-timeline}
 
-Sie können auch die Zeitleiste verwenden, um einen Schritt abzuschließen und zum nächsten Schritt zu gelangen:
+Sie können auch die Timeline verwenden, um einen Schritt abzuschließen und zum nächsten Schritt zu gelangen:
 
-1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Zeitleiste** (oder öffnen Sie die **Zeitleiste** und wählen Sie die Seite aus):
+1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Timeline** (oder öffnen Sie die **Timeline** und wählen Sie die Seite aus):
 
    ![screen-shot_2019-03-05at120744](assets/screen-shot_2019-03-05at120744.png)
 
@@ -134,7 +134,7 @@ Das Delegieren eines Teilnehmerschritts ist möglich:
 
 * [im Posteingang](#delegating-a-participant-step-inbox)
 * [im Seiten-Editor](#delegating-a-participant-step-page-editor)
-* [Zeitleiste](#delegating-a-participant-step-timeline)
+* [Timeline](#delegating-a-participant-step-timeline)
 * beim [Öffnen eines Workflow-Elements zur Ansicht von Details](#opening-a-workflow-item-to-view-details-and-take-actions)
 
 #### Delegieren eines Teilnehmerschritts: Posteingang {#delegating-a-participant-step-inbox}
@@ -156,11 +156,11 @@ Gehen Sie folgendermaßen vor, um ein Arbeitselement zu delegieren:
 1. Ein Dialogfeld wird angezeigt. Wählen Sie in der Dropdown-Auswahl die Option **Benutzer** aus (dabei kann es sich auch um eine Gruppe handeln) und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
-#### Delegieren eines Teilnehmerschritts: Zeitleiste {#delegating-a-participant-step-timeline}
+#### Delegieren eines Teilnehmerschritts: Timeline {#delegating-a-participant-step-timeline}
 
-Sie können auch die Zeitleiste verwenden, um einen Schritt zu delegieren und/oder zuzuweisen:
+Sie können auch die Timeline verwenden, um einen Schritt zu delegieren und/oder zuzuweisen:
 
-1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Zeitleiste** (oder öffnen Sie die **Zeitleiste** und wählen Sie die Seite aus).
+1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Timeline** (oder öffnen Sie die **Timeline** und wählen Sie die Seite aus).
 1. Klicken Sie auf das Warnbanner, um die verfügbaren Aktionen anzuzeigen. Wählen Sie **Bevollmächtigten ändern**:
 
    ![screen-shot_2019-03-05at120453-2](assets/screen-shot_2019-03-05at120453-2.png)
@@ -184,7 +184,7 @@ Das Wechseln zu einem vorherigen Teilnehmerschritt ist möglich:
 
 * [im Posteingang](#performing-step-back-on-a-participant-step-inbox)
 * [im Seiten-Editor](#performing-step-back-on-a-participant-step-page-editor)
-* [Zeitleiste](#performing-step-back-on-a-participant-step-timeline)
+* [Timeline](#performing-step-back-on-a-participant-step-timeline)
 * beim [Öffnen eines Workflow-Elements zur Ansicht von Details](#opening-a-workflow-item-to-view-details-and-take-actions)
 
 #### Wechseln zu einem vorherigen Teilnehmerschritt: Posteingang {#performing-step-back-on-a-participant-step-inbox}
@@ -207,11 +207,11 @@ Gehen Sie dazu folgendermaßen vor:
 1. Wählen Sie die Option **Vorheriger Schritt** aus und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
-#### Wechseln zu einem vorherigen Teilnehmerschritt: Zeitleiste {#performing-step-back-on-a-participant-step-timeline}
+#### Wechseln zu einem vorherigen Teilnehmerschritt: Timeline {#performing-step-back-on-a-participant-step-timeline}
 
-Sie können auch die Zeitleiste verwenden, um zu einem vorherigen Schritt zurückzukehren:
+Sie können auch die Timeline verwenden, um zu einem vorherigen Schritt zurückzukehren:
 
-1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Zeitleiste** (oder öffnen Sie die **Zeitleiste** und wählen Sie die Seite aus).
+1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Timeline** (oder öffnen Sie die **Timeline** und wählen Sie die Seite aus).
 1. Klicken Sie auf das Warnbanner, um die verfügbaren Aktionen anzuzeigen. Wählen Sie **Zurücksetzen**:
 
    ![screen-shot_2019-03-05at121131](assets/screen-shot_2019-03-05at121131.png)

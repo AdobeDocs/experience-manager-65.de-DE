@@ -12,7 +12,7 @@ feature: Operations
 role: Admin
 source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1905'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ AEM verwendet das Repository als Speicher für verschiedene interne und bereinig
 * Workflow-Payloads
 * Während des DAM-Renderings temporär erstellte Assets
 
-Wenn eines dieser temporären Objekte groß genug ist, Speicherplatz im Datenspeicher zu beanspruchen, und wenn das Objekt schließlich nicht mehr genutzt wird, bleibt der Datenspeichereintrag selbst als „Ausschuss“ vorhanden. In einer typischen WCM-Autoren-/Veröffentlichungsanwendung ist die größte Quelle von Ausschussdaten dieser Art in der Regel der Prozess der Aktivierung der Veröffentlichung. Wenn Daten für die Veröffentlichung repliziert werden, werden diese zunächst in einem effizienten Datenformat namens „Durbo“ in Sammlungen erfasst und im Repository unter `/var/replication/data` gespeichert. Die Datenbundles übersteigen oft den kritischen Größenschwellenwert für den Datenspeicher und werden daher als Datenspeichersätze gespeichert. Wenn die Replikation abgeschlossen ist, wird der Knoten in `/var/replication/data` gelöscht, doch der Datenspeichersatz bleibt als „Garbage“ bestehen.
+Wenn eines dieser temporären Objekte groß genug ist, Speicherplatz im Datenspeicher zu beanspruchen, und wenn das Objekt schließlich nicht mehr genutzt wird, bleibt der Datenspeichereintrag selbst als „Ausschuss“ vorhanden. In einer typischen WCM-Autoren-/Veröffentlichungsanwendung ist die größte Quelle von Ausschussdaten dieser Art in der Regel der Prozess der Aktivierung der Veröffentlichung. Wenn Daten für die Veröffentlichung repliziert werden, werden diese zunächst in einem effizienten Datenformat namens „Durbo“ in Sammlungen erfasst und im Repository unter `/var/replication/data` gespeichert. Die Datenbundles übersteigen oft den kritischen Größenschwellenwert für den Datenspeicher und werden daher als Datenspeicherungs-Einträge gespeichert. Wenn die Replikation abgeschlossen ist, wird der Knoten in `/var/replication/data` gelöscht, doch der Datenspeicherungs-Eintrag bleibt als „Garbage“ bestehen.
 
 Eine weitere Quelle von wiederherstellbaren Ausschussdaten sind Pakete. Paketdaten werden – wie alles andere auch – im Repository und bei Paketen, die größer sind als 4 KB, im Datenspeicher gespeichert. Während eines Entwicklungsprojekts oder im Laufe der Zeit können Pakete bei der Wartung eines Systems viele Male zusammengestellt und neu erstellt werden, wobei jede Version zu einem neuen Datenspeichereintrag führt, durch den der Dateneintrag der vorherigen Version verwaist.
 
@@ -55,13 +55,13 @@ Dieser Ansatz funktioniert bei einem einzelnen Knoten mit einem privaten Datensp
 
 >[!NOTE]
 >
->Wenn Sie die automatische Bereinigung für einen eingerichteten Cluster- oder freigegebenen Speicher (mit Mongo oder Segment-Tar) durchführen, werden im Protokoll möglicherweise Warnungen angezeigt, wonach bestimmte Blob-IDs nicht gelöscht werden können. Dies geschieht, weil während einer vorherigen automatischen Bereinigung gelöschte Blob-IDs fälschlicherweise erneut von anderen Cluster- oder Freigabeknoten referenziert werden, denen die Informationen zu den ID-Löschungen fehlen. Daher wird bei der automatischen Bereinigung eine Warnung protokolliert, wenn versucht wird, eine bereits im vorherigen Durchgang gelöschte ID zu entfernen. Dieses Verhalten wirkt sich weder auf die Leistung noch auf die Funktionalität aus.
+>Wenn Sie die Speicherbereinigung für einen eingerichteten Cluster- oder freigegebenen Speicher (mit Mongo oder Segment-Tar) durchführen, werden im Protokoll möglicherweise Warnungen angezeigt, wonach bestimmte Blob-IDs nicht gelöscht werden können. Dies geschieht, weil während einer vorherigen Speicherbereinigung gelöschte Blob-IDs fälschlicherweise erneut von anderen Cluster- oder Freigabeknoten referenziert werden, denen die Informationen zu den ID-Löschungen fehlen. Daher wird bei der Speicherbereinigung eine Warnung protokolliert, wenn versucht wird, eine bereits im vorherigen Durchgang gelöschte ID zu entfernen. Dieses Verhalten wirkt sich weder auf die Leistung noch auf die Funktionalität aus.
 
 ## Ausführen der Datenspeicherbereinigung {#running-data-store-garbage-collection}
 
 Die Datenspeicherbereinigung kann je nach dem Setup des Datenspeichers, mit dem AEM ausgeführt wird, auf drei Arten erfolgen:
 
-1. Über die [Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md) – ein Bereinigungsmechanismus, der in der Regel für die Bereinigung des Knotenspeichers verwendet wird
+1. Über die [Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md) – ein Speicherbereinigungsmechanismus, der in der Regel für die Bereinigung des Knotenspeichers verwendet wird
 
 1. Über die [Datenspeicherbereinigung](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) – ein Bereinigungsmechanismus speziell für externe Datenspeicher, der im Vorgangs-Dashboard verfügbar ist.
 1. Über die [JMX-Konsole](/help/sites-administering/jmx-console.md).
@@ -75,7 +75,7 @@ Die folgende Tabelle zeigt den Datenspeicherbereinigungstyp, der für alle unter
   <tr>
    <td><strong>Knotenspeicher</strong><br /> </td>
    <td><strong>Datenspeicher</strong></td>
-   <td><strong>Bereinigungsmechanismus</strong><br /> </td>
+   <td><strong>Speicherbereinigungsmechanismus</strong><br /> </td>
   </tr>
   <tr>
    <td>TarMK</td>

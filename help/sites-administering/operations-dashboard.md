@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '5743'
-ht-degree: 100%
+source-wordcount: '6016'
+ht-degree: 96%
 
 ---
 
@@ -156,9 +156,9 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
 
    >[!NOTE]
    >
-   >Ein neues JMX-MBean wird für jede neue Konfiguration des Apache Sling Composite Health Checks erstellt.**
+   >Ein neues JMX-MBean wird für jede neue Konfiguration der Apache Sling Verbund-Konsistenzprüfung erstellt.**
 
-1. Schließlich muss der Eintrag der erstellten Verbund-Konsistenzprüfung im Konfigurationsknoten des Vorgangs-Dashboards hinzugefügt werden. Die Vorgehensweise ist dieselbe wie bei individuellen Konsistenzprüfungen: es muss ein Knoten vom Typ **nt:unstructured** unter `/apps/settings/granite/operations/hc` angelegt werden. Die Ressourceneigenschaft des Knotens wird durch den Wert von **hc.mean.name** in der OSGi-Konfiguration definiert.
+1. Schließlich muss der Eintrag der erstellten Verbund-Konsistenzprüfung im Konfigurationsknoten des Vorgangs-Dashboards hinzugefügt werden. Die Vorgehensweise ist dieselbe wie bei individuellen Konsistenzprüfungen: unter `/apps/settings/granite/operations/hc` muss ein Knoten vom **nt:unstructured** erstellt werden. Die Ressourceneigenschaft des Knotens wird durch den Wert von **hc.mean.name** in der OSGi-Konfiguration definiert.
 
    Wenn Sie beispielsweise eine Konfiguration erstellt und den Wert **hc.mbean.name** auf **diskusage** gesetzt haben, sehen die Konfigurationsknoten wie folgt aus:
 
@@ -205,7 +205,7 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
     </ul> <p>Die maximale Länge jeder Warteschlange stammt aus separaten Konfigurationen (Oak und AEM) und kann von dieser Konsistenzprüfung nicht konfiguriert werden. Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
-   <td>Abfrage-Ausnahmelimits</td>
+   <td>Abfrage-Durchlauf-Limits</td>
    <td><p>Diese Prüfung überprüft das MBean <code>QueryEngineSettings</code>, genauer gesagt, die Attribute <code>LimitInMemory</code> und <code>LimitReads</code>, und gibt den folgenden Status zurück:</p>
     <ul>
      <li>den Status „Warnung“, wenn eines der Limits dem folgenden Wert entspricht oder größer ist <code>Integer.MAX_VALUE</code></li>
@@ -259,7 +259,7 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
    <td><p>Diese Prüfung durchläuft Replikationsagenten und untersucht deren Warteschlangen. Für das Element am Anfang der Warteschlange überprüft die Prüfung, wie oft der Agent die Replikation wiederholt versucht hat. Wenn diese Anzahl größer ist als der Wert des Parameters <code>numberOfRetriesAllowed</code>, wird eine Warnung zurückgegeben. Der Parameter <code>numberOfRetriesAllowed</code> ist konfigurierbar. </p> <p>Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DreplicationQueue%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
-   <td>Sling Jobs</td>
+   <td>Sling-Aufträge</td>
    <td>
     <div>
       Diese Prüfung überprüft die Anzahl an Aufträgen, die sich in der Warteschlange des Auftrags-Managers befinden, vergleicht sie mit dem Schwellenwert <code>maxNumQueueJobs</code> und:
@@ -296,7 +296,7 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
   </tr>
   <tr>
    <td>Sicherheitsprüfungen</td>
-   <td><p>Bei der Sicherheitsprüfung handelt es sich um einen Verbund, der die Ergebnisse mehrerer sicherheitsbezogener Prüfungen zusammenfasst. Diese individuellen Konsistenzprüfungen decken unterschiedliche Aspekte der Sicherheits-Checkliste ab, die auf der <a href="/help/sites-administering/security-checklist.md">Dokumentationsseite zur Sicherheits-Checkliste zu finden ist.</a> Die Prüfung ist als Feuerprobe beim Start der Instanz nützlich. </p> <p>Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitychecks,type=HealthCheck</a></p> </td>
+   <td><p>Bei der Sicherheitsprüfung handelt es sich um einen Verbund, der die Ergebnisse mehrerer sicherheitsbezogener Prüfungen zusammenfasst. Diese individuellen Konsistenzprüfungen decken unterschiedliche Aspekte der Sicherheits-Checkliste ab, die auf der Dokumentationsseite <a href="/help/sites-administering/security-checklist.md">Sicherheits-Checkliste“ verfügbar ist.</a> Die Prüfung ist als Feuerprobe beim Start der Instanz nützlich. </p> <p>Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitychecks,type=HealthCheck</a></p> </td>
   </tr>
   <tr>
    <td>Aktive Bundles</td>
@@ -494,7 +494,7 @@ Die folgenden Aufgaben sind im Vorgangs-Dashboard verfügbar:
 1. Die Wartungsaufgabe **Projekt-Bereinigung** unter dem Menü **Wöchentliches Wartungsfenster** unter Verwendung der Option **Hinzufügen**.
 1. Die Wartungsaufgabe **Bereinigung von Ad-hoc-Aufgaben** im Menü **Wöchentliches Wartungsfenster** unter Verwendung der Option **Hinzufügen**.
 
-Der Standardzeitrahmen für das tägliche Wartungsfenster beträgt 2:00 Uhr bis 5:00 Uhr morgens. Die Aufgaben, die für das wöchentliche Wartungsfenster konfiguriert sind, werden samstags zwischen 1:00 und 2:00 Uhr morgens ausgeführt.
+Der Standardzeitrahmen für das tägliche Wartungsfenster beträgt :00 Uhr bis 5 :00 Uhr. Die Aufgaben, die für die Ausführung im wöchentlichen Wartungsfenster konfiguriert sind:00 werden samstags zwischen 1 :00 und 2 Uhr morgens ausgeführt.
 
 Sie können diese Zeiten auch konfigurieren. Klicken Sie dazu auf das Zahnradsymbol auf einer der beiden Wartungskarten:
 
@@ -631,7 +631,7 @@ Sie können benutzerdefinierte Wartungsaufgaben als OSGi-Dienste implementieren.
 
 Neben den o. g. Diensteigenschaften müssen Sie auch die `process()`-Methode der Schnittstelle `JobConsumer` implementieren. Fügen Sie dazu den Code hinzu, der für die Wartungsaufgabe ausgeführt werden soll. Mit dem bereitgestellten `JobExecutionContext` können Sie Statusinformationen ausgeben, prüfen, ob der Auftrag von der Benutzerin bzw. dem Benutzer angehalten wurde, und ein Ergebnis erstellen (Erfolg oder Fehlgeschlagen).
 
-Für Situationen, in denen eine Wartungsaufgabe nicht auf allen Installationen ausgeführt werden soll (z. B. nur auf der Publishing-Instanz), können Sie durch Hinzufügen von `@Component(policy=ConfigurationPolicy.REQUIRE)` festlegen, dass der Dienst eine Konfiguration benötigt, um aktiv zu sein. Anschließend können Sie die entsprechende Konfiguration im Repository als abhängig vom Ausführungsmodus markieren. Weitere Informationen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository).
+Für Situationen, in denen eine Wartungsaufgabe nicht auf allen Installationen ausgeführt werden soll (z. B. nur auf der Veröffentlichungsinstanz), können Sie durch Hinzufügen von `@Component(policy=ConfigurationPolicy.REQUIRE)` festlegen, dass der Dienst eine Konfiguration benötigt, um aktiv zu sein. Anschließend können Sie die entsprechende Konfiguration im Repository als abhängig vom Ausführungsmodus markieren. Weitere Informationen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository).
 
 Nachfolgend finden Sie ein Beispiel für eine benutzerdefinierte Wartungsaufgabe, die Dateien, die in den letzten 24 Stunden geändert wurden, aus einem konfigurierbaren temporären Ordner löscht:
 
@@ -645,7 +645,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
  </tbody>
 </table>
 
-[experiencemanager-java-maintenancetask-sample ](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample)- [src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample/blob/master/src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java)
+[experiencemanager-java-maintenancetask-sample &#x200B;](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample)- [src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample/blob/master/src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java)
 
 Nachdem der Dienst bereitgestellt wurde, wird er der Benutzeroberfläche des Vorgangs-Dashboards angezeigt. Sie können ihn zu einem der verfügbaren Wartungszeitpläne hinzufügen:
 
@@ -782,7 +782,7 @@ Sie können auch eine `JSON`-Datei mit einer Zusammenfassung der Dashboard-Infor
    <td>Verteilungsseite<br /> </td>
   </tr>
   <tr>
-   <td>Replikations-Agenten</td>
+   <td>Replikationsagenten</td>
    <td>
     <ul>
      <li>eine Liste der Agenten mit blockierten Warteschlangen</li>
@@ -822,7 +822,7 @@ Sie können auch eine `JSON`-Datei mit einer Zusammenfassung der Dashboard-Infor
    <td>Seite „Workflow-Fehler“</td>
   </tr>
   <tr>
-   <td>Sling Jobs</td>
+   <td>Sling-Aufträge</td>
    <td><p>Anzahl an Sling-Aufträgen – Anzahl an Aufträgen in einem bestimmten Status (falls vorhanden):</p>
     <ul>
      <li>fehlgeschlagen</li>

@@ -1,5 +1,5 @@
 ---
-title: 'Die Tools-Konsolen '
+title: Die Tools-Konsolen
 description: Erfahren Sie mehr über die verschiedenen Tools-Konsolen in AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '597'
 ht-degree: 100%
 
 ---
 
-# Die Tools-Konsolen {#tools-consoles}
+# Die Tools-Konsolen{#tools-consoles}
 
 Die **Tools-Konsolen** bieten Zugriff auf verschiedene spezialisierte Tools, mit denen Sie Ihre Websites, digitalen Assets und andere Aspekte Ihres Content-Repositorys verwalten können. Derzeit gibt es zwei Varianten der **Tools**, je nach verwendeter Benutzeroberfläche:
 
@@ -345,7 +345,7 @@ Die **Tools-Konsolen** bieten Zugriff auf verschiedene spezialisierte Tools, mit
    <td>Community-Abzeichen</td>
   </tr>
   <tr>
-   <td>Commerce </td>
+   <td>Commerce</td>
    <td> </td>
   </tr>
   <tr>
@@ -373,7 +373,7 @@ Die **Tools-Konsolen** bieten Zugriff auf verschiedene spezialisierte Tools, mit
   </tr>
   <tr>
    <td>ClientContext-Konfigurationen<br /> </td>
-   <td>ClientContext stellt eine dynamisch zusammengestellte Sammlung von Benutzerdaten dar. Die Standard- und Experience Cloud-Konfigurationen finden Sie hier.<br /> </td>
+   <td>ClientContext ist eine dynamische Zusammenstellung von erfassten Benutzerdaten. Die Standard- und Experience Cloud-Konfigurationen finden Sie hier.<br /> </td>
   </tr>
   <tr>
    <td>Cloud Services-Konfigurationen<br /> </td>
@@ -384,7 +384,7 @@ Die **Tools-Konsolen** bieten Zugriff auf verschiedene spezialisierte Tools, mit
    <td>Konfiguration der Manager-Einstellungen.</td>
   </tr>
   <tr>
-   <td>Commerce </td>
+   <td>Commerce</td>
    <td>Ermöglicht den Zugriff auf Import-Tools und verschiedene Produktdaten.</td>
   </tr>
   <tr>
@@ -421,11 +421,11 @@ Die **Tools-Konsolen** bieten Zugriff auf verschiedene spezialisierte Tools, mit
   </tr>
   <tr>
    <td>Pakete</td>
-   <td>Ein alternativer Link zum Package Manager, der die Pakete anzeigt, die für AEM WCM geladen wurden. Ähnlich den Informationen, die im Package Manager von CRX angezeigt werden.</td>
+   <td>Ein alternativer Link zum Paket-Manager, der die Pakete anzeigt, die für AEM WCM geladen wurden. Ähnlich den Informationen, die im Paket-Manager von CRX angezeigt werden.</td>
   </tr>
   <tr>
    <td>Replikation – Replikationsagenten</td>
-   <td>Wird verwendet, um bei der Veröffentlichung von Seiten Daten aus der Autorenumgebung in die Veröffentlichungsumgebung zu replizieren, oder im Falle einer umgekehrten Replikation, um Benutzerkommentare aus der Veröffentlichungsumgebung an die Autorenumgebung zurückzugeben.</td>
+   <td>Wird verwendet, um bei der Veröffentlichung von Seiten Daten aus der Autoreninstanz in die Veröffentlichungsumgebung zu replizieren, oder im Falle einer umgekehrten Replikation, um Benutzerkommentare aus der Veröffentlichungsumgebung an die Autoreninstanz zurückzugeben.</td>
   </tr>
   <tr>
    <td>Berichte</td>

@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 100%
+source-wordcount: '750'
+ht-degree: 97%
 
 ---
 
@@ -65,7 +65,7 @@ Sie können auch eigene, benutzerdefinierte Ausführungsmodi erstellen. Diese k�
 
 * `publish` + `intranet`
 
-* nach Bedarf ...
+* nach Bedarf . . .
 
 Benutzerdefinierte Ausführungsmodi können auch bei jedem Start ausgewählt werden.
 
@@ -73,7 +73,7 @@ Benutzerdefinierte Ausführungsmodi können auch bei jedem Start ausgewählt wer
 
 Mit diesen Modi können Sie die Verwendung von Beispielinhalten steuern. Der Beispielinhalt wird vor der Erstellung des Schnellstarts definiert und kann Pakete, Konfigurationen usw. umfassen:
 
-* Mit dem Ausführungsmodus `samplecontent` wird dieser Inhalt installiert (Standardmodus). 
+* Mit dem Ausführungsmodus `samplecontent` wird dieser Inhalt installiert (Standardmodus).
 
 * Mit dem Modus `nosamplecontent` wird der Beispielinhalt nicht installiert.
 
@@ -120,10 +120,10 @@ Diese Ordner sich vom Typ `nt:folder` und sollten das entsprechende Bundle entha
 
 Wenn Sie Konfigurationen für mehrere Ausführungsmodi definiert haben, müssen Sie definieren, welcher beim Start verwendet werden soll. Es gibt mehrere Methoden, um festzulegen, welcher Ausführungsmodus verwendet werden soll. Die Reihenfolge der Auflösung lautet:
 
-1. [Systemeigenschaften (](#using-a-system-property-in-the-start-script)
-1. [](#using-the-sling-properties-file)
-1. [](#using-the-r-option)
-1. [Erkennung von Dateinamen ](#filename-detection-renaming-the-jar-file)
+1. [Systemeigenschaften (`-D`)](#using-a-system-property-in-the-start-script)
+1. [Datei `sling.properties`](#using-the-sling-properties-file)
+1. [`-r`](#using-the-r-option)
+1. [Erkennung von Dateinamen](#filename-detection-renaming-the-jar-file)
 
 Wenn Sie einen Anwendungsserver verwenden, können Sie auch [den Ausführungsmodus in web.xml](#defining-the-run-mode-in-web-xml-with-application-server) definieren.
 
@@ -141,7 +141,7 @@ Mit der Datei `sling.properties` können Sie den erforderlichen Ausführungsmodu
 
 ### Verwenden der -r-Option {#using-the-r-option}
 
-Beim Ausführen des Schnellstarts können Sie mit der `-r`-Option einen benutzerdefinierten Ausführungsmodus aktivieren. Beispielsweise können Sie folgenden Befehl verwenden, um eine AEM-Instanz mit dem dev-Ausführungsmodus zu starten. ``
+Beim Ausführen des Schnellstarts können Sie mit der `-r`-Option einen benutzerdefinierten Ausführungsmodus aktivieren. Verwenden Sie beispielsweise den folgenden Befehl, um eine AEM-Instanz mit dem Ausführungsmodus dev zu starten. &grave;&grave;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev

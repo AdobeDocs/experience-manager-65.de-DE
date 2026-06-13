@@ -11,8 +11,8 @@ feature: Administering
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '4520'
-ht-degree: 100%
+source-wordcount: '4700'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Darüber hinaus sollten Sie die [Oak-Dokumentation zum Erstellen von Abfragen un
 
 Bei der Erstellung der Taxonomie eines Repositorys müssen mehrere Faktoren berücksichtigt werden. Hierzu gehören u. a. die Zugriffssteuerung, Lokalisierung, Vererbung von Komponenten- und Seiteneigenschaften.
 
-Beim Entwerfen einer Taxonomie, die diese Bedenken berücksichtigt, muss zudem auch die „Durchlauffähigkeit“ des Index-Designs beachtet werden. In diesem Zusammenhang ist die Durchlauffähigkeit die Fähigkeit einer Taxonomie, einen vorhersehbaren Zugriff auf Inhalte auf der Grundlage ihres Pfads zu ermöglichen. Dies ermöglicht ein leistungsfähigeres System, das einfacher unterhalten werden kann als ein System, für das eine Vielzahl von Abfragen ausgeführt werden muss.
+Beim Entwerfen einer Taxonomie, die diese Bedenken berücksichtigt, muss zudem auch die „Durchlauffähigkeit“ des Indizierungs-Designs beachtet werden. In diesem Zusammenhang ist die Durchlauffähigkeit die Fähigkeit einer Taxonomie, einen vorhersehbaren Zugriff auf Inhalte auf der Grundlage ihres Pfads zu ermöglichen. Dies ermöglicht ein leistungsfähigeres System, das einfacher unterhalten werden kann als ein System, für das eine Vielzahl von Abfragen ausgeführt werden muss.
 
 Auch muss beim Entwerfen einer Taxonomie bedacht werden, ob eine Sortierung wichtig ist. Wenn auf eine explizite Sortierung verzichtet werden kann und eine große Anzahl gleichgeordneter Knoten erwartet wird, sind unsortierte Knotentypen wie `sling:Folder` oder `oak:Unstructured` vorzuziehen. Ist eine Sortierung erforderlich, sind `nt:unstructured` und `sling:OrderedFolder` besser geeignet.
 
@@ -120,9 +120,9 @@ Sie können die Indizes in Ihrem System auch im JSON-Format extrahieren. Dazu m�
 
 **Während der Entwicklung**
 
-Legen Sie niedrige Schwellenwerte für `oak.queryLimitInMemory` (z. B. 10000) und oak. `queryLimitReads` (beispielsweise 5000) fest und optimieren Sie die ressourcenintensive Abfrage, wenn die UnsupportedOperationException „The query read more than x nodes …“ auftritt.
+Setzen Sie niedrige Schwellenwerte für `oak.queryLimitInMemory` (z. B. 10000) und Oak. `queryLimitReads` (z. B. 5000) und optimieren Sie die teure Abfrage, wenn eine UnsupportedOperationException auftritt, die besagt: „Die Abfrage liest mehr als x Knoten…“
 
-Dies verhindert ressourcenintensive Abfragen (d. h. nicht durch einen Index oder einen Index mit geringerer Abdeckung unterlegt).  Beispielsweise würde eine Abfrage, die 1 Million Knoten liest, zu einer Erhöhung der E/A führen und die Gesamtleistung der Anwendung negativ beeinflussen. Jede Abfrage, die aufgrund der obigen Beschränkungen fehlschlägt, sollte analysiert und optimiert werden.
+Dies verhindert ressourcenintensive Abfragen (d. h. nicht durch einen Index oder einen Index mit geringerer Abdeckung unterlegt). Beispielsweise würde eine Abfrage, die 1 Million Knoten liest, zu einer Erhöhung der E/A führen und die Gesamtleistung der Anwendung negativ beeinflussen. Jede Abfrage, die aufgrund der obigen Beschränkungen fehlschlägt, sollte analysiert und optimiert werden.
 
 #### **Nach der Bereitstellung** {#post-deployment}
 
@@ -151,11 +151,11 @@ Weitere Informationen finden Sie unter: [https://jackrabbit.apache.org/oak/docs/
 
 ### Sollte ich einen Index erstellen? {#should-i-create-an-index}
 
-Die erste Frage, die beim Erstellen oder Optimieren von Indizes gestellt werden muss, bezieht sich darauf, ob Indizes für eine bestimmte Situation wirklich erforderlich sind.  Wenn Sie eine Abfrage nur einmal oder gelegentlich außerhalb der systembezogenen Stoßzeiten durch einen Batch-Prozess ausführen, kann es besser sein, auf die Indexerstellung komplett zu verzichten.
+Die erste Frage, die beim Erstellen oder Optimieren von Indizes gestellt werden muss, bezieht sich darauf, ob Indizes für eine bestimmte Situation wirklich erforderlich sind. Wenn Sie eine Abfrage nur einmal oder gelegentlich außerhalb der systembezogenen Stoßzeiten durch einen Batch-Prozess ausführen, kann es besser sein, auf die Indexerstellung komplett zu verzichten.
 
 Wenn ein Index erstellt wurde, muss mit jeder Aktualisierung der indizierten Daten auch der Index aktualisiert werden. Da sich dies auf die Leistung des Systems auswirkt, sollten Indizes nur dann erstellt werden, wenn sie erforderlich sind.
 
-Darüber hinaus sind Indizes nur dann nützlich, wenn die im Index enthaltenen Daten so einzigartig sind, dass sie diesen Vorgang rechtfertigen. Denken Sie in diesem Zusammenhang an einen Index in einem Buch und die Themen, die er abdeckt: Bei der Indizierung verschiedener Themen in einem Text gibt es gewöhnlich Hunderte oder Tausende von Einträgen, über die Sie schnell zu einzelnen Seiten und damit zur gesuchten Information springen können. Wenn dieser Index nur zwei oder drei Einträge hätte, von denen jeder auf mehrere hundert Seiten verweist, wäre der Index nicht nützlich.  Dasselbe Konzept gilt für Datenbankindizes. Sind nur einige eindeutige Werte vorhanden, ist der Index nicht nützlich. Dabei kann ein Index auch zu umfangreich werden und dadurch seine Nützlichkeit verlieren.  Informationen zu Indexstatistiken finden Sie weiter oben unter [Indexstatistiken](/help/sites-deploying/best-practices-for-queries-and-indexing.md#index-statistics).
+Darüber hinaus sind Indizes nur dann nützlich, wenn die im Index enthaltenen Daten so einzigartig sind, dass sie diesen Vorgang rechtfertigen. Denken Sie in diesem Zusammenhang an einen Index in einem Buch und die Themen, die er abdeckt: Bei der Indizierung verschiedener Themen in einem Text gibt es gewöhnlich Hunderte oder Tausende von Einträgen, über die Sie schnell zu einzelnen Seiten und damit zur gesuchten Information springen können. Wenn dieser Index nur zwei oder drei Einträge hätte, von denen jeder auf mehrere hundert Seiten verweist, wäre der Index nicht nützlich. Dasselbe Konzept gilt für Datenbankindizes. Sind nur einige eindeutige Werte vorhanden, ist der Index nicht nützlich. Dabei kann ein Index auch zu umfangreich werden und dadurch seine Nützlichkeit verlieren. Informationen zu Indexstatistiken finden Sie weiter oben unter [Indexstatistiken](/help/sites-deploying/best-practices-for-queries-and-indexing.md#index-statistics).
 
 ### Lucene- oder Eigenschaftenindizes? {#lucene-or-property-indexes}
 
@@ -179,7 +179,7 @@ Solr-Indizes können so konfiguriert werden, dass sie eingebettet auf dem AEM-Se
 
 Der Nachteil dieses Ansatzes besteht darin, dass AEM-Abfragen zwar standardmäßig ACLs respektieren und so Ergebnisse verbergen, auf die Benutzende keinen Zugriff haben, jedoch die Externalisierung der Suche auf einen Solr-Server diese Funktion nicht unterstützt. Wenn Suchvorgänge auf eine solche Art und Weise externalisiert werden sollen, muss besonders darauf geachtet werden, dass den Benutzerinnen und Benutzern nur die für sie vorgesehenen Ergebnisse angezeigt werden.
 
-Mögliche Anwendungsfälle, in denen dieser Ansatz sinnvoll sein kann, sind etwa Fälle, in denen Suchdaten aus mehreren Quellen aggregiert werden müssen. Angenommen, Sie verfügen über eine auf AEM gehostete Site und über eine zweite, auf einer Drittanbieterplattform gehostete Site.  Solr könnte so konfiguriert werden, dass der Inhalt beider Sites durchsucht und in einem aggregierten Index gespeichert wird. Dies würde Site-übergreifende Suchvorgänge ermöglichen.
+Mögliche Anwendungsfälle, in denen dieser Ansatz sinnvoll sein kann, sind etwa Fälle, in denen Suchdaten aus mehreren Quellen aggregiert werden müssen. Angenommen, Sie verfügen über eine auf AEM gehostete Site und über eine zweite, auf einer Drittanbieterplattform gehostete Site. Solr könnte so konfiguriert werden, dass der Inhalt beider Sites durchsucht und in einem aggregierten Index gespeichert wird. Dies würde Site-übergreifende Suchvorgänge ermöglichen.
 
 ### Design-Überlegungen {#design-considerations}
 
@@ -226,7 +226,7 @@ Eine Neuindizierung von Oak-Indizes muss vermieden werden, sofern nicht einer de
 
 >[!NOTE]
 >
->Bevor Sie anhand der nachstehenden Tabellen ermitteln, ob eine Neuindizierung sinnvoll ist, stellen Sie **immer ** Folgendes sicher:
+>Bevor Sie anhand der nachstehenden Tabellen ermitteln, ob eine Neuindizierung sinnvoll ist, stellen Sie **immer &#x200B;** Folgendes sicher:
 >
 >* Die Abfrage ist korrekt.
 >* Die Abfrage wird in den erwarteten Index aufgelöst (mithilfe von [Abfrage erläutern](/help/sites-administering/operations-dashboard.md#diagnosis-tools)).
@@ -296,7 +296,7 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 
       * Wenn sich Änderungen nicht auf den vorhandenen Inhalt auswirken, ist lediglich eine Aktualisierung erforderlich.
 
-         * [Aktualisieren](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) Sie den Lucene-Index, indem Sie [oak:queryIndexDefinition] @refresh=true einstellen.
+         * [Aktualisieren](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) Sie den Lucene-Index, indem Sie [oak:queryIndexDefinition]@refresh=true festlegen.
 
       * Ansonsten sollte eine [Neuindizierung](#how-to-re-index) des Lucene-Index vorgenommen werden.
 
@@ -304,7 +304,7 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 
 ### Fehler- und Ausnahmesituationen {#erring-and-exceptional-situations}
 
-In der folgenden Tabelle werden die einzigen akzeptablen Fehler- und Ausnahmesituationen beschrieben, in denen das Problem durch Neuindizieren der Oak-Indizes behoben wird.
+In der folgenden Tabelle werden die einzigen akzeptablen Fehler- und Ausnahmesituationen beschrieben, in denen das Problem durch Neuindizierung der Oak-Indizes behoben wird.
 
 Wenn in AEM ein Problem auftritt, das nicht den nachfolgend beschriebenen Kriterien entspricht, indizieren Sie Indizes **nicht** neu, da das Problem hierdurch nicht gelöst wird.
 
@@ -380,7 +380,7 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 >
 >In AEM 6.5 ist [oak-run.jar die EINZIGE unterstützte Methode](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) für die Neuindizierung von MongoMK- oder RDBMK-Repositorys.
 
-#### Neuindizieren von Eigenschaftenindizes {#re-indexing-property-indexes}
+#### Neuindizierung von Eigenschaftenindizes {#re-indexing-property-indexes}
 
 * Verwenden Sie [oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing), um den Eigenschaftenindex neu zu indizieren
 * Stellen Sie im Eigenschaftenindex die Eigenschaft „reindex-async“ auf „true“ ein.
@@ -393,7 +393,7 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 
   [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex)
 
-#### Neuindizieren von Lucene-Eigenschaftsindizes {#re-indexing-lucene-property-indexes}
+#### Neuindizierung von Lucene-Eigenschaftsindizes {#re-indexing-lucene-property-indexes}
 
 * Verwenden Sie [oak-run.jar zum Neuindizieren](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) des Lucene-Eigenschaftsindex.
 * Stellen Sie im Lucene-Eigenschaftenindex die Eigenschaft „async-reindex“ auf „true“ ein.
@@ -415,13 +415,13 @@ Die Vorextraktion von Text ist das Extrahieren und Verarbeiten von Text aus Bin�
 
 #### Wann KANN die Textvorextraktion verwendet werden? {#when-can-text-pre-extraction-be-used}
 
-Neuindizieren eines **vorhandenen** Lucene-Index mit aktivierter Binärextraktion
+Neuindizierung eines **vorhandenen** Lucene-Index mit aktivierter Binärextraktion
 
 * Neuindizierung **aller** infrage kommenden Inhalte im Repository (wenn die Binärdateien für die Volltext-Extraktion zahlreich oder komplex sind, bedeutet dies für AEM einen höheren Rechenaufwand). Bei der Textvorextraktion werden die „rechenintensiven Arbeiten“ für die Textextraktion in einen isolierten Prozess mit direktem Zugriff auf den AEM-Datenspeicher ausgelagert, wodurch Mehraufwand und Ressourcenkonflikte in AEM vermieden werden.
 
 Unterstützung bei der Bereitstellung eines **neuen** Lucene-Index in AEM mit aktivierter Binärdateiextraktion
 
-* Wenn ein neuer Index (mit aktivierter Binärdateiextraktion) in AEM bereitgestellt wird, indiziert Oak automatisch sämtliche infrage kommenden Inhalte bei der nächsten asynchronen Volltextindizierung. Aus den gleichen Gründen, wie oben unter „Neuindizieren“ beschrieben, kann dies zu einer AEM-Überbelastung führen.
+* Wenn ein neuer Index (mit aktivierter Binärdateiextraktion) in AEM bereitgestellt wird, indiziert Oak automatisch sämtliche infrage kommenden Inhalte bei der nächsten asynchronen Volltextindizierung. Aus den gleichen Gründen, wie oben unter „Neuindizierung“ beschrieben, kann dies zu einer AEM-Überbelastung führen.
 
 #### Wann kann die Textvorextraktion NICHT verwendet werden? {#when-can-text-pre-extraction-not-be-used}
 
@@ -446,7 +446,7 @@ Bei normalem AEM-Betrieb, etwa beim Hochladen von Assets über die Web-Benutzero
 
 >[!NOTE]
 >
->***Die unten beschriebenen oak-run.jar-Befehle finden Sie vollständig aufgeführt unter [https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html)***.
+>***Die unten beschriebenen oak-run.jar-Befehle finden Sie vollständig aufgezählt unter [https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html)***.
 >
 >Die obige Grafik und die darunter stehenden Schritte erläutern und ergänzen die in der Apache Oak-Dokumentation dargelegten technischen Schritte zur Textvorextraktion.
 

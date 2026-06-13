@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '2937'
-ht-degree: 100%
+source-wordcount: '3000'
+ht-degree: 99%
 
 ---
 
@@ -34,10 +34,10 @@ Nachstehend sind die verfügbaren Bereitstellungsoptionen für AEM dargestellt 
    <td><p><strong>Topologie</strong></p> </td>
    <td><p><strong>Betriebssystem</strong></p> </td>
    <td><p><strong>Anwendungs-Server</strong></p> </td>
-   <td><p><strong>JRE </strong></p> </td>
+   <td><p><strong>JRE</strong></p> </td>
    <td><p><strong>Sicherheit</strong></p> </td>
-   <td><p><strong>Mikrokernel </strong></p> </td>
-   <td><p><strong>Datenspeicher </strong></p> </td>
+   <td><p><strong>Mikrokernel</strong></p> </td>
+   <td><p><strong>Datenspeicher</strong></p> </td>
    <td><p><strong>Indizierung</strong></p> </td>
    <td><p><strong>Webserver</strong></p> </td>
    <td><p><strong>Browser</strong></p> </td>
@@ -89,7 +89,7 @@ Nachstehend sind die verfügbaren Bereitstellungsoptionen für AEM dargestellt 
    <td><p>Formulare</p> </td>
    <td><p>Author-Auslagerung</p> </td>
    <td><p>HP-UX</p> </td>
-   <td><p>Tomcat </p> </td>
+   <td><p>Tomcat</p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p>RDB/DB2</p> </td>
@@ -128,7 +128,7 @@ Nachstehend sind die verfügbaren Bereitstellungsoptionen für AEM dargestellt 
    <td><p>Assets</p> </td>
   </tr>
   <tr>
-   <td><p>Commerce </p> </td>
+   <td><p>Commerce</p> </td>
    <td><p>MSRP</p> </td>
    <td><p>Apple OS</p> </td>
    <td><p> </p> </td>
@@ -300,11 +300,11 @@ In AEM können Binärdaten unabhängig von Inhaltsknoten gespeichert werden. Der
 
 >[!NOTE]
 >
->Adobe empfiehlt Kunden und Kundinnen, TarMK als Standard-Persistenztechnologie sowohl für die Authoring- als auch die Publishing-Instanz von AEM zu verwenden.
+>Adobe empfiehlt Kunden und Kundinnen, TarMK als Standard-Persistenztechnologie sowohl für die Authoring- als auch die Veröffentlichungsinstanz von AEM zu verwenden.
 
 >[!CAUTION]
 >
->Der RDB-Mikrokernel wird nur eingeschränkt unterstützt. Wenden Sie sich an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?lang=de&amp;support-solution=General&amp;support-tab=home#support), bevor Sie diese Art von Mikrokernel verwenden.
+>Der RDB-Mikrokernel wird nur eingeschränkt unterstützt. Wenden Sie sich an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?lang=de&support-solution=General&support-tab=home#support), bevor Sie diese Art von Mikrokernel verwenden.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
@@ -320,7 +320,7 @@ Weitere Einzelheiten zu den verfügbaren Konfigurationsoptionen finden Sie unter
 >
 >Für die Bereitstellung von AEM auf Azure oder AWS außerhalb von Adobe Managed Services wird von Adobe dringend empfohlen, direkt mit dem Cloud-Anbieter zu arbeiten. Oder arbeiten Sie mit einem der Partner von Adobe zusammen, die bei der Implementierung von AEM in der gewünschten Cloud-Umgebung helfen. Der ausgewählte Cloud-Anbieter oder -Partner ist verantwortlich für die Skalierungsspezifikationen, das Design und die Implementierung der unterstützten Architektur, um Ihre spezifischen Anforderungen an Leistung, Last, Skalierbarkeit und Sicherheit zu erfüllen.
 >
->>Weitere Informationen finden Sie auf der Seite [technische Anforderungen](/help/sites-deploying/technical-requirements.md#supported-platforms).
+>&#x200B;>Weitere Informationen finden Sie auf der Seite [technische Anforderungen](/help/sites-deploying/technical-requirements.md#supported-platforms).
 
 ### Suchen {#search-features}
 
@@ -409,8 +409,8 @@ Weitere Informationen zu TarMK finden Sie unter [Bereitstellungsszenarien](/help
 
 Sie sollten mit der folgenden Architektur beginnen, um bei der Verwendung von TarMK eine gute Leistung zu erzielen:
 
-* Eine Authoring-Instanz
-* Zwei Publishing-Instanzen
+* Eine Autoreninstanz
+* Zwei Veröffentlichungsinstanzen
 * Zwei Dispatcher
 
 Nachfolgend finden Sie die Architekturrichtlinien für AEM Sites und AEM Assets.
@@ -436,14 +436,14 @@ Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellung
   <tr>
    <td><strong>Einstellung</strong></td>
    <td><strong>Parameter</strong></td>
-   <td><strong>Wert </strong></td>
+   <td><strong>Wert</strong></td>
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
    <td>Sling-Auftragswarteschlangen</td>
    <td><code>queue.maxparallel</code></td>
    <td>Setzen Sie den Wert auf die Hälfte der Anzahl der CPU-Kerne. </td>
-   <td>Standardmäßig entspricht die Anzahl der gleichzeitigen Threads pro Vorgangswarteschlange der Anzahl der CPU-Kerne.</td>
+   <td>Standardmäßig entspricht die Anzahl der gleichzeitigen Threads pro Auftragswarteschlange der Anzahl der CPU-Kerne.</td>
   </tr>
   <tr>
    <td>Warteschlange für Granite-Übergangs-Workflow</td>
@@ -452,7 +452,7 @@ Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellung
    <td> </td>
   </tr>
   <tr>
-   <td>JVM-Parameter </td>
+   <td>JVM-Parameter</td>
    <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> </td>
    <td><p>500000</p> <p>100000</p> <p>250000</p> <p>True</p> </td>
    <td>Fügen Sie diese JVM-Parameter in das AEM-Startskript ein, um zu verhindern, dass die Systeme durch umfangreiche Abfragen überlastet werden.</td>
@@ -501,7 +501,7 @@ Die Benchmarktests wurden nach folgenden Spezifikationen durchgeführt:
 | JVM-Heap | 16 GB |
 | Produkt | AEM 6.2 |
 | Knotenspeicher | TarMK |
-| Datenspeicher  | Datei-DS |
+| Datenspeicher | Datei-DS |
 | Szenario | Einzelprodukt: Assets / 30 gleichzeitige Threads |
 
 #### Performance-Benchmark-Ergebnisse {#performance-benchmark-results}
@@ -514,7 +514,7 @@ Die Benchmarktests wurden nach folgenden Spezifikationen durchgeführt:
 
 ## MongoMK {#mongomk}
 
-Der Hauptgrund dafür, warum anstatt des TarMK der MongoMK als Persistenz-Backend ausgewählt werden sollte, liegt in der horizontalen Skalierung der Instanzen. Diese Fähigkeit führt dazu, dass immer mindestens zwei aktive Authoring-Instanzen ausgeführt werden und MongoDB als Persistenzspeichersystem verwendet wird. Die Notwendigkeit, mehr als eine Authoring-Instanz auszuführen, resultiert im Allgemeinen aus der Tatsache, dass die CPU- und Speicherkapazität eines einzelnen Servers, der alle gleichzeitigen Authoring-Aktivitäten unterstützt, nicht mehr ausreicht.
+Der Hauptgrund dafür, warum anstatt des TarMK der MongoMK als Persistenz-Backend ausgewählt werden sollte, liegt in der horizontalen Skalierung der Instanzen. Diese Fähigkeit führt dazu, dass immer mindestens zwei aktive Autoreninstanzen ausgeführt werden und MongoDB als Persistenzspeichersystem verwendet wird. Die Notwendigkeit, mehr als eine Autoreninstanz auszuführen, resultiert im Allgemeinen aus der Tatsache, dass die CPU- und Speicherkapazität eines einzelnen Servers, der alle gleichzeitigen Authoring-Aktivitäten unterstützt, nicht mehr ausreicht.
 
 Weitere Informationen zu TarMK finden Sie unter [Bereitstellungsszenarien](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) und [Mongo-Speicher](/help/sites-deploying/storage-elements-in-aem-6.md#mongo-storage).
 
@@ -522,8 +522,8 @@ Weitere Informationen zu TarMK finden Sie unter [Bereitstellungsszenarien](/help
 
 Sie sollten mit der folgenden Architektur beginnen, um bei der Verwendung von MongoMK eine gute Leistung zu erzielen:
 
-* Drei Authoring-Instanzen
-* Zwei Publishing-Instanzen
+* Drei Autoreninstanzen
+* Zwei Veröffentlichungsinstanzen
 * Drei MongoDB-Instanzen
 * Zwei Dispatcher
 
@@ -546,14 +546,14 @@ Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellung
   <tr>
    <td><strong>Einstellung</strong></td>
    <td><strong>Parameter</strong></td>
-   <td><strong>Wert (Standard) </strong></td>
+   <td><strong>Wert (Standard)</strong></td>
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
    <td>Sling-Auftragswarteschlangen</td>
    <td><code>queue.maxparallel</code></td>
    <td>Setzen Sie den Wert auf die Hälfte der Anzahl der CPU-Kerne. </td>
-   <td>Standardmäßig entspricht die Anzahl der gleichzeitigen Threads pro Vorgangswarteschlange der Anzahl der CPU-Kerne.</td>
+   <td>Standardmäßig entspricht die Anzahl der gleichzeitigen Threads pro Auftragswarteschlange der Anzahl der CPU-Kerne.</td>
   </tr>
   <tr>
    <td>Warteschlange für Granite-Übergangs-Workflow</td>
@@ -562,7 +562,7 @@ Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellung
    <td> </td>
   </tr>
   <tr>
-   <td>JVM-Parameter </td>
+   <td>JVM-Parameter</td>
    <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> <p><code>Doak.mongo.maxQueryTimeMS</code></p> </td>
    <td><p>500000</p> <p>100000</p> <p>250000</p> <p>True</p> <p>60000</p> </td>
    <td>Fügen Sie diese JVM-Parameter in das AEM-Startskript ein, um zu verhindern, dass die Systeme durch umfangreiche Abfragen überlastet werden.</td>
@@ -611,7 +611,7 @@ Die Benchmarktests wurden nach folgenden Spezifikationen durchgeführt:
 | JVM-Heap | 16 GB | Nicht zutreffend |
 | Produkt | AEM 6.2 | MongoDB 3.2 WiredTiger |
 | Knotenspeicher | MongoMK | Nicht zutreffend |
-| Datenspeicher  | Datei-DS | Nicht zutreffend |
+| Datenspeicher | Datei-DS | Nicht zutreffend |
 | Szenario | Einzelprodukt: Assets / 30 gleichzeitige Threads | Einzelprodukt: Assets / 30 gleichzeitige Threads |
 
 ### Performance-Benchmark-Ergebnisse {#performance-benchmark-results-1}
@@ -626,7 +626,7 @@ Die Benchmarktests wurden nach folgenden Spezifikationen durchgeführt:
 
 Bei der Wahl zwischen den beiden Optionen muss eine Grundregel berücksichtigt werden: TarMK ist für Leistung konzipiert, während MongoMK für Skalierbarkeit eingesetzt wird. Adobe empfiehlt Kunden, TarMK als Standard-Persistenztechnologie in allen Bereitstellungsszenarien zu verwenden, sowohl für die Autoren- als auch die Veröffentlichungsinstanz von AEM.
 
-Der Hauptgrund dafür, warum anstatt des TarMK der MongoMK als Persistenz-Backend ausgewählt werden sollte, liegt in der horizontalen Skalierung der Instanzen. Diese Funktionalität bedeutet, dass immer zwei oder mehr aktive Authoring-Instanzen ausgeführt werden und MongoDB als Persistenzspeichersystem verwendet wird. Die Notwendigkeit, mehr als eine Authoring-Instanz auszuführen, resultiert im Allgemeinen aus der Tatsache, dass die CPU- und Speicherkapazität eines einzelnen Servers, der alle gleichzeitigen Authoring-Aktivitäten unterstützt, nicht mehr ausreicht.
+Der Hauptgrund dafür, warum anstatt des TarMK der MongoMK als Persistenz-Backend ausgewählt werden sollte, liegt in der horizontalen Skalierung der Instanzen. Diese Funktionalität bedeutet, dass immer zwei oder mehr aktive Autoreninstanzen ausgeführt werden und MongoDB als Persistenzspeichersystem verwendet wird. Die Notwendigkeit, mehr als eine Autoreninstanz auszuführen, resultiert im Allgemeinen aus der Tatsache, dass die CPU- und Speicherkapazität eines einzelnen Servers, der alle gleichzeitigen Authoring-Aktivitäten unterstützt, nicht mehr ausreicht.
 
 Weitere Einzelheiten zu TarMK und MongoMK finden Sie unter [Empfohlene Implementierungen](/help/sites-deploying/recommended-deploys.md#microkernels-which-one-to-use).
 
@@ -644,7 +644,7 @@ Weitere Einzelheiten zu TarMK und MongoMK finden Sie unter [Empfohlene Implement
 
 * Anzahl der benannten, verbundenen Benutzer an einem Tag: Tausende oder mehr
 * Anzahl der gleichzeitigen Benutzer: Hunderte oder mehr
-* Volumen der erfassten Assets pro Tag: Hunderttausende oder mehr
+* Volumen der aufgenommenen Assets pro Tag: Hunderttausende oder mehr
 * Volumen der Seitenbearbeitungen pro Tag: Hunderttausende oder mehr
 * Volumen der Suchvorgänge pro Tag: Zehntausende oder mehr
 
@@ -719,7 +719,7 @@ Weitere Einzelheiten zu TarMK und MongoMK finden Sie unter [Empfohlene Implement
    <td> </td>
   </tr>
   <tr>
-   <td>Datenspeicher </td>
+   <td>Datenspeicher</td>
    <td>Datei-DS </td>
    <td>Nicht zutreffend</td>
    <td> </td>
@@ -806,7 +806,7 @@ Weitere Einzelheiten zu TarMK und MongoMK finden Sie unter [Empfohlene Implement
    <td><br /> Nicht zutreffend</td>
   </tr>
   <tr>
-   <td>Datenspeicher </td>
+   <td>Datenspeicher</td>
    <td>Datei-DS </td>
    <td><br /> Datei-DS</td>
    <td><br /> Nicht zutreffend</td>
@@ -834,12 +834,12 @@ Die auf dieser Seite vorgestellten Richtlinien lassen sich wie folgt zusammenfas
 
 * **TarMK mit Dateidatenspeicher**: Die empfohlene Architektur für die meisten Kundinnen und Kunden:
 
-   * Mindesttopologie: eine Authoring-Instanz, zwei Publishing-Instanz, zwei Dispatcher
+   * Mindesttopologie: eine Autoreninstanz, zwei Veröffentlichungsinstanz, zwei Dispatcher
    * Wenn der Dateidatenspeicher freigegeben wird, muss die Binärdatei-lose Replikation aktiviert sein
 
 * **MongoMK mit Dateidatenspeicher**: Die empfohlene Architektur für die horizontale Skalierbarkeit der Authoring-Ebene:
 
-   * Mindesttopologie: drei Authoring-Instanzen, drei MongoDB-Instanzen, zwei Publishing-Instanzen, zwei Dispatcher
+   * Mindesttopologie: drei Autoreninstanzen, drei MongoDB-Instanzen, zwei Veröffentlichungsinstanzen, zwei Dispatcher
    * Wenn der Dateidatenspeicher freigegeben wird, muss die Binärdatei-lose Replikation aktiviert sein
 
 * **Knotenspeicher**: Auf der lokalen Festplatte gespeichert, kein netzwerkgebundener Speicher (NAS)

@@ -11,9 +11,9 @@ exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: ht
-source-wordcount: '5755'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '5992'
+ht-degree: 97%
 
 ---
 
@@ -126,7 +126,7 @@ Um Versionen einer Website zu löschen, gehen Sie folgendermaßen vor:
    ![Konfiguration der Versionsbereinigung](assets/version-purge-configuration.png)
 
    * **Bereinigungspfade**
-Legen Sie den Startpfad des zu bereinigenden Inhalts fest, zum Beispiel: `/content/wknd`.
+Legen Sie den Startpfad des zu löschenden Inhalts fest, z. B. `/content/wknd`.
 
      >[!CAUTION]
      >
@@ -175,7 +175,7 @@ Der Prozess listet alle Knoten auf, die verarbeitet wurden. Während des Prozess
 * `retained`: Der Knoten wurde nicht gelöscht.
 * `purged`: Der Knoten wurde gelöscht.
 
-Darüber hinaus stellt die Konsole nützliche Informationen zu den Versionen bereit: 
+Darüber hinaus stellt die Konsole nützliche Informationen zu den Versionen bereit:
 
 * `V 1.0`: Die Versionsnummer.
 * `V 1.0.1`&#42;: Der Stern gibt an, dass die Version die aktuelle (Basis-)Version ist und nicht bereinigt werden kann.
@@ -189,9 +189,9 @@ Im Folgenden ein Beispiel:
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
-## Arbeiten mit Auditdatensätzen und Protokolldateien {#working-with-audit-records-and-log-files}
+## Arbeiten mit Auditeinträgen und Protokolldateien {#working-with-audit-records-and-log-files}
 
-Auditdatensätze und Protokolldateien für Adobe Experience Manager (AEM) finden sich an diversen Speicherorten. Im Folgenden erhalten Sie einen Überblick darüber, was Sie finden und wo Sie es finden können.
+Auditeinträge und Protokolldateien für Adobe Experience Manager (AEM) finden sich an diversen Speicherorten. Im Folgenden erhalten Sie einen Überblick darüber, was Sie finden und wo Sie es finden können.
 
 ### Arbeiten mit Protokollen {#working-with-logs}
 
@@ -339,17 +339,17 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
    >
    >`org.apache.sling.commons.log.pattern` unterstützt bis zu sechs Argumente.
    >
-   >{0} Der Zeitstempel vom Typ `java.util.Date`
+   >`java.util.Date` Der Zeitstempel vom Typ {0}
    >
-   >{1} Die Protokollmarkierung
+   >{1} der Protokollmarkierung
    >
-   >{2} Der Name des aktuellen Threads
+   >{2} den Namen des aktuellen Threads
    >
    >{3} Der Name des Loggers
    >
-   >{4} Die Protokollierungsebene
+   >{4} der Protokollebene
    >
-   >{5} Die Protokollmeldung
+   >{5} der Protokollmeldung
    >
    >Falls der Protokollaufruf ein `Throwable` enthält, wird der Stacktrace an die Meldung angefügt.
 
@@ -434,7 +434,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
    >* Eine Größenbeschränkung kann mit einer Zahl angegeben werden. Falls keine Größeneinheit angegeben ist, wird die Anzahl als Bytes interpretiert. Alternativ können Sie einen der folgenden Indikatoren hinzufügen: `KB`, `MB` oder `GB` (Groß-/Kleinschreibung wird ignoriert).
    >* Sie können einen Zeit-/Terminplan nach dem `java.util.SimpleDateFormat`-Muster angeben. In diesem wird der Zeitraum definiert, nach dem die Datei rotiert wird. Außerdem das Suffix, das an die gedrehte Datei angehängt wird (zur Identifizierung).
    >
-   >Der Standardwert lautet „.“jjjj-MM-tt (für die tägliche Protokollrotation).
+   >Der Standardwert ist „JJJJ-MM-TT“ (für die tägliche Protokollrotation).
    >
    >Beispielsweise wird am 20. Januar 2010 um Mitternacht (oder sobald die erste Protokollmeldung nach diesem Zeitpunkt ausgegeben wird), ../logs/error.log in ../logs/error.log.2010-01-20 umbenannt. Die Protokollierung für den 21. Januar wird an eine neue und leere Datei ../logs/error.log ausgegeben, bis diese beim nächsten Tageswechsel rotiert wird.
    >
@@ -460,27 +460,27 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
 Die Felix-Konsole enthält auch Informationen zum Sling Log-Support unter `../system/console/slinglog`, beispielsweise, `https://localhost:4502/system/console/slinglog`.
 
-### Auffinden der Auditdatensätze {#finding-the-audit-records}
+### Auffinden der Auditdeinträge {#finding-the-audit-records}
 
-Auditdatensätze werden als Nachweis darüber aufbewahrt, wer wann welche Aktion vorgenommen hat. Für AEM WCM- bzw. OSGi-Ereignisse werden unterschiedliche Auditdatensätze generiert.
+Auditdeinträge werden als Nachweis darüber aufbewahrt, wer wann welche Aktion vorgenommen hat. Für AEM WCM- bzw. OSGi-Ereignisse werden unterschiedliche Auditeinträge generiert.
 
-#### Bei der Seitenbearbeitung angezeigte AEM WCM-Auditdatensätze {#aem-wcm-audit-records-shown-when-page-authoring}
+#### Bei der Seitenbearbeitung angezeigte AEM WCM-Auditeinträge {#aem-wcm-audit-records-shown-when-page-authoring}
 
 1. Öffnen Sie eine Seite.
 1. Im Sidekick können Sie die Registerkarte mit dem Sperrsymbol auswählen und dann zweimal auf **Auditprotokoll…** klicken
-1. Ein neues Fenster mit der Liste der Auditdatensätze für die aktuelle Seite wird geöffnet.
+1. Ein neues Fenster mit der Liste der Auditeinträge für die aktuelle Seite wird geöffnet.
 
    ![screen_shot_2012-02-02at43601pm](assets/screen_shot_2012-02-02at43601pm.png)
 
 1. Klicken Sie auf **OK**, wenn Sie das Fenster schließen möchten.
 
-#### AEM WCM-Auditdatensätze im Repository {#aem-wcm-auditing-records-within-the-repository}
+#### AEM WCM-Auditeinträge im Repository {#aem-wcm-auditing-records-within-the-repository}
 
-Auditdatensätze werden im Ordner `/var/audit` je nach Ressource gespeichert. Sie können einen Drilldown durchführen, bis Sie individuelle Datensätze und die darin enthaltenen Informationen sehen.
+Auditeinträge werden im Ordner `/var/audit` je nach Ressource gespeichert. Sie können einen Drilldown durchführen, bis Sie individuelle Einträge und die darin enthaltenen Informationen sehen.
 
 Diese Einträge enthalten dieselben Informationen, die beim Bearbeiten einer Seite angezeigt werden.
 
-#### OSGi-Auditdatensätze aus der Web-Konsole {#osgi-audit-records-from-the-web-console}
+#### OSGi-Auditeinträge aus der Web-Konsole {#osgi-audit-records-from-the-web-console}
 
 OSGi-Ereignisse generieren ebenfalls Audit-Einträge, die Sie in der AEM-Web-Konsole auf der Registerkarte **Konfigurationsstatus** unter **Protokolldateien** anzeigen können:
 
@@ -521,7 +521,7 @@ So überwachen Sie einen Replikationsagenten:
 
    >[!CAUTION]
    >
-   >Verwenden Sie nicht den Link „Verbindung testen“ für den Postausgang „Rückwärtsreplikation“ auf einer Publish-Instanz.
+   >Verwenden Sie nicht den Link „Verbindung testen“ für den Postausgang „Rückwärtsreplikation“ auf einer Veröffentlichungsinstanz.
    >
    >Falls ein Replikationstest für eine Warteschlange in einem Postausgang durchgeführt wird, werden Elemente, die älter als die Testreplikation sind, bei jeder Rückwärtsreplikation erneut verarbeitet.
    >
@@ -561,7 +561,7 @@ Nachfolgend finden Sie eine Liste mit häufigen Leistungsproblemen sowie Vorschl
 
 Leistungsprobleme können eine Reihe von Ursachen haben, die nichts mit Ihrer Website zu tun haben, z. B. eine vorübergehend langsamere Verbindungsgeschwindigkeit, CPU-Auslastung und vieles mehr.
 
-Dies kann sich ebenfalls auf alle Ihre Besuchenden oder nur auf eine Untergruppe auswirken.
+Dies kann sich ebenfalls auf alle Ihre Besuchenden oder nur auf eine Teilmenge auswirken.
 
 All diese Informationen müssen erfasst, sortiert und analysiert werden, bevor Sie entweder die allgemeine Leistung optimieren oder gezielt Probleme lösen können.
 
@@ -722,7 +722,7 @@ Dieses Protokoll enthält eine Zeile pro Anforderung oder Antwort:
    * die angefragte Seite
    * das Protokoll
 
-* Bei Antworten enthält die Zeile: 
+* Bei Antworten enthält die Zeile:
 
    * den Status-Code (200 steht für „Erfolg“, 404 steht für „Seite nicht gefunden“);
    * den MIME-Typ
@@ -813,7 +813,7 @@ Verketten Sie die individuellen `request.log`-Dateien, wenn Sie diesen Vorgang f
 
 ### Apache Bench {#apache-bench}
 
-Um die Auswirkungen von Sonderfällen (z. B. Bereinigung) zu minimieren, wird empfohlen, ein Tool wie `apachebench` zu verwenden (z. B. [ab](https://httpd.apache.org/docs/2.4/programs/ab.html) zur umfassenderen Dokumentation), um Speicherlecks zu identifizieren und Reaktionszeiten selektiv zu analysieren.
+Um die Auswirkungen von Sonderfällen (z. B. Speicherbereinigung) zu minimieren, wird empfohlen, ein Tool wie `apachebench` zu verwenden (z. B. [ab](https://httpd.apache.org/docs/2.4/programs/ab.html) zur umfassenderen Dokumentation), um Speicherlecks zu identifizieren und Reaktionszeiten selektiv zu analysieren.
 
 Apache Bench kann wie folgt verwendet werden:
 
@@ -1040,7 +1040,7 @@ Um die Gesamtgröße des Ordners `/var/dam` zu ermitteln:
 
 1. Verwenden Sie WebDAV, um das Repository dem lokalen Dateisystem zuzuordnen.
 
-1. Verwenden Sie folgende Befehlszeile: 
+1. Verwenden Sie folgende Befehlszeile:
 
    ```shell
    cd /Volumes/localhost/var
@@ -1142,7 +1142,7 @@ Wenn sich die Leistung Ihrer Instanz nach jedem Neustart (manchmal eine Woche od
 * [Unzureichender Speicher](#outofmemory)
 * Die Wissensdatenbank:
 
-   * [Nicht geschlossener Ressourcen-Resolver](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-23761)
+   * [Nicht geschlossener Ressourcenauflöser](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-23761)
 
 ### JVM-Optimierung {#jvm-tuning}
 
