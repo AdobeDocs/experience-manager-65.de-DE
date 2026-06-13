@@ -72,7 +72,7 @@ Wenn Entwicklerinnen und Entwickler eine Komponentenstruktur exportieren möchte
 
 #### Deaktivieren des AEM 6.4-Umfrage-Popups {#how-to-disable-aem-survey-pop-up}
 
-Sie können sich für die Erfassung von Nutzungsstatistiken entscheiden, indem Sie entweder die Touch-Benutzeroberfläche oder die Web-Konsole verwenden. Ausführliche Anweisungen finden Sie unter[ Entscheidung für die aggregierte Erfassung von Nutzungsstatistiken](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
+Sie können sich für die Erfassung von Nutzungsstatistiken entscheiden, indem Sie entweder die Touch-Benutzeroberfläche oder die Web-Konsole verwenden. Ausführliche Anweisungen finden Sie unter[&#x200B; Entscheidung für die aggregierte Erfassung von Nutzungsstatistiken](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
 #### Gibt es eine gute Ressource, die die wichtigsten Funktionen für ein Upgrade auf AEM 6.4 hervorhebt? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
 
@@ -89,7 +89,7 @@ Wenn die Person, die die Filmdateien hochlädt, keine Löschberechtigungen unter
 Wenn Sie über die Touch-Benutzeroberfläche eine Sprachkopie erstellen (**Verweise** > **Sprachkopie aktualisieren**), wird unter der neuen Sprache ein neuer DAM-Ordner erstellt und von dort aus wird auf Assets verwiesen.
 
 Dies ist die Standardeinstellung für vordefinierte Konfigurationen. Sie können **Seite übersetzen Assets** in Übersetzungskonfigurationen auf **Nicht übersetzen** setzen.
-Klicken Sie dazu in AEM 6**auf** Tools **> Cloud-** > **Übersetzungs-Cloud-Services**.
+Klicken Sie dazu in AEM 6&#x200B;**auf** Tools **> Cloud-** > **Übersetzungs-Cloud-Services**.
 
 #### Wie lässt sich eine AEM-Komponente deaktivieren, die zu einem exponentiellen Wachstum des AEM SegmentStore führt (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 
@@ -101,7 +101,7 @@ Als Problemumgehung können Sie die Komponente auch manuell deaktivieren und zwa
 
 #### Wie lassen sich Admin-Konsolen anpassen? {#how-to-customize-admin-consoles}
 
-AEM bietet verschiedene Methoden zum Anpassen von Konsolen und der Seitenbearbeitungsfunktionen Ihrer Autoreninstanz. Informationen zum Erstellen einer benutzerdefinierten Konsole und zum Anpassen einer Standardansicht für eine Konsole finden Sie unter [ Anpassen der Konsolen](/help/sites-developing/customizing-consoles-touch.md).
+AEM bietet verschiedene Methoden zum Anpassen von Konsolen und der Seitenbearbeitungsfunktionen Ihrer Autoreninstanz. Informationen zum Erstellen einer benutzerdefinierten Konsole und zum Anpassen einer Standardansicht für eine Konsole finden Sie unter [&#x200B; Anpassen der Konsolen](/help/sites-developing/customizing-consoles-touch.md).
 
 #### Was ist der Unterschied zwischen CoralUI 2- und CoralUI 3-basierten Komponenten? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 

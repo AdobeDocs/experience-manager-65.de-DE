@@ -53,11 +53,11 @@ In diesem Bereich werden Ihre Kampagnenerlebnisse wie [Newsletter](/help/sites-c
 
 * **[Leads](#leads)**
 Hier können Sie Ihre Leads verwalten. Sie können Leads erstellen oder importieren, bestimmte Details für einzelne Leads bearbeiten oder löschen, wenn sie nicht mehr benötigt werden. Sie können Leads auch in verschiedene Gruppen, so genannte Listen, einteilen. **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.
-Es wird empfohlen, [Adobe Campaign und die Integration mit AEM zu ](/help/sites-administering/campaign.md).
+Es wird empfohlen, [Adobe Campaign und die Integration mit AEM zu &#x200B;](/help/sites-administering/campaign.md).
 
 * **[Listen](#lists)**
 Hier können Sie Ihre (Lead-)Listen verwalten. **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.
-Es wird empfohlen, [Adobe Campaign und die Integration mit AEM zu ](/help/sites-administering/campaign.md).
+Es wird empfohlen, [Adobe Campaign und die Integration mit AEM zu &#x200B;](/help/sites-administering/campaign.md).
 
 * **[Kampagnen](#campaigns)**
 Hier können Sie Ihre Marken, Kampagnen und Erlebnisse verwalten.
@@ -73,7 +73,7 @@ Das Dashboard enthält vier Bereiche, die Ihnen eine Übersicht über Ihre (Lead
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktion (Lead-Verwaltung) weiter auszubauen.
->Es wird empfohlen, [Adobe Campaign und die Integration mit AEM zu ](/help/sites-administering/campaign.md).
+>Es wird empfohlen, [Adobe Campaign und die Integration mit AEM zu &#x200B;](/help/sites-administering/campaign.md).
 
 Im MCM von AEM können Sie Leads organisieren und hinzufügen, indem Sie sie manuell eingeben oder indem Sie eine kommagetrennte Liste importieren, z. B. eine Mailing-Liste. Sie können Leads auch anhand von Newsletter- oder Community-Anmeldungen generieren. (Wenn dies konfiguriert wurde, kann nach einer Anmeldung ein Workflow ausgelöst werden, aus dem Leads hervorgehen.) Leads werden in der Regel kategorisiert und in eine Liste eingefügt, sodass Sie später Aktionen für die gesamte Liste durchführen können, beispielsweise Senden einer benutzerdefinierten E-Mail an eine bestimmte Liste.
 
@@ -90,7 +90,7 @@ Im linken Bereich unter **Leads** können Sie Ihre Leads erstellen, importieren,
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktion (Listenverwaltung) weiter auszubauen.
->Es wird empfohlen, [Adobe Campaign und die Integration mit AEM zu ](/help/sites-administering/campaign.md).
+>Es wird empfohlen, [Adobe Campaign und die Integration mit AEM zu &#x200B;](/help/sites-administering/campaign.md).
 
 Mithilfe von Listen können Sie Ihre Leads in Gruppen organisieren. Mit Listen können Sie Marketing-Kampagnen gezielt für eine bestimmte Personengruppe erstellen, z. B. können Sie einen zielgruppengerechten Newsletter an eine Liste senden.
 

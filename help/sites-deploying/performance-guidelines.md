@@ -320,7 +320,7 @@ Weitere Einzelheiten zu den verfügbaren Konfigurationsoptionen finden Sie unter
 >
 >Für die Bereitstellung von AEM auf Azure oder AWS außerhalb von Adobe Managed Services wird von Adobe dringend empfohlen, direkt mit dem Cloud-Anbieter zu arbeiten. Oder arbeiten Sie mit einem der Partner von Adobe zusammen, die bei der Implementierung von AEM in der gewünschten Cloud-Umgebung helfen. Der ausgewählte Cloud-Anbieter oder -Partner ist verantwortlich für die Skalierungsspezifikationen, das Design und die Implementierung der unterstützten Architektur, um Ihre spezifischen Anforderungen an Leistung, Last, Skalierbarkeit und Sicherheit zu erfüllen.
 >
->>Weitere Informationen finden Sie auf der Seite [technische Anforderungen](/help/sites-deploying/technical-requirements.md#supported-platforms).
+>&#x200B;>Weitere Informationen finden Sie auf der Seite [technische Anforderungen](/help/sites-deploying/technical-requirements.md#supported-platforms).
 
 ### Suchen {#search-features}
 

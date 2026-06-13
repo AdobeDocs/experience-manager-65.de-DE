@@ -42,7 +42,7 @@ In Adobe Experience Manager (AEM) bilden Marken die oberste Ebene und eine Samml
 Eine Kampagne ist eine Sammlung einzelner **Erlebnisse**.
 
 * **Erlebnisse**
-Der fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Besucher auf (Touchpoints**präsentiert**. Es gibt verschiedene Erlebnistypen:
+Der fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Besucher auf (Touchpoints&#x200B;**präsentiert**. Es gibt verschiedene Erlebnistypen:
 
    * **Teaser**
      [Teaser-Seiten/-Absätze](#teasers) dienen dazu, bestimmte **Besuchersegmente** zu Inhalten zu leiten, die auf ihre Interessen ausgerichtet sind.

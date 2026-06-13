@@ -141,7 +141,7 @@ Mit der Datei `sling.properties` können Sie den erforderlichen Ausführungsmodu
 
 ### Verwenden der -r-Option {#using-the-r-option}
 
-Beim Ausführen des Schnellstarts können Sie mit der `-r`-Option einen benutzerdefinierten Ausführungsmodus aktivieren. Verwenden Sie beispielsweise den folgenden Befehl, um eine AEM-Instanz mit dem Ausführungsmodus dev zu starten. ``
+Beim Ausführen des Schnellstarts können Sie mit der `-r`-Option einen benutzerdefinierten Ausführungsmodus aktivieren. Verwenden Sie beispielsweise den folgenden Befehl, um eine AEM-Instanz mit dem Ausführungsmodus dev zu starten. &grave;&grave;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev

@@ -226,7 +226,7 @@ Eine Neuindizierung von Oak-Indizes muss vermieden werden, sofern nicht einer de
 
 >[!NOTE]
 >
->Bevor Sie anhand der nachstehenden Tabellen ermitteln, ob eine Neuindizierung sinnvoll ist, stellen Sie **immer ** Folgendes sicher:
+>Bevor Sie anhand der nachstehenden Tabellen ermitteln, ob eine Neuindizierung sinnvoll ist, stellen Sie **immer &#x200B;** Folgendes sicher:
 >
 >* Die Abfrage ist korrekt.
 >* Die Abfrage wird in den erwarteten Index aufgelöst (mithilfe von [Abfrage erläutern](/help/sites-administering/operations-dashboard.md#diagnosis-tools)).
