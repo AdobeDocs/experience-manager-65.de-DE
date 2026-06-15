@@ -448,7 +448,7 @@ ht-degree: 96%
       + [[!DNL Assets] und MediaLibrary](/help/assets/medialibrary.md)
       + [Verwenden des PDF Rasterizer](/help/assets/aem-pdf-rasterizer.md)
       + [Konfigurieren von Upload-Beschränkungen](/help/assets/configuring-asset-upload-restrictions.md)
-      + [Integration mit [!DNL Experience Manager] und  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
+      + [Integration mit [!DNL Experience Manager] und  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
       + [Integrieren mit  [!DNL InDesign Server]](/help/assets/indesign.md)
       + [Digital Rights Management in Assets](/help/assets/drm.md)
       + [Verwenden des Demopakets für Assets Insights](/help/assets/use-demo-package-for-asset-insights.md)
