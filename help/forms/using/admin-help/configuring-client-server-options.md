@@ -9,9 +9,9 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: 579c90bb4d8ee8a3b7e633ecc9fb0b797b297ca2
 workflow-type: tm+mt
-source-wordcount: '10334'
+source-wordcount: '10377'
 ht-degree: 97%
 
 ---
@@ -58,6 +58,10 @@ Weitere Informationen zur Funktionsweise der Offline-Nutzung und Synchronisation
 **Erweiterte Authentifizierung gestatten** Wählen Sie diese Option, um erweiterte Authentifizierung zu aktivieren, und geben Sie dann die Startseiten-URL für die erweiterte Authentifizierung ein.
 
 Wenn Sie diese Option auswählen, können Client-Anwendungen die erweiterte Authentifizierung verwenden. Mit der erweiterten Authentifizierung können auf dem AEM-Formular-Server angepasste Authentifizierungsprozesse und verschiedene Authentifizierungsoptionen konfiguriert werden. Beispielsweise können Benutzende die SAML-basierte Authentifizierung anstelle des AEM Forms-Benutzernamens/Kennworts von Acrobat- und Reader-Clients aus nutzen. Standardmäßig enthält die Landingpage-URL *localhost* als Server-Namen. Ersetzen Sie den Server-Namen durch einen vollständig qualifizierten Host-Namen. Der Host-Name in der Landingpage-URL wird automatisch mit der Basis-URL gefüllt, wenn die erweiterte Authentifizierung noch nicht aktiviert ist. Siehe [Hinzufügen des Anbieters für die erweiterte Authentifizierung](configuring-client-server-options.md#add-the-extended-authentication-provider).
+
+>[!NOTE]
+>
+> Die externe Browser-Authentifizierung ist in AEM Forms on JEE Service Pack 6.5.25.0 und höher verfügbar. Wenn Sie Service Pack 6.5.24.0 oder früher verwenden, aktualisieren Sie auf Service Pack 6.5.25.0 oder installieren Sie den entsprechenden JEE-Hotfix-Patch. Siehe [Konfigurieren der erweiterten Authentifizierung über einen externen Browser für Document Security](/help/forms/using/admin-help/configure-external-browser-authentication-document-security.md).
 
 ***Hinweis &#x200B;**: Erweiterte Authentifizierung wird auf Apple Mac OS X mit Adobe Acrobat ab Version 11.0.6 unterstützt.*
 
