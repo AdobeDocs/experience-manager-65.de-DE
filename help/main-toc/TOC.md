@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: 606ea57b0e9c012b9bc87ac87910337c025038ee
+source-git-commit: 25928abbff3ed684fd1b7130c3f4f6095c33e0d2
 workflow-type: tm+mt
-source-wordcount: '8270'
+source-wordcount: '8279'
 ht-degree: 96%
 
 ---
@@ -448,7 +448,7 @@ ht-degree: 96%
       + [[!DNL Assets] und MediaLibrary](/help/assets/medialibrary.md)
       + [Verwenden des PDF Rasterizer](/help/assets/aem-pdf-rasterizer.md)
       + [Konfigurieren von Upload-Beschränkungen](/help/assets/configuring-asset-upload-restrictions.md)
-      + [Integration mit [!DNL Experience Manager] und  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
+      + [Integration mit [!DNL Experience Manager] und  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
       + [Integrieren mit  [!DNL InDesign Server]](/help/assets/indesign.md)
       + [Digital Rights Management in Assets](/help/assets/drm.md)
       + [Verwenden des Demopakets für Assets Insights](/help/assets/use-demo-package-for-asset-insights.md)
@@ -1007,6 +1007,7 @@ ht-degree: 96%
          + [Informationen zu Document Security](/help/forms/using/admin-help/document-security.md)
          + [Bereitstellung von großen Mengen geschützter Informationen](/help/forms/using/admin-help/high-volume-secure-information-delivery.md)
          + [Client- und Serveroptionen konfigurieren](/help/forms/using/admin-help/configuring-client-server-options.md)
+         + [Konfigurieren der erweiterten Authentifizierung über den externen Browser für Document Security](/help/forms/using/admin-help/configure-external-browser-authentication-document-security.md)
          + [Konten eingeladener und lokaler Benutzer verwalten](/help/forms/using/admin-help/invited-local-user-accounts.md)
          + [Steuern des Zugriffs auf richtliniengeschützte Dokumente](/help/forms/using/admin-help/controlling-access-policy-protected-documents.md)
          + [Ereignisse überwachen](/help/forms/using/admin-help/monitoring-events.md)
