@@ -9,9 +9,9 @@ feature: Document Security
 exl-id: a452674c-aea0-45d6-88cd-438af539d355
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 98a772829d3568a5826ea9e3ae65760f1587040f
+source-git-commit: 89a07256cd5bb850aac19565ad86273322fa1f31
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1029'
 ht-degree: 4%
 
 ---
@@ -32,7 +32,11 @@ Stellen Sie vor der Konfiguration der externen Browser-Authentifizierung sicher,
 
 * AEM Forms 6.5 on JEE mit Service Pack 6.5.25.0 bereitgestellt oder Service Pack 6.5.24.0 mit dem entsprechenden JEE-Hotfix-Patch, der auf einem unterstützten Anwendungsserver (JBoss, WebLogic oder WebSphere) installiert ist. Siehe [Software-Verteilungslinks für AEM Forms JEE Hotfix2 6.5.24.0](#software-distribution-links).
 * Die erweiterte Authentifizierung (Authentifizierung von Drittanbietern) ist bereits aktiviert und funktioniert mit einem IDP. Siehe [Serverkonfigurationseinstellungen](/help/forms/using/admin-help/configuring-client-server-options.md#server-configuration-settings) und [Erweiterten Authentifizierungsanbieter hinzufügen](/help/forms/using/admin-help/configuring-client-server-options.md#add-the-extended-authentication-provider).
-* Adobe Acrobat Pro oder Adobe Acrobat Reader (64-Bit) mit dem neuesten Update auf dem Windows-Client installiert
+* Adobe Acrobat Pro oder Adobe Acrobat Reader (64-Bit) mit dem neuesten Update auf dem Windows-Client installiert.
+
+>[!NOTE]
+>
+> Für die externe Browser-Authentifizierung ist eine unterstützte Version von Adobe Acrobat oder Adobe Acrobat Reader auf dem Client erforderlich. Versionsdetails und -aktualisierungen finden Sie unter [Acrobat-Versionshinweise (Continuous Track vom März ](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix)).
 
 ### Software-Verteilungslinks für AEM Forms JEE Hotfix2 6.5.24.0 {#software-distribution-links}
 
@@ -115,7 +119,7 @@ In diesem Video erfahren Sie, wie Sie die Authentifizierung eines externen Brows
 ### Der eingebettete Browser wird anstelle des System-Browsers geöffnet {#embedded-browser-opens-instead-of-system-browser}
 
 * Stellen Sie sicher, dass die Authentifizierung für den externen Browser auf dem Server aktiviert ist. Siehe [Aktivieren der externen Browser-Authentifizierung](#enable-external-browser-authentication).
-* Vergewissern Sie sich, dass die Acrobat- oder Reader-Version diese Funktion unterstützt.
+* Vergewissern Sie sich, dass die Acrobat- oder Reader-Version diese Funktion unterstützt. Siehe [Acrobat](#acrobat).
 
 ### Die Authentifizierung im Browser ist erfolgreich, aber das Dokument wird nicht entsperrt {#authentication-succeeds-but-document-does-not-unlock}
 
