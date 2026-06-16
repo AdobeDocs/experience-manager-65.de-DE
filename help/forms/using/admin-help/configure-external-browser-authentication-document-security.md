@@ -36,7 +36,7 @@ Stellen Sie vor der Konfiguration der externen Browser-Authentifizierung sicher,
 
 >[!NOTE]
 >
-> Für die externe Browser-Authentifizierung ist eine unterstützte Version von Adobe Acrobat oder Adobe Acrobat Reader auf dem Client erforderlich. Versionsdetails und -aktualisierungen finden Sie unter [Acrobat-Versionshinweise (Continuous Track vom März ](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix)).
+> Für die externe Browser-Authentifizierung ist eine unterstützte Version von Adobe Acrobat oder Adobe Acrobat Reader auf dem Client erforderlich. Versionsdetails und -aktualisierungen finden Sie unter [Acrobat-Versionshinweise (Continuous Track vom März &#x200B;](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix)).
 
 ### Software-Verteilungslinks für AEM Forms JEE Hotfix2 6.5.24.0 {#software-distribution-links}
 
