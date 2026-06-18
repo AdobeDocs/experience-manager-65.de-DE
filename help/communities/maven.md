@@ -9,9 +9,9 @@ exl-id: 3df90511-e43e-442b-bf73-44c22c1886b7
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 1c2c350e91fe9a0a67618ea4ec00d4a8b4e3f0ca
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '123'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,13 @@ Es gibt nur ein „uber“-Artefakt, das einzelne Artefakte ersetzt:
 
 >[!NOTE]
 >
->Ab AEM 6.4 werden die Communities-APIs nicht mehr explizit veröffentlicht. Alle Communities-APIs sind jetzt im UberJar selbst enthalten.
+>Ab AEM 6.4 werden die Communities-APIs nicht explizit veröffentlicht. Alle Communities-APIs sind jetzt im UberJar selbst enthalten.
 >
 >Halten Sie sich über die neueste Version von Communities auf dem Laufenden.
 >
 >Im Abschnitt [Neueste Versionen](deploy-communities.md#latest-releases) finden Sie die neueste Version.
 
-## Beispiel für eine Maven-Abhängigkeit {#maven-dependency-example}
+## Beispiel für eine Maven-Abhängigkeit
 
 ```xml
 <dependency>
@@ -87,7 +87,7 @@ Ensure thet the version specified corresponds with the Communities package versi
 >
 >Visit the [Latest Releases](deploy-communities.md#latest-releases) section to identify the most recent version.
 
-## Maven Dependency Example {#maven-dependency-example}
+## Maven Dependency Example
 
 The Communities API jar must be specified before the Uber API jar.
 
