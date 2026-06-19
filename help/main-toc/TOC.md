@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: 6af329d2faa778c3cdbb83854fb36066242e14d5
+source-git-commit: ec3941675081255879065c3be9d5af77474b2072
 workflow-type: tm+mt
-source-wordcount: '8279'
+source-wordcount: '8286'
 ht-degree: 96%
 
 ---
@@ -564,6 +564,7 @@ ht-degree: 96%
          + [Konfigurieren von Adobe Experience Manager Forms on JEE auf einem JBoss-Cluster](https://www.adobe.com/go/learn_aemforms_clusterJBoss_65_de)
          + [Konfigurieren von Adobe Experience Manager Forms on JEE auf einem WebSphere-Cluster](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_65_de)
          + [Konfigurieren von Adobe Experience Manager Forms on JEE auf einem WebLogic-Cluster](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_65_de)
+         + [Beheben von Serialisierungsproblemen in AEM Forms JEE](/help/forms/using/mitigating-serialization-issues-forms-jee.md)
       + Konfigurieren von AEM Forms {#configure-aem-forms}
          + [Leistungsoptimierung für AEM Forms-Server](/help/forms/using/performance-tuning-aem-forms.md)
          + [Cache für adaptive Formulare konfigurieren](/help/forms/using/configure-adaptive-forms-cache.md)
