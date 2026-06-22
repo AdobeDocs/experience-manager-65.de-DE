@@ -5,10 +5,10 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
-source-git-commit: 26ac50aa27501fe6a80b38a474e9811338c4fb56
+source-git-commit: f6e1e28d6fbfc240a46c2c69f02c9c5fda1d0d0d
 workflow-type: tm+mt
-source-wordcount: '3519'
-ht-degree: 100%
+source-wordcount: '3546'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ Wenn einem Übersetzungsprojekt Ressourcen hinzugefügt werden, wird ein Überse
 
 Übersetzungsprojekte sind langfristige Elemente, die durch Sprache und Übersetzungsmethode/-anbieter definiert werden, um sie an die Governance der Organisation für die Globalisierung anzupassen. Sie sollten einmal während der Erstübersetzung oder manuell initiiert werden und so lange gültig bleiben, wie Aktivitäten der Inhalts- und Übersetzungsaktualisierung ausgeführt werden.
 
-Übersetzungsprojekte und -vorgänge werden mit Übersetzungsvorbereitungs-Workflows erstellt. Diese Workflows umfassen drei Optionen für die Erstübersetzung (Erstellen und übersetzen) und für Aktualisierungen (Übersetzung aktualisieren):
+Übersetzungsprojekte und -aufträge werden mit Übersetzungsvorbereitungs-Workflows erstellt. Diese Workflows umfassen drei Optionen für die Erstübersetzung (Erstellen und übersetzen) und für Aktualisierungen (Übersetzung aktualisieren):
 
 1. [Neues Projekt erstellen](#creating-translation-projects-using-the-references-panel)
 1. [Zu vorhandenem Projekt hinzufügen](#adding-pages-to-a-translation-project)
@@ -124,7 +124,7 @@ Nach dem Übersetzen können Sie die [Übersetzung überprüfen](#reviewing-and-
 
 Nachdem Sie ein Übersetzungsprojekt erstellt haben, können Sie das Bedienfeld „Ressourcen“ verwenden, um Seiten zum Projekt hinzuzufügen. Das Hinzufügen von Seiten ist dann hilfreich, wenn Sie Seiten von verschiedenen Verzweigungen in dasselbe Projekt einfügen.
 
-Wenn Sie einem Übersetzungsprojekt Seiten hinzufügen, werden die Seiten in einen neuen Übersetzungsauftrag einbezogen. Sie können auch [Seiten zu einem vorhandenen Vorgang hinzufügen](#adding-pages-assets-to-a-translation-job).
+Wenn Sie einem Übersetzungsprojekt Seiten hinzufügen, werden die Seiten in einen neuen Übersetzungsauftrag einbezogen. Sie können auch [Seiten zu einem vorhandenen Auftrag hinzufügen](#adding-pages-assets-to-a-translation-job).
 
 So wie beim Erstellen eines Projekts werden beim Hinzufügen von Seiten bei Bedarf Kopien der Seiten zu einem Launch hinzugefügt, um zu verhindern, dass vorhandene Sprachkopien überschrieben werden. (Siehe [Erstellen von Übersetzungsprojekten für bestehende Sprachkopien](#performing-initial-translations-and-updating-existing-translations).)
 
@@ -166,7 +166,7 @@ Sie können Seiten, Assets, Tags oder i18n-Wörterbücher dem Übersetzungsauftr
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-1. Wählen Sie das oberste Element der Verzweigung aus, die Sie hinzufügen möchten, und klicken Sie dann auf das Häkchen-Symbol.  Sie können mehrere Objekte auswählen.
+1. Wählen Sie das oberste Element der Verzweigung aus, die Sie hinzufügen möchten, und klicken Sie dann auf das Häkchen-Symbol. Sie können mehrere Objekte auswählen.
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
@@ -226,7 +226,7 @@ Ihre Tags werden nun in Ihrem Übersetzungsauftrag hinzugefügt.
 
 ## Anzeigen von Details eines Übersetzungsprojekts {#seeing-translation-project-details}
 
-Die Kachel „Zusammenfassung der Übersetzung“ enthält die Eigenschaften, die für ein Übersetzungsprojekt konfiguriert sind.  Auf der Registerkarte „Übersetzung“ finden Sie zusätzlich zu den allgemeinen [Projektinformationen](/help/sites-authoring/projects.md#project-info) übersetzungsspezifische Eigenschaften:
+Die Kachel „Zusammenfassung der Übersetzung“ enthält die Eigenschaften, die für ein Übersetzungsprojekt konfiguriert sind. Auf der Registerkarte „Übersetzung“ finden Sie zusätzlich zu den allgemeinen [Projektinformationen](/help/sites-authoring/projects.md#project-info) übersetzungsspezifische Eigenschaften:
 
 * Ausgangssprache: Die Sprache der Seiten, die übersetzt werden.
 * Zielsprache: Die Sprache, in die die Seiten übersetzt werden.
@@ -250,7 +250,7 @@ Die folgende Tabelle beschreibt die einzelnen Status, die ein Auftrag oder ein E
 | Status | Beschreibung |
 |---|---|
 | Entwurf | Der Übersetzungsauftrag wurde noch nicht gestartet. Übersetzungsaufträge haben den Status ENTWURF, wenn sie erstellt werden. |
-| Übermittelt | Dateien im Übersetzungsauftrag erhalten diesen Status, wenn sie erfolgreich an den Übersetzungs-Service gesendet wurden. Dieser Status kann nach dem Befehl „Request Scope“ oder dem Befehl „Start“ auftreten. |
+| Übermittelt | Dateien im Übersetzungsauftrag erhalten diesen Status, wenn sie erfolgreich an den Übersetzungs-Service gesendet wurden. Dieser Status kann nach Ausgabe des Befehls Berechnung anfordern oder des Befehls Starten angezeigt werden. |
 | Berechnung angefragt | Für den Workflow für die menschliche Übersetzung wurden die Dateien des Auftrags zum Berechnen des Umfangs an den Übersetzungsdienstleister gesendet. Er wird nach Ausgabe des Befehls Berechnung anfordern angezeigt. |
 | Berechnung abgeschlossen | Der Anbieter hat die Berechnung des Übersetzungsauftrag abgeschlossen. |
 | Übersetzung beauftragt | Der Projektinhaber hat die Berechnung akzeptiert. Dieser Status zeigt an, dass der Übersetzungsanbieter mit der Übersetzung der Dateien im Auftrag beginnen soll. |
@@ -275,7 +275,7 @@ Die Festlegung eines Fälligkeitsdatums funktioniert nur dann richtig, wenn der 
 
 Mit dem folgenden Verfahren wird das Fälligkeitsdatum für ein Projekt festgelegt.
 
-1. Klicken Sie auf die Auslassungspunkte am unteren Rand der Kachel „Zusammenfassung der Übersetzung“. 
+1. Klicken Sie auf die Auslassungspunkte am unteren Rand der Kachel „Zusammenfassung der Übersetzung“.
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 
@@ -325,7 +325,7 @@ Nachdem Sie den Übersetzungsauftrag gestartet haben, wird auf der Kachel „Üb
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
 1. Öffnen Sie in der Projektkonsole das Übersetzungsprojekt.
-1. Klicken Sie auf der Kachel „Übersetzungsauftrag“ auf das Befehlsmenü und dann auf „Starten“. 
+1. Klicken Sie auf der Kachel „Übersetzungsauftrag“ auf das Befehlsmenü und dann auf „Starten“.
 
    ![chlimage_1-266](assets/chlimage_1-266.png)
 
