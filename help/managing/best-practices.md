@@ -10,10 +10,10 @@ exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Admin,Developer,Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: f6e1e28d6fbfc240a46c2c69f02c9c5fda1d0d0d
 workflow-type: tm+mt
-source-wordcount: '3212'
-ht-degree: 98%
+source-wordcount: '3275'
+ht-degree: 96%
 
 ---
 
@@ -56,7 +56,7 @@ Das Arbeitsblatt zum **Projekt-Heartbeat** liefert einen grafischen Überblick �
 
 ## Status nach Rolle {#status-by-role}
 
-Das Arbeitsblatt **Status nach Rolle** schüsselt detailliert die [**Konsistenz**, Qualität und **Vollständigkeit**](#projectheartbeat) auf, sortiert nach **[Phase](#phases-and-milestones)** und **[Rolle](#persona)**.
+Das **Status nach Rolle** Arbeitsblatt zeigt eine detaillierte Aufschlüsselung der [**Zustand**, **Qualität** und **Vollständigkeit**](#projectheartbeat) nach **[Phase](#phases-and-milestones)** und **[Persona](#persona)**.
 
 ## Phasen und Meilensteine {#phases-and-milestones}
 
@@ -80,7 +80,7 @@ Die Vorbereitung des Projekts bildet die Grundlage für das gesamte Projekt. Def
 
    * Ein grundlegender Umfang und grober Zeitplan sollten zur Verfügung gestellt werden, um zu definieren, was notwendig ist und in welchem Zeitrahmen. Wenn es zur Klärung der Situation beiträgt, können Sie auch definieren, was außerhalb dieses Umfangs liegt.
 
-Wie Sie Ihr Projekt planen, ausführen und Ihre Lösung implementieren, ist abhängig von den Einschränkungen, denen Sie unterliegen, z. B. festes Budget, fester Zeitplan, Menge des Inhalts, erforderliche Qualität.
+Wie Sie Ihr Projekt planen, ausführen und Ihre Lösung implementieren, ist abhängig von den Einschränkungen, denen Sie unterliegen, z. B. festes Budget, feste Timeline, Menge des Inhalts, erforderliche Qualität.
 
 Wie immer hat die Anpassung eines dieser Faktoren Auswirkungen auf die anderen. Eine Verkürzung der Zeit bei gleichbleibender Qualität beispielsweise führt wahrscheinlich zu einem Preisanstieg bei gleichzeitiger Reduktion der Menge an Inhalten, die bearbeitet werden können. Das Budget ist häufig ein Schlüsselfaktor und ein solcher Aspekt darf nicht vergessen werden.
 
@@ -239,7 +239,7 @@ Die Entwicklungsplanung ist der Schlüssel, um zu gewährleisten, dass das Proje
 
   Vor der Entwicklung sollten alle Unterstützungsprozesse erstellt werden, die zur Bereitstellung, zur Veröffentlichung, zum Testen und zur Meldung von Problemen notwendig sind.
 
-  Informationen finden Sie auch im [Adobe Support-Portal](https://experienceleague.adobe.com/de?lang=de&support-solution=General&support-tab=home#support).
+  Informationen finden Sie auch im [Adobe Support-Portal](https://experienceleague.adobe.com/?lang=de&support-solution=General&support-tab=home#support).
 
 ### Betriebsplanung und Betrieb {#operations-planning-and-operations}
 
@@ -276,7 +276,7 @@ Auch die Abläufe müssen angemessen geplant werden, damit Sie über die notwend
 
 * **Wiederherstellungsplan**
 
-  Stellen Sie sicher, dass Sie einen Wiederherstellungsplan haben. Dieser muss in Notfällen verfügbar sein, damit die Verwendung von AEM für die Produktion sichergestellt ist. Dies sollte u. a. Situationen wie Backup, Wiederherstellung und Ausfallsicherung abdecken.
+  Stellen Sie sicher, dass Sie einen Wiederherstellungsplan haben. In einer Notsituation muss diese verfügbar sein, um die Produktionsnutzung von AEM zu sichern. Dies sollte Situationen wie Backup, Wiederherstellung, Fallover und andere abdecken.
 
 ### Entwicklung {#development}
 
@@ -610,15 +610,16 @@ Weitere Informationen zu Best Practices zur Bereitstellung, Administration, Entw
    * [DevOp-Strategien für Unternehmen](/help/managing/enterprise-devops.md)
    * [Best Practices für SEO und URL-Verwaltung](/help/managing/seo-and-url-management.md)
    * [AEM und Richtlinien für barrierefreies Webdesign](/help/managing/web-accessibility.md)
-   * [Datenschutz-Grundverordnung](/help/managing/data-protection-and-privacy.md)* [Best Practices für Bereitstellung und Wartung](/help/sites-deploying/best-practices.md)
+   * [Datenschutz-Grundverordnung](/help/managing/data-protection-and-privacy.md)
+* [Best Practices für Bereitstellung und Wartung](/help/sites-deploying/best-practices.md)
 * [Best Practices für die Verwaltung](/help/sites-administering/administer-best-practices.md)
 * [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md)
 * [Best Practices für die Inhaltserstellung](/help/sites-authoring/best-practices.md)
 
 ## Schlüsselbereiche der Dokumentation {#key-documentation-areas}
 
-* AEM-Dokumentation
-Zusätzlich sind die folgenden Abschnitte der AEM-Dokumentation von besonderem Interesse (allerdings ist diese Liste nicht vollständig):
+* Dokumentation zu AEM
+Darüber hinaus sind die folgenden Abschnitte der Dokumentation zu AEM von besonderem Interesse (allerdings ist diese Liste nicht vollständig):
 
    * [Sicherheit](/help/sites-developing/security.md)
    * [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md)
