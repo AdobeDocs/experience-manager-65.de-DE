@@ -239,7 +239,7 @@ Die Entwicklungsplanung ist der Schlüssel, um zu gewährleisten, dass das Proje
 
   Vor der Entwicklung sollten alle Unterstützungsprozesse erstellt werden, die zur Bereitstellung, zur Veröffentlichung, zum Testen und zur Meldung von Problemen notwendig sind.
 
-  Informationen finden Sie auch im [Adobe Support-Portal](https://experienceleague.adobe.com/?lang=de&support-solution=General&support-tab=home#support).
+  Informationen finden Sie auch im [Adobe Support-Portal](https://experienceleague.adobe.com/de?lang=de&support-solution=General&support-tab=home#support).
 
 ### Betriebsplanung und Betrieb {#operations-planning-and-operations}
 
