@@ -8,10 +8,10 @@ role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: b6714ae8f3464ef600c252c7ae5dcc75cbe6610b
 workflow-type: tm+mt
-source-wordcount: '7800'
-ht-degree: 98%
+source-wordcount: '7949'
+ht-degree: 96%
 
 ---
 
@@ -262,7 +262,7 @@ Configuration Manager verwendete ein auf Ihrem Anwendungsserver bereitgestelltes
 1. Starten Sie den AEM Forms-Server.
 1. Geben Sie die nachstehende URL in einen Browser ein, um die Änderung zu testen und sicherzustellen, dass sie nicht mehr funktioniert.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Sperren des Remote-Zugriffs auf den Trust Store**
 
@@ -807,6 +807,20 @@ Wenn rechtmäßige Server-Anfragen vom CSRF-Filter blockiert werden, haben Sie f
 * Wenn die abgelehnte Anfrage keine Referrer-Kopfzeile hat, ändern Sie Ihr Client-Programm so, dass eine Referrer-Kopfzeile eingefügt wird.
 * Wenn der Client einen Browser verwenden kann, versuchen Sie es mit diesem Bereitstellungsmodell.
 * Als letztes Mittel können Sie die Ressource zur Liste der zulässigen URIs hinzufügen. Dies ist keine empfohlene Einstellung.
+
+### Beheben von Serialisierungsproblemen {#mitigating-serialization-issues}
+
+Java-Deserialisierungsangriffe nutzen Anwendungen aus, die nicht vertrauenswürdige Daten deserialisieren, was möglicherweise die Ausführung von Remote-Code auf dem Server ermöglicht. AEM Forms on JEE umfasst eine Deserialisierungs-Firewall, die vor jedem Deserialisierungsversuch eines Objekts eine Preflight-Prüfung durchführt. Die Prüfung testet Klassennamen gegen eine Firewall-ähnliche Zulassungsliste oder beides und lehnt Klassen ab, die bekanntermaßen durch Deserialisierungsangriffe ausnutzbar sind.
+
+Bei Installationen, die **JDK 11 oder höher** ausführen, wird dieser Schutz durch die native Serialisierungsfilterung der Plattform aktiviert und erfordert keine manuellen Schritte. In Installationen, die **JDK 8** ausführen, ist die native Serialisierungsfilterung nicht wirksam, sodass der NotSoSerial-Agent beim Start explizit an die JVM angehängt werden muss.
+
+Überprüfen Sie, ob der Schutz aktiv ist, indem Sie zur Konsistenzprüfung des Deserialisierungsfilters navigieren:
+
+```text
+https://<server>:<port>/system/console/healthcheck?tags=deserialization
+```
+
+Wenn die Konsistenzprüfung auf einer JDK 8-Instanz einen Fehler meldet, fügen Sie den Agenten an und konfigurieren Sie ihn wie in [Beheben von Serialisierungsproblemen in AEM Forms JEE](/help/forms/using/mitigating-serialization-issues-forms-jee.md) beschrieben.
 
 ## Sichere Netzwerkkonfiguration {#secure-network-configuration}
 
