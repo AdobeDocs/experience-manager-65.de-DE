@@ -58,7 +58,7 @@ Und ziehen Sie sie in Position auf einer Seite, wo der Blog erscheinen soll.
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen Client-seitigen ](/help/communities/blog-developer-basics.md#essentials-for-client-side) enthalten sind, wird die `Blog` wie folgt angezeigt:
+Wenn die [erforderlichen Client-seitigen &#x200B;](/help/communities/blog-developer-basics.md#essentials-for-client-side) enthalten sind, wird die `Blog` wie folgt angezeigt:
 
 ![add-blog-component](assets/add-blog-component.png)
 
@@ -180,7 +180,7 @@ Geben **auf der Registerkarte** Einstellungen“ die grundlegenden Funktionen de
 
 * **Erlauben Sie vorgestellte Inhalte**
 
-  Wenn diese Option aktiviert ist, wird die Idee als [vorgestellter Inhalt“ ](/help/communities/featured.md). Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, wird die Idee als [vorgestellter Inhalt“ &#x200B;](/help/communities/featured.md). Standard ist deaktiviert.
 
 * **Erwähnung aktivieren**
 

@@ -58,7 +58,7 @@ So erstellen Sie einen Workflow mit dem Editor:
 Sie können jedes vorhandene Workflow-Modell bearbeiten, um:
 
 * [Schritte](#addingasteptoamodel-) und ihre [Parameter](#configuring-a-workflow-step) zu definieren
-* Workflow-Eigenschaften zu konfigurieren, einschließlich [Phasen](#configuring-workflow-stages-that-show-workflow-progress), [ob der Workflow vorübergehend ist](#creatingatransientworkflow-) und/oder [ ob er mehrere Ressourcen verwendet](#configuring-a-workflow-for-multi-resource-support)
+* Workflow-Eigenschaften zu konfigurieren, einschließlich [Phasen](#configuring-workflow-stages-that-show-workflow-progress), [ob der Workflow vorübergehend ist](#creatingatransientworkflow-) und/oder [&#x200B; ob er mehrere Ressourcen verwendet](#configuring-a-workflow-for-multi-resource-support)
 
 Das Bearbeiten eines (vordefinierten) [**Standard- bzw. Legacy**-Workflows](#editing-a-default-or-legacy-workflow-for-the-first-time) umfasst einen zusätzlichen Schritt, um sicherzustellen, dass eine [sichere Kopie](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) erstellt wird, bevor Sie Änderungen vornehmen.
 

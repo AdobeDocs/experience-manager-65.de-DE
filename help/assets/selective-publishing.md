@@ -147,7 +147,7 @@ Siehe [Erstellen einer Dynamic Media-Konfiguration](#configuring-dynamic-media-c
    | Aktion | Beschreibung |
    | --- | --- |
    | **[!UICONTROL Veröffentlichung aufheben]** (aus Experience Manager) | Wählen Sie diese Option aus, um eine Veröffentlichung von Assets in Experience Manager rückgängig zu machen. |
-   | **[!UICONTROL Veröffentlichung in Dynamic Media aufheben]** | Wählen Sie diese Option aus, wenn Sie die Veröffentlichung von Assets in Dynamic Media rückgängig machen möchten.<br>Diese Option ist nur verfügbar, wenn **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** in den ]**des Ordners auf**[!UICONTROL  Selektive Veröffentlichung“ festgelegt ist. |
+   | **[!UICONTROL Veröffentlichung in Dynamic Media aufheben]** | Wählen Sie diese Option aus, wenn Sie die Veröffentlichung von Assets in Dynamic Media rückgängig machen möchten.<br>Diese Option ist nur verfügbar, wenn **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** in den **des Ordners auf** Selektive Veröffentlichung“ festgelegt ist. |
 
 1. Legen Sie unter **[!UICONTROL Zeitplan]** den Zeitpunkt der Deaktivierung fest.
 

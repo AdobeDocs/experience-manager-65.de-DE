@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Die Messaging-Funktion für AEM Communities bietet den angemeldeten Site-Besuchern (Mitgliedern) die Möglichkeit, Nachrichten an einander zu senden, auf die bei der Anmeldung bei der Site zugegriffen werden kann.
 
-Messaging ist für eine Community-Site aktiviert, indem Sie beim Erstellen einer Community[Site ein Kontrollkästchen ](/help/communities/sites-console.md).
+Messaging ist für eine Community-Site aktiviert, indem Sie beim Erstellen einer Community[Site ein Kontrollkästchen &#x200B;](/help/communities/sites-console.md).
 
 Auf dieser Seite finden Sie Informationen zur Standardkonfiguration und zu möglichen Anpassungen.
 
@@ -37,7 +37,7 @@ Für Community-Sites, die mit dem `Communities Sites console` erstellt wurden, g
 
 ### Community Messaging Operations Service {#community-messaging-operations-service}
 
-Wie unten gezeigt, gibt es eine Konfiguration des Services für Sites, die mit dem [Site-Erstellungsassistenten“ erstellt ](/help/communities/sites-console.md). Sie können die Konfiguration anzeigen oder bearbeiten, indem Sie auf das Stiftsymbol neben der Konfiguration klicken.
+Wie unten gezeigt, gibt es eine Konfiguration des Services für Sites, die mit dem [Site-Erstellungsassistenten“ erstellt &#x200B;](/help/communities/sites-console.md). Sie können die Konfiguration anzeigen oder bearbeiten, indem Sie auf das Stiftsymbol neben der Konfiguration klicken.
 
 ![messaging-operations](assets/messaging-operations.png)
 

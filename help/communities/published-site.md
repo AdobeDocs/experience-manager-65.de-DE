@@ -76,7 +76,7 @@ Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durc
 
 ## Mitglied der vertrauenswürdigen Community {#trusted-community-member}
 
-Bei dieser Erfahrung wird davon [, dass ](/help/communities/tutorials.md#demo-users)Aaron McDonald) die Rolle des [Community-Managers und -Moderators](/help/communities/create-site.md#roles) zugewiesen wurde. Kehren Sie andernfalls zur Autorenumgebung zurück, um [Site-Einstellungen ändern](/help/communities/sites-console.md#modifying-site-properties) und wählen Sie Aaron McDonald als Community-Manager und Moderator aus.
+Bei dieser Erfahrung wird davon [, dass &#x200B;](/help/communities/tutorials.md#demo-users)Aaron McDonald) die Rolle des [Community-Managers und -Moderators](/help/communities/create-site.md#roles) zugewiesen wurde. Kehren Sie andernfalls zur Autorenumgebung zurück, um [Site-Einstellungen ändern](/help/communities/sites-console.md#modifying-site-properties) und wählen Sie Aaron McDonald als Community-Manager und Moderator aus.
 
 Klicken Sie in der rechten oberen Ecke auf `Log in` und melden Sie sich mit Ihrem Benutzernamen (aaron.mcdonald@mailinator.com) und Kennwort (Kennwort) an. Beachten Sie die Möglichkeit, sich mit Twitter- oder Facebook-Anmeldeinformationen anzumelden.
 
@@ -201,7 +201,7 @@ Gehen Sie beispielsweise zur **author**-Instanz, öffnen Sie den `engage` Ordner
 
 ### Moderationslink {#moderationlink}
 
-Wenn das Community-Mitglied über Moderationsberechtigungen verfügt, ist der Link Moderation sichtbar. Wenn Sie auf den Link klicken, werden die geposteten Community-Inhalte angezeigt und können [ ähnlich wie bei der [Moderationskonsole](/help/communities/moderate-ugc.md) in der Autorenumgebung „moderiert](/help/communities/moderation.md) werden.
+Wenn das Community-Mitglied über Moderationsberechtigungen verfügt, ist der Link Moderation sichtbar. Wenn Sie auf den Link klicken, werden die geposteten Community-Inhalte angezeigt und können [&#128279;](/help/communities/moderation.md)&#x200B; ähnlich wie bei der [Moderationskonsole](/help/communities/moderate-ugc.md) in der Autorenumgebung „moderiert werden.
 
 Verwenden Sie die Schaltfläche Zurück des Browsers, um zur veröffentlichten Site zurückzukehren. Die meisten Konsolen sind in der Veröffentlichungsumgebung nicht über die globale Navigation zugänglich.
 
