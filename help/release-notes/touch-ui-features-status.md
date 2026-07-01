@@ -7,8 +7,8 @@ feature: Release Information
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 100%
+source-wordcount: '1136'
+ht-degree: 98%
 
 ---
 
@@ -76,7 +76,7 @@ Dies ist eine Liste der Sites Admin-Funktionen der klassischen Benutzeroberfläc
 | Siehe „Sprachkopien“ | Umfassend |  |
 | Suchen und Ersetzen | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
 | Benachrichtigungs-Posteingang (JCR-Ereignisse) | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. Wird in Zukunft durch eine andere Implementierung ersetzt. |
-| Verweise | Umfassend | Anzeige eingehender Seiten-Links, die zu AEM 6.5 hinzugefügt wurden. Aus Leistungsgründen werden nur direkte Links zur Seite angezeigt. |
+| Verweise | Umfassend | Anzeige eingehender Seitenlinks, die zu AEM 6.5 hinzugefügt wurden Aus Leistungsgründen werden nur direkte Links zur Seite angezeigt. |
 
 ## Funktionsstatus: Seiten-Editor {#feature-status-page-editor}
 

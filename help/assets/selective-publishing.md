@@ -12,8 +12,8 @@ feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '3000'
-ht-degree: 100%
+source-wordcount: '3028'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Sie können auf Ordnerebene wählen, ob Sie Assets in Adobe Experience Manager oder Dynamic Media veröffentlichen oder die Veröffentlichung aufheben möchten. Sie können entweder **[!UICONTROL Veröffentlichung verwalten]** oder **[!UICONTROL Quick Publish]** verwenden, anstatt sich ausschließlich auf die **[!UICONTROL Dynamic Media-Konfiguration]** zu verlassen, deren Einstellungen für alle Ordner in Ihrer Dynamic Media-Instanz gelten.
 
-Beispielsweise können Sie mit selektiver Veröffentlichung Assets für Produkte bearbeiten, die noch nicht live sind. In einem solchen Fall kann ein Marketing-Team auf Bilder mit intelligentem Zuschnitt und dynamische Ausgabedarstellungen zugreifen, die mit Dynamic Media synchronisiert werden. Auf diese Weise können Marketing-Experten Werbematerialien erstellen, ohne diese Assets für die globale Bereitstellung in Dynamic Media veröffentlichen zu müssen.
+Beispielsweise können Sie mit selektiver Veröffentlichung Assets für Produkte bearbeiten, die noch nicht live sind. In einem solchen Fall kann ein Marketing-Team auf Bilder mit smartem Zuschneiden und dynamische Ausgabedarstellungen zugreifen, die mit Dynamic Media synchronisiert werden. Sie können Werbematerialien erstellen, ohne diese Assets für die globale Bereitstellung in Dynamic Media veröffentlichen zu müssen.
 
 >[!IMPORTANT]
 >
@@ -147,7 +147,7 @@ Siehe [Erstellen einer Dynamic Media-Konfiguration](#configuring-dynamic-media-c
    | Aktion | Beschreibung |
    | --- | --- |
    | **[!UICONTROL Veröffentlichung aufheben]** (aus Experience Manager) | Wählen Sie diese Option aus, um eine Veröffentlichung von Assets in Experience Manager rückgängig zu machen. |
-   | **[!UICONTROL Veröffentlichung in Dynamic Media aufheben]** | Wählen Sie diese Option aus, um eine Veröffentlichung von Assets in Dynamic Media rückgängig zu machen.<br>Diese Option ist nur verfügbar, wenn in den Eigenschaften des Ordners der **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** auf **[!UICONTROL Selektive Veröffentlichung]** gesetzt ist. |
+   | **[!UICONTROL Veröffentlichung in Dynamic Media aufheben]** | Wählen Sie diese Option aus, wenn Sie die Veröffentlichung von Assets in Dynamic Media rückgängig machen möchten.<br>Diese Option ist nur verfügbar, wenn **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** in den ]**des Ordners auf**[!UICONTROL  Selektive Veröffentlichung“ festgelegt ist. |
 
 1. Legen Sie unter **[!UICONTROL Zeitplan]** den Zeitpunkt der Deaktivierung fest.
 
@@ -188,8 +188,8 @@ Für einfache Asset-Aktivierungen können Sie **[!UICONTROL Quick Publish]** ver
    | Option „Quick Publish“ | Funktion |
    | --- | --- |
    | In Experience Manager veröffentlichen | Veröffentlicht die ausgewählten Assets sofort in Experience Manager. |
-   | In Brand Portal veröffentlichen | Veröffentlicht die ausgewählten Assets sofort in **[!UICONTROL Brand Portal]**.<br>Diese Option ist nur verfügbar, wenn **[!UICONTROL Brand Portal]** bereits für Ihre Experience Manager Assets-Instanz konfiguriert wurde. |
-   | In Dynamic Media veröffentlichen | Veröffentlicht die ausgewählten Assets sofort in Dynamic Media.<br>Ein Asset muss mit Dynamic Media synchronisiert werden. Stellen Sie bei Bedarf sicher, dass der **[!UICONTROL Synchronisationsmodus]** in den Eigenschaften eines Ordners schon auf **[!UICONTROL Alles in diesem Unterbaum des Ordners mit Dynamic Media synchronisieren]** gesetzt ist. |
+   | In Brand Portal veröffentlichen | Veröffentlicht die ausgewählten Assets sofort in **[!UICONTROL Brand Portal]**.<br>Diese Option ist nur verfügbar, wenn Ihre Experience Manager Assets-Instanz **[!UICONTROL Brand Portal]** bereits konfiguriert hat. |
+   | In Dynamic Media veröffentlichen | Veröffentlicht die ausgewählten Assets sofort in Dynamic Media<br>Ein Asset muss mit Dynamic Media synchronisiert werden. Stellen Sie bei Bedarf sicher, dass der **[!UICONTROL Synchronisationsmodus]** in den Eigenschaften eines Ordners schon auf **[!UICONTROL Alles in diesem Unterbaum des Ordners mit Dynamic Media synchronisieren]** gesetzt ist. |
 
 1. Klicken Sie auf **[!UICONTROL OK]** und dann auf **[!UICONTROL Schließen]**.
 
@@ -210,8 +210,7 @@ Siehe auch [Suchen von Assets in Experience Manager](/help/assets/search-assets.
    ![Listenansicht und Filter in Suchergebnissen](/help/assets/assets-dm/select-publish-search-result.png)
 
 1. Erweitern Sie im linken Bereich den **[!UICONTROL Status]** und dann das Suchprädikat für **[!UICONTROL Dynamic Media]**.
-1. Verwenden Sie die Kontrollkästchen **[!UICONTROL Veröffentlicht]** und **[!UICONTROL Veröffentlichung aufgehoben]**, um die Suchergebnisse je nach Veröffentlichungsstatus der Dynamic Media-Assets weiter zu verfeinern.
-Optional können Sie diese Kontrollkästchen zusammen mit dem Suchprädikat **[!UICONTROL Veröffentlichen]** verwenden, um die Suchergebnisse von **[!UICONTROL veröffentlichten]** und **[!UICONTROL nicht mehr veröffentlichten]** Experience Manager-Assets zu verfeinern.
+1. Verwenden Sie die Kontrollkästchen **[!UICONTROL Veröffentlicht]** und **[!UICONTROL Veröffentlichung aufgehoben]**, um die Suchergebnisse je nach Veröffentlichungsstatus der Dynamic Media-Assets weiter zu verfeinern.Optional können Sie diese Kontrollkästchen zusammen mit dem Suchprädikat **[!UICONTROL Veröffentlichen]** verwenden, um die Suchergebnisse von **[!UICONTROL veröffentlichten]** und **[!UICONTROL nicht mehr veröffentlichten]** Experience Manager-Assets zu verfeinern.
 1. Führen Sie einen der folgenden Schritte aus:
    * Wählen Sie ein oder mehrere Assets aus, die Sie veröffentlichen oder deren Veröffentlichung Sie aufheben möchten.
    * Klicken Sie in der rechten oberen Ecke der Seite **[!UICONTROL Suchergebnisse]** auf **[!UICONTROL Alle auswählen]**.
@@ -257,18 +256,17 @@ Optional können Sie diese Kontrollkästchen zusammen mit dem Suchprädikat **[!
 
 ## Überprüfen des Veröffentlichungsstatus eines Assets {#check-publish-status-of-asset}
 
-Sie können in Experience Manager die **[!UICONTROL Zeitleiste]** mit der **[!UICONTROL Kartenansicht]**, **[!UICONTROL Spaltenansicht]** oder **[!UICONTROL Listenansicht]** verwenden, um den Veröffentlichungsstatus eines Assets rasch zu ermitteln.
+Sie können in Experience Manager die **[!UICONTROL Timeline]** mit der **[!UICONTROL Kartenansicht]**, **[!UICONTROL Spaltenansicht]** oder **[!UICONTROL Listenansicht]** verwenden, um den Veröffentlichungsstatus eines Assets rasch zu ermitteln.
 
 **So überprüfen Sie den Veröffentlichungsstatus eines Assets:**
 
 1. Klicken Sie in Experience Manager links oben auf der Seite auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen. Klicken Sie auf der Seite links auf das Navigationssymbol (direkt über dem Werkzeugsymbol) und dann auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 1. Öffnen Sie in der **[!UICONTROL Kartenansicht]**, **[!UICONTROL Spaltenansicht]** oder **[!UICONTROL Listenansicht]** (im Screenshot unten ist die **[!UICONTROL Listenansicht]** dargestellt) einen Ordner, der Assets enthält, die Sie veröffentlicht haben oder deren Veröffentlichung Sie aufgehoben haben.
 1. Wählen Sie ein Asset aus, damit es mit einem Häkchen angezeigt wird. Siehe als Beispiel den Screenshot unten.
-1. Wählen Sie links oben auf der Seite aus dem Dropdown-Menü die Option **[!UICONTROL Zeitleiste]** Der Bereich **[!UICONTROL Status]** links zeigt den Veröffentlichungsstatus des ausgewählten Assets an.
-Wenn Sie die **[!UICONTROL Listenansicht]** verwenden, wird eine zusätzliche Spalte für den Veröffentlichungsstatus in **[!UICONTROL Dynamic Media]** angezeigt.
+1. Wählen Sie links oben auf der Seite aus dem Dropdown-Menü die Option **[!UICONTROL Timeline]** Der Bereich **[!UICONTROL Status]** links zeigt den Veröffentlichungsstatus des ausgewählten Assets an.Wenn Sie die **[!UICONTROL Listenansicht]** verwenden, wird eine zusätzliche Spalte für den Veröffentlichungsstatus in **[!UICONTROL Dynamic Media]** angezeigt.
    * In einem Ordner, der für die Synchronisation mit Dynamic Media konfiguriert wurde, wird die Spalte **[!UICONTROL Dynamic Media]** standardmäßig angezeigt.
    * In einem Ordner, der *nicht* für die Synchronisation mit Dynamic Media konfiguriert wurde, wird die Spalte „Dynamic Media“ nicht angezeigt.
-     ![Listenansicht und Zeitleistensegment](/help/assets/assets-dm/selective-publish-status-timeline.png)
+     ![Listenansicht und Timeline](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## Fehlerbehebung bei der selektiven Veröffentlichung {#selective-publish-troubleshoot}
 

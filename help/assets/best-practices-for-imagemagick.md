@@ -8,18 +8,18 @@ exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '688'
 ht-degree: 94%
 
 ---
 
 # Installieren und konfigurieren Sie ImageMagick, um mit [!DNL Experience Manager Assets] arbeiten zu können. {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
-ImageMagick-Software ist ein Software-Plug-in zum Erstellen, Bearbeiten, Zusammenzusetzen oder Konvertieren von Bitmap-Bildern. Es kann Bilder in über 200 Formaten lesen und schreiben, darunter PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF und SVG. Verwenden Sie ImageMagick, um die Größe von Bildern zu ändern, Bilder zu kippen, zu spiegeln, zu drehen, zu verzerren, zuzuschneiden und umzuwandeln.  Darüber hinaus können Sie mit ImageMagick die Bildfarben anpassen, verschiedene Spezialeffekte anwenden oder Text, Linien, Polygone, Ellipsen und Kurven zeichnen.
+ImageMagick-Software ist ein Software-Plug-in zum Erstellen, Bearbeiten, Zusammenzusetzen oder Konvertieren von Bitmap-Bildern. Es kann Bilder in über 200 Formaten lesen und schreiben, darunter PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF und SVG. Verwenden Sie ImageMagick, um die Größe von Bildern zu ändern, Bilder zu kippen, zu spiegeln, zu drehen, zu verzerren, zuzuschneiden und umzuwandeln. Darüber hinaus können Sie mit ImageMagick die Bildfarben anpassen, verschiedene Spezialeffekte anwenden oder Text, Linien, Polygone, Ellipsen und Kurven zeichnen.
 
-Verwenden Sie den Medien-Handler von [!DNL Adobe Experience Manager] über die Befehlszeile, um Bilder mithilfe von ImageMagick zu verarbeiten. Unter [Best Practices für Assets-Dateiformate](/help/assets/assets-file-format-best-practices.md) finden Sie weitere Informationen zur Verwendung verschiedener Dateiformate mit ImageMagick.  Unter [Von Assets unterstützte Formate](/help/assets/assets-formats.md) erfahren Sie mehr zu allen unterstützten Dateiformaten.
+Verwenden Sie den Medien-Handler von [!DNL Adobe Experience Manager] über die Befehlszeile, um Bilder mithilfe von ImageMagick zu verarbeiten. Unter [Best Practices für Assets-Dateiformate](/help/assets/assets-file-format-best-practices.md) finden Sie weitere Informationen zur Verwendung verschiedener Dateiformate mit ImageMagick. Unter [Von Assets unterstützte Formate](/help/assets/assets-formats.md) erfahren Sie mehr zu allen unterstützten Dateiformaten.
 
-Um große Dateien mit ImageMagick zu verarbeiten, sollten Sie höhere Speicheranforderungen, potenziell erforderliche Änderungen an IM-Richtlinien und die Gesamtauswirkung auf die Leistung berücksichtigen.  Die Speicheranforderungen hängen von verschiedenen Faktoren wie Auflösung, Bit-Tiefe, Farbprofil und Dateiformat ab.  Wenn Sie sehr große Dateien mit ImageMagick verarbeiten möchten, müssen Sie ein ordnungsgemäßes [!DNL Experience Manager]-Server-Benchmark durchführen. Einige hilfreiche Ressourcen finden Sie weiter unten.
+Um große Dateien mit ImageMagick zu verarbeiten, sollten Sie höhere Speicheranforderungen, potenziell erforderliche Änderungen an IM-Richtlinien und die Gesamtauswirkung auf die Leistung berücksichtigen. Die Speicheranforderungen hängen von verschiedenen Faktoren wie Auflösung, Bit-Tiefe, Farbprofil und Dateiformat ab. Wenn Sie sehr große Dateien mit ImageMagick verarbeiten möchten, müssen Sie ein ordnungsgemäßes [!DNL Experience Manager]-Server-Benchmark durchführen. Einige hilfreiche Ressourcen finden Sie weiter unten.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Um große Dateien mit ImageMagick zu verarbeiten, sollten Sie höhere Speicheran
 
 ## Installieren von ImageMagick {#installing-imagemagick}
 
-ImageMagick-Installationsdateien sind in mehreren Versionen für verschiedene Betriebssysteme verfügbar.  Verwenden Sie die entsprechende Version für Ihr Betriebssystem.
+ImageMagick-Installationsdateien sind in mehreren Versionen für verschiedene Betriebssysteme verfügbar. Verwenden Sie die entsprechende Version für Ihr Betriebssystem.
 
 1. Laden Sie die entsprechenden ImageMagick-Installationsdateien (`https://www.imagemagick.org/script/download.php website`) für Ihr Betriebssystem herunter.
 1. Um ImageMagick auf der Festplatte zu installieren, auf der der [!DNL Experience Manager]-Server gehostet wird, starten Sie die Installationsdatei.
@@ -61,7 +61,7 @@ Sie können den Befehlszeilenprozessschritt für Ihren jeweiligen Anwendungsfall
 
    >[!NOTE]
    >
-   >In manchen Versionen von Windows (z. B. Windows SE) kann der Befehl `convert` fehlschlagen, da er in Konflikt mit dem nativen Dienstprogramm `convert` steht, das Teil der Windows-Installation ist. Geben Sie in diesem Fall den vollständigen Pfad zum ImageMagick-Dienstprogramm an.  Geben Sie zum Beispiel Folgendes an:
+   >In manchen Versionen von Windows (z. B. Windows SE) kann der Befehl `convert` fehlschlagen, da er in Konflikt mit dem nativen Dienstprogramm `convert` steht, das Teil der Windows-Installation ist. Geben Sie in diesem Fall den vollständigen Pfad zum ImageMagick-Dienstprogramm an. Geben Sie zum Beispiel Folgendes an:
    >
    >
    >`"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ./${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`

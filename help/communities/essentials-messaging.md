@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '419'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ Auf dieser Seite werden die Details der Arbeit mit dokumentiert, die mit der Mes
   </tr>
   <tr>
    <td> <a href="/help/communities/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientlibs</strong></a></td>
-   <td><p>cq.social.hbs.messaging</p> </td>
+   <td><p>CQ.social.hbs.messaging</p> </td>
   </tr>
   <tr>
    <td> <strong>Vorlagen</strong></td>
@@ -66,7 +66,7 @@ Auf dieser Seite werden die Details der Arbeit mit dokumentiert, die mit der Mes
   </tr>
   <tr>
    <td> <a href="/help/communities/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientlibs</strong></a></td>
-   <td><p>cq.social.hbs.messaging</p> </td>
+   <td><p>CQ.social.hbs.messaging</p> </td>
   </tr>
   <tr>
    <td> <strong>Vorlagen</strong></td>
@@ -104,7 +104,7 @@ Siehe auch [Client-seitige Anpassungen](/help/communities/client-customize.md)
 >* `setInboxPath`()
 >* `setSentItemsPath`()
 >
->Zum Beispiel:
+>Beispiel:
 >
 >```
 >valid: mb.setInboxPath( "/mail/inbox" );

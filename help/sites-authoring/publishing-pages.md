@@ -7,8 +7,8 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1701'
-ht-degree: 100%
+source-wordcount: '1705'
+ht-degree: 99%
 
 ---
 
@@ -24,14 +24,11 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten Datum/Zeitpunkt 
 >
 >Bestimmte Begriffe im Zusammenhang mit Publishing sind leicht zu verwechseln:
 >
->* **Veröffentlichen/Veröffentlichung rückgängig machen**
->  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
+>* **Veröffentlichen/Veröffentlichung aufhebenDies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
 >
->* **Aktivieren/Deaktivieren**
->  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
+>* **Aktivieren/DeaktivierenDiese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
 >
->* **Replizieren/Replikation**
->  Dies sind technische Begriffe, die für die Verschiebung von Daten (z. B. Seiteninhalten, Dateien, Code, Benutzerkommentaren) zwischen Umgebungen verwendet werden, etwa beim Veröffentlichen oder Zurückreplizieren von Benutzerkommentaren.
+>* **Replizieren/ReplikationDies sind technische Begriffe, die für die Verschiebung von Daten (z. B. Seiteninhalten, Dateien, Code, Benutzerkommentaren) zwischen Umgebungen verwendet werden, etwa beim Veröffentlichen oder Zurückreplizieren von Benutzerkommentaren.
 
 ## Unzureichende Berechtigungen {#insufficient-privileges}
 
@@ -272,7 +269,7 @@ Sie können den Veröffentlichungsstatus einer Seite bestimmen:
 
   Der Veröffentlichungsstatus wird in der Sites-Konsole in der Ansicht [Karte](/help/sites-authoring/basic-handling.md#card-view), [Spalte](/help/sites-authoring/basic-handling.md#column-view) und [Liste](/help/sites-authoring/basic-handling.md#list-view) angezeigt.
 
-* in der [Zeitleisten](/help/sites-authoring/basic-handling.md#timeline)
+* in der [Timeline](/help/sites-authoring/basic-handling.md#timeline)
 
   ![screen_shot_2018-03-21at154420](assets/screen_shot_2018-03-21at154420.png)
 

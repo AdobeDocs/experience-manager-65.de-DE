@@ -12,19 +12,19 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 1%
+source-wordcount: '1210'
+ht-degree: 0%
 
 ---
 
 # Erleben Sie die veröffentlichte Site {#experience-the-published-site}
 
-## Zu neuer Site auf Publish navigieren {#browse-to-new-site-on-publish}
+## Auf der Veröffentlichungsinstanz zur neuen Site navigieren {#browse-to-new-site-on-publish}
 
 Nachdem die neu erstellte Communities-Site veröffentlicht wurde, navigieren Sie zur URL, die beim Erstellen der Site, aber beispielsweise auf dem Veröffentlichungs-Server angezeigt wird:
 
 * Autoren-URL = https://localhost:4502/content/sites/engage/en.html
-* PUBLISH URL = https://localhost:4503/content/sites/engage/en.html
+* Veröffentlichungs-URL = https://localhost:4503/content/sites/engage/en.html
 
 Um Verwirrung darüber zu vermeiden, welcher Member bei der Autoren- und Veröffentlichungsinstanz angemeldet ist, wird empfohlen, für jede Instanz unterschiedliche Browser zu verwenden.
 
@@ -55,7 +55,7 @@ Eine bekannte Einschränkung macht den Inhalt der Community-Site für anonyme Be
 
 Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durch anonyme Benutzer über JCR-Inhalt und JSON zu schützen:
 
-1. Navigieren Sie in der AEM-Autoreninstanz zu https:// hostname:port/editor.html/content/site/sitename.html.
+1. Wechseln Sie in der AEM-Autoreninstanz zu https:// hostname:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -71,12 +71,12 @@ Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durc
 
    ![site-authentication](assets/site-authentication.png)
 
-1. Den Pfad der Anmeldeseite hinzufügen. Beispiel: **/content/……./Erste Schritte**.
+1. Den Pfad der Anmeldeseite hinzufügen. Beispiel: **/content/……./GetStarted**.
 1. Veröffentlichen Sie die Seite.
 
 ## Mitglied der vertrauenswürdigen Community {#trusted-community-member}
 
-Bei dieser Erfahrung wird davon [, dass &#x200B;](/help/communities/tutorials.md#demo-users)Aaron McDonald) die Rolle des [Community-Managers und -Moderators](/help/communities/create-site.md#roles) zugewiesen wurde. Kehren Sie andernfalls zur Autorenumgebung zurück, um [Site-Einstellungen ändern](/help/communities/sites-console.md#modifying-site-properties) und wählen Sie Aaron McDonald als Community-Manager und Moderator aus.
+Bei dieser Erfahrung wird davon [, dass ](/help/communities/tutorials.md#demo-users)Aaron McDonald) die Rolle des [Community-Managers und -Moderators](/help/communities/create-site.md#roles) zugewiesen wurde. Kehren Sie andernfalls zur Autorenumgebung zurück, um [Site-Einstellungen ändern](/help/communities/sites-console.md#modifying-site-properties) und wählen Sie Aaron McDonald als Community-Manager und Moderator aus.
 
 Klicken Sie in der rechten oberen Ecke auf `Log in` und melden Sie sich mit Ihrem Benutzernamen (aaron.mcdonald@mailinator.com) und Kennwort (Kennwort) an. Beachten Sie die Möglichkeit, sich mit Twitter- oder Facebook-Anmeldeinformationen anzumelden.
 
@@ -193,7 +193,7 @@ Melden Sie sich als Weston McCall (weston.mccall@dodgit.com / Kennwort) an und n
 
 ### Webseitenlink {#web-page-link}
 
-Zeigen Sie die grundlegende Webseite der Website an, indem Sie auf den Link Web-Seite klicken. Mit den standardmäßigen AEM-Authoring-Tools können Sie dieser Seite in der Authoring-Umgebung Inhalte hinzufügen.
+Zeigen Sie die grundlegende Webseite der Website an, indem Sie auf den Link Web-Seite klicken. Mit den standardmäßigen Authoring-Tools von AEM können Sie dieser Seite in der Authoring-Umgebung Inhalte hinzufügen.
 
 Gehen Sie beispielsweise zur **author**-Instanz, öffnen Sie den `engage` Ordner in der [Communities-Sites-](/help/communities/sites-console.md), wählen Sie das Symbol **Site öffnen** aus, um in den Autorenbearbeitungsmodus zu wechseln. Wählen Sie dann Vorschaumodus, sodass Sie den `Web Page` Link auswählen können, und anschließend Bearbeitungsmodus, um Titel- und Textkomponenten hinzuzufügen. Veröffentlichen Sie abschließend entweder nur die Seite oder die gesamte Site erneut.
 
@@ -201,7 +201,7 @@ Gehen Sie beispielsweise zur **author**-Instanz, öffnen Sie den `engage` Ordner
 
 ### Moderationslink {#moderationlink}
 
-Wenn das Community-Mitglied über Moderationsberechtigungen verfügt, ist der Link Moderation sichtbar. Wenn Sie auf den Link klicken, werden die geposteten Community-Inhalte angezeigt und können [&#128279;](/help/communities/moderation.md) ähnlich wie bei der [Moderationskonsole](/help/communities/moderate-ugc.md) in der Autorenumgebung „moderiert werden.
+Wenn das Community-Mitglied über Moderationsberechtigungen verfügt, ist der Link Moderation sichtbar. Wenn Sie auf den Link klicken, werden die geposteten Community-Inhalte angezeigt und können [ ähnlich wie bei der [Moderationskonsole](/help/communities/moderate-ugc.md) in der Autorenumgebung „moderiert](/help/communities/moderation.md) werden.
 
 Verwenden Sie die Schaltfläche Zurück des Browsers, um zur veröffentlichten Site zurückzukehren. Die meisten Konsolen sind in der Veröffentlichungsumgebung nicht über die globale Navigation zugänglich.
 
