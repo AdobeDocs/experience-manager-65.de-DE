@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '967'
 ht-degree: 1%
 
 ---
@@ -63,8 +63,7 @@ Um die Konfiguration der Nachrichtenliste für die Seiten **Posteingang**, **Ges
 1. Wählen Sie im `Preview`-Modus den **Nachrichten**, um die Hauptseite für Nachrichten zu öffnen. Wählen Sie dann entweder **Posteingang**, **Gesendete Elemente** oder **Papierkorb**, um die Komponente für diese Nachrichtenliste zu konfigurieren.
 
 1. Wählen Sie im `Edit` die Komponente auf der Seite aus.
-1. Um auf das Konfigurationsdialogfeld zuzugreifen, brechen Sie die Vererbung ab, indem Sie das Symbol `link` auswählen.
-Sobald die Vererbung abgebrochen wurde, können Sie das Symbol „Konfigurieren“ auswählen, um das Konfigurationsdialogfeld zu öffnen.
+1. Um auf das Konfigurationsdialogfeld zuzugreifen, brechen Sie die Vererbung ab, indem Sie das Symbol `link` auswählen.Sobald die Vererbung abgebrochen wurde, können Sie das Symbol „Konfigurieren“ auswählen, um das Konfigurationsdialogfeld zu öffnen.
 
 1. Nach Abschluss der Konfiguration müssen Sie die Vererbung wiederherstellen, indem Sie auf das Symbol `broken link` klicken.
 
@@ -137,8 +136,7 @@ Um die Konfiguration der Seite „Nachricht erstellen“ zu ändern, öffnen Sie
 * Wählen Sie im `Preview`-Modus den **Nachrichten**, um die Hauptseite für Nachrichten zu öffnen. Wählen Sie dann die Schaltfläche Neue Nachricht aus, um die Seite `Compose Message` zu öffnen.
 
 * Wählen Sie im `Edit`-Modus die Hauptkomponente auf der Seite aus, die den Nachrichtentext enthält.
-* Um auf das Konfigurationsdialogfeld zuzugreifen, brechen Sie die Vererbung ab, indem Sie das Symbol `link` auswählen.
-Sobald die Vererbung abgebrochen wurde, können Sie das Symbol „Konfigurieren“ auswählen, um das Konfigurationsdialogfeld zu öffnen.
+* Um auf das Konfigurationsdialogfeld zuzugreifen, brechen Sie die Vererbung ab, indem Sie das Symbol `link` auswählen.Sobald die Vererbung abgebrochen wurde, können Sie das Symbol „Konfigurieren“ auswählen, um das Konfigurationsdialogfeld zu öffnen.
 
 * Nach Abschluss der Konfiguration müssen Sie die Vererbung wiederherstellen, indem Sie auf das Symbol `broken link` klicken.
 

@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 18%
 
 ## Einführung {#introduction}
 
-Wenn AEM Communities lizenziert ist, können Sie nicht nur Community-Sites erstellen, sondern mithilfe standardmäßiger AEM-Authoring-Tools auch beliebige AEM-Sites mit Communities-Funktionen hinzufügen.
+Wenn AEM Communities lizenziert wird, können Sie nicht nur Community-Sites erstellen, sondern mithilfe standardmäßiger AEM-Authoring-Tools auch Communities-Funktionen zu jeder AEM-Site hinzufügen.
 
 Weitere Informationen zum Erstellen einer Community-Site finden Sie unter:
 
@@ -51,7 +51,7 @@ Siehe auch das interaktive [Community-Komponentenhandbuch](/help/communities/com
 | Kommentare | [Kommentare](/help/communities/comments.md) |
 | Community-Aktivitätenliste | [Aktivitätstrends](/help/communities/trends.md) |
 | Community-Gruppenmitgliederliste | [Community-](/help/communities/creating-groups.md) |
-| Nachricht erstellen | [Messaging](/help/communities/configure-messaging.md) |
+| Nachricht verfassen | [Messaging](/help/communities/configure-messaging.md) |
 | Präsentierter Inhalt | [Vorgestellte Inhalte](/help/communities/featured.md) |
 | Dateibibliothek | [Dateibibliothek](/help/communities/file-library.md) |
 | Folgen | [Soziales Diagramm](/help/communities/socialgraph.md) |
@@ -75,7 +75,7 @@ Siehe auch das interaktive [Community-Komponentenhandbuch](/help/communities/com
 
 >[!NOTE]
 >
->Die Umfragekomponente ist nicht mehr verfügbar und wird in Experience Manager Communities nicht mehr unterstützt.
+>Die Umfragekomponente ist nicht mehr verfügbar und wird in Experience Manager Communities unterstützt.
 
 ## Verwandte Communities-Dokumentation {#related-communities-documentation}
 

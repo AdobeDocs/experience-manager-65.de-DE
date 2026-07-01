@@ -16,7 +16,7 @@ ht-degree: 100%
 
 # Dokumentfragmente {#document-fragments}
 
-Dokumentfragmente sind wiederverwendbare Teile/Komponenten einer Korrespondenz, mit der Sie Schreiben/Kommunikationen erstellen können. Es gibt Dokumentfragmente der folgenden Typen:
+Dokumentfragmente sind wiederverwendbare Teile/Komponenten einer Korrespondenz, mit der Sie Schreiben/interaktive Kommunikationen erstellen können. Es gibt Dokumentfragmente der folgenden Typen:
 
 * **Text**: Ein Textelement ist eine Inhaltskomponente, die aus einem oder mehreren Textabsätzen besteht. Ein Absatz kann statisch oder dynamisch sein.
 

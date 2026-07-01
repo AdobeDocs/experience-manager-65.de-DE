@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2462'
-ht-degree: 100%
+source-wordcount: '2502'
+ht-degree: 99%
 
 ---
 
@@ -31,16 +31,14 @@ Wenn eine Benutzerin bzw. ein Benutzer einen Workflow startet, wird eine Instanz
 
 Wenn Sie ein Workflow-Modell neu erstellen, enthält es zunächst:
 
-* Die Schritte **Fluss-Start** und **Fluss-Ende**.
-Diese stellen den Anfang und das Ende des Workflows dar. Diese Schritte sind erforderlich und können nicht bearbeitet bzw. entfernt werden.
-* Ein **Teilnehmer**-Beispielschritt namens **Schritt 1**.
-Dieser Schritt ist so konfiguriert, dass er dem Workflow-Initiator ein Arbeitselement zuordnet. Sie können diesen Schritt nach Bedarf bearbeiten oder löschen und Schritte hinzufügen.
+* Die Schritte **Fluss-Start** und **Fluss-Ende**.Diese stellen den Anfang und das Ende des Workflows dar. Diese Schritte sind erforderlich und können nicht bearbeitet bzw. entfernt werden.
+* Ein **Teilnehmer**-Beispielschritt namens **Schritt 1**.Dieser Schritt ist so konfiguriert, dass er dem Workflow-Initiator ein Arbeitselement zuordnet. Sie können diesen Schritt nach Bedarf bearbeiten oder löschen und Schritte hinzufügen.
 
 So erstellen Sie einen Workflow mit dem Editor:
 
-1. Öffnen Sie die **Workflow-Modelle-Konsole** über **Tools** > **Workflow** > **Modelle** oder beispielsweise über: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
+1. Öffnen Sie die **Workflow-Modelle**-Konsole über **Tools**, **Workflow**, **Models** oder zum Beispiel: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
 1. Wählen Sie **Erstellen** und dann **Modell erstellen** aus.
-1. Das Dialogfeld **Arbeitsablaufmodell hinzufügen** wird angezeigt. Geben Sie **Titel** und **Namen** (optional) ein, bevor Sie **Fertig** auswählen.
+1. Das Dialogfeld **Workflow-Modell** hinzufügen wird angezeigt. Geben Sie **Titel** und **Namen** (optional) ein, bevor Sie **Fertig** auswählen.
 1. Das neue Modell wird nun in der **Workflow-Modelle-Konsole** aufgeführt.
 1. Wählen Sie Ihren neuen Workflow aus und öffnen Sie ihn dann, indem Sie auf [**Bearbeiten** klicken, um ihn zu konfigurieren](#editinganexistingworkflow):
    ![wf-01](assets/wf-01.png)
@@ -60,7 +58,7 @@ So erstellen Sie einen Workflow mit dem Editor:
 Sie können jedes vorhandene Workflow-Modell bearbeiten, um:
 
 * [Schritte](#addingasteptoamodel-) und ihre [Parameter](#configuring-a-workflow-step) zu definieren
-* Workflow-Eigenschaften zu konfigurieren, einschließlich [Phasen](#configuring-workflow-stages-that-show-workflow-progress), [ob der Workflow vorübergehend ist](#creatingatransientworkflow-) und/oder [ ob er mehrere Ressourcen verwendet](#configuring-a-workflow-for-multi-resource-support)
+* Workflow-Eigenschaften zu konfigurieren, einschließlich [Phasen](#configuring-workflow-stages-that-show-workflow-progress), [ob der Workflow vorübergehend ist](#creatingatransientworkflow-) und/oder [&#x200B; ob er mehrere Ressourcen verwendet](#configuring-a-workflow-for-multi-resource-support)
 
 Das Bearbeiten eines (vordefinierten) [**Standard- bzw. Legacy**-Workflows](#editing-a-default-or-legacy-workflow-for-the-first-time) umfasst einen zusätzlichen Schritt, um sicherzustellen, dass eine [sichere Kopie](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) erstellt wird, bevor Sie Änderungen vornehmen.
 
@@ -86,8 +84,8 @@ Wenn Sie ein [Standard- bzw. Legacy-Modell](/help/sites-developing/workflows.md#
 * Die Symbolleiste weist eine Option zum **Bearbeiten** auf (auf der rechten Seite).
 * Zunächst werden das Modell und seine Eigenschaften im schreibgeschützten Modus wie folgt dargestellt:
    * Standard-Workflows befinden sich unter `/libs`.
-   * Legacy-Workflows befinden sich unter `/etc`.
-Durch Auswählen von **Bearbeiten** wird:
+   * Legacy-Workflows sind in `/etc`
+Durch Auswahl **Bearbeiten** wird:
 * eine Kopie des Workflows unter `/conf` gespeichert
 * der Schritte-Browser verfügbar gemacht
 * es möglich, Änderungen vorzunehmen.
@@ -135,7 +133,7 @@ So fügen Sie Schritte zum Workflow-Modell hinzu:
 
    Sie können auch vorhandene Schritte kopieren, ausschneiden, einfügen, gruppieren oder löschen, wie mit dem [Seiteneditor.](/help/sites-authoring/editing-content.md)
 
-   Unterteilte Schritte können auch mithilfe der Symbolleistenoption ![wf-collapseexpand-toolbar-icon](assets/wf-collapseexpand-toolbar-icon.png) ein- oder ausgeblendet werden. 
+   Unterteilte Schritte können auch mithilfe der Symbolleistenoption ![wf-collapseexpand-toolbar-icon](assets/wf-collapseexpand-toolbar-icon.png) ein- oder ausgeblendet werden.
 
 1. Bestätigen Sie Ihre Änderungen, indem Sie in der Editor-Symbolleiste auf **Sync** klicken, um das Laufzeitmodell zu generieren.
 
@@ -147,7 +145,7 @@ Sie können das **Verhalten** von Workflow-Schritten über das Dialogfeld **Schr
 
 1. So öffnen Sie das Dialogfeld **Schritt-Eigenschaften** für einen Schritt:
 
-   * Klicken Sie auf den **-Schritt im Workflow-Modell und wählen Sie in der Komponenten-Symbolleiste die Option **Konfigurieren** aus.
+   * Klicken Sie auf den **-Schritt im Workflow-Modell und wählen Sie in der Komponenten-Symbolleiste die Option** Konfigurieren** aus.
 
    * Doppelklicken Sie auf den Schritt.
 
@@ -180,18 +178,17 @@ Sie können ein [Übergangs](/help/sites-developing/workflows.md#transient-workf
 
 >[!NOTE]
 >
->Wenn Sie einen Workflow im [Übergangsmodus](/help/sites-developing/workflows.md#transient-workflows) speichern, speichert AEM keinen Workflow-Verlauf. Aus diesem Grund werden in der [Zeitleiste](/help/sites-authoring/basic-handling.md#timeline) keine Informationen zu diesem Workflow angezeigt.
+>Wenn Sie einen Workflow im [Übergangsmodus](/help/sites-developing/workflows.md#transient-workflows) speichern, speichert AEM keinen Workflow-Verlauf. Aus diesem Grund werden in der [Timeline](/help/sites-authoring/basic-handling.md#timeline) keine Informationen zu diesem Workflow angezeigt.
 
 ## Workflow-Modelle in der Touch-Benutzeroberfläche verfügbar machen {#classic2touchui}
 
-Befolgen Sie die Konfiguration, wenn ein Workflow-Modell der klassischen Benutzeroberfläche im Auswahl-Popup-Menü der **[!UICONTROL Zeitleiste]** in der Touch-Benutzeroberfläche fehlt und verfügbar gemacht werden muss. Die folgenden Schritte zeigen die Verwendung des Workflow-Modells namens **[!UICONTROL Aktivierungsanfrage]**.
+Befolgen Sie die Konfiguration, wenn ein Workflow-Modell der klassischen Benutzeroberfläche im Auswahl-Popup-Menü der **[!UICONTROL Timeline]** in der Touch-Benutzeroberfläche fehlt und verfügbar gemacht werden muss. Die folgenden Schritte zeigen die Verwendung des Workflow-Modells namens **[!UICONTROL Aktivierungsanfrage]**.
 
-1. Vergewissern Sie sich, dass das Modell nicht in der Touch-Benutzeroberfläche verfügbar ist. Greifen Sie über den Pfad `/assets.html/content/dam` auf ein Asset zu. Auswählen eines Assets. Öffnen Sie **[!UICONTROL Zeitleiste]** in der linken Leiste. Klicken Sie auf **[!UICONTROL Workflow starten]** und bestätigen Sie, dass das **[!UICONTROL Aktivierungsanfrage]**-Modell nicht in der Popup-Liste vorhanden ist.
+1. Vergewissern Sie sich, dass das Modell nicht in der Touch-Benutzeroberfläche verfügbar ist. Greifen Sie über den Pfad `/assets.html/content/dam` auf ein Asset zu. Auswählen eines Assets. Öffnen Sie **[!UICONTROL Timeline]** in der linken Leiste. Klicken Sie auf **[!UICONTROL Workflow starten]** und bestätigen Sie, dass das **[!UICONTROL Aktivierungsanfrage]**-Modell nicht in der Popup-Liste vorhanden ist.
 
 1. Navigieren Sie wie folgt: **[!UICONTROL Tools > Allgemein > Tagging]**. Wählen Sie **[!UICONTROL Workflow]**.
 
-1. Wählen Sie **[!UICONTROL Erstellen > Tag erstellen]**. Legen Sie den **[!UICONTROL Titel]** als `DAM` und den **[!UICONTROL Namen]** als `dam` fest. Klicken Sie auf **[!UICONTROL Übermitteln]**.
-   ![Tag im Workflow-Modell erstellen](assets/workflow_create_tag.png)
+1. Wählen Sie **[!UICONTROL Erstellen > Tag erstellen]**. Legen Sie den **[!UICONTROL Titel]** als `DAM` und den **[!UICONTROL Namen]** als `dam` fest. Klicken Sie auf **[!UICONTROL Übermitteln]**.   ![Tag im Workflow-Modell erstellen](assets/workflow_create_tag.png)
 
 1. Gehen Sie zu **[!UICONTROL Tools > Workflow > Modelle]**. Wählen Sie **[!UICONTROL Aktivierungsanfrage]** aus und wählen Sie dann **[!UICONTROL Bearbeiten]**.
 
@@ -263,9 +260,9 @@ Die verfügbaren Phasen werden in den Workflow-Modellen definiert. Bestehende Wo
 
 Gehen Sie folgendermaßen vor, um ein Workflow-Modell in ein Paket zu exportieren:
 
-1. Erstellen Sie ein neues Paket mit [Package Manager](/help/sites-administering/package-manager.md#package-manager):
+1. Erstellen Sie ein neues Paket mit dem [Paket-Manager](/help/sites-administering/package-manager.md#package-manager):
 
-   1. Navigieren Sie zum Package Manager über **Tools**, **Implementierung**, **Pakete**.
+   1. Navigieren Sie zum Paket-Manager über **Tools**, **Implementierung**, **Pakete**.
 
    1. Klicken Sie auf **Paket erstellen**.
    1. Geben Sie den **Paketnamen** und ggf. weitere Details an.
@@ -395,7 +392,7 @@ Um einige der Möglichkeiten zur Erstellung eines Workflows zu veranschaulichen,
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-### Beispiel: Definieren einer Regel für eine ODER-Teilung per ECMA-Skript  {#defineruleecmascript}
+### Beispiel: Definieren einer Regel für eine ODER-Teilung per ECMA-Skript {#defineruleecmascript}
 
 Mit Schritten von **ODER-Teilung** können Sie bedingte Verarbeitungspfade in Ihren Workflow einführen.
 
@@ -414,8 +411,7 @@ Um eine ODER-Regel zu definieren, gehen Sie wie folgt vor:
 
    * Definieren Sie dies als **Standardroute**, indem Sie den **Wert** auf `true` festlegen.
 
-   * Geben Sie für **Regel** den Pfad zum Skript an. Beispiel:
-     `/apps/myapp/workflow/scripts/myscript1.ecma`
+   * Geben Sie für **Regel** den Pfad zum Skript an. Beispiel:     `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
    >
@@ -423,8 +419,7 @@ Um eine ODER-Regel zu definieren, gehen Sie wie folgt vor:
 
 1. Bearbeiten Sie die Eigenschaften von **Zweig 2** der **ODER-Teilung**:
 
-   * Geben Sie für **Regel** den Pfad zum anderen Skript an. Beispiel:
-     `/apps/myapp/workflow/scripts/myscript2.ecma`
+   * Geben Sie für **Regel** den Pfad zum anderen Skript an. Beispiel:     `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Legen Sie die Eigenschaften der einzelnen Schritte in jedem Zweig fest. Stellen Sie sicher, dass die Einstellung für **Benutzer/Gruppe** festlegt ist.
 1. Klicken Sie auf **Synchronisieren** (Editor-Symbolleiste), um Ihre Änderungen am Laufzeitmodell beizubehalten.

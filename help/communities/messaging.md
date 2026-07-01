@@ -12,7 +12,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Wie unten gezeigt, gibt es eine Konfiguration des Services für Sites, die mit d
 
 Um eine Konfiguration hinzuzufügen, klicken Sie auf das Pluszeichen &quot;**+**&quot; neben dem Namen des Services :
 
-* auf die Zulassungsliste setzen **Nachrichtenfelder**
+* **Nachrichtenfelder**
 
   Gibt die Eigenschaften der Komponente Nachricht erstellen an, die Benutzer bearbeiten und beibehalten können. Wenn neue Formularelemente hinzugefügt werden, muss die Element-ID hinzugefügt werden, wenn sie in SRP gespeichert werden soll. Der Standardwert ist zwei Einträge *„Betreff* und *Inhalt*.
 
@@ -109,13 +109,13 @@ Um eine Konfiguration hinzuzufügen, klicken Sie auf das Pluszeichen &quot;**+**
 
   Wenn „supportAttachments“ aktiviert ist, gibt dieser Wert die maximal zulässige Gesamtgröße (in Byte) aller Anlagen an. Der Standardwert ist *104857600* (100 MB).
 
-* auf die Blockierungsliste setzen **Anhangtyp**
+* **Anhangtyp**
 
-  Eine Blockierungsliste von Dateinamenerweiterungen mit dem Präfix &quot;**.**&#39;, das vom System abgelehnt wird. Auf die Blockierungsliste setzen Wenn dies nicht der Fall ist, ist die Erweiterung zulässig. Erweiterungen können mit den Symbolen &quot;**+**&quot; und &quot;**-**&quot; hinzugefügt oder entfernt werden.
+  Eine Blockierungsliste von Dateinamenerweiterungen mit dem Präfix &quot;**.**&quot;, die vom System abgelehnt werden. Wenn dies nicht der Fall ist, ist die Erweiterung zulässig. Erweiterungen können mit den Symbolen &quot;**+**&quot; und &quot;**-**&quot; hinzugefügt oder entfernt werden.
 
 * **Zulässige Anlagentypen**
 
-  **(*Aktion erforderlich*)** Eine Zulassungsliste auf die Blockierungsliste setzte von Dateinamenerweiterungen, das Gegenteil der. Um alle Dateinamenerweiterungen mit Ausnahme der auf die Blockierungsliste gesetzt zuzulassen, entfernen Sie mit dem Symbol &quot;**-**&quot; den einzelnen leeren Eintrag.
+  **(*Aktion erforderlich*)** Eine Zulassungsliste von Dateinamenerweiterungen, das Gegenteil der. Um alle Dateinamenerweiterungen mit Ausnahme der auf die Blockierungsliste gesetzt zuzulassen, entfernen Sie mit dem Symbol &quot;**-**&quot; den einzelnen leeren Eintrag.
 
 * **Dienstauswahl**
 
@@ -123,9 +123,9 @@ Um eine Konfiguration hinzuzufügen, klicken Sie auf das Pluszeichen &quot;**+**
 
   Der Standardwert lautet */bin/messaging* .
 
-* auf die Zulassungsliste setzen **Feld**
+* **Feld**
 
-  Auf die Zulassungsliste setzen Verwenden Sie **Nachrichtenfelder**.
+  Verwenden Sie **Nachrichtenfelder**.
 
 >[!CAUTION]
 >

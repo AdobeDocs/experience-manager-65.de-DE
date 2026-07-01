@@ -1,6 +1,6 @@
 ---
 title: Blog-Funktion
-description: Erfahren Sie, wie die Blog-Funktion die Bereitstellung von Community-Informationen in einem Journalformat unterstützt. Einträge werden von autorisierten Benutzenden in der Publish-Umgebung vorgenommen.
+description: Erfahren Sie, wie die Blog-Funktion die Bereitstellung von Community-Informationen in einem Journalformat unterstützt. Einträge werden von autorisierten Benutzern in der Veröffentlichungsumgebung vorgenommen.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1719'
 ht-degree: 1%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 1%
 
 ## Einführung {#introduction}
 
-Die Blog-Funktion für AEM Communities hat sich von einer Authoring-Aktivität zu einer echten Community-Aktivität geändert, die in der Publish-Umgebung stattfindet.
+Die Blog-Funktion für AEM Communities hat sich von einer Authoring-Aktivität zu einer echten Community-Aktivität geändert, die in der Publishing-Umgebung stattfindet.
 
-Die Blog-Funktion unterstützt die Bereitstellung von Community-Informationen in einem Journalformat. Blogeinträge werden in der Publish-Umgebung von autorisierten Mitgliedern (registrierte, angemeldete Benutzer) vorgenommen.
+Die Blog-Funktion unterstützt die Bereitstellung von Community-Informationen in einem Journalformat. Blogeinträge werden in der Veröffentlichungsumgebung von autorisierten Mitgliedern (registrierte, angemeldete Benutzer) vorgenommen.
 
 Die Blog-Funktion bietet :
 
-* Publish-seitige Erstellung von Blog-Artikeln und -Kommentaren
+* Erstellung von Blog-Artikeln und Kommentaren auf der Veröffentlichungsseite
 * Rich-Text-Bearbeitung
 * Inline-Bilder (mit Unterstützung für Drag &amp; Drop)
 * Eingebettete Inhalte in sozialen Netzwerken ([oEmbed-Unterstützung](/help/communities/blog-developer-basics.md#allowing-rich-media))
@@ -45,7 +45,7 @@ In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 >
 >Die Komponenten `Journal` und `Journal Sidebar` sind `Blog` und `Blog Sidebar`.
 >
->Die Blog-Funktion aus AEM 6.0 und früheren Versionen wurde entfernt. Sie basierte auf einer Vorlage und erlaubte es Autoren nur, Inhalte in der Autorenumgebung zu erstellen.
+>Die Blog-Funktion in AEM 6.0 und früheren Versionen wurde entfernt. Sie basierte auf einer Vorlage und erlaubte es Autoren nur, Inhalte in der Autorenumgebung zu erstellen.
 
 ## Hinzufügen von Blog-Komponenten zu einer Seite {#adding-blog-components-to-a-page}
 
@@ -290,9 +290,9 @@ Andere Funktionen hängen davon ab, ob der Site-Besucher ein Moderator, Administ
 
 Beim Erstellen eines Blog-Artikels haben Sie die Wahl, Folgendes zu tun:
 
-1. Publish Sofort
-1. Publish a Draft
-1. Publish zu einem geplanten Zeitpunkt
+1. Sofort veröffentlichen
+1. Entwurf veröffentlichen
+1. Zu einem geplanten Datum und zu einer geplanten Uhrzeit veröffentlichen
 
 Die Blog-Artikel werden unter der entsprechenden Registerkarte (Veröffentlicht, Entwürfe oder Geplant) für Mitglieder angezeigt, die in der Lage sind, in der Veröffentlichungsinstanz zu erstellen.
 
