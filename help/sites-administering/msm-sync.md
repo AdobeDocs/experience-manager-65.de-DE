@@ -12,12 +12,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '2672'
-ht-degree: 100%
+source-wordcount: '2681'
+ht-degree: 97%
 
 ---
 
-# Konfigurieren der Synchronisierung von Live Copies {#configuring-live-copy-synchronization}
+# Konfigurieren der Synchronisierung von Live Copies{#configuring-live-copy-synchronization}
 
 Führen Sie die folgenden Schritte durch, um zu steuern, wie und wann Live Copies mit ihren Quellinhalten synchronisiert werden sollen.
 
@@ -170,7 +170,7 @@ In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, die mit
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>In der Live Copy werden durch diese Synchronisierung Verweise wie Links aktualisiert.<br /> Sie sucht in den Live Copy-Seiten Pfade, die auf eine Ressource in der Blueprint verweisen. Wenn sie solch einen Pfad gefunden hat, wird er so aktualisiert, dass er auf die zugehörige Ressource in der Live Copy (statt in der Blueprint) verweist. Verweise, die Ziele außerhalb der Blueprints aufweisen, werden nicht geändert.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Konfigurieren Sie den Service CQ MSM References Update Action</a>, um die Knotentypen, Absatzelemente und Seiteneigenschaften zu definieren, die ausgeschlossen werden sollen. </p> </td>
+   <td><p>In der Live Copy werden durch diese Synchronisierungsaktion Verweise wie Links aktualisiert.<br /> Sie sucht in den Live Copy-Seiten Pfade, die auf eine Ressource in der Blueprint verweisen. Wenn sie solch einen Pfad gefunden hat, wird er so aktualisiert, dass er auf die zugehörige Ressource in der Live Copy (statt in der Blueprint) verweist. Verweise, die Ziele außerhalb der Blueprints aufweisen, werden nicht geändert.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Konfigurieren Sie den Service CQ MSM References Update Action</a>, um die Knotentypen, Absatzelemente und Seiteneigenschaften zu definieren, die ausgeschlossen werden sollen. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -225,12 +225,11 @@ In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, die mit
   <tr>
    <td>PageMoveAction</td>
    <td><p>PageMoveAction gilt, wenn eine Seite in die Blueprint verschoben wurde.</p> <p>Die Aktion kopiert (nicht: verschiebt) die zugehörige Live Copy-Seite vom Ort vor dem Verschieben zum Ort nach dem Verschieben.</p> <p>Die Aktion „PageMoveAction“ ändert dabei die Live Copy-Seite am Ort vor dem Verschieben nicht. Für nachfolgende Rollout-Konfigurationen weist diese Seite daher den Status einer Live-Beziehung ohne Blueprint auf.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Konfigurieren Sie den Service CQ MSM Page Move Action</a>, um die Knotentypen, Absatzelemente und Seiteneigenschaften festzulegen, die ausgeschlossen werden sollen. </p> <p>Diese Aktion muss die einzige Synchronisierungsaktion in einer Rollout-Konfiguration sein.</p> </td>
-   <td><p>prop_referenceUpdate: (boolescher Wert) Aktualisiert bei „true“ die Verweise.  Der Standardwert ist „true“.</p> <p> </p> </td>
+   <td><p>prop_referenceUpdate: (boolescher Wert) Aktualisiert bei „true“ die Verweise. Der Standardwert ist „true“.</p> <p> </p> </td>
   </tr>
   <tr>
    <td>productCreateUpdate</td>
-   <td>Erstellt oder aktualisiert Produktressourcen in einem Katalog. Diese Aktion soll in einer der folgenden Situationen verwendet werden:
-    <ul>
+   <td>Erstellt oder aktualisiert Produktressourcen in einem Katalog. Diese Aktion soll in einer der folgenden Situationen verwendet werden:<ul>
      <li>Erstellen oder Veröffentlichen eines Katalogs (oder Katalogabschnitts)</li>
      <li>Eine Benutzerin oder ein Benutzer stellt die Synchronisierungsvererbung für eine Produktkomponente wieder her.</li>
     </ul> </td>
@@ -243,7 +242,7 @@ In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, die mit
   </tr>
   <tr>
    <td>catalogRolloutHooks</td>
-   <td>Führt Rollout-Hooks aus, die speziell für die Katalogerstellung ausgelegt sind. Ruft die Methoden „executePageRolloutHooks“ und „executeProductRolloutHooks“ vom Catalog Generator ab.<br /> Siehe „com.adobe.cq.commerce.pim.api.CatalogGenerator“ in den AEM-Javadocs.</td>
+   <td>Führt Rollout-Hooks aus, die speziell für die Katalogerstellung ausgelegt sind. Ruft die executePageRolloutHooks-Methode und die executeProductRolloutHooks-Methode der CatalogGenerator.<br /> Siehe com.adobe.cq.commerce.pim.api.CatalogGenerator in den AEM-Javadocs.</td>
    <td> </td>
   </tr>
   <tr>
@@ -308,7 +307,7 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die Sie konfiguri
 
 >[!NOTE]
 >
->In der klassischen Benutzeroberfläche spiegelt das Schlosssymbol, das im Dialogfeld „Seiteneigenschaften“ für Live Copy-Seiten angezeigt wird, nicht die Konfiguration der Eigenschaft „Ausgeschlossene Seiteneigenschaften“ wider.  Das Schlosssymbol wird auch für Eigenschaften angezeigt, die von der Synchronisierungsaktion ausgeschlossen sind.
+>In der klassischen Benutzeroberfläche spiegelt das Schlosssymbol, das im Dialogfeld „Seiteneigenschaften“ für Live Copy-Seiten angezeigt wird, nicht die Konfiguration der Eigenschaft „Ausgeschlossene Seiteneigenschaften“ wider. Das Schlosssymbol wird auch für Eigenschaften angezeigt, die von der Synchronisierungsaktion ausgeschlossen sind.
 
 >[!NOTE]
 >
@@ -367,7 +366,7 @@ Die folgende Liste der Orte, unter denen Sie die zu verwendenden Rollout-Konfigu
 Beispielsweise nutzt eine Blueprint die We.Retail-Referenzwebsite als Quellinhalt. Aus der Blueprint wird eine Website erstellt. Jedes Element in der folgenden Liste beschreibt ein anderes Szenario in Bezug auf die Verwendung von Rollout-Konfigurationen:
 
 * Keine der Blueprint- oder Live Copy-Seiten sind für eine Rollout-Konfiguration konfiguriert. MSM nutzt die standardmäßige Rollout-Konfiguration für alle Live Copy-Seiten.
-* Die Stammseite der We.Retail-Reference-Website ist für mehrere Rollout-Konfigurationen konfiguriert.  MSM nutzt diese Rollout-Konfigurationen für alle Live Copy-Seiten.
+* Die Stammseite der We.Retail-Reference-Website ist für mehrere Rollout-Konfigurationen konfiguriert. MSM nutzt diese Rollout-Konfigurationen für alle Live Copy-Seiten.
 * Die Stammseite der We.Retail-Referenz-Website ist für mehrere Rollout-Konfigurationen konfiguriert und die Stammseite der Live Copy-Website ist für einen anderen Satz an Rollout-Konfigurationen konfiguriert. MSM nutzt die Rollout-Konfigurationen, die auf der Stammseite der Live Copy-Website konfiguriert sind.
 
 ### Festlegen der Rollout-Konfigurationen für eine Live Copy-Seite {#setting-the-rollout-configurations-for-a-live-copy-page}
@@ -408,10 +407,10 @@ Die untergeordneten Seiten der Blueprint-Seite übernehmen die Konfiguration. We
 
 ### Festlegen der standardmäßigen Rollout-Konfiguration {#setting-the-system-default-rollout-configuration}
 
-Legen Sie eine Rollout-Konfiguration fest, die als Systemstandard genutzt werden soll.  Um die Standardkonfiguration festzulegen, konfigurieren Sie den OSGi-Dienst:
+Legen Sie eine Rollout-Konfiguration fest, die als Systemstandard genutzt werden soll. Um die Standardkonfiguration festzulegen, konfigurieren Sie den OSGi-Dienst:
 
 * **Day CQ WCM Live Relationship Manager**
-Die Dienst-PID ist `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
+Die Service-PID ist `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 Konfigurieren Sie den Dienst entweder über die [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder einen [Repository-Knoten](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
