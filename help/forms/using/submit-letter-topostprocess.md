@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '837'
 ht-degree: 100%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 100%
 
 ## Nachbearbeitung {#post-processing}
 
-Agenten können Arbeitsabläufe für Nachbearbeitungsprozesse in Briefen und interaktiver Kommunikation verknüpfen und ausführen. Zur Ausführung anstehende Nachbearbeitungsprozesse können in der Eigenschaftenansicht der Briefvorlage ausgewählt werden.  Sie können Nachbearbeitungsprozesse einrichten, um Ihre finalen Briefe per E-Mail zu senden, zu drucken oder zu archivieren.
+Agenten können Workflows für Nachbearbeitungsprozesse in Briefen und interaktiver Kommunikation verknüpfen und ausführen. Zur Ausführung anstehende Nachbearbeitungsprozesse können in der Eigenschaftenansicht der Briefvorlage ausgewählt werden. Sie können Nachbearbeitungsprozesse einrichten, um Ihre finalen Briefe per E-Mail zu senden, zu drucken oder zu archivieren.
 
 ![Nachbearbeitung](assets/ppoverview.png)
 
-Sie müssen die Nachbearbeitungsprozesse zuerst einrichten, bevor Sie sie mit Briefen oder interaktiver Kommunikation verknüpfen. Für abgesendete Briefe können zwei Typen von Arbeitsabläufen ausgeführt werden:
+Sie müssen die Nachbearbeitungsprozesse zuerst einrichten, bevor Sie sie mit Briefen oder interaktiver Kommunikation verknüpfen. Für abgesendete Briefe können zwei Typen von Workflows ausgeführt werden:
 
 1. **Forms Workflow:** Dies sind die Workflows für AEM Forms in JEE-Prozessverwaltung. Anweisungen zum Einrichten des [Forms Workflows](#formsworkflow).
 
@@ -50,13 +50,13 @@ Sie müssen die Nachbearbeitungsprozesse zuerst einrichten, bevor Sie sie mit Br
 
    ![Erstellen des Briefbildschirms mit aufgelisteten Nachbearbeitungsprozessen](assets/0configmanager.png)
 
-1. Kopieren Sie zum Authentifizieren eines Prozesses/Dienstes den Namen des Prozesses und gehen Sie zurück zur Seite „Adobe Experience Manager Web Console Configurations“ > „Adobe AEM Forms Client SDK-Konfiguration“ und fügen Sie den Prozess als neuen Dienst hinzu. 
+1. Kopieren Sie zum Authentifizieren eines Prozesses/Dienstes den Namen des Prozesses und gehen Sie zurück zur Seite „Konfiguration der Adobe Experience Manager-Web-Konsole“ > „Adobe AEM Forms Client SDK-Konfiguration“ und fügen Sie den Prozess als neuen Dienst hinzu.
 
    Beispiel: Wenn die Dropdown-Liste auf der Seite „Eigenschaften“ des Briefes den Namen des Prozesses als Forms Workflow -> ValidCCPostProcess/SaveXML anzeigt, fügen Sie einen Service-Namen als `ValidCCPostProcess/SaveXML` hinzu.
 
-1. Richten Sie die erforderlichen Parameter und Ausgaben ein, um die AEM Forms on JEE-Arbeitsabläufe für die Nachbearbeitung zu verwenden. Die Standardwerte der Parameter werden nachfolgend angezeigt.
+1. Richten Sie die erforderlichen Parameter und Ausgaben ein, um die AEM Forms on JEE-Workflows für die Nachbearbeitung zu verwenden. Die Standardwerte der Parameter werden nachfolgend angezeigt.
 
-   Gehen Sie zur Seite „Konfiguration der Adobe Experience Manager Web Console“ > **[!UICONTROL Correspondence Management-Konfigurationen]** und richten Sie die folgenden Parameter ein:
+   Gehen Sie zur Seite „Konfiguration der Adobe Experience Manager-Web-Konsole“ > **[!UICONTROL Correspondence Management-Konfigurationen]** und richten Sie die folgenden Parameter ein:
 
    1. **inPDFDoc (PDF-Dokumentparameter): ** Ein PDF-Dokument als Eingabe. Diese Eingabe enthält den gerenderten Brief als Eingabe. Die angegebenen Parameternamen können konfiguriert werden. Sie können über die Correspondence Management-Konfigurationen in „Konfiguration“ konfiguriert werden.
    1. **inXMLDoc (XML-Datenparameter):** Ein XML-Dokument als Eingabe. Diese Eingabe enthält Daten, die vom Benutzer im XML-Formular eingegeben wurden.
@@ -70,7 +70,7 @@ Sie müssen die Nachbearbeitungsprozesse zuerst einrichten, bevor Sie sie mit Br
 
 1. Anmelden bei `https://localhost:publishport/aem/forms`.
 1. Navigieren Sie zu **[!UICONTROL Briefe]**, um den in der Veröffentlichungsinstanz verfügbaren veröffentlichten Brief anzuzeigen.
-1. Konfigurieren Sie die Einstellungen für AEM DS.  Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für AEM DS](../../forms/using/configuring-the-processing-server-url.md).
+1. Konfigurieren Sie die Einstellungen für AEM DS. Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für AEM DS](../../forms/using/configuring-the-processing-server-url.md).
 
 >[!NOTE]
 >
@@ -116,9 +116,9 @@ Führen Sie auf der CCR-Benutzeroberfläche die folgenden Schritte durch, um ein
 
 1. Bewegen Sie den Mauszeiger über einen Brief und wählen Sie **Eigenschaften anzeigen** aus.
 1. Wählen Sie **Bearbeiten** aus.
-1. Wählen Sie unter „Allgemeine Eigenschaften“ über die Dropdown-Liste „Nachbearbeitungsprozess“ den mit Brief zu verknüpfenden Nachbearbeitungsprozess aus.  Sowohl die AEM- als auch die Forms-bezogenen Nachbearbeitungsprozesse werden in der Dropdown-Liste aufgelistet.
+1. Wählen Sie unter „Allgemeine Eigenschaften“ über die Dropdown-Liste „Nachbearbeitungsprozess“ den mit Brief zu verknüpfenden Nachbearbeitungsprozess aus. Sowohl die AEM- als auch die Forms-bezogenen Nachbearbeitungsprozesse werden in der Dropdown-Liste aufgelistet.
 1. Wählen Sie **Speichern** aus.
-1. Nachdem Sie den Brief mit dem Nachbearbeitungsprozess konfiguriert haben, veröffentlichen Sie ihn und geben Sie optional in der Veröffentlichungsinstanz die Verarbeitungs-URL im AEM DS-Einstellungsdienst an. Dadurch wird sichergestellt, dass der Nachbearbeitungsprozess in der Verarbeitungsinstanz ausgeführt wird. 
+1. Nachdem Sie den Brief mit dem Nachbearbeitungsprozess konfiguriert haben, veröffentlichen Sie ihn und geben Sie optional in der Veröffentlichungsinstanz die Verarbeitungs-URL im AEM DS-Einstellungsdienst an. Dadurch wird sichergestellt, dass der Nachbearbeitungsprozess in der Verarbeitungsinstanz ausgeführt wird.
 
 ## Erneutes Laden einer Entwurfsbriefinstanz  {#reloaddraft}
 

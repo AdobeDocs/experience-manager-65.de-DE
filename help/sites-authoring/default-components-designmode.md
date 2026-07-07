@@ -7,8 +7,8 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 100%
+source-wordcount: '912'
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Wenn die AEM-Instanz direkt installiert wird, ist im Komponenten-Browser sofort eine Auswahl von Komponenten verfügbar.
 
-Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mithilfe des [Design-Modus](#enable-disable-components) können Sie diese Komponenten aktivieren bzw. deaktivieren. Wenn Sie den Design-Modus aktivieren und sich auf der Seite befinden, können Sie damit [Aspekte des Komponenten-Designs konfigurieren](#configuring-the-design-of-a-component), indem Sie die Attributparameter bearbeiten.
+Darüber hinaus stehen verschiedene weitere Komponenten zur Verfügung. Sie können den Design-Modus verwenden, um [solche Komponenten zu aktivieren/deaktivieren](#enable-disable-components). Wenn Sie den Design-Modus aktivieren und sich auf der Seite befinden, können Sie [Aspekte des Komponenten-Designs konfigurieren](#configuring-the-design-of-a-component) indem Sie die Attributparameter bearbeiten.
 
 >[!NOTE]
 >
