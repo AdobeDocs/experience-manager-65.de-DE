@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 100%
+source-wordcount: '996'
+ht-degree: 95%
 
 ---
 
@@ -41,8 +41,7 @@ Wenn das adaptive Formular als AEM-Seite veröffentlicht wird, enthält die gesa
 1. Melden Sie sich bei der AEM [!DNL Forms]-Autoreninstanz an und suchen Sie in der AEM [!DNL Forms]-Benutzeroberfläche das adaptive Formular „shipping-address-add-update-form“.
    `https://localhost:4502/aem/forms.html/content/dam/formsanddocuments`
 1. Wählen Sie das adaptive Formular „shipping-address-add-update-form“ und dann **[!UICONTROL Veröffentlichen]** aus. Es wird ein Dialogfeld mit den Assets, die sich auf das adaptive Formular beziehen, angezeigt. Wählen Sie **[!UICONTROL Veröffentlichen]** aus. Das adaptive Formular wird veröffentlicht und eine Erfolgsmeldung erscheint.
-1. Öffnen Sie das Formular in der Veröffentlichungsinstanz. Das Formular kann vom Endbenutzer ausgefüllt und gesendet werden.
-   `https://localhost:4503/content/forms/af/shipping-address-add-update-form.html`
+1. Öffnen Sie das Formular in der Veröffentlichungsinstanz. Das Formular kann vom Endbenutzer ausgefüllt und gesendet werden.   `https://localhost:4503/content/forms/af/shipping-address-add-update-form.html`
 
 ## Einbetten eines adaptiven Formulars in eine AEM Sites-Seite {#embed-the-adaptive-form-in-an-aem-sites-page}
 
@@ -50,16 +49,16 @@ AEM [!DNL Forms] ermöglicht es Formularentwicklern, adaptive Formulare nahtlos 
 
 AEM [!DNL Forms] bietet eine Komponente, AEM [!DNL Forms]-Container, zum Einbetten eines adaptiven Formulars in eine AEM [!DNL Sites]-Seite. Standardmäßig ist die Komponente im AEM [!DNL Sites]-Container nicht sichtbar. Führen Sie die folgenden Schritte aus, um die AEM [!DNL Forms]-Container-Komponente zu aktivieren und das adaptive Formular in eine AEM [!DNL Sites]-Seite einzubetten:
 
-1. Erstellen und öffnen Sie eine Seite in der „We.Retail“-Website zur Bearbeitung. Zum Beispiel: [https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). Das adaptive Formular ist in die [!DNL Sites]-Seite eingebettet.
+1. Erstellen und öffnen Sie eine Seite in der „We.Retail“-Website zur Bearbeitung. Beispiel: [https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). Das adaptive Formular ist in die [!DNL Sites]-Seite eingebettet.
 
    Sie können das adaptive Formular auch in eine vorhandene We.Retail-[!DNL Site's]-Seite einbetten. Zum Beispiel die Seite „ÜBER UNS“ [https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html). Es spart Ihnen die Zeit, eine Seite zu erstellen. Die folgenden Schritte verwenden die neu erstellte Seite.
 
-   Die „We.Retail“-Seite wird mit AEM ausgeliefert. Wenn Sie die „We.Retail“-Seite nicht installiert haben, lesen Sie [„We.Retail“-Verweis-Implementierung](https://helpx.adobe.com/de/experience-manager/6-3/help/sites-developing/we-retail.html) um die Seite zu installieren.
+   Die „We.Retail“-Site wird mit AEM ausgeliefert. Wenn Sie die „We.Retail“-Site nicht installiert haben, lesen Sie [„We.Retail“-Verweis-Implementierung](https://helpx.adobe.com/de/experience-manager/6-3/help/sites-developing/we-retail.html) um die Site zu installieren.
 
-1. Wählen Sie die Seiteninformation ![Eigenschaften](assets/properties.png) und die Option **[!UICONTROL Vorlage bearbeiten]** auf der neu erstellten „We.Retail“-Webseite aus. Die Vorlage der Seite wird in einer neuen Registerkarte des Browsers geöffnet.
+1. Wählen Sie die Seiteninformation ![Eigenschaften](assets/properties.png) und die Option **[!UICONTROL Vorlage bearbeiten]** auf der neu erstellten „We.Retail“-Website aus. Die Vorlage der Seite wird in einer neuen Registerkarte des Browsers geöffnet.
 1. Wählen Sie im Feld **[!UICONTROL Layout-Container]** die Option ![Feed-Management](assets/feedmanagement.png) aus. Erweitern Sie auf der Registerkarte **[!UICONTROL Erlaubte Komponenten]** das Akkordeon **[!UICONTROL Allgemein]**, wählen Sie die Option **[!UICONTROL AEM Form]** und anschließend ![save_icon](assets/save_icon.svg) aus. Die AEM [!DNL Forms]-Container-Komponente ist für die Seite aktiviert.
 
-1. Öffnen Sie die Browser-Registerkarte mit der AEM [!DNL Sites]-Seite, die in Schritt 1 geöffnet wurde. Wählen Sie das Feld **[!UICONTROL Komponenten hierher ziehen]** und **+.** Wählen Sie im Feld **[!UICONTROL Neue Komponente einfügen]** die Option **[!UICONTROL AEM-Forms]** aus. Die Komponente **[!UICONTROL AEM Forms-Container]** wird der Seite hinzugefügt.
+1. Öffnen Sie die Browser-Registerkarte mit der AEM [!DNL Sites]-Seite, die in Schritt 1 geöffnet wurde. Wählen Sie das Feld **[!UICONTROL Komponenten hierher ziehen]** und klicken Sie auf **+.** Wählen **[!UICONTROL im Feld „Neue Komponente einfügen]** die Option **[!UICONTROL AEM-Formular]**. Die Komponente **[!UICONTROL AEM Forms-Container]** wird der Seite hinzugefügt.
 1. Wählen Sie die Komponente **[!UICONTROL AEM Forms-Container]** und dann ![configure-icon](assets/configure-icon.svg) aus. Es wird ein Dialogfeld mit den Eigenschaften des AEM [!DNL Forms]-Containers angezeigt. Durchsuchen Sie das Feld **[!UICONTROL Asset-Pfad]** nach dem adaptiven Formular „shipping-address-add-update-form“ und wählen Sie es aus. Wählen Sie ![save_icon](assets/save_icon.svg) aus. Das adaptive Formular wird in die Seite eingebettet.
 1. Veröffentlichen Sie sowohl das adaptive Formular als auch die [!DNL Sites]-Seite. Beachten Sie dabei Folgendes:
 

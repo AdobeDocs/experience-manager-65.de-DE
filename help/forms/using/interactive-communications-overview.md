@@ -10,7 +10,7 @@ feature: Interactive Communication
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '499'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ Im Folgenden sind die wichtigsten Funktionen von interaktiven Kommunikationen au
 - Diagramme zur Darstellung von Informationen in leicht verständlichen visuellen Formaten im Druck- und Web-Format
 - Dokumentfragmente unterstützen den Regeleditor und das Formulardatenmodell
 - Die Benutzeroberfläche für Agenten zeigt die Druck- und Web-Vorschau der interaktiven Kommunikation.
-- Drag-and-Drop-Komponenten zum schnellen Erstellen von Druck- und Webkanälen
+- Drag-and-Drop-Komponenten zum schnellen Erstellen von Druck- und Web-Kanälen
 
 ## Erstellung einer interaktiven Kommunikation {#interactive-communication-creation}
 
@@ -45,7 +45,7 @@ Um eine Interaktive Kommunikation zu erstellen, sollten Sie die [Bausteine](#bui
 
 1. Entscheiden Sie sich zum [Erstellen einer interaktiven Kommunikation](/help/forms/using/create-interactive-communication.md).
 
-1. Geben Sie das [Formulardatenmodell](/help/forms/using/data-integration.md), den Vorbefüllungs-Dienst und die [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md) an. Sie können den Webkanal über den Druckkanal generieren.
+1. Geben Sie das [Formulardatenmodell](/help/forms/using/data-integration.md), den Vorbefüllungs-Dienst und die [Druck- und Web-Kanal-Vorlagen](/help/forms/using/web-channel-print-channel.md) an. Sie können den Web-Kanal über den Druckkanal generieren.
 
 1. Fügen Sie mit der [Drag &amp; Drop-Beutzeroberfläche](/help/forms/using/introduction-interactive-communication-authoring.md) je nach Bedarf Dokumentfragmente, Bilder, Komponenten zum Druck- und Webkanal der interaktiven Kommunikation hinzu.
 1. Konfigurieren Sie die Eigenschaften für die eingefügten Komponenten, z. B. die Folgenden:
@@ -63,7 +63,7 @@ Um eine Interaktive Kommunikation zu erstellen, sollten Sie die [Bausteine](#bui
 Im Folgenden sind die Bausteine aufgeführt, die zum Erstellen einer interaktiven Kommunikation erforderlich sind:
 
 - [Formulardatenmodell](/help/forms/using/data-integration.md)
-- [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md)
+- [Druck- und Web-Kanal-Vorlagen](/help/forms/using/web-channel-print-channel.md)
 - [Dokumentfragmente](/help/forms/using/document-fragments.md)
 - Bilder
 - [Designs](/help/forms/using/themes.md) für den Web-Kanal
@@ -105,7 +105,7 @@ Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz, um Kun
   </tr>
   <tr>
    <td>Authoring –</td>
-   <td>Drag-and-Drop-Schnittstelle zum Erstellen von Druck- und Webkanälen</td>
+   <td>Drag-and-Drop-Schnittstelle zum Erstellen von Druck- und Web-Kanälen</td>
    <td>Kein Drag-and-Drop-Mechanismus </td>
   </tr>
   <tr>
@@ -121,12 +121,12 @@ Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz, um Kun
    <tr>
    <td>Entwürfe</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
    <tr>
    <td>Übermittlungen</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
   <tr>
@@ -141,7 +141,7 @@ Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz, um Kun
   </tr>
    <td>Batch-Verarbeitung</td>
    <td>Unterstützt </td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Agentsignatur</td>

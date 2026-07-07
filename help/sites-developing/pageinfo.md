@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 100%
+source-wordcount: '952'
+ht-degree: 99%
 
 ---
 
@@ -474,18 +474,18 @@ Konfigurieren Sie den Day CQ WCM Workflow Package Info Provider-Dienst so, dass 
 
 >[!NOTE]
 >
->Die Registerkarte „Workflow“ des Sidekicks verwendet das PageInfo-Servlet, um eine Liste von Workflow-Paketen abzurufen.  Aus der Liste können Sie das Paket auswählen, zu dem die aktuelle Seite hinzugefügt werden soll.  Die Filter, die Sie erstellen, wirken sich auf diese Liste aus.
+>Die Registerkarte „Workflow“ des Sidekicks verwendet das PageInfo-Servlet, um eine Liste von Workflow-Paketen abzurufen. Aus der Liste können Sie das Paket auswählen, zu dem die aktuelle Seite hinzugefügt werden soll. Die Filter, die Sie erstellen, wirken sich auf diese Liste aus.
 >
 
 Die ID des Diensts lautet `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Um einen Filter zu erstellen, geben Sie einen Wert für eine `workflowpackageinfoprovider.filter`-Eigenschaft an.
 
 Eigenschaftswerten wird ein Plus- oder Minuszeichen vorangestellt, gefolgt vom Paketpfad:
 
-* Der Pfad ist der Pfad des Stammknotens des Workflow-Pakets.  Der Pfad verwendet die FileVault-Syntax.
+* Der Pfad ist der Pfad des Stammknotens des Workflow-Pakets. Der Pfad verwendet die FileVault-Syntax.
 * Verwenden Sie ein vorangestelltes Pluszeichen, um ein Paket einzuschließen.
 * Verwenden Sie ein vorangestelltes Minuszeichen, um ein Paket auszuschließen.
 
-Der Dienst wendet das kumulierte Ergebnis aller Filter an.  Beispielsweise werden mit den folgenden Filterwerten alle Workflow-Pakete mit Ausnahme derjenigen im Ordner „Editions“ ausgeschlossen:
+Der Dienst wendet das kumulierte Ergebnis aller Filter an. Beispielsweise werden mit den folgenden Filterwerten alle Workflow-Pakete mit Ausnahme derjenigen im Ordner „Editions“ ausgeschlossen:
 
 ```
 -/etc/workflow/packages(/.*)?
@@ -498,7 +498,7 @@ Der Dienst wendet das kumulierte Ergebnis aller Filter an.  Beispielsweise werd
 
 Gehen Sie beispielsweise zum Konfigurieren des Diensts mithilfe von CRXDE Lite wie folgt vor:
 
-1. Öffnen Sie CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. http://localhost Öffnen Sie CRXDE Lite ([:4502/crx/de](http://localhost:4502/crx/de)).
 1. Erstellen Sie im Ordner „config“ Ihrer Anwendung einen Knoten:
 
    * Name: `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`
@@ -516,7 +516,7 @@ Gehen Sie wie folgt vor, um den Dienst in Ihrer Projektquelle zu konfigurieren:
 
 1. Suchen oder erstellen Sie den Konfigurationsordner für Ihre AEM-Anwendung in Ihrer Projektquelle.
 
-   Wenn Sie beispielsweise den Archetyp „multimodule“ des Content Package Maven-Plug-ins zum Erstellen Ihres Projekts verwenden, lautet der Ordnerpfad `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`.
+   Wenn Sie beispielsweise den Archetyp „multimodule“ des Content Package Maven Plugin zum Erstellen Ihres Projekts verwenden, lautet der Ordnerpfad `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`.
 1. Erstellen Sie im Ordner „config“ eine Textdatei mit dem Namen com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml.
 1. Kopieren Sie den folgenden Text in die Datei:
 
@@ -540,7 +540,7 @@ Erstellen Sie einen benutzerdefinierten PageInfoProvider-Dienst, um Seitenmetada
 
 1. Implementieren Sie die Schnittstelle `com.day.cq.wcm.api.PageInfoProvider`.
 1. Bündeln Sie die Klasse und stellen Sie sie als OSGi-Dienst bereit.
-1. Erstellen Sie eine Seitenkomponente in Ihrer Anwendung.  Verwenden Sie `foundation/components/page` als Wert der `sling:resourceSuperType`-Eigenschaft.
+1. Erstellen Sie eine Seitenkomponente in Ihrer Anwendung. Verwenden Sie `foundation/components/page` als Wert der `sling:resourceSuperType`-Eigenschaft.
 
 1. Fügen Sie unter dem Komponentenknoten `cq:infoProviders` einen Knoten hinzu.
 1. Fügen Sie unter dem Knoten `cq:infoProviders` einen Knoten für Ihren PageInfoProvider-Dienst hinzu. Sie können einen beliebigen Namen für den Knoten angeben.
