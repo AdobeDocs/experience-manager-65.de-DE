@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: ec3941675081255879065c3be9d5af77474b2072
+source-git-commit: d4a8b41ee8136bb69845fdf65456e1407b2b5d19
 workflow-type: tm+mt
-source-wordcount: '8286'
-ht-degree: 96%
+source-wordcount: '8300'
+ht-degree: 95%
 
 ---
 
@@ -1213,6 +1213,7 @@ ht-degree: 96%
       + [Verarbeiten von Dokumenten, auch wenn der AEM Forms-Server nicht vollständig betriebsbereit ist](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Ausgabe-Service, Forms-Service oder DoR-Service (Document of Record) kann nicht verwendet werden](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Abmildern von Struts 2 RCE-Schwachstellen für Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
+      + [Beheben der Apache Axis Document Security-Webservice-Schwachstelle für Experience Manager Forms on JEE](/help/forms/using/mitigating-apache-axis-document-security-webservice-vulnerability-for-aem-forms-jee.md)
       + [Fehlschlagen des Datenbank-Backups beim Upgrade auf 6.5.12.0 für MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [Beim Drucken einer großen Anzahl von PDFs auf WorkBench schlägt die PDF-Generierung fehl](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [Ordnungsgemäßes Neustarten von AEM SDK](/help/forms/using/restart-aem-sdk.md)
