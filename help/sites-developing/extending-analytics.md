@@ -11,7 +11,7 @@ feature: Integration
 role: Developer
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '492'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ Mit AEM Analytics können Sie Benutzerinteraktionen auf Ihrer Website nachverfol
 
 * nachverfolgen, wie Besuchende mit Komponenten interagieren. Hierfür können Sie [benutzerspezifische Ereignisse](#custom-events) verwenden.
 * [Zugriff auf Werte im ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
-* [Datensatzrückrufe hinzufügen](#adding-record-callbacks).
+* [Rückrufe von Einträgen hinzufügen](#adding-record-callbacks).
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Benutzerdefinierte Ereignisse verfolgen alles, was von der Verfügbarkeit einer 
 
 ### Nachverfolgen benutzerdefinierter Ereignisse beim Laden einer Seite {#tracking-custom-events-on-page-load}
 
-Dies kann mit dem Pseudo-Attribut `data-tracking` erfolgen (das ältere Datensatzattribut wird weiter unterstützt, um die Abwärtskompatibilität sicherzustellen). Sie können dieses einem beliebigen HTML-Tag hinzufügen.
+Dies kann mit dem Pseudo-Attribut `data-tracking` erfolgen (das ältere Eintragsattribut wird weiter unterstützt, um die Abwärtskompatibilität sicherzustellen). Sie können dieses einem beliebigen HTML-Tag hinzufügen.
 
 Die Syntax für `data-tracking` lautet
 
@@ -107,7 +107,7 @@ Speicherspezifisch:
 >
 >Sehen Sie sich auch die vollständige [ContextHub-API-Referenz](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference) an.
 
-## Hinzufügen von Datensatzrückrufen {#adding-record-callbacks}
+## Hinzufügen von Rückrufen von Einträgen {#adding-record-callbacks}
 
 Rückrufe vor und nach dem Laden werden mit den Funktionen `CQ_Analytics.registerBeforeCallback(callback,rank)` und `CQ_Analytics.registerAfterCallback(callback,rank)` registriert.
 

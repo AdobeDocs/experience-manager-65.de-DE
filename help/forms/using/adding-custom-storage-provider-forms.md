@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '337'
 ht-degree: 100%
 
 ---
@@ -205,7 +205,7 @@ Sie können die folgende Anmerkung verwenden, um das Service-Ranking für benutz
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-Um die obige Anmerkung zu verwenden, importieren Sie Folgendes in Ihr Projekt: 
+Um die obige Anmerkung zu verwenden, importieren Sie Folgendes in Ihr Projekt:
 
 ```java
 import org.apache.felix.scr.annotations.Properties;

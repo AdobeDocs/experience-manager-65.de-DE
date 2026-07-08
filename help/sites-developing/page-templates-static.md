@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 100%
+source-wordcount: '1585'
+ht-degree: 82%
 
 ---
 
@@ -32,7 +32,7 @@ Jede Vorlage stellt Ihnen eine Auswahl an Komponenten bereit, die Sie verwenden 
 
 ## Eigenschaften und untergeordnete Knoten einer Vorlage {#properties-and-child-nodes-of-a-template}
 
-Eine Komponente ist ein Knoten vom Typ „cq:Template“ mit den folgenden Eigenschaften und untergeordneten Knoten:
+Eine Vorlage ist ein Knoten des Typs cq:Template mit den folgenden Eigenschaften und untergeordneten Knoten:
 
 <table>
  <tbody>
@@ -77,7 +77,7 @@ Eine Komponente ist ein Knoten vom Typ „cq:Template“ mit den folgenden Eigen
    <td>Titel der Vorlage.<br /> </td>
   </tr>
   <tr>
-   <td> Rangfolge</td>
+   <td> ranking</td>
    <td> Long</td>
    <td>Rang der Vorlage. Wird verwendet, um die Vorlage in der Benutzeroberfläche anzuzeigen<br /> </td>
   </tr>
@@ -103,7 +103,7 @@ Eine Vorlage ist die Basis einer Seite.
 
 Um eine Seite zu erstellen, müssen Sie die Vorlage (Knotenbaumstruktur `/apps/<myapp>/template/<mytemplate>`) an die entsprechende Stelle in der Website-Baumstruktur kopieren: Dies geschieht, wenn eine Seite über die Registerkarte **Websites** erstellt wird.
 
-Über diesen Kopiervorgang erhält die Seite auch ihren anfänglichen Inhalt (in der Regel nur den Inhalt der obersten Ebene) und die Eigenschaft „sling:resourceType“, den Pfad zur Seitenkomponente, die zum Rendern der Seite verwendet wird (alles im untergeordneten Knoten „jcr:content“).
+Diese Kopieraktion gibt der Seite auch ihren anfänglichen Inhalt (normalerweise nur Inhalte der obersten Ebene) und die Eigenschaft sling:resourceType, den Pfad zur Seitenkomponente, die zum Rendern der Seite verwendet wird (alles im untergeordneten Knoten jcr:content).
 
 ## Strukturieren von Vorlagen {#how-templates-are-structured}
 
@@ -114,16 +114,16 @@ Zwei Aspekte müssen berücksichtigt werden:
 
 ### Die Struktur einer Vorlage {#the-structure-of-a-template}
 
-Eine Vorlage wird unter einem Knoten vom Typ **cq:Template** erstellt.
+Eine Vorlage wird unter einem Knoten des Typs **cq:Template** erstellt.
 
 ![screen_shot_2012-02-13at63646pm](assets/screen_shot_2012-02-13at63646pm.png)
 
 Verschiedene Eigenschaften können festgelegt werden, insbesondere:
 
-* **jcr:title** – Titel für die Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
-* **jcr:description** – Beschreibung für die Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
+* **jcr:title** - Titel der Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
+* **jcr:description** - Beschreibung der Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
 
-Dieser Knoten enthält einen Knoten „jcr:content“ (cq:PageContent), der als Basis für den Inhaltsknoten der erzeugten Seiten genutzt wird. Dabei wird mit sling:resourceType auf die Komponenten verwiesen, die für das Rendern des tatsächlichen Inhalts einer neuen Seite verwendet werden sollen.
+Dieser Knoten enthält einen JCR:content-Knoten (CQ:PageContent), der als Grundlage für den Inhaltsknoten der resultierenden Seiten verwendet wird. Dieser verweist mithilfe von Sling:resourceType auf die Komponente, die zum Rendern des tatsächlichen Inhalts einer neuen Seite verwendet werden soll.
 
 ![screen_shot_2012-02-13at64010pm](assets/screen_shot_2012-02-13at64010pm.png)
 
@@ -135,7 +135,7 @@ Mit dieser Komponente wird die Struktur und das Design des Inhalts definiert, we
 
 Mit Vorlagen werden Seiten des Typs `cq:Page` erstellt (wie bereits erwähnt, ist eine Seite eine besondere Art der Komponente). Jede AEM-Seite weist den strukturierten Knoten `jcr:content` auf. Dies:
 
-* ist vom Typ „cq:PageContent“
+* ist vom Typ CQ:PageContent
 * ist ein strukturierter Knotentyp, der eine festgelegte Inhaltsdefinition enthält
 * weist die Eigenschaft `sling:resourceType` auf, die auf die Komponente verweist, welche die Sling-Skripte zum Rendern des Inhalts enthält
 
@@ -159,13 +159,14 @@ Eine Liste aller Vorlagen im Repository können Sie wie folgt anzeigen:
 1. Auf der Registerkarte „Abfrage“:
 1. Wählen Sie als **Typ** die Option **XPath** aus.
 
-1. Geben Sie in das Eingabefeld **Abfrage** diese Zeichenfolge ein: //element(&#42;, cq:Template)
+1. Geben Sie in das Feld **Abfrage** folgende Zeichenfolge ein:
+//element(&#42;, cq:Template)
 
 1. Klicken Sie auf **Ausführen**. Die Liste wird im Ergebnisfeld angezeigt.
 
 Normalerweise können Sie eine vorhandene Vorlage verwenden und auf dieser Basis eine neue Vorlage zur eigenen Verwendung entwickeln. Weitere Informationen finden Sie unter [Entwickeln von Seitenvorlagen](#developing-page-templates).
 
-Damit eine vorhandene Vorlage für Ihre Website aktiviert und im Dialogfeld **Seite erstellen** angezeigt wird, wenn Sie eine Seite direkt unter **Websites** in der **Websites**-Konsole erstellen, legen Sie für die Eigenschaft „allowedPaths“ des Vorlagenknotens folgenden Wert fest: **/content(/.&#42;)?**
+Damit eine vorhandene Vorlage für Ihre Website aktiviert und im Dialogfeld **Seite erstellen** angezeigt wird, wenn Sie eine Seite direkt unter **Websites** in der **Websites**-Konsole erstellen, legen Sie für die Eigenschaft „allowedPaths“ des Vorlagenknotens folgenden Wert fest: **/content(/.&#42;)?**
 
 ## Anwenden von Vorlagendesigns {#how-template-designs-are-applied}
 
@@ -264,7 +265,7 @@ In der folgenden Tabelle wird beschrieben, wie AEM ein Design auswählt.
 
 ## Entwickeln von Seitenvorlagen {#developing-page-templates}
 
-AEM-Seitenvorlagen sind schlicht Modelle, die zum Erstellen von Seiten verwendet werden. Sie können anfänglich so wenig oder viel Inhalt enthalten, wie erforderlich ist. Ihre Aufgabe besteht darin, die korrekten anfänglichen Knotenstrukturen zu erstellen, wobei die benötigten Eigenschaften (v. a. „sling:resourceType“) so eingestellt werden, dass sie Bearbeitungs- und Render-Vorgänge zulassen.
+AEM-Seitenvorlagen sind schlicht Modelle, die zum Erstellen von Seiten verwendet werden. Sie können so wenig oder so viel anfänglichen Inhalt wie nötig enthalten. Ihre Rolle besteht darin, die richtigen anfänglichen Knotenstrukturen zu erstellen, wobei die erforderlichen Eigenschaften (hauptsächlich Sling:resourceType) für die Bearbeitung und das Rendering festgelegt sein können.
 
 ### Erstellen einer Vorlage (basierend auf einer vorhandenen Vorlage) {#creating-a-new-template-based-on-an-existing-template}
 
@@ -280,7 +281,7 @@ So erstellen Sie eine Vorlage basierend auf einer vorhandenen Vorlage:
    >
    >Die Liste der verfügbaren Vorlagen hängt vom Ort der neuen Seite und den Einschränkungen für die Platzierung ab, die in jeder Vorlage vorgegeben sind. Siehe [Vorlagenverfügbarkeit](#templateavailibility).
 
-1. Ändern Sie den **jcr:title** des neuen Vorlagenknotens, um seine Rolle widerzuspiegeln. Sie können bei Bedarf außerdem die **jcr:description** aktualisieren. Stellen Sie sicher, dass Sie die Vorlagenverfügbarkeit der Seite entsprechend ändern.
+1. Ändern Sie das **jcr:title** des neuen Vorlagenknotens, um seine neue Rolle widerzuspiegeln. Sie können bei Bedarf auch **jcr:description** aktualisieren. Stellen Sie sicher, dass Sie die Vorlagenverfügbarkeit der Seite entsprechend ändern.
 
    >[!NOTE]
    >
@@ -288,13 +289,13 @@ So erstellen Sie eine Vorlage basierend auf einer vorhandenen Vorlage:
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-1. Kopieren Sie die Komponente, auf der die Vorlage basiert (dies ist an der Eigenschaft **sling:resourceType** des Knotens **jcr:content** in der Vorlage zu erkennen), um eine neue Instanz zu erstellen.
+1. Kopieren Sie die Komponente, auf der die Vorlage basiert (dies wird durch die **sling:resourceType**-Eigenschaft des **jcr:content**-Knotens innerhalb der Vorlage angegeben), um eine Instanz zu erstellen.
 
    Komponenten sind im Verzeichnis **/apps/&lt;Website-Name>/components/&lt;Komponentenname>** gespeichert.
 
-1. Aktualisieren Sie den **jcr:title** und die **jcr:description** der neuen Komponente.
+1. Aktualisieren Sie **jcr:title** und **jcr:description** der neuen Komponente.
 1. Ersetzen Sie die Datei „thumbnail.png“, wenn Sie möchten, dass ein neues Miniaturbild in der Vorlagen-Auswahlliste angezeigt wird (Größe: 128 x 98 Pixel).
-1. Aktualisieren Sie den **sling:resourceType** des Knotens **jcr:content** der Vorlage, um auf die neue Komponente zu verweisen.
+1. Aktualisieren Sie das **sling:resourceType** des Vorlagenknotens **jcr:content**, um auf die neue Komponente zu verweisen.
 1. Nehmen Sie weitere Änderungen an der Funktionalität oder dem Design der Vorlage, der zugrunde liegenden Komponente oder beidem vor.
 
    >[!NOTE]
