@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 100%
+source-wordcount: '854'
+ht-degree: 94%
 
 ---
 
@@ -96,8 +96,8 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
    <td><p>Beliebige RGB-Farbe im Format R;G;B</p> </td>
   </tr>
   <tr>
-   <td><p>Zeitlimit für die Anwendung</p> </td>
-   <td><p>Zeitlimit für die Anwendung in Sekunden</p> </td>
+   <td><p>Timeout für die Anwendung</p> </td>
+   <td><p>Timeout für die Anwendung in Sekunden</p> </td>
    <td><p>1.200</p> </td>
    <td><p>Beliebige Zahl</p> </td>
   </tr>
@@ -152,13 +152,13 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   <tr>
    <td><p>Datenanzeigeformate</p> </td>
    <td><p>Legt ein bestimmtes Anzeigeformat des Gebietsschemas für Daten fest</p> </td>
-   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
+   <td><p>locale=de_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=, numberUseGroupSeparator=trueLocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=, numberGroupSeparator=.; numberUseGroupSeparator=trueLocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=, numberGroupSeparator= ; numberGroupSeparator= ; numberUseGroupSeparator=trueLocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=, numberUseGroupSeparator=true</p> </td>
    <td><p>--</p> </td>
   </tr>
   <tr>
    <td><p>Datenbearbeitungsformat</p> </td>
    <td><p>Das Format für Daten bearbeiten. Wird verwendet, wenn Daten als Zeichenfolge geschrieben oder Daten aus der Zeichenfolge analysiert werden</p> </td>
-   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
+   <td><p>locale=de_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=, numberUseGroupSeparator=true</p> </td>
    <td>--<p> </p> </td>
   </tr>
   <tr>
@@ -169,7 +169,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   </tr>
   <tr>
    <td><p>Prüfung aktivieren</p> </td>
-   <td><p>Aktiviert/Deaktiviert die Funktion zum Prüfen.  Bei „false“ werden Prüfprotokolle für alle Aktionen deaktiviert.</p> </td>
+   <td><p>Aktiviert/Deaktiviert die Funktion zum Prüfen. Bei „false“ werden Auditprotokolle für alle Aktionen deaktiviert.</p> </td>
    <td><p>Nein</p> </td>
    <td><p>true/false</p> </td>
   </tr>
@@ -270,7 +270,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
    <td><p>true/false</p> <p> </p> </td>
   </tr>
   <tr>
-   <td>Temporärer Ordner </td>
+   <td>Temporärer Ordner</td>
    <td>Speicherort des temporären Ordners.</td>
    <td>acm.tpmFolder</td>
    <td> </td>

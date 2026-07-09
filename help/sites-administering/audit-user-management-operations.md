@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 100%
+source-wordcount: '300'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Standardmäßig werden die Einträge in die Datei `error.log` geschrieben. Um di
 
 Um die Protokollierungsausgabe in eine separate Protokolldatei umzuleiten, erstellen Sie eine **Apache Sling Logging Logger**-Konfiguration. Im folgenden Beispiel verwenden wir `useraudit.log` als Namen dieser separaten Datei.
 
-1. Navigieren Sie zur Web-Konsole unter *https://Server-Adresse:Serverport/system/console/configMgr*.
+1. Navigieren Sie zur Web-Konsole unter *https://serveraddress:serverport/system/console/configMgr*
 1. Suchen Sie nach **Apache Sling Logging Logger Configuration**. Klicken Sie dann auf das Pluszeichen (+) auf der rechten Seite des Eintrags, um eine Werkskonfiguration zu erstellen.
 1. Erstellen Sie die folgende Konfiguration:
 
@@ -82,7 +82,7 @@ Bei ordnungsgemäßer Konfiguration sollte die Ausgabe wie folgt aussehen:
 
 ## Klassische Benutzeroberfläche {#classic-ui}
 
-In der klassischen Benutzeroberfläche beschränken sich Informationen zu CRUD-Vorgängen, die im Audit-Protokoll zum Hinzufügen und Löschen von Benutzenden aufgezeichnet wurden, auf die ID der betroffenen Person und den Zeitpunkt der Änderung.
+In der klassischen Benutzeroberfläche beschränken sich Informationen zu CRUD-Vorgängen, die im Auditprotokoll zum Hinzufügen und Löschen von Benutzenden aufgezeichnet wurden, auf die ID der betroffenen Person und den Zeitpunkt der Änderung.
 
 Beispiel:
 
