@@ -12,8 +12,8 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 100%
+source-wordcount: '1342'
+ht-degree: 96%
 
 ---
 
@@ -35,8 +35,8 @@ Erstellen einer Version einer Seite:
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Geben Sie einen **Kommentar** ein (optional).
-1. Um eine Bezeichnung für die Version anzugeben (optional), klicken Sie auf die Schaltfläche **Mehr >>** und geben Sie unter **Bezeichnung** einen Namen für die Version ein. Wird keine Bezeichnung festgelegt, wird die Version automatisch nummeriert.
-1. Klicken Sie auf **Version erstellen**. Auf der Seite wird eine grau hinterlegte Nachricht eingeblendet, z. B.:
+1. Um eine Bezeichnung für die Version festzulegen (optional), klicken Sie auf die Schaltfläche **Mehr >>** und legen Sie **Bezeichnung** fest, um die Version zu benennen. Wenn die Bezeichnung nicht festgelegt ist, wird die Version automatisch nummeriert.
+1. Klicken Sie auf **Version erstellen**. Auf der Seite wird eine graue Meldung angezeigt, z. B.:
 Version 1.2 erstellt für: Hemden.
 
 >[!NOTE]
@@ -151,11 +151,11 @@ Die Kalenderversion wird verwendet, wenn Sie einen bestimmten Tag anzeigen möch
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
-### Verwenden der Timewarp-Zeitleiste {#using-the-timewarp-timeline}
+### Verwenden der Timewarp-Timeline {#using-the-timewarp-timeline}
 
-Die Zeitleistenversion wird verwendet, wenn Sie eine Übersicht über die Veröffentlichungsaktivitäten auf der Seite anzeigen möchten.
+Die Timeline-Version wird verwendet, wenn Sie eine Übersicht über die Veröffentlichungsaktivitäten auf der Seite anzeigen möchten.
 
-Wenn Sie die Zeitleiste im Dokument anzeigen möchten:
+Wenn Sie die Timeline im Dokument anzeigen möchten:
 
 1. Führen Sie einen der folgenden Schritte aus, um die Timeline anzuzeigen:
 
@@ -167,11 +167,9 @@ Wenn Sie die Zeitleiste im Dokument anzeigen möchten:
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-1. Wählen Sie (durch Gedrückthalten und Ziehen) die Zeitleiste aus und verschieben Sie sie, um sich durch die Zeitleiste des Dokuments zu bewegen.
+1. Wählen Sie (durch Gedrückthalten und Ziehen) die Timeline aus und verschieben Sie sie, um sich durch die Timeline des Dokuments zu bewegen.
 
-   * Jede Linie steht für eine veröffentlichte Version.
-Wenn eine Seite aktiviert wird, beginnt eine neue Linie. Jedes Mal, wenn das Dokument bearbeitet wird, wird eine neue Farbe angezeigt.
-Im folgenden Beispiel zeigt die rote Linie an, dass die Seite während des Zeitrahmens der ursprünglichen grünen Version bearbeitet wurde. Die gelbe Linie zeigt an, dass die Seite während der roten Version bearbeitet wurde usw.
+   * Jede Linie steht für eine veröffentlichte Version.Wenn eine Seite aktiviert wird, beginnt eine neue Linie. Jedes Mal, wenn das Dokument bearbeitet wird, wird eine neue Farbe angezeigt.Im folgenden Beispiel zeigt die rote Linie an, dass die Seite während des Zeitrahmens der ursprünglichen grünen Version bearbeitet wurde. Die gelbe Linie zeigt an, dass die Seite während der roten Version bearbeitet wurde usw.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -194,4 +192,4 @@ Timewarp bemüht sich nach Kräften, eine Seite zu einem bestimmten Zeitpunkt zu
 
 >[!CAUTION]
 >
->Timewarp wurde entwickelt, um Autorinnen und Autoren beim Verstehen und Erstellen ihrer Inhalte zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
+>Timewarp wurde entwickelt, um Autorinnen und Autoren beim Verstehen und Erstellen ihrer Inhalte zu unterstützen. Es ist nicht als Auditprotokoll oder zu rechtlichen Zwecken gedacht.
