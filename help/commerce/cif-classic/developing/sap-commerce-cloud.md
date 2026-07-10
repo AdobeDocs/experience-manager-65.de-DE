@@ -409,7 +409,7 @@ public class AxisFilter implements VariantFilter {
 * Der Warenkorb wird von `CommerceSession:` gesteuert:
 
    * Die `CommerceSession` führt das Hinzufügen, Entfernen usw. durch.
-   * Die `CommerceSession` nimmt auch die diversen Berechnungen des Warenkorbs vor. ``
+   * Die `CommerceSession` nimmt auch die diversen Berechnungen des Warenkorbs vor. &grave;&grave;
 
 * Obwohl dies nicht direkt mit dem Warenkorb zusammenhängt, muss die `CommerceSession` auch Kataloginformationen angeben (da sie die Preise steuert).
 
