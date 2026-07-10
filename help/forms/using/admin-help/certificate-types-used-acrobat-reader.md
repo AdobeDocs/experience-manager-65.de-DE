@@ -11,8 +11,8 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 100%
+source-wordcount: '947'
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ Die Zeichenfolge enthält folgende Elemente:
 
 **Bereitstellungstyp:** Gibt den vorgesehenen Zweck des Zertifikats an (z. B. Produktion). Der Wert kann „Test“ oder „Produktion“ lauten. Eine Liste der Bereitstellungstypen für jeden Zertifikatstyp finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Bereitstellungstyp“.
 
-**Verwendungsrechteversion:** Beschreibt die Version des Verwendungsrechtealgorithmus, für die das Zertifikat verwendet werden kann (z. B. V6.1). Diese Version gibt nicht die Version von Acrobat oder Acrobat Reader DC Extensions an.
+**Verwendungsrechteversion:** Beschreibt die Version des Verwendungsrechtealgorithmus, für die das Zertifikat verwendet werden kann, z. B. V6.1. Diese Version gibt nicht die Version von Acrobat oder Acrobat Reader DC Extensions an.
 
 **Profilcode:** Der Profilcode ist eine Kurzbeschreibung der vollständigen Zertifikateigenschaften (beispielsweise P8). Eine Liste der Profilcodes für jeden Dateityp finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Profilcode“.
 
@@ -146,21 +146,21 @@ Die folgende Tabelle enthält die Zertifikatsprofile, die Sie beim Analysieren v
 
 ## Gültigkeitsdauer {#validity-period}
 
-Auswertungszertifikate werden Kundinnen und Kunden sowie Entwickelnden ausgestellt, damit sie Beispielanwendungen für Produkte entwickeln und testen können. Die Gültigkeitsdauer dieser Zertifikate liegt zwischen 60 und 90 Tagen.  Der Ablauf erfolgt am Ende des zweiten Monats nach dem Datum der Ausstellung.
+Auswertungszertifikate werden Kundinnen und Kunden sowie Entwickelnden ausgestellt, damit sie Beispielanwendungen für Produkte entwickeln und testen können. Die Gültigkeitsdauer dieser Zertifikate liegt zwischen 60 und 90 Tagen. Der Ablauf erfolgt am Ende des zweiten Monats nach dem Datum der Ausstellung.
 
-Zertifikate für die Partnerintegration werden Adobe-Geschäftspartnern ausgestellt, um die Softwareentwicklung, Integration, Erstellung von Prototypen und Demos zu unterstützen.  Diese Zertifikate gelten zwei Jahre ab dem Ausstellungsdatum.
+Zertifikate für die Partnerintegration werden Adobe-Geschäftspartnern ausgestellt, um die Softwareentwicklung, Integration, Erstellung von Prototypen und Demos zu unterstützen. Diese Zertifikate gelten zwei Jahre ab dem Ausstellungsdatum.
 
-Zertifikate für die interne Verwendung bei Adobe werden innerhalb des Unternehmens Adobe verwendet, um die Software-Entwicklung, Integration, Erstellung von Prototypen und Demos zu unterstützen.  Diese Zertifikate gelten zwei Jahre ab dem Ausstellungsdatum.
+Zertifikate für die interne Verwendung bei Adobe werden innerhalb des Unternehmens Adobe verwendet, um die Software-Entwicklung, Integration, Erstellung von Prototypen und Demos zu unterstützen. Diese Zertifikate gelten zwei Jahre ab dem Ausstellungsdatum.
 
-Produktionszertifikate werden an Kundinnen und Kunden ausgegeben, die Acrobat Reader DC-Erweiterungen erworben haben.  Diese Zertifikate sind für den von der Zertifizierungsstelle maximal zugelassenen Zeitraum gültig (siehe die Spalte „*Maximal*“ in der Tabelle „Zertifikatsprofile“).
+Produktionszertifikate werden an Kundinnen und Kunden ausgegeben, die Acrobat Reader DC-Erweiterungen erworben haben. Diese Zertifikate sind für den von der Zertifizierungsstelle maximal zugelassenen Zeitraum gültig (siehe die Spalte „*Maximal*“ in der Tabelle „Zertifikatsprofile“).
 
 ## Verwendungsrechte für Acrobat Reader DC-Erweiterungen {#acrobat-reader-dc-extensions-usage-rights}
 
 Wenn Sie das Acrobat Reader DC Erweiterungs-Zertifikat in der Zertifikatsanzeige untersuchen, können Sie das Element „Verwendungsrechte“ auf der Registerkarte „Details“ auswählen (sofern konfiguriert), um eine Auflistung der Adobe Reader-Verwendungsrechte anzuzeigen, die das Zertifikat aktivieren kann. Die für ein bestimmtes Dokument aktivierten Verwendungsrechte stellen eine Teilmenge der vom Zertifikat aktivierten Rechte dar.
 
-Wenn die Online-Kommentierung in einer Umgebung ohne Zusammenarbeitsfunktionalität erforderlich ist, wenden Sie sich wegen weiterer Informationen an den Adobe-Support.  Die Modus-Eigenschaft entspricht dem Bereitstellungstyp und lautet entweder *production* (Produktion) oder *evaluation* (Test).
+Wenn die Online-Kommentierung in einer Umgebung ohne Zusammenarbeitsfunktionalität erforderlich ist, wenden Sie sich wegen weiterer Informationen an den Adobe-Support. Die Modus-Eigenschaft entspricht dem Bereitstellungstyp und lautet entweder *production* (Produktion) oder *evaluation* (Test).
 
-Die zulässigen Verwendungsrechte für Acrobat Reader DC-Erweiterungen umfassen mindestens ein spezifisches Element.  Diese Elemente werden in verschiedenen Kombinationen verwendet, um Variationen lizenzierter Produktfunktionen zu ermöglichen.
+Die zulässigen Verwendungsrechte für Acrobat Reader DC-Erweiterungen umfassen mindestens ein spezifisches Element. Diese Elemente werden in verschiedenen Kombinationen verwendet, um Variationen lizenzierter Produktfunktionen zu ermöglichen.
 
 <table>
  <thead>

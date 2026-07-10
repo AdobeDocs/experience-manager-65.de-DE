@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2950'
+source-wordcount: '2975'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Das Inhaltssynchronisierungs-Framework erstellt eine Archivdatei, die den Web-In
 
 Die folgende Sequenz von Schritten zeigt einen typischen Anwendungsfall für die Inhaltssynchronisierung:
 
-1. Der AEM-Entwickler erstellt eine Inhaltssynchronisierungskonfiguration, die den einzuschließenden Inhalt angibt.
+1. AEM Developer erstellt eine Inhaltssynchronisierungskonfiguration, die den einzuschließenden Inhalt angibt.
 1. Das Inhaltssynchronisierungs-Framework erfasst und speichert den Inhalt zwischen.
 1. Auf einem Mobilgerät wird die Mobile App gestartet und fordert Inhalte vom Server an, die in einer ZIP-Datei bereitgestellt werden.
 1. Der Client entpackt den ZIP-Inhalt in das lokale Dateisystem. Die Ordnerstruktur in der ZIP-Datei simuliert die Pfade, die ein Client (z. B. ein Browser) normalerweise vom Server anfordern würde.
@@ -39,7 +39,7 @@ Einige der Richtlinien für die Entwicklung von Inhaltssynchronisierungs-Handler
 
 * Handler müssen *com.day.cq.contentsync.handler.ContentUpdateHandler* implementieren (entweder direkt oder durch Erweiterung einer Klasse, die dies tut)
 * Handler können *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler erweitern*
-* Handler dürfen nur dann „true“ melden, wenn sie den ContentSync-Cache aktualisieren. Wenn „true“ fälschlicherweise gemeldet wird, erstellt AEM eine Aktualisierung, obwohl keine Aktualisierung stattgefunden hat.
+* Handler dürfen nur dann „true“ melden, wenn sie den ContentSync-Cache aktualisieren. Falsch gemeldetes „true“ bedeutet, dass AEM ein Update erstellt hat, obwohl kein Update stattgefunden hat.
 * Handler sollten den Cache nur aktualisieren, wenn der Inhalt geändert wurde. Schreiben Sie nicht in den Cache, wenn kein Leerzeichen erforderlich ist. Dies führt dazu, dass ein unnötiges Update erstellt wird.
 
 >[!NOTE]
@@ -52,7 +52,7 @@ Erstellen Sie eine Content-Sync-Konfiguration, um den Inhalt der ZIP-Datei anzug
 
 Um eine Inhaltssynchronisierungskonfiguration zu erstellen, fügen Sie dem Repository einen `cq:ContentSyncConfig` Knoten hinzu, wobei die `sling:resourceType` Eigenschaft auf `contentsync/config` festgelegt ist. Der `cq:ContentSyncConfig` Knoten kann sich an einer beliebigen Stelle im Repository befinden, der Knoten muss jedoch für Benutzende in der AEM-Veröffentlichungsinstanz zugänglich sein. Daher sollten Sie den Knoten unter `/content` hinzufügen.
 
-Um den Inhalt der ZIP-Datei für die Inhaltssynchronisierung anzugeben, fügen Sie dem Knoten cq:ContentSyncConfig untergeordnete Knoten hinzu. Die folgenden Eigenschaften jedes untergeordneten Knotens identifizieren ein einzuschließendes Inhaltselement und dessen Verarbeitung beim Hinzufügen:
+Um den Inhalt der ZIP-Datei für die Inhaltssynchronisierung anzugeben, fügen Sie dem cq:ContentSyncConfig-Knoten untergeordnete Knoten hinzu. Die folgenden Eigenschaften jedes untergeordneten Knotens identifizieren ein einzuschließendes Inhaltselement und dessen Verarbeitung beim Hinzufügen:
 
 * `path`: Der Speicherort des Inhalts.
 * `type`: Der Name des Konfigurationstyps, der für die Verarbeitung des Inhalts verwendet werden soll. Es stehen verschiedene Typen zur Verfügung, die im Abschnitt *Konfigurationstypen“* werden.
@@ -100,7 +100,7 @@ Wenn ein(e) Benutzende(r) eine Aktualisierung des Inhaltssynchronisierungs-Cache
 
 Sie können den Standardbenutzer überschreiben und einen Benutzer oder eine Gruppe angeben, die einen bestimmten Inhaltssynchronisierungs-Cache aktualisiert.
 
-Um den Standardbenutzer zu überschreiben, geben Sie einen Benutzer oder eine Gruppe an, die Aktualisierungen für eine bestimmte Inhaltssynchronisierungskonfiguration durchführt, indem Sie die folgende Eigenschaft zum Knoten cq:ContentSyncConfig hinzufügen:
+Um den Standardbenutzer zu überschreiben, geben Sie einen Benutzer oder eine Gruppe an, die Aktualisierungen für eine bestimmte Inhaltssynchronisierungskonfiguration durchführt, indem Sie die folgende Eigenschaft zum cq:ContentSyncConfig-Knoten hinzufügen:
 
 * Name: `updateuser`
 * Typ: `String`
@@ -168,7 +168,7 @@ Jede Eigenschaft kann einen der folgenden Werte aufweisen:
 
 * `REWRITE_RELATIVE`: Schreibt den Pfad mit einer relativen Position zur HTML-Datei der Seite im Dateisystem neu.
 
-* `REWRITE_EXTERNAL`: schreibt den Pfad neu, indem er auf die Ressource auf dem Server verweist, indem er den AEM-[Externalizer-Service) &#x200B;](/help/sites-developing/externalizer.md).
+* `REWRITE_EXTERNAL`: schreibt den Pfad neu, indem er auf die Ressource auf dem Server verweist, indem er den AEM [Externalizer-Service](/help/sites-developing/externalizer.md) verwendet.
 
 Mit dem AEM-Dienst **PathRewriterTransformerFactory** können Sie bestimmte HTML-Attribute konfigurieren, die neu geschrieben werden. Der Dienst kann in der Web-Konsole konfiguriert werden und verfügt über eine Konfiguration für jede Eigenschaft des `rewrite`: `clientlibs`, `images` und `links`.
 
@@ -214,7 +214,7 @@ Die folgende Liste zeigt eine Beispielkonfiguration für die Inhaltssynchronisie
 
 **etc.designs.default und etc.designs.mobile** - Die ersten beiden Einträge der Konfiguration sind offensichtlich. Da Sie mehrere mobile Seiten einbinden werden, benötigen Sie die zugehörigen Design-Dateien unter /etc/designs. Und da keine zusätzliche Verarbeitung erforderlich ist, reicht eine Kopie aus.
 
-**events.plist** - Dieser Eintrag ist etwas Besonderes. Wie in der Einführung erwähnt, sollte die Anwendung eine Kartenansicht mit Markierungen der Orte der Ereignisse bereitstellen. Die erforderlichen Ortsinformationen werden als separate Datei im PLIST-Format bereitgestellt. Dazu verfügt die Ereignislisten-Komponente, die auf der Indexseite verwendet wird, über ein Skript namens plist.jsp. Dieses Skript wird ausgeführt, wenn die Ressource der Komponente mit der `.plist` angefordert wird. Wie üblich wird der Komponentenpfad in der Pfadeigenschaft angegeben und der Typ ist auf „Inhalt“ festgelegt, da Sie die [Sling-Anfrageverarbeitung) verwenden &#x200B;](/help/sites-developing/the-basics.md#sling-request-processing).
+**events.plist** - Dieser Eintrag ist etwas Besonderes. Wie in der Einführung erwähnt, sollte die Anwendung eine Kartenansicht mit Markierungen der Orte der Ereignisse bereitstellen. Die erforderlichen Ortsinformationen werden als separate Datei im PLIST-Format bereitgestellt. Dazu verfügt die Ereignislisten-Komponente, die auf der Indexseite verwendet wird, über ein Skript namens plist.jsp. Dieses Skript wird ausgeführt, wenn die Ressource der Komponente mit der `.plist` angefordert wird. Wie üblich wird der Komponentenpfad in der Pfadeigenschaft angegeben und der Typ ist auf „Inhalt“ festgelegt, da Sie die [Sling-Anfrageverarbeitung) verwenden ](/help/sites-developing/the-basics.md#sling-request-processing).
 
 **events.touch.html** - Als Nächstes kommen die tatsächlichen Seiten, die in der App angezeigt werden. Die Pfadeigenschaft wird auf die Stammseite der Ereignisse festgelegt. Alle Ereignisseiten unterhalb dieser Seite werden ebenfalls eingeschlossen, da die Deep-Eigenschaft standardmäßig auf „true“ festgelegt ist. Sie verwenden Seiten als Konfigurationstyp, damit alle Bilder oder anderen Dateien, auf die von einer Bild- oder Download-Komponente auf einer Seite verwiesen wird, einbezogen werden. Darüber hinaus erhalten wir durch Festlegen des Touch-Selektors eine mobile Version der Seiten. Die Konfiguration im Feature Pack enthält weitere Einträge dieser Art, die hier jedoch der Einfachheit halber weggelassen werden.
 
@@ -224,7 +224,7 @@ Die folgende Liste zeigt eine Beispielkonfiguration für die Inhaltssynchronisie
 
 Im Beispiel sollte die Ereignisauflistungsseite die Anfangsseite sein. Diese Informationen werden in der Eigenschaft **indexPage** bereitgestellt und können daher jederzeit einfach geändert werden. Eine zweite Eigenschaft definiert den Pfad der Datei *events.plist*. Wie Sie später sehen, kann die Client-Anwendung jetzt das Manifest lesen und entsprechend handeln.
 
-Wenn die Konfiguration eingerichtet ist, kann der Inhalt mit einem Browser oder einem anderen HTTP-Client heruntergeladen werden. Wenn Sie für iOS entwickeln, können Sie die dedizierte WAppKitSync-Client-Bibliothek verwenden. Der Download-Speicherort besteht aus dem Pfad der Konfiguration und der Erweiterung *.zip*, z. B. wenn mit einer lokalen AEM-Instanz gearbeitet wird: *http://localhost:4502/content/weretail_go.zip*
+Wenn die Konfiguration eingerichtet ist, kann der Inhalt mit einem Browser oder einem anderen HTTP-Client heruntergeladen werden. Wenn Sie für iOS entwickeln, können Sie die dedizierte WAppKitSync-Client-Bibliothek verwenden. Der Downloadspeicherort besteht aus dem Konfigurationspfad und der Erweiterung *.zip*, z. B. bei der Arbeit mit einer lokalen AEM-Instanz: *http://localhost:4502/content/weretail_go.zip*
 
 ### Die Konsole zur Inhaltssynchronisierung {#the-content-sync-console}
 
@@ -254,7 +254,7 @@ Für jeden Konfigurationstyp gibt es einen *Content Update Handler*, eine OSGi-K
 * `com.day.cq.contentsync.handler.ContentUpdateHandler` - Schnittstelle, die alle Update-Handler implementieren müssen
 * `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Eine abstrakte Klasse, die das Rendering von Ressourcen mithilfe von Sling vereinfacht
 
-Registrieren Sie Ihre Klasse als OSGi-Komponenten-Factory und stellen Sie sie im OSGi-Container in einem Bundle bereit. Dies kann mit dem Maven[SCR-Plug-in &#x200B;](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) JavaDoc-Tags oder -Anmerkungen erfolgen. Das folgende Beispiel zeigt die JavaDoc-Version:
+Registrieren Sie Ihre Klasse als OSGi-Komponenten-Factory und stellen Sie sie im OSGi-Container in einem Bundle bereit. Dies kann mit dem Maven[SCR-Plug-in ](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) JavaDoc-Tags oder -Anmerkungen erfolgen. Das folgende Beispiel zeigt die JavaDoc-Version:
 
 ```java
 /*
@@ -382,5 +382,5 @@ Wenn zuvor keine Verbindung hergestellt werden konnte, werden heruntergeladene D
 
 Informationen zu den Rollen und Zuständigkeiten von Admins und Autoren finden Sie in den folgenden Ressourcen:
 
-* [Authoring von AEM-Inhalten für AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
+* [Verfassen von AEM-Inhalten für AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
 * [Verwalten von Inhalten zur Verwendung von AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)

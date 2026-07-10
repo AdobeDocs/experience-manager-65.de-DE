@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3227'
-ht-degree: 100%
+source-wordcount: '3286'
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,8 @@ Jede Schrittkomponente beinhaltet ein Dialogfeld **Schritt-Eigenschaften**, in d
 
 Eine Kombination der folgenden Eigenschaften ist für die meisten Workflow-Schrittkomponenten im Eigenschaften-Dialogfeld auf der Registerkarte **Allgemein** verfügbar:
 
-* **Titel** Der Titel für den Schritt.
+* **title**
+Der Titel für den Schritt.
 
 * **Beschreibung**
 Eine Beschreibung des Schritts.
@@ -50,8 +51,7 @@ Eine Beschreibung des Schritts.
 
 * **Zeitüberschreitung**
 
-  Der Zeitraum, nach dem für den Schritt eine Zeitüberschreitung auftritt.
-Folgende Optionen stehen zur Auswahl: **Aus**, **Unmittelbar**, **1 h**, **6 h**, **12 h**, **24 h**.
+  Der Zeitraum, nach dem für den Schritt eine Zeitüberschreitung auftritt.Folgende Optionen stehen zur Auswahl: **Aus**, **Unmittelbar**, **1 h**, **6 h**, **12 h**, **24 h**.
 
 * **Zeitüberschreitungs-Handler**
 
@@ -87,7 +87,7 @@ Mit der **UND-Teilung** wird der Workflow unterteilt und beide Verzweigungen we
 
 So konfigurieren Sie die Aufspaltung:
 
-* Bearbeiten Sie die **UND-Verzweigungs-Eigenschaften**:
+* Bearbeiten Sie die **UND-Teilungs-Eigenschaften**:
 
    * **Name der Teilung**: Fügen Sie zur Erläuterung einen Namen ein.
    * Wählen Sie die Anzahl der erforderlichen Verzweigungen aus. 2, 3, 4 oder 5.
@@ -195,7 +195,7 @@ Die **ODER-Teilung** erstellt eine Verzweigung im Workflow, nach der nur eine de
 
 So konfigurieren Sie die Aufspaltung:
 
-* Bearbeiten Sie die **ODER-Verzweigungs-Eigenschaften**:
+* Bearbeiten Sie die **ODER-Teilungs-Eigenschaften**:
 
    * **Allgemein**
 

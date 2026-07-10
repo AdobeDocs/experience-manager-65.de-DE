@@ -11,8 +11,8 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '2303'
-ht-degree: 100%
+source-wordcount: '2335'
+ht-degree: 97%
 
 ---
 
@@ -68,7 +68,7 @@ Das E-Commerce-Framework kann mit einer beliebigen E-Commerce-Lösung verwendet 
 
 Siehe folgendes Beispiel:
 
-| `cq:commerceProvider = geometrixx` | In einer AEM-Standardinstallation ist eine bestimmte Implementierung erforderlich. Beispiel: das Geometrixx-Beispiel, das minimale Erweiterungen der generischen API enthält |
+| `cq:commerceProvider = geometrixx` | Bei einer standardmäßigen AEM-Installation ist eine bestimmte Implementierung erforderlich. Zum Beispiel das Geometrixx-Beispiel, das minimale Erweiterungen der generischen API enthält |
 |--- |--- |
 | `cq:commerceProvider = hybris` | Hybris-Implementierung |
 
@@ -210,7 +210,7 @@ Ein einzelnes Produkt kann mehrere Variationen aufweisen, z. B. kann es je nach
 
 Es sind jedoch nicht alle Eigenschaften Variantenachsen. Varianten können sich auch auf andere Eigenschaften auswirken, z. B. kann der Preis von der Größe abhängen. Diese Eigenschaften können nicht von den Käuferinnen und Käufern ausgewählt werden und werden daher nicht als Variantenachsen betrachtet.
 
-Jedes Produkt bzw. jede Variante steht für eine Ressource und ist daher im Verhältnis 1:1 einem Repository-Knoten zugeordnet. Eine Folge ist, dass ein bestimmtes Produkt und/oder eine bestimmte Variante durch ihren Pfad eindeutig identifiziert werden kann.
+Jedes Produkt und/oder jede Variante wird durch eine Ressource dargestellt und ordnet daher 1:1 einem Repository-Knoten zu. Eine Folge ist, dass ein bestimmtes Produkt und/oder eine bestimmte Variante durch ihren Pfad eindeutig identifiziert werden kann.
 
 Die Produkt-/Variantenressource enthält nicht immer die tatsächlichen Produktdaten. Es kann sich um eine Darstellung von Daten handeln, die in einem anderen System (z. B. Hybris) gespeichert sind. Beispielsweise werden Produktbeschreibungen und Preise nicht in AEM gespeichert, sondern werden in Echtzeit aus der E-Commerce-Engine abgerufen.
 
@@ -233,7 +233,7 @@ Jede Produktressource kann durch eine `Product API` dargestellt werden. Die meis
 
 Im Allgemeinen befinden sich Produktdaten unter `/etc` und Produktverweise unter `/content`.
 
-Die Knoten für die Produktvarianten und Produktdaten müssen 1:1 zugeordnet sein.
+Es muss eine 1::1-Zuordnung zwischen Produktvarianten und Produktdatenknoten vorhanden sein.
 
 Produktverweise müssen außerdem einen Knoten für jede präsentierte Variante haben, es müssen jedoch nicht alle Varianten präsentiert werden. Wenn ein Produkt beispielsweise die Varianten S, M und L hat, können die Produktdaten wie folgt aussehen:
 
@@ -409,9 +409,9 @@ public class AxisFilter implements VariantFilter {
 * Der Warenkorb wird von `CommerceSession:` gesteuert:
 
    * Die `CommerceSession` führt das Hinzufügen, Entfernen usw. durch.
-   * `CommerceSession` nimmt auch die diversen Berechnungen des Warenkorbs vor. ``
+   * Die `CommerceSession` nimmt auch die diversen Berechnungen des Warenkorbs vor. ``
 
-* Obwohl dies nicht direkt mit dem Warenkorb zusammenhängt, muss `CommerceSession` auch Katalogpreisinformationen angeben (da sie die Preise steuert).
+* Obwohl dies nicht direkt mit dem Warenkorb zusammenhängt, muss die `CommerceSession` auch Kataloginformationen angeben (da sie die Preise steuert).
 
    * Für die Preisgestaltung können mehrere Modifikatoren gelten:
 

@@ -1,14 +1,14 @@
 ---
 title: Erstellen eines Handlers zum Einladen externer Benutzender
-description: 'Erfahren Sie, wie Sie einen Handler zum Einladen von externen Benutzenden erstellen. Damit ist der Rights Management-Service in der Lage, externe Benutzende einzuladen, damit diese zu Rights Management-Benutzenden werden. '
+description: Erfahren Sie, wie Sie einen Handler zum Einladen von externen Benutzenden erstellen. Damit ist der Rights Management-Service in der Lage, externe Benutzende einzuladen, damit diese zu Rights Management-Benutzenden werden.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 100%
+source-wordcount: '1165'
+ht-degree: 99%
 
 ---
 
@@ -215,7 +215,7 @@ Die folgende Abbildung zeigt den Inhalt des Java-Projekts, der in die JAR-Datei 
 
 ![Benutzer einladen](assets/ci_ci_InviteUsers.png)
 
-A. Externe JAR-Dateien, die für die Komponente erforderlich sind B. JAVA-Datei
+A. Externe JAR-Dateien, die für die Komponente B erforderlich sind. JAVA Datei
 
 Packen Sie den Handler zum Einladen von externen Benutzenden in eine JAR-Datei. Beachten Sie, dass im vorherigen Diagramm JAVA-Dateien aufgelistet sind. Nachdem die Dateien in eine JAR-Datei gepackt wurden, müssen auch die zugehörigen CLASS-Dateien angegeben werden. Ohne die CLASS-Dateien funktioniert der Autorisierungs-Handler nicht.
 

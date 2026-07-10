@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1643'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Auf der Seite „Prozessliste“ werden die Prozesse angezeigt, die von Benutzenden initiiert oder automatisch gestartet wurden.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. Die Prozessliste enthält die folgenden Informationen:
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Workflow für Formulare“ > „Workflow für Formulare“. Die Prozessliste enthält die folgenden Informationen:
 
    **Prozessname - Version:** Der Name des Prozesses, wie in Workbench definiert.
 
@@ -28,7 +28,7 @@ Auf der Seite „Prozessliste“ werden die Prozesse angezeigt, die von Benutzen
 
    **Status:** Aktiv bedeutet, dass es sich um den Prozess handelt, der für die Prozessversion aktiviert wurde. Inaktiv bedeutet, dass der Prozess eine alte Version ist, von der immer noch Prozessinstanzen vorhanden sind.
 
-   **Erstellungsdatum:** Datum und Uhrzeit der Bereitstellung des Prozesses.
+   **Ertsllungsdatum:** Datum und Uhrzeit der Bereitstellung des Prozesses.
 
 1. Klicken Sie auf einen Prozessnamen, um dessen Prozessinstanzen auf der Seite „Prozessinstanz“ anzuzeigen.
 
@@ -40,9 +40,9 @@ Für jede Prozessinstanz werden in der Liste die folgenden Informationen angezei
 
 **Prozess-ID:** Dieser Bezeichner wird vom Formular-Workflow zugewiesen, wenn der Prozess instanziiert (d. h. von einem Benutzer oder einem automatisierten Schritt initiiert) wird. Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
 
-**Prozessname - Version:** Der Name des Prozesses, wie in Workbench definiert.
+**Prozessname/-version**: Der Name des Prozesses, wie in Workbench definiert.
 
-**Status:** Zeigt an, ob die Prozessinstanz normal ausgeführt wird, den Status wechselt oder beendet wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
+**Status:** Zeigt an, ob die Prozessinstanz normal ausgeführt wird, den Status wechselt oder gestoppt wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
 
 **Erstellungsdatum:** Datum und die Uhrzeit, zu der die Prozessinstanz erstellt wurde.
 
@@ -94,7 +94,7 @@ Wenn Sie die Aussetzung einer Prozessinstanz aufheben, wechselt deren Status in 
 
 Wenn Sie eine Prozessinstanz aussetzen, die andere (untergeordnete) Prozesse mithilfe ihres jeweiligen Aufrufvorgangs aufgerufen hat, werden die untergeordneten Prozesse ebenfalls ausgesetzt.
 
-1. Klicken Sie in der Administration-Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Workflow für Formulare“ > „Workflow für Formulare“.
 1. Wählen Sie auf der Seite „Prozessinstanz“ den Prozess aus und klicken Sie auf „Aussetzen“ oder „Aussetzen aufheben“.
 
 ### Beenden von Prozessinstanzen {#terminate-a-process-instances}
@@ -103,9 +103,9 @@ Wenn ein Vorgang einer Prozessinstanz angehalten wurde oder ein anderer Fehlerzu
 
 Sie können Prozessinstanzen mit einem beliebigen Status beenden.
 
-Wenn Sie eine Prozessinstanz beenden, wechselt deren Status zuerst in WIRD BEENDET, dann in BEENDET, und der Prozess wird an der aktuellen Position beendet. Es werden keine weiteren Vorgänge ausgeführt und alle damit verbundenen Vorgänge und Aufgaben werden beendet.
+Wenn Sie eine Prozessinstanz beenden, wechselt deren Status zuerst in WIRD BEENDET, dann in BEENDET, und der Prozess wird an der aktuellen Position gestoppt. Es werden keine weiteren Vorgänge ausgeführt und alle damit verbundenen Vorgänge und Aufgaben werden beendet.
 
-1. Klicken Sie in der Administration-Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Workflow für Formulare“ > „Workflow für Formulare“.
 1. Wählen Sie auf der Seite „Prozessinstanz“ den Prozess aus und klicken Sie auf „Beenden“.
 
 ## Arbeiten mit Prozessinstanzdetails {#working-with-process-instance-details}
@@ -118,7 +118,7 @@ Auf der Registerkarte „Vorgänge“ werden die einzelnen Vorgänge der Prozess
 
 **Vorgangsnamen:** Der Name des Vorgangs, wie in Workbench definiert.
 
-**Status:** Zeigt an, ob der Vorgang normal ausgeführt wird oder beendet wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
+**Status:** Zeigt an, ob der Vorgang normal ausgeführt wird oder gestoppt wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
 
 **Zweigname:** Der Name des Zweigs, wie in Workbench definiert.
 
@@ -132,7 +132,7 @@ Ein Teilprozess ist eine Prozessinstanz, die von einem anderen Prozess gestartet
 
 **Prozessname - Version:** Der Prozessname, wie in Designer definiert.
 
-**Status:** Zeigt an, ob die Prozessinstanz normal ausgeführt wird, den Status wechselt oder beendet wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
+**Status:** Zeigt an, ob die Prozessinstanz normal ausgeführt wird, den Status wechselt oder gestoppt wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
 
 **Erstellungsdatum:** Datum und Uhrzeit der Erstellung des Teilprozesses.
 
@@ -158,15 +158,15 @@ Ein Vorgang (ein Schritt in einem Prozess) kann folgende Status haben:
 
 ### Beenden von Vorgängen oder Teilprozessen {#terminate-operations-or-subprocesses}
 
-Wenn ein Prozess oder Teilprozess blockiert ist oder ein anderer Fehler aufgetreten ist, oder wenn Sie einen Prozess oder Teilprozess zwingen müssen, seine Ausführung zu beenden, können Sie ihn beenden.
+Wenn ein Prozess oder Teilprozess blockiert ist oder ein anderer Fehler aufgetreten ist, oder wenn Sie einen Prozess oder Teilprozess zwingen müssen, seine Ausführung zu stoppen, können Sie ihn beenden.
 
 Sie können Vorgänge mit dem Status WIRD AUSGEFÜHRT beenden.
 
-Wenn Sie einen Vorgang beenden, ändert sich dessen Status in BEENDET. Der Vorgang wird nicht abgeschlossen und die Ausführung der Prozessinstanz wird beendet.
+Wenn Sie einen Vorgang beenden, ändert sich dessen Status in BEENDET. Der Vorgang wird nicht abgeschlossen und die Ausführung der Prozessinstanz wird gestoppt.
 
 Sie können einen Teilprozess mit beliebigem Status beenden.
 
-Wenn Sie einen Teilprozess beenden, ändert sich dessen Status zuerst in WIRD BEENDET, dann in BEENDET, und die Prozessinstanz wird bei den aktuellen Vorgängen beendet. Es werden keine weiteren Vorgänge im Teilprozess ausgeführt, obwohl die übergeordnete Prozessinstanz weiterhin ausgeführt wird.
+Wenn Sie einen Teilprozess beenden, ändert sich dessen Status zuerst in WIRD BEENDET, dann in BEENDET, und die Prozessinstanz wird bei den aktuellen Vorgängen gestoppt. Es werden keine weiteren Vorgänge im Teilprozess ausgeführt, obwohl die übergeordnete Prozessinstanz weiterhin ausgeführt wird.
 
 Sie können keine Prozesse mit Gateway-Elementen im Prozessdiagramm beenden. Wenn Sie versuchen, diese Prozesstypen zu beenden, sind die Vorgänge innerhalb der Gateway-Elemente nicht betroffen. Vorgänge, die sich in einem Gateway-Element befinden, müssen Sie direkt beenden.
 
@@ -190,7 +190,7 @@ Wenn Sie einen Vorgang wiederholen, wird Forms Workflow eine Aufforderung zum Ne
 
 Auf der Seite „Vorgangsdetails“ wird die Zusammenfassung eines in einem Prozess enthaltenen Vorgangs mit seinen aktuellen Benutzerzuweisungen angezeigt.
 
-1. Klicken Sie in der Administration-Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Workflow für Formulare“ > „Workflow für Formulare“.
 1. Klicken Sie auf den Namen eines Prozesses, um die dazugehörigen Prozessinstanzen anzuzeigen. Klicken Sie auf eine Prozessinstanz, um die Seite „Prozessinstanzdetails“ anzuzeigen, und wählen Sie einen Vorgang aus, um die Seite „Vorgangsdetails“ anzuzeigen.
 
    Für jede Aufgabe werden in der Liste die folgenden Informationen angezeigt:

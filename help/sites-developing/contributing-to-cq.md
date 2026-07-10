@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2642'
-ht-degree: 100%
+source-wordcount: '2738'
+ht-degree: 99%
 
 ---
 
@@ -52,7 +52,7 @@ Bestimmte Konzepte und Leitprinzipien sind tief in der früheren Day-Kultur verw
 
 ### Alles ist Inhalt {#everything-is-content}
 
-Der Inhalt umfasst nicht nur alle Daten, die die Web-Anwendung speichert. Programm-Code, Bibliotheken, Skripte, Vorlagen, HTML, CSS, Bilder und Artefakte aller Art, alles und jedes wird im Content-Repository aufbewahrt und über Package Manager und Package Share in Form von Paketen importiert/exportiert.
+Der Inhalt umfasst nicht nur alle Daten, die die Web-Anwendung speichert. Programm-Code, Bibliotheken, Skripte, Vorlagen, HTML, CSS, Bilder und Artefakte aller Art, alles und jedes wird im Content-Repository aufbewahrt und über den Paket-Manager und Package Share in Form von Paketen importiert/exportiert.
 
 ### Davids Modell {#david-s-model}
 
@@ -74,7 +74,7 @@ Die wichtigsten Aspekte bei der Auflösung von Apache Sling-Anfragen sind, wie A
 
 ### Schnellstart {#quickstart}
 
-Kein Schritt drei: zum Installieren und Ausführen lädt man einfach die Schnellstart-JAR-Datei herunter und doppelklickt darauf. Es gibt keinen Schritt drei.  Jede zusätzliche optionale Funktionalität erfordert nichts weiter als die Installation des entsprechenden Pakets von Package Share.
+Kein Schritt drei: zum Installieren und Ausführen lädt man einfach die Schnellstart-JAR-Datei herunter und doppelklickt darauf. Es gibt keinen Schritt drei. Jede zusätzliche optionale Funktionalität erfordert nichts weiter als die Installation des entsprechenden Pakets von Package Share.
 
 Kleine Schnellstart-Größe: halten Sie die Größe der Schnellstart-JAR-Datei auf ein Minimum begrenzt. Nutzen Sie Bibliotheken intelligent und optimiert und verschieben Sie optionale Funktionen auf Package Share.
 
@@ -94,7 +94,7 @@ Machen Sie sich mit Demo-Skripten und Produktfunktionen vertraut, die am häufig
 
 ### Design für Zuverlässigkeit {#design-for-reliability}
 
-Wir bemühen uns, Funktionen im Hinblick auf Fail-Soft zu entwerfen und zu kodieren, sodass (zum Beispiel) ein Problem mit einem einzelnen DOM-Element nicht dazu führt, dass eine ganze Seite nicht gerendert wird. Mit anderen Worten: Machen Sie Dinge, die tödlich sein sollten, tödlich. Machen Sie alles andere überlebensfähig.  Machen Sie das Produkt „nachsichtig“.
+Wir bemühen uns, Funktionen im Hinblick auf Fail-Soft zu entwerfen und zu kodieren, sodass (zum Beispiel) ein Problem mit einem einzelnen DOM-Element nicht dazu führt, dass eine ganze Seite nicht gerendert wird. Mit anderen Worten: Machen Sie Dinge, die tödlich sein sollten, tödlich. Machen Sie alles andere überlebensfähig. Machen Sie das Produkt „nachsichtig“.
 
 ### Abnormal ist das neue Normal {#abnormal-is-the-new-normal}
 
@@ -110,7 +110,7 @@ Seien Sie immer bereit für elastisches Clustering, gehen Sie immer davon aus, d
 
 Nichts, was Sie tun, sollte den alten Code eines Kunden zerstören. Nur `/libs` sollte Produkt-Code enthalten, der während eines Upgrades aktualisiert werden kann. Der Abschnitt `/apps` des Repositorys ist Projekt-Code und der Abschnitt `/etc` enthält benutzerdefinierte Konfigurationen, die beibehalten werden müssen. Überschreiben Sie grundsätzlich nichts in `/apps`, `/content` und `/home`. Nach einem Upgrade sollten alter Projekt-Code, Konfigurationen und Inhalte weiterhin so funktionieren wie vor dem Upgrade.
 
-Wenn Sie für Abwärtskompatibilität entwickeln, stellen Sie außerdem sicher, dass das Upgrade-Erlebnis genauso einfach ist wie das der Erstinstallation.  Einfaches Beenden von AEM, Ersetzen der Quickstart-JAR-Datei und erneutes Starten von AEM sollten ausreichen. Mit einer schnell wachsenden Installationsbasis wird die Effizienz von Upgrades ein zunehmend wichtiger Vorteil sein.
+Wenn Sie für Abwärtskompatibilität entwickeln, stellen Sie außerdem sicher, dass das Upgrade-Erlebnis genauso einfach ist wie das der Erstinstallation. Einfaches Stoppen von AEM, Ersetzen der Quickstart-JAR-Datei und erneutes Starten von AEM sollten ausreichen. Mit einer schnell wachsenden Installationsbasis wird die Effizienz von Upgrades ein zunehmend wichtiger Vorteil sein.
 
 Bestehende APIs können und sollten als veraltet markiert werden, wenn eine neuere, bessere Funktionalität diese ersetzt, alle APIs, die in einer früheren 5.x-Version veröffentlicht wurden, müssen weiterhin funktionsfähig bleiben, da sie möglicherweise in benutzerdefiniertem Anwendungs-Code verwendet werden. Keine dieser APIs sollte entfernt werden.
 

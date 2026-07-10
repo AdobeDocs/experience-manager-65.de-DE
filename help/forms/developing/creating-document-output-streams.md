@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '18860'
-ht-degree: 99%
+source-wordcount: '19156'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ Die folgenden Abschnitte zeigen, wie Sie einen Formularentwurf in eine `com.adob
 * [Übergeben von Dokumenten in Content Services (nicht mehr unterstützt) an den Ausgabe-Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
 * [Erstellen von PDF-Dokumenten mithilfe von Fragmenten](creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 
-Bei der Entscheidung über die zu verwedende Technik sollten Sie den Formularentwurf, wenn Sie ihn von einem anderen AEM Forms-Service abrufen, innerhalb einer `com.adobe.idp.Document`-Instanz übergeben. Beide Abschnitte *Übergeben von Dokumenten an den Ausgabeservice* und *Erstellen von PDF-Dokumenten mithilfe von Fragmenten* zeigen, wie Sie einen Formularentwurf von einem anderen AEM Forms-Service abrufen. Im ersten Abschnitt wird der Formularentwurf aus Content Services (nicht mehr unterstützt) abgerufen. Im zweiten Abschnitt wird der Formularentwurf aus dem Assembler-Service abgerufen.
+Bei der Entscheidung über die zu verwedende Technik sollten Sie den Formularentwurf, wenn Sie ihn von einem anderen AEM Forms-Service abrufen, innerhalb einer `com.adobe.idp.Document`-Instanz übergeben. Beide Abschnitte *Übergeben von Dokumenten an den Ausgabeservice* und *Erstellen von PDF-Dokumenten mithilfe von Fragmenten* zeigen, wie Sie einen Formularentwurf von einem anderen AEM Forms-Service abrufen. Im ersten Abschnitt wird der Formularentwurf aus Content Services (nicht mehr unterstützt) abgerufen. Im zweiten Abschnitt wird der Formularentwurf aus dem Assembler-Dienst abgerufen.
 
 Wenn Sie den Formularentwurf aus einem festen Speicherort wie dem Dateisystem abrufen, können Sie beide Verfahren verwenden. Das heißt, Sie können den URI-Wert für eine XDP-Datei angeben oder eine `com.adobe.idp.Document`-Instanz verwenden.
 
@@ -107,11 +107,11 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 
-Wenn AEM Forms auf einem unterstützten J2EE-Anwendungs-Server bereitgestellt wird, der nicht JBOSS ist, müssen Sie „adobe-utilities.jar“ und „jbossall-client.jar“ durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungs-Server sind, auf dem AEM Forms bereitgestellt wird. 
+Wenn AEM Forms auf einem unterstützten J2EE-Anwendungs-Server bereitgestellt wird, der nicht JBOSS ist, müssen Sie „adobe-utilities.jar“ und „jbossall-client.jar“ durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungs-Server sind, auf dem AEM Forms bereitgestellt wird.
 
-**Erstellen eines Output-Client-Objekts**
+**Erstellen eines Client-Objekts für die Ausgabe**
 
-Bevor Sie einen Output-Service-Vorgang programmgesteuert ausführen können, müssen Sie ein Client-Objekt für den Output-Service erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `OutputClient`-Objekt. Wenn Sie die Output-Webservice-API verwenden, erstellen Sie ein `OutputServiceService`-Objekt.
+Bevor Sie einen Ausgabe-Service-Vorgang programmgesteuert durchführen können, müssen Sie ein Client-Objekt für den Ausgabe-Service erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `OutputClient`-Objekt. Wenn Sie die Ausgabe-Web-Service-API verwenden, erstellen Sie ein `OutputServiceService`-Objekt.
 
 **Referenzieren einer XML-Datenquelle**
 
@@ -223,7 +223,7 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output-API (Java):
 
 1. Referenzieren Sie eine XML-Datenquelle.
 
-   * Erstellen Sie ein `java.io.FileInputStream`-Objekt, das die XML-Datenquelle darstellt, die zum Ausfüllen des PDF-Dokuments verwendet wird, indem Sie seinem Konstruktor einen Zeichenfolgenwert übergeben, der den Speicherort der XML-Datei angibt.
+   * Erstellen Sie ein `java.io.FileInputStream`-Objekt, das die XML-Datenquelle darstellt, die zum Füllen des PDF-Dokuments verwendet wird, indem Sie seinen Konstruktor verwenden und einen Zeichenfolgenwert übergeben, der den Speicherort der XML-Datei angibt.
    * Erstellen Sie ein Objekt `com.adobe.idp.Document`, indem Sie den Konstruktor verwenden. Übergeben Sie das `java.io.FileInputStream`-Objekt.
 
 1. Legen Sie PDF-Laufzeitoptionen fest.
@@ -242,24 +242,24 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output-API (Java):
 
    >[!NOTE]
    >
-   >Sie können die Option „Linearisierte PDF“ nicht mithilfe der Methode `setLinearizedPDF` des `RenderOptionsSpec`-Objekts festlegen, wenn das PDF-Eingabedokument zertifiziert oder digital signiert ist. (Weitere Informationen finden Sie unter [PDF-Dokumente digital signieren &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >Sie können die Option „Linearisierte PDF“ nicht mithilfe der Methode `setLinearizedPDF` des `RenderOptionsSpec`-Objekts festlegen, wenn das PDF-Eingabedokument zertifiziert oder digital signiert ist. (Weitere Informationen finden Sie unter [PDF-Dokumente digital signieren ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Generieren Sie ein PDF-Dokument.
 
    Erstellen Sie ein PDF-Dokument, indem Sie die Methode `generatePDFOutput` des `OutputClient`-Objekts aufrufen und die folgenden Werte übergeben:
 
-   * Einen `TransformationFormat`-Aufzählungswert. Um ein PDF-Dokument zu generieren, geben Sie `TransformationFormat.PDF` an.
+   * Einen `TransformationFormat`-Aufzählungswert. Um ein PDF-Dokument zu erzeugen, geben Sie `TransformationFormat.PDF` an.
    * Ein string-Wert, der den Namen des Formularentwurfs angibt.
    * Ein Zeichenfolgenwert, der den Inhaltsstamm angibt, in dem sich der Formularentwurf befindet.
    * Ein `PDFOutputOptionsSpec`-Objekt, das PDF-Laufzeitoptionen enthält.
    * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen zum Rendern enthält.
-   * Das `com.adobe.idp.Document`-Objekt, das die XML-Datenquelle mit den Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
+   * Das `com.adobe.idp.Document`-Objekt, das die XML-Datenquelle enthält, die Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
 
    Die `generatePDFOutput`-Methode gibt ein `OutputResult`-Objekt zurück, das das Ergebnis der Authentifizierung enthält.
 
    >[!NOTE]
    >
-   >Beim Erzeugen eines PDF-Dokuments durch Aufrufen der Methode `generatePDFOutput` können Sie keine Daten mit einem XFA-PDF-Formular zusammenführen, das signiert oder zertifiziert ist. (Siehe [Digitales Signieren und Zertifizieren von Dokumenten &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Beim Erzeugen eines PDF-Dokuments durch Aufrufen der Methode `generatePDFOutput` können Sie keine Daten mit einem XFA-PDF-Formular zusammenführen, das signiert oder zertifiziert ist. (Siehe [Digitales Signieren und Zertifizieren von Dokumenten ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -267,13 +267,13 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output-API (Java):
 
    >[!NOTE]
    >
-   >Sie können auch ein PDF-Dokument erstellen, indem Sie die Methode `generatePDFOutput2` des `OutputClient`-Objekts aufrufen. (Weitere Informationen finden Sie unter [Übergeben von Dokumenten in Content Services (nicht mehr unterstützt) an den Ausgabe-Service &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >Sie können auch ein PDF-Dokument erstellen, indem Sie die Methode `generatePDFOutput2` des `OutputClient`-Objekts aufrufen. (Weitere Informationen finden Sie unter [Übergeben von Dokumenten in Content Services (nicht mehr unterstützt) an den Ausgabe-Service ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Rufen Sie die Ergebnisse des Vorgangs ab.
 
    * Rufen Sie ein `com.adobe.idp.Document`-Objekt ab, das den Status des Vorgangs `generatePDFOutput` darstellt, indem Sie die Methode `getStatusDoc` des `OutputResult`-Objekts aufrufen. Diese Methode gibt Status-XML-Daten zurück, die angeben, ob der Vorgang erfolgreich war.
    * Erstellen Sie ein `java.io.File`-Objekt, das die Ergebnisse des Vorgangs enthält. Stellen Sie sicher, dass die Dateinamenerweiterung .xml lautet.
-   * Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um die Inhalte des `com.adobe.idp.Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt benutzen, das von der Methode `getStatusDoc` zurückgegeben wurde).
+   * Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um die Inhalte des `com.adobe.idp.Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt benutzen, das von der Methode `getStatusDoc` zurückgegeben wurde.)
 
    Obwohl der Ausgabe-Service das PDF-Dokument an den Speicherort schreibt, der in dem an die Methode `setFileURI` des `PDFOutputOptionsSpec`-Objekts übergebenen Argument angegeben wird, können Sie das PDF/A-Dokument programmgesteuert abrufen, indem Sie die Methode `getGeneratedDoc` des `OutputResult`-Objekts aufrufen.
 
@@ -303,8 +303,8 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output API (Web Service):
 
 1. Erstellen Sie ein Output-Client-Objekt.
 
-   * Erstellen Sie mithilfe des Standardkonstruktors ein `OutputServiceClient`-Objekt.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `OutputServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`.). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
+   * Erstellen Sie ein `OutputServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Sie brauchen das Attribut `lc_version` nicht zu verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
@@ -312,15 +312,15 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output API (Web Service):
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Referenzieren Sie eine XML-Datenquelle.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt dient zum Speichern von XML-Daten, die mit dem PDF-Dokument zusammengeführt werden.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und ihm einen Zeichenfolgenwert übergeben, der den Dateispeicherort der XML-Datei mit den Formulardaten darstellt.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
-   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie seinem `MTOM`-Feld den Inhalt des Byte-Arrays zuweisen.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Festlegen von PDF-Laufzeitoptionen
 
@@ -338,44 +338,44 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output API (Web Service):
 
    >[!NOTE]
    >
-   >Sie können Option „Linearisiertes PDF“ nicht festlegen, indem Sie das Datenelement `linearizedPDF` des `RenderOptionsSpec`-Objekts verwenden, falls das die Eingabe-PDF-Datei zertifiziert oder digital signiert ist. (Weitere Informationen finden Sie unter [PDF-Dokumente digital signieren &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >Sie können Option „Linearisiertes PDF“ nicht festlegen, indem Sie das Datenelement `linearizedPDF` des `RenderOptionsSpec`-Objekts verwenden, falls das die Eingabe-PDF-Datei zertifiziert oder digital signiert ist. (Weitere Informationen finden Sie unter [PDF-Dokumente digital signieren ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Generieren Sie ein PDF-Dokument.
 
    Erstellen Sie ein PDF-Dokument, indem Sie die Methode `generatePDFOutput` des `OutputServiceService`-Objekts aufrufen und die folgenden Werte übergeben:
 
-   * Einen `TransformationFormat`-Aufzählungswert. Um ein PDF-Dokument zu generieren, geben Sie `TransformationFormat.PDF` an.
+   * Einen `TransformationFormat`-Aufzählungswert. Um ein PDF-Dokument zu erzeugen, geben Sie `TransformationFormat.PDF` an.
    * Ein string-Wert, der den Namen des Formularentwurfs angibt.
    * Ein Zeichenfolgenwert, der den Inhaltsstamm angibt, in dem sich der Formularentwurf befindet.
    * Ein `PDFOutputOptionsSpec`-Objekt, das PDF-Laufzeitoptionen enthält.
    * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen zum Rendern enthält.
-   * Das `BLOB`-Objekt, das die XML-Datenquelle mit den Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
+   * Das `BLOB`-Objekt, das die XML-Datenquelle enthält, die Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
    * Ein `BLOB`-Objekt, das von der `generatePDFOutput`-Methode gefüllt wird. Die `generatePDFOutput`-Methode füllt dieses Objekt mit generierten Metadaten, die das Dokument beschreiben. (Dieser Parameterwert ist nur für den Webservice-Aufruf erforderlich).
-   * Ein `BLOB`-Objekt, das von der `generatePDFOutput`-Methode gefüllt wird. Die `generatePDFOutput`-Methode füllt dieses Objekt mit Ergebnisdaten. (Dieser Parameterwert ist nur für den Webservice-Aufruf erforderlich).
+   * Ein `BLOB`-Objekt, das von der Methode `generatePDFOutput` aufgefüllt wird. Die Methode `generatePDFOutput` füllt dieses Objekt mit Ergebnisdaten. (Dieser Parameterwert ist nur für den Webservice-Aufruf erforderlich).
    * Ein `OutputResult`-Objekt, das die Ergebnisse des Vorgangs enthält. (Dieser Parameterwert ist nur für den Webservice-Aufruf erforderlich).
 
    >[!NOTE]
    >
-   >Beim Erstellen eines PDF-Dokuments mithilfe des Aufrufs der Methode `generatePDFOutput` können Sie keine Daten mit einem XFA-PDF-Formular zusammenführen, das signiert oder zertifiziert ist. (Siehe [Digitales Signieren und Zertifizieren von Dokumenten &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Beim Erstellen eines PDF-Dokuments mithilfe des Aufrufs der Methode `generatePDFOutput` können Sie keine Daten mit einem XFA-PDF-Formular zusammenführen, das signiert oder zertifiziert ist. (Siehe [Digitales Signieren und Zertifizieren von Dokumenten ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
-   >Sie können auf ein PDF-Dokument erstellen, indem Sie die Methode `generatePDFOutput2` des `OutputClient`-Objekts aufrufen. (Weitere Informationen finden Sie unter [Übergeben von Dokumenten in Content Services (nicht mehr unterstützt) an den Ausgabe-Service &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >Sie können auf ein PDF-Dokument erstellen, indem Sie die Methode `generatePDFOutput2` des `OutputClient`-Objekts aufrufen. (Weitere Informationen finden Sie unter [Übergeben von Dokumenten in Content Services (nicht mehr unterstützt) an den Ausgabe-Service ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Rufen Sie die Ergebnisse des Vorgangs ab.
 
-   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der einen XML-Dateispeicherort darstellt, welcher Ergebnisdaten enthält. Stellen Sie sicher, dass die Dateinamenerweiterung .xml lautet.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Speicherort einer XML-Datei mit Ergebnisdaten darstellt. Stellen Sie sicher, dass die Dateinamenerweiterung .xml lautet.
    * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das durch die Methode `generatePDFOutput` des `OutputServiceService`-Objekts mit Ergebnisdaten (dem achten Parameter) gefüllt wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `MTOM`-`field` des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in die XML-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts verwenden und das Byte-Array übergeben.
 
    Siehe auch
 
-[Zusammenfassung der Schritte](creating-document-output-streams.md#summary-of-steps)
+   [Zusammenfassung der Schritte](creating-document-output-streams.md#summary-of-steps)
 
-[AEM Forms mithilfe von MTOM aufrufen](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+   [AEM Forms mithilfe von MTOM aufrufen](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+   [Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
    >[!NOTE]
    >
@@ -385,7 +385,7 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output API (Web Service):
 
 Sie können den Ausgabe-Service verwenden, um ein PDF/A-Dokument zu erstellen. Da PDF/A ein Archivierungsformat für die langfristige Beibehaltung des Dokumentinhalts ist, werden alle Schriftarten eingebettet und die Datei wird nicht komprimiert. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Außerdem enthalten PDF/A-Dokumente keine Audio- und Videoinhalte. Wie auch bei anderen Ausgabe-Service-Aufgaben stellen Sie sowohl einen Formularentwurf als auch Daten bereit, die mit einem Formularentwurf zusammengeführt werden sollen, um ein PDF/A-Dokument zu erstellen.
 
-Die PDF/A-1-Spezifikation besteht aus zwei Konformitätsstufen, nämlich a und b. Der wesentliche Unterschied zwischen den beiden besteht in der Unterstützung der logischen Struktur (Zugänglichkeit), die für die Konformitätsstufe b nicht erforderlich ist. Unabhängig von der Konformitätsstufe bestimmt PDF/A-1, dass alle Schriftarten in das generierte PDF/A-Dokument eingebettet sind.
+Die PDF/A-1-Spezifikation besteht aus zwei Konformitätsstufen, nämlich a und b. Der Hauptunterschied zwischen den beiden besteht in der Unterstützung der logischen Struktur (Barrierefreiheit), die für Konformitätsstufe b nicht erforderlich ist. Unabhängig von der Konformitätsstufe schreibt PDF/A-1 vor, dass alle Schriftarten in das generierte PDF/A-Dokument eingebettet sind.
 
 Obwohl PDF/A der Standard für die Archivierung von PDF-Dokumenten ist, ist es nicht erforderlich, PDF/A für die Archivierung zu verwenden, wenn ein standardmäßiges PDF-Dokument den Anforderungen Ihrer Firma entspricht. Der PDF/A-Standard dient der Erstellung einer PDF-Datei, die über einen längeren Zeitraum gespeichert werden kann und die Anforderungen an die Dokumentenerhaltung erfüllt. Beispielsweise kann eine URL nicht in eine PDF/A eingebettet werden, da die URL im Laufe der Zeit ungültig werden kann.
 
@@ -429,11 +429,11 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 
-Wenn AEM Forms auf einem unterstützten J2EE-Anwendungs-Server bereitgestellt wird, der nicht JBOSS ist, müssen Sie „adobe-utilities.jar“ und „jbossall-client.jar“ durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungs-Server sind, auf dem AEM Forms bereitgestellt wird. 
+Wenn AEM Forms auf einem unterstützten J2EE-Anwendungs-Server bereitgestellt wird, der nicht JBOSS ist, müssen Sie „adobe-utilities.jar“ und „jbossall-client.jar“ durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungs-Server sind, auf dem AEM Forms bereitgestellt wird.
 
-**Erstellen eines Output-Client-Objekts**
+**Erstellen eines Client-Objekts für die Ausgabe**
 
-Bevor Sie einen Output-Service-Vorgang programmgesteuert ausführen können, müssen Sie ein Client-Objekt für den Output-Service erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `OutputClient`-Objekt. Wenn Sie die Output-Webservice-API verwenden, erstellen Sie ein `OutputServiceService`-Objekt.
+Bevor Sie einen Ausgabe-Service-Vorgang programmgesteuert durchführen können, müssen Sie ein Client-Objekt für den Ausgabe-Service erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `OutputClient`-Objekt. Wenn Sie die Ausgabe-Web-Service-API verwenden, erstellen Sie ein `OutputServiceService`-Objekt.
 
 **Referenzieren einer XML-Datenquelle**
 
@@ -491,7 +491,7 @@ Erstellen Sie ein PDF/A-Dokument mithilfe der Output-API (Java):
    * Erstellen Sie ein `java.io.FileInputStream`-Objekt, das die XML-Datenquelle darstellt, die zum Ausfüllen des PDF/A-Dokuments verwendet wird, indem Sie seinen Konstruktor aufrufen und ihm einen Zeichenfolgenwert übergibt, der den Speicherort der XML-Datei angibt.
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie seinen Konstruktor verwenden und das `java.io.FileInputStream`-Objekt übergeben.
 
-1. Festlegen von PDF/A-Laufzeitoptionen.
+1. Legen Sie PDF/A-Laufzeitoptionen fest.
 
    * Erstellen Sie ein Objekt `PDFOutputOptionsSpec`, indem Sie den Konstruktor verwenden.
    * Legen Sie die Datei-URI-Option fest, indem Sie die Methode `setFileURI` des `PDFOutputOptionsSpec`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort der vom Output-Service generierten PDF-Datei angibt. Die Datei-URI-Option ist relativ zum J2EE-Anwendungsserver, der als Host für AEM Forms dient, nicht zum Clientcomputer.
@@ -499,7 +499,7 @@ Erstellen Sie ein PDF/A-Dokument mithilfe der Output-API (Java):
 1. Legen Sie Rendering-Laufzeitoptionen fest.
 
    * Erstellen Sie ein Objekt `RenderOptionsSpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie den `PDFAConformance`-Wert fest, indem Sie die Methode `setPDFAConformance` des `RenderOptionsSpec`-Objekts aufrufen und einen `PDFAConformance`-Auflistungswert übergeben, der die Konformitätsstufe angibt. Um beispielsweise Konformitätsstufe A anzugeben, übergeben Sie `PDFAConformance.A`.
+   * Legen Sie den `PDFAConformance`-Wert fest, indem Sie die Methode `setPDFAConformance` des `RenderOptionsSpec`-Objekts aufrufen und einen `PDFAConformance`-Aufzählungswert übergeben, der die Konformitätsstufe angibt. Um beispielsweise Konformitätsstufe A anzugeben, übergeben Sie `PDFAConformance.A`.
    * Legen Sie den `PDFARevisionNumber`-Wert fest, indem Sie die Methode `setPDFARevisionNumber` des `RenderOptionsSpec`-Objekts aufrufen und `PDFARevisionNumber.Revision_1` übergeben.
 
    >[!NOTE]
@@ -561,8 +561,8 @@ So erstellen Sie ein PDF/A-Dokument mithilfe der Ausgabe-API (Webservice):
 
 1. Erstellen Sie ein Output-Client-Objekt.
 
-   * Erstellen Sie mithilfe des Standardkonstruktors ein `OutputServiceClient`-Objekt.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `OutputServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`.). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
+   * Erstellen Sie ein `OutputServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Sie brauchen das Attribut `lc_version` nicht zu verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
@@ -570,7 +570,7 @@ So erstellen Sie ein PDF/A-Dokument mithilfe der Ausgabe-API (Webservice):
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Referenzieren Sie eine XML-Datenquelle.
 
@@ -580,16 +580,16 @@ So erstellen Sie ein PDF/A-Dokument mithilfe der Ausgabe-API (Webservice):
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
-1. Legen Sie PDF/A-Laufzeitoptionen fest.
+1. Festlegen von PDF/A-Laufzeitoptionen.
 
    * Erstellen Sie ein Objekt `PDFOutputOptionsSpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie die Datei-URI-Option fest, indem Sie dem Datenelement `fileURI` des `PDFOutputOptionsSpec`-Objekts einen Zeichenfolgenwert zuweisen, der den Speicherort der PDF-Datei angibt, die der Ausgabe-Service generiert. Die Option „Datei-URI“ bezieht sich auf den J2EE-Programm-Server, der als Host für AEM Forms dient, nicht auf den Client-Computer.
+   * Legen Sie die Datei-URI-Option fest, indem Sie dem Datenelement `fileURI` des `PDFOutputOptionsSpec`-Objekts einen Zeichenfolgenwert zuweisen, der den Speicherort der vom Ausgabe-Service generierten PDF-Datei angibt. Die Option „Datei-URI“ bezieht sich auf den J2EE-Programm-Server, der als Host für AEM Forms dient, nicht auf den Client-Computer.
 
 1. Legen Sie Rendering-Laufzeitoptionen fest.
 
    * Erstellen Sie ein Objekt `RenderOptionsSpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie den `PDFAConformance`-Wert fest, indem Sie dem Datenelement `PDFAConformance` des `RenderOptionsSpec`-Objekts einen `PDFAConformance`-Auflistungswert zuweisen. Um beispielsweise Konformitätsstufe A anzugeben, weisen Sie diesem Datenelement `PDFAConformance.A` zu.
-   * Legen Sie den Wert `PDFARevisionNumber` fest, indem Sie dem Datenelement `PDFARevisionNumber` des `RenderOptionsSpec`-Objekts einen `PDFARevisionNumber`-Auflistungswert zuweisen. Weisen Sie diesem Datenelement `PDFARevisionNumber.Revision_1` zu.
+   * Legen Sie den `PDFAConformance`-Wert fest, indem Sie dem Datenelement `PDFAConformance` des `RenderOptionsSpec`-Objekts einen `PDFAConformance`-Aufzählungswert zuweisen. Um beispielsweise Konformitätsstufe A anzugeben, weisen Sie diesem Datenelement `PDFAConformance.A` zu.
+   * Legen Sie den Wert `PDFARevisionNumber` fest, indem Sie dem Datenelement `PDFARevisionNumber` des `RenderOptionsSpec`-Objekts einen `PDFARevisionNumber`-Aufzählungswert zuweisen. Weisen Sie diesem Datenelement `PDFARevisionNumber.Revision_1` zu.
 
    >[!NOTE]
    >
@@ -599,14 +599,14 @@ So erstellen Sie ein PDF/A-Dokument mithilfe der Ausgabe-API (Webservice):
 
    Erstellen Sie ein PDF-Dokument, indem Sie die Methode `generatePDFOutput` des `OutputServiceService`-Objekts aufrufen und die folgenden Werte übergeben:
 
-   * Ein TransformationFormat-Auflistungswert. Um ein PDF-Dokument zu erzeugen, geben Sie `TransformationFormat.PDFA` an.
+   * Ein TransformationFormat-Aufzählungswert. Um ein PDF-Dokument zu generieren, geben Sie `TransformationFormat.PDFA` an.
    * Ein string-Wert, der den Namen des Formularentwurfs angibt.
    * Ein Zeichenfolgenwert, der den Inhaltsstamm angibt, in dem sich der Formularentwurf befindet.
    * Ein `PDFOutputOptionsSpec`-Objekt, das PDF-Laufzeitoptionen enthält.
    * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen zum Rendern enthält.
-   * Das `BLOB`-Objekt, das die XML-Datenquelle mit den Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
-   * Ein `BLOB`-Objekt, das von der `generatePDFOutput`-Methode gefüllt wird. Die Methode `generatePDFOutput` füllt dieses Objekt mit generierten Metadaten, die das Dokument beschreiben. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
-   * Ein `BLOB`-Objekt, das von der Methode `generatePDFOutput` aufgefüllt wird. Die Methode `generatePDFOutput` füllt dieses Objekt mit Ergebnisdaten. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
+   * Das `BLOB`-Objekt, das die XML-Datenquelle enthält, die Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
+   * Ein `BLOB`-Objekt, das von der `generatePDFOutput`-Methode gefüllt wird. Die `generatePDFOutput`-Methode füllt dieses Objekt mit generierten Metadaten, die das Dokument beschreiben. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
+   * Ein `BLOB`-Objekt, das von der `generatePDFOutput`-Methode gefüllt wird. Die Methode `generatePDFOutput` füllt dieses Objekt mit Ergebnisdaten. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
    * Ein `OutputResult`-Objekt, das die Ergebnisse des Vorgangs enthält. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
 
    >[!NOTE]
@@ -615,10 +615,10 @@ So erstellen Sie ein PDF/A-Dokument mithilfe der Ausgabe-API (Webservice):
 
 1. Rufen Sie die Ergebnisse des Vorgangs ab.
 
-   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der einen XML-Dateispeicherort darstellt, welcher Ergebnisdaten enthält. Stellen Sie sicher, dass die Dateinamenerweiterung .xml lautet.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `generatePDFOutput` des `OutputServiceService`-Objekts (der achte Parameter) mit Ergebnisdaten gefüllt wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Felds `MTOM` des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Speicherort einer XML-Datei mit Ergebnisdaten darstellt. Stellen Sie sicher, dass die Dateinamenerweiterung .xml lautet.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das durch die Methode `generatePDFOutput` des `OutputServiceService`-Objekts mit Ergebnisdaten (dem achten Parameter) gefüllt wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Felds `MTOM` des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in die XML-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in die XML-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts verwenden und das Byte-Array übergeben.
 
 **Siehe auch**
 
@@ -721,15 +721,15 @@ Sie können das nicht interaktive Formular als PDF-Datei speichern. Das Formular
    * Ein `com.adobe.idp.Document`-Objekt, das den Formularentwurf darstellt (verwenden Sie die Instanz, die von der Methode `getDocument` des `CRCResult`-Objekts zurückgegeben wurde).
    * Ein `PDFOutputOptionsSpec`-Objekt, das PDF-Laufzeitoptionen enthält.
    * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen zum Rendern enthält.
-   * Das `com.adobe.idp.Document`-Objekt, das die XML-Datenquelle mit den Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
+   * Das `com.adobe.idp.Document`-Objekt, das die XML-Datenquelle enthält, die Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
 
-   Die Methode `generatePDFOutput2` gibt ein `OutputResult`-Objekt zurück, das die Ergebnisse des Vorgangs enthält.
+   Die `generatePDFOutput2`-Methode gibt ein `OutputResult`-Objekt zurück, das das Ergebnis der Authentifizierung enthält.
 
 1. Führen Sie eine Aktion mit dem Formulardaten-Stream aus.
 
    * Rufen Sie ein `com.adobe.idp.Document`-Objekt ab, das das nicht-interaktive Formular darstellt, indem Sie die Methode `getGeneratedDoc` des `OutputResult`-Objekts aufrufen.
    * Erstellen Sie ein `java.io.File`-Objekt, das die Ergebnisse des Vorgangs enthält. Stellen Sie sicher, dass die Dateinamenerweiterung .pdf lautet.
-   * Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um den Inhalt des `com.adobe.idp.Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt verwenden, das von der Methode `getGeneratedDoc` zurückgegeben wird).
+   * Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um den Inhalt des `com.adobe.idp.Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt verwenden, das von der Methode `getGeneratedDoc` zurückgegeben wurde).
 
 **Siehe auch**
 
@@ -753,7 +753,7 @@ Sie können das nicht interaktive Formular als PDF-Datei speichern. Das Formular
 
    Verwenden Sie die folgende WSDL-Definition für die Service-Referenz, die mit dem Document Management-Service verknüpft ist: `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
 
-   Da der `BLOB`-Datentyp für beide Service-Referenzen verwendet wird, müssen Sie den `BLOB`-Datentyp vollständig qualifizieren, wenn Sie ihn verwenden. Im entsprechenden Webservice-Schnellstart sind alle `BLOB`-Instanzen vollständig qualifiziert.
+   Da der Datentyp `BLOB` für beide Service-Verweise verwendet wird, müssen Sie den Datentyp `BLOB` qualifizieren, wenn Sie ihn verwenden. Im entsprechenden Webservice-Schnellstart sind alle `BLOB`-Instanzen vollständig qualifiziert.
 
    >[!NOTE]
    >
@@ -761,9 +761,9 @@ Sie können das nicht interaktive Formular als PDF-Datei speichern. Das Formular
 
 1. Erstellen Sie ein Output- und ein Document Management-Client-API-Objekt.
 
-   * Erstellen Sie ein `OutputServiceClient`-Objekt mithilfe des Standardkonstruktors.
-   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address`-Objekt mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den Forms-Service angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `OutputServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Erstellen Sie ein `OutputServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den Forms-Service angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
@@ -798,17 +798,17 @@ Sie können das nicht interaktive Formular als PDF-Datei speichern. Das Formular
    * Ein `BLOB`-Objekt, das den Formularentwurf darstellt (verwenden Sie die `BLOB`-Instanz, die von Content Services (nicht mehr unterstützt) zurückgegeben wird).
    * Ein `PDFOutputOptionsSpec`-Objekt, das PDF-Laufzeitoptionen enthält.
    * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen zum Rendern enthält.
-   * Das `BLOB`-Objekt, das die XML-Datenquelle enthält, die Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
+   * Das `BLOB`-Objekt, das die XML-Datenquelle mit den Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
    * Ein `BLOB`-Ausgabeobjekt, das von der `generatePDFOutput2`-Methode gefüllt wird. Die `generatePDFOutput2`-Methode füllt dieses Objekt mit generierten Metadaten, die das Dokument beschreiben. (Dieser Parameterwert ist nur für den Webservice-Aufruf erforderlich).
    * Ein Ausgabe-`OutputResult`-Objekt, das die Ergebnisse des Vorgangs enthält. (Dieser Parameterwert ist nur für den Webservice-Aufruf erforderlich).
 
-   Die `generatePDFOutput2`-Methode gibt ein `BLOB`-Objekt zurück, das das nicht interaktive PDF-Formular enthält.
+   Die Methode `generatePDFOutput2` gibt ein `BLOB`-Objekt zurück, das das nicht-interaktive PDF-Formular enthält.
 
 1. Führen Sie eine Aktion mit dem Formulardaten-Stream aus.
 
-   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen. Übergeben Sie einen Kennzeichenfolgewert, der den Dateispeicherort des interaktiven PDF-Dokuments und den Modus angibt, in dem die Datei geöffnet werden soll.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen. Übergeben Sie einen Kennzeichenfolgewert, der den Dateispeicherort des interaktiven PDF-Dokuments und den Modus angibt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das von der Methode `generatePDFOutput2` abgerufen wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
@@ -821,7 +821,7 @@ Sie können das nicht interaktive Formular als PDF-Datei speichern. Das Formular
 
 Der Ausgabe-Service rendert ein nicht interaktives PDF-Formular, das auf einem Formularentwurf basiert, der normalerweise als XDP-Datei gespeichert und in Designer erstellt wird. Sie können ein `com.adobe.idp.Document`-Objekt übergeben, das den Formularentwurf für den Ausgabe-Service enthält. Der Ausgabe-Service rendert dann den Formularentwurf im `com.adobe.idp.Document`-Objekt.
 
-Ein Vorteil der Übergabe eines `com.adobe.idp.Document`-Objekts an den Ausgabe-Service besteht darin, dass andere AEM Forms-Service-Vorgänge eine `com.adobe.idp.Document`-Instanz zurückgeben. Das heißt, Sie können eine `com.adobe.idp.Document`-Instanz von einem anderen Service-Vorgang erhalten und sie rendern. Angenommen, eine XDP-Datei wird im AEM Forms-Repository gespeichert, wie in der folgenden Abbildung dargestellt.
+Ein Vorteil der Übergabe eines `com.adobe.idp.Document`-Objekts an den Ausgabe-Service besteht darin, dass andere AEM Forms-Service-Vorgänge eine `com.adobe.idp.Document`-Instanz zurückgeben. Das heißt, Sie können eine `com.adobe.idp.Document`-Instanz aus einem anderen Service-Vorgang abrufen und rendern. Angenommen, eine XDP-Datei wird im AEM Forms-Repository gespeichert, wie in der folgenden Abbildung dargestellt.
 
 ![pd_pd_formrepository](assets/pd_pd_formrepository.png)
 
@@ -846,7 +846,7 @@ Sie können eine PDF-Datei basierend auf einer XDP-Datei im Repository auf zwei 
 Führen Sie die folgenden Aufgaben aus, um ein vom AEM Forms-Repository abgerufenes Dokument an den Ausgabe-Service zu übergeben:
 
 1. Schließen Sie Projektdateien ein.
-1. Erstellen Sie ein Output- und ein Document Management-Client-API-Objekt. 
+1. Erstellen Sie ein Output- und ein Document Management-Client-API-Objekt.
 1. Rufen Sie den Formularentwurf aus dem AEM Forms-Repository ab.
 1. Rendern Sie das nicht interaktive PDF-Formular.
 1. Führen Sie eine Aktion mit dem Datenstrom aus.
@@ -916,15 +916,15 @@ So übergeben Sie ein aus dem Repository abgerufenes Dokument mithilfe des Ausga
    * Ein `com.adobe.idp.Document`-Objekt, das den Formularentwurf darstellt (verwenden Sie die Instanz, die von der Methode `readResourceContent` des `ResourceRepositoryClient`-Objekts zurückgegeben wurde).
    * Ein `PDFOutputOptionsSpec`-Objekt, das PDF-Laufzeitoptionen enthält.
    * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen zum Rendern enthält.
-   * Das `com.adobe.idp.Document`-Objekt, das die XML-Datenquelle mit den Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
+   * Das `com.adobe.idp.Document`-Objekt, das die XML-Datenquelle enthält, die Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
 
-   Die Methode `generatePDFOutput2` gibt ein `OutputResult`-Objekt zurück, das die Ergebnisse des Vorgangs enthält.
+   Die `generatePDFOutput2`-Methode gibt ein `OutputResult`-Objekt zurück, das das Ergebnis der Authentifizierung enthält.
 
 1. Führen Sie eine Aktion mit dem Formulardaten-Stream aus.
 
    * Rufen Sie ein `com.adobe.idp.Document`-Objekt ab, das das nicht-interaktive Formular darstellt, indem Sie die Methode `getGeneratedDoc` des `OutputResult`-Objekts aufrufen.
    * Erstellen Sie ein `java.io.File`-Objekt, das die Ergebnisse des Vorgangs enthält. Stellen Sie sicher, dass die Dateinamenerweiterung .pdf lautet.
-   * Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um den Inhalt des `com.adobe.idp.Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt verwenden, das von der Methode `getGeneratedDoc` zurückgegeben wird).
+   * Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um den Inhalt des `com.adobe.idp.Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt verwenden, das von der Methode `getGeneratedDoc` zurückgegeben wurde).
 
 **Siehe auch**
 
@@ -938,17 +938,17 @@ So übergeben Sie ein aus dem Repository abgerufenes Dokument mithilfe des Ausga
 
 ## Erstellen von PDF-Dokumenten mithilfe von Fragmenten {#creating-pdf-documents-using-fragments}
 
-Sie können die Ausgabe- und Assembler-Services verwenden, um einen Ausgabe-Stream, z. B. ein PDF-Dokument, zu erstellen, der auf Fragmenten basiert. Der Assembler-Dienst stellt ein XDP-Dokument zusammen, das auf Fragmenten aus mehreren XDP-Dateien basiert. Das zusammengestellte XDP-Dokument wird an den Ausgabe-Service übergeben, der ein PDF-Dokument erstellt. Obwohl dieser Workflow zeigt, dass ein PDF-Dokument erzeugt wird, kann der Ausgabe-Service für diesen Arbeitsablauf auch andere Ausgabetypen wie ZPL erzeugen. Ein PDF-Dokument wird hier nur zu Demonstrationszwecken verwendet.
+Sie können die Ausgabe- und Assembler-Dienste verwenden, um einen Ausgabe-Stream, z. B. ein PDF-Dokument, zu erstellen, der auf Fragmenten basiert. Der Assembler-Dienst stellt ein XDP-Dokument zusammen, das auf Fragmenten aus mehreren XDP-Dateien basiert. Das zusammengestellte XDP-Dokument wird an den Ausgabe-Service übergeben, der ein PDF-Dokument erstellt. Obwohl dieser Workflow zeigt, dass ein PDF-Dokument erzeugt wird, kann der Ausgabe-Service für diesen Arbeitsablauf auch andere Ausgabetypen wie ZPL erzeugen. Ein PDF-Dokument wird hier nur zu Demonstrationszwecken verwendet.
 
 Die folgende Abbildung zeigt diesen Workflow.
 
 ![cp_cp_outputassemblefragments](assets/cp_cp_outputassemblefragments.png)
 
-Bevor Sie *Erstellen von PDF-Dokumenten mithilfe von Fragmenten* lesen, sollten Sie sich mit der Verwendung des Assembler-Services zum Zusammenstellen mehrerer XDP-Dokumente vertraut machen. (Siehe [Zusammenstellen mehrerer XDP-Fragmente](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
+Bevor Sie *Erstellen von PDF-Dokumenten mithilfe von Fragmenten* lesen, sollten Sie sich mit der Verwendung des Assembler-Dienstes zum Zusammenstellen mehrerer XDP-Dokumente vertraut machen. (Siehe [Zusammenstellen mehrerer XDP-Fragmente](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
 
 >[!NOTE]
 >
->Sie können auch einen vom Assembler-Service zusammengestellten Formularentwurf an den Forms-Service anstelle des Ausgabe-Services übergeben. Der Hauptunterschied zwischen dem Ausgabe-Service und dem Forms-Service besteht darin, dass der Forms-Service interaktive PDF-Dokumente erzeugt, während der Ausgabe-Service nicht-interaktive PDF-Dokumente erzeugt. Außerdem kann der Forms-Service keine druckerbasierten Ausgabe-Streams wie ZPL erzeugen.
+>Sie können auch einen vom Assembler-Dienst zusammengestellten Formularentwurf an den Forms-Service anstelle des Ausgabe-Services übergeben. Der Hauptunterschied zwischen dem Ausgabe-Service und dem Forms-Service besteht darin, dass der Forms-Service interaktive PDF-Dokumente erzeugt, während der Ausgabe-Service nicht-interaktive PDF-Dokumente erzeugt. Außerdem kann der Forms-Service keine druckerbasierten Ausgabe-Streams wie ZPL erzeugen.
 
 >[!NOTE]
 >
@@ -960,25 +960,25 @@ Um ein auf Fragmenten basierendes PDF-Dokument zu erstellen, führen Sie die fol
 
 1. Schließen Sie Projektdateien ein.
 1. Erstellen Sie ein Output- und Assembler-Client-Objekt.
-1. Verwenden Sie den Assembler-Service, um das Design des Formulars zu generieren.
+1. Verwenden Sie den Assembler-Dienst, um das Design des Formulars zu generieren.
 1. Verwenden Sie den Output-Service, um das PDF-Dokument zu generieren.
 1. Speichern Sie das Formular als PDF-Datei.
 
-**Einschließen von Projektdateien**
+**Einbinden von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
 **Erstellen eines Ausgabe- und Assembler-Client-Objekts**
 
-Bevor Sie einen Ablauf für die Ausgabe-Service-API programmgesteuert ausführen können, müssen Sie ein Ausgabe-Client-API-Objekt erstellen. Da dieser Workflow für die Erstellung des Formulardesigns den Assembler-Service aufruft, erstellen Sie außerdem ein Assembler-Client-API-Objekt.
+Bevor Sie einen Ablauf für die Ausgabe-Service-API programmgesteuert ausführen können, müssen Sie ein Ausgabe-Client-API-Objekt erstellen. Da dieser Workflow für die Erstellung des Formulardesigns den Assembler-Dienst aufruft, erstellen Sie außerdem ein Assembler-Client-API-Objekt.
 
-**Verwenden des Assembler-Service für die Erstellung des Formulardesigns**
+**Verwenden des Assembler-Dienstes für die Erstellung des Formulardesigns**
 
-Verwenden Sie den Assembler-Service, um das Formulardesign mithilfe von Fragmenten zu generieren. Der Assembler-Serivce gibt eine `com.adobe.idp.Document`-Instanz zurück, die das Formulardesign enthält.
+Verwenden Sie den Assembler-Dienst, um das Formulardesign mithilfe von Fragmenten zu generieren. Der Assembler-Dienst gibt eine `com.adobe.idp.Document`-Instanz zurück, die das Formulardesign enthält.
 
 **Verwenden des Ausgabe-Service für die Erstellung des PDF-Dokuments**
 
-Sie können den Ausgabe-Service verwenden, um ein PDF-Dokument mit dem von Assembler-Service erstellten Formulardesign zu generieren. Übergeben Sie die `com.adobe.idp.Document`-Instanz, die der Assembler-Service an den Ausgabe-Service zurückgegeben hat.
+Sie können den Ausgabe-Service verwenden, um ein PDF-Dokument mit dem vom Assembler-Dienst erstellten Formulardesign zu generieren. Übergeben Sie die `com.adobe.idp.Document`-Instanz, die der Assembler-Dienst an den Ausgabe-Service zurückgegeben hat.
 
 **PDF-Dokument als PDF-Datei speichern**
 
@@ -1002,7 +1002,7 @@ Nachdem der Ausgabe-Service ein PDF-Dokument generiert hat, können Sie es als P
 
 ### Erstellen eines PDF-Dokuments basierend auf Fragmenten mithilfe der Java-API {#create-a-pdf-document-based-on-fragments-using-the-java-api}
 
-Erstellen eines PDF-Dokuments basierend auf Fragmenten mithilfe der Output Service API und der Assembler Service API (Java):
+Erstellen eines PDF-Dokuments basierend auf Fragmenten mithilfe der Output Service API und der Assembler-Dienst-API (Java):
 
 1. Schließen Sie Projektdateien ein.
 
@@ -1014,13 +1014,13 @@ Erstellen eines PDF-Dokuments basierend auf Fragmenten mithilfe der Output Servi
    * Erstellen Sie ein `OutputClient`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
    * Erstellen Sie ein `AssemblerServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
 
-1. Verwenden Sie den Assembler-Service, um das Design des Formulars zu generieren.
+1. Verwenden Sie den Assembler-Dienst, um das Design des Formulars zu generieren.
 
    Rufen Sie die Methode `invokeDDX` des `AssemblerServiceClient`-Objekts auf und übergeben Sie die folgenden erforderlichen Werte:
 
    * Ein `com.adobe.idp.Document`-Objekt, das das zu verwendende DDX-Dokument darstellt.
    * Ein `java.util.Map`-Objekt, das die XDP-Eingabedateien enthält.
-   * Ein `com.adobe.livecycle.assembler.client.AssemblerOptionSpec`-Objekt, das die Laufzeitoptionen angibt, einschließlich der Standardschrift und der Vorgangsprotokollebene.
+   * Ein `com.adobe.livecycle.assembler.client.AssemblerOptionSpec`-Objekt, das die Laufzeitoptionen angibt, einschließlich der Standardschrift und der Auftragslog-Ebene.
 
    Die `invokeDDX`-Methode gibt ein `com.adobe.livecycle.assembler.client.AssemblerResult`-Objekt zurück, welches das assemblierte XDP-Dokument enthält. Um das assemblierte XDP-Dokument abzurufen, gehen Sie wie folgt vor:
 
@@ -1034,7 +1034,7 @@ Erstellen eines PDF-Dokuments basierend auf Fragmenten mithilfe der Output Servi
 
    * Einen `TransformationFormat`-Aufzählungswert. Um ein PDF-Dokument zu generieren, geben Sie `TransformationFormat.PDF` an
    * Einen Zeichenfolgenwert, der den Inhaltsstamm angibt, in dem sich die zusätzlichen Ressourcen (z. B. Bilder) befinden
-   * Ein `com.adobe.idp.Document`-Objekt, das den Formularentwurf darstellt (verwenden Sie die vom Assembler-Service zurückgegebene Instanz)
+   * Ein `com.adobe.idp.Document`-Objekt, das den Formularentwurf darstellt (verwenden Sie die vom Assembler-Dienst zurückgegebene Instanz)
    * Ein `PDFOutputOptionsSpec`-Objekt, das PDF-Laufzeitoptionen enthält
    * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen zum Rendern enthält
    * Das `com.adobe.idp.Document`-Objekt, das die XML-Datenquelle mit den Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen
@@ -1061,7 +1061,7 @@ Erstellen eines PDF-Dokuments basierend auf Fragmenten mithilfe der Output Servi
 
 ### Erstellen eines PDF-Dokuments basierend auf Fragmenten mithilfe der Web Service-API {#create-a-pdf-document-based-on-fragments-using-the-web-service-api}
 
-Erstellen Sie ein PDF-Dokument basierend auf Fragmenten mithilfe der Output Service-API und der Assembler Service-API (Web Service):
+Erstellen Sie ein PDF-Dokument basierend auf Fragmenten mithilfe der Output Service-API und der Assembler-Dienst-API (Web Service):
 
 1. Schließen Sie Projektdateien ein.
 
@@ -1071,13 +1071,13 @@ Erstellen Sie ein PDF-Dokument basierend auf Fragmenten mithilfe der Output Serv
     http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1.
    ```
 
-   Verwenden Sie die folgende WSDL-Definition für die Service-Referenz, die mit dem Assembler-Service verknüpft ist:
+   Verwenden Sie die folgende WSDL-Definition für die Service-Referenz, die mit dem Assembler-Dienst verknüpft ist:
 
    ```java
     http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1.
    ```
 
-   Da der Datentyp `BLOB` für beide Service-Verweise verwendet wird, müssen Sie den Datentyp `BLOB` qualifizieren, wenn Sie ihn verwenden. Im entsprechenden Webservice-Schnellstart sind alle `BLOB`-Instanzen vollständig qualifiziert.
+   Da der `BLOB`-Datentyp für beide Service-Referenzen verwendet wird, müssen Sie den `BLOB`-Datentyp vollständig qualifizieren, wenn Sie ihn verwenden. Im entsprechenden Webservice-Schnellstart sind alle `BLOB`-Instanzen vollständig qualifiziert.
 
    >[!NOTE]
    >
@@ -1085,8 +1085,8 @@ Erstellen Sie ein PDF-Dokument basierend auf Fragmenten mithilfe der Output Serv
 
 1. Erstellen Sie ein Output- und Assembler-Client-Objekt.
 
-   * Erstellen Sie mithilfe seines Standardkonstruktors ein `OutputServiceClient`-Objekt.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `OutputServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`.). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
+   * Erstellen Sie ein `OutputServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Sie brauchen das Attribut `lc_version` nicht zu verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
@@ -1101,7 +1101,7 @@ Erstellen Sie ein PDF-Dokument basierend auf Fragmenten mithilfe der Output Serv
    >
    >Wiederholen Sie diese Schritte für das Objekt `AssemblerServiceClient`.
 
-1. Verwenden Sie den Assembler-Service, um das Design des Formulars zu generieren.
+1. Verwenden Sie den Assembler-Dienst, um das Design des Formulars zu generieren.
 
    Rufen Sie die Methode `invokeDDX` des `AssemblerServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
@@ -1109,7 +1109,7 @@ Erstellen Sie ein PDF-Dokument basierend auf Fragmenten mithilfe der Output Serv
    * Das `MyMapOf_xsd_string_To_xsd_anyType`-Objekt, das die erforderlichen Dateien enthält
    * Ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen angibt
 
-   Die Methode `invokeDDX` gibt ein `AssemblerResult`-Objekt zurück, das die Ergebnisse des Vorgangs sowie alle aufgetretenen Ausnahmen enthält. Um das neu erstellte XDP-Dokument abzurufen, führen Sie die folgenden Aktionen aus:
+   Die `invokeDDX`-Methode gibt ein `AssemblerResult`-Objekt an, das die Ergebnisse des Auftrags sowie alle aufgetretenen Ausnahmen enthält. Um das neu erstellte XDP-Dokument abzurufen, führen Sie die folgenden Aktionen aus:
 
    * Greifen Sie auf das Feld `documents` des `AssemblerResult`-Objekts zu, welches ein `Map`-Objekt ist, das die resultierenden PDF-Dokumente enthält.
    * Durchlaufen Sie das `Map`-Objekt, um den zusammengesetzten Formularentwurf abzurufen. Wandeln Sie den `value` des Array-Elements in einen `BLOB` um. Übergeben Sie die Instanz dieses `BLOB`s an den Ausgabe-Service.
@@ -1118,13 +1118,13 @@ Erstellen Sie ein PDF-Dokument basierend auf Fragmenten mithilfe der Output Serv
 
    Rufen Sie die Methode `generatePDFOutput2` des `OutputServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
-   * Einen `TransformationFormat`-Aufzählungswert. Um ein PDF-Dokument zu generieren, geben Sie `TransformationFormat.PDF` an.
+   * Einen `TransformationFormat`-Aufzählungswert. Um ein PDF-Dokument zu erzeugen, geben Sie `TransformationFormat.PDF` an.
    * Eine Zeichenfolge, die den Inhaltsstamm angibt, in dem sich die zusätzlichen Ressourcen (z. B. Bilder) befinden.
-   * Ein `BLOB`-Objekt, welches das Formulardesign darstellt (verwenden Sie die `BLOB`-Instanz, die vom Assembler-Service zurückgegeben wird).
+   * Ein `BLOB`-Objekt, welches das Formulardesign darstellt (verwenden Sie die `BLOB`-Instanz, die vom Assembler-Dienst zurückgegeben wird).
    * Ein `PDFOutputOptionsSpec`-Objekt, das PDF-Laufzeitoptionen enthält.
    * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen zum Rendern enthält.
-   * Das `BLOB`-Objekt, das die XML-Datenquelle mit den Daten enthält, die mit dem Formulardesign zusammengeführt werden sollen.
-   * Ein Ausgabe `BLOB`-Objekt, das die Methode `generatePDFOutput2` mit Werten füllt. Die Methode `generatePDFOutput2` befüllt dieses Objekt mit generierten Metadaten, die das Dokument beschreiben. (Dieser Parameterwert ist nur für den Webservice-Aufruf erforderlich).
+   * Das `BLOB`-Objekt, das die XML-Datenquelle mit den Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
+   * Ein Ausgabe `BLOB`-Objekt, das die Methode `generatePDFOutput2` mit Werten füllt. Die `generatePDFOutput2`-Methode füllt dieses Objekt mit generierten Metadaten, die das Dokument beschreiben. (Dieser Parameterwert ist nur für den Webservice-Aufruf erforderlich).
    * Ein Ausgabe-`OutputResult`-Objekt, das die Ergebnisse des Vorgangs enthält. (Dieser Parameterwert ist nur für den Webservice-Aufruf erforderlich).
 
    Die Methode `generatePDFOutput2` gibt ein `BLOB`-Objekt zurück, das das nicht-interaktive PDF-Formular enthält.
@@ -1133,7 +1133,7 @@ Erstellen Sie ein PDF-Dokument basierend auf Fragmenten mithilfe der Output Serv
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen. Übergeben Sie einen Kennzeichenfolgewert, der den Dateispeicherort des interaktiven PDF-Dokuments und den Modus angibt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das von der Methode `generatePDFOutput2` abgerufen wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
@@ -1186,9 +1186,9 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 
 Wenn AEM Forms auf einem unterstützten J2EE-Anwendungs-Server bereitgestellt wird, der nicht JBOSS ist, müssen Sie „adobe-utilities.jar“ und „jbossall-client.jar“ durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungs-Server sind, auf dem AEM Forms bereitgestellt wird. (Siehe [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
 
-**Erstellen eines Client-Objekts für die Ausgabe**
+**Erstellen eines Output-Client-Objekts**
 
-Bevor Sie einen Output-Service-Vorgang programmgesteuert ausführen können, müssen Sie ein Client-Objekt für den Output-Service erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `OutputClient`-Objekt. Wenn Sie die Output-Webservice-API verwenden, erstellen Sie ein `OutputServiceService`-Objekt.
+Bevor Sie einen Ausgabe-Service-Vorgang programmgesteuert durchführen können, müssen Sie ein Client-Objekt für den Ausgabe-Service erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `OutputClient`-Objekt. Wenn Sie die Ausgabe-Web-Service-API verwenden, erstellen Sie ein `OutputServiceService`-Objekt.
 
 **Referenzieren einer XML-Datenquelle**
 
@@ -1250,7 +1250,7 @@ So drucken Sie mit der Ausgabe-API (Java) in eine Datei:
 
    Drucken Sie in eine Datei, indem Sie die Methode `generatePrintedOutput` des `OutputClient`-Objekts verwenden und die folgenden Werte übergeben:
 
-   * Ein `PrintFormat`-Enumerationswert, der das zu erstellende Druckstream-Format angibt. Um beispielsweise einen PostScript-Druckstream zu erstellen, übergeben Sie `PrintFormat.PostScript`.
+   * Ein `PrintFormat`-Aufzählungswert, der das zu erstellende Druckstream-Format angibt. Um beispielsweise einen PostScript-Druckstream zu erstellen, übergeben Sie `PrintFormat.PostScript`.
    * Ein string-Wert, der den Namen des Formularentwurfs angibt.
    * Eine Zeichenfolge, die den Speicherort zugehöriger Begleitdateien wie Bilddateien angibt.
    * Eine Zeichenfolge, die den Speicherort der zu verwendenden XDC-Datei angibt (Sie können `null` übergeben, wenn Sie die XDC-Datei mit Hilfe des `PrintedOutputOptionsSpec`-Objekts festgelegt haben).
@@ -1267,7 +1267,7 @@ So drucken Sie mit der Ausgabe-API (Java) in eine Datei:
 
    * Erstellen Sie ein Objekt vom Typ `com.adobe.idp.Document`, das den Status der Methode `generatePrintedOutput` angibt, indem Sie die Methode `getStatusDoc` des `OutputResult`-Objekts aufrufen (das `OutputResult`-Objekt wurde von der Methode `generatePrintedOutput` zurückgegeben).
    * Erstellen Sie ein `java.io.File`-Objekt, das die Ergebnisse des Vorgangs enthält. Stellen Sie sicher, dass die Dateierweiterung XML ist.
-   * Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um den Inhalt des `com.adobe.idp.Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt verwenden, das von der Methode `getStatusDoc` zurückgegeben wird).
+   * Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um den Inhalt des `com.adobe.idp.Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt verwenden, das von der Methode `getStatusDoc` zurückgegeben wurde).
 
 **Siehe auch**
 
@@ -1293,8 +1293,8 @@ Drucken Sie mit der Output API (Web-Service) in eine Datei:
 
 1. Erstellen Sie ein Output-Client-Objekt.
 
-   * Erstellen Sie mithilfe des Standardkonstruktors ein `OutputServiceClient`-Objekt.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `OutputServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`.). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
+   * Erstellen Sie ein `OutputServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Sie brauchen das Attribut `lc_version` nicht zu verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
@@ -1302,13 +1302,13 @@ Drucken Sie mit der Output API (Web-Service) in eine Datei:
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Referenzieren Sie eine XML-Datenquelle.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern von Formulardaten verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und eine Zeichenfolge übergeben, die den Speicherort der XML-Datei mit den Formulardaten angibt.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
    * Befüllen Sie das `BLOB`-Objekt mit dem Inhalt des Byte-Arrays durch Zuweisen der Eigenschaft `binaryData`.
 
@@ -1322,22 +1322,22 @@ Drucken Sie mit der Output API (Web-Service) in eine Datei:
 
    Drucken Sie in eine Datei, indem Sie die Methode `generatePrintedOutput` des `OutputServiceService`-Objekts verwenden und die folgenden Werte übergeben:
 
-   * Ein `PrintFormat`-Enumerationswert, der das zu erstellende Druckstream-Format angibt. Um beispielsweise einen PostScript-Druckstream zu erstellen, übergeben Sie `PrintFormat.PostScript`.
+   * Ein `PrintFormat`-Aufzählungswert, der das zu erstellende Druckstream-Format angibt. Um beispielsweise einen PostScript-Druckstream zu erstellen, übergeben Sie `PrintFormat.PostScript`.
    * Ein string-Wert, der den Namen des Formularentwurfs angibt.
    * Eine Zeichenfolge, die den Speicherort zugehöriger Begleitdateien wie Bilddateien angibt.
-   * Ein Zeichenfolgenwert, der den Speicherort der zu verwendenden XDC-Datei angibt (Sie können `null` übergeben, wenn Sie die XDC-Datei angegeben haben, die mithilfe des `PrintedOutputOptionsSpec`-Objekts verwendet werden soll).
+   * Eine Zeichenfolge, die den Speicherort der zu verwendenden XDC-Datei angibt (Sie können `null` übergeben, wenn Sie die XDC-Datei mit Hilfe des `PrintedOutputOptionsSpec`-Objekts festgelegt haben).
    * Das `PrintedOutputOptionsSpec`-Objekt, das zum Drucken in eine Datei erforderliche Drucklaufzeitoptionen enthält.
-   * Das `BLOB`-Objekt, das die XML-Datenquelle mit den Formulardaten enthält.
-   * Ein `BLOB`-Objekt, das von der `generatePDFOutput`-Methode gefüllt wird. Die Methode `generatePDFOutput` füllt dieses Objekt mit generierten Metadaten, die das Dokument beschreiben. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
-   * Ein `BLOB`-Objekt, das von der Methode `generatePDFOutput` aufgefüllt wird. Die Methode `generatePDFOutput` füllt dieses Objekt mit Ergebnisdaten. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
+   * Das `BLOB`-Objekt, das die XML-Datenquelle enthält, die Formulardaten enthält.
+   * Ein `BLOB`-Objekt, das von der `generatePDFOutput`-Methode gefüllt wird. Die `generatePDFOutput`-Methode füllt dieses Objekt mit generierten Metadaten, die das Dokument beschreiben. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
+   * Ein `BLOB`-Objekt, das von der `generatePDFOutput`-Methode gefüllt wird. Die Methode `generatePDFOutput` füllt dieses Objekt mit Ergebnisdaten. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
    * Ein `OutputResult`-Objekt, das die Ergebnisse des Vorgangs enthält. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
 
 1. Rufen Sie die Ergebnisse des Vorgangs ab.
 
-   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der einen XML-Dateispeicherort mit den Ergebnisdaten darstellt. Stellen Sie sicher, dass die Dateierweiterung XML ist.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `generatePDFOutput` des `OutputServiceService`-Objekts (der achte Parameter) mit Ergebnisdaten gefüllt wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Speicherort einer XML-Datei mit Ergebnisdaten darstellt. Stellen Sie sicher, dass die Dateierweiterung XML ist.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das durch die Methode `generatePDFOutput` des `OutputServiceService`-Objekts mit Ergebnisdaten (dem achten Parameter) gefüllt wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in die XML-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in die XML-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts verwenden und das Byte-Array übergeben.
 
 **Siehe auch**
 
@@ -1377,7 +1377,7 @@ Um einen Druck-Stream an einen Netzwerkdrucker zu senden, führen Sie die folgen
 1. Rufen Sie ein zu druckendes Dokument ab.
 1. Senden Sie das Dokument an einen Netzwerkdrucker.
 
-**Einschließen von Projektdateien**
+**Einbinden von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -1389,11 +1389,11 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 
-Wenn AEM Forms auf einem unterstützten J2EE-Anwendungs-Server bereitgestellt wird, der nicht JBOSS ist, müssen Sie „adobe-utilities.jar“ und „jbossall-client.jar“ durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungs-Server sind, auf dem AEM Forms bereitgestellt wird. 
+Wenn AEM Forms auf einem unterstützten J2EE-Anwendungs-Server bereitgestellt wird, der nicht JBOSS ist, müssen Sie „adobe-utilities.jar“ und „jbossall-client.jar“ durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungs-Server sind, auf dem AEM Forms bereitgestellt wird.
 
-**Erstellen eines Client-Objekts für die Ausgabe**
+**Erstellen eines Output-Client-Objekts**
 
-Bevor Sie einen Ausgabe-Service-Vorgang programmgesteuert durchführen können, müssen Sie ein Client-Objekt für den Ausgabe-Service erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `OutputClient`-Objekt. Wenn Sie die Output-Webservice-API verwenden, erstellen Sie ein `OutputServiceClient`-Objekt.
+Bevor Sie einen Ausgabe-Service-Vorgang programmgesteuert durchführen können, müssen Sie ein Client-Objekt für den Ausgabe-Service erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `OutputClient`-Objekt. Wenn Sie die Ausgabe-Web-Service-API verwenden, erstellen Sie ein `OutputServiceClient`-Objekt.
 
 **Referenzieren einer XML-Datenquelle**
 
@@ -1511,7 +1511,7 @@ Nachdem Sie ein zu druckendes Dokument abgerufen haben, können Sie den Ausgabes
 
 >[!NOTE]
 >
->Wenn Sie einen Netzwerkdrucker verwenden und der Zugriffsmechanismus SharedPrinter ist, müssen Sie den vollständigen Netzwerkpfad des Druckers angeben. Senden Sie einen Druck-Stream mithilfe der Java-API an einen Netzwerkdrucker.
+>Wenn Sie einen Netzwerkdrucker verwenden und der Zugriffsmechanismus SharedPrinter ist, müssen Sie den vollständigen Netzwerkpfad des Druckers angeben.Senden eines Druck-Streams an einen Netzwerkdrucker mithilfe der Java-API
 
 Senden Sie mithilfe der Ausgabe API (Java) einen Druck-Stream an einen Netzwerkdrucker:
 
@@ -1541,7 +1541,7 @@ Senden Sie mithilfe der Ausgabe API (Java) einen Druck-Stream an einen Netzwerkd
 
    * Rufen Sie ein zu druckendes Dokument ab, indem Sie die Methode `generatePrintedOutput` des `OutputClient`-Objekts aufrufen und die folgenden Werte übergeben:
 
-      * Ein `PrintFormat`-Auflistungswert, der den Druck-Stream angibt. Um beispielsweise einen PostScript-Druck-Stream zu erstellen, übergeben Sie `PrintFormat.PostScript`.
+      * Ein `PrintFormat`-Aufzählungswert, der den Druck-Stream angibt. Um beispielsweise einen PostScript-Druckstream zu erstellen, übergeben Sie `PrintFormat.PostScript`.
       * Ein string-Wert, der den Namen des Formularentwurfs angibt.
       * Ein Zeichenfolgenwert, der den Speicherort zugehöriger Begleitdateien (z. B. Grafikdateien) angibt.
       * Ein Zeichenfolgenwert, der den Speicherort der zu verwendenden XDC-Datei angibt.
@@ -1557,7 +1557,7 @@ Senden Sie mithilfe der Ausgabe API (Java) einen Druck-Stream an einen Netzwerkd
    Senden Sie den Druck-Stream an einen Netzwerkdrucker, indem Sie die Methode `sendToPrinter` des `OutputClient`-Objekts aufrufen und die folgenden Werte übergeben:
 
    * Ein `com.adobe.idp.Document`-Objekt, das den an den Drucker zu sendenden Druck-Stream darstellt.
-   * Ein `PrinterProtocol`-Auflistungswert, der das zu verwendende Druckerprotokoll angibt. Um beispielsweise das SharedPrinter-Protokoll anzugeben, übergeben Sie `PrinterProtocol.SharedPrinter`.
+   * Ein `PrinterProtocol`-Aufzählungswert, der das zu verwendende Druckerprotokoll angibt. Um beispielsweise das SharedPrinter-Protokoll anzugeben, übergeben Sie `PrinterProtocol.SharedPrinter`.
    * Ein Zeichenfolgenwert, der den Namen des Druck-Servers angibt. Wenn beispielsweise der Name des Druck-Servers PrintSever1 lautet, übergeben Sie `\\\PrintSever1`.
    * Ein Zeichenfolgenwert, der den Namen des Druckers angibt. Wenn beispielsweise der Name des Druckers Printer1 lautet, übergeben Sie `\\\PrintSever1\Printer1`.
 
@@ -1579,8 +1579,8 @@ So senden Sie einen Druck-Stream an einen Netzwerkdrucker, indem Sie die Ausgabe
 
 1. Erstellen Sie ein Output-Client-Objekt.
 
-   * Erstellen Sie mithilfe des Standardkonstruktors ein `OutputServiceClient`-Objekt.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `OutputServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`.). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
+   * Erstellen Sie ein `OutputServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Sie brauchen das Attribut `lc_version` nicht zu verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
@@ -1588,14 +1588,14 @@ So senden Sie einen Druck-Stream an einen Netzwerkdrucker, indem Sie die Ausgabe
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Referenzieren Sie eine XML-Datenquelle.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern von Formulardaten verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort der XML-Datei angibt, die Formulardaten enthält.
    * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Ermitteln Sie die Länge des Byte-Arrays, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
-   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Festlegen von Laufzeitoptionen für das Drucken.
@@ -1610,14 +1610,14 @@ So senden Sie einen Druck-Stream an einen Netzwerkdrucker, indem Sie die Ausgabe
 
    * Rufen Sie ein zu druckendes Dokument ab, indem Sie die Methode `generatePrintedOutput` des `OutputServiceService`-Objekts aufrufen und die folgenden Werte übergeben:
 
-      * Ein `PrintFormat`-Auflistungswert, der den Druck-Stream angibt. Um beispielsweise einen PostScript-Druck-Stream zu erstellen, übergeben Sie `PrintFormat.PostScript`.
+      * Ein `PrintFormat`-Aufzählungswert, der den Druck-Stream angibt. Um beispielsweise einen PostScript-Druckstream zu erstellen, übergeben Sie `PrintFormat.PostScript`.
       * Ein string-Wert, der den Namen des Formularentwurfs angibt.
       * Ein Zeichenfolgenwert, der den Speicherort zugehöriger Begleitdateien (z. B. Grafikdateien) angibt.
       * Ein Zeichenfolgenwert, der den Speicherort der zu verwendenden XDC-Datei angibt.
       * Das `PrintedOutputOptionsSpec`-Objekt, das Laufzeitoptionen für das Drucken enthält, die beim Senden eines Druck-Streams an einen Netzwerkdrucker verwendet werden.
       * Das `BLOB`-Objekt, das die XML-Datenquelle enthält, die Formulardaten enthält.
-      * Ein `BLOB`-Objekt, das von der `generatePrintedOutput`-Methode gefüllt wird. Die Methode `generatePrintedOutput` füllt dieses Objekt mit generierten Metadaten, die das Dokument beschreiben. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
-      * Ein `BLOB`-Objekt, das von der Methode `generatePrintedOutput` aufgefüllt wird. Die Methode `generatePrintedOutput` füllt dieses Objekt mit Ergebnisdaten. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
+      * Ein `BLOB`-Objekt, das von der `generatePrintedOutput`-Methode gefüllt wird. Die `generatePrintedOutput`-Methode füllt dieses Objekt mit generierten Metadaten, die das Dokument beschreiben. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
+      * Ein `BLOB`-Objekt, das von der `generatePrintedOutput`-Methode gefüllt wird. Die Methode `generatePrintedOutput` füllt dieses Objekt mit Ergebnisdaten. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
       * Ein `OutputResult`-Objekt, das die Ergebnisse des Vorgangs enthält. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
 
    * Erstellen Sie ein Objekt vom Typ `BLOB`, das an den Drucker gesendet werden soll, indem Sie den Wert der Methode `generatedDoc` des `OutputResult`-Objekts abrufen. Diese Methode gibt ein `BLOB`-Objekt zurück, das PostScript-Daten enthält, die von der Methode `generatePrintedOutput` zurückgegeben werden.
@@ -1627,7 +1627,7 @@ So senden Sie einen Druck-Stream an einen Netzwerkdrucker, indem Sie die Ausgabe
    Senden Sie den Druck-Stream an einen Netzwerkdrucker, indem Sie die Methode `sendToPrinter` des `OutputClient`-Objekts aufrufen und die folgenden Werte übergeben:
 
    * Ein `BLOB`-Objekt, das den an den Drucker zu sendenden Druck-Stream darstellt.
-   * Ein `PrinterProtocol`-Auflistungswert, der das zu verwendende Druckerprotokoll angibt. Um beispielsweise das SharedPrinter-Protokoll anzugeben, übergeben Sie `PrinterProtocol.SharedPrinter`.
+   * Ein `PrinterProtocol`-Aufzählungswert, der das zu verwendende Druckerprotokoll angibt. Um beispielsweise das SharedPrinter-Protokoll anzugeben, übergeben Sie `PrinterProtocol.SharedPrinter`.
    * Ein `bool` Wert, der angibt, ob der vorherige Parameterwert verwendet werden soll. Übergeben Sie den Wert `true`. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
    * Ein Zeichenfolgenwert, der den Namen des Druck-Servers angibt. Wenn beispielsweise der Name des Druckservers PrintSever1 lautet, übergeben Sie `\\\PrintSever1`.
    * Ein Zeichenfolgenwert, der den Namen des Druckers angibt. Wenn beispielsweise der Name des Druckers Printer1 lautet, übergeben Sie `\\\PrintSever1\Printer1`.
@@ -1638,15 +1638,15 @@ So senden Sie einen Druck-Stream an einen Netzwerkdrucker, indem Sie die Ausgabe
 
 ## Erstellen mehrerer Ausgabedateien {#creating-multiple-output-files}
 
-Der Ausgabe-Service kann für jeden Datensatz in einer XML-Datenquelle oder in einer Datei, die alle Datensätze enthält, separate Dokumente erstellen (diese Funktion ist die Standardfunktion). Angenommen, zehn Datensätze befinden sich in einer XML-Datenquelle und Sie weisen den Ausgabe-Service an, mithilfe der Ausgabe-Service-API für jeden Datensatz separate PDF-Dokumente (oder andere Ausgabetypen) zu erstellen. Dann erzeugt der Ausgabe-Service zehn PDF-Dokumente. (Anstatt Dokumente zu erstellen, können Sie auch mehrere Druck-Streams an einen Drucker senden.)
+Der Ausgabe-Service kann für jeden Eintrag in einer XML-Datenquelle oder in einer Datei, die alle Einträge enthält, separate Dokumente erstellen (diese Funktion ist die Standardfunktion). Angenommen, zehn Einträge befinden sich in einer XML-Datenquelle und Sie weisen den Ausgabe-Service an, mithilfe der Ausgabe-Service-API für jeden Eintrag separate PDF-Dokumente (oder andere Ausgabetypen) zu erstellen. Dann erzeugt der Ausgabe-Service zehn PDF-Dokumente. (Anstatt Dokumente zu erstellen, können Sie auch mehrere Druck-Streams an einen Drucker senden.)
 
-Die folgende Abbildung zeigt auch, wie der Ausgabe-Service eine XML-Datendatei verarbeitet, die mehrere Datensätze enthält. Nehmen wir jedoch an, dass Sie den Ausgabe-Service anweisen, ein einziges PDF-Dokument zu erstellen, das alle Dateneinträge enthält. In diesem Fall erzeugt der Ausgabe-Service ein Dokument, das alle Einträge enthält.
+Die folgende Abbildung zeigt auch, wie der Ausgabe-Service eine XML-Datendatei verarbeitet, die mehrere Einträge enthält. Nehmen wir jedoch an, dass Sie den Ausgabe-Service anweisen, ein einziges PDF-Dokument zu erstellen, das alle Dateneinträge enthält. In diesem Fall erzeugt der Ausgabe-Service ein Dokument, das alle Einträge enthält.
 
-Die folgende Abbildung zeigt, wie der Ausgabe-Service eine XML-Datendatei verarbeitet, die mehrere Datensätze enthält. Angenommen, Sie weisen den Ausgabe-Service an, für jeden Datensatz ein eigenes PDF-Dokument zu erstellen. In diesem Fall erzeugt der Ausgabe-Service für jeden Datensatz ein separates PDF-Dokument.
+Die folgende Abbildung zeigt, wie der Ausgabe-Service eine XML-Datendatei verarbeitet, die mehrere Einträge enthält. Angenommen, Sie weisen den Ausgabe-Service an, für jeden Dateneintrag ein eigenes PDF-Dokument zu erstellen. In diesem Fall erzeugt der Ausgabe-Service für jeden Dateneintrag ein separates PDF-Dokument.
 
 ![cm_outputbatchmany](assets/cm_outputbatchmany.png)
 
-Die folgenden XML-Daten zeigen ein Beispiel einer Datendatei, die drei Datensätze enthält.
+Die folgenden XML-Daten zeigen ein Beispiel einer Datendatei, die drei Einträge enthält.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8"?>
@@ -1699,7 +1699,7 @@ Die folgenden XML-Daten zeigen ein Beispiel einer Datendatei, die drei Datensät
  </batch>
 ```
 
-Beachten Sie, dass das XML-Element, das jeden Datensatz startet und beendet, `LoanRecord` ist. Dieses XML-Element wird durch die Anwendungslogik referenziert, die mehrere Dateien erzeugt.
+Beachten Sie, dass das XML-Element, das jeden Eintrag startet und beendet, `LoanRecord` ist. Dieses XML-Element wird durch die Anwendungslogik referenziert, die mehrere Dateien erzeugt.
 
 >[!NOTE]
 >
@@ -1729,15 +1729,15 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 
-Wenn AEM Forms auf einem unterstützten J2EE-Anwendungs-Server bereitgestellt wird, der nicht JBOSS ist, müssen Sie „adobe-utilities.jar“ und „jbossall-client.jar“ durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungs-Server sind, auf dem AEM Forms bereitgestellt wird. 
+Wenn AEM Forms auf einem unterstützten J2EE-Anwendungs-Server bereitgestellt wird, der nicht JBOSS ist, müssen Sie „adobe-utilities.jar“ und „jbossall-client.jar“ durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungs-Server sind, auf dem AEM Forms bereitgestellt wird.
 
-**Erstellen eines Output-Client-Objekts**
+**Erstellen eines Client-Objekts für die Ausgabe**
 
-Bevor Sie einen Output-Service-Vorgang programmgesteuert ausführen können, müssen Sie ein Client-Objekt für den Output-Service erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `OutputClient`-Objekt. Wenn Sie die Output-Webservice-API verwenden, erstellen Sie ein `OutputServiceService`-Objekt.
+Bevor Sie einen Ausgabe-Service-Vorgang programmgesteuert durchführen können, müssen Sie ein Client-Objekt für den Ausgabe-Service erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `OutputClient`-Objekt. Wenn Sie die Ausgabe-Web-Service-API verwenden, erstellen Sie ein `OutputServiceService`-Objekt.
 
 **Referenzieren einer XML-Datenquelle**
 
-Referenzieren Sie eine XML-Datenquelle, die mehrere Datensätze enthält. Ein XML-Element muss verwendet werden, um die Datensätze zu trennen. In der Beispiel-XML-Datenquelle, die oben in diesem Abschnitt gezeigt wird, heißt beispielsweise das XML-Element, das Datensätze trennt, `LoanRecord`.
+Referenzieren Sie eine XML-Datenquelle, die mehrere Einträge enthält. Ein XML-Element muss verwendet werden, um die Dateneinträge zu trennen. In der Beispiel-XML-Datenquelle, die oben in diesem Abschnitt gezeigt wird, heißt beispielsweise das XML-Element, das Dateneinträge trennt, `LoanRecord`.
 
 Für jedes Formularfeld, das mit Daten gefüllt werden soll, muss ein XML-Element vorhanden sein. Der Name des XML-Elements muss mit dem Feldnamen übereinstimmen. Ein XML-Element wird ignoriert, wenn es keinem Formularfeld entspricht oder wenn der XML-Elementname nicht mit dem Feldnamen übereinstimmt. Wenn alle XML-Elemente angegeben sind, muss die Reihenfolge, in der die XML-Elemente angezeigt werden, nicht übereinstimmen.
 
@@ -1745,21 +1745,21 @@ Für jedes Formularfeld, das mit Daten gefüllt werden soll, muss ein XML-Elemen
 
 Legen Sie die folgenden Laufzeitoptionen fest, damit der Ausgabe-Service erfolgreich mehrere Dateien erstellen kann, die auf einer XML-Datenquelle basieren:
 
-* **Viele Dateien**: Gibt an, ob der Ausgabe-Service ein einzelnes Dokument oder mehrere Dokumente erstellt. Sie können „true“ oder „false“ angeben. Um ein separates Dokument für jeden Datensatz in der XML-Datenquelle zu erstellen, geben Sie „true“ an.
+* **Viele Dateien**: Gibt an, ob der Ausgabe-Service ein einzelnes Dokument oder mehrere Dokumente erstellt. Sie können „true“ oder „false“ angeben. Um ein separates Dokument für jeden Dateneintrag in der XML-Datenquelle zu erstellen, geben Sie „true“ an.
 * **Datei-URI**: Gibt den Speicherort der Dateien an, die der Ausgabe-Service erzeugt. Angenommen, Sie geben C:\\Adobe\forms\Loan.pdf an. In diesem Fall erstellt der Ausgabe-Service eine Datei mit dem Namen „Loan.pdf“ und legt diese Datei im Ordner „C:\\Adobe\forms folder“ ab. Wenn mehrere Dateien vorliegen, lauten die Dateinamen „Loan0001.pdf“, „Loan0002.pdf“, „Loan0003.pdf“ usw. Wenn Sie einen Dateispeicherort angeben, werden die Dateien auf dem Server und nicht auf dem Client-Computer abgelegt.
-* **Datensatzname**: Gibt den Namen des XML-Elements in der Datenquelle an, das die Datensätze trennt. In der Beispiel-XML-Datenquelle, die oben in diesem Abschnitt gezeigt wird, hat beispielsweise das XML-Element, das Datensätze trennt, den Namen `LoanRecord`. (Anstatt als Laufzeitoption den Datensatznamen festzulegen, können Sie auch die Datensatzebene festlegen, indem Sie ihr einen numerischen Wert zuweisen, der die Elementebene angibt, welche Datensätze enthält. Sie können jedoch nur entweder den Datensatznamen oder die Datensatzebene festlegen. Sie können nicht beide Werte festlegen.)
+* **Name des Eintrags**: Gibt den Namen des XML-Elements in der Datenquelle an, das die Dateneinträge trennt. In der Beispiel-XML-Datenquelle, die oben in diesem Abschnitt gezeigt wird, hat beispielsweise das XML-Element, das Dateneinträge trennt, den Namen `LoanRecord`. (Anstatt als Laufzeitoption den Namen des Eintrags festzulegen, können Sie auch die Eintragsebene festlegen, indem Sie ihr einen numerischen Wert zuweisen, der die Elementebene angibt, welche Dateneinträge enthält. Sie können jedoch nur entweder den Namen des Eintrags oder die Eintragsebene festlegen. Sie können nicht beide Werte festlegen.)
 
 **Festlegen von Laufzeitoptionen für das Rendern**
 
 Sie können beim Erstellen mehrerer Dateien Laufzeitoptionen für das Rendern festlegen. Obwohl diese Optionen nicht erforderlich sind (im Gegensatz zu erforderlichen Laufzeitoptionen für die Ausgabe), können Sie damit Aufgaben wie die Verbesserung der Leistung des Ausgabe-Services ausführen. Beispielsweise können Sie die Leistung verbessern, indem Sie den Formularentwurf zwischenspeichern, den der Ausgabe-Service verwendet.
 
-Wenn der Ausgabe-Service Batch-Datensätze verarbeitet, liest er inkrementell Daten, die mehrere Datensätze enthalten. Das heißt, der Ausgabe-Service liest die Daten in den Speicher ein und gibt sie im Laufe der Verarbeitung des Datensatz-Batches wieder frei. Der Ausgabe-Service lädt Daten inkrementell, wenn eine der zwei Laufzeitoptionen festgelegt ist. Wenn Sie für die Laufzeitoption den Datensatznamen festlegen, liest der Ausgabe-Service die Daten inkrementell. Wenn Sie für die Laufzeitoption die Datensatzebene auf 2 oder höher setzen, liest der Ausgabe-Service die Daten ebenfalls auf inkrementelle Weise.
+Wenn der Ausgabe-Service Batch-Einträge verarbeitet, liest er inkrementell Daten, die mehrere Einträge enthalten. Das heißt, der Ausgabe-Service liest die Daten in den Speicher ein und gibt sie im Laufe der Verarbeitung des Eintrags-Batches wieder frei. Der Ausgabe-Service lädt Daten inkrementell, wenn eine der zwei Laufzeitoptionen festgelegt ist. Wenn Sie für die Laufzeitoption den Namen des Eintrags festlegen, liest der Ausgabe-Service die Daten inkrementell. Wenn Sie für die Laufzeitoption die Eintragsebene auf 2 oder höher setzen, liest der Ausgabe-Service die Daten ebenfalls auf inkrementelle Weise.
 
 Sie können steuern, ob der Ausgabe-Service das Laden inkrementell durchführen soll, indem Sie `PDFOutputOptionsSpec` oder die Methode `setLazyLoading` des `PrintedOutputOptionSpec`-Objekts verwenden. Sie können den Wert `false` an diese Methode übergeben, um das inkrementelle Laden zu deaktivieren.
 
 **Erzeugen mehrerer PDF-Dateien**
 
-Nachdem Sie eine gültige XML-Datenquelle referenziert haben, die mehrere Datensätze enthält, und Laufzeitoptionen festgelegt haben, können Sie den Ausgabe-Service aufrufen, wodurch mehrere Dateien erzeugt werden. Bei der Erzeugung mehrerer Einträge gibt die Methode `getGeneratedDoc` des `OutputResult`-Objekts `null` zurück.
+Nachdem Sie eine gültige XML-Datenquelle referenziert haben, die mehrere Einträge enthält, und Laufzeitoptionen festgelegt haben, können Sie den Ausgabe-Service aufrufen, wodurch mehrere Dateien erzeugt werden. Bei der Erzeugung mehrerer Einträge gibt die Methode `getGeneratedDoc` des `OutputResult`-Objekts `null` zurück.
 
 **Abrufen der Ergebnisse des Vorgangs**
 
@@ -1817,15 +1817,15 @@ Erstellen Sie mehrere PDF-Dateien mithilfe der Ausgabe-API (Java):
 
 1. Referenzieren einer XML-Datenquelle
 
-   * Erstellen Sie ein `java.io.FileInputStream`-Objekt, das die XML-Datenquelle mit mehreren Datensätzen darstellt, indem es seinen Konstruktor verwendet und eine Zeichenfolge mit dem Speicherort der XML-Datei übergibt.
+   * Erstellen Sie ein `java.io.FileInputStream`-Objekt, das die XML-Datenquelle mit mehreren Einträgen darstellt, indem es seinen Konstruktor verwendet und eine Zeichenfolge mit dem Speicherort der XML-Datei übergibt.
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie seinen Konstruktor verwenden und das `java.io.FileInputStream`-Objekt übergeben.
 
 1. Festlegen von PDF-Laufzeitoptionen
 
    * Erstellen Sie ein Objekt `PDFOutputOptionsSpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie die Option „Viele Dateien“ fest, indem Sie die Methode `setGenerateManyFiles` des `PDFOutputOptionsSpec`-Objekts aufrufen. Übergeben Sie beispielsweise den Wert `true`, um den Ausgabe-Service anzuweisen, für jeden Datensatz in der XML-Datenquelle eine separate PDF-Datei zu erstellen. (Wenn Sie `false` übergeben, generiert der Output-Dienst ein einzelnes PDF-Dokument, das alle Datensätze enthält).
-   * Legen Sie die Datei-URI-Option fest, indem Sie die Methode `setFileUri` des `PDFOutputOptionsSpec`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Speicherort der Dateien angibt, die der Ausgabe-Service generiert. Die Option „Datei-URI“ ist bezieht sich auf den J2EE-Anwendungs-Server, auf dem AEM Forms gehostet wird, nicht zum Client-Computer. 
-   * Legen Sie die Option „Name des Eintrags“ fest, indem Sie die Methode `setRecordName` des `OutputOptionsSpec`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des XML-Elements in der Datenquelle angibt, das die Dateneinträge trennt. (Ein Beispiel für eine XML-Datenquelle finden Sie weiter oben in diesem Abschnitt. Der Name des XML-Elements, das die Datensätze trennt, ist LoanRecord).
+   * Legen Sie die Option „Viele Dateien“ fest, indem Sie die Methode `setGenerateManyFiles` des `PDFOutputOptionsSpec`-Objekts aufrufen. Übergeben Sie beispielsweise den Wert `true`, um den Ausgabe-Service anzuweisen, für jeden Eintrag in der XML-Datenquelle eine separate PDF-Datei zu erstellen. (Wenn Sie `false` übergeben, generiert der Output-Dienst ein einzelnes PDF-Dokument, das alle Einträge enthält).
+   * Legen Sie die Datei-URI-Option fest, indem Sie die Methode `setFileUri` des `PDFOutputOptionsSpec`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Speicherort der Dateien angibt, die der Ausgabe-Service generiert. Die Option „Datei-URI“ ist bezieht sich auf den J2EE-Anwendungs-Server, auf dem AEM Forms gehostet wird, nicht zum Client-Computer.
+   * Legen Sie die Option „Name des Eintrags“ fest, indem Sie die Methode `setRecordName` des `OutputOptionsSpec`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des XML-Elements in der Datenquelle angibt, das die Dateneinträge trennt. (Ein Beispiel für eine XML-Datenquelle finden Sie weiter oben in diesem Abschnitt. Der Name des XML-Elements, das die Dateneinträge trennt, ist LoanRecord).
 
 1. Einstellen der Laufzeitoptionen für das Rendern
 
@@ -1836,14 +1836,14 @@ Erstellen Sie mehrere PDF-Dateien mithilfe der Ausgabe-API (Java):
 
    Generieren Sie mehrere PDF-Dateien, indem Sie die Methode `generatePDFOutput` des `OutputClient`-Objekts aufrufen und die folgenden Werte übergeben:
 
-   * Einen `TransformationFormat` Enum-Wert. Um ein PDF-Dokument zu generieren, geben Sie `TransformationFormat.PDF` an.
+   * Einen `TransformationFormat` Aufzählungswert. Um ein PDF-Dokument zu erzeugen, geben Sie `TransformationFormat.PDF` an.
    * Ein string-Wert, der den Namen des Formularentwurfs angibt.
    * Ein Zeichenfolgenwert, der den Inhaltsstamm angibt, in dem sich der Formularentwurf befindet.
    * Ein `PDFOutputOptionsSpec`-Objekt, das PDF-Laufzeitoptionen enthält.
    * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen zum Rendern enthält.
-   * Das `com.adobe.idp.Document`-Objekt, das die XML-Datenquelle mit den Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
+   * Das `com.adobe.idp.Document`-Objekt, das die XML-Datenquelle enthält, die Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
 
-   Die Methode `generatePDFOutput` gibt ein `OutputResult`-Objekt zurück, das die Ergebnisse des Vorgangs enthält.
+   Die `generatePDFOutput`-Methode gibt ein `OutputResult`-Objekt zurück, das das Ergebnis der Authentifizierung enthält.
 
 1. Ergebnisse des Vorgangs abrufen
 
@@ -1874,8 +1874,8 @@ Erstellen mehrerer PDF-Dateien mithilfe der Output API (Web-Service):
 
 1. Erstellen Sie ein Output-Client-Objekt.
 
-   * Erstellen Sie mithilfe des Standardkonstruktors ein `OutputServiceClient`-Objekt.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `OutputServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`.). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
+   * Erstellen Sie ein `OutputServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Sie brauchen das Attribut `lc_version` nicht zu verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
@@ -1883,21 +1883,21 @@ Erstellen mehrerer PDF-Dateien mithilfe der Output API (Web-Service):
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Referenzieren Sie eine XML-Datenquelle.
 
-   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Die `BLOB`-Objekt wird zum Speichern von Formulardaten verwendet, die mehrere Datensätze enthalten.
-   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort der XML-Datei darstellt, die mehrere Datensätze enthält.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
-   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
-   * Füllen Sie das `BLOB`-Objekt durch Zuweisen seines `MTOM`-Felds mit dem Inhalt des Byte-Arrays.
+   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Die `BLOB`-Objekt wird zum Speichern von Formulardaten verwendet, die mehrere Einträge enthalten.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort der XML-Datei darstellt, die mehrere Einträge enthält.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Legen Sie PDF-Laufzeitoptionen fest.
 
    * Erstellen Sie ein Objekt `PDFOutputOptionsSpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie die Option für viele Dateien fest, indem Sie dem Datenelement `generateManyFiles` des `OutputOptionsSpec`-Objekts einen booleschen Wert zuweisen. Weisen Sie beispielsweise den Wert `true` diesem Datenelement zu, um den Ausgabeservice anzuweisen, eine separate PDF-Datei für jeden Datensatz in der XML-Datenquelle zu erstellen. (Wenn Sie `false` diesem Datenelement zuweisen, generiert der Ausgabeservice eine einzelne PDF-Datei, die alle Datensätze enthält.)
-   * Legen Sie die Datei-URI-Option fest, indem Sie dem Datenelement `fileURI` des `OutputOptionsSpec`-Objekts einen Zeichenfolgenwert zuweisen, der den Speicherort der PDF-Datei(en) angibt, die der Ausgabe-Service generiert. Die Option „Datei-URI“ ist bezieht sich auf den J2EE-Anwendungs-Server, auf dem AEM Forms gehostet wird, nicht zum Client-Computer. 
+   * Legen Sie die Option für viele Dateien fest, indem Sie dem Datenelement `generateManyFiles` des `OutputOptionsSpec`-Objekts einen booleschen Wert zuweisen. Weisen Sie beispielsweise den Wert `true` diesem Datenelement zu, um den Ausgabeservice anzuweisen, eine separate PDF-Datei für jeden Eintrag in der XML-Datenquelle zu erstellen. (Wenn Sie `false` diesem Datenelement zuweisen, generiert der Ausgabeservice eine einzelne PDF-Datei, die alle Einträge enthält.)
+   * Legen Sie die Datei-URI-Option fest, indem Sie dem Datenelement `fileURI` des `OutputOptionsSpec`-Objekts einen Zeichenfolgenwert zuweisen, der den Speicherort der PDF-Datei(en) angibt, die der Ausgabe-Service generiert. Die Option „Datei-URI“ ist bezieht sich auf den J2EE-Anwendungs-Server, auf dem AEM Forms gehostet wird, nicht zum Client-Computer.
    * Legen Sie die Eintragsnamen-Option fest, indem Sie dem Datenelement `recordName` des `OutputOptionsSpec`-Objekts einen Zeichenfolgenwert zuweisen, der den Namen des XML-Elements in der Datenquelle angibt, das die Dateneinträge trennt.
    * Legen Sie die Kopien-Option fest, indem Sie dem Datenelement `copies` des `OutputOptionsSpec`-Objekts einen ganzzahligen Wert zuweisen, der die Anzahl der Kopien angibt, die der Ausgabe-Service generiert.
 
@@ -1910,22 +1910,22 @@ Erstellen mehrerer PDF-Dateien mithilfe der Output API (Web-Service):
 
    Erstellen Sie mehrere PDF-Dateien, indem Sie die Methode `generatePDFOutput` des `OutputServiceService`-Objekts aufrufen und die folgenden Werte übergeben:
 
-   * Ein TransformationFormat-Enum-Wert. Um ein PDF-Dokument zu generieren, geben Sie `TransformationFormat.PDF` an.
+   * Ein TransformationFormat-Aufzählungswert. Um ein PDF-Dokument zu erzeugen, geben Sie `TransformationFormat.PDF` an.
    * Ein string-Wert, der den Namen des Formularentwurfs angibt.
    * Ein Zeichenfolgenwert, der den Inhaltsstamm angibt, in dem sich der Formularentwurf befindet.
    * Ein `PDFOutputOptionsSpec`-Objekt, das PDF-Laufzeitoptionen enthält.
    * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen zum Rendern enthält.
-   * Das `BLOB`-Objekt, das die XML-Datenquelle mit den Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
+   * Das `BLOB`-Objekt, das die XML-Datenquelle enthält, die Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
    * Ein `BLOB`-Objekt, das von der `generatePDFOutput`-Methode gefüllt wird. Die `generatePDFOutput`-Methode füllt dieses Objekt mit generierten Metadaten, die das Dokument beschreiben.
-   * Ein `BLOB`-Objekt, das von der `generatePDFOutput`-Methode gefüllt wird. Die `generatePDFOutput`-Methode füllt dieses Objekt mit Ergebnisdaten.
+   * Ein `BLOB`-Objekt, das von der `generatePDFOutput`-Methode gefüllt wird. Die Methode `generatePDFOutput` füllt dieses Objekt mit Ergebnisdaten.
    * Ein `OutputResult`-Objekt, das die Ergebnisse des Vorgangs enthält.
 
 1. Ergebnisse des Vorgangs abrufen
 
-   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der einen XML-Dateispeicherort darstellt, der Ergebnisdaten enthält. Stellen Sie sicher, dass die Dateinamenerweiterung .xml lautet.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `generatePDFOutput` des `OutputServiceService`-Objekts (der achte Parameter) mit Ergebnisdaten gefüllt wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `binaryData` des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der einen XML-Dateispeicherort mit den Ergebnisdaten darstellt. Stellen Sie sicher, dass die Dateinamenerweiterung .xml lautet.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das durch die Methode `generatePDFOutput` des `OutputServiceService`-Objekts mit Ergebnisdaten (dem achten Parameter) gefüllt wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `binaryData` des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in die XML-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in die XML-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts verwenden und das Byte-Array übergeben.
 
 **Siehe auch**
 
@@ -1939,7 +1939,7 @@ Erstellen mehrerer PDF-Dateien mithilfe der Output API (Web-Service):
 
 Sie können Suchregeln erstellen, die dazu führen, dass der Ausgabe-Service Eingabedaten prüft und verschiedene auf dem Dateninhalt basierende Formulardesigns verwendet, um die Ausgabe zu generieren. Wenn sich beispielsweise der Text *Hypothek* in den Eingabedaten befindet, kann der Ausgabe-Service einen Formularentwurf mit dem Namen Mortgage.xdp verwenden. Ähnlich kann der Ausgabe-Service einen Formularentwurf verwenden, der als „AutomobileLoan.xdp“ gespeichert wird, wenn sich der Text *automobile* in den Eingabedaten befindet. Auch wenn der Ausgabe-Service unterschiedliche Ausgabetypen erzeugen kann, wird in diesem Abschnitt davon ausgegangen, dass der Ausgabe-Service eine PDF-Datei erzeugt. Das folgende Diagramm zeigt, wie der Ausgabe-Service eine PDF-Datei erzeugt, indem er eine XML-Datendatei verarbeitet und einen von vielen Formularentwürfen verwendet.
 
-Darüber hinaus kann der Ausgabe-Service Dokumentenpakete generieren, bei denen mehrere Datensätze im Datensatz bereitgestellt werden, jeder Datensatz einem Formularentwurf zugeordnet wird und ein einziges Dokument erzeugt wird, das aus mehreren Formularentwürfen besteht.
+Darüber hinaus kann der Ausgabe-Service Dokumentenpakete generieren, bei denen mehrere Einträge im Datensatz bereitgestellt werden, jeder Eintrag einem Formularentwurf zugeordnet wird und ein einziges Dokument erzeugt wird, das aus mehreren Formularentwürfen besteht.
 
 ![cs_outputbatchmanyformdesigns2](assets/cs_outputbatchmanyformdesigns2.png)
 
@@ -1972,7 +1972,7 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 
-Wenn AEM Forms auf einem unterstützten J2EE-Anwendungs-Server bereitgestellt wird, der nicht JBOSS ist, müssen Sie „adobe-utilities.jar“ und „jbossall-client.jar“ durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungs-Server sind, auf dem AEM Forms bereitgestellt wird. 
+Wenn AEM Forms auf einem unterstützten J2EE-Anwendungs-Server bereitgestellt wird, der nicht JBOSS ist, müssen Sie „adobe-utilities.jar“ und „jbossall-client.jar“ durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungs-Server sind, auf dem AEM Forms bereitgestellt wird.
 
 **Erstellen eines Client-Objekts für die Ausgabe**
 
@@ -2008,7 +2008,7 @@ Nachdem Sie eine gültige XML-Datenquelle referenziert und Laufzeitoptionen fest
 
 **Abrufen der Ergebnisse des Vorgangs**
 
-Nachdem der Ausgabe-Service einen Vorgang ausgeführt hat, gibt er XML-Daten zurück, die angeben, ob der Vorgang erfolgreich war.
+Nachdem der Ausgabe-Service einen Vorgang ausgeführt hat, werden XML-Daten zurückgegeben, die angeben, ob der Vorgang erfolgreich war.
 
 **Siehe auch**
 
@@ -2033,7 +2033,7 @@ So erstellen Sie Suchregeln mithilfe der Ausgabe-API (Java):
 
 1. Referenzieren Sie eine XML-Datenquelle.
 
-   * Erstellen Sie ein `java.io.FileInputStream`-Objekt, das die XML-Datenquelle darstellt, die zum Füllen des PDF-Dokuments verwendet wird, indem Sie seinen Konstruktor verwenden und einen Zeichenfolgenwert übergeben, der den Speicherort der XML-Datei angibt.
+   * Erstellen Sie ein `java.io.FileInputStream`-Objekt, das die XML-Datenquelle darstellt, die zum Ausfüllen des PDF-Dokuments verwendet wird, indem Sie seinem Konstruktor einen Zeichenfolgenwert übergeben, der den Speicherort der XML-Datei angibt.
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie seinen Konstruktor verwenden und das `java.io.FileInputStream`-Objekt übergeben.
 
 1. Definieren Sie Suchregeln.
@@ -2065,11 +2065,11 @@ So erstellen Sie Suchregeln mithilfe der Ausgabe-API (Java):
 
    Generieren Sie ein PDF-Dokument, das auf mehreren Formularentwürfen basiert, indem Sie die Methode `generatePDFOutput` des `OutputClient`-Objekts aufrufen und die folgenden Werte übergeben:
 
-   * Einen `TransformationFormat`-Aufzählungswert. Um ein PDF-Dokument zu generieren, geben Sie `TransformationFormat.PDF` an.
+   * Einen `TransformationFormat`-Aufzählungswert. Um ein PDF-Dokument zu erzeugen, geben Sie `TransformationFormat.PDF` an.
    * Ein Zeichenfolgenwert, der den Namen des Standardformularentwurfs angibt. Das heißt, der Formularentwurf, der verwendet wird, wenn ein Textmuster nicht gefunden wird.
    * Ein Zeichenfolgenwert, der den Inhaltsstamm angibt, in dem sich die Formularentwürfe befinden.
    * Ein `PDFOutputOptionsSpec`-Objekt, das PDF-Laufzeitoptionen enthält.
-   * Ein `RenderOptionsSpec`-Objekt, das Rendering-Laufzeitoptionen enthält.
+   * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen zum Rendern enthält.
    * Das `com.adobe.idp.Document`-Objekt, das die Formulardaten enthält, die vom Ausgabe-Service nach den definierten Textmustern durchsucht werden.
 
    Die `generatePDFOutput`-Methode gibt ein `OutputResult`-Objekt zurück, das das Ergebnis der Authentifizierung enthält.
@@ -2106,8 +2106,8 @@ Erstellen Sie Suchregeln mithilfe der Ausgabe-API (Web-Service):
 
 1. Erstellen Sie ein Output-Client-Objekt.
 
-   * Erstellen Sie mithilfe des Standardkonstruktors ein `OutputServiceClient`-Objekt.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `OutputServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`.). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
+   * Erstellen Sie ein `OutputServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Sie brauchen das Attribut `lc_version` nicht zu verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
@@ -2115,15 +2115,15 @@ Erstellen Sie Suchregeln mithilfe der Ausgabe-API (Web-Service):
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Referenzieren Sie eine XML-Datenquelle.
 
-   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern von Daten verwendet, die in das PDF-Dokument integriert werden sollen.
-   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, in dem der Dateispeicherort des zu verschlüsselnden PDF-Dokuments und der Modus enthalten sind, in dem die Datei geöffnet werden soll.
+   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern von Daten verwendet, die mit dem PDF-Dokument zusammengeführt werden sollen.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des zu verschlüsselnden PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
-   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
-   * Füllen Sie das `BLOB`-Objekt mit den Inhalten des Byte-Arrays, indem Sie diese dem `MTOM`-Feld des Objekts zuweisen.
+   * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Definieren Sie Suchregeln.
 
@@ -2141,7 +2141,7 @@ Erstellen Sie Suchregeln mithilfe der Ausgabe-API (Web-Service):
 1. Festlegen von PDF-Laufzeitoptionen
 
    * Erstellen Sie ein Objekt `PDFOutputOptionsSpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie die Datei-URI-Option fest, indem Sie dem Datenelement `fileURI` des `PDFOutputOptionsSpec`-Objekts einen Zeichenfolgenwert zuweisen, der den Speicherort der PDF-Datei angibt, die der Ausgabe-Service generiert. Die Option „Datei-URI“ ist bezieht sich auf den J2EE-Anwendungs-Server, auf dem AEM Forms gehostet wird, nicht zum Client-Computer. 
+   * Legen Sie die Datei-URI-Option fest, indem Sie dem Datenelement `fileURI` des `PDFOutputOptionsSpec`-Objekts einen Zeichenfolgenwert zuweisen, der den Speicherort der PDF-Datei angibt, die der Ausgabe-Service generiert. Die Option „Datei-URI“ ist bezieht sich auf den J2EE-Anwendungs-Server, auf dem AEM Forms gehostet wird, nicht zum Client-Computer.
    * Legen Sie die Kopien-Option fest, indem Sie dem Datenelement `copies` des `PDFOutputOptionsSpec`-Objekts einen ganzzahligen Wert zuweisen, der die Anzahl der Kopien angibt, die der Ausgabe-Service generiert.
    * Legen Sie die von Ihnen definierten Regeln fest, indem Sie dem Datenelement `rules` des `PDFOutputOptionsSpec`-Objekts das `MyArrayOf_xsd_anyType`-Objekt zuweisen, das die Regeln enthält.
    * Legen Sie die Anzahl der Bytes fest, die nach den definierten Textmustern gescannt werden sollen, indem Sie der Datenmethode `lookAhead` des `PDFOutputOptionsSpec`-Objekts einen ganzzahligen Wert zuweisen, der die Anzahl der zu scannenden Bytes bestimmt.
@@ -2163,26 +2163,26 @@ Erstellen Sie Suchregeln mithilfe der Ausgabe-API (Web-Service):
 
    Erstellen Sie ein PDF-Dokument, indem Sie die Methode `generatePDFOutput` des `OutputServiceService`-Objekts aufrufen und die folgenden Werte übergeben:
 
-   * Einen `TransformationFormat`-Aufzählungswert. Um ein PDF-Dokument zu generieren, geben Sie `TransformationFormat.PDF` an.
+   * Einen `TransformationFormat`-Aufzählungswert. Um ein PDF-Dokument zu erzeugen, geben Sie `TransformationFormat.PDF` an.
    * Ein string-Wert, der den Namen des Formularentwurfs angibt.
    * Ein Zeichenfolgenwert, der den Inhaltsstamm angibt, in dem sich der Formularentwurf befindet.
    * Ein `PDFOutputOptionsSpec`-Objekt, das PDF-Laufzeitoptionen enthält.
    * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen zum Rendern enthält.
-   * Das `BLOB`-Objekt, das die XML-Datenquelle mit den Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
+   * Das `BLOB`-Objekt, das die XML-Datenquelle enthält, die Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen.
    * Ein `BLOB`-Objekt, das von der `generatePDFOutput`-Methode gefüllt wird. Die `generatePDFOutput`-Methode füllt dieses Objekt mit generierten Metadaten, die das Dokument beschreiben. (Dieser Parameterwert ist nur für den Webservice-Aufruf erforderlich).
-   * Ein `BLOB`-Objekt, das von der `generatePDFOutput`-Methode gefüllt wird. Die `generatePDFOutput`-Methode füllt dieses Objekt mit Ergebnisdaten. (Dieser Parameterwert ist nur für den Webservice-Aufruf erforderlich).
+   * Ein `BLOB`-Objekt, das von der Methode `generatePDFOutput` aufgefüllt wird. Die Methode `generatePDFOutput` füllt dieses Objekt mit Ergebnisdaten. (Dieser Parameterwert ist nur für den Webservice-Aufruf erforderlich).
    * Ein `OutputResult`-Objekt, das die Ergebnisse des Vorgangs enthält. (Dieser Parameterwert ist nur für den Webservice-Aufruf erforderlich).
 
    >[!NOTE]
    >
-   >Beim Generieren eines PDF-Dokuments durch Aufrufen der Methode `generatePDFOutput` können Sie keine Daten mit einem XFA-PDF-Formular fusionieren, das signiert oder zertifiziert wurde oder Verwendungsrechte enthält. Weitere Informationen zu Verwendungsrechten finden Sie unter [Verwendungsrechte für PDF-Dokumente aktivieren](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
+   >Beim Generieren eines PDF-Dokuments durch Aufrufen der Methode `generatePDFOutput` können Sie keine Daten mit einem XFA-PDF-Formular zusammenführen, das signiert oder zertifiziert wurde oder Verwendungsrechte enthält. Weitere Informationen zu Verwendungsrechten finden Sie unter [Verwendungsrechte für PDF-Dokumente aktivieren](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
 
 1. Ergebnisse des Vorgangs abrufen
 
-   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Speicherort einer XML-Datei mit Ergebnisdaten darstellt. Stellen Sie sicher, dass die Dateierweiterung XML ist.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `generatePDFOutput` des `OutputServiceService`-Objekts (der achte Parameter) mit Ergebnisdaten gefüllt wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der einen XML-Dateispeicherort mit den Ergebnisdaten darstellt. Stellen Sie sicher, dass die Dateierweiterung XML ist.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das durch die Methode `generatePDFOutput` des `OutputServiceService`-Objekts mit Ergebnisdaten (dem achten Parameter) gefüllt wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in die XML-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in die XML-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts verwenden und das Byte-Array übergeben.
 
 **Siehe auch**
 
@@ -2217,7 +2217,7 @@ Führen Sie die folgenden Schritte aus, um ein interaktives PDF-Dokument in ein 
 1. Wandeln Sie das PDF-Dokument um.
 1. Speichern Sie das nicht interaktive PDF-Dokument als PDF-Datei.
 
-**Einschließen von Projektdateien**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -2231,9 +2231,9 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 
 Wenn AEM Forms auf einem unterstützten J2EE-Anwendungs-Server bereitgestellt wird, der nicht JBOSS ist, müssen Sie „adobe-utilities.jar“ und „jbossall-client.jar“ durch JAR-Dateien ersetzen, die spezifisch für den J2EE-Anwendungs-Server sind, auf dem AEM Forms bereitgestellt wird. Informationen zum Speicherort aller AEM Forms-JAR-Dateien finden Sie unter [Einschließen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Erstellen eines Ausgabe-Client-Objekts**
+**Erstellen eines Output-Client-Objekts**
 
-Bevor Sie einen Output-Service-Vorgang programmgesteuert ausführen können, müssen Sie ein Client-Objekt für den Output-Service erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `OutputClient`-Objekt. Wenn Sie die Ausgabe-Web-Service-API verwenden, erstellen Sie ein `OutputServiceService`-Objekt.
+Bevor Sie einen Ausgabe-Service-Vorgang programmgesteuert durchführen können, müssen Sie ein Client-Objekt für den Ausgabe-Service erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `OutputClient`-Objekt. Wenn Sie die Ausgabe-Web-Service-API verwenden, erstellen Sie ein `OutputServiceService`-Objekt.
 
 **Abrufen eines interaktiven PDF-Dokuments**
 
@@ -2320,8 +2320,8 @@ Reduzieren Sie ein interaktives PDF-Dokument mithilfe der Ausgabe-API (Web-Servi
 
 1. Erstellen Sie ein Output-Client-Objekt.
 
-   * Erstellen Sie mithilfe des Standardkonstruktors ein `OutputServiceClient`-Objekt.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `OutputServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`.). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
+   * Erstellen Sie ein `OutputServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
+   * Erstellen Sie ein `OutputServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Sie brauchen das Attribut `lc_version` nicht zu verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen. Geben Sie jedoch `?blob=mtom` an, um MTOM zu verwenden.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `OutputServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
@@ -2329,13 +2329,13 @@ Reduzieren Sie ein interaktives PDF-Dokument mithilfe der Ausgabe-API (Web-Servi
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Rufen Sie ein interaktives PDF-Dokument ab.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird verwendet, um das interaktive PDF-Dokument zu speichern.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des interaktiven PDF-Dokuments darstellt.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
@@ -2357,7 +2357,7 @@ Reduzieren Sie ein interaktives PDF-Dokument mithilfe der Ausgabe-API (Web-Servi
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen von dessen Konstruktor und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des nicht interaktiven PDF-Dokuments darstellt.
    * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der `transformPDF`-Methode zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**

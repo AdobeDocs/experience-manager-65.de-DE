@@ -12,7 +12,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1104'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ Daher benötigt die erweiterte Scoring-Engine genügend Daten, um die Analyse au
 
 Die Einrichtung der erweiterten Bewertung ist praktisch identisch mit der grundlegenden Bewertung:
 
-* Grundlegende und erweiterte Scoring- und Badging[Regeln werden auf dieselbe Weise auf &#x200B;](/help/communities/implementing-scoring.md#apply-rules-to-content) angewendet.
+* Grundlegende und erweiterte Scoring- und Badging[Regeln werden auf dieselbe Weise auf ](/help/communities/implementing-scoring.md#apply-rules-to-content) angewendet.
 
    * Auf denselben Inhalt können einfache und erweiterte Scoring- und Badging-Regeln angewendet werden.
 
@@ -63,9 +63,7 @@ Die erweiterte Scoring-Engine stellt eine OSGi-Konfiguration mit Parametern bere
 
 * **Bewertungsgewichte**
 
-  Geben Sie für ein Thema das Verb an, dem bei der Berechnung der Punktzahl die höchste Priorität zugewiesen werden soll. Es können ein oder mehrere Themen eingegeben werden, die jedoch auf **ein Verb pro Thema** beschränkt sind. Siehe [Themen und Verben](/help/communities/implementing-scoring.md#topics-and-verbs).
-Als `topic,verb` mit Escape-Komma eingegeben. Zum Beispiel:
-  `/social/forum/hbs/social/forum\,ADD`
+  Geben Sie für ein Thema das Verb an, dem bei der Berechnung der Punktzahl die höchste Priorität zugewiesen werden soll. Es können ein oder mehrere Themen eingegeben werden, die jedoch auf **ein Verb pro Thema** beschränkt sind. Siehe [Themen und Verben](/help/communities/implementing-scoring.md#topics-and-verbs).Als `topic,verb` mit Escape-Komma eingegeben. Beispiel:  `/social/forum/hbs/social/forum\,ADD`
 Als Standard ist das Verb „HINZUFÜGEN“ für die Komponenten „QA“ und „Forum“ festgelegt.
 
 * **Bewertungsbereich**
@@ -215,6 +213,6 @@ In der Version sind zwei erweiterte Badging-Regeln enthalten, die den Bewertungs
 
 **Anmerkungen:**
 
-* `rules` Knoten sind vom Typ cq:Page.
+* `rules` Knoten sind vom Typ CQ:Page.
 * `rules` sollten sich an einem Repository-Speicherort mit Leseberechtigung für alle befinden.
 * Regelnamen müssen unabhängig vom Speicherort eindeutig sein.

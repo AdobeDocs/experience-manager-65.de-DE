@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '831'
 ht-degree: 100%
 
 ---
@@ -32,11 +32,11 @@ Es gibt jedoch Situationen, in denen ein Prozess aufgrund von Faktoren wie den f
 * Ein Prozess kann organisatorische Grenzen überschreiten.
 * Zur Beendigung eines Prozesses ist eine externe Eingabe erforderlich. Angenommen, ein Formular wird an einen Manager gesendet, der nicht im Büro ist. In diesem Fall ist der Prozess erst abgeschlossen, wenn der Manager das Formular zurückgibt und ausfüllt.
 
-  Diese Arten von Prozessen werden als langlebige Prozesse bezeichnet. Ein langlebiger Prozess wird asynchron ausgeführt, sodass Systeme so interagieren können, wie es die Ressourcen zulassen, und das Tracking und die Überwachung des Vorgangs ermöglicht wird. Wenn ein langlebiger Prozess aufgerufen wird, erstellt AEM Forms einen Aufrufkennungswert als Teil eines Datensatzes, der den langlebigen Prozessstatus verfolgt. Der Datensatz wird in der AEM Forms-Datenbank gespeichert. Sie können langlebige Prozesseinträge löschen, wenn sie nicht mehr benötigt werden.
+  Diese Arten von Prozessen werden als langlebige Prozesse bezeichnet. Ein langlebiger Prozess wird asynchron ausgeführt, sodass Systeme so interagieren können, wie es die Ressourcen zulassen, und das Tracking und die Überwachung des Vorgangs ermöglicht wird. Wenn ein langlebiger Prozess aufgerufen wird, erstellt AEM Forms einen Aufrufkennungswert als Teil eines Eintrags, der den langlebigen Prozessstatus verfolgt. Der Eintrag wird in der AEM Forms-Datenbank gespeichert. Sie können langlebige Prozesseinträge löschen, wenn sie nicht mehr benötigt werden.
 
 >[!NOTE]
 >
->AEM Forms erstellt keinen Datensatz, wenn ein kurzlebiger Prozess aufgerufen wird.
+>AEM Forms erstellt keinen Eintrag, wenn ein kurzlebiger Prozess aufgerufen wird.
 
 Mithilfe des Werts für die Aufrufkennung können Sie den Status des langlebigen Prozesses verfolgen. Sie können zum Beispiel den Wert der Prozessaufrufskennung verwenden, um Vorgänge in Process Manager durchzuführen, z. B. um eine laufende Prozessinstanz zu beenden.
 

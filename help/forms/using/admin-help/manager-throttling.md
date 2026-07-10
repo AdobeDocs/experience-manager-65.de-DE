@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1042'
+workflow-type: tm+mt
+source-wordcount: '1053'
 ht-degree: 100%
 
 ---
@@ -72,7 +72,7 @@ Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeit
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.low-limit</code></td>
-   <td><p>Gibt den maximalen Prozentsatz des Speicherplatzes an, der verwendet werden kann, bevor Work Manager die Einschränkung für eingehende Aufträge aufhebt.</p><p>Der Standardwert für diese Option ist <code>20</code>. Dieser Wert sollte für die meisten Systeme ausreichend sein.</p></td>
+   <td><p>Gibt den maximalen Prozentsatz des Speicherplatzes an, der verwendet werden kann, bevor Work Manager die Einschränkung für eingehende Aufträge stoppt.</p><p>Der Standardwert für diese Option ist <code>20</code>. Dieser Wert sollte für die meisten Systeme ausreichend sein.</p></td>
   </tr>
   <tr>
    <td><code>Dadobe.workmanager.allocate.max-batch-size</code></td>
@@ -83,7 +83,7 @@ Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeit
 
 **Hinzufügen von Java-Optionen zu JBoss**
 
-1. Beenden Sie den JBoss-Anwendungs-Server.
+1. Stoppen Sie den JBoss-Anwendungs-Server.
 1. Öffnen Sie den Ordner „*[Anwendungs-Server-Stammordner]*/bin/run.bat“ (Windows) oder „run.sh“ (Linux oder UNIX) in einem Texteditor und fügen Sie die erforderlichen Java-Optionen im Format `-Dproperty=value` hinzu.
 1. Starten Sie den Server neu.
 
