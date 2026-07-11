@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2167'
-ht-degree: 100%
+source-wordcount: '2196'
+ht-degree: 96%
 
 ---
 
@@ -136,7 +136,7 @@ Wenn Sie eine Richtlinie wechseln, wird die neue Richtlinie wie folgt aktiviert:
 1. Klicken Sie auf „Richtlinie wechseln“. Eine Liste mit bis zu 100 Richtlinien wird angezeigt.
 1. Wird die gewünschte Richtlinie nicht angezeigt, wählen Sie in der Liste „Suchen“ entweder „Richtlinienname“ oder „Richtlinien-ID“ aus, geben den Namen oder die ID ein und klicken auf „Suchen“.
 1. Klicken Sie auf eine neue Richtlinie in der Liste.
-1. Klicken Sie auf „Richtlinie wechseln“ und anschließend auf „OK“, um zur Seite „Dokumente“ zurückzukehren. 
+1. Klicken Sie auf „Richtlinie wechseln“ und anschließend auf „OK“, um zur Seite „Dokumente“ zurückzukehren.
 
 ## Suche nach Dokumenten {#search-for-a-document}
 
@@ -194,13 +194,12 @@ Sie können die Unterstüzung für Seite 0 (Wrapper-Dokument) verwenden, damit N
 
 Verwenden Sie die folgenden Vorgänge in Workbench:
 
-**Schützen
+**Protect
 Dokument mit Deckblatt:** Sichert ein PDF-Dokument mit der angegebenen Richtlinie und fügt dem Dokument ein Deckblatt hinzu
 
 **Geschütztes Dokument extrahieren:** Extrahiert das richtliniengeschützte PDF-Dokument aus dem PDF-Dokument mit Deckblatt
 
 Verwenden Sie die folgende Document Security-APIs:
 
-**protectDocumentWithCoverPage:** Sichert ein bestimmtes PDF mit der angegebenen Richtlinie und gibt ein Dokument mit einem Deckblatt und dem geschützten Dokument als Anhang zurück
+**protectDocumentWithCoverPage:** Sichert ein bestimmtes PDF mit der angegebenen Richtlinie und gibt ein Dokument mit einem Deckblatt und dem geschützten Dokument als Anlage zurück
 `//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument:** Extrahiert das geschützte Dokument, das eine Anlage im Dokument mit Deckblatt ist. Das Dokument mit der Titelseite kann mithilfe der Methode „protectDocumentWithCoverPage“ erstellt werden
-`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a protected PDF document with a Cover Page FileInputStream fileInputStream = new FileInputStream("C:\\policyProtectedDocWithCoverPage.pdf"); Document inPDF = new Document(fileInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document Document extractedDoc = documentManager.extractProtectedDocument(inPDF); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); extractedDoc.copyToFile(myFile);`

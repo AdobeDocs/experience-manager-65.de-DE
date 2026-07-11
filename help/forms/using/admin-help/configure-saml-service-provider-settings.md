@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '607'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '626'
+ht-degree: 95%
 
 ---
 
@@ -27,32 +27,32 @@ Security Assertion Markup Language (SAML) ist eine der Optionen, die Sie beim Ko
 Eine Erläuterung von SAML finden Sie unter [Security Assertion Markup Language (SAML) V2.0 Technische Übersicht](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Benutzerverwaltung“ > „Konfiguration“ > „SAML-Dienstanbietereinstellungen“.
-1. Geben Sie in das Feld „Dienstanbieter-Entitäts-ID“ eine eindeutige ID als Kennung für die AEM Forms-Dienstanbieterimplementierung ein.  Geben Sie diese eindeutige ID auch beim Konfigurieren Ihres Identitätsanbieters (IDP) an (z. B. `um.lc.com`.). Sie können auch die URL nutzen, die für den Zugriff auf AEM-Formulare verwendet wird (z. B. `https://AEMformsserver`).
+1. Geben Sie in das Feld „Dienstanbieter-Entitäts-ID“ eine eindeutige ID als Kennung für die AEM Forms-Dienstanbieterimplementierung ein. Sie müssen diese eindeutige ID auch beim Konfigurieren Ihres Identitätsanbieters (IDP) (z. B. `um.lc.com` angeben. Sie können auch die URL verwenden, die für den Zugriff auf AEM-Formulare verwendet wird (z. B. `https://AEMformsserver`).
 1. Geben Sie in das Feld für die Dienstanbieter-Basis-URL die Basis-URL für Ihren Formular-Server ein (z. B. `https://AEMformsserver:8080`).
 1. (Optional) Wenn Sie möchten, dass AEM Forms signierte Authentifizierungsanforderungen an den Identitätsanbieter sendet, führen Sie die folgenden Aufgaben aus:
 
-   * Verwenden Sie Trust Manager, um eine Berechtigung im Format „PKCS #12“ mit der ausgewählten Option „Berechtigung für die Dokumentsignierung“ als Trust Store-Typ zu importieren.  (Siehe [Verwalten lokaler Berechtigungen](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)
+   * Verwenden Sie Trust Manager, um eine Berechtigung im Format „PKCS #12“ mit der ausgewählten Option „Berechtigung für die Dokumentsignierung“ als Trust Store-Typ zu importieren. (Siehe [Verwalten lokaler Berechtigungen](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)
    * Wählen Sie in der Liste mit den Schlüsselaliassen für Dienstanbieterberechtigungen den Alias aus, den Sie der Berechtigung im Trust Store zugewiesen haben.
    * Klicken Sie auf „Exportieren“, um den URL-Inhalt in einer Datei zu speichern, und importieren Sie anschließend diese Datei in Ihren IDP.
 
-1. (Optional) Wählen Sie in der Liste der ID-Richtlinie für Dienstanbieternamen das Namensformat aus, das der IDP zum Identifizieren der Person in einer SAML-Assertion verwendet.  Die Optionen lauten „Nicht angegeben“, „E-Mail“ und „Windows Domain Qualified Name“.
+1. (Optional) Wählen Sie in der Liste der ID-Richtlinie für Dienstanbieternamen das Namensformat aus, das der IDP zum Identifizieren der Person in einer SAML-Assertion verwendet. Die Optionen lauten „Nicht angegeben“, „E-Mail“ und „Windows Domain Qualified Name“.
 
    >[!NOTE]
    >
    >Bei Namensformaten muss nicht auf Groß- und Kleinschreibung geachtet werden.
 
-1. (Optional) Aktivieren Sie die Option „Authentifizierungs-Eingabeaufforderung für lokale Benutzer aktivieren“.  Wenn diese Option ausgewählt ist, werden Benutzenden zwei Links angezeigt:
+1. (Optional) Aktivieren Sie die Option „Authentifizierungs-Eingabeaufforderung für lokale Benutzer aktivieren“. Wenn diese Option ausgewählt ist, werden Benutzenden zwei Links angezeigt:
 
    * eine Verknüpfung zur Anmeldeseite eines dritten SAML-Identitätsanbieters, wo sich Benutzer authentifizieren können, die zu einer Unternehmens-Domain gehören.
    * eine Verknüpfung zur AEM Forms-Anmeldeseite, wo sich Benutzer identifizieren können, die zu einer lokalen Domain gehören.
 
    Wenn diese Option nicht ausgewählt ist, werden die Benutzenden direkt zur Anmeldeseite des externen SAML-Identitätsanbieters geführt, wo sich Benutzende authentifizieren können, die zu einer Unternehmens-Domain gehören.
 
-1. (Optional) Wählen Sie „Artefakt-Bindung“, um die Unterstützung für die Artefakt-Bindung zu aktivieren.  Standardmäßig wird die POST-Bindung mit SAML verwendet.  Wenn Sie jedoch die Artefakt-Bindung konfiguriert haben, wählen Sie diese Option aus.  Wenn diese Option ausgewählt ist, wird die tatsächliche Benutzerassertion nicht durch die Browser-Anforderung weitergeleitet.  Stattdessen wird ein Verweis zu der Assertion weitergeleitet und die Assertion wird mithilfe eines Backend-Web-Dienstaufrufs abgerufen.
+1. (Optional) Wählen Sie „Artefakt-Bindung“, um die Unterstützung für die Artefakt-Bindung zu aktivieren. Standardmäßig wird die POST-Bindung mit SAML verwendet. Wenn Sie jedoch die Artefakt-Bindung konfiguriert haben, wählen Sie diese Option aus. Wenn diese Option ausgewählt ist, wird die tatsächliche Benutzerassertion nicht durch die Browser-Anforderung weitergeleitet. Stattdessen wird ein Verweis zu der Assertion weitergeleitet und die Assertion wird mithilfe eines Backend-Web-Dienstaufrufs abgerufen.
 1. (Optional) Wählen Sie „Bindung umleiten“ aus, um SAML-Bindungen zu unterstützen, die Umleitungen verwenden.
-1. (Optional) Geben Sie unter „Benutzerdefinierte Eigenschaften“ weitere Eigenschaften an.  Die zusätzlichen Eigenschaften sind durch neue Zeilen getrennte Name-Wert-Paare.
+1. (Optional) Geben Sie unter „Benutzerdefinierte Eigenschaften“ weitere Eigenschaften an. Die zusätzlichen Eigenschaften sind durch neue Zeilen getrennte Name-Wert-Paare.
 
-   * Sie können AEM Forms für die Ausgabe einer SAML-Bestätigung für eine Gültigkeitsdauer konfigurieren, die der Gültigkeitsdauer einer Assertion eines Drittanbieters entspricht.  Damit die Zeitüberschreitung der SAML-Bestätigung des Drittanbieters berücksichtigt wird, fügen Sie die folgende Zeile in den benutzerdefinierten Eigenschaften hinzu:
+   * Sie können AEM Forms für die Ausgabe einer SAML-Bestätigung für eine Gültigkeitsdauer konfigurieren, die der Gültigkeitsdauer einer Assertion eines Drittanbieters entspricht. Damit die Zeitüberschreitung der SAML-Bestätigung des Drittanbieters berücksichtigt wird, fügen Sie die folgende Zeile in den benutzerdefinierten Eigenschaften hinzu:
 
      `saml.sp.honour.idp.assertion.expiry=true`
 
@@ -60,7 +60,7 @@ Eine Erläuterung von SAML finden Sie unter [Security Assertion Markup Language 
 
      `saml.sp.use.relaystate=true`
 
-   * Fügen Sie folgende benutzerdefinierte Eigenschaft zum Konfigurieren der URL für die benutzerdefinierten Java™ Server Pages (JSP) hinzu, die zum Rendern der registrierten Liste von Identitätsanbietern verwendet wird.  Wenn Sie keine benutzerdefinierte Web-Anwendung bereitgestellt haben, wird die standardmäßige Seite „Benutzerverwaltung“ verwendet, um die Liste zu rendern.
+   * Fügen Sie folgende benutzerdefinierte Eigenschaft zum Konfigurieren der URL für die benutzerdefinierten Java™ Server Pages (JSP) hinzu, die zum Rendern der registrierten Liste von Identitätsanbietern verwendet wird. Wenn Sie keine benutzerdefinierte Web-Anwendung bereitgestellt haben, wird die standardmäßige Seite „Benutzerverwaltung“ verwendet, um die Liste zu rendern.
 
    `saml.sp.discovery.url=/custom/custom.jsp`
 

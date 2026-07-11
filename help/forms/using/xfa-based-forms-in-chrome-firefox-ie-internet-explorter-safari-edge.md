@@ -1,14 +1,14 @@
 ---
-title: XFA-basierte PDF-Formulare können in Google Chrome, Firefox, Microsoft® Edge, Microsoft® Internet Explorer oder Apple Safari nicht geöffnet werden.
-description: XFA-basierte PDF-Formulare können in Google Chrome, Firefox, Microsoft® Edge, Microsoft® Internet Explorer oder Apple Safari nicht geöffnet werden.
+title: XFA-basierte PDF forms kann in Google Chrome, Firefox, Microsoft&reg; Edge, Microsoft&reg; Internet Explorer oder Apple Safari nicht geöffnet werden
+description: XFA-basierte PDF forms kann in Google Chrome, Firefox, Microsoft&reg; Edge, Microsoft&reg; Internet Explorer oder Apple Safari nicht geöffnet werden
 feature: Adaptive Forms,Document Services
 exl-id: fdd15315-e0d6-4d80-acb4-2e0ecec716c4
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 2ffd69c153c60ada3fcb586ed5aa5bda48f645fc
-workflow-type: ht
-source-wordcount: '341'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '424'
+ht-degree: 83%
 
 ---
 
@@ -22,4 +22,4 @@ Viele neuere Browserversionen bieten eine eigene, begrenzte Unterstützung für 
 
    * [Rendern von XFA-basierten Formularen in HTML5-Formularen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/introduction.html?lang=de#key-capabilities-of-html-forms-br), sodass die Formulare in Browsern mit HTML5-Unterstützung geöffnet werden können, einschließlich Browsern, die auf Mobilgeräten wie dem iPad laufen. Die HTML5-Ausgabedarstellung der Formulare behält das Layout des Formularentwurfs bei und unterstützt die meisten in die XFA-Formularvorlage eingebetteten Formularlogiken (z. B. JavaScript, Formularberechnungen und Formularvalidierungen).
    * [Konvertieren von XFA-basierten Formularen in responsive adaptive Formulare für Mobilgeräte](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=de#create-an-adaptive-form-based-on-an-xfa-form-template). Diese Formulare bieten ein responsives Layout und Personalisierungsfunktionen und passen sich dynamisch an Benutzerantworten an, indem nach Bedarf Felder oder Abschnitte hinzugefügt oder entfernt werden. Sie bieten außerdem vorkonfigurierte Connectoren für verschiedene Datenquellen, Datensatzdokumentfunktionen und eine einfache Verbindung zu Adobe Analytics zur Leistungsbewertung. Weitere Informationen finden Sie unter [Wichtige Funktionen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=de)
-Auf diese Weise sind Ihre Technologieinvestitionen in XFA-Formulare geschützt und bieten Ihren Endbenutzerinnen und Endbenutzern weiterhin optimale Erlebnisse. Weitere Informationen finden Sie in der [Produktdokumentation zu Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=de).
+Auf diese Weise sind Ihre Technologieinvestitionen in XFA-Formulare geschützt und bieten Ihren Endbenutzern weiterhin optimale Erlebnisse. Weitere Informationen finden Sie in der [Produktdokumentation zu Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=de).

@@ -8,8 +8,8 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '1856'
-ht-degree: 100%
+source-wordcount: '1883'
+ht-degree: 95%
 
 ---
 
@@ -112,7 +112,7 @@ Ein einzelnes Produkt kann mehrere Variationen aufweisen, z. B. kann es je nach
 
 Es sind jedoch nicht alle Eigenschaften Variantenachsen. Varianten können sich auch auf andere Eigenschaften auswirken, z. B. kann der Preis von der Größe abhängen. Diese Eigenschaften können nicht von den Käuferinnen und Käufern ausgewählt werden und werden daher nicht als Variantenachsen betrachtet.
 
-Jedes Produkt bzw. jede Variante steht für eine Ressource und ist daher im Verhältnis 1:1 einem Repository-Knoten zugeordnet. Eine Folge ist, dass ein bestimmtes Produkt und/oder eine bestimmte Variante durch ihren Pfad eindeutig identifiziert werden kann.
+Jedes Produkt und/oder jede Variante wird durch eine Ressource dargestellt und ordnet daher 1:1 einem Repository-Knoten zu. Eine Folge ist, dass ein bestimmtes Produkt und/oder eine bestimmte Variante durch ihren Pfad eindeutig identifiziert werden kann.
 
 Jede Produktressource kann durch eine `Product API` dargestellt werden. Die meisten Aufrufe in der Produkt-API beziehen sich auf spezifische Varianten (obwohl Varianten gemeinsame Werte von einem Vorgänger erben können). Bei manchen Aufrufen wird jedoch ein Variantensatz (`getVariantAxes()`, `getVariants()` usw.) aufgelistet.
 
@@ -137,7 +137,7 @@ Allgemein:
 
 * und Produktverweise unter `/content`.
 
-Die Knoten für die Produktvarianten und Produktdaten müssen 1:1 zugeordnet sein.
+Es muss eine 1::1-Zuordnung zwischen Produktvarianten und Produktdatenknoten vorhanden sein.
 
 Produktverweise müssen außerdem einen Knoten für jede präsentierte Variante haben, es müssen jedoch nicht alle Varianten präsentiert werden. Wenn ein Produkt beispielsweise die Varianten S, M und L hat, können die Produktdaten wie folgt aussehen:
 
@@ -445,7 +445,7 @@ Einstiegspunkt für die Such-API ist die `CommerceService#search`-Methode, die e
    * Die **Gutschein**-Komponente (`/libs/commerce/components/voucher`) bietet:
 
       * einen Renderer für die Gutscheinadministration; er zeigt alle Gutscheine an, die sich aktuell im Warenkorb befinden
-      *  Die Bearbeitungsdialogfelder (Formular) zum Verwalten (Hinzufügen/Entfernen) der Gutscheine.
+      * Die Bearbeitungsdialogfelder (Formular) zum Verwalten (Hinzufügen/Entfernen) der Gutscheine.
       * Die für das Hinzufügen/Entfernen von Gutscheinen zum/vom Warenkorb erforderlichen Aktionen.
 
 * Promotions:
@@ -504,7 +504,7 @@ public void removeVoucher(String code) throws CommerceException;
 public List<Voucher> getVouchers() throws CommerceException;
 ```
 
-Auf diese Weise ist `CommerceSession` für die Überprüfung verantwortlich, ob ein Gutschein existiert und ob er angewendet werden kann oder nicht. Dies könnte Gutscheine betreffen, die nur angewendet werden können, wenn eine bestimmte Bedingung erfüllt ist; zum Beispiel, wenn der gesamte Warenkorbpreis größer als 100 € ist.  Wenn ein Gutschein aus irgendeinem Grund nicht angewendet werden kann, löst die Methode `addVoucher` eine Ausnahme aus. Außerdem ist die `CommerceSession` für die Aktualisierung der Preise des Warenkorbs verantwortlich, nachdem ein Gutschein hinzugefügt/entfernt wurde.
+Auf diese Weise ist `CommerceSession` für die Überprüfung verantwortlich, ob ein Gutschein existiert und ob er angewendet werden kann oder nicht. Dies kann für Gutscheine gelten, die nur angewendet werden können, wenn eine bestimmte Bedingung erfüllt ist. Wenn beispielsweise der gesamte Warenkorbpreis größer als 100 USD ist. Wenn ein Gutschein aus irgendeinem Grund nicht angewendet werden kann, löst die Methode `addVoucher` eine Ausnahme aus. Außerdem ist die `CommerceSession` für die Aktualisierung der Preise des Warenkorbs verantwortlich, nachdem ein Gutschein hinzugefügt/entfernt wurde.
 
 Der `Voucher` ist eine Bean-ähnliche Klasse, die Felder enthält für:
 
@@ -512,7 +512,7 @@ Der `Voucher` ist eine Bean-ähnliche Klasse, die Felder enthält für:
 * Eine Kurzbeschreibung
 * Ein Verweis auf die zugehörige Promotion, die den Rabatttyp und den Wert angibt
 
-Die bereitgestellte `AbstractJcrCommerceSession` kann Gutscheine beantragen. Die von der Klasse `getVouchers()` zurückgegebenen Gutscheine sind Instanzen von `cq:Page`, die einen jcr:content-Knoten mit (unter anderem) den folgenden Eigenschaften enthalten:
+Die bereitgestellte `AbstractJcrCommerceSession` kann Gutscheine beantragen. Die von der Klasse `getVouchers()` zurückgegebenen Gutscheine sind Instanzen von `cq:Page`, die einen jcr:content-Knoten mit folgenden Eigenschaften enthalten (unter anderem):
 
 * `sling:resourceType` (String) - dieser muss `commerce/components/voucher` sein
 

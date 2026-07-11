@@ -12,7 +12,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '2954'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Das Inhaltssynchronisierungs-Framework erstellt eine Archivdatei, die den Web-In
 
 Die folgende Sequenz von Schritten zeigt einen typischen Anwendungsfall für die Inhaltssynchronisierung:
 
-1. Der AEM-Entwickler erstellt eine Inhaltssynchronisierungskonfiguration, die den einzuschließenden Inhalt angibt.
+1. AEM Developer erstellt eine Inhaltssynchronisierungskonfiguration, die den einzuschließenden Inhalt angibt.
 1. Das Inhaltssynchronisierungs-Framework erfasst und speichert den Inhalt zwischen.
 1. Auf einem Mobilgerät wird die Mobile App gestartet und fordert Inhalte vom Server an, die in einer ZIP-Datei bereitgestellt werden.
 1. Der Client entpackt den ZIP-Inhalt in das lokale Dateisystem. Die Ordnerstruktur in der ZIP-Datei simuliert die Pfade, die ein Client (z. B. ein Browser) normalerweise vom Server anfordern würde.
@@ -52,7 +52,7 @@ Erstellen Sie eine Content-Sync-Konfiguration, um den Inhalt der ZIP-Datei anzug
 
 Um eine Inhaltssynchronisierungskonfiguration zu erstellen, fügen Sie dem Repository einen `cq:ContentSyncConfig` Knoten hinzu, wobei die `sling:resourceType` Eigenschaft auf `contentsync/config` festgelegt ist. Der `cq:ContentSyncConfig` Knoten kann sich an einer beliebigen Stelle im Repository befinden, der Knoten muss jedoch für Benutzende in der AEM-Veröffentlichungsinstanz zugänglich sein. Daher sollten Sie den Knoten unter `/content` hinzufügen.
 
-Um den Inhalt der ZIP-Datei für die Inhaltssynchronisierung anzugeben, fügen Sie dem Knoten cq:ContentSyncConfig untergeordnete Knoten hinzu. Die folgenden Eigenschaften jedes untergeordneten Knotens identifizieren ein einzuschließendes Inhaltselement und dessen Verarbeitung beim Hinzufügen:
+Um den Inhalt der ZIP-Datei für die Inhaltssynchronisierung anzugeben, fügen Sie dem cq:ContentSyncConfig-Knoten untergeordnete Knoten hinzu. Die folgenden Eigenschaften jedes untergeordneten Knotens identifizieren ein einzuschließendes Inhaltselement und dessen Verarbeitung beim Hinzufügen:
 
 * `path`: Der Speicherort des Inhalts.
 * `type`: Der Name des Konfigurationstyps, der für die Verarbeitung des Inhalts verwendet werden soll. Es sind mehrere Typen verfügbar, die unter Konfigurationstypen beschrieben werden.
@@ -100,13 +100,13 @@ Wenn ein(e) Benutzende(r) eine Aktualisierung des Inhaltssynchronisierungs-Cache
 
 Sie können den Standardbenutzer überschreiben und einen Benutzer oder eine Gruppe angeben, die einen bestimmten Inhaltssynchronisierungs-Cache aktualisiert.
 
-Um den Standardbenutzer zu überschreiben, geben Sie einen Benutzer oder eine Gruppe an, die Aktualisierungen für eine bestimmte Inhaltssynchronisierungskonfiguration durchführt, indem Sie die folgende Eigenschaft zum Knoten cq:ContentSyncConfig hinzufügen:
+Um den Standardbenutzer zu überschreiben, geben Sie einen Benutzer oder eine Gruppe an, die Aktualisierungen für eine bestimmte Inhaltssynchronisierungskonfiguration durchführt, indem Sie die folgende Eigenschaft zum cq:ContentSyncConfig-Knoten hinzufügen:
 
 * Name: updateUser
 * Typ: String
 * Wert: Der Name des Benutzers oder der Gruppe, der bzw. die die Aktualisierungen durchführen kann.
 
-Wenn der Knoten cq:ContentSyncConfig keine `updateuser`-Eigenschaft aufweist, aktualisiert der standardmäßige anonyme Benutzer den Cache.
+Wenn der cq:ContentSyncConfig-Knoten keine `updateuser` hat, aktualisiert der standardmäßige anonyme Benutzer den Cache.
 
 ### Konfigurationstypen {#configuration-types}
 
@@ -156,8 +156,7 @@ Der Bildtyp wird verwendet, um das We.Retail-Logo in die ZIP-Datei einzuschließ
 
 * **deep** - Optionale boolesche Eigenschaft, die bestimmt, ob auch untergeordnete Seiten einbezogen werden sollen. Der Standardwert lautet *true.*
 
-* **includeImages** - Optionale boolesche Eigenschaft, die bestimmt, ob Bilder einbezogen werden sollen. Der Standardwert lautet *true*.
-Standardmäßig werden nur Bildkomponenten mit dem Ressourcentyp „foundation/components/image“ für die Aufnahme berücksichtigt. Sie können weitere Ressourcentypen hinzufügen, indem Sie den **Day CQ WCM Pages Update Handler** in der Web-Konsole konfigurieren.
+* **includeImages** - Optionale boolesche Eigenschaft, die bestimmt, ob Bilder einbezogen werden sollen. Der Standardwert lautet *true*.Standardmäßig werden nur Bildkomponenten mit dem Ressourcentyp „foundation/components/image“ für die Aufnahme berücksichtigt. Sie können weitere Ressourcentypen hinzufügen, indem Sie den **Day CQ WCM Pages Update Handler** in der Web-Konsole konfigurieren.
 
 **rewrite** - Der Knoten rewrite definiert, wie die Links in der exportierten Seite neu geschrieben werden. Die neu geschriebenen Links können entweder auf die Dateien in der ZIP-Datei oder auf die Ressourcen auf dem Server verweisen.
 
@@ -174,7 +173,7 @@ Jede Eigenschaft kann einen der folgenden Werte aufweisen:
 
 * `REWRITE_RELATIVE`: Schreibt den Pfad mit einer relativen Position zur HTML-Datei der Seite im Dateisystem neu.
 
-* `REWRITE_EXTERNAL`: schreibt den Pfad neu, indem er auf die Ressource auf dem Server verweist, indem er den AEM-[Externalizer-Service) &#x200B;](/help/sites-developing/externalizer.md).
+* `REWRITE_EXTERNAL`: schreibt den Pfad neu, indem er auf die Ressource auf dem Server verweist, indem er den AEM [Externalizer-Service](/help/sites-developing/externalizer.md) verwendet.
 
 Mit dem AEM-Dienst **PathRewriterTransformerFactory** können Sie bestimmte HTML-Attribute konfigurieren, die neu geschrieben werden. Der Dienst kann in der Web-Konsole konfiguriert werden und verfügt über eine Konfiguration für jede Eigenschaft des `rewrite`: `clientlibs`, `images` und `links`.
 
@@ -230,7 +229,7 @@ Die folgende Liste zeigt eine Beispielkonfiguration für die Inhaltssynchronisie
 
 Im Beispiel sollte die Ereignisauflistungsseite die Anfangsseite sein. Diese Informationen werden in der Eigenschaft **indexPage** bereitgestellt und können daher jederzeit einfach geändert werden. Eine zweite Eigenschaft definiert den Pfad der Datei *events.plist*. Wie wir später sehen, kann die Client-Anwendung jetzt das Manifest lesen und entsprechend handeln.
 
-Wenn die Konfiguration eingerichtet ist, kann der Inhalt mit einem Browser oder einem anderen HTTP-Client heruntergeladen werden. Wenn Sie für iOS entwickeln, können Sie die dedizierte WAppKitSync-Client-Bibliothek verwenden. Der Download-Speicherort besteht aus dem Pfad der Konfiguration und der Erweiterung *.zip*, z. B. wenn mit einer lokalen AEM-Instanz gearbeitet wird: *https://localhost:4502/content/weretail_go.zip*
+Wenn die Konfiguration eingerichtet ist, kann der Inhalt mit einem Browser oder einem anderen HTTP-Client heruntergeladen werden. Wenn Sie für iOS entwickeln, können Sie die dedizierte WAppKitSync-Client-Bibliothek verwenden. Der Downloadspeicherort besteht aus dem Konfigurationspfad und der Erweiterung *.zip*, z. B. bei der Arbeit mit einer lokalen AEM-Instanz: *https://localhost:4502/content/weretail_go.zip*
 
 ### Die Konsole zur Inhaltssynchronisierung {#the-content-sync-console}
 

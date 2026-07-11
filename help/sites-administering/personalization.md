@@ -11,7 +11,7 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1710'
 ht-degree: 100%
 
 ---
@@ -143,12 +143,12 @@ Mit AEM werden verschiedene Komponenten für die Personalisierung bereitgestellt
 | Kombinierte Anmeldung und Registrierung | Ermöglicht dem Benutzer, sich entweder bei einem vorhandenen Konto anzumelden oder sich für ein neues Konto zu registrieren. |
 | Formular-Adressfeld | Ein komplexes Feld, das die Eingabe einer internationalen Adresse ermöglicht. |
 | Formular-Beginn | Startet eine Formulardefinition |
-| Formular-Captcha | Ein Feld, das aus einem automatisch aktualisierten, alphanumerischen Wort besteht.  Die Captcha-Komponente schützt Websites vor Bots. |
+| Formular-Captcha | Ein Feld, das aus einem automatisch aktualisierten, alphanumerischen Wort besteht. Die Captcha-Komponente schützt Websites vor Bots. |
 | Formular-Kontrollkästchengruppe | Mehrere Elemente, die als Liste angeordnet sind und denen Kontrollkästchen vorangestellt sind. Benutzende können mehrere Kontrollkästchen auswählen. |
 | Formular-Dropdownliste | Mehrere Elemente, die als Dropdown-Liste angeordnet sind. Der Schalter für die Mehrfachauswahl gibt an, ob mehrere Elemente aus der Liste ausgewählt werden können. |
 | Formular-Ende | Beendet die Formulardefinition |
 | Formular-Datei-Upload | Ein Upload-Element, mit dem der Benutzer eine Datei zum Server hochladen kann. |
-| Ausgeblendetes Formular-Feld | Dieses Feld wird der Benutzerin bzw. dem Benutzer nicht angezeigt. Es wird verwendet, um einen Wert an den Client und zurück zum Server zu übermitteln.  Für dieses Feld gelten keine Beschränkungen. |
+| Ausgeblendetes Formular-Feld | Dieses Feld wird der Benutzerin bzw. dem Benutzer nicht angezeigt. Es wird verwendet, um einen Wert an den Client und zurück zum Server zu übermitteln. Für dieses Feld gelten keine Beschränkungen. |
 | Formular-Bildschaltfläche | Eine zusätzliche Senden-Schaltfläche für das Formular, die als Bild dargestellt wird. |
 | Formular-Kennwortfeld | Identisch mit einem Textfeld, doch nur eine Zeile ist zulässig und die Texteingabe des Benutzers ist im Feld nicht sichtbar. |
 | Formular-Optionsfeldgruppe | Mehrere Elemente, die als Liste angeordnet sind und denen Optionsschalter vorangestellt sind. Benutzende dürfen nur ein einziges Optionsfeld auswählen. |
@@ -159,8 +159,8 @@ Mit AEM werden verschiedene Komponenten für die Personalisierung bereitgestellt
 | Profil – Genauer Name | Eingabe von Namensdetails, darunter ggf. Elemente wie Titel, zweiter Vorname und Suffix. |
 | Profil – Anzeigename | Anzuzeigender Name. |
 | Profil – E-Mail-Adresse | Eingabe einer E-Mail-Adresse. |
-| Profil – Geschlecht | Ermöglicht die Eingabe des Geschlechts.  |
-| Profil – Primäre Telefonnummer | Ermöglicht die Eingabe einer Telefonnummer.  |
+| Profil – Geschlecht | Ermöglicht die Eingabe des Geschlechts. |
+| Profil – Primäre Telefonnummer | Ermöglicht die Eingabe einer Telefonnummer. |
 | Profil – Primäre URL | Ermöglicht die Eingabe einer URL. |
 | Profil – Allgemeine Texteigenschaft | Profil – Eigenschaften. |
 | Anmelden | Ermöglicht die Eingabe eines Benutzernamens und eines Kennworts bei der Anmeldung. |
@@ -172,7 +172,7 @@ Mit AEM werden verschiedene Komponenten für die Personalisierung bereitgestellt
 
 Mit Community-Funktionen wie Blogs, Foren und Kalendern werden Community-Inhalte erstellt, die häufig als benutzergenerierte Inhalte (UGC) bezeichnet werden. Wurden benutzergenerierte Inhalte in eine aus mehreren AEM-Instanzen bestehende Veröffentlichungsumgebung eingegeben (eine [Veröffentlichungsfarm](/help/communities/topologies.md)), war hierbei eines der größten Probleme die instanzenübergreifende Synchronisierung der benutzergenerierten Inhalte.
 
-Mit der Erweiterung [AEM Communities 6.1](/help/communities/overview.md) wird dieses Problem durch einen [gemeinsamen Speicher für benutzergenerierten Inhalt (UGC, User Generated Content)](/help/communities/working-with-srp.md) gelöst. Im Hinblick auf die Personalisierung umfasst Communities die [Anmeldung bei sozialen Netzwerken](/help/communities/social-login.md) – die Möglichkeit, den Besuchern der Seite die Anmeldung über Facebook und Twitter zu ermöglichen.
+Mit der Erweiterung [AEM Communities 6.1](/help/communities/overview.md) wird dieses Problem durch einen [gemeinsamen Speicher für benutzergenerierten Inhalt (UGC, User Generated Content)](/help/communities/working-with-srp.md) gelöst. Im Hinblick auf die Personalisierung umfasst Communities die [Anmeldung bei sozialen Netzwerken](/help/communities/social-login.md) – die Möglichkeit, den Besuchern der Site die Anmeldung über Facebook und Twitter zu ermöglichen.
 
 Ohne Communities-Erweiterung gibt es verschiedene Methoden, das Problem der Konsistenz des benutzergenerierten Inhalts anzugehen:
 

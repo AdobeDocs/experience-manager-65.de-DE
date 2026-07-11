@@ -11,8 +11,8 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 100%
+source-wordcount: '196'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ Die Anmeldedaten enthalten Informationen zur Beschreibung der vorgesehenen Verwe
 
 1. Öffnen Sie einen Webbrowser und geben Sie diese URL ein:
 
-   http://localhost:port/ReaderExtensions (wobei *port* die Port-Nummer Ihres Programm-Servers ist)
+   http://localhost:port/ReaderExtensions (wobei *port* die Port-Nummer Ihres Anwendungsservers ist)
 
 1. Melden Sie sich mit dem standardmäßigen Benutzernamen und Kennwort an:
 

@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 source-git-commit: f965c449da06a1b7e60428e0734c621f004d318c
-workflow-type: ht
-source-wordcount: '2791'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '2895'
+ht-degree: 97%
 
 ---
 
@@ -97,11 +97,11 @@ Die generierte HTML-Seite enthält den folgenden Code:
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 ```
 
-Vollständige Informationen, einschließlich der Attribute zum Filtern von JS-, CSS- oder Design-Bibliotheken, finden Sie unter [ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
+Vollständige Informationen, einschließlich Attributen zum Filtern von JS-, CSS- oder Design-Bibliotheken, finden Sie unter [ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` wurde früher häufig zum Einschließen von Client-Bibliotheken verwendet, wird aber seit AEM 5.6 nicht mehr unterstützt. Stattdessen sollte [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) wie oben beschrieben verwendet werden.
+>`<cq:includeClientLib>`, das früher häufig zum Einschließen von Client-Bibliotheken verwendet wurde, wird seit AEM 5.6 nicht mehr unterstützt. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) sollte stattdessen wie oben beschrieben verwendet werden.
 
 ## Erstellen von Client-Bibliotheksordnern {#creating-client-library-folders}
 
@@ -163,7 +163,7 @@ Sie legen die Eigenschaft `allowProxy` für `foo` auf „true“ fest.
 
 ### Erstellen eines Client-Bibliotheksordners {#create-a-client-library-folder}
 
-1. Öffnen Sie CRXDE Lite in einem Webbrowser ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. https://localhost Öffnen Sie CRXDE Lite in einem Webbrowser ([:4502/crx/de](https://localhost:4502/crx/de)).
 1. Wählen Sie den Ordner aus, in dem Sie den Client-Bibliotheksordner platzieren möchten, und klicken Sie auf **Erstellen > Knoten erstellen**.
 1. Geben Sie einen Namen für die Bibliotheksdatei ein und wählen Sie in der Typenliste `cq:ClientLibraryFolder` aus. Klicken Sie auf **OK** und dann auf **Alle speichern**.
 1. Um die Kategorien festzulegen, zu denen die Bibliothek gehört, wählen Sie den `cq:ClientLibraryFolder`-Knoten aus, fügen Sie die folgende Eigenschaft hinzu und klicken Sie auf **Alle speichern**:
@@ -206,7 +206,7 @@ Die Abhängigkeiten müssen ein anderer `cq:ClientLibraryFolder` sein. Fügen Si
 
 * **Name:** dependencies
 * **Typ:** String[]
-* **Werte:** Der Wert der categories-Eigenschaft des cq:ClientLibraryFolder-Knotens, von dem der aktuelle Bibliotheksordner abhängig ist.
+* **Werte:** Der Wert der Eigenschaft „categories“ des Knotens „cq:ClientLibraryFolder“, von dem der aktuelle Bibliotheksordner abhängig ist.
 
 Beispielsweise weist /`etc/clientlibs/myclientlibs/publicmain` eine Abhängigkeit von der `cq.jquery`-Bibliothek auf. Die JSP, die die Haupt-Client-Bibliothek referenziert, generiert HTML mit dem folgenden Code:
 
@@ -393,7 +393,7 @@ Weitere Informationen zu GCC-Optionen finden Sie in der [GCC-Dokumentation](http
 
 YUI ist in AEM der Standardminimierer. Gehen Sie wie folgt vor, um stattdessen GCC festzulegen.
 
-1. Rufen Sie Apache Felix Config Manager unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) auf.
+1. Wechseln Sie zum Apache Felix Config Manager unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 1. Suchen und bearbeiten Sie den **Adobe Granite HTML Library Manager**.
 1. Aktivieren Sie die Option **Minimieren** (wenn nicht bereits aktiviert).
 1. Setzen Sie den Wert **JS-Prozessor-Standardkonfigurationen** auf `min:gcc`.

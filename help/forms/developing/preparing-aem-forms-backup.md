@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2536'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Mit dem Sicherungs- und Wiederherstellungs-Service können Sie AEM Forms in den *Sicherungsmodus* versetzen, wodurch Hot-Backups durchgeführt werden können. Der Sicherungs- und Wiederherstellungs-Service führt keine Sicherung von AEM Forms durch und stellt das System auch nicht wieder her. Stattdessen versetzt er den Server in einen Zustand, der konsistente und zuverlässige Sicherungen ermöglicht, während der Server weiterhin ausgeführt wird. Sie sind für die Maßnahmen zur Sicherung des globalen Dokumentenspeichers (GDS) und der mit dem Formular-Server verbundenen Datenbank verantwortlich. Der globale Dokumentenspeicher ist ein Ordner zum Speichern von Dateien, die in einem langlebigen Prozess genutzt werden.
 
-Der Sicherungsmodus ist ein Zustand, in den der Server versetzt wird, damit Dateien im globalen Dokumentenspeicher während eines Sicherungsverfahrens nicht bereinigt werden. Stattdessen werden Unterverzeichnisse im Ordner des globalen Dokumentenspeichers erstellt, um einen Datensatz der Dateien zu speichern, die nach Beendigung des Speichersicherungsmodus bereinigt werden sollen. Eine Datei soll Systemneustarts überdauern und kann Tage oder sogar Jahre umfassen. Diese Dateien sind ein wichtiger Bestandteil des Gesamtzustands des Formular-Servers und können PDF-Dateien, Richtlinien oder Formularvorlagen enthalten. Wenn eine dieser Dateien verloren geht oder beschädigt wird, können die Prozesse auf dem Formular-Server instabil werden und Daten verloren gehen.
+Der Sicherungsmodus ist ein Zustand, in den der Server versetzt wird, damit Dateien im globalen Dokumentenspeicher während eines Sicherungsverfahrens nicht bereinigt werden. Stattdessen werden Unterverzeichnisse im Ordner des globalen Dokumentenspeichers erstellt, um einen Eintrag mit Dateien zu speichern, die nach Beendigung des Speichersicherungsmodus bereinigt werden sollen. Eine Datei soll Systemneustarts überdauern und kann Tage oder sogar Jahre umfassen. Diese Dateien sind ein wichtiger Bestandteil des Gesamtzustands des Formular-Servers und können PDF-Dateien, Richtlinien oder Formularvorlagen enthalten. Wenn eine dieser Dateien verloren geht oder beschädigt wird, können die Prozesse auf dem Formular-Server instabil werden und Daten verloren gehen.
 
 Sie können Snapshot-Sicherungen durchführen, bei denen Sie in der Regel über einen bestimmten Zeitraum in den Sicherungsmodus wechseln und diesen beenden, nachdem Sie die Sicherungsaktivitäten abgeschlossen haben. Der Sicherungsmodus muss deaktiviert werden, damit Dateien aus dem globalen Dokumentenspeicher gelöscht werden können, sodass dieser nicht unnötig groß wird. Sie können den Sicherungsmodus entweder explizit beenden oder auf den Ablauf einer Sicherungsmodussitzung warten.
 
@@ -74,7 +74,7 @@ So erstellen Sie eine Anwendung, die den Sicherungsmodus aktiviert:
 1. (Optional) Rufen Sie Informationen zur Sicherungsmodussitzung auf dem Server ab.
 1. Führen Sie ein Backup des globalen Dokumentenspeichers (GDS) und der Datenbank durch.
 
-**Projektdateien einschließen**
+**Einbinden von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Diese Dateien müssen in Ihr Projekt aufgenommen werden, damit Sie Ihren Code ordnungsgemäß kompilieren und die Backup- und Wiederherstellungs-Service-API verwenden können.
 
@@ -131,9 +131,9 @@ So wechseln Sie mithilfe der Backup- und Wiederherstellungs-Service-API in den B
 
    * Einen `String`-Wert, der eine eindeutige, für Menschen lesbare Bezeichnung angibt, die die Backup-Modus-Sitzung benennt. Es wird empfohlen, keine Leerzeichen oder Zeichen zu verwenden, die nicht im XML-Format kodiert werden können.
    * Einen `int`-Wert, der die Anzahl der Minuten angibt, die im Backup-Modus verblieben werden soll. Sie können einen Wert zwischen `1` und `10080` angeben (Anzahl der Minuten in einer Woche). Dieser Wert wird bei Verwendung des kontinuierlichen Backup-Modus ignoriert.
-   * Einen `Boolean`-Wert, der angibt, ob der kontinuierliche Backup-Modus ausgeführt werden soll. Der Wert `True` gibt an, dass der kontinuierliche Backup-Modus ausgeführt werden soll. Im kontinuierlichen Backup-Modus wird der Wert ignoriert, den Sie für die Anzahl der Minuten angeben, die im Backup-Modus verblieben werden soll.
+   * Einen `Boolean`-Wert, der angibt, ob der kontinuierliche Backup-Modus ausgeführt werden soll. Der Wert `True` gibt an, dass der kontinuierliche Backup-Modus ausgeführt werden soll. Im kontinuierlichen Backup-Modus wird der Wert, den Sie für die Anzahl der Minuten angeben, die im Backup-Modus verbieben werden soll, ignoriert.
 
-     Der kontinuierliche Backup-Modus bedeutet, dass eine neue Backup-Modus-Sitzung gestartet wird, nachdem die aktuelle Sitzung abgeschlossen ist. Der Wert `False` bedeutet, dass der kontinuierliche Backup-Modus nicht verwendet wird und die Bereinigung der Dateien aus dem globalen Dokumentenspeicher (GDS) nach dem Verlassen des Backup-Modus fortgesetzt wird.
+     Der kontinuierliche Backup-Modus bedeutet, dass eine neue Backup-Modus-Sitzung gestartet wird, nachdem die aktuelle Sitzung abgeschlossen ist. Der Wert `False` bedeutet, dass der kontinuierliche Backup-Moduss nicht verwendet wird und die Bereinigung der Dateien aus dem globalen Dokumentenspeicher nach dem Verlassen des Backup-Modus fortgesetzt wird.
 
 1. Abrufen von Informationen zur Sicherungsmodussitzung auf dem Server
 

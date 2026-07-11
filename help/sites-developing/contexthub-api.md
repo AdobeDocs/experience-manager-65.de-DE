@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '4913'
-ht-degree: 100%
+source-wordcount: '4976'
+ht-degree: 99%
 
 ---
 
@@ -208,7 +208,7 @@ Löst das `ready`-Ereignis für diesen Store aus. Diese Funktion hat keine Param
 
 Entfernt alle Daten aus dem Store. Die Funktion hat keine Parameter und keinen Rückgabewert.
 
-#### getItem(key)  {#getitem-key}
+#### getItem(key) {#getitem-key}
 
 Gibt den Wert zurück, der einem Schlüssel zugeordnet ist.
 
@@ -256,7 +256,7 @@ Ruft die Datenstruktur aus dem Store ab. Optional können Sie die Schlüssel-Wer
 
 Ein Objekt, das die Datenstruktur darstellt. Die Schlüssel sind die Eigenschaftsnamen des Objekts.
 
-#### init(name, config)  {#init-name-config}
+#### init(name, config) {#init-name-config}
 
 Initialisiert den Store.
 
@@ -290,7 +290,7 @@ Ein boolescher Wert:
 
 Setzt das Eventing für den Store aus, sodass keine Ereignisse ausgelöst werden. Diese Funktion erfordert keine Parameter und gibt keinen Wert zurück.
 
-#### removeItem(key, options)  {#removeitem-key-options}
+#### removeItem(key, options) {#removeitem-key-options}
 
 Entfernt ein Schlüssel/Wert-Paar aus dem Store.
 
@@ -363,7 +363,7 @@ Ein `string`-Wert, der den referenzierten Schlüssel darstellt. Wenn keine Refer
 
 Nimmt das Eventing für diesen Store wieder auf, damit Ereignisse ausgelöst werden. Diese Funktion definiert keine Parameter und gibt keinen Wert zurück.
 
-#### setItem(key, value, options)  {#setitem-key-value-options}
+#### setItem(key, value, options) {#setitem-key-value-options}
 
 Fügt dem Store ein Schlüssel-Wert-Paar hinzu.
 
@@ -406,7 +406,7 @@ Konfiguriert die Details für die Verbindung mit dem JSONP-Service, den dieses O
 * **serviceConfig:** Ein Objekt, das folgende Eigenschaften enthält:
 
    * host: (Zeichenfolge) Server-Name oder IP-Adresse.
-   * jsonp: (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Wenn „true“ vorliegt, wird das Objekt {callback: &quot;ContextHub.Callbacks.*Object.name*} dem Objekt service.params hinzugefügt.
+   * jsonp: (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Wenn „true“, wird das {callback: „ContextHub.Callbacks.*Object.name*}-Objekt zum service.params-Objekt hinzugefügt.
    * params: (Object) URL-Parameter, die als Objekteigenschaften dargestellt werden. Parameternamen sind Eigenschaftsnamen und Parameterwerte sind Eigenschaftswerte.
    * path: (Zeichenfolge) Der Pfad zum Dienst.
    * port: (Zahl) Die Port-Nummer des Dienstes.
@@ -435,7 +435,7 @@ Ruft das Service-Objekt für dieses ContextHub.Store.JSONPStore-Objekt ab. Das D
 Ein Objekt mit den folgenden Eigenschaften:
 
 * **host:** (Zeichenfolge) Server-Name oder IP-Adresse.
-* **jsonp:** (Boolesch) Ein Wert „true“ zeigt an, dass der Dienst ein JSONP-Dienst ist, andernfalls ist er „false“. Wenn „true“ vorliegt, wird das Objekt {callback: &quot;ContextHub.Callbacks.*Object.name*} dem Objekt service.params hinzugefügt.
+* **jsonp:** (Boolesch) Ein Wert „true“ zeigt an, dass der Dienst ein JSONP-Dienst ist, andernfalls ist er „false“. Wenn „true“, wird das {callback: „ContextHub.Callbacks.*Object.name*}-Objekt zum service.params-Objekt hinzugefügt.
 
 * **params:** (Object) URL-Parameter, die als Objekteigenschaften dargestellt werden. Parameternamen sind Eigenschaftsnamen und Parameterwerte sind Eigenschaftswerte.
 * **path:** (Zeichenfolge) Der Pfad zum Dienst.
@@ -458,7 +458,7 @@ Ruft die URL des JSONP-Service ab.
 
 Ein `string`-Wert, der die Service-URL darstellt.
 
-#### init(name, config)  {#init-name-config-1}
+#### init(name, config) {#init-name-config-1}
 
 initialisiert das ContextHub.Store.JSONPStore-Objekt.
 
@@ -595,7 +595,7 @@ Ein Objekt von Cookies. Objekteigenschaften sind Cookie-Schlüssel und Schlüsse
 ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
 ```
 
-#### getItem(key)  {#getitem-key-1}
+#### getItem(key) {#getitem-key-1}
 
 Gibt einen Cookie-Wert zurück.
 
@@ -636,7 +636,7 @@ Ein Array von Zeichenfolgen, wobei jede Zeichenfolge der Schlüssel eines Cookie
 ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
 ```
 
-#### removeItem(key, options)  {#removeitem-key-options-1}
+#### removeItem(key, options) {#removeitem-key-options-1}
 
 Entfernt ein Cookie. Um das Cookie zu entfernen, wird der Wert auf eine leere Zeichenfolge gesetzt, und das Ablaufdatum wird auf den Tag vor dem aktuellen Datum gesetzt.
 
@@ -656,7 +656,7 @@ Diese Funktion gibt keinen Wert zurück.
 ContextHub.Utils.Cookie.vanish([/^cq-authoring/, 'cq-scrollpos']);
 ```
 
-#### setItem(key, value, options)  {#setitem-key-value-options-1}
+#### setItem(key, value, options) {#setitem-key-value-options-1}
 
 Erstellt ein Cookie mit dem angegebenen Schlüssel und Wert und fügt das Cookie zum aktuellen Dokument hinzu. Optional können Sie Optionen angeben, die die Attribute des Cookies konfigurieren.
 

@@ -7,8 +7,8 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '3945'
-ht-degree: 100%
+source-wordcount: '3986'
+ht-degree: 97%
 
 ---
 
@@ -166,7 +166,7 @@ Caused by: com.ibm.ejs.container.UnknownLocalException: nested exception is: com
                 at com.adobe.livecycle.bootstrap.bootstrappers.DSCBootstrapper.bootstrap(DSCBootstrapper.java:68)
 ```
 
-In diesem Fall arbeitet der Bootstrapper mit GemFire, um auf die erforderlichen Tabellen zuzugreifen; und es besteht eine Inkonsistenz zwischen den Tabellen, auf die über JDBC zugegriffen wird, und den zwischengespeicherten Tabelleninformationen, die von GemFire zurückgegeben werden und von einem anderen Cluster mit einer anderen zugrunde liegenden Datenbank stammen.
+In diesem Fall arbeitet der Bootstrapper mit GemFire, um auf die erforderlichen Tabellen zuzugreifen. Außerdem besteht eine Inkonsistenz zwischen den Tabellen, auf die über JDBC zugegriffen wird, und den zwischengespeicherten Tabelleninformationen, die von GemFire zurückgegeben werden und von einem anderen Cluster mit einer anderen zugrunde liegenden Datenbank stammen.
 
 Obwohl ein doppelter Port oft beim Bootstrap sichtbar wird, ist es möglich, dass es später zu dieser Situation kommt. Dies kann vorkommen, wenn ein Cluster beim Bootstrap eines anderen Clusters nach dem Herunterfahren neu gestartet wird. Oder wenn die Netzwerkkonfiguration geändert wird, um zuvor isolierte Cluster für Multicast-Zwecke für einander sichtbar zu machen.
 
@@ -224,9 +224,9 @@ Für ein erfolgreiches AEM Forms on JEE-Cluster muss der Anwendungss-Server konf
 
 Verweise:
 
-* [Hochverfügbare Enterprise-Services über JBoss®-Cluster](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
+* [Hochverfügbare Unternehmens-Services über JBoss®-Cluster](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
 
-* [Oracle WebLogic Server – Verwenden von Clustern](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
+* [Oracle WebLogic-Server mit Clustern](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
 
 ### Wie kann ich überprüfen, ob JBoss® das Clustering richtig durchführt? {#check-jboss-clustering}
 
@@ -263,13 +263,12 @@ Bei einer Einstellung wird ein Punkt zwischen „cluster “ und „locators“ 
 
 Um zu bestimmen, wie Quartz sich selbst konfiguriert hat, müssen Sie sich die vom AEM Forms on JEE Scheduler-Service beim Start generierten Nachrichten ansehen. Diese Meldungen werden mit dem Schweregrad „INFO“ erzeugt. Um die Nachrichten zu erhalten, kann es erforderlich sein, die Protokollebene anzupassen und neu zu starten. In der AEM Forms on JEE-Startsequenz beginnt die Quartz-Initialisierung mit der folgenden Zeile:
 
-INFO `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad 
+INFO `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad
 Es ist wichtig, diese erste Zeile in den Protokollen zu finden. Der Grund dafür ist, dass einige Anwendungs-Server auch Quartz nutzen und ihre Quartz-Instanzen nicht mit den vom AEM Forms on JEE-Scheduler-Dienst verwendeten Instanzen verwechselt werden sollten. Es handelt sich hierbei um den Hinweis darauf, dass der Scheduler-Dienst gestartet wird, wobei die darauffolgenden Zeilen darüber Aufschluss geben, ob dieser ordnungsgemäß im Cluster-Modus gestartet wird. In dieser Sequenz werden mehrere Nachrichten angezeigt. Die letzte „started“-Nachricht zeigt die Konfiguration von Quartz an:
 
 Hier wird der Name der Quartz-Instanz angegeben: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. Der Name der Quartz-Instanz des Schedulers beginnt immer mit der Zeichenfolge `IDPSchedulerService_$_`. Die Zeichenfolge, die am Ende angefügt wird, gibt an, ob Quartz im Cluster-Modus ausgeführt wird. Die lange eindeutige Kennung, die aus dem Hostnamen des Knotens und einer langen Zeichenfolge von Ziffern generiert wurde, hier `ap-hp8.ottperflab.adobe.com1312883903975`, zeigt an, dass die Ausführung in einem Cluster erfolgt. Wenn die Ausführung als einzelner Knoten erfolgt, ist die Kennung eine zweistellige Zahl („20“):
 
-INFO  `[org.quartz.core.QuartzScheduler]` Scheduler `IDPSchedulerService_$_20` gestarted.
-Diese Prüfung muss für alle Cluster-Knoten separat durchgeführt werden, da der Scheduler jedes Knotens in unabhängiger Weise bestimmt, ob die Ausführung im Cluster-Modus erfolgen soll.
+INFO  `[org.quartz.core.QuartzScheduler]` Scheduler `IDPSchedulerService_$_20` gestarted.Diese Prüfung muss für alle Cluster-Knoten separat durchgeführt werden, da der Scheduler jedes Knotens in unabhängiger Weise bestimmt, ob die Ausführung im Cluster-Modus erfolgen soll.
 
 ### Welche Probleme entstehen, wenn Quartz im falschen Modus ausgeführt wird? {#quartz-running-in-wrong-mode}
 

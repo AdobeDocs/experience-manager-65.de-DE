@@ -12,8 +12,8 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '5991'
-ht-degree: 100%
+source-wordcount: '6065'
+ht-degree: 93%
 
 ---
 
@@ -98,8 +98,8 @@ Das Dialogfeld erlaubt das Bearbeiten der Eigenschaften Ihrer Instanz der adapti
 
 * **Bild**
 
-   * **Bild**
-Ziehen Sie ein Bild aus dem Content Finder oder klicken Sie, um ein Browserfenster zu öffnen, in dem Sie ein Bild laden können. Nachdem das Bild geladen wurde, können Sie es beschneiden, drehen oder löschen. Verwenden Sie den Regler unter dem Bild (und über den Schaltflächen „OK“ und „Abbrechen“), um das Bild ein- und auszuzoomen.
+   * **image**
+Ziehen Sie ein Bild aus dem Content Finder oder klicken Sie, um ein Browser-Fenster zu öffnen, in dem Sie ein Bild laden können. Nachdem das Bild geladen wurde, können Sie es beschneiden, drehen oder löschen. Verwenden Sie den Regler unter dem Bild (und über den Schaltflächen „OK“ und „Abbrechen“), um das Bild ein- und auszuzoomen.
 
    * **Zuschneiden**
 Hiermit können Sie Teile eines Bildes abschneiden. Ziehen Sie den Rahmen, um das Bild zuzuschneiden.
@@ -107,15 +107,15 @@ Hiermit können Sie Teile eines Bildes abschneiden. Ziehen Sie den Rahmen, um da
    * **Drehen**
 Klicken Sie mehrfach auf „Drehen“, bis das Bild in die gewünschte Ausrichtung gedreht ist.
 
-   * **Entfernen**
-Damit entfernen Sie das aktuelle Bild.
+   * **Löschen**
+Entfernt das aktuelle Bild.
 
 * **Erweitert**
 
-   * **Titel**
+   * **title**
 Die Adaptive Image-Komponente nutzt diese Eigenschaft nicht.
 
-   * **Alt-Text**
+   * **ALT-Text**
 Der alternative Text für das Bild.
 
    * **Verknüpfung zu**
@@ -144,22 +144,20 @@ Durch klickbare Steuerelemente können Benutzerinnen und Benutzer bei Bedarf auc
 Die Eigenschaften sind auf zwei Registerkarten verfügbar:
 
 * **Karussell**
-Hier geben Sie an wie das Karussell arbeitet:
+Hier legen Sie fest, wie das Karussell arbeitet:
 
-   * Abspielgeschwindigkeit
-Die Zeit in Millisekunden bis zur Anzeige des nächsten Dias.
+   * Geschwindigkeit
+Die Zeit in Millisekunden bis zur Anzeige der nächsten Folie.
    * Übergangszeit
 Die Zeit in Millisekunden für den Übergang zwischen zwei Folien.
    * Steuerelemente-Stil
-Über ein Pulldown-Menü sind verschiedene Optionen verfügbar: z. B. Zurück-/Weiter-Schaltflächen, Schalter oben rechts.
+Verschiedene Optionen sind über ein Pulldown-Menü verfügbar; z. B. Zurück-/Weiter-Schaltflächen, Schalter oben rechts.
 
-* **Liste**
+* **list**
 Hier legen Sie fest, wie Seiten in Ihr Karussell eingeschlossen werden:
 
-   * **Erstellen einer Liste mittels**
-Es gibt verschiedene Möglichkeiten, eine Seitenliste zu erstellen: untergeordnete Seiten, feste Liste, Suche oder erweiterte Suche (alle unten beschrieben).
-Unabhängig von der gewählten Methode sollte jeder Seite, die Sie in Ihre Liste aufnehmen, bereits ein Bild zugeordnet sein. Dieses Bild wird im Karussell angezeigt. Wenn unter den Seiteneigenschaften dieser Seite kein Bild für eine Seite vorhanden ist, sollten Sie ein Bild mit der Seite verknüpfen, bevor Sie beginnen. Andernfalls wird im Karussell eine leere Seite angezeigt. Weitere Informationen finden Sie unter [Bearbeiten der Seiteneigenschaften](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
-Je nach ausgewähltem Element wird ein neues Panel angezeigt:
+   * **Liste erstellen mit**
+Es gibt mehrere Möglichkeiten, eine Seitenliste zu erstellen: untergeordnete Seiten, feste Liste, Suche oder erweiterte Suche (alle unten beschrieben).Unabhängig von der gewählten Methode sollte jeder Seite, die Sie in Ihre Liste aufnehmen, bereits ein Bild zugeordnet sein. Dieses Bild wird im Karussell angezeigt. Wenn unter den Seiteneigenschaften dieser Seite kein Bild für eine Seite vorhanden ist, sollten Sie ein Bild mit der Seite verknüpfen, bevor Sie beginnen. Andernfalls wird im Karussell eine leere Seite angezeigt. Weitere Informationen finden Sie unter [Bearbeiten der Seiteneigenschaften](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).Je nach ausgewähltem Element wird ein neues Panel angezeigt:
 
       * **Optionen für untergeordnete Seiten**
 
@@ -176,19 +174,18 @@ Wählen Sie eine Liste mit Seiten aus. Fügen Sie mit `+` weitere Einträge hinz
          * **Starten in**
 Geben Sie manuell oder über die Auswahl einen Startpfad ein.
 
-         * **Suchabfrage**
+         * **Suchanfrage**
 Sie können eine Textsuchabfrage eingeben.
 
       * **Optionen für die erweiterte Suche**
 
-         * **Querybuilder-Eigenschafts-Notation**
-Geben Sie mit der Querybuilder-Eigenschafts-Notation eine Suchanfrage ein. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
-Unter [„QueryBuilder API“](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
+         * **QueryBuilder-Eigenschaftsnotation**
+Sie können mit der Querybuilder-Eigenschaftsnotation eine Suchabfrage eingeben. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.Unter [„QueryBuilder API“](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
 
    * **Sortieren nach**
-Wählen Sie `jcr:title`, `jcr:created`, `cq:lastModified`, oder `cq:template` aus dem Dropdown-Menü aus.
+Wählen Sie `jcr:title`, `jcr:created`, `cq:lastModified` oder `cq:template` aus dem Dropdown-Menü aus.
 
-   * **Limit**
+   * **limit**
 Optional. Die maximale Anzahl von Elementen, die Sie im Karussell verwenden möchten.
 
 >[!NOTE]
@@ -202,7 +199,7 @@ Mit der Komponente „Diagramm“ können Sie ein Balken-, Linien- oder Tortendi
 * **Daten**
 
    * **Diagrammdaten**
-Geben Sie die Diagrammdaten im CSV-Format ein; das CSV-Format (kommagetrennte Werte) verwendet ein Komma (,) als Feldtrennzeichen.
+Geben Sie die Diagrammdaten im CSV-Format ein. Das CSV-Format (kommagetrennte Werte) verwendet ein Komma (,) als Feldtrennzeichen.
 
 * **Erweitert**
 
@@ -210,13 +207,13 @@ Geben Sie die Diagrammdaten im CSV-Format ein; das CSV-Format (kommagetrennte We
 Wählen Sie ein Torten-, Linien- oder Balkendiagramm aus.
 
    * **Alternativtext**
-Alternativer Text, der anstelle des Diagramms angezeigt wird.
+Anstelle des Diagramms angezeigter Text
 
    * **Breite**
 Die Breite des Diagramms in Pixeln.
 
    * **Höhe**
-Die Höhe des Diagramms in Pixeln.
+Die Höhe des Diagramms in Pixel.
 
 Im Folgenden sehen Sie ein Beispiel für Diagrammdaten und das daraus resultierende Balkendiagramm:
 
@@ -245,10 +242,10 @@ Ermöglicht das Hochladen einer ZIP-Datei mit einem Design-Paket.
 * **Download**
 
    * **Beschreibung**
-Eine kurze Beschreibung, die mit dem Download-Link angezeigt wird.
+Eine kurze Beschreibung mit dem Download-Link.
 
    * **Datei**
-Die Datei, die auf der resultierenden Web-Seite zum Download verfügbar ist. Ziehen Sie ein Asset aus der Inhaltssuche herüber oder wählen Sie den Bereich aus, damit Sie die Datei hochladen können, die Sie zum Download bereitstellen möchten.
+Die Datei, die auf der resultierenden Webseite zum Download verfügbar ist. Ziehen Sie ein Asset aus der Inhaltssuche herüber oder wählen Sie den Bereich aus, damit Sie die Datei hochladen können, die Sie zum Download bereitstellen möchten.
 
 Das folgende Beispiel zeigt die Download-Komponente in Geometrixx:
 
@@ -256,7 +253,7 @@ Das folgende Beispiel zeigt die Download-Komponente in Geometrixx:
 
 ### Extern {#external}
 
-Die Komponente zur Integration externer Anwendungen (**Extern**) bietet Ihnen die Möglichkeit, externe Anwendungen mit einem iframe in Ihre AEM-Seite zu integrieren.
+Die Komponente zur Integration externer Anwendungen (**Extern**) bietet Ihnen die Möglichkeit, externe Anwendungen mit einem iframe in Ihre AEM-Seite einzubetten.
 
 * **Extern**
 
@@ -408,7 +405,7 @@ Mit der Listenkomponente können Sie Suchkriterien zur Anzeige einer Liste konfi
 
       * **Optionen für untergeordnete Seiten**
 
-         * **Untergeordnete Elemente von (übergeordnete Seite)**
+         * **Untergeordnete Seite von** (Übergeordnete Seite)
 Geben Sie den Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nichts angeben, wird die aktuelle Seite als übergeordnete Seite verwendet.
 
       * **Optionen für Liste fester Werte**
@@ -423,9 +420,9 @@ Geben Sie den Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nicht
 
            Geben Sie manuell oder über die Auswahl einen Startpfad ein.
 
-         * **Suchanfrage**
+         * **Suchabfrage**
 
-           Sie können eine Textsuchanfrage eingeben.
+           Sie können eine Textsuchabfrage eingeben.
 
       * **Optionen für die erweiterte Suche**
 
@@ -577,8 +574,7 @@ Sie können Folgendes konfigurieren:
 
    * **Text für Rechtschreibprüfung**
 
-     Wenn jemand einen ähnlichen Begriff eingibt, wird dieser Text vor dem Begriff angezeigt.
-Wenn Sie zum Beispiel `Geometrixxe` eingeben, zeigt das System „Meinten Sie? Geometrixx“.
+     Wenn jemand einen ähnlichen Begriff eingibt, wird dieser Text vor dem Begriff angezeigt.Wenn Sie zum Beispiel `Geometrixxe` eingeben, zeigt das System „Meinten Sie? Geometrixx“.
 
    * **Text für Ähnliche Seiten**
 
@@ -677,12 +673,12 @@ Eine Tag-Cloud zeigt eine grafisch dargestellte Auswahl der Tags, die auf Inhalt
 Beim Konfigurieren der Tag-Cloud-Komponente können Sie Folgendes festlegen:
 
 * **Tags für Anzeige**
-Ort, aus dem die anzuzeigenden Tags erfasst werden sollen. Wählen Sie dafür eine Seite, eine Seite mit allen untergeordneten Seiten oder alle Tags aus.
+Ort, aus dem die anzuzeigenden Tags erfasst werden. Wählen Sie dafür eine Seite, eine Seite mit allen untergeordneten Seiten oder alle Tags aus.
 
 * **Seite**
-Wählen Sie die Seite für den Verweis aus.
+Wählen Sie die Seite aus, auf die verwiesen werden soll.
 
-* **Keine Einschränkung bezüglich Tags**
+* **Keine Tags-Links**
 Ob die angezeigten Tags als Links fungieren sollen.
 
 Weitere Informationen zum Anwenden von Tags finden Sie unter [Verwenden von Tags](/help/sites-classic-ui-authoring/classic-feature-tags.md).
@@ -708,7 +704,7 @@ Der formatierte Text wird dann auf der Seite angezeigt. Das eigentliche Design h
 
 ![dc_text_use](assets/dc_text_use.png)
 
-Weitere Informationen zur Text-Komponente und den vom Rich-Text-Editor bereitgestellten Funktionen finden Sie auf der Seite zum [Rich-Text-Editor.](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md) 
+Weitere Informationen zur Text-Komponente und den vom Rich-Text-Editor bereitgestellten Funktionen finden Sie auf der Seite zum [Rich-Text-Editor.](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)
 
 #### Kontext-Bearbeitung {#inplace-editing}
 
@@ -783,7 +779,7 @@ Das folgende Beispiel zeigt die Anzeige einer Komponente **Titel**. Das Design w
 
 ![dc_title_use](assets/dc_title_use.png)
 
-### Video  {#video}
+### Video {#video}
 
 Mit der **Video**-Komponente können Sie ein vordefiniertes, vorkonfiguriertes Videoelement auf Ihrer Seite platzieren.
 
@@ -791,7 +787,7 @@ Siehe auch [Konfigurieren Ihrer Videoprofile](/help/sites-administering/config-v
 
 Nachdem Sie eine Instanz der Komponente auf Ihrer Seite platziert haben, können Sie Folgendes konfigurieren:
 
-* Video 
+* Video
 
    * **Video-Asset**
 
@@ -898,8 +894,7 @@ Diese Registerkarten bieten die notwendigen Parameter. Die Registerkarten hänge
 
    * **Elementname**
 
-     Name des Formularelements. Gibt an, wo im Repository die Daten gespeichert werden.
-Dieses Feld ist erforderlich und sollte nur die folgenden Zeichen enthalten:
+     Name des Formularelements. Gibt an, wo im Repository die Daten gespeichert werden.Dieses Feld ist erforderlich und sollte nur die folgenden Zeichen enthalten:
 
       * alphanumerische Zeichen
       * `_ . / : -`
@@ -1012,9 +1007,7 @@ Diese erforderliche Komponente definiert den Beginn eines neuen Formulars auf ei
 
    * **Ladepfad**
 
-     Der Pfad zu den Knoteneigenschaften, mit denen vordefinierte Werte in die Formularfelder geladen werden.
-Dieses Feld ist optional und gibt den Pfad zu einem Knoten im Repository an. Wenn dieser Knoten Eigenschaften hat, die den Feldnamen entsprechen, werden die jeweiligen Felder im Formular vorab mit den Werten dieser Eigenschaften ausgefüllt. Wenn keine Übereinstimmung besteht, steht im Feld der Standardwert.
-Mit **Ladepfad** können Sie das Formular mit Werten in den erforderlichen Feldern vorab laden. Siehe den Beitrag zum [Vorabladen von Formularwerten](/help/sites-developing/developing-forms.md#preloading-form-values).
+     Der Pfad zu den Knoteneigenschaften, mit denen vordefinierte Werte in die Formularfelder geladen werden.Dieses Feld ist optional und gibt den Pfad zu einem Knoten im Repository an. Wenn dieser Knoten Eigenschaften hat, die den Feldnamen entsprechen, werden die jeweiligen Felder im Formular vorab mit den Werten dieser Eigenschaften ausgefüllt. Wenn keine Übereinstimmung besteht, steht im Feld der Standardwert.Mit **Ladepfad** können Sie das Formular mit Werten in den erforderlichen Feldern vorab laden. Siehe den Beitrag zum [Vorabladen von Formularwerten](/help/sites-developing/developing-forms.md#preloading-form-values).
 
    * **Client-Validierung**
 
@@ -1043,9 +1036,8 @@ Die Seite, die beim Erstellen eines Kontos verwendet wird.
 
       * **Inhalt erstellen**
 
-         * Inhaltspfad
-Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich (`/`) endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
-           `/forms/feedback/`
+         * Inhalts-Pfad
+Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich (`/`) endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:           `/forms/feedback/`
 
          * **Typ**
 
@@ -1120,8 +1112,7 @@ Geben Sie die erforderliche Lead-Liste an.
 
          * **Inhalts-Pfad**
 
-           Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich (`/`) endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
-           `/forms/feedback/`
+           Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich (`/`) endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:           `/forms/feedback/`
 
          * **Daten anzeigen…**
 
@@ -1317,7 +1308,7 @@ Sie können verschiedene Parameter, einschließlich der zu verwendenden Namespac
    * **Zugelassene Namespaces**
 
       * **Geometrixx Outdoors**
-      * **Arbeitsablauf**
+      * **Workflow**
       * **Forum**
       * **Bildarchiv**
       * **Geometrixx Media**

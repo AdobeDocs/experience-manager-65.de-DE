@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '699'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ Adobe Experience Manager Forms kann in einem HSM oder E-Token gespeicherte Berec
 
 Standardmäßig ist der DocAssurance-Dienst nicht aktiviert. Führen Sie zum Aktivieren des Dienstes folgende Schritte durch:
 
-1. Beenden Sie die Autoreninstanz Ihrer AEM Forms-Umgebung.
+1. Stoppen Sie die Autoreninstanz Ihrer AEM Forms-Umgebung.
 
 1. Öffnen Sie die Datei „[AEM_root]\crx-quickstart\conf\sling.properties“ zur Bearbeitung.
 
@@ -112,11 +112,11 @@ Der Aliasname enthält alle Parameter, die ein HSM oder E-Token erfordert. Befol
    >Geben Sie beim Konfigurieren von eToken einen numerischen Wert für das HSM-Steckplatz-ID-Feld an. Ein numerischer Wert ist erforderlich, um Signaturen-Vorgänge zu ermöglichen.
 
    * **Certificate SHA1** (SHA1-Zertifikat): Geben Sie den SHA1-Wert (Fingerabdruck) der öffentlichen Schlüsseldatei (.cer) für die verwendete Berechtigung an. Stellen Sie sicher, dass in dem SHA1-Wert keine Leerzeichen verwendet werden.
-   * **HSM-Gerätetyp**: Wählen Sie den HSM- oder eToken-Gerätehersteller aus (Luna oder anderer). 
+   * **HSM-Gerätetyp**: Wählen Sie den HSM- oder eToken-Gerätehersteller aus (Luna oder anderer).
 
    Klicken Sie auf **Speichern**. Das Hardware-Sicherheitsmodul ist für AEM Forms konfiguriert. Jetzt können Sie das Hardware-Sicherheitsmodul mit AEM Forms verwenden, um Dokumente zu signieren oder zu zertifizieren.
 
-## Verwenden der DocAssurance-Dienst-APIs zum Signieren oder Zertifizieren eines Dokuments mit auf dem Gerät gespeicherten digitalen Schlüsseln  {#programatically}
+## Verwenden der DocAssurance-Dienst-APIs zum Signieren oder Zertifizieren eines Dokuments mit auf dem Gerät gespeicherten digitalen Schlüsseln  {#programatically}
 
 Der folgende Beispiel-Code verwendet ein HSM oder E-Token, um ein Dokument zu signieren oder zertifizieren.
 

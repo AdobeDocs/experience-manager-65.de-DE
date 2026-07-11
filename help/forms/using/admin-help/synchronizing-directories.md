@@ -10,16 +10,16 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 0835dca60d8011ce8660f1e7fdefb2b14ccd6129
-workflow-type: ht
-source-wordcount: '1015'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1024'
+ht-degree: 95%
 
 ---
 
 
 # Synchronisieren von Verzeichnissen {#synchronizing-directories}
 
-Für die Synchronisierung von Domains haben Sie die Wahl zwischen manueller und geplanter Synchronisierung. Bei *der manuellen Synchronisierung werden* ausgewählte Domains synchronisiert. Die *geplante Synchronisierung* synchronisiert alle Domains.
+Für die Synchronisierung von Domains haben Sie die Wahl zwischen manueller und geplanter Synchronisierung. Eine *manuelle Synchronisierung* synchronisiert alle ausgewählten Domains. Eine *geplante Synchronisierung* synchronisiert alle Domains.
 
 Die Ordnersynchronisierung wird verwendet, um Details von den Ordner-Servern, die Sie in Ihren Ordnereinstellungen angegeben haben, in die User Management-Datenbank zu ziehen. Später können Sie auch eine manuelle Synchronisierung durchführen, wenn Änderungen oder Aktualisierungen auf den Ordner-Servern auftreten. Beispielsweise können Sie eine manuelle Synchronisierung durchführen, wenn Benutzende und Gruppen hinzugefügt oder Änderungen am Benutzerkonto vorgenommen werden.
 
@@ -71,9 +71,9 @@ Standardmäßig protokolliert User Management während des Synchronisierungsproz
 Sie können das User Management so konfigurieren, dass regelmäßige Prüfungen auf fehlgeschlagene Versuche zur Ordnersynchronisierung erfolgen. User Management versucht dann, die fehlgeschlagenen Synchronisierungen fertigzustellen.
 
 1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Benutzerverwaltung“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
-1. Geben Sie unter „Synch Finisher Cron Expression“ einen Cron-Ausdruck ein, der das Intervall, in dem User Management die fehlgeschlagenen Synchronisierungen erneut auszuführen versucht, angibt. Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Vorgangsplanungssystem Quartz, Version 1.4.0.
+1. Geben Sie unter „Synch Finisher Cron Expression“ einen Cron-Ausdruck ein, der das Intervall, in dem User Management die fehlgeschlagenen Synchronisierungen erneut auszuführen versucht, angibt. Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssystem Quartz, Version 1.4.0.
 
-   Der Standardwert ist 0 0/13 &amp;ast; ? &amp;ast;, was bedeutet, dass die Prüfung alle 13 Minuten durchgeführt wird.
+   Der Standardwert ist 0 0/13 &ast; ? &ast;, was bedeutet, dass die Prüfung alle 13 Minuten erfolgt.
 
 ## Manuelles Synchronisieren von Verzeichnissen {#manually-synchronize-directories}
 
@@ -89,9 +89,9 @@ Sie können das User Management so konfigurieren, dass regelmäßige Prüfungen 
 1. So planen Sie die Synchronisierung:
 
    * Wählen Sie zum Aktivieren der automatischen täglichen Synchronisierung unter „Zeitplanung“ die Option „Häufigkeit“ aus. Wählen Sie aus der Liste die Option „Täglich“ aus und geben Sie in das entsprechende Feld die Zeit im 24-Stunden-Format ein. Wenn Sie die Einstellungen speichern, wird dieser Wert in einen Cron-Ausdruck konvertiert, der im Feld „Cron-Ausdruck“ angezeigt wird.
-   * Um die Synchronisierung für einen bestimmten Tag der Woche bzw. des Monats oder in einem bestimmten Monat zu planen, wählen Sie „Cron-Ausdruck“ aus und geben Sie den entsprechenden Ausdruck in das Feld ein. Sie könnten die Synchronisierung beispielsweise für 1:30 Uhr am letzten Freitag im Monat planen. 
+   * Um die Synchronisierung für einen bestimmten Tag der Woche bzw. des Monats oder in einem bestimmten Monat zu planen, wählen Sie „Cron-Ausdruck“ aus und geben Sie den entsprechenden Ausdruck in das Feld ein. Synchronisieren Sie z. B:30 um 1 Uhr morgens am letzten Freitag des Monats.
 
-Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Vorgangsplanungssystem Quartz, Version 1.4.0.
+Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssystem Quartz, Version 1.4.0.
 
 * Zum Ausschalten der automatischen Synchronisierung wählen Sie „Häufigkeit“ und anschließend in der Liste die Option „Nie“ aus.
 * (Optional) Um Benutzer- und Gruppeninformationen im Push-Verfahren an Content Services (veraltet) zu senden, wählen Sie die Option „Wählen Sie diese Option, um für Benutzer und Gruppen ein Pushing in registrierte externe Prinzipalspeicheranbieter durchzuführen“ aus. Diese Option gilt auch, wenn neue Benutzende und Gruppen über die Seite „Benutzer und Gruppen“ hinzugefügt werden.

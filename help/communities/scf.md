@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1512'
 ht-degree: 1%
 
 ---
@@ -106,7 +106,7 @@ Dieses Framework-Endpunktmuster macht CUD-Vorgänge erweiterbar, wiederverwendba
 
 **`POST Request`**
 
-Für jeden SocialComponent-Vorgang gibt es einen Sling-Vorgang POST:operation . Die Geschäftslogik und der Wartungscode für jeden Vorgang werden in einen OperationService eingeschlossen, auf den über die HTTP-API oder von einer anderen Stelle aus als OSGi-Dienst zugegriffen werden kann. Hooks unterstützen Plug-In-Operationserweiterungen für Vor-/Nachher-Aktionen.
+Für jeden SocialComponent-:operation gibt es einen Sling-POST. Die Geschäftslogik und der Wartungscode für jeden Vorgang werden in einen OperationService eingeschlossen, auf den über die HTTP-API oder von einer anderen Stelle aus als OSGi-Dienst zugegriffen werden kann. Hooks unterstützen Plug-In-Operationserweiterungen für Vor-/Nachher-Aktionen.
 
 ![SCF nach Anfrage](assets/scf-post-request.png)
 
@@ -130,7 +130,7 @@ HBS-Skripte sind einfach, ohne Logik, auf Server und Client kompiliert, einfach 
 
 Das Framework stellt mehrere [Handlebars-Helper](handlebars-helpers.md) bereit, die bei der Entwicklung von SocialComponents nützlich sind.
 
-Wenn Sling eine GET-Anfrage auflöst, identifiziert es auf dem Server das Skript, das verwendet wird, um auf die Anfrage zu reagieren. Wenn es sich bei dem Skript um eine HBS-Vorlage (.hbs) handelt, delegiert Sling die Anfrage an die Handlebars-Engine. Die Handlebars-Engine ruft dann die SocialComponent aus der entsprechenden SocialComponentFactory ab, erstellt einen Kontext und rendert die HTML.
+Wenn Sling eine GET-Anfrage auflöst, identifiziert es auf dem Server das Skript, das verwendet wird, um auf die Anfrage zu reagieren. Wenn es sich bei dem Skript um eine HBS-Vorlage (.hbs) handelt, delegiert Sling die Anfrage an die Handlebars-Engine. Die Handlebars-Engine ruft dann die Social-Komponente aus der entsprechenden SocialComponentFactory ab, erstellt einen Kontext und rendert die HTML.
 
 ### Keine Zugriffsbeschränkung {#no-access-restriction}
 
@@ -156,7 +156,7 @@ Das Ergebnis ist ein untergeordneter JCR-Knoten unter einem para-Knoten, der Sli
 
 Das Einschließen einer Komponente bezieht sich auf den Prozess des Hinzufügens eines Verweises zu einer [&#x200B; „nicht vorhandenen“ Ressource](srp.md#for-non-existing-resources-ners) (kein JCR-Knoten) innerhalb der Vorlage, z. B. mithilfe einer Skriptsprache.
 
-Ab Adobe Experience Manager (AEM) 6.1 ist es möglich, die Eigenschaften der Komponente im Authoring-(Design)-Modus zu bearbeiten, wenn eine Komponente dynamisch eingefügt *hinzugefügt*.
+Ab Adobe Experience Manager (AEM) 6.1 ist es möglich, die Eigenschaften der Komponente im Authoring-(Design)-Modus zu bearbeiten, wenn eine Komponente dynamisch *hinzugefügt*.
 
 Nur einige wenige AEM Communities-Komponenten können dynamisch eingebunden werden. Sie sind:
 
@@ -192,7 +192,7 @@ Eine Liste [&#x200B; benutzerdefinierten Helper, die in SCF verfügbar &#x200B;]
 
 Das Framework beinhaltet eine Erweiterung von [Backbone.js](https://backbonejs.org/), einem modellbasierten JavaScript-Framework, um die Entwicklung komplexer, interaktiver Komponenten zu erleichtern. Die objektorientierte Natur unterstützt ein erweiterbares/wiederverwendbares Framework. Die Kommunikation zwischen Client und Server wird mit der HTTP-API vereinfacht.
 
-Das Framework verwendet Server-seitige Handlebars-Vorlagen zum Rendern der Komponenten für den Client. Die Modelle basieren auf den von der HTTP-API generierten JSON-Antworten. Die Ansichten verbinden sich mit dem von den Handlebars-Vorlagen generierten HTML und bieten Interaktivität.
+Das Framework verwendet Server-seitige Handlebars-Vorlagen zum Rendern der Komponenten für den Client. Die Modelle basieren auf den von der HTTP-API generierten JSON-Antworten. Die Ansichten verbinden sich mit der von den Handlebars-Vorlagen generierten HTML und bieten Interaktivität.
 
 ### CSS-Konventionen {#css-conventions}
 
