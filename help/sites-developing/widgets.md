@@ -119,7 +119,7 @@ Zum Durchführen der Übungen auf dieser Seite installieren Sie das Paket **Verw
 
 1. Laden Sie in Ihrer AEM-Instanz das Paket **Verwenden von ExtJS Widgets (v01)** von Package Share herunter und installieren Sie es. Dabei wird im Repository unter `extjstraining` das Projekt `/apps` erstellt.
 1. Fügen Sie die Client-Bibliothek, die die Skripte (js) und das Stylesheet (css) enthält, in das Head-Tag der Geometrixx-Seiten-JSP ein. Sie werden jetzt die Beispielkomponenten in eine neue Seite der Verzweigung **Geometrixx** einbeziehen:
-Öffnen Sie in **0}die `/apps/geometrixx/components/page/headlibs.jsp` und fügen Sie die `cq.extjstraining` Kategorie wie folgt zum bestehenden `<ui:includeClientLib>`-Tag hinzu:**   `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
+Öffnen Sie in **0&rbrace;die `/apps/geometrixx/components/page/headlibs.jsp` und fügen Sie die `cq.extjstraining` Kategorie wie folgt zum bestehenden `<ui:includeClientLib>`-Tag hinzu:**   `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
 1. Erstellen Sie eine Seite im **Geometrixx**-Zweig unter `/content/geometrixx/en/products` und nennen Sie sie **Verwenden von ExtJS Widgets**.
 1. Wechseln Sie in den Designmodus und fügen Sie alle Komponenten der Gruppe **Verwenden von ExtJS Widgets** dem Design von Geometrixx hinzu.
 1. Wechseln Sie zurück in den Bearbeitungsmodus: Die Komponenten der Gruppe **Verwenden von ExtJS Widgets** stehen im Sidekick zur Verfügung.
