@@ -13,8 +13,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2143'
-ht-degree: 100%
+source-wordcount: '2182'
+ht-degree: 91%
 
 ---
 
@@ -36,14 +36,13 @@ Bei der Planung eines Upgrades müssen die folgenden Bereiche einer Implementier
 1. **Aktualisieren von AEM-Anpassungen*** – *Alle Anpassungen und Erweiterungen von AEM müssen aktualisiert/validiert werden, um in 6.5 zu funktionieren, und zur 6.5-Code-Basis hinzugefügt werden. Dies beinhaltet Benutzeroberflächen-Suchformulare, Asset-Anpassungen und alle Komponenten, die „/mnt/overlay“ verwenden.
 
 1. **Bereitstellung in der Umgebung von 6.5** – Eine neue Instanz von AEM 6.5 (Autor und Veröffentlichung) muss in einer Entwicklungs-/QS-Umgebung bereitgestellt werden. Stellen Sie die aktualisierte Code-Basis und ein repräsentatives Inhaltsbeispiel (aus der aktuellen Produktion) bereit.
-1. **QS-Validierung und Fehlerkorrektur** – Die Anwendung muss auf der Autoren- und der Veröffentlichungsinstanz von 6.5 mit QS validiert werden. Korrigieren Sie die gefundenen Fehler und schließen Sie die Korrekturen in der Code-Basis von 6.5 mit ein. Wiederholen Sie den Entwicklungszyklus bei Bedarf, bis alle Fehler behoben sind.
+1. **QS-Validierung und**: Die Anwendung muss auf der Autoren- und Veröffentlichungsinstanz von 6.5 mit QS validiert werden. Alle gefundenen Fehler sollten behoben und in die 6.5-Code-Basis übertragen werden. Wiederholen Sie den Entwicklungszyklus bei Bedarf, bis alle Fehler behoben sind.
 
 Bevor Sie mit dem Upgrade beginnen, benötigen Sie eine stabile Anwendungs-Code-Basis, die sorgfältig gegen die Zielversion von AEM getestet wurde. Basierend auf den im Rahmen der Tests gemachten Beobachtungen kann der benutzerdefinierte Code möglicherweise optimiert werden. Dies kann die Umstrukturierung des Codes betreffen, um das Durchlaufen des Repositorys zu vermeiden, die benutzerdefinierte Indizierung zur Optimierung der Suche oder die Verwendung ungeordneter Knoten in JCR, um nur einige Beispiele zu nennen.
 
 Neben der optionalen Aktualisierung Ihrer Code-Basis und Anpassungen für die neue AEM-Version hilft 6.5 mit der Abwärtskompatibilitätsfunktion auch bei der effizienteren Verwaltung Ihrer Anpassungen, wie unter [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md) beschrieben.
 
-Wie oben erwähnt und im Diagramm unten dargestellt, kann die Ausführung der [Mustererkennung](/help/sites-deploying/pattern-detector.md) im ersten Schritt helfen, die Gesamtkomplexität des Upgrades zu beurteilen. Sie kann Ihnen auch bei der Entscheidung helfen, ob Sie im Kompatibilitätsmodus arbeiten oder Ihre Anpassungen aktualisieren möchten, um alle neuen Funktionen von AEM 6.5 zu nutzen. Weitere Informationen finden Sie auf der Seite [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md).
-[![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
+Wie oben erwähnt und im Diagramm unten dargestellt, kann die Ausführung der [Mustererkennung](/help/sites-deploying/pattern-detector.md) im ersten Schritt helfen, die Gesamtkomplexität des Upgrades zu beurteilen. Sie kann Ihnen auch bei der Entscheidung helfen, ob Sie im Kompatibilitätsmodus arbeiten oder Ihre Anpassungen aktualisieren möchten, um alle neuen Funktionen von AEM 6.5 zu nutzen. Weitere Informationen finden Sie auf der Seite [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md).[![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## Upgrade der Code-Basis {#upgrade-code-base}
 
@@ -67,7 +66,7 @@ AEM-UberJar beinhaltet alle AEM-APIs als einzelne Abhängigkeiten in der Datei `
 
 ### Auslaufen der Verwendung des administrativen Ressourcen-Resolvers {#phase-out-use-of-administrative-resource-resolver}
 
-Die Verwendung einer administrativen Sitzung über `SlingRepository.loginAdministrative()` und `ResourceResolverFactory.getAdministrativeResourceResolver()` war in Code-Basen vor AEM 6.0 weit verbreitet. Diese Methoden sind aus Sicherheitsgründen veraltet, da sie einen zu umfassenden Zugriff ermöglichen. [In zukünftigen Versionen von Sling werden diese Methoden entfernt](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Es wird dringend empfohlen, jeden Code neu zu strukturieren, um stattdessen Service-Benutzende zu verwenden. Informationen zu Dienstbenutzenden und zum Auslaufen von Verwaltungssitzungen finden Sie unter [Dienstbenutzende in Adobe Experience Manager (AEM)](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions).
+Die Verwendung einer administrativen Sitzung über `SlingRepository.loginAdministrative()` und `ResourceResolverFactory.getAdministrativeResourceResolver()` war in Code-Basen vor AEM 6.0 gängig. Diese Methoden werden aus Sicherheitsgründen nicht mehr unterstützt, da sie eine zu weit gefasste Zugriffsebene bieten. [In zukünftigen Versionen von Sling werden diese Methoden entfernt](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Es wird dringend empfohlen, jeden Code neu zu strukturieren, um stattdessen Service-Benutzende zu verwenden. Informationen zu Dienstbenutzenden und zum Auslaufen von Verwaltungssitzungen finden Sie unter [Dienstbenutzende in Adobe Experience Manager (AEM)](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions).
 
 ### Abfragen und Oak-Indizes {#queries-and-oak-indexes}
 
@@ -113,7 +112,7 @@ Instanzen mit angepassten Asset-Bereitstellungen müssen für das Upgrade vorber
 
 Sie können die Assets-UI-Anpassungen wie folgt vorbereiten:
 
-1. Öffnen Sie CRXDE Lite auf der Instanz, die aktualisiert wird, indem Sie zu *https://server:port/crx/de/index.jsp* gehen
+1. Öffnen Sie in der upgegradeten Instanz CRXDE Lite, indem Sie zu *https://server:port/crx/de/index.jsp wechseln*
 
 1. Navigieren Sie zum folgenden Knoten:
 
@@ -121,7 +120,7 @@ Sie können die Assets-UI-Anpassungen wie folgt vorbereiten:
 
 1. Benennen Sie den Inhaltsknoten in **content_backup** um, indem Sie mit der rechten Maustaste auf den Explorer-Bereich auf der linken Seite des Fensters klicken und **Umbenennen** auswählen.
 
-1. Wenn Sie den Knoten umbenannt haben, erstellen Sie unter `/apps/dam` einen Knoten namens **content** und legen Sie als Knotentyp **sling:Folder** fest.
+1. Nachdem der Knoten umbenannt wurde, erstellen Sie unter den Knoten `/apps/dam` mit dem Namen **content** und legen Sie als Knotentyp **sling:Folder** fest.
 
 1. Verschieben Sie alle untergeordneten Knoten von **content_backup** zum neu erstellten Inhaltsknoten, indem Sie mit der rechten Maustaste auf jeden untergeordneten Knoten im Explorer-Bereich klicken und **Verschieben** auswählen.
 
@@ -131,13 +130,13 @@ Sie können die Assets-UI-Anpassungen wie folgt vorbereiten:
 
 ### Generieren von Asset-IDs für vorhandene Assets {#generating-asset-ids-for-existing-assets}
 
-Um Asset-IDs für vorhandene Assets zu generieren, führen Sie für diese ein Upgrade durch, wenn Sie die AEM-Instanz auf AEM 6.5 aktualisieren. Dieser Schritt ist erforderlich, um die Funktion [Assets Insights](/help/assets/asset-insights.md) zu aktivieren. Weitere Einzelheiten finden Sie unter [Hinzufügen von Einbettungs-Code](/help/assets/use-page-tracker.md#add-embed-code).
+Um Asset-IDs für vorhandene Assets zu generieren, führen Sie ein Upgrade der Assets durch, wenn Sie Ihre AEM-Instanz auf AEM 6.5 aktualisieren. Dieser Schritt ist erforderlich, um die Funktion [Assets Insights zu aktivieren](/help/assets/asset-insights.md). Weitere Einzelheiten finden Sie unter [Hinzufügen von Einbettungs-Code](/help/assets/use-page-tracker.md#add-embed-code).
 
 Um Assets upzugraden, konfigurieren Sie das Paket „Associate Asset IDs“ in der JMX-Konsole. Je nach Anzahl der Assets im Repository kann das Ausführen von `migrateAllAssets` lange dauern. Interne Tests von Adobe gehen von etwa einer Stunde für 125.000 Assets auf TarMK aus.
 
 ![1487758945977](assets/1487758945977.png)
 
-Falls Sie Asset-IDs für eine Untermenge Ihrer gesamten Assets benötigen, verwenden Sie die API `migrateAssetsAtPath`.
+Falls Sie Asset-IDs für eine Teilmenge Ihrer gesamten Assets benötigen, verwenden Sie die API `migrateAssetsAtPath`.
 
 Verwenden Sie für alle anderen Zwecke die API `migrateAllAssets()`.
 
@@ -159,7 +158,7 @@ Es ist gängige Praxis, vordefinierte Workflows zu bearbeiten, um nicht benötig
 >
 >Dieses Verfahren ist nur für Website-Upgrades erforderlich, bei denen bearbeitbare Vorlagen aus AEM 6.2 verwendet werden.
 
-Die Struktur bearbeitbarer Vorlagen wurde zwischen AEM 6.2 und 6.3 geändert. Wenn Sie ein Upgrade von 6.2 oder früher durchführen und Ihr Site-Inhalt mithilfe bearbeitbarer Vorlagen erstellt wurde, müssen Sie das [Bereinigungs-Tool für responsive Knoten](https://github.com/Adobe-Marketing-Cloud/aem-sites-template-migration) verwenden. Das Tool muss **nach** einem Upgrade ausgeführt werden, um Inhalte zu bereinigen. Führen Sie sie sowohl auf der Authoring- als auch auf der Publishing-Ebene aus.
+Die Struktur für bearbeitbare Vorlagen wurde zwischen AEM 6.2 und 6.3 geändert. Wenn Sie ein Upgrade von 6.2 oder früher durchführen und Ihre Site-Inhalte mit bearbeitbaren Vorlagen erstellen, müssen Sie das Tool [Responsive Nodes Cleanup Tool](https://github.com/Adobe-Marketing-Cloud/aem-sites-template-migration) verwenden. Das Tool muss **nach** einem Upgrade ausgeführt werden, um Inhalte zu bereinigen. Führen Sie sie sowohl auf der Authoring- als auch auf der Publishing-Ebene aus.
 
 ### Änderungen an der CUG-Implementierung {#cug-implementation-changes}
 
@@ -201,7 +200,7 @@ Im Folgenden sind wichtige Bereiche einer AEM-Implementierung genannt, die vom T
   </tr>
   <tr>
    <td>Authentifizierung, Sicherheit und Berechtigungen</td>
-   <td>Alle Authentifizierungsmechanismen wie LDAP/SAML sollten überprüft werden.<br /> Berechtigungen und Gruppen sollten sowohl auf der Authoring- als auch auf der Publishing-Ebene<br /> getestet werden.</td>
+   <td>Alle Authentifizierungsmechanismen wie LDAP/SAML sollten validiert werden.<br /> Berechtigungen und Gruppen sollten sowohl auf der Autoren- als auch auf der <br /> getestet werden.</td>
   </tr>
   <tr>
    <td>Abfragen</td>
