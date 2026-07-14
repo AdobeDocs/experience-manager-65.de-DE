@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 2493f25c9f22a165360107e9f642ef3f8c07e957
+source-git-commit: 06cdf1211a48838d1e578d1d804aad00cd01eb79
 workflow-type: tm+mt
-source-wordcount: '3772'
-ht-degree: 92%
+source-wordcount: '3853'
+ht-degree: 91%
 
 ---
 
@@ -101,8 +101,7 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen der Java™ Vi
 | Azul Zulu OpenJDK 11 − 64 Bit | A: Unterstützt `[3]` | |
 | Azul Zulu OpenJDK 8 − 64 Bit | A: Unterstützt `[3]` | |
 
-1. Oracle hat für Oracle Java™ SE-Produkte ein LTS-Modell (Long Term Support) eingeführt. Java™ 9, Java™ 10 und Java™ 12 sind Nicht-LTS-Versionen von Oracle (weitere Informationen finden Sie in der Roadmap für den [Oracle Java™ SE-Support](https://www.oracle.com/technetwork/java/eol-135779.html)). Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe nur die LTS-Versionen von Java™. Der Support und die Verteilung des Oracle Java™ SE JDK, einschließlich aller Wartungs-Updates der LTS-Versionen, werden von Adobe direkt für alle AEM-Kunden unterstützt, die die Oracle Java™ SE-Technologie verwenden. Siehe die [Java™-Support-Richtlinie für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Wichtig: Oracle Java™ 17 und 21 werden auf [AEM 6.5 LTS](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements) unterstützt.**
+1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10 und Java™ 12 sind Nicht-LTS-Versionen von Oracle (weitere Informationen finden Sie in der [Roadmap für Oracle Java™ SE-Support](https://www.oracle.com/technetwork/java/eol-135779.html)). Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Verteilung des Oracle Java™ SE JDK, einschließlich aller Wartungs-Updates der LTS-Versionen, werden von Adobe direkt für alle AEM-Kunden unterstützt, die die Oracle Java™ SE-Technologie verwenden. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).   **Wichtig: Oracle Java™ 17 und 21 werden auf [AEM 6.5 LTS](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements) unterstützt.**
 
 1. Die IBM® JRE wird nur zusammen mit WebSphere Application Server unterstützt.
 
@@ -123,7 +122,7 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 | MongoDB Enterprise 8.0 | Repository | A: Unterstützt `[3, 4]` |
 | MongoDB Enterprise 7.0 | Repository | A: Unterstützt `[3, 4]` |
 | MongoDB Enterprise 6.0 | Repository | A: Unterstützt `[3, 4]` |
-| MongoDB Enterprise 5.0 | Repository | A: Unterstützt `[3, 4]` |
+| MongoDB Enterprise 5.0 | Repository | A: Unterstützt `[3, 4, 7]` |
 | MongoDB Enterprise 4.4 | Repository | A: Unterstützt `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.2 | Repository | A: Unterstützt `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.0 | Repository | Z: Nicht unterstützt |
@@ -146,6 +145,7 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 6. Gilt nur für AEM Forms:
    * Die Unterstützung für Oracle Database 12c wurde entfernt und die Unterstützung für Oracle Database 19c wurde hinzugefügt.
    * Die Unterstützung für Microsoft® SQL Server 2016 wurde entfernt und die Unterstützung für Microsoft® SQL Server 2019 und Microsoft® SQL Server 2022 wurde hinzugefügt.
+7. Wird für AEM Forms nicht unterstützt.
 
 >[!NOTE]
 >
@@ -192,7 +192,7 @@ Als Servlet-API-Version ist mindestens Servlet 3.1 erforderlich.
 | JBoss® EAP 7.2.x mit JBoss® Application Server | Z: Nicht unterstützt |
 | JBoss® EAP 7.1.4 mit JBoss® Application Server | R: Eingeschränkte Unterstützung für neue Verträge `[1]` `[2]` |
 | JBoss® EAP 7.0.x mit JBoss® Application Server | Z: Nicht unterstützt |
-| JBoss® EAP 7.4 mit JBoss®-Anwendungs-Server <sup>[2] [3] [7] | A: Unterstützt |
+| JBoss® EAP 7.4 mit JBoss® Application Server <sup>[2] [3] | A: Unterstützt |
 
 1. Wird für Bereitstellungen mit AEM Forms empfohlen.
 2. Der Start von AEM 6.5-Bereitstellungen auf Anwendungs-Servern wird nun eingeschränkt unterstützt. Bestehende Kunden können auf AEM 6.5 aktualisieren und weiterhin Anwendungs-Server verwenden. Für neue Kundinnen und Kunden werden Support-Kriterien und ein Support-Programm zur Verfügung gestellt, wie oben in der Beschreibung zu Level-R angegeben.
