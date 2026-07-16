@@ -9,7 +9,7 @@ role: Admin,User
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade,AEM Forms on JEE
-source-git-commit: 78d48ce878560020d5004b74e7a2a7a3cf1c4339
+source-git-commit: 'null'
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 63%
@@ -42,3 +42,4 @@ Gehen Sie wie folgt vor, um mit dem vollständigen Installationsprogramm ein Upg
    * [Upgrade des JBoss EAP-Clusters von 7.4.10 auf 7.4.23 für AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)
 
 Die direkte Aktualisierung von LiveCycle ES2, Live Cycle ES3, AEM 6.0 Forms, AEM 6.1 Forms oder AEM 6.2 Forms auf AEM 6.5 Forms ist nicht verfügbar. Sie können eine Zwischenaktualisierung auf eine oder mehrere Versionen von LiveCycle oder AEM Forms durchführen und dann auf AEM 6.5 Forms aktualisieren. Eine Liste der Zwischenversionen und entsprechenden Aktualisierungsanweisungen finden Sie unter [Auswählen eines Aktualisierungspfads](upgrade.md).
+
