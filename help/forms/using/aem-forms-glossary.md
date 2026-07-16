@@ -5,44 +5,60 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 hide: true
 exl-id: 1b327871-c861-48c8-aac6-cff864398bee
-source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
+source-git-commit: a2a6296acd79fa53bd7ef1622898babf56aaadd7
 workflow-type: tm+mt
-source-wordcount: '2818'
-ht-degree: 100%
+source-wordcount: '2960'
+ht-degree: 94%
 
 ---
 
 # AEM Forms-Glossar
 
-## [Adaptive Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form).
+## Adaptive Formulare
+
+[Adaptive Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form)
 
 Dynamische, responsive Formulare, die ihr Layout und ihre Darstellung auf der Grundlage des Geräts und der Eingabe der Benutzerin bzw. des Benutzers anpassen und so das Anwendererlebnis plattformübergreifend verbessern. Umfasst bedingte Logik, dynamische Datenbindung und regelbasiertes Verhalten.
 
-## [Versionierung adaptiver Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-core-components/add-versioning-reviews-comments)
+## Adaptive Formularversionierung
+
+[Adaptive Formularversionierung](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-core-components/add-versioning-reviews-comments)
 
 Funktion zum Verwalten mehrerer Versionen eines Formulars im Repository mithilfe der JCR-Knotenversionierung. Gewährleistet Audit-Trails und einfaches Rollback für adaptive Formulare.
 
-## [Integration von Adobe Analytics mit Forms](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation)
+## Integration von Adobe Analytics Forms
+
+[Integration von Adobe Analytics Forms](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation)
 
 Bietet detaillierte Einblicke in Benutzerinteraktionen (z. B. Feldabbrüche, Zeit pro Abschnitt) unter Verwendung von Adobe Analytics, was eine datengesteuerte Optimierung des Formularentwurfs ermöglicht.
 
-## [AEM Forms-Zusatzpaket](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi)
+## AEM Forms-Add-on-Paket
+
+[AEM Forms-Add-on-Paket](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi)
 
 Eine Anwendung, die in Adobe Experience Manager (AEM) als Paket bereitgestellt wird und Services (API-Anbieter) und Servlets oder JSPs enthält, die vom AEM Sling-Framework verwaltet werden.
 
-## [AEM Forms auf JEE](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)
+## AEM Forms auf JEE
+
+[AEM Forms auf JEE](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)
 
 Eine Bereitstellungsoption von AEM Forms, die Java Enterprise Edition (JEE)-Server nutzt und Skalierbarkeit, Transaktionsverwaltung und Unterstützung für komplexe Unternehmens-Workflows auf Unternehmensebene bietet.
 
-## [AEM Forms auf OSGi](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/deploying/introduction/technical-requirements)
+## AEM Forms on OSGi
+
+[AEM Forms on OSGi](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/deploying/introduction/technical-requirements)
 
 Bei einer AEM Forms auf OSGi-Umgebung handelt es sich um ein standardmäßiges AEM Author oder AEM Publish mit einem darauf bereitgestellten AEM Forms-Paket. Sie können AEM Forms on OSGi in Einzel-Server-Umgebungen sowie Farm- und Cluster-Setups ausführen. Das Cluster-Setup ist nur für AEM-Autoreninstanzen verfügbar.
 
-## [Adobe Sign in AEM Forms](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms)
+## Adobe Sign in AEM Forms
+
+[Adobe Sign in AEM Forms](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms)
 
 Ein RESTful-Service für sichere und nahtlose Workflows mit digitalen Signaturen. Er lässt sich mithilfe der OAuth-basierten Authentifizierung in AEM Forms integrieren und ermöglicht so automatisierte Signatursammlungen und die Echtzeit-Verfolgung.
 
-## [AEM Forms-Dokumentendienste 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/use-document-services/overview-aem-document-services)
+## AEM Forms Document Services 6.5
+
+[AEM Forms Document Services 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/use-document-services/overview-aem-document-services)
 
 APIs, die von der Web-Ebene von AEM Forms für die Remote-Nutzung durch HTTP-basierte Clients bereitgestellt werden, z. B. Forms Mobile SDK. Funktionen in AEM Forms, die das Erstellen, Zusammenstellen, Verteilen und Archivieren von PDF-Dokumenten, das Hinzufügen digitaler Signaturen und das Decodieren von Barcode-Formularen ermöglichen.
 
@@ -56,7 +72,9 @@ APIs, die von der Web-Ebene von AEM Forms für die Remote-Nutzung durch HTTP-bas
 | **DocAssurance-Service** | Verschlüsselt, entschlüsselt, signiert digital und wendet Dokumentensicherheits-Richtlinien auf PDFs an. | [Dokumentation zum DocAssurance-Service](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/use-document-services/overview-aem-document-services#doc-assurance-service) |
 | **PDF Generator-Dienst** | Konvertiert native Dateiformate (z. B. Microsoft Word, Excel) in PDF-Dokumente. | [Dokumentation zum PDF Generator-Dienst](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/use-document-services/aem-document-services-programmatically#pdfgeneratorservice) |
 
-## [Forms as a Cloud Service – Kommunikations-APIs](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction)
+## Forms as a Cloud Service-Kommunikations-APIs
+
+[Forms as a Cloud Service-Kommunikations-APIs](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction)
 
 AEM Forms as a Cloud Service bietet erweiterte Tools für die Verwaltung von Formularen und Kommunikations-Workflows, die die nahtlose Erstellung digitaler Formulare, Datenerfassung und personalisierte Kommunikation unterstützen. Cloud-Kommunikations-APIs bieten eine sichere On-Demand- und Batch-Dokumenterstellung, -Manipulation, -Validierung und -Integration mit externen Systemen über HTTP, was einen optimierten und sicheren Betrieb gewährleistet.
 
@@ -69,159 +87,237 @@ AEM Forms as a Cloud Service bietet erweiterte Tools für die Verwaltung von For
 | **Digitale Signaturen** | Integriert Adobe Sign für sicheres E-Signieren von Formularen und Dokumenten. | [Dokumentation zu digitalen Signaturen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html#digital-signatures) |
 
 
-## [AEM Forms Workbench](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/install-workbench)
+## AEM Forms Workbench
+
+[AEM Forms Workbench](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/install-workbench)
 
 Ein Desktop-Programm zum Erstellen, Bearbeiten und Bereitstellen von Workflows sowie zum Verwalten formularzentrierter Geschäftsprozesse. Es bietet Integration mit Backend-Services und -Systemen.
 
-## [Archetyp](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview)
+## Archetyp
+
+[Archetyp](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview)
 
 Eine Vorlage oder ein Muster in AEM, die bzw. das zum Generieren eines neuen Projekts mit einer vordefinierten Struktur verwendet wird, um die Standardisierung, schnelle Einrichtung und die Einhaltung der Best Practices für die AEM-Entwicklung zu erleichtern.
 
-## [Autoreninstanz](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/publish-process-aem-forms/publishing-unpublishing-forms)
+## Autoreninstanz
+
+[Autoreninstanz](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/publish-process-aem-forms/publishing-unpublishing-forms)
 
 Die Umgebung, in der Inhaltserstellerinnen, Inhaltsersteller und Admins Inhalte vor der Veröffentlichung entwerfen, erstellen und verwalten. Unterstützt Versionierung, Vorschau und Tests.
 
-## [Authoring-Frontend](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/install-aem-forms/aem-forms-architecture-deployment#architecture)
+## Authoring-Frontend
+
+[Authoring-Frontend](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/install-aem-forms/aem-forms-architecture-deployment#architecture)
 
 Eine Benutzeroberfläche für das Erstellen und Verwalten von Formularen in AEM Forms.
 
-## [Adaptiver Formularblock](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-references/form-components)
+## Adaptiver Formularblock
+
+[Adaptiver Formularblock](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-references/form-components)
 
 Eine Kapselungseinheit, die verwandte Komponenten und Metadaten logisch gruppiert, um so eine dynamische Datenverarbeitung und einfache Skalierbarkeit in mehrstufigen Formularen zu ermöglichen.
 
-## [Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction)
+## Kernkomponenten
+
+[Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
 Vorkonfigurierte wiederverwendbare Bausteine zum Erstellen von Formularen, einschließlich Formularfeldern, Layout-Containern, Schaltflächen und anderen interaktiven Elementen.
 
-## [Correspondence Management](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/letters-correspondences/cm-overview)
+## Correspondence Management
+
+[Correspondence Management](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/letters-correspondences/cm-overview)
 
 Ein Modul, das es Unternehmen ermöglicht, mithilfe vordefinierter Vorlagen, Regeln und Datenquellen personalisierte Korrespondenz zu erstellen, zu verwalten und bereitzustellen. Umfasst Briefvorlagen, Kundenkommunikation und Batch-Erstellung.
 
-## [CRX (Content Repository Extreme)](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/use-aem-forms-workspace/html-workspace-architecture)
+## CRX (Content repository extreme)
+
+[CRX (Content repository extreme)](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/use-aem-forms-workspace/html-workspace-architecture)
 
 Das integrierte Java Content Repository (JCR) in AEM speichert strukturierte und unstrukturierte Daten und ermöglicht so die hierarchische Speicherung von Inhalten, Vorlagen und Konfigurationen.
 
-## [Benutzerdefinierte Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/customize-adaptive-forms-core-components)
+## Benutzerdefinierte Komponente
+
+[Benutzerdefinierte Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/customize-adaptive-forms-core-components)
 
 Eine maßgeschneiderte Komponente, die die AEM Forms-Funktionen erweitert und mithilfe von Sling-Modellen, Sightly (HTL) und Java entwickelt wurde. Wird normalerweise für eine eindeutige Geschäftslogik oder erweiterte Client-seitige Interaktivität verwendet.
 
-## [Benutzerdefinierte XCI (XML-Konfigurationsinformationen)](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/administrator-help/configure-forms/specifying-xci-configuration-options)
+## Benutzerdefinierte XCI (XML-Konfigurationsinformationen)
+
+[Benutzerdefinierte XCI (XML-Konfigurationsinformationen)](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/administrator-help/configure-forms/specifying-xci-configuration-options)
 
 In Adobe Experience Manager (AEM) Forms können Admins mit einer benutzerdefinierten XCI-Datei (XML Configuration Information) bestimmte Rendering-Eigenschaften für Formulare und Dokumente definieren. Durch das Konfigurieren von XCI-Einstellungen in der Administrationskonsole können Sie Systemstandardwerte mit benutzerdefinierten Optionen überschreiben, um eine maßgeschneiderte Verarbeitung und Darstellung von Formularen sicherzustellen.
 
-## [Datenintegration](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/form-data-model/data-integration)
+## Datenintegration
+
+[Datenintegration](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/form-data-model/data-integration)
 
 Nahtlose Integration externer Datenquellen wie Datenbanken, Web-Services oder REST-APIs in Formulare und Workflows, um dynamische und personalisierte Benutzererlebnisse zu ermöglichen.
 
-## [Datenquellen](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/form-data-model/configure-data-sources)
+## Datenquellen
+
+[Datenquellen](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/form-data-model/configure-data-sources)
 
 Schnittstellen zur Integration externer Daten in Formulare, einschließlich JDBC für relationale Datenbanken, REST-Endpunkte für Web-Services und OData für SAP-Systeme. Verwaltet über das AEM Forms Data Integration-Framework.
 
-## [Dokumentfragmente](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/letters-correspondences/lists)
+## Dokumentfragmente
+
+[Dokumentfragmente](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/letters-correspondences/lists)
 
 Wiederverwendbare Komponenten von Dokumenten, wie etwa Kopf- und Fußzeilen, Haftungsausschlüsse oder Klauseln, die dynamisch in Formulare oder Korrespondenz eingefügt werden können, um Konsistenz zu gewährleisten.
 
-## [Nachweis (Document of Record, DoR)](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms)
+## Datensatzdokument (DoR)
+
+[Datensatzdokument (DoR)](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms)
 
 Eine Funktion in AEM Forms, die eine nicht bearbeitbare Archivierungsversion eines gesendeten Formulars generiert, normalerweise im PDF-Format, wobei der exakte Inhalt und das Layout als Datensatz der Transaktion beibehalten werden.
 
-## [Edge Delivery Services](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/overview)
+## Edge Delivery Services
+
+[Edge Delivery Services](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/overview)
 
 Die Bereitstellung von Inhalten für AEM Forms wurde optimiert, um eine reduzierte Latenz für Assets wie Formulare, Designs und Client-Bibliotheken zu gewährleisten, in denen Autorinnen und Autoren Inhalte schnell aktualisieren und veröffentlichen können.
 
-## [Forms-Integration](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/form-data-model/data-integration)
+## Forms-Integration
+
+[Forms-Integration](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/form-data-model/data-integration)
 
 Dazu gehört die Verbindung von AEM Forms mit Unternehmenssystemen (z. B. SAP, Salesforce) mithilfe von OSGi-Bundles und -Connectoren, die bidirektionale Datenflüsse und Echtzeit-Updates unterstützen.
 
-## [Formularüberprüfung](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms)
+## Formularüberprüfung
+
+[Formularüberprüfung](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms)
 
 Eine Workflow-gesteuerte Funktion, mit der Stakeholder adaptive Formulare überprüfen, Anmerkungen hinzufügen und Änderungen vor der Veröffentlichung genehmigen können. Verwendet AEM-Posteingang und Aufgabenverwaltung.
 
-## [Formulardatenmodell (FDM)](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model)
+## Formulardatenmodell (FDM)
+
+[Formulardatenmodell (FDM)](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model)
 
 Eine Darstellungsebene, die adaptive Formulare mit Backend-Datenquellen verbindet und so die Integration in RESTful-Webservices, SOAP-Services und OData ermöglicht. FDM ermöglicht es Formularautorinnen und -autoren, Formularfelder direkt Backend-Datenstrukturen zuzuordnen, wodurch eine nahtlose Synchronisierung von Benutzereingaben mit externen Systemen sichergestellt wird.
 
-## [Formular-Lokalisierung](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization)
+## Lokalisierung eines Formulars
+
+[Lokalisierung eines Formulars](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization)
 
 Der Prozess adaptiver Formulare zur Unterstützung mehrerer Sprachen und regionaler Einstellungen, sodass Formulare für eine vielfältige Zielgruppe zugänglich und benutzerfreundlich sind.
 
-## [Forms Portal](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/use-forms-portal/creating-form-portal-page)
+## Formularportal
+
+[Formularportal](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/use-forms-portal/creating-form-portal-page)
 
 Forms Portal-Komponenten bieten Web-Entwickelnden Komponenten zum Erstellen und Anpassen von Formularportalen auf mit Adobe Experience Manager (AEM) erstellten Websites. Es ermöglicht es Benutzenden, Formulare effizient über Web- und Mobilplattformen zu finden, darauf zuzugreifen und sie zu übermitteln.
 
-## [Ausgabedarstellung und Übermittlungs-Frontend eines Formulars](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/install-aem-forms/aem-forms-architecture-deployment#architecture)
+## Formularwiedergabe und -übermittlung - Frontend
+
+[Formularwiedergabe und -übermittlung - Frontend](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/install-aem-forms/aem-forms-architecture-deployment#architecture)
 
 Eine Endbenutzeroberfläche in AEM Forms, über die Benutzende Formulare über einen Webbrowser anzeigen und senden können.
 
-## [Formularsätze](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms)
+## Formularsätze
+
+[Formularsätze](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms)
 
 Eine Sammlung verwandter Formulare, die gruppiert sind, um sie Benutzenden als einzelne Entität anzuzeigen, sodass komplexe Datenerfassungsprozesse in überschaubare Abschnitte unterteilt werden können.
 
-## [Formular-Designer](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/using-communications/installing-configuring-designer)
+## Forms Designer
+
+[Forms Designer](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/using-communications/installing-configuring-designer)
 
 Eine eigenständige Anwendung, die zum Entwerfen von Formularvorlagen im XDP-Formular und deren Verwendung in Ihrem AEM Forms zum Generieren des Nachweises verwendet wird.
 
-## [Formularzentrierter Workflow](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow)
+## Forms-zentrierter Workflow
+
+[Forms-zentrierter Workflow](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow)
 
 Eine Reihe automatisierter oder manueller Schritte in AEM Forms, mit denen Geschäftsprozesse verwaltet werden, z. B. die Genehmigung von Dokumenten, die Veröffentlichung von Inhalten oder Benutzerbenachrichtigungen.
 
-## [Interaktive Kommunikation](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/getting-started/interactive-communications-overview)
+## Interaktive Kommunikation
+
+[Interaktive Kommunikation](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/getting-started/interactive-communications-overview)
 
 Eine benutzerdefinierte Implementierung für die Verwaltung hochgradig personalisierter, kanalübergreifender Kommunikation. Sie kombiniert Daten aus verschiedenen Quellen, wie CRM- oder ERP-Systemen, um Kommunikation über Formate wie Web, Mobile, E-Mail und Druck bereitzustellen.
 
-## [JCR (Java Content Repository)](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr)
+## JCR (Java Content Repository)
+
+[JCR (Java Content Repository)](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr)
 
 Ein hierarchisches, auf Standards basierendes Repository zum Speichern von Inhalten, Konfigurationen und Metadaten in AEM, das strukturierte und unstrukturierte Datenspeicherung unterstützt.
 
-## [Briefe](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/letters-correspondences/create-letter#create-a-letter-template)
+## Briefe
+
+[Briefe](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/letters-correspondences/create-letter#create-a-letter-template)
 
 Generierte Kundenkommunikationen unter Verwendung der AEM Forms-Dokumentendienste. Briefe werden mithilfe einer Kombination aus XDP-Vorlagen, Datenmodellen und wiederverwendbaren Fragmenten erstellt, wodurch die Skalierbarkeit in Szenarien mit hohem Volumen gewährleistet ist.
 
-## [Metadaten in AEM Forms](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/manage-administer-aem-forms/manage-form-metadata)
+## Metadaten in AEM Forms
+
+[Metadaten in AEM Forms](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/manage-administer-aem-forms/manage-form-metadata)
 
 Metadaten ermöglichen eine effiziente Kategorisierung und den Abruf von Assets. AEM Forms enthält vordefinierte Metadaten für jeden Asset-Typ und ermöglicht die Anpassung. Außerdem bietet es Tools zum nahtlosen Erstellen, Verwalten und Austauschen von Metadaten.
 
-## [PDF Generator](https://experienceleague.adobe.com/de/docs/experience-manager-learn/forms/document-services/using-pdfg-in-aem-forms)
+## PDF Generator
+
+[PDF Generator](https://experienceleague.adobe.com/de/docs/experience-manager-learn/forms/document-services/using-pdfg-in-aem-forms)
 
 Ein Tool in AEM Forms, das verschiedene Dateiformate (z. B. Word, Excel, PowerPoint) in PDF-Dokumente konvertiert und Funktionen wie Verschlüsselung, Wasserzeichen und Zusammenführen bereitstellt.
 
-## [Veröffentlichungsinstanz](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/publish-process-aem-forms/publishing-unpublishing-forms)
+## Veröffentlichungsinstanz
+
+[Veröffentlichungsinstanz](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/publish-process-aem-forms/publishing-unpublishing-forms)
 
 Die Umgebung in AEM, die Live-Inhalte für Endbenutzende bereitstellt. Sie stellt Formulare, Seiten und andere digitale Erlebnisse mit optimierter Leistung bereit.
 
-## [Regel-Editor](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/rule-editor-core-components/rule-editor-core-components)
+## Regeleditor
+
+[Regeleditor](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/rule-editor-core-components/rule-editor-core-components)
 
 Ein visuelles Tool in adaptiven Formularen, mit dem Autorinnen und Autoren benutzerdefinierte Regeln und Logiken für Formularfelder definieren können, z. B. Sichtbarkeit, Validierung und Datenvorausfüllung, ohne dass Programmierkenntnisse erforderlich sind.
 
-## [Freihandsignaturen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble)
+## Scribble-Signaturen
+
+[Scribble-Signaturen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble)
 
 Eine Funktion in AEM Forms, mit der Benutzende Formulare elektronisch signieren können, indem sie ihre Signatur direkt mit der Maus oder einem Touch-optimierten Gerät auf das Formular zeichnen.
 
-## [Übermittlungsaktion in AEM Forms](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/configuring-submit-actions)
+## Sende-Aktion in AEM Forms
+
+[Sende-Aktion in AEM Forms](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/configuring-submit-actions)
 
 Server- oder Client-seitige Aktionen, die bei der Formularübermittlung ausgeführt werden. Beispiele sind REST-API-Aufrufe, das Aufrufen eines Workflows oder das Schreiben von Daten in ein JCR (Java Content Repository).
 
-## [Designs](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
+## Designs
+
+[Designs](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
 CSS-gesteuerte Styling-Frameworks, die auf adaptive Formulare angewendet werden und LESS/SASS für Präprozessoren verwenden. Designs stellen die Einhaltung von Branding-Richtlinien und Barrierefreiheitsstandards sicher. Sie können ein Design anpassen, seine Design-Elemente, das Layout, die Farben, die Typografie und manchmal den zugrunde liegenden Code ändern.
 
-## [Vorlage](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components)
+## Vorlage
+
+[Vorlage](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components)
 
 Mit Blueprints für adaptive Formulare, die strukturelle Elemente (Felder, Layouts) und vorkonfigurierte Skripte enthalten, können Sie neue Vorlagen erstellen und anpassen oder vorhandene vordefinierte Vorlagen verwenden.
 
-## [Web-Ebene](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/install-aem-forms/aem-forms-architecture-deployment#architecture)
+## Web-Schicht
+
+[Web-Schicht](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/install-aem-forms/aem-forms-architecture-deployment#architecture)
 
 Umfasst JSPs oder Servlets, die auf allgemeine Services oder Formular-Services aufgesetzt wurden und Funktionen wie das Authoring von Frontend-, Formularwiedergabe- und Übermittlungs-Frontend- sowie REST-APIs bieten.
 
-## [XDP (XML-Datenpaket)](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/manage-administer-aem-forms/get-xdp-pdf-documents-aem)
+## XDP (XML-Datenpaket)
+
+[XDP (XML-Datenpaket)](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/manage-administer-aem-forms/get-xdp-pdf-documents-aem)
 
 Ein Dateiformat, das in AEM Forms zum Entwerfen und Strukturieren von Formularen verwendet wird und das die Wiedergabe als PDFs oder HTML ermöglicht, während gleichzeitig dynamische Inhalte und Interaktivität unterstützt werden.
 
-## [XFA (XML Forms Architecture)](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/creating-adaptive-form#create-an-adaptive-form-based-on-an-xfa-form-template)
+## XFA (XML Forms Architecture)
+
+[XFA (XML Forms Architecture)](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/creating-adaptive-form#create-an-adaptive-form-based-on-an-xfa-form-template)
 
 Eine veraltete Technologie zum Erstellen interaktiver und dynamischer PDF-Formulare. XFA-Formulare ermöglichen erweiterte Funktionen wie dynamische Layout-Anpassungen, Skripterstellung und nahtlose Integration in Backend-Systeme.
 
-## [XML- oder JSON-Schema](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/creating-adaptive-form#create-an-adaptive-form-based-on-xml-or-json-schema)
+## XML- oder JSON-Schema
+
+[XML- oder JSON-Schema](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/creating-adaptive-form#create-an-adaptive-form-based-on-xml-or-json-schema)
 
 Eine standardisierte Struktur, mit der das Format und die Organisation von XML- oder JSON-Daten in Formularen und Workflows definiert wird. Diese Schemata gewährleisten eine konsistente Datenverarbeitung und ermöglichen die Interoperabilität mit externen Systemen.
 
