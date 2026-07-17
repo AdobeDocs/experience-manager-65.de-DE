@@ -12,14 +12,14 @@ exl-id: 07f0803c-4ec4-4745-8214-63370e9d0282
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 100%
+source-wordcount: '564'
+ht-degree: 94%
 
 ---
 
 # Über den Wechsel von Dynamic Media-Hybrid zu Dynamic Media-Scene7 {#about-migrating}
 
-Dynamic Media-Hybrid ist eine ältere Version der Dynamic Media-Integration mit Adobe Experience Manager. Die Hybridversion wurde erstmals in Adobe Experience Manager 6.1 eingeführt. Obwohl Adobe den Hybridmodus weiterhin unterstützt, ist dies nicht der bevorzugte Modus. Der bevorzugte Modus ist Dynamic Media-Scene7. Der Hybridmodus unterstützt auch keine neuen Funktionen wie smartes Zuschneiden und Panoramabilder, während Dynamic Media-Scene7 sie unterstützt.
+Dynamic Media-Hybrid ist eine ältere Version der Dynamic Media-Integration mit Adobe Experience Manager. Die Hybridversion wurde erstmals in Adobe Experience Manager 6.1 eingeführt. Obwohl Adobe weiterhin den Hybridmodus unterstützt, ist dies nicht der bevorzugte Modus. Dynamic Media-Scene7 ist der bevorzugte Modus. Der Hybridmodus unterstützt auch keine neuen Funktionen wie intelligenten Zuschnitt und Panoramabilder, während Dynamic Media-Scene7 sie unterstützt.
 
 Weitere wichtige Unterschiede zwischen Dynamic Media-Hybrid und Dynamic Media-Scene7:
 
@@ -48,7 +48,7 @@ Sie könnten einfach mit einer neuen, bereitgestellten Instanz von Dynamic Media
 | 4 | Erstellen Sie ein Migrationspaket, damit Sie Assets nach Bedarf aufnehmen können.<br>Löschen Sie die lokalen PTIFF-Dateien, die bei der ersten Aufnahme in Dynamic Media-Hybrid erstellt wurden. | Wenn alle Assets derzeit in Ihrer Dynamic Media-Hybrid-Instanz verfügbar sind, enthält ein Klon dieser Instanz bereits alle Assets. Daher ist kein Paket erforderlich. |
 | 5 | Führen Sie den Aktualisierungs-Workflow für Assets aus, damit Sie die Assets mit dem Dynamic Media Cloud Service synchronisieren können. | Adobe empfiehlt, den Update-Workflow in Batches durchzuführen, um eine Komprimierung zu ermöglichen. |
 | 6 | Migrieren Sie Viewer-, Bild- und Videovorgaben. |  |
-| 7 | Durchsuchen Sie alle Web Content Management-referenzierten Assets und aktualisieren Sie die zugehörigen URLs. |  |
+| 7 | Durchsuchen Sie alle im Web Content Management referenzierten Assets und aktualisieren Sie die zugehörigen URLs. |  |
 | 8 | Migrieren Sie alle benutzerdefinierten Workflows, die den neuen Dynamic Media-Scene7-Modus unterstützen sollen (manuelle Updates). |  |
 | 9 | Überprüfen Sie den Upload und die Konfiguration des Web Content Management. |  |
 | 10 | Nach der Überprüfung können Sie eine Genehmigung zur Deaktivierung der Dynamic Media-Hybrid-Autoreninstanz einholen (als Fallback beibehalten). |  |
