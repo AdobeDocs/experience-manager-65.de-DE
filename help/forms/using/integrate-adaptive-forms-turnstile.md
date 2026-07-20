@@ -4,20 +4,16 @@ description: Mit dem Turnstile-Service können Sie die Formularsicherheit verbes
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
-workflow-type: ht
-source-wordcount: '851'
-ht-degree: 100%
+source-git-commit: 8025412849a1f324537019247a5e37b7931df7e7
+workflow-type: tm+mt
+source-wordcount: '860'
+ht-degree: 95%
 
 ---
 
 # Verbinden Ihrer AEM Forms-Umgebung mit Turnstile {#connect-your-forms-environment-with-turnstile-service}
 
-<!--
-<span class="preview">This feature is based on Feature Toggle id `FT_FORMS-12407`. To enable the feature, follow the steps given in the [Enable Feature Toggle](/help/forms/using/enable-feature-toggle.md) article. </span>
--->
-
-<span class="preview">Diese Funktion ist standardmäßig nicht aktiviert. Sie können von Ihrer offiziellen Adresse aus an aem-forms-ea@adobe.com schreiben, um Zugriff auf die Funktion zu beantragen.</span>
+<span class="preview">Diese Funktion basiert auf der Feature Toggle-ID `FT_FORMS-12407`. Um die Funktion zu aktivieren, führen Sie die Schritte aus, die im Artikel [Feature-Umschalter aktivieren](/help/forms/using/enable-feature-toggle.md) beschrieben sind. </span>
 
 CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine herausfordernde Aufgabe und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
 
@@ -34,7 +30,7 @@ AEM Forms 6.5 unterstützt die folgenden CAPTCHA-Lösungen:
 
 Turnstile Captcha von Cloudflare bietet eine Sicherheitsmaßnahme zum Schutz von Formularen vor automatisierten Bots, bösartigen Angriffen, Spams und unerwünschtem automatisierten Traffic. Bei der Formularübermittlung wird ein Kontrollkästchen angezeigt, mit dem überprüft wird, ob es sich um menschliche Benutzende handelt, bevor das Formular übermittelt werden kann.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440949?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440940/)
 
 ### Voraussetzungen für die Integration der AEM Forms-Umgebung mit Turnstile Captcha {#prerequisite}
 
@@ -49,18 +45,18 @@ So integrieren Sie AEM Forms mit dem Turnstile-Service:
    1. Navigieren Sie zu **[!UICONTROL Tools > Allgemein > Konfigurations-Browser]**.
    1. Im Konfigurations-Browser können Sie einen vorhandenen Ordner auswählen oder einen neuen Ordner erstellen:
       * So erstellen Sie einen **neuen Ordner** und aktivieren die Cloud-Konfigurationen:
-         1. Klicken Sie im Konfigurations-Browser auf **[!UICONTROL Erstellen]**.
-         1. Geben Sie im Dialogfeld „Konfiguration erstellen“ einen Namen und einen Titel an und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**.
-         1. Klicken Sie auf **[!UICONTROL Erstellen]**.
+        1. Klicken Sie im Konfigurations-Browser auf **[!UICONTROL Erstellen]**.
+        1. Geben Sie im Dialogfeld „Konfiguration erstellen“ einen Namen und einen Titel an und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**.
+        1. Klicken Sie auf **[!UICONTROL Erstellen]**.
       * So aktivieren Sie die Option „Cloud-Konfigurationen“ für einen **vorhandenen Ordner**:
-         1. Wählen Sie im Konfigurations-Browser den Ordner aus und klicken Sie auf **[!UICONTROL Eigenschaften]**.
-         1. Aktivieren Sie im Dialogfeld „Konfigurationseigenschaften“ die Option **[!UICONTROL Cloud-Konfigurationen]**.
-         1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**, um die Konfiguration zu speichern.
+        1. Wählen Sie im Konfigurations-Browser den Ordner aus und klicken Sie auf **[!UICONTROL Eigenschaften]**.
+        1. Aktivieren Sie im Dialogfeld „Konfigurationseigenschaften“ die Option **[!UICONTROL Cloud-Konfigurationen]**.
+        1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**, um die Konfiguration zu speichern.
 
 1. So konfigurieren Sie Ihre Cloud-Services:
-   1. Navigieren Sie in Ihrer AEM-Autorinstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud-Services]** und klicken Sie auf **[!UICONTROL Turnstile]**.
+   1. Navigieren Sie in Ihrer AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud-Services]** und klicken Sie auf **[!UICONTROL Turnstile]**.
       ![Turnstile in Cloud-Services](assets/turnstile-in-ui.png)
-   1. Wählen Sie einen Konfigurations-Container aus, der wie im vorherigen Abschnitt beschrieben erstellt oder aktualisiert wurde. Klicken Sie auf **[!UICONTROL Erstellen]**.
+   1. Wählen Sie einen erstellten oder aktualisierten Konfigurations-Container aus, wie im vorherigen Abschnitt beschrieben. Klicken Sie **[!UICONTROL Erstellen]**.
       ![Konfiguration von Turnstile](assets/config-hcaptcha.png)
    1. Geben Sie den **[!UICONTROL Widget-Typ]** als verwaltet, nicht interaktiv oder unsichtbar an.
    1. Geben Sie weitere Details an wie **[!UICONTROL Titel]** und **[!UICONTROL Name]**.
