@@ -11,8 +11,8 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 100%
+source-wordcount: '1066'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Bei einer typischen formularzentrierten Portal-Bereitstellung erfolgen Formular-
 
 Solche Szenarien führen oft zu Management-Problemen und Produktionsverzögerungen. Wenn beispielsweise eine neuere Version eines Formulars im Repository verfügbar ist, müssen Sie das Formular in der Web-Stufe ersetzen, die Web-Anwendung ändern und das Formular erneut auf der öffentlichen Website bereitstellen. Die erneute Bereitstellung der Web-Anwendung kann zu Server-Downtime führen. In der Regel handelt es sich bei Server-Downtime um eine geplante Aktivität, weshalb die Änderungen nicht sofort an die öffentliche Site gesendet werden können.
 
-AEM Forms bietet Portalkomponenten, die den Verwaltungsaufwand und Produktionsverzögerungen reduzieren. Mit den Komponenten können Web-Entwickler Formularportale auf mit Adobe Experience Manager (AEM) erstellten Websites erstellen und anpassen. 
+AEM Forms bietet Portalkomponenten, die den Verwaltungsaufwand und Produktionsverzögerungen reduzieren. Mit den Komponenten können Web-Entwickler Formularportale auf mit Adobe Experience Manager (AEM) erstellten Websites erstellen und anpassen.
 
 ![AEM Forms-Portal](assets/aem-forms-portal.png)
 
@@ -76,7 +76,7 @@ Im Formularportal können Sie Formulare aus dem Formular-Repository auf Ihrer Po
 
 1. **Auflisten von Formularentwürfen und übermittelten Formularen auf einer Formularportal-Seite:** Fügen Sie der Formularportal-Seite die Komponente „Entwürfe und Sendungen“ hinzu und konfigurieren Sie sie. Mit der Komponente „“ können Sie alle Formulare auflisten, die den Status „Entwurf“ aufweisen, und diejenigen, die bereits gesendet wurden.
 
-   Damit ein übermitteltes adaptives Formular auf der Registerkarte für Übermittlungen angezeigt werden kann, legen Sie als **Übermittlungsaktion** die Option **[Übermittlungsaktion für Formularportal](configuring-submit-actions.md) fest.** Sie können stattdessen auch die Option „Forms Portal Submit“ aktivieren. Wenn ein Benutzer das Formular übermittelt, wird dieses der Registerkarte „Übermittlungen“ hinzugefügt.
+   Damit ein übermitteltes adaptives Formular auf der Registerkarte für Übermittlungen angezeigt werden kann, legen Sie **Übermittlungsaktion** auf **[Forms Portal-Übermittlungsaktion](configuring-submit-actions.md) fest** Sie können stattdessen auch die Option &quot;Forms Portal Submit“ aktivieren. Wenn ein Benutzer das Formular übermittelt, wird dieses der Registerkarte „Übermittlungen“ hinzugefügt.
 
 1. **Konfigurieren Sie den Speicher für die Daten von Formularentwürfen und gesendeten Formularen:** Standardmäßig werden die Daten von Entwürfen und Übermittlungen im AEM Repository gespeichert. In einer Produktionsumgebung wird empfohlen, keine Entwurfs- oder gesendete Formulardaten nicht im AEM-Repository zu speichern. [Konfigurieren Sie die Formularportal-Komponente, um Daten an einem sicheren Speicherort zu speichern](../../forms/using/draft-submission-component.md#customizing-the-storage).
 1. **(Optional) Anpassen der Formularportal-Komponenten:** [Passen Sie Ihre Vorlagen für Formularportal-Seiten an](../../forms/using/customizing-templates-forms-portal-components.md), um den Komponenten ein charakteristisches Erscheinungsbild zu verleihen.

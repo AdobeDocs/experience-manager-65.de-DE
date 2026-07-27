@@ -11,7 +11,7 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '766'
 ht-degree: 100%
 
 ---
@@ -36,13 +36,13 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
   Hier können Sie der Seite Tags hinzufügen (oder davon entfernen), indem Sie die Liste im Auswahlfeld aktualisieren:
 
-   * Nachdem Sie ein Tag ausgewählt haben, wird es unterhalb des Auswahlfelds aufgelistet. Sie können ein Tag mit dem „x“ aus dieser Liste entfernen.
-   * Sie können ein völlig neues Tag eingeben, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
+  * Nachdem Sie ein Tag ausgewählt haben, wird es unterhalb des Auswahlfelds aufgelistet. Sie können ein Tag mit dem „x“ aus dieser Liste entfernen.
+  * Sie können ein völlig neues Tag eingeben, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
 
-     Das neue Tag wird erstellt, wenn Sie die Eingabetaste drücken. Das neue Tag wird dann in einem Feld angezeigt. Ein kleiner Stern auf der rechten Seite markiert es als neues Tag.
+    Das neue Tag wird erstellt, wenn Sie die Eingabetaste drücken. Das neue Tag wird dann in einem Feld angezeigt. Ein kleiner Stern auf der rechten Seite markiert es als neues Tag.
 
-   * In der Dropdown-Liste können Sie aus vorhandenen Tags auswählen.
-   * Wenn Sie den Mauszeiger über einen Tag-Eintrag im Auswahlfeld bewegen, wird ein x angezeigt, mit dessen Hilfe Sie das Tag löschen können.
+  * In der Dropdown-Liste können Sie aus vorhandenen Tags auswählen.
+  * Wenn Sie den Mauszeiger über einen Tag-Eintrag im Auswahlfeld bewegen, wird ein x angezeigt, mit dessen Hilfe Sie das Tag löschen können.
 
 * **In Navigation ausblenden**
 
@@ -131,19 +131,19 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
   Geben Sie eine Exportkonfiguration an.
 
-### Miniaturansicht  {#thumbnail}
+### Miniaturansicht {#thumbnail}
 
 * **Seitenminiatur**
 
   Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
-   * **Vorschau generieren**
+  * **Vorschau generieren**
 
-     Generieren Sie eine Vorschau der Seite, die als Miniatur verwendet werden soll.
+    Generieren Sie eine Vorschau der Seite, die als Miniatur verwendet werden soll.
 
-   * **Bild hochladen**
+  * **Bild hochladen**
 
-     Laden Sie ein Bild hoch, das als Miniatur verwendet werden soll.
+    Laden Sie ein Bild hoch, das als Miniatur verwendet werden soll.
 
 ### Cloud-Services {#cloud-services}
 
@@ -151,7 +151,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
   Definieren Sie Eigenschaften für [Cloud-Services](/help/sites-developing/extending-cloud-config.md).
 
-### Personalisierung  {#personalization}
+### Personalisierung {#personalization}
 
 * **Personalisierung**
 
