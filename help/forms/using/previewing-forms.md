@@ -1,6 +1,6 @@
 ---
 title: Formularvorschau
-description: Sie können Ihre Formulare in der Vorschau anzeigen, bevor Sie sie veröffentlichen oder aktivieren, um sicherzustellen, dass sie den Erwartungen entsprechen.  Die Vorschauoptionen können abhängig von den unterstützten Formulartypen variieren.
+description: Sie können Ihre Formulare in der Vorschau anzeigen, bevor Sie sie veröffentlichen oder aktivieren, um sicherzustellen, dass sie den Erwartungen entsprechen. Die Vorschauoptionen können abhängig von den unterstützten Formulartypen variieren.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '417'
 ht-degree: 100%
 
 ---
@@ -70,7 +70,7 @@ In der folgenden Tabelle sind die Vorschauoptionen aufgeführt, die für verschi
 
 ## Vorschau mit Daten {#preview-with-data}
 
-Wenn Sie **Vorschau mit Daten** auswählen, können Sie sehen, wie das Formular mit echten eingegebenen Daten aussieht.  Mit der Option „Vorschau mit Daten“ können Sie eine XML-Datei hochladen, die Beispielbenutzerdaten enthält. Die Beispielbenutzerdaten werden zum Ausfüllen des Vorschauformulars in dem von Ihnen ausgewählten Format verwendet.
+Wenn Sie **Vorschau mit Daten** auswählen, können Sie sehen, wie das Formular mit echten eingegebenen Daten aussieht. Mit der Option „Vorschau mit Daten“ können Sie eine XML-Datei hochladen, die Beispielbenutzerdaten enthält. Die Beispielbenutzerdaten werden zum Ausfüllen des Vorschauformulars in dem von Ihnen ausgewählten Format verwendet.
 
 1. Wählen Sie ein Asset aus, klicken Sie auf „Vorschau“ ![aem6forms_preview](assets/aem6forms_preview.png) und wählen Sie **Vorschau mit Daten** aus.
 1. Geben Sie im Dialogfeld „Formularvorschau“ FormData als XML-Datei an. Klicken Sie auf „Vorschau“, um das Formular mit den zusammengeführten Daten aus der XML-Datei zu rendern.

@@ -12,7 +12,7 @@ feature: Correspondence Management
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1409'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ Mit AEM Forms können Sie Formulare mühelos erstellen, veröffentlichen und die
 
 Der AEM Forms-Server umfasst zwei Instanzen: die Autoren- und die Veröffentlichungsinstanz. Der Autoreninstanz dient dem Erstellen und Verwalten von Formular-Assets und -Ressourcen. Die Veröffentlichungsinstanz dient dazu, Assets und zugehörige Ressourcen aufzubewahren, die für Endbenutzende verfügbar sind. Sie können XDP- und PDF-Formulare im Autorenmodus importieren. Detaillierte Informationen finden Sie unter [XDP- und PDF-Dokumente in AEM Forms aufrufen](../../forms/using/get-xdp-pdf-documents-aem.md).
 
-## Unterstützte Assets  {#supported-assets-nbsp}
+## Unterstützte Assets   {#supported-assets-nbsp}
 
 AEM Forms unterstützt die folgenden Assettypen:
 
@@ -48,12 +48,12 @@ Ihre adaptiven Formulare nutzen möglicherweise einige Konfigurationen, Einstell
 * Andere Cloud-Service-Konfigurationen sind nur aktiviert, wenn der Benutzer über Administratorberechtigungen verfügt.
 * Anpassungen. Dazu gehören unter anderem:
 
-   * benutzerdefinierte Layouts
-   * benutzerdefinierte Darstellungen
-   * CSS-Datei – als Eingabe im Dialogfeld „Container-Eigenschaften für adaptive Formulare“
-   * Client-Bibliothekskategorie – als Eingabe im Dialogfeld „Container-Eigenschaften für adaptive Formulare“
-   * andere Client-Bibliotheken, die möglicherweise als Teil der adaptiven Formularvorlage enthalten sind.
-   * Design-Pfade
+  * benutzerdefinierte Layouts
+  * benutzerdefinierte Darstellungen
+  * CSS-Datei – als Eingabe im Dialogfeld „Container-Eigenschaften für adaptive Formulare“
+  * Client-Bibliothekskategorie – als Eingabe im Dialogfeld „Container-Eigenschaften für adaptive Formulare“
+  * andere Client-Bibliotheken, die möglicherweise als Teil der adaptiven Formularvorlage enthalten sind.
+  * Design-Pfade
 
 ## Asset-Status {#asset-states}
 
@@ -142,7 +142,7 @@ Führen Sie folgende Schritte aus, um das Datum und die Uhrzeit für die Veröff
    1. Bewegen Sie den Mauszeiger über ein Asset und wählen Sie **[!UICONTROL Veröffentlichung rückgängig machen]**![unpublish](assets/unpublish.png) aus.
    1. Führen Sie einen der folgenden Schritte aus und wählen Sie „Veröffentlichung rückgängig machen“ aus:
 
-      * Wenn Sie sich in der Kartenansicht befinden, wählen Sie **[!UICONTROL Auswahl eingeben]**![aem6forms_check-circle](assets/aem6forms_check-circle.png) und dann das Asset aus. Das Asset wird ausgewählt.
+      * Wenn Sie sich in der Kartenansicht befinden, wählen Sie **[!UICONTROL Auswahl eingeben]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) und dann das Asset aus. Das Asset wird ausgewählt.
 
       * Wenn Sie sich in der Listenansicht befinden, bewegen Sie den Mauszeiger über ein Asset und wählen Sie ![selectassetcheckmark](assets/selectassetcheckmark.png) aus. Das Asset wird ausgewählt.
 
@@ -198,6 +198,6 @@ Aktivieren der Authentifizierung für Ihre Formulare:
 1. Öffnen Sie in Ihrem Browser „configMgr“ in der Veröffentlichungsinstanz.\
    URL: `https://<hostname>:<PublishPort>/system/console/configMgr`
 
-1. Klicken Sie auf der Seite „Adobe Experience Manager Web Console-Konfigurationen“ auf **Apache Sling-Authentifizierungs-Service**, um diesen Service zu konfigurieren.
+1. Klicken Sie auf der Seite „Konfiguration der Adobe Experience Manager-Web-Konsole“ auf **Apache Sling-Authentifizierungs-Service**, um diesen Service zu konfigurieren.
 1. Fügen Sie im daraufhin angezeigten Dialogfeld „Apache Sling-Authentifizierungs-Service“ mithilfe der Schaltfläche **+** die gewünschten Pfade hinzu.\
    Wenn Sie einen Pfad hinzufügen, wird der Authentifizierungs-Service für Formulare unter diesem Pfad aktiviert.
