@@ -10,8 +10,8 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 100%
+source-wordcount: '788'
+ht-degree: 97%
 
 ---
 
@@ -105,7 +105,7 @@ Zusammen mit dem Produktinformations-Management (PIM) verarbeitet eCommerce die 
 * Preisverwaltung
 * Transaktionsmanagement
 * Verwaltung von kompletten Katalogen
-* Live- und zentralisierte Speicherdatensätze
+* Live- und zentralisierte Speichereinträge
 * Web-Schnittstellen
 
 AEM eCommerce hilft Marketing-Fachleuten bei der Bereitstellung von markenspezifischen, personalisierten Einkaufserlebnissen über Web-, mobile und soziale Touchpoints hinweg. In der Authoring-Umgebung von AEM können Sie die Seiten und Komponenten an den Kontext der Zielbesucherinnen und -besucher und Ihre Merchandising-Strategien anpassen, zum Beispiel:
@@ -133,12 +133,12 @@ AEM eCommerce bietet:
 
 * Eine Reihe von **AEM-Komponenten, die vorkonfiguriert sind** und zeigen, was bei Ihrem Projekt möglich ist:
 
-   * Produktanzeige
-   * Warenkorb
-   * Checkout
-   * Kürzlich angesehene Produkte
-   * Gutscheine
-   * und mehr
+  * Produktanzeige
+  * Warenkorb
+  * Checkout
+  * Kürzlich angesehene Produkte
+  * Gutscheine
+  * und mehr
 
   ![Beispiel für Geometrixx-Komponenten](/help/sites-administering/assets/chlimage_1-130.png)
 
@@ -148,10 +148,10 @@ AEM eCommerce bietet:
 
 * **Suche** – mit entweder:
 
-   * der AEM-Suche
-   * der Suche des eCommerce-Systems
-   * der Suche von Drittanbietern
-   * oder eine Kombination aus diesen Suchmöglichkeiten
+  * der AEM-Suche
+  * der Suche des eCommerce-Systems
+  * der Suche von Drittanbietern
+  * oder eine Kombination aus diesen Suchmöglichkeiten
 
   ![Suchbeispiel](/help/sites-administering/assets/chlimage_1-131.png)
 
@@ -165,8 +165,8 @@ AEM eCommerce bietet:
 
 * Die Möglichkeit der Entwicklung eines **erlebnisgesteuerten Handels, der auf Kundendaten und Aktivitäten basiert**. Auf diese Weise können Sie viele Szenarien umsetzen:
 
-   * Beispielsweise können Sie einen Nachlass auf die Versandkosten anbieten, wenn der Gesamtbetrag der Bestellung einen bestimmten Wert überschreitet.
-   * Eine andere Möglichkeit besteht darin, saisonale Angebote anzubieten, die auf Profildaten (z. B. dem Standort) basieren. Diese können dann bei Bedarf hervorgehoben werden, auch hier abhängig von anderen Faktoren.
+  * Beispielsweise können Sie einen Nachlass auf die Versandkosten anbieten, wenn der Gesamtbetrag der Bestellung einen bestimmten Wert überschreitet.
+  * Eine andere Möglichkeit besteht darin, saisonale Angebote anzubieten, die auf Profildaten (z. B. dem Standort) basieren. Diese können dann bei Bedarf hervorgehoben werden, auch hier abhängig von anderen Faktoren.
 
   Im folgenden Beispiel wird ein Teaser angezeigt, da der Inhalt des Warenkorbs weniger als 75 USD beträgt:
 
@@ -178,9 +178,9 @@ AEM eCommerce bietet:
 
 * Und andere Funktionen wie:
 
-   * Inhalte des Warenkorbs werden sitzungsübergreifend beibehalten
-   * Vollständiger Bestellverlauf
-   * Express-Katalogaktualisierung
+  * Inhalte des Warenkorbs werden sitzungsübergreifend beibehalten
+  * Vollständiger Bestellverlauf
+  * Express-Katalogaktualisierung
 
 ## Das Framework {#the-framework}
 

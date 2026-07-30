@@ -10,8 +10,8 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 100%
+source-wordcount: '1769'
+ht-degree: 90%
 
 ---
 
@@ -31,7 +31,7 @@ Nach der Installation können Sie Ihre Instanz konfigurieren:
 
 >[!NOTE]
 >
->Dies ist für Hybris 5.3.0.1 und spätere Versionen nicht erforderlich.
+>Dies ist für Hybris 5.3.0.1 und höher nicht erforderlich.
 
 1. Navigieren Sie in Ihrem Browser zur **Hybris-Verwaltungskonsole** unter:
 
@@ -105,7 +105,7 @@ Nach der Installation können Sie Ihre Instanz konfigurieren:
 
 Sie können die importierte **Katalogversion** (`hybris.catalog.version`) für den OSGi-Service konfigurieren:
 
-**Day CQ Commerce Hybris Configuration**
+**Day CQ Commerce Hybris-Konfiguration**
 ( `com.adobe.cq.commerce.hybris.common.DefaultHybrisConfigurationService`)
 
 Die **Katalogversion** ist entweder auf `Online` oder `Staged` (Standard) eingestellt.
@@ -161,7 +161,7 @@ Solch eine Struktur wird vom OSGi-Service `DefaultImportHandler` erstellt, der d
 
 Die beim Importieren zu erzeugende Struktur kann für Folgendes konfiguriert werden:
 
-``**Day CQ Commerce Hybris Default Import Handler**
+&quot;**Day CQ Commerce Hybris Default Import Handler**
 `(com.adobe.cq.commerce.hybris.importer.DefaultImportHandler`)
 
 In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md). Darüber hinaus enthält die Konsole eine vollständige Liste mit den konfigurierbaren Parametern und den dazugehörigen Standardwerten.
@@ -170,7 +170,7 @@ In AEM können Sie die Konfigurationseinstellungen für solche Services auf unte
 
 Der Antwort-Parser kann so konfiguriert werden, dass er die Eigenschaften und Attribute definiert, die für (Varianten-)Produkte geladen werden sollen:
 
-1. Konfigurieren Sie das OSGi-Bundle:
+1. Konfigurieren Sie das OSGi-Paket:
 
    **Day CQ Commerce Hybris Default Response Parser**
 (`com.adobe.cq.commerce.hybris.impl.importer.DefaultResponseParser`)
@@ -333,10 +333,10 @@ Verfügbar ist es unter:
 Sie müssen die folgenden Informationen angeben:
 
 * **Basisspeicher**
-Die ID des in Hybris konfigurierten Basisspeichers.
+Die Kennung des in Hybris konfigurierten Basisspeichers.
 
 * **Katalog**
-Die ID des zu importierenden Katalogs.
+Die Kennung des zu importierenden Katalogs.
 
 * **Stammverzeichnis**
 Der Pfad, in den der Katalog importiert werden soll.
@@ -375,7 +375,7 @@ So entfernen Sie ein oder mehrere Produkte aus dem Katalog:
 
    Beispiel:
 
-   * Öffnen Sie die Seite [http://localhost:9001/productcockpit](http://localhost:9001/productcockpit).
+   * Seite öffnen [http://localhost:9001/productcockpit](http://localhost:9001/productcockpit)
    * Wählen Sie den Katalog `Outdoors Staged` aus.
    * Suchen Sie nach `Cajamara`.
    * Wählen Sie dieses Produkt aus und ändern Sie den Genehmigungsstatus in `unapproved`.
@@ -412,7 +412,7 @@ So fügen Sie einen Auftragsverlauf zum [Client Context](/help/sites-developing/
 1. Öffnen Sie die [Client Context-Designseite](/help/sites-administering/client-context.md) auf eine der folgenden Arten:
 
    * Öffnen Sie eine Seite für die Bearbeitung und anschließend Client Context mit **Strg+Alt+C** (Windows) oder **Ctrl+Wahltaste+C** (Mac). Verwenden Sie das Bleistiftsymbol in der oberen linken Ecke des Client-Kontextes, um **die ClientContext-Design-Seite zu öffnen**.
-   * Navigieren Sie direkt zu [http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html).
+   * Direkt zu [http://localhost:4502/etc/clientcontext/default/content.html navigieren](http://localhost:4502/etc/clientcontext/default/content.html)
 
 1. [Fügen Sie die Komponente **Auftragsverlauf** ](/help/sites-administering/client-context.md#adding-a-property-component) zur Komponente **Warenkorb** des Client-Kontexts hinzu.
 1. Sie können bestätigen, dass im Client-Kontext Details zum Auftragsverlauf angezeigt werden. Beispiel:
@@ -431,7 +431,7 @@ So fügen Sie einen Auftragsverlauf zum [Client Context](/help/sites-developing/
    >
    >So wird die Nachricht realisiert:
    >
-   >* Navigieren Sie zu [http://localhost:4502/content/campaigns/geometrixx-outdoors/hybris-returning-customer.html](http://localhost:4502/content/campaigns/geometrixx-outdoors/hybris-returning-customer.html).
+   >* Navigieren Sie zu [http://localhost:4502/content/campaigns/geometrixx-outdoors/hybris-returning-customer.html](http://localhost:4502/content/campaigns/geometrixx-outdoors/hybris-returning-customer.html)
    >
    >  Die Kampagne besteht aus einem Erlebnis.
    >
