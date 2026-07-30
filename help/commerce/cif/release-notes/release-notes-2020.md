@@ -7,8 +7,8 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '1257'
-ht-degree: 100%
+source-wordcount: '1471'
+ht-degree: 99%
 
 ---
 
@@ -154,7 +154,7 @@ Dies ist die erste Version der CIF-Kernkomponenten, die von Adobe Experience Man
 
 * Die Facettensuche wurde durch die Kombination von Kategorieabfrage und Produktsuchabfrage optimiert.
 
-* Die Kategorie-/Produktauswahl für die Seitenvorschau berücksichtigt „cq:catalogPath“.
+* Die Kategorie-/Produktauswahl für die Seitenvorschau berücksichtigt cq:catalogPath.
 
 * Mehrere Fehlerbehebungen.
 
