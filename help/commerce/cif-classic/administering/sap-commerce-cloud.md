@@ -414,7 +414,7 @@ So fügen Sie einen Auftragsverlauf zum [Client Context](/help/sites-developing/
    * Öffnen Sie eine Seite für die Bearbeitung und anschließend Client Context mit **Strg+Alt+C** (Windows) oder **Ctrl+Wahltaste+C** (Mac). Verwenden Sie das Bleistiftsymbol in der oberen linken Ecke des Client-Kontextes, um **die ClientContext-Design-Seite zu öffnen**.
    * Direkt zu [http://localhost:4502/etc/clientcontext/default/content.html navigieren](http://localhost:4502/etc/clientcontext/default/content.html)
 
-1. [Fügen Sie die Komponente **Auftragsverlauf** ](/help/sites-administering/client-context.md#adding-a-property-component) zur Komponente **Warenkorb** des Client-Kontexts hinzu.
+1. [Fügen Sie die Komponente **Auftragsverlauf** &#x200B;](/help/sites-administering/client-context.md#adding-a-property-component) zur Komponente **Warenkorb** des Client-Kontexts hinzu.
 1. Sie können bestätigen, dass im Client-Kontext Details zum Auftragsverlauf angezeigt werden. Beispiel:
 
    1. Öffnen Sie den [Client-Kontext](/help/sites-administering/client-context.md).
