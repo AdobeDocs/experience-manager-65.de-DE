@@ -9,10 +9,10 @@ role: Admin,User
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
-source-git-commit: 4f9129101f537e035b8a7ec52fbc046ae6f93f92
+source-git-commit: beb40e8e83b52b60d68dffecb95f3d877a47d397
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 88%
+source-wordcount: '427'
+ht-degree: 89%
 
 ---
 
@@ -45,7 +45,7 @@ Eine Multihop-Aktualisierung ist möglich von:
 
 Das folgende Diagramm zeigt die verfügbaren Aktualisierungspfade für AEM Forms on JEE:
 
-![JEE-Aktualisierung 6.5](do-not-localize/upgradepathjee.png)
+![JEE-Aktualisierung 6.5](do-not-localize/upgradepathjee.svg)
 
 
 Sie können von hier aus eine direkte Aktualisierung durchführen:
