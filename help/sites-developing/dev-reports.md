@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '5293'
+source-wordcount: '5297'
 ht-degree: 94%
 
 ---
@@ -27,16 +27,16 @@ Für die mit AEM bereitgestellten Standardberichte gilt Folgendes:
 
 * Die folgenden Berichte basieren auf dem Framework für das Reporting:
 
-   * [Komponentenbericht](/help/sites-administering/reporting.md#component-report)
-   * [Seitenaktivitätsbericht](/help/sites-administering/reporting.md#page-activity-report)
-   * [Benutzerbericht](/help/sites-administering/reporting.md#user-report)
-   * [Bericht der Workflow-Instanz](/help/sites-administering/reporting.md#workflow-instance-report)
+  * [Komponentenbericht](/help/sites-administering/reporting.md#component-report)
+  * [Seitenaktivitätsbericht](/help/sites-administering/reporting.md#page-activity-report)
+  * [Benutzerbericht](/help/sites-administering/reporting.md#user-report)
+  * [Bericht der Workflow-Instanz](/help/sites-administering/reporting.md#workflow-instance-report)
 
 * Die folgenden Berichte basieren auf speziellen Prinzipien und können daher nicht erweitert werden:
 
-   * [Speichernutzung](/help/sites-administering/reporting.md#disk-usage)
-   * [Konsistenzprüfung](/help/sites-administering/reporting.md#health-check)
-   * [Workflow-Bericht](/help/sites-administering/reporting.md#workflow-report)
+  * [Speichernutzung](/help/sites-administering/reporting.md#disk-usage)
+  * [Konsistenzprüfung](/help/sites-administering/reporting.md#health-check)
+  * [Workflow-Bericht](/help/sites-administering/reporting.md#workflow-report)
 
 >[!NOTE]
 >
@@ -48,7 +48,10 @@ Für die mit AEM bereitgestellten Standardberichte gilt Folgendes:
 >
 >In den hier aufgeführten Beispielen und Definitionen wird die folgende Notation verwendet:
 >
->* Jede Zeile definiert einen Knoten oder eine Eigenschaft, wobei: : einen Knoten mit dem Namen `<*name*>` und des Knotentyps `<*nodeType*>`*beschreibt. : eine Eigenschaft mit dem Namen `<*name*>` und des Eigenschaftentyps `<*propertyType*>` beschreibt. : eine Eigenschaft mit dem Namen `<name>` beschreibt, deren Wert auf `<value>` festgelegt sein muss.
+>* Jede Zeile definiert einen Knoten oder eine Eigenschaft, wobei:
+>  `N:<name> [<nodeType>]` : einen Knoten mit dem Namen `<*name*>` und des Knotentyps `<*nodeType*>`*beschreibt.*
+>  `P:<name> [<propertyType]` : eine Eigenschaft mit dem Namen `<*name*>` und des Eigenschaftentyps `<*propertyType*>` beschreibt.
+>  `P:<name> = <value>` : eine Eigenschaft mit dem Namen `<name>` beschreibt, deren Wert auf `<value>` festgelegt sein muss.
 >
 >* Die Einrückung veranschaulicht die hierarchischen Abhängigkeiten zwischen den Knoten.
 >* Durch „|“ getrennte Elemente kennzeichnen eine Liste möglicher Elemente wie Typen oder Namen; `String|String[]` bedeutet beispielsweise, dass die Eigenschaft entweder „String“ oder „String[]“ lauten kann.
@@ -110,19 +113,19 @@ Die Abfrage:
 
 * Dies besteht meist aus:
 
-   * einem Stammpfad.
+  * einem Stammpfad.
 
-     Dieser gibt die Unterstruktur des zu durchsuchenden Repositorys an.
+    Dieser gibt die Unterstruktur des zu durchsuchenden Repositorys an.
 
-     Um eine Beeinträchtigung der Leistung zu vermeiden, empfiehlt es sich, die Abfrage, wenn möglich, auf eine bestimmte Unterstruktur des Repositorys zu beschränken. Der Stammpfad kann entweder in der [Berichtsvorlage](#report-template) vordefiniert oder von der Benutzerin bzw. dem Benutzer im [Konfigurationsdialogfeld („Bearbeiten“)](#configuration-dialog) vordefiniert werden.
+    Um eine Beeinträchtigung der Leistung zu vermeiden, empfiehlt es sich, die Abfrage, wenn möglich, auf eine bestimmte Unterstruktur des Repositorys zu beschränken. Der Stammpfad kann entweder in der [Berichtsvorlage](#report-template) vordefiniert oder von der Benutzerin bzw. dem Benutzer im [Konfigurationsdialogfeld („Bearbeiten“)](#configuration-dialog) vordefiniert werden.
 
-   * [einem Kriterium oder mehreren Kriterien](#query-definition).
+  * [einem Kriterium oder mehreren Kriterien](#query-definition).
 
-     Diese werden angewendet, um den (anfänglichen) Ergebnissatz zu generieren. Sie umfassen u. a. Einschränkungen hinsichtlich des Knotentyps oder Eigenschaftsbeschränkungen.
+    Diese werden angewendet, um den (anfänglichen) Ergebnissatz zu generieren. Sie umfassen u. a. Einschränkungen hinsichtlich des Knotentyps oder Eigenschaftsbeschränkungen.
 
-**Der zentrale Punkt hierbei ist, dass jeder einzelne Knoten, der in der Ergebnismenge der Abfrage zurückgegeben wird, verwendet wird, um eine einzelne Zeile im Bericht zu generieren (also eine 1::1-Beziehung).**
+**Der zentrale Punkt hierbei ist, dass jeder einzelne Knoten, der in der Ergebnismenge der Abfrage zurückgegeben wird, verwendet wird, um eine einzelne Zeile im Bericht zu generieren (also eine 1:1-Beziehung).**
 
-Die Entwickelnden müssen sicherstellen, dass die für einen Bericht definierte Abfrage eine für diesen Bericht geeignete Knotengruppe zurückgibt. Der Knoten selbst muss jedoch nicht alle erforderlichen Informationen enthalten. Diese können auch von über- und/oder untergeordneten Knoten abgeleitet werden. Beispielsweise wählt die für den [Benutzerbericht](/help/sites-administering/reporting.md#user-report) verwendete Abfrage Knoten auf Basis des Knotentyps aus (in diesem Fall `rep:user`). Die meisten Spalten dieses Berichts beziehen ihre Daten jedoch nicht direkt von diesen Knoten, sondern vom Unterknoten `profile`..
+Die Entwickelnden müssen sicherstellen, dass die für einen Bericht definierte Abfrage eine für diesen Bericht geeignete Knotengruppe zurückgibt. Der Knoten selbst muss jedoch nicht alle erforderlichen Informationen enthalten. Diese können auch von über- und/oder untergeordneten Knoten abgeleitet werden. Beispielsweise wählt die für den [Benutzerbericht](/help/sites-administering/reporting.md#user-report) verwendete Abfrage Knoten auf Basis des Knotentyps aus (in diesem Fall `rep:user`). Die meisten Spalten dieses Berichts beziehen ihre Daten jedoch nicht direkt von diesen Knoten, sondern vom untergeordneten Knoten `profile`.
 
 ### Verarbeitungswarteschlange {#processing-queue}
 
@@ -312,13 +315,13 @@ N:charting
 
   Enthält Definitionen für die aktiven Diagramme.
 
-   * `active`
+  * `active`
 
-     Da sich mehrere Einstellungen definieren lassen, können Sie damit festlegen, welche gerade aktiv sind. Diese werden durch ein Array von Knoten definiert (es gibt keine obligatorische Benennungskonvention für diese Knoten, für die Standardberichte werden jedoch häufig `0`, `1`… `x` verwendet), die alle die folgenden Eigenschaften aufweisen:
+    Da sich mehrere Einstellungen definieren lassen, können Sie damit festlegen, welche gerade aktiv sind. Diese werden durch ein Array von Knoten definiert (es gibt keine obligatorische Benennungskonvention für diese Knoten, für die Standardberichte werden jedoch häufig `0`, `1`… `x` verwendet), die alle die folgenden Eigenschaften aufweisen:
 
-      * `id`
+    * `id`
 
-        Zum Identifizieren der aktiven Diagramme. Diese muss mit der ID einer der `definitions` des Diagramms übereinstimmen.
+      Zum Identifizieren der aktiven Diagramme. Diese muss mit der ID einer der `definitions` des Diagramms übereinstimmen.
 
 * `definitions`
 
@@ -326,52 +329,54 @@ N:charting
 
   Die Definitionen werden mithilfe eines Arrays von Knoten angegeben (auch in diesem Fall meist mit dem Namen `0`, `1`… `x`), die jeweils die folgenden Eigenschaften aufweisen:
 
-   * `id`
+  * `id`
 
-     Die Diagrammidentifizierung.
+    Die Diagrammidentifizierung.
 
-   * `type`
+  * `type`
 
-     Der Typ des verfügbaren Diagramms. Die folgenden Optionen stehen zur Auswahl:
+    Der Typ des verfügbaren Diagramms. Die folgenden Optionen stehen zur Auswahl:
 
-      * `pie`
-Tortendiagramm. Wird nur aus aktuellen Daten generiert.
+    * `pie`
+      Tortendiagramm. Wird nur aus aktuellen Daten generiert.
 
-      * `lineseries`
-Eine Reihe von Linien (die Punkte verbinden, welche die eigentlichen Momentaufnahmen darstellen). Wird nur aus Verlaufsdaten generiert.
+    * `lineseries`
+      Eine Reihe von Linien (die Punkte verbinden, welche die eigentlichen Momentaufnahmen darstellen). Wird nur aus Verlaufsdaten generiert.
 
-   * Je nach Diagrammtyp sind zusätzliche Eigenschaften verfügbar:
+  * Je nach Diagrammtyp sind zusätzliche Eigenschaften verfügbar:
 
-      * für den Diagrammtyp `pie`:
+    * für den Diagrammtyp `pie`:
 
-         * `maxRadius` ( `Double/Long`)
+      * `maxRadius` ( `Double/Long`)
 
-           Der maximal zulässige Radius für das Kreisdiagramm, daher die maximal zulässige Größe für das Diagramm (ohne Legende). Dieser wird ignoriert, wenn `fixedRadius` definiert ist.
+        Der maximal zulässige Radius für das Kreisdiagramm, daher die maximal zulässige Größe für das Diagramm (ohne Legende). Dieser wird ignoriert, wenn `fixedRadius` definiert ist.
 
-         * `minRadius` ( `Double/Long`)
+      * `minRadius` ( `Double/Long`)
 
-           Der minimal zulässige Radius für das Kreisdiagramm. Dieser wird ignoriert, wenn `fixedRadius` definiert ist.
+        Der minimal zulässige Radius für das Kreisdiagramm. Dieser wird ignoriert, wenn `fixedRadius` definiert ist.
 
-         * `fixedRadius` ( `Double/Long`)
-Definiert einen festen Radius für das Kreisdiagramm.
+      * `fixedRadius` ( `Double/Long`)
+        Definiert einen festen Radius für das Kreisdiagramm.
 
-      * für den Diagrammtyp [`lineseries`](/help/sites-administering/reporting.md#display-limits):
+    * für den Diagrammtyp [`lineseries`](/help/sites-administering/reporting.md#display-limits):
 
-         * `totals` ( `Boolean`)
+      * `totals` ( `Boolean`)
 
-           Sollte auf „true“ festgelegt sein, wenn eine zusätzliche Zeile mit der **Gesamtsumme** angezeigt werden soll.Standardwert: `false`
+        Sollte auf „true“ festgelegt sein, wenn eine zusätzliche Zeile mit der **Gesamtsumme** angezeigt werden soll.
+        Standardwert: `false`
 
-         * `series` ( `Long`)
+      * `series` ( `Long`)
 
-           Anzahl der anzuzeigenden Zeilen/Reihen.Standardwert: `9` (dies ist auch der maximal zulässige Wert)
+        Anzahl der anzuzeigenden Zeilen/Reihen.
+        Standardwert: `9` (dies ist auch der maximal zulässige Wert)
 
-         * `hoverLimit` ( `Long`)
+      * `hoverLimit` ( `Long`)
 
-           Maximale Anzahl aggregierter Momentaufnahmen (Punkte, die auf jeder horizontalen Zeile angezeigt werden und unterschiedliche Werte darstellen), für die Popups angezeigt werden sollen. Das heißt, wenn Sie den Mauszeiger über einen bestimmten Wert oder eine entsprechende Bezeichnung in der Diagrammlegende bewegen.
+        Maximale Anzahl aggregierter Momentaufnahmen (Punkte, die auf jeder horizontalen Zeile angezeigt werden und unterschiedliche Werte darstellen), für die Popups angezeigt werden sollen. Das heißt, wenn Sie den Mauszeiger über einen bestimmten Wert oder eine entsprechende Bezeichnung in der Diagrammlegende bewegen.
 
-           Standardwert: `35` (d. h. es werden überhaupt keine Popups angezeigt, wenn mehr als 35 verschiedene Werte für die aktuellen Diagrammeinstellungen gelten).
+        Standardwert: `35` (d. h. es werden überhaupt keine Popups angezeigt, wenn mehr als 35 verschiedene Werte für die aktuellen Diagrammeinstellungen gelten).
 
-           Es gilt zusätzlich eine maximale Anzahl von 10 Popups, die parallel angezeigt werden können (es können mehrere Popups angezeigt werden, wenn mit der Maus über die Legendentexte gefahren wird).
+        Es gilt zusätzlich eine maximale Anzahl von 10 Popups, die parallel angezeigt werden können (es können mehrere Popups angezeigt werden, wenn mit der Maus über die Legendentexte gefahren wird).
 
 ### Konfigurationsdialogfeld {#configuration-dialog}
 
@@ -458,8 +463,8 @@ Zusätzlich kann ein Stammpfad für den Bericht definiert werden:
 
   Er kann durch Folgendes angegeben werden:
 
-   * die [Berichtsvorlage](#report-template) (entweder als fester Wert oder als Standardwert für das Konfigurationsdialogfeld).
-   * die Benutzerin bzw. der Benutzer (mithilfe dieses Parameters).
+  * die [Berichtsvorlage](#report-template) (entweder als fester Wert oder als Standardwert für das Konfigurationsdialogfeld).
+  * die Benutzerin bzw. der Benutzer (mithilfe dieses Parameters).
 
 ## columnbase-Komponente {#column-base-component}
 
@@ -526,8 +531,8 @@ N:definitions
 
   Der entsprechende Werteextraktor (der hier unter Kontrolle ist):
 
-   * Überprüft, ob eine jcr:lastModified-Eigenschaft verfügbar ist, und verwendet sie, falls ja.
-   * Wenn keine jcr:lastModified-Eigenschaft verfügbar ist, wird stattdessen der Inhalt von :createdjcr) verwendet.
+  * Überprüft, ob eine jcr:lastModified-Eigenschaft verfügbar ist, und verwendet sie, falls ja.
+  * Wenn keine jcr:lastModified-Eigenschaft verfügbar ist, wird stattdessen der Inhalt von :createdjcr) verwendet.
 
 * `subPath`
 
@@ -594,81 +599,81 @@ N:definitions
 
   Definiert den zu verwendenden Resolver. Die folgenden Resolver sind verfügbar:
 
-   * `const`
+  * `const`
 
-     Ordnet Werte anderen Werten zu, beispielsweise um Konstanten wie `en` in den entsprechenden Wert `English` aufzulösen.
+    Ordnet Werte anderen Werten zu, beispielsweise um Konstanten wie `en` in den entsprechenden Wert `English` aufzulösen.
 
-   * `default`
+  * `default`
 
-     Der Standard-Resolver. Dies ist ein Platzhalter-Resolver, der eigentlich nichts auflöst.
+    Der Standard-Resolver. Dies ist ein Platzhalter-Resolver, der eigentlich nichts auflöst.
 
-   * `page`
+  * `page`
 
-     Löst einen Pfadwert zum Pfad der entsprechenden Seite auf, genauer gesagt zum entsprechenden Knoten `jcr:content`. Zum Beispiel wird `/content/.../page/jcr:content/par/xyz` nach `/content/.../page/jcr:content` aufgelöst.
+    Löst einen Pfadwert zum Pfad der entsprechenden Seite auf, genauer gesagt zum entsprechenden Knoten `jcr:content`. Zum Beispiel wird `/content/.../page/jcr:content/par/xyz` nach `/content/.../page/jcr:content` aufgelöst.
 
-   * `path`
+  * `path`
 
-     Löst einen Pfadwert auf, indem optional ein Unterpfad angehängt und der tatsächliche Wert aus einer Eigenschaft des Knotens (wie durch `resolverConfig` definiert) unter dem aufgelösten Pfad übernommen wird. Beispielsweise kann ein `path`, der `/content/.../page/jcr:content` lautet, zum Inhalt der Eigenschaft `jcr:title` aufgelöst werden. Dies würde bedeuten, dass ein Seitenpfad zum Seitentitel aufgelöst wird.
+    Löst einen Pfadwert auf, indem optional ein Unterpfad angehängt und der tatsächliche Wert aus einer Eigenschaft des Knotens (wie durch `resolverConfig` definiert) unter dem aufgelösten Pfad übernommen wird. Beispielsweise kann ein `path`, der `/content/.../page/jcr:content` lautet, zum Inhalt der Eigenschaft `jcr:title` aufgelöst werden. Dies würde bedeuten, dass ein Seitenpfad zum Seitentitel aufgelöst wird.
 
-   * `pathextension`
+  * `pathextension`
 
-     Löst einen Wert auf, indem ein Pfad vorangestellt wird und der aktuelle Wert aus einer Eigenschaft des Knotens unter dem aufgelösten Pfad übernommen wird. Einem Wert `de` könnte beispielsweise ein Pfad wie `/libs/wcm/core/resources/languages` vorangestellt werden, der den Wert aus der Eigenschaft `language` übernimmt, um den Länder-Code `de` in die Sprachbeschreibung `German` aufzulösen.
+    Löst einen Wert auf, indem ein Pfad vorangestellt wird und der aktuelle Wert aus einer Eigenschaft des Knotens unter dem aufgelösten Pfad übernommen wird. Einem Wert `de` könnte beispielsweise ein Pfad wie `/libs/wcm/core/resources/languages` vorangestellt werden, der den Wert aus der Eigenschaft `language` übernimmt, um den Länder-Code `de` in die Sprachbeschreibung `German` aufzulösen.
 
 * `resolverConfig`
 
   Stellt Definitionen für den Resolver bereit. Die verfügbaren Optionen sind vom gewählten `resolver` abhängig.
 
-   * `const`
+  * `const`
 
-     Verwenden Sie Eigenschaften, um die Konstanten zum Auflösen anzugeben. Der Name der Eigenschaft definiert die aufzulösende Konstante. Der Wert der Eigenschaft definiert den aufgelösten Wert.
+    Verwenden Sie Eigenschaften, um die Konstanten zum Auflösen anzugeben. Der Name der Eigenschaft definiert die aufzulösende Konstante. Der Wert der Eigenschaft definiert den aufgelösten Wert.
 
-     Beispielsweise wird eine Eigenschaft mit **Name**=`1` und **Value**`=One` 1 zu „One“ aufgelöst.
+    Beispielsweise wird eine Eigenschaft mit **Name**=`1` und **Value**`=One` 1 zu „One“ aufgelöst.
 
-   * `default`
+  * `default`
 
-     Keine Konfiguration verfügbar.
+    Keine Konfiguration verfügbar.
 
-   * `page`
+  * `page`
 
-      * `propertyName` (optional)
+    * `propertyName` (optional)
 
-        Definiert den Namen der Eigenschaft, die für die Auflösung des Werts verwendet werden soll. Wenn kein Wert angegeben ist, wird der Standardwert *jcr:title* (der Seitentitel) verwendet. Für den `page` Resolver bedeutet dies, dass der Pfad zuerst zum Seitenpfad, dann weiter zum Seitentitel aufgelöst wird.
+      Definiert den Namen der Eigenschaft, die für die Auflösung des Werts verwendet werden soll. Wenn kein Wert angegeben ist, wird der Standardwert *jcr:title* (der Seitentitel) verwendet. Für den `page` Resolver bedeutet dies, dass der Pfad zuerst zum Seitenpfad, dann weiter zum Seitentitel aufgelöst wird.
 
-   * `path`
+  * `path`
 
-      * `propertyName` (optional)
+    * `propertyName` (optional)
 
-        Gibt den Namen der Eigenschaft an, die für die Auflösung des Werts verwendet werden soll. Wenn kein Wert angegeben ist, wird der Standardwert `jcr:title` verwendet.
+      Gibt den Namen der Eigenschaft an, die für die Auflösung des Werts verwendet werden soll. Wenn kein Wert angegeben ist, wird der Standardwert `jcr:title` verwendet.
 
-      * `subPath` (optional)
+    * `subPath` (optional)
 
-        Mit dieser Eigenschaft kann ein Suffix angegeben werden, das an den Pfad angehängt wird, bevor der Wert aufgelöst wird.
+      Mit dieser Eigenschaft kann ein Suffix angegeben werden, das an den Pfad angehängt wird, bevor der Wert aufgelöst wird.
 
-   * `pathextension`
+  * `pathextension`
 
-      * `path` (mandatory)
+    * `path` (mandatory)
 
-        Definiert den Pfad, der vorangestellt werden soll.
+      Definiert den Pfad, der vorangestellt werden soll.
 
-      * `propertyName` (mandatory)
+    * `propertyName` (mandatory)
 
-        Definiert die Eigenschaft für den aufgelösten Pfad, unter dem sich der aktuelle Wert befindet.
+      Definiert die Eigenschaft für den aufgelösten Pfad, unter dem sich der aktuelle Wert befindet.
 
-      * `i18n` (optional; Typ Boolesch)
+    * `i18n` (optional; Typ Boolesch)
 
-        Legt fest, ob der aufgelöste Wert *internationalisiert* werden soll (d. h. mithilfe der [Internationalisierungsdienste von CQ5](/help/sites-administering/tc-manage.md)).
+      Legt fest, ob der aufgelöste Wert *internationalisiert* werden soll (d. h. mithilfe der [Internationalisierungsdienste von CQ5](/help/sites-administering/tc-manage.md)).
 
 * `preprocessing`
 
   Die Vorverarbeitung ist optional und kann (separat) an die Verarbeitungsphasen *apply* oder *applyAfter* gebunden werden:
 
-   * `apply`
+  * `apply`
 
-     Die anfängliche Vorverarbeitungsphase ([Schritt 3 in der Darstellung der Verarbeitungswarteschlange](#processing-queue)).
+    Die anfängliche Vorverarbeitungsphase ([Schritt 3 in der Darstellung der Verarbeitungswarteschlange](#processing-queue)).
 
-   * `applyAfter`
+  * `applyAfter`
 
-     Zum Anwenden nach der Vorverarbeitung ([Schritt 9 in der Darstellung der Verarbeitungswarteschlange](#processing-queue)).
+    Zum Anwenden nach der Vorverarbeitung ([Schritt 9 in der Darstellung der Verarbeitungswarteschlange](#processing-queue)).
 
 #### Resolver {#resolvers}
 
@@ -780,23 +785,23 @@ Ein Ersetzungsmuster kann beispielsweise wie folgt aufgeschlüsselt werden:
 
 * Für den Knoten `definitions/data/preprocessing/apply` mit den folgenden zwei Eigenschaften:
 
-   * `pattern`: `(.*)(/jcr:content)(/|$)(.*)`
-   * `replace`: `$1`
+  * `pattern`: `(.*)(/jcr:content)(/|$)(.*)`
+  * `replace`: `$1`
 
 * Eine Zeichenfolge, die wie folgt vorliegt:
 
-   * `/content/geometrixx/en/services/jcr:content/par/text`
+  * `/content/geometrixx/en/services/jcr:content/par/text`
 
 * wird in vier Abschnitte unterteilt:
 
-   * `$1` - `(.*)` - `/content/geometrixx/en/services`
-   * `$2` - `(/jcr:content)` - `/jcr:content`
-   * `$3` - `(/|$)` - `/`
-   * `$4` - `(.*)` - `par/text`
+  * `$1` - `(.*)` - `/content/geometrixx/en/services`
+  * `$2` - `(/jcr:content)` - `/jcr:content`
+  * `$3` - `(/|$)` - `/`
+  * `$4` - `(.*)` - `par/text`
 
 * und durch die Zeichenfolge ersetzt, die durch `$1` dargestellt wird:
 
-   * `/content/geometrixx/en/services`
+  * `/content/geometrixx/en/services`
 
 #### Vorverarbeitung – Datentypformatierer {#preprocessing-data-type-formatters}
 
@@ -810,17 +815,17 @@ Derzeit sind die folgenden Datentypformatierer verfügbar:
 
   Datentypformatierer:
 
-   * `duration`
+  * `duration`
 
-     Die Dauer ist die Zeitspanne zwischen zwei definierten Terminen. Beispiel: Beginn und Ende einer Workflow-Aktion, die eine Stunde gedauert hat - sie hat am 2/13/11, 11:23h begonnen und endete eine Stunde später am 2/13/11, 12:23h.
+    Die Dauer ist die Zeitspanne zwischen zwei definierten Terminen. Beispiel: Beginn und Ende einer Workflow-Aktion, die eine Stunde gedauert hat - sie hat am 2/13/11 um 11:23 Uhr begonnen und endete eine Stunde später am 2/13/11 um 12:23 Uhr.
 
-     Der Formatierer konvertiert einen numerischen Wert (interpretiert als Millisekunden) in eine Dauerzeichenfolge, z. B. wird `30000` als * `30s`* formatiert.
+    Der Formatierer konvertiert einen numerischen Wert (interpretiert als Millisekunden) in eine Dauerzeichenfolge, z. B. wird `30000` als * `30s`* formatiert.
 
-   * `datedelta`
+  * `datedelta`
 
-     Ein Datendelta ist die Zeitspanne zwischen einem in der Vergangenheit liegenden Datum und dem jetzigen Zeitpunkt (entsprechend fällt das Ergebnis anders aus, wenn der Bericht zu einem späteren Zeitpunkt angezeigt wird).
+    Ein Datendelta ist die Zeitspanne zwischen einem in der Vergangenheit liegenden Datum und dem jetzigen Zeitpunkt (entsprechend fällt das Ergebnis anders aus, wenn der Bericht zu einem späteren Zeitpunkt angezeigt wird).
 
-     Es konvertiert den numerischen Wert (interpretiert als Zeitdifferenz in Tagen) in eine relative Datumszeichenfolge. Beispielsweise wird „1“ als „vor 1 Tag“ formatiert.
+    Es konvertiert den numerischen Wert (interpretiert als Zeitdifferenz in Tagen) in eine relative Datumszeichenfolge. Beispielsweise wird „1“ als „vor 1 Tag“ formatiert.
 
 Im folgenden Beispiel wird die Formatierung `datedelta` für die Aggregate `min` und `max` definiert:
 
@@ -863,18 +868,18 @@ N:definitions
 
   Die folgenden Optionen sind standardmäßig verfügbar:
 
-   * `string`
-   * `number`
-   * `int`
-   * `date`
-   * `diff`
-   * `timeslot`
+  * `string`
+  * `number`
+  * `int`
+  * `date`
+  * `diff`
+  * `timeslot`
 
-     Diese Option wird verwendet, um Teile eines Datums zu extrahieren, das für die Aggregation benötigt wird (gruppieren Sie beispielsweise nach Jahr, um die Daten für die einzelnen Jahre zu aggregieren).
+    Diese Option wird verwendet, um Teile eines Datums zu extrahieren, das für die Aggregation benötigt wird (gruppieren Sie beispielsweise nach Jahr, um die Daten für die einzelnen Jahre zu aggregieren).
 
-   * `sortable`
+  * `sortable`
 
-     Diese Option wird für Werte verwendet, die unterschiedliche Werte (aus unterschiedlichen Eigenschaften) zum Sortieren und Anzeigen verwenden.
+    Diese Option wird für Werte verwendet, die unterschiedliche Werte (aus unterschiedlichen Eigenschaften) zum Sortieren und Anzeigen verwenden.
 
   Außerdem kann jeder der oben genannten Werte als Mehrfachwert definiert werden, beispielsweise definiert `string[]` ein Zeichenfolgen-Array.
 
@@ -882,16 +887,16 @@ N:definitions
 
   Ein Typ kann (optional) einen Parameter heranziehen. Beispielsweise extrahiert `timeslot:year` das Jahr aus einem Datumsfeld. Typen mit ihren Parametern:
 
-   * `timeslot`: Die Werte sind mit den entsprechenden Konstanten von `java.utils.Calendar` vergleichbar.
+  * `timeslot`: Die Werte sind mit den entsprechenden Konstanten von `java.utils.Calendar` vergleichbar.
 
-      * `timeslot:year` - `Calendar.YEAR`
-      * `timeslot:month-of-year` - `Calendar.MONTH`
-      * `timeslot:week-of-year` - `Calendar.WEEK_OF_YEAR`
-      * `timeslot:day-of-month` - `Calendar.DAY_OF_MONTH`
-      * `timeslot:day-of-week` - `Calendar.DAY_OF_WEEK`
-      * `timeslot:day-of-year` - `Calendar.DAY_OF_YEAR`
-      * `timeslot:hour-of-day` - `Calendar.HOUR_OF_DAY`
-      * `timeslot:minute-of-hour` - `Calendar.MINUTE`
+    * `timeslot:year` - `Calendar.YEAR`
+    * `timeslot:month-of-year` - `Calendar.MONTH`
+    * `timeslot:week-of-year` - `Calendar.WEEK_OF_YEAR`
+    * `timeslot:day-of-month` - `Calendar.DAY_OF_MONTH`
+    * `timeslot:day-of-week` - `Calendar.DAY_OF_WEEK`
+    * `timeslot:day-of-year` - `Calendar.DAY_OF_YEAR`
+    * `timeslot:hour-of-day` - `Calendar.HOUR_OF_DAY`
+    * `timeslot:minute-of-hour` - `Calendar.MINUTE`
 
 * `groupable`
 
@@ -901,77 +906,77 @@ N:definitions
 
   Filterdefinitionen.
 
-   * `filterType`
+  * `filterType`
 
-     Die verfügbaren Filter sind:
+    Die verfügbaren Filter sind:
 
-      * `string`
+    * `string`
 
-        Ein auf Zeichenfolgen basierender Filter.
+      Ein auf Zeichenfolgen basierender Filter.
 
-   * `id`
+  * `id`
 
-     Filter-Kennung.
+    Filter-Kennung.
 
-   * `phase`
+  * `phase`
 
-     Verfügbare Phasen:
+    Verfügbare Phasen:
 
-      * `raw`
+    * `raw`
 
-        Der Filter wird auf Rohdaten angewendet.
+      Der Filter wird auf Rohdaten angewendet.
 
-      * `preprocessed`
+    * `preprocessed`
 
-        Der Filter wird auf vorverarbeitete Daten angewendet.
+      Der Filter wird auf vorverarbeitete Daten angewendet.
 
-      * `resolved`
+    * `resolved`
 
-        Der Filter wird auf aufgelöste Daten angewendet.
+      Der Filter wird auf aufgelöste Daten angewendet.
 
 * `aggregates`
 
   Aggregatdefinitionen.
 
-   * `text`
+  * `text`
 
-     Textdarstellung des Namens des Aggregats. Wenn `text` nicht angegeben ist, wird die Standardbeschreibung des Aggregats verwendet. Beispiel: `minimum` wird für das `min`-Aggregat verwendet.
+    Textdarstellung des Namens des Aggregats. Wenn `text` nicht angegeben ist, wird die Standardbeschreibung des Aggregats verwendet. Beispiel: `minimum` wird für das `min`-Aggregat verwendet.
 
-   * `type`
+  * `type`
 
-     Aggregattyp. Die verfügbaren Aggregate sind:
+    Aggregattyp. Die verfügbaren Aggregate sind:
 
-      * `count`
+    * `count`
 
-        Zählt die Anzahl der Zeilen.
+      Zählt die Anzahl der Zeilen.
 
-      * `count-nonempty`
+    * `count-nonempty`
 
-        Zählt die Anzahl der nicht leeren Zeilen.
+      Zählt die Anzahl der nicht leeren Zeilen.
 
-      * `min`
+    * `min`
 
-        Es stellt den Mindestwert bereit.
+      Es stellt den Mindestwert bereit.
 
-      * `max`
+    * `max`
 
-        Es stellt den Höchstwert bereit.
+      Es stellt den Höchstwert bereit.
 
-      * `average`
+    * `average`
 
-        Es stellt den Durchschnittswert bereit.
+      Es stellt den Durchschnittswert bereit.
 
-      * `sum`
+    * `sum`
 
-        Es stellt die Summe aller Werte bereit.
+      Es stellt die Summe aller Werte bereit.
 
-      * `median`
+    * `median`
 
-        Es stellt den Mittelwert bereit.
+      Es stellt den Mittelwert bereit.
 
-      * `percentile95`
+    * `percentile95`
 
-        Verwendet das 95. Perzentil aller Werte.
+      Verwendet das 95. Perzentil aller Werte.
 
 ### Spaltenstandardwerte {#column-default-values}
 
@@ -1024,11 +1029,11 @@ Gehen Sie wie folgt vor, um eine Spalte als generisch zu definieren:
 
   Siehe `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
 
-   * Die Felder des Dialogfelds müssen sich auf die gleichen Namen beziehen wie die entsprechende Komponenteneigenschaft, einschließlich ihres Pfads.
+  * Die Felder des Dialogfelds müssen sich auf die gleichen Namen beziehen wie die entsprechende Komponenteneigenschaft, einschließlich ihres Pfads.
 
-     Wenn Sie beispielsweise den Typ der generischen Spalte über das Dialogfeld als konfigurierbar festlegen möchten, verwenden Sie ein Feld mit dem Namen `./definitions/type`
+    Wenn Sie beispielsweise den Typ der generischen Spalte über das Dialogfeld als konfigurierbar festlegen möchten, verwenden Sie ein Feld mit dem Namen `./definitions/type`
 
-   * Eigenschaften, die über die Benutzeroberfläche/das Dialogfeld definiert wurden, haben Vorrang vor denen, die in der `columnbase`-Komponente definiert wurden.
+  * Eigenschaften, die über die Benutzeroberfläche/das Dialogfeld definiert wurden, haben Vorrang vor denen, die in der `columnbase`-Komponente definiert wurden.
 
 * Definieren Sie die Bearbeitungskonfiguration.
 
@@ -1040,13 +1045,13 @@ Gehen Sie wie folgt vor, um eine Spalte als generisch zu definieren:
 
   Die für eine generische Spalte zur Verfügung stehenden Eigenschaften lauten:
 
-   * `jcr:title` – Spaltenname
-   * `definitions/aggregates` – Aggregate
-   * `definitions/filters` – Filter
-   * `definitions/type` – der Typ der Spalte (dieser muss über das Dialogfeld definiert werden, entweder über eine Auswahl/ein Kombinationsfeld oder ein ausgeblendetes Feld)
-   * `definitions/data/resolver` und `definitions/data/resolverConfig` (aber nicht `definitions/data/preprocessing` oder `.../clientFilter`) – der Resolver und die Konfiguration
-   * `definitions/queryBuilder` – die QueryBuilder-Konfiguration
-   * `defaults/aggregate` – das Standardaggregat
+  * `jcr:title` – Spaltenname
+  * `definitions/aggregates` – Aggregate
+  * `definitions/filters` – Filter
+  * `definitions/type` – der Typ der Spalte (dieser muss über das Dialogfeld definiert werden, entweder über eine Auswahl/ein Kombinationsfeld oder ein ausgeblendetes Feld)
+  * `definitions/data/resolver` und `definitions/data/resolverConfig` (aber nicht `definitions/data/preprocessing` oder `.../clientFilter`) – der Resolver und die Konfiguration
+  * `definitions/queryBuilder` – die QueryBuilder-Konfiguration
+  * `defaults/aggregate` – das Standardaggregat
 
   Bei einer neuen Instanz der generischen Spalte im **Benutzerbericht** werden die über das Dialogfeld definierten Eigenschaften unter folgendem Pfad beibehalten:
 
@@ -1294,7 +1299,7 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
 
    >[!NOTE]
    >
-   >In diesem Beispiel liegen keine Definitionen von `N:data` und `P:clientFilter` vor. Der Grund dafür ist, dass der vom Server empfangene Wert 1::1 zurückgegeben wird - dies ist das Standardverhalten.
+   >In diesem Beispiel liegen keine Definitionen von `N:data` und `P:clientFilter` vor. Dies liegt daran, dass der vom Server empfangene Wert 1:1 zurückgegeben wird - dies ist das Standardverhalten.
    >
    >Dies entspricht den Definitionen:
    >
@@ -1363,7 +1368,7 @@ Sie können nun eine Instanz Ihres neuen Berichts erstellen:
 1. Wählen Sie im linken Bedienfeld **Berichte** aus.
 1. Klicken Sie dann in der Symbolleiste auf **Neu…**. Definieren Sie einen **Titel** und **Namen**, wählen Sie Ihren neuen Berichtstyp (die **OSGi-Berichtsvorlage**) aus der Liste der Vorlagen aus und klicken Sie anschließen auf **Erstellen**.
 1. Ihre neue Berichtsinstanz wird in der Liste angezeigt. Doppelklicken Sie darauf, um sie zu öffnen.
-1. Ziehen Sie eine Komponente (in diesem Beispiel **Bundle** in der Gruppe **OSGi Report**) aus dem Sidekick, um die erste Spalte zu erstellen, und [beginnen Sie mit dem Definieren des Berichts](/help/sites-administering/reporting.md#the-basics-of-report-customization)..
+1. Ziehen Sie eine Komponente (in diesem Beispiel **Paket** in der Gruppe **OSGi Report**) aus dem Sidekick, um die erste Spalte zu erstellen, und [beginnen Sie mit dem Definieren des Berichts](/help/sites-administering/reporting.md#the-basics-of-report-customization)..
 
    >[!NOTE]
    >

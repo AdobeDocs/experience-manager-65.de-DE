@@ -7,7 +7,7 @@ feature: Administering
 role: Admin
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1068'
 ht-degree: 96%
 
 ---
@@ -56,7 +56,7 @@ Wählen Sie die erforderliche Vorlage für Ihre Website aus und bestätigen Sie 
 
    * den Unterordner `content`, der das Stammverzeichnis einer Reihe von Unterordnern ist, die den Pfad zur Seite im Repository widerspiegeln
 
-      * innerhalb dieser Struktur befindet sich die HTML-Datei für die ausgewählte Seite (`<page-name>.html`)
+     * innerhalb dieser Struktur befindet sich die HTML-Datei für die ausgewählte Seite (`<page-name>.html`)
 
    * die anderen Ressourcen (`.js`- und `.css`-Dateien, Grafiken usw.) befinden sich in den in der Exportvorlage festgelegten Verzeichnissen
 
@@ -119,16 +119,16 @@ Mit den folgenden Knoten können Sie eine Export-Vorlage erstellen:
 * `page`
 Mit dem Knoten page wird die HTML-Seite in die ZIP-Datei kopiert. Er weist die folgenden Eigenschaften auf:
 
-   * Ein obligatorischer Knoten.
-   * Befindet sich unter `/etc/contentsync/templates/<mysite>`.
-   * Er wird mit der `Name`-Eigenschaft definiert, die auf `page` gesetzt wird.
-   * Knotentyp ist `nt:unstructured`
+  * Ein obligatorischer Knoten.
+  * Befindet sich unter `/etc/contentsync/templates/<mysite>`.
+  * Er wird mit der `Name`-Eigenschaft definiert, die auf `page` gesetzt wird.
+  * Knotentyp ist `nt:unstructured`
 
   Der Knoten `page` hat folgende Eigenschaften:
 
-   * Die Eigenschaft `type` mit dem Wert `pages`.
+  * Die Eigenschaft `type` mit dem Wert `pages`.
 
-   * Er verfügt nicht über die Eigenschaft `path`, da der aktuelle Seitenpfad dynamisch in die Konfiguration kopiert wird.
+  * Er verfügt nicht über die Eigenschaft `path`, da der aktuelle Seitenpfad dynamisch in die Konfiguration kopiert wird.
   <!--
   * The other properties are described in the Overview of configuration types section of the Content Sync framework.
   -->
@@ -140,25 +140,25 @@ Der Knoten rewrite definiert, wie die Links in der exportierten Seite neu geschr
 * `design`
 Mit dem Knoten design wird das für die exportierte Seite genutzte Design kopiert. Er weist die folgenden Eigenschaften auf:
 
-   * Optional.
-   * Befindet sich unter `/etc/contentsync/templates/<mysite>`.
-   * Er wird mit der `Name`-Eigenschaft definiert, die auf `design` gesetzt wird.
-   * Knotentyp ist `nt:unstructured`.
+  * Optional.
+  * Befindet sich unter `/etc/contentsync/templates/<mysite>`.
+  * Er wird mit der `Name`-Eigenschaft definiert, die auf `design` gesetzt wird.
+  * Knotentyp ist `nt:unstructured`.
 
   Der Knoten `design` hat folgende Eigenschaften:
 
-   * Die Eigenschaft `type` mit dem Wert `copy`.
+  * Die Eigenschaft `type` mit dem Wert `copy`.
 
-   * Er verfügt nicht über die Eigenschaft `path`, da der aktuelle Seitenpfad dynamisch in die Konfiguration kopiert wird.
+  * Er verfügt nicht über die Eigenschaft `path`, da der aktuelle Seitenpfad dynamisch in die Konfiguration kopiert wird.
 
 * `generic`
 Mit einem generischen Knoten werden Ressourcen wie die `.js`- oder `.css`-Dateien der Client-Bibliotheken in die ZIP-Datei kopiert. Er weist die folgenden Eigenschaften auf:
 
-   * Optional.
-   * Befindet sich unter `/etc/contentsync/templates/<mysite>`.
-   * Kein spezifischer Name.
-   * Knotentyp ist `nt:unstructured`.
-   * Er hat eine `type`-Eigenschaft und mit `type` verwandte Eigenschaften. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
+  * Optional.
+  * Befindet sich unter `/etc/contentsync/templates/<mysite>`.
+  * Kein spezifischer Name.
+  * Knotentyp ist `nt:unstructured`.
+  * Er hat eine `type`-Eigenschaft und mit `type` verwandte Eigenschaften. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
   Beispielsweise kopiert der folgende Konfigurationsknoten die Dateien `mysite.clientlibs.js` in die ZIP-Datei:
 

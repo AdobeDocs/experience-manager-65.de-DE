@@ -12,7 +12,7 @@ feature: Developing
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '5461'
+source-wordcount: '5464'
 ht-degree: 98%
 
 ---
@@ -472,7 +472,7 @@ Die numerischen Werte sind 0,4, 0,82 bzw. 1,0.
 
 **Ändern der standardmäßig unterstützten Breiten**
 
-Verwenden Sie die Web-Konsole ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) oder einen sling:OsgiConfig-Knoten, um die unterstützten Breiten des Servlets „Adaptive Image Component“ von Adobe CQ zu konfigurieren.
+Verwenden Sie die Web-Konsole ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) oder einen Sling:OsgiConfig-Knoten, um die unterstützten Breiten des Servlets „Adaptive Image Component“ von Adobe CQ zu konfigurieren.
 
 Informationen zum Konfigurieren von AEM-Diensten finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
