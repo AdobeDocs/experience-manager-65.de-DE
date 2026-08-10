@@ -24,9 +24,11 @@ AEM-Komponenten werden verwendet, um den Inhalt, den Sie auf Ihren Web-Seiten be
 
 * Beim [Erstellen von Seiten](/help/sites-authoring/default-components.md) erlauben es die Komponenten den Autoren, den Inhalt zu bearbeiten und zu konfigurieren.
 
-   * Beim Erstellen einer [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)-Site können die Komponenten beispielsweise Informationen aus dem Katalog sammeln und rendern.Weitere Informationen finden Sie unter [Entwicklung von eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
+  * Beim Erstellen einer [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)-Site können die Komponenten beispielsweise Informationen aus dem Katalog sammeln und rendern.
+    Weitere Informationen finden Sie unter [Entwicklung von eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
 
-   * Wenn Sie eine [Communities](/help/communities/author-communities.md)-Site erstellen, können die Komponenten Informationen für Ihre Besucher bereitstellen und Informationen erfassen.Weitere Informationen finden Sie unter [Entwicklung von Communities](/help/communities/communities.md).
+  * Wenn Sie eine [Communities](/help/communities/author-communities.md)-Site erstellen, können die Komponenten Informationen für Ihre Besucher bereitstellen und Informationen erfassen.
+    Weitere Informationen finden Sie unter [Entwicklung von Communities](/help/communities/communities.md).
 
 * Auf der Veröffentlichungsinstanz rendern die Komponenten Ihren Inhalt und stellen ihn Ihren Website-Besucherinnen und -Besuchern wie gewünscht dar.
 
@@ -136,15 +138,15 @@ Ausführliche Informationen finden Sie hier:
 
 * Coral-Benutzeroberfläche
 
-   * Bietet eine konsistente Benutzeroberfläche für alle Cloud-Lösungen
-   * [Konzepte der Touch-optimierten Benutzeroberfläche von AEM - Coral-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Coral-UI-Handbuch](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
+  * Bietet eine konsistente Benutzeroberfläche für alle Cloud-Lösungen
+  * [Konzepte der Touch-optimierten Benutzeroberfläche von AEM - Coral-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+  * [Coral-UI-Handbuch](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 
 * Granite-Benutzeroberfläche
 
-   * Bietet Markup der Coral-Benutzeroberfläche in Sling-Komponenten zum Erstellen von UI-Konsolen und -Dialogfeldern
-   * [Konzepte der Touch-optimierten Benutzeroberfläche von AEM - Granite-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Dokumentation zur Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+  * Bietet Markup der Coral-Benutzeroberfläche in Sling-Komponenten zum Erstellen von UI-Konsolen und -Dialogfeldern
+  * [Konzepte der Touch-optimierten Benutzeroberfläche von AEM - Granite-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+  * [Dokumentation zur Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 
 >[!NOTE]
 >
@@ -162,7 +164,7 @@ Dialogfelder für die Touch-optimierte Benutzeroberfläche:
 * verwenden das Granite-UI-Framework.
 * enthalten eine Knotenstruktur, die die Felder im Dialogfeld beschreibt.
 
-   * Diese Knoten sind `nt:unstructured` mit der erforderlichen Eigenschaft `sling:resourceType`.
+  * Diese Knoten sind `nt:unstructured` mit der erforderlichen Eigenschaft `sling:resourceType`.
 
 Eine Beispielknotenstruktur könnte wie folgt aussehen:
 
@@ -233,7 +235,7 @@ Ein Beispiel finden Sie unter:
 
 * `cqgems/customizingfield/components/colorpicker/clientlibs`
 
-   * gegeben durch das [Code-Beispiel](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * gegeben durch das [Code-Beispiel](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 #### Erweitern (Vererben) von einem Feld {#extending-inheriting-from-a-field}
 
@@ -271,7 +273,7 @@ Ein Beispiel finden Sie unter:
 
 * `cqgems/customizingfield/components/clientlibs/customizingfield`
 
-   * gegeben durch das [Code-Beispiel](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * gegeben durch das [Code-Beispiel](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 #### Listener in der Inhaltsstruktur {#listeners-in-the-content-structure}
 
@@ -310,7 +312,7 @@ Beispiele finden Sie hier:
 
 * `cqgems/customizingfield/components/clientlibs/customizingfield/js/validations.js`
 
-   * im Abschnitt [Codebeispiel](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * im Abschnitt [Codebeispiel](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `/libs/cq/gui/components/authoring/dialog/clientlibs/dialog/js/validations.js`
 
@@ -341,7 +343,7 @@ Weitere Informationen finden Sie unter [Erweiterung der Seitenerstellung – Hin
 
 Wenn Ihre neue Komponente auf Inhalte von anderen Seiten verweist, können Sie überlegen, ob sich dies auf die Abschnitte **Geliehener Inhalt** und **Verliehener Inhalt** der [**Verweis**](/help/sites-authoring/basic-handling.md#references)-Leiste auswirken soll.
 
-Die Standardinstallation von AEM überprüft nur die Referenzkomponente. Um Ihre Komponente hinzuzufügen, müssen Sie die Referenzkonfiguration für das OSGi-Bundle **WCM Authoring Content** konfigurieren.
+Die Standardinstallation von AEM überprüft nur die Referenzkomponente. Um Ihre Komponente hinzuzufügen, müssen Sie die Referenzkonfiguration für das OSGi-Paket **WCM Authoring Content** konfigurieren.
 
 Erstellen Sie einen Eintrag in der Definition und geben Sie Ihre Komponente zusammen mit der zu überprüfenden Eigenschaft an. Zum Beispiel:
 
@@ -389,28 +391,28 @@ Dieses Verhalten und die erforderliche Beziehung zwischen Asset und Komponente k
 
    * `assetGroup`:
 
-      * Typ: `String`
-      * Wert: die Gruppe, zu der das zugehörige Asset gehört; zum Beispiel `media`
+     * Typ: `String`
+     * Wert: die Gruppe, zu der das zugehörige Asset gehört; zum Beispiel `media`
 
    * `assetMimetype`:
 
-      * Typ: `String`
-      * Wert: der MIME-Typ des zugehörigen Assets; zum Beispiel `image/*`
+     * Typ: `String`
+     * Wert: der MIME-Typ des zugehörigen Assets; zum Beispiel `image/*`
 
    * `droptarget`:
 
-      * Typ: `String`
-      * Wert: das Ablageziel; zum Beispiel, `image`
+     * Typ: `String`
+     * Wert: das Ablageziel; zum Beispiel, `image`
 
    * `resourceType`:
 
-      * Typ: `String`
-      * Wert: die zugehörige Komponentenressource; zum Beispiel `foundation/components/image`
+     * Typ: `String`
+     * Wert: die zugehörige Komponentenressource; zum Beispiel `foundation/components/image`
 
    * `type`:
 
-      * Typ: `String`
-      * Wert: der Typ, z. B. `Images`
+     * Typ: `String`
+     * Wert: der Typ, z. B. `Images`
 
 Beispiele finden Sie unter:
 
@@ -448,22 +450,22 @@ Wenn Sie eine Komponente, die für die Verwendung mit der klassischen Benutzerob
 
 * HTL
 
-   * Die Verwendung von [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de) ist nicht obligatorisch, aber wenn Ihre Komponente aktualisiert werden muss, ist es ein idealer Zeitpunkt, eine [Migration von JSP zu HTL](/help/sites-developing/components-basics.md#htl-vs-jsp) in Betracht zu ziehen.
+  * Die Verwendung von [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de) ist nicht obligatorisch, aber wenn Ihre Komponente aktualisiert werden muss, ist es ein idealer Zeitpunkt, eine [Migration von JSP zu HTL](/help/sites-developing/components-basics.md#htl-vs-jsp) in Betracht zu ziehen.
 
 * Komponenten
 
-   * Migrieren Sie [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code)-Code, der klassische benutzeroberflächenspezifische Funktionen verwendet
-   * RTE-Plug-in, für weitere Informationen siehe [Konfigurieren des Rich-Text-Editors](/help/sites-administering/rich-text-editor.md).
-   * [Migrieren Sie `cq:listener`-Code](#migrating-cq-listener-code), der Funktionen verwendet, die für die klassische Benutzeroberfläche spezifisch sind
+  * Migrieren Sie [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code)-Code, der klassische benutzeroberflächenspezifische Funktionen verwendet
+  * RTE-Plug-in, für weitere Informationen siehe [Konfigurieren des Rich-Text-Editors](/help/sites-administering/rich-text-editor.md).
+  * [Migrieren Sie `cq:listener`-Code](#migrating-cq-listener-code), der Funktionen verwendet, die für die klassische Benutzeroberfläche spezifisch sind
 
 * Dialogfelder
 
-   * Erstellen Sie ein Dialogfeld zur Verwendung in der Touch-optimierten Benutzeroberfläche. Aus Kompatibilitätsgründen kann die Touch-optimierte Benutzeroberfläche jedoch die Definition eines Dialogfelds der klassischen Benutzeroberfläche verwenden, wenn für die Touch-optimierte Benutzeroberfläche kein Dialogfeld definiert wurde.
-   * Die [AEM-Modernisierungs-Tools](/help/sites-developing/modernization-tools.md) werden bereitgestellt, um Unterstützung bei der Erweiterung vorhandener Komponenten zu bieten.
-   * Das [Zuordnen von ExtJS zu Granite-UI-Komponenten](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) bietet einen praktischen Überblick über ExtJS-Xtypes und Knotentypen mit ihren entsprechenden Ressourcentypen in der Granite-Benutzeroberfläche.
-   * Zum Anpassen von Feldern finden Sie weitere Informationen in der AEM Gems-Sitzung zum [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=de).
-   * Migrieren von „vtypes“ zu [Validierung der Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * Zum Verwenden von JS-Listenern finden Sie weitere Informationen unter [Umgang mit Feldereignissen](#handling-field-events) und in der AEM Gems-Sitzung [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=de).
+  * Erstellen Sie ein Dialogfeld zur Verwendung in der Touch-optimierten Benutzeroberfläche. Aus Kompatibilitätsgründen kann die Touch-optimierte Benutzeroberfläche jedoch die Definition eines Dialogfelds der klassischen Benutzeroberfläche verwenden, wenn für die Touch-optimierte Benutzeroberfläche kein Dialogfeld definiert wurde.
+  * Die [AEM-Modernisierungs-Tools](/help/sites-developing/modernization-tools.md) werden bereitgestellt, um Unterstützung bei der Erweiterung vorhandener Komponenten zu bieten.
+  * Das [Zuordnen von ExtJS zu Granite-UI-Komponenten](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) bietet einen praktischen Überblick über ExtJS-Xtypes und Knotentypen mit ihren entsprechenden Ressourcentypen in der Granite-Benutzeroberfläche.
+  * Zum Anpassen von Feldern finden Sie weitere Informationen in der AEM Gems-Sitzung zum [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=de).
+  * Migrieren von „vtypes“ zu [Validierung der Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
+  * Zum Verwenden von JS-Listenern finden Sie weitere Informationen unter [Umgang mit Feldereignissen](#handling-field-events) und in der AEM Gems-Sitzung [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=de).
 
 ### Migrieren von CQ:listener-Code {#migrating-cq-listener-code}
 

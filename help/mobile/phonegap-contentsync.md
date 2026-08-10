@@ -12,7 +12,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2954'
+source-wordcount: '2955'
 ht-degree: 1%
 
 ---
@@ -135,11 +135,11 @@ Die Verarbeitung kann vom Rendern einfacher JSON-Dateien bis zum vollständigen 
 * **path** - Pfad zu einem Asset-Ordner unter /content/dam.
 * **Ausgabedarstellungen** - Der Typ ist ein Array von Zeichenfolgen, mit denen Benutzende angeben können, welche Ausgabedarstellungen anstelle des Standardbilds verwendet werden sollen. In der folgenden Liste sind einige vordefinierte Ausgabedarstellungen aufgeführt. Sie können jedoch auch jede vom Workflow erstellte Ausgabedarstellung verwenden:
 
-   * *original*
-   * *cq5dam.thumbnail.48.48.png*
-   * *cq5dam.thumbnail.319.319.png*
-   * *cq5dam.thumbnail.140.100.png*
-   * *CQ5dam.web.1280.1280.png*
+  * *original*
+  * *cq5dam.thumbnail.48.48.png*
+  * *cq5dam.thumbnail.319.319.png*
+  * *cq5dam.thumbnail.140.100.png*
+  * *CQ5dam.web.1280.1280.png*
 
 **image** - Erfassen Sie ein Bild.
 
@@ -156,7 +156,8 @@ Der Bildtyp wird verwendet, um das We.Retail-Logo in die ZIP-Datei einzuschließ
 
 * **deep** - Optionale boolesche Eigenschaft, die bestimmt, ob auch untergeordnete Seiten einbezogen werden sollen. Der Standardwert lautet *true.*
 
-* **includeImages** - Optionale boolesche Eigenschaft, die bestimmt, ob Bilder einbezogen werden sollen. Der Standardwert lautet *true*.Standardmäßig werden nur Bildkomponenten mit dem Ressourcentyp „foundation/components/image“ für die Aufnahme berücksichtigt. Sie können weitere Ressourcentypen hinzufügen, indem Sie den **Day CQ WCM Pages Update Handler** in der Web-Konsole konfigurieren.
+* **includeImages** - Optionale boolesche Eigenschaft, die bestimmt, ob Bilder einbezogen werden sollen. Der Standardwert lautet *true*.
+Standardmäßig werden nur Bildkomponenten mit dem Ressourcentyp „foundation/components/image“ für die Aufnahme berücksichtigt. Sie können weitere Ressourcentypen hinzufügen, indem Sie den **Day CQ WCM Pages Update Handler** in der Web-Konsole konfigurieren.
 
 **rewrite** - Der Knoten rewrite definiert, wie die Links in der exportierten Seite neu geschrieben werden. Die neu geschriebenen Links können entweder auf die Dateien in der ZIP-Datei oder auf die Ressourcen auf dem Server verweisen.
 

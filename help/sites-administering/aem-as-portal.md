@@ -12,7 +12,7 @@ feature: Administering
 role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '6110'
+source-wordcount: '6118'
 ht-degree: 96%
 
 ---
@@ -166,12 +166,12 @@ Das Portlet speichert in seiner Standardkonfiguration die Antworten, die es von 
 
 Das Portlet kann mit einem eigenen Cache konfiguriert werden, sodass der Inhalt im Portlet angezeigt wird, ohne dass Zugriff auf AEM erforderlich ist. Das Portal ist als Inhalt in /libs/portal/director verfügbar. Um auf die Inhalte zuzugreifen, starten Sie eine AEM-Instanz und laden Sie mithilfe von CRXDE Lite oder Webdav die Datei aus diesem Speicherort herunter.
 
-Sie können dieses Bundle während der Laufzeit bereitstellen oder vor der Bereitstellung der Portlet-Web-Anwendung unter `WEB-INF/lib/resources/bundles` hinzufügen.
+Sie können dieses Paket während der Laufzeit bereitstellen oder vor der Bereitstellung der Portlet-Web-Anwendung unter `WEB-INF/lib/resources/bundles` hinzufügen.
 
 Nachdem der Cache bereitgestellt wurde, speichert das Portlet Inhalte aus der Veröffentlichungsinstanz zwischen. Der Portlet-Cache kann mithilfe einer Anweisung zum Leeren des Dispatchers von AEM invalidiert werden. So konfigurieren Sie das Portlet auf eine Weise, dass es seinen eigenen Cache verwendet:
 
 1. Konfigurieren Sie einen Replikationsagenten in der Autoreninstanz, der auf den Portal-Server ausgerichtet ist.
-1. Wenn der Portal-Server auf dem Host **localhost** (**Port 8080**) ausgeführt wird und die Web-Anwendung des AEM-Portlets im Kontext **cqportlet** gemountet wird, wird die URL zum Leeren des Caches `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Verwenden Sie GET als Methode.
+1. Wenn der Portal-Server auf dem Host **localhost** (**Port 8080**) ausgeführt wird und die Web-Anwendung des AEM-Portlets im Web-Anwendungskontext **cqportlet** gemountet wird, lautet die URL zum Leeren des Zwischenspeichers `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Verwenden Sie das Verfahren GET.
    **Hinweis:** Anstatt einen Anforderungsparameter zu verwenden, können Sie eine HTTP-Kopfzeile mit dem Namen **Pfad** senden.
 
 #### Leeren des Cache über den Replikationsagenten {#flushing-the-cache-via-replication-agent}
@@ -389,7 +389,7 @@ Um die Verwaltungsseite für die Website zu öffnen oder eine Seite des Portlets
    </LoginModule>
    ```
 
-1. Wählen Sie in der OSGi-Konfigurationskonsole, die standardmäßig unter https://localhost:4502/system/console/configMgr zu finden ist, die Option **CQ PIN Authentication Handler** aus dem Dropdown-Menü aus.
+1. Wählen Sie in der OSGi-Konfigurationskonsole, die standardmäßig unter https://localhost:4502/system/console/configMgr zu finden ist **die Option** CQ PIN Authentication Handler) aus dem Dropdown-Menü aus.
 1. Bearbeiten Sie den Parameter **URL-Stammpfad** so, dass er den einzelnen Wert **/** enthält.
 
 ### Berechtigungen {#privileges}
@@ -422,11 +422,11 @@ Die OSGi-Web-Konsole listet alle Schaltflächenkonfigurationen auf der Registerk
 
 Standardmäßig verwendet das AEM-Inhalts-Portlet die Inline-Bearbeitungsfunktion. Wenn Sie jedoch lieber zur Bearbeitung in die AEM-Autoreninstanz wechseln möchten, aktivieren Sie die Schaltfläche **SiteAdmin** und die Schaltfläche **ContentFinder**, deaktivieren jedoch die Schaltfläche **Bearbeiten**. Vergewissern Sie sich in diesem Fall, dass die PIN-Authentifizierung in AEM korrekt konfiguriert ist.
 
-Das Symbolleisten-Layout des Portlets kann angepasst werden, indem ein Bundle über die Felix-Web-Konsole des Portlets installiert wird, in dem die benutzerdefinierten CSS/HTML-Informationen an einem vordefinierten Speicherort gespeichert sind.
+Das Symbolleisten-Layout des Portlets kann angepasst werden, indem ein Paket über die Felix-Web-Konsole des Portlets installiert wird, in dem die benutzerdefinierten CSS/HTML-Informationen an einem vordefinierten Speicherort gespeichert sind.
 
-#### Bundle-Struktur {#bundle-structure}
+#### Paketstruktur {#bundle-structure}
 
-Nachfolgend sehen Sie ein Beispiel einer Bundle-Struktur:
+Nachfolgend sehen Sie ein Beispiel einer Paketstruktur:
 
 ```xml
 $ jar tvf target/toolbarlayout-0.0.1-SNAPSHOT.jar | awk '{print $8}'
@@ -444,7 +444,7 @@ META-INF/MANIFEST.MF
 /com/day/cq/portlet/toolbar/layout/toolbar.css
 ```
 
-Der Ordner META-INF enthält die Datei MANIFEST.MF, die von OSGi benötigt wird, um sie als Bundle zu identifizieren. Dies sieht wie folgt aus:
+Der Ordner META-INF enthält die Datei MANIFEST.MF, die von OSGi benötigt wird, um sie als Paket zu identifizieren. Dies sieht wie folgt aus:
 
 ```xml
 Manifest-Version: 1.0
@@ -473,7 +473,7 @@ Die Symbolleiste des Portlets weist grundsätzlich zwei Ansichtsstatus auf. Jede
 
 #### Veröffentlichungsansicht {#publish-view}
 
-Die Veröffentlichungsansicht verfügt nur über eine Schaltfläche, mit der Sie zur Verwaltungsansicht der Symbolleiste wechseln können. Die Veröffentlichungsansicht wird im [vorherigen Bundle](/help/sites-deploying/configuring-osgi.md#bundles) durch die Datei „publish.html“ repräsentiert. In HTML können Sie die folgenden Platzhalter verwenden, die beim Rendern durch das Portlet mit dem entsprechenden Inhalt ersetzt werden:
+Die Veröffentlichungsansicht verfügt nur über eine Schaltfläche, mit der Sie zur Verwaltungsansicht der Symbolleiste wechseln können. Die Veröffentlichungsansicht wird im [vorherigen Paket](/help/sites-deploying/configuring-osgi.md#bundles) durch die Datei „publish.html“ repräsentiert. In HTML können Sie die folgenden Platzhalter verwenden, die beim Rendern durch das Portlet mit dem entsprechenden Inhalt ersetzt werden:
 
 #### Platzhalter der Veröffentlichungsansicht {#publish-view-placeholders}
 
@@ -483,7 +483,7 @@ Die Veröffentlichungsansicht verfügt nur über eine Schaltfläche, mit der Sie
 
 #### Verwaltungsansicht {#manage-view}
 
-Die Verwaltungsansicht hat vier Schaltflächen: „Bearbeiten“, Registerkarte „Websites“, „Aktualisieren“ und „Zurück“. Die Verwaltungsansicht wird im [vorherigen Bundle](/help/sites-deploying/configuring-osgi.md#bundles) durch die Datei manage.html repräsentiert. In HTML können Sie die folgenden Platzhalter verwenden, die beim Rendern durch das Portlet mit dem entsprechenden Inhalt ersetzt werden:
+Die Verwaltungsansicht hat vier Schaltflächen: „Bearbeiten“, Registerkarte „Websites“, „Aktualisieren“ und „Zurück“. Die Verwaltungsansicht wird im [vorherigen Paket](/help/sites-deploying/configuring-osgi.md#bundles) durch die Datei manage.html repräsentiert. In HTML können Sie die folgenden Platzhalter verwenden, die beim Rendern durch das Portlet mit dem entsprechenden Inhalt ersetzt werden:
 
 #### Platzhalter der Verwaltungsansicht {#manage-view-placeholders}
 
@@ -526,7 +526,7 @@ title="{text}"/>
 
 #### Installieren eines benutzerdefinierten Layouts {#installing-a-custom-layout}
 
-Zur Installation benutzerdefinierter Layouts rufen Sie den Abschnitt **Bundles** der OSGi-Web-Konsole des Portlets auf und laden Sie das Bundle hoch.
+Zur Installation benutzerdefinierter Layouts rufen Sie den Abschnitt **Pakete** der OSGi-Web-Konsole des Portlets auf und laden Sie das Paket hoch.
 
 #### Pakete {#packages}
 
@@ -555,7 +555,7 @@ Falls die Regeln hinsichtlich der Handhabung von Gebietsschema-Informationen inn
 
 ### Optionale OSGi-Dienste {#optional-osgi-services}
 
-Optionale OSGi-Dienste können implementiert werden, um verschiedene Teile des Portlets anzupassen. Jeder Dienst entspricht einer Java-Schnittstelle. Diese Schnittstelle kann über ein Bundle im Portlet implementiert und bereitgestellt werden.
+Optionale OSGi-Dienste können implementiert werden, um verschiedene Teile des Portlets anzupassen. Jeder Dienst entspricht einer Java-Schnittstelle. Diese Schnittstelle kann über ein Paket im Portlet implementiert und bereitgestellt werden.
 
 <table>
  <tbody>
@@ -608,7 +608,7 @@ Optionale OSGi-Dienste können implementiert werden, um verschiedene Teile des P
 
 #### Ersetzen von Standarddiensten {#replacing-default-services}
 
-Die folgenden Dienste verfügen über eine Standardimplementierung im Inhalts-Portlet (mit einer entsprechenden Java-Schnittstelle). Zum Anpassen muss ein Bundle, das die neue Dienstimplementierung enthält, in der Portlet-Anwendung bereitgestellt werden.
+Die folgenden Dienste verfügen über eine Standardimplementierung im Inhalts-Portlet (mit einer entsprechenden Java-Schnittstelle). Zum Anpassen muss ein Paket, das die neue Dienstimplementierung enthält, in der Portlet-Anwendung bereitgestellt werden.
 
 Bei der Implementierung eines solchen Dienstes ist darauf zu achten, dass die Eigenschaft **service.ranking** des Dienstes auf einen positiven Wert gesetzt wird. Die Standardimplementierung verwendet den Rangfolgenwert **0** und das Portlet nutzt den Service mit dem höchsten Rangfolgenwert.
 
@@ -730,7 +730,7 @@ Nutzen Sie die Portlet-Komponente zum Einfügen eines Portlet-Fensters auf Ihrer
 
 Um auf von AEM WCM bereitgestellte Inhalte zuzugreifen, muss der Portal-Server mit dem AEM Portal Director Portlet ausgestattet werden. Dazu installieren und konfigurieren Sie das Portlet und fügen es der Portal-Seite hinzu, indem Sie die in diesem Abschnitt beschriebenen Schritte ausführen.
 
-Standardmäßig stellt das Portlet eine Verbindung zur Veröffentlichungsinstanz unter localhost :4503 zur Autoreninstanz unter localhost:4502 her. Diese Werte können während der Bereitstellung des Portlets geändert werden. Der Portal-Director ist als Inhalt im Repository unter /libs/portal/directory verfügbar. Laden Sie die WAR-Datei der Anwendung vor der Verwendung herunter.
+Standardmäßig stellt das Portlet eine Verbindung zur Veröffentlichungsinstanz unter localhost:4503 und zur Autoreninstanz unter localhost:4502 her. Diese Werte können während der Bereitstellung des Portlets geändert werden. Der Portal-Director ist als Inhalt im Repository unter /libs/portal/directory verfügbar. Laden Sie die WAR-Datei der Anwendung vor der Verwendung herunter.
 
 ### Herunterladen der WAR-Datei {#downloading-the-war-file}
 
@@ -776,7 +776,7 @@ So konfigurieren Sie das Portlet:
    * **Autor-Basis-URL**: Die Basis-URL für die AEM-Autoreninstanz.
    * **Veröffentlichungs-Basis-URL**: Die Basis-URL für die AEM-Veröffentlichungsinstanz.
    * **Autor wird als Veröffentlichung verwendet**: Wird die Autoreninstanz als Veröffentlichung verwendet?
-Instanz (für die Entwicklung)?
+     Instanz (für die Entwicklung)?
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 

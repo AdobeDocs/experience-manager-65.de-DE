@@ -112,9 +112,9 @@ Schnittstelle und Klassen:
 * `com.day.cq.dam.api.handler.AssetHandler`-Schnittstelle: Diese Schnittstelle beschreibt den Dienst, der Unterstützung für bestimmte MIME-Typen hinzufügt. Wenn ein MIME-Typ hinzugefügt werden soll, muss diese Schnittstelle implementiert werden. Die Schnittstelle enthält Methoden zum Importieren und Exportieren der jeweiligen Dokumente, zum Erstellen von Miniaturbildern und zum Extrahieren von Metadaten.
 * `com.day.cq.dam.core.AbstractAssetHandler`-Klasse: Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen.
 * `com.day.cq.dam.core.AbstractSubAssetHandler`-Klasse:
-   * Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen sowie übliche Funktion für die Extraktion von Teil-Assets.
-   * Am besten ist es, zu Beginn einer Implementierung den Inhalt einer bereitgestellten abstrakten Implementierung zu übernehmen, wodurch die meisten Dinge im Voraus erledigt werden und ein angemessenes Standardverhalten erreicht wird: die com.day.cq.dam.core.AbstractAssetHandler-Klasse.
-   * Diese Klasse enthält bereits einen abstrakten Dienst-Deskriptor. Wenn Sie also den Inhalt dieser Klasse übernommen haben und das maven-sling-Plug-in verwenden, müssen Sie das Übernahme-Flag auf „true“ setzen.
+  * Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen sowie übliche Funktion für die Extraktion von Teil-Assets.
+  * Am besten ist es, zu Beginn einer Implementierung den Inhalt einer bereitgestellten abstrakten Implementierung zu übernehmen, wodurch die meisten Dinge im Voraus erledigt werden und ein angemessenes Standardverhalten erreicht wird: die com.day.cq.dam.core.AbstractAssetHandler-Klasse.
+  * Diese Klasse enthält bereits einen abstrakten Dienst-Deskriptor. Wenn Sie also den Inhalt dieser Klasse übernommen haben und das maven-sling-Plug-in verwenden, müssen Sie das Übernahme-Flag auf „true“ setzen.
 
 Die folgenden Methoden müssen implementiert werden:
 
@@ -151,8 +151,8 @@ Wenn Sie nach der Durchführung des folgenden Verfahrens eine Textdatei in [!DNL
 
       * Gruppen-ID: `com.day.cq5.myhandler`.
       * Artefakt-ID: myBundle.
-      * Name: Mein [!DNL Experience Manager]-Bundle.
-      * Beschreibung: Das ist mein [!DNL Experience Manager]-Bundle.
+      * Name: Mein [!DNL Experience Manager]-Paket.
+      * Beschreibung: Das ist mein [!DNL Experience Manager]-Paket.
 
    1. Klicken Sie auf **[!UICONTROL Beenden]**.
 
@@ -435,13 +435,13 @@ Wenn Sie nach der Durchführung des folgenden Verfahrens eine Textdatei in [!DNL
    }
    ```
 
-1. Kompilieren Sie die [!DNL Java™]-Klasse und erstellen Sie das Bundle:
+1. Kompilieren Sie die [!DNL Java™]-Klasse und erstellen Sie das Paket:
 
    1. Klicken Sie mit der rechten Maustaste auf das `myBundle`-Projekt, wählen Sie **[!UICONTROL Ausführen als]** und dann **[!UICONTROL Maven Install]** aus.
-   1. Das Bundle `myBundle-0.0.1-SNAPSHOT.jar` (das die kompilierte Klasse enthält) wird unter `myBundle/target` erstellt.
+   1. Das Paket `myBundle-0.0.1-SNAPSHOT.jar` (das die kompilierte Klasse enthält) wird unter `myBundle/target` erstellt.
 
 1. Erstellen Sie in CRX Explorer einen neuen Knoten unter `/apps/myApp`. Name = `install`, Typ = `nt:folder`.
-1. Kopieren Sie das Bundle `myBundle-0.0.1-SNAPSHOT.jar` und speichern Sie es unter `/apps/myApp/install` (zum Beispiel mit WebDAV). Der neue Text-Handler ist jetzt in [!DNL Experience Manager] aktiv.
+1. Kopieren Sie das Paket `myBundle-0.0.1-SNAPSHOT.jar` und speichern Sie es unter `/apps/myApp/install` (zum Beispiel mit WebDAV). Der neue Text-Handler ist jetzt in [!DNL Experience Manager] aktiv.
 1. Öffnen Sie im Browser die [!UICONTROL Apache Felix Web Management Console]. Wählen Sie die Registerkarte [!UICONTROL Komponenten] aus und deaktivieren Sie den Standard-Text-Handler `com.day.cq.dam.core.impl.handler.TextHandler`.
 
 ## Befehlszeilenbasierter Medien-Handler {#command-line-based-media-handler}
