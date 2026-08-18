@@ -11,7 +11,7 @@ feature: Authoring,Integration
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '655'
 ht-degree: 98%
 
 ---
@@ -97,7 +97,7 @@ Wenn Ihre Website für [Adobe Analytics konfiguriert](/help/sites-administering/
 
 ### Zugriff auf die Activity Map {#accessing-the-activity-map}
 
-Nachdem Sie den Modus [Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) ausgewählt haben, müssen Sie Ihre Anmeldedaten für Adobe Analytics eingeben.  
+Nachdem Sie den Modus [Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) ausgewählt haben, müssen Sie Ihre Anmeldedaten für Adobe Analytics eingeben.
 
 ![aa-03](assets/aa-03.png)
 
@@ -131,29 +131,29 @@ Verwenden Sie das Symbol **Einstellungen anzeigen** zum Öffnen des Dialogs **Ac
 
 ![aa-04-1](assets/aa-04-1.png)
 
-Das Dialogfeld **Einstellungen für Activity Map** bietet auf drei Registerkarten eine Reihe von Optionen:  
+Das Dialogfeld **Einstellungen für Activity Map** bietet auf drei Registerkarten eine Reihe von Optionen:
 
 ![aa-06](assets/aa-06.png)
 
 * Allgemein
 
-   * Report Suite
-   * Seitenname
-   * Sprache
-   * Kennzeichnen von Überlagerungen mit
-   * Schriftgröße der Kennzeichnung
-   * Verlaufsfarbe
-   * Blasenfarbe
-   * Farbverlauf basierend auf
-   * Verlaufstransparenz
+  * Report Suite
+  * Seitenname
+  * Sprache
+  * Kennzeichnen von Überlagerungen mit
+  * Schriftgröße der Kennzeichnung
+  * Verlaufsfarbe
+  * Blasenfarbe
+  * Farbverlauf basierend auf
+  * Verlaufstransparenz
 
 * Standard
 
-   * Anzeige (Typ und Anzahl der Links)
-   * Überlagerungen für Links ausblenden, die keine Treffer erhalten haben
+  * Anzeige (Typ und Anzahl der Links)
+  * Überlagerungen für Links ausblenden, die keine Treffer erhalten haben
 
 * Live
 
-   * Stärkste Gewinner oder Verlierer anzeigen
-   * Unterste % ausschließen
-   * Automatische Aktualisierung (Daten und Zeitraum)
+  * Stärkste Gewinner oder Verlierer anzeigen
+  * Unterste % ausschließen
+  * Automatische Aktualisierung (Daten und Zeitraum)

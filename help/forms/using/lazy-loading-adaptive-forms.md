@@ -1,5 +1,5 @@
 ---
-title: 'Verbessern der Performance umfangreicher Formulare durch verzögertes Laden '
+title: Verbessern der Performance umfangreicher Formulare durch verzögertes Laden
 description: Verzögertes Laden (Lazy Loading) verbessert die Leistung von umfangreichen und komplexen adaptiven Formularen erheblich, indem Formularfragmente erst dann initialisiert und geladen werden, wenn sie sichtbar werden.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 100%
+source-wordcount: '1114'
+ht-degree: 94%
 
 ---
 
-# Verbessern der Performance umfangreicher Formulare durch verzögertes Laden {#improve-performance-of-large-forms-with-lazy-loading}
+# Verbessern der Performance umfangreicher Formulare durch verzögertes Laden{#improve-performance-of-large-forms-with-lazy-loading}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
@@ -35,17 +35,17 @@ Im Folgenden werden zunächst die Anforderungen und vorbereitenden Schritte vor 
 Bevor Sie das verzögerte Laden von Fragmenten in Ihrem adaptiven Formular konfigurieren, müssen Sie Strategien für das Erstellen von Fragmenten entwickeln, Werte identifizieren, die in den Skripten verwendet oder in anderen Fragmenten referenziert werden, und Regeln definieren, die die Sichtbarkeit von Feldern in verzögert geladenen Fragmenten steuern.
 
 * **Identifizieren und Erstellen von Fragmenten**
-Sie können nur adaptive Formularfragmente für Lazy Loading (verzögertes Laden) konfigurieren. Ein Fragment ist ein unabhängiges Segment, das sich außerhalb eines adaptiven Formulars befindet und für mehrere Formulare wiederverwendet werden kann. Somit besteht der erste Schritt beim Implementieren des verzögerten Ladens in der Bestimmung der logischen Abschnitte in einem Formular und deren Konvertierung in Fragmente. Sie können ein Fragment von Grund auf neu erstellen oder einen vorhandenen Formularbereich als Fragment speichern.
+Sie können nur adaptive Formularfragmente für verzögertes Laden konfigurieren. Ein Fragment ist ein unabhängiges Segment, das sich außerhalb eines adaptiven Formulars befindet und für mehrere Formulare wiederverwendet werden kann. Somit besteht der erste Schritt beim Implementieren des verzögerten Ladens in der Bestimmung der logischen Abschnitte in einem Formular und deren Konvertierung in Fragmente. Sie können ein Fragment von Grund auf neu erstellen oder einen vorhandenen Formularbereich als Fragment speichern.
 
-   Weitere Informationen zum Erstellen von Fragmenten finden Sie unter [Adaptive Formularfragmente](../../forms/using/adaptive-form-fragments.md).
+  Weitere Informationen zum Erstellen von Fragmenten finden Sie unter [Adaptive Formularfragmente](../../forms/using/adaptive-form-fragments.md).
 
 * **Identifizieren und Markieren globaler Werte**
-Zu formularbasierten Transaktionen gehören dynamische Elemente, die relevante Daten von Benutzern erfassen und verarbeiten und dadurch das Ausfüllen des Formulars vereinfachen. Beispiel: Ihr Formular enthält Feld A in Fragment X, dessen Wert die Gültigkeit von Feld B in einem anderen Fragment bestimmt. Wenn in diesem Fall Fragment X für verzögertes Laden markiert ist, muss der Wert von Feld A verfügbar sein, um Feld B zu validieren, selbst wenn Fragment X nicht geladen wird. Um dies zu erreichen, können Sie Feld A als global markieren, wodurch sichergestellt wird, dass der zugehörige Wert für die Validierung von Feld B verfügbar ist, selbst wenn Fragment X noch nicht geladen ist.
+Forms-basierte Transaktionen beinhalten dynamische Elemente, um relevante Daten von Benutzenden zu erfassen und zu verarbeiten und so das Ausfüllen des Formulars zu vereinfachen. Beispiel: Ihr Formular enthält Feld A in Fragment X, dessen Wert die Gültigkeit von Feld B in einem anderen Fragment bestimmt. Wenn in diesem Fall Fragment X für verzögertes Laden markiert ist, muss der Wert von Feld A verfügbar sein, um Feld B zu validieren, selbst wenn Fragment X nicht geladen wird. Um dies zu erreichen, können Sie Feld A als global markieren, wodurch sichergestellt wird, dass der zugehörige Wert für die Validierung von Feld B verfügbar ist, selbst wenn Fragment X noch nicht geladen ist.
 
   Weitere Informationen dazu, wie Sie einen Feldwert als „global“ kennzeichnen, finden Sie unter [Konfigurieren von verzögertem Laden](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
-* **Erstellen von Regeln zur Steuerung der Sichtbarkeit von Feldern**
-Formulare enthalten Felder und Abschnitte, die nicht für alle Benutzer und Bedingungen gelten. Menschen, die Formulare verfassen und entwickeln, verwenden Regeln für Sichtbarkeit oder Ein- und Ausblenden, um die Sichtbarkeit der Formulare anhand von Benutzereingaben zu steuern. Beispielsweise wird das Feld „Büroadresse“ nicht den Benutzenden angezeigt, die im Feld „Beschäftigungsstatus“ in einem Formular die Option „Arbeitslos“ auswählen. Weitere Informationen zum Erstellen von Regeln finden Sie unter [Verwenden des Regeleditors](../../forms/using/rule-editor.md).
+* **Regeln schreiben, um die Sichtbarkeit von Feldern zu steuern**
+Forms enthält einige Felder und Abschnitte, die nicht für alle Benutzenden und Bedingungen gelten. Menschen, die Formulare verfassen und entwickeln, verwenden Regeln für Sichtbarkeit oder Ein- und Ausblenden, um die Sichtbarkeit der Formulare anhand von Benutzereingaben zu steuern. Beispielsweise wird das Feld „Büroadresse“ nicht den Benutzenden angezeigt, die im Feld „Beschäftigungsstatus“ in einem Formular die Option „Arbeitslos“ auswählen. Weitere Informationen zum Erstellen von Regeln finden Sie unter [Verwenden des Regeleditors](../../forms/using/rule-editor.md).
 
   Sie können Sichtbarkeitsregeln in verzögert geladenen Fragmenten so nutzen, dass bedingte Felder nur angezeigt werden, wenn sie benötigt werden. Markieren Sie außerdem das bedingte Feld als „global“, um im Ausdruck für die Sichtbarkeit des verzögert geladenen Fragments darauf zu verweisen.
 

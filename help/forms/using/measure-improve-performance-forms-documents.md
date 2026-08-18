@@ -11,7 +11,7 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1295'
 ht-degree: 100%
 
 ---
@@ -54,7 +54,7 @@ Kommen wir zur genauen Vorgehensweise, wie Sie die Leistung messen und Konversio
 * Sie haben bereits ein Adobe Marketing Cloud-Konto und sich für Analytics- und Target-Lösungen registriert.
 * Sie verfügen über ein veröffentlichtes adaptives Formular, auf das die Kundinnen und Kunden zugreifen können.
 
-### Arbeitsablaufschritte {#workflow-steps}
+### Workflow-Schritte {#workflow-steps}
 
 #### Schritt 1: Konfigurieren von Analytics und Target in AEM Forms  {#step-configure-analytics-and-target-in-aem-forms-br}
 
@@ -63,8 +63,8 @@ Kommen wir zur genauen Vorgehensweise, wie Sie die Leistung messen und Konversio
 Um umfassende Erkenntnisse zu den Interaktionen der Kundinnen und Kunden mit Ihren Formularen zu erhalten, müssen Sie zunächst Analytics in AEM Forms konfigurieren. Führen Sie die folgenden Schritte durch:
 
 1. Erstellen einer Report Suite in Adobe Analytics
-1. Cloud Service-Konfiguration in AEM erstellen
-1. Cloud Service-Framework in AEM erstellen
+1. Cloud-Service-Konfiguration in AEM erstellen
+1. Cloud-Service-Framework in AEM erstellen
 1. AEM Forms-Analytics-Konfigurationsdienst konfigurieren
 1. Analytics im Formular in AEM aktivieren
 
@@ -72,7 +72,7 @@ Ausführliche Anweisungen finden Sie unter [Konfigurieren von Analysen und Beric
 
 **Target konfigurieren**
 
-Um A/B-Tests für Ihre adaptiven Formulare zu erstellen und durchzuführen, konfigurieren Sie Target in AEM Forms, wie unter [Einrichten und Integrieren von Target in AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p) beschrieben. 
+Um A/B-Tests für Ihre adaptiven Formulare zu erstellen und durchzuführen, konfigurieren Sie Target in AEM Forms, wie unter [Einrichten und Integrieren von Target in AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p) beschrieben.
 
 #### Schritt 2: Anzeigen des Analyseberichts {#step-view-analytics-report-br}
 

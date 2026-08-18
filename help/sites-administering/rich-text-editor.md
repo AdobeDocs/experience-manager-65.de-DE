@@ -8,8 +8,8 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2887'
-ht-degree: 100%
+source-wordcount: '3070'
+ht-degree: 99%
 
 ---
 
@@ -95,8 +95,8 @@ Die Funktionen werden über eine Reihe von Plug-ins zur Verfügung gestellt, jew
 
 * einer `features`-Eigenschaft:
 
-   * zur Aktivierung oder Deaktivierung der grundlegenden Funktionalität des jeweiligen Plug-ins verwendet werden kann
-   * die über ein standardisiertes Verfahren konfiguriert werden kann;
+  * zur Aktivierung oder Deaktivierung der grundlegenden Funktionalität des jeweiligen Plug-ins verwendet werden kann
+  * die über ein standardisiertes Verfahren konfiguriert werden kann;
 
 * weiteren Eigenschaften und Optionen, die eine spezielle Konfiguration erfordern.
 
@@ -152,7 +152,7 @@ Der [RTE-Bearbeitungsmodus (und die Benutzeroberfläche)](#editingmodes), den Si
 
 Konfigurieren Sie die folgenden Eigenschaften, die nur im Dialogfeld-Bearbeitungsmodus in der Touch-optimierten Benutzeroberfläche verfügbar sind:
 
-* `useFixedInlineToolbar`: Legen Sie diese boolesche Eigenschaft, die im RTE-Knoten (einer mit „sling:resourceType=`cq/gui/components/authoring/dialog/richtext`“) definiert ist, auf `True` fest, um die RTE-Symbolleiste zu fixieren.
+* `useFixedInlineToolbar`: Setzen Sie diese auf dem RTE-Knoten definierte boolesche Eigenschaft (eine mit sling:resourceType= `cq/gui/components/authoring/dialog/richtext`) auf `True`, damit die RTE-Symbolleiste fixiert wird, anstatt sie frei beweglich zu machen.
 
   Wenn diese Eigenschaft auf „true“ gesetzt ist, wird die Rich-Text-Bearbeitung standardmäßig beim Ereignis „foundation-contentloaded“ gestartet.
 
@@ -332,8 +332,8 @@ Insbesondere, um die verfügbaren Plug-ins und zugehörigen Optionen anzuzeigen:
 * Die [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText)-Komponente bietet ein Formularfeld zum Bearbeiten von formatierten Textinformationen (Rich-Text). Informationen zu allen für das Rich-Text-Formular verfügbaren Parametern finden Sie in den Konfigurationsoptionen.
 * Die RichText-Komponente bietet zahlreiche Funktionen mithilfe der Plug-ins, die unter [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) aufgeführt sind. Für jedes Plug-in gilt dabei Folgendes:
 
-   * Weitere Informationen zu den Funktionen, die aktiviert (oder deaktiviert) werden können, finden Sie unter „Funktionen“.
-   * Unter „Konfigurationsoptionen“ finden Sie alle Parameter, die für eine detaillierte Konfiguration des entsprechenden Plug-ins verfügbar sind.
+  * Weitere Informationen zu den Funktionen, die aktiviert (oder deaktiviert) werden können, finden Sie unter „Funktionen“.
+  * Unter „Konfigurationsoptionen“ finden Sie alle Parameter, die für eine detaillierte Konfiguration des entsprechenden Plug-ins verfügbar sind.
 
 * Es sind außerdem weitere Informationen zu HTML-Regeln für Links verfügbar.
 

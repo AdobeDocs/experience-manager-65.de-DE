@@ -9,8 +9,8 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2478'
-ht-degree: 100%
+source-wordcount: '2522'
+ht-degree: 98%
 
 ---
 
@@ -24,22 +24,22 @@ Richten Sie die Referenz-Website ein, wie unter [Einrichten und Konfigurieren de
 
 * AEM Forms
 
-   * Automatisierte Formularkonvertierung
-   * Authoring –
-   * Formulardatenmodelle/Datenquellen
+  * Automatisierte Formularkonvertierung
+  * Authoring –
+  * Formulardatenmodelle/Datenquellen
 
 * AEM Forms
 
-   * Datenerfassung
-   * (Optional) Datenintegration (MS® Dynamics)
-   * (Optional) Adobe Sign
+  * Datenerfassung
+  * (Optional) Datenintegration (MS® Dynamics)
+  * (Optional) Adobe Sign
 
 * Workflow
 * E-Mail-Benachrichtigungen
 * (Optional) Kundenkommunikation
 
-   * Druckkanal
-   * Webkanal
+  * Druckkanal
+  * Web-Kanal
 
 * Adobe Analytics
 * Datenquellenintegrationen
@@ -64,14 +64,14 @@ Die folgenden Gruppen sind ebenfalls enthalten:
 
 * **We.Gov Forms-Benutzer**
 
-   * George Lang (Mitglied)
-   * Camila Santos (Mitglied)
+  * George Lang (Mitglied)
+  * Camila Santos (Mitglied)
 
 * **We.Gov-Benutzer**
 
-   * George Lang (Mitglied)
-   * Camila Santos (Mitglied)
-   * Aya Tan (Mitglied)
+  * George Lang (Mitglied)
+  * Camila Santos (Mitglied)
+  * Aya Tan (Mitglied)
 
 ### Legende zu Demoübersichtsbegriffen {#demo-overview-terms-legend}
 
@@ -81,7 +81,7 @@ Die folgenden Gruppen sind ebenfalls enthalten:
 1. **Links**: Befinden sich oben im Hauptmenü auf der Site We.Gov.
 1. **Benutzeranweisungen**: Eine Reihe numerischer Schritte, die beim Navigieren durch die Benutzergeschichte ausgeführt werden müssen.
 1. **Forms Portal**: *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*
-1. **Mobilansicht**: We.Gov-Benutzerin bzw. -Benutzer, um eine Mobilansicht mit einem Browser mit angepasster Größe zu replizieren.
+1. **Mobilansicht**:We.Gov-Benutzer, um eine Mobilansicht mit einem Browser zu replizieren, dessen Größe geändert wurde.
 1. **Desktop-Ansicht**: We.gov-Benutzer, um Demo auf einem Laptop oder Desktop anzuzeigen.
 1. **Formular für Vorbildschirme**: Formular auf der Startseite der Seite We.Gov.
 1. **Adaptives Formular**: Antragsformular für die Anmeldung für die Demo We.gov.
@@ -227,7 +227,7 @@ Aya muss einige Dokumente zu Hause überprüfen, bevor sie den Antrag für die S
    1. **Verheiratet**: Bedienfeld für ehelich abhängige Personen anzeigen
    1. **Geschieden**: Bedienfeld für nächste Angehörige anzeigen
    1. **Verwitwet**: Bedienfeld für nächste Angehörige anzeigen
-   1. **Haben Sie Kinder?**: (Ja/Nein) Optionsfeld für die Anzeige des Bedienfelds für unterhaltsberechtigte Kinder.
+   1. **Haben Sie untergeordnete Elemente?**: (Ja/Nein) Optionsfeld für die Anzeige des Bedienfelds für unterhaltsberechtigte Kinder.
 
       1. (Hinzufügen/Entfernen)-Schaltfläche zum Hinzufügen/Entfernen mehrerer Bedienfelder für unterhaltsberechtigte Kinder.
 
@@ -330,7 +330,7 @@ Dank der Datenintegration und der automatisierten Workflows wird der Antrag von 
 
 1. Schließen Sie es und kehren Sie zum AEM-Posteingang zurück.
 
-   ![MS Dynamics-Datensatz](/help/forms/using/assets/ms_dynamics.png)
+   ![MS Dynamics-Eintrag](/help/forms/using/assets/ms_dynamics.png)
 
 ### Zurück zum AEM-Posteingang (George) {#george-user-story-back-to-aem-inbox}
 
@@ -395,7 +395,7 @@ George genehmigt Ayas Antrag, und dank eines bestehenden automatisierten Workflo
 
 ## (Optional) Willkommenspaket Bürgerin (Aya) {#welcome-kit-citizen-aya}
 
-**Dieser Abschnitt:** Aya erhält eine E-Mail mit einem Link zu einer interaktiven Mitteilung, in der ihre Leistungen zusammengefasst sind und die auch Formularfelder zum Ausfüllen enthält. Mit einer beigefügten PDF-Leistungsübersicht und einem Link zur interaktiven Mitteilung, die per Post verschickt wird (mit demselben Thema/Branding wie die interaktive Mitteilung).
+**Dieser Abschnitt:** Aya erhält eine E-Mail mit einem Link zu einer interaktiven Kommunikation, in der ihre Leistungen zusammengefasst sind und die auch Formularfelder zum Ausfüllen enthält. Mit einer beigefügten PDF-Leistungsübersicht und einem Link zur interaktiven Kommunikation, die per Post verschickt wird (mit demselben Thema/Branding wie die interaktive Mitteilung).
 
 ### E-Mail-Client-Benachrichtigung (Aya) {#aya-user-story-email-client}
 

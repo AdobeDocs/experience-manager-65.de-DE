@@ -8,7 +8,7 @@ exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: '1702'
 ht-degree: 99%
 
 ---
@@ -143,51 +143,51 @@ Konsistenzprüfungen, die über das [Vorgangs-Dashboard](/help/sites-administeri
 Hier sind einige im Lieferumfang enthaltene Konsistenzprüfungen aufgeführt, die für die Überwachung verwendet werden können:
 
 * Systemprüfungen
-   * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
-   * Instanzen: ein Autoren-, alle Veröffentlichungs-Server
-   * Alarmschwellenwert: Wenn der Status nicht „OK“ lautet.
-   * Alarmdefinition: Der Status einer dieser Metriken lautet entweder WARN oder CRITICAL. Weitere Informationen zur Ursache des Problems finden Sie unter dem Protokollattribut.
+  * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+  * Instanzen: ein Autoren-, alle Veröffentlichungs-Server
+  * Alarmschwellenwert: Wenn der Status nicht „OK“ lautet.
+  * Alarmdefinition: Der Status einer dieser Metriken lautet entweder WARN oder CRITICAL. Weitere Informationen zur Ursache des Problems finden Sie unter dem Protokollattribut.
 
 * Replikations-Warteschlange
 
-   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
-   * Instanzen: ein Autoren-, alle Veröffentlichungs-Server
-   * Alarmschwellenwert: Wenn der Status nicht „OK“ lautet.
-   * Alarmdefinition: Der Status einer dieser Metriken lautet entweder WARN oder CRITICAL. Weitere Informationen zu der Warteschlange, die das Problem verursacht hat, finden Sie unter dem Protokollattribut.
+  * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+  * Instanzen: ein Autoren-, alle Veröffentlichungs-Server
+  * Alarmschwellenwert: Wenn der Status nicht „OK“ lautet.
+  * Alarmdefinition: Der Status einer dieser Metriken lautet entweder WARN oder CRITICAL. Weitere Informationen zu der Warteschlange, die das Problem verursacht hat, finden Sie unter dem Protokollattribut.
 
 * Antwortleistung
 
-   * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
-   * Instanzen: Alle Server
-   * Alarmdauer: Wenn der Status nicht „OK“ lautet.
-   * Alarmdefinition: Der Status einer dieser Metriken lautet entweder WARN oder CRITICAL. Weitere Informationen zu der Warteschlange, die das Problem verursacht hat, finden Sie unter dem Protokollattribut.
+  * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+  * Instanzen: Alle Server
+  * Alarmdauer: Wenn der Status nicht „OK“ lautet.
+  * Alarmdefinition: Der Status einer dieser Metriken lautet entweder WARN oder CRITICAL. Weitere Informationen zu der Warteschlange, die das Problem verursacht hat, finden Sie unter dem Protokollattribut.
 
 * Abfrageleistung
 
-   * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
-   * Instanzen: ein Autoren-, alle Veröffentlichungs-Server
-   * Alarmschwellenwert: Wenn der Status nicht „OK“ lautet.
-   * Alarmdefinition: Mindestens eine Abfrage im System wird nur langsam ausgeführt. Weitere Informationen zu den Abfragen, die das Problem verursachen, finden Sie unter dem Protokollattribut.
+  * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
+  * Instanzen: ein Autoren-, alle Veröffentlichungs-Server
+  * Alarmschwellenwert: Wenn der Status nicht „OK“ lautet.
+  * Alarmdefinition: Mindestens eine Abfrage im System wird nur langsam ausgeführt. Weitere Informationen zu den Abfragen, die das Problem verursachen, finden Sie unter dem Protokollattribut.
 
-* Aktive Bundles
+* Aktive Pakete
 
-   * MBean: `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
-   * Instanzen: Alle Server
-   * Alarmschwellenwert: Wenn der Status nicht „OK“ lautet.
-   * Alarmdefinition: Inaktive oder ungelöste OSGi-Bundles im System. Weitere Informationen zu den Bundles, die das Problem verursachen, finden Sie unter dem Protokollattribut.
+  * MBean: `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+  * Instanzen: Alle Server
+  * Alarmschwellenwert: Wenn der Status nicht „OK“ lautet.
+  * Alarmdefinition: Inaktive oder ungelöste OSGi-Pakete im System. Weitere Informationen zu den Paketen, die das Problem verursachen, finden Sie unter dem Protokollattribut.
 
 * Protokollfehler
 
-   * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
-   * Instanzen: Alle Server
-   * Alarmschwellenwert: Wenn der Status nicht „OK“ lautet.
-   * Alarmdefinition: Die Protokolldateien enthalten Fehler. Weitere Informationen zur Ursache des Problems finden Sie unter dem Protokollattribut.
+  * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+  * Instanzen: Alle Server
+  * Alarmschwellenwert: Wenn der Status nicht „OK“ lautet.
+  * Alarmdefinition: Die Protokolldateien enthalten Fehler. Weitere Informationen zur Ursache des Problems finden Sie unter dem Protokollattribut.
 
 ## Häufige Probleme und Lösungen  {#common-issues-and-resolutions}
 
