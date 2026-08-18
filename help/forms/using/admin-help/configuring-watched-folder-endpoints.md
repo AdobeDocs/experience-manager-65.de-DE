@@ -155,12 +155,12 @@ Diese Einstellung ist hilfreich, wenn die Eingabe aus einem Ordner mit mehreren 
 Sie können Dateimuster verwenden, um Folgendes auszuschließen:
 
 * Dateien mit bestimmten Dateinamenerweiterungen, z. B. *.dat, *.xml, *.pdf.
-* Dateien mit bestimmten Namen, z. B. data.&amp;ast; schließt Dateien und Ordner mit den Namen *data1*, *data2* usw. aus.
+* Dateien mit bestimmten Namen, z. B. data.&ast; schließt Dateien und Ordner mit den Namen *data1*, *data2* usw. aus.
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
   * data`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
-  * &amp;ast;.`[dD][aA]`&#39;port&#39;
-  * &amp;ast;.`[Xx][Mm][Ll]`
+  * &ast;.`[dD][aA]`&#39;port&#39;
+  * &ast;.`[Xx][Mm][Ll]`
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -171,12 +171,12 @@ Der Standardwert ist &quot;*&quot; und bezieht sich auf alle Dateien und Ordner.
 Sie können Dateimuster verwenden, um Folgendes einzuschließen:
 
 * Dateien mit bestimmten Dateinamenerweiterungen, z. B. *.dat, *.xml, *.pdf.
-* Dateien mit bestimmten Namen, z. B. data.&amp;ast;, schließen Dateien und Ordner mit den Namen *data1*, *data2* usw. ein.
+* Dateien mit bestimmten Namen, z. B. data.&ast;, schließen Dateien und Ordner mit den Namen *data1*, *data2* usw. ein.
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
   * data`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
-  * &amp;ast;.`[dD][aA]`&#39;port&#39;
-  * &amp;ast;.`[Xx][Mm][Ll]`
+  * &ast;.`[dD][aA]`&#39;port&#39;
+  * &ast;.`[Xx][Mm][Ll]`
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -242,13 +242,13 @@ Die Ausgabe des überwachten Ordners kann ein einzelnes Dokument, eine Liste von
 
 Admins können den Dateityp angeben, von dem ein Dienst aufgerufen werden kann. Für jeden überwachten Ordner können mehrere Dateimuster angegeben werden. Ein Dateimuster kann eine der folgenden Dateieigenschaften sein:
 
-* Dateien mit bestimmten Dateinamenerweiterungen, Beispiel: &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
+* Dateien mit bestimmten Dateinamenerweiterungen, Beispiel: &ast;.dat, &ast;.xml, &ast;.pdf
 * Dateien mit bestimmten Namen, Beispiel: data.ast;
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
   * data`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
-  * &amp;ast;.`[dD][aA]`&#39;port&#39;
-  * &amp;ast;.`[Xx][Mm][Ll]`
+  * &ast;.`[dD][aA]`&#39;port&#39;
+  * &ast;.`[Xx][Mm][Ll]`
 
 Admins können das Dateimuster des Ausgabeordners definieren, in dem die Ergebnisse gespeichert werden sollen. Für die Ausgabeordner (Ergebnis, Beibehaltung und Fehler) können Admins eines der folgenden Dateimuster angeben:
 
@@ -378,7 +378,7 @@ Im Folgenden finden Sie einige Tipps und Tricks zum Konfigurieren des Endpunkts 
 * Der Watched Folder-Dienst überprüft den Eingabeordner auf Eingaben und erkennt nicht, ob die Quelldatei bzw. der Quellordner bereits vollständig in den Eingabeordner kopiert wurde, bevor mit der Verarbeitung der Datei oder des Ordners begonnen wird. Führen Sie die folgenden Schritte aus, um sicherzustellen, dass die Quelldatei bzw. der Quellordner vollständig in den Eingabeordner des überwachten Ordners kopiert wurde, bevor die Datei oder der Ordner aufgenommen wird:
 
   * Verwenden Sie „Wartezeit“. Dabei handelt es sich um den Zeitraum in Millisekunden, den der Watched Folder-Dienst ab dem Zeitpunkt der letzten Änderung wartet. Verwenden Sie diese Funktion, wenn Sie große Dateien verarbeiten müssen. Wenn das Herunterladen einer Datei beispielsweise 10 Minuten dauert, geben Sie die Wartezeit als 10 x 60 x 1000 Millisekunden an. Dies verhindert, dass der Dienst für überwachte Ordner die Datei aufnimmt, wenn sie nicht bereits 10 Minuten alt ist.
-  * Verwenden Sie „Muster für auszuschließende Dateien“ und „Muster für einzuschließende Dateien“. Wenn zum Beispiel das Muster für auszuschließende Dateien `ex*` und das Muster für einzuschließende Dateien `in*` lautet, werden bei überwachten Ordnern die Dateien erfasst, die mit „in“ beginnen, aber nicht die, die mit „ex“ beginnen. Benennen Sie zum Kopieren großer Dateien oder Ordner zuerst die Datei bzw. den Ordner so um, dass der Name mit „ex“ beginnt. Nachdem die Datei bzw. der Ordner mit dem Namen „ex“ vollständig in den überwachten Ordner kopiert wurde, benennen Sie sie/ihn in „in&amp;ast;“ um.
+  * Verwenden Sie „Muster für auszuschließende Dateien“ und „Muster für einzuschließende Dateien“. Wenn zum Beispiel das Muster für auszuschließende Dateien `ex*` und das Muster für einzuschließende Dateien `in*` lautet, werden bei überwachten Ordnern die Dateien erfasst, die mit „in“ beginnen, aber nicht die, die mit „ex“ beginnen. Benennen Sie zum Kopieren großer Dateien oder Ordner zuerst die Datei bzw. den Ordner so um, dass der Name mit „ex“ beginnt. Nachdem die Datei bzw. der Ordner mit dem Namen „ex“ vollständig in den überwachten Ordner kopiert wurde, benennen Sie sie/ihn in „in&ast;“ um.
 
 * Verwenden Sie „Bereinigungszeit“, um den Ergebnisordner „sauber“ zu halten. Der Watched Folder-Dienst bereinigt alle Dateien, die älter als die unter „Bereinigungszeit“ angegebene Dauer sind. Diese Dauer wird in Tagen angegeben.
 * Wenn ein Endpunkt vom Typ „Überwachter Ordner“ hinzugefügt wird, wird nach der Auswahl des Vorgangsnamens die Zuordnung der Eingabeparameter ausgefüllt. Für jede Eingabe des Vorgangs wird ein Feld für die Zuordnung von Eingabeparametern generiert. Im Folgenden finden Sie Beispiele für Zuordnungen von Eingabeparametern:

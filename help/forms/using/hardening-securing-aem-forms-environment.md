@@ -124,7 +124,7 @@ Sie können die interne Firewall konfigurieren, um bestimmten Komponenten von AE
 Standardmäßig sind Assets auf den Veröffentlichungsknoten für alle Benutzenden zugänglich. Der Lesezugriff ist für alle Assets aktiviert. Dies ist erforderlich, um anonymen Zugriff zuzulassen. Wenn Sie die Formularansicht einschränken und nur authentifizierten Personen Zugriff gewähren möchten, verwenden Sie eine gemeinsame Gruppe, um nur authentifizierten Personen schreibgeschützten Zugriff auf die auf den Veröffentlichungsknoten verfügbaren Assets zu gewähren. Die folgenden Speicherorte/Verzeichnisse enthalten Formular-Assets, die durch Beschränken des Lesezugriffs auf authentifizierte Personen abgesichert („gehärtet“) werden müssen:
 
 * /content/*;
-* /etc.clientlibs/fd/&amp;ast;
+* /etc.clientlibs/fd/&ast;
 * /libs/fd/&amp;ast
 
 ## Sichere Verarbeitung von Formulardaten  {#securely-handle-forms-data}

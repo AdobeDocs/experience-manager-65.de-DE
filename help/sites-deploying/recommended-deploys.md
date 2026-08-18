@@ -190,13 +190,13 @@ Falls Sie eine MongoMK-Bereitstellung für AEM in Betracht ziehen, liegt eine Re
 
 >[!NOTE]
 >
->Bei allen weiteren Fragen zu diesen Richtlinien, Voraussetzungen und Empfehlungen wenden Sie sich bitte an die [ Adobe-Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
+>Bei allen weiteren Fragen zu diesen Richtlinien, Voraussetzungen und Empfehlungen wenden Sie sich bitte an die [&#x200B; Adobe-Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
 
 ### Überlegungen zu AEM Communities {#considerations-for-aem-communities}
 
-Für Sites, die eine Bereitstellung von [ AEM-Communities](/help/communities/overview.md) planen, wird empfohlen, [ eine Bereitstellung auszuwählen](/help/communities/working-with-srp.md#characteristicsofstorageoptions), die für den Umgang mit UGC optimiert ist, der von Community-Mitgliedern aus der Veröffentlichungsumgebung gepostet wird.
+Für Sites, die eine Bereitstellung von [&#x200B; AEM-Communities](/help/communities/overview.md) planen, wird empfohlen, [&#x200B; eine Bereitstellung auszuwählen](/help/communities/working-with-srp.md#characteristicsofstorageoptions), die für den Umgang mit UGC optimiert ist, der von Community-Mitgliedern aus der Veröffentlichungsumgebung gepostet wird.
 
-Durch die Verwendung eines [ gemeinsamen Speichers](/help/communities/working-with-srp.md) muss UGC nicht zwischen Autoren- und anderen Veröffentlichungsinstanzen repliziert werden, um eine konsistente Ansicht des UGC zu erhalten.
+Durch die Verwendung eines [&#x200B; gemeinsamen Speichers](/help/communities/working-with-srp.md) muss UGC nicht zwischen Autoren- und anderen Veröffentlichungsinstanzen repliziert werden, um eine konsistente Ansicht des UGC zu erhalten.
 
 Mit den nachfolgenden Entscheidungshilfen können Sie den optimalen Persistenztyp für Ihre Bereitstellung auswählen:
 
