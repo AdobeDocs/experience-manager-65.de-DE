@@ -12,8 +12,8 @@ feature: Deploying
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1756'
-ht-degree: 100%
+source-wordcount: '1805'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 >
 >Diese Seite beschreibt empfohlene Topologien für AEM. Weitere Informationen zu Clustering-Funktionen und zum Konfigurieren derselben finden Sie in der [Apache Sling-Dokumentation zur Discovery-API](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) (in englischer Sprache).
 
-Ab AEM 6.2 fungieren Mikrokernel als Persistenz-Manager. Die Auswahl des geeigneten Mikrokernels für Ihre Anforderungen hängt vom Zweck der Instanz und von dem von Ihnen in Betracht gezogenen Bereitstellungstyp ab.
+Mikrokernels fungieren ab AEM 6.2 als Persistenzmanager. Die Auswahl einer geeigneten Komponente hängt vom Zweck Ihrer Instanz und dem Bereitstellungstyp ab, den Sie in Betracht ziehen.
 
 Die nachfolgenden Beispiele sollen ihre empfohlene Verwendung in den gängigsten AEM-Konfigurationen veranschaulichen.
 
@@ -145,13 +145,13 @@ Es ist quasi unmöglich, vorherzusagen, wie das genau Parallelitätsmodell nach 
 
 1. Anzahl der benannten, verbundenen Benutzer an einem Tag: Tausende oder mehr.
 1. Anzahl der gleichzeitigen Benutzer: Hunderte oder mehr.
-1. Volumen der erfassten Assets pro Tag: Hunderttausende oder mehr.
-1. Volumen der Seitenbearbeitungen pro Tag: Hunderttausende oder mehr (einschließlich automatisierte Aktualisierungen, z. B. über Multi-Site-Manager oder Newsfeed-Erfassungen)
+1. Volumen der aufgenommenen Assets pro Tag: Hunderttausende oder mehr.
+1. Volumen der Seitenbearbeitungen pro Tag: Hunderttausende oder mehr (einschließlich automatisierte Aktualisierungen, z. B. über Multi-Site Manager oder Newsfeed-Aufnahme)
 1. Volumen der Suchvorgänge pro Tag: Zehntausende oder mehr.
 
 >[!NOTE]
 >
->Mithilfe von [Tough Day](/help/sites-developing/tough-day.md) kann die Leistung der Kundenanwendung im Kontext der bereitgestellten Hardware-Konfiguration bewertet werden. 
+>Mithilfe von [Tough Day](/help/sites-developing/tough-day.md) kann die Leistung der Kundenanwendung im Kontext der bereitgestellten Hardware-Konfiguration bewertet werden.
 
 Eine Mindestbereitstellung mit MongoDB umfasst normalerweise die folgende Topologie:
 
@@ -166,7 +166,7 @@ Wenn erwartet wird, dass die oben genannten Kriterien innerhalb der ersten 18 Mo
 
 ### Ausnahmen für die Auswahl von AEM MongoMK gegenüber TarMK bei Veröffentlichungsinstanzen {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
 
-Die Bereitstellung von MongoMK für Veröffentlichungsinstanzen wird nicht empfohlen. Die Veröffentlichungsschicht der Bereitstellung wird fast immer als Farm mit unabhängigen Veröffentlichungsinstanzen bereitgestellt, auf denen TarMK ausgeführt wird und die durch das Replizieren von Inhalten von den Autoreninstanzen synchronisiert werden. Diese für Veröffentlichnungsinstanzen geeignete Shared-Nothing-Architektur ermöglicht die horizontale, lineare Skalierung der bereitgestellten Veröffentlichungsschicht. Die Farm-Topologie bietet außerdem den Vorteil, dass Aktualisierungen oder Upgrades fortlaufend auf Veröffentlichungsinstanzen angewendet werden können, sodass bei Änderungen an der Veröffentlichungsebene keine Ausfallzeiten erforderlich sind.
+Die Bereitstellung von MongoMK für Veröffentlichungsinstanzen wird nicht empfohlen. Die Veröffentlichungsschicht der Bereitstellung wird fast immer als Farm mit unabhängigen Veröffentlichungsinstanzen bereitgestellt, auf denen TarMK ausgeführt wird und die durch das Replizieren von Inhalten von den Autoreninstanzen synchronisiert werden. Diese für Veröffentlichungsinstanzen geeignete Shared-Nothing-Architektur ermöglicht die horizontale, lineare Skalierung der bereitgestellten Veröffentlichungsschicht. Die Farm-Topologie bietet außerdem den Vorteil, dass Aktualisierungen oder Upgrades fortlaufend auf Veröffentlichungsinstanzen angewendet werden können, sodass bei Änderungen an der Veröffentlichungsebene keine Ausfallzeiten erforderlich sind.
 
 Dies gilt nicht für AEM Communities, das MongoMK-Cluster auf der Veröffentlichungsschicht verwendet, wenn mehr als ein Publisher vorhanden ist. Bei Auswahl von JSRP (siehe [Community-Inhaltsspeicher](/help/communities/working-with-srp.md)) ist ein MongoMK-Cluster angebracht, ebenso wie jedes Cluster auf Veröffentlichungsseite, unabhängig vom ausgewählten Mikrokernel (z. B. MongoDB oder RDB).
 
@@ -190,13 +190,13 @@ Falls Sie eine MongoMK-Bereitstellung für AEM in Betracht ziehen, liegt eine Re
 
 >[!NOTE]
 >
->Bei allen weiteren Fragen zu diesen Richtlinien, Voraussetzungen und Empfehlungen wenden Sie sich bitte an die [ Adobe-Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
+>Bei allen weiteren Fragen zu diesen Richtlinien, Voraussetzungen und Empfehlungen wenden Sie sich bitte an die [&#x200B; Adobe-Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
 
 ### Überlegungen zu AEM Communities {#considerations-for-aem-communities}
 
-Für Sites, die eine Bereitstellung von [ AEM-Communities](/help/communities/overview.md) planen, wird empfohlen, [ eine Bereitstellung auszuwählen](/help/communities/working-with-srp.md#characteristicsofstorageoptions), die für den Umgang mit UGC optimiert ist, der von Community-Mitgliedern aus der Veröffentlichungsumgebung gepostet wird.
+Für Sites, die eine Bereitstellung von [&#x200B; AEM-Communities](/help/communities/overview.md) planen, wird empfohlen, [&#x200B; eine Bereitstellung auszuwählen](/help/communities/working-with-srp.md#characteristicsofstorageoptions), die für den Umgang mit UGC optimiert ist, der von Community-Mitgliedern aus der Veröffentlichungsumgebung gepostet wird.
 
-Durch die Verwendung eines [ gemeinsamen Speichers](/help/communities/working-with-srp.md) muss UGC nicht zwischen Autoren- und anderen Veröffentlichungsinstanzen repliziert werden, um eine konsistente Ansicht des UGC zu erhalten.
+Durch die Verwendung eines [&#x200B; gemeinsamen Speichers](/help/communities/working-with-srp.md) muss UGC nicht zwischen Autoren- und anderen Veröffentlichungsinstanzen repliziert werden, um eine konsistente Ansicht des UGC zu erhalten.
 
 Mit den nachfolgenden Entscheidungshilfen können Sie den optimalen Persistenztyp für Ihre Bereitstellung auswählen:
 

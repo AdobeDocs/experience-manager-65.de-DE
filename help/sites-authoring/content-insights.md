@@ -30,9 +30,9 @@ Die Seite „Inhaltserkenntnisse“ enthält Berichte, die Adobe SiteCatalyst-, 
 
 * SiteCatalyst: Berichte für die folgenden Metriken sind verfügbar:
 
-   * Seitenansichten
-   * Durchschnittliche Besuchszeit pro Seite
-   * Quellen
+  * Seitenansichten
+  * Durchschnittliche Besuchszeit pro Seite
+  * Quellen
 
 * Target: Berichte über Kampagnenaktivität, für die Ihre Seite Angebote enthält.
 * BrightEdge: Berichte über die Seitenfunktionen, die die Sichtbarkeit der Seite für Suchmaschinen verbessern, mit Empfehlungen für Funktionen, die implementiert werden sollten.
@@ -62,8 +62,8 @@ Der Ansichtsbericht umfasst die folgenden Funktionen für die Bewertung des Traf
 * Die Gesamtzahl der Ansichten für eine Seite während des Berichtszeitraums.
 * Ein Diagramm der Anzahl der Ansichten während des Berichtszeitraums:
 
-   * Gesamtzahl der Ansichten
-   * Unique Visitors.
+  * Gesamtzahl der Ansichten
+  * Unique Visitors.
 
 ![chlimage_1-312](assets/chlimage_1-312.png)
 

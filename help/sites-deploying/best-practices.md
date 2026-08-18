@@ -11,8 +11,8 @@ feature: Administering
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 100%
+source-wordcount: '454'
+ht-degree: 97%
 
 ---
 
@@ -75,11 +75,11 @@ AEM Communities vereinfacht die Erstellung und Verwaltung von On-Premise-Communi
 
 [Community-Inhaltsspeicher](/help/communities/working-with-srp.md): Erläutert die neue Funktion des gemeinsamen Speichers für benutzergenerierte Inhalte (user-generated content, UGC) und Überlegungen zur Auswahl der zugrunde liegenden [Topologie](/help/communities/topologies.md).
 
-[Empfohlene Bereitstellungen für Communities](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) – Beschreibt die empfohlenen Bereitstellungen für Communities. |
+[Empfohlene Bereitstellungen für Communities](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Beschreibt die empfohlenen Bereitstellungen für Communities. |
 
 ## Benutzeroberfläche {#ui}
 
-Best Practices für die Benutzeroberfläche werden hier beschrieben: 
+Best Practices für die Benutzeroberfläche werden hier beschrieben:
 
 [Empfehlungen für Kunden zur Benutzeroberfläche](/help/sites-deploying/ui-recommendations.md)
 
@@ -97,7 +97,7 @@ Best Practices bezüglich der Leistung sind hier aufgeführt:
    <td>Ein einheitlicher Überblick über die Probleme bei der Definition eines Testkonzepts speziell für Leistungstests in der <em>Veröffentlichungsumgebung</em>. Dies ist vor allem für QS-Beauftragte, Projektleitende und Systemadmins von Interesse.</td>
   </tr>
   <tr>
-   <td>Verwenden des Dispatchers mit einem CDN </td>
+   <td>Verwenden des Dispatchers mit einem CDN</td>
    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de#using-dispatcher-with-a-cdn">Verwenden des Dispatchers mit einem CDN</a></td>
    <td>Ein CDN (Content Delivery Network) wie Akamai Edge Delivery oder Amazon Cloud Front stellt Inhalte von einem Speicherort in der Nähe des Endbenutzers bereit.</td>
   </tr>
@@ -109,7 +109,7 @@ Best Practices bezüglich der Leistung sind hier aufgeführt:
   <tr>
    <td>Leistungstests</td>
    <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">Best Practices für Leistungstests</a></td>
-   <td>Beschreibt Best Practices für die Durchführung von Leistungstests bei der AEM-Bereitstellung<br />  </td>
+   <td>Beschreibt Best Practices für die Durchführung von Leistungstests bei der AEM-Bereitstellung<br /> </td>
   </tr>
  </tbody>
 </table>

@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: ht
-source-wordcount: '764'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '790'
+ht-degree: 79%
 
 ---
 
@@ -25,23 +25,29 @@ Dieses Dokument soll Kundinnen und Kunden bei der Auswahl der richtigen Benutzer
 
 Verwendete Begriffe:
 
-* **Benutzeroberfläche (oder Standardbenutzeroberfläche)** Eine moderne Benutzeroberfläche, die in Version 5.6.0 als Technologievorschau eingeführt und in nachfolgenden Versionen erweitert wurde. Sie basiert auf dem einheitlichen Benutzererlebnis für Adobe Experience Cloud, das früher als Touch-optimierte Benutzeroberfläche oder Touch-Benutzeroberfläche bezeichnet wurde.
+* **Benutzeroberfläche (oder Standardbenutzeroberfläche)**
+Eine moderne Benutzeroberfläche, die in Version 5.6.0 als Technologievorschau eingeführt und in nachfolgenden Versionen erweitert wurde. Sie basiert auf dem einheitlichen Benutzererlebnis für Adobe Experience Cloud, das früher als Touch-optimierte Benutzeroberfläche oder Touch-Benutzeroberfläche bezeichnet wurde.
 
-* **Klassische Benutzeroberfläche** Eine auf der ExtJS-Technologie basierende Benutzeroberfläche, die 2008 zusammen mit CQ 5.1 eingeführt wurde.
+* **Klassische Benutzeroberfläche**
+Eine auf der ExtJS-Technologie basierende Benutzeroberfläche, die 2008 zusammen mit CQ 5.1 eingeführt wurde.
 
-* **Seiten-Administrator** Funktionen zum Verwalten der Seitenhierarchie (Verschieben, Aktivieren, verwaltete Verweise) und Erstellen von neuen Seiten.
+* **Site-Admin**
+Funktionen zum Verwalten der Site-Hierarchie (Verschieben, Aktivieren, verwaltete Verweise) und Erstellen neuer Seiten.
 
-* **Seitenbearbeitung** Funktionen zum Hinzufügen von Inhalten zu einer Seite bzw. zum Bearbeiten des Seiteninhalts.
+* **Seitenbearbeitung**
+Funktionen zum Hinzufügen/Bearbeiten des Inhalts einer Seite.
 
-* **DAM-/Asset-Admin** Funktionen zum Verwalten digitaler Assets (einschließlich Bildern, Video, Dokumenten, Downloads).
+* **DAM/Assets Admin**
+Funktionen zum Verwalten digitaler Assets (einschließlich Bildern, Videos, Dokumenten, Downloads).
 
-* **ContextHub** Funktionen zum Aggregieren von Informationen über den Besucher und zum Verwenden derselben für verschiedene Zwecke. Stellt eine Benutzeroberfläche zum Simulieren von Personen bereit, die die Site besuchen. Ab AEM 6.2 ersetzt ContextHub die bisherige Technologie ClientContext.
+* **KontextHub**
+Funktionen zum Aggregieren von Informationen über den Besucher und zum Verwenden derselben für verschiedene Zwecke. Stellt eine Benutzeroberfläche zum Simulieren von Personen bereit, die die Site besuchen. Ab AEM 6.2 ersetzt ContextHub die bisherige Technologie ClientContext.
 
 ## Allgemein {#general}
 
 In den vergangenen Jahren hat Adobe alle Adobe Experience Cloud-Lösungen um eine einheitlichen Benutzeroberfläche erweitert. Benutzer der Experience Cloud-Lösungen profitieren so von einem konsistenten Erlebnis mit einem einheitlichen Verwendungsmuster für die Anwendungen. In jeder neuen Version wurde die Benutzeroberfläche von Adobe auf Basis von Kunden-Feedback zu den verschiedenen Lösungen verbessert.
 
-Die ursprüngliche Benutzeroberfläche von Adobe Experience Manager (zuvor als CQ5 bekannt), die 2008 eingeführt und von Kundinnen und Kunden mit den Versionen 5.0 bis 5.6.1 verwendet wurde, ist in AEM 6.5 verfügbar. So wird sichergestellt, dass Kundinnen und Kunden eine Aktualisierung auf die Version 6.5 durchführen und von einer aktualisierten Plattform mit neuen Funktionen profitieren können, während sie gleichzeitig dieselbe Benutzeroberfläche weiterverwenden.
+Die ursprüngliche Benutzeroberfläche für Adobe Experience Manager (früher als CQ5 bezeichnet), die 2008 eingeführt wurde und von Kunden mit den Versionen 5.0 bis 5.6.1 verwendet wird, ist in AEM 6.5 vorhanden. Dadurch wird sichergestellt, dass Kunden auf 6.5 aktualisieren und von einer aktualisierten Plattform mit neuen Funktionen profitieren können, während sie dieselbe Benutzeroberfläche weiterhin verwenden.
 
 Adobe empfiehlt Kunden, den Umstieg auf die neue Benutzeroberfläche für 2018/19 zu planen. Dies ist entweder im Rahmen einer Aktualisierung auf Version 6.5 möglich oder im Rahmen separater Projekte nach der Aktualisierung, bei der die notwendige Anpassung des Dialogfelds und die Änderung der Dialogkomponenten vorgenommen werden müssen.
 
@@ -66,7 +72,7 @@ Nachfolgend finden Sie eine Liste mit Empfehlungen der Produkt-Management-Abteil
    <td>
     <ol>
      <li>Aktualisieren Sie auf 6.5.</li>
-     <li>Verwenden Sie die Standardbenutzeroberfläche für die Site-Administration, Assets, usw.<br /> </li>
+     <li>Verwenden der Standard-Benutzeroberfläche für Site-Administration, Assets usw.<br /> </li>
      <li>Konfigurieren Sie die Aktion „Seite bearbeiten“, um den Seiteneditor der klassischen Benutzeroberfläche zu öffnen. Siehe <a href="#selecting-your-ui">Auswahl der Benutzeroberfläche</a>.</li>
     </ol> <p>Anschließend:</p>
     <ol>
@@ -78,7 +84,7 @@ Nachfolgend finden Sie eine Liste mit Empfehlungen der Produkt-Management-Abteil
    <td>
     <ol>
      <li>Aktualisieren Sie auf 6.5.</li>
-     <li>Verwenden Sie die Standardbenutzeroberfläche für die Site-Administration, Assets, usw.</li>
+     <li>Verwenden der Standard-Benutzeroberfläche für Site-Administration, Assets usw.</li>
      <li>Konfigurieren Sie die Aktion „Seite bearbeiten“, um den Seiteneditor der klassischen Benutzeroberfläche zu öffnen. Siehe <a href="#selecting-your-ui">Auswahl der Benutzeroberfläche</a>.</li>
     </ol> <p>Anschließend:</p>
     <ol>

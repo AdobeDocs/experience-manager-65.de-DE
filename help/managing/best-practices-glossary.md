@@ -12,8 +12,8 @@ feature: Compliance
 role: Admin,Developer,Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '6926'
-ht-degree: 100%
+source-wordcount: '7022'
+ht-degree: 99%
 
 ---
 
@@ -109,7 +109,8 @@ Stellen Sie sicher, dass Ihr Team aus Mitarbeitenden mit entsprechender Qualifik
 
 * Mindestens ein AEM-zertifizierter Entwicklungsleiter
 * Mindestens ein AEM-zertifizierter Architekt
-* Mindestens 75 % der Entwickler mit AEM-Zertifizierung. Dies ermöglicht es den zertifizierten Entwicklern, Nachwuchsentwickler zu betreuen, und sorgt für Wissensaustausch und Transparenz.
+* Mindestens 75 % der Entwickler mit AEM-Zertifizierung
+Dies ermöglicht es den zertifizierten Entwicklern, Nachwuchsentwickler zu betreuen und sorgt für Wissensaustausch und Transparenz
 
 ### Architekturdiagramm {#architecture-diagram}
 
@@ -206,7 +207,7 @@ Geschäfts-KPIs definieren messbare Werte, die aufzeigen, wie effektiv ein Unter
 
 Ein Geschäftsanforderungsdokument (Business Requirements Document, BRD) beschreibt die Geschäftslösung für ein Projekt und liefert eine klare Präzisierung der Geschäftsanforderungen und -erwartungen auf Kundenseite. Es unterscheidet auch zwischen der geschäftlichen und der technischen Lösung.
 
-Bei der Prüfung der Unternehmenslösung sollte das Geschäftsanforderungsdokument (BRD) die Frage beantworten:
+Bei der Prüfung der Geschäftslösung sollte das Geschäftsanforderungsdokument (BRD) die Frage beantworten:
 „Was will das Unternehmen erreichen?“
 
 ### Genehmigung durch die Geschäftsführung bei allen erforderlichen Anpassungen der Lösung oder Architektur entsprechend den ermittelten ROI- und KPI-Erwartungen {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
@@ -221,7 +222,7 @@ Die Caching-Strategie beschreibt, was für Endbenutzende zwischengespeichert wir
 
 Beispielsweise können Elemente wie Bilder, JavaScript und andere Server-Dateien zwischengespeichert werden, um die Leistung einer Lösung zu verbessern.
 
-### Codierungsrichtlinien  {#coding-guidelines}
+### Codierungsrichtlinien {#coding-guidelines}
 
 Die Kodierungsrichtlinien definieren Grundprinzipien, an die sich die Entwickelnden bei der Entwicklung der Lösung halten müssen. Dazu zählen u. a.:
 
@@ -312,7 +313,7 @@ Richtlinien/Anforderungen der Kundin bzw. des Kunden, wie die Entwicklung erfolg
 
 Richtlinien der Kundin bzw. des Kunden, die festlegen, wie und wann Bereitstellungen/Freigaben erfolgen können.
 
-Dazu gehören oft Zeitpläne und Termin- und Abnahmeanforderungen.
+Dazu gehören oft Timelines und Termin- und Abnahmeanforderungen.
 
 ### Überwachungsrichtlinien oder -anforderungen der Kundin bzw. des Kunden {#customer-monitoring-policies-or-requirements}
 
@@ -357,10 +358,10 @@ Anpassungen und/oder angewendete Hotfixes müssen dokumentiert werden, da sie si
 * AEM kann weitgehend an die jeweiligen Geschäftsanforderungen angepasst werden. Alle Anpassungen, die sich auf Upgrades auswirken können, müssen vollständig dokumentiert werden. Zum Beispiel alle wichtigen Änderungen an der Benutzeroberfläche (UI) von AEM.
 * Alle Aktualisierungen, die für die aktuelle Lösung erforderlich sind, müssen vollständig dokumentiert werden. Dazu zählen:
 
-   * Cumulative Fix Packs (CFP)
-   * Service Packs (SP)
-   * Hotfixes
-   * Upgrades
+  * Cumulative Fix Packs (CFP)
+  * Service Packs (SP)
+  * Hotfixes
+  * Upgrades
 
 ### Täglicher Bericht zum Benutzerakzeptanztest {#daily-user-acceptance-test-report}
 
@@ -514,7 +515,7 @@ Bestätigung, dass die Projektbeteiligten Folgendes vollständig akzeptieren:
 
 ### Zeitplan für die Live-Schaltung {#go-live-schedule}
 
-Zeitplan für die Aktivitäten, die für Folgendes erforderlich sind:
+Timeline für die Aktivitäten, die für Folgendes erforderlich sind:
 
 * Vorbereitung der Live-Schaltung
 * Die tatsächliche Live-Schaltung
@@ -916,7 +917,7 @@ Die ersten Schätzungen sind allgemein und erfolgen gemäß den allgemeinen Anfo
 
 Die erforderliche Dokumentation zur Beschreibung der Organisation und Berichtsstruktur des Projekts und Teams.
 
-Oftmals in Form eines Diagramms, um einen anschaulichen Überblick über Zeitpläne und Zuständigkeiten zu geben. Es stehen viele Tools zur Verfügung, die Ihnen dabei helfen.
+Oftmals in Form eines Diagramms, um einen anschaulichen Überblick über Timelines und Zuständigkeiten zu geben. Es stehen viele Tools zur Verfügung, die Ihnen dabei helfen.
 
 ### Dokument zum Projektumfang {#project-scope-document}
 
@@ -1007,7 +1008,7 @@ In ihr werden die technischen und geschäftlichen Risiken des Projekts bewertet.
 
 ### Risikominimierungsplan {#risk-mitigation-plan}
 
-Der Risikominimierungsplan umfasst die Risikobewertung.  Gemeinsam decken sie Folgendes ab:
+Der Risikominimierungsplan umfasst die Risikobewertung. Gemeinsam decken sie Folgendes ab:
 
 * Ausgemachte Risiken
 * Mögliche Lösungen für diese Risiken, falls sie bei der Implementierung auftreten sollten
@@ -1274,7 +1275,7 @@ Beachten Sie Folgendes:
 
 ### Testsuite {#test-suite}
 
-Auswahl der Automatisierungssuite und -tools.  Diese werden zur Automatisierung von Tests, einschließlich für Anwendungsfälle, verwendet.
+Auswahl der Automatisierungssuite und -tools. Diese werden zur Automatisierung von Tests, einschließlich für Anwendungsfälle, verwendet.
 
 ### Auswahl einer Suite mit Test-Tools {#test-tooling-suite-selected}
 
@@ -1294,7 +1295,7 @@ Diese Anforderungen sind spezifisch für die technische Implementierung von Dien
 
 ### Teststrategie {#testing-strategy}
 
-Die Teststrategie skizziert die allgemeine Strategie für Qualitätssicherung und Benutzerakzeptanztests.  Dazu gehören Zeitpläne, Berichterstellungsrhythmus und Ausführung.
+Die Teststrategie skizziert die allgemeine Strategie für Qualitätssicherung und Benutzerakzeptanztests. Dazu gehören Timelines, Berichterstellungsrhythmus und Ausführung.
 
 ### Konzept für die Integration von Systemen von Drittanbietern {#third-party-integration-concept}
 
@@ -1306,7 +1307,7 @@ Details zu den (sowohl funktionalen als auch nicht funktionalen) Anforderungen a
 
 ### Sicherheitskonzept für Integrationen von Drittanbietern {#third-party-security-concept}
 
-Konzept zur Gewährleistung der Sicherheit von Integrationen von Drittanbietern.  Muss mit den entsprechenden Sicherheitsrichtlinien konform sein.
+Konzept zur Gewährleistung der Sicherheit von Integrationen von Drittanbietern. Muss mit den entsprechenden Sicherheitsrichtlinien konform sein.
 
 ### Systeme von Drittanbietern für die Integration {#third-party-system-for-integration}
 
@@ -1334,7 +1335,7 @@ Beispiel:
 
 ### Timeline und Meilensteine {#timeline-and-milestones}
 
-Hierin sollten die zu verwendenden Projektzeitpläne und vertraglichen Meilensteine für Folgendes festgelegt werden:
+Hierin sollten die zu verwendenden Projekt-Timelines und vertraglichen Meilensteine für Folgendes festgelegt werden:
 
 * Fakturierung
 * Abstimmung mit den Erfolgsdefinitionen, Erfolgskriterien und KPIs.

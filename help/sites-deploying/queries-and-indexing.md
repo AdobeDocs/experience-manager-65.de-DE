@@ -11,9 +11,9 @@ exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eeeb31d81c22f8dace7a170953bf45a709f5ac73
-workflow-type: ht
-source-wordcount: '3051'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '3098'
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ Ein Indexer ist der **Eigenschaftenindex**, für den die Indexdefinition im Repo
 
 Implementierungen für **Apache Lucene** und **Solr** sind ebenfalls standardmäßig verfügbar und unterstützen die Volltextindizierung.
 
-Der **Traversalindex** wird verwendet, wenn kein anderer Indexer verfügbar ist. Das bedeutet, dass der Inhalt nicht indiziert ist und Inhaltsknoten durchlaufen werden, um Übereinstimmungen mit der Abfrage zu finden.
+Der **Durchlaufindex** wird verwendet, wenn kein anderer Indexer verfügbar ist. Das bedeutet, dass der Inhalt nicht indiziert ist und Inhaltsknoten durchlaufen werden, um Übereinstimmungen mit der Abfrage zu finden.
 
 Wenn für eine Abfrage mehrere Indexer verfügbar sind, schätzt jeder verfügbare Indexer die Kosten für die Ausführung der Abfrage. Oak wählt dann den Indexer mit den niedrigsten geschätzten Kosten aus.
 
@@ -70,9 +70,9 @@ Anschließend wird jeder Index zur Schätzung der Kosten für die Abfrage herang
 
 Wenn große Repositorys neu indiziert werden müssen, insbesondere wenn MongoDB verwendet wird und eine Volltextindizierung erforderlich ist, empfiehlt es sich gegebenenfalls, eine Textvorextraktion durchzuführen, den Ausgangsindex mit „oak-run“ zu erstellen und anschließend eine Neuindizierung durchzuführen.
 
-Indizes werden im Repository unter dem Knoten **Oak:index** als Knoten konfiguriert.
+Indizes werden als Knoten im Repository unter dem Knoten **Oak:index** konfiguriert.
 
-Der Typ des Indexknotens muss wie folgt lauten: **oak:QueryIndexDefinition.** Für jeden Indexer sind mehrere Konfigurationsoptionen als Knoteneigenschaften verfügbar. Weitere Informationen finden Sie unten in den Konfigurationsdetails für jeden Indexertyp.
+Der Typ des Indexknotens muss **oak:QueryIndexDefinition.** Für jeden Indexer stehen als Knoteneigenschaften mehrere Konfigurationsoptionen zur Verfügung. Weitere Informationen finden Sie unten in den Konfigurationsdetails für jeden Indexertyp.
 
 ### Der Eigenschaftenindex {#the-property-index}
 
@@ -80,7 +80,7 @@ Der Eigenschaftenindex ist für Abfragen nützlich, die Eigenschaftseinschränku
 
 1. Öffnen Sie CRXDE, indem Sie zu `http://localhost:4502/crx/de/index.jsp` gehen.
 1. Erstellen Sie einen Knoten unter **oak:index**
-1. Nennen Sie den Knoten **PropertyIndex** und legen Sie den Knotentyp auf **oak:QueryIndexDefinition** fest
+1. Benennen Sie den Knoten **PropertyIndex** und legen Sie für den Knotentyp &quot;**&quot;:QueryIndexDefinition**
 1. Legen Sie die folgenden Eigenschaften für den neuen Knoten fest:
 
    * **type:** `property` (vom Typ Zeichenfolge)
@@ -94,7 +94,7 @@ Der Eigenschaftenindex verfügt über die folgenden Konfigurationsoptionen:
 
 * Die Eigenschaft **type** gibt den Indextyp an und muss in diesem Fall **property** lauten.
 
-* Die Eigenschaft **propertyNames** gibt die Liste der Eigenschaften an, die im Index gespeichert werden. Wenn sie fehlt, wird der Knotenname als Referenzwert für den Eigenschaftsnamen verwendet. In diesem Beispiel wird die Eigenschaft **jcr:uuid**, deren Aufgabe darin besteht, die eindeutige Kennung (UUID) ihres Knotens anzuzeigen, zum Index hinzugefügt.
+* Die Eigenschaft **propertyNames** gibt die Liste der Eigenschaften an, die im Index gespeichert werden. Wenn sie fehlt, wird der Knotenname als Referenzwert für den Eigenschaftsnamen verwendet. In diesem Beispiel wird die **jcr:uuid**-Eigenschaft, deren Auftrag darin besteht, die eindeutige Kennung (UUID) ihres Knotens anzuzeigen, zum Index hinzugefügt.
 
 * Falls für die Kennzeichnung **unique** der Wert **true** festgelegt ist, wird dadurch eine Eindeutigkeitsbeschränkung auf den Eigenschaften-Index angewendet.
 
@@ -118,7 +118,7 @@ Da der Index über einen asynchronen Hintergrund-Thread aktualisiert wird, sind 
 Sie können einen Lucene-Volltextindex wie folgt konfigurieren:
 
 1. Öffnen Sie CRXDE und erstellen Sie einen Knoten unter **oak:index**.
-1. Nennen Sie den Knoten **LuceneIndex** und legen Sie den Knotentyp auf **oak:QueryIndexDefinition** fest
+1. Benennen Sie den Knoten **LuceneIndex** und legen Sie als Knotentyp &quot;**&quot;:QueryIndexDefinition**
 1. Fügen Sie dem Knoten folgende Eigenschaften hinzu:
 
    * **type:** `lucene` (vom Typ Zeichenfolge)
@@ -130,13 +130,13 @@ Der Lucene-Index verfügt über die folgenden Konfigurationsoptionen:
 
 * Die Eigenschaft **type**, die den Indextyp angibt, muss auf **lucene** festgelegt sein
 * Die Eigenschaft **async**, die auf **async** festgelegt sein muss. Dadurch wird der Indexaktualisierungsprozess an einen Hintergrund-Thread gesendet.
-* Die Eigenschaft **includePropertyTypes**, die definiert, welche Untergruppe von Eigenschaftstypen im Index enthalten sind.
+* Die Eigenschaft **includePropertyTypes**, die definiert, welche Teilmenge von Eigenschaftstypen im Index enthalten sind.
 * Die Eigenschaft **excludePropertyNames**, die eine Liste mit Eigenschaftennamen definiert, nämlich Eigenschaften, die vom Index ausgeschlossen sein sollen.
 * Das Flag **reindex**, das bei Festlegung auf **true** eine vollständige Neuindizierung des Inhalts auslöst.
 
 ### Grundlegendes zur Volltextsuche {#understanding-fulltext-search}
 
-Die Dokumentation in diesem Abschnitt gilt beispielsweise für Apache Lucene, ElasticSearch und Volltextindizes von PostgreSQL, SQLite und MySQL.  Das folgende Beispiel gilt für AEM/Oak/Lucene.
+Die Dokumentation in diesem Abschnitt gilt beispielsweise für Apache Lucene, ElasticSearch und Volltextindizes von PostgreSQL, SQLite und MySQL. Das folgende Beispiel gilt für AEM/Oak/Lucene.
 
 <b>Zu indizierende Daten</b>
 
@@ -203,7 +203,7 @@ Lucene wechselt zwischen den beiden Listen (oder geht nacheinander `n` Listen du
 * Beim Lesen in „Rubik“ wird der nächste Eintrag abgerufen: 1000.
 * Beim Lesen in „Würfel“ wird der erste Eintrag `>` = 1000 abgerufen. 2000 wird gefunden.
 * Beim Lesen in „Rubik“ wird der erste Eintrag `>` = 2000 abgerufen, das Ende der Liste.
-* Schließlich können Sie die Suche beenden.
+* Schließlich können Sie die Suche stoppen.
 
 Das einzige Dokument, das beide Begriffe enthält, ist 200, wie im folgenden Beispiel gezeigt:
 
@@ -222,7 +222,7 @@ Seit **Oak 1.0.8** kann Lucene zum Erstellen von Indizes verwendet werden, die 
 
 Für einen Lucene-Eigenschaftenindex muss die Eigenschaft **fulltextEnabled** immer auf „false“ gesetzt sein.
 
-Sehen wir uns folgende Beispielabfrage an: 
+Sehen wir uns folgende Beispielabfrage an:
 
 ```xml
 select * from [nt:base] where [alias] = '/admin'
@@ -316,39 +316,39 @@ Sehen Sie sich diese Knotenstruktur als Beispiel an:
 
 * **Name:** `analyzers`
 
-   * **Name:** `default`
+  * **Name:** `default`
 
-      * **Name:** `charFilters`
-      * **Typ:** `nt:unstructured`
+    * **Name:** `charFilters`
+    * **Typ:** `nt:unstructured`
 
-         * **Name:** `HTMLStrip`
-         * **Name:** `Mapping`
+      * **Name:** `HTMLStrip`
+      * **Name:** `Mapping`
 
-      * **Name:** `tokenizer`
+    * **Name:** `tokenizer`
 
-         * **Eigenschaftsname:** `name`
+      * **Eigenschaftsname:** `name`
 
-            * **Typ:** `String`
-            * **Wert:** `Standard`
+        * **Typ:** `String`
+        * **Wert:** `Standard`
 
-      * **Name:** `filters`
-      * **Typ:** `nt:unstructured`
+    * **Name:** `filters`
+    * **Typ:** `nt:unstructured`
 
-         * **Name:** `LowerCase`
-         * **Name:** `Stop`
+      * **Name:** `LowerCase`
+      * **Name:** `Stop`
 
-            * **Eigenschaftsname:** `words`
+        * **Eigenschaftsname:** `words`
 
-               * **Typ:** `String`
-               * **Wert:** `stop1.txt, stop2.txt`
+          * **Typ:** `String`
+          * **Wert:** `stop1.txt, stop2.txt`
 
-            * **Name:** `stop1.txt`
+        * **Name:** `stop1.txt`
 
-               * **Typ:** `nt:file`
+          * **Typ:** `nt:file`
 
-            * **Name:** `stop2.txt`
+        * **Name:** `stop2.txt`
 
-               * **Typ:** `nt:file`
+          * **Typ:** `nt:file`
 
 Der Name der Filter, charFilters und Tokenizer wird gebildet, indem die Factory-Suffixe entfernt werden. Ergebnis:
 
@@ -381,7 +381,7 @@ AEM kann auch mit einer Remote-Solr-Server-Instanz konfiguriert werden:
 
    `<solrunpackdirectory>\aemsolr1\node1`
 
-   * Erstellen Sie für das zweite Shard folgenden Ordner: 
+   * Erstellen Sie für das zweite Shard folgenden Ordner:
 
    `<solrunpackdirectory>\aemsolr2\node2`
 
@@ -425,7 +425,7 @@ AEM kann auch mit einer Remote-Solr-Server-Instanz konfiguriert werden:
 1. Wählen Sie in der Dropdown-Liste unter dem **Oak Solr**-Server-Anbieter die Option **Remote Solr** aus.
 
 1. Gehen Sie zu CRXDE und melden Sie sich als Admin an.
-1. Erstellen Sie unter **oak:index** einen Knoten mit dem Namen **solrIndex** und legen Sie die folgenden Eigenschaften fest:
+1. Erstellen Sie unter **oak** einen Knoten mit dem Namen **solrIndex:index** und legen Sie die folgenden Eigenschaften fest:
 
    * **type:** solr (vom Typ „String“)
    * **async:** async (vom Typ „String“)
@@ -476,7 +476,7 @@ Wenn dies aus irgendeinem Grund nicht möglich ist, können Sie die Indizierungs
 
 #### Aktivieren der Protokollierung {#enable-logging}
 
-Zum Aktivieren der Protokollierung müssen Sie die **DEBUG**-Protokollebene für die Kategorien aktivieren, die sich auf Oak-Indizierung und -Abfragen beziehen. Diese Kategorien sind: 
+Zum Aktivieren der Protokollierung müssen Sie die **DEBUG**-Protokollebene für die Kategorien aktivieren, die sich auf Oak-Indizierung und -Abfragen beziehen. Diese Kategorien sind:
 
 * org.apache.jackrabbit.oak.plugins.index
 * org.apache.jackrabbit.oak.query
@@ -492,7 +492,7 @@ Sie können die Protokollierung aktivieren, indem Sie folgende Schritte ausführ
 
 1. Lassen Sie Ihren Browser auf `https://serveraddress:port/system/console/slinglog` verweisen.
 1. Klicken Sie auf die Schaltfläche **Neue Protokollierung hinzufügen** unten in der Konsole.
-1. Fügen Sie die oben genannten Kategorien in der neu erstellten Reihe hinzu. Verwenden Sie das **+**-Symbol, um einer Protokollierung mehr als eine Kategorie hinzuzufügen. 
+1. Fügen Sie die oben genannten Kategorien in der neu erstellten Reihe hinzu. Verwenden Sie das **+**-Symbol, um einer Protokollierung mehr als eine Kategorie hinzuzufügen.
 1. Wählen Sie **DEBUG** aus der Dropdown-Liste **Protokollebene** aus.
 1. Geben Sie als Ausgabedatei `logs/queryDebug.log` an. Dadurch werden alle DEBUG-Ereignisse in einer Protokolldatei zusammengefasst.
 1. Führen Sie die Abfrage aus oder geben Sie die Seite aus, auf der die Abfrage verwendet wird, die Sie debuggen möchten.
@@ -502,7 +502,7 @@ Sie können die Protokollierung aktivieren, indem Sie folgende Schritte ausführ
 
 Die Art und Weise, wie die Abfrage ausgewertet wird, wird stark durch die Indexkonfiguration beeinflusst. Es ist wichtig, die Indexkonfiguration analysieren zu lassen oder an den Support zu senden. Sie können die Konfiguration entweder als Inhaltspaket abrufen oder eine JSON-Ausgabedarstellung abrufen.
 
-Die Indexkonfiguration wird normalerweise unter dem Knoten `/oak:index` in CRXDE gespeichert. Sie können die JSON-Version unter folgender Adresse abrufen:
+Die Indizierungskonfiguration wird normalerweise unter dem Knoten `/oak:index` in CRXDE gespeichert. Sie können die JSON-Version unter folgender Adresse abrufen:
 
 `https://serveraddress:port/oak:index.tidy.-1.json`
 
@@ -537,5 +537,5 @@ Sie können die konsolidierte JMX-Ausgabe auch über `https://serveraddress:port
 
 Sie können weitere Details sammeln, um das Problem zu beheben, z. B.:
 
-1. Die Oak-Version, auf der Ihre Instanz ausgeführt wird. Öffnen Sie dazu CRXDE. Die Version wird unten rechts auf der Begrüßungsseite anzeigt. Sie können die Version auch im `org.apache.jackrabbit.oak-core`-Bundle überprüfen.
+1. Die Oak-Version, auf der Ihre Instanz ausgeführt wird. Öffnen Sie dazu CRXDE. Die Version wird unten rechts auf der Begrüßungsseite anzeigt. Sie können die Version auch im `org.apache.jackrabbit.oak-core`-Paket überprüfen.
 1. Die Ausgabe des QueryBuilder-Debugger zu der problematischen Abfrage. Der Debugger kann unter `https://serveraddress:port/libs/cq/search/content/querydebug.html` aufgerufen werden.

@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 100%
+source-wordcount: '1470'
+ht-degree: 99%
 
 ---
 
@@ -123,9 +123,9 @@ Sie können die interne Firewall konfigurieren, um bestimmten Komponenten von AE
 
 Standardmäßig sind Assets auf den Veröffentlichungsknoten für alle Benutzenden zugänglich. Der Lesezugriff ist für alle Assets aktiviert. Dies ist erforderlich, um anonymen Zugriff zuzulassen. Wenn Sie die Formularansicht einschränken und nur authentifizierten Personen Zugriff gewähren möchten, verwenden Sie eine gemeinsame Gruppe, um nur authentifizierten Personen schreibgeschützten Zugriff auf die auf den Veröffentlichungsknoten verfügbaren Assets zu gewähren. Die folgenden Speicherorte/Verzeichnisse enthalten Formular-Assets, die durch Beschränken des Lesezugriffs auf authentifizierte Personen abgesichert („gehärtet“) werden müssen:
 
-* /content/&amp;ast;
-* /etc.clientlibs/fd/&amp;ast;
-* /libs/fd/&amp;ast;
+* /content/*;
+* /etc.clientlibs/fd/&ast;
+* /libs/fd/&amp;ast
 
 ## Sichere Verarbeitung von Formulardaten  {#securely-handle-forms-data}
 
@@ -150,7 +150,7 @@ Verwenden Sie die Anmeldedaten des Verarbeitungs-Servers für den AEM DS-Einstel
 Verwenden Sie Benutzerkonten mit den minimal erforderlichen Berechtigungen zum Konfigurieren der Datenquellen für das Formulardatenmodell (FDM). Wenn Sie ein Konto mit administrativen Rechten verwenden, erhalten nicht autorisierte Personen möglicherweise offenen Zugriff auf Metadaten und Schema-Entitäten.\
 Die Datenintegration stellt außerdem Methoden zum Autorisieren von FDM-Dienstanfragen bereit. Sie können vor und nach der Ausführung Autorisierungsmechanismen einfügen, um Anfragen zu validieren. Die Dienstanforderungen werden beim Vorausfüllen und beim Absenden eines Formulars sowie beim Aufrufen von Diensten mithilfe einer Regel generiert.
 
-**Autorisierung vor Verarbeitung:** Mithilfe der Autorisierung vor der Verarbeitung können Sie die Authentizität einer Anfrage validieren, bevor diese ausgeführt wird. Dabei können Sie die Ausführung der Anfrage mithilfe von Eingaben sowie Dienst- und Anfragedetails zulassen oder blockieren. Für den Fall, dass die Ausführung gestoppt wird, können Sie die Datenintegrationsausnahme „OPERATION_ACCESS_DENIED“ ausgeben lassen. Sie können darüber hinaus die Client-Anfrage ändern, bevor sie zur Ausführung übermittelt wird. So könnten Sie beispielsweise die Eingabe ändern und zusätzliche Informationen hinzufügen.
+**Autorisierung vor Verarbeitung:** Mithilfe der Autorisierung vor der Verarbeitung können Sie die Authentizität einer Anfrage validieren, bevor diese ausgeführt wird. Dabei können Sie die Ausführung der Anfrage mithilfe von Eingaben sowie Dienst- und Anfragedetails zulassen oder stoppen. Für den Fall, dass die Ausführung gestoppt wird, können Sie die Datenintegrationsausnahme „OPERATION_ACCESS_DENIED“ ausgeben lassen. Sie können darüber hinaus die Client-Anfrage ändern, bevor sie zur Ausführung übermittelt wird. So könnten Sie beispielsweise die Eingabe ändern und zusätzliche Informationen hinzufügen.
 
 **Autorisierung nach Verarbeitung:** Mithilfe der Autorisierung nach Verarbeitung können Sie die Ergebnisse validieren und kontrollieren, bevor sie an den Anforderer zurückgegeben werden. Sie können auch zusätzliche Daten filtern, bereinigen und in Ergebnisse einfügen.
 
@@ -168,18 +168,18 @@ Für Autoren-, Veröffentlichungs- und Verarbeitungsinstanzen sind unterschiedli
 
 * Für jede Rolle steht jeweils eine Reihe vordefinierter Gruppen mit spezifischen Berechtigungen zur Verfügung. Benutzer zu Gruppe zuordnen.
 
-   * Benutzende der Gruppe „forms-user“:
+  * Benutzende der Gruppe „forms-user“:
 
-      * können ein Formular erstellen, ausfüllen, veröffentlichen und absenden
-      * können kein XDP-basiertes adaptives Formular erstellen
-      * sind nicht berechtigt, Skripte für adaptive Formulare zu schreiben
-      * können weder XDP importieren noch Pakete, die XDP enthalten
+    * können ein Formular erstellen, ausfüllen, veröffentlichen und absenden
+    * können kein XDP-basiertes adaptives Formular erstellen
+    * sind nicht berechtigt, Skripte für adaptive Formulare zu schreiben
+    * können weder XDP importieren noch Pakete, die XDP enthalten
 
-   * Benutzer der Gruppe „forms-power-user“ können alle Typen von Formularen erstellen, ausfüllen, veröffentlichen und senden, Skripte für adaptive Formulare schreiben und Pakete importieren, die XDP enthalten.
-   * Benutzende der Gruppen „template-authors“ und „template-power-user“ können Vorlagen in der Vorschau anzeigen und erstellen.
-   * Benutzende der Gruppe „fdm-authors“ können Formulardatenmodelle erstellen und ändern.
-   * Benutzende der Gruppe „cm-user-agent“ können Korrespondenzverwaltungs-Briefe erstellen, in der Vorschau anzeigen und veröffentlichen.
-   * Benutzende der Gruppe „workflow-editors“ können Posteingang-Anwendungen und Workflow-Modelle erstellen.
+  * Benutzer der Gruppe „forms-power-user“ können alle Typen von Formularen erstellen, ausfüllen, veröffentlichen und senden, Skripte für adaptive Formulare schreiben und Pakete importieren, die XDP enthalten.
+  * Benutzende der Gruppen „template-authors“ und „template-power-user“ können Vorlagen in der Vorschau anzeigen und erstellen.
+  * Benutzende der Gruppe „fdm-authors“ können Formulardatenmodelle erstellen und ändern.
+  * Benutzende der Gruppe „cm-user-agent“ können Korrespondenzverwaltungs-Briefe erstellen, in der Vorschau anzeigen und veröffentlichen.
+  * Benutzende der Gruppe „workflow-editors“ können Posteingang-Anwendungen und Workflow-Modelle erstellen.
 
 **Beim Verarbeiten des Authorings:**
 

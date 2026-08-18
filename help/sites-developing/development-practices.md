@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '621'
 ht-degree: 100%
 
 ---
@@ -39,7 +39,7 @@ Dinge wie Einzüge und Leerräume erscheinen möglicherweise nicht wichtig, aber
 
 ### Auf hohe Testabdeckung abzielen  {#aim-for-high-test-coverage}
 
-Je größer eine Projektimplementierung wird, desto mehr Zeit ist auch erforderlich, um sie zu testen. Ohne entsprechende Testabdeckung kann das Test-Team nicht skalieren und die Entwickelnden kommen irgendwann vor lauter Bugs nicht mehr hinterher.
+Je größer eine Projektimplementierung wird, desto mehr Zeit ist auch erforderlich, um sie zu testen. Ohne entsprechende Testabdeckung kann das Test-Team nicht skalieren und die Entwickelnden kommen irgendwann vor lauter Fehlern nicht mehr hinterher.
 
 Entwickelnde sollten Test Driven Development (TDD) praktizieren und fehlschlagende Einheitstests vor dem Produktions-Code schreiben, der ihre Anforderungen erfüllt. Die Qualitätssicherung sollte einen automatisierten Satz von Abnahmeprüfungen erstellen, um sicherzustellen, dass das System von einer hohen Ebene aus wie erwartet funktioniert.
 
@@ -63,7 +63,7 @@ Code-Analysewerkzeuge haben nur dann einen Wert, wenn ihre Berichte vom Entwickl
 
 ### Der Pfadfinderregel folgen {#follow-the-boy-scout-rule}
 
-Pfadfinder haben eine Regel: „Hinterlass es besser, als du es vorgefunden hast.“ Sofern sich alle Mitglieder des Entwicklungs-Teams an diese Regel halten und eine Verbesserung vornehmen, wenn sie einen Fehler sehen, wird der Code konstant verbessert. 
+Pfadfinder haben eine Regel: „Hinterlass es besser, als du es vorgefunden hast.“ Sofern sich alle Mitglieder des Entwicklungs-Teams an diese Regel halten und eine Verbesserung vornehmen, wenn sie einen Fehler sehen, wird der Code konstant verbessert.
 
 ### Implementierung von YAGNI-Funktionen vermeiden {#avoid-implementing-yagni-features}
 

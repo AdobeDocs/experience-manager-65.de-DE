@@ -7,7 +7,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '890'
 ht-degree: 100%
 
 ---
@@ -19,8 +19,8 @@ Wenn eine Komponente einer Web-Seite gerendert wird, kann ein HTML-Element gener
 * Eine Komponente kann nur bearbeitet werden, wenn sie in einem HTML-Element eingeschlossen ist.
 * Das einschließende Element wird verwendet, um HTML-Klassen anzuwenden, die Folgendes bieten:
 
-   * Layout-Informationen
-   * Stilinformationen
+  * Layout-Informationen
+  * Stilinformationen
 
 Für Entwickler bietet AEM eine klare und einfache Logik für die Steuerung von Decoration-Tags, die enthaltene Komponenten einschließen. Ob und wie das Decoration-Tag gerendert wird, hängt von der Kombination zweier Faktoren ab, auf die diese Seite eingeht:
 
@@ -43,9 +43,9 @@ Die folgenden Eigenschaften und Knoten können auf Komponenten angewendet werden
 
 * **`cq:htmlTag`node :** Dieser Knoten kann unter einer Komponente hinzugefügt werden und die folgenden Eigenschaften aufweisen:
 
-   * **`cq:tagName {String}`:** Damit können Sie ein eigenes HTML-Tag angeben, das die Komponenten anstatt des standardmäßigen DIV-Elements einschließen soll.
-   * **`class {String}`:** Damit können Sie css-Klassennamen angeben, die dem einschließenden Element hinzugefügt werden sollen.
-   * Andere Eigenschaftsnamen werden als HTML-Attribute mit demselben angegebenen String-Wert hinzugefügt.
+  * **`cq:tagName {String}`:** Damit können Sie ein eigenes HTML-Tag angeben, das die Komponenten anstatt des standardmäßigen DIV-Elements einschließen soll.
+  * **`class {String}`:** Damit können Sie css-Klassennamen angeben, die dem einschließenden Element hinzugefügt werden sollen.
+  * Andere Eigenschaftsnamen werden als HTML-Attribute mit demselben angegebenen String-Wert hinzugefügt.
 
 ## Skript-Steuerung {#script-controls}
 
