@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 0f718a65a5aa0257a1507f3c9541dba84d861ea3
+source-git-commit: 15a33b28a5148473cf7942328a85c594249a3571
 workflow-type: tm+mt
-source-wordcount: '3491'
-ht-degree: 85%
+source-wordcount: '4046'
+ht-degree: 81%
 
 ---
 
@@ -32,7 +32,7 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
   <tr>
     <td>
       <strong>8. Juni 2026</strong><br>
-      <em>Gilt für:</em> AEM 6.5.25.0 WAR/JEE-Bereitstellungen (einschließlich AEM Forms on JEE)<br>
+      <em>Gilt für:</em> AEM- 6.5.25.0 Forms-JEE-Bereitstellungen<br>
     </td>
     <td>
     <ul>
@@ -42,6 +42,30 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
     <td>
     <ul>
     <li><b>NPR-44100</b> Nach der Installation von AEM 6.5 Service Pack 25.0 auf WAR-/JEE-Bereitstellungen bleibt das <code>com.adobe.cq.screens.sessions</code>-Bundle im Status Installiert und wird nie aktiv.</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>6. Januar 2026</strong><br>
+      <em>Gilt für:</em> AEM- 6.5.24.0 Forms-JEE-Bereitstellungen (JBoss, WebLogic, WebSphere)<br>
+    </td>
+    <td>
+    <ul>
+    <strong>JBoss:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/jboss/adobe-aem-forms-jee-service-pack-6.5.24.0-win-jboss.zip">Hotfix für AEM Service Pack 6.5.24.0 unter Windows für JBoss JEE-Server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/jboss/adobe-aem-forms-jee-service-pack-6.5.24.0-linux-jboss.gz">Hotfix für AEM Service Pack 6.5.24.0 unter Linux für JBoss JEE-Server</a></li>
+    <strong>WebLogic:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/weblogic/adobe-aem-forms-jee-service-pack-6.5.24.0-win-weblogic.zip">Hotfix für AEM Service Pack 6.5.24.0 unter Windows für Weblogic JEE-Server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/weblogic/adobe-aem-forms-jee-service-pack-6.5.24.0-linux-weblogic.gz">Hotfix für AEM Service Pack 6.5.24.0 unter Linux für Weblogic JEE-Server</a></li>
+    <strong>WebSphere:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/websphere/adobe-aem-forms-jee-service-pack-6.5.24.0-windows-websphere.zip">Hotfix für AEM Service Pack 6.5.24.0 unter Windows für Websphere JEE Server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/websphere/adobe-aem-forms-jee-service-pack-6.5.24.0-linux-websphere.gz">Hotfix für AEM Service Pack 6.5.24.0 unter Linux für Websphere JEE Server</a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li><b>FORMS-23491</b> mindert CVE-2025-64775 (Apache Struts-Denial-of-Service-Schwachstelle bei der Verarbeitung mehrteiliger Anfragen), indem Struts auf eine Version aktualisiert wird, die das Problem behebt.</li>
     </ul>
     </td>
   </tr>
@@ -87,11 +111,11 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
   </tr>
   <tr>
     <td>
-      <strong>5. August 2025</strong><br>
-      <em>Gilt für:</em> AEM 6.5 Forms Service Pack 23<br>
+      <strong>5. August 2025</strong><br>
+      <em>Gilt für:</em> AEM 6.5 Forms Service Pack 23<br>
       <em>Setup-Anweisungen:</em>
       <a href="/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md#option-1-for-users-on-version-65230-install-latest-hotfix">
-        Minimieren von Schwachstellen durch XXE, Konfiguration und Ausführung von Remote-Code (CVE-2025-49533) für AEM Forms auf JEE
+        Beheben von Schwachstellen in XXE, Konfiguration und Remote-Code-Ausführung (CVE-2025-49533) für AEM Forms on JEE
       </a>
     </td>
     <td>
@@ -110,7 +134,7 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
     <td>
     <ul>
     <li>Verbesserte Sicherheit durch Behebung einer Schwachstelle bei der Ausführung von Remote-Code (RCE) in Adobe Experience Manager (AEM) Forms. Das Problem stand im Zusammenhang mit dem Struts-Entwicklungsmodus in der Admin-Benutzeroberfläche (UI), der eine beliebige Auswertung der Object-Graph Navigation Language (OGNL) durch die Debugging-Funktion ermöglichte. Durch diese Fehlerbehebung wird sichergestellt, dass der Struts-Entwicklungsmodus deaktiviert ist und geeignete Sicherheitsfilter angewendet werden, um einen nicht autorisierten Zugriff zu verhindern.</li>
-    <li>Verbesserter Schutz vor Sicherheitslücken in Extensible Markup Language (XML) External Entity (XXE) im Modul der elektronischen Dokumentkomponente (EDC) von Adobe Experience Manager (AEM) Forms. Die Sicherheitslücken waren auf eine fehlerhafte Verarbeitung von XML-Dokumenten ohne XDM-Schutz zurückzuführen, was zu lokalen Dateilesevorgängen führen konnte. Die Fehlerbehebung umfasst:
+    <li>Verbesserter Schutz vor Sicherheitslücken in Extensible Markup Language (XML) External Entity (XXE) im Modul der elektronischen Dokumentkomponente (EDC) von Adobe Experience Manager (AEM) Forms. Die Sicherheitslücken waren auf eine unsichere Verarbeitung von XML-Dokumenten ohne XXE-Schutz zurückzuführen, was das Auslesen lokaler Dateien ermöglichen konnte. Die Korrektur umfasst Folgendes:
       <ul>
         <li>Sie stellt sicher, dass die in der SecurityCheckHandler-Klasse verwendete DocumentBuilderFactory so konfiguriert ist, dass sie XXE-Angriffe verhindert.</li>
         <li>Der EDC-Webservice wird aktualisiert, um XML-Dokumente sicher zu verarbeiten und einen nicht autorisierten Zugriff auf lokale Dateien zu verhindern.</li>
@@ -122,10 +146,10 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
   <tr>
     <td>
       <strong>5. August 2025</strong><br>
-      <em>Gilt für:</em> AEM 6.5 Forms Service Pack 18–22<br>
+      <em>Gilt für:</em> AEM 6.5 Forms Service Pack 18 - 22<br>
       <em>Setup-Anweisungen:</em>
       <a href="/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md#option-2-for-users-on-65180---65220-manual-hotfix-installation">
-        Manuelle Hotfix-Installation für Service Packs 18–22
+        Manuelle Hotfix-Installation für Service Packs 18-22
       </a>
     </td>
     <td>
@@ -136,7 +160,7 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
     <td>
     <ul>
     <li>Verbesserte Sicherheit durch Behebung einer Schwachstelle bei der Ausführung von Remote-Code (RCE) in Adobe Experience Manager (AEM) Forms. Das Problem stand im Zusammenhang mit dem Struts-Entwicklungsmodus in der Admin-Benutzeroberfläche (UI), der eine beliebige Auswertung der Object-Graph Navigation Language (OGNL) durch die Debugging-Funktion ermöglichte. Durch diese Fehlerbehebung wird sichergestellt, dass der Struts-Entwicklungsmodus deaktiviert ist und geeignete Sicherheitsfilter angewendet werden, um einen nicht autorisierten Zugriff zu verhindern.</li>
-    <li>Verbesserter Schutz vor Sicherheitslücken im Document Security-Modul von Adobe Experience Manager (AEM) Forms in Extensible Markup Language (XML) External Entity (XE). Die Sicherheitslücken waren auf eine fehlerhafte Verarbeitung von XML-Dokumenten ohne XDM-Schutz zurückzuführen, was zu lokalen Dateilesevorgängen führen konnte. Die Fehlerbehebung umfasst:
+    <li>Verbesserter Schutz vor Schwachstellen durch XML External Entity (XXE) im Document-Security-Modul von Adobe Experience Manager (AEM) Forms. Die Sicherheitslücken waren auf eine unsichere Verarbeitung von XML-Dokumenten ohne XXE-Schutz zurückzuführen, was das Auslesen lokaler Dateien ermöglichen konnte. Die Korrektur umfasst Folgendes:
       <ul>
         <li>Sie stellt sicher, dass die in der SecurityCheckHandler-Klasse verwendete DocumentBuilderFactory so konfiguriert ist, dass sie XXE-Angriffe verhindert.</li>
         <li>Der Document Security-Webservice wird aktualisiert, um XML-Dokumente sicher zu verarbeiten und einen nicht autorisierten Zugriff auf lokale Dateien zu verhindern.</li>
@@ -167,7 +191,7 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
         <li><strong>FORMS-20533:</strong> AEM Forms enthält jetzt eine Aktualisierung der Struts-Version von 2.5.33 auf 6.x für die Formularkomponente. Dies liefert bis jetzt fehlende Struts-Änderungen, die nicht in SP23 enthalten waren. Die Unterstützung wurde über einen Hotfix hinzugefügt. Diesen können Sie herunterladen und installieren, um Unterstützung für die neueste Version von Struts hinzuzufügen.</li>
         <li><strong>FORMS-20532:</strong> AEM Forms enthält jetzt eine Aktualisierung der Struts-Version von 2.5.33 auf 6.x für die Output-Komponente. Dies liefert bis jetzt fehlende Struts-Änderungen, die nicht in SP23 enthalten waren. Die Unterstützung wurde über einen Hotfix hinzugefügt. Diesen können Sie herunterladen und installieren, um Unterstützung für die neueste Version von Struts hinzuzufügen.</li>
         <li><strong>FORMS-20203:</strong> Wenn Benuztende Struts von AEM Service Pack 2.5.x auf AEM Forms Service Pack 6.x aktualisieren, werden in der Richtlinien-Benutzeroberfläche nicht alle Konfigurationen angezeigt, beispielsweise die Option zum Hinzufügen eines Wasserzeichens. Sie können den Hotfix herunterladen und installieren, um das Problem zu beheben.</li>
-        <li><strong>FORMS-20360:</strong> Nach der Aktualisierung auf AEM Forms Service Pack 6.5.23.0 schlägt der ImageToPDF-Konvertierungsdienst mit folgendem Fehler fehl:<br>
+        <li><strong>FORMS-20360:</strong> Nach dem Upgrade auf AEM Forms Service Pack 6.5.23.0 schlägt der ImageToPDF-Konvertierungsdienst mit dem folgenden Fehler fehl:<br>
         <code>17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp</code><br>
         Sie können den Hotfix zur Lösung dieses Problems herunterladen und installieren.</li>
       </ul>
@@ -206,7 +230,7 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
      </ul>
      </td>
     <td>
-    <ul><li>Wenn Benutzende auf AEM Forms Service Pack 20 (6.5.20.0) auf JEE Server aktualisieren und mithilfe von Ausgabe-Services PDF-Dateien generieren, werden die PDF-Dateien mit Problemen bezüglich der Barrierefreiheit gerendert. (LC-3922112)</li><li>Für getaggte PDF-Dateien, die mit dem Ausgabe-Service von AEM Forms JEE generiert werden, wird eine Warnung zu einer unangemessenen Struktur angezeigt. (LC-3922038)</li><li>Wenn ein Formular auf AEM Forms JEE gesendet wird, werden die Instanzen eines sich wiederholenden XML-Elements aus den Daten entfernt. (LC-3922017)</li><li>Wenn Benutzende in einer Linux-Umgebung ein adaptives Formular (auf JEE) in HTML rendern, schlägt das Rendern fehl. (LC-3921957)</li><li>Wenn Benutzende mithilfe des Output-Services auf AEM Forms JEE eine XTG-Datei in das PostScript-Format konvertieren, schlägt der Vorgang mit einem Fehler fehl: AEM_OUT_001_003: Unerwartete Ausnahme: PAExecute-Fehler: XFA_RENDER_FAILURE. (LC-3921720)</li><li>Nach dem Upgrade auf AEM Forms Service Pack 18 (6.5.18.0) auf dem JEE-Server kann ein abstürzendes Formular, das von Benutzenden gesendet wird, nicht in HTML5 oder PDF forms gerendert werden und XMLFM stürzt ab. (LC-3921718)
+    <ul><li>Wenn Benutzende auf AEM Forms Service Pack 20 (6.5.20.0) auf JEE Server aktualisieren und mithilfe von Ausgabe-Services PDF-Dateien generieren, werden die PDF-Dateien mit Problemen bezüglich der Barrierefreiheit gerendert. (LC-3922112)</li><li>Für getaggte PDF-Dateien, die mit dem Ausgabe-Service von AEM Forms JEE generiert werden, wird eine Warnung zu einer unangemessenen Struktur angezeigt. (LC-3922038)</li><li>Wenn ein Formular auf AEM Forms JEE gesendet wird, werden die Instanzen eines sich wiederholenden XML-Elements aus den Daten entfernt. (LC-3922017)</li><li>Wenn Benutzende in einer Linux-Umgebung ein adaptives Formular (auf JEE) in HTML rendern, schlägt das Rendern fehl. (LC-3921957)</li><li>Wenn Benutzende mithilfe des Output-Services auf AEM Forms JEE eine XTG-Datei in das PostScript-Format konvertieren, schlägt der Vorgang mit einem Fehler fehl: AEM_OUT_001_003: Unerwartete Ausnahme: PAExecute-Fehler: XFA_RENDER_FAILURE. (LC-3921720)</li><li>Nach dem Upgrade auf AEM Forms Service Pack 18 (6.5.18.0) auf JEE Server wird ein von Benutzenden gesendetes Formular nicht als HTML5- oder PDF-Formular gerendert und XMLFM stürzt ab. (LC-3921718)
     </ul>
     </td>    
   </tr>
@@ -301,7 +325,7 @@ Führen Sie die folgenden Schritte aus, um das Hotfix herunterzuladen und zu ins
 1. Laden Sie das [Hotfix](#hotfix-for-adaptive-forms) über den Software Distribution-Link herunter.
 1. Extrahieren Sie die Hotfix-Archivdatei, damit Sie ein Experience Manager-Paket (.zip) und Bundle-Dateien (.jar) abrufen können.
 1. Laden Sie das Paket (.zip) über den [Paket-Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=de#accessing) hoch und installieren Sie es.
-1. Öffnen Sie die Bundles des Konfigurations-Managers `https://server:host/system/console/bundles`, laden Sie sie hoch und installieren Sie das Bundle (.jar). Das Hotfix wird installiert.
+1. Öffnen Sie die Pakete des Konfigurations-Managers `https://server:host/system/console/bundles`, laden Sie sie hoch und installieren Sie das Paket (.jar). Das Hotfix wird installiert.
 
 ## Installieren eines JEE-Patches {#download-install-jee-patch}
 
