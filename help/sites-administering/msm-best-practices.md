@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 100%
+source-wordcount: '1624'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ MSM ist ein konfigurierbares Framework zur Automatisierung der Inhaltsbereitstel
 
 * **Planen Sie zunächst sorgfältig die Struktur und den Inhaltsfluss**, bevor Sie mit der Implementierung beginnen.
 * **Halten Sie die Anzahl der Live Copies auf ein Minimum beschränkt.** Die Verarbeitung von Live Copies ist eine ressourcenintensive Aufgabe. Je mehr Live Copies in Ihrem System vorhanden sind, desto mehr kann die Leistung beeinträchtigt werden: von der Verarbeitung interner Live Copy-Indizes über Live Copy-Vorgänge wie Rollouts bis hin zu Benutzeroberflächen-Vorgängen wie der Anzeige von Live Copy-Beziehungen in der Sites Admin-Referenzleiste. Es empfiehlt sich, Live Copies von Websites oder Verzweigungen einer Website zu erstellen, wobei die Beziehungen der Live Copy auf die Seiten der Website oder Verzweigung vererbt werden. Vermeiden Sie die Erstellung einzelner Live Copies für Seiten in einer Website oder einer Verzweigung, wenn die gesamte Struktur in eine Live Copy umgewandelt werden kann.
-* **Beschränken Sie Anpassungen auf das Nötigste.** MSM unterstützt zwar ein hohes Maß an Anpassungen (beispielsweise Rollout-Konfigurationen). Es empfiehlt sich jedoch, möglichst wenige Anpassungen vorzunehmen, um die Leistung und Zuverlässigkeit Ihrer Website nicht zu beeinträchtigen und Website-Upgrades durchführen zu können.
+* **Passen Sie so viel wie nötig, aber so wenig wie möglich an.** MSM unterstützt zwar ein hohes Maß an Anpassungen (beispielsweise Rollout-Konfigurationen). Es empfiehlt sich jedoch, nicht zu viele Anpassungen vorzunehmen, um die Leistung und Zuverlässigkeit Ihrer Website nicht zu beeinträchtigen und Website-Upgrades durchführen zu können.
 * Etablieren Sie frühzeitig ein **Governance-Modell** und schulen Sie die Benutzer entsprechend. Bei der Governance empfiehlt es sich, die **Autorität zu minimieren, über die lokale Inhaltsersteller verfügen**, um Inhalt anderen lokalen Benutzern oder ihren jeweiligen Live Copies zuzuordnen oder mit ihnen zu verknüpfen. Das liegt daran, dass nicht regulierte verkettete Vererbungen die Komplexität einer MSM-Struktur erheblich erhöhen und ihre Leistung und Zuverlässigkeit beeinträchtigen.
 
 * Wenn Sie über einen Plan für Ihre Struktur, Ihren Inhaltsfluss, Ihre Automatisierung und die Governance verfügen, **erstellen Sie einen Prototyp und testen Sie Ihr System sorgfältig**, bevor Sie mit der Live-Implementierung beginnen.
@@ -95,9 +95,9 @@ Berücksichtigen Sie beim Erstellen einer Website folgende Punkte:
 
   Dadurch lässt sich Folgendes vermeiden:
 
-   * Manuelles Hinzufügen von Sprachen in der Blueprint (unterhalb der ersten Ebene)
-   * Manuelles Hinzufügen von Inhalt unmittelbar unter dem Sprach-Stamm
-   * Automatische Übertragung des neuen Inhalts auf die Live Copy beim Rollout
+  * Manuelles Hinzufügen von Sprachen in der Blueprint (unterhalb der ersten Ebene)
+  * Manuelles Hinzufügen von Inhalt unmittelbar unter dem Sprach-Stamm
+  * Automatische Übertragung des neuen Inhalts auf die Live Copy beim Rollout
 
 ## MSM und mehrsprachige Websites {#msm-and-multilingual-websites}
 
@@ -105,18 +105,18 @@ MSM kann Sie auf zwei Arten beim Erstellen mehrsprachiger Websites unterstützen
 
 * Beim Erstellen von primären Sprachdateien
 
-   * Während MSM selbst **keine Inhaltsübersetzung anbietet**, kann dies mit entsprechenden Übersetzungs-Connectoren von Drittanbietern integriert werden. Beachten Sie Folgendes:
+  * Während MSM selbst **keine Inhaltsübersetzung anbietet**, kann dies mit entsprechenden Übersetzungs-Connectoren von Drittanbietern integriert werden. Beachten Sie Folgendes:
 
-      * Mit MSM können Sie die Vererbung auf Seiten- und/oder Komponentenebene unterbinden. So können Sie verhindern, dass übersetzter Inhalt aus einer Live Copy beim nächsten Rollout durch noch nicht übersetzten Inhalt aus einer Blueprint überschrieben wird.
-      * Einige Übersetzungs-Connectoren von Drittanbietern bieten eine automatisierte Verwaltung der MSM-Vererbung.
+    * Mit MSM können Sie die Vererbung auf Seiten- und/oder Komponentenebene unterbinden. So können Sie verhindern, dass übersetzter Inhalt aus einer Live Copy beim nächsten Rollout durch noch nicht übersetzten Inhalt aus einer Blueprint überschrieben wird.
+    * Einige Übersetzungs-Connectoren von Drittanbietern bieten eine automatisierte Verwaltung der MSM-Vererbung.
 
-        Weitere Informationen erhalten Sie von Ihrem Übersetzungsdienstleister.
+      Weitere Informationen erhalten Sie von Ihrem Übersetzungsdienstleister.
 
-      * Eine Alternative für die Erstellung und Übersetzung von Sprachstämmen ist die Verwendung von Sprachkopien in Verbindung mit dem vorgefertigten AEM-Framework für die Übersetzungsintegration.
+    * Eine Alternative für die Erstellung und Übersetzung von Sprachstämmen ist die Verwendung von Sprachkopien in Verbindung mit dem vorgefertigten AEM-Framework für die Übersetzungsintegration.
 
 * Beim Rollout von Inhalt auf der Grundlage von primären Sprachdateien.
 
-   * Beispielsweise auf der Grundlage der französischen primären Sprachdatei für länderspezifische Websites wie etwa Frankreich/Französisch, Kanada/Französisch und Schweiz/Französisch.
+  * Beispielsweise auf der Grundlage der französischen primären Sprachdatei für länderspezifische Websites wie etwa Frankreich/Französisch, Kanada/Französisch und Schweiz/Französisch.
 
 Weitere Informationen finden Sie unter [Übersetzen von Inhalt für mehrsprachige Websites](/help/sites-administering/translation.md) und in den [Best Practices zur Übersetzung](/help/sites-administering/tc-bp.md).
 
@@ -130,9 +130,9 @@ Weitere Informationen finden Sie unter [Übersetzen von Inhalt für mehrsprachig
 
 * Wenn Sie Seiten in einer Blueprint **verschieben**, werden die entsprechenden Seiten nach dem Rollout mit der standardmäßigen Rollout-Konfiguration in Live Copies **nicht** verschoben:
 
-   * Der Grund hierfür ist, dass eine Seitenverschiebung implizit eine Seitenlöschung beinhaltet. Dies kann bei der Veröffentlichung zu unerwartetem Verhalten führen, da das Löschen von Seiten im Rahmen der Bearbeitung zur Folge hat, dass der entsprechende Inhalt bei der Veröffentlichung automatisch deaktiviert wird. Dies kann sich wiederum auch auf verwandte Elemente wie etwa Links und Lesezeichen auswirken.
-   * Die Inhaltsvererbung der jeweiligen Live Copy-Seiten wird aktualisiert, um den neuen Ort ihrer Quellen in der Blueprint widerzuspiegeln.
-   * Im Anschluss finden Sie einige Best Practices für die vollständige Umsetzung einer Seitenverschiebung aus einer Blueprint in Live Copies:
+  * Der Grund hierfür ist, dass eine Seitenverschiebung implizit eine Seitenlöschung beinhaltet. Dies kann bei der Veröffentlichung zu unerwartetem Verhalten führen, da das Löschen von Seiten im Rahmen der Bearbeitung zur Folge hat, dass der entsprechende Inhalt bei der Veröffentlichung automatisch deaktiviert wird. Dies kann sich wiederum auch auf verwandte Elemente wie etwa Links und Lesezeichen auswirken.
+  * Die Inhaltsvererbung der jeweiligen Live Copy-Seiten wird aktualisiert, um den neuen Ort ihrer Quellen in der Blueprint widerzuspiegeln.
+  * Im Anschluss finden Sie einige Best Practices für die vollständige Umsetzung einer Seitenverschiebung aus einer Blueprint in Live Copies:
 
 >[!NOTE]
 >
@@ -140,25 +140,25 @@ Weitere Informationen finden Sie unter [Übersetzen von Inhalt für mehrsprachig
 
 * Erstellen Sie eine benutzerdefinierte Rollout-Konfiguration:
 
-   * Diese neue Konfiguration muss die folgende Aktion enthalten:
+  * Diese neue Konfiguration muss die folgende Aktion enthalten:
 
-     `PageMoveAction`
+    `PageMoveAction`
 
-     Fügen Sie dieser Konfiguration keine anderen Aktionen hinzu.
+    Fügen Sie dieser Konfiguration keine anderen Aktionen hinzu.
 
 * Positionieren Sie die neue Konfiguration:
 
-   * Gehen Sie wie folgt vor, um ein vollständiges Rollout der Seitenverschiebung durchzuführen und gleichzeitig die entsprechenden Seiten an ihrem alten Ort in der Live Copy zu löschen:
+  * Gehen Sie wie folgt vor, um ein vollständiges Rollout der Seitenverschiebung durchzuführen und gleichzeitig die entsprechenden Seiten an ihrem alten Ort in der Live Copy zu löschen:
 
-      * Positionieren Sie die neu erstellte Konfiguration vor der standardmäßigen Rollout-Konfiguration.
+    * Positionieren Sie die neu erstellte Konfiguration vor der standardmäßigen Rollout-Konfiguration.
 
-        Die Löschung der Seiten an ihrem alten Ort wird durch die standardmäßige Rollout-Konfiguration übernommen.
+      Die Löschung der Seiten an ihrem alten Ort wird durch die standardmäßige Rollout-Konfiguration übernommen.
 
-   * Gehen Sie wie folgt vor, um das Rollout der Seitenverschiebung durchzuführen und dabei die entsprechenden Seiten an ihrem alten Ort beizubehalten (und somit im Grunde den Inhalt zu duplizieren):
+  * Gehen Sie wie folgt vor, um das Rollout der Seitenverschiebung durchzuführen und dabei die entsprechenden Seiten an ihrem alten Ort beizubehalten (und somit im Grunde den Inhalt zu duplizieren):
 
-      * Positionieren Sie die neu erstellte Konfiguration nach der standardmäßigen Rollout-Konfiguration.
+    * Positionieren Sie die neu erstellte Konfiguration nach der standardmäßigen Rollout-Konfiguration.
 
-        Dadurch wird sichergestellt, dass in der Live Copy kein Inhalt gelöscht oder für die Veröffentlichung deaktiviert wird.
+      Dadurch wird sichergestellt, dass in der Live Copy kein Inhalt gelöscht oder für die Veröffentlichung deaktiviert wird.
 
 ## Anpassen von Rollouts {#customizing-rollouts}
 
@@ -177,8 +177,8 @@ Beachten Sie bei Verwendung des [Rollout-Auslösers](/help/sites-administering/m
 
 * Das Rollout-Ergebnis kann sich von dem erwarteten Ergebnis unterscheiden:
 
-   * Sie können die Reihenfolge der resultierenden Änderungsereignisse nicht angeben.
-   * Die ereignisbasierte Architektur kann die Reihenfolge der Ereignisse, die an den Rollout-Manager übergeben werden, nicht garantieren.
+  * Sie können die Reihenfolge der resultierenden Änderungsereignisse nicht angeben.
+  * Die ereignisbasierte Architektur kann die Reihenfolge der Ereignisse, die an den Rollout-Manager übergeben werden, nicht garantieren.
 
 * Die Verwendung einer solchen Rollout-Konfiguration kann im Falle von parallelen Aktualisierungen derselben Ressource zu Bestätigungskonflikten führen.
 
