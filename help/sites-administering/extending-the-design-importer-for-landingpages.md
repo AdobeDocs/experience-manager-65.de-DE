@@ -1,6 +1,6 @@
 ---
-title: Erweitern und Konfigurieren des Design-Import-Tools für Landing-Pages
-description: Erfahren Sie, wie Sie den Design Importer für Landing Pages konfigurieren.
+title: Erweitern und Konfigurieren des Design-Import-Tools für Landingpages
+description: Erfahren Sie, wie Sie den Design Importer für Landingpages konfigurieren.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -12,14 +12,14 @@ feature: Administering
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 100%
+source-wordcount: '3524'
+ht-degree: 94%
 
 ---
 
-# Erweitern und Konfigurieren des Design-Import-Tools für Landing-Pages{#extending-and-configuring-the-design-importer-for-landing-pages}
+# Erweitern und Konfigurieren des Design-Import-Tools für Landingpages{#extending-and-configuring-the-design-importer-for-landing-pages}
 
-In diesem Abschnitt wird beschrieben, wie Sie den Design Importer für Einstiegsseiten konfigurieren und bei Bedarf erweitern. Die Arbeit mit Landing Pages nach dem Import wird im Abschnitt [Landing Pages](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md) behandelt.
+In diesem Abschnitt wird beschrieben, wie Sie den Design Importer für Landingpages konfigurieren und bei Bedarf erweitern. Die Arbeit mit Landingpages nach dem Import wird im Abschnitt [Landingpages](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md) behandelt.
 
 **Extrahieren der benutzerdefinierten Komponente mit dem Design Importer**
 
@@ -41,11 +41,11 @@ Im Folgenden finden Sie die logischen Schritte, damit der Design Importer Ihre b
 
 >[!CAUTION]
 >
->Der Design Importer, der zum Importieren von Landing Pages verwendet wurde, [ist seit AEM 6.5 veraltet](/help/release-notes/deprecated-removed-features.md#deprecated-features).
+>Der Design Importer, der zum Importieren von Landingpages verwendet wurde, [ist seit AEM 6.5 veraltet](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 ## Vorbereiten von HTML für den Import {#preparing-the-html-for-import}
 
-Nachdem Sie eine Import-Tool-Seite erstellt haben, können Sie Ihre vollständige HTML-Landingpage importieren. Um Ihre HTML-Einstiegsseite zu importieren, müssen Sie den Inhalt zunächst zu einem Designpaket packen. Das Design-Paket enthält Ihre HTML-Landingpage zusammen mit den referenzierten Assets (Bilder, CSS, Symbole, Skripte usw.).
+Nachdem Sie eine Import-Tool-Seite erstellt haben, können Sie Ihre vollständige HTML-Landingpage importieren. Um Ihre HTML-Landingpage zu importieren, müssen Sie den Inhalt zunächst zu einem Designpaket packen. Das Design-Paket enthält Ihre HTML-Landingpage zusammen mit den referenzierten Assets (Bilder, CSS, Symbole, Skripte usw.).
 
 Die folgende Schnellübersicht enthält ein Beispiel für die Vorbereitung Ihrer HTML für den Import:
 
@@ -100,21 +100,21 @@ Ein Beispielausschnitt der Landingpage-HTML nach dem Hinzufügen des Arbeitsflä
 
 Beim Import einer Landingpage haben Sie die Möglichkeit, die Seite unverändert zu importieren. Das bedeutet, dass Sie nach dem Import der Landingpage keines der importierten Elemente in AEM bearbeiten können (Sie können auf der Seite noch weitere AEM-Komponenten hinzufügen).
 
-Bevor Sie die Einstiegsseite importieren, empfiehlt es sich, einige Teile der Einstiegsseite in bearbeitbare AEM-Komponenten zu konvertieren. Dadurch können Sie auch nach dem Import des Landingpage-Designs Teile der Landingpage schnell bearbeiten.
+Bevor Sie die Landingpage importieren, empfiehlt es sich, einige Teile der Landingpage in bearbeitbare AEM-Komponenten zu konvertieren. Dadurch können Sie auch nach dem Import des Landingpage-Designs Teile der Landingpage schnell bearbeiten.
 
 Sie tun dies, indem Sie in der zu importierenden HTML-Datei der entsprechenden Komponente die `data-cq-component` hinzufügen.
 
-Im folgenden Abschnitt wird beschrieben, wie Sie Ihre HTML-Datei so bearbeiten, dass bestimmte Teile der Einstiegsseiten in andere bearbeitbare AEM-Komponenten konvertiert werden. Die Komponenten werden unter [Komponenten von Landing Pages](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md) detailliert beschrieben.
+Im folgenden Abschnitt wird beschrieben, wie Sie Ihre HTML-Datei so bearbeiten, dass bestimmte Teile der Landingpages in andere bearbeitbare AEM-Komponenten konvertiert werden. Die Komponenten werden unter [Komponenten von Landingpages](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md) detailliert beschrieben.
 
 >[!NOTE]
 >
->HTML-Markup zum Konvertieren von Teilen der Einstiegsseiten in AEM-Komponenten verfügt sowohl über eine lange als auch über eine kurze Tag-Deklarierung. Beide werden für jede Komponente beschrieben.
+>HTML-Markup zum Konvertieren von Teilen der Landingpages in AEM-Komponenten verfügt sowohl über eine lange als auch über eine kurze Tag-Deklarierung. Beide werden für jede Komponente beschrieben.
 
 ### Einschränkungen {#limitations}
 
 Beachten Sie vor dem Import die folgenden Einschränkungen:
 
-### Alle Attribute wie „id“ oder „class“, die auf das &lt;body>-Tag angewendet werden, bleiben nicht erhalten {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### Attribute wie „class“ oder „id“, die auf das Tag &quot;*.body>&quot; angewendet werden, bleiben nicht erhalten {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
 Wenn ein beliebiges Attribut wie „id“ oder „class“ auf das body-Tag angewendet wird, z. B. `<body id="container">`, bleibt dieses Attribut nach dem Import nicht erhalten. Das importierte Design darf also über keine Abhängigkeiten bei den Attributen verfügen, die auf das `<body>`-Tag angewendet werden.
 
@@ -126,7 +126,7 @@ Die Browser, die das Hochladen der Design-ZIP-Datei per Drag-and-Drop unterstüt
 
 ### Modernizr wird nicht unterstützt {#modernizr-is-not-supported}
 
-`Modernizr.js` ist ein JavaScript-basiertes Hilfsmittel, das native Browser-Funktionen erkennt und ermittelt, ob sie für HTML5-Elemente geeignet sind. Bei Designs, die Modernizr für die verbesserte Unterstützung älterer Browserversionen verwenden, können Fehler in der Einstiegsseitenlösung auftreten. `Modernizr.js`-Skripts werden vom Design-Importer nicht unterstützt.
+`Modernizr.js` ist ein JavaScript-basiertes Hilfsmittel, das native Browser-Funktionen erkennt und ermittelt, ob sie für HTML5-Elemente geeignet sind. Bei Designs, die Modernizr für die verbesserte Unterstützung älterer Browser-Versionen verwenden, können Fehler in der Landingpage-Lösung auftreten. `Modernizr.js`-Skripts werden vom Design-Importer nicht unterstützt.
 
 ### Seiteneigenschaften werden zum Importzeitpunkt des Design-Pakets nicht beibehalten {#page-properties-are-not-preserved-at-the-time-of-importing-design-package}
 
@@ -276,7 +276,7 @@ Diese Komponente kann in jeder eigenständigen Anwendung verwendet oder aus eine
 
 #### Grafischer Link {#graphical-link}
 
-Diese CTA-Komponente kann dazu verwendet werden, ein beliebiges grafisches Bild mit Link auf der Einstiegsseite hinzuzufügen. Beim Bild kann es sich um eine einfache Schaltfläche oder um ein grafisches Bild als Hintergrund handeln. Wenn der Benutzer auf das Bild klickt, wird er zur in den Komponenteneigenschaften angegebenen Ziel-URL weitergeleitet. Es ist Teil der Gruppe „Aktionsaufruf“.
+Diese CTA-Komponente kann dazu verwendet werden, ein beliebiges grafisches Bild mit Link auf der Landingpage hinzuzufügen. Beim Bild kann es sich um eine einfache Schaltfläche oder um ein grafisches Bild als Hintergrund handeln. Wenn der Benutzer auf das Bild klickt, wird er zur in den Komponenteneigenschaften angegebenen Ziel-URL weitergeleitet. Es ist Teil der Gruppe „Aktionsaufruf“.
 
 Unterstützte Eigenschaften
 
@@ -323,9 +323,9 @@ Ein Lead-Formular ist ein Formular, das dazu verwendet wird, die Informationen e
 **Unterstützte Funktionen**
 
 * Vordefinierte Lead-Felder (Vorname, Nachname, Adresse, Geburtsdatum, Geschlecht, Info, Benutzer-ID, E-Mail-ID, Sende-Schaltfläche) sind im Sidekick verfügbar. Platzieren Sie die erforderliche Komponente einfach per Drag-and-Drop in Ihrem Lead-Formular.
-* Mithilfe dieser Komponenten kann der Autor ein eigenständiges Formular entwerfen. Diese Felder entsprechen den Lead-Formular-Feldern. In eigenständigen oder importierten ZIP-Anwendungen können Benutzende mit den Formularfeldern „cq:form“ oder „cta lead“ weitere Felder hinzufügen und diese ihren Anforderungen entsprechend benennen und entwerfen.
+* Mithilfe dieser Komponenten kann der Autor ein eigenständiges Formular entwerfen. Diese Felder entsprechen den Lead-Formular-Feldern. In eigenständigen oder importierten Zip-Anwendungen können Benutzer mithilfe von CQ:form- oder CTA-Lead-Formularfeldern zusätzliche Felder hinzufügen, sie entsprechend den Anforderungen benennen und entwerfen.
 * Ordnen Sie Formularfelder mithilfe spezifischer vordefinierter Namen für CTA-Lead-Formulare zu, z. B. „firstName“ für den Vornamen in einem Lead-Formular.
-* Felder, die nicht dem Lead-Formular zugewiesen sind, werden cq:form-Komponenten (Text, Optionsfeld, Kontrollkästchen, Dropdown, verborgenes Feld, Kennwort) zugeordnet.
+* Felder, die nicht Lead-Formularen zugeordnet sind, werden cq:form-Komponenten zugeordnet: Text, Optionsfeld, Kontrollkästchen, Dropdown, ausgeblendet, Kennwort.
 * Benutzende können den Titel mit dem Tag „Beschriften“ und Stile mit dem Stilattribut „Klasse“ angeben (nur für CTA-Lead-Formular-Komponenten verfügbar).
 * Die Dankeseite und die Abonnement-Liste können als versteckte Parameter des Formulars (vorhanden in der Datei „index.htm“) bereitgestellt werden oder über die Bearbeitungsleiste von „Start des Lead-Formulars“ hinzugefügt oder bearbeitet werden.
 
@@ -335,7 +335,7 @@ Ein Lead-Formular ist ein Formular, das dazu verwendet wird, die Informationen e
 
 * Beschränkungen wie „Erforderlich“ können in jeder der Komponenten unter „Konfiguration bearbeiten“ angegeben werden.
 
-HTML-Tag mit in der importierten Zip enthaltenem grafischen Link: Hier verweist „firstName“ auf das Feld „firstName“ auf dem Lead-Formular usw. Eine Ausnahme bilden Kontrollkästchen. Die beiden folgenden Kontrollkästchen verweisen auf die Dropdown-Komponente „cq:form“.
+HTML-Tag mit in der importierten Zip enthaltenem grafischen Link: Hier wird „firstName“ dem Lead-Formular „firstName“ usw. zugeordnet (mit Ausnahme von Kontrollkästchen). Diese beiden Kontrollkästchen sind der Dropdown-Komponente „cq:form&quot; zugeordnet.
 
 ```xml
 <div id="cqcanvas">
@@ -419,11 +419,11 @@ Neben der Angabe, ob importierte Komponenten bearbeitbare AEM-Komponenten sind, 
 
 ### Festlegen von Seiteneigenschaften durch Extrahieren der im HTML-Import definierten Metadaten {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
 
-Die folgenden im Kopfteil des HTML-Imports deklarierten Metadaten werden vom Design-Import-Tool als Eigenschaft „jcr:description“ extrahiert und beibehalten:
+Die folgenden im Kopf der importierten HTML deklarierten Metadaten werden vom Design Importer als Eigenschaft „jcr“ extrahiert und :description:
 
 * &lt;meta name=&quot;description&quot; content=&quot;&quot;>
 
-Das im HTML-Tag festgelegte lang-Attribut wird vom Design-Import-Tool als Eigenschaft „jrc:language“ extrahiert und beibehalten:
+Das im HTML-Tag festgelegte Lang-Attribut wird vom Design Importer als Eigenschaft „jcr“ extrahiert und :language.
 
 * &lt;html lang=&quot;en&quot;>
 
@@ -470,7 +470,7 @@ Die Verwendung von CSS-Selektoren wie den folgenden wird bei Elementen, die für
 Dies liegt daran, dass dem generierten HTML-Code nach dem Import zusätzliche HTML-Elemente wie das &lt;div>-Tag hinzugefügt werden.
 
 * Skripte, die auf einer ähnlichen Struktur wie der obigen basieren, werden ebenfalls nicht für Elemente empfohlen, die für die Konvertierung in AEM-Komponenten vorgesehen sind.
-* Die Verwendung von Stilen in den Markup-Tags für die Komponentenkonvertierung wie &lt;div data-cq-component=&quot;&amp;ast;&quot;> wird nicht empfohlen.
+* Die Verwendung von Stilen in den Markup-Tags für die Komponentenkonvertierung wie &lt;div data-cq-component=&quot;&amp;ast;“> wird nicht empfohlen.
 * Beim Designlayout sollten die Best Practices für das HTML5-Boilerplate befolgt werden. Lesen Sie mehr unter [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Konfigurieren von OSGi-Modulen {#configuring-osgi-modules}
@@ -494,7 +494,7 @@ In der folgenden Tabelle werden die Eigenschaften kurz beschrieben:
   <tr>
    <td>Design-Import-Tool für Landingpages</td>
    <td>Extraktionsfilter</td>
-   <td>Die Liste der regulären Ausdrücke, die für das Filtern der Dateien beim Extrahieren verwendet werden. <br />Zip-Einträge, die einem der angegebenen Muster entsprechen, werden von der Extraktion ausgeschlossen.</td>
+   <td>Die Liste der regulären Ausdrücke, die zum Filtern der Dateien aus der Extraktion verwendet werden sollen. <br /> Zip-Einträge, die einem der angegebenen Muster entsprechen, werden von der Extraktion ausgeschlossen</td>
   </tr>
   <tr>
    <td>Builder für Landingpages</td>
@@ -526,7 +526,7 @@ In der folgenden Tabelle werden die Eigenschaften kurz beschrieben:
 
 >[!NOTE]
 >
->**Aktuelle Beschränkung des Eintrags-Präprozessors für Landing Pages:**
+>**Aktuelle Einschränkung des Eintrags-Präprozessors für die Einstiegsseite:**
 >Wenn Sie Änderungen am Suchmuster vornehmen müssen, müssen Sie beim Öffnen des Felix Property Editor manuell umgekehrte Schrägstriche einfügen, um die regex-Metazeichen auszukommentieren. Wenn Sie umgekehrte Schrägstriche nicht manuell einfügen, wird der reguläre Ausdruck als ungültig angesehen und ersetzt nicht die ältere Version.
 >
 >Beispiel: Die Standardkonfiguration lautet wie folgt:
@@ -591,7 +591,7 @@ mit einem wie folgt auf die Klasse `box` angewendeten CSS:
 { width: 450px; padding:10px; border: 1px #C5DBE7 solid; margin: 0px auto 0 auto; background-image:url(assets/box.gif); background-repeat:repeat-x,y; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#6D6D6D; }
 ```
 
-`box img` wird dann im Design-Import-Tool verwendet. Die daraus resultierende Landinpage wird scheinbar ohne die entsprechende Formatierung angezeigt. Um dieses Problem zu umgehen, fügt AEM im CSS div-Tags hinzu. Schreiben Sie daher den Code entsprechend um. Andernfalls werden einige CSS-Regeln ungültig sein.
+`box img` wird dann im Design-Import-Tool verwendet. Die daraus resultierende Landingpage wird scheinbar ohne die entsprechende Formatierung angezeigt. Um dieses Problem zu umgehen, fügt AEM im CSS div-Tags hinzu. Schreiben Sie daher den Code entsprechend um. Andernfalls werden einige CSS-Regeln ungültig sein.
 
 ```xml
 .box img
