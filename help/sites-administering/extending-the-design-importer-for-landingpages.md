@@ -470,7 +470,7 @@ Die Verwendung von CSS-Selektoren wie den folgenden wird bei Elementen, die für
 Dies liegt daran, dass dem generierten HTML-Code nach dem Import zusätzliche HTML-Elemente wie das &lt;div>-Tag hinzugefügt werden.
 
 * Skripte, die auf einer ähnlichen Struktur wie der obigen basieren, werden ebenfalls nicht für Elemente empfohlen, die für die Konvertierung in AEM-Komponenten vorgesehen sind.
-* Die Verwendung von Stilen in den Markup-Tags für die Komponentenkonvertierung wie &lt;div data-cq-component=&quot;&amp;ast;“> wird nicht empfohlen.
+* Die Verwendung von Stilen in den Markup-Tags für die Komponentenkonvertierung wie &lt;div data-cq-component=&quot;&ast;“> wird nicht empfohlen.
 * Beim Designlayout sollten die Best Practices für das HTML5-Boilerplate befolgt werden. Lesen Sie mehr unter [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Konfigurieren von OSGi-Modulen {#configuring-osgi-modules}
@@ -531,7 +531,7 @@ In der folgenden Tabelle werden die Eigenschaften kurz beschrieben:
 >
 >Beispiel: Die Standardkonfiguration lautet wie folgt:
 >
->>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >Und Sie müssen `CQ_DESIGN_PATH` durch `VIPURL` im Suchmuster ersetzen. Ihr Suchmuster sollte dann wie folgt aussehen:
 >
