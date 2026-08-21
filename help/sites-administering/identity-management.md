@@ -12,8 +12,8 @@ feature: Administering
 role: Admin
 source-git-commit: 315171dca4501718a34fd33f937334f7e7958963
 workflow-type: tm+mt
-source-wordcount: '1249'
-ht-degree: 100%
+source-wordcount: '1254'
+ht-degree: 96%
 
 ---
 
@@ -58,7 +58,7 @@ Zusätzliche Funktionen können konfiguriert oder entwickelt werden:
 
 Ein [Formular](/help/sites-authoring/default-components.md#form-component) kann verwendet werden, um die Registrierungsinformationen zu erfassen und dann das neue Konto und Profil zu generieren.
 
-Benutzerinnen und Benutzer können beispielsweise mithilfe der folgenden Geometrixx-Seite ein neues Profil anfordern:
+Benutzerinnen und Benutzer können beispielsweise mithilfe der Geometrixx-Seite ein neues Profil anfordern
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
 ![Beispiel für ein Registrierungsformular](assets/registerform.png)
@@ -93,7 +93,7 @@ Je nach Ihrem Registrierungsformular können die Besuchenden registrierte Inform
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Um die Daten Ihres Profils einzusehen, klicken Sie in der rechten oberen Ecke einer beliebigen Seite auf **Mein Profil**, beispielsweise mit dem `admin`-Konto
+Um die Details Ihres Profils anzuzeigen, klicken Sie **Mein Profil** in der oberen rechten Ecke einer beliebigen Seite, z. B. mit dem `admin`:
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 Sie können mit dem [ClientContext](/help/sites-administering/client-context.md) (in der Authoring-Umgebung und mit ausreichenden Berechtigungen) ein anderes Profil anzeigen:
@@ -194,7 +194,7 @@ Bei einer Standardinstallation (Author oder Publish) hat jeder Lesezugriff auf d
 
 Diese Zugriffsberechtigungen werden durch die folgende Platzhalter-ACL definiert:
 
-/home everyone allow jcr:read rep:glob = &#42;/profile&#42;
+/home : Alle erlauben JCR:read Rep:glob = &#42;/profile&#42;
 
 Dies ermöglicht Folgendes:
 
