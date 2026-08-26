@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 100%
+source-wordcount: '732'
+ht-degree: 82%
 
 ---
 
@@ -31,16 +31,18 @@ Diese Versionen werden nie bereinigt, sodass die Repository-Größe im Laufe der
 
 AEM wird mit verschiedenen Mechanismen bereitgestellt, mit denen Sie Ihr Repository verwalten können:
 
-* [Versionsmanager](#version-manager) Der Manager kann so konfiguriert werden, dass alte Versionen bei der Erstellung von neuen Versionen entfernt werden.
+* [Versionsmanager](#version-manager)
+Dies kann so konfiguriert werden, dass alte Versionen gelöscht werden, wenn neue Versionen erstellt werden.
 
-* das Tool [Versionen bereinigen](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) Dieses Tool wird im Rahmen der Überwachung und Wartung Ihres Repositorys verwendet.
+* das Tool [Versionen bereinigen](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)
+Dies wird im Rahmen der Überwachung und Wartung Ihres Repositorys verwendet.
 Hiermit können Sie alte Versionen eines Knotens oder eine Hierarchie von Knoten entsprechend den folgenden Parametern entfernen:
 
-   * Die maximale Anzahl der Versionen, die im Repository gespeichert werden sollen.
-Wird dieser Wert überschritten, wird die älteste Version entfernt.
+  * Die maximale Anzahl der Versionen, die im Repository gespeichert werden sollen.
+    Wird dieser Wert überschritten, wird die älteste Version entfernt.
 
-   * Das Höchstalter einer im Repository gespeicherten Version.
-Wenn das Alter einer Version diesen Wert überschreitet, wird sie aus dem Repository gelöscht.
+  * Das Höchstalter einer im Repository gespeicherten Version.
+    Wenn das Alter einer Version diesen Wert überschreitet, wird sie aus dem Repository gelöscht.
 
 * [Wartungsaufgabe zur Versionsbereinigung](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Sie können die Wartungsaufgabe zur Versionsbereinigung planen, um alte Versionen automatisch zu löschen. Das verringert die Notwendigkeit, die Tools zur Versionsbereinigung manuell zu verwenden.
 
@@ -58,27 +60,27 @@ Um den Versions-Manager entsprechend zu konfigurieren, [erstellen Sie eine Konfi
 
 Die folgenden Optionen sind verfügbar:
 
-* `versionmanager.createVersionOnActivation` (Boolesch, Standardeinstellung: true)
-Legt fest, ob bei der Aktivierung von Seiten eine Version erstellt werden soll.
+* `versionmanager.createVersionOnActivation` (Boolesch, Standard: true)
+Gibt an, ob bei der Aktivierung von Seiten eine Version erstellt werden soll.
 Eine Version wird erstellt, es sei denn, der Replikationsagent ist so konfiguriert, dass er die Erstellung von Versionen unterdrückt, was vom Versions-Manager berücksichtigt wird.
 Eine Version wird erstellt, wenn die Aktivierung auf einem Pfad passiert, der in `versionmanager.ivPaths` enthalten ist (siehe unten).
 
-* `versionmanager.ivPaths`(Zeichenfolge[], Standardeinstellung: `{"/"}`)
-Gibt den Pfad an, über den Versionen bei einer Aktivierung implizit erstellt werden, wenn die Einstellung für `versionmanager.createVersionOnActivation` auf „true“ gesetzt ist.
+* `versionmanager.ivPaths`(Zeichenfolge[], Standard: `{"/"}`)
+Gibt die Pfade an, in denen Versionen bei Aktivierung implizit erstellt werden, wenn `versionmanager.createVersionOnActivation` auf „true“ gesetzt ist.
 
-* `versionmanager.purgingEnabled` (Boolesch, Standardeinstellung: false)
-Legt fest, ob die Bereinigung bei der Erstellung von neuen Versionen aktiviert werden soll.
+* `versionmanager.purgingEnabled` (Boolesch, Standard: false)
+Legt fest, ob die Bereinigung aktiviert werden soll, wenn neue Versionen erstellt werden.
 
-* `versionmanager.purgePaths` (Zeichenfolge[], Standardeinstellung: {&quot;/content&quot;})
+* `versionmanager.purgePaths` (Zeichenfolge[], Standard: {&quot;/content“})
 Gibt an, auf welchen Pfaden Versionen gelöscht werden sollen, wenn neue Versionen erstellt werden.
 
 * `versionmanager.maxAgeDays` (int, Standardeinstellung: 30)
-Legt fest, dass beim Bereinigen alle Versionen entfernt werden, die älter als dieser Wert sind. Ist der Wert kleiner als „1“, wird die Bereinigung nicht auf Basis des Alters der Version durchgeführt.
+Bei der Versionsbereinigung werden alle Versionen entfernt, die älter als der konfigurierte Wert sind. Ist der Wert kleiner als „1“, wird die Bereinigung nicht auf Basis des Alters der Version durchgeführt.
 
 * `versionmanager.maxNumberVersions` (int, Standardeinstellung: 5)
-Legt fest, dass beim Bereinigen alle Versionen entfernt werden, die älter als die n-te neue Version sind. Ist der Wert kleiner als „1“, wird die Bereinigung nicht auf Basis der Anzahl der Versionen durchgeführt.
+Bei der Versionsbereinigung werden alle Versionen entfernt, die älter als die n-te neueste Version sind. Ist der Wert kleiner als „1“, wird die Bereinigung nicht auf Basis der Anzahl der Versionen durchgeführt.
 
-* `versionmanager.minNumberVersions` (int, Standardeinstellung: 0)
+* `versionmanager.minNumberVersions` (int, Standard 0)
 Die Mindestanzahl der Versionen, die unabhängig vom Alter beibehalten werden. Wenn hier ein Wert kleiner als 1 festgelegt wird, wird keine Mindestanzahl an Versionen beibehalten.
 
 >[!NOTE]
@@ -93,34 +95,34 @@ Wenn Sie z. B. die maximale Anzahl der Versionen, die aufbewahrt werden, UND di
 
 * Einstellung:
 
-   * `maxNumberVersions` = 7
+  * `maxNumberVersions` = 7
 
-   * `maxAgeDays` = 30
+  * `maxAgeDays` = 30
 
 * Durch:
 
-   * Zehn Versionen wurden innerhalb der letzten 60 Tage erstellt
-   * Drei dieser Versionen wurden innerhalb der letzten 30 Tage erstellt
+  * Zehn Versionen wurden innerhalb der letzten 60 Tage erstellt
+  * Drei dieser Versionen wurden innerhalb der letzten 30 Tage erstellt
 
 * Das bedeutet:
 
-   * Die letzten drei Versionen werden aufbewahrt
+  * Die letzten drei Versionen werden aufbewahrt
 
 Wenn Sie z. B. die maximale UND die minimale Anzahl von Versionen, die aufbewahrt werden, UND die älteste beizubehaltende Version definieren:
 
 * Einstellung:
 
-   * `maxNumberVersions` = 3
-   * `maxAgeDays` = 30
-   * `minNumberVersions` = 3
+  * `maxNumberVersions` = 3
+  * `maxAgeDays` = 30
+  * `minNumberVersions` = 3
 
 * Durch:
 
-   * Fünf Versionen wurden vor 60 Tagen erstellt
+  * Fünf Versionen wurden vor 60 Tagen erstellt
 
 * Das bedeutet:
 
-   * Drei Versionen werden aufbewahrt
+  * Drei Versionen werden aufbewahrt
 
 ## Versionsbereinigungs-Werkzeug {#purge-versions-tool}
 

@@ -11,8 +11,8 @@ feature: Integration
 role: Admin
 source-git-commit: 6fb844ea428c15adab71503dde6138e46eabf0a3
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 100%
+source-wordcount: '1594'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Durch diese Integration können AEM und Adobe Campaign Classic unabhängig vonei
 
 >[!INFO]
 >
->In diesem Dokument wird beschrieben, wie Sie Adobe Campaign Classic in AEM 6.5 integrieren. Weitere Campaign-Integrationen finden Sie im Dokument [Integration von AEM 6.5 mit Adobe Campaign.](campaign.md)
+>In diesem Dokument wird die Integration von Adobe Campaign Classic mit AEM 6.5 beschrieben. Informationen zu anderen Campaign-Integrationen finden Sie im Dokument [Integrieren von AEM 6.5 mit Adobe Campaign.](campaign.md)
 
 ## Integrationsschritte {#integration-steps}
 
@@ -43,8 +43,8 @@ Dieses Dokument führt Sie im Detail durch die einzelnen Schritte.
 ## Voraussetzungen {#prerequisites}
 
 * Administratorzugriff auf Adobe Campaign Classic
-   * Für die Integration benötigen Sie eine funktionierende Adobe Campaign Classic-Instanz, einschließlich einer konfigurierten Datenbank.
-   * Weitere Informationen zum Einrichten und Konfigurieren von Adobe Campaign Classic finden Sie in der [Adobe Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=de), insbesondere im Handbuch zur Installation und Konfiguration.
+  * Für die Integration benötigen Sie eine funktionierende Adobe Campaign Classic-Instanz, einschließlich einer konfigurierten Datenbank.
+  * Weitere Informationen zum Einrichten und Konfigurieren von Adobe Campaign Classic finden Sie in der [Adobe Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=de), insbesondere im Handbuch zur Installation und Konfiguration.
 * Administratorzugriff auf AEM
 
 ## Installieren des AEM-Integrationspakets in Campaign {#install-package}
@@ -145,7 +145,7 @@ AEM verwendet [die Benutzerin bzw. den Benutzer, die oder den Sie bereits in Cam
 
 1. Ein neues Fenster und Dialogfeld wird geöffnet, um die Konfiguration zu bearbeiten. Geben Sie die folgenden Informationen ein.
 
-   * **Benutzername** - Dies ist [der im vorigen Schritt erstellte Adobe Campaign AEM-Integrationspaket-Operator.](#create-operator) Standardgemäß ist dies `aemserver`.
+   * **Benutzername** - Dies ist [der im vorherigen Schritt erstellte Adobe Campaign AEM-Integrationspaket-Operator.](#create-operator) Standardmäßig ist dies `aemserver`.
    * **Passwort** - Dies ist das Passwort für [den im vorherigen Schritt erstellten Adobe Campaign AEM-Integrationspaket-Operator](#create-operator).
    * **API-Endpunkt** - Dies ist die Adobe Campaign-Instanz-URL.
 
@@ -213,7 +213,7 @@ Damit Campaign mit AEM kommunizieren kann, müssen Sie ein Kennwort für den `ca
 
 1. Melden Sie sich in AEM als Admin an.
 1. Klicken Sie in der Hauptnavigationskonsole in der linken Leiste auf **Tools**.
-1. Klicken Sie anschließend auf **Sicherheit** > **Benutzer**, um die Benutzer-Administration-Console zu öffnen. 
+1. Klicken Sie anschließend auf **Sicherheit** > **Benutzer**, um die Benutzer-Administration-Console zu öffnen.
 1. Suchen Sie den `campaign-remote`-Benutzer.
 1. Wählen Sie den `campaign-remote`-Benutzer aus und klicken Sie auf **Eigenschaften**, um den Benutzer zu bearbeiten.
 1. Klicken Sie im Fenster **Benutzereinstellungen bearbeiten** auf **Kennwort ändern**.
@@ -242,8 +242,8 @@ Bei der [Installation des **AEM-Integrationspakets** in Campaign](#install-packa
 1. Geben Sie auf der Registerkarte **Allgemein** dieses Kontos die Benutzerinformationen ein, die Sie im Schritt [Festlegen des Kennworts für den Benutzer „campaign-remote“](#set-campaign-remote-password) definiert haben.
 
    * **Server** – Die Adresse des AEM-Autoren-Servers
-      * Der AEM-Autoren-Server muss von der Adobe Campaign Classic-Server-Instanz aus erreichbar sein.
-      * Stellen Sie sicher, dass die Server-Adresse **nicht** mit einem Schrägstrich endet.
+     * Der AEM-Autoren-Server muss von der Adobe Campaign Classic-Server-Instanz aus erreichbar sein.
+     * Stellen Sie sicher, dass die Server-Adresse **nicht** mit einem Schrägstrich endet.
    * **Konto** – Standardmäßig ist dies der Benutzer `campaign-remote`, den Sie in AEM im Schritt [Festlegen des Kennworts für den Benutzer „campaign-remote“](#set-campaign-remote-password) definiert haben.
    * **Kennwort** – Dieses Kennwort ist mit dem des Benutzers `campaign-remote` identisch, den Sie in AEM im Schritt [Festlegen des Kennworts für den Benutzer „campaign-remote“](#set-campaign-remote-password) definiert haben.
 

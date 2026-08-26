@@ -12,8 +12,8 @@ feature: Integration
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 100%
+source-wordcount: '533'
+ht-degree: 90%
 
 ---
 
@@ -50,15 +50,15 @@ Auf der Autoreninstanz muss der Test-and-Target-[Replikationsagent](/help/sites-
 
 ## Sichern des Aktivitätseinstellungsknotens {#securing-the-activity-settings-node}
 
-Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Publishing-Instanz sichern, sodass dieser für normale Benutzende nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Dienst zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
+Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Veröffentlichungsinstanz sichern, sodass dieser für normale Benutzende nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Dienst zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
 
-Der Knoten **cq:ActivitySettings** steht in CRXDE Lite unter `/content/campaigns/*nameofbrand*`* *unter dem Aktivitätsknoten „jcr:content“ zur Verfügung,* *z. B. `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Dieser Knoten wird nur erstellt, wenn Sie eine Komponente als Ziel angeben.
+Der **cq:ActivitySettings**-Knoten ist in CRXDE Lite unter `/content/campaigns/*nameofbrand*`** unter dem Aktivitätsknoten jcr:content verfügbar, * *z. B. `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Dieser Knoten wird nur erstellt, wenn Sie eine Komponente als Ziel angeben.
 
-Der Knoten **cq:ActivitySettings** unter dem Aktivitätsknoten jcr:content wird von folgenden ACLs geschützt:
+Der **cq:ActivitySettings**-Knoten unter dem jcr:content der Aktivität wird von den folgenden ACLs geschützt:
 
 * Alles für jeden verweigern
-* „jcr:read,rep:write“ für „target-activity-authors“ zulassen („author“ ist standardmäßig ein Mitglied dieser Gruppe)
-* „jcr:read,rep:write“ für „targetservice“ zulassen
+* Zulassen von jcr:read,rep:write für „target-activity-authors“ (der Autor ist standardmäßig Mitglied dieser Gruppe)
+* JCR:read,rep:write für „targetService“ zulassen
 
 Diese Einstellungen gewährleisten, dass normale Benutzende keinen Zugriff auf die Knoteneigenschaften haben. Verwenden Sie dieselben ACLs für „author“ und „publish“. Weitere Informationen finden Sie unter [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md).
 
