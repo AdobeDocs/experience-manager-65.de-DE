@@ -9,7 +9,7 @@ exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Admin,Developer,Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: c1f5f41ce7127c7f3e7193295d55c91b151d2146
 workflow-type: tm+mt
 source-wordcount: '3750'
 ht-degree: 100%
@@ -72,45 +72,45 @@ Wie bei jedem Projekt ist es von entscheidender Bedeutung, so bald wie möglich 
 
   Rollen sollten klar definiert und allen am Projekt beteiligten Personen bekannt gemacht werden. Außerdem ist es ratsam, Folgendes hervorzuheben:
 
-   * Entscheidungsträger
-   * Kontaktstellen
+  * Entscheidungsträger
+  * Kontaktstellen
 
 * **Zuständigkeiten**
 
-   * Es hilft, für jede Rolle eine klare Definition der Verantwortlichkeiten in Bezug auf Ihr Projekt zu haben, um Verwirrung zu vermeiden.
+  * Es hilft, für jede Rolle eine klare Definition der Verantwortlichkeiten in Bezug auf Ihr Projekt zu haben, um Verwirrung zu vermeiden.
 
 * **Beteiligung**
 
   Wenn Sie alle Beteiligten so bald wie möglich einbinden, können Sie sie ermutigen, *Stakeholder* des Projekts zu werden. Dadurch sind sie stärker am Erfolg des Projekts interessiert.
 
-   * Auf Kundenseite umfasst diese Rolle die Autorinnen und Autoren, die täglich mit dem System arbeiten
-   * In Ihrem eigenen Projektteam gehören dazu auch die Verantwortlichen für die Qualitätssicherung. Je besser sie die Anforderungen des Kunden bzw. der Kundin verstehen, desto besser können sie die Tests planen.
+  * Auf Kundenseite umfasst diese Rolle die Autorinnen und Autoren, die täglich mit dem System arbeiten
+  * In Ihrem eigenen Projektteam gehören dazu auch die Verantwortlichen für die Qualitätssicherung. Je besser sie die Anforderungen des Kunden bzw. der Kundin verstehen, desto besser können sie die Tests planen.
 
 * **Kommunikationswege**
 
-   * Auch wenn die Kommunikationswege nicht übermäßig formalisiert werden sollten, sollten spezifische Definitionen gewährleisten, dass die Schlüsselpersonen stets informiert werden und somit auf dem neuesten Stand gehalten werden. Besonderes Augenmerk sollte auf die Kommunikation mit externen Parteien gelegt werden.
+  * Auch wenn die Kommunikationswege nicht übermäßig formalisiert werden sollten, sollten spezifische Definitionen gewährleisten, dass die Schlüsselpersonen stets informiert werden und somit auf dem neuesten Stand gehalten werden. Besonderes Augenmerk sollte auf die Kommunikation mit externen Parteien gelegt werden.
 
 * **Prozesse**
 
   Die definierten Prozesse hängen von Ihrem jeweiligen Projekt ab. Denken Sie daran, diese Prozesse einfach zu halten, wobei Sie Folgendes berücksichtigen sollten:
 
-   * Die Definition von Prozessen (und Kommunikationswegen) für die Interaktion mit Dritten, z. B. Design-Agenturen und Software-Drittanbietern.
-   * Kundinnen und Kunden verfügen häufig über ein eigenes Projekt-Management sowie eigene Verfahren und Werkzeuge für die Berichterstellung.
+  * Die Definition von Prozessen (und Kommunikationswegen) für die Interaktion mit Dritten, z. B. Design-Agenturen und Software-Drittanbietern.
+  * Kundinnen und Kunden verfügen häufig über ein eigenes Projekt-Management sowie eigene Verfahren und Werkzeuge für die Berichterstellung.
 
 * **Tracking-Tools**
 
   Es gibt viele Tools zur Nachverfolgung von Informationen zu Fehlern, Aufgaben und anderen Aspekten Ihres Projekts – siehe [Übersicht der möglichen Tools](#overview-of-potential-tools), um weitere Details zu erhalten.
 
-   * Dabei ist es wichtig, nur eine Kopie der Informationen aufzubewahren und die Informationen (und damit den Zugriff auf das verwendete Tool) zu teilen. Dieser Workflow vereinfacht die Wartung und hilft, Unstimmigkeiten zu vermeiden.
+  * Dabei ist es wichtig, nur eine Kopie der Informationen aufzubewahren und die Informationen (und damit den Zugriff auf das verwendete Tool) zu teilen. Dieser Workflow vereinfacht die Wartung und hilft, Unstimmigkeiten zu vermeiden.
 
 * **Umfang**
 
   Definieren Sie klar, was das Projekt auf verschiedenen Ebenen abdecken soll:
 
-   * die einzelnen Versionen (wenn ein iterativer Freigabeprozess verwendet wird und unabhängig davon, ob sie an Kundinnen und Kunden oder Ihr internes Test-Team ausgeliefert werden).
-   * das AEM-Projekt.
-   * das gesamte Projekt, einschließlich Drittanbieter-Software, Auswirkungen auf Tests, organisatorische Fragen und vieles andere.
-   * Für bestimmte Aspekte kann es auch sinnvoll sein anzugeben, was *nicht* im Projektumfang enthalten ist. Dies kann dazu beitragen, Verwirrung und falsche Annahmen zu vermeiden, sollte aber auf grundlegende Fragen beschränkt bleiben.
+  * die einzelnen Versionen (wenn ein iterativer Freigabeprozess verwendet wird und unabhängig davon, ob sie an Kundinnen und Kunden oder Ihr internes Test-Team ausgeliefert werden).
+  * das AEM-Projekt.
+  * das gesamte Projekt, einschließlich Drittanbieter-Software, Auswirkungen auf Tests, organisatorische Fragen und vieles andere.
+  * Für bestimmte Aspekte kann es auch sinnvoll sein anzugeben, was *nicht* im Projektumfang enthalten ist. Dies kann dazu beitragen, Verwirrung und falsche Annahmen zu vermeiden, sollte aber auf grundlegende Fragen beschränkt bleiben.
 
 * **Reporting**
 
@@ -118,11 +118,11 @@ Wie bei jedem Projekt ist es von entscheidender Bedeutung, so bald wie möglich 
 
 * **Terminologie**
 
-   * Definieren Sie die zu verwendenden Abkürzungen und/oder kundenspezifischen Begriffe.
+  * Definieren Sie die zu verwendenden Abkürzungen und/oder kundenspezifischen Begriffe.
 
 * **Annahmen**
 
-   * Definieren Sie mögliche Annahmen, die gemacht werden.
+  * Definieren Sie mögliche Annahmen, die gemacht werden.
 
 Diese Informationen können in einem Projekthandbuch definiert werden; die Verwendung eines Wikis kann auch dazu beitragen, dass laufende Änderungen effizient behandelt werden. Wo immer diese Annahmen definiert werden, sind die Schlüsselfaktoren die folgenden:
 
@@ -138,13 +138,13 @@ Diese Indikatoren können sein:
 
 * Geschäft:
 
-   * Verwendung zum Messen wichtiger Unternehmensziele.
-   * Es ist wichtig, KPIs auszuwählen, die für Ihr Unternehmen/Szenario geeignet sind, wobei klar definiert sein sollte, um was für KPIs es sich handelt, wie sie verwendet werden und von wem.
+  * Verwendung zum Messen wichtiger Unternehmensziele.
+  * Es ist wichtig, KPIs auszuwählen, die für Ihr Unternehmen/Szenario geeignet sind, wobei klar definiert sein sollte, um was für KPIs es sich handelt, wie sie verwendet werden und von wem.
 
 * Leistung:
 
-   * Definieren, wie die Leistung des Systems gemessen wird.
-   * Einige Beispiele sind die Seitenladezeit, die Antwortzeit des Servers und die Leistung der Datenbankabfrage.
+  * Definieren, wie die Leistung des Systems gemessen wird.
+  * Einige Beispiele sind die Seitenladezeit, die Antwortzeit des Servers und die Leistung der Datenbankabfrage.
 
 Einige, aber nicht alle Indikatoren können auf den Zielmetriken basieren, die Sie identifizieren und definieren.
 
@@ -222,8 +222,8 @@ Es gibt verschiedene Leistungsfaktoren, die ausgewertet werden können:
 
 * Antwortzeiten für einzelne Seiten, unter Berücksichtigung von:
 
-   * Antwortzeiten in einer Authoring-Umgebung
-   * Antwortzeiten in der Publishing-Umgebung
+  * Antwortzeiten in einer Authoring-Umgebung
+  * Antwortzeiten in der Publishing-Umgebung
 
 * Antwortzeiten für Suchanfragen
 
@@ -243,18 +243,18 @@ Die Antwortzeiten, die Sie anstreben, unterscheiden sich in der Authoring- und d
 
   Diese Umgebung wird von Autorinnen und Autoren verwendet, die Inhalte eingeben und aktualisieren. Daher muss sie:
 
-   * einige wenige Benutzerinnen und Benutzer bedienen können, die beim Aktualisieren von Inhaltsseiten und einzelnen Elementen auf diesen Seiten eine hohe Anzahl von Anforderungen generieren
-   * so schnell wie möglich sein, um die Produktivität bei der Bereitstellung Ihrer Inhalte auf der Website zu maximieren
+  * einige wenige Benutzerinnen und Benutzer bedienen können, die beim Aktualisieren von Inhaltsseiten und einzelnen Elementen auf diesen Seiten eine hohe Anzahl von Anforderungen generieren
+  * so schnell wie möglich sein, um die Produktivität bei der Bereitstellung Ihrer Inhalte auf der Website zu maximieren
 
 * **Veröffentlichungsumgebung**
 
   Diese Umgebung enthält Inhalte, die Sie Ihren Benutzerinnen und Benutzern zur Verfügung stellen:
 
-   * Die Geschwindigkeit ist auch hier wichtig, darf aber gewöhnlich langsamer sein als in der Authoring-Umgebung
-   * Häufig werden zusätzliche leistungssteigernde Mechanismen angewendet:
+  * Die Geschwindigkeit ist auch hier wichtig, darf aber gewöhnlich langsamer sein als in der Authoring-Umgebung
+  * Häufig werden zusätzliche leistungssteigernde Mechanismen angewendet:
 
-      * Der Inhalt wird zwischengespeichert
-      * Lastenausgleich wird angewendet
+    * Der Inhalt wird zwischengespeichert
+    * Lastenausgleich wird angewendet
 
 #### Zielantwortzeiten werden festgelegt {#setting-target-response-times}
 
@@ -298,11 +298,11 @@ Suchanfragen können erhebliche Auswirkungen auf Ihre Website haben, im Hinblick
 
 * die Antwortzeit der tatsächlichen Suche
 
-   * Eine schnelle Suchfunktion ist ein Qualitätsziel für Ihre Website.
+  * Eine schnelle Suchfunktion ist ein Qualitätsziel für Ihre Website.
 
 * die Auswirkungen auf die allgemeine Leistung
 
-   * Da eine Suchfunktion (potenziell große) Abschnitte des Inhalts oder einen speziell extrahierten Index scannen muss, kann diese Funktion die Leistung des gesamten Systems beeinträchtigen, wenn sie nicht optimiert wird.
+  * Da eine Suchfunktion (potenziell große) Abschnitte des Inhalts oder einen speziell extrahierten Index scannen muss, kann diese Funktion die Leistung des gesamten Systems beeinträchtigen, wenn sie nicht optimiert wird.
 
 Das Festlegen von Zielen für Suchanfragen ist wiederum eine Frage der Erfahrung, die von mehreren Faktoren abhängt:
 
@@ -330,12 +330,12 @@ Ziele für die Anzahl gleichzeitiger Benutzer bzw. Benutzerinnen hängen vom Umg
 
 * **Autorenumgebung**
 
-   * Normalerweise kann die Anzahl der gleichzeitigen Benutzer bzw. Benutzerinnen genau geschätzt werden. Sie können ermitteln, wie viele Autoren und Autorinnen insgesamt vorhanden sind, obwohl (wahrscheinlich) nicht alle gleichzeitig aktiv sind.
+  * Normalerweise kann die Anzahl der gleichzeitigen Benutzer bzw. Benutzerinnen genau geschätzt werden. Sie können ermitteln, wie viele Autoren und Autorinnen insgesamt vorhanden sind, obwohl (wahrscheinlich) nicht alle gleichzeitig aktiv sind.
 
 * **Publishing-Umgebung**
 
-   * Die Vorhersage der Publishing-Umgebung ist schwieriger, daher müssen Sie einen Zielwert auswählen. Auch hier sollte es auf den Erfahrungen Ihrer aktuellen Website und realistischen Erwartungen Ihrer neuen Website basieren.
-   * Sonderveranstaltungen (z. B. bei der Veröffentlichung neuer beliebter Inhalte) können die Erwartungen oder sogar die Fähigkeiten übertreffen (wie manchmal in der Presse berichtet wird, wenn Tickets für bestimmte Veranstaltungen zum Verkauf angeboten werden).
+  * Die Vorhersage der Publishing-Umgebung ist schwieriger, daher müssen Sie einen Zielwert auswählen. Auch hier sollte es auf den Erfahrungen Ihrer aktuellen Website und realistischen Erwartungen Ihrer neuen Website basieren.
+  * Sonderveranstaltungen (z. B. bei der Veröffentlichung neuer beliebter Inhalte) können die Erwartungen oder sogar die Fähigkeiten übertreffen (wie manchmal in der Presse berichtet wird, wenn Tickets für bestimmte Veranstaltungen zum Verkauf angeboten werden).
 
 ### Kapazität und Volumen {#capacity-and-volume}
 
@@ -343,12 +343,12 @@ Bevor wir die entsprechenden Metriken besprechen, eine schnelle Definition der B
 
 * **Volumen**
 
-   * Die Menge an Ausgabedaten, die vom System verarbeitet und geliefert wird.
+  * Die Menge an Ausgabedaten, die vom System verarbeitet und geliefert wird.
 
 * **Kapazität**
 
-   * Die Fähigkeit des Systems, das Volumen bereitzustellen.
-   * Bei jedem Schritt werden Kapazität und Volumen unterschiedlich gemessen, wie in der folgenden Tabelle dargestellt. Um eine optimale Leistung zu erzielen, stellen Sie sicher, dass die Kapazität dem Volumen in jedem Schritt entspricht und dass sowohl Kapazität als auch Volumen in allen Schritten gemeinsam genutzt werden. Beispielsweise können Sie die Navigation auf dem Client-Computer berechnen oder in den Cache legen, anstatt sie für jede Anfrage auf dem Server zu berechnen.
+  * Die Fähigkeit des Systems, das Volumen bereitzustellen.
+  * Bei jedem Schritt werden Kapazität und Volumen unterschiedlich gemessen, wie in der folgenden Tabelle dargestellt. Um eine optimale Leistung zu erzielen, stellen Sie sicher, dass die Kapazität dem Volumen in jedem Schritt entspricht und dass sowohl Kapazität als auch Volumen in allen Schritten gemeinsam genutzt werden. Beispielsweise können Sie die Navigation auf dem Client-Computer berechnen oder in den Cache legen, anstatt sie für jede Anfrage auf dem Server zu berechnen.
 
 * **Kapazität und Volumen**
 
@@ -414,56 +414,56 @@ Einige Punkte, die für jede Kategorie zu beachten sind:
 
 * **Entwicklung**
 
-   * Definieren Sie zuerst die Basisarchitektur.
-   * Verwenden Sie mehrere Iterationen (Sprints) für die Entwicklung:
+  * Definieren Sie zuerst die Basisarchitektur.
+  * Verwenden Sie mehrere Iterationen (Sprints) für die Entwicklung:
 
-      * Der erste Sprint entspricht dem ersten vollständigen Entwicklungszyklus.
-      * Der erste Sprint führt zur ersten Bereitstellung in Ihrer Testumgebung.
-      * Jeder Sprint hat ein lauffähiges Ergebnis.
-      * Für jeden Sprint erfolgt eine Kundenabnahme (mindestens ein strukturierter Test mit Feedback).
+    * Der erste Sprint entspricht dem ersten vollständigen Entwicklungszyklus.
+    * Der erste Sprint führt zur ersten Bereitstellung in Ihrer Testumgebung.
+    * Jeder Sprint hat ein lauffähiges Ergebnis.
+    * Für jeden Sprint erfolgt eine Kundenabnahme (mindestens ein strukturierter Test mit Feedback).
 
-   * Planen Sie den Fall eines Updates der verfügbaren AEM-Version während des Projekts mit ein.
-   * Planen Sie Tests und Optimierungen während des Sprints ein.
-   * Planen Sie Stabilisierungs- und Optimierungsphasen ein.
-   * Erstellen Sie ein Protokoll mit Elementen, die für weitere Versionen geplant werden sollten.
-   * Planen Sie die Partnerbeteiligung und -übergabe. ein
+  * Planen Sie den Fall eines Updates der verfügbaren AEM-Version während des Projekts mit ein.
+  * Planen Sie Tests und Optimierungen während des Sprints ein.
+  * Planen Sie Stabilisierungs- und Optimierungsphasen ein.
+  * Erstellen Sie ein Protokoll mit Elementen, die für weitere Versionen geplant werden sollten.
+  * Planen Sie die Partnerbeteiligung und -übergabe. ein
 
 * **Infrastruktur**
 
-   * Definieren Sie zuerst die Basisarchitektur:
+  * Definieren Sie zuerst die Basisarchitektur:
 
-      * Definieren Sie die Leistungsanforderungen.
-      * Definieren Sie Leistungsziele (d. h. Erwartungen klar definieren).
-      * Definieren Sie die Architektur von Hardware und Infrastruktur, einschließlich der Größenbestimmung.
-      * Definieren Sie die Bereitstellung
+    * Definieren Sie die Leistungsanforderungen.
+    * Definieren Sie Leistungsziele (d. h. Erwartungen klar definieren).
+    * Definieren Sie die Architektur von Hardware und Infrastruktur, einschließlich der Größenbestimmung.
+    * Definieren Sie die Bereitstellung
 
-   * Verwenden Sie mehrere Durchgänge. Bereiten Sie für den ersten Sprint und die erste Konfiguration Folgendes vor:
+  * Verwenden Sie mehrere Durchgänge. Bereiten Sie für den ersten Sprint und die erste Konfiguration Folgendes vor:
 
-      * Entwicklungsumgebung.
-      * Entwicklungsprozess.
-      * Testumgebung.
-      * Bereitstellungsprozess (einschließlich Konfigurationsverwaltung).
+    * Entwicklungsumgebung.
+    * Entwicklungsprozess.
+    * Testumgebung.
+    * Bereitstellungsprozess (einschließlich Konfigurationsverwaltung).
 
-   * Planen Sie mehrere Belastungstests.
-   * Planen Sie Tests und Optimierungen während des Sprints ein.
-   * Planen Sie eine Stabilisierungs- und Optimierungsphase.
-   * Stellen Sie das System so früh wie möglich in der Produktionsumgebung bereit (lassen Sie es vom Betriebs-Team einrichten, um Erfahrungen zu sammeln).
-   * Verwenden Sie so früh wie möglich benannte Benutzende und definierte Rollen.
-   * Planen Sie Schulungen (z. B. Admin-Schulungen).
-   * Planen Sie die Übergabe an den Betrieb.
+  * Planen Sie mehrere Belastungstests.
+  * Planen Sie Tests und Optimierungen während des Sprints ein.
+  * Planen Sie eine Stabilisierungs- und Optimierungsphase.
+  * Stellen Sie das System so früh wie möglich in der Produktionsumgebung bereit (lassen Sie es vom Betriebs-Team einrichten, um Erfahrungen zu sammeln).
+  * Verwenden Sie so früh wie möglich benannte Benutzende und definierte Rollen.
+  * Planen Sie Schulungen (z. B. Admin-Schulungen).
+  * Planen Sie die Übergabe an den Betrieb.
 
 * **Inhalt**
 
-   * Die Basisarchitektur:
-      * Steuert die Inhaltshierarchie.
-      * Hilft bei der Definition des Inhaltskonzepts.
-      * Definiert die Verwendung und das Layout von MSM.
-      * Definiert Rollen, Gruppen, Workflows und Berechtigungen.
-   * Überlegen Sie, ob eine Offline-Seitenerstellung sinnvoll ist.
-   * Planen Sie die frühzeitige Erstellung von ersten Seiten und Inhalten (zur Verwendung in Tests und Feedback).
-   * Planen Sie die Migration vorhandener Inhalte.
-   * Planen Sie „In-Sprint-Migration“ nach der Überarbeitung.
-   * Planen Sie „Inhalts-Burndown“ (Sitemap für Go-Live-Inhalte).
+  * Die Basisarchitektur:
+    * Steuert die Inhaltshierarchie.
+    * Hilft bei der Definition des Inhaltskonzepts.
+    * Definiert die Verwendung und das Layout von MSM.
+    * Definiert Rollen, Gruppen, Workflows und Berechtigungen.
+  * Überlegen Sie, ob eine Offline-Seitenerstellung sinnvoll ist.
+  * Planen Sie die frühzeitige Erstellung von ersten Seiten und Inhalten (zur Verwendung in Tests und Feedback).
+  * Planen Sie die Migration vorhandener Inhalte.
+  * Planen Sie „In-Sprint-Migration“ nach der Überarbeitung.
+  * Planen Sie „Inhalts-Burndown“ (Sitemap für Go-Live-Inhalte).
 
 ## Schätzung von Zeit und Aufwand {#estimating-time-and-effort}
 
