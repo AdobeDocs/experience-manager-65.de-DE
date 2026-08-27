@@ -9,10 +9,10 @@ exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Admin,Developer,Leader
-source-git-commit: 5158640898e2671a36daf04f54ac02703be020ca
+source-git-commit: c1f5f41ce7127c7f3e7193295d55c91b151d2146
 workflow-type: tm+mt
-source-wordcount: '3810'
-ht-degree: 98%
+source-wordcount: '3750'
+ht-degree: 100%
 
 ---
 
@@ -582,25 +582,3 @@ Adobe bietet weitere Best Practices für alle Phasen und Zielgruppen:
 * [Verwalten](/help/sites-administering/administer-best-practices.md)
 * [Entwickeln](/help/sites-developing/best-practices.md)
 * [Projekt-Management](/help/managing/best-practices.md)
-
-**Temporäre Formatierungstests - Bitte ignorieren**
-
-<!--
-| Something | Something | Something | Something | Something |
-|--- |--- |--- |--- |--- |
-| `env` | `Env` ("QA" | "DEV" | "DEV_443" | "STAGE" | "PROD") | No | | Deployment environment for the embedded dialog. If not provided, it is inferred from the hostname of the current page. |
--->
-
-| Etwas | Etwas | Etwas | Etwas | Etwas |
-|--- |--- |--- |--- |--- |
-| `env` | `Env` („QA“ \| „DEV“ \| „DEV_443“ \| „STAGE“ \| „PROD„) | Nein | | Bereitstellungsumgebung für das eingebettete Dialogfeld. Wird kein Hostname angegeben, wird er aus dem Hostnamen der aktuellen Seite abgeleitet. |
-
-<!--
-| Something | Something | Something | Something | Something |
-|--- |--- |--- |--- |--- |
-| `env` | `Env` ("QA" `|` "DEV" `|` "DEV_443" `|` "STAGE" `|` "PROD") | No | | Deployment environment for the embedded dialog. If not provided, it is inferred from the hostname of the current page. |
--->
-
-| Etwas | Etwas | Etwas | Etwas | Etwas |
-|--- |--- |--- |--- |--- |
-| `env` | `Env ("QA" \| "DEV" \| "DEV_443" \| "STAGE" \| "PROD")` | Nein | | Bereitstellungsumgebung für das eingebettete Dialogfeld. Wird kein Hostname angegeben, wird er aus dem Hostnamen der aktuellen Seite abgeleitet. |
