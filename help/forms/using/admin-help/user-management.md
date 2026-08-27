@@ -9,9 +9,9 @@ exl-id: 1da1f6de-ac0d-4e0d-b8bb-956420e42699
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '484'
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+workflow-type: tm+mt
+source-wordcount: '493'
 ht-degree: 100%
 
 ---
@@ -58,4 +58,4 @@ Benutzende mit bestimmten Arten von Administratorberechtigungen dürfen aus Sich
 
 >[!NOTE]
 >
->Der Flex-Workspace wird für die AEM Forms-Version nicht mehr unterstützt.
+>Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.

@@ -9,9 +9,9 @@ exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '2643'
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+workflow-type: tm+mt
+source-wordcount: '2665'
 ht-degree: 100%
 
 ---
@@ -48,7 +48,7 @@ Wenn Ihre Prozesse so entworfen und implementiert sind, dass sie keine E-Mails b
 
    >[!NOTE]
    >
-   >Wenn Sie Microsoft Exchange Server verwenden und die E-Mail-Adresse ungültig ist, kann der Microsoft Exchange-Server keine E-Mail an die Verteilerliste senden. Um dieses Problem zu beheben, aktivieren Sie die Option **Externe Kommunikation aktivieren** separat für jede Verteilerliste auf Microsoft Exchange Server. 
+   >Wenn Sie Microsoft Exchange Server verwenden und die E-Mail-Adresse ungültig ist, kann der Microsoft Exchange-Server keine E-Mail an die Verteilerliste senden. Um dieses Problem zu beheben, aktivieren Sie die Option **Externe Kommunikation aktivieren** separat für jede Verteilerliste auf Microsoft Exchange Server.
 
 1. Klicken Sie auf Speichern.
 
@@ -82,11 +82,11 @@ Folgende Benachrichtigungstypen können für Benutzende und Gruppen konfiguriert
 * Aufgabenzuweisungen
 * Termine
 
-Um E-Mail-Benachrichtigungen für eine Gruppe zu generieren, müssen Sie in der Benutzerverwaltung eine E-Mail-Adresse für die Gruppe angeben. <!--Fix broken link See Setting up and organizing users -->Wenn der Arbeitsablauf für Formulare eine E-Mail-Benachrichtigung an eine Gruppe sendet, geht die Benachrichtigung an jedes Mitglied der Gruppe, dessen E-Mail-Adresse angegeben ist. Wenn ein Mitglied der Gruppe eine E-Mail-Benachrichtigung erhält und die Aufgabe anfordern möchte, muss das Mitglied auf die in der E-Mail-Benachrichtigung enthaltene Anforderungsverknüpfung klicken, wodurch die Seite mit den Aufgabendetails in Workspace geöffnet wird. Dort kann das Mitglied das Arbeitselement entweder anfordern oder anfordern und öffnen.
+Um E-Mail-Benachrichtigungen für eine Gruppe zu generieren, müssen Sie in der Benutzerverwaltung eine E-Mail-Adresse für die Gruppe angeben. <!--Fix broken link See Setting up and organizing users -->Wenn der Workflow für Formulare eine E-Mail-Benachrichtigung an eine Gruppe sendet, geht die Benachrichtigung an jedes Mitglied der Gruppe, dessen E-Mail-Adresse angegeben ist. Wenn ein Mitglied der Gruppe eine E-Mail-Benachrichtigung erhält und die Aufgabe anfordern möchte, muss das Mitglied auf die in der E-Mail-Benachrichtigung enthaltene Anforderungsverknüpfung klicken, wodurch die Seite mit den Aufgabendetails in Workspace geöffnet wird. Dort kann das Mitglied das Arbeitselement entweder anfordern oder anfordern und öffnen.
 
 >[!NOTE]
 >
->Der Flex-Workspace wird für die AEM Forms-Version nicht mehr unterstützt.
+>Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
 
 ### Konfigurieren von Erinnerungen für Benutzende oder Gruppen {#configure-reminders-for-users-or-groups}
 
@@ -118,7 +118,7 @@ Sie können Benachrichtigungen über Aufgabenzuweisungen an Benutzende oder eine
 
 ### Konfigurieren von Terminbenachrichtigungen für Benutzende oder Gruppen {#configure-deadline-notifications-for-users-or-groups}
 
- Sie können Terminbenachrichtigungen an Benutzende und Gruppen senden, wenn der Termin für die Durchführung einer Aufgabe verstrichen ist. Eine Terminbenachrichtigung hat normalerweise reinen Informationscharakter, weil die Person die zugewiesene Aufgabe nicht mehr ausführen kann.
+Sie können Terminbenachrichtigungen an Benutzende und Gruppen senden, wenn der Termin für die Durchführung einer Aufgabe verstrichen ist. Eine Terminbenachrichtigung hat normalerweise reinen Informationscharakter, weil die Person die zugewiesene Aufgabe nicht mehr ausführen kann.
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Forms Workflow“ > „Servereinstellungen“ > „Aufgabenbenachrichtigungen“.
 1. Klicken Sie unter „Benachrichtigungstyp“ für Benutzende auf „Termin“ bzw. für Gruppen auf „Gruppe – Termin“.

@@ -7,10 +7,10 @@ exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1739'
-ht-degree: 100%
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+workflow-type: tm+mt
+source-wordcount: '1771'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,8 @@ Benutzer- und Gruppeninformationen werden in einem Speichersystem von Drittanbie
 
 Wenn Sie Benutzer bzw. Benutzerinnen erstellen, können Sie diese zu Gruppen hinzufügen und ihnen Rollen zuweisen.
 
-1. Klicken Sie in Administration-Console auf **[!UICONTROL Einstellungen > User Management > „Benutzer und Gruppen]** und dann auf **[!UICONTROL Neuer Benutzer]**.
+1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > Benutzerverwaltung > Benutzer und]** und anschließend auf **[!UICONTROL Neuer Benutzer]**.
+.
 1. Geben Sie unter **[!UICONTROL Allgemeine Einstellungen]** die angeforderten Informationen ein und klicken Sie auf **[!UICONTROL Weiter]**. Informationen zu diesen Einstellungen finden Sie unter [Benutzereinstellungen](adding-configuring-users.md#user-settings).
 1. (Optional) Um den Benutzer einer Gruppe hinzuzufügen, klicken Sie auf **[!UICONTROL Gruppen suchen]** und führen folgende Aufgaben durch:
 
@@ -75,9 +76,9 @@ Vermeiden Sie den Unterstrich (_) in kanonischen Namen z. B. `sample_user`. Wen
 
 **Geschäftskalenderschlüssel**: Ermöglicht das Zuordnen eines Geschäftskalenders zu einem Benutzer auf Grundlage des Wertes dieser Einstellung. Geschäftskalender definieren Geschäftstage und geschäftsfreie Tage. AEM-Formulare können bei der Berechnung künftiger Daten und Zeiten für Ereignisse wie Erinnerungen, Fristen und Eskalationen Geschäftskalender verwenden. Die Methode zum Zuweisen von Geschäftskalenderschlüsseln zu Benutzern ist davon abhängig, ob eine Unternehmens-, eine lokale oder eine Hybrid-Domain verwendet wird. (Siehe [Hinzufügen von Domains](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
 
-Wenn Sie eine lokale oder Hybrid-Domain verwenden, werden Informationen zu Benutzern nur in der User Management-Datenbank gespeichert. Legen Sie für diese Benutzer bzw. Benutzerinnen den Geschäftskalenderschlüssel auf eine Zeichenfolge fest. Ordnen Sie dann den Geschäftskalenderschlüssel (die Zeichenfolge) einem Geschäftskalender im Arbeitsablauf für Formulare zu.
+Wenn Sie eine lokale oder Hybrid-Domain verwenden, werden Informationen zu Benutzern nur in der User Management-Datenbank gespeichert. Legen Sie für diese Benutzer bzw. Benutzerinnen den Geschäftskalenderschlüssel auf eine Zeichenfolge fest. Ordnen Sie dann den Geschäftskalenderschlüssel (die Zeichenfolge) einem Geschäftskalender im Workflow für Formulare zu.
 
-Wenn Sie eine Unternehmens-Domain verwenden, befinden sich Informationen zu Benutzern in einem Speichersystem von Drittanbietern (z. B. einem LDAP-Ordner). User Management synchronisiert Benutzerinformationen aus dem Verzeichnis mit der User Management-Datenbank. Mit dieser Funktion können Sie einen Geschäftskalenderschlüssel einem Feld im LDAP-Verzeichnis zuordnen. Angenommen, jeder Benutzerdatensatz in Ihrem Verzeichnis enthält das Feld „Land“, und Sie möchten Geschäftskalender auf Grundlage des Landes zuweisen, in dem sich die Benutzerin bzw. der Benutzer befindet. In diesem Fall geben Sie den Feldnamen „Land“ als Wert für die Einstellung „Geschäftskalenderschlüssel“ an. Anschließend können Sie die Geschäftskalenderschlüssel (die für das Feld „Land“ im LDAP-Verzeichnis definierten Werte) Geschäftskalendern im Arbeitsablauf für Formulare zuordnen.
+Wenn Sie eine Unternehmens-Domain verwenden, befinden sich Informationen zu Benutzern in einem Speichersystem von Drittanbietern (z. B. einem LDAP-Ordner). User Management synchronisiert Benutzerinformationen aus dem Verzeichnis mit der User Management-Datenbank. Mit dieser Funktion können Sie einen Geschäftskalenderschlüssel einem Feld im LDAP-Verzeichnis zuordnen. Angenommen, jeder Benutzereintrag in Ihrem Verzeichnis enthält das Feld „Land“, und Sie möchten Geschäftskalender auf Grundlage des Landes zuweisen, in dem sich die Benutzerin bzw. der Benutzer befindet. In diesem Fall geben Sie den Feldnamen „Land“ als Wert für die Einstellung „Geschäftskalenderschlüssel“ an. Anschließend können Sie die Geschäftskalenderschlüssel (die für das Feld „Land“ im LDAP-Verzeichnis definierten Werte) Geschäftskalendern im Workflow für Formulare zuordnen.
 
 Weitere Informationen zu Geschäftskalendern, einschließlich der Zuordnung von Geschäftskalenderschlüsseln zu Geschäftskalendern, finden Sie unter [Konfigurieren von Geschäftskalendern](/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars).
 
@@ -128,7 +129,7 @@ Vermeiden Sie das Erstellen von Benutzernamen, die mit einem Nummernzeichen (#) 
 
 1. Klicken Sie auf den zu bearbeitenden Benutzer.
 1. Bearbeiten Sie bei einem Benutzer, der zu einer lokalen oder Hybrid-Domain gehört, auf der Registerkarte **[!UICONTROL Details]** die Angaben unter **[!UICONTROL Allgemeine Einstellungen]** und **[!UICONTROL Anmeldeeinstellungen]** und klicken Sie auf **[!UICONTROL Speichern]**. Informationen zu diesen Einstellungen finden Sie unter [Benutzereinstellungen](adding-configuring-users.md#user-settings). Die allgemeinen und Anmeldeeinstellungen von Benutzern, die zu einer Unternehmens-Domain gehören, können nicht bearbeitet werden.
-1. Um die Gruppeneinstellungen des Benutzers zu bearbeiten, klicken Sie auf die Registerkarte **[!UICONTROL Gruppenmitgliedschaft]** und führen Sie die folgenden Aufgaben aus:
+1. Um die Gruppeneinstellungen des Benutzers zu bearbeiten, klicken Sie auf die Registerkarte **[!UICONTROL Gruppenzugehörigkeit]** und führen Sie die folgenden Aufgaben aus:
 
    * Klicken Sie auf **[!UICONTROL Gruppen suchen]** und füllen Sie die Suchinformationen aus.
    * Um den Benutzer einer neuen Gruppe hinzuzufügen, aktivieren Sie das Kontrollkästchen der Gruppe, klicken auf **[!UICONTROL OK]** und anschließend auf **[!UICONTROL Speichern]**.
@@ -168,7 +169,7 @@ Wenn eine Benutzerin oder ein Benutzer ohne die erforderlichen Berechtigungen f�
 * Lösung „Correspondence Management“
 * AEM Forms Workspace
 
-  ***Hinweis **: Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.*
+  ***Hinweis **: Die Flex Workspace wird für die AEM Forms-Version nicht mehr unterstützt.*
 
 * Forms Manager
 * Prozessberichterstellung
