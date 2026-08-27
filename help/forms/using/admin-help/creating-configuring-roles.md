@@ -78,7 +78,7 @@ Je nach installierten AEM Forms-Komponenten können die folgenden zusätzlichen 
 
 **AEM Forms-Workspace-Administrator**: Kann Einstellungen auf der Workspace-Seite in der Administration-Console anzeigen und ändern
 
-***Hinweis **: Die Flex Workspace wird für die AEM Forms-Version nicht mehr unterstützt.*
+***Hinweis &#x200B;**: Die Flex Workspace wird für die AEM Forms-Version nicht mehr unterstützt.*
 
 **Workspace-Benutzer**: Kann sich beim Workspace-Programm für Endbenutzer anmelden
 
