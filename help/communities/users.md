@@ -11,7 +11,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1922'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Weitere Informationen finden Sie unter [Obergrenze für Mitgliederbeiträge](lim
 
 ### Dynamisch erstellte Benutzergruppen {#dynamically-created-user-groups}
 
-Wenn eine neue Community-Site erstellt wird, werden neue Benutzergruppen dynamisch mit eindeutigen IDs (UID) und Berechtigungen erstellt, die für verschiedene Verwaltungsfunktionen geeignet sind, die zur Verwaltung der Community-Site entweder in der Autorenumgebung (siehe [Autorengruppen-Rollen](#author-group-roles)) oder der Veröffentlichungsumgebung (siehe [Publish-](#publish-group-roles)) erforderlich sind.
+Wenn eine neue Community-Site erstellt wird, werden neue Benutzergruppen dynamisch mit eindeutigen IDs (UID) und Berechtigungen erstellt, die für verschiedene Verwaltungsfunktionen geeignet sind, die zur Verwaltung der Community-Site entweder in der Autorenumgebung (siehe [Autorengruppen-Rollen](#author-group-roles)) oder der Veröffentlichungsumgebung (siehe [Veröffentlichen von Gruppenrollen](#publish-group-roles)) erforderlich sind.
 
 Die Namen der Gruppen werden aus dem Namen generiert, der der Site bei der Erstellung [&#x200B; Community-Site &#x200B;](sites-console.md#step13asitetemplate) wurde. Die eindeutigen IDs vermeiden Namenskonflikte für ähnlich benannte Community-Sites und Community-Gruppen auf demselben Server.
 
@@ -74,7 +74,7 @@ Um in der Autorenumgebung registrierte Benutzer und Benutzergruppen zu verwalten
 |---|---|
 | Admins | Die Administratorgruppe besteht aus Systemadministratoren, die über alle Funktionen eines Community-Administrators verfügen und in der Lage sind, die Community-Administratorgruppe zu verwalten. |
 | Community-Administratoren | Die Community-Administratorgruppe wird automatisch Mitglied aller Community-Sites und Community-Gruppen, die auf der Site erstellt werden. Ein erstes Mitglied der Community-Administratorgruppe ist die Administratorgruppe. In der Autorenumgebung können Community-Administratoren Community-Sites erstellen, Sites verwalten, Mitglieder verwalten (sie können Mitglieder aus der Community ausschließen) und Inhalte moderieren. |
-| Community &lt;*Site-Name*> SiteContentManager | Der Content Manager der Community-Site kann herkömmliches AEM-Authoring, Inhaltserstellung und Ändern von Seiten für eine Community-Site durchführen. |
+| Community &lt;*Site-Name*> SiteContentManager | Der Content Manager der Community-Site kann das herkömmliche AEM-Authoring, die Inhaltserstellung und das Ändern von Seiten für eine Community-Site durchführen. |
 | Keine | Ein anonymer Site-Besucher kann nicht auf die Autorenumgebung zugreifen. |
 
 ### Systemadministrierende {#system-administrators}
@@ -94,18 +94,18 @@ Befolgen Sie unbedingt die [Sicherheitscheckliste](../../help/sites-administerin
 In der Veröffentlichungsumgebung kann ein Site[Besucher je nach den &#x200B;](sites-console.md#user-management) der Community-Site Community-Mitglied werden:
 
 * Wenn die Community-Site privat (geschlossen) ist:
-   * Auf Einladung
-   * Durch Aktionen eines Administrators
+  * Auf Einladung
+  * Durch Aktionen eines Administrators
 
 * Wenn die Community-Website öffentlich ist (offen):
-   * Durch Selbstregistrierung
-   * Anmeldung über Social Media mit Facebook und Twitter
+  * Durch Selbstregistrierung
+  * Über Social Login mit Facebook und Twitter
 
 >[!NOTE]
 >
 >Wenn sich ein Site-Besucher als Mitglied einer Open-Community-Site registriert, wird er automatisch Mitglied anderer Open-Community-Sites in derselben Veröffentlichungsumgebung.
 
-### Publish-Gruppenrollen {#publish-group-roles}
+### Veröffentlichen von Gruppenrollen {#publish-group-roles}
 
 | Wenn Mitglied der Gruppe… | Primäre Rolle |
 |---|---|
@@ -116,7 +116,7 @@ In der Veröffentlichungsumgebung kann ein Site[Besucher je nach den &#x200B;](s
 | *Sicherheitsgruppe privilegierter Mitglieder* | Eine manuell erstellte und gepflegte Benutzergruppe zum Zweck der Einschränkung der Inhaltserstellung. Siehe [Gruppe privilegierter Mitglieder](#privileged-members-group). |
 | Keine | Ein anonymer Site-Besucher, der die Site entdeckt, kann Community-Sites, die den anonymen Zugriff erlauben, anzeigen und durchsuchen. Um teilzunehmen und Inhalte zu posten, muss sich der Benutzer selbst registrieren (sofern erlaubt) und Community-Mitglied werden. |
 
-### Zuweisen von Mitgliedern zu Publish-Gruppenrollen {#assigning-members-to-publish-group-roles}
+### Zuweisen von Mitgliedern zu Veröffentlichungsgruppen-Rollen {#assigning-members-to-publish-group-roles}
 
 Beim [Erstellen einer Community](sites-console.md)Site in der Autorenumgebung oder beim [Ändern von Site-Eigenschaften können &#x200B;](sites-console.md#modifying-site-properties) Mitgliedern verschiedene Rollen zugewiesen werden, die in der Veröffentlichungsumgebung ausgeführt werden, z. B. Moderatoren, Gruppenadministratoren, Ressourcenkontakte oder privilegierte Mitglieder.
 
@@ -198,7 +198,7 @@ Führen Sie dieselben Schritte aus wie das Erstellen und Zuweisen eines Benutzer
 
 ### LDAP-Integration {#ldap-integration}
 
-AEM unterstützt die Verwendung von LDAP für die Authentifizierung von Benutzern und die Erstellung von Benutzerkonten. Dies wird unter &quot;[&#x200B; von LDAP mit AEM 6“ &#x200B;](../../help/sites-administering/ldap-config.md).
+AEM unterstützt die Verwendung von LDAP für die Authentifizierung von Benutzern und die Erstellung von Benutzerkonten. Weitere Informationen finden Sie unter [&#x200B; von LDAP mit AEM 6 &#x200B;](../../help/sites-administering/ldap-config.md).
 
 Im Folgenden finden Sie einige Konfigurationsdetails, die speziell für Community-Mitglieder und Mitgliedergruppen gelten.
 
@@ -211,9 +211,9 @@ Im Folgenden finden Sie einige Konfigurationsdetails, die speziell für Communit
 
    * Legen Sie die folgenden Eigenschaften fest:
 
-      * **[!UICONTROL Automatische Benutzermitgliedschaft]**: `community-<site name>-<uid>-members`
-      * **[!UICONTROL Benutzerpfad-Präfix]**: `/community`
-      * **[!UICONTROL Gruppenpfadpräfix]**: `/community`
+     * **[!UICONTROL Automatische Benutzermitgliedschaft]**: `community-<site name>-<uid>-members`
+     * **[!UICONTROL Benutzerpfad-Präfix]**: `/community`
+     * **[!UICONTROL Gruppenpfadpräfix]**: `/community`
 
 4. [Das externe Anmeldemodul](../../help/sites-administering/ldap-config.md#the-external-login-module)
 
