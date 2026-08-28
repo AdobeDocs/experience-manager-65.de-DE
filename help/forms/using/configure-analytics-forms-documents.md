@@ -9,14 +9,20 @@ exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: f6f6552b10cbc84d9e39e46905c2fa68201d4d96
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 100%
+source-wordcount: '1611'
+ht-degree: 95%
 
 ---
 
 # Analytics mit dem Cloud Service-Framework {#analyticsusingcloudframework}
+
+>[!CAUTION]
+>
+>Das Analytics-Dashboard für AEM Forms wird nicht mehr unterstützt. Sie können keine Analyseberichte mehr in AEM Forms anzeigen. Um Ihre Forms-Analysedaten anzuzeigen, verwenden Sie die Adobe Analytics-Benutzeroberfläche.
+>
+>Außerdem hat die [Adobe Analytics 1.4-API das Ende der Lebensdauer erreicht](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). Daher werden Adobe Analytics-Konfigurationen, die Benutzeranmeldeinformationen (Benutzername und Kennwort) verwenden, nicht mehr unterstützt.
 
 AEM Forms ermöglicht die Integration mit Analytics, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden.
 
@@ -48,7 +54,7 @@ Sie können Adobe Analytics anpassen und Parameter hinzufügen/entfernen. Neben 
 
 Analysedaten werden in kundenspezifischen Repositorys gespeichert, die als Report Suites bezeichnet werden. Um eine Report Suite zu erstellen und Adobe Analytics zu verwenden, benötigen Sie ein gültiges Adobe Marketing Cloud-Konto. Stellen Sie vor den nachfolgenden Schritten sicher, dass Sie über ein gültiges Adobe Marketing Cloud-Konto verfügen.
 
-Führen Sie die folgenden Schritte aus, um eine Report Suite zu erstellen: 
+Führen Sie die folgenden Schritte aus, um eine Report Suite zu erstellen:
 
 1. Melden Sie sich bei [https://sc.omniture.com/login/](https://sc.omniture.com/login/) an.
 1. Wählen Sie in Marketing Cloud **Admin** > **Admin Console** > **Report Suites**.
@@ -110,7 +116,7 @@ Führen Sie die folgenden Schritte aus, um eine Report Suite zu erstellen: 
 
 Bei einer Cloud-Service-Konfiguration handelt es sich um Informationen zu Ihrem Adobe Analytics-Konto. Anhand der Konfiguration kann Adobe Experience Manager (AEM) eine Verbindung zu Adobe Analytics herstellen. Erstellen Sie für jedes verwendete Analytics-Konto eine separate Konfiguration.
 
-1. Melden Sie sich bei Ihrer AEM Authoring-Instanz als Admin an.
+1. Melden Sie sich bei Ihrer AEM Autoreninstanz als Admin an.
 1. Klicken Sie in der oberen linken Ecke auf **Adobe Experience Manager** > **Tools** ![Hammersymbol](/help/forms/using/assets/tools.png) > **Cloud Services** > **Legacy Cloud Services**.
 1. Suchen Sie das Symbol **Adobe Analytics**. Klicken Sie auf **Konfigurationen anzeigen** und anschließend auf **[+]**, um eine neue Konfiguration hinzuzufügen.
 
@@ -163,15 +169,15 @@ Bei einem Adobe Analytics-Framework handelt es sich um eine Reihe von Zuordnunge
 1. Legen Sie die entsprechenden Werte für die folgenden Felder fest und klicken Sie auf **Speichern**.
 
    * **SiteCatalyst-Framework**: Wählen Sie das Framework/die Konfiguration aus, das bzw. die Sie im Abschnitt „Einrichten eines Frameworks für die Verfolgung“ definiert haben.
-   * **Verfolgungsgrundlinie der Feldzeit**: Legen Sie die Dauer in Sekunden fest, nach dem der Feldaufruf nachverfolgt werden muss. Der Standardwert ist 0. Wenn der Wert größer als 0 (Null) ist, werden zwei separate Tracking-Ereignisse an den Adobe Analytics-Server gesendet. Das erste Ereignis weist den Analytics-Server an, das Tracking des ausgehenden Felds zu beenden. Das zweite Ereignis wird nach Ablauf der angegebenen Dauer gesendet. Das zweite Ereignis weist den Analytics-Server an, das Tracking des besuchten Felds zu starten. Durch die Verwendung zweier separater Ereignisse können Sie präzise messen, wie lange das Feld verwendet wurde. Wenn der Wert 0 (Null) ist, wird ein einzelnes Verfolgungsereignis an den Adobe Analytics-Server gesendet.
+   * **Verfolgungsgrundlinie der Feldzeit**: Legen Sie die Dauer in Sekunden fest, nach dem der Feldaufruf nachverfolgt werden muss. Der Standardwert ist 0. Wenn der Wert größer als 0 (Null) ist, werden zwei separate Tracking-Ereignisse an den Adobe Analytics-Server gesendet. Das erste Ereignis weist den Analytics-Server an, das Tracking des ausgehenden Felds zu stoppen. Das zweite Ereignis wird nach Ablauf der angegebenen Dauer gesendet. Das zweite Ereignis weist den Analytics-Server an, das Tracking des besuchten Felds zu starten. Durch die Verwendung zweier separater Ereignisse können Sie präzise messen, wie lange das Feld verwendet wurde. Wenn der Wert 0 (Null) ist, wird ein einzelnes Verfolgungsereignis an den Adobe Analytics-Server gesendet.
 
    * **Synchronisierungs-Cron für Analytics-Berichte**: Geben Sie einen Cron-Ausdruck zum Abrufen von Berichten aus Adobe Analytics an. Der Standardwert ist 0 0 2 ? &#42; &#42;.
 
-   * **Zeitlimit für Berichtsabruf:** Geben Sie die Dauer in Sekunden an, die auf den Server für den Abruf des Analyseberichts gewartet werden soll. Der Standardwert ist 120 Sekunden.
+   * **Timeout für Berichtsabruf:** Geben Sie die Dauer in Sekunden an, die auf den Server für den Abruf des Analyseberichts gewartet werden soll. Der Standardwert ist 120 Sekunden.
 
    >[!NOTE]
    >
-   >Die maximale Wartezeit bis zum Abruf eines Berichts kann die angegebene Anzahl von Sekunden um bis zu 10 Sekunden überschreiten.
+   >Der Timeout bis zum Abruf eines Berichts kann die angegebene Anzahl von Sekunden um bis zu 10 Sekunden überschreiten.
 
 1. Wiederholen Sie die Schritte 1-3 in der Veröffentlichungsinstanz, um Analysen zu konfigurieren.
 
