@@ -155,7 +155,7 @@ Die Kopfzeile befindet sich immer am oberen Rand des Bildschirms. Die meisten Op
 
   Sie können auch den [Tastaturbefehl](/help/sites-authoring/keyboard-shortcuts.md) `/` (Schrägstrich) verwenden, um von jeder beliebigen Konsole aus die Suche zu starten.
 
-* [Lösungen](https://business.adobe.com/)
+* [Lösungen](https://business.adobe.com/de/)
 
   ![Lösungen](do-not-localize/screen_shot_2018-03-23at103552.png)
 
