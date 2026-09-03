@@ -10,10 +10,10 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: 8cb06cb2240f4ba460493dda1615cb64006d4646
+source-git-commit: 174d9e7466002e209422fefdc32a363a98dc99f9
 workflow-type: tm+mt
-source-wordcount: '3016'
-ht-degree: 94%
+source-wordcount: '3122'
+ht-degree: 91%
 
 ---
 
@@ -253,11 +253,11 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
   Über die **Tools**-Konsole können Sie auch auf die externen **Ressourcen** zugreifen:
 
-   * **Dokumentation**
-Dokumentation zu Web Experience Management anzeigen
+  * **Dokumentation**
+    Dokumentation zu Web Experience Management anzeigen
 
-   * **Entwicklungsressourcen**
-Ressourcen und Downloads für Entwickler
+  * **Entwicklungsressourcen**
+    Ressourcen und Downloads für Entwickler
 
   >[!NOTE]
   >
@@ -404,33 +404,34 @@ In allen Ansichten kann die Auswahl aller Elemente aufgehoben werden, indem Sie 
 
 Die Spaltenansicht ermöglicht eine visuelle Navigation eines Inhaltsbaums durch eine Reihe kaskadierender Spalten. Mit dieser Ansicht können Sie die Baumstruktur Ihrer Website visualisieren und durchlaufen.
 
-Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeordneten Ressourcen in einer Spalte rechts angezeigt. Wenn Sie eine Ressource in der rechten Spalte auswählen, werden die ihr untergeordneten Ressourcen in einer anderen Spalte rechts davon angezeigt usw.
+Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeordneten Ressourcen in einer Spalte rechts angezeigt. Wenn Sie eine Ressource in der rechten Spalte auswählen, werden die untergeordneten Ressourcen in einer anderen Spalte rechts angezeigt usw.
 
 * Sie können in der Struktur nach oben und unten navigieren, indem Sie auf den Ressourcennamen oder den Pfeil rechts vom Ressourcennamen tippen oder klicken.
 
-   * Beim Tippen bzw. Klicken werden der Ressourcenname und der Pfeil hervorgehoben.
+  * Beim Tippen bzw. Klicken werden der Ressourcenname und der Pfeil hervorgehoben.
 
-     ![Spaltenansicht](assets/bh-17.png)
+    ![Spaltenansicht](assets/bh-17.png)
 
-   * Die untergeordneten Elemente der angeklickten/angetippten Ressource werden in der Spalte rechts neben der angeklickten/angetippten Ressource angezeigt.
-   * Wenn Sie einen Ressourcennamen auswählen, der keine untergeordneten Elemente besitzt, werden die Ressourcendetails in der letzten Spalte angezeigt.
+  * Die untergeordneten Elemente der angeklickten/angetippten Ressource werden in der Spalte rechts neben der angeklickten/angetippten Ressource angezeigt.
+  * Wenn Sie einen Ressourcennamen auswählen, der keine untergeordneten Elemente besitzt, werden die Ressourcendetails in der letzten Spalte angezeigt.
 
 * Durch Tippen oder Klicken auf die Miniaturansicht wird die Ressource ausgewählt.
 
-   * Wenn diese Option ausgewählt ist, wird ein Häkchen auf der Miniaturansicht angezeigt und der Ressourcenname wird hervorgehoben.
-   * Die Details der ausgewählten Ressource werden in der letzten Spalte angezeigt.
-   * Die Aktionssymbolleiste wird verfügbar.
+  * Wenn diese Option ausgewählt ist, wird ein Häkchen auf der Miniaturansicht angezeigt und der Ressourcenname wird hervorgehoben.
+  * Die Details der ausgewählten Ressource werden in der letzten Spalte angezeigt.
+  * Die Aktionssymbolleiste wird verfügbar.
 
-     ![Spaltenansicht](assets/bh-18.png)
+    ![Spaltenansicht](assets/bh-18.png)
 
   Wenn eine Seite in der Spaltenansicht ausgewählt wird, wird die ausgewählte Seite in der letzten Spalte zusammen mit den folgenden Details angezeigt:
 
-   * Seitentitel
-   * Seitenname (Teil der URL der Seite)
-   * Vorlage, auf der die Seite basiert
-   * Änderungsdetails
-   * Sprache der Seite
-   * Veröffentlichungsdetails
+  * Seitentitel
+  * Seitenname (Teil der URL der Seite)
+  * Vorlage, auf der die Seite basiert
+  * Änderungsdetails
+  * Sprache der Seite
+  * Veröffentlichungsdetails
+  * [Einschaltzeit/Ausschaltzeit der Seite](/help/sites-authoring/editing-page-properties.md#on-off-time) (falls festgelegt)
 
 ### Kartenansicht {#card-view}
 
@@ -438,13 +439,13 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
 * In der Kartenansicht werden Informationskarten für jedes Element auf der aktuellen Ebene angezeigt. Diese enthalten Informationen wie:
 
-   * eine visuelle Darstellung des Seiteninhalts
-   * den Seitentitel
-   * wichtige Daten (z. B. zuletzt bearbeitet, zuletzt veröffentlicht)
-   * Wenn die Seite gesperrt, ausgeblendet oder Teil einer Live Copy ist.
-   * wann Sie im Zuge eines Workflows eine Aktion ausführen müssen, falls zutreffend.
+  * eine visuelle Darstellung des Seiteninhalts
+  * den Seitentitel
+  * wichtige Daten (z. B. zuletzt bearbeitet, zuletzt veröffentlicht)
+  * Wenn die Seite gesperrt, ausgeblendet oder Teil einer Live Copy ist.
+  * wann Sie im Zuge eines Workflows eine Aktion ausführen müssen, falls zutreffend.
 
-      * Markierungen, die die erforderlichen Aktionen angeben, können mit Einträgen in Ihrem [Posteingang](/help/sites-authoring/inbox.md) in Verbindung gebracht werden.
+    * Markierungen, die die erforderlichen Aktionen angeben, können mit Einträgen in Ihrem [Posteingang](/help/sites-authoring/inbox.md) in Verbindung gebracht werden.
 
 * [Schnellaktionen](#quick-actions) sind ebenfalls in dieser Ansicht verfügbar, z. B. Auswahl und allgemeine Aktionen wie Bearbeiten.
 
@@ -463,26 +464,31 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
   ![Listenansicht – Alle auswählen](assets/bh-20.png)
 
-   * Wenn alle Elemente in der Liste ausgewählt sind, wird dieses Kontrollkästchen aktiviert.
+  * Wenn alle Elemente in der Liste ausgewählt sind, wird dieses Kontrollkästchen aktiviert.
 
-      * Um die Auswahl für alle aufzuheben, klicken Sie auf das Kontrollkästchen.
+    * Um die Auswahl für alle aufzuheben, klicken Sie auf das Kontrollkästchen.
 
-   * Wenn nur einige Elemente ausgewählt sind, wird es mit einem Minuszeichen angezeigt.
+  * Wenn nur einige Elemente ausgewählt sind, wird es mit einem Minuszeichen angezeigt.
 
-      * Um alle auszuwählen, klicken Sie auf das Kontrollkästchen.
-      * Um die Auswahl für alle aufzuheben, klicken Sie erneut auf das Kontrollkästchen.
+    * Um alle auszuwählen, klicken Sie auf das Kontrollkästchen.
+    * Um die Auswahl für alle aufzuheben, klicken Sie erneut auf das Kontrollkästchen.
 
 * Wählen Sie mit der Option **Anzeigeeinstellungen** unter der Schaltfläche „Ansichten“ die Spalten aus, die angezeigt werden sollen. Die folgenden Spalten stehen zur Anzeige zur Verfügung:
 
-   * **Name** – Seitenname, der in einer mehrsprachigen Authoring-Umgebung nützlich sein kann, da er Teil der URL der Seite ist und sich unabhängig von der Sprache nicht ändert
-   * **Geändert** – Datum und Person der letzten Änderung
-   * **Veröffentlicht** – Veröffentlichungsstatus
-   * **Vorlage** – Vorlage, auf der die Seite basiert
-   * **Workflow** – Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darüber bewegen oder die Timeline öffnen.
+  * **Name** – Seitenname, der in einer mehrsprachigen Authoring-Umgebung nützlich sein kann, da er Teil der URL der Seite ist und sich unabhängig von der Sprache nicht ändert
+  * **Geändert** – Datum und Person der letzten Änderung
+    * Der Spalteneintrag wird mit einem Warnsymbol gekennzeichnet, wenn die Seite seit der letzten Veröffentlichung aktualisiert wurde.
+    * ![Geändert seit der letzten Veröffentlichung](assets/modified.png)
+  * **Veröffentlicht** – Veröffentlichungsstatus
+    * Der Spalteneintrag wird mit einem Uhrensymbol gekennzeichnet, wenn die Seite [Einschaltzeiten/Ausschaltzeiten](/help/sites-authoring/editing-page-properties.md#on-time) eingestellt hat.
+    * Bewegen Sie den Mauszeiger über das Symbol, um Details anzuzeigen.
+    * ![Einschaltzeit eingestellt](assets/on-off-time.png)
+  * **Vorlage** – Vorlage, auf der die Seite basiert
+  * **Workflow** – Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darüber bewegen oder die Timeline öffnen.
 
-   * **Seiten-Analytik**
-   * **Unique Visitors**
-   * **Zeit auf Seite**
+  * **Seiten-Analytik**
+  * **Unique Visitors**
+  * **Zeit auf Seite**
 
   ![Anzeigeeinstellungen – Spalten konfigurieren](assets/bh-21.png)
 
@@ -542,25 +548,27 @@ In der Timeline-Spalte haben Sie folgende Möglichkeiten:
 
 * [Anzeigen verschiedener Ereignisse im Zusammenhang mit einem ausgewählten Element](#timelineviewevents)
 
-   * Sie können die Ereignistypen in der Dropdown-Liste auswählen:
+  * Sie können die Ereignistypen in der Dropdown-Liste auswählen:
 
-      * [Kommentare](#timelineaddingandviewingcomments)
-      * Anmerkungen
-      * Aktivitäten
-      * [Launches](/help/sites-authoring/launches.md)
-      * [Versionen](/help/sites-authoring/working-with-page-versions.md)
-      * [Workflows](/help/sites-authoring/workflows-applying.md)
+    * [Kommentare](#timelineaddingandviewingcomments)
+    * Anmerkungen
+    * Aktivitäten einschließlich Bearbeiten und Veröffentlichen
+      * Wenn auf der Seite [Ein-/Ausschaltzeiten](/help/sites-authoring/editing-page-properties.md#on-off-time) eingestellt sind und die aktuelle Zeit außerhalb des Ein-/Ausschaltzeitfensters liegt, kann eine ungültige Seitenaktivität angezeigt werden.
+      * Dies bedeutet nur, dass die Seite außerhalb des Gültigkeitsfensters liegt, nicht unbedingt, dass die Veröffentlichung der Seite aufgehoben wird.
+    * [Launches](/help/sites-authoring/launches.md)
+    * [Versionen](/help/sites-authoring/working-with-page-versions.md)
+    * [Workflows](/help/sites-authoring/workflows-applying.md)
 
-         * mit Ausnahme von [Übergangs-Workflows](/help/sites-developing/workflows.md#transient-workflows), da keine Verlaufsinformationen für diese gespeichert werden
+      * mit Ausnahme von [Übergangs-Workflows](/help/sites-developing/workflows.md#transient-workflows), da keine Verlaufsinformationen für diese gespeichert werden
 
-      * Alle anzeigen
+    * Alle anzeigen
 
 * [Hinzufügen/Anzeigen von Kommentaren zum gewählten Element &#x200B;](#timelineaddingandviewingcomments) Das Feld **Kommentare** wird unten in der Ereignisliste angezeigt. Wenn Sie einen Kommentar gefolgt von der Eingabetaste eingeben, wird der Kommentar registriert. Er wird angezeigt, wenn **Kommentare** oder **Alle anzeigen** ausgewählt ist.
 
 * Bestimmte Konsolen verfügen über zusätzliche Funktionen. In der Sites-Konsole können Sie beispielsweise Folgendes tun:
 
-   * [eine Version speichern](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
-   * [einen Workflow starten](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
+  * [eine Version speichern](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
+  * [einen Workflow starten](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
 
 Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
@@ -576,8 +584,8 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 * [Sprachkopien](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Inhaltsverweise:
 
-   * Direkte Links von anderen Seiten zur ausgewählten Seite
-   * Inhalte, die die Verweiskomponente von der ausgewählte Seite geliehen oder an sie verliehen hat, oder beides
+  * Direkte Links von anderen Seiten zur ausgewählten Seite
+  * Inhalte, die die Verweiskomponente von der ausgewählte Seite geliehen oder an sie verliehen hat, oder beides
 
 ![bh-28](assets/bh-28.png)
 

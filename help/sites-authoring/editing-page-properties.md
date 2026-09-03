@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 mini-toc-levels: 2
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 174d9e7466002e209422fefdc32a363a98dc99f9
 workflow-type: tm+mt
-source-wordcount: '2477'
-ht-degree: 100%
+source-wordcount: '2559'
+ht-degree: 97%
 
 ---
 
@@ -26,17 +26,17 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 #### Titel und Tags {#tile}
 
-* **Titel** – Der Titel der Seite wird an verschiedenen Stellen angezeigt. 
-   * Zum Beispiel in der Liste auf der Registerkarte **Websites** und in den Karten-/Listenansichten **Sites**.
-   * Dies ist ein Pflichtfeld.
+* **Titel** – Der Titel der Seite wird an verschiedenen Stellen angezeigt.
+  * Zum Beispiel in der Liste auf der Registerkarte **Websites** und in den Karten-/Listenansichten **Sites**.
+  * Dies ist ein Pflichtfeld.
 * **Tags** – Hier können Sie der Seite Tags hinzufügen oder Tags aus der Seite entfernen, indem Sie die Liste im Auswahlfeld aktualisieren.
-   * Nachdem Sie ein Tag ausgewählt haben, wird es unterhalb des Auswahlfelds aufgelistet. Sie können ein Tag mit dem „x“ aus dieser Liste entfernen.
-   * Sie können ein neues Tag eingeben, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
-      * Das neue Tag wird erstellt, wenn Sie die Eingabetaste drücken.
-      * Das neue Tag wird mit einem kleinen Stern auf der rechten Seite angezeigt, was bedeutet, dass es sich um ein neues Tag handelt.
-   * Mit dem Dropdown-Menü können Sie aus vorhandenen Tags auswählen.
-   * Wenn Sie den Mauszeiger über ein Tag im Auswahlfeld halten, wird ein „x“ angezeigt, mit dem Sie das Tag löschen können.
-   * Weitere Informationen zu Tags finden Sie unter [Verwenden von Tags.](/help/sites-authoring/tags.md)
+  * Nachdem Sie ein Tag ausgewählt haben, wird es unterhalb des Auswahlfelds aufgelistet. Sie können ein Tag mit dem „x“ aus dieser Liste entfernen.
+  * Sie können ein neues Tag eingeben, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
+    * Das neue Tag wird erstellt, wenn Sie die Eingabetaste drücken.
+    * Das neue Tag wird mit einem kleinen Stern auf der rechten Seite angezeigt, was bedeutet, dass es sich um ein neues Tag handelt.
+  * Mit dem Dropdown-Menü können Sie aus vorhandenen Tags auswählen.
+  * Wenn Sie den Mauszeiger über ein Tag im Auswahlfeld halten, wird ein „x“ angezeigt, mit dem Sie das Tag löschen können.
+  * Weitere Informationen zu Tags finden Sie unter [Verwenden von Tags.](/help/sites-authoring/tags.md)
 * **In der Navigation ausblenden** – Gibt an, ob die Seite in der Seitennavigation der resultierenden Site ein- oder ausgeblendet werden soll.
 
 #### Branding {#branding}
@@ -44,17 +44,17 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 Wenden Sie eine konsistente Markenidentität auf allen Seiten an, indem Sie einen Marken-Slug an jeden Seitentitel anhängen. Diese Funktion erfordert die Verwendung der Seitenkomponente ab Version 2.14.0 der [Kernkomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 
 * **Überschreiben**: Aktivieren Sie diese Option, um den Marken-Slug auf dieser Seite zu definieren.
-   * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, deren Werte zum **Überschreiben** sind ebenfalls festgelegt.
+  * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, deren Werte zum **Überschreiben** sind ebenfalls festgelegt.
 * **Überschreibungswert** – Der Text des Marken-Slugs, der an den Seitentitel angehängt werden soll.
-   * Der Wert wird nach einem Pipe-Zeichen an den Seitentitel angehängt, z. B. `Cycling Tuscany | Always ready for the WKND`
+  * Der Wert wird nach einem Pipe-Zeichen an den Seitentitel angehängt, z. B. `Cycling Tuscany | Always ready for the WKND`
 
 #### Weitere Titel und Beschreibungen {#more}
 
 * **Seitentitel** – Ein Titel zur Verwendung auf der Seite
-   * Wird normalerweise von Titelkomponenten verwendet
-   * Wenn dies leer gelassen wird, wird der **Titel** verwendet.
-* **Navigationstitel** – Sie können einen eigenen Titel für die Navigation angeben (z. B. wenn Sie einen kürzeren Titel wünschen). 
-   * Wenn dies leer gelassen wird, wird der **Titel** verwendet.
+  * Wird normalerweise von Titelkomponenten verwendet
+  * Wenn dies leer gelassen wird, wird der **Titel** verwendet.
+* **Navigationstitel** – Sie können einen eigenen Titel für die Navigation angeben (z. B. wenn Sie einen kürzeren Titel wünschen).
+  * Wenn dies leer gelassen wird, wird der **Titel** verwendet.
 * **Untertitel** – Ein Untertitel zur Verwendung auf der Seite
 * **Beschreibung** – Ihre Beschreibung der Seite, der Zweck oder beliebige andere Details, die Sie hinzufügen möchten.
 
@@ -64,20 +64,22 @@ Die Einschaltzeit/Ausschaltzeit für eine Seite ist eine praktische Methode, um 
 
 * **Einschaltzeit**: Zeitpunkt (Datum und Uhrzeit), zu dem die veröffentlichte Seite in der Publishing-Umgebung sichtbar (gerendert) wird. Die Seite muss entweder manuell oder durch vorkonfigurierte automatische Replikation veröffentlicht werden.
 
-   * Wenn sie bereits [veröffentlicht](/help/sites-authoring/publishing-pages.md) wurde, ist diese Seite in der Veröffentlichungsinstanz verfügbar, ruht jedoch (ausgeblendet), bis sie zum angegebenen Zeitpunkt gerendert wird.
-   * Wenn die Seite nicht veröffentlicht und [für die automatische Replikation konfiguriert](/help/sites-deploying/replication.md) ist, wird sie automatisch veröffentlicht und dann zum festgelegten Zeitpunkt gerendert.
-   * Wenn die Seite nicht veröffentlicht und nicht für die automatische Replikation konfiguriert ist, wird sie nicht automatisch veröffentlicht. Daher wird ein 404-Fehler angezeigt, wenn versucht wird, auf die Seite zuzugreifen.
+  * Wenn sie bereits [veröffentlicht](/help/sites-authoring/publishing-pages.md) wurde, ist diese Seite in der Veröffentlichungsinstanz verfügbar, ruht jedoch (ausgeblendet), bis sie zum angegebenen Zeitpunkt gerendert wird.
+  * Wenn die Seite nicht veröffentlicht und [für die automatische Replikation konfiguriert](/help/sites-deploying/replication.md) ist, wird sie automatisch veröffentlicht und dann zum festgelegten Zeitpunkt gerendert.
+  * Wenn die Seite nicht veröffentlicht und nicht für die automatische Replikation konfiguriert ist, wird sie nicht automatisch veröffentlicht. Daher wird ein 404-Fehler angezeigt, wenn versucht wird, auf die Seite zuzugreifen.
 
 * **Ausschaltzeit**: Ähnlich wie und häufig in Kombination mit der **Einschaltzeit** wird hier der Zeitpunkt festgelegt, zu dem die Veröffentlichungsumgebung auf der Veröffentlichungsseite ausgeblendet wird.
 
 Lassen Sie diese Felder (**Einschaltzeit** und **Ausschaltzeit**) für Seiten, die Sie sofort veröffentlichen und verfügbar haben möchten und die in der Veröffentlichungsumgebung verfügbar sein sollen, leer, bis sie deaktiviert werden (der Normalfall).
+
+Wenn „Ein-/Ausschaltzeiten“ konfiguriert sind, werden zusätzliche Symbole und Informationen zu den Ausschaltzeiten in der [Listen- und Kartenansicht der Sites](/help/sites-authoring/basic-handling.md#views)Konsole sowie in der [Zeitleistenansicht des Seitenbereichs der Konsole angezeigt.](/help/sites-authoring/basic-handling.md#timeline)
 
 >[!NOTE]
 >Wenn entweder die **Einschaltzeit** oder die **Ausschaltzeit** in der Vergangenheit liegt und die automatische Replikation konfiguriert ist, wird die entsprechende Aktion sofort ausgelöst.
 
 >[!TIP]
 >
->Einschaltzeiten/Ausschaltzeiten gelten ausschließlich für bereits veröffentlichte Inhalte (entweder manuell oder über automatische Replikation). Aus diesem Grund werden Veröffentlichungs-Workflows, wie die zur Genehmigung von Inhalten, nicht durch Einschaltzeiten/Ausschaltzeiten ausgelöst, und Einschaltzeiten/Ausschaltzeiten wirken sich nicht auf den Veröffentlichungsstatus der Seite aus. Aus diesem Grund sind Einschaltzeiten/Ausschaltzeiten am besten geeignet, um bereits genehmigte und veröffentlichte Inhalte vorübergehend anzuzeigen/auszublenden.
+>Einschaltzeiten/Ausschaltzeiten gelten ausschließlich für bereits veröffentlichte Inhalte (entweder manuell oder über automatische Replikation). Aus diesem Grund werden Veröffentlichungs-Workflows, wie die zur Genehmigung von Inhalten, nicht durch Einschaltzeiten/Ausschaltzeiten ausgelöst, und Einschaltzeiten/Ausschaltzeiten wirken sich nicht auf den Veröffentlichungsstatus der Seite aus. Daher sind Ein-/Ausschaltzeiten am besten geeignet, um bereits genehmigte und veröffentlichte Inhalte vorübergehend ein- oder auszublenden.
 >
 >Wenn Sie neue Inhalte mit allen zugehörigen Workflows veröffentlichen oder Inhalte vollständig von Ihrer Site entfernen (Veröffentlichung rückgängig machen) möchten, sollten Sie die [Verwaltung Ihrer Veröffentlichung](/help/sites-authoring/publishing-pages.md#manage-publication) in Erwägung ziehen.
 
@@ -110,10 +112,10 @@ Konfigurieren Sie den Dispatcher, um den Zugriff auf Vanity-URLs zu aktivieren. 
 * **Umleiten** – Gibt die Seite an, zu der diese Seite automatisch umgeleitet werden soll.
 * **Design** – Gibt das [Design](/help/sites-developing/designer.md) an, das für diese Seite verwendet werden soll.
 * **Alias** – Gibt einen Alias an, der für diese Seite verwendet werden soll.
-   * Beispiel: Wenn Sie einen Alias `private` für die Seite `/content/wknd/us/en/magazine/members-only` definieren, kann auf diese Seite über `/content/wknd/us/en/magazine/private` zugegriffen werden.
-   * Durch die Erstellung eines Alias wird die Eigenschaft `sling:alias`, die sich nur auf die Ressource und nicht auf den Repository-Pfad auswirkt, auf dem Seitenknoten festgelegt.
-   * Seiten, auf die im Editor über Aliasnamen zugegriffen wird, können nicht veröffentlicht werden. [Veröffentlichungsoptionen](/help/sites-authoring/publishing-pages.md) im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
-   * Weitere Informationen finden Sie in [Lokalisierte Seitennamen](/help/managing/seo-and-url-management.md#localized-page-names) unter „Best Practices für SEO- und URL-Verwaltung“.
+  * Beispiel: Wenn Sie einen Alias `private` für die Seite `/content/wknd/us/en/magazine/members-only` definieren, kann auf diese Seite über `/content/wknd/us/en/magazine/private` zugegriffen werden.
+  * Durch die Erstellung eines Alias wird die Eigenschaft `sling:alias`, die sich nur auf die Ressource und nicht auf den Repository-Pfad auswirkt, auf dem Seitenknoten festgelegt.
+  * Seiten, auf die im Editor über Aliasnamen zugegriffen wird, können nicht veröffentlicht werden. [Veröffentlichungsoptionen](/help/sites-authoring/publishing-pages.md) im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
+  * Weitere Informationen finden Sie in [Lokalisierte Seitennamen](/help/managing/seo-and-url-management.md#localized-page-names) unter „Best Practices für SEO- und URL-Verwaltung“.
 
 #### Konfiguration {#configuration}
 
@@ -147,9 +149,9 @@ Konfigurieren Sie den Dispatcher, um den Zugriff auf Vanity-URLs zu aktivieren. 
 #### SEO {#seo}
 
 * **Kanonische URL** – Wird zum Überschreiben der kanonischen URL der Seite verwendet
-   * Wenn Sie das Feld leer lassen, ist die URL der Seite ihre kanonische URL.
+  * Wenn Sie das Feld leer lassen, ist die URL der Seite ihre kanonische URL.
 * **Robots-Tags** – Verwenden Sie das Dropdown-Menü zum Auswählen der Robots-Tags, um das Verhalten der Suchmaschinen-Crawler zu steuern.
-   * Einige Optionen stehen im Konflikt miteinander, wobei in diesem Fall die Option mit größerer Berechtigung Vorrang hat.
+  * Einige Optionen stehen im Konflikt miteinander, wobei in diesem Fall die Option mit größerer Berechtigung Vorrang hat.
 * **Sitemap generieren** – Wenn ausgewählt, wird eine `sitemap.xml` für diese Seite und ihre Unterseiten generiert.
 
 ### Bilder {#images}
@@ -175,14 +177,14 @@ In diesem Abschnitt wird die Miniatur für die Seite ausgewählt und konfigurier
 
 * **Cloud-Service-Konfigurationen** - Es wird festgelegt, welche Konfiguration für Cloud-Services für die Seite verwendet werden soll.
 * **Vererbt von** – Für Live Copies und Sprachkopien werden Cloud-Konfigurationen standardmäßig von der Blueprint vererbt.
-   * Zum Überschreiben der Vererbung deaktivieren
+  * Zum Überschreiben der Vererbung deaktivieren
 
 ### Personalisierung {#personalization}
 
 #### ContextHub-Konfigurationen {#contexthub}
 
 * **Vererbt von** – ContextHub-Konfigurationen werden standardmäßig von der übergeordneten Seite vererbt.
-   * Deaktivieren Sie diese Option, um die Vererbung zu überschreiben.
+  * Deaktivieren Sie diese Option, um die Vererbung zu überschreiben.
 * **ContextHub-Pfad** – Die [ContextHub-Konfiguration](/help/sites-developing/ch-configuring.md) wird ausgewählt.
 * **Segmentpfad** – Der [Segmentpfad](/help/sites-administering/segmentation.md) wird ausgewählt.
 
@@ -199,7 +201,7 @@ Verwenden Sie die Registerkarte **Berechtigungen**, um festzulegen, welche Benut
 
 * [Berechtigungen hinzufügen](/help/sites-administering/user-group-ac-admin.md)
 * [Geschlossene Benutzergruppe bearbeiten](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
-* [Effektive Berechtigungen](/help/sites-administering/user-group-ac-admin.md) anzeigen 
+* [Effektive Berechtigungen](/help/sites-administering/user-group-ac-admin.md) anzeigen
 
 >[!CAUTION]
 >
@@ -251,16 +253,16 @@ Sie können Seiteneigenschaften definieren:
 
 * In der **Sites**-Konsole:
 
-   * [Erstellen einer neuen Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) (eine Teilmenge der Eigenschaften)
+  * [Erstellen einer neuen Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) (eine Teilmenge der Eigenschaften)
 
-   * durch Klicken oder Tippen auf **Eigenschaften**
+  * durch Klicken oder Tippen auf **Eigenschaften**
 
-      * Für eine einzelne Seite
-      * Für mehrere Seiten (nur eine Teilmenge der Eigenschaften steht zur Massenbearbeitung zur Verfügung)
+    * Für eine einzelne Seite
+    * Für mehrere Seiten (nur eine Teilmenge der Eigenschaften steht zur Massenbearbeitung zur Verfügung)
 
 * Im Seiteneditor:
 
-   * mithilfe der Option **Seiteninformationen** (anschließend **Eigenschaften öffnen**)
+  * mithilfe der Option **Seiteninformationen** (anschließend **Eigenschaften öffnen**)
 
 ### In der Sites-Konsole (einzelne Seite) {#from-the-sites-console-single-page}
 
@@ -322,7 +324,7 @@ Sie können nur Massenbearbeitungen von Seiten durchführen, die:
 * den gleichen Ressourcentyp haben
 * nicht Teil einer Live Copy sind
 
-   * Ist eine der Seiten Teil einer Live Copy, wird beim Öffnen der Eigenschaften eine Meldung angezeigt.
+  * Ist eine der Seiten Teil einer Live Copy, wird beim Öffnen der Eigenschaften eine Meldung angezeigt.
 
 Nach dem Start der Massenbearbeitung können Sie Folgendes tun:
 
@@ -330,23 +332,23 @@ Nach dem Start der Massenbearbeitung können Sie Folgendes tun:
 
   Wenn Sie Seiteneigenschaften für mehrere Seiten anzeigen, sehen Sie Folgendes:
 
-   * eine Liste der betroffenen Seiten
+  * eine Liste der betroffenen Seiten
 
-      * Bei Bedarf können Sie Seiten auswählen oder ihre Auswahl aufheben
+    * Bei Bedarf können Sie Seiten auswählen oder ihre Auswahl aufheben
 
-   * Registerkarten
+  * Registerkarten
 
-      * Wie beim Anzeigen von Eigenschaften für eine einzelne Seite werden die Eigenschaften unter Registerkarten angeordnet.
+    * Wie beim Anzeigen von Eigenschaften für eine einzelne Seite werden die Eigenschaften unter Registerkarten angeordnet.
 
-   * Eine Teilmenge von Eigenschaften
+  * Eine Teilmenge von Eigenschaften
 
-      * Eigenschaften, die auf allen ausgewählten Seiten verfügbar sind und explizit als für die Massenbearbeitung verfügbar definiert wurden, sind sichtbar.
-      * Wenn Sie die Seitenauswahl auf eine Seite reduzieren, sind alle Eigenschaften sichtbar.
+    * Eigenschaften, die auf allen ausgewählten Seiten verfügbar sind und explizit als für die Massenbearbeitung verfügbar definiert wurden, sind sichtbar.
+    * Wenn Sie die Seitenauswahl auf eine Seite reduzieren, sind alle Eigenschaften sichtbar.
 
-   * Gemeinsame Eigenschaften mit einem gemeinsamen Wert
+  * Gemeinsame Eigenschaften mit einem gemeinsamen Wert
 
-      * Nur Eigenschaften mit einem gemeinsamen Wert werden im Ansichtsmodus angezeigt.
-      * Wenn es sich um ein mehrwertiges Feld handelt (z. B. Tags), werden die Werte nur angezeigt, wenn *alle* übereinstimmen. Wenn nur einige übereinstimmen, werden sie nur bei der Bearbeitung angezeigt.
+    * Nur Eigenschaften mit einem gemeinsamen Wert werden im Ansichtsmodus angezeigt.
+    * Wenn es sich um ein mehrwertiges Feld handelt (z. B. Tags), werden die Werte nur angezeigt, wenn *alle* übereinstimmen. Wenn nur einige übereinstimmen, werden sie nur bei der Bearbeitung angezeigt.
 
   Wenn keine Eigenschaften mit einem gemeinsamen Wert vorhanden sind, wird eine Meldung angezeigt.
 
@@ -354,12 +356,12 @@ Nach dem Start der Massenbearbeitung können Sie Folgendes tun:
 
   Beim Bearbeiten der Seiteneigenschaften für mehrere Seiten:
 
-   * Sie können die Werte in den verfügbaren Feldern aktualisieren.
+  * Sie können die Werte in den verfügbaren Feldern aktualisieren.
 
-      * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
-      * Wenn es sich um ein mehrwertiges Feld handelt (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
+    * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
+    * Wenn es sich um ein mehrwertiges Feld handelt (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
 
-   * Felder, die häufig vorkommen, aber auf den verschiedenen Seiten unterschiedliche Werte haben, werden durch einen speziellen Wert angezeigt, beispielsweise `<Mixed Entries>`.
+  * Felder, die häufig vorkommen, aber auf den verschiedenen Seiten unterschiedliche Werte haben, werden durch einen speziellen Wert angezeigt, beispielsweise `<Mixed Entries>`.
 
 >[!NOTE]
 >
