@@ -11,8 +11,8 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 100%
+source-wordcount: '941'
+ht-degree: 94%
 
 ---
 
@@ -73,11 +73,11 @@ Für die lokale CIF-Projektentwicklung mit dem AEM und dem CIF-Add-on gehen Sie 
 
 >[!TIP]
 >
->Alternativ kann das CIF-Add-On-Paket auch über den Package Manager installiert werden.
+>Alternativ kann das CIF-Add-On-Paket auch über den Paket-Manager installiert werden.
 
 1. Starten Sie den AEM-Schnellstart
 
-Überprüfen Sie das Setup über die OSGi-Konsole: `http://localhost:4502/system/console/osgi-installer`. Die Liste sollte die CIF-Add-on-bezogenen Bundles, Inhaltspakete und OSGi-Konfigurationen enthalten. Stellen Sie sicher, dass alle Bundles gestartet sind.
+Überprüfen Sie das Setup über die OSGi-Konsole: `http://localhost:4502/system/console/osgi-installer`. Die Liste sollte die CIF-Add-on-bezogenen Bundles, Inhaltspakete und OSGi-Konfigurationen enthalten. Stellen Sie sicher, dass alle Pakete gestartet sind.
 
 ## Projekt-Setup {#project}
 
@@ -148,7 +148,7 @@ Um mit dem Venia Referenz-Store zu beginnen, klonen Sie einfach das [Git-Reposit
 
 >[!NOTE]
 >
->Das Venia Reference Store-Projekt enthält zwei Build-Profile für AEM as a Cloud Service und AEM 6.5. Schauen Sie sich die Datei [readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) des Projekts an, um zu sehen, wie sie verwendet werden. Für AEM 6.5 verwenden Sie das Profil `classic`.
+>Das Venia Reference Store-Projekt enthält zwei Build-Profile für AEM as a Cloud Service und AEM 6.5. Überprüfen Sie [Projekt readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md), um zu sehen, wie sie verwendet werden. Für AEM 6.5 verwenden Sie das Profil `classic`.
 
 ### Verbinden von AEM mit dem Commerce-System
 
@@ -167,4 +167,4 @@ Navigieren Sie zu http://localhost:4502/system/console/configMgr und erstellen S
 ## Zusätzliche Ressourcen
 
 - [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype)
-- [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
+- [AEM Venia-Referenz-Store](https://github.com/adobe/aem-cif-guides-venia)

@@ -86,8 +86,8 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus AEM 6.5 entfernt wurd
 | Entwickler | Firebug Lite wurde aus der Standardverteilung (Quickstart) entfernt | Verwenden der integrierten Entwicklerkonsolen des Browsers |  |
 | Entwickler | Die Unterstützung für `customJavaScriptPath` wurde im HTML Client Library Manager eingestellt. | Kein Ersatz vorhanden |  |
 | [!DNL Assets] | Die Asset-Auslagerungsfunktion wurde in [!DNL Adobe Experience Manager] 6.5 entfernt. | Es steht kein Ersatz zur Verfügung. |  |
-| Cache | `system/console/slingjsp` wurde entfernt und ist in AEM 6.5 nicht mehr verfügbar. | Klassen und Slightly-Cache werden im Apache Sling Commons FileSystem ClassLoader-Bundle gespeichert. Sie können die Bundle-Nummer in der AEM-Web-Konsole überprüfen und den Cache-Ordner direkt aus dem Dateisystem entfernen (`crx-quickstart/launchpad/felix/bundle<ID>`). |  |
-| Screens | Unterstützung für das activemq-Bundle und die zugehörigen Konfigurationen wurde entfernt. |  |  |
+| Cache | `system/console/slingjsp` wurde entfernt und ist in AEM 6.5 nicht mehr verfügbar. | Klassen und Slightly-Cache werden im Apache Sling Commons FileSystem ClassLoader-Paket gespeichert. Sie können die Paketnummer in der AEM-Web-Konsole überprüfen und den Cache-Ordner direkt aus dem Dateisystem entfernen (`crx-quickstart/launchpad/felix/bundle<ID>`). |  |
+| Screens | Unterstützung für das activemq-Paket und die zugehörigen Konfigurationen wurde entfernt. |  |  |
 
 <!--
 ## Pre-announcement for next release {#pre-announcement-for-next-release}

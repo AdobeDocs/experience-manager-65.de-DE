@@ -152,9 +152,9 @@ ht-degree: 100%
 * CIF-Connector- und Authoring-Tools (Produktkonsole, Produktauswahl und Kategorieauswahl), mit denen Autoren Erlebnisse in AEM mit Commerce-Inhalten erstellen können.
 
 * Erste Version der CIF-Kernkomponenten, die mit Adobe Commerce 2.3.1 kompatibel sind:
-   * Produktdetails
-   * Produktliste
-   * Produkt-Teaser
-   * Navigation
-   * Produktsuche
-   * Warenkorb (REST)
+  * Produktdetails
+  * Produktliste
+  * Produkt-Teaser
+  * Navigation
+  * Produktsuche
+  * Warenkorb (REST)

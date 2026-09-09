@@ -7,7 +7,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '962'
 ht-degree: 100%
 
 ---
@@ -124,7 +124,7 @@ ht-degree: 100%
 
 * Beta: AEM CIF-Kernkomponente für die Suche unterstützt Commerce LiveSearch
 * Verbessertes SEO für Multi-Store-Szenarien: URL-Formate für PDP/PLP können jetzt auf Store-Ebene über die CIF-Cloud-Konfigurationseigenschaften konfiguriert werden
-* Die Produktauswahl unterstützt Staging-Produkte über die neue Filteroption in der Benutzeroberfläche. Dadurch können Content-Fachleute das Product Content Management für bevorstehende Produkteinführungen vorbereiten
+* Die Produktauswahl unterstützt Staging-Produkte über die neue Filteroption in der Benutzeroberfläche. Dadurch können Content-Fachleute das Produkt-Content-Management für bevorstehende Produkteinführungen vorbereiten
 * Vereinfachte CIF-Konfigurationsverwaltung und Fehlerbehandlung durch Verwendung des CIF-Cloud-Konfigurationsnamens anstelle der Proxy-URL für die Konfiguration
 * Manuelle Kategorieauswahl für Produktlisten- und Karussellkomponenten. Dadurch können Content-Fachleute diese Komponenten auf Inhaltsseiten außerhalb des Katalogs verwenden
 
@@ -141,9 +141,9 @@ ht-degree: 100%
 * Verbesserte myAccount-Komponenten
 * Die Komponente „Produktempfehlung“ unterstützt zusätzliche Seitentypen (Homepage, Warenkorb, Bestellbestätigung).
 * **Wunschliste**
-   * Angemeldete Besucher können Produkte zu einer Wunschliste hinzufügen
-   * Die Verwaltung der Wunschliste und ihrer Produkte ist über myAccount möglich
-   * Die Schaltfläche „Zur Wunschliste hinzufügen“ kann auf Komponentenebene über eine Richtlinie (z. B. Produkt-Teaser, Produktdetails) aktiviert/deaktiviert werden
-   * Verfügbar als Kernkomponente und in der Venia-Storefront von AEM
+  * Angemeldete Besucher können Produkte zu einer Wunschliste hinzufügen
+  * Die Verwaltung der Wunschliste und ihrer Produkte ist über myAccount möglich
+  * Die Schaltfläche „Zur Wunschliste hinzufügen“ kann auf Komponentenebene über eine Richtlinie (z. B. Produkt-Teaser, Produktdetails) aktiviert/deaktiviert werden
+  * Verfügbar als Kernkomponente und in der Venia-Storefront von AEM
 
 ![Wunschliste](/help/assets/CIF/wishlist.png)
