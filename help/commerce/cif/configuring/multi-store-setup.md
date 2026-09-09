@@ -11,8 +11,8 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 100%
+source-wordcount: '416'
+ht-degree: 85%
 
 ---
 
@@ -22,11 +22,11 @@ Die AEM-CIF-Kernkomponenten können auf mehreren AEM Site-Strukturen verwendet w
 
 Videoeinführung mit detaillierten Optionen zur Integration mehrerer Adobe Commerce-Store-Ansichten mit Adobe Experience Manager Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/32818/?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/32818/?captions=ger&quality=12)
 
 AEM-Funktionen zur Verwaltung mehrerer Websites von Live Copy und Sprachkopie werden mit dem Commerce Integration Framework verwendet, um global Sites über Regionen und Gebietsschemata hinweg zu verwalten.
 
-Es empfiehlt sich, eine 1:1-Beziehung zwischen der AEM-Site und der Adobe Commerce Store-Ansicht zu verwenden.
+Es wird empfohlen, eine 1:1-Beziehung zwischen der AEM-Site und der Adobe Commerce Store-Ansicht zu verwenden.
 
 Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu einer dedizierten Store-Ansicht zu verbinden:
 
@@ -46,19 +46,19 @@ Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu ein
 
    >[!TIP]
    >
-   >Commerce-Kataloge können mit IDs oder UIDs adressiert werden. Die Unterstützung für UIDs wurde in Adobe Commerce 2.4.2 eingeführt. Aktivieren Sie dies nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
+   >Commerce-Kataloge können mit IDs oder UIDs adressiert werden. UIDs wurden in Adobe Commerce 2.4.2 eingeführt. Aktivieren Sie diese Option nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
 
 4. Weisen Sie die untergeordnete Konfiguration zu einer AEM-Site zu.
 
    * Wechseln Sie zur AEM Sites-Konsole.
    * Navigieren Sie zum Regions- oder Sprachstamm Ihrer Site-Struktur, z. B. „/content/venia/us“ _oder_ „/content/venia/us/en“ für die Venia-Beispielseite.
    * Wählen Sie die Seiten aus und öffnen Sie die Seiteneigenschaften.
-   * Wählen Sie die Registerkarte „Erweitert“ aus. 
-   * Wählen Sie im Abschnitt `Configuration` die zuvor erstellte Konfiguration aus. 
+   * Wählen Sie die Registerkarte „Erweitert“ aus.
+   * Wählen Sie im Abschnitt `Configuration` die zuvor erstellte Konfiguration aus.
 
 ## Zusätzliche Ressourcen
 
 * [Websites, Stores und Ansichten in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de)
-* [AEM-CIF-Kernkomponenten – Multi-Store-/Multi-Site-Konfiguration](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
+* [AEM CIF-Kernkomponenten - Multi-Store-/Site-Konfiguration](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
 * [Verwenden von Multi Site Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=de)
-* [Wiederverwenden von Inhalten: Multi Site Manager und Live Copy](/help/sites-administering/msm.md)
+* [Wiederverwenden von Inhalten: Multi-Site Manager und Live Copy](/help/sites-administering/msm.md)
