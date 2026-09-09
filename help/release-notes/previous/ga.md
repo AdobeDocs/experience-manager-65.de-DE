@@ -348,7 +348,7 @@ Weitere Informationen finden Sie unter [Verwenden von Adobe Stock-Assets in Expe
 
 *Abbildung: Vorschau [!DNL Adobe Stock] Bild und Lizenz von innerhalb [!DNL Experience Manager Assets].*
 
-![Durchsuchen und Filtern der lizenzierten Adobe Stock-Bilder in Experience Manager ](/help/release-notes/assets/aem-search-filters2.jpg)
+![Durchsuchen und Filtern der lizenzierten Adobe Stock-Bilder in Experience Manager &#x200B;](/help/release-notes/assets/aem-search-filters2.jpg)
 
 *Abbildung: Lizenzierte [!DNL Adobe Stock]-Bilder in [!DNL Experience Manager] suchen und filtern.*
 
