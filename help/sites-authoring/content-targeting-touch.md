@@ -14,9 +14,7 @@ source-git-commit: ee6294a03b2e4faf4e3c2dc8a466d03a0fb8a28a
 workflow-type: tm+mt
 source-wordcount: '5344'
 ht-degree: 95%
-
 ---
-
 # Verfassen zielgerichteter Inhalte im Targeting-Modus{#authoring-targeted-content-using-targeting-mode}
 
 Im Targeting-Modus können Sie zielgerichtete Inhalte für AEM erstellen. Im Targeting-Modus und in der Targeting-Komponente stehen verschiedene Werkzeuge zur Verfügung, mit deren Hilfe sich Inhalte für Erlebnisse erstellen lassen:
@@ -530,7 +528,7 @@ Verwenden Sie die erweiterten Einstellungen, um zu bestimmen, was passiert, **na
  </tbody>
 </table>
 
-Weitere Informationen zu Erfolgsmetriken finden Sie in [&#128279;](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=de) Dokumentation zu Adobe Target .
+Weitere Informationen zu Erfolgsmetriken finden Sie in ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=de) Dokumentation zu Adobe Target .[
 
 ### Konfigurieren von Einstellungen (AEM Targeting) {#configuring-settings-aem-targeting}
 
