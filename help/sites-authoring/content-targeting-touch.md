@@ -14,9 +14,7 @@ source-git-commit: ee6294a03b2e4faf4e3c2dc8a466d03a0fb8a28a
 workflow-type: tm+mt
 source-wordcount: '5344'
 ht-degree: 95%
-
 ---
-
 # Verfassen zielgerichteter Inhalte im Targeting-Modus{#authoring-targeted-content-using-targeting-mode}
 
 Im Targeting-Modus können Sie zielgerichtete Inhalte für AEM erstellen. Im Targeting-Modus und in der Targeting-Komponente stehen verschiedene Werkzeuge zur Verfügung, mit deren Hilfe sich Inhalte für Erlebnisse erstellen lassen:
