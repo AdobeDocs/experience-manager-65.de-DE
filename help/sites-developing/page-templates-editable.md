@@ -1,10 +1,14 @@
 ---
 title: Bearbeitbare Seitenvorlagen
+
 description: Es wurden bearbeitbare Vorlagen eingeführt, die es auch Nicht-Entwickelnden ermöglichen, Vorlagen zu erstellen und zu bearbeiten, Vorlagen bereitzustellen, die eine dynamische Verbindung zu allen daraus erstellten Seiten beibehalten, und die Seitenkomponente allgemeiner zu gestalten.
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
+
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 solution: Experience Manager, Experience Manager Sites
@@ -12,19 +16,17 @@ feature: Developing
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3187'
-ht-degree: 100%
-
+source-wordcount: '3283'
+ht-degree: 97%
 ---
-
 # Bearbeitbare Seitenvorlagen {#page-templates-editable}
 
 Bearbeitbare Vorlagen wurden eingeführt:
 
 * Sie sollen spezialisierten Autorinnen und Autoren [das Erstellen und Bearbeiten von Vorlagen](/help/sites-authoring/templates.md) ermöglichen.
 
-   * Diese spezialisierten Autoren werden als **Vorlagenautoren** bezeichnet.
-   * Vorlagenautoren müssen Mitglieder der Gruppe `template-authors` sein.
+  * Diese spezialisierten Autoren werden als **Vorlagenautoren** bezeichnet.
+  * Vorlagenautoren müssen Mitglieder der Gruppe `template-authors` sein.
 
 * Es werden Vorlagen bereitgestellt, die eine dynamische Verbindung zu allen damit erstellten Seiten beibehalten. Dadurch wird sichergestellt, dass alle Änderungen an der Vorlage auf den Seiten widergespiegelt werden.
 * Die Seitenkomponente wird allgemeiner gestaltet, damit die Seitenkernkomponente ohne Anpassung verwendet werden kann.
@@ -39,7 +41,7 @@ Dieses Dokument:
 
 * Bietet einen Überblick über das Erstellen bearbeitbarer Vorlagen
 
-   * Umfassende Informationen finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md).
+  * Umfassende Informationen finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md).
 
 * Beschreibt die zum Erstellen bearbeitbarer Vorlagen erforderlichen Aufgaben für Admin-/Entwicklerpersonal
 * Beschreibt die technischen Grundlagen bearbeitbarer Vorlagen
@@ -55,7 +57,7 @@ Bei den in diesem Dokument beschriebenen Schritten wird vorausgesetzt, dass Sie 
 
 Bearbeitbare Vorlagen werden von Vorlagenautoren in erster Linie mit der [Vorlagenkonsole und dem Vorlagen-Editor](/help/sites-authoring/templates.md) erstellt. In diesem Abschnitt finden Sie einen Überblick über diesen Prozess, der anschließend aus technischer Perspektive beleuchtet wird.
 
-Informationen zur Verwendung bearbeitbarer Vorlagen in einem AEM-Projekt finden Sie unter [Erstellen eines AEM-Projekts mit Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=de).
+Informationen zur Verwendung bearbeitbarer Vorlagen in einem AEM-Projekt finden Sie unter [Erstellen eines AEM-Projekts mit Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
 
 Gehen Sie zum Erstellen einer bearbeitbaren Vorlage wie folgt vor:
 
@@ -73,7 +75,7 @@ Gehen Sie zum Erstellen einer bearbeitbaren Vorlage wie folgt vor:
    * Die Struktur ermöglicht die Definition von Komponenten und Inhalten für Ihre Vorlage.
    * Komponenten, die in der Vorlagenstruktur definiert sind, können nicht auf einer resultierenden Seite verschoben oder von den resultierenden Seiten gelöscht werden.
 
-      * Wenn Sie eine Vorlage in einem benutzerdefinierten Ordner außerhalb des `We.Retail`-Beispielinhalts erstellen, können Sie Foundation-Komponenten wählen oder [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=de) verwenden.
+     * Wenn Sie eine Vorlage in einem benutzerdefinierten Ordner außerhalb des `We.Retail`-Beispielinhalts erstellen, können Sie Foundation-Komponenten wählen oder [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=de) verwenden.
 
    * Wenn Sie möchten, dass Seitenautorinnen und -autoren Komponenten hinzufügen und entfernen können, fügen Sie der Vorlage ein Absatzsystem hinzu.
    * Komponenten lassen sich entsperren und erneut sperren, damit Sie den anfänglichen Inhalt definieren können.
@@ -86,7 +88,7 @@ Gehen Sie zum Erstellen einer bearbeitbaren Vorlage wie folgt vor:
 
    * Die Richtlinien für Inhalte definieren die Design-Eigenschaften einer Komponente.
 
-      * Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen.
+     * Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen.
 
    * Diese Richtlinien sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden).
 
@@ -132,7 +134,7 @@ Gehen Sie zum Erstellen einer bearbeitbaren Vorlage wie folgt vor:
 
 >[!TIP]
 >
->Geben Sie in eine Vorlage nie Informationen ein, die internationalisiert werden müssen. Für die Internationalisierung werden die [Lokalisierungsfunktionen der Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) empfohlen.
+>Geben Sie in eine Vorlage nie Informationen ein, die internationalisiert werden müssen. Für die Internationalisierung werden die [Lokalisierungsfunktionen der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) empfohlen.
 
 >[!NOTE]
 >
@@ -153,7 +155,7 @@ Gehen Sie zum Erstellen einer bearbeitbaren Vorlage wie folgt vor:
 Zum Organisieren Ihrer Vorlagen können Sie die folgenden Ordner verwenden:
 
 * **global**
-* Site-spezifische Ordner 
+* Site-spezifisch
 Die Site-spezifischen Ordner, die Sie zum Organisieren Ihrer Vorlagen erstellen, werden mit einem Konto mit Administratorrechten erstellt.
 
 >[!NOTE]
@@ -185,7 +187,7 @@ Gehen Sie wie folgt vor, um einen Ordner zu erstellen:
 * Programmierbar oder mit CRXDE Lite
 * Verwenden des Konfigurations-Browsers
 
-## Verwenden von CRXDE Lite  {#using-crxde-lite}
+## Verwenden von CRXDE Lite {#using-crxde-lite}
 
 1. Ein neuer Ordner (unter „/conf“) kann für Ihre Instanz entweder programmgesteuert oder mit CRXDE Lite erstellt werden.
 
@@ -242,7 +244,7 @@ Sobald Ihre Vorlagenordner erstellt sind (entweder über CRXDE oder mit dem Konf
 
 Die Vorlagenordner für die [`We.Retail`-Referenzimplementierung](/help/sites-developing/we-retail.md) können als Beispiel herangezogen werden.
 
-#### Die Gruppe „template-authors“  {#the-template-authors-group}
+#### Die Gruppe „template-authors“ {#the-template-authors-group}
 
 Die Gruppe `template-authors` ist die Gruppe zum Verwalten des Zugriffs auf Vorlagen und standardmäßig in AEM integriert. Sie ist aber leer. Benutzer müssen der Gruppe für das Projekt bzw. die Site hinzugefügt werden.
 
@@ -374,18 +376,18 @@ Geben Sie beim Erstellen einer Vorlage einen Vorlagentyp an:
 
 * Vorlagentypen stellen effektiv Vorlagen für eine Vorlage bereit. Bei der Erstellung einer Vorlage werden Struktur und anfänglicher Inhalt des ausgewählten Vorlagentyps zum Erstellen der Vorlage verwendet.
 
-   * Der Vorlagentyp wird kopiert, um die Vorlage zu erstellen.
-   * Nach dem Kopieren besteht die einzige Verbindung zwischen der Vorlage und dem Vorlagentyp in einer statischen Referenz zu Informationszwecken.
+  * Der Vorlagentyp wird kopiert, um die Vorlage zu erstellen.
+  * Nach dem Kopieren besteht die einzige Verbindung zwischen der Vorlage und dem Vorlagentyp in einer statischen Referenz zu Informationszwecken.
 
 * Vorlagentypen ermöglichen es Ihnen, Folgendes zu definieren:
 
-   * Den Ressourcentyp der Seitenkomponente.
-   * Die Richtlinie des Stammknotens, die die im Vorlageneditor zulässigen Komponenten definiert.
-   * Adobe empfiehlt, die Breakpoints für das responsive Raster und das Setup des Emulators für Mobilgeräte über den Vorlagentyp zu definieren. Dieser Schritt ist optional, da die Konfiguration auch für die jeweilige Vorlage definiert werden kann (siehe [Vorlagentyp und Mobilgerätegruppen](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p)).
+  * Den Ressourcentyp der Seitenkomponente.
+  * Die Richtlinie des Stammknotens, die die im Vorlageneditor zulässigen Komponenten definiert.
+  * Adobe empfiehlt, die Breakpoints für das responsive Raster und das Setup des Emulators für Mobilgeräte über den Vorlagentyp zu definieren. Dieser Schritt ist optional, da die Konfiguration auch für die jeweilige Vorlage definiert werden kann (siehe [Vorlagentyp und Mobilgerätegruppen](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p)).
 
 * AEM stellt einige vordefinierte Vorlagentypen wie HTML5-Seiten und Seiten mit adaptivem Formular bereit.
 
-   * Weitere Beispiele werden als Teil des [`We.Retail`](/help/sites-developing/we-retail.md)-Beispielinhalts bereitgestellt.
+  * Weitere Beispiele werden als Teil des [`We.Retail`](/help/sites-developing/we-retail.md)-Beispielinhalts bereitgestellt.
 
 * Vorlagentypen werden normalerweise von Entwicklerinnen und Entwicklern definiert.
 
@@ -445,7 +447,7 @@ CODE AUF GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub.
 
-* [Öffnen Sie das Projekt aem-sites-example-custom-template-type auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type).
+* [Öffnen Sie das Projekt aem-sites-example-custom-template-type in GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
 * Laden Sie das Projekt als [ZIP-Datei](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/zip/refs/heads/master) herunter.
 
 ## Vorlagendefinitionen {#template-definitions}
@@ -492,11 +494,11 @@ Die Hauptelemente sind:
 
 * `<template-name>`
 
-   * ` [initial](#initial-content)`
-   * `jcr:content`
-   * ` [structure](#structure)`
-   * ` [policies](#policies)`
-   * `thumbnail.png`
+  * ` [initial](#initial-content)`
+  * `jcr:content`
+  * ` [structure](#structure)`
+  * ` [policies](#policies)`
+  * `thumbnail.png`
 
 ### jcr:content {#jcr-content}
 
@@ -506,9 +508,9 @@ Dieser Knoten enthält Eigenschaften für die Vorlage:
 
 * **Name**: `status`
 
-   * **Typ**: `String`
+  * **Typ**: `String`
 
-   * **Wert**: `draft`, `enabled`, oder `disabled`
+  * **Wert**: `draft`, `enabled`, oder `disabled`
 
 ### Struktur {#structure}
 
@@ -518,10 +520,10 @@ Definiert die Struktur der resultierenden Seite:
 * Änderungen an der Struktur spiegeln sich in allen Seiten wider, die mit der Vorlage erstellt wurden.
 * Der Knoten `root` (`structure/jcr:content/root`) definiert die Liste der Komponenten, die auf der resultierenden Seite verfügbar sind.
 
-   * Komponenten, die in der Vorlagenstruktur definiert sind, können in resultierenden Seiten nicht verschoben oder gelöscht werden.
-   * Nachdem eine Komponente entsperrt wurde, wird die Eigenschaft `editable` auf `true` gesetzt.
+  * Komponenten, die in der Vorlagenstruktur definiert sind, können in resultierenden Seiten nicht verschoben oder gelöscht werden.
+  * Nachdem eine Komponente entsperrt wurde, wird die Eigenschaft `editable` auf `true` gesetzt.
 
-   * Nachdem eine Komponente, die bereits Inhalt enthält, entsperrt wurde, wird dieser Inhalt in die Verzweigung `initial` verschoben.
+  * Nachdem eine Komponente, die bereits Inhalt enthält, entsperrt wurde, wird dieser Inhalt in die Verzweigung `initial` verschoben.
 
 * Der Knoten `cq:responsive` enthält Definitionen für das responsive Layout.
 
@@ -545,7 +547,7 @@ Die Inhalts- (oder Design-) Richtlinien definieren die Design-Eigenschaften eine
 
 * Die Eigenschaft `cq:policy` im Knoten `root`
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
-Stellt einen relativen Verweis auf die Inhaltsrichtlinie für das Absatzsystem der Seite bereit.
+  Stellt einen relativen Verweis auf die Inhaltsrichtlinie für das Absatzsystem der Seite bereit.
 
 * Die Eigenschaft `cq:policy` der komponentenexpliziten Knoten unter `root` stellt Links zu den Richtlinien für die einzelnen Komponenten bereit.
 
@@ -580,21 +582,21 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
 
    * Durch Festlegen der Statuseigenschaft des Knotens `jcr:content`
 
-      * Zum Beispiel unter:
-        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+     * Zum Beispiel unter:
+       `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
-      * Definieren Sie die Eigenschaft:
+     * Definieren Sie die Eigenschaft:
 
-         * Name: Status
-         * Typ: String
-         * Wert: `enabled`
+       * Name: Status
+       * Typ: String
+       * Wert: `enabled`
 
 1. **Zugelassene Vorlagen**
 
    * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-authoring/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
    * Legen Sie die folgende Eigenschaft fest:
      `cq:allowedTemplates`
-Auf dem `jcr:content`-Knoten der erforderlichen Verzweigung.
+     Auf dem `jcr:content`-Knoten der erforderlichen Verzweigung.
 
    Beispielsweise mit dem Wert:
 
@@ -608,40 +610,41 @@ Für Seiten, die anhand bearbeitbarer Vorlagen erstellt wurden, gilt Folgendes:
 
 * Sie enthalten Verweise auf Informationen, die in der Vorlage und im Vorlagentyp enthalten sind. Sie können diese Funktion mit einem `jcr:content`-Knoten mit den folgenden Eigenschaften erzielen:
 
-   * `cq:template`
-Stellt den dynamischen Verweis auf die aktuelle Vorlage bereit und ermöglicht es, Änderungen an der Vorlage auf den aktuellen Seiten widerzuspiegeln.
+  * `cq:template`
+    Stellt den dynamischen Verweis auf die aktuelle Vorlage bereit und ermöglicht es, Änderungen an der Vorlage auf den aktuellen Seiten widerzuspiegeln.
 
-   * `cq:templateType`
-Stellt einen Verweis auf den Vorlagentyp bereit.
+  * `cq:templateType`
+    Stellt einen Verweis auf den Vorlagentyp bereit.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
 Das obige Diagramm veranschaulicht, wie Vorlagen, Inhalte und Komponenten zusammenhängen:
 
-* Controller – `/content/<my-site>/<my-page>`
+* Controller - `/content/<my-site>/<my-page>`
 Die resultierende Seite, die auf die Vorlage verweist. Der Inhalt steuert den gesamten Prozess. Gemäß den Definitionen greift er auf die entsprechenden Vorlagen und Komponenten zu.
 
-* Konfiguration – `/conf/<my-folder>/settings/wcm/templates/<my-template>`
+* Konfiguration - `/conf/<my-folder>/settings/wcm/templates/<my-template>`
 Die [Vorlage und zugehörigen Inhaltsrichtlinien](#template-definitions) definieren die Seitenkonfiguration.
 
-* Modell – OSGi-Bundles Die [OSGi-Bundles](/help/sites-deploying/osgi-configuration-settings.md) implementieren die Funktionalität.
+* Modell - OSGi-Bundles
+Die [OSGi-Bundles](/help/sites-deploying/osgi-configuration-settings.md) implementieren die Funktionalität.
 
-* Ansicht – `/apps/<my-site>/components`
-Der Inhalt wird sowohl in der Authoring- als auch in der Publishing-Umgebung durch [Komponenten](/help/sites-developing/components.md) gerendert.
+* Anzeigen - `/apps/<my-site>/components`
+Sowohl in der Autoren- als auch in der Veröffentlichungsumgebung wird der Inhalt von [Komponenten](/help/sites-developing/components.md) gerendert.
 
 Beim Rendern einer Seite:
 
 * **Vorlagen**:
 
-   * Die `cq:template`-Eigenschaft des Knotens `jcr:content` wird referenziert, um auf die Vorlage zuzugreifen, die dieser Seite entspricht.
+  * Die `cq:template`-Eigenschaft des Knotens `jcr:content` wird referenziert, um auf die Vorlage zuzugreifen, die dieser Seite entspricht.
 
 * **Komponenten**:
 
-   * Die Seitenkomponente führt die Baumstruktur `structure/jcr:content` der Vorlage mit der Baumstruktur `jcr:content` der Seite zusammen.
+  * Die Seitenkomponente führt die Baumstruktur `structure/jcr:content` der Vorlage mit der Baumstruktur `jcr:content` der Seite zusammen.
 
-   * Die Seitenkomponente gestattet es der Autorin bzw. dem Autor nur, die Knoten der Vorlagenstruktur zu bearbeiten, die als bearbeitbar gekennzeichnet wurden (sowie jegliche untergeordneten Elemente).
-   * Beim Rendern einer Komponente auf einer Seite wird der relative Pfad dieser Komponente vom Knoten `jcr:content` übernommen. Derselbe Pfad unter dem Knoten `policies/jcr:content` der Vorlage wird dann durchsucht.
+  * Die Seitenkomponente gestattet es der Autorin bzw. dem Autor nur, die Knoten der Vorlagenstruktur zu bearbeiten, die als bearbeitbar gekennzeichnet wurden (sowie jegliche untergeordneten Elemente).
+  * Beim Rendern einer Komponente auf einer Seite wird der relative Pfad dieser Komponente vom Knoten `jcr:content` übernommen. Derselbe Pfad unter dem Knoten `policies/jcr:content` der Vorlage wird dann durchsucht.
 
-      * Die Eigenschaft `cq:policy` dieses Knotens verweist auf die eigentliche Inhaltsrichtlinie (d. h. sie enthält die Design-Konfiguration für diese Komponente).
+    * Die Eigenschaft `cq:policy` dieses Knotens verweist auf die eigentliche Inhaltsrichtlinie (d. h. sie enthält die Design-Konfiguration für diese Komponente).
 
-      * Mit dieser Funktion können Sie über mehrere Vorlagen verfügen, die dieselben Inhaltsrichtlinienkonfigurationen wiederverwenden.
+    * Mit dieser Funktion können Sie über mehrere Vorlagen verfügen, die dieselben Inhaltsrichtlinienkonfigurationen wiederverwenden.

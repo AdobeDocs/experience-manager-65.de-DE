@@ -11,15 +11,13 @@ feature: Integration
 role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 100%
-
+source-wordcount: '1645'
+ht-degree: 94%
 ---
-
 
 # Konfigurieren des Linktrackings für Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
-Wenn Benutzende auf Links auf Seiten Ihrer Website klicken, können Sie zugehörige Informationen in Adobe Analytics erfassen.  Verwenden Sie beispielsweise Linktracking, um zu erfahren, wie Benutzende mit Ihrer Site interagieren, und Datei-Downloads sowie Ausstiegs-Links nachzuverfolgen.
+Wenn Benutzende auf Links auf Seiten Ihrer Website klicken, können Sie zugehörige Informationen in Adobe Analytics erfassen. Verwenden Sie beispielsweise Linktracking, um zu erfahren, wie Benutzende mit Ihrer Site interagieren, und Datei-Downloads sowie Ausstiegs-Links nachzuverfolgen.
 
 ## Konfigurieren von Linktracking für ein Adobe Analytics-Framework {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
@@ -78,19 +76,19 @@ Eigenschaften zum Nachverfolgen beim Klicken auf externe Links:
 Aktiviert die Nachverfolgung externer Links.
 
 * **Externe Filter**
-(Optional) Definiert Filter zum Abgleichen der externen URLs von Link-Zielen. Wenn die Link-Ziele dem Filter entsprechen, wird der Link nachverfolgt.  Externe Filter sind nützlich, um nur einige externe Links auf Ihren Seiten nachzuverfolgen.
+(Optional) Definiert Filter zum Abgleichen der externen URLs der Link-Ziele. Wenn die Link-Ziele dem Filter entsprechen, wird der Link nachverfolgt. Externe Filter sind nützlich, um nur einige externe Links auf Ihren Seiten nachzuverfolgen.
 
-  Um die nachzuverfolgenden externen Links festzulegen, geben Sie die URL des Link-Ziels vollständig oder teilweise ein. Trennen Sie mehrere Filter durch Kommas.  Schließen Sie Zeichenfolgenliterale in einfache Anführungszeichen ein.  Ist kein Wert angegeben (Standardwert `''`, zwei einfache Anführungszeichen), werden alle externen Links nachverfolgt.
+  Um die nachzuverfolgenden externen Links festzulegen, geben Sie die URL des Link-Ziels vollständig oder teilweise ein. Trennen Sie mehrere Filter durch Kommas. Schließen Sie Zeichenfolgenliterale in einfache Anführungszeichen ein. Ist kein Wert angegeben (Standardwert `''`, zwei einfache Anführungszeichen), werden alle externen Links nachverfolgt.
 
 * **Interne Filter**
-Definiert Filter zum Abgleichen der URLs interner Links. Wenn der Link URLs zum Ziel hat, die diesem Filter entsprechen, wird der Link nicht nachverfolgt.  Der Standardwert ist ein JavaScript-Befehl, der den Host-Namen der URL für die aktuelle Fensteradresse zurückgibt.
+Definiert Filter zum Abgleichen der URLs interner Links. Wenn der Link URLs zum Ziel hat, die diesem Filter entsprechen, wird der Link nicht nachverfolgt. Der Standardwert ist ein JavaScript-Befehl, der den Host-Namen der URL für die aktuelle Fensteradresse zurückgibt.
 
-  Um die nicht nachverfolgten internen Links festzulegen, geben Sie die interne URL des Link-Ziels vollständig oder teilweise ein. Trennen Sie mehrere Filter durch Kommas.  Schließen Sie Zeichenfolgenliterale in einfache Anführungszeichen ein.
+  Um die nicht nachverfolgten internen Links festzulegen, geben Sie die interne URL des Link-Ziels vollständig oder teilweise ein. Trennen Sie mehrere Filter durch Kommas. Schließen Sie Zeichenfolgenliterale in einfache Anführungszeichen ein.
 
   Der Standardwert ist `'javascript:,'+window.location.hostname`
 
-* **Suchbegriff belassen**
-Schließt URL-Parameter ein, wenn Übereinstimmungen mit internen und externen Filtern bewertet werden.
+* **Abfragezeichenfolge beibehalten**
+Schließt URL-Parameter bei der Bewertung von Übereinstimmungen mit internen und externen Filtern ein.
 
   Aktivieren Sie diese Eigenschaft, um URL-Parameter beim Bewerten von Link-Ziel-URLs gegenüber externen und internen Filtern einzuschließen.
 
@@ -120,7 +118,7 @@ So senden Sie Variablendaten bei Link-Klicks:
 
 Eigenschaften zum Senden von Variablendaten bei Link-Klicks:
 
-* **Ereignisse für Hyperlink-Überwachung**
+* **Ereignisse nachverfolgen**
 Geben Sie die Adobe Analytics-Ereignisvariablen ein, die zum Zählen der Link-Klicks verwendet werden sollen.
 
   Trennen Sie mehrere Variablennamen durch Kommas.
@@ -178,7 +176,7 @@ Dieses Beispiel zeigt, wie die Zuordnung im Zusammenhang mit der Überwachung un
  </tbody>
 </table>
 
-1. Ziehen Sie die Suchkomponente in den Zuordnungsbereich des Frameworks.  Die Suchkomponente gehört zur allgemeinen Komponentengruppe im Sidekick.  Konfigurieren Sie die Zuordnung gemäß der folgenden Tabelle, indem Sie die Analytics-Variable (SiteCatalyst-Variable) aus dem linken Seitenbereich ziehen:
+1. Ziehen Sie die Suchkomponente in den Zuordnungsbereich des Frameworks. Die Suchkomponente gehört zur allgemeinen Komponentengruppe im Sidekick. Konfigurieren Sie die Zuordnung gemäß der folgenden Tabelle, indem Sie die Analytics-Variable (SiteCatalyst-Variable) aus dem linken Seitenbereich ziehen:
 
 <table>
  <tbody>
@@ -258,7 +256,7 @@ Die in Adobe Marketing Cloud Debugger angezeigten Aufrufdetails ähneln dem folg
 
 ## Ad-hoc-Linktracking {#ad-hoc-link-tracking}
 
-Mit Ad-hoc-Linktracking können Inhaltsautorinnen und Inhaltsautoren das Linktracking für eine Komponente konfigurieren.  Die Konfiguration der Komponente setzt die **Linktracking-Konfiguration** des Frameworks außer Kraft. Auf mit dem Framework verknüpften Seiten können daher **Textkomponenten** für das Linktracking von URLs konfiguriert werden.
+Mit Ad-hoc-Linktracking können Inhaltsautorinnen und Inhaltsautoren das Linktracking für eine Komponente konfigurieren. Die Konfiguration der Komponente setzt die **Linktracking-Konfiguration** des Frameworks außer Kraft. Auf mit dem Framework verknüpften Seiten können daher **Textkomponenten** für das Linktracking von URLs konfiguriert werden.
 
 Durch eine Ad-hoc-Hyperlink-Überwachung können Sie Download-Links und externe Links zusammen mit Ereignis- und Variablendaten nachverfolgen.
 
@@ -278,7 +276,7 @@ Konfigurieren Sie das Adobe Analytics-Framework, um die Ad-hoc-Hyperlink-Überwa
 
    >[!NOTE]
    >
-   >Nicht alle Benutzertypen haben Zugriff auf dieses Kontrollkästchen.  Wenden Sie sich an Ihre Site-Administratorin bzw. Ihren Site-Administrator, wenn Sie Zugriff benötigen.
+   >Nicht alle Benutzertypen haben Zugriff auf dieses Kontrollkästchen. Wenden Sie sich an Ihre Site-Administratorin bzw. Ihren Site-Administrator, wenn Sie Zugriff benötigen.
 
 >[!NOTE]
 >

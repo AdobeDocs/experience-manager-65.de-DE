@@ -12,11 +12,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1637'
-ht-degree: 100%
-
+source-wordcount: '1651'
+ht-degree: 99%
 ---
-
 
 # AEM-Tagging-Framework {#aem-tagging-framework}
 
@@ -36,7 +34,7 @@ Taggen von Inhalten und Verwenden der AEM-Tagging-Infrastruktur:
 * Der `NodeType` des mit Tags versehenen Inhaltsknotens muss das Mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin) beinhalten.
 * Die [`TagID`](#tagid) wird zur Eigenschaft [`cq:tags`](#tagged-content-cq-tags-property) des Inhaltsknotens hinzugefügt, was einen Knoten vom Typ ` [cq:Tag](#tags-cq-tag-node-type)` ergibt.
 
-## Tags: cq:Tag-Knotentyp  {#tags-cq-tag-node-type}
+## Tags : cq:Tag-Knotentyp  {#tags-cq-tag-node-type}
 
 Die Deklaration eines Tags wird im Repository in einem Knoten vom Typ `cq:Tag` erfasst
 
@@ -78,7 +76,7 @@ In AEM ist der Basispfad `/content/cq:tags` und der Stammknoten ist vom Typ `cq:
 
 ### Tag-Namespace {#tag-namespace}
 
-Mithilfe von Namespaces können Sie Elemente gruppieren. Der vorherrschende Anwendungsfall besteht darin, einen Namespace pro Site (z. B. öffentlich, intern und Portal) oder pro größerer Anwendung (z. B. WCM, Assets oder Communitys) zu verwenden. Namespaces können aber auch anderweitig eingesetzt werden. Namespaces werden in der Benutzeroberfläche verwendet, um nur die Untergruppe von Tags (d. h. die Tags eines bestimmten Namespace) anzuzeigen, die auf den aktuellen Inhalt anwendbar sind.
+Mithilfe von Namespaces können Sie Elemente gruppieren. Der vorherrschende Anwendungsfall besteht darin, einen Namespace pro Site (z. B. öffentlich, intern und Portal) oder pro größerer Anwendung (z. B. WCM, Assets oder Communitys) zu verwenden. Namespaces können aber auch anderweitig eingesetzt werden. Namespaces werden in der Benutzeroberfläche verwendet, um nur die Teilmenge von Tags (d. h. die Tags eines bestimmten Namespace) anzuzeigen, die auf den aktuellen Inhalt anwendbar sind.
 
 Der Namespace des Tags ist die erste Ebene im Teilbaum der Taxonomie, der den Knoten direkt unterhalb des [Stammknotens der Taxonomie darstellt](#taxonomy-root-node). Ein Namespace ist ein Knoten vom Typ `cq:Tag`, dessen übergeordnetes Element nicht vom Knotentyp `cq:Tag` ist.
 
@@ -129,7 +127,7 @@ Eine typische Vorgehensweise umfasst Folgendes:
 * Gewähren von Lesezugriff für Benutzer/Autoren auf alle Namespaces, die sie lesen können müssen (meist alle).
 * Gewähren von Schreibzugriff für Benutzerinnen und Benutzer bzw. Autorinnen und Autoren auf die Namespaces, bei denen Tags durch Benutzerinnen und Benutzer bzw. Autorinnen und Autoren frei definierbar sein müssen (Hinzufügen eines Knotens unter `/content/cq:tags/some_namespace`).
 
-## Tag-barer Inhalt: cq:Taggable-Mixin {#taggable-content-cq-taggable-mixin}
+## Taggable Content : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
 Damit Anwendungsentwicklerinnen und -entwickler einen Inhaltstyp mit Tags versehen können, muss die Registrierung eines Knotens ([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html)) das Mixin `cq:Taggable` oder das Mixin `cq:OwnerTaggable` umfassen.
 
@@ -178,14 +176,14 @@ Im Folgenden finden Sie eine Beschreibung der Auswirkungen, die im Repository au
 
 * Wenn ein Tag A verschoben oder mit Tag B unter `/content/cq:tags` zusammengeführt wird:
 
-   * Tag A wird nicht gelöscht und erhält eine `cq:movedTo`-Eigenschaft.
-   * Tag B wird erstellt (im Falle einer Verschiebung) und erhält eine `cq:backlinks`-Eigenschaft.
+  * Tag A wird nicht gelöscht und erhält eine `cq:movedTo`-Eigenschaft.
+  * Tag B wird erstellt (im Falle einer Verschiebung) und erhält eine `cq:backlinks`-Eigenschaft.
 
 * `cq:movedTo` verweist auf Tag B.
 
-   * Diese Eigenschaft bedeutet, dass Tag A verschoben oder mit Tag B zusammengeführt wurde. Wird Tag B verschoben, wird diese Eigenschaft entsprechend aktualisiert. Tag A ist somit ausgeblendet und wird nur im Repository behalten, um Tag-IDs in Inhaltsknoten aufzulösen, die auf Tag A verweisen. Der Garbage Collector für Tags entfernt Tags wie Tag A, sobald keine Inhaltsknoten mehr darauf verweisen.
+  * Diese Eigenschaft bedeutet, dass Tag A verschoben oder mit Tag B zusammengeführt wurde. Wird Tag B verschoben, wird diese Eigenschaft entsprechend aktualisiert. Tag A ist somit ausgeblendet und wird nur im Repository behalten, um Tag-IDs in Inhaltsknoten aufzulösen, die auf Tag A verweisen. Der Garbage Collector für Tags entfernt Tags wie Tag A, sobald keine Inhaltsknoten mehr darauf verweisen.
 
-   * Ein spezieller Wert für die Eigenschaft `cq:movedTo` ist `nirvana`. Er wird angewendet, wenn das Tag gelöscht wird, aber nicht aus dem Repository entfernt werden kann, weil untergeordnete Tags mit `cq:movedTo` vorhanden sind, die beibehalten werden müssen.
+  * Ein spezieller Wert für die Eigenschaft `cq:movedTo` ist `nirvana`. Er wird angewendet, wenn das Tag gelöscht wird, aber nicht aus dem Repository entfernt werden kann, weil untergeordnete Tags mit `cq:movedTo` vorhanden sind, die beibehalten werden müssen.
 
   >[!NOTE]
   >
@@ -205,13 +203,13 @@ Im Folgenden finden Sie eine Beschreibung der Auswirkungen, die im Repository au
 
 * Das Lesen einer `cq:tags`-Eigenschaft eines Inhaltsknotens umfasst die folgende Auflösung:
 
-   1. Wenn unter `/content/cq:tags` keine Übereinstimmung verfügbar ist, wird kein Tag zurückgegeben.
+  1. Wenn unter `/content/cq:tags` keine Übereinstimmung verfügbar ist, wird kein Tag zurückgegeben.
 
-   1. Wenn das Tag eine `cq:movedTo`-Eigenschaft aufweist, steht danach die referenzierte Tag-ID.
+  1. Wenn das Tag eine `cq:movedTo`-Eigenschaft aufweist, steht danach die referenzierte Tag-ID.
 
-      * Dieser Schritt wird so lange wiederholt, wie das angehängte Tag eine `cq:movedTo`-Eigenschaft aufweist.
+     * Dieser Schritt wird so lange wiederholt, wie das angehängte Tag eine `cq:movedTo`-Eigenschaft aufweist.
 
-   1. Falls das angehängte Tag nicht über eine `cq:movedTo`-Eigenschaft verfügt, wird das Tag gelesen.
+  1. Falls das angehängte Tag nicht über eine `cq:movedTo`-Eigenschaft verfügt, wird das Tag gelesen.
 
 * Um eine Änderung zu veröffentlichen, wenn ein Tag verschoben oder zusammengeführt wurde, müssen der Knoten `cq:Tag` und all seine Backlinks repliziert werden. Dies geschieht automatisch, wenn das Tag in der Tag-Verwaltungskonsole aktiviert wird.
 

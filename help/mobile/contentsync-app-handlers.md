@@ -1,21 +1,23 @@
 ---
 title: Vorkonfigurierte App-Handler
+
 description: Auf dieser Seite erfahren Sie mehr über die nativen Handler für Adobe PhoneGap Enterprise mit AEM.
+
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
+
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
 solution: Experience Manager
 feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1419'
 ht-degree: 0%
-
 ---
-
 # Vorkonfigurierte App-Handler{#out-of-the-box-app-handlers}
 
 {{ue-over-mobile}}
@@ -43,7 +45,7 @@ Im Folgenden sind vordefinierte App-Handler aufgeführt:
 
 * ***includeImages - Boolescher Wert*** - Optionale boolesche Eigenschaft, die bestimmt, ob Bilder einbezogen werden sollen. Der Standardwert lautet *true*.
 
-   * Standardmäßig werden nur Bildkomponenten mit dem Ressourcentyp „foundation/components/image“ für die Aufnahme berücksichtigt.
+  * Standardmäßig werden nur Bildkomponenten mit dem Ressourcentyp „foundation/components/image“ für die Aufnahme berücksichtigt.
 
 * ***includeVideos - Boolesch*** - Optionale boolesche Eigenschaft, die bestimmt, ob Videos einbezogen werden sollen. Der Standardwert lautet *true*.
 
@@ -53,7 +55,7 @@ Im Folgenden sind vordefinierte App-Handler aufgeführt:
 
 >[!NOTE]
 >
->Der Ressourcentyp der Bild- und Videokomponenten, die von diesem Handler betroffen sind, wird durch Konfigurieren der Eigenschaften von *com.adobe.cq.mobile.platform.impl.contentSync.handler* festgelegt.*MobilePagesUpdateHandler-OSGi-Dienst*.
+>Der Ressourcentyp der Bild- und Videokomponenten, die von diesem Handler betroffen sind, wird durch Konfigurieren der Eigenschaften des *com.adobe.cq.mobile.platform.impl.contentsync.handler*.*MobilePagesUpdateHandler OSGi-Service* festgelegt.
 
 **mobilepageassets** Erfasst Seiten-Assets für die App.
 
@@ -86,7 +88,7 @@ Dieser Handler sollte zu jeder ContentSync-Konfiguration für AEM-Apps hinzugef�
 
 **mobilecontentpaketlisting** Listet das AEM-Inhaltspaket in einer bestimmten App und die Server-URL auf, an die Aktualisierungsanfragen gesendet werden sollen. Dies wird auf dem Client-seitigen JS-Gerät verwendet, um Inhaltsaktualisierungen anzufordern
 
-Der Handler sollte in der ContentSync-Konfiguration der AEM-App-Shell (Knoten mit „page-type=app-instance„) verwendet werden.
+Der Handler sollte in der ContentSync-Konfiguration der AEM-App-Shell (Knoten mit „page-type=app-instance„) verwendet werden
 
 * ***type - String - mobilecontentpaketlisting***
 * ***path &#x200B;**-**String*** - Pfad zu einer App-Shell (Knoten mit pge-type=app-instance).
@@ -132,7 +134,7 @@ Dieser Handler sollte in einer Shell-ContentSync-Konfiguration der AEM-App verwe
 
 Dies wird zur Kompilierungszeit verwendet, um das AMS-Plug-in für die Analytics-Unterstützung zu konfigurieren.
 
-Der Handler sollte in der ContentSync-Konfiguration der AEM-App-Shell (Knoten mit „page-type=app-instance„) verwendet werden.
+Der Handler sollte in der ContentSync-Konfiguration der AEM-App-Shell (Knoten mit „page-type=app-instance„) verwendet werden
 
 * ***type - Zeichenfolge*** - mobileADBMobileConfigJSON
 * ***path - String*** - Pfad zu einer App-Shell (Knoten mit pge-type=app-instance oder einem RT, der /libs/mobileapps/core/components/instance erweitert)
@@ -140,7 +142,7 @@ Der Handler sollte in der ContentSync-Konfiguration der AEM-App-Shell (Knoten mi
 
 **notificationsconfig** Extrahiert die auf dem Gerät erforderlichen Benachrichtigungskonfigurationen. Die Eigenschaften werden aus der entsprechenden Push-Service-Cloud-Service-Konfiguration extrahiert, die mit der App verknüpft ist.
 
-Nicht-AEM-Eigenschaften im Knoten „jcr:content“ des Cloud-Service werden extrahiert und der JSON-Datei &quot;**-notifications-config.json** hinzugefügt, um sie in den WWW-Stamm des App-Inhalts aufzunehmen.
+Eigenschaften, die nicht zu AEM gehören, im jcr:content-Knoten des Cloud-Service werden extrahiert und der JSON-Datei **pge-notifications-config.json** hinzugefügt, um sie in den WWW-Stamm des App-Inhalts aufzunehmen.
 
 AEM-Eigenschaften sind diejenigen, die durch „cq“, „sling“ oder „jcr“ mit Namensraum versehen sind. Andere Eigenschaften können mithilfe der Eigenschaft „excludeProperties“ im Knoten content-syncConfig ausgeschlossen werden.
 
@@ -152,9 +154,9 @@ AEM-Eigenschaften sind diejenigen, die durch „cq“, „sling“ oder „jcr�
 * ***type - String*** - contentSyncConfigContent
 * ***path - String*** - Pfad zu einer der folgenden:
 
-   * eine andere ContentSync-Konfiguration
-   * zu einem Inhaltspaket hinzufügen (wird seine phonegap-exportTemplate-Eigenschaft verwenden, um seine ContentSync-Konfiguration zu finden)
-   * zu einer mobilen Ressource hinzufügen (App-content wird unter dieser Ressource gefunden und wenn diese Inhaltspakete eine page-includeInBuild-Eigenschaft aufweisen, die „true“ ist, wird die phonegap-exportTemplate verwendet, um die ContentSync-Konfiguration zu finden)
+  * eine andere ContentSync-Konfiguration
+  * zu einem Inhaltspaket hinzufügen (wird seine phonegap-exportTemplate-Eigenschaft verwenden, um seine ContentSync-Konfiguration zu finden)
+  * zu einer mobilen Ressource hinzufügen (App-content wird unter dieser Ressource gefunden und wenn diese Inhaltspakete eine page-includeInBuild-Eigenschaft aufweisen, die „true“ ist, wird die phonegap-exportTemplate verwendet, um die ContentSync-Konfiguration zu finden)
 
 * ***autoCreateFirstUpdateBeforeImport - Boolesch*** - Wenn „true“, erstellen Sie eine erste **Aktualisierung** in der Zielkonfiguration, bevor Sie importieren, falls „once“ noch nicht vorhanden ist
 
