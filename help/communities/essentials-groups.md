@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '442'
 ht-degree: 1%
-
 ---
-
 # Community-Hauptgruppen  {#community-group-essentials}
 
 Die Funktion „Community-Gruppen“ bietet die Möglichkeit, dass autorisierte Benutzer aus der Veröffentlichungs- und Autorenumgebung innerhalb einer Community-Site eine Untergemeinschaft dynamisch erstellen.
@@ -34,7 +32,7 @@ Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack) ist es 
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
-   <td>cq.social.hbs.communitygroups</td>
+   <td>CQ.social.hbs.communityGroups</td>
   </tr>
   <tr>
    <td> <strong>Vorlagen</strong></td>
@@ -61,7 +59,7 @@ Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack) ist es 
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
-   <td>cq.social.hbs.communitygroups</td>
+   <td>CQ.social.hbs.communityGroups</td>
   </tr>
   <tr>
    <td> <strong>Vorlagen</strong></td>

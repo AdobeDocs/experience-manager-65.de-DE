@@ -1,6 +1,6 @@
 ---
 title: Community-Gruppen
-description: Erfahren Sie, wie Sie mit der Funktion „Community-Gruppen“ von autorisierten Benutzenden in Publish und Author dynamisch eine Unter-Community innerhalb einer Community-Site erstellen können.
+description: Erfahren Sie, wie Sie mit der Funktion „Community-Gruppen“ dynamisch eine Unter-Community innerhalb einer Community-Site von autorisierten Benutzern in der Veröffentlichungs- und Autoreninstanz erstellen können.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '565'
 ht-degree: 1%
-
 ---
-
 # Community-Gruppen {#community-groups}
 
 Die Funktion „Community-Gruppen“ bietet die Möglichkeit, dass autorisierte Benutzer (Community-Mitglieder und Autoren) aus der Veröffentlichungs- und Autorenumgebung innerhalb einer Community-Site dynamisch eine Untergemeinschaft erstellen.

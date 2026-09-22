@@ -12,11 +12,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2253'
 ht-degree: 2%
-
 ---
-
 # Community-Funktionen{#community-functions}
 
 Die von einem Community-Erlebnis erwarteten Funktionen sind bekannt. Community-Funktionen sind als Community-Funktionen verfügbar. Im Wesentlichen handelt es sich um eine oder mehrere Seiten, die vorkonfiguriert sind, um eine Community-Funktion zu implementieren, die mehr erfordert als nur das Hinzufügen einer Komponente zu einer Seite im Autorenmodus. Sie sind die Bausteine, die zum Definieren der Struktur einer [Community-Site-Vorlage](/help/communities/sites.md) verwendet werden, aus der Community-Sites [erstellt](/help/communities/sites-console.md).
@@ -37,7 +35,7 @@ So gelangen Sie in der Autorenumgebung zur Community-Funktionskonsole:
 
 ## Vordefinierte Funktionen {#pre-built-functions}
 
-Im Folgenden finden Sie eine kurze Beschreibung der Funktionen, die mit AEM Communities bereitgestellt werden. Jede Funktion enthält eine oder mehrere AEM-Seiten mit Communities-Komponenten, die zu einer Funktion zusammengefügt wurden, die einfach in eine [Community-Site-Vorlage“ integriert &#x200B;](/help/communities/sites.md) kann.
+Im Folgenden finden Sie eine kurze Beschreibung der Funktionen, die mit AEM Communities bereitgestellt werden. Jede Funktion umfasst eine oder mehrere AEM-Seiten mit Communities-Komponenten, die zu einer Funktion zusammengefügt sind, die einfach in eine [Community-Site-Vorlage“ integriert &#x200B;](/help/communities/sites.md) kann.
 
 Eine Community-Site-Vorlage stellt die Struktur für eine Community-Site bereit, einschließlich Anmeldung, Benutzerprofilen, Benachrichtigungen, Messaging, Site-Menü, Suche, Themen und Branding-Funktionen.
 
@@ -226,10 +224,10 @@ Beim Hinzufügen zu einer Vorlage wird das folgende Dialogfeld geöffnet:
 
   Wenn diese Option aktiviert ist, erlaubt das Forum nur privilegierten Mitgliedern, Themen zu posten, indem es die Auswahl einer [privilegierten Mitglieder - Sicherheitsgruppe](/help/communities/users.md#privileged-members-group) erlaubt. Wenn diese Option nicht ausgewählt ist, dürfen alle Community-Mitglieder Beiträge veröffentlichen. Die Auswahl von Standard ist deaktiviert.
 
-* **Publish-Erstellung zulassen**
+* **Erstellung von Veröffentlichungen zulassen**
 
   Wenn diese Option aktiviert ist, können autorisierte Community-Mitglieder in der Veröffentlichungsumgebung eine Gruppe erstellen. Wenn diese Option deaktiviert ist, können neue Gruppen (Untergruppen) nur in der Autorenumgebung über die Konsole „Sites-Gruppen“ der Communities-Sites erstellt werden.
-Standard ist ausgewählt.
+  Standard ist ausgewählt.
 
 ### Ideen-Funktion {#ideation-function}
 
@@ -272,17 +270,17 @@ Wenn sie zu einer Vorlage hinzugefügt werden, wird das folgende Dialogfeld geö
 * **Badge anzeigen**
 
   Wenn diese Option aktiviert ist, wird eine Spalte für Abzeichen-Symbole in der Leaderboard eingefügt.
-Die Auswahl von Standard ist deaktiviert.
+  Die Auswahl von Standard ist deaktiviert.
 
 * **Badge-Name anzeigen**
 
   Wenn diese Option aktiviert ist, wird eine Spalte für den Badge-Namen in der Leaderboard-Liste angezeigt.
-Die Auswahl von Standard ist deaktiviert.
+  Die Auswahl von Standard ist deaktiviert.
 
 * **Avatar anzeigen**
 
   Wenn diese Option aktiviert ist, wird das Avatarbild des Mitglieds in der Rangliste neben dem Namen des Mitglieds und dem Link zu seinem Mitgliederprofil angezeigt.
-Die Auswahl von Standard ist deaktiviert.
+  Die Auswahl von Standard ist deaktiviert.
 
 ### Seitenfunktion {#page-function}
 

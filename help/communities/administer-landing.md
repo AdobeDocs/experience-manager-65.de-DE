@@ -11,11 +11,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '453'
 ht-degree: 5%
-
 ---
-
 # Communities-Sites {#communities-sites}
 
 Dieser Abschnitt richtet sich an alle, die AEM Communities verwalten, und geht von ihrer Vertrautheit mit AEM Communities-Funktionen aus.
@@ -33,22 +31,22 @@ Einen Überblick und Tutorials zu den ersten Schritten finden Sie unter:
 
 * Communities [Konsolen](consoles.md)
 
-   * [Sites](sites-console.md)
+  * [Sites](sites-console.md)
 
-      * [Gruppen (Untergruppen)](groups.md)
+    * [Gruppen (Untergruppen)](groups.md)
 
-   * [Moderation](moderation.md)
-   * [Mitglieder- und Gruppenverwaltung](members.md)
-   * [Berichte](reports.md)
+  * [Moderation](moderation.md)
+  * [Mitglieder- und Gruppenverwaltung](members.md)
+  * [Berichte](reports.md)
 
 * Communities [*Tools*](tools.md):
 
-   * [Site-Vorlagen](sites.md)
-   * [Gruppenvorlagen](tools-groups.md)
-   * [Community-Funktionen](functions.md)
-   * [Speicherkonfiguration](srp-config.md)
-   * [Komponenten-Leitfaden](components-guide.md)
-   * [Zeichen](badges.md)
+  * [Site-Vorlagen](sites.md)
+  * [Gruppenvorlagen](tools-groups.md)
+  * [Community-Funktionen](functions.md)
+  * [Speicherkonfiguration](srp-config.md)
+  * [Komponenten-Leitfaden](components-guide.md)
+  * [Zeichen](badges.md)
 
 
 ### Benutzergenerierte Inhalte {#user-generated-content}
@@ -68,7 +66,7 @@ Eine wichtige Funktion von AEM Communities ist die Generierung benutzergeneriert
 * [Tunneldienst](deploy-communities.md#tunnel-service-on-author): Ermöglicht den Zugriff auf Mitglieder und Mitgliedergruppen auf der Veröffentlichungsseite über die Autorenumgebung.
 * [Mitglieder- und Gruppenkonsolen](members.md): Ermöglicht die Erstellung und Verwaltung von Mitgliedern auf der Veröffentlichungsseite und von der Autorenumgebung aus.
 * [Benutzersynchronisierung](sync.md): für die Synchronisierung von Mitgliedern und Mitgliedergruppen über mehrere Veröffentlichungsinstanzen hinweg.
-* [Social-Media-Anmeldung mit Facebook und Twitter](social-login.md): Möglichkeit für Site-Besuchende, mit ihren Facebook- oder Twitter-Anmeldeinformationen Community-Mitglied zu werden.
+* [Social-Media-Anmeldung mit Facebook und Twitter](social-login.md): Möglichkeit für Besuchende der Website, über ihre Facebook- oder Twitter-Anmeldeinformationen Community-Mitglied zu werden.
 * [Punktzahl und Abzeichen](implementing-scoring.md): Möglichkeit, Abzeichen zuzuweisen, um die Rollen eines Mitglieds zu identifizieren und Abzeichen durch die Teilnahme an der Community zu erwerben.
 * [Benachrichtigungen](notifications.md): Möglichkeit für Mitglieder, über Aktivitäten benachrichtigt zu werden, denen sie folgen.
 * [Abonnements](subscriptions.md): Möglichkeit für Mitglieder, über externe E-Mails mit der Community zu interagieren.

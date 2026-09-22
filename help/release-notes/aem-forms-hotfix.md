@@ -1,18 +1,20 @@
 ---
-title: Hotfixes für AEM Forms
-description: Enthält Informationen zum Herunterladen und Installieren eines Hotfixes für AEM Forms.
+title: Hotfixes für AEM 6.5 Forms
+description: Enthält Informationen zum Herunterladen und Installieren eines Hotfixes für AEM 6.5 Forms. Informationen zu AEM 6.5 LTS finden Sie im Artikel AEM Forms 6.5 LTS Hotfixes .
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 11e155ed72caf8f75bd2d8c8293723f24fe82945
+source-git-commit: 8133fcba5caddc7c0054766a92a32e28bfbc6b21
 workflow-type: tm+mt
-source-wordcount: '4751'
-ht-degree: 69%
+source-wordcount: '4809'
+ht-degree: 68%
 ---
-# Hotfixes für Adobe Experience Manager Forms{#aem-form-hotfix}
+# Hotfixes für Adobe Experience Manager 6.5 Forms{#aem-form-hotfix}
 
 In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die implementiert wurden, um bekannte Probleme zu beheben, die Systemstabilität zu verbessern und die Gesamtleistung von AEM Forms zu verbessern.
+
+Dieser Artikel gilt für AEM 6.5 Forms (ohne LTS). Informationen zu AEM 6.5 LTS-Bereitstellungen finden Sie unter [Adobe Experience Manager Forms 6.5 LTS-Hotfixes](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/forms/adobe-experience-manager-forms-65-lts-hotfixes).
 
 >[!NOTE]
 >
@@ -73,6 +75,7 @@ In diesem Artikel werden die wichtigen Fehlerbehebungen aufgelistet, die impleme
     <li><b>FORMS-26617</b> In WebLogic schlägt die Datenbankkonfiguration über Configuration Manager bei Verwendung des Microsoft SQL Server JDBC-Treibers 12.10.0 mit „Kein geeigneter Treiber gefunden“ fehl. Dieser Hotfix stellt eine erfolgreiche Datenquellenkonfiguration wieder her.</li>
     <li><b>FORMS-27869</b> PDFs werden nach der Installation des neuesten AEM Forms 6.5-Builds langsam geöffnet. Dieser Hotfix verbessert die Leistung beim Öffnen von Dokumenten.</li>
     </ul>
+    <p><strong>Build:</strong> AEMForms-6.5.0-0134</p>
     </td>
   </tr>
   <tr>

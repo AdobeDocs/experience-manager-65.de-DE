@@ -11,11 +11,9 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '399'
 ht-degree: 5%
-
 ---
-
 # Entwicklung von Communities  {#developing-communities}
 
 ## Überblick {#overview}
@@ -61,7 +59,7 @@ AEM Communities-Komponenten, -Funktionen und -Funktionen stellen die Bausteine f
 ## Community-Mitglieder {#community-members}
 
 * [Verwalten von Benutzern und Benutzergruppen](users.md)
-* [Social-Media-Anmelden mit Facebook und Twitter](social-login.md)
+* [Social Login mit Facebook und Twitter](social-login.md)
 
 ## Community-Gruppen {#community-groups}
 
