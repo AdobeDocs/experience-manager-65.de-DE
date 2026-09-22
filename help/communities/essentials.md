@@ -11,16 +11,14 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '211'
 ht-degree: 16%
-
 ---
-
 # Komponenten-, Funktions- und Funktionsgrundlagen  {#component-function-and-feature-essentials}
 
-Adobe Experience Manager (AEM) Communities-Funktionen erfordern, dass Besuchende der Site Mitglied werden und sich bei der [Community-Site](overview.md#communitiessites) anmelden, bevor sie Inhalte posten können. Daher [Community-Site-Vorlagen](sites.md) aus denen eine Community-Site [erstellt](sites-console.md) erstellt wird, so konzipiert, dass sie eine Anmeldefunktion und Benutzerprofile, Messaging, Suche, Moderation und Übersetzung enthalten.
+Die Funktionen von Adobe Experience Manager (AEM) Communities erfordern, dass Besuchende der Site Mitglied werden und sich bei der [Community-Site](overview.md#communitiessites) anmelden, bevor sie Inhalte posten können. Daher [Community-Site-Vorlagen](sites.md) aus denen eine Community-Site [erstellt](sites-console.md) erstellt wird, so konzipiert, dass sie eine Anmeldefunktion und Benutzerprofile, Messaging, Suche, Moderation und Übersetzung enthalten.
 
-Eine Community-Site unterstützt Mitglieder beim Erstellen von Community[Gruppen, wenn die Funktion &#x200B;](functions.md#groups-function)Community-Gruppen“ in der ausgewählten Community-Site-Vorlage enthalten ist.
+Eine Community-Site unterstützt Mitglieder beim Erstellen von Community[Gruppen, wenn die Funktion ](functions.md#groups-function)Community-Gruppen“ in der ausgewählten Community-Site-Vorlage enthalten ist.
 
 Im Folgenden finden Sie Links zu wichtigen Informationen zu Komponenten, Funktionen und Funktionen von Communities.
 
@@ -30,10 +28,10 @@ Im Folgenden finden Sie Links zu wichtigen Informationen zu Komponenten, Funktio
 * [Bewertungen](reviews-basics.md)
 * [Strichliste](tally.md)
 
-   * [Likes](essentials-liking.md)
-   * [Bewertung](rating-basics.md)
-   * [Abstimmung](essentials-voting.md)
-   * *Abfrage (nicht mehr verfügbar)*
+  * [Likes](essentials-liking.md)
+  * [Bewertung](rating-basics.md)
+  * [Abstimmung](essentials-voting.md)
+  * *Abfrage (nicht mehr verfügbar)*
 
 ## Komponenten mit Funktionen {#components-with-functions}
 
@@ -66,7 +64,7 @@ Im Folgenden finden Sie Links zu wichtigen Informationen zu Komponenten, Funktio
 
 ## Javadocs {#javadocs}
 
-Die [Online](../../help/sites-developing/reference-materials.md)Javadocs spiegeln die in der Version AEM 6.3 verfügbaren APIs wider.
+Die [Online](../../help/sites-developing/reference-materials.md)Javadocs spiegeln die in AEM 6.3 verfügbaren APIs wider.
 Communities-APIs sind in `com.adobe.cq.social.*` Paketen enthalten.
 
 Für jedes [Feature Pack](deploy-communities.md#latestfeaturepack) wird eine JavaDoc-JAR bereitgestellt. Weitere Informationen finden Sie unter [Verwenden von Maven für Communities](maven.md#javadocs).
@@ -75,10 +73,10 @@ Für jedes [Feature Pack](deploy-communities.md#latestfeaturepack) wird eine Jav
 
 * [Social Component Framework (SCF)](scf.md)
 
-   * [Client-seitige Anpassungen](client-customize.md)
-   * [Server-seitige Anpassungen](server-customize.md)
-   * [Speicherressourcenanbieter - Übersicht](srp.md)
+  * [Client-seitige Anpassungen](client-customize.md)
+  * [Server-seitige Anpassungen](server-customize.md)
+  * [Speicherressourcenanbieter - Übersicht](srp.md)
 
-* [Codierungsrichtlinien &#x200B;](code-guide.md)
+* [Codierungsrichtlinien](code-guide.md)
 * [Tutorials](tutorials.md)
 * [Fehlerbehebung](troubleshooting.md)

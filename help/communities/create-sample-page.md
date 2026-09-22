@@ -11,14 +11,12 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '451'
 ht-degree: 1%
-
 ---
-
 # Erstellen einer Beispielseite {#create-a-sample-page}
 
-Ab AEM 6.1 Communities besteht der einfachste Weg, eine Beispielseite zu erstellen, darin, eine einfache Community-Site zu erstellen, die einfach aus einer Seitenfunktion besteht.
+Ab AEM 6.1 Communities ist der einfachste Weg, eine Beispielseite zu erstellen, die Erstellung einer einfachen Community-Site, die einfach aus einer Seitenfunktion besteht.
 
 Dazu gehört eine parsys-Komponente, mit der Sie [Komponenten für das Authoring aktivieren](basics.md#accessing-communities-components).
 
@@ -41,19 +39,19 @@ Wählen Sie in der globalen Navigation einer Autoreninstanz die Option **[!UICON
 * Klicken Sie auf `Create button`
 * GRUNDLEGENDE INFORMATIONEN
 
-   * `Name`: Einzelseitenvorlage
-   * `Description`: Eine aus einer einzelnen Seitenfunktion bestehende Vorlage.
-   * Klicken Sie auf `Enabled`
+  * `Name`: Einzelseitenvorlage
+  * `Description`: Eine aus einer einzelnen Seitenfunktion bestehende Vorlage.
+  * Klicken Sie auf `Enabled`
 
 ![site-template-editor](assets/site-template-editor.png)
 
 * STRUKTUR
 
-   * Ziehen Sie eine `Page` Funktion in den Vorlagengenerator
-   * Für Details zur Konfigurationsfunktion geben Sie Folgendes ein
+  * Ziehen Sie eine `Page` Funktion in den Vorlagengenerator
+  * Für Details zur Konfigurationsfunktion geben Sie Folgendes ein
 
-      * `Title`: einzelne Seite
-      * `URL`: Seite
+    * `Title`: einzelne Seite
+    * `URL`: Seite
 
 ![site-template-editor-structure](assets/site-template-editor1.png)
 
@@ -72,22 +70,22 @@ Wählen Sie nach dem Erstellen der Site-Vorlage in der globalen Navigation **[!U
 
 * Schritt `1 - Site Template`
 
-   * `Title`: Einfache Community-Site
-   * `Description`: Eine Community-Site, die aus einer einzigen Seite zum Experimentieren besteht.
-   * `Community Site Root: (leave blank)`
-   * `Community Site Base Language: English`
-   * `Name`: Beispiel
+  * `Title`: Einfache Community-Site
+  * `Description`: Eine Community-Site, die aus einer einzigen Seite zum Experimentieren besteht.
+  * `Community Site Root: (leave blank)`
+  * `Community Site Base Language: English`
+  * `Name`: Beispiel
 
-      * URL = http://localhost:4502/content/sites/sample
+    * URL = http://localhost:4502/content/sites/sample
 
-      * `Template`: `Single Page Template` auswählen
+    * `Template`: `Single Page Template` auswählen
 
-     ![create-community-site-template](assets/create-community-site-template.png)
+    ![create-community-site-template](assets/create-community-site-template.png)
 
 * Klicken Sie auf `Next`
 * Schritt `2 - Design`
 
-   * Beliebiges Design auswählen
+  * Beliebiges Design auswählen
 
 * Klicken Sie auf `Next`
 * Klicken Sie auf `Next`
@@ -98,7 +96,7 @@ Wählen Sie nach dem Erstellen der Site-Vorlage in der globalen Navigation **[!U
 
   ![create-community-site](assets/create-community-site.png)
 
-## Publish die Site {#publish-the-site}
+## Veröffentlichen der Site {#publish-the-site}
 
 ![publish-site](assets/publish-site.png)
 
@@ -116,6 +114,6 @@ Die URL lautet [http://localhost:4502/editor.html/content/sites/sample/en.html](
 
 Auf der einfachen Startseite können Sie sehen, was durch die Community-Funktionen und -Vorlagen vorverkabelt ist, und mit dem Hinzufügen und Konfigurieren von Community-Komponenten spielen.
 
-## Site auf Publish anzeigen {#view-site-on-publish}
+## Site bei Veröffentlichung anzeigen {#view-site-on-publish}
 
 Öffnen Sie die Seite nach dem Veröffentlichen auf der [Veröffentlichungsinstanz](http://localhost:4503/content/sites/sample/en.html) um mit den Funktionen als anonymer Site-Besucher, angemeldeter Mitglied oder Administrator zu experimentieren. Der Link Administration , der in der Autorenumgebung sichtbar ist, wird in der Veröffentlichungsumgebung nur angezeigt, wenn sich ein Administrator anmeldet.

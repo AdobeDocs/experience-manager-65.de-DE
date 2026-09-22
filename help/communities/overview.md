@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 2%
-
+source-wordcount: '1332'
+ht-degree: 1%
 ---
-
 # Übersicht über AEM Communities {#aem-communities-overview}
 
 Mit Adobe Experience Manager (AEM) Communities können Sie schnell eine lokale Community-Site erstellen, die die Leistung verbessert, die Site-Verwaltung verbessert und die Konvertierung von Site-Besuchern zu wertvollen Community-Mitgliedern fördert.
@@ -27,8 +25,8 @@ AEM Communities ermöglicht die Entwicklung einer Beziehung zu Site-Besuchern, d
 
 * **Informiert** durch Blogs, Fragen und Antworten sowie Veranstaltungskalender,
 * Beim **Gewinnen von** durch Foren, Kommentare und andere Community-Inhalte, die oft als benutzergenerierte Inhalte (User-Generated Content, UGC) bezeichnet werden.
-* Sie ermöglicht **Moderation** durch vertrauenswürdige Mitglieder in der Publish-Umgebung,
-* **Social-** mit Twitter und Facebook,
+* Sie ermöglicht **Moderation** durch vertrauenswürdige Mitglieder in der Veröffentlichungsumgebung,
+* **Social Login** mit Twitter und Facebook,
 * **Inline-Übersetzung** von Community-Inhalten,
 * **Erstellung von Community** Gruppen von der veröffentlichten Community-Site aus,
 * **Scoring** um Abzeichen zu vergeben,
@@ -46,34 +44,34 @@ Der [Assistent zur Site-Erstellung](/help/communities/sites-console.md):
 
 * Assembliert Funktionen der Site basierend auf der ausgewählten [Community-Site-Vorlage](/help/communities/sites.md) die:
 
-   * Erstellt aus [Community-Funktionen](#community-functions)
-   * Optionale [Community-](#communitygroups))
+  * Erstellt aus [Community-Funktionen](#community-functions)
+  * Optionale [Community-](#communitygroups))
 
 * Verwendet Einstellungen zum Konfigurieren von:
 
-   * Mäßigung
-   * Login
-   * Übersetzung
+  * Mäßigung
+  * Login
+  * Übersetzung
 
 * Bietet grundlegende Funktionen:
 
-   * Responsives Design: Verwendet [Twitter-Bootstrap-Designs](https://getbootstrap.com)
+  * Responsives Design: verwendet [Twitter Bootstrap-Designs](https://getbootstrap.com)
 
-   * Anmelden : Selbstregistrierung, [Social-](/help/communities/social-login.md)-Benutzerprofile
+  * Anmelden : Selbstregistrierung, [Social-](/help/communities/social-login.md)-Benutzerprofile
 
-      * Benachrichtigungen:
-Mitglieder sehen Ereignisse, die für sie relevant sind, sowie benutzergenerierte Inhalte, bei denen sie [@mentioned](/help/communities/overview.md#mentionssupport) sind.
+    * Benachrichtigungen:
+      Mitglieder sehen Ereignisse, die für sie relevant sind, sowie benutzergenerierte Inhalte, bei denen sie [@mentioned](/help/communities/overview.md#mentionssupport) sind.
 
-      * Messaging: Mitglieder können Nachrichten innerhalb der Community-Site senden oder empfangen.
-      * Suche: Möglichkeit, innerhalb der Community-Site zu suchen.
-      * Sprachwechsel: Möglichkeit zur Auswahl einer Sprache für eine [mehrsprachige Website](/help/sites-administering/translation.md).
+    * Messaging: Mitglieder können Nachrichten innerhalb der Community-Site senden oder empfangen.
+    * Suche: Möglichkeit, innerhalb der Community-Site zu suchen.
+    * Sprachwechsel: Möglichkeit zur Auswahl einer Sprache für eine [mehrsprachige Website](/help/sites-administering/translation.md).
 
-      * Administration: Zugriff für autorisierte Mitglieder zur Moderation und Verwaltung von Benutzern innerhalb der Community-Site.
+    * Administration: Zugriff für autorisierte Mitglieder zur Moderation und Verwaltung von Benutzern innerhalb der Community-Site.
 
 * Beseitigt viele Bearbeitungsschritte auf Seitenebene:
 
-   * Branding: Optionaler Upload eines Bannerbilds zur Anzeige auf allen Seiten der Community-Site
-   * Navigationsmenü: Navigationslinks sind für die Funktionen in der Community-Site-Vorlage verfügbar.
+  * Branding: Optionaler Upload eines Bannerbilds zur Anzeige auf allen Seiten der Community-Site
+  * Navigationsmenü: Navigationslinks sind für die Funktionen in der Community-Site-Vorlage verfügbar.
 
 Um zu erfahren, wie einfach es ist, schnell eine Community-Site zu erstellen, besuchen Sie [Erste Schritte mit AEM Communities](/help/communities/getting-started.md).
 
@@ -87,7 +85,7 @@ Weitere Informationen zur Persistenz von Community-Inhalten und empfohlenen Bere
 
 * [Community-Inhaltsspeicher](/help/communities/working-with-srp.md) - Erläutert die verfügbaren SRP-Speicheroptionen für UGC.
 * [Empfohlene Topologien](/help/communities/topologies.md) - Erläutert Topologien basierend auf Anwendungsfall und SRP-Auswahl.
-* [Upgrade auf AEM 6.5 Communities](/help/communities/upgrade.md) liefert nützliche Informationen über benutzergenerierten Inhalt beim Wechsel zu AEM 6.5.
+* [Upgrade auf AEM 6.5 Communities](/help/communities/upgrade.md) - liefert nützliche Informationen zum benutzergenerierten Inhalt beim Wechsel zu AEM 6.5.
 
 ## Communities-Konsolen {#communities-consoles}
 
@@ -95,47 +93,47 @@ In der Autorenumgebung bietet die globale Navigationskonsole Zugriff auf die [Co
 
 * [Sites](/help/communities/sites-console.md)-Konsole
 
-   * Site-Erstellung
-   * Site-Bearbeitung
-   * Site-Management
-   * [Community-](/help/communities/groups.md)-Konsole
+  * Site-Erstellung
+  * Site-Bearbeitung
+  * Site-Management
+  * [Community-](/help/communities/groups.md)-Konsole
 
 * [Moderation](/help/communities/moderation.md)-Konsole
 
-   * Allgemeine Benutzeroberfläche für die Massenmoderation für Authoring- und Publish-Umgebungen.
-   * Neue Filterkriterien.
+  * Allgemeine Benutzeroberfläche für die Massenmoderation für Autoren- und Veröffentlichungsumgebungen.
+  * Neue Filterkriterien.
 
 * [Mitglieder und Gruppen](/help/communities/members.md) Verwaltungskonsolen
 
-   * Ermöglicht das Erstellen und Verwalten von veröffentlichungsseitigen Benutzern (Mitgliedern) aus der Autorenumgebung.
-   * Ermöglicht das Verbot von Mitgliedern.
-   * Ermöglicht das Erstellen und Verwalten von Benutzergruppen auf der Veröffentlichungsseite (Mitgliedsgruppen) in der Autorenumgebung.
+  * Ermöglicht das Erstellen und Verwalten von veröffentlichungsseitigen Benutzern (Mitgliedern) aus der Autorenumgebung.
+  * Ermöglicht das Verbot von Mitgliedern.
+  * Ermöglicht das Erstellen und Verwalten von Benutzergruppen auf der Veröffentlichungsseite (Mitgliedsgruppen) in der Autorenumgebung.
 
 * [Reports](/help/communities/reports.md)-Konsole
 
-   * Ermöglicht die Erstellung von Berichten zu Arbeitsaufträgen, Beiträgen und Ansichten.
+  * Ermöglicht die Erstellung von Berichten zu Arbeitsaufträgen, Beiträgen und Ansichten.
 
 Die globale Tools-Konsole bietet Zugriff auf die folgenden Communities-Tools:
 
 * [Site-Vorlagen](/help/communities/tools.md#sitetemplatesconsole)-Konsole
 
-   * Erstellen und Verwalten von Community-Site-Vorlagen.
+  * Erstellen und Verwalten von Community-Site-Vorlagen.
 
 * [Gruppenvorlagen](/help/communities/tools.md#grouptemplatesconsole)-Konsole
 
-   * Erstellen und Verwalten von Community-Gruppenvorlagen.
+  * Erstellen und Verwalten von Community-Gruppenvorlagen.
 
 * [Community-Funktionen](/help/communities/tools.md#communityfunctionsconsole) Konsole
 
-   * Community-Funktionen erstellen und verwalten
+  * Community-Funktionen erstellen und verwalten
 
 * [Speicherkonfiguration](/help/communities/tools.md#storageconfiguratonconsole) Konsole
 
-   * Wählen Sie den [Common Store](/help/communities/working-with-srp.md) für die Site aus und konfigurieren Sie ihn.
+  * Wählen Sie den [Common Store](/help/communities/working-with-srp.md) für die Site aus und konfigurieren Sie ihn.
 
 * [Komponenten-Leitfaden](/help/communities/components-guide.md)
 
-   * Eine Beispiel-Website [Community-Komponenten](https://localhost:4502/editor.html/content/community-components/en.html) bietet ein Beispiel für alle Communities-Komponenten mit ihrer Standardkonfiguration und der Möglichkeit, mit ihnen zu experimentieren.
+  * Eine Beispiel-Website [Community-Komponenten](https://localhost:4502/editor.html/content/community-components/en.html) bietet ein Beispiel für alle Communities-Komponenten mit ihrer Standardkonfiguration und der Möglichkeit, mit ihnen zu experimentieren.
 
 ## Community-Site-Vorlagen {#community-site-templates}
 
@@ -149,7 +147,7 @@ Siehe die [Site-Vorlagenkonsole](/help/communities/sites.md).
 
 Die von einem Community-Erlebnis erwarteten Funktionen sind bekannt. In AEM Communities sind diese Funktionen als Bausteine verfügbar, die als Community-Funktionen bezeichnet werden.
 
-Community-Funktionen sind normale AEM-Seiten und enthalten Komponenten, die zu einer Funktion verkabelt sind, die einfach in eine Community-Site-Vorlage integriert werden kann.
+Community-Funktionen sind normale AEM-Seiten, die Komponenten enthalten, die zu einer Funktion verkabelt sind, die einfach in eine Community-Site-Vorlage integriert werden kann.
 
 Siehe [Community-Funktionskonsole](/help/communities/functions.md).
 
@@ -201,20 +199,20 @@ Um zu erfahren, wie einfach es ist, schnell eine Interaktions-Community aufzubau
 
 Der [AEM-Demomaschine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) verwaltet und führt Demos für AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Communities](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) und [Forms](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms) aus, für die häufig mehr Setup erforderlich ist als das einfache Starten einer QuickStart-Instanz. Der AEM-Demomaschine richtet zusätzliche [Infrastrukturen](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) wie MongoDB, Solr, MySQL, FFmpeg und E-Mail-Server ein.
 
-Der AEM-Demomaschine umfasst:
+Der AEM Demo-Computer umfasst:
 
-* Eine [grafische &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/User%20Interface).
+* Eine [grafische ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/User%20Interface).
 * Apache ANT-Skripte mit konfigurierbaren [Eigenschaften](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Properties) und [Zielen](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Command%20Line).
 
 * Zu installierende Pakete.
 
 Der AEM-Demomaschine wurde erfolgreich mit CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2, AEM 6.3 und AEM 6.4 unter Windows, macOS und Linux® getestet.
 
-Für den AEM-Demomaschine ist eine gültige AEM-Lizenz erforderlich.
+Für den AEM Demo-Computer ist eine gültige AEM-Lizenz erforderlich.
 
 >[!NOTE]
 >
->Sehen Sie sich eine [Videoeinführung](https://www.youtube.com/watch?v=zEE_zkR9fVQ&feature=youtu.be) zum AEM-Demomaschine an (13:26).
+>Sehen Sie sich eine [Videoeinführung](https://www.youtube.com/watch?v=zEE_zkR9fVQ&feature=youtu.be) zum AEM Demo-Computer (13:26) an.
 
 ## Dokumentation zu AEM Communities {#aem-communities-documentation}
 

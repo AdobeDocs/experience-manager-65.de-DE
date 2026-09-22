@@ -14,9 +14,7 @@ source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
-
 ---
-
 # Communities-Tools {#communities-tools}
 
 Melden Sie sich bei Ihrer Autoreninstanz an, um auf die Tools-Konsole für Communities zuzugreifen:
@@ -35,4 +33,4 @@ Melden Sie sich bei Ihrer Autoreninstanz an, um auf die Tools-Konsole für Commu
 
 * [Komponentenleitfaden](components-guide.md) - Öffnet eine interaktive Website, auf der Sie ausprobieren können, wie die SCF-Komponenten funktionieren und wie sie konfiguriert oder angepasst werden können.
 
-* [Badges](badges.md) - Konsole, über die benutzerdefinierte Badges zur Verwendung in (Scoring[&#x200B; und Badging-Regeln hinzugefügt werden können](implementing-scoring.md)
+* [Badges](badges.md) - Konsole, über die benutzerdefinierte Badges zur Verwendung in (Scoring[ und Badging-Regeln hinzugefügt werden können](implementing-scoring.md)

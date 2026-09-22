@@ -14,9 +14,7 @@ source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 2%
-
 ---
-
 # Erste Schritte mit AEM Communities {#getting-started-with-aem-communities}
 
 AEM Communities ermöglicht es Unternehmen, aus einer Bibliothek von Site-Vorlagen dedizierte Community-Erlebnisse mit Marken zu erstellen. Foren, Gruppen, Blogs, File Sharing, Kalender, Aktivitäts-Feeds und erweiterte Benutzerprofile können in Ihre Website integriert werden, um Interaktionen zwischen Interessenten, Kunden und Unternehmen zu fördern.

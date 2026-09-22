@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '520'
 ht-degree: 2%
-
 ---
-
 # Community-Website-Grundlagen {#community-site-essentials}
 
 ## Benutzerdefinierte Site-Vorlage {#custom-site-template}
@@ -74,7 +72,7 @@ Identifizieren Sie die benutzerdefinierte Vorlage, indem Sie dem Konfigurationsk
 
 Denken Sie daran **„Alle speichern** und benutzerdefinierten Code auf allen Adobe Experience Manager (AEM)-Instanzen zu replizieren (benutzerdefinierter Code ist nicht enthalten, wenn die Inhalte der Community-Site über die Konsole veröffentlicht werden).
 
-Die empfohlene Vorgehensweise für das Replizieren von benutzerdefiniertem Code besteht darin[&#x200B; ein Paket zu erstellen &#x200B;](../../help/sites-administering/package-manager.md#creating-a-new-package) es auf allen Instanzen bereitzustellen.
+Die empfohlene Vorgehensweise für das Replizieren von benutzerdefiniertem Code besteht darin[ ein Paket zu erstellen ](../../help/sites-administering/package-manager.md#creating-a-new-package) es auf allen Instanzen bereitzustellen.
 
 ## Community-Site exportieren {#exporting-a-community-site}
 
@@ -106,9 +104,9 @@ So identifizieren Sie mit CRXDE die eindeutige Site-ID, die mit der Community-Si
 
   Beispiel: Wenn `rep:principalName = community-enable-nrh9h-members`
 
-   * **Site name** = *enable*
-   * **site ID** = *nrh9h*
-   * **eindeutige Site-ID** = *enable-nrh9h*
+  * **Site name** = *enable*
+  * **site ID** = *nrh9h*
+  * **eindeutige Site-ID** = *enable-nrh9h*
 
 ### Benutzergenerierte Inhalte {#user-generated-content}
 

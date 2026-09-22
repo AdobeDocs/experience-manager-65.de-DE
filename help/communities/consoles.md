@@ -11,11 +11,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '326'
 ht-degree: 0%
-
 ---
-
 # Communities-Konsolen {#communities-consoles}
 
 Die Konsolen von AEM Communities, die in der Autorenumgebung über das globale Navigationsfenster verfügbar sind, bieten Zugriff auf Verwaltungsaufgaben, z. B.:
@@ -28,13 +26,13 @@ Die Konsolen von AEM Communities, die in der Autorenumgebung über das globale N
 * Erstellen [benutzerdefinierte Abzeichen](badges.md)
 * Konfigurieren des [Standardspeichers für benutzergenerierten Inhalt](srp-config.md)
 
-Wenn [UGC-Speicher](working-with-srp.md) als gemeinsamer Speicher von Authoring- und Publish-Umgebungen konfiguriert ist, [&#128279;](moderation.md) die Moderationskonsole sowohl in Authoring- als auch in Publish-Umgebungen auf einer einzelnen Instanz von UGC.
+Wenn [UGC-Speicher](working-with-srp.md) als gemeinsamer Speicher für Autoren- und Veröffentlichungsumgebungen konfiguriert ist, ](moderation.md) die [Moderationskonsole in Autoren- und Veröffentlichungsumgebungen auf einer einzelnen Instanz von UGC.
 
 In der Autorenumgebung sind die `Communities` Konsolen nach der Anmeldung mit Administratorrechten über die Konsolen Navigation und Tools verfügbar.
 
 >[!NOTE]
 >
->In der Publish-Umgebung zeigt eine [Community-Site](sites-console.md) ein `Administration` Menüelement an, wenn das angemeldete Mitglied über die entsprechenden Berechtigungen verfügt.
+>In der Veröffentlichungsumgebung zeigt eine [Community-Site](sites-console.md) ein `Administration` Menüelement an, wenn das angemeldete Mitglied über die entsprechenden Berechtigungen verfügt.
 
 ## Globales Navigationsfenster {#global-navigation-panel}
 
@@ -51,15 +49,15 @@ Um auf die verschiedenen Communities-Konsolen zuzugreifen, wählen Sie in der gl
 
 * [Sites](sites-console.md)
 
-  Auf die Sites-Konsole kann in der Autorenumgebung zugegriffen werden, um Community-Sites und deren [&#x200B; zu erstellen und zu &#x200B;](groups.md).
+  Auf die Sites-Konsole kann in der Autorenumgebung zugegriffen werden, um Community-Sites und deren [ zu erstellen und zu ](groups.md).
 
 * [Moderation](moderation.md)
 
-  Die Moderationskonsole ist für die Massenmoderation von benutzergenerierten Inhalten und in der Autorenumgebung vorgesehen. Eine ähnliche Konsole für die Massenmoderation ist in der Publish-Umgebung für Community-Mitglieder verfügbar, denen die Rolle [Community-Moderator](users.md#publishenvironmentusersandgroups) für eine oder mehrere Community-Sites zugewiesen wurde.
+  Die Moderationskonsole ist für die Massenmoderation von benutzergenerierten Inhalten und in der Autorenumgebung vorgesehen. Eine ähnliche Konsole für die Massenmoderation ist in der Veröffentlichungsumgebung für Community-Mitglieder verfügbar, denen die Rolle [Community-Moderator](users.md#publishenvironmentusersandgroups) für eine oder mehrere Community-Sites zugewiesen wurde.
 
 * [Mitglieder, Gruppen](members.md)
 
-  Die Konsolen Mitglieder und Gruppen dienen der Verwaltung von Community-Mitgliedern und Mitgliedergruppen, die in der Publish-Umgebung in der Autorenumgebung vorhanden sind.
+  Die Konsolen Mitglieder und Gruppen dienen der Verwaltung von Community-Mitgliedern und Mitgliedergruppen, die in der Veröffentlichungsumgebung in der Autorenumgebung vorhanden sind.
 
 * [Berichte](reports.md)
 
@@ -67,4 +65,4 @@ Um auf die verschiedenen Communities-Konsolen zuzugreifen, wählen Sie in der gl
 
 ## Tools-Konsole {#tools-console}
 
-So greifen Sie über [&#x200B; globale Navigation auf &#x200B;](tools.md)Communities-Tools“ (früher die Administration-Console) zu: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**
+So greifen Sie über [ globale Navigation auf ](tools.md)Communities-Tools“ (früher die Administration-Console) zu: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**
