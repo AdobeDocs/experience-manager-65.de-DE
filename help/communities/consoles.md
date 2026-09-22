@@ -26,7 +26,7 @@ Die Konsolen von AEM Communities, die in der Autorenumgebung über das globale N
 * Erstellen [benutzerdefinierte Abzeichen](badges.md)
 * Konfigurieren des [Standardspeichers für benutzergenerierten Inhalt](srp-config.md)
 
-Wenn [UGC-Speicher](working-with-srp.md) als gemeinsamer Speicher für Autoren- und Veröffentlichungsumgebungen konfiguriert ist, ](moderation.md) die [Moderationskonsole in Autoren- und Veröffentlichungsumgebungen auf einer einzelnen Instanz von UGC.
+Wenn [UGC-Speicher](working-with-srp.md) als gemeinsamer Speicher für Autoren- und Veröffentlichungsumgebungen konfiguriert ist, [&#128279;](moderation.md) die Moderationskonsole in Autoren- und Veröffentlichungsumgebungen auf einer einzelnen Instanz von UGC.
 
 In der Autorenumgebung sind die `Communities` Konsolen nach der Anmeldung mit Administratorrechten über die Konsolen Navigation und Tools verfügbar.
 
@@ -49,7 +49,7 @@ Um auf die verschiedenen Communities-Konsolen zuzugreifen, wählen Sie in der gl
 
 * [Sites](sites-console.md)
 
-  Auf die Sites-Konsole kann in der Autorenumgebung zugegriffen werden, um Community-Sites und deren [ zu erstellen und zu ](groups.md).
+  Auf die Sites-Konsole kann in der Autorenumgebung zugegriffen werden, um Community-Sites und deren [&#x200B; zu erstellen und zu &#x200B;](groups.md).
 
 * [Moderation](moderation.md)
 
@@ -65,4 +65,4 @@ Um auf die verschiedenen Communities-Konsolen zuzugreifen, wählen Sie in der gl
 
 ## Tools-Konsole {#tools-console}
 
-So greifen Sie über [ globale Navigation auf ](tools.md)Communities-Tools“ (früher die Administration-Console) zu: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**
+So greifen Sie über [&#x200B; globale Navigation auf &#x200B;](tools.md)Communities-Tools“ (früher die Administration-Console) zu: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**

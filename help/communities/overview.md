@@ -201,7 +201,7 @@ Der [AEM-Demomaschine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine
 
 Der AEM Demo-Computer umfasst:
 
-* Eine [grafische ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/User%20Interface).
+* Eine [grafische &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/User%20Interface).
 * Apache ANT-Skripte mit konfigurierbaren [Eigenschaften](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Properties) und [Zielen](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Command%20Line).
 
 * Zu installierende Pakete.
