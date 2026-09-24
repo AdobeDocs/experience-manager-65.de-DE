@@ -1,10 +1,14 @@
 ---
 title: Auditprotokollwartung in AEM 6
+
 description: Erfahren Sie mehr über die Auditprotokollwartung in Adobe Experience Manager (AEM).
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
+
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
@@ -13,9 +17,7 @@ source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 100%
-
 ---
-
 # Auditprotokollwartung in AEM 6{#audit-log-maintenance-in-aem}
 
 AEM-Ereignisse, die sich für die Auditprotokollierung qualifizieren, generieren eine große Menge archivierter Daten. Diese Datenmenge kann aufgrund von Replikationen, Asset-Uploads und anderen Systemaktivitäten schnell anwachsen.
