@@ -32,7 +32,7 @@ Dieses Dokument enthält Anweisungen zum Beheben von zwei kritischen Sicherheits
 
 | AEM Forms-Version | Erforderliche Aktion |
 |-------------------|-----------------|
-| 6.5.22.0 | &#x200B;1. [Laden Sie den Hotfix für Ihre Umgebung ](/help/release-notes/aem-forms-hotfix.md). </br> 2. Um diesen Fix zu installieren, folgen Sie den Anweisungen unter [Installieren des Service Packs auf AEM Forms auf JEE](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). |
+| 6.5.22.0 | &#x200B;1. [Laden Sie den Hotfix für Ihre Umgebung &#x200B;](/help/release-notes/aem-forms-hotfix.md). </br> 2. Um diesen Fix zu installieren, folgen Sie den Anweisungen unter [Installieren des Service Packs auf AEM Forms auf JEE](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). |
 | 6.5.17.0–6.5.21.0 | [Verwenden Sie manuelle Abhilfemaßnahmen](#manual-mitigation-steps). |
 | 6,5 – 6.5.16.0 | &#x200B;1. [Installieren Sie das neueste Service Pack.](/help/release-notes/release-notes.md)<br>. [Implementieren Sie die geeignete Lösung](#version-specific-solutions) basierend auf Ihrer aktualisierten Version. |
 

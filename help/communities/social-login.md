@@ -114,7 +114,7 @@ Die [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
    ![fbSocialLoginConfigPng](assets/fbsocialloginconfigpng.png)
 
    * **[!UICONTROL Titel]** (*Erforderlich*) Geben Sie einen Anzeigetitel ein, der die Facebook-App identifiziert. Verwenden Sie den gleichen Namen wie den *Anzeigenamen* für die Facebook-App.
-   * **[!UICONTROL App-ID/API-]** (*erforderlich*) Geben Sie die ***App-ID*** für die Facebook-App ein. Dadurch wird die aus dem Dialogfeld erstellte Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider)-Instanz identifiziert.[
+   * **[!UICONTROL App-ID/API-]** (*erforderlich*) Geben Sie die ***App-ID*** für die Facebook-App ein. Dadurch wird die aus dem Dialogfeld erstellte Adobe Granite OAuth Application and Provider[&#128279;](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider)-Instanz identifiziert.
    * **[!UICONTROL App-Geheimnis]** (*Erforderlich*) Geben Sie das ***App-Geheimnis*** für die Facebook-App ein.
    * **[!UICONTROL Benutzer erstellen]** Wenn diese Option aktiviert ist, wird bei der Anmeldung mit einem Facebook-Konto ein AEM-Benutzereintrag erstellt und als Mitglied der ausgewählten Benutzergruppe(n) hinzugefügt.  Standard ist aktiviert (wird dringend empfohlen).
    * **[!UICONTROL Benutzer-IDs maskieren]**: Deaktivieren Sie diese Option.
@@ -132,7 +132,7 @@ Das Ergebnis ist eine [Adobe Granite OAuth Application and Provider](https://hel
 
 ### AEM Communities Facebook OAuth-Anbieter {#aem-communities-facebook-oauth-provider}
 
-Der AEM Communities-Anbieter erweitert die OAuth-Anwendungsinstanz und die Provider](#adobe-granite-oauth-application-and-provider)-Instanz von [Adobe Granite.
+Der AEM Communities-Anbieter erweitert die OAuth-Anwendungsinstanz und die Provider[&#128279;](#adobe-granite-oauth-application-and-provider)-Instanz von Adobe Granite.
 
 Dieser Anbieter muss für Folgendes bearbeitet werden:
 
@@ -268,7 +268,7 @@ Die Instanz [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-
 
    * **[!UICONTROL Consumer Key]**
 
-     (*Erforderlich*) Geben Sie den **Consumer (API) Key** für die Twitter-App ein. Dadurch wird die aus dem Dialogfeld erstellte Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider)-Instanz identifiziert.[
+     (*Erforderlich*) Geben Sie den **Consumer (API) Key** für die Twitter-App ein. Dadurch wird die aus dem Dialogfeld erstellte Adobe Granite OAuth Application and Provider[&#128279;](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider)-Instanz identifiziert.
 
    * **[!UICONTROL Consumer Secret]**
 
@@ -284,7 +284,7 @@ Die Instanz [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-
 
    * **[!UICONTROL Zu Benutzergruppen hinzufügen]**
 
-     Wählen Sie Benutzergruppe hinzufügen aus, um eine oder [ (](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html)) für die Community-Site auszuwählen, der Benutzer hinzugefügt werden sollen.
+     Wählen Sie Benutzergruppe hinzufügen aus, um eine oder [&#x200B; (](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html)) für die Community-Site auszuwählen, der Benutzer hinzugefügt werden sollen.
 
    >[!NOTE]
    >
@@ -344,7 +344,7 @@ Die nächsten Schritte sind für Facebook und Twitter gleich:
 
 ### AEM Communities Sites-Konsole {#aem-communities-sites-console}
 
-Nachdem ein Cloud-Service konfiguriert wurde, kann er für die entsprechende Einstellung zur Anmeldung bei einer Community-Site über das Unterbedienfeld [Benutzerverwaltung](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) „Einstellungen“ während der Erstellung einer Community[Site ](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) oder [](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties) aktiviert werden.
+Nachdem ein Cloud-Service konfiguriert wurde, kann er für die entsprechende Einstellung zur Anmeldung bei einer Community-Site über das Unterbedienfeld [Benutzerverwaltung](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) „Einstellungen“ während der Erstellung einer Community[Site &#x200B;](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) oder [&#128279;](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties) aktiviert werden.
 
 1. Wählen Sie den Site-Konfigurationskontext aus, in dem Sie Ihre Konfigurationen für die Anmeldung über Social Media gespeichert haben.
 

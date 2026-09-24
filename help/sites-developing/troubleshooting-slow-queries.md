@@ -47,7 +47,7 @@ In AEM 6.3 schlägt eine Abfrage standardmäßig fehl und löst einen Ausnahmefe
 
 #### Während der Entwicklung {#during-development}
 
-Erklären Sie **alle** Abfragen und stellen Sie sicher, dass die Abfragepläne nicht die **/&amp;ast; traverse** Erklärung enthalten. Beispiel für das Durchlaufen eines Abfrageplans:
+Erklären Sie **alle** Abfragen und stellen Sie sicher, dass die Abfragepläne nicht die **/&ast; traverse** Erklärung enthalten. Beispiel für das Durchlaufen eines Abfrageplans:
 
 * **PLAN:** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 

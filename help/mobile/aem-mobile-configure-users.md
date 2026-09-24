@@ -40,7 +40,7 @@ Mitglieder der Gruppe app-author sind für das Erstellen von Inhalten für AEM-M
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Nachdem Sie nun die Benutzergruppe app-authors erstellt haben, können Sie dieser neuen Gruppe über die [User Admin Console&quot; einzelne Team-Mitglieder ](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Nachdem Sie nun die Benutzergruppe app-authors erstellt haben, können Sie dieser neuen Gruppe über die [User Admin Console&quot; einzelne Team-Mitglieder &#x200B;](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
