@@ -11,11 +11,9 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 2%
-
+source-wordcount: '521'
+ht-degree: 3%
 ---
-
 # Konfigurieren von Benutzern und Benutzergruppen {#configure-your-users-and-user-groups}
 
 {{ue-over-mobile}}
@@ -26,7 +24,7 @@ In diesem Kapitel werden die Benutzerrollen und die Konfiguration Ihrer Benutzer
 
 ### Inhaltsautoren von AEM Mobile-Programmen (app-author-Gruppe) {#aem-mobile-application-content-authors-app-author-group}
 
-Mitglieder der Gruppe app-author sind für das Authoring von AEM-Mobile-App-Inhalten, einschließlich Seiten, Text, Bildern und Videos, verantwortlich.
+Mitglieder der Gruppe app-author sind für das Erstellen von Inhalten für AEM-Mobile-Apps, einschließlich Seiten, Text, Bildern und Videos, verantwortlich.
 
 #### Gruppenkonfiguration - app-authors {#group-configuration-app-authors}
 
@@ -36,13 +34,13 @@ Mitglieder der Gruppe app-author sind für das Authoring von AEM-Mobile-App-Inha
 
    Klicken Sie in der Benutzergruppenkonsole auf die Schaltfläche &quot;+&quot;, um eine Gruppe zu erstellen.
 
-   Legen Sie die ID dieser Gruppe auf „app-authors“ fest, um anzugeben, dass es sich um einen bestimmten Typ von Autorenbenutzergruppe handelt, der für das Authoring von Mobile Apps innerhalb von AEM spezifisch ist.
+   Legen Sie die ID dieser Gruppe auf „app-authors“ fest, um anzugeben, dass es sich um einen bestimmten Typ von Autorenbenutzergruppe handelt, der für das Authoring von Mobile Apps in AEM spezifisch ist.
 
 1. Mitglied zur Gruppe hinzufügen: Autoren
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Nachdem Sie nun die Benutzergruppe app-authors erstellt haben, können Sie dieser neuen Gruppe über die Admin Console „Benutzer[&#x200B; einzelne Team-Mitglieder &#x200B;](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Nachdem Sie nun die Benutzergruppe app-authors erstellt haben, können Sie dieser neuen Gruppe über die [User Admin Console&quot; einzelne Team-Mitglieder ](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -79,7 +77,7 @@ Mitglieder der Gruppe app-admins können Programminhalte mit den gleichen Berech
 
    >[!NOTE]
    >
-   >workflow-users sind erforderlich, um Remote-Build mit dem PhoneGap Build-Service durchzuführen
+   >workflow-users sind erforderlich, um Remote-Build mit PhoneGap-Build-Service zu erstellen
 
 1. Navigieren Sie zur [Konsole Berechtigungen](http://localhost:4502/useradmin) und fügen Sie Berechtigungen zum Verwalten von Cloud-Services hinzu
 
@@ -112,4 +110,4 @@ Mitglieder der Gruppe app-admins können Programminhalte mit den gleichen Berech
 Weitere Informationen zu den beiden anderen Rollen und Zuständigkeiten beim Erstellen einer AEM Mobile On-demand Services-App finden Sie in den folgenden Ressourcen:
 
 * [Entwickeln von AEM-Inhalten für AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
-* [Authoring von AEM-Inhalten für die AEM Mobile On-demand Services-App](/help/mobile/mobile-apps-ondemand.md)
+* [Verfassen von AEM-Inhalten für die AEM Mobile On-demand Services-App](/help/mobile/mobile-apps-ondemand.md)

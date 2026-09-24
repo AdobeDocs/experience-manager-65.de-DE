@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: f704b58a-7bd8-401e-8d7e-2cc3b580c570
 source-git-commit: d2ae4817720cae92b038789804124e0c2465f9c8
-workflow-type: ht
-source-wordcount: '563'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '672'
+ht-degree: 90%
 ---
-
 # Beheben von Spring Framework-Schwachstellen für AEM Forms on JEE
 
 Dieses Dokument enthält Anweisungen zum Beheben von zwei kritischen Sicherheitslücken im Spring Framework, die sich auf AEM Forms auf JEE auswirken:
@@ -34,9 +32,9 @@ Dieses Dokument enthält Anweisungen zum Beheben von zwei kritischen Sicherheits
 
 | AEM Forms-Version | Erforderliche Aktion |
 |-------------------|-----------------|
-| 6.5.22.0 | &#x200B;1. [Laden Sie den Hotfix für Ihre Umgebung herunter](/help/release-notes/aem-forms-hotfix.md). </br> 2. Um diesen Fix zu installieren, folgen Sie den Anweisungen unter [Installieren des Service Packs auf AEM Forms auf JEE](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). |
+| 6.5.22.0 | &#x200B;1. [Laden Sie den Hotfix für Ihre Umgebung ](/help/release-notes/aem-forms-hotfix.md). </br> 2. Um diesen Fix zu installieren, folgen Sie den Anweisungen unter [Installieren des Service Packs auf AEM Forms auf JEE](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). |
 | 6.5.17.0–6.5.21.0 | [Verwenden Sie manuelle Abhilfemaßnahmen](#manual-mitigation-steps). |
-| 6,5 – 6.5.16.0 | &#x200B;1. [Installieren Sie das neueste Service Pack](/help/release-notes/release-notes.md)<br>2. [Implementieren Sie die geeignete Lösung](#version-specific-solutions) basierend auf Ihrer aktualisierten Version. |
+| 6,5 – 6.5.16.0 | &#x200B;1. [Installieren Sie das neueste Service Pack.](/help/release-notes/release-notes.md)<br>. [Implementieren Sie die geeignete Lösung](#version-specific-solutions) basierend auf Ihrer aktualisierten Version. |
 
 > **Hinweis**: AEM Forms unterstützt offiziell nur die sechs neuesten Service Packs. Wer ältere Versionen benutzt, sollte zunächst ein Upgrade auf das neueste Service Pack durchführen und dann den erforderlichen Hotfix implementieren.
 
@@ -67,17 +65,17 @@ Bei der Arbeit mit einer eigenständigen Bereitstellung:
 1. So entfernen Sie Spring JARs aus Core EAR:
    1. Navigieren Sie zu `[Adobe_Experience_Manager_Forms installation directory]/deploy`.
    1. Öffnen Sie die Datei `adobe-core-<appserver>.ear` mit einem Archivierungs-Manager-Tool. Dabei kann `<appserver>` je nach Umgebung JBoss, WebLogic oder WebSphere sein:
-   - **Für JBoss**: Navigieren Sie zum Ordner `ear/lib` und löschen Sie die folgenden JAR-Dateien:
-– `spring-core-<version>.jar`
-– `spring-web-<version>.jar`
+   - **Für JBoss**: Navigieren Sie zum `ear/lib` Ordner und löschen Sie die folgenden JAR-Dateien:
+     - `spring-core-<version>.jar`
+     - `spring-web-<version>.jar`
 
    - **Für WebLogic oder WebSphere** Löschen Sie die folgenden JAR-Dateien aus dem Stamm der EAR:
-– `spring-core-<version>.jar`
-– `spring-web-<version>.jar`
+     - `spring-core-<version>.jar`
+     - `spring-web-<version>.jar`
 
-   - **Für alle Anwendungs-Server:** Öffnen Sie auf der Stammebene von `adobe-core-<appserver>.ear` die Datei `adobe-dscf.jar` und bearbeiten Sie die Datei `META-INF/MANIFEST.MF`, um alle Verweise auf die folgenden JAR-Dateien zu entfernen:
-– `spring-core-<version>.jar`
-– `spring-web-<version>.jar`
+   - **Für alle Anwendungs-Server:** Öffnen Sie auf der Stammebene der `adobe-core-<appserver>.ear` die `adobe-dscf.jar`-Datei und bearbeiten Sie die `META-INF/MANIFEST.MF`-Datei, um alle Verweise auf die folgenden JAR-Dateien zu entfernen:
+     - `spring-core-<version>.jar`
+     - `spring-web-<version>.jar`
 
 1. So ersetzen Sie JAR-Dateien aus der Geode-Verteilung:
    1. Navigieren Sie zu `<Adobe_Experience_Manager_Forms>/lib/caching/lib`
@@ -99,11 +97,11 @@ Bei der Arbeit mit einer eigenständigen Bereitstellung:
    - Suchen und Extrahieren Sie die Datei `META-INF/MANIFEST.MF`
    - Öffnen Sie die Datei „MANIFEST.MF“ in einem Texteditor.
    - Suchen Sie den Abschnitt „Class-Path“ und aktualisieren Sie alle Spring Framework-Verweise:
-      - `spring-core-<version>.jar` in `spring-core-6.1.14.jar`
-      - `spring-web-<version>.jar` in `spring-web-6.1.14.jar`
-      - `spring-context-<version>.jar` in `spring-context-6.1.14.jar`
-      - `spring-beans-<version>.jar` in `spring-beans-6.1.14.jar`
-      - `spring-jcl-<version>.jar` in `spring-jcl-6.1.14.jar`
+     - `spring-core-<version>.jar` in `spring-core-6.1.14.jar`
+     - `spring-web-<version>.jar` in `spring-web-6.1.14.jar`
+     - `spring-context-<version>.jar` in `spring-context-6.1.14.jar`
+     - `spring-beans-<version>.jar` in `spring-beans-6.1.14.jar`
+     - `spring-jcl-<version>.jar` in `spring-jcl-6.1.14.jar`
    - Speichern Sie die resultierende Datei „MANIFEST.MF“
    - Ersetzen Sie die ursprüngliche Datei „MANIFEST.MF“ in der JAR durch Ihre aktualisierte Version
    - Speichern Sie die JAR-Datei.
@@ -119,7 +117,7 @@ Bei der Arbeit mit einer eigenständigen Bereitstellung:
       - Stellen Sie sicher, dass keine alten Versionsverweise verbleiben
       - Testen Sie die Anwendung, um sicherzustellen, dass keine Probleme beim Laden von Klassen auftreten
 
-1. Führen Sie den Konfigurations-Manager aus. 
+1. Führen Sie den Konfigurations-Manager aus.
 
 1. Starten Sie die Server neu:
    - Starten Sie die Locator-Server mit JDK 17

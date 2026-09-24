@@ -1,21 +1,24 @@
 ---
 title: Schnellstarts zur Repository Service-API
+
 description: Verwenden Sie den Repository-Service von AEM Forms, um einen Ordner zu erstellen, eine Ressource zu schreiben, Ressourcen aufzulisten, eine Ressource zu lesen, eine Ressource zu aktualisieren, nach Ressourcen zu suchen, Beziehungen zwischen Ressourcen zu erstellen, eine Ressource zu sperren, Zugriffssteuerungslisten zu verwalten und eine Ressource zu löschen.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+
 role: Developer
 exl-id: 703b6798-d40f-4769-96fc-e440090ca983
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '648'
 ht-degree: 100%
-
 ---
-
 # Schnellstarts zur Repository Service-API {#repository-service-api-quick-starts}
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
@@ -56,7 +59,7 @@ Der Pfad zu einer Ressource im AEM Forms-Repository lautet:
 
 >[!NOTE]
 >
->Sie können das AEM Forms-Repository mithilfe eines Webbrowsers durchsuchen. Um das Repository zu durchsuchen, geben Sie die folgende URL in einen Webbrowser ein: `https://[server name]:[server port]/repository`. Mithilfe eines Webbrowsers können Sie die Ergebnisse der Kurzanleitung überprüfen. Wenn Sie beispielsweise Inhalte zum AEM Forms-Repository hinzufügen, können Sie den Inhalt in einem Webbrowser anzeigen.
+>Sie können das AEM Forms-Repository mithilfe eines Webbrowsers durchsuchen. Um das Repository zu durchsuchen, geben Sie die URL `https://[server name]:[server port]/repository` in einen Webbrowser ein. Mithilfe eines Webbrowsers können Sie die Ergebnisse der Kurzanleitung überprüfen. Wenn Sie beispielsweise Inhalte zum AEM Forms-Repository hinzufügen, können Sie den Inhalt in einem Webbrowser anzeigen.
 
 >[!NOTE]
 >
