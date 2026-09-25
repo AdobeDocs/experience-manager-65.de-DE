@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1033'
 ht-degree: 100%
-
 ---
-
 # Verbinden von AEM Forms mit Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
 
 Adobe Experience Manager (AEM) LiveCycle Connector ermöglicht einen unterbrechungsfreien Aufruf von Adobe LiveCycle ES4-Acrobat-Diensten aus AEM-Web-Apps und -Workflows. LiveCycle bietet ein reiches Client-SDK, das Client-Anwendungen ermöglicht, LiveCycle-Dienste mithilfe von Java™-APIs zu starten. AEM LiveCycle Connector vereinfacht die Verwendung dieser APIs innerhalb der OSGi-Umgebung.
@@ -52,7 +50,7 @@ Client-Anwendungen können LiveCycle-Dienste programmgesteuert über eine Java�
 
 AEM LiveCycle Connector vereinfacht den Ablauf, indem diese Client-Instanzen als OSGi-Dienste bereitgestellt werden, auf die über standardmäßige OSGi-Methoden zugegriffen werden kann. LiveCycle Connector umfasst die folgenden Funktionen:
 
-* Client-Instanzen als OSGi-Dienst: Die als OSGI-Bundles zusammengestellten Clients sind im Abschnitt [Liste der Acrobat-Dienste](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) aufgeführt. Jede Client-JAR-Datei registriert die Client-Instanz als OSGi-Dienst in der Registrierung des OSGi-Dienstes.
+* Client-Instanzen als OSGi-Dienst: Die als OSGI-Pakete zusammengestellten Clients sind im Abschnitt [Liste der Acrobat-Dienste](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) aufgeführt. Jede Client-JAR-Datei registriert die Client-Instanz als OSGi-Dienst in der Registrierung des OSGi-Dienstes.
 * Weitergabe von Benutzeranmeldeinformationen: Die erforderlichen Verbindungsdetails für die Verbindung mit dem LiveCycle-Server werden an einem zentralen Speicherort verwaltet.
 * ServiceClientFactory-Dienst: Zum Starten der Prozesse kann die Client-Anwendung auf die ServiceClientFactory-Instanz zugreifen.
 
