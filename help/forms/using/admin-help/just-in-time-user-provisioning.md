@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '612'
 ht-degree: 100%
-
 ---
-
 # Just-in-time-Benutzerbereitstellung {#just-in-time-user-provisioning}
 
 AEM Forms unterstützt die Just-in-time-Bereitstellung von Benutzenden, die noch nicht im User Management vorhanden sind. Bei der Just-in-time-Bereitstellung werden Benutzende automatisch zum User Management hinzugefügt, nachdem ihre Anmeldeinformationen erfolgreich authentifiziert wurden. Darüber hinaus werden relevante Rollen und Gruppen dynamisch den neuen Benutzenden zugewiesen.

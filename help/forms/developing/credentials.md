@@ -1,21 +1,24 @@
 ---
 title: Arbeiten mit Berechtigungen
+
 description: Importieren Sie Berechtigungen mithilfe der Trust Manager-API und der Java-API in AEM Forms. Erfahren Sie außerdem, wie Sie Berechtigungen mithilfe der Trust Manager-API und der Java-API löschen.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1100'
 ht-degree: 100%
-
 ---
-
 # Arbeiten mit Berechtigungen {#working-with-credentials}
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
@@ -57,7 +60,7 @@ Um eine Berechtigung in AEM Forms zu importieren, führen Sie die folgenden Schr
 1. Verweisen Sie auf die Berechtigung.
 1. Führen Sie den Importvorgang durch.
 
-**Schließen Sie Projektdateien ein**
+**Einschließen von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -71,7 +74,7 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 
 Weitere Informationen über den Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Erstellen eines Berechtigungs-Service-Clients**
+**Erstellen eines Service-Clients für die Berechtigung**
 
 Bevor Sie eine Berechtigung programmgesteuert in AEM Forms importieren können, müssen Sie einen Client für den Berechtigungs-Service erstellen. Weitere Informationen finden Sie unter [Festlegen von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
@@ -118,10 +121,10 @@ So importieren Sie eine Berechtigung mithilfe der Trust Manager-API (Java) in AE
    * Erstellen Sie ein Zeichenfolgen-Array, das ein Element enthält. Weisen Sie den Wert `truststore.usage.type.sign` dem Element zu.
    * Rufen Sie die `importCredential`-Methode des `CredentialServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
-      * Ein Zeichenfolgenwert, der den Alias für die Berechtigung angibt.
-      * Die `com.adobe.idp.Document`-Instanz, in der die Berechtigung gespeichert ist.
-      * Ein Zeichenfolgenwert, der das Passwort enthält, das mit der Berechtigung verknüpft ist.
-      * Das Zeichenfolgen-Array, das den Wert enthält, der die Verwendung bezeichnet. Sie können beispielsweise den Wert `truststore.usage.type.sign` angeben. Um eine Reader Extension-Berechtigung zu importieren, geben Sie `truststore.usage.type.lcre` an.
+     * Ein Zeichenfolgenwert, der den Alias für die Berechtigung angibt.
+     * Die `com.adobe.idp.Document`-Instanz, in der die Berechtigung gespeichert ist.
+     * Ein Zeichenfolgenwert, der das Passwort enthält, das mit der Berechtigung verknüpft ist.
+     * Das Zeichenfolgen-Array, das den Wert enthält, der die Verwendung bezeichnet. Sie können beispielsweise den Wert `truststore.usage.type.sign` angeben. Um eine Reader Extension-Berechtigung zu importieren, geben Sie `truststore.usage.type.lcre` an.
 
 **Siehe auch**
 
@@ -161,7 +164,7 @@ Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn S
 
 Weitere Informationen über den Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Erstellen eines Service-Clients für die Berechtigung**
+**Erstellen eines Berechtigungs-Service-Clients**
 
 Bevor Sie eine Berechtigung programmgesteuert löschen können, müssen Sie einen Client des Data Integration-Service erstellen. Beim Erstellen eines Service-Clients bestimmen Sie Verbindungseinstellungen, die zum Aufrufen eines Services erforderlich sind. Weitere Informationen finden Sie unter [Einrichten von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
