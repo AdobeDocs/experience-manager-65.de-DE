@@ -1,6 +1,6 @@
 ---
 title: Konsistenz- und Durchlaufprüfungen
-description: Erfahren Sie, wie Sie Konsistenz- und Ausnahmeprüfungen durchführen.
+description: Erfahren Sie, wie Sie Konsistenz- und Durchlaufprüfungen durchführen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '156'
 ht-degree: 100%
-
 ---
-
 # Konsistenz- und Durchlaufprüfungen{#consistency-and-traversal-checks}
 
 Beim Aktualisieren können aufgrund von Arbeitsbereichsinkonsistenzen Probleme auftreten. Sie können eine Testaktualisierung ausführen, um anzuzeigen, ob dies ein Problem darstellt, oder Konsistenzüberprüfungen als Präventivmaßnahme ausführen.
@@ -33,10 +31,10 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 
 Navigieren Sie zum Ausführen einer Konsistenzüberprüfung zur Verwaltungsseite für das JMX MBean **com.adobe.granite (Repository)**. Wechseln Sie auf dem AEM-Hauptbildschirm zu:
 
-**Tools > Webkonsole > Haupt (auf der Menüleiste) > JMX > com.adobe.granite (Repository)**
+**Tools > Web-Konsole > Haupt (auf der Menüleiste) > JMX > com.adobe.granite (Repository)**
 
 In einer Standardinstallation befindet er sich hier: **[|Anzeigen|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
 
-Im Abschnitt **Vorgänge** der Seite finden Sie zwei Methoden: **`traversalCheck`** und **`consistencyCheck`**.  Klicken Sie zum Ausführen einer Überprüfung auf den Vorgang und geben Sie die gewünschten Parameter ein.
+Im Abschnitt **Vorgänge** der Seite finden Sie zwei Methoden: **`traversalCheck`** und **`consistencyCheck`**. Klicken Sie zum Ausführen einer Überprüfung auf den Vorgang und geben Sie die gewünschten Parameter ein.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
