@@ -11,11 +11,9 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 100%
-
+source-wordcount: '534'
+ht-degree: 98%
 ---
-
 # Konfigurieren der Videokomponente {#configure-the-video-component}
 
 Mit der [Videokomponente](/help/sites-authoring/default-components-foundation.md#video) können Sie ein vordefiniertes, vorkonfiguriertes Video-Asset auf Ihrer Seite platzieren.
@@ -68,7 +66,7 @@ Gehen Sie wie folgt vor, um **AEM zu konfigurieren**:
 >
 >Diese Schritte sind nur erforderlich, wenn eine weitere Anpassung der Codecs erforderlich ist.
 
-1. Öffnen Sie [!UICONTROL CRXDE Lite] in einem Webbrowser. Besuchen Sie [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
+1. Öffnen Sie [!UICONTROL CRXDE Lite] in einem Webbrowser. Zugriff auf [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
 2. Wählen Sie den Knoten `/libs/settings/dam/video/format_aac/jcr:content` aus und stellen Sie sicher, dass die Knoteneigenschaften wie folgt lauten:
 
    * `audioCodec` ist `aac`.

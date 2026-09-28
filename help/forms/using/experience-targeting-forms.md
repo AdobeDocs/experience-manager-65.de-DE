@@ -10,11 +10,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 100%
-
+source-wordcount: '846'
+ht-degree: 96%
 ---
-
 # Erstellen zielgerichteter Erlebnisse in AEM Forms {#create-targeted-experiences-in-aem-forms}
 
 ## Integrieren von Adobe Target in AEM Forms {#integrate-adobe-target-with-aem-forms}
@@ -25,7 +23,7 @@ Informationen zum Konfigurieren von Adobe Target in AEM für die Verwendung mit 
 
 >[!NOTE]
 >
->Targeting ist möglich, wenn das adaptive Formular oder die interaktive Kommunikation über einen Hostnamen oder eine IP-Adresse wiedergegeben wird. Es schlägt fehl, wenn das adaptive Formular über localhost wiedergegeben wird.
+>Targeting ist möglich, wenn das adaptive Formular oder die interaktive Kommunikation über einen Hostnamen oder eine IP-Adresse wiedergegeben wird. Es schlägt fehl, wenn das adaptive Formular oder die interaktive Kommunikation über localhost wiedergegeben wird.
 
 ## Erstellen einer Target- Aktivität {#creating-a-target-activity}
 
@@ -36,8 +34,8 @@ Informationen zum Konfigurieren von Adobe Target in AEM für die Verwendung mit 
 1. Wählen Sie auf der Seite „Aktivitäten“ die Optionen **Erstellen > Marke erstellen** aus.
 1. Sie werden aufgefordert, eine Vorlage auswählen und Eigenschaften einzugeben.
 
-   Wählen Sie eine Vorlage aus und dann **Weiter.** Geben Sie den Titel Ihrer Marke im Abschnitt „Eigenschaften“ ein und wählen Sie **Erstellen.**
-Ihre Marke wird jetzt auf der Seite „Aktivitäten“ aufgeführt. 
+   Wählen Sie eine Vorlage aus und klicken Sie auf **Weiter.** Geben Sie den Titel Ihrer Marke im Abschnitt Eigenschaften ein und wählen Sie **Erstellen.**
+   Ihre Marke wird jetzt auf der Seite „Aktivitäten“ aufgeführt.
 
 1. Wählen Sie Ihre Marke auf der Seite „Aktivitäten“ aus.
 1. Wählen Sie unter „Primäres Gebiet“ für Ihre Marke die Optionen **Erstellen** > **Aktivität erstellen** aus.
@@ -98,7 +96,7 @@ Ihre Marke wird jetzt auf der Seite „Aktivitäten“ aufgeführt. 
 
 ## Überprüfen Sie, ob die erstellte Aktivität mit dem Target-Server synchronisiert wird. {#check-if-the-created-activity-syncs-with-the-target-server}
 
-Aktivitäten, die für das Targeting verwendet werden, werden mit dem Target-Server synchronisiert.  Um zu überprüfen, ob Ihre Aktivität mit dem Target-Server synchron ist, überprüfen Sie den Status Ihrer Aktivität auf Ihrer Markenseite.
+Aktivitäten, die für das Targeting verwendet werden, werden mit dem Target-Server synchronisiert. Um zu überprüfen, ob Ihre Aktivität mit dem Target-Server synchron ist, überprüfen Sie den Status Ihrer Aktivität auf Ihrer Markenseite.
 
 Vergewissern Sie sich, dass die Aktivität den Status „Synchronisiert“ aufweist.
 

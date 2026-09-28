@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: ht
-source-wordcount: '5405'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '5545'
+ht-degree: 99%
 ---
-
 # Integrieren von Adobe Experience Manager mit Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
 Adobe Dynamic Media Classic ist eine gehostete Lösung für die Verwaltung, Optimierung, Veröffentlichung und Bereitstellung von Rich-Media-Assets für Web-, Mobil-, E-Mail- und Internet-verbundene Anzeigen und Ausdrucke.
@@ -68,7 +66,7 @@ Wenn Sie innerhalb dieser Lösung mit Assets arbeiten, befolgen Sie diesen Workf
 
 Die von Ihnen für Dynamic Media verwendeten Komponenten befinden sich im Komponentenbereich **[!UICONTROL Dynamic Media]** im [Design-Modus](/help/sites-authoring/author-environment-tools.md#page-modes). Sie umfassen Folgendes:
 
-* **[!UICONTROL Dynamic Media]** – Die Komponente **[!UICONTROL Dynamic Media]** ist intelligent: In Abhängigkeit davon, ob Sie ein Bild oder Video hinzufügen, haben Sie verschiedene Optionen. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bildsets sowie Rotationssets, Sets für gemischte Medien und Videos. Zudem ist der Viewer dynamisch. Die Anzeigegröße ändert sich demnach automatisch auf Grundlage der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
+* **[!UICONTROL Dynamic Media]** – Die Komponente **[!UICONTROL Dynamic Media]** ist intelligent: In Abhängigkeit davon, ob Sie ein Bild oder Video hinzufügen, haben Sie verschiedene Optionen. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bild-Sets sowie Rotations-Sets, Sets für gemischte Medien und Videos. Zudem ist der Viewer dynamisch. Die Anzeigegröße ändert sich demnach automatisch auf Grundlage der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
 
 * **[!UICONTROL Interaktive Medien]** – Die Komponente **[!UICONTROL Interaktive Medien]** ist für Assets wie Karussellbanner, interaktive Bilder und interaktive Videos geeignet. Solche Assets weisen Interaktivität auf, z. B. Hotspots oder Imagemaps. Diese Komponente ist intelligent. Dies bedeutet: Je nachdem, ob Sie ein Bild oder Video hinzufügen, werden Ihnen unterschiedliche Optionen zur Verfügung gestellt. Zudem ist der Viewer responsiv. Die Größe des Bildschirms ändert sich demnach automatisch auf Grundlage der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
 
@@ -199,8 +197,8 @@ Sie können Assets entweder mithilfe der Assets-Funktion (Digital Asset Manageme
 * Dynamic Media Classic-Asset-Typen, die Experience Manager Assets noch nicht unterstützt, müssen über den Dynamic Media Classic-Inhaltsbrowser direkt von Dynamic Media Classic auf einer Experience Manager-Website hinzugefügt werden. Ein Beispiel sind Bildvorlagen.
 * Bei Asset-Typen, die sowohl von Experience Manager Assets als auch von Dynamic Media Classic unterstützt werden, hängt die Entscheidung über die Art des Uploads von Folgendem ab:
 
-   * Wo befinden sich die Assets heute
-   * Wie wichtig ihre Verwaltung in einem gemeinsamen Repository ist
+  * Wo befinden sich die Assets heute
+  * Wie wichtig ihre Verwaltung in einem gemeinsamen Repository ist
 
 Angenommen, die Assets befinden sich bereits in Dynamic Media Classic und ihre Verwaltung in einem gemeinsamen Repository ist nicht wichtig. In diesem Fall ist der Export der Assets in Experience Manager Assets nur, um sie für die Bereitstellung wieder mit Dynamic Media Classic zu synchronisieren, ein unnötiger Roundtrip. Adobe empfiehlt, dass Sie Assets in einem einzigen Repository speichern und nur zur Bereitstellung mit Dynamic Media Classic synchronisieren.
 
@@ -329,7 +327,7 @@ Eine Cloud-Konfiguration definiert die Zuordnung zwischen einem Dynamic Media Cl
 
    >[!CAUTION]
    >
-   >Je nach Größe des Dynamic Media Classic-Ordners kann der Import eines Stammordners viel Zeit in Anspruch nehmen. Darüber hinaus können Dynamic Media Classic-Daten den Experience Manager-Speicher überschreiten. Stellen Sie sicher, dass Sie den richtigen Ordner importieren. Der Import einer zu großen Datenmenge kann zur Unterbrechung Ihres Systems führen.
+   >Je nach Größe des Dynamic Media Classic-Ordners kann der Import eines Stammordners viel Zeit in Anspruch nehmen. Darüber hinaus können Dynamic Media Classic-Daten den Experience Manager-Speicher überschreiten. Stellen Sie sicher, dass Sie den richtigen Ordner importieren. Der Import einer zu großen Datenmenge kann zum Stopp Ihres Systems führen.
 
    ![chlimage_1-298](assets/chlimage_1-298.png)
 
@@ -563,7 +561,7 @@ Insbesondere konfigurieren Sie hier das vom MIME-Typ akzeptierte Dateiformat im 
 1. Wählen Sie auf der rechten Seite der Seite „CRXDE Lite“ die Registerkarte **[!UICONTROL Eigenschaften]** aus.
 1. Geben Sie einen Auftragsparameter für einen Dynamic Media Classic-Upload im Wertfeld **[!UICONTROL jobParam]** an.
 
-   Beispiel: `psprocess="rasterize"&psresolution=120`. 
+   Beispiel: `psprocess="rasterize"&psresolution=120`.
 
    Informationen zu weiteren Upload-Auftragsparametern, die Sie verwenden können, finden Sie in der [Adobe Dynamic Media Classic Image Production System-API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html?lang=de).
 
@@ -602,8 +600,8 @@ Wenn Sie Probleme bei der Integration von Experience Manager mit Dynamic Media C
 * Stellen Sie sicher, dass Sie die Cloud-Services-Konfiguration konfiguriert haben, um das automatische Hochladen zu aktivieren, und dass Sie den DAM-Asset-Workflow aktualisiert und gespeichert haben, sodass er das Hochladen in Dynamic Media Classic umfasst.
 * Stellen Sie beim Hochladen eines Bildes in einen Unterordner des Dynamic Media Classic-Zielordners sicher, dass Sie eine der folgenden Aktionen ausführen:
 
-   * Stellen Sie sicher, dass die Namen aller Assets unabhängig von ihrem Speicherort eindeutig sind. Andernfalls wird das Asset im Hauptzielordner gelöscht und es verbleibt nur das Asset im Unterordner.
-   * Ändern Sie, wie Dynamic Media Classic Assets im Bereich „Einstellungen“ des Dynamic Media Classic-Kontos überschreibt. Legen Sie nicht fest, dass Dynamic Media Classic Assets unabhängig vom Speicherort überschreibt, wenn Sie Assets mit dem gleichen Namen in Unterordnern verwenden.
+  * Stellen Sie sicher, dass die Namen aller Assets unabhängig von ihrem Speicherort eindeutig sind. Andernfalls wird das Asset im Hauptzielordner gelöscht und es verbleibt nur das Asset im Unterordner.
+  * Ändern Sie, wie Dynamic Media Classic Assets im Bereich „Einstellungen“ des Dynamic Media Classic-Kontos überschreibt. Legen Sie nicht fest, dass Dynamic Media Classic Assets unabhängig vom Speicherort überschreibt, wenn Sie Assets mit dem gleichen Namen in Unterordnern verwenden.
 
 **Wenn Ihre gelöschten Assets oder Ordner nicht zwischen Dynamic Media Classic und Experience Manager synchronisiert werden:**
 

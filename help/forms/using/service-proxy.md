@@ -1,21 +1,24 @@
 ---
 title: HTML5 Forms-Service-Proxy
+
 description: HTML5 forms Service Proxy ist eine Konfiguration, um einen Proxy zum Sendedienst anzumelden. Um den Dienst-Proxy zu konfigurieren, geben Sie die URL des Übermittlungsdienstes über den Anfrageparameter „submissionServiceProxy“ an.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
+
 docset: aem65
+
 feature: HTML5 Forms,Mobile Forms
 exl-id: 8f9b10ae-1600-49c2-a061-153a2a89c67e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '705'
 ht-degree: 100%
-
 ---
-
 # HTML5 Forms-Service-Proxy{#html-forms-service-proxy}
 
 HTML5 forms Service Proxy ist eine Konfiguration, um einen Proxy zum Sendedienst anzumelden. Um den Dienst-Proxy zu konfigurieren, geben Sie die URL des Übermittlungsdienstes über den Anfrageparameter *submissionServiceProxy* an.
@@ -24,10 +27,10 @@ HTML5 forms Service Proxy ist eine Konfiguration, um einen Proxy zum Sendedienst
 
 Der Service Proxy eliminiert Folgendes:
 
-* Der Arbeitsablauf von HTML5-Formularen erfordert Öffnen des Sendedienstes „//content/xfaforms/submission/default“ für HTML5-Formularbenutzer. Hierdurch werden AEM-Server einem breiteren, unbeabsichtigten Publikum zugänglich gemacht.
+* Der Workflow von HTML5-Formularen erfordert Öffnen des Sendedienstes „//content/xfaforms/submission/default“ für HTML5-Formularbenutzer. Hierdurch werden AEM-Server einem breiteren, unbeabsichtigten Publikum zugänglich gemacht.
 * Die Dienst-URL ist in das Laufzeitmodell des Formulars eingebettet. Der Pfad der Dienst-URL kann nicht geändert werden.
 * Die Übermittlung erfolgt in zwei Schritten. Zur Übermittlung der Formulardaten sind mindestens zwei Übermittlungen zum Server erforderlich. Dadurch erhöht sich die Server-Auslastung.
-* HTML5-Formulare senden Daten über eine POST-Anforderung statt über eine PDF-Anforderung. Für Arbeitsabläufe, die sowohl PDF- als auch HTML5-Formulare beinhalten, sind zwei unterschiedliche Methoden für die Sendeverarbeitung erforderlich.
+* HTML5-Formulare senden Daten über eine POST-Anforderung statt über eine PDF-Anforderung. Für Workflows, die sowohl PDF- als auch HTML5-Formulare beinhalten, sind zwei unterschiedliche Methoden für die Sendeverarbeitung erforderlich.
 
 ### Topologien {#topologies-br}
 
