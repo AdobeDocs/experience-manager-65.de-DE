@@ -1,10 +1,14 @@
 ---
 title: Erstellen einer effektiven Landingpage für Newsletter
-description: Eine effektive Startseite für Ihren Newsletter hilft Ihnen dabei, so viele Personen wie möglich dazu zu animieren, sich für Ihren Newsletter (oder eine andere E-Mail-Marketing-Kampagne) zu registrieren. Sie können die Informationen nutzen, die Sie aus Ihren Newsletter-Anmeldungen sammeln, um Leads zu gewinnen.
+
+description: Eine effektive Landingpage für Ihren Newsletter hilft Ihnen dabei, so viele Personen wie möglich dazu zu animieren, sich für Ihren Newsletter (oder eine andere E-Mail-Marketing-Kampagne) zu registrieren. Sie können die Informationen nutzen, die Sie aus Ihren Newsletter-Anmeldungen sammeln, um Leads zu gewinnen.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
+
 docset: aem65
 exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
 solution: Experience Manager, Experience Manager Sites
@@ -12,14 +16,12 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 100%
-
+source-wordcount: '612'
+ht-degree: 97%
 ---
-
 # Erstellen einer effektiven Landingpage für Newsletter{#creating-an-effective-newsletter-landing-page}
 
-Eine effektive Startseite für Ihren Newsletter hilft Ihnen dabei, so viele Personen wie möglich dazu zu animieren, sich für Ihren Newsletter (oder eine andere E-Mail-Marketing-Kampagne) zu registrieren. Sie können die Informationen nutzen, die Sie aus Ihren Newsletter-Anmeldungen sammeln, um Leads zu gewinnen.
+Eine effektive Landingpage für Ihren Newsletter hilft Ihnen dabei, so viele Personen wie möglich dazu zu animieren, sich für Ihren Newsletter (oder eine andere E-Mail-Marketing-Kampagne) zu registrieren. Sie können die Informationen nutzen, die Sie aus Ihren Newsletter-Anmeldungen sammeln, um Leads zu gewinnen.
 
 Um eine effektive Newsletter-Landingpage zu erstellen, müssen Sie Folgendes tun:
 
@@ -49,7 +51,7 @@ Informationen zum Erstellen Ihres eigenen Newsletter-Formulars finden Sie in der
 
 Die ausgeblendeten Felder in dem folgenden Beispiel enthalten die minimal erforderlichen Informationen (E-Mail); zusätzlich hierzu können Sie später weitere Felder hinzufügen, was jedoch Auswirkungen auf die Konversionsrate hat.
 
-Das folgende Beispiel ist ein Formular, das unter „https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html“ erstellt wurde.
+Das folgende Beispiel ist ein Formular, das unter https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html erstellt wurde.
 
 1. Erstellen Sie das Formular.
 

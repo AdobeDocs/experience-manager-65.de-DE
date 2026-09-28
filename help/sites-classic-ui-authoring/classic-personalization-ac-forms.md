@@ -1,21 +1,21 @@
 ---
 title: Erstellen von Adobe Campaign-Formularen in AEM
 description: Mit AEM können Sie Formulare erstellen und bearbeiten, die auf Ihrer Website mit Adobe Campaign interagieren. Bestimmte Felder können in Ihre Formulare eingefügt und der Adobe Campaign-Datenbank zugeordnet werden.
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
+
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 100%
-
+source-wordcount: '1231'
+ht-degree: 97%
 ---
-
 # Erstellen von Adobe Campaign-Formularen in AEM{#creating-adobe-campaign-forms-in-aem}
 
 Mit AEM können Sie Formulare erstellen und bearbeiten, die auf Ihrer Website mit Adobe Campaign interagieren. Bestimmte Felder können in Ihre Formulare eingefügt und der Adobe Campaign-Datenbank zugeordnet werden.
@@ -46,11 +46,11 @@ Damit Sie für Adobe Campaign spezifische Formulare erstellen können, müssen S
 
 Weitere Informationen hierzu finden Sie in der [Vorlagendokumentation](/help/sites-developing/page-templates-static.md#templateavailability).
 
-Überprüfen Sie zunächst, ob die Verbindung zwischen der Authoring- und der Publishing-Instanz und Adobe Campaign funktioniert. Weitere Informationen finden Sie unter [Integration mit Adobe Campaign Standard](/help/sites-administering/campaignstandard.md) oder [Integration mit Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md).
+Überprüfen Sie zunächst, ob die Verbindung zwischen der Authoring- und der Veröffentlichungsinstanz und Adobe Campaign funktioniert. Weitere Informationen finden Sie unter [Integration mit Adobe Campaign Standard](/help/sites-administering/campaignstandard.md) oder [Integration mit Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md).
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass die Eigenschaft **acMapping** im Knoten **jcr:content** der Seite auf den Wert **mapRecipient** bzw. **Profil** eingestellt ist, wenn Sie mit Adobe Campaign 6.1.x oder Adobe Campaign Standard arbeiten.
+>Stellen Sie sicher **dass die Eigenschaft** acMapping“ im Knoten **jcr:content** der Seite auf **mapRecipient** oder **profile** eingestellt ist, wenn Sie mit Adobe Campaign 6.1.x oder Adobe Campaign Standard arbeiten
 >
 
 ### Erstellen von Formularen {#creating-a-form}

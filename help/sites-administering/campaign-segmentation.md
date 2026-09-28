@@ -12,11 +12,9 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1139'
 ht-degree: 100%
-
 ---
-
 
 # Konfigurieren der Segmentierung {#configuring-segmentation}
 
@@ -85,7 +83,7 @@ Die folgenden Segmenteigenschaften sind standardmäßig verfügbar und können v
    <td>Schlüsselwörter, die mit Informationen aus der verweisenden Website abgeglichen werden. <br /> </td>
   </tr>
   <tr>
-   <td> Script</td>
+   <td> Skript</td>
    <td>Auszuwertender JavaScript-Ausdruck.<br /> </td>
   </tr>
   <tr>

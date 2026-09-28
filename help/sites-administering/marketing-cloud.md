@@ -11,11 +11,9 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '868'
 ht-degree: 100%
-
 ---
-
 # Integrieren mit Adobe Experience Cloud{#integrating-with-the-adobe-marketing-cloud}
 
 [Adobe Experience Cloud](https://business.adobe.com/de/products/marketing-cloud/main.html) enthält leistungsstarke Produkte zur Web-Analyse und Website-Optimierung, die umsetzbare Echtzeitdaten und Einblicke liefern, um erfolgreiche Online-Initiativen zu fördern. Es bietet eine integrierte und offene Plattform für die Optimierung Ihres Online-Business. Die Cloud besteht aus integrierten Anwendungen, mit denen Kundeneinblicke gesammelt und nutzbar gemacht werden können, um die Akquise, Konversion und Bindung von Kundinnen und Kunden sowie die Erstellung und Verteilung von Inhalten zu optimieren.

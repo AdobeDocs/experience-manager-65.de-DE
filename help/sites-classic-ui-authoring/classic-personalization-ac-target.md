@@ -11,11 +11,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '816'
 ht-degree: 100%
-
 ---
-
 # Targeting von Adobe Campaign{#targeting-your-adobe-campaign}
 
 Um Ihren Adobe Campaign-Newsletter als Ziel festzulegen, müssen Sie zunächst die Segmentierung einrichten, was nur in der klassischen Benutzeroberfläche verfügbar ist. Anschließend können Sie zielgerichtete Erlebnisse für Adobe Campaign erstellen.

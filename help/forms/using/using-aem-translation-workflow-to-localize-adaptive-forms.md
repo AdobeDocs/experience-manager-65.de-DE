@@ -1,8 +1,12 @@
 ---
 title: Verwenden des Übersetzungs-Workflows von AEM zum Lokalisieren von adaptiven Formularen und Datensatzdokumenten
+
 description: Erfahren Sie, wie Sie AEM-Übersetzungs-Workflows zum Lokalisieren von adaptiven Formularen und Datensatzdokumenten verwenden.
+
+
 content-type: reference
 topic-tags: develop
+
 noindex: true
 feature: Adaptive Forms,Foundation Components
 exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a
@@ -10,18 +14,16 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '814'
 ht-degree: 100%
-
 ---
-
 # Verwenden von AEM-Übersetzungs-Workflow zum Lokalisieren von adaptiven Formularen und DoR {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 Mit lokalisierten Formularen können Sie eine größere Zielgruppe über Ländergrenzen hinweg ansprechen. Mit den Adobe Experience Manager-Übersetzungs-Workflows können Sie adaptive Formulare und ihre DoR lokalisieren. Zum Lokalisieren eines adaptiven Formulars können Sie die **maschinelle Übersetzung** nutzen oder menschliche **Übersetzerinnen und Übersetzer** beauftragen.
 
-In diesem Artikel wird die Vorgehensweise zur Verwendung des AEM-Übersetzungs-Workflows in Verbindung mit adaptiven Formularen und Datensatzdokumenten erläutert.
+In diesem Artikel wird die Vorgehensweise zur Verwendung des AEM-Übersetzungs-Workflows in Verbindung mit adaptiven Formularen und archivierbaren Dokumenten erläutert.
 
 ## Lokalisieren eines adaptiven Formulars und Datensatzdokuments mithilfe der maschinellen Übersetzung {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
@@ -46,9 +48,9 @@ Der Dienst für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiv
 
    Weitere Informationen zu Einstellungen und Konfigurationen für Datensatzdokumente finden Sie unter:
 
-[Konfiguration von Vorlagen für Datensatzdokumente](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
+   [Konfiguration von Vorlagen für Datensatzdokumente](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
 
-[Einstellungen für Datensatzdokumente](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
+   [Einstellungen für Datensatzdokumente](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Passen Sie die Branding-Informationen des Datensatzdokuments an](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) und stellen Sie sicher, dass für das Browser-Gebietsschema die Sprache eingestellt ist, für die Sie das adaptive Formular mithilfe maschineller Übersetzung lokalisiert haben. Das Browser-Gebietsschema hilft beim Lokalisieren der Branding-Informationen im Datensatzdokument.
 1. Um das lokalisierte Datensatzdokument anzuzeigen, wählen Sie „Vorschau generieren“ aus. Die PDF-Datei des Datensatzdokuments wird erstellt und in einer neuen Registerkarte im Browser geöffnet.
