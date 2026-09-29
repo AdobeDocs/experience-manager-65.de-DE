@@ -1,6 +1,6 @@
 ---
 title: Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur
-description: 'Erfahren Sie, wie Sie adaptive Formulare in AEM mithilfe der Freihandsignatur signieren. Sie können die Freihandsignatur und den Signaturschritt verwenden, um die Signatur in einem Formular zu zeichnen. '
+description: Erfahren Sie, wie Sie adaptive Formulare in AEM mithilfe der Freihandsignatur signieren. Sie können die Freihandsignatur und den Signaturschritt verwenden, um die Signatur in einem Formular zu zeichnen.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
@@ -8,13 +8,11 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '763'
 ht-degree: 100%
-
 ---
-
 # Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
@@ -40,6 +38,7 @@ Sie können die Komponente **Freihandsignatur** und die Komponente **Signatursch
 Sobald Sie das Symbol „Fertig“![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) im Freihandsignaturfenster auswählen, können Sie die Signatur nicht mehr bearbeiten. Wenn Sie die Signatur bearbeiten möchten, müssen Sie die aktuelle Signatur ignorieren und mit der obigen Option „Pinsel“/„Tastatur“ erneut signieren.
 
 Sie können das Symbol **Konfigurieren** ![configure](assets/configure.png) auswählen, um das Seitenverhältnis der Arbeitsfläche für Freihandsignaturen festzulegen.
+
 * Wenn das Seitenverhältnis der Arbeitsfläche für Freihandsignaturen kleiner als 1 ist, werden die Geolocation-Informationen am unteren Rand der Arbeitsfläche für die Freihandsignatur hinzugefügt.
 
 * Wenn das Seitenverhältnis der Arbeitsfläche für Freihandsignaturen größer als 1 ist, werden die Geolocation-Informationen auf der rechten Seite der Arbeitsfläche für Freihandsignaturen hinzugefügt.
@@ -50,7 +49,6 @@ Sie können das Symbol **Konfigurieren** ![configure](assets/configure.png) ausw
 >[!NOTE]
 >
 >Signaturen werden immer im PNG-Format gespeichert.
->
 
 ## Adaptives Formular konfigurieren, um Freihandsignatur zu verwenden {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -83,7 +81,7 @@ Sie können das Symbol **Konfigurieren** ![configure](assets/configure.png) ausw
 
    Wählen Sie das Symbol „Fertig“ ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) aus, um die Änderungen zu speichern. Die Signatur wurde erfolgreich konfiguriert.
 
-   Wenn Sie jetzt ein Formular ausfüllen, wird eine PDF-Version des adaptiven Formulars angezeigt und es sind Optionen zum Signieren des PDF-Dokuments verfügbar. Weitere Informationen finden Sie unter [Unterschreiben eines adaptiven Formulars mit Freihandsignatur](../../forms/using/signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature). 
+   Wenn Sie jetzt ein Formular ausfüllen, wird eine PDF-Version des adaptiven Formulars angezeigt und es sind Optionen zum Signieren des PDF-Dokuments verfügbar. Weitere Informationen finden Sie unter [Unterschreiben eines adaptiven Formulars mit Freihandsignatur](../../forms/using/signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 
 ## Unterschreiben eines adaptiven Formulars mit Freihandsignatur {#sign-an-adaptive-form-using-scribble-signature}
 

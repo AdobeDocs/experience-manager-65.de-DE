@@ -6,13 +6,11 @@ exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 38e3439b5b9f3b4bc56bb1618d33e570ca0603f5
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1920'
 ht-degree: 99%
-
 ---
-
 # Analytics mit [!DNL Adobe Launch] {#analyticsusingadobelaunch}
 
 AEM Forms lässt sich mit [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=de) integrieren, damit Sie Leistungsmetriken für Ihre veröffentlichten Formulare erfassen und nachverfolgen können. Ziel der Analyse dieser Metriken ist es, Geschäftsanwendern Einblicke in das Verhalten der Endbenutzer zu geben und das Erlebnis der Datenerfassung zu optimieren. Sie können das Verhalten sowohl angemeldeter als auch nicht angemeldeter (anonymer) Benutzer über Adobe Analytics für adaptive Formulare erfassen und verfolgen.
@@ -165,7 +163,7 @@ Führen Sie die folgenden Schritte aus, um Regeln auf der Grundlage der Erweiter
 
 1. Wählen Sie im Abschnitt **[!UICONTROL Aktionen]** das Pluszeichen (+) aus und geben Sie **[!UICONTROL Adobe Analytics]** als Namen der Erweiterung an.
 
-1. Wählen Sie **[!UICONTROL Aktionstyp]** Variablen löschen“ aus. Wählen **[!UICONTROL Änderungen beibehalten]** aus. Nachdem Sie diese Schritte ausgeführt haben, wird **[!UICONTROL Abschnitt]**&#x200B;Aktionen“ wie folgt angezeigt:
+1. Wählen Sie als Aktionstyp **[!UICONTROL Variablen löschen]** aus. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus. Nachdem Sie diese Schritte durchgeführt haben, wird der Abschnitt **[!UICONTROL Aktionen]** wie folgt angezeigt:
    ![Konfiguration von Aktionen](/help/forms/using/assets/actions-config.png)
 
    Passen Sie den Abschnitt **[!UICONTROL Aktionen]** Ihren Anforderungen entsprechend an. Sie können beispielsweise zwei Schritte **Beacon senden** in einem Aktionsfluss definieren, um in einem Schritt Daten an [!DNL Adobe Analytics] zu senden und als Seitenansicht zu behandeln und im zweiten Schritt Daten an [!DNL Adobe Analytics] zu senden und nicht als Seitenansicht zu behandeln.
@@ -239,8 +237,8 @@ Verwenden der [!DNL Adobe Launch]-Konfiguration in einem vorhandenen adaptiven F
 Nachdem Sie [!DNL Adobe Analytics] für ein adaptives Formular aktiviert haben, können Sie [überprüfen](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=de#validate-the-page-view-beacon), ob ein geeigneter Datenereignisfluss zwischen AEM Forms und [!DNL Adobe Analytics] vorhanden ist. Die Integration von AEM Forms mit Adobe Analytics ist nun abgeschlossen. Sie können jetzt [Berichte in Adobe Analytics konfigurieren und anzeigen](#view-reports-adobe-analytics).
 
 >[!NOTE]
+>
 >Wenn beide Funktionen [Analytics mit Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md) und **Analytics mit Adobe Launch** gleichzeitig aktiviert sind, hat **Analytics mit Adobe Launch** Vorrang.
-> 
 
 ### Erstellen von Regeln zur Erfassung benutzerdefinierter Ereignisse (optional) {#capture-custom-events}
 

@@ -1,18 +1,16 @@
 ---
-title: Integration von  [!DNL Assets]  mit  [!DNL InDesign Server]
-description: Erfahren Sie mehr über die Integration von  [!DNL Adobe Experience Manager Assets]  mit  [!DNL Adobe InDesign Server].
+title: Integration von [!DNL Assets] mit [!DNL InDesign Server]
+description: Erfahren Sie, wie Sie [!DNL Adobe Experience Manager Assets] mit [!DNL Adobe InDesign Server] integrieren.
 contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1584'
 ht-degree: 99%
-
 ---
-
 # Integration von [!DNL Adobe Experience Manager Assets] mit [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] verwendet:
@@ -42,9 +40,9 @@ Dieses Befehlsskript führt folgende Aktionen aus:
    * Ruft die INDD-Datei ab.
    * Führt [!DNL InDesign Server]-Befehle aus:
 
-      * Struktur, Text und alle Mediendateien werden extrahiert.
-      * PDF- und JPG-Ausgabeformate werden generiert.
-      * HTML- und IDML-Ausgabeformate werden generiert.
+     * Struktur, Text und alle Mediendateien werden extrahiert.
+     * PDF- und JPG-Ausgabeformate werden generiert.
+     * HTML- und IDML-Ausgabeformate werden generiert.
 
    * Veröffentlicht die resultierenden Dateien wieder in [!DNL Experience Manager Assets].
 
@@ -137,7 +135,7 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extraktion von Seiten]** auf de
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
 * **Handler zur Extraktion von Seite**: Wählen Sie in der Dropdown-Liste den zu verwendenden Handler aus. Ein Extraktions-Handler arbeitet mit einem bestimmten Ausgabeformat, das mit einem entsprechenden `RenditionPicker` ausgewählt wird (siehe `ExtractionHandler`-API). Bei einer standardmäßigen [!DNL Experience Manager]-Installation sind folgende Optionen verfügbar:
-   * IDML-Export-Extraktions-Handler: Bearbeitet die `IDML`-Ausgabedarstellung, die im Schritt „MediaExtract“ generiert wurde.
+  * IDML-Export-Extraktions-Handler: Bearbeitet die `IDML`-Ausgabedarstellung, die im Schritt „MediaExtract“ generiert wurde.
 
 * **Seitenname**: Geben Sie den Namen an, den Sie der resultierenden Seite zuweisen möchten. Wenn Sie das Feld leer lassen, wird als Name „Seite“ gewählt (oder eine Ableitung, falls „Seite“ bereits vorhanden ist).
 
@@ -164,7 +162,7 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extraktion von Seiten]** auf de
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
    * **IDS-Pool**
-Die SOAP-Endpunkte, die für die Kommunikation mit dem [!DNL InDesign Server] verwendet werden. Sie können Elemente nach Bedarf hinzufügen, entfernen und ordnen.
+     Die SOAP-Endpunkte, die für die Kommunikation mit dem [!DNL InDesign Server] verwendet werden. Sie können Elemente nach Bedarf hinzufügen, entfernen und ordnen.
 
 1. Klicken Sie zum Speichern auf „OK“.
 
@@ -204,19 +202,20 @@ So konfigurieren Sie die Anzahl der parallelen IDS-Aufträge:
 
    Wenn mehrere Computer [!DNL InDesign Server] ausführen, fügen Sie SOAP-Endpunkte (Anzahl der Prozessoren pro Computer -1) für jeden Computer hinzu.
 
+   >[!NOTE]
+   >
+   >Wenn Sie mit einem Pool von Workern arbeiten, können Sie die Blockierungsliste von IDS-Workern aktivieren.
+   >
+   >Aktivieren Sie dazu das Kontrollkästchen **[!UICONTROL enable.retry.name]** unter der Konfiguration `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, um Wiederholungen von IDS-Aufträgen zu ermöglichen.
+   >
+   >Legen Sie in der Konfiguration `com.day.cq.dam.ids.impl.IDSPoolImpl.name` außerdem einen positiven Wert für den Parameter `max.errors.to.blacklist` fest, der die Anzahl der Auftragswiederholungen steuert, bevor ein IDS aus der Auftrags-Handler-Liste ausgeschlossen wird.
+   >
+   >Standardmäßig wird der IDS-Worker nach einer konfigurierbaren Zeit (`retry.interval.to.whitelist.name`) in Minuten erneut validiert. Wenn der Worker online gefunden wird, wird er aus der Blockierungsliste entfernt.
+
 <!-- 
 TBD: Make updates to configurations for allow and block list after product updates are done.
 -->
 
->[!NOTE]
->
->Wenn Sie mit einem Pool von Workern arbeiten, können Sie die Blockierungsliste von IDS-Workern aktivieren.
->
->Aktivieren Sie dazu das Kontrollkästchen **[!UICONTROL enable.retry.name]** unter der Konfiguration `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, um Wiederholungen von IDS-Aufträgen zu ermöglichen.
->
->Legen Sie in der Konfiguration `com.day.cq.dam.ids.impl.IDSPoolImpl.name` außerdem einen positiven Wert für den Parameter `max.errors.to.blacklist` fest, der die Anzahl der Auftragswiederholungen steuert, bevor ein IDS aus der Auftrags-Handler-Liste ausgeschlossen wird.
->
->Standardmäßig wird der IDS-Worker nach einer konfigurierbaren Zeit (`retry.interval.to.whitelist.name`) in Minuten erneut validiert. Wenn der Worker online gefunden wird, wird er aus der Blockierungsliste entfernt.
 
 ## Aktivieren der Unterstützung für [!DNL InDesign Server] 10.0 oder höher {#enabling-support-for-indesign-server-or-later}
 

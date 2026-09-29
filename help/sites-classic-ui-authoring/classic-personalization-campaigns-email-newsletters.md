@@ -1,21 +1,23 @@
 ---
 title: Veröffentlichen von E-Mails bei E-Mail-Dienstanbietern
+
 description: Sie können Newsletter in E-Mail-Diensten wie ExactTarget und Silverpop Engage veröffentlichen.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
+
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1135'
 ht-degree: 100%
-
 ---
-
 # Veröffentlichen von E-Mails bei E-Mail-Dienstanbietern{#publishing-an-email-to-email-service-providers}
 
 Sie können Newsletter in E-Mail-Diensten wie ExactTarget und Silverpop Engage veröffentlichen. In diesem Dokument wird beschrieben, wie Sie AEM zum Veröffentlichen eines Newsletters in diesen E-Mail-Diensten konfigurieren.
@@ -27,12 +29,12 @@ Sie können Newsletter in E-Mail-Diensten wie ExactTarget und Silverpop Engage v
 Zur Veröffentlichung einer Mail beim E-Mail-Dienstanbieter müssen Sie wie folgt vorgehen:
 
 1. Erstellen Sie eine E-Mail.
-1. Wenden Sie die E-Mail-Dienstkonfiguration auf die E-Mail an. 
+1. Wenden Sie die E-Mail-Dienstkonfiguration auf die E-Mail an.
 1. Veröffentlichen Sie die E-Mail.
 
 >[!NOTE]
 >
->Wenn Sie E-Mail-Anbieter aktualisieren, einen Testlauf durchführen oder einen Newsletter versenden, schlagen diese Vorgänge fehl, wenn der Newsletter nicht zuerst in der Publishing-Instanz veröffentlicht wird oder die Publishing-Instanz nicht verfügbar ist. Stellen Sie sicher, dass Sie Ihren Newsletter veröffentlichen und die Publishing-Instanz ordnungsgemäß funktioniert.
+>Wenn Sie E-Mail-Anbieter aktualisieren, einen Testlauf durchführen oder einen Newsletter versenden, schlagen diese Vorgänge fehl, wenn der Newsletter nicht zuerst in der Veröffentlichungsinstanz veröffentlicht wird oder die Veröffentlichungsinstanz nicht verfügbar ist. Stellen Sie sicher, dass Sie Ihren Newsletter veröffentlichen und die Veröffentlichungsinstanz ordnungsgemäß funktioniert.
 
 ## Erstellen einer E-Mail {#creating-an-email}
 
@@ -63,42 +65,42 @@ Mit der Komponente **E-Mail-Tools** für ExactTarget können Sie Ihrer E-Mail/Ih
 
 1. Wählen Sie im Menü **Optionen** eine Option aus:
 
-<table>
- <tbody>
-  <tr>
-   <td>Postanschrift (Erforderlich)</td>
-   <td>Mit dieser Komponente wird die Postanschrift Ihres Unternehmens in die E-Mail eingefügt.</td>
-  </tr>
-  <tr>
-   <td>Profilzentrum (Erforderlich)</td>
-   <td>Das Profilzentrum ist eine Web-Seite, auf der Abonnentinnen und Abonnenten die persönlichen Daten, die Sie über sie speichern, eingeben und verwalten können.</td>
-  </tr>
-  <tr>
-   <td>E-Mail als Webseite anzeigen</td>
-   <td>Mit dieser Komponente können Benutzende die E-Mail als Web-Seite anzeigen.</td>
-  </tr>
-  <tr>
-   <td>Datenschutzrichtlinie</td>
-   <td>Mit dieser Komponente wird ein Link zu Ihren Datenschutzrichtlinien in die E-Mail eingefügt.<br /> </td>
-  </tr>
-  <tr>
-   <td>Abmeldungszentrum</td>
-   <td>Mit dieser Komponenten wird es Benutzenden ermöglicht, sich von Ihrer Mailing-Liste abzumelden.</td>
-  </tr>
-  <tr>
-   <td>Abonnementzentrum</td>
-   <td>Ein Abonnementzentrum ist eine Web-Seite, auf der ein Abonnent festlegen kann, welche Mitteilungen er von Ihrem Unternehmen erhalten möchte.</td>
-  </tr>
-  <tr>
-   <td>Öffnen der E-Mail verfolgen</td>
-   <td>Hierbei handelt es sich um eine verborgene Komponente, mit der Sie die ExactTarget-Tracking-Funktion verwenden können.<br /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>Postanschrift (Erforderlich)</td>
+      <td>Mit dieser Komponente wird die Postanschrift Ihres Unternehmens in die E-Mail eingefügt.</td>
+   </tr>
+   <tr>
+      <td>Profilzentrum (Erforderlich)</td>
+      <td>Das Profilzentrum ist eine Web-Seite, auf der Abonnentinnen und Abonnenten die persönlichen Daten, die Sie über sie speichern, eingeben und verwalten können.</td>
+   </tr>
+   <tr>
+      <td>E-Mail als Webseite anzeigen</td>
+      <td>Mit dieser Komponente können Benutzende die E-Mail als Web-Seite anzeigen.</td>
+   </tr>
+   <tr>
+      <td>Datenschutzrichtlinie</td>
+      <td>Mit dieser Komponente wird ein Link zu Ihren Datenschutzrichtlinien in die E-Mail eingefügt.<br /> </td>
+   </tr>
+   <tr>
+      <td>Abmeldungszentrum</td>
+      <td>Mit dieser Komponenten wird es Benutzenden ermöglicht, sich von Ihrer Mailing-Liste abzumelden.</td>
+   </tr>
+   <tr>
+      <td>Abonnementzentrum</td>
+      <td>Ein Abonnementzentrum ist eine Web-Seite, auf der ein Abonnent festlegen kann, welche Mitteilungen er von Ihrem Unternehmen erhalten möchte.</td>
+   </tr>
+   <tr>
+      <td>Öffnen der E-Mail verfolgen</td>
+      <td>Hierbei handelt es sich um eine verborgene Komponente, mit der Sie die ExactTarget-Tracking-Funktion verwenden können.<br /> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Das Dropdown-Menü **Optionen** enthält nur dann Einträge, wenn eine ExactTarget-Konfiguration auf die E-Mail angewendet wurde. Weitere Informationen finden Sie unter [Anwenden von E-Mail-Dienstkonfigurationen auf E-Mail-Einstellungen](#applying-e-mail-service-configuration-to-e-mail-settings).
+   >[!NOTE]
+   >
+   >Das Dropdown-Menü **Optionen** enthält nur dann Einträge, wenn eine ExactTarget-Konfiguration auf die E-Mail angewendet wurde. Weitere Informationen finden Sie unter [Anwenden von E-Mail-Dienstkonfigurationen auf E-Mail-Einstellungen](#applying-e-mail-service-configuration-to-e-mail-settings).
 
 1. Veröffentlichen Sie die E-Mail in ExactTarget.
 
