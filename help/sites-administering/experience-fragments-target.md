@@ -12,11 +12,9 @@ feature: Integration
 role: Admin
 source-git-commit: dcb55b3b185fe5dccf52377a12556e33d818e410
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1487'
 ht-degree: 100%
-
 ---
-
 # Exportieren von Experience Fragments nach Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
 Sie können [Experience Fragments](/help/sites-authoring/experience-fragments.md), die in Adobe Experience Manager (AEM) erstellt wurden, nach Adobe Target (Target) exportieren. Diese können dann als Angebote in Target-Aktivitäten verwendet werden, um Erlebnisse im benötigten Umfang zu testen und zu personalisieren.
@@ -187,12 +185,12 @@ So vermeiden Sie solche Situationen:
 
   Die Fehlermeldung in AEM untersagt den Benutzenden nicht das (erzwungene) Löschen des Experience Fragments. Wenn das Experience Fragment gelöscht wurde, gilt Folgendes:
 
-   * Das Target-Angebot mit dem AEM Experience Fragment kann unerwünschtes Verhalten zeigen
+  * Das Target-Angebot mit dem AEM Experience Fragment kann unerwünschtes Verhalten zeigen
 
-      * Das Angebot wird wahrscheinlich noch gerendert, da das Experience Fragment-HTML nach Target verschoben wurde
-      * Verweise im Experience Fragment funktionieren möglicherweise nicht ordnungsgemäß, wenn referenzierte Assets auch in AEM gelöscht wurden.
+    * Das Angebot wird wahrscheinlich noch gerendert, da das Experience Fragment-HTML nach Target verschoben wurde
+    * Verweise im Experience Fragment funktionieren möglicherweise nicht ordnungsgemäß, wenn referenzierte Assets auch in AEM gelöscht wurden.
 
-   * Es sind keine weiteren Änderungen am Experience Fragment möglich, da es nicht mehr in AEM vorhanden ist.
+  * Es sind keine weiteren Änderungen am Experience Fragment möglich, da es nicht mehr in AEM vorhanden ist.
 
 
 ## Entfernen von Client-Bibliotheken aus nach Target exportierten Experience Fragments {#removing-clientlibs-from-fragments-exported-target}

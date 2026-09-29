@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '1053'
 ht-degree: 100%
-
 ---
-
 # Benutzerdefinierte Berichte im Prozess-Reporting{#custom-reports-in-process-reporting}
 
 Sie können die REST-Schnittstelle von QueryBuilder verwenden oder einen OSGi-Service mithilfe der QueryBuilder API erstellen, um einen benutzerdefinierten Bericht zu erstellen.
@@ -24,7 +22,7 @@ Sie können die REST-Schnittstelle von QueryBuilder verwenden oder einen OSGi-Se
 
 Führen Sie vor dem Hinzufügen eines benutzerdefinierten Berichts das folgende Verfahren für Vorlagen aus:
 
-1. In benutzerdefinierten Berichten verwendete Daten müssen im Prozess-Reporting verfügbar sein. Um die Verfügbarkeit der Daten zu gewährleisten, planen Sie einen Cron-Job oder verwenden Sie die Option **[Sync](https://helpx.adobe.com/de/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** der Prozess-Reporting-UI.
+1. In benutzerdefinierten Berichten verwendete Daten müssen im Prozess-Reporting verfügbar sein. Um die Verfügbarkeit der Daten zu gewährleisten, planen Sie einen Cronjob oder verwenden Sie die Option **[Sync](https://helpx.adobe.com/de/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** der Prozess-Reporting-UI.
 1. Die URL-Anfrage (die die gewünschte Anfrage einkapselt) muss ein entsprechendes Objekt mit dem Abfrageergebnis zurückgeben. Um eine Abfrage zu erstellen, können Sie die REST-Schnittstelle von [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=de) verwenden, um einen OSGi-Dienst mit der QueryBuilder API zu erstellen. Sie können dynamische oder statische Anfragen erstellen.
 
 1. Erstellen Sie eine benutzerdefinierte Benutzeroberfläche, um die Ergebnisse anzuzeigen. Sie können eine eigenständige Benutzeroberfläche erstellen oder Ergebnisse in die vorhandene Prozess-Reporting-UI integrieren.
@@ -135,9 +133,9 @@ Voraussetzung für die Erstellung eines Service mit der Query Builder API sind d
                        out.write(row.toString().getBytes());
    ```
 
-1. Verwenden Sie zum Erstellen eines OSGi-Bundles für das Servlet das `org.apache.felix maven-bundle-plugin`.
+1. Verwenden Sie zum Erstellen eines OSGi-Pakets für das Servlet das `org.apache.felix maven-bundle-plugin`.
 
-1. Stellen Sie das Bundle auf dem CRX-Server bereit.
+1. Stellen Sie das Paket auf dem CRX-Server bereit.
 
 ### Service-Beispiel {#service-example}
 
@@ -660,4 +658,4 @@ Grundvoraussetzungen für das Erstellen einer separaten Benutzeroberfläche zum 
 
 Um benutzerdefinierter Berichte und Benutzeroberflächen, wie in dem Artikel erörtert, zu integrieren, importieren Sie das `sample-report-pkg-1.zip`-Paket in die Benutzeroberfläche für die Prozessverwaltung.
 
-[Datei laden](assets/sample-report-pkg-1.zip)
+[Datei abrufen](assets/sample-report-pkg-1.zip)

@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von OSGi
-description: OSGi ist ein wesentlicher Bestandteil der Technologien von Adobe Experience Manager (AEM). Es wird zur Steuerung der zusammengesetzten AEM-Bundles und ihrer Konfiguration verwendet. In diesem Artikel wird beschrieben, wie Sie die Konfigurationseinstellungen für solche Bundles verwalten können.
+description: OSGi ist ein wesentlicher Bestandteil der Technologien von Adobe Experience Manager (AEM). Es wird zur Steuerung der zusammengesetzten AEM-Pakete und ihrer Konfiguration verwendet. In diesem Artikel wird beschrieben, wie Sie die Konfigurationseinstellungen für solche Pakete verwalten können.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
@@ -11,20 +11,18 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 100%
-
+source-wordcount: '1999'
+ht-degree: 98%
 ---
-
 # Konfigurieren von OSGi{#configuring-osgi}
 
-[OSGi](https://www.osgi.org/) ist ein wesentlicher Bestandteil der Technologien von Adobe Experience Manager (AEM). Es wird zur Steuerung der zusammengesetzten AEM-Bundles und ihrer Konfiguration verwendet.
+[OSGi](https://www.osgi.org/) ist ein wesentlicher Bestandteil der Technologien von Adobe Experience Manager (AEM). Es wird zur Steuerung der zusammengesetzten AEM-Pakete und ihrer Konfiguration verwendet.
 
 OSGi „*stellt die standardisierten Primitive bereit, mit denen Anwendungen aus kleinen, wiederverwendbaren und gemeinsamen Komponenten konstruiert werden können. Diese Komponenten können zu einer Anwendung zusammengestellt und bereitgestellt werden*“.
 
-Dies ermöglicht die einfache Verwaltung von Bundles, da diese einzeln angehalten, installiert und gestartet werden können. Die gegenseitigen Abhängigkeiten werden automatisch verwaltet. Jede OSGi-Komponente (siehe [OSGi-Spezifikation](https://docs.osgi.org/specification/)) ist in einem der Bundles enthalten.
+Dies ermöglicht die einfache Verwaltung von Bundles, da diese einzeln angehalten, installiert und gestartet werden können. Die gegenseitigen Abhängigkeiten werden automatisch verwaltet. Jede OSGi-Komponente (siehe [OSGi-Spezifikation](https://docs.osgi.org/specification/)) ist in einem der Pakete enthalten.
 
-Sie können die Konfigurationseinstellungen für solche Bundles wie folgt verwalten:
+Sie können die Konfigurationseinstellungen für solche Pakete wie folgt verwalten:
 
 * mithilfe der [Adobe CQ-Web-Konsole](#osgi-configuration-with-the-web-console)
 * mithilfe der [Konfigurationsdateien](#osgi-configuration-with-configuration-files)
@@ -34,24 +32,24 @@ Jede dieser Methoden kann verwendet werden, es gibt aber leichte Unterschiede vo
 
 * [Adobe CQ Web-Konsole](#osgi-configuration-with-the-web-console)
 
-   * Die Web-Konsole ist die Standardschnittstelle für die OSGi-Konfiguration. Sie bietet eine Benutzeroberfläche für die Bearbeitung der verschiedenen Eigenschaften, wobei mögliche Werte aus vordefinierten Listen ausgewählt werden können.
+  * Die Web-Konsole ist die Standardschnittstelle für die OSGi-Konfiguration. Sie bietet eine Benutzeroberfläche für die Bearbeitung der verschiedenen Eigenschaften, wobei mögliche Werte aus vordefinierten Listen ausgewählt werden können.
 
-     Dies ist die einfachste Methode.
+    Dies ist die einfachste Methode.
 
-   * Alle über die Web-Konsole durchgeführten Konfigurationen werden unmittelbar auf die aktuelle Instanz angewendet, und zwar unabhängig davon, welcher Ausführungsmodus gerade aktiv ist oder wie dieser zu einem späteren Zeitpunkt geändert werden könnte.
+  * Alle über die Web-Konsole durchgeführten Konfigurationen werden unmittelbar auf die aktuelle Instanz angewendet, und zwar unabhängig davon, welcher Ausführungsmodus gerade aktiv ist oder wie dieser zu einem späteren Zeitpunkt geändert werden könnte.
 
 * [Konfigurationsdateien](#osgi-configuration-with-configuration-files)
 
-   * Enthalten in der Web-Konsole definierte Einstellungen.
-   * Können in Inhaltspakete zur Verwendung auf anderen Instanzen aufgenommen werden.
+  * Enthalten in der Web-Konsole definierte Einstellungen.
+  * Können in Inhaltspakete zur Verwendung auf anderen Instanzen aufgenommen werden.
 
-* [Inhaltsknoten (sling:osgiConfig) im Repository](#osgi-configuration-in-the-repository)
+* [Inhaltsknoten (Sling:osgiConfig) im Repository](#osgi-configuration-in-the-repository)
 
-   * Dies erfordert die manuelle Konfiguration mithilfe von CRXDE Lite.
-   * Aufgrund der Namenskonventionen der `sling:OsgiConfig`-Knoten können Sie die Konfiguration an einen bestimmten [Ausführungsmodus](/help/sites-deploying/configure-runmodes.md) knüpfen. Sie können sogar Konfigurationen für mehr als einen Ausführungsmodus im selben Repository speichern.
-   * Alle entsprechenden Konfigurationen werden sofort angewendet (abhängig vom Ausführungsmodus).
+  * Dies erfordert die manuelle Konfiguration mithilfe von CRXDE Lite.
+  * Aufgrund der Namenskonventionen der `sling:OsgiConfig`-Knoten können Sie die Konfiguration an einen bestimmten [Ausführungsmodus](/help/sites-deploying/configure-runmodes.md) knüpfen. Sie können sogar Konfigurationen für mehr als einen Ausführungsmodus im selben Repository speichern.
+  * Alle entsprechenden Konfigurationen werden sofort angewendet (abhängig vom Ausführungsmodus).
 
-Unabhängig von der verwendeten Konfigurationsmethode bieten die Konfigurationen Folgendes: 
+Unabhängig von der verwendeten Konfigurationsmethode bieten die Konfigurationen Folgendes:
 
 * Stellen Sie sicher, dass beim Kopieren oder Replizieren des Repository-Inhalts identische Konfigurationen neu erstellt werden.
 * Ermöglicht das Auschecken von Konfigurationen nach FileVault oder Subversion, entweder für Sicherheits- oder weitere Updates.
@@ -60,11 +58,11 @@ Unabhängig von der verwendeten Konfigurationsmethode bieten die Konfigurationen
 
 >[!NOTE]
 >
->Details wichtiger Einstellungen werden unter [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md) aufgelistet. 
+>Details wichtiger Einstellungen werden unter [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md) aufgelistet.
 
 ## OSGi-Konfiguration mit der Web-Konsole {#osgi-configuration-with-the-web-console}
 
-Die [Web-Konsole](/help/sites-deploying/web-console.md) in AEM bietet eine standardisierte Schnittstelle zum Konfigurieren der Bundles. Die Registerkarte **Konfiguration** wird zur Konfiguration der OSGi-Bundles verwendet und ist daher der zugrunde liegende Mechanismus zur Konfiguration der AEM-Systemparameter.
+Die [Web-Konsole](/help/sites-deploying/web-console.md) in AEM bietet eine standardisierte Schnittstelle zum Konfigurieren der Pakete. Die Registerkarte **Konfiguration** wird zur Konfiguration der OSGi-Pakete verwendet und ist daher der zugrunde liegende Mechanismus zur Konfiguration der AEM-Systemparameter.
 
 Alle vorgenommenen Änderungen werden sofort auf die entsprechende OSGi-Konfiguration angewendet. Ein Neustart ist nicht erforderlich.
 
@@ -92,10 +90,10 @@ So aktualisieren Sie mit der Web-Konsole eine Konfiguration:
 
    Eine Liste wird angezeigt.
 
-1. Wählen Sie das Bundle aus, das Sie konfigurieren möchten, indem Sie eine dieser Optionen auswählen:
+1. Wählen Sie das Paket aus, das Sie konfigurieren möchten, indem Sie eine dieser Optionen auswählen:
 
-   * Klicken Sie auf das Symbol **Bearbeiten** für dieses Bundle.
-   * Klicken Sie auf den **Namen** des Bundles
+   * Klicken Sie auf das Symbol **Bearbeiten** für dieses Paket.
+   * Klicken Sie auf den **Namen** des Pakets
 
 1. Ein Dialogfeld wird angezeigt. Hier können Sie nach Bedarf Änderungen vornehmen. Setzen Sie beispielsweise die **Protokollebene** auf `INFO`:
 
@@ -184,7 +182,7 @@ Um eine Konfiguration zum Repository hinzuzufügen, müssen Sie Folgendes wissen
 
 1. Die **Persistente Identität** (PID) des Services.
 
-   Referenzieren Sie das Feld **Konfigurationen** in der Web-Konsole. Der Name wird in Klammern hinter dem Bundle-Namen angezeigt (oder in den **Konfigurationsinformationen** am unteren Seitenrand).
+   Referenzieren Sie das Feld **Konfigurationen** in der Web-Konsole. Der Name wird in Klammern hinter dem Paketnamen angezeigt (oder in den **Konfigurationsinformationen** am unteren Seitenrand).
 
    Erstellen Sie beispielsweise einen Knoten `com.day.cq.wcm.core.impl.VersionManagerImpl.` zum Konfigurieren von **AEM WCM-Versions-Manager**.
 
@@ -246,7 +244,7 @@ Um die neue Konfiguration zum Repository hinzuzufügen, gehen Sie folgendermaße
 1. Erstellen Sie für jeden Parameter, den Sie konfigurieren möchten, eine Eigenschaft in diesem Knoten:
 
    * Name: der Parametername, wie er in der Web-Konsole angezeigt wird. Der Name wird in Klammern am Ende der Feldbeschreibung angezeigt. Für `Create Version on Activation` verwenden sie z. B. `versionmanager.createVersionOnActivation`
-   * Typ: entsprechend 
+   * Typ: entsprechend
    * Wert: nach Bedarf.
 
    Sie müssen nur Eigenschaften für die Parameter erstellen, die konfiguriert werden sollen. Die anderen verwenden weiterhin die von AEM festgelegten Standardwerte.
@@ -299,8 +297,8 @@ Beispiel: Wenn eine Instanz mit den Ausführungsmodi `author,dev,emea` gestartet
 
 Wenn für dieselbe PID mehrere Konfigurationen anwendbar sind, wird die Konfiguration mit der höchsten Anzahl an passenden Ausführungsmodi angewendet.
 
-Beispiel: Wenn eine Instanz mit den Ausführungsmodi `author,dev,emea` gestartet wurde und sowohl `/apps/*/config.author/` als auch `/apps/*/config.emea.author/` eine Konfiguration für
-`com.day.cq.wcm.core.impl.VersionManagerImpl` definieren, wird die Konfiguration in `/apps/*/config.emea.author/` angewendet.
+Beispiel: Eine Instanz wurde mit dem Ausführungsmodus `author,dev,emea` gestartet und sowohl `/apps/*/config.author/` als auch `/apps/*/config.emea.author/` definieren eine Konfiguration für
+`com.day.cq.wcm.core.impl.VersionManagerImpl` wird die Konfiguration in `/apps/*/config.emea.author/` angewendet.
 
 Die Granularität dieser Regel liegt auf PID-Ebene.
 Es ist nicht möglich, für dieselbe PID einige Eigenschaften in `/apps/*/config.author/` und spezifischere in `/apps/*/config.emea.author/` zu definieren.
@@ -336,17 +334,17 @@ Um alle Konfigurationsknoten in Ihrer Instanz aufzulisten, senden Sie über die 
 
   `/apps/{somewhere}`
 
-   * Das standardmäßige `{somewhere}` ist `system/config`, sodass die Konfiguration in diesen Pfad geschrieben wird:
+  * Das standardmäßige `{somewhere}` ist `system/config`, sodass die Konfiguration in diesen Pfad geschrieben wird:
 
-     `/apps/system/config`
+    `/apps/system/config`
 
-   * Wenn Sie jedoch eine Konfiguration bearbeiten, die ursprünglich von einem anderen Ort im Repository stammte, zum Beispiel:
+  * Wenn Sie jedoch eine Konfiguration bearbeiten, die ursprünglich von einem anderen Ort im Repository stammte, zum Beispiel:
 
-     /libs/foo/config/someconfig
+    /libs/foo/config/someconfig
 
-     dann wird die aktualisierte Konfiguration unter dem ursprünglichen Speicherort geschrieben. Beispiel:
+    dann wird die aktualisierte Konfiguration unter dem ursprünglichen Speicherort geschrieben. Beispiel:
 
-     `/apps/foo/config/someconfig`
+    `/apps/foo/config/someconfig`
 
 * Einstellungen, die vom `admin` geändert werden, werden in `*.config`-Dateien gespeichert, und zwar unter:
 
@@ -354,17 +352,17 @@ Um alle Konfigurationsknoten in Ihrer Instanz aufzulisten, senden Sie über die 
      /crx-quickstart/launchpad/config
   ```
 
-   * Dies ist der private Datenbereich der OSGi-Konfigurationsverwaltung und enthält alle von `admin` angegebenen Konfigurationsdetails, unabhängig davon, wie sie in das System gelangt sind.
-   * Dieser Bereich ist ein Implementierungsdetail, und Sie dürfen diesen Ordner niemals direkt bearbeiten.
-   * Es ist jedoch nützlich, den Speicherort dieser Konfigurationsdateien zu kennen, damit Kopien für eine Sicherung, mehrfache Installationen oder beides erstellt werden können:
+  * Dies ist der private Datenbereich der OSGi-Konfigurationsverwaltung und enthält alle von `admin` angegebenen Konfigurationsdetails, unabhängig davon, wie sie in das System gelangt sind.
+  * Dieser Bereich ist ein Implementierungsdetail, und Sie dürfen diesen Ordner niemals direkt bearbeiten.
+  * Es ist jedoch nützlich, den Speicherort dieser Konfigurationsdateien zu kennen, damit Kopien für eine Sicherung, mehrfache Installationen oder beides erstellt werden können:
 
-      * Apache Felix OSGi-Management Console
+    * Apache Felix OSGi-Management Console
 
-        `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
+      `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
 
-      * CRX Sling Client Repository
+    * CRX Sling Client Repository
 
-        `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
+      `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
 
 >[!CAUTION]
 >

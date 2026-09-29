@@ -12,11 +12,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2423'
-ht-degree: 100%
-
+source-wordcount: '2454'
+ht-degree: 95%
 ---
-
 # Planung von Upgrades{#planning-your-upgrade}
 
 ## AEM-Projektüberblick {#aem-project-overview}
@@ -27,7 +25,7 @@ Dieser Leitfaden unterstützt Sie bei der Formulierung von klaren Zielen, Phasen
 
 Der Upgrade-Prozess für AEM erfordert sorgfältig ausgeführte Planungs-, Analyse- und Durchführungsphasen, für die jeweils wichtige Ergebnisse festgelegt werden müssen.
 
-Ein direktes Upgrade von AEM 6.0 und höheren Versionen auf Version 6.5 ist möglich. Kundinnen und Kunden mit AEM 5.6.x und älteren Versionen müssen jedoch zuerst ein Upgrade auf Version 6.0 oder höher durchführen (empfohlen wird 6.0 SP3). Außerdem wird seit 6.3 jetzt das neue Oak Segment Tar-Format für den Segment-Knotenspeicher verwendet, und die Repository-Migration auf dieses neue Format ist auch schon für 6.0, 6.1 und 6.2 obligatorisch.
+Es ist möglich, direkt von AEM 6.0 und bis zu 6.5 zu aktualisieren. Kunden mit Version 5.6.x und niedriger müssen zunächst ein Upgrade auf Version 6.0 oder höher durchführen, wobei 6.0 (SP3) empfohlen wird. Außerdem wird seit 6.3 jetzt das neue Oak Segment Tar-Format für den Segment-Knotenspeicher verwendet, und die Repository-Migration auf dieses neue Format ist auch schon für 6.0, 6.1 und 6.2 obligatorisch.
 
 >[!CAUTION]
 >
@@ -82,7 +80,7 @@ Nachfolgend finden Sie eine Liste der Bereiche, die von einem typischen AEM-Upgr
   <tr>
    <td>Benutzerdefinierte Anwendungsinhalte</td>
    <td>Geringe bis starke Auswirkungen</td>
-   <td>Inhalte, die vom Upgrade nicht betroffen sind, können vorher gesichert<br /> und dann wieder in das Repository verschoben werden.<br /> Die meisten Inhalte können mithilfe des Migrationstools verarbeitet werden.</td>
+   <td>Inhalte, die vom Upgrade nicht betroffen sind, können vorher gesichert <br /> dann wieder in das Repository verschoben werden.<br /> Die meisten Inhalte können über das Migrations-Tool verarbeitet werden.</td>
   </tr>
  </tbody>
 </table>
@@ -161,7 +159,7 @@ Unter [Upgrade-Verfahren](/help/sites-deploying/upgrade-procedure.md) finden Sie
 
 ### Entwickeln eines Projektplans {#developing-a-project-plan}
 
-Anhand der Ergebnisse aus den vorherigen Schritten kann ein Projektplan erstellt werden, der die erwarteten Zeitrahmen für den Test- oder Entwicklungsaufwand, Schulungen und das tatsächliche Upgrade beinhaltet.
+Anhand der Ergebnisse aus den vorherigen Schritten kann ein Projektplan erstellt werden, der die erwarteten Timelines für den Test- oder Entwicklungsaufwand, Schulungen und das tatsächliche Upgrade beinhaltet.
 
 ![develop-project-plan](assets/develop-project-plan.png)
 
@@ -178,7 +176,7 @@ Ein umfassender Projektplan sollte folgende Punkte beinhalten:
 
 ### Durchführung von Entwicklung und Qualitätssicherung {#performing-development-and-qa}
 
-Wir haben Verfahren für das [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) bereitgestellt, damit diese mit AEM 6.5 kompatibel sind. Wenn dieser iterative Prozess ausgeführt wird, sollten nach Bedarf Änderungen am Runbook vorgenommen werden. Auch unter [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md) finden Sie Informationen darüber, wie Sie Ihre Anpassungen in den meisten Fällen abwärtskompatibel halten können, ohne dass sofort nach dem Upgrade Entwicklungsarbeiten erforderlich sind.
+Adobe hat Verfahren für das [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) bereitgestellt, damit diese mit AEM 6.5 kompatibel sind. Während dieser iterative Prozess ausgeführt wird, sollten nach Bedarf Änderungen am Runbook vorgenommen werden. Auch unter [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md) finden Sie Informationen darüber, wie Sie Ihre Anpassungen in den meisten Fällen abwärtskompatibel halten können, ohne dass sofort nach dem Upgrade Entwicklungsarbeiten erforderlich sind.
 
 ![patru_cropped](assets/patru_cropped.png)
 
@@ -198,4 +196,4 @@ Sobald die endgültige Abnahme von allen Beteiligten eingegangen ist, ist es an 
 
 ![perform-upgrade](assets/perform-upgrade.png)
 
-Adobe hat in den Upgrade-Anweisungen eine Reihe von Schritten für die Validierung der Umgebung bereitgestellt. Hierzu gehören grundlegende Prüfungen wie das Überprüfen der Upgrade-Protokolle und die Verifizierung des ordnungsgemäßen Starts aller OSGi-Bundles. Adobe empfiehlt jedoch auch eine Validierung anhand eigener Nutzungsszenarien für Ihre Geschäftsprozesse. Darüber hinaus empfiehlt Adobe die Überprüfung des Zeitplans für die Online-Revisionsbereinigung von AEM sowie der zugehörigen Routinen, um sicherzustellen, dass diese nicht zu Stoßzeiten durchgeführt werden. Diese Routinen sind für die langfristige Leistungsfähigkeit von AEM von entscheidender Bedeutung.
+Adobe hat in den Upgrade-Anweisungen eine Reihe von Schritten für die Validierung der Umgebung bereitgestellt. Hierzu gehören grundlegende Prüfungen wie das Überprüfen der Upgrade-Protokolle und die Verifizierung des ordnungsgemäßen Starts aller OSGi-Pakete. Adobe empfiehlt jedoch auch eine Validierung anhand eigener Nutzungsszenarien für Ihre Geschäftsprozesse. Darüber hinaus empfiehlt Adobe die Überprüfung des Zeitplans für die Online-Revisionsbereinigung von AEM sowie der zugehörigen Routinen, um sicherzustellen, dass diese nicht zu Stoßzeiten durchgeführt werden. Diese Routinen sind für die langfristige Leistungsfähigkeit von AEM von entscheidender Bedeutung.

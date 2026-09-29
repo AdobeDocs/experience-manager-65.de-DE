@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 100%
-
+source-wordcount: '1217'
+ht-degree: 98%
 ---
-
 # Verwendung des CRX2Oak-Migrations-Tools{#using-the-crx-oak-migration-tool}
 
 ## Einführung {#introduction}
@@ -24,7 +22,8 @@ CRX2Oak ist ein Tool, mit dem Daten zwischen verschiedenen Repositorys migriert 
 
 Es kann verwendet werden, um Daten von älteren CQ-Versionen, die auf Apache Jackrabbit 2 basieren, nach Oak zu migrieren, und es kann auch verwendet werden, um Daten zwischen Oak-Repositories zu kopieren.
 
-Die aktuelle CRX2OAK-Version kann unter der folgenden Adresse vom öffentlichen Adobe-Repository heruntergeladen werden:[https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
+Die neueste CRX2OAK-Version kann hier aus dem öffentlichen Adobe-Repository heruntergeladen werden:
+[https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
 >[!NOTE]
 >

@@ -1,21 +1,23 @@
 ---
 title: Entwickeln von AEM-Projekten mit Eclipse
+
 description: In dieser Anleitung erfahren Sie, wie Sie Eclipse zur Entwicklung von AEM-basierten Projekten verwenden.
+
+
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
+
 exl-id: 9d421599-0417-4329-a528-9cda4e3716f5
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 100%
-
+source-wordcount: '448'
+ht-degree: 97%
 ---
-
 # Entwickeln von AEM-Projekten mit Eclipse{#how-to-develop-aem-projects-using-eclipse}
 
 In dieser Anleitung erfahren Sie, wie Sie Eclipse zur Entwicklung von AEM-basierten Projekten verwenden.
@@ -54,7 +56,7 @@ Richten Sie Ihr Projekt anschließend wie in [So erstellen Sie AEM-Projekte mit 
 Eclipse kann auch die Arbeit mit JSP unterstützen, z. B.:
 
 * automatische Vervollständigung von Tag-Bibliotheken
-* Eclipse-Präsenz von durch &lt;cq:defineObjects /> und &lt;sling:defineObjects /> definierten Objekten
+* Eclipse-Awareness von durch &lt;cq:defineObjects /> und &lt;sling:defineObjects /> definierten Objekten
 
 Gehen Sie wie folgt vor, damit dies funktioniert:
 
