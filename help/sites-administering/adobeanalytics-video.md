@@ -225,7 +225,7 @@ Aufrufe an Adobe Analytics mit dem gezeigten Beispiel sollten wie folgt aussehen
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Dies ist der **erste Aufruf**an Adobe Analytics mit den folgenden Werten:*
+*Dies ist der **erste Aufruf**&#x200B;an Adobe Analytics mit den folgenden Werten:*
 
 * *prop1 und eVar1 für eventdata.a.media.name,*
 * *props2–4 zusammen mit eVar2 und eVar3, wobei contentType (video) und segment (1:O:1–4) enthalten sind*
@@ -233,7 +233,7 @@ Aufrufe an Adobe Analytics mit dem gezeigten Beispiel sollten wie folgt aussehen
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Dies ist der **dritte Aufruf**an Adobe Analytics:*
+*Dies ist der **dritte Aufruf**&#x200B;an Adobe Analytics:*
 
 * *prop1 und eVar1 enthalten a.media.name;*
 * *event1, da ein Segment angesehen wurde*
