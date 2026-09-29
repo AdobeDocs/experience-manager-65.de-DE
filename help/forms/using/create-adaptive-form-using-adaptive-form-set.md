@@ -1,8 +1,12 @@
 ---
 title: Erstellen eines adaptiven Formulars mithilfe eines Satzes adaptiver Formulare
+
 description: Mit AEM Forms können Sie adaptive Formulare zu einem einzigen großen adaptiven Formular zusammenführen und die zugehörigen Funktionen verstehen.
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
@@ -10,11 +14,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '636'
 ht-degree: 100%
-
 ---
-
 # Erstellen eines adaptiven Formulars mit einem Satz adaptiver Formulare{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>

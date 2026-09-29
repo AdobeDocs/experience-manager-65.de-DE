@@ -10,11 +10,9 @@ feature: Adaptive Forms,Foundation Components
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '7640'
-ht-degree: 100%
-
+source-wordcount: '7786'
+ht-degree: 98%
 ---
-
 # Formularzentrierte Workflows in OSGi – Schritt-Referenz {#forms-centric-workflow-on-osgi-step-reference}
 
 | Version | Artikel-Link |
@@ -65,31 +63,31 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 
 * **Adaptives Formular oder Pfad zur interaktiven Kommunikation**: Geben Sie den Pfad des adaptiven Formulars oder der interaktiven Kommunikation an. Sie können das adaptive Formular oder die interaktive Kommunikation verwenden, das/die an den Workflow übermittelt wird und unter einem absoluten Pfad verfügbar ist, oder das adaptive Formular von einem Pfad abrufen, der in einer Variablen vom Datentyp „String“ gespeichert ist.
 * **PDF-Eingabedatei auswählen mit**: Geben Sie den Pfad eines nicht interaktiven PDF-Dokuments an. Das Feld ist verfügbar, wenn Sie im Feld „Typ“ ein nicht interaktives PDF-Dokument auswählen. Sie können die PDF-Eingabedatei unter Verwendung des Pfads auswählen, der relativ zur Payload ist, unter einem absoluten Pfad gespeichert wird oder eine Variable des Datentyps „Dokument“ verwendet. Beispiel: [Payload_Directory]/Workflow/PDF/credit-card.pdf. Der Pfad existiert nicht im CRX-Repository. Ein Admin erstellt den Pfad, bevor dieser verwendet wird. Für die Verwendung der Option „PDF-Pfad“ muss die Option „Datensatzdokument“ aktiviert sein oder Sie benötigen auf Formularvorlagen basierende adaptive Formulare.
-* **Für abgeschlossene Aufgaben das adaptive Formular rendern als**: Wenn eine Aufgabe als „abgeschlossen“ markiert ist, können Sie das adaptive Formular als schreibgeschütztes adaptives Formular oder PDF-Dokument rendern. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare zum Rendern des adaptiven Formulars als Datensatzdokument.
+* **Für abgeschlossene Aufgaben das adaptive Formular rendern als**: Wenn eine Aufgabe als „abgeschlossen“ markiert ist, können Sie das adaptive Formular als schreibgeschütztes adaptives Formular oder PDF-Dokument rendern. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Formularvorlagen basierende adaptive Formulare zum Rendern des adaptiven Formulars als Datensatzdokument.
 * **Vorbefüllt:**: Die nachfolgend aufgeführte Felder dienen als Eingaben für die Aufgabe:
 
-   * **[!UICONTROL Eingabedatendatei auswählen mit]**: Pfad der Eingabedatendatei (.json, .xml, .doc oder Formulardatenmodell). Sie können die Eingabedatendatei mit einem Pfad abrufen, der relativ zur Payload ist, oder die Datei abrufen, die in einer Variablen des Datentyps Dokument, XML oder JSON gespeichert ist. Beispielsweise enthält die Datei die Daten, die über eine AEM-Posteingangsanwendung für das Formular übermittelt werden. Ein Beispielpfad ist [Payload_Directory]/workflow/data.
+  * **[!UICONTROL Eingabedatendatei auswählen mit]**: Pfad der Eingabedatendatei (.json, .xml, .doc oder Formulardatenmodell). Sie können die Eingabedatendatei mit einem Pfad abrufen, der relativ zur Payload ist, oder die Datei abrufen, die in einer Variablen des Datentyps Dokument, XML oder JSON gespeichert ist. Beispielsweise enthält die Datei die Daten, die über eine AEM-Posteingangsanwendung für das Formular übermittelt werden. Ein Beispielpfad ist [Payload_Directory]/workflow/data.
 
-   * **Eingabeanlagen auswählen mit:** Anlagen, die am Speicherort verfügbar sind, werden an das Formular angehängt, das mit der Aufgabe verknüpft ist. Der Pfad kann relativ zur Payload sein oder den Anhang abrufen, der in einer Variable des Typs ArrayList eines Dokuments gespeichert ist. Ein Beispielpfad ist [Payload_Directory]/attachments/. Sie können Anlagen angeben, die relativ zur Payload platziert werden, oder eine Dokumenttyp-Variable („Array-Liste“ > „Dokument“) verwenden, um eine Eingabeanlage für das adaptive Formular anzugeben.
+  * **Eingabeanlagen auswählen mit:** Anlagen, die am Speicherort verfügbar sind, werden an das Formular angehängt, das mit der Aufgabe verknüpft ist. Der Pfad kann relativ zur Payload sein oder den Anhang abrufen, der in einer Variable des Typs ArrayList eines Dokuments gespeichert ist. Ein Beispielpfad ist [Payload_Directory]/attachments/. Sie können Anlagen angeben, die relativ zur Payload platziert werden, oder eine Dokumenttyp-Variable („Array-Liste“ > „Dokument“) verwenden, um eine Eingabeanlage für das adaptive Formular anzugeben.
 
-      * **Wählen von JSON als Eingabe:** Wählen Sie als Eingabe eine JSON-Datei anhand eines Pfads aus, der relativ zur Payload ist oder in einer Variablen des Datentyps Dokument, JSON oder Formulardatenmodel gespeichert ist. Diese Option ist verfügbar, wenn Sie die Benutzeroberfläche des interaktiven Kommunikationsagenten oder das Dokument der interaktiven Kommunikation für den Web-Kanal aus der Dropdown-Liste „Typ“ auswählen.
-      * **Wählen eines benutzerdefinierten Vorbefüllungs-Services:** Wählen Sie den Vorbefüllungs-Service aus, um die Daten abzurufen und das Dokument der interaktiven Kommunikation für den Web-Kanal oder die Benutzeroberfläche des Agenten vorab auszufüllen.
-      * **Verwenden des Vorbefüllungs-Services der oben ausgewählten interaktiven Kommunikation:** Verwenden Sie diese Option, um den Vorbefüllungs-Service der interaktiven Kommunikation zu verwenden, der in der Dropdown-Liste „Interaktive Kommunikation verwenden“ definiert ist.
-      * **Zuordnung von Anfrage-Attributen**: Verwenden Sie den Abschnitt „Attribut-Zuordnung anfordern“, um [Namen und Wert des Anfrage-Attributs](../../forms/using/work-with-form-data-model.md#bindargument) zu definieren. Rufen Sie die Details aus der Datenquelle basierend auf dem in der Anforderung angegebenen Attributnamen und -wert ab. Sie können einen Wert für das Anforderungsattribut mit einem Literalwert oder einer Variablen des Datentyps „Zeichenfolge“ definieren.\
-        Die Zuordnungsoptionen für Vorbefüllungs-Services und Anfrage-Attribute sind nur verfügbar, wenn Sie in der Dropdown-Liste „Typ“ die Option „Benutzeroberfläche des interaktive Kommunikationsagenten“ oder „Dokument der interaktiven Kommunikation für den Web-Kanal“ auswählen.
+    * **Wählen von JSON als Eingabe:** Wählen Sie als Eingabe eine JSON-Datei anhand eines Pfads aus, der relativ zur Payload ist oder in einer Variablen des Datentyps Dokument, JSON oder Formulardatenmodell gespeichert ist. Diese Option ist verfügbar, wenn Sie die Benutzeroberfläche des interaktiven Kommunikationsagenten oder das Dokument der interaktiven Kommunikation für den Web-Kanal aus der Dropdown-Liste „Typ“ auswählen.
+    * **Wählen eines benutzerdefinierten Vorbefüllungs-Services:** Wählen Sie den Vorbefüllungs-Service aus, um die Daten abzurufen und das Dokument der interaktiven Kommunikation für den Web-Kanal oder die Benutzeroberfläche des Agenten vorab auszufüllen.
+    * **Verwenden des Vorbefüllungs-Services der oben ausgewählten interaktiven Kommunikation:** Verwenden Sie diese Option, um den Vorbefüllungs-Service der interaktiven Kommunikation zu verwenden, der in der Dropdown-Liste „Interaktive Kommunikation verwenden“ definiert ist.
+    * **Zuordnung von Anfrage-Attributen**: Verwenden Sie den Abschnitt „Attribut-Zuordnung anfordern“, um [Namen und Wert des Anfrage-Attributs](../../forms/using/work-with-form-data-model.md#bindargument) zu definieren. Rufen Sie die Details aus der Datenquelle basierend auf dem in der Anforderung angegebenen Attributnamen und -wert ab. Sie können einen Wert für das Anforderungsattribut mit einem Literalwert oder einer Variablen des Datentyps „Zeichenfolge“ definieren.\
+      Die Zuordnungsoptionen für Vorbefüllungs-Services und Anfrage-Attribute sind nur verfügbar, wenn Sie in der Dropdown-Liste „Typ“ die Option „Benutzeroberfläche des interaktive Kommunikationsagenten“ oder „Dokument der interaktiven Kommunikation für den Web-Kanal“ auswählen.
 
 * **Gesendete Informationen:** Die folgenden Felder dienen als Ausgabespeicherorte für die Aufgabe:
 
-   * **Ausgabedatendatei speichern mit:**: Datendatei (.json, .xml, .doc oder Formulardatenmodell) speichern. Die Datendatei enthält Informationen, die über das zugeordnete Formular übermittelt werden. Sie können die Ausgabedatendatei unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder sie in einer Variablen des Datentyps „Dokument“, XML oder JSON speichern. Zum Beispiel [Payload_Directory]/Workflow/data, wobei „data“ für eine Datei steht.
-   * **Anlagen speichern mit:** Formularanlagen in einer Aufgabe speichern. Sie können die Anlagen unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder sie in einer Variablen der Array-Liste vom Datentyp Dokument speichern.
-   * **Datensatzdokument speichern mit:** Pfad zum Speichern einer Datensatzdokumentdatei. Beispielsweise [Payload_Directory]/DocumentofRecord/credit-card.pdf. Sie können das Datensatzdokument unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder es in einer Variablen des Datentyps „Dokument“ speichern. Wenn Sie die Option **Relativ zur Payload** auswählen, wird das Datensatzdokument nicht generiert, wenn das Feld „Pfad“ leer bleibt. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste „Typ“ die Option „Adaptives Formular“ auswählen.
+  * **Ausgabedatendatei speichern mit:** Datendatei (.json,. XML, .doc oder Formulardatenmodell). Die Datendatei enthält Informationen, die über das zugeordnete Formular übermittelt werden. Sie können die Ausgabedatendatei unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder sie in einer Variablen des Datentyps „Dokument“, XML oder JSON speichern. Zum Beispiel [Payload_Directory]/Workflow/data, wobei „data“ für eine Datei steht.
+  * **Anlagen speichern mit:** Formularanlagen in einer Aufgabe speichern. Sie können die Anlagen unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder sie in einer Variablen der Array-Liste vom Datentyp Dokument speichern.
+  * **Datensatzdokument speichern mit:** Pfad zum Speichern einer Datensatzdokumentdatei. Beispielsweise [Payload_Directory]/DocumentofRecord/credit-card.pdf. Sie können das Datensatzdokument unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder es in einer Variablen des Datentyps „Dokument“ speichern. Wenn Sie die Option **Relativ zur Payload** auswählen, wird das Datensatzdokument nicht generiert, wenn das Feld „Pfad“ leer bleibt. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste „Typ“ die Option „Adaptives Formular“ auswählen.
 
-   * **Web-Kanaldaten speichern mit:** Web-Kanal-Datendatei unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder in einer Variablen des Datentyps Dokument, JSON oder Formulardatenmodell speichern. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste „Typ“ die Option „Benutzeroberfläche des interaktiven Kommunikationsagenten“ auswählen.
-   * **PDF-Dokument speichern mit:** PDF-Dokument unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder in einer Variablen von Datentyp Dokument speichern. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste „Typ“ die Option „Benutzeroberfläche des interaktiven Kommunikationsagenten“ auswählen.
-   * **Layout-Vorlage speichern mit:** Layout-Vorlage unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder in einer Variablen vom Datentyp Dokument speichern. Die [Layout-Vorlage](../../forms/using/layout-design-details.md) verweist auf eine XDP-Datei, die Sie mit Forms Designer erstellen. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste „Typ“ die Option „Benutzeroberfläche des interaktiven Kommunikationsagenten“ auswählen.
+  * **Web-Kanaldaten speichern mit:** Web-Kanal-Datendatei unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder in einer Variablen des Datentyps Dokument, JSON oder Formulardatenmodell speichern. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste „Typ“ die Option „Benutzeroberfläche des interaktiven Kommunikationsagenten“ auswählen.
+  * **PDF-Dokument speichern mit:** PDF-Dokument unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder in einer Variablen von Datentyp Dokument speichern. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste „Typ“ die Option „Benutzeroberfläche des interaktiven Kommunikationsagenten“ auswählen.
+  * **Layout-Vorlage speichern mit:** Layout-Vorlage unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder in einer Variablen vom Datentyp Dokument speichern. Die [Layout-Vorlage](../../forms/using/layout-design-details.md) verweist auf eine XDP-Datei, die Sie mit Forms Designer erstellen. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste „Typ“ die Option „Benutzeroberfläche des interaktiven Kommunikationsagenten“ auswählen.
 
 * **Beauftragter > Optionen zuweisen:** Geben Sie die Methode an, mit der die Aufgabe einem Benutzer zugewiesen werden soll. Sie können die Aufgabe dynamisch einem Benutzer oder einer Gruppe zuweisen, indem Sie das Skript „Teilnehmerauswahl“ verwenden oder die Aufgabe einem bestimmten AEM-Benutzer oder einer bestimmten Gruppe zuweisen.
-* **Teilnehmerauswahl**: Die Option ist verfügbar, wenn im Feld „Optionen zuweisen“ die Option **Dynamisch an einen Benutzer bzw. eine Gruppe** ausgewählt ist. Sie können ein ECMAScript oder einen Service verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen. Weitere Informationen finden Sie unter [Dynamisches Zuweisen eines Workflows zu Benutzenden](https://helpx.adobe.com/de/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) und [Erstellen eines benutzerdefinierten Schritts „Dynamischer Teilnehmer in Adobe Experience Manager“.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk)
+* **Teilnehmerauswahl**: Die Option ist verfügbar, wenn im Feld „Optionen zuweisen“ die Option **Dynamisch an einen Benutzer bzw. eine Gruppe** ausgewählt ist. Sie können ein ECMAScript oder einen Service verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen. Weitere Informationen finden Sie unter [Dynamisches Zuweisen eines Workflows zu Benutzenden](https://helpx.adobe.com/de/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) und [Erstellen eines benutzerdefinierten Schritts „Dynamischer Teilnehmer in Adobe Experience Manager“.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&CID=RedirectAEMCommunityKautuk)
 
 * **Teilnehmer:** Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** im Feld **Teilnehmerauswahl** ausgewählt ist. In diesem Feld können Sie Benutzende oder Gruppen für die Option „RandomParticipantChooser“ auswählen.
 
@@ -107,8 +105,8 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 * **HTML-E-Mail-Vorlage**: Wählen Sie die E-Mail-Vorlage für die Benachrichtigungs-E-Mail. Um eine Vorlage zu bearbeiten, ändern Sie die Datei unter /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt im CRX-Repository.
 * **Delegierung zulassen an**: Der AEM-Posteingang bietet angemeldeten Benutzenden eine Option, den zugewiesenen Workflow an andere Benutzende zu delegieren. Sie können innerhalb derselben Gruppe oder an die Benutzerin bzw. den Benutzer des Workflows aus einer anderen Gruppe delegieren. Wenn die Aufgabe einem einzelnen Benutzer zugewiesen ist und die Option **Delegierung an Mitglieder der Gruppe an Verantwortlichen zulassen** aktiviert ist, kann die Aufgabe nicht an einen anderen Benutzer oder eine andere Gruppe übertragen werden.
 * **Freigabeeinstellungen**: Der AEM-Posteingang bietet Optionen zum Freigeben einer einzelnen oder aller Aufgaben im Posteingang für andere Benutzer:
-   * Wenn die Option **Bevollmächtigtem erlauben, explizit im Posteingang freizugeben** ausgewählt ist, kann die Person auf die Aufgabe klicken und sie für andere AEM-Benutzende freigeben.
-   * Wenn die Option **Bevollmächtigtem erlauben, explizit im Posteingang freizugeben** ausgewählt ist und ein Benutzer seine Posteingangselemente freigibt oder anderen Benutzern den Zugriff auf seine Posteingangselemente erlaubt, werden nur Aufgaben mit der zuvor erwähnten aktivierten Option für andere Benutzer freigegeben.
+  * Wenn die Option **Bevollmächtigtem erlauben, explizit im Posteingang freizugeben** ausgewählt ist, kann die Person auf die Aufgabe klicken und sie für andere AEM-Benutzende freigeben.
+  * Wenn die Option **Bevollmächtigtem erlauben, explizit im Posteingang freizugeben** ausgewählt ist und ein Benutzer seine Posteingangselemente freigibt oder anderen Benutzern den Zugriff auf seine Posteingangselemente erlaubt, werden nur Aufgaben mit der zuvor erwähnten aktivierten Option für andere Benutzer freigegeben.
 
 * **Aktionen > Standardaktionen**: Standardmäßig sind die Aktionen „Übermitteln“, „Speichern“ und „Zurücksetzen“ verfügbar. Alle Standardaktionen sind standardmäßig aktiviert.
 * **Route-Variable**: Name der Route-Variablen. Die Route-Variable erfasst benutzerdefinierte Aktionen, die ein Benutzer im AEM-Posteingang auswählt.
@@ -166,7 +164,7 @@ Beim E-Mail-Schritt wird der Day CQ Mail Service zum Senden von E-Mails verwende
 
 **Dateianhang**: Das am angegebenen Speicherort verfügbare Asset wird an die E-Mail angehängt. Der Pfad des Assets kann relativ zur Payload oder zum absoluten Pfad sein. Ein Beispielpfad ist [Payload_Directory]/attachments/.
 
-Wählen Sie die Option **Variable**, um den in einer Variablen des Dateityps „Dokument“, XML oder JSON gespeicherte Dateianhang abzurufen.
+Wählen Sie die Option **Variable**, um den in einer Variablen des Datentyps „Dokument“, XML oder JSON gespeicherte Dateianhang abzurufen.
 
 **Dateiname:** Name der E-Mail-Anhangsdatei. Der E-Mail-Schritt ändert den Originaldateinamen des Anhangs in den angegebenen Dateinamen. Der Name kann manuell angegeben oder aus einer Workflow-Metadateneigenschaft oder einer Variable abgerufen werden. Verwenden Sie die Option **Literal**, wenn Sie den genauen zu spezifizierenden Wert kennen. Verwenden Sie die Option **Variable**, um den Dateinamen aus dem Wert abzurufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist. Verwenden Sie die Option **Aus Workflow-Metadaten abrufen**, wenn der zu verwendende Wert in einer Workflow-Metadateneigenschaft gespeichert wird.
 
@@ -258,23 +256,23 @@ Der Schritt „Formulardatenmodelldienst aufrufen“ enthält die folgenden Feld
 * **Dienst**: Liste der Dienste, die das ausgewählte Formulardatenmodell bereitstellt.
 * **Eingabe für Services > Bereitstellung von Eingabedaten mit Literal, Variable oder Workflow-Metadaten und einer JSON-Datei**: Ein Service kann mehrere Argumente aufweisen. Wählen Sie die Option zum Abrufen des Werts der Service-Parameter aus einer Workflow-Metadateneigenschaft, einem JSON-Objekt oder einer Variable aus oder geben Sie den Wert direkt in das bereitgestellte Textfeld ein:
 
-   * **Literal:** Verwenden Sie die Option, wenn Sie den genauen Wert kennen, der angegeben werden soll. Beispiel: srose@we.info.
-   * **Variable**: Verwenden Sie diese Option, um den in einer Variablen gespeicherten Wert abzurufen.
-   * **Aus Workflow-Metadaten abrufen**: Verwenden Sie diese Option, wenn der zu verwendende Wert in einer Workflow-Metadateneigenschaft gespeichert wird. Beispiel: e-mailAddress.
-   * **[!UICONTROL Relativ zur Nutzlast]**: Verwenden Sie die Option zum Abrufen des Dateianhangs, der in einem Pfad relativ zur Payload gespeichert ist. Wählen Sie die Option aus und geben Sie entweder den Ordnernamen an, der den Dateianhang enthält, oder geben Sie den Dateinamen für den Anhang im Textfeld an.
+  * **Literal:** Verwenden Sie die Option, wenn Sie den genauen Wert kennen, der angegeben werden soll. Beispiel: srose@we.info.
+  * **Variable**: Verwenden Sie diese Option, um den in einer Variablen gespeicherten Wert abzurufen.
+  * **Aus Workflow-Metadaten abrufen**: Verwenden Sie diese Option, wenn der zu verwendende Wert in einer Workflow-Metadateneigenschaft gespeichert wird. Beispiel: e-mailAddress.
+  * **[!UICONTROL Relativ zur Nutzlast]**: Verwenden Sie die Option zum Abrufen des Dateianhangs, der in einem Pfad relativ zur Payload gespeichert ist. Wählen Sie die Option aus und geben Sie entweder den Ordnernamen an, der den Dateianhang enthält, oder geben Sie den Dateinamen für den Anhang im Textfeld an.
 
-     Wenn beispielsweise der Ordner „Relativ zur Nutzlast“ im CRX-Repository einen Dateianhang am Speicherort `attachment\attachment-folder` enthält, geben Sie `attachment\attachment-folder` im Textfeld an, nachdem Sie die Option **[!UICONTROL Relativ zur Nutzlast]** ausgewählt haben.
-   * **JSON Dot Notation:** Verwenden Sie die Option, wenn der zu verwendende Wert in einer JSON-Datei enthalten ist. Beispiel: Insurance.customerDetails.emailAddress. Die Option „JSON Dot Notation“ ist nur verfügbar, wenn Zuordnungseingabefelder zur Eingabe von JSON-Optionen ausgewählt sind.
-   * **Zuordnen von Eingabefelder aus der Eingabe JSON:** Geben Sie den Pfad einer JSON-Datei an, um den Eingabewert einiger Service-Parameter aus der JSON-Datei abzurufen. Der Pfad der JSON-Datei kann relativ zur Payload bzw. zu einem absoluten Pfad sein oder Sie können ein JSON-Eingabedokument mit einer Variable vom Typ JSON oder Formulardatenmodell auswählen.
+    Wenn beispielsweise der Ordner „Relativ zur Nutzlast“ im CRX-Repository einen Dateianhang am Speicherort `attachment\attachment-folder` enthält, geben Sie `attachment\attachment-folder` im Textfeld an, nachdem Sie die Option **[!UICONTROL Relativ zur Nutzlast]** ausgewählt haben.
+  * **JSON Dot Notation:** Verwenden Sie die Option, wenn der zu verwendende Wert in einer JSON-Datei enthalten ist. Beispiel: Insurance.customerDetails.emailAddress. Die Option „JSON Dot Notation“ ist nur verfügbar, wenn Zuordnungseingabefelder zur Eingabe von JSON-Optionen ausgewählt sind.
+  * **Zuordnen von Eingabefelder aus der Eingabe JSON:** Geben Sie den Pfad einer JSON-Datei an, um den Eingabewert einiger Service-Parameter aus der JSON-Datei abzurufen. Der Pfad der JSON-Datei kann relativ zur Payload bzw. zu einem absoluten Pfad sein oder Sie können ein JSON-Eingabedokument mit einer Variable vom Typ JSON oder Formulardatenmodell auswählen.
 
 * **Eingabe für Services > Eingabedaten mithilfe einer Variablen oder einer JSON-Datei bereitstellen**: Wählen Sie diese Option, um Werte für alle Argumente aus einer JSON-Datei abzurufen, die unter einem absoluten Pfad, einem Pfad relativ zur Payload oder in einer Variablen gespeichert wurde.
-* **Auswahl des Eingabe-JSON-Dokuments mit**: Die JSON-Datei, die Werte für alle Dienstargumente enthält. Der Pfad der JSON-Datei kann **relativ zur Payload** oder einem **absoluten Pfad** sein. Sie können das JSON-Eingabedokument auch mit einer Variablen vom Typ „JSON“ oder „Formulardatenmodell“ abrufen.
+* **Auswahl des Eingabe-JSON-Dokuments mit**: Die JSON-Datei, die Werte für alle Dienstargumente enthält. Der Pfad der JSON-Datei kann **relativ zur Payload)** ein **absoluter Pfad“** Sie können das JSON-Eingabedokument auch mit einer Variablen vom Typ „JSON“ oder „Formulardatenmodell“ abrufen.
 
 * **JSON Dot Notation**: Lassen Sie das Feld leer, um alle Objekte der angegebenen JSON-Datei als Eingabe für Dienstargumente zu verwenden. Um ein bestimmtes JSON-Objekt aus der angegebenen JSON-Datei als Eingabe für Service-Argumente zu lesen, geben Sie die Dot Notation für das JSON-Objekt an, z. B. wenn Sie eine JSON ähnlich wie am Anfang des Abschnitts aufgeführt haben, geben Sie „insurance.customerDetails“ an, um alle Details eines Kunden als Eingabe für den Service anzugeben.
 * **Ausgabe des Service > Ausgabewerte zu Variablen oder Metadaten zuordnen und schreiben**: Wählen Sie diese Option, um die Ausgabewerte als Eigenschaften des Metadatenknotens der Workflow-Instanz im CRX-Repository zu speichern. Geben Sie den Namen der Metadateneigenschaft an und wählen Sie das entsprechende Service-Ausgabeattribut, das der Metadateneigenschaft zugeordnet werden soll, ordnen Sie z. B. die vom Ausgabe-Service zurückgegebene Telefonnummer der Eigenschaft „phone_number“ der Workflow-Metadaten zu. In ähnlicher Weise können Sie die Ausgabe in einer Variablen vom Datentyp „Long“ speichern. Wenn Sie eine Eigenschaft für die Option **[!UICONTROL Dienstausgabeattribut, das zugeordnet werden soll]** auswählen, werden nur Variablen, die Daten der ausgewählten Eigenschaft speichern können, für die Option **[!UICONTROL Ausgabe speichern in]** ausgefüllt.
 
 * **Ausgabe des Services > Ausgabe in Variable oder JSON-Datei speichern**: Wählen Sie diese Option, um die Ausgabewerte in einer JSON-Datei unter einem absoluten Pfad, einem Pfad relativ zur Payload oder in einer Variablen zu speichern.
-* **Ausgabe-JSON-Dokument mithilfe folgender Optionen speichern**: Speichern der JSON-Ausgabedatei. Der Pfad der JSON-Ausgabedatei kann relativ zur Payload oder einem absoluten Pfad sein. Sie können die JSON-Ausgabedatei auch mit einer Variablen vom Typ „JSON“ oder „Formulardatenmodell“ speichern.
+* **Ausgabe-JSON-Dokument mithilfe folgender Optionen speichern**: Speichern der JSON-Ausgabedatei. Der Pfad der JSON-Ausgabedatei kann relativ zur Payload oder einem absoluten Pfad sein. Sie können die JSON-Ausgabedatei auch mit einer Variablen vom Datentyp „JSON“ oder „Formulardatenmodell“ speichern.
 
 ## Schritt „Dokument signieren“ {#sign-document-step}
 
@@ -338,7 +336,7 @@ Konvertiert ein PDF-Dokument in eine Bilderliste. Unterstützte Bildformate sind
 
 ### Schritt „Nach PDF/A konvertieren“ {#convert-to-pdf-a-step}
 
-Konvertiert ein PDF-Dokument unter Verwendung der bereitgestellten Optionen in das PDF/A-Format. Die PDF/A-Version des Portable Document Format (PDF) ist auf die Archivierung und Langzeitarchivierung von Dokumenten spezialisiert. 
+Konvertiert ein PDF-Dokument unter Verwendung der bereitgestellten Optionen in das PDF/A-Format. Die PDF/A-Version des Portable Document Format (PDF) ist auf die Archivierung und Langzeitarchivierung von Dokumenten spezialisiert.
 
 ### Schritt „In PS konvertieren“ {#convert-to-ps-step}
 
@@ -362,7 +360,7 @@ Konvertiert ein PDF-Dokument in ein ausgewähltes Format.
 
 ### Schritt „Nicht-interaktive PDF generieren“ {#generatenoninteractive}
 
-Erstellt eine nicht-interaktive PDF. Es sind verschiedene Anpassungsoptionen verfügbar. 
+Erstellt eine nicht-interaktive PDF. Es sind verschiedene Anpassungsoptionen verfügbar.
 
 >[!NOTE]
 >
@@ -417,7 +415,7 @@ Sendet ein Dokument direkt an einen Drucker. Die folgenden Druckerzugriffsmechan
 
 Dieser Schritt generiert eine PCL-, PostScript-, ZPL-, IPL-, TPCL- oder DPL-Ausgabe aus einem Formularentwurf und einer Datendatei. Die Datendatei wird mit dem Formularentwurf zusammengeführt und für den Druck formatiert. Die von diesem Schritt generierte Ausgabe kann direkt an einen Drucker gesendet oder als Datei gespeichert werden. Es wird empfohlen, diesen Schritt zu verwenden, wenn Sie Formularentwürfe oder Daten aus einem Programm verwenden möchten. Wenn sich Ihre Formularentwürfe oder Daten im Netzwerk, auf einem lokalen Dateisystem oder an einem HTTP-Speicherort befinden, verwenden Sie den Vorgang „generatePrintedOutput“.
 
-Beispielsweise erfordert Ihre Anwendung, dass Sie einen Formularentwurf mit einer Datendatei zusammenführen. Die Daten enthalten Hunderte von Datensätzen. Darüber hinaus soll die Ausgabe an einen Drucker gesendet werden, der ZPL unterstützt. Der Formularentwurf und Ihre Eingabedaten befinden sich in einer Anwendung. Verwenden Sie den Vorgang „generatePrintedOutput“, um jeden Datensatz mit einem Formularentwurf zusammenzuführen und die Ausgabe an einen Drucker zu senden, der ZPL unterstützt.
+Beispielsweise erfordert Ihre Anwendung, dass Sie einen Formularentwurf mit einer Datendatei zusammenführen. Die Daten enthalten Hunderte von Einträgen. Darüber hinaus soll die Ausgabe an einen Drucker gesendet werden, der ZPL unterstützt. Der Formularentwurf und Ihre Eingabedaten befinden sich in einer Anwendung. Verwenden Sie den Vorgang „generatePrintedOutput“, um jeden Eintrag mit einem Formularentwurf zusammenzuführen und die Ausgabe an einen Drucker zu senden, der ZPL unterstützt.
 
 Der Schritt „Gedruckte Ausgabe generieren“ hat die folgenden Eigenschaften:
 
@@ -429,23 +427,23 @@ Der Schritt „Gedruckte Ausgabe generieren“ hat die folgenden Eigenschaften:
 
 * **[!UICONTROL Druckerformat]**: Ein Druckformatwert, der beim Fehlen einer XDC-Datei die zu verwendende Sprache der Seitenbeschreibung angibt, um den Ausgabe-Stream zu generieren. Wenn Sie einen Literalwert angeben, wählen Sie einen der folgenden Werte:
 
-   * **[!UICONTROL Benutzerdefinierte PCL]**: Verwenden Sie diese Option, um eine benutzerdefinierte XDC-Datei für PCL anzugeben.
-   * **[!UICONTROL Benutzerdefiniertes PostScript]**: Verwenden Sie die Option, um eine benutzerdefinierte XDC-Datei für PostScript anzugeben.
-   * **[!UICONTROL Benutzerdefiniertes ZPL]**: Verwenden Sie diese Option, um eine benutzerdefinierte XDC-Datei für ZPL anzugeben.
-   * **[!UICONTROL Generische Farb-PCL (5c)]**: Verwenden Sie eine generische Farb-PCL (5c).
-   * **[!UICONTROL Generisches PostScript Level3]**: Verwenden Sie generisches PostScript der Ebene 3.
-   * **[!UICONTROL ZPL 300 DPI]**: Verwenden Sie ZPL mit 300 DPI. Die Datei zpl300.xdc wird verwendet.
-   * **[!UICONTROL ZPL 600 DPI]**: Verwenden Sie ZPL mit 600 DPI. Die Datei zpl600.xdc wird verwendet.
-   * **[!UICONTROL Benutzerdefiniertes IPL]**: Verwenden Sie die Option, um eine benutzerdefinierte XDC-Datei für IPL anzugeben.
-   * **[!UICONTROL IPL 300 DPI]**: Verwenden Sie IPL mit 300 DPI. Die Datei ipl300.xdc wird verwendet.
-   * **[!UICONTROL IPL 400 DPI]**: Verwenden Sie IPL mit 400 DPI. Die Datei ipl400.xdc wird verwendet.
-   * **[!UICONTROL Benutzerdefiniertes TPCL]**: Verwenden Sie die Option, um eine benutzerdefinierte XDC-Datei für TPCL anzugeben.
-   * **[!UICONTROL TPCL 305 DPI]**: Verwenden Sie TPCL mit 300 DPI. Die Datei tpcl305.xdc wird verwendet.
-   * **[!UICONTROL PCL 600 DPI]**: Verwenden Sie TPCL mit 600 DPI. Die Datei tpcl600.xdc wird verwendet.
-   * **[!UICONTROL Benutzerdefiniertes DPL]**: Verwenden Sie die Option, um eine benutzerdefinierte XDC-Datei für DPL anzugeben.
-   * **[!UICONTROL DPL300DPI]**: Verwenden Sie DPL mit 300 DPI. Die Datei dpl300.xdc wird verwendet.
-   * **[!UICONTROL DPL406DPI]**: Verwenden Sie DPL mit 400 DPI. Die Datei dpl406.xdc wird verwendet.
-   * **[!UICONTROL DPL600DPI]**: Verwenden Sie DPL mit 600 DPI. Die Datei dpl600.xdc wird verwendet.
+  * **[!UICONTROL Benutzerdefinierte PCL]**: Verwenden Sie diese Option, um eine benutzerdefinierte XDC-Datei für PCL anzugeben.
+  * **[!UICONTROL Benutzerdefiniertes PostScript]**: Verwenden Sie die Option, um eine benutzerdefinierte XDC-Datei für PostScript anzugeben.
+  * **[!UICONTROL Benutzerdefiniertes ZPL]**: Verwenden Sie diese Option, um eine benutzerdefinierte XDC-Datei für ZPL anzugeben.
+  * **[!UICONTROL Generische Farb-PCL (5c)]**: Verwenden Sie eine generische Farb-PCL (5c).
+  * **[!UICONTROL Generisches PostScript Level3]**: Verwenden Sie generisches PostScript der Ebene 3.
+  * **[!UICONTROL ZPL 300 DPI]**: Verwenden Sie ZPL mit 300 DPI. Die Datei zpl300.xdc wird verwendet.
+  * **[!UICONTROL ZPL 600 DPI]**: Verwenden Sie ZPL mit 600 DPI. Die Datei zpl600.xdc wird verwendet.
+  * **[!UICONTROL Benutzerdefiniertes IPL]**: Verwenden Sie die Option, um eine benutzerdefinierte XDC-Datei für IPL anzugeben.
+  * **[!UICONTROL IPL 300 DPI]**: Verwenden Sie IPL mit 300 DPI. Die Datei ipl300.xdc wird verwendet.
+  * **[!UICONTROL IPL 400 DPI]**: Verwenden Sie IPL mit 400 DPI. Die Datei ipl400.xdc wird verwendet.
+  * **[!UICONTROL Benutzerdefiniertes TPCL]**: Verwenden Sie die Option, um eine benutzerdefinierte XDC-Datei für TPCL anzugeben.
+  * **[!UICONTROL TPCL 305 DPI]**: Verwenden Sie TPCL mit 300 DPI. Die Datei tpcl305.xdc wird verwendet.
+  * **[!UICONTROL PCL 600 DPI]**: Verwenden Sie TPCL mit 600 DPI. Die Datei tpcl600.xdc wird verwendet.
+  * **[!UICONTROL Benutzerdefiniertes DPL]**: Verwenden Sie die Option, um eine benutzerdefinierte XDC-Datei für DPL anzugeben.
+  * **[!UICONTROL DPL300DPI]**: Verwenden Sie DPL mit 300 DPI. Die Datei dpl300.xdc wird verwendet.
+  * **[!UICONTROL DPL406DPI]**: Verwenden Sie DPL mit 400 DPI. Die Datei dpl406.xdc wird verwendet.
+  * **[!UICONTROL DPL600DPI]**: Verwenden Sie DPL mit 600 DPI. Die Datei dpl600.xdc wird verwendet.
 
 **Ausgabeeigenschaften**
 
@@ -460,15 +458,15 @@ Der Schritt „Gedruckte Ausgabe generieren“ hat die folgenden Eigenschaften:
 * **[!UICONTROL XCI-Datei auswählen mit]**: XCI-Dateien werden verwendet, um Schriftarten und andere Eigenschaften zu beschreiben, die für Formularentwurfselemente verwendet werden. Sie können eine XCI-Datei relativ zur Payload, in einem absoluten Pfad oder mithilfe einer Variablen des Datentyps „Document“ beibehalten.
 
 * **[!UICONTROL Gebietsschema]**: Legt die Sprache fest, die zum Generieren des PDF-Dokuments verwendet wird. Wenn Sie einen Literalwert angeben, wählen Sie eine Sprache aus der Liste oder einen der folgenden Werte:
-   * **So verwenden Sie den Server-Standard**: 
-(Standard) Verwenden Sie die Einstellung „Gebietsschema“, die auf dem AEM Forms-Server konfiguriert ist. Die Einstellung „Gebietsschema“ wird mit der Administration Console konfiguriert. (Weitere Informationen finden Sie in der [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_65_de).)
+  * **So verwenden Sie den Server-**:
+    (Standard) Verwenden Sie die Einstellung „Gebietsschema“, die auf dem AEM Forms-Server konfiguriert ist. Die Einstellung „Gebietsschema“ wird mit der Administration Console konfiguriert. (Weitere Informationen finden Sie in der [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_65_de).)
 
-   * **So verwenden Sie einen benutzerdefinierten Wert**: 
-Geben Sie den Gebietsschema-Code in das Feld „Literal“ ein oder wählen Sie eine Zeichenfolgenvariable aus, die den Gebietsschema-Code enthält. Eine vollständige Liste der unterstützten Gebietsschemata finden Sie unter https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+  * **So verwenden Sie einen benutzerdefinierten Wert**:
+    Geben Sie den Gebietsschema-Code in das Feld „Literal“ ein oder wählen Sie eine Zeichenfolgenvariable aus, die den Gebietsschema-Code enthält. Eine vollständige Liste der unterstützten Gebietsschemata finden Sie unter https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Kopien]**: Ein ganzzahliger Wert, der die Anzahl der Kopien angibt, die für die Ausgabe generiert werden. Der Standardwert ist 1.
 
 * **[!UICONTROL Duplexdruck]**: Ein Paginierungswert, der angibt, ob zweiseitiger oder einseitiger Druck verwendet werden soll. Drucker, die PostScript und PCL unterstützen, verwenden diesen Wert. Wenn Sie einen Literalwert angeben, wählen Sie einen der folgenden Werte:
-   * **[!UICONTROL Duplex, lange Kante]**: Verwenden Sie den zweiseitiger Druck und die Paginierung erfolgt an langen Kanten.
-   * **[!UICONTROL Duplex, kurze Kante]**: Verwenden Sie den zweiseitigen Druck mit Paginierung an kurzen Kanten.
-   * **[!UICONTROL Simplex]**: Verwenden Sie den einseitigen Druck.
+  * **[!UICONTROL Duplex, lange Kante]**: Verwenden Sie den zweiseitiger Druck und die Paginierung erfolgt an langen Kanten.
+  * **[!UICONTROL Duplex, kurze Kante]**: Verwenden Sie den zweiseitigen Druck mit Paginierung an kurzen Kanten.
+  * **[!UICONTROL Simplex]**: Verwenden Sie den einseitigen Druck.

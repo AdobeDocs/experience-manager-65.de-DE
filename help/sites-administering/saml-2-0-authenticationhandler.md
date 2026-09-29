@@ -1,22 +1,24 @@
 ---
 title: SAML 2.0-Authentifizierungs-Handler
+
 description: Hier finden Sie Informationen zum SAML 2.0-Authentifizierungs-Handler in AEM.
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
+
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 100%
-
+source-wordcount: '864'
+ht-degree: 94%
 ---
-
-# SAML 2.0-Authentifizierungs-Handler {#saml-authentication-handler}
+# SAML 2.0-Authentifizierungs-Handler{#saml-authentication-handler}
 
 AEM umfasst einen [SAML](https://saml.xml.org/saml-specifications)-Authentifizierungs-Handler. Dieser Handler unterstützt das [SAML](https://saml.xml.org/saml-specifications) 2.0-Authentifizierungsanforderungsprotokoll (Web-SSO-Profil), das die `HTTP POST`-Bindung verwendet.
 
@@ -86,13 +88,13 @@ Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf 
 
 **Zu Gruppen hinzufügen** Gibt an, ob Benutzer nach erfolgreicher Authentifizierung automatisch zu CRX-Gruppen hinzugefügt werden sollen.
 
-**Gruppenmitgliedschaft** Der Name des „saml:Attribute“, das eine Liste von CRX-Gruppen enthält, denen dieser Benutzer hinzugefügt werden muss.
+**Gruppenmitgliedschaft** Der Name der SAML:Attribute die eine Liste von CRX-Gruppen enthält, denen dieser Benutzer hinzugefügt werden soll.
 
 ## Hinzufügen des Identitätsanbieterzertifikats zum AEM-TrustStore {#add-the-idp-certificate-to-the-aem-truststore}
 
 SAML-Assertionen werden signiert und können optional verschlüsselt sein. Damit dies funktionieren kann, müssen Sie mindestens das öffentliche Identitätsanbieterzertifikat im Repository bereitstellen. Dazu müssen Sie folgende Schritte durchführen:
 
-1. Wechseln Sie zu *http:/Server-Adresse:Serverport/libs/granite/security/content/truststore.html*.
+1. Wechseln Sie zu *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*
 1. Klicken Sie auf **[!UICONTROL TrustStore-Link erstellen]**.
 1. Geben Sie das Kennwort für den TrustStore ein und klicken Sie auf **[!UICONTROL Speichern]**.
 1. Klicken Sie auf **[!UICONTROL TrustStore verwalten]**.
@@ -107,13 +109,13 @@ SAML-Assertionen werden signiert und können optional verschlüsselt sein. Damit
 >
 >Die folgenden Schritte sind obligatorisch. Andernfalls wird die folgende Ausnahme ausgelöst: `com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised system trust store`
 
-1. Wechseln Sie zu [http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html).
+1. Wechseln Sie zu: [http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html)
 1. Bearbeiten Sie den Benutzer `authentication-service`.
 1. Erstellen Sie einen KeyStore, indem Sie unter **Kontoeinstellungen** auf **KeyStore erstellen** klicken.
 
 >[!NOTE]
 >
->Die folgenden Schritte sind nur erforderlich, wenn der Handler in der Lage sein muss, Nachrichten zu signieren oder zu verschlüsseln.
+>Die folgenden Schritte sind nur erforderlich, wenn der Handler in der Lage sein muss, Nachrichten zu signieren oder zu entschlüsseln.
 
 1. Erstellen Sie das Zertifikat/Schlüsselpaar für AEM. Der Befehl zur Erzeugung über OpenSSL sollte dem folgenden Beispiel ähneln:
 
@@ -133,7 +135,7 @@ SAML-Assertionen werden signiert und können optional verschlüsselt sein. Damit
 
 Sie können einen Logger einrichten, um alle Probleme zu debuggen, die aufgrund der falschen Konfiguration von SAML entstehen können. Gehen Sie dazu wie folgt vor:
 
-1. Wechseln Sie zur Web-Konsole unter *http://localhost:4502/system/console/configMgr*.
+1. Wechseln Sie zur Web-Konsole unter *http://localhost:4502/system/console/configMgr*
 1. Suchen Sie nach dem Eintrag **Apache Sling Logging-Logger-Konfiguration** und klicken Sie darauf.
 1. Erstellen Sie einen Logger mit folgender Konfiguration:
 

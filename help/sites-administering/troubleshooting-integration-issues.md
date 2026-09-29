@@ -1,21 +1,23 @@
 ---
 title: Fehlerbehebung für Integrationsprobleme
+
 description: Erfahren Sie, wie Sie Probleme bei der Integration in Adobe Experience Manager beheben können.
+
+
 contentOwner: raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
+
 exl-id: 11b0023e-34bd-4dfe-8173-5466db9fbe34
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 100%
-
+source-wordcount: '1102'
+ht-degree: 97%
 ---
-
 # Fehlerbehebung für Integrationsprobleme{#troubleshooting-integration-issues}
 
 ## Allgemeine Tipps zur Problembehebung {#general-troubleshooting-tips}
@@ -42,7 +44,7 @@ ${ myHtlVariable }
 -->
 ```
 
-Weitere Informationen zu Protokollierung finden Sie auf den Seiten [Protokollierung](/help/sites-deploying/configure-logging.md) und [Arbeiten mit Auditdatensätzen und Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
+Weitere Informationen zu Protokollierung finden Sie auf den Seiten [Protokollierung](/help/sites-deploying/configure-logging.md) und [Arbeiten mit Auditeinträgen und Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ## Probleme bei der Analytics-Integration {#analytics-integration-issues}
 
@@ -100,11 +102,11 @@ Um das Problem zu beheben, können Sie Folgendes versuchen:
 * Veröffentlichen Sie die in `/etc/cloudservices/dynamictagmanagement` gefundenen Konfigurationen erneut.
 * Überprüfen Sie ACLs unter `/etc/cloudservices`. Die ACLs sollten wie folgt lauten:
 
-   * allow; jcr:read; webservice-support-servicelibfinder
-   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
-   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults`
-   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public/`&amp;ast;
-   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public`
+  * allow; jcr:read; webservice-support-servicelibfinder
+  * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
+  * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults`
+  * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public/`&amp;ast;
+  * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public`
 
 Weitere Informationen zur Verwaltung von ACLs finden Sie auf der Seite [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md#permissions-in-aem).
 
@@ -157,7 +159,7 @@ var s=s_gi(s_account)
 
 Dieses Problem kann mehrere Ursachen haben:
 
-* Das asynchrone Laden von Target-Client-Bibliotheken (`mbox.js` oder `at.js`) mithilfe von Drittanbieter-Tag-Management-Systemen kann das Targeting nach dem Zufallsprinzip außer Kraft setzen. Die Target-Bibliotheken sollten synchron im Seitenkopf geladen werden. Dies gilt immer, wenn die Bibliotheken von AEM bereitgestellt werden. 
+* Das asynchrone Laden von Target-Client-Bibliotheken (`mbox.js` oder `at.js`) mithilfe von Drittanbieter-Tag-Management-Systemen kann das Targeting nach dem Zufallsprinzip außer Kraft setzen. Die Target-Bibliotheken sollten synchron im Seitenkopf geladen werden. Dies gilt immer, wenn die Bibliotheken von AEM bereitgestellt werden.
 
 * Wenn Sie zwei Target-Client-Bibliotheken (`at.js`) gleichzeitig laden, z. B. eine über DTM und eine über die Target-Konfiguration in AEM, kann dies zu Konflikten in der `adobe.target`-Definition führen, wenn die `at.js`-Versionen unterschiedlich sind.
 

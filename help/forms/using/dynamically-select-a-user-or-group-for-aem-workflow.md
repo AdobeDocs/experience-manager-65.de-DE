@@ -1,6 +1,6 @@
 ---
 title: Wählen Sie dynamisch einen Benutzer oder eine Gruppe für AEM Forms-zentrierte Workflow-Schritte aus.
-description: Erfahren Sie, wie Sie zur Laufzeit einen Benutzer oder eine Gruppe für einen AEM Forms-Arbeitsablauf auswählen.
+description: Erfahren Sie, wie Sie zur Laufzeit einen Benutzer oder eine Gruppe für einen AEM Forms-Workflow auswählen.
 content-type: troubleshooting
 topic-tags: publish
 exl-id: 3c48660e-5e4f-4615-82d4-9f1f285c2a39
@@ -9,18 +9,16 @@ role: User, Developer
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 100%
-
+source-wordcount: '949'
+ht-degree: 97%
 ---
-
 # Wählen Sie dynamisch einen Benutzer oder eine Gruppe für AEM Forms-zentrierte Workflow-Schritte aus. {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
-Erfahren Sie, wie Sie zur Laufzeit einen Benutzer oder eine Gruppe für einen AEM Forms-Arbeitsablauf auswählen.
+Erfahren Sie, wie Sie zur Laufzeit einen Benutzer oder eine Gruppe für einen AEM Forms-Workflow auswählen.
 
 In großen Unternehmen müssen Benutzende für einen Prozess dynamisch ausgewählt werden. Zum Beispiel die Auswahl von Außendienstmitarbeitenden zur Betreuung von Kundschaft auf der Grundlage der Nähe der Mitarbeitenden zur Kundschaft. In einem solchen Szenario werden die Mitarbeitenden dynamisch ausgewählt.
 
-Die Schritte „Aufgabe zuweisen“ und „Adobe Sign“ im Artikel [Formularzentrierte Workflows unter OSGi](/help/forms/using/aem-forms-workflow.md) bieten Optionen für die dynamische Auswahl von Benutzern. Sie können ECMAScript oder OSGi-Bundles verwenden, um einen Verantwortlichen für den Schritt „Aufgabe zuweisen“ oder Unterzeichner für den Schritt „Dokument signieren“ dynamisch auszuwählen.
+Die Schritte „Aufgabe zuweisen“ und „Adobe Sign“ im Artikel [Formularzentrierte Workflows unter OSGi](/help/forms/using/aem-forms-workflow.md) bieten Optionen für die dynamische Auswahl von Benutzern. Sie können ECMAScript oder OSGi-Pakete verwenden, um einen Verantwortlichen für den Schritt „Aufgabe zuweisen“ oder Unterzeichner für den Schritt „Dokument signieren“ dynamisch auszuwählen.
 
 ## Verwenden von ECMAScript zur dynamischen Auswahl eines Benutzers oder einer Gruppe {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
@@ -38,9 +36,9 @@ ECMAScript ist eine Skriptsprache. Sie wird für die Client-seitige Skripterstel
 
 1. Fügen Sie den Anzeigenamen des Skripts hinzu. Dieser Name wird in den Workflow-Schritten angezeigt. Eingeben des Namens:
 
-   1. Erweitern Sie den Skriptknoten, klicken Sie mit der rechten Maustaste auf den Knoten **[!UICONTROL jcr:content]** und dann auf **[!UICONTROL Mixins]**.
+   1. Erweitern Sie den Skriptknoten, klicken Sie mit der rechten Maustaste auf den **[!UICONTROL jcr:content]**-Knoten und klicken Sie auf **[!UICONTROL Mixins]**.
    1. Fügen Sie die Eigenschaft `mix:title` im Dialogfeld „Mixins bearbeiten“ hinzu und klicken Sie auf **OK**.
-   1. Fügen Sie folgende Eigenschaft zum Knoten „jcr:content“ des Skripts hinzu:
+   1. Fügen Sie dem jcr:content-Knoten des Skripts die folgende Eigenschaft hinzu:
 
       | Name | Typ | Wert |
       |--- |--- |--- |
@@ -115,9 +113,9 @@ function getAdobeSignRecipients() {
 
 ## Verwenden der Java-Schnittstelle zum dynamischen Auswählen eines Benutzers oder eine Gruppe {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-Sie können die Java-Schnittstelle [RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwenden, um eine Benutzerin bzw. einen Benutzer oder eine Gruppe für die Schritte „Adobe Sign“ und „Aufgabe zuzuweisen“ dynamisch auszuwählen. Sie können ein OSGi-Bundle erstellen, das die Java-Schnittstelle [RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwendet, und es auf dem AEM Forms-Server bereitstellen. Dadurch wird es möglich, die Option in den Komponenten „Aufgabe zuweisen“ und „Adobe Sign“ im AEM-Workflow auszuwählen.
+Sie können die Java-Schnittstelle [RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwenden, um eine Benutzerin bzw. einen Benutzer oder eine Gruppe für die Schritte „Adobe Sign“ und „Aufgabe zuzuweisen“ dynamisch auszuwählen. Sie können ein OSGi-Paket erstellen, das die Java-Schnittstelle [RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwendet, und es auf dem AEM Forms-Server bereitstellen. Dadurch wird es möglich, die Option in den Komponenten „Aufgabe zuweisen“ und „Adobe Sign“ im AEM-Workflow auszuwählen.
 
-Sie benötigen die Dateien [AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de)-JAR und [granite-JAR](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/), um die unten aufgeführten Codebeispiele zu kompilieren. Fügen Sie diese JAR-Dateien dem OSGi-Bundle-Projekt als externe Abhängigkeiten hinzu. Sie können eine beliebige Java-IDE verwenden, um ein OSGi-Bundle zu erstellen. Das folgende Beispiel zeigt die Erstellung eines OSGi-Bundles mithilfe von Eclipse:
+Sie benötigen die Dateien [AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de)-JAR und [granite-JAR](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/), um die unten aufgeführten Codebeispiele zu kompilieren. Fügen Sie diese JAR-Dateien dem OSGi-Paket-Projekt als externe Abhängigkeiten hinzu. Sie können eine beliebige Java-IDE verwenden, um ein OSGi-Paket zu erstellen. Das folgende Beispiel zeigt die Erstellung eines OSGi-Pakets mithilfe von Eclipse:
 
 1. Öffnen Sie die Eclipse-IDE. Navigieren Sie zu **[!UICONTROL Datei]** > **[!UICONTROL Neues Projekt]**.
 1. Wählen Sie im Assistenten-Dialogfeld **[!UICONTROL Maven-Projekt]** aus und klicken Sie auf **[!UICONTROL Weiter]**.
@@ -225,17 +223,17 @@ Sie benötigen die Dateien [AEM Forms Client SDK](https://experienceleague.adobe
    ```
 
 1. Fügen Sie Quell-Code hinzu, der die Java-Schnittstelle [RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwendet, um einen Benutzer oder eine Gruppe für den Schritt „Aufgabe zuweisen“ dynamisch zuzuweisen. Unter [Beispiel für die dynamische Auswahl eines Benutzers oder einer Gruppe mithilfe einer Java-Schnittstelle](#-sample-scripts-for) finden Sie einen Beispiel-Code.
-1. Öffnen Sie eine Eingabeaufforderung und navigieren Sie zum Ordner, der das OSGi-Bundle-Projekt enthält. Verwenden Sie den folgenden Befehl, um das OSGi-Bundle zu erstellen:
+1. Öffnen Sie eine Eingabeaufforderung und navigieren Sie zum Ordner, der das OSGi-Paket-Projekt enthält. Verwenden Sie den folgenden Befehl, um das OSGi-Paket zu erstellen:
 
    `mvn clean install`
 
-1. Laden Sie das Bundle auf einen AEM-Formular-Server hoch. Mit AEM Package Manager können Sie das Bundle auf einen AEM-Formular-Server importieren.
+1. Laden Sie das Paket auf einen AEM-Formular-Server hoch. Mit dem AEM-Paket-Manager können Sie das Bundle auf einen AEM-Formular-Server importieren.
 
-Nachdem das Bundle importiert wurde, ist die Option für die Auswahl der Java-Schnittstelle zum dynamischen Auswählen eines Benutzers oder einer Gruppe für die Schritte „Adobe Sign“ und „Aufgabe zuweisen“ verfügbar.
+Nachdem das Paket importiert wurde, ist die Option für die Auswahl der Java-Schnittstelle zum dynamischen Auswählen eines Benutzers oder einer Gruppe für die Schritte „Adobe Sign“ und „Aufgabe zuweisen“ verfügbar.
 
 ### Beispiele für Java-Code zum dynamischen Auswählen eines Benutzers oder einer Gruppe {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
 
-Der Beispiel-Code im folgenden Beispiel wählt dynamisch einen Verantwortlichen für den Schritt „Adobe Sign“ aus. Sie verwenden den Code in einem OSGi-Bundle. Vor der Verwendung der unten aufgeführten Codes müssen Sie sicherstellen, dass die Benutzerinformationen (E-Mail-Adressen und Telefonnummern), die im Code genannt werden, richtig sind. Wenn die im Code enthaltenen Benutzerdaten nicht korrekt sind, schlägt der entsprechende Prozess möglicherweise fehl.
+Der Beispiel-Code im folgenden Beispiel wählt dynamisch einen Verantwortlichen für den Schritt „Adobe Sign“ aus. Sie verwenden den Code in einem OSGi-Paket. Vor der Verwendung der unten aufgeführten Codes müssen Sie sicherstellen, dass die Benutzerinformationen (E-Mail-Adressen und Telefonnummern), die im Code genannt werden, richtig sind. Wenn die im Code enthaltenen Benutzerdaten nicht korrekt sind, schlägt der entsprechende Prozess möglicherweise fehl.
 
 ```java
 /*************************************************************************
