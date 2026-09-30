@@ -6,13 +6,11 @@ exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '4534'
-ht-degree: 99%
-
+source-wordcount: '4567'
+ht-degree: 98%
 ---
-
 # Konzepte{#concepts}
 
 Das Integrations-Framework stellt Mechanismen und Komponenten für die folgenden Vorgänge bereit:
@@ -60,33 +58,33 @@ Um den Betrieb zu optimieren, konzentrieren sich AEM und die E-Commerce-Engine a
 
 * AEM kann:
 
-   * Anfrage:
+  * Anfrage:
 
-      * Produktinformationen aus der E-Commerce-Engine.
+    * Produktinformationen aus der E-Commerce-Engine.
 
-   * Geben Sie Folgendes an:
+  * Geben Sie Folgendes an:
 
-      * Benutzeransichten für Produktinformationen, Warenkorb und Checkout.
-      * Warenkorb und Checkout-Informationen an die E-Commerce-Engine.
-      * Suchmaschinenoptimierung (SEO).
-      * Community-Funktionalität.
-      * Unstrukturierte Marketing-Interaktionen.
+    * Benutzeransichten für Produktinformationen, Warenkorb und Checkout.
+    * Warenkorb und Checkout-Informationen an die E-Commerce-Engine.
+    * Suchmaschinenoptimierung (SEO).
+    * Community-Funktionalität.
+    * Unstrukturierte Marketing-Interaktionen.
 
 * Die eCommerce-Engine kann:
 
-   * Geben Sie Folgendes an:
+  * Geben Sie Folgendes an:
 
-      * Produktinformationen aus der Datenbank.
-      * Verwaltung von Produktvarianten.
-      * Order Management.
-      * Enterprise Resource Planning (ERP)
-      * Suche innerhalb der Produktinformationen.
+    * Produktinformationen aus der Datenbank.
+    * Verwaltung von Produktvarianten.
+    * Order Management.
+    * Enterprise Resource Planning (ERP)
+    * Suche innerhalb der Produktinformationen.
 
-   * Prozess:
+  * Prozess:
 
-      * Der Warenkorb
-      * Der Checkout.
-      * Auftragserfüllung
+    * Der Warenkorb
+    * Der Checkout.
+    * Auftragserfüllung
 
 >[!NOTE]
 >
@@ -126,7 +124,7 @@ AEM E-Commerce wird mit einer E-Commerce-Engine implementiert:
 >
 >AEM E-Commerce, implementiert in AEM, mit generischer Entwicklung basierend auf JCR, ist:
 >
->* Ein eigenständiges, AEM-natives E-Commerce-Beispiel, das die Nutzung der API veranschaulichen soll. Damit können Produktdaten, Warenkörbe und Checkout mit der vorhandenen Datenanzeige und Marketing-Kampagnen gesteuert werden. In diesem Fall ist die Produktdatenbank im nativen Repository von AEM gespeichert (die [JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)-Implementierung von Adobe).
+>* Ein eigenständiges, AEM-natives E-Commerce-Beispiel, das die Nutzung der API veranschaulichen soll. Damit können Produktdaten, Warenkörbe und Checkout mit der vorhandenen Datenanzeige und Marketing-Kampagnen gesteuert werden. In diesem Fall ist die Produktdatenbank im nativen Repository von AEM gespeichert (die [JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)-Implementierung von Adobe).
 >
 >  Die standardmäßige AEM-Installation enthält die Grundlagen der [generischen E-Commerce-Implementierung](/help/commerce/cif-classic/administering/generic.md).
 
@@ -150,7 +148,7 @@ Sie müssen jedoch für ein Projekt in der Regel einen eigenen, angepassten Comm
 >
 >Die Geometrixx-Import-Tools verwenden CSV-Dateien. In den Kommentaren zu ihrer Implementierung finden Sie eine Beschreibung des akzeptierten Schemas (mit den zulässigen benutzerdefinierten Eigenschaften).
 
-Der [ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) verwaltet (über [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) eine Liste der Implementierungen der [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html)- und [CatalogBlueprintImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html)-Schnittstelle. Diese sind im Import-Tool-Assistenten im Dropdown-Feld **Import-Tool/Commerce-Anbieter** aufgeführt (mit der Eigenschaft `commerceProvider` als Name).
+Der [ProductServicesManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) verwaltet (über [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) eine Liste der Implementierungen der [ProductImporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html)- und [CatalogBlueprintImporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html)-Schnittstelle. Diese sind im Import-Tool-Assistenten im Dropdown-Feld **Import-Tool/Commerce-Anbieter** aufgeführt (mit der Eigenschaft `commerceProvider` als Name).
 
 Wenn ein bestimmtes Import-Tool/ein bestimmter Commerce-Anbieter im Dropdown-Feld verfügbar ist, müssen Sie alle weiteren benötigten Daten (je nach Art des Import-Tools) unter einem der folgenden Pfade definieren:
 
@@ -169,24 +167,24 @@ Das integrierte System ermöglicht die Pflege der Daten durch die folgenden Roll
 
 * Produktdatenverwaltung (PIM)-Benutzer, der Folgendes verwaltet:
 
-   * Produktinformationen
-   * Taxonomie, Kategorisierung, Genehmigung
-   * Interaktion mit Digital Asset Management
-   * Preisgestaltung: stammt häufig von einem ERP-System und wird nicht explizit im Commerce-System verwaltet
+  * Produktinformationen
+  * Taxonomie, Kategorisierung, Genehmigung
+  * Interaktion mit Digital Asset Management
+  * Preisgestaltung: stammt häufig von einem ERP-System und wird nicht explizit im Commerce-System verwaltet
 
 * Autor/Marketing-Manager, der Folgendes verwaltet:
 
-   * Marketing-Inhalte für alle Kanäle.
-   * Promotions.
-   * Gutscheine.
-   * Kampagnen.
+  * Marketing-Inhalte für alle Kanäle.
+  * Promotions.
+  * Gutscheine.
+  * Kampagnen.
 
 * Surfende/Käuferinnen und Käufer, die:
 
-   * die Produktinformationen anzeigen
-   * Artikel in den Warenkorb legen
-   * ihre Bestellung bezahlen
-   * die Erfüllung ihrer Bestellung erwarten
+  * die Produktinformationen anzeigen
+  * Artikel in den Warenkorb legen
+  * ihre Bestellung bezahlen
+  * die Erfüllung ihrer Bestellung erwarten
 
 Der tatsächliche Ort kann je nach Implementierung unterschiedlich ausfallen (z. B. generisch oder mit einer E-Commerce-Engine):
 
@@ -265,15 +263,15 @@ Welche Attribute zu jedem Produkt gespeichert werden, hängt möglicherweise von
 
   Informationen zum Enterprise Resource Planning (ERP).
 
-   * **SKU**
+  * **SKU**
 
-     SKU-Daten
+    SKU-Daten
 
-   * **Farbe**
-   * **Größe**
-   * **Preis**
+  * **Farbe**
+  * **Größe**
+  * **Preis**
 
-     Der Stückpreis des Produkts.
+    Der Stückpreis des Produkts.
 
 * **Zusammenfassung**
 
@@ -394,19 +392,19 @@ Beachten Sie, dass dieser Leistungstest Kenntnisse und Analysen Ihrer Zielgruppe
 
 * Inhaltsvolumen
 
-   * Assets
-   * Lokalisierte i18n-Produkte und SKUs
+  * Assets
+  * Lokalisierte i18n-Produkte und SKUs
 
 * Benutzeraktivität:
 
-   * Massenbearbeitung
-   * Massenveröffentlichung
-   * Intensive Suchanfragen
+  * Massenbearbeitung
+  * Massenveröffentlichung
+  * Intensive Suchanfragen
 
 * Hintergrundprozesse
 
-   * Importvorgänge
-   * Synchronisierungsaktualisierungen (z. B. Preisgestaltung)
+  * Importvorgänge
+  * Synchronisierungsaktualisierungen (z. B. Preisgestaltung)
 
 * Wartungsanforderungen (Backup, Tar-PM-Optimierung, Datenspeicherbereinigung usw.)
 
@@ -437,7 +435,7 @@ Bei allen Implementierungen ist es gut, die folgenden Punkte zu beachten:
 
   `/jcr:root/content/france/fr/shoe/reebok/pump/element(*,my:Sku)`
 
-* Planen Sie in Ihrem technischen Stack das faktorisierte Inhaltszugriffsmodell und Dienste. Dies ist allgemein eine Best Practice, in diesem Fall aber sogar noch wichtiger, da Sie in Optimierungsphasen Anwendungs-Caches für Daten hinzufügen können, die häufig gelesen werden (und nicht den Bundle-Cache füllen sollten).
+* Planen Sie in Ihrem technischen Stack das faktorisierte Inhaltszugriffsmodell und Dienste. Dies ist allgemein eine Best Practice, in diesem Fall aber sogar noch wichtiger, da Sie in Optimierungsphasen Anwendungs-Caches für Daten hinzufügen können, die häufig gelesen werden (und nicht den Paket-Cache füllen sollten).
 
   Beispielsweise ist die Attributverwaltung oft gut für das Caching geeignet, da sie Daten betrifft, die durch das Importieren von Produkten aktualisiert werden.
 * Ziehen Sie die Nutzung von [Proxy-Seiten](#proxy-pages) in Erwägung.
@@ -505,9 +503,9 @@ Gutscheine sind eine bewährte Methode, Rabatte anzubieten – entweder um Käuf
 
 * Zu Gutscheinen gehört:
 
-   * Ein Gutschein-Code (der von der kaufenden Person in den Warenkorb eingegeben wird).
-   * Eine Gutscheinbeschriftung (die angezeigt wird, nachdem die Person sie im Warenkorb eingegeben hat).
-   * Ein Promotion-Pfad (der die Aktion definiert, die der Gutschein auslöst).
+  * Ein Gutschein-Code (der von der kaufenden Person in den Warenkorb eingegeben wird).
+  * Eine Gutscheinbeschriftung (die angezeigt wird, nachdem die Person sie im Warenkorb eingegeben hat).
+  * Ein Promotion-Pfad (der die Aktion definiert, die der Gutschein auslöst).
 
 * Externe Commerce-Engines können ebenfalls Gutscheine bereitstellen.
 
@@ -516,9 +514,9 @@ In AEM gilt:
 * Ein Gutschein ist eine seitenbasierte Komponente, die mit der Websites-Konsole erstellt und bearbeitet wird.
 * Die **Gutschein**-Komponente bietet:
 
-   * einen Renderer für die Gutscheinadministration; er zeigt alle Gutscheine an, die sich aktuell im Warenkorb befinden
-   * Die Bearbeitungsdialogfelder (Formular) zum Verwalten (Hinzufügen/Entfernen) der Gutscheine.
-   * Die für das Hinzufügen/Entfernen von Gutscheinen zum/vom Warenkorb erforderlichen Aktionen.
+  * einen Renderer für die Gutscheinadministration; er zeigt alle Gutscheine an, die sich aktuell im Warenkorb befinden
+  * Die Bearbeitungsdialogfelder (Formular) zum Verwalten (Hinzufügen/Entfernen) der Gutscheine.
+  * Die für das Hinzufügen/Entfernen von Gutscheinen zum/vom Warenkorb erforderlichen Aktionen.
 
 * Gutscheine haben keine eigenen Datums-/Zeitangaben für Aktivierung und Deaktivierung, sondern nutzen die der übergeordneten Kampagnen.
 
@@ -541,16 +539,16 @@ Promotions werden nicht von Produktinformations-Managern verwaltet, sondern von 
 * Eine Promotion ist eine seitenbasierte Komponente, die mit der Websites-Konsole erstellt und bearbeitet wird. &grave;&grave;
 * Zu Promotions gehört:
 
-   * Eine Priorität
-   * Ein Promotion-Handler-Pfad
+  * Eine Priorität
+  * Ein Promotion-Handler-Pfad
 
 * Sie können Promotions mit einer Kampagne verknüpfen, um deren Aktivierungs-/Ablaufzeiten zu definieren.
 * Sie können Promotions mit einem Erlebnis verbinden, um deren Segmente zu definieren.
 * Promotions, die nicht mit einem Erlebnis verbunden sind, werden nicht allein ausgelöst, können aber von einem Gutschein ausgelöst werden.
 * Die Promotion-Komponente umfasst:
 
-   * Renderer und Dialogfelder für die Promotions-Administration
-   * Unterkomponenten zum Rendern und Bearbeiten von Konfigurationsparametern, die spezifisch für die Promotion-Handler sind
+  * Renderer und Dialogfelder für die Promotions-Administration
+  * Unterkomponenten zum Rendern und Bearbeiten von Konfigurationsparametern, die spezifisch für die Promotion-Handler sind
 
 In AEM sind die Promotions auch in das [Kampagnen-Management](/help/sites-authoring/personalization.md) integriert:
 
@@ -665,7 +663,7 @@ Das Adressbuch wird verwendet, wenn Sie mit Ihrem Warenkorb zum Checkout gehen:
 ![chlimage_1-15](/help/sites-administering/assets/chlimage_1-15.png)
 
 Adressen werden unter `user_home/profile/addresses` aufbewahrt.
-Beispiel: Für Alison Parker befindet sie sich unter /home/users/geometrixx/aparker@geometrixx.info/profile/addresses.
+Die Adresse von Alison Parker befindet sich beispielsweise unter /home/users/geometrixx/aparker@geometrixx.info/profile/addresses.
 
 Sie können auswählen, welche Adresse Sie als Standard festlegen möchten. Diese Information wird im Käuferprofil gespeichert, nicht zusammen mit der Anschrift. Als Wert für die Profileigenschaft `address.default` wird der Pfad der ausgewählten Adresse festgelegt.
 
@@ -707,8 +705,8 @@ Der Warenkorb bietet:
 * Links zu den Produktseiten für die ausgewählten Artikel
 * die Möglichkeit,
 
-   * die Anzahl/Menge der einzelnen Elemente zu aktualisieren
-   * einzelne Elemente zu entfernen
+  * die Anzahl/Menge der einzelnen Elemente zu aktualisieren
+  * einzelne Elemente zu entfernen
 
 ![ecommerce_shoppingcart](/help/sites-administering/assets/ecommerce_shoppingcart.png)
 
@@ -812,7 +810,7 @@ Es werden verschiedene Informationen gespeichert, beispielsweise:
 
 >[!NOTE]
 >
->Welche Felder im Assistenten „Auftrag erstellen“ verwendet werden, hängt davon ab, ob für den Standort eine Touch-optimierte Strukturvorlage definiert ist. Im generischen Beispiel ist dies zu finden unter:
+>Welche Felder im Assistenten „Auftrag erstellen“ verwendet werden, hängt davon ab, ob für den Ort eine Touch-optimierte Strukturvorlage definiert ist. Im generischen Beispiel findet sich diese unter:
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 
 Wenn eine Bestellung in AEM gespeichert wird, zeigt die Bestellungs-Konsole Folgendes für jede Bestellung an:

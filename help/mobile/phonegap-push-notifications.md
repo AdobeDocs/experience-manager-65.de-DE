@@ -9,13 +9,11 @@ exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3135'
+source-wordcount: '3252'
 ht-degree: 1%
-
 ---
-
 # Push-Benachrichtigungen{#push-notifications}
 
 {{ue-over-mobile}}
@@ -30,7 +28,7 @@ Für die Verwendung von Push-Benachrichtigungen mit AEM sind einige verschiedene
 
 Nach der Installation und Konfiguration (wie unten beschrieben) funktioniert es wie folgt:
 
-1. Eine Push-Benachrichtigung wird in AEM erstellt und an den Dienstleister (Amazon SNS oder Pushwoosh) gesendet.
+1. In AEM wird eine Push-Benachrichtigung erstellt und an den Dienstleister (Amazon SNS oder Pushwoosh) gesendet.
 1. Der Dienstleister empfängt sie und sendet sie an den Hauptanbieter (APNS oder GCM).
 1. Der Hauptanbieter sendet die Benachrichtigung an alle Geräte, die für diese Push-Benachrichtigung registriert sind. Für jedes Gerät wird das Mobilfunknetz oder WLAN verwendet, je nachdem, was auf dem Gerät verfügbar ist.
 1. Die Benachrichtigung wird auf dem Gerät angezeigt, wenn die App, für die sie registriert ist, nicht ausgeführt wird. Ein Benutzer, der auf die Benachrichtigung tippt, startet die App und zeigt die Benachrichtigung innerhalb der App an. Falls die Anwendung bereits ausgeführt wird, wird nur die In-App-Benachrichtigung angezeigt.
@@ -48,7 +46,7 @@ Normalerweise führt ein Experience Manager-Entwickler Folgendes aus:
 1. Hinzufügen von Push-Unterstützung zur App
 1. Vorbereiten eines Telefons für Tests
 
-Ein Experience Manager-Administrator führt folgende Schritte aus:
+Während ein Experience Manager-Administrator Folgendes tut:
 
 1. Konfigurieren von Push-Benachrichtigungen in AEM-Apps
 1. Erstellen und Bereitstellen der App
@@ -94,9 +92,9 @@ AEM ist so konfiguriert, dass einer von drei Services für Push-Benachrichtigung
 * Pushwoosh
 * Adobe Mobile Services
 
-Mit den Konfigurationen *Amazon SNS* und *Pushwoosh* können Sie Push-Benachrichtigungen von innerhalb von AEM-Bildschirmen senden.
+Mit den Konfigurationen *Amazon SNS* und *Pushwoosh* können Push-Benachrichtigungen von innerhalb von AEM Screens gesendet werden.
 
-Mit der Konfiguration von *Adobe Mobile Services* können Sie Push-Benachrichtigungen von innerhalb von Adobe Mobile Services aus über ein Adobe Analytics-Konto konfigurieren und senden (die App muss jedoch mit dieser Konfiguration erstellt werden, um AMS-Push-Benachrichtigungen zu aktivieren).
+Mit der Konfiguration von *Adobe Mobile Services* können Sie Push-Benachrichtigungen von Adobe Mobile Services aus über ein Adobe Analytics-Konto konfigurieren und senden (die App muss jedoch mit dieser Konfiguration erstellt werden, um AMS-Push-Benachrichtigungen zu aktivieren).
 
 #### Verwenden des Amazon SNS-Messaging-Services {#using-the-amazon-sns-messaging-service}
 
@@ -200,7 +198,7 @@ So verwenden Sie Pushwoosh:
 
 >[!NOTE]
 >
->*Wenn eine zweite App in AEM mit derselben App-ID (und anderen zugehörigen Werten: API-Zugriffstoken und GCM-ID) konfiguriert ist, werden alle Push-Benachrichtigungen, die über die zweite App in AEM gesendet werden, an jede andere App mit dieser App-ID gesendet.*
+>*Wenn in AEM eine zweite App mit derselben App-ID (und anderen zugehörigen Werten: API-Zugriffstoken und GCM-ID) konfiguriert ist, werden alle Push-Benachrichtigungen, die über die zweite App in AEM gesendet werden, an jede andere App mit dieser App-ID gesendet.*
 
 ### Schritt 3: Hinzufügen von Push-Unterstützung zur App {#step-add-push-support-to-the-app}
 
@@ -212,8 +210,8 @@ Erstellen Sie zwei Inhaltsknoten (einen in app-config und einen in app-config-de
 * /content/`<your app>`/shell/jcr:content/pge-app/app-config/notificationsConfig
 
 Mit diesen Eigenschaften (.content.xml-Dateien) :
-&lt;jcr:root xmlns:jcr=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot; xmlns:nt=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot;
-jcr:primaryType=„nt:unstructured“
+&lt;jcr:root xmlns:jcr=&quot; [https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/index.html](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/index.html)&quot; xmlns:nt=&quot; [https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/index.html](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/index.html)&quot;
+jcr:primaryType=„nt:unstructured&quot;
 excludeProperties=&quot;[appAPIAccessToken]&quot;
 path=&quot;../../../…“
 targetRootDirectory=„www“
@@ -263,10 +261,10 @@ Vor der Erstellung und Bereitstellung auf dem konfigurierten Mobilgerät müssen
 1. Erstellen Sie die entsprechenden Autorisierungsgruppen für Push-Benachrichtigungen.
 1. Melden Sie sich als entsprechender Benutzer bei AEM an und klicken Sie auf die Registerkarte Apps .
 1. Klicken Sie auf die App.
-1. Suchen Sie die Kachel Cloud Service verwalten und klicken Sie auf den Stift, um Ihre Cloud-Konfigurationen zu ändern.
+1. Suchen Sie die Kachel Cloud Services verwalten und klicken Sie auf den Stift, um Ihre Cloud-Konfigurationen zu ändern.
 1. Wählen Sie Amazon SNS Connection, Pushwoosh Connection oder Adobe Mobile Services als Benachrichtigungskonfiguration.
 1. Geben Sie die Eigenschaften des Anbieters ein und klicken Sie auf Senden , um sie zu speichern, und auf Fertig . Sie werden derzeit nicht remote verifiziert, es sei denn, es gibt AMS.
-1. Sie sollten jetzt die Konfiguration sehen, die Sie gerade auf der Kachel Cloud Service verwalten eingegeben haben.
+1. Jetzt sollte die Konfiguration angezeigt werden, die Sie gerade auf der Kachel Cloud Services verwalten eingegeben haben.
 
 ### Schritt 6: App erstellen und bereitstellen {#step-build-and-deploy-the-app}
 
@@ -276,7 +274,7 @@ Es gibt zwei Möglichkeiten, Ihre App mit PhoneGap zu erstellen und bereitzustel
 
 **Hinweis:** Beim Testen von Push-Benachrichtigungen reichen Emulatoren nicht aus, da Push-Benachrichtigungen ein eigenes Protokoll zwischen dem Push-Anbieter (Apple oder Google) und dem Gerät verwenden. Aktuelle Mac/PC-Hardware und Emulatoren unterstützen dies nicht.
 
-1. *PhoneGap Build* ist ein Service von PhoneGap, mit dem Sie Ihre App auf ihren Servern erstellen und direkt auf Ihr Gerät herunterladen können. Siehe die PhoneGap Build-Dokumentation unter `https://build.phonegap.com/`, um zu erfahren, wie Sie PhoneGap Build einrichten und verwenden.
+1. *PhoneGap Build* ist ein Service von PhoneGap, der Ihre App für Sie auf ihren Servern erstellt und Sie es direkt auf Ihr Gerät herunterladen kann. Siehe die PhoneGap-Build-Dokumentation unter `https://build.phonegap.com/`, um zu erfahren, wie Sie PhoneGap-Build einrichten und verwenden.
 
 1. Mit *PhoneGap Command Line Interface* (CLI) können Sie einen umfangreichen Satz von PhoneGap-Befehlen in Ihrer Befehlszeile zum Erstellen, Debuggen und Bereitstellen Ihrer App verwenden. Informationen zum Einrichten und Verwenden der PhoneGap-CLI finden Sie in der PhoneGap-Entwicklerdokumentation (`https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface`).
 
@@ -293,7 +291,7 @@ Gehen Sie wie folgt vor, um eine Benachrichtigung zu erstellen und zu senden.
 1. Benachrichtigung senden
 
    * Suchen Sie im Apps-Dashboard die Kachel Push-Benachrichtigungen .
-   * Wählen Sie die Benachrichtigung aus oder klicken Sie auf die Schaltfläche Details unten rechts (. .), um die Liste der Benachrichtigungen anzuzeigen. Diese Liste zeigt auch an, ob eine Benachrichtigung versandbereit ist, bereits gesendet wurde oder ob beim Senden ein Fehler aufgetreten ist.
+   * Wählen Sie die Benachrichtigung aus oder klicken Sie auf die Schaltfläche Details unten rechts ( ). . .), um die Liste der Benachrichtigungen anzuzeigen. Diese Liste zeigt auch an, ob eine Benachrichtigung versandbereit ist, bereits gesendet wurde oder ob beim Senden ein Fehler aufgetreten ist.
    * Aktivieren Sie das Kontrollkästchen für nur eine Benachrichtigung und klicken Sie auf die Schaltfläche „Benachrichtigung senden“ oberhalb der Liste. Sie haben eine Möglichkeit, die Benachrichtigung in dem angezeigten Dialogfeld zu „Abbrechen“ oder „Senden“.
 
 1. Umgang mit den Ergebnissen
@@ -302,8 +300,8 @@ Gehen Sie wie folgt vor, um eine Benachrichtigung zu erstellen und zu senden.
    * Wenn der Push-Versand fehlschlägt, wird im Dialogfeld eine Meldung mit dem Problem angezeigt. In der Benachrichtigungsliste wird der Status dieser Benachrichtigung als Fehler aufgeführt. Wenn das Problem jedoch behoben wird, kann die Benachrichtigung erneut gesendet werden. Wenn ein Fehler auftritt, sollten zusätzliche Fehlerinformationen im Server-Fehlerprotokoll angezeigt werden.
    * Beachten Sie, dass es einige Plattformunterschiede zwischen iOS und Android™-Push-Benachrichtigungen gibt. Darunter:
 
-      * Beim Erstellen mit CLI wird die App gestartet, nachdem sie auf Android™ bereitgestellt wurde. In iOS müssen Sie sie manuell starten. Da der Schritt zur Push-Registrierung beim Start erfolgt, können Android™-Apps Push-Benachrichtigungen sofort empfangen (da sie bereits gestartet und registriert wurden), während iOS-Apps dies nicht können.
-      * In Android™ ist der Text der Schaltfläche „OK“ in Großbuchstaben (und in allen anderen Schaltflächen, die der In-App-Benachrichtigung hinzugefügt wurden), in iOS dagegen nicht.
+     * Beim Erstellen mit CLI wird die App gestartet, nachdem sie auf Android™ bereitgestellt wurde. In iOS müssen Sie sie manuell starten. Da der Schritt zur Push-Registrierung beim Start erfolgt, können Android™-Apps Push-Benachrichtigungen sofort empfangen (da sie bereits gestartet und registriert wurden), während iOS-Apps dies nicht können.
+     * In Android™ ist der Text der Schaltfläche „OK“ in Großbuchstaben (und in allen anderen Schaltflächen, die der In-App-Benachrichtigung hinzugefügt wurden), in iOS dagegen nicht.
 
 Für AMS-Push-Benachrichtigungen müssen Benachrichtigungen vom AMS-Server erstellt und gesendet werden. AMS bietet zusätzliche Push-Benachrichtigungsfunktionen, die über die von AEM-Benachrichtigungen mit AWS und Pushwoosh bereitgestellten hinausgehen.
 
@@ -325,7 +323,7 @@ Erstellen Sie die Benachrichtigung, fügen Sie einen Schaltflächentext und eine
 >
 >Gehen Sie wie folgt vor, um auf die Kachel Push-Benachrichtigung in Ihrem Dashboard zuzugreifen.
 
-1. Klicken Sie oben rechts auf der Kachel **Cloud Service verwalten** auf Bearbeiten .
+1. Klicken Sie auf die Schaltfläche Bearbeiten in der oberen rechten Ecke der Kachel **Cloud Services**.
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 

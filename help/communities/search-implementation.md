@@ -9,13 +9,11 @@ exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1210'
 ht-degree: 4%
-
 ---
-
 # Grundlagen suchen {#search-essentials}
 
 ## Überblick {#overview}
@@ -26,11 +24,11 @@ Für Communities werden im Allgemeinen die beiden folgenden Elemente durchsucht:
 
 * Von Community-Mitgliedern geposteter Inhalt
 
-   * Sie verwendet die UGC-Such-API von AEM Communities.
+  * Sie verwendet die UGC-Such-API von AEM Communities.
 
 * Benutzer und Benutzergruppen (Benutzerdaten)
 
-   * Sie verwendet die Suchfunktionen der AEM-Plattform.
+  * Sie verwendet die Suchfunktionen der AEM-Plattform.
 
 Dieser Abschnitt der Dokumentation ist für Entwickler von Interesse, die benutzerdefinierte Komponenten zum Erstellen oder Verwalten von benutzergenerierten Inhalten erstellen.
 
@@ -44,7 +42,7 @@ Siehe [SRP und UGC Essentials](srp-and-ugc.md) für Informationen zu Dienstprogr
 
 ## UGC Search-API {#ugc-search-api}
 
-Der [UGC Common Store](working-with-srp.md) wird von einem von verschiedenen Speicherressourcenanbietern (SRPs) bereitgestellt, von denen jeder möglicherweise eine andere native Abfragesprache aufweist. Daher sollte benutzerdefinierter Code unabhängig vom ausgewählten SRP Methoden aus dem [UGC-API-Paket](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) verwenden, das die für das ausgewählte SRP geeignete Abfragesprache aufruft.
+Der [UGC Common Store](working-with-srp.md) wird von einem von verschiedenen Speicherressourcenanbietern (SRPs) bereitgestellt, von denen jeder möglicherweise eine andere native Abfragesprache aufweist. Daher sollte benutzerdefinierter Code unabhängig vom ausgewählten SRP Methoden aus dem [UGC-API-Paket](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) verwenden, das die für das ausgewählte SRP geeignete Abfragesprache aufruft.
 
 ### ASRP-Suchen {#asrp-searches}
 
@@ -160,8 +158,8 @@ Solr ist ein Beispiel für eine Abfragesprache, die ein Schema verwendet.
 
 * Bei Typen mit mehreren Werten fügen Sie dem Suffix „s“ hinzu, z. B.:
 
-   * `viewDate_dt`: Einzeldatumseigenschaft
-   * `viewDates_dts`: Liste der Datumseigenschaften
+  * `viewDate_dt`: Einzeldatumseigenschaft
+  * `viewDates_dts`: Liste der Datumseigenschaften
 
 ## Filter {#filters}
 
@@ -171,11 +169,11 @@ Die Filtersyntax für die Logik AND und OR wird wie folgt ausgedrückt (vor der 
 
 * So geben Sie ODER an und verwenden einen Filterparameter mit durch Kommas getrennten Werten:
 
-   * `filter=name eq 'Jennifer',name eq 'Jen'`
+  * `filter=name eq 'Jennifer',name eq 'Jen'`
 
 * So geben Sie UND an und verwenden mehrere Filterparameter:
 
-   * `filter = name eq 'Jackson'&filter=message eq 'testing'`
+  * `filter = name eq 'Jackson'&filter=message eq 'testing'`
 
 Die Standardimplementierung der [Suchkomponente](search.md) verwendet diese Syntax, die in der URL zu sehen ist, die die Seite mit den Suchergebnissen im [Community-Komponenten-Handbuch](components-guide.md) öffnet. Zum Experimentieren navigieren Sie zu [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html).
 
@@ -193,9 +191,9 @@ Filteroperatoren sind:
 Es ist wichtig, dass die URL auf die Communities-Komponente (Ressource) verweist und nicht auf die Seite, auf der die Komponente platziert ist:
 
 * Richtig: Forenkomponente
-   * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
+  * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
 * Falsch: Forumsseite
-   * `/content/community-components/en/forum.social.json`
+  * `/content/community-components/en/forum.social.json`
 
 ## SRP-Tools {#srp-tools}
 

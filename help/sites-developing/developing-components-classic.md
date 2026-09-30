@@ -10,13 +10,11 @@ exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 99%
-
+source-wordcount: '2450'
+ht-degree: 98%
 ---
-
 # Entwickeln von Adobe Experience Manager(AEM)-Komponenten (klassische Benutzeroberfläche){#developing-aem-components-classic-ui}
 
 Die klassische Benutzeroberfläche nutzt ExtJS, um Widgets zu erstellen, die das Erscheinungsbild der Komponenten angeben. Aufgrund der Eigenschaften dieser Widgets gibt es einige Unterschiede zwischen der Interaktion von Komponenten mit der klassischen Benutzeroberfläche und der [Touch-optimierten Benutzeroberfläche](/help/sites-developing/developing-components.md).
@@ -63,20 +61,20 @@ Zusammenfassung:
 
 * `<cq:defineObjects />`
 
-   * `slingRequest` – das umschlossene Anfrageobjekt (`SlingHttpServletRequest`).
-   * `slingResponse` – das umschlossene Antwortobjekt (`SlingHttpServletResponse`).
-   * `resource` – das Sling-Ressourcen-Objekt (`slingRequest.getResource();`).
-   * `resourceResolver` – das Sling Resource Resolver-Objekt (`slingRequest.getResoucreResolver();`).
-   * `currentNode` – der aufgelöste JCR-Knoten für die Anfrage.
-   * `log` – der standardmäßige Logger ().
-   * `sling` – der Sling-Skript-Assistent.
-   * `properties` – die Eigenschaften der betreffenden Ressource (`resource.adaptTo(ValueMap.class);`).
-   * `pageProperties` – die Eigenschaften der Seite der betreffenden Ressource.
-   * `pageManager` – der Seitenmanager für den Zugriff auf AEM-Inhalts-Seiten (`resourceResolver.adaptTo(PageManager.class);`).
-   * `component` – das Komponentenobjekt der aktuellen AEM-Komponente.
-   * `designer` – das Designer-Objekt zum Abrufen von Design-Informationen (`resourceResolver.adaptTo(Designer.class);`).
-   * `currentDesign` – das Design der betreffenden Ressource.
-   * `currentStyle` – der Stil der betreffenden Ressource.
+  * `slingRequest` – das umschlossene Anfrageobjekt (`SlingHttpServletRequest`).
+  * `slingResponse` – das umschlossene Antwortobjekt (`SlingHttpServletResponse`).
+  * `resource` – das Sling-Ressourcen-Objekt (`slingRequest.getResource();`).
+  * `resourceResolver` – das Sling Resource Resolver-Objekt (`slingRequest.getResoucreResolver();`).
+  * `currentNode` – der aufgelöste JCR-Knoten für die Anfrage.
+  * `log` – der standardmäßige Logger ().
+  * `sling` – der Sling-Skript-Assistent.
+  * `properties` – die Eigenschaften der betreffenden Ressource (`resource.adaptTo(ValueMap.class);`).
+  * `pageProperties` – die Eigenschaften der Seite der betreffenden Ressource.
+  * `pageManager` – der Seitenmanager für den Zugriff auf AEM-Inhalts-Seiten (`resourceResolver.adaptTo(PageManager.class);`).
+  * `component` – das Komponentenobjekt der aktuellen AEM-Komponente.
+  * `designer` – das Designer-Objekt zum Abrufen von Design-Informationen (`resourceResolver.adaptTo(Designer.class);`).
+  * `currentDesign` – das Design der betreffenden Ressource.
+  * `currentStyle` – der Stil der betreffenden Ressource.
 
 ### Zugreifen auf Inhalte {#accessing-content}
 
@@ -164,8 +162,8 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
 
    * Hinzufügen eines Felds im Dialogfeld
 
-      * `cq:dialog` – Dialogfeld für die Touch-optimierte Benutzeroberfläche
-      * `dialog` – Dialogfeld für die klassische Benutzeroberfläche
+     * `cq:dialog` – Dialogfeld für die Touch-optimierte Benutzeroberfläche
+     * `dialog` – Dialogfeld für die klassische Benutzeroberfläche
 
    * Ersetzen der `.jsp`-Datei (Benennen Sie sie nach Ihrer neuen Komponente)
    * oder vollständiges Überarbeiten der gesamten Komponente, falls gewünscht
@@ -176,8 +174,8 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
    >
    >Eine Komponente für:
    >
-   >* Die Touch-optimierte Benutzeroberfläche verwendet [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)-Komponenten
-   >* Die klassische Benutzeroberfläche verwendet [ExtJS-Widgets](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+   >* Die Touch-optimierte Benutzeroberfläche verwendet [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)-Komponenten
+   >* Die klassische Benutzeroberfläche verwendet [ExtJS-Widgets](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)
 
    >[!NOTE]
    >
@@ -278,16 +276,16 @@ Zum Erstellen der Komponente verwenden Sie die standardmäßige textimage-Kompon
 
    * Komponentenname
 
-      * `jcr:description` wird auf `Text Image Component (Extended)` gesetzt
-      * `jcr:title` wird auf `Text Image (Extended)` gesetzt
+     * `jcr:description` wird auf `Text Image Component (Extended)` gesetzt
+     * `jcr:title` wird auf `Text Image (Extended)` gesetzt
 
    * Gruppe, in der die Komponente im Sidekick aufgelistet ist (unverändert lassen)
 
-      * `componentGroup` wird auf `General` belassen
+     * `componentGroup` wird auf `General` belassen
 
    * Übergeordnete Komponente für die neue Komponente (die standardmäßige textimage-Komponente)
 
-      * `sling:resourceSuperType` wird auf `foundation/components/textimage` gesetzt
+     * `sling:resourceSuperType` wird auf `foundation/components/textimage` gesetzt
 
    Nach diesem Schritt sieht der Komponentenknoten wie folgt aus:
 
@@ -305,24 +303,24 @@ Zum Erstellen der Komponente verwenden Sie die standardmäßige textimage-Kompon
 
    * Für die ersten beiden Registerkarten (tab1 und tab2):
 
-      * Ändern Sie „xtype“ in „cqinclude“ (um von der Standardkomponente zu erben).
-      * Fügen Sie eine Pfadeigenschaft mit Werten `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` bzw. `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json` hinzu.
-      * Entfernen Sie alle anderen Eigenschaften oder Unterknoten.
+     * Ändern Sie „xtype“ in „cqinclude“ (um von der Standardkomponente zu erben).
+     * Fügen Sie eine Pfadeigenschaft mit Werten `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` bzw. `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json` hinzu.
+     * Entfernen Sie alle anderen Eigenschaften oder Unterknoten.
 
    * Für tab3:
 
-      * Lassen Sie die Eigenschaften und Unterknoten unverändert.
-      * Fügen Sie zu `tab3/items`, der Knotenposition von Typ `cq:Widget`, eine Felddefinition hinzu.
-      * Legen Sie die folgenden Eigenschaften (vom Typ „String“) für den neuen Knoten `tab3/items/position` fest:
+     * Lassen Sie die Eigenschaften und Unterknoten unverändert.
+     * Fügen Sie zu `tab3/items`, der Knotenposition von Typ `cq:Widget`, eine Felddefinition hinzu.
+     * Legen Sie die folgenden Eigenschaften (vom Typ „String“) für den neuen Knoten `tab3/items/position` fest:
 
-         * `name`: `./imagePosition`
-         * `xtype`: `selection`
-         * `fieldLabel`: `Image Position`
-         * `type`: `select`
+       * `name`: `./imagePosition`
+       * `xtype`: `selection`
+       * `fieldLabel`: `Image Position`
+       * `type`: `select`
 
-      * Fügen Sie den Unterknoten `position/options` vom Typ `cq:WidgetCollection` hinzu, um die beiden Optionen für die Bildplatzierung darzustellen, und erstellen Sie darunter die beiden Knoten o1 und o2 vom Typ `nt:unstructured`.
-      * Legen Sie für den Knoten `position/options/o1` die Eigenschaften wie folgt fest: `text` auf `Left` und `value` auf `left.`
-      * Legen Sie für den Knoten `position/options/o2` die Eigenschaften wie folgt fest: `text` auf `Right` und `value` auf `right`.
+     * Fügen Sie den Unterknoten `position/options` vom Typ `cq:WidgetCollection` hinzu, um die beiden Optionen für die Bildplatzierung darzustellen, und erstellen Sie darunter die beiden Knoten o1 und o2 vom Typ `nt:unstructured`.
+     * Legen Sie für den Knoten `position/options/o1` die Eigenschaften wie folgt fest: `text` auf `Left` und `value` auf `left.`
+     * Legen Sie für den Knoten `position/options/o2` die Eigenschaften wie folgt fest: `text` auf `Right` und `value` auf `right`.
 
    * Löschen Sie tab4.
 

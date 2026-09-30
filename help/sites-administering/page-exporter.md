@@ -5,13 +5,11 @@ exl-id: 15d08758-cf75-43c0-9818-98a579d64183
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 96%
-
+source-wordcount: '1072'
+ht-degree: 90%
 ---
-
 # Das Seiten-Export-Tool{#the-page-exporter}
 
 Adobe Experience Manager (AEM) bietet Ihnen die Möglichkeit, eine Seite als vollständige Web-Seite einschließlich aller Grafiken, `.js`- und `.css`-Dateien zu exportieren.
@@ -64,7 +62,7 @@ Wählen Sie die erforderliche Vorlage für Ihre Website aus und bestätigen Sie 
 
 ## Erstellen einer Seiten-Export-Tool-Konfiguration für Ihre Website {#creating-a-page-exporter-configuration-for-your-site}
 
-Das Seiten-Export-Tool basiert auf dem [Inhaltssynchronisierungs-Framework](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Die Konfigurationen, die im Dialogfeld **Seiteneigenschaften** verfügbar sind, sind Exportvorlagen, die die erforderlichen Abhängigkeiten für eine Seite definieren.
+Das Seiten-Export-Tool basiert auf dem [Inhaltssynchronisierungs-Framework](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Die Konfigurationen, die im Dialogfeld **Seiteneigenschaften** verfügbar sind, sind Exportvorlagen, die die erforderlichen Abhängigkeiten für eine Seite definieren.
 
 Wenn ein Seitenexport ausgelöst wird, wird auf die Exportvorlage verwiesen. Sowohl der Seitenpfad als auch der Designpfad werden dynamisch angewendet. Anschließend wird die ZIP-Datei erstellt, indem die Standardfunktion zur Inhaltssynchronisierung genutzt wird.
 
@@ -108,7 +106,7 @@ Wenn Ihre Vorlage konfiguriert ist, stellen Sie sie zur Verfügung:
 
 ### Konfigurationsknoten für das Seiten-Export-Tool {#page-exporter-configuration-nodes}
 
-Die Vorlage besteht aus einer Knotenstruktur, da sie das [Content Sync-Framework](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html) verwendet. Jeder Knoten verfügt über die Eigenschaft `type`, die eine spezifische Aktion beim Erstellungsprozess der ZIP-Datei definiert.
+Die Vorlage besteht aus einer Knotenstruktur, da sie das [Content Sync-Framework](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/contentsync/package-summary.html) verwendet. Jeder Knoten verfügt über die Eigenschaft `type`, die eine spezifische Aktion beim Erstellungsprozess der ZIP-Datei definiert.
 
 <!--
 For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
@@ -179,7 +177,7 @@ Benutzerdefinierte Konfigurationen sind ebenfalls möglich.
 As you may have noticed in the node structure, the **Geometrixx** page export template has a `logo` node with a `type` property set to `image`. This is a special configuration type that has been created to copy the image logo to the zip file. 
 -->
 
-Um bestimmte Anforderungen zu erfüllen, implementieren Sie einen [benutzerdefinierten Update-Handler](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
+Um bestimmte Anforderungen zu erfüllen, implementieren Sie einen [benutzerdefinierten Update-Handler](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
 <!--
 To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
@@ -187,7 +185,7 @@ To meet some specific requirements, you may need to implement a custom `type` pr
 
 ## Programmatisches Exportieren einer Seite {#programmatically-exporting-a-page}
 
-Um eine Seite programmatisch zu exportieren, können Sie den OSGi-Dienst [PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) nutzen. Mit diesem Dienst können Sie:
+Um eine Seite programmatisch zu exportieren, können Sie den OSGi-Dienst [PageExporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) nutzen. Mit diesem Dienst können Sie:
 
 * eine Seite exportieren und in die HTTP-Servlet-Antwort schreiben
 * eine Seite exportieren und die ZIP-Datei an einem bestimmten Ort speichern

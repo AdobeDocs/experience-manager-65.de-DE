@@ -9,13 +9,11 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 87e11d37b9aa14ee3d4e47ae30eaa25f151a9b5b
+source-git-commit: b860fd19c0aeaa94fb0e04052dac70b0bc58b11b
 workflow-type: tm+mt
-source-wordcount: '4096'
-ht-degree: 83%
-
+source-wordcount: '4259'
+ht-degree: 85%
 ---
-
 
 
 # Unterstützte Plattformen für AEM Forms on JEE {#supported-platforms-for-aem-forms-on-jee}
@@ -106,8 +104,9 @@ Adobe empfiehlt die folgenden Konfigurationen und bietet vollständige oder eing
 
 >[!NOTE]
 >
->Um AEM Forms-Kunden dabei zu helfen, die Nutzungskosten zu senken, die Bereitstellungsarchitektur zu vereinfachen und den Entwicklungs-Stack zu modernisieren, wird die Adobe Experience Manager-Unternehmensplattform von Anwendungsserver-basierten Bereitstellungen auf eigenständige OSGi-basierte Bereitstellungen umgestellt. Adobe unterstützt weiterhin den JEE-Stack von AEM Forms mit einer reduzierten Matrix von Infrastrukturkomponenten.
-><br>>Mit Version 6.5 werden folgende Infrastrukturkomponenten, die die geringste Nutzung unter Adobe-Kunden aufweisen, nicht mehr unterstützt:
+>Um Kunden und Kundinnen von AEM Forms dabei zu helfen, die Nutzungskosten zu reduzieren, die Bereitstellungsarchitektur zu vereinfachen und den Entwicklungs-Stack zu modernisieren, wird die Enterprise-Plattform Adobe Experience Manager von Anwendungsserver-basierten Bereitstellungen auf eigenständige OSGi-basierte Bereitstellungen umgestellt. Adobe unterstützt weiterhin den JEE-Stack von AEM Forms mit einer reduzierten Matrix von Infrastrukturkomponenten.
+><br>
+>Mit der Veröffentlichung von 6.5 werden die folgenden Infrastrukturkomponenten, die von Adobe-Kundinnen und -Kunden am wenigsten genutzt werden, nicht mehr unterstützt:
 >
 > - IBM® DB2®-Datenbank
 > - IBM® AIX®- und Sun Solaris™-Betriebssysteme
@@ -237,8 +236,8 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
 
 - IBM® DB2® wird bei Neuinstallationen nicht unterstützt. Es wird nur für bestehende Kundinnen und Kunden unterstützt, die auf AEM 6.5 Forms aktualisieren.
 - MongoDB ist eine Drittanbieter-Software und nicht im AEM-Lizenzierungspaket enthalten. Weitere Informationen finden Sie in der [MongoDB-Lizenzierungsrichtlinie](https://www.mongodb.org/about/licensing/).
-- Um Ihre AEM-Bereitstellung optimal nutzen zu können, empfiehlt Adobe die Lizenzierung der MongoDB Enterprise-Version, um professionellen Support zu erhalten.
-@@ -242.187 +206.150 @@ Adobe Experience Manager Forms erfordert zum Ausführen einer Java™ Virtual Machine, wh
+- Adobe empfiehlt die Lizenzierung der MongoDB Enterprise-Version, damit Sie von professioneller Unterstützung profitieren und die AEM-Bereitstellung optimal nutzen können.
+@@ -242,187 +206,150 @@ Adobe Experience Manager Forms erfordert zum Ausführen eine Java™ Virtual Machine
 - Das Document Security-Modul verwendet nicht das Content-Repository. Das bedeutet, wenn Sie nur Document Security und nicht HTML Workspace, HTML5 Forms und adaptive Formulare verwenden möchten, müssen Sie das Content-Repository nicht installieren.
 - AEM Forms auf JEE unterstützt nicht die Verwendung von MySQL für das persistente AEM Repository (CRX-Repository).
 
@@ -383,6 +382,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
 > - libXau.x86_64 (1.0.8-2.1.el7)
 > - glibc-locale.x86_64 (2.17 oder höher)
 > - OpenSSL 3 (erforderlich am Standardspeicherort im Betriebssystem).
+> - Unter Red Hat® Enterprise Linux® 9 erfordert der 32-Bit OpenOffice-Build `libcrypt.so.1`, der nicht standardmäßig installiert ist. Wenn OpenOffice fehlt, beginnt es nicht mit dem `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`, und die Konvertierung von OpenOffice in PDF schlägt fehl. Installieren Sie das `libxcrypt-compat`-Paket (32-Bit), um die Bibliothek `sudo dnf install -y libxcrypt-compat.i686` bereitzustellen.
 
 Für die OpenSSL 3-Installation: Die Bibliotheken libcrypto.so.3 und libssl.so.3 müssen im Standardbibliothekspfad verfügbar sein, der durch die Umgebungsvariable LD_LIBRARY_PATH dargestellt wird. Wenn sie an einem nicht standardmäßigen Speicherort installiert sind, stellen Sie sicher, dass dieser Pfad zu LD_LIBRARY_PATH hinzugefügt wird, bevor Sie den Server starten.
 
@@ -420,7 +420,7 @@ Beachten Sie die folgenden Ausnahmen, wenn Sie eine Plattform auswählen, auf de
 1. AEM Forms on JEE unterstützt nicht JBoss® unter SUSE® Linux® Enterprise Server 12. Nur IBM® WebSphere® wird auf SUSE® Linux® Enterprise Server 12 unterstützt.
 1. AEM Forms on JEE unterstützt kein anderes JDK mit JBoss® als Oracle Java™ SE.
 1. AEM Forms on JEE unterstützt kein anderes JDK mit IBM® WebSphere® als IBM® JDK.
-1. Das CRX-Repository unterstützt Persistenz des Typs TarMK, MongoDB und relationale Datenbanken (RDBMK). Sie können nicht zwei verschiedene Datenbanksysteme zwischen dem Anwendungsserver und dem CRX-Repository haben. In einer AEM Forms on JEE-Umgebung können Sie MongoMK jedoch mit dem CRX-Repository und einer unterstützten relationalen Datenbank mit dem Anwendungsserver verwenden.
+1. CRX-Repository unterstützt Persistenz des Typs TarMK, MongoDB und relationale Datenbanken (RDBMK). Sie dürfen nicht zwei verschiedene Datenbanksysteme zwischen dem Anwendungsserver und dem CRX-Repository haben. In einer AEM Forms on JEE-Umgebung können Sie MongoMK jedoch mit dem CRX-Repository und einer unterstützten relationalen Datenbank mit Anwendungs-Server verwenden.
 @@ -432,12 +359,12 @@ Beachten Sie die folgenden Ausnahmen bei der Auswahl einer Plattform zur Einrichtung Ihres AEM F
 1. JDK-Versionen, die höher als 1.8.0_281 sind, werden für WebLogic-Server nicht unterstützt. (FORMS-8498)
 1. JDK 11.0.20 wird zur Installation des AEM Forms on JEE-Installationsprogramms nicht unterstützt. Nur JDK 11.0.19 oder frühere Versionen werden zur Installation des AEM Forms auf JEE-Installationsprogramms unterstützt.
@@ -433,8 +433,8 @@ Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für 
 
 - AEM Forms on JEE unterstützt Updates, Patches und Fix Packs zusätzlich zu der angegebenen Haupt- oder Nebenversion der unterstützten Software. Das Update auf die nächste Haupt- oder Nebenversion wird jedoch nur unterstützt wenn entsprechend angegeben.
 - Cluster-basierte Installationen unterstützen keine TarMK-Persistenz. Weitere Informationen zur unterstützten Persistenz finden Sie unter [Auswählen eines Persistenztyps für eine AEM Forms-Installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
-- AEM Forms on JEE unterstützt verschiedene Software von Drittanbietern gemäß der [Richtlinie zur Unterstützung von Drittanbieterprogrammen](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p) von Adobe.
-@@ -449.274 +376.219 @@ Beachten Sie bei der Auswahl von Software für Adobe AEM außerdem Folgendes
+- AEM Forms on JEE unterstützt die Software verschiedener Drittanbieter gemäß der [Richtlinie zur Unterstützung der Software von Drittanbietern](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p) von Adobe.
+@@ -449,274 +376,219 @@ Beachten Sie außerdem Folgendes bei der Auswahl von Software für Adobe AEM
 
 ### LDAP-Server (optional) {#ldap-servers-optional}
 

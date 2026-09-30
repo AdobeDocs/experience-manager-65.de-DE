@@ -1,18 +1,16 @@
 ---
-title: Integrieren von  [!DNL Assets]  in den Aktivitäts-Stream
-description: Beschreibt die Aufzeichnungsfunktionen von  [!DNL Experience Manager]  und die Konfiguration zum Aufzeichnen bestimmter Ereignisse.
+title: Integrieren von [!DNL Assets] in den Aktivitäts-Stream
+description: Beschreibt die Aufzeichnungsfunktionen von [!DNL Experience Manager] und die Konfiguration zum Aufzeichnen bestimmter Ereignisse.
 contentOwner: AG
 role: Developer
 feature: Asset Management
 exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 100%
-
+source-wordcount: '258'
+ht-degree: 88%
 ---
-
 # Integrieren von [!DNL Assets] in den Aktivitäts-Stream {#integrating-assets-with-activity-stream}
 
 [!DNL Adobe Experience Manager Assets]-Benutzende führen viele Aktionen durch, z. B. das Erstellen, Hochladen und Löschen von Assets. Diese Aktionen können aufgezeichnet werden, sodass Sie für eine Person einen Aktivitätenverlauf erstellen können. Dieser Abschnitt beschreibt die Aufzeichnungsfunktionen von [!DNL Experience Manager] und wie sich [!DNL Experience Manager] für die Aufzeichnung bestimmter Ereignisse konfigurieren lässt.
@@ -59,4 +57,4 @@ Die Einstellungen für die Assets-Ereignisaufzeichnung können über die [Web-Ko
 
 ## Lesen aufgezeichneter Ereignisse {#reading-recorded-events}
 
-Die aufgezeichneten Ereignisse werden als Aktivitäten gespeichert. Sie können sie programmgesteuert über die [ActivityManager-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html) lesen.
+Die aufgezeichneten Ereignisse werden als Aktivitäten gespeichert. Sie können sie programmgesteuert über die [ActivityManager-API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html) lesen.

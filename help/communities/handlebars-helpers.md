@@ -7,13 +7,11 @@ exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 4%
-
+source-wordcount: '1534'
+ht-degree: 3%
 ---
-
 # SCF Handlebars-Helfer {#scf-handlebars-helpers}
 
 | **[⇐ Feature Essentials](essentials.md)** | **[Server-seitige ⇒](server-customize.md)** |
@@ -180,7 +178,7 @@ Ein Helper zum Zurückgeben von Inhalten abhängig von einer bedingten Gleichhei
 
 ## if-wcm-mode {#if-wcm-mode}
 
-Ein Block-Helper, der den aktuellen Wert von [WCM-Modus](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) anhand einer durch eine Zeichenfolge getrennten Liste von Modi testet.
+Ein Block-Helper, der den aktuellen Wert von [WCM-Modus](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) anhand einer durch eine Zeichenfolge getrennten Liste von Modi testet.
 
 ### Parameter {#parameters-4}
 
@@ -190,7 +188,7 @@ Ein Block-Helper, der den aktuellen Wert von [WCM-Modus](https://developer.adobe
 
 * **mode**: Zeichenfolge
 
-  (Optional) Eine kommagetrennte Liste von [WCM-Modi](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) um zu testen, ob sie festgelegt sind.
+  (Optional) Eine kommagetrennte Liste von [WCM-Modi](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) um zu testen, ob sie festgelegt sind.
 
 ### Beispiel {#example-2}
 
@@ -237,7 +235,7 @@ Mit dieser Methode kann die Ressource programmgesteuert einfacher angepasst werd
 
 Es stehen nur einige ausgewählte Communities-Komponenten zum Einschließen zur Verfügung. <!-- OBSOLETE/OLD  NEED TO UPDATE FOR 6.5  For AEM 6.1, those that are includable are [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md), and [voting](essentials-voting.md). -->
 
-Dieser Helper, der nur für die Serverseite geeignet ist, bietet für JSP-Skripte ähnliche Funktionen [cq:include](../../help/sites-developing/taglib.md).
+Dieser Helper, der nur auf der Server-Seite geeignet ist, bietet für JSP-Skripte ähnliche Funktionen [cq:include](../../help/sites-developing/taglib.md).
 
 ### Parameter {#parameters-6}
 
@@ -275,9 +273,9 @@ Beinhaltet eine neue Kommentarkomponente unter `this.id` + /comments.
 
 ## includeClientLib {#includeclientlib}
 
-Ein Helper mit einer AEM-HTML-Client-Bibliothek, bei der es sich um eine JS-, CSS- oder Design-Bibliothek handeln kann. Für mehrere Einschlüsse verschiedener Typen, z. B. js und css, muss dieses Tag mehrmals im Handlebars-Skript verwendet werden.
+Ein Helper, der eine AEM-HTML-Client-Bibliothek enthält, bei der es sich um eine JS-, CSS- oder Design-Bibliothek handeln kann. Für mehrere Einschlüsse verschiedener Typen, z. B. js und css, muss dieses Tag mehrmals im Handlebars-Skript verwendet werden.
 
-Dieser Helper, der nur für die Serverseite geeignet ist, bietet für JSP[Skripte ähnliche Funktionen wie ui:includeClientLib](../../help/sites-developing/taglib.md).
+Dieser Helper, der nur für die Serverseite geeignet ist, bietet für JSP-Skripte ähnliche Funktionen [ui:includeClientLib](../../help/sites-developing/taglib.md).
 
 ### Parameter {#parameters-7}
 
@@ -341,7 +339,7 @@ Dieser Helper, der nur für die Serverseite geeignet ist, bietet für JSP[Skript
 
 Ein Helper, der anzeigt, wie viel Zeit bis zu einem Cutoff-Punkt vergangen ist. Danach wird ein reguläres Datumsformat angezeigt.
 
-Zum Beispiel:
+Beispiel:
 
 * vor 12 Stunden
 * vor 7 Tagen
@@ -374,7 +372,7 @@ Depending on how long in the past, may return
 
 ## xss-html {#xss-html}
 
-Ein Helper, der eine Quellzeichenfolge für das HTML von Elementinhalten kodiert, um XSS zu verhindern.
+Ein Helper, der eine Quellzeichenfolge für HTML-Elementinhalte kodiert, um XSS zu verhindern.
 
 HINWEIS: Dieser Helper ist kein Validator und darf nicht zum Schreiben von Attributwerten verwendet werden.
 
@@ -458,10 +456,10 @@ HINWEIS: Dieser Helper kann eine leere Zeichenfolge zurückgeben.
 
 * Handlebars stellen einen endgültigen Parameter für Helper mit dem Namen „options“ bereit. Das spezielle Objekt „options“ umfasst
 
-   * Optionale private Daten (options.data)
-   * Optionale Schlüssel-Wert-Eigenschaften aus dem Aufruf (options.hash)
-   * Möglichkeit, sich selbst aufzurufen (options.fn())
-   * Möglichkeit, die Inverse von sich selbst aufzurufen (options.inverse())
+  * Optionale private Daten (options.data)
+  * Optionale Schlüssel-Wert-Eigenschaften aus dem Aufruf (options.hash)
+  * Möglichkeit, sich selbst aufzurufen (options.fn())
+  * Möglichkeit, die Inverse von sich selbst aufzurufen (options.inverse())
 
 * Es wird empfohlen, dass der von einem Helper zurückgegebene HTML-Zeichenfolgeninhalt ein SafeString ist.
 
@@ -519,13 +517,13 @@ würde Folgendes rendern:
 
 ## Benutzerdefinierte SCF-Helfer {#custom-scf-helpers}
 
-Benutzerdefinierte Helper müssen Server- und Client-seitig implementiert werden, insbesondere bei der Übergabe von Daten. Bei SCF werden die meisten Vorlagen Server-seitig kompiliert und gerendert, da der Server die HTML für eine bestimmte Komponente generiert, wenn die Seite angefordert wird.
+Benutzerdefinierte Helper müssen Server- und Client-seitig implementiert werden, insbesondere bei der Übergabe von Daten. Bei SCF werden die meisten Vorlagen Server-seitig kompiliert und gerendert, da der Server bei Anforderung der Seite die HTML für eine bestimmte Komponente generiert.
 
 ### Server-seitige benutzerdefinierte Helper {#server-side-custom-helpers}
 
-Um einen benutzerdefinierten SCF-Helper Server-seitig zu implementieren und zu registrieren, implementieren Sie einfach die Java™-Schnittstelle [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), machen Sie sie zu einem [OSGi-Service](../../help/sites-developing/the-basics.md#osgi) und installieren Sie sie als Teil eines OSGi-Bundles.
+Um einen benutzerdefinierten SCF-Helper Server-seitig zu implementieren und zu registrieren, implementieren Sie einfach die Java™-Schnittstelle [TemplateHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), machen Sie sie zu einem [OSGi-Service](../../help/sites-developing/the-basics.md#osgi) und installieren Sie sie als Teil eines OSGi-Bundles.
 
-Zum Beispiel:
+Beispiel:
 
 ### FooTextHelper.java {#footexthelper-java}
 
@@ -572,7 +570,7 @@ public class FooTextHelper implements TemplateHelper<String>{
 ### Client-seitige benutzerdefinierte Helper {#client-side-custom-helpers}
 
 Die Client-seitigen Helper sind Handlebars-Skripte, die durch Aufrufen von `Handlebars.registerHelper()` registriert werden.
-Zum Beispiel:
+Beispiel:
 
 ### custom-helpers.js {#custom-helpers-js}
 

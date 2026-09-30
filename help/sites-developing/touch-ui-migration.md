@@ -10,13 +10,11 @@ exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 97%
-
+source-wordcount: '702'
+ht-degree: 95%
 ---
-
 # Migration zur Touch-optimierten Benutzeroberfläche{#migration-to-the-touch-ui}
 
 Mit der Version 6.0 führte Adobe Experience Manager (AEM) eine neue Benutzeroberfläche ein, die als *Touch-optimierte Benutzeroberfläche* (auch einfach *Touch-Benutzeroberfläche* genannt) bezeichnet wird. Sie ist an Adobe Experience Cloud und die allgemeinen Richtlinien für die Benutzeroberflächen von Adobe angepasst. Dies ist inzwischen die Standard-Benutzeroberfläche in AEM. Die veraltete, Desktop-orientierte Benutzeroberfläche wird *klassische Benutzeroberfläche* genannt.
@@ -119,7 +117,7 @@ Dialoge sind bei der Migration Ihrer Komponenten ein wichtiger Faktor:
 * [Migration von einer klassischen Komponente](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
 * [AEM Modernisierungs-Tools](/help/sites-developing/modernization-tools.md): helfen Ihnen, die Dialoge Ihrer klassischen Benutzeroberflächenkomponenten in die Touch-optimierte Benutzeroberfläche umzuwandeln
 
-   * In der Touch-optimierten Benutzeroberfläche gibt es eine Kompatibilitätsebene, um ein Dialogfeld der klassischen Benutzeroberfläche in einem „Touch-UI-Wrapper“ zu öffnen. Dies ist jedoch mit einer eingeschränkten Funktionalität verbunden und wird für eine langfristige Nutzung nicht empfohlen.
+  * In der Touch-optimierten Benutzeroberfläche gibt es eine Kompatibilitätsebene, um ein Dialogfeld der klassischen Benutzeroberfläche in einem „Touch-UI-Wrapper“ zu öffnen. Dies ist jedoch mit einer eingeschränkten Funktionalität verbunden und wird für eine langfristige Nutzung nicht empfohlen.
 
 * [Anpassen von Dialogfeldern in der Touch-optimierten Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche](/help/sites-developing/granite-ui-component.md)
@@ -148,9 +146,9 @@ Obwohl dies nicht direkt mit einer Migration zur Touch-optimierten Benutzeroberf
 Umfassende Informationen zur Entwicklung von AEM finden Sie in der Sammlung von Ressourcen unter:
 
 * [Benutzerhandbuch für Entwickler](/help/sites-developing/getting-started.md)
-* [Dokumentation zur Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Dokumentation zur Granite-Benutzeroberfläche](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [Tutorials und Videos zu AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=de)
-* [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial](/help/sites-developing/getting-started.md)
+* [Erste Schritte bei der Entwicklung von AEM-Sites – WKND-Tutorial](/help/sites-developing/getting-started.md)
 * [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=de)
 * [AEM-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/)
 

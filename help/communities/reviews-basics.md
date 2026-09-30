@@ -9,13 +9,11 @@ exl-id: 91e0e245-a2f1-4bd7-b38f-7641fd94a547
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '351'
 ht-degree: 2%
-
 ---
-
 # Bewertungen Essentials {#reviews-essentials}
 
 Diese Funktion besteht aus zwei Komponenten, die zusammenarbeiten: Überprüfungen und Zusammenfassung der Überprüfungen.
@@ -40,7 +38,7 @@ Das anonyme Posten einer Überprüfung wird nicht unterstützt. Besucher der Sit
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
-   <td>cq.social.hbs.reviews</td>
+   <td>CQ.social.hbs.reviews</td>
   </tr>
   <tr>
    <td> <strong>Vorlagen</strong></td>
@@ -62,7 +60,7 @@ Das anonyme Posten einer Überprüfung wird nicht unterstützt. Besucher der Sit
 | **resourceType** | Sozial/Bewertungen/Komponenten/Hub/Zusammenfassung |
 |---|---|
 | [**inklusive**](scf.md#add-or-include-a-communities-component) | Ja - Eigenschaften können im Design-Modus bearbeitet werden. |
-| [**clientlibs**](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
+| [**clientlibs**](client-customize.md#clientlibs-for-scf) | CQ.social.hbs.reviews |
 | **Vorlagen** | /libs/social/reviews/components/hbs/summary/summary.hbs |
 | **css** | /libs/social/reviews/components/hbs/reviews/clientlibs/review.css |
 | **Eigenschaften** | Siehe [Verwenden von Überprüfungen](reviews.md) |
@@ -71,9 +69,9 @@ Das anonyme Posten einer Überprüfung wird nicht unterstützt. Besucher der Sit
 
 ## Grundlagen für Server-seitige {#essentials-for-server-side}
 
-* [API überprüfen](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
+* [API überprüfen](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
 
-* [Endpunkte überprüfen](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
+* [Überprüfen von Endpunkten](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
 
 * [Server-seitige Anpassungen](server-customize.md)
 
@@ -82,7 +80,7 @@ Das anonyme Posten einer Überprüfung wird nicht unterstützt. Besucher der Sit
 UGC sollte mit einer der Standardmethoden für die Mäßigung moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [Common Store](working-with-srp.md) für UGC den programmgesteuerten Zugriff auf UGC, unabhängig von der gewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [Common Store](working-with-srp.md) für benutzergenerierten Inhalt programmgesteuerten Zugriff auf benutzergenerierten Inhalt, unabhängig von der ausgewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des benutzergenerierten Inhalts im Repository können sich ohne Warnung ändern**.
 

@@ -10,13 +10,11 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '4923'
-ht-degree: 95%
-
+source-wordcount: '5032'
+ht-degree: 94%
 ---
-
 # Erstellen von Websites mit vollem Funktionsumfang (JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
@@ -103,7 +101,7 @@ Beispieldatei static.css und Bilder
 
 1. Wenn das Element „mywebsite“ nicht in der Tabelle aufgeführt wird, aktualisieren Sie die Baumansicht bzw. die Tabelle.
 
-1. [WebDAV](/help/sites-administering/webdav-access.md) Zugriff auf die URL unter https://localhost:4502, kopieren Sie die `static.css`-Beispieldatei und `images` Ordner aus der heruntergeladenen Datei mywebsite.zip in den `/etc/designs/mywebsite` Ordner.
+1. [Verwenden von WebDAV](/help/sites-administering/webdav-access.md) Greifen Sie auf die URL unter https://localhost:4502 zu und kopieren Sie die Beispieldatei `static.css` und `images` Ordner aus der heruntergeladenen Datei mywebsite.zip in den Ordner `/etc/designs/mywebsite` .
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
@@ -493,7 +491,7 @@ Verbessern Sie das Rendering-Skript der topnav-Komponente, sodass für die Navig
 
 Diese Übung zeigt die [Verarbeitung von Sling-Anfragen](/help/sites-developing/the-basics.md#sling-request-processing). Das Skript topnav.jsp wird geändert, um ein Skript aufzurufen, das dynamisch Bilder generiert, die für die Seitennavigations-Links verwendet werden. In dieser Übung analysiert Sling die URL der Bildquelldateien, um das Skript zu bestimmen, das zum Rendern der Bilder verwendet werden soll.
 
-Die Quelle für den Bild-Link zur Seite „Produkte“ könnte beispielsweise https://localhost:4502/content/mywebsite/en/products.navimage.png sein. Sling analysiert diese URL, um den Ressourcentyp und das Skript zum Rendern der Ressource zu bestimmen:
+Die Quelle für den Bild-Link zur Seite „Produkte“ könnte beispielsweise https://localhost:4502/content/mywebsite/en/products.navimage.png lauten. Sling analysiert diese URL, um den Ressourcentyp und das Skript zum Rendern der Ressource zu bestimmen:
 
 1. Sling bestimmt `/content/mwebysite/en/products.png.` als Pfad der Ressource.
 1. Sling ordnet diesen Pfad dem Knoten `/content/mywebsite/en/products` zu.
@@ -523,9 +521,9 @@ Im Rahmen dieser Übung ordnet Sling diese URLs dem Skript /apps/mywebsite/compo
 
 1. Kopieren Sie den folgenden Code nach `navimage.png.java.`. Der Code erweitert die Klasse „AbstractImageServlet“:
 
-   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) erstellt ein ImageContext-Objekt, das die Eigenschaften der aktuellen Ressource speichert.
+   * [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) erstellt ein ImageContext-Objekt, das die Eigenschaften der aktuellen Ressource speichert.
    * Die übergeordnete Seite der Ressource wird aus dem ImageContext-Objekt extrahiert. Dann werden der Seitentitel und der Untertitel abgerufen.
-   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html?lang=de) wird verwendet, um das Bild aus der Datei „navimage_bg.jpg“ des Site-Designs, dem Seitentitel und dem Seitenuntertitel zu generieren.
+   * [ImageHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/ImageHelper.html) wird verwendet, um das Bild aus der Datei „navimage_bg.jpg“ des Site-Designs, dem Seitentitel und dem Seitenuntertitel zu generieren.
 
    ```java
    package apps.mywebsite.components.contentpage;

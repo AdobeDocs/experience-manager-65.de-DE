@@ -8,13 +8,11 @@ feature: Transaction Reports
 exl-id: b0c4f72a-e65f-453a-af66-5d9f98a9d6df
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 100%
-
+source-wordcount: '286'
+ht-degree: 94%
 ---
-
 # Aufzeichnen einer Transaktion für benutzerdefinierte Implementierungen für AEM Forms auf OSGi {#record-a-transaction-for-custom-implementations}
 
 | Version | Artikel-Link |
@@ -24,13 +22,13 @@ ht-degree: 100%
 
 Verwenden der TransactionRecorder-API, um Aktionen aufzuzeichnen, die nicht automatisch als Transaktionen gezählt werden
 
-Sie können einen benutzerdefinierten Code verwenden, um ein PDF-Formular abzusenden oder um die URL der Agenten-Benutzeroberflächen-Vorschau an Endbenutzer bzw. Endbenutzerinnen zu senden, um eine interaktive Kommunikation in der Vorschau anzuzeigen. Oder Sie senden ein Formular mit benutzerdefinierten Methoden ab, anstatt die mit AEM Forms bereitgestellten Übermittlungsmethoden zu verwenden. Alle oben genannten Aktionen und benutzerdefinierten Implementierungen von AEM Forms-APIs werden nicht als Transaktionen gezählt. AEM Forms stellt eine API namens [TransactionRecorder](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html) bereit, um Aktionen wie etwa Transaktionen aufzuzeichnen.
+Sie können einen benutzerdefinierten Code verwenden, um ein PDF-Formular abzusenden oder um die URL der Agenten-Benutzeroberflächen-Vorschau an Endbenutzer bzw. Endbenutzerinnen zu senden, um eine interaktive Kommunikation in der Vorschau anzuzeigen. Oder Sie senden ein Formular mit benutzerdefinierten Methoden ab, anstatt die mit AEM Forms bereitgestellten Übermittlungsmethoden zu verwenden. Alle oben genannten Aktionen und benutzerdefinierten Implementierungen von AEM Forms-APIs werden nicht als Transaktionen gezählt. AEM Forms stellt eine API namens [TransactionRecorder](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html) bereit, um Aktionen wie etwa Transaktionen aufzuzeichnen.
 
 Um eine Transaktion aufzuzeichnen, schreiben Sie das [Standard-Sling-Servlet](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=de) und rufen das Servlet von einem Client aus auf, um eine Transaktion aufzuzeichnen. Sie können das Servlet mithilfe von AJAX oder einer anderen Standardmethode aufrufen.
 
 ## Beispiel für Server-seitigen Code {#sample-server-sided-code}
 
-Sie können den folgenden Beispiel-Code verwenden, um die TransactionRecorder-API von einer Java™-Klasse aus mithilfe eines benutzerdefinierten OSGi-Bundles auszuführen.
+Sie können den folgenden Beispiel-Code verwenden, um die TransactionRecorder-API von einer Java™-Klasse aus mithilfe eines benutzerdefinierten OSGi-Pakets auszuführen.
 
 ```java
 import com.adobe.aem.transaction.core.ITransactionRecorder;

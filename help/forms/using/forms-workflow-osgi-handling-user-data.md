@@ -1,19 +1,20 @@
 ---
 title: Formularzentrierte Workflows unter OSGi | Umgang mit Benutzerdaten
+
 description: Formularzentrierte Workflows unter OSGi | Umgang mit Benutzerdaten
+
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 role: Admin,User
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 100%
-
+source-wordcount: '1033'
+ht-degree: 97%
 ---
-
 # Formularzentrierte Workflows unter OSGi | Umgang mit Benutzerdaten {#forms-centric-workflows-on-osgi-handling-user-data}
 
 Formularzentrierte AEM-Workflows ermöglichen die Automatisierung von formularzentrierten Geschäftsprozessen in der Praxis. Workflows bestehen aus einer Reihe von Schritten, die in der im zugehörigen Workflow-Modell angegebenen Reihenfolge ausgeführt werden. Jeder Schritt führt eine bestimmte Aktion aus, z. B. das Zuweisen einer Aufgabe zu einer Benutzerin bzw. einem Benutzer oder das Senden einer E-Mail-Nachricht. Workflows können mit Assets im Repository, mit Benutzerkonten und mit Experience Manager-Diensten interagieren. Daher können Workflows komplexe Aktivitäten koordinieren, die einen beliebigen Aspekt von Experience Manager betreffen.
@@ -75,13 +76,13 @@ Sie können Benutzerdaten aus einer Workflow-Instanz im Repository aufrufen und 
 Bei der Identifizierung von Workflows, die mit einer Initiatorin oder einem Initiator verbunden sind, können Sie jedoch in den folgenden Szenarien keine Workflows identifizieren oder die Ergebnisse sind möglicherweise nicht eindeutig:
 
 * **Workflow, der durch einen überwachten Ordner ausgelöst wird**: Eine Workflow-Instanz kann nicht über die Person identifiziert werden, die sie initiiert hat, wenn der Workflow durch einen überwachten Ordner ausgelöst wird. In diesem Fall werden die Benutzerinformationen in den gespeicherten Daten codiert.
-* **Workflow, der von der AEM-Publishing-Instanz initiiert wurde**: Alle Workflow-Instanzen werden mithilfe eines Dienstbenutzers erstellt, wenn adaptive Formulare, interaktive Mitteilungen oder Briefe von der AEM-Publishing-Instanz gesendet werden. In diesen Fällen wird der Benutzername der angemeldeten Person nicht in den Workflow-Instanzdaten erfasst.
+* **Workflow, der von der AEM-Veröffentlichungsinstanz initiiert wurde**: Alle Workflow-Instanzen werden mithilfe eines Dienstbenutzers erstellt, wenn adaptive Formulare, interaktive Mitteilungen oder Briefe von der AEM-Veröffentlichungsinstanz gesendet werden. In diesen Fällen wird der Benutzername der angemeldeten Person nicht in den Workflow-Instanzdaten erfasst.
 
 ### Zugreifen auf Benutzerdaten {#access}
 
 Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Instanz zu identifizieren und darauf zuzugreifen:
 
-1. Navigieren Sie in der AEM-Author-Instanz zu `https://'[server]:[port]'/crx/de` und anschließend zu **[!UICONTROL Tools > Abfrage]**.
+1. Navigieren Sie in der AEM-Autoreninstanz zu `https://'[server]:[port]'/crx/de` und anschließend zu **[!UICONTROL Tools > Abfrage]**.
 
    Wählen Sie **[!UICONTROL SQL2]** aus der Dropdown-Liste **[!UICONTROL Typ]** aus.
 
@@ -157,5 +158,5 @@ Wenn Sie AEM-Admin sind, können Sie Benutzerdaten aus Workflow-Instanzen lösch
 Sie können APIs auch verwenden, um auf Knoten und Eigenschaften zuzugreifen und sie zu entfernen. Weitere Informationen finden Sie in den folgenden Dokumenten.
 
 * [Anleitung für den programmgesteuerten Zugriff auf das AEM-JCR](/help/sites-developing/access-jcr.md)
-* [Entfernen von Knoten und Eigenschaften](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
+* [Entfernen von Knoten und Eigenschaften](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [API-Referenz](https://helpx.adobe.com/de/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

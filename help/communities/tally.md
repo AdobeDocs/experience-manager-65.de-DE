@@ -9,13 +9,11 @@ exl-id: 0b508df9-1a24-4728-a254-f913eeb9b391
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '339'
 ht-degree: 0%
-
 ---
-
 # Tally Essentials {#tally-essentials}
 
 Tally ist eine abstrakte Klasse, die eine Standardmethode zum Sammeln von Feedback von Membern darüber bietet, wie sie bestimmte Produkte und Services bewerten. Anonymes Feedback wird nicht unterstützt. Besuchende der Site müssen sich registrieren und anmelden, um teilzunehmen, und sich anmelden, um ihr Feedback zu ändern. Die Anforderung, sich anzumelden, erleichtert die Moderation und erhöht den Wert des Feedbacks, indem mehrere Beiträge verhindert werden.
@@ -28,7 +26,7 @@ Eine benutzerdefinierte Tally-Komponente kann durch Erweitern der abstrakten Tal
 
 [Rating](rating-basics.md) ist eine Implementierung von Tally, die ein Sternsystem verwendet, um eine Reihe von Meinungen von positiv bis negativ auszudrücken.
 
-Ab AEM 6.1 ist die Umfragekomponente nicht mehr verfügbar.
+Ab AEM 6.1 ist die Komponente „Abfrage“ nicht mehr verfügbar.
 
 [Reviews](reviews-basics.md) ist eine SCF-Komponente, die eine Mischung aus [Kommentare](essentials-comments.md) und [Bewertung](rating-basics.md) ist.
 
@@ -38,9 +36,9 @@ Ab AEM 6.1 ist die Umfragekomponente nicht mehr verfügbar.
 
 ## Grundlagen für Server-seitige {#essentials-for-server-side}
 
-* [Tally-APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [Tally-APIs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tally-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally-Endpunkte](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Server-seitige Anpassungen](server-customize.md)
 
@@ -49,7 +47,7 @@ Ab AEM 6.1 ist die Umfragekomponente nicht mehr verfügbar.
 UGC sollte mit einer der Standardmethoden für die Mäßigung moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [Common Store](working-with-srp.md) für UGC den programmgesteuerten Zugriff auf UGC, unabhängig von der gewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [Common Store](working-with-srp.md) für benutzergenerierten Inhalt programmgesteuerten Zugriff auf benutzergenerierten Inhalt, unabhängig von der ausgewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des benutzergenerierten Inhalts im Repository können sich ohne Warnung ändern**.
 

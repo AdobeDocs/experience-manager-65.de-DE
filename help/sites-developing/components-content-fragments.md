@@ -11,13 +11,11 @@ exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Content Fragments
 role: Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 100%
-
+source-wordcount: '1004'
+ht-degree: 98%
 ---
-
 # Komponenten für Inhaltsfragmente{#components-for-content-fragments}
 
 ## Komponenten für die Fragmentbearbeitung {#components-for-fragment-authoring}
@@ -81,21 +79,21 @@ Um dies zu veranschaulichen, beachten Sie, dass Sie über Folgendes verfügen:
 * Eine Instanz eines Inhaltsfragments, das aus drei Absätzen besteht
 * Und dass einige Inhalte bereits nach dem zweiten Absatz eingefügt wurden
 
-   * Dies bedeutet, dass der Inhalt im zweiten Absatzsystem gespeichert wird.
+  * Dies bedeutet, dass der Inhalt im zweiten Absatzsystem gespeichert wird.
 
 Grundsätzlich, wenn sich die Absatzstruktur dieser Instanz ändert (indem die Variante, das Element oder der Bereich der angezeigten Absätze geändert wird), kann sich dies auf den Übergangsinhalt auswirken, der beim Inhalt des Inhaltsfragments angezeigt wird:
 
 * Wird bearbeitet und vor dem zweiten Absatz wird ein weiterer Absatz eingefügt:
 
-   * Der Zwischeninhalt wird nach dem neu erstellten Absatz angezeigt (das zweite Absatzsystem enthält nun den neu erstellten Absatz).
+  * Der Zwischeninhalt wird nach dem neu erstellten Absatz angezeigt (das zweite Absatzsystem enthält nun den neu erstellten Absatz).
 
 * Wird bearbeitet und der zweite Absatz wird entfernt:
 
-   * Der Zwischeninhalt wird nach dem Absatz angezeigt, der zuvor der dritte Absatz war (das zweite Absatzsystem enthält jetzt den vorherigen dritten Absatz).
+  * Der Zwischeninhalt wird nach dem Absatz angezeigt, der zuvor der dritte Absatz war (das zweite Absatzsystem enthält jetzt den vorherigen dritten Absatz).
 
 * Ist so konfiguriert, dass nur der erste Absatz angezeigt wird:
 
-   * Der Zwischeninhalt wird nicht angezeigt (das zweite Absatzsystem wird aufgrund der neuen Konfiguration nicht mehr gerendert).
+  * Der Zwischeninhalt wird nicht angezeigt (das zweite Absatzsystem wird aufgrund der neuen Konfiguration nicht mehr gerendert).
 
 ### Anpassen der Inhaltsfragmentkomponente {#customizing-the-content-fragment-component}
 
@@ -104,9 +102,9 @@ Um die vordefinierte Inhaltsfragmentkomponente als Blueprint für die Erweiterun
 * Verwenden Sie das HTL-Wiedergabeskript und das zugehörige POJO erneut, um zu sehen, wie die Funktion für Zwischeninhalte implementiert wird.
 * Verwenden Sie den Inhaltsfragmentknoten erneut: `cq:editConfig`
 
-   * Die Listener `afterinsert`/ `afteredit`/ `afterdelete` werden zum Auslösen von JS-Ereignissen verwendet. Diese Ereignisse werden in der Client-Bibliothek `cq.authoring.editor.plugin.cfm` behandelt, um den zugehörigen Inhalt im Seitenbereich anzuzeigen.
-   * Die `cq:dropTargets` sind so konfiguriert, dass das Ziehen von Inhaltsfragment-Assets unterstützt wird.
-   * `cq:inplaceEditing` wurde konfiguriert, um das Erstellen eines Inhaltsfragments im Seiteneditor zu unterstützen. Der Editor für die Bearbeitung im Kontext für Fragmente ist in der Client-Bibliothek `cq.authoring.editor.plugin.cfm` definiert und ermöglicht eine schnelle Verknüpfung zum Öffnen [des aktuellen Elements/der aktuellen Variante](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) im [Fragmenteditor](/help/assets/content-fragments/content-fragments-variations.md).
+  * Die Listener `afterinsert`/ `afteredit`/ `afterdelete` werden zum Auslösen von JS-Ereignissen verwendet. Diese Ereignisse werden in der Client-Bibliothek `cq.authoring.editor.plugin.cfm` behandelt, um den zugehörigen Inhalt im Seitenbereich anzuzeigen.
+  * Die `cq:dropTargets` sind so konfiguriert, dass das Ziehen von Inhaltsfragment-Assets unterstützt wird.
+  * `cq:inplaceEditing` wurde konfiguriert, um das Erstellen eines Inhaltsfragments im Seiteneditor zu unterstützen. Der Editor für die Bearbeitung im Kontext für Fragmente ist in der Client-Bibliothek `cq.authoring.editor.plugin.cfm` definiert und ermöglicht eine schnelle Verknüpfung zum Öffnen [des aktuellen Elements/der aktuellen Variante](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) im [Fragmenteditor](/help/assets/content-fragments/content-fragments-variations.md).
 
 ### Neuschreibung eines Assets vor dem Rendern {#asset-rewriting-before-rendering}
 
@@ -131,4 +129,4 @@ Die Standardkonfiguration verwendet folgende Transformatoren:
 * `transformer-cfm-parfilter` – filtert unerwünschte Absätze heraus, wenn ein Absatzbereich angegeben wurde (wie bei der Inhaltsfragmentkomponente möglich)
 * `transformer-cfm-assetprocessor` – wird intern zum Abrufen einer Liste der Assets verwendet, die im Fragment eingebettet sind
 
-Der Rendervorgang wird über [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) verfügbar gemacht und kann bei Bedarf (zum Beispiel) von benutzerdefinierten Komponenten genutzt werden.
+Der Rendervorgang wird über [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) verfügbar gemacht und kann bei Bedarf (zum Beispiel) von benutzerdefinierten Komponenten genutzt werden.

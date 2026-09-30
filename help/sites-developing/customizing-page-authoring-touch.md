@@ -9,13 +9,11 @@ exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1466'
-ht-degree: 95%
-
+source-wordcount: '1471'
+ht-degree: 90%
 ---
-
 # Anpassung des Seiten-Authorings{#customizing-page-authoring}
 
 >[!CAUTION]
@@ -28,16 +26,16 @@ Adobe Experience Manager (AEM) bietet verschiedene Mechanismen, mit denen Sie di
 
   Mit Client-Bibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden wiederverwenden. Bei der Anpassung können Sie unter `/apps.` Ihre eigene Clientbibliothek erstellen. Die neue Clientbibliothek muss:
 
-   * die Authoring-clientlib `cq.authoring.editor.sites.page` als Abhängigkeit aufweisen
-   * der entsprechenden `cq.authoring.editor.sites.page.hook`-Kategorie angehören
+  * die Authoring-clientlib `cq.authoring.editor.sites.page` als Abhängigkeit aufweisen
+  * der entsprechenden `cq.authoring.editor.sites.page.hook`-Kategorie angehören
 
 * Überlagerungen
 
-  Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, Standardfunktionen (in `/libs`) mit Ihren eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen:1 ist keine 1:1-Kopie des Originals erforderlich, da der [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) das Vererben zulässt.
+  Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, Standardfunktionen (in `/libs`) mit Ihren eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da der [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) das Vererben zulässt.
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [JS-Dokumentationssatz](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html?lang=de).
+>Weitere Informationen finden Sie unter [JS-Dokumentationssatz](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html).
 
 Diese können auf viele Arten verwendet werden, um die Seitenbearbeitungsfunktionen in Ihrer AEM-Instanz zu erweitern. Einige davon sind im Folgenden (allgemein) beschrieben.
 
@@ -47,7 +45,7 @@ Diese können auf viele Arten verwendet werden, um die Seitenbearbeitungsfunktio
 >
 >* Verwenden und Erstellen von [Client-Bibliotheken](/help/sites-developing/clientlibs.md).
 >* Verwenden und Erstellen von [Überlagerungen](/help/sites-developing/overlays.md).
->* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Struktur der Touch-optimierten Benutzeroberfläche von AEM](/help/sites-developing/touch-ui-structure.md) für Details zu den strukturellen Bereichen, die beim Seiten-Authoring verwendet werden.
 >
 
@@ -107,9 +105,9 @@ Den Code dieser Seite finden Sie auf GitHub.
 
 Beim Erstellen von Seiten müssen Benutzende häufig aus Ressourcen auswählen (z. B. Seiten, Komponenten und Assets). Dies kann in Form einer Liste erfolgen, aus der die Autorin bzw. der Autor beispielsweise ein Element auswählen muss.
 
-Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall relevant zu halten, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Wenn z. B. der Benutzer durch die [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)-[Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui)-Komponente den Pfad zu einer bestimmten Ressource auswählen kann, können die gezeigten Pfade auf folgende Art gefiltert werden:
+Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall relevant zu halten, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Wenn z. B. der Benutzer durch die [`pathbrowser`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)-[Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui)-Komponente den Pfad zu einer bestimmten Ressource auswählen kann, können die gezeigten Pfade auf folgende Art gefiltert werden:
 
-* Implementieren Sie das benutzerdefinierte Prädikat, indem Sie die Schnittstelle [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) implementieren.
+* Implementieren Sie das benutzerdefinierte Prädikat, indem Sie die Schnittstelle [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) implementieren.
 * Geben Sie einen Namen für die Eigenschaft an und verwenden Sie diesen Namen, wenn Sie `pathbrowser` verwenden.
 
 Weitere Informationen zum Erstellen eines benutzerdefinierten Prädikats finden Sie unter [Implementieren eines benutzerdefinierten Prädikat-Auswerters für den Query Builder](/help/sites-developing/implementing-custom-predicate-evaluator.md).
@@ -151,12 +149,12 @@ Bei der Standardinstallation von AEM:
 
      Beispiel:
 
-      * `/libs/foundation/components/text/cq:editConfig`
-      * `/libs/foundation/components/image/cq:editConfig`
+     * `/libs/foundation/components/text/cq:editConfig`
+     * `/libs/foundation/components/image/cq:editConfig`
 
-         * property: `editorType`
+       * property: `editorType`
 
-           Definiert die Art des Inline-Editors, der verwendet wird, wenn die Bearbeitung im Kontext für diese Komponente ausgelöst wird, z. B., `text`, `textimage`, `image` und `title`.
+         Definiert die Art des Inline-Editors, der verwendet wird, wenn die Bearbeitung im Kontext für diese Komponente ausgelöst wird, z. B., `text`, `textimage`, `image` und `title`.
 
 1. Weitere Einstellungen des Editors können mit einem `config`-Knoten, der Konfigurationen enthält, sowie einem weiteren `plugin`-Knoten mit notwendigen Plug-in-Konfigurationsdetails konfiguriert werden.
 

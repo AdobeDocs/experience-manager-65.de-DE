@@ -1,6 +1,6 @@
 ---
 title: Grundlagen zum Kalender
-description: Erfahren Sie, wie Sie in Experience Manager Communities mit der Kalenderfunktion arbeiten. Der Kalender unterstützt die Identifizierung privilegierter Benutzergruppen.
+description: Erfahren Sie, wie Sie die Kalenderfunktion in Experience Manager Communities verwenden. Der Kalender unterstützt die Identifizierung privilegierter Benutzergruppen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -9,13 +9,11 @@ exl-id: 069e379d-c6fd-49ca-b337-df6fd466e023
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '244'
 ht-degree: 2%
-
 ---
-
 # Grundlagen zum Kalender {#calendar-essentials}
 
 Diese Seite enthält wichtige Informationen zum Arbeiten mit der Kalenderfunktion.
@@ -34,7 +32,7 @@ Diese Seite enthält wichtige Informationen zum Arbeiten mit der Kalenderfunktio
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
-   <td>cq.social.hbs.calendar</td>
+   <td>CQ.social.hbs.calendar</td>
   </tr>
   <tr>
    <td> <strong>Vorlagen</strong></td>
@@ -56,9 +54,9 @@ Diese Seite enthält wichtige Informationen zum Arbeiten mit der Kalenderfunktio
 
 ## Grundlagen für Server-seitige {#essentials-for-server-side}
 
-* [Kalender-APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
+* [Kalender-APIs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
 
-* [Kalenderendpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
+* [Kalender-Endpunkte](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
 
 * [Server-seitige Anpassungen](server-customize.md)
 
@@ -68,7 +66,7 @@ Für eine Community-Site-Struktur mit der [Kalenderfunktion](functions.md#calend
 
 ### Zugriff auf Kalenderbeiträge (UGC) {#accessing-calendar-posts-ugc}
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [Common Store](working-with-srp.md) für UGC den programmgesteuerten Zugriff auf UGC, unabhängig von der gewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [Common Store](working-with-srp.md) für benutzergenerierten Inhalt programmgesteuerten Zugriff auf benutzergenerierten Inhalt, unabhängig von der ausgewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des benutzergenerierten Inhalts im Repository können sich ohne Warnung ändern**.
 

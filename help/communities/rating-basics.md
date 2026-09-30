@@ -9,13 +9,11 @@ exl-id: 49456944-ff0d-4507-b3b8-143c90067573
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '308'
 ht-degree: 1%
-
 ---
-
 # Grundlagen zur Bewertung {#rating-essentials}
 
 Die Bewertungskomponente, eine [tally](tally.md)-Unterklasse, ermöglicht angemeldeten Community-Mitgliedern, eine Funktion auf der Website zu bewerten.
@@ -38,7 +36,7 @@ Die anonyme Veröffentlichung einer Bewertung wird nicht unterstützt. Besuchend
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
-   <td> cq.social.hbs.rating</td>
+   <td> CQ.social.hbs.rating</td>
   </tr>
   <tr>
    <td> <strong>Vorlagen</strong></td>
@@ -59,9 +57,9 @@ Die anonyme Veröffentlichung einer Bewertung wird nicht unterstützt. Besuchend
 
 ## Grundlagen für Server-seitige {#essentials-for-server-side}
 
-* [Tally-APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [Tally-APIs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tally-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally-Endpunkte](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Server-seitige Anpassungen](server-customize.md)
 
@@ -70,7 +68,7 @@ Die anonyme Veröffentlichung einer Bewertung wird nicht unterstützt. Besuchend
 UGC sollte mit einer der Standardmethoden für die Mäßigung moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [Common Store](working-with-srp.md) für UGC den programmgesteuerten Zugriff auf UGC, unabhängig von der gewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [Common Store](working-with-srp.md) für benutzergenerierten Inhalt programmgesteuerten Zugriff auf benutzergenerierten Inhalt, unabhängig von der ausgewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des benutzergenerierten Inhalts im Repository können sich ohne Warnung ändern**.
 

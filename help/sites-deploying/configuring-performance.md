@@ -13,9 +13,9 @@ feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '6649'
+source-wordcount: '6650'
 ht-degree: 99%
 ---
 # Leistungsoptimierung {#performance-optimization}
@@ -225,7 +225,7 @@ Wenn beispielsweise Bilder (oder DAM-Assets im Allgemeinen) hochgeladen werden, 
 Die Workflow-Engine verwendet Apache Sling-Auftragswarteschlangen für die Verarbeitung und Planung der Arbeitselemente. Die folgenden Auftragswarteschlangendienste wurden standardmäßig in der Apache Sling Job Queue Configuration Service Factory zur Verarbeitung von Workflow-Aufgaben erstellt:
 
 * Granite Workflow-Warteschlange: Für die meisten Workflow-Schritte, wie diejenigen zur Verarbeitung von DAM-Assets, wird der Granite Workflow-Warteschlangendienst verwendet.
-* Granite Workflow Auftragswarteschlange für externe Prozesse: Dieser Dienst wird für spezielle externe Workflow-Schritte verwendet, die typischerweise für die Kontaktaufnahme mit einem externen System und die Abfrage von Ergebnissen verwendet werden. Beispielsweise wird der Schritt „InDesign Medien-Extraktionsvorgang“ als externer Prozess implementiert. Die Workflow-Engine verwendet die externe Warteschlange zur Verarbeitung der Abfrage. (Siehe [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* Granite Workflow Auftragswarteschlange für externe Prozesse: Dieser Dienst wird für spezielle externe Workflow-Schritte verwendet, die typischerweise für die Kontaktaufnahme mit einem externen System und die Abfrage von Ergebnissen verwendet werden. Beispielsweise wird der Schritt „InDesign Medien-Extraktionsvorgang“ als externer Prozess implementiert. Die Workflow-Engine verwendet die externe Warteschlange zur Verarbeitung der Abfrage. (Siehe [com.day.cq.workflow.exec.WorkflowExternalProcess](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Konfigurieren Sie diese Dienste, um die maximale Anzahl der parallel ausgeführten Workflow-Prozesse zu beschränken.
 

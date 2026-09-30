@@ -11,13 +11,11 @@ exl-id: 21b2037a-685a-441d-aecd-865884253e03
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3807'
-ht-degree: 97%
-
+source-wordcount: '3844'
+ht-degree: 96%
 ---
-
 # Erstellen von Websites für Mobilgeräte{#creating-sites-for-mobile-devices}
 
 {{ue-over-mobile}}
@@ -33,7 +31,7 @@ Um eine Mobile-Site zu erstellen, gehen Sie folgendermaßen vor:
 1. Erstellen Sie die Seitenkomponente:
 
    * Legen Sie die `sling:resourceSuperType`-Eigenschaft fest auf `wcm/mobile/components/page`
-Auf diese Weise beruht die Komponente auf der mobilen Seitenkomponente.
+     Auf diese Weise beruht die Komponente auf der mobilen Seitenkomponente.
 
    * Erstellen Sie die Datei `body.jsp` mit der projektspezifischen Logik.
 
@@ -68,11 +66,11 @@ Verwenden Sie den Multi-Site-Manager (MSM), um eine mobile Live Copy von einer S
 
 Folgende Java™-Pakete enthalten die Mobile-Klassen:
 
-* [com.day.cq.wcm.mobile.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) – definiert MobileConstants.
-* [com.day.cq.wcm.mobile.api.device](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) – definiert Device, DeviceGroup und DeviceGroupList.
-* [com.day.cq.wcm.mobile.api.device.capability](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) – definiert DeviceCapability.
-* [com.day.cq.wcm.mobile.api.wurfl](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) – definiert WurflQueryEngine.
-* [com.day.cq.wcm.mobile.core](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) – definiert MobileUtil, das verschiedene Hilfsmethoden um WCM Mobile herum bereitstellt.
+* [com.day.cq.wcm.mobile.api](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) – definiert MobileConstants.
+* [com.day.cq.wcm.mobile.api.device](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) – definiert Device, DeviceGroup und DeviceGroupList.
+* [com.day.cq.wcm.mobile.api.device.capability](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) – definiert DeviceCapability.
+* [com.day.cq.wcm.mobile.api.wurfl](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) – definiert WurflQueryEngine.
+* [com.day.cq.wcm.mobile.core](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) – definiert MobileUtil, das verschiedene Hilfsmethoden um WCM Mobile herum bereitstellt.
 
 ### Mobile Komponenten {#mobile-components}
 
@@ -170,8 +168,8 @@ Informationen zum Erstellen eines Emulators finden Sie unter [Erstellen eines be
 
 **Hauptmerkmale von Mobile-Emulatoren**
 
-* Eine Gerätegruppe besteht aus einem oder mehreren Emulatoren: die Gerätegruppen-Konfigurationsseite, z. B. /etc/mobile/groups/touch, enthält die `emulators` Eigenschaft unterhalb des `jcr:content`.
-Hinweis: Obwohl es möglich ist, dass derselbe Emulator zu mehreren Gerätegruppen gehört, ist dies nicht sehr sinnvoll.
+* Eine Gerätegruppe besteht aus einem oder mehreren Emulatoren: die Gerätegruppen-Konfigurationsseite, z. B. „/etc/mobile/groups/touch“, enthält die Eigenschaft `emulators` unterhalb des Knotens `jcr:content`.
+Hinweis: Obwohl es möglich ist, dass derselbe Emulator zu mehreren Gerätegruppen gehört, hat das wenig Sinn.
 
 * Über das Konfigurationsdialogfeld der Gerätegruppe wird die Eigenschaft `emulators` mit dem Pfad der gewünschten Emulatoren festgelegt. Beispiel: `/libs/wcm/mobile/components/emulators/iPhone4`.
 
