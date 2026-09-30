@@ -9,13 +9,11 @@ exl-id: 6d653331-c1ce-4ccb-bb45-656b6413ac3e
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '279'
 ht-degree: 2%
-
 ---
-
 # Grundlagen zur Dateibibliothek {#file-library-essentials}
 
 Auf dieser Seite finden Sie die grundlegenden Informationen zum Arbeiten mit der Dateibibliotheksfunktion.
@@ -55,9 +53,9 @@ Auf dieser Seite finden Sie die grundlegenden Informationen zum Arbeiten mit der
 
 ## Grundlagen für Server-seitige {#essentials-for-server-side}
 
-* [File Library API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
+* [Dateibibliotheks-API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
 
-* [Dateibibliotheks-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
+* [Dateibibliotheksendpunkte](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
 
 * [Server-seitige Anpassungen](server-customize.md)
 
@@ -70,7 +68,7 @@ Eine Community-Site-Struktur mit der [Dateibibliotheksfunktion](functions.md#fil
 UGC sollte mit einer der Standardmethoden für die Mäßigung moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [Common Store](working-with-srp.md) für UGC den programmgesteuerten Zugriff auf UGC, unabhängig von der gewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [Common Store](working-with-srp.md) für benutzergenerierten Inhalt programmgesteuerten Zugriff auf benutzergenerierten Inhalt, unabhängig von der ausgewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des benutzergenerierten Inhalts im Repository können sich ohne Warnung ändern**.
 

@@ -9,13 +9,11 @@ exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 100%
-
+source-wordcount: '550'
+ht-degree: 93%
 ---
-
 # Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche{#creating-a-new-granite-ui-field-component}
 
 Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten für die Verwendung in Formularen, die im Vokabular der Granite-Benutzeroberfläche als *Felder* bezeichnet werden. Die Standard-Formularkomponenten in Granite sind verfügbar unter:
@@ -28,35 +26,35 @@ Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten für die Verwe
 
 >[!NOTE]
 >
->Vollständige Informationen zu Feldern finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Vollständige Informationen zu Feldern finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Verwenden Sie das Foundation-Framework der Granite-Benutzeroberfläche zum Entwickeln und/oder Erweitern von Granite-Komponenten. Dieses umfasst zwei Elemente:
 
 * Server-seitig:
 
-   * eine Reihe von Foundation-Komponenten
+  * eine Reihe von Foundation-Komponenten
 
-      * Foundation – modular, zusammensetzbar, schichtfähig, wiederverwendbar
-      * Komponenten – Sling-Komponenten
+    * Foundation – modular, zusammensetzbar, schichtfähig, wiederverwendbar
+    * Komponenten – Sling-Komponenten
 
-   * Hilfsprogramme für die Anwendungsentwicklung
+  * Hilfsprogramme für die Anwendungsentwicklung
 
 * Client-seitig:
 
-   * eine Sammlung von Client-Bibliotheken mit Vokabular (das heißt, einer Erweiterung der HTML-Sprache) für generische Interaktionsmuster in einer von Hypermedia gesteuerten Benutzeroberfläche.
+  * eine Sammlung von Client-Bibliotheken mit Vokabular (das heißt, einer Erweiterung der HTML-Sprache) für generische Interaktionsmuster in einer von Hypermedia gesteuerten Benutzeroberfläche.
 
 Die generische Komponente `field` der Granite-Benutzeroberfläche beinhaltet zwei wichtige Dateien:
 
 * `init.jsp`: Übernimmt die generische Verarbeitung sowie Beschriftung und Beschreibung und liefert den für das Rendern des Felds erforderlichen Formularwert.
 * `render.jsp`: Übernimmt das tatsächliche Rendern des Felds und muss für das benutzerdefinierte Feld überschrieben werden; ist in `init.jsp` enthalten.
 
-Weitere Informationen finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche – Feld](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html).
+Weitere Informationen finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche – Feld](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html).
 
 Beispiele finden Sie hier:
 
 * `cqgems/customizingfield/components/colorpicker`
 
-   * im Abschnitt [Codebeispiel](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * im Abschnitt [Codebeispiel](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `granite/ui/components/foundation/form`
 

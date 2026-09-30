@@ -9,13 +9,11 @@ exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3107'
-ht-degree: 100%
-
+source-wordcount: '3109'
+ht-degree: 99%
 ---
-
 # Verwaltung von Benutzenden, Gruppen und Zugriffsrechten{#user-group-and-access-rights-administration}
 
 Die Aktivierung des Zugriffs auf ein CRX-Repository umfasst verschiedene Themen:
@@ -60,7 +58,7 @@ CRX ermöglicht es Ihnen, die Zugriffsrechte für Benutzer- und Gruppenkonten zu
 
 >[!NOTE]
 >
->In CRX wird die [Zugriffssteuerung gemäß der Definition in JSR-283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) implementiert.
+>In CRX wird die [Zugriffssteuerung gemäß der Definition in JSR-283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html) implementiert.
 >
 >Die Standardinstallation eines CRX-Repositorys ist so konfiguriert, dass sie die ressourcenbasierten Zugriffssteuerungslisten verwendet. Dies ist eine mögliche Implementierung der Zugriffssteuerung nach JSR-283 und einer der Implementierungen, die mit Jackrabbit vorhanden sind.
 
@@ -70,22 +68,22 @@ CRX verwendet zwei Hauptkonzepte zur Bewertung der Zugriffsrechte:
 
 * Ein **Prinzipal** ist eine Entität, die Zugriffsrechte besitzt. Zu den Prinzipalen gehören:
 
-   * Ein Benutzerkonto
-   * Ein Gruppenkonto
+  * Ein Benutzerkonto
+  * Ein Gruppenkonto
 
-     Wenn ein Benutzerkonto zu einer oder mehreren Gruppen gehört, ist es auch mit jedem dieser Gruppenprinzipale verknüpft.
+    Wenn ein Benutzerkonto zu einer oder mehreren Gruppen gehört, ist es auch mit jedem dieser Gruppenprinzipale verknüpft.
 
 * Ein **Objekt** repräsentiert die Quelle einer Anfrage.
 
   Es dient zur Konsolidierung der für diese Anfrage relevanten Zugriffsrechte. Diese stammen von:
 
-   * dem Benutzerprinzipal
+  * dem Benutzerprinzipal
 
-     den Rechten, die Sie dem Benutzerkonto direkt zuweisen
+    den Rechten, die Sie dem Benutzerkonto direkt zuweisen
 
-   * allen mit diesem Benutzer verknüpften Gruppenprinzipalen
+  * allen mit diesem Benutzer verknüpften Gruppenprinzipalen
 
-     sowie allen Rechten, die Sie jeder der Gruppen zugewiesen haben, zu denen die bzw. der Benutzende gehört
+    sowie allen Rechten, die Sie jeder der Gruppen zugewiesen haben, zu denen die bzw. der Benutzende gehört
 
   Das Ergebnis wird dann verwendet, um den Zugriff auf die angeforderte Ressource zu erlauben oder zu verweigern.
 
@@ -124,8 +122,8 @@ Zugriffsberechtigungen in CRX werden wie folgt bewertet:
 
 * Benutzerprinzipale haben immer Vorrang vor Gruppenprinzipalen, unabhängig von:
 
-   * ihrer Reihenfolge in der Zugriffsteuerungsliste
-   * ihrer Position in der Knotenhierarchie
+  * ihrer Reihenfolge in der Zugriffsteuerungsliste
+  * ihrer Position in der Knotenhierarchie
 
 * Bei einem gegebenen Prinzipal ist (maximal) 1 Ablehnungs- und 1 Zulassungseintrag in einem gegebenen Knoten vorhanden. Die Implementierung löscht immer redundante Einträge und stellt sicher, dass dieselbe Berechtigung nicht sowohl in den Zulassungs- als auch in den Ablehnungseinträgen aufgeführt wird.
 
@@ -491,7 +489,7 @@ Sie können Richtlinien für Folgendes auswählen:
 
 ### Berechtigungen {#privileges}
 
-Die folgenden Berechtigungen können beim Hinzufügen eines Zugangssteuerungseintrags ausgewählt werden (umfassende Details finden Sie in [Sicherheits-API](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html)).
+Die folgenden Berechtigungen können beim Hinzufügen eines Zugangssteuerungseintrags ausgewählt werden (umfassende Details finden Sie in [Sicherheits-API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html)).
 
 <table>
  <tbody>

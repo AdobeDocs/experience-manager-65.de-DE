@@ -9,13 +9,11 @@ exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2381'
-ht-degree: 93%
-
+source-wordcount: '2385'
+ht-degree: 92%
 ---
-
 # Query Builder-Prädikatsreferenz{#query-builder-predicate-reference}
 
 >[!CAUTION]
@@ -229,7 +227,7 @@ Dies ist konzeptionell `fulltext AND ( (path AND type) OR (path AND type) )`. So
 
 ### hasPermission {#haspermission}
 
-Beschränkt das Ergebnis auf Elemente, bei denen die aktuelle Sitzung die angegebenen [JCR-Privilegien](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) aufweist.
+Beschränkt das Ergebnis auf Elemente, bei denen die aktuelle Sitzung die angegebenen [JCR-Privilegien](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) aufweist.
 
 Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen. Facettenextraktion wird nicht unterstützt.
 
@@ -269,7 +267,7 @@ Es unterstützt die Facettenextraktion und bietet zwei Buckets für Haupt- und U
 
 ### memberOf {#memberof}
 
-Sucht Objekte, die Mitglieder einer bestimmten [Sling-Ressourcensammlung](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) sind.
+Sucht Objekte, die Mitglieder einer bestimmten [Sling-Ressourcensammlung](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) sind.
 
 Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen. Facettenextraktion wird nicht unterstützt.
 
@@ -381,7 +379,7 @@ Unterstützt die Facettenextraktion. Stellt für jeden eindeutigen Eigenschaftsw
 
 * **depth**
 
-  Anzahl der Platzhalterebenen, unter denen die Eigenschaft/der relative Pfad vorhanden sein kann (z. B. `property=size depth=2` überprüft Knoten/Größe, Knoten/&ast;/Größe und Knoten/&ast;/&ast;/Größe).
+  Anzahl der Platzhalterebenen, unter denen die Eigenschaft/der relative Pfad vorhanden sein kann (z. B. `property=size depth=2` überprüft Knoten/Größe, Knoten/&amp;ast;/Größe und Knoten/&amp;ast;/&amp;ast;/Größe).
 
 ### rangeproperty {#rangeproperty}
 
@@ -473,17 +471,17 @@ Der Name „root“ wird in Abfragen nie verwendet, er ist implizit.
 
   (nur für das JSON-Servlet) Legt fest, wie Treffer als JSON geschrieben werden. Folgende Standardmethoden stehen zur Auswahl (erweiterbar über den Dienst „ResultHitWriter“):
 
-   * **einfach**:
+  * **einfach**:
 
-     Minimale Elemente wie `path`, `title`, `lastmodified`, `excerpt` (falls festgelegt).
+    Minimale Elemente wie `path`, `title`, `lastmodified`, `excerpt` (falls festgelegt).
 
-   * **vollständig**:
+  * **vollständig**:
 
-     Sling-JSON-Rendern des Knotens, wobei `jcr:path` den Pfad des Treffers anzeigt: Standardmäßig werden nur die direkten Eigenschaften des Knotens aufgeführt, weiter unten befindliche Unterstrukturen werden mit `p.nodedepth=N` eingeschlossen, wobei 0 die vollständige Unterstruktur bedeutet. Fügen Sie `p.acls=true` hinzu, um die JCR-Berechtigungen der aktuellen Sitzung für das jeweilige Ergebniselement einzuschließen (Zuordnungen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+    Sling-JSON-Rendern des Knotens, wobei `jcr:path` den Pfad des Treffers anzeigt: Standardmäßig werden nur die direkten Eigenschaften des Knotens aufgeführt, weiter unten befindliche Unterstrukturen werden mit `p.nodedepth=N` eingeschlossen, wobei 0 die vollständige Unterstruktur bedeutet. Fügen Sie `p.acls=true` hinzu, um die JCR-Berechtigungen der aktuellen Sitzung für das jeweilige Ergebniselement einzuschließen (Zuordnungen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
 
-   * **selective**:
+  * **selective**:
 
-     Nur in `p.properties` angegebene Eigenschaften. Dabei handelt es sich um eine mit Leerzeichen getrennte (verwenden Sie &quot;+&quot; in URLs) Liste relativer Pfade. Wenn der relative Pfad eine Tiefe >1 aufweist, werden sie als untergeordnete Elemente angezeigt. Die spezielle jcr:path-Eigenschaft umfasst den Pfad des Treffers.
+    Nur in `p.properties` angegebene Eigenschaften. Dabei handelt es sich um eine mit Leerzeichen getrennte (verwenden Sie &quot;+&quot; in URLs) Liste relativer Pfade. Wenn der relative Pfad eine Tiefe >1 aufweist, werden sie als untergeordnete Elemente angezeigt. Die spezielle jcr:path-Eigenschaft umfasst den Pfad des Treffers.
 
 ### savedquery {#savedquery}
 

@@ -11,13 +11,11 @@ exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 97%
-
+source-wordcount: '785'
+ht-degree: 92%
 ---
-
 # Erstellen von Gerätegruppenfiltern{#creating-device-group-filters}
 
 {{ue-over-mobile}}
@@ -30,7 +28,7 @@ Nachdem Sie einen Filter erstellt haben, können Sie ihn in der [Gruppenkonfigur
 
 ## Die Filter-Java™-Klasse {#the-filter-java-class}
 
-Ein Gerätegruppenfilter ist eine OSGi-Komponente, die die Schnittstelle [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) implementiert. Bei der Bereitstellung stellt die Implementierungsklasse einen Filterdienst bereit, der für Gerätegruppenkonfigurationen verfügbar ist.
+Ein Gerätegruppenfilter ist eine OSGi-Komponente, die die Schnittstelle [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) implementiert. Bei der Bereitstellung stellt die Implementierungsklasse einen Filterdienst bereit, der für Gerätegruppenkonfigurationen verfügbar ist.
 
 Die in diesem Artikel beschriebene Lösung verwendet das Apache Felix Maven-SCR-Plug-in, um die Entwicklung von Komponenten und Diensten zu erleichtern. Daher verwendet die Beispiel-Java™-Klasse die `@Component`- und `@Service`-Anmerkungen. Die Klasse hat die folgende Struktur:
 
@@ -94,7 +92,7 @@ Die Funktion `matches` gibt `true` zurück, wenn die Gerätefunktionen alle Filt
 * Der Name des Benutzeragenten
 * Ein Map-Objekt, das die Gerätefunktionen enthält. Die Zuordnungsschlüssel sind die Namen der WURFL™-Funktionalität, und die Werte sind die entsprechenden Werte aus der WURFL™-Datenbank.
 
-Die Schnittstelle[&#x200B; com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) enthält eine Teilmenge der WURFL™ -Fähigkeitsnamen in statischen Feldern. Verwenden Sie diese Feldkonstanten als Schlüssel beim Abrufen von Werten aus der Karte der Gerätefunktionen.
+Die Schnittstelle[ com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) enthält eine Teilmenge der WURFL™ -Fähigkeitsnamen in statischen Feldern. Verwenden Sie diese Feldkonstanten als Schlüssel beim Abrufen von Werten aus der Karte der Gerätefunktionen.
 
 Zum Beispiel bestimmt das folgende Codebeispiel, ob das Gerät CSS unterstützt:
 
@@ -177,7 +175,7 @@ Der folgende POM-Code ist nützlich, wenn Sie Maven zum Erstellen Ihrer Anwendun
 **Plug-ins:**
 
 * Apache Maven Compiler-Plug-in: Kompiliert Java™-Klassen aus dem Quell-Code.
-* Apache Felix Maven Bundle-Plug-in: Erstellt das Bundle und das Manifest.
+* Apache Felix Maven Bundle-Plug-in: Erstellt das Paket und das Manifest.
 * Apache Felix Maven SCR-Plug-in: Erstellt die Komponentendeskriptordatei und konfiguriert den Manifest-Header der Dienstkomponente.
 
 **Abhängigkeiten:**
@@ -186,9 +184,9 @@ Der folgende POM-Code ist nützlich, wenn Sie Maven zum Erstellen Ihrer Anwendun
 
 * `org.apache.felix.scr.annotations.jar`: Stellt die Anmerkungen zu Komponenten und Diensten bereit.
 
-Die DeviceGroup- und DeviceGroupFilter-Schnittstellen sind im Day Communique 5 WCM Mobile API-Bundle enthalten. Die Felix-Anmerkungen sind im Bundle Apache Felix Declarative Services enthalten. Sie können diese JAR-Datei über das öffentliche Adobe-Repository beziehen.
+Die DeviceGroup- und DeviceGroupFilter-Schnittstellen sind im Day Communique 5 WCM Mobile API-Paket enthalten. Die Felix-Anmerkungen sind im Paket Apache Felix Declarative Services enthalten. Sie können diese JAR-Datei über das öffentliche Adobe-Repository beziehen.
 
-Zum Zeitpunkt der Erstellung ist 5.5.2 die Version des WCM Mobile API-Bundles, das in der neuesten Version von AEM enthalten ist. Verwenden Sie die Adobe-Web-Konsole ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)), um sicherzustellen, dass es sich um die Bundle-Version handelt, die in Ihrer Umgebung bereitgestellt wird.
+Zum Zeitpunkt der Erstellung ist 5.5.2 die Version des WCM Mobile API-Pakets, das in der neuesten Version von AEM enthalten ist. Verwenden Sie die Adobe-Web-Konsole ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)), um sicherzustellen, dass es sich um die Paketversion handelt, die in Ihrer Umgebung bereitgestellt wird.
 
 **POM:** (Ihr POM verwendet eine andere Gruppen-ID und Version.)
 

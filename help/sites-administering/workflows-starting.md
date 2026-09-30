@@ -9,25 +9,23 @@ exl-id: 84a1964c-4121-4763-b946-9eee6093747d
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 100%
-
+source-wordcount: '821'
+ht-degree: 95%
 ---
-
 # Starten von Workflows{#starting-workflows}
 
 Bei der Verwaltung von Workflows können Sie diese mit verschiedenen Methoden starten:
 
 * Manuell:
 
-   * Von einem [Workflow-Modell](#workflow-models) ausgehend
-   * Mithilfe eines Workflow-Pakets für die [Stapelverarbeitung](#workflow-packages-for-batch-processing).
+  * Von einem [Workflow-Modell](#workflow-models) ausgehend
+  * Mithilfe eines Workflow-Pakets für die [Stapelverarbeitung](#workflow-packages-for-batch-processing).
 
 * Automatisch:
 
-   * Als Reaktion auf Knotenänderungen; [mithilfe eines Starters](#workflows-launchers).
+  * Als Reaktion auf Knotenänderungen; [mithilfe eines Starters](#workflows-launchers).
 
 >[!NOTE]
 >
@@ -65,7 +63,7 @@ Ein Starter kann für jeden Knoten erstellt werden. Durch Änderungen an bestimm
 * `/var/mobile`
 * `/var/statistics`
 
-   * Ausnahme: Bei Änderungen an Knoten unter `/var/statistics/tracking` *werden* Workflows gestartet.
+  * Ausnahme: Bei Änderungen an Knoten unter `/var/statistics/tracking` *werden* Workflows gestartet.
 
 Die Standardinstallation umfasst verschiedene Definitionen. Diese werden für das Digital Asset Management- und Social Collaboration-Aufgaben verwendet:
 
@@ -122,9 +120,9 @@ Ein Workflow-Paket:
 
      Der Ereignistyp, der den Workflow startet:
 
-      * Erstellt
-      * Geändert
-      * Entfernt
+     * Erstellt
+     * Geändert
+     * Entfernt
 
    * **Knotentyp**
 
@@ -164,8 +162,8 @@ Ein Workflow-Paket:
 
      Kontrolliert, ob der Workflow-Starter aktiviert wird:
 
-      * Wählen Sie **Aktivieren**, um Workflows zu starten, wenn die Konfigurationseigenschaften erfüllt sind.
-      * Wählen Sie **Deaktivieren**, wenn der Workflow nicht ausgeführt werden soll (selbst dann nicht, wenn die Konfigurationseigenschaften erfüllt sind).
+     * Wählen Sie **Aktivieren**, um Workflows zu starten, wenn die Konfigurationseigenschaften erfüllt sind.
+     * Wählen Sie **Deaktivieren**, wenn der Workflow nicht ausgeführt werden soll (selbst dann nicht, wenn die Konfigurationseigenschaften erfüllt sind).
 
    * **Liste ausschließen**
 
@@ -173,8 +171,8 @@ Ein Workflow-Paket:
 
      Bei dieser Starter-Eigenschaft handelt es sich um eine Reihe von kommagetrennten Elementen:
 
-      * `property-name` ignoriert alle `jcr`-Ereignisse, die bei dem festgelegten Eigenschaftsnamen ausgelöst werden. 
-      * `event-user-data:<*someValue*>` ignoriert jedes Ereignis, das die über die [`ObservationManager`-API] festgelegten `*<someValue*`> `user-data` enthält (https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+     * `property-name` ignoriert alle `jcr`, die beim angegebenen Eigenschaftsnamen ausgelöst werden. ``
+     * `event-user-data:<*someValue*>` ignoriert jedes Ereignis, das die über die [`ObservationManager`-API festgelegten `*<someValue*`>-`user-data` enthält](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Beispiel:
 

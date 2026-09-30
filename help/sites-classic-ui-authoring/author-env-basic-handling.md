@@ -9,13 +9,11 @@ exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 100%
-
+source-wordcount: '1189'
+ht-degree: 93%
 ---
-
 # Grundlegende Handhabung{#basic-handling}
 
 >[!NOTE]
@@ -36,7 +34,7 @@ Nach der Anmeldung wird der Begrüßungsbildschirm angezeigt. Er enthält eine L
 
 ## Konsolen {#consoles}
 
-Die Hauptkonsolen sind: 
+Die Hauptkonsolen sind:
 
 <table>
  <tbody>
@@ -54,7 +52,7 @@ Die Hauptkonsolen sind:
   </tr>
   <tr>
    <td><strong>Launches</strong></td>
-   <td>Hier können Sie Ihre <a href="/help/sites-classic-ui-authoring/classic-launches.md">Launches</a> verwalten. Damit können Sie Inhalte für eine künftige Version einer oder mehrerer aktivierter Webseiten entwickeln.<br /> <i>Hinweis: In der Touch-optimierten Benutzeroberfläche sind die meisten der Funktionen in der Sites-Konsole verfügbar ebenso wie die Leiste „Verweise“.</i> <i>Bei Bedarf ist diese Konsole über die Tools-Konsole verfügbar. Wählen Sie dazu „Vorgänge“ und dann „Launches“ aus.</i></td>
+   <td>Hier können Sie Ihre <a href="/help/sites-classic-ui-authoring/classic-launches.md">Launches</a> verwalten. Damit können Sie Inhalte für eine künftige Version einer oder mehrerer aktivierter Web-Seiten entwickeln.<br /> <i>Hinweis: In der Touch-optimierten Benutzeroberfläche sind die meisten der Funktionen in der Sites-Konsole verfügbar ebenso wie die Leiste „Verweise“.</i> <i>Bei Bedarf ist diese Konsole über die Konsole „Tools“ verfügbar. Wählen Sie „Vorgänge“ gefolgt von „Launches“.</i></td>
   </tr>
   <tr>
    <td><strong>Posteingang </strong></td>
@@ -117,10 +115,10 @@ Die Konsole **Websites** listet Ihre Inhaltsseiten in einer Baumstruktur auf (li
 
 * Durch Klicken auf den Seitennamen im linken Bereich wird Folgendes ausgeführt:
 
-   * Die untergeordneten Seiten werden im rechten Bereich angezeigt.
-   * Die Struktur wird im linken Bereich erweitert.
+  * Die untergeordneten Seiten werden im rechten Bereich angezeigt.
+  * Die Struktur wird im linken Bereich erweitert.
 
-     Aus Leistungsgründen hängt diese Aktion von der Anzahl der untergeordneten Knoten ab. Bei einer Standardinstallation wird die Baumstruktur eingeblendet, wenn höchstens `30` untergeordnete Knoten vorhanden sind.
+    Aus Leistungsgründen hängt diese Aktion von der Anzahl der untergeordneten Knoten ab. Bei einer Standardinstallation wird die Baumstruktur eingeblendet, wenn höchstens `30` untergeordnete Knoten vorhanden sind.
 
 * Durch Doppelklicken auf den Seitennamen (linker Bereich) wird die Baumstruktur eingeblendet, wobei dieser Effekt durch das gleichzeitige Öffnen der Seite nicht so offensichtlich ist.
 
@@ -141,7 +139,7 @@ Die Konsole **Websites** listet Ihre Inhaltsseiten in einer Baumstruktur auf (li
 >in:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->Weitere Details finden Sie unter [SiteAdmin in der CQ Widget-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin).
+>Weitere Details finden Sie unter [SiteAdmin in der CQ Widget-API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin).
 
 ## Seiteninformationen in der Konsole „Websites“ {#page-information-on-the-websites-console}
 
@@ -218,7 +216,7 @@ Die Farben neben den Seiten in den Spalten **Veröffentlicht** und **Geändert**
 |---|---|---|
 | Veröffentlicht | Grün | Die Veröffentlichung war erfolgreich. Der Inhalt wird veröffentlicht. |
 | Veröffentlicht | Gelb | Die Veröffentlichung steht aus. Die Bestätigung der Veröffentlichung ist noch nicht im System eingegangen. |
-| Veröffentlicht | Rot | Veröffentlichung fehlgeschlagen. Es besteht keine Verbindung zur Publishing-Instanz. Dies kann auch bedeuten, dass der Inhalt deaktiviert wurde. |
+| Veröffentlicht | Rot | Veröffentlichung fehlgeschlagen. Es besteht keine Verbindung zur Veröffentlichungsinstanz. Dies kann auch bedeuten, dass der Inhalt deaktiviert wurde. |
 | Veröffentlicht | *blank* | Diese Seite wurde noch nie veröffentlicht. |
 | Geändert | Blau | Die Seite wurde seit der letzten Veröffentlichung geändert. |
 | Geändert | *blank* | Diese Seite wurde noch nie geändert, auch nicht seit der letzten Veröffentlichung. |

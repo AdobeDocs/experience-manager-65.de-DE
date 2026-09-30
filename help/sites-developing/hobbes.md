@@ -1,22 +1,22 @@
 ---
 title: Testen der Benutzeroberfläche
 description: AEM bietet ein Framework für die Automatisierung von Tests für Ihre AEM-Benutzeroberfläche
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components, testing
+
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 100%
-
+source-wordcount: '795'
+ht-degree: 96%
 ---
-
 # Testen der Benutzeroberfläche{#testing-your-ui}
 
 >[!NOTE]
@@ -31,7 +31,7 @@ Das AEM-Test-Framework nutzt Hobbes.js, eine Testbibliothek, die in JavaScript g
 
 >[!NOTE]
 >
->Detaillierte Angaben zur API finden Sie in der [Dokumentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) zu Hobbes.js.
+>Detaillierte Angaben zur API finden Sie in der [Dokumentation](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html) zu Hobbes.js.
 
 ## Struktur von Tests {#structure-of-tests}
 
@@ -60,7 +60,7 @@ Beim Öffnen der Konsole werden die Test-Suites auf der linken Seite aufgeführt
 
 Testsuiten können einzeln ausgeführt werden. Wenn Sie eine Test-Suite ausführen, ändert sich die Seite, während die Testfälle und ihre Aktionen ausgeführt werden. Die Ergebnisse werden nach Abschluss des Tests angezeigt. Die Ergebnisse werden durch Symbole gekennzeichnet.
 
-Das Häkchen-Symbol kennzeichnet einen erfolgreichen Test: 
+Das Häkchen-Symbol kennzeichnet einen erfolgreichen Test:
 
 ![Häkchensymbol.](do-not-localize/chlimage_1-2.png)
 
@@ -104,7 +104,7 @@ Test-Suites werden nacheinander in der Reihenfolge ausgeführt, in der sie in de
 
 Die folgenden Schritte erläutern die Erstellung und Ausführung einer Test-Suite mit [We.Retail-Inhalten](/help/sites-developing/we-retail.md). Sie können den Test jedoch auch einfach für eine andere Web-Seite anpassen.
 
-Vollständige Informationen zum Erstellen eigener Test-Suites finden Sie in der [Dokumentation zur Hobbes.js-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
+Vollständige Informationen zum Erstellen eigener Test-Suites finden Sie in der [Dokumentation zur Hobbes.js-API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html).
 
 1. Öffnen Sie CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Klicken Sie mit der rechten Maustaste auf den Ordner `/etc/clientlibs` und klicken Sie auf **Erstellen > Ordner erstellen**. Geben Sie als Namen `myTests` ein und klicken Sie auf **OK**.

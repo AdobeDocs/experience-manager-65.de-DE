@@ -10,13 +10,11 @@ exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2238'
-ht-degree: 97%
-
+source-wordcount: '2240'
+ht-degree: 96%
 ---
-
 # Konzepte der Touch-optimierten Benutzeroberfläche von Adobe Experience Manager{#concepts-of-the-aem-touch-enabled-ui}
 
 Adobe Experience Manager (AEM) bietet eine Touch-optimierte Benutzeroberfläche mit [responsivem Design](/help/sites-authoring/responsive-layout.md) für die Autorenumgebung, die sowohl für Touch- als auch für Desktop-Geräte entwickelt wurde.
@@ -28,24 +26,24 @@ Adobe Experience Manager (AEM) bietet eine Touch-optimierte Benutzeroberfläche 
 Die Touch-optimierte Benutzeroberfläche umfasst Folgendes:
 
 * Suite-Kopfzeile:
-   * Zeigt das Logo an.
-   * Enthält einen Link zu „Globale Navigation“.
-   * Enthält einen Link zu anderen allgemeinen Aktionen, z. B. „Suchen“, „Hilfe“, „Experience Cloud-Lösungen“, „Benachrichtigungen“ und „Benutzereinstellungen“.
+  * Zeigt das Logo an.
+  * Enthält einen Link zu „Globale Navigation“.
+  * Enthält einen Link zu anderen allgemeinen Aktionen, z. B. „Suchen“, „Hilfe“, „Experience Cloud-Lösungen“, „Benachrichtigungen“ und „Benutzereinstellungen“.
 * Leiste auf der linken Seite (Anzeige bei Bedarf, kann ausgeblendet werden):
-   * Timeline
-   * Verweise
-   * Filter
+  * Timeline
+  * Verweise
+  * Filter
 * Kontextabhängige Navigationskopfzeile:
-   * Anzeige, welche Konsole Sie derzeit verwenden, bzw. Ihrer Position in der Konsole
-   * Auswahl für die Leiste auf der linken Seite
-   * Breadcrumb
-   * Zugriff auf geeignete Aktionen vom Typ **Erstellen**
-   * Anzeige der Auswahl
+  * Anzeige, welche Konsole Sie derzeit verwenden, bzw. Ihrer Position in der Konsole
+  * Auswahl für die Leiste auf der linken Seite
+  * Breadcrumb
+  * Zugriff auf geeignete Aktionen vom Typ **Erstellen**
+  * Anzeige der Auswahl
 * Inhaltsbereich:
-   * Auflistung der Inhaltselemente (Seiten, Assets, Foren-Posts usw.)
-   * Formatierung nach Wunsch, z. B. Spalte, Karte oder Liste
-   * Nutzung eines responsiven Designs (Größe der Anzeige wird je nach Gerät bzw. Fenstergröße automatisch angepasst)
-   * Unendliches Scrollen (keine Paginierung mehr, alle Elemente in einem Fenster)
+  * Auflistung der Inhaltselemente (Seiten, Assets, Foren-Posts usw.)
+  * Formatierung nach Wunsch, z. B. Spalte, Karte oder Liste
+  * Nutzung eines responsiven Designs (Größe der Anzeige wird je nach Gerät bzw. Fenstergröße automatisch angepasst)
+  * Unendliches Scrollen (keine Paginierung mehr, alle Elemente in einem Fenster)
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -200,7 +198,7 @@ Die Unterschiede zwischen der Granite-Benutzeroberfläche und ExtJS (für die kl
 
 ### Foundation-Komponenten der Granite-Benutzeroberfläche {#granite-ui-foundation-components}
 
-Mit den [Foundation-Komponenten der Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) werden die grundlegenden Bausteine bereitgestellt, die für die Erstellung einer Benutzeroberfläche benötigt werden, z. B.:
+Mit den [Foundation-Komponenten der Granite-Benutzeroberfläche](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) werden die grundlegenden Bausteine bereitgestellt, die für die Erstellung einer Benutzeroberfläche benötigt werden, z. B.:
 
 * Schaltfläche
 * Hyperlink
@@ -245,19 +243,19 @@ Die folgende Liste enthält eine nützliche Übersicht über ExtJS-xtype und -Kn
 | `pathfield, paragraphreference` | `granite/ui/components/foundation/form/pathbrowser` |
 | `selection` | `granite/ui/components/foundation/form/select` |
 | `sizefield` | `cq/gui/components/authoring/dialog/sizefield` |
-| `tags` | `granite/ui/components/foundation/form/autocomplete`&#x200B;`cq/gui/components/common/datasources/tags` |
+| `tags` | `granite/ui/components/foundation/form/autocomplete``cq/gui/components/common/datasources/tags` |
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
 | **Knotentyp** | **Ressourcentyp der Granite-Benutzeroberfläche** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
-| `cq:TabPanel` | `granite/ui/components/foundation/container`&#x200B;`granite/ui/components/foundation/layouts/tabs` |
+| `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
 ### Granite-Benutzeroberfläche – Verwaltungskomponenten {#granite-ui-administration-components}
 
-Die [Administrationskomponenten der Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) stellen die Foundation-Komponenten für die Bereitstellung von generischen Bausteinen dar, die von allen Administrationsanwendungen implementiert werden können. Dazu zählen u. a.:
+Die [Administrationskomponenten der Granite-Benutzeroberfläche](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) stellen die Foundation-Komponenten für die Bereitstellung von generischen Bausteinen dar, die von allen Administrationsanwendungen implementiert werden können. Dazu zählen u. a.:
 
 * Globale Navigationsleiste
 * Leiste (Skelett)

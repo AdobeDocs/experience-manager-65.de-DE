@@ -1,26 +1,28 @@
 ---
 title: Einbinden von Tagging in eine AEM-Anwendung
+
 description: Programmgesteuert mit Tags oder erweiterten Tags innerhalb einer benutzerdefinierten AEM-Anwendung arbeiten
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
+
 feature: Developing,Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 100%
-
+source-wordcount: '936'
+ht-degree: 88%
 ---
-
 # Einbinden von Tagging in eine AEM-Anwendung{#building-tagging-into-an-aem-application}
 
 Für das programmatische Arbeiten mit Tags oder das Erweitern von Tags in einem benutzerdefinierten AEM-Programm wird in diesem Dokument die Verwendung der
 
-* [Tagging-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/tagging/package-summary.html),
+* [Tagging-API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/tagging/package-summary.html)
 
 die mit dem
 
@@ -33,7 +35,7 @@ Weitere Informationen zum Tagging finden Sie unter:
 
 ## Übersicht über die Tagging-API {#overview-of-the-tagging-api}
 
-Die Implementierung des [Tagging-Frameworks](/help/sites-developing/framework.md) in AEM ermöglicht die Verwaltung von Tags und Tag-Inhalten mithilfe der JCR-API. Der TagManager stellt sicher, dass Tags, die als Werte in der Zeichenfolgen-Array-Eigenschaft `cq:tags` eingegeben wurden, nicht dupliziert werden. Er entfernt TagIDs, die auf nicht vorhandene Tags verweisen, und aktualisiert TagIDs für verschobene oder zusammengefügte Tags. TagManager verwendet einen JCR Observation Listener, der alle falschen Änderungen zurücksetzt. Die wichtigsten Klassen befinden sich im Paket [com.day.cq.tagging](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html):
+Die Implementierung des [Tagging-Frameworks](/help/sites-developing/framework.md) in AEM ermöglicht die Verwaltung von Tags und Tag-Inhalten mithilfe der JCR-API. Der TagManager stellt sicher, dass Tags, die als Werte in der Zeichenfolgen-Array-Eigenschaft `cq:tags` eingegeben wurden, nicht dupliziert werden. Er entfernt TagIDs, die auf nicht vorhandene Tags verweisen, und aktualisiert TagIDs für verschobene oder zusammengeführte Tags. TagManager verwendet einen JCR Observation Listener, der alle falschen Änderungen zurücksetzt. Die wichtigsten Klassen befinden sich im Paket [com.day.cq.tagging](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html):
 
 * JcrTagManagerFactory – gibt eine JCR-basierte Implementierung eines `TagManager` zurück. Es ist die Referenzimplementierung der Tagging-API.
 * `TagManager` – ermöglicht das Auflösen und Erstellen von Tags nach Pfaden und Namen.
@@ -152,35 +154,35 @@ Die Tag-Suche und die Tag-Auflistung funktionieren folgendermaßen:
 
 Wie in der Dokumentation zur Verwaltung von Tags im Abschnitt [Verwalten von Tags in verschiedenen Sprachen](/help/sites-administering/tags.md#managing-tags-in-different-languages) beschrieben, kann ein Tag-`title` in verschiedenen Sprachen definiert werden. Eine sprachempfindliche Eigenschaft wird dann dem Tag-Knoten hinzugefügt. Diese Eigenschaft weist das Format `jcr:title.<locale>` auf, beispielsweise `jcr:title.fr` für die französische Übersetzung. `<locale>` muss eine ISO-Gebietsschema-Zeichenfolge in Kleinbuchstaben sein und „_“ anstelle von „-“ enthalten, z. B. `de_ch`.
 
-Wenn das Tag **Animals** zur **Produktseite** hinzugefügt wird, wird der Wert `stockphotography:animals` zur Eigenschaft `cq:tags` des Knotens „/content/geometrixx/de/products/jcr:content“ hinzugefügt. Die Übersetzung wird vom Tag-Knoten referenziert.
+Wenn das **Animals**-Tag zur Seite **Products** hinzugefügt wird, wird der `stockphotography:animals` zur `cq:tags` des Knotens &quot;/content/geometrixx/de/products/jcr“ :content. Die Übersetzung wird vom Tag-Knoten referenziert.
 
 Die Server-seitige API verfügt über lokalisierte `title`-bezogene Methoden:
 
-* [com.day.cq.tagging.Tag](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
+* [com.day.cq.tagging.Tag](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
 
-   * getLocalizedTitle(Locale locale)
-   * getLocalizedTitlePaths()
-   * getLocalizedTitles()
-   * getTitle(Locale locale)
-   * getTitlePath(Locale locale)
+  * getLocalizedTitle(Locale locale)
+  * getLocalizedTitlePaths()
+  * getLocalizedTitles()
+  * getTitle(Locale locale)
+  * getTitlePath(Locale locale)
 
-* [com.day.cq.tagging.TagManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
+* [com.day.cq.tagging.TagManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
 
-   * canCreateTagByTitle(String tagTitlePath, Locale locale)
-   * createTagByTitle(String tagTitlePath, Locale locale)
-   * resolveByTitle(String tagTitlePath, Locale locale)
+  * canCreateTagByTitle(String tagTitlePath, Locale locale)
+  * createTagByTitle(String tagTitlePath, Locale locale)
+  * resolveByTitle(String tagTitlePath, Locale locale)
 
 In AEM kann die Sprache entweder aus der Seitensprache oder aus der Benutzersprache abgerufen werden:
 
 * So rufen Sie die Seitensprache in einer JSP ab:
 
-   * `currentPage.getLanguage(false)`
+  * `currentPage.getLanguage(false)`
 
 * So rufen Sie die Benutzersprache in einer JSP ab:
 
-   * `slingRequest.getLocale()`
+  * `slingRequest.getLocale()`
 
-`currentPage` und `slingRequest` sind in einer JSP über das Tag [&lt;cq:definedObjects>](/help/sites-developing/taglib.md) verfügbar.
+`currentPage` und `slingRequest` sind in einer JSP über das Tag [&lt;cq:definedObjects](/help/sites-developing/taglib.md) verfügbar.
 
 Beim Tagging hängt die Lokalisierung vom Kontext ab, da das Tag `titles` in der Seitensprache, in der Anwendersprache oder in jeder anderen Sprache angezeigt werden kann.
 

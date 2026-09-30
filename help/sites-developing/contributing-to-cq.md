@@ -9,13 +9,11 @@ exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2739'
 ht-degree: 99%
-
 ---
-
 # Beitragen zu AEM{#contributing-to-aem}
 
 ## Entwicklungsmethodik {#development-methodology}
@@ -44,7 +42,7 @@ Auf der höchsten Ebene sollten Sie über ein solides Verständnis folgender The
 * Browser-Cookies
 * und andere moderne Web-Entwicklungskonzepte
 
-Der Technologie-Stack von Adobe Experience Manager basiert auf dem [Apache Felix](https://felix.apache.org/documentation/index.html)-OSGI-Container mit dem [Apache Sling](https://sling.apache.org/index.html)-Web-Framework und bettet ein Java™ Content-Repository ([JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)) basierend auf [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html) ein. Machen Sie sich mit diesen einzelnen Projekten sowie mit anderen Open Source-Komponenten (zum Beispiel Apache Lucene) vertraut, die in dem Bereich verwendet werden, in dem Sie Beiträge leisten möchten.
+Der Technologie-Stack von Adobe Experience Manager basiert auf dem [Apache Felix](https://felix.apache.org/documentation/index.html)-OSGI-Container mit dem [Apache Sling](https://sling.apache.org/index.html)-Web-Framework und bettet ein Java™ Content-Repository ([JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)) basierend auf [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html) ein. Machen Sie sich mit diesen einzelnen Projekten sowie mit anderen Open Source-Komponenten (zum Beispiel Apache Lucene) vertraut, die in dem Bereich verwendet werden, in dem Sie Beiträge leisten möchten.
 
 ## Tribal-Kenntnisse {#tribal-knowledge}
 
@@ -148,7 +146,7 @@ Bevor Sie versuchen, die JavaDoc- oder die JCR-Spezifikation selbst zu lesen, so
 
 **Multi-Site Manager (MSM)**: Die MSM-Funktion von AEM unterstützt Kunden bei der Bearbeitung mehrsprachiger und multinationaler Inhalte und ermöglicht es ihnen, zentralisiertes Branding mit lokalisierten Inhalten in Einklang zu bringen.
 
-**OSGi**: OSGi ist die Service-basierte Runtime-Technologie, die die Basis für die modularisierte Java™-Entwicklung in AEM bietet. Es ist ein Framework, das nicht nur eine hochdynamische (und sichere) Classloading- und Execution-Umgebung für Coderessourcen (bekannt als Bundle) bietet, sondern auch volle Kontrolle über die Sichtbarkeit und den Lebenszyklus der verschiedenen Services, die von Bundles bereitgestellt werden. Eine Service-Registrierung stellt ein Kooperationsmodell für Bundles bereit, das Lebenszyklusdynamik (und Versionsanforderungen) berücksichtigt. OSGi löst viele der Probleme, die von Anwendungs-Servern gelöst werden sollten, jedoch auf leichte und hochdynamische Weise. So können beispielsweise Dienste direkt bereitgestellt werden (der neue Code wird sofort verfügbar, ohne den Server neu zu starten).
+**OSGi**: OSGi ist die Service-basierte Runtime-Technologie, die die Basis für die modularisierte Java™-Entwicklung in AEM bietet. Es ist ein Framework, das nicht nur eine hochdynamische (und sichere) Classloading- und Execution-Umgebung für Coderessourcen (bekannt als Paket) bietet, sondern auch volle Kontrolle über die Sichtbarkeit und den Lebenszyklus der verschiedenen Services, die von Paketen bereitgestellt werden. Eine Service-Registrierung stellt ein Kooperationsmodell für Pakete bereit, das Lebenszyklusdynamik (und Versionsanforderungen) berücksichtigt. OSGi löst viele der Probleme, die von Anwendungs-Servern gelöst werden sollten, jedoch auf leichte und hochdynamische Weise. So können beispielsweise Dienste direkt bereitgestellt werden (der neue Code wird sofort verfügbar, ohne den Server neu zu starten).
 
 **Parsys, Absatzsystem**: Das Absatzsystem (parsys) ist eine zusammengesetzte Komponente, die es Autoren ermöglicht, einer Seite Komponenten verschiedener Typen hinzuzufügen, und die andere Absatzkomponenten enthält. Jeder Absatztyp wird als eine Komponente dargestellt. Das Absatzsystem selbst ist ebenfalls eine Komponente, die die anderen Absatzkomponenten enthält.
 

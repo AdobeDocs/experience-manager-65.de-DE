@@ -10,13 +10,11 @@ exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '5464'
-ht-degree: 98%
-
+source-wordcount: '5471'
+ht-degree: 96%
 ---
-
 # Responsives Design für Web-Seiten{#responsive-design-for-web-pages}
 
 {{ue-over-mobile}}
@@ -506,7 +504,7 @@ Informationen zum Konfigurieren von AEM-Diensten finden Sie unter [Konfigurieren
 
 #### Implementierungsdetails {#implementation-details}
 
-Die Klasse `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` erweitert die Klasse [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html). Der Quell-Code von „AdaptiveImageComponentServlet“ befindet sich im Ordner `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl`.
+Die Klasse `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` erweitert die Klasse [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html). Der Quell-Code von „AdaptiveImageComponentServlet“ befindet sich im Ordner `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl`.
 
 Die Klasse verwendet Felix-SCR-Anmerkungen, um den Ressourcentyp und die Dateierweiterung zu konfigurieren, mit der das Servlet verknüpft ist, sowie den Namen des ersten Selektors.
 
@@ -539,11 +537,11 @@ Das Servlet verwendet die Eigenschaften-SCR-Anmerkung zum Festlegen der standard
             description = "List of widths this component is permitted to generate.")
 ```
 
-Die Klasse `AbstractImageServlet` stellt die Methode `doGet` zur Verfügung, die die HTTP-Anfrage verarbeitet. Diese Methode bestimmt die Ressource, die der Anfrage zugeordnet ist, ruft Ressourceneigenschaften aus dem Repository ab und gibt sie in einem [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html)-Objekt zurück.
+Die Klasse `AbstractImageServlet` stellt die Methode `doGet` zur Verfügung, die die HTTP-Anfrage verarbeitet. Diese Methode bestimmt die Ressource, die der Anfrage zugeordnet ist, ruft Ressourceneigenschaften aus dem Repository ab und gibt sie in einem [ImageContext](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html)-Objekt zurück.
 
 >[!NOTE]
 >
->Die Klasse [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) stellt die `getFileReference method` zur Verfügung, die den Wert der Eigenschaft `fileReference` der Ressource abruft.
+>Die Klasse [com.day.cq.commons.DownloadResource](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/DownloadResource.html) stellt die `getFileReference method` zur Verfügung, die den Wert der Eigenschaft `fileReference` der Ressource abruft.
 
 Die Klasse `AdaptiveImageComponentServlet` überschreibt die Methode `createLayer`. Die Methode ruft den Pfad der Bildressource und die angeforderte Bildbreite vom `ImageContext`-Objekt ab. Dann ruft sie die Methoden der Klasse `info.geometrixx.commons.impl.AdaptiveImageHelper` auf, die die tatsächliche Bildskalierung durchführen.
 
@@ -611,7 +609,7 @@ Verwenden Sie beim Bearbeiten einer Seite den **Sidekick** zum Angeben von Bilde
 
 #### Implementierungsdetails {#implementation-details-1}
 
-Die Klasse „info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet“ erweitert die Klasse [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html). Wenn Sie das Paket „cq-geometrixx-commons-pkg“ installiert haben, befindet sich der „ImageReferenceModificationServlet“-Quell-Code im Ordner `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets`.
+Die Klasse „info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet“ erweitert die Klasse [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html). Wenn Sie das Paket „cq-geometrixx-commons-pkg“ installiert haben, befindet sich der „ImageReferenceModificationServlet“-Quell-Code im Ordner `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets`.
 
 Die Klasse verwendet Felix-SCR-Anmerkungen, um den Ressourcentyp und die Dateierweiterung zu konfigurieren, mit der das Servlet verknüpft ist, sowie den Namen des ersten Selektors.
 
@@ -651,12 +649,12 @@ Das Servlet verwendet die Eigenschaften-SCR-Anmerkung zum Festlegen der standard
             description = "List of resolutions this component is permitted to generate.")
 ```
 
-Die Klasse `AbstractImageServlet` stellt die Methode `doGet` zur Verfügung, die die HTTP-Anfrage verarbeitet. Diese Methode bestimmt die Ressource, die dem Aufruf zugeordnet ist, ruft Ressourceneigenschaften aus dem Repository ab und speichert sie in einem [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html)-Objekt.
+Die Klasse `AbstractImageServlet` stellt die Methode `doGet` zur Verfügung, die die HTTP-Anfrage verarbeitet. Diese Methode bestimmt die Ressource, die dem Aufruf zugeordnet ist, ruft Ressourceneigenschaften aus dem Repository ab und speichert sie in einem [ImageContext](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html)-Objekt.
 
-Die Klasse `ImageReferenceModificationServlet` überschreibt die Methode `createLayer` und implementiert die Logik, die die zu rendernde Bildressource festlegt. Die Methode ruft einen untergeordneten Knoten des Knotens `jcr:content` der Seite mit der Bezeichnung `image` ab. Aus diesem `image`-Knoten wird ein [Bildobjekt](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/Image.html) erstellt und die Methode `getFileReference` gibt den Pfad zur Bilddatei aus der Eigenschaft `fileReference` des Bildknotens zurück.
+Die Klasse `ImageReferenceModificationServlet` überschreibt die Methode `createLayer` und implementiert die Logik, die die zu rendernde Bildressource festlegt. Die Methode ruft einen untergeordneten Knoten des Knotens `jcr:content` der Seite mit der Bezeichnung `image` ab. Aus diesem `image`-Knoten wird ein [Bildobjekt](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/foundation/Image.html) erstellt und die Methode `getFileReference` gibt den Pfad zur Bilddatei aus der Eigenschaft `fileReference` des Bildknotens zurück.
 
 >[!NOTE]
->Die Klasse [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) stellt die Methode „getFileReference“ zur Verfügung.
+>Die Klasse [com.day.cq.commons.DownloadResource](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/DownloadResource.html) stellt die Methode „getFileReference“ zur Verfügung.
 >
 
 ## Entwickeln eines fließenden Rasters {#developing-a-fluid-grid}

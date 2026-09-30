@@ -7,13 +7,11 @@ feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 100%
-
+source-wordcount: '688'
+ht-degree: 93%
 ---
-
 # Verbesserungen an der Übersetzung{#translation-enhancements}
 
 Diese Seite enthält inkrementelle Verbesserungen und Anpassungen für die Funktionen der AEM-Übersetzungsverwaltung.
@@ -73,15 +71,15 @@ Für manuelle Bearbeitungen von übersetzten Inhalten kann eine Synchronisierung
 AEM aktualisiert die Übersetzung der vorhandenen Zeichenfolgen im Translation Memory des konfigurierten TMS.
 
 * Die Aktion aktualisiert die Übersetzung vorhandener Zeichenfolgen im Translation Memory des konfigurierten TMS.
-* Es werden keine neuen Übersetzungsvorgänge erstellt.
+* Es werden keine neuen Übersetzungsaufträge erstellt.
 * Die Übersetzungen werden über die AEM-Übersetzungs-API an das TMS zurückgesendet (siehe unten).
 
 So verwenden Sie diese Funktion:
 
 * Ein TMS muss für die Verwendung mit AEM konfiguriert werden.
-* Der Connector muss die Methode [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html) implementieren.
-   * Der Code innerhalb dieser Methode bestimmt, was mit der Aktualisierungsanfrage für das Translation Memory geschieht.
-   * Das AEM-Übersetzungs-Framework sendet die Zeichenfolgenwertpaare (ursprüngliche und aktualisierte Übersetzung) über diese Methodenimplementierung zurück an das TMS.
+* Der Connector muss die Methode [`storeTranslation`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html) implementieren.
+  * Der Code innerhalb dieser Methode bestimmt, was mit der Aktualisierungsanfrage für das Translation Memory geschieht.
+  * Das AEM-Übersetzungs-Framework sendet die Zeichenfolgenwertpaare (ursprüngliche und aktualisierte Übersetzung) über diese Methodenimplementierung zurück an das TMS.
 
 Die Aktualisierungen des Translation Memory können auch umgeleitet und an ein benutzerdefiniertes Ziel gesendet werden, wenn ein proprietäres Translation Memory verwendet wird.
 
@@ -102,7 +100,7 @@ Sie können Sprachstämme jetzt unter Knoten gruppieren, z. B. nach Region. Die
 
 >[!NOTE]
 >
->Sprachstämme können einen beliebigen Seitennamen haben. Es muss nicht der ISO-Code der Sprache sein. AEM prüft stets zuerst den Pfad und den Namen. Aber wenn der Seitenname keinen Hinweis auf eine Sprache enthält, überprüft AEM die Eigenschaft „cq:language“ der Seite, um die Sprache zu identifizieren.
+>Sprachstämme können einen beliebigen Seitennamen haben. Es muss nicht der ISO-Code der Sprache sein. AEM prüft stets zuerst den Pfad und den Namen, aber wenn der Seitenname keinen Hinweis auf eine Sprache enthält, überprüft AEM die :language-Eigenschaft der Seite, um die Sprache zu identifizieren.
 
 ## Berichte zum Übersetzungsstatus {#translation-status-reporting}
 

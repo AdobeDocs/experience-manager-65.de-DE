@@ -9,18 +9,16 @@ exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '267'
 ht-degree: 4%
-
 ---
-
 # Grundlagen zu Social Graph  {#social-graph-essentials}
 
 Die Fähigkeit eines Mitglieds der Community, [Aktivitäten](essentials-activities.md) zu verfolgen, wird durch zwei Komponenten festgelegt:
 
-Die `following`-Komponente muss mit einer anderen Ressource verknüpft sein, und diese Verknüpfung wurde bereits für bestehende Community-Mitglieder und -Funktionen auf einer [Community-Site“ &#x200B;](overview.md#communitiessites).
+Die `following`-Komponente muss mit einer anderen Ressource verknüpft sein, und diese Verknüpfung wurde bereits für bestehende Community-Mitglieder und -Funktionen auf einer [Community-Site“ ](overview.md#communitiessites).
 
 Die `following`-Komponente listet die Elemente auf, die entweder auf das aktuelle Element folgen oder auf die das aktuelle Element folgt. Dieses soziale Diagramm von Beziehungen zwischen Mitgliedern ist im Benutzerprofil enthalten, das für eine Community-Site erstellt wurde.
 
@@ -40,7 +38,7 @@ Die `following`-Komponente listet die Elemente auf, die entweder auf das aktuell
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
-   <td>cq.social.hbs.socialgraph</td>
+   <td>CQ.social.hbs.socialGraph</td>
   </tr>
   <tr>
    <td> <strong>Vorlagen</strong></td>
@@ -82,8 +80,8 @@ Die `following`-Komponente listet die Elemente auf, die entweder auf das aktuell
 
 ## Grundlagen für Server-seitige {#essentials-for-server-side}
 
-* [Social-Graph-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
+* [Social-Media-Graph-API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
 
-* [Endpunkte für soziale Diagramme](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
+* [Endpunkte für Social Media-Diagramme](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
 
 * [Server-seitige Anpassungen](server-customize.md)

@@ -10,13 +10,11 @@ exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '475'
 ht-degree: 3%
-
 ---
-
 # Blog Essentials {#blog-essentials}
 
 Ab AEM 6.1 Communities ist ein Blog eine Community-Aktivität. Blog-Artikel werden jetzt aus der Veröffentlichungsumgebung gepostet, in der zuvor Blog-Artikel nur in der Autorenumgebung erstellt und veröffentlicht werden konnten.
@@ -69,7 +67,7 @@ Die Blog-Funktion besteht aus zwei Hauptkomponenten, die verfügbar sind, indem 
 | **resourceType** | social/journal/components/hbs/sidebar |
 |---|---|
 | [**inklusive**](/help/communities/scf.md#add-or-include-a-communities-component) | Nein |
-| [**clientlibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
+| [**clientlibs**](/help/communities/clientlibs.md) | CQ.social.hbs.journal_sidebar |
 | **Vorlagen** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
 | **Eigenschaften** | Siehe [Blog-Funktion](/help/communities/blog-feature.md) |
@@ -78,9 +76,9 @@ Die Blog-Funktion besteht aus zwei Hauptkomponenten, die verfügbar sind, indem 
 
 ## Grundlagen für Server-seitige {#essentials-for-server-side}
 
-* [Blog-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
+* [Blog-API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [Blog-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [Blog-Endpunkte](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [Server-seitige Anpassungen](/help/communities/server-customize.md)
 
@@ -93,7 +91,7 @@ Für eine Community-Site-Struktur mit der Funktion [Blog](/help/communities/func
 UGC sollte mit einer der Standardmethoden für die Mäßigung moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [Common Store](/help/communities/working-with-srp.md) für UGC den programmgesteuerten Zugriff auf UGC, unabhängig von der gewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [Common Store](/help/communities/working-with-srp.md) für benutzergenerierten Inhalt programmgesteuerten Zugriff auf benutzergenerierten Inhalt, unabhängig von der ausgewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des benutzergenerierten Inhalts im Repository können sich ohne Warnung ändern**.
 
@@ -108,11 +106,11 @@ Siehe :
 
 Wenn es sich bei der Bereitstellung um eine Veröffentlichungsfarm handelt, muss ein primärer Herausgeber identifiziert werden, der Artikel, die veröffentlicht werden sollen, abfragt.
 
-Weitere Informationen finden Sie unter {[&#128279;](/help/communities/deploy-communities.md#primary-publisher)}Primärer Herausgeber.
+Weitere Informationen finden Sie unter {](/help/communities/deploy-communities.md#primary-publisher)}Primärer Herausgeber.[
 
 ## Zulassen von Rich Media {#allowing-rich-media}
 
-Die AEM-Plattform blockiert Links von anderen Websites, um XSS-Angriffe zu verhindern, wie unter beschrieben.
+Die AEM-Plattform blockiert Links von anderen Websites, um XSS-Angriffe zu verhindern, wie unter beschrieben
 
 * [Schützen vor Cross-Site-Scripting (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 

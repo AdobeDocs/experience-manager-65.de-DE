@@ -9,13 +9,11 @@ exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '371'
 ht-degree: 0%
-
 ---
-
 # Fehlerbehebung in der Community {#troubleshooting}
 
 Dieser Abschnitt enthält häufige Probleme und bekannte Probleme bei der Fehlerbehebung in der Community.
@@ -51,7 +49,7 @@ Daher muss sich jeder Code, der die RelativeTimeFormat()-API verwendet, ändern:
 
 Der Fehler ist bei der Autoren- und der Veröffentlichungsinstanz unterschiedlich. Auf der Autoreninstanz schlägt es still fehl und zeigt einfach nicht die Forumsthemen an. Bei der Veröffentlichung wird der Fehler auf der Seite angezeigt.
 
-Weitere Informationen finden Sie in der [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html)-API.
+Weitere Informationen finden Sie in der [com.day.cq.commons.date.RelativeTimeFormat](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html)-API.
 
 ## Gemeinsame Anliegen {#common-concerns}
 

@@ -9,13 +9,11 @@ feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 100%
-
+source-wordcount: '2265'
+ht-degree: 97%
 ---
-
 # Generieren mehrerer interaktiver Kommunikationen mithilfe der Batch-API {#use-batch-api-to-generate-multiple-ic}
 
 Sie können die Batch-API verwenden, um mehrere interaktive Kommunikationen aus einer Vorlage zu erstellen. Die Vorlage ist eine interaktive Kommunikation ohne Daten. Die Batch-API kombiniert Daten mit einer Vorlage, um eine interaktive Kommunikation zu erzeugen. Die API ist bei der Massenproduktion interaktiver Kommunikationen nützlich. Zum Beispiel Telefonrechnungen, Kreditkartenauszüge für mehrere Kunden.
@@ -101,7 +99,7 @@ So erstellen Sie eine interaktive Kommunikation aus Einträgen, die in einer JSO
 
    1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 1. Verwenden Sie den erstellten überwachten Ordner, um interaktive Kommunikation zu generieren:
-   1. Öffnen Sie den überwachten Ordner. Navigieren Sie zum Eingabeordner. 
+   1. Öffnen Sie den überwachten Ordner. Navigieren Sie zum Eingabeordner.
    1. Erstellen Sie einen Ordner im Eingabeordner und legen Sie die JSON-Datei im neu erstellten Ordner ab.
    1. Warten Sie, bis der überwachte Ordner die Datei verarbeitet hat. Wenn die Verarbeitung beginnt, werden die Eingabedatei und der Unterordner, die die Datei enthält, in den Staging-Ordner verschoben.
    1. Öffnen Sie den Ausgabeordner, um die Ausgabe anzuzeigen:
@@ -161,7 +159,7 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Einträge) mit
 
    1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 1. Verwenden Sie den erstellten überwachten Ordner, um interaktive Kommunikation zu generieren:
-   1. Öffnen Sie den überwachten Ordner. Navigieren Sie zum Eingabeordner. 
+   1. Öffnen Sie den überwachten Ordner. Navigieren Sie zum Eingabeordner.
    1. Erstellen Sie einen Ordner im Eingabeordner. Platzieren Sie die in Schritt 2 erstellte JSON-Datei im neu erstellten Ordner.
    1. Warten Sie, bis der überwachte Ordner die Datei verarbeitet hat. Wenn die Verarbeitung beginnt, werden die Eingabedatei und der Unterordner, die die Datei enthält, in den Staging-Ordner verschoben.
    1. Öffnen Sie den Ausgabeordner, um die Ausgabe anzuzeigen:
@@ -171,7 +169,7 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Einträge) mit
 
 ## Rufen Sie die Batch-API mithilfe von REST-Anfragen auf.
 
-Sie können [die Batch-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html) durch REST-Anfragen (Representational State Transfer) aufrufen. Damit können Sie anderen Benutzenden einen REST-Endpunkt bereitstellen, um auf die API zuzugreifen und Ihre eigenen Methoden zur Verarbeitung, Speicherung und Anpassung der interaktiven Kommunikation zu konfigurieren. Sie können Ihr eigenes benutzerdefiniertes Java™-Servlet entwickeln, um die API auf Ihrer AEM-Instanz bereitzustellen.
+Sie können [die Batch-API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html) durch REST-Anfragen (Representational State Transfer) aufrufen. Damit können Sie anderen Benutzenden einen REST-Endpunkt bereitstellen, um auf die API zuzugreifen und Ihre eigenen Methoden zur Verarbeitung, Speicherung und Anpassung der interaktiven Kommunikation zu konfigurieren. Sie können Ihr eigenes benutzerdefiniertes Java™-Servlet entwickeln, um die API auf Ihrer AEM-Instanz bereitzustellen.
 
 Stellen Sie vor der Bereitstellung des Java™-Servlets sicher, dass Sie über eine interaktive Kommunikation und entsprechende Datendateien verfügen. Führen Sie die folgenden Schritte aus, um das Java™-Servlet zu erstellen und bereitzustellen:
 
@@ -328,7 +326,7 @@ Stellen Sie vor der Bereitstellung des Java™-Servlets sicher, dass Sie über e
    * Wenn Sie sowohl die PRINT- als auch die WEB-Option angeben, werden sowohl PDF-Dokumente als auch eine JSON-Datei pro Eintrag generiert.
 
 1. [Verwenden Sie Maven, um den aktualisierten Code für Ihre AEM-Instanz bereitzustellen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=de).
-1. Rufen Sie zum Generieren der interaktiven Kommunikationen die Batch-API auf.  Die Batch-API druckt und gibt einen Stream von PDF- und JSON-Dateien abhängig von der Anzahl der Einträge zurück. Sie können die JSON-Datei zum [Vorausfüllen einer Web-Vorlage](#web-template) verwenden. Wenn Sie den oben genannten Code verwenden, wird die API unter `http://localhost:4502/bin/batchServlet` bereitgestellt. Der Code druckt und gibt einen Stream von PDF- und JSON-Dateien zurück.
+1. Rufen Sie zum Generieren der interaktiven Kommunikationen die Batch-API auf. Die Batch-API druckt und gibt einen Stream von PDF- und JSON-Dateien abhängig von der Anzahl der Einträge zurück. Sie können die JSON-Datei zum [Vorausfüllen einer Web-Vorlage](#web-template) verwenden. Wenn Sie den oben genannten Code verwenden, wird die API unter `http://localhost:4502/bin/batchServlet` bereitgestellt. Der Code druckt und gibt einen Stream von PDF- und JSON-Dateien zurück.
 
 ### Vorausfüllen einer Web-Vorlage {#web-template}
 
@@ -340,7 +338,7 @@ Wenn Sie den batchType so einstellen, dass der Web-Kanal gerendert wird, generie
 **Beispiel**
 Wenn sich Ihre JSON-Datei unter `C:\batch\mergedJsonPath.json` befindet und Sie die folgende interaktive Kommunikationsvorlage verwenden: `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
-Anschließend zeigt die folgende URL auf dem Veröffentlichungsknoten den Web-Kanal der interaktiven Kommunikation an
+Anschließend zeigt die folgende URL auf dem Veröffentlichungsknoten den Webkanal der interaktiven Kommunikation an
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
 
 Sie speichern nicht nur die Daten im Dateisystem, sondern auch JSON-Dateien im CRX-Repository, Dateisystem oder Webserver oder können über den OSGi-Vorbefüllungs-Service auf Daten zugreifen. Syntax zum Zusammenführen von Daten mithilfe verschiedener Protokolle:
@@ -351,14 +349,14 @@ Sie speichern nicht nur die Daten im Dateisystem, sondern auch JSON-Dateien im C
 * **Dateiprotokoll**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
 
-* **Vorbefüllungs-Service-Protokoll**
+* **Vorbefüllungsdienstprotokoll**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
   SERVICE_NAME verweist auf den Namen des OSGI-Vorbefüllungs-Service. Lesen Sie Erstellen und Ausführen eines Vorbefüllungs-Service.
 
   IDENTIFIER bezieht sich auf alle Metadaten, die vom OSGI-Vorbefüllungs-Service erforderlich sind, um die Daten zum Vorbefüllen aufzurufen. Eine Kennung für die angemeldete Benutzerin bzw. den angemeldeten Benutzer ist ein Beispiel für Metadaten, die verwendet werden können.
 
-* **HTTP-Protokoll**
+* **-Protokoll**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]

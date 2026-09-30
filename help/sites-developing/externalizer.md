@@ -10,20 +10,18 @@ exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 100%
-
+source-wordcount: '504'
+ht-degree: 94%
 ---
-
 # Externalisieren von URLs{#externalizing-urls}
 
-In Adobe Experience Manager (AEM) ist der **Externalizer** ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad (z. B. `/path/to/my/page`) programmgesteuert in eine externe und absolute URL (z. B. `https://www.mycompany.com/path/to/my/page`) umwandeln können, indem der Pfad mit einem vorkonfigurierten DNS-Präfix versehen wird. 
+In Adobe Experience Manager (AEM) ist der **Externalizer** ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad (z. B. `/path/to/my/page`) programmgesteuert in eine externe und absolute URL (z. B. `https://www.mycompany.com/path/to/my/page`) umwandeln können, indem der Pfad mit einem vorkonfigurierten DNS-Präfix versehen wird.
 
 Dieser Dienst bietet einen zentralen Ort für die Konfiguration und Erstellung von externen URLs, weil eine Instanz ihre extern sichtbare URL nicht kennen kann, wenn sie hinter einer Web-Layer läuft, und weil manchmal ein Link außerhalb des Anfrageumfangs erstellt werden muss.
 
-Auf dieser Seite wird beschrieben, wie Sie den **Externalizer**-Dienst konfigurieren und verwenden. Weitere Informationen finden Sie unter [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
+Auf dieser Seite wird beschrieben, wie Sie den **Externalizer**-Dienst konfigurieren und verwenden. Weitere Informationen finden Sie unter [Javadocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Konfigurieren des Externalizer-Diensts {#configuring-the-externalizer-service}
 
@@ -51,8 +49,8 @@ Definieren Sie eine Domain-Zuordnung für den **Externalizer**-Service wie folgt
 
    * **Schema** ist normalerweise „http“ oder „https“, kann aber auch z. B. „ftp“ sein.
 
-      * Verwenden Sie bei Bedarf HTTPS, um HTTPS-Links zu erzwingen.
-      * Es wird verwendet, wenn der Clientcode das Schema nicht überschreibt, wenn er die Externalisierung einer URL anfordert.
+     * Verwenden Sie bei Bedarf HTTPS, um HTTPS-Links zu erzwingen.
+     * Es wird verwendet, wenn der Clientcode das Schema nicht überschreibt, wenn er die Externalisierung einer URL anfordert.
 
    * **Server** ist der Host-Name (kann ein Domain-Name oder eine IP-Adresse sein).
    * **Port** (optional) ist die Portnummer.
@@ -128,4 +126,4 @@ Dieser Abschnitt zeigt einige Beispiele dafür, wie der **Externalizer**-Dienst 
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
-1. Weitere Beispiele finden Sie in den [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
+1. Weitere Beispiele finden Sie in den [Javadocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/Externalizer.html).

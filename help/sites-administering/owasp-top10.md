@@ -9,13 +9,11 @@ exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 92%
-
+source-wordcount: '520'
+ht-degree: 90%
 ---
-
 # OWASP – Top 10{#owasp-top}
 
 Das [Open Web Application Security Project](https://owasp.org/) (OWASP) führt eine Liste zu den seiner Meinung nach [zehn häufigsten Sicherheitsrisiken für Web-Anwendungen](https://owasp.org/www-project-top-ten/).
@@ -62,7 +60,7 @@ Sensible Daten wie Drittanbieter-Ameldedaten sind in verschlüsselter Form mithi
 
 ## &#x200B;8. URL-Zugriff kann nicht eingeschränkt werden {#failure-to-restrict-url-access}
 
-Das Repository ermöglicht die Einstellung von [feinabgestimmten Rechten (wie durch JCR angegeben)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) für jede Person bzw. Gruppe unter jedem beliebigen Pfad über Zugriffssteuerungseinträge. Zugriffbeschränkungen werden durch das Repository durchgesetzt.
+Das Repository ermöglicht die Einstellung von [feinabgestimmten Rechten (wie durch JCR angegeben)](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html) für jede Person bzw. Gruppe unter jedem beliebigen Pfad über Zugriffssteuerungseinträge. Zugriffbeschränkungen werden durch das Repository durchgesetzt.
 
 ## &#x200B;9. Unzureichender Schutz der Transportschicht {#insufficient-transport-layer-protection}
 

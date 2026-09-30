@@ -9,9 +9,9 @@ exl-id: f45ae7be-a500-463a-ab3e-81f281651a9d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '444'
 ht-degree: 1%
 ---
 # Community-Hauptgruppen  {#community-group-essentials}
@@ -76,9 +76,9 @@ Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack) ist es 
 
 ## Grundlagen für Server-seitige {#essentials-for-server-side}
 
-* [Community-Gruppen-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
+* [Community-Gruppen-API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
-* [Community-Gruppenendpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
+* [Community-Gruppenendpunkte](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
 
 * [Server-seitige Anpassungen](server-customize.md)
 
@@ -86,7 +86,7 @@ Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack) ist es 
 
 Eine Community-Site-Struktur mit einer Funktion [Gruppen](functions.md#groups-function) unterstützt die Erstellung neuer `community groups` aus der Veröffentlichungs- und Autorenumgebung. Die erstellte Community-Gruppe enthält eine `community groups member list`-Komponente, in der die Mitglieder der Gruppe aufgeführt sind.
 
-Für [&#x200B; Funktion Gruppen können eine oder mehrere &#x200B;](tools-groups.md) (Community-Gruppenvorlagen) konfiguriert werden, die das Design der Community-Gruppenseiten bereitstellen. Dies ist der Fall, wenn die Funktion zu einer [Community-Site-Vorlage](sites.md) hinzugefügt oder in einer Community-Gruppenvorlage verschachtelt wird.
+Für [ Funktion Gruppen können eine oder mehrere ](tools-groups.md) (Community-Gruppenvorlagen) konfiguriert werden, die das Design der Community-Gruppenseiten bereitstellen. Dies ist der Fall, wenn die Funktion zu einer [Community-Site-Vorlage](sites.md) hinzugefügt oder in einer Community-Gruppenvorlage verschachtelt wird.
 
 Das Einschließen mehrerer Community-Gruppenvorlagen führt zu einer Auswahl. Das heißt, die Auswahl des Designs, das dem autorisierten Benutzer zum Zeitpunkt der Erstellung einer Community-Gruppe für die Community-Site präsentiert wird. Weitere Informationen finden Sie im Abschnitt [Community-](creating-groups.md)) für Autoren.
 
