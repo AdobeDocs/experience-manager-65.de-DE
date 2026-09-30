@@ -171,8 +171,8 @@ Ein Workflow-Paket:
 
      Bei dieser Starter-Eigenschaft handelt es sich um eine Reihe von kommagetrennten Elementen:
 
-     * `property-name` ignoriert alle `jcr`, die beim angegebenen Eigenschaftsnamen ausgelöst werden. ``
-     * `event-user-data:<*someValue*>` ignoriert jedes Ereignis, das die über die [`ObservationManager`-API festgelegten `*<someValue*`>-`user-data` enthält](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+     * `property-name` ignoriert alle `jcr`, die beim angegebenen Eigenschaftsnamen ausgelöst werden. &grave;&grave;
+     * `event-user-data:<*someValue*>` ignoriert jedes Ereignis, das die über die [`ObservationManager`-API festgelegten `*<someValue*`>-`user-data` enthält] (https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Beispiel:
 

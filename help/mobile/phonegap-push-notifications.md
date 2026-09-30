@@ -69,7 +69,7 @@ Um APNs zu verwenden, benötigen Sie eine **Certificate**-Datei (eine .cer-Datei
 
 Navigieren Sie zur Google-Seite [hier](https://developer.android.com/google/gcm/index.html), um sich mit Google Cloud Messaging für Android vertraut zu machen™.
 
-[Führen Sie die folgenden ](https://developer.android.com/google/gcm/gs.html) aus **um ein Google-API-** zu erstellen, **den GCM-** zu aktivieren und **einen API-Schlüssel abzurufen**. Sie benötigen den **API-Schlüssel** um Push-Benachrichtigungen an Android™-Geräte zu senden. Notieren Sie sich auch Ihre **Projektnummer** die manchmal auch als „GCM-**&quot; bezeichnet**.
+[Führen Sie die folgenden &#x200B;](https://developer.android.com/google/gcm/gs.html) aus **um ein Google-API-** zu erstellen, **den GCM-** zu aktivieren und **einen API-Schlüssel abzurufen**. Sie benötigen den **API-Schlüssel** um Push-Benachrichtigungen an Android™-Geräte zu senden. Notieren Sie sich auch Ihre **Projektnummer** die manchmal auch als „GCM-**&quot; bezeichnet**.
 
 Die folgenden Schritte zeigen eine andere Methode zum Erstellen von GCM-API-Schlüsseln:
 
@@ -252,7 +252,7 @@ In XCode 8.1 müssen Sie vor der Verwendung von Push-Benachrichtigungen zur Regi
 
 #### Android™ {#android}
 
-Um die App über die CLI auf einem Android™-Smartphone zu installieren (siehe unten: **Schritt 6 - App erstellen und bereitstellen**), müssen Sie das Smartphone zunächst in den „Entwicklermodus“ versetzen. Weitere [ dazu finden Sie unter „Aktivieren ](https://developer.android.com/tools/device.html#developer-device-options) Entwickleroptionen auf dem Gerät .
+Um die App über die CLI auf einem Android™-Smartphone zu installieren (siehe unten: **Schritt 6 - App erstellen und bereitstellen**), müssen Sie das Smartphone zunächst in den „Entwicklermodus“ versetzen. Weitere [&#x200B; dazu finden Sie unter „Aktivieren &#x200B;](https://developer.android.com/tools/device.html#developer-device-options) Entwickleroptionen auf dem Gerät .
 
 ### Schritt 5: Konfigurieren von Push-Benachrichtigungen in AEM-Apps {#step-configure-push-on-aem-apps}
 
@@ -268,7 +268,7 @@ Vor der Erstellung und Bereitstellung auf dem konfigurierten Mobilgerät müssen
 
 ### Schritt 6: App erstellen und bereitstellen {#step-build-and-deploy-the-app}
 
-**Hinweis:** Weitere Informationen finden Sie [ Anweisungen ](/help/mobile/building-app-mobile-phonegap.md) Erstellen von PhoneGap-Anwendungen.
+**Hinweis:** Weitere Informationen finden Sie [&#x200B; Anweisungen &#x200B;](/help/mobile/building-app-mobile-phonegap.md) Erstellen von PhoneGap-Anwendungen.
 
 Es gibt zwei Möglichkeiten, Ihre App mit PhoneGap zu erstellen und bereitzustellen.
 

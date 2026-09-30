@@ -42,7 +42,7 @@ Der Java™ Content-Repository-Standard (JCR) [JSR 283](https://experienceleague
 
 Die Leitung der Spezifikation liegt bei Adobe Research (Schweiz) AG.
 
-Das [JCR API 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html)-Paket javax.jcr.&amp;ast; wird für den direkten Zugriff auf und die Bearbeitung von Repository-Inhalten verwendet.
+Das [JCR API 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html)-Paket javax.jcr.&ast; wird für den direkten Zugriff auf und die Bearbeitung von Repository-Inhalten verwendet.
 
 ## Experience Server (CRX) und Jackrabbit {#experience-server-crx-and-jackrabbit}
 

@@ -61,7 +61,7 @@ Seit Einführung von AEM 6.0 wurden Änderungen an der Implementierung und Verwe
 
 Überlagerungen empfehlen sich für viele Änderungsvorgänge, beispielsweise das [Konfigurieren von Konsolen](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) oder das [Erstellen der Auswahlkategorie für den Asset-Browser im seitlichen Bedienfeld](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (wird bei der Seitenbearbeitung verwendet). Sie sind aus folgenden Gründen erforderlich:
 
-* ***Nehmen Sie* Änderungen in der `/libs` vor **Alle von Ihnen vorgenommenen Änderungen können verloren gehen, da diese Verzweigung in den folgenden Fällen Änderungen unterliegt:
+* ***Nehmen Sie* Änderungen in der `/libs` vor &#x200B;** Alle von Ihnen vorgenommenen Änderungen können verloren gehen, da diese Verzweigung in den folgenden Fällen Änderungen unterliegt:
 
   * Upgrades in Ihrer Instanz
   * Anwendung eines Hotfix

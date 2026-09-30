@@ -28,7 +28,7 @@ Die Prinzipien, die bei der Entwicklung von Konfigurationen zum Einsatz kommen, 
 * Konfigurationen (z. B. Eigenschaften/Absätze) werden von den übergeordneten Elementen geerbt.
 * Die Verweise erfolgen von Analyseknoten nach Pfad.
 * Sie sind einfach erweiterbar.
-* Sie können auch komplexere Konfigurationen unterstützen, z. B. [Adobe Analytics ](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
+* Sie können auch komplexere Konfigurationen unterstützen, z. B. [Adobe Analytics &#x200B;](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
 * Abhängigkeiten werden unterstützt (z. B. benötigen [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)-Plug-ins eine [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)-Konfiguration).
 
 ## Struktur {#structure}
