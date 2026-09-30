@@ -1,27 +1,30 @@
 ---
 title: Konfigurationseigenschaften für interaktive Kommunikation
+
 description: Bearbeiten Sie die Standardkonfigurationseigenschaften für interaktive Kommunikationen.
+
+
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 topic-tags: interactive-communications
+
 docset: aem65
+
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '614'
 ht-degree: 100%
-
 ---
-
 # Konfigurationseigenschaften für interaktive Kommunikation{#interactive-communications-configuration-properties}
 
-Interaktive Kommunikation enthält Eigenschaften, die nach der Installation des Pakets [AEM Forms Add-On](../../forms/using/installing-configuring-aem-forms-osgi.md) automatisch konfiguriert werden. Autoren der interaktiven Kommunikation können diese Standardkonfigurationseigenschaften mit Hilfe der Seite **Konfiguration von Adobe Experience Manager Web Console** bearbeiten.
+Interaktive Kommunikation enthält Eigenschaften, die nach der Installation des Pakets [AEM Forms Add-On](../../forms/using/installing-configuring-aem-forms-osgi.md) automatisch konfiguriert werden. Autoren der interaktiven Kommunikation können diese Standardkonfigurationseigenschaften mit Hilfe der Seite **Konfiguration der Adobe Experience Manager-Web-Konsole** bearbeiten.
 
-Öffnen Sie die Seite für die **Konfiguration von Adobe Experience Manager Web Console** unter der folgenden URL:
+Öffnen Sie die Seite für die **Konfiguration der Adobe Experience Manager-Web-Konsole** unter der folgenden URL:
 
 `https:/[server]:[port]/<contextPath>/system/console/configMgr`
 
@@ -29,8 +32,8 @@ Die Konfigurationseigenschaften umfassen Folgendes:
 
 * [Konfiguration für Dokumentfragment](#document-fragments-configuration)
 * [Korrespondenzkonfiguration erstellen](#create-correspondence-configuration)
-* [Webkanal-Konfiguration für adaptive Formulare und interaktive Kommunikation](#adaptive-form-and-interactive-communication-web-channel-configuration)
-* [Webkanalthemen-Konfiguration für adaptive Formulare und interaktive Kommunikation](#adaptive-form-and-interactive-communication-web-channel-theme-configuration)
+* [Web-Kanal-Konfiguration für adaptive Formulare und interaktive Kommunikation](#adaptive-form-and-interactive-communication-web-channel-configuration)
+* [Web-Kanalthemen-Konfiguration für adaptive Formulare und interaktive Kommunikation](#adaptive-form-and-interactive-communication-web-channel-theme-configuration)
 
 ## Konfiguration für Dokumentfragment {#document-fragments-configuration}
 

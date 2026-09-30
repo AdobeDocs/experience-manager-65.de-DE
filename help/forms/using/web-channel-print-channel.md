@@ -1,27 +1,30 @@
 ---
 title: Druckkanal und Web-Kanal
+
 description: Importieren von Druckkanalvorlagen und Erstellen und Aktivieren von Web-Kanalvorlagen
+
+
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 docset: aem65
+
 feature: Interactive Communication
 exl-id: cd7dbdac-dc76-4a1f-b850-0a9f47ae08de
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '697'
 ht-degree: 100%
-
 ---
-
 # Druckkanal und Web-Kanal{#print-channel-and-web-channel}
 
 Eine interaktive Kommunikation kann über zwei Kanäle bereitgestellt werden: den Druckkanal und den Web-Kanal. Der Druckkanal wird zum Erstellen von PDFs und Papierkommunikationen verwendet, z. B. für gedruckte Briefe, um an die Zahlung von Versicherungsprämien zu erinnern. Der Web-Kanal wird hingegen für Online-Erlebnisse verwendet, z. B. Kreditkartenabrechnungen auf einer Website.
 
 Autoren der Vorlage für die interaktive Kommunikation können Elemente wie Dokumentfragmente und Bilder verwenden, um die Druck- bzw. Netzversionen der Vorlage für die interaktive Kommunikation zu erstellen.
 
-Eine der Voraussetzungen für das [Erstellen einer interaktiver Kommunikation](../../forms/using/create-interactive-communication.md) ist, dass die Vorlagen für den Druck- und/oder Webkanal auf dem Server verfügbar sind. Während Vorlagenautoren die Webkanalvorlage in AEM selbst erstellen, wird die Druckkanalvorlage XDP in Adobe Forms Designer erstellt und auf den Server hochgeladen.
+Eine der Voraussetzungen für das [Erstellen einer interaktiver Kommunikation](../../forms/using/create-interactive-communication.md) ist, dass die Vorlagen für den Druck- und/oder Webkanal auf dem Server verfügbar sind. Während Vorlagenautoren die Web-Kanalvorlage in AEM selbst erstellen, wird die Druckkanalvorlage XDP in Adobe Forms Designer erstellt und auf den Server hochgeladen.
 
 ## Druckkanal {#printchannel}
 
@@ -45,7 +48,7 @@ Autorinnen und Autoren von Vorlagen sowie Admins können Web-Vorlagen erstellen,
 
 Um eine Web-Kanalvorlage zu erstellen, müssen Sie zuerst einen Vorlagenordner erstellen. Sobald Sie eine Webvorlage in einem Vorlagenordner erstellt haben, müssen Sie die Vorlage aktivieren, damit die Formularbenutzer den Webkanal einer interaktiven Kommunikation basierend auf der Vorlage erstellen können.
 
-Führen Sie die folgenden Schritte aus, um eine Webkanalvorlage zu erstellen:
+Führen Sie die folgenden Schritte aus, um eine Web-Kanalvorlage zu erstellen:
 
 1. Erstellen Sie einen Vorlagenordner, um Ihre Webvorlagen für interaktive Kommunikation zu speichern, falls noch kein entsprechender Ordner eingerichtet ist. Weitere Informationen finden Sie unter „Vorlagenordner“ in [Seitenvorlagen – Bearbeitbar](/help/sites-developing/page-templates-editable.md).
 
@@ -60,7 +63,7 @@ Führen Sie die folgenden Schritte aus, um eine Webkanalvorlage zu erstellen:
 
    1. Navigieren Sie zum entsprechenden Vorlagenordner, indem Sie **[!UICONTROL Werkzeuge]** > **[!UICONTROL Vorlagen]** > **`[Folder]`** wählen.
    1. Wählen Sie **[!UICONTROL Erstellen]** aus.
-   1. Wählen Sie **[!UICONTROL Webkanal für interaktive Kommunikationl]** und dann **[!UICONTROL Weiter]** aus.
+   1. Wählen Sie **[!UICONTROL Web-Kanal für interaktive Kommunikationl]** und dann **[!UICONTROL Weiter]** aus.
    1. Geben Sie einen Vorlagentitel sowie eine Beschreibung ein und wählen Sie anschließend **[!UICONTROL Erstellen]** aus.
 
       Die Vorlage wird erstellt und ein Dialogfeld wird angezeigt.
