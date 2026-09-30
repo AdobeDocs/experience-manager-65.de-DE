@@ -7,11 +7,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '898'
 ht-degree: 100%
-
 ---
-
 # Verwenden des Layout-Modus zum Ändern der Größe von Komponenten {#use-layout-mode-to-resize-components}
 
 Mit der Authoring-Oberfläche des Web-Kanals für interaktive Kommunikation können Sie mithilfe des Layout-Modus die Größe von Komponenten ändern. Indem Sie blaue Punkte per Drag-und-Drop in Spalten ziehen, können Sie den Start- und Endpunkt zur Positionierung der Komponenten definieren. Die blauen Punkte werden nach dem Tippen auf die Komponente im responsiven Raster angezeigt. Das responsive Raster besteht aus 12 gleichen Spalten. Die weiße und blaue Farbschattierung in alternativen Spalten setzt die Spalten voneinander ab.
@@ -27,7 +25,7 @@ Sie können den Layout-Modus verwenden, um die Größe von Komponenten für alle
 Wählen Sie **Layout** aus der Dropdown-Liste, die oben in der Authoring-Oberfläche für die interaktive Kommunikation neben der Option **Vorschau** angezeigt wird. Das Formular wird im Layout-Modus angezeigt.
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**.
-1. Erstellen Sie eine [Interaktive Kommunikation](../../forms/using/create-interactive-communication.md) oder öffnen Sie eine bestehende. 
+1. Erstellen Sie eine [Interaktive Kommunikation](../../forms/using/create-interactive-communication.md) oder öffnen Sie eine bestehende.
 1. Wählen Sie **Layout** aus der Dropdownliste, die oben neben der Option **Vorschau** angezeigt wird. Das Formular wird im Layout-Modus angezeigt.
 
    ![Layout-Modus für interaktive Kommunikationen](assets/layout_mode_ic_new.png)

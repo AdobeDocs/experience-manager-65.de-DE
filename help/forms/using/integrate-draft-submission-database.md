@@ -8,18 +8,16 @@ exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 100%
-
+source-wordcount: '1537'
+ht-degree: 97%
 ---
-
 # Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank {#sample-for-integrating-drafts-submissions-component-with-database}
 
 ## Überblick zum Beispiel {#sample-overview}
 
-Mit der Komponente „Entwürfe und Sendungen“ des AEM Forms-Portals können Benutzende ihre Formulare als Entwürfe speichern und zu einem späteren Zeitpunkt von jedem beliebigen Gerät senden. Zudem können die Benutzenden ihre übermittelten Formulare im Portal anzeigen. Um diese Funktion zu aktivieren, bietet AEM Forms Daten- und Metadatendienste an, um die von Benutzenden im Formular eingegebenen Daten sowie die mit Entwürfen und gesendeten Formularen verknüpften Metadaten zu speichern. Diese Daten werden standardmäßig im CRX-Repository gespeichert. Da die Benutzenden mit den Formularen jedoch über eine AEM-Veröffentlichunginstanz interagieren, die in der Regel außerhalb der Unternehmens-Firewall liegt, sollten Sie die Datenspeicherung so anpassen, dass sie sicherer und zuverlässiger ist.
+Mit der Komponente „Entwürfe und Sendungen“ des AEM Forms-Portals können Benutzende ihre Formulare als Entwürfe speichern und zu einem späteren Zeitpunkt von jedem beliebigen Gerät senden. Zudem können die Benutzenden ihre übermittelten Formulare im Portal anzeigen. Um diese Funktion zu aktivieren, bietet AEM Forms Daten- und Metadatendienste an, um die von Benutzenden im Formular eingegebenen Daten sowie die mit Entwürfen und gesendeten Formularen verknüpften Metadaten zu speichern. Diese Daten werden standardmäßig im CRX-Repository gespeichert. Da die Benutzenden mit den Formularen jedoch über eine AEM-Veröffentlichungsinstanz interagieren, die in der Regel außerhalb der Unternehmens-Firewall liegt, sollten Sie die Datenspeicherung so anpassen, dass sie sicherer und zuverlässiger ist.
 
 Bei dem in diesem Dokument gezeigten Beispiel handelt es sich um eine Referenzimplementierung benutzerdefinierter Daten- und Metadatendienste zur Integration der Komponente „Entwürfe und Sendungen“ in eine Datenbank. In der Beispielimplementierung wird die Datenbank **MySQL 5.6.24** verwendet. Sie können die Komponente „Entwürfe und Sendungen“ jedoch in eine Datenbank Ihrer Wahl integrieren.
 
@@ -37,15 +35,15 @@ Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinst
 
    Beispielpaket zur Datenbankintegration:
 
-[Datei laden](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+   [Datei laden](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Gehen Sie zu AEM Package Manager unter https://[*host*]:[*port*]/crx/packmgr/.
+1. Gehen Sie zum AEM-Paket-Manager unter https://[*host*]:[*port*]/crx/packmgr/.
 1. Klicken Sie auf **[!UICONTROL Paket hochladen]**.
 
 1. Navigieren Sie zum Paket **aem-fp-db-integration-sample-pkg-6.1.2.zip**, wählen Sie es aus und klicken Sie auf **[!UICONTROL OK]**.
 1. Klicken Sie neben dem Paket auf **[!UICONTROL Installieren]**, um das Paket zu installieren.
-1. Gehen Sie zur Seite **[!UICONTROL Konfiguration der AEM-Webkonsole]**
-unter https://[*host*]:[*port*]/system/console/configMgr.
+1. Zur Konfiguration der **[!UICONTROL AEM Web Console]**
+Seite unter https://[*host*]:[*port*]/system/console/configMgr.
 1. Klicken Sie, um die **[!UICONTROL Konfiguration des Forms Portals für Entwurf und Übermittlung]** im Bearbeitungsmodus zu öffnen.
 
 1. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
@@ -89,79 +87,79 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
 1. Die Datenbankverbindung kann über die Apache Sling Connection Pooled Datenquelle erfolgen.
 1. Klicken Sie für die Apache Sling-Verbindung in der Konfiguration der Web-Konsole im Bearbeitungsmodus auf **[!UICONTROL Apache Sling Connection Pooled DataSource]**. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
 
-<table>
- <tbody>
-  <tr>
+   <table>
+   <tbody>
+   <tr>
    <td><strong>Eigenschaft</strong></td>
    <td><strong>Wert</strong></td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Datenquellenname</td>
    <td><p>Ein Datenquellenname für das Filtern der Treiber aus dem Datenquellen-Pool</p> <p><strong>Hinweis: </strong><em>In der Beispielimplementierung wird „FormsPortal“ als Datenquellenname verwendet.</em></p> </td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>JDBC-Treiberklasse</td>
    <td>com.mysql.jdbc.Driver</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>JDBC-Verbindungs-URI<br /> </td>
    <td>jdbc:mysql://[<em>host</em>]:[<em>port</em>]/[<em>schema_name</em>]</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Benutzername</td>
    <td>Benutzername zur Authentifizierung und Durchführung von Aktionen für Datenbanktabellen</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Kennwort</td>
    <td>Passwort für den Benutzernamen</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Transaktions-Isolierung</td>
    <td>READ_COMMITTED</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Max. aktive Verbindungen</td>
    <td>1.000</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Max. inaktive Verbindungen</td>
    <td>100</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Min. inaktive Verbindungen</td>
    <td>10</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Anfangsgröße</td>
    <td>10</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Max. Wartezeit</td>
    <td>100000</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Test zu Leihung</td>
    <td>Aktiviert</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Test bei Inaktivität</td>
    <td>Aktiviert</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Validierungsabfrage</td>
    <td>Beispielwerte sind SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td>
-  </tr>
-  <tr>
-   <td>Maximale Wartezeit der Validierungsabfrage</td>
+   </tr>
+   <tr>
+   <td>Timeout der Validierungsabfrage</td>
    <td>10000</td>
-  </tr>
- </tbody>
-</table>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->* Der JDBC-Treiber für MySQL wird nicht mit dem Beispiel geliefert.  Stellen Sie sicher, dass Sie ihn bereitgestellt haben, und geben Sie die erforderlichen Informationen ein, um den JDBC-Verbindungs-Pool zu konfigurieren.
->* Lassen Sie Ihre Autoren- und Veröffentlichungsinstanzen auf dieselbe Datenbank verweisen.  Der Wert des URI-Feldes für die JDBC-Verbindung muss für alle Autoren- und Veröffentlichungsinstanzen gleich sein.
+   >[!NOTE]
+   >
+   >* Der JDBC-Treiber für MySQL wird nicht mit dem Beispiel geliefert. Stellen Sie sicher, dass Sie ihn bereitgestellt haben, und geben Sie die erforderlichen Informationen ein, um den JDBC-Verbindungs-Pool zu konfigurieren.
+   >* Lassen Sie Ihre Autoren- und Veröffentlichungsinstanzen auf dieselbe Datenbank verweisen. Der Wert des URI-Feldes für die JDBC-Verbindung muss für alle Autoren- und Veröffentlichungsinstanzen gleich sein.
 
 1. Belassen Sie die anderen Konfigurationen und klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -171,7 +169,7 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
 
    >[!NOTE]
    >
-   >Sie benötigen nicht verschiedene Datenbanken für Autoren- und Veröffentlichungsinstanzen. Verwenden Sie dieselbe Datenbank für alle Autor- und Veröffentlichungsinstanzen. 
+   >Sie benötigen nicht verschiedene Datenbanken für Autoren- und Veröffentlichungsinstanzen. Verwenden Sie dieselbe Datenbank für alle Autor- und Veröffentlichungsinstanzen.
 
    **SQL-Anweisung für Datentabelle**
 
@@ -264,7 +262,7 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
 
    >[!NOTE]
    >
-   >Die Metadatenanfrage „Tabelle ändern“ schlägt fehl, wenn Sie diese bereits ausführen und die Spalte „markedfordeletion“ ist in der Tabelle vorhanden.
+   >Die Metadatenabfrage „Tabelle ändern“ schlägt fehl, wenn Sie diese bereits ausführen und die Spalte „markedfordeletion“ ist in der Tabelle vorhanden.
 
    ```sql
    ALTER TABLE metadata add agreementId varchar(255) DEFAULT NULL,
@@ -325,12 +323,12 @@ Die folgende Zip enthält`FormsPortalSampleDataServiceImpl` und`FormsPortalSampl
 
 ## Überprüfen der Länge des Dateinamens  {#verify-length-of-the-file-name}
 
-Die Datenbankimplementierung des Formularportals verwendet eine zusätzliche Metadatentabelle. Die Tabelle hat einen zusammengesetzten Primärschlüssel, der auf den Schlüssel- und ID-Spalten der Tabelle basiert. MySQL ermöglicht Primärschlüssel bis zu einer Länge von 255 Zeichen. Sie können das folgende Client-seitige Validierungsskript verwenden, um die Länge des Dateinamens zu überprüfen, der an das Datei-Widget angehängt ist. Die Überprüfung wird ausgeführt, wenn eine Datei angehängt ist. Das Skript, das im folgenden Verfahren bereitgestellt wird, zeigt eine Meldung an, wenn der Dateiname (einschließlich Erweiterung) mehr als 150 Zeichen hat. Sie können das Skript modifizieren, um es auf eine andere Anzahl von Zeichen zu überprüfen. 
+Die Datenbankimplementierung des Formularportals verwendet eine zusätzliche Metadatentabelle. Die Tabelle hat einen zusammengesetzten Primärschlüssel, der auf den Schlüssel- und ID-Spalten der Tabelle basiert. MySQL ermöglicht Primärschlüssel bis zu einer Länge von 255 Zeichen. Sie können das folgende Client-seitige Validierungsskript verwenden, um die Länge des Dateinamens zu überprüfen, der an das Datei-Widget angehängt ist. Die Überprüfung wird ausgeführt, wenn eine Datei angehängt ist. Das Skript, das im folgenden Verfahren bereitgestellt wird, zeigt eine Meldung an, wenn der Dateiname (einschließlich Erweiterung) mehr als 150 Zeichen hat. Sie können das Skript modifizieren, um es auf eine andere Anzahl von Zeichen zu überprüfen.
 
 Führen Sie die folgenden Schritte aus, um eine [Client-Bibliothek](/help/sites-developing/clientlibs.md) zu erstellen und das Skript zu verwenden:
 
 1. Melden Sie sich bei CRXDE an und navigieren Sie zu „/etc/clientlibs/“.
-1. Erstellen Sie einen Knoten vom Typ **cq:ClientLibraryFolder** und geben Sie einen Knotennamen an. Beispiel: `validation`.
+1. Erstellen Sie einen Knoten des Typs **cq:ClientLibraryFolder** und geben Sie den Namen des Knotens an. Beispiel: `validation`.
 
    Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
@@ -420,4 +418,4 @@ Führen Sie die folgenden Schritte aus, um eine [Client-Bibliothek](/help/sites-
    >
    >Wenn Sie anstelle der Client-Bibliotheken guideRuntime und guideRuntimeWithXfa benutzerdefinierte Client-Bibliotheken verwenden, verwenden Sie den Kategorienamen, um die in diesem Verfahren erstellte Client-Bibliothek in Ihre zur Laufzeit geladenen benutzerdefinierten Bibliotheken einzubetten.
 
-1. Klicken Sie auf **[!UICONTROL Alle speichern.]** Wenn der Dateiname größer als 150 (einschließlich Erweiterung) Zeichen ist, wird eine Meldung angezeigt. 
+1. Klicken Sie auf **[!UICONTROL Alle speichern.]** Wenn der Dateiname größer als 150 (einschließlich Erweiterung) Zeichen ist, wird eine Meldung angezeigt.

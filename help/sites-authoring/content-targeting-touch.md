@@ -10,7 +10,7 @@ exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
-source-git-commit: ee6294a03b2e4faf4e3c2dc8a466d03a0fb8a28a
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '5344'
 ht-degree: 95%
@@ -656,82 +656,82 @@ Sie können die Komponente „Target“ anpassen, indem Sie auf eine von zwei m�
 
 1. Konfigurieren Sie die Einstellungen der Target-Komponente, wie in den folgenden Tabellen beschrieben.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Option</strong></td>
-   <td><strong>Beschreibung</strong></td>
-  </tr>
-  <tr>
-   <td><strong>Ort</strong></td>
-   <td><p>Der Ort ist ein String, der den Ortsnamen des Targeting-Inhalts enthält und Angebote mit Orten (oder Orte und Komponenten) auf der Seite verknüpft, auf der diese Angebote platziert werden sollen.</p> <p>Bei diesem Feld handelt es sich um einen allgemeinen Wert.</p> <p>Wenn Sie ein Angebot in eine Komponente einfügen, speichert das Angebot die Speicherort-ID. Wenn die Seite ausgeführt wird, bewertet die Engine die Segmente der Benutzerin bzw. des Benutzers und ermittelt auf dieser Grundlage die Erlebnisse aus den aktiven Kampagnen, die angezeigt werden sollen. Anschließend werden die Standort-IDs auf der Seite überprüft und es wird versucht, Angebote mit diesen Standort-IDs abzugleichen.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Engine</strong></td>
-   <td>Wählen Sie abhängig von der gewünschten Engine <strong>Client-seitige Regeln (ohne Tracking), Adobe Target, ContextHub </strong>und<strong> Adobe Campaign</strong> aus.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Option</strong></td>
+      <td><strong>Beschreibung</strong></td>
+   </tr>
+   <tr>
+      <td><strong>Ort</strong></td>
+      <td><p>Der Ort ist ein String, der den Ortsnamen des Targeting-Inhalts enthält und Angebote mit Orten (oder Orte und Komponenten) auf der Seite verknüpft, auf der diese Angebote platziert werden sollen.</p> <p>Bei diesem Feld handelt es sich um einen allgemeinen Wert.</p> <p>Wenn Sie ein Angebot in eine Komponente einfügen, speichert das Angebot die Speicherort-ID. Wenn die Seite ausgeführt wird, bewertet die Engine die Segmente der Benutzerin bzw. des Benutzers und ermittelt auf dieser Grundlage die Erlebnisse aus den aktiven Kampagnen, die angezeigt werden sollen. Anschließend werden die Standort-IDs auf der Seite überprüft und es wird versucht, Angebote mit diesen Standort-IDs abzugleichen.</p> </td>
+   </tr>
+   <tr>
+      <td><strong>Engine</strong></td>
+      <td>Wählen Sie abhängig von der gewünschten Engine <strong>Client-seitige Regeln (ohne Tracking), Adobe Target, ContextHub </strong>und<strong> Adobe Campaign</strong> aus.</td>
+   </tr>
+   </tbody>
+   </table>
 
-Wenn Sie Adobe Target als Engine auswählen:
+   Wenn Sie Adobe Target als Engine auswählen:
 
-![chlimage_1-39](assets/chlimage_1-39.png)
+   ![chlimage_1-39](assets/chlimage_1-39.png)
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Option</strong></td>
-   <td><strong>Beschreibung</strong></td>
-  </tr>
-  <tr>
-   <td><strong>Präzises Targeting</strong></td>
-   <td><p>Durch die Aktivierung der präzisen Zielgruppenbestimmung wird die Komponente angewiesen, auf die Verfügbarkeit von Client-Kontext- oder ContextHub-Daten zu warten, bevor die Anfrage an Adobe Target gesendet wird. Dies kann die Ladezeit erhöhen. Beim Verfassen ist stets das präzise Targeting aktiviert.</p> <p>Wenn Sie das Kontrollkästchen <strong>Präzises Targeting</strong> aktivieren, führt die Mbox zunächst <code>mboxDefine</code> und anschließend <code>mboxUpdate</code> durch, was bei Verfügbarkeit der Daten zu einer Ajax-Anfrage führt.</p> <p>Wurde das Kontrollkästchen <strong>Präzises Targeting</strong> nicht ausgewählt, wird von der Mbox zunächst ein <code>mboxCreate</code> ausgeführt, was zu einer sofortigen, zeitgleichen Anfrage führt (in diesem Fall stehen möglicherweise noch nicht alle Kontextdaten zur Verfügung).</p> <p><strong>Hinweis:</strong> Das Aktivieren und Deaktivieren der präzisen Zielgruppenbestimmung einer Komponente wirkt sich nicht auf globale Einstellungen aus. Globale Einstellungen lassen sich jederzeit außer Kraft setzen, indem Sie das präzise Targeting in der Komponente aktivieren.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Einschließen gelöster Segmente</strong></td>
-   <td><p>Aktivieren Sie dieses Kontrollkästchen, werden alle gelösten Segmente im Mbox-Aufruf sowie in beliebigen auf der Seite konfigurierten Parametern und im Framework erfasst.</p> <p>Dies funktioniert nur in Situationen mit der XML-API, in denen Sie AEM-Segmente synchronisieren. Wenn Sie Segmente in AEM haben, die nicht von Adobe Target verarbeitet werden (wie etwa Skriptsegmente), können Sie mit dieser Option das Segment in AEM auflösen und Informationen darüber an Adobe Target senden, dass das Segment aktiv ist.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Übernommene Kontextparameter</strong></td>
-   <td>Listenkontextparameter, die (falls vorhanden) vom Adobe Target-Framework übernommen und mit der ausgewählten Seite verknüpft werden.</td>
-  </tr>
-  <tr>
-   <td><strong>Kontextparameter</strong></td>
-   <td>Klicken oder tippen Sie auf <strong>Feld hinzufügen</strong>, um zusätzliche Kontextparameter zu konfigurieren (es stehen die gleichen Optionen wie im Target-Framework zur Verfügung). Kontextparameter, die der Komponente hinzugefügt wurden, gelten <i>nur</i> für die gewählte Komponente, nicht für andere Komponenten, wie dies der Fall wäre, wenn Kontextparameter direkt dem Framework hinzugefügt würden.</td>
-  </tr>
-  <tr>
-   <td><strong>Statische Parameter</strong></td>
-   <td>Klicken Sie auf <strong>Feld hinzufügen</strong>, um zusätzliche statische Parameter zu konfigurieren (es stehen die gleichen Optionen wie im Target-Framework zur Verfügung). Statische Parameter, die der Komponente hinzugefügt wurden, gelten <i>nur</i> für die gewählte Komponente, nicht für andere Komponenten, wie dies der Fall wäre, wenn statische Parameter direkt dem Framework hinzugefügt würden. Statische Parameter stammen nicht aus dem Kontext (Client Context des Content Hub).</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Option</strong></td>
+      <td><strong>Beschreibung</strong></td>
+   </tr>
+   <tr>
+      <td><strong>Präzises Targeting</strong></td>
+      <td><p>Durch die Aktivierung der präzisen Zielgruppenbestimmung wird die Komponente angewiesen, auf die Verfügbarkeit von Client-Kontext- oder ContextHub-Daten zu warten, bevor die Anfrage an Adobe Target gesendet wird. Dies kann die Ladezeit erhöhen. Beim Verfassen ist stets das präzise Targeting aktiviert.</p> <p>Wenn Sie das Kontrollkästchen <strong>Präzises Targeting</strong> aktivieren, führt die Mbox zunächst <code>mboxDefine</code> und anschließend <code>mboxUpdate</code> durch, was bei Verfügbarkeit der Daten zu einer Ajax-Anfrage führt.</p> <p>Wurde das Kontrollkästchen <strong>Präzises Targeting</strong> nicht ausgewählt, wird von der Mbox zunächst ein <code>mboxCreate</code> ausgeführt, was zu einer sofortigen, zeitgleichen Anfrage führt (in diesem Fall stehen möglicherweise noch nicht alle Kontextdaten zur Verfügung).</p> <p><strong>Hinweis:</strong> Das Aktivieren und Deaktivieren der präzisen Zielgruppenbestimmung einer Komponente wirkt sich nicht auf globale Einstellungen aus. Globale Einstellungen lassen sich jederzeit außer Kraft setzen, indem Sie das präzise Targeting in der Komponente aktivieren.</p> </td>
+   </tr>
+   <tr>
+      <td><strong>Einschließen gelöster Segmente</strong></td>
+      <td><p>Aktivieren Sie dieses Kontrollkästchen, werden alle gelösten Segmente im Mbox-Aufruf sowie in beliebigen auf der Seite konfigurierten Parametern und im Framework erfasst.</p> <p>Dies funktioniert nur in Situationen mit der XML-API, in denen Sie AEM-Segmente synchronisieren. Wenn Sie Segmente in AEM haben, die nicht von Adobe Target verarbeitet werden (wie etwa Skriptsegmente), können Sie mit dieser Option das Segment in AEM auflösen und Informationen darüber an Adobe Target senden, dass das Segment aktiv ist.</p> </td>
+   </tr>
+   <tr>
+      <td><strong>Übernommene Kontextparameter</strong></td>
+      <td>Listenkontextparameter, die (falls vorhanden) vom Adobe Target-Framework übernommen und mit der ausgewählten Seite verknüpft werden.</td>
+   </tr>
+   <tr>
+      <td><strong>Kontextparameter</strong></td>
+      <td>Klicken oder tippen Sie auf <strong>Feld hinzufügen</strong>, um zusätzliche Kontextparameter zu konfigurieren (es stehen die gleichen Optionen wie im Target-Framework zur Verfügung). Kontextparameter, die der Komponente hinzugefügt wurden, gelten <i>nur</i> für die gewählte Komponente, nicht für andere Komponenten, wie dies der Fall wäre, wenn Kontextparameter direkt dem Framework hinzugefügt würden.</td>
+   </tr>
+   <tr>
+      <td><strong>Statische Parameter</strong></td>
+      <td>Klicken Sie auf <strong>Feld hinzufügen</strong>, um zusätzliche statische Parameter zu konfigurieren (es stehen die gleichen Optionen wie im Target-Framework zur Verfügung). Statische Parameter, die der Komponente hinzugefügt wurden, gelten <i>nur</i> für die gewählte Komponente, nicht für andere Komponenten, wie dies der Fall wäre, wenn statische Parameter direkt dem Framework hinzugefügt würden. Statische Parameter stammen nicht aus dem Kontext (Client Context des Content Hub).</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Wenn Sie eine Komponente auswählen und als Ziel verfügbar machen, ersetzt AEM auch die Komponente und fügt eine Adobe Target-Komponente ein. (Die Adobe Target-Komponente wird nicht nur verwendet, wenn Sie sie der Seite manuell hinzufügen, sondern auch, wenn Sie eine vorhandene Komponente als Ziel auswählen.)
+   >[!NOTE]
+   >
+   >Wenn Sie eine Komponente auswählen und als Ziel verfügbar machen, ersetzt AEM auch die Komponente und fügt eine Adobe Target-Komponente ein. (Die Adobe Target-Komponente wird nicht nur verwendet, wenn Sie sie der Seite manuell hinzufügen, sondern auch, wenn Sie eine vorhandene Komponente als Ziel auswählen.)
 
-Wenn Sie Client Context (clientseitig) als Engine auswählen:
+   Wenn Sie Client Context (clientseitig) als Engine auswählen:
 
-![chlimage_1-40](assets/chlimage_1-40.png)
+   ![chlimage_1-40](assets/chlimage_1-40.png)
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Option</strong></td>
-   <td><strong>Beschreibung</strong></td>
-  </tr>
-  <tr>
-   <td><strong>Optionen für Client-Seite – Strategie</strong></td>
-   <td><p>Wählen Sie eine der folgenden Optionen aus:</p>
-    <ul>
-     <li><strong>Erste(r)</strong>: Das oberste Erlebnis in der Liste entsprechend der Sortierung in der Kampagne.</li>
-     <li><strong>Willkürlich</strong>: Ein beliebiges Erlebnis wird verwendet.</li>
-     <li><strong>Clickstream-Wert</strong>: Trefferraten für im Kontext des Client überwachte Tags und zugehörige Tags werden verwendet. Die Trefferraten für Tags, die auf der Teaser-Seite definiert sind, werden verglichen.</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Option</strong></td>
+      <td><strong>Beschreibung</strong></td>
+   </tr>
+   <tr>
+      <td><strong>Optionen für Client-Seite – Strategie</strong></td>
+      <td><p>Wählen Sie eine der folgenden Optionen aus:</p>
+      <ul>
+      <li><strong>Erste(r)</strong>: Das oberste Erlebnis in der Liste entsprechend der Sortierung in der Kampagne.</li>
+      <li><strong>Willkürlich</strong>: Ein beliebiges Erlebnis wird verwendet.</li>
+      <li><strong>Clickstream-Wert</strong>: Trefferraten für im Kontext des Client überwachte Tags und zugehörige Tags werden verwendet. Die Trefferraten für Tags, die auf der Teaser-Seite definiert sind, werden verglichen.</li>
+      </ul> </td>
+   </tr>
+   </tbody>
+   </table>
 
-Wählen Sie **Adobe Campaign** als Engine aus, wenn Sie AEM mit Adobe Campaign integrieren. Weitere Informationen finden Sie unter [Integrieren von AEM mit Adobe Campaign](/help/sites-administering/campaign.md).
+   Wählen Sie **Adobe Campaign** als Engine aus, wenn Sie AEM mit Adobe Campaign integrieren. Weitere Informationen finden Sie unter [Integrieren von AEM mit Adobe Campaign](/help/sites-administering/campaign.md).
 
-Wählen Sie **ContextHub** als Engine aus, wenn Sie ContextHub für das Targeting verwenden. Siehe [Konfigurieren von ContextHub.](/help/sites-developing/ch-configuring.md)
+   Wählen Sie **ContextHub** als Engine aus, wenn Sie ContextHub für das Targeting verwenden. Siehe [Konfigurieren von ContextHub.](/help/sites-developing/ch-configuring.md)

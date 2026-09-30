@@ -1,20 +1,23 @@
 ---
 title: 'Tutorial: Erstellen einer interaktiven Kommunikation '
+
 description: Erstellen Sie eine interaktive Kommunikation mit allen Bausteinen
+
+
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 docset: aem65
+
 feature: Interactive Communication
 exl-id: aaacee66-6bbe-498b-91b1-3a9545ff1aeb
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1914'
 ht-degree: 100%
-
 ---
-
 # Tutorial: Erstellen einer interaktiven Kommunikation {#tutorial-create-interactive-communication}
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
@@ -25,7 +28,7 @@ Nachdem Sie alle Bausteine wie Formulardatenmodell, Dokumentfragmente und Vorlag
 
 Eine interaktive Kommunikation kann über zwei Kanäle bereitgestellt werden: den Druckkanal und den Web-Kanal. Sie können auch eine interaktive Kommunikation mit dem Druckkanal als Primär erstellen. Die Option zum Drucken als Primär für den Web-Kanal stellt sicher, dass Inhalt, Vererbung und Datenbindung des Web-Kanals vom Druckkanal abgeleitet werden. Hierdurch wird außerdem sichergestellt, dass die im Druckkanal vorgenommenen Änderungen im Web-Kanal synchronisiert werden. Die Autorinnen und Autoren der interaktiven Kommunikation dürfen jedoch ggf. die Vererbung für bestimmte Komponenten im Web-Kanal aufheben.
 
-Dieses Tutorial führt Sie durch die Schritte zum Erstellen interaktiver Mitteilungen für Print- und Web-Kanäle. Am Ende dieses Tutorials können Sie Folgendes:
+Dieses Tutorial führt Sie durch die Schritte zum Erstellen interaktiver Kommunikationen für Print- und Web-Kanäle. Am Ende dieses Tutorials können Sie Folgendes:
 
 * Erstellen einer interaktiven Kommunikation für den Druckkanal
 * Erstellen einer interaktiven Kommunikation für den Web-Kanal
@@ -219,7 +222,7 @@ Führen Sie die folgenden Schritte aus, um den Inhalt des Web-Kanals mithilfe de
 1. Wählen Sie **Bearbeiten** aus, um die interaktive Kommunikation im rechten Bereich zu öffnen.
 1. Führen Sie die Schritte 6–15 des Abschnitts [Erstellen einer interaktiven Kommunikation für den Druckkanal](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-print-channel) aus.
 1. Wählen Sie im linken Bereich die Registerkarte **Kanäle** und dann **Web** aus, um anhand des Druckkanals automatisch Inhalte für den Web-Kanal zu generieren.
-1. Da Sie in Schritt 4 das Kontrollkästchen **Druck als Master für Webkanal verwenden** aktiviert haben, werden Inhalt und Bindungen für den Webkanal automatisch aus dem Druckkanal generiert.
+1. Da Sie in Schritt 4 das Kontrollkästchen **Druck als Master für Web-Kanal verwenden** aktiviert haben, werden Inhalt und Bindungen für den Web-Kanal automatisch aus dem Druckkanal generiert.
 
    Der Inhalt des Druckkanals wird unterhalb des Inhalts der Web-Kanalvorlage eingefügt. Um den anhand des Druckkanals automatisch generierten Web-Kanalinhalt zu ändern, können Sie die Vererbung für jeden beliebigen Zielbereich abbrechen.
 
@@ -240,4 +243,4 @@ Führen Sie die folgenden Schritte aus, um den Inhalt des Web-Kanals mithilfe de
 
    ![Webinhaltsstruktur](assets/ic_web_content_tree_new.png)
 
-1. Wiederholen Sie die Schritte 13 - 18 von [Interaktive Kommunikation für Webkanal erstellen](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-web-channel), um die Hyperlinks **Jetzt bezahlen** und **Abonnieren** in den Webkanal der interaktiven Kommunikation einzufügen.
+1. Wiederholen Sie die Schritte 13 - 18 von [Interaktive Kommunikation für Web-Kanal erstellen](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-web-channel), um die Hyperlinks **Jetzt bezahlen** und **Abonnieren** in den Web-Kanal der interaktiven Kommunikation einzufügen.

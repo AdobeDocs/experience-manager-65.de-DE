@@ -12,13 +12,11 @@ role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '8511'
+source-wordcount: '8519'
 ht-degree: 95%
-
 ---
-
 # Konfigurieren des Dynamic Media-Hybridmodus {#configuring-dynamic-media-hybrid-mode}
 
 ## Dynamic Media – Hybrid-Add-on-Paket (AEM 6.5.23 und höher)
@@ -298,7 +296,7 @@ Bei allen Upgrades – mit oder ohne Kompatibilitätspaket – können Sie die
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets/viewer.pushviewerpresets.json`
 
-Führen Sie zum Migrieren der von Ihren erstellten benutzerdefinierten Vorgaben und Konfigurationen von `/etc` nach `/conf` unter Linux® den folgenden curl-Befehl aus:
+Führen Sie zum Migrieren der von Ihren erstellten benutzerdefinierten Vorgaben und Konfigurationen von `/etc` nach `/conf` unter Linux den folgenden curl-Befehl aus:
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
@@ -629,7 +627,7 @@ Stellen Sie sicher, dass der Zugriff auf das Vorgabenpaket für die Videoanalyse
 1. Führen Sie einen der folgenden Schritte aus, um die Paketinstallation zu überprüfen und bei Bedarf zu debuggen:
 
    * **Überprüfen der Vorgabe für Videoanalysen über das JCR**
-Um die Vorgabe für Videoanalysen über das JCR zu überprüfen, benötigen Sie Zugriff auf CRXDE Lite.
+     Um die Vorgabe für Videoanalysen über das JCR zu überprüfen, benötigen Sie Zugriff auf CRXDE Lite.
 
      Experience Manager: Navigieren Sie in CRXDE Lite zu `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
@@ -640,7 +638,7 @@ Um die Vorgabe für Videoanalysen über das JCR zu überprüfen, benötigen Sie 
    * **Überprüfen der Vorgabe für Videoanalysen über den Bildserver**
 
      Sie können die Vorgabe für Videoanalysen direkt überprüfen, indem Sie eine Bildserver-Anfrage „req=userdata“ erstellen.
-Um beispielsweise die Analytics-Vorgabe im Autorknoten anzuzeigen, können Sie die folgende Anfrage stellen:
+     Um beispielsweise die Analytics-Vorgabe im Autorknoten anzuzeigen, können Sie die folgende Anfrage stellen:
 
      `https://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`
 
@@ -654,7 +652,7 @@ Um beispielsweise die Analytics-Vorgabe im Autorknoten anzuzeigen, können Sie d
      ```
 
    * **Überprüfen der Vorgabe für Videoanalysen über das Tool für Videoberichte in Experience Manager**
-Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoberichte]**
+     Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoberichte]**
 
      `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -867,7 +865,7 @@ Mit diesen Schritten wird die Experience Manager-Veröffentlichungsinstanz so ei
 
 ## Konfigurieren der Einstellungen des Dynamic Media-Bild-Servers {#configuring-dynamic-media-image-server-settings}
 
-Das Konfigurieren des Dynamic Media-Bild-Servers umfasst die Bearbeitung des Adobe CQ Scene7 ImageServer-Bundles und des Adobe CQ Scene7 PlatformServer-Bundles.
+Das Konfigurieren des Dynamic Media-Bild-Servers umfasst die Bearbeitung des Adobe CQ Scene7 ImageServer-Pakets und des Adobe CQ Scene7 PlatformServer-Pakets.
 
 >[!NOTE]
 >
@@ -878,19 +876,19 @@ Das Konfigurieren des Dynamic Media-Bild-Servers umfasst die Bearbeitung des Ad
 So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
 
 1. Klicken Sie in der oberen linken Ecke in Experience Manager auf **[!UICONTROL Adobe Experience Manager]**, um auf die Konsole für die globale Navigation zuzugreifen, und gehen Sie dann zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
-1. Gehen Sie auf der Adobe Experience Manager-Seite für die Web-Konsolen-Konfiguration zu **[!UICONTROL OSGi]** > **[!UICONTROL Konfiguration]**, um alle Bundles aufzulisten, die in Experience Manager derzeit ausgeführt werden.
+1. Gehen Sie auf der Adobe Experience Manager-Seite für die Web-Konsolen-Konfiguration zu **[!UICONTROL OSGi]** > **[!UICONTROL Konfiguration]**, um alle Pakete aufzulisten, die in Experience Manager derzeit ausgeführt werden.
 
    Die Dynamic Media-Server für die Bereitstellung sind in der Liste unter den folgenden Namen angegeben:
 
    * `Adobe CQ Scene7 ImageServer`
    * `Adobe CQ Scene7 PlatformServer`
 
-1. Klicken Sie in der Liste mit den Bundles rechts von Adobe CQ Scene7 ImageServer auf das Symbol **[!UICONTROL Bearbeiten]**.
+1. Klicken Sie in der Liste mit den Paketen rechts von Adobe CQ Scene7 ImageServer auf das Symbol **[!UICONTROL Bearbeiten]**.
 1. Legen Sie im Dialogfeld für Adobe CQ Scene7 ImageServer die folgenden Konfigurationswerte fest:
 
    >[!NOTE]
    >
-   >Für gewöhnlich ist keine Änderung der Standardwerte erforderlich. Falls Sie jedoch die Standardeinstellungen ändern, müssen Sie das Bundle neu starten, damit die Änderungen wirksam werden.
+   >Für gewöhnlich ist keine Änderung der Standardwerte erforderlich. Falls Sie jedoch die Standardeinstellungen ändern, müssen Sie das Paket neu starten, damit die Änderungen wirksam werden.
 
    | Eigenschaft | Standardwert | Beschreibung |
    | --- | --- | --- |
@@ -902,7 +900,7 @@ So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
    | `WorkerThreads` | 10 | Anzahl der Workerthreads. |
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
-1. Klicken Sie in der Liste mit den Bundles rechts von Adobe CQ Scene7 PlatformServer auf das Symbol **[!UICONTROL Bearbeiten]**.
+1. Klicken Sie in der Liste mit den Paketen rechts von Adobe CQ Scene7 PlatformServer auf das Symbol **[!UICONTROL Bearbeiten]**.
 1. Legen Sie im Dialogfeld für Adobe CQ Scene7 PlatformServer die folgenden Standardwerte fest:
 
    >[!NOTE]
@@ -912,7 +910,7 @@ So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
    | Eigenschaft | Standardwert | Beschreibung |
    |---|---|---|
    | Cache enabled (Cache aktiviert) | Aktiviert | Gibt an, ob der Cache für Antworten aktiviert ist. |
-   | Cache roots (Cache-Stämme) | cache | Mindestens ein Pfad zu Ordnern des Caches für Antworten. Relative Pfade werden für den internen s7imaging-Bundle-Ordner aufgelöst. |
+   | Cache roots (Cache-Stämme) | cache | Mindestens ein Pfad zu Ordnern des Caches für Antworten. Relative Pfade werden für den internen s7imaging-Paket-Ordner aufgelöst. |
    | Cache Max Size (Maximale Cache-Größe) | 200000000 | Gibt die maximale Größe des Caches für Antworten in Byte an. |
    | Cache Max Entries (Maximale Cache-Einträge) | 100000 | Gibt die maximale Anzahl von Einträgen an, die im Cache zulässig ist. |
 
@@ -920,7 +918,7 @@ So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
 
 Mit dem Standardmanifest können Sie die Standardwerte konfigurieren, die zum Generieren der Antworten für die Dynamic Media-Bereitstellung verwendet werden. Sie können eine Feinabstimmung der Qualität (JPEG-Qualität, Auflösung, Modus für Resampling) und des Cachings (Ablauf) vornehmen und das Rendern von Bildern verhindern, die zu groß sind (defaultpix, defaultthumbpix, maxpix).
 
-Der Speicherort der Standardmanifest-Konfiguration wird aus dem Standardwert für **[!UICONTROL Catalog root]** des **[!UICONTROL Adobe CQ Scene7 PlatformServer]**-Bundles übernommen. Standardmäßig befindet sich dieser Wert unter dem folgenden Pfad unter **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
+Der Speicherort der Standardmanifest-Konfiguration wird aus dem Standardwert für **[!UICONTROL Catalog root]** des **[!UICONTROL Adobe CQ Scene7 PlatformServer]**-Pakete übernommen. Standardmäßig befindet sich dieser Wert unter dem folgenden Pfad unter **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 
 `/conf/global/settings/dam/dm/imageserver/`
 
@@ -1001,248 +999,248 @@ Nach der Installation des Feature Pack müssen Sie die richtigen Standardfarbpro
 
    **Tabelle „Farbkorrektureigenschaften“**
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Eigenschaft</strong></td>
-   <td><strong>Typ</strong></td>
-   <td><strong>Standard</strong></td>
-   <td><strong>Beschreibung</strong></td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=de">iccprofilergb</a></td>
-   <td>Zeichenfolge</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name des standardmäßigen RGB-Profils.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=de">iccprofilecmyk</a></td>
-   <td>Zeichenfolge</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name des standardmäßigen CMYK-Farbprofils.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=de">iccprofilegray</a></td>
-   <td>Zeichenfolge</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name des standardmäßigen grauen Farbprofils.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=de">iccprofilesrcrgb</a></td>
-   <td>Zeichenfolge</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name des standardmäßigen RGB-Farbprofils, das für RGB-Bilder ohne eingebettetes Farbprofil verwendet wird.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=de">iccprofilesrccmyk</a></td>
-   <td>Zeichenfolge</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name des standardmäßigen CMYK-Farbprofils, das für CMYK-Bilder ohne eingebettetes Farbprofil verwendet wird.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=de">iccprofilesrcgray</a></td>
-   <td>Zeichenfolge</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name des standardmäßigen Farbprofils für Grau, das für CMYK-Bilder ohne eingebettetes Farbprofil verwendet wird.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=de">iccblackpointpayment</a></td>
-   <td>Boolesch</td>
-   <td>True</td>
-   <td>Gibt an, ob während der Farbkorrektur eine Schwarzpunktkompensation erfolgt. Adobe empfiehlt, dass diese Einstellung aktiviert ist.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=de">iccdither</a></td>
-   <td>Boolesch</td>
-   <td>False</td>
-   <td>Gibt an, ob die Fehlerdiffusion während der Farbkorrektur durchgeführt wird.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=de">iccrenderintent</a></td>
-   <td>Zeichenfolge</td>
-   <td>relative</td>
-   <td><p>Gibt die Rendering-Absicht an. Zulässige Werte sind: <strong>wahrnehmungsorientiert, relativ, Sättigung, absolut. </strong><i></i>Adobe empfiehlt <strong>relativ</strong><i></i> als Standard.</p> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Eigenschaft</strong></td>
+      <td><strong>Typ</strong></td>
+      <td><strong>Standard</strong></td>
+      <td><strong>Beschreibung</strong></td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=de">iccprofilergb</a></td>
+      <td>Zeichenfolge</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name des standardmäßigen RGB-Profils.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=de">iccprofilecmyk</a></td>
+      <td>Zeichenfolge</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name des standardmäßigen CMYK-Farbprofils.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=de">iccprofilegray</a></td>
+      <td>Zeichenfolge</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name des standardmäßigen grauen Farbprofils.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=de">iccprofilesrcrgb</a></td>
+      <td>Zeichenfolge</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name des standardmäßigen RGB-Farbprofils, das für RGB-Bilder ohne eingebettetes Farbprofil verwendet wird.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=de">iccprofilesrccmyk</a></td>
+      <td>Zeichenfolge</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name des standardmäßigen CMYK-Farbprofils, das für CMYK-Bilder ohne eingebettetes Farbprofil verwendet wird.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=de">iccprofilesrcgray</a></td>
+      <td>Zeichenfolge</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name des standardmäßigen Farbprofils für Grau, das für CMYK-Bilder ohne eingebettetes Farbprofil verwendet wird.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=de">iccblackpointpayment</a></td>
+      <td>Boolesch</td>
+      <td>True</td>
+      <td>Gibt an, ob während der Farbkorrektur eine Schwarzpunktkompensation erfolgt. Adobe empfiehlt, dass diese Einstellung aktiviert ist.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=de">iccdither</a></td>
+      <td>Boolesch</td>
+      <td>False</td>
+      <td>Gibt an, ob die Fehlerdiffusion während der Farbkorrektur durchgeführt wird.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=de">iccrenderintent</a></td>
+      <td>Zeichenfolge</td>
+      <td>relative</td>
+      <td><p>Gibt die Rendering-Absicht an. Zulässige Werte sind: <strong>wahrnehmungsorientiert, relativ, Sättigung, absolut. </strong><i></i>Adobe empfiehlt <strong>relativ</strong><i></i> als Standard.</p> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Bei Eigenschaftsnamen wird zwischen Groß- und Kleinschreibung unterschieden. Es darf nur die Kleinschreibung verwendet werden.
+   >[!NOTE]
+   >
+   >Bei Eigenschaftsnamen wird zwischen Groß- und Kleinschreibung unterschieden. Es darf nur die Kleinschreibung verwendet werden.
 
-**Tabelle „Farbprofile“**
+   **Tabelle „Farbprofile“**
 
-Die folgenden Farbprofile werden installiert:
+   Die folgenden Farbprofile werden installiert:
 
-<table>
- <tbody>
-  <tr>
-   <th><p>Name</p> </th>
-   <th><p>Farbraum</p> </th>
-   <th><p>Beschreibung</p> </th>
-  </tr>
-  <tr>
-   <td>Adobe RGB</td>
-   <td>RGB</td>
-   <td>Adobe RGB (1998)</td>
-  </tr>
-  <tr>
-   <td>AppleRGB</td>
-   <td>RGB</td>
-   <td>Apple RGB</td>
-  </tr>
-  <tr>
-   <td>CIERGB</td>
-   <td>RGB</td>
-   <td>CIE-RGB</td>
-  </tr>
-  <tr>
-   <td>CoatedFogra27</td>
-   <td>CMYK</td>
-   <td>Coated FOGRA27 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>CoatedFogra39</td>
-   <td>CMYK</td>
-   <td>Coated FOGRA39 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>CoatedGraCol</td>
-   <td>CMYK</td>
-   <td>Coated GRACoL 2006 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>ColorMatchRGB</td>
-   <td>RGB</td>
-   <td>ColorMatch-RGB</td>
-  </tr>
-  <tr>
-   <td>EuropeISOCoated</td>
-   <td>CMYK</td>
-   <td>Europe ISO Coated FOGRA27</td>
-  </tr>
-  <tr>
-   <td>EuroscaleCoated</td>
-   <td>CMYK</td>
-   <td>Euro-Skala Coated v2</td>
-  </tr>
-  <tr>
-   <td>EuroscaleUncoated</td>
-   <td>CMYK</td>
-   <td>Euro-Skala, Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>JapanColorCoated</td>
-   <td>CMYK</td>
-   <td>Japan Color 2001 Coated</td>
-  </tr>
-  <tr>
-   <td>JapanColorNewspaper</td>
-   <td>CMYK</td>
-   <td>Japan Color 2002 Newspaper</td>
-  </tr>
-  <tr>
-   <td>JapanColorUncoated</td>
-   <td>CMYK</td>
-   <td>Japan Color 2001 Uncoated</td>
-  </tr>
-  <tr>
-   <td>JapanColorWebCoated</td>
-   <td>CMYK</td>
-   <td>Japan Color 2003 Web Coated</td>
-  </tr>
-  <tr>
-   <td>JapanWebCoated</td>
-   <td>CMYK</td>
-   <td>Japan Web Coated (Ad)</td>
-  </tr>
-  <tr>
-   <td>NewsprintSNAP2007</td>
-   <td>CMYK</td>
-   <td>US Newsprint (SNAP 2007)</td>
-  </tr>
-  <tr>
-   <td>NTSC</td>
-   <td>RGB</td>
-   <td>NTSC (1953)</td>
-  </tr>
-  <tr>
-   <td>PAL</td>
-   <td>RGB</td>
-   <td>PAL/SECAM</td>
-  </tr>
-  <tr>
-   <td>ProPhoto</td>
-   <td>RGB</td>
-   <td>ProPhoto RGB</td>
-  </tr>
-  <tr>
-   <td>PS4Default</td>
-   <td>CMYK</td>
-   <td>Photoshop 4 Standard CMYK</td>
-  </tr>
-  <tr>
-   <td>PS5Default</td>
-   <td>CMYK</td>
-   <td>Photoshop 5 Standard CMYK</td>
-  </tr>
-  <tr>
-   <td>SheetfedCoated</td>
-   <td>CMYK</td>
-   <td>U.S. Sheetfed Coated v2</td>
-  </tr>
-  <tr>
-   <td>SheetfedUncoated</td>
-   <td>CMYK</td>
-   <td>U.S. Sheetfed Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>SMPTE</td>
-   <td>RGB</td>
-   <td>SMPTE-C</td>
-  </tr>
-  <tr>
-   <td>sRGB</td>
-   <td>RGB</td>
-   <td>sRGB IEC61966-2.1</td>
-  </tr>
-  <tr>
-   <td>UncoatedFogra29</td>
-   <td>CMYK</td>
-   <td>Uncoated FOGRA29 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>WebCoated</td>
-   <td>CMYK</td>
-   <td>U.S. Web Coated (SWOP) v2</td>
-  </tr>
-  <tr>
-   <td>WebCoatedFogra28</td>
-   <td>CMYK</td>
-   <td>Web Coated FOGRA28 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade3</td>
-   <td>CMYK</td>
-   <td>Web Coated SWOP 2006 Grade 3 Paper</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade5</td>
-   <td>CMYK</td>
-   <td>Web Coated SWOP 2006 Grade 5 Paper</td>
-  </tr>
-  <tr>
-   <td>WebUncoated</td>
-   <td>CMYK</td>
-   <td>U.S. Web Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>WideGamutRGB</td>
-   <td>RGB</td>
-   <td>Wide Gamut RGB</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <th><p>Name</p> </th>
+      <th><p>Farbraum</p> </th>
+      <th><p>Beschreibung</p> </th>
+   </tr>
+   <tr>
+      <td>Adobe RGB</td>
+      <td>RGB</td>
+      <td>Adobe RGB (1998)</td>
+   </tr>
+   <tr>
+      <td>AppleRGB</td>
+      <td>RGB</td>
+      <td>Apple RGB</td>
+   </tr>
+   <tr>
+      <td>CIERGB</td>
+      <td>RGB</td>
+      <td>CIE-RGB</td>
+   </tr>
+   <tr>
+      <td>CoatedFogra27</td>
+      <td>CMYK</td>
+      <td>Coated FOGRA27 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>CoatedFogra39</td>
+      <td>CMYK</td>
+      <td>Coated FOGRA39 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>CoatedGraCol</td>
+      <td>CMYK</td>
+      <td>Coated GRACoL 2006 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>ColorMatchRGB</td>
+      <td>RGB</td>
+      <td>ColorMatch-RGB</td>
+   </tr>
+   <tr>
+      <td>EuropeISOCoated</td>
+      <td>CMYK</td>
+      <td>Europe ISO Coated FOGRA27</td>
+   </tr>
+   <tr>
+      <td>EuroscaleCoated</td>
+      <td>CMYK</td>
+      <td>Euro-Skala Coated v2</td>
+   </tr>
+   <tr>
+      <td>EuroscaleUncoated</td>
+      <td>CMYK</td>
+      <td>Euro-Skala, Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>JapanColorCoated</td>
+      <td>CMYK</td>
+      <td>Japan Color 2001 Coated</td>
+   </tr>
+   <tr>
+      <td>JapanColorNewspaper</td>
+      <td>CMYK</td>
+      <td>Japan Color 2002 Newspaper</td>
+   </tr>
+   <tr>
+      <td>JapanColorUncoated</td>
+      <td>CMYK</td>
+      <td>Japan Color 2001 Uncoated</td>
+   </tr>
+   <tr>
+      <td>JapanColorWebCoated</td>
+      <td>CMYK</td>
+      <td>Japan Color 2003 Web Coated</td>
+   </tr>
+   <tr>
+      <td>JapanWebCoated</td>
+      <td>CMYK</td>
+      <td>Japan Web Coated (Ad)</td>
+   </tr>
+   <tr>
+      <td>NewsprintSNAP2007</td>
+      <td>CMYK</td>
+      <td>US Newsprint (SNAP 2007)</td>
+   </tr>
+   <tr>
+      <td>NTSC</td>
+      <td>RGB</td>
+      <td>NTSC (1953)</td>
+   </tr>
+   <tr>
+      <td>PAL</td>
+      <td>RGB</td>
+      <td>PAL/SECAM</td>
+   </tr>
+   <tr>
+      <td>ProPhoto</td>
+      <td>RGB</td>
+      <td>ProPhoto RGB</td>
+   </tr>
+   <tr>
+      <td>PS4Default</td>
+      <td>CMYK</td>
+      <td>Photoshop 4 Standard CMYK</td>
+   </tr>
+   <tr>
+      <td>PS5Default</td>
+      <td>CMYK</td>
+      <td>Photoshop 5 Standard CMYK</td>
+   </tr>
+   <tr>
+      <td>SheetfedCoated</td>
+      <td>CMYK</td>
+      <td>U.S. Sheetfed Coated v2</td>
+   </tr>
+   <tr>
+      <td>SheetfedUncoated</td>
+      <td>CMYK</td>
+      <td>U.S. Sheetfed Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>SMPTE</td>
+      <td>RGB</td>
+      <td>SMPTE-C</td>
+   </tr>
+   <tr>
+      <td>sRGB</td>
+      <td>RGB</td>
+      <td>sRGB IEC61966-2.1</td>
+   </tr>
+   <tr>
+      <td>UncoatedFogra29</td>
+      <td>CMYK</td>
+      <td>Uncoated FOGRA29 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>WebCoated</td>
+      <td>CMYK</td>
+      <td>U.S. Web Coated (SWOP) v2</td>
+   </tr>
+   <tr>
+      <td>WebCoatedFogra28</td>
+      <td>CMYK</td>
+      <td>Web Coated FOGRA28 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade3</td>
+      <td>CMYK</td>
+      <td>Web Coated SWOP 2006 Grade 3 Paper</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade5</td>
+      <td>CMYK</td>
+      <td>Web Coated SWOP 2006 Grade 5 Paper</td>
+   </tr>
+   <tr>
+      <td>WebUncoated</td>
+      <td>CMYK</td>
+      <td>U.S. Web Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>WideGamutRGB</td>
+      <td>RGB</td>
+      <td>Wide Gamut RGB</td>
+   </tr>
+   </tbody>
+   </table>
 
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 

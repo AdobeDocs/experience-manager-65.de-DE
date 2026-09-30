@@ -9,13 +9,11 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 100%
-
 ---
-
 # Verwenden von CAPTCHA in adaptiven Formularen{#using-captcha-in-adaptive-forms}
 
 | Version | Artikel-Link |
@@ -24,7 +22,7 @@ ht-degree: 100%
 | AEM 6.5 | Dieser Artikel |
 
 
-<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine herausfordernde Aufgabe und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
 
@@ -238,7 +236,7 @@ Wählen Sie im Formular das Feld **[!UICONTROL Währungswert]** aus und erstelle
 
 >[!NOTE]
 >
-> * Wenn Sie eine reCAPTCHA v2-Konfiguration mit der Größe als **[!UICONTROL Unsichtbar]** oder den reCAPTCHA Enterprise punktebasierten Schlüsseln auswählen, dann ist die Option zum Anzeigen/Verbergen nicht anwendbar.
+>* Wenn Sie eine reCAPTCHA v2-Konfiguration mit der Größe als **[!UICONTROL Unsichtbar]** oder den reCAPTCHA Enterprise punktebasierten Schlüsseln auswählen, dann ist die Option zum Anzeigen/Verbergen nicht anwendbar.
 
 ### CAPTCHA validieren {#validate-captcha}
 

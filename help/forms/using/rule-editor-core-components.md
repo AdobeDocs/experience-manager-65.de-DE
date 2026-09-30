@@ -5,13 +5,11 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 107ad23b-53df-41d4-ab97-b09d189abc1b
-source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '5734'
+source-wordcount: '5748'
 ht-degree: 98%
-
 ---
-
 # Hinzufügen von Regeln zu Kernkomponenten eines adaptiven Formulars {#adaptive-forms-rule-editor}
 
 Dieser Artikel enthält die neuesten Funktionen des Regeleditors für die Kernkomponenten von adaptiven Formularen. Diese sind:
@@ -192,7 +190,7 @@ Wenn bei Feldern mit Mehrfachauswahl in der Wenn-Bedingung Probleme auftreten, f
 
 1. Öffnen Sie das Formular im Bearbeitungsmodus.
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars.
-1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/using/assets/configure-icon.svg). Das Dialogfeld „Container für adaptive Formulare“ wird geöffnet.
+1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/using/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
 1. Klicken Sie auf „Fertig“ und speichern Sie das Dialogfeld erneut.
 
 **[!UICONTROL Ausblenden]**: Blendet das angegebene Objekt aus.
@@ -536,17 +534,11 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
 1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern.
 
-<!--
-1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
+   >[!NOTE]
+   >
+   > Alternativ zu diesem Verfahren können Sie dieses Verhalten auch implementieren, indem Sie für das Feld „Partnergehalt“ lediglich eine Regel vom Typ „Anzeigen“ anstelle zweier Wenn-Regeln für das Feld „Familienstand“ erstellen.
 
-   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
-   -->
-
->[!NOTE]
->
-> Alternativ zu diesem Verfahren können Sie dieses Verhalten auch implementieren, indem Sie für das Feld „Partnergehalt“ lediglich eine Regel vom Typ „Anzeigen“ anstelle zweier Wenn-Regeln für das Feld „Familienstand“ erstellen.
-
-![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
+   ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
 
 1. Als Nächstes erstellen Sie eine Regel für die Berechnung des Kreditanspruchsbetrags (50 % des Gesamtgehalts) und zur Anzeige des Betrags im Feld für den Kreditanspruch. Dies erreichen Sie, indem Sie für das Feld „Kreditanspruch“ Regeln vom Typ **[!UICONTROL Wert festlegen]** erstellen.
 
@@ -611,6 +603,12 @@ Sie können auch die Regel „Wert einstellen von“ verwenden, um den Kreditans
 Sie können eine kombinierte Regel erstellen, die die Sichtbarkeit des Felds für das Gehalt der Partnerin bzw. des Partners steuert, und mit der Sonst-Bedingung den Kreditanspruch für den Familienstand „Verheiratet“ berechnet.
 
 ![write-rules-visual-editor-19](assets/write-rules-visual-editor-19-cc.png)
+
+<!--
+1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
+
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
+-->
 
 
 <!--

@@ -4,13 +4,11 @@ description: Verwenden Sie die Kernkomponenten von adaptiven Formularen in AEM 
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: 91e6fca2-60ba-45f1-98c3-7b3fb1d762f5
-source-git-commit: 130d900a9c268362b75ffa947606c7145a1f8c9d
-workflow-type: ht
-source-wordcount: '631'
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+workflow-type: tm+mt
+source-wordcount: '652'
 ht-degree: 100%
-
 ---
-
 # Versionieren, Überprüfen und Kommentieren eines adaptiven Formulars
 
 <!--
@@ -67,7 +65,8 @@ Formularautorinnen und -autoren können zwei verschiedene Versionen eines Formul
 Bei einer Überprüfung handelt es sich um einen Mechanismus, mit dem ein oder mehrere Überprüfungspersonen zu Formularen Kommentare abgeben können. Alle Formularbenutzenden können ein Formular kommentieren oder anhand von Kommentaren einer Überprüfung unterziehen. Um ein Formular zu kommentieren, wählen Sie ein **[!UICONTROL Formular]** aus und fügen Sie dem Formular einen **[!UICONTROL Kommentar]** hinzu.
 
 >[!NOTE]
-> Wenn Sie, wie oben beschrieben, Kommentare in Kernkomponenten adaptiver Formulare verwenden, ist die Formularfunktion zum [Hinzufügen von Prüferinnen und Prüfern zu Formularen](/help/forms/using/create-reviews-forms.md) deaktiviert.
+>
+>Wenn Sie, wie oben beschrieben, Kommentare in Kernkomponenten adaptiver Formulare verwenden, ist die Formularfunktion zum [Hinzufügen von Prüferinnen und Prüfern zu Formularen](/help/forms/using/create-reviews-forms.md) deaktiviert.
 
 
 ![Hinzufügen von Kommentaren zu einem Formular](assets/form-comments.png)

@@ -1,19 +1,17 @@
 ---
 title: Verwalten von [!DNL Adobe Stock] Assets
-description: Suchen, lizenzieren, verwalten und rufen Sie [!DNL Adobe Stock] -Assets in [!DNL Adobe Experience Manager] ab. Nutzen Sie die lizenzierten Assets wie jedes andere digitale Asset.
+description: Suchen, Abrufen, Lizenzieren und Verwalten [!DNL Adobe Stock] Assets aus [!DNL Adobe Experience Manager]. Nutzen Sie die lizenzierten Assets wie jedes andere digitale Asset.
 contentOwner: Vishabh Gupta
 feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 1c2c350e91fe9a0a67618ea4ec00d4a8b4e3f0ca
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2275'
 ht-degree: 99%
-
 ---
-
 # Verwenden von [!DNL Adobe Stock]-Assets in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 
 | Version | Artikel-Link |
@@ -119,9 +117,9 @@ Führen Sie die folgenden Schritte aus, um ein Programm in der [!DNL Developer C
 1. Klicken Sie auf **[!UICONTROL Add to project]** (Zum Projekt hinzufügen) und wählen Sie **[!UICONTROL API]** aus.
 1. Wählen Sie **[!UICONTROL Adobe Stock]** aus und klicken Sie auf **[!UICONTROL Next]** (Weiter).
 1. Geben Sie einen **[!UICONTROL Berechtigungsnamen]** an, stellen Sie sicher, dass **[!UICONTROL OAuth Server-to-Server]** (OAuth-Server-zu-Server) ausgewählt ist, und klicken Sie dann auf **[!UICONTROL Next]** (Weiter).
-1. Wählen Sie **[!UICONTROL AEM Assets]** **[!UICONTROL Produktprofil]** aus und klicken Sie auf **[!UICONTROL Konfigurierte API speichern]**. Eine Erfolgsmeldung wird angezeigt, die bestätigt, dass Sie ein Projekt im [!DNL Developer Console] erstellt haben. Das Dashboard Ihres Projekts wird geöffnet. Es zeigt den Projektnamen oben, **[!UICONTROL Adobe Stock]** unter **[!UICONTROL APIS]** und **[!UICONTROL AEM Assets]** unter **[!UICONTROL Produktprofil]** und **[!UICONTROL OAuth Server-zu-Server]** Berechtigungskarte unter **[!UICONTROL Connected credentials]** an.
+1. Wählen Sie das **[!UICONTROL Produktprofil]** für **[!UICONTROL AEM Assets]** aus und klicken Sie auf **[!UICONTROL Save Configured API]** (Konfiguriertes API speichern). Es wird eine Erfolgsmeldung angezeigt, die bestätigt, dass Sie ein Projekt in der [!DNL Developer Console] erstellt haben. Das Dashboard Ihres Projekts wird geöffnet und zeigt oben den Projektnamen, **[!UICONTROL Adobe Stock]** unter **[!UICONTROL APIS]**, **[!UICONTROL AEM Assets]** unter **[!UICONTROL Product profile]** (Produktprofil) und die Berechtigungskarte **[!UICONTROL OAuth Server-to-Server]** unter **[!UICONTROL Connected Credentials]** (Verbundene Anmeldedaten) an.
    ![Integrieren von AEM Assets und Adobe Stock](/help/assets/assets/adc-project-name.png)
-1. Wählen Sie **[!UICONTROL OAuth Server-zu-Server]** Zugangsdaten -Karte aus. Die **[!UICONTROL Details zu Anmeldeinformationen]** wird angezeigt. Verwenden Sie diese [!DNL OAuth Server-to-Server] Anmeldeinformationen Ihres Projekts wie **[!UICONTROL Client-ID]**, **[!UICONTROL Client Secret]**, **[!UICONTROL Scope]**, **[!UICONTROL Credential-Name]**, **[!UICONTROL Technical Account ID]**, **[!UICONTROL Organization ID]**, [Konfiguration in der AEM-Autoreninstanz hinzuzufügen](#add-configuration-in-the-aem-author-instance).
+1. Wählen Sie die Berechtigungskarte **[!UICONTROL OAuth Server-to-Server]** aus. Daraufhin werden die **[!UICONTROL Berechtigungsdetails]** angezeigt. Verwenden Sie diese [!DNL OAuth Server-to-Server]-Berechtigungsdetails Ihres Projekts wie **[!UICONTROL Client-ID]**, **[!UICONTROL Client-Geheimnis]**, **[!UICONTROL Bereich]**, **[!UICONTROL Berechtigungsname]**, **[!UICONTROL ID des technischen Kontos]** und **[!UICONTROL Organisations-ID]**, um die [Konfiguration in der AEM-Autoreninstanz hinzuzufügen](#add-configuration-in-the-aem-author-instance).
    ![AEM Assets und Adobe Stock](/help/assets/assets/oauth-server-server-credentials-details-page.png)
 
 ### Hinzufügen der Konfiguration in der [!DNL AEM]-Autoreninstanz {#add-configuration-in-the-aem-author-instance}
@@ -163,6 +161,7 @@ Führen Sie die folgenden Schritte aus, um die Cloud-Konfiguration zum Verbinden
    * **[!UICONTROL Gebietsschema]**: Wählen Sie **[!UICONTROL Englisch (Vereinigte Staaten)]** aus.
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
    ![Verwenden von Adobe Stock mit AEM](/help/assets/assets/adobe-stock-config-page.png)
+
 <!--
 old content
 ## Steps to integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integration-steps}
@@ -306,7 +305,8 @@ To configure the [!DNL Adobe Stock] cloud service:
    ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
 
 1. Click **[!UICONTROL Save & Close]**. 
- -->
+-->
+
 Ihre [!DNL Experience Manager Assets]-Autoreninstanz ist jetzt in [!DNL Adobe Stock] integriert. Sie können mehrere [!DNL Adobe Stock]-Konfigurationen (z. B. gebietsschemabasierte Konfigurationen) erstellen. Sie können nun über die [!DNL Experience Manager]-Benutzeroberfläche auf die [!DNL Adobe Stock]-Assets zugreifen, sie durchsuchen und lizenzieren.
 
 ![search-stock-assets](assets/aem-stock-searchstocks.png)

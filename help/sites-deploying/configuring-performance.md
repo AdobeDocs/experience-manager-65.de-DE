@@ -1,21 +1,23 @@
 ---
 title: Leistungsoptimierung
+
 description: Erfahren Sie, wie Sie bestimmte Aspekte von AEM konfigurieren, um die Leistung zu optimieren.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
+
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '6649'
 ht-degree: 99%
-
 ---
-
 # Leistungsoptimierung {#performance-optimization}
 
 >[!NOTE]
@@ -153,11 +155,11 @@ Beachten Sie Folgendes, um die Leistung zu verbessern:
 
 * 80 % aller Bearbeitungen erfolgen in 20 % der Zeit. In Spitzenzeiten beträgt die Datenrate also viermal so viel wie im Durchschnitt. Eine solche Leistung ist Ihr Ziel.
 
-## Performance-Überwachung {#performance-monitoring}
+## Überwachen der Performance {#performance-monitoring}
 
 Die Leistung (oder das Fehlen der Leistung) ist eines der ersten Dinge, die Ihre Benutzerinnen und Benutzer bemerken. Wie bei jeder Anwendung mit einer Benutzeroberfläche ist die Leistung von entscheidender Bedeutung. Um die Leistung Ihrer AEM-Installation zu optimieren, müssen Sie verschiedene Attribute der Instanz und ihr Verhalten überwachen.
 
-Weitere Informationen zur Leistungsüberwachung finden Sie unter [Überwachen der Leistung](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
+Weitere Informationen zum Überwachen der Performance finden Sie unter [Überwachen der Performance](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
 
 Die Probleme, die zu Leistungseinbußen führen, sind oft schwer aufzuspüren, lassen sich oft nur schwer nachvollziehen, selbst wenn ihre Auswirkungen leicht erkennbar sind.
 
@@ -456,7 +458,7 @@ Alle vorgenommenen Optimierungen müssen auf folgende Bedingungen hin getestet w
 * Sie dürfen die Funktionalität nicht beeinträchtigen.
 * Sie wurden vor ihrer Veröffentlichung Belastungstests unterzogen.
 
-Für Lastgenerierung, Leistungsüberwachung und/oder Ergebnisanalyse stehen eine Reihe von Tools zur Verfügung. Einige dieser Tools umfassen Folgendes:
+Für Lastgenerierung, Überwachung der Performance und/oder Ergebnisanalyse stehen eine Reihe von Tools zur Verfügung. Einige dieser Tools umfassen Folgendes:
 
 * [JMeter](https://jmeter.apache.org/)
 * [InfraRED](https://www.infraredsoftware.com/)

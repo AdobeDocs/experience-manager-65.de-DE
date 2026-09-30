@@ -10,11 +10,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 100%
-
+source-wordcount: '742'
+ht-degree: 98%
 ---
-
 # SAP Commerce Cloud{#sap-commerce-cloud}
 
 >[!NOTE]
@@ -35,8 +33,8 @@ Dies ist in der englischen (US) Version (`/content/geometrixx-outdoors/en_US`) d
 
 * [Produktinformationen](#productinformationwithcolorvariants) (mit Farbvarianten sofern zutreffend)
 
-* [Übersicht über den Warenkorbinhalt ](#shoppingcartcontentoverview)
-* [Kundenregistrierung](#customersignup) und [Kundenanmeldung](#customersignin) 
+* [Übersicht über den Warenkorbinhalt](#shoppingcartcontentoverview)
+* [Kundenregistrierung](#customersignup) und [Kundenanmeldung](#customersignin)
 
 * [Zugriff auf die Hybris-Verwaltungskonsole](#accesstothehybrismanagementconsole)
 
@@ -58,18 +56,18 @@ Zum Installieren der E-Commerce-Funktionalität benötigen Sie Folgendes:
 * Ihren Hybris-Server
 * AEM eCommerce-Framework:
 
-   * Dies ist Teil einer Standardinstallation von AEM
+  * Dies ist Teil einer Standardinstallation von AEM
 
 * AEM Geometrixx-all-Paket:
 
-   * `cq-geometrixx-all-pkg`
+  * `cq-geometrixx-all-pkg`
 
 * AEM Hybris-Inhaltspakete:
 
-   * `cq-hybris-content-6.3.2`
-   * Hybris-spezifische API-Implementierung
-   * `cq-geometrixx-hybris-content-6.3.2`
-   * Eine Referenzimplementierung zur Veranschaulichung der Funktionsweise von Hybris (`geometrixx-outdoors/en_US`)
+  * `cq-hybris-content-6.3.2`
+  * Hybris-spezifische API-Implementierung
+  * `cq-geometrixx-hybris-content-6.3.2`
+  * Eine Referenzimplementierung zur Veranschaulichung der Funktionsweise von Hybris (`geometrixx-outdoors/en_US`)
 
 ### Installation von eCommerce mit Hybris {#installation-of-ecommerce-with-hybris}
 
@@ -80,7 +78,7 @@ Zur Installation einer vollständigen Konfiguration (unter Verwendung des Demons
 
    1. ` [cq-geometrixx-all-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq60/product/cq-geometrixx-all-pkg)`
 
-1. Installieren Sie die Demonstrations-Inhaltspakete mithilfe von [Package Manager](/help/sites-administering/package-manager.md):
+1. Installieren Sie die Demonstrations-Inhaltspakete mithilfe des [Paket-Managers](/help/sites-administering/package-manager.md):
 
    1. ` [cq-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-hybris-content)`
    1. ` [cq-geometrixx-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-geometrixx-hybris-content)`
@@ -143,7 +141,7 @@ Mit den Schritten in diesem Verfahren wird der Hybris-Server heruntergeladen und
    ```
 
 
-[Datei abrufen](/help/sites-deploying/assets/setup.groovy)
+   [Datei abrufen](/help/sites-deploying/assets/setup.groovy)
 
    >[!NOTE]
    >
@@ -151,12 +149,12 @@ Mit den Schritten in diesem Verfahren wird der Hybris-Server heruntergeladen und
 
    5.6.0 und höher
 
-[Datei abrufen](/help/sites-deploying/assets/setup-1.groovy)
+   [Datei abrufen](/help/sites-deploying/assets/setup-1.groovy)
 
 1. Geben Sie in der Befehlszeile Folgendes ein, um:
 
-   * die Konfiguration des Hybris-Servers zu aktualisieren (gemäß der Anforderung der Erweiterung); 
-   * den Hybris-Server mit der geänderten Konfiguration einzurichten; 
+   * die Konfiguration des Hybris-Servers zu aktualisieren (gemäß der Anforderung der Erweiterung);
+   * den Hybris-Server mit der geänderten Konfiguration einzurichten;
    * den Server zu starten.
 
    ```shell
@@ -204,7 +202,7 @@ Mit diesem Verfahren wird der Store „Geometrixx Online“ zur Veranschaulichun
 1. Erweitern Sie in der Sidebar-Navigation **System** und **Tools**. Wählen Sie anschließend **Importieren** aus, um das Fenster **Assistent: CSV-Import** zu öffnen.
 1. Verwenden Sie auf der Registerkarte **Konfiguration** die Option **Hochladen**, um die folgende **Importdatei** hochzuladen:
 
-[Datei abrufen](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
+   [Datei abrufen](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
 
 1. Definieren Sie **Locale Setting** folgendermaßen:
 
@@ -213,7 +211,7 @@ Mit diesem Verfahren wird der Store „Geometrixx Online“ zur Veranschaulichun
 1. Öffnen Sie die Registerkarte **Ressourcen**.
 1. Verwenden Sie die Option **Hochladen** zum Hochladen der folgenden **Medien-ZIP-Datei**:
 
-[Datei abrufen](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
+   [Datei abrufen](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
 
 1. Klicken Sie auf **Start**, um die angegebenen Dateien zu importieren. Auf der Registerkarte **Ergebnis** werden etwaige Protokolleinträge angezeigt.
 
@@ -223,11 +221,11 @@ Mit diesem Verfahren wird der Store „Geometrixx Online“ zur Veranschaulichun
 
 1. **Laden** Sie die folgende **Importdatei** hoch:
 
-[Datei abrufen](/help/sites-deploying/assets/base-store.csv)
+   [Datei abrufen](/help/sites-deploying/assets/base-store.csv)
 
    Verwenden Sie für Hybris 5.7 Folgendes:
 
-[Datei abrufen](/help/sites-deploying/assets/base-store-5_7.csv)
+   [Datei abrufen](/help/sites-deploying/assets/base-store-5_7.csv)
 
 1. Definieren Sie **Locale Setting** folgendermaßen:
 

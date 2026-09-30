@@ -5,13 +5,11 @@ exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2662'
+source-wordcount: '2667'
 ht-degree: 95%
-
 ---
-
 # Anpassen von Adobe Experience Manager-CIF-Kernkomponenten {#customize-cif-components}
 
 Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine Referenz-Code-Basis für die Verwendung von [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components). In diesem Tutorial wird beschrieben, wie Sie die Komponente [Produkt-Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) weiter erweitern können, um ein benutzerdefiniertes Attribut von Adobe Commerce anzuzeigen. Außerdem erfahren Sie mehr über die GraphQL-Integration zwischen Adobe Experience Manager (AEM) und Adobe Commerce sowie die von den CIF-Kernkomponenten bereitgestellten Erweiterungs-Hooks.
@@ -405,7 +403,7 @@ In diesem Fall möchten Sie ein Banner über dem Teaser darstellen, um anzuzeige
 
    Dies bedeutet, dass das Sling-Modell ordnungsgemäß bereitgestellt und der richtigen Komponente zugeordnet wurde.
 
-1. Aktualisieren Sie die **Venia-Startseite** unter [http://localhost /editor.html/content/venia/us/en.html:4502](http://localhost:4502/editor.html/content/venia/us/en.html), wo der Produkt-Teaser hinzugefügt wurde.
+1. Aktualisieren Sie die **Venia-Startseite** unter [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html), wo der Produkt-Teaser hinzugefügt wurde.
 
    ![Nachricht für „Umweltfreundlich“ wird angezeigt](../assets/customize-cif-components/eco-friendly-text-displayed.png)
 
@@ -474,7 +472,7 @@ An diesem Punkt funktioniert die Logik dafür, wann das Zeichen **Umweltfreundli
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. Aktualisieren Sie die **Venia-Startseite** unter [http://localhost /editor.html/content/venia/us/en.html:4502](http://localhost:4502/editor.html/content/venia/us/en.html), wo der Produkt-Teaser hinzugefügt wurde.
+1. Aktualisieren Sie die **Venia-Startseite** unter [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html), wo der Produkt-Teaser hinzugefügt wurde.
 
    ![Abzeichen für „Umweltfreundlich“ – endgültige Implementierung](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 

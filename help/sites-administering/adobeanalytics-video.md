@@ -10,13 +10,11 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 100%
-
+source-wordcount: '1817'
+ht-degree: 99%
 ---
-
 # Konfigurieren von Video-Tracking für Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
 Es gibt mehrere Methoden für das Tracking von Video-Ereignissen. Zwei von ihnen sind Legacy-Optionen für ältere Versionen von Adobe Analytics. Diese Legacy-Optionen sind: Legacy Milestones und Legacy Seconds.
@@ -227,7 +225,7 @@ Aufrufe an Adobe Analytics mit dem gezeigten Beispiel sollten wie folgt aussehen
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Dies ist der **erste Aufruf**an Adobe Analytics mit den folgenden Werten:*
+*Dies ist der **erste Aufruf**&#x200B;an Adobe Analytics mit den folgenden Werten:*
 
 * *prop1 und eVar1 für eventdata.a.media.name,*
 * *props2–4 zusammen mit eVar2 und eVar3, wobei contentType (video) und segment (1:O:1–4) enthalten sind*
@@ -235,7 +233,7 @@ Aufrufe an Adobe Analytics mit dem gezeigten Beispiel sollten wie folgt aussehen
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Dies ist der **dritte Aufruf**an Adobe Analytics:*
+*Dies ist der **dritte Aufruf**&#x200B;an Adobe Analytics:*
 
 * *prop1 und eVar1 enthalten a.media.name;*
 * *event1, da ein Segment angesehen wurde*
@@ -270,7 +268,7 @@ eventdata.events.milestoneXX
    10,25,50,75
    ```
 
-   Die Offset-Werte müssen ganzzahlig und größer 0 sein. 
+   Die Offset-Werte müssen ganzzahlig und größer 0 sein.
 
 1. Um die CQ-Variablen zu Adobe Analytics-Eigenschaften zuzuordnen, ziehen Sie die Adobe Analytics-Eigenschaften vom Content Finder neben der CQ-Variablen auf die Komponente.
 
@@ -293,26 +291,26 @@ Diese Methode ähnelt der Milestones-Methode, mit dem Unterschied, dass die im F
 
    Die Informationen, die an Adobe Analytics gesendet werden, sind nur begrenzt anpassbar. Für die Zuordnung stehen nur drei Variablen zur Verfügung:
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>Variablen, die dieser Eigenschaft zugeordnet sind, enthalten den <strong>Anzeigenamen</strong> (<strong>Titel</strong>) des Videos, sofern dieser im DAM festgelegt ist. Wenn dieser nicht festgelegt ist, wird stattdessen der <strong>Dateiname</strong> gesendet. Nur einmal gesendet, zu Beginn der Videowiedergabe.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>Variablen, die dieser Eigenschaft zugeordnet sind, enthalten den Namen der Datei. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>Hier zugeordnete Variablen enthalten den Dateipfad auf dem Server. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>Variablen, die dieser Eigenschaft zugeordnet sind, enthalten den <strong>Anzeigenamen</strong> (<strong>Titel</strong>) des Videos, sofern dieser im DAM festgelegt ist. Wenn dieser nicht festgelegt ist, wird stattdessen der <strong>Dateiname</strong> gesendet. Nur einmal gesendet, zu Beginn der Videowiedergabe.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>Variablen, die dieser Eigenschaft zugeordnet sind, enthalten den Namen der Datei. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>Hier zugeordnete Variablen enthalten den Dateipfad auf dem Server. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Um den **Anzeigename** eines Videos festzulegen, öffnen Sie das Video zur Bearbeitung im DAM-System und geben Sie im Metadatenfeld **Titel** den gewünschten Namen ein. Wenn Sie fertig sind, müssen Sie die Änderungen speichern.
+   >[!NOTE]
+   >
+   >Um den **Anzeigename** eines Videos festzulegen, öffnen Sie das Video zur Bearbeitung im DAM-System und geben Sie im Metadatenfeld **Titel** den gewünschten Namen ein. Wenn Sie fertig sind, müssen Sie die Änderungen speichern.
 
 1. Ordnen Sie diese Variablen zu props 1 bis 3 zu.
 
@@ -350,26 +348,26 @@ Bei Nutzung der **Legacy Seconds**-Methode werden Adobe Analytics-Aufrufe alle N
 
    Die Informationen, die an Adobe Analytics gesendet werden, sind weniger anpassbar. Für die Zuordnung stehen nur drei Variablen zur Verfügung:
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>Variablen, die dieser Eigenschaft zugeordnet sind, enthalten den <strong>Anzeigenamen</strong> (<strong>Titel</strong>) des Videos, sofern dieser im DAM festgelegt ist. Wenn dieser nicht festgelegt ist, wird stattdessen der <strong>Dateiname</strong> gesendet. Nur einmal gesendet, zu Beginn der Videowiedergabe.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>Die dieser Eigenschaft zugeordnete Variable enthält den Namen der Datei. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>Hier zugeordnete Variablen enthalten den Dateipfad auf dem Server. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>Variablen, die dieser Eigenschaft zugeordnet sind, enthalten den <strong>Anzeigenamen</strong> (<strong>Titel</strong>) des Videos, sofern dieser im DAM festgelegt ist. Wenn dieser nicht festgelegt ist, wird stattdessen der <strong>Dateiname</strong> gesendet. Nur einmal gesendet, zu Beginn der Videowiedergabe.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>Die dieser Eigenschaft zugeordnete Variable enthält den Namen der Datei. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>Hier zugeordnete Variablen enthalten den Dateipfad auf dem Server. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Um den **Anzeigename** eines Videos festzulegen, öffnen Sie das Video zur Bearbeitung im DAM-System und geben Sie im Metadatenfeld **Titel** den gewünschten Namen ein. Wenn Sie fertig sind, müssen Sie die Änderungen speichern.
+   >[!NOTE]
+   >
+   >Um den **Anzeigename** eines Videos festzulegen, öffnen Sie das Video zur Bearbeitung im DAM-System und geben Sie im Metadatenfeld **Titel** den gewünschten Namen ein. Wenn Sie fertig sind, müssen Sie die Änderungen speichern.
 
 1. Ordnen Sie diese Variablen zu prop1, prop2 und prop3 zu.
 
@@ -379,7 +377,7 @@ Bei Nutzung der **Legacy Seconds**-Methode werden Adobe Analytics-Aufrufe alle N
 
    ![lseconds](assets/lseconds.png)
 
-   *Der Aufruf ähnelt dem o. g. Legacy Milestones-Aufruf.  Siehe die Informationen zu pev3 unter [Integrieren mit Adobe Analytics](/help/sites-administering/adobeanalytics.md).*
+   *Der Aufruf ähnelt dem o. g. Legacy Milestones-Aufruf. Siehe die Informationen zu pev3 unter [Integrieren mit Adobe Analytics](/help/sites-administering/adobeanalytics.md).*
 
 **In diesem Tutorial verwendete Referenzen:**
 
