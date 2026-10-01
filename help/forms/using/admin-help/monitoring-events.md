@@ -1,21 +1,23 @@
 ---
 title: Überwachen von Ereignissen
+
 description: Wenn die Auditing-Funktion aktiviert ist, können Sie mithilfe von Document Security bestimmte Ereignistypen überwachen. Mithilfe von Document Security können Sie die Ereignisliste einfach durchsuchen und sortieren.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: Document Security
 exl-id: 078b9ad1-16e2-40f4-92dc-e4093c0bb6ac
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 100%
-
+source-wordcount: '968'
+ht-degree: 94%
 ---
-
 # Überwachen von Ereignissen {#monitoring-events}
 
 Wenn die Auditing-Funktion aktiviert ist, können Sie mithilfe von Document Security bestimmte Ereignistypen überwachen. Die Ereignisse, die Sie sehen können, hängen von Ihrer Rolle ab:
@@ -58,19 +60,19 @@ Sie können auf der Seite „Ereignisse“ nach Ereignissen suchen, indem Sie ei
 
 **Benutzer:** Sind in der Lage, geprüfte Ereignisse für ihre richtliniengeschützten Dokumente sowie andere geschützte Dokumente, die sie erhalten und verwenden, anzuzeigen. Die folgenden Suchoptionen sind verfügbar:
 
-**Ereignisse, die mich 
-betreffen:** Benutzer können nach Ereignissen für die richtliniengeschützten Dokumente suchen, die sie erstellt oder empfangen haben. Wenn ein Benutzer beispielsweise ein Dokument öffnet, anzeigt oder druckt, das von einer anderen Person geschützt wurde, werden dem Benutzer diese Ereignisse nur für dieses Dokument angezeigt.
+**Ereignisbezogen
+an mich:** Benutzer können nach Ereignissen für die richtliniengeschützten Dokumente suchen, die sie erstellt oder empfangen haben. Wenn ein Benutzer beispielsweise ein Dokument öffnet, anzeigt oder druckt, das von einer anderen Person geschützt wurde, werden dem Benutzer diese Ereignisse nur für dieses Dokument angezeigt.
 
 **Ereignisse, die meine Dokumente betreffen:** Benutzer können alle Ereignisse finden, die im Zusammenhang mit ihren eigenen richtliniengeschützten Dokumenten stehen. Der Benutzer sieht die Ereignisse, die von allen Personen generiert wurden, die Umgang mit seinen Dokumenten hatten.
 
-**Richtliniensatzkoordinatoren:** Sind in der Lage, geprüfte Ereignisse, einschließlich Dokument- und Richtlinienereignissen, für Dokumente anzuzeigen, die von Richtlinien in ihren Richtliniensätzen geschützt werden. Die folgenden Optionen stehen zur Auswahl:  
+**Richtliniensatzkoordinatoren:** Sind in der Lage, geprüfte Ereignisse, einschließlich Dokument- und Richtlinienereignissen, für Dokumente anzuzeigen, die von Richtlinien in ihren Richtliniensätzen geschützt werden. Die folgenden Optionen stehen zur Auswahl:
 
-**Dokumentereignisse,
-wenn ich Richtliniensatzkoordinator bin:** Richtliniensatzkoordinatoren mit der Berechtigung zum Anzeigen von Ereignissen können Ereignisse finden, die Dokumente betreffen, die von Richtlinien in ihren Richtliniensätzen geschützt werden.
+**Dokumentereignisse, bei denen
+Ich bin Richtliniensatzkoordinator:** Richtliniensatzkoordinatoren mit der Berechtigung zum Anzeigen von Ereignissen können Ereignisse finden, die Dokumente betreffen, die von Richtlinien in ihren Richtliniensätzen geschützt werden.
 
 **Richtlinienereignisse, wenn ich Richtliniensatzkoordinator bin:** Richtliniensatzkoordinatoren mit der Berechtigung zum Anzeigen von Ereignissen können Ereignisse finden, die mit Richtlinien in ihren Richtliniensätzen in Zusammenhang stehen.
 
-**Administratoren:** Sind in der Lage, geprüfte Ereignisse im Zusammenhang mit allen richtliniengeschützten Dokumenten und Benutzern anzuzeigen. Admins können darüber hinaus andere Typen nachverfolgen.  Außerdem können Admins die Ereignissuche je nach Benutzertyp weiter unterteilen:
+**Administratoren:** Sind in der Lage, geprüfte Ereignisse im Zusammenhang mit allen richtliniengeschützten Dokumenten und Benutzern anzuzeigen. Admins können darüber hinaus andere Typen nachverfolgen. Außerdem können Admins die Ereignissuche je nach Benutzertyp weiter unterteilen:
 
 **Bekannte Benutzer:** Benutzer, die in den Quellordnern gefunden werden können oder als externe Benutzer registriert sind.
 
@@ -79,7 +81,7 @@ wenn ich Richtliniensatzkoordinator bin:** Richtliniensatzkoordinatoren mit der 
 **Systembenutzer:** Vom Server ausgelöste Ereignisse, z. B. eine Ordnersynchronisierung.
 
 1. Klicken Sie auf der Document Security-Seite auf „Ereignisse“.
-1. Wählen Sie in der Liste „Suchen“ die gewünschten Suchkriterien aus.  Abhängig von der Auswahl in der Liste „Suchen“ wird eine zweite Liste mit weiteren Suchkriterien angezeigt.  Geben Sie, falls möglich, in das Textfeld die Suchkriterien ein.
+1. Wählen Sie in der Liste „Suchen“ die gewünschten Suchkriterien aus. Abhängig von der Auswahl in der Liste „Suchen“ wird eine zweite Liste mit weiteren Suchkriterien angezeigt. Geben Sie, falls möglich, in das Textfeld die Suchkriterien ein.
 
    Weitere Einzelheiten zu bestimmten Ereignistypen finden Sie unter [Ereignis-Auditing-Optionen](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).
 

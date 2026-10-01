@@ -11,11 +11,9 @@ feature: Document Security
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 100%
-
+source-wordcount: '1237'
+ht-degree: 99%
 ---
-
 # Konfigurieren von SSL für WebSphere Application Server {#configuring-ssl-for-websphere-application-server}
 
 In diesem Abschnitt werden die folgenden Schritte zum Konfigurieren von SSL für IBM WebSphere Application Server beschrieben.
@@ -45,7 +43,7 @@ Zum Aktivieren von SSL muss WebSphere in der Benutzerregistrierung des lokalen B
 1. Öffnen Sie die Gruppendatei aus dem Ordner „/etc“ in einem Texteditor.
 1. Fügen Sie der Gruppe `root` den Benutzer hinzu, den Sie in Schritt 2 erstellt haben.
 1. Speichern und schließen Sie die Datei.
-1. (UNIX mit aktiviertem SSL) Starten und beenden Sie WebSphere als Root-Benutzer bzw. -Benutzerin.
+1. (UNIX mit aktiviertem SSL) Starten und stoppen Sie WebSphere als Root-Benutzer bzw. -Benutzerin.
 
 ### Erstellen von Windows-Benutzenden für WebSphere {#create-a-windows-user-for-websphere}
 
@@ -71,12 +69,12 @@ Zum Aktivieren von SSL muss WebSphere in der Benutzerregistrierung des lokalen B
 1. Wählen Sie unter „Administrative security“ (Administrative Sicherheit) die Option **Administrative user roles** (Administrative Benutzerrollen) aus.
 1. Klicken Sie auf „Add“ (Hinzufügen) und führen Sie folgende Schritte aus:
 
-   1. Geben Sie im Suchfeld ***** ein und klicken Sie auf „Suchen“.
+   1. Geben Sie **&amp;ast;** in das Suchfeld ein und klicken Sie auf „Suchen“.
    1. Klicken Sie unter „Roles“ (Rollen) auf **Administrator** (Admin).
    1. Fügen Sie die neu erstellte Benutzerin bzw. den neu erstellten Benutzer zu „Mapped to role“ (Zugeordnet zur Rolle) hinzu und ordnen Sie diese Person der Rolle „Administrator“ (Admin) zu.
 
 1. Klicken Sie auf **OK**, um die Änderungen zu speichern.
-1. Starten Sie das WebSphere-Profil erneut.
+1. Starten Sie das WebSphere-Profil neu.
 
 ## Aktivieren der administrativen Sicherheit {#enable-administrative-security}
 
@@ -86,7 +84,7 @@ Zum Aktivieren von SSL muss WebSphere in der Benutzerregistrierung des lokalen B
 1. Wählen Sie **Federated Repositories** und klicken Sie auf **Weiter**.
 1. Geben Sie die gewünschten Anmeldeinformationen an und klicken Sie auf **Weiter**.
 1. Klicken Sie auf **Beenden**.
-1. Starten Sie das WebSphere-Profil erneut.
+1. Starten Sie das WebSphere-Profil neu.
 
    WebSphere verwendet zunächst den standardmäßigen Keystore und TrustStore.
 
@@ -121,7 +119,7 @@ Truststores und Keystores können mithilfe ides Dienstprogramms „ikeyman“ od
 1. Wählen Sie aus den Dropdown-Listen „Truststore-Name“ und „Keystore-Name“ den benutzerdefinierten Truststore und Keystore aus, die Sie erstellt haben.
 1. Klicken Sie auf **Übernehmen**.
 1. Speichern Sie die primäre Konfiguration.
-1. Starten Sie das WebSphere-Profil erneut.
+1. Starten Sie das WebSphere-Profil neu.
 
    Ihr Profil wird jetzt mit benutzerdefinierten SSL-Einstellungen und Ihrem Zertifikat ausgeführt.
 
@@ -130,7 +128,7 @@ Truststores und Keystores können mithilfe ides Dienstprogramms „ikeyman“ od
 1. Wählen Sie in der WebSphere Administrative Console **Security > Global Security**.
 1. Erweitern Sie im Abschnitt „Authentication“ die **RMI/IIOP security** und klicken Sie auf **CSIv2 inbound communications (Eingehende CSIv2-Kommunikationen)**.
 1. Vergewissern Sie sich, dass **SSL-unterstützt** in der Dropdown-Liste „Transport“ ausgewählt ist.
-1. Starten Sie das WebSphere-Profil erneut.
+1. Starten Sie das WebSphere-Profil neu.
 
 ## Konfigurieren von WebSphere zum Konvertieren von URLs, die mit „https“ beginnen {#configuring-websphere-to-convert-urls-that-begins-with-https}
 

@@ -12,11 +12,9 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1961'
-ht-degree: 100%
-
+source-wordcount: '2007'
+ht-degree: 97%
 ---
-
 
 # ClientContext{#client-context}
 
@@ -41,13 +39,13 @@ In der Veröffentlichungs- und Autorenumgebung werden Informationen zu Folgendem
 ![ClientContext-Fenster mit den Symbolen zum Bearbeiten, Laden und Zurücksetzen](do-not-localize/clientcontext_icons.png)
 
 * **Bearbeiten**
-Eine neue Seite wird geöffnet. Dort können Sie [Profileigenschaften bearbeiten, hinzufügen oder entfernen](#editingprofiledetails).
+Eine neue Seite wird geöffnet. Dort können [ (Profileigenschaften bearbeiten, hinzufügen oder entfernen](#editingprofiledetails).
 
-* **Laden**
-Sie können [aus einer Liste von Profilen auswählen und das Profil laden](#loading-a-new-user-profile), das getestet werden soll.
+* **laden**
+Sie können [aus einer Liste von Profilen auswählen und das Profil laden](#loading-a-new-user-profile) das Sie testen möchten.
 
 * **Zurücksetzen**
-Sie können [das Profil auf den aktuellen Benutzer zurücksetzen](#resetting-the-profile-to-the-current-user).
+Sie können [Profil zurücksetzen](#resetting-the-profile-to-the-current-user) auf den aktuellen Benutzer zurücksetzen.
 
 ## Verfügbare ClientContext-Komponenten {#available-client-context-components}
 

@@ -1,20 +1,20 @@
 ---
 title: Konfigurieren von Dateitypeinstellungen
 description: Erfahren Sie, wie Sie Dateitypeinstellungen konfigurieren. In PDF Generator können Sie die Anwendungseinstellungen für unterstützte Dateitypen einrichten, um die Einstellungen für Dateitypen zu konfigurieren.
+
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
+
 feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '6200'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '6281'
+ht-degree: 97%
 ---
-
 # Konfigurieren von Dateitypeinstellungen {#configuring-file-type-settings}
 
 >[!NOTE]
@@ -52,35 +52,35 @@ Erstellen oder bearbeiten Sie eine Dateitypeinstellung, um anzugeben, wie das Pr
 
 1. Füllen Sie die erforderlichen Informationen in diesen Abschnitten aus:
 
-[PDF Generator-Konfigurationsdateien importieren und exportieren](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+   [PDF Generator-Konfigurationsdateien importieren und exportieren](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
 
-[Adobe PDF-Exporteinstellungen (nur Windows)](#adobe-pdf-export-settings-windows-only)
+   [Adobe PDF-Exporteinstellungen (nur Windows)](#adobe-pdf-export-settings-windows-only)
 
-[„HTML in PDF“-Einstellungen](#html-to-pdf-settings)
+   [„HTML in PDF“-Einstellungen](#html-to-pdf-settings)
 
-[„Flashvideos in PDF“-Einstellungen](#flash-videos-to-pdf-settings)
+   [„Flashvideos in PDF“-Einstellungen](#flash-videos-to-pdf-settings)
 
-[„XPS in PDF“-Einstellungen](#xps-to-pdf-settings)
+   [„XPS in PDF“-Einstellungen](#xps-to-pdf-settings)
 
-[PDF-Optimierungseinstellungen](/help/forms/using/admin-help/configuring-file-type-settings.md)
+   [PDF-Optimierungseinstellungen](/help/forms/using/admin-help/configuring-file-type-settings.md)
 
-[Microsoft Excel-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
+   [Microsoft Excel-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
 
-[Microsoft PowerPoint-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
+   [Microsoft PowerPoint-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
 
-[Microsoft Project-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
+   [Microsoft Project-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
 
-[Microsoft Word-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
+   [Microsoft Word-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
 
-[Microsoft Visio-Einstellungen (nur Windows)](#visio)
+   [Microsoft Visio-Einstellungen (nur Windows)](#visio)
 
-[Microsoft Publisher-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
+   [Microsoft Publisher-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
 
-[AutoCAD-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
+   [AutoCAD-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
 
-[OpenOffice-Einstellungen](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
+   [OpenOffice-Einstellungen](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
 
-[Einstellungen anderer Anwendungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
+   [Einstellungen anderer Anwendungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
 
    Um zu einem anderen Abschnitt zu wechseln, klicken Sie auf dessen Link auf der Webseite oder auf eine der Schaltflächen **[!UICONTROL Weiter]** oder **[!UICONTROL Zurück]**.
 
@@ -259,9 +259,9 @@ Anweisungen zum Zugriff auf diese Einstellung finden Sie unter [Erstellen oder B
 
    >[!NOTE]
    >
-   >*Wenn Sie die Einbettung für einige Schriftarten aufheben möchten, von denen Untergruppen im Dokument eingebettet sind, setzen Sie das Symbol „+“ vor den Namen der Schriftart. Beispiel: „+Helvetica“.*
+   >*Wenn Sie die Einbettung für einige Schriftarten aufheben möchten, von denen Teilmengen im Dokument eingebettet sind, setzen Sie das Symbol „+“ vor den Namen der Schriftart. Beispiel: „+Helvetica“.*
 
-1. Wenn Sie lediglich die verwendeten Untergruppen der eingebetteten Schriftarten einbetten möchten, wählen Sie **Alle eingebetteten Schriftarten in Untergruppe zusammenfassen**.
+1. Wenn Sie lediglich die verwendeten Teilmengen der eingebetteten Schriftarten einbetten möchten, wählen Sie **Alle eingebetteten Schriftarten in Teilmenge zusammenfassen**.
 
    >[!NOTE]
    >
@@ -269,7 +269,7 @@ Anweisungen zum Zugriff auf diese Einstellung finden Sie unter [Erstellen oder B
 
    >[!NOTE]
    >
-   >*Die Schrifteinbettung in Untergruppen ist eine Vorgehensweise für die Einbettung eines Teils einer Schriftart. Eine Schriftartuntergruppe enthält nur die im Dokument verwendeten Zeichen.*
+   >*Die Schrifteinbettung in Untergruppen ist eine Vorgehensweise für die Einbettung eines Teils einer Schriftart. Eine Schriftartteilmenge enthält nur die im Dokument verwendeten Zeichen.*
 
 ### Transparenz {#transparency}
 
@@ -317,7 +317,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 Die folgende Tabelle zeigt gängige Druckertypen und ihre Auflösung in dpi, ihre Standard-Rasterweite in Zeilen pro Zoll (lpi) und eine Resampling-Auflösung für Bilder in Pixel pro Zoll (ppi). Wenn Sie beispielsweise auf einem 600-dpi-Laserdrucker drucken, geben Sie 170 für die Auflösung ein, mit der Bilder neu berechnet werden sollen.
 
-**Bilder**: Wählen Sie diese Option, um Komprimierungs- und Neuberechnungsoptionen für Farb-, Graustufen- und Schwarzweißbilder festzulegen. Sie können mit diesen Optionen experimentieren, um einen guten Kompromiss zwischen Dateigröße und Bildqualität zu finden. Die Auflösungseinstellung für Farb- und Graustufenbilder sollte dem 1,5- bis 2-fachen der Rasterweitenlinierung entsprechen, mit der die Datei gedruckt wird. Die Auflösung für Schwarzweißbilder sollte mit der des Ausgabegeräts übereinstimmen. Das Speichern eines Schwarzweißbilds mit einer Auflösung von mehr als 1500 dpi erhöht allerdings die Dateigröße, ohne die Bildqualität spürbar zu verbessern. Bilder, die vergrößert werden, wie beispielsweise Karten, erfordern möglicherweise höhere Auflösungen.
+**Bilder**: Wählen Sie diese Option, um Komprimierungs- und Neuberechnungsoptionen für Farb-, Graustufen- und Schwarzweißbilder festzulegen. Sie können mit diesen Optionen experimentieren, um ein angemessenes Gleichgewicht zwischen Dateigröße und Bildqualität zu finden.Die Auflösungseinstellung für Farb- und Graustufenbilder sollte dem 1,5- bis 2-Fachen der Rasterlinieneinstellung entsprechen, mit der die Datei gedruckt wird. Die Auflösung für Schwarzweißbilder sollte mit der des Ausgabegeräts übereinstimmen. Das Speichern eines Schwarzweißbilds mit einer Auflösung von mehr als 1500 dpi erhöht allerdings die Dateigröße, ohne die Bildqualität spürbar zu verbessern. Bilder, die vergrößert werden, wie beispielsweise Karten, erfordern möglicherweise höhere Auflösungen.
 
 >[!NOTE]
 >
@@ -416,7 +416,7 @@ Diese Optionen bestimmen, wie Microsoft Excel-Dateien konvertiert werden. Anweis
 
 **Dateinamenerweiterungen**: Legt die Dateinamenerweiterungen für Dateitypen fest (durch Kommas getrennt), die für diese Anwendung akzeptiert werden. Der Standardwert lautet `xls,xlsx`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
 
-**PDF/A-1a-kompatible Datei erstellen**: Erzwingt die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005(RGB)“.
+**PDF/A-1a-kompatible Datei erstellen**: Erzwingt die Verwendung der RGB Adobe PDF-Einstellung &quot;PDF/A-1b:2005“.
 
 **Lesezeichen zu Adobe PDF hinzufügen**: Konvertiert Namen von Excel-Arbeitsblättern in Lesezeichen. Standardmäßig ist diese Option aktiviert.
 
@@ -470,7 +470,7 @@ Diese Optionen bestimmen, wie Microsoft PowerPoint-Dateien konvertiert werden. A
 
 **[!UICONTROL Ausgeblendete Folien in PDF-Seiten konvertieren]**: Konvertiert ausgeblendete Folien.
 
-**[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005 RGB“. Einige PowerPoint-Funktionen werden bei der Erstellung einer PDF-Datei nicht konvertiert. Wenn eine PowerPoint-Transition in Acrobat keine äquivalente Transition aufweist, wird eine ähnliche Transition ersetzt. Wenn sich mehrere Animationseffekte in derselben Folie befinden, wird ein einzelner Effekt verwendet. Seitenübergänge und Aufzählungszeichen werden konvertiert.
+**[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der RGB Adobe PDF-Einstellung &quot;PDF/A-1b:2005“. Einige PowerPoint-Funktionen werden bei der Erstellung einer PDF-Datei nicht konvertiert. Wenn eine PowerPoint-Transition in Acrobat keine äquivalente Transition aufweist, wird eine ähnliche Transition ersetzt. Wenn sich mehrere Animationseffekte in derselben Folie befinden, wird ein einzelner Effekt verwendet. Seitenübergänge und Aufzählungszeichen werden konvertiert.
 
 ## Microsoft Project-Einstellungen (nur Windows) {#microsoft-project-settings-windows-only}
 
@@ -480,7 +480,7 @@ Diese Optionen bestimmen, wie Microsoft-Projektdateien konvertiert werden. Anwei
 
 1. **[!UICONTROL Dokumentinformationen konvertieren]**: Fügt Dokumentinformationen aus dem Dialogfeld „Eigenschaften“ der Quelldatei hinzu, einschließlich Titel, Thema, Autor, Schlüsselwörtern, Manager, Unternehmen, Kategorie und Kommentaren. Standardmäßig ist diese Option aktiviert.
 1. **[!UICONTROL Quelldatei an Adobe PDF anfügen]**: Fügt die Quelldatei der PDF-Datei als Anlage hinzu.
-1. **[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005(RGB)“.
+1. **[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der RGB Adobe PDF-Einstellung &quot;PDF/A-1b:2005“.
 1. **[!UICONTROL Makros automatisch ausführen]**: Führt vor dem Konvertieren des Dokuments alle Makros im Microsoft Project-Dokument aus (z. B. ein Makro, das die aktuelle Uhrzeit einfügt).
 
 ## Microsoft Word-Einstellungen (nur Windows) {#microsoft-word-settings-windows-only}
@@ -501,7 +501,7 @@ Diese Optionen bestimmen, wie Microsoft Word-Dateien konvertiert werden. Anweisu
 
 **[!UICONTROL Eingabehilfe und Umfließen mit Adobe PDF mit Tags aktivieren]**: Bettet Tags in die PDF-Datei ein. Standardmäßig ist diese Option aktiviert.
 
-**[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt, falls ausgewählt, die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005(RGB)“.
+**[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der Einstellung &quot;PDF/A-1b:2005 RGB Adobe PDF&quot;, falls ausgewählt.
 
 **[!UICONTROL Makros automatisch ausführen]**: Führt vor dem Konvertieren des Dokuments alle Makros im Word-Dokument aus (z. B. als ein Makro, das die aktuelle Uhrzeit einfügt).
 
@@ -543,7 +543,7 @@ Wenn ein Microsoft Word-Formatvorlagenname ein Komma (,) oder ein Gleichheitszei
 
 **Ebenenbedienfeld öffnen, wenn es in Adobe Acrobat angezeigt wird**: Öffnet, falls Visio-Ebenen nicht reduziert werden, ein Fenster, in dem Sie die Ebenen angeben können, die in der PDF-Dateien beibehalten werden, wenn sie mithilfe von Acrobat geöffnet werden. Standardmäßig ist diese Option aktiviert.
 
-**PDF/A-1b-kompatible Datei erstellen**: Erzwingt die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005 (RGB)“.
+**PDF/A-1b-kompatible Datei erstellen**: Erzwingt die Verwendung der Adobe PDF-Einstellung PDF/A-1b:2005 (RGB).
 
 **Kommentare in Adobe PDF-Kommentare konvertieren**: Konvertiert Visio-Notizen in PDF-Kommentare.
 

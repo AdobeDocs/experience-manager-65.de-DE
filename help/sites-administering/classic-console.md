@@ -12,11 +12,9 @@ feature: Administering
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 100%
-
+source-wordcount: '905'
+ht-degree: 94%
 ---
-
 
 # Tagging-Konsole der klassischen Benutzeroberfläche{#classic-ui-tagging-console}
 
@@ -30,7 +28,8 @@ So greifen Sie auf die Tagging-Konsole der klassischen Benutzeroberfläche zu:
 
 * in der Autoreninstanz
 * Melden Sie sich mit Administratorrechten an.
-* Navigieren Sie zur Konsole, zum Beispiel [https://localhost:4502/tagging](https://localhost:4502/tagging).
+* Navigieren Sie zur Konsole .
+Beispiel: [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
 ![Fenster der klassischen Konsole](assets/managing_tags_usingthetagasministrationconsole.png)
 
@@ -48,19 +47,20 @@ So greifen Sie auf die Tagging-Konsole der klassischen Benutzeroberfläche zu:
 
 1. Geben Sie in beiden Fällen Folgendes ein:
 
-   * **Titel**
-(*Erforderlich*) Der Anzeigetitel für das Tag. Auch wenn es bei der Eingabe keine verbotenen Zeichen gibt, wird empfohlen, keines dieser Sonderzeichen zu verwenden:
+   * **title**
+     (*Erforderlich*) Der Anzeigetitel für das Tag. Während ein beliebiges Zeichen eingegeben werden kann,
+     Es wird empfohlen, diese Sonderzeichen nicht zu verwenden:
 
-      * `colon (:)` – Namespace-Trennzeichen
-      * `forward slash (/)` – Trennzeichen für untergeordnete Tags
+     * `colon (:)` – Namespace-Trennzeichen
+     * `forward slash (/)` – Trennzeichen für untergeordnete Tags
 
      Diese Zeichen werden möglicherweise nicht angezeigt, wenn sie eingegeben werden.
 
-   * **Name**
-(*Erforderlich*) Der Knotenname für das Tag.
+   * **name**
+     (*Erforderlich*) Der Knotenname für das Tag.
 
    * **Beschreibung**
-(*Optional*) Eine Beschreibung für das Tag.
+     (*Optional*) Eine Beschreibung für das Tag.
 
    * Wählen Sie **Erstellen** aus.
 

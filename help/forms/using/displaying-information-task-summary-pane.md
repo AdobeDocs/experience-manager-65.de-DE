@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 100%
-
+source-wordcount: '266'
+ht-degree: 99%
 ---
-
 # Anzeigen von Informationen in der Aufgabenzusammenfassung {#displaying-information-in-the-task-summary-pane}
 
 Wenn Sie eine Aufgabe in AEM Forms Workspace öffnen, kann eine Zusammenfassung der Aufgabe in einem entsprechenden Fenster angezeigt werden. Diese zusätzlichen und relevanten Informationen für eine Aufgabe bieten den Endbenutzenden von AEM Forms Workspace einen Mehrwert.

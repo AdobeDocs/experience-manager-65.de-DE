@@ -1,21 +1,21 @@
 ---
 title: Konfigurieren von Sicherheitseinstellungen
 description: Erfahren Sie, wie Sie die Sicherheitseinstellungen konfigurieren. Sie können PDF-Dokumente schützen, indem Sie den Zugriff einschränken. Sie können das Dokument verschlüsseln, zertifizieren oder mit einem Passwort schützen.
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: PDF Generator,Document Security
 exl-id: be076477-2681-4570-953d-6c44d3c30843
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1430'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '1443'
+ht-degree: 88%
 ---
-
 # Konfigurieren von Sicherheitseinstellungen{#configuring-security-settings}
 
 Sie können den Zugriff auf PDF-Dokumente einschränken, indem Sie Passwörter festlegen und bestimmte Funktionen wie Drucken und Bearbeiten einschränken. Wenn ein PDF-Dokument eingeschränkte Funktionen aufweist, sind die damit verbundenen Tools und Menüelemente grau unterlegt. Sie können auch andere Methoden verwenden, um sichere Dokumente zu erstellen, z. B. das Verschlüsseln oder Zertifizieren eines Dokuments. Eine Sicherheitseinstellung enthält das Kennwort und bestimmte Optionen, die für bestimmte PDF-Konvertierungen verwendet werden sollen.
@@ -61,11 +61,11 @@ Stellen Sie sicher, dass die Kompatibilitätsstufe mit der PDF-Kompatibilitätss
 
 **Gesamten Dokumentinhalt verschlüsseln:** Verschlüsselt das Dokument und die Dokumentmetadaten. Bei Aktivierung dieser Option können Suchmaschinen nicht auf die Dokumentmetadaten zugreifen.
 
-**Gesamten Dokumentinhalt mit Ausnahme von Metadaten verschlüsseln (Acrobat
+**Gesamten Dokumentinhalt mit Ausnahme von Metadaten verschlüsseln (Acrobat)
 6 und höher kompatibel):** Verschlüsselt den Inhalt eines Dokuments, ermöglicht jedoch Suchmaschinen den Zugriff auf die Dokumentmetadaten. Diese Option ist nur verfügbar, wenn die Option „Kompatibilität“ auf „Acrobat 6.0 und höher“, „Acrobat 7.0 und höher“ oder „Acrobat 9.0 und höher“ festgelegt ist.
 
-**Nur Dateianlagen verschlüsseln (Acrobat 7 und höher
-kompatibel):** Benutzer können das Dokument ohne Kennwort öffnen, müssen jedoch ein Kennwort eingeben, um Dateianlagen zu öffnen. Diese Option ist nur verfügbar, wenn die Option „Kompatibilität“ auf Acrobat 7.0 oder höher oder auf Acrobat 9.0 oder höher eingestellt ist.
+**Nur Dateianlagen verschlüsseln (Acrobat 7 und höher)
+Kompatibel):** Benutzer können das Dokument ohne Kennwort öffnen, müssen jedoch ein Kennwort eingeben, um Dateianlagen zu öffnen. Diese Option ist nur verfügbar, wenn die Option „Kompatibilität“ auf Acrobat 7.0 oder höher oder auf Acrobat 9.0 oder höher eingestellt ist.
 
 Mit diesen Einstellungen wird die Passwortsicherheit konfiguriert:
 
@@ -87,8 +87,8 @@ Mit diesen Einstellungen wird die Passwortsicherheit konfiguriert:
 
 Diese Optionen konfigurieren die Berechtigungen:
 
-**Kennwort verwenden, um das Drucken und Bearbeiten des 
-Dokuments bzw. seiner Sicherheitseinstellungen einzuschränken:** Ermöglicht die Einschränkung von Berechtigungen.
+**Kennwort verwenden, um das Drucken und Bearbeiten von
+Das Dokument und seine Sicherheitseinstellungen** Aktiviert Berechtigungsbeschränkungen.
 
 **Berechtigungskennwort:** Schränkt das Drucken und Bearbeiten für Benutzer ein. Benutzende können diese Sicherheitseinstellungen nur ändern, wenn sie das von Ihnen festgelegte Passwort eingeben. Sie können nicht dasselbe Passwort verwenden, das für das Öffnen von Dokumenten verwendet wird. Wenn Sie ein Berechtigungspasswort festlegen, können nur die Personen, die dieses Passwort eingeben, die Sicherheitseinstellungen ändern. Wenn das PDF-Dokument beide Passworttypen aufweist, lässt es durch eines der beiden Passwörter öffnen. Allerdings können Benutzende die eingeschränkten Funktionen nur mit dem Berechtigungspasswort einstellen oder ändern. Wenn das PDF-Dokument nur über das Berechtigungspasswort verfügt oder wenn Benutzende das Dokument mit dem Passwort zum Öffnen des Dokuments öffnen, wird die Passwortaufforderung angezeigt, wenn Benutzende versuchen, die Sicherheitseinstellungen zu ändern.
 
@@ -108,21 +108,21 @@ Dokuments bzw. seiner Sicherheitseinstellungen einzuschränken:** Ermöglicht di
 
 **Seiten einfügen, löschen und drehen:** Ermöglicht Benutzenden das Einfügen, Löschen und Drehen von Seiten sowie das Erstellen von Lesezeichen und Miniaturansichten. Diese Option ist nur verfügbar, wenn ein hoher Verschlüsselungsgrad (Acrobat 5.0, 6.0, 7.0 oder 9.0) aktiviert ist.
 
-**Ausfüllen von Formularfeldern und Unterschreiben vorhandener 
-Unterschriftsfelder:** Ermöglicht Benutzern das Ausfüllen von Formularen und das Hinzufügen digitaler Signaturen. Benutzende können jedoch keine Kommentare hinzufügen oder Formularfelder erstellen. Diese Option ist nur verfügbar, wenn ein hoher Verschlüsselungsgrad (Acrobat 5.0, 6.0, 7.0 oder 9.0) aktiviert ist.
+**Ausfüllen von Formularfeldern und Unterschreiben vorhandener Signaturen
+Felder:** Benutzer können Formulare ausfüllen und digitale Signaturen hinzufügen. Benutzende können jedoch keine Kommentare hinzufügen oder Formularfelder erstellen. Diese Option ist nur verfügbar, wenn ein hoher Verschlüsselungsgrad (Acrobat 5.0, 6.0, 7.0 oder 9.0) aktiviert ist.
 
-**Kommentieren, Ausfüllen von Formularfeldern und Unterschreiben vorhandener 
-Unterschriftsfelder:** Ermöglicht Benutzern das Ausfüllen von Formularen und das Hinzufügen digitaler Signaturen und Kommentare.
+**Kommentieren, Ausfüllen von Formularfeldern und Unterschreiben vorhandener
+Signaturfelder:** Benutzer können Formulare ausfüllen und digitale Signaturen und Kommentare hinzufügen.
 
-**Seitenlayout, TouchUp-Funktion, Ausfüllen von Formularfeldern und Unterschreiben 
-vorhandener Unterschriftsfelder:** Ermöglicht Benutzern das Einfügen, Drehen oder Löschen von Seiten sowie das Erstellen von Lesezeichen oder Miniaturbildern, das Ausfüllen von Formularen und das Hinzufügen digitaler Signaturen. Mit dieser Option können Benutzende keine Formularfelder erstellen. Diese Option ist nur verfügbar, wenn eine niedrige Verschlüsselungsstufe (Acrobat 3.0) gewählt wurde.
+**Seitenlayout, TouchUp-Funktion, Ausfüllen von Formularfeldern und Signieren
+Vorhandene Signaturfelder:** Ermöglicht Benutzern das Einfügen, Drehen oder Löschen von Seiten sowie das Erstellen von Lesezeichen oder Miniaturbildern, das Ausfüllen von Formularen und das Hinzufügen digitaler Signaturen. Mit dieser Option können Benutzende keine Formularfelder erstellen. Diese Option ist nur verfügbar, wenn eine niedrige Verschlüsselungsstufe (Acrobat 3.0) gewählt wurde.
 
 **Alles außer Extrahieren von Seiten:** Ermöglicht Benutzern das Ändern des Dokuments über alle in der Liste „Zulässige Änderungen“ angegebenen Methoden, jedoch nicht das Entfernen von Seiten.
 
 **Kopieren von Text, Bildern und anderem Inhalt aktivieren:** Ermöglicht es Benutzern, den Inhalt des PDF-Dokuments auszuwählen und zu kopieren. Außerdem können Dienstprogramme, die Zugriff auf den Inhalt einer PDF-Datei benötigen, wie z. B. Acrobat Catalog, auf diese Inhalte zugreifen. Diese Option ist nur verfügbar, wenn ein hoher Verschlüsselungsgrad ausgewählt ist.
 
-**Textzugriff für Sprachausgabeprogramme für 
-Sehbehinderte aktivieren:** Benutzer mit Sehbehinderung können das Dokument mithilfe von Bildschirmlesehilfen lesen. Allerdings können die Benutzenden den Inhalt des Dokuments nicht kopieren oder extrahieren. Diese Option ist nur verfügbar, wenn ein hoher Verschlüsselungsgrad ausgewählt ist.
+**Textzugriff von Reader-Bildschirmgeräten für den
+Sehbehinderte** Benutzende mit Sehbehinderung können das Dokument mithilfe von Bildschirmlesehilfen lesen. Allerdings können die Benutzenden den Inhalt des Dokuments nicht kopieren oder extrahieren. Diese Option ist nur verfügbar, wenn ein hoher Verschlüsselungsgrad ausgewählt ist.
 
 ## Löschen einer Sicherheitseinstellung {#delete-a-security-setting}
 

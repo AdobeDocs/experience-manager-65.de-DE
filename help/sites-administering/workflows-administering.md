@@ -11,11 +11,9 @@ feature: Operations
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 100%
-
+source-wordcount: '1015'
+ht-degree: 95%
 ---
-
 # Verwalten der Workflow-Instanzen{#administering-workflow-instances}
 
 Die Workflow-Konsole stellt mehrere Tools für die Verwaltung von Workflow-Instanzen bereit, um sicherzustellen, dass sie wie erwartet ausgeführt werden.
@@ -96,12 +94,12 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 Schlägt ein Workflow fehl, ermöglicht Ihnen AEM mit der **Fehler-Konsole** die Untersuchung und das Ergreifen entsprechender Maßnahmen, sobald die ursprüngliche Ursache behoben wurde:
 
 * **Fehlerdetails**
-Öffnet ein Fenster zum Anzeigen von **Fehlermeldung**, **Schritt**, und **Fehlerstapel**.
+Öffnet ein Fenster zum Anzeigen von **Fehlermeldung**, **Schritt** und **Fehlerstapel**.
 
-* **Verlauf öffnen**
-Die Details des Workflow-Verlaufs werden angezeigt.
+* **Offener Verlauf**
+Zeigt Details zum Workflow-Verlauf an.
 
-* **Schritt erneut ausführen** – Führt die Instanz der Komponente „Script Step“ erneut aus. Verwenden Sie den Befehl „Schritt erneut ausführen“, nachdem Sie die Ursache des ursprünglichen Fehlers behoben haben. Wiederholen Sie zum Beispiel den Schritt nach der Behebung eines Bugs in dem Skript, das vom Prozessschritt ausgeführt wird.
+* **Schritt erneut ausführen** – Führt die Instanz der Komponente „Script Step“ erneut aus. Verwenden Sie den Befehl „Schritt erneut ausführen“, nachdem Sie die Ursache des ursprünglichen Fehlers behoben haben. Wiederholen Sie zum Beispiel den Schritt nach der Behebung eines Fehlers in dem Skript, das vom Prozessschritt ausgeführt wird.
 * **Beenden** – Beendet den Workflow, wenn der Fehler eine nicht mit dem Workflow zu vereinbarende Situation verursacht hat. So kann der Workflow beispielsweise von Umgebungsbedingungen abhängen, wie etwa von Informationen im Repository, die nicht mehr für die Workflow-Instanz gelten.
 * **Beenden und erneut versuchen** – Dies hat ähnliche Auswirkungen wie **Beenden**, außer dass eine neue Workflow-Instanz mit der ursprünglichen Payload und Beschreibung sowie dem ursprünglichen Titel gestartet wird.
 
@@ -189,7 +187,7 @@ Von Workflows verarbeitete Daten werden im von Adobe bereitgestellten Speicher (
 
 Auf der Ebene des Workflow-Modells wird ein Flag bereitgestellt, das angibt, dass das Modell (und seine Laufzeitinstanzen) über eine externe Datenspeicherung von Metadaten verfügt. Workflow-Variablen werden in JCR nicht für die Workflow-Instanzen der Modelle persistiert, die für die externe Speicherung markiert sind.
 
-Die Eigenschaft *userMetadataPersistenceEnabled* wird im *jcr:content-Knoten* des Workflow-Modells gespeichert. Dieses Flag wird in Workflow-Metadaten als *cq:userMetaDataCustomPersistenceEnabled* beibehalten.
+Die Eigenschaft *userMetadataPersistenceEnabled* wird im *jcr:content-Knoten* Workflow-Modells gespeichert. Dieses Flag wird in Workflow-Metadaten als *cq:userMetaDataCustomPersistenceEnabled* beibehalten.
 
 Die folgende Illustration zeigt, wie Sie die Hervorhebung in einem Workflow festlegen.
 

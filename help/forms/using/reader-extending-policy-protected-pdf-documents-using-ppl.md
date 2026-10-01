@@ -1,21 +1,23 @@
 ---
 title: Anwenden der Reader Extension auf richtliniengeschützte PDF-Dokumente mit Portable Protection Library
+
 description: Reader-Erweiterungen ermöglichen über Acrobat Reader interaktive Funktionen in Adobe PDF-Dokumenten. Sie können die Portable Protection Library (PPL) verwenden, um DRM-geschützten PDF-Dokumenten Reader-Erweiterungen hinzuzufügen.
+
+
 contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
+
 feature: Document Security,Reader Extensions
 exl-id: fe5d83e8-5e36-4146-a20a-dab2213055e2
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '828'
 ht-degree: 100%
-
 ---
-
 # Reader-erweiternde richtliniengeschützte PDF-Dokumente mit der Portable Protection Library {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
 Machen Sie sich mit den Konzepten der Dokumentensicherheit, der Reader-Erweiterung und der Programmiersprache Java vertraut, um eine Reader-Erweiterung für die durch die Dokumentensicherheit richtliniengeschützten PDF-Dokumente durchzuführen.
@@ -24,7 +26,7 @@ Mithilfe der Dokumentensicherheit können Sie den Zugriff auf bestimmte PDF-Doku
 
 Sie können Reader-Erweiterungen verwenden, um über Acrobat Reader interaktive Funktionen in Adobe PDF-Dokumenten zu aktivieren. Diese interaktiven Funktionen sind normalerweise nur über Adobe Acrobat Professional und Standard verfügbar. Weitere Informationen zu den interaktiven Funktionen, die Readererweiterung aktivieren kann, finden Sie unter [DocAssurance-Dienst für Adobe Experience Manager Forms ](/help/forms/using/overview-aem-document-services.md)**.**
 
-Sie können die Portable Protection Library verwenden, um Richtlinien auf das Dokument anzuwenden, ohne dass das Dokument über das Netzwerk gesendet werden muss.  Nur die Sicherheitsberechtigungen und Details der Schutzrichtlinie werden über das Netzwerk gesendet. Das eigentliche Dokument verlässt nie den Client und die Schutzrichtlinien werden lokal auf dem Client angewendet.
+Sie können die Portable Protection Library verwenden, um Richtlinien auf das Dokument anzuwenden, ohne dass das Dokument über das Netzwerk gesendet werden muss. Nur die Sicherheitsberechtigungen und Details der Schutzrichtlinie werden über das Netzwerk gesendet. Das eigentliche Dokument verlässt nie den Client und die Schutzrichtlinien werden lokal auf dem Client angewendet.
 
 ## Reader-Erweiterungen für PDF-Dokumente, die durch die Dokumentensicherheit richtliniengeschützt sind {#reader-extending-document-security-policy-protected-pdf-documents}
 

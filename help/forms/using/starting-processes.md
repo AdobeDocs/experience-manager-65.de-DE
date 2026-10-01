@@ -11,14 +11,12 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 100%
-
+source-wordcount: '1356'
+ht-degree: 98%
 ---
-
 # Starten von Prozessen {#starting-processes}
 
-In AEM Forms Workspace werden Prozesse aufgrund der vom Administrator oder Prozessentwickler festgelegten Kategorien organisiert. Sie können häufig verwendete Prozesse auch in der Kategorie „Favoriten“ platzieren, um den Zugriff zu erleichtern.
+In AEM Forms Workspace werden Prozesse aufgrund der vom Administrator oder Prozess-Design festgelegten Kategorien organisiert. Sie können häufig verwendete Prozesse auch in der Kategorie „Favoriten“ platzieren, um den Zugriff zu erleichtern.
 
 Beim Starten eines Prozesses müssen Sie eventuell ein Formular ausfüllen, um einen von AEM Forms gesteuerten Geschäftsprozess zu starten. Wenn ein Formular den vorbereitenden Datenprozess verwendet, können einige Informationen in einem leeren Formular zuvor ausgefüllt werden, wenn ein neuer Prozess initiiert wird.
 

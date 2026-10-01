@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 100%
-
+source-wordcount: '623'
+ht-degree: 98%
 ---
-
 # Texteditor anpassen{#customize-text-editor}
 
 ## Überblick {#overview}
@@ -31,7 +29,7 @@ In den Schrifteinstellungen können Sie folgende Änderungen vornehmen:
 
 Gehen Sie folgendermaßen vor:
 
-1. [Anpassen von Schriftarten, indem Sie die Datei „tbxeditor-config.xml“ in CRX bearbeiten ](#customizefonts)
+1. [Anpassen von Schriftarten, indem Sie die Datei „tbxeditor-config.xml“ in CRX bearbeiten](#customizefonts)
 1. [Fügen Sie dem Clientcomputer benutzerdefinierte Schriftarten hinzu](#addcustomfonts)
 
 ## Anpassen von Schriftarten durch Bearbeiten der Datei „tbxeditor-config.xml“ in CRX {#customizefonts}
@@ -178,8 +176,8 @@ Wenn Sie auf eine Schriftart im Correspondence Management-Texteditor zugreifen, 
 
 Weitere Informationen zum Installieren von Schriftarten finden Sie hier:
 
-* [Installieren oder Deinstallieren von Schriftarten unter Windows](https://windows.microsoft.com/de-de/windows-vista/install-or-uninstall-fonts) 
-* [Mac-Grundlagen: Schriftartenbuch](https://support.apple.com/de-de/HT201749) 
+* [Installieren oder Deinstallieren von Schriftarten unter Windows](https://windows.microsoft.com/de-de/windows-vista/install-or-uninstall-fonts)
+* [Mac-Grundlagen: Schriftartenbuch](https://support.apple.com/de-de/HT201749)
 
 ## Zugriff auf Schriftartanpassungen {#access-font-customizations}
 

@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '463'
 ht-degree: 1%
-
 ---
-
 # Suchfunktion {#search-feature}
 
 Die Suchfunktion arbeitet mit verschiedenen anderen Funktionen wie Foren zusammen, um die Suche nach Inhalten zu ermöglichen.
@@ -53,7 +51,7 @@ Geben **[!UICONTROL auf der Registerkarte]** Sucheinstellungen“ an, welche Pfa
 * **[!UICONTROL Suchpfade]**
 Durch Hinzufügen von Suchpfaden mit der Schaltfläche Element hinzufügen wird die Inhaltssuche eingeschränkt. Um die Suche beispielsweise auf ein bestimmtes Forum zu beschränken, wählen Sie eine Forenkomponente aus, die in einer Seite platziert wird:
 
-   * `/content/community-components/en/forum/jcr:content/content/forum`
+  * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL Ergebnisseite]**
 Die Ergebnisse werden auf einer separaten Seite angezeigt, die mithilfe des Browsers angegeben wird, um eine Seite auszuwählen, die die `Search Results` enthält.

@@ -12,11 +12,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '4024'
+source-wordcount: '4125'
 ht-degree: 100%
-
 ---
-
 # Arbeiten mit Aufgabenlisten{#working-with-to-do-lists}
 
 Beim Aufrufen Ihrer Aufgabenlisten sehen Sie möglicherweise Aufgaben aus einem Geschäftsprozess, die Ihnen oder Gruppen, denen Sie angehören, zugewiesen sind oder bei denen es sich um freigegebene Aufgaben von anderen Benutzenden handelt. Indem Sie beispielsweise eine Anforderung genehmigen bzw. ablehnen oder neue Informationen hinzufügen, können Sie die Aufgaben je nach Bedarf öffnen, bearbeiten oder abschließen. Wenn Sie eine Aufgabe abgeschlossen haben, wird sie an die nächste Person im Geschäftsprozess gesendet.
@@ -45,10 +43,10 @@ Welche Werkzeuge Ihnen beim Öffnen und Bearbeiten von Aufgaben zur Verfügung s
 
 * **Überprüfung durch mehrere Benutzer**: Sie erhalten eine Aufgabe gleichzeitig mit anderen Benutzenden. Sie und die anderen Benutzer müssen Informationen eingeben, den Inhalt überprüfen oder beides. Für diesen Aufgabentyp stehen die folgenden Werkzeuge zur Verfügung:
 
-   * Anzeigen der Aufgabenanweisungen
-   * Anzeigen des Fertigstellungsstatus aller Benutzenden, denen die Aufgabe zugewiesen wurde
-   * Anzeigen der Kommentare aller Benutzenden, denen die Aufgabe zugewiesen wurde
-   * Hinzufügen eigener Kommentare zu der Aufgabe
+  * Anzeigen der Aufgabenanweisungen
+  * Anzeigen des Fertigstellungsstatus aller Benutzenden, denen die Aufgabe zugewiesen wurde
+  * Anzeigen der Kommentare aller Benutzenden, denen die Aufgabe zugewiesen wurde
+  * Hinzufügen eigener Kommentare zu der Aufgabe
 
 Weitere Werkzeuge, die bei den oben angegebenen Aufgaben verfügbar sind:
 
@@ -373,7 +371,7 @@ Wenn Ihnen der Zugriff auf die Aufgabenliste eines anderen Benutzers gewährt wu
 
 Für geplante Abwesenheitszeiten können Sie festlegen, was während dieser Zeit mit den Ihnen zugeordneten Aufgaben passieren soll.
 
-Sie haben die Möglichkeit, ein Anfangs- und Enddatum sowie eine Anfangs- und Enduhrzeit für die Gültigkeit der Abwesenheitseinstellungen anzugeben. Wenn Sie sich in einer anderen Zeitzone als der Server befinden, wird die Zeitzone des Servers verwendet.
+Sie haben die Möglichkeit, ein Start- und Enddatum sowie eine Anfangs- und Enduhrzeit für die Gültigkeit der Abwesenheitseinstellungen anzugeben. Wenn Sie sich in einer anderen Zeitzone als der Server befinden, wird die Zeitzone des Servers verwendet.
 
 Sie können eine Person festlegen, an die Ihre Aufgaben standardmäßig gesendet werden. Zudem können Sie Ausnahmen für Aufgaben aus speziellen Prozessen festlegen, die an einen anderen Benutzer gesendet oder bis zu Ihrer Rückkehr in Ihrer Aufgabenliste bleiben sollen. Wenn die angegebene Person ebenfalls abwesend ist, werden die Aufgaben an den von dieser Person angegebenen Vertreter weitergeleitet. Wenn es nicht möglich ist, eine Aufgabe einer anderen Person, die nicht abwesend ist, zuzuweisen, bleibt die Aufgabe in Ihrer Aufgabenliste.
 
@@ -387,7 +385,7 @@ Sie können eine Person festlegen, an die Ihre Aufgaben standardmäßig gesendet
 1. Um den Zeitraum Ihrer Abwesenheit festzulegen, führen Sie einen der folgenden Schritte aus:
 
    * Um anzugeben, dass Sie für unbestimmte Zeit abwesend sein werden, wählen Sie in der Liste **Ich bin zurzeit** den Eintrag **Nicht im Hause** aus und geben keinen Datumsbereich an.
-   * Um anzugeben, an welchem Datum und zu welcher Uhrzeit Ihre Abwesenheit beginnt, klicken Sie auf das „+“-Symbol für **Abwesenheitszeitplan**. Verwenden Sie die Kalender- und Uhrzeitliste, um das Anfangsdatum und die Anfangsuhrzeit anzugeben. Wenn Sie kein Datum und keine Uhrzeit für das Abwesenheitsende angeben, gelten Sie ab dem Datum und der Uhrzeit des Abwesenheitsbeginns für unbestimmte Zeit als abwesend, bis Sie die Voreinstellungen ändern.
+   * Um anzugeben, an welchem Datum und zu welcher Uhrzeit Ihre Abwesenheit beginnt, klicken Sie auf das „+“-Symbol für **Abwesenheitszeitplan**. Verwenden Sie die Kalender- und Uhrzeitliste, um das Startdatum und die Anfangsuhrzeit anzugeben. Wenn Sie kein Datum und keine Uhrzeit für das Abwesenheitsende angeben, gelten Sie ab dem Datum und der Uhrzeit des Abwesenheitsbeginns für unbestimmte Zeit als abwesend, bis Sie die Voreinstellungen ändern.
 
 1. Um festzulegen, was standardmäßig mit Ihren Aufgaben passieren soll, wählen Sie in der Liste **Bei Abwesenheit: Standardbenutzer für Abwesenheitsaufgaben** eine der folgenden Optionen aus:
 
@@ -398,6 +396,6 @@ Sie können eine Person festlegen, an die Ihre Aufgaben standardmäßig gesendet
 
    >[!NOTE]
    >
-   >Der Prozessentwickler kann festlegen, dass Aufgaben aus bestimmten Prozessen immer privat sind und nicht an andere Benutzer weitergeleitet werden. Diese Einstellung setzt all Ihre Einstellungen außer Kraft.
+   >Das Prozess-Design kann festlegen, dass Aufgaben aus bestimmten Prozessen immer privat sind und nicht an andere Benutzer weitergeleitet werden. Diese Einstellung setzt all Ihre Einstellungen außer Kraft.
 
-1. Wenn Sie die gewünschten Voreinstellungen festgelegt haben, klicken Sie auf **Speichern**. Wenn die Einstellungen angeben, dass Sie zurzeit abwesend sind, treten die Änderungen sofort in Kraft. Anderenfalls treten sie am angegebenen Anfangsdatum zur festgelegten Uhrzeit in Kraft. Selbst wenn Sie sich während Ihrer Abwesenheit am System anmelden, gelten Sie erst wieder als anwesend, wenn Sie die Einstellungen ändern.
+1. Wenn Sie die gewünschten Voreinstellungen festgelegt haben, klicken Sie auf **Speichern**. Wenn die Einstellungen angeben, dass Sie zurzeit abwesend sind, treten die Änderungen sofort in Kraft. Anderenfalls treten sie am angegebenen Startdatum zur festgelegten Uhrzeit in Kraft. Selbst wenn Sie sich während Ihrer Abwesenheit am System anmelden, gelten Sie erst wieder als anwesend, wenn Sie die Einstellungen ändern.

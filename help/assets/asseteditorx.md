@@ -8,11 +8,9 @@ exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 100%
-
+source-wordcount: '694'
+ht-degree: 95%
 ---
-
 # Erweitern des Asset-Editors {#extending-asset-editor}
 
 Beim Asset-Editor handelt es sich um die Seite, die geöffnet wird, wenn auf ein über die Asset-Freigabe gefundenes Asset geklickt wird. Er ermöglicht dem Benutzer das Bearbeiten von Aspekten des Assets wie Metadaten, Miniatur, Titel und Tags.
@@ -59,7 +57,7 @@ Einige der Komponenten von [!DNL Assets] verwenden die Widget-Bibliothek. Damit 
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Geometrixx-Stylesheet     {#geometrixx-style-sheet}
+### Geometrixx-Stylesheet {#geometrixx-style-sheet}
 
 Die Komponenten der Beispielseite erfordern, dass alle Selektoren mit `.asseteditor` von `static.css` (`/etc/designs/geometrixx/static.css`) beginnen. Best Practice: Kopieren Sie alle `.asseteditor`-Selektoren in Ihr Stylesheet und passen Sie bei Bedarf die Regeln an.
 
@@ -70,7 +68,7 @@ Der Asset-Editor verwendet die Formularauswahl, mit der Sie Ressourcen, in diese
 Beispiel:
 
 * Einfache Formularseite: [http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
-* In der Formularseite geladenes Asset: [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
+* Asset auf die Formularseite geladen: [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
 
 Die Beispiel-Handles in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) führen Folgendes aus:
 

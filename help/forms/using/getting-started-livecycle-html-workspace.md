@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1010'
 ht-degree: 100%
-
 ---
-
 # Erste Schritte mit AEM Forms Workspace {#getting-started-with-aem-forms-workspace}
 
 Mit AEM Forms Workspace können Sie die folgenden Aufgaben durchführen:
@@ -78,4 +76,4 @@ Legen Sie die Benutzeroberflächeneinstellungen auf der Registerkarte „Voreins
 * **Zeitformat:** Gibt das Anzeigeformat für die Zeit an, das in AEM Forms Workspace verwendet wird.
 * **Über Aufgabenereignisse per E-Mail benachrichtigen:** Gibt an, ob Sie E-Mail-Benachrichtigungen für Aufgabenereignisse erhalten, einschließlich Aufgabenzuweisungen, Erinnerungen und Terminen in Ihrer persönlichen Aufgabenliste oder in Gruppenaufgabenlisten, denen Sie zugewiesen sind.
 * **Formulare in E-Mail anfügen:** Gibt an, ob eine Kopie des Formulars in E-Mail-Benachrichtigungen angefügt wird. Anlagen werden nur für PDF- und XDP-Formulare unterstützt.
-* **Entwurf regelmäßig speichern:** Gibt an, ob Ihre Formularentwürfe regelmäßig automatisch gespeichert werden. Aktivieren Sie diese Option, damit Ihre Entwürfe in regelmäßigen Abständen gespeichert werden, und legen Sie die Frequenz der automatischen Speicherung von 1 bis 30 Minuten fest.  Wenn die automatische Speicherung aktiviert ist und Sie an einem Entwurf arbeiten, wird der Entwurf regelmäßig nach der angegebenen Anzahl von Minuten gespeichert.  Der Entwurf wird nur dann automatisch gespeichert, wenn sich seit der letzten manuellen oder automatischen Speicherung etwas geändert hat.  Wenn der Entwurf gespeichert wurde, erscheint eine Warnmeldung auf dem Bildschirm.
+* **Entwurf regelmäßig speichern:** Gibt an, ob Ihre Formularentwürfe regelmäßig automatisch gespeichert werden. Aktivieren Sie diese Option, damit Ihre Entwürfe in regelmäßigen Abständen gespeichert werden, und legen Sie die Frequenz der automatischen Speicherung von 1 bis 30 Minuten fest. Wenn die automatische Speicherung aktiviert ist und Sie an einem Entwurf arbeiten, wird der Entwurf regelmäßig nach der angegebenen Anzahl von Minuten gespeichert. Der Entwurf wird nur dann automatisch gespeichert, wenn sich seit der letzten manuellen oder automatischen Speicherung etwas geändert hat. Wenn der Entwurf gespeichert wurde, erscheint eine Warnmeldung auf dem Bildschirm.
