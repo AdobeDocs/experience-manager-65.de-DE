@@ -9,11 +9,9 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '854'
 ht-degree: 100%
-
 ---
-
 # FOIA-Anleitung zur We.Gov-Referenzwebsite {#we-gov-reference-site-foia-walkthrough}
 
 ## Freedom of Information Act-Szenario für Referenz-Website {#reference-site-freedom-of-information-act-scenario}
@@ -69,7 +67,7 @@ John Jacobs erhält den Antrag und leitet ihn an die richtige Person weiter. Im 
 
 ### Funktionsweise {#how-it-works-1}
 
-Wenn Sarah den FOIA-Antrag ausfüllt und absendet, wird ein entsprechender Datensatz an den Posteingang von John Jacobs gesendet. John Jacobs kann den eingereichten Antrag anzeigen und akzeptieren oder ablehnen.
+Wenn Sarah den FOIA-Antrag ausfüllt und absendet, wird ein entsprechender Eintrag an den Posteingang von John Jacobs gesendet. John Jacobs kann den eingereichten Antrag anzeigen und akzeptieren oder ablehnen.
 
 ### Sehen Sie selbst {#see-it-yourself-1}
 
@@ -107,6 +105,6 @@ Gloria öffnet den Antrag und sieht sich die Details des FOIA-Antrags an. Nach P
 
 ## Sarah wird benachrichtigt, dass ihr Antrag genehmigt wurde {#sarah-receives-notification-that-her-request-is-approved}
 
-Nachdem Gloria den FOIA-Antrag genehmigt hat, erhält Sarah eine E-Mail, in der sie darüber informiert wird, dass ihr Antrag genehmigt wurde. Die E-Mail enthält auch Informationen über den vorläufigen Zeitplan für die Bereitstellung der Unterlagen sowie Kontaktdetails für die Weiterverfolgung des Antrags.
+Nachdem Gloria den FOIA-Antrag genehmigt hat, erhält Sarah eine E-Mail, in der sie darüber informiert wird, dass ihr Antrag genehmigt wurde. Die E-Mail enthält auch Informationen über die vorläufige Timeline für die Bereitstellung der Unterlagen sowie Kontaktdetails für die Weiterverfolgung des Antrags.
 
 ![sarahroseemailapproval](assets/sarahroseemailapproval.png)

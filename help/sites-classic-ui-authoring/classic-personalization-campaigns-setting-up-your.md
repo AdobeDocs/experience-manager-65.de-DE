@@ -12,11 +12,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2194'
-ht-degree: 100%
-
+source-wordcount: '2219'
+ht-degree: 99%
 ---
-
 # Einrichten einer Kampagne{#setting-up-your-campaign}
 
 Das Einrichten einer neuen Kampagne umfasst die folgenden (allgemeinen) Schritte:
@@ -30,22 +28,22 @@ Anschließend müssen Sie je nach Art der von Ihnen erstellten Erlebnisse ein [E
 
 * Wenn ein Teaser erstellt werden soll:
 
-   1. [Erstellen Sie ein Teaser-Erlebnis](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
-   1. [Fügen Sie dem Teaser Inhalte hinzu](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
-   1. [Erstellen Sie einen Touchpoint für Ihren Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (fügen Sie den Teaser zu einer Inhaltsseite hinzu).
+  1. [Erstellen Sie ein Teaser-Erlebnis](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
+  1. [Fügen Sie dem Teaser Inhalte hinzu](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
+  1. [Erstellen Sie einen Touchpoint für Ihren Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (fügen Sie den Teaser zu einer Inhaltsseite hinzu).
 
 * Wenn ein Newsletter erstellt werden soll:
 
-   1. [Erstellen Sie ein Newsletter-Erlebnis](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
-   1. [Fügen Sie dem Newsletter Inhalt hinzu.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
-   1. [Personalisieren Sie den Newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   1. [Erstellen Sie eine überzeugende Landingpage für den Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
-   1. [Senden Sie den Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) an Abonnentinnen und Abonnenten oder Leads.
+  1. [Erstellen Sie ein Newsletter-Erlebnis](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
+  1. [Fügen Sie dem Newsletter Inhalt hinzu.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+  1. [Personalisieren Sie den Newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
+  1. [Erstellen Sie eine überzeugende Landingpage für den Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+  1. [Senden Sie den Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) an Abonnentinnen und Abonnenten oder Leads.
 
 * Wenn ein Adobe Target-Angebot (zuvor Test&amp;Target) erstellt werden soll:
 
-   1. [Erstellen Sie ein Adobe Target-Angebot](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
-   1. [Integrieren mit Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
+  1. [Erstellen Sie ein Adobe Target-Angebot](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
+  1. [Integrieren mit Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
 >
@@ -94,7 +92,7 @@ Konfigurieren Sie die Kampagneneigenschaften, die das Verhalten beeinflussen:
 
 * **Adobe Target:** Mit diesen Eigenschaften werden Kampagnen konfiguriert, die in Adobe Target integriert wurden. (Weitere Informationen finden Sie unter [Integration mit Adobe Target](/help/sites-administering/target.md).)
 
-1. Wählen Sie unter **Kampagnen** Ihre Marke aus.  Aktivieren Sie im rechten Bereich Ihre Kampagne und klicken Sie auf **Eigenschaften**.
+1. Wählen Sie unter **Kampagnen** Ihre Marke aus. Aktivieren Sie im rechten Bereich Ihre Kampagne und klicken Sie auf **Eigenschaften**.
 
    Sie können verschiedene Eigenschaften eingeben, darunter **Titel**, **Beschreibung** und sämtliche gewünschten **Cloud-Services**.
 
@@ -122,19 +120,19 @@ Nachdem Sie das Grundgerüst für Ihr Erlebnis erstellt haben, müssen Sie jetzt
 
 * [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers):
 
-   * [Verknüpfen Sie die Teaser-Seite mit Besuchersegmenten.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
-   * [Erstellen Sie einen Touchpoint für Ihren Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (fügen Sie den Teaser einer Inhaltsseite hinzu).
+  * [Verknüpfen Sie die Teaser-Seite mit Besuchersegmenten.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
+  * [Erstellen Sie einen Touchpoint für Ihren Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (fügen Sie den Teaser einer Inhaltsseite hinzu).
 
 * [Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters):
 
-   * [Fügen Sie dem Newsletter Inhalt hinzu.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
-   * [Personalisieren Sie den Newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   * [Senden Sie den Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) an Abonnenten oder Leads.
-   * [Erstellen Sie eine Aufmerksamkeit erregende Landingpage für den Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+  * [Fügen Sie dem Newsletter Inhalt hinzu.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+  * [Personalisieren Sie den Newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
+  * [Senden Sie den Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) an Abonnenten oder Leads.
+  * [Erstellen Sie eine Aufmerksamkeit erregende Landingpage für den Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
 
 * [Adobe Target-Angebot](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
-   * [Integrieren mit Adobe Target](/help/sites-administering/target.md)
+  * [Integrieren mit Adobe Target](/help/sites-administering/target.md)
 
 ### Hinzufügen eines neuen Touchpoints {#adding-a-new-touchpoint}
 
@@ -254,7 +252,7 @@ So fügen Sie Leads zu schon bestehenden Listen hinzu:
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. Wählen Sie aus dem Menü **Tools** die Option **Zu Liste hinzufügen...** aus. Das Fenster **Zu Liste hinzufügen** wird geöffnet.
+1. Wählen Sie im **Tools**-Menü die Option **Zu Liste hinzufügen…** aus. Das Fenster **Zu Liste hinzufügen** wird geöffnet.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
@@ -373,7 +371,7 @@ Zusammenführen bestehender Listen:
 
 >[!NOTE]
 >
->Das Entfernen einer zusammengeführten Liste aus der Mitgliedschaft entspricht dem Entfernen von Leads aus einer Liste. Öffnen Sie die Registerkarte **Listen**, wählen Sie die Liste aus, die die zusammengeführte Liste enthält, und entfernen Sie diese Mitgliedschaft, indem Sie auf den roten Kreis neben der Liste klicken.
+>Das Entfernen einer zusammengeführten Liste aus der Zugehörigkeit entspricht dem Entfernen von Leads aus einer Liste. Öffnen Sie die Registerkarte **Listen**, wählen Sie die Liste aus, die die zusammengeführte Liste enthält, und entfernen Sie diese Zugehörigkeit, indem Sie auf den roten Kreis neben der Liste klicken.
 
 ### Anzeigen von Leads in Listen {#viewing-leads-in-lists}
 

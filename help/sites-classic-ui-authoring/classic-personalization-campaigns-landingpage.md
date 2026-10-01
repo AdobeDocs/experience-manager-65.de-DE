@@ -1,6 +1,6 @@
 ---
-title: Einstiegsseiten
-description: Mit der Funktion für Einstiegsseiten können Sie schnell und einfach ein Design und Inhalte direkt in eine AEM-Seite importieren. Web-Entwickelnde können das HTML und zusätzliche Assets vorbereiten, die als komplette Seite oder nur als Teil einer Seite importiert werden können.
+title: Landingpages
+description: Mit der Funktion für Landingpages können Sie schnell und einfach ein Design und Inhalte direkt in eine AEM-Seite importieren. Web-Entwickelnde können das HTML und zusätzliche Assets vorbereiten, die als komplette Seite oder nur als Teil einer Seite importiert werden können.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -12,60 +12,58 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 100%
-
+source-wordcount: '3376'
+ht-degree: 91%
 ---
+# Landingpages{#landing-pages}
 
-# Einstiegsseiten{#landing-pages}
-
-Mit der Funktion für Einstiegsseiten können Sie schnell und einfach ein Design und Inhalte direkt in eine AEM-Seite importieren. Ein Web-Entwickler kann das HTML und zusätzliche Assets vorbereiten, die als komplette Seite oder nur als Teil einer Seite importiert werden können. Die Funktion ist nützlich, um Landing Pages für das Marketing zu erstellen, die nur für eine begrenzte Zeit aktiv sind und schnell erstellt werden müssen.
+Mit der Funktion für Landingpages können Sie schnell und einfach ein Design und Inhalte direkt in eine AEM-Seite importieren. Ein Web-Entwickler kann das HTML und zusätzliche Assets vorbereiten, die als komplette Seite oder nur als Teil einer Seite importiert werden können. Die Funktion ist nützlich, um Landingpages für das Marketing zu erstellen, die nur für eine begrenzte Zeit aktiv sind und schnell erstellt werden müssen.
 
 Diese Seite beschreibt Folgendes:
 
-* Wie Landing Pages in AEM mit den verfügbaren Komponenten aussehen
+* Wie Landingpages in AEM mit den verfügbaren Komponenten aussehen
 * Erstellen einer Landingpage und Importieren eines Design-Pakets
-* Arbeiten mit Landing Pages in AEM
-* Einrichten mobiler Landing Pages
+* Arbeiten mit Landingpages in AEM
+* Einrichten mobiler Landingpages
 
-Die Vorbereitung des Design-Pakets für den Import wird unter [Erweitern und Konfigurieren des Design-Import-Tools](/help/sites-administering/extending-the-design-importer-for-landingpages.md) beschrieben. Die Integration in Adobe Analytics wird unter [Integrieren von Einstiegsseiten mit Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md) beschrieben.
+Die Vorbereitung des Design-Pakets für den Import wird unter [Erweitern und Konfigurieren des Design-Import-Tools](/help/sites-administering/extending-the-design-importer-for-landingpages.md) beschrieben. Die Integration in Adobe Analytics wird unter [Integrieren von Landingpages mit Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md) beschrieben.
 
 >[!CAUTION]
 >
->Das Design-Import-Tool zum Importieren von Einstiegsseiten [ist seit AEM 6.5 veraltet](/help/release-notes/deprecated-removed-features.md#deprecated-features).
+>Das Design-Import-Tool zum Importieren von Landingpages [ist seit AEM 6.5 veraltet](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 >[!CAUTION]
 >
 >Da das Design-Import-Tool Zugriff auf `/apps` erfordert, funktioniert es in containerisierten Cloud-Umgebungen nicht, in denen `/apps` unveränderlich ist.
 
-## Was sind Landing Pages? {#what-are-landing-pages}
+## Was sind Landingpages? {#what-are-landing-pages}
 
 Landingpages sind Websites mit einer oder mehreren Seiten, die den „Endpunkt“ einer Marketing-Kampagne darstellen – beispielsweise mit E-Mail, Adwords/Bannern oder sozialen Medien. Eine Landingpage kann verschiedenen Zwecken dienen, die jedoch alle eins gemeinsam haben – die Person, die die Seite besucht, sollte eine Aufgabe erfüllen, wodurch sich der Erfolg einer Landingpage definiert.
 
-Mit der Landing Pages-Funktion in AEM können Marketing-Fachleute mit Web-Designerinnen und -Designern in Agenturen oder internen Kreativ-Teams zusammenarbeiten, um Seitenentwürfe zu erstellen, die einfach in AEM importiert und von Marketing-Fachleuten bearbeitet und unter der gleichen Governance wie die übrigen AEM-gesteuerten Sites veröffentlicht werden können.
+Mit der Landingpages-Funktion in AEM können Marketing-Fachleute mit Web-Designerinnen und -Designern in Agenturen oder internen Kreativ-Teams zusammenarbeiten, um Seitenentwürfe zu erstellen, die einfach in AEM importiert und von Marketing-Fachleuten bearbeitet und unter der gleichen Governance wie die übrigen AEM-gesteuerten Sites veröffentlicht werden können.
 
-Gehen Sie in AEM wie folgt vor, um Landing Pages zu erstellen:
+Gehen Sie in AEM wie folgt vor, um Landingpages zu erstellen:
 
-1. Erstellen Sie eine Seite in AEM, die die Leinwandseite für die Einstiegsseiten enthält. Im Lieferumfang von AEM ist ein Beispiel namens **Import-Tool-Seite** enthalten.
+1. Erstellen Sie eine Seite in AEM, die die Leinwandseite für die Landingpages enthält. Im Lieferumfang von AEM ist ein Beispiel namens **Import-Tool-Seite** enthalten.
 
 1. [Bereiten Sie HTML und Assets vor.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 1. Komprimieren Sie die Ressourcen in einer ZIP-Datei, die hier als „Designpaket“ bezeichnet wird.
-1. Importieren Sie das Designpaket in die Import-Tool-Seite. 
+1. Importieren Sie das Designpaket in die Import-Tool-Seite.
 1. Ändern und veröffentlichen Sie die Seite.
 
-### Landing Pages für Desktops {#desktop-landing-pages}
+### Landingpages für Desktops {#desktop-landing-pages}
 
 Eine Landingpage in AEM sieht wie folgt aus:
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-### Mobile Landing Pages {#mobile-landing-pages}
+### Mobile Landingpages {#mobile-landing-pages}
 
-Eine Einstiegsseite kann auch über eine mobile Version der Seite verfügen. Wenn Sie über eine separate mobile Version der Einstiegsseite verfügen möchten, muss das Importdesign zwei HTML-Dateien aufweisen: *index.htm(l)* und *mobile.index.htm(l)*.
+Eine Landingpage kann auch über eine mobile Version der Seite verfügen. Wenn Sie über eine separate mobile Version der Landingpage verfügen möchten, muss das Importdesign zwei HTML-Dateien aufweisen: *index.htm(l)* und *mobile.index.htm(l)*.
 
-Der Importvorgang für die Einstiegsseite ist identisch mit jenem für eine normale Einstiegsseite, das Einstiegsseiten-Design verfügt über eine zusätzliche HTML-Datei, die der mobilen Einstiegsseite entspricht. Diese HTML-Datei muss genau wie die Desktop-Einstiegsseiten-HTML ebenfalls über ein Leinwand-`div` mit `id=cqcanvas` verfügen und sie unterstützt sämtliche bearbeitbaren Komponenten, die für die Desktop-Einstiegsseite beschrieben sind.
+Der Importvorgang für die Landingpage ist identisch mit jenem für eine normale Landingpage, das Landingpages-Design verfügt über eine zusätzliche HTML-Datei, die der mobilen Landingpage entspricht. Diese HTML-Datei muss genau wie die Desktop-Landingpages-HTML ebenfalls über ein Leinwand-`div` mit `id=cqcanvas` verfügen und sie unterstützt sämtliche bearbeitbaren Komponenten, die für die Desktop-Landingpage beschrieben sind.
 
-Die mobile Einstiegsseite wird als untergeordnetes Element der Desktop-Einstiegsseite erstellt. Um sie zu öffnen, navigieren Sie zur Landingpage der Websites und öffnen Sie die untergeordnete Seite.
+Die mobile Landingpage wird als untergeordnetes Element der Desktop-Landingpage erstellt. Um sie zu öffnen, navigieren Sie zur Landingpage der Websites und öffnen Sie die untergeordnete Seite.
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
@@ -75,15 +73,15 @@ Die mobile Einstiegsseite wird als untergeordnetes Element der Desktop-Einstiegs
 
 ## Komponenten einer Landingpage {#landing-page-components}
 
-Um Teile des HTML zu markieren, damit diese beim Import in AEM bearbeitbar bleiben, können Sie Inhalt im Einstiegsseiten-HTML direkt AEM-Komponenten zuweisen. Das Design-Import-Tool versteht standardmäßig folgende Komponenten:
+Um Teile des HTML zu markieren, damit diese beim Import in AEM bearbeitbar bleiben, können Sie Inhalt im Landingpages-HTML direkt AEM-Komponenten zuweisen. Das Design-Import-Tool versteht standardmäßig folgende Komponenten:
 
 * Text, für jede Art von Text
 * Titel, für Inhalt in H1-6-Tags
 * Bild, für Bilder, die austauschbar sein sollten
 * Aktionsaufrufe:
 
-   * Clickthrough-Link
-   * Grafischer Link
+  * Clickthrough-Link
+  * Grafischer Link
 
 * CTA-Lead-Formular zum Erfassen von Benutzerinformationen
 * Absatzsystem (Parsys), zum Hinzufügen beliebiger Komponenten oder Konvertieren der obigen Komponente
@@ -96,7 +94,7 @@ Mit der Text-Komponente können Sie über einen WYSIWYG-Editor einen Textblock e
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
-Im Folgenden finden Sie ein Beispiel für eine Text-Komponente auf einer Einstiegsseite:
+Im Folgenden finden Sie ein Beispiel für eine Text-Komponente auf einer Landingpage:
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
@@ -106,7 +104,7 @@ In der title-Komponente können Sie einen Titel anzeigen und die Größe konfigu
 
 ![chlimage_1-25](assets/chlimage_1-25.png)
 
-Im Folgenden finden Sie ein Beispiel für eine Titel-Komponente auf einer Einstiegsseite:
+Im Folgenden finden Sie ein Beispiel für eine Titel-Komponente auf einer Landingpage:
 
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
@@ -116,7 +114,7 @@ Die image-Komponente zeigt ein Bild an, das Sie entweder per Drag-and-Drop aus d
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
-Im Folgenden finden Sie ein Beispiel für eine Bild-Komponenten auf einer Einstiegsseite:
+Im Folgenden finden Sie ein Beispiel für eine Bild-Komponenten auf einer Landingpage:
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
@@ -133,7 +131,7 @@ Beide CTA-Komponenten verfügen über ähnliche Optionen. Der Click Through-Link
 
 #### Clickthrough-Link {#click-through-link}
 
-Diese CTA-Komponente kann dazu verwendet werden, der Einstiegsseite einen Textlink hinzuzufügen. Der Benutzer kann auf den Link klicken und wird dann zur in den Komponenteneigenschaften angegebenen URL weitergeleitet. Es ist Teil der Gruppe „Aktionsaufruf“.
+Diese CTA-Komponente kann dazu verwendet werden, der Landingpage einen Textlink hinzuzufügen. Der Benutzer kann auf den Link klicken und wird dann zur in den Komponenteneigenschaften angegebenen URL weitergeleitet. Es ist Teil der Gruppe „Aktionsaufruf“.
 
 ![chlimage_1-29](assets/chlimage_1-29.png)
 
@@ -158,7 +156,7 @@ Im Folgenden finden Sie ein Beispiel für einen Clickthrough-Link:
 
 #### Grafischer Link {#graphical-link}
 
-Diese CTA-Komponente kann dazu verwendet werden, ein beliebiges grafisches Bild mit Link auf der Einstiegsseite hinzuzufügen. Beim Bild kann es sich um eine einfache Schaltfläche oder um ein grafisches Bild als Hintergrund handeln. Wenn der Benutzer auf das Bild klickt, wird er zur in den Komponenteneigenschaften angegebenen Ziel-URL weitergeleitet. Gehört zur Gruppe **Aktionsaufruf**.
+Diese CTA-Komponente kann dazu verwendet werden, ein beliebiges grafisches Bild mit Link auf der Landingpage hinzuzufügen. Beim Bild kann es sich um eine einfache Schaltfläche oder um ein grafisches Bild als Hintergrund handeln. Wenn der Benutzer auf das Bild klickt, wird er zur in den Komponenteneigenschaften angegebenen Ziel-URL weitergeleitet. Gehört zur Gruppe **Aktionsaufruf**.
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
@@ -191,14 +189,14 @@ Nachfolgend ein Beispiel für ein CTA-Lead-Formular:
 
 CTA-Lead-Formulare bestehen aus mehreren verschiedenen Komponenten:
 
-* **Lead-Formular**
+* **Formular**
 Die Lead-Formular-Komponente definiert den Beginn und das Ende eines neuen Lead-Formulars auf einer Seite. Andere Komponenten können dann zwischen diesen Elementen eingefügt werden, z. B. E-Mail-ID und Vorname.
 
 * **Formularfelder und -elemente**
-Formularfelder und -elemente können Textfelder, Optionsschaltflächen, Bilder usw. umfassen. Der Benutzer führt oft eine Aktion in einem Formularfeld aus, z. B. Eingabe von Text. Unter den Abschnitten für die einzelnen Formularelemente finden Sie weitere Informationen.
+Formularfelder und -elemente können Textfelder, Optionsschaltflächen, Bilder usw. umfassen. Der Benutzer führt oft eine Aktion in einem Formularfeld aus, z. B. Eingabe von Text. Weitere Informationen finden Sie unter den einzelnen Formularelementen.
 
-* **Profil-Komponenten**
-Profil-Komponenten beziehen sich auf Besucherprofile, die für die Social Collaboration und andere Bereiche verwendet werden, für die eine Personalisierung erforderlich ist.
+* **Profilkomponenten**
+Profilkomponenten beziehen sich auf Besucherprofile, die für die Social Collaboration und andere Bereiche verwendet werden, für die eine Personalisierung erforderlich ist.
 
 Oben sehen Sie ein Beispielformular. Es besteht aus der Komponente **Lead-Formular** (Start und Ende) mit den Eingabefeldern **Vorname** und **E-Mail-Adresse** sowie einem Feld **Senden**.
 
@@ -213,13 +211,13 @@ Obwohl jede Lead-Formularkomponente einen anderen Zweck hat, bestehen viele aus 
 Zur Konfiguration der einzelnen Formularkomponenten stehen im Dialogfeld stehen folgende Registerkarten zur Verfügung:
 
 * **Titel und Text**
-Hier müssen Sie grundlegende Informationen angeben, wie den Titel der Komponente und etwaigen begleitenden Text. Gegebenenfalls können Sie hier auch andere Schlüsselinformationen definieren, z. B. ob für das Feld mehrere Optionen möglich sind und welche Elemente ausgewählt werden können.
+Hier müssen Sie grundlegende Informationen angeben, wie den Titel der Komponente und begleitenden Text. Gegebenenfalls können Sie hier auch andere Schlüsselinformationen definieren, z. B. ob für das Feld mehrere Optionen möglich sind und welche Elemente ausgewählt werden können.
 
 * **Anfangswerte**
-Hier können Sie einen Standardwert festlegen.
+Ermöglicht die Angabe eines Standardwerts.
 
-* **Beschränkungen**
-Hier können Sie angeben, ob ein Feld erforderlich ist, und diese Beschränkungen für dieses Feld platzieren (z. B. ob nur numerische Werte zulässig sind).
+* **Einschränkungen**
+Hier können Sie angeben, ob ein Feld erforderlich ist, und diese Beschränkungen für dieses Feld platzieren (z. B. ob nur numerische Werte zulässig sind).
 
 * **Stile**
 Gibt die Größe und den Stil der Felder an.
@@ -262,7 +260,7 @@ Im folgenden Abschnitt werden die Komponenten beschrieben, die für Aktionsaufru
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
-**Formular**: Fügen Sie diese Komponente hinzu, um Ihrer Einstiegsseite ein Lead-Formular hinzuzufügen. Ein Lead-Formular enthält automatisch die Felder „Beginn des Lead-Formulars“ und „Ende des Lead-Formulars“. Zwischen diesen Feldern fügen Sie die in diesem Abschnitt beschriebenen Lead-Formular-Komponenten hinzu.
+**Formular**: Fügen Sie diese Komponente hinzu, um Ihrer Landingpage ein Lead-Formular hinzuzufügen. Ein Lead-Formular enthält automatisch die Felder „Beginn des Lead-Formulars“ und „Ende des Lead-Formulars“. Zwischen diesen Feldern fügen Sie die in diesem Abschnitt beschriebenen Lead-Formular-Komponenten hinzu.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
@@ -276,7 +274,7 @@ Für die Konfiguration sind zwei Registerkarten verfügbar: **Formular** und **E
 
 ![chlimage_1-43](assets/chlimage_1-43.png)
 
-**Dankeseite**: Die Seite, auf die verwiesen wird, um Besuchern für ihre Eingabe zu danken. Wenn dies leer gelassen wird, wird das Formular nach der Übermittlung erneut angezeigt.
+**Dankeseite:** Seite, auf die verwiesen wird, um Besuchern für ihre Eingabe zu danken. Wenn Sie das Feld leer lassen, wird das Formular nach der Übermittlung erneut angezeigt.
 
 **Workflow starten**: Bestimmt, welcher Workflow ausgelöst wird, sobald ein Lead-Formular übermittelt wird.
 
@@ -296,7 +294,7 @@ Für die Konfiguration sind zwei Registerkarten verfügbar: **Formular** und **E
 
 Dies ist ein optionales Feld, das den Pfad zu einem Knoten im Repository angibt. Wenn dieser Knoten Eigenschaften hat, die den Feldnamen entsprechen, werden die jeweiligen Felder im Formular vorab mit den Werten dieser Eigenschaften ausgefüllt. Wenn keine Übereinstimmung besteht, steht im Feld der Standardwert.
 
-**Client-Überprüfung**: Gibt an, ob für dieses Formular eine Client-Überprüfung erforderlich ist (eine Server-Überprüfung findet immer statt). Dies kann in Zusammenarbeit mit der Captcha-Formularkomponente geschehen.
+**Client-Überprüfung** Gibt an, ob für dieses Formular eine Client-Überprüfung erforderlich ist (eine Server-Überprüfung findet immer statt). Dies kann in Verbindung mit der Forms-Captcha-Komponente erreicht werden.
 
 **Validierungsressource**: Hiermit wird der Ressourcentyp für die Formularvalidierung definiert, wenn Sie das gesamte Lead-Formular (anstatt einzelne Felder) überprüfen möchten.
 
@@ -316,23 +314,23 @@ Wenn Sie das gesamte Formular überprüfen, führen Sie auch eine der folgenden 
 Gibt an, ob eine Senden-Schaltfläche angezeigt werden soll.
 
 * **Senden-Name**
-Eine ID, die erforderlich ist, wenn Sie mehrere Senden-Schaltflächen in einem Formular verwenden.
+Eine Kennung, wenn Sie mehrere Senden-Schaltflächen in einem Formular verwenden.
 
 * **Senden-Titel**
-Der Name, der auf der Schaltfläche angezeigt wird, z. B. „Senden“ oder „Übermitteln“.
+Der Name, der auf der Schaltfläche angezeigt wird, z. B. „Senden“ oder „Senden“.
 
 * **Zurücksetzen-Schaltfläche einblenden**
-Aktivieren Sie das Kontrollkästchen, um die Schaltfläche zum Zurücksetzen einzublenden.
+Aktivieren Sie das Kontrollkästchen, um die Schaltfläche Zurücksetzen anzuzeigen.
 
 * **Titel zurücksetzen**
-Der Name, der auf der Schaltfläche zum Zurücksetzen angezeigt wird.
+Der Name, der auf der Schaltfläche „Zurücksetzen“ angezeigt wird.
 
 * **Beschreibung**
 Informationen, die unter der Schaltfläche angezeigt werden.
 
 ## Erstellen einer Landingpage {#creating-a-landing-page}
 
-Beim Erstellen einer Landing Page müssen Sie drei Schritte ausführen:
+Beim Erstellen einer Landingpage müssen Sie drei Schritte ausführen:
 
 1. Erstellen Sie eine Import-Tool-Seite.
 1. [Bereiten Sie den HTML-Code für den Import vor.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
@@ -350,7 +348,7 @@ Adobe empfiehlt, das Design-Import-Tool in einer Staging-Instanz zu verwenden. I
 
 ### Erstellen einer Import-Tool-Seite {#creating-an-importer-page}
 
-Damit Sie Ihr Landingpage-Design importieren können, müssen Sie eine Import-Tool-Seite erstellen. Dies ist z. B. unter einer Kampagne möglich. Mit der Vorlage „Importtool-Seite“ können Sie Ihre komplette HTML-Einstiegsseite importieren. Die Seite enthält eine Dropbox, in der das Design-Paket für die Landingpage per Drag-and-Drop importiert werden kann.
+Damit Sie Ihr Landingpage-Design importieren können, müssen Sie eine Import-Tool-Seite erstellen. Dies ist z. B. unter einer Kampagne möglich. Mit der Vorlage „Importtool-Seite“ können Sie Ihre komplette HTML-Landingpage importieren. Die Seite enthält eine Dropbox, in der das Design-Paket für die Landingpage per Drag-and-Drop importiert werden kann.
 
 >[!NOTE]
 >
@@ -382,7 +380,7 @@ Wenn Ihr Design-Paket fertig ist, wird in den folgenden Schritten beschrieben, w
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
 1. Ziehen Sie das Designpaket per Drag-and-Drop auf den Ablagebereich. Der Pfeil ändert die Richtung, wenn ein Paket darüber gezogen wird.
-1. Als Ergebnis des Drag-and-Drop-Vorgangs sehen Sie Ihre Einstiegsseite anstatt der Importtool-Seite. Ihre HTML-Einstiegsseite wurde erfolgreich importiert.
+1. Als Ergebnis des Drag-and-Drop-Vorgangs sehen Sie Ihre Landingpage anstatt der Importtool-Seite. Ihre HTML-Landingpage wurde erfolgreich importiert.
 
    ![chlimage_1-2-1](assets/chlimage_1-2-1.png)
 
@@ -394,11 +392,11 @@ Wenn Ihr Design-Paket fertig ist, wird in den folgenden Schritten beschrieben, w
 >
 >Wenn Sie Probleme beim Importieren des Design-Pakets haben, finden Sie weitere Informationen unter [Fehlerbehebung](/help/sites-administering/extending-the-design-importer-for-landingpages.md#troubleshooting).
 
-## Arbeiten mit Landing Pages {#working-with-landing-pages}
+## Arbeiten mit Landingpages {#working-with-landing-pages}
 
-Das Design und die Assets für eine Einstiegsseite werden im Allgemeinen von einem Designer, häufig in einer Agentur, in branchenüblichen Tools wie Adobe Photoshop oder Adobe Dreamweaver erstellt. Wenn das Design vollständig ist, sendet der Designer eine Zip-Datei mit sämtlichen Assets an die Marketing-Abteilung. Die Kontaktperson im Marketing ist dann dafür verantwortlich, die ZIP-Datei in AEM abzulegen und den Inhalt zu veröffentlichen.
+Das Design und die Assets für eine Landingpage werden im Allgemeinen von einem Designer, häufig in einer Agentur, in branchenüblichen Tools wie Adobe Photoshop oder Adobe Dreamweaver erstellt. Wenn das Design vollständig ist, sendet der Designer eine Zip-Datei mit sämtlichen Assets an die Marketing-Abteilung. Die Kontaktperson im Marketing ist dann dafür verantwortlich, die ZIP-Datei in AEM abzulegen und den Inhalt zu veröffentlichen.
 
-Außerdem muss der Designer unter Umständen nach dem Import Veränderungen an der Einstiegsseite vornehmen, indem er Inhalte bearbeitet oder löscht und die Aktionsaufruf-Komponenten konfiguriert. Schließlich sollte die Marketing-Fachkraft die Landingpage in einer Vorschau anzeigen und dann die Kampagne aktivieren, um sicherzustellen, dass die Landingpage veröffentlicht wird.
+Außerdem muss der Designer unter Umständen nach dem Import Veränderungen an der Landingpage vornehmen, indem er Inhalte bearbeitet oder löscht und die Aktionsaufruf-Komponenten konfiguriert. Schließlich sollte die Marketing-Fachkraft die Landingpage in einer Vorschau anzeigen und dann die Kampagne aktivieren, um sicherzustellen, dass die Landingpage veröffentlicht wird.
 
 In diesem Abschnitt wird die Ausführung der folgenden Vorgänge beschrieben:
 
@@ -416,7 +414,7 @@ Wenn Sie das Design-Paket importieren, sind die Optionen **Design löschen** und
 
 ### Herunterladen des importierten Design-Pakets {#downloading-the-imported-design-package}
 
-Beim Herunterladen der Zip-Datei können Sie aufzeichnen, welche Zip-Datei mit einer bestimmten Einstiegsseite importiert wurde. Die auf einer Seite vorgenommenen Änderungen werden nicht zur ZIP-Datei hinzugefügt.
+Beim Herunterladen der Zip-Datei können Sie aufzeichnen, welche Zip-Datei mit einer bestimmten Landingpage importiert wurde. Die auf einer Seite vorgenommenen Änderungen werden nicht zur ZIP-Datei hinzugefügt.
 
 Um das importierte Design-Paket herunterzuladen, klicken Sie in der Symbolleiste der Landingpage auf **Zip herunterladen**.
 
@@ -426,15 +424,15 @@ Sie können jederzeit Informationen zum letzten Import anzeigen, indem Sie in de
 
 ![chlimage_1-47](assets/chlimage_1-47.png)
 
-Wenn im importierten Designpaket Probleme auftreten, weil es z. B. auf Bilder/Skripts verweist, die nicht im Paket enthalten sind, werden solche Probleme im Design Importer in Form einer Liste angezeigt. Um die Liste der Probleme anzuzeigen, klicken Sie in der klassischen Benutzeroberfläche in der Symbolleiste der Einstiegsseite auf den Link „Probleme“. Wenn Sie im folgenden Bild auf den Link **Probleme** klicken, wird das Fenster „Probleme beim Import“ geöffnet.
+Wenn im importierten Designpaket Probleme auftreten, weil es z. B. auf Bilder/Skripts verweist, die nicht im Paket enthalten sind, werden solche Probleme im Design Importer in Form einer Liste angezeigt. Um die Liste der Probleme anzuzeigen, klicken Sie in der klassischen Benutzeroberfläche in der Symbolleiste der Landingpage auf den Link „Probleme“. Wenn Sie im folgenden Bild auf den Link **Probleme** klicken, wird das Fenster „Probleme beim Import“ geöffnet.
 
 ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
-### Zurücksetzen einer Einstiegsseite {#resetting-a-landing-page}
+### Zurücksetzen einer Landingpage {#resetting-a-landing-page}
 
-Wenn Sie das Designpaket für Ihre Einstiegsseite erneut importieren möchten, nachdem Sie Änderungen daran vorgenommen haben, können Sie die Einstiegsseite löschen, indem Sie in der klassischen Benutzeroberfläche am oberen Rand der Einstiegsseite auf **Entfernen** klicken oder in der Touch-optimierten Benutzeroberfläche im Einstellungsmenü auf „Entfernen“ klicken. Dadurch wird die importierte Einstiegsseite gelöscht und stattdessen wird eine leere Import-Tool-Seite erstellt.
+Wenn Sie das Designpaket für Ihre Landingpage erneut importieren möchten, nachdem Sie Änderungen daran vorgenommen haben, können Sie die Landingpage löschen, indem Sie in der klassischen Benutzeroberfläche am oberen Rand der Landingpage auf **Entfernen** klicken oder in der Touch-optimierten Benutzeroberfläche im Einstellungsmenü auf „Entfernen“ klicken. Dadurch wird die importierte Landingpage gelöscht und stattdessen wird eine leere Import-Tool-Seite erstellt.
 
-Wenn Sie die Einstiegsseite entfernen, können Sie die Inhaltsänderungen löschen. Wenn Sie auf **Nein** klicken, bleiben Inhaltsänderungen erhalten. Das heißt, dass die Struktur unter `jcr:content/importer` beibehalten wird und nur die Import-Tool-Seitenkomponente und die Ressourcen in `etc/design` entfernt werden. Wenn Sie dagegen auf **Ja** klicken, wird `jcr:content/importer` ebenfalls gelöscht.
+Wenn Sie die Landingpage entfernen, können Sie die Inhaltsänderungen löschen. Wenn Sie auf **Nein** klicken, bleiben Inhaltsänderungen erhalten. Das heißt, dass die Struktur unter `jcr:content/importer` beibehalten wird und nur die Import-Tool-Seitenkomponente und die Ressourcen in `etc/design` entfernt werden. Wenn Sie dagegen auf **Ja** klicken, wird `jcr:content/importer` ebenfalls gelöscht.
 
 >[!NOTE]
 >
@@ -448,7 +446,7 @@ Um Komponenten zur Landingpage hinzuzufügen, ziehen Sie Komponenten per Drag-an
 
 >[!NOTE]
 >
->Wenn eine Komponente auf der Landingpage nicht bearbeitet werden kann, müssen Sie die ZIP-Datei nach dem [Ändern der HTML-Datei erneut importieren.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Das bedeutet, dass die nicht bearbeitbaren Teile während des Imports nicht in AEM Komponenten konvertiert wurden.
+>Wenn eine Komponente auf der Landingpage nicht bearbeitet werden kann, müssen Sie die ZIP-Datei erneut importieren, nachdem Sie [die HTML-Datei geändert haben.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Das bedeutet, dass die nicht bearbeitbaren Teile während des Imports nicht in AEM-Komponenten konvertiert wurden.
 
 ### Löschen einer Landingpage {#deleting-a-landing-page}
 
@@ -458,8 +456,8 @@ Die einzige Ausnahme besteht darin, dass beim Löschen einer Desktop-Landingpage
 
 ### Veröffentlichen einer Landingpage {#publishing-a-landing-page}
 
-Sie können die Einstiegsseite und sämtliche abhängigen Elemente genau wie eine normale Seite veröffentlichen.
+Sie können die Landingpage und sämtliche abhängigen Elemente genau wie eine normale Seite veröffentlichen.
 
 >[!NOTE]
 >
->Beim Veröffentlichen einer Desktop-Einstiegsseite wird auch die entsprechende mobile Version veröffentlicht (sofern vorhanden). Mit der Veröffentlichung einer mobilen Landingpage wird jedoch die Desktop-Version nicht veröffentlicht.
+>Beim Veröffentlichen einer Desktop-Landingpage wird auch die entsprechende mobile Version veröffentlicht (sofern vorhanden). Mit der Veröffentlichung einer mobilen Landingpage wird jedoch die Desktop-Version nicht veröffentlicht.

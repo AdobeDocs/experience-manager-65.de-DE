@@ -11,12 +11,10 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1125'
 ht-degree: 100%
-
 ---
-
-# Verwalten von Formularanwendungen und Aufgaben im AEM-Posteingang {#manage-forms-applications-and-tasks-in-aem-inbox}
+# Verwalten von Formularanwendungen und Aufgaben im AEM-Posteingang{#manage-forms-applications-and-tasks-in-aem-inbox}
 
 Eine der vielen Möglichkeiten, einen Forms-orientierten Workflow zu starten oder auszulösen, besteht darin, Anwendungen im AEM-Posteingang zu verwenden. Um einen Forms-Workflow als Anwendung im Posteingang verfügbar zu machen, erstellen Sie eine Workflow-Anwendung. Weitere Informationen zu Workflow-Anwendungen und anderen Möglichkeiten zum Starten von Forms-Workflows finden Sie unter [Starten eines formularzentrierten Workflow auf OSGi](../../forms/using/aem-forms-workflow.md#launch).
 

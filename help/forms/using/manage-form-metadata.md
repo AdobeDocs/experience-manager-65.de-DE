@@ -1,21 +1,24 @@
 ---
 title: Verwalten von Formularmetadaten
+
 description: Metadaten ermöglichen eine einfachere Kategorisierung und Organisation der Assets und erleichtern Benutzern die Suche nach einem bestimmten Asset.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 docset: aem65
+
 role: Admin,User
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 100%
-
+source-wordcount: '1998'
+ht-degree: 97%
 ---
-
 # Verwalten von Formularmetadaten{#manage-form-metadata}
 
 | Version | Artikel-Link |
@@ -295,11 +298,11 @@ AEM Forms stellt die Metadatenschemata der unterstützten Formulartypen in diese
 1. Klicken Sie auf eine Komponente, die Sie gerade verschoben haben. Geben Sie in der Registerkarte „Einstellungen“, die im rechten Bedienfeld geöffnet wird, die Informationen für folgende Felder ein:
 
    1. Geben Sie eine Feldbezeichnung an, die als Anzeigename über dem im Schema platzierten Feld verwendet wird (z. B. „Abteilung“).
-   1. Unter dem Feld „Zu Eigenschaft zuordnen“ wird ein bereits befüllter Wert angezeigt **„./jcr:content/metadata/default&#39;**. Ändern Sie „**default**“ in einen gewünschten Eigenschaftsnamen, mit dem die Eigenschaft im CRX-Repository gespeichert wird (zum Beispiel „./jcr:content/metadata/department“)
+   1. Unter dem Feld „Zu Eigenschaft zuordnen“ wird ein bereits befüllter Wert angezeigt **&#39;./jcr:content/metadata/default&#39;**. Ändern Sie &quot;**default**&quot; in einen gewünschten Eigenschaftsnamen, mit dem die Eigenschaft im CRX-Repository gespeichert wird (zum Beispiel &quot;./jcr:content/metadata/department„)
 
       >[!NOTE]
       >
-      >Ändern Sie nicht das Präfix „./jcr:content/metadata/“, da es den Pfad definiert, unter dem die Eigenschaft gespeichert ist.
+      >Ändern Sie nicht das Präfix &quot;./jcr:content/metadata/&quot;, da es den Pfad definiert, in dem die Eigenschaft gespeichert ist.
       >
       >Außerdem muss der Eigenschaftsname eindeutig sein, um zu vermeiden, dass Werte für zwei oder mehr Eigenschaften am selben Speicherort im Repository geschrieben werden. Daher wird empfohlen, den Wert „default“ zu ändern.
 

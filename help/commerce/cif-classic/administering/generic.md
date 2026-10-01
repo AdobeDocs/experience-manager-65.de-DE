@@ -11,11 +11,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '2907'
-ht-degree: 100%
-
+source-wordcount: '2961'
+ht-degree: 99%
 ---
-
 # Verwalten von generischem E-Commerce {#administering-generic-ecommerce}
 
 Die generische Lösung Adobe Experience Manager (AEM) bietet Methoden zum Verwalten der E-Commerce-Informationen, die im Repository gespeichert sind (im Gegensatz zur Verwendung einer externen E-Commerce-Engine). Hierzu gehört Folgendes:
@@ -297,7 +295,7 @@ Die Auswahl des anzuzeigenden Bildes erfolgt wie folgt:
 
 #### Produktseite {#product-page}
 
-1. Navigieren Sie zu Ihrer Produktseite. 
+1. Navigieren Sie zu Ihrer Produktseite.
 1. **Bearbeiten** Sie die Produktkomponente.
 1. Geben Sie die **Bildkategorie** ein, die Sie gewählt haben (z. B. `cat1`).
 1. Klicken Sie auf **Fertig**. Die Seite wird aktualisiert und das richtige Asset sollte angezeigt werden.
@@ -614,7 +612,7 @@ Führen Sie den Rollout für einen Katalog wie folgt durch:
 1. Öffnen Sie Ihre neue Gutscheinseite mit einem Doppelklick, klicken Sie dann auf **Bearbeiten** und konfigurieren Sie die Informationen wie gewünscht.
 1. Klicken Sie zum Speichern auf **OK**.
 
-1. Jetzt können Sie Ihren Gutschein aktivieren, damit die Käuferinnen und Käufer ihn in der Publishing-Instanz in ihrem Warenkorb verwenden können.
+1. Jetzt können Sie Ihren Gutschein aktivieren, damit die Käuferinnen und Käufer ihn in der Veröffentlichungsinstanz in ihrem Warenkorb verwenden können.
 
 ### Entfernen von Gutscheinen {#removing-vouchers}
 

@@ -1,17 +1,15 @@
 ---
 title: Produkt-Cockpit
-description: 'Die Arbeit mit dem Produkt-Cockpit bietet einen einheitlichen Überblick über verknüpfte Produktkataloge und zugehörige Inhalte. '
+description: Die Arbeit mit dem Produkt-Cockpit bietet einen einheitlichen Überblick über verknüpfte Produktkataloge und zugehörige Inhalte.
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 100%
-
+source-wordcount: '433'
+ht-degree: 95%
 ---
-
 # Produkt-Cockpit {#product-cockpit}
 
 ## Übersicht {#overview}
@@ -76,7 +74,7 @@ Durch Klicken auf das Eigenschaftensymbol eines Produkts oder einer Kategorie wi
 
 ### Registerkarten „Commerce“ {#tabs}
 
-Die Registerkarten „Allgemein“ und „Varianten“ zeigen vordefinierte Commerce-Eigenschaften, die aus dem Commerce-Backend stammen. Diese Daten (einschl. Varianten) sind schreibgeschützte Daten in AEM, da das Aufzeichnungssystem das Commerce-Backend ist. Die Registerkarte „Varianten“ wird nur für Produkte mit Varianten angezeigt und enthält eine Liste aller Varianten.
+Die Registerkarten „Allgemein“ und „Varianten“ zeigen vordefinierte Commerce-Eigenschaften, die aus dem Commerce-Backend stammen. Diese Daten (einschließlich Varianten) sind schreibgeschützte Daten in AEM, da das Aufzeichnungssystem das Commerce-Backend ist. Die Registerkarte „Varianten“ wird nur für Produkte mit Varianten angezeigt und enthält eine Liste aller Varianten.
 
 ![Katalog-Eigenschaften](/help/commerce/cif/assets/catalog-properties.png)
 

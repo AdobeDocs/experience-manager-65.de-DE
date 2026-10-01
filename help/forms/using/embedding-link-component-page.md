@@ -11,11 +11,9 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '412'
 ht-degree: 100%
-
 ---
-
 # Einbetten einer Link-Komponente in eine Seite{#embedding-link-component-in-a-page}
 
 ## Voraussetzungen {#prerequisites}
@@ -51,11 +49,11 @@ Gehen Sie wie folgt vor, um der Seite eine Komponente des Typs „Link“ hinzuz
 
    Wählen Sie **Fertig** aus, um die Konfiguration zu speichern.
 
-## Best Practices für die Verwendung der Komponente „Link“  {#best-practices-for-using-link-component-br}
+## Best Practices für die Verwendung der Komponente „Link“ {#best-practices-for-using-link-component-br}
 
 * Stellen Sie sicher, dass Sie „PDF“ als Render-Typ auswählen, wenn der im Formularpfad angegebene Pfad auf ein Dokument verweist, bei dem das zulässige Render-Format PDF ist.
 * Die Übermittlungs-URL für ein Formular kann an mehreren Stellen festgelegt werden. Ihre Prioritätsreihenfolge lautet wie folgt:
 
-   1. Die in das Formular eingebettete Übermittlungs-URL (in der Senden-Schaltfläche) hat die höchste Priorität.
-   1. Die in Forms Manager erwähnte Übermittlungs-URL hat eine mittlere Priorität.
-   1. Die Sende-URL, die im Forms Portal erwähnt wird, hat die niedrigste Priorität.
+  1. Die in das Formular eingebettete Übermittlungs-URL (in der Senden-Schaltfläche) hat die höchste Priorität.
+  1. Die in Forms Manager erwähnte Übermittlungs-URL hat eine mittlere Priorität.
+  1. Die Sende-URL, die im Forms Portal erwähnt wird, hat die niedrigste Priorität.

@@ -12,11 +12,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 100%
-
+source-wordcount: '1802'
+ht-degree: 96%
 ---
-
 
 # E-Mail-Marketing{#e-mail-marketing}
 
@@ -37,14 +35,14 @@ AEM ermöglicht es Ihnen auch, die Newsletter-Funktion zu verwalten, z. B. durc
 
 In diesem Dokument werden die Grundlagen zum Erstellen von Newslettern in AEM beschrieben. Weitere Informationen zur Verwendung von E-Mail-Marketing finden Sie in den folgenden Dokumenten:
 
-* [Erstellen einer effektiven Einstiegsseite für Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
+* [Erstellen einer effektiven Landingpage für Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
 * [Verwalten von Abonnements](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
 * [Veröffentlichen von E-Mails bei E-Mail-Dienstanbietern](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
 * [Nachverfolgen nicht zugestellter E-Mails](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
 
 >[!NOTE]
 >
->Wenn Sie E-Mail-Anbieter aktualisieren, einen Testlauf durchführen oder einen Newsletter versenden, schlagen diese Vorgänge fehl, wenn der Newsletter nicht zuerst in der Publishing-Instanz veröffentlicht wird oder die Publishing-Instanz nicht verfügbar ist. Stellen Sie sicher, dass Sie Ihren Newsletter veröffentlichen und die Publishing-Instanz ordnungsgemäß funktioniert.
+>Wenn Sie E-Mail-Anbieter aktualisieren, einen Testlauf durchführen oder einen Newsletter versenden, schlagen diese Vorgänge fehl, wenn der Newsletter nicht zuerst in der Veröffentlichungsinstanz veröffentlicht wird oder die Veröffentlichungsinstanz nicht verfügbar ist. Stellen Sie sicher, dass Sie Ihren Newsletter veröffentlichen und die Veröffentlichungsinstanz ordnungsgemäß funktioniert.
 
 ## Erstellen eines Newsletter-Erlebnisses {#creating-a-newsletter-experience}
 
@@ -73,25 +71,25 @@ In diesem Dokument werden die Grundlagen zum Erstellen von Newslettern in AEM be
    ![Dialogfeld „Seiteneigenschaften“](assets/mcm_newnewsletterdialog.png)
 
    * **Absendername**
-Der Name, der als Absender des Newsletters angezeigt werden soll.
+     Name, der als Absender des Newsletters angezeigt werden soll.
 
-   * **Absenderadresse**
-Die E-Mail-Adresse, die als Absender des Newsletters angezeigt werden soll.
+   * **Von Adresse**
+     E-Mail-Adresse, die als Absender des Newsletters angezeigt werden soll.
 
-   * **Betreff**
-Der Betreff des Newsletters.
+   * **Subject**
+     Betreff des Newsletters.
 
    * **Antwort an**
-Die E-Mail-Adresse, an die Antworten auf den gesendeten Newsletter gerichtet werden sollen.
+     E-Mail-Adresse, an die Antworten auf den gesendeten Newsletter gerichtet werden sollen.
 
    * **Beschreibung**
-Beschreibung des Newsletters.
+     Beschreibung des Newsletters.
 
-   * **Einschaltzeit**
-Die Einschaltzeit für den Versand des Newsletters.
+   * **on time**
+     Die Frist für den Versand des Newsletters.
 
    * **Standard-Empfängerliste**
-Standardliste der Empfänger, die den Newsletter erhalten sollen.
+     Standardliste der Empfänger des Newsletters.
 
    Diese können zu einem späteren Zeitpunkt im Dialog **Eigenschaften…** aktualisiert werden.
 
@@ -205,7 +203,7 @@ Mit Testläufen haben Sie folgende Möglichkeiten:
 
 >[!NOTE]
 >
->Wenn Sie E-Mail-Anbieter aktualisieren, einen Testlauf durchführen oder einen Newsletter versenden, schlagen diese Vorgänge fehl, wenn der Newsletter nicht zuerst in der Publishing-Instanz veröffentlicht wird oder die Publishing-Instanz nicht verfügbar ist. Stellen Sie sicher, dass Sie Ihren Newsletter veröffentlichen und die Publishing-Instanz ordnungsgemäß funktioniert.
+>Wenn Sie E-Mail-Anbieter aktualisieren, einen Testlauf durchführen oder einen Newsletter versenden, schlagen diese Vorgänge fehl, wenn der Newsletter nicht zuerst in der Veröffentlichungsinstanz veröffentlicht wird oder die Veröffentlichungsinstanz nicht verfügbar ist. Stellen Sie sicher, dass Sie Ihren Newsletter veröffentlichen und die Veröffentlichungsinstanz ordnungsgemäß funktioniert.
 
 So führen Sie einen Testlauf für Newsletter durch:
 
@@ -234,7 +232,7 @@ Sie können einen Newsletter entweder aus dem Newsletter selbst oder aus der Lis
 
 >[!NOTE]
 >
->Wenn Sie E-Mail-Anbieter aktualisieren, einen Testlauf durchführen oder einen Newsletter versenden, schlagen diese Vorgänge fehl, wenn der Newsletter nicht zuerst in der Publishing-Instanz veröffentlicht wird oder die Publishing-Instanz nicht verfügbar ist. Stellen Sie sicher, dass Sie Ihren Newsletter veröffentlichen und die Publishing-Instanz ordnungsgemäß funktioniert.
+>Wenn Sie E-Mail-Anbieter aktualisieren, einen Testlauf durchführen oder einen Newsletter versenden, schlagen diese Vorgänge fehl, wenn der Newsletter nicht zuerst in der Veröffentlichungsinstanz veröffentlicht wird oder die Veröffentlichungsinstanz nicht verfügbar ist. Stellen Sie sicher, dass Sie Ihren Newsletter veröffentlichen und die Veröffentlichungsinstanz ordnungsgemäß funktioniert.
 
 ### Senden von Newslettern aus einer Kampagne heraus {#sending-newsletters-from-a-campaign}
 

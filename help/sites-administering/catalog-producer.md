@@ -1,9 +1,13 @@
 ---
 title: Catalog Producer
+
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
+
 description: Catalog Producer
 exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
 solution: Experience Manager, Experience Manager Sites
@@ -11,11 +15,9 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 100%
-
+source-wordcount: '859'
+ht-degree: 97%
 ---
-
 # Catalog Producer{#catalog-producer}
 
 Erfahren Sie, wie Sie mit Catalog Producer in AEM Assets Produktkataloge mit Ihren digitalen Assets erstellen können.
@@ -95,7 +97,7 @@ Catalog Producer verwendet Produktinformationsverwaltungsdaten (PIM), um Produkt
 1. Klicken Sie auf **Speichern** und dann auf **Fertig**, um den Bestätigungsdialog u schließen.
 Bei Auswahl der Option **Fertig** wird ein Dialogfeld geöffnet, in dem Sie auswählen können, ob Sie die PDF-Ausgabedarstellung verwenden möchten.
    ![In PDF exportieren](assets/CatalogPDF.png)
-Wenn die Option „Acrobat (PDF)“ ausgewählt ist, wird zusätzlich zur InDesign-Ausgabedarstellung eine PDF-Ausgabedarstellung in **/jcr:content/renditions** erstellt. Sie können alle Ausgabedarstellungen herunterladen, indem Sie das Kontrollkästchen „Ausgabedarstellungen“ im Dialogfeld „Herunterladen“ aktivieren.
+   Wenn die Option Acrobat (PDF) ausgewählt ist, wird zusätzlich zur InDesign-Ausgabedarstellung eine PDF:contentAusgabedarstellung in **/jcr**/renditions erstellt. Sie können alle Ausgabedarstellungen herunterladen, indem Sie das Kontrollkästchen „Ausgabedarstellungen“ im Dialogfeld „Herunterladen“ aktivieren.
 
 1. Um eine Vorschau des erstellten Katalogs zu generieren, wählen Sie den Katalog in der Konsole **Katalog** aus und klicken Sie in der Symbolleiste auf das Symbol **Vorschau**.
 

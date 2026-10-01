@@ -11,11 +11,9 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '384'
 ht-degree: 100%
-
 ---
-
 # In Flex Workspace nicht verfügbare Funktionen von AEM Forms Workspace {#features-of-aem-forms-workspace-not-available-in-flex-workspace}
 
 Der AEM Forms-Arbeitsbereich geht über den Flex-basierten Arbeitsbereich hinaus und bietet Funktionen und Möglichkeiten zur Verbesserung der Geschäftsintegration und der Benutzerproduktivität.

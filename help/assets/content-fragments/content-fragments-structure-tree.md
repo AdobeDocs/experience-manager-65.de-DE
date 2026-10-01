@@ -9,9 +9,7 @@ source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 100%
-
 ---
-
 # Strukturbaum der Inhaltsfragmente {#content-fragment-structure-tree}
 
 Verwenden Sie die Funktion „Strukturbaum“ des Inhaltsfragment-Editors in AEM, um Ihre Headless-Inhalte besser zu verstehen.

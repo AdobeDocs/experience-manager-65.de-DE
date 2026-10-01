@@ -1,10 +1,12 @@
 ---
 title: Veröffentlichen von Seiten
 description: Nachdem Sie Ihren Inhalt in der Authoring-Umgebung erstellt und geprüft haben, muss dieser auf der öffentlichen Website (der Publishing-Umgebung) verfügbar gemacht werden.
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
+
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
 solution: Experience Manager, Experience Manager Sites
@@ -12,11 +14,9 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 100%
-
+source-wordcount: '1032'
+ht-degree: 90%
 ---
-
 # Veröffentlichen von Seiten{#publishing-pages}
 
 Nachdem Sie Ihren Inhalt in der Authoring-Umgebung erstellt und geprüft haben, muss dieser auf der öffentlichen Website (der Publishing-Umgebung) verfügbar gemacht werden.
@@ -29,7 +29,7 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten Datum/Zeitpunkt 
 >
 >Bestimmte Begriffe im Zusammenhang mit Publishing sind leicht zu verwechseln:
 >
->* **Veröffentlichen/Veröffentlichung rückgängig machen**
+>* **Veröffentlichen/Veröffentlichung aufheben**
 >  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
 >
 >* **Aktivieren/Deaktivieren**
@@ -159,7 +159,7 @@ Von der Registerkarte **Websites** aus können Sie die einzelnen Seiten aktivier
 
    ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
 
-1. Geben Sie den **Startpfad** ein. Dies ist der Pfad zum Stammverzeichnis des Abschnitts, den Sie aktivieren (veröffentlichen) möchten. Diese Seite und alle darunter liegenden Seiten werden bei der Aktivierung (bzw. bei der Emulation, falls ein Probelauf ausgewählt wurde) berücksichtigt.
+1. Geben Sie den **Startpfad** ein. Dies gibt den Pfad zum Stammverzeichnis des Abschnitts an, den Sie aktivieren (veröffentlichen) möchten. Diese Seite und alle darunter liegenden Seiten werden für die Aktivierung (bzw. für die Emulation, wenn ein Probelauf ausgewählt wurde) berücksichtigt.
 1. Aktivieren Sie die Auswahlkriterien nach Bedarf:
 
    * **Nur geänderte**: nur Seiten aktivieren, die geändert wurden.
@@ -168,6 +168,6 @@ Von der Registerkarte **Websites** aus können Sie die einzelnen Seiten aktivier
 
 1. Wählen Sie die Aktion aus, die Sie durchführen möchten:
 
-   1. Wählen Sie **Probelauf** aus, wenn Sie überprüfen möchten, welche Seiten aktiviert *würden*. Dabei handelt es sich lediglich um eine Emulation, bei der keine Seiten tatsächlich aktiviert werden.
+   1. Wählen Sie **Probelauf** aus, wenn Sie überprüfen möchten, welche Seiten *aktiviert* würden. Dies ist nur eine Emulation, bei der keine Seiten aktiviert werden.
 
    1. Wählen Sie **Aktivieren** aus, wenn die Seiten aktiviert werden sollen.

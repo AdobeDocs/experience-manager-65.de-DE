@@ -11,11 +11,9 @@ exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 100%
-
+source-wordcount: '2092'
+ht-degree: 96%
 ---
-
 # Erstellen oder Anpassen eines Designs für ein adaptives Formular {#introduction-to-theme}
 
 | Version | Artikel-Link |
@@ -33,12 +31,12 @@ In AEM Forms 6.5 ist ein Design eine AEM Client-Bibliothek, mit der Sie die Stil
 Die AEM 6.5-Umgebung bietet die folgenden aufgelisteten Designs für auf Kernkomponenten-basierte adaptive Formulare:
 
 * [Canvas-Design](https://github.com/adobe/aem-forms-theme-canvas)
-* [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
-* [Design „EASEL“](https://github.com/adobe/aem-forms-theme-easel)
+* [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
+* [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
 * [FSI-Design](https://github.com/adobe/aem-forms-theme-fsi)
-* [Design „Healthcare“](https://github.com/adobe/aem-forms-theme-healthcare)
-* [Design „Public“](https://github.com/adobe/aem-forms-theme-public)
-* [Design „Manufacturing“](https://github.com/adobe/aem-forms-theme-manufacturing)
+* [Healthcare-Design](https://github.com/adobe/aem-forms-theme-healthcare)
+* [Öffentliches Design](https://github.com/adobe/aem-forms-theme-public)
+* [Herstellungsthema](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 ## Grundlegendes zur Struktur der Designs {#understanding-structure-of-theme}
 
@@ -59,10 +57,10 @@ Ein Design ist ein Paket, das die CSS-Datei, JavaScript-Dateien und Ressourcen (
 AEM Forms 6.5 bietet die folgenden aufgelisteten Designs für Kernkomponenten-basierte adaptive Formulare.
 
 * [Canvas-Design](https://github.com/adobe/aem-forms-theme-canvas)
-* [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
-* [Design „EASEL“](https://github.com/adobe/aem-forms-theme-easel)
-* [Design „Public“](https://github.com/adobe/aem-forms-theme-public)
-* [Design „Manufacturing“](https://github.com/adobe/aem-forms-theme-manufacturing)
+* [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
+* [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
+* [Öffentliches Design](https://github.com/adobe/aem-forms-theme-public)
+* [Herstellungsthema](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 Sie können [jedes dieser Designs anpassen, um ein Design zu erstellen](#customize-a-theme-core-components).
 
@@ -72,8 +70,8 @@ Das Anpassen eines Designs bezieht sich auf den Prozess der Änderung und Person
 
 >[!NOTE]
 >
-> * Verwenden Sie den Package Manager, um ein Design auf allen Autoren- und Veröffentlichungsinstanzen bereitzustellen.
-> * Eine Design-Client-Bibliothek wird wie jedes andere Paket über Package Manager importiert oder exportiert.
+> * Verwenden Sie den Paket-Manager, um ein Design auf allen Autoren- und Veröffentlichungsinstanzen bereitzustellen.
+> * Eine Design-Client-Bibliothek wird wie jedes andere Paket über den Paket-Manager importiert oder exportiert.
 
 ### Voraussetzungen zum Anpassen eines Designs {#prerequisites}
 
@@ -111,13 +109,13 @@ Das Erstellen oder Anpassen eines Designs ist ein mehrstufiger Prozess. Führen 
 
 Die Beispiele in diesem Dokument basieren auf dem **Canvas**-Design, aber Sie können jedes beliebige Design klonen und es mit denselben Anweisungen anpassen. Diese Anweisungen gelten für jedes Design, sodass Sie Designs entsprechend Ihren spezifischen Anforderungen ändern können.
 
-#### 1. Klonen Sie das Git-Repository des Designs {#clone-git-repo-of-theme}
+#### &#x200B;1. Klonen Sie das Git-Repository des Designs {#clone-git-repo-of-theme}
 
-Um ein Design für die auf Kernkomponenten-basierten adaptiven Formulare zu klonen, wählen Sie eines der folgenden Designs:
+Um ein Design für die auf Kernkomponenten basierenden adaptiven Formulare zu klonen, wählen Sie eines der folgenden Designs aus:
 
-* [Design „Canvas“](https://github.com/adobe/aem-forms-theme-canvas)
-* [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
-* [Design „EASEL“](https://github.com/adobe/aem-forms-theme-easel)
+* [Canvas-Design](https://github.com/adobe/aem-forms-theme-canvas)
+* [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
+* [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
 
 Führen Sie die folgenden Anweisungen aus, um ein Design zu klonen:
 
@@ -141,7 +139,7 @@ Führen Sie die folgenden Anweisungen aus, um ein Design zu klonen:
 
 Nach erfolgreicher Ausführung des Befehls haben Sie eine lokale Kopie des Designs auf Ihrem Rechner im Ordner `aem-forms-theme-canvas` zur Verfügung.
 
-#### 2. Passen Sie das Design an {#customize-the-theme}
+#### &#x200B;2. Anpassen des Designs {#customize-the-theme}
 
 Sie haben die Möglichkeit, einzelne Komponenten anzupassen oder Änderungen auf Design-Ebene vorzunehmen, indem Sie die globalen Variablen eines Designs verwenden. Die Änderung globaler Variablen hat einen kaskadierenden Effekt auf alle einzelnen Komponenten. Sie können beispielsweise globale Variablen verwenden, um die Rahmenfarbe aller Komponenten in einem adaptiven Formular zu ändern, oder eine dynamische Füllfarbe auf Aktionsaufruf-Schaltflächen (CTA) anzuwenden. Sie haben folgende Möglichkeiten:
 
@@ -190,7 +188,7 @@ Sie können auch die Schriftart, Farbe, Größe und andere CSS-Eigenschaften bes
 >
 > Wenn ein Stil sowohl auf Design- als auch auf Komponentenebene definiert ist, hat der auf Komponentenebene definierte Stil Priorität.
 
-#### 3. Bereiten Sie das Design für die Bereitstellung vor. {#generate-the-clientlib}
+#### &#x200B;3. Bereit für die Bereitstellung des Designs {#generate-the-clientlib}
 
 Um ein Design in einer AEM-Instanz bereitzustellen, muss es in eine Client-Bibliothek konvertiert werden. Führen Sie die folgenden Schritte aus, um das Design in eine Client-Bibliothek zu konvertieren:
 
@@ -215,7 +213,7 @@ Um ein Design in einer AEM-Instanz bereitzustellen, muss es in eine Client-Bibli
 
    ![Client-Bibliotheksspeicherort](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
-#### 4. Bereitstellen des Designs in einer lokalen Umgebung {#deploy-the-theme-on-a-local-environment}
+#### &#x200B;4. Bereitstellen des Designs in einer lokalen Umgebung {#deploy-the-theme-on-a-local-environment}
 
 Gehen Sie wie folgt vor, um das Design in Ihrer lokalen Entwicklungs- oder Testumgebung bereitzustellen:
 
@@ -266,12 +264,12 @@ An Adaptive Form with the selected theme is created.
 The selected theme is applied to the Adaptive Form. 
 -->
 
-#### 5. Bereitstellen eines Designs in Ihrer Produktionsumgebung {#deploy-theme}
+#### &#x200B;5. Bereitstellen eines Designs in Ihrer Produktionsumgebung {#deploy-theme}
 
 Nachdem Sie das Design in Ihrer lokalen Entwicklungsumgebung erfolgreich getestet haben, können Sie mit der Bereitstellung des Designs in Ihren Produktionsumgebungen fortfahren, einschließlich der Autoren- und der Veröffentlichungsinstanz. Führen Sie die folgenden Schritte aus, um das Design in Ihren Produktionsumgebungen bereitzustellen:
 
 1. Melden Sie sich bei Ihrer AEM-Umgebung an.
-1. Öffnen Sie Package Manager. Die Standard-URL ist `https://localhost:4502/crx/packmgr/index.jsp`.
+1. Öffnen Sie den Paket-Manager. Die Standard-URL ist `https://localhost:4502/crx/packmgr/index.jsp`.
 1. Klicken Sie auf **Paket hochladen** und auf **Durchsuchen**.
 1. Navigieren Sie zu und wählen Sie `[AEM Archetype Project Folder]\all\target[appid].all-[version].zip` aus. Klicken Sie auf **Öffnen**.
 1. Klicken Sie auf „Installieren“. Wiederholen Sie diesen Schritt für alle Produktionsumgebungen.
@@ -284,7 +282,7 @@ Wenn das Paket installiert wurde, ist das Design zur Auswahl verfügbar.
 >[!NOTE]
 >
 >
-> Sollten Sie Schwierigkeiten haben, den Anmeldedialog auf einer Veröffentlichungsinstanz aufzurufen, um das Paket über Package Manager zu installieren, versuchen Sie, sich über die folgende URL anzumelden: `http://[Publish Server URL]:[PORT]/system/console`. Dies ermöglicht den Zugriff auf die Veröffentlichungsinstanz, sodass Sie mit dem Installationsprozess fortfahren können.
+> Sollten Sie Schwierigkeiten haben, den Anmeldedialog auf einer Veröffentlichungsinstanz aufzurufen, um das Paket über den Paket-Manager zu installieren, versuchen Sie, sich über die folgende URL anzumelden: `http://[Publish Server URL]:[PORT]/system/console`. Dies ermöglicht den Zugriff auf die Veröffentlichungsinstanz, sodass Sie mit dem Installationsprozess fortfahren können.
 
 ## Anwenden eines Designs auf ein adaptives Formular {#using-theme-in-adaptive-form}
 
@@ -344,4 +342,4 @@ Entfernen nicht verwendeter oder unerwünschter Designs
 * [Erstellen oder Anpassen von Designs für auf Kernkomponenten basierende adaptive Formulare](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Erstellen einer Vorlage für auf Kernkomponenten basierende adaptive Formulare](template-editor.md)
 * [Erstellen oder Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Beispielthemenvorlagen und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)
+* [Beispielthemen und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)

@@ -10,11 +10,9 @@ feature: Form Data Model
 role: Admin, User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 100%
-
+source-wordcount: '1629'
+ht-degree: 96%
 ---
-
 # Schulung: Formulardatenmodell erstellen {#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
@@ -54,18 +52,18 @@ Sie können verschiedene Arten von Datenquellen konfigurieren, um ein Formularda
 
 Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
 
-1. Installieren Sie den JDBC-Treiber für die [!DNL MySQL]-Datenbank als OSGi-Bundle:
+1. Installieren Sie den JDBC-Treiber für die [!DNL MySQL]-Datenbank als OSGi-Paket:
 
-   1. Laden Sie das [!DNL MySQL] JDBC-Treiber-OSGi-Bundle von `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html` herunter. <!-- This URL is an insecure link but using https is not possible -->
-   1. Melden Sie sich bei der AEM [!DNL Forms]-Autoreninstanz als Administrator an und wechseln Sie zu den AEM-Web-Konsole-Bundles. Die Standard-URL lautet [http://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
+   1. Laden Sie das [!DNL MySQL] JDBC-Treiber-OSGi-Paket von `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html` herunter. <!-- This URL is an insecure link but using https is not possible -->
+   1. Melden Sie sich bei der AEM [!DNL Forms]-Autoreninstanz als Administrator an und wechseln Sie zu den AEM-Web-Konsole-Paketen. Die Standard-URL lautet [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Wählen Sie **[!UICONTROL Installieren/Aktualisieren]** aus. Ein Dialogfeld [!UICONTROL Bundles hochladen/installieren] wird angezeigt.
 
-   1. Wählen Sie **[!UICONTROL Datei auswählen]**, um das OSGi-Bundle für den [!DNL MySQL]-JDBC-Treiber zu suchen und auszuwählen. Wählen Sie **[!UICONTROL Bundle starten]** und **[!UICONTROL Pakete aktualisieren]** und dann **[!UICONTROL Installieren oder aktualisieren]** aus. Stellen Sie sicher, dass der JDBC-Treiber der [!DNL Oracle Corporation's] für [!DNL MySQL] aktiv ist. Der Treiber wird installiert.
+   1. Wählen Sie **[!UICONTROL Datei auswählen]**, um das OSGi-Paket für den [!DNL MySQL]-JDBC-Treiber zu suchen und auszuwählen. Wählen Sie **[!UICONTROL Bundle starten]** und **[!UICONTROL Pakete aktualisieren]** und dann **[!UICONTROL Installieren oder aktualisieren]** aus. Stellen Sie sicher, dass der JDBC-Treiber der [!DNL Oracle Corporation's] für [!DNL MySQL] aktiv ist. Der Treiber wird installiert.
 
 1. Konfigurieren Sie die [!DNL MySQL]-Datenbank als Datenquelle:
 
-   1. Wechseln Sie zu AEM-Web-Konsole unter [http://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+   1. Wechseln Sie zur AEM-Web-Konsole unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
    1. Suchen Sie die Konfiguration **Apache Sling Connection Pooled DataSource**. Wählen Sie die Konfiguration aus, um sie im Bearbeitungsmodus zu öffnen.
    1. Geben Sie im Konfigurationsdialog die folgenden Details an:
 
@@ -83,7 +81,7 @@ Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
 
       >[!NOTE]
       >
-      >AEM Forms unterstützt keine NT-Authentifizierung für [!DNL MySQL]. Wechseln Sie zur AEM-Web-Konsole unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) und suchen Sie nach „Apache Sling Connection Pooled Datasource“. Legen Sie für die Eigenschaft „JDBC-Verbindungs-URI“ den Wert von „integratedSecurity“ auf „False“ fest und verwenden Sie den erstellten Benutzernamen und das erstellte Kennwort für die Verbindung mit der [!DNL MySQL]-Datenbank.
+      >AEM Forms unterstützt keine NT-Authentifizierung für [!DNL MySQL]. Wechseln Sie zur AEM-Web-Konsole unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) und suchen Sie nach „Apache Sling Connection Pooled Datasource“. Legen Sie für die Eigenschaft „JDBC-Verbindungs-URI“ den Wert von „integratedSecurity“ auf „False“ fest und verwenden Sie den erstellten Benutzernamen und das erstellte Kennwort für die Verbindung mit der [!DNL MySQL]-Datenbank.
 
       * **Test on Borrow**: Aktivieren Sie die Option **[!UICONTROL Test on Borrow]**.
       * **Test on Return:** Aktivieren Sie die Option **[!UICONTROL Test on Return.]**
@@ -127,21 +125,21 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
 
    ![default-fdm](assets/default-fdm.png)
 
-1. Erweitern Sie den WeRailMySQL-Datenquellenbaum. Wählen Sie die folgenden Datenmodellobjekte und -dienste aus dem Schema **weretail** > **customerdetails** aus, um das Datenmodell zu bilden:
+1. Erweitern Sie den WeRailMySQL-Datenquellenbaum. Wählen Sie die folgenden Datenmodellobjekte und -dienste aus dem Schema **weretail** > **customerdetails** aus, um das Formulardatenmodell zu bilden:
 
    * **Datenmodellobjekte**:
 
-      * id
-      * name
-      * shippingAddress
-      * city
-      * state
-      * Postleitzahl
+     * id
+     * name
+     * shippingAddress
+     * city
+     * state
+     * Postleitzahl
 
    * **Dienste:**
 
-      * Abrufen
-      * Aktualisieren
+     * Abrufen
+     * Aktualisieren
 
    Wählen Sie **Ausgewählte hinzufügen**, um dem Formulardatenmodell ausgewählte Datenmodellobjekte und Dienste hinzuzufügen.
 
@@ -180,7 +178,7 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
       * **Titel**: Geben Sie den Titel des Dienstes an. Zum Beispiel: Versandadresse abrufen.
       * **Beschreibung**: Geben Sie eine Beschreibung an, die eine detaillierte Funktionsweise des Dienstes enthält. Beispiel:
 
-        Dieser Dienst ruft die Lieferadresse und andere Kundendaten aus der [!DNL MySQL]-Datenbank ab.
+        Dieser Dienst ruft die Versandadresse und andere Kundendaten aus der [!DNL MySQL]-Datenbank ab.
 
       * **Ausgabemodellobjekt**: Wählen Sie ein Schema mit Kundendaten. Beispiel:
 
@@ -200,7 +198,7 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
       * **Titel**: Geben Sie den Titel des Dienstes an. Beispiel: Versandadresse aktualisieren.
       * **Beschreibung**: Geben Sie eine Beschreibung an, die eine detaillierte Funktionsweise des Dienstes enthält. Beispiel:
 
-        Dieser Service aktualisiert die Lieferadresse und die zugehörigen Felder in der MySQL-Datenbank
+        Dieser Service aktualisiert die Versandadresse und die zugehörigen Felder in der MySQL-Datenbank
 
       * **Eingabemodellobjekt**: Wählen Sie ein Schema mit Kundendaten. Beispiel:
 

@@ -1,21 +1,23 @@
 ---
 title: Granite-Vorgänge – Benutzer- und Gruppenverwaltung
+
 description: Erfahren Sie mehr über die Benutzer- und Gruppenverwaltung in Granite.
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
+
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 100%
-
+source-wordcount: '956'
+ht-degree: 98%
 ---
-
 
 # Granite-Vorgänge – Benutzer- und Gruppenverwaltung{#granite-operations-user-and-group-administration}
 
@@ -35,9 +37,9 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
 
   In der **Benutzerkonsole** finden Sie:
 
-   * den Benutzernamen;
-   * den Anmeldenamen (Kontonamen) des Benutzers;
-   * Titel, die dem Konto zugewiesen wurden.
+  * den Benutzernamen;
+  * den Anmeldenamen (Kontonamen) des Benutzers;
+  * Titel, die dem Konto zugewiesen wurden.
 
 * [Gruppenverwaltung](#group-administration)
 
@@ -45,9 +47,9 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
 
   In der **Gruppenkonsole** finden Sie:
 
-   * den Gruppennamen;
-   * die Gruppenbeschreibung;
-   * die Anzahl der Benutzenden/Gruppen in der Gruppe.
+  * den Gruppennamen;
+  * die Gruppenbeschreibung;
+  * die Anzahl der Benutzenden/Gruppen in der Gruppe.
 
 ## Benutzerverwaltung {#user-administration}
 
@@ -91,8 +93,8 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
    * **Info**
    * **Kontoeinstellungen**
 
-      * **Status**
-Sie können das Konto sowohl als **aktiv** als auch als **inaktiv** markieren.
+     * **status**
+       Sie können das Konto als entweder **aktiv** oder **inaktiv** kennzeichnen.
 
    * **Foto**
 

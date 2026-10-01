@@ -12,11 +12,9 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 100%
-
+source-wordcount: '1596'
+ht-degree: 96%
 ---
-
 
 # Integrieren von Salesforce {#integrating-with-salesforce}
 
@@ -47,7 +45,7 @@ So konfigurieren Sie AEM für die Integration mit Salesforce:
 
 >[!CAUTION]
 >
->Sie müssen das [Salesforce Force-API](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip)-Integrationspaket installieren, bevor Sie mit dem Vorgang fortfahren können. Weitere Informationen zum Arbeiten mit Paketen finden Sie auf der Seite [Arbeiten mit Paketen](/help/sites-administering/package-manager.md#package-share).
+>Sie müssen das [Salesforce Force-API](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=2&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip)-Integrationspaket installieren, bevor Sie mit dem Vorgang fortfahren können. Weitere Informationen zum Arbeiten mit Paketen finden Sie auf der Seite [Arbeiten mit Paketen](/help/sites-administering/package-manager.md#package-share).
 
 1. Navigieren Sie in AEM zu **Cloud-Services**. Klicken Sie unter „Services von Dritten“ auf **Jetzt konfigurieren** unter **Salesforce**.
 
@@ -57,7 +55,7 @@ So konfigurieren Sie AEM für die Integration mit Salesforce:
 
    >[!NOTE]
    >
-   >Die neue Konfiguration leitet auf eine neue Seite um: **http://localhost:4502/etc/cloudservices/salesforce/developer.html**. Dies ist genau der Wert, den Sie in der Rückruf-URL beim Erstellen der Fernzugriffsanwendung in Salesforce angeben müssen. Diese Werte müssen übereinstimmen.
+   >Die neue Konfiguration wird zu einer neuen Seite umgeleitet: **http://localhost:4502/etc/cloudservices/salesforce/developer.html**. Dies ist genau der Wert, den Sie in der Rückruf-URL beim Erstellen der Fernzugriffsanwendung in Salesforce angeben müssen. Diese Werte müssen übereinstimmen.
 
 1. Melden Sie sich bei Ihrem Salesforce-Konto an. (Wenn Sie noch kein Konto haben, erstellen Sie eines unter [https://developer.force.com](https://developer.salesforce.com).)
 1. Navigieren Sie in Salesforce zu **Erstellen** > **Apps**, um zur Option **Verbundene Apps** zu gelangen (in den Salesforce-Vorgängerversionen war der Workflow **Bereitstellen** > **Fernzugriff**).
@@ -118,11 +116,11 @@ Exportieren von AEM-Benutzenden als Salesforce-Leads:
    >
    >Vor Beginn dieses Workflows gibt es bestimmte Pflichtfelder, die ein Lead-Knoten in AEM vor der Veröffentlichung bei Salesforce aufweisen muss. Diese sind **givenName**, **familyName**, **company** und **email**. Eine vollständige Liste der Zuordnungen zwischen AEM-Benutzenden und Salesforce-Leads finden Sie unter [Zuordnungskonfiguration zwischen AEM-Benutzer und Salesforce-Lead](#mapping-configuration-between-aem-user-and-salesforce-lead).
 
-1. Klicken Sie auf **OK**. Die Benutzerinformationen werden nach salesforce.com exportiert.  Sie können dies unter salesforce.com überprüfen.
+1. Klicken Sie auf **OK**. Die Benutzerinformationen werden nach salesforce.com exportiert. Sie können dies unter salesforce.com überprüfen.
 
    >[!NOTE]
    >
-   >Die Fehlerprotokolle zeigen Ihnen, ob ein Lead importiert wurde.  Überprüfen Sie das Fehlerprotokoll auf weitere Informationen.
+   >Die Fehlerprotokolle zeigen Ihnen, ob ein Lead importiert wurde. Überprüfen Sie das Fehlerprotokoll auf weitere Informationen.
 
 ### Konfigurieren des Workflows für den Export nach Salesforce.com {#configuring-the-salesforce-com-export-workflow}
 
@@ -165,7 +163,7 @@ Konfigurieren Sie hierzu Folgendes:
 
 ### Verknüpfen einer AEM-Benutzerin oder eines AEM-Benutzers mit einer Salesforce-ID {#linking-an-aem-user-with-a-salesforce-id}
 
-Ordnen Sie eine AEM-Benutzerin oder einen AEM-Benutzer einer Salesforce-ID zu, um diese in ClientContext zu laden.  In einem praxisnahen Szenario würden Sie die Verknüpfung basierend auf den bekannten Benutzerdaten mit einer Validierung erstellen.  Zur Veranschaulichung nutzen Sie in diesem Verfahren die **Salesforce Connect**-Komponente.
+Ordnen Sie eine AEM-Benutzerin oder einen AEM-Benutzer einer Salesforce-ID zu, um diese in ClientContext zu laden. In einem praxisnahen Szenario würden Sie die Verknüpfung basierend auf den bekannten Benutzerdaten mit einer Validierung erstellen. Zur Veranschaulichung nutzen Sie in diesem Verfahren die **Salesforce Connect**-Komponente.
 
 1. Navigieren Sie zu einer Website in AEM, melden Sie sich an und ziehen Sie die **Salesforce Connect-Komponente** per Drag-and-Drop aus dem Sidekick.
 
@@ -181,9 +179,9 @@ Ordnen Sie eine AEM-Benutzerin oder einen AEM-Benutzer einer Salesforce-ID zu, u
 
    >[!NOTE]
    >
-   >Diese Komponente dient nur der Veranschaulichung.  In praxisnahen Szenarien gäbe es einen weiteren Prozess zum Verknüpfen/Abgleichen von Benutzenden mit Leads.
+   >Diese Komponente dient nur der Veranschaulichung. In praxisnahen Szenarien gäbe es einen weiteren Prozess zum Verknüpfen/Abgleichen von Benutzenden mit Leads.
 
-1. Nachdem Sie die Komponente auf die Seite gezogen haben, öffnen Sie sie zum Konfigurieren.  Wählen Sie die Konfiguration, den Kontakttyp und den Salesforce-Lead oder -Kontakt. Klicken Sie dann auf **OK**.
+1. Nachdem Sie die Komponente auf die Seite gezogen haben, öffnen Sie sie zum Konfigurieren. Wählen Sie die Konfiguration, den Kontakttyp und den Salesforce-Lead oder -Kontakt. Klicken Sie dann auf **OK**.
 
    ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -203,7 +201,7 @@ Sie können Benutzerdaten aus Salesforce in ClientContext laden, um sie für die
 
    ![chlimage_1-19](assets/chlimage_1-19.jpeg)
 
-1. Öffnen Sie die Komponente, indem Sie darauf doppelklicken.  Wählen Sie **Element hinzufügen** und dann eine Eigenschaft aus der Dropdown-Liste aus. Fügen Sie beliebig viele Eigenschaften hinzu und wählen Sie **OK** aus.
+1. Öffnen Sie die Komponente, indem Sie darauf doppelklicken. Wählen Sie **Element hinzufügen** und dann eine Eigenschaft aus der Dropdown-Liste aus. Fügen Sie beliebig viele Eigenschaften hinzu und wählen Sie **OK** aus.
 
    ![chlimage_1-84](assets/chlimage_1-84.png)
 
@@ -213,14 +211,14 @@ Sie können Benutzerdaten aus Salesforce in ClientContext laden, um sie für die
 
 ### Erstellen eines Segments mithilfe der Daten aus dem Salesforce-ClientContext-Speicher {#building-a-segment-using-data-from-salesforce-client-context-store}
 
-Sie können ein Segment erstellen, das Daten aus dem Salesforce-ClientContext-Speicher verwendet.  Gehen Sie hierfür wie folgt vor:
+Sie können ein Segment erstellen, das Daten aus dem Salesforce-ClientContext-Speicher verwendet. Gehen Sie hierfür wie folgt vor:
 
-1. Navigieren Sie zur Segmentierung in AEM, entweder indem Sie zu **Tools** > **Segmentierung** oder aber zu [http://localhost:4502/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation) wechseln.
-1. Erstellen oder aktualisieren Sie ein Segment, um Daten aus Salesforce zu übernehmen.  Weitere Informationen erhalten Sie unter [Segmentierung](/help/sites-administering/campaign-segmentation.md).
+1. Navigieren Sie zur Segmentierung in AEM entweder über **Tools** > **Segmentierung** oder über [http://localhost:4502/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation).
+1. Erstellen oder aktualisieren Sie ein Segment, um Daten aus Salesforce zu übernehmen. Weitere Informationen erhalten Sie unter [Segmentierung](/help/sites-administering/campaign-segmentation.md).
 
 ## Suchen von Leads {#searching-leads}
 
-Im Lieferumfang von AEM ist eine Muster-Suchkomponente enthalten, die gemäß den angegebenen Kriterien in Salesforce nach Leads sucht.  Diese Komponente zeigt Ihnen, wie Sie die Salesforce-REST-API nutzen, um nach Salesforce-Objekten zu suchen.  Um einen Aufruf an salesforce.com auszulösen, verknüpfen Sie eine Seite mit einer Salesforce-Konfiguration.
+Im Lieferumfang von AEM ist eine Muster-Suchkomponente enthalten, die gemäß den angegebenen Kriterien in Salesforce nach Leads sucht. Diese Komponente zeigt Ihnen, wie Sie die Salesforce-REST-API nutzen, um nach Salesforce-Objekten zu suchen. Um einen Aufruf an salesforce.com auszulösen, verknüpfen Sie eine Seite mit einer Salesforce-Konfiguration.
 
 >[!NOTE]
 >
@@ -228,11 +226,11 @@ Im Lieferumfang von AEM ist eine Muster-Suchkomponente enthalten, die gemäß de
 
 So verwenden Sie diese Komponente:
 
-1. Navigieren Sie zu der Seite, auf der Sie diese Konfiguration verwenden möchten.  Öffnen Sie die Seiteneigenschaften und wählen Sie **Cloud-Services.** Klicken Sie auf **Services hinzufügen**. Wählen Sie dann **Salesforce** und die entsprechende Konfiguration aus und klicken Sie auf **OK**.
+1. Navigieren Sie zu der Seite, auf der Sie diese Konfiguration verwenden möchten. Öffnen Sie die Seiteneigenschaften und wählen Sie **Cloud Services.** Klicken Sie auf **Dienste hinzufügen** und wählen Sie **Salesforce** und die entsprechende Konfiguration aus. Klicken Sie dann auf **OK**.
 
    ![chlimage_1-20](assets/chlimage_1-20.jpeg)
 
-1. Ziehen Sie die Salesforce-Suchkomponente auf die Seite. (Voraussetzung ist, dass sie aktiviert wurde.  Um sie zu aktivieren, wechseln Sie zum Design-Modus und fügen Sie sie dem entsprechenden Bereich hinzu.)
+1. Ziehen Sie die Salesforce-Suchkomponente auf die Seite. (Voraussetzung ist, dass sie aktiviert wurde. Um sie zu aktivieren, wechseln Sie zum Design-Modus und fügen Sie sie dem entsprechenden Bereich hinzu.)
 
    ![chlimage_1-21](assets/chlimage_1-21.jpeg)
 

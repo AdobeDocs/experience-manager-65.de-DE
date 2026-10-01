@@ -1,6 +1,6 @@
 ---
-title: Package Manager
-description: Lernen Sie die Grundlagen der AEM-Paketverwaltung mit Package Manager kennen.
+title: Paket-Manager
+description: Lernen Sie die Grundlagen der AEM-Paketverwaltung mit dem Paket-Manager kennen.
 feature: Administering
 role: Admin
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,17 +11,15 @@ exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: c705667e60ccfbc4612ef3212dbe549e6bea66a9
 workflow-type: tm+mt
-source-wordcount: '3568'
-ht-degree: 100%
-
+source-wordcount: '3576'
+ht-degree: 99%
 ---
 
-
-# Package Manager {#working-with-packages}
+# Paket-Manager {#working-with-packages}
 
 Pakete bieten Ihnen die Möglichkeit, Repository-Inhalte zu importieren und zu exportieren. Sie können Pakete verwenden, um neue Inhalte zu installieren, neue Funktionen zu installieren, Inhalte zwischen Instanzen auszutauschen und Repository-Inhalte zu sichern.
 
-Mithilfe von Package Manager können Sie Pakete zu Entwicklungszwecken zwischen Ihrer AEM-Instanz und Ihrem lokalen Dateisystem übertragen.
+Mithilfe des Paket-Managers können Sie Pakete zu Entwicklungszwecken zwischen Ihrer AEM-Instanz und Ihrem lokalen Dateisystem übertragen.
 
 ## Was sind Pakete? {#what-are-packages}
 
@@ -33,9 +31,9 @@ Ein Paket enthält auch Vault-Metadaten, einschließlich der Filterdefinitionen 
 >
 >Pakete repräsentieren die aktuelle Version der Inhalte zum Zeitpunkt der Erstellung des Pakets. Sie umfassen keine früheren Versionen der Inhalte, die AEM im Repository speichert.
 
-## Package Manager {#package-manager}
+## Paket-Manager {#package-manager}
 
-Package Manager verwaltet die Pakete auf Ihrer AEM-Installation. Nachdem Sie [die erforderlichen Berechtigungen zugewiesen haben](#permissions-needed-for-using-the-package-manager), können Sie Package Manager für verschiedene Aktionen, u. a. zum Konfigurieren, Erstellen, Herunterladen und Installieren von Paketen, verwenden.
+Der Paket-Manager verwaltet die Pakete auf Ihrer AEM-Installation. Nachdem Sie [die erforderlichen Berechtigungen zugewiesen haben](#permissions-needed-for-using-the-package-manager), können Sie den Paket-Manager für verschiedene Aktionen, u. a. zum Konfigurieren, Erstellen, Herunterladen und Installieren von Paketen, verwenden.
 
 ### Erforderliche Berechtigungen {#required-permissions}
 
@@ -50,26 +48,26 @@ Um Pakete erstellen, ändern, hochladen und installieren zu können, müssen Ben
 >
 >Um diese Risiken zu begrenzen, wird dringend empfohlen, bestimmte Gruppenberechtigungen nur für dedizierte Unterbäume zu gewähren.
 
-### Zugriff auf Package Manager {#accessing}
+### Zugriff auf den Paket-Manager {#accessing}
 
-Sie haben drei Möglichkeiten, auf Package Manager zuzugreifen:
+Sie haben drei Möglichkeiten, auf den Paket-Manager zuzugreifen:
 
 1. Vom AEM-Hauptmenü > **Tools** > **Bereitstellung** > **Pakete**
 1. Von [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) unter Verwendung der oberen Umschaltleiste
 1. Direkt durch Zugreifen auf `http://<host>:<port>/crx/packmgr/`
 
-### Benutzeroberfläche von Package Manager {#ui}
+### Benutzeroberfläche vom Paket-Manager {#ui}
 
-Package Manager ist in vier Hauptfunktionsbereiche unterteilt:
+Der Paket-Manager ist in vier Hauptfunktionsbereiche unterteilt:
 
 * **Linker Navigationsbereich**: In diesem Bedienfeld können Sie die Liste der Pakete filtern und sortieren.
 * **Paketliste**: Dies ist die Liste der Pakete in Ihrer Instanz, die entsprechend der Auswahl im linken Navigationsbereich gefiltert und sortiert wurden.
-* **Aktivitätsprotokoll**: Dieses Bedienfeld ist zunächst minimiert und wird erweitert, um die Aktivität von Package Manager detailliert zu beschreiben, z. B. wenn ein Paket aufgebaut oder installiert wird. Unter der Registerkarte „Aktivitätsprotokoll“ sind weitere Schaltflächen für Folgendes verfügbar:
-   * **Protokoll löschen**
-   * **Einblenden/ausblenden**
+* **Aktivitätsprotokoll**: Dieses Bedienfeld ist zunächst minimiert und wird erweitert, um die Aktivität vom Paket-Manager detailliert zu beschreiben, z. B. wenn ein Paket aufgebaut oder installiert wird. Unter der Registerkarte „Aktivitätsprotokoll“ sind weitere Schaltflächen für Folgendes verfügbar:
+  * **Protokoll löschen**
+  * **Einblenden/ausblenden**
 * **Symbolleiste**: Die Symbolleiste enthält Aktualisierungsschaltflächen für den linken Navigationsbereich und die Liste der Pakete sowie Schaltflächen zum Suchen, Erstellen und Hochladen von Paketen.
 
-![Benutzeroberfläche von Package Manager](assets/package-manager-ui.png)
+![Benutzeroberfläche vom Paket-Manager](assets/package-manager-ui.png)
 
 Wenn Sie im linken Navigationsbereich auf eine Option klicken, wird die Paketliste sofort gefiltert.
 
@@ -107,7 +105,7 @@ Wenn das Paket geändert wurde oder noch nie aufgebaut wurde, wird der Status al
 
 ## Paketeinstellungen {#package-settings}
 
-Ein Paket ist im Wesentlichen ein Satz von Filtern und den Repository-Daten, die auf diesen Filtern basieren. Mithilfe der Package Manager-Benutzeroberfläche können Sie auf ein Paket und dann auf die Schaltfläche **Bearbeiten** klicken, um die Details eines Pakets einschließlich der folgenden Einstellungen anzuzeigen.
+Ein Paket ist im Wesentlichen ein Satz von Filtern und den Repository-Daten, die auf diesen Filtern basieren. Mithilfe der Paket-Manager-Benutzeroberfläche können Sie auf ein Paket und dann auf die Schaltfläche **Bearbeiten** klicken, um die Details eines Pakets einschließlich der folgenden Einstellungen anzuzeigen.
 
 * [Allgemeine Einstellungen](#general-settings)
 * [Paketfilter](#package-filters)
@@ -175,7 +173,7 @@ Beim Erstellen von Regeln definieren Sie einen regulären Ausdruck (auch als reg
 | include | „include“ umfasst alle Dateien und Ordner im angegebenen Verzeichnis, die dem regulären Ausdruck entsprechen. „include“ schließt andere Dateien oder Ordner unter dem angegebenen Stammpfad **nicht** mit ein. |
 | exclude | „exclude“ schließt alle Dateien und Ordner aus, die dem regulären Ausdruck entsprechen. |
 
-Paketfilter werden meistens definiert, wenn Sie das Paket zum ersten Mal [erstellen.](#creating-a-new-package) Sie können jedoch auch später bearbeitet werden. Danach sollte das Paket neu aufgebaut werden, um seinen Inhalt basierend auf den neuen Filterdefinitionen zu aktualisieren.
+Paketfilter werden meistens definiert, wenn Sie das Paket zum ersten [&#x200B; erstellen](#creating-a-new-package) Sie können jedoch auch später bearbeitet werden. Danach sollte das Paket neu aufgebaut werden, um seinen Inhalt basierend auf den neuen Filterdefinitionen zu aktualisieren.
 
 >[!TIP]
 >
@@ -220,7 +218,7 @@ Es gibt viele Aktionen, die mit einem Paket durchgeführt werden können.
 
 ### Erstellen eines Pakets {#creating-a-new-package}
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Greifen Sie auf den Paket-Manager zu.](#accessing)
 
 1. Klicken Sie auf **Paket erstellen**.
 
@@ -244,7 +242,7 @@ Es gibt viele Aktionen, die mit einem Paket durchgeführt werden können.
 
    ![Neues Paket](assets/new-package.png)
 
-1. Klicken Sie auf **Bearbeiten**, um den [Paketinhalt zu definieren.](#package-contents) Klicken Sie auf **Speichern**, nachdem Sie die Bearbeitung der Einstellungen abgeschlossen haben.
+1. Klicken Sie **Bearbeiten**, um den [Paketinhalt“ zu definieren](#package-contents) Klicken Sie auf **Speichern**, nachdem Sie die Bearbeitung der Einstellungen abgeschlossen haben.
 
 1. Sie können nun das Paket [aufbauen](#building-a-package).
 
@@ -254,7 +252,7 @@ Es ist nicht zwingend erforderlich, das Paket sofort nach seiner Erstellung aufz
 
 Ein Paket wird oft gleich beim [Erstellen des Pakets](#creating-a-new-package) aufgebaut, aber Sie können zu einem späteren Zeitpunkt zurückkehren, um das Paket entweder aufzubauen oder neu aufzubauen. Dies kann nützlich sein, wenn sich der Inhalt im Repository geändert hat oder sich die Paketfilter geändert haben.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Greifen Sie auf den Paket-Manager zu.](#accessing)
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
@@ -266,7 +264,7 @@ Ein Paket wird oft gleich beim [Erstellen des Pakets](#creating-a-new-package) a
 
 Nachdem ein Paket in AEM hochgeladen wurde, können Sie seine Einstellungen ändern.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Greifen Sie auf den Paket-Manager zu.](#accessing)
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
@@ -280,7 +278,7 @@ Möglicherweise müssen Sie [das Paket neu aufbauen](#building-a-package), um se
 
 Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim Neuverpacken werden die Paketinformationen wie Miniaturansicht, Beschreibung usw. geändert, ohne dass der Inhalt des Pakets geändert wird.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Greifen Sie auf den Paket-Manager zu.](#accessing)
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
@@ -292,9 +290,9 @@ Sobald ein Paket aufgebaut wurde, kann es neu verpackt werden. Beim Neuverpacken
 
 ### Anzeigen anderer Paketversionen {#other-versions}
 
-Da jede Version eines Pakets in der Liste ebenso wie jedes andere Paket angezeigt wird, kann Package Manager andere Versionen eines ausgewählten Pakets finden.
+Da jede Version eines Pakets in der Liste ebenso wie jedes andere Paket angezeigt wird, kann der Paket-Manager andere Versionen eines ausgewählten Pakets finden.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Greifen Sie auf den Paket-Manager zu.](#accessing)
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
@@ -304,21 +302,21 @@ Da jede Version eines Pakets in der Liste ebenso wie jedes andere Paket angezeig
 
 Nach dem Aufbau eines Pakets können Sie dessen Inhalt anzeigen.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Greifen Sie auf den Paket-Manager zu.](#accessing)
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Um den Inhalt anzuzeigen, klicken Sie auf **Mehr** > **Inhalte**. Package Manager listet dann den vollständigen Paketinhalt im Aktivitätsprotokoll auf.
+1. Um den Inhalt anzuzeigen, klicken Sie auf **Mehr** > **Inhalte**. Der Paket-Manager listet dann den vollständigen Paketinhalt im Aktivitätsprotokoll auf.
 
    ![Paketinhalte](assets/package-contents.png)
 
-1. Klicken Sie auf **Mehr** > **Installation testen**, um einen Probelauf der Installation durchzuführen. Package Manager berichtet im Aktivitätsprotokoll so über die Ergebnisse, als ob die Installation durchgeführt worden wäre.
+1. Klicken Sie auf **Mehr** > **Installation testen**, um einen Probelauf der Installation durchzuführen. Der Paket-Manager berichtet im Aktivitätsprotokoll so über die Ergebnisse, als ob die Installation durchgeführt worden wäre.
 
    ![Testen der Installation](assets/test-install.png)
 
 ### Herunterladen von Paketen in das Dateisystem {#downloading-packages-to-your-file-system}
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Greifen Sie auf den Paket-Manager zu.](#accessing)
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
@@ -332,7 +330,7 @@ Package Share war ein zentralisierter öffentlicher Dienst zur Verteilung von In
 
 ### Hochladen von Paketen vom Dateisystem {#uploading-packages-from-your-file-system}
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Greifen Sie auf den Paket-Manager zu.](#accessing)
 
 1. Klicken Sie auf den Gruppenordner, in den Sie das Paket hochladen wollen.
 
@@ -355,7 +353,7 @@ Da Pakete vorhandene Inhalte ändern können, ist es oft nützlich, diese Änder
 
 #### Validierungsoptionen {#validation-options}
 
-Package Manager kann die folgenden Validierungen durchführen:
+Der Paket-Manager kann die folgenden Validierungen durchführen:
 
 * [OSGi-Paketimporte](#osgi-package-imports)
 * [Überlagerungen](#overlays)
@@ -369,15 +367,15 @@ Diese Validierung prüft das Paket auf JAR-Dateien (OSGi-Bundles), extrahiert de
 
 **Wie die Berichterstellung erfolgt**
 
-Eventuelle versionierte Abhängigkeiten, die von der AEM-Instanz nicht erfüllt werden können, werden im Aktivitätsprotokoll von Package Manager aufgeführt.
+Eventuelle versionierte Abhängigkeiten, die von der AEM-Instanz nicht erfüllt werden können, werden im Aktivitätsprotokoll vom Paket-Manager aufgeführt.
 
 **Fehlerstatus**
 
-Wenn Abhängigkeiten nicht erfüllt sind, werden die OSGi-Bundles in dem Paket mit diesen Abhängigkeiten nicht gestartet. Dies führt zu einer fehlerhaften Bereitstellung des Programms, da alle auf dem nicht gestarteten OSGi-Bundle basierenden Prozesse nicht ordnungsgemäß funktionieren.
+Wenn Abhängigkeiten nicht erfüllt sind, werden die OSGi-Bundles in dem Paket mit diesen Abhängigkeiten nicht gestartet. Dies führt zu einer fehlerhaften Bereitstellung des Programms, da alle auf dem nicht gestarteten OSGi-Paket basierenden Prozesse nicht ordnungsgemäß funktionieren.
 
 **Fehlerbehebung**
 
-Um Fehler aufgrund nicht erfüllter OSGi-Bundles zu beheben, muss die Abhängigkeitsversion in dem Bundle mit nicht erfüllten Importen angepasst werden.
+Um Fehler aufgrund nicht erfüllter OSGi-Pakete zu beheben, muss die Abhängigkeitsversion in dem Paket mit nicht erfüllten Importen angepasst werden.
 
 ##### Bestätigen von Überlagerungen {#overlays}
 
@@ -389,7 +387,7 @@ Beispiel: Bei einer bestehenden Überlagerung unter `/apps/sling/servlet/errorha
 
 **Wie die Berichterstellung erfolgt**
 
-Solche Überlagerungen werden im Aktivitätsprotokoll von Package Manager beschrieben.
+Solche Überlagerungen werden im Aktivitätsprotokoll vom Paket-Manager beschrieben.
 
 **Fehlerstatus**
 
@@ -411,7 +409,7 @@ Diese Validierung prüft, welche Berechtigungen hinzugefügt werden, wie sie ver
 
 **Wie die Berichterstellung erfolgt**
 
-Die Berechtigungen werden im Aktivitätsprotokoll von Package Manager beschrieben.
+Die Berechtigungen werden im Aktivitätsprotokoll vom Paket-Manager beschrieben.
 
 **Fehlerstatus**
 
@@ -429,14 +427,14 @@ Anhand der von der Validierung bereitgestellten Informationen können die betrof
 
 Die Validierung von Paketen kann auf zwei verschiedene Arten erfolgen:
 
-* [Über die Package Manager-Benutzeroberfläche](#via-package-manager)
+* [Über die Pket-Manager-Benutzeroberfläche](#via-package-manager)
 * [Über HTTP-POST-Anfragen, wie z. B. mit cURL](#via-post-request)
 
 Führen Sie die Validierung stets nach dem Hochladen und vor dem Installieren eines Pakets durch.
 
-##### Paketvalidierung über Package Manager {#via-package-manager}
+##### Paketvalidierung über den Paket-Manager {#via-package-manager}
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Greifen Sie auf den Paket-Manager zu.](#accessing)
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
@@ -444,7 +442,7 @@ Führen Sie die Validierung stets nach dem Hochladen und vor dem Installieren ei
 
 1. Aktivieren Sie im angezeigten modalen Dialogfeld das Kontrollkästchen der gewünschten Validierungstypen und starten Sie die Validierung durch Klicken auf **Überprüfen**.
 
-1. Die ausgewählten Validierungen werden dann ausgeführt und die Ergebnisse werden im Aktivitätsprotokoll von Package Manager angezeigt.
+1. Die ausgewählten Validierungen werden dann ausgeführt und die Ergebnisse werden im Aktivitätsprotokoll vom Paket-Manager angezeigt.
 
 ##### Paketvalidierung über HTTP-POST-Anfrage {#via-post-request}
 
@@ -472,9 +470,9 @@ Bei der Validierung über eine POST-Anfrage wird die Antwort als JSON-Objekt zur
 
 ### Anzeigen der Paketabdeckung {#package-coverage}
 
-Pakete werden durch ihre Filter definiert. Sie können Package Manager anweisen, Filter eines Pakets auf Ihren vorhandenen Repository-Inhalt anzuwenden, um anzuzeigen, welcher Inhalt des Repositorys von der Filterdefinition des Pakets abgedeckt wird.
+Pakete werden durch ihre Filter definiert. Sie können den Paket-Manager anweisen, Filter eines Pakets auf Ihren vorhandenen Repository-Inhalt anzuwenden, um anzuzeigen, welcher Inhalt des Repositorys von der Filterdefinition des Pakets abgedeckt wird.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Greifen Sie auf den Paket-Manager zu.](#accessing)
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
@@ -490,7 +488,7 @@ Beim Hochladen eines Pakets wird nur der Paketinhalt zum Repository hinzugefügt
 >
 >Beim Installieren eines Pakets können vorhandene Inhalte überschrieben oder gelöscht werden. Laden Sie ein Paket nur hoch, wenn Sie sich sicher sind, dass dadurch keine benötigten Inhalte gelöscht oder überschrieben werden.
 
-Vor der Installation Ihres Pakets erstellt Package Manager automatisch ein Snapshot-Paket, das den Inhalt enthält, der überschrieben wird. Dieser Snapshot wird wieder installiert, wenn Sie das Paket deinstallieren.
+Vor der Installation Ihres Pakets erstellt der Paket-Manager automatisch ein Snapshot-Paket, das den Inhalt enthält, der überschrieben wird. Dieser Snapshot wird wieder installiert, wenn Sie das Paket deinstallieren.
 
 >[!CAUTION]
 >
@@ -502,7 +500,7 @@ Vor der Installation Ihres Pakets erstellt Package Manager automatisch ein Snaps
 >
 >Die Deaktivierung des WorkflowLauncher gewährleistet, dass die Assets nach der Installation nicht (versehentlich) vom Asset-Importer-Framework verändert werden.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Greifen Sie auf den Paket-Manager zu.](#accessing)
 
 1. Öffnen Sie in der Paketliste die Paketdetails des Pakets, das Sie installieren möchten, indem Sie auf den Paketnamen klicken.
 
@@ -528,13 +526,13 @@ Bei der Neuinstallation von Paketen werden für ein bereits installiertes Paket 
 
 ### Dateisystembasiertes Hochladen und Installieren {#file-system-based-upload-and-installation}
 
-Sie können bei der Installation von Paketen ganz auf Package Manager verzichten. AEM kann Pakete erkennen, die an einem bestimmten Speicherort im lokalen Dateisystem des Host-Computers abgelegt werden, und diese automatisch hochladen und installieren.
+Sie können bei der Installation von Paketen ganz auf den Paket-Manager verzichten. AEM kann Pakete erkennen, die an einem bestimmten Speicherort im lokalen Dateisystem des Host-Computers abgelegt werden, und diese automatisch hochladen und installieren.
 
 1. Unter dem AEM Installationsordner befindet sich ein Ordner `crx-quicksart` neben der JAR-Datei und der `license.properties`-Datei. Erstellen Sie einen Ordner mit dem Namen `install` under `crx-quickstart`, was zu einem Pfad `<aem-home>/crx-quickstart/install` führt.
 
 1. Fügen Sie in diesem Ordner Ihre Pakete hinzu. Sie werden automatisch auf Ihre Instanz hochgeladen und dort installiert.
 
-1. Nach dem Hochladen und der Installation können Sie die Pakete in Package Manager sehen, als hätten Sie sie über die Package Manager-Benutzeroberfläche installiert.
+1. Nach dem Hochladen und der Installation können Sie die Pakete im Paket-Manager sehen, als hätten Sie sie über die Package Manager-Benutzeroberfläche installiert.
 
 Wenn die Instanz ausgeführt wird, beginnen das Hochladen und die Installation sofort, wenn Sie sie zum Paket zum Ordner `install` hinzufügen
 
@@ -542,9 +540,9 @@ Wenn die Instanz nicht ausgeführt wird, werden Pakete, die sich im Ordner `inst
 
 ### Deinstallieren von Paketen {#uninstalling-packages}
 
-Durch die Deinstallation eines Pakets wird der Inhalt des Repositorys auf den Schnappschuss zurückgesetzt, der von Package Manager vor der Installation automatisch erstellt wurde.
+Durch die Deinstallation eines Pakets wird der Inhalt des Repositorys auf den Schnappschuss zurückgesetzt, der vom Paket-Manager vor der Installation automatisch erstellt wurde.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Greifen Sie auf den Paket-Manager zu.](#accessing)
 
 1. Öffnen Sie die Paketdetails des Pakets, das Sie deinstallieren möchten, indem Sie in der Paketliste auf den Paketnamen klicken.
 
@@ -556,13 +554,13 @@ Durch die Deinstallation eines Pakets wird der Inhalt des Repositorys auf den Sc
 
 ### Löschen von Paketen {#deleting-packages}
 
-Beim Löschen eines Pakets werden nur dessen Details aus Package Manager gelöscht. Falls dieses Paket bereits installiert wurde, werden die installierten Inhalte nicht gelöscht.
+Beim Löschen eines Pakets werden nur dessen Details aus dem Paket-Manager gelöscht. Falls dieses Paket bereits installiert wurde, werden die installierten Inhalte nicht gelöscht.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Greifen Sie auf den Paket-Manager zu.](#accessing)
 
 1. Öffnen Sie die Paketdetails des Pakets, das Sie aus der Paketliste löschen möchten, indem Sie auf den Paketnamen klicken.
 
-1. Daraufhin werden Sie von Package Manager aufgefordert zu bestätigen, dass Sie das Paket löschen möchten. Klicken Sie auf **OK**, um den Löschvorgang zu bestätigen.
+1. Daraufhin werden Sie vom Paket-Manager aufgefordert zu bestätigen, dass Sie das Paket löschen möchten. Klicken Sie auf **OK**, um den Löschvorgang zu bestätigen.
 
 1. Die Paketinformationen werden gelöscht und die Details im Aktivitätsprotokoll aufgeführt.
 
@@ -570,7 +568,7 @@ Beim Löschen eines Pakets werden nur dessen Details aus Package Manager gelösc
 
 Replizieren Sie den Inhalt eines Pakets, um es auf der Veröffentlichungsinstanz zu installieren.
 
-1. [Greifen Sie auf Package Manager zu.](#accessing)
+1. [Greifen Sie auf den Paket-Manager zu.](#accessing)
 
 1. Öffnen Sie die Paketdetails des Pakets, das Sie replizieren möchten, in der Paketliste, indem Sie auf den Paketnamen klicken.
 
@@ -588,4 +586,4 @@ Weitere Informationen finden Sie unter [Dokumentation zur Software-Verteilung](h
 
 >[!NOTE]
 >
->Package Manager ist derzeit nicht in die Softwareverteilung integriert, da es mit dem früheren Package Share-Dienst verwendet wurde. Daher funktionieren die Freigabeschaltflächen und andere Links zu Package Share in Package Manager nicht mehr. Die Lösung besteht darin, Pakete auf Ihre lokale Festplatte herunterzuladen.
+>Der Paket-Manager ist derzeit nicht in die Softwareverteilung integriert, da es mit dem früheren Package Share-Dienst verwendet wurde. Daher funktionieren die Freigabeschaltflächen und andere Links zu Package Share im Paket-Manager nicht mehr. Die Lösung besteht darin, Pakete auf Ihre lokale Festplatte herunterzuladen.

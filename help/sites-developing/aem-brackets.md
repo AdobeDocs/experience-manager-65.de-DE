@@ -11,11 +11,9 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '987'
 ht-degree: 100%
-
 ---
-
 # AEM Brackets-Erweiterung{#aem-brackets-extension}
 
 ## Überblick {#overview}
@@ -76,7 +74,7 @@ Wählen Sie im Menü **Datei** von Brackets **Ordner öffnen…** und wählen Si
 
 >[!NOTE]
 >
->Wenn Sie kein eigenes Projekt mit einem content-package haben, können Sie das [HTL TodoMVC-Beispiel](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc) ausprobieren. Klicken Sie auf GitHub auf **Zip-Datei herunterladen**, extrahieren Sie die Dateien lokal und öffnen Sie wie oben beschrieben den Ordner `jcr_root` in Brackets. Führen Sie dann die folgenden Schritte aus, um die **Projekteinstellungen** einzurichten, und laden Sie schließlich das gesamte Paket in Ihre AEM-Entwicklungsinstanz hoch, indem Sie **das Content-Package exportieren**, wie weiter unten im Abschnitt „Vollständige Content-Package-Synchronisierung“ beschrieben.
+>Wenn Sie kein eigenes Projekt mit einem content-package haben, können Sie das [HTL TodoMVC-Beispiel](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc) ausprobieren. Klicken Sie auf GitHub auf **Zip-Datei herunterladen**, extrahieren Sie die Dateien lokal und öffnen Sie wie oben beschrieben den Ordner `jcr_root` in Brackets. Führen Sie dann die folgenden Schritte aus, um die **Projekteinstellungen** einzurichten, und laden Sie schließlich das gesamte Paket in Ihre AEM-Entwicklungsinstanz hoch, indem Sie **das Inhaltspaket exportieren**, wie weiter unten im Abschnitt „Vollständige Content-Package-Synchronisierung“ beschrieben.
 >
 >Nach diesen Schritten sollten Sie in der Lage sein, auf die URL `/content/todo.html` in Ihrer AEM-Entwicklungsinstanz zuzugreifen, und Sie können Änderungen am Code in Brackets vornehmen und sehen, wie nach einer Aktualisierung im Webbrowser die Änderungen sofort mit dem AEM-Server synchronisiert wurden.
 
@@ -113,7 +111,7 @@ Dadurch werden nur Änderungen von Brackets mit der AEM-Instanz synchronisiert, 
 
 ### Vollständige Content-Package-Synchronisierung {#full-content-package-synchronization}
 
-Im Menü **AEM** können Sie mit den Optionen **Content-Package exportieren** oder **Content-Package importieren** das gesamte Projekt mit dem Server synchronisieren.
+Im Menü **AEM** können Sie mit den Optionen **Inhaltspaket exportieren** oder **Inhaltspaket importieren** das gesamte Projekt mit dem Server synchronisieren.
 
 ![chlimage_1-57](assets/chlimage_1-57a.png)
 

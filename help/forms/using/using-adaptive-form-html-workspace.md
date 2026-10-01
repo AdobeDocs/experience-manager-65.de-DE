@@ -11,11 +11,9 @@ feature: Adaptive Forms,Workbench
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '706'
 ht-degree: 100%
-
 ---
-
 # Verwenden eines adaptiven Formulars in HTML Workspace{#using-an-adaptive-form-in-html-workspace}
 
 Mit AEM Forms on JEE können adaptive Formulare in HTML Workspace verwendet werden.

@@ -1,22 +1,25 @@
 ---
 title: Verwenden der Scribble-Signatur in HTML5-Formularen
+
 description: HTML5-Formulare werden zunehmend auf Touch-Geräten verwendet. Eine allgemeine Voraussetzung ist dabei die Unterstützung von Signaturen. Das Unterzeichnen von Dokumenten auf Mobilgeräten ist eine immer mehr gängige Form der Unterzeichnung von Formularen.
+
+
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
+
 docset: aem65
+
 feature: Forms Designer,Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '657'
 ht-degree: 100%
-
 ---
-
 # Verwenden der Scribble-Signatur in HTML5-Formularen{#using-scribble-signature-in-html-forms}
 
 HTML5-Formulare werden zunehmend auf Touch-Geräten verwendet. Eine allgemeine Voraussetzung ist dabei die Unterstützung von Signaturen. Die Scribble-Signatur (Schreiben mit dem Eingabestift oder mit dem Finger) ist eine immer mehr gängige Form der Unterzeichnung von Formularen auf Mobilgeräten. HTML5 Forms und Designer bieten jetzt auf dem Formular ein Feld für die Scribble-Signatur. Wenn das Formular im Browser angezeigt wird, können Benutzende mit einem Eingabestift, einer Maus oder einem Finger in diesem Feld unterzeichnen.
@@ -79,7 +82,7 @@ Auf einem iPad wird das Geolocation-Symbol standardmäßig nicht angezeigt. Die 
 Diese Einstellung kann auf iPads geändert werden, indem in den init-Parametern des Feldes der Wert des Parameters `geoLocManadatoryOnIpad` auf `0` gesetzt wird.
 
 * Wenn die Angabe geografischer Informationen obligatorisch ist, wird den Benutzenden ein kleinerer Bereich zum Zeichnen angezeigt. Der Text mit den geografischen Informationen wird außerhalb dieses Bereichs hinzugefügt, wenn die Benutzenden auf das Symbol **OK** klicken.
-* In anderen Fällen wird ihnen der komplette Bereich, in dem gezeichnet werden kann, angezeigt. Wenn die Person sich dazu entscheidet, geografische Informationen hinzuzufügen, wird die Größe des Bereichs angepasst, um den entsprechenden Text einfügen zu können.
+* In anderen Fällen wird ihnen der komplette Bereich, in dem gezeichnet werden kann, angezeigt. Wenn die Person sich dazu entscheidet, geografische Informationen einzubetten, wird die Größe des Bereichs angepasst, um den entsprechenden Text einfügen zu können.
 
 ### Löschen einer Signatur {#clearing-a-signature}
 

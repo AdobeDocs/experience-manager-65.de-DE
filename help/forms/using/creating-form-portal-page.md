@@ -1,9 +1,13 @@
 ---
 title: Anpassen einer Formularportal-Seite
+
 description: Das Formularportal bietet Web-Entwicklerinnen und Web-Entwicklern Komponenten zum Erstellen und Anpassen von Formularportalen für Websites, die mit Adobe Experience Manager (AEM) erstellt wurden.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
+
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
@@ -11,11 +15,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1702'
 ht-degree: 100%
-
 ---
-
 # Anpassen einer Formularportal-Seite{#creating-a-forms-portal-page}
 
 | Version | Artikel-Link |
@@ -184,7 +186,7 @@ So konfigurieren Sie die Komponente „Datumseigenschaft“:
 
    * **Start Date Label (Startdatumsbeschriftung):** Beschriftung des Feldes „Startdatum“.
    * **End Date Label (Enddatumsbeschriftung):** Beschriftung des Feldes „Enddatum“.
-   * **Ausblenden:** Damit wird der Standarddatumsfilter für die Auflistung von Formularen erzwungen. 
+   * **Ausblenden:** Damit wird der Standarddatumsfilter für die Auflistung von Formularen erzwungen.
 
 1. Wählen Sie **OK** aus.
 
@@ -205,12 +207,12 @@ Die Komponente „Eigenschaftsprädikat“ implementiert die Suche nach Formular
 So konfigurieren Sie die Komponente „Eigenschaftsprädikat“:
 
 1. Wählen Sie die Komponente und dann ![settings_icon](assets/settings_icon.png) aus. Das Dialogfeld „Bearbeiten“ wird geöffnet.
-1. Geben Sie auf der Registerkarte „Allgemein“ die Suchbeschriftung an. Der Standardwert ist **Eigenschaften**. 
+1. Geben Sie auf der Registerkarte „Allgemein“ die Suchbeschriftung an. Der Standardwert ist **Eigenschaften**.
 
 1. Wählen Sie auf der Registerkarte „Optionen“ **Element hinzufügen** aus.
 1. Wählen Sie eine Eigenschaft in der Dropdownliste aus und geben Sie für die Eigenschaft eine Suchbeschriftung im Feld unter der Dropdown-Liste an.
 1. Wiederholen Sie Schritt 4, um weitere Eigenschaften hinzuzufügen. Sie können auch einen Standardfilterwert für die Auflistung von Formularen anhand der angegebenen Kriterien festlegen und die Eigenschaft für die Suche durch Endbenutzer ausblenden. Aktivieren Sie das Kontrollkästchen „Ausblenden“ für eine Eigenschaft und legen Sie den Standardfilterwert fest.
- Wenn Sie beispielsweise Formulare anzeigen möchten, die „Reise“ in ihrem Titel enthalten, wählen Sie „Ausblenden“ neben der Eigenschaft „Titel“. Geben Sie außerdem „Reise“ im Textfeld des Standardfilterwerts an.
+Wenn Sie beispielsweise Formulare anzeigen möchten, die „Reise“ in ihrem Titel enthalten, wählen Sie „Ausblenden“ neben der Eigenschaft „Titel“. Geben Sie außerdem „Reise“ im Textfeld des Standardfilterwerts an.
 
 1. Wählen Sie **OK** aus.
 
