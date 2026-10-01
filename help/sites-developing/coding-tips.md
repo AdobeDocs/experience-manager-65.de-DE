@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 100%
-
+source-wordcount: '861'
+ht-degree: 98%
 ---
-
 # Tipps zum Programmieren{#coding-tips}
 
 ## So oft wie möglich Taglibs oder HTL verwenden {#use-taglibs-or-htl-as-much-as-possible}
@@ -79,7 +77,7 @@ Alle Zeichenfolgen, die nicht autorenseitig bereitgestellt werden, sollten in ei
 
 ### Ressourcenpfade zur Sicherheit maskieren {#escape-resource-paths-for-safety}
 
-Zwar sollten Pfade im JCR keine Leerzeichen enthalten, aber der Code sollte nicht fehlschlagen, wenn Leerzeichen vorhanden sind. Jackrabbit stellt eine Text-Hilfsklasse mit den Methoden *escape()* und *escapePath()* bereit. Für JSPs stellt die Granite-Benutzeroberfläche die Funktion *granite:encodeURIPath() EL* bereit.
+Zwar sollten Pfade im JCR keine Leerzeichen enthalten, aber der Code sollte nicht fehlschlagen, wenn Leerzeichen vorhanden sind. Jackrabbit stellt eine Text-Hilfsklasse mit den Methoden *escape()* und *escapePath()* bereit. Für JSPs stellt die Granite-Benutzeroberfläche eine Funktion *granite:encodeURIPath() EL* bereit.
 
 ### Zur Absicherung vor Cross-Site-Scripting-Angriffen die XSS-API und/oder HTL nutzen {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
 

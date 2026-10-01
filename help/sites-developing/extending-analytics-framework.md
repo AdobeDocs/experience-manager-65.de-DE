@@ -11,11 +11,9 @@ feature: Integration
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1610'
-ht-degree: 100%
-
+source-wordcount: '1638'
+ht-degree: 99%
 ---
-
 # Anpassen des Adobe Analytics-Frameworks{#customizing-the-adobe-analytics-framework}
 
 Das Adobe Analytics-Framework bestimmt die Informationen, die mit Adobe Analytics verfolgt werden. Um das Standard-Framework anzupassen, können Sie mit JavaScript benutzerdefiniertes Tracking hinzufügen, Adobe Analytics-Plug-ins integrieren und die allgemeinen Einstellungen in dem zum Tracking genutzten Framework ändern.
@@ -193,7 +191,7 @@ Daher sollte Ihr JavaScript `s.usePlugins` auf `true` festlegen, damit jeder Cod
 
 >[!NOTE]
 >
->Bearbeiten Sie die Datei /libs/cq/analytics/components/sitecatalyst/config.js.jsp nicht.  Bei bestimmten AEM-Upgrade- oder Wartungsaufgaben wird möglicherweise die Originaldatei erneut installiert und ihre Änderungen werden dabei entfernt.
+>Bearbeiten Sie die Datei /libs/cq/analytics/components/sitecatalyst/config.js.jsp nicht. Bei bestimmten AEM-Upgrade- oder Wartungsaufgaben wird möglicherweise die Originaldatei erneut installiert und ihre Änderungen werden dabei entfernt.
 
 1. Erstellen Sie in CRXDE Lite die Ordnerstruktur /apps/cq/analytics/components:
 
@@ -265,7 +263,7 @@ Der Client-Bibliotheksordner /libs/cq/analytics/clientlibs/sitecatalyst/plugins 
 >
 >Erstellen Sie einen Client-Bibliotheksordner für Ihre Plug-ins. Fügen Sie keine Plug-ins zum Ordner `/libs/cq/analytics/clientlibs/sitecatalyst/plugins` hinzu. Dadurch wird sichergestellt, dass Ihre Beiträge zur Kategorie `sitecatalyst.plugins` bei erneuten Installationen oder Upgrades von AEM nicht überschrieben werden.
 
-Mit dem folgenden Verfahren können Sie den Client-Bibliotheksordner für Ihre Plug-ins erstellen.  Sie müssen diesen Vorgang nur einmal durchführen.  Über das darauffolgende Verfahren können Sie ein Plug-in zum Client-Bibliotheksordner hinzufügen.
+Mit dem folgenden Verfahren können Sie den Client-Bibliotheksordner für Ihre Plug-ins erstellen. Sie müssen diesen Vorgang nur einmal durchführen. Über das darauffolgende Verfahren können Sie ein Plug-in zum Client-Bibliotheksordner hinzufügen.
 
 1. Öffnen Sie CRXDE Lite in einem Webbrowser. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
 
@@ -295,7 +293,7 @@ Mit dem folgenden Verfahren können Sie sich den Plug-in-Code beschaffen, den Co
 1. Klicken Sie im Inhaltsverzeichnis links auf „Implementierungs-Plug-ins“.
 1. Klicken Sie auf den Link zu dem Plug-in, das Sie hinzufügen möchten. Wenn sich die Seite öffnet, suchen Sie den JavaScript-Quell-Code für das Plug-in, wählen Sie den Code aus und kopieren Sie ihn.
 
-1. Klicken Sie mit der rechten Maustaste auf den Client-Bibliotheksordner und klicken Sie auf „Erstellen“ > „Datei erstellen“.  Geben Sie als Dateinamen den Namen des zu integrierenden Plug-ins gefolgt von „.js“ ein und klicken Sie dann auf „OK“.  Wenn Sie z. B. das Plug-in getQueryParam integrieren, nennen Sie die Datei „getQueryParam.js“.
+1. Klicken Sie mit der rechten Maustaste auf den Client-Bibliotheksordner und klicken Sie auf „Erstellen“ > „Datei erstellen“. Geben Sie als Dateinamen den Namen des zu integrierenden Plug-ins gefolgt von „.js“ ein und klicken Sie dann auf „OK“. Wenn Sie z. B. das Plug-in getQueryParam integrieren, nennen Sie die Datei „getQueryParam.js“.
 
    Wenn Sie die Datei erstellen, wird sie zur Bearbeitung geöffnet.
 
@@ -307,6 +305,6 @@ Mit dem folgenden Verfahren können Sie sich den Plug-in-Code beschaffen, den Co
 
 >[!NOTE]
 >
->Stellen Sie bei der Verwendung von Plug-ins sicher, dass Sie auch unterstützende Plug-ins integrieren. Andernfalls erkennt das JavaScript des Plug-ins die Aufrufe nicht, die an die Funktionen im unterstützenden Plug-in erfolgen.  Beispielsweise muss für das Plug-in getPreviousValue() das Plug-in split() ordnungsgemäß funktionieren.
+>Stellen Sie bei der Verwendung von Plug-ins sicher, dass Sie auch unterstützende Plug-ins integrieren. Andernfalls erkennt das JavaScript des Plug-ins die Aufrufe nicht, die an die Funktionen im unterstützenden Plug-in erfolgen. Beispielsweise muss für das Plug-in getPreviousValue() das Plug-in split() ordnungsgemäß funktionieren.
 >
 >Den Namen des unterstützenden Plug-ins müssen Sie ebenfalls in die Datei **js.txt** einfügen.
