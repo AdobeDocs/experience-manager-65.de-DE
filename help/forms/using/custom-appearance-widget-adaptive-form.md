@@ -128,9 +128,9 @@ Nehmen Sie nach Erstellen der Projektvorlage bei Bedarf die folgenden Änderunge
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>Gibt eine Zuordnung zum Konvertieren von HTML-Ereignissen in XFA-Ereignisse zurück. <br /> <code class="code">{
+   <td>Gibt eine Zuordnung zum Konvertieren von HTML-Ereignissen in XFA-Ereignisse zurück. <br /> <code class="code">&lbrace;
       blur: XFA_EXIT_EVENT,
-      }</code><br /> Dieses Beispiel zeigt, dass <code>blur</code> ein HTML-Ereignis und <code>XFA_EXIT_EVENT</code> das entsprechende XFA-Ereignis ist. </td>
+      &rbrace;</code><br /> Dieses Beispiel zeigt, dass <code>blur</code> ein HTML-Ereignis und <code>XFA_EXIT_EVENT</code> das entsprechende XFA-Ereignis ist. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
@@ -161,7 +161,7 @@ Nehmen Sie nach Erstellen der Projektvorlage bei Bedarf die folgenden Änderunge
    * Die Methode `getEventMap` ordnet durch das Widget ausgelöste Ereignisse den Ereignissen zu, die durch das adaptive Formularmodell benötigt werden. Der Standardwert ordnet Standard-HTML-Ereignisse für das Standard-Widget zu. Es muss aktualisiert werden, falls ein alternatives Widget ausgelöst wird.
    * `showDisplayValue` und `showValue` wenden die Display- und Edit-Picture-Klausel an und können überschrieben werden, um ein alternatives Verhalten zu erzielen.
 
-   * Die Methode `getCommitValue` wird durch das Framework für adaptive Formulare aufgerufen, wenn das Ereignis `commit` auftritt. (Im Allgemeinen handelt es sich um das exit-Ereignis, mit Ausnahme der Elemente Dropdown-Liste, Optionsfeld und Kontrollkästchen, wenn es bei einer Änderung auftritt.) Weitere Informationen finden Sie unter[ Adaptive Formularausdrücke](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
+   * Die Methode `getCommitValue` wird durch das Framework für adaptive Formulare aufgerufen, wenn das Ereignis `commit` auftritt. (Im Allgemeinen handelt es sich um das exit-Ereignis, mit Ausnahme der Elemente Dropdown-Liste, Optionsfeld und Kontrollkästchen, wenn es bei einer Änderung auftritt.) Weitere Informationen finden Sie unter[&#x200B; Adaptive Formularausdrücke](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
 
    * Die Vorlagendatei bietet eine Beispielimplementierung für verschiedene Methoden. Entfernen Sie Methoden, die nicht erweitert werden sollen.
 

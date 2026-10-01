@@ -31,7 +31,7 @@ Installieren Sie unbedingt das entsprechende Service Pack und das Paket, das Sie
 
 | Asset-Funktion | Experience Manager-Version und Support-Anforderungen |
 |--- |--- |
-| Asset Link funktioniert standardmäßig | Experience Manager 6.5 und 6.5.2 oder höher. </br> Experience Manager 6.4.4 und 6.4.6 oder höher. </br> Adobe empfiehlt, vor der Verwendung von AAL die neueste Version des [Experience Manager Service Pack ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de)SP) zu installieren. |
+| Asset Link funktioniert standardmäßig | Experience Manager 6.5 und 6.5.2 oder höher. </br> Experience Manager 6.4.4 und 6.4.6 oder höher. </br> Adobe empfiehlt, vor der Verwendung von AAL die neueste Version des [Experience Manager Service Pack &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de)SP) zu installieren. |
 | Asset Link funktioniert nach der Installation eines Pakets | Installieren Sie für Experience Manager 6.4.0 bis 6.4.3 das Paket [adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). |
 | Adobe Stock-Integration | Experience Manager 6.4.2 oder höher |
 | Visuelle oder Ähnlichkeitssuche | Experience Manager 6.5.0 oder höher |
@@ -71,10 +71,10 @@ So konfigurieren Sie Experience Manager manuell:
 
    Legen Sie die folgende Konfiguration fest und klicken Sie auf **[!UICONTROL Speichern]**.
 
-   * [!UICONTROL Autorisierungsendpunkt]: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
-   * [!UICONTROL Token-Endpunkt]: ` https://ims-na1.adobelogin.com/ims/token/v1`
-   * [!UICONTROL Profil-Endpunkt]: ` https://ims-na1.adobelogin.com/ims/profile/v1`
-   * [!UICONTROL Validierungs-URL]: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
+   * [!UICONTROL Autorisierungsendpunkt]&#x200B;: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
+   * [!UICONTROL Token-Endpunkt]&#x200B;: ` https://ims-na1.adobelogin.com/ims/token/v1`
+   * [!UICONTROL Profil-Endpunkt]&#x200B;: ` https://ims-na1.adobelogin.com/ims/profile/v1`
+   * [!UICONTROL Validierungs-URL]&#x200B;: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
    * [!UICONTROL Organisation]: Festgelegt auf die Organisations-ID im [Adobe Admin Console](https://adminconsole.adobe.com/).
    * [!UICONTROL Gruppenzuordnungen]: Lassen Sie das Feld leer, es sei denn, Sie haben einen Sonderfall. Weitere Informationen finden Sie unter [Gruppenzuordnung](#group-mapping).
 
@@ -88,10 +88,10 @@ So konfigurieren Sie Experience Manager manuell:
 
    * [!UICONTROL Client-ID]: Nicht ändern
    * [!UICONTROL Client-Geheimnis]: Nicht ändern
-   * [!UICONTROL Konfigurations-ID]: ` ims`
+   * [!UICONTROL Konfigurations-ID]&#x200B;: ` ims`
    * [!UICONTROL Umfang]: `AdobeID, OpenID, read_organizations` (Andere Werte können sich auch in der Konfiguration befinden)
-   * [!UICONTROL Anbieter-ID]: ` ims`
-   * [!UICONTROL Benutzer erstellen]: ` Checked`
+   * [!UICONTROL Anbieter-ID]&#x200B;: ` ims`
+   * [!UICONTROL Benutzer erstellen]&#x200B;: ` Checked`
    * [!UICONTROL Benutzer-ID-Eigenschaft]: `Email` für die neu erstellte Konfiguration. Andernfalls bleibt es unverändert.
 
 1. Suchen Sie die Konfiguration für **[!UICONTROL Apache Jackrabbit Oak Standard Sync Handler]** mit dem **[!UICONTROL Sync Handler-Namen]** `ims` und klicken Sie darauf, um sie zu bearbeiten.
@@ -100,7 +100,7 @@ So konfigurieren Sie Experience Manager manuell:
 
    * [!UICONTROL User Expiration Time and User Membership Expiration]: Zeit in Minuten, gefolgt von einem „m“ ohne Leerzeichen. Beispiel: `15m` für 15 Minuten. Weitere Informationen finden Sie unter [Gruppenzuordnung](#group-mapping).
    * [!UICONTROL Automatische Benutzerzugehörigkeit]: Nicht ändern
-   * [!UICONTROL Dynamische Benutzerzugehörigkeit]: ` Deslect`
+   * [!UICONTROL Dynamische Benutzerzugehörigkeit]&#x200B;: ` Deslect`
 
 1. Suchen Sie die Konfiguration für **[!UICONTROL Adobe Granite OAuth Authentication Handler]** und klicken Sie darauf, um sie zu bearbeiten. Klicken Sie, ohne Änderungen vorzunehmen, auf **[!UICONTROL Speichern]**.
 
