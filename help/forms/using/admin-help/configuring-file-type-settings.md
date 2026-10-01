@@ -126,7 +126,7 @@ Die folgenden Optionen bestimmen, wie Bilddateien in PDF konvertiert werden. Anw
 
 **OCR verwenden:** Gibt an, ob die optische Zeichenerkennung (Optical Character Recognition, OCR) auf die PDF-Datei angewendet werden soll. Mit OCR-Software können Sie den Text in einer PDF-Datei durchsuchen, korrigieren und kopieren.
 
-***Hinweis **: Die OCR PDF-Funktion (durchsuchbare PDF) wird nur unter Microsoft Windows unterstützt.*
+***Hinweis &#x200B;**: Die OCR PDF-Funktion (durchsuchbare PDF) wird nur unter Microsoft Windows unterstützt.*
 
 **Primäre OCR-Sprache:** Die von der OCR-Engine zum Erkennen der Zeichen zu verwendende Sprache.
 
@@ -265,7 +265,7 @@ Anweisungen zum Zugriff auf diese Einstellung finden Sie unter [Erstellen oder B
 
    >[!NOTE]
    >
-   >*Wenn Sie diese Option in Kombination mit **Einbettung für einige Schriftarten aufheben**verwenden, ist die Einbettung für die Schriftarten in der Liste **Schriftarten für die Aufhebung der Einbettung hinzufügen**weiterhin vollständig aufgehoben.*
+   >*Wenn Sie diese Option in Kombination mit **Einbettung für einige Schriftarten aufheben**&#x200B;verwenden, ist die Einbettung für die Schriftarten in der Liste **Schriftarten für die Aufhebung der Einbettung hinzufügen**&#x200B;weiterhin vollständig aufgehoben.*
 
    >[!NOTE]
    >

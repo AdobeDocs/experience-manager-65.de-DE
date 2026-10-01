@@ -39,7 +39,7 @@ In der Veröffentlichungs- und Autorenumgebung werden Informationen zu Folgendem
 ![ClientContext-Fenster mit den Symbolen zum Bearbeiten, Laden und Zurücksetzen](do-not-localize/clientcontext_icons.png)
 
 * **Bearbeiten**
-Eine neue Seite wird geöffnet. Dort können [ (Profileigenschaften bearbeiten, hinzufügen oder entfernen](#editingprofiledetails).
+Eine neue Seite wird geöffnet. Dort können [&#x200B; (Profileigenschaften bearbeiten, hinzufügen oder entfernen](#editingprofiledetails).
 
 * **laden**
 Sie können [aus einer Liste von Profilen auswählen und das Profil laden](#loading-a-new-user-profile) das Sie testen möchten.

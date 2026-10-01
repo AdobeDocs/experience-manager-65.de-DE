@@ -20,7 +20,7 @@ ht-degree: 2%
 
 ## Erstellen von Adobe Experience Manager (AEM)-Komponenten, die auf Gerätefunktionen zugreifen {#building-aem-components-that-access-device-features}
 
-Das GitHub-Repository für [AEM PhoneGap ](https://github.com/blefebvre/aem-phonegap-kitchen-sink) Kitchen Sink bietet Entwicklern eine funktionale AEM-App, die die Verwendung mehrerer Kern-Cordova-APIs veranschaulicht. Wenn die App auf iOS oder Android™ über die PhoneGap-CLI ausgeführt wird, öffnet sich die App auf der folgenden Seite, die einen Link zu jeder Geräte-API enthält, die sie zeigt:
+Das GitHub-Repository für [AEM PhoneGap &#x200B;](https://github.com/blefebvre/aem-phonegap-kitchen-sink) Kitchen Sink bietet Entwicklern eine funktionale AEM-App, die die Verwendung mehrerer Kern-Cordova-APIs veranschaulicht. Wenn die App auf iOS oder Android™ über die PhoneGap-CLI ausgeführt wird, öffnet sich die App auf der folgenden Seite, die einen Link zu jeder Geräte-API enthält, die sie zeigt:
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 

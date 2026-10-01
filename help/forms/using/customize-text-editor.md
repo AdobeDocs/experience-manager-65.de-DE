@@ -164,7 +164,7 @@ Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei „tbxeditor
       * Standardwerte für Schriftfamilie und -größe, Höhe, Zeichenabstand und Datumsformat
       * Einzüge für Aufzählungszeichen
 
-      Um zum Beispiel eine japanische Schriftart mit dem Namen Sazanami Mincho Medium hinzuzufügen, müssen Sie Folgendes in der XML-Datei eintragen: `<font>Sazanami Mincho Medium</font>`. Außerdem müssen Sie diese Schriftart auf dem Client-Computer installieren, über den auf die Schriftartanpassung zugegriffen und mit dieser gearbeitet wird. Weitere Informationen finden Sie unter[ Hinzufügen von benutzerdefinierten Schriften zum Clientcomputer](#addcustomfonts).
+      Um zum Beispiel eine japanische Schriftart mit dem Namen Sazanami Mincho Medium hinzuzufügen, müssen Sie Folgendes in der XML-Datei eintragen: `<font>Sazanami Mincho Medium</font>`. Außerdem müssen Sie diese Schriftart auf dem Client-Computer installieren, über den auf die Schriftartanpassung zugegriffen und mit dieser gearbeitet wird. Weitere Informationen finden Sie unter[&#x200B; Hinzufügen von benutzerdefinierten Schriften zum Clientcomputer](#addcustomfonts).
 
       Sie können auch die Standardeinstellungen für verschiedene Aspekte des Textes ändern und die Schriftarten aus dem Texteditor entfernen, indem Sie die Einträge entfernen.
 

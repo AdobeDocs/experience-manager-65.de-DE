@@ -69,7 +69,7 @@ Zum Aktivieren von SSL muss WebSphere in der Benutzerregistrierung des lokalen B
 1. Wählen Sie unter „Administrative security“ (Administrative Sicherheit) die Option **Administrative user roles** (Administrative Benutzerrollen) aus.
 1. Klicken Sie auf „Add“ (Hinzufügen) und führen Sie folgende Schritte aus:
 
-   1. Geben Sie **&amp;ast;** in das Suchfeld ein und klicken Sie auf „Suchen“.
+   1. Geben Sie **&ast;** in das Suchfeld ein und klicken Sie auf „Suchen“.
    1. Klicken Sie unter „Roles“ (Rollen) auf **Administrator** (Admin).
    1. Fügen Sie die neu erstellte Benutzerin bzw. den neu erstellten Benutzer zu „Mapped to role“ (Zugeordnet zur Rolle) hinzu und ordnen Sie diese Person der Rolle „Administrator“ (Admin) zu.
 

@@ -173,7 +173,7 @@ Beim Erstellen von Regeln definieren Sie einen regulären Ausdruck (auch als reg
 | include | „include“ umfasst alle Dateien und Ordner im angegebenen Verzeichnis, die dem regulären Ausdruck entsprechen. „include“ schließt andere Dateien oder Ordner unter dem angegebenen Stammpfad **nicht** mit ein. |
 | exclude | „exclude“ schließt alle Dateien und Ordner aus, die dem regulären Ausdruck entsprechen. |
 
-Paketfilter werden meistens definiert, wenn Sie das Paket zum ersten [ erstellen](#creating-a-new-package) Sie können jedoch auch später bearbeitet werden. Danach sollte das Paket neu aufgebaut werden, um seinen Inhalt basierend auf den neuen Filterdefinitionen zu aktualisieren.
+Paketfilter werden meistens definiert, wenn Sie das Paket zum ersten [&#x200B; erstellen](#creating-a-new-package) Sie können jedoch auch später bearbeitet werden. Danach sollte das Paket neu aufgebaut werden, um seinen Inhalt basierend auf den neuen Filterdefinitionen zu aktualisieren.
 
 >[!TIP]
 >
