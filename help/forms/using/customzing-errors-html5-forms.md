@@ -9,11 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '508'
 ht-degree: 100%
-
 ---
-
 # Anpassen von Fehlermeldungen für HTML5-Formulare {#customizing-error-messages-for-html-forms}
 
 In den HTML5-Formularen haben Fehlermeldungen und Warnungen standardmäßig eine feste Position und ein festgelegtes Erscheinungsbild (Schrift und Farbe). Der jeweilige Fehler wird nur für ein ausgewähltes Feld ausgegeben und es wird nur ein Fehler angezeigt.
@@ -76,7 +74,7 @@ Fügen Sie zum Anpassen der Fehlermeldungsposition für jedes Fehler- und Warnfe
 
 1. Speichern und schließen Sie die Datei.
 1. Navigieren Sie zum Ordner `CustomErrorManager-1.0-SNAPSHOT` und erstellen Sie ein Archiv der Ordner jcr_root und META-INF. Benennen Sie das Archiv in CustomErrorManager-1.0-SNAPSHOT.zip um.
-1. Verwenden Sie Package Manager, um das Paket herunterzuladen und zu installieren.
+1. Verwenden Sie den Paket-Manager, um das Paket herunterzuladen und zu installieren.
 
 ## Anzeigen von Fehlermeldungen für mehrere Felder  {#display-error-messages-for-multiple-fields-nbsp}
 
@@ -114,7 +112,7 @@ Verwenden Sie das beigefügte Paket, um Fehlermeldungen für alle Felder gleichz
 
 1. Speichern und schließen Sie die Datei.
 1. Navigieren Sie zum Ordner „CustomErrorManager-1.0-SNAPSHOT“ und erstellen Sie ein Archiv der Ordner „jcr_root“ und „META-INF“. Benennen Sie das Archiv in CustomErrorManager-1.0-SNAPSHOT.zip um.
-1. Verwenden Sie Package Manager, um das Paket herunterzuladen und zu installieren.
+1. Verwenden Sie den Paket-Manager, um das Paket herunterzuladen und zu installieren.
 
 ## Rendern Sie das Formular mit dem neuen Profil.  {#render-the-form-with-the-new-profile-nbsp}
 

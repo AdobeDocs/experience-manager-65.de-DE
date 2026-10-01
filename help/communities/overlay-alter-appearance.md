@@ -1,6 +1,6 @@
 ---
 title: Erscheinungsbild ändern
-description: Erfahren Sie, wie Sie das Skript „comment.hbs“ bearbeiten, das für die Erstellung der gesamten HTML für jeden Kommentar in Adobe Experience Manager Communities verantwortlich ist.
+description: Erfahren Sie, wie Sie das Skript „comment.hbs“ bearbeiten, das für die Erstellung des gesamten HTML für jeden Kommentar in Adobe Experience Manager Communities verantwortlich ist.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -12,16 +12,14 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '242'
 ht-degree: 0%
-
 ---
-
 # Erscheinungsbild ändern {#alter-the-appearance}
 
 ## Skript ändern {#modify-the-script}
 
-Das `comment.hbs` Skript ist für die Erstellung der gesamten HTML für jeden Kommentar verantwortlich.
+Das `comment.hbs`-Skript ist für die Erstellung der gesamten HTML für jeden Kommentar verantwortlich.
 
 Um den Avatar nicht neben jedem geposteten Kommentar anzuzeigen:
 

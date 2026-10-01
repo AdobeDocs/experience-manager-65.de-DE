@@ -11,14 +11,12 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '220'
 ht-degree: 100%
-
 ---
-
 # Architektur von AEM Forms Workspace {#aem-forms-workspace-architecture}
 
-AEM Forms Workspace ist eine Web-Anwendung, die auf CRX™ gehostet wird. Wenn Workspace in einem Browser geöffnet wird, wird auf eine CRX-Ressource zugegriffen und die Anwendung als HTML-Seite im Browser gerendert. 
+AEM Forms Workspace ist eine Web-Anwendung, die auf CRX™ gehostet wird. Wenn Workspace in einem Browser geöffnet wird, wird auf eine CRX-Ressource zugegriffen und die Anwendung als HTML-Seite im Browser gerendert.
 
 Die Anwendung greift auf den AEM-Formular-Server an den REST-Endpunkten zu, um folgende Aktionen auszuführen:
 
@@ -33,5 +31,5 @@ AEM Forms Workspace ist aus modularen JavaScript™-Komponenten aufgebaut, die i
 
 Pakete, die für AEM Forms Workspace bereitgestellt werden:
 
-* `adobe-lc-workspace-pkg-<version>.zip`: Dies ist ein CRX-Paket, das heißt, es kann mithilfe des Package Manager in CRX bereitgestellt werden.
+* `adobe-lc-workspace-pkg-<version>.zip`: Dies ist ein CRX-Paket, das heißt, es kann mithilfe des Paket-Managers in CRX bereitgestellt werden.
 * `adobe-lc-workspace-<version>-src.zip`: Dies ist ein Archiv, das den vollständigen Code von AEM Forms Workspace und Skripte enthält, um die Bereitstellungspakete (Lieferpaket, Debugging-Paket und Entwicklungspaket) zu erstellen.
