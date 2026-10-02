@@ -9,11 +9,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 100%
-
+source-wordcount: '899'
+ht-degree: 96%
 ---
-
 # Verwenden von Metadaten in einer E-Mail-Benachrichtigung {#use-metadata-in-an-email-notification}
 
 Mit dem Schritt „Aufgabe zuweisen“ können Sie Aufgaben erstellen und einer Person oder Gruppe zuweisen. Wenn eine Aufgabe einer Person oder einer Gruppe zugewiesen wird, erhält die definierte Person bzw. jedes Mitglied der definierten Gruppe eine E-Mail-Benachrichtigung. Eine typische [E-Mail-Benachrichtigung](../../forms/using/use-custom-email-template-assign-task-step.md) enthält einen Link zur zugewiesenen Aufgabe und dazugehörige Informationen.
@@ -22,7 +20,7 @@ Sie können Metadaten in einer E-Mail-Vorlage verwenden, um Informationen in ein
 
 ![Standard-E-Mail-Vorlage](assets/default_email_template_metadata_new.png)
 
-Metadaten werden in Schlüssel-Wert-Paaren gespeichert. Sie können den Schlüssel in der E-Mail-Vorlage angeben. Dieser wird dann zur Laufzeit (wenn eine E-Mail-Benachrichtigung erstellt wird) durch einen Wert ersetzt. Im folgenden Codebeispiel ist beispielsweise „$ {workitem_title}“ ein Schlüssel. Er wird zur Laufzeit durch den Wert „Loan-Request“ ersetzt.
+Metadaten werden in Schlüssel-Wert-Paaren gespeichert. Sie können den Schlüssel in der E-Mail-Vorlage angeben. Dieser wird dann zur Laufzeit (wenn eine E-Mail-Benachrichtigung erstellt wird) durch einen Wert ersetzt. Im folgenden Codebeispiel ist beispielsweise &quot;$ {workitem_title} &quot; ein Schlüssel. Er wird zur Laufzeit durch den Wert „Loan-Request“ ersetzt.
 
 ```html
 subject=Task Assigned - ${workitem_title}
@@ -150,7 +148,7 @@ Eine AEM Forms-Anwendung bietet verschiedene standardmäßige Metadatenvariablen
 
 ## Verwenden benutzerdefinierter Metadaten in einer E-Mail-Benachrichtigung {#using-custom-metadata-in-an-email-notification}
 
-Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung verwenden. Benutzerdefinierte Metadaten enthalten Informationen zusätzlich zu systemseitig generierten Metadaten. Dies können beispielsweise Richtliniendetails aus einer Datenbank sein. Sie können ein ECMAScript- oder OSGi-Bundle verwenden, um benutzerdefinierte Metadaten in crx-repository hinzuzufügen:
+Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung verwenden. Benutzerdefinierte Metadaten enthalten Informationen zusätzlich zu systemseitig generierten Metadaten. Dies können beispielsweise Richtliniendetails aus einer Datenbank sein. Sie können ein ECMAScript- oder OSGi-Paket verwenden, um benutzerdefinierte Metadaten in crx-repository hinzuzufügen:
 
 ### Verwenden von ECMAScript zum Hinzufügen benutzerdefinierter Metadaten  {#use-ecmascript-to-add-custom-metadata}
 
@@ -184,8 +182,8 @@ Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung v
 
    Wenn Sie keinen Titel angeben, zeigt das Feld Benutzerdefinierte Metadaten den vollständigen Pfad der ECMAScript-Datei an. Führen Sie die folgenden Schritte aus, um einen aussagekräftigen Titel für das Skript festzulegen:
 
-   1. Erweitern Sie den Skriptknoten, klicken Sie mit der rechten Maustaste auf den Knoten **[!UICONTROL jcr:content]** und dann auf **[!UICONTROL Mixins]**.
-   1. Geben Sie „mix:title“ in das Dialogfeld zur Mixin-Bearbeitung ein und klicken Sie auf **+**.
+   1. Erweitern Sie den Skriptknoten, klicken Sie mit der rechten Maustaste auf den **[!UICONTROL jcr:content]**-Knoten und klicken Sie auf **[!UICONTROL Mixins]**.
+   1. Geben Sie :title Dialogfeld Mixins bearbeiten ein und klicken Sie auf **+**.
    1. Fügen Sie eine Eigenschaft mit den folgenden Werten hinzu.
 
       | Name | jcr:title |
@@ -193,17 +191,17 @@ Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung v
       | Typ | Zeichenfolge |
       | Wert | Geben Sie den Titel des Skripts an, z. B. „Benutzerdefinierte Metadaten für den Versicherungsnehmer“. Der angegebene Wert wird im Schritt „Aufgabe zuweisen“ angezeigt. |
 
-### Hinzufügen benutzerdefinierter Metadaten mit einem OSGi-Bundle und einer Java-Schnittstelle {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
+### Hinzufügen benutzerdefinierter Metadaten mit einem OSGi-Paket und einer Java-Schnittstelle {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
-Sie können die Java-Schnittstelle „WorkitemUserMetadataService“ zum Hinzufügen benutzerdefinierter Metadaten für E-Mail-Vorlagen verwenden. Erstellen Sie ein OSGi-Bundle, das die Java-Schnittstelle „WorkitemUserMetadataService“ verwendet, und stellen Sie es auf dem AEM-Formular-Server bereit. Dadurch werden die Metadaten im Schritt „Aufgabe zuweisen“ auswählbar.
+Sie können die Java-Schnittstelle „WorkitemUserMetadataService“ zum Hinzufügen benutzerdefinierter Metadaten für E-Mail-Vorlagen verwenden. Erstellen Sie ein OSGi-Paket, das die Java-Schnittstelle „WorkitemUserMetadataService“ verwendet, und stellen Sie es auf dem AEM-Formular-Server bereit. Dadurch werden die Metadaten im Schritt „Aufgabe zuweisen“ auswählbar.
 
-Um ein OSGi-Bundle mit Java-Schnittstelle zu erstellen, fügen Sie dem OSGi-Bundle-Projekt [AEM Forms Client SDK](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html)- und [granite](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/)-jar-Dateien als externe Abhängigkeiten hinzu. Sie können eine beliebige Java-IDE verwenden, um ein OSGi-Bundle zu erstellen. Das folgende Beispiel zeigt die Erstellung eines OSGi-Bundles mithilfe von Eclipse:
+Um ein OSGi-Paket mit Java-Schnittstelle zu erstellen, fügen Sie dem OSGi-Paket-Projekt [AEM Forms Client SDK](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html)- und [granite](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/)-jar-Dateien als externe Abhängigkeiten hinzu. Sie können eine beliebige Java-IDE verwenden, um ein OSGi-Paket zu erstellen. Das folgende Beispiel zeigt die Erstellung eines OSGi-Pakets mithilfe von Eclipse:
 
 1. Öffnen Sie die Eclipse-IDE. Navigieren Sie zu Datei > Neues Projekt.
 
 1. Wählen Sie im Assistenten-Dialogfeld Maven-Projekt und klicken Sie auf Weiter.
 
-1. Behalten Sie unter „Neues Maven-Projekt“ die Standardeinstellungen bei und klicken Sie auf „Weiter“. Wählen Sie einen Archetyp aus und klicken Sie auf „Weiter“. Beispiel: maven-archetype-quickstart. Geben Sie Group Id, Artifact ID, Version und Paket für das Projekt an und klicken Sie auf Beenden. Das Projekt wird erstellt.
+1. Behalten Sie unter „Neues Maven-Projekt“ die Standardeinstellungen bei und klicken Sie auf „Weiter“. Wählen Sie einen Archetyp aus und klicken Sie auf „Weiter“. Beispiel: maven-archetype-quickstart. Geben Sie Gruppen-ID, Artefakt-ID, Version und Paket für das Projekt an und klicken Sie auf Beenden. Das Projekt wird erstellt.
 
 1. Öffnen Sie die Datei „pom.xml“ zur Bearbeitung und ersetzen Sie den gesamten Inhalt dieser Datei durch den folgenden Text:
 
@@ -243,10 +241,10 @@ Um ein OSGi-Bundle mit Java-Schnittstelle zu erstellen, fügen Sie dem OSGi-Bund
    }
    ```
 
-1. Öffnen Sie eine Eingabeaufforderung und navigieren Sie zum Ordner, der das OSGi-Bundle-Projekt enthält. Verwenden Sie den folgenden Befehl, um das OSGi-Bundle zu erstellen:
+1. Öffnen Sie eine Eingabeaufforderung und navigieren Sie zum Ordner, der das OSGi-Paket-Projekt enthält. Verwenden Sie den folgenden Befehl, um das OSGi-Paket zu erstellen:
 
    `mvn clean install`
 
-1. Laden Sie das Bundle auf einen AEM-Formular-Server hoch. Mit AEM Package Manager können Sie das Bundle auf einen AEM-Formular-Server importieren.
+1. Laden Sie das Paket auf einen AEM-Formular-Server hoch. Mit dem AEM-Paket-Manager können Sie das Bundle auf einen AEM-Formular-Server importieren.
 
-Nachdem das Bundle importiert wurde, können Sie die Metadaten im Schritt „Aufgabe zuweisen“ auswählen und als E-Mail-Vorlage verwenden.
+Nachdem das Paket importiert wurde, können Sie die Metadaten im Schritt „Aufgabe zuweisen“ auswählen und als E-Mail-Vorlage verwenden.

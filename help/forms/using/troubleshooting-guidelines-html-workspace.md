@@ -11,18 +11,16 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '788'
 ht-degree: 100%
-
 ---
-
 # Fehlerbehebung bei Richtlinien für einen AEM Forms-Arbeitsbereich {#troubleshooting-guidelines-for-aem-forms-workspace}
 
 Dieser Artikel erläutert, wie Sie AEM Forms Workspace debuggen, indem Sie die Protokollierung aktivieren und den Debugger in einem Browser verwenden. Außerdem werden einige häufig auftretende Probleme bei der Verwendung von AEM Forms Workspace und deren Umgehungslösungen erläutert.
 
 ## AEM Forms Workspace-Paket kann nicht installiert werden {#unable-to-install-aem-forms-workspace-package}
 
-Öffnen Sie nach der Installation des Patches den AEM Forms Workspace. Falls ein Fehler vom Typ „Keine Resource gefunden“ auftritt, öffnen Sie CRX Package Manager und installieren Sie das Paket `adobe-lc-workspace-pkg-<version>.zip` erneut.
+Öffnen Sie nach der Installation des Patches den AEM Forms Workspace. Falls ein Fehler vom Typ „Keine Resource gefunden“ auftritt, öffnen Sie den CRX-Paket-Manager und installieren Sie das Paket `adobe-lc-workspace-pkg-<version>.zip` erneut.
 
 Wenn während der Installation des Pakets der Fehler `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed` auftritt, führen Sie folgende Schritte aus:
 
@@ -31,7 +29,7 @@ Wenn während der Installation des Pakets der Fehler `javax.jcr.nodetype.Constra
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
-1. Navigieren Sie zu Package Manager. Die Standardeinstellung ist `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
+1. Navigieren Sie zum Paket-Manager. Die Standardeinstellung ist `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. Suchen Sie das Paket `adobe-lc-workspace-pkg-[version].zip` und installieren Sie es.
 1. Starten Sie den Anwendungs-Server neu.
 

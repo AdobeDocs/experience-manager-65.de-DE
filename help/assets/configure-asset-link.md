@@ -7,12 +7,10 @@ feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 6ab943894398733d178f561430d3f391e8722195
-workflow-type: ht
-source-wordcount: '3059'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '3255'
+ht-degree: 99%
 ---
-
 # Konfigurieren von Experience Manager Assets für Adobe Asset Link {#adobe-asset-link}
 
 [Adobe Asset Link (AAL)](https://www.adobe.com/de/creativecloud/business/enterprise/adobe-asset-link.html) optimiert die Zusammenarbeit zwischen Kreativen und Marketern bei der Inhaltserstellung. Damit wird Adobe Experience Manager Assets mit den Creative Cloud-Desktop-Programmen Adobe InDesign, Adobe Photoshop und Adobe Illustrator verbunden. Über das Adobe Asset-Link-Bedienfeld können Kreative auf in AEM Assets gespeicherte Inhalte zugreifen und diese bearbeiten, ohne die Kreativprogramme zu verlassen, mit denen sie am besten vertraut sind.
@@ -33,7 +31,7 @@ Installieren Sie unbedingt das entsprechende Service Pack und das Paket, das Sie
 
 | Asset-Funktion | Experience Manager-Version und Support-Anforderungen |
 |--- |--- |
-| Asset Link funktioniert standardmäßig | Experience Manager 6.5 und 6.5.2 oder höher. </br> Experience Manager 6.4.4 und 6.4.6 oder höher. </br> Adobe empfiehlt, vor der Verwendung von AAL die neueste Version des [Experience Manager Service Pack (SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de) zu installieren. |
+| Asset Link funktioniert standardmäßig | Experience Manager 6.5 und 6.5.2 oder höher. </br> Experience Manager 6.4.4 und 6.4.6 oder höher. </br> Adobe empfiehlt, vor der Verwendung von AAL die neueste Version des [Experience Manager Service Pack &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de)SP) zu installieren. |
 | Asset Link funktioniert nach der Installation eines Pakets | Installieren Sie für Experience Manager 6.4.0 bis 6.4.3 das Paket [adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). |
 | Adobe Stock-Integration | Experience Manager 6.4.2 oder höher |
 | Visuelle oder Ähnlichkeitssuche | Experience Manager 6.5.0 oder höher |
@@ -47,7 +45,7 @@ Adobe empfiehlt die Installation des Konfigurationspakets [adobe-asset-link-conf
 >
 >Wenn Ihre Experience Manager-Instanz für die Benutzeranmeldung mit Adobe IMS-Konten konfiguriert ist, verwenden Sie nicht das Konfigurationspaket. Stattdessen müssen Sie Ihre Experience Manager-Instanz [manuell konfigurieren](#manual-configuration).
 
-1. Um den Package Manager in der Experience Manager-Web-Benutzeroberfläche zu öffnen, greifen Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Package Share]** zu. Installieren Sie das Paket `adobe-asset-link-config`.
+1. Um den Paket-Manager in der Experience Manager-Web-Benutzeroberfläche zu öffnen, greifen Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Package Share]** zu. Installieren Sie das Paket `adobe-asset-link-config`.
 
 1. Öffnen Sie **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**. Suchen Sie die Konfiguration für **[!UICONTROL Adobe Granite OAuth IMS Provider]** und klicken Sie darauf, um sie zu bearbeiten.
 
@@ -73,10 +71,10 @@ So konfigurieren Sie Experience Manager manuell:
 
    Legen Sie die folgende Konfiguration fest und klicken Sie auf **[!UICONTROL Speichern]**.
 
-   * [!UICONTROL Autorisierungsendpunkt]: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
-   * [!UICONTROL Token-Endpunkt]: ` https://ims-na1.adobelogin.com/ims/token/v1`
-   * [!UICONTROL Profil-Endpunkt]: ` https://ims-na1.adobelogin.com/ims/profile/v1`
-   * [!UICONTROL Validierungs-URL]: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
+   * [!UICONTROL Autorisierungsendpunkt]&#x200B;: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
+   * [!UICONTROL Token-Endpunkt]&#x200B;: ` https://ims-na1.adobelogin.com/ims/token/v1`
+   * [!UICONTROL Profil-Endpunkt]&#x200B;: ` https://ims-na1.adobelogin.com/ims/profile/v1`
+   * [!UICONTROL Validierungs-URL]&#x200B;: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
    * [!UICONTROL Organisation]: Festgelegt auf die Organisations-ID im [Adobe Admin Console](https://adminconsole.adobe.com/).
    * [!UICONTROL Gruppenzuordnungen]: Lassen Sie das Feld leer, es sei denn, Sie haben einen Sonderfall. Weitere Informationen finden Sie unter [Gruppenzuordnung](#group-mapping).
 
@@ -90,10 +88,10 @@ So konfigurieren Sie Experience Manager manuell:
 
    * [!UICONTROL Client-ID]: Nicht ändern
    * [!UICONTROL Client-Geheimnis]: Nicht ändern
-   * [!UICONTROL Konfigurations-ID]: ` ims`
+   * [!UICONTROL Konfigurations-ID]&#x200B;: ` ims`
    * [!UICONTROL Umfang]: `AdobeID, OpenID, read_organizations` (Andere Werte können sich auch in der Konfiguration befinden)
-   * [!UICONTROL Anbieter-ID]: ` ims`
-   * [!UICONTROL Benutzer erstellen]: ` Checked`
+   * [!UICONTROL Anbieter-ID]&#x200B;: ` ims`
+   * [!UICONTROL Benutzer erstellen]&#x200B;: ` Checked`
    * [!UICONTROL Benutzer-ID-Eigenschaft]: `Email` für die neu erstellte Konfiguration. Andernfalls bleibt es unverändert.
 
 1. Suchen Sie die Konfiguration für **[!UICONTROL Apache Jackrabbit Oak Standard Sync Handler]** mit dem **[!UICONTROL Sync Handler-Namen]** `ims` und klicken Sie darauf, um sie zu bearbeiten.
@@ -101,8 +99,8 @@ So konfigurieren Sie Experience Manager manuell:
    Legen Sie die folgenden Konfigurationseigenschaften fest und klicken Sie auf **[!UICONTROL Speichern]**.
 
    * [!UICONTROL User Expiration Time and User Membership Expiration]: Zeit in Minuten, gefolgt von einem „m“ ohne Leerzeichen. Beispiel: `15m` für 15 Minuten. Weitere Informationen finden Sie unter [Gruppenzuordnung](#group-mapping).
-   * [!UICONTROL Automatische Benutzermitgliedschaft]: Nicht ändern
-   * [!UICONTROL Dynamische Benutzermitgliedschaft]: ` Deslect`
+   * [!UICONTROL Automatische Benutzerzugehörigkeit]: Nicht ändern
+   * [!UICONTROL Dynamische Benutzerzugehörigkeit]&#x200B;: ` Deslect`
 
 1. Suchen Sie die Konfiguration für **[!UICONTROL Adobe Granite OAuth Authentication Handler]** und klicken Sie darauf, um sie zu bearbeiten. Klicken Sie, ohne Änderungen vorzunehmen, auf **[!UICONTROL Speichern]**.
 
@@ -131,7 +129,7 @@ Eine zusätzliche Konfiguration ist nur erforderlich, wenn Sie verschiedene Adob
 1. Eine betriebsbereite Experience Manager-Instanz mit für AAL konfigurierter Bearer-Authentifizierung.
 1. Installieren Sie das folgende Paket (Service Pack 11) auf Ihrer Experience Manager 6.5-Instanz.
 
-   [Herunterladen von Experience Manager 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
+   [Experience Manager 6.5.11.0 herunterladen](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
 
 1. Wenden Sie sich an den [!UICONTROL Kunden-Support], um die Client-ID und den geheimen Schlüssel für die Bearer-Authentifizierung Ihrer IMS-Organisation zu erhalten.
 
@@ -165,7 +163,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Benutzer und deren Zugriff auf das
 
 Die Gruppenzuordnung legt fest, wie die Gruppen in Experience Manager den Gruppen in Adobe IMS entsprechen. Dies spielt eine wichtige Rolle bei der Erteilung von Zugriffsberechtigungen für Adobe Asset Link-Benutzer auf Experience Manager Assets.
 
-Bei Verwendung mit Adobe Asset Link delegiert Experience Manager Benutzerverwaltungsfunktionen an Adobe IMS. Es werden automatisch Benutzer und Gruppen erstellt, die den Benutzern und Gruppen in Adobe IMS entsprechen. Darüber hinaus werden Benutzer, Gruppen und Gruppenmitgliedschaften in Experience Manager mit denen in Adobe IMS synchronisiert, damit sie übereinstimmen.
+Bei Verwendung mit Adobe Asset Link delegiert Experience Manager Benutzerverwaltungsfunktionen an Adobe IMS. Es werden automatisch Benutzer und Gruppen erstellt, die den Benutzern und Gruppen in Adobe IMS entsprechen. Darüber hinaus werden Benutzer, Gruppen und Gruppenzugehörigkeiten in Experience Manager mit denen in Adobe IMS synchronisiert, damit sie übereinstimmen.
 
 Angenommen, Adobe Asset Link-Benutzer sind Mitglieder der Adobe IMS-Gruppe assetlink-users. In diesem Fall wird eine synchronisierte Gruppe mit dem Namen assetlink-users in Experience Manager erstellt, wenn ein Benutzer dieser Adobe IMS-Gruppe zum ersten Mal eine Verbindung zu Adobe Asset Link herstellt. Jeder neue Benutzer in der Adobe IMS-Gruppe wird in Experience Manager dieser entsprechenden Gruppe hinzugefügt, wenn er zum ersten Mal über Adobe Asset Link eine Verbindung zu Experience Manager herstellt.
 
@@ -219,13 +217,13 @@ Die durch diese Szenarien erstellten Benutzer verfügen nicht über eine Eigensc
 
 So aktualisieren Sie diese Benutzer in Experience Manager, damit sie mit Asset Link arbeiten können:
 
-1. Suchen Sie in der Experience Manager-Webkonsole die Konfiguration für **[!UICONTROL Apache Jackrabbit Oak External PrincipalConfiguration]** und klicken Sie darauf, um sie zu bearbeiten. Deaktivieren Sie das Kontrollkästchen **[!UICONTROL Externer Identitätsschutz]** und klicken Sie auf **[!UICONTROL Speichern]**.
+1. Suchen Sie in der Experience Manager-Web-Konsole die Konfiguration für **[!UICONTROL Apache Jackrabbit Oak External PrincipalConfiguration]** und klicken Sie darauf, um sie zu bearbeiten. Deaktivieren Sie das Kontrollkästchen **[!UICONTROL Externer Identitätsschutz]** und klicken Sie auf **[!UICONTROL Speichern]**.
 1. Um auf die Benutzeroberfläche für das User Management in Experience Manager zuzugreifen, gehenn Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**. Wählen Sie den Benutzer aus, den Sie aktualisieren möchten, und notieren Sie sich dann das Ende des URL-Pfads Ihres Browsers für diesen Benutzer, beginnend mit `/home/users`. Alternativ können Sie auch in CRXDE nach dem Benutzernamen suchen. Ein Beispiel für einen Benutzerpfad: `/home/users/x/xTac082TDh-guJzzG7WM`.
 1. Navigieren Sie in CRXDE zum Benutzerpfad, wählen Sie den Benutzerknoten aus und zeigen Sie die Eigenschaften des Knotens an, indem Sie die Registerkarte **[!UICONTROL Eigenschaften]** im unteren mittleren Bereich auswählen. Dieser Knoten hat einen `jcr:primaryType`-Eigenschaftswert von `rep:User`.
 1. Geben Sie am unteren Rand des Registerkartenbereichs **[!UICONTROL Eigenschaften]** einen Wert für den `Name` von `rep:externalId` ein, einen Wert für den `Type` von `String` und einen Wert für den `Value` von `rep:authorizableId`;`ims`, wobei `rep:authorizableId` der Wert der `rep:authorizableId`-Eigenschaft des Knotens ist. (Ein Semikolon ohne Leerzeichen wird verwendet, um den Wert `rep:authorizableId` vom Wert `ims` zu trennen.)
 1. Klicken Sie auf der rechten Seite Ihres neuen Eintrags auf **[!UICONTROL Hinzufügen]** und klicken Sie auf **[!UICONTROL Alle speichern]**.
 1. Wiederholen Sie die Schritte 2 bis 5 für alle anderen Benutzer, die Sie aktualisieren möchten, damit sie mit Adobe Asset Link arbeiten können.
-1. Suchen Sie in der Experience Manager-Webkonsole die Konfiguration für **[!UICONTROL Apache Jackrabbit Oak External PrincipalConfiguration]** und klicken Sie darauf, um sie zu bearbeiten. Deaktivieren Sie das Kontrollkästchen **[!UICONTROL Externer Identitätsschutz]** und klicken Sie auf **[!UICONTROL Speichern]**.
+1. Suchen Sie in der Experience Manager-Web-Konsole die Konfiguration für **[!UICONTROL Apache Jackrabbit Oak External PrincipalConfiguration]** und klicken Sie darauf, um sie zu bearbeiten. Deaktivieren Sie das Kontrollkästchen **[!UICONTROL Externer Identitätsschutz]** und klicken Sie auf **[!UICONTROL Speichern]**.
 
 >[!NOTE]
 >

@@ -8,11 +8,9 @@ exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 9014a7dd3c9279a4da3944c1b095fd60352fdbeb
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '1015'
 ht-degree: 100%
-
 ---
-
 # Imaging Transcoding Library {#imaging-transcoding-library}
 
 Die Adobe Imaging Transcoding Library ist eine proprietäre Bildverarbeitungslösung, die zentrale Bildbearbeitungsfunktionen durchführen kann, darunter:
@@ -72,15 +70,15 @@ Für den Parameter `-resize` können folgende Optionen konfiguriert werden:
 
 Erstellen Sie zum Konfigurieren der ITL-Verarbeitung eine Konfigurationsdatei und aktualisieren Sie den Workflow, um sie auszuführen.
 
-### Erstellen einer Konfigurationsdatei für das extrahierte Bundle {#create-conf-file}
+### Erstellen einer Konfigurationsdatei für das extrahierte Paket {#create-conf-file}
 
 Um die Bibliothek zu konfigurieren, erstellen Sie eine CONF-Datei und geben Sie die Bibliotheken mithilfe der folgenden Schritte an. Sie benötigen Admin- oder Root-Berechtigungen.
 
 1. Laden Sie das Paket mit der [Imaging Transcoding Library von Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) herunter und installieren Sie es mit dem Paket-Manager. Das Paket ist kompatibel mit [!DNL Experience Manager] 6.5.
 
-1. Die Bundle-ID für `com.day.cq.dam.cq-dam-switchengine` finden Sie, indem Sie sich bei der Web-Konsole anmelden und auf **[!UICONTROL OSGi]** > **[!UICONTROL Bundles]** klicken. Alternativ können Sie zum Öffnen der Bundles-Konsole die URL `https://[aem_server:[port]/system/console/bundles/` aufrufen. Suchen Sie das Bundle `com.day.cq.dam.cq-dam-switchengine` und seine ID.
+1. Die Paket-ID für `com.day.cq.dam.cq-dam-switchengine` finden Sie, indem Sie sich bei der Web-Konsole anmelden und auf **[!UICONTROL OSGi]** > **[!UICONTROL Pakete]** klicken. Alternativ können Sie zum Öffnen der Pakete-Konsole die URL `https://[aem_server:[port]/system/console/bundles/` aufrufen. Suchen Sie das Paket `com.day.cq.dam.cq-dam-switchengine` und seine ID.
 
-1. Stellen Sie sicher, dass alle erforderlichen Bibliotheken extrahiert werden, indem Sie den Ordner mit dem Befehl `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/` überprüfen, wobei der Ordnername die Bundle-ID enthält. Beispielsweise lautet der Befehl `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/`, wenn die Bundle-ID `588` ist.
+1. Stellen Sie sicher, dass alle erforderlichen Bibliotheken extrahiert werden, indem Sie den Ordner mit dem Befehl `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/` überprüfen, wobei der Ordnername die Paket-ID enthält. Beispielsweise lautet der Befehl `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/`, wenn die Paket-ID `588` ist.
 
 1. Erstellen Sie eine Datei `SWitchEngineLibs.conf`, die mit der Bibliothek verknüpft wird.
 
