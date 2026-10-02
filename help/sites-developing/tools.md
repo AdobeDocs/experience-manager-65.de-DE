@@ -1,10 +1,12 @@
 ---
 title: Test- und Tracking-Tools
 description: AEM bietet ein Framework zum Testen der Benutzeroberfläche der Komponenten und einen Mechanismus zum Testen und Debuggen von Komponenten
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
+
 docset: aem65
 exl-id: bb5d1c7c-56ce-4d1e-a3cb-4e74d6922137
 solution: Experience Manager, Experience Manager Sites
@@ -12,11 +14,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '293'
 ht-degree: 100%
-
 ---
-
 # Test- und Tracking-Tools{#testing-and-tracking-tools}
 
 ## Testen {#testing}
@@ -48,11 +48,11 @@ Die folgenden Tools stehen zur Verfügung. Eine wichtige Angelegenheit ist jedoc
 
 **Bugzilla**
 
-Ein Bugtracker, der Ihren eigenen Anforderungen entsprechend konfiguriert werden kann.
+Ein Fehler-Tracking, das Ihren eigenen Anforderungen entsprechend konfiguriert werden kann.
 
 **Tabellen**
 
-Tabellen sind zwar nicht als Bugtracker gedacht, werden aber oft als solche *miss* braucht, da sie leicht verständlich sind und viele Benutzer Erfahrung mit ihrer Verwendung haben.
+Tabellen sind zwar nicht für das Fehler-Tracking gedacht, werden aber oft als solche *miss* braucht, da sie leicht verständlich sind und viele Benutzer Erfahrung mit ihrer Verwendung haben.
 
 Wenn Tabellen als Tracker verwendet werden, dann:
 
@@ -63,4 +63,4 @@ Wenn Tabellen als Tracker verwendet werden, dann:
 * sollten sie allen Projektmitgliedern zugänglich sein.
 * dürfen Kopien verteilt werden, falls Sicherheit ein Anliegen ist (oft in großen Unternehmen) und ein gemeinsamer Zugriff nicht möglich ist, solange alle verstehen, dass es sich bei den Tabellen um Kopien handelt, die nicht aktualisiert werden können.
 
-Auch für das Tracking von Bugs und Funktionsanforderungen sind proprietäre Tools vorhanden.
+Auch für das Tracking von Fehlern und Funktionsanforderungen sind proprietäre Tools vorhanden.

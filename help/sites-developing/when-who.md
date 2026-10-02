@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '270'
 ht-degree: 100%
-
 ---
-
 # Testen – wann und mit wem?{#testing-when-and-with-whom}
 
 Unterschiedliche Rollen können bei Tests und den verschiedenen Phasen der Projektentwicklung involviert sein.
