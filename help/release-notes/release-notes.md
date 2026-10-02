@@ -48,7 +48,7 @@ Inhaltsfragmente und die GraphQL-API erhalten außerdem Verbesserungen hinsichtl
 
 * [Multithread-PDF Generator-Konvertierungen](/help/forms/using/install-configure-document-services.md#windows-only-enable-multi-threaded-pdf-generator-conversions): Es wurde Unterstützung für die gleichzeitige Ausführung von Microsoft Word (doc/docx)- und Excel (xls/xlsx)-Konvertierungen hinzugefügt, wenn AEM Forms als Windows-Service unter einem einzigen konfigurierten Dienstkonto ausgeführt wird.
 
-* [Hierarchische Lesezeichen für XFA-basierte PDFs](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): Output Service und AEM Forms Designer generieren jetzt strukturierte Lesezeichenhierarchien in statischen interaktiven und einfachen XFA-basierten PDFs. Lesezeichen folgen den Überschriftenebenen (H1-H6), die in den Barrierefreiheitseigenschaften für Textfelder festgelegt sind, sodass H1-H6-Einträge unter dem richtigen übergeordneten Element verschachtelt werden, anstatt parallel angezeigt zu werden.
+* [Hierarchische Lesezeichen für XFA-basierte PDFs](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/using-designer.pdf): Output Service und AEM Forms Designer generieren jetzt strukturierte Lesezeichenhierarchien in statischen interaktiven und einfachen XFA-basierten PDFs. Lesezeichen folgen den Überschriftenebenen (H1-H6), die in den Barrierefreiheitseigenschaften für Textfelder festgelegt sind, sodass H1-H6-Einträge unter dem richtigen übergeordneten Element verschachtelt werden, anstatt parallel angezeigt zu werden.
 
 * [Details auf Formularebene in JEE-](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): AEM Forms on JEE zeichnet Details auf Formularebene in `transaction_log.log` für jede Transaktion zusammen mit Service- und Vorgangsinformationen auf. Admins können bei der Analyse von Übermittlungen, Ausgabedarstellungen und Konversionen Transaktionsberichterstellungsdaten mit bestimmten Formularen korrelieren. (FORMS-21574)
 
@@ -63,7 +63,7 @@ Inhaltsfragmente und die GraphQL-API erhalten außerdem Verbesserungen hinsichtl
   > * [Upgrade von JBoss EAP von 7.4.10 auf 7.4.23 für AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md) für eigenständige Umgebungen.
   > * [Upgrade des JBoss EAP-Clusters von 7.4.10 auf 7.4.23 für AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) für Cluster-Umgebungen.
 
-* **Configuration Manager (LCM) Express Mode Credential Prompt:** Wenn Sie AEM Forms on JEE im Express-Modus konfigurieren, fordert LCM Sie auf, die AEM Administrator-Anmeldeinformationen einzugeben, anstatt die Standardeinstellungen zu verwenden. Diese Änderung ist über den [Hotfix](/help/release-notes/aem-forms-hotfix.md) für AEM Service Pack 6.5.25.0 verfügbar. Die Konfigurationsschritte finden Sie unter &quot;[&#x200B; und Bereitstellen von AEM Forms 6.5 on JEE mit JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-turnkey.pdf). (FORMS-26365)
+* **Configuration Manager (LCM) Express Mode Credential Prompt:** Wenn Sie AEM Forms on JEE im Express-Modus konfigurieren, fordert LCM Sie auf, die AEM Administrator-Anmeldeinformationen einzugeben, anstatt die Standardeinstellungen zu verwenden. Diese Änderung ist über den [Hotfix](/help/release-notes/aem-forms-hotfix.md) für AEM Service Pack 6.5.25.0 verfügbar. Die Konfigurationsschritte finden Sie unter &quot;[&#x200B; und Bereitstellen von AEM Forms 6.5 on JEE mit JBoss Turnkey](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/install-turnkey.pdf). (FORMS-26365)
 
 ## Behobene Probleme in Service Pack 25 {#fixed-issues}
 
@@ -635,7 +635,7 @@ Die folgenden ZIP-Dateien enthalten die Textdokumente, in denen die in dieser Ve
 Diese Websites sind nur für Kundinnen und Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
 * [Produkt-Download unter „licensing.adobe.com“](https://licensing.adobe.com/)
-* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
