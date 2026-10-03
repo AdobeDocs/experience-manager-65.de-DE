@@ -9,9 +9,7 @@ source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 100%
-
 ---
-
 # Vorschau – JSON-Darstellung {#preview-json-representation}
 
 Beim Entwickeln der Modelle für Inhaltsfragmente als Teil der AEM-Headless-Implementierung können Sie mit dem Inhaltsfragment-Editor eine JSON-Beispielausgabe für ein Inhaltsfragment auf der Grundlage eines Modells anzeigen. So erhalten Sie beispielsweise eine Vorstellung davon, wie die endgültige Ausgabe aussehen wird. Dies könnte bei der Validierung der Modell-JSON-Struktur hilfreich sein, ggf. mit standardmäßigen Beispielinhalten pro Datentyp.

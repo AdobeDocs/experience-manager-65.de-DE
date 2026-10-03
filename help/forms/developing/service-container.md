@@ -1,21 +1,22 @@
 ---
 title: Dienst-Container
+
 description: AEM Forms-Dienste im Dienst-Container
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding, development-tools
+
 role: Developer
 exl-id: 6abf2401-5a87-4f72-9028-74580df5b9de
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '933'
 ht-degree: 100%
-
 ---
-
 # Dienst-Container {#service-container}
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
@@ -78,9 +79,9 @@ Der Service-Container bietet die folgenden Funktionen:
 
   Wenn ein Client-Programm einen Service aufruft, treten drei Ereignisse auf:
 
-   1. Ein Client-Programm sendet eine Aufrufanfrage an einen Service.
-   1. Der Service führt den in der Aufrufanfrage angegebenen Vorgang aus.
-   1. Der Service-Container gibt eine Aufrufantwort an das Client-Programm zurück.
+  1. Ein Client-Programm sendet eine Aufrufanfrage an einen Service.
+  1. Der Service führt den in der Aufrufanfrage angegebenen Vorgang aus.
+  1. Der Service-Container gibt eine Aufrufantwort an das Client-Programm zurück.
 
 **Siehe auch**
 

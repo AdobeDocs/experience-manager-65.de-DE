@@ -12,11 +12,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '825'
 ht-degree: 100%
-
 ---
-
 # Erstellen von CSS-Stilen für HTML5-Formulare {#creating-css-styles-for-html-forms}
 
 Die HTML5-Wiedergabe einer XFA-basierten Formularvorlage besteht aus mehreren HTML-Elementen. Diese Elemente werden in einer Reihenfolge angeordnet. Jedes Element hat klar definierte CSS-Klassen. Sie können die CSS-Klassen verwenden, um das Erscheinungsbild eines Elements zu ändern.
@@ -25,7 +23,7 @@ Die HTML5-Wiedergabe einer XFA-basierten Formularvorlage besteht aus mehreren HT
 >
 >In den CSS-Klassen dürfen die Werte der Attribute für Breite, Höhe, Rahmenstärke, oberen Bereich, linken Bereich, rechten Bereich, unteren Bereich, Abstand und Rand sowie für andere Positions- und Größenattribute nicht geändert werden. Änderungen an den Positions- und Größenattributen ziehen Änderungen am Layout des Formulars nach sich.
 
-## CSS-Klassen für Elemente {#css-classes-nbsp-for-elements-nbsp}
+## CSS-Klassen für Elemente  {#css-classes-nbsp-for-elements-nbsp}
 
 Jedes Element enthält klar definierte CSS-Klassen. Sie können diese Klassen ändern, um das Erscheinungsbild eines Elements zu ändern. Mit Ausnahme des Feld- und Zeichenelements hat jedes Element zwei CSS-Klassen: Type-Klasse und Name-Klasse.
 

@@ -12,10 +12,8 @@ role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 100%
-
+ht-degree: 94%
 ---
-
 # Aktivieren von Anlagen für ein HTML5-Formular {#enabling-attachments-for-an-html-form}
 
 Sie können Anlagen mit HTML5-Formularen hochladen, in einer Vorschau anzeigen und übermitteln. Standardmäßig ist die Anlagenunterstützung deaktiviert. Gehen Sie wie folgt vor, um die Unterstützung der Anlage zu aktivieren:
@@ -27,7 +25,7 @@ Sie können Anlagen mit HTML5-Formularen hochladen, in einer Vorschau anzeigen u
    | multiSelect | „true“ oder „false“ (true standardmäßig ausgewählt) |
    | fileSizeLimit | Zahl in MB (standardmäßig 2 MB). Zum Beispiel 5. |
    | buttonText | Schaltflächentext für Popupfenster (standardmäßig „Anhängen“) |
-   | Akzeptieren der Bedingungen | durch Kommas getrennte Liste der zu akzeptierenden Dateitypen („audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf“ standardmäßig) |
+   | Akzeptieren der Bedingungen | Durch Kommas getrennte Liste der zu akzeptierenden Dateitypen („audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf“ standardmäßig) |
 
    Beispiel:
 

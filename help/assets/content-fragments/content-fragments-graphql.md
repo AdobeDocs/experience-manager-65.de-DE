@@ -7,11 +7,9 @@ exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 100%
-
+source-wordcount: '697'
+ht-degree: 96%
 ---
-
 # Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
 Mit Adobe Experience Manager (AEM) können Sie Inhaltsfragmente zusammen mit der AEM-GraphQL-API (eine auf GraphQL basierende benutzerdefinierte Implementierung) verwenden, um strukturierte Inhalte für Ihre Programme „headless“ bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie den spezifischen Inhalt, den Sie rendern möchten/müssen (als Antwort auf die einzelne API-Abfrage), abrufen und bereitstellen.
@@ -27,7 +25,7 @@ Mit Adobe Experience Manager (AEM) können Sie Inhaltsfragmente zusammen mit der
 >GraphQL wird derzeit in zwei (separaten) Szenarios in Adobe Experience Manager (AEM) verwendet:
 >
 >* [AEM Commerce nutzt Daten von einer Commerce-Plattform über GraphQL](/help/commerce/cif/integrating/magento.md).
->* [AEM-Inhaltsfragmente stellen in Kombination mit der AEM-GraphQL-API (einer auf GraphQL basierenden benutzerdefinierten Implementierung) strukturierte Inhalte für die Verwendung in Ihren Programmen](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) bereit.
+>* [AEM-Inhaltsfragmente verwenden die AEM-GraphQL-API (eine auf Standard-GraphQL basierende benutzerdefinierte Implementierung), um strukturierte Inhalte für die Verwendung in Ihren Anwendungen bereitzustellen](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
 ## Headless-CMS {#headless-cms}
 
@@ -99,7 +97,7 @@ Die **[Fragmentreferenz](/help/assets/content-fragments/content-fragments-models
 
 * Ermöglicht den Abruf strukturierter Daten.
 
-   * Wenn als **multifeed** definiert, können mehrere Unterfragmente vom primären Fragment referenziert (abgerufen) werden.
+  * Wenn als **multifeed** definiert, können mehrere Unterfragmente vom primären Fragment referenziert (abgerufen) werden.
 
 ### JSON-Vorschau {#json-preview}
 

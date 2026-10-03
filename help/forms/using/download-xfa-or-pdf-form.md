@@ -1,9 +1,13 @@
 ---
 title: Herunterladen von XFA- oder PDF-Formularvorlagen
+
 description: Sie können Formulare aus dem Repository in das lokale System exportieren und die heruntergeladenen Formulare in ein neues Repository migrieren.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 role: Admin,User
 exl-id: 5b7b9816-38c1-4780-b1fc-8184971f3772
 solution: Experience Manager, Experience Manager Forms
@@ -12,9 +16,7 @@ source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 100%
-
 ---
-
 # Herunterladen von XFA- oder PDF-Formularvorlagen {#download-an-xfa-or-a-pdf-form-template}
 
 Mit dem Download-Vorgang können Sie, wie der Name schon sagt, Formulare aus dem Repository in das lokale System exportieren. In Kombination mit dem Upload-Vorgang hilft Ihnen dieser Vorgang bei der Migration Ihrer Formulare von einem Repository in ein anderes.
@@ -53,4 +55,4 @@ Abgesehen von diesen Elementen können Sie den `Resource`-Elementtyp herunterlad
 
 * Sie können die ZIP-Datei in einen beliebigen Speicherort in demselben oder in einem anderen Repository hochladen
 * Die Hierarchie der Assets in einem Ordner wird während des Upload-Vorgangs beibehalten
-* Änderungen, die vor dem Download an den Metadaten der heruntergeladenen Assets vorgenommen werden, werden beim Hochladen angezeigt. 
+* Änderungen, die vor dem Download an den Metadaten der heruntergeladenen Assets vorgenommen werden, werden beim Hochladen angezeigt.

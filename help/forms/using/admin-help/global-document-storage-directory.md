@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '684'
+workflow-type: tm+mt
+source-wordcount: '690'
 ht-degree: 100%
-
 ---
-
 # Ordner des globalen Dokumentenspeichers{#global-document-storage-directory}
 
 Das Verzeichnis *Globaler Dokumentenspeicher (GDS)* ist ein Verzeichnis zum Speichern dauerhaft genutzter Dateien in einem Prozess. Zu diesen Dateien gehören PDFs, Richtlinien und Formularvorlagen. Dauerhaft genutzte Dateien bilden einen wichtigen Teil des Gesamtstatus zahlreicher AEM Forms-Bereitstellungen. Wenn einige oder alle dauerhaft genutzten Dokumente verloren gehen oder beschädigt werden, kann der Formular-Server instabil werden. Eingabedokumente für asynchrone Auftragsaufrufe werden ebenfalls im Verzeichnis des globalen Dokumentenspeichers gespeichert und müssen verfügbar sein, damit Anfragen verarbeitet werden können. Es ist wichtig, die Zuverlässigkeit des Dateisystems zu berücksichtigen, in dem sich das Verzeichnis des globalen Dokumentenspeichers befindet. Verwenden Sie ein Redundant Array of Independent Disks (RAID) oder eine andere Technologie, die Ihre Qualitäts- und Dienstanforderungen erfüllt.
