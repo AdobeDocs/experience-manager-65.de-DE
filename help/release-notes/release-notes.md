@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 11e155ed72caf8f75bd2d8c8293723f24fe82945
+source-git-commit: e30b37bc03a811eca3dac08ca30c5ab32343be4e
 workflow-type: tm+mt
-source-wordcount: '7679'
-ht-degree: 20%
+source-wordcount: '7612'
+ht-degree: 18%
 ---
 # Versionshinweise zum aktuellen Service Pack für [!DNL Adobe Experience Manager] Version 6.5 {#aem-service-pack-release-notes}
 
@@ -46,11 +46,11 @@ Inhaltsfragmente und die GraphQL-API erhalten außerdem Verbesserungen hinsichtl
 
 ### Wichtige Funktionen und Verbesserungen für Forms
 
-* [Multithread-PDF Generator-Konvertierungen](/help/forms/using/install-configure-document-services.md#windows-only-enable-multi-threaded-pdf-generator-conversions): Es wurde Unterstützung für die gleichzeitige Ausführung von Microsoft Word (doc/docx)- und Excel (xls/xlsx)-Konvertierungen hinzugefügt, wenn AEM Forms als Windows-Service unter einem einzigen konfigurierten Benutzerkonto ausgeführt wird.
+* [Multithread-PDF Generator-Konvertierungen](/help/forms/using/install-configure-document-services.md#windows-only-enable-multi-threaded-pdf-generator-conversions): Es wurde Unterstützung für die gleichzeitige Ausführung von Microsoft Word (doc/docx)- und Excel (xls/xlsx)-Konvertierungen hinzugefügt, wenn AEM Forms als Windows-Service unter einem einzigen konfigurierten Dienstkonto ausgeführt wird.
 
 * [Hierarchische Lesezeichen für XFA-basierte PDFs](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/using-designer.pdf): Output Service und AEM Forms Designer generieren jetzt strukturierte Lesezeichenhierarchien in statischen interaktiven und einfachen XFA-basierten PDFs. Lesezeichen folgen den Überschriftenebenen (H1-H6), die in den Barrierefreiheitseigenschaften für Textfelder festgelegt sind, sodass H1-H6-Einträge unter dem richtigen übergeordneten Element verschachtelt werden, anstatt parallel angezeigt zu werden.
 
-* [Details auf Formularebene in JEE-](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): AEM Forms on JEE zeichnet jetzt Details auf Formularebene in `transaction_log.log` für jede Transaktion auf, zusätzlich zu den vorhandenen Service- und Vorgangsinformationen. Admins können bei der Analyse von Übermittlungen, Ausgabedarstellungen und Konversionen Transaktionsberichterstellungsdaten mit bestimmten Formularen korrelieren. (FORMS-21574)
+* [Details auf Formularebene in JEE-](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): AEM Forms on JEE zeichnet Details auf Formularebene in `transaction_log.log` für jede Transaktion zusammen mit Service- und Vorgangsinformationen auf. Admins können bei der Analyse von Übermittlungen, Ausgabedarstellungen und Konversionen Transaktionsberichterstellungsdaten mit bestimmten Formularen korrelieren. (FORMS-21574)
 
 * [Aktualisierte unterstützte Plattformmatrix](/help/forms/using/aem-forms-jee-supported-platforms.md): AEM Forms on JEE Service Pack 6.5.25.0 unterstützt nun die Kompatibilität mit den folgenden neueren Technologien:
   * JBoss® Enterprise Application-Plattform (EAP) 7.4.23
@@ -63,7 +63,7 @@ Inhaltsfragmente und die GraphQL-API erhalten außerdem Verbesserungen hinsichtl
   > * [Upgrade von JBoss EAP von 7.4.10 auf 7.4.23 für AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md) für eigenständige Umgebungen.
   > * [Upgrade des JBoss EAP-Clusters von 7.4.10 auf 7.4.23 für AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) für Cluster-Umgebungen.
 
-* **Eingabeaufforderung für Configuration Manager (LCM)-Express-Modus für Anmeldedaten:** Wenn Sie AEM Forms on JEE mit Configuration Manager (LCM) im Express-Modus konfigurieren, zeigt LCM jetzt einen neuen Bildschirm an, in dem Sie aufgefordert werden, während der Konfiguration die AEM-Administratoranmeldeinformationen einzugeben, anstatt die integrierten Standard-Anmeldedaten zu verwenden. Diese Änderung ist über den [Hotfix](/help/release-notes/aem-forms-hotfix.md) für AEM Service Pack 6.5.25.0 verfügbar. Die Konfigurationsschritte finden Sie unter &quot;[&#x200B; und Bereitstellen von AEM Forms on JEE mit JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_65_de). (FORMS-26365)
+* **Configuration Manager (LCM) Express Mode Credential Prompt:** Wenn Sie AEM Forms on JEE im Express-Modus konfigurieren, fordert LCM Sie auf, die AEM Administrator-Anmeldeinformationen einzugeben, anstatt die Standardeinstellungen zu verwenden. Diese Änderung ist über den [Hotfix](/help/release-notes/aem-forms-hotfix.md) für AEM Service Pack 6.5.25.0 verfügbar. Die Konfigurationsschritte finden Sie unter &quot;[&#x200B; und Bereitstellen von AEM Forms 6.5 on JEE mit JBoss Turnkey](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/install-turnkey.pdf). (FORMS-26365)
 
 ## Behobene Probleme in Service Pack 25 {#fixed-issues}
 
@@ -85,7 +85,7 @@ Inhaltsfragmente und die GraphQL-API erhalten außerdem Verbesserungen hinsichtl
 * QuickInfos im Modal „Löschen“ werden jetzt nach wiederholten Mausbewegungen-Aktionen konsistent angezeigt. Benutzer können den Mauszeiger weg bewegen und zum Symbol zurückkehren, um die QuickInfo erneut zu lesen. (SITES-24778)
 * Die linke Leiste erhält jetzt den Fokus in der erwarteten Reihenfolge, nachdem sie von Benutzenden über die Sites-Startseite geöffnet wurde. Benutzer von Tastatur- und Bildschirmlesehilfen können von der Konfigurationsschaltfläche zum Inhalt der Leiste wechseln, ohne den erweiterten Bereich zu überspringen. (SITES-24754)
 * Die Fokusverwaltung funktioniert jetzt im modalen Dialogfeld „Karussell“ konsistent. Benutzer von Tastatur- und Bildschirmlesehilfen können mit der modalen Überschrift beginnen und zum ursprünglichen Steuerelement zurückkehren, nachdem das Dialogfeld geschlossen wurde. (SITES-24716)
-* Das Dialogfeld Linkauswahl fokussiert nun auf das Steuerelement, das geöffnet wurde, nachdem Benutzer das Dialogfeld geschlossen haben. Benutzende von Tastatur- und Bildschirmlesehilfen verlieren nach dem Schließen des Dialogfelds nicht mehr ihre Position. (SITES-24707)
+* Das Dialogfeld Linkauswahl fokussiert nun auf das Steuerelement, das geöffnet wurde, nachdem Benutzer das Dialogfeld geschlossen haben. Benutzende von Tastatur- und Bildschirmlesehilfen verlieren ihren Navigationskontext nach dem Schließen des Dialogfelds nicht mehr. (SITES-24707)
 * Das Bild-Modal verschiebt den Fokus nicht mehr auf die erste Registerkarte oder das Wahrzeichen der Hauptseite, wenn Autoren das Dialogfeld öffnen oder schließen. Der Fokus wechselt zuerst zur Dialogfeldüberschrift und kehrt dann zu dem Steuerelement zurück, das das Dialogfeld geöffnet hat. (SITES-24693)
 * Die Leiste „Verweise“ verwaltet den Fokus jetzt korrekt, wenn ein modales Dialogfeld geöffnet wird. Benutzende, die Tastatur und Bildschirmlesehilfen verwenden, bleiben im Dialogfeld, bis es geschlossen wird, und fahren dann mit der Navigation fort, ohne den Kontext zu verlieren. (SITES-24683)
 * Das Modal zur Auswahl des Hyperlink-Pfads verschiebt den Fokus nicht mehr auf das falsche Feld oder Steuerelement, wenn Autoren es öffnen oder schließen. Der Fokus beginnt bei der modalen Überschrift und kehrt zur Schaltfläche zurück, die das modale Fenster geöffnet hat. (SITES-24672)
@@ -109,13 +109,13 @@ Inhaltsfragmente und die GraphQL-API erhalten außerdem Verbesserungen hinsichtl
 * Die Symbolleiste Layout bearbeiten zeigt jetzt für die Desktop-Schaltfläche einen leeren ausgewählten Status an. Die Desktop-Option entspricht den anderen Geräteschaltflächen und erleichtert die Identifizierung der aktiven Ansicht. (SITES-25290)
 * Die Symbolleiste Layout bearbeiten kennzeichnet jetzt den Linealbereich für Hilfstechnologien. Benutzende von Bildschirmlesehilfen stoßen während der Layout-Bearbeitung nicht mehr auf unbeschriftete Messwerte. (SITES-25287)
 * In der Symbolleiste Layout bearbeiten wird jetzt die vollständige iPhone 8 Plus-Schaltflächenbeschriftung deaktiviert angezeigt. Die Beschriftung wird nicht mehr abgeschnitten, wenn genügend Platz um die Schaltfläche vorhanden ist. (SITES-25284)
-* Das gemeldete Problem beschrieb einen Fokusindikator in der Symbolleiste Layout bearbeiten , der mehrere Gerätesteuerelemente abzudecken schien. Die Sorge konzentrierte sich auf Tastaturbenutzer, die den Überblick über das aktive Steuerelement verlieren könnten, wenn die Fokuskontur angrenzende Schaltflächen enthielt. Das Problem funktionierte wie vorgesehen. (SITES-25283)
+* Das gemeldete Problem beschrieb einen Fokusindikator in der Symbolleiste Layout bearbeiten , der mehrere Gerätesteuerelemente abzudecken schien. Der Fokus lag auf Tastaturbenutzern, die das aktive Steuerelement nicht identifizieren können, wenn die Fokuskontur angrenzende Schaltflächen enthält. Das Problem funktionierte wie vorgesehen. (SITES-25283)
 * Das gemeldete Problem beschrieb modale Schaltflächen von Anmerkungen, die vor jeder Schaltflächenbeschriftung eine Anmerkung ankündigten. Die Sorge konzentrierte sich auf die unklare Ausgabe von Bildschirmlesehilfen für Aktionen wie Anmerkungen, Farbfelder und Löschen. (SITES-25277)
 * Der Text der Anmerkungsschaltfläche verwendet jetzt im Anmerkungsmodal einen ausreichenden Kontrast. Diese Aktualisierung verbessert die Lesbarkeit für Benutzende mit Sehschwäche und unterstützt WCAG-Kontrastanforderungen. (SITES-25267)
 * Die Sprachausgabe erhält jetzt Statusaktualisierungen, wenn Benutzende die Liste Neue Komponente einfügen filtern. Das Modal gibt Ergebnisänderungen aus, sodass Benutzende verstehen, dass sich die Liste während der Eingabe geändert hat. (SITES-25251)
 * Das protokollierte Problem beschreibt die fehlende Überschriftensemantik für den modalen Titel der Anmerkung. Die Bedenken konzentrierten sich auf die Navigation durch Bildschirmlesehilfen und die Fähigkeit, die modale Struktur zu verstehen. (SITES-25248)
 * Die Überschriftenebenen in der Seitenleiste des Seiteneditors folgen jetzt einer klareren Inhaltshierarchie. Der Abschnitt „Linke Leiste“ wird nicht mehr als Überschrift der Hauptseite für Hilfstechnologien angezeigt. (SITES-25222)
-* Die Schaltfläche Bearbeiten in der linken Leiste von Assets hat jetzt ein größeres Touch-Ziel. Benutzer mit Mobilitätsanforderungen können die Schaltfläche leichter aktivieren und nahe gelegene Steuerelemente vermeiden. (SITES-25221)
+* Die Schaltfläche Bearbeiten in der linken Leiste von Assets hat jetzt ein größeres Touch-Ziel. Benutzer mit Behinderungen können die Schaltfläche leichter aktivieren und nahe gelegene Steuerelemente vermeiden. (SITES-25221)
 * Die linke Leiste von Assets identifiziert jetzt, wenn die Schaltfläche Bearbeiten eine neue Browser-Registerkarte öffnet. Benutzer können die Navigationsänderung vorhersehen, anstatt den Kontext unerwartet zu verlieren. (SITES-25220)
 * Komponententitel werden jetzt korrekt angezeigt, wenn Benutzer größeren Textabstand anwenden. Die Seitenleiste behält lesbare Beschriftungen bei und unterstützt WCAG-Textabstandsanforderungen. (SITES-25219)
 * Das Filterfeld in den Komponenten der Seitenleiste zeigt jetzt einen richtigen barrierefreien Namen an. Diese Aktualisierung hilft Benutzenden von Bildschirmlesehilfen, das Feld ohne Verwendung von Platzhaltertext zu identifizieren. (SITES-25212)
@@ -134,7 +134,7 @@ Inhaltsfragmente und die GraphQL-API erhalten außerdem Verbesserungen hinsichtl
 * Modale Dialogfelder verwenden jetzt genaueres Barrierefreiheits-Markup für Header-Steuerelemente. Die Schaltflächen Hilfe und Umschalten im Vollbildmodus bleiben interaktive Steuerelemente und werden für Bildschirmlesehilfen nicht mehr als Überschriften angezeigt. (SITES-24696)
 * Das Wahrzeichen der Filterleiste verwendet jetzt eine eindeutige Beschriftung, die ihren Zweck kennzeichnet. Benutzende von Bildschirmlesehilfen können sicherer durch Seiten mit mehreren ähnlichen Orientierungspunkten navigieren. (SITES-24686)
 * Verweise : Meldungen in der Leiste bieten jetzt eine bessere Lesbarkeit für Benutzende, die auf einen ausreichenden Textkontrast angewiesen sind. Das gemeldete Problem betraf Auswahl- und Mehrfachauswahl-Nachrichten, die vor ihrem Hintergrund zu hell erschienen. (SITES-24666)
-* Das Suchmodal bietet jetzt größere Touch-Ziele für die Schaltflächen „Standort entfernen“ und „Schließen“. Diese Änderung hilft Benutzenden mit Handzittern, Spasmen oder Sehschwäche, die beabsichtigte Kontrolle zu aktivieren. (SITES-24530)
+* Das Suchmodal bietet jetzt größere Touch-Ziele für die Schaltflächen „Standort entfernen“ und „Schließen“. Diese Änderung hilft Benutzenden mit Behinderungen oder Sehschwäche, die beabsichtigte Steuerung zu aktivieren. (SITES-24530)
 * Der Adobe Experience Manager-Kopfzeilen-Link verwendete ein falsches ARIA-Attribut. Beim Testen wurde bestätigt, dass der Link erweiterbare Inhalte steuert, sodass der vorhandene barrierefreie Status angemessen bleibt. (SITES-24528)
 * Die Fokusanzeige für die Autorenzeilenschaltfläche wird in der Komponentenliste nicht mehr abgeschnitten angezeigt. Der sichtbare Umriss hilft Tastaturbenutzern, ihre Position im Editor zu verfolgen. (SITES-24503)
 * Ein gemeldetes Problem beschrieb eine fehlende Textalternative für das Informations-QuickInfo-Symbol im Bedienfeld „Komponenten“. Das Problem wurde nicht reproduziert, aber die Überprüfung bestätigte, dass informative Symbole einen klaren barrierefreien Namen offenlegen müssen. (SITES-24500)
@@ -190,7 +190,7 @@ Benutzende können jetzt den Abfrage-Editor von GraphQL öffnen, wenn der ausgew
 #### [!DNL Content Fragments] - Modelle und Modell-Editor{#sites-models-model-editor-6525}
 
 * Benutzern wird jetzt eine lokalisierte Validierungsmeldung im Inhaltsfragmentmodell-Editor angezeigt, wenn ein ausgewählter Wert einen gültigen Modelltyp benötigt. Der Editor zeigt die nicht übersetzte englische Meldung nicht mehr in lokalisierten Benutzeroberflächen an. (SITES-41117)
-* Der Filterbereich des Inhaltsfragmentmodells lokalisiert jetzt seine Status- und Titelzeichenfolgen. Benutzende sehen keine unübersetzten Beschriftungen wie Modelltitel, Status, Entwurf, Aktiviert und Deaktiviert mehr. (SITES-30863)
+* Der Filterbereich des Inhaltsfragmentmodells lokalisiert jetzt seine Status- und Titelzeichenfolgen. Benutzende sehen keine unübersetzten Beschriftungen mehr für Modelltitel, Status, Entwurf, Aktiviert und Deaktiviert. (SITES-30863)
 
 <!-- #### [!DNL Content Fragments] - REST API{#sites-restapi-6525} -->
 
@@ -203,7 +203,7 @@ ContextHub wird jetzt ohne JavaScript-Fehler geladen, der die Personalisierung u
 #### Kernkomponenten{#sites-core-components-6525}
 
 * AEM generiert keine wiederholten ThumbnailServlet-Fehler mehr, wenn eine Anfrage auf eine fehlende DAM-Ressource abzielt. Das Servlet stoppt die Verarbeitung nach der Umleitung, wodurch verhindert wird, dass das Fehlerprotokoll von NullPointerException-Einträgen überflutet wird. (SITES-41238)
-* AEM kennzeichnet optionale Dialogfelder nicht mehr als erforderlich, wenn Autoren Komponentendialogfelder erneut öffnen. Das Dialogfeld behält die Validierung auf Felder, die tatsächlich eine Eingabe erfordern, wodurch irreführende Fehler auf Registerkartenebene verhindert werden. (SITES-40449)
+* AEM kennzeichnet optionale Dialogfelder nicht mehr als erforderlich, wenn Autoren Komponentendialogfelder erneut öffnen. Das Dialogfeld behält die Validierung auf Felder, die eine Eingabe erfordern, was irreführende Fehler auf Registerkartenebene verhindert. (SITES-40449)
 
 * AEM umfasst mehrere Backport-Sicherheitskorrekturen, die Sites und zugehörige Cloud Services-Komponenten stärken. Diese Korrekturen reduzieren das Risiko von Cross-Site-Scripting und verbessern die Anfragebearbeitung über die betroffenen Authoring-Pfade hinweg. (SITES-38314)
 * Das Dialogfeld für die Konfiguration der Bild-v3-Komponente lokalisiert jetzt Zeichenfolgen im Seiteneditor. Autoren sehen keine unübersetzten Beschriftungen mehr, wenn sie Bildkomponenten in lokalisierten Benutzeroberflächen konfigurieren. (SITES-38726)
@@ -214,7 +214,7 @@ ContextHub wird jetzt ohne JavaScript-Fehler geladen, der die Personalisierung u
 
 #### Fußgängerüberweg {#sites-crosswalk-6525}
 
-* Crosswalk benötigt nach der Installation kein separates Paket und keine Konfiguration mehr. AEM umfasst die erforderlichen Bundles, Inhaltspakete, Systembenutzer, Service-Benutzerzuordnungen und Funktions-Umschalter im vordefinierten Paket. (SITES-41417)
+* Crosswalk benötigt nach der Installation kein separates Paket und keine Konfiguration mehr. AEM umfasst die erforderlichen Bundles, Inhaltspakete, Systembenutzer, Service-Benutzerzuordnungen und Funktions-Umschalter im Standardpaket. (SITES-41417)
 * Crosswalk-Workflows funktionieren jetzt mit der erforderlichen cq-wcm-core-Unterstützung in AEM 6.5. Autoren können die Aktionen Vorlage erstellen und Universellen Editor öffnen ohne separate Aktualisierungen des Kernpakets verwenden. (SITES-37666)
 
 #### Experience Fragments{#sites-experiencefragments-6525}
@@ -278,7 +278,7 @@ AEM lädt jetzt die richtigen Vorlagen, wenn Autorinnen und Autoren Varianten vo
 * Die Client-Bibliothek „Meine Freigaben“ verarbeitet jetzt geteilte Asset-Titeldaten sicher, bevor sie zum Seiten-Markup hinzugefügt werden. Generierte Freigabeseiten setzen Benutzer nicht mehr der Skripteinfügung durch bearbeitete Asset-Metadaten aus. (ASSETS-60898)
 
 * Die Adobe Stock-Lizenzierung funktioniert jetzt in der Benutzeroberfläche von Assets ordnungsgemäß. Die Lizenzschaltfläche bleibt nicht mehr deaktiviert, nachdem AEM das Stock-Asset-Profil und die Berechtigungsdaten geladen hat. (ASSETS-62610)
-* Die vordefinierte Ablaufbenachrichtigung von Assets verarbeitet jetzt Fast-Ablaufdaten korrekt. Erinnerungs-E-Mails werden ausgeführt, wenn die verbleibende Zeit den konfigurierten Schwellenwert erreicht, anstatt Assets mit einem Ablauf von acht Tagen zu überspringen. (ASSETS-57857)
+* Die standardmäßige Asset-Ablaufbenachrichtigung verarbeitet jetzt Fast-Ablaufdaten korrekt. Erinnerungs-E-Mails werden ausgeführt, wenn die verbleibende Zeit den konfigurierten Schwellenwert erreicht, anstatt Assets mit einem Ablauf von acht Tagen zu überspringen. (ASSETS-57857)
 
 * AEM Assets stellt jetzt die Tastaturnavigation wieder her, nachdem Benutzende eine gespeicherte Suche ausgewählt haben. Auf der Benutzeroberfläche können Benutzer das Dropdown-Menü verlassen, ohne die Assets-Ansicht zu aktualisieren oder neu zu starten. (ASSETS-52061)
 
@@ -298,7 +298,7 @@ Das Dropdown-Menü Untertitel und Audiospuren zeigt jetzt Arabisch als unterstü
 * Der Ausgabe-Service stürzt nach dem Upgrade auf AEM Forms Service Pack 6.5.24.0 unter Red Hat Enterprise Linux (RHEL) 8 nicht mehr mit einem Fehler wegen unzulässiger Anweisungen ab. Die Dokumenterstellung und Formularausgabe werden ohne abrupte Service-Stopps abgeschlossen. (FORMS-25192)
 * Dynamisch mit der Funktion addInstance() in Adaptive Forms hinzugefügte Bereiche und Inhalte werden jetzt angezeigt, wenn die anfängliche Anzahl von Instanzen auf 0 gesetzt ist. (FORMS-25169, FORMS-25124)
 * Traditionelles Chinesisch (Hongkong) wird nach dem Upgrade auf AEM Forms Service Pack 6.5.24.0 jetzt in Autoren- und Veröffentlichungsumgebungen korrekt angezeigt. Lokalisierte zh-HK-Inhalte werden nicht mehr in der falschen Sprache angezeigt oder fallen unerwartet auf Standardzeichenfolgen zurück. (FORMS-25042)
-* Durch die Tastaturnavigation im Feld „Freihandsignatur“ in Adaptive Forms wird der Fokus jetzt konsistent in den und aus dem Signaturbereich verschoben, während das Formular mit der Tabulatortaste durchlaufen wird. (FORMS-25011)
+* Durch die Tastaturnavigation wird der Fokus beim Durchblättern des Formulars konsequent durch das Feld „Freihandsignatur“ in Adaptive Forms verschoben. (FORMS-25011)
 * WSDL-Dateien (Web Services Description Language) werden jetzt bei Konfigurations- und Aktualisierungsvorgängen im Schritt Webservice aufrufen korrekt geladen. (FORMS-24992, FORMS-24789, FORMS-24188)
 * In Briefentwürfen werden jetzt Zeilenumbrüche beibehalten, wenn Bedingungen auf Textfragmente angewendet werden. Mehrzeiliger Inhalt wird nicht mehr als eine einzige durchgehende Zeile angezeigt. (FORMS-24602)
 * Adobe Sign-Workflows in AEM Forms auf Adobe Managed Services (AMS) bleiben nicht länger stehen, wenn die Antwort zum Signaturstatus nach Erreichen des Adobe Sign-Schritts nicht zurückgegeben wird. (FORMS-24514)
@@ -344,7 +344,7 @@ Der CredentialsSupport-Service wird jetzt beim Start korrekt für die Felix-basi
 
 <!-- #### Content distribution{#foundation-content-distribution-6525} -->
 
-#### CRX {#foundation-crx-6525}
+#### Adobe CRX {#foundation-crx-6525}
 
 Die JSP-Dateibearbeitung funktioniert nach AEM 6.5-Upgrades jetzt wie erwartet in CRXDE Lite. Der CodeMirror-Editor lädt den Dateiinhalt, anstatt die Registerkarte „JSP“ leer zu lassen. (GRANITE-64333)
 
@@ -373,7 +373,7 @@ Die JSP-Dateibearbeitung funktioniert nach AEM 6.5-Upgrades jetzt wie erwartet i
 #### Sicherheit{#foundation-security-6525}
 
 * AEM auf die Zulassungsliste setzt jetzt zusätzliche Keywords, die das Client-Geheimnis enthalten. Die Konfigurationserstellung schlägt nicht mehr fehl, wenn unterstützte Integrationen diese Client-Geheimnis-Namensmuster verwenden. (GRANITE-66495)
-* Das Sling-XSS-Bundle verwendet jetzt die Java HTML Sanitizer-Bibliothek. Die Verwendung der `XSSAPI#filterHTML()`-Methode sollte zum sicheren Rendern von HTML-Inhalten und nicht zum Übergeben von Daten an andere APIs verwendet werden. (GRANITE-63840)
+* Das Sling-XSS-Bundle verwendet jetzt die Java HTML Sanitizer-Bibliothek, und die `XSSAPI#filterHTML()`-Methode sollte zum sicheren Rendern von HTML-Inhalten und nicht zum Übergeben von Daten an andere APIs verwendet werden. (GRANITE-63840)
 
 <!-- #### Sling{#foundation-sling-6525} -->
 
@@ -410,7 +410,7 @@ Die Statuswerte des Übersetzungsprojekts werden jetzt nach dem Upgrade korrekt 
 
 >[!IMPORTANT]
 >
-> Adobe rät davon ab, das Paket [!DNL Experience Manager] 6.5.25.0 zu entfernen oder zu deinstallieren. Daher sollten Sie vor der Installation des Pakets eine Sicherungskopie von `crx-repository` erstellen, falls Sie es zurücksetzen müssen. <!-- UPDATE FOR EACH NEW RELEASE -->
+> Adobe rät davon ab, das Paket [!DNL Experience Manager] 6.5.25.0 zu entfernen oder zu deinstallieren. Erstellen Sie vor der Installation des Pakets eine Sicherungskopie des `crx-repository`, um das Paket bei Bedarf zurückzusetzen. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- FORMS For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
@@ -430,7 +430,7 @@ Die Statuswerte des Übersetzungsprojekts werden jetzt nach dem Upgrade korrekt 
 
 >[!NOTE]
 >
->Das Dialogfeld in der Paket-Manager-Benutzeroberfläche wird während der Installation des Service Packs manchmal geschlossen. Adobe empfiehlt, zu warten, bis sich die Fehlerprotokolle stabilisiert haben, bevor Sie auf die Bereitstellung zugreifen. Warten Sie auf die spezifischen Protokolle im Zusammenhang mit der Deinstallation des Aktualisierungspakets, bevor Sie sich vergewissern, dass die Installation erfolgreich war. Dieses Problem tritt vor allem im [!DNL Safari]-Browser auf, kann jedoch gelegentlich in jedem Browser auftreten.
+>Das Dialogfeld in der Paket-Manager-Benutzeroberfläche wird während der Installation des Service Packs manchmal geschlossen. Adobe empfiehlt, zu warten, bis sich die Fehlerprotokolle stabilisiert haben, bevor Sie auf die Bereitstellung zugreifen. Warten Sie auf die spezifischen Protokolle zur Deinstallation des Aktualisierungspakets, bevor Sie bestätigen, dass die Installation erfolgreich war. Dieses Problem tritt vor allem im [!DNL Safari]-Browser auf, kann jedoch gelegentlich in jedem Browser auftreten.
 
 **Automatische Installation**
 
@@ -465,9 +465,9 @@ Anweisungen zur Service Pack-Installation für Experience Manager Forms finden S
 
 Kundinnen und Kunden, die GraphQL verwenden, müssen das [Experience Manager-Inhaltsfragment mit GraphQL Index Package 1.1.1](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip) installieren.
 
-Auf diese Weise können Sie die erforderliche Indexdefinition auf der Grundlage der tatsächlich verwendeten Funktionen hinzufügen.
+Auf diese Weise können Sie basierend auf den verwendeten Funktionen die erforderliche Indexdefinition hinzufügen.
 
-Wenn dieses Paket nicht installiert wird, kann es zu langsamen oder fehlgeschlagenen GraphQL-Abfragen kommen.
+Wenn dieses Paket nicht installiert wird, führt dies zu langsamen oder fehlgeschlagenen GraphQL-Abfragen.
 
 >[!NOTE]
 >
@@ -546,9 +546,9 @@ Ab Service Pack 13 und höher wird das folgende Fehlerprotokoll angezeigt, das s
   1. Installieren Sie das Service Pack oder starten Sie Experience Manager as a Cloud Service neu.
      Neue Ordner `cache` und `diff-cache` werden automatisch erstellt und es gibt keine Ausnahme mehr in Bezug auf `mvstore` in `error.log`.
 
-* Aktualisieren Sie Ihre GraphQL-Abfragen, die möglicherweise einen benutzerdefinierten API-Namen für Ihr Inhaltsmodell verwendet haben, und verwenden Sie stattdessen den Standardnamen des Inhaltsmodells.
+* Aktualisieren Sie Ihre GraphQL-Abfragen, die einen benutzerdefinierten API-Namen für Ihr Inhaltsmodell verwendet haben, sodass stattdessen der Standardname des Inhaltsmodells verwendet wird.
 
-* Eine GraphQL-Abfrage verwendet möglicherweise den `damAssetLucene`-Index anstelle des `fragments`-Index. Diese Aktion kann dazu führen, dass GraphQL-Abfragen fehlschlagen oder lange brauchen, um ausgeführt zu werden.
+* Eine GraphQL-Abfrage verwendet den `damAssetLucene`-Index anstelle des `fragments`. Diese Aktion führt zu GraphQL-Abfragen, deren Ausführung fehlschlägt oder lange dauert.
 
   Um das Problem zu beheben, muss `damAssetLucene` so konfiguriert werden, dass die folgenden beiden Eigenschaften unter `/indexRules/dam:Asset/properties` aufgenommen werden:
 
@@ -566,7 +566,7 @@ Ab Service Pack 13 und höher wird das folgende Fehlerprotokoll angezeigt, das s
 
   Nach Änderung der Indexdefinition ist eine Neuindizierung erforderlich (`reindex` = `true`).
 
-  Nach diesen Schritten sollten die GraphQL-Abfragen schneller ausgeführt werden.
+  Nach diesen Schritten werden die GraphQL-Abfragen schneller ausgeführt.
 
 * Beim Versuch, Inhaltsfragmente, Sites oder Seiten zu verschieben, zu löschen oder zu veröffentlichen, tritt ein Problem auf, wenn Inhaltsfragmentreferenzen abgerufen werden. Die Hintergrundabfrage schlägt fehl; die Funktion funktioniert nicht.
 Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigenschaften zum Indexdefinitionsknoten `/oak:index/damAssetLucene` hinzufügen (eine Neuindizierung ist nicht erforderlich):
@@ -580,9 +580,9 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 * Wenn Sie Ihre [!DNL Experience Manager]-Instanz von 6.5.0 bis 6.5.4 auf das neueste Service Pack für Java™ 11 aktualisieren, sehen Sie `RRD4JReporter`-Ausnahmen in der Datei `error.log`. Um die Ausnahmen zu stoppen, starten Sie Ihre Instanz von [!DNL Experience Manager] neu. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
 
-* Benutzende können einen Ordner in einer Hierarchie in [!DNL Assets] umbenennen und einen verschachtelten Ordner in [!DNL Brand Portal] veröffentlichen. Der Titel des Ordners wird jedoch erst dann in [!DNL Brand Portal] aktualisiert, wenn der Stammordner erneut veröffentlicht wird.
+* Benutzer können einen Ordner in [!DNL Assets] umbenennen und einen verschachtelten Ordner in [!DNL Brand Portal] veröffentlichen. Der Titel des Ordners wird jedoch erst dann in [!DNL Brand Portal] aktualisiert, wenn der Stammordner erneut veröffentlicht wird.
 
-* Die folgenden Fehler und Warnmeldungen können während der Installation von [!DNL Experience Manager] 6.5.x.x angezeigt werden:
+* Die folgenden Fehler und Warnmeldungen werden während der Installation von [!DNL Experience Manager] 6.5.x.x angezeigt:
   * „Wenn die Adobe Target-Integration mithilfe der Target Standard-API (IMS-Authentifizierung) in [!DNL Experience Manager] konfiguriert wird, führt der Export von Experience Fragments nach Target dazu, dass falsche Angebotstypen erstellt werden.“ Anstelle des Typs „Experience Fragment“/Quelle „Adobe Experience Manager“ erstellt Target mehrere Angebote mit dem Typ „HTML“/source „Adobe Target Classic“.
   * `com.adobe.granite.maintenance.impl.TaskScheduler`: Keine Wartungsfenster unter `granite/operations/maintenance` gefunden.
   * Die Server-seitige Validierung des adaptiven Formulars schlägt fehl, wenn Aggregatfunktionen wie SUM, MAX und MIN verwendet werden. (CQ-4274424)
@@ -592,7 +592,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 * Ab AEM 6.5.15 weist die vom Paket `org.apache.servicemix.bundles.rhino` bereitgestellte Rhino-JavaScript-Engine ein neues Hoisting-Verhalten auf. Skripte, die den Strict-Modus (`use strict;`) verwenden, müssen ihre korrekten Variablen deklarieren. Andernfalls werden sie nicht ausgeführt und geben am Ende einen Laufzeitfehler zurück.
 
-* Durch die Installation von Tagging-bezogenen, vorkonfigurierten Inhalten mithilfe eines offiziellen Aktualisierungspakets wird die Spracheigenschaft des Knotens `/content/cq:tags` auf den Standard zurückgesetzt. Diese Aktion gilt für Service Packs, Security Service Packs, Extended Feature Packs, Cumulative Feature Packs, Patches usw. Daher muss es vor der Installation aus den Eigenschaften hinzugefügt werden.
+* Wenn Sie Tagging-bezogene Standardinhalte über ein offizielles Aktualisierungspaket installieren, wird die Languages-Eigenschaft des `/content/cq:tags`-Knotens auf den Standardwert zurückgesetzt. Diese Aktion gilt für Service Packs, Security Service Packs, Extended Feature Packs, Cumulative Feature Packs, Patches usw. Daher muss es vor der Installation aus den Eigenschaften hinzugefügt werden.
 
 ### Bekanntes Problem bei AEM Sites {#known-issues-aem-sites-6525}
 
@@ -608,10 +608,10 @@ Für die folgenden Probleme ist ein Hotfix zum Herunterladen und Installieren ve
 
 * **NPR-44100** Nach der Installation von AEM 6.5 Service Pack 25 auf WAR/JEE-Bereitstellungen (einschließlich AEM Forms on JEE) bleibt das `com.adobe.cq.screens.sessions`-Bundle im Status Installiert und wird nie aktiv. Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
 * **FORMS-26802** Nach der Härtung der SOAP SDK-Authentifizierung stellen LCM Configuration Manager, Workbench und Designer mit der `ALC-LCM-200-001` keine Verbindung zum AEM Forms on JEE-Server her, da der `/soap/sdk`-Endpunkt nicht authentifizierte Anfragen zurückweist. Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
-* **FORMS-26679** In AEM Forms Document Security werden Authentifizierungs-Cookies nach einer Microsoft Entra ID (MFA)-Umleitung gelöscht, was zu dem Fehler „Cookies sind möglicherweise nicht aktiviert“ beim Öffnen richtliniengeschützter Dokumente führt. Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
-* **FORMS-26617** Bei AEM Forms on JEE mit WebLogic schlägt die Datenbankkonfiguration über Configuration Manager bei Verwendung des Microsoft SQL Server JDBC-Treibers 12.10.0 mit der Meldung „Kein geeigneter Treiber gefunden“ fehl. Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
+* **FORMS-26679** In AEM Forms Document Security werden Authentifizierungs-Cookies nach einer Microsoft Entra ID (MFA)-Umleitung gelöscht, was beim Öffnen richtliniengeschützter Dokumente den Fehler „Cookies sind nicht aktiviert“ verursacht. Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
+* **FORMS-26617**-[!DNL AEM Forms] in [!DNL JEE] [!DNL WebLogic] Datenbankeinstellungen schlagen mit „Kein geeigneter Treiber gefunden“ und dem Microsoft SQL Server JDBC-Treiber 12.10.0 fehl. Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
 * **FORMS-27869** PDFs werden nach der Installation des neuesten AEM Forms 6.5-Builds langsam geöffnet. Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
-* **FORMS-23491** AEM Forms 6.5.24.0 JEE-Bereitstellungen (JBoss, WebLogic, WebSphere) sind von CVE-2025-64775 betroffen, einer Apache Struts-Denial-of-Service-Schwachstelle in der Verarbeitung mehrteiliger Anfragen. Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.24.0 von AEM herunter und installieren Sie ihn.
+* **FORMS-23491** CVE-2025-64775, eine Apache Struts-Denial-of-Service-Schwachstelle bei der Verarbeitung mehrteiliger Anfragen, wirkt sich auf AEM Forms- 6.5.24.0 JEE-Bereitstellungen (JBoss, WebLogic, WebSphere) aus. Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.24.0 von AEM herunter und installieren Sie ihn.
 * **FORMS-14926** Führen Sie nach der Installation von AEM Forms JEE Service Pack 21 (6.5.21.0) die folgenden Schritte aus, um das Problem zu beheben, wenn Sie doppelte Einträge von Geode-Jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` im `<AEM_Forms_Installation>/lib/caching/lib`-Ordner finden:
 
   1. Stoppen der Locators, falls sie noch ausgeführt werden.
