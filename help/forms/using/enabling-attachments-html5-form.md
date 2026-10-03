@@ -25,7 +25,7 @@ Sie können Anlagen mit HTML5-Formularen hochladen, in einer Vorschau anzeigen u
    | multiSelect | „true“ oder „false“ (true standardmäßig ausgewählt) |
    | fileSizeLimit | Zahl in MB (standardmäßig 2 MB). Zum Beispiel 5. |
    | buttonText | Schaltflächentext für Popupfenster (standardmäßig „Anhängen“) |
-   | Akzeptieren der Bedingungen | Durch Kommas getrennte Liste der zu akzeptierenden Dateitypen („audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf“ standardmäßig) |
+   | Akzeptieren der Bedingungen | Durch Kommas getrennte Liste der zu akzeptierenden Dateitypen („audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf“ standardmäßig) |
 
    Beispiel:
 

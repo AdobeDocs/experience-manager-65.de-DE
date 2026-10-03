@@ -57,7 +57,7 @@ Dies sind die standardmäßigen Übermittlungsaktionen, die für adaptive Formul
 >
 >Wenn Sie eine Formularvorlage, ein Formulardatenmodell oder ein schemabasiertes adaptives Formular mit XML- oder JSON-Daten [vorbefüllen](../../forms/using/prepopulate-adaptive-form-fields.md), die einem Schema (XML-Schema, JSON-Schema, Formularvorlage oder Formulardatenmodell) entsprechen, d.h. die Daten enthalten keine &lt;afData>-, &lt;afBoundData>- und &lt;/afUnboundData>-Tags, dann gehen die Daten von nicht gebundenen Feldern (nicht gebundene Felder sind adaptive Formularfelder ohne die Eigenschaft [bindref](../../forms/using/prepopulate-adaptive-form-fields.md)) des adaptiven Formulars verloren.
 
-Sie können eine benutzerdefinierte Übermittlungsaktion für adaptive Formulare entsprechend Ihres Anwendungsfalls schreiben. Weitere Informationen finden Sie unter[ Schreiben von benutzerdefinierten Übermittlungsaktionen für ein adaptives Formular](../../forms/using/custom-submit-action-form.md).
+Sie können eine benutzerdefinierte Übermittlungsaktion für adaptive Formulare entsprechend Ihres Anwendungsfalls schreiben. Weitere Informationen finden Sie unter[&#x200B; Schreiben von benutzerdefinierten Übermittlungsaktionen für ein adaptives Formular](../../forms/using/custom-submit-action-form.md).
 
 ## An REST-Endpunkt übermitteln {#submit-to-rest-endpoint}
 

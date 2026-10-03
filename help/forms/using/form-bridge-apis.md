@@ -86,7 +86,7 @@ Gibt die Versionsnummer der Scripting-Bibliothek zurück
 
     * **widgetConfig**: Erlaubt dem Benutzer, die Standard-Widgets im Formular mit benutzerdefinierten Widgets zu überschreiben. Die Konfiguration wird überschrieben wie folgt:
 
-      *formBridge.registerConfig(„widgetConfig“:{/&amp;ast;configuration&amp;ast;/})*
+      *formBridge.registerConfig(„widgetConfig“:{/&ast;configuration&ast;/})*
 
     * **pagingConfig**: Erlaubt dem Benutzer, das Standardverhalten zu überschreiben, bei dem nur die erste Seite gerendert wird. Die Konfiguration wird überschrieben wie folgt:
 
