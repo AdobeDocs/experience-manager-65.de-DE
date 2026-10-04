@@ -1,6 +1,6 @@
 ---
-title: OSGi-Bundles
-description: Hier finden Sie Tipps für die Verwaltung Ihrer OSGi-Bundles in Adobe Experience Manager.
+title: OSGi-Pakete
+description: Hier finden Sie Tipps für die Verwaltung Ihrer OSGi-Pakete in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,22 +11,20 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '359'
 ht-degree: 100%
-
 ---
-
-# OSGi-Bundles{#osgi-bundles}
+# OSGi-Pakete{#osgi-bundles}
 
 ## Verwenden der semantischen Versionierung {#use-semantic-versioning}
 
 Die vereinbarten Best Practices für die semantische Versionsnummeriierung finden Sie unter [https://semver.org/](https://semver.org/).
 
-## Bedarfsbeschränktes Einbetten von Klassen und JAR-Dateien in OSGi-Bundles {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
+## Bedarfsbeschränktes Einbetten von Klassen und JAR-Dateien in OSGi-Pakete {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
-Allgemeine Bibliotheken sollten in separate Bundles ausgelagert werden. So können Sie sie für alle Bundles wiederverwenden. Wenn Sie einen *JAR*-Wrapper für ein OSGi-Bundle erstellen möchten, überprüfen Sie zuerst online, ob dieser Vorgang bereits von jemand anderem vor Ihnen ausgeführt wurde. Bereits vorhandene Bundle-Wrapper finden Sie unter anderem in: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes und dem SpringSource Enterprise Bundle Repository.
+Allgemeine Bibliotheken sollten in separate Pakete ausgelagert werden. So können Sie sie für alle Pakete wiederverwenden. Wenn Sie einen *JAR*-Wrapper für ein OSGi-Paket erstellen möchten, überprüfen Sie zuerst online, ob dieser Vorgang bereits von jemand anderem vor Ihnen ausgeführt wurde. Bereits vorhandene Paket-Wrapper finden Sie unter anderem in: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes und dem SpringSource Enterprise Bundle Repository.
 
-## Verwenden Sie die niedrigsten erforderlichen Bundle-Versionen {#depend-on-the-lowest-needed-bundle-versions}
+## Verwenden Sie die niedrigsten erforderlichen Paketversionen {#depend-on-the-lowest-needed-bundle-versions}
 
 Verwenden Sie für Kompilierungszeit-Abhängigkeiten in POM-Dateien immer die niedrigste erforderliche Version, die die benötigte API verfügbar macht. Dies ermöglicht eine höhere Abwärtskompatibilität und erleichtert die Backport-Fehlerbehebung bei älteren Versionen.
 

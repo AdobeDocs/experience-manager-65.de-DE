@@ -1,8 +1,12 @@
 ---
 title: Verfassen von kontextsensitiver Hilfe für Formularfelder
+
 description: Mit AEM Forms können Sie kontextbezogene Hilfe zu Feldern und Panels in adaptiven Formularen als Text oder Rich Media, einschließlich Videos, hinzufügen.
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: 6569bfba-9af5-4060-8640-e51d7af46614
@@ -10,11 +14,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 100%
-
+source-wordcount: '444'
+ht-degree: 95%
 ---
-
 # Verfassen von kontextsensitiver Hilfe für Formularfelder{#authoring-in-context-help-for-form-fields}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
@@ -56,7 +58,7 @@ Sie können das Feld „Lange Beschreibung“ verwenden, um langen Text anzugebe
 
 ![Hinzufügen von Rich-Media als kontextbezogene Hilfe für Formularfelder](assets/long-descriptions.png)
 
-Wenn Sie eine lange Beschreibung hinzufügen, wird das Symbol **?** neben dem Feld angezeigt. Durch Klicken auf dieses Symbol wird der Inhalt angezeigt, der im Abschnitt „Lange Beschreibung“ hinzugefügt wurde.
+Durch Hinzufügen einer langen Beschreibung wird ein **angezeigt?** Symbol neben dem Feld. Durch Klicken auf dieses Symbol wird der Inhalt angezeigt, der im Abschnitt „Lange Beschreibung“ hinzugefügt wurde.
 
 ![Beispiel für kontextbezogene Rich-Media-Hilfe](assets/photoshop.png)
 
@@ -66,6 +68,6 @@ Zusätzlich zur kontextbezogenen Hilfe für Formularfelder können Sie auf der R
 
 ![Hinzufügen von kontextbezogener Hilfe für einen Formularbereich](assets/panel-level-help.png)
 
-Wenn Sie Hilfe für ein Panel hinzufügen, wird das Symbol **?** neben der Beschreibung des Panels angezeigt. Durch Klicken auf das Symbol wird der Inhalt angezeigt, der im Abschnitt „Hilfeinhalt“ des Dialogfelds zur Bearbeitung des Panels hinzugefügt wurde.
+Beim Hinzufügen der Hilfe für das Bedienfeld wird ein **angezeigt?** Symbol neben der Beschreibung des Bedienfelds. Durch Klicken auf das Symbol wird der Inhalt angezeigt, der im Abschnitt „Hilfeinhalt“ des Dialogfelds zur Bearbeitung des Panels hinzugefügt wurde.
 
 ![Beispiel für kontextbezogene Hilfe auf Formularbereichsebene](assets/photoshop-1.png)

@@ -11,14 +11,12 @@ exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '346'
 ht-degree: 100%
-
 ---
-
 # Anwenden von Dynamic Media-Bildvorgaben {#applying-image-presets}
 
-Anhand von Bildvorgaben können Assets Bilder mit unterschiedlichen Größen, Formaten oder Bildeigenschaften dynamisch bereitstellen. Sie können eine Vorgabe auswählen, wenn Sie Bilder exportieren.  Die Vorgabe formatiert Bilder entsprechend den von Administratorseite festgelegten Spezifikationen.
+Anhand von Bildvorgaben können Assets Bilder mit unterschiedlichen Größen, Formaten oder Bildeigenschaften dynamisch bereitstellen. Sie können eine Vorgabe auswählen, wenn Sie Bilder exportieren. Die Vorgabe formatiert Bilder entsprechend den von Administratorseite festgelegten Spezifikationen.
 
 Darüber hinaus können Sie eine responsive Bildvorgabe auswählen (nach der Auswahl durch die Schaltfläche **[!UICONTROL RESS]** gekennzeichnet).
 

@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '263'
 ht-degree: 100%
-
 ---
-
 # Überblick über den Ausgabe-Service {#overview-of-output-service}
 
 Mit der Ausgabe können Sie XML-Daten mit einem in Designer erstellten Formularentwurf zusammenführen und einen Dokumentausgabe-Stream in einer Vielzahl von Formaten erstellen. Der Ausgabe-Stream kann an einen Netzwerkdrucker, einen lokalen Drucker oder in eine Datei auf einem Datenträger gesendet werden.
@@ -27,7 +25,7 @@ Weitere Informationen zum Ausgabe-Service finden Sie unter [Dienste-Referenz](ht
 Sie können auf den Ausgabe-Seiten in der Administrationskonsole mehrere Aufgaben durchführen:
 
 * Geben Sie Zeichensätze für die Internationalisierung an. (Siehe [Ändern des Zeichensatzes](/help/forms/using/admin-help/change-character-set.md#change-the-character-set).)
-* Geben Sie absolute und relative Pfade für URLs, URIs, XCIs und Dateispeicherorte an. (Siehe [Angeben der Dateispeicherorte für die Ausgabe](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).) 
+* Geben Sie absolute und relative Pfade für URLs, URIs, XCIs und Dateispeicherorte an. (Siehe [Angeben der Dateispeicherorte für die Ausgabe](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
 * Konfigurieren Sie Cache-Größen und -Richtlinien. (Siehe [Angeben des Cache-Modus](/help/forms/using/admin-help/configuring-caching-output.md#specifying-the-cache-mode) und [Konfigurieren der Cache-Einstellungen](/help/forms/using/admin-help/configuring-caching-output.md#configuring-cache-settings).)
 * Stellen Sie Schriften auf dem Anwendungs-Server bereit. (Siehe [Bereitstellen von Schriften](/help/forms/using/admin-help/make-fonts-available.md#make-fonts-available).)
 * Geben Sie die einzubettenden Schriften an. (Siehe [Angeben der einzubettenden Schriftarten](/help/forms/using/admin-help/specify-fonts-embed.md#specify-fonts-to-embed).)
