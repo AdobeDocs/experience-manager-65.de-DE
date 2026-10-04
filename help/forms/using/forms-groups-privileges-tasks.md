@@ -12,11 +12,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '325'
 ht-degree: 100%
-
 ---
-
 # Gruppen und Berechtigungen bei AEM Forms auf OSGi{#aem-forms-on-osgi-groups-and-privileges}
 
 | Version | Artikel-Link |

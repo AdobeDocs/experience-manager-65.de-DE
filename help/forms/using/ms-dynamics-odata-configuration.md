@@ -10,16 +10,14 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1271'
 ht-degree: 100%
-
 ---
-
 # Microsoft Dynamics OData-Konfiguration{#microsoft-dynamics-odata-configuration}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html?lang=de) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html) |
 | AEM 6.5 | Dieser Artikel |
 
 ![data-integeration](assets/data-integeration.png)
@@ -46,8 +44,8 @@ Bevor Sie mit dem Einrichten und Konfigurieren von Microsoft Dynamics beginnen,
 * [AEM Forms-Add-on-Paket](../../forms/using/installing-configuring-aem-forms-osgi.md) wurde installiert.
 * Microsoft Dynamics 365 wurde online konfiguriert oder eine Instanz einer der folgenden Microsoft Dynamics-Versionen wurde installiert:
 
-   * Microsoft Dynamics 365 lokal
-   * Microsoft Dynamics 2016 lokal
+  * Microsoft Dynamics 365 lokal
+  * Microsoft Dynamics 2016 lokal
 
 * [Das Programm wurde für den Microsoft Dynamics-Online-Service bei Microsoft Azure Active Directory registriert](https://docs.microsoft.com/de-de/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Notieren Sie sich die Werte für die Client-ID (die auch als Anwendungs-ID bezeichnet wird) und den geheimen Clientschlüssel für den registrierten Service. Diese Werte werden während dem [Konfigurieren des Cloud-Dienstes für Ihren Microsoft Dynamics-Dienst](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service) verwendet.
 

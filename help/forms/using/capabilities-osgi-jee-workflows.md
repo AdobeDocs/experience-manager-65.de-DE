@@ -8,11 +8,9 @@ feature: Adaptive Forms,AEM Forms on OSGi
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '959'
 ht-degree: 100%
-
 ---
-
 # Aktionen und Funktionen formularorientierter AEM-Workflows in OSGi- und AEM Forms JEE-Workflows {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
 ## AEM-Posteingang und HTML-Arbeitsbereich {#aem-inbox-and-html-workspace}
@@ -59,7 +57,7 @@ Sie können den AEM-Posteingang verwenden, um formularzentrierte AEM-Workflows u
   <tr>
    <td>Neuzuweisen von Aufgaben</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Anhänge auf Feldebene für adaptive Formulare</td>
@@ -79,17 +77,17 @@ Sie können den AEM-Posteingang verwenden, um formularzentrierte AEM-Workflows u
   <tr>
    <td>Warteschlangen (freigegebene persönliche Warteschlange, Anfordern von Aufgaben aus der Warteschlange)</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Abwesenheitsbenachrichtigung</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
     <tr>
    <td>Anpassen von Benutzeroberflächenelementen</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Zuweisen einer Aufgabe zu mehreren Benutzenden</td>
@@ -118,7 +116,7 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
   <tr>
    <td>Integration in andere AEM-Lösungen</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Freihändige Unterschrift</td>
@@ -133,27 +131,27 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
   <tr>
    <td>Definieren der Aufgabenpriorität</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Zeitüberschreitung für eine Aufgabe nach Fälligkeitsdatum</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Schleifen innerhalb des Workflows</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Verantwortlichen dynamisch wählen </td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Verwenden benutzerdefinierter Metadaten</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>e-Signatur (Adobe Sign)</td>
@@ -178,27 +176,27 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
   <tr>
    <td>Integration in das Correspondence Management</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
    <tr>
    <td>Gateways, NO WAIT </td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
    <tr>
    <td>Variablen zum Speichern von Daten </td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>ODER-Teilung und UND-Teilung</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Benutzer-Avatar</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Senden einer E-Mail am Ende des Workflows</td>
@@ -208,7 +206,7 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
   <tr>
    <td>Aufrufen eines Web-Dienstes aus einem Workflow</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Digitale Signatur</td>
@@ -248,32 +246,32 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
   <tr>
    <td>Mobile App für adaptive Formulare</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
-   <td>Assembler-Service</td>
+   <td>Assembler-Dienst</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>PDF Generator-Dienst</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Formularservice</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Ausgabe-Service</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Document Assurance</td>
    <td>Unterstützt</td>
-   <td>Unterstützt  </td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>Skript ausführen</td>
@@ -283,7 +281,7 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
   <tr>
    <td>Assembler</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>  
   <tr>
    <td>HTML5-Formulare, interaktive PDF-Formulare, Formularsatz</td>
@@ -298,7 +296,7 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
   <tr>
    <td>Digitale Signatur</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Startpoint-Kategorien</td>
@@ -413,12 +411,12 @@ Die folgende Tabelle zeigt die Funktionen von AEM Inbox und der AEM Forms App:
   <tr>
    <td><p>Starten einer Formularanwendung</p> </td>
    <td><p>Unterstützt</p> </td>
-   <td><p>Unterstützt </p> </td>
+   <td><p>Unterstützt</p> </td>
   </tr>
   <tr>
    <td><p>Senden von Aufgaben</p> </td>
    <td><p>Unterstützt</p> </td>
-   <td><p>Unterstützt </p> </td>
+   <td><p>Unterstützt</p> </td>
   </tr>
   <tr>
    <td><p>Aufgaben delegieren</p> </td>
@@ -433,17 +431,17 @@ Die folgende Tabelle zeigt die Funktionen von AEM Inbox und der AEM Forms App:
   <tr>
    <td><p>Anlagen auf Aufgabenebene hinzufügen</p> </td>
    <td><p>Unterstützt</p> </td>
-   <td><p>Unterstützt </p> </td>
+   <td><p>Unterstützt</p> </td>
   </tr>
   <tr>
    <td><p>Anlagen auf Aufgabenebene anzeigen</p> </td>
    <td><p>Unterstützt</p> </td>
-   <td><p>Unterstützt </p> </td>
+   <td><p>Unterstützt</p> </td>
   </tr>
   <tr>
    <td><p>Anlagen auf Feldebene hinzufügen</p> </td>
    <td><p>Unterstützt</p> </td>
-   <td><p>Unterstützt </p> </td>
+   <td><p>Unterstützt</p> </td>
   </tr>
   <tr>
    <td><p>Kalenderansicht anzeigen</p> </td>
@@ -453,7 +451,7 @@ Die folgende Tabelle zeigt die Funktionen von AEM Inbox und der AEM Forms App:
   <tr>
    <td><p>Kommentare hinzufügen</p> </td>
    <td><p>Unterstützt</p> </td>
-   <td><p>Unterstützt </p> </td>
+   <td><p>Unterstützt</p> </td>
   </tr>
  </tbody>
 </table>
