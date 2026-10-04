@@ -9,11 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 100%
-
+source-wordcount: '2298'
+ht-degree: 96%
 ---
-
 # Installieren von Workbench {#install-workbench}
 
 Dieses Dokument enthält Anweisungen zur Installation und Konfiguration von AEM Forms Workbench. Das Installationsprogramm installiert außerdem Forms Designer.
@@ -77,7 +75,7 @@ In diesem Abschnitt werden die Hardware- und Softwareanforderungen sowie die unt
 ### Mindestanforderungen an Hardware und Software {#minimum-hardware-software-requirements}
 
 **Workbench**
-Als Minimum werden die folgenden Anforderungen empfohlen: 
+Als Minimum werden die folgenden Anforderungen empfohlen:
 Speicherplatz für die Installation:
 * 680 MB nur für Workbench.
 * 2,15 GB auf einem einzigen Laufwerk für eine vollständige Installation von Workbench, Designer und die Assemblierung der Beispiele.
@@ -104,7 +102,7 @@ Die vollständige Liste der unterstützten Plattformen für Workbench finden Sie
 
 ## Überlegungen zur Installation von Designer {#designer-installation-considerations}
 
-Standardmäßig enthält die Workbench-Installation eine entsprechende englischsprachige Version von Designer. Wenn das Programm zur Installation von Workbench eine vorhandene Version von Designer auf Ihrem Computer erkennt, kann es sein, dass die Installation abbricht und Sie aufgefordert werden, erst Ihre aktuelle Version von Designer zu entfernen, bevor Sie fortfahren können.
+Standardmäßig enthält die Workbench-Installation eine entsprechende englischsprachige Version von Designer. Wenn das Programm zur Installation von Workbench eine vorhandene Version von Designer auf Ihrem Computer erkennt, kann es sein, dass die Installation beendet wird und Sie aufgefordert werden, erst Ihre aktuelle Version von Designer zu entfernen, bevor Sie fortfahren können.
 Die nachstehende Tabelle enthält eine vollständige Liste der möglichen Installationsszenarien für Designer, auf die Sie stoßen können, sowie alle Aktionen, die Sie bei der Installation von Workbench ausführen müssen.
 
 <table>
@@ -115,9 +113,9 @@ Die nachstehende Tabelle enthält eine vollständige Liste der möglichen Instal
   </tr>
   <tr>
    <td><p>Acrobat Pro oder Acrobat Pro Extended (enthält Designer)</p> </td>
-   <td><p>Ohne.<br /> 
+   <td><p>none.<br /> 
 Die Workbench-Installation erkennt auf Ihrem Computer eine Instanz von Designer, die entweder mit Acrobat Pro oder Acrobat Pro Extended installiert wurde.<br />
-Verschiedene Versionen von Designer können parallel auf demselben System vorhanden sein – zum Beispiel Designer 6.4.x für Workbench 6.4 und Designer 6.5.0.x für Workbench 6.5. Es ist nicht erforderlich, eine Version von Designer zu deinstallieren, die mit Acrobat 10 Pro, Acrobat 10 Pro Extended oder höher installiert wurde.
+Verschiedene Versionen von Designer können parallel auf demselben System vorhanden sein - zum Beispiel Designer 6.4.x für Workbench 6.4 und Designer 6.5.0.x für Workbench 6.5. Es ist nicht erforderlich, die Version von Designer zu deinstallieren, die mit Acrobat 10 Pro, Acrobat 10 Pro Extended oder höher installiert wurde.
 <br /></p> </td>
   </tr>
   <tr>
@@ -214,7 +212,7 @@ Stellen Sie sicher, dass Sie eine Verbindung mit HTTPS herstellen, indem Sie den
 
 1. Öffnen Sie ein Eingabeaufforderungsfenster, navigieren Sie zu [Workbench_HOME]/workbench/jre/bin und geben Sie folgenden Befehl ein:
    `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
-Dabei gilt:
+   Dabei gilt:
    * `changeit` ist das Standardpasswort zum Keystore „cacerts“.
    * „certname“ ist das Zertifikat, das Sie in Schritt 1 ausgewählt haben.
    * „example“ ist der Aliasname, den Sie für das Zertifikat auswählen. Dieser Wert kann geändert werden.
@@ -258,8 +256,8 @@ Bei nicht passivierten Dokumenten, bei denen der Dateiname und der Stamm des Inh
 * Bei nicht-passivierten Eingabevorlagen hängt das Zwischenspeichern vom Inhaltsstamm und vom Dateinamen ab, von wo aus das Dokument erstellt wurde.
 Derselbe Cache wird nur für Anfragen mit demselben Inhaltsstamm und demselben Dateinamen der Vorlage verwendet.
 Die folgenden Best Practices stellen sicher, dass der Cache nicht endlos wächst, wenn dynamisch generierte Vorlagen an den Forms-Dienst übergeben werden:
-   * Entfernen Sie die UUID oder übergeben Sie dieselbe UUID in allen dynamisch generierten Vorlagen.
-   * Generieren Sie das Dokument entweder aus Vorlagen-Bytes oder aus demselben Dateinamen auf der Festplatte.
+  * Entfernen Sie die UUID oder übergeben Sie dieselbe UUID in allen dynamisch generierten Vorlagen.
+  * Generieren Sie das Dokument entweder aus Vorlagen-Bytes oder aus demselben Dateinamen auf der Festplatte.
 
 ### Deinstallieren von Workbench {#uninstalling-workbench}
 

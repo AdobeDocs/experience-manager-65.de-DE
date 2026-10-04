@@ -8,11 +8,9 @@ exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 100%
-
+source-wordcount: '1143'
+ht-degree: 99%
 ---
-
 # Adaptive Formulare mithilfe des XML-Schemas erstellen {#creating-adaptive-forms-using-xml-schema}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
@@ -285,7 +283,7 @@ Sie können die folgenden Einschränkungen zu XML-Schemaelementen hinzufügen, u
  </tbody>
 </table>
 
-## Häufig gestellte Fragen  {#frequently-asked-questions}
+## Häufig gestellte Fragen {#frequently-asked-questions}
 
 **Woher weiß ich, welches Element in der Baumstruktur mit welchem XML-Element verknüpft ist?**
 

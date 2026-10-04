@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1454'
+workflow-type: tm+mt
+source-wordcount: '1463'
 ht-degree: 100%
-
 ---
-
 # Konfigurieren der Zwischenspeicherung für die Ausgabe  {#configuring-caching-for-output}
 
 >[!NOTE]
@@ -33,7 +31,7 @@ Der Output-Dienst führt für die folgenden Elemente eine Zwischenspeicherung au
 
 Output speichert den Cache an zwei Orten:
 
-* **Im Arbeitsspeicher:** Elemente werden zwecks Schnellzugriffs im Arbeitsspeicher gespeichert. Der Arbeitsspeicher-Cache hat eine begrenzte Größe und wird beim Neustart des Servers gelöscht.
+* **Im Arbeitsspeicher:** Elemente werden für schnellen Zugriff im Arbeitsspeicher gespeichert. Der Arbeitsspeicher-Cache hat eine begrenzte Größe und wird beim Neustart des Servers gelöscht.
 * **Auf einem Datenträger:** Elemente werden auf dem Dateisystem des Servers gespeichert. Der Datenträger-Cache verfügt über eine größere Kapazität als der Arbeitsspeicher-Cache und wird beim Neustart des Servers beibehalten. Der Speicherort des Datenträger-Cache hängt von Ihrem Anwendungs-Server ab. Weitere Informationen zum Ändern des Speicherorts des Datenträger-Caches finden Sie unter [Angeben der Dateispeicherorte für die Ausgabe](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).
 
 ## Angeben des Cache-Modus {#specifying-the-cache-mode}
@@ -43,7 +41,7 @@ Output unterstützt zwei Modi für die Zwischenspeicherung:
 * unbedingt
 * unter Verwendung des Cache-Prüfpunkts
 
-Wenn Sie zwischen den Cache-Modi wechseln, starten Sie den Output-Dienst neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench oder folgen Sie den Anweisungen unter [Starten oder Beenden von Diensten, die AEM Forms-Modulen zugeordnet sind](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules).
+Wenn Sie zwischen den Cache-Modi wechseln, starten Sie den Output-Dienst neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench, oder folgen Sie den Anweisungen unter [Dienste starten oder beenden, die AEM Forms-Modulen zugeordnet sind](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules).
 
 Die Cache-Prüfpunkt-Zeit wird automatisch zurückgesetzt, wenn Sie zwischen den Modi wechseln.
 
@@ -93,17 +91,17 @@ Klicken Sie zum Zugreifen auf diese Einstellungen in der Administrationskonsole 
 
 ### Festlegen von globalen Cache-Einstellungen {#specifying-global-cache-settings}
 
-Die Einstellungen im Bereich **Globale Cache-Einstellungen** wirken sich auf alle Cache-Typen aus. Wenn Sie eine dieser Einstellungen ändern, starten Sie den Ausgabe-Service neu, damit die Änderung wirksam wird.  Verwenden Sie zum Neustart dieses Dienstes entweder Workbench oder folgen Sie den Anweisungen unter [Starten oder Beenden von Diensten, denen AEM Forms-Module zugeordnet sind](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules). 
+Die Einstellungen im Bereich **Globale Cache-Einstellungen** wirken sich auf alle Cache-Typen aus. Wenn Sie eine dieser Einstellungen ändern, starten Sie den Ausgabe-Service neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench oder folgen Sie den Anweisungen unter [Dienste starten oder beenden, die AEM Forms-Modulen zugeordnet sind](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules).
 
-**Max. Größe des Dokuments im Cache (KB):** Die maximale Größe (in Kilobyte) eines Formularentwurfs oder einer anderen Ressource, die in einem Arbeitsspeicher-Cache gespeichert werden kann. Dies ist eine globale Einstellung, die für alle Arbeitsspeicher-Caches gilt. Wenn die Ressource größer als dieser Wert ist, wird sie nicht im Arbeitsspeicher zwischengespeichert.  Der Standardwert ist 1024 KB. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
+**Max. Größe des Dokuments im Cache (KB):** Die maximale Größe (in Kilobyte) eines Formularentwurfs oder einer anderen Ressource, die in einem Arbeitsspeicher-Cache gespeichert werden kann. Dies ist eine globale Einstellung, die für alle Arbeitsspeicher-Caches gilt. Wenn die Ressource größer als dieser Wert ist, wird sie nicht im Arbeitsspeicher zwischengespeichert. Der Standardwert ist 1024 KB. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
 
-**Formularwiedergabe mit aktiviertem Zwischenspeicher**: Diese Option ist standardmäßig ausgewählt. Das bedeutet, dass die wiedergegebenen Formulare für spätere Abrufe zwischengespeichert werden. Diese Einstellung hat wenig Auswirkungen auf die Leistung des Ausgabe-Service, da keine nicht-interaktiven Dokumente zwischengespeichert werden.  Diese Option hat eine Auswirkung, wenn Sie den Ausgabe-Service für nicht interaktive Dokumente verwenden, die auf dem Client wiedergegeben werden.
+**Formularwiedergabe mit aktiviertem Zwischenspeicher:** Diese Option ist standardmäßig aktiviert. Das bedeutet, dass die wiedergegebenen Formulare für spätere Abrufe zwischengespeichert werden. Diese Einstellung hat wenig Auswirkungen auf die Leistung des Ausgabe-Service, da keine nicht-interaktiven Dokumente zwischengespeichert werden. Diese Option hat eine Auswirkung, wenn Sie den Ausgabe-Service für nicht interaktive Dokumente verwenden, die auf dem Client wiedergegeben werden.
 
 ### Zwischenspeichern von Formularentwürfen {#caching-form-designs}
 
-Wenn der Ausgabe-Service eine Wiedergabeanforderung erhält, werden die Formularentwürfe aus dem Repository oder aus einer HTTP-Quelle abgerufen und zwischengespeichert.  Diese Zwischenspeicherung verbessert die Leistung, da der Ausgabe-Service für folgende Wiedergabeanforderungen die Formularentwürfe aus dem Zwischenspeicher und nicht aus dem Repository abruft.
+Wenn der Ausgabe-Service eine Wiedergabeanforderung erhält, werden die Formularentwürfe aus dem Repository oder aus einer HTTP-Quelle abgerufen und zwischengespeichert. Diese Zwischenspeicherung verbessert die Leistung, da der Ausgabe-Service für folgende Wiedergabeanforderungen die Formularentwürfe aus dem Zwischenspeicher und nicht aus dem Repository abruft.
 
-Der Ausgabe-Service speichert Formularentwürfe immer auf dem Datenträger zwischen.  Wenn Formularentwürfe auf dem Server gespeichert werden, werden diese Dateien als Datenträger-Cache betrachtet. Der Ausgabe-Service speichert außerdem Formularentwürfe im Arbeitsspeicher zwischen, gemäß der Einstellung im Bereich **Arbeitsspeicher-Cache für Vorlagenkonfiguration**. Wenn Sie eine dieser Einstellungen ändern, starten Sie den Ausgabe-Service neu, damit die Änderung wirksam wird.  Verwenden Sie zum Neustart dieses Dienstes entweder Workbench oder folgen Sie den Anweisungen unter [Starten oder Beenden von Diensten, denen AEM Forms-Module zugeordnet sind](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules).
+Der Ausgabe-Service speichert Formularentwürfe immer auf dem Datenträger zwischen. Wenn Formularentwürfe auf dem Server gespeichert werden, werden diese Dateien als Datenträger-Cache betrachtet. Der Ausgabe-Service speichert außerdem Formularentwürfe im Arbeitsspeicher zwischen, gemäß der Einstellung im Bereich **Arbeitsspeicher-Cache für Vorlagenkonfiguration**. Wenn Sie eine dieser Einstellungen ändern, starten Sie den Ausgabe-Service neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench oder folgen Sie den Anweisungen unter [Starten oder Beenden von Diensten, die AEM Forms-Modulen zugeordnet sind](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules).
 
 **Vorlagenkonfigurations-Cache-Größe:** Die maximale Anzahl von Vorlagenkonfigurationsobjekten, die im Arbeitsspeicher beibehalten werden sollen. Der Standardwert ist 100. Es wird empfohlen, diesen Wert größer oder gleich dem Wert der Vorlagen-Cache-Größe festzulegen. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
 
@@ -113,7 +111,7 @@ Der Ausgabe-Service speichert Formularentwürfe immer auf dem Datenträger zwisc
 
 ### Zwischenspeichern von Fragmenten und Bildern {#caching-fragments-and-images}
 
-Der Ausgabe-Service speichert Fragmente und Bilder, die in Formularentwürfen auf dem Datenträger verwendet werden, zwischen.  Dadurch wird die Leistung verbessert, weil die Fragmente und Bilder nur bei der ersten Anforderung aus dem Repository gelesen werden. Bei nachfolgenden Anforderungen liest der Ausgabe-Service anschließend die Fragmente und Bilder vom Datenträgercache.  Fragmente und Bilder werden nur auf dem Datenträger zwischengespeichert und nicht im Arbeitsspeicher.
+Der Ausgabe-Service speichert Fragmente und Bilder, die in Formularentwürfen auf dem Datenträger verwendet werden, zwischen. Dadurch wird die Leistung verbessert, weil die Fragmente und Bilder nur bei der ersten Anforderung aus dem Repository gelesen werden. Bei nachfolgenden Anforderungen liest der Ausgabe-Service anschließend die Fragmente und Bilder vom Datenträgercache. Fragmente und Bilder werden nur auf dem Datenträger zwischengespeichert und nicht im Arbeitsspeicher.
 
 Sie können die folgenden Einstellungen verwenden, um die Zwischenspeicherung von Fragmenten und Bildern auf dem Datenträger zu steuern. Diese Einstellungen befinden sich im Bereich **Cache-Einstellungen für Vorlagenressourcen**:
 
@@ -125,7 +123,7 @@ Sie können die folgenden Einstellungen verwenden, um die Zwischenspeicherung vo
 
 **Deaktiviert**: Der Ausgabe-Service speichert weder Fragmente noch Bilder zwischen.
 
-**Bereinigungsintervall (Sekunden)**: Gibt an, wie oft der Ausgabe-Service alte, ungültige Cache-Dateien entfernen soll. Der Ausgabe-Service entfernt keine gültigen Cache-Dateien.  Wenn Sie das Bereinigungsintervall ändern, starten Sie den Ausgabe-Service neu, damit die Änderung wirksam wird.  Verwenden Sie zum Neustart dieses Dienstes entweder Workbench, oder folgen Sie den Anweisungen unter Dienste starten oder beenden, die AEM Forms-Modulen zugeordnet sind.
+**Bereinigungsintervall (Sekunden)**: Gibt an, wie oft der Ausgabe-Service alte, ungültige Cache-Dateien entfernen soll. Der Ausgabe-Service entfernt keine gültigen Cache-Dateien. Wenn Sie das Bereinigungsintervall ändern, starten Sie den Ausgabe-Service neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench, oder folgen Sie den Anweisungen unter Dienste starten oder beenden, die AEM Forms-Modulen zugeordnet sind.
 
 ## Clustering-Überlegungen zum Zwischenspeicher {#clustering-considerations-for-caches}
 

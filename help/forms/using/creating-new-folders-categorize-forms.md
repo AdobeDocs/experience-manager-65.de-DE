@@ -1,20 +1,22 @@
 ---
 title: Erstellen neuer Ordner für die Formularkategorisierung
+
 description: Verwenden Sie Ordner, um Formularvorlagen, PDFs, Ressourcen und adaptive Formulare zu organisieren.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 role: Admin,User
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '387'
 ht-degree: 100%
-
 ---
-
 # Erstellen neuer Ordner für die Formularkategorisierung {#create-new-folders-to-categorize-forms}
 
 Sie können Assets mithilfe von Ordnern besser organisieren. Da AEM Forms mehrere Asset-Typen (Formularvorlagen, PDFs, Dokumente, Ressourcen und adaptive Formulare mit verschiedenen Metadaten) unterstützt, können Sie über Ordner Formulare basierend auf den gewünschten Kriterien kategorisieren.

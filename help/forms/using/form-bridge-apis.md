@@ -11,15 +11,13 @@ role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 100%
-
+ht-degree: 99%
 ---
-
 # Form Bridge APIs für HTML5-Formulare {#form-bridge-apis-for-html-forms}
 
 Sie können die Form Bridge APIs verwenden, um einen Übertragungskanal zwischen XFA-basierten HTML5-Formularen und Ihren Programmen zu öffnen. Die Form Bridge APIs bieten eine **Verbindungs**-API, um die Verbindung zu erstellen.
 
-Die **Verbindungs**-API akzeptiert einen Handler als ein Argument. Nachdem eine Verbindung zwischen XFA-basierten HTML5-Formularen und Form Bridge erstellt wurde, wird der Handler aufgerufen.  
+Die **Verbindungs**-API akzeptiert einen Handler als ein Argument. Nachdem eine Verbindung zwischen XFA-basierten HTML5-Formularen und Form Bridge erstellt wurde, wird der Handler aufgerufen.
 
 Sie können den folgenden Beispielcode verwenden, um die Verbindung zu erstellen.
 
@@ -59,8 +57,8 @@ Gibt die Versionsnummer der Scripting-Bibliothek zurück
 
 * **Eingabe**:
 
-   * **handler:** Funktion, die ausgeführt wird, wenn Form Bridge verbunden ist.
-   * **context**: Das Objekt, auf das der Kontext (dieses) der *handler*-Funktion festgelegt wird.
+  * **handler:** Funktion, die ausgeführt wird, wenn Form Bridge verbunden ist.
+  * **context**: Das Objekt, auf das der Kontext (dieses) der *handler*-Funktion festgelegt wird.
 
 * **Ausgabe**: keine
 * **Fehler**: keine
@@ -69,13 +67,13 @@ Gibt die Versionsnummer der Scripting-Bibliothek zurück
 
 * **Eingabe:**
 
-   * **options:** JavaScript-Objekt, das die folgenden Eigenschaften enthält:
+  * **options:** JavaScript-Objekt, das die folgenden Eigenschaften enthält:
 
-      * **Error:** Fehlerhandler-Funktion
-      * **success**: Erfolgshandler-Funktion. Dieser Funktion wird ein Objekt übergeben, das XML in der Eigenschaft *data* enthält.
-      * **context**: Das Objekt, auf das der Kontext (this) der Funktion *success* festgelegt wird.
-      * **validationChecker**: Funktion, um die Validierungsfehler zu prüfen, die vom Server erhalten wurden. Der Überprüfungsfunktion wird ein Array von Fehlerstrings übergeben.
-      * **formState**: Der JSON-Status des XFA-Formulars, für das XML-Daten zurückgegeben werden sollen. Wenn nicht anders angegeben, wird Daten-XML für das aktuell gerenderte Formular zurückgegeben.
+    * **Error:** Fehlerhandler-Funktion
+    * **success**: Erfolgshandler-Funktion. Dieser Funktion wird ein Objekt übergeben, das XML in der Eigenschaft *data* enthält.
+    * **context**: Das Objekt, auf das der Kontext (this) der Funktion *success* festgelegt wird.
+    * **validationChecker**: Funktion, um die Validierungsfehler zu prüfen, die vom Server erhalten wurden. Der Überprüfungsfunktion wird ein Array von Fehlerstrings übergeben.
+    * **formState**: Der JSON-Status des XFA-Formulars, für das XML-Daten zurückgegeben werden sollen. Wenn nicht anders angegeben, wird Daten-XML für das aktuell gerenderte Formular zurückgegeben.
 
 * **Ausgabe:** keine
 * **Fehler:** keine
@@ -84,42 +82,42 @@ Gibt die Versionsnummer der Scripting-Bibliothek zurück
 
 * **Eingabe:**
 
-   * **configName**: Name der zu überschreibenden Konfiguration
+  * **configName**: Name der zu überschreibenden Konfiguration
 
-      * **widgetConfig**: Erlaubt dem Benutzer, die Standard-Widgets im Formular mit benutzerdefinierten Widgets zu überschreiben. Die Konfiguration wird überschrieben wie folgt:
+    * **widgetConfig**: Erlaubt dem Benutzer, die Standard-Widgets im Formular mit benutzerdefinierten Widgets zu überschreiben. Die Konfiguration wird überschrieben wie folgt:
 
-        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
+      *formBridge.registerConfig(„widgetConfig“:{/&ast;configuration&ast;/})*
 
-      * **pagingConfig**: Erlaubt dem Benutzer, das Standardverhalten zu überschreiben, bei dem nur die erste Seite gerendert wird. Die Konfiguration wird überschrieben wie folgt:
+    * **pagingConfig**: Erlaubt dem Benutzer, das Standardverhalten zu überschreiben, bei dem nur die erste Seite gerendert wird. Die Konfiguration wird überschrieben wie folgt:
 
-        *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
+      *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
 
-      * **LoggingConfig**: Ermöglicht dem Benutzer, die Protokollierungsebene zu überschreiben, die Protokollierung für eine Kategorie zu deaktivieren oder festzulegen, ob die Protokolle angezeigt oder an den Server gesendet werden sollen. Die Konfiguration kann überschrieben werden wie folgt:
+    * **LoggingConfig**: Ermöglicht dem Benutzer, die Protokollierungsebene zu überschreiben, die Protokollierung für eine Kategorie zu deaktivieren oder festzulegen, ob die Protokolle angezeigt oder an den Server gesendet werden sollen. Die Konfiguration kann überschrieben werden wie folgt:
 
-     ```javascript
-     formBridge.registerConfig{
-       "LoggerConfig" : {
-     {
-     "on":`<true *| *false>`,
-     "category":`<array of categories>`,
-     "level":`<level of categories>`, "
-     type":`<"console"/"server"/"both">`
-     }
-       }
-     ```
+    ```javascript
+    formBridge.registerConfig{
+      "LoggerConfig" : {
+    {
+    "on":`<true *| *false>`,
+    "category":`<array of categories>`,
+    "level":`<level of categories>`, "
+    type":`<"console"/"server"/"both">`
+    }
+      }
+    ```
 
-      * **SubmitServiceProxyConfig**: Zulassen, dass Benutzer Sende- und Protokoll-Proxy-Services anmelden können.
+    * **SubmitServiceProxyConfig**: Zulassen, dass Benutzer Sende- und Protokoll-Proxy-Services anmelden können.
 
-        ```javascript
-        window.formBridge.registerConfig("submitServiceProxyConfig",
-        {
-        "submitServiceProxy" : "`<submitServiceProxy>`",
-        "logServiceProxy": "`<logServiceProxy>`",
-        "submitUrl" : "`<submitUrl>`"
-        });
-        ```
+      ```javascript
+      window.formBridge.registerConfig("submitServiceProxyConfig",
+      {
+      "submitServiceProxy" : "`<submitServiceProxy>`",
+      "logServiceProxy": "`<logServiceProxy>`",
+      "submitUrl" : "`<submitUrl>`"
+      });
+      ```
 
-   * **config:** Wert der Konfiguration
+  * **config:** Wert der Konfiguration
 
 * **Ausgabe:** Objekt, das den ursprünglichen Wert der Konfiguration in der *data*-Eigenschaft enthält.
 
@@ -129,7 +127,7 @@ Gibt die Versionsnummer der Scripting-Bibliothek zurück
 
 * **Eingabe:**
 
-   * **fieldArray**: Array von SOM-Ausdrücken für die auszublendenden Felder
+  * **fieldArray**: Array von SOM-Ausdrücken für die auszublendenden Felder
 
 * **Ausgabe:** keine
 * **Fehler:** keine
@@ -138,7 +136,7 @@ Gibt die Versionsnummer der Scripting-Bibliothek zurück
 
 * **Eingabe:**
 
-   * **fieldArray**: Array von SOM-Ausdrücken für die anzuzeigenden Felder
+  * **fieldArray**: Array von SOM-Ausdrücken für die anzuzeigenden Felder
 
 * **Ausgabe:** keine
 * **Fehler:** keine
@@ -160,12 +158,12 @@ Gibt die Versionsnummer der Scripting-Bibliothek zurück
 
 * **Eingabe:**
 
-   * **Optionen**: JavaScript-Objekt, das folgende Eigenschaften enthält:
+  * **Optionen**: JavaScript-Objekt, das folgende Eigenschaften enthält:
 
-      * **Error:** Fehlerhandler-Funktion
-      * **success:** Erfolgshandler-Funktion
-      * **context**: Das Objekt, auf das der Kontext (dies) der *success*-Funktion festgelegt wird.
-      * **formState:** JSON-Status des Formulars. Das Formular wird im JSON-Status wiederhergestellt.
+    * **Error:** Fehlerhandler-Funktion
+    * **success:** Erfolgshandler-Funktion
+    * **context**: Das Objekt, auf das der Kontext (dies) der *success*-Funktion festgelegt wird.
+    * **formState:** JSON-Status des Formulars. Das Formular wird im JSON-Status wiederhergestellt.
 
 * **Ausgabe:** keine
 * **Fehler:** keine
@@ -180,8 +178,8 @@ Gibt die Versionsnummer der Scripting-Bibliothek zurück
 
 * **Eingabe:**
 
-   * **som:** Array, das SOM-Ausdrücke des Felds enthält. SOM-Ausdruck zur Festlegung des Werts der Felder.
-   * **value**: Array der Werte, die den SOM-Ausdrücken in einem **SOM**-Array entsprechen. Wenn der Datentyp des Werts nicht mit fieldType übereinstimmt, wird der Wert nicht geändert.
+  * **som:** Array, das SOM-Ausdrücke des Felds enthält. SOM-Ausdruck zur Festlegung des Werts der Felder.
+  * **value**: Array der Werte, die den SOM-Ausdrücken in einem **SOM**-Array entsprechen. Wenn der Datentyp des Werts nicht mit fieldType übereinstimmt, wird der Wert nicht geändert.
 
 * **Ausgabe:** keine
 * **Fehler**: Löst im Fall eines falschen SOM-Ausdrucks einen Ausnahmefehler aus.
@@ -210,8 +208,8 @@ if(a.errors) {
 
 * **Eingabe:**
 
-   * **som:** Array, das SOM-Ausdrücke für die Felder enthält.
-   * **property:** Name der Eigenschaft, deren Wert erforderlich ist.
+  * **som:** Array, das SOM-Ausdrücke für die Felder enthält.
+  * **property:** Name der Eigenschaft, deren Wert erforderlich ist.
 
 * **Ausgabe**: Objekt, das das Ergebnis als Array in der *data*-Eigenschaft enthält
 
@@ -221,9 +219,9 @@ if(a.errors) {
 
 * **Eingabe:**
 
-   * **som**: Array, das die SOM-Ausdrücke der Felder enthält, deren Wert festgelegt werden soll.
-   * **property:** Eigenschaft, deren Wert festgelegt werden soll.
-   * **value**: Array, das die Werte der angegebenen Eigenschaft für die Felder enthält, die in SOM-Ausdrücken festgelegt werden
+  * **som**: Array, das die SOM-Ausdrücke der Felder enthält, deren Wert festgelegt werden soll.
+  * **property:** Eigenschaft, deren Wert festgelegt werden soll.
+  * **value**: Array, das die Werte der angegebenen Eigenschaft für die Felder enthält, die in SOM-Ausdrücken festgelegt werden
 
 * **Ausgabe:** keine
 * **Fehler:** keine

@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '236'
 ht-degree: 100%
-
 ---
-
 # Erste Schritte mit HTML5-Formularen {#getting-started-with-html-forms}
 
 HTML5-Formulare bieten zahlreiche, für Mobilgeräte geeignete Funktionen. So können Sie Ihre aktuellen Lösungen und Workflows auf Tablets oder Smartphones mit HTML5-Browsern erweitern. Zu den Funktionen gehören:

@@ -1,9 +1,13 @@
 ---
 title: Löschen von Formularen und zugehörigen Ressourcen
+
 description: Informationen zum Löschen eines Formulars oder Assets in AEM Forms und die Auswirkungen auf referenzierte und verweisende Assets und XFA-Formulare.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 role: Admin,User
 exl-id: b31f9f56-dd33-4478-ad34-01ac7d5a1b40
 solution: Experience Manager, Experience Manager Forms
@@ -12,9 +16,7 @@ source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 100%
-
 ---
-
 # Löschen von Formularen und zugehörigen Ressourcen {#deleting-forms-and-related-resources}
 
 Sie können Formulare und Assets löschen, um diese Assets aus dem Repository zu entfernen. Der Löschvorgang funktioniert bei allen Asset-Typen und -Ordnern.

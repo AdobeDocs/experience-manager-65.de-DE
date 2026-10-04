@@ -11,18 +11,16 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '543'
 ht-degree: 100%
-
 ---
-
 # Rendern einer Formularvorlage für HTML5-Formulare {#rendering-form-template-for-html-forms}
 
 ## Rendern des Endpunktes {#render-endpoint}
 
 HTML5-Formulare umfassen das Konzept der **Profile**, die als REST-Endpunkte bereitgestellt werden, um Formularvorlagen auf Mobilgeräten rendern zu können. Diese Profile sind mit einem **Profile Renderer** verknüpft. Es handelt sich um JSP-Seiten, auf denen Formulare im HTML-Format generiert werden. Dazu werden Forms OSGi-Services aufgerufen. Der JCR-Pfad des Profilknotens bestimmt die URL des Render-Endpunktes. Der Standard-Render-Endpunkt des Formulars, der auf das „Standard“-Profil verweist, sieht wie folgt aus:
 
-https://&lt;*Host*>:&lt;*Port*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*Pfad des Ordners mit der Formular-XDP*>&amp;template=&lt;*Name der XDP*>
+https://<*Host*>:<*Port*>/content/xfaforms/profiles/default.html?contentRoot=<*Pfad des Ordners mit der Formular-XDP*>&template=<*Name der XDP*>
 
 Beispiel: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 

@@ -10,11 +10,9 @@ feature: HTML5 Forms,Mobile Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
-
+source-wordcount: '1165'
+ht-degree: 96%
 ---
-
 # Framework des Erscheinungsbilds für adaptive und HTML5-Formulare {#appearance-framework-for-adaptive-and-html-forms}
 
 Formulare (adaptive Formulare und HTML5-Formulare) verwenden [jQuery](https://jquery.com/)-, [Backbone.js](https://backbonejs.org/)- und [Underscore.js](https://underscorejs.org/)-Bibliotheken für das Erscheinungsbild und die Skripterstellung. Die Formulare verwenden auch die Architektur von [jQuery UI](https://jqueryui.com/)-**Widgets** für alle interaktiven Elemente (beispielsweise Felder und Schaltflächen) im Formular. Durch diese Architektur stehen Formularentwicklerinnen und -entwicklern eine umfangreiche Auswahl von jQuery-Widgets und -Plug-ins in Forms zur Verfügung. Sie können ebenfalls formularspezifische Logik beim Erfassen von Benutzerdaten implementieren, wie etwa „leadDigits/trailDigits“-Einschränkungen, oder Bildklassen implementieren. Formularentwicklerinnen und -entwickler können ein benutzerdefiniertes Erscheinungsbild erstellen und verwenden, um das Erlebnis bei der Datenerfassung zu verbessern und benutzerfreundlicher zu gestalten.
@@ -100,19 +98,19 @@ Um mit dem Formularframework zu interagieren, löst ein Widget einige Ereignisse
   </tr>
   <tr>
    <td>XFA_ENTER_EVENT</td>
-   <td>Das Ereignis wird ausgelöst, wenn das Feld im Fokus ist. Dadurch kann das „enter“-Skript für das Feld ausgeführt werden. Die Syntax zum Auslösen des Ereignisses lautet <br /> (Widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
+   <td>Das Ereignis wird ausgelöst, wenn das Feld im Fokus ist. Dadurch kann das „enter“-Skript für das Feld ausgeführt werden. Die Syntax zum Auslösen des Ereignisses lautet<br /> (widget)._Trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_EXIT_EVENT</td>
-   <td>Dieses Ereignis wird ausgelöst, wenn der Benutzer das Feld verlässt. Dadurch kann die Engine den Wert des Feldes festlegen und ihr „exit“-Skript ausführen. Die Syntax zum Auslösen des Ereignisses lautet <br /> (Widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
+   <td>Dieses Ereignis wird ausgelöst, wenn der Benutzer das Feld verlässt. Dadurch kann die Engine den Wert des Feldes festlegen und ihr „exit“-Skript ausführen. Die Syntax zum Auslösen des Ereignisses lautet<br /> (widget)._Trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CHANGE_EVENT</td>
-   <td>Das Ereignis wird ausgelöst, damit die Engine ihr „change“-Skript ausführen kann, das für das Feld eingegeben wurde. Die Syntax zum Auslösen des Ereignisses lautet <br /> (Widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
+   <td>Das Ereignis wird ausgelöst, damit die Engine ihr „change“-Skript ausführen kann, das für das Feld eingegeben wurde. Die Syntax zum Auslösen des Ereignisses lautet<br /> (widget)._Trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CLICK_EVENT</td>
-   <td>Das Ereignis wird ausgelöst, wenn das Feld angeklickt wird. Dadurch kann die Engine das „click“-Skript ausführen, das für das Feld eingegeben wurde. Die Syntax zum Auslösen des Ereignisses lautet <br /> (Widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
+   <td>Das Ereignis wird ausgelöst, wenn das Feld angeklickt wird. Dadurch kann die Engine das „click“-Skript ausführen, das für das Feld eingegeben wurde. Die Syntax zum Auslösen des Ereignisses lautet<br /> (widget)._Trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
   </tr>
  </tbody>
 </table>
