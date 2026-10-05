@@ -11,16 +11,14 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 100%
-
+source-wordcount: '351'
+ht-degree: 99%
 ---
-
 # Dynamisches Füllen von Dropdown-Listen {#dynamically-populating-drop-down-lists}
 
 ## Voraussetzungen {#prerequisites}
 
-* [Erstellen von OSGI-Bundles](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk)
+* [Erstellen von OSGi-Bundles](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&CID=RedirectAEMCommunityKautuk)
 * [Entwickeln von AEM-Komponenten](/help/sites-developing/components.md)
 * [Erstellen von adaptiven Formularen](../../forms/using/creating-adaptive-form.md)
 * [Bearbeiten adaptiver Formulare](../../forms/using/introduction-forms-authoring.md)
@@ -31,7 +29,7 @@ Gehen Sie von einem Szenario aus, in dem Sie die Dropdownliste **Bundesland** ba
 
 1. Erstellen Sie ein Projekt mit den folgenden Modulen:
 
-   * Das Bundle, das die Logik zum Ausfüllen der Dropdown-Liste enthält, in diesem Fall ein Servlet.
+   * Das Paket, das die Logik zum Ausfüllen der Dropdown-Liste enthält, in diesem Fall ein Servlet.
    * Der Inhalt, der die JAR-Datei einbettet und über eine Dropdown-Ressource verfügt. Das Servlet verweist auf diese Ressource.
 
 1. Schreiben Sie ein Servlet basierend auf dem Abfrageparameter „Land“, das ein Array mit den Namen der Bundesländer im jeweiligen Land zurückgibt.

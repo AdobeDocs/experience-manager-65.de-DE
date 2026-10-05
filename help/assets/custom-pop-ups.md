@@ -11,11 +11,9 @@ exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 100%
-
+source-wordcount: '1279'
+ht-degree: 95%
 ---
-
 # Erstellen eines benutzerdefinierten Popup-Fensters mithilfe einer Schnellansicht {#using-quickviews-to-create-custom-pop-ups}
 
 Die standardmäßige Schnellansicht wird in E-Commerce-Erlebnissen eingesetzt, in denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können jedoch benutzerdefinierte Inhalte auslösen, die in Popup-Fenstern angezeigt werden. Abhängig vom verwendeten Viewer können Benutzer mit dieser Funktion auf einen Hotspot, ein Miniaturbild oder auf eine Imagemap klicken, um Informationen oder zugehörige Inhalte anzuzeigen.
@@ -83,7 +81,7 @@ Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zu
    Der Viewer verwendet einen Handler mit dem Namen `QuickViewActive`.
 
    **Beispiel**
-Angenommen, Sie verwenden auf Ihrer Web-Seite für ein interaktives Bild den folgenden Einbettungs-Code:
+   Angenommen, Sie verwenden auf Ihrer Web-Seite für ein interaktives Bild den folgenden Einbettungs-Code:
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -114,7 +112,7 @@ Angenommen, Sie verwenden auf Ihrer Web-Seite für ein interaktives Bild den fol
    Der Handler `quickViewActivate` steuert die Schnellansichten im Viewer. Der Handler enthält die Variablenliste und die Funktionsaufrufe, die mit der Schnellansicht verwendet werden. Der Einbettungs-Code stellt die Zuordnung für das SKU-Variablenset in der Schnellansicht sowie ein Beispiel für einen Aufruf der Funktion `loadQuickView` bereit.
 
    **Variablenzuordnung**
-Ordnen Sie Variablen für die Verwendung auf Ihrer Web-Seite dem in der Schnellansicht enthaltenen SKU-Wert und den allgemeinen Variablen zu:
+   Ordnen Sie Variablen für die Verwendung auf Ihrer Web-Seite dem in der Schnellansicht enthaltenen SKU-Wert und den allgemeinen Variablen zu:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -130,7 +128,7 @@ Ordnen Sie Variablen für die Verwendung auf Ihrer Web-Seite dem in der Schnella
    ```
 
    **Funktionsaufruf**
-Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht funktioniert. Die Host-Seite muss auf diese Funktion zugreifen können. Der Einbettungs-Code bietet ein Beispiel für einen Funktionsaufruf:
+   Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht funktioniert. Die Host-Seite muss auf diese Funktion zugreifen können. Der Einbettungs-Code bietet ein Beispiel für einen Funktionsaufruf:
 
    `loadQuickView(sku)`
 
@@ -147,7 +145,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
    * Entfernen Sie im Einbettungs-Code die Auskommentierung des Abschnitts „setHandlers“.
    * Ordnen Sie alle weiteren Variablen zu, die in der Schnellansicht enthalten sind.
 
-      * Aktualisieren Sie den Aufruf `loadQuickView(sku,*var1*,*var2*)`, wenn Sie weitere Variablen hinzufügen.
+     * Aktualisieren Sie den Aufruf `loadQuickView(sku,*var1*,*var2*)`, wenn Sie weitere Variablen hinzufügen.
 
    * Erstellen Sie auf der Seite eine einfache `loadQuickView` ()-Funktion außerhalb des Viewers.
 
@@ -261,7 +259,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
    `*viewerInstance.*init()`
 
    **Beispiel**
-Dieses Beispiel verwendet den interaktiven Bild-Viewer.
+   In diesem Beispiel wird der interaktive Bild-Viewer verwendet.
 
    `s7interactiveimageviewer.init()`
 
