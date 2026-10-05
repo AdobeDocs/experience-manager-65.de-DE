@@ -23,19 +23,19 @@ PDF Generator kann mehrere Dateikonvertierungen gleichzeitig ausführen, um den 
 | Mehrbenutzermodus | OpenOffice | Jede OpenOffice-Instanz wird von einem separaten Benutzerkonto ausgeführt. |
 | Einzelbenutzermodus | Microsoft® Word und Microsoft® Excel | Ein Benutzerkonto führt mehrere Word- und Excel-Instanzen aus. PowerPoint-Konversionen bleiben serialisiert. |
 
-Bevor Sie einen der Modi aktivieren, schließen Sie die Vorinstallationskonfiguration für [PDF Generator ](/help/forms/using/install-configure-document-services.md#preinstallationconfigurations) die von Ihnen verwendeten Programme und Betriebssysteme ab. Unterstützte Anwendungsversionen finden Sie unter [Software-Support für PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator).
+Bevor Sie einen der Modi aktivieren, schließen Sie die Vorinstallationskonfiguration für [PDF Generator &#x200B;](/help/forms/using/install-configure-document-services.md#preinstallationconfigurations) die von Ihnen verwendeten Programme und Betriebssysteme ab. Unterstützte Anwendungsversionen finden Sie unter [Software-Support für PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator).
 
 ## Mehrbenutzermodus {#multi-user-mode}
 
 Im Mehrbenutzermodus startet PDF Generator jede OpenOffice-Instanz unter einem separaten Benutzerkonto. Konfigurieren Sie genügend gültige Administratorbenutzerkonten für die Anzahl der erforderlichen gleichzeitigen Konversionen. Konfigurieren Sie in einem Cluster auf jedem Knoten dieselben Konten.
 
-Stellen Sie unter Windows sicher, dass die PDF Generator-Benutzer über die Berechtigung [Ersetzen eines Tokens auf Prozessebene](/help/forms/using/install-configure-document-services.md#grant-the-replace-a-process-level-token-privilege) verfügen, und schließen Sie die entsprechende Konfiguration der Benutzerkontensteuerung ab, die unter [Konfigurieren von Dokumentendiensten“ beschrieben ](/help/forms/using/install-configure-document-services.md#disable-user-account-control-uac).
+Stellen Sie unter Windows sicher, dass die PDF Generator-Benutzer über die Berechtigung [Ersetzen eines Tokens auf Prozessebene](/help/forms/using/install-configure-document-services.md#grant-the-replace-a-process-level-token-privilege) verfügen, und schließen Sie die entsprechende Konfiguration der Benutzerkontensteuerung ab, die unter [Konfigurieren von Dokumentendiensten“ beschrieben &#x200B;](/help/forms/using/install-configure-document-services.md#disable-user-account-control-uac).
 
 ### OpenOffice-Konversionen {#openoffice-conversions}
 
 Konfigurieren Sie für jede OpenOffice-Instanz, die gleichzeitig ausgeführt werden kann, ein PDF Generator-Benutzerkonto. Installieren Sie OpenOffice an einem Speicherort, auf den jeder konfigurierte Benutzer zugreifen kann, und schließen Sie die ersten OpenOffice-Aktivierungsdialoge für jeden Benutzer.
 
-Bei UNIX-basierten Systemen müssen Sie die Anforderungen an die OpenOffice-Installation und die Benutzerberechtigungen in &quot;[ von Dokumenten-Services“ ](/help/forms/using/install-configure-document-services.md#preinstallationconfigurations).
+Bei UNIX-basierten Systemen müssen Sie die Anforderungen an die OpenOffice-Installation und die Benutzerberechtigungen in &quot;[&#x200B; von Dokumenten-Services“ &#x200B;](/help/forms/using/install-configure-document-services.md#preinstallationconfigurations).
 
 ## Einzelbenutzermodus unter Windows {#single-user-mode-on-windows}
 
