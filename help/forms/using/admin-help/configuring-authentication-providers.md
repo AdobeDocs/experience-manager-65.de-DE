@@ -157,7 +157,7 @@ Ohne Just-in-time-Bereitstellung ist die Authentifizierung nicht erfolgreich, we
 1. Zum Erstellen einer neuen Domain klicken Sie auf „Neue Unternehmens-Domain“ oder „Neue Hybrid-Domain“. Um eine vorhandene Domain zu bearbeiten, klicken Sie auf den Namen der Domain.
 1. Wählen Sie „Just-in-time-Bereitstellung aktivieren“.
 
-   ***Hinweis **: Wenn das Kontrollkästchen „Just-in-time-Bereitstellung aktivieren“ fehlt, klicken auf „Startseite“ > „Einstellungen“ > „User Management“ „Konfiguration“ > „Erweiterte Systemattribute“ und klicken Sie anschließend auf „Neu laden“.*
+   ***Hinweis &#x200B;**: Wenn das Kontrollkästchen „Just-in-time-Bereitstellung aktivieren“ fehlt, klicken auf „Startseite“ > „Einstellungen“ > „User Management“ „Konfiguration“ > „Erweiterte Systemattribute“ und klicken Sie anschließend auf „Neu laden“.*
 
 1. Fügen Sie Authentifizierungsanbieter hinzu. Wählen Sie beim Hinzufügen von Authentifizierungsanbietern auf dem Bildschirm „Neue Authentifizierung“ einen registrierten Identitätsersteller und einen Zuweisungsanbieter aus. (Siehe [Konfigurieren der Authentifizierungsanbieter](configuring-authentication-providers.md#configuring-authentication-providers).)
 1. Speichern Sie die Domain.

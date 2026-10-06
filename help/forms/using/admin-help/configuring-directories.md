@@ -230,7 +230,7 @@ Das LDAP-Protokoll bietet in der Form von Anforderungssteuerelementen eine Mögl
 >
 >In diesem Abschnitt wird die Verwendung des VLV-Steuerelements für den Sun ONE Directory Server beschrieben. Es kann jedoch jeder Verzeichnis-Server verwendet werden, der das VLV-Steuerelement unterstützt.
 
-1. Wählen Sie beim Konfigurieren des Verzeichnisses die Option „VLV-Steuerung (Virtuelle Listenansicht) aktivieren“ sowohl auf der Seite „Benutzereinstellungen“ als auch auf der Seite „Gruppeneinstellungen“ aus. Wenn Sie das Kontrollkästchen auswählen, müssen Sie außerdem einen Sortierfeldnamen in das Feld „Sortierfeldname“ eingeben. Der Standardwert ist „uid“. (Siehe [Hinzufügen von Verzeichnissen oder benutzerdefinierten SPIs ](configuring-directories.md#adding-directories-or-custom-spis) oder [Bearbeiten eines Verzeichnisses](configuring-directories.md#edit-a-directory).)
+1. Wählen Sie beim Konfigurieren des Verzeichnisses die Option „VLV-Steuerung (Virtuelle Listenansicht) aktivieren“ sowohl auf der Seite „Benutzereinstellungen“ als auch auf der Seite „Gruppeneinstellungen“ aus. Wenn Sie das Kontrollkästchen auswählen, müssen Sie außerdem einen Sortierfeldnamen in das Feld „Sortierfeldname“ eingeben. Der Standardwert ist „uid“. (Siehe [Hinzufügen von Verzeichnissen oder benutzerdefinierten SPIs &#x200B;](configuring-directories.md#adding-directories-or-custom-spis) oder [Bearbeiten eines Verzeichnisses](configuring-directories.md#edit-a-directory).)
 1. Verwenden Sie die Sun ONE-Administrationskonsole oder ein Befehlszeilenskript, um die LDAP-VLV-Einträge für Benutzende und Gruppen zu erstellen. Mithilfe eines Befehlszeilenskripts können Sie die LDIF-Beispieldateien für Benutzer und Gruppen verwenden. (Siehe [Konfigurieren des Sun ONE Directory-Servers für VLV](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv).)
 1. Stoppen Sie den Server und erstellen Sie den erforderlichen Index. (Siehe [Erstellen des Verzeichnis-Server-Index für VLV](configuring-directories.md#create-the-directory-server-index-for-vlv)).
 
@@ -277,7 +277,7 @@ Im Folgenden finden Sie eine Beispielskript-LDIF für VLV-Einträge für Persone
 
    >[!NOTE]
    >
-   >Als Konvention wird der vlvIndex-Eintragsname ebenfalls auf `lcuser` festgelegt, jedoch können Sie einen anderen Namen auswählen. Verwenden Sie denselben Namen wie im vlvindex-Tool. (Siehe [Ordnerserverindex für VLV erstellen ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
+   >Als Konvention wird der vlvIndex-Eintragsname ebenfalls auf `lcuser` festgelegt, jedoch können Sie einen anderen Namen auswählen. Verwenden Sie denselben Namen wie im vlvindex-Tool. (Siehe [Ordnerserverindex für VLV erstellen &#x200B;](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
 
 1. Erstellen Sie mit dem Tool `ldapmodify` im Funktionsumfang des Sun ONE-Servers einen ähnlichen Eintrag für Gruppen unter Verwendung des Basis-DN der jeweiligen Gruppe, des Suchfilters und des Sortierfeldes:
 
