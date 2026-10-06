@@ -1,6 +1,6 @@
 ---
 title: 'DB2&reg;-Datenbank: Einen Prozess wöchentlich ausführen'
-description: Erfahren Sie, wie Sie die Leistung Ihrer AEM Forms-DB2®-Datenbank verbessern können.
+description: Erfahren Sie, wie Sie die Leistung Ihrer AEM Forms DB2&reg;-Datenbank verbessern können.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 95%
-
+source-wordcount: '149'
+ht-degree: 85%
 ---
-
 # DB2®-Datenbank: Wöchentliche Ausführung eines Prozesses{#db-database-running-a-process-weekly}
 
 Wenn Ihre AEM Forms-DB2®-Datenbank langsam wird, kann die Ausführung des folgenden wöchentlichen Prozesses die Leistung verbessern:

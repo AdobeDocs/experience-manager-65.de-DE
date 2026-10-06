@@ -8,12 +8,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 source-git-commit: 3effd4fa686ac89421ffe74e52bf34830ddd776c
-workflow-type: ht
-source-wordcount: '1614'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '1637'
+ht-degree: 99%
 ---
-
 # Benutzerdefinierte eigenständige Installation{#custom-standalone-install}
 
 In diesem Abschnitt wird beschrieben, welche Optionen bei der Installation einer AEM-Standalone-Instanz verfügbar sind. Weitere Informationen zur Auswahl des Backend-Speichertyps nach einer AEM 6-Neuinstallation finden Sie unter [Speicherelemente](/help/sites-deploying/storage-elements-in-aem-6.md).
@@ -83,7 +81,7 @@ Dies stellt eine andere Möglichkeit dar, Bundles, Inhaltspakete oder Konfigurat
 Dies kann für viele Anwendungsfälle besonders interessant sein:
 
 * Während der Entwicklung kann es einfacher sein, etwas in das Dateisystem zu integrieren.
-* Wenn etwas schiefgeht, sind die Web-Konsole und das Repository nicht erreichbar. Hiermit können Sie zusätzliche Bundles in diesem Verzeichnis ablegen, die dann installiert werden sollten.
+* Wenn etwas schiefgeht, sind die Web-Konsole und das Repository nicht erreichbar. Hiermit können Sie zusätzliche Pakete in diesem Verzeichnis ablegen, die dann installiert werden sollten.
 * Der Ordner `crx-quickstart/install` kann erstellt werden, bevor der Schnellstart gestartet wird, und es können zusätzliche Pakete darin abgelegt werden.
 
 ## Installieren und Starten von Adobe Experience Manager als Windows-Dienst {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
@@ -124,7 +122,7 @@ Installieren und Starten von AEM als Windows-Dienst:
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
-1. Windows gibt an, dass der Dienst ausgeführt wird.  AEM wird gestartet und die ausführbare Datei „prunsrv“ wird im Task-Manager angezeigt. Navigieren Sie in Ihrem Webbrowser zu AEM, beispielsweise `https://localhost:4502`, um mit der Nutzung von AEM zu beginnen.
+1. Windows gibt an, dass der Dienst ausgeführt wird. AEM wird gestartet und die ausführbare Datei „prunsrv“ wird im Task-Manager angezeigt. Navigieren Sie in Ihrem Webbrowser zu AEM, beispielsweise `https://localhost:4502`, um mit der Nutzung von AEM zu beginnen.
 
    ![chlimage_1-13](assets/chlimage_1-13.png)
 
@@ -136,7 +134,7 @@ Installieren und Starten von AEM als Windows-Dienst:
 >
 >Wird AEM als Service installiert, müssen Sie über den Configuration Manager den absoluten Pfad für das Protokollverzeichnis unter `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` angegeben.
 
-Deinstallieren Sie den Dienst, indem Sie entweder in der Systemsteuerung unter **Dienste** auf **Beenden** klicken oder in einer Befehlszeile zum Ordner navigieren und `instsrv.bat -uninstall cq5` eingeben. Der Dienst wird in der Systemsteuerung unter **Dienste** aus der Liste entfernt oder verschwindet in der Eingabeaufforderung aus der Liste, wenn Sie `net start` eingeben.
+Deinstallieren Sie den Dienst, indem Sie entweder in der Systemsteuerung unter **Dienste** auf **Stoppen** klicken oder in einer Befehlszeile zum Ordner navigieren und `instsrv.bat -uninstall cq5` eingeben. Der Dienst wird in der Systemsteuerung unter **Dienste** aus der Liste entfernt oder verschwindet in der Eingabeaufforderung aus der Liste, wenn Sie `net start` eingeben.
 
 ## Neudefinieren des Speicherorts für das temporäre Arbeitsverzeichnis {#redefining-the-location-of-the-temporary-work-directory}
 
@@ -336,7 +334,7 @@ Obwohl es viele Möglichkeiten gibt, AEM WCM zu konfigurieren, sollten bestimmte
 Nachdem AEM WCM gestartet wurde, können Sie auch auf Folgendes zugreifen:
 
 * [CRXDE Lite](#accessing-crxde-lite) – für den Zugriff auf das Repository und seine Verwaltung
-* [Web-Konsole](#accessing-the-web-console) – zum Verwalten oder Konfigurieren der OSGi-Bundles (auch als OSGi-Konsole bezeichnet)
+* [Web-Konsole](#accessing-the-web-console) – zum Verwalten oder Konfigurieren der OSGi-Pakete (auch als OSGi-Konsole bezeichnet)
 
 ### Zugreifen auf CRXDE Lite {#accessing-crxde-lite}
 
@@ -353,7 +351,7 @@ Beispiel:
 
 #### Zugreifen auf die Web-Konsole {#accessing-the-web-console}
 
-Greifen Sie auf die Adobe CQ-Webkonsole zu, indem Sie auf dem Willkommensbildschirm **OSGi-Konsole** auswählen oder Ihren Browser öffnen und zu diesem Ziel navigieren.
+Greifen Sie auf die Adobe CQ-Web-Konsole zu, indem Sie auf dem Willkommensbildschirm **OSGi-Konsole** auswählen oder Ihren Browser öffnen und zu diesem Ziel navigieren.
 
 ```
  https://<host>:<port>/system/console

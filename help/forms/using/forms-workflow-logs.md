@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '293'
 ht-degree: 100%
-
 ---
-
 # Protokollierung in AEM Forms-Workflows{#logging-in-aem-forms-workflows}
 
 Die Forms Workflow-Schritte enthalten detaillierte Protokolle, mit denen Sie Probleme im Zusammenhang mit Workflows bequem beheben können. Aktivieren Sie die Debug-Protokollierung für AEM Forms-Workflows, um die Protokolle anzuzeigen.
@@ -81,7 +79,7 @@ Gehen Sie folgt vor, um die Debugging-Protokollierung für AEM Forms-Workflows z
 
 1. Wechseln Sie zum Konfigurations-Manager der AEM-Web-Konsole unter:
 
-   https://&#39;[server]:[port]&#39;/system/console/configMgr
+   https://'[server]:[port]'/system/console/configMgr
 
 1. Wählen Sie **[!UICONTROL Sling]** > **[!UICONTROL Protokollunterstützung]**.
 1. Wählen Sie **[!UICONTROL Neue Protokollierung hinzufügen]**.

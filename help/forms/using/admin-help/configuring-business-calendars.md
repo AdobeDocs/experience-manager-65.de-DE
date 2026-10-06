@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1901'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '1949'
+ht-degree: 89%
 ---
-
 # Konfigurieren von Geschäftskalendern {#configuring-business-calendars}
 
 *Geschäftskalender* definieren Geschäftstage und geschäftsfreie Tage (z. B. gesetzliche Feiertage, Wochenenden und Betriebsferien) für Ihre Organisation. Bei Verwendung von Geschäftskalendern überspringt AEM Forms geschäftsfreie Tage bei der Durchführung bestimmter Datumsberechnungen. In Workbench können Sie festlegen, ob Geschäftskalender für Ereignisse, die Benutzenden zugeordnet sind (wie Aufgabenerinnerungen, Termine und Eskalationen) oder für Aktionen, die Benutzenden nicht zugeordnet sind (wie z. B. Timer-Ereignisse und der Wait-Dienst), verwendet werden sollen.
@@ -24,7 +22,7 @@ Beispielsweise ist eine Aufgabenerinnerung so konfiguriert, dass sie drei Werkta
 
 >[!NOTE]
 >
->Bei der Berechnung von Daten und Uhrzeiten mithilfe von Geschäftskalendern verwendet AEM Forms das Datum und die Uhrzeit des Servers, auf dem es ausgeführt wird, und passt nicht den Unterschied zwischen Zeitzonen an. Wenn beispielsweise eine Aufgabenerinnerung um 10:00 Uhr auf einem Server geplant ist, der in London läuft, sich die Person, die die Erinnerung erhält, jedoch in New York City befindet, erhält die Person die Erinnerung um 5:00 Uhr Ortszeit.
+>Bei der Berechnung von Daten und Uhrzeiten mithilfe von Geschäftskalendern verwendet AEM Forms das Datum und die Uhrzeit des Servers, auf dem es ausgeführt wird, und passt nicht den Unterschied zwischen Zeitzonen an. Wenn beispielsweise eine Aufgabenerinnerung um 10:00 Uhr auf einem Server in London stattfinden soll, der Benutzer, der die Erinnerung erhält, sich jedoch in New York City befindet, würde der Benutzer die Erinnerung um 5:00 Uhr Ortszeit erhalten.
 
 ## Verwenden des Standardgeschäftskalenders {#using-the-default-business-calendar}
 
@@ -38,20 +36,20 @@ Wenn einige Personen in Ihrer Organisation unterschiedliche geschäftsfreie Tage
 
 1. Entscheiden Sie, wie Sie den entsprechenden Geschäftskalender mit einer Person verknüpfen. Es gibt zwei Möglichkeiten, einen Geschäftskalender mit einer Benutzerin bzw. einem Benutzer zu verknüpfen:
 
-   **Gruppenmitgliedschaft**: Ein Geschäftskalender kann Benutzenden auf Basis ihrer Gruppenmitgliedschaft zugewiesen werden. In diesem Fall verwenden alle Benutzenden der Gruppe denselben Geschäftskalender.
+   **Gruppenzugehörigkeit**: Ein Geschäftskalender kann Benutzenden auf Basis ihrer Gruppenzugehörigkeit zugewiesen werden. In diesem Fall verwenden alle Benutzenden der Gruppe denselben Geschäftskalender.
 
    Ist eine Person Mitglied in zwei verschiedenen Gruppen, die unterschiedlichen Geschäftskalendern zugeordnet sind, verwendet AEM Forms den ersten in den Suchergebnissen gefundenen Kalender. In diesem Fall sollten Sie die Verwendung von Geschäftskalenderschlüsseln erwägen, um Benutzende mit Geschäftskalendern zu verknüpfen.
 
    **Geschäftskalenderschlüssel**: Einem Benutzer kann ein Geschäftskalender auf Basis eines Geschäftskalenderschlüssels zugewiesen werden, wobei es sich um eine Einstellung handelt, die in User Management festgelegt wird. Anschließend ordnen Sie den Geschäftskalenderschlüssel einem Geschäftskalender im Forms-Workflow zu.
 
-    Die Methode zum Zuweisen von Geschäftskalenderschlüsseln zu Benutzern ist davon abhängig, ob eine Unternehmens-, eine lokale oder eine Hybrid-Domain verwendet wird. Detaillierte Informationen zum Einrichten von Domains finden Sie unter [Hinzufügen von Domains](/help/forms/using/admin-help/adding-domains.md#adding-domains). 
+   Die Methode zum Zuweisen von Geschäftskalenderschlüsseln zu Benutzern ist davon abhängig, ob eine Unternehmens-, eine lokale oder eine Hybrid-Domain verwendet wird. Detaillierte Informationen zum Einrichten von Domains finden Sie unter [Hinzufügen von Domains](/help/forms/using/admin-help/adding-domains.md#adding-domains).
 
-    Wenn Sie eine lokale oder Hybrid-Domain verwenden, werden Informationen zu Benutzern nur in der User Management-Datenbank gespeichert. Um den Geschäftskalenderschlüssel für diese Benutzenden festzulegen, geben Sie beim Hinzufügen oder Bearbeiten einer Person in der Benutzerverwaltung im Feld „Geschäftskalenderschlüssel“ eine Zeichenfolge ein. (Siehe [Hinzufügen und Konfigurieren von Benutzenden](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) Anschließend ordnen Sie die Geschäftskalenderschlüssel (die Zeichenfolgen) den Geschäftskalendern im Forms-Workflow zu. (Siehe [Zuordnen von Benutzenden und Gruppen zu einem Geschäftskalender](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Wenn Sie eine lokale oder Hybrid-Domain verwenden, werden Informationen zu Benutzern nur in der User Management-Datenbank gespeichert. Um den Geschäftskalenderschlüssel für diese Benutzenden festzulegen, geben Sie beim Hinzufügen oder Bearbeiten einer Person in der Benutzerverwaltung im Feld „Geschäftskalenderschlüssel“ eine Zeichenfolge ein. (Siehe [Hinzufügen und Konfigurieren von Benutzern](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) Anschließend ordnen Sie die Geschäftskalenderschlüssel (die Zeichenfolgen) Geschäftskalendern im Arbeitsablauf für Formulare zu. (Siehe [Zuordnen von Benutzenden und Gruppen zu einem Geschäftskalender](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
-    Wenn Sie eine Unternehmens-Domain verwenden, befinden sich Informationen zu Benutzern in einem Speichersystem von Drittanbietern wie etwa einem LDAP-Ordner, der von User Management mit der User Management-Datenbank synchronisiert wird. Dies ermöglicht Ihnen die Zuordnung eines Geschäftskalenderschlüssels zu einem Feld im LDAP-Ordner. Wenn beispielsweise jeder Benutzerdatensatz in Ihrem Ordner ein Feld „Land“ enthält und Sie Geschäftskalender auf Grundlage des Landes zuweisen möchten, in dem sich die Person befindet, geben Sie den Feldnamen von „Land“ im Feld „Geschäftskalenderschlüssel“ an, wenn Sie die Benutzereinstellungen für den Ordner angeben. (Siehe [Konfigurieren von Verzeichnissen](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) Anschließend können Sie die Geschäftskalenderschlüssel (die für das Feld „Land“ im LDAP-Verzeichnis definierten Werte) Geschäftskalendern im Forms-Workflow zuordnen. (Siehe [Zuordnen von Benutzenden und Gruppen zu einem Geschäftskalender](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Wenn Sie eine Unternehmens-Domain verwenden, befinden sich Informationen zu Benutzern in einem Speichersystem von Drittanbietern wie etwa einem LDAP-Ordner, der von User Management mit der User Management-Datenbank synchronisiert wird. Dies ermöglicht Ihnen die Zuordnung eines Geschäftskalenderschlüssels zu einem Feld im LDAP-Ordner. Wenn beispielsweise jeder Benutzereintrag in Ihrem Ordner ein Feld „Land“ enthält und Sie Geschäftskalender auf Grundlage des Landes zuweisen möchten, in dem sich die Person befindet, geben Sie den Feldnamen von „Land“ im Feld „Geschäftskalenderschlüssel“ an, wenn Sie die Benutzereinstellungen für den Ordner angeben. (Siehe [Konfigurieren von Verzeichnissen](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) Anschließend können Sie die Geschäftskalenderschlüssel (die für das Feld „Land“ im LDAP-Verzeichnis definierten Werte) Geschäftskalendern im Arbeitsablauf für Formulare zuordnen. (Siehe [Zuordnen von Benutzenden und Gruppen zu einem Geschäftskalender](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
 1. Definieren Sie im Forms-Workflow einen Kalender für jede Gruppe von Benutzenden, die dieselben geschäftsfreien Tage haben. (Siehe [Erstellen oder Aktualisieren eines Geschäftskalenders](configuring-business-calendars.md#create-or-update-a-business-calendar).)
-1. Ordnen Sie im Forms-Workflow die Geschäftskalenderschlüssel oder Gruppenmitgliedschaften für jeden Kalender zu. (Siehe [Zuordnen von Benutzenden und Gruppen zu einem Geschäftskalender](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+1. Ordnen Sie im Forms-Workflow die Geschäftskalenderschlüssel oder Gruppenzugehörigkeiten für jeden Kalender zu. (Siehe [Zuordnen von Benutzenden und Gruppen zu einem Geschäftskalender](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 1. In Workbench wählt die zuständige Person für die Prozessentwicklung, ob sie Geschäftskalender für Erinnerungen, Fristen und Eskalationen verwenden möchte. (Siehe [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
 
    Wenn die für die Prozessentwicklung zuständige Person Geschäftskalender verwendet, wählt AEM Forms den entsprechenden Geschäftskalender dynamisch anhand der Benutzerverwaltungseinstellung und der in der Administrationskonsole definierten Geschäftskalenderzuordnungen aus. Falls keine Zuordnungen vorhanden sind, wird der Standardkalender verwendet.
@@ -78,7 +76,7 @@ Wenn in Ihrer Organisation verschiedene Benutzergruppen mit unterschiedlichen ge
 
    Wenn Sie diese Option wählen, wird ein Ereignis, das vor dem angegebenen Zeitraum eintritt, an den Anfang des Zeitraums verschoben, und ein Ereignis, das nach dem Zeitraum eintritt, wird an die Anfangszeit des nächsten Geschäftstages verschoben.
 
-   Nehmen wir zum Beispiel an, dass einer Person an einem Dienstag um 2:00 Uhr morgens eine Aufgabe zugewiesen wird und die Erinnerung für diese Aufgabe auf zwei Arbeitstage eingestellt ist. Ohne Geschäftszeiten erfolgt die Erinnerung am Donnerstag um 2:00 Uhr morgens. Sind die Geschäftszeiten auf 8:00 Uhr bis 17:00 Uhr festgelegt, wird die Erinnerung auf Donnerstag 8:00 Uhr verlegt. Ohne Geschäftszeiten würde eine Erinnerung, wenn das Erinnerungsereignis am Dienstag um 18:00 Uhr erstellt wurde, am Donnerstag nach Feierabend erfolgen. Sind die Geschäftszeiten auf 8:00 Uhr bis 17:00 Uhr festgelegt, erfolgt die Erinnerung am Freitag um 8:00 Uhr morgens.
+   Angenommen, einem Benutzer wird eine Aufgabe an einem Dienstag um 2:00 Uhr zugewiesen und die Erinnerung für diese Aufgabe wird auf zwei Werktage festgelegt. Ohne Geschäftszeiten würde die Erinnerung am Donnerstag um 2:00 Uhr stattfinden. Wenn die Geschäftszeiten auf 8:00 bis 17:00 Uhr eingestellt sind, wird die Erinnerung auf 8:00 Uhr am Donnerstag verschoben. Wenn am Dienstag um 18:00 Uhr ein Erinnerungsereignis erstellt wurde, würde die Erinnerung ohne Geschäftszeiten am Donnerstag nach den Geschäftszeiten stattfinden. Wenn die Geschäftszeiten auf 8:00 bis 17:00 Uhr eingestellt sind, wird die Erinnerung am Freitag um 8:00 Uhr angezeigt.
 
 5. Doppelklicken Sie im Kalender auf der linken Seite auf alle weiteren geschäftsfreien Tage, wie z. B. Feiertage. Tage, die in der Vergangenheit liegen, können nicht ausgewählt werden. Die von Ihnen ausgewählten geschäftsfreien Tage werden in einer Liste auf der rechten Seite angezeigt, wobei das Datum zweimal pro Zeile angezeigt wird. Wählen Sie das linke Datum aus, um einen Namen oder eine Beschreibung für den geschäftsfreien Tag einzugeben.
 
@@ -99,7 +97,7 @@ Es gibt zwei Methoden, um einer Benutzerin oder einem Benutzer einen Geschäftsk
 
 ### Zuordnen von Geschäftskalendern zu Benutzenden auf der Grundlage von Geschäftskalenderschlüsseln {#associate-business-calendars-with-users-based-on-business-calendar-keys}
 
-1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Geschäftskalender“, und klicken Sie dann auf die Registerkarte „Zuordnung“.
+1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Workflow für Formulare“ > „Geschäftskalender“, und klicken Sie dann auf die Registerkarte „Zuordnung“.
 1. Wählen Sie in der Liste „Das System verwendet“ den Eintrag „User Manager-Geschäftskalenderschlüssel-Auflösung“ aus.
 1. Wählen Sie „User Manager-Geschäftskalenderschlüssel anzeigen“ aus. Eine Liste mit einem Satz eindeutiger Geschäftskalenderschlüssel, die in der Benutzerverwaltung definiert wurden, wird angezeigt.
 
@@ -112,7 +110,7 @@ Es gibt zwei Methoden, um einer Benutzerin oder einem Benutzer einen Geschäftsk
 
 ### Zuordnen von Geschäftskalendern zu Benutzenden und Gruppen auf der Grundlage von Verzeichnisdienstgruppen {#associate-business-calendars-with-users-and-groups-based-on-directory-service-groups}
 
-1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Geschäftskalender“, und klicken Sie dann auf die Registerkarte „Zuordnung“.
+1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Workflow für Formulare“ > „Geschäftskalender“, und klicken Sie dann auf die Registerkarte „Zuordnung“.
 1. Wählen Sie in der Liste „Das System verwendet“ den Eintrag „vom Verzeichnis-Server definierte Gruppen“ aus.
 1. Wählen Sie auf der Registerkarte „Zuordnung“ die Option „Verzeichnisdienstgruppen anzeigen“ aus. Eine Liste mit den Gruppen, die in der Benutzerverwaltung definiert wurden, wird angezeigt. (Siehe [Ordnereinstellungen](/help/forms/using/admin-help/configuring-directories.md#directory-settings).)
 
@@ -133,12 +131,12 @@ AEM Forms ermöglicht Ihnen das Exportieren und Importieren Ihrer Geschäftskale
 
 ### Exportieren von Geschäftskalendern {#export-business-calendars}
 
-1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Formular-Workflow“ > „Geschäftskalender“. 
+1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Formular-Workflow“ > „Geschäftskalender“.
 1. Klicken Sie auf „Exportieren“ und speichern Sie die XML-Datei.
 
 ### Importieren von Geschäftskalendern {#import-business-calendars}
 
-1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Formular-Workflow“ > „Geschäftskalender“. 
+1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Formular-Workflow“ > „Geschäftskalender“.
 1. Wählen Sie Importieren.
 1. Wählen Sie die XML-Datei aus, die die exportierten Geschäftskalender enthält, und klicken Sie auf „Öffnen“.
 

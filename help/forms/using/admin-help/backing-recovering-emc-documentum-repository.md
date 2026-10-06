@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '792'
 ht-degree: 98%
-
 ---
-
 # Sichern und Wiederherstellen des EMC Documentum-Repositorys {#backing-up-and-recovering-the-emc-documentum-repository}
 
 In diesem Abschnitt werden die Aufgaben zum Sichern und Wiederherstellen des EMC Documentum-Repositorys beschrieben, das für Ihre AEM Forms-Umgebung konfiguriert ist.
@@ -197,15 +195,15 @@ In diesem Abschnitt wird die Installation und Konfiguration der EMC NetWorker-So
 
    * Vollständige Datenbanksicherung (nsrnmddbf.bat):
 
-     `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U` `[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
+     `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
 
    * Inkrementelle Datenbanksicherung (nsrnmddbi.bat):
 
-     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U` `[username]` `-P` `[password]` `-l 1 -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
 
    * Datenbankprotokollsicherung (nsrnmddbl.bat):
 
-     `[NetWorker_database_module_root]` `-s` `<NetWorker_Server_Name>` `-U` `[username]` `-P` `[password]` `-l incr -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
 
      Dabei gilt:
 
@@ -256,7 +254,7 @@ Führen Sie vor der Wiederherstellung der AEM Forms-Daten die folgenden Aufgaben
 >
 >Für die Befehlsskripte ist der vollständige Pfad der Datei „nsrnmd_win.cfg“ erforderlich, die Sie unter [Vorbereiten der EMC Document Content Server-Sicherung und -Wiederherstellung](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery) erstellt haben.
 
-1. Beenden Sie den Docbase-Dienst, den Sie wiederherstellen.
+1. Stoppen Sie den Docbase-Dienst, den Sie wiederherstellen.
 1. Starten Sie das NetWorker User-Dienstprogramm für Ihr Datenbankmodul (z. B. *NetWorker User for SQL Server*).
 1. Klicken Sie auf das Tool zum Wiederherstellen und wählen Sie „Normal“ aus.
 1. Wählen Sie auf der linken Bildschirmseite die Datenbank für Ihren Docbase-Dienst aus und klicken Sie in der Symbolleiste auf „Start“.

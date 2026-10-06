@@ -12,11 +12,9 @@ feature: Security
 role: Admin
 source-git-commit: 9b766fe6e253782be3bc47849b4857216274ae20
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 100%
-
+source-wordcount: '871'
+ht-degree: 97%
 ---
-
 # SSL/TLS By Default{#ssl-tls-by-default}
 
 Im Bestreben, die Sicherheit von AEM kontinuierlich weiter zu verbessern, hat Adobe eine Funktion namens „SSL By Default“ (SSL als Standard) eingeführt. Der Zweck besteht darin, die Verwendung von HTTPS für die Verbindung mit AEM-Instanzen zu fördern.
@@ -236,7 +234,7 @@ Sie können dem Servlet eine Kette von Zertifikaten senden, indem Sie den Parame
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-Stellen Sie nach Ausführung des Befehls sicher, dass alle Zertifikate an den KeyStore gesendet wurden. Überprüfen Sie die **Keystore-Einträge** von:
+Stellen Sie nach Ausführung des Befehls sicher, dass alle Zertifikate an den KeyStore gesendet wurden. Überprüfen Sie die **Keystore**-Einträge von:
 [http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)
 
 ### Aktivieren einer TLS 1.3-Verbindung {#enabling-tls-connection}

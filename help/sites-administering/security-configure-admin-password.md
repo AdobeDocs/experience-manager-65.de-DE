@@ -11,11 +11,9 @@ feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '306'
 ht-degree: 100%
-
 ---
-
 # Konfigurieren des Administratorkennworts bei der Installation{#configure-the-admin-password-on-installation}
 
 ## Überblick {#overview}

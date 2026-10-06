@@ -10,9 +10,7 @@ source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 100%
-
 ---
-
 # Transaktionsberichte für AEM Forms {#transaction-reports-overview}
 
 Mit einem Transaktionsbericht in AEM Forms können Sie alle Transaktionen seit einem festgelegten Datum in Ihrer AEM Forms-Bereitstellung überwachen. Diese Funktion dient dazu, Informationen über die Formularnutzung zu erhalten und so geschäftlichen Stakeholdern dabei zu helfen, ein grundlegendes Verständnis der digitalen Verarbeitungsvolumen zu erhalten. Transaktionen umfassen in diesem Zusammenhang verschiedene Aktivitäten wie:

@@ -1,21 +1,21 @@
 ---
 title: Erstellen von Mobile Apps
 description: Auf dieser Seite finden Sie einen vollständigen Artikel, in dem Schritt für Schritt beschrieben wird, wie Sie eine Mobile App mit Code erstellen, der von GitHub verfügbar ist. Erstellen Sie Ihre Anwendung für die Installation auf einem Gerät oder Simulator zum Testen oder Veröffentlichen in App Stores. Sie können Anwendungen lokal mit der PhoneGap-Befehlszeilenschnittstelle oder in der Cloud mit PhoneGap Build erstellen.
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
+
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
 solution: Experience Manager
 feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1053'
 ht-degree: 1%
-
 ---
-
 # Erstellen von Mobile Apps{#building-mobile-applications}
 
 {{ue-over-mobile}}
@@ -24,7 +24,7 @@ Erstellen Sie Ihre Anwendung für die Installation auf einem Gerät oder Simulat
 
 Einen vollständigen Artikel mit einer schrittweisen Anleitung zum Erstellen einer Mobile App mit Code von GitHub finden Sie [hier](https://helpx.adobe.com/experience-manager/using/aem62_mobile.html).
 
-## Verschieben der Anwendung in die Publish-Instanz {#moving-the-application-to-the-publish-instance}
+## Verschieben der Anwendung in die Veröffentlichungsinstanz {#moving-the-application-to-the-publish-instance}
 
 Verschieben Sie Anwendungsdateien in die Veröffentlichungsinstanz, damit Sie den installierten Instanzen der Mobile App Inhaltsaktualisierungen bereitstellen und die App mit den veröffentlichten Inhalten erstellen können. Anwendungen bestehen aus zwei Knotenverzweigungen im Repository:
 
@@ -56,7 +56,7 @@ Kompilieren Sie die PhoneGap-Anwendung auf Ihrem Computer mithilfe der PhoneGap-
 
 Um mit der PhoneGap-CLI zu erstellen, müssen Sie Node.js und das PhoneGap-Client-Dienstprogramm installieren. Sie benötigen eine Internetverbindung, um das folgende Verfahren durchzuführen.
 
-1. Herunterladen und Installieren von [Node.js](https://nodejs.org/de).
+1. Herunterladen und Installieren von [Node.js](https://nodejs.org/en).
 1. Öffnen Sie ein Terminal oder eine Eingabeaufforderung und geben Sie den folgenden Knotenbefehl ein, um das PhoneGap-Dienstprogramm zu installieren:
 
    ```shell
@@ -125,24 +125,24 @@ Kompilieren und installieren Sie die Anwendung über die PhoneGap-CLI. Informati
 
 ## Erstellen mit PhoneGap Build {#building-using-phonegap-build}
 
-Verwenden Sie den PhoneGap-Cloud-Service, um Ihre App zu erstellen. Um dieses Verfahren durchzuführen, müssen Sie zunächst eine PhoneGap Build-Konfiguration erstellen.
+Verwenden Sie den PhoneGap-Cloud-Service, um Ihre App zu erstellen. Um dieses Verfahren durchzuführen, müssen Sie zunächst eine PhoneGap-Build-Konfiguration erstellen.
 
-### Herstellen einer Verbindung zu PhoneGap Build {#connecting-to-phonegap-build}
+### Herstellen einer Verbindung mit PhoneGap Build {#connecting-to-phonegap-build}
 
-Erstellen Sie eine PhoneGap Build-Konfiguration, damit Sie die PhoneGap Build-Services von AEM aus verwenden können. Geben Sie den Benutzernamen und das Kennwort des PhoneGap Build-Kontos an, das Sie zum Erstellen Ihrer Mobile Apps verwenden werden.
+Erstellen Sie eine PhoneGap-Build-Konfiguration, damit Sie die PhoneGap-Build-Services von AEM aus verwenden können. Geben Sie den Benutzernamen und das Passwort des PhoneGap Build-Kontos an, das Sie zum Erstellen Ihrer Mobile Apps verwenden werden.
 
 1. Öffnen Sie die Seite Tools . ([http://localhost:4502/tools.html](http://localhost:4502/tools.html)).
-1. Klicken Sie im Bereich CQ-Vorgänge auf Cloud Service.
+1. Klicken Sie im Bereich CQ-Vorgänge auf Cloud Services.
 1. Klicken Sie auf den Link Jetzt konfigurieren für PhoneGap Build.
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
 1. Geben Sie im Dialogfeld Konfiguration erstellen einen Wert für die Eigenschaft Titel ein. Standardmäßig wird der Wert der Name-Eigenschaft aus dem Titel abgeleitet, Sie können jedoch einen Namen eingeben. Klicken Sie auf „Erstellen“.
-1. Geben Sie im Dialogfeld &quot;PhoneGap Build-Konfiguration“ Ihren PhoneGap Build-Benutzernamen und Ihr Kennwort ein und klicken Sie auf „OK“.
+1. Geben Sie im Dialogfeld PhoneGap-Build-Konfiguration Ihren Benutzernamen und Ihr Kennwort für PhoneGap Build ein und klicken Sie auf OK.
 
 ### Verwenden von PhoneGap Build {#using-phonegap-build}
 
-Senden Sie die Anwendungsressourcen zur Kompilierung für die verschiedenen mobilen Plattformen an PhoneGap Build.
+Senden Sie Ihre Anwendungsressourcen an PhoneGap Build, um sie für die verschiedenen mobilen Plattformen zu kompilieren.
 
 1. Öffnen Sie auf der Seite „Mobile Apps“ Ihre Mobile App. ([http://localhost:4502/mobile.html/content/phonegap](http://localhost:4502/mobile.html/content/phonegap))
 1. (Optional) Um das Programm für vollständige Installationen zu erstellen, wählen Sie das Programm aus und klicken Sie auf das Symbol Cache löschen .
@@ -159,9 +159,9 @@ Senden Sie die Anwendungsressourcen zur Kompilierung für die verschiedenen mobi
 
    **Hinweis:** Die Beta-Version von AEM Beta erstellt keine Posteingangsbenachrichtigung, wenn der Build erfolgreich abgeschlossen wurde.
 
-1. Klicken Sie im Dialogfeld Erfolg auf PhoneGap Build , um die Seite Adobe PhoneGap Build unter `https://build.phonegap.com/apps` zu öffnen. Wenn Sie darauf warten, dass Ihre App angezeigt wird, können Sie den PhoneGap Build-Status unter `https://status.build.phonegap.com/` überprüfen.
+1. Klicken Sie im Dialogfeld Erfolg auf PhoneGap-Build , um die Adobe PhoneGap-Build-Seite unter `https://build.phonegap.com/apps` zu öffnen. Wenn Sie darauf warten, dass Ihre App angezeigt wird, können Sie den PhoneGap-Build-Status unter `https://status.build.phonegap.com/` überprüfen.
 
-   Informationen zum Installieren des Builds finden Sie in der [PhoneGap Build-Dokumentation](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
+   Informationen zur Installation des Builds finden Sie unter [PhoneGap-Build-Dokumentation](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
 
    >[!NOTE]
    >

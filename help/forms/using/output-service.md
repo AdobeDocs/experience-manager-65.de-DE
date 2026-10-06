@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '519'
 ht-degree: 100%
-
 ---
-
 # Ausgabe-Service{#output-service}
 
 ## Übersicht {#overview}
@@ -47,11 +45,11 @@ Der Vorgang `generatePDFOutput` kann als Eingabe auch ein XFA-basiertes PDF-Form
 
 ## Generieren nicht interaktiver Formulardokumente {#generating-non-interactive-form-documents}
 
-Angenommen, Sie haben eine oder mehrere Vorlagen und für jede Vorlage mehrere Datensätze mit XML-Daten.
+Angenommen, Sie haben eine oder mehrere Vorlagen und für jede Vorlage mehrere Einträge mit XML-Daten.
 
-In diesem Fall können Sie mit den Vorgängen `generatePDFOutputBatch` und `generatePrintedOutputBatch` des Output-Dienstes für jeden Datensatz ein Druckdokument erstellen.
+In diesem Fall können Sie mit den Vorgängen `generatePDFOutputBatch` und `generatePrintedOutputBatch` des Output-Dienstes für jeden Eintrag ein Druckdokument erstellen.
 
-Sie können die Datensätze auch in einem einzigen Dokument zusammenfassen. Beide Vorgänge erfordern vier Parameter.
+Sie können die Einträge auch in einem einzigen Dokument zusammenfassen. Beide Vorgänge erfordern vier Parameter.
 
 Der erste Parameter ist eine Zuordnung, die eine beliebige Zeichenfolge als Schlüssel und den Namen der Vorlagendatei als Wert enthält.
 
@@ -61,6 +59,6 @@ Der dritte Parameter für `generatePDFOutputBatch` oder `generatePrintedOutputBa
 
 Die Parametertypen sind die gleichen wie die Typen der Parameter für die Vorgänge `generatePDFOutput` und `generatePrintedOutput` und haben die gleiche Auswirkung.
 
-Der vierte Parameter ist vom Typ `BatchOptions`, mit dem Sie angeben, ob für jeden Datensatz eine eigene Datei erzeugt werden kann. Der Standardwert dieses Parameters ist „false“.
+Der vierte Parameter ist vom Typ `BatchOptions`, mit dem Sie angeben, ob für jeden Eintrag eine eigene Datei erzeugt werden kann. Der Standardwert dieses Parameters ist „false“.
 
 Sowohl `generatePrintedOutputBatch` als auch `generatePDFOutputBatch` geben einen Wert vom Typ `BatchResult` zurück. Der Wert enthält eine Liste der generierten Dokumente. Er enthält außerdem ein Metadatendokument im XML-Format, das Informationen zu jedem generierten Dokument enthält.

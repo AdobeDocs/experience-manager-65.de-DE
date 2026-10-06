@@ -11,11 +11,9 @@ feature: Document Security
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '172'
 ht-degree: 100%
-
 ---
-
 # Konfigurieren von SSL unter Windows Vista {#configuring-ssl-on-windows-vista}
 
 Zum Konfigurieren von SSL unter Windows Vista™ benötigen Sie ein SSL-Zertifikat mit RSA-Schlüsseln zur Authentifizierung. Sie können das Java-Keytool zum Erstellen des Zertifikats verwenden.

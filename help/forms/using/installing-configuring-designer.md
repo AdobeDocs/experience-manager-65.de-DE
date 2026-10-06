@@ -11,12 +11,10 @@ feature: Forms Designer,Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 8f14518117b3aff1cdb2e033fbfe40d0a903d53f
-workflow-type: ht
-source-wordcount: '826'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 98%
 ---
-
 # Designer installieren und konfigurieren{#installing-and-configuring-designer}
 
 ## Voraussetzungen {#pre-requisites}
@@ -39,7 +37,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->* Die 64-Bit-Version von Designer wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt. 
+>* Die 64-Bit-Version von Designer wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt.
 >* Die 32-Bit-Version von Designer wird seit der Veröffentlichung von [AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) nicht mehr unterstützt.
 > * Die unterstützten Plattformen für Forms Designer sind auf die von AEM Forms unterstützten Plattformen ausgerichtet. Weitere Informationen zu den unterstützten Plattformen für Forms Designer finden Sie [hier](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
@@ -56,7 +54,7 @@ Designer ist als eigenständiges Installationsprogramm sowie als Teil von WorkBe
    > 
    >* Die 32-Bit-Version von Forms Designer wird voraussichtlich ab AEM 6.5 Forms Service Packs 20 (6.5.20.0) nicht mehr unterstützt. Adobe empfiehlt ein Upgrade auf die 64-Bit-Version von Forms Designer.
    >* Die 64-Bit-Version von Forms Designer ist nur für AEM 6.5 Forms Service Packs 19 (6.5.19.0) oder höher verfügbar.
-   >* Ab Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0) umfasst die Version von Forms Designer auch die Version des Service Packs. Beispielsweise ist 6.5.15.20221112.1.0 die Versionsnummer für Service Pack 15. Hier ist 6.5.15 die Version des Service Packs.
+   >* Ab Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0) umfasst die Version von Forms Designer auch die Version des Service Packs. Für Service Pack 15 ist die Versionsnummer beispielsweise 6.5.15.20221112.1.0. In diesem Beispiel ist 6.5.15 die Service Pack-Version.
 
 1. Starten Sie das Installationsprogramm für AEM Forms Designer, indem Sie auf die Datei „setup.exe“ doppelklicken.
 1. Fahren Sie fort und geben Sie Ihre Details und die Seriennummer auf dem Bildschirm „Personalisierung“ an.
@@ -112,18 +110,18 @@ Wenn Sie ein eigenständiges Installationsprogramm für AEM Forms Designer verwe
 ## Häufig gestellte Fragen {#fandq}
 
 * **Können Benutzerinnen und Benutzer direkt auf die 64-Bit-Version von Designer aktualisieren oder sie installieren?**
-   * Ja, Benutzerinnen und Benutzer können direkt auf die 64-Bit-Version von Designer aktualisieren oder sie installieren. Zur Aktualisierung installieren Sie das vollständige [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) Designer-Installationsprogramm und wenden Sie darüber die nachfolgende Designer-Patch-Version an.
+  * Ja, Benutzerinnen und Benutzer können direkt auf die 64-Bit-Version von Designer aktualisieren oder sie installieren. Zur Aktualisierung installieren Sie das vollständige [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) Designer-Installationsprogramm und wenden Sie darüber die nachfolgende Designer-Patch-Version an.
 
-     >[!NOTE]
-     > Deinstallieren Sie vor dem Upgrade auf die 64-Bit-Version von Designer zunächst die 32-Bit-Version, sofern diese vorhanden ist.
+    >[!NOTE]
+    > Deinstallieren Sie vor dem Upgrade auf die 64-Bit-Version von Designer zunächst die 32-Bit-Version, sofern diese vorhanden ist.
 
 * **Können Benutzerinnen und Benutzer sowohl 32-Bit als auch 64-Bit auf ihrem System installiert lassen?**
-   * Nein, 32-Bit- und 64-Bit-Installationen funktionieren nicht auf derselben Maschine. Es kann nur entweder ein 32-Bit- oder ein 64-Bit-Designer installiert sein.
+  * Nein, 32-Bit- und 64-Bit-Installationen funktionieren nicht auf derselben Maschine. Es kann nur entweder ein 32-Bit- oder ein 64-Bit-Designer installiert sein.
 
 * **Wie überprüfe ich, ob eine Benutzerin oder ein Benutzer den 64-Bit- oder den 32-Bit-Designer verwendet?**
-   * Es gibt zwei Möglichkeiten, die Version von Forms Designer zu überprüfen:
+  * Es gibt zwei Möglichkeiten, die Version von Forms Designer zu überprüfen:
 
-      1. Öffnen Sie Designer, gehen Sie zu „Hilfe“ und klicken Sie auf „Über Designer“. Dort finden Sie Informationen zur Designer-Version sowie die Bit-Informationen. Beispielsweise sehen Sie am Ende der Version den Zusatz „64 Bit“, wie hier gezeigt:
-         `6.5.21.20240522.1.161 | 64 bit`
-      1. Öffnen Sie Designer. Oben links sehen Sie ein Markensymbol, das 64-Bit-Informationen und den Produktnamen enthält.
+    1. Öffnen Sie Designer, gehen Sie zu „Hilfe“ und klicken Sie auf „Über Designer“. Dort finden Sie Informationen zur Designer-Version sowie die Bit-Informationen. Beispielsweise sehen Sie am Ende der Version den Zusatz „64 Bit“, wie hier gezeigt:
+       `6.5.21.20240522.1.161 | 64 bit`
+    1. Öffnen Sie Designer. Oben links sehen Sie ein Markensymbol, das 64-Bit-Informationen und den Produktnamen enthält.
 
