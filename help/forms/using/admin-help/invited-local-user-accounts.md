@@ -1,21 +1,23 @@
 ---
 title: Verwalten der Konten eingeladener und lokaler Benutzer
+
 description: Mithilfe der Dokumentensicherheit können Sie nach eingeladenen und lokalen Benutzerkonten suchen und diese anzeigen, bearbeiten, sperren, entsperren oder löschen.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: Document Security
 exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1208'
+workflow-type: tm+mt
+source-wordcount: '1211'
 ht-degree: 100%
-
 ---
-
 # Verwalten der Konten eingeladener und lokaler Benutzer {#managing-invited-and-local-user-accounts}
 
 >[!NOTE]
@@ -37,7 +39,7 @@ Sie können Registrierungs-E-Mails auch manuell an eingeladene Benutzende senden
 
 ## Hinzufügen von eingeladenen Benutzenden {#add-an-invited-user}
 
-Sie können ein oder mehrere eingeladene Benutzerkonten gleichzeitig zur Dokumentensicherheit hinzufügen. Um ein eingeladenes Benutzerkonto hinzuzufügen, benötigen Sie die E-Mail-Adresse der Person. Wenn Sie Benutzende hinzufügen, sendet die Dokumentensicherheit eine Registrierungs-E-Mail, die die Benutzenden zur Registrierung einlädt. 
+Sie können ein oder mehrere eingeladene Benutzerkonten gleichzeitig zur Dokumentensicherheit hinzufügen. Um ein eingeladenes Benutzerkonto hinzuzufügen, benötigen Sie die E-Mail-Adresse der Person. Wenn Sie Benutzende hinzufügen, sendet die Dokumentensicherheit eine Registrierungs-E-Mail, die die Benutzenden zur Registrierung einlädt.
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Document Security“ > „Konfiguration“ > „Eingeladene und lokale Benutzer“ und dann auf die Registerkarte „Neuen Benutzer einladen“.
 1. Geben Sie die E-Mail-Adressen der Benutzenden ein, die Sie einladen möchten. Geben Sie mehrere Adressen in eine Zeile getrennt durch Kommas ein.
@@ -132,6 +134,6 @@ Sie können Benutzende einfacher finden, indem Sie die Benutzerliste nach Spalte
 * Ein nach oben zeigendes Dreieck gibt eine aufsteigende Reihenfolge an.
 * Ein nach unten zeigendes Dreieck gibt eine absteigende Reihenfolge an.
 
-   1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Document Security“ > „Eingeladene und lokale Benutzer“.
-   1. Um eingeladene Benutzende zu sortieren, klicken Sie auf die Registerkarte „Eingeladene Benutzer“ und anschließend auf die gewünschte Spaltenüberschrift.
-   1. Um lokale Benutzende zu sortieren, klicken Sie auf die Registerkarte „Lokale Benutzer“ und anschließend auf die gewünschte Spaltenüberschrift.
+  1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Document Security“ > „Eingeladene und lokale Benutzer“.
+  1. Um eingeladene Benutzende zu sortieren, klicken Sie auf die Registerkarte „Eingeladene Benutzer“ und anschließend auf die gewünschte Spaltenüberschrift.
+  1. Um lokale Benutzende zu sortieren, klicken Sie auf die Registerkarte „Lokale Benutzer“ und anschließend auf die gewünschte Spaltenüberschrift.

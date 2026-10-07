@@ -8,11 +8,9 @@ exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1382'
-ht-degree: 100%
-
+source-wordcount: '1473'
+ht-degree: 99%
 ---
-
 # Verwalten von ebenenübergreifenden und mehrseitigen Assets {#managing-compound-assets}
 
 [!DNL Adobe Experience Manager Assets] kann erkennen, ob eine hochgeladene Datei Referenzen zu Assets enthält, die bereits im Repository vorhanden sind. Diese Funktion ist nur für unterstützte Dateiformate verfügbar. Wenn das hochgeladene Asset Referenzen zu [!DNL Experience Manager]-Assets enthält, wird eine bidirektionale Verknüpfung zwischen dem hochgeladenen Asset und den referenzierten Assets erstellt.
@@ -65,7 +63,7 @@ Dieses Verfahren weist Ähnlichkeiten mit dem [Hinzufügen digitaler Assets als 
 ### Erstellen von Referenzen zu Assets durch Exportieren einer ZIP-Datei {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. Führen Sie die Schritte in [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md) aus, um einen neuen Workflow zu erstellen.
-1. Exportieren Sie das Dokument mit der [Paketfunktion](https://helpx.adobe.com/de/indesign/how-to/save-share-projects.html) von [!DNL Adobe InDesign]. [!DNL Adobe InDesign] kann ein Dokument und die verknüpften Assets als Paket exportieren. In diesem Fall enthält der exportierte Ordner einen `Links`-Ordner, der Unter-Assets in der [!DNL InDesign]-Datei enthält. Der `Links`-Ordner befindet sich im selben Ordner wie die INDD-Datei.
+1. Exportieren Sie das Dokument mit der [Paketfunktion](https://helpx.adobe.com/indesign/how-to/save-share-projects.html) von [!DNL Adobe InDesign]. [!DNL Adobe InDesign] kann ein Dokument und die verknüpften Assets als Paket exportieren. In diesem Fall enthält der exportierte Ordner einen `Links`-Ordner, der Unter-Assets in der [!DNL InDesign]-Datei enthält. Der `Links`-Ordner befindet sich im selben Ordner wie die INDD-Datei.
 1. Erstellen Sie eine ZIP-Datei und laden Sie sie in das [!DNL Experience Manager]-Repository hoch.
 1. Starten Sie den `Unarchiver`-Workflow.
 1. Wenn der Workflow abgeschlossen ist, werden die Verweise im Links-Ordner automatisch als Unter-Assets referenziert. Rufen Sie eine Liste der referenzierten Assets auf, indem Sie zur Asset-Detailseite des [!DNL InDesign]-Assets navigieren und die [Seitenleiste](/help/sites-authoring/basic-handling.md#rail-selector) schließen.
@@ -100,8 +98,8 @@ Führen Sie einen der folgenden Schritte aus, um die Assets zu generieren:
 * Neue Assets: Der Workflow [!UICONTROL DAM-Update-Asset] wird für jedes neue Asset ausgeführt, das in [!DNL Experience Manager] hochgeladen wird. Für neue mehrseitige Assets werden automatisch Unter-Assets generiert.
 * Vorhandene mehrseitige Assets: Führen Sie den Workflow [!UICONTROL DAM-Update-Asset] im Anschluss an einen der folgenden Schritte aus:
 
-   * Wählen Sie ein Asset aus und klicken Sie auf [!UICONTROL Zeitleiste], um den linken Bereich zu öffnen. Sie können auch den Tastaturbefehl `alt + 3` verwenden. Klicken Sie auf [!UICONTROL Workflow starten], wählen Sie [!UICONTROL DAM-Update-Asset] aus, klicken Sie auf [!UICONTROL Starten] und anschließend auf [!UICONTROL Fortfahren].
-   * Wählen Sie ein Asset aus und klicken Sie auf der Symbolleiste auf [!UICONTROL Erstellen] > [!UICONTROL Workflow]. Wählen Sie im Popup-Dialogfeld den Workflow [!UICONTROL DAM-Update-Asset] aus, klicken Sie auf [!UICONTROL Starten] und dann auf [!UICONTROL Fortfahren].
+  * Wählen Sie ein Asset aus und klicken Sie auf [!UICONTROL Timeline], um den linken Bereich zu öffnen. Sie können auch den Tastaturbefehl `alt + 3` verwenden. Klicken Sie auf [!UICONTROL Workflow starten], wählen Sie [!UICONTROL DAM-Update-Asset] aus, klicken Sie auf [!UICONTROL Starten] und anschließend auf [!UICONTROL Fortfahren].
+  * Wählen Sie ein Asset aus und klicken Sie auf der Symbolleiste auf [!UICONTROL Erstellen] > [!UICONTROL Workflow]. Wählen Sie im Popup-Dialogfeld den Workflow [!UICONTROL DAM-Update-Asset] aus, klicken Sie auf [!UICONTROL Starten] und dann auf [!UICONTROL Fortfahren].
 
 Führen Sie speziell für Microsoft Word-Dokumente den Workflow **[!UICONTROL DAM-Analyse von Word-Dokumenten]** aus. Er generiert eine `cq:Page`-Komponente aus dem Inhalt des Microsoft Word-Dokuments. Die `cq:Page`-Komponente verweist auf die aus dem Dokument extrahierten Bilder. Diese Bilder werden auch dann extrahiert, wenn die Erstellung von Unter-Assets deaktiviert ist.
 
@@ -115,7 +113,7 @@ Die Unter-Assets werden nur angezeigt, wenn sie generiert wurden und für das au
 
 ![Anzeigen von Unter-Assets für ein mehrseitiges Asset](assets/view_subassets_simulation.gif)
 
-## Anzeigen von Seiten einer mehrseitigen Datei  {#view-pages-of-a-multi-page-file}
+## Anzeigen von Seiten einer mehrseitigen Datei {#view-pages-of-a-multi-page-file}
 
 Sie können eine mehrseitige Datei, z. B. eine PDF-, INDD-, PPT-, PPTX- oder AI-Datei, mithilfe des Seiten-Viewers von [!DNL Experience Manager Assets] anzeigen. Öffnen Sie ein mehrseitiges Asset und klicken Sie links oben auf der Seite auf **[!UICONTROL Seiten anzeigen]**. Der daraufhin geöffnete Seiten-Viewer zeigt die Seiten des Assets und Steuerelemente zum Durchsuchen und Zoomen der einzelnen Seiten an.
 
@@ -133,7 +131,7 @@ Die folgenden Optionen sind auf der Symbolleiste, in der linken Leiste und in de
 
 * Die Option **[!UICONTROL Seitenübersicht]** zeigt alle Unter-Assets gleichzeitig an.
 
-* Nachdem auf ![Option zum Öffnen der linken Leiste](assets/do-not-localize/aem_leftrail_contentonly.png) geklickt wurde, zeigt die Option **[!UICONTROL Zeitleiste]** in der linken Leiste den Aktivitäts-Stream für die Datei an.
+* Nachdem auf ![Option zum Öffnen der linken Leiste](assets/do-not-localize/aem_leftrail_contentonly.png) geklickt wurde, zeigt die Option **[!UICONTROL Timeline]** in der linken Leiste den Aktivitäts-Stream für die Datei an.
 
 ## Best Practices und Einschränkungen {#best-practice-limitation-tips}
 

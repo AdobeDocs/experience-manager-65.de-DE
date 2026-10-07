@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 100%
-
+source-wordcount: '1034'
+ht-degree: 94%
 ---
-
 # Repository-Neustrukturierung für AEM Communities in 6.5 {#repository-restructuring-for-aem-communities-in}
 
 Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die auf AEM 6.4 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Neustrukturierungen einzuschätzen, die sich auf AEM Communities auswirken. Einige Änderungen erfordern einen Arbeitsaufwand während der Aktualisierung auf AEM 6.5, während andere bis zu einer zukünftigen Aktualisierung verschoben werden können.
@@ -119,7 +117,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
   </tr>
   <tr>
    <td><strong>Neue Speicherorte</strong></td>
-   <td><p><strong>Badge-Regeln:</strong></p> <p><code>/libs/settings/community/badging</code></p> <p><strong>Badge-Bilder: </strong></p> <p>Für Standardbilder: <code>/etc/community/badging/images are moved to /libs/community/badging/images</code></p> <p>Für benutzerdefinierte Bilder: <code>/content/community/badging/images</code></p> <p> </p> </td>
+   <td><p><strong>Badge-Regeln:</strong></p> <p><code>/libs/settings/community/badging</code></p> <p><strong>Badge-Bilder:</strong></p> <p>Für Standardbilder: <code>/etc/community/badging/images are moved to /libs/community/badging/images</code></p> <p>Für benutzerdefinierte Bilder: <code>/content/community/badging/images</code></p> <p> </p> </td>
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
@@ -185,7 +183,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
     <ol>
      <li>Migrieren Sie vorhandene Konfigurationen im bisherigen Speicherort zum neuen Speicherort.
       <ol>
-       <li>Erstellen Sie über die AEM-Authoring-Benutzeroberfläche unter <strong>Tools &gt; Cloud-Services &gt; Konfiguration zur Anmeldung über Facebook</strong> manuell neue Konfigurationen zur Anmeldung über Facebook.<br /> oder <br /> </li>
+       <li>Erstellen Sie neue Konfigurationen für die Anmeldung über die Authoring-Benutzeroberfläche von AEM manuell unter <strong>Tools &gt; Cloud Services &gt; Konfiguration der Anmeldung über Facebook</strong>.<br /> oder <br /> </li>
        <li>Kopieren Sie alle neuen Facebook-Cloud-Konfigurationen vom bisherigen Speicherort an den entsprechenden neuen Speicherort unter <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Aktualisieren Sie jedes Stammverzeichnis der AEM Communities-Site, um auf die neue Konfiguration zur Anmeldung über Facebook zu verweisen, indem Sie die Eigenschaft <code>[cq:Page]/jcr:content@cq:conf</code> auf den absoluten Pfad des neuen Speicherorts festlegen.</li>
@@ -241,7 +239,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
     <ol>
      <li>Migrieren Sie vorhandene Konfigurationen im bisherigen Speicherort zum neuen Speicherort.
       <ol>
-       <li>Erstellen Sie über die AEM-Authoring-Benutzeroberfläche unter <strong>Tools &gt; Cloud-Services &gt; Konfiguration zur Anmeldung über Pinterest</strong> manuell neue Konfigurationen zur Anmeldung über Pinterest.<br /> oder</li>
+       <li>Erstellen Sie neue Konfigurationen für die Anmeldung über die Authoring-Benutzeroberfläche von AEM manuell unter <strong>Tools &gt; Cloud Services &gt; Konfiguration der Anmeldung über Pinterest Social</strong>.<br /> oder</li>
        <li>Kopieren Sie alle neuen Pinterest-Cloud-Konfigurationen vom bisherigen Speicherort an den entsprechenden neuen Speicherort unter <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Aktualisieren Sie jedes Stammverzeichnis der AEM Communities-Site, um auf die neue Konfiguration zur Anmeldung über Pinterest zu verweisen, indem Sie die Eigenschaft <code>[cq:Page]/jcr:content@cq:conf</code> auf den absoluten Pfad des neuen Speicherorts festlegen.</li>
@@ -307,7 +305,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
     <ol>
      <li>Migrieren Sie vorhandene Konfigurationen im bisherigen Speicherort zum neuen Speicherort.
       <ol>
-       <li>Erstellen Sie über die AEM-Authoring-Benutzeroberfläche unter <strong>Tools &gt; Cloud-Services &gt; Konfiguration zur Anmeldung über Twitter</strong> manuell neue Konfigurationen zur Anmeldung über Twitter.<br /> oder <br /> </li>
+       <li>Erstellen Sie über die Authoring-Benutzeroberfläche von AEM manuell neue Konfigurationen für die Anmeldung über Twitter <strong>Tools &gt; Cloud Services &gt; Konfiguration der Anmeldung über Twitter</strong>.<br /> oder <br /> </li>
        <li>Kopieren Sie alle neuen Twitter-Cloud-Konfigurationen vom bisherigen Speicherort an den entsprechenden neuen Speicherort unter <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Aktualisieren Sie jedes Stammverzeichnis der AEM Communities-Site, um auf die neue Konfiguration zur Anmeldung über Twitter zu verweisen, indem Sie die Eigenschaft <code>[cq:Page]/jcr:content@cq:conf</code> auf den absoluten Pfad des neuen Speicherorts festlegen.</li>

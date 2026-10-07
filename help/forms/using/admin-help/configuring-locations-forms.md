@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '834'
+workflow-type: tm+mt
+source-wordcount: '838'
 ht-degree: 100%
-
 ---
-
 # Konfigurieren der Speicherorte für Forms {#configuring-locations-for-forms}
 
 >[!NOTE]
@@ -38,7 +36,7 @@ Sie können die URL-, URI- und Dateispeicherorte von Attributen wie dem Web-Stam
 
 Wenn ein Abhängigkeitspfad absolut ist, wird der Basis-URL-Wert ignoriert. Andernfalls wird der Abhängigkeitspfad mit der Basis-URL kombiniert.
 
- Der Standardwert ist eine leere Zeichenfolge.
+Der Standardwert ist eine leere Zeichenfolge.
 
 Das folgende Beispiel verweist auf denselben Inhalt (unter Verwendung des Inhaltsstamm-URI und der Basis-URL):
 
@@ -52,19 +50,19 @@ Wenn die Forms-Web-Anwendung und die Client-Anwendung nicht auf demselben Anwend
 
 `https://<host name>:<port>/FormServer`
 
- `host name`und `port` sind der Server-Name bzw. die Port-Nummer des Servers, der als Host der Forms-Webanwendung dient.
+`host name`und `port` sind der Server-Name bzw. die Port-Nummer des Servers, der als Host der Forms-Webanwendung dient.
 
- Der Standardwert ist eine leere Zeichenfolge.
+Der Standardwert ist eine leere Zeichenfolge.
 
 **Webstamm-URI:** Der Webstamm des Programms. Dieser Wert wird mit dem sTargetURL-Parameter (wenn sTargetURL relativ angegeben ist) kombiniert, der über das AEM Forms SDK angegeben wird, um eine absolute URL für den Zugriff auf anwendungsspezifische Webinhalte zu erzeugen.
 
- Der Standardwert ist eine leere Zeichenfolge.
+Der Standardwert ist eine leere Zeichenfolge.
 
 **Inhaltsstamm-URI:** Der URI oder der absolute Speicherort, von dem Formulare abgerufen werden. Dieser Wert wird mit dem sFormQuery-Parameter kombiniert, der über die API angegeben wird, um den absoluten Pfad zu dem Formular zu erzeugen, das abgerufen wird. Dieser Wert kann auf einen Ordner oder einen Web-Speicherort verweisen, auf den über HTTP zugegriffen werden kann.
 
- Der Standardwert ist eine leere Zeichenfolge.
+Der Standardwert ist eine leere Zeichenfolge.
 
-**XCI-Konfigurationsdatei-URI:** Der relative oder absolute Speicherort, an dem sich die für die Wiedergabe verwendete XCI-Konfigurationsdatei befindet. Bei einem relativen Wert wird vorausgesetzt, dass sich die XCI-Datei in der bereitstellbaren AEM Forms-EAR-Datei befindet. 
+**XCI-Konfigurationsdatei-URI:** Der relative oder absolute Speicherort, an dem sich die für die Wiedergabe verwendete XCI-Konfigurationsdatei befindet. Bei einem relativen Wert wird vorausgesetzt, dass sich die XCI-Datei in der bereitstellbaren AEM Forms-EAR-Datei befindet.
 
 Der Standardwert ist `com/adobe/formServer/PA/pa.xci`.
 
@@ -74,7 +72,7 @@ Die Schriftzuordnungsdatei wird verwendet, um benutzerdefinierte Schriftartzuord
 
 Der Standardwert ist `com/adobe/formServer/client-font-map.properties`.
 
-Im Folgenden finden Sie ein Beispiel für einen Eintrag in der Schriftartzuordnungsdatei: 
+Im Folgenden finden Sie ein Beispiel für einen Eintrag in der Schriftartzuordnungsdatei:
 
 `Arial=Arial,Helvetica,sans-serif`
 

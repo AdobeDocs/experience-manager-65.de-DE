@@ -7,11 +7,9 @@ feature: Authoring,Experience Fragments
 role: User
 source-git-commit: 382368d7a91ba2229ce1cdfe19f3b9871b93498e
 workflow-type: tm+mt
-source-wordcount: '1505'
-ht-degree: 100%
-
+source-wordcount: '1541'
+ht-degree: 99%
 ---
-
 # Experience Fragments{#experience-fragments}
 
 In Adobe Experience Manager (AEM) ist ein Experience Fragment eine Gruppe aus einer oder mehreren Komponenten (einschließlich Inhalt und Layout), die innerhalb von Seiten referenziert werden können. Sie können jede beliebige Komponente enthalten.
@@ -49,22 +47,22 @@ Experience Fragments sollten in folgenden Fällen verwendet werden:
 
 * Wann immer Sie Erlebnisse wiederverwenden möchten.
 
-   * Erlebnisse, die mit demselben oder ähnlichen Inhalten wiederverwendet werden
+  * Erlebnisse, die mit demselben oder ähnlichen Inhalten wiederverwendet werden
 
 * Wenn Sie AEM als Inhaltsbereitstellungs-Plattform für Dritte nutzen möchten.
 
-   * Nutzung durch beliebige Lösungen, bei denen AEM als Plattform zur Inhaltsbereitstellung fungieren soll
-   * Beim Einbetten von Inhalten in Touchpoints von Drittanbietern
+  * Nutzung durch beliebige Lösungen, bei denen AEM als Plattform zur Inhaltsbereitstellung fungieren soll
+  * Beim Einbetten von Inhalten in Touchpoints von Drittanbietern
 
 * Wenn Sie über ein Erlebnis mit unterschiedlichen Varianten oder Ausgabedarstellungen verfügen.
 
-   * Kanal- oder kontextspezifische Varianten
-   * Erlebnisse, die als Gruppe sinnvoll eingesetzt werden können (z. B. eine Kampagne, die je nach Kanal unterschiedliche Erlebnisse liefert)
+  * Kanal- oder kontextspezifische Varianten
+  * Erlebnisse, die als Gruppe sinnvoll eingesetzt werden können (z. B. eine Kampagne, die je nach Kanal unterschiedliche Erlebnisse liefert)
 
 * Wenn Sie Omni-Channel-Commerce betreiben.
 
-   * Skaliertes Teilen von Commerce-bezogenem Inhalt auf [Social-Media-Kanälen](/help/sites-developing/experience-fragments.md#social-variations)
-   * Ermöglichen von Transaktionen an Touchpoints
+  * Skaliertes Teilen von Commerce-bezogenem Inhalt auf [Social-Media-Kanälen](/help/sites-developing/experience-fragments.md#social-variations)
+  * Ermöglichen von Transaktionen an Touchpoints
 
 ## Organisieren von Experience Fragments {#organizing-your-experience-fragments}
 
@@ -256,7 +254,7 @@ Sie können Ihr Experience Fragment jetzt beim Erstellen Ihrer Seiten verwenden:
    >
    >Die Seite muss auf einer bearbeitbaren Vorlage basieren.
 
-   Zum Beispiel: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   Beispiel: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
 1. Erstellen Sie eine Instanz der Experience-Fragment-Komponente, indem Sie die Komponente aus dem Komponenten-Browser auf das Seitenabsatzsystem ziehen:
 
@@ -336,31 +334,31 @@ Details zu Ihrem Fragment können wie folgt angezeigt werden:
 
    * **Allgemein**
 
-      * **Titel** – erforderlich
+     * **Titel** – erforderlich
 
-      * **Beschreibung**
-      * **Tags**
-      * **Gesamtanzahl der Varianten** – nur zur Information
+     * **Beschreibung**
+     * **Tags**
+     * **Gesamtanzahl der Varianten** – nur zur Information
 
-      * **Anzahl der Web-Varianten** – nur zur Information
-      * **Anzahl der Nicht-Webvarianten** – nur zur Information ****
+     * **Anzahl der Web-Varianten** – nur zur Information
+     * **Anzahl der Nicht-Webvarianten** – nur zur Information ****
 
-      * **Anzahl der Seiten, die dieses Fragment verwenden** – nur zur Information
+     * **Anzahl der Seiten, die dieses Fragment verwenden** – nur zur Information
 
    * **Cloud Services**
 
-      * **Cloud-Konfiguration**
-      * **Cloud Service-Konfigurationen**
-      * **Facebook-Seiten-ID**
-      * **Pinterest-Pinnwand**
+     * **Cloud-Konfiguration**
+     * **Cloud Service-Konfigurationen**
+     * **Facebook-Seiten-ID**
+     * **Pinterest-Pinnwand**
 
    * **Verweise**
 
-      * Eine Liste mit Verweisen.
+     * Eine Liste mit Verweisen.
 
    * **Social-Media-Status**
 
-      * Details zu Social Media-Varianten
+     * Details zu Social Media-Varianten
 
 ## Einfache HTML-Ausgabedarstellung {#the-plain-html-rendition}
 

@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '521'
 ht-degree: 100%
-
 ---
-
 # Neustrukturierung des Forms-Repositorys in AEM 6.5{#forms-repository-restructuring-in-aem}
 
 Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die ein Upgrade auf AEM 6.5 durchführen, diese Seite nutzen, um den Arbeitsaufwand im Zusammenhang mit Repository-Änderungen abzuschätzen, die sich auf AEM Forms Solution auswirken. Einige Änderungen erfordern einen Arbeitsaufwand während des Upgrade-Prozesses auf AEM 6.5, während andere bis zu einem zukünftigen Upgrade verschoben werden können.

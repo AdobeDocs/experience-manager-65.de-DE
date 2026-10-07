@@ -8,11 +8,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '681'
 ht-degree: 96%
-
 ---
-
 # Vorbereiten von Inhalten für die Übersetzung{#preparing-content-for-translation}
 
 Bei mehrsprachigen Websites wird in der Regel ein Teil der Inhalte in mehreren Sprachen bereitgestellt. Die Website wird in einer Sprache verfasst und anschließend in weitere Sprachen übersetzt. Im Allgemeinen bestehen mehrsprachige Websites aus Zweigen von Seiten, wobei jeder Zweig die Seiten der Website in einer anderen Sprache enthält.
@@ -53,7 +51,7 @@ Um den Sprachstamm zu erstellen, erstellen Sie eine Seite und verwenden Sie eine
 
 * `<language-code>_<country-code>` oder `<language-code>-<country-code>`: Der unterstützte Länder-Code ist ein Code mit zwei Groß- oder zwei Kleinbuchstaben gemäß ISO 3166, z. B. `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen Website.  Beispielsweise verfügt die Stammseite der französischen Sprachkopie der Geometrixx-Website über die „Name“-Eigenschaft `fr`. Beachten Sie, dass die Eigenschaft „Name“ als Name des Seitenknotens im Repository verwendet wird und daher den Pfad der Seite bestimmt. (http://localhost:4502/content/geometrixx/fr.html).
+Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen Website.  Beispielsweise verfügt die Stammseite der französischen Sprachkopie der Geometrixx-Website über die „Name“-Eigenschaft `fr`. Beachten Sie, dass die Eigenschaft „Name“ als Name des Seitenknotens im Repository verwendet wird und daher den Pfad der Seite bestimmt. (http://localhost:4502/content/geometrixx/fr.html)
 
 Im folgenden Verfahren wird die Touch-optimierte Benutzeroberfläche genutzt, um eine Sprachkopie einer Website zu erstellen. Die entsprechenden Anleitungen für die klassische Benutzeroberfläche finden Sie unter [Erstellen eines Sprachstamms über die klassische Benutzeroberfläche](/help/sites-administering/tc-lroot-classic.md).
 

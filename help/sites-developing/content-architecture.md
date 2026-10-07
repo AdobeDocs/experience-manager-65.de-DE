@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 100%
-
+source-wordcount: '425'
+ht-degree: 92%
 ---
-
 # Inhaltsarchitektur{#content-architecture}
 
 ## David Nüschelers Modell als Vorbild {#follow-david-s-model}
@@ -46,7 +44,7 @@ Servlets sollten auf Basis von Ressourcentypen anstelle von Pfaden definiert wer
 
 ### Vermeiden der Definition neuer Knotentypen {#avoid-defining-new-node-types}
 
-Knotentypen setzen auf einer niedrigen Ebene der Infrastrukturschicht an und die meisten Anforderungen können erfüllt werden, indem ein „sling:resourceType“ verwendet wird, der einem Knotentyp „nt:unstructured“, „oak:Unstructured“, „sling:Folder“ oder „cq:Page“ zugewiesen ist. Knotentypen entsprechen dem Schema im Repository, wobei sich das Ändern von Knotentypen im weiteren Verlauf als kostspielig erweisen kann.
+Knotentypen funktionieren auf einer niedrigen Ebene in der Infrastrukturschicht und die meisten Anforderungen können erfüllt werden, indem ein sling:resourceType verwendet wird, das einem Knotentyp „nt:unstructured&quot;, „oak:Unstructured&quot;, „sling:Folder&quot; oder „cq:Page zugewiesen. Knotentypen entsprechen dem Schema im Repository, wobei sich das Ändern von Knotentypen im weiteren Verlauf als kostspielig erweisen kann.
 
 ### Einhalten Sie Namenskonventionen im JCR {#adhere-to-naming-conventions-in-the-jcr}
 
@@ -54,14 +52,14 @@ Durch die Einhaltung von Namenskonventionen wird die Konsistenz der Code-Basis e
 
 * Knotennamen
 
-   * Ausschließliche Verwendung von Kleinbuchstaben
-   * Worttrennung mithilfe von Bindestrichen
+  * Ausschließliche Verwendung von Kleinbuchstaben
+  * Worttrennung mithilfe von Bindestrichen
 
 * Eigenschaftsnamen
 
-   * Binnenmajuskeln, beginnend mit einem Kleinbuchstaben
+  * Binnenmajuskeln, beginnend mit einem Kleinbuchstaben
 
 * Komponenten (JSP/HTML)
 
-   * Ausschließliche Verwendung von Kleinbuchstaben
-   * Worttrennung mithilfe von Bindestrichen
+  * Ausschließliche Verwendung von Kleinbuchstaben
+  * Worttrennung mithilfe von Bindestrichen

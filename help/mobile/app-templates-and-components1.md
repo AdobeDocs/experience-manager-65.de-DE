@@ -11,11 +11,9 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 51%
-
+source-wordcount: '382'
+ht-degree: 31%
 ---
-
 # Programmvorlagen und -komponenten{#app-templates-and-components}
 
 {{ue-over-mobile}}
@@ -35,7 +33,7 @@ Eine Vorlage ist die Basis einer Seite.
 
 Um eine Seite zu erstellen, muss die Vorlage (Knotenbaumstruktur **/apps/&lt;myapp>/templates/&lt;mytemplate>**) an die entsprechende Position in der Website-Baumstruktur kopiert werden: Dies geschieht, wenn eine Seite über die Registerkarte **Websites** erstellt wird.
 
-Über diesen Kopiervorgang erhält die Seite auch ihren anfänglichen Inhalt (in der Regel nur den Inhalt der obersten Ebene) und die Eigenschaft „sling:resourceType“, den Pfad zur Seitenkomponente, die zum Rendern der Seite verwendet wird (alles im untergeordneten Knoten „jcr:content“).
+Diese Kopieraktion gibt der Seite auch ihren anfänglichen Inhalt (normalerweise nur Inhalte der obersten Ebene) und die Eigenschaft sling:resourceType, den Pfad zur Seitenkomponente, die zum Rendern der Seite verwendet wird (alles im untergeordneten Knoten jcr:content).
 
 ## Struktur einer Vorlage {#structure-of-a-template}
 
@@ -44,14 +42,14 @@ Zwei Aspekte müssen berücksichtigt werden:
 * die Struktur der Vorlage selbst
 * die Struktur des Inhalts, der bei Verwendung einer Vorlage erstellt wird
 
-Eine Vorlage wird unter einem Knoten vom Typ **cq:Template** erstellt.
+Eine Vorlage wird unter einem Knoten des Typs **cq:Template** erstellt.
 
 Verschiedene Eigenschaften können festgelegt werden, insbesondere:
 
-* **jcr:title** – Titel für die Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
-* **jcr:description** – Beschreibung für die Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
+* **jcr:title** - Titel der Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
+* **jcr:description** - Beschreibung der Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
 
-Dieser Knoten enthält *jcr:content (cq:PageContent)* Knoten, der als Grundlage für den Inhaltsknoten der resultierenden Seiten verwendet wird. Diese verweist unter Verwendung *sling:resourceType* auf die Komponente, die für das Rendern des tatsächlichen Inhalts einer neuen Seite verwendet werden soll.
+Dieser Knoten enthält *einen jcr:content-Knoten (:PageContent)* der als Grundlage für den Inhaltsknoten der resultierenden Seiten verwendet wird. Diese verweist mithilfe von *sling:resourceType* auf die Komponente, die zum Rendern des tatsächlichen Inhalts einer neuen Seite verwendet werden soll.
 
 >[!NOTE]
 >

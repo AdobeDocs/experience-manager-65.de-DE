@@ -1,21 +1,23 @@
 ---
 title: Entwickeln und Erweitern von Workflows
+
 description: AEM stellt mehrere Tools und Ressourcen zum Erstellen von Workflow-Modellen, Entwickeln von Workflow-Schritten und programmgesteuerten Interagieren mit Workflows bereit.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1494'
 ht-degree: 100%
-
 ---
-
 
 # Entwickeln und Erweitern von Workflows{#developing-and-extending-workflows}
 
@@ -105,7 +107,7 @@ Folgende Aktionen können für eine Workflow-Instanz ausgeführt werden:
 
 * Beenden
 * Aussetzen
-* Fortsetzen 
+* Fortsetzen
 * Neu starten
 
 Abgeschlossene und beendete Instanzen werden archiviert.

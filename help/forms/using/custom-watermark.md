@@ -1,21 +1,24 @@
 ---
 title: Benutzerdefiniertes Wasserzeichen in der PDF-Briefvorschau
+
 description: Erfahren Sie, wie Sie benutzerdefinierte Wasserzeichen in der PDF-Briefvorschau erstellen.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
+
 docset: aem65
+
 feature: Correspondence Management
 exl-id: 7d90fade-1ca4-41d8-bbf9-45490465784a
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '343'
 ht-degree: 100%
-
 ---
-
 # Benutzerdefiniertes Wasserzeichen in der PDF-Briefvorschau{#custom-watermark-in-letter-pdf-preview}
 
 ## Übersicht {#overview}
@@ -79,7 +82,7 @@ Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild de
    </DDX>
    ```
 
-   Informationen zum Anpassen des Erscheinungsbildes, des Textes und der Ausrichtung des Wasserzeichens finden Sie unter Hinzufügen und Entfernen von Wasserzeichen und Hintergründen im Dokument [Assembler Service und DDX-Referenz](https://help.adobe.com/de_DE/livecycle/11.0/ddxRef.pdf).
+   Informationen zum Anpassen des Erscheinungsbildes, des Textes und der Ausrichtung des Wasserzeichens finden Sie unter Hinzufügen und Entfernen von Wasserzeichen und Hintergründen im Dokument [Assembler-Dienst und DDX-Referenz](https://help.adobe.com/de_DE/livecycle/11.0/ddxRef.pdf).
 
    >[!NOTE]
    >
