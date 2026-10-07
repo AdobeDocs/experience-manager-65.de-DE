@@ -341,7 +341,7 @@ Details zu Ihrem Fragment können wie folgt angezeigt werden:
      * **Gesamtanzahl der Varianten** – nur zur Information
 
      * **Anzahl der Web-Varianten** – nur zur Information
-     * **Anzahl der Nicht-Webvarianten** – nur zur Information ****
+     * **Anzahl der Nicht-Webvarianten** – nur zur Information **&#x200B;**
 
      * **Anzahl der Seiten, die dieses Fragment verwenden** – nur zur Information
 
