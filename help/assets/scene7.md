@@ -329,7 +329,7 @@ Standardmäßig durchsucht Experience Manager den ausgewählten Ordner und alle 
 >
 >* Auf der klassischen Benutzeroberfläche können Sie auch nach **Flash** und **FXG** suchen. Das Filtern nach diesen Typen auf der Touch-optimierten Benutzeroberfläche wird nicht unterstützt.
 >
->* Beim Durchsuchen eines Videos suchen Sie nach einer einzelnen Ausgabedarstellung. Die Ergebnisse geben die ursprüngliche (nur &amp;ast;.mp4) und die kodierte Ausgabedarstellung zurück.
+>* Beim Durchsuchen eines Videos suchen Sie nach einer einzelnen Ausgabedarstellung. Die Ergebnisse geben die ursprüngliche (nur &ast;.mp4) und die kodierte Ausgabedarstellung zurück.
 >* Beim Suchen nach einem adaptiven Videoset durchsuchen Sie den Ordner und alle Unterordner, jedoch nur dann, wenn Sie zur Suche ein Keyword hinzugefügt haben. Wenn Sie kein Keyword hinzugefügt haben, durchsucht Experience Manager die Unterordner nicht.
 >
 
