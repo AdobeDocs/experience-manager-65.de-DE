@@ -77,7 +77,7 @@ Um Zugriff auf den KI-Assistenten in AEM zu erhalten, müssen Kundinnen und Kund
 
 **So erhalten Sie Zugriff auf den KI-Assistenten in AEM:**
 
-1. Kundinnen und Kunden müssen über eine Zusatzvereinbarung verfügen, um auf die meisten KI-gestützten und Agent-basierten Funktionen in Adobe Experience Manager zugreifen zu können. Weitere Informationen erhalten Sie vom Adobe-Support-Personal. Informationen zur Funktionsweise der Aktivierung generativer KI finden Sie unter [Generative KI in CX Enterprise-Programmen](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai).
+1. Kundinnen und Kunden müssen über eine Zusatzvereinbarung verfügen, um auf die meisten KI-gestützten und Agent-basierten Funktionen in Adobe Experience Manager zugreifen zu können. Weitere Informationen erhalten Sie vom Adobe-Support-Personal. Informationen zur Funktionsweise der Aktivierung generativer KI finden Sie unter [Generative KI in CX Enterprise-Programmen](https://experienceleague.adobe.com/de/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai).
 
 1. Sobald Ihr Unternehmen über diese Vereinbarung verfügt, können alle Benutzer standardmäßig den KI-Assistenten für Produktkenntnisse verwenden. Es sind keine zusätzlichen Berechtigungen pro Benutzer oder pro Gruppe erforderlich.
 
