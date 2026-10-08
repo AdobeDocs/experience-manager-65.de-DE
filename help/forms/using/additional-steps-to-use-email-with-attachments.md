@@ -7,11 +7,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '281'
 ht-degree: 100%
-
 ---
-
 # E-Mail mit Anhängen für AEM Forms kann auf JEE-Plattformen nicht abgerufen werden{#unable-to-get-email-with-attachments}
 
 Das Problem betrifft die folgende Version:
@@ -37,9 +35,9 @@ Benutzenden sind nicht in der Lage, Vorgänge wie „PDF per E-Mail versenden“
 
 1. Laden Sie [javax.mail-1.5.6.redhat-1.jar](https://mvnrepository.com/artifact/com.sun.mail/javax.mail/1.5.6.redhat-1) herunter.
 
-1. Navigieren Sie zu `http://<server name>:<port>/lc/system/console/bundles` und löschen Sie das Bundle mit dem Namen `JavaMail API (com.sun.mail.javax.mail) version 1.6.2`.
+1. Navigieren Sie zu `http://<server name>:<port>/lc/system/console/bundles` und löschen Sie das Paket mit dem Namen `JavaMail API (com.sun.mail.javax.mail) version 1.6.2`.
 
-1. Installieren Sie `java.mail-1.5.jar` aus Schritt 3. Dieser Schritt startet die Sling-Eigenschaften der JEE-Bereitstellung neu. Warten Sie, bis die installierten Bundles unter `http://<server name>:<port>/lc/system/console/bundles` den Status **Aktiv** anzeigen.
+1. Installieren Sie `java.mail-1.5.jar` aus Schritt 3. Dieser Schritt startet die Sling-Eigenschaften der JEE-Bereitstellung neu. Warten Sie, bis die installierten Pakete unter `http://<server name>:<port>/lc/system/console/bundles` den Status **Aktiv** anzeigen.
 
    >Falls der Status immer noch **InActive** ist, starten Sie **JBoss®** über die **Dienste-Konsole** neu.
 

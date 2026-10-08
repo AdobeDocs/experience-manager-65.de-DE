@@ -12,11 +12,9 @@ exl-id: 815f577d-4774-4830-8baf-0294bd085b83
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2851'
-ht-degree: 100%
-
+source-wordcount: '2909'
+ht-degree: 99%
 ---
-
 # Hinzufügen von Dynamic Media Classic-Funktionen zu Seiten {#adding-scene-features-to-your-page}
 
 [Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=de) ist eine gehostete Lösung für die Verwaltung, Optimierung, Veröffentlichung und Bereitstellung von Rich-Media-Assets für Web-, Mobil-, E-Mail- und Internet-verbundene Anzeigen und Ausdrucke.
