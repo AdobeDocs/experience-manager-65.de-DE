@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: d4a8b41ee8136bb69845fdf65456e1407b2b5d19
+source-git-commit: b3d193fafabe3f04a98ac17b30a5c6506472faf3
 workflow-type: tm+mt
-source-wordcount: '8300'
+source-wordcount: '8305'
 ht-degree: 95%
 ---
 
@@ -446,7 +446,7 @@ ht-degree: 95%
     + [[!DNL Assets] und MediaLibrary](/help/assets/medialibrary.md)
     + [Verwenden des PDF Rasterizer](/help/assets/aem-pdf-rasterizer.md)
     + [Konfigurieren von Upload-Beschränkungen](/help/assets/configuring-asset-upload-restrictions.md)
-    + [Integration mit [!DNL Experience Manager] und  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
+    + [Integration mit [!DNL Experience Manager] und  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
     + [Integrieren mit  [!DNL InDesign Server]](/help/assets/indesign.md)
     + [Digital Rights Management in Assets](/help/assets/drm.md)
     + [Verwenden des Demopakets für Assets Insights](/help/assets/use-demo-package-for-asset-insights.md)
@@ -599,6 +599,7 @@ ht-degree: 95%
     + [Importieren und Exportieren von Assets in AEM Forms](/help/forms/using/import-export-forms-templates.md)
     + [Unterstützung neuer Gebietsschemata für die Lokalisierung adaptiver Formulare](/help/forms/using/supporting-new-language-localization.md)
     + Umgang mit Benutzerdaten {#handling-user-data}
+      + [Datenaufbewahrung in AEM Forms](/help/forms/using/data-retention-aem-forms.md)
       + [Forms-zentrierte Workflows auf OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
       + [User Management in Forms](/help/forms/using/user-management-handling-user-data.md)
       + [Forms-JEE-Workflows](/help/forms/using/forms-workflow-jee-handling-user-data.md)
