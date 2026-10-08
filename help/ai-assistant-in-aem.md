@@ -113,7 +113,7 @@ Produktkenntnisse umfassen Konzepte und Themen, die aus der Dokumentation zu Ado
 | Gezieltes Lernen | <ul><li>Was ist der universelle Editor?</li><li>Wie erstelle ich ein Programm in Cloud Manager?</li></ul> |
 | Erkennung öffnen | <ul><li>Wie verwende ich den universellen Editor?</li><li>Gibt es eine Möglichkeit, Inhalte von einer Umgebung in eine andere zu kopieren?</li></ul> |
 | Fehlerbehebung | <ul><li>Warum kann ich nicht auf den universellen Editor zugreifen?</li><li>Warum schlägt meine Pipeline fehl?</li></ul> |
-| **Erstellung von Support-Tickets** | **Nur für Support-Admins verfügbar **<br>**Beispiele** |
+| **Erstellung von Support-Tickets** | **Nur für Support-Admins verfügbar &#x200B;**<br>**Beispiele** |
 | Automatisierte Erstellung von Support-Tickets zur Erfassung des Verlaufs und Kontexts des KI-Assistenten | <ul><li>Erstelle ein Support-Ticket für mich.</li></ul> |
 | Status von Support-Ticket abrufen | <ul><li>Zeige mir alle Support-Tickets, die ich geöffnet habe.</li><li>Zeige mir den Status von Ticket „E-----------“</li></ul> |
 
