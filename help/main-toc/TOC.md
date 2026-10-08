@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: b3d193fafabe3f04a98ac17b30a5c6506472faf3
+source-git-commit: f46e653863a8724a5f50bed7a2f76079803b162e
 workflow-type: tm+mt
-source-wordcount: '8305'
+source-wordcount: '8300'
 ht-degree: 95%
 ---
 
@@ -446,7 +446,7 @@ ht-degree: 95%
     + [[!DNL Assets] und MediaLibrary](/help/assets/medialibrary.md)
     + [Verwenden des PDF Rasterizer](/help/assets/aem-pdf-rasterizer.md)
     + [Konfigurieren von Upload-Beschränkungen](/help/assets/configuring-asset-upload-restrictions.md)
-    + [Integration mit [!DNL Experience Manager] und  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
+    + [Integration mit [!DNL Experience Manager] und  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
     + [Integrieren mit  [!DNL InDesign Server]](/help/assets/indesign.md)
     + [Digital Rights Management in Assets](/help/assets/drm.md)
     + [Verwenden des Demopakets für Assets Insights](/help/assets/use-demo-package-for-asset-insights.md)
@@ -1237,7 +1237,6 @@ ht-degree: 95%
 + KI in AEM {#ai-in-aem}
   + [Überblick](/help/ai-in-aem/overview.md)
   + KI-Assistent {#ai-assistant}
-    + [Konfigurieren des KI-Assistenten in AEM](/help/ai-assistant-in-aem-admin.md)
     + [Info zum KI-Assistenten in AEM](/help/ai-assistant-in-aem.md)
 + Content and Commerce {#commerce}
   + [Einführung und Überblick](/help/commerce/cif/introduction.md)
