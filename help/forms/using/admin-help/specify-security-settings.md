@@ -10,19 +10,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 100%
-
 ---
-
 # Angeben der Sicherheitseinstellungen {#specify-security-settings}
 
 >[!NOTE]
 > 
 > Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
-Mit der Ausgabe können Sie steuern, ob externe Entitäten in XML-Eingaben aufgelöst werden.  Standardmäßig werden sie aufgelöst, jedoch können Sie dieses Verhalten ändern, um die Sicherheit Ihres AEM Forms-Systems zu erhöhen.
+Mit der Ausgabe können Sie steuern, ob externe Entitäten in XML-Eingaben aufgelöst werden. Standardmäßig werden sie aufgelöst, jedoch können Sie dieses Verhalten ändern, um die Sicherheit Ihres AEM Forms-Systems zu erhöhen.
 
 **Verhindern der Verarbeitung von XML-Datendateien mit Verweisen auf externe Entitäten**
 

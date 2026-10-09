@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: ht
-source-wordcount: '1767'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 95%
 ---
-
 # Datenmodellierung – Modell von David Nuescheler{#data-modeling-david-nuescheler-s-model}
 
 ## Quelle {#source}
@@ -46,7 +44,7 @@ Ich möchte diese Erfahrungslücken schließen, indem ich meine eigenen Ideen zu
 
 Ich empfehle Ihnen, sich erst einmal keine Gedanken über eine deklarierte Datenstruktur im Sinne eines ERD zu machen. Zunächst.
 
-Setzen Sie bei der Entwicklung auf „nt:unstructured“ (und Konsorten).
+Lernen Sie NT:unstructured (&amp; Freunde) in der Entwicklung zu lieben.
 
 Ich bin zu dem Schluss gekommen, dass Strukturen zu aufwendig sind und es oft gar nicht nötig ist, eine Struktur explizit für den zugrunde liegenden Speicher zu deklarieren.
 
@@ -173,11 +171,11 @@ Möglicherweise gibt es Anwendungsfälle, in denen ein System wirklich nicht fun
 
 Wenn ein Inhaltsmodell etwas vorsieht, das auch nur im Entferntesten wie eine Datei oder ein Ordner anmutet, versuche ich, `nt:file`, `nt:folder` und `nt:resource` zu verwenden (oder davon ausgehend zu erweitern).
 
-Meiner Erfahrung nach lassen viele generische Anwendungen implizit die Interaktion mit „nt:folder“ und „nt:files“ zu und wissen, wie sie diese Ereignisse verarbeiten und anzeigen müssen, wenn sie zusätzliche Meta-Informationen aufweisen. Beispielsweise wird eine direkte Interaktion mit Datei-Server-Implementierungen wie CIFS oder WebDAV, die auf JCR aufsetzen, implizit.
+Nach meiner Erfahrung ermöglichen viele generische Anwendungen die Interaktion mit nt:folder und nt:files implizit und wissen, wie diese Ereignisse verarbeitet und angezeigt werden, wenn sie mit zusätzlichen Metainformationen angereichert sind. Beispielsweise wird eine direkte Interaktion mit Datei-Server-Implementierungen wie CIFS oder WebDAV, die auf JCR aufsetzen, implizit.
 
-Als Faustregel könnte Folgendes gelten: Wenn Sie den Dateinamen und den MIME-Typ speichern müssen, ist `nt:file`/`nt:resource` eine gute Wahl. Wenn Sie möglicherweise mehrere Dateien haben könnten, bietet sich „nt:folder“ für ihre Speicherung an.
+Als Faustregel könnte Folgendes gelten: Wenn Sie den Dateinamen und den MIME-Typ speichern müssen, ist `nt:file`/`nt:resource` eine gute Wahl. Wenn Sie mehrere „Dateien“ haben könnten, ist ein nt:folder ein guter Ort, um sie zu speichern.
 
-Wenn Sie Meta-Informationen für Ihre Ressource hinzufügen müssen, beispielsweise die Eigenschaft „author“ oder „description“, erweitern Sie `nt:resource` und nicht `nt:file`. „nt:file“ erweitere ich eher selten, `nt:resource` dagegen häufig.
+Wenn Sie Meta-Informationen für Ihre Ressource hinzufügen müssen, beispielsweise die Eigenschaft „author“ oder „description“, erweitern Sie `nt:resource` und nicht `nt:file`. Ich verlängern selten nt:file und oft `nt:resource`.
 
 #### Beispiel {#example-6}
 
@@ -209,7 +207,7 @@ Es ist zwar richtig, dass einige Knoten während ihres gesamten Lebenszyklus ein
 
 Beachten Sie außerdem, dass Elemente durch einen Pfad identifiziert werden können. Und auch wenn in einem UNIX®-Dateisystem Symlinks für die meisten Benutzenden sinnvoller als Hardlinks sind, bietet sich für die meisten Anwendungen ein Pfad zum Verweisen auf einen Zielknoten an.
 
-Was noch wichtiger ist: Es handelt sich um **mix**:referenceable, was bedeutet, dass es genau dann auf einen Knoten angewendet werden kann, wenn der Verweis tatsächlich erforderlich ist.
+Was noch wichtiger ist: Es **mix**:referenceable was bedeutet, dass es genau dann auf einen Knoten angewendet werden kann, wenn der Verweis erforderlich ist.
 
 Wenn Sie also auf beispielsweise einen Knoten vom Typ „Document“ verweisen können möchten, bedeutet das nicht, dass Ihr Knotentyp „Document“ statisch von `mix:referenceable` erweitert werden muss, da er dynamisch zu jeder Instanz von „Document“ hinzugefügt werden kann.
 

@@ -13,9 +13,7 @@ source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 100%
-
 ---
-
 # Grundlagen der Ordnerstruktur {#understanding-the-folder-structure}
 
 AEM Forms Workspace-Komponenten basieren auf der MVC-Architektur mit Backbone. Jede Komponente verfügt über eine Datei für:

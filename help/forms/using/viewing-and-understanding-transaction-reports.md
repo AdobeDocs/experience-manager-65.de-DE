@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '890'
 ht-degree: 100%
-
 ---
-
 # Anzeigen und Verstehen von Transaktionsberichten für AEM Forms auf OSGi{#viewing-and-understanding-transaction-reports}
 
 Mit Transaktionsberichten können Sie die Anzahl der übermittelten Formulare, verarbeiteten Dokumente und gerenderten Dokumente erfassen und nachverfolgen. Das Ziel bei der Verfolgung dieser Transaktionen ist es, eine fundierte Entscheidung über die Produktnutzung und die Neugewichtung der Investitionen in Hardware und Software treffen zu können. Weitere Informationen finden Sie unter [Übersicht über AEM Forms-Transaktionsberichte](../../forms/using/transaction-reports-overview.md).
@@ -80,13 +78,13 @@ AEM Forms zeigt Transaktionsberichte seit dem konfigurierten Datum an, wie in ei
 
 ![sample-transaction-report-author](assets/sample-transaction-report-author.png)
 
-* Verwenden Sie die Optionen **Datum auf heute zurücksetzen** zum Zurücksetzen von Transaktionsdatensätzen. Wenn Sie das Datum auf heute zurücksetzen, gehen alle vorherigen Transaktionsdatensätze verloren. Wenn Sie das Datum auf einer Autoreninstanz zurücksetzen, wirkt sich die Änderung nicht auf die Transaktionsberichte auf den Veröffentlichungsinstanzen aus und umgekehrt.
+* Verwenden Sie die Optionen **Datum auf heute zurücksetzen** zum Zurücksetzen von Transaktionseinträgen. Wenn Sie das Datum auf heute zurücksetzen, gehen alle vorherigen Transaktionseinträge verloren. Wenn Sie das Datum auf einer Autoreninstanz zurücksetzen, wirkt sich die Änderung nicht auf die Transaktionsberichte auf den Veröffentlichungsinstanzen aus und umgekehrt.
 * Verwenden Sie die **Anzeigen von Transaktionen nur von Veröffentlichungsinstanzen** um alle Transaktionen anzuzeigen, die nur in der konfigurierten Veröffentlichungsinstanz oder Veröffentlichungsfarm aufgetreten sind.
 * Verwenden Sie diese Kategorien: **Dokument verarbeitet**, **Dokumente gesendet** und **Formulare eingereicht**, um die entsprechenden Transaktionen anzuzeigen. Für die Art der Transaktionen, die in diesen Kategorien berücksichtigt werden, siehe [Abrechnungsfähige Transaktionsberichte APIs](../../forms/using/transaction-reports-billable-apis.md).
 
 ## Protokolle der Transaktionsberichte ansehen {#view-transaction-reporting-logs}
 
-Bei der Transaktionsberichterstattung werden alle im Bericht angezeigten Informationen und einige zusätzliche Informationen in den Protokollen gespeichert. Die in den Protokollen enthaltenen Informationen sind für fortgeschrittene Benutzer hilfreich. Zum Beispiel unterteilen Protokolle Transaktionen in mehrere granulare Kategorien im Vergleich zu drei konsolidierten Kategorien, die im Bericht angezeigt werden. Die Protokolle sind in der Datei `error.log` im Verzeichnis `/crx-repository/logs/` verfügbar. Die Protokolle sind auch dann verfügbar, wenn Sie die Transaktionsberichte in der AEM Web Console nicht aktivieren.
+Bei der Transaktionsberichterstattung werden alle im Bericht angezeigten Informationen und einige zusätzliche Informationen in den Protokollen gespeichert. Die in den Protokollen enthaltenen Informationen sind für fortgeschrittene Benutzer hilfreich. Zum Beispiel unterteilen Protokolle Transaktionen in mehrere granulare Kategorien im Vergleich zu drei konsolidierten Kategorien, die im Bericht angezeigt werden. Die Protokolle sind in der Datei `error.log` im Verzeichnis `/crx-repository/logs/` verfügbar. Die Protokolle sind auch dann verfügbar, wenn Sie die Transaktionsberichte in der AEM-Web-Konsole nicht aktivieren.
 
 ## Ähnliche Artikel {#related-articles}
 

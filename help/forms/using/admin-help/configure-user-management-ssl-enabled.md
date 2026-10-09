@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '282'
 ht-degree: 94%
-
 ---
-
 # Konfigurieren der Benutzerverwaltung für einen SSL-aktivierten LDAP-Server {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
 Damit die Synchronisierung ordnungsgemäß über LDAPS erfolgen kann, müssen die von einer Zertifizierungsstelle ausgestellten LDAP-Zertifikate in der JRE-Umgebung (Java Runtime Environment) des Anwendungs-Servers vorhanden sein. Importieren Sie das Zertifikat in die Datei „cacerts“ des Anwendungsservers, die sich in der Regel im Ordner „*[JAVA_HOME]*/jre/lib/security/cacerts“ befindet.
@@ -26,7 +24,7 @@ Damit die Synchronisierung ordnungsgemäß über LDAPS erfolgen kann, müssen di
 
    `keytool -import -alias`*alias* `-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
-1. Geben Sie auf Anforderung das Kennwort ein. (Für Java lautet das Standardkennwort `changeit`.) Es wird eine Meldung angezeigt, die besagt, dass das Zertifikat erfolgreich importiert wurde.
+1. Geben Sie auf Anforderung das Kennwort ein. (Für Java lautet das Standardkennwort `changeit`.) Eine Meldung wird angezeigt, die besagt, dass das Zertifikat erfolgreich importiert wurde.
 1. Geben Sie nach Aufforderung `Yes` ein, um das Zertifikat als vertrauenswürdig festzulegen.
 1. Aktivieren Sie SSL in User Management, wählen Sie beim Konfigurieren der Verzeichniseinstellungen für die SLL-Option die Einstellung „Ja“ und ändern Sie die Port-Einstellung entsprechend. Die Standardportzahl ist 636.
 

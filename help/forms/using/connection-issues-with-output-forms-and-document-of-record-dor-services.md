@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '188'
 ht-degree: 100%
-
 ---
-
 # Ausgabe-Service, Forms-Service oder DoR-Service (Document of Record) kann nicht verwendet werden {#unable-to-use-output-service-forms-service-or-document-of-record-service}
 
 ## Problem
@@ -25,7 +23,7 @@ Nach der Installation von AEM Forms 6.5 Service Pack 19 kann der Versuch, den Ou
 
 Das Problem beheben Sie wie folgt:
 
-1. Beenden Sie Ihre AEM 6.5 Forms-Instanz.
+1. Stoppen Sie Ihre AEM 6.5 Forms-Instanz.
 1. Laden Sie die [64-Bit-Version der Microsoft Visual C++ Redistributable Packages for Visual Studio 2015, 2017, 2019 und 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) auf den Computer herunter, auf dem AEM 6.5 Forms installiert ist, und installieren Sie sie.
 1. Starten Sie den AEM Forms-Server neu.
 

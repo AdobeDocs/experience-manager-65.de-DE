@@ -11,11 +11,9 @@ feature: Document Security
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '908'
 ht-degree: 100%
-
 ---
-
 # Konfigurieren von SSL für JBoss Application Server {#configuring-ssl-for-jboss-application-server}
 
 Zum Konfigurieren von SSL auf dem JBoss-Anwendungs-Server benötigen Sie eine SSL-Berechtigung für die Authentifizierung. Sie können das Java-Keytool zum Erstellen einer Berechtigung oder zum Anfordern und Importieren einer Berechtigung von einer Zertifizierungsstelle verwenden. Aktivieren Sie anschließend SSL unter JBoss.
@@ -89,8 +87,7 @@ In diesem Verfahren gilt:
 
    * Servercluster – `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
-1. &#x200B;
-   * **Für Einzelserver** Fügen Sie in der Datei „lc_&lt;dbaname/tunkey>.xml“ Folgendes nach dem Abschnitt „&lt;security-realms>“ ein:
+1. * **Für Einzelserver** Fügen Sie in der Datei „lc_&lt;dbaname/tunkey>.xml“ Folgendes nach dem Abschnitt „&lt;security-realms>“ ein:
 
    ```xml
    <security-realm name="SSLRealm">
@@ -139,29 +136,29 @@ In diesem Verfahren gilt:
 
    * Für Turnkey-Installationen:
 
-      * Klicken Sie in der Windows-Systemsteuerung Panel auf „Verwaltung“ und dann auf „Dienste“.
-      * Wählen Sie JBoss für Adobe Experience Manager-Formulare.
-      * Wählen Sie „Aktion“ > „Anhalten“.
-      * Warten Sie, bis als Status des Dienstes „Angehalten“ angezeigt wird.
-      * Wählen Sie „Aktion“ > „Starten“.
+     * Klicken Sie in der Windows-Systemsteuerung Panel auf „Verwaltung“ und dann auf „Dienste“.
+     * Wählen Sie JBoss für Adobe Experience Manager-Formulare.
+     * Wählen Sie „Aktion“ > „Anhalten“.
+     * Warten Sie, bis als Status des Dienstes „Angehalten“ angezeigt wird.
+     * Wählen Sie „Aktion“ > „Starten“.
 
    * Für von Adobe vorkonfigurierte oder manuell konfigurierte JBoss-Installationen:
 
-      * Wechseln Sie in einer Eingabeaufforderung zum Ordner „*`[appserver root]`*/bin“.
-      * Beenden Sie den Server durch Eingabe des folgenden Befehls:
+     * Wechseln Sie in einer Eingabeaufforderung zum Ordner „*`[appserver root]`*/bin“.
+     * Stoppen Sie den Server durch Eingabe des folgenden Befehls:
 
-         * (Windows) `shutdown.bat -S`
-         * (Linux) `./shutdown.sh -S`
+       * (Windows) `shutdown.bat -S`
+       * (Linux) `./shutdown.sh -S`
 
-      * Warten Sie, bis der JBoss-Prozess vollständig heruntergefahren wurde. (Dies ist der Fall, wenn der JBoss-Prozess die Kontrolle wieder an das Terminal übergibt, in dem er gestartet wurde.)
-      * Starten Sie den Server durch Eingabe des folgenden Befehls:
+     * Warten Sie, bis der JBoss-Prozess vollständig heruntergefahren wurde. (Dies ist der Fall, wenn der JBoss-Prozess die Kontrolle wieder an das Terminal übergibt, in dem er gestartet wurde.)
+     * Starten Sie den Server durch Eingabe des folgenden Befehls:
 
-         * (Windows) `run.bat -c <profile>`
-         * (Linux) `./run.sh -c <profile>`
+       * (Windows) `run.bat -c <profile>`
+       * (Linux) `./run.sh -c <profile>`
 
 1. Um mithilfe von SSL auf Administration Console zuzugreifen, geben Sie `https://[host name]:'port'/adminui` in einem Webbrowser ein:
 
-   Der SSL-Standard-Port für JBoss ist 8443.  Geben Sie von hier an beim Zugriff auf AEM Forms diesen Port an.
+   Der SSL-Standard-Port für JBoss ist 8443. Geben Sie von hier an beim Zugriff auf AEM Forms diesen Port an.
 
 ## Anfordern einer Berechtigung von einer Zertifizierungsstelle {#request-a-credential-from-a-ca}
 

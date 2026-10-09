@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1174'
 ht-degree: 97%
-
 ---
-
 # Wiederherstellen der AEM Forms-Daten {#recovering-the-aem-forms-data}
 
 In diesem Abschnitt werden die Schritte beschrieben, die zum Wiederherstellen der AEM Forms-Daten erforderlich sind. Siehe auch [Besondere Hinweise für Sicherung und Wiederherstellung](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md#special-considerations-for-backup-and-recovery).
@@ -50,15 +48,15 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, di
 
 ## Wiederherstellen der AEM Forms-Daten {#recover-the-aem-forms-data}
 
-1. Beenden Sie die AEM Forms-Dienste und den Anwendungs-Server, falls er ausgeführt wird.
+1. Stoppen Sie die AEM Forms-Dienste und den Anwendungs-Server, falls er ausgeführt wird.
 1. Erstellen Sie bei Bedarf das physische System aus einem Systembild neu. Zum Beispiel ist dieser Schritt möglicherweise nicht erforderlich, wenn der Grund für die Wiederherstellung ein fehlerhafter Datenbank-Server ist.
 1. Wenden Sie Patches oder Aktualisierungen auf AEM Forms an, die seit der Erstellung des Bildes angewendet wurden. Diese Informationen wurden im Sicherungsverfahren erfasst. Bei AEM Forms müssen Patches entsprechend dem Patch-Level zum Zeitpunkt der Systemsicherung angewendet werden.
 1. (WebSphere® Anwendungs-Server) Wenn Sie eine neue Instanz des WebSphere® Anwendungs-Servers wiederherstellen, führen Sie den Befehl „restoreConfig.bat/sh“ aus.
-1. Zum Wiederherstellen der AEM Forms-Datenbank müssen Sie zuerst einen Datenbankwiederherstellungsvorgang unter Verwendung der Datenbanksicherungsdateien ausführen und anschließend die Protokolle zum Wiederholen von Transaktionen auf die wiederhergestellte Datenbank anwenden. (Siehe [AEM Forms-](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Weitere Informationen finden Sie in einem der folgenden Knowledgebase-Artikel:
+1. Zum Wiederherstellen der AEM Forms-Datenbank müssen Sie zuerst einen Datenbankwiederherstellungsvorgang unter Verwendung der Datenbanksicherungsdateien ausführen und anschließend die Protokolle zum Wiederholen von Transaktionen auf die wiederhergestellte Datenbank anwenden. (Siehe [AEM Forms-](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Weitere Informationen finden Sie in einem dieser Knowledge Base-Artikel:
 
-   * [DB2](/help/forms/using/admin-help/files-back-recover.md#db2)
+   * [DB2®-Backup und Wiederherstellung für AEM Forms](/help/forms/using/admin-help/files-back-recover.md#db2)
    * [Oracle-Backup und Wiederherstellung für AEM Forms](/help/forms/using/admin-help/files-back-recover.md#oracle)
-   * [Microsoft](/help/forms/using/admin-help/files-back-recover.md#sql-server)
+   * [Microsoft® SQL Server-Backup und Wiederherstellung für AEM Forms](/help/forms/using/admin-help/files-back-recover.md#sql-server)
    * [MySQL-Backup und Wiederherstellung für AEM Forms](/help/forms/using/admin-help/files-back-recover.md#mysql)
 
 1. Stellen Sie das Verzeichnis des globalen Dokumentenspeichers (GDS) wieder her, indem Sie zunächst den Inhalt des GDS-Verzeichnisses auf der vorhandenen Installation von AEM Forms löschen und dann den Inhalt des GDS-Verzeichnisses aus dem gesicherten GDS kopieren. Falls Sie den Speicherort des GDS-Verzeichnisses geändert haben, lesen Sie [Ändern des GDS-Speicherorts während der Wiederherstellung](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
@@ -127,7 +125,7 @@ Falls der globale Dokumentenspeicher an einem anderen als dem ursprünglichen Sp
 
 ## Wiederherstellen des globalen Dokumentenspeichers in einer Cluster-Umgebung {#recovering-the-gds-to-a-clustered-environment}
 
-Um den Speicherort des globalen Dokumentenspeichers in einer Cluster-Umgebung zu ändern, fahren Sie den gesamten Cluster herunter und führen Sie das Skript „LCSetGDS“ auf einem einzelnen Knoten des Clusters aus. (Siehe [Ändern des GDS-Speicherorts während der Wiederherstellung](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).) Starten Sie nur diesen Knoten. Sobald dieser Knoten vollständig gestartet ist, können andere Knoten im Cluster sicher gestartet werden. Die Knoten verweisen dann korrekt auf den neuen globalen Dokumentenspeicher.
+Um den Speicherort des globalen Dokumentenspeichers in einer Cluster-Umgebung zu ändern, fahren Sie den gesamten Cluster herunter und führen Sie das Skript „LCSetGDS“ auf einem einzelnen Knoten des Clusters aus. (Siehe [Ändern des GDS-Speicherorts während der Wiederherstellung](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).) Nur diesen Knoten starten. Sobald dieser Knoten vollständig gestartet ist, können andere Knoten im Cluster sicher gestartet werden. Die Knoten verweisen dann korrekt auf den neuen globalen Dokumentenspeicher.
 
 >[!NOTE]
 >

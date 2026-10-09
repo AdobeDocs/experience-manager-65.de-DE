@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '852'
+workflow-type: tm+mt
+source-wordcount: '855'
 ht-degree: 100%
-
 ---
-
 # Importieren und Verwalten von Anwendungen{#import-and-manage-applications}
 
 In AEM Forms ist eine *Anwendung* ein Container zum Speichern von Assets, die für die Implementierung einer AEM Forms-Lösung erforderlich sind. Beispiele für Assets sind Formularentwürfe, Formularfragmente, Bilder, Prozesse, DDX-Dateien, Formular-Guides, HTML-Seiten und SWF-Dateien. Während der Entwicklungsphase eines Projekts können Workbench-Benutzende Anwendungen direkt aus der Anwendungsansicht in Workbench bereitstellen. Nach der Bereitstellung werden diese Anwendungen in der Administrationskonsole auf der Registerkarte „Anwendungen“ auf der Seite „Anwendungsverwaltung“ angezeigt.
@@ -60,7 +58,7 @@ Auf der Registerkarte „Anwendungen“ können Sie Anwendungen, die in Workbenc
 
    Die Eigenschaft **syncState** gibt den Status der Synchronisierung der Daten zwischen dem AEM-Formular-Server und dem CRX-Repository an. Sobald der Importvorgang beginnt, wird dieser Status auf 0 (null) gesetzt. Dieser Status zeigt an, dass die Daten derzeit nicht synchronisiert sind. Wenn die Daten synchronisiert werden, wird der Status auf 1 gesetzt.
 
-## Bereitstellen einer Anwendung  {#deploy-an-application}
+## Bereitstellen einer Anwendung {#deploy-an-application}
 
 Sie können Anwendungen bereitstellen, die Sie importiert haben oder die Workbench-Benutzende aus Workbench importiert haben.
 

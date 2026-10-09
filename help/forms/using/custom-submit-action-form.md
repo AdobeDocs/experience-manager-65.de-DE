@@ -11,11 +11,9 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '1542'
-ht-degree: 100%
-
+source-wordcount: '1677'
+ht-degree: 98%
 ---
-
 # Schreiben benutzerdefinierter Übermittlungsaktionen für adaptive Formulare{#writing-custom-submit-action-for-adaptive-forms}
 
 | Version | Artikel-Link |
@@ -29,7 +27,7 @@ Adaptive Formulare benötigen Übermittlungsaktionen für die Verarbeitung der v
 
 Das Diagramm zeigt den Workflow für eine Übermittlungsaktion, die beim Klicken auf die Schaltfläche **[!UICONTROL Übermitteln]** in einem adaptiven Formular ausgelöst wird. Die Dateien in der Dateianlagenkomponente werden auf den Server geladen und die Formulardaten werden mit den URLs der hochgeladenen Dateien aktualisiert. Innerhalb des Clients werden die Daten im JSON-Format gespeichert. Der Client sendet eine Ajax-Abfrage an ein internes Servlet, das die angegebenen Daten schönt und im XML-Format zurückgibt. Der Client ordnet diese Daten in Aktionsfeldern an. Er übermittelt die Daten über eine Formular-Übermittlungsaktion an das endgültige Servlet (Guide Submit-Servlet). Anschließend übergibt das Servlet die Steuerung an die Übermittlungsaktion. Die Übermittlungsaktion kann die Abfrage an eine andere sling-Ressource weiterleiten oder den Browser zu einer anderen URL umleiten.
 
-![Diagramm mit dem Arbeitsablauf für eine Übermittlungsaktion](assets/diagram1.png)
+![Diagramm mit dem Workflow für eine Übermittlungsaktion](assets/diagram1.png)
 
 ### XML-Datenformat {#xml-data-format}
 
@@ -93,34 +91,34 @@ Wenn die Aktion keinen Weiterleitungspfad bereitstellt, leitet das Übermittlung
 
 ## Übermittlungsaktion {#submit-action}
 
-Bei einer Übermittlungsaktion handelt es sich um ein sling:Folder, das Folgendes enthält:
+Eine Sende-Aktion ist ein Sling:Folder das Folgendes enthält:
 
 * **addfields.jsp**: Dieses Skript stellt die Aktionsfelder bereit, die der HTML-Datei während der Ausgabe hinzugefügt werden. Verwenden Sie dieses Skript, um im Skript „post.POST.jsp“ verborgene Eingabeparameter hinzuzufügen, die während der Übermittlung benötigt werden.
 * **dialog.xml**: Dieses Skript ähnelt dem Dialogfeld für die CQ-Komponente. Es enthält Konfigurationsinformationen, die der Autor anpasst. Die Felder werden im Dialogfeld für die Bearbeitung des adaptiven Formulars auf der Registerkarte „Aktionen übermitteln“ angezeigt, wenn Sie die Sende-Aktion auswählen.
 * **post.POST.jsp**: Das Submit-Servlet ruft dieses Skript mit den Daten, die Sie übermitteln, und den zusätzlichen Daten aus den vorherigen Bereichen auf. Jede Erwähnung einer Aktionsausführung auf dieser Seite impliziert die Ausführung des Skripts „post.POST.jsp“. Um die Übermittlungsaktion mit dem adaptiven Formular zu registrieren, sodass sie im Dialogfeld für die Bearbeitung des adaptiven Formulars angezeigt wird, fügen Sie die folgenden Eigenschaften zu `sling:Folder` hinzu:
 
-   * **guideComponentType** vom Typ „String“ mit dem Wert **fd/af/components/guidesubmittype**
-   * **guideDataModel** vom Typ String, das den Typ des adaptiven Formulars angibt, für das die Sende-Aktion anwendbar ist. **xfa** wird für XFA-basierte adaptive Formulare unterstützt, während **xsd** für XSD-basierte adaptive Formulare unterstützt wird. **basic** wird für adaptive Formulare unterstützt, die weder XDP noch XSD verwenden. Um die Aktion auf mehreren verschiedenen Typen adaptiver Formulare anzuzeigen, fügen Sie die entsprechenden Strings hinzu. Trennen Sie die Zeichenfolgen durch Kommas. Um z. B. eine Aktion auf XFA- und XSD-basierten adaptiven Formularen sichtbar zu machen, geben Sie die Werte **xfa** bzw. **xsd** an.
+  * **guideComponentType** vom Typ „String“ mit dem Wert **fd/af/components/guidesubmittype**
+  * **guideDataModel** vom Typ String, das den Typ des adaptiven Formulars angibt, für das die Sende-Aktion anwendbar ist. **xfa** wird für XFA-basierte adaptive Formulare unterstützt, während **xsd** für XSD-basierte adaptive Formulare unterstützt wird. **basic** wird für adaptive Formulare unterstützt, die weder XDP noch XSD verwenden. Um die Aktion auf mehreren verschiedenen Typen adaptiver Formulare anzuzeigen, fügen Sie die entsprechenden Strings hinzu. Trennen Sie die Zeichenfolgen durch Kommas. Um z. B. eine Aktion auf XFA- und XSD-basierten adaptiven Formularen sichtbar zu machen, geben Sie die Werte **xfa** bzw. **xsd** an.
 
-   * **jcr:description** vom Typ „String“. Der Wert dieser Eigenschaft wird im Dialogfeld für die Bearbeitung adaptiver Formulare auf der Registerkarte „Übermittlungsaktionen“ in der Liste „Übermittlungsaktion“ angezeigt. Die vordefinierten Aktionen befinden sich im CRX-Repository im Verzeichnis **/libs/fd/af/components/guidesubmittype**.
+  * **jcr:description** vom Typ „String“. Der Wert dieser Eigenschaft wird im Dialogfeld für die Bearbeitung adaptiver Formulare auf der Registerkarte „Übermittlungsaktionen“ in der Liste „Übermittlungsaktion“ angezeigt. Die vordefinierten Aktionen befinden sich im CRX-Repository im Verzeichnis **/libs/fd/af/components/guidesubmittype**.
 
 ## Erstellen einer benutzerdefinierten Übermittlungsaktion {#creating-a-custom-submit-action}
 
-Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Übermittlungsaktion zu erstellen, die die Daten im CRX-Repository speichert und anschließend eine E-Mail an Sie sendet. Das adaptive Formular enthält die vorkonfigurierte Übermittlungsaktion „Inhalt speichern“ (veraltet), die die Daten im CRX-Repository speichert. Zudem stellt CQ eine [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)-API zum Senden von E-Mails bereit. Vor der Verwendung der Mail-API müssen Sie den Service „Day CQ Mail“ über die Systemkonsole [konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de&amp;wcmmode=disabled). Sie können die Aktion „Inhalt speichern“ (veraltet) erneut verwenden, um Daten im Repository zu speichern. Die Aktion „Inhalt speichern“ (veraltet) ist im Ordner /libs/fd/af/components/guidesubmittype/store im CRX-Repository verfügbar.
+Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Übermittlungsaktion zu erstellen, die die Daten im CRX-Repository speichert und anschließend eine E-Mail an Sie sendet. Das adaptive Formular enthält die vorkonfigurierte Übermittlungsaktion „Inhalt speichern“ (veraltet), die die Daten im CRX-Repository speichert. Zudem stellt CQ eine [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)-API zum Senden von E-Mails bereit. Vor der Verwendung der Mail-API müssen Sie den Service „Day CQ Mail“ über die Systemkonsole [konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de&wcmmode=disabled). Sie können die Aktion „Inhalt speichern“ (veraltet) erneut verwenden, um Daten im Repository zu speichern. Die Aktion „Inhalt speichern“ (veraltet) ist im Ordner /libs/fd/af/components/guidesubmittype/store im CRX-Repository verfügbar.
 
-1. Melden Sie sich unter der URL https://&lt;server>:&lt;port>/crx/de/index.jsp bei CRXDE Lite an. Erstellen Sie einen Knoten mit der Eigenschaft „sling:Folder“ und dem Namen „store_and_mail“ im Ordner /apps/custom_submit_action. Erstellen Sie den Ordner „custom_submit_action“, falls er noch nicht vorhanden ist.
+1. Melden Sie sich unter der URL https://&lt;server>:&lt;port>/crx/de/index.jsp bei CRXDE Lite an. Erstellen Sie einen Knoten mit der Eigenschaft „sling:Folder“ und dem Namen „store_and_mail“ im Ordner „/apps/custom_submit_action“. Erstellen Sie den Ordner „custom_submit_action“, falls er noch nicht vorhanden ist.
 
-   ![Screenshot zur Erstellung eines Knotens mit der Eigenschaft „sling:Folder“](assets/step1.png)
+   ![Screenshot zur Erstellung eines Knotens mit der Eigenschaft „sling:Folder](assets/step1.png)“
 
 1. **Füllen Sie die erforderlichen Konfigurationsfelder aus.**
 
-   Fügen Sie die Konfiguration hinzu, die für die Speichern-Aktion erforderlich ist. Kopieren Sie den Knoten **cq:dialog** der Speichern-Aktion aus dem Ordner /libs/fd/af/components/guidesubmittype/store in den Ordner „action“ unter /apps/custom_submit_action/store_and_email.
+   Fügen Sie die Konfiguration hinzu, die für die Speichern-Aktion erforderlich ist. Kopieren Sie den Knoten **cq:dialog** der Speichern-Aktion aus dem Ordner „/libs/fd/af/components/guidesubmittype/store“ in den Ordner „action“ unter /„apps/custom_submit_action/store_and_email“.
 
    ![Screenshot zum Kopieren des Knotens „dialog“ in den Ordner „action“](assets/step2.png)
 
 1. **Geben Sie Konfigurationsfelder an, um den Autor zur E-Mail-Konfiguration aufzufordern.**
 
-   Das adaptive Formular enthält auch eine E-Mail-Aktion, die E-Mails an Benutzer sendet. Passen Sie diese Aktion basierend auf Ihren Anforderungen an. Navigieren Sie zu /libs/fd/af/components/guidesubmittype/email/dialog. Kopieren Sie die Knoten aus dem Knoten „cq:dialog“ in den Knoten „cq:dialog“ Ihrer Sende-Aktion (/apps/custom_submit_action/store_and_email/dialog).
+   Das adaptive Formular enthält auch eine E-Mail-Aktion, die E-Mails an Benutzer sendet. Passen Sie diese Aktion basierend auf Ihren Anforderungen an. Navigieren Sie zu /libs/fd/af/components/guidesubmittype/email/dialog. Kopieren Sie die Knoten aus dem Knoten cq:dialog in den Knoten cq:dialog Ihrer Übermittlungsaktion (/apps/custom_submit_action/store_and_email/dialog).
 
    ![Anpassen der E-Mail-Aktion](assets/step3.png)
 
@@ -132,7 +130,7 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Übermittlung
 
    * **guideDataModel** vom Typ **String** und dem Wert **xfa, xsd, basic**
 
-   * **jcr:description** vom Typ **String** mit dem Wert **Store and Email Action**
+   * **jcr:description** vom Typ **String** mit Wert **Store and Email Action**
 
 1. Öffnen Sie ein beliebiges adaptives Formular. Klicken Sie auf die Schaltfläche **Bearbeiten** neben **Start**, um das Dialogfeld **Bearbeiten** des Containers für adaptive Formulare zu öffnen. Die neue Aktion wird auf der Registerkarte **Aktionen übermitteln** angezeigt. Wenn Sie die Aktion **Store and Email** auswählen, wird die im Knoten „dialog“ hinzugefügte Konfiguration angezeigt.
 

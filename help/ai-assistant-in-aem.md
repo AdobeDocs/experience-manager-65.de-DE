@@ -9,27 +9,36 @@ autotag-review: '2026-05-18T18:36:07.915Z'
 TQID: 'https://experienceleague.adobe.com/dlFmrtn05S20z96wtAfkpGliITeVJhVkofqPix6QMxk'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Privacy
+source-git-commit: a6f7741fe575a194732abee7dfc9c531d1c58cc2
 workflow-type: tm+mt
-source-wordcount: 1379
-ht-degree: 94%
-
+source-wordcount: '1327'
+ht-degree: 79%
 ---
-
 # KI-Assistent in AEM 6.5 {#about-ai-assistant-in-aem}
 
 >[!IMPORTANT]
@@ -59,28 +68,26 @@ Das folgende Video (3 Minuten und 25 Sekunden lang) bietet eine schrittweise Anl
 
 Um Zugriff auf den KI-Assistenten in AEM zu erhalten, müssen Kundinnen und Kunden über Folgendes verfügen:
 
-* Berechtigung zur Verwendung des KI-Assistenten in AEM für Produktkenntnisse. Mit dieser Berechtigung können Sie im Chat des KI-Assistenten produktbezogene Fragen stellen. Diese Berechtigung muss aktiviert sein.
+* Zugriff auf Produktkenntnisse, über die Sie im KI-Assistenten-Chat produktbezogene Fragen stellen können. Dieser Zugriff steht standardmäßig allen Benutzern in Ihrer Organisation zur Verfügung.
 * Berechtigung zum Öffnen von Support-Tickets, wofür die Rolle **Support-Admin** erforderlich ist.
 
 >[!NOTE]
 >
->Anfragen an den KI-Assistenten in AEM werden über Adobe Identity Management Services (IMS) authentifiziert. Weitere Informationen finden Sie im [Überblick über Adobe Identity Management Services](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
+>Anfragen an den KI-Assistenten in AEM werden über Adobe Identity Management Services (IMS) authentifiziert. Weitere Informationen finden Sie im [Überblick über Adobe Identity Management Services](https://www.adobe.com/cc-shared/assets/pdf/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
 **So erhalten Sie Zugriff auf den KI-Assistenten in AEM:**
 
-1. Kundinnen und Kunden müssen über eine Zusatzvereinbarung verfügen, um auf die meisten KI-gestützten und Agent-basierten Funktionen in Adobe Experience Manager zugreifen zu können. Weitere Informationen erhalten Sie vom Adobe-Support-Personal.
+1. Kundinnen und Kunden müssen über eine Zusatzvereinbarung verfügen, um auf die meisten KI-gestützten und Agent-basierten Funktionen in Adobe Experience Manager zugreifen zu können. Weitere Informationen erhalten Sie vom Adobe-Support-Personal. Informationen zur Funktionsweise der Aktivierung generativer KI finden Sie unter [Generative KI in CX Enterprise-Programmen](https://experienceleague.adobe.com/de/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai).
 
-1. Zur Verwendung des KI-Assistenten in AEM ist eine Berechtigung für den Zugriff auf Produktkenntnisse über den KI-Assistenten obligatorisch. Diese Berechtigung ist standardmäßig AKTIVIERT.
-
-   Wenn Sie steuern möchten, wer auf Produktkenntnisse zugreifen kann, senden Sie von der mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-Mail an [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com). Adobe kann die Zugriffssteuerung auf Benutzerebene aktivieren. Wenn diese Option aktiviert ist, kann Ihre für die Administration zuständige Person Zugriff auf Benutzerebene gewähren, indem sie die Schritte unter [KI-Assistenten in AEM konfigurieren](/help/ai-assistant-in-aem-admin.md) befolgt.
+1. Sobald Ihr Unternehmen über diese Vereinbarung verfügt, können alle Benutzer standardmäßig den KI-Assistenten für Produktkenntnisse verwenden. Es sind keine zusätzlichen Berechtigungen pro Benutzer oder pro Gruppe erforderlich.
 
 
 ## Umfang {#scope}
 
-Der aktuelle Umfang des KI-Assistenten in AEM konzentriert sich auf die Beantwortung von Fragen zum Produktwissen für AEMr.as a Cloud Service. Dieser Anwendungsbereich beinhaltet umfassende Unterstützung für Schlüsselbereiche. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
+Der aktuelle Umfang des KI-Assistenten in AEM konzentriert sich auf Fragen zum Produktwissen für AEM as a Cloud Service. Dieser Anwendungsbereich beinhaltet umfassende Unterstützung für Schlüsselbereiche. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
 
 * **Oberflächen**: In AEM Experience Hub, der Authoring-Benutzeroberfläche und Cloud Manager verfügbar.
-* **Funktionen**: Produktkenntnisse und erste Anlaufstelle für Fehlerbehebung und Anleitung, automatisierte Erstellung von Support-Tickets und Suche.
+* **Funktionen**: Produktwissen und primäre Ressource für Fehlerbehebung und Anleitung, automatisierte Erstellung von Support-Tickets und Suche.
 * **Vorteil**: Spart Zeit, beschleunigt das Auffinden von Informationen und die Wertschöpfungszeit, reduziert die Notwendigkeit einer manuellen Erstellung von Support-Tickets und erhöht die Effizienz beim Erstellen von Support-Tickets.
 
 ## Datenschutz, Sicherheit und Governance{#privacy-security-governance}
@@ -89,14 +96,14 @@ Der KI-Assistent in AEM ist so konzipiert, dass großer Wert auf Datenschutz, Si
 
 In diesem Artikel werden die Funktionen beschrieben, die Sie vom KI-Assistenten in AEM erwarten können, um Vertrauen zu schaffen:
 
-* Der KI-Assistent verwendet in AEM keine personenbezogenen Daten, auch nicht für Trainings-Zwecke.
+* KI Assistant in AEM verwendet keine personenbezogenen Daten, auch nicht für Trainingszwecke.
 * Der KI-Assistent in AEM hat keinen Zugriff auf Konsumentendaten.
 * Für Interaktion mit dem KI-Assistenten in AEM ist eine explizite Berechtigung erforderlich.
 * Von Benutzenden gestellte Prompts (Fragen, Abfragen usw.) werden nicht mit anderen Kundinnen und Kunden geteilt.
 
 <!-- See also [Security at Adobe whitepaper](). NEED ACTIVE LINK FROM ADRIAN NICOLAE TANASE. CURRENTLY 404. -->
 
-## Den KI-Assistenten in AEM für Produktkenntnisse und die automatisierte Erstellung von Support-Tickets kennenlernen {#ai-prod-insights}
+## Erfahren Sie mehr über den KI-Assistenten in AEM für Produktkenntnisse und die automatisierte Erstellung von Support-Tickets {#ai-prod-insights}
 
 Produktkenntnisse umfassen Konzepte und Themen, die aus der Dokumentation zu Adobe Experience League abgeleitet wurden. Diese Fragen lassen sich in folgende Untergruppen einteilen:
 
@@ -113,14 +120,14 @@ Produktkenntnisse umfassen Konzepte und Themen, die aus der Dokumentation zu Ado
 {style="table-layout:auto"}
 
 
-## Wie man effektive Fragen formuliert {#ai-craft-questions}
+## Wie man effektive Fragen schreibt {#ai-craft-questions}
 
 Um vom KI-Assistenten in AEM präzise Antworten zu erhalten, ist es wichtig, dass Sie Ihre Fragen klar und kontextbezogen formulieren. Verwenden Sie folgende Tipps, um dafür zu sorgen, dass Ihre Abfragen klar und gut strukturiert sind:
 
 * Formulieren Sie Ihre Aufgabe oder Frage klar und prägnant.
-* Vermeiden Sie mehrdeutige Formulierungen oder übermäßig komplexe Syntax, um das Verständnis zu erleichtern.
+* Um das Verständnis zu verbessern, vermeiden Sie mehrdeutige Formulierungen oder eine übermäßig komplexe Syntax.
 * Binden Sie relevanten Kontext zu Ihrer Aufgabe oder Frage ein, da dies dem KI-Assistenten in AEM hilft, präzisere und relevantere Antworten zu liefern.
-In Ihrem Prompt ist es beispielsweise hilfreich, die AEM-Lösung, in der Sie arbeiten, zu benennen: Sites, Assets, Dynamic Media, Edge Delivery Services, Cloud Manager oder Forms.
+Nennen Sie beispielsweise in der Eingabeaufforderung die AEM-Lösung, in der Sie arbeiten.
 
 ### Beispiele für nicht unterstützte Fragen {#ai-unsupported-questions}
 
@@ -133,29 +140,9 @@ In Ihrem Prompt ist es beispielsweise hilfreich, die AEM-Lösung, in der Sie arb
 
 ## KI-Assistent in AEM verwenden {#ai-use}
 
-<!--
-UNHIDE AFTER BETA or at GA
-### Enable AI Assistant in AEM access through Admin Console 
-
-To use AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
-
-![AI Assistant in AEM in the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
-
-From an employee's perspective, the process is straightforward: identify the product administrator for Adobe Experience Manager in your organization and request to be added to the AI-enabled user group. Once you appear in that group, the Assistant icon shows up automatically the next time you sign in.
-
-Administrators should keep normal Cloud Manager governance in mind. Hold product administrator rights in the Admin Console to create profiles, manage user groups, or edit permissions. If users also need the Assistant's built-in **Create Support Ticket** feature, add the standard **Support Admin** role (standard Admin Console role) to the same individuals or group.
-
-![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
-
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/accessing/overview). 
-
-See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
--->
-
-
 ### Den KI-Assistenten in einer AEM-Unterhaltung starten
 
-Sie können den KI-Assistenten in AEM zurücksetzen und eine neue Unterhaltung beginnen, wenn Sie Themen ändern möchten. Dies ist besonders hilfreich bei der Fehlerbehebung in Abfragen, die fehlschlagen oder falsche Informationen liefern.
+Sie können den KI-Assistenten in AEM zurücksetzen und eine neue Unterhaltung beginnen, wenn Sie Themen ändern möchten. Diese Funktion ist besonders nützlich bei der Fehlerbehebung bei Abfragen, die fehlschlagen oder falsche Informationen liefern.
 
 **So starten Sie einen KI-Assistenten in einer AEM-Unterhaltung:**
 
@@ -209,10 +196,10 @@ Geben Sie mithilfe der folgenden Optionen Feedback zu Ihren Erfahrungen mit dem 
 
 Im Folgenden finden Sie Antworten auf einige häufig gestellte Fragen zum KI-Assistenten:
 
-* **Werden die Informationen vom KI-Assistenten in AEM in Echtzeit bereitgestellt?**\
-  Nein. Der KI-Assistent bezieht seinen Content aus der Adobe Experience League-Dokumentation. Es kann einige Zeit dauern, bis Aktualisierungen von Content in den Antworten widergespiegelt werden.
+* **Sind die Informationen vom KI-Assistenten in AEM in Echtzeit?**\
+  Nein. Der KI-Assistent bezieht seinen Content aus der Adobe Experience League-Dokumentation. Es dauert einige Zeit, bis Aktualisierungen des Inhalts in den Antworten widergespiegelt werden.
 * **Welche Adobe-Anwendungen unterstützt der KI-Assistant in AEM?**\
-  Derzeit unterstützt der KI-Assistent Anfragen zu Produktkenntnissen in AEM as a Cloud Service, einschließlich Sites, Assets, Dynamic Media, Cloud Manager und Forms.
+  Derzeit unterstützt AI Assistant Anfragen zu Produktkenntnissen in AEM as a Cloud Service.
 * **Welche Funktionen hat der KI-Assistent in AEM?**\
   Der KI-Assistent in AEM beantwortet Fragen zu Adobe-Produktwissen.
 * **Verwendet der KI-Assistent in AEM personenbezogene Daten für Trainings-Daten?**\

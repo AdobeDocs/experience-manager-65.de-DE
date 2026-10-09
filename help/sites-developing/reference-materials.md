@@ -1,11 +1,15 @@
 ---
 title: API-Handbücher
+
 description: Dokumentation zu den APIs, die AEM zum Entwickeln von Anwendungen bereitstellt
+
+
 contentOwner: Guillaume Carlino
 topic-tags: introduction
 audience: developing
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
+
 docset: aem65
 exl-id: 8d8a7237-8e87-4730-be90-2a18144fc65a
 solution: Experience Manager, Experience Manager Sites
@@ -13,20 +17,18 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 100%
-
+source-wordcount: '322'
+ht-degree: 87%
 ---
-
 # API-Handbücher {#api-guides}
 
 Adobe Experience Manager (AEM) stellt mehrere APIs zum Entwickeln von Anwendungen und Erweitern von AEM bereit. Die folgende Liste enthält die Dokumentation für APIs, die von AEM unterstützt werden:
 
 * [Adobe AEM 6.5.0-API](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/index.html)
-* [API für die (Touch-optimierte) Granite-Benutzeroberfläche – Dokumentation](https://www.adobe.io/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
+* [API für die (Touch-optimierte) Granite-Benutzeroberfläche - Dokumentation](https://www.adobe.io/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
 * [Coral-UI-Handbuch](https://www.adobe.io/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 * [Dokumentation zur Widgets-API (klassische Benutzeroberfläche)](https://www.adobe.io/experience-manager/reference-materials/6-5/widgets-api/index.html)
-* [JavaScript-API-Referenz zum UI-Test-Framework](https://www.adobe.io/experience-manager/reference-materials/6-5/test-api/index.html)
+* [JAVASCRIPT-API-Referenz zum UI-Test-Framework](https://www.adobe.io/experience-manager/reference-materials/6-5/test-api/index.html)
 * [JavaScript-API-Referenz zum Editor](https://www.adobe.io/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
 
 AEM Single-Page Application (SPA) Editor – SDK-Framework-JavaScript-API-Referenzen:
@@ -36,13 +38,13 @@ AEM Single-Page Application (SPA) Editor – SDK-Framework-JavaScript-API-Refer
 * [Bearbeitbare React-Komponenten](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 * [Bearbeitbare Angular-Komponenten](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
-APIs für AEM-Bereitstellung und Content Management:
+APIs für AEM-Bereitstellung und Content-Management:
 
 * Kernkomponenten (JSON)
 
-   * [JSON Exporter](/help/sites-developing/json-exporter.md)
-   * [Aktivieren eines JSON-Exports für eine Komponente](/help/sites-developing/json-exporter-components.md)
-   * Weitere Informationen finden Sie im [Abschnitt „Komponenten“ des Benutzerhandbuchs für Entwickler](/help/sites-developing/getting-started.md).
+  * [JSON Exporter](/help/sites-developing/json-exporter.md)
+  * [Aktivieren eines JSON-Exports für eine Komponente](/help/sites-developing/json-exporter-components.md)
+  * Weitere Informationen finden Sie im [Abschnitt „Komponenten“ des Benutzerhandbuchs für Entwickler](/help/sites-developing/getting-started.md).
 
 * **Assets**: Die Asset-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für Assets, einschließlich Binärdateien, Metadaten, Ausgabeformaten und Kommentaren. Siehe [AEM Assets-HTTP-API](/help/assets/mac-api-assets.md)
 

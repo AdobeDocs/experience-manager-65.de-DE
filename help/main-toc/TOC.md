@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Verwenden Sie die Dokumentation zu Adobe Experience Manager 6.5, um mehr über die Funktionsweise zu erfahren und darüber, was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5
-source-git-commit: d4a8b41ee8136bb69845fdf65456e1407b2b5d19
+source-git-commit: f46e653863a8724a5f50bed7a2f76079803b162e
 workflow-type: tm+mt
 source-wordcount: '8300'
 ht-degree: 95%
@@ -599,6 +599,7 @@ ht-degree: 95%
     + [Importieren und Exportieren von Assets in AEM Forms](/help/forms/using/import-export-forms-templates.md)
     + [Unterstützung neuer Gebietsschemata für die Lokalisierung adaptiver Formulare](/help/forms/using/supporting-new-language-localization.md)
     + Umgang mit Benutzerdaten {#handling-user-data}
+      + [Datenaufbewahrung in AEM Forms](/help/forms/using/data-retention-aem-forms.md)
       + [Forms-zentrierte Workflows auf OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
       + [User Management in Forms](/help/forms/using/user-management-handling-user-data.md)
       + [Forms-JEE-Workflows](/help/forms/using/forms-workflow-jee-handling-user-data.md)
@@ -1236,7 +1237,6 @@ ht-degree: 95%
 + KI in AEM {#ai-in-aem}
   + [Überblick](/help/ai-in-aem/overview.md)
   + KI-Assistent {#ai-assistant}
-    + [Konfigurieren des KI-Assistenten in AEM](/help/ai-assistant-in-aem-admin.md)
     + [Info zum KI-Assistenten in AEM](/help/ai-assistant-in-aem.md)
 + Content and Commerce {#commerce}
   + [Einführung und Überblick](/help/commerce/cif/introduction.md)

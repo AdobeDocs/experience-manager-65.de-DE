@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 100%
-
+source-wordcount: '1774'
+ht-degree: 99%
 ---
-
 # Erste Schritte mit dem Prozess-Reporting{#getting-started-with-process-reporting}
 
 Process Reporting gibt AEM Forms-Benutzern die Möglichkeit, Informationen über AEM Forms-Prozesse abzufragen, die derzeit in der AEM Forms-Implementierung definiert sind. Process Reporting greift jedoch nicht direkt auf Daten aus dem AEM Forms-Repository zu. Die Daten werden zunächst auf geplanter Basis im Process Reporting-Repository veröffentlicht (*vom ProcessDataPublisher &amp; ProcessDataStorage-Service* s). Die Berichte und Abfragen in Process Reporting werden dann aus den im Repository veröffentlichten Process Reporting-Daten generiert. Process Reporting wird als Bestandteil des Forms Workflow-Moduls installiert.
@@ -52,7 +50,7 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungszeitplan zu än
 >
 >Wenn Sie Ihre AEM Forms-Implementierung auf einem Cluster ausführen, führen Sie die folgenden Schritte auf jedem Knoten des Clusters aus.
 
-1. Beenden Sie die AEM Forms-Server-Instanz.
+1. Stoppen Sie die AEM Forms-Server-Instanz.
 1. &#x200B;
 
    * (Für Windows) Öffnen Sie die `[JBoss root]/bin/run.conf.bat`-Datei in einem Editor.
@@ -68,7 +66,7 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungszeitplan zu än
 
 1. Starten Sie den AEM Forms-Server neu.
 
-1. Beenden Sie die AEM Forms-Server-Instanz.
+1. Stoppen Sie die AEM Forms-Server-Instanz.
 1. Melden Sie sich bei WebSphere® Administrative Console an. Klicken Sie in der Navigationsstruktur auf **Servers** > **Application servers** und im rechten Bereich auf den Server-Namen.
 
 1. Klicken Sie unter „Server Infrastructure“ auf **Java™ and Process Management** > **Process Definition**.
@@ -83,7 +81,7 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungszeitplan zu än
 
 1. Klicken Sie erst auf **Apply**, dann auf „OK“ und schließlich auf **Save directly to the master configuration**.
 1. Starten Sie den AEM Forms-Server neu.
-1. Beenden Sie die AEM Forms-Server-Instanz.
+1. Stoppen Sie die AEM Forms-Server-Instanz.
 1. Melden Sie sich bei Administration Console an. Die Standardadresse von WebLogic Administration Console lautet `https://[hostname]:[port]/console`.
 1. Klicken Sie im Change Center auf **Sperren und bearbeiten**.
 1. Klicken Sie unter „Domain Structure“ auf **Environment** > **Servers** und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
@@ -140,11 +138,11 @@ Der ReportConfiguration-Service wird vom Prozess-Reporting zum Konfigurieren sei
 
 1. Anmelden bei **Configuration Manager** mit CRX-Administratorberechtigungen. Die Standard-URL von Configuration Manager lautet `https://'[server]:[port]'/lc/system/console/configMgr`
 1. Öffnen Sie den **ReportingConfiguration**-Service.
-1. **Anzahl von Datensätzen**
+1. **Anzahl von Einträgen**
 
-   Beim Ausführen einer Abfrage im Repository kann ein Ergebnis möglicherweise eine große Anzahl von Datensätzen enthalten. Wenn die Ergebnismenge groß ist, kann die Ausführung der Abfrage Server-Ressourcen beanspruchen.
+   Beim Ausführen einer Abfrage im Repository kann ein Ergebnis möglicherweise eine große Anzahl von Einträgen enthalten. Wenn die Ergebnismenge groß ist, kann die Ausführung der Abfrage Server-Ressourcen beanspruchen.
 
-   Um große Ergebnismengen zu verarbeiten, teilt der ReportConfiguration-Service die Abfrageverarbeitung in Datensatz-Batches auf. Dadurch wird die Systemlast reduziert.
+   Um große Ergebnismengen zu verarbeiten, teilt der ReportConfiguration-Service die Abfrageverarbeitung in Eintrags-Batches auf. Dadurch wird die Systemlast reduziert.
 
    `Default`: `1000`
 

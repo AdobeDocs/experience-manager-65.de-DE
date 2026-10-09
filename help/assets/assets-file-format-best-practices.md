@@ -1,6 +1,6 @@
 ---
 title: Best Practices für die Verarbeitung der unterstützten Dateiformate
-description: Best Practices für die Verarbeitung der verschiedenen unterstützten Dateitypen mithilfe von  [!DNL Experience Manager Assets].
+description: Best Practices für die Verarbeitung der verschiedenen unterstützten Dateitypen mithilfe von [!DNL Experience Manager Assets].
 contentOwner: AG
 role: Admin
 feature: Asset Management,Developer Tools
@@ -8,11 +8,9 @@ exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 100%
-
+source-wordcount: '481'
+ht-degree: 97%
 ---
-
 # Best Practices für Dateiformate in Assets {#assets-file-format-best-practices}
 
 [!DNL Adobe Experience Manager Assets] unterstützt viele proprietäre und Drittanbieter-Dateiformatbibliotheken, um benutzerseitigen Bedarf an Dateiunterstützung zu decken. Zu den unterstützten Adobe-Bibliotheken zählen [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer und [!DNL Adobe InDesign Server]. Außerdem unterstützt [!DNL Experience Manager Assets] Drittanbieterbibliotheken wie [!DNL ImageMagick], [!DNL TwelveMonkeys] usw.

@@ -1,6 +1,6 @@
 ---
-title: Bereinigen von Datensätzen aus der Job Manager-Datenbank
-description: 'Große Prozessdaten können zu niedrigerer AEM Forms-Leistung führen. Es ist empfehlenswert, Prozessdaten zu bereinigen, wenn die Einträge nicht mehr benötigt werden. '
+title: Bereinigen von Einträgen aus der Job Manager-Datenbank
+description: Große Prozessdaten können zu niedrigerer AEM Forms-Leistung führen. Es ist empfehlenswert, Prozessdaten zu bereinigen, wenn die Einträge nicht mehr benötigt werden.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
@@ -10,21 +10,19 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '483'
+workflow-type: tm+mt
+source-wordcount: '487'
 ht-degree: 100%
-
 ---
-
-# Bereinigen von Datensätzen aus der Job Manager-Datenbank {#purge-records-from-the-job-manager-database}
+# Bereinigen von Einträgen aus der Job Manager-Datenbank {#purge-records-from-the-job-manager-database}
 
 >[!NOTE]
 > 
 > Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
-Prozessdaten, die beim Aufrufen eines Prozesses mit langer Lebensdauer generiert werden, können zu stark anwachsen, was zu einer Beeinträchtigung der Leistung von AEM Forms und zur unnötigen Belegung von Speicherplatz führt.  Es ist empfehlenswert, Prozessdaten zu bereinigen, wenn die Einträge nicht mehr benötigt werden. 
+Prozessdaten, die beim Aufrufen eines Prozesses mit langer Lebensdauer generiert werden, können zu stark anwachsen, was zu einer Beeinträchtigung der Leistung von AEM Forms und zur unnötigen Belegung von Speicherplatz führt. Es ist empfehlenswert, Prozessdaten zu bereinigen, wenn die Einträge nicht mehr benötigt werden.
 
-Sie können die Administrationskonsole verwenden, um eine einmalige Bereinigung von veralteten Einträgen auszuführen oder regelmäßige automatische Bereinigungen zu planen.  Weitere Methoden zum Bereinigen veralteter Einträge werden unter [Bereinigen von Prozessdaten](/help/forms/using/admin-help/purging-process-data.md#purging-process-data) erläutert.
+Sie können die Administrationskonsole verwenden, um eine einmalige Bereinigung von veralteten Einträgen auszuführen oder regelmäßige automatische Bereinigungen zu planen. Weitere Methoden zum Bereinigen veralteter Einträge werden unter [Bereinigen von Prozessdaten](/help/forms/using/admin-help/purging-process-data.md#purging-process-data) erläutert.
 
 **Zugreifen auf die Seite „Zeitplaner für die Auftragsbereinigung“**
 
@@ -46,13 +44,13 @@ Weitere Informationen zu aktuell geplanten Bereinigungen werden im Informationsf
    >
    >Einträge, die im Zusammenhang mit nicht ausgeführten Prozessen erstellt wurden, werden nicht bereinigt, auch wenn sie älter als der angegebene Zeitraum sind.
 
-1. Geben Sie an, wann die Bereinigung ausgeführt werden soll.  Aktivieren Sie das Kontrollkästchen „Aktuelles Datum und Zeit verwenden“ oder deaktivieren Sie es und klicken Sie auf die Kalender- bzw. Uhrsymbole, um das Datum und die Uhrzeit anzugeben, wann die Bereinigung ausgeführt werden soll.
+1. Geben Sie an, wann die Bereinigung ausgeführt werden soll. Aktivieren Sie das Kontrollkästchen „Aktuelles Datum und Zeit verwenden“ oder deaktivieren Sie es und klicken Sie auf die Kalender- bzw. Uhrsymbole, um das Datum und die Uhrzeit anzugeben, wann die Bereinigung ausgeführt werden soll.
 
    >[!NOTE]
    >
    >Wenn Sie ein Startdatum und eine Uhrzeit angeben, die in der Vergangenheit liegen, wird die Bereinigung sofort ausgeführt, sobald Sie auf „Zeitplaner starten“ klicken.
 
-1. Klicken Sie auf „Zeitplaner starten“.  Alle vorherigen geplanten Einstellungen des Zeitplaners werden durch die neuen Einstellungen ersetzt.
+1. Klicken Sie auf „Zeitplaner starten“. Alle vorherigen geplanten Einstellungen des Zeitplaners werden durch die neuen Einstellungen ersetzt.
 
 **Konfigurieren eines automatischen Bereinigungszeitplans**
 
@@ -63,10 +61,10 @@ Weitere Informationen zu aktuell geplanten Bereinigungen werden im Informationsf
    >
    >Einträge, die im Zusammenhang mit nicht ausgeführten Prozessen erstellt wurden, werden nicht bereinigt, auch wenn sie älter als der angegebene Zeitraum sind.
 
-1. Geben Sie an, wann die Bereinigungen beginnen sollen.  Aktivieren Sie das Kontrollkästchen „Aktuelles Datum und Zeit verwenden“ oder deaktivieren Sie es und klicken Sie auf die Kalender- bzw. Uhrsymbole, um das Datum und die Uhrzeit anzugeben, wann die Bereinigung ausgeführt werden soll.
+1. Geben Sie an, wann die Bereinigungen beginnen sollen. Aktivieren Sie das Kontrollkästchen „Aktuelles Datum und Zeit verwenden“ oder deaktivieren Sie es und klicken Sie auf die Kalender- bzw. Uhrsymbole, um das Datum und die Uhrzeit anzugeben, wann die Bereinigung ausgeführt werden soll.
 
    >[!NOTE]
    >
    >Wenn Sie ein Startdatum und eine Startzeit angeben, die in der Vergangenheit liegen, berechnet AEM Formulare das logische nächste Startdatum basierend auf dem angegebenen Datum. Wenn Sie beispielsweise planen, dass die Auftragsbereinigung ab dem 7. April wöchentlich ausgeführt werden soll und heute der 9. April ist, wird die erste Bereinigung am 14. April ausgeführt.
 
-1. Klicken Sie auf „Zeitplaner starten“.  Alle vorherigen geplanten Einstellungen des Zeitplaners werden durch die neuen Einstellungen ersetzt.
+1. Klicken Sie auf „Zeitplaner starten“. Alle vorherigen geplanten Einstellungen des Zeitplaners werden durch die neuen Einstellungen ersetzt.

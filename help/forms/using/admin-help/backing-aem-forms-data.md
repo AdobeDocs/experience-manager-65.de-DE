@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1527'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '1555'
+ht-degree: 98%
 ---
-
 # Sichern der Adobe Experience Manager (AEM) Forms-Daten {#backing-up-the-aem-forms-data}
 
 <!-- back up is two words when used as a verb; backup is one word when used as an adjective or noun. -->
@@ -55,19 +53,19 @@ Beachten Sie zusätzlich die folgenden Richtlinien für den Sicherungs-/Wiederhe
 
   Beachten Sie beim Sichern der Autoren- und Veröffentlichungsinstanzen die folgenden Punkte:
 
-   * Stellen Sie sicher, dass die Sicherung für Autoren- und Veröffentlichungsinstanzen so synchronisiert sind, dass sie gleichzeitig starten. Obwohl Sie Autoren- und Veröffentlichungsinstanzen während der Sicherung weiter verwenden können, wird empfohlen, dabei kein Medienelement zu veröffentlichen, um nicht gespeicherte Änderungen zu vermeiden. Warten Sie also, bis die Sicherung der Autoren- und Veröffentlichungsinstanzen beendet ist, bevor Sie neue Medienelemente veröffentlichen.
-   * Die vollständige Sicherung des Autorknotens umfasst die Sicherung von Forms Manager- und AEM Forms Workspace-Daten.
-   * Workbench-Entwicklerinnen und -Entwickler können ihre Prozesse weiterhin lokal bearbeiten. Sie sollten während der Sicherung jedoch keine neuen Prozesse bereitstellen.
-   * Die Entscheidung über die Dauer der einzelnen Sicherungssitzungen (für den kontinuierlichen Sicherungsmodus) sollte auf der Gesamtzeit basieren, die zum Sichern aller Daten in AEM Forms erforderlich ist (DB, GDS, AEM-Repository und alle anderen zusätzlichen benutzerdefinierten Daten).
+  * Stellen Sie sicher, dass die Sicherung für Autoren- und Veröffentlichungsinstanzen so synchronisiert sind, dass sie gleichzeitig starten. Obwohl Sie Autoren- und Veröffentlichungsinstanzen während der Sicherung weiter verwenden können, wird empfohlen, dabei kein Medienelement zu veröffentlichen, um nicht gespeicherte Änderungen zu vermeiden. Warten Sie also, bis die Sicherung der Autoren- und Veröffentlichungsinstanzen beendet ist, bevor Sie neue Medienelemente veröffentlichen.
+  * Die vollständige Sicherung des Autorknotens umfasst die Sicherung von Forms Manager- und AEM Forms Workspace-Daten.
+  * Workbench-Entwicklerinnen und -Entwickler können ihre Prozesse weiterhin lokal bearbeiten. Sie sollten während der Sicherung jedoch keine neuen Prozesse bereitstellen.
+  * Die Entscheidung über die Dauer der einzelnen Sicherungssitzungen (für den kontinuierlichen Sicherungsmodus) sollte auf der Gesamtzeit basieren, die zum Sichern aller Daten in AEM Forms erforderlich ist (DB, GDS, AEM-Repository und alle anderen zusätzlichen benutzerdefinierten Daten).
 
 Sichern Sie die AEM Forms-Datenbank, einschließlich aller Transaktionsprotokolle. Siehe [AEM Forms-Datenbank](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
 
 Weitere Informationen finden Sie im entsprechenden Knowledgebase-Artikel für Ihre Datenbank:
 <!-- The four URLs below are all 404s; checked July 19, 2023 -->
-* [Oracle-Backup und -Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403624)
-* [MySQL-Backup und -Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403625)
-* [Microsoft® SQL Server-Backup und -Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403623)
-* [DB2®-Backup und -Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403626)
+* [Oracle-Backup und Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403624)
+* [MySQL-Backup und Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403625)
+* [Microsoft® SQL Server-Backup und Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403623)
+* [DB2®-Backup und Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403626)
 
 Diese Artikel enthalten Anleitungen zu grundlegenden Datenbankfunktionen für die Sicherung und Wiederherstellung von Daten. Sie sind nicht als allumfassende technische Handbücher für die Sicherungs- und Wiederherstellungsfunktion der Datenbank eines bestimmten Anbieters gedacht. Es handelt sich lediglich um allgemeine Informationen zu Befehlen, die zum Erstellen einer zuverlässigen Datenbanksicherungsstrategie für Ihre AEM Forms-Anwendungsdaten erforderlich sind.
 
