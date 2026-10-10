@@ -10,13 +10,29 @@ role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2471'
 ht-degree: 100%
-
 ---
-
 # Rendern interaktiver PDF-Formulare {#rendering-interactive-pdf-forms}
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
@@ -115,7 +131,7 @@ Um ein interaktives PDF-Formular zu rendern, führen Sie die folgenden Schritte 
 1. Rendern Sie ein interaktives PDF-Formular.
 1. Schreiben Sie den Formular-Datenstrom in den Client-Webbrowser.
 
-**Projektdateien einschließen**
+**Einschließen von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -184,7 +200,7 @@ So rendern Sie ein interaktives PDF-Formular mithilfe der Forms-API (Java):
 
 1. Projektdateien einschließen
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-forms-client.jar“ in den Klassenpfad Ihres Java-Projekts ein. 
+   Fügen Sie Client-JAR-Dateien wie „adobe-forms-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen eines Forms Client-API-Objekts
 
@@ -203,7 +219,7 @@ So rendern Sie ein interaktives PDF-Formular mithilfe der Forms-API (Java):
    * Erstellen Sie ein `java.util.HashMap`-Objekt, um Dateianhänge zu speichern, indem Sie seinen Konstruktor verwenden.
    * Rufen Sie die Methode `put` des `java.util.HashMap`-Objekts für jede Datei auf, die an das gerenderte Formular angehängt werden soll. Übergeben Sie die folgenden Werte an diese Methode:
 
-      * Ein Zeichenfolgenwert, der den Namen des Dateianhangs angibt, einschließlich der Dateinamenerweiterung.
+     * Ein Zeichenfolgenwert, der den Namen des Dateianhangs angibt, einschließlich der Dateinamenerweiterung.
 
    * Ein `com.adobe.idp.Document`-Objekt, das die Dateianlage enthält.
 
@@ -219,9 +235,9 @@ So rendern Sie ein interaktives PDF-Formular mithilfe der Forms-API (Java):
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document`-Objekt.
    * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert. Dies ist ein optionaler Parameter, für den Sie `null` angeben können, wenn Sie keine Laufzeitoptionen angeben möchten.
    * Ein `URLSpec`-Objekt, das URI-Werte enthält, die für den Forms-Service erforderlich sind.
-   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, für den Sie `null` angeben können, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
 
-   Die Methode `renderPDFForm` gibt ein `FormsResult`-Objekt zurück, das einen Formulardaten-Stream enthält, der in den Client-Webbrowser geschrieben werden muss.
+   Die `renderPDFForm`-Methode gibt ein `FormsResult`-Objekt zurück, das einen Formulardatenstrom enthält, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben des Formulardaten-Streams in den Client-Webbrowser
 
@@ -244,7 +260,7 @@ So rendern Sie ein interaktives PDF-Formular mithilfe der Forms-API (Webservice)
 
 1. Erstellen eines Forms Client-API-Objekts
 
-   Erstellen Sie ein `FormsService`-Objekt und legen Sie Authentifizierungswerte fest.
+   Erstellen Sie ein `FormsService` Objekt und legen Sie Authentifizierungswerte fest.
 
 1. Angeben der URI-Werte
 
@@ -258,7 +274,7 @@ So rendern Sie ein interaktives PDF-Formular mithilfe der Forms-API (Webservice)
    * Erstellen Sie ein `java.util.HashMap`-Objekt, um Dateianhänge zu speichern, indem Sie seinen Konstruktor verwenden.
    * Rufen Sie die Methode `put` des `java.util.HashMap`-Objekts für jede Datei auf, die an das gerenderte Formular angehängt werden soll. Übergeben Sie die folgenden Werte an diese Methode:
 
-      * Ein Zeichenfolgenwert, der den Namen des Dateianhangs angibt, einschließlich der Dateinamenerweiterung
+     * Ein Zeichenfolgenwert, der den Namen des Dateianhangs angibt, einschließlich der Dateinamenerweiterung
 
    * Ein `BLOB`-Objekt, das den Dateianhang enthält
 
@@ -276,9 +292,9 @@ So rendern Sie ein interaktives PDF-Formular mithilfe der Forms-API (Webservice)
    * Ein `URLSpec`-Objekt, das URI-Werte enthält, die für den Forms-Service erforderlich sind.
    * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
    * Ein leeres `com.adobe.idp.services.holders.BLOBHolder`-Objekt, das von der Methode gefüllt wird. Damit wird das wiedergegebene PDF-Formular gespeichert.
-   * Ein leeres `javax.xml.rpc.holders.LongHolder`-Objekt, das von der Methode aufgefüllt wird. (Dieses Argument speichert die Anzahl der Seiten im Formular.)
+   * Ein leeres `javax.xml.rpc.holders.LongHolder`-Objekt, das von der Methode gefüllt wird. (Dieses Argument speichert die Anzahl der Seiten im Formular.)
    * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das von der Methode aufgefüllt wird. (Dieses Argument speichert den Gebietsschemawert.)
-   * Ein leeres `com.adobe.idp.services.holders.FormsResultHolder`-Objekt, das die Ergebnisse dieses Vorgangs enthalten wird.
+   * Ein leeres `com.adobe.idp.services.holders.FormsResultHolder`-Objekt, das die Ergebnisse dieses Vorgangs enthält.
 
    Die Methode `renderPDFForm` füllt das `com.adobe.idp.services.holders.FormsResultHolder`-Objekt, das als letzter Argumentwert übergeben wird, mit einem Formulardaten-Stream, der in den Client-Webbrowser geschrieben werden muss.
 
