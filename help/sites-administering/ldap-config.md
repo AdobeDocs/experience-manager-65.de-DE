@@ -256,7 +256,7 @@ AEM 6 kann so konfiguriert werden, dass eine LDAP-Authentifizierung über SSL e
 
 1. Vergewissern Sie sich, dass eine funktionstüchtige SSL-Bibliothek installiert ist. Bei dieser Vorgehensweise wird beispielhaft OpenSSL verwendet.
 
-1. Erstellen Sie eine benutzerdefinierte OpenSSL-Konfigurationsdatei (.cnf). Kopieren Sie für diese Konfiguration die Konfigurationsdatei **openssl.cnf ** und passen Sie diese an. Auf UNIX-Systemen befindet sie sich unter `/usr/lib/ssl/openssl.cnf`.
+1. Erstellen Sie eine benutzerdefinierte OpenSSL-Konfigurationsdatei (.cnf). Kopieren Sie für diese Konfiguration die Konfigurationsdatei **openssl.cnf &#x200B;** und passen Sie diese an. Auf UNIX-Systemen befindet sie sich unter `/usr/lib/ssl/openssl.cnf`.
 
 1. Erstellen Sie dann den Zertifizierungsstellen-Stammschlüssel, indem Sie den nachfolgenden Befehl in einem Terminal ausführen:
 
@@ -292,12 +292,12 @@ Um die Debug-Protokollierung zu aktivieren, müssen Sie Folgendes tun:
 
 * Protokollstufe: Debug
 * Protokolldatei logs/ldap.log
-* Meldungsmuster: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Meldungsmuster: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &ast;{4}&ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Protokollstufe: Debug
 * Protokolldatei: logs/external.log
-* Meldungsmuster: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Meldungsmuster: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &ast;{4}&ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Hinweis zur Gruppenzuordnung {#a-word-on-group-affiliation}

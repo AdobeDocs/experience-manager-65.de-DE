@@ -41,7 +41,7 @@ Mithilfe der AEM-Suche kann nach AEM-Assets gesucht werden. Zudem kann eine Text
 
 * Wenn Sie AEM Forms on OSGi verwenden:
 
-  * Installieren Sie[ AEM Forms-Dokumentensicherheit ](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html)auf dem AEM Forms-Server.
+  * Installieren Sie[&#x200B; AEM Forms-Dokumentensicherheit &#x200B;](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html)auf dem AEM Forms-Server.
 
   * Stellen Sie sicher, dass ein AEM Forms auf dem JEE-Server läuft und die Dokumentensicherheit auf den entsprechenden AEM Forms auf dem JEE-Server installiert ist. Der AEM Forms on JEE-Server ist erforderlich, um das geschützte Dokument mit einem Index zu versehen.
 
