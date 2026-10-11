@@ -10,13 +10,22 @@ exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1418'
-ht-degree: 100%
-
+ht-degree: 98%
 ---
-
 # Strukturvorlage{#scaffolding}
 
 Manchmal muss eine große Anzahl von Seiten erstellt werden, die zwar die gleiche Struktur, aber unterschiedliche Inhalte haben. Über die standardmäßige Adobe Experience Manager(AEM)-Benutzeroberfläche müssen Sie dann jede Seite erstellen, die entsprechenden Komponenten auf die Seite ziehen und sie einzeln auffüllen.
@@ -91,7 +100,7 @@ Beachten Sie die Eigenschaft „Name“ für dieses Feld. Sie hat den Wert
 
 `./jcr:content/par/text/text`
 
-Dies ist der Name der Eigenschaft, in die der Inhalt dieses Feldes geschrieben wird, wenn die Grundlage für die Erstellung einer neuen Seite verwendet wird. Die Eigenschaft wird als relativer Pfad zu dem Knoten angegeben, der die zu erstellende Seite repräsentiert. Sie gibt den Eigenschaftstext unter dem Knotentext an, der sich unter dem par-Knoten befindet, der wiederum ein untergeordnetes Element des Knotens jcr:content unter dem Seitenknoten ist.
+Dies ist der Name der Eigenschaft, in die der Inhalt dieses Feldes geschrieben wird, wenn die Grundlage für die Erstellung einer neuen Seite verwendet wird. Die Eigenschaft wird als relativer Pfad zu dem Knoten angegeben, der die zu erstellende Seite repräsentiert. Sie gibt den Eigenschaftstext unter dem Knotentext an, der sich unter dem par-Knoten befindet, der wiederum ein untergeordnetes Element des jcr:content-Knotens unter dem Seitenknoten ist.
 
 Dies definiert den Speicherort des Inhaltsspeichers für den Text, der in dieses Feld eingegeben wird. Für diesen Inhalt müssen jedoch zwei weitere Eigenschaften angegeben werden:
 
@@ -136,7 +145,7 @@ Der feste Wert für diese Eigenschaft lautet:
 
 `foundation/components/textimage`
 
- Dadurch wird festgelegt, dass die für das Rendern des Textinhalts verwendete Komponente vom Typ *Textbild* ist. Zusammen mit dem booleschen Wert `isRichText` in dem anderen ausgeblendeten Feld kann die Komponente die eigentliche unter `./jcr:content/par/text/text` gespeicherte Textzeichenfolgen wie gewünscht rendern.
+Dadurch wird festgelegt, dass die für das Rendern des Textinhalts verwendete Komponente vom Typ *Textbild* ist. Zusammen mit dem booleschen Wert `isRichText` in dem anderen ausgeblendeten Feld kann die Komponente die eigentliche unter `./jcr:content/par/text/text` gespeicherte Textzeichenfolgen wie gewünscht rendern.
 
 ### Strukturvorlagen mit MSM-Vererbung {#scaffolding-with-msm-inheritance}
 

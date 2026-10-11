@@ -9,13 +9,26 @@ exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '747'
 ht-degree: 100%
-
 ---
-
 # Komponente „Drafts and Submissions“{#drafts-and-submissions-component}
 
 Mit der Komponente „Drafts &amp;Submissions“ können Sie alle Formulare auflisten, die den Status „Entwurf“ aufweisen, und diejenigen, die bereits gesendet wurden. Die Komponente bietet separate Bereiche (Registerkarten) für Entwürfe und für gesendete Formulare. Die Benutzenden können nur ihre Entwürfe und übermittelten Formulare anzeigen.
@@ -87,7 +100,7 @@ Führen Sie die folgenden Schritte aus, um eine Komponente „Entwürfe und Send
   <tr>
    <td> </td>
    <td>Layout-Vorlage</td>
-   <td>Gibt das für die Liste der übermittelten Formulare zu verwendende Layout <strong> </strong>an.  </td>
+   <td>Gibt das für die Liste der übermittelten Formulare zu verwendende Layout <strong> </strong>an. </td>
   </tr>
  </tbody>
 </table>
@@ -98,7 +111,7 @@ Wenn Sie die Forms Portal Aktion-Übermittlungsaktion verwenden oder die Store-D
 
 Mit dem Formularportal können Sie Daten im lokalen AEM-Repository, im AEM-Remote-Repository oder in einer Datenbank speichern. Mit AEM Forms haben Sie die Möglichkeit, die Implementierung der Speicherung von Benutzerdaten für Entwürfe und Übermittlungen anzupassen. Sie können Standardmethoden überschreiben, um festzulegen, wie Entwurfs- und Übermittlungsdaten an einem Speicherort Ihrer Wahl gespeichert werden. Beispiel: Sie können die Daten in einem Datenspeicher speichern, der derzeit in Ihrem Unternehmen implementiert ist.
 
-Das Forms-Portal bietet vordefinierte Services (APIs) zum Speichern von Daten im CRX-Repository lokaler und entfernter Instanzen für die Veröffentlichung von AEM Forms. Sie können die Standardimplementierungen durch benutzerdefinierte Implementierungen ersetzen, wie es im Artikel [Konfiguration von Services für die Speicherung von Entwürfem und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md) beschrieben wird, um die standardmäßige Funkion zu ersetzen. Detaillierte Informationen zu den Methoden, die für eine benutzerdefinierte Implementierung zum Speichern von Inhalten an einem gesicherten Speicherort erforderlich sind, finden Sie unter [Anpassen von Services für Entwurfs- und Übermittlungsdaten](/help/forms/using/custom-draft-submission-data-services.md) und [Benutzerdefinierter Speicher für die Komponente der Entwürfe und Übermittlungen.](/help/forms/using/adding-custom-storage-provider-forms.md)
+Das Forms-Portal bietet vordefinierte Services (APIs) zum Speichern von Daten im CRX-Repository lokaler und entfernter Veröffentlichungsinstanzen von AEM Forms. Sie können die Standardimplementierungen durch benutzerdefinierte Implementierungen ersetzen, wie es im Artikel [Konfiguration von Services für die Speicherung von Entwürfem und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md) beschrieben wird, um die standardmäßige Funkion zu ersetzen. Detaillierte Informationen zu den Methoden, die für eine benutzerdefinierte Implementierung zum Speichern von Inhalten an einem gesicherten Speicherort erforderlich sind, finden Sie unter [Anpassen von Services für Entwurfs- und Übermittlungsdaten](/help/forms/using/custom-draft-submission-data-services.md) und [Benutzerdefinierter Speicher für die Komponente der Entwürfe und Übermittlungen.](/help/forms/using/adding-custom-storage-provider-forms.md)
 
 Die AEM Forms-Dokumentation bietet ein [Beispiel für die Integration der Komponente der Entwürfe und Übermittlungen in die Datenbank](integrate-draft-submission-database.md). Sie können die als Beispiel dargestellte Implementierung verwenden, um Ihre eigene Implementierung zu entwickeln.
 
