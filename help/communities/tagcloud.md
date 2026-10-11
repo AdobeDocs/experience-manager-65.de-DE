@@ -9,13 +9,20 @@ exl-id: 56af5362-78de-4308-8958-63a45e8573cc
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '579'
 ht-degree: 5%
-
 ---
-
 # Verwenden von Social Tag Cloud {#using-social-tag-cloud}
 
 ## Einführung {#introduction}
@@ -36,7 +43,7 @@ Um einer Seite im Autorenmodus eine `Social Tag Cloud` Komponente hinzuzufügen,
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [erforderlichen Client-seitigen &#x200B;](tag.md#essentials-for-client-side) enthalten sind, wird die `Social Tag Cloud` Komponente wie folgt angezeigt:
+Wenn die [erforderlichen Client-seitigen ](tag.md#essentials-for-client-side) enthalten sind, wird die `Social Tag Cloud` Komponente wie folgt angezeigt:
 
 ![social-tag](assets/social-tag.png)
 
@@ -53,8 +60,8 @@ Geben Sie auf der Registerkarte **[!UICONTROL Social Tag]** Cloud) an, welche Ta
 * **[!UICONTROL Anzuzeigende Social-Tags]**
 Identifizieren Sie, welche UGC-Tags angezeigt werden sollen. Die Pulldown-Optionen sind:
 
-   * `From page and child pages`
-   * `All tags`
+  * `From page and child pages`
+  * `All tags`
 
   Der Standardwert ist `From page and child pages`, wobei sich „Seite“ auf die Einstellung **Seite** unten bezieht.
 
@@ -82,10 +89,10 @@ Geben Sie auf der Registerkarte **[!UICONTROL Social Tag Cloud (Design]** an, wi
 
   Wenn diese Option aktiviert ist, werden die Titel für die übergeordneten Tags und der Namespace für jedes angewendete Tag angezeigt.
 
-  Zum Beispiel:
+  Beispiel:
 
-   * Geprüft: `Geometrixx Media: Gadgets / Cars`
-   * Nicht aktiviert: `Cars`
+  * Geprüft: `Geometrixx Media: Gadgets / Cars`
+  * Nicht aktiviert: `Cars`
 
   Bei einem einfachen -Tag gibt es keinen Unterschied.
 
@@ -103,8 +110,8 @@ Geben Sie auf der Registerkarte **[!UICONTROL Social Tag Cloud (Design]** an, wi
 
   `Geometrixx Media (the namespace)`, `Gadgets`, und `Cars`
 
-   * Kontrollkästchen aktiviert: Nur `Cars` werden angezeigt, falls angewendet.
-   * Deaktiviert: `Geometrixx Media`, `Gadgets` und `Cars` werden angezeigt, falls sie angewendet wurden.
+  * Kontrollkästchen aktiviert: Nur `Cars` werden angezeigt, falls angewendet.
+  * Deaktiviert: `Geometrixx Media`, `Gadgets` und `Cars` werden angezeigt, falls sie angewendet wurden.
 
   Ein einfaches Tag ist ein Leaf-Tag.
 
@@ -122,4 +129,4 @@ Geben Sie auf der Registerkarte **[!UICONTROL Social Tag Cloud (Design]** an, wi
 
 Weitere Informationen finden Sie auf der Seite [Tag Essentials](tag.md) für Entwickler.
 
-Informationen [&#x200B; Erstellen und Verwalten von Tags finden &#x200B;](tag-ugc.md) unter Tagging von benutzergenerierten Inhalten (UGC) .
+Informationen [ Erstellen und Verwalten von Tags finden ](tag-ugc.md) unter Tagging von benutzergenerierten Inhalten (UGC) .

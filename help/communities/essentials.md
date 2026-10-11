@@ -9,7 +9,16 @@ exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 16%
@@ -18,7 +27,7 @@ ht-degree: 16%
 
 Die Funktionen von Adobe Experience Manager (AEM) Communities erfordern, dass Besuchende der Site Mitglied werden und sich bei der [Community-Site](overview.md#communitiessites) anmelden, bevor sie Inhalte posten können. Daher [Community-Site-Vorlagen](sites.md) aus denen eine Community-Site [erstellt](sites-console.md) erstellt wird, so konzipiert, dass sie eine Anmeldefunktion und Benutzerprofile, Messaging, Suche, Moderation und Übersetzung enthalten.
 
-Eine Community-Site unterstützt Mitglieder beim Erstellen von Community[Gruppen, wenn die Funktion &#x200B;](functions.md#groups-function)Community-Gruppen“ in der ausgewählten Community-Site-Vorlage enthalten ist.
+Eine Community-Site unterstützt Mitglieder beim Erstellen von Community[Gruppen, wenn die Funktion ](functions.md#groups-function)Community-Gruppen“ in der ausgewählten Community-Site-Vorlage enthalten ist.
 
 Im Folgenden finden Sie Links zu wichtigen Informationen zu Komponenten, Funktionen und Funktionen von Communities.
 

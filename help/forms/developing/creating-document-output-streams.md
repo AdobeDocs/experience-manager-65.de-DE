@@ -9,13 +9,29 @@ role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '19156'
 ht-degree: 98%
-
 ---
-
 # Erstellen von Dokumentausgabe-Streams  {#creating-document-output-streams}
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
@@ -242,7 +258,7 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output-API (Java):
 
    >[!NOTE]
    >
-   >Sie können die Option „Linearisierte PDF“ nicht mithilfe der Methode `setLinearizedPDF` des `RenderOptionsSpec`-Objekts festlegen, wenn das PDF-Eingabedokument zertifiziert oder digital signiert ist. (Weitere Informationen finden Sie unter [PDF-Dokumente digital signieren &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >Sie können die Option „Linearisierte PDF“ nicht mithilfe der Methode `setLinearizedPDF` des `RenderOptionsSpec`-Objekts festlegen, wenn das PDF-Eingabedokument zertifiziert oder digital signiert ist. (Weitere Informationen finden Sie unter [PDF-Dokumente digital signieren ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Generieren Sie ein PDF-Dokument.
 
@@ -259,7 +275,7 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output-API (Java):
 
    >[!NOTE]
    >
-   >Beim Erzeugen eines PDF-Dokuments durch Aufrufen der Methode `generatePDFOutput` können Sie keine Daten mit einem XFA-PDF-Formular zusammenführen, das signiert oder zertifiziert ist. (Siehe [Digitales Signieren und Zertifizieren von Dokumenten &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Beim Erzeugen eines PDF-Dokuments durch Aufrufen der Methode `generatePDFOutput` können Sie keine Daten mit einem XFA-PDF-Formular zusammenführen, das signiert oder zertifiziert ist. (Siehe [Digitales Signieren und Zertifizieren von Dokumenten ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -267,7 +283,7 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output-API (Java):
 
    >[!NOTE]
    >
-   >Sie können auch ein PDF-Dokument erstellen, indem Sie die Methode `generatePDFOutput2` des `OutputClient`-Objekts aufrufen. (Weitere Informationen finden Sie unter [Übergeben von Dokumenten in Content Services (nicht mehr unterstützt) an den Ausgabe-Service &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >Sie können auch ein PDF-Dokument erstellen, indem Sie die Methode `generatePDFOutput2` des `OutputClient`-Objekts aufrufen. (Weitere Informationen finden Sie unter [Übergeben von Dokumenten in Content Services (nicht mehr unterstützt) an den Ausgabe-Service ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Rufen Sie die Ergebnisse des Vorgangs ab.
 
@@ -309,10 +325,10 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output API (Web Service):
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Referenzieren Sie eine XML-Datenquelle.
 
@@ -338,7 +354,7 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output API (Web Service):
 
    >[!NOTE]
    >
-   >Sie können Option „Linearisiertes PDF“ nicht festlegen, indem Sie das Datenelement `linearizedPDF` des `RenderOptionsSpec`-Objekts verwenden, falls das die Eingabe-PDF-Datei zertifiziert oder digital signiert ist. (Weitere Informationen finden Sie unter [PDF-Dokumente digital signieren &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >Sie können Option „Linearisiertes PDF“ nicht festlegen, indem Sie das Datenelement `linearizedPDF` des `RenderOptionsSpec`-Objekts verwenden, falls das die Eingabe-PDF-Datei zertifiziert oder digital signiert ist. (Weitere Informationen finden Sie unter [PDF-Dokumente digital signieren ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Generieren Sie ein PDF-Dokument.
 
@@ -356,11 +372,11 @@ Erstellen Sie ein PDF-Dokument mithilfe der Output API (Web Service):
 
    >[!NOTE]
    >
-   >Beim Erstellen eines PDF-Dokuments mithilfe des Aufrufs der Methode `generatePDFOutput` können Sie keine Daten mit einem XFA-PDF-Formular zusammenführen, das signiert oder zertifiziert ist. (Siehe [Digitales Signieren und Zertifizieren von Dokumenten &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Beim Erstellen eines PDF-Dokuments mithilfe des Aufrufs der Methode `generatePDFOutput` können Sie keine Daten mit einem XFA-PDF-Formular zusammenführen, das signiert oder zertifiziert ist. (Siehe [Digitales Signieren und Zertifizieren von Dokumenten ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
-   >Sie können auf ein PDF-Dokument erstellen, indem Sie die Methode `generatePDFOutput2` des `OutputClient`-Objekts aufrufen. (Weitere Informationen finden Sie unter [Übergeben von Dokumenten in Content Services (nicht mehr unterstützt) an den Ausgabe-Service &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >Sie können auf ein PDF-Dokument erstellen, indem Sie die Methode `generatePDFOutput2` des `OutputClient`-Objekts aufrufen. (Weitere Informationen finden Sie unter [Übergeben von Dokumenten in Content Services (nicht mehr unterstützt) an den Ausgabe-Service ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Rufen Sie die Ergebnisse des Vorgangs ab.
 
@@ -567,10 +583,10 @@ So erstellen Sie ein PDF/A-Dokument mithilfe der Ausgabe-API (Webservice):
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Referenzieren Sie eine XML-Datenquelle.
 
@@ -767,9 +783,9 @@ Sie können das nicht interaktive Formular als PDF-Datei speichern. Das Formular
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
 
    * Weisen Sie den Konstantenwert `BasicHttpSecurityMode.TransportCredentialOnly` zum Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
@@ -1091,9 +1107,9 @@ Erstellen Sie ein PDF-Dokument basierend auf Fragmenten mithilfe der Output Serv
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
 
    * Weisen Sie den Wert der Konstante `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
@@ -1299,10 +1315,10 @@ Drucken Sie mit der Output API (Web-Service) in eine Datei:
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Referenzieren Sie eine XML-Datenquelle.
 
@@ -1541,12 +1557,12 @@ Senden Sie mithilfe der Ausgabe API (Java) einen Druck-Stream an einen Netzwerkd
 
    * Rufen Sie ein zu druckendes Dokument ab, indem Sie die Methode `generatePrintedOutput` des `OutputClient`-Objekts aufrufen und die folgenden Werte übergeben:
 
-      * Ein `PrintFormat`-Aufzählungswert, der den Druck-Stream angibt. Um beispielsweise einen PostScript-Druckstream zu erstellen, übergeben Sie `PrintFormat.PostScript`.
-      * Ein string-Wert, der den Namen des Formularentwurfs angibt.
-      * Ein Zeichenfolgenwert, der den Speicherort zugehöriger Begleitdateien (z. B. Grafikdateien) angibt.
-      * Ein Zeichenfolgenwert, der den Speicherort der zu verwendenden XDC-Datei angibt.
-      * Das `PrintedOutputOptionsSpec`-Objekt, das Laufzeitoptionen enthält, die zum Drucken in eine Datei erforderlich sind.
-      * Das `com.adobe.idp.Document`-Objekt, das die XML-Datenquelle darstellt, welche die mit dem Formularentwurf zusammenzuführenden Formulardaten enthält.
+     * Ein `PrintFormat`-Aufzählungswert, der den Druck-Stream angibt. Um beispielsweise einen PostScript-Druckstream zu erstellen, übergeben Sie `PrintFormat.PostScript`.
+     * Ein string-Wert, der den Namen des Formularentwurfs angibt.
+     * Ein Zeichenfolgenwert, der den Speicherort zugehöriger Begleitdateien (z. B. Grafikdateien) angibt.
+     * Ein Zeichenfolgenwert, der den Speicherort der zu verwendenden XDC-Datei angibt.
+     * Das `PrintedOutputOptionsSpec`-Objekt, das Laufzeitoptionen enthält, die zum Drucken in eine Datei erforderlich sind.
+     * Das `com.adobe.idp.Document`-Objekt, das die XML-Datenquelle darstellt, welche die mit dem Formularentwurf zusammenzuführenden Formulardaten enthält.
 
      Diese Methode gibt ein `OutputResult`-Objekt zurück, das die Ergebnisse des Vorgangs enthält.
 
@@ -1585,10 +1601,10 @@ So senden Sie einen Druck-Stream an einen Netzwerkdrucker, indem Sie die Ausgabe
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Referenzieren Sie eine XML-Datenquelle.
 
@@ -1610,15 +1626,15 @@ So senden Sie einen Druck-Stream an einen Netzwerkdrucker, indem Sie die Ausgabe
 
    * Rufen Sie ein zu druckendes Dokument ab, indem Sie die Methode `generatePrintedOutput` des `OutputServiceService`-Objekts aufrufen und die folgenden Werte übergeben:
 
-      * Ein `PrintFormat`-Aufzählungswert, der den Druck-Stream angibt. Um beispielsweise einen PostScript-Druckstream zu erstellen, übergeben Sie `PrintFormat.PostScript`.
-      * Ein string-Wert, der den Namen des Formularentwurfs angibt.
-      * Ein Zeichenfolgenwert, der den Speicherort zugehöriger Begleitdateien (z. B. Grafikdateien) angibt.
-      * Ein Zeichenfolgenwert, der den Speicherort der zu verwendenden XDC-Datei angibt.
-      * Das `PrintedOutputOptionsSpec`-Objekt, das Laufzeitoptionen für das Drucken enthält, die beim Senden eines Druck-Streams an einen Netzwerkdrucker verwendet werden.
-      * Das `BLOB`-Objekt, das die XML-Datenquelle enthält, die Formulardaten enthält.
-      * Ein `BLOB`-Objekt, das von der `generatePrintedOutput`-Methode gefüllt wird. Die `generatePrintedOutput`-Methode füllt dieses Objekt mit generierten Metadaten, die das Dokument beschreiben. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
-      * Ein `BLOB`-Objekt, das von der `generatePrintedOutput`-Methode gefüllt wird. Die Methode `generatePrintedOutput` füllt dieses Objekt mit Ergebnisdaten. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
-      * Ein `OutputResult`-Objekt, das die Ergebnisse des Vorgangs enthält. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
+     * Ein `PrintFormat`-Aufzählungswert, der den Druck-Stream angibt. Um beispielsweise einen PostScript-Druckstream zu erstellen, übergeben Sie `PrintFormat.PostScript`.
+     * Ein string-Wert, der den Namen des Formularentwurfs angibt.
+     * Ein Zeichenfolgenwert, der den Speicherort zugehöriger Begleitdateien (z. B. Grafikdateien) angibt.
+     * Ein Zeichenfolgenwert, der den Speicherort der zu verwendenden XDC-Datei angibt.
+     * Das `PrintedOutputOptionsSpec`-Objekt, das Laufzeitoptionen für das Drucken enthält, die beim Senden eines Druck-Streams an einen Netzwerkdrucker verwendet werden.
+     * Das `BLOB`-Objekt, das die XML-Datenquelle enthält, die Formulardaten enthält.
+     * Ein `BLOB`-Objekt, das von der `generatePrintedOutput`-Methode gefüllt wird. Die `generatePrintedOutput`-Methode füllt dieses Objekt mit generierten Metadaten, die das Dokument beschreiben. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
+     * Ein `BLOB`-Objekt, das von der `generatePrintedOutput`-Methode gefüllt wird. Die Methode `generatePrintedOutput` füllt dieses Objekt mit Ergebnisdaten. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
+     * Ein `OutputResult`-Objekt, das die Ergebnisse des Vorgangs enthält. (Dieser Parameterwert ist nur für den Aufruf des Webservices erforderlich.)
 
    * Erstellen Sie ein Objekt vom Typ `BLOB`, das an den Drucker gesendet werden soll, indem Sie den Wert der Methode `generatedDoc` des `OutputResult`-Objekts abrufen. Diese Methode gibt ein `BLOB`-Objekt zurück, das PostScript-Daten enthält, die von der Methode `generatePrintedOutput` zurückgegeben werden.
 
@@ -1880,10 +1896,10 @@ Erstellen mehrerer PDF-Dateien mithilfe der Output API (Web-Service):
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Referenzieren Sie eine XML-Datenquelle.
 
@@ -2112,10 +2128,10 @@ Erstellen Sie Suchregeln mithilfe der Ausgabe-API (Web-Service):
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Referenzieren Sie eine XML-Datenquelle.
 
@@ -2326,10 +2342,10 @@ Reduzieren Sie ein interaktives PDF-Dokument mithilfe der Ausgabe-API (Web-Servi
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `OutputServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Rufen Sie ein interaktives PDF-Dokument ab.
 

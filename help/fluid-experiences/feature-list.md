@@ -6,13 +6,22 @@ feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
 solution: Experience Manager Sites,Experience Manager Assets
 role: Admin
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 94%
-
 ---
-
 # AEM Fluid Experiences – Funktionsliste{#aem-fluid-experiences-feature-list}
 
 Adobe Experience Manager Fluid Experiences nutzt die leistungsstarken Funktionen von AEM Sites, AEM Dynamic Media und AEM Assets, um eine robuste Lösung für die Headless-Content-Bereitstellung zu bieten.
@@ -64,7 +73,7 @@ In den folgenden Tabellen sind die Funktionen von AEM Fluid Experiences mit eine
 |---|
 | [Benutzerverwaltung](/help/sites-administering/user-group-ac-admin.md) |
 | [Mehrsprachiges Asset-Management](/help/assets/multilingual-assets.md) |
-| [Internationalisierung &#x200B;](/help/sites-developing/i18n.md) |
+| [Internationalisierung ](/help/sites-developing/i18n.md) |
 | [Inhaltsübersetzung](/help/sites-administering/translation.md) |
 | [Überwachung](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Sicherung](/help/sites-administering/backup-and-restore.md) |

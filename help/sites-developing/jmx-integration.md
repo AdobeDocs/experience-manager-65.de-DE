@@ -7,13 +7,22 @@ exl-id: fe727406-09cb-4516-8278-806fd78cfc12
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 98%
-
 ---
-
 # Integrieren von Diensten mit der JMX-Konsole{#integrating-services-with-the-jmx-console}
 
 Erstellen Sie mit der JMX-Konsole MBeans für die Verwaltung von Diensten und stellen Sie sie bereit. Veröffentlichen Sie Dienstattribute und -vorgänge, damit Administrationsaufgaben durchgeführt werden können.
@@ -131,7 +140,7 @@ Die folgende Abbildung zeigt die Seite für dieses MBean in der JMX-Konsole.
 
 ### Registrieren von MBeans {#registering-mbeans}
 
-Wenn Sie MBeans als OSGi-Dienst registrieren, werden sie automatisch beim MBean-Server registriert. Um ein MBean in CQ5 zu installieren, schließen Sie es in ein Bundle ein und exportieren Sie den MBean-Dienst wie jeden anderen OSGi-Dienst.
+Wenn Sie MBeans als OSGi-Dienst registrieren, werden sie automatisch beim MBean-Server registriert. Um ein MBean in CQ5 zu installieren, schließen Sie es in ein Paket ein und exportieren Sie den MBean-Dienst wie jeden anderen OSGi-Dienst.
 
 Neben den zu OSGi gehörenden Metadaten müssen Sie auch die Metadaten angeben, die das Aries JMX Whiteboard-Modul für die Registrierung des MBean beim MBean-Server benötigt:
 
@@ -207,7 +216,7 @@ Ein MBean-Dienst-Manager ist nützlich, wenn Dienstkonfigurationen im Repository
 
 ## Beispiel: Überwachen von Workflow-Modellen mit JMX {#example-monitoring-workflow-models-using-jmx}
 
-In diesem Beispiel stellt das MBean Informationen zu den CQ5-Workflow-Modellen bereit, die im Repository gespeichert sind. Eine MBean-Manager-Klasse erstellt MBeans basierend auf Workflow-Modellen, die im Repository gespeichert sind, und registriert ihre OSGi-Dienste zur Laufzeit. Dieses Beispiel besteht aus einem einzelnen Bundle, das die folgenden Mitglieder enthält:
+In diesem Beispiel stellt das MBean Informationen zu den CQ5-Workflow-Modellen bereit, die im Repository gespeichert sind. Eine MBean-Manager-Klasse erstellt MBeans basierend auf Workflow-Modellen, die im Repository gespeichert sind, und registriert ihre OSGi-Dienste zur Laufzeit. Dieses Beispiel besteht aus einem einzelnen Paket, das die folgenden Mitglieder enthält:
 
 * WorkflowMBean: die Verwaltungsschnittstelle
 * WorkflowMBeanImpl: die MBean-Implementierungsklasse
@@ -218,7 +227,7 @@ In diesem Beispiel stellt das MBean Informationen zu den CQ5-Workflow-Modellen b
 
 WorkflowMBeanManagerImpl enthält eine Methode zur Komponentenaktivierung. Wenn die Komponente aktiviert wird, führt die Methode die folgenden Aufgaben durch:
 
-* Sie ruft einen BundleContext für das Bundle ab.
+* Sie ruft einen BundleContext für das Paket ab.
 * Sie fragt beim Repository die Pfade der vorhandenen Workflow-Modelle ab.
 * Sie erstellt MBeans für jedes Workflow-Modell.
 * Sie registriert die MBeans in der Registrierung des OSGi-Dienstes.
@@ -423,12 +432,12 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
 
 ### Die POM-Datei für das Beispiel-MBean {#the-pom-file-for-the-example-mbean}
 
-Der Einfachheit halber können Sie den folgenden XML-Code in Ihre Projektdatei pom.xml kopieren, um das Komponenten-Bundle zu erstellen. Das POM verweist auf mehrere erforderliche Plug-ins und Abhängigkeiten.
+Der Einfachheit halber können Sie den folgenden XML-Code in Ihre Projektdatei pom.xml kopieren, um das Komponentenpaket zu erstellen. Das POM verweist auf mehrere erforderliche Plug-ins und Abhängigkeiten.
 
 **Plug-ins:**
 
 * Apache Maven Compiler-Plug-in: Kompiliert Java-Klassen aus dem Quell-Code.
-* Apache Felix Maven Bundle-Plug-in: Erstellt das Bundle und das Manifest.
+* Apache Felix Maven Bundle-Plug-in: Erstellt das Paket und das Manifest.
 * Apache Felix Maven SCR-Plug-in: Erstellt die Komponentendeskriptordatei und konfiguriert den Manifest-Header der Dienstkomponente.
 
 **Hinweis:** Zur Verfassungszeit dieses Textes ist das Maven SCR-Plug-in nicht mit dem m2e-Plug-in für Eclipse kompatibel. (Siehe [Felix Bug 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Um die Eclipse-IDE zu verwenden, installieren Sie Maven und verwenden Sie die Befehlszeilenschnittstelle, um Builds durchzuführen.

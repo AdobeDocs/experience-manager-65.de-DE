@@ -8,13 +8,22 @@ exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1788'
 ht-degree: 96%
-
 ---
-
 # Rich-Text-Editor {#rich-text-editor}
 
 Der Rich-Text-Editor ist ein grundlegender Baustein für die Eingabe von Textinhalten in AEM. Er bildet die Grundlage für verschiedene Komponenten, darunter:
@@ -57,7 +66,7 @@ Derzeit ist der Kontext-Bearbeitungsmodus für Seitenelemente aktiviert, die von
 
 ## Funktionen des Rich-Text-Editors {#features-of-the-rich-text-editor}
 
-Der Rich-Text-Editor bietet eine Reihe von Funktionen, die [&#x200B; von der Konfiguration &#x200B;](/help/sites-administering/rich-text-editor.md) einzelnen Komponente abhängen. Die Funktionen sind sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche verfügbar.
+Der Rich-Text-Editor bietet eine Reihe von Funktionen, die [ von der Konfiguration ](/help/sites-administering/rich-text-editor.md) einzelnen Komponente abhängen. Die Funktionen sind sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche verfügbar.
 
 ### Grundlegende Zeichenformate {#basic-character-formats}
 
@@ -106,7 +115,7 @@ Es sind die Standardfunktionen **[!UICONTROL Ausschneiden]** und **[!UICONTROL K
 * Ausschneiden (Strg+X)
 * Kopieren (Strg-C)
 * Einfügen
-Dies ist der Standard-Einfügemechanismus (Strg+V) für die Komponente. Für Standardinstallationen ist hier „Aus Word einfügen[!UICONTROL &#x200B; festgelegt].
+Dies ist der Standard-Einfügemechanismus (Strg+V) für die Komponente. Für Standardinstallationen ist hier „Aus Word einfügen[!UICONTROL  festgelegt].
 
 * Als Text einfügen: Hierbei werden alle Stile und Formatierungen entfernt und der Inhalt wird als reiner Text eingefügt.
 

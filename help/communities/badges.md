@@ -10,13 +10,20 @@ role: Admin
 exl-id: 50ed9ec4-ff04-4f9d-aefb-0837542a9455
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '291'
 ht-degree: 4%
-
 ---
-
 # Badges-Konsole {#badges-console}
 
 ## Über Abzeichen {#about-badges}
@@ -45,7 +52,7 @@ Diese Konsole zeigt die derzeit verfügbaren Abzeichen an, aus denen neue Abzeic
 
 Ein Badge wird erstellt, indem ein entsprechend kleines Bild (72 dpi mit einer Höhe zwischen 26 und 32 Pixel) hochgeladen und ein Name angegeben wird. Das Badge-Bild wird im Repository unter `/libs/settings/community/badging/images` gespeichert und automatisch in der Veröffentlichungsumgebung repliziert.
 
-Wenn die Veröffentlichungsumgebung eine Farm von Herausgebern ist, müssen Sie &quot;[&quot; &#x200B;](/help/communities/sync.md).
+Wenn die Veröffentlichungsumgebung eine Farm von Herausgebern ist, müssen Sie &quot;[&quot; ](/help/communities/sync.md).
 
 ![create-badge](assets/create-badge.png)
 

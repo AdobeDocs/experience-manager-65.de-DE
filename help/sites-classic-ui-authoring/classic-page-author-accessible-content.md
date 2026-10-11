@@ -10,13 +10,22 @@ exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '9584'
+source-wordcount: '9591'
 ht-degree: 91%
-
 ---
-
 # Erstellen barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien){#creating-accessible-content-wcag-conformance}
 
 >[!CAUTION]
@@ -118,8 +127,8 @@ Es gibt verschiedene Arten von nichttextlichem Inhalt. Daher hängt der Wert der
 * Textalternativen sollten kurz sein, doch sollten sie die wesentlichen Informationen, die durch den nichttextlichen Inhalt bereitgestellt werden, eindeutig erfassen.
 * Lange Beschreibungen (mehr als 100 Zeichen) sollten vermieden werden. Wenn eine Textalternative mehr Details erfordert:
 
-   * Geben Sie im Alternativtext eine kurze Beschreibung an
-   * und fügen Sie irgendwo anders auf der entsprechenden Seite oder auf einer anderen Web-Seite eine längere Beschreibung ein. Verlinken Sie zu dieser separaten Beschreibung, indem Sie das Bild zu einem Link machen, oder indem Sie einen Text-Link neben dem Bild platzieren.
+  * Geben Sie im Alternativtext eine kurze Beschreibung an
+  * und fügen Sie irgendwo anders auf der entsprechenden Seite oder auf einer anderen Web-Seite eine längere Beschreibung ein. Verlinken Sie zu dieser separaten Beschreibung, indem Sie das Bild zu einem Link machen, oder indem Sie einen Text-Link neben dem Bild platzieren.
 
 * Alternativtext sollte keine Inhalte replizieren, die in Textformularen bereitgestellt werden, die sich in der Nähe auf derselben Seite befinden. Denken Sie daran, dass viele Bilder Illustrationen von Punkten sind, die bereits im Text einer Seite behandelt werden, sodass eine detaillierte Textalternative bereits vorhanden sein kann.
 * Wenn es sich bei dem nichttextlichen Inhalt um einen Link zu einer anderen Seite oder einem anderen Dokument handelt und es keinen anderen Text-bildenden Teil desselben Links gibt, muss der Alternativtext für das Bild das Ziel des Links angeben. Er darf nicht das Bild beschreiben.
@@ -168,9 +177,9 @@ Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderli
 
   Das W3C bietet verschiedene Vorschläge, wie z. B. die folgenden. Jeder dieser Ansätze hat seine eigenen Vorteile und Nachteile.
 
-   * Logische Rätsel
-   * Verwendung von Tonausgabe anstelle von Bildern
-   * Eingeschränkte Benutzerkonten und Spam-Filter
+  * Logische Rätsel
+  * Verwendung von Tonausgabe anstelle von Bildern
+  * Eingeschränkte Benutzerkonten und Spam-Filter
 
 * Hintergrundbilder:
 
@@ -201,8 +210,8 @@ Diese Informationen behandeln Web-Inhalte, die *zeitbasiert* sind. Hier werden I
 * Level A
 * Nur-Audio- und Nur-Video-Medien (voraufgezeichnet): Für voraufgezeichnete Nur-Audio- und Nur-Video-Medien gilt Folgendes, es sei denn, das Audio oder Video ist eine Medienalternative für Text und wird deutlich als solche gekennzeichnet:
 
-   * Nur voraufgezeichnetes Audio: Es wird eine Alternative für zeitbasierte Medien bereitgestellt, die gleichwertige Informationen für aufgezeichnete Nur-Audio-Inhalte bereitstellt.
-   * Nur voraufgezeichnetes Video: Es wird entweder eine Alternative für zeitbasierte Medien oder ein Audio-Track mit gleichwertigen Informationen für aufgezeichnete Nur-Video-Inhalte bereitgestellt.
+  * Nur voraufgezeichnetes Audio: Es wird eine Alternative für zeitbasierte Medien bereitgestellt, die gleichwertige Informationen für aufgezeichnete Nur-Audio-Inhalte bereitstellt.
+  * Nur voraufgezeichnetes Video: Es wird entweder eine Alternative für zeitbasierte Medien oder ein Audio-Track mit gleichwertigen Informationen für aufgezeichnete Nur-Video-Inhalte bereitgestellt.
 
 #### Zweck: Nur-Audio und Nur-Video (voraufgezeichnet) (1.2.1) {#purpose-audio-only-and-video-only-pre-recorded}
 
@@ -220,14 +229,14 @@ Wenn Sie diese Informationen in einem anderen Format bereitstellen, z. B. Text 
 
 * Wenn es sich bei dem Inhalt um aufgezeichnetes Audio ohne Video (wie zum Beispiel einen Podcast) handelt:
 
-   * Stellen Sie direkt vor oder nach dem Inhalt einen Link zu einem Texttranskript des Audioinhalts bereit.
+  * Stellen Sie direkt vor oder nach dem Inhalt einen Link zu einem Texttranskript des Audioinhalts bereit.
 
-     Das Transkript sollte eine HTML-Seite mit einem Textäquivalent zu allen gesprochenen und wichtigen nicht-gesprochenen Inhalten sein. Es sollte auch angeben, wer spricht, eine Beschreibung der Szene, Stimmausdrücke und eine Beschreibung anderer wichtiger Audioinhalte.
+    Das Transkript sollte eine HTML-Seite mit einem Textäquivalent zu allen gesprochenen und wichtigen nicht-gesprochenen Inhalten sein. Es sollte auch angeben, wer spricht, eine Beschreibung der Szene, Stimmausdrücke und eine Beschreibung anderer wichtiger Audioinhalte.
 
 * Wenn der Inhalt eine Animation oder eine Videoaufzeichnung ohne Audio ist:
 
-   * Stellen Sie unmittelbar vor oder nach dem Inhalt einen Link zu einer entsprechenden Textbeschreibung der vom Video bereitgestellten Informationen bereit
-   * Oder eine gleichwertige Audiobeschreibung in einem häufig verwendeten Audioformat wie MP3.
+  * Stellen Sie unmittelbar vor oder nach dem Inhalt einen Link zu einer entsprechenden Textbeschreibung der vom Video bereitgestellten Informationen bereit
+  * Oder eine gleichwertige Audiobeschreibung in einem häufig verwendeten Audioformat wie MP3.
 
 >[!NOTE]
 >
@@ -299,8 +308,8 @@ Es gibt zwei Ansätze, die angewendet werden können, um dieses Erfolgskriterium
    * Geben Sie während der Pausen im vorhandenen Dialogfeld Informationen zu Änderungen in der Szene an, die nicht als Teil der vorhandenen Audiospur angezeigt werden;
    * Stellen Sie eine neue, zusätzliche und optionale Audiospur bereit, die den ursprünglichen Soundtrack und zudem weitere Audioinformationen zu den Änderungen in der Szene enthält.
 
-      * Benutzerinnen und Benutzer können zwischen der vorhandenen Audiospur (die *keine* Audiobeschreibung enthält) und der neuen Audiospur (die *eine Audiobeschreibung enthält*) wechseln.
-      * Diese Methode verhindert Unterbrechungen für Benutzerinnen und Benutzer, die die zusätzliche Beschreibung nicht benötigen.
+     * Benutzerinnen und Benutzer können zwischen der vorhandenen Audiospur (die *keine* Audiobeschreibung enthält) und der neuen Audiospur (die *eine Audiobeschreibung enthält*) wechseln.
+     * Diese Methode verhindert Unterbrechungen für Benutzerinnen und Benutzer, die die zusätzliche Beschreibung nicht benötigen.
 
    * Erstellen Sie eine zweite Version des Videoinhalts, um erweiterte Audiobeschreibungen zu ermöglichen. Dadurch werden die Schwierigkeiten bei der Bereitstellung detaillierter Audiobeschreibungen innerhalb der Lücken zwischen dem bestehenden Dialog verringert, indem Audio und Video an geeigneten Punkten vorübergehend angehalten werden. Dadurch kann eine wesentlich längere Audiobeschreibung gegeben werden, bevor die Aktion erneut gestartet wird. Wie im vorherigen Beispiel wird dies am besten als optionale zusätzliche Audiospur bereitgestellt, um Störungen für Benutzende zu vermeiden, die die zusätzliche Beschreibung nicht benötigen.
 
@@ -400,8 +409,8 @@ Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechend
 
   Verwenden Sie das Element &lt;strong> oder &lt;em>, um eine Hervorhebung anzugeben. Verwenden Sie keine Überschriften zum Hervorheben von Text in Absätzen.
 
-   * Markieren Sie den Text, den Sie hervorheben möchten.
-   * Klicken Sie auf das Symbol **B** (für &lt;strong>) oder das Symbol **I** (für &lt;em>), die im Bedienfeld **Eigenschaften** angezeigt werden (vergewissern Sie sich, dass HTML ausgewählt ist).
+  * Markieren Sie den Text, den Sie hervorheben möchten.
+  * Klicken Sie auf das Symbol **B** (für &lt;strong>) oder das Symbol **I** (für &lt;em>), die im Bedienfeld **Eigenschaften** angezeigt werden (vergewissern Sie sich, dass HTML ausgewählt ist).
 
   >[!NOTE]
   >
@@ -414,13 +423,13 @@ Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechend
 
 * **Listen verwenden**: Mit HTML können Sie drei verschiedene Arten von Listen angeben:
 
-   * Das Element `<ul>` wird für *nicht geordnete* Listen (Aufzählungslisten) verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet.
+  * Das Element `<ul>` wird für *nicht geordnete* Listen (Aufzählungslisten) verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet.
 
-     Verwenden Sie in RTE das Symbol **Aufzählung**.
+    Verwenden Sie in RTE das Symbol **Aufzählung**.
 
-   * Das Element `<ol>` wird für *nummerierte* Listen verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet.
+  * Das Element `<ol>` wird für *nummerierte* Listen verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet.
 
-     Verwenden Sie in RTE das Symbol **Nummerierte Liste**.
+    Verwenden Sie in RTE das Symbol **Nummerierte Liste**.
 
   Wenn Sie vorhandene Inhalte in einen bestimmten Listentyp ändern möchten, markieren Sie den entsprechenden Text und wählen Sie den entsprechenden Listentyp aus. Wie im vorherigen Beispiel, das zeigt, wie Absatztext eingegeben wird, werden die entsprechenden Listenelemente automatisch zu Ihrem HTML hinzugefügt. Sie können dies jedoch in der Ansicht der Quellbearbeitung anzeigen.
 
@@ -432,10 +441,10 @@ Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechend
 
   Datentabellen müssen mit HTML-Tabellenelementen gekennzeichnet sein:
 
-   * Ein Element `<table>`
-   * Ein Element `<tr>` für jede Tabellenzeile
-   * Ein Element `<th>` für jede Zeilen- und Spaltenüberschrift
-   * Ein Element `<td>` für jede Datenzelle
+  * Ein Element `<table>`
+  * Ein Element `<tr>` für jede Tabellenzeile
+  * Ein Element `<th>` für jede Zeilen- und Spaltenüberschrift
+  * Ein Element `<td>` für jede Datenzelle
 
   >[!NOTE]
   >
@@ -443,9 +452,9 @@ Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechend
 
   Barrierefreie Tabellen verwenden außerdem die folgenden Elemente und Attribute:
 
-   * Das Element `<caption>` wird verwendet, um für die Tabelle eine sichtbare Tabellenbeschriftung bereitzustellen. Beschriftungen werden standardmäßig zentriert über der Tabelle angezeigt, können jedoch mithilfe von CSS entsprechend positioniert werden. Die Beschriftung wird programmgesteuert mit der Tabelle verknüpft. Daher ist sie eine nützliche Methode, um eine Einführung in Inhalte zu bieten.
-   * Das Element `<h3 class="summary">` unterstützt blinde Benutzer dabei, die in einer Tabelle dargestellten Informationen zu verstehen, weil ihnen damit eine Inhaltsangabe dessen geboten wird, was sehende Benutzer sehen können. Dies ist besonders nützlich bei komplexen oder unkonventionellen Tabellen-Layouts (dieses Attribut wird nicht im Browser angezeigt, sondern nur für Hilfstechnologien ausgelesen).
-   * Das Attribut `scope` des Elements `<th>` wird verwendet, um anzugeben, ob eine Zelle eine Überschrift für eine bestimmte Zeile oder eine bestimmte Spalte darstellt. Auf ähnliche Weise können die Überschrift und ID-Attribute in komplexen Tabellen verwendet werden, bei denen Datenzellen mit einer oder mehreren Überschriften verknüpft sein können.
+  * Das Element `<caption>` wird verwendet, um für die Tabelle eine sichtbare Tabellenbeschriftung bereitzustellen. Beschriftungen werden standardmäßig zentriert über der Tabelle angezeigt, können jedoch mithilfe von CSS entsprechend positioniert werden. Die Beschriftung wird programmgesteuert mit der Tabelle verknüpft. Daher ist sie eine nützliche Methode, um eine Einführung in Inhalte zu bieten.
+  * Das Element `<h3 class="summary">` unterstützt blinde Benutzer dabei, die in einer Tabelle dargestellten Informationen zu verstehen, weil ihnen damit eine Inhaltsangabe dessen geboten wird, was sehende Benutzer sehen können. Dies ist besonders nützlich bei komplexen oder unkonventionellen Tabellen-Layouts (dieses Attribut wird nicht im Browser angezeigt, sondern nur für Hilfstechnologien ausgelesen).
+  * Das Attribut `scope` des Elements `<th>` wird verwendet, um anzugeben, ob eine Zelle eine Überschrift für eine bestimmte Zeile oder eine bestimmte Spalte darstellt. Auf ähnliche Weise können die Überschrift und ID-Attribute in komplexen Tabellen verwendet werden, bei denen Datenzellen mit einer oder mehreren Überschriften verknüpft sein können.
 
   >[!NOTE]
   >
@@ -453,8 +462,8 @@ Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechend
 
   Beim Hinzufügen einer **Tabelle** können Sie die **Tabelleneigenschaften** über das Dialogfeld konfigurieren.
 
-   * eine geeignete **Beschriftung**.
-   * Im Idealfall entfernen Sie alle Standardwerte für **Breite**, **Höhe**, **Rand**, **Zellauffüllung**, **Zellabstand**, da diese Eigenschaften in einem globalen Stylesheet festgelegt werden können.
+  * eine geeignete **Beschriftung**.
+  * Im Idealfall entfernen Sie alle Standardwerte für **Breite**, **Höhe**, **Rand**, **Zellauffüllung**, **Zellabstand**, da diese Eigenschaften in einem globalen Stylesheet festgelegt werden können.
 
   ![Dialogfeld „Tabelleneigenschaften“](assets/chlimage_1-20a.png)
 
@@ -599,17 +608,17 @@ Wenn Farbe als Hinweis für die Bereitstellung von Informationen verwendet wird,
 
 * [Grundlegendes zu Erfolgskriterien 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 * [Erfüllen von Erfolgskriterien 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [Anleitung für das Erzielen eines Kontrastverhältnisses von :1 3 % mit einer Liste Web-sicherer Farben](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [Anleitung für das Erzielen eines Kontrastverhältnisses von 3:1 mit einer Liste Web-sicherer Farben](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 
 ### Kontrast (Minimum) (1.4.3) {#contrast-minimum}
 
 * Erfolgskriterium 1.4.3
 * Level AA
-* Kontrast (Minimum): Die visuelle Darstellung von Text und Bildern von Text hat ein Kontrastverhältnis von mindestens 4,5:1 mit den folgenden Ausnahmen:
+* Kontrast (Minimum): Die visuelle Darstellung von Text und Bildern von Text hat ein Kontrastverhältnis von mindestens 4,5:1, mit den folgenden Ausnahmen:
 
-   * Großer Text: Großformatiger Text und Bilder von großformatigem Text haben ein Kontrastverhältnis von mindestens 3:1.
-   * Beiläufig: Für Text oder Textbilder, die Teil einer inaktiven Komponente der Benutzeroberfläche sind, die reine Dekoration darstellen oder für niemanden sichtbar sind, oder die Teil eines Bildes sind, das signifikanten anderen visuellen Inhalt enthält, ist kein Kontrast erforderlich.
-   * Firmenschriftzüge: Für Text, der Teil eines Logos oder eines Markennamens ist, gibt es keine Kontrastanforderungen.
+  * Großer Text: Großformatiger Text und Bilder von großformatigem Text haben ein Kontrastverhältnis von mindestens 3:1.
+  * Beiläufig: Für Text oder Textbilder, die Teil einer inaktiven Komponente der Benutzeroberfläche sind, die reine Dekoration darstellen oder für niemanden sichtbar sind, oder die Teil eines Bildes sind, das signifikanten anderen visuellen Inhalt enthält, ist kein Kontrast erforderlich.
+  * Firmenschriftzüge: Für Text, der Teil eines Logos oder eines Markennamens ist, gibt es keine Kontrastanforderungen.
 
 #### Zweck – Kontrast (Minimum) (1.4.3) {#purpose-contrast-minimum}
 
@@ -626,9 +635,9 @@ Menschen mit bestimmten Sehbehinderungen können möglicherweise nicht zwischen 
 
 Achten Sie darauf, dass der Text einen ausreichenden Kontrast zu seinem Hintergrund aufweist. Die Kontrastverhältnisse hängen von der Größe und dem Stil des jeweiligen Textes ab:
 
-* Bei Text mit einer Größe von weniger als 18 Punkten (oder 14 Punkten und fett) sollte das Kontrastverhältnis zwischen Text und Bildern von Text und Hintergrund mindestens 4,5 % :1.
-* Bei Text mit einer Größe von mindestens 18 Punkten (oder 14 Punkten und fett) sollte das Kontrastverhältnis mindestens 3 % :1.
-* Wenn ein Hintergrund gemustert ist, sollte der Hintergrund um einen beliebigen Text schattiert werden, sodass das Verhältnis von :1,5 oder :1 beibehalten wird.
+* Bei Text mit einer Größe von weniger als 18 Punkten (oder 14 Punkten und fett) sollte das Kontrastverhältnis zwischen Text und Bildern von Text und Hintergrund mindestens 4,5:1 betragen.
+* Bei Text mit einer Größe von mindestens 18 Punkten (oder 14 Punkten und fett) sollte das Kontrastverhältnis mindestens 3:1 betragen.
+* Wenn ein Hintergrund gemustert ist, sollte der Hintergrund um einen beliebigen Text schattiert werden, sodass das Verhältnis von 4,5:1 bzw. 3:1 beibehalten wird.
 
 Verwenden Sie ein Farbkontrast-Tool, um das Kontrastverhältnis zu prüfen, z. B. den [Farbkontrast-Analysator der Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) oder den [Farbkontrast-Checker von WebAIM](https://webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare prüfen und mögliche Kontrastprobleme erkennen.
 
@@ -647,8 +656,8 @@ Wenn es nicht möglich ist, die empfohlenen Kontraststufen zu erreichen, stellen
 * Level AA
 * Bilder von Text: Falls die verwendeten Technologien die visuelle Präsentation realisieren können, wird für die Vermittlung von Informationen Text verwendet – keine Bilder von Text. Dabei gelten folgende Ausnahmen:
 
-   * Anpassbar: Das Textbild kann visuell an die Anforderungen der Benutzerin bzw. des Benutzers angepasst werden.
-   * Wesentlich: Eine besondere Textdarstellung ist für die vermittelte Information von wesentlicher Bedeutung.
+  * Anpassbar: Das Textbild kann visuell an die Anforderungen der Benutzerin bzw. des Benutzers angepasst werden.
+  * Wesentlich: Eine besondere Textdarstellung ist für die vermittelte Information von wesentlicher Bedeutung.
 
 >[!NOTE]
 >
@@ -677,15 +686,15 @@ Wenn Bilder von Text verwendet werden müssen, nutzen Sie CSS, um die Bilder von
 * Level A
 * Pausieren, Stoppen, Ausblenden: Für sich bewegende, blinkende, scrollende oder sich automatisch aktualisierende Informationen gelten folgenden Regeln:
 
-   * Bewegen, Blinken, Scrollen: Für alle sich bewegenden, blinkenden oder scrollenden Informationen, die
-      * a) automatisch gestartet werden,
-      * b) länger als fünf Sekunden dauern und
-      * (c) parallel zu anderen Inhalten präsentiert wird,
-Es gibt einen Mechanismus, mit dem Benutzende sie anhalten, stoppen oder ausblenden können, es sei denn, die Bewegung, das Blinken oder das Scrollen ist Teil einer Aktivität, bei der es wesentlich ist.
-   * Automatische Aktualisierung: Für alle automatisch aktualisierten Informationen, die
-      * a) automatisch gestartet und
-      * (b) parallel zu anderen Inhalten präsentiert wird,
-Benutzende können den Workflow anhalten, stoppen oder ausblenden oder die Häufigkeit der Aktualisierung steuern, es sei denn, die automatische Aktualisierung ist ein wesentlicher Teil einer Aktivität.
+  * Bewegen, Blinken, Scrollen: Für alle sich bewegenden, blinkenden oder scrollenden Informationen, die
+    * a) automatisch gestartet werden,
+    * b) länger als fünf Sekunden dauern und
+    * (c) parallel zu anderen Inhalten präsentiert wird,
+      Es gibt einen Mechanismus, mit dem Benutzende sie anhalten, stoppen oder ausblenden können, es sei denn, die Bewegung, das Blinken oder das Scrollen ist Teil einer Aktivität, bei der es wesentlich ist.
+  * Automatische Aktualisierung: Für alle automatisch aktualisierten Informationen, die
+    * a) automatisch gestartet und
+    * (b) parallel zu anderen Inhalten präsentiert wird,
+      Benutzende können den Workflow anhalten, stoppen oder ausblenden oder die Häufigkeit der Aktualisierung steuern, es sei denn, die automatische Aktualisierung ist ein wesentlicher Teil einer Aktivität.
 
 Folgendes sollte beachtet werden:
 
@@ -780,13 +789,13 @@ Stellen Sie vor allem sicher, dass der Link-Text den Zweck eines Links eindeutig
 
 * Schlechtes Beispiel:
 
-   * Text: Einzelheiten zu unseren Abendkursen im Herbst 2010 finden Sie hier.
-   * Grund: Es geht nicht deutlich und unmissverständlich hervor wohin der Link führt.
+  * Text: Einzelheiten zu unseren Abendkursen im Herbst 2010 finden Sie hier.
+  * Grund: Es geht nicht deutlich und unmissverständlich hervor wohin der Link führt.
 
 * Gutes Beispiel:
 
-   * Text: Abendkurse im Herbst 2010 – Details.
-   * Grund: Durch eine kleine Anpassung des Textes und der Position des Linkelements lässt sich der Link-Text verbessern:
+  * Text: Abendkurse im Herbst 2010 – Details.
+  * Grund: Durch eine kleine Anpassung des Textes und der Position des Linkelements lässt sich der Link-Text verbessern:
 
 Links sollten auf allen Seiten konsistent formuliert sein, insbesondere für Navigationsleisten. Wenn beispielsweise ein Link zu einer bestimmten Seite den Titel **Veröffentlichungen** auf einer Seite hat, verwenden Sie diesen auch auf anderen Seiten, um Konsistenz zu gewährleisten.
 
@@ -958,7 +967,7 @@ Wenn Daten in einem bestimmten Format eingegeben werden müssen, sollten Sie die
 
 Wenn die Eingabe für ein Formularfeld obligatorisch ist, machen Sie dies deutlich, indem Sie das erforderliche Wort als Teil der Bezeichnung verwenden. AEM fügt ein Sternchen hinzu, wenn ein Feld erforderlich ist. Idealerweise sollte jedoch das Wort `required` (erforderlich) direkt in die Beschriftung eingefügt werden (im Feld **Titel** im Bearbeitungsdialogfeld).
 
-![&#x200B; Hinzufügen zusätzlicher Informationen (das Wort „erforderlich“) für Menschen, die eine Bildschirmlesehilfe nutzen, im Feld „Titel“ &#x200B;](assets/chlimage_1-25a.png)
+![ Hinzufügen zusätzlicher Informationen (das Wort „erforderlich“) für Menschen, die eine Bildschirmlesehilfe nutzen, im Feld „Titel“ ](assets/chlimage_1-25a.png)
 
 Die Positionierung von Kennzeichnungen ist ebenfalls wichtig, da sie beim Suchen nach geeigneten Feldern hilft. Dies ist besonders wichtig, wenn die Person mit einem komplexen Formular konfrontiert ist. Befolgen Sie die nachstehende Konvention:
 

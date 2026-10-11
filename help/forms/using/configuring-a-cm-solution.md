@@ -8,13 +8,26 @@ feature: Correspondence Management
 exl-id: f7f5eb0d-a283-45ea-84d3-d6375d2bb95b
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '307'
 ht-degree: 100%
-
 ---
-
 # Konfigurieren einer Correspondence Management-Lösung {#configuring-a-correspondence-management-solution}
 
 ## Definieren einer Autoreninstanz-URL für VersionRestoreManagerImpl {#defining-author-instance-url-for-versionrestoremanagerimpl}
@@ -23,7 +36,7 @@ Führen Sie die folgenden Schritte aus, um eine Autoreninstanz-URL zur Wiederher
 
 1. Navigieren Sie zu *https://:&lt;PublishHost>:&lt;PublishPort>/lc/system/console/configMgr*. Melden Sie sich mit den Anmeldedaten der OSGi Management Console an. Standardmäßig lauten die Anmeldedaten: admin/admin.
 1. Klicken Sie auf **[!UICONTROL Bearbeiten]** neben der Einstellung **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]**.
-1. Geben Sie im Feld **[!UICONTROL VersionRestoreManager Author-URL]** die URL der Autoreninstanz von VersionRestoreManager an.
+1. Geben Sie im Feld **[!UICONTROL Autoren-URL von VersionRestoreManager]** die URL der Autoreninstanz von VersionRestoreManager an.
 
    **URL-Zeichenfolge**:
 
@@ -31,7 +44,7 @@ Führen Sie die folgenden Schritte aus, um eine Autoreninstanz-URL zur Wiederher
 
    >[!NOTE]
    >
-   >Wenn mehrere Instanzen im Autorenmodus (in Cluster) mit einem vorgeschalteten Lastenausgleich vorhanden sind, geben Sie die URL für den Lastenausgleich im Feld **[!UICONTROL Autor-URL von VersionRestoreManager]** an.
+   >Wenn mehrere Autoreninstanzen (in Cluster) mit einem vorgeschalteten Lastenausgleich vorhanden sind, geben Sie die URL für den Lastenausgleich im Feld **[!UICONTROL Autoren-URL von VersionRestoreManager]** an.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -41,7 +54,7 @@ Führen Sie die folgenden Schritte aus, um die URL der Veröffentlichungsinstanz
 
 1. Navigieren Sie zu *https://:&lt;authorHost>:&lt;authorPort>/lc/system/console/configMgr*. Melden Sie sich mit den Anmeldedaten der OSGi Management Console an. Standardmäßig lauten die Anmeldedaten: admin/admin.
 1. Klicken Sie auf das Symbol **[!UICONTROL Bearbeiten]** neben der Einstellung **[!UICONTROL com.adobe.livecycle.content.activate.impl.ActivationManagerImpl.name]**.
-1. Geben Sie im Feld für die **[!UICONTROL Veröffentlichungs-URL von ActivationManager]** die URL für den Zugriff auf die Instanz im Veröffentlichungsmodus in ActivationManager an. Sie können die folgenden URLs angeben.
+1. Geben Sie im Feld für die **[!UICONTROL Veröffentlichungs-URL von ActivationManager]** die URL für den Zugriff auf die Veröffentlichungsinstanz in ActivationManager an. Sie können die folgenden URLs angeben.
 
    * **Lastenausgleichs-URL (empfohlen)**: Geben Sie die Lastenausgleichs-URL an, wenn Sie einen Webserver haben, der gegenüber der Veröffentlichungsfarm (mehrere nicht geclusterte Veröffentlichungsinstanzen) als Lastenausgleich fungiert.
    * **URL der Veröffentlichungsinstanz**: Geben Sie eine URL für die Veröffentlichungsinstanz an, wenn Sie über eine einzelne Veröffentlichungsinstanz verfügen oder der Webserver, der der Veröffentlichungsfarm vorgeschaltet ist, aufgrund von Einschränkungen nicht über die Autorenumgebung zugänglich ist. Wenn die angegebene Veröffentlichungsinstanz nicht bereit ist, gibt es einen Fallback-Mechanismus, damit autorenseitig etwas zur Behebung unternommen werden kann.

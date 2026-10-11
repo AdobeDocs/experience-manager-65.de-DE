@@ -7,18 +7,32 @@ hide: true
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 91%
-
 ---
-
 # AEM Forms JEE-Patch-Installationsprogramm {#aem-forms-jee-patch-installer}
 
 >[!NOTE]
 >
->[Kontaktieren Sie den Support](https://experienceleague.adobe.com/de?lang=de&support-solution=General&support-tab=home#support), um weitere Informationen oder den Patch zu erhalten.
+>[Kontaktieren Sie den Support](https://experienceleague.adobe.com/?lang=de&support-solution=General&support-tab=home#support), um weitere Informationen oder den Patch zu erhalten.
 
 ## Über das Patch-Installationsprogramm {#about-the-patch-installer}
 
@@ -36,15 +50,15 @@ Das AEM 6.5 Forms JEE Patch-Installationsprogramm enthält alle behobenen Proble
 1. Im Ordner mit dem Namen entsprechend des von Ihnen verwendeten Betriebssystems:
 
    * **Windows**
-Navigieren Sie zu dem entsprechenden Verzeichnis auf dem Installationsmedium oder dem Ordner auf Ihrer Festplatte, in den Sie das Installationsprogramm kopiert haben, und doppelklicken Sie auf die Datei aemforms65_cfp_install.exe.
+     Navigieren Sie zu dem entsprechenden Verzeichnis auf dem Installationsmedium oder dem Ordner auf Ihrer Festplatte, in den Sie das Installationsprogramm kopiert haben, und doppelklicken Sie auf die Datei aemforms65_cfp_install.exe.
 
-      * (Windows 32-Bit) `Windows\Disk1\InstData\VM`
-      * (Windows 64-Bit) `Windows_64Bit`\ `Disk1\InstData\VM`
+     * (Windows 32-Bit) `Windows\Disk1\InstData\VM`
+     * (Windows 64-Bit) `Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-Navigieren Sie zum entsprechenden Verzeichnis und geben Sie an einer Eingabeaufforderung `./aem65_cfp_install.bin` ein.
+     Navigieren Sie zum entsprechenden Verzeichnis und geben Sie an einer Eingabeaufforderung `./aem65_cfp_install.bin` ein.
 
-      * (Linux®) `Linux/Disk1/InstData/NoVM`
+     * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    Dadurch wird ein Installationsassistent gestartet, der Sie durch die Installation führt.
 
@@ -88,7 +102,7 @@ Wenn Sie die SAML-Authentifizierung konfiguriert haben und Probleme mit großen 
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ## Betroffene Module {#impacted-modules}
 
@@ -96,4 +110,4 @@ Wenn Sie die SAML-Authentifizierung konfiguriert haben und Probleme mit großen 
 * Document Security
 * Foundation JEE
 
-[Support kontaktieren](https://experienceleague.adobe.com/de?support-solution=General&support-tab=home&lang=de#support)
+[Support kontaktieren](https://experienceleague.adobe.com/?support-solution=General&support-tab=home&lang=de#support)

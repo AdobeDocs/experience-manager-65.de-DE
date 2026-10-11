@@ -9,7 +9,13 @@ exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3252'
 ht-degree: 1%
@@ -69,7 +75,7 @@ Um APNs zu verwenden, benötigen Sie eine **Certificate**-Datei (eine .cer-Datei
 
 Navigieren Sie zur Google-Seite [hier](https://developer.android.com/google/gcm/index.html), um sich mit Google Cloud Messaging für Android vertraut zu machen™.
 
-[Führen Sie die folgenden &#x200B;](https://developer.android.com/google/gcm/gs.html) aus **um ein Google-API-** zu erstellen, **den GCM-** zu aktivieren und **einen API-Schlüssel abzurufen**. Sie benötigen den **API-Schlüssel** um Push-Benachrichtigungen an Android™-Geräte zu senden. Notieren Sie sich auch Ihre **Projektnummer** die manchmal auch als „GCM-**&quot; bezeichnet**.
+[Führen Sie die folgenden ](https://developer.android.com/google/gcm/gs.html) aus **um ein Google-API-** zu erstellen, **den GCM-** zu aktivieren und **einen API-Schlüssel abzurufen**. Sie benötigen den **API-Schlüssel** um Push-Benachrichtigungen an Android™-Geräte zu senden. Notieren Sie sich auch Ihre **Projektnummer** die manchmal auch als „GCM-**&quot; bezeichnet**.
 
 Die folgenden Schritte zeigen eine andere Methode zum Erstellen von GCM-API-Schlüsseln:
 
@@ -252,7 +258,7 @@ In XCode 8.1 müssen Sie vor der Verwendung von Push-Benachrichtigungen zur Regi
 
 #### Android™ {#android}
 
-Um die App über die CLI auf einem Android™-Smartphone zu installieren (siehe unten: **Schritt 6 - App erstellen und bereitstellen**), müssen Sie das Smartphone zunächst in den „Entwicklermodus“ versetzen. Weitere [&#x200B; dazu finden Sie unter „Aktivieren &#x200B;](https://developer.android.com/tools/device.html#developer-device-options) Entwickleroptionen auf dem Gerät .
+Um die App über die CLI auf einem Android™-Smartphone zu installieren (siehe unten: **Schritt 6 - App erstellen und bereitstellen**), müssen Sie das Smartphone zunächst in den „Entwicklermodus“ versetzen. Weitere [ dazu finden Sie unter „Aktivieren ](https://developer.android.com/tools/device.html#developer-device-options) Entwickleroptionen auf dem Gerät .
 
 ### Schritt 5: Konfigurieren von Push-Benachrichtigungen in AEM-Apps {#step-configure-push-on-aem-apps}
 
@@ -268,7 +274,7 @@ Vor der Erstellung und Bereitstellung auf dem konfigurierten Mobilgerät müssen
 
 ### Schritt 6: App erstellen und bereitstellen {#step-build-and-deploy-the-app}
 
-**Hinweis:** Weitere Informationen finden Sie [&#x200B; Anweisungen &#x200B;](/help/mobile/building-app-mobile-phonegap.md) Erstellen von PhoneGap-Anwendungen.
+**Hinweis:** Weitere Informationen finden Sie [ Anweisungen ](/help/mobile/building-app-mobile-phonegap.md) Erstellen von PhoneGap-Anwendungen.
 
 Es gibt zwei Möglichkeiten, Ihre App mit PhoneGap zu erstellen und bereitzustellen.
 

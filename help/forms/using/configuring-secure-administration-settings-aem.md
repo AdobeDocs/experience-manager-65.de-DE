@@ -8,13 +8,29 @@ role: Admin,User
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '852'
 ht-degree: 100%
-
 ---
-
 # Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
 Erfahren Sie, wie Sie Benutzerkonten und Services verwalten, die zwar in einer privaten Entwicklungsumgebung erforderlich sind, aber in einer Produktionsumgebung von AEM Forms on JEE nicht benötigt werden.
@@ -105,7 +121,7 @@ Einige Formular-Server-Dienste lassen einen nicht authentifizierten (anonymen) A
 
    Der anonyme Zugriff sollte für alle nicht erforderlichen Dienste deaktiviert werden. Für viele interne Dienste muss die anonyme Authentifizierung aktiviert sein, da sie von potenziell allen Benutzenden ohne eine Vorautorisierung im System aufgerufen werden müssen.
 
-## Standardmäßiges globales Zeitlimit ändern  {#changing-the-default-global-time-out}
+## Standardmäßiges globales Zeitlimit ändern {#changing-the-default-global-time-out}
 
 Endbenutzer von AEM Forms können sich über Workbench, Web-Anwendungen für AEM Forms oder über benutzerdefinierte Anwendungen, die Server-Services für AEM Forms aufrufen, authentifizieren. Mithilfe einer globalen Zeitlimiteinstellung wird festgelegt, wie lange solche Benutzer AEM Forms nutzen können (mittels einer auf SAML basierenden Bestätigung), bevor sie sich erneut authentifizieren müssen. Der Standardwert ist zwei Stunden. In einer Produktionsumgebung muss die Zeitdauer auf die akzeptable Mindestanzahl von Minuten reduziert werden.
 
@@ -119,7 +135,7 @@ Endbenutzer von AEM Forms können sich über Workbench, Web-Anwendungen für AEM
 
 1. Klicken Sie auf **Einstellungen > Benutzerverwaltung > Konfiguration > Konfigurationsdateien importieren und exportieren**.
 1. Klicken Sie auf **Exportieren**, um eine Datei config.xml mit den vorhandenen AEM Forms-Einstellungen zu erstellen.
-1. Öffnen Sie die XML-Datei in einem Editor und suchen Sie den folgenden Eintrag: 
+1. Öffnen Sie die XML-Datei in einem Editor und suchen Sie den folgenden Eintrag:
 
    `<entry key="assertionValidityInMinutes" value="120"/>`
 

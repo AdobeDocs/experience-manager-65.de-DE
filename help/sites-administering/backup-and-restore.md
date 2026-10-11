@@ -9,13 +9,22 @@ exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2225'
-ht-degree: 99%
-
+source-wordcount: '2326'
+ht-degree: 100%
 ---
-
 # Sichern und Wiederherstellen{#backup-and-restore}
 
 Es gibt zwei Möglichkeiten zum Sichern und Wiederherstellen von Repository-Inhalten in AEM:
@@ -106,8 +115,8 @@ Wenn unter **Zielpfad** ein Verzeichnis angegeben ist, wird das Image des Reposi
 
 **Verzögerung** Zeigt eine Zeitverzögerung (in Millisekunden) an, damit die Repository-Leistung nicht beeinträchtigt wird. Standardmäßig wird das Repository-Backup mit voller Geschwindigkeit ausgeführt. Sie können die Geschwindigkeit der Erstellung eines Online-Backups verringern, sodass das Backup nicht dazu führt, dass andere Aufgaben langsamer ausgeführt werden.
 
-Stellen Sie bei Verwendung einer sehr großen Verzögerung sicher, dass das Online-Backup nicht länger als 24 Stunden dauert. Andernfalls verwerfen Sie dieses Backup, da es möglicherweise nicht alle Binärdateien enthält.
-Eine Verzögerung von 1 Millisekunde führt in der Regel zu einer 10%igen Nutzung von CPU, und eine Verzögerung von 10 Millisekunden führt in der Regel zu einer weniger als 3%igen Nutzung von CPU. Die Gesamtverzögerung in Sekunden kann wie folgt geschätzt werden: Repository-Größe in MB, multipliziert mit Verzögerung in Millisekunden, dividiert durch 2 (bei Verwendung der ZIP-Option) oder dividiert durch 4 (bei Sicherung in ein Verzeichnis). Das bedeutet, dass ein Backup auf ein Verzeichnis eines 200 MB-Repositorys mit einer Verzögerung von 1 ms die Backup-Zeit um etwa 50 Sekunden erhöht.
+Achten Sie bei der Festlegung einer sehr großen Verzögerung darauf, dass das Online-Backup nicht länger als 24 Stunden dauert. Andernfalls verwerfen Sie dieses Backup, da es möglicherweise nicht alle Binärdateien enthält.
+Eine Verzögerung von 1 ms führt in der Regel zu einer 10 %igen CPU-Auslastung und eine Verzögerung von 10 ms führt normalerweise zu einer CPU-Auslastung von weniger als 3 %. Die Gesamtverzögerung in Sekunden können Sie wie folgt schätzen: Repository-Größe (in MB) multipliziert mit der Verzögerung in Millisekunden geteilt durch 2 (wenn die ZIP-Option verwendet wird) bzw. geteilt durch 4 (wenn das Backup in einem Verzeichnis gespeichert wird). Das bedeutet, dass sich die Backup-Zeit durch Sichern eines 200 MB großen Repositorys in einem Verzeichnis bei einer Verzögerung von 1 Millisekunde um 50 Sekunden erhöht.
 
 >[!NOTE]
 >

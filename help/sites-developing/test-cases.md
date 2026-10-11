@@ -10,13 +10,22 @@ exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 100%
-
+source-wordcount: '532'
+ht-degree: 83%
 ---
-
 # Definieren von Testfällen{#defining-your-test-cases}
 
 Ihre Testfälle sollten auf Folgendem basieren:
@@ -58,13 +67,13 @@ Auch wenn dies unter [Umgebungen](/help/sites-developing/the-basics.md#environme
 
 Betrachten Sie AEM als zwei Anwendungen:
 
-* die *Autorenumgebung*
+* die *Autoren*Umgebung
 Diese Instanz ermöglicht es Autoren, Inhalte einzugeben und zu veröffentlichen.
 Sie hat einen klein(er)en, vorhersehbaren Benutzerkreis, für den spezielle Funktionen und Leistung äußerst wichtig sind.
 
-* die *Veröffentlichungsumgebung*
-Diese Instanz stellt die Website in veröffentlichter Form dar, auf die Besucherinnen und Besucher zugreifen können.
-Daraus ergibt sich meist ein größerer Benutzerkreis und das Traffic-Volumen ist nicht immer zu 100 % vorhersehbar.  Leistung ist immer noch entscheidend - wenn auf Anfragen reagiert wird. Erwägen Sie auch Caching und Lastenausgleich.
+* die *Veröffentlichungs*Umgebung
+Diese Instanz stellt die Website in veröffentlichter Form dar, auf die Besucher zugreifen können.
+Daraus ergibt sich meist ein größerer Benutzerkreis und das Traffic-Volumen ist nicht immer zu 100 % vorhersehbar. Leistung ist immer noch entscheidend - wenn auf Anfragen reagiert wird. Erwägen Sie auch Caching und Lastenausgleich.
 
 Zwar handelt es sich um dieselbe Software, doch die Umgebungen:
 
@@ -86,23 +95,23 @@ Beim Testen der Personalisierung sollte jeder einzelne Anwendungsfall mit mehrer
 
 Bei den meisten Projekten installieren Sie den Dispatcher für Caching und Lastenausgleich.
 
-Das Testen ist schwierig (Caching tritt auf unterschiedlichen Ebenen und in verschiedenen Orten auf) und muss auf Blackbox-Basis vorgenommen werden.  Die zu testenden Hauptaspekte sind:
+Das Testen ist schwierig (Caching tritt auf unterschiedlichen Ebenen und in verschiedenen Orten auf) und muss auf Blackbox-Basis vorgenommen werden. Die zu testenden Hauptaspekte sind:
 
-* **Genauigkeit**
-Stellen Sie sicher, dass den Besucherinnen und Besuchern der Website Inhaltsaktualisierungen angezeigt werden.
+* ****
+Stellt sicher, dass dem Website-Besucher Inhaltsaktualisierungen angezeigt werden.
 
-* **Kontinuität**
-Stellen Sie sicher, dass die Website auch dann noch verfügbar ist, wenn ein Server abgeschaltet ist.
+* **Continuity**
+Stellen Sie sicher, dass die Website auch dann noch verfügbar ist, wenn ein Server heruntergefahren wird.
 
 * **Cluster**
 Wird verwendet, um Folgendes bereitzustellen:
 
-   * **Failover**
-Wenn ein Server ausfällt, übernehmen andere Server im Cluster die Verarbeitung.
+  * **Failover**
+    Wenn ein Server ausfällt, übernehmen andere Server im Cluster die Verarbeitung.
 
-   * **Leistung**
-Lastenausgleich mit vollständigem Failover erhöht die Leistung eines Clusters.
-Wenn dies für ein Kundenprojekt verwendet wird, muss der Cluster getestet werden, um den korrekten Ablauf der Konfiguration zu bestätigen.
+  * **Leistung**
+    Lastenausgleich mit vollständigem Failover erhöht die Leistung eines Clusters.
+    Wenn dies für ein Kundenprojekt verwendet wird, muss der Cluster getestet werden, um den korrekten Ablauf der Konfiguration zu bestätigen.
 
 ## Testen von Software von Drittanbietern {#testing-third-party-software}
 

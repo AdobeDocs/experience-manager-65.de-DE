@@ -9,7 +9,18 @@ content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: c705667e60ccfbc4612ef3212dbe549e6bea66a9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3576'
 ht-degree: 99%
@@ -173,7 +184,7 @@ Beim Erstellen von Regeln definieren Sie einen regulären Ausdruck (auch als reg
 | include | „include“ umfasst alle Dateien und Ordner im angegebenen Verzeichnis, die dem regulären Ausdruck entsprechen. „include“ schließt andere Dateien oder Ordner unter dem angegebenen Stammpfad **nicht** mit ein. |
 | exclude | „exclude“ schließt alle Dateien und Ordner aus, die dem regulären Ausdruck entsprechen. |
 
-Paketfilter werden meistens definiert, wenn Sie das Paket zum ersten [&#x200B; erstellen](#creating-a-new-package) Sie können jedoch auch später bearbeitet werden. Danach sollte das Paket neu aufgebaut werden, um seinen Inhalt basierend auf den neuen Filterdefinitionen zu aktualisieren.
+Paketfilter werden meistens definiert, wenn Sie das Paket zum ersten [ erstellen](#creating-a-new-package) Sie können jedoch auch später bearbeitet werden. Danach sollte das Paket neu aufgebaut werden, um seinen Inhalt basierend auf den neuen Filterdefinitionen zu aktualisieren.
 
 >[!TIP]
 >

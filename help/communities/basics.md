@@ -1,6 +1,6 @@
 ---
 title: Grundlagen zu Communities-Komponenten
-description: Hinzufügen von Communities-Funktionen zu AEM-Sites im Bearbeitungsmodus und Konfigurieren von Komponenten
+description: Hinzufügen von Communities-Funktionen zu AEM Sites im Bearbeitungsmodus und Konfigurieren von Komponenten
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -9,20 +9,27 @@ exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '364'
 ht-degree: 1%
-
 ---
-
 # Grundlagen zu Communities-Komponenten {#communities-components-basics}
 
 ## Überblick {#overview}
 
-Im Abschnitt Authoring der Dokumentation wird beschrieben, wie Sie im Authoring-Bearbeitungsmodus Communities-Funktionen zu AEM-Sites hinzufügen und Komponentenkonfigurationen vornehmen.
+Im Abschnitt Authoring der Dokumentation wird beschrieben, wie Sie AEM-Sites im Authoring-Bearbeitungsmodus Communities-Funktionen hinzufügen und Komponentenkonfigurationen vornehmen.
 
-Komponenten können mithilfe einer AEM-Instanz und des interaktiven [Community-Komponentenhandbuchs“ untersucht &#x200B;](components-guide.md).
+Komponenten können mithilfe einer AEM-Instanz und des interaktiven [Community-Komponentenhandbuchs“ untersucht ](components-guide.md).
 
 ## Zugreifen auf Communities-Komponenten {#accessing-communities-components}
 
@@ -38,7 +45,7 @@ Weitere Informationen finden Sie in der Liste unter [Verfügbare Communities-Kom
 
 ### Wechseln in den Designmodus {#entering-design-mode}
 
-Wenn eine **Communities**-Komponente nicht im Komponenten-Browser (Sidekick) gefunden wird, müssen Sie `Design Mode` eingeben, um andere Communities-Komponenten hinzuzufügen. [Erforderliche Client-seitige &#x200B;](#required-clientlibs)) (clientlibs) müssen möglicherweise auch hinzugefügt werden.
+Wenn eine **Communities**-Komponente nicht im Komponenten-Browser (Sidekick) gefunden wird, müssen Sie `Design Mode` eingeben, um andere Communities-Komponenten hinzuzufügen. [Erforderliche Client-seitige ](#required-clientlibs)) (clientlibs) müssen möglicherweise auch hinzugefügt werden.
 
 Weitere Informationen finden Sie [Konfigurieren von Komponenten im Designmodus](../../help/sites-authoring/default-components-designmode.md).
 
@@ -70,7 +77,7 @@ Viele Communities-Funktionen können so konfiguriert werden, dass Mitglieder Inh
 
 Wenn Tagging zulässig ist, kann die Konfiguration der Community-Site so festgelegt werden, dass die Namespaces beschränkt bleiben, die Mitgliedern in der Veröffentlichungsumgebung präsentiert werden. Siehe die [Community-Sites-Konsole](sites-console.md#tagging).
 
-Funktionen, die das Tagging ermöglichen[&#x200B; (](blog-feature.md)), [Kalender](calendar.md), [Dateibibliothek](file-library.md), [Forum](forum.md)
+Funktionen, die das Tagging ermöglichen[ (](blog-feature.md)), [Kalender](calendar.md), [Dateibibliothek](file-library.md), [Forum](forum.md)
 
 Funktionen, die Tags verwenden: [Suche](search.md), [Social Tag Cloud](tagcloud.md)
 

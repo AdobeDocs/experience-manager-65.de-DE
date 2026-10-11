@@ -10,13 +10,20 @@ exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1212'
 ht-degree: 0%
-
 ---
-
 # Erleben Sie die veröffentlichte Site {#experience-the-published-site}
 
 ## Auf der Veröffentlichungsinstanz zur neuen Site navigieren {#browse-to-new-site-on-publish}
@@ -76,7 +83,7 @@ Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durc
 
 ## Mitglied der vertrauenswürdigen Community {#trusted-community-member}
 
-Bei dieser Erfahrung wird davon [, dass &#x200B;](/help/communities/tutorials.md#demo-users)Aaron McDonald) die Rolle des [Community-Managers und -Moderators](/help/communities/create-site.md#roles) zugewiesen wurde. Kehren Sie andernfalls zur Autorenumgebung zurück, um [Site-Einstellungen ändern](/help/communities/sites-console.md#modifying-site-properties) und wählen Sie Aaron McDonald als Community-Manager und Moderator aus.
+Bei dieser Erfahrung wird davon [, dass ](/help/communities/tutorials.md#demo-users)Aaron McDonald) die Rolle des [Community-Managers und -Moderators](/help/communities/create-site.md#roles) zugewiesen wurde. Kehren Sie andernfalls zur Autorenumgebung zurück, um [Site-Einstellungen ändern](/help/communities/sites-console.md#modifying-site-properties) und wählen Sie Aaron McDonald als Community-Manager und Moderator aus.
 
 Klicken Sie in der rechten oberen Ecke auf `Log in` und melden Sie sich mit Ihrem Benutzernamen (aaron.mcdonald@mailinator.com) und Kennwort (Kennwort) an. Beachten Sie die Möglichkeit, sich mit Twitter- oder Facebook-Anmeldeinformationen anzumelden.
 
@@ -87,8 +94,8 @@ Sobald Sie als registriertes Community-Mitglied angemeldet sind, beachten Sie di
 * **Profil** Option ermöglicht die Anzeige und Bearbeitung Ihres Profils.
 * [Nachrichten](/help/communities/configure-messaging.md) leitet Sie zum Abschnitt „Direktnachrichten“, in dem Sie Folgendes tun können:
 
-   1. Zeigen Sie die Direktnachrichten an, die Sie erhalten haben (Posteingang), gesendet haben (gesendete Elemente) und gelöscht haben (Papierkorb).
-   1. Erstellen Sie neue Direktnachrichten, damit Sie sie an Einzelpersonen und Gruppen senden können.
+  1. Zeigen Sie die Direktnachrichten an, die Sie erhalten haben (Posteingang), gesendet haben (gesendete Elemente) und gelöscht haben (Papierkorb).
+  1. Erstellen Sie neue Direktnachrichten, damit Sie sie an Einzelpersonen und Gruppen senden können.
 
 * [Benachrichtigungen](/help/communities/notifications.md) leitet Sie zum Abschnitt „Benachrichtigungen“, wo Sie wichtige Ereignisse anzeigen und Benachrichtigungseinstellungen bearbeiten können.
 * [Administration](/help/communities/published-site.md#moderationlink) leitet Sie zur Seite &quot;AEM Communities-Moderation“ weiter, wenn Sie über Moderationsberechtigungen verfügen.
@@ -154,13 +161,13 @@ Fügen Sie beispielsweise zwei `new groups` hinzu.
 
 * Eine namens `Baseball`
 
-   * Legen Sie ihn als `Open Group` fest (erforderliche Mitgliedschaft).
-   * Wählen Sie auf der Registerkarte Vorlagen die Option `Conversational Group` aus.
+  * Legen Sie ihn als `Open Group` fest (erforderliche Mitgliedschaft).
+  * Wählen Sie auf der Registerkarte Vorlagen die Option `Conversational Group` aus.
 
 * Eine namens `Gymnastics`
 
-   * Ändern Sie die Einstellung in `Member Only Group` (eingeschränkte Mitgliedschaft).
-   * Wählen Sie auf der Registerkarte Vorlagen die Option `Conversational Group` aus.
+  * Ändern Sie die Einstellung in `Member Only Group` (eingeschränkte Mitgliedschaft).
+  * Wählen Sie auf der Registerkarte Vorlagen die Option `Conversational Group` aus.
 
 **Hinweis**:
 
@@ -201,7 +208,7 @@ Gehen Sie beispielsweise zur **author**-Instanz, öffnen Sie den `engage` Ordner
 
 ### Moderationslink {#moderationlink}
 
-Wenn das Community-Mitglied über Moderationsberechtigungen verfügt, ist der Link Moderation sichtbar. Wenn Sie auf den Link klicken, werden die geposteten Community-Inhalte angezeigt und können [&#128279;](/help/communities/moderation.md)&#x200B; ähnlich wie bei der [Moderationskonsole](/help/communities/moderate-ugc.md) in der Autorenumgebung „moderiert werden.
+Wenn das Community-Mitglied über Moderationsberechtigungen verfügt, ist der Link Moderation sichtbar. Wenn Sie auf den Link klicken, werden die geposteten Community-Inhalte angezeigt und können [ ähnlich wie bei der [Moderationskonsole](/help/communities/moderate-ugc.md) in der Autorenumgebung „moderiert](/help/communities/moderation.md) werden.
 
 Verwenden Sie die Schaltfläche Zurück des Browsers, um zur veröffentlichten Site zurückzukehren. Die meisten Konsolen sind in der Veröffentlichungsumgebung nicht über die globale Navigation zugänglich.
 

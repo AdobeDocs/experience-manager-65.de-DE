@@ -10,13 +10,22 @@ exl-id: 2b9b4857-821c-4f2f-9ed9-78a1c9f5ac67
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 91%
-
+source-wordcount: '816'
+ht-degree: 93%
 ---
-
 # Anpassen der Websites-Konsole (klassische Benutzeroberfläche){#customizing-the-websites-console-classic-ui}
 
 ## Hinzufügen einer benutzerdefinierten Spalte zur Websites-(SiteAdmin)-Konsole. {#adding-a-custom-column-to-the-websites-siteadmin-console}
@@ -26,7 +35,7 @@ Die Websites-Administrationskonsole kann um die Anzeige benutzerdefinierter Spal
 In diesem Schritt-für-Schritt-Tutorial wird erläutert, wie Sie eine neue Spalte in der Websites-Administrationskonsole anzeigen, indem Sie die Schnittstelle `ListInfoProvider` implementieren. Es besteht aus folgenden Schritten:
 
 1. [Erstellen des OSGi-Dienstes](#creating-the-osgi-service) und Bereitstellen des Pakets, das ihn enthält, auf dem AEM-Server.
-1. (Optional) [&#x200B; Testen des neuen Dienstes](#testing-the-new-service) durch Ausgabe eines JSON-Aufrufs, um das JSON-Objekt anzufordern, das zum Erstellen der Konsole verwendet wird.
+1. (Optional) [ Testen des neuen Dienstes](#testing-the-new-service) durch Ausgabe eines JSON-Aufrufs, um das JSON-Objekt anzufordern, das zum Erstellen der Konsole verwendet wird.
 1. [Anzeigen der neuen Spalte](#displaying-the-new-column) durch Erweitern der Knotenstruktur der Konsole im Repository
 
 >[!NOTE]
@@ -58,9 +67,9 @@ Es folgt eine Beispielimplementierung unten:
 
 So erstellen Sie den OSGi-Dienst:
 
-1. [Erstellen Sie ein Bundle](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle) in CRXDE Lite.
+1. [Erstellen Sie ein Paket](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle) in CRXDE Lite.
 1. Fügen Sie den Beispiel-Code unten hinzu.
-1. Erstellen Sie das Bundle.
+1. Erstellen Sie das Paket.
 
 Der neue Dienste wird ordnungsgemäß ausgeführt.
 
@@ -115,12 +124,12 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 Wenn Sie die Websites-Administrationskonsole öffnen und Ihre Site durchsuchen, gibt der Browser einen Ajax-Aufruf aus, um das JSON-Objekt abzurufen, das zum Erstellen der Konsole verwendet wird. Wenn Sie beispielsweise zum Ordner `/content/geometrixx` navigieren, wird die folgende Anforderung an den AEM-Server gesendet, um die Konsole zu erstellen:
 
-[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=SiteAdmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
-Gehen Sie wie folgt vor, um sicherzustellen, dass der neue Dienst nach der Bereitstellung des Bundles, das ihn enthält, ausgeführt wird:
+Gehen Sie wie folgt vor, um sicherzustellen, dass der neue Dienst nach der Bereitstellung des Pakets, das ihn enthält, ausgeführt wird:
 
 1. Lassen Sie Ihren Browser auf die folgende URL verweisen:
-   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=SiteAdmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 1. Die Antwort sollte die neuen Eigenschaften wie folgt anzeigen:
 
@@ -139,7 +148,7 @@ Der letzte Schritt besteht darin, die Knotenstruktur der Websites-Administration
    * Entfernen Sie **pageText**.
 
    * Legen **pathRegex** auf fest. `/content/geometrixx(/.*)?`
-Dadurch ist die Rasterkonfiguration für alle Geometrixx-Websites aktiviert.
+     Dadurch ist die Rasterkonfiguration für alle Geometrixx-Websites aktiviert.
 
    * Legen Sie **storeProxySuffix** auf `.pages.json` fest
 
@@ -147,9 +156,9 @@ Dadurch ist die Rasterkonfiguration für alle Geometrixx-Websites aktiviert.
 
    * Um die MSM-Funktion zu aktivieren, fügen Sie die folgenden MSM-Parameter zu der aus mehreren Zeichenfolgen bestehenden Eigenschaft **storeReaderFields** hinzu:
 
-      * **MSM:isSource**
-      * **MSM:isInBlueprint**
-      * **MSM:isLiveCopy**
+     * **MSM:isSource**
+     * **MSM:isInBlueprint**
+     * **MSM:isLiveCopy**
 
 1. Fügen Sie einen `starred` Knoten (vom Typ **nt:unstructured**) unter `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` mit den folgenden Eigenschaften hinzu:
 
@@ -162,7 +171,7 @@ Dadurch ist die Rasterkonfiguration für alle Geometrixx-Websites aktiviert.
 1. (optional) Verschieben Sie die Spalten, die Sie nicht anzeigen möchten, per Drag-and-Drop nach `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
 1. `/siteadmin` ist ein Vanity-Pfad, der standardmäßig auf `/libs/wcm/core/content/siteadmin` verweist.
-Um diesen an Ihre Version von siteadmin auf `/apps/wcm/core/content/siteadmin` umzuleiten, definieren Sie die Eigenschaft `sling:vanityOrder` so, dass sie einen höheren Wert aufweist, als auf `/libs/wcm/core/content/siteadmin` definiert. Der Standardwert ist 300, daher sind alle höheren Werte geeignet.
+Um ihn an Ihre SiteAdmin-Version auf `/apps/wcm/core/content/siteadmin` umzuleiten, definieren Sie die Eigenschaft `sling:vanityOrder` so, dass sie einen höheren Wert aufweist, als auf `/libs/wcm/core/content/siteadmin` definiert ist. Der Standardwert lautet 300, also sind alle höheren Werte geeignet.
 
 1. Wechseln Sie zu Websites-Administrationskonsole und navigieren Sie zur folgenden Geometrixx-Website:
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).

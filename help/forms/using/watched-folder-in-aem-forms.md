@@ -9,13 +9,29 @@ exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '7066'
-ht-degree: 95%
-
+source-wordcount: '7272'
+ht-degree: 96%
 ---
-
 # Überwachter Ordner in AEM Forms{#watched-folder-in-aem-forms}
 
 Ein Administrator kann einen Netzwerkordner konfigurieren, der als überwachter Ordner bezeichnet wird, sodass ein vorkonfigurierter Workflow-, Dienst- oder Skriptvorgang zur Verarbeitung der Datei aufgerufen wird, wenn ein Benutzer eine Datei (z. B. eine PDF-Datei) in diesem überwachten Ordner ablegt. Nachdem der Dienst den vorgesehenen Vorgang ausgeführt hat, wird die Ergebnisdatei in einem angegebenen Ausgabeordner gespeichert. Weitere Informationen zu Workflows, Diensten und Skripten finden Sie unter [Verschiedene Methoden zur Verarbeitung von Dateien](#variousmethodsforprocessingfiles).
@@ -66,25 +82,25 @@ Sie können die folgenden Eigenschaften für einen überwachten Ordner konfiguri
 * **inputProcessorType (Zeichenfolge)**: Der Typ des zu startenden Prozesses. Zur Auswahl stehen Workflow, Skript oder Dienst. Dies ist eine obligatorische Eigenschaft.
 * **inputProcessorId (Zeichenfolge)**: Das Verhalten der Eigenschaft „inputProcessorId“ wird durch den für die Eigenschaft „inputProcessorType“ angegebenen Wert gesteuert. Dies ist eine obligatorische Eigenschaft. In der folgenden Liste werden alle möglichen Werte der Eigenschaft „inputProcessorType“ und die entsprechenden Anforderungen für die Eigenschaft „inputProcessorType“ aufgeführt:
 
-   * Für einen Workflow geben Sie das Workflow-Modell an, das ausgeführt werden soll. Beispiel: /etc/workflow/models/&lt;workflow_name>/jcr:content/model
-   * Für ein Skript geben Sie den JCR-Pfad des auszuführenden Skripts an. Zum Beispiel: /etc/fd/watchfolder/test/testScript.ecma
-   * Für einen Dienst geben Sie den Filter an, der zum Suchen nach einem OSGi-Dienst verwendet werden soll. Der Dienst ist als Implementierung der com.adobe.aemfd.watchfolder.service.api.ContentProcessor-Schnittstelle registriert.
+  * Für einen Workflow geben Sie das Workflow-Modell an, das ausgeführt werden soll. Beispiel: /etc/workflow/models/&lt;workflow_name>/jcr:content/model
+  * Für ein Skript geben Sie den JCR-Pfad des auszuführenden Skripts an. Zum Beispiel: /etc/fd/watchfolder/test/testScript.ecma
+  * Für einen Dienst geben Sie den Filter an, der zum Suchen nach einem OSGi-Dienst verwendet werden soll. Der Dienst ist als Implementierung der com.adobe.aemfd.watchfolder.service.api.ContentProcessor-Schnittstelle registriert.
 
 * **runModes (Zeichenfolge)**: Eine kommagetrennte Liste der zulässigen Ausführungsmodi für die Ausführung des Workflows. Hier sind einige Beispiele:
 
-   * author
+  * author
 
-   * publish
+  * publish
 
-   * Author, Publish
+  * Author, Publish
 
-   * Publish, Author
+  * Publish, Author
 
 >[!NOTE]
 >
 >Ist auf dem Server, der den überwachten Ordner hostet, keiner der angegebenen Ausführungsmodi verfügbar, wird der überwachte Ordner immer aktiviert, egal, welche Ausführungsmodi auf dem Server laufen.
 
-* **outputFilePattern (Zeichenfolge)**: Das Muster der Ausgabedatei. Sie können ein Ordner- oder Dateimuster angeben. Wenn Sie ein Ordnermuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben in den Workflows. Wenn Sie ein Dateimuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben im Dateimuster. [In Datei- und Ordnermustern können Sie außerdem eine Ordnerstruktur für die Ausgabedateien angeben. &#x200B;](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) Dies ist eine obligatorische Eigenschaft.
+* **outputFilePattern (Zeichenfolge)**: Das Muster der Ausgabedatei. Sie können ein Ordner- oder Dateimuster angeben. Wenn Sie ein Ordnermuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben in den Workflows. Wenn Sie ein Dateimuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben im Dateimuster. [In Datei- und Ordnermustern können Sie außerdem eine Ordnerstruktur für die Ausgabedateien angeben. ](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) Dies ist eine obligatorische Eigenschaft.
 
 * **stageFileExpirationDuration (lang, Standard -1)**: Geben Sie die Anzahl Sekunden an, nach denen für eine Eingabedatei/einen Ordner, die/der bereits zur Verarbeitung abgerufen wurde, eine Zeitüberschreitung eintritt und ein Fehler gemeldet wird. Dieser Ablaufmechanismus wird nur aktiviert, wenn der Wert für diese Eigenschaft eine positive Zahl ist.
 
@@ -95,30 +111,30 @@ Sie können die folgenden Eigenschaften für einen überwachten Ordner konfiguri
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, Standard true):** Ob die Ablauffunktion nur aktiviert werden soll, wenn der überwachte Ordner gedrosselt wird. Der Mechanismus ist für gedrosselte überwachte Ordner relevanter, da eine geringe Anzahl von noch unformatiert gebliebenen Dateien (aufgrund der zeitweisen Fehlfunktion des Auftrags/Workflows) das Potenzial hat, die Verarbeitung des gesamten Stapels zu unterbinden, wenn die Drosselung aktiviert ist. Wenn diese Eigenschaft als „true“ beibehalten wird (Standardeinstellung), wird für überwachte Ordner, die nicht gedrosselt werden, der Ablaufmechanismus nicht aktiviert. Wenn die Eigenschaft als „false“ beibehalten wird, tritt die Zeitüberschreitung immer ein, wenn die stageFileExpirationDuration-Eigenschaft eine positive Zahl ist.
 
 * **pollInterval (Lang)**: Das Intervall in Sekunden, in dem der überwachte Ordner auf Eingaben überprüft wird. Außer wenn die Einstellung „Einschränken“ aktiviert ist, muss das Abfrageintervall länger sein als die Verarbeitungsdauer für einen durchschnittlichen Auftrag. Andernfalls kann es zu einer Überlastung des Systems kommen. Der Standardwert ist 5. Weitere Informationen finden Sie in der Beschreibung für „Stapelgröße“. Der Wert für „pollInterval“ muss größer als oder gleich eins sein.
-* **excludeFilePattern (Zeichenfolge)**: Eine durch Semikolon (;) getrennte Liste von Mustern, mit deren Hilfe in einem überwachten Ordner ermittelt wird, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner mit diesem Muster werden nicht für die Verarbeitung überprüft. Diese Einstellung ist nützlich, wenn die Eingabe ein Ordner mit mehreren Dateien ist. Der Inhalt des Ordners kann in einen Ordner mit einem Namen kopiert werden, der vom überwachten Ordner aufgenommen wird. Dadurch wird verhindert, dass der überwachte Ordner einen Ordner zur Verarbeitung aufnimmt, bevor dieser vollständig in den Eingabeordner kopiert ist. Der Standardwert ist null.
-Sie können [Dateimuster) verwenden](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) um Folgendes auszuschließen:
+* **excludeFilePattern (Zeichenfolge)**: Eine durch Semikolon (;) getrennte Liste von Mustern, mit deren Hilfe in einem überwachten Ordner ermittelt wird, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die diesem Muster entsprechen, werden nicht für die Verarbeitung überprüft. Diese Einstellung ist hilfreich, wenn die Eingabe aus einem Ordner mit mehreren Dateien besteht. Der Inhalt des Ordners kann in einen Ordner mit einem Namen kopiert werden, der vom überwachten Ordner aufgenommen wird. Dies verhindert, dass der überwachte Ordner einen Ordner für die Verarbeitung aufnimmt, bevor dieser vollständig in den Eingabeordner kopiert ist. Der Standardwert ist Null.
+Sie können [Dateimuster](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) verwenden, um Folgendes auszuschließen:
 
-   * Dateien mit bestimmten Dateinamenerweiterungen, z. B. &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-   * Dateien mit bestimmten Namen; durch „data&#42;“ würden beispielsweise Dateien und Ordner mit den Namen „data1“, „data2“ usw. ausgeschlossen.
-   * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
+  * Dateien mit bestimmten Dateinamenerweiterungen, z. B. &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+  * Dateien mit bestimmten Namen; durch „data&#42;“ würden beispielsweise Dateien und Ordner mit den Namen „data1“, „data2“ usw. ausgeschlossen.
+  * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
-      * data`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
-      * &#42;.`[dD][aA]`&#39;port&#39;
-      * &#42;.`[Xx][Mm][Ll]`
+    * data`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
+    * &#42;.`[dD][aA]`&#39;port&#39;
+    * &#42;.`[Xx][Mm][Ll]`
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
 * **includeFilePattern (Zeichenfolge)**: Eine durch Semikolon (;) getrennte Liste von Mustern, mit deren Hilfe in einem überwachten Ordner ermittelt wird, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Wenn zum Beispiel für IncludeFilePattern „input&#42;“ festgelegt wird, werden alle Dateien und Ordner aufgenommen, die „input&#42;“ enthalten Hierzu gehören auch Dateien und Ordner namens „input1“, „input2“ usw. Der Standardwert ist &#42; und bezieht sich auf alle Dateien und Ordner. Sie können Dateimuster verwenden, um Folgendes einzuschließen:
 
-   * Dateien mit bestimmten Dateinamenerweiterungen, z. B. &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-   * Dateien mit bestimmten Namen, z. B. data.&#42; Hierzu gehören auch Dateien und Ordner namens data1, data2 usw.
+  * Dateien mit bestimmten Dateinamenerweiterungen, z. B. &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+  * Dateien mit bestimmten Namen, z. B. data.&#42; Hierzu gehören auch Dateien und Ordner namens data1, data2 usw.
 
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
-   * data`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
+  * data`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
 
-      * &#42;.`[dD][aA]`&#39;port&#39;
-      * &#42;.`[Xx][Mm][Ll]`
+    * &#42;.`[dD][aA]`&#39;port&#39;
+    * &#42;.`[Xx][Mm][Ll]`
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
@@ -126,20 +142,20 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](.
 * **purgeDuration (Lang)**: Dateien und Ordner im Ergebnisordner werden bereinigt, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Diese Einstellung trägt dazu bei, dass der Ergebnisordner nicht voll wird. Ein Wert von „-1“ Tagen bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
 * **resultFolderName (Zeichenfolge)**: Der Ordner, in dem die Ergebnisse gespeichert werden. Wenn die Ergebnisse nicht in diesem Ordner angezeigt werden, überprüfen Sie den Fehlerordner. Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert. Dieser Wert kann ein absoluter oder relativer Pfad mit folgenden Dateimustern sein:
 
-   * %F = Dateinamenspräfix
-   * %E = Dateinamenerweiterung
-   * %Y = Jahr (vollständig)
-   * %y = Jahr (letzte zwei Stellen)
-   * %M = Monat
-   * %D = Tag des Monats
-   * %d = Tag des Jahres
-   * %H = Stunde (24-Stunden-Format)
-   * %h = Stunde (12-Stunden-Format)
-   * %m = Minute
-   * %s = Sekunde
-   * %l = Millisekunde
-   * %R = Zufallszahl (zwischen 0 und 9)
-   * %P = Prozess- oder Auftrags-ID
+  * %F = Dateinamenspräfix
+  * %E = Dateinamenerweiterung
+  * %Y = Jahr (vollständig)
+  * %y = Jahr (letzte zwei Stellen)
+  * %M = Monat
+  * %D = Tag des Monats
+  * %d = Tag des Jahres
+  * %H = Stunde (24-Stunden-Format)
+  * %h = Stunde (12-Stunden-Format)
+  * %m = Minute
+  * %s = Sekunde
+  * %l = Millisekunde
+  * %R = Zufallszahl (zwischen 0 und 9)
+  * %P = Prozess- oder Auftrags-ID
 
   Wenn es beispielsweise 20 Uhr am 17. Juli 2009 ist und Sie „C:/Test/WF0/failure/%Y/%M/%D/%H/“ angeben, lautet der Ergebnisordner „C:/Test/WF0/failure/2009/07/17/20“.
 
@@ -171,11 +187,11 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](.
 >Die Workflows sind standardmäßig asynchron. Die Workflows werden selbst dann im asynchronen Modus gestartet, wenn Sie das Flag auf „false“ setzen.
 
 * **enabled (Boolescher Wert)**: Deaktiviert und aktiviert die Überprüfung des überwachten Ordners. Legen Sie für „enabled“ den Wert „true“ fest, um die Überprüfung des überwachten Ordners zu starten. Der Standardwert lautet true.
-* **payloadMapperFilter:** Wenn ein Ordner als überwachter Ordner konfiguriert ist, wird im überwachten Ordner eine Ordnerstruktur erstellt. Die Struktur verfügt über Ordner, um Eingaben bereitzustellen, Ausgaben (Ergebnisse) zu empfangen, Daten für Fehler zu speichern, Daten für langlebige Prozesse zu bewahren und Daten für verschiedene Phasen zu speichern. Die Ordnerstruktur eines überwachten Ordners kann als Payload für formularzentrierte Workflows dienen. Mit einem Payload-Mapper können Sie eine Payload-Struktur definieren, die einen überwachten Ordner für Eingabe, Ausgabe und Verarbeitung verwendet. Wenn Sie beispielsweise den standardmäßigen Zuordner verwenden, ordnet er den Inhalt des überwachten Ordners dem Ordner [payload]\input und [payload]\output zu. Zwei standardmäßige Payload-Mapper-Implementierungen sind verfügbar. Wenn Sie keine [benutzerdefinierte Implementierung &#x200B;](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)haben, verwenden Sie eine Standard-Implementierung:
+* **payloadMapperFilter:** Wenn ein Ordner als überwachter Ordner konfiguriert ist, wird im überwachten Ordner eine Ordnerstruktur erstellt. Die Struktur verfügt über Ordner, um Eingaben bereitzustellen, Ausgaben (Ergebnisse) zu empfangen, Daten für Fehler zu speichern, Daten für langlebige Prozesse zu bewahren und Daten für verschiedene Phasen zu speichern. Die Ordnerstruktur eines überwachten Ordners kann als Payload für formularzentrierte Workflows dienen. Mit einem Payload-Mapper können Sie eine Payload-Struktur definieren, die einen überwachten Ordner für Eingabe, Ausgabe und Verarbeitung verwendet. Wenn Sie beispielsweise den standardmäßigen Zuordner verwenden, ordnet er den Inhalt des überwachten Ordners dem Ordner [payload]\input und [payload]\output zu. Zwei standardmäßige Payload-Mapper-Implementierungen sind verfügbar. Wenn Sie keine [benutzerdefinierte Implementierung ](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)haben, verwenden Sie eine Standard-Implementierung:
 
-   * **Standard-Mapper**: Verwenden Sie den Standard-Payload-Mapper, um den Eingabe- und Ausgabe-Inhalt der überwachten Ordner in separaten Eingabe- und Ausgabeordnern in der Payload zu belassen. Verwenden Sie im Payload-Pfad eines Workflows außerdem die Pfade [payload]/input/ und [payload]/output, um Inhalte abzurufen und zu speichern.
+  * **Standard-Mapper**: Verwenden Sie den Standard-Payload-Mapper, um den Eingabe- und Ausgabe-Inhalt der überwachten Ordner in separaten Eingabe- und Ausgabeordnern in der Payload zu belassen. Verwenden Sie im Payload-Pfad eines Workflows außerdem die Pfade [payload]/input/ und [payload]/output, um Inhalte abzurufen und zu speichern.
 
-   * **Einfacher dateibasierter Payload-Mapper:** Verwenden Sie den einfachen dateibasierten Payload-Mapper, um Eingabe- und Ausgabe-Inhalte direkt im Nutzdatenordner zu beizubehalten. Es wird keine zusätzliche Hierarchie erstellt, wie z. B. ein Standard-Mapper.
+  * **Einfacher dateibasierter Payload-Mapper:** Verwenden Sie den einfachen dateibasierten Payload-Mapper, um Eingabe- und Ausgabe-Inhalte direkt im Nutzdatenordner zu beizubehalten. Es wird keine zusätzliche Hierarchie erstellt, wie z. B. ein Standard-Mapper.
 
 ### Benutzerdefinierte Konfigurationsparameter {#custom-configuration-parameters}
 
@@ -307,7 +323,7 @@ Mithilfe von Workflows können Sie Aktivitäten in Experience Manager automatisi
 
 * Beachten Sie vor der Erstellung eines Workflows die folgenden Punkte:
 * Die Ausgabe eines Schritts muss für alle nachfolgenden Schritte verfügbar sein.
-Die Schritte müssen in der Lage sein, die in den vorherigen Schritten generierten vorhandenen Ausgaben zu aktualisieren (oder sogar zu löschen).
+In jedem Schritt muss es möglich sein, die in vorhergehenden Schritten generierten bestehenden Ausgabedaten zu aktualisieren oder zu löschen.
 * Die veränderlichen Variablen werden für die Weiterleitung der benutzerdefinierten dynamischen Daten zwischen den Schritten verwendet.
 
 Führen Sie für die Verarbeitung von Dateien mithilfe von Workflows die folgenden Schritte aus:
@@ -355,8 +371,8 @@ Die folgenden ProcessorContext-APIs sind ebenfalls verfügbar:
 >
 >Ein Aufruf der setResult-API mit einem Null-Inhalt würde in jedem anderen Szenario zu einem Fehler führen.
 
-Das folgende Beispiel wird als Workflow-Schritt implementiert. In diesem Beispiel verwendet das ECMA-Skript die Variable stepCount, um zu verfolgen, wie oft ein Schritt in der aktuellen Workflow-Instanz aufgerufen wird.
-Der Name des Ausgabeordners ist eine Kombination aus der Nummer des aktuellen Schritts, dem ursprünglichen Dateinamen und dem im Parameter „outPrefix“ angegebenen Präfix.
+Das folgende Beispiel zeigt eine Implementierung als Workflow-Schritt. In diesem Beispiel verwendet das ECMAScript die Variable stepCount, um zu verfolgen, wie oft ein Schritt in der aktuellen Instanz des Workflows aufgerufen wird.
+Der Name des Ausgabeordners ist eine Kombination aus der Nummer des aktuellen Schritts, dem Originaldateinamen und dem im Parameter „outPrefix“ angegebenen Präfix.
 
 Das ECMAScript ruft einen Verweis des Workflow-Kontext-Dienstes ab und erstellt eine Implementierung der WorkflowContextProcessor-Schnittstelle. Die WorkflowContextProcessor-Implementierung übernimmt Eingabedateien, kopiert sie an einen temporären Speicherort und gibt ein Dokument zurück, das die kopierte Datei repräsentiert. Basierend auf dem Wert der Booleschen Variablen „purgePrevious“ wird beim aktuellen Schritt die Ausgabe aus dessen zuletzt vorhergegangener Ausführung innerhalb der aktuellen Instanz des Workflows gelöscht. Zuletzt wird die Methode „wfSvc.execute“ aufgerufen, um die Implementierung von „WorkflowContextProcessor“ auszuführen. Der Inhalt des Ausgabedokuments wird im Ergebnisordner unter dem physischen Pfad gespeichert, der im Konfigurationsknoten für den überwachten Ordner angegeben ist.
 
@@ -405,8 +421,8 @@ Wenn sich die Struktur einer Payload von der Struktur des überwachten Ordners u
 1. Laden Sie das [Adobe Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/) herunter.
 1. Richten Sie das Client-SDK im Build-Pfad des Maven-basierten Projekts ein. Um zu beginnen, können Sie das folgende Maven-basierte Projekt in der IDE Ihrer Wahl herunterladen und öffnen.
 1. Bearbeiten Sie den im Beispielpaket verfügbaren Code des Payload-Mapper-Filters entsprechend Ihren Anforderungen.
-1. Verwenden Sie Maven, um ein Bundle des benutzerdefinierten Payload-Mapper-Filters zu erstellen.
-1. Verwenden Sie die [AEM-Bundles-Konsole](https://localhost:4502/system/console/bundles), um das Bundle zu installieren.
+1. Verwenden Sie Maven, um ein Paket des benutzerdefinierten Payload-Mapper-Filters zu erstellen.
+1. Verwenden Sie die [AEM-Paketkonsole](https://localhost:4502/system/console/bundles), um das Paket zu installieren.
 
    Jetzt wird der benutzerdefinierte Payload-Mapper-Filter in der AEM-Benutzeroberfläche für überwachte Ordner aufgeführt. Sie können ihn mit Ihrem Workflow verwenden.
 
@@ -528,8 +544,8 @@ Nachdem die Dateien in den Bereitstellungsordner verschoben wurden, werden Aufru
 
 * Wenn der Dienst für überwachte Ordner die Aufrufanfrage für jede der Dateien im Bereitstellungsordner erfolgreich erstellt hat und der Server abstürzt, gibt es je nach Aufruftyp zwei Verhaltensweisen:
 
-   * **Synchron**: Wenn der Dienst für überwachte Ordner so konfiguriert ist, dass der Dienst synchron aufgerufen wird, bleiben alle Dateien im Bereitstellungsordner unverarbeitet im Bereitstellungsordner.
-   * **Asynchron:** In diesem Fall ist der Dienst für überwachte Ordner vom Job Manager-Dienst abhängig. Wenn der Job Manager-Dienst den Dienst für überwachte Ordner zurückruft, werden die Dateien im Bereitstellungsordner basierend auf den Ergebnissen des Aufrufs in den Aufbewahrungs- oder Fehlerordner verschoben. Wenn der Job Manager-Dienst den Dienst für überwachte Ordner nicht zurückruft, bleiben die Dateien unverarbeitet im Bereitstellungsordner. Diese Situation tritt auf, falls der Dienst für überwachte Ordner nicht ausgeführt wird, wenn der Job Manager zurückruft.
+  * **Synchron**: Wenn der Dienst für überwachte Ordner so konfiguriert ist, dass der Dienst synchron aufgerufen wird, bleiben alle Dateien im Bereitstellungsordner unverarbeitet im Bereitstellungsordner.
+  * **Asynchron:** In diesem Fall ist der Dienst für überwachte Ordner vom Job Manager-Dienst abhängig. Wenn der Job Manager-Dienst den Dienst für überwachte Ordner zurückruft, werden die Dateien im Bereitstellungsordner basierend auf den Ergebnissen des Aufrufs in den Aufbewahrungs- oder Fehlerordner verschoben. Wenn der Job Manager-Dienst den Dienst für überwachte Ordner nicht zurückruft, bleiben die Dateien unverarbeitet im Bereitstellungsordner. Diese Situation tritt auf, falls der Dienst für überwachte Ordner nicht ausgeführt wird, wenn der Job Manager zurückruft.
 
 #### Wiederherstellen von nicht verarbeiteten Quelldateien im Bereitstellungsordner {#recover-unprocessed-source-files-in-the-stage-folder}
 
@@ -568,9 +584,9 @@ Admins können den Dateityp angeben, von dem ein Dienst aufgerufen werden kann. 
 * Dateien mit bestimmten Namen, z. B. data.&#42;
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
-   * data`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
-   * &#42;.`[dD][aA]`&#39;port&#39;
-   * &#42;.`[Xx][Mm][Ll]`
+  * data`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
+  * &#42;.`[dD][aA]`&#39;port&#39;
+  * &#42;.`[Xx][Mm][Ll]`
 
 * Admins können das Dateimuster des Ausgabeordners definieren, in dem die Ergebnisse gespeichert werden sollen. Für die Ausgabeordner (Ergebnis, Beibehaltung und Fehler) können Admins eines der folgenden Dateimuster angeben:
 * %Y = Jahr (vollständig)
@@ -669,8 +685,8 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
 
 1. Fügen Sie dem Knoten folgende Eigenschaften hinzu:
 
-   * folderPath (Zeichenfolge): Der Pfad des Ordners, der regelmäßig mit dem angegebenen Zeitintervall überprüft werden soll. Der Ordner muss sich an einem freigegebenen Speicherort befinden und alle Server müssen vollen Zugriff auf den Server haben.
-inputProcessorType (Zeichenfolge): Der Typ des zu startenden Prozesses. Geben Sie in diesem Tutorial „Workflow“ an.
+   * folderPath (Zeichenfolge): Der Pfad des Ordners, der regelmäßig mit dem angegebenen Zeitintervall überprüft werden soll. Der Ordner muss sich an einem freigegebenen Speicherort befinden und alle Server müssen uneingeschränkten Zugriff auf diesen Server haben.
+     inputProcessorType (Zeichenfolge): Der Typ des zu startenden Prozesses. Geben Sie für dieses Tutorial „Workflow“ an.
 
    * inputProcessorId (Zeichenfolge): Das Verhalten der Eigenschaft „inputProcessorId“ wird durch den für die Eigenschaft „inputProcessorType“ angegebenen Wert gesteuert. In diesem Beispiel hat die Eigenschaft „inputProcessorType“ den Wert „workflow“. Geben Sie daher für die Eigenschaft „inputProcessorId“ den folgenden Pfad für den PDFG-Workflow an: /etc/workflow/models/pdfg/jcr:content/model
 

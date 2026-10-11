@@ -10,13 +10,20 @@ role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 8%
-
+source-wordcount: '2489'
+ht-degree: 9%
 ---
-
 # Communities-Benutzersynchronisierung {#communities-user-synchronization}
 
 ## Einführung {#introduction}
@@ -59,7 +66,7 @@ Detaillierte schrittweise Anweisungen zum Aktivieren der Synchronisierung in ein
 
 ### Veröffentlichen der Site über die Communities-Sites-Konsole {#publish-site-from-communities-sites-console}
 
-Wenn eine Community-Site in der Autoreninstanz über die [Communities-Sites-Konsole](/help/communities/sites-console.md) veröffentlicht wird, führt dies dazu, dass [&#x200B; die zugehörigen Seiten (repliziert) &#x200B;](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) und Sling die dynamisch erstellten Community-Benutzergruppen, einschließlich ihrer Mitgliedschaft, verteilt.
+Wenn eine Community-Site in der Autoreninstanz über die [Communities-Sites-Konsole](/help/communities/sites-console.md) veröffentlicht wird, führt dies dazu, dass [ die zugehörigen Seiten (repliziert) ](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) und Sling die dynamisch erstellten Community-Benutzergruppen, einschließlich ihrer Mitgliedschaft, verteilt.
 
 ### Benutzer wird erstellt oder bearbeitet Profil bei der Veröffentlichung {#user-is-created-or-edits-profile-on-publish}
 
@@ -102,7 +109,7 @@ Bei der Benutzersynchronisierung wird die Benutzerdatenverteilung von der Autore
 
 Die folgenden Konfigurationen sind erforderlich, um die Benutzersynchronisierung in AEM Communities zu aktivieren. Stellen Sie sicher, dass diese Konfigurationen korrekt sind, um zu verhindern, dass die Sling-Inhaltsverteilung fehlschlägt.
 
-### Apache Sling Distribution Agent - Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
+### Apache Sling Distribution Agent – Synchronisations-Agents-Factory {#apache-sling-distribution-agent-sync-agents-factory}
 
 Diese Konfiguration ruft den Inhalt ab, der über die Herausgeber hinweg synchronisiert werden soll. Die Konfiguration befindet sich auf der Autoreninstanz. Der Autor muss alle Herausgeber verfolgen, die dort sind und wo alle Informationen synchronisiert werden sollen.
 
@@ -130,7 +137,7 @@ So konfigurieren Sie die Konfiguration für Apache Sling Sync Agents:
 
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
-### Adobe Granite-Verteilung - Verschlüsselter Kennwortübertragungs-Geheimnisanbieter {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
+### Adobe Granite-Verteilung – Anbieter für Transportgeheimnis für verschlüsseltes Kennwort {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 Dadurch kann der Autor den autorisierten Benutzer identifizieren, da er berechtigt ist, Benutzerdaten von der Autoren- zur Veröffentlichungsinstanz zu synchronisieren.
 
@@ -149,7 +156,7 @@ So verbinden Sie Autoren- mit Herausgebern unter Verwendung autorisierter Benutz
 
    Verify-Eigenschaft **socialpubsync** - **publishUser.**
 
-1. Legen Sie den Benutzernamen und das Kennwort für den [autorisierten Benutzer“ &#x200B;](/help/sites-administering/sync.md#createauthorizeduser).
+1. Legen Sie den Benutzernamen und das Kennwort für den [autorisierten Benutzer“ ](/help/sites-administering/sync.md#createauthorizeduser).
 
    Beispiel: **usersync - admin**
 
@@ -217,7 +224,7 @@ So ändern Sie das Abrufintervall:
 
    * Stellen Sie das Intervall in Sekunden auf das gewünschte Intervall ein und speichern Sie.
 
-   ![scheduled-Trigger &#x200B;](assets/scheduled-trigger.png)
+   ![scheduled-Trigger ](assets/scheduled-trigger.png)
 
 ### AEM Communities User Sync Listener {#aem-communities-user-sync-listener}
 
@@ -339,13 +346,13 @@ Wenn die Sling-Verteilung fehlschlägt, führen Sie die folgenden Debugging-Schr
    Stellen Sie sicher, dass nicht mehrere Konfigurationen hinzugefügt oder bearbeitet werden. Stattdessen sollten die vorhandenen Standardkonfigurationen bearbeitet werden.
 1. **Überprüfen Sie die Konfigurationen**
 
-   Stellen Sie sicher[&#x200B; dass alle &#x200B;](/help/communities/sync.md#bestpractices)Konfigurationen“ in Ihrer AEM-Autoreninstanz korrekt festgelegt sind, wie in den Best [&#x200B; beschrieben](/help/communities/sync.md#main-pars-header-863110628).
+   Stellen Sie sicher[ dass alle ](/help/communities/sync.md#bestpractices)Konfigurationen“ in Ihrer AEM-Autoreninstanz korrekt festgelegt sind, wie in den Best [ beschrieben](/help/communities/sync.md#main-pars-header-863110628).
 
 1. **Überprüfen Sie die Berechtigungen autorisierter Benutzer**
 
    Wenn die Pakete nicht ordnungsgemäß installiert sind, überprüfen Sie, ob der [autorisierte Benutzer](/help/sites-administering/sync.md#createauthuser) der in der ersten Veröffentlichungsinstanz erstellt wurde, die richtigen ACLs hat.
 
-   Um dies zu validieren, ändern Sie anstelle des [erstellten autorisierten &#x200B;](/help/sites-administering/sync.md#createauthuser) die Konfiguration [Adobe Granite Distribution - Encrypted Password Transport Secret Provider](/help/sites-administering/sync.md#adobegraniteencpasswrd) auf der Autoreninstanz, um Admin-Benutzeranmeldeinformationen zu verwenden. Versuchen Sie nun erneut, die Pakete zu installieren. Wenn die Benutzersynchronisierung mit Administratorberechtigungen problemlos funktioniert, bedeutet dies, dass der erstellte Veröffentlichungsbenutzer keine geeigneten ACLs hatte.
+   Um dies zu validieren, ändern Sie anstelle des [erstellten autorisierten ](/help/sites-administering/sync.md#createauthuser) die Konfiguration [Adobe Granite Distribution - Encrypted Password Transport Secret Provider](/help/sites-administering/sync.md#adobegraniteencpasswrd) auf der Autoreninstanz, um Admin-Benutzeranmeldeinformationen zu verwenden. Versuchen Sie nun erneut, die Pakete zu installieren. Wenn die Benutzersynchronisierung mit Administratorberechtigungen problemlos funktioniert, bedeutet dies, dass der erstellte Veröffentlichungsbenutzer keine geeigneten ACLs hatte.
 
 1. **Überprüfen Sie die Konfiguration der Diff Observer Factory**
 

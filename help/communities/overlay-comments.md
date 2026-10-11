@@ -10,13 +10,20 @@ exl-id: 18376805-c2ed-439a-abc7-e9657afe8baf
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
-
 ---
-
 # Überlagern von Communities-Komponenten {#overlay-communities-components}
 
 Die Absicht [Überlagerung](/help/communities/client-customize.md#overlays) einer Standardkomponente besteht darin, das Erscheinungsbild oder Verhalten einer Komponente global für alle relativen Verweise auf die Komponente zu ändern. Es liegt in der Natur von Sling, den Ordner &quot;/apps“ aufzulösen, bevor im Ordner &quot;/libs“ gesucht wird. Der Pfad zur Komponente entspricht daher dem Pfad zur Standardkomponente, mit der Ausnahme, dass er sich im Ordner &quot;/apps“ und nicht im Ordner &quot;/libs“ befindet.
@@ -35,9 +42,9 @@ Um Kommentare zu überlagern, müssen Sie:
 
 **Überlagern von Benachrichtigungs-E-Mails**
 
-Angenommen, Sie möchten die Nachricht von E-Mail-Benachrichtigungen anpassen. Sie können dies tun, indem Sie [&#x200B; Vorlagen unter `/libs/settings/community/templates/email/html` &#x200B;](/help/communities/client-customize.md#overlays).
+Angenommen, Sie möchten die Nachricht von E-Mail-Benachrichtigungen anpassen. Sie können dies tun, indem Sie [ Vorlagen unter `/libs/settings/community/templates/email/html` ](/help/communities/client-customize.md#overlays).
 
-Angenommen, Sie möchten die Erwähnungen und E-Mail-Benachrichtigungen bearbeiten (für eine bestimmte Communities-Komponente, bei der benutzergenerierter Inhalt erstellt wird). Fügen Sie in solchen Fällen eine Wenn **&#x200B;**-Bedingung für **Erwähnung** in den Vorlagen der Komponenten hinzu, für die Sie die **@mentions**-Unterstützung aktiviert haben.
+Angenommen, Sie möchten die Erwähnungen und E-Mail-Benachrichtigungen bearbeiten (für eine bestimmte Communities-Komponente, bei der benutzergenerierter Inhalt erstellt wird). Fügen Sie in solchen Fällen eine Wenn ****-Bedingung für **Erwähnung** in den Vorlagen der Komponenten hinzu, für die Sie die **@mentions**-Unterstützung aktiviert haben.
 
 ```java
 {{#equals this.verb "mention"}}\

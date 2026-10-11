@@ -7,13 +7,29 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 973d5ddb-cbcc-454d-859f-144442828a1a
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2005'
-ht-degree: 100%
-
+source-wordcount: '2045'
+ht-degree: 96%
 ---
-
 # Diagramme in adaptiven Formularen {#af-charts}
 
 ![Hero_Image](assets/charts_hero_image.jpg)
@@ -59,11 +75,11 @@ Auf der Registerkarte „Allgemein“ können Sie die folgenden Eigenschaften ko
 * **X-Achse > Feld**: Gibt den Elementnamen des auf der X-Achse abzubildenden Felds (oder der Zelle in einer Tabelle) an. Im Beispiel werden Kategorien auf der X-Achse konfiguriert. Der Elementname für die Tabellenzelle in der Spalte der Beispieltabelle ist „Kategorie“.
 * **X-Achse > Funktion verwenden**: Gibt die statistische Funktion an, die für die Berechnung der Werte auf der X-Achse zu verwenden ist. Im Beispiel ist die ausgewählte Option „Ohne“. Weitere Informationen zu den Funktionen finden Sie unter „Verwenden von Funktionen im Diagramm“.
 * **Y-Achse > Titel**: Gibt den Titel für die Y-Achse an. In diesem Beispiel ist der Name für die Y-Achse „Spesenkonto“.
-* **Y-Achse > Feld**: Gibt den Elementnamen des auf der Y-Achse abzubildenden Felds (oder der Zelle in einer Tabelle) an. Im Beispiel konfigurieren Sie den Betrag auf der y-Achse.  Der Elementname für die Zelle in der Betrag-Spalte der Beispieltabelle ist „Betrag“.
-* **Y-Achse > Funktion verwenden**: Gibt die statistische Funktion an, die für die Berechnung der Werte auf der y-Achse zu verwenden ist.  In diesem Beispiel wird der Betrag aus jeder Kategorie zusammengerechnet und der berechnete Wert wird auf der y-Achse abgebildet.  Wählen Sie also die Option „Summe“ aus der Dropdown-Liste „Funktion verwenden“.  Weitere Informationen zu den Funktionen finden Sie unter „Verwenden von Funktionen im Diagramm“.
+* **Y-Achse > Feld**: Gibt den Elementnamen des auf der Y-Achse abzubildenden Felds (oder der Zelle in einer Tabelle) an. Im Beispiel konfigurieren Sie den Betrag auf der y-Achse. Der Elementname für die Zelle in der Betrag-Spalte der Beispieltabelle ist „Betrag“.
+* **Y-Achse > Funktion verwenden**: Gibt die statistische Funktion an, die für die Berechnung der Werte auf der y-Achse zu verwenden ist. In diesem Beispiel wird der Betrag aus jeder Kategorie zusammengerechnet und der berechnete Wert wird auf der y-Achse abgebildet. Wählen Sie also die Option „Summe“ aus der Dropdown-Liste „Funktion verwenden“. Weitere Informationen zu den Funktionen finden Sie unter „Verwenden von Funktionen im Diagramm“.
 * **Legendenposition:** Legt die Position der Legende in Bezug auf das Diagramm fest. Die verfügbaren Optionen sind rechts, links, oben und unten.
 * **Legende anzeigen**: Zeigt eine Legende für das Diagramm an, wenn aktiviert.
-* **QuickInfo**: Gibt das Format an, in dem die QuickInfo beim Bewegen der Maus über einen Datenpunkt in der Grafik angezeigt wird. Der Standardwert ist **\${x}(\${y})**. Je nach Diagrammtyp werden die Variablen **\${x}** und **\${y}** dynamisch durch die entsprechenden Werte für die x-Achse und y-Achse ersetzt und in der QuickInfo angezeigt, wenn Sie den Mauszeiger über einen Punkt, ein Segment oder einen Balken im Diagramm bewegen. Wie im folgenden Beispiel wird die QuickInfo als **Einzelhandel(5870)** angezeigt, wenn Sie den Mauszeiger in die Spalte Einzelhandelsgeschäfte halten. Wenn Sie die QuickInfo deaktivieren möchten, lassen Sie das Feld „Quickinfo“ leer. Diese Option ist nicht auf Linien- und Bereichsdiagramme anwendbar.
+* **QuickInfo**: Gibt das Format an, in dem die QuickInfo beim Bewegen der Maus über einen Datenpunkt in der Grafik angezeigt wird. Der Standardwert ist **\${x}(\${y})**. Je nach Diagrammtyp werden die Variablen **\${x}** und **\${y}** dynamisch durch die entsprechenden Werte für die X- und Y-Achse ersetzt und in der QuickInfo angezeigt, wenn Sie die Maus über einen Punkt, ein Segment oder einen Balken in der Quickinfo bewegen. Wie im folgenden Beispiel wird die QuickInfo als **Einzelhandel(5870)** angezeigt, wenn Sie den Mauszeiger in die Spalte Einzelhandelsgeschäfte halten. Wenn Sie die QuickInfo deaktivieren möchten, lassen Sie das Feld „Quickinfo“ leer. Diese Option ist nicht auf Linien- und Bereichsdiagramme anwendbar.
 * **Spezifische Diagrammkonfigurationen**: Neben den allgemeinen Konfigurationen sind die folgenden spezifischen Diagrammkonfigurationen verfügbar:
 * **Innerer Radius**: Für Ringdiagramme verfügbar, um den Radius (in Pixeln) für den inneren Kreis des Diagramms anzugeben.
 * **Linienfarbe**: Verfügbar für Linien-, Linien- und Punkt- sowie Bereichsdiagramme, um den hexadezimalen Farbwert für die Linie im Diagramm anzugeben.
@@ -75,7 +91,7 @@ Auf der Registerkarte „Allgemein“ können Sie die folgenden Eigenschaften ko
 
 In der Registerkarte „Grundeinstellungen“ definieren Sie die Art des Diagramms, Quellbedienfelds bzw. der Tabellenzeile, die Daten, die Werte, die auf der x-Achse und y-Achse des Diagramms angezeigt werden können, und je nachdem auch die statistische Funktion, um die Werte für die grafische Darstellung auf dem Diagramm zu berechnen.
 
-Im Folgenden werden wir im Einzelnen auf die Informationen eingehen, die zu dieser Registerkarte gehören und als Beispiel eine wiederholbare Tabelle in einem Kreditkartenauszug geben.  Nehmen wir an, dass Sie ein Diagramm erstellen möchten, um die Gesamtkosten in den verschiedenen Kategorien im detaillierten Bereich eines Kreditkartenauszugs wie unten dargestellt anzuzeigen und zu erkennen.
+Im Folgenden werden wir im Einzelnen auf die Informationen eingehen, die zu dieser Registerkarte gehören und als Beispiel eine wiederholbare Tabelle in einem Kreditkartenauszug geben. Nehmen wir an, dass Sie ein Diagramm erstellen möchten, um die Gesamtkosten in den verschiedenen Kategorien im detaillierten Bereich eines Kreditkartenauszugs wie unten dargestellt anzuzeigen und zu erkennen.
 
 Dazu müssen Sie Kategorien auf der x-Achse und der y-Achse ebenso wie die Gesamtausgaben in jeder Kategorie grafisch darstellen.
 
@@ -90,10 +106,10 @@ Gehen wir einmal davon aus, dass die folgenden Anforderungen und die Bedingungen
 * Das Diagramm zeigt die Gesamtkosten in jeder Kategorie in der Tabelle mit den Einzelheiten des Auszugs an.
 * Der Diagrammtyp ist Säule, es kann aber auch ein anderer Diagrammtyp ausgewählt werden.
 * Die Tabellenzeile in der Tabelle mit den Einzelheiten des Auszugs ist wiederholbar. Sie können dies im Feld „Wiederholungseinstellungen“ der Tabellenzeileneigenschaften konfigurieren.
-* Der Elementname für die Zeile lautet „statementDetails“.  Sie können ihn in den Tabellenzeileneigenschaften konfigurieren.
-* Der Elementname für die Zelle in der Spalte „Kategorie“ ist „Kategorie“.  Sie können dies inline angeben.  Wählen Sie die Zelle aus und tippen Sie auf die Schaltfläche „Bearbeiten“.
-* Der Elementname für die Zelle in der Spalte „Betrag“ lautet „Betrag“.  Die Tabellenzelle in der Spalte „Betrag“ ist außerdem ein numerisches Feld.
-* Mit der angegebenen Konfiguration wird das Säulendiagramm im Beispiel wie folgt angezeigt.  Jede Farbe stellt eine Kategorie dar und einzelne Zeileneinträge oder Werte für eine Kategorie werden im Diagramm addiert.
+* Der Elementname für die Zeile lautet „statementDetails“. Sie können ihn in den Tabellenzeileneigenschaften konfigurieren.
+* Der Elementname für die Zelle in der Spalte „Kategorie“ ist „Kategorie“. Sie können dies inline angeben. Wählen Sie die Zelle aus und tippen Sie auf die Schaltfläche „Bearbeiten“.
+* Der Elementname für die Zelle in der Spalte „Betrag“ lautet „Betrag“. Die Tabellenzelle in der Spalte „Betrag“ ist außerdem ein numerisches Feld.
+* Mit der angegebenen Konfiguration wird das Säulendiagramm im Beispiel wie folgt angezeigt. Jede Farbe stellt eine Kategorie dar und einzelne Zeileneinträge oder Werte für eine Kategorie werden im Diagramm addiert.
 
   ![Diagramm](assets/chart.png)
 
@@ -103,7 +119,7 @@ Die Legende und QuickInfo werden wie folgt angezeigt.
 
 ### Stile {#styling}
 
-Im Stilmodus können Sie die Breite des Diagramms als Prozentsatz der Gesamtbreite im Formular oder Dokument und die Höhe in Pixeln festlegen.  Außerdem haben Sie die Möglichkeit, Text, Hintergrund, Ränder, Effekte und CSS-Überschreibungen anzubringen.
+Im Stilmodus können Sie die Breite des Diagramms als Prozentsatz der Gesamtbreite im Formular oder Dokument und die Höhe in Pixeln festlegen. Außerdem haben Sie die Möglichkeit, Text, Hintergrund, Ränder, Effekte und CSS-Überschreibungen anzubringen.
 
 Um in der Seitensymbolleiste auf den Stilmodus umzuschalten, **tippen Sie auf >> Stile**.
 
@@ -149,11 +165,11 @@ Multiply(valueArray, category) {
 Nachdem Sie eine benutzerdefinierte Funktion geschrieben haben, führen Sie die folgenden Schritte aus, um sie für die Verwendung in der Diagrammkonfiguration verfügbar zu machen:
 
 1. Fügen Sie die benutzerdefinierte Funktion in der Client-Bibliothek hinzu, die dem adaptiven Formular oder dem Dokument zugeordnet ist.
-1. Erstellen Sie in CRXDe-Lite einen „nt:unstructured“-Knoten mit den folgenden Eigenschaften im Anwendungsordner:
+1. Erstellen Sie in CRXDE Lite einen nt:unstructured-Knoten im Programmordner mit den folgenden Eigenschaften:
    * Legen Sie „guideComponentType“ auf „fd/af/reducer“ fest. (mandatory)
-   * Dem Wert muss ein vollständig qualifizierter Name der benutzerdefinierten JavaScript-Funktion zugewiesen werden.  (mandatory)
-   * Weisen Sie „jcr:description“ einen aussagekräftigen Namen zu.  Er erscheint in der Dropdown-Liste **Funktion verwenden**. Beispiel:**Multiplizieren**. 
-   * Weisen Sie „qtip“ eine kurze Beschreibung der Funktion zu.  Sie wird als QuickInfo angezeigt, wenn der Mauszeiger über den Funktionsnamen in der Dropdown-Liste „Funktion verwenden“ bewegt wird.
+   * Dem Wert muss ein vollständig qualifizierter Name der benutzerdefinierten JavaScript-Funktion zugewiesen werden. (mandatory)
+   * Legen Sie :descriptionjcr) auf einen aussagekräftigen Namen fest. Er erscheint in der Dropdown-Liste **Funktion verwenden**. Beispiel:**Multiplizieren**.
+   * Weisen Sie „qtip“ eine kurze Beschreibung der Funktion zu. Sie wird als QuickInfo angezeigt, wenn der Mauszeiger über den Funktionsnamen in der Dropdown-Liste „Funktion verwenden“ bewegt wird.
    * Klicken Sie auf **Alles Speichern**, um die Konfiguration zu speichern.
    * Die Funktion ist jetzt für die Verwendung im Diagramm verfügbar.
 
@@ -169,13 +185,13 @@ Ein Diagramm wird automatisch aktualisiert, wenn die Benutzerin oder der Benutze
 
 ## Verwenden des Diagrammtyps in adaptiven Formularregeln {#chart-in-rules}
 
-Die „chartType“-Eigenschaft gibt den Typ des Diagramms an.  Die möglichen Werte sind Kreisdiagramm, Tortendiagramm, Balken, Linie, Linie und Punkt, Punkt und Bereich.  Es handelt sich um eine skriptfähige Eigenschaft. Das bedeutet, dass Sie sie in [adaptiven Formularregeln](/help/forms/using/rule-editor.md) zur Anpassung von Diagrammkonfigurationen verwenden können. Sehen wir uns dazu ein Beispiel an.
+Die „chartType“-Eigenschaft gibt den Typ des Diagramms an. Die möglichen Werte sind Kreisdiagramm, Tortendiagramm, Balken, Linie, Linie und Punkt, Punkt und Bereich. Es handelt sich um eine skriptfähige Eigenschaft. Das bedeutet, dass Sie sie in [adaptiven Formularregeln](/help/forms/using/rule-editor.md) zur Anpassung von Diagrammkonfigurationen verwenden können. Sehen wir uns dazu ein Beispiel an.
 
-Sagen wir, dass Sie ein Säulendiagramm konfiguriert haben.  Sie möchten Benutzenden allerdings auch die Möglichkeit bieten, einen anderen Diagrammtyp aus einer Dropdown-Liste auszuwählen und die Kurve neu zu zeichnen.  Dies können Sie mithilfe der Eigenschaft „chartType“ in einer Regel wie folgt erzielen:
+Sagen wir, dass Sie ein Säulendiagramm konfiguriert haben. Sie möchten Benutzenden allerdings auch die Möglichkeit bieten, einen anderen Diagrammtyp aus einer Dropdown-Liste auszuwählen und die Kurve neu zu zeichnen. Dies können Sie mithilfe der Eigenschaft „chartType“ in einer Regel wie folgt erzielen:
 
 1. Ziehen Sie aus der AEM-Seitenleiste eine Dropdown-Listen-Komponente auf das adaptive Formular.
-1. Wählen Sie die Komponente aus und tippen Sie auf ![Einstellungen](cmppr1.png). 
-1. Geben Sie einen Namen für die Dropdown-Liste ein.  Wählen Sie beispielsweise „Diagrammtyp“ aus.
+1. Wählen Sie die Komponente aus und tippen Sie auf ![Einstellungen](cmppr1.png).
+1. Geben Sie einen Namen für die Dropdown-Liste ein. Wählen Sie beispielsweise „Diagrammtyp“ aus.
 1. Fügen Sie im Abschnitt „Elemente“ unterstützte Diagrammtypen hinzu, um die Dropdown-Liste zu füllen. Klicken Sie auf **Fertig**.
    ![Auswählen der Diagramm-Dropdown-Liste](chart-drop-down.png)
 

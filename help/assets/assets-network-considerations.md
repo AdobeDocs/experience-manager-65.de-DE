@@ -1,18 +1,29 @@
 ---
 title: Überlegungen und Anforderungen zum Netzwerk
-description: Erörtert Überlegungen zum Netzwerk bei der Planung einer Bereitstellung von [!DNL Adobe Experience Manager Assets] .
+description: Erörtert Überlegungen zum Netzwerk bei der Planung einer [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 100%
-
+source-wordcount: '1018'
+ht-degree: 99%
 ---
-
 # Überlegungen zum Netzwerk für [!DNL Assets] {#assets-network-considerations}
 
 Sie müssen Ihr Netzwerk ebenso gut verstehen wie [!DNL Adobe Experience Manager Assets]. Das Netzwerk kann Uploads, Downloads und Benutzererlebnisse beeinflussen. Eine grafische Darstellung Ihrer Netzwerktopologie hilft bei der Erkennung von Engpässen und unzureichend optimierten Bereichen im Netzwerk, die Sie beseitigen bzw. korrigieren müssen, um die Netzwerkleistung und das Benutzererlebnis zu verbessern.
@@ -42,7 +53,7 @@ Unten links im Diagramm sind zwei Geräte dargestellt, die mit dem Unternehmensn
 
 Der rechts gezeigte Computer hat einen begrenzten Upstream zum Unternehmensnetzwerk über eine VPN-Verbindung mit einer Geschwindigkeit von 1 MBit/s. Das Benutzererlebnis bei der 1 MBit/s schnellen Verbindung unterscheidet sich erheblich vom Benutzererlebnis bei der 1 GBit/s schnellen Verbindung. Je nach Größe der Assets, mit denen Benutzende interagieren, ist ihr VPN-Uplink für die Aufgabe möglicherweise nicht ausreichend.
 
-## Topologie des Unternehmensnetzwerks  {#topology-of-the-corporate-network}
+## Topologie des Unternehmensnetzwerks {#topology-of-the-corporate-network}
 
 ![chlimage_1-354](assets/chlimage_1-354.png)
 
@@ -94,7 +105,7 @@ Es folgen einige Punkte, die zu berücksichtigen sind:
 
 * Lesen/Rückgabe von XMP-Metadaten
 * Automatische Aktivierung und Replikation
-* Wasserzeichen  
+* Wasserzeichen
 * Aufnahme von Unter-Assets/Seitenextraktion
 * Überlappende Workflows
 

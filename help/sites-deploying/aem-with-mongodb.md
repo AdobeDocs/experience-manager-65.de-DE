@@ -10,13 +10,25 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6582'
+source-wordcount: '6584'
 ht-degree: 99%
-
 ---
-
 # Adobe Experience Manager mit MongoDB{#aem-with-mongodb}
 
 Dieser Artikel soll das Wissen über Aufgaben und Überlegungen verbessern, die für die erfolgreiche Bereitstellung von AEM (Adobe Experience Manager) mit MongoDB erforderlich sind.
@@ -107,10 +119,10 @@ Es ist zwar möglich, Befehlszeilen-Tools zu verwenden, um einen schnellen Über
 
 MongoDB Cloud Manager ist ein kostenloser Dienst von MongoDB, der die Überwachung und Verwaltung von MongoDB-Instanzen ermöglicht. Er bietet einen Überblick über die Leistung und den Zustand des MongoDB-Clusters in Echtzeit. Es verwaltet sowohl Cloud- als auch privat gehostete Instanzen, sofern die Instanz den Cloud Manager-Überwachungsserver erreichen kann.
 
-Voraussetzung ist die Installation eines Agenten auf der MongoDB-Instanz, der mit dem Überwachungsserver verbunden ist. Es gibt drei Ebenen des Agenten:
+Voraussetzung ist die Installation eines Agents auf der MongoDB-Instanz, der mit dem Überwachungsserver verbunden ist. Es gibt drei Ebenen des Agenten:
 
 * Ein Automatisierungsagent, der alles auf dem MongoDB-Server vollständig automatisieren kann
-* Einen Überwachungsagenten, der die `mongod`-Instanz überwachen kann
+* Einen Überwachungsagent, der die `mongod`-Instanz überwachen kann
 * Ein Backup-Agent, der geplante Sicherungen der Daten durchführen kann.
 
 Obwohl die Verwendung von Cloud Manager zur Wartungsautomatisierung eines MongoDB-Clusters viele der Routineaufgaben vereinfacht, ist dies nicht erforderlich und wird auch nicht für Backups verwendet. Wenn Sie sich bei der Überwachung für Cloud Manager entscheiden, ist jedoch eine Überwachung erforderlich.
@@ -119,7 +131,7 @@ Weitere Informationen zu MongoDB Cloud Manager finden Sie in der [MongoDB-Dokume
 
 ### MongoDB Ops Manager {#mongodb-ops-manager}
 
-MongoDB Ops Manager ist dieselbe Software wie MongoDB Cloud Manager. Nach der Registrierung kann Ops Manager lokal in einem privaten Rechenzentrum oder auf einem anderen Laptop oder Desktop-Computer heruntergeladen und installiert werden. Es verwendet eine lokale MongoDB-Datenbank, um Daten zu speichern und auf dieselbe Weise wie Cloud Manager mit den verwalteten Servern zu kommunizieren. Wenn Sie Sicherheitsrichtlinien haben, die einen Überwachungsagenten verbieten, sollte MongoDB Ops Manager verwendet werden.
+MongoDB Ops Manager ist dieselbe Software wie MongoDB Cloud Manager. Nach der Registrierung kann Ops Manager lokal in einem privaten Rechenzentrum oder auf einem anderen Laptop oder Desktop-Computer heruntergeladen und installiert werden. Es verwendet eine lokale MongoDB-Datenbank, um Daten zu speichern und auf dieselbe Weise wie Cloud Manager mit den verwalteten Servern zu kommunizieren. Wenn Sie Sicherheitsrichtlinien haben, die einen Überwachungsagent verbieten, sollte MongoDB Ops Manager verwendet werden.
 
 ### Betriebssystemüberwachung {#operating-system-monitoring}
 
@@ -244,8 +256,8 @@ MongoDB läuft auf verschiedenen Betriebssystemen, einschließlich einer Vielzah
 * Deaktivieren Sie transparente Hugepages und Defragmentierung. Siehe [Transparente Huge Pages Einstellungen](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) für weitere Informationen.
 * [Passen Sie die Einstellungen für readahead](https://docs.mongodb.com/manual/administration/production-notes/#readahead) auf den Geräten an, auf denen Ihre Datenbankdateien gespeichert werden, sodass Sie zu Ihrem Anwendungsfall passen.
 
-   * Wenn Ihr Arbeitssatz größer als der verfügbare Arbeitsspeicher und das Muster für den Dokumentzugriff zufällig ist, müssen Sie readahead für die MMAPv1-Speicher-Engine eventuell auf 32 oder 16 herabsetzen. Evaluieren Sie verschiedene Einstellungen, damit Sie einen optimalen Wert finden können, der den residierenden Speicher maximiert und die Anzahl der Seitenfehler verringert.
-   * Für die WiredTiger-Speicher-Engine setzen Sie readahead auf 0, unabhängig von der Art des Speichermediums (Spinning, SSD, etc.). Verwenden Sie im Allgemeinen die empfohlene readahead-Einstellung, es sei denn, Tests zeigen einen messbaren, wiederholbaren und zuverlässigen Nutzen in einem höheren readahead-Wert. [Der professionelle Support von MongoDB](https://docs.mongodb.com/manual/administration/production-notes/#readahead) kann Sie beim Konfigurieren von readahead mit anderen Werten unterstützen.
+  * Wenn Ihr Arbeitssatz größer als der verfügbare Arbeitsspeicher und das Muster für den Dokumentzugriff zufällig ist, müssen Sie readahead für die MMAPv1-Speicher-Engine eventuell auf 32 oder 16 herabsetzen. Evaluieren Sie verschiedene Einstellungen, damit Sie einen optimalen Wert finden können, der den residierenden Speicher maximiert und die Anzahl der Seitenfehler verringert.
+  * Für die WiredTiger-Speicher-Engine setzen Sie readahead auf 0, unabhängig von der Art des Speichermediums (Spinning, SSD, etc.). Verwenden Sie im Allgemeinen die empfohlene readahead-Einstellung, es sei denn, Tests zeigen einen messbaren, wiederholbaren und zuverlässigen Nutzen in einem höheren readahead-Wert. [Der professionelle Support von MongoDB](https://docs.mongodb.com/manual/administration/production-notes/#readahead) kann Sie beim Konfigurieren von readahead mit anderen Werten unterstützen.
 
 * Deaktivieren Sie das angepasste Tool, wenn Sie RHEL 7 / CentOS 7 in einer virtuellen Umgebung ausführen.
 * Wenn RHEL 7 / CentOS 7 in einer virtuellen Umgebung ausgeführt wird, ruft das angepasste Tool automatisch ein aus dem Leistungsdurchsatz abgeleitetes Leistungsprofil auf, das die readahead-Einstellungen automatisch auf 4 MB festlegt. Diese Einstellung kann sich negativ auf die Leistung auswirken.
@@ -258,9 +270,9 @@ MongoDB läuft auf verschiedenen Betriebssystemen, einschließlich einer Vielzah
 * Verwenden Sie „noatime“ für den Einhängepunkt [dbPath](https://docs.mongodb.com/manual/reference/configuration-options/#storage.dbPath).
 * Konfigurieren Sie für Ihre Implementierung ausreichende Werte für Datei-Handles (fs.file-max), Kernel-PID-Limit (kernel.pid_max) und die maximalen Threads pro Prozess (kernel.threads-max). Für große Systeme bieten die folgenden Werte einen guten Ausgangspunkt:
 
-   * Wert für fs.file-max: 98000,
-   * Wert für kernel.pid_max: 64000,
-   * Wert für andkernel.threads-max: 64000
+  * Wert für fs.file-max: 98000,
+  * Wert für kernel.pid_max: 64000,
+  * Wert für andkernel.threads-max: 64000
 
 * Stellen Sie sicher, dass für Ihr System der Auslagerungsspeicher konfiguriert ist. Detaillierte Informationen zu den Größenanforderungen finden Sie in der Dokumentation zu Ihrem Betriebssystem.
 * Stellen Sie sicher, dass der Standardwert des Systems für TCP-Keepalive richtig festgelegt ist. Der Wert „300“ bietet häufig eine bessere Performance für Replikatsätze und freigegebene Cluster. Siehe: [Wirkt sich die TCP-Keepalive-Zeit auf MongoDB-Bereitstellungen aus?](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) in den häufig gestellten Fragen für weitere Informationen.

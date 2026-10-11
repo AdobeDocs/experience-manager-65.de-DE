@@ -6,13 +6,22 @@ exl-id: d2451710-5abf-4816-8052-57d8f04a228e
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 100%
-
+source-wordcount: '970'
+ht-degree: 95%
 ---
-
 # Konfigurieren des RTE, um barrierefrei zugängliche Web-Seiten und Websites zu erstellen {#configure-rte-for-accessibility}
 
 Adobe Experience Manager unterstützt viele Standardfunktionen für Barrierefreiheit, die den verschiedenen Standards für Barrierefreiheit entsprechen. Darüber hinaus können Entwickler mit Anpassungen und Erweiterungen Funktionen bereitstellen, die die Erstellung barrierefrei zugänglicher Inhalte mithilfe von Experience Manager-Komponenten erleichtern, die den Rich-Text-Editor (RTE) verwenden.
@@ -62,7 +71,7 @@ Mit Strukturelementen, die im RTE über die Absatzformatoptionen verfügbar sind
 
 ## Verwenden der Funktion „Quellenbearbeitung“ {#use-of-the-source-edit-feature}
 
-In einigen Fällen halten Inhaltsautoren es für erforderlich, den mithilfe des RTE erstellten HTML-Quell-Code zu untersuchen und anzupassen. So kann beispielsweise ein innerhalb des RTE erstellter Inhalt zusätzliches Markup erfordern, um die Befolgung des WCAG 2.0 sicherzustellen. Dies lässt sich mit der Option [Quellenbearbeitung](/help/sites-administering/rich-text-editor.md#aboutplugins) des RTE umsetzen. Sie können die Funktion [`sourceedit` im Plug-in `misctools` angeben](/help/sites-administering/rich-text-editor.md#aboutplugins).
+In einigen Fällen halten Inhaltsautoren es für erforderlich, den mithilfe des RTE erstellten HTML-Quell-Code zu untersuchen und anzupassen. Beispielsweise kann ein innerhalb des RTE erstellter Inhalt zusätzliches Markup erfordern, um die Einhaltung von WCAG 2.0 sicherzustellen. Dies kann mit der Option [Quellbearbeitung](/help/sites-administering/rich-text-editor.md#aboutplugins) des RTE durchgeführt werden. Sie können die Funktion [`sourceedit` im Plug-in `misctools` angeben](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
@@ -103,7 +112,7 @@ RTE kann `strong`- und `em`-Tags anstelle von `b` und `i` verwenden. Fügen Sie 
 
 ### Schrittweise Anleitungen {#step-by-step-instructions}
 
-1. Starten Sie CRXDE Lite. Zum Beispiel: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
+1. Starten Sie CRXDE Lite. Beispiel: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Kopieren Sie:
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`

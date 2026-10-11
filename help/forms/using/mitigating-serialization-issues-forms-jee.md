@@ -6,13 +6,25 @@ feature: Security
 version: Experience Manager 6.5
 type: Documentation
 role: Admin
-source-git-commit: ec3941675081255879065c3be9d5af77474b2072
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 1%
-
 ---
-
 
 # Beheben von Serialisierungsproblemen in AEM Forms JEE {#mitigating-serialization-issues-in-aem-forms-jee}
 
@@ -24,7 +36,7 @@ Bei Installationen, die **JDK 11 oder höher** ausführen, wird dieser Schutz du
 >
 >Wenn die Konsistenzprüfung des Deserialisierungsfilters bereits als auf Ihrem Server aktiv gemeldet wird (siehe [Überprüfen der Agenten-Aktivierung](#verifying-the-agents-activation)), ist Ihr Anwendungsserver bereits geschützt und Sie können die verbleibenden Schritte in diesem Dokument überspringen.
 
-## Bevor Sie beginnen {#before-you-begin}
+## Voraussetzungen {#before-you-begin}
 
 Bestätigen Sie die Java™-Version, mit der Ihr Anwendungs-Server ausgeführt wird:
 
@@ -32,7 +44,7 @@ Bestätigen Sie die Java™-Version, mit der Ihr Anwendungs-Server ausgeführt w
 java -version
 ```
 
-Wenn die gemeldete Version `1.8.x` (JDK 8) ist, gelten die Schritte in diesem Artikel. Wenn es 11 oder höher ist, ist keine manuelle Aktion erforderlich. Überprüfen Sie den Schutz mithilfe der Konsistenzprüfung, die unter [Überprüfen der Agenten-Aktivierung“ beschrieben &#x200B;](#verifying-the-agents-activation).
+Wenn die gemeldete Version `1.8.x` (JDK 8) ist, gelten die Schritte in diesem Artikel. Wenn es 11 oder höher ist, ist keine manuelle Aktion erforderlich. Überprüfen Sie den Schutz mithilfe der Konsistenzprüfung, die unter [Überprüfen der Agenten-Aktivierung“ beschrieben ](#verifying-the-agents-activation).
 
 In den folgenden Schritten bezieht sich `<jee-installation-directory>` auf den Stamm Ihrer AEM Forms JEE-Installation.
 
@@ -92,7 +104,7 @@ Sie können die Konfiguration des Deserialisierungsagenten jederzeit überprüfe
 https://<server>:<port>/system/console/healthcheck?tags=deserialization
 ```
 
-Eine Liste mit Konsistenzprüfungen für den Agenten wird angezeigt. Wenn die Prüfungen bestanden werden, wird der Agent ordnungsgemäß aktiviert. Wenn sie auf einer JDK 8-Instanz fehlschlagen, wurde der Agent nicht geladen, und Sie müssen ihn manuell unter Verwendung der Schritte in [Anwenden des Agenten“ &#x200B;](#applying-the-agent).
+Eine Liste mit Konsistenzprüfungen für den Agenten wird angezeigt. Wenn die Prüfungen bestanden werden, wird der Agent ordnungsgemäß aktiviert. Wenn sie auf einer JDK 8-Instanz fehlschlagen, wurde der Agent nicht geladen, und Sie müssen ihn manuell unter Verwendung der Schritte in [Anwenden des Agenten“ ](#applying-the-agent).
 
 ## Konfigurieren des Agenten {#configuring-the-agent}
 

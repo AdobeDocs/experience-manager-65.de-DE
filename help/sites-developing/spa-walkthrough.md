@@ -8,13 +8,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 99%
-
 ---
-
 
 # Einführung in SPAs und exemplarische Anleitung {#spa-introduction-and-walkthrough}
 
@@ -28,21 +42,21 @@ Der SPA-Editor bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM
 
 ### Ziel des Artikels {#article-objective}
 
-In diesem Artikel werden die grundlegenden Konzepte von SPAs vorgestellt, bevor der Leser eine exemplarische Anleitung zum SPA-Editor erhält, indem ein einfaches SPA-Programm zum Demonstrieren der grundlegenden Inhaltsbearbeitung verwendet wird. Dann folgen Details zum Aufbau der Seite und zu der Frage, wie die SPA mit dem AEM-SPA-Editor in Beziehung steht und interagiert.
+In diesem Artikel werden die grundlegenden Konzepte von SPAs vorgestellt, bevor Lesende eine exemplarische Anleitung zum SPA-Editor erhalten, indem eine einfache SPA zum Demonstrieren der grundlegenden Inhaltsbearbeitung verwendet wird. Dann folgen Details zum Aufbau der Seite und dazu, wie die SPA mit dem AEM-SPA-Editor zusammenhängt und interagiert.
 
-Ziel der vorliegenden Einführung und exemplarischen Anleitung ist es, einem AEM-Entwickler zu demonstrieren, warum SPAs relevant sind, wie sie grundsätzlich funktionieren, wie SPAs vom AEM-SPA-Editor gehandhabt werden und wie sie sich von einem standardmäßigen AEM-Programm unterscheiden.
+Ziel dieser Einführung und exemplarischen Anleitung ist es, AEM-Entwickelnden zu zeigen, warum SPAs relevant sind, wie sie grundsätzlich funktionieren, wie eine SPA vom AEM-SPA-Editor verarbeitet wird und wie sie sich von einer standardmäßigen AEM-Anwendung unterscheidet.
 
 ## Voraussetzungen {#requirements}
 
 Die exemplarische Anleitung basiert auf AEM-Standardfunktionen und der beispielhaften WKND SPA Project-App. Um dieser Anleitung folgen zu können, müssen Sie über Folgendes verfügen:
 
 * [AEM Version 6.5.4 oder neuer](/help/release-notes/release-notes.md)
-   * Sie müssen über Administratorrechte für das System verfügen.
+  * Sie müssen über Administratorrechte für das System verfügen.
 * [Die Beispiel-App „WKND SPA Project“ ist auf GitHub verfügbar](https://github.com/adobe/aem-guides-wknd-spa)
-   * Laden Sie die [neueste Version der React-App herunter.](https://github.com/adobe/aem-guides-wknd-spa/releases) Sie wird ähnlich benannt wie `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
-   * Laden Sie die [neuesten Beispielbilder](https://github.com/adobe/aem-guides-wknd-spa/releases) für die Anwendung herunter. Sie wird ähnlich benannt wie `wknd-spa-sample-images-X.Y.Z.zip`.
-   * [Verwenden Sie den Paket-Manager](/help/sites-administering/package-manager.md), um die Pakete zu installieren, wie Sie es mit jedem anderen Paket in AEM tun würden.
-   * Für die Zwecke dieser schrittweisen Anleitung muss die Anwendung nicht mit Maven installiert werden.
+  * Laden Sie die [neueste Version der React-App herunter.](https://github.com/adobe/aem-guides-wknd-spa/releases) Sie wird ähnlich benannt wie `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
+  * Laden Sie die [neuesten Beispielbilder](https://github.com/adobe/aem-guides-wknd-spa/releases) für die Anwendung herunter. Sie wird ähnlich benannt wie `wknd-spa-sample-images-X.Y.Z.zip`.
+  * [Verwenden Sie den Paket-Manager](/help/sites-administering/package-manager.md), um die Pakete zu installieren, wie Sie es mit jedem anderen Paket in AEM tun würden.
+  * Für die Zwecke dieser schrittweisen Anleitung muss die Anwendung nicht mit Maven installiert werden.
 
 >[!CAUTION]
 >
@@ -56,7 +70,7 @@ Eine Single Page Application (SPA) unterscheidet sich von einer herkömmlichen S
 
 So wird der Bedarf nach Seitenaktualisierungen reduziert und dem Benutzer ein Erlebnis präsentiert, das nahtlos und schnell ist und eher wie eine native App funktioniert.
 
-Der AEM-SPA-Editor ermöglicht es Frontend-Entwicklungspersonen, SPAs zu erstellen, die sich in eine AEM-Site integrieren lassen, damit Inhaltsautorinnen und -autoren SPA-Inhalte so einfach bearbeiten können wie alle anderen AEM-Inhalte.
+Der AEM-SPA-Editor ermöglicht es Frontend-Entwickelnden, SPAs zu erstellen, die sich in eine AEM-Site integrieren lassen, damit Inhaltsautorinnen und -autoren SPA-Inhalte so einfach bearbeiten können wie alle anderen AEM-Inhalte.
 
 ### Warum eine SPA? {#why-a-spa}
 
@@ -177,7 +191,7 @@ Der nächste Abschnitt, [Laden einer SPA-Anwendung](#loading-an-spa-application)
 1. Der Inhalt der Quelle ist sehr begrenzt.
 
    * Die Seite enthält im Hauptteil keine Inhalte. Sie besteht hauptsächlich aus Stylesheets und einem Aufruf an verschiedene Skripte wie `clientlib-react.min.js`.
-   * Diese Skripte sind die Hauptelemente des Programms und für das Rendern sämtlicher Inhalte verantwortlich.
+   * Diese Skripte sind die Haupttreiber dieser Anwendung und sind für das Rendern des gesamten Contents verantwortlich.
 
 1. Nutzen Sie die integrierten Tools Ihres Browsers, um die Seite zu überprüfen. Sehen Sie sich den Inhalt des vollständig geladenen DOM an.
 
@@ -235,7 +249,7 @@ Im folgenden Abschnitt werden wir uns den Vertrag ansehen, der es dem SPA-Editor
 
    `data-cq-data-path="/content/wknd-spa-react/us/en/home/jcr:content/root/responsivegrid/text`
 
-   Dieser Pfad ermöglicht ein Abrufen und Verknüpfen des Konfigurationsobjekts mit Bearbeitungskontext der einzelnen Komponenten.
+   Dieser Pfad ermöglicht das Abrufen und Zuordnen des Konfigurationsobjekts für den Bearbeitungskontext jeder Komponente.
 
    Dies ist das einzige Markup-Attribut, das erforderlich ist, damit der Editor das Element als bearbeitbare Komponente innerhalb der SPA erkennen kann. Auf Grundlage dieses Attributs bestimmt der SPA-Editor, welche bearbeitbare Konfiguration mit der Komponente verknüpft ist, sodass der richtige Rahmen und die richtige Symbolleiste geladen wird.
 

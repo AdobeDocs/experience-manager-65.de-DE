@@ -9,13 +9,22 @@ exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 100%
-
+source-wordcount: '346'
+ht-degree: 99%
 ---
-
 
 # Integration von AEM 6.5 mit Adobe Campaign{#integrating-with-adobe-campaign}
 
@@ -35,8 +44,8 @@ Es gibt eine Reihe von Adobe Campaign Classic(ACC)-Versionen. Die Unterstützung
 
 | ACC-Version | Integration mit AEM 6.5 <br>Lokal | Integration mit AEM 6.5<br>AMS |
 |---|---|---|
-| [v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=de) | Unterstützt | Unterstützt  |
-| [Client-Konsole v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=de) | Unterstützt | Unterstützt  |
+| [v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=de) | Unterstützt | Unterstützt |
+| [Client-Konsole v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=de) | Unterstützt | Unterstützt |
 
 Die folgende Dokumentation beschreibt die Integration von AEM mit Adobe Campaign Classic.
 
@@ -54,7 +63,7 @@ Die Integration von [Adobe Campaign Standard](https://experienceleague.adobe.com
 | Integration mit AEM 6.5 <br>Lokal | Integration mit AEM 6.5<br>AMS |
 |---|---|
 | Unterstützt | Unterstützt |
-| Unterstützt | Unterstützt  |
+| Unterstützt | Unterstützt |
 
 Die folgende Dokumentation beschreibt die Integration von AEM mit Adobe Campaign Standard.
 

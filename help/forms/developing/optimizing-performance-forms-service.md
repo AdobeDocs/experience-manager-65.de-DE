@@ -10,13 +10,29 @@ role: Developer
 exl-id: 5a746c6c-bf6e-4b25-ba7c-a35edb1f55f3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1442'
 ht-degree: 100%
-
 ---
-
 # Optimieren der Leistung des Forms-Service {#optimizing-the-performance-of-theforms-service}
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
@@ -39,13 +55,13 @@ Führen Sie die folgenden Aufgaben aus, um die Leistung des Forms-Service beim R
 1. Geben Sie das Formular wieder.
 1. Schreiben Sie den Formular-Datenstrom in den Client-Webbrowser.
 
-**Projektdateien einschließen**
+**Einschließen von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
 **Erstellen eines Forms-Client-API-Objekts**
 
-Bevor Sie einen Client-API-Vorgang für den Forms-Service programmgesteuert durchführen können, müssen Sie einen Client für den Forms-Service erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `FormsServiceClient`-Objekt. Wenn Sie die Web-Service-API für Forms verwenden, erstellen Sie ein `FormsService`-Objekt.
+Bevor Sie einen Client-API-Vorgang für den Forms-Service programmgesteuert durchführen können, müssen Sie einen Client für den Forms-Service erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `FormsServiceClient`-Objekt. Wenn Sie die Forms-Webservice-API verwenden, erstellen Sie ein `FormsService`-Objekt.
 
 **Festlegen von leistungsbezogenen Laufzeitoptionen**
 
@@ -92,9 +108,9 @@ Rendern eines Formulars mit optimierter Leistung mithilfe der Forms API (Java):
 1. Erstellen eines Forms Client-API-Objekts
 
    * Erstellen Sie ein `ServiceClientFactory`-Objekt, das Verbindungseigenschaften enthält.
-   * Erstellen Sie ein `FormsServiceClient`-Objekt, indem Sie dessen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
+   * Erstellen Sie ein `FormsServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
 
-1. Festlegen von leistungsbezogenen Laufzeitoptionen
+1. Festlegen von Leistungsoptionen bezüglich der Laufzeit
 
    * Erstellen Sie ein Objekt `PDFFormRenderSpec`, indem Sie den Konstruktor verwenden.
    * Legen Sie die Formular-Cache-Option fest, indem Sie die Methode `setCacheEnabled` des `PDFFormRenderSpec`-Objekts aufrufen und `true` übergeben.
@@ -107,10 +123,10 @@ Rendern eines Formulars mit optimierter Leistung mithilfe der Forms API (Java):
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs angibt, einschließlich der Dateinamenerweiterung.
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document`-Objekt.
    * Ein Objekt vom Typ `PDFFormRenderSpec`, das Laufzeitoptionen speichert, um die Leistung zu verbessern.
-   * Ein Objekt vom Typ `URLSpec`, das URI-Werte enthält, die für den Forms-Service erforderlich sind.
-   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, für den Sie `null` angeben können, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein `URLSpec`-Objekt, das URI-Werte enthält, die für den Forms-Service erforderlich sind.
+   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
 
-   Die Methode `renderPDFForm` gibt ein `FormsResult`-Objekt zurück, das einen Formulardaten-Stream enthält, der in den Client-Webbrowser geschrieben werden muss.
+   Die `renderPDFForm`-Methode gibt ein `FormsResult`-Objekt zurück, das einen Formulardatenstrom enthält, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben des Formulardaten-Streams in den Client-Webbrowser
 
@@ -118,7 +134,7 @@ Rendern eines Formulars mit optimierter Leistung mithilfe der Forms API (Java):
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie die Methode `getOutputContent` des `FormsResult`-Objekts aufrufen.
    * Erstellen Sie ein `java.io.InputStream`-Objekt durch Aufrufen der `getInputStream`-Methode des `com.adobe.idp.Document`-Objekts.
    * Erstellen Sie ein Byte-Array und befüllen Sie es mit dem Formulardatenstrom, indem Sie die `read`-Methode des `InputStream`-Objekts aufrufen und das Byte-Array als Argument übergeben.
-   * Um den Formulardatenstrom an den Client-Webbrowser zu senden, rufen Sie die `write`-Methode des `javax.servlet.ServletOutputStream`-Objekts auf. Übergeben Sie das Byte-Array an die Methode `write`.
+   * Rufen Sie die Methode `write` des `javax.servlet.ServletOutputStream`-Objekts auf, um den Formulardaten-Stream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die Methode `write`.
 
 **Siehe auch**
 
@@ -139,7 +155,7 @@ Wiedergeben eines Formulars mit optimierter Leistung mithilfe der Forms-API (Web
 
 1. Erstellen eines Forms Client-API-Objekts
 
-   Erstellen Sie ein `FormsService`-Objekt und legen Sie Authentifizierungswerte fest.
+   Erstellen Sie ein `FormsService` Objekt und legen Sie Authentifizierungswerte fest.
 
 1. Festlegen von Leistungsoptionen bezüglich der Laufzeit
 

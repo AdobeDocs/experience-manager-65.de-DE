@@ -1,5 +1,5 @@
 ---
-title: 'Verwenden des Sling Resource Merger in AEM  '
+title: Verwenden des Sling Resource Merger in AEM
 description: Der Sling Resource Merger bietet Dienste für den Zugriff auf Ressourcen und für das Zusammenführen von Ressourcen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,13 +9,22 @@ exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 100%
-
+source-wordcount: '1273'
+ht-degree: 99%
 ---
-
 # Verwenden des Sling Resource Merger in AEM{#using-the-sling-resource-merger-in-aem}
 
 ## Zweck {#purpose}
@@ -98,25 +107,25 @@ Zum Erstellen einer Überlagerung oder Überschreibung müssen Sie den ursprüng
 
 * Überlagerung
 
-   * Die Definition des Navigationseintrags für die Sites-Konsole, wie sie in der Leiste angezeigt ist, wird definiert unter:
+  * Die Definition des Navigationseintrags für die Sites-Konsole, wie sie in der Leiste angezeigt ist, wird definiert unter:
 
-     `/libs/cq/core/content/nav/sites/jcr:title`
+    `/libs/cq/core/content/nav/sites/jcr:title`
 
-   * Erstellen Sie zum Überlagern folgenden Knoten:
+  * Erstellen Sie zum Überlagern folgenden Knoten:
 
-     `/apps/cq/core/content/nav/sites`
+    `/apps/cq/core/content/nav/sites`
 
-     Aktualisieren Sie dann die Eigenschaft `jcr:title` nach Bedarf.
+    Aktualisieren Sie dann die Eigenschaft `jcr:title` nach Bedarf.
 
 * Überschreibung
 
-   * Die Definition des Touch-fähigen Dialogfelds für die Textkonsole ist definiert unter:
+  * Die Definition des Touch-fähigen Dialogfelds für die Textkonsole ist definiert unter:
 
-     `/libs/foundation/components/text/cq:dialog`
+    `/libs/foundation/components/text/cq:dialog`
 
-   * Um dies zu überschreiben, erstellen Sie den folgenden Knoten, z. B.:
+  * Um dies zu überschreiben, erstellen Sie den folgenden Knoten, z. B.:
 
-     `/apps/the-project/components/text/cq:dialog`
+    `/apps/the-project/components/text/cq:dialog`
 
 Um eine dieser beiden Optionen zu erstellen, müssen Sie nur die Skelettstruktur neu erstellen. Zum Vereinfachen der Neuerstellung der Struktur können alle dazwischenliegenden Knoten vom Typ `nt:unstructured` sein (sie müssen nicht dem ursprünglichen Knotentyp entsprechen, z. B. in `/libs`).
 
@@ -143,20 +152,20 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
   Die Eigenschaft ist nicht in der `/libs`-Definition vorhanden, ist in der `/apps`-Überlagerung/-Überschreibung aber erforderlich.
 
-   1. Erstellen Sie den entsprechenden Knoten in `/apps`.
-   1. Erstellen Sie die neue Eigenschaft auf diesem Knoten.
+  1. Erstellen Sie den entsprechenden Knoten in `/apps`.
+  1. Erstellen Sie die neue Eigenschaft auf diesem Knoten.
 
 * **Eigenschaft neu definieren (nicht automatisch erstellte Eigenschaften)**
 
   Die Eigenschaft ist in `/libs` definiert, aber für die `/apps`-Überlagerung/-Überschreibung ist ein neuer Wert erforderlich.
 
-   1. Erstellen Sie den entsprechenden Knoten in `/apps`.
-   1. Erstellen Sie die entsprechende Eigenschaft auf diesem Knoten (unter /`apps`).
+  1. Erstellen Sie den entsprechenden Knoten in `/apps`.
+  1. Erstellen Sie die entsprechende Eigenschaft auf diesem Knoten (unter /`apps`).
 
-      * Die Eigenschaft verfügt über eine Priorität, die auf der Konfiguration des Sling Resource Resolver basiert.
-      * Das Ändern des Eigenschaftstyps wird unterstützt.
+     * Die Eigenschaft verfügt über eine Priorität, die auf der Konfiguration des Sling Resource Resolver basiert.
+     * Das Ändern des Eigenschaftstyps wird unterstützt.
 
-        Wenn Sie einen Eigenschaftstyp verwenden, der sich von dem in `/libs` verwendeten unterscheidet, wird der von Ihnen definierte Eigenschaftstyp verwendet.
+       Wenn Sie einen Eigenschaftstyp verwenden, der sich von dem in `/libs` verwendeten unterscheidet, wird der von Ihnen definierte Eigenschaftstyp verwendet.
 
   >[!NOTE]
   >
@@ -166,67 +175,67 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
   Standardmäßig unterliegen automatisch erstellte Eigenschaften (z. B. `jcr:primaryType`) keinen Überlagerungen/Überschreibungen, um sicherzustellen, dass der aktuell unter `/libs` befindliche Knotentyp respektiert wird. Um eine Überschreibung/Überlagerung vorzuschreiben, müssen Sie den Knoten in `/apps` neu erstellen, die Eigenschaft ausdrücklich ausblenden und neu definieren:
 
-   1. Erstellen Sie den entsprechenden Knoten unter `/apps` mit dem gewünschten `jcr:primaryType`.
-   1. Erstellen Sie die Eigenschaft `sling:hideProperties` auf diesem Knoten, wobei der Wert auf den Wert der automatisch erstellten Eigenschaft eingestellt ist, zum Beispiel `jcr:primaryType`.
+  1. Erstellen Sie den entsprechenden Knoten unter `/apps` mit dem gewünschten `jcr:primaryType`.
+  1. Erstellen Sie die Eigenschaft `sling:hideProperties` auf diesem Knoten, wobei der Wert auf den Wert der automatisch erstellten Eigenschaft eingestellt ist, zum Beispiel `jcr:primaryType`.
 
-      Diese Eigenschaft, die unter `/apps` definiert wird, hat jetzt Vorrang vor der Eigenschaft, die unter `/libs` definiert wurde.
+     Diese Eigenschaft, die unter `/apps` definiert wird, hat jetzt Vorrang vor der Eigenschaft, die unter `/libs` definiert wurde.
 
 * **Knoten und zugehörige untergeordnete Elemente neu definieren**
 
   Der Knoten und seine untergeordneten Elemente sind in `/libs` definiert, aber in der `/apps`-Überlagerung/Überschreibung wird eine neue Konfiguration benötigt.
 
-   1. Kombinieren Sie folgende Aktionen:
+  1. Kombinieren Sie folgende Aktionen:
 
-      1. Untergeordnete Elemente eines Knotens ausblenden (wobei die Eigenschaften des Knotens beibehalten werden)
-      1. Eigenschaft(en) neu definieren
+     1. Untergeordnete Elemente eines Knotens ausblenden (wobei die Eigenschaften des Knotens beibehalten werden)
+     1. Eigenschaft(en) neu definieren
 
 * **Eigenschaft ausblenden**
 
   Die Eigenschaft ist in `/libs` definiert, ist aber für die `/apps`-Überlagerung/-Überschreibung nicht erforderlich.
 
-   1. Erstellen Sie den entsprechenden Knoten in `/apps`.
-   1. Erstellen Sie eine Eigenschaft `sling:hideProperties` vom Typ `String` oder `String[]`. Geben Sie hiermit an, ob die Eigenschaften verborgen/ignoriert werden sollen. Platzhalter können auch verwendet werden. Beispiel:
+  1. Erstellen Sie den entsprechenden Knoten in `/apps`.
+  1. Erstellen Sie eine Eigenschaft `sling:hideProperties` vom Typ `String` oder `String[]`. Geben Sie hiermit an, ob die Eigenschaften verborgen/ignoriert werden sollen. Platzhalter können auch verwendet werden. Beispiel:
 
-      * `*`
-      * `["*"]`
-      * `jcr:title`
-      * `["jcr:title", "jcr:description"]`
+     * `*`
+     * `["*"]`
+     * `jcr:title`
+     * `["jcr:title", "jcr:description"]`
 
 * **Knoten und zugehörige untergeordnete Elemente ausblenden**
 
   Der Knoten und seine untergeordneten Elemente sind in `/libs` definiert, aber für die `/apps`-Überlagerung/-Überschreibung nicht erforderlich.
 
-   1. Erstellen Sie den entsprechenden Knoten unter /apps.
-   1. Erstellen Sie eine Eigenschaft `sling:hideResource`.
+  1. Erstellen Sie den entsprechenden Knoten unter /apps.
+  1. Erstellen Sie eine Eigenschaft `sling:hideResource`.
 
-      * Typ: `Boolean`
-      * Wert: `true`
+     * Typ: `Boolean`
+     * Wert: `true`
 
 * **Untergeordnete Elemente eines Knotens ausblenden (wobei die Eigenschaften des Knotens beibehalten werden)**
 
   Der Knoten, seine Eigenschaften und seine untergeordneten Elemente sind in `/libs` definiert. Der Knoten und seine Eigenschaften sind in der `/apps`-Überlagerung/-Überschreibung erforderlich, aber einige oder alle der untergeordneten Knoten sind in der `/apps`-Überlagerung/-Überschreibung nicht erforderlich.
 
-   1. Erstellen Sie den entsprechenden Knoten unter `/apps`
-   1. Erstellen Sie die Eigenschaft `sling:hideChildren`:
+  1. Erstellen Sie den entsprechenden Knoten unter `/apps`
+  1. Erstellen Sie die Eigenschaft `sling:hideChildren`:
 
-      * Typ: `String[]`
-      * Wert: eine Liste der auszublendenden/zu ignorierenden untergeordneten Knoten (wie definiert in `/libs`)
+     * Typ: `String[]`
+     * Wert: eine Liste der auszublendenden/zu ignorierenden untergeordneten Knoten (wie definiert in `/libs`)
 
-      Mit dem Platzhalter &amp;ast; können Sie alle untergeordneten Knoten ausblenden/ignorieren.
+     Mit dem Platzhalter &amp;ast; können Sie alle untergeordneten Knoten ausblenden/ignorieren.
 
 * **Knoten neu anordnen**
 
   Der Knoten und die ihm gleichrangigen Elemente sind in `/libs` definiert. Eine neue Position ist erforderlich, damit der Knoten in der `/apps`-Überlagerung/-Überschreibung neu erstellt wird, wobei die neue Position als Verweis auf den entsprechenden gleichrangigen Knoten in `/libs` definiert ist.
 
-   * Verwenden Sie die Eigenschaft `sling:orderBefore`:
+  * Verwenden Sie die Eigenschaft `sling:orderBefore`:
 
-      1. Erstellen Sie den entsprechenden Knoten unter `/apps`
-      1. Erstellen Sie die Eigenschaft `sling:orderBefore`:
+    1. Erstellen Sie den entsprechenden Knoten unter `/apps`
+    1. Erstellen Sie die Eigenschaft `sling:orderBefore`:
 
-         Dies gibt den Knoten (wie in `/libs`) an, vor dem der aktuelle Knoten positioniert werden soll:
+       Dies gibt den Knoten (wie in `/libs`) an, vor dem der aktuelle Knoten positioniert werden soll:
 
-         * Typ: `String`
-         * Wert: `<before-SiblingName>`
+       * Typ: `String`
+       * Wert: `<before-SiblingName>`
 
 ### Aufrufen des Sling Resource Merger aus dem Code {#invoking-the-sling-resource-merger-from-your-code}
 
@@ -240,21 +249,21 @@ Der Sling Resource Merger umfasst zwei benutzerdefinierte Ressourcenanbieter �
 
 * Überlagerung:
 
-   * Zweck: Ressourcen anhand ihrer Suchpfade zusammenführen
-   * Einhängepunkt: `/mnt/overlay`
-   * Anwendung: `mount point + relative path`
-   * Beispiel:
+  * Zweck: Ressourcen anhand ihrer Suchpfade zusammenführen
+  * Einhängepunkt: `/mnt/overlay`
+  * Anwendung: `mount point + relative path`
+  * Beispiel:
 
-      * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
+    * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
 * Überschreibung:
 
-   * Zweck: Ressourcen anhand ihrer Supertypen zusammenführen
-   * Einhängepunkt: `/mnt/overide`
-   * Anwendung: `mount point + absolute path`
-   * Beispiel:
+  * Zweck: Ressourcen anhand ihrer Supertypen zusammenführen
+  * Einhängepunkt: `/mnt/overide`
+  * Anwendung: `mount point + absolute path`
+  * Beispiel:
 
-      * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
+    * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
 ### Anwendungsbeispiele {#example-of-usage}
 
@@ -262,9 +271,9 @@ Einige Beispiele sind enthalten:
 
 * Überlagerung:
 
-   * [Anpassen der Konsolen](/help/sites-developing/customizing-consoles-touch.md)
-   * [Anpassung des Seiten-Authorings](/help/sites-developing/customizing-page-authoring-touch.md)
+  * [Anpassen der Konsolen](/help/sites-developing/customizing-consoles-touch.md)
+  * [Anpassung des Seiten-Authorings](/help/sites-developing/customizing-page-authoring-touch.md)
 
 * Überschreibung:
 
-   * [Konfiguration von Seiteneigenschaften](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
+  * [Konfiguration von Seiteneigenschaften](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)

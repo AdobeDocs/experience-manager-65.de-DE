@@ -5,13 +5,26 @@ exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2505'
-ht-degree: 96%
-
+source-wordcount: '2506'
+ht-degree: 95%
 ---
-
 # Erstellen und Organisieren von Seiten {#creating-and-organizing-pages}
 
 In diesem Abschnitt wird beschrieben, wie Sie mit Adobe Experience Manager (AEM) Seiten erstellen und verwalten können, damit Sie anschließend auf diesen Seiten [Inhalte erstellen](/help/sites-authoring/editing-content.md) können.
@@ -85,13 +98,13 @@ Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
 
 * **[Titel](#title)**:
 
-   * Dieses Feld wird dem Benutzer bei der Bearbeitung im oberen Teil des Seiteninhalts in der Konsole angezeigt.
-   * Dieses Feld ist obligatorisch.
+  * Dieses Feld wird dem Benutzer bei der Bearbeitung im oberen Teil des Seiteninhalts in der Konsole angezeigt.
+  * Dieses Feld ist obligatorisch.
 
 * **[Name](#name)**:
 
-   * Mit diesem Wert wird der URI generiert.
-   * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird der Name vom Titel abgeleitet. Weitere Informationen finden Sie unter [Seitennamen-Einschränkungen und Best Practices](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices).
+  * Mit diesem Wert wird der URI generiert.
+  * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird der Name vom Titel abgeleitet. Weitere Informationen finden Sie unter [Seitennamen-Einschränkungen und Best Practices](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices).
 
 #### Einschränkungen und Best Practices bei der Seitenbenennung {#page-name-restrictions-and-best-practices}
 
@@ -167,7 +180,7 @@ Eine Liste der Vorlagen, die beim Generieren der neuen Seite verwendet werden k�
 
 ### Komponenten {#components}
 
-Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM ist mit einer Reihe [&#x200B; Komponenten ausgestattet, &#x200B;](/help/sites-authoring/default-components-console.md) umfangreiche Funktionen bieten. Dazu gehören:
+Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM ist mit einer Reihe [ Komponenten ausgestattet, ](/help/sites-authoring/default-components-console.md) umfangreiche Funktionen bieten. Dazu gehören:
 
 * Text
 * Bild
@@ -187,7 +200,7 @@ Sobald Sie eine Seite erstellt und geöffnet haben, können Sie [Inhalte mithilf
 
 Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstellen, bevor Sie mit der Erstellung von Inhalten beginnen können:
 
-1. Öffnen Sie die Sites-Konsole (z. B. [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
+1. Öffnen Sie die Sites-Konsole (z. B. [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
 1. Navigieren Sie zum Speicherort, an dem Sie die neue Seite erstellen möchten.
 1. Öffnen Sie das Dropdown-Menü über **Erstellen** in der Symbolleiste und wählen Sie **Seite** aus der Liste aus:
 
@@ -211,14 +224,14 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
 
    * **Titel**:
 
-      * Dieser wird den Benutzenden angezeigt und ist obligatorisch.
+     * Dieser wird den Benutzenden angezeigt und ist obligatorisch.
 
    * **Name**:
 
-      * Mit diesem Wert wird der URI generiert. Wenn kein Name angegeben ist, wird der Name vom Titel abgeleitet.
-      * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR.
+     * Mit diesem Wert wird der URI generiert. Wenn kein Name angegeben ist, wird der Name vom Titel abgeleitet.
+     * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR.
 
-      * Die **Eingabe von ungültigen Zeichen** im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die angibt, welche Zeichen entfernt/ersetzt werden müssen.
+     * Die **Eingabe von ungültigen Zeichen** im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die angibt, welche Zeichen entfernt/ersetzt werden müssen.
 
    >[!NOTE]
    >
@@ -343,8 +356,8 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
    * Die [Spaltenansicht](/help/sites-authoring/basic-handling.md#column-view) verwenden, um zum neuen Speicherort für die Seite zu navigieren:
 
-      * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniatur des Ziels klicken.
-      * Klicken Sie auf **Weiter**, um fortzufahren.
+     * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniatur des Ziels klicken.
+     * Klicken Sie auf **Weiter**, um fortzufahren.
 
    * Auf **Zurück** klicken, um zur Angabe des Seitennamens zurückzukehren.
 
@@ -384,8 +397,8 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 Seitenverschiebungsaktionen werden immer asynchron verarbeitet, sodass Sie ungehindert mit der Erstellung in der Benutzeroberfläche fortfahren können.
 
 * Der Benutzer muss definieren, wann der asynchrone Vorgang ausgeführt werden soll.
-   * **Jetzt** startet die Ausführung des asynchronen Auftrags sofort.
-   * **Später** erlaubt es dem Benutzer zu definieren, wann der asynchrone Auftrag starten wird.
+  * **Jetzt** startet die Ausführung des asynchronen Auftrags sofort.
+  * **Später** erlaubt es dem Benutzer zu definieren, wann der asynchrone Auftrag starten wird.
 
   ![Asynchrone Seitenverschiebung](assets/asynchronous-page-move.png)
 
@@ -415,8 +428,8 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
    * Mit **Abbrechen** können Sie den Vorgang abbrechen
    * Mit **Löschen** bestätigen Sie die Aktion.
 
-      * Wenn die Seite keine Verweise enthält, wird sie gelöscht.
-      * Wenn die Seite Verweise enthält, werden Sie in einem Meldungsfeld darüber informiert, dass **auf eine oder mehrere Seiten verwiesen wird.** Sie können **Löschen erzwingen** oder **Abbrechen** auswählen.
+     * Wenn die Seite keine Verweise enthält, wird sie gelöscht.
+     * Wenn die Seite Verweise enthält, werden Sie in einem Meldungsfeld darüber informiert, dass **auf eine oder mehrere Seiten verwiesen wird.** Sie können **Löschen erzwingen** oder **Abbrechen** auswählen.
 
 >[!NOTE]
 >

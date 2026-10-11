@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '2386'
 ht-degree: 95%
-
 ---
-
 # Auslagern von Aufträgen{#offloading-jobs}
 
 ## Einführung {#introduction}
@@ -97,7 +106,7 @@ Sie können auch die Web-Konsole zum Anzeigen von Topologie-Informationen verwen
 
 Gehen Sie wie folgt vor, um die Seite „Topology Management“ der Web-Konsole zu öffnen:
 
-1. Öffnen Sie die Web-Konsole in Ihrem Browser. http://localhost ([:4502/system/console](http://localhost:4502/system/console))
+1. Öffnen Sie die Web-Konsole in Ihrem Browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Klicken Sie auf das Hauptmenü > „Topologieverwaltung“.
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
@@ -162,14 +171,14 @@ Verwenden Sie die Web-Konsole oder einen sling:OsgiConfig-Knoten, um die folgend
 
 Gehen Sie wie folgt vor, um eine CQ-Instanz mit dem Stamm-Mitglied einer Topologie zu verbinden. Die Instanz verweist dann auf die Topologie-Connector-URL des Stamm-Mitglieds der Topologie. Führen Sie diese Schritte für alle Topologiemitglieder durch.
 
-1. Öffnen Sie die Web-Konsole in Ihrem Browser. http://localhost ([:4502/system/console](http://localhost:4502/system/console))
+1. Öffnen Sie die Web-Konsole in Ihrem Browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Klicken Sie auf das Hauptmenü > „Topologieverwaltung“.
 1. Klicken Sie auf die Option zum Konfigurieren des Discovery-Dienstes.
 1. Fügen Sie ein Element zur Eigenschaft „Topology Connector URLs“ hinzu und geben Sie die URL des Topologie-Connector-Dienstes für das Stamm-Mitglied der Topologie an. Die URL hat die Form https://rootservername:4502/libs/sling/topology/connector.
 
 Führen Sie die folgenden Schritte für das Stamm-Mitglied der Topologie aus. Dadurch werden die Namen der anderen Topologiemitglieder der Zulassungsliste für den Discovery-Dienst hinzugefügt.
 
-1. Öffnen Sie die Web-Konsole in Ihrem Browser. http://localhost ([:4502/system/console](http://localhost:4502/system/console))
+1. Öffnen Sie die Web-Konsole in Ihrem Browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Klicken Sie auf das Hauptmenü > „Topologieverwaltung“.
 1. Klicken Sie auf die Option zum Konfigurieren des Discovery-Dienstes.
 1. Fügen Sie für jedes Topologiemitglied ein Element zur Eigenschaft „Topologie-Connectoren-Zulassungsliste“ hinzu und geben Sie den Hostnamen oder die IP-Adresse des Topologiemitglieds an.
@@ -289,7 +298,7 @@ Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Erstellen des Rückwärtsagenten {#creating-the-reverse-agent}
 
-1. Erstellen Sie einen **Rückwärts-Replikationsagenten** auf der Autoreninstanz. (Weitere Informationen finden [&#x200B; in der Dokumentation zu Replikationsagenten](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel an**. Der **Name** muss der Namenskonvention entsprechen.
+1. Erstellen Sie einen **Rückwärts-Replikationsagenten** auf der Autoreninstanz. (Weitere Informationen finden [ in der Dokumentation zu Replikationsagenten](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel an**. Der **Name** muss der Namenskonvention entsprechen.
 1. Erstellen Sie den Agenten mit den folgenden Eigenschaften:
 
    | Eigenschaft | Wert |
@@ -302,7 +311,7 @@ Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Erstellen des Postausgangs-Agenten {#creating-the-outbox-agent}
 
-1. Erstellen Sie einen **Replikationsagenten** auf der Worker-Instanz. (Weitere Informationen finden [&#x200B; in der Dokumentation zu Replikationsagenten](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel an**. Der **Name** muss `offloading_outbox` lauten.
+1. Erstellen Sie einen **Replikationsagenten** auf der Worker-Instanz. (Weitere Informationen finden [ in der Dokumentation zu Replikationsagenten](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel an**. Der **Name** muss `offloading_outbox` lauten.
 1. Erstellen Sie den Agenten mit den folgenden Eigenschaften.
 
    | Eigenschaft | Wert |

@@ -1,20 +1,33 @@
 ---
 title: Arbeiten mit Berechtigungen
-
-description: Importieren Sie Berechtigungen mithilfe der Trust Manager-API und der Java-API in AEM Forms. Erfahren Sie außerdem, wie Sie Berechtigungen mithilfe der Trust Manager-API und der Java-API löschen.
-
-
+description: Importieren Sie Anmeldedaten mithilfe der Trust Manager-API und der Java-API in AEM Forms. Erfahren Sie außerdem, wie Sie Anmeldedaten mithilfe der Trust Manager-API und der Java-API löschen.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-
 role: Developer
 exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
 solution: Experience Manager, Experience Manager Forms
-
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 100%
@@ -30,18 +43,18 @@ Eine Berechtigung enthält Informationen zu Ihrem privaten Schlüssel, der zum S
 * Acrobat Reader DC Extensions verwendet eine Berechtigung zur Aktivierung von Adobe Reader-Verwendungsrechten in PDF-Dokumenten. (Siehe [Anwenden von Verwendungsrechten auf PDF-Dokumente](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
 * Der Signature-Service greift beim Ausführen von Vorgängen wie dem digitalen Signieren von PDF-Dokumenten auf Zertifikate und Berechtigungen zu. (Siehe [Digitales Signieren von PDF-Dokumenten](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
-Mithilfe der Java-API von Trust Manager können Sie programmgesteuert mit dem Berechtigungs-Service interagieren. Sie können die folgenden Aufgaben ausführen:
+Mithilfe der Java-API von Trust Manager können Sie programmgesteuert mit dem Anmeldedaten-Service interagieren. Sie können die folgenden Aufgaben ausführen:
 
-* [Importieren von Berechtigungen mithilfe der Trust Manager-API](credentials.md#importing-credentials-by-using-the-trust-manager-api)
-* [Löschen von Berechtigungen mithilfe der Trust Manager-API](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
+* [Importieren von Anmeldedaten mithilfe der Trust Manager-API](credentials.md#importing-credentials-by-using-the-trust-manager-api)
+* [Löschen von Anmeldedaten mithilfe der Trust Manager-API](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 
 >[!NOTE]
 >
 >Sie können Zertifikate auch über Administration-Console importieren bzw. löschen. (Siehe [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63_de).)
 
-## Importieren von Berechtigungen mithilfe der Trust Manager-API {#importing-credentials-by-using-the-trust-manager-api}
+## Importieren von Anmeldedaten mithilfe der Trust Manager-API {#importing-credentials-by-using-the-trust-manager-api}
 
-Mithilfe der Trust-Manager-API können Sie programmgesteuert eine Berechtigung in AEM Forms importieren. Sie können beispielsweise eine Berechtigung importieren, die zum Signieren eines PDF-Dokuments verwendet wird. (Siehe [Digitales Signieren von PDF-Dokumenten](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+Mithilfe der Trust-Manager-API können Sie programmgesteuert Anmeldedaten in AEM Forms importieren. Sie können beispielsweise eine Berechtigung importieren, die zum Signieren eines PDF-Dokuments verwendet wird. (Siehe [Digitales Signieren von PDF-Dokumenten](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 Beim Importieren einer Berechtigung geben Sie einen Alias für die Berechtigung an. Der Alias wird verwendet, um einen Forms-Vorgang auszuführen, für den eine Berechtigung erforderlich ist. Nachdem sie importiert worden ist, kann eine Berechtigung in Administration-Console angezeigt werden, wie in der folgenden Abbildung dargestellt. Beachten Sie, dass der Alias für die Berechtigung *sicher* ist.
 
@@ -88,19 +101,19 @@ Nachdem Sie auf die Berechtigung verwiesen haben, importieren Sie die Berechtigu
 
 **Siehe auch**
 
-[Importieren von Berechtigungen mithilfe der Java-API](credentials.md#import-credentials-using-the-java-api)
+[Importieren von Anmeldedaten mithilfe der Java-API](credentials.md#import-credentials-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Berechtigungs-Service-API – Schnellstarts](/help/forms/developing/credential-service-java-api-quick.md#credential-service-java-api-quick-start-soap)
+[Anmeldedaten-Service-API – Schnellstarts](/help/forms/developing/credential-service-java-api-quick.md#credential-service-java-api-quick-start-soap)
 
-[Löschen von Berechtigungen mithilfe der Trust Manager-API](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
+[Löschen von Anmeldedaten mithilfe der Trust Manager-API](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 
-### Importieren von Berechtigungen mithilfe der Java-API {#import-credentials-using-the-java-api}
+### Importieren von Anmeldedaten mithilfe der Java-API {#import-credentials-using-the-java-api}
 
-So importieren Sie eine Berechtigung mithilfe der Trust Manager-API (Java) in AEM Forms:
+So importieren Sie Anmeldedaten mithilfe der Trust Manager-API (Java) in AEM Forms:
 
 1. Projektdateien einschließen
 
@@ -128,17 +141,17 @@ So importieren Sie eine Berechtigung mithilfe der Trust Manager-API (Java) in AE
 
 **Siehe auch**
 
-[Importieren von Berechtigungen mithilfe der Trust Manager-API](credentials.md#importing-credentials-by-using-the-trust-manager-api)
+[Importieren von Anmeldedaten mithilfe der Trust Manager-API](credentials.md#importing-credentials-by-using-the-trust-manager-api)
 
-[Kurzanleitung (SOAP-Modus): Importieren von Berechtigungen mit der Java-API](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[Kurzanleitung (SOAP-Modus): Importieren von Anmeldedaten mit der Java-API](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Löschen von Berechtigungen mithilfe der Trust Manager-API {#deleting-credentials-by-using-the-trust-manager-api}
+## Löschen von Anmeldedaten mithilfe der Trust Manager-API {#deleting-credentials-by-using-the-trust-manager-api}
 
-Sie können eine Berechtigung programmgesteuert löschen, indem Sie die Trust Manager-API verwenden. Um eine Berechtigung zu löschen, müssen Sie den Alias der Berechtigung angeben. Nachdem eine Berechtigung gelöscht wurde, kann sie nicht mehr zum Ausführen eines Vorgangs verwendet werden.
+Sie können Anmeldedaten programmgesteuert löschen, indem Sie die Trust Manager-API verwenden. Um eine Berechtigung zu löschen, müssen Sie den Alias der Berechtigung angeben. Nachdem eine Berechtigung gelöscht wurde, kann sie nicht mehr zum Ausführen eines Vorgangs verwendet werden.
 
 >[!NOTE]
 >
@@ -174,17 +187,17 @@ Um eine Berechtigung zu löschen, müssen Sie den Alias der Berechtigung angeben
 
 **Siehe auch**
 
-[Importieren von Berechtigungen mithilfe der Java-API](credentials.md#import-credentials-using-the-java-api)
+[Importieren von Anmeldedaten mithilfe der Java-API](credentials.md#import-credentials-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Importieren von Berechtigungen mithilfe der Java-API](credentials.md#import-credentials-using-the-java-api)
+[Importieren von Anmeldedaten mithilfe der Java-API](credentials.md#import-credentials-using-the-java-api)
 
-### Löschen von Berechtigungen mithilfe der Java-API {#deleting-credentials-using-the-java-api}
+### Löschen von Anmeldedaten mithilfe der Java-API {#deleting-credentials-using-the-java-api}
 
-So löschen Sie mithilfe der Trust Manager-API (Java) eine Berechtigung aus AEM Forms:
+So löschen Sie mithilfe der Trust Manager-API (Java) Anmeldedaten aus AEM Forms:
 
 1. Projektdateien einschließen
 
@@ -201,9 +214,9 @@ So löschen Sie mithilfe der Trust Manager-API (Java) eine Berechtigung aus AEM 
 
 **Siehe auch**
 
-[Löschen von Berechtigungen mithilfe der Trust Manager-API](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
+[Löschen von Anmeldedaten mithilfe der Trust Manager-API](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 
-[Schnellstart (SOAP-Modus): Löschen von Berechtigungen mithilfe der Java-API](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Schnellstart (SOAP-Modus): Löschen von Anmeldedaten mithilfe der Java-API](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

@@ -9,13 +9,29 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '5966'
-ht-degree: 95%
-
+source-wordcount: '6207'
+ht-degree: 97%
 ---
-
 # Erstellen und Verwenden von Designs {#creating-and-using-themes}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
@@ -82,8 +98,8 @@ Hochladen von Designs
 1. Klicken Sie auf **Adobe Experience Manager**, klicken Sie auf **Formulare** und dann auf **Designs**.
 
 1. Auf der Seite „Designs“ klicken Sie auf **Erstellen > Datei-Upload**.
-1. In der Eingabeaufforderung zur Dateiaktualisierung suchen Sie ein Designpaket auf Ihrem Computer, wählen es aus und klicken auf **Hochladen**.
-Das hochgeladene Design ist auf der Seite Designs verfügbar.
+1. In der Eingabeaufforderung zu „Datei-Upload“ suchen Sie ein Design-Paket auf Ihrem Computer, wählen es aus und klicken auf **Hochladen**.
+Das hochgeladene Design ist auf der Seite „Designs“ verfügbar.
 
 ## Metadaten eines Designs {#metadata-of-a-theme}
 
@@ -210,27 +226,27 @@ Der Design-Editor ist in zwei Bereiche unterteilt:
 
 * **Seitenleiste** – Wird auf der linken Seite angezeigt. Sie umfasst die folgenden Elemente:
 
-   * **Selektor:** Zeigt die für die Formatierung ausgewählte Komponente und die Eigenschaften, die Sie gestalten können, an. Der Selektor stellt alle Komponenten eines bestimmten Typs dar. Wenn Sie eine Textfeld-Komponente in einem Design für die Formatierung auswählen, übernehmen alle Textfelder im Formular oder in der interaktiven Kommunikation diesen Stil. Mit Selektoren können Sie eine generische Komponente oder eine bestimmte Komponente für die Gestaltung auswählen. Beispielsweise ist eine Feldkomponente eine allgemeine Komponente, und ein Textfeld ist eine spezielle Komponente.
+  * **Selektor:** Zeigt die für die Formatierung ausgewählte Komponente und die Eigenschaften, die Sie gestalten können, an. Der Selektor stellt alle Komponenten eines bestimmten Typs dar. Wenn Sie eine Textfeld-Komponente in einem Design für die Formatierung auswählen, übernehmen alle Textfelder im Formular oder in der interaktiven Kommunikation diesen Stil. Mit Selektoren können Sie eine generische Komponente oder eine bestimmte Komponente für die Gestaltung auswählen. Beispielsweise ist eine Feldkomponente eine allgemeine Komponente, und ein Textfeld ist eine spezielle Komponente.
 
-     **Formatieren allgemeiner Komponenten:**
-Ein Feld kann ein numerisches Feld wie Alter oder ein Textfeld wie Adresse sein.
-Wenn Sie einen Stil für ein Feld definieren, werden alle Felder wie Alter, Name, Adresse entsprechend formatiert.
+    **Formatieren allgemeiner Komponenten:**
+    Ein Feld kann ein numerisches Feld wie Alter oder ein Textfeld wie Adresse sein.
+    Wenn Sie einen Stil für ein Feld definieren, werden alle Felder wie Alter, Name, Adresse entsprechend formatiert.
 
-     **Formatieren einer spezifischen Komponente**:
-Eine bestimmte Komponente wirkt sich auf die Objekte der betreffenden Kategorie aus. Wenn Sie im Design für die Komponente „Numerisches Feld“ einen Stil definieren, wird der Stil nur auf das numerische Feldobjekt angewendet.
+    **Formatieren einer spezifischen Komponente**:
+    Eine bestimmte Komponente wirkt sich auf die Objekte der betreffenden Kategorie aus. Wenn Sie im Design für die Komponente „Numerisches Feld“ einen Stil definieren, wird der Stil nur auf das numerische Feldobjekt angewendet.
 
-     Beispiel: Ein Textfeld wie Adresse ist länger und ein numerisches Feld wie Alter ist kürzer. Sie können ein numerisches Feld auswählen, seine Länge verkürzen und es auf Ihr Formular anwenden. Die Breite aller numerischen Felder wird in Ihrem Formular verringert.
+    Beispiel: Ein Textfeld wie Adresse ist länger und ein numerisches Feld wie Alter ist kürzer. Sie können ein numerisches Feld auswählen, seine Länge verkürzen und es auf Ihr Formular anwenden. Die Breite aller numerischen Felder wird in Ihrem Formular verringert.
 
-     Wenn Sie alle Feldkomponenten mit einer bestimmten Hintergrundfarbe anpassen, übernehmen alle Felder in Ihrem Formular, wie Alter, Name und Adresse, die Hintergrundfarbe. Wenn Sie ein numerisches Feld wie Alter auswählen und seine Breite verringern, wird die Breite aller numerischer Felder, wie Alter, Anzahl der Personen in einer Familie, verringert. Die Breite von Textfeldern wird nicht geändert.
+    Wenn Sie alle Feldkomponenten mit einer bestimmten Hintergrundfarbe anpassen, übernehmen alle Felder in Ihrem Formular, wie Alter, Name und Adresse, die Hintergrundfarbe. Wenn Sie ein numerisches Feld wie Alter auswählen und seine Breite verringern, wird die Breite aller numerischer Felder, wie Alter, Anzahl der Personen in einer Familie, verringert. Die Breite von Textfeldern wird nicht geändert.
 
-   * **Status:** Hier können Sie die Stile eines Objekts mit einem bestimmten Status anpassen. Beispielsweise können Sie festlegen, wie ein Objekt mit dem Status „Standard“, „Fokus“, „Deaktiviert“, „Mausberührung“ oder „Fehler“ aussieht.
-   * **Eigenschaftenkategorien:** Formatierungseigenschaften sind in verschiedene Kategorien unterteilt. Beispiel: Abmessung und Position, Text, Hintergrund, Rahmen und Effekte. Unter jeder Kategorie geben Sie Informationen zur Formatierung an. Unter „Hintergrund“ können Sie z. B. „Hintergrundfarbe“ sowie „Bild und Verlauf“ angeben.
+  * **Status:** Hier können Sie die Stile eines Objekts mit einem bestimmten Status anpassen. Beispielsweise können Sie festlegen, wie ein Objekt mit dem Status „Standard“, „Fokus“, „Deaktiviert“, „Mausberührung“ oder „Fehler“ aussieht.
+  * **Eigenschaftenkategorien:** Formatierungseigenschaften sind in verschiedene Kategorien unterteilt. Beispiel: Abmessung und Position, Text, Hintergrund, Rahmen und Effekte. Unter jeder Kategorie geben Sie Informationen zur Formatierung an. Unter „Hintergrund“ können Sie z. B. „Hintergrundfarbe“ sowie „Bild und Verlauf“ angeben.
 
-   * **Erweitert:** Hier können Sie einem Objekt benutzerdefiniertes CSS hinzufügen, womit im Falle einer Überschneidung die durch visuelle Steuerelemente definierten Eigenschaften überschrieben werden.
+  * **Erweitert:** Hier können Sie einem Objekt benutzerdefiniertes CSS hinzufügen, womit im Falle einer Überschneidung die durch visuelle Steuerelemente definierten Eigenschaften überschrieben werden.
 
-   * **CSS anzeigen**: Ermöglicht das Anzeigen von CSS für die ausgewählte Komponente
+  * **CSS anzeigen**: Ermöglicht das Anzeigen von CSS für die ausgewählte Komponente
 
-  Zusätzlich befindet sich unten in der Seitenleiste ein Pfeil. Wenn Sie auf den Pfeil klicken, erhalten Sie zwei weitere Optionen: **Erfolg simulieren** und **Fehler simulieren.** Diese Optionen werden zusammen mit den oben beschriebenen Optionen im Detail ([) &#x200B;](../../forms/using/themes.md#using-rail).
+  Zusätzlich befindet sich unten in der Seitenleiste ein Pfeil. Wenn Sie auf den Pfeil klicken, erhalten Sie zwei weitere Optionen: **Erfolg simulieren** und **Fehler simulieren.** Diese Optionen werden zusammen mit den oben beschriebenen Optionen im Detail ([) ](../../forms/using/themes.md#using-rail).
 
 [![Design-Editor mit hervorgehobener Leiste und Arbeitsfläche.](assets/themes.png)](assets/themes-1.png) **a.** Seitenleiste **b.** Arbeitsfläche
 
@@ -261,8 +277,8 @@ Zu den standardmäßigen Bedienfeldern gehören:
 * Assistent
 * Layout für Mobilgeräte
 
-   * Bedienfeldnamen in der Kopfzeile
-   * Ohne Bedienfeldnamen in der Kopfzeile
+  * Bedienfeldnamen in der Kopfzeile
+  * Ohne Bedienfeldnamen in der Kopfzeile
 
 Die Selektoren variieren je nach Layout.
 Die Formatierung benutzerdefinierter Layouts im Design-Editor umfasst Folgendes:
@@ -342,7 +358,7 @@ Die Schaltflächen „Wiederholen“/„Rückgängig“ werden angezeigt, wenn S
 
 Mit dem Design-Editor können Sie ein Design bearbeiten, das Sie erstellt oder hochgeladen haben. Navigieren Sie zu **Formulare und Dokumente > Designs**, wählen Sie ein Design aus und öffnen Sie es. Das Design wird im Design-Editor geöffnet.
 
-Wie bereits erwähnt, verfügt der Design-Editor über zwei Bedienfelder: Seitenleiste und Arbeitsfläche.
+Wie bereits erwähnt, besteht der Design-Editor aus zwei Bereichen: Seitenleiste und Arbeitsfläche.
 ![theme-editor](assets/theme-editor.png)
 
 Anpassen der Gestaltung für den Erfolgsstatus der Komponente Widget „Textfeld“ im Design-Editor. Die Komponente wird auf der Arbeitsfläche ausgewählt und ihr Status wird in der Seitenleiste ausgewählt. Die in der Seitenleiste verfügbaren Stiloptionen werden verwendet, um das Erscheinungsbild einer Komponente anzupassen.
@@ -356,10 +372,10 @@ In der Symbolleiste der Arbeitsflächen sehen Sie Folgendes:
 * **Seitliches Bedienfeld ein/aus** ![Seitenleiste ein/aus](assets/toggle-side-panel.png): Hiermit können Sie die Seitenleiste ein- oder ausblenden.
 * **Themenoptionen** ![Themenoptionen](assets/theme-options.png): Bietet drei Optionen.
 
-   * Konfigurieren: Bietet Optionen zum Auswählen des Vorschauformulars oder der interaktiven Kommunikation, der Basis-Clientlib und der Adobe Fonts-Konfiguration.
-   * Design-CSS anzeigen: Erzeugt CSS für das ausgewählte Design.
-   * Stile verwalten: Bietet Optionen zum Verwalten von Text- und Bildstilen.
-   * Hilfe: Zeigt eine Einführung in den Design-Editor mit Abbildungen an.
+  * Konfigurieren: Bietet Optionen zum Auswählen des Vorschauformulars oder der interaktiven Kommunikation, der Basis-Clientlib und der Adobe Fonts-Konfiguration.
+  * Design-CSS anzeigen: Erzeugt CSS für das ausgewählte Design.
+  * Stile verwalten: Bietet Optionen zum Verwalten von Text- und Bildstilen.
+  * Hilfe: Zeigt eine Einführung in den Design-Editor mit Abbildungen an.
 
 * **Emulator** ![Lineal](assets/ruler.png): Emuliert das Erscheinungsbild des Designs für verschiedene Displaygrößen. Eine Displaygröße wird im Emulator als Haltepunkt behandelt. Sie können einen Breakpoint auswählen und einen Stil dafür festlegen. Zwei solche Haltepunkte sind beispielsweise „Desktop“ und „Tablet“. Sie können unterschiedliche Formate für jeden Haltepunkt angeben.
 
@@ -382,8 +398,8 @@ Komponenten-Symbolleiste auf dem numerischen Feld auf der Arbeitsfläche
 
 Die Seitenleiste im Design-Editor bietet Optionen zum Anpassen von Stilen für Komponenten in einem Design und zum Verwenden von Selektoren. Mit Selektoren können Sie eine Gruppe von Komponenten oder einzelne Komponenten auswählen und in der Seitenleiste nach Selektoren suchen. Sie können Selektoren für benutzerdefinierte Komponenten schreiben.
 
-Wenn Sie eine Komponente auf der Arbeitsfläche oder Selektoren in der Seitenleiste auswählen, zeigt die Seitenleiste alle Optionen an, mit denen Sie die zugehörigen Stile anpassen können.
-Im Folgenden finden Sie die Optionen, die bei der Auswahl einer Komponente in der Seitenleiste angezeigt werden:
+Wenn Sie eine Komponente auf der Arbeitsfläche oder Selektoren in der Seitenleiste auswählen, werden in der Seitenleiste alle Optionen angezeigt, mit denen Sie die zugehörigen Stile anpassen können.
+Im Folgenden sehen Sie die Optionen, die in der Seitenleiste angezeigt werden, wenn Sie eine Komponente auswählen:
 
 * Status
 * Eigenschaftenblatt
@@ -459,8 +475,8 @@ Führen Sie die folgenden Schritte aus, um die Formatierung für eine bestimmte 
    * **Feld-Widget** ![field-level](assets/field-level.png)
 
 1. Wählen Sie **Widget „Numerisches Feld“**.
-1. Der Titel der Seitenleiste ändert sich zu Widget „Numerisches Feld“ und zeigt Optionen zum Anpassen des Erscheinungsbilds an.
-Verwenden Sie die Option **Dimension und Position** in der Seitenleiste, um die Größe der Komponente anzupassen. Stellen Sie sicher, dass der Status **Standard** lautet.
+1. Der Titel der Seitenleiste ändert sich zu „Widget ‚Numerisches Feld‘“, und sie enthält die Optionen zum Anpassen des Erscheinungsbildes.
+Ändern Sie mit der Option **Abmessung und Position** in der Seitenleiste die Größe der Komponente. Stellen Sie sicher, dass der Status **Standard** lautet.
 
 Wählen Sie in der Komponenten-Symbolleiste statt **Widget „Numerisches Feld“** die Option **Widget „Feld“** und führen Sie die oben genannten Schritte durch. Wenn Sie Abmessungen für die Option **Widget „Feld“** auswählen, haben alle Textfelder mit Ausnahme des numerischen Felds die gleiche Größe.
 
@@ -470,8 +486,8 @@ Mit der Komponenten-Symbolleiste können Sie auch die Gestaltung von Komponenten
 
 Führen Sie die folgenden Schritte aus, um die Formatierung für eine Komponente mit einem bestimmten Status anzupassen:
 
-1. Wählen Sie eine Komponente auf der Arbeitsfläche aus und wählen Sie die entsprechende Option in der Komponenten-Symbolleiste aus.
-In der Seitenleiste werden Optionen zum Anpassen der Formatierung für die Komponente angezeigt.
+1. Wählen Sie eine Komponente auf der Arbeitsfläche aus und wählen Sie die entsprechende Option in der Komponenten-Symbolleiste.
+In der Seitenleiste werden die Optionen zum Anpassen der Formatierung für die Komponente angezeigt.
 1. Wählen Sie in der Seitenleiste einen Status aus. Beispielsweise den Status „Fehler“.
 1. Verwenden Sie Optionen wie **Rahmen, Hintergrund** in der Seitenleiste, um das Erscheinungsbild der Komponente anzupassen.
 1. Durch Auswahl der Option **Fehler simulieren** am unteren Rand der Seitenleiste können Sie während der Bearbeitung sehen, wie die Formatierung aussieht.
@@ -487,7 +503,7 @@ Verwenden Sie das Lineal auf der Arbeitsfläche, um Haltepunkte für Geräte mit
 So formatieren Sie Komponenten für verschiedene Haltepunkte:
 
 1. Wählen Sie auf der Arbeitsfläche einen Haltepunkt über dem Lineal aus.
-Ein Haltepunkt stellt ein Mobilgerät und dessen Displaygröße dar.
+Ein Haltepunkt steht für ein Mobilgerät und dessen Displaygröße.
 1. Verwenden Sie die Seitenleiste, um die Formatierung von Komponenten für Formulare oder die interaktive Kommunikation im Design entsprechend der ausgewählten Anzeigegröße anzupassen.
 1. Stellen Sie sicher, dass die Anpassung gespeichert wird.
 
@@ -641,27 +657,27 @@ Zum Anzeigen der generierten CSS-Datei stehen die folgenden Optionen zur Verfüg
 * Es können Probleme im aktuellen Design auftreten, wenn ein Asset aus einem anderen Design hinzugefügt und dieses andere Design später verschoben oder gelöscht wird. Wir empfehlen daher, keine Assets aus anderen Designs zu suchen und hinzuzufügen.
 * **Verwenden der Basis-Clientlib, des Design-Editors und der Inline-Formatierung**
 
-   * **Basis-Clientlib**:
+  * **Basis-Clientlib**:
 
-     Die Basis-Client-Bibliothek enthält Formatierungsinformationen. Um die Informationen zur Formatierung in Client-seitigen Bibliotheken in Designs zu verwenden.
+    Die Basis-Client-Bibliothek enthält Formatierungsinformationen. Um die Informationen zur Formatierung in Client-seitigen Bibliotheken in Designs zu verwenden.
 
-      1. Navigieren Sie zu **Experience Manager > Formulare > Designs**.
-      1. Wählen Sie in der Themenseite ein Thema aus und klicken Sie auf **Eigenschaften anzeigen**.
-      1. Klicken Sie auf der Seite „Eigenschaften“ auf **Erweitert**.
-      1. Wählen Sie auf der Registerkarte „Erweitert“ im Feld „Clientlib-Speicherort“ die Client-Bibliothek aus, die Sie verwenden möchten.
-      1. Klicken Sie auf **Speichern**.
+    1. Navigieren Sie zu **Experience Manager > Formulare > Designs**.
+    1. Wählen Sie in der Themenseite ein Thema aus und klicken Sie auf **Eigenschaften anzeigen**.
+    1. Klicken Sie auf der Seite „Eigenschaften“ auf **Erweitert**.
+    1. Wählen Sie auf der Registerkarte „Erweitert“ im Feld „Clientlib-Speicherort“ die Client-Bibliothek aus, die Sie verwenden möchten.
+    1. Klicken Sie auf **Speichern**.
 
-     Die Stile, die Sie in der Client-Bibliothek angeben, werden in das Design importiert, das sie verwendet. Sie können beispielsweise in der Client-Bibliothek Stile für Textfelder, numerische Felder und Umschalter angeben. Beim Importieren der Client-Bibliothek im Design wird die Formatierung für Textfeld, numerisches Feld und Umschalter importiert. Sie können dann andere Komponenten mithilfe des Design-Editors formatieren.
-Sie können auch ein Design erstellen, Kopien davon anfertigen und dann die in den kopierten Designs enthaltenen Stile für ähnliche Anwendungsfälle abändern.
-Siehe [Kreieren eines bestimmten Erscheinungsbildes mithilfe von Designs](#specific-af-appearance)
+    Die Formatierung, die Sie in der Client-Bibliothek angeben, wird in das Design importiert, das sie verwendet. Beispiel: Geben Sie die Formatierung für das Textfeld und das numerische Feld ein und wechseln Sie zur Client-Bibliothek. Wenn Sie die Client-Bibliothek in das Design importieren, wird die Formatierung für das Textfeld, das numerische Feld und den Umschalter importiert. Sie können dann andere Komponenten mithilfe des Design-Editors formatieren.
+    Sie können auch ein Design erstellen, Kopien davon anfertigen und dann die in den kopierten Designs enthaltenen Stile für ähnliche Anwendungsfälle abändern.
+    Siehe [Kreieren eines bestimmten Looks mithilfe von Designs](#specific-af-appearance)
 
-   * **Themen-Editor:**
+  * **Themen-Editor:**
 
-     Mit dem Design-Editor können Sie Designs erstellen, um ein Formular oder eine interaktive Kommunikation zu gestalten. Sie können auch die Gestaltung von Komponenten in einem Design festlegen, die die Konsistenz von Looks in mehreren Formularen oder interaktiven Kommunikationen, die Sie gestalten, gewährleisten. Es wird empfohlen, Formatierungsinformationen in einem Design anzugeben und dann das Design auf ein Formular anzuwenden.
+    Mit dem Design-Editor können Sie Designs erstellen, um ein Formular oder eine interaktive Kommunikation zu gestalten. Sie können auch die Gestaltung von Komponenten in einem Design festlegen, die die Konsistenz von Looks in mehreren Formularen oder interaktiven Kommunikationen, die Sie gestalten, gewährleisten. Es wird empfohlen, Formatierungsinformationen in einem Design anzugeben und dann das Design auf ein Formular anzuwenden.
 
-   * **Inline-Stil**:
+  * **Inline-Stil**:
 
-     Sie können Komponenten mithilfe des Formatierungsmodus im Multikanal-Editor für das Formular oder die interaktive Kommunikation gestalten, wenn Sie mit einem Formular arbeiten. Wenn der Formatierungsmodus verwendet wird, um die Formularkomponentenformatierung zu ändern, wird die Formatierung, die im Design angegeben ist, überschrieben. Wenn Sie Formatierungen für bestimmte Komponenten eines bestimmten Formulars ändern möchten, finden Sie weitere Informationen dazu unter [Inline-Formatierung von Komponenten](../../forms/using/inline-style-adaptive-forms.md).
+    Sie können Komponenten mithilfe des Formatierungsmodus im Multikanal-Editor für das Formular oder die interaktive Kommunikation gestalten, wenn Sie mit einem Formular arbeiten. Wenn der Formatierungsmodus verwendet wird, um die Formularkomponentenformatierung zu ändern, wird die Formatierung, die im Design angegeben ist, überschrieben. Wenn Sie Formatierungen für bestimmte Komponenten eines bestimmten Formulars ändern möchten, finden Sie weitere Informationen dazu unter [Inline-Formatierung von Komponenten](../../forms/using/inline-style-adaptive-forms.md).
 
 * **Verwenden Client-seitiger Bibliotheken**
 
@@ -673,5 +689,5 @@ Siehe [Kreieren eines bestimmten Erscheinungsbildes mithilfe von Designs](#speci
 
 * **Verwendung des Formular- oder Design-Editors für die Arbeit mit Kopf- und Fußzeile**
 
-  Verwenden Sie den Design-Editor, wenn Sie Kopf- und Fußzeilen mit Stiloptionen wie Schriftschnitt, Hintergrund und Transparenz formatieren möchten.
-Wenn Sie Informationen wie ein Logobild, einen Firmennamen in der Kopfzeile und Copyright-Informationen in der Fußzeile angeben möchten, verwenden Sie die Optionen des Formular-Editors.
+  Verwenden Sie den Design-Editor, wenn Sie Kopf- und Fußzeilen mit Formatierungsoptionen wie Schriftschnitt, Hintergrund und Transparenz formatieren möchten.
+  Wenn Sie Informationen wie ein Logo, einen Firmennamen in der Kopfzeile und Copyright-Informationen in der Fußzeile angeben möchten, verwenden Sie dazu die im Formular-Editor verfügbaren Optionen.

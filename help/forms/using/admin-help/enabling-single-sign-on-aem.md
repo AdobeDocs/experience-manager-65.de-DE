@@ -9,13 +9,29 @@ exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1740'
 ht-degree: 94%
-
 ---
-
 # Aktivieren der einmaligen Anmeldung in AEM Forms{#enabling-single-sign-on-in-aem-forms}
 
 >[!NOTE]
@@ -84,13 +100,13 @@ Sie können SSO auch über HTTP-Header aktivieren. (Siehe [Aktivieren von SSO mi
    * Hinzufügen von LDAP als Authentifizierungsanbieter.
    * Fügen Sie Kerberos als Authentifizierungsanbieter hinzu. Geben Sie auf der Seite „Neu“ oder „Authentifizierung bearbeiten“ für Kerberos die folgenden Informationen ein:
 
-      * **Authentifizierungsanbieter:** Kerberos
-      * **DNS-IP**: Die DNS-IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird. Sie können diese IP-Adresse bestimmen, indem Sie `ipconfig/all` in die Befehlszeile eingeben.
-      * **KDC-Host:** Der voll qualifizierte Hostname bzw. die IP-Adresse des für die Authentifizierung verwendeten Active Directory-Servers.
-      * **Dienstbenutzer:** Der an das Tool KtPass übergebene Dienstprinzipalname. In dem zuvor verwendeten Beispiel ist der Dienstbenutzer `HTTP/lcserver.um.lc.com`.
-      * **Dienstbereich:** Der Domanin-Name für Active Directory. In dem zuvor verwendeten Beispiel ist der Domain-Name `UM.LC.COM.`
-      * **Dienstkennwort:** Das Kennwort des Dienstbenutzers. In dem zuvor verwendeten Beispiel ist das Dienstkennwort `password`.
-      * **SPNEGO aktivieren:** Aktiviert die Verwendung von SPNEGO für die einmalige Anmeldung (SSO). Wählen Sie diese Option aus.
+     * **Authentifizierungsanbieter:** Kerberos
+     * **DNS-IP**: Die DNS-IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird. Sie können diese IP-Adresse bestimmen, indem Sie `ipconfig/all` in die Befehlszeile eingeben.
+     * **KDC-Host:** Der voll qualifizierte Hostname bzw. die IP-Adresse des für die Authentifizierung verwendeten Active Directory-Servers.
+     * **Dienstbenutzer:** Der an das Tool KtPass übergebene Dienstprinzipalname. In dem zuvor verwendeten Beispiel ist der Dienstbenutzer `HTTP/lcserver.um.lc.com`.
+     * **Dienstbereich:** Der Domanin-Name für Active Directory. In dem zuvor verwendeten Beispiel ist der Domain-Name `UM.LC.COM.`
+     * **Dienstkennwort:** Das Kennwort des Dienstbenutzers. In dem zuvor verwendeten Beispiel ist das Dienstkennwort `password`.
+     * **SPNEGO aktivieren:** Aktiviert die Verwendung von SPNEGO für die einmalige Anmeldung (SSO). Wählen Sie diese Option aus.
 
 1. Konfigurieren Sie die SPNEGO-Client-Browser-Einstellungen. (Siehe [Konfigurieren der SPNEGO-Client-Browser-Einstellungen](enabling-single-sign-on-aem.md#configuring-spnego-client-browser-settings).)
 
@@ -186,7 +202,7 @@ Klicken Sie, um die Schritte zum [Zuweisen von Rollen zu Benutzenden und Gruppen
 
 1. Melden Sie sich bei Ihrer AEM Forms auf JEE-Umgebung an.
 1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Benutzerverwaltung“ > „Domain-Verwaltung“.
-1. Wählen Sie Ihre Domain-Konfiguration aus, z. B. LDAP, und klicken Sie darauf. Alle erstellten Benutzer und Gruppen befinden sich im Verzeichnis . Bei Bedarf können Sie neue Benutzende oder Gruppen erstellen.
+1. Wählen Sie Ihre Domain-Konfiguration aus, z. B. LDAP, und klicken Sie darauf. Sie finden alle erstellten Benutzenden und Gruppen im Verzeichnis. Bei Bedarf können Sie neue Benutzende oder Gruppen erstellen.
    ![Seite zur Domain-Verwaltung](/help/forms/using/assets/domain-mgmt-page.png)
 1. Klicken Sie auf „Authentifizierung“. Wählen Sie auf der neuen Seite einen Authentifizierungsanbieter aus, z. B. LDAP.
 1. Navigieren Sie zur Seite „Domain-Verwaltung“, wählen Sie „LDAP“ und klicken Sie auf **Jetzt synchronisieren**, um das Verzeichnis mit dem konfigurierten Authentifizierungsschema für den AEM-Zugriff zu synchronisieren.

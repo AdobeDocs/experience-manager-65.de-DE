@@ -9,13 +9,20 @@ role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 3%
-
+source-wordcount: '969'
+ht-degree: 2%
 ---
-
 
 # Mitglieder- und Gruppenverwaltungskonsolen {#members-groups-management-consoles}
 
@@ -118,19 +125,19 @@ Wenn die ID standardmäßig auf die E-Mail-Adresse festgelegt ist, ändert *ID*,
 Unter Kontoeinstellungen ist es für einen Community-Administrator möglich:
 
 * **[!UICONTROL Status]**
-   * Verboten
-Ein Mitglied kann sich nicht anmelden und kann daher keine Seiten anzeigen oder an Aktivitäten teilnehmen, für die eine Anmeldung erforderlich ist. Sie können weiterhin anonym eine offene Community-Site besuchen.
+  * Verboten
+    Ein Mitglied kann sich nicht anmelden und kann daher keine Seiten anzeigen oder an Aktivitäten teilnehmen, für die eine Anmeldung erforderlich ist. Sie können weiterhin anonym eine offene Community-Site besuchen.
 
-   * Nicht verboten
-Ein Mitglied hat vollen Zugriff auf die Community-Site.
+  * Nicht verboten
+    Ein Mitglied hat vollen Zugriff auf die Community-Site.
 
   Der Standardwert ist `Not Banned`.
 
 * **[!UICONTROL Beitragsbeschränkungen]**
 
   Wenn diese Option aktiviert ist, ist die Möglichkeit des Nutzers, Inhalte zu posten, begrenzt.
-Der Standardwert hängt von der Konfiguration der Beitragsbeschränkungen ab.
-Siehe [Obergrenze für Mitgliedsbeiträge](limits.md).
+  Der Standardwert hängt von der Konfiguration der Beitragsbeschränkungen ab.
+  Siehe [Obergrenze für Mitgliedsbeiträge](limits.md).
 
 * **[!UICONTROL Kennwort ändern]**
 
@@ -157,10 +164,10 @@ Siehe auch [Bewertung und Abzeichen](implementing-scoring.md).
 ![Das Fenster Mitgliedschaftseinstellungen bearbeiten](assets/create-member2.png)
 
 * **[!UICONTROL Abzeichen hinzufügen]**
-   * Beginnen Sie mit der Eingabe und wählen Sie aus [verfügbaren Abzeichen](badges.md) aus. Nachdem ein Abzeichen ausgewählt wurde, wählen Sie jede Website oder alle Websites aus, auf denen das Abzeichen zusammen mit dem Avatar des Mitglieds angezeigt werden soll.
-   * Es können mehrere Abzeichen und Websites ausgewählt werden.
+  * Beginnen Sie mit der Eingabe und wählen Sie aus [verfügbaren Abzeichen](badges.md) aus. Nachdem ein Abzeichen ausgewählt wurde, wählen Sie jede Website oder alle Websites aus, auf denen das Abzeichen zusammen mit dem Avatar des Mitglieds angezeigt werden soll.
+  * Es können mehrere Abzeichen und Websites ausgewählt werden.
 * **[!UICONTROL Abzeichen entfernen]**
-   * Wählen Sie das Papierkorbsymbol neben einem Badge aus, um es zu entfernen.
+  * Wählen Sie das Papierkorbsymbol neben einem Badge aus, um es zu entfernen.
 
 ## Gruppen-Konsole {#groups-console}
 

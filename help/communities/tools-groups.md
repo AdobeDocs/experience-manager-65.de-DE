@@ -10,7 +10,16 @@ role: Admin
 exl-id: aed2c3f2-1b5e-4065-8cec-433abb738ef5
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 2%
@@ -75,7 +84,7 @@ Im Bereich Basic Info werden ein Name, eine Beschreibung und Angaben dazu konfig
 >
 >Wenn Sie mit AEM 6.1 Communities FP4 oder früher arbeiten, fügen Sie keiner Gruppenvorlage eine Gruppenfunktion hinzu.
 >
->Die Funktion für verschachtelte Gruppen ist ab Communities (FP1[&#x200B; verfügbar](/help/communities/communities.md#latestfeaturepack).
+>Die Funktion für verschachtelte Gruppen ist ab Communities (FP1[ verfügbar](/help/communities/communities.md#latestfeaturepack).
 >
 >Es ist weiterhin nicht zulässig, eine Gruppenfunktion als erste oder einzige Funktion in einer Vorlage hinzuzufügen.
 
@@ -95,6 +104,6 @@ Nachdem alle gewünschten Funktionen im Bereich des Vorlagen-Builders abgelegt u
 
 Wenn Sie Community-Gruppen in der Hauptkonsole [Gruppenvorlagen](#group-templates-console) anzeigen, können Sie eine vorhandene Gruppenvorlage zur Bearbeitung auswählen.
 
-Das Bearbeiten einer Gruppenvorlage hat keine Auswirkungen auf Community-Sites, die bereits anhand der Vorlage erstellt wurden. Stattdessen kann die Struktur einer Community[Site direkt bearbeitet &#x200B;](/help/communities/sites-console.md#modify-structure).
+Das Bearbeiten einer Gruppenvorlage hat keine Auswirkungen auf Community-Sites, die bereits anhand der Vorlage erstellt wurden. Stattdessen kann die Struktur einer Community[Site direkt bearbeitet ](/help/communities/sites-console.md#modify-structure).
 
-Dieser Prozess bietet dieselben Bedienfelder wie [Erstellen einer &#x200B;](#create-group-template)).
+Dieser Prozess bietet dieselben Bedienfelder wie [Erstellen einer ](#create-group-template)).

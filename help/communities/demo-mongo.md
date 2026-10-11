@@ -9,13 +9,20 @@ role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '802'
 ht-degree: 1%
-
 ---
-
 # Einrichten von MongoDB für Demo {#how-to-setup-mongodb-for-demo}
 
 ## Einführung {#introduction}
@@ -38,25 +45,25 @@ Diese Konfiguration eignet sich für *produktionsfremde) Umgebungen* z. B. für 
 
 * MongoDB von [https://www.mongodb.com/ herunterladen](https://www.mongodb.com/)
 
-   * Wahl des Betriebssystems:
+  * Wahl des Betriebssystems:
 
-      * Linux®
-      * Mac 10.8
-      * Windows 7
+    * Linux®
+    * Mac 10.8
+    * Windows 7
 
-   * Auswahl der Version:
+  * Auswahl der Version:
 
-      * Verwenden Sie mindestens Version 2.6
+    * Verwenden Sie mindestens Version 2.6
 
 * Standardkonfiguration
 
-   * Befolgen Sie die MongoDB-Installationsanweisungen.
-   * Für mongod konfigurieren:
+  * Befolgen Sie die MongoDB-Installationsanweisungen.
+  * Für mongod konfigurieren:
 
-      * Keine Notwendigkeit, Mongos oder Sharing zu konfigurieren.
+    * Keine Notwendigkeit, Mongos oder Sharing zu konfigurieren.
 
-   * Der installierte MongoDB-Ordner heißt &lt;mongo-install>.
-   * Der definierte Datenordnerpfad heißt &lt;mongo-dbpath>.
+  * Der installierte MongoDB-Ordner heißt &lt;mongo-install>.
+  * Der definierte Datenordnerpfad heißt &lt;mongo-dbpath>.
 
 * MongoDB kann auf demselben Host wie AEM oder remote ausgeführt werden.
 
@@ -79,16 +86,16 @@ Die folgenden Befehle sind ein Beispiel für das Einrichten eines Replikationssa
 * `bin/mongod --port 27017 --dbpath data --replSet rs0&`
 * `bin/mongo`
 
-   * `cfg = {"_id": "rs0","version": 1,"members": [{"_id": 0,"host": "127.0.0.1:27017"}]}`
-   * `rs.initiate(cfg)`
+  * `cfg = {"_id": "rs0","version": 1,"members": [{"_id": 0,"host": "127.0.0.1:27017"}]}`
+  * `rs.initiate(cfg)`
 
 * `bin/mongod --port 27018 --dbpath data1 --replSet rs0&`
 * `bin/mongod --port 27019 --dbpath data2 --replSet rs0&`
 * `bin/mongo`
 
-   * `rs.add("127.0.0.1:27018")`
-   * `rs.add("127.0.0.1:27019")`
-   * `rs.status()`
+  * `rs.add("127.0.0.1:27018")`
+  * `rs.add("127.0.0.1:27019")`
+  * `rs.status()`
 
 ## Solr {#solr}
 
@@ -96,15 +103,15 @@ Die folgenden Befehle sind ein Beispiel für das Einrichten eines Replikationssa
 
 * Laden Sie Solr von [Apache Lucene](https://archive.apache.org/dist/lucene/solr/) herunter:
 
-   * Geeignet für jedes Betriebssystem.
-   * Solr-Version 7.0.
-   * Solr erfordert Java™ 1.7 oder höher.
+  * Geeignet für jedes Betriebssystem.
+  * Solr-Version 7.0.
+  * Solr erfordert Java™ 1.7 oder höher.
 
 * Standardkonfiguration
 
-   * Solr-Einrichtung &#39;example&#39; befolgen.
-   * Es ist kein Service erforderlich.
-   * Der installierte Solr-Ordner heißt &lt;solr-install>.
+  * Solr-Einrichtung &#39;example&#39; befolgen.
+  * Es ist kein Service erforderlich.
+  * Der installierte Solr-Ordner heißt &lt;solr-install>.
 
 ### Konfigurieren von Solr für AEM Communities {#configure-solr-for-aem-communities}
 
@@ -115,7 +122,7 @@ Um eine Solr-Sammlung für MSRP für die Demo zu konfigurieren, müssen zwei Ent
 
 ### Eigenständiges Solr {#standalone-solr}
 
-Die Methode zum Ausführen von Solr kann je nach Version und Installationsart unterschiedlich sein. Die [&#x200B; Dokumentation &#x200B;](https://archive.apache.org/dist/lucene/solr/ref-guide/) das Solr-Referenzhandbuch.
+Die Methode zum Ausführen von Solr kann je nach Version und Installationsart unterschiedlich sein. Die [ Dokumentation ](https://archive.apache.org/dist/lucene/solr/ref-guide/) das Solr-Referenzhandbuch.
 
 Um das Beispiel zu vereinfachen, starten Sie Solr mit Version 4.10 im eigenständigen Modus:
 
@@ -183,7 +190,7 @@ Um den gemeinsamen Speicher von MongoDB zu testen und zu überprüfen, posten Si
 
 1. Stellen Sie sicher, dass MSRP als Standardanbieter konfiguriert wurde:
 
-   * Rufen Sie auf allen AEM-Autoren- und Veröffentlichungsinstanzen die [Speicherkonfigurationskonsole“ erneut &#x200B;](srp-config.md) oder überprüfen Sie das AEM-Repository:
+   * Rufen Sie auf allen AEM-Autoren- und Veröffentlichungsinstanzen die [Speicherkonfigurationskonsole“ erneut ](srp-config.md) oder überprüfen Sie das AEM-Repository:
 
    * Wenn [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) im JCR keinen &quot;[&quot;-](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) enthält, bedeutet dies, dass der Speicheranbieter JSRP ist.
    * Wenn der srpc-Knoten vorhanden ist und den Knoten [defaultConfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration) enthält, sollten die Eigenschaften der defaultConfiguration festlegen, dass MSRP der Standardanbieter ist.

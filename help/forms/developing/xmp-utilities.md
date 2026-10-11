@@ -9,13 +9,29 @@ role: Developer
 exl-id: cff65f74-ba95-438e-88a4-5ec7d22aafba
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1401'
 ht-degree: 100%
-
 ---
-
 # Arbeiten mit XMP Utilities {#working-with-xmp-utilities}
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
@@ -124,7 +140,7 @@ Gehen Sie wie folgt vor, um XMP Metadaten in ein PDF-Dokument zu importieren:
 1. Erstellen Sie einen XMPUtilityService-Client.
 1. Rufen Sie den Importvorgang für XMP-Metadaten auf.
 
-**Schließen Sie Projektdateien ein**
+**Einschließen von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -171,7 +187,7 @@ Importieren Sie XMP-Metadaten mithilfe der XMP Utilities-API (Java):
    * Ein `com.adobe.idp.Document`-Objekt, das die PDF-Datei darstellt.
    * Ein `XMPUtilityMetadata`-Objekt, das die zu importierenden Metadaten enthält.
 
-   Wenn Sie die `importXMP`-Methode verwenden, geben Sie die folgenden Werte ein:
+   Wenn Sie `importXMP`-Methode verwenden, geben Sie die folgenden Werte ein:
 
    * Ein `com.adobe.idp.Document`-Objekt, das die PDF-Datei darstellt.
    * Ein `com.adobe.idp.Document`-Objekt, das eine XML-Datei mit den zu importierenden Metadaten darstellt.
@@ -192,7 +208,7 @@ Führen Sie die folgenden Aufgaben aus, um XMP-Metadaten mithilfe der XMP-Utilit
 
 1. Projektdateien einschließen
 
-   * Erstellen Sie eine Microsoft .NET-Client-Assembly, die die WSDL-Datei des XMP Utilities-Services verwendet. (Siehe [Aufrufen von AEM Forms mithilfe von Base64-Codierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+   * Erstellen Sie eine Microsoft .NET-Client-Zusammenführung, bei der die WSDL-Datei des XMP Utilities-Dienstes verwendet wird. (Siehe [Aufrufen von AEM Forms mithilfe von Base64-Codierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
    * Referenzieren Sie die Microsoft .NET-Client-Assembly. (Siehe [Erstellen einer .NET-Client-Assembly, die die Base64-Codierung verwendet](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding).)
 
 1. Erstellen Sie einen XMP-Utilities-Dienst-Clienten
@@ -208,7 +224,7 @@ Führen Sie die folgenden Aufgaben aus, um XMP-Metadaten mithilfe der XMP-Utilit
    * Ein `BLOB`-Objekt, das die PDF-Datei darstellt.
    * Ein `XMPUtilityMetadata`-Objekt, das die zu importierenden Metadaten enthält.
 
-   Wenn Sie die `importXMP`-Methode verwenden, geben Sie die folgenden Werte ein:
+   Wenn Sie `importXMP`-Methode verwenden, geben Sie die folgenden Werte ein:
 
    * Ein `BLOB`-Objekt, das die PDF-Datei darstellt.
    * Ein `BLOB`-Objekt, das eine XML-Datei mit den zu importierenden Metadaten darstellt.

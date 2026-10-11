@@ -1,24 +1,38 @@
 ---
 title: Konfigurieren des Asset-Tagging mit dem Smart Content Service
-description: Erfahren Sie, wie Sie in  [!DNL Adobe Experience Manager] Smart-Tagging und optimierte Smart-Tags mit dem Smart Content Service konfigurieren.
+description: Erfahren Sie, wie Sie in [!DNL Adobe Experience Manager] Smart-Tagging und optimierte Smart-Tags mit dem Smart Content Service konfigurieren.
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9caee314-697b-4a7b-b991-10352da17f2c
-source-git-commit: ab9292c491cc9dfcd8f239ba279b1e0ae6d1560f
-workflow-type: ht
-source-wordcount: '1089'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 96%
 ---
-
 # Fehlerbehebung für Smart-Tags hinsichtlich OAuth-Anmeldedaten {#oauth-config}
 
 Eine offene Autorisierungskonfiguration ist erforderlich, um die Zustimmung dafür zu erhalten, dass die Anwendung [!DNL Adobe Experience Manager] auf sichere Weise mit Smart Content Services interagiert.
 
 >[!NOTE]
 >
-> Sie können seit Juni 2024 keine neuen JWT-Anmeldedaten mehr erstellen. Von nun an werden nur noch OAuth-Anmeldedaten erstellt. 
+> Sie können seit Juni 2024 keine neuen JWT-Anmeldedaten mehr erstellen. Von nun an werden nur noch OAuth-Anmeldedaten erstellt.
 > Die JWT-Integration bleibt nur für bestehende AMS- und On-Premise-Benutzende noch bis Januar 2025 im Betrieb.
 
 ## OAuth-Konfiguration für die neuen AMS-Benutzenden {#oauth-config-existing-ams-users}
@@ -27,7 +41,7 @@ Informationen zur Konfiguration von OAuth-Diensten für neue Benutzende finden S
 
 >[!NOTE]
 >
->Bei Bedarf können Sie ein Support-Ticket einreichen, indem Sie dem [Support-Prozess](https://experienceleague.adobe.com/de?lang=de&amp;support-tab=home#support) folgen.
+>Bei Bedarf können Sie ein Support-Ticket einreichen, indem Sie dem [Support-Prozess](https://experienceleague.adobe.com/?lang=de&support-tab=home#support) folgen.
 
 ## OAuth-Konfiguration für die vorhandenen AMS-Benutzenden {#oauth-config-new-ams-users}
 
@@ -39,12 +53,12 @@ Eine OAuth-Konfiguration erfordert die folgenden Voraussetzungen:
 
 * Erstellen Sie in der [Developer Console](https://developer.adobe.com/console/user/servicesandapis) eine neue OAuth-Integration. Verwenden Sie die Eigenschaften `ClientID`, `ClientSecret`, `OrgID` und andere in den folgenden Schritten:
 * Die folgenden Dateien befinden sich unter diesem Pfad `/apps/system/config in crx/de`:
-   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
-   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+  * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+  * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### OAuth-Konfiguration für die vorhandenen AMS- und On-Premise-Benutzenden {#steps-config-oauth-onprem}
 
-Die folgenden Schritte können von Systemadmins in **CRXDE** ausgeführt werden. AMS-Kundschaft kann sich an den Adobe-Support wenden oder ein Support-Ticket einreichen, indem der [Support-Prozess](https://experienceleague.adobe.com/de?lang=de&amp;support-tab=home#support) befolgt wird.
+Die folgenden Schritte können von Systemadmins in **CRXDE** ausgeführt werden. AMS-Kundschaft kann sich an den Adobe-Support wenden oder ein Support-Ticket einreichen, indem der [Support-Prozess](https://experienceleague.adobe.com/?lang=de&support-tab=home#support) befolgt wird.
 
 1. Fügen Sie in `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config` die folgenden Eigenschaften hinzu oder aktualisieren Sie sie:
 
@@ -59,7 +73,7 @@ Die folgenden Schritte können von Systemadmins in **CRXDE** ausgeführt werden.
 
    >[!IMPORTANT]
    >
-   >Ersetzen Sie den Punkt (.) durch einen Bindestrich (-) als Präfix für `<randomnumber>`.
+   >Punkt ersetzen (.) mit Bindestrich (-) als Präfix für `<randomnumber>`.
 
 1. Führen Sie in `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config` die folgenden Schritte aus:
    * Aktualisieren Sie die Eigenschaft „auth.ims.client.secret“ mit dem Client-Geheimnis aus der neuen OAuth-Integration.
@@ -112,7 +126,7 @@ Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profi
 
 1. Greifen Sie in der [!DNL Experience Manager]-Benutzeroberfläche auf **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Ältere Cloud Services]** zu.
 
-1. Klicken Sie auf der Seite „Cloud Services“ unter **[!UICONTROL Assets Smart Tags]** auf **[!UICONTROL Jetzt konfigurieren]**.
+1. Klicken Sie auf der Seite „Cloud Services“ unter **[!UICONTROL Smart-Tags für Assets]** auf **[!UICONTROL Jetzt konfigurieren]**.
 
 1. Geben Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen Titel und einen Namen für die Smart-Tags-Konfiguration ein. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
@@ -137,7 +151,7 @@ Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profi
 
    >[!NOTE]
    >
-   >Die als [!UICONTROL Service-URL] angegebene URL ist über den Browser nicht erreichbar und erzeugt einen 404-Fehler. Die Konfiguration funktioniert problemlos mit demselben Wert für den [!UICONTROL Service-URL]-Parameter. Informationen zum Gesamtstatus und Wartungszeitplan für den Service finden Sie unter [https://status.adobe.com/de-de](https://status.adobe.com/de-de).
+   >Die als [!UICONTROL Service-URL] angegebene URL ist über den Browser nicht erreichbar und erzeugt einen 404-Fehler. Die Konfiguration funktioniert problemlos mit demselben Wert für den [!UICONTROL Service-URL]-Parameter. Informationen zum Gesamtstatus und Wartungszeitplan für den Service finden Sie unter [https://status.adobe.com](https://status.adobe.com).
 
 1. Klicken Sie auf **[!UICONTROL Öffentliches Zertifikat für OAuth-Integration herunterladen]** und laden Sie die öffentliche Zertifikatdatei `AEM-SmartTags.crt` herunter. Außerdem müssen Sie dieses Zertifikat nicht mehr in die Adobe Developer Console hochladen.
 
@@ -147,7 +161,7 @@ Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profi
 
 ## Erstellen einer Integration in der Adobe Developer Console {#create-adobe-i-o-integration}
 
-Um die Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration in der Adobe Developer Console, um den [!UICONTROL API-Schlüssel] (der im Feld [!UICONTROL CLIENT-ID] der Adobe Developer Console-Integration generiert wird), die [!UICONTROL ID DES TECHNISCHEN KONTOS], die [!UICONTROL ORGANISATIONS-ID] und das [!UICONTROL CLIENT-GEHEIMNIS] für die [!UICONTROL Smart Tagging Service-Einstellungen für Assets] der Cloud-Konfiguration in [!DNL Experience Manager].
+Um die Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration in der Adobe Developer Console, um den [!UICONTROL API-Schlüssel] (der im Feld [!UICONTROL CLIENT-ID] der Adobe Developer Console-Integration generiert wird), die [!UICONTROL ID DES TECHNISCHEN KONTOS], die [!UICONTROL ORGANISATIONS-ID] und das [!UICONTROL CLIENT-GEHEIMNIS] für die [!UICONTROL Smart-Tagging-Service-Einstellungen für Assets] der Cloud-Konfiguration in [!DNL Experience Manager].
 
 1. Rufen Sie [https://developer.adobe.com/console/](https://developer.adobe.com/console/) in einem Browser auf. Wählen Sie das entsprechende Konto aus und vergewissern Sie sich, dass die zugehörige Organisationsrolle „Systemadministrator“ ist.
 
@@ -171,8 +185,8 @@ Um die Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration i
    *Figure: Details of integration in Adobe Developer Console*
 -->
 
-![oauth config](assets/oauth-config.png)
-*Abbildung: OAuth-Server-zu-Server konfiguriert in Adobe Developer Console*
+![OAuth-Konfiguration](assets/oauth-config.png)
+*Abbildung: Konfigurierte OAuth-Server-zu-Server in Adobe Developer Console*
 
 ## Konfigurieren des Smart Content Service {#configure-smart-content-service}
 

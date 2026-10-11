@@ -9,7 +9,16 @@ role: Admin
 exl-id: 36f2e3d2-46c7-48a8-a1e9-213f581bd9f3
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
@@ -26,7 +35,7 @@ Die Konsolen von AEM Communities, die in der Autorenumgebung über das globale N
 * Erstellen [benutzerdefinierte Abzeichen](badges.md)
 * Konfigurieren des [Standardspeichers für benutzergenerierten Inhalt](srp-config.md)
 
-Wenn [UGC-Speicher](working-with-srp.md) als gemeinsamer Speicher für Autoren- und Veröffentlichungsumgebungen konfiguriert ist, [&#128279;](moderation.md) die Moderationskonsole in Autoren- und Veröffentlichungsumgebungen auf einer einzelnen Instanz von UGC.
+Wenn [UGC-Speicher](working-with-srp.md) als gemeinsamer Speicher für Autoren- und Veröffentlichungsumgebungen konfiguriert ist, ](moderation.md) die [Moderationskonsole in Autoren- und Veröffentlichungsumgebungen auf einer einzelnen Instanz von UGC.
 
 In der Autorenumgebung sind die `Communities` Konsolen nach der Anmeldung mit Administratorrechten über die Konsolen Navigation und Tools verfügbar.
 
@@ -49,7 +58,7 @@ Um auf die verschiedenen Communities-Konsolen zuzugreifen, wählen Sie in der gl
 
 * [Sites](sites-console.md)
 
-  Auf die Sites-Konsole kann in der Autorenumgebung zugegriffen werden, um Community-Sites und deren [&#x200B; zu erstellen und zu &#x200B;](groups.md).
+  Auf die Sites-Konsole kann in der Autorenumgebung zugegriffen werden, um Community-Sites und deren [ zu erstellen und zu ](groups.md).
 
 * [Moderation](moderation.md)
 
@@ -65,4 +74,4 @@ Um auf die verschiedenen Communities-Konsolen zuzugreifen, wählen Sie in der gl
 
 ## Tools-Konsole {#tools-console}
 
-So greifen Sie über [&#x200B; globale Navigation auf &#x200B;](tools.md)Communities-Tools“ (früher die Administration-Console) zu: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**
+So greifen Sie über [ globale Navigation auf ](tools.md)Communities-Tools“ (früher die Administration-Console) zu: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**

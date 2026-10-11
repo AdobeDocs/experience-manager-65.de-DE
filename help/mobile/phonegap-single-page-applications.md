@@ -9,26 +9,30 @@ exl-id: daf7bf39-a105-46eb-ab7b-1c59484949e2
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '997'
 ht-degree: 0%
-
 ---
-
 # Single Page Applications (SPA){#single-page-applications}
 
 {{ue-over-mobile}}
 
-[Single Page Applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA) haben eine kritische Masse erreicht und gelten weithin als das effektivste Muster für die Erstellung nahtloser Erlebnisse mit Web-Technologie. Wenn Sie einem SPA-Muster folgen, können Sie eine Anwendung erstellen, die mit einer Desktop- oder mobilen Anwendung identisch ist, aber aufgrund ihrer Grundlage in offenen Webstandards eine Vielzahl von Geräteplattformen und Formfaktoren erreicht.
+[Single Page Applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA) haben eine kritische Masse erreicht und gelten weithin als das effektivste Muster zum Erstellen nahtloser Erlebnisse mit Web-Technologie. Wenn Sie einem SPA-Muster folgen, können Sie eine Anwendung erstellen, die mit einer Desktop- oder mobilen Anwendung identisch ist, aber aufgrund ihrer Grundlage in offenen Web-Standards eine Vielzahl von Geräteplattformen und Formfaktoren erreicht.
 
-Im Allgemeinen scheinen SPA leistungsfähiger als herkömmliche seitenbasierte Websites zu sein, da sie normalerweise eine vollständige HTML-Seite **nur einmal** laden (einschließlich CSS, JS und unterstützender Schriftartinhalte) und dann nur genau das laden, was bei jeder Änderung des Status in der App erforderlich ist. Was für diese Statusänderung erforderlich ist, kann je nach ausgewählter Technologie variieren, enthält jedoch in der Regel ein einziges HTML-Fragment, um die vorhandene „Ansicht“ zu ersetzen, und die Ausführung eines JS-Codeblocks, um die neue Ansicht zu verkabeln und ggf. ein Client-seitiges Vorlagenrendering durchzuführen. Die Geschwindigkeit dieser Statusänderung kann noch weiter verbessert werden, indem Vorlagen-Caching-Mechanismen unterstützt werden oder sogar der Offline-Zugriff auf Vorlageninhalte, wenn Adobe PhoneGap verwendet wird.
+Im Allgemeinen scheinen SPAs leistungsfähiger als herkömmliche seitenbasierte Websites zu sein, da sie normalerweise eine vollständige HTML-Seite **nur einmal** laden (einschließlich CSS, JS und unterstützender Schriftartinhalte) und dann nur genau das laden, was bei jeder Statusänderung in der App erforderlich ist. Was für diese Statusänderung erforderlich ist, kann je nach ausgewählter Technologie variieren, enthält jedoch in der Regel ein einziges HTML-Fragment, um die vorhandene „Ansicht“ zu ersetzen, und die Ausführung eines JS-Codeblocks, um die neue Ansicht zu verkabeln und ggf. ein Client-seitiges Vorlagenrendering durchzuführen. Die Geschwindigkeit dieser Statusänderung kann noch weiter verbessert werden, indem Vorlagen-Caching-Mechanismen unterstützt werden oder sogar der Offline-Zugriff auf Vorlageninhalte, wenn Adobe PhoneGap verwendet wird.
 
-AEM 6.1 unterstützt die Erstellung und Verwaltung von SPA über AEM Apps. Dieser Artikel bietet eine Einführung in die Konzepte hinter der SPA und deren Verwendung von [AngularJS](https://angularjs.org/), um Ihre Marke in App Store und Google Play zu integrieren.
+AEM 6.1 unterstützt die Erstellung und Verwaltung von SPAs über AEM Apps. Dieser Artikel bietet eine Einführung in die Konzepte hinter der SPA und deren Verwendung von [AngularJS](https://angularjs.org/), um Ihre Marke in App Store und Google Play zu integrieren.
 
 ## SPA in AEM Apps {#spa-in-aem-apps}
 
-Das Single Page Application Framework in AEM Apps ermöglicht die hohe Leistung einer AngularJS-App und versetzt Autorinnen und Autoren (oder andere nicht-technische Mitarbeiter) in die Lage, den Inhalt der App über die Touch-optimierte Drag-and-Drop-Editor-Umgebung zu erstellen und zu verwalten, die traditionell für die Verwaltung von Websites reserviert war. Haben Sie bereits eine mit AEM erstellte Site? Die Wiederverwendung von Inhalten, Komponenten, Workflows, Assets und Berechtigungen ist mit AEM-Programmen ein Kinderspiel.
+Das Single Page Application Framework in AEM Apps ermöglicht die hohe Leistung einer AngularJS-App und versetzt Autorinnen und Autoren (oder andere nicht-technische Mitarbeiter) in die Lage, den Inhalt der App über die Touch-optimierte Drag-and-Drop-Editor-Umgebung zu erstellen und zu verwalten, die bisher für die Verwaltung von Websites reserviert war. Haben Sie bereits eine mit AEM erstellte Site? Die Wiederverwendung von Inhalten, Komponenten, Workflows, Assets und Berechtigungen ist mit AEM Apps ein Kinderspiel.
 
 ## AngularJS-Anwendungsmodul {#angularjs-application-module}
 
@@ -36,7 +40,7 @@ AEM Apps übernimmt einen Großteil der AngularJS-Konfiguration für Sie, einsch
 
 Bei der Initialisierung Ihrer App müssen Sie unter anderem angeben, von welchen AngularJS-Modulen die App abhängt. Die Liste der von Ihrer App verwendeten Module wird durch ein Skript unter /libs/mobileapps/components/angular/ng-page/angular-module-list.js.jsp festgelegt und kann von der Seitenkomponente Ihrer eigenen Apps überlagert werden, um alle zusätzlichen AngularJS-Module abzurufen, die für Ihre App erforderlich sind. Vergleichen Sie als Beispiel das obige Skript mit der Geometrixx-Implementierung (unter /apps/geometrixx-outdoors-app/components/angular/ng-geometrixx-page/angular-module-list.js.jsp).
 
-Um die Navigation zwischen den verschiedenen Zuständen in Ihrer App zu unterstützen, durchläuft das angular-App-Modulskript alle untergeordneten Seiten Ihrer App-Seite der obersten Ebene, um eine Reihe von „Routen“ zu generieren, und konfiguriert jeden Pfad auf dem Angular-$routeProvider-Service. Ein Beispiel dafür finden Sie im angular-App-Modulskript , das vom Geometrixx Outdoors-App-Beispiel generiert wurde: (Link erfordert eine lokale Instanz) [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
+Um die Navigation zwischen den verschiedenen Zuständen in Ihrer App zu unterstützen, durchläuft das Skript „angular-app-module“ alle untergeordneten Seiten Ihrer App-Seite der obersten Ebene, um einen Satz von „Routen“ zu generieren, und konfiguriert jeden Pfad im $routeProvider-Dienst von Angular. Ein Beispiel dafür finden Sie im Skript angular-app-module , das vom Anwendungsbeispiel für Geometrixx Outdoors generiert wurde: (Link erfordert eine lokale Instanz) [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
 
 Nach dem Eintauchen in die generierte AEMAngularApp finden Sie eine Reihe von Routen, die wie folgt angegeben sind:
 
@@ -50,11 +54,11 @@ $routeProvider
 
 Insbesondere das obige Beispiel veranschaulicht ein Beispiel für die Übergabe eines -Parameters als Teil des Pfads. In diesem Beispiel wird angegeben, dass ein Pfad, der dem angegebenen Muster (/content/phonegap/geometrixx-outdoors/en/home/products/:id) entspricht, von der Vorlage home/products.template.html verarbeitet und mit dem Controller „contentphonegapgeometrixxoutdoorsenhomeproducts“ verwendet werden soll.
 
-Die Vorlage, die geladen werden soll, wenn diese Route angefordert wird, wird durch die TemplateUrl-Eigenschaft angegeben. Diese Vorlage enthält die HTML von AEM-Komponenten, die auf der Seite enthalten sind, sowie alle AngularJS-Anweisungen, die für die Verkabelung auf der Client-Seite der Anwendung erforderlich sind. Ein Beispiel für eine AngularJS-Direktive in einer Geometrixx-Komponente finden Sie in Zeile 45 der Datei template.jsp des Wischkarussells (/apps/geometrixx-outdoors-app/components/swipe-carousel/template.jsp).
+Die Vorlage, die geladen werden soll, wenn diese Route angefordert wird, wird durch die TemplateUrl-Eigenschaft angegeben. Diese Vorlage enthält die HTML aus AEM-Komponenten, die auf der Seite enthalten sind, sowie alle AngularJS-Anweisungen, die für die Verkabelung auf der Client-Seite des Programms erforderlich sind. Ein Beispiel für eine AngularJS-Direktive in einer Geometrixx-Komponente finden Sie in Zeile 45 der Datei template.jsp des Wischkarussells (/apps/geometrixx-outdoors-app/components/swipe-carousel/template.jsp).
 
 ## Seiten-Controller {#page-controllers}
 
-In den Angular-Eigenausdrücken ist „ein Controller eine JavaScript-Konstruktorfunktion, die verwendet wird, um den Angular-Umfang zu erweitern“. ([source](https://docs.angularjs.org/guide/controller)) Jede Seite in einer AEM-App wird automatisch mit einem Controller verkabelt, der durch einen beliebigen Controller erweitert werden kann, der eine `frameworkType` von `angular` angibt. Sehen Sie sich als Beispiel die Komponente „ng-text“ an (/libs/mobileapps/components/angular/ng-text), einschließlich des Knotens cq:template, der sicherstellt, dass diese Komponente jedes Mal, wenn sie zu einer Seite hinzugefügt wird, diese wichtige Eigenschaft enthält.
+In Angulars eigenen Worten: „Ein Controller ist eine JavaScript-Konstruktorfunktion, die verwendet wird, um den Angular-Umfang zu erweitern.“ ([source](https://docs.angularjs.org/guide/controller)) Jede Seite in einer AEM-App wird automatisch mit einem Controller verkabelt, der durch einen beliebigen Controller erweitert werden kann, der eine `frameworkType` von `angular` angibt. Sehen Sie sich als Beispiel die Komponente „ng-text“ an (/libs/mobileapps/components/angular/ng-text), einschließlich des Knotens cq:template, der sicherstellt, dass diese Komponente jedes Mal, wenn sie zu einer Seite hinzugefügt wird, diese wichtige Eigenschaft enthält.
 
 Für ein komplexeres Beispiel öffnen Sie das Skript ng-template-page controller.jsp (unter /apps/geometrixx-outdoors-app/components/angular/ng-template-page). Von besonderem Interesse ist der JavaScript-Code, den es bei der Ausführung generiert und der wie folgt gerendert wird:
 
@@ -81,7 +85,7 @@ Für ein komplexeres Beispiel öffnen Sie das Skript ng-template-page controller
 
 Im obigen Beispiel wird der Parameter aus dem `$routeParams`-Service übernommen und dann in die Verzeichnisstruktur eingebettet, in der die JSON-Daten gespeichert werden. Wenn Sie die SKU-`id` auf diese Weise handhaben, können Sie eine einzelne Produktvorlage bereitstellen, die die Produktdaten für potenziell Tausende von verschiedenen Produkten rendern kann. Dies ist ein weitaus besser skalierbares Modell, bei dem für jedes Element in einer (potenziell) umfangreichen Produktdatenbank eine individuelle Route erforderlich ist.
 
-Hier sind auch zwei Komponenten am Werk: ng-product erweitert den Umfang mit den Daten, die es aus dem obigen `$http`-Aufruf extrahiert. Auf dieser Seite befindet sich auch ein ng-image , das wiederum den Umfang um den Wert erweitert, den es aus der Antwort abruft. Aufgrund des `$http`-Service von Angular wartet jede Komponente geduldig, bis die Anfrage abgeschlossen ist und das erstellte Versprechen erfüllt wird.
+Hier sind auch zwei Komponenten am Werk: ng-product erweitert den Umfang mit den Daten, die es aus dem obigen `$http`-Aufruf extrahiert. Auf dieser Seite befindet sich auch ein ng-image , das wiederum den Umfang um den Wert erweitert, den es aus der Antwort abruft. Dank des `$http`-Service von Angular wartet jede Komponente geduldig, bis die Anfrage abgeschlossen ist und das erstellte Versprechen erfüllt wird.
 
 ## Die nächsten Schritte {#the-next-steps}
 

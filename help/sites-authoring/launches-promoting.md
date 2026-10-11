@@ -11,13 +11,31 @@ exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 100%
-
+source-wordcount: '774'
+ht-degree: 93%
 ---
-
 # Weiterleiten von Launches{#promoting-launches}
 
 Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird. Beim Weiterleiten einer Launch-Seite wird die entsprechende Seite der Quellseiten mit dem Inhalt der weitergeleiteten Seite aktualisiert. Beim Weiterleiten einer Launch-Seite stehen die folgenden Optionen zur Verfügung:
@@ -55,29 +73,29 @@ Sie können Launches über die Konsolen **Sites** oder **Launches** weiterleiten
 
    * In der **Sites**-Konsole:
 
-      1. Öffnen Sie die Leiste [Verweise](/help/sites-authoring/author-environment-tools.md#showingpagereferences) und wählen Sie die gewünschte Quellseite mithilfe des [Auswahlmodus](/help/sites-authoring/basic-handling.md) aus. (Oder wählen Sie die Seite aus und öffnen die Verweisleiste. Die Reihenfolge ist nicht wichtig.) Alle Verweise werden angezeigt.
+     1. Öffnen Sie die Leiste [Verweise](/help/sites-authoring/author-environment-tools.md#showingpagereferences) und wählen Sie die gewünschte Quellseite mithilfe des [Auswahlmodus](/help/sites-authoring/basic-handling.md) aus. (Oder wählen Sie die Seite aus und öffnen die Verweisleiste. Die Reihenfolge ist nicht wichtig.) Alle Verweise werden angezeigt.
 
-      1. Wählen Sie **Launches** aus (z. B. „Launches (1)“), um eine Liste der spezifischen Launches anzuzeigen.
-      1. Wählen Sie den gewünschten Launch aus, damit die verfügbaren Aktionen angezeigt werden.
-      1. Wählen Sie **Launch bewerben** aus, um den Assistenten zu öffnen.
+     1. Wählen Sie **Launches** aus (z. B. „Launches (1)“), um eine Liste der spezifischen Launches anzuzeigen.
+     1. Wählen Sie den gewünschten Launch aus, damit die verfügbaren Aktionen angezeigt werden.
+     1. Wählen Sie **Launch bewerben** aus, um den Assistenten zu öffnen.
 
    * die **Launch**-Konsole:
 
-      1. Wählen Sie den Launch aus (klicken Sie auf die Miniaturansicht).
-      1. Wählen Sie **Bewerben** aus.
+     1. Wählen Sie den Launch aus (klicken Sie auf die Miniaturansicht).
+     1. Wählen Sie **Bewerben** aus.
 
 1. Im ersten Schritt können Sie folgende Optionen festlegen:
 
    * **Ziel**
 
-      * **Launch nach der Veröffentlichung löschen**
+     * **Launch nach der Veröffentlichung löschen**
 
    * **Umfang**
 
-      * **Vollständigen Launch weiterleiten**
-      * **Geänderte Seiten hochstufen**
-      * **Aktuelle Seite hochstufen**
-      * **Aktuelle Seite und Unterseiten weiterleiten**
+     * **Vollständigen Launch weiterleiten**
+     * **Geänderte Seiten hochstufen**
+     * **Aktuelle Seite hochstufen**
+     * **Aktuelle Seite und Unterseiten weiterleiten**
 
    Wenn beispielsweise nur geänderte Seiten weitergeleitet werden sollen:
 
@@ -117,16 +135,19 @@ Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an 
 
    * **Ziel**
 
-      * **Ziel der Promotion** Sie können an eine beliebige Quelle weiterleiten.
+     * **Ziel der Promotion**
+       Sie können zu einer beliebigen Quelle weiterleiten.
 
-      * **Launch nach der Veröffentlichung löschen** Nach der Promotion wird der ausgewählte Launch und alle darin enthaltenen Launches gelöscht.
+     * **Launch nach der Veröffentlichung löschen**
+       Nach der Promotion werden der ausgewählte Launch und alle darin enthaltenen Launches gelöscht.
 
-   * **Bereich** Hier können Sie auswählen, ob der gesamte Launch weitergeleitet werden soll oder nur die Seiten, die bearbeitet wurden. Im zweiten Fall können Sie dann auswählen, welche Unterseiten einbezogen bzw. ausgeschlossen werden. Die Standardkonfiguration besteht darin, nur Seitenänderungen für die aktuelle Seite weiterzuleiten 
+   * **Umfang**
+     Hier können Sie auswählen, ob der gesamte Launch weitergeleitet werden soll oder nur die Seiten, die bearbeitet wurden. Im zweiten Fall können Sie dann auswählen, welche Unterseiten einbezogen bzw. ausgeschlossen werden. Die Standardkonfiguration besteht darin, nur Seitenänderungen für die aktuelle Seite weiterzuleiten
 
-      * **Vollständigen Launch weiterleiten**
-      * **Geänderte Seiten hochstufen**
-      * **Aktuelle Seite hochstufen**
-      * **Aktuelle Seite und Unterseiten weiterleiten**
+     * **Vollständigen Launch weiterleiten**
+     * **Geänderte Seiten hochstufen**
+     * **Aktuelle Seite hochstufen**
+     * **Aktuelle Seite und Unterseiten weiterleiten**
 
    ![Einstellungen für das Bewerben eines Launches](assets/chlimage_1-105.png)
 

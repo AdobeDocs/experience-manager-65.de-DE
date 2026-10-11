@@ -9,13 +9,20 @@ role: Admin
 exl-id: 1ecb41e5-c959-4380-a5c7-df9fc3a7703a
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '228'
 ht-degree: 4%
-
 ---
-
 # Tagging benutzergenerierter Inhalte {#tagging-user-generated-content}
 
 ## Überblick {#overview}
@@ -40,7 +47,7 @@ Zu den AEM Communities-Funktionen, die für Tagging konfiguriert werden können,
 
 Siehe [Verwalten von Tags](../../help/sites-administering/tags.md#tagging-console) zum Erstellen und Verwalten von Tag-Namespaces und Taxonomien.
 
-Entwicklerinformationen finden [&#x200B; unter &#x200B;](tag.md)Tag Essentials“.
+Entwicklerinformationen finden [ unter ](tag.md)Tag Essentials“.
 
 Siehe [Verwenden von Social Tag Cloud](tagcloud.md) zum Hinzufügen einer Social-Tag-Cloud-Komponente zu einer Seite, um die Suche nach veröffentlichten benutzergenerierten Inhalten mithilfe der angewendeten Tags zu erleichtern.
 

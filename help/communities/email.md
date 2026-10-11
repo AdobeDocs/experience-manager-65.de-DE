@@ -10,13 +10,20 @@ role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '849'
 ht-degree: 4%
-
 ---
-
 # E-Mail konfigurieren {#configuring-email}
 
 AEM Communities verwendet E-Mail für:
@@ -28,7 +35,7 @@ Die E-Mail-Funktion ist standardmäßig nicht funktionsfähig, da sie die Angabe
 
 >[!CAUTION]
 >
->E-Mails für Benachrichtigungen und Abonnements dürfen nur auf dem [primären Herausgeber“ konfiguriert &#x200B;](deploy-communities.md#primary-publisher).
+>E-Mails für Benachrichtigungen und Abonnements dürfen nur auf dem [primären Herausgeber“ konfiguriert ](deploy-communities.md#primary-publisher).
 
 ## Standardkonfiguration für den E-Mail-Dienst {#default-mail-service-configuration}
 
@@ -36,7 +43,7 @@ Der standardmäßige E-Mail-Dienst ist sowohl für Benachrichtigungen als auch f
 
 * Melden Sie sich beim primären Herausgeber mit Administratorberechtigung an und greifen Sie auf die [Web-Konsole](../../help/sites-deploying/configuring-osgi.md) zu:
 
-   * Beispiel: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * Beispiel: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Suchen Sie die `Day CQ Mail Service`.
 * Wählen Sie das Bearbeitungssymbol aus.
@@ -91,7 +98,7 @@ So erreichen Sie die Instanzen der Communities-E-Mail-Konfiguration:
 
 * Melden Sie sich beim primären Herausgeber mit Administratorberechtigung an und greifen Sie auf die [Web-Konsole](../../help/sites-deploying/configuring-osgi.md) zu
 
-   * Beispiel: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * Beispiel: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Suchen Sie `AEM Communities Email Reply Configuration`.
 
@@ -187,7 +194,7 @@ Damit die E-Mail in das Repository importiert werden kann, muss ein Abruf-Import
 * **[!UICONTROL In Pfad importieren]***
 
   *(Erforderlich)* festgelegt auf `/content/usergenerated/mailFolder/postEmails`
-Navigieren Sie zum Ordner `postEmails` und wählen Sie **OK** aus.
+  Navigieren Sie zum Ordner `postEmails` und wählen Sie **OK** aus.
 
 * **[!UICONTROL Aktualisierungsintervall in Sekunden]**
 
@@ -212,8 +219,8 @@ Verwendet [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
 * Melden Sie sich beim primären Herausgeber mit Administratorberechtigung an und navigieren Sie zu [https://&lt;Server>:&lt;Port>/crx/de/index.jsp#/etc/importers/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
 * Wählen Sie die neu erstellte Konfiguration aus und ändern Sie die folgenden Eigenschaften:
 
-   * **feedType**: Ersetzen Sie `pop3s` durch **`emailreply`**
-   * **source**: Ersetzen Sie die `pop3s://` der Quelle durch **`emailreply://`**
+  * **feedType**: Ersetzen Sie `pop3s` durch **`emailreply`**
+  * **source**: Ersetzen Sie die `pop3s://` der Quelle durch **`emailreply://`**
 
 ![polling-protocol](assets/polling-protocol.png)
 

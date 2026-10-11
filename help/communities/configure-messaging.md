@@ -10,13 +10,20 @@ exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 1%
-
 ---
-
 # Messaging-Funktion {#messaging-feature}
 
 Zusätzlich zu den öffentlich sichtbaren Interaktionen, die in Foren und Kommentaren stattfinden, ermöglicht die Messaging-Funktion von AEM Communities es Community-Mitgliedern, privater miteinander zu interagieren.
@@ -63,7 +70,8 @@ Um die Konfiguration der Nachrichtenliste für die Seiten **Posteingang**, **Ges
 1. Wählen Sie im `Preview`-Modus den **Nachrichten**, um die Hauptseite für Nachrichten zu öffnen. Wählen Sie dann entweder **Posteingang**, **Gesendete Elemente** oder **Papierkorb**, um die Komponente für diese Nachrichtenliste zu konfigurieren.
 
 1. Wählen Sie im `Edit` die Komponente auf der Seite aus.
-1. Um auf das Konfigurationsdialogfeld zuzugreifen, brechen Sie die Vererbung ab, indem Sie das Symbol `link` auswählen.Sobald die Vererbung abgebrochen wurde, können Sie das Symbol „Konfigurieren“ auswählen, um das Konfigurationsdialogfeld zu öffnen.
+1. Um auf das Konfigurationsdialogfeld zuzugreifen, brechen Sie die Vererbung ab, indem Sie das Symbol `link` auswählen.
+Sobald die Vererbung abgebrochen wurde, können Sie das Symbol „Konfigurieren“ auswählen, um das Konfigurationsdialogfeld zu öffnen.
 
 1. Nach Abschluss der Konfiguration müssen Sie die Vererbung wiederherstellen, indem Sie auf das Symbol `broken link` klicken.
 
@@ -136,7 +144,8 @@ Um die Konfiguration der Seite „Nachricht erstellen“ zu ändern, öffnen Sie
 * Wählen Sie im `Preview`-Modus den **Nachrichten**, um die Hauptseite für Nachrichten zu öffnen. Wählen Sie dann die Schaltfläche Neue Nachricht aus, um die Seite `Compose Message` zu öffnen.
 
 * Wählen Sie im `Edit`-Modus die Hauptkomponente auf der Seite aus, die den Nachrichtentext enthält.
-* Um auf das Konfigurationsdialogfeld zuzugreifen, brechen Sie die Vererbung ab, indem Sie das Symbol `link` auswählen.Sobald die Vererbung abgebrochen wurde, können Sie das Symbol „Konfigurieren“ auswählen, um das Konfigurationsdialogfeld zu öffnen.
+* Um auf das Konfigurationsdialogfeld zuzugreifen, brechen Sie die Vererbung ab, indem Sie das Symbol `link` auswählen.
+Sobald die Vererbung abgebrochen wurde, können Sie das Symbol „Konfigurieren“ auswählen, um das Konfigurationsdialogfeld zu öffnen.
 
 * Nach Abschluss der Konfiguration müssen Sie die Vererbung wiederherstellen, indem Sie auf das Symbol `broken link` klicken.
 

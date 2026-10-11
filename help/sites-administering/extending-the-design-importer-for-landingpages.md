@@ -10,13 +10,22 @@ exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3524'
 ht-degree: 94%
-
 ---
-
 # Erweitern und Konfigurieren des Design-Import-Tools für Landingpages{#extending-and-configuring-the-design-importer-for-landing-pages}
 
 In diesem Abschnitt wird beschrieben, wie Sie den Design Importer für Landingpages konfigurieren und bei Bedarf erweitern. Die Arbeit mit Landingpages nach dem Import wird im Abschnitt [Landingpages](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md) behandelt.
@@ -470,7 +479,7 @@ Die Verwendung von CSS-Selektoren wie den folgenden wird bei Elementen, die für
 Dies liegt daran, dass dem generierten HTML-Code nach dem Import zusätzliche HTML-Elemente wie das &lt;div>-Tag hinzugefügt werden.
 
 * Skripte, die auf einer ähnlichen Struktur wie der obigen basieren, werden ebenfalls nicht für Elemente empfohlen, die für die Konvertierung in AEM-Komponenten vorgesehen sind.
-* Die Verwendung von Stilen in den Markup-Tags für die Komponentenkonvertierung wie &lt;div data-cq-component=&quot;&ast;“> wird nicht empfohlen.
+* Die Verwendung von Stilen in den Markup-Tags für die Komponentenkonvertierung wie &lt;div data-cq-component=&quot;&amp;ast;“> wird nicht empfohlen.
 * Beim Designlayout sollten die Best Practices für das HTML5-Boilerplate befolgt werden. Lesen Sie mehr unter [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Konfigurieren von OSGi-Modulen {#configuring-osgi-modules}
@@ -531,7 +540,7 @@ In der folgenden Tabelle werden die Eigenschaften kurz beschrieben:
 >
 >Beispiel: Die Standardkonfiguration lautet wie folgt:
 >
->&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >Und Sie müssen `CQ_DESIGN_PATH` durch `VIPURL` im Suchmuster ersetzen. Ihr Suchmuster sollte dann wie folgt aussehen:
 >

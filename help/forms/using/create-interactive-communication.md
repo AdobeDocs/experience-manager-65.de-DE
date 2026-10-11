@@ -8,13 +8,27 @@ feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6132'
+source-wordcount: '6226'
 ht-degree: 99%
-
 ---
-
 # Erstellen einer interaktiven Kommunikation{#create-an-interactive-communication}
 
 ## Übersicht {#overview}
@@ -62,11 +76,11 @@ Die folgenden Voraussetzungen müssen erfüllt sein, um eine interaktive Kommuni
    * **[!UICONTROL Web-Vorlage für interaktive Kommunikation]**: Durchsuchen Sie die Web-Vorlagen und wählen Sie eine aus.
    * **[!UICONTROL Design]** und **[!UICONTROL Design auswählen]**: Durchsuchen Sie die Designs und wählen Sie eines aus, um den Web-Kanal der interaktiven Kommunikation zu gestalten. Weitere Informationen finden Sie unter [Designs in AEM Forms](/help/forms/using/themes.md).
 
-   * **[!UICONTROL Druck als Master für Webkanal verwenden]**: Wählen Sie diese Option, um den Webkanal synchron mit dem Druckkanal zu erstellen. Die Verwendung des Druckkanals als Master für den Webkanal stellt sicher, dass der Inhalt und die Datenbindung des Webkanals aus dem Druckkanal abgeleitet werden und die im Druckkanal vorgenommenen Änderungen im Webkanal widergespiegelt werden, wenn Sie auf Synchronisieren klicken. Die Autoren dürfen jedoch bei Bedarf die Vererbung für bestimmte Komponenten im Webkanal aufheben. Weitere Informationen finden Sie unter [Synchronisieren des Webkanals mit dem Druckkanal](../../forms/using/create-interactive-communication.md#synchronize).
-Wenn Sie die Option **[!UICONTROL Druck als Master für Webkanal verwenden]** auswählen, können Sie einen der folgenden Modi auswählen, um den Webkanal zu generieren:
+   * **[!UICONTROL Druck als Master für Webkanal verwenden]**: Wählen Sie diese Option, um den Web-Kanal synchron mit dem Druckkanal zu erstellen. Die Verwendung des Druckkanals als primärer Kanal für den Web-Kanal stellt sicher, dass der Inhalt und die Datenbindung des Web-Kanals vom Druckkanal abgeleitet werden und die im Druckkanal vorgenommenen Änderungen im Web-Kanal übernommen werden, wenn Sie „Synchronisieren“ auswählen. Die Autorinnen und Autoren dürfen jedoch ggf. die Vererbung für Komponenten im Web-Kanal aufheben. Weitere Informationen finden Sie unter [Synchronisieren des Web-Kanals mit dem Druckkanal](../../forms/using/create-interactive-communication.md#synchronize).
+     Wenn Sie die Option **[!UICONTROL Druck als Master für Web-Kanal verwenden]** auswählen, können Sie einen der folgenden Modi auswählen, um den Web-Kanal zu generieren:
 
-      * **[!UICONTROL Auto-Layout]**: Wählen Sie diesen Modus aus, um automatisch Platzhalter, Inhalte und Datenbindung für den Web-Kanal aus dem Druckkanal zu generieren.
-      * **[!UICONTROL Manuelles Organisieren]**: Wählen Sie diesen Modus aus, um die Elemente des Druckkanals manuell auszuwählen und dem Web-Kanal mithilfe der übergeordneten Inhalte hinzuzufügen, die in der Registerkarte **[!UICONTROL Datenquellen]** verfügbar sind. Weitere Informationen finden Sie unter [Auswählen von Druckkanalelementen, um Web-Kanalinhalte zu erstellen](#selectprintchannelelements).
+     * **[!UICONTROL Auto-Layout]**: Wählen Sie diesen Modus aus, um automatisch Platzhalter, Inhalte und Datenbindung für den Web-Kanal aus dem Druckkanal zu generieren.
+     * **[!UICONTROL Manuelles Organisieren]**: Wählen Sie diesen Modus aus, um die Elemente des Druckkanals manuell auszuwählen und dem Web-Kanal mithilfe der übergeordneten Inhalte hinzuzufügen, die in der Registerkarte **[!UICONTROL Datenquellen]** verfügbar sind. Weitere Informationen finden Sie unter [Auswählen von Druckkanalelementen, um Web-Kanalinhalte zu erstellen](#selectprintchannelelements).
 
    Weitere Informationen zu Druckkanal und Web-Kanal finden Sie unter [Druckkanal und Web-Kanal](/help/forms/using/web-channel-print-channel.md).
 
@@ -170,10 +184,10 @@ Wählen Sie das Dokumentfragment, dann ![configure_icon](assets/configure_icon.p
    * [Hinzufügen und Konfigurieren von Diagrammen](/help/forms/using/chart-component-interactive-communications.md)
    * [Synchronisieren des Web-Kanals mit dem Druckkanal](../../forms/using/create-interactive-communication.md#synchronize)
 
-      * Automatische Synchronisierung
-      * Abbrechen der Vererbung
-      * Erneutes Aktivieren der Vererbung
-      * Synchronisieren
+     * Automatische Synchronisierung
+     * Abbrechen der Vererbung
+     * Erneutes Aktivieren der Vererbung
+     * Synchronisieren
 
    * [Anlagen und Bibliothekszugriff](../../forms/using/create-interactive-communication.md#attachmentslibrary)
    * [XDP-/Layout-Feldeigenschaften](../../forms/using/create-interactive-communication.md#xdplayoutfieldproperties)
@@ -242,8 +256,8 @@ Im Druckkanal können Sie die Anhänge und den Bibliothekszugriff so konfigurier
    * **[!UICONTROL Maximale Anzahl zulässiger Anhänge]**: Geben Sie die maximal zulässige Anzahl von Anhängen für die interaktive Kommunikation an.
    * **[!UICONTROL Anzuhängende Dateien]**: Wählen Sie **[!UICONTROL Hinzufügen]** und durchsuchen Sie die Dateien, um diejenigen auszuwählen, die angehängt werden sollen. Geben Sie Folgendes an:
 
-      * **[!UICONTROL Diese Datei standardmäßig an das Dokument anhängen]**: Sie können diese Option nur ändern, wenn der Anhang nicht obligatorisch ist.
-      * **[!UICONTROL Obligatorisch:]** Der Agent kann den Anhang in der Agenten-Benutzeroberfläche nicht entfernen.
+     * **[!UICONTROL Diese Datei standardmäßig an das Dokument anhängen]**: Sie können diese Option nur ändern, wenn der Anhang nicht obligatorisch ist.
+     * **[!UICONTROL Obligatorisch:]** Der Agent kann den Anhang in der Agenten-Benutzeroberfläche nicht entfernen.
 
    ![attachfiles](assets/attachfiles.png)
 
@@ -263,9 +277,9 @@ Im Druckkanal können Sie die Anhänge und den Bibliothekszugriff so konfigurier
    * **[!UICONTROL Titel]**: Geben Sie einen Titel ein, der für den Agenten in der Benutzeroberfläche für Agenten und in der Struktur des Dokumentcontainers sichtbar ist.
    * **[!UICONTROL Bindungstyp]**: Wählen Sie einen der folgenden Bindungstypen für das Feld aus.
 
-      * Keine: Agent füllt den Wert für die Eigenschaft aus.
-      * Textfragment: Wenn ausgewählt, können Sie ein Textdokumentfragment durchsuchen und auswählen, dessen Inhalt in dem Feld gerendert wird. Alternativ können Sie das Textdokumentfragment per Drag-and-Drop zum Feldnamen ziehen, um die Bindung zwischen beiden herzustellen. Das Textdokumentfragment darf keine Variablen enthalten.
-      * Datenmodellobjekt: Wählen Sie eine Formulardatenmodell-Eigenschaft aus, deren Wert in das Feld gefüllt wird. Alternativ wählen Sie die Registerkarte **Datenquellen** aus und ziehen die Eigenschaft per Drag-and-Drop in das Feld.
+     * Keine: Agent füllt den Wert für die Eigenschaft aus.
+     * Textfragment: Wenn ausgewählt, können Sie ein Textdokumentfragment durchsuchen und auswählen, dessen Inhalt in dem Feld gerendert wird. Alternativ können Sie das Textdokumentfragment per Drag-and-Drop zum Feldnamen ziehen, um die Bindung zwischen beiden herzustellen. Das Textdokumentfragment darf keine Variablen enthalten.
+     * Datenmodellobjekt: Wählen Sie eine Formulardatenmodell-Eigenschaft aus, deren Wert in das Feld gefüllt wird. Alternativ wählen Sie die Registerkarte **Datenquellen** aus und ziehen die Eigenschaft per Drag-and-Drop in das Feld.
 
    * **[!UICONTROL Standardwerte]**: Der Standardwert stellt sicher, dass das Feld nicht leer ist, wenn vom angegebenen Datenmodellobjekt oder Textfragment kein Wert bereitgestellt wird. Wenn der Datenbindungstyp „Keine“ ist, wird der Standardwert im Feld vorbefüllt.
    * **[!UICONTROL Anzeigemuster]**: Sie können auch ein Anzeigeformat für ein Feld definieren. Um ein Anzeigeformat auf ein Feld anzuwenden, wählen Sie eine der vordefinierten Optionen aus der Dropdown-Liste **Typ** aus. Um ein Anzeigemuster zu definieren, das nicht in der Liste verfügbar ist, wählen Sie **Benutzerdefiniert** aus. Weitere Informationen finden Sie unter [Datenanzeigemuster](../../forms/using/create-interactive-communication.md#datadisplaypatterns).
@@ -346,8 +360,8 @@ Sie können in einer interaktiven Kommunikation dynamische Tabellen mithilfe von
       * **[!UICONTROL Titel]**: Geben Sie einen Titel ein, der im Editor für interaktive Kommunikation angezeigt werden wird.
       * **[!UICONTROL Bindungstyp]**: Wählen Sie einen der folgenden Bindungstypen für das Feld aus.
 
-         * **[!UICONTROL Ohne]**
-         * **[!UICONTROL Datenmodellobjekt]**: Wählen Sie eine Formulardatenmodell-Eigenschaft aus, mit deren Wert das Feld befüllt wird. Alternativ können Sie auch die Registerkarte **Datenquellen** auswählen und die Eigenschaft per Drag-and-Drop in das Feld ziehen.
+        * **[!UICONTROL Ohne]**
+        * **[!UICONTROL Datenmodellobjekt]**: Wählen Sie eine Formulardatenmodell-Eigenschaft aus, mit deren Wert das Feld befüllt wird. Alternativ können Sie auch die Registerkarte **Datenquellen** auswählen und die Eigenschaft per Drag-and-Drop in das Feld ziehen.
 
       * **[!UICONTROL Datenmodellobjekt]**: Die Formulardatenmodell-Eigenschaft, mit deren Wert das Feld befüllt wird.
       * **[!UICONTROL Standardwert]**: Der Standardwert stellt sicher, dass das Feld nicht leer ist, wenn vom angegebenen Datenmodellobjekt oder Textfragment kein Wert bereitgestellt wird. Der Standardwert wird im Feld vorbefüllt.

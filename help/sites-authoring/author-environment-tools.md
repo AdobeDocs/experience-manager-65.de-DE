@@ -10,13 +10,26 @@ exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: 33bf1d9f64c32691f6a9c0568c1c5cb2150f331a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2262'
 ht-degree: 91%
-
 ---
-
 # Bearbeiten: Umgebung und Tools{#authoring-the-environment-and-tools}
 
 Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten. Die verfügbaren Tools können über verschiedene Konsolen und Seiteneditoren aufgerufen werden.
@@ -86,17 +99,17 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
   Komponenten werden wie folgt dargestellt:
 
-   * Komponentenname
-   * Komponentengruppe (in grau)
-   * Symbol oder Abkürzung
+  * Komponentenname
+  * Komponentengruppe (in grau)
+  * Symbol oder Abkürzung
 
-      * Die Symbole für die Standardkomponenten sind monochrom dargestellt.
-      * Für die Abkürzungen werden immer die ersten zwei Buchstaben des Komponentennamens verwendet.
+    * Die Symbole für die Standardkomponenten sind monochrom dargestellt.
+    * Für die Abkürzungen werden immer die ersten zwei Buchstaben des Komponentennamens verwendet.
 
   Die obere Symbolleiste des **Komponenten**-Browsers bietet folgende Möglichkeiten:
 
-   * Komponenten nach Namen filtern
-   * Mittels Dropdown-Auswahl die Anzeige auf eine bestimmte Gruppe begrenzen
+  * Komponenten nach Namen filtern
+  * Mittels Dropdown-Auswahl die Anzeige auf eine bestimmte Gruppe begrenzen
 
   Wenn Sie auf das Informationssymbol neben der Komponente im **Komponenten**-Browser klicken, finden Sie eine detailliertere Beschreibung der Komponente (falls verfügbar). Beispiel für den **Layout-Container**:
 
@@ -124,11 +137,11 @@ Um ein Asset zu Ihrer Seite hinzuzufügen, wählen Sie es aus und ziehen Sie es 
 
 * Eine vorhandene Komponente des entsprechenden Typs.
 
-   * Sie können beispielsweise ein Asset des Typs „Bild“ auf eine Bildkomponente ziehen.
+  * Sie können beispielsweise ein Asset des Typs „Bild“ auf eine Bildkomponente ziehen.
 
 * Ein [Platzhalter](/help/sites-authoring/editing-content.md#component-placeholder) im Absatzsystem zum Erstellen einer Komponente des entsprechenden Typs.
 
-   * Sie können beispielsweise ein Asset des Typs „Bild“ in das Absatzsystem ziehen, um eine Bildkomponente zu erstellen.
+  * Sie können beispielsweise ein Asset des Typs „Bild“ in das Absatzsystem ziehen, um eine Bildkomponente zu erstellen.
 
 >[!NOTE]
 >
@@ -141,7 +154,7 @@ In der Symbolleiste des Asset-Browsers können Sie Assets nach folgenden Kriteri
 * Asset-Typ, z. B. Bilder, Manuskripte, Dokumente, Videos, Seiten, Absätze oder Produkte
 * Asset-Merkmale, z. B. Ausrichtung (Hochformat, Querformat, quadratisch) und Stil (farbig, monochrom, Graustufen)
 
-   * Nur für bestimmte Asset-Typen verfügbar
+  * Nur für bestimmte Asset-Typen verfügbar
 
 Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab:
 
@@ -239,7 +252,7 @@ Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen. In
 
 * **Eingehende Links** enthält eine Liste der Seiten, die auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen.
 
-   * Es können nur statische Links angezeigt werden, nicht dynamisch generierte Links, z. B. aus der Listenkomponente.
+  * Es können nur statische Links angezeigt werden, nicht dynamisch generierte Links, z. B. aus der Listenkomponente.
 
 * Instanzen von geliehenen und verliehenen Inhalten, die die **Referenz**-Komponente verwenden. Sie können von hier aus zur referenzierten Seite navigieren.
 
@@ -261,7 +274,7 @@ Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites**-Konsole oder Assets au
 
 ![ateat-15](assets/ateat-15.png)
 
-[Wählen Sie die gewünschte Ressource &#x200B;](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)und danach entweder **Alle anzeigen** oder **Aktivitäten** aus, um die mit den ausgewählten Ressourcen zuletzt ausgeführten Aktionen aufzulisten:
+[Wählen Sie die gewünschte Ressource ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)und danach entweder **Alle anzeigen** oder **Aktivitäten** aus, um die mit den ausgewählten Ressourcen zuletzt ausgeführten Aktionen aufzulisten:
 
 ![ateat-16](assets/ateat-16.png)
 

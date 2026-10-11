@@ -9,7 +9,13 @@ exl-id: f37f239f-065b-44f8-acb1-93485b713b49
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 0%
@@ -32,7 +38,7 @@ Gemäß der AEM-Konvention sollte die erste Seite Ihrer App eine Umleitung zu ei
 
 Die Vorlage und der Komponenten-Code für Ihre App sollten unter /apps/&lt;Name der Marke>/&lt;Name der App> zu finden sein. In Übereinstimmung mit der Konvention sollten Sie Ihre Vorlage und den Komponenten-Code in /apps/&lt;Name der Marke>/&lt;Name der App> platzieren. Dieses Muster sollte Entwicklerinnen und Entwicklern bekannt sein, die bereits mit Site in AEM gearbeitet haben. Es wird normalerweise gefolgt, da /apps/ auf Veröffentlichungsinstanzen standardmäßig für den anonymen Zugriff gesperrt ist. Ihr roher JSP-Code ist also vor potenziellen Angreifern verborgen.
 
-Anwendungsspezifische Vorlagen können so konfiguriert werden, dass sie nur mithilfe des `allowedPaths`-Eigenschaftsknotens auf der Vorlage selbst präsentiert werden. Dabei kann der Wert auf &quot;/content/mobileapps(/.&ast;)?“ festgelegt werden - oder sogar auf etwas Spezifischeres, wenn die Vorlage nur für eine einzelne Anwendung verwendet werden soll. Die `allowedParents`- und `allowedChildren` können auch verwendet werden, um genau zu steuern, welche Vorlagen einem Autor zur Verfügung stehen, je nachdem, wo die neue Seite erstellt wird.
+Anwendungsspezifische Vorlagen können so konfiguriert werden, dass sie nur mithilfe des `allowedPaths`-Eigenschaftsknotens auf der Vorlage selbst präsentiert werden. Dabei kann der Wert auf &quot;/content/mobileapps(/.&amp;ast;)?“ festgelegt werden - oder sogar auf etwas Spezifischeres, wenn die Vorlage nur für eine einzelne Anwendung verwendet werden soll. Die `allowedParents`- und `allowedChildren` können auch verwendet werden, um genau zu steuern, welche Vorlagen einem Autor zur Verfügung stehen, je nachdem, wo die neue Seite erstellt wird.
 
 Wenn Sie eine App-Seitenkomponente von Grund auf neu erstellen, wird empfohlen, die `sling:resourceSuperType`-Eigenschaft auf „mobileApps/components/angular/ng-page“ festzulegen. Dadurch wird Ihre Seite für das Authoring und Rendering als Einzelseiten-App eingerichtet und Sie können alle JSP-Dateien überlagern, die Ihre Komponente möglicherweise ändern muss. Da ng-page überhaupt kein UI-Framework enthält, überlagert ein Entwickler meist (zumindest) „template.jsp“ (überlagert von /libs/mobileapps/components/angular/ng-page/template.jsp).
 

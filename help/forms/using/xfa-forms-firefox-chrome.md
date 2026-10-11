@@ -9,13 +9,25 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 31b52a82-5062-403e-bba7-e6a7e32ee961
-source-git-commit: 913e249ba52f1ee262ed78167ce3b2a857e86213
-workflow-type: ht
-source-wordcount: '287'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 95%
 ---
-
 # Öffnen von XFA-basierten PDF-Formularen in Firefox und Chrome
 
 ## Problem
@@ -50,11 +62,11 @@ Um XFA-basierte PDF-Formulare unter Firefox und Chrome zu verwenden, führen Sie
 
 1. Klicken Sie unter „Chrome PDF Viewer“ auf „Deaktivieren“ und klicken Sie unter „Adobe PDF Plug-In“ auf „Aktivieren“.
    ![chrome-pdf-viewer](/help/forms/using/assets/chrome-image.png)
-Weitere Informationen finden Sie in der Dokumentation zum [Adobe PDF-Plug-in](https://support.google.com/chrome/?hl=en&visit_id=638803785294106945-2276548125&rd=4&topic=3421431#topic=7439538) von Google.
+   Weitere Informationen finden Sie in der Dokumentation zum [Adobe PDF-Plug](https://support.google.com/chrome/?hl=en&visit_id=638803785294106945-2276548125&rd=4&topic=3421431#topic=7439538)in von Google.
 
 >[!NOTE]
 > 
 > LiveCycle ES4 bietet Unterstützung für die Darstellung von XFA-basierten Formularen in HTML5, sodass die Formulare in Browsern mit HTML5-Unterstützung geöffnet werden können, einschließlich solcher, die auf Mobilgeräten wie dem iPad laufen. Die HTML5-Ausgabedarstellung der Formulare behält das Layout des Formularentwurfs bei und unterstützt die meisten in die XFA-Formularvorlage eingebetteten Formularlogiken (z. B. JavaScript, Formularberechnungen und Formularvalidierungen). Auf diese Weise werden Ihre Technologieinvestitionen in XFA-Formulare einfach auf Geräte übertragen, auf denen die Ausführung des Adobe Reader-Plug-ins nicht möglich ist.
-> >Weitere Informationen finden Sie in der [LiveCycle-Produktdokumentation](https://business.adobe.com/de/products/experience-manager/forms/aem-forms.html).
+>Weitere Informationen finden Sie in der [LiveCycle-Produktdokumentation](https://business.adobe.com/products/experience-manager/forms/aem-forms.html).
 
 [Rechtliche Hinweise](https://chl-author-preview.corp.adobe.com/content/help/de/legal/legal-notices.html)    |    [Online-Datenschutzrichtlinie](https://www.adobe.com/de/privacy.html)

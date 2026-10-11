@@ -6,13 +6,22 @@ exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: f64a1014dfd1155bcf815e75a27102244ef6c6de
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4473'
 ht-degree: 98%
-
 ---
-
 
 # Konfigurieren der Rich-Text-Editor-Plug-ins {#configure-the-rich-text-editor-plug-ins}
 
@@ -39,16 +48,16 @@ Standardmäßig sind die Plug-ins `format`, `link`, `list`, `justify` und `contr
 
    * Abhängig von Ihrer Komponente sind die übergeordneten Knoten:
 
-      * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
-      * ein alternativer Konfigurationsknoten: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
-      * `text: .../text/dialog/items/tab1/items/text`
+     * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
+     * ein alternativer Konfigurationsknoten: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
+     * `text: .../text/dialog/items/tab1/items/text`
 
    * sind vom Typ: **jcr:primaryType** `cq:Widget`
    * Beide verfügen über die folgenden Eigenschaften:
 
-      * **Name** `name`
-      * **Typ** `String`
-      * **Wert** `./text`
+     * **Name** `name`
+     * **Typ** `String`
+     * **Wert** `./text`
 
 1. Je nach Benutzeroberfläche, für die Sie Konfigurationen vornehmen, müssen Sie einen Knoten `<rtePlugins-node>` erstellen, sofern noch nicht vorhanden:
 
@@ -304,7 +313,7 @@ Führen Sie folgende Schritte aus, um den Stil zu erstellen, den Autoren auf jap
 
 1. Fügen Sie den Eigenschaftstext demselben Knoten hinzu. Der Wert ist der Name des Stils, den die Autorinnen und Autoren beim Auswählen des Stils sehen.
    * Name: `text`
-*Typ: `String`
+     *Typ: `String`
    * Wert: `Japanese word-wrap`
 
 1. Erstellen Sie ein Stylesheet und geben Sie seinen Pfad an. Siehe [Angeben des Stylesheet-Speicherorts](#locationofstylesheet). Fügen Sie dem Stylesheet den folgenden Inhalt hinzu. Ändern Sie die Hintergrundfarbe wie gewünscht.
@@ -511,13 +520,13 @@ Stile werden in der Regel auf Text angewendet, es kann jedoch auch ein separater
 
    * Definieren der Stile für die komplette Tabelle (verfügbar unter **Tabelleneigenschaften**):
 
-      * **Name** `tableStyles`
-      * **Typ** `cq:WidgetCollection`
+     * **Name** `tableStyles`
+     * **Typ** `cq:WidgetCollection`
 
    * Definieren der Stile für einzelne Tabellenzellen (verfügbar unter **Zellen-Eigenschaften**):
 
-      * **Name** `cellStyles`
-      * **Typ** `cq:WidgetCollection`
+     * **Name** `cellStyles`
+     * **Typ** `cq:WidgetCollection`
 
 1. Erstellen Sie einen Knoten (unter dem Knoten `tableStyles` oder `cellStyles`, sofern erforderlich), damit Sie einen einzelnen Stil darstellen können:
 
@@ -528,15 +537,15 @@ Stile werden in der Regel auf Text angewendet, es kann jedoch auch ein separater
 
    * Definieren des CSS-Stils, auf den verwiesen werden soll:
 
-      * **Name** `cssName`
-      * **Typ** `String`
-      * **Wert:** Der Name der CSS-Klasse (ohne `.` voranzustellen, beispielsweise `cssClass` anstatt `.cssClass`)
+     * **Name** `cssName`
+     * **Typ** `String`
+     * **Wert:** Der Name der CSS-Klasse (ohne `.` voranzustellen, beispielsweise `cssClass` anstatt `.cssClass`)
 
    * Definieren eines beschreibenden Texts, der in der Dropdown-Auswahl angezeigt werden soll:
 
-      * **Name** `text`
-      * **Typ** `String`
-      * **Wert:** Der Text, der in der Auswahlliste angezeigt werden soll
+     * **Name** `text`
+     * **Typ** `String`
+     * **Wert:** Der Text, der in der Auswahlliste angezeigt werden soll
 
 1. Speichern Sie alle Änderungen.
 
@@ -689,58 +698,58 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
 
    * CSS-Stil für interne Links:
 
-      * **Name** `cssInternal`
-      * **Typ** `String`
-      * **Wert** der Name der CSS-Klasse (ohne vorangestelltes &quot;.“; z. B. `cssClass` anstelle von `.cssClass`)
+     * **Name** `cssInternal`
+     * **Typ** `String`
+     * **Wert** der Name der CSS-Klasse (ohne vorangestelltes &quot;.“; z. B. `cssClass` anstelle von `.cssClass`)
 
    * CSS-Stil für externe Links
 
-      * **Name** `cssExternal`
-      * **Typ** `String`
-      * **Wert** der Name der CSS-Klasse (ohne vorangestelltes &quot;.“; z. B. `cssClass` anstelle von `.cssClass`)
+     * **Name** `cssExternal`
+     * **Typ** `String`
+     * **Wert** der Name der CSS-Klasse (ohne vorangestelltes &quot;.“; z. B. `cssClass` anstelle von `.cssClass`)
 
    * Array von gültigen **Protokollen**. Die unterstützten Protokolle sind `http://`, `https://`, `file://` und `mailto:`.
 
-      * **Name** `protocols`
-      * **Typ** `String[]`
-      * **Wert** Ein oder mehrere Protokolle
+     * **Name** `protocols`
+     * **Typ** `String[]`
+     * **Wert** Ein oder mehrere Protokolle
 
    * **defaultProtocol** (Eigenschaft vom Typ **Zeichenfolge**): Protokoll, das verwendet wird, wenn der Benutzer keines explizit festlegt
 
-      * **Name** `defaultProtocol`
-      * **Typ** `String`
-      * **Wert** Ein oder mehrere Standardprotokolle
+     * **Name** `defaultProtocol`
+     * **Typ** `String`
+     * **Wert** Ein oder mehrere Standardprotokolle
 
    * Definition der Art, wie das Zielattribut eines Links verarbeitet werden soll. Erstellen Sie einen Knoten:
 
-      * **Name** `targetConfig`
-      * **Typ** `nt:unstructured`
+     * **Name** `targetConfig`
+     * **Typ** `nt:unstructured`
 
      Definieren Sie im Knoten `targetConfig` die erforderlichen Eigenschaften:
 
-      * Legen Sie den Zielmodus fest:
+     * Legen Sie den Zielmodus fest:
 
-         * **Name** `mode`
-         * **Typ** `String`
-         * **Wert**
+       * **Name** `mode`
+       * **Typ** `String`
+       * **Wert**
 
-            * `auto`: bedeutet, dass ein automatisches Ziel ausgewählt wird
+         * `auto`: bedeutet, dass ein automatisches Ziel ausgewählt wird
 
-              (festgelegt über die `targetExternal`-Eigenschaft für externe Links oder die `targetInternal`-Eigenschaft für interne Links).
+           (festgelegt über die `targetExternal`-Eigenschaft für externe Links oder die `targetInternal`-Eigenschaft für interne Links).
 
-            * `manual`: In diesem Kontext unzulässig
-            * `blank`: In diesem Kontext unzulässig
+         * `manual`: In diesem Kontext unzulässig
+         * `blank`: In diesem Kontext unzulässig
 
-      * Das Ziel für interne Links:
+     * Das Ziel für interne Links:
 
-         * **Name** `targetInternal`
-         * **Typ** `String`
-         * **Wert:** Das Ziel für interne Links (nur verwenden, wenn der Modus `auto` aktiv ist)
+       * **Name** `targetInternal`
+       * **Typ** `String`
+       * **Wert:** Das Ziel für interne Links (nur verwenden, wenn der Modus `auto` aktiv ist)
 
-      * Das Ziel für externe Links:
+     * Das Ziel für externe Links:
 
-         * **Name** `targetExternal`
-         * **Typ** `String`
-         * **Wert:** Das Ziel für externe Links (nur verwenden, wenn der Modus `auto` aktiv ist)
+       * **Name** `targetExternal`
+       * **Typ** `String`
+       * **Wert:** Das Ziel für externe Links (nur verwenden, wenn der Modus `auto` aktiv ist)
 
 1. Speichern Sie alle Änderungen.

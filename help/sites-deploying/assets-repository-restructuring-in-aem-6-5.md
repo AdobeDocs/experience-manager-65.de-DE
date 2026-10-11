@@ -8,13 +8,22 @@ feature: Upgrading
 exl-id: 28ddd23c-5907-4356-af56-ebc7589a2b5d
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 100%
-
+ht-degree: 92%
 ---
-
 # Assets-Repository-Neustrukturierung in AEM 6.5 {#assets-repository-restructuring-in-aem}
 
 Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kundinnen und Kunden, die auf Adobe Experience Manager (AEM) 6.5 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Änderungen einzuschätzen, die sich auf die AEM Assets-Lösung auswirken. Einige Änderungen erfordern einen Arbeitsaufwand während des Upgrades auf AEM 6.5, während andere auf eine zukünftige Aktualisierung verschoben werden können.
@@ -77,11 +86,11 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/hel
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
    <td><p>Wenn die E-Mail-Vorlagen von der Kundin oder dem Kunden geändert wurden, führen Sie die folgenden Schritte aus, um sie an die neue Repository-Struktur anzupassen:</p>
     <ol>
-     <li>Die E-Mail-Vorlage <code>/libs/settings/dam/notification</code> sollte von <strong><code>/etc/notification/email/default</code></strong> nach <strong><code>/apps/settings/notification/email/default</code></strong> kopiert werden.
+     <li>Die <code>/libs/settings/dam/notification</code> E-Mail-Vorlage sollte von <strong><code>/etc/notification/email/default</code></strong> nach kopiert werden. <strong><code>/apps/settings/notification/email/default</code></strong>
       <ol>
        <li>Da sich das Ziel in <strong> <code>/apps</code></strong> befindet, sollte diese Änderung in SCM erhalten bleiben.</li>
       </ol> </li>
-     <li>Entfernen Sie den Ordner <strong><code>/etc/dam/notification/email/default</code></strong>, nachdem die darin enthaltenen E-Mail-Vorlagen verschoben wurden.<br />
+     <li>Entfernen Sie den Ordner <strong><code>/etc/dam/notification/email/default</code></strong> , nachdem die darin enthaltenen E-Mail-Vorlagen verschoben wurden.<br />
       <ol>
        <li>Wenn keine Aktualisierungen der E-Mail-Vorlage unter <strong> <code>/etc/notification/email/default</code></strong> vorgenommen wurden, kann der Ordner entfernt werden, da die ursprüngliche E-Mail-Vorlage als Bestandteil der AEM 4-Installation unter <strong><code>/libs/settings/notification/email/default</code></strong> vorhanden ist.</li>
       </ol> </li>
@@ -140,11 +149,11 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/hel
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
    <td><p>Wenn die E-Mail-Vorlagen (<strong>downloadasset</strong> oder <strong>transientworkflowcompleted</strong>) geändert wurden, befolgen Sie die nachstehenden Schritte, um sie an die neue Struktur anzupassen:</p>
     <ol>
-     <li>Die aktualisierte E-Mail-Vorlage sollte aus <strong><code>/etc/dam/workflow/notification/email/downloadasset</code></strong> nach <strong><code>/apps/settings/dam/workflow/notification/email/downloadasset</code></strong> kopiert werden
+     <li>Die aktualisierte E-Mail-Vorlage sollte von <strong><code>/etc/dam/workflow/notification/email/downloadasset</code></strong> nach kopiert werden. <strong><code>/apps/settings/dam/workflow/notification/email/downloadasset</code></strong>
       <ol>
        <li>Da sich das Ziel in <strong> <code>/apps</code></strong> befindet, sollte diese Änderung in SCM erhalten bleiben.</li>
       </ol> </li>
-     <li>Entfernen Sie den Ordner <code>/etc/dam/workflow/notification/email/downloadasset </code>, nachdem die darin enthaltenen E-Mail-Vorlagen verschoben wurden.<br />
+     <li>Entfernen Sie den Ordner <code>/etc/dam/workflow/notification/email/downloadasset </code>nachdem die darin enthaltenen E-Mail-Vorlagen verschoben wurden.<br />
       <ol>
        <li>Wenn keine Aktualisierungen der E-Mail-Vorlage unter <strong> <code>/etc</code></strong> vorgenommen wurden, kann der Ordner entfernt werden, da die ursprüngliche E-Mail-Vorlage als Bestandteil der AEM 6,4-Installation unter <strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> vorhanden ist.</li>
       </ol> </li>
@@ -181,11 +190,11 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/hel
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
    <td><p>Wenn die E-Mail-Vorlage vom Kunden geändert wurde, sollte sie anschließend an die neue Repository-Struktur angepasst werden:</p>
     <ol>
-     <li>Die aktualisierte E-Mail-Vorlage sollte aus <strong><code>/etc/dam/adhocassetshare</code></strong> nach <strong><code>/apps/settings/dam/adhocassetshare</code></strong> kopiert werden
+     <li>Die aktualisierte E-Mail-Vorlage sollte von <strong><code>/etc/dam/adhocassetshare</code></strong> nach kopiert werden. <strong><code>/apps/settings/dam/adhocassetshare</code></strong>
       <ol>
        <li>Da sich das Ziel in <strong><code>/apps</code></strong> befindet, sollte diese Änderung in SCM erhalten bleiben.</li>
       </ol> </li>
-     <li>Entfernen Sie den Ordner <strong><code>/etc/dam/adhocassetshare</code></strong>, nachdem die darin enthaltenen E-Mail-Vorlagen verschoben wurden.<br />
+     <li>Entfernen Sie den Ordner <strong><code>/etc/dam/adhocassetshare</code></strong> , nachdem die darin enthaltenen E-Mail-Vorlagen verschoben wurden.<br />
       <ol>
        <li>Wenn keine Aktualisierungen der E-Mail-Vorlage unter <strong> <code>/etc</code></strong> vorgenommen wurden, kann der Ordner entfernt werden, da die ursprüngliche E-Mail-Vorlage als Bestandteil der AEM 6,4-Installation unter <strong><code>/libs/settings/dam/adhocassetshare</code></strong> vorhanden ist.</li>
       </ol> </li>
@@ -214,7 +223,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/hel
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
    <td><p>So nehmen Sie eine Anpassung an eine neue Repository-Struktur vor:</p>
     <ol>
-     <li>Kopieren Sie alle benutzerdefinierten oder geänderten Skripte aus <strong><code>/etc/dam/indesign/scripts</code></strong> nach <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br />.
+     <li>Kopieren Sie alle benutzerdefinierten oder geänderten Skripte aus <strong><code>/etc/dam/indesign/scripts</code></strong> nach <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br />
       <ol>
        <li>Kopieren Sie nur neue oder geänderte Skripte, da die von AEM bereitgestellten unveränderten Skripte über <strong><code>/libs/settings</code></strong> in AEM 6.5 zur Verfügung stehen.</li>
       </ol> </li>

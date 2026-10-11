@@ -10,13 +10,20 @@ exl-id: c9b34b00-525d-4ca3-bd18-11bb7ce66787
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1169'
 ht-degree: 1%
-
 ---
-
 # Kalenderfunktion {#calendar-feature}
 
 ## Einführung {#introduction}
@@ -38,7 +45,7 @@ und ziehen Sie sie auf eine Seite, z. B. eine Position relativ zur Funktion, die
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen Client-seitigen &#x200B;](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) enthalten sind, wird die `Calendar` Komponente wie folgt angezeigt.
+Wenn die [erforderlichen Client-seitigen ](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) enthalten sind, wird die `Calendar` Komponente wie folgt angezeigt.
 
 ![calendar-component](assets/calendar-component.png)
 
@@ -92,7 +99,7 @@ Geben **auf der Registerkarte** Einstellungen“ an, ob Tags auf Kalendereinträ
 
 * **Max. Größe der angehängten Bilddatei**
 
-  Nur relevant, wenn Datei-Uploads zulassen aktiviert ist. Maximale Anzahl an Byte, die eine hochgeladene Bilddatei aufweisen darf. Der Standardwert lautet 2097152 **&#x200B; &#x200B;** (2 MB).
+  Nur relevant, wenn Datei-Uploads zulassen aktiviert ist. Maximale Anzahl an Byte, die eine hochgeladene Bilddatei aufweisen darf. Der Standardwert lautet 2097152** ** (2 MB).
 
 * **Zulässige Cover-Bildtypen**
 
@@ -120,7 +127,7 @@ Geben **auf der Registerkarte** Einstellungen“ an, ob Tags auf Kalendereinträ
 
 * **Erlauben Sie vorgestellte Inhalte**
 
-  Wenn diese Option aktiviert ist, kann die Idee als [vorgestellter Inhalt“ identifiziert &#x200B;](/help/communities/featured.md). Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, kann die Idee als [vorgestellter Inhalt“ identifiziert ](/help/communities/featured.md). Standard ist deaktiviert.
 
 Geben **auf der Registerkarte** Benutzermoderation) an, wie die veröffentlichten Themen und Antworten (benutzergenerierte Inhalte) verwaltet werden sollen. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
@@ -164,7 +171,7 @@ Auf der Registerkarte **Tag** sind die Tags, die angewendet werden können, wenn
 
 * **Vorschlagslimit**
 
-  Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht. Der Standardwert ist **-**&#x200B;1 (keine Beschränkungen).
+  Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht. Der Standardwert ist **-**1 (keine Beschränkungen).
 
 >[!NOTE]
 >

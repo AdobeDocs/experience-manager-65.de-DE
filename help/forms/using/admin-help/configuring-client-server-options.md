@@ -9,13 +9,24 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 579c90bb4d8ee8a3b7e633ecc9fb0b797b297ca2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '10377'
+source-wordcount: '10381'
 ht-degree: 97%
-
 ---
-
 # Konfigurieren des Dokumentensicherheits-Servers {#configure-the-document-security-server}
 
 >[!NOTE]
@@ -63,13 +74,13 @@ Wenn Sie diese Option auswählen, können Client-Anwendungen die erweiterte Auth
 >
 > Die externe Browser-Authentifizierung ist in AEM Forms on JEE Service Pack 6.5.25.0 und höher verfügbar. Wenn Sie Service Pack 6.5.24.0 oder früher verwenden, aktualisieren Sie auf Service Pack 6.5.25.0 oder installieren Sie den entsprechenden JEE-Hotfix-Patch. Siehe [Konfigurieren der erweiterten Authentifizierung über einen externen Browser für Document Security](/help/forms/using/admin-help/configure-external-browser-authentication-document-security.md).
 
-***Hinweis &#x200B;**: Erweiterte Authentifizierung wird auf Apple Mac OS X mit Adobe Acrobat ab Version 11.0.6 unterstützt.*
+***Hinweis **: Erweiterte Authentifizierung wird auf Apple Mac OS X mit Adobe Acrobat ab Version 11.0.6 unterstützt.*
 
 **Bevorzugte HTML-Kontrollbreite für erweiterte Authentifizierung** Geben Sie die Breite des Dialogfelds für erweiterte Authentifizierung an, das in Acrobat zur Eingabe von Benutzeranmeldeinformationen geöffnet wird.
 
 **Bevorzugte HTML-Steuerelementhöhe für erweiterte Authentifizierung** Geben Sie die Höhe des Dialogfelds für die erweiterte Authentifizierung an, das in Acrobat zur Eingabe von Benutzeranmeldeinformationen geöffnet wird.
 
-***Hinweis &#x200B;**: Die Grenzen der Breite und Höhe für dieses Dialogfeld sind wie folgt:*
+***Hinweis **: Die Grenzen der Breite und Höhe für dieses Dialogfeld sind wie folgt:*
 Breite: Minimum = 400, Maximum = 900
 
 Höhe: Minimum = 450; Maximum = 800
@@ -92,7 +103,7 @@ Diese Liste wird dem Richtliniensatzkoordinator angezeigt und dient zum Einschr�
 
 1. Richten Sie nach der Installation und Konfiguration der AEM Forms-Umgebung mit Document Security alle gewünschten Domains in User Management ein. <!-- Fix broken link (See Setting up and managing domains) -->
 
-   ***Hinweis &#x200B;**: Das Erstellen von Domains muss vor dem Erstellen von Richtlinien erfolgen.*
+   ***Hinweis **: Das Erstellen von Domains muss vor dem Erstellen von Richtlinien erfolgen.*
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Document Management“ > „Richtlinien“ und dann auf die Registerkarte „Richtliniensätze“.
 1. Wählen Sie den globalen Richtliniensatz aus und klicken Sie auf die Registerkarte „Sichtbare Benutzer und Gruppen“.
@@ -396,7 +407,7 @@ Bevor Sie beginnen, müssen Sie sicherstellen, dass das Server-Auditing aktivier
 1. Um das erweiterte Nutzungs-Tracking zu konfigurieren, wählen Sie unter „Verfolgung aktivieren“ „Ja“ oder „Nein“ aus.
 1. Um die Option zum Zulassen der Sammlung von detaillierten Nutzungsdaten auf der Anmeldeseite zu konfigurieren, wählen Sie unter „Verfolgung standardmäßig aktivieren“ die Option „Ja“ oder „Nein“ aus.
 
-Zum Anzeigen der verfolgten Ereignisse können Sie den Filter „Dokumentereignisse“ auf der Ereignisseite verwenden. Die Ereignisse, die mithilfe von JavaScript verfolgt werden, werden als detailliertes Nutzungs-Tracking bezeichnet. Unter [Ereignisse überwachen](/help/forms/using/admin-help/monitoring-events.md#monitoring-events) finden Sie weitere Informationen zu Ereignissen.
+Zum Anzeigen der verfolgten Ereignisse können Sie den Filter „Dokumentereignisse“ auf der Ereignisseite verwenden. Die Ereignisse, die mithilfe von JavaScript verfolgt werden, werden als detailliertes Nutzungs-Tracking bezeichnet. Unter [Überwachen von Ereignissen](/help/forms/using/admin-help/monitoring-events.md#monitoring-events) finden Sie weitere Informationen zu Ereignissen.
 
 ## Konfigurieren der Anzeigeeinstellungen für die Dokumentensicherheit {#configure-document-security-display-settings}
 
@@ -474,10 +485,10 @@ Einige Client-Anwendungen unterstützen möglicherweise keine dynamischen Wasser
 * Sie können kein kennwortgeschütztes PDF-Dokument als Wasserzeichenelement verwenden.
 * Acrobat- und Adobe Reader-Versionen (niedriger als Version 10) unterstützen folgende Wasserzeichenfunktionen nicht:
 
-   * PDF-Wasserzeichen.
-   * Mehrere Elemente im Wasserzeichen (Text/PDF).
-   * Erweiterte Optionen wie Seitenbereich oder Anzeigeoptionen.
-   * Textformatierungsoptionen wie die Angabe der Schrift, des Schriftnamens und der Schriftfarbe. Immerhin zeigen niedrigere Versionen von Acrobat und Reader den Textinhalt in der Standardschrift und -farbe an.
+  * PDF-Wasserzeichen.
+  * Mehrere Elemente im Wasserzeichen (Text/PDF).
+  * Erweiterte Optionen wie Seitenbereich oder Anzeigeoptionen.
+  * Textformatierungsoptionen wie die Angabe der Schrift, des Schriftnamens und der Schriftfarbe. Immerhin zeigen niedrigere Versionen von Acrobat und Reader den Textinhalt in der Standardschrift und -farbe an.
 
 * Acrobat 9.0 und niedrigere Versionen: Acrobat 9.0 und niedrigere Versionen unterstützen keine Richtliniennamen in dynamischen Wasserzeichen. Wenn Acrobat 9.0 ein richtliniengeschütztes Dokument mit einem dynamischen Wasserzeichen öffnet, das einen Richtliniennamen oder andere dynamische Daten enthält, wird das Wasserzeichen ohne den Richtliniennamen angezeigt. Wenn das dynamische Wasserzeichen nur den Richtliniennamen enthält, zeigt Acrobat eine Fehlermeldung an.
 
@@ -493,7 +504,7 @@ Sie können Vorlagen für dynamische Wasserzeichen erstellen. Diese Vorlagen ble
 1. Klicken Sie auf Neu.
 1. Geben Sie in das Feld „Name“ einen Namen für das neue Wasserzeichen ein.
 
-   ***Hinweis &#x200B;**: Einige Sonderzeichen können nicht in den Namen oder Beschreibungen von Wasserzeichen oder Wasserzeichenelementen verwendet werden. Weitere Informationen zu den Einschränkungen finden Sie unter [Überlegungen zum Bearbeiten von Richtlinien](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
+   ***Hinweis **: Einige Sonderzeichen können nicht in den Namen oder Beschreibungen von Wasserzeichen oder Wasserzeichenelementen verwendet werden. Weitere Informationen zu den Einschränkungen finden Sie unter [Überlegungen zum Bearbeiten von Richtlinien](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
 
 1. Geben Sie unter „Name“ neben dem Pluszeichen einen aussagekräftigen Namen für das Wasserzeichenelement ein, z. B. „Kopfzeile“. Fügen Sie dann eine neue Beschreibung hinzu. Anschließend klicken Sie auf das Pluszeichen, um die Optionen anzuzeigen.
 1. Wählen Sie unter „Quelle“ den Typ des Wasserzeichens aus, entweder „Text“ oder „PDF“.
@@ -502,11 +513,11 @@ Sie können Vorlagen für dynamische Wasserzeichen erstellen. Diese Vorlagen ble
    * Wählen Sie die zu berücksichtigenden Wasserzeichentypen aus. Wenn Sie „Benutzerdefinierter Text“ auswählen, geben Sie in das Feld daneben den für das Wasserzeichen anzuzeigenden Text ein. Beachten Sie die Textlänge des Wasserzeichens.
    * Geben Sie die Eigenschaften für die Textformatierung wie Schriftartname, Schriftgröße und Vorder- sowie Hintergrundfarbe für den Textinhalt des Wasserzeichentextes an. Geben Sie die Vorder- und Hintergrundfarbe als Hexadezimalwerte an.
 
-     ***Hinweis &#x200B;**: Wenn Sie die Skalierungsoption als „An Seite anpassen“ wählen, steht die Eigenschaft der Schriftgröße nicht zur Bearbeitung zur Verfügung.*
+     ***Hinweis **: Wenn Sie die Skalierungsoption als „An Seite anpassen“ wählen, steht die Eigenschaft der Schriftgröße nicht zur Bearbeitung zur Verfügung.*
 
 1. Wenn Sie „PDF“ für komplexe Wasserzeichen ausgewählt haben, klicken Sie neben der Option „Wasserzeichen-PDF auswählen“ auf **Durchsuchen**, um das PDF -Dokument auszuwählen, das als Wasserzeichen verwendet werden soll.
 
-   ***Hinweis &#x200B;**: Verwenden Sie kein kennwortgeschütztes PDF-Dokument. Wenn Sie ein kennwortgeschütztes PDF als Wasserzeichenelement angeben, wird das Wasserzeichen nicht angewendet.*
+   ***Hinweis **: Verwenden Sie kein kennwortgeschütztes PDF-Dokument. Wenn Sie ein kennwortgeschütztes PDF als Wasserzeichenelement angeben, wird das Wasserzeichen nicht angewendet.*
 
 1. Wählen Sie für „Als Hintergrund verwenden“ entweder „Ja“ oder „Nein“ aus.
 
@@ -588,9 +599,9 @@ Sie können die Registrierung bei der Dokumentensicherheit auf bestimmte externe
 
 Die folgenden Einstellungen befinden sich im Bereich „Filter für E-Mail-Adressen“ auf der Seite „Registrierung für eingeladene Benutzer“.
 
-**Ausschluss:** Geben Sie die E-Mail-Adresse eines Benutzers oder einer Gruppe ein, die Sie ausschließen möchten. Um mehrere Benutzende oder Gruppen auszuschließen, geben Sie jede E-Mail-Adresse in eine neue Zeile ein. Um alle Benutzer, die zu einer bestimmten Domain gehören, auszuschließen, geben Sie einen Platzhalter und den Domain-Namen ein. Um beispielsweise alle Benutzer in der Domain example.com auszuschließen, geben Sie &ast;.example.com ein.
+**Ausschluss:** Geben Sie die E-Mail-Adresse eines Benutzers oder einer Gruppe ein, die Sie ausschließen möchten. Um mehrere Benutzende oder Gruppen auszuschließen, geben Sie jede E-Mail-Adresse in eine neue Zeile ein. Um alle Benutzer, die zu einer bestimmten Domain gehören, auszuschließen, geben Sie einen Platzhalter und den Domain-Namen ein. Um beispielsweise alle Benutzer in der Domain example.com auszuschließen, geben Sie &amp;ast;.example.com ein.
 
-**Einbeziehung:** Geben Sie die E-Mail-Adresse eines Benutzers oder einer Gruppe ein, die Sie einbeziehen möchten. Um mehrere Benutzende oder Gruppen einzubeziehen, geben Sie jede E-Mail-Adresse in eine neue Zeile ein. Um alle Benutzer, die zu einer bestimmten Domäne gehören, einzubeziehen, geben Sie einen Platzhalter und den Domänennamen ein. Um beispielsweise alle Benutzer in die Domain example.com einzuschließen, geben Sie &ast;.example.com ein.
+**Einbeziehung:** Geben Sie die E-Mail-Adresse eines Benutzers oder einer Gruppe ein, die Sie einbeziehen möchten. Um mehrere Benutzende oder Gruppen einzubeziehen, geben Sie jede E-Mail-Adresse in eine neue Zeile ein. Um alle Benutzer, die zu einer bestimmten Domäne gehören, einzubeziehen, geben Sie einen Platzhalter und den Domänennamen ein. Um beispielsweise alle Benutzer in die Domain example.com einzuschließen, geben Sie &amp;ast;.example.com ein.
 
 ### Server- und Registrierungskontoparameter {#server-and-registration-account-parameters}
 
@@ -955,7 +966,7 @@ In diesem Beispiel werden alle Anforderungen von einer Microsoft PowerPoint 2007
 
 Standardmäßig können Sie in einem Wasserzeichen maximal fünf Elemente angeben. Die maximale Dateigröße des PDF-Dokuments, das Sie als Wasserzeichen verwenden möchten, ist auf 100 KB beschränkt. Sie können diese Parameter in der Datei config.xml ändern.
 
-***Hinweis &#x200B;**: Sie sollten diese Parameter mit Vorsicht ändern.*
+***Hinweis **: Sie sollten diese Parameter mit Vorsicht ändern.*
 
 1. Exportieren Sie die Document Security-Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Konfigurationsdatei für die Dokumentensicherheit](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Öffnen Sie die Konfigurationsdatei in einem Editor und suchen Sie den Knoten `ServerSettings`.

@@ -9,13 +9,27 @@ exl-id: 98c96349-f253-475f-b646-352269814a38
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1396'
-ht-degree: 100%
-
+source-wordcount: '1428'
+ht-degree: 98%
 ---
-
 # Strategie für Sicherung und Wiederherstellung in einer Cluster-Umgebung {#strategy-for-backup-and-restore-in-a-clustered-environment}
 
 >[!NOTE]
@@ -43,7 +57,7 @@ In diesem Thema werden die folgenden Strategien zum Sichern von AEM Forms-Cluste
 
 ### Offline-Sicherung mit Ausfallzeit {#offline-backup-with-downtime}
 
-1. Fahren Sie das gesamte Cluster und die zugehörigen Dienste herunter. (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Fahren Sie das gesamte Cluster und die zugehörigen Dienste herunter. (siehe [Starten und Stoppen von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Sichern Sie auf jedem Knoten die Datenbank, den globalen Dokumentenspeicher und die Connectoren. (siehe [Zu sichernde und wiederherzustellende Dateien](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Um das AEM-Repository offline zu sichern, führen Sie die folgenden Schritte aus:
 
@@ -62,7 +76,7 @@ In diesem Thema werden die folgenden Strategien zum Sichern von AEM Forms-Cluste
 
    Verlassen Sie den kontinuierlichen Sicherungsmodus nach einer Wiederherstellung.
 
-1. Beenden Sie die sekundären Knoten des Clusters mit Bezug zu AEM. (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Beenden Sie die sekundären Knoten des Clusters mit Bezug zu AEM. (siehe [Starten und Stoppen von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Sichern Sie auf jedem Knoten die Datenbank, den globalen Dokumentenspeicher und die Connectoren. (siehe [Zu sichernde und wiederherzustellende Dateien](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Um das AEM-Repository offline zu sichern, führen Sie die folgenden Schritte aus:
 
@@ -81,7 +95,7 @@ In diesem Thema werden die folgenden Strategien zum Sichern von AEM Forms-Cluste
 
    Verlassen Sie den kontinuierlichen Sicherungsmodus nach einer Wiederherstellung.
 
-1. Beenden Sie die sekundären Knoten des Clusters mit Bezug zu AEM. (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Beenden Sie die sekundären Knoten des Clusters mit Bezug zu AEM. (siehe [Starten und Stoppen von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Sichern Sie auf jedem Knoten die Datenbank, den globalen Dokumentenspeicher und die Connectoren. (siehe [Zu sichernde und wiederherzustellende Dateien](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Um das AEM-Repository online zu sichern, führen Sie die folgenden Schritte aus:
 
@@ -112,7 +126,7 @@ Führen Sie die folgenden Schritte aus, wenn der gesamte Cluster aufgrund von Fe
 
 ### Wiederherstellen eines einzelnen Knotens {#restoring-a-single-node}
 
-1. Beenden Sie den beschädigten Knoten.
+1. Stoppen Sie den beschädigten Knoten.
 
    >[!NOTE]
    >
@@ -141,12 +155,12 @@ Führen Sie die folgenden Schritte aus, wenn der gesamte Cluster aufgrund von Fe
 >Bedenken Sie die folgenden Punkte:
 
 * Wenn der fehlgeschlagene Knoten ein AEM-Primärknoten war, kopieren Sie den gesamten Inhalt des sekundären Repository-Ordners („crx-repository\crx.0000“, wobei „0000“ eine beliebige Zahl sein kann) in den Repository-Ordner „crx-repository\“ und löschen Sie den sekundären Repository-Ordner.
-* Bevor Sie einen Clusterknoten neu starten, stellen Sie sicher, dass Sie das Repository „/clustered.txt“ auf dem Primärknoten löschen.
+* Bevor Sie einen Cluster-Knoten neu starten, achten Sie darauf, dass Sie das Repository „/clustered.txt“ vom primären Knoten löschen.
 * Stellen Sie sicher, dass der primäre Knoten zuerst gestartet wird, und starten Sie die anderen Knoten erst, wenn er vollständig hochgefahren ist.
 
 ### Wiederherstellen des gesamten Clusters {#restoring-the-entire-cluster}
 
-1. Beenden Sie alle Cluster-Knoten.
+1. Stoppen Sie alle Cluster-Knoten.
 1. Erstellen Sie das physische System von einem Systemabbild neu.
 1. Wenden Sie Patches oder Aktualisierungen auf AEM Forms an, die seit der Erstellung des Bildes angewendet wurden. Diese Informationen wurden in Schritt 1 des Backups erfasst. AEM Forms müssen auf derselben Patch-Ebene wiederhergestellt werden, auf der das System gesichert wurde.
 1. Stellen Sie die Datenbank, den globalen Dokumentenspeicher und Connectoren wieder her.
@@ -163,7 +177,7 @@ Führen Sie die folgenden Schritte aus, wenn der gesamte Cluster aufgrund von Fe
    1. Löschen Sie die Datei clusterNode/revision.log auf allen Cluster-Knoten.
    1. Löschen Sie die .lock-Datei auf allen Cluster-Knoten, falls vorhanden.
    1. Löschen Sie Datei repository/system.id auf allen Cluster-Knoten, falls vorhanden.
-   1. Löschen Sie die Dateien „*/listener.properties“ auf allen Cluster-Knoten, falls vorhanden.
+   1. Löschen Sie die Dateien &amp;ast;&amp;ast;/listener.properties auf allen Cluster-Knoten, falls vorhanden.
    1. Stellen Sie repository/cluster_node.id für einzelne Cluster-Knoten wieder her.
 
 >[!NOTE]
@@ -171,7 +185,7 @@ Führen Sie die folgenden Schritte aus, wenn der gesamte Cluster aufgrund von Fe
 >Bedenken Sie die folgenden Punkte:
 
 * Wenn der ausgefallene Knoten ein AEM-Primärknoten war, kopieren Sie den gesamten Inhalt aus dem sekundären Repository-Ordner (er hat die Form „crx-repository\crx.0000“, wobei „0000“ beliebigen Ziffern entsprechen kann) in den Repository-Ordner „crx-repository\“.
-* Bevor Sie einen Cluster-Knoten neu starten, achten Sie darauf, dass Sie das Repository „/clustered.txt“ vom primären Knoten löschen.
+* Bevor Sie einen Clusterknoten neu starten, stellen Sie sicher, dass Sie das Repository „/clustered.txt“ auf dem Primärknoten löschen.
 * Stellen Sie sicher, dass der primäre Knoten zuerst gestartet wird, und starten Sie die anderen Knoten erst, wenn er vollständig hochgefahren ist.
 
 ## Sichern und Wiederherstellen des Veröffentlichungsknotens der Correspondence Management Solution {#back-up-and-restore-correspondence-management-solution-publish-node}

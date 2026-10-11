@@ -15,9 +15,16 @@ product_v2:
 feature_v2:
   - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
     internal-label: AI Tools
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
@@ -34,7 +41,7 @@ topic_v2:
     internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a6f7741fe575a194732abee7dfc9c531d1c58cc2
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 79%
@@ -62,7 +69,7 @@ Er ist direkt in AEM eingebettet und kann über die AEM Experience Hub-, Cloud M
 
 Das folgende Video (3 Minuten und 25 Sekunden lang) bietet eine schrittweise Anleitung zum KI-Assistenten in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475367/?captions=ger&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## Zugriff auf den KI-Assistenten in AEM erhalten{#get-access}
 
@@ -77,7 +84,7 @@ Um Zugriff auf den KI-Assistenten in AEM zu erhalten, müssen Kundinnen und Kund
 
 **So erhalten Sie Zugriff auf den KI-Assistenten in AEM:**
 
-1. Kundinnen und Kunden müssen über eine Zusatzvereinbarung verfügen, um auf die meisten KI-gestützten und Agent-basierten Funktionen in Adobe Experience Manager zugreifen zu können. Weitere Informationen erhalten Sie vom Adobe-Support-Personal. Informationen zur Funktionsweise der Aktivierung generativer KI finden Sie unter [Generative KI in CX Enterprise-Programmen](https://experienceleague.adobe.com/de/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai).
+1. Kundinnen und Kunden müssen über eine Zusatzvereinbarung verfügen, um auf die meisten KI-gestützten und Agent-basierten Funktionen in Adobe Experience Manager zugreifen zu können. Weitere Informationen erhalten Sie vom Adobe-Support-Personal. Informationen zur Funktionsweise der Aktivierung generativer KI finden Sie unter [Generative KI in CX Enterprise-Programmen](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai).
 
 1. Sobald Ihr Unternehmen über diese Vereinbarung verfügt, können alle Benutzer standardmäßig den KI-Assistenten für Produktkenntnisse verwenden. Es sind keine zusätzlichen Berechtigungen pro Benutzer oder pro Gruppe erforderlich.
 
@@ -113,7 +120,7 @@ Produktkenntnisse umfassen Konzepte und Themen, die aus der Dokumentation zu Ado
 | Gezieltes Lernen | <ul><li>Was ist der universelle Editor?</li><li>Wie erstelle ich ein Programm in Cloud Manager?</li></ul> |
 | Erkennung öffnen | <ul><li>Wie verwende ich den universellen Editor?</li><li>Gibt es eine Möglichkeit, Inhalte von einer Umgebung in eine andere zu kopieren?</li></ul> |
 | Fehlerbehebung | <ul><li>Warum kann ich nicht auf den universellen Editor zugreifen?</li><li>Warum schlägt meine Pipeline fehl?</li></ul> |
-| **Erstellung von Support-Tickets** | **Nur für Support-Admins verfügbar &#x200B;**<br>**Beispiele** |
+| **Erstellung von Support-Tickets** | **Nur für Support-Admins verfügbar **<br>**Beispiele** |
 | Automatisierte Erstellung von Support-Tickets zur Erfassung des Verlaufs und Kontexts des KI-Assistenten | <ul><li>Erstelle ein Support-Ticket für mich.</li></ul> |
 | Status von Support-Ticket abrufen | <ul><li>Zeige mir alle Support-Tickets, die ich geöffnet habe.</li><li>Zeige mir den Status von Ticket „E-----------“</li></ul> |
 

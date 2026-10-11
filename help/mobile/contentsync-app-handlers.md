@@ -1,19 +1,21 @@
 ---
 title: Vorkonfigurierte App-Handler
-
 description: Auf dieser Seite erfahren Sie mehr über die nativen Handler für Adobe PhoneGap Enterprise mit AEM.
-
-
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 0%
@@ -65,8 +67,8 @@ Dieser Handler sollte zu jeder ContentSync-Konfiguration für AEM-Apps hinzugef�
 
 * ***type - String - mobilecontentlisting***
 * ***path*** - Zeichenfolge - leer lassen, muss vorhanden sein, um als gültiger Handler erkannt zu werden, der Pfad wird jedoch als aktueller ContentSync-Cache abgeleitet. Dieser Wert wird ignoriert.
-* ***targetRootDirectory* -**&#x200B;String - Das Präfix, das Pfaden als Zielstamm für die Inhaltsaktualisierung für diesen Handler hinzugefügt werden soll.
-* ***order - Long* -**&#x200B;Reihenfolge, in der ContentSync diesen Handler ausführt. Diese Zahl sollte höher als bei allen anderen Handlern (z. B. 100) eingestellt werden. Sie sollte nach herkömmlichen Inhalts-Handlern ausgeführt werden.
+* ***targetRootDirectory* -**String - Das Präfix, das Pfaden als Zielstamm für die Inhaltsaktualisierung für diesen Handler hinzugefügt werden soll.
+* ***order - Long* -**Reihenfolge, in der ContentSync diesen Handler ausführt. Diese Zahl sollte höher als bei allen anderen Handlern (z. B. 100) eingestellt werden. Sie sollte nach herkömmlichen Inhalts-Handlern ausgeführt werden.
 
 ```xml
 {
@@ -91,9 +93,9 @@ Dieser Handler sollte zu jeder ContentSync-Konfiguration für AEM-Apps hinzugef�
 Der Handler sollte in der ContentSync-Konfiguration der AEM-App-Shell (Knoten mit „page-type=app-instance„) verwendet werden
 
 * ***type - String - mobilecontentpaketlisting***
-* ***path &#x200B;**-**String*** - Pfad zu einer App-Shell (Knoten mit pge-type=app-instance).
+* ***path **-**String*** - Pfad zu einer App-Shell (Knoten mit pge-type=app-instance).
 * ***targetRootDirectory - String*** - das Präfix, das Pfaden als Zielstamm für die Inhaltsaktualisierung für diesen Handler hinzugefügt werden soll.
-* ***order - Long* -**&#x200B;Reihenfolge für ContentSync, um diesen Handler auszuführen. Diese Zahl sollte höher als bei allen anderen Handlern (z. B. 100) eingestellt werden. Sie sollte nach herkömmlichen Inhalts-Handlern ausgeführt werden.
+* ***order - Long* -**Reihenfolge für ContentSync, um diesen Handler auszuführen. Diese Zahl sollte höher als bei allen anderen Handlern (z. B. 100) eingestellt werden. Sie sollte nach herkömmlichen Inhalts-Handlern ausgeführt werden.
 
 >[!NOTE]
 >
@@ -125,8 +127,8 @@ Der Handler sollte in der ContentSync-Konfiguration der AEM-App-Shell (Knoten mi
 
 Dieser Handler sollte in einer Shell-ContentSync-Konfiguration der AEM-App verwendet werden (Knoten mit pge-type=[app-instance]).
 
-* ***type - Zeichenfolge* - &#x200B;** widgetConfig
-* ***path &#x200B;**-**String*** - Pfad zu einem beliebigen untergeordneten App-Shell-Knoten (Knoten mit pge-type=[app-instance]).
+* ***type - Zeichenfolge* - **widgetConfig
+* ***path **-**String*** - Pfad zu einem beliebigen untergeordneten App-Shell-Knoten (Knoten mit pge-type=[app-instance]).
 * ***targetRootDirectory - String*** - das Präfix, das Pfaden als Zielstamm für die Inhaltsaktualisierung für diesen Handler hinzugefügt werden soll.
 * ***targetIconDirectory - String*** - der Ordner, in dem die Symbole für die App platziert werden sollen
 
@@ -167,7 +169,7 @@ AEM-Eigenschaften sind diejenigen, die durch „cq“, „sling“ oder „jcr�
 
 * ***type - Zeichenfolge*** - app-assets
 
-* ***path &#x200B;**-**String*** - Pfad zu einem Speicherort unter einer Anwendungsinstanz, in dem Anwendungselemente gespeichert werden
+* ***path **-**String*** - Pfad zu einem Speicherort unter einer Anwendungsinstanz, in dem Anwendungselemente gespeichert werden
 
 **mobileAppOffers** Für den Personalization-Anwendungsfall zum Rendern zielgerichteter Inhalte wurde ein neuer Inhaltssynchronisierungs-Handler eingeführt. Der Handler &#39;mobileAppOffers&#39; weiß, wie die zugehörigen Zielangebote gerendert werden, die vom Inhaltsautor erstellt wurden. Der mobileAppOffers-Handler erweitert den Handler zur Aktualisierung abstrakter Seiten, sodass viele Eigenschaften ähnlich sind. Die Details des MobileAppOffers-Handlers haben die folgenden Eigenschaften.
 
@@ -180,7 +182,7 @@ Der MobileAppsOffers-Handler erweitert den MobileAppsPages-Handler und fügt die
 
 **mobileAppConfig** Der Inhaltssynchronisierungs-Handler für mobileAppConfig bietet eine Möglichkeit, JSON-Daten in die Datei „MobileAppsConfig.json“ einzufügen. Um eine Anbieterklasse zu registrieren, fügen Entwickler ihre MobileAppsInfoProvider-Klasse mit der Liste der Anbieter hinzu. Der Handler durchläuft die Liste der MobileAppsInfoProviders und ermöglicht es dem Provider, Daten in die resultierende JSON-Datei einzufügen. Folgende Eigenschaften werden von diesem Handler unterstützt:
 
-* ***path &#x200B;**-**String*** - der Pfad zu einem App-Instanzknoten mit pge-type=app-instance oder einem RT, der /libs/mobileapps/core/components/instance erweitert
+* ***path **-**String*** - der Pfad zu einem App-Instanzknoten mit pge-type=app-instance oder einem RT, der /libs/mobileapps/core/components/instance erweitert
 * ***providers - String*** `[]` - die Liste der vollständig qualifizierten MobileAppsInfoProvider
 * ***targetRootDirectory - String*** - der Ordner, in den die MobileAppsConfig.json-Datei geschrieben werden soll.
 * **fileName - Zeichenfolge** - Optionaler Name der Datei, in die die JSON geschrieben werden soll, standardmäßig MobileAppsConfig.json

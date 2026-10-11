@@ -10,13 +10,20 @@ exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '993'
 ht-degree: 2%
-
 ---
-
 # Verwenden von Kommentaren {#using-comments}
 
 ## Einführung {#introduction}
@@ -42,7 +49,7 @@ und ziehen Sie sie auf eine Seite, z. B. eine Position relativ zum Feature, zu d
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen Client-seitigen &#x200B;](/help/communities/essentials-comments.md#essentials-for-client-side) enthalten sind, wird die `Comments` Komponente wie folgt angezeigt.
+Wenn die [erforderlichen Client-seitigen ](/help/communities/essentials-comments.md#essentials-for-client-side) enthalten sind, wird die `Comments` Komponente wie folgt angezeigt.
 
 ![comments-component](assets/comments-component.png)
 
@@ -178,7 +185,7 @@ Geben **auf der Registerkarte** Ressourcentypen“ den benutzerdefinierten resou
 
 * **Systemressourcentyp kommentieren**
 
-  Navigieren Sie zum resourceType einer erweiterten Komponente `comments`Kommentarsystem) in /apps. Leer lassen, es sei denn, [&#x200B; Seitenvorlage fügt &#x200B;](/help/communities/scf.md#add-or-include-a-communities-component) Kommentarsystem dem zugrunde liegenden Skript hinzu, anstatt zur Seite als Ressource hinzugefügt zu werden (Knoten „comments„). Weitere Informationen finden Sie im Abschnitt über den [`{{include}}` Helper](/help/communities/handlebars-helpers.md#include).
+  Navigieren Sie zum resourceType einer erweiterten Komponente `comments`Kommentarsystem) in /apps. Leer lassen, es sei denn, [ Seitenvorlage fügt ](/help/communities/scf.md#add-or-include-a-communities-component) Kommentarsystem dem zugrunde liegenden Skript hinzu, anstatt zur Seite als Ressource hinzugefügt zu werden (Knoten „comments„). Weitere Informationen finden Sie im Abschnitt über den [`{{include}}` Helper](/help/communities/handlebars-helpers.md#include).
 
 ### Site-Besuchererlebnis {#site-visitor-experience}
 

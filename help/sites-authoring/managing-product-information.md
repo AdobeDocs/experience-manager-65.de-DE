@@ -9,13 +9,26 @@ exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2888'
+source-wordcount: '2905'
 ht-degree: 100%
-
 ---
-
 
 # Creative Project und PIM-Integration {#creative-project-and-pim-integration}
 
@@ -34,7 +47,7 @@ Insbesondere können Sie Creative Project zur Optimierung der folgenden Aufgaben
 
 ## Workflow „Produkt-Fotoshooting“  {#exploring-product-photo-shoot-workflows}
 
-Creative Project bietet mehrere Projektvorlagen, die unterschiedlichen Projektanforderungen gerecht werden. Die Vorlage **Projekt für Produkt-Fotoshooting** ist im Lieferumfang enthalten. Diese Vorlage stellt Fotoshooting-Workflows bereit, mit denen Sie Anfragen für Produkt-Fotoshootings einleiten und verwalten können.  Sie enthält darüber hinaus eine Reihe von Aufgaben, die es Ihnen ermöglichen, digitale Bilder für Produkte anhand geeigneter Bewertungs- und Bestätigungsabläufe zu erhalten.
+Creative Project bietet mehrere Projektvorlagen, die unterschiedlichen Projektanforderungen gerecht werden. Die Vorlage **Projekt für Produkt-Fotoshooting** ist im Lieferumfang enthalten. Diese Vorlage stellt Fotoshooting-Workflows bereit, mit denen Sie Anfragen für Produkt-Fotoshootings einleiten und verwalten können. Sie enthält darüber hinaus eine Reihe von Aufgaben, die es Ihnen ermöglichen, digitale Bilder für Produkte anhand geeigneter Bewertungs- und Bestätigungsabläufe zu erhalten.
 
 ## Erstellen eines Projekts für Produkt-Fotoshootings {#create-a-product-photo-shoot-project}
 
@@ -46,7 +59,7 @@ Creative Project bietet mehrere Projektvorlagen, die unterschiedlichen Projektan
 
    ![Projekt-Assistent](assets/chlimage_1-133a.png)
 
-1. Geben Sie Details zum Projekt einschließlich Titel, Beschreibung und Fälligkeitsdatum ein.  Fügen Sie Benutzende hinzu und weisen Sie ihnen verschiedene Rollen zu.  Sie können auch ein Miniaturbild für das Projekt hinzufügen.
+1. Geben Sie Details zum Projekt einschließlich Titel, Beschreibung und Fälligkeitsdatum ein. Fügen Sie Benutzende hinzu und weisen Sie ihnen verschiedene Rollen zu. Sie können auch ein Miniaturbild für das Projekt hinzufügen.
 
    ![Projektdetails](assets/chlimage_1-134a.png)
 
@@ -74,7 +87,7 @@ Der Workflow **Produkt-Fotoshooting (Commerce-Integration)** umfasst die folgend
 * Überprüfen und bestätigen
 * Zu Produktionsaufgabe wechseln
 
-Wenn in AEM keine Produktinformationen verfügbar sind, verwenden Sie den Workflow **Produkt-Fotoshooting**, um Bild-Assets den Produkten auf der Basis der Informationen zuzuordnen, die Sie in eine CSV-Datei hochladen. Die CSV-Datei muss grundlegende Produktinformationen wie zum Beispiel Produkt-ID, Kategorie und Beschreibung enthalten.  Der Workflow ruft bestätigte Assets für die Produkte ab.
+Wenn in AEM keine Produktinformationen verfügbar sind, verwenden Sie den Workflow **Produkt-Fotoshooting**, um Bild-Assets den Produkten auf der Basis der Informationen zuzuordnen, die Sie in eine CSV-Datei hochladen. Die CSV-Datei muss grundlegende Produktinformationen wie zum Beispiel Produkt-ID, Kategorie und Beschreibung enthalten. Der Workflow ruft bestätigte Assets für die Produkte ab.
 
 Dieser Workflow umfasst die folgenden Aufgaben:
 
@@ -86,7 +99,7 @@ Dieser Workflow umfasst die folgenden Aufgaben:
 
 Sie können diesen Workflow mit der Workflow-Konfigurationsoption anpassen.
 
-Beide Workflows umfassen Schritte zur Verknüpfung von Produkten mit ihren bestätigten Assets.  Jeder Workflow umfasst die folgenden Schritte:
+Beide Workflows umfassen Schritte zur Verknüpfung von Produkten mit ihren bestätigten Assets. Jeder Workflow umfasst die folgenden Schritte:
 
 * Workflow-Konfiguration: Beschreibt die Optionen zur Anpassung des Workflows
 * Starten eines Projekt-Workflows: Erläutert, wie ein Produkt-Fotoshooting gestartet wird
@@ -110,7 +123,7 @@ Die Aufgabenkarte stellt die folgenden Detailinformationen bereit:
 
 ![Aufgabenkarte](assets/chlimage_1-136a.png)
 
-Die Aufgabenliste stellt detaillierte Information zur aktuell aktiven Workflow-Aufgabe für das Projekt bereit. Um die Liste anzuzeigen, klicken Sie auf die Aufgabenkarte.  Die Aufgabenliste zeigt auch Metadaten wie Startdatum, Fälligkeitsdatum, Bevollmächtigter, Priorität und Status der Aufgabe an.
+Die Aufgabenliste stellt detaillierte Information zur aktuell aktiven Workflow-Aufgabe für das Projekt bereit. Um die Liste anzuzeigen, klicken Sie auf die Aufgabenkarte. Die Aufgabenliste zeigt auch Metadaten wie Startdatum, Fälligkeitsdatum, Bevollmächtigter, Priorität und Status der Aufgabe an.
 
 ![Aufgabenliste](assets/chlimage_1-137a.png)
 
@@ -229,7 +242,7 @@ Ein Produkt kann zu einer bestimmten Kategorie gehören. Die Produktkategorie ka
    ![Hochladen der Aufnahmenliste](assets/chlimage_1-151a.png)
 
 1. Klicken Sie auf die Schaltfläche **Aufnahmenliste hochladen**, um die CSV-Datei hochzuladen. Der Workflow erkennt diese Datei als eine Quelle, die zum Extrahieren von Produktdaten für die nächste Aufgabe verwendet werden kann.
-1. Laden Sie eine CSV-Datei hoch, die Produktinformationen im entsprechenden Format enthält.  Der Link **Hochgeladene Assets anzeigen** wird unterhalb der Karte angezeigt, nachdem die CSV-Datei hochgeladen wurde.
+1. Laden Sie eine CSV-Datei hoch, die Produktinformationen im entsprechenden Format enthält. Der Link **Hochgeladene Assets anzeigen** wird unterhalb der Karte angezeigt, nachdem die CSV-Datei hochgeladen wurde.
 
    ![Produktinformationen hochladen](assets/chlimage_1-152a.png)
 
@@ -289,7 +302,7 @@ In dieser Aufgabe prüfen Sie die Fotoaufnahmen, die von einem Fotografen hochge
 
    ![Genehmigen eines Bildes](assets/chlimage_1-159a.png)
 
-1. Klicken Sie auf **Fertigstellen**.  Die bestätigten Bilder werden mit den leeren Assets verknüpft, die erstellt wurden.
+1. Klicken Sie auf **Fertigstellen**. Die bestätigten Bilder werden mit den leeren Assets verknüpft, die erstellt wurden.
 
 Sie können Produkte ohne Bilder übergehen. Zu einem späteren Zeitpunkt können Sie zur Aufgabe zurückkehren und sie nach Erledigung als abgeschlossen markieren.
 

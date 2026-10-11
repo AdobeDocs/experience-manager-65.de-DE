@@ -10,13 +10,31 @@ exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 99%
-
+source-wordcount: '908'
+ht-degree: 98%
 ---
-
 # Launches{#launches}
 
 Launches helfen Ihnen, Inhalte für eine künftige Version effizient zu entwickeln.
@@ -51,45 +69,45 @@ Launches ermöglichen Folgendes:
 
 * Erstellen Sie eine Kopie Ihrer Quellseiten:
 
-   * Die Kopie ist Ihr Launch.
-   * Die Quellseiten der höchsten Stufe werden als **Produktion** bezeichnet.
+  * Die Kopie ist Ihr Launch.
+  * Die Quellseiten der höchsten Stufe werden als **Produktion** bezeichnet.
 
-      * Die Quellseiten können aus mehreren (verschiedenen) Verzweigungen stammen.
+    * Die Quellseiten können aus mehreren (verschiedenen) Verzweigungen stammen.
 
   ![Überblick über Launch-Aktionen](assets/chlimage_1-111.png)
 
 * Bearbeiten Sie die Launch-Konfiguration:
 
-   * Sie können Seiten bzw. Verzweigungen zum Launch hinzufügen oder entfernen.
-   * Sie können Launch-Eigenschaften bearbeiten, z. B. **Titel**, **Launch-Datum** und die Markierung **Produktionsbereit**.
+  * Sie können Seiten bzw. Verzweigungen zum Launch hinzufügen oder entfernen.
+  * Sie können Launch-Eigenschaften bearbeiten, z. B. **Titel**, **Launch-Datum** und die Markierung **Produktionsbereit**.
 
 * Sie können Inhalte entweder manuell oder automatisch weiterleiten und veröffentlichen:
 
-   * Manuell:
+  * Manuell:
 
-      * Leiten Sie Ihren Launch-Inhalt, wenn er zur Veröffentlichung bereit ist, wieder an das **Ziel** (Quellseiten) zurück.
-      * Veröffentlichen Sie den Inhalt von den Quellseiten (nachdem die Seiten weitergeleitet wurden).
-      * Leiten Sie entweder alle Seiten oder nur die überarbeiteten Seiten weiter.
+    * Leiten Sie Ihren Launch-Inhalt, wenn er zur Veröffentlichung bereit ist, wieder an das **Ziel** (Quellseiten) zurück.
+    * Veröffentlichen Sie den Inhalt von den Quellseiten (nachdem die Seiten weitergeleitet wurden).
+    * Leiten Sie entweder alle Seiten oder nur die überarbeiteten Seiten weiter.
 
-   * Automatisch (dies beinhaltet Folgendes):
+  * Automatisch (dies beinhaltet Folgendes):
 
-      * Das Feld **Launch-Datum** (**Live**-**Datum)**: Dieses Feld kann beim Erstellen oder Bearbeiten eines Launches festgelegt werden.
+    * Das Feld **Launch-Datum** (**Live**-**Datum)**: Dieses Feld kann beim Erstellen oder Bearbeiten eines Launches festgelegt werden.
 
-      * Die Markierung **Produktionsbereit**: Dies kann nur beim Bearbeiten eines Launches festgelegt werden.
-      * Wenn das Flag **Produktionsbereit** gesetzt wurde, wird der Launch automatisch am angegebenen **Launch-Datum** (**Live**-**Datum**) an die Produktionsseiten weitergeleitet. Nach der Promotion werden die Produktionsseiten automatisch veröffentlicht.\
-        Wenn kein Datum ausgewählt wurde, hat die Markierung keine Auswirkungen.
+    * Die Markierung **Produktionsbereit**: Dies kann nur beim Bearbeiten eines Launches festgelegt werden.
+    * Wenn das Flag **Produktionsbereit** gesetzt wurde, wird der Launch automatisch am angegebenen **Launch-Datum** (**Live**-**Datum**) an die Produktionsseiten weitergeleitet. Nach der Promotion werden die Produktionsseiten automatisch veröffentlicht.\
+      Wenn kein Datum ausgewählt wurde, hat die Markierung keine Auswirkungen.
 
 * Paralleles Aktualisieren der Quell- und Launch-Seiten:
 
-   * Änderungen an den Quellseiten werden automatisch in der Launch-Kopie implementiert (wenn sie mit Vererbung eingerichtet wurden, d. h. in Form einer Live Copy).
-   * Änderungen an der Launch-Kopie können ohne Störung dieser automatischen Aktualisierungen oder der Quellseiten vorgenommen werden.
+  * Änderungen an den Quellseiten werden automatisch in der Launch-Kopie implementiert (wenn sie mit Vererbung eingerichtet wurden, d. h. in Form einer Live Copy).
+  * Änderungen an der Launch-Kopie können ohne Störung dieser automatischen Aktualisierungen oder der Quellseiten vorgenommen werden.
 
   ![Überblick über Aktualisierungen](assets/chlimage_1-112.png)
 
 * [Erstellen eines verschachtelten Launches](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) – ein Launch innerhalb eines Launches:
 
-   * Die Quelle ist ein schon vorhandener Launch.
-   * Sie können [einen verschachtelten Launch zu einem beliebigen Ziel weiterleiten](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch). Dies kann ein übergeordneter Launch oder die Quellseiten der obersten Ebene (Produktion) sein.
+  * Die Quelle ist ein schon vorhandener Launch.
+  * Sie können [einen verschachtelten Launch zu einem beliebigen Ziel weiterleiten](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch). Dies kann ein übergeordneter Launch oder die Quellseiten der obersten Ebene (Produktion) sein.
 
   ![Überblick über einen verschachtelten Launch](assets/chlimage_1-113.png)
 
@@ -109,7 +127,7 @@ Launches ermöglichen Folgendes:
 >
 >Wenn die Seite beworben wird, werden alle Inhaltsänderungen angezeigt, aber die Komponentenpositionen ändern sich nicht.
 
-## Die Konsole „Launches“  {#the-launches-console}
+## Die Konsole „Launches“ {#the-launches-console}
 
 Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermöglicht es Ihnen, Aktionen für diese durchzuführen. Auf die Konsole kann wie folgt zugegriffen werden:
 

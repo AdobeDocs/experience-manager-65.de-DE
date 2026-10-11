@@ -8,14 +8,20 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: 9fade12f-a038-4fd6-8767-1c30966574c5
 solution: Experience Manager, Experience Manager Forms
-release-date: 2025-08-05T00:00:00Z
-source-git-commit: 3f64cfa688ef1f0090b7ce0d821324593cbea693
-workflow-type: ht
-source-wordcount: '675'
-ht-degree: 100%
-
+release-date: 2025-08-05T00:00:00.000Z
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '699'
+ht-degree: 94%
 ---
-
 # Fehlerbehebung bei RCE (CVE-2025-49533), der Struts-Dev-Modus-Konfiguration (CVE-2025-54253), XXE (CVE-2025-54254) und Sicherheitslücken für AEM Forms auf JEE {#mitigating-xxe-configuration-rce-vulnerabilities-aem-forms}
 
 ## Kurzübersicht
@@ -81,7 +87,7 @@ Dank dieser Vorsichtsmaßnahme können Sie den Originalzustand wiederherstellen,
 
 **Schritt 1: Herunterladen und Extrahieren des Hotfix-Pakets**
 
-- Laden Sie den [Hotfix für 6.5.18.0 – 6.5.22.](/help/release-notes/aem-forms-hotfix.md) vom Adobe-Software-Verteilungsportal herunter.
+- Herunterladen des [Hotfix für 6.5.18.0 - 6.5.22.](/help/release-notes/aem-forms-hotfix.md) über das Adobe Software Distribution-Portal
 - Lokal extrahieren
 
 **Schritt 2: Navigieren Sie zum richtigen Versionsordner**

@@ -10,13 +10,20 @@ role: Admin
 exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '825'
 ht-degree: 1%
-
 ---
-
 # ASRP - Adobe Storage Resource Provider {#asrp-adobe-storage-resource-provider}
 
 ## Informationen zu ASRP {#about-asrp}
@@ -44,7 +51,7 @@ Die Privatkunden- und geheimen Schlüssel werden in allen Report Suites eines Un
 
 Die [Speicherkonfigurationskonsole](/help/communities/srp-config.md) ermöglicht die Auswahl der standardmäßigen -Speicherkonfiguration, die angibt, welche Implementierung von SRP verwendet werden soll.
 
-**Bei AEM-Autoreninstanz:**
+**In der AEM-Autoreninstanz:**
 
 * Navigieren Sie in der globalen Navigation zu **[!UICONTROL Tools > Communities > Speicherkonfiguration]** und wählen Sie **[!UICONTROL Adobe Storage Resource Provider (ASRP)]**.
 
@@ -107,9 +114,9 @@ In der AEM-Autoreninstanz:
 >
 >Wenn Sie ASRP auf einer veröffentlichten Community-Site aktivieren, sind alle bereits in [JCR](/help/communities/jsrp.md) gespeicherten UGC nicht mehr sichtbar, da keine Synchronisierung von Daten zwischen dem On-Premise-Speicher und dem Cloud-Speicher stattfindet.
 
-**`AEM Communities Extension`** wurde zuvor in sozialen Communities von AEM 6.0 als Cloud Service eingeführt. Ab AEM 6.1 Communities ist keine Cloud-Konfiguration mehr erforderlich. Wählen Sie einfach ASRP aus der [Speicherkonfigurationskonsole](/help/communities/srp-config.md).
+**`AEM Communities Extension`** wurde zuvor in AEM 6.0 Social Communities as a Cloud Service eingeführt. Ab AEM 6.1 Communities ist keine Cloud-Konfiguration erforderlich. Wählen Sie einfach ASRP in der [Speicherkonfigurationskonsole](/help/communities/srp-config.md).
 
-Aufgrund der neuen Speicherstruktur ist es erforderlich, beim Upgrade von Social Communities [&#x200B; Communities die &#x200B;](/help/communities/upgrade.md#adobe-cloud-storage) „Upgrade“ zu befolgen.
+Aufgrund der neuen Speicherstruktur ist es erforderlich, beim Upgrade von Social Communities [ Communities die ](/help/communities/upgrade.md#adobe-cloud-storage) „Upgrade“ zu befolgen.
 
 ## Verwalten von Benutzerdaten {#managing-user-data}
 
@@ -122,17 +129,17 @@ Informationen zu *Benutzern*, *Benutzerprofilen* und *Benutzergruppen*, die häu
 
 ### UGC verschwindet nach dem Upgrade {#ugc-disappears-after-upgrade}
 
-Wenn Sie von einer bestehenden AEM 6.0 Social-Community-Website aktualisieren, folgen Sie unbedingt den [Upgrade-Anweisungen](/help/communities/upgrade.md#adobe-cloud-storage), da ansonsten der benutzergenerierte Inhalt verloren zu gehen scheint.
+Wenn Sie von einer bestehenden sozialen Community-Site für AEM 6.0 aktualisieren, folgen Sie unbedingt den [Upgrade-Anweisungen](/help/communities/upgrade.md#adobe-cloud-storage), da ansonsten der benutzergenerierte Inhalt verloren zu gehen scheint.
 
 ### Authentifizierungsfehler {#authentication-errors}
 
-Wenn Authentifizierungsfehler über die Datenzentrum-URL empfangen werden und die Datei „error.log“ des AEM Meldungen zu veralteten Zeitstempeln enthält, überprüfen Sie, ob eine Zeitsynchronisierung erfolgt.
+Wenn Authentifizierungsfehler über die Datenzentrum-URL empfangen werden und die Datei error.log von AEM Meldungen zu veralteten Zeitstempeln enthält, überprüfen Sie, ob eine Zeitsynchronisierung erfolgt.
 
 Verwenden Sie ein Tool wie [Network Time Protocol (NTP)](https://www.ntp.org/) zum Synchronisieren aller AEM-Autoren- und Veröffentlichungsserver.
 
 ### Neuer Inhalt wird nicht bei Suchvorgängen angezeigt {#new-content-does-not-appear-in-searches}
 
-Die Adobe-Cloud-Speicherinfrastruktur verwendet *mögliche Konsistenz*, um ihre Skalierungs- und Leistungsziele zu erreichen. Aus diesem Grund sind neue Inhalte nicht sofort verfügbar und es dauert mehrere Sekunden, bis sie in den Suchergebnissen angezeigt werden.
+Die Cloud-Speicherinfrastruktur von Adobe verwendet *mögliche Konsistenz*, um ihre Skalierungs- und Leistungsziele zu erreichen. Aus diesem Grund sind neue Inhalte nicht sofort verfügbar und es dauert mehrere Sekunden, bis sie in den Suchergebnissen angezeigt werden.
 
 Während das Intervall, das sich auf die mögliche Konsistenz auswirkt, überwacht wird, wenden Sie sich an Ihren Kundenbetreuer, wenn es länger als einige Sekunden dauert, bis neue Inhalte bei der Suche angezeigt werden.
 
@@ -140,7 +147,7 @@ Während das Intervall, das sich auf die mögliche Konsistenz auswirkt, überwac
 
 Stellen Sie sicher, dass das ASRP als Standardanbieter konfiguriert wurde, indem Sie die Konfiguration der Speicheroption überprüfen. Standardmäßig ist der Speicherressourcenanbieter JSRP, nicht ASRP.
 
-Rufen Sie auf allen Autoren- und Veröffentlichungs-AEM-Instanzen die Speicherkonfigurationskonsole erneut auf, oder überprüfen Sie das AEM-Repository.
+Rufen Sie auf allen AEM-Autoren- und Veröffentlichungsinstanzen die Speicherkonfigurationskonsole erneut auf, oder überprüfen Sie das AEM-Repository.
 
 Im JCR, wenn [/conf/global/settings/Communities](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 

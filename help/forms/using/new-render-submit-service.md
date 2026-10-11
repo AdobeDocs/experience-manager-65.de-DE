@@ -9,13 +9,33 @@ exl-id: 46de0101-9607-4429-84c3-7c1f34d2da27
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '898'
 ht-degree: 100%
-
 ---
-
 # Neuer Wiedergabe- und Sendedienst{#new-render-and-submit-service}
 
 ## Einführung {#introduction}
@@ -27,9 +47,9 @@ XDP kann als PDF- oder HTML-Formular gerendert werden. Die neuen Funktionen biet
 * Rendern und Senden eines XDP-Formulars als HTML
 * Rendern und Senden eines XDP-Formulars als PDF auf dem Desktop und als HTML auf Mobilgeräten (z. B. einem iPad)
 
-### Neuer HTML-Forms-Dienst {#new-html-forms-service}
+### Neuer HTML-Formular-Dienst {#new-html-forms-service}
 
-Der neue HTML-Forms-Dienst nutzt die neue Funktion in Forms, um das Rendern von XDP-Formularen als HTML zu unterstützen. Der neue HTML-Forms-Dienst macht die folgenden Methoden verfügbar:
+Der neue HTML-Formular-Dienst nutzt die neue Funktion in Forms, um das Rendern von XDP-Formularen als HTML zu unterstützen. Der neue HTML-Formular-Dienst macht die folgenden Methoden verfügbar:
 
 ```java
 /*
@@ -117,7 +137,7 @@ Browser nehmen allmählich die Unterstützung für NPAPI-basierte Plug-ins zurü
 1. Öffnen Sie den Prozess, für den Sie die Wiedergabe ändern möchten.
 1. Öffnen Sie den/die zielgerichtete/n Startpunkt/Aufgabe, navigieren Sie zum Abschnitt für Präsentation und Daten und klicken Sie auf **Aktionsprofile verwalten**.
 
-   Das Dialogfeld „Aktionsprofile verwalten“ wird angezeigt. 
+   Das Dialogfeld „Aktionsprofile verwalten“ wird angezeigt.
 1. Ändern Sie die standardmäßige Wiedergabeprofilkonfigurationen von PDF in HTML und klicken Sie auf **OK**.
 1. Checken Sie den Prozess ein.
 1. Wiederholen Sie diese Schritte, um die Wiedergabe für andere Prozesse zu ändern.
@@ -134,8 +154,8 @@ Einige häufig gestellte Fragen zu Aktionsprofilen sind:
 * Render Guide (Guides werden nicht mehr unterstützt)
 * Render Form Guide
 * Render PDF form
-* Render HTML form
-* Render New HTML form (new)
+* Rendern von HTML-Formularen
+* Rendern neuer HTML-Formular (neu)
 * Default Render form (new)
 
 Sowie entsprechende Sendeprozesse.
@@ -160,5 +180,5 @@ Ja, da die vorherigen dem Standardaktionsprofil zugeordneten Wiedergabe- und Sen
 
 Angenommen, Sie haben die vorhandenen Render- oder Sendedienste für PDF-Formulare geändert oder benutzerdefinierte Dienste (z. B. custom1) erstellt und möchten nun dieselbe Funktion für die HTML-Wiedergabe verwenden. Sie müssen den neuen Render- oder Sendedienst (z. B. custom2) replizieren und ähnliche Anpassungen anwenden. Ändern Sie nun das Aktionsprofil für Ihre XDP, um custom2-Dienste anstelle von custom1-Diensten zum Rendern oder Senden zu verwenden.
 
-Was muss der Prozessentwickler tun, damit ein Formular auf einem Gerät in HTML und auf einem Desktop in PDF gerendert werden kann?
-Was muss der Prozessentwickler tun, damit ein Formular auf einem Gerät in HTML und auf einem Desktop in PDF gerendert werden kann?
+Was muss das Prozess-Design tun, damit ein Formular auf einem Gerät in HTML und auf einem Desktop in PDF gerendert werden kann?
+Was muss das Prozess-Design tun, damit ein Formular auf einem Gerät in HTML und auf einem Desktop in PDF gerendert werden kann?

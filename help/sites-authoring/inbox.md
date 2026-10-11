@@ -5,29 +5,42 @@ exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 100%
-
 ---
-
 # Ihr Posteingang{#your-inbox}
 
 Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM (darunter auch aus Workflows und Projekten) u. a. zu folgenden Dingen erhalten:
 
 * Aufgaben:
 
-   * Diese können an diversen Stellen der Benutzeroberfläche von AEM erstellt worden sein, z. B. unter **Projekte**.
-   * Sie können das Produkt eines Workflow-Schritts **Aufgabe erstellen** oder **Projektaufgabe erstellen** sein.
+  * Diese können an diversen Stellen der Benutzeroberfläche von AEM erstellt worden sein, z. B. unter **Projekte**.
+  * Sie können das Produkt eines Workflow-Schritts **Aufgabe erstellen** oder **Projektaufgabe erstellen** sein.
 
 * Workflows:
 
-   * Arbeitselemente, die Aktionen darstellen, die Sie für Seiteninhalte ausführen müssen.
+  * Arbeitselemente, die Aktionen darstellen, die Sie für Seiteninhalte ausführen müssen.
 
-      * Diese sind das Ergebnis von **Teilnehmer**-Workflow-Schritten
+    * Diese sind das Ergebnis von **Teilnehmer**-Workflow-Schritten
 
-   * Fehlgeschlagene Elemente, um Admins zu ermöglichen, einen fehlgeschlagenen Schritt erneut auszuführen.
+  * Fehlgeschlagene Elemente, um Admins zu ermöglichen, einen fehlgeschlagenen Schritt erneut auszuführen.
 
 Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, wo Sie sie anzeigen und dann Maßnahmen ergreifen können.
 
@@ -112,9 +125,9 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen festlegen:
 
   Für die **Kalenderansicht** können Sie Folgendes konfigurieren:
 
-   * **Gruppieren nach**
-   * **Zeitplan** oder **Ohne**
-   * **Kartengröße**
+  * **Gruppieren nach**
+  * **Zeitplan** oder **Ohne**
+  * **Kartengröße**
 
   ![wf-92](assets/wf-92.png)
 
@@ -122,8 +135,8 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen festlegen:
 
   Für die **Listenansicht** können Sie den Sortiermechanismus konfigurieren:
 
-   * **Sortierfeld**
-   * **Sortierreihenfolge**
+  * **Sortierfeld**
+  * **Sortierreihenfolge**
 
   ![wf-83](assets/inbox-settings.png)
 
@@ -140,21 +153,21 @@ Die Option „Admin-Kontrolle“ ermöglicht Admins Folgendes:
 Die Option „Admin-Kontrolle“ ist nur für die Mitglieder der Gruppen `administrators` oder `workflow-administrators` sichtbar.
 
 * **Spaltenanpassung**: Passen Sie einen AEM-Posteingang an, indem Sie den Standardtitel einer Spalte ändern, eine Spalte neu anordnen und zusätzliche Spalten basierend auf den Daten eines Workflows anzeigen.
-   * **Spalte hinzufügen**: Wählen Sie eine Spalte aus, die dem AEM-Posteingang hinzugefügt werden soll.
-   * **Spalte bearbeiten**: Bewegen Sie den Mauszeiger über den Spaltentitel und wählen Sie das Symbol ![Bearbeiten](assets/edit.svg) aus, um einen Anzeigenamen für die Spalte einzugeben.
-   * **Spalte löschen**: Wählen Sie das Symbol ![Löschen](assets/delete_updated.svg) aus, um die Spalte aus dem AEM-Posteingang zu löschen.
-   * **Spalte verschieben**: Ziehen Sie das Symbol ![Verschieben](assets/move_updated.svg), um eine Spalte im AEM-Posteingang an eine neue Position zu verschieben.
+  * **Spalte hinzufügen**: Wählen Sie eine Spalte aus, die dem AEM-Posteingang hinzugefügt werden soll.
+  * **Spalte bearbeiten**: Bewegen Sie den Mauszeiger über den Spaltentitel und wählen Sie das Symbol ![Bearbeiten](assets/edit.svg) aus, um einen Anzeigenamen für die Spalte einzugeben.
+  * **Spalte löschen**: Wählen Sie das Symbol ![Löschen](assets/delete_updated.svg) aus, um die Spalte aus dem AEM-Posteingang zu löschen.
+  * **Spalte verschieben**: Ziehen Sie das Symbol ![Verschieben](assets/move_updated.svg), um eine Spalte im AEM-Posteingang an eine neue Position zu verschieben.
 
   ![Admin-Kontrolle](assets/admin-control-column-customize.png)
 
 * **Branding-Anpassung**
 
-   * **Anpassen des Kopfzeilentextes:** Geben Sie den Text an, der in der Kopfzeile anstelle des Standardtextes **Adobe Experience Manager** angezeigt werden soll.
+  * **Anpassen des Kopfzeilentextes:** Geben Sie den Text an, der in der Kopfzeile anstelle des Standardtextes **Adobe Experience Manager** angezeigt werden soll.
 
-   * **Logo anpassen:** Geben Sie das Bild an, das in der Kopfzeile als Logo angezeigt werden soll. Laden Sie ein Bild in Digital Asset Management (DAM) hoch und verweisen Sie im Feld auf dieses Bild.
+  * **Logo anpassen:** Geben Sie das Bild an, das in der Kopfzeile als Logo angezeigt werden soll. Laden Sie ein Bild in Digital Asset Management (DAM) hoch und verweisen Sie im Feld auf dieses Bild.
 
 * **Benutzernavigation**
-   * **Navigationsoptionen ausblenden:** Wählen Sie diese Option aus, um die Navigationsoptionen in der Kopfzeile auszublenden. Zu den Navigationsoptionen gehören Links zu anderen Lösungen, ein Hilfe-Link und die Bearbeitungsoptionen, die beim Tippen auf das Logo oder den Text „Adobe Experience Manager“ verfügbar sind.
+  * **Navigationsoptionen ausblenden:** Wählen Sie diese Option aus, um die Navigationsoptionen in der Kopfzeile auszublenden. Zu den Navigationsoptionen gehören Links zu anderen Lösungen, ein Hilfe-Link und die Bearbeitungsoptionen, die beim Tippen auf das Logo oder den Text „Adobe Experience Manager“ verfügbar sind.
 * **Speichern:** Klicken Sie auf diese Option, um die Einstellungen zu speichern.
 
 ## Anwenden von Aktionen auf ein Element {#taking-action-on-an-item}
@@ -174,9 +187,9 @@ Die Option „Admin-Kontrolle“ ist nur für die Mitglieder der Gruppen `admini
    * **Neu zuweisen**/**Delegieren** eines Elements.
    * **Öffnen** eines Elements. Je nach Elementtyp bewirkt diese Aktion Folgendes:
 
-      * Anzeige der Elementeigenschaften
-      * Öffnen des entsprechenden Dashboards oder Assistenten für weitere Aktionen
-      * Aufrufen einer zugehörigen Dokumentation
+     * Anzeige der Elementeigenschaften
+     * Öffnen des entsprechenden Dashboards oder Assistenten für weitere Aktionen
+     * Aufrufen einer zugehörigen Dokumentation
 
    * **Schritt zurück** zu einem vorherigen Schritt.
    * Anzeigen der Payload eines Workflows.
@@ -213,20 +226,20 @@ Im Posteingang können Sie Aufgaben erstellen:
 
    * **Allgemein**:
 
-      * **Titel**
-      * **Projekt**
-      * **Bevollmächtigter**
-      * **Inhalt**; dies dient, ähnlich wie bei der Payload, als Verweis von der Aufgabe auf eine Position im Repository.
-      * **Beschreibung**
-      * **Aufgabenpriorität**
-      * **Startdatum**
-      * **Fälligkeitsdatum**
+     * **Titel**
+     * **Projekt**
+     * **Bevollmächtigter**
+     * **Inhalt**; dies dient, ähnlich wie bei der Payload, als Verweis von der Aufgabe auf eine Position im Repository.
+     * **Beschreibung**
+     * **Aufgabenpriorität**
+     * **Startdatum**
+     * **Fälligkeitsdatum**
 
    ![wf-86](assets/wf-86.png)
 
    * **Erweitert**
 
-      * **Name**: Daraus wird die URL gebildet. Wird kein Name angegeben, basiert sie auf dem **Titel**.
+     * **Name**: Daraus wird die URL gebildet. Wird kein Name angegeben, basiert sie auf dem **Titel**.
 
    ![wf-87](assets/wf-87.png)
 
@@ -250,15 +263,15 @@ Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/he
 
    * **Allgemein**
 
-      * **Titel**
-      * **Beschreibung**
-      * **Startdatum**
-      * **Fälligkeitsdatum**
-      * **Benutzer** und Rolle
+     * **Titel**
+     * **Beschreibung**
+     * **Startdatum**
+     * **Fälligkeitsdatum**
+     * **Benutzer** und Rolle
 
    * **Erweitert**
 
-      * **Name**
+     * **Name**
 
    >[!NOTE]
    >

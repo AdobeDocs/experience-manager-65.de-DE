@@ -8,13 +8,28 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '807'
 ht-degree: 100%
-
 ---
-
 # Generieren einer HTML5-Vorschau eines XDP-Formulars{#generate-html-preview-of-an-xdp-form}
 
 Beim Erstellen eines Formulars in AEM Forms Designer können Sie nicht nur die PDF-Ausgabedarstellung eines Formulars, sondern auch eine HTML5-Ausgabedarstellung davon in der Vorschau anzeigen. Sie können die Registerkarte **HTML-Vorschau** verwenden, um ein Formular so wie in einem Browser anzuzeigen.
@@ -23,27 +38,27 @@ Beim Erstellen eines Formulars in AEM Forms Designer können Sie nicht nur die P
 
 Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivieren, müssen Sie folgende Konfigurationen durchführen:
 
-* Konfigurieren des Apache Sling-Authentifizierungsdienstes 
+* Konfigurieren des Apache Sling-Authentifizierungsdienstes
 * Abgesicherten Modus deaktivieren
 * Details zum AEM Forms-Server bereitstellen
 
-### Apache Sling Authentifizierungsdienst konfigurieren  {#configure-apache-sling-authentication-service}
+### Apache Sling Authentifizierungsdienst konfigurieren {#configure-apache-sling-authentication-service}
 
 1. Navigieren Sie zu `https://'[server]:[port]'/system/console/configMgr` in AEM Forms, wenn es unter OSGi ausgeführt wird oder
    `https://'[server]:[port]'/lc/system/console/configMgr` in AEM Forms, wenn es unter JEE ausgeführt wird.
 1. Wählen Sie die Konfiguration **Apache Sling-Authentifizierungsdienst**, um ihn im Modus „Bearbeiten“ zu öffnen.
 
-1. Je nachdem, ob Sie AEM Forms unter OSGi oder JEE ausführen, müssen Sie Folgendes im Feld **Authentifizierungsanforderungen** hinzufügen: 
+1. Je nachdem, ob Sie AEM Forms unter OSGi oder JEE ausführen, müssen Sie Folgendes im Feld **Authentifizierungsanforderungen** hinzufügen:
 
-   *  von AEM Forms für JEE
+   * von AEM Forms für JEE
 
-      * -/content/xfaforms
-      * -/etc/clientlibs
+     * -/content/xfaforms
+     * -/etc/clientlibs
 
    * AEM Forms on OSGi
 
-      * -/content/xfaforms
-      * -/etc/clientlibs/fd/xfaforms
+     * -/content/xfaforms
+     * -/etc/clientlibs/fd/xfaforms
 
    >[!NOTE]
    >
@@ -62,7 +77,7 @@ Der [abgesicherte Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist sta
    * URL für AEM Forms unter JEE: `https://'[server]:[port]'/lc/system/console/configMgr`
 
 1. Öffnen Sie **[!UICONTROL Konfigurationen von Mobile-Formularen]** für die Bearbeitung.
-1. Deaktivieren Sie die Option **[!UICONTROL Abgesicherter Modus]** und klicken Sie auf **[!UICONTROL Speichern]**. 
+1. Deaktivieren Sie die Option **[!UICONTROL Abgesicherter Modus]** und klicken Sie auf **[!UICONTROL Speichern]**.
 
 ### Angeben von Details zum AEM Forms-Server {#provide-details-of-aem-forms-server}
 
@@ -74,14 +89,14 @@ Der [abgesicherte Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist sta
    * **HTTP-Port-Nummer**: AEM-Server-Port. Der Standardwert ist 4502.
    * **HTML-Vorschaukontext:** Pfad des Profils, der für die Wiedergabe der XFA-Formulare verwendet wird. Die folgenden Standardprofile werden verwendet, um das Formular in Designer in der Vorschau anzuzeigen. Sie können außerdem den Pfad zu einem benutzerdefinierten Profil angeben.
 
-      * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
+     * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
 
-      * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
+     * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
 
    * **Forms Manager-Kontext:** Kontextpfad, an dem die Forms Manager-Benutzeroberfläche bereitgestellt wird. Die Standardwerte lauten:
 
-      * `/aem/forms` (AEM Forms on OSGi)
-      * `/lc/forms` (AEM Forms on JEE)
+     * `/aem/forms` (AEM Forms on OSGi)
+     * `/lc/forms` (AEM Forms on JEE)
 
    >[!NOTE]
    >
@@ -111,7 +126,7 @@ Der [abgesicherte Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist sta
 
 In Designer können Sie das Formular mithilfe von XML-Beispieldaten in der Vorschau anzeigen und testen. Es wird empfohlen, das Formular häufig mit Beispieldaten zu testen, um sicherzustellen, dass es korrekt wiedergegeben wird.
 
-Falls Ihnen keine Beispieldaten vorliegen, können Sie welche von Designer erstellen lassen oder auch selbst erstellen. (Siehe [So generieren Sie automatisch Beispieldaten für die Vorschau eines Formulars](https://help.adobe.com/de_DE/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) und [So erstellen Sie Beispieldaten für die Vorschau eines Formulars](https://help.adobe.com/de_DE/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2))
+Falls Ihnen keine Beispieldaten vorliegen, können Sie welche von Designer erstellen lassen oder auch selbst erstellen. (Siehe [So generieren Sie automatisch Beispieldaten für die Vorschau eines Formulars](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) und [So erstellen Sie Beispieldaten für die Vorschau eines Formulars](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2))
 
 Durch das Testen Ihres Formulars mit einer Beispieldatenquelle wird sichergestellt, dass die Daten und Felder zugeordnet werden und sich wiederholende Teilformulare erwartungsgemäß wiederholt werden. Sie können ein ausgeglichenes Formular-Layout erstellen, das für jedes Objekt den geeigneten Platz zur Anzeige der zusammengeführten Daten bietet.
 

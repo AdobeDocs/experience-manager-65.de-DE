@@ -9,13 +9,24 @@ feature: Asset Management
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1506'
 ht-degree: 90%
-
 ---
-
 # Best Practices für die Optimierung der Bildqualität in Dynamic Media {#best-practices-for-optimizing-the-quality-of-your-images}
 
 Die Bildqualität zu optimieren, kann zeitaufwendig sein. Denn viele Faktoren tragen dazu bei, akzeptable Ergebnisse zu erzielen. Die Ergebnisse sind teilweise subjektiv, da jeder Mensch die Bildqualität unterschiedlich wahrnimmt. Daher ist strukturiertes Experimentieren entscheidend.
@@ -26,7 +37,7 @@ Adobe Experience Manager umfasst mehr als 100 Bildbereitstellungsbefehle für Dy
 
 * JPG oder PNG sind die beste Wahl, um Bilder in guter Qualität und mit angemessener Größe bereitzustellen.
 * Wenn kein Formatsbefehl in der URL angegeben ist, wird standardmäßig JPG bei der Bildbereitstellung von Dynamic Media verwendet.
-* JPG komprimiert mit einem Verhältnis von 10:1 und erzeugt normalerweise kleinere Bilddateigrößen. PNG wird mit einem Verhältnis von etwa 2 % komprimiert:1 außer in einigen Fällen, z. B. wenn Bilder einen weißen Hintergrund enthalten. Normalerweise sind PNG-Dateien jedoch größer als JPG-Dateien.
+* JPG komprimiert im Verhältnis 10:1 und erzeugt in der Regel kleinere Bilddateigrößen. PNG wird mit einem Verhältnis von etwa 2:1 komprimiert, außer in einigen Fällen, z. B. wenn Bilder einen weißen Hintergrund enthalten. Normalerweise sind PNG-Dateien jedoch größer als JPG-Dateien.
 * JPG nutzt die verlustreiche Komprimierung. Das heißt, dass Bildelemente (Pixel) bei der Komprimierung verloren gehen. PNG verwendet dagegen die verlustfreie Komprimierung.
 * JPG komprimiert Fotos oft mit besserer Wiedergabetreue als synthetische Bilder mit scharfen Kanten und Kontrast.
 * Wenn Bilder Transparenz enthalten, verwenden Sie PNG, da JPG keine Transparenz unterstützt.
@@ -60,24 +71,24 @@ Es gibt zwei Methoden zum Scharfzeichnen von Bildern:
 * Einfache Scharfzeichnung (`&op_sharpen`): Dies ähnelt dem in Photoshop verwendeten Scharfzeichnungsfilter und wendet einfache Scharfzeichnung auf die endgültige Ansicht des Bildes nach der dynamischen Skalierung an. Diese Methode kann aber nicht vom Benutzer konfiguriert werden. Es wird empfohlen, &amp;op_sharpen nur zu verwenden, wenn es unbedingt erforderlich ist.
 * Unschärfemaske (`&op_USM`): Die Unschärfemaske ist ein dem Branchenstandard entsprechender Scharfzeichnungsfilter. Als Best Bractice wird empfohlen, Bilder anhand der folgenden Richtlinien mit der Unschärfemaske scharfzuzeichnen. Bei Verwendung der Unschärfemaske können Sie die drei folgenden Parameter steuern:
 
-   * `&op_sharpen=amount,radius,threshold`
+  * `&op_sharpen=amount,radius,threshold`
 
-      * **[!UICONTROL *amount *]**(0-5, Stärke des Effekts)
-      * **[!UICONTROL *radius *]**(0-250, Breite der „Scharfzeichnungslinien“ um das scharfgezeichnete Objekt, in Pixel gemessen)
+    * **[!UICONTROL *amount *]**(0-5, Stärke des Effekts)
+    * **[!UICONTROL *radius *]**(0-250, Breite der „Scharfzeichnungslinien“ um das scharfgezeichnete Objekt, in Pixel gemessen)
 
-     Denken Sie daran, dass sich die Parameter „radius“ und „amount“ gegenseitig beeinflussen. Verringernde Radien können durch steigende Menge kompensiert werden. Der Radius ermöglicht eine genauere Kontrolle, da mit einem niedrigeren Wert nur die Kantenpixel scharfgezeichnet werden, während mit einem höheren Wert mehr Pixel scharfgezeichnet werden.
+    Denken Sie daran, dass sich die Parameter „radius“ und „amount“ gegenseitig beeinflussen. Verringernde Radien können durch steigende Menge kompensiert werden. Der Radius ermöglicht eine genauere Kontrolle, da mit einem niedrigeren Wert nur die Kantenpixel scharfgezeichnet werden, während mit einem höheren Wert mehr Pixel scharfgezeichnet werden.
 
-      * **[!UICONTROL *threshold *]**(0-255, Sensitivität des Effekts)
+    * **[!UICONTROL *threshold *]**(0-255, Sensitivität des Effekts)
 
-            Dieser Parameter bestimmt, wie stark sich die scharfgezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kantenpixel eingestuft und vom Filter scharfgezeichnet werden. Mit dem Parameter **[!UICONTROL Schwellenwert]** können Sie übermäßiges Scharfzeichnen von Bereichen mit ähnlichen Farben, z. B. Hauttönen, vermeiden. Bei einem Schwellenwert von 12 werden beispielsweise leichte Variationen der Hauttonhelligkeit ignoriert, um kein „Rauschen“ zu erzeugen, trotzdem wird kontrastreichen Bereichen, z. B. wo Wimpern auf die Haut treffen, Kantenkontrast hinzugefügt.
-        
-        Weitere Informationen zum Festlegen dieser drei Parameter, einschließlich Best Practices für den Filter, finden Sie in den folgenden Ressourcen:
+          Dieser Parameter bestimmt, wie stark sich die scharfgezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kantenpixel eingestuft und vom Filter scharfgezeichnet werden. Mit dem Parameter **[!UICONTROL Schwellenwert]** können Sie übermäßiges Scharfzeichnen von Bereichen mit ähnlichen Farben, z. B. Hauttönen, vermeiden. Bei einem Schwellenwert von 12 werden beispielsweise leichte Variationen der Hauttonhelligkeit ignoriert, um kein „Rauschen“ zu erzeugen, trotzdem wird kontrastreichen Bereichen, z. B. wo Wimpern auf die Haut treffen, Kantenkontrast hinzugefügt.
+      
+      Weitere Informationen zum Festlegen dieser drei Parameter, einschließlich Best Practices für den Filter, finden Sie in den folgenden Ressourcen:
 
-        Experience Manager-Hilfethema zum Scharfzeichnen von Bildern.
+      Experience Manager-Hilfethema zum Scharfzeichnen von Bildern.
 
-        Whitepaper mit Best Practices für das [Scharfzeichnen von Bildern in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
+      Whitepaper mit Best Practices für das [Scharfzeichnen von Bildern in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
-      * In Experience Manager können Sie auch einen vierten Parameter steuern: monochrome (0,1). Dieser Parameter bestimmt, ob eine Unschärfemaske auf jede Farbkomponente separat (mit dem Wert 0) oder auf die Bildhelligkeit/-intensität (mit dem Wert 1) angewendet wird.
+    * In Experience Manager können Sie auch einen vierten Parameter steuern: monochrome (0,1). Dieser Parameter bestimmt, ob eine Unschärfemaske auf jede Farbkomponente separat (mit dem Wert 0) oder auf die Bildhelligkeit/-intensität (mit dem Wert 1) angewendet wird.
 
 Es wird empfohlen, mit dem Unschärfemasken-Parameter für den Radius zu beginnen. Sie können zu Beginn die folgenden Radiuseinstellungen verwenden:
 
@@ -98,8 +109,8 @@ Belassen Sie die Einstellung des Parameters „monochrome“ auf 0.
 * Als Best Practice wird empfohlen, einen Kompromiss zu wählen: Setzen Sie `qlt= value` dazu auf 85.
 * Verwendung der Chroma-Markierung in `qlt=`
 
-   * Der Parameter `qlt=` verfügt über eine zweite Einstellung, mit der Sie das RGB-Chromatizitäts-Downsampling aktivieren (mit dem Wert `,1`) oder deaktivieren (mit dem Wert `,0`) können.
-   * Um die Sache möglichst unkompliziert zu gestalten, sollten Sie zunächst das Downsampling der RGB-Chromatizität deaktivieren (`,0`). Diese Einstellung führt in der Regel zu einer besseren Bildqualität, insbesondere für synthetische Bilder mit vielen scharfen Kanten und Kontrast.
+  * Der Parameter `qlt=` verfügt über eine zweite Einstellung, mit der Sie das RGB-Chromatizitäts-Downsampling aktivieren (mit dem Wert `,1`) oder deaktivieren (mit dem Wert `,0`) können.
+  * Um die Sache möglichst unkompliziert zu gestalten, sollten Sie zunächst das Downsampling der RGB-Chromatizität deaktivieren (`,0`). Diese Einstellung führt in der Regel zu einer besseren Bildqualität, insbesondere für synthetische Bilder mit vielen scharfen Kanten und Kontrast.
 
 Verwenden Sie als Best Practice für die JPG-Komprimierung `&qlt=85,0`.
 

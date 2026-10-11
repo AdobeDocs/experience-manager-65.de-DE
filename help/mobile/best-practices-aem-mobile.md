@@ -9,47 +9,51 @@ exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '604'
 ht-degree: 0%
-
 ---
-
 # Best Practices {#best-practices}
 
 {{ue-over-mobile}}
 
 Das Erstellen einer AEM Mobile On-demand Services-App unterscheidet sich vom Erstellen einer App, die direkt in der Cordova-Shell (oder PhoneGap) ausgeführt wird. Die Entwickler sollten mit den folgenden Themen vertraut sein:
 
-* Standardmäßig unterstützte Plug-ins und Adobe Experience Manager (AEM) Mobile-spezifische Plug-ins.
+* Standardmäßig unterstützte Plug-ins und die für Adobe Experience Manager (AEM) Mobile spezifischen Plug-ins.
 
 >[!NOTE]
 >
 >Ausführliche Informationen zu Plug-ins finden Sie in den folgenden Ressourcen:
 >
->* [Verwenden von Cordova-Plug-ins in AEM Mobile](https://helpx.adobe.com/de/digital-publishing-solution/help/cordova-api.html)
->* [Verwenden von AEM Mobile-spezifischen Cordova-fähigen Plug-ins](https://helpx.adobe.com/de/digital-publishing-solution/help/app-runtime-api.html)
+>* [Verwenden von Cordova-Plug-ins in AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
+>* [Verwenden von AEM Mobile-spezifischen Cordova-fähigen Plug-ins](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
 >
 
 * Vorlagen, die Plug-in-Funktionen verwenden, sollten so geschrieben werden, dass sie weiterhin im Browser autorisiert werden können, ohne dass die Plug-in-Brücke vorhanden ist.
 
-   * Warten Sie beispielsweise auf die Funktion *deviceReady*, bevor Sie auf die API eines Plug-ins zugreifen.
+  * Warten Sie beispielsweise auf die Funktion *deviceReady*, bevor Sie auf die API eines Plug-ins zugreifen.
 
 ## Richtlinien für AEM-Entwickler {#guidelines-for-aem-developers}
 
 Die folgenden Richtlinien helfen kompetenten AEM-Entwicklerinnen und -Entwicklern für Sites, die Mobile-App-Vorlagen und -Komponenten erstellen möchten:
 
-**Strukturieren Sie AEM-Site-Vorlagen, um die Wiederverwendung und Erweiterbarkeit zu fördern**
+**Strukturieren Sie AEM Sites-Vorlagen, um die Wiederverwendung und Erweiterbarkeit zu fördern**
 
 * Mehrere Komponentenskriptdateien sollten einer einzigen monolithischen Skriptdatei vorgezogen werden
 
-   * Es werden mehrere leere Erweiterungspunkte bereitgestellt, z. B. *customheaderlibs.html* und *customfooterlibs.html*, mit denen der Entwickler die Seitenvorlage ändern und dabei so wenig Kern-Code wie möglich duplizieren kann
-   * Vorlagen können dann über den Mechanismus „sling:resourceSuperType *von Sling erweitert und* werden
+  * Es werden mehrere leere Erweiterungspunkte bereitgestellt, z. B. *customheaderlibs.html* und *customfooterlibs.html*, mit denen der Entwickler die Seitenvorlage ändern und dabei so wenig Kern-Code wie möglich duplizieren kann
+  * Vorlagen können dann über den Sling-Mechanismus (Sling *von Sling erweitert und:resourceSuperType* werden
 
 * Sightly/HTL gegenüber JSP als Vorlagensprache bevorzugen
 
-   * Die Verwendung dieser Option fördert die Trennung von Code und Markup, bietet integrierten XSS-Schutz und verfügt über eine vertrautere Syntax
+  * Die Verwendung dieser Option fördert die Trennung von Code und Markup, bietet integrierten XSS-Schutz und verfügt über eine vertrautere Syntax
 
 **Für Leistung auf dem Gerät optimieren**
 
@@ -73,7 +77,7 @@ Die folgenden Richtlinien helfen kompetenten AEM-Entwicklerinnen und -Entwickler
 **Mikrobibliotheken gegenüber Full-Stack bevorzugen**
 
 * Die Zeit, die benötigt wird, um Ihre Inhalte auf das Glas des Geräts zu bringen, wird von jeder Bibliothek verlangsamt, von der Ihre Artikel abhängen. Diese Verlangsamung wird noch verstärkt, wenn eine neue Web-Ansicht verwendet wird, um jeden Artikel zu rendern, sodass jede Bibliothek von Grund auf neu initialisiert werden muss
-* Wenn Ihre Artikel nicht als SPA (Single Page Apps) erstellt wurden, müssen Sie wahrscheinlich keine Full-Stack-Bibliothek wie Angular einfügen
+* Wenn Ihre Artikel nicht als SPAs (Single Page Apps) erstellt wurden, müssen Sie wahrscheinlich keine Full-Stack-Bibliothek wie Angular einschließen
 * Bevorzugen Sie kleinere, universelle Bibliotheken, die Ihnen helfen, die Interaktivität hinzuzufügen, die Ihre Seite erfordert, wie [Fastclick](https://github.com/ftlabs/fastclick) oder [Velocity.js](https://velocityjs.org)
 
 **Minimieren der Größe der Artikel-Payload**

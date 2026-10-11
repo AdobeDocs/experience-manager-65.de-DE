@@ -9,13 +9,24 @@ feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 89%
-
+source-wordcount: '1257'
+ht-degree: 91%
 ---
-
 # Anpassen von Vorlagen für Formularportal-Komponenten{#customizing-templates-for-forms-portal-components}
 
 ## Voraussetzungen {#prerequisites}
@@ -41,8 +52,8 @@ Gehen Sie wie folgt vor, damit Sie eine benutzerdefinierte Vorlage für verschie
    * Komponente „Search &amp; Lister“: „/libs/fd/fp/formTemplate“
    * Komponente „Drafts &amp; Submissions“:
 
-      * Bereich „Entwürfe“: /libs/fd/fp/draftsTemplate
-      * Bereich „Sendungen“: /libs/fd/fp/submissionsTemplate
+     * Bereich „Entwürfe“: /libs/fd/fp/draftsTemplate
+     * Bereich „Sendungen“: /libs/fd/fp/submissionsTemplate
 
    * Komponente „Link“: /libs/fd/fp/linkTemplate
 
@@ -88,11 +99,11 @@ Das Formularportal bietet eine Syntax für Platzhalter zur Anzeige von benutzerd
 
 Um einen wiederholbaren Eintrag einzuschließen, konfigurieren Sie den Wert des Attributs **data-repeatable** als **true**.
 
-*Im gezeigten Beispiel sind oben in der benutzerdefinierten Vorlage zwei Div-Elemente vorhanden. Das erste mit der CSS-Klasse „__FP_boxes-container“ fungiert als Containerelement für die aufgelisteten Formulare. Das zweite mit der CSS-Klasse „__FP_boxes“ ist eine Vorlage für die Basiseinheiten, in diesem Fall ein Formular. Das Attribut **data-repeatable**&#x200B;im Div-Element weist den Wert **true**&#x200B;auf.*
+*Im gezeigten Beispiel sind oben in der benutzerdefinierten Vorlage zwei Div-Elemente vorhanden. Das erste mit der CSS-Klasse „__FP_boxes-container“ fungiert als Containerelement für die aufgelisteten Formulare. Das zweite mit der CSS-Klasse „__FP_boxes“ ist eine Vorlage für die Basiseinheiten, in diesem Fall ein Formular. Das Attribut **data-repeatable**im Div-Element weist den Wert **true**auf.*
 
 Jeder Platzhalter verfügt über einen exklusiven, vorkonfigurierten Metadatensatz. Um die benutzerdefinierten Metadaten an einer bestimmten Position im Formular anzuzeigen, fügen Sie die **${metadata_prop}-Eigenschaft** Ort hinzu.
 
-*Im Beispiel wird die Metadateneigenschaft in mehreren Instanzen verwendet. Sie wird z. B. bei **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**&#x200B;und **path**&#x200B;in der genannten Weise verwendet.*
+*Im Beispiel wird die Metadateneigenschaft in mehreren Instanzen verwendet. Sie wird z. B. bei **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**und **path**in der genannten Weise verwendet.*
 
 ## Vorkonfigurierte Metadaten {#out-of-the-box-metadata}
 
@@ -120,8 +131,8 @@ Unterstützung für Lokalisierung, Sortierung und Verwendung von Konfigurationse
 1. **Lokalisierungsunterstützung**: Zur Lokalisierung von beliebigem statischem Text verwenden Sie das Attribut `${localize-YOUR_TEXT}` und stellen Sie den lokalisierten Wert bereit, sofern er nicht bereits vorhanden ist.
    *Im genannten Beispiel werden die Attribute `${localize-Apply}` und `${localize-Download}` verwendet, um den Text „Apply“ und „Download“ zu lokalisieren.*
 
-1. **Unterstützung für die Sortierung**: Klicken Sie auf das HTML-Element, um die Suchergebnisse zu sortieren. Um eine Sortierung in einem Tabellenlayout zu implementieren, fügen Sie dem jeweiligen Tabellenkopf das Attribut „data-sortKey“ hinzu. Fügen Sie außerdem seinen Wert als die Metadaten hinzu, nach denen Sie sortieren möchten.
-Beispielsweise lautet für die Kopfzeile „Title“ in der Rasteransicht der Wert der Kopfzeile „data-sortKey“ „title“. Klicken Sie auf die Überschrift, um die Werte in einer bestimmten Spalte zu sortieren.
+1. **Unterstützung für die Sortierung**: Klicken Sie auf das HTML-Element, um die Suchergebnisse zu sortieren. Um eine Sortierung in ein Tabellen-Layout einzufügen, fügen Sie der jeweiligen Tabellenkopfzeile das Attribut „data-sortKey“ hinzu. Fügen Sie außerdem seinen Wert als die Metadaten hinzu, nach denen Sie sortieren möchten.
+So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header „data-sortKey“ „title“. Klicken Sie auf die Überschrift, um die Werte in einer bestimmten Spalte zu sortieren.
 
 1. **Verwenden von Konfigurationseigenschaften**: Die Komponente „Search &amp; Lister“ verfügt über mehrere Konfigurationen, die Sie in der Benutzeroberfläche verwenden können. Verwenden Sie z. B. das Attribut `${config-htmlLinkText}`, um im Bearbeitungsdialogfeld gespeicherten HTML-QuickInfo-Text anzuzeigen. **Verwenden Sie analog dazu für PDF-QuickInfo-Text das Attribut** `${config-pdfLinkText}`.
 

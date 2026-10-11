@@ -11,13 +11,20 @@ role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
 solution: Experience Manager
 feature: Communities
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1739'
 ht-degree: 1%
-
 ---
-
 # Konsole für Community-Gruppen {#community-groups-console}
 
 Die Gruppen -Konsole bietet Zugriff auf das Erstellen von Community-Gruppen, wenn die [Vorlagenstruktur](/help/communities/sites-console.md#step1) einer Community-Site die Funktion [Gruppen](/help/communities/functions.md#groups-function) enthält.
@@ -43,7 +50,7 @@ This is a 404 on helpx. Update or remove.
 
 >[!NOTE]
 >
->Diese Gruppen -Konsole, auf die nur über die Communities-Sites -Konsole zugegriffen werden kann, ist nicht mit der Mitglieds-(Gruppen[Konsole) &#x200B;](/help/communities/members.md) die Verwaltung von Mitgliedergruppen zu verwechseln.
+>Diese Gruppen -Konsole, auf die nur über die Communities-Sites -Konsole zugegriffen werden kann, ist nicht mit der Mitglieds-(Gruppen[Konsole) ](/help/communities/members.md) die Verwaltung von Mitgliedergruppen zu verwechseln.
 >
 >Mitgliedsgruppen sind Benutzergruppen, die in der Veröffentlichungsumgebung registriert sind und über die Autorenumgebung mithilfe des [Tunnelservice](/help/communities/deploy-communities.md#tunnel-service-on-author) aufgerufen werden.
 
@@ -56,8 +63,8 @@ So greifen Sie auf die Gruppenkonsole zu:
 * Wählen Sie einen vorhandenen Community-Site-Ordner aus, damit Sie ihn öffnen können.
 * Wählen Sie eine Instanz einer Community-Site im Ordner aus.
 
-   * Die Struktur der Community-Site muss eine Gruppenfunktion enthalten.
-   * Diese Screenshots stammen aus dem Tutorial Erste Schritte nach [Erstellen von Gruppen in der &#x200B;](/help/communities/published-site.md)).
+  * Die Struktur der Community-Site muss eine Gruppenfunktion enthalten.
+  * Diese Screenshots stammen aus dem Tutorial Erste Schritte nach [Erstellen von Gruppen in der ](/help/communities/published-site.md)).
 
   ![create-group](assets/create-group.png)
 
@@ -78,7 +85,7 @@ So greifen Sie auf die Gruppenkonsole zu:
 * **Community-Gruppentitel**
 
   Ein Anzeigetitel für die Gruppe.
-Der Titel wird für die Gruppe auf der veröffentlichten Site angezeigt.
+  Der Titel wird für die Gruppe auf der veröffentlichten Site angezeigt.
 
 * **Community-Gruppenbeschreibung**
 
@@ -87,7 +94,7 @@ Der Titel wird für die Gruppe auf der veröffentlichten Site angezeigt.
 * **Community-Gruppenstamm**
 
   Der Stammpfad zur Gruppe.
-Der Standardstamm ist die übergeordnete Website, der Stamm kann jedoch an eine beliebige Stelle innerhalb der Website verschoben werden. Es wird nicht empfohlen, sie zu ändern.
+  Der Standardstamm ist die übergeordnete Website, der Stamm kann jedoch an eine beliebige Stelle innerhalb der Website verschoben werden. Es wird nicht empfohlen, sie zu ändern.
 
 * **Weitere verfügbare Community-Gruppensprachen** Menü
 
@@ -97,10 +104,10 @@ Der Standardstamm ist die übergeordnete Website, der Stamm kann jedoch an eine 
 
   Der Name der Stammseite der Gruppe, der in der URL angezeigt wird. Vermeiden Sie Unterstriche (_) und Schlüsselwörter wie Ressourcen und Konfiguration im Gruppennamen.
 
-   * Überprüfen Sie den Namen, da er nach der Erstellung der Gruppe nicht einfach geändert werden kann.
-   * Die Basis-URL wird unter dem `Community Group Name` angezeigt.
-   * Hängen Sie für eine gültige URL &quot;.html“ an
-     *zum*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+  * Überprüfen Sie den Namen, da er nach der Erstellung der Gruppe nicht einfach geändert werden kann.
+  * Die Basis-URL wird unter dem `Community Group Name` angezeigt.
+  * Hängen Sie für eine gültige URL &quot;.html“ an
+    *zum*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * **Community-Gruppenvorlage** Menü
 
@@ -134,8 +141,8 @@ Beachten Sie beim Erstellen oder Auswählen eines Bildes Folgendes:
 * Das Bild wird an den linken Rand des Browser-Fensters angeheftet
 * Es gibt keine Größenanpassung des Bildes, sodass wenn die Bildbreite:
 
-   * Das Bild wird horizontal wiederholt, wenn es weniger breit ist als der Browser.
-   * Größer als die Breite des Browsers wird das Bild abgeschnitten.
+  * Das Bild wird horizontal wiederholt, wenn es weniger breit ist als der Browser.
+  * Größer als die Breite des Browsers wird das Bild abgeschnitten.
 
 ### Schritt 3: Einstellungen {#step-settings}
 
@@ -173,7 +180,7 @@ Die Mitgliedschaftseinstellung ermöglicht die Auswahl einer der drei Möglichke
 
 * **Eingeschränkte Mitgliedschaft**
 
-  Wenn diese Option aktiviert ist, ist die Community-Gruppe eine geheime Gruppe. Community-Mitglieder müssen ausdrücklich eingeladen werden. Eingeladene Mitglieder werden in das Suchfeld eingegeben. Mitglieder können später über die Konsolen [Mitglieder und Gruppen“ in &#x200B;](/help/communities/members.md) Autorenumgebung hinzugefügt werden. Standard ist nicht ausgewählt.
+  Wenn diese Option aktiviert ist, ist die Community-Gruppe eine geheime Gruppe. Community-Mitglieder müssen ausdrücklich eingeladen werden. Eingeladene Mitglieder werden in das Suchfeld eingegeben. Mitglieder können später über die Konsolen [Mitglieder und Gruppen“ in ](/help/communities/members.md) Autorenumgebung hinzugefügt werden. Standard ist nicht ausgewählt.
 
 **MINIATURANSICHT**
 
@@ -239,14 +246,14 @@ Das Bedienfeld STRUKTUR ermöglicht das Ändern der Struktur, die ursprünglich 
 * Ziehen Sie zusätzliche [Community-Funktionen](/help/communities/functions.md) per Drag-and-Drop in die Site-Struktur.
 * Bei einer Instanz einer Community-Funktion in der Site-Struktur:
 
-   * **`Gear icon`**
-Bearbeiten Sie Einstellungen, einschließlich Anzeigetitel, URL und [Gruppen privilegierter Mitglieder](/help/communities/users.md#privilegedmembersgroups).
+  * **`Gear icon`**
+    Bearbeiten Sie Einstellungen, einschließlich Anzeigetitel, URL und [Gruppen privilegierter Mitglieder](/help/communities/users.md#privilegedmembersgroups).
 
-   * **`Trashcan icon`**
-Entfernen (Löschen) von Funktionen aus der Site-Struktur.
+  * **`Trashcan icon`**
+    Entfernen (Löschen) von Funktionen aus der Site-Struktur.
 
-   * **`Grid icon`**
-Ändern Sie die Reihenfolge der Funktionen, wie sie in der Navigationsleiste der obersten Ebene der Site angezeigt wird.
+  * **`Grid icon`**
+    Ändern Sie die Reihenfolge der Funktionen, wie sie in der Navigationsleiste der obersten Ebene der Site angezeigt wird.
 
 >[!CAUTION]
 >
@@ -271,7 +278,7 @@ Das Bedienfeld DESIGN ermöglicht die Änderung des Designs:
 * [Community-Gruppen-Design](#community-group-theme)
 * [Community-Gruppen-Branding](#community-group-branding)
 
-   * Scrollen Sie zum unteren Rand des Bedienfelds, um das Markenbild zu ändern.
+  * Scrollen Sie zum unteren Rand des Bedienfelds, um das Markenbild zu ändern.
 
 ### Einstellungen ändern {#modify-settings}
 

@@ -1,6 +1,6 @@
 ---
 title: Internationalisierung von UI-Zeichenfolgen
-description: Mit Java™- und JavaScript-APIs können Sie Zeichenfolgen internationalisieren
+description: Mit Java&trade;- und JavaScript-APIs können Sie Zeichenfolgen internationalisieren
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,13 +9,22 @@ exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 100%
-
+ht-degree: 96%
 ---
-
 # Internationalisierung von UI-Zeichenfolgen {#internationalizing-ui-strings}
 
 Mit Java™- und JavaScript-APIs können Sie Zeichenfolgen in folgenden Ressourcen internationalisieren:
@@ -33,7 +42,7 @@ Mit dem Java™-Paket `com.day.cq.i18n` können Sie lokalisierte Zeichenfolgen 
 
 `i18n.get("Search");`
 
-Die Benennung der englischsprachigen Zeichenfolgen unterscheidet sich von herkömmlichen Internationalisierungs-Frameworks, wo die Zeichenfolge über eine ID benannt wird, mit der die Zeichenfolge zur Laufzeit referenziert wird.  Die Verwendung des englischen Zeichenfolgenliterals bietet folgende Vorteile:
+Die Benennung der englischsprachigen Zeichenfolgen unterscheidet sich von herkömmlichen Internationalisierungs-Frameworks, wo die Zeichenfolge über eine ID benannt wird, mit der die Zeichenfolge zur Laufzeit referenziert wird. Die Verwendung des englischen Zeichenfolgenliterals bietet folgende Vorteile:
 
 * Der Code lässt sich leicht verstehen.
 * Die Zeichenfolge in der Standardsprache ist immer verfügbar.
@@ -45,11 +54,11 @@ Es gibt zwei Möglichkeiten, die bevorzugte Sprache der Benutzenden zu bestimmen
 * Bei authentifizierten Benutzenden können Sie die Sprache in den Einstellungen im Benutzerkonto abrufen.
 * Das Gebietsschema der angeforderten Seite.
 
-Die Spracheinstellung des Benutzerkontos ist die bevorzugte Methode, da sie zuverlässiger ist.  Allerdings muss die Benutzerin bzw. der Benutzer dafür angemeldet sein.
+Die Spracheinstellung des Benutzerkontos ist die bevorzugte Methode, da sie zuverlässiger ist. Allerdings muss die Benutzerin bzw. der Benutzer dafür angemeldet sein.
 
 #### Erstellen des I18n-Java™-Objekts {#creating-the-i-n-java-object}
 
-Die I18n-Klasse stellt zwei Konstruktoren bereit.  Der zu verwendende Konstruktor hängt davon ab, wie Sie die bevorzugte Sprache der Benutzerin oder des Benutzers bestimmen.
+Die I18n-Klasse stellt zwei Konstruktoren bereit. Der zu verwendende Konstruktor hängt davon ab, wie Sie die bevorzugte Sprache der Benutzerin oder des Benutzers bestimmen.
 
 Um die Zeichenfolge in der Sprache darzustellen, die im Benutzerkonto angegeben ist, verwenden Sie den folgenden Konstruktor (nachdem Sie `com.day.cq.i18n.I18n)` importiert haben):
 
@@ -69,7 +78,7 @@ I18n i18n = new I18n(resourceBundle);
 
 #### Internationalisierung einer Zeichenfolge {#internationalizing-a-string}
 
-Verwenden Sie die `get`-Methode des `I18n`-Objekts, um eine Zeichenfolge zu internationalisieren. Der einzige erforderliche Parameter der `get`-Methode ist die Zeichenfolge, die internationalisiert werden soll. Die Zeichenfolge entspricht einer Zeichenfolge in einem Übersetzerwörterbuch.  Die get-Methode schlägt die Zeichenfolge im Wörterbuch nach und gibt die Übersetzung in der aktuellen Sprache zurück.
+Verwenden Sie die `get`-Methode des `I18n`-Objekts, um eine Zeichenfolge zu internationalisieren. Der einzige erforderliche Parameter der `get`-Methode ist die Zeichenfolge, die internationalisiert werden soll. Die Zeichenfolge entspricht einer Zeichenfolge in einem Übersetzerwörterbuch. Die get-Methode schlägt die Zeichenfolge im Wörterbuch nach und gibt die Übersetzung in der aktuellen Sprache zurück.
 
 Das erste Argument der `get`-Methode muss folgende Regeln einhalten:
 
@@ -95,13 +104,13 @@ i18n.get("Request","A noun, as in a request for a web page");
 
 Sie können Variablen in die lokalisierte Zeichenfolge einfügen, um dem Satz Kontextbedeutung zu geben. Ein Beispiel: Nach der Anmeldung bei einer Webanwendung wird auf der Homepage folgende Nachricht angezeigt: „Willkommen zurück, Administrator. Sie haben zwei Nachrichten in Ihrem Posteingang.“ Der Seitenkontext bestimmt den Benutzernamen und die Anzahl der Nachrichten.
 
-[Im Wörterbuch](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) werden die Variablen in Zeichenfolgen als eingeklammerte Indizes dargestellt.  Geben Sie die Werte der Variablen als Argumente der `get`-Methode an. Die Argumente werden nach dem Übersetzungshinweis platziert und die Indizes entsprechen der Reihenfolge der Argumente:
+[Im Wörterbuch](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) werden die Variablen in Zeichenfolgen als eingeklammerte Indizes dargestellt. Geben Sie die Werte der Variablen als Argumente der `get`-Methode an. Die Argumente werden nach dem Übersetzungshinweis platziert und die Indizes entsprechen der Reihenfolge der Argumente:
 
 ```xml
 i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messages", user.getDisplayName(), numItems);
 ```
 
-Die internationalisierte Zeichenfolge und der Übersetzungshinweis müssen genau mit der Zeichenfolge bzw. dem Kommentar im Wörterbuch übereinstimmen.  Sie können den Lokalisierungshinweis auslassen, indem Sie einen `null`-Wert als zweites Argument angeben.
+Die internationalisierte Zeichenfolge und der Übersetzungshinweis müssen genau mit der Zeichenfolge bzw. dem Kommentar im Wörterbuch übereinstimmen. Sie können den Lokalisierungshinweis auslassen, indem Sie einen `null`-Wert als zweites Argument angeben.
 
 #### Verwendung der statischen get-Methode {#using-the-static-get-method}
 
@@ -116,7 +125,7 @@ Die `I18N`-Klasse definiert eine statische `get`-Methode, die sich zur Lokalisie
 
 ### Internationalisierung von Zeichenfolgen in JavaScript-Code {#internationalizing-strings-in-javascript-code}
 
-Die JavaScript-API ermöglicht es Ihnen, Zeichenfolgen im Client zu lokalisieren.  Wie bei [Java™- und JSP](#internationalizing-strings-in-java-and-jsp-code)-Code können Sie mit der JavaScript-API zu lokalisierende Zeichenfolgen benennen, Lokalisierungshinweise angeben und Variablen in die lokalisierten Zeichenfolgen einfügen.
+Die JavaScript-API ermöglicht es Ihnen, Zeichenfolgen im Client zu lokalisieren. Wie bei [Java™- und JSP](#internationalizing-strings-in-java-and-jsp-code)-Code können Sie mit der JavaScript-API zu lokalisierende Zeichenfolgen benennen, Lokalisierungshinweise angeben und Variablen in die lokalisierten Zeichenfolgen einfügen.
 
 Der `granite.utils`[-Client-Bibliotheksordner](/help/sites-developing/clientlibs.md) stellt die JavaScript-API bereit. Um die API zu verwenden, fügen Sie diesen Client-Bibliotheksordner in Ihre Seite ein. Lokalisierungsfunktionen verwenden den `Granite.I18n`-Namespace.
 
@@ -154,7 +163,7 @@ Granite.I18n.get("Welcome back {0}. You have {1} new messages in your inbox.", [
 
 ### Internationalisierung von Zeichenfolgen aus JCR-Knoten {#internationalizing-strings-from-jcr-nodes}
 
-UI-Zeichenfolgen basieren häufig auf JCR-Knoteneigenschaften.  Die Eigenschaft `jcr:title` einer Seite wird beispielsweise häufig als Inhalt des `h1`-Elements im Seiten-Code verwendet. Die `I18n`-Klasse stellt die `getVar`-Methode zur Lokalisierung dieser Zeichenfolgen bereit.
+UI-Zeichenfolgen basieren häufig auf JCR-Knoteneigenschaften. Die Eigenschaft `jcr:title` einer Seite wird beispielsweise häufig als Inhalt des `h1`-Elements im Seiten-Code verwendet. Die `I18n`-Klasse stellt die `getVar`-Methode zur Lokalisierung dieser Zeichenfolgen bereit.
 
 Das folgende JSP-Skriptbeispiel ruft die `jcr:title`-Eigenschaft aus dem Repository ab und zeigt die folgende lokalisierte Zeichenfolge auf der Seite an:
 
@@ -165,15 +174,15 @@ Das folgende JSP-Skriptbeispiel ruft die `jcr:title`-Eigenschaft aus dem Reposit
 
 #### Angeben von Übersetzungshinweisen für JCR-Knoten {#specifying-translation-hints-for-jcr-nodes}
 
-Ähnlich wie [Übersetzungshinweise in der Java™-API](#using-translation-hints) können Sie Übersetzungshinweise bereitstellen, um zwischen mehrfach vorhandenen Zeichenfolgen im Wörterbuch zu unterscheiden.  Geben Sie den Übersetzungshinweis als Eigenschaft des Knotens an, der die internationalisierte Eigenschaft enthält.  Der Name der Hinweiseigenschaft besteht aus dem Namen der internationalisierten Eigenschaft mit dem Suffix `_commentI18n`:
+Ähnlich wie [Übersetzungshinweise in der Java™-API](#using-translation-hints) können Sie Übersetzungshinweise bereitstellen, um zwischen mehrfach vorhandenen Zeichenfolgen im Wörterbuch zu unterscheiden. Geben Sie den Übersetzungshinweis als Eigenschaft des Knotens an, der die internationalisierte Eigenschaft enthält. Der Name der Hinweiseigenschaft besteht aus dem Namen der internationalisierten Eigenschaft mit dem Suffix `_commentI18n`:
 
 `${prop}_commentI18n`
 
-Ein `cq:page`-Knoten enthält beispielsweise die Eigenschaft jcr:title, die lokalisiert wird. Der Hinweis wird als Wert der Eigenschaft mit dem Namen jcr:title_commentI18n angegeben.
+Ein `cq:page`-Knoten enthält beispielsweise die jcr:title-Eigenschaft, die lokalisiert wird. Der Hinweis wird als Wert der Eigenschaft mit dem Namen „jcr:title_commentI18n&quot; bereitgestellt.
 
 ### Prüfung der Internationalisierungsabdeckung {#testing-internationalization-coverage}
 
-Prüfen Sie, ob Sie alle Zeichenfolgen in Ihrer Benutzeroberfläche internationalisiert haben.  Um festzustellen, welche Zeichenfolgen abgedeckt sind, setzen Sie die Benutzersprache auf zz_ZZ und öffnen Sie die Benutzeroberfläche im Webbrowser.  Die internationalisierten Zeichenfolgen werden mit einer Platzhalterübersetzung im folgenden Format angezeigt:
+Prüfen Sie, ob Sie alle Zeichenfolgen in Ihrer Benutzeroberfläche internationalisiert haben. Um festzustellen, welche Zeichenfolgen abgedeckt sind, setzen Sie die Benutzersprache auf zz_ZZ und öffnen Sie die Benutzeroberfläche im Webbrowser. Die internationalisierten Zeichenfolgen werden mit einer Platzhalterübersetzung im folgenden Format angezeigt:
 
 `USR_*Default-String*_尠`
 

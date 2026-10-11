@@ -9,13 +9,22 @@ exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 99%
-
 ---
-
 # Verbinden mit SQL-Datenbanken{#connecting-to-sql-databases}
 
 Greifen Sie auf eine externe SQL-Datenbank zu, damit Ihre CQ-Programme mit den Daten interagieren können:
@@ -28,7 +37,7 @@ Greifen Sie auf eine externe SQL-Datenbank zu, damit Ihre CQ-Programme mit den D
 
 Einige Datenbankanbieter stellen JDBC-Treiber in einem OSGi-Paket bereit, z. B. [MySQL](https://dev.mysql.com/downloads/connector/j/). Wenn der JDBC-Treiber für Ihre Datenbank nicht als OSGi-Bundle verfügbar ist, rufen Sie die Treiber-JAR-Datei ab und verpacken Sie sie in einem OSGi-Paket. Das Bundle muss die Pakete exportieren, die für die Interaktion mit dem Datenbankserver erforderlich sind. Das Bundle muss außerdem die Pakete importieren, die es referenziert.
 
-Das folgende Beispiel verwendet das [Bundle-Plug-in für Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html), um den HSQLDB-Treiber in einem OSGi-Bundle zu verpacken. Das POM weist das Plug-in an, die hsqldb.jar-Datei einzubetten, die als Abhängigkeit angegeben ist. Alle org.hsqldb-Pakete werden exportiert.
+Das folgende Beispiel verwendet das [Paket-Plug-in für Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html), um den HSQLDB-Treiber in einem OSGi-Paket zu verpacken. Das POM weist das Plug-in an, die hsqldb.jar-Datei einzubetten, die als Abhängigkeit angegeben ist. Alle org.hsqldb-Pakete werden exportiert.
 
 Das Plug-in bestimmt automatisch, welche Pakete importiert werden sollen, und listet sie in der Datei „MANIFEST.MF“ des Bundles auf. Wenn eines der Pakete nicht auf dem CQ-Server verfügbar ist, startet das Bundle nicht bei der Installation. Zwei mögliche Lösungen sind:
 

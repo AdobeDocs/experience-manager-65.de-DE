@@ -10,13 +10,26 @@ exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '4886'
+source-wordcount: '4887'
 ht-degree: 99%
-
 ---
-
 # Erstellen von Seitenvorlagen{#creating-page-templates}
 
 Wenn Sie eine Seite erstellen, müssen Sie eine Vorlage auswählen. Diese wird als Grundlage für die Erstellung der neuen Seite verwendet. Die Vorlage definiert die Struktur der Seite, die anfänglichen Inhalte und die Komponenten, die verwendet werden können.
@@ -64,29 +77,29 @@ Für das Erstellen einer Vorlage mithilfe der **Vorlagenkonsole** und des **Vorl
 
 * **Admin**:
 
-   * Erstellt neue Ordner für Vorlagen, wofür `admin`-Berechtigungen erforderlich sind.
+  * Erstellt neue Ordner für Vorlagen, wofür `admin`-Berechtigungen erforderlich sind.
 
-   * Solche Aufgaben können oft von Entwickelnden übernommen werden.
+  * Solche Aufgaben können oft von Entwickelnden übernommen werden.
 
 * **Entwickler**:
 
-   * Konzentriert sich auf technische/interne Details.
-   * Muss Erfahrung mit der Entwicklungsumgebung haben.
-   * Versorgt den Vorlagenautor mit den erforderlichen Informationen.
+  * Konzentriert sich auf technische/interne Details.
+  * Muss Erfahrung mit der Entwicklungsumgebung haben.
+  * Versorgt den Vorlagenautor mit den erforderlichen Informationen.
 
 * **Vorlagenautor**:
 
-   * Dies ist ein bestimmter Autor, der Mitglied der Gruppe `template-authors` ist.
+  * Dies ist ein bestimmter Autor, der Mitglied der Gruppe `template-authors` ist.
 
-      * Weist die erforderlichen Berechtigungen zu.
+    * Weist die erforderlichen Berechtigungen zu.
 
-   * Kann die Verwendung von Komponenten und andere wichtige Einzelheiten konfigurieren, was Folgendes erfordert:
+  * Kann die Verwendung von Komponenten und andere wichtige Einzelheiten konfigurieren, was Folgendes erfordert:
 
-      * Einige technische Kenntnisse
+    * Einige technische Kenntnisse
 
-         * Zum Beispiel bei der Verwendung von Mustern, wenn Pfade definiert werden.
+      * Zum Beispiel bei der Verwendung von Mustern, wenn Pfade definiert werden.
 
-      * Technische Informationen vom Entwickler.
+    * Technische Informationen vom Entwickler.
 
 Aufgrund der Natur einiger Aufgaben (etwa dem Erstellen eines Ordners) ist eine Entwicklungsumgebung erforderlich, für die wiederum Kenntnisse/Erfahrung benötigt werden.
 
@@ -98,18 +111,18 @@ AEM bietet jetzt zwei grundlegende Arten von Vorlagen:
 
 * [Bearbeitbare Vorlagen](/help/sites-authoring/templates.md#creatingandmanagingnewtemplates)
 
-   * Können von Vorlagenautoren [erstellt](#creatinganewtemplate) und [bearbeitet](#editingatemplate) werden, indem die **Vorlagenkonsole und der Vorlagen-Editor** verwendet werden. Auf die **Vorlagenkonsole** kann im Bereich **Allgemein** der Konsole **Werkzeuge** zugegriffen werden.
+  * Können von Vorlagenautoren [erstellt](#creatinganewtemplate) und [bearbeitet](#editingatemplate) werden, indem die **Vorlagenkonsole und der Vorlagen-Editor** verwendet werden. Auf die **Vorlagenkonsole** kann im Bereich **Allgemein** der Konsole **Werkzeuge** zugegriffen werden.
 
-   * Nachdem die neue Seite erstellt wurde, wird eine dynamische Verbindung zwischen der Seite und der Vorlage aufrechterhalten. Das bedeutet, dass Änderungen an der Vorlagenstruktur und/oder an gesperrten Inhalten auf allen Seiten übernommen werden, die mit dieser Vorlage erstellt werden. Änderungen am entsperrten (d. h. anfänglichen) Inhalt werden nicht übernommen.
-   * Verwenden Sie die Inhaltsrichtlinien, die Sie im Vorlagen-Editor definieren können, um die Designeigenschaften beizubehalten. Der Design-Modus im Seiteneditor wird nicht mehr für bearbeitbare Vorlagen verwendet.
+  * Nachdem die neue Seite erstellt wurde, wird eine dynamische Verbindung zwischen der Seite und der Vorlage aufrechterhalten. Das bedeutet, dass Änderungen an der Vorlagenstruktur und/oder an gesperrten Inhalten auf allen Seiten übernommen werden, die mit dieser Vorlage erstellt werden. Änderungen am entsperrten (d. h. anfänglichen) Inhalt werden nicht übernommen.
+  * Verwenden Sie die Inhaltsrichtlinien, die Sie im Vorlagen-Editor definieren können, um die Designeigenschaften beizubehalten. Der Design-Modus im Seiteneditor wird nicht mehr für bearbeitbare Vorlagen verwendet.
 
 * Statische Vorlagen
 
-   * Statische Vorlagen sind bereits seit längerem für diverse Versionen von AEM verfügbar.
-   * Sie werden [von Ihren Entwicklern bereitgestellt](/help/sites-developing/page-templates-static.md) und können somit nicht von Autoren erstellt oder bearbeitet werden.
-   * Sie werden kopiert, um die neue Seite zu erstellen, wobei danach keine dynamische Verbindung besteht (obwohl der Name der Vorlage zu Informationszwecken registriert ist).
-   * Verwenden Sie den [Designmodus](/help/sites-authoring/default-components-designmode.md), um Designeigenschaften beizubehalten.
-   * Da die Bearbeitung von statischen Vorlagen ausschließlich von Entwickelnden durchgeführt wird, lesen Sie das Entwicklerdokument [Statische Seitenvorlagen](/help/sites-developing/page-templates-static.md), um weitere Informationen zu erhalten.
+  * Statische Vorlagen sind bereits seit längerem für diverse Versionen von AEM verfügbar.
+  * Sie werden [von Ihren Entwicklern bereitgestellt](/help/sites-developing/page-templates-static.md) und können somit nicht von Autoren erstellt oder bearbeitet werden.
+  * Sie werden kopiert, um die neue Seite zu erstellen, wobei danach keine dynamische Verbindung besteht (obwohl der Name der Vorlage zu Informationszwecken registriert ist).
+  * Verwenden Sie den [Designmodus](/help/sites-authoring/default-components-designmode.md), um Designeigenschaften beizubehalten.
+  * Da die Bearbeitung von statischen Vorlagen ausschließlich von Entwickelnden durchgeführt wird, lesen Sie das Entwicklerdokument [Statische Seitenvorlagen](/help/sites-developing/page-templates-static.md), um weitere Informationen zu erhalten.
 
 Die Vorlagenkonsole und der Vorlageneditor ermöglichen standardmäßig nur die Erstellung und Bearbeitung bearbeitbarer Vorlagen. Deshalb konzentriert sich dieses Dokument ausschließlich auf bearbeitbare Vorlagen.
 
@@ -123,7 +136,7 @@ Gehen Sie zum Erstellen einer bearbeitbaren Vorlage wie folgt vor:
 
 * Verwenden Sie die **Vorlagenkonsole**. Diese ist im Abschnitt **Allgemein** der **Tools-Konsole** verfügbar.
 
-   * Oder direkt unter: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+  * Oder direkt unter: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Erstellen Sie bei Bedarf [einen Ordner für die Vorlagen](#creating-a-template-folder-admin).
 * [Erstellen einer neuen Vorlage](#creatinganewtemplateauthor), die anfangs leer ist
@@ -131,10 +144,10 @@ Gehen Sie zum Erstellen einer bearbeitbaren Vorlage wie folgt vor:
 * [Definieren weiterer Eigenschaften](#definingtemplatepropertiesauthor) für die Vorlage bei Bedarf
 * [Bearbeiten Sie die Vorlage](#editingtemplates), um Folgendes zu definieren:
 
-   * [Struktur](#editingatemplatestructureauthor) – vordefinierter Inhalt, der auf Seiten, die mit der Vorlage erstellt werden, nicht geändert werden kann.
-   * [Anfänglicher Inhalt](#editing-a-template-initial-content-author) – vordefinierter Inhalt, der auf den Seiten geändert werden kann, die mit der Vorlage erstellt werden.
-   * [Layout](#editingatemplatelayoutauthor) – für eine Vielzahl von Geräten.
-   * [Stile](/help/sites-authoring/style-system.md) – zum Definieren der Stile für die Vorlage und ihre Komponenten.
+  * [Struktur](#editingatemplatestructureauthor) – vordefinierter Inhalt, der auf Seiten, die mit der Vorlage erstellt werden, nicht geändert werden kann.
+  * [Anfänglicher Inhalt](#editing-a-template-initial-content-author) – vordefinierter Inhalt, der auf den Seiten geändert werden kann, die mit der Vorlage erstellt werden.
+  * [Layout](#editingatemplatelayoutauthor) – für eine Vielzahl von Geräten.
+  * [Stile](/help/sites-authoring/style-system.md) – zum Definieren der Stile für die Vorlage und ihre Komponenten.
 
 * [Aktivieren Sie die Vorlage](#enablingatemplateauthor) zur Verwendung beim Erstellen einer Seite
 * [Lassen Sie die Vorlage zu](#allowing-a-template-author) für die erforderliche Seite oder die Verzweigung Ihrer Website
@@ -188,18 +201,18 @@ Eine Vorlage kann die folgenden Eigenschaften aufweisen:
 
 * Bild
 
-   * Bild, das als [Miniatur der Vorlage verwendet wird](/help/sites-authoring/templates.md#template-thumbnail-image), um die Auswahl zu vereinfachen, beispielsweise im Seitenerstellungsassistenten.
+  * Bild, das als [Miniatur der Vorlage verwendet wird](/help/sites-authoring/templates.md#template-thumbnail-image), um die Auswahl zu vereinfachen, beispielsweise im Seitenerstellungsassistenten.
 
-      * Kann hochgeladen werden.
-      * Kann basierend auf dem Vorlageninhalt generiert werden.
+    * Kann hochgeladen werden.
+    * Kann basierend auf dem Vorlageninhalt generiert werden.
 
 * Titel
 
-   * Ein Titel, der zur Identifizierung der Vorlage verwendet wird, z. B. im Assistenten **Seite erstellen**.
+  * Ein Titel, der zur Identifizierung der Vorlage verwendet wird, z. B. im Assistenten **Seite erstellen**.
 
 * Beschreibung
 
-   * Eine optionale Beschreibung mit weiteren Informationen zur Vorlage und deren Verwendung, die beispielsweise im **Seitenerstellungsassistenten** angezeigt werden kann.
+  * Eine optionale Beschreibung mit weiteren Informationen zur Vorlage und deren Verwendung, die beispielsweise im **Seitenerstellungsassistenten** angezeigt werden kann.
 
 So zeigen Sie die Eigenschaften an bzw. bearbeiten sie:
 
@@ -367,16 +380,16 @@ Im **Struktur**-Modus des Vorlageneditors:
 
   Es gibt mehrere Möglichkeiten, Komponenten zur Vorlage hinzuzufügen:
 
-   * Über den **Komponenten**-Browser im seitlichen Bedienfeld.
-   * über die Option **Komponente einfügen** (**Plussymbol**) in der Symbolleiste von Komponenten, die bereits in der Vorlage sind, oder dem Feld **Kompenenten hierher ziehen**
+  * Über den **Komponenten**-Browser im seitlichen Bedienfeld.
+  * über die Option **Komponente einfügen** (**Plussymbol**) in der Symbolleiste von Komponenten, die bereits in der Vorlage sind, oder dem Feld **Kompenenten hierher ziehen**
 
-   * Durch Ziehen eines Assets (aus dem **Assets**-Browser im seitlichen Bedienfeld) direkt auf die Vorlage wird die entsprechende Komponente an Ort und Stelle generiert.
+  * Durch Ziehen eines Assets (aus dem **Assets**-Browser im seitlichen Bedienfeld) direkt auf die Vorlage wird die entsprechende Komponente an Ort und Stelle generiert.
 
   Sobald sie hinzugefügt wurde, wird jede Komponente markiert mit:
 
-   * einem Rahmen
-   * einer Markierung, die den Komponententyp anzeigt
-   * einer Markierung, die anzeigt, ob die Komponente entsperrt ist.
+  * einem Rahmen
+  * einer Markierung, die den Komponententyp anzeigt
+  * einer Markierung, die anzeigt, ob die Komponente entsperrt ist.
 
   >[!NOTE]
   >
@@ -422,8 +435,8 @@ Im **Struktur**-Modus des Vorlageneditors:
 
   Das Konfigurationsfenster ist in zwei Hälften geteilt.
 
-   * Auf der linken Seite des Dialogfelds können Sie unter **Richtlinie** eine vorhandene Richtlinie auswählen.
-   * Auf der rechten Seite des Dialogfelds können Sie unter **Eigenschaften** die für den Komponententyp spezifischen Eigenschaften festlegen.
+  * Auf der linken Seite des Dialogfelds können Sie unter **Richtlinie** eine vorhandene Richtlinie auswählen.
+  * Auf der rechten Seite des Dialogfelds können Sie unter **Eigenschaften** die für den Komponententyp spezifischen Eigenschaften festlegen.
 
   Die verfügbaren Eigenschaften hängen von der ausgewählten Komponente ab. Beispielsweise definieren die Eigenschaften bei einer Textkomponente u. a. die Optionen zum Kopieren und Einfügen, Formatierungsoptionen und das Absatzformat.
 
@@ -457,8 +470,8 @@ Im **Struktur**-Modus des Vorlageneditors:
 
   Unter der Überschrift **Eigenschaften** können Sie die Einstellungen der Komponente definieren. Die Überschrift hat zwei Registerkarten:
 
-   * Allgemein
-   * Funktionen
+  * Allgemein
+  * Funktionen
 
   *Allgemein*
 
@@ -490,7 +503,7 @@ Im **Struktur**-Modus des Vorlageneditors:
 
   >[!NOTE]
   >
-  >[Inhaltsrichtlinien für Komponenten, die den Rich-Text-Editor implementieren](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638), können nur für Optionen definiert werden, die vom RTE über seine UI-Einstellungen bereitgestellt werden. [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[Inhaltsrichtlinien für Komponenten, die den Rich-Text-Editor implementieren](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638), können nur für Optionen definiert werden, die vom RTE über seine UI-Einstellungen bereitgestellt werden. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Richtlinien und Eigenschaften (Layout-Container)**
 
@@ -512,19 +525,19 @@ Im **Struktur**-Modus des Vorlageneditors:
 
   Unter der Überschrift **Eigenschaften** können Sie auswählen, welche Komponenten für den Layout-Container verfügbar sind, und ihre Einstellungen definieren. Die Überschrift hat drei Registerkarten:
 
-   * Zugelassene Komponenten
-   * Standardkomponenten
-   * Responsive Einstellungen
+  * Zugelassene Komponenten
+  * Standardkomponenten
+  * Responsive Einstellungen
 
   *Zugelassene Komponenten*
 
   Auf der Registerkarte **Zugelassene Komponenten** legen Sie fest, welche Komponenten für den Layout-Container verfügbar sind.
 
-   * Die Komponenten werden nach Komponentengruppen gruppiert, die sich erweitern und reduzieren lassen.
-   * Es kann eine ganze Gruppe ausgewählt werden, indem das Kontrollkästchen für den Gruppennamen aktiviert wird. Um die Auswahl aller Elemente wieder aufzuheben, deaktivieren Sie das Kontrollkästchen.
-   * Ein Minuszeichen zeigt an, dass mindestens eines, aber nicht alle Elemente in einer Gruppe ausgewählt sind.
-   * Es steht eine Suchfunktion zur Verfügung, um nach einer Komponente anhand ihres Namens zu filtern.
-   * Die rechts neben dem Namen der Komponentengruppe aufgeführten Zahlen geben die Gesamtzahl der ausgewählten Komponenten in diesen Gruppen an, unabhängig vom Filter.
+  * Die Komponenten werden nach Komponentengruppen gruppiert, die sich erweitern und reduzieren lassen.
+  * Es kann eine ganze Gruppe ausgewählt werden, indem das Kontrollkästchen für den Gruppennamen aktiviert wird. Um die Auswahl aller Elemente wieder aufzuheben, deaktivieren Sie das Kontrollkästchen.
+  * Ein Minuszeichen zeigt an, dass mindestens eines, aber nicht alle Elemente in einer Gruppe ausgewählt sind.
+  * Es steht eine Suchfunktion zur Verfügung, um nach einer Komponente anhand ihres Namens zu filtern.
+  * Die rechts neben dem Namen der Komponentengruppe aufgeführten Zahlen geben die Gesamtzahl der ausgewählten Komponenten in diesen Gruppen an, unabhängig vom Filter.
 
   ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -548,13 +561,13 @@ Im **Struktur**-Modus des Vorlageneditors:
 
   Wenn eine Komponente entsperrt wurde:
 
-   * wird am Rand ein offenes Vorhängeschloss angezeigt
-   * wird die Symbolleiste der Komponente entsprechend angepasst
-   * Bereits eingegebene Inhalte werden nicht mehr im **Strukturmodus** angezeigt.
+  * wird am Rand ein offenes Vorhängeschloss angezeigt
+  * wird die Symbolleiste der Komponente entsprechend angepasst
+  * Bereits eingegebene Inhalte werden nicht mehr im **Strukturmodus** angezeigt.
 
-      * Bereits eingegebener Inhalt wird als anfänglicher Inhalt betrachtet und ist nur im Modus **Anfänglicher Inhalt** sichtbar.
+    * Bereits eingegebener Inhalt wird als anfänglicher Inhalt betrachtet und ist nur im Modus **Anfänglicher Inhalt** sichtbar.
 
-   * Die Komponenten, die der entsperrten Komponente übergeordnet sind, können nicht verschoben, ausgeschnitten oder gelöscht werden.
+  * Die Komponenten, die der entsperrten Komponente übergeordnet sind, können nicht verschoben, ausgeschnitten oder gelöscht werden.
 
   ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -705,30 +718,30 @@ Beim Erstellen von Vorlagen sollten Sie Folgendes berücksichtigen:
 
    * Änderungen an der Struktur:
 
-      * Diese werden sofort auf die resultierenden Seiten angewendet.
-      * Die geänderte Vorlage muss veröffentlicht werden, damit Besucherinnen und Besucher die Änderungen sehen können.
+     * Diese werden sofort auf die resultierenden Seiten angewendet.
+     * Die geänderte Vorlage muss veröffentlicht werden, damit Besucherinnen und Besucher die Änderungen sehen können.
 
    * Änderungen an Inhaltsrichtlinien und Design-Konfigurationen:
 
-      * Diese werden sofort auf die resultierenden Seiten angewendet.
-      * Die Änderungen müssen veröffentlicht werden, damit Besucherinnen und Besucher die Änderungen sehen können.
+     * Diese werden sofort auf die resultierenden Seiten angewendet.
+     * Die Änderungen müssen veröffentlicht werden, damit Besucherinnen und Besucher die Änderungen sehen können.
 
    * Änderungen am anfänglichen Inhalt:
 
-      * Diese werden nur auf Seiten angewendet, die nach den Änderungen an der Vorlage erstellt wurden.
+     * Diese werden nur auf Seiten angewendet, die nach den Änderungen an der Vorlage erstellt wurden.
 
    * Für Änderungen am Layout ist dies davon abhängig, ob für die geänderte Komponente Folgendes gilt:
 
-      * Nur Struktur – sofort angewendet
-      * Ursprünglichen Inhalt enthalten – nur auf Seiten angewendet, die nach der Änderung erstellt wurden
+     * Nur Struktur – sofort angewendet
+     * Ursprünglichen Inhalt enthalten – nur auf Seiten angewendet, die nach der Änderung erstellt wurden
 
    Besondere Vorsicht ist erforderlich bei:
 
    * Sperren oder Entsperren von Komponenten in aktivierten Vorlagen.
    * Dies kann Nebeneffekte haben, da die Komponenten bereits von vorhandenen Seiten verwendet werden können. In der Regel gilt Folgendes:
 
-      * Wenn Komponenten (die gesperrt waren) entsperrt werden, fehlen sie auf vorhandenen Seiten.
-      * Wenn Komponenten (die bearbeitbar waren) gesperrt werden, wird der entsprechende Inhalt auf den Seiten ausgeblendet.
+     * Wenn Komponenten (die gesperrt waren) entsperrt werden, fehlen sie auf vorhandenen Seiten.
+     * Wenn Komponenten (die bearbeitbar waren) gesperrt werden, wird der entsprechende Inhalt auf den Seiten ausgeblendet.
 
    >[!NOTE]
    >

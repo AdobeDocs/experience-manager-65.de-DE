@@ -6,13 +6,29 @@ role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+  - id: c7140a77-10cf-4213-a7e9-f0d69c9fb56c
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+  - id: e5184d7e-fd36-480c-b5e5-d8161f2210ca
+    internal-label: Assets HTTP API
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 98%
-
 ---
-
 # Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API {#content-fragments-support-in-aem-assets-http-api}
 
 | Version | Artikel-Link |
@@ -67,9 +83,9 @@ Die Assets-REST-API bietet [REST](https://de.wikipedia.org/wiki/Representational
 Sie verwendet den `/api/assets`-Endpunkt und benötigt für den Zugriff auf das Asset dessen Pfad (ohne das Präfix `/content/dam`).
 
 * Das bedeutet, dass Sie für den Zugriff auf das Asset unter
-   * `/content/dam/path/to/asset`
+  * `/content/dam/path/to/asset`
 * Folgendes anfordern müssen:
-   * `/api/assets/path/to/asset`
+  * `/api/assets/path/to/asset`
 
 Um beispielsweise auf `/content/dam/wknd/en/adventures/cycling-tuscany`zuzugreifen, fordern Sie `/api/assets/wknd/en/adventures/cycling-tuscany.json` an.
 
@@ -251,9 +267,9 @@ Die Verwendung unterscheidet sich je nachdem, ob Sie eine AEM-Autoren- oder Ver�
 * Es wird dringend empfohlen, dass die Erstellung in einer Autoreninstanz erfolgt ([und derzeit gibt es keine Möglichkeit, ein Fragment mit dieser API für die Veröffentlichungsinstanz zu replizieren](/help/assets/assets-api-content-fragments.md#limitations)).
 * Die Bereitstellung ist in beiden Umgebungen möglich, da AEM angeforderte Inhalte nur im JSON-Format bereitstellt.
 
-   * Das Speichern und Bereitstellen über eine AEM-Autoreninstanz sollte für Mediathekanwendungen hinter einer Firewall ausreichen.
+  * Das Speichern und Bereitstellen über eine AEM-Autoreninstanz sollte für Mediathekanwendungen hinter einer Firewall ausreichen.
 
-   * Für die Live-Web-Bereitstellung wird eine AEM-Veröffentlichungsinstanz empfohlen.
+  * Für die Live-Web-Bereitstellung wird eine AEM-Veröffentlichungsinstanz empfohlen.
 
 >[!CAUTION]
 >
@@ -319,18 +335,18 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
 * **200** (OK)
 Wird zurückgegeben, wenn:
 
-   * ein Inhaltsfragment per `GET` angefordert wurde
-   * ein Inhaltsfragment per `PUT` aktualisiert wurde
+  * ein Inhaltsfragment per `GET` angefordert wurde
+  * ein Inhaltsfragment per `PUT` aktualisiert wurde
 
 * **201** (Erstellt)
 Wird zurückgegeben, wenn:
 
-   * ein Inhaltsfragment per `POST` erstellt wurde
+  * ein Inhaltsfragment per `POST` erstellt wurde
 
 * **404** (Nicht gefunden)
 Wird zurückgegeben, wenn:
 
-   * das angeforderte Inhaltsfragment nicht vorhanden ist
+  * das angeforderte Inhaltsfragment nicht vorhanden ist
 
 * **500** (Interner Server-Fehler)
 
@@ -343,28 +359,28 @@ Wird zurückgegeben, wenn:
 
   Nachfolgend finden Sie allgemeine Szenarien, in denen dieser Fehlerstatus in Kombination mit der Fehlermeldung (monospace) zurückgegeben wird:
 
-   * Übergeordneter Ordner ist nicht vorhanden (wenn ein Inhaltsfragment per `POST` erstellt wurde)
-   * Es wird kein Inhaltsfragmentmodell bereitgestellt (CQ:model fehlt), es kann nicht gelesen werden (aufgrund eines ungültigen Pfads oder eines Berechtigungsproblems) oder es gibt kein gültiges Fragmentmodell:
+  * Übergeordneter Ordner ist nicht vorhanden (wenn ein Inhaltsfragment per `POST` erstellt wurde)
+  * Es wird kein Inhaltsfragmentmodell bereitgestellt (CQ:model fehlt), es kann nicht gelesen werden (aufgrund eines ungültigen Pfads oder eines Berechtigungsproblems) oder es gibt kein gültiges Fragmentmodell:
 
-      * `No content fragment model specified`
-      * `Cannot create a resource of given model '/foo/bar/qux'`
+    * `No content fragment model specified`
+    * `Cannot create a resource of given model '/foo/bar/qux'`
 
-   * Das Inhaltsfragment konnte nicht erstellt werden (möglicherweise ein Berechtigungsproblem):
+  * Das Inhaltsfragment konnte nicht erstellt werden (möglicherweise ein Berechtigungsproblem):
 
-      * `Could not create content fragment`
+    * `Could not create content fragment`
 
-   * Titel oder Beschreibung konnte nicht aktualisiert werden:
+  * Titel oder Beschreibung konnte nicht aktualisiert werden:
 
-      * `Could not set value on content fragment`
+    * `Could not set value on content fragment`
 
-   * Metadaten konnten nicht festgelegt werden:
+  * Metadaten konnten nicht festgelegt werden:
 
-      * `Could not set metadata on content fragment`
+    * `Could not set metadata on content fragment`
 
-   * Inhaltselement wurde nicht gefunden oder konnte nicht aktualisiert werden
+  * Inhaltselement wurde nicht gefunden oder konnte nicht aktualisiert werden
 
-      * `Could not update content element`
-      * `Could not update fragment data of element`
+    * `Could not update content element`
+    * `Could not update fragment data of element`
 
   Die detaillierten Fehlermeldungen werden im Allgemeinen im folgenden Typ zurückgegeben:
 
@@ -388,7 +404,7 @@ Hier finden Sie detaillierte API-Referenzen:
 * [Adobe Experience Manager Assets-API - Inhaltsfragmente](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [Assets-HTTP-API](/help/assets/mac-api-assets.md)
 
-   * [Verfügbare Funktionen](/help/assets/mac-api-assets.md#assets)
+  * [Verfügbare Funktionen](/help/assets/mac-api-assets.md#assets)
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

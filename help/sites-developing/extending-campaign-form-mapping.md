@@ -9,13 +9,22 @@ exl-id: bce6c586-9962-4217-82cb-c837e479abc0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 100%
-
+source-wordcount: '538'
+ht-degree: 92%
 ---
-
 # Erstellen benutzerdefinierter Formularzuordnungen{#creating-custom-form-mappings}
 
 Bei der Erstellung einer benutzerdefinierten Tabelle in Adobe Campaign ist es u. U. ratsam, in AEM ein Formular zu erstellen, das dieser benutzerdefinierten Tabelle zugeordnet wird.
@@ -106,7 +115,7 @@ Geben Sie bei der Konfiguration der Felder eindeutige Elementnamen für die Form
 
 Nach der Konfiguration der Felder müssen Sie die Zuordnung manuell ändern.
 
-Wechseln Sie in CRXDE Lite zum Knoten **jcr:content** der Seite und legen Sie als Wert von **acMapping** den internen Namen des **Zielgruppen-Mappings** fest.
+Wechseln Sie in CRXDE-lite zum Knoten **jcr:content** (der Seite) und ändern Sie den **acMapping**-Wert in den internen Namen des **Zielgruppen-Mappings**.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -122,7 +131,7 @@ Sie können das Formular nun übermitteln, um in Adobe Campaign zu überprüfen
 
 ## Fehlerbehebung {#troubleshooting}
 
-**&quot;Invalid type for value &#39;02/02/2015&#39; from element &#39;@eventdate&#39; (document of type &#39;Event ([adb:event])&#39;)&quot;**
+**„Ungültiger Typ für Wert &#39;02/02/2015&#39; ausgehend vom Element &#39;@eventdate&#39; (Dokument vom Typ &#39;Ereignis ([adb:event])&#39;)**
 
 Beim Übermitteln des Formulars wird dieser Fehler in der Datei **error.log** von AEM protokolliert.
 

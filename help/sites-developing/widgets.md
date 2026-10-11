@@ -1,20 +1,27 @@
 ---
 title: Verwenden und Erweitern von Widgets (klassische Benutzeroberfläche)
-
 description: Die Web-basierte Oberfläche von Adobe Experience Manager nutzt AJAX und andere moderne Browser-Technologien, um WYSIWYG-Bearbeitung und -Formatierung von Inhalten durch Autorinnen und Autoren direkt auf der Web-Seite zu ermöglichen
-
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-
 docset: aem65
 exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '5049'
 ht-degree: 92%
@@ -121,7 +128,7 @@ Zum Durchführen der Übungen auf dieser Seite installieren Sie das Paket **Verw
 
 1. Laden Sie in Ihrer AEM-Instanz das Paket **Verwenden von ExtJS Widgets (v01)** von Package Share herunter und installieren Sie es. Dabei wird im Repository unter `extjstraining` das Projekt `/apps` erstellt.
 1. Fügen Sie die Client-Bibliothek, die die Skripte (js) und das Stylesheet (css) enthält, in das Head-Tag der Geometrixx-Seiten-JSP ein. Sie werden jetzt die Beispielkomponenten in eine neue Seite der Verzweigung **Geometrixx** einbeziehen:
-Öffnen Sie in **0&rbrace;die `/apps/geometrixx/components/page/headlibs.jsp` und fügen Sie die `cq.extjstraining` Kategorie wie folgt zum bestehenden `<ui:includeClientLib>`-Tag hinzu:**
+Öffnen Sie in **0}die `/apps/geometrixx/components/page/headlibs.jsp` und fügen Sie die `cq.extjstraining` Kategorie wie folgt zum bestehenden `<ui:includeClientLib>`-Tag hinzu:**
    `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
 1. Erstellen Sie eine Seite im **Geometrixx**-Zweig unter `/content/geometrixx/en/products` und nennen Sie sie **Verwenden von ExtJS Widgets**.
 1. Wechseln Sie in den Designmodus und fügen Sie alle Komponenten der Gruppe **Verwenden von ExtJS Widgets** dem Design von Geometrixx hinzu.

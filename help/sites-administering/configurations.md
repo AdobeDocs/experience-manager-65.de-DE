@@ -5,13 +5,22 @@ exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 100%
-
 ---
-
 # Konfigurationen und der Konfigurations-Browser {#configuration-browser}
 
 AEM-Konfigurationen dienen zur Verwaltung von Einstellungen in AEM und als Arbeitsbereiche.
@@ -79,8 +88,8 @@ Es ist einfach, mithilfe des Konfigurations-Browsers eine Konfiguration in AEM z
 
    * Der **Titel** sollte beschreibend sein.
    * Der **Name** wird zum Knotennamen im Repository.
-      * Er wird automatisch auf Grundlage des Titels generiert und gemäß den [AEM-Namenskonventionen](/help/sites-developing/naming-conventions.md) angepasst.
-      * Er kann bei Bedarf angepasst werden.
+     * Er wird automatisch auf Grundlage des Titels generiert und gemäß den [AEM-Namenskonventionen](/help/sites-developing/naming-conventions.md) angepasst.
+     * Er kann bei Bedarf angepasst werden.
 1. Markieren Sie die Art der Konfigurationen, die zugelassen werden sollen.
    * [Cloud-Konfigurationen](/help/sites-administering/configurations.md)
    * [Context-Hub-Segmente](/help/sites-administering/segmentation.md)
@@ -199,7 +208,7 @@ Um dies zu unterstützen, verfügt die Konfigurationssuche in AEM über einen Ve
 
 ### Verwenden von Konfigurationen {#using-configurations}
 
-Die Konfigurationen in AEM basieren auf kontextabhängigen Sling-Konfigurationen. Die Sling-Bundles bieten eine Dienst-API, mit der kontextabhängige Konfigurationen abgerufen werden können. Kontextabhängige Konfigurationen sind Konfigurationen, die sich auf eine Inhaltsressource oder einen Ressourcenbaum beziehen, wie [im vorherigen Beispiel beschrieben](#developer-example) wurde.
+Die Konfigurationen in AEM basieren auf kontextabhängigen Sling-Konfigurationen. Die Sling-Pakete bieten eine Dienst-API, mit der kontextabhängige Konfigurationen abgerufen werden können. Kontextabhängige Konfigurationen sind Konfigurationen, die sich auf eine Inhaltsressource oder einen Ressourcenbaum beziehen, wie [im vorherigen Beispiel beschrieben](#developer-example) wurde.
 
 Weitere Informationen zu kontextabhängigen Konfigurationen, Beispiele und deren Verwendung finden Sie in der [Sling-Dokumentation](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 

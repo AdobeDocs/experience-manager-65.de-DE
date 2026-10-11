@@ -10,13 +10,25 @@ exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 96%
-
+source-wordcount: '780'
+ht-degree: 100%
 ---
-
 # Erstellen von geschlossenen Benutzergruppen{#creating-a-closed-user-group}
 
 Geschlossene Benutzergruppen (CUGs) werden verwendet, um den Zugriff auf bestimmte Seiten zu beschränken, die sich auf einer veröffentlichten Internet-Site befinden. Bei diesen Seiten ist es erforderlich, dass sich die zugewiesenen Mitglieder anmelden und sicherheitsspezifische Anmeldedaten bereitstellen.
@@ -80,8 +92,8 @@ So wenden Sie die CUG auf eine oder mehrere Seiten an:
 
    1. Aktivieren Sie das Kontrollkästchen **Aktivieren**.
 
-   1. Fügen Sie den Pfad zu Ihrer **Anmeldeseite“**.
-Dies ist optional. Wenn Sie das Feld leer lassen, wird die standardmäßige Anmeldeseite verwendet.
+   1. Fügen Sie den Pfad zu Ihrer **Anmeldeseite** hinzu.
+      Dies ist optional. Wenn Sie das Feld leer lassen, wird die standardmäßige Anmeldeseite verwendet.
 
    ![CUG hinzugefügt](assets/cug-authentication-requirement.png)
 
@@ -134,7 +146,8 @@ Konfigurieren Sie das [Sitzungsmanagement in der Datei dispatcher.any](https://e
 
 >[!NOTE]
 >
->Wenn für eine Dispatcher-Farm das Sitzungsmanagement aktiviert ist, werden alle von der Farm verarbeiteten Seiten nicht zwischengespeichert. Um Seiten zwischenzuspeichern, die sich außerhalb der CUG befinden, erstellen Sie eine zweite Farm in dispatcher.any>, die die Nicht-CUG-Seiten verarbeitet.
+>Wenn für eine Dispatcher-Farm das Sitzungsmanagement aktiviert ist, werden alle von der Farm verarbeiteten Seiten nicht zwischengespeichert. Um Seiten zwischenzuspeichern, die sich außerhalb der CUG befinden, erstellen Sie eine zweite Farm in der Datei dispatcher.any
+>, die die Nicht-CUG-Seiten verarbeitet.
 
 1. Konfigurieren Sie [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#enabling-secure-sessions-sessionmanagement), indem Sie `/directory` festlegen, zum Beispiel:
 

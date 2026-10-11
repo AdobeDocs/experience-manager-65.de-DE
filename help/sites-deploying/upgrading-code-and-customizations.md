@@ -11,13 +11,22 @@ feature: Upgrading
 exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '2182'
 ht-degree: 91%
-
 ---
-
 # Upgrades von Code und Anpassungen{#upgrading-code-and-customizations}
 
 Bei der Planung eines Upgrades müssen die folgenden Bereiche einer Implementierung untersucht und berücksichtigt werden.
@@ -29,7 +38,7 @@ Bei der Planung eines Upgrades müssen die folgenden Bereiche einer Implementier
 
 ## Übersicht {#overview}
 
-1. **Musterdetektor** – Führen Sie den Musterdetektor aus, wie in der Upgrade-Planung und ausführlich auf der Seite [Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md) beschrieben. Sie erhalten einen Mustererkennungsbericht, der weitere Details zu Bereichen enthält, die zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielversion von AEM behandelt werden müssen. Der Mustererkennungsbericht gibt Ihnen einen Hinweis auf eventuelle Inkompatibilitäten in Ihrem Code. Wenn keine vorhanden sind, ist Ihre Bereitstellung bereits mit 6.5 kompatibel. Sie können zwar weiterhin eine neue Entwicklung für die Verwendung von 6.5-Funktionen durchführen, benötigen diese jedoch nicht zur bloßen Erhaltung der Kompatibilität. Wenn Unverträglichkeiten gemeldet werden, können Sie den Kompatibilitätsmodus wählen und Ihre Entwicklung für neue 6.5-Funktionen oder Kompatibilität zurückstellen. Oder Sie können sich für die Entwicklung nach der Aktualisierung entscheiden und zu Schritt 2 wechseln. Weitere Informationen finden Sie unter [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md).
+1. **Musterdetektor** – Führen Sie den Musterdetektor aus, wie in der Upgrade-Planung und ausführlich auf der Seite [Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md) beschrieben. Sie erhalten einen Mustererkennungsbericht, der weitere Details zu Bereichen enthält, die zusätzlich zu den nicht verfügbaren APIs/Paketen in der Zielversion von AEM behandelt werden müssen. Der Mustererkennungsbericht gibt Ihnen einen Hinweis auf eventuelle Inkompatibilitäten in Ihrem Code. Wenn keine vorhanden sind, ist Ihre Bereitstellung bereits mit 6.5 kompatibel. Sie können zwar weiterhin eine neue Entwicklung für die Verwendung von 6.5-Funktionen durchführen, benötigen diese jedoch nicht zur bloßen Erhaltung der Kompatibilität. Wenn Unverträglichkeiten gemeldet werden, können Sie den Kompatibilitätsmodus wählen und Ihre Entwicklung für neue 6.5-Funktionen oder Kompatibilität zurückstellen. Oder Sie können sich für die Entwicklung nach der Aktualisierung entscheiden und zu Schritt 2 wechseln. Weitere Informationen finden Sie unter [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md).
 
 1. **Entwickeln einer Code-Basis für 6.5** – Erstellen Sie eine dedizierte Verzweigung oder ein dediziertes Repository für die Code-Basis der Zielversion. Nutzen Sie bei der Kompatibilitätsprüfung die vor dem Upgrade erfassten Daten, um die Code-Bereiche zu planen, die aktualisiert werden sollen.
 1. **Kompilieren mit 6.5 Uber jar** – Aktualisieren Sie die POM-Dateien der Code-Basis, sodass diese auf 6.5 uber jar verweisen, und kompilieren Sie Code dagegen.
@@ -42,7 +51,8 @@ Bevor Sie mit dem Upgrade beginnen, benötigen Sie eine stabile Anwendungs-Code-
 
 Neben der optionalen Aktualisierung Ihrer Code-Basis und Anpassungen für die neue AEM-Version hilft 6.5 mit der Abwärtskompatibilitätsfunktion auch bei der effizienteren Verwaltung Ihrer Anpassungen, wie unter [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md) beschrieben.
 
-Wie oben erwähnt und im Diagramm unten dargestellt, kann die Ausführung der [Mustererkennung](/help/sites-deploying/pattern-detector.md) im ersten Schritt helfen, die Gesamtkomplexität des Upgrades zu beurteilen. Sie kann Ihnen auch bei der Entscheidung helfen, ob Sie im Kompatibilitätsmodus arbeiten oder Ihre Anpassungen aktualisieren möchten, um alle neuen Funktionen von AEM 6.5 zu nutzen. Weitere Informationen finden Sie auf der Seite [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md).[![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
+Wie oben erwähnt und im Diagramm unten dargestellt, kann die Ausführung der [Mustererkennung](/help/sites-deploying/pattern-detector.md) im ersten Schritt helfen, die Gesamtkomplexität des Upgrades zu beurteilen. Sie kann Ihnen auch bei der Entscheidung helfen, ob Sie im Kompatibilitätsmodus arbeiten oder Ihre Anpassungen aktualisieren möchten, um alle neuen Funktionen von AEM 6.5 zu nutzen. Weitere Informationen finden Sie auf der Seite [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md).
+[![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## Upgrade der Code-Basis {#upgrade-code-base}
 

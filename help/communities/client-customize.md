@@ -9,13 +9,20 @@ exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1242'
 ht-degree: 0%
-
 ---
-
 # Client-seitige Anpassung  {#client-side-customization}
 
 | **[⇐ Feature Essentials](essentials.md)** | **[Server-seitige ⇒](server-customize.md)** |
@@ -95,7 +102,7 @@ So hauten Sie eine Komponente ein:
 1. Identifizieren Sie die Elemente, die Sie ändern möchten (z. B. Composer-Bereich, Symbolleistenschaltflächen, Nachrichtenschriftart usw.).
 1. Identifizieren Sie die CSS-Klasse/-Regeln, die diese Elemente beeinflussen.
 1. Erstellen Sie eine Stylesheet-Datei (.css).
-1. Fügen Sie das Stylesheet in einen Client-Bibliotheksordner ([clientlibs](#clientlibs-for-scf)) für Ihre Site ein und stellen Sie sicher, dass es in Ihren Vorlagen und Seiten mit [ui:includeClientLib](../../help/sites-developing/clientlibs.md) enthalten ist.
+1. Fügen Sie das Stylesheet in einen Client-Bibliotheksordner ([clientlibs](#clientlibs-for-scf)) für Ihre Site ein und stellen Sie sicher, dass es in Ihren Vorlagen und Seiten mit ([) :includeClientLib](../../help/sites-developing/clientlibs.md) ist.
 
 1. Definieren Sie die CSS-Klassen und -Regeln neu, die Sie in Ihrem Stylesheet identifiziert (#2) haben, und fügen Sie Stile hinzu.
 
@@ -111,7 +118,7 @@ Die benutzerdefinierten Stile setzen jetzt die Standard-Framework-Stile außer K
 
 Um eine JavaScript-Implementierung von zu erweitern, ist Folgendes erforderlich:
 
-1. Erstellen Sie eine Komponente für Ihre App, wobei für „jcr:resourceSuperType“ der Wert des „jcr:resourceType“ der erweiterten Komponente festgelegt ist, z. B. social/forum/components/hbs/forum.
+1. Erstellen Sie eine Komponente für Ihre App mit einem JCR. :resourceSuperType Sie auf den Wert des JCR:resourceType der erweiterten Komponente, z. B. social/forum/components/hbs/forum.
 1. Untersuchen Sie die JavaScript der standardmäßigen SCF-Komponente, um festzustellen, welche Methoden mit SCF.registerComponent() registriert werden müssen.
 1. Kopieren Sie entweder die JavaScript der erweiterten Komponente oder beginnen Sie von Grund auf neu.
 1. Erweitern Sie die Methode .
@@ -146,28 +153,28 @@ Um eine JavaScript-Implementierung von zu erweitern, ist Folgendes erforderlich:
 
 Skript-Tags sind ein inhärenter Bestandteil des Client-seitigen Frameworks. Sie sind der Kleber, der dabei hilft, das auf der Server-Seite generierte Markup mit den Modellen und Ansichten auf der Client-Seite zu verbinden.
 
-Skript-Tags in SCF-Skripten sollten beim Überlagern oder Überschreiben von Komponenten nicht entfernt werden. SCF-Skript-Tags, die automatisch für das Einfügen von JSON in die HTML erstellt wurden, werden mit dem Attribut `data-scf-json=true` gekennzeichnet.
+Skript-Tags in SCF-Skripten sollten beim Überlagern oder Überschreiben von Komponenten nicht entfernt werden. SCF-Skript-Tags, die automatisch für das Einfügen von JSON in HTML erstellt wurden, werden mit dem Attribut `data-scf-json=true` gekennzeichnet.
 
 ## Clientlibs für SCF {#clientlibs-for-scf}
 
-Die Verwendung [&#x200B; Client-seitigen &#x200B;](../../help/sites-developing/clientlibs.md) (clientlibs) bietet eine Möglichkeit, die JavaScript und CSS, die zum Rendern von Inhalten auf dem Client verwendet werden, zu organisieren und zu optimieren.
+Die Verwendung [ Client-seitigen ](../../help/sites-developing/clientlibs.md) (clientlibs) bietet eine Möglichkeit, die JavaScript und CSS, die zum Rendern von Inhalten auf dem Client verwendet werden, zu organisieren und zu optimieren.
 
 Die Client-Bibliotheken für SCF folgen einem sehr spezifischen Benennungsmuster für zwei Varianten, die nur durch das Vorhandensein von „author“ im Kategorienamen variieren:
 
 | Clientlib-Variante | Muster für Kategorieneigenschaft |
 |--- |--- |
-| Vollständige Clientlib | cq.social.hbs.&lt;Komponentenname> |
-| Autoren-Clientlib | cq.social.author.hbs.&lt;Komponentenname> |
+| Vollständige Clientlib | CQ.social.hbs.&lt;Komponentenname> |
+| Autoren-Clientlib | CQ.social.author.hbs.&lt;Komponentenname> |
 
 ### Vollständige Clientlibs {#complete-clientlibs}
 
-Die vollständigen (Nicht-Autoren-)Client-Bibliotheken enthalten Abhängigkeiten und eignen sich bequem zum Einschließen in ui:includeClientLib.
+Die vollständigen (Nicht-Autoren-)Client-Bibliotheken enthalten Abhängigkeiten und eignen sich bequem für die Verwendung in der Benutzeroberfläche:includeClientLib.
 
 Diese Versionen befinden sich in:
 
 * `/etc/clientlibs/social/hbs/&lt;component name&gt;`
 
-Zum Beispiel:
+Beispiel:
 
 * Client-Ordnerknoten: `/etc/clientlibs/social/hbs/forum`
 * Kategorieneigenschaft: `cq.social.hbs.forum`
@@ -186,14 +193,14 @@ Diese Versionen befinden sich im Ordner „SCF libs“:
 
 * `/libs/social/&lt;feature&gt;/components/hbs/&lt;component name&gt;/clientlibs`
 
-Zum Beispiel:
+Beispiel:
 
 * Client-Ordnerknoten: `/libs/social/forum/hbs/forum/clientlibs`
 * Kategorieneigenschaft: `cq.social.author.hbs.forum`
 
 Hinweis: Während Autoren-Client-Bibliotheken nie andere Bibliotheken einbetten, listen sie ihre Abhängigkeiten auf. Wenn die Abhängigkeiten in andere Bibliotheken eingebettet werden, werden sie nicht automatisch abgerufen und müssen ebenfalls eingebettet werden.
 
-Die erforderlichen Autoren-Client-Bibliotheken können identifiziert werden, indem „author“ in die Client-Bibliotheken eingefügt wird, die für jede SCF-Komponente im [Community-Komponentenhandbuch“ aufgeführt &#x200B;](components-guide.md).
+Die erforderlichen Autoren-Client-Bibliotheken können identifiziert werden, indem „author“ in die Client-Bibliotheken eingefügt wird, die für jede SCF-Komponente im [Community-Komponentenhandbuch“ aufgeführt ](components-guide.md).
 
 ### Überlegungen zur Verwendung {#usage-considerations}
 

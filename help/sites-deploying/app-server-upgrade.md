@@ -5,13 +5,22 @@ feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 100%
-
+source-wordcount: '449'
+ht-degree: 86%
 ---
-
 # Schritte zur Aktualisierung von Installationen auf Anwendungs-Servern{#upgrade-steps-for-application-server-installations}
 
 In diesem Abschnitt wird das Verfahren beschrieben, das zum Aktualisieren von AEM für Anwendungs-Server-Installationen befolgt werden muss.
@@ -24,13 +33,13 @@ In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungs-Server verwen
    $CATALINA_HOME/bin/catalina.sh start
    ```
 
-1. Wenn AEM 6.4 bereits installiert ist, müssen Sie sicherstellen, dass die Bundles ordnungsgemäß funktionieren, indem Sie Folgendes aufrufen:
+1. Wenn AEM 6.4 bereits installiert ist, müssen Sie sicherstellen, dass die Pakete ordnungsgemäß funktionieren, indem Sie Folgendes aufrufen:
 
    ```shell
    https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. Heben Sie als Nächstes über TomCat App Manager (`http://serveraddress:serverport/manager/html`) die Bereitstellung von AEM 6.4 auf.
+1. Heben Sie als Nächstes die Bereitstellung von AEM 6.4 auf. Dies kann über den TomCat App Manager (`http://serveraddress:serverport/manager/html`) erfolgen
 
 1. Migrieren Sie das Repository nun mithilfe des crx2oak-Migrations-Tools. Laden Sie dazu die neueste Version von crx2oak von [diesem Speicheror](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/) herunter.
 
@@ -69,7 +78,7 @@ In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungs-Server verwen
 
    * Entfernen Sie die Datei **sling.options.file**, indem Sie folgenden Befehl ausführen: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
-1. Erstellen Sie nun den Knoten- und Datenspeicher, der mit AEM 6.5 verwendet wird. Sie können zu diesem Zweck unter `crx-quickstart\install` zwei Dateien mit den folgenden Namen erstellen:
+1. Erstellen Sie nun die Knotenspeicher und Datenspeicher, die mit AEM 6.5 verwendet werden. Erstellen Sie dazu zwei Dateien mit den folgenden Namen unter `crx-quickstart\install`:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`

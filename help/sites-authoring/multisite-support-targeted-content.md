@@ -9,13 +9,33 @@ exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2838'
+source-wordcount: '2853'
 ht-degree: 100%
-
 ---
-
 # Verwenden zielgerichteter Inhalte in Multisites{#working-with-targeted-content-in-multisites}
 
 Möchten Sie zielgerichtete Inhalte wie beispielsweise Aktivitäten, Erlebnisse und Angebote auf Ihren Sites verwalten, können Sie hierzu die in AEM integrierte Multisite-Unterstützung für zielgerichtete Inhalte verwenden.
@@ -37,7 +57,7 @@ Zur Festlegung der Art, auf die Ihre Sites personalisierte Inhalte freigeben, m�
 
 1. [Verknüpfen Sie Ihre Site oder Seite](#linking-sites-to-an-area) mit einem Gebiet.
 
-Sie können die Vererbung jederzeit aussetzen oder wiederherstellen.  Wenn Sie die Vererbung nicht aussetzen möchten, können Sie auch lokale Erlebnisse erstellen. Standardmäßig verweisen alle Seiten auf das primäre Gebiet, außer es wurde eigens ein anderes Gebiet festgelegt.
+Sie können die Vererbung jederzeit aussetzen oder wiederherstellen. Wenn Sie die Vererbung nicht aussetzen möchten, können Sie auch lokale Erlebnisse erstellen. Standardmäßig verweisen alle Seiten auf das primäre Gebiet, außer es wurde eigens ein anderes Gebiet festgelegt.
 
 ## Einführung in die Multisite-Unterstützung für zielgerichtete Inhalte {#introduction-to-multisite-support-for-targeted-content}
 
@@ -67,18 +87,18 @@ Mit der Multisite-Unterstützung für zielgerichtete Inhalte können Sie beispie
 
 * Vollständig *unterschiedliche* zielgerichtete Inhalte: Die Bearbeitung der Inhalte auf einer Site beeinflusst die Inhalte der anderen Site nicht. Sites, die mit verschiedenen Gebieten verknüpft sind, führen Lese- und Schreibaufgaben für getrennt konfigurierte Gebiete aus. Beispiel:
 
-   * Site A verknüpft mit Bereich X
-   * Site B verknüpft mit Bereich Y
+  * Site A verknüpft mit Bereich X
+  * Site B verknüpft mit Bereich Y
 
 * Ein *freigegebener* Satz von zielgerichteten Inhalten; die Bearbeitung in einer Site wirkt sich direkt auf beide Sites aus. Sie können dies einrichten, indem Sie beide Sites auf dasselbe Gebiet verweisen. Sites, die sich auf dasselbe Gebiet beziehen, teilen die zielgerichteten Inhalte dieses Gebiets. Beispiel:
 
-   * Site A verknüpft mit Bereich X
-   * Site B verknüpft mit Bereich X
+  * Site A verknüpft mit Bereich X
+  * Site B verknüpft mit Bereich X
 
 * Bestimmte zielgerichtete Inhalte werden über MSM von einer anderen Site *übernommen*: Die Inhalte können unidirektional von der Quelle an die Live Copy übermittelt werden. Beispiel:
 
-   * Site A verknüpft mit Bereich X
-   * Site B verknüpft mit Bereich Y (eine Live Copy von Bereich X)
+  * Site A verknüpft mit Bereich X
+  * Site B verknüpft mit Bereich Y (eine Live Copy von Bereich X)
 
 Sie können auch **mehrere** Marken auf einer Site verwenden, was komplexer sein könnte als dieses Beispiel.
 

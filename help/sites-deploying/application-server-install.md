@@ -9,13 +9,25 @@ exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 99%
-
 ---
-
 # Installation des Anwendungs-Servers{#application-server-install}
 
 >[!NOTE]
@@ -47,7 +59,7 @@ AEM wird als eine einzelne bereitzustellende WAR-Datei geliefert.
 Nach der Bereitstellung geschieht standardmäßig Folgendes:
 
 * Der Ausführungsmodus lautet `author`.
-* Die Instanz (Repository, Felix OSGI-Umgebung, Bundles usw.) wird in `${user.dir}/crx-quickstart` installiert, wobei `${user.dir}` das aktuelle Arbeitsverzeichnis ist. Dieser Pfad zu „crx-quickstart“ wird als `sling.home` bezeichnet.
+* Die Instanz (Repository, Felix OSGI-Umgebung, Pakete usw.) wird in `${user.dir}/crx-quickstart` installiert, wobei `${user.dir}` das aktuelle Arbeitsverzeichnis ist. Dieser Pfad zu „crx-quickstart“ wird als `sling.home` bezeichnet.
 
 * Der Kontextstamm ist der Name der WAR-Datei, z. B. `aem-6`.
 
@@ -75,7 +87,7 @@ Um eine Veröffentlichungsinstanz bereitzustellen, müssen Sie den Ausführungsm
 Um zu überprüfen, ob alles installiert ist, haben Sie folgende Möglichkeiten:
 
 * Untersuchen der Datei `error.log`, um anzuzeigen, ob der gesamte Inhalt installiert ist.
-* Überprüfen in `/system/console`, ob alle Bundles installiert sind
+* Überprüfen in `/system/console`, ob alle Pakete installiert sind
 
 #### Zwei Instanzen auf demselben Anwendungs-Server {#two-instances-on-the-same-application-server}
 
@@ -103,7 +115,7 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
 
 * So lassen Sie Standard-Authentifizierungs-Header durchlaufen:
 
-   * Eine Möglichkeit für die Authentifizierung von Benutzenden durch AEM besteht in der Deaktivierung der globalen Verwaltungssicherheit des WebSphere®-Servers. Wechseln Sie dafür zu „Sicherheit“ > „Globale Sicherheit“ und deaktivieren Sie das Kontrollkästchen „Verwaltungssicherheit aktivieren“. Speichern Sie den Vorgang und starten Sie den Server neu.
+  * Eine Möglichkeit für die Authentifizierung von Benutzenden durch AEM besteht in der Deaktivierung der globalen Verwaltungssicherheit des WebSphere®-Servers. Wechseln Sie dafür zu „Sicherheit“ > „Globale Sicherheit“ und deaktivieren Sie das Kontrollkästchen „Verwaltungssicherheit aktivieren“. Speichern Sie den Vorgang und starten Sie den Server neu.
 
 * `"JAVA_OPTS= -Xmx2048m"` festlegen
 * Wenn Sie AEM mithilfe des Kontextstamms = / installieren möchten, ändern Sie den Kontextstamm der vorhandenen standardmäßigen Web-Anwendung.
@@ -113,14 +125,14 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
 * Laden Sie die AEM-WAR-Datei herunter.
 * Nehmen Sie bei Bedarf Ihre Konfigurationen in der Datei „web.xml“ vor (siehe oben unter „Allgemeine Beschreibung“).
 
-   * Entpacken Sie die Datei „WEB-INF/web.xml“.
-   * Ändern Sie den Parameter „sling.run.modes“ in „publish“ (veröffentlichen).
-   * Entfernen Sie die Kommentarzeichen für den ursprünglichen Parameter „sling.home“ und legen Sie diesen Pfad nach Bedarf fest.
-   * Packen Sie die Datei „web.xml“ erneut.
+  * Entpacken Sie die Datei „WEB-INF/web.xml“.
+  * Ändern Sie den Parameter „sling.run.modes“ in „publish“ (veröffentlichen).
+  * Entfernen Sie die Kommentarzeichen für den ursprünglichen Parameter „sling.home“ und legen Sie diesen Pfad nach Bedarf fest.
+  * Packen Sie die Datei „web.xml“ erneut.
 
 * Bereitstellen der AEM-WAR-Datei
 
-   * Wählen Sie einen Kontextstamm. (Wenn Sie „sling.run.modes“ festlegen möchten, müssen Sie die ausführlichen Schritte des Bereitstellungsassistenten durchführen und dann die Angabe in Schritt 6 des Assistenten vornehmen.)
+  * Wählen Sie einen Kontextstamm. (Wenn Sie „sling.run.modes“ festlegen möchten, müssen Sie die ausführlichen Schritte des Bereitstellungsassistenten durchführen und dann die Angabe in Schritt 6 des Assistenten vornehmen.)
 
 * Starten der AEM-Web-Anwendung
 
@@ -158,12 +170,12 @@ Hierbei wird ein einfaches Server-Layout mit nur einem Administrator-Server verw
 
 * Fügen Sie in `${myDomain}/config/config.xml` Folgendes zum Abschnitt „security-configuration“ hinzu:
 
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` – auf [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) finden Sie die richtige Position (standardmäßig ist es in Ordnung, die Positionierung am Ende des Abschnitts vorzunehmen).
+  * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` – auf [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) finden Sie die richtige Position (standardmäßig ist es in Ordnung, die Positionierung am Ende des Abschnitts vorzunehmen).
 
 * Erhöhen Sie den für die virtuelle Maschine eingestellten Arbeitsspeicherwert:
 
-   * Öffnen Sie `${myDomain}/bin/setDomainEnv.cmd` (bzw. .sh). Suchen Sie nach „WLS_MEM_ARGS“ und legen Sie z. B. `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m` fest.
-   * Starten Sie WebLogic Server neu.
+  * Öffnen Sie `${myDomain}/bin/setDomainEnv.cmd` (bzw. .sh). Suchen Sie nach „WLS_MEM_ARGS“ und legen Sie z. B. `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m` fest.
+  * Starten Sie WebLogic Server neu.
 
 * Erstellen Sie unter `${myDomain}` einen Ordner „packages“ und darin einen Ordner „cq“ mit einem Ordner „Plan“.
 
@@ -173,10 +185,10 @@ Hierbei wird ein einfaches Server-Layout mit nur einem Administrator-Server verw
 * Legen Sie die AEM-WAR-Datei im Ordner ${myDomain}/packages/cq ab
 * Nehmen Sie bei Bedarf Konfigurationen in `WEB-INF/web.xml` vor (siehe oben unter „Allgemeine Beschreibung“).
 
-   * Entpacken Sie die Datei `WEB-INF/web.xml`.
-   * Ändern Sie den Parameter „sling.run.modes“ in „publish“ (veröffentlichen).
-   * Entfernen Sie die Kommentarzeichen für den anfänglichen Parameter „sling.home“ und legen Sie diesen Pfad nach Bedarf fest (siehe „Allgemeine Beschreibung“).
-   * Packen Sie die Datei „web.xml“ erneut.
+  * Entpacken Sie die Datei `WEB-INF/web.xml`.
+  * Ändern Sie den Parameter „sling.run.modes“ in „publish“ (veröffentlichen).
+  * Entfernen Sie die Kommentarzeichen für den anfänglichen Parameter „sling.home“ und legen Sie diesen Pfad nach Bedarf fest (siehe „Allgemeine Beschreibung“).
+  * Packen Sie die Datei „web.xml“ erneut.
 
 * Stellen Sie die AEM-WAR-Datei als Anwendung bereit (verwenden Sie für andere Einstellungen die Standardeinstellungen)
 * Die Installation kann einige Zeit dauern …
@@ -189,64 +201,64 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
 
 * **Tomcat-Servervorbereitung**
 
-   * Erhöhen Sie den für die virtuelle Maschine eingestellten Arbeitsspeicherwert:
+  * Erhöhen Sie den für die virtuelle Maschine eingestellten Arbeitsspeicherwert:
 
-      * Fügen Sie in `bin/catalina.bat` (bzw. `catalina.sh` unter UNIX®) die folgende Einstellung hinzu:
-      * `set "JAVA_OPTS= -Xmx2048m`
+    * Fügen Sie in `bin/catalina.bat` (bzw. `catalina.sh` unter UNIX®) die folgende Einstellung hinzu:
+    * `set "JAVA_OPTS= -Xmx2048m`
 
-   * Tomcat ermöglicht weder Admin- noch Manager-Zugriff bei der Installation. Daher müssen Sie `tomcat-users.xml` manuell bearbeiten, um den Zugriff für diese Konten zuzulassen:
+  * Tomcat ermöglicht weder Admin- noch Manager-Zugriff bei der Installation. Daher müssen Sie `tomcat-users.xml` manuell bearbeiten, um den Zugriff für diese Konten zuzulassen:
 
-      * Bearbeiten Sie `tomcat-users.xml`, um den Zugriff für Admin und Managerin bzw. Manager einzuschließen. Die Konfiguration sollte dem folgenden Beispiel ähneln:
+    * Bearbeiten Sie `tomcat-users.xml`, um den Zugriff für Admin und Managerin bzw. Manager einzuschließen. Die Konfiguration sollte dem folgenden Beispiel ähneln:
 
-        ```xml
-        <?xml version='1.0' encoding='utf-8'?>
-        <tomcat-users>
-        role rolename="manager"/>
-        role rolename="tomcat"/>
-        <role rolename="admin"/>
-        <role rolename="role1"/>
-        <role rolename="manager-gui"/>
-        <user username="both" password="tomcat" roles="tomcat,role1"/>
-        <user username="tomcat" password="tomcat" roles="tomcat"/>
-        <user username="admin" password="admin" roles="admin,manager-gui"/>
-        <user username="role1" password="tomcat" roles="role1"/>
-        </tomcat-users>
-        ```
+      ```xml
+      <?xml version='1.0' encoding='utf-8'?>
+      <tomcat-users>
+      role rolename="manager"/>
+      role rolename="tomcat"/>
+      <role rolename="admin"/>
+      <role rolename="role1"/>
+      <role rolename="manager-gui"/>
+      <user username="both" password="tomcat" roles="tomcat,role1"/>
+      <user username="tomcat" password="tomcat" roles="tomcat"/>
+      <user username="admin" password="admin" roles="admin,manager-gui"/>
+      <user username="role1" password="tomcat" roles="role1"/>
+      </tomcat-users>
+      ```
 
-   * Wenn Sie AEM mit dem Kontextstamm „/“ bereitstellen möchten, müssen Sie den Kontextstamm der vorhandenen „ROOT webapp“ (Stamm-Web-Anwendung) ändern:
+  * Wenn Sie AEM mit dem Kontextstamm „/“ bereitstellen möchten, müssen Sie den Kontextstamm der vorhandenen „ROOT webapp“ (Stamm-Web-Anwendung) ändern:
 
-      * Stoppen Sie „ROOT webapp“ und heben Sie ihre Bereitstellung auf.
-      * Benennen Sie den Ordner „ROOT.war“ in den Tomcat-Ordner „webapps“ um.
-      * Starten Sie webapp erneut.
+    * Stoppen Sie „ROOT webapp“ und heben Sie ihre Bereitstellung auf.
+    * Benennen Sie den Ordner „ROOT.war“ in den Tomcat-Ordner „webapps“ um.
+    * Starten Sie webapp erneut.
 
-   * Wenn Sie die AEM-Web-Anwendung mithilfe der manager-gui installieren, müssen Sie die maximale Größe einer hochgeladenen Datei erhöhen, da die Standardeinstellung nur eine Upload-Größe von 50 MB zulässt. Öffnen Sie dafür die Datei „web.xml“ der Manager-Webanwendung
+  * Wenn Sie die AEM-Web-Anwendung mithilfe der manager-gui installieren, müssen Sie die maximale Größe einer hochgeladenen Datei erhöhen, da die Standardeinstellung nur eine Upload-Größe von 50 MB zulässt. Öffnen Sie dafür die Datei „web.xml“ der Manager-Webanwendung
 
-     `webapps/manager/WEB-INF/web.xml`
+    `webapps/manager/WEB-INF/web.xml`
 
-     Erhöhen Sie dann „max-file-size“ und „max-request-size“ auf mindestens 500 MB. Im folgenden Beispiel für `multipart-config` finden Sie eine derartige `web.xml`-Datei.
+    Erhöhen Sie dann „max-file-size“ und „max-request-size“ auf mindestens 500 MB. Im folgenden Beispiel für `multipart-config` finden Sie eine derartige `web.xml`-Datei.
 
-     ```xml
-     <multipart-config>
-     <!-- 500MB max -->
-     <max-file-size>524288000</max-file-size>
-     <max-request-size>524288000</max-request-size>
-     <file-size-threshold>0</file-size-threshold>
-     </multipart-config>
-     ```
+    ```xml
+    <multipart-config>
+    <!-- 500MB max -->
+    <max-file-size>524288000</max-file-size>
+    <max-request-size>524288000</max-request-size>
+    <file-size-threshold>0</file-size-threshold>
+    </multipart-config>
+    ```
 
 * **Bereitstellung der AEM-Web-Anwendung**
 
-   * Laden Sie die AEM-WAR-Datei herunter.
-   * Nehmen Sie bei Bedarf Ihre Konfigurationen in der Datei „web.xml“ vor (siehe oben unter „Allgemeine Beschreibung“).
+  * Laden Sie die AEM-WAR-Datei herunter.
+  * Nehmen Sie bei Bedarf Ihre Konfigurationen in der Datei „web.xml“ vor (siehe oben unter „Allgemeine Beschreibung“).
 
-      * Entpacken Sie die Datei „WEB-INF/web.xml“.
-      * Ändern Sie den Parameter „sling.run.modes“ in „publish“ (veröffentlichen).
-      * Kommentieren Sie den anfänglichen Parameter „sling.home“ aus und legen Sie diesen Pfad nach Bedarf fest.
-      * Packen Sie die Datei „web.xml“ erneut.
+    * Entpacken Sie die Datei „WEB-INF/web.xml“.
+    * Ändern Sie den Parameter „sling.run.modes“ in „publish“ (veröffentlichen).
+    * Kommentieren Sie den anfänglichen Parameter „sling.home“ aus und legen Sie diesen Pfad nach Bedarf fest.
+    * Packen Sie die Datei „web.xml“ erneut.
 
-   * Benennen Sie AEM.war-Datei in „ROOT.war“ um, wenn Sie sie als Stamm-Web-Anwendung bereitstellen möchten. Benennen Sie sie in „aemauthor.war“ um, wenn Sie „aemauthor“ als Kontextstamm verwenden möchten.
-   * Kopieren Sie sie in den Tomcat-Ordner „webapps“.
-   * Warten Sie, bis AEM installiert ist.
+  * Benennen Sie AEM.war-Datei in „ROOT.war“ um, wenn Sie sie als Stamm-Web-Anwendung bereitstellen möchten. Benennen Sie sie in „aemauthor.war“ um, wenn Sie „aemauthor“ als Kontextstamm verwenden möchten.
+  * Kopieren Sie sie in den Tomcat-Ordner „webapps“.
+  * Warten Sie, bis AEM installiert ist.
 
 ## Fehlerbehebung {#troubleshooting}
 

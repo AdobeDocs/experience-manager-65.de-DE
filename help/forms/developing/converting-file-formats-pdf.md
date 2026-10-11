@@ -9,13 +9,27 @@ role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '7942'
 ht-degree: 98%
-
 ---
-
 # Zwischen Dateiformaten und PDF konvertieren {#converting-between-file-formatsand-pdf}
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
@@ -214,10 +228,10 @@ So konvertieren Sie ein Microsoft Word-Dokument mithilfe der Generate PDF-API (W
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+     * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Rufen Sie die in ein PDF-Dokument zu konvertierende Datei ab.
 
@@ -245,7 +259,7 @@ So konvertieren Sie ein Microsoft Word-Dokument mithilfe der Generate PDF-API (W
 
    * Rufen Sie das konvertierte PDF-Dokument ab, indem Sie das Feld `MTOM` des `BLOB`-Objekts einem Byte-Array zuweisen. Das Byte-Array stellt das konvertierte PDF-Dokument dar. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das als Ausgabeparameter für die `createPDF2`-Methode dient.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des konvertierten PDF-Dokuments darstellt.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
@@ -262,7 +276,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mit Generate PDF-API HTML-Dokument
 
 >[!NOTE]
 >
->Weitere Informationen zum Generate PDF-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Generate PDF-Dienst finden Sie in der [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-1}
 
@@ -329,7 +343,7 @@ Konvertieren Sie ein HTML-Dokument mithilfe der Generate PDF-API (Java) in ein P
    * Ein `java.lang.String`-Objekt, das die URL der zu konvertierenden HTML-Datei enthält.
    * Ein `java.lang.String`-Objekt, das die Dateitypeinstellungen enthält, die bei der Konvertierung verwendet werden sollen. Dateitypeinstellungen können Spider-Level enthalten.
    * Ein `java.lang.String`-Objekt, das den Namen der zu verwendenden Sicherheitseinstellungen enthält.
-   * Ein optionales `com.adobe.idp.Document`-Objekt, das Einstellungen enthält, die beim Generieren des PDF-Dokuments angewendet werden sollen. Wenn diese Informationen nicht angegeben werden, werden die Einstellungen automatisch anhand der drei vorangehenden Parameter ausgewählt.
+   * Ein optionales `com.adobe.idp.Document`-Objekt, das Einstellungen enthält, die beim Erzeugen des PDF-Dokuments angewendet werden sollen. Wenn diese Informationen nicht angegeben werden, werden die Einstellungen automatisch anhand der drei vorangehenden Parameter ausgewählt.
    * Ein optionales `com.adobe.idp.Document`-Objekt, das Metadateninformationen enthält, die auf das PDF-Dokument angewendet werden sollen.
 
 1. Rufen Sie die Ergebnisse ab.
@@ -371,10 +385,10 @@ So konvertieren Sie HTML-Inhalte mithilfe der Generate PDF-API (Webservice) in e
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+     * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Rufen Sie den HTML-Inhalt ab, der in ein PDF-Dokument konvertiert werden soll.
 
@@ -395,7 +409,7 @@ So konvertieren Sie HTML-Inhalte mithilfe der Generate PDF-API (Webservice) in e
 
    * Rufen Sie das konvertierte PDF-Dokument ab, indem Sie das Feld `MTOM` des `BLOB`-Objekts einem Byte-Array zuweisen. Das Byte-Array stellt das konvertierte PDF-Dokument dar. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das als Ausgabeparameter für die `HtmlToPDF2`-Methode dient.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des konvertierten PDF-Dokuments darstellt.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
@@ -522,10 +536,10 @@ Konvertieren Sie ein PDF-Dokument mithilfe der Generate PDF API (Webservice) in 
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+     * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Rufen Sie das zu konvertierende PDF-Dokument ab.
 
@@ -615,7 +629,7 @@ In dieser Tabelle sind die Informationstypen aufgeführt, die beim Drucken nativ
    <td><p>Um Einstellungen für eine bereits unterstützte native Anwendung zu ändern, legt der Systemadministrator die „Dateitypeinstellungen“ in der Administration-Console fest. </p><p>Um die Unterstützung bei einem neuen nativen Dateiformat hinzuzufügen, müssen Sie die Datei manuell bearbeiten. (Siehe <a href="converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format">Hinzufügen oder Ändern der Unterstützung bei einem nativen Dateiformat</a>.) </p></td>
   </tr>
   <tr>
-   <td><p>Skript </p></td>
+   <td><p>Script </p></td>
    <td><p>Gibt Interaktionen zwischen dem Generate PDF-Service und einem nativen Programm an. Durch diese Interaktionen wird normalerweise das Programm zum Drucken einer Datei an den Adobe PDF-Treiber weitergeleitet. </p><p>Das Skript enthält Anweisungen, die das native Programm anweisen, bestimmte Dialogfelder zu öffnen, und die bestimmte Antworten auf Felder und Schaltflächen in diesen Dialogfeldern bereitstellen. </p></td>
    <td><p>Der Generate PDF-Service schließt Skriptdateien für alle unterstützten nativen Programme ein. Diese Dateien lassen sich mithilfe eines Programms zur Bearbeitung von XML modifizieren.</p><p>Um Unterstützung für eine neue native Anwendung hinzuzufügen, müssen Sie eine neue Skriptdatei erstellen. (Siehe <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Erstellen oder Modifizieren einer zusätzlichen XML-Dialogfelddatei für ein natives Programm</a>.) </p></td>
   </tr>
@@ -752,7 +766,7 @@ Nachdem Sie diese XML-Dateien zur Datei „adobe-appmondata.jar“ hinzugefügt 
 
 Wenn Sie Dateien an ein neues natives Programm weiterleiten möchten, müssen Sie eine XML-Skript-Datei für dieses Programm erstellen. Wenn Sie ändern möchten, wie der Generate PDF-Service mit einem bereits unterstützten nativen Programm interagiert, müssen Sie das Skript für dieses Programm ändern.
 
-Das Skript enthält Anweisungen, die durch die Fensterelemente des nativen Programms navigieren und jeweils spezifische Antworten für diese Elemente bereitstellen. Die Datei, die diese Informationen enthält, lautet `appmon.`[appname]&grave;&grave; `.script.`[locale]`.xml`. Ein Beispiel ist „appmon.notepad.script.de_DE.xml“.
+Das Skript enthält Anweisungen, die durch die Fensterelemente des nativen Programms navigieren und jeweils spezifische Antworten für diese Elemente bereitstellen. Die Datei, die diese Informationen enthält, lautet `appmon.`[appname]`` `.script.`[locale]`.xml`. Ein Beispiel ist „appmon.notepad.script.de_DE.xml“.
 
 #### Identifizieren der Schritte, die das Skript ausführen muss {#identifying-steps-the-script-must-execute}
 

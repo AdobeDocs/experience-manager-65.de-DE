@@ -9,18 +9,25 @@ exl-id: fd1b1749-13f9-4079-ae39-348676105852
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '114'
 ht-degree: 5%
-
 ---
-
 # Leaderboard Essentials {#leaderboard-essentials}
 
 Diese Seite enthält die wichtigsten Informationen zum Arbeiten mit der Leaderboard-Funktion.
 
-Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie „Community[Punktzahl und Abzeichen“ &#x200B;](implementing-scoring.md).
+Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie „Community[Punktzahl und Abzeichen“ ](implementing-scoring.md).
 
 Siehe [Grundlagen zu Bewertungen und Abzeichen](configure-scoring.md).
 
@@ -38,7 +45,7 @@ Siehe [Grundlagen zu Bewertungen und Abzeichen](configure-scoring.md).
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
-   <td>cq.social.gamification.hbs.leaderboard</td>
+   <td>CQ.social.gamification.hbs.leaderboard</td>
   </tr>
   <tr>
    <td> <strong>Vorlagen</strong></td>

@@ -8,18 +8,22 @@ exl-id: 44591900-b01b-4a33-9910-839564477e7d
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1188'
 ht-degree: 5%
-
 ---
-
 # Leerzeichen und Entitäten{#spaces-and-entities}
 
 {{ue-over-mobile}}
 
-Ein Space ist ein praktischer Speicherort, um Entitäten zu speichern, die über die Content Services-REST-API verfügbar gemacht werden. Dies ist besonders nützlich, da eine App (oder ein beliebiger Kanal) mit vielen Entitäten verknüpft werden kann. Das Erzwingen von Entitäten innerhalb eines Bereichs erzwingt die Best Practice zum Gruppieren der Anforderungen einer App. Optional können Sie eine App in AEM mit einer geringen Anzahl von Leerzeichen verknüpfen.
+Ein Space ist ein praktischer Speicherort, um Entitäten zu speichern, die über die Content Services-REST-API verfügbar gemacht werden. Dies ist besonders nützlich, da eine App (oder ein beliebiger Kanal) mit vielen Entitäten verknüpft werden kann. Das Erzwingen von Entitäten innerhalb eines Bereichs erzwingt die Best Practice zum Gruppieren der Anforderungen einer App. Optional können Sie eine App in AEM mit einer kleinen Anzahl von Leerzeichen verknüpfen.
 
 >[!NOTE]
 >
@@ -37,7 +41,7 @@ Der Benutzer, der Content Services nicht für die Verwendung mit Platzierungen k
 >
 >Aktivieren Sie das Kontrollkästchen **AEM Content Services aktivieren**, um mit Leerzeichen zu arbeiten und sie in Ihrem AEM Mobile-Anwendungs-Dashboard zu aktivieren.
 >
->Weitere [&#x200B; finden Sie unter Verwalten &#x200B;](/help/mobile/developing-content-services.md) Content Services .
+>Weitere [ finden Sie unter Verwalten ](/help/mobile/developing-content-services.md) Content Services .
 
 Nachdem Sie Leerzeichen im Dashboard konfiguriert haben, führen Sie die folgenden Schritte aus, um Leerzeichen zu erstellen:
 
@@ -68,7 +72,7 @@ Sie können Eigenschaften des Bereichs anzeigen, den Bereich löschen oder den B
 **Platzierung veröffentlichen** Wenn eine Platzierung veröffentlicht wird, werden alle Ordner und Entitäten in dieser Platzierung ebenfalls veröffentlicht.
 
 1. Wählen Sie eine Platzierung aus, indem Sie in der Liste „Space Console“ auf das entsprechende Symbol klicken
-1. **Publish-Baumstruktur auswählen**
+1. Wählen Sie **Veröffentlichungsstruktur**
 
 >[!NOTE]
 >
@@ -118,7 +122,7 @@ Mit **Funktion „Sprachkopie** können Autoren ihre primäre Sprachkopie kopier
    >
    >Sprachkopie-Knoten können nur als direkt untergeordnetes Element des Bereichs vorhanden sein.
 
-1. Wählen Sie **Inhaltspaket-Sprache&ast;** aus und geben Sie den **Titel&ast;** im Dialogfeld **Sprachkopie erstellen** ein.
+1. Wählen Sie **Inhaltspaketsprache&amp;ast;** aus und geben Sie den **Titel&amp;ast;** im Dialogfeld **Sprachkopie erstellen** ein.
 
    Klicken Sie auf **Erstellen**.
 
@@ -235,9 +239,9 @@ Wenn untergeordnete Entitätselemente, d. h. andere Entitäten, für die Datenmo
 
 ### Entität veröffentlichen {#publishing-an-entity}
 
-Sie haben die Möglichkeit, **Publish Tree** oder **Quick Publish** auszuwählen, um Ihre Entität zu veröffentlichen.
+Sie haben die Möglichkeit, **Veröffentlichungsstruktur** oder **Quick Publish** auszuwählen, um Ihre Entität zu veröffentlichen.
 
-1. Wählen Sie eine Entität in der Liste „Space Console“ aus und klicken Sie auf **Publish Tree**, um diese Entität und ihre untergeordneten Elemente zu veröffentlichen.
+1. Wählen Sie eine Entität aus der Liste Space Console aus und klicken Sie auf **Baum veröffentlichen**, um diese Entität und ihre untergeordneten Elemente zu veröffentlichen.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 

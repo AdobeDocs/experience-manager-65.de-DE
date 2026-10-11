@@ -6,13 +6,22 @@ feature: Workfront Integrations and Apps
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
 solution: Experience Manager, Workfront
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: a1f87682-0525-5459-aa06-3560bb4c3b2a
+    internal-label: Workfront Integrations and Apps
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 99%
-
 ---
-
 # Konfigurieren von [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 | Version | Artikel-Link |
@@ -123,23 +132,23 @@ Mit diesem Workflow-Schritt kann ein Benutzer eine Eigenschaft einem benutzerdef
 
 * Beim `workfront-field` kann es sich handeln um:
 
-   * Ein benutzerdefiniertes Formularfeld, das durch das Präfix `DE:` identifiziert wird.
-   * Ein editierbares Feld, das durch seinen Namen identifiziert wird. Die Feldnamen finden Sie unter [[!DNL Workfront] API-Explorer](https://experience.workfront.com/s/api-explorer).
+  * Ein benutzerdefiniertes Formularfeld, das durch das Präfix `DE:` identifiziert wird.
+  * Ein editierbares Feld, das durch seinen Namen identifiziert wird. Die Feldnamen finden Sie unter [[!DNL Workfront] API-Explorer](https://experience.workfront.com/s/api-explorer).
 
 * `aem-mapped-property` kann sein:
 
-   * Ein literaler Wert. Diese sollten von Anführungszeichen umgeben sein.
-   * Eine AEM-Eigenschaft. Diese Referenz sollte relativ zur Payload des Workflows sein.
-   * Ein benannter Wert. Diese sollten von Klammern umgeben sein.
-   * Eine Verkettung der drei oben genannten Elemente. Geben Sie dies mithilfe von `{+}` an.
-   * Eine Abwandlung der drei oben genannten Elemente, indem der Wert mit `{replace(<value>,"old-char","new-char")}` umschlossen wird.
+  * Ein literaler Wert. Diese sollten von Anführungszeichen umgeben sein.
+  * Eine AEM-Eigenschaft. Diese Referenz sollte relativ zur Payload des Workflows sein.
+  * Ein benannter Wert. Diese sollten von Klammern umgeben sein.
+  * Eine Verkettung der drei oben genannten Elemente. Geben Sie dies mithilfe von `{+}` an.
+  * Eine Abwandlung der drei oben genannten Elemente, indem der Wert mit `{replace(<value>,"old-char","new-char")}` umschlossen wird.
 
 * Einige Beispiele:
 
-   * `status="INP"`
-   * `DE:Asset Type=jcr:content/metadata/assetType`
-   * `DE:Path={path}`
-   * `URL="https://my-aem-author/assets.html"{+}{path}`
+  * `status="INP"`
+  * `DE:Asset Type=jcr:content/metadata/assetType`
+  * `DE:Path={path}`
+  * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![Konfiguration für Zuordnungseigenschaft](/help/assets/assets/wf-map-property-config.png)
 

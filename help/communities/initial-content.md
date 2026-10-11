@@ -9,28 +9,35 @@ exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 4%
-
 ---
-
 # Anfänglicher Sandbox-Inhalt {#initial-sandbox-content}
 
-In diesem Abschnitt erstellen Sie die folgenden Seiten, die alle die [Seitenvorlage“ &#x200B;](initial-app.md#createthepagetemplate):
+In diesem Abschnitt erstellen Sie die folgenden Seiten, die alle die [Seitenvorlage“ ](initial-app.md#createthepagetemplate):
 
 * SCF Sandbox-Site, die zur englischen Version der Hauptseite weiterleitet.
 
-   * SCF Sandbox - Die Hauptseite für die englische Version der Website.
+  * SCF Sandbox - Die Hauptseite für die englische Version der Website.
 
-   * SCF Play - Untergeordnetes Element der Hauptseite, auf der gespielt werden soll.
+  * SCF Play - Untergeordnetes Element der Hauptseite, auf der gespielt werden soll.
 
-Dieses Tutorial geht nicht auf [Sprachkopien“ &#x200B;](../../help/sites-administering/tc-prep.md). Stattdessen ist sie so konzipiert, dass die Stammseite die Erkennung der bevorzugten Sprache für den Benutzer über den HTML-Header implementieren und zur entsprechenden Hauptseite für die Sprache umleiten kann. Die Konvention besagt, dass der aus zwei Buchstaben bestehende Länder-Code für den Knotennamen der Seite verwendet wird, z. B. „en“ für Englisch und „fr“ für Französisch.
+Dieses Tutorial geht nicht auf [Sprachkopien“ ](../../help/sites-administering/tc-prep.md). Stattdessen ist sie so konzipiert, dass die Stammseite die Erkennung der bevorzugten Sprache für den Benutzer über den HTML-Header implementieren und zur entsprechenden Hauptseite für die Sprache umleiten kann. Die Konvention besagt, dass der aus zwei Buchstaben bestehende Länder-Code für den Knotennamen der Seite verwendet wird, z. B. „en“ für Englisch und „fr“ für Französisch.
 
 ## Erste Seiten erstellen {#create-first-pages}
 
-Da es jetzt eine [Seitenvorlage“ &#x200B;](initial-app.md#createthepagetemplate), können Sie die Stammseite der Website im Verzeichnis /content einrichten.
+Da es jetzt eine [Seitenvorlage“ ](initial-app.md#createthepagetemplate), können Sie die Stammseite der Website im Verzeichnis /content einrichten.
 
 1. Die Standard-Benutzeroberfläche bietet derzeit Blueprints zum Erstellen von Sites. Da dieses Tutorial eine einfache Site erstellt, ist die klassische Benutzeroberfläche nützlich.
 
@@ -90,9 +97,9 @@ wurde definiert, was die optionale Möglichkeit bietet, in einem Skript mithilfe
 * `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
 
-   * Name: `cq:designPath`
-   * Typ: `String`
-   * Wert: `/etc/designs/an-scf-sandbox`
+  * Name: `cq:designPath`
+  * Typ: `String`
+  * Wert: `/etc/designs/an-scf-sandbox`
 
 * Klicken Sie auf die grüne `[+] Add`
 

@@ -10,13 +10,28 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 97%
-
 ---
-
 # Empfohlene Vorgehensweisen für HTML5-Formulare{#best-practices-for-html-forms}
 
 ## Übersicht {#overview}
@@ -61,7 +76,7 @@ HTML5-Formulare können datengesteuerte Felder (Tabellen und Teilformulare) enth
 * Nutzen Sie XFA-Scripting, um eine ausgelagerte Navigation zu ermöglichen und datengesteuerte Felder (Tabellen und Teilformulare) anzuzeigen. Bei der ausgelagerten Navigation werden nur bestimmte Daten auf einer Seite angezeigt. Dadurch wird der Vorgang des Zeichnens im Browser auf die jeweils angezeigten Felder beschränkt und die Navigation in einem Formular erleichtert. Außerdem sind die Benutzer auf Mobilgeräten nur an einer Teilmenge von Daten interessiert. Damit wird größere Benutzerfreundlichkeit geboten und die Zeit zum Laden der benötigten Daten wird verkürzt. Das Ergebnis sind zwei Lösungen.  Beachten Sie auch, dass ausgelagerte Navigation nicht vorkonfiguriert verfügbar ist. Sie können XFA-Scripting verwenden, um eine ausgelagerte Navigation zu entwickeln.
 
 * Überlegen Sie, ggf. mehrere schreibgeschützte Spalten in einer Spalte zusammenzuführen. Dadurch wird der für die Anzeige des Formulars erforderliche Arbeitsspeicher reduziert. Außerdem sollten Sie vermeiden, die Spalten anzuzeigen, für die keine Benutzereingabe erforderlich ist.
-* Überlegen Sie, ggf. das datengesteuerte Formular in einen [Formularsatz](https://helpx.adobe.com/de/aem-forms/6-3/formset-in-aem-forms.html) aufzuteilen, wenn die obigen Vorschläge zu keinen deutlichen Verbesserungen führen. Wenn beispielsweise eine Tabelle mehr als 1000 Zeilen aufweist, verschieben Sie jeweils 100 Zeilen in ein anderes Formular. Das würde die Ladezeit und die Leistung der Formulare verbessern.  Beachten Sie auch, dass ein Formularsatz eine konsolidierte Übermittlungs-XML für alle Formulare erzeugt. Um Daten für jedes Formular zu unterscheiden, verwenden Sie verschiedene Datenstämme. Weitere Informationen finden Sie unter[&#x200B; Formularsatz in AEM Forms](https://helpx.adobe.com/de/aem-forms/6-3/formset-in-aem-forms.html).
+* Überlegen Sie, ggf. das datengesteuerte Formular in einen [Formularsatz](https://helpx.adobe.com/de/aem-forms/6-3/formset-in-aem-forms.html) aufzuteilen, wenn die obigen Vorschläge zu keinen deutlichen Verbesserungen führen. Wenn beispielsweise eine Tabelle mehr als 1000 Zeilen aufweist, verschieben Sie jeweils 100 Zeilen in ein anderes Formular. Das würde die Ladezeit und die Leistung der Formulare verbessern.  Beachten Sie auch, dass ein Formularsatz eine konsolidierte Übermittlungs-XML für alle Formulare erzeugt. Um Daten für jedes Formular zu unterscheiden, verwenden Sie verschiedene Datenstämme. Weitere Informationen finden Sie unter[ Formularsatz in AEM Forms](https://helpx.adobe.com/de/aem-forms/6-3/formset-in-aem-forms.html).
 
 ## Zweierpotenz für ein Datensatzdokument (DoR) {#power-of-two-for-document-of-record-dor}
 

@@ -9,7 +9,23 @@ exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e9afc12af78140ae0ec12cc2ee95fc9e175f8d94
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3263'
 ht-degree: 99%
@@ -230,7 +246,7 @@ Das LDAP-Protokoll bietet in der Form von Anforderungssteuerelementen eine Mögl
 >
 >In diesem Abschnitt wird die Verwendung des VLV-Steuerelements für den Sun ONE Directory Server beschrieben. Es kann jedoch jeder Verzeichnis-Server verwendet werden, der das VLV-Steuerelement unterstützt.
 
-1. Wählen Sie beim Konfigurieren des Verzeichnisses die Option „VLV-Steuerung (Virtuelle Listenansicht) aktivieren“ sowohl auf der Seite „Benutzereinstellungen“ als auch auf der Seite „Gruppeneinstellungen“ aus. Wenn Sie das Kontrollkästchen auswählen, müssen Sie außerdem einen Sortierfeldnamen in das Feld „Sortierfeldname“ eingeben. Der Standardwert ist „uid“. (Siehe [Hinzufügen von Verzeichnissen oder benutzerdefinierten SPIs &#x200B;](configuring-directories.md#adding-directories-or-custom-spis) oder [Bearbeiten eines Verzeichnisses](configuring-directories.md#edit-a-directory).)
+1. Wählen Sie beim Konfigurieren des Verzeichnisses die Option „VLV-Steuerung (Virtuelle Listenansicht) aktivieren“ sowohl auf der Seite „Benutzereinstellungen“ als auch auf der Seite „Gruppeneinstellungen“ aus. Wenn Sie das Kontrollkästchen auswählen, müssen Sie außerdem einen Sortierfeldnamen in das Feld „Sortierfeldname“ eingeben. Der Standardwert ist „uid“. (Siehe [Hinzufügen von Verzeichnissen oder benutzerdefinierten SPIs ](configuring-directories.md#adding-directories-or-custom-spis) oder [Bearbeiten eines Verzeichnisses](configuring-directories.md#edit-a-directory).)
 1. Verwenden Sie die Sun ONE-Administrationskonsole oder ein Befehlszeilenskript, um die LDAP-VLV-Einträge für Benutzende und Gruppen zu erstellen. Mithilfe eines Befehlszeilenskripts können Sie die LDIF-Beispieldateien für Benutzer und Gruppen verwenden. (Siehe [Konfigurieren des Sun ONE Directory-Servers für VLV](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv).)
 1. Stoppen Sie den Server und erstellen Sie den erforderlichen Index. (Siehe [Erstellen des Verzeichnis-Server-Index für VLV](configuring-directories.md#create-the-directory-server-index-for-vlv)).
 
@@ -277,7 +293,7 @@ Im Folgenden finden Sie eine Beispielskript-LDIF für VLV-Einträge für Persone
 
    >[!NOTE]
    >
-   >Als Konvention wird der vlvIndex-Eintragsname ebenfalls auf `lcuser` festgelegt, jedoch können Sie einen anderen Namen auswählen. Verwenden Sie denselben Namen wie im vlvindex-Tool. (Siehe [Ordnerserverindex für VLV erstellen &#x200B;](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
+   >Als Konvention wird der vlvIndex-Eintragsname ebenfalls auf `lcuser` festgelegt, jedoch können Sie einen anderen Namen auswählen. Verwenden Sie denselben Namen wie im vlvindex-Tool. (Siehe [Ordnerserverindex für VLV erstellen ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
 
 1. Erstellen Sie mit dem Tool `ldapmodify` im Funktionsumfang des Sun ONE-Servers einen ähnlichen Eintrag für Gruppen unter Verwendung des Basis-DN der jeweiligen Gruppe, des Suchfilters und des Sortierfeldes:
 

@@ -9,13 +9,27 @@ exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 0835dca60d8011ce8660f1e7fdefb2b14ccd6129
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1025'
 ht-degree: 95%
-
 ---
-
 
 # Synchronisieren von Verzeichnissen {#synchronizing-directories}
 
@@ -73,7 +87,7 @@ Sie können das User Management so konfigurieren, dass regelmäßige Prüfungen 
 1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Benutzerverwaltung“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
 1. Geben Sie unter „Synch Finisher Cron Expression“ einen Cron-Ausdruck ein, der das Intervall, in dem User Management die fehlgeschlagenen Synchronisierungen erneut auszuführen versucht, angibt. Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssystem Quartz, Version 1.4.0.
 
-   Der Standardwert ist 0 0/13 &ast; ? &ast;, was bedeutet, dass die Prüfung alle 13 Minuten erfolgt.
+   Der Standardwert ist 0 0/13 &amp;ast; ? &amp;ast;, was bedeutet, dass die Prüfung alle 13 Minuten erfolgt.
 
 ## Manuelles Synchronisieren von Verzeichnissen {#manually-synchronize-directories}
 
@@ -89,7 +103,7 @@ Sie können das User Management so konfigurieren, dass regelmäßige Prüfungen 
 1. So planen Sie die Synchronisierung:
 
    * Wählen Sie zum Aktivieren der automatischen täglichen Synchronisierung unter „Zeitplanung“ die Option „Häufigkeit“ aus. Wählen Sie aus der Liste die Option „Täglich“ aus und geben Sie in das entsprechende Feld die Zeit im 24-Stunden-Format ein. Wenn Sie die Einstellungen speichern, wird dieser Wert in einen Cron-Ausdruck konvertiert, der im Feld „Cron-Ausdruck“ angezeigt wird.
-   * Um die Synchronisierung für einen bestimmten Tag der Woche bzw. des Monats oder in einem bestimmten Monat zu planen, wählen Sie „Cron-Ausdruck“ aus und geben Sie den entsprechenden Ausdruck in das Feld ein. Synchronisieren Sie z. B:30 um 1 Uhr morgens am letzten Freitag des Monats.
+   * Um die Synchronisierung für einen bestimmten Tag der Woche bzw. des Monats oder in einem bestimmten Monat zu planen, wählen Sie „Cron-Ausdruck“ aus und geben Sie den entsprechenden Ausdruck in das Feld ein. Synchronisieren Sie beispielsweise am letzten Freitag des Monats um 1:30 Uhr.
 
 Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssystem Quartz, Version 1.4.0.
 

@@ -5,13 +5,25 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
-source-git-commit: f6e1e28d6fbfc240a46c2c69f02c9c5fda1d0d0d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3546'
 ht-degree: 99%
-
 ---
-
 # Verwalten von Übersetzungsprojekten{#managing-translation-projects}
 
 Nachdem Sie den Inhalt für die Übersetzung vorbereitet haben, müssen Sie die Sprachstruktur vervollständigen, indem Sie fehlende Sprachkopien sowie Übersetzungsprojekte erstellen.
@@ -43,8 +55,8 @@ AEM erkennt, ob ein Übersetzungsprojekt für die Erstübersetzung von Inhalten 
 * **Die Sprachkopie enthält die Seite nicht:** AEM geht in diesem Fall von einer Erstübersetzung aus. Die Seite wird sofort in die Sprachkopie kopiert und in das Projekt aufgenommen. Wenn die übersetzte Seite in AEM importiert wird, kopiert AEM sie direkt in die Sprachkopie.
 * **Die Sprachkopie enthält bereits die Seite:** AEM geht in diesem Fall davon aus, dass die Übersetzung aktualisiert wird. Ein Launch wird erstellt und eine Kopie der Seite zum Launch hinzugefügt und in das Projekt aufgenommen. Mithilfe von Launches können Sie aktualisierte Übersetzungen vor dem Einfügen in die Sprachkopie überprüfen:
 
-   * Wenn die übersetzte Seite in AEM importiert wird, wird die Seite im Launch überschrieben.
-   * Die übersetzte Seite überschreibt die Sprachkopie nur, wenn der Launch weitergeleitet (beworben) wird.
+  * Wenn die übersetzte Seite in AEM importiert wird, wird die Seite im Launch überschrieben.
+  * Die übersetzte Seite überschreibt die Sprachkopie nur, wenn der Launch weitergeleitet (beworben) wird.
 
 Beispiel: Der Sprachstamm „/content/geometrixx/fr“ wurde für die französische Übersetzung der Primärsprache „/content/geometrixx/en“ erstellt. Es gibt keine anderen Seiten in der französischen Sprachkopie.
 

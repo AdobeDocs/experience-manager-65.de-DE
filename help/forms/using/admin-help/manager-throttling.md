@@ -9,13 +9,27 @@ exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 100%
-
 ---
-
 # Work Manager und Drosselung{#work-manager-and-throttling}
 
 >[!NOTE]
@@ -40,7 +54,7 @@ Asynchrone Vorgänge werden wie folgt verarbeitet:
 1. Work Manager speichert das Arbeitselement in einer Datenbanktabelle und weist diesem eine eindeutige Kennung zu. Der Datenbankeintrag enthält alle zum Ausführen des Arbeitselements erforderlichen Informationen.
 1. Work Manager-Threads übernehmen Arbeitselemente, wenn die Threads frei werden. Vor der Übernahme der Arbeitselemente können Threads überprüfen, ob die erforderlichen Dienste gestartet wurden, ob die Heap-Größe zum Übernehmen des nächsten Arbeitselements ausreicht und ob genügend CPU-Zyklen zum Verarbeiten des Arbeitselements vorhanden sind. Work Manager wertet außerdem beim Planen der Ausführung die Attribute des Arbeitselements (z. B. die Priorität) aus.
 
-AEM Forms-Admins können außerdem Work Manager-Statistiken, z. B. die Anzahl der Arbeitselemente in der Warteschlange und ihren jeweiligen Status, mithilfe von Health Monitor anzeigen. Sie können Health Monitor auch verwenden, um Arbeitselemente anzuhalten, fortzusetzen, zu wiederholen oder zu löschen. (Siehe [Anzeigen von Statistiken mit Bezug auf Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
+AEM Forms-Admins können außerdem Work Manager-Statistiken, z. B. die Anzahl der Arbeitselemente in der Warteschlange und ihren jeweiligen Status, mithilfe der Statusüberwachung anzeigen. Sie können die Statusüberwachung auch verwenden, um Arbeitselemente anzuhalten, fortzusetzen, zu wiederholen oder zu löschen. (Siehe [Anzeigen von Statistiken mit Bezug auf Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 
 ## Konfigurieren von Einschränkungsoptionen für Work Manager {#configuring-work-manager-throttling-options}
 
@@ -93,9 +107,9 @@ Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeit
 1. Geben Sie den von Ihnen erstellten Benutzernamen und das Kennwort für die WebLogic-Server-Domain ein und klicken Sie unter „Change Center“ auf „Log“ und dann auf „Lock &amp; Edit“.
 1. Klicken Sie unter „Domain Structure“ auf Environment > Servers und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarten „Configuration“ > „Server-Start“.
-1. Fügen Sie im Feld „Argumente“ die erforderlichen Argumente am Ende des aktuellen Inhalts hinzu. Um beispielsweise Health Monitor zu deaktivieren, fügen Sie Folgendes hinzu:
+1. Fügen Sie im Feld „Argumente“ die erforderlichen Argumente am Ende des aktuellen Inhalts hinzu. Um beispielsweise die Statusüberwachung zu deaktivieren, fügen Sie Folgendes hinzu:
 
-   `-Dadobe.healthmonitor.enabled=false` deaktiviert den Health Monitor.
+   `-Dadobe.healthmonitor.enabled=false` deaktiviert die Statusüberwachung.
 
 1. Klicken Sie auf „Speichern“ und dann auf „Änderungen aktivieren“.
 1. Starten Sie WebLogic Managed Server neu.

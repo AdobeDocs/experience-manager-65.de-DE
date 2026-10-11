@@ -10,13 +10,20 @@ exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '754'
 ht-degree: 2%
-
 ---
-
 # Dateibibliotheksfunktion{#file-library-feature}
 
 ## Einführung {#introduction}
@@ -38,7 +45,7 @@ Und ziehen Sie es auf eine Seite.
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen Client-seitigen &#x200B;](/help/communities/essentials-file-library.md#essentials-for-client-side) enthalten sind, wird die `File Library` Komponente wie folgt angezeigt:
+Wenn die [erforderlichen Client-seitigen ](/help/communities/essentials-file-library.md#essentials-for-client-side) enthalten sind, wird die `File Library` Komponente wie folgt angezeigt:
 
 ![file-library1](assets/file-library1.png)
 

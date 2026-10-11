@@ -10,13 +10,17 @@ exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2955'
 ht-degree: 1%
-
 ---
-
 # Mobile mit Inhaltssynchronisierung{#mobile-with-content-sync}
 
 {{ue-over-mobile}}
@@ -260,7 +264,7 @@ Für jeden Konfigurationstyp gibt es einen *Content Update Handler*, eine OSGi-K
 * `com.day.cq.contentsync.handler.ContentUpdateHandler` - Schnittstelle, die alle Update-Handler implementieren müssen
 * `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Eine abstrakte Klasse, die das Rendering von Ressourcen mithilfe von Sling vereinfacht
 
-Registrieren Sie Ihre Klasse als OSGi-Komponenten-Factory und stellen Sie sie im OSGi-Container in einem Bundle bereit. Dies kann mit dem Maven[SCR-Plug-in &#x200B;](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) JavaDoc-Tags oder -Anmerkungen erfolgen. Das folgende Beispiel zeigt die JavaDoc-Version:
+Registrieren Sie Ihre Klasse als OSGi-Komponenten-Factory und stellen Sie sie im OSGi-Container in einem Bundle bereit. Dies kann mit dem Maven[SCR-Plug-in ](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) JavaDoc-Tags oder -Anmerkungen erfolgen. Das folgende Beispiel zeigt die JavaDoc-Version:
 
 ```java
 /*

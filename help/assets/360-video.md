@@ -14,18 +14,30 @@ autotag-review: '2026-05-18T18:33:16.243Z'
 TQID: 'https://experienceleague.adobe.com/t3-PFZjnQPbbgNMFEjG7SDwG1Pt1TkvD9wNNYYgaEyE'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: b1c2c8dc-d13a-43c3-9c5b-efc536a708ca
+    internal-label: 360 VR Video
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Intermediate
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 1093
-ht-degree: 91%
-
+source-wordcount: '1223'
+ht-degree: 93%
 ---
-
 # 360-Grad-/VR-Video {#vr-video}
 
 360-Grad-Videos zeichnen ein Motiv aus allen Richtungen gleichzeitig auf. Sie werden mit einer omnidirektionalen Kamera oder mit mehreren Kameras aufgenommen. Während der Wiedergabe auf einer flachen Anzeige können Benutzende den Anzeigewinkel bestimmen; bei der Wiedergabe auf Mobilgeräten werden in der Regel die integrierten gyroskopischen Funktionen verwendet.
@@ -42,7 +54,7 @@ Informationen hierzu finden Sie in [Verwalten von Viewer-Vorgaben](/help/assets/
 
 Wählen Sie [Space Station 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS), um ein Browser-Fenster zu öffnen und ein 360-Grad-Video anzusehen. Ziehen Sie während der Videowiedergabe den Mauszeiger an eine neue Position, um den Anzeigewinkel zu ändern.
 
-![360-Grad-Videobeispiel mit der im Weltraum schwebenden internationalen Weltraumstation und der Erde und Sonne dahinter.](assets/6_5_360videoiss_simplified.png)
+![360-Grad-Videobeispiel mit der im Weltraum schwebenden internationalen Raumstation und der Erde und Sonne dahinter.](assets/6_5_360videoiss_simplified.png)
 *Videoframe von Space Station 360*
 
 ## 360-Grad-/VR-Video und Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
@@ -69,14 +81,14 @@ Beim Hochladen in Adobe Experience Manager werden 360-Grad-Video-Assets wie norm
 
    * Idealerweise sollten Ihre ursprünglichen 360-Grad-Videoinhalte eine der folgenden Auflösungen haben:
 
-      * 1080p – 1920 x 1080 (Full HD- oder FHD-Auflösung) oder
-      * 2160p – 3840 x 2160 (4K-, UHD- oder Ultra HD-Auflösung). Diese hohe Auflösung ist häufig auf Premium-Fernsehgeräten und Computer-Monitoren verfügbar. Die 2160p-Auflösung wird häufig als „4K“ bezeichnet, da die Breite fast 4000 Pixel beträgt. Das heißt, sie bietet viermal so viele Pixel wie 1080p.
+     * 1080p – 1920 x 1080 (Full HD- oder FHD-Auflösung) oder
+     * 2160p – 3840 x 2160 (4K-, UHD- oder Ultra HD-Auflösung). Diese hohe Auflösung ist häufig auf Premium-Fernsehgeräten und Computer-Monitoren verfügbar. Die 2160p-Auflösung wird häufig als „4K“ bezeichnet, da die Breite fast 4000 Pixel beträgt. Das heißt, sie bietet viermal so viele Pixel wie 1080p.
 
    * [Erstellen Sie ein benutzerdefiniertes adaptives Videoprofil](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) mit hochwertigeren Ausgabedarstellungen. Ein Beispiel: Sie möchten ein adaptives Videoprofil erstellen, das diese drei Einstellungen enthält:
 
-      * width=auto; height=720; bitrate=2500 kbps
-      * width=auto; height=1080; bitrate=5000 kbps
-      * width=auto; height=1440; bitrate=6600 kbps
+     * width=auto; height=720; bitrate=2500 kbps
+     * width=auto; height=1080; bitrate=5000 kbps
+     * width=auto; height=1440; bitrate=6600 kbps
 
    * Verarbeiten Sie 360-Grad-Videoinhalte in einem Ordner, der ausschließlich 360-Grad-Video-Assets enthält.
 
@@ -92,8 +104,8 @@ Standardmäßig erkennt Experience Manager Videos als „360“, wenn ihr Seiten
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-   * **Eigenschaftstyp**: Doppelt
-   * **Wert**: Gleitkomma-Seitenverhältnis, standardmäßig 2.0.
+  * **Eigenschaftstyp**: Doppelt
+  * **Wert**: Gleitkomma-Seitenverhältnis, standardmäßig 2.0.
 
 Wenn Sie diese Eigenschaft festlegen, wird sie umgehend sowohl auf vorhandene als auch auf neu hochgeladene Videos angewendet.
 
@@ -110,8 +122,8 @@ Siehe auch [Bearbeiten von Viewer-Vorgaben](/help/assets/managing-viewer-presets
 Wenn das 360-Grad-Video Ihren Vorstellungen entspricht, können Sie es veröffentlichen.
 
 Siehe [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/embed-code.md).
-Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Experience Manager Sites.
-Siehe [Hinzufügen von Dynamic Media Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
+Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **Vorschau von 360-Grad-Videos:**
 
@@ -130,7 +142,7 @@ Siehe [Hinzufügen von Dynamic Media Assets zu Seiten](/help/assets/adding-dynam
    * Ziehen Sie den Mauszeiger über das Video, um den Anzeigewinkel der statischen Szene zu ändern.
    * Wählen Sie die Schaltfläche **[!UICONTROL Play]**, um die Wiedergabe des Videos zu starten. Ziehen Sie während der Wiedergabe des Videos den Mauszeiger über das Video, um den Anzeigewinkel zu ändern.
 
-   ![Screenshot der im Weltraum schwebenden internationalen Weltraumstation mit Erde und Sonne im Hintergrund &#x200B;](assets/6_5_360video-preview-video360-social.png)*Ein 360-Grad-Screenshot.*
+   ![Screenshot der im Weltraum schwebenden internationalen Weltraumstation mit Erde und Sonne im Hintergrund ](assets/6_5_360video-preview-video360-social.png)*Ein 360-Grad-Screenshot.*
 
    * Wählen Sie in der Viewer-Liste **[!UICONTROL Video360VR]** aus.
 
@@ -145,7 +157,7 @@ Siehe [Hinzufügen von Dynamic Media Assets zu Seiten](/help/assets/adding-dynam
 
 Veröffentlichen Sie das 360-Grad-Video, damit Sie es verwenden können. Die Veröffentlichung eines 360-Grad-Videos aktiviert die URL und den Einbettungs-Code. Außerdem wird das 360-Grad-Video in der Dynamic Media-Cloud veröffentlicht, die für eine skalierbare und leistungsfähige Bereitstellung mit einem CDN integriert ist.
 
-Weitere Informationen [&#x200B; Veröffentlichen von 360](/help/assets/publishing-dynamicmedia-assets.md)Grad-Videos finden Sie unter Veröffentlichen von Dynamic Media-Assets .
+Unter [Veröffentlichen von Dynamic Media-Assets](/help/assets/publishing-dynamicmedia-assets.md) finden Sie Details zum Veröffentlichen von 360-Grad-Videos.
 Siehe auch [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/embed-code.md).
-Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Experience Manager Sites.
-Siehe auch [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
+Siehe auch [Hinzufügen von Dynamic Media Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).

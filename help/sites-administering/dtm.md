@@ -9,13 +9,22 @@ exl-id: 1e0821f5-627f-4262-ba76-62303890e112
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 98%
-
+source-wordcount: '2212'
+ht-degree: 97%
 ---
-
 # Integrieren mit Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
 Integrieren Sie [Adobe Dynamic Tag Management](https://business.adobe.com/de/products/experience-platform/adobe-experience-platform.html) mit AEM, sodass Sie Ihre Dynamic Tag Management-Webeigenschaften für das Tracking von AEM Sites verwenden können. Dynamic Tag Management ermöglicht Marketingexperten die Verwaltung von Tags für die Datensammlung und die Verteilung von Daten auf Systeme für Digital Marketing. Verwenden Sie Dynamic Tag Management zum Beispiel für die Erfassung der Nutzungsdaten zu Ihrer AEM-Website und die Verteilung der Daten für die Analyse in Adobe Analytics oder Adobe Target.
@@ -28,8 +37,8 @@ Nach der Konfiguration der Integration müssen Sie bei Änderungen an den Dynami
 >
 >Wenn Sie DTM mit einer benutzerdefinierten Proxy-Konfiguration verwenden, müssen Sie beide HTTP-Client-Proxy-Konfigurationen vornehmen, da manche Funktionen von AEM 3.x-APIs verwenden und andere wiederum 4.x-APIs:
 >
->* 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert
->* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert
+>* 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient konfiguriert](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator konfiguriert](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
 ## Implementierungsoptionen {#deployment-options}
@@ -138,12 +147,12 @@ Beim Hosten der dynamischen Tag-Management-Bibliotheken in AEM konfiguriert AEM 
    <td>Wählen Sie diese Option aus, wenn Sie die Dynamic Tag Management-Bibliotheksdatei auf AEM hosten. Die Auswahl dieser Option sorgt dafür, dass die anderen Eigenschaften in dieser Tabelle angezeigt werden.</td>
   </tr>
   <tr>
-   <td>URL des DTM-Bundles</td>
+   <td>URL des DTM-Pakets</td>
    <td>Die URL, die zum Herunterladen der Dynamic Tag Management-Bibliothek verwendet werden soll. Rufen Sie diesen Wert im Abschnitt zu den Download-URLs der Seite „Herunterladen von Bibliotheken“ vom dynamischen Tag-Management ab. Aus Sicherheitsgründen muss dieser Wert manuell konfiguriert werden.</td>
   </tr>
   <tr>
    <td>Download-Workflow</td>
-   <td><p>Das Workflow-Modell, das zum Herunterladen und Installieren der Dynamic Tag Management-Bibliothek verwendet werden soll. Das Standardmodell ist „Standard-DTM-Bundle-Download“. Verwenden Sie dieses Modell, sofern Sie kein benutzerdefiniertes Modell erstellt haben.</p> <p>Die Bibliotheken werden beim standardmäßigen Download-Workflow automatisch aktiviert, wenn sie heruntergeladen werden.</p> </td>
+   <td><p>Das Workflow-Modell, das zum Herunterladen und Installieren der Dynamic Tag Management-Bibliothek verwendet werden soll. Das Standardmodell ist „Standard-DTM-Paket-Download“. Verwenden Sie dieses Modell, sofern Sie kein benutzerdefiniertes Modell erstellt haben.</p> <p>Die Bibliotheken werden beim standardmäßigen Download-Workflow automatisch aktiviert, wenn sie heruntergeladen werden.</p> </td>
   </tr>
   <tr>
    <td>Domain-Hinweis</td>
@@ -229,7 +238,7 @@ Laden Sie die Bibliotheken für das dynamische Tag-Management manuell herunter, 
 
 1. Klicken Sie in der Leiste auf „Tools“ > „Vorgänge“ > „Cloud“ > „Cloud-Services“.
 1. Klicken Sie im Bereich „Dynamisches Tag-Management“ auf „Konfigurationen anzeigen“ und dann auf Ihre Konfiguration.
-1. Klicken Sie im Bereich „Staging-Einstellungen“ oder „Produktionseinstellungen“ auf die Schaltfläche „Download-Workflow auslösen“, um das Bibliotheks-Bundle herunterzuladen und bereitzustellen.
+1. Klicken Sie im Bereich „Staging-Einstellungen“ oder „Produktionseinstellungen“ auf die Schaltfläche „Download-Workflow auslösen“, um das Bibliothekspaket herunterzuladen und bereitzustellen.
 
    ![chlimage_1-356](assets/chlimage_1-356.png)
 

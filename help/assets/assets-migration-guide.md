@@ -1,29 +1,47 @@
 ---
 title: Migrieren von Assets in großen Mengen
-description: Beschreibt, wie Sie Assets in  [!DNL Adobe Experience Manager] einfügen, Metadaten anwenden, Ausgabedarstellungen erstellen und diese auf Veröffentlichungsinstanzen aktivieren können.
+description: Beschreibt, wie Sie Assets in [!DNL Adobe Experience Manager] importieren, Metadaten anwenden, Ausgabedarstellungen generieren und diese aktivieren können, um Instanzen zu veröffentlichen.
 contentOwner: AG
 role: Developer, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 100%
-
+source-wordcount: '1858'
+ht-degree: 99%
 ---
-
 # Massenmigrierung von Assets {#assets-migration-guide}
 
 Beim Migrieren von Assets nach [!DNL Adobe Experience Manager] sind verschiedene Schritte zu berücksichtigen. Das Extrahieren von Assets und Metadaten aus ihrem aktuellen Speicherort würde den Rahmen dieses Dokuments sprengen, da es zwischen den verschiedenen Implementierungen große Abweichungen gibt. In diesem Dokument wird jedoch beschrieben, wie diese Assets in [!DNL Experience Manager] übernommen, Metadaten zugewiesen, Ausgabedarstellungen generiert und für Veröffentlichungsinstanzen aktiviert werden.
 
 ## Voraussetzungen {#prerequisites}
 
-Bevor Sie einen Schritt dieser Methodik tatsächlich ausführen, lesen Sie sich die Anleitungen in den [Tipps zur Assets-Leistungsoptimierung](performance-tuning-guidelines.md) durch und setzen Sie diese um. Viele der Schritte, z. B. die Konfiguration der maximalen Anzahl gleichzeitiger Aufträge, verbessern die Stabilität und Leistung des Servers unter Last erheblich.  Andere Schritte, wie das Konfigurieren eines Dateidatenspeichers, sind nach dem Laden des Systems mit Assets viel schwieriger durchzuführen.
+Bevor Sie einen Schritt dieser Methodik tatsächlich ausführen, lesen Sie sich die Anleitungen in den [Tipps zur Assets-Leistungsoptimierung](performance-tuning-guidelines.md) durch und setzen Sie diese um. Viele der Schritte, z. B. die Konfiguration der maximalen Anzahl gleichzeitiger Aufträge, verbessern die Stabilität und Leistung des Servers unter Last erheblich. Andere Schritte, wie das Konfigurieren eines Dateidatenspeichers, sind nach dem Laden des Systems mit Assets viel schwieriger durchzuführen.
 
 >[!NOTE]
 >
->Die folgenden Tools zur Asset-Migration sind nicht Teil von [!DNL Experience Manager] und werden von Adobe nicht unterstützt: 
+>Die folgenden Tools zur Asset-Migration sind nicht Teil von [!DNL Experience Manager] und werden von Adobe nicht unterstützt:
 >
 >* Tag Maker von ACS AEM-Tools
 >* CSV Asset Importer von ACS AEM-Tools

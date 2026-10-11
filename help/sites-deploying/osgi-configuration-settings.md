@@ -1,6 +1,6 @@
 ---
 title: OSGi-Konfigurationseinstellungen
-description: In diesem Artikel werden die OSGi-Konfigurationseinstellungen beschrieben (aufgeführt nach Bundle), die für die Projektimplementierung relevant sind. Die Liste dient als Leitlinie und ist nicht vollständig.
+description: In diesem Artikel werden die OSGi-Konfigurationseinstellungen beschrieben (aufgeführt nach Paket), die für die Projektimplementierung relevant sind. Die Liste dient als Leitlinie und ist nicht vollständig.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
@@ -10,26 +10,35 @@ feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3293'
-ht-degree: 93%
-
+source-wordcount: '3453'
+ht-degree: 94%
 ---
-
 # OSGi-Konfigurationseinstellungen{#osgi-configuration-settings}
 
-[OSGi](https://www.osgi.org/) ist ein wesentlicher Bestandteil der Technologien von AEM. Es wird zur Steuerung der zusammengesetzten AEM-Bundles und ihrer Konfiguration verwendet.
+[OSGi](https://www.osgi.org/) ist ein wesentlicher Bestandteil der Technologien von AEM. Es wird zur Steuerung der zusammengesetzten AEM-Pakete und ihrer Konfiguration verwendet.
 
 OSGi „*stellt die standardisierten Primitive bereit, mit denen Anwendungen aus kleinen, wiederverwendbaren und gemeinsamen Komponenten konstruiert werden können. Diese Komponenten können zu einer Anwendung zusammengestellt und bereitgestellt werden*“.
 
-Diese Funktionalität ermöglicht eine einfache Verwaltung von Bundles, da diese einzeln gestoppt, installiert und gestartet werden können. Die gegenseitigen Abhängigkeiten werden automatisch verwaltet. Jede OSGi-Komponente (siehe [OSGi-Spezifikation](https://docs.osgi.org/specification/)) ist in einem der Bundles enthalten. Bei der Arbeit mit AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Bundles. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
+Diese Funktionalität ermöglicht eine einfache Verwaltung von Bundles, da diese einzeln gestoppt, installiert und gestartet werden können. Die gegenseitigen Abhängigkeiten werden automatisch verwaltet. Jede OSGi-Komponente (siehe [OSGi-Spezifikation](https://docs.osgi.org/specification/)) ist in einem der Pakete enthalten. Bei der Arbeit mit AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Pakete. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
-Die folgenden OSGi-Konfigurationseinstellungen (aufgeführt nach Bundle) sind für die Projektimplementierung relevant. Nicht alle aufgeführten Einstellungen müssen angepasst werden. Einige werden nur zum besseren Verständnis von AEM erwähnt.
+Die folgenden OSGi-Konfigurationseinstellungen (aufgeführt nach Paket) sind für die Projektimplementierung relevant. Nicht alle aufgeführten Einstellungen müssen angepasst werden. Einige werden nur zum besseren Verständnis von AEM erwähnt.
 
 >[!CAUTION]
 >
->Die Liste soll als Leitlinie dienen und ist nicht vollständig. Es werden nicht alle Bundles und für einige der Bundles auch nicht alle Parameter aufgelistet.
+>Die Liste soll als Leitlinie dienen und ist nicht vollständig. Es werden nicht alle Pakete und für einige der Pakete auch nicht alle Parameter aufgelistet.
 >
 >Die erforderliche Konfiguration variiert von Projekt zu Projekt.
 >
@@ -41,7 +50,7 @@ Die folgenden OSGi-Konfigurationseinstellungen (aufgeführt nach Bundle) sind f�
 
 >[!NOTE]
 >
->Für spezifische Funktionsbereiche in AEM sind möglicherweise weitere Bundles erforderlich. In solchen Fällen können Sie die Konfigurationsdetails der Seite entnehmen, die sich auf die entsprechende Funktion bezieht.
+>Für spezifische Funktionsbereiche in AEM sind möglicherweise weitere Pakete erforderlich. In solchen Fällen können Sie die Konfigurationsdetails der Seite entnehmen, die sich auf die entsprechende Funktion bezieht.
 
 **AEM Replikations-Ereignis-Listener** Konfigurieren Sie:
 
@@ -66,7 +75,7 @@ Die folgenden OSGi-Konfigurationseinstellungen (aufgeführt nach Bundle) sind f�
 >
 >Stellen Sie sicher, dass Sie Folgendes konfigurieren:
 >
->**Benutzername** und **Kennwort** die Anmeldeinformationen für den Zugriff auf die Apache Felix Web Management Console.
+>**Benutzername** und **Kennwort**: die Anmeldedaten für den Zugriff auf die Apache Felix Web Management Console.
 >Das Kennwort muss nach der ersten Installation geändert werden, damit die [Sicherheit](/help/sites-administering/security-checklist.md) Ihrer Instanz gewährleistet ist.
 
 >[!NOTE]
@@ -83,7 +92,7 @@ Siehe [AEM-Protokollierung](/help/sites-deploying/configure-logging.md) und [Sli
 
 * **Minimale Poolgröße** und **Maximale Poolgröße**, die Größe des Pools, der zum Speichern von Ereignis-Threads verwendet wird.
 
-* **Queue Size**, die maximale Größe der Thread-Warteschlange, wenn der Pool erschöpft ist.
+* **Warteschlangengröße**, die maximale Größe der Thread-Warteschlange, wenn der Pool erschöpft ist.
 Der empfohlene Wert ist `-1`, da dadurch die Warteschlange auf unbegrenzt gesetzt wird. Wenn ein Limit festgelegt ist, kann es bei Überschreitung zu Verlusten kommen.
 
 * Das Ändern dieser Einstellungen kann die Leistung in Szenarien mit einer hohen Anzahl von Ereignissen verbessern. Beispielsweise starke Nutzung von AEM DAM oder Workflows.
@@ -93,7 +102,7 @@ Der empfohlene Wert ist `-1`, da dadurch die Warteschlange auf unbegrenzt gesetz
 **Apache Sling GET Servlet** Konfigurieren Sie einige Aspekte des Renderings:
 
 * **Auto Index** zum Aktivieren/Deaktivieren der Verzeichnisausgabe beim Browsen.
-* **Aktivieren** (oder Deaktivieren) von Standardwiedergaben, z. B. **HTML**, **Nur Text**, **JSON** oder **XML**.
+* **Aktivieren** (oder Deaktivieren) von Standardwiedergaben, wie **HTML**, **Nur Text**, **JSON** oder **XML**.
 Deaktivieren Sie JSON nicht.
 
 >[!NOTE]
@@ -108,7 +117,7 @@ Bestimmte Einstellungen können sich auf die Leistung auswirken. Deaktivieren Si
 
 * für Produktionsinstanzen:
 
-   * Deaktivieren Sie **Generate Debug Info**.
+  * Deaktivieren Sie **Generate Debug Info**.
 
 **Apache Sling JCR Installer** Diese Parameter müssen wahrscheinlich nicht konfiguriert werden. Es ist jedoch nützlich, diese beim Entwickeln oder Debuggen zu kennen. Die Installationsordner können beispielsweise zum Ein- oder Auschecken oder zum Erstellen eines Pakets nützlich sein.
 
@@ -234,8 +243,8 @@ Siehe: [https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Reso
 
 Es können verschiedene Parameter festgelegt werden, darunter:
 
-* **Ausführungspfade** - Listet die Pfade für die Suche nach ausführbaren Skripten auf. Durch die Konfiguration bestimmter Pfade können Sie einschränken, welche Skripte ausgeführt werden können. Wenn kein Pfad konfiguriert ist, wird der Standard verwendet (`/` = Stamm), sodass alle Skripte ausgeführt werden können.
-Wenn ein konfigurierter Pfadwert mit einem Schrägstrich endet, wird die gesamte Unterstruktur durchsucht. Ohne einen solchen Schrägstrich wird das Skript nur ausgeführt, wenn es eine exakte Übereinstimmung ist.
+* **Ausführungspfade** – Listet die Pfade für die Suche nach ausführbaren Skripten auf. Durch die Konfiguration bestimmter Pfade können Sie einschränken, welche Skripte ausgeführt werden können. Wenn kein Pfad konfiguriert ist, wird der Standard verwendet (`/` = Stammpfad), sodass alle Skripte ausgeführt werden können.
+Falls ein konfigurierter Pfadwert mit einem Schrägstrich endet, wird die gesamte Unterstruktur durchsucht. Ohne einen solchen Schrägstrich wird das Skript nur bei einer exakten Übereinstimmung ausgeführt.
 
 * **Skript-Benutzer**: Diese optionale Eigenschaft kann das Repository-Benutzerkonto angeben, das zum Lesen der Skripte verwendet wird. Wenn kein Konto angegeben wird, wird standardmäßig `admin` als Benutzer verwendet.
 
@@ -259,17 +268,17 @@ Wenn ein konfigurierter Pfadwert mit einem Schrägstrich endet, wird die gesamte
 
 * Für Produktionsinstanzen:
 
-   * Aktivieren Sie **Minimieren** (um CRLF- und Leerzeichen zu entfernen).
-   * Aktivieren Sie **gzip** (damit Dateien ins gzip-Format komprimiert und mit einer Anfrage aufgerufen werden können).
-   * Deaktivieren Sie **Debuggen**.
-   * Deaktivieren Sie **Zeitplanung**.
+  * Aktivieren Sie **Minimieren** (um CRLF- und Leerzeichen zu entfernen).
+  * Aktivieren Sie **gzip** (damit Dateien ins gzip-Format komprimiert und mit einer Anfrage aufgerufen werden können).
+  * Deaktivieren Sie **Debuggen**.
+  * Deaktivieren Sie **Zeitplanung**.
 
 * Für die JS-Entwicklung (insbesondere beim Firebugging/Debugging):
 
-   * Deaktivieren Sie **Minimieren**
-   * Aktivieren Sie **Debugging**, um die Dateien für die Fehlersuche und die Verwendung mit Fire Bug zu trennen.
-   * Aktivieren Sie **Zeitplanung**, wenn Sie an der Zeitplanung interessiert sind.
-   * Aktivieren Sie die **Debugging**-Konsole, um die Protokollmeldungen der JS-Konsole anzuzeigen.
+  * Deaktivieren Sie **Minimieren**
+  * Aktivieren Sie **Debugging**, um die Dateien für die Fehlersuche und die Verwendung mit Fire Bug zu trennen.
+  * Aktivieren Sie **Zeitplanung**, wenn Sie an der Zeitplanung interessiert sind.
+  * Aktivieren Sie die **Debugging**-Konsole, um die Protokollmeldungen der JS-Konsole anzuzeigen.
 
 >[!CAUTION]
 >
@@ -337,8 +346,8 @@ Verschiedene Eigenschaften können konfiguriert werden:
 * **path**
 Der Pfad, für den dieser Authentifizierungs-Handler aktiv ist. Wenn dieser Parameter nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert. Beispielsweise wird beim Pfad / der Authentifizierungs-Handler für das gesamte Repository verwendet.
 
-* **Service-Ranking**
-Der Rangfolgewert für den OSGi-Framework-Dienst gibt die Reihenfolge an, in der dieser Dienst aufgerufen wird. Dieser Wert ist ein `int` Wert, bei dem höhere Werte eine höhere Priorität angeben.
+* **Service-Rangfolge**
+Der Rangfolgewert für den OSGi-Framework-Dienst gibt die Reihenfolge an, in der dieser Dienst aufgerufen wird. Dieser Wert ist ein `int`-Wert, wobei höhere Werte eine höhere Priorität bezeichnen.
 Der Standardwert ist `0`.
 
 * **Kopfzeilennamen**
@@ -356,10 +365,10 @@ Für ausgewählte Benutzer kann der aus der HTTP-Anfrage extrahierte Benutzernam
 * **format**
 Gibt das Format an, in dem die Benutzer-ID angegeben ist. Verwenden Sie:
 
-   * `Basic`, falls die Benutzer-ID im HTTP-Standard-Authentifizierungsformat kodiert ist
-   * `AsIs`, falls die Benutzer-ID im Nur-Text-Format bereitgestellt wird, oder jeder für reguläre Ausdrücke gültige Wert unverändert bzw. jeder reguläre Ausdruck verwendet werden soll
+  * `Basic`, falls die Benutzer-ID im HTTP-Standard-Authentifizierungsformat kodiert ist
+  * `AsIs`, falls die Benutzer-ID im Nur-Text-Format bereitgestellt wird, oder jeder für reguläre Ausdrücke gültige Wert unverändert bzw. jeder reguläre Ausdruck verwendet werden soll
 
-**Day CQ WCM Debug Filter** Dies ist beim Entwickeln hilfreich, da Suffixe wie ?debug=layout beim Zugriff auf eine Seite verwendet werden können. Beispielsweise enthält https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout Layout-Informationen, die für Entwickler von Interesse sein können.
+**Day CQ WCM Debug Filter** Dies ist beim Entwickeln hilfreich, da Suffixe wie ?debug=layout beim Zugriff auf eine Seite verwendet werden können. Beispielsweise stellt https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout Layout-Informationen bereit, die für Entwicklerinnen und Entwickler von Interesse sein können.
 
 * Um Leistung und Sicherheit zu gewährleisten, deaktivieren Sie diese Option auf Produktionsinstanzen.
 
@@ -367,7 +376,7 @@ Gibt das Format an, in dem die Benutzer-ID angegeben ist. Verwenden Sie:
 
 * **WCM-Modus**, um den Standardmodus festzulegen.
 * Bei einer Autoreninstanz kann dieser Modus `edit`, `disable,preview` oder `analytics` sein.
-Auf die anderen Modi kann über den Sidekick zugegriffen werden. Oder das `?wcmmode=disabled` Suffix kann zum Emulieren einer Produktionsumgebung verwendet werden.
+Auf die anderen Modi kann über den Sidekick zugegriffen werden, oder es kann das Suffix `?wcmmode=disabled` zum Emulieren einer Produktionsumgebung verwendet werden.
 
 * Bei einer Veröffentlichungsinstanz muss dieser Modus auf `disabled` gesetzt werden, um sicherzustellen, dass kein anderer Modus zugänglich ist.
 

@@ -13,20 +13,32 @@ autotag-review: '2026-05-18T18:43:11.851Z'
 TQID: 'https://experienceleague.adobe.com/Qejzp9vTp-wLn92GsZdPdKEdA-84PnmYIROxdVrB4MU'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: fa7b95c2-9969-5924-a7c7-8cde1e7a2e26
+    internal-label: 3D Assets
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Metadata
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 2419
+source-wordcount: '2419'
 ht-degree: 98%
-
 ---
-
 # Arbeiten mit 3D-Assets in Dynamic Media {#working-with-three-d-assets-dm}
 
 Mit Dynamic Media können Sie 3D-Assets hochladen, verwalten, anzeigen und als eindrucksvolle Erlebnisse bereitstellen.
@@ -79,19 +91,19 @@ Siehe [Konfiguration von Dynamic Media Cloud Services](/help/assets/config-dms7.
 
    * Organisieren und Suchen von 3D-Assets
 
-      * [Organisieren von digitalen Assets](/help/assets/organize-assets.md#organize-digital-assets).
-      * [Suchen von 3D-Assets](/help/assets/search-assets.md).
-      * [Verwenden von benutzerdefinierten Prädikaten zum Filtern von Suchergebnissen](/help/assets/search-assets.md#custompredicates).
+     * [Organisieren von digitalen Assets](/help/assets/organize-assets.md#organize-digital-assets).
+     * [Suchen von 3D-Assets](/help/assets/search-assets.md).
+     * [Verwenden von benutzerdefinierten Prädikaten zum Filtern von Suchergebnissen](/help/assets/search-assets.md#custompredicates).
 
    * Anzeigen von 3D-Assets
 
-      * [Anzeigen von und Interagieren mit 3D-Assets](#viewing-three-d-assets).
-      * [Verwalten der Dimensional-Viewer-Vorgabe](/help/assets/managing-viewer-presets.md).
+     * [Anzeigen von und Interagieren mit 3D-Assets](#viewing-three-d-assets).
+     * [Verwalten der Dimensional-Viewer-Vorgabe](/help/assets/managing-viewer-presets.md).
 
    * Arbeiten mit 3D-Asset-Metadaten
 
-      * [Verwalten von Metadaten für digitale Assets](/help/assets/metadata.md).
-      * [Metadatenschemata](/help/assets/metadata-schemas.md).
+     * [Verwalten von Metadaten für digitale Assets](/help/assets/metadata.md).
+     * [Metadatenschemata](/help/assets/metadata-schemas.md).
 
 1. **Veröffentlichen von 3D-Assets**
 
@@ -163,7 +175,7 @@ Siehe auch [Vorschau von Assets über die Software-Schnittstelle](/help/assets/p
    * Löschen Sie `/editor.html` aus der Seiten-URL im Browser.
 
    ![3D-Asset, das innerhalb der 3D-Medien-Komponente angezeigt wird](/help/assets/assets-dm/3d-asset-in-3d-media.png)
-Ein vollständig interaktives 3D-Asset, wie im **[!UICONTROL Vorschau]**-Modus angezeigt.
+   Ein vollständig interaktives 3D-Asset, wie im **[!UICONTROL Vorschau]**-Modus angezeigt.
 
 1. Führen Sie im **[!UICONTROL Vorschaumodus]** einen der folgenden Schritte aus:
 
@@ -182,7 +194,7 @@ Dynamic Media enthält eine Dynamic Media-3D-Medien-Komponente, die Sie in Adobe
 
 * [Hinzufügen der 3D-Medien-Komponente zur Seitenvorlage](#adding-three-d-media-component-to-page-template)
 * [Hinzufügen der 3D-Medien-Komponente zu einer Web-Seite](#adding-the-three-d-media-component-to-a-web-page)
-   * [Optional – Konfigurieren der 3D-Medien-Komponente](#configuring-the-three-d-component)
+  * [Optional – Konfigurieren der 3D-Medien-Komponente](#configuring-the-three-d-component)
 * [Zuweisen eines 3D-Assets zur 3D-Medienkomponente](#assigning-a-three-d-asset-to-the-component)
 
 ## Hinzufügen der 3D-Medien-Komponente zur Seitenvorlage {#adding-three-d-media-component-to-page-template}

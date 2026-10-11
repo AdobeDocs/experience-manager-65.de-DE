@@ -7,13 +7,27 @@ role: Admin,User
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '913'
 ht-degree: 100%
-
 ---
-
 # Forms-Benutzerverwaltung | Umgang mit Benutzerdaten {#forms-user-management-handling-user-data}
 
 User Management ist eine AEM Forms JEE-Komponente, die das Erstellen, Verwalten und Autorisieren von AEM Forms-Benutzenden für den Zugriff auf AEM Forms ermöglicht. User Management verwendet Domains als Verzeichnisse zum Abrufen von Benutzerinformationen. Die folgenden Domain-Typen werden unterstützt:
@@ -174,7 +188,7 @@ Die Daten der Forms JEE-Benutzenden sind im AEM-Repository vorhanden, wenn sie m
 
 #### Zugreifen auf Benutzerdaten {#access-user-data}
 
-Um die im AEM-Repository erstellten Benutzer anzuzeigen, melden Sie sich bei `https://'[server]:[port]'/lc/useradmin` mit AEM-Administratorrechten an. Beachten Sie, dass `server` und `port` in der URL die der AEM-Author-Instanz sind. Hier können Sie nach Benutzenden anhand ihres Benutzernamens suchen. Doppelklicken Sie auf eine Person, um Informationen wie Eigenschaften, Berechtigungen und Gruppen für diese Person anzuzeigen. Die Eigenschaft `Path`für einen Benutzer gibt den Pfad zum Benutzerknoten an, der im AEM-Repository erstellt wurde.
+Um die im AEM-Repository erstellten Benutzer anzuzeigen, melden Sie sich bei `https://'[server]:[port]'/lc/useradmin` mit AEM-Administratorrechten an. Beachten Sie, dass `server` und `port` in der URL die der AEM-Autoreninstanz sind. Hier können Sie nach Benutzenden anhand ihres Benutzernamens suchen. Doppelklicken Sie auf eine Person, um Informationen wie Eigenschaften, Berechtigungen und Gruppen für diese Person anzuzeigen. Die Eigenschaft `Path`für einen Benutzer gibt den Pfad zum Benutzerknoten an, der im AEM-Repository erstellt wurde.
 
 #### Benutzerdaten löschen {#delete-aem}
 

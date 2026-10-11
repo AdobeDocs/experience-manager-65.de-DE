@@ -10,16 +10,34 @@ docset: aem65
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: a16aea24-4e85-528d-9377-cd80bb039c1d
+    internal-label: Acrobat Sign
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '4051'
+source-wordcount: '4083'
 ht-degree: 96%
-
 ---
-
 # Verwenden von [!DNL Adobe Sign] in einem adaptiven Formular{#using-adobe-sign-in-an-adaptive-form}
 
-<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -222,7 +240,7 @@ Sie können für ein adaptives Formular eine einzelne oder mehrere Unterzeichnun
 
 Nachdem Sie [!DNL Adobe Sign]-Felder zu einem adaptiven Formular hinzugefügt, [!DNL Adobe Sign] aus dem Formular-Container aktiviert, den [!DNL Adobe Sign]-Cloud-Service ausgewählt und [!DNL Adobe Sign]-Signierer hinzugefügt haben, wählen Sie eine geeignete Aktion zum Übermitteln für das adaptive Formular aus. Ausführliche Informationen zu Übermittlungsaktionen für adaptive Formulare finden Sie unter [Konfigurieren der Übermittlungsaktion](../../forms/using/configuring-submit-actions.md).
 
-Ein für [!DNL Adobe Sign] aktiviertes adaptives Formular wird darüber hinaus erst übermittelt, nachdem alle Signierer es signiert haben. Teilweise signierte Formulare finden Sie im Abschnitt „Ausstehende Signatur“ des Formularportals. [!DNL Adobe Sign] Der Konfigurations-Service fragt [!DNL Adobe Sign] Server in [&#x200B; Abständen ab](../../forms/using/adobe-sign-integration-adaptive-forms.md) um den Status der Signaturen zu überprüfen. Wenn alle Unterzeichner das Formular signiert haben, wird der Dienst für die Übermittlungsaktion gestartet und das Formular übermittelt. Wenn Sie eine benutzerdefinierte Übermittlungsaktion verwenden und im Formular [!DNL Adobe Sign] verwendet wird, sollten Sie Ihre benutzerdefinierte Übermittlungsaktion aktualisieren, sodass der Service für die Übermittlungsaktion verwendet wird.
+Ein für [!DNL Adobe Sign] aktiviertes adaptives Formular wird darüber hinaus erst übermittelt, nachdem alle Signierer es signiert haben. Teilweise signierte Formulare finden Sie im Abschnitt „Ausstehende Signatur“ des Formularportals. [!DNL Adobe Sign] Der Konfigurations-Service fragt [!DNL Adobe Sign] Server in [ Abständen ab](../../forms/using/adobe-sign-integration-adaptive-forms.md) um den Status der Signaturen zu überprüfen. Wenn alle Unterzeichner das Formular signiert haben, wird der Dienst für die Übermittlungsaktion gestartet und das Formular übermittelt. Wenn Sie eine benutzerdefinierte Übermittlungsaktion verwenden und im Formular [!DNL Adobe Sign] verwendet wird, sollten Sie Ihre benutzerdefinierte Übermittlungsaktion aktualisieren, sodass der Service für die Übermittlungsaktion verwendet wird.
 
 <!--
 Remove when forms portal goes live

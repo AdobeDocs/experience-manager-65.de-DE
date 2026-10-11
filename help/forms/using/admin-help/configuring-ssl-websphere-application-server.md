@@ -9,7 +9,20 @@ exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 99%
@@ -69,7 +82,7 @@ Zum Aktivieren von SSL muss WebSphere in der Benutzerregistrierung des lokalen B
 1. Wählen Sie unter „Administrative security“ (Administrative Sicherheit) die Option **Administrative user roles** (Administrative Benutzerrollen) aus.
 1. Klicken Sie auf „Add“ (Hinzufügen) und führen Sie folgende Schritte aus:
 
-   1. Geben Sie **&ast;** in das Suchfeld ein und klicken Sie auf „Suchen“.
+   1. Geben Sie **&amp;ast;** in das Suchfeld ein und klicken Sie auf „Suchen“.
    1. Klicken Sie unter „Roles“ (Rollen) auf **Administrator** (Admin).
    1. Fügen Sie die neu erstellte Benutzerin bzw. den neu erstellten Benutzer zu „Mapped to role“ (Zugeordnet zur Rolle) hinzu und ordnen Sie diese Person der Rolle „Administrator“ (Admin) zu.
 

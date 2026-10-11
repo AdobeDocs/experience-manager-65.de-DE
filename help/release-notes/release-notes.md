@@ -6,7 +6,23 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: e30b37bc03a811eca3dac08ca30c5ab32343be4e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '7612'
 ht-degree: 18%
@@ -48,7 +64,7 @@ Inhaltsfragmente und die GraphQL-API erhalten außerdem Verbesserungen hinsichtl
 
 * [Multithread-PDF Generator-Konvertierungen](/help/forms/using/install-configure-document-services.md#windows-only-enable-multi-threaded-pdf-generator-conversions): Es wurde Unterstützung für die gleichzeitige Ausführung von Microsoft Word (doc/docx)- und Excel (xls/xlsx)-Konvertierungen hinzugefügt, wenn AEM Forms als Windows-Service unter einem einzigen konfigurierten Dienstkonto ausgeführt wird.
 
-* [Hierarchische Lesezeichen für XFA-basierte PDFs](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/using-designer.pdf): Output Service und AEM Forms Designer generieren jetzt strukturierte Lesezeichenhierarchien in statischen interaktiven und einfachen XFA-basierten PDFs. Lesezeichen folgen den Überschriftenebenen (H1-H6), die in den Barrierefreiheitseigenschaften für Textfelder festgelegt sind, sodass H1-H6-Einträge unter dem richtigen übergeordneten Element verschachtelt werden, anstatt parallel angezeigt zu werden.
+* [Hierarchische Lesezeichen für XFA-basierte PDFs](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): Output Service und AEM Forms Designer generieren jetzt strukturierte Lesezeichenhierarchien in statischen interaktiven und einfachen XFA-basierten PDFs. Lesezeichen folgen den Überschriftenebenen (H1-H6), die in den Barrierefreiheitseigenschaften für Textfelder festgelegt sind, sodass H1-H6-Einträge unter dem richtigen übergeordneten Element verschachtelt werden, anstatt parallel angezeigt zu werden.
 
 * [Details auf Formularebene in JEE-](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): AEM Forms on JEE zeichnet Details auf Formularebene in `transaction_log.log` für jede Transaktion zusammen mit Service- und Vorgangsinformationen auf. Admins können bei der Analyse von Übermittlungen, Ausgabedarstellungen und Konversionen Transaktionsberichterstellungsdaten mit bestimmten Formularen korrelieren. (FORMS-21574)
 
@@ -63,7 +79,7 @@ Inhaltsfragmente und die GraphQL-API erhalten außerdem Verbesserungen hinsichtl
   > * [Upgrade von JBoss EAP von 7.4.10 auf 7.4.23 für AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md) für eigenständige Umgebungen.
   > * [Upgrade des JBoss EAP-Clusters von 7.4.10 auf 7.4.23 für AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) für Cluster-Umgebungen.
 
-* **Configuration Manager (LCM) Express Mode Credential Prompt:** Wenn Sie AEM Forms on JEE im Express-Modus konfigurieren, fordert LCM Sie auf, die AEM Administrator-Anmeldeinformationen einzugeben, anstatt die Standardeinstellungen zu verwenden. Diese Änderung ist über den [Hotfix](/help/release-notes/aem-forms-hotfix.md) für AEM Service Pack 6.5.25.0 verfügbar. Die Konfigurationsschritte finden Sie unter &quot;[&#x200B; und Bereitstellen von AEM Forms 6.5 on JEE mit JBoss Turnkey](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/install-turnkey.pdf). (FORMS-26365)
+* **Configuration Manager (LCM) Express Mode Credential Prompt:** Wenn Sie AEM Forms on JEE im Express-Modus konfigurieren, fordert LCM Sie auf, die AEM Administrator-Anmeldeinformationen einzugeben, anstatt die Standardeinstellungen zu verwenden. Diese Änderung ist über den [Hotfix](/help/release-notes/aem-forms-hotfix.md) für AEM Service Pack 6.5.25.0 verfügbar. Die Konfigurationsschritte finden Sie unter &quot;[ und Bereitstellen von AEM Forms 6.5 on JEE mit JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-turnkey.pdf). (FORMS-26365)
 
 ## Behobene Probleme in Service Pack 25 {#fixed-issues}
 
@@ -251,7 +267,7 @@ AEM lädt jetzt die richtigen Vorlagen, wenn Autorinnen und Autoren Varianten vo
 
 #### MSM – Live Copies{#sites-msm-live-copies-6525}
 
-* Mit der Live Copy-Übersicht werden Datumsformate jetzt in der Ansicht Beziehungsstatus lokalisiert. Die Felder **Letzte Änderung“,**&#x200B;**Letzte Änderung der Live Copy** und **Letztes Rollout** zeigen Datumsangaben, die mit dem Gebietsschema des Benutzers übereinstimmen. (SITES-40756)
+* Mit der Live Copy-Übersicht werden Datumsformate jetzt in der Ansicht Beziehungsstatus lokalisiert. Die Felder **Letzte Änderung“,****Letzte Änderung der Live Copy** und **Letztes Rollout** zeigen Datumsangaben, die mit dem Gebietsschema des Benutzers übereinstimmen. (SITES-40756)
 * MSM protokolliert jetzt weitere Details für Push-on-Modify-Ereignisse. Mit den hinzugefügten Ereignisinformationen können Teams Rollout-Aktivitäten verfolgen und die Quelle unerwarteter Seitenänderungen identifizieren. (SITES-38029)
 
 #### Seiteneditor{#sites-pageeditor-6525}
@@ -404,7 +420,7 @@ Die Statuswerte des Übersetzungsprojekts werden jetzt nach dem Upgrade korrekt 
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.25.0 erfordert [!DNL Experience Manager] 6.5. Detaillierte Anweisungen finden [&#x200B; in &#x200B;](/help/sites-deploying/upgrade.md)Upgrade-Dokumentation“. <!-- UPDATE FOR EACH NEW RELEASE -->
+* [!DNL Experience Manager] 6.5.25.0 erfordert [!DNL Experience Manager] 6.5. Detaillierte Anweisungen finden [ in ](/help/sites-deploying/upgrade.md)Upgrade-Dokumentation“. <!-- UPDATE FOR EACH NEW RELEASE -->
 * Der Download des Service Packs ist über die [Adobe-Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip) verfügbar.
 * Bei einer Bereitstellung mit MongoDB und mehreren Instanzen installieren Sie [!DNL Experience Manager] 6.5.25.0 mit dem Package Manager auf einer der Autoreninstanzen.<!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -606,12 +622,12 @@ Die Vorschau von Inhaltsfragmenten schlägt aufgrund des DoS-Schutzes bei einer 
 
 Für die folgenden Probleme ist ein Hotfix zum Herunterladen und Installieren verfügbar. Sie können [den Hotfix herunterladen und installieren](/help/release-notes/aem-forms-hotfix.md), um diese Probleme zu beheben:
 
-* **NPR-44100** Nach der Installation von AEM 6.5 Service Pack 25 auf WAR/JEE-Bereitstellungen (einschließlich AEM Forms on JEE) bleibt das `com.adobe.cq.screens.sessions`-Bundle im Status Installiert und wird nie aktiv. Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
-* **FORMS-26802** Nach der Härtung der SOAP SDK-Authentifizierung stellen LCM Configuration Manager, Workbench und Designer mit der `ALC-LCM-200-001` keine Verbindung zum AEM Forms on JEE-Server her, da der `/soap/sdk`-Endpunkt nicht authentifizierte Anfragen zurückweist. Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
-* **FORMS-26679** In AEM Forms Document Security werden Authentifizierungs-Cookies nach einer Microsoft Entra ID (MFA)-Umleitung gelöscht, was beim Öffnen richtliniengeschützter Dokumente den Fehler „Cookies sind nicht aktiviert“ verursacht. Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
-* **FORMS-26617**-[!DNL AEM Forms] in [!DNL JEE] [!DNL WebLogic] Datenbankeinstellungen schlagen mit „Kein geeigneter Treiber gefunden“ und dem Microsoft SQL Server JDBC-Treiber 12.10.0 fehl. Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
-* **FORMS-27869** PDFs werden nach der Installation des neuesten AEM Forms 6.5-Builds langsam geöffnet. Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
-* **FORMS-23491** CVE-2025-64775, eine Apache Struts-Denial-of-Service-Schwachstelle bei der Verarbeitung mehrteiliger Anfragen, wirkt sich auf AEM Forms- 6.5.24.0 JEE-Bereitstellungen (JBoss, WebLogic, WebSphere) aus. Um dieses Problem zu beheben[&#x200B; laden Sie den Hotfix für &#x200B;](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.24.0 von AEM herunter und installieren Sie ihn.
+* **NPR-44100** Nach der Installation von AEM 6.5 Service Pack 25 auf WAR/JEE-Bereitstellungen (einschließlich AEM Forms on JEE) bleibt das `com.adobe.cq.screens.sessions`-Bundle im Status Installiert und wird nie aktiv. Um dieses Problem zu beheben[ laden Sie den Hotfix für ](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
+* **FORMS-26802** Nach der Härtung der SOAP SDK-Authentifizierung stellen LCM Configuration Manager, Workbench und Designer mit der `ALC-LCM-200-001` keine Verbindung zum AEM Forms on JEE-Server her, da der `/soap/sdk`-Endpunkt nicht authentifizierte Anfragen zurückweist. Um dieses Problem zu beheben[ laden Sie den Hotfix für ](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
+* **FORMS-26679** In AEM Forms Document Security werden Authentifizierungs-Cookies nach einer Microsoft Entra ID (MFA)-Umleitung gelöscht, was beim Öffnen richtliniengeschützter Dokumente den Fehler „Cookies sind nicht aktiviert“ verursacht. Um dieses Problem zu beheben[ laden Sie den Hotfix für ](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
+* **FORMS-26617**-[!DNL AEM Forms] in [!DNL JEE] [!DNL WebLogic] Datenbankeinstellungen schlagen mit „Kein geeigneter Treiber gefunden“ und dem Microsoft SQL Server JDBC-Treiber 12.10.0 fehl. Um dieses Problem zu beheben[ laden Sie den Hotfix für ](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
+* **FORMS-27869** PDFs werden nach der Installation des neuesten AEM Forms 6.5-Builds langsam geöffnet. Um dieses Problem zu beheben[ laden Sie den Hotfix für ](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.25.0 von AEM herunter und installieren Sie ihn.
+* **FORMS-23491** CVE-2025-64775, eine Apache Struts-Denial-of-Service-Schwachstelle bei der Verarbeitung mehrteiliger Anfragen, wirkt sich auf AEM Forms- 6.5.24.0 JEE-Bereitstellungen (JBoss, WebLogic, WebSphere) aus. Um dieses Problem zu beheben[ laden Sie den Hotfix für ](/help/release-notes/aem-forms-hotfix.md) Service Pack 6.5.24.0 von AEM herunter und installieren Sie ihn.
 * **FORMS-14926** Führen Sie nach der Installation von AEM Forms JEE Service Pack 21 (6.5.21.0) die folgenden Schritte aus, um das Problem zu beheben, wenn Sie doppelte Einträge von Geode-Jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` im `<AEM_Forms_Installation>/lib/caching/lib`-Ordner finden:
 
   1. Stoppen der Locators, falls sie noch ausgeführt werden.
@@ -635,7 +651,7 @@ Die folgenden ZIP-Dateien enthalten die Textdokumente, in denen die in dieser Ve
 Diese Websites sind nur für Kundinnen und Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
 * [Produkt-Download unter „licensing.adobe.com“](https://licensing.adobe.com/)
-* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >

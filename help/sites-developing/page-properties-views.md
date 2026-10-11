@@ -9,13 +9,22 @@ exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
-
+source-wordcount: '500'
+ht-degree: 98%
 ---
-
 # Anpassen der Ansichten von Seiteneigenschaften{#customizing-views-of-page-properties}
 
 Jede Seite verfügt über einen Satz von [Eigenschaften](/help/sites-authoring/editing-page-properties.md), die von Benutzenden angezeigt und bearbeitet werden können. Einige sind beim Erstellen der Seite erforderlich (Ansicht erstellen), andere können später angezeigt und bearbeitet werden (Ansicht bearbeiten). Diese Seiteneigenschaften werden über das Dialogfeld (`cq:dialog`) der entsprechenden Seitenkomponente definiert und bereitgestellt.
@@ -34,13 +43,13 @@ Felder müssen einzeln konfiguriert werden, wenn eine Änderung erforderlich ist
 
 * Seiteneigenschaft, die in der Erstellungsansicht verfügbar sein soll (z. B. im **Seitenerstellungsassistenten**):
 
-   * Name: `cq:showOnCreate`
-   * Typ: `Boolean`
+  * Name: `cq:showOnCreate`
+  * Typ: `Boolean`
 
 * Seiteneigenschaft, die in der Bearbeitungsansicht verfügbar sein soll (z. B. die Option **Anzeigen**/**Bearbeiten**) von **Eigenschaften**):
 
-   * Name: `cq:hideOnEdit`
-   * Typ: `Boolean`
+  * Name: `cq:hideOnEdit`
+  * Typ: `Boolean`
 
 Sehen Sie als Beispiel die Einstellungen für Felder, die unter **Weitere Titel und Beschreibungen** auf der Registerkarte **Allgemein** der Foundation-Seitenkomponente gruppiert sind. Sie sind im **Seitenerstellungsassistenten** verfügbar, da `cq:showOnCreate` auf `true` gesetzt ist:
 

@@ -10,13 +10,22 @@ exl-id: d60e9601-d15b-4378-a33e-e90961f63195
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '770'
 ht-degree: 100%
-
 ---
-
 # Anmerkungen beim Bearbeiten einer Seite{#annotations-when-editing-a-page}
 
 Oft muss das Hinzufügen von Inhalten zu den Seiten Ihrer Website vor der tatsächlichen Veröffentlichung besprochen werden. Um diesen Vorgang zu erleichtern, können Sie in vielen Komponenten, die direkt mit dem Inhalt (und nicht mit dem Layout) in Verbindung stehen, Anmerkungen hinzufügen.
@@ -86,13 +95,13 @@ Skizzen sind eine Funktion von Anmerkungen, über die Sie einfache Liniengrafike
 * Wenn Sie sich im Skizzenmodus befinden, wird der Cursor in ein Kreuz geändert. Sie können mehrere separate Linien zeichnen.
 * Die Zeichnungslinie spiegelt die Anmerkungsfarbe wider und kann entweder sein:
 
-   * Freihand
+  * Freihand
 
-     der Standardmodus; Beenden, indem Sie die Maustaste loslassen.
+    der Standardmodus; Beenden, indem Sie die Maustaste loslassen.
 
-   * gerade:
+  * gerade:
 
-     Halten Sie die `ALT`-Taste gedrückt, und klicken Sie auf die Start- und Endpunkte; schließen Sie den Vorgang mit einem Doppelklick ab.
+    Halten Sie die `ALT`-Taste gedrückt, und klicken Sie auf die Start- und Endpunkte; schließen Sie den Vorgang mit einem Doppelklick ab.
 
 * Wenn Sie den Skizzenmodus verlassen haben, können Sie auf eine Skizzenlinie klicken, um diese Skizze auszuwählen.
 * Verschieben Sie eine Zeichnung, indem Sie die Zeichnung auswählen und sie dann an die gewünschte Position ziehen.

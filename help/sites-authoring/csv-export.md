@@ -10,13 +10,26 @@ exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '193'
 ht-degree: 100%
-
 ---
-
 # Exportieren in CSV{#export-to-csv}
 
 Mit **CSV-Bericht erstellen** können Sie Informationen über Ihre Seiten in eine CSV-Datei auf Ihrem lokalen System exportieren.
@@ -32,23 +45,23 @@ Mit **CSV-Bericht erstellen** können Sie Informationen über Ihre Seiten in ein
 Mit dem Assistenten zum **Erstellen eines CSV-Exports** können Sie Folgendes auswählen:
 
 * Zu exportierende Eigenschaften
-   * Metadaten
-      * Name
-      * Geändert
-      * Veröffentlicht
-      * Vorlage
-      * Workflow
-   * Übersetzung
-      * Übersetzt
-   * Analyse
-      * Seitenansichten
-      * Unique Visitors
-      * Zeit auf Seite
+  * Metadaten
+    * Name
+    * Geändert
+    * Veröffentlicht
+    * Vorlage
+    * Workflow
+  * Übersetzung
+    * Übersetzt
+  * Analyse
+    * Seitenansichten
+    * Unique Visitors
+    * Zeit auf Seite
 * Tiefe
-   * Übergeordneter Pfad
-   * Nur direkte untergeordnete Elemente
-   * Zusätzliche Ebenen von untergeordneten Elementen
-   * Ebenen
+  * Übergeordneter Pfad
+  * Nur direkte untergeordnete Elemente
+  * Zusätzliche Ebenen von untergeordneten Elementen
+  * Ebenen
 
 Die resultierende Datei `export.csv` kann in Excel (oder einer anderen kompatiblen Anwendung) geöffnet werden.
 

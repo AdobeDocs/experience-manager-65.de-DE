@@ -10,13 +10,22 @@ feature: Administering
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '626'
 ht-degree: 100%
-
 ---
-
 # RDBMS-Unterstützung in AEM 6.4{#rdbms-support-in-aem}
 
 ## Überblick {#overview}
@@ -33,17 +42,17 @@ Weitere Informationen zu den Implementierungsdetails finden Sie in der Dokumenta
 
 ## Unterstützte Datenbanken {#supported-databases}
 
-Weitere Informationen zum Grad der Unterstützung relationaler Datenbanken in AEM finden Sie auf der [Seite mit den technischen Anforderungen](/help/sites-deploying/technical-requirements.md). 
+Weitere Informationen zum Grad der Unterstützung relationaler Datenbanken in AEM finden Sie auf der [Seite mit den technischen Anforderungen](/help/sites-deploying/technical-requirements.md).
 
 ## Konfigurationsschritte {#configuration-steps}
 
 Das Repository wird durch Konfigurieren des OSGi-Dienstes `DocumentNodeStoreService` erstellt. Es wurde erweitert, um neben MongoDB auch die Persistenz der relationalen Datenbank zu unterstützen.
 
-Um diese nutzen zu können, muss eine Datenquelle mithilfe von AEM konfiguriert werden. Dies geschieht über die Datei `org.apache.sling.datasource.DataSourceFactory.config`. Die JDBC-Treiber für die jeweilige Datenbank müssen separat als OSGi-Bundles in der lokalen Konfiguration bereitgestellt werden.
+Um diese nutzen zu können, muss eine Datenquelle mithilfe von AEM konfiguriert werden. Dies geschieht über die Datei `org.apache.sling.datasource.DataSourceFactory.config`. Die JDBC-Treiber für die jeweilige Datenbank müssen separat als OSGi-Pakete in der lokalen Konfiguration bereitgestellt werden.
 
-Anweisungen zum Erstellen von OSGi-Bundles für JDBC-Treiber finden Sie in dieser [Dokumentation](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) auf der Apache Sling-Website.
+Anweisungen zum Erstellen von OSGi-Paketen für JDBC-Treiber finden Sie in dieser [Dokumentation](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) auf der Apache Sling-Website.
 
-Sobald die Bundles eingerichtet sind, führen Sie die folgenden Schritte aus, um AEM mit RDB-Persistenz zu konfigurieren:
+Sobald die Pakete eingerichtet sind, führen Sie die folgenden Schritte aus, um AEM mit RDB-Persistenz zu konfigurieren:
 
 1. Stellen Sie sicher, dass der Datenbank-Daemon gestartet ist und eine aktive Datenbank für die Verwendung mit AEM vorhanden ist.
 1. Kopieren Sie die AEM 6.3-JAR-Datei in das Installationsverzeichnis.
@@ -60,7 +69,7 @@ Sobald die Bundles eingerichtet sind, führen Sie die folgenden Schritte aus, um
    >
    >Detaillierte Informationen zur Datenquellenkonfiguration für die einzelnen unterstützten Datenbanken finden Sie unter [Konfigurationsoptionen für die Datenquelle](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options).
 
-1. Bereiten Sie dann die JDBC-OSGi-Bundles für die Verwendung mit AEM vor:
+1. Bereiten Sie dann die JDBC-OSGi-Pakete für die Verwendung mit AEM vor:
 
    1. Erstellen Sie im Ordner `crx-quickstart/install` einen Ordner namens `9`.
 
@@ -84,11 +93,11 @@ Folgende Konfigurationsoptionen sind verfügbar:
 
 * `driverClassName:` Der Name der JDBC-Treiberklasse. Dieser variiert je nach der zu verwendenden Datenbank und dem Treiber, der für die Verbindung mit derselben benötigt wird. Nachfolgend finden Sie die Klassennamen aller von AEM unterstützten Datenbanken:
 
-   * `org.postgresql.Driver` für PostgreSQL;
-   * `com.ibm.db2.jcc.DB2Driver` für DB2;
-   * `oracle.jdbc.OracleDriver` für Oracle;
-   * `com.mysql.jdbc.Driver` für MySQL und MariaDB (experimentell)
-   * c`om.microsoft.sqlserver.jdbc.SQLServerDriver` für Microsoft SQL Server (experimentell)
+  * `org.postgresql.Driver` für PostgreSQL;
+  * `com.ibm.db2.jcc.DB2Driver` für DB2;
+  * `oracle.jdbc.OracleDriver` für Oracle;
+  * `com.mysql.jdbc.Driver` für MySQL und MariaDB (experimentell)
+  * c`om.microsoft.sqlserver.jdbc.SQLServerDriver` für Microsoft SQL Server (experimentell)
 
 * `username:` Der Benutzername, unter dem die Datenbank ausgeführt wird.
 

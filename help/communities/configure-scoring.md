@@ -10,13 +10,20 @@ exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 0%
-
+source-wordcount: '1011'
+ht-degree: 7%
 ---
-
 # Grundlagen zu Bewertungen und Abzeichen {#scoring-and-badges-essentials}
 
 Die AEM Communities-Funktion mit Scoring- und Abzeichen identifiziert und belohnt Community-Mitglieder.
@@ -27,7 +34,7 @@ Einzelheiten zur Einrichtung der Funktion finden Sie unter
 
 Diese Seite enthält zusätzliche technische Details :
 
-* So zeigen [&#x200B; ein Badge &#x200B;](#displaying-badges) Bild oder Text an
+* So zeigen [ ein Badge ](#displaying-badges) Bild oder Text an
 * Anleitung zum Aktivieren der umfangreichen [Debug-Protokollierung](#debug-log-for-scoring-and-badging)
 * Wie Sie [UGC) zugreifen](#ugc-for-scoring-and-badging) im Zusammenhang mit der Bewertung und dem Badging
 
@@ -106,15 +113,15 @@ So zeigen Sie Protokolleinträge an:
 
 * Über die Web-Konsole
 
-   * Im Menü **Status**
-   * Wählen Sie **Protokolldateien**
-   * Suchen Sie nach Ihrem Protokolldateinamen, z. B. `scoring-debug`
+  * Im Menü **Status**
+  * Wählen Sie **Protokolldateien**
+  * Suchen Sie nach Ihrem Protokolldateinamen, z. B. `scoring-debug`
 
 * Auf der lokalen Festplatte des Servers
 
-   * Die Protokolldatei befindet sich unter &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
+  * Die Protokolldatei befindet sich unter &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
 
-   * Zum Beispiel: `.../crx-quickstart/logs/scoring-debug.log`
+  * Zum Beispiel: `.../crx-quickstart/logs/scoring-debug.log`
 
 ![scoring-log](assets/scoring-log.png)
 
@@ -122,11 +129,11 @@ So zeigen Sie Protokolleinträge an:
 
 Der UGC für die Bewertung und das Badging kann angezeigt werden, wenn das ausgewählte SRP entweder JSRP oder MSRP, aber nicht ASRP ist. (Wenn Sie mit diesen Begriffen nicht vertraut sind, finden Sie weitere Informationen unter [Community-](/help/communities/working-with-srp.md) und [Speicherressourcenanbieter - Übersicht](/help/communities/srp.md).)
 
-Die Beschreibungen für den Zugriff auf Scoring- und Badging-Daten verwenden JSRP, da der UGC über [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) leicht zugänglich ist.
+Die Beschreibungen für den Zugriff auf Scoring- und Badging-Daten verwenden JSRP, da der UGC mit [CRXDE Lite leicht zugänglich ](/help/sites-developing/developing-with-crxde-lite.md).
 
 **JSRP auf Author**: Experimentieren in der Authoring-Umgebung führt zu UGC, der nur in der Authoring-Umgebung sichtbar ist.
 
-**JSRP bei der Veröffentlichung**: Entsprechend ist es beim Testen in der Veröffentlichungsumgebung erforderlich, auf CRXDE Lite mit Administratorrechten in einer Veröffentlichungsinstanz zuzugreifen. Wenn die Veröffentlichungsinstanz im [Produktionsmodus) ausgeführt wird &#x200B;](/help/sites-administering/production-ready.md)Ausführungsmodus „nosamplecontent„), müssen Sie [CRXDE Lite aktivieren](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP bei der Veröffentlichung**: Entsprechend ist es beim Testen in der Veröffentlichungsumgebung erforderlich, auf CRXDE Lite mit Administratorrechten für eine Veröffentlichungsinstanz zuzugreifen. Wenn die Veröffentlichungsinstanz im [Produktionsmodus) ausgeführt ](/help/sites-administering/production-ready.md) (Ausführungsmodus „nosamplecontent„), muss &quot;[&quot; aktiviert ](/help/sites-administering/enabling-crxde-lite.md).
 
 Der Basisspeicherort von UGC auf JSRP ist `/content/usergenerated/asi/jcr/`.
 
@@ -226,7 +233,7 @@ Die Screenshots von Repository-Daten stammen vom Einrichten einer Bewertung für
 >  /libs/settings/community/scoring/rules/site1/forums-scoring
 >  /libs/settings/community/scoring/rules/site2/forums-scoring
 >
->* Erstellen eindeutiger Badge-Bilder für verschiedene AEM-Sites
+>* Erstellen eindeutiger Abzeichenbilder für verschiedene AEM-Sites
 
 ### Zugriff auf Bewertungsbenutzeroberfläche {#access-scoring-ugc}
 
@@ -238,7 +245,7 @@ Zu Ermittlungszwecken wird im Beispiel mit JSRP der Basisordner mit Scores verwe
 
 Der untergeordnete Knoten von `scoring` ist der Name der Bewertungsregel. Daher empfiehlt es sich, die Namen von Bewertungsregeln auf einem Server global eindeutig zu definieren.
 
-Für die Geometrixx Engage-Site befinden sich die Benutzerin bzw. der Benutzer und deren Wert in einem Pfad, der mit dem Namen der Bewertungsregel, der Site-ID der Community-Site (`engage-ba81p`), einer eindeutigen ID und der Benutzer-ID erstellt wurde:
+Für die Geometrixx Engage-Site befinden sich der -Benutzer und sein Score in einem Pfad, der mit dem Namen der Bewertungsregel, der Site-ID der Community-Site (`engage-ba81p`), einer eindeutigen ID und der Benutzer-ID erstellt wurde:
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 

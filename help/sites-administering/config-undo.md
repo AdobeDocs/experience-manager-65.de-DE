@@ -9,13 +9,22 @@ exl-id: 2cf3ac3f-ee17-480d-a32a-c57631502693
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: f6a903263eca2c412c6ca9af2f5e51ea1c5878aa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '710'
 ht-degree: 94%
-
 ---
-
 # Konfigurieren von Rückgängig-Vorgängen zur Seitenbearbeitung{#configuring-undo-for-page-editing}
 
 Der [OSGi-Dienst](/help/sites-deploying/configuring-osgi.md) **Day CQ WCM Undo Configuration** (`com.day.cq.wcm.undo.UndoConfigService`) zeigt verschiedene Eigenschaften an, die das Verhalten der Befehle „Rückgängig“ und „Wiederherstellen“ bei der Seitenbearbeitung steuern.
@@ -47,16 +56,16 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
 * **Aktivieren**
 ( `cq.wcm.undo.enabled`)
 
-   * **Beschreibung**: Legt fest, ob Seitenautoren Änderungen rückgängig machen oder wiederherstellen können.
-   * **Standard**: `Selected`
-   * **Typ**: `Boolean`
+  * **Beschreibung**: Legt fest, ob Seitenautoren Änderungen rückgängig machen oder wiederherstellen können.
+  * **Standard**: `Selected`
+  * **Typ**: `Boolean`
 
 * **path**
 ( `cq.wcm.undo.path`)
 
-   * **Beschreibung**: Der Repository-Pfad zum Beibehalten von Rückgängig-Binärdaten. Wenn Autorinnen und Autoren Binärdaten wie Bilder ändern, wird die ursprüngliche Version der Daten hier beibehalten. Wenn Änderungen an den Binärdaten rückgängig gemacht werden, werden diese Rückgängig-Binärdaten auf der Seite wiederhergestellt.
-   * **Standard**: `/var/undo`
-   * **Typ**: `String`
+  * **Beschreibung**: Der Repository-Pfad zum Beibehalten von Rückgängig-Binärdaten. Wenn Autorinnen und Autoren Binärdaten wie Bilder ändern, wird die ursprüngliche Version der Daten hier beibehalten. Wenn Änderungen an den Binärdaten rückgängig gemacht werden, werden diese Rückgängig-Binärdaten auf der Seite wiederhergestellt.
+  * **Standard**: `/var/undo`
+  * **Typ**: `String`
 
   >[!NOTE]
   >
@@ -65,86 +74,86 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
 * **Min. Gültigkeit**
 ( `cq.wcm.undo.validity`)
 
-   * **Beschreibung**: Der Mindestzeitraum, über den Rückgängig-Binärdaten gespeichert werden (in Stunden). Nach dieser Zeit können die Binärdaten gelöscht werden, um Festplattenspeicher einzusparen.
-   * **Standard**: `10`
-   * **Typ**: `Integer`
+  * **Beschreibung**: Der Mindestzeitraum, über den Rückgängig-Binärdaten gespeichert werden (in Stunden). Nach dieser Zeit können die Binärdaten gelöscht werden, um Festplattenspeicher einzusparen.
+  * **Standard**: `10`
+  * **Typ**: `Integer`
 
 * **Schritte**
 ( `cq.wcm.undo.steps`)
 
-   * **Beschreibung**: Die maximale Anzahl an Seitenaktionen, die im Verlauf der Rückgängigmachungen gespeichert werden.
-   * **Standard**: `20`
-   * **Typ**: `Integer`
+  * **Beschreibung**: Die maximale Anzahl an Seitenaktionen, die im Verlauf der Rückgängigmachungen gespeichert werden.
+  * **Standard**: `20`
+  * **Typ**: `Integer`
 
 * **Persistenz**
 ( `cq.wcm.undo.persistence`)
 
-   * **Beschreibung**: Die Klasse, in der der Verlauf der Rückgängigmachungen beibehalten wird. Zwei persistente Klassen werden bereitgestellt:
+  * **Beschreibung**: Die Klasse, in der der Verlauf der Rückgängigmachungen beibehalten wird. Zwei persistente Klassen werden bereitgestellt:
 
-      * `CQ.undo.persistence.WindowNamePersistence`: Behält den Verlauf mit der Eigenschaft „window.name“ bei.
-      * `CQ.undo.persistence.CookiePersistance`: Behält den Verlauf mit Cookies bei.
+    * `CQ.undo.persistence.WindowNamePersistence`: Behält den Verlauf mit der Eigenschaft „window.name“ bei.
+    * `CQ.undo.persistence.CookiePersistance`: Behält den Verlauf mit Cookies bei.
 
-   * **Standard**: `CQ.undo.persistence.WindowNamePersistence`
-   * **Typ**: `String`
+  * **Standard**: `CQ.undo.persistence.WindowNamePersistence`
+  * **Typ**: `String`
 
 * **Persistenzmodus**
 ( `cq.wcm.undo.persistence.mode`)
 
-   * **Beschreibung**: Legt fest, wann der Verlauf der Rückgängigmachungen beibehalten wird. Aktivieren Sie diese Option, damit der Verlauf der Rückgängigmachungen nach jeder Seitenbearbeitung beibehalten wird. Deaktivieren Sie diese Option, damit der Verlauf nur beim erneuten Laden einer Seite beibehalten wird (etwa wenn die Person zu einer anderen Seite navigiert).
+  * **Beschreibung**: Legt fest, wann der Verlauf der Rückgängigmachungen beibehalten wird. Aktivieren Sie diese Option, damit der Verlauf der Rückgängigmachungen nach jeder Seitenbearbeitung beibehalten wird. Deaktivieren Sie diese Option, damit der Verlauf nur beim erneuten Laden einer Seite beibehalten wird (etwa wenn die Person zu einer anderen Seite navigiert).
 
-     Der Verlauf der Rückgängigmachungen wird mittels Webbrowserressourcen beibehalten. Wenn der Browser Ihrer Benutzer langsam auf Seitenbearbeitungen reagiert, versuchen Sie, den Verlauf der Rückgängigmachungen bei Seitenneuladungen beizubehalten.
+    Der Verlauf der Rückgängigmachungen wird mittels Webbrowserressourcen beibehalten. Wenn der Browser Ihrer Benutzer langsam auf Seitenbearbeitungen reagiert, versuchen Sie, den Verlauf der Rückgängigmachungen bei Seitenneuladungen beizubehalten.
 
-   * **Standard**: `Selected`
-   * **Typ**: `Boolean`
+  * **Standard**: `Selected`
+  * **Typ**: `Boolean`
 
 * **Markierungsmodus**
 ( `cq.wcm.undo.markermode`)
 
-   * **Beschreibung**: Gibt den visuellen Hinweis an, der verwendet wird, um die von einem Rückgängig- oder Wiederherstellen-Vorgang betroffenen Absätze anzugeben. Die folgenden Werte sind gültig:
+  * **Beschreibung**: Gibt den visuellen Hinweis an, der verwendet wird, um die von einem Rückgängig- oder Wiederherstellen-Vorgang betroffenen Absätze anzugeben. Die folgenden Werte sind gültig:
 
-      * flash: Der Auswahlindikator der Absätze wird vorübergehend eingeblendet.
-      * select: Der Absatz wird ausgewählt.
+    * flash: Der Auswahlindikator der Absätze wird vorübergehend eingeblendet.
+    * select: Der Absatz wird ausgewählt.
 
-   * **Standard**: `flash`
-   * **Typ**: `String`
+  * **Standard**: `flash`
+  * **Typ**: `String`
 
 * **Gute Komponenten**
 ( `cq.wcm.undo.whitelist`)
 
-   * **Beschreibung**: Eine Liste von Komponenten, für die die Befehle „Rückgängig“ und „Wiederherstellen“ angewendet werden sollen. Fügen Sie dieser Liste Komponentenpfade hinzu, wenn sie korrekt mit „Rückgängig“ und „Wiederherstellen“ funktionieren. Hängen Sie ein Sternchen (*) an, um eine Gruppe von Komponenten anzugeben:
+  * **Beschreibung**: Eine Liste von Komponenten, für die die Befehle „Rückgängig“ und „Wiederherstellen“ angewendet werden sollen. Fügen Sie dieser Liste Komponentenpfade hinzu, wenn sie korrekt mit „Rückgängig“ und „Wiederherstellen“ funktionieren. Hängen Sie ein Sternchen (*) an, um eine Gruppe von Komponenten anzugeben:
 
-      * Der folgende Wert legt die Foundation-Textkomponente fest:
+    * Der folgende Wert legt die Foundation-Textkomponente fest:
 
-        `foundation/components/text`
+      `foundation/components/text`
 
-      * Der folgende Wert legt alle Foundation-Komponenten fest:
+    * Der folgende Wert legt alle Foundation-Komponenten fest:
 
-        `foundation/components/*`
+      `foundation/components/*`
 
-   * Wenn der Befehl „Rückgängig“ oder „Wiederherstellen“ für eine Komponente ausgegeben wird, die nicht in dieser Liste vorhanden ist, wird durch eine Meldung darauf hingewiesen, dass der Befehl unzuverlässig sein kann.
+  * Wenn der Befehl „Rückgängig“ oder „Wiederherstellen“ für eine Komponente ausgegeben wird, die nicht in dieser Liste vorhanden ist, wird durch eine Meldung darauf hingewiesen, dass der Befehl unzuverlässig sein kann.
 
-   * **Standard**: Die Eigenschaft wird mit vielen von AEM bereitgestellten Komponenten aufgefüllt.
-   * **Typ**: `String[]`
+  * **Standard**: Die Eigenschaft wird mit vielen von AEM bereitgestellten Komponenten aufgefüllt.
+  * **Typ**: `String[]`
 
 * **Fehlerhafte Komponenten**
 ( `cq.wcm.undo.blacklist`)
 
-   * **Beschreibung**: Eine Liste der Komponenten und/oder Komponentenvorgänge, für die die Befehle „Rückgängig“ und „Wiederherstellen“ nicht angewendet werden sollen. Fügen Sie Komponenten und Komponentenvorgänge hinzu, die sich beim Anwenden des Befehls „Rückgängig“ nicht ordnungsgemäß verhalten:
+  * **Beschreibung**: Eine Liste der Komponenten und/oder Komponentenvorgänge, für die die Befehle „Rückgängig“ und „Wiederherstellen“ nicht angewendet werden sollen. Fügen Sie Komponenten und Komponentenvorgänge hinzu, die sich beim Anwenden des Befehls „Rückgängig“ nicht ordnungsgemäß verhalten:
 
-      * Fügen Sie einen Komponentenpfad hinzu, wenn keiner der Komponentenvorgänge im Verlauf der Rückgängigmachungen angezeigt werden soll, z. B. `collab/forum/components/post`.
-      * Hängen Sie einen Doppelpunkt (:) und einen Vorgang an den Pfad an, wenn dieser Vorgang im Verlauf der Rückgängigmachungen ausgelassen werden soll (bei ordnungsgemäßer Funktionsweise der anderen Vorgänge), z. B. `collab/forum/components/post:insertParagraph.`.
+    * Fügen Sie einen Komponentenpfad hinzu, wenn keiner der Komponentenvorgänge im Verlauf der Rückgängigmachungen angezeigt werden soll, z. B. `collab/forum/components/post`.
+    * Hängen Sie einen Doppelpunkt (:) und einen Vorgang an den Pfad an, wenn dieser Vorgang im Verlauf der Rückgängigmachungen ausgelassen werden soll (bei ordnungsgemäßer Funktionsweise der anderen Vorgänge), z. B. `collab/forum/components/post:insertParagraph.`.
 
   >[!NOTE]
   >
   >Wenn ein Vorgang in dieser Liste vorhanden ist, wird er nach wie vor dem Verlauf der Rückgängigmachungen hinzugefügt. Benutzerinnen und Benutzer können Vorgänge nicht rückgängig machen, die im Verlauf der Rückgängigmachungen zeitlich vor einem Vorgang **Ungültige Komponente** liegen.
 
-   * Typische Vorgangsnamen lauten etwa wie folgt:
+  * Typische Vorgangsnamen lauten etwa wie folgt:
 
-      * `insertParagraph`: Die Komponente wird der Seite hinzugefügt.
-      * `removeParagraph`: Die Komponente wird gelöscht.
-      * `moveParagraph`: Der Absatz wird an eine andere Stelle verschoben.
-      * `updateParagraph`: Die Absatzeigenschaften werden geändert.
+    * `insertParagraph`: Die Komponente wird der Seite hinzugefügt.
+    * `removeParagraph`: Die Komponente wird gelöscht.
+    * `moveParagraph`: Der Absatz wird an eine andere Stelle verschoben.
+    * `updateParagraph`: Die Absatzeigenschaften werden geändert.
 
-   * **Standard**: Die Eigenschaft wird mit mehreren Komponentenvorgängen aufgefüllt.
-   * **Typ**: `String[]`
+  * **Standard**: Die Eigenschaft wird mit mehreren Komponentenvorgängen aufgefüllt.
+  * **Typ**: `String[]`
 

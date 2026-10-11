@@ -10,13 +10,22 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6016'
+source-wordcount: '6022'
 ht-degree: 96%
-
 ---
-
 # Vorgangs-Dashboard {#operations-dashboard}
 
 ## Einführung {#introduction}
@@ -77,7 +86,7 @@ Im Vorgangs-Dashboard können Sie die Ergebnisse von individuellen sowie von Ver
 
 Die Erstellung einer individuellen Konsistenzprüfung umfasst zwei Schritte: Implementieren einer Sling-Konsistenzprüfung und Hinzufügen eines Eintrags für die Konsistenzprüfung in den Konfigurationsknoten des Dashboards.
 
-1. Um eine Sling-Konsistenzprüfung zu erstellen, erstellen Sie eine OSGi-Komponente, die die Sling HealthCheck-Schnittstelle implementiert. Fügen Sie diese Komponente in einem Bundle hinzu. Die Eigenschaften der Komponente identifizieren die Konsistenzprüfung vollständig. Nachdem die Komponente installiert wurde, wird automatisch ein JMX-MBean für die Konsistenzprüfung erstellt. In der [Dokumentation zur Sling-Konsistenzprüfung](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) finden Sie weitere Informationen.
+1. Um eine Sling-Konsistenzprüfung zu erstellen, erstellen Sie eine OSGi-Komponente, die die Sling HealthCheck-Schnittstelle implementiert. Fügen Sie diese Komponente in einem Paket hinzu. Die Eigenschaften der Komponente identifizieren die Konsistenzprüfung vollständig. Nachdem die Komponente installiert wurde, wird automatisch ein JMX-MBean für die Konsistenzprüfung erstellt. In der [Dokumentation zur Sling-Konsistenzprüfung](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) finden Sie weitere Informationen.
 
    Beispiels einer Sling-Konsistenzprüfungs-Komponente, mit OSGi-Dienstkomponenten-Anmerkungen geschrieben:
 
@@ -107,13 +116,13 @@ Die Erstellung einer individuellen Konsistenzprüfung umfasst zwei Schritte: Imp
 
    * **Name:** `sling:resourceType`
 
-      * **Typ:** `String`
-      * **Wert:** `granite/operations/components/mbean`
+     * **Typ:** `String`
+     * **Wert:** `granite/operations/components/mbean`
 
    * **Name:** `resource`
 
-      * **Typ:** `String`
-      * **Wert:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
+     * **Typ:** `String`
+     * **Wert:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
 
    >[!NOTE]
    >
@@ -164,19 +173,19 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
 
    * **Name:** `Composite Health Check`
 
-      * **Typ:** `nt:unstructured`
+     * **Typ:** `nt:unstructured`
 
    Mit den folgenden Eigenschaften:
 
    * **Name:** `sling:resourceType`
 
-      * **Typ:** `String`
-      * **Wert:** `granite/operations/components/mbean`
+     * **Typ:** `String`
+     * **Wert:** `granite/operations/components/mbean`
 
    * **Name:** `resource`
 
-      * **Typ:** `String`
-      * **Wert:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
+     * **Typ:** `String`
+     * **Wert:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
 
    >[!NOTE]
    >
@@ -262,7 +271,8 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
    <td>Sling-Aufträge</td>
    <td>
     <div>
-      Diese Prüfung überprüft die Anzahl an Aufträgen, die sich in der Warteschlange des Auftrags-Managers befinden, vergleicht sie mit dem Schwellenwert <code>maxNumQueueJobs</code> und:
+      Sling Jobs überprüft die Anzahl an Aufträgen, die sich in der Warteschlange des JobManagers befinden, und vergleicht sie mit der
+     <code>maxNumQueueJobs</code> Schwellenwert und:
     </div>
     <ul>
      <li>gibt den Status „Kritisch“ zurück, wenn sich mehr als <code>maxNumQueueJobs</code> in der Warteschlange befinden</li>
@@ -299,11 +309,11 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
    <td><p>Bei der Sicherheitsprüfung handelt es sich um einen Verbund, der die Ergebnisse mehrerer sicherheitsbezogener Prüfungen zusammenfasst. Diese individuellen Konsistenzprüfungen decken unterschiedliche Aspekte der Sicherheits-Checkliste ab, die auf der Dokumentationsseite <a href="/help/sites-administering/security-checklist.md">Sicherheits-Checkliste“ verfügbar ist.</a> Die Prüfung ist als Feuerprobe beim Start der Instanz nützlich. </p> <p>Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitychecks,type=HealthCheck</a></p> </td>
   </tr>
   <tr>
-   <td>Aktive Bundles</td>
-   <td><p>„Aktive Bundles“ überprüft den Status aller Bundles und:</p>
+   <td>Aktive Pakete</td>
+   <td><p>„Aktive Pakete“ überprüft den Status aller Pakete und:</p>
     <ul>
-     <li>gibt den Status „Warnung“ zurück, wenn eines der Bundles nicht aktiv ist oder (Start, mit verzögerter Aktivierung)</li>
-     <li>ignoriert den Status von Bundles in der Ignorieren-Liste</li>
+     <li>gibt den Status „Warnung“ zurück, wenn eines der Pakete nicht aktiv ist oder (Start, mit verzögerter Aktivierung)</li>
+     <li>ignoriert den Status von Paketen in der Ignorieren-Liste</li>
     </ul> <p>Der Parameter „Ignorieren-Liste“ kann konfiguriert werden.</p> <p>Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DinactiveBundles%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -461,7 +471,7 @@ Die Benutzeroberfläche kann verwendet werden, um Indizes in der Tabelle zu filt
 
 ### Status-ZIP herunterladen {#download-status-zip}
 
-Diese Aktion löst den Download einer ZIP-Datei aus, die nützliche Informationen zum Systemstatus und zur Systemkonfiguration enthält. Das Archiv enthält Instanzkonfigurationen, eine Liste von Bundles, OSGi, Sling-Metriken und Statistiken, was zu einer großen Datei führen kann. Um die Auswirkung großer Statusdateien zu minimieren, können Sie das Fenster **Status-ZIP herunterladen** nutzen. Das Fenster finden Sie unter **AEM > Tools > Vorgänge > Diagnose > Status-ZIP herunterladen**.
+Diese Aktion löst den Download einer ZIP-Datei aus, die nützliche Informationen zum Systemstatus und zur Systemkonfiguration enthält. Das Archiv enthält Instanzkonfigurationen, eine Liste von Paketen, OSGi, Sling-Metriken und Statistiken, was zu einer großen Datei führen kann. Um die Auswirkung großer Statusdateien zu minimieren, können Sie das Fenster **Status-ZIP herunterladen** nutzen. Das Fenster finden Sie unter **AEM > Tools > Vorgänge > Diagnose > Status-ZIP herunterladen**.
 
 In diesem Fenster können Sie auswählen, was exportiert werden soll (Protokolldateien und/oder Thread-Speicherauszüge) und wie viele Tage die Protokolle im Verhältnis zum aktuellen Datum heruntergeladen werden sollen.
 
@@ -494,7 +504,7 @@ Die folgenden Aufgaben sind im Vorgangs-Dashboard verfügbar:
 1. Die Wartungsaufgabe **Projekt-Bereinigung** unter dem Menü **Wöchentliches Wartungsfenster** unter Verwendung der Option **Hinzufügen**.
 1. Die Wartungsaufgabe **Bereinigung von Ad-hoc-Aufgaben** im Menü **Wöchentliches Wartungsfenster** unter Verwendung der Option **Hinzufügen**.
 
-Der Standardzeitrahmen für das tägliche Wartungsfenster beträgt :00 Uhr bis 5 :00 Uhr. Die Aufgaben, die für die Ausführung im wöchentlichen Wartungsfenster konfiguriert sind:00 werden samstags zwischen 1 :00 und 2 Uhr morgens ausgeführt.
+Der Standardzeitrahmen für das tägliche Wartungsfenster beträgt 2:00 bis 5:00 Uhr morgens. Die Aufgaben, die für die Ausführung im wöchentlichen Wartungsfenster konfiguriert sind, werden samstags zwischen 1:00 und 2:00 Uhr ausgeführt.
 
 Sie können diese Zeiten auch konfigurieren. Klicken Sie dazu auf das Zahnradsymbol auf einer der beiden Wartungskarten:
 
@@ -645,7 +655,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
  </tbody>
 </table>
 
-[experiencemanager-java-maintenancetask-sample &#x200B;](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample)- [src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample/blob/master/src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java)
+[experiencemanager-java-maintenancetask-sample ](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample)- [src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample/blob/master/src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java)
 
 Nachdem der Dienst bereitgestellt wurde, wird er der Benutzeroberfläche des Vorgangs-Dashboards angezeigt. Sie können ihn zu einem der verfügbaren Wartungszeitpläne hinzufügen:
 
@@ -659,7 +669,7 @@ Das **Systemübersicht-Dashboard** bietet einen allgemeinen Überblick über die
 
 >[!NOTE]
 >
->Eine Einführung in das Systemübersicht-Dashboard erhalten Sie auch [in diesem Video](https://video.tv.adobe.com/v/40393?captions=ger).
+>Eine Einführung in das Systemübersicht-Dashboard erhalten Sie auch [in diesem Video](https://video.tv.adobe.com/v/21340).
 
 ### Zugriff {#how-to-access}
 

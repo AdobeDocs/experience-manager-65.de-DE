@@ -9,13 +9,24 @@ exl-id: d1741525-a475-4a76-bd16-55318023495e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 93%
-
 ---
-
 
 # Kampagnen-Management{#campaign-management}
 
@@ -42,25 +53,25 @@ In Adobe Experience Manager (AEM) bilden Marken die oberste Ebene und eine Samml
 Eine Kampagne ist eine Sammlung einzelner **Erlebnisse**.
 
 * **Erlebnisse**
-Der fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Besucher auf (Touchpoints&#x200B;**präsentiert**. Es gibt verschiedene Erlebnistypen:
+Der fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Besucher auf (Touchpoints**präsentiert**. Es gibt verschiedene Erlebnistypen:
 
-   * **Teaser**
-     [Teaser-Seiten/-Absätze](#teasers) dienen dazu, bestimmte **Besuchersegmente** zu Inhalten zu leiten, die auf ihre Interessen ausgerichtet sind.
+  * **Teaser**
+    [Teaser-Seiten/-Absätze](#teasers) dienen dazu, bestimmte **Besuchersegmente** zu Inhalten zu leiten, die auf ihre Interessen ausgerichtet sind.
 
-     Teaser-Seiten bieten folgende Möglichkeiten:
+    Teaser-Seiten bieten folgende Möglichkeiten:
 
-      * Präsentieren einer Optionspalette, aus der Besucherinnen und Besucher wählen können
-      * Anzeigen von nur einem Teaser-Absatz, der auf dem spezifischen Besuchersegment basiert. Beispielsweise kann der angezeigte Teaser-Absatz vom Alter der Besucherin bzw. des Besuchers abhängen.
+    * Präsentieren einer Optionspalette, aus der Besucherinnen und Besucher wählen können
+    * Anzeigen von nur einem Teaser-Absatz, der auf dem spezifischen Besuchersegment basiert. Beispielsweise kann der angezeigte Teaser-Absatz vom Alter der Besucherin bzw. des Besuchers abhängen.
 
-     Bei einer Teaser-Seite handelt es sich in der Regel um eine temporäre Aktion, die für einen bestimmten Zeitraum gültig ist, bis sie durch die nächste Teaser-Seite ersetzt wird.
+    Bei einer Teaser-Seite handelt es sich in der Regel um eine temporäre Aktion, die für einen bestimmten Zeitraum gültig ist, bis sie durch die nächste Teaser-Seite ersetzt wird.
 
-   * **Newsletter**
+  * **Newsletter**
 
-     [E-Mail-Nachrichten](#emailmarketing) werden verwendet, um Benutzer einzubinden und sie zum Besuchen der Website anzuregen. Im Allgemeinen haben sie die Form eines Newsletters, der an die **Leads** gesendet wird (die in **Listen** unterteilt sind). **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen. Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+    [E-Mail-Nachrichten](#emailmarketing) werden verwendet, um Benutzer einzubinden und sie zum Besuchen der Website anzuregen. Im Allgemeinen haben sie die Form eines Newsletters, der an die **Leads** gesendet wird (die in **Listen** unterteilt sind). **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen. Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
-   * **Adobe Target**
+  * **Adobe Target**
 
-     Dies ermöglicht die Integration mit Adobe Target (ehemals Test&amp;Target), das Personen mit Marketing-Expertise für die Konversion ein Website-Optimierungs-Tool mit den erforderlichen Funktionen bietet, um Online-Inhalte und -Angebote für Kundinnen und Kunden relevanter zu machen und so höhere Konversionswerte zu erzielen. Adobe Target bietet eine intuitive Benutzeroberfläche für das Entwerfen und Ausführen von Tests, das Erstellen von Zielgruppensegmenten sowie das Targeting von Inhalten – und das alles in einer einzigen Anwendung.
+    Dies ermöglicht die Integration mit Adobe Target (ehemals Test&amp;Target), das Personen mit Marketing-Expertise für die Konversion ein Website-Optimierungs-Tool mit den erforderlichen Funktionen bietet, um Online-Inhalte und -Angebote für Kundinnen und Kunden relevanter zu machen und so höhere Konversionswerte zu erzielen. Adobe Target bietet eine intuitive Benutzeroberfläche für das Entwerfen und Ausführen von Tests, das Erstellen von Zielgruppensegmenten sowie das Targeting von Inhalten – und das alles in einer einzigen Anwendung.
 
 * **Touchpoints**
 

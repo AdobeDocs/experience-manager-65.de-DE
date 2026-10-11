@@ -10,13 +10,20 @@ exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1631'
 ht-degree: 2%
-
 ---
-
 # Erstellen einer Community-Site{#author-a-new-community-site}
 
 ## Erstellen einer Community-Site {#create-a-community-site}
@@ -38,7 +45,7 @@ So erstellen Sie eine Community-Site:
 
 ![Vorlage zum Erstellen der Site](assets/create-site.png)
 
-Geben Sie [&#x200B; Schritt „Site-](/help/communities/sites-console.md#step2013asitetemplate)&quot; einen Titel, eine Beschreibung und den Namen für die URL ein und wählen Sie eine Community-Site-Vorlage aus, z. B.:
+Geben Sie [ Schritt „Site-](/help/communities/sites-console.md#step2013asitetemplate)&quot; einen Titel, eine Beschreibung und den Namen für die URL ein und wählen Sie eine Community-Site-Vorlage aus, z. B.:
 
 * **Community-Site-Titel**: `Getting Started Tutorial`
 * **Community-Site-Beschreibung**: `A site for engaging with the community.`
@@ -48,10 +55,10 @@ Geben Sie [&#x200B; Schritt „Site-](/help/communities/sites-console.md#step201
 
 * **Community-Site-Name**: Engage
 
-   * Überprüfen Sie den Namen , da er nach der Erstellung der Site nicht einfach geändert werden kann
-   * Die anfängliche URL wird unter dem Namen der Community-Site angezeigt
-   * Hängen Sie für eine gültige URL einen Basissprachcode + &quot;.html“ an
-   * *Beispiel:* https://localhost:4502/content/sites/ `engage/en.html`
+  * Überprüfen Sie den Namen , da er nach der Erstellung der Site nicht einfach geändert werden kann
+  * Die anfängliche URL wird unter dem Namen der Community-Site angezeigt
+  * Hängen Sie für eine gültige URL einen Basissprachcode + &quot;.html“ an
+  * *Beispiel*, https://localhost:4502/content/sites/ `engage/en.html`
 
 * **Vorlage**: Pulldown zur Auswahl von `Reference Site`
 
@@ -119,7 +126,7 @@ Zum Beispiel:
 
 >[!NOTE]
 >
->[Tunneldienst](https://helpx.adobe.com/de/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) Ermöglicht die Auswahl von Mitgliedern und Gruppen, die nur in der Veröffentlichungsumgebung vorhanden sind.
+>[Tunneldienst](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) Ermöglicht die Auswahl von Mitgliedern und Gruppen, die nur in der Veröffentlichungsumgebung vorhanden sind.
 
 ![Benutzerrollen auf neuer Site](assets/site-admin-1.png)
 
@@ -184,11 +191,11 @@ Von links nach rechts sind sie:
 
 * **Website veröffentlichen**
 
-  Wenn Sie das Welt -Symbol auswählen, wird die Community-Site veröffentlicht (z. B. wenn Ihr Veröffentlichungs-Server auf Ihrem lokalen Computer ausgeführt wird, :4503 standardmäßig auf localhost ).
+  Wenn Sie das Welt -Symbol auswählen, wird die Community-Site veröffentlicht (z. B. wenn Ihr Veröffentlichungs-Server auf Ihrem lokalen Computer ausgeführt wird, dann standardmäßig auf localhost:4503).
 
 * **Website exportieren**
 
-  Durch Auswahl des Symbols „Exportieren“ wird ein Paket der Community-Site erstellt, das sowohl im [Package Manager“ gespeichert &#x200B;](/help/sites-administering/package-manager.md) heruntergeladen wird. UGC ist nicht im Site-Paket enthalten.
+  Durch Auswahl des Symbols „Exportieren“ wird ein Paket der Community-Site erstellt, das sowohl im [Package Manager“ gespeichert ](/help/sites-administering/package-manager.md) heruntergeladen wird. UGC ist nicht im Site-Paket enthalten.
 
 * **Site löschen**
 
@@ -223,7 +230,7 @@ Wenn die Community-Site erfolgreich veröffentlicht wurde, wird kurz die Meldung
 
 Neben der neuen Community-Site werden neue Benutzergruppen erstellt, die über die entsprechenden Berechtigungen für verschiedene Verwaltungsfunktionen verfügen. Weitere Informationen finden Sie unter [Benutzergruppen für Community-Sites](/help/communities/users.md#usergroupsforcommunitysites).
 
-Für diese neue Community-Site werden unter dem Site-Namen „engage“ in Schritt 1 die vier neuen Benutzergruppen in der [Gruppen-Konsole“ angezeigt &#x200B;](/help/communities/members.md)globale Navigation: Communities, Gruppen):
+Für diese neue Community-Site werden unter dem Site-Namen „engage“ in Schritt 1 die vier neuen Benutzergruppen in der [Gruppen-Konsole“ angezeigt ](/help/communities/members.md)globale Navigation: Communities, Gruppen):
 
 * Community-Manager einbinden
 * Community Engage-Gruppenadministratoren
@@ -269,31 +276,31 @@ Erste Schritte:
 
    * Wählen Sie **Knoten erstellen:**
 
-      * **Name** localhost.4503
-(*verwenden* &#39;:&#39;)
+     * **Name** localhost.4503
+       (*verwenden* &#39;:&#39;)
 
-      * **Typ** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+     * **Typ** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. Bei ausgewähltem neu erstellten `localhost.4503`-Knoten:
 
    * Eigenschaft hinzufügen:
 
    * **Name** sling:match
-      * **type** Zeichenfolge
-      * **Value** localhost.4503/$
-(muss mit &quot;$&quot; enden)
+     * **type** Zeichenfolge
+     * **Value** localhost.4503/$
+       (muss mit &quot;$&quot; enden)
 
    * Eigenschaft hinzufügen:
 
-      * **Name** sling:internalRedirect
-      * **type** Zeichenfolge
-      * **value** /content/sites/engage/en.html
+     * **Name** sling:internalRedirect
+     * **type** Zeichenfolge
+     * **value** /content/sites/engage/en.html
 
 1. Wählen Sie **Alle speichern.**
 1. (Optional) Löschen des Navigationsverlaufs.
-1. Navigieren Sie zu https://localhost:4503/.
+1. Navigieren Sie zu https://localhost:4503/ .
 
-   * Ankunft unter https://localhost:4503/content/sites/engage/en.html
+   * Ankunft bei https://localhost:4503/content/sites/engage/en.html
 
 >[!NOTE]
 >

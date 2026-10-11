@@ -10,13 +10,20 @@ exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '611'
 ht-degree: 2%
-
 ---
-
 # Erstellen verschachtelter Gruppen{#authoring-nested-groups}
 
 ## Erstellen von Gruppen in der Autoreninstanz {#creating-groups-on-author}
@@ -27,14 +34,14 @@ In der AEM-Autoreninstanz über die globale Navigation:
 * Wählen Sie **[!UICONTROL Engage-Ordner]** aus, um ihn zu öffnen.
 * Wählen Sie die Karte für die englische Site **[!UICONTROL Erste Schritte]** aus.
 
-   * Wählen Sie das Kartenbild aus.
-   * Wählen *nicht* Symbol aus.
+  * Wählen Sie das Kartenbild aus.
+  * Wählen *nicht* Symbol aus.
 
-Dadurch wird die „Gruppen[Konsole“ &#x200B;](/help/communities/groups.md):
+Dadurch wird die „Gruppen[Konsole“ ](/help/communities/groups.md):
 
 ![create-group](assets/create-group.png)
 
-Die Gruppenfunktion wird als Ordner angezeigt, in dem Instanzen von Gruppen erstellt werden. Wählen Sie zum Öffnen den Ordner Gruppen aus. Die in Publish erstellte Gruppe ist sichtbar.
+Die Gruppenfunktion wird als Ordner angezeigt, in dem Instanzen von Gruppen erstellt werden. Wählen Sie zum Öffnen den Ordner Gruppen aus. Die bei der Veröffentlichung erstellte Gruppe ist sichtbar.
 
 ![create-new-group](assets/create-new-group.png)
 
@@ -48,13 +55,13 @@ Diese Konsolen ähneln der Communities Sites -Konsole.
 
 * **Community-Gruppenvorlage**:
 
-   * **[!UICONTROL Community-Gruppentitel]**: Künste
-   * **[!UICONTROL Community-Gruppenbeschreibung]**: Eine übergeordnete Gruppe für verschiedene Kunstgruppen
-   * **[!UICONTROL Community-Gruppenstamm]**: *Als Standard beibehalten*
-   * **[!UICONTROL Zusätzliche verfügbare Community-Gruppensprachen]**: Wählen Sie über das Dropdown-Menü die verfügbaren Community-Gruppensprachen aus. Das Menü zeigt alle Sprachen an, in denen die übergeordnete Community-Site erstellt wird. Benutzer können in diesem Schritt eine dieser Sprachen auswählen, um Gruppen in mehreren Gebietsschemata zu erstellen. Dieselbe Gruppe wird in mehreren angegebenen Sprachen in der Gruppenkonsole der jeweiligen Community-Sites erstellt.
-   * **[!UICONTROL Community-Gruppenname]**: arts
-   * **[!UICONTROL Vorlage]**: Dropdown zur Auswahl von `Reference Group`
-   * Wählen Sie **[!UICONTROL Weiter]**
+  * **[!UICONTROL Community-Gruppentitel]**: Künste
+  * **[!UICONTROL Community-Gruppenbeschreibung]**: Eine übergeordnete Gruppe für verschiedene Kunstgruppen
+  * **[!UICONTROL Community-Gruppenstamm]**: *Als Standard beibehalten*
+  * **[!UICONTROL Zusätzliche verfügbare Community-Gruppensprachen]**: Wählen Sie über das Dropdown-Menü die verfügbaren Community-Gruppensprachen aus. Das Menü zeigt alle Sprachen an, in denen die übergeordnete Community-Site erstellt wird. Benutzer können in diesem Schritt eine dieser Sprachen auswählen, um Gruppen in mehreren Gebietsschemata zu erstellen. Dieselbe Gruppe wird in mehreren angegebenen Sprachen in der Gruppenkonsole der jeweiligen Community-Sites erstellt.
+  * **[!UICONTROL Community-Gruppenname]**: arts
+  * **[!UICONTROL Vorlage]**: Dropdown zur Auswahl von `Reference Group`
+  * Wählen Sie **[!UICONTROL Weiter]**
 
 ![Verschachtelte Community-Gruppen](assets/parent-to-nestedgroup.png)
 
@@ -62,23 +69,23 @@ Gehen Sie mit diesen Einstellungen durch die anderen Bedienfelder:
 
 * **[!UICONTROL Design]**
 
-   * Ändern Sie das Design oder lassen Sie das Design der standardmäßigen übergeordneten Site zu.
-   * Wählen Sie **[!UICONTROL Weiter]** aus.
+  * Ändern Sie das Design oder lassen Sie das Design der standardmäßigen übergeordneten Site zu.
+  * Wählen Sie **[!UICONTROL Weiter]** aus.
 
 * **[!UICONTROL Einstellungen]**
 
-   * **[!UICONTROL Moderation]**
+  * **[!UICONTROL Moderation]**
 
-      * Leer lassen (von übergeordneter Site erben).
+    * Leer lassen (von übergeordneter Site erben).
 
-   * **[!UICONTROL Mitgliedschaft]**
+  * **[!UICONTROL Mitgliedschaft]**
 
-      * Standard-`Optional Membership.` verwenden
+    * Standard-`Optional Membership.` verwenden
 
-      * **[!UICONTROL Miniaturansicht]**
-         * `optional.*`
+    * **[!UICONTROL Miniaturansicht]**
+      * `optional.*`
 
-      * **[!UICONTROL Klicken Sie auf Weiter]**.
+    * **[!UICONTROL Klicken Sie auf Weiter]**.
 
 * Wählen Sie **[!UICONTROL Erstellen]** aus.
 
@@ -88,7 +95,7 @@ Der Ordner &quot;`groups`&quot; enthält jetzt zwei Gruppen (Seite aktualisieren
 
 ![Verschachteln der Gruppen](assets/create-community-group.png)
 
-#### Publish-Gruppe {#publish-group}
+#### Gruppe veröffentlichen {#publish-group}
 
 Bevor Sie innerhalb der `arts` verschachtelte Gruppen erstellen, bewegen Sie den Mauszeiger über die `arts` Karte und wählen Sie das Symbol Veröffentlichen aus, um sie zu veröffentlichen.
 
@@ -139,29 +146,29 @@ So navigieren Sie über die Communities-Sites-Konsole zu den verschachtelten Gru
 
 Nach der Veröffentlichung der Haupt-Community-Site:
 
-* Publish - jede Gruppe einzeln:
+* Veröffentlichen Sie jede Gruppe einzeln:
 
-   * Warten auf Bestätigung, dass die Gruppe veröffentlicht wurde.
+  * Warten auf Bestätigung, dass die Gruppe veröffentlicht wurde.
 
-* Publish legt die übergeordnete Gruppe fest, bevor verschachtelte Gruppen veröffentlicht werden in:
+* Veröffentlichen Sie die übergeordnete Gruppe, bevor Sie verschachtelte Gruppen veröffentlichen in:
 
-   * Alle Gruppen müssen von oben nach unten veröffentlicht werden.
+  * Alle Gruppen müssen von oben nach unten veröffentlicht werden.
 
 ![group-published](assets/group-published.png)
 
-## Erfahrung mit Publish {#experience-on-publish}
+## Erlebnis bei der Veröffentlichung {#experience-on-publish}
 
 Sie können die verschiedenen Gruppen erleben, wenn Sie angemeldet sind, z. B. mit den [Demo-Benutzern](/help/communities/tutorials.md#demo-users) für:
 
 * Art/History Gruppenmitglied: `emily.andrews@mailinator.com/password`
-   * Die eingeschränkte (geheime) Gruppe, „Kunst/Geschichte“ ist sichtbar:
-   * Kann optionale (öffentliche) Gruppen anzeigen.
-   * Kann eingeschränkten (offenen) Gruppen beitreten.
+  * Die eingeschränkte (geheime) Gruppe, „Kunst/Geschichte“ ist sichtbar:
+  * Kann optionale (öffentliche) Gruppen anzeigen.
+  * Kann eingeschränkten (offenen) Gruppen beitreten.
 
 * Gruppenleiter: `aaron.mcdonald@mailinator.com/password`
 
-   * Kann optionale (öffentliche) Gruppen anzeigen.
-   * Kann eingeschränkten (offenen) Gruppen beitreten.
-   * Eingeschränkte (geheime) Gruppen können nicht angezeigt werden.
+  * Kann optionale (öffentliche) Gruppen anzeigen.
+  * Kann eingeschränkten (offenen) Gruppen beitreten.
+  * Eingeschränkte (geheime) Gruppen können nicht angezeigt werden.
 
 Greifen Sie auf der Autoreninstanz auf die Konsolen [Mitglieder und Gruppen](/help/communities/members.md) zu, um andere Benutzer zu verschiedenen Mitgliedsgruppen hinzuzufügen, die den Community-Gruppen entsprechen.

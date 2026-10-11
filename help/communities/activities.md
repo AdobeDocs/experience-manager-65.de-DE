@@ -10,13 +10,20 @@ exl-id: 2b2a5de0-e7c7-4417-a217-4b929bc7dcfb
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '477'
 ht-degree: 0%
-
 ---
-
 # Aktivitäts-Streams-Funktion {#activity-streams-feature}
 
 ## Einführung {#introduction}
@@ -40,7 +47,7 @@ und ziehen Sie sie auf eine Seite, auf der Aktivitätsströme angezeigt werden s
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen Client-seitigen &#x200B;](/help/communities/essentials-activities.md#essentials-for-client-side) enthalten sind, wird die `Activity Streams` Komponente wie folgt angezeigt:
+Wenn die [erforderlichen Client-seitigen ](/help/communities/essentials-activities.md#essentials-for-client-side) enthalten sind, wird die `Activity Streams` Komponente wie folgt angezeigt:
 
 ![activity-streams](assets/activity-component.png)
 
@@ -76,7 +83,7 @@ Geben **auf der Registerkarte** Benutzeraktivitäten“ an, welche Aktivitäten 
 
 ### folgende Ansicht {#following-view}
 
-Komponenten müssen so konfiguriert sein, dass Folgendes aktiviert wird. Funktionen, die Folgendes ermöglichen[&#x200B; sind &#x200B;](/help/communities/blog-feature.md)blog[, forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [file library](/help/communities/file-library.md) und [comments](/help/communities/comments.md).
+Komponenten müssen so konfiguriert sein, dass Folgendes aktiviert wird. Funktionen, die Folgendes ermöglichen[ sind ](/help/communities/blog-feature.md)blog[, forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [file library](/help/communities/file-library.md) und [comments](/help/communities/comments.md).
 
 ![folgende Ansicht](assets/following-activities.png)
 
@@ -89,11 +96,11 @@ Die Schaltfläche **Folgen** wird angezeigt:
 * Beim Anzeigen des Profils eines anderen Mitglieds.
 * Auf einer Haupt-Funktionsseite wie Foren, QNa und Blogs.
 
-   * Führt alle Aktivitäten für diese allgemeine Funktion aus.
+  * Führt alle Aktivitäten für diese allgemeine Funktion aus.
 
 * Für einen bestimmten Eintrag, z. B. ein Forumsthema, eine Frage oder einen Blog-Artikel.
 
-   * Führt alle Aktivitäten für diesen bestimmten Eintrag aus.
+  * Führt alle Aktivitäten für diesen bestimmten Eintrag aus.
 
 ### Zusätzliche Informationen {#additional-information}
 

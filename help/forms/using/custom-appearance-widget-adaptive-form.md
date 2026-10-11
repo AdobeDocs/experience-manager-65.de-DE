@@ -9,7 +9,25 @@ exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 98%
@@ -128,9 +146,9 @@ Nehmen Sie nach Erstellen der Projektvorlage bei Bedarf die folgenden Änderunge
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>Gibt eine Zuordnung zum Konvertieren von HTML-Ereignissen in XFA-Ereignisse zurück. <br /> <code class="code">&lbrace;
+   <td>Gibt eine Zuordnung zum Konvertieren von HTML-Ereignissen in XFA-Ereignisse zurück. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      &rbrace;</code><br /> Dieses Beispiel zeigt, dass <code>blur</code> ein HTML-Ereignis und <code>XFA_EXIT_EVENT</code> das entsprechende XFA-Ereignis ist. </td>
+      }</code><br /> Dieses Beispiel zeigt, dass <code>blur</code> ein HTML-Ereignis und <code>XFA_EXIT_EVENT</code> das entsprechende XFA-Ereignis ist. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
@@ -161,7 +179,7 @@ Nehmen Sie nach Erstellen der Projektvorlage bei Bedarf die folgenden Änderunge
    * Die Methode `getEventMap` ordnet durch das Widget ausgelöste Ereignisse den Ereignissen zu, die durch das adaptive Formularmodell benötigt werden. Der Standardwert ordnet Standard-HTML-Ereignisse für das Standard-Widget zu. Es muss aktualisiert werden, falls ein alternatives Widget ausgelöst wird.
    * `showDisplayValue` und `showValue` wenden die Display- und Edit-Picture-Klausel an und können überschrieben werden, um ein alternatives Verhalten zu erzielen.
 
-   * Die Methode `getCommitValue` wird durch das Framework für adaptive Formulare aufgerufen, wenn das Ereignis `commit` auftritt. (Im Allgemeinen handelt es sich um das exit-Ereignis, mit Ausnahme der Elemente Dropdown-Liste, Optionsfeld und Kontrollkästchen, wenn es bei einer Änderung auftritt.) Weitere Informationen finden Sie unter[&#x200B; Adaptive Formularausdrücke](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
+   * Die Methode `getCommitValue` wird durch das Framework für adaptive Formulare aufgerufen, wenn das Ereignis `commit` auftritt. (Im Allgemeinen handelt es sich um das exit-Ereignis, mit Ausnahme der Elemente Dropdown-Liste, Optionsfeld und Kontrollkästchen, wenn es bei einer Änderung auftritt.) Weitere Informationen finden Sie unter[ Adaptive Formularausdrücke](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
 
    * Die Vorlagendatei bietet eine Beispielimplementierung für verschiedene Methoden. Entfernen Sie Methoden, die nicht erweitert werden sollen.
 

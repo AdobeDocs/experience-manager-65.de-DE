@@ -5,7 +5,21 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin, User
 solution: Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: ca1448119778a2bcfeca7189aab5b360d992d99d
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1236'
 ht-degree: 2%
@@ -22,7 +36,7 @@ Wenn Sie vordefinierte adaptive Forms-Funktionen verwenden, speichert AEM Forms 
 
 Zu den vorkonfigurierten Mechanismen, die ein Formular mit einem Ziel verbinden, dessen Eigentümer Sie sind, gehören das Formulardatenmodell (FDM), vorkonfigurierte Connectoren und Übermittlungsaktionen. Jeder dieser Schritte sendet Daten an einen Speicherort, den Sie besitzen und konfigurieren, sodass er nicht im AEM-Repository beibehalten wird. Ein Formular kann auch einen externen Dienst oder einen Drittanbieterdienst, z. B. eine REST-API, aus einer Regel oder einer Übermittlungsaktion aufrufen und Daten an diesen Dienst weiterleiten, ohne die Daten in AEM zu persistieren.
 
-Wenn Sie AEM-Workflows mit langlebigen Prozessen verwenden, die einen Genehmigungsschritt beinhalten, kann AEM Forms Daten im Speicher und in einem temporären Speicher speichern, um den Vorgang abzuschließen. Informationen zum Verhindern, dass diese Daten in AEM gespeichert werden, finden Sie [&#x200B; Abschnitt „Daten in langlebigen Workflow-Prozessen](#long-lived-workflow-processes).
+Wenn Sie AEM-Workflows mit langlebigen Prozessen verwenden, die einen Genehmigungsschritt beinhalten, kann AEM Forms Daten im Speicher und in einem temporären Speicher speichern, um den Vorgang abzuschließen. Informationen zum Verhindern, dass diese Daten in AEM gespeichert werden, finden Sie [ Abschnitt „Daten in langlebigen Workflow-Prozessen](#long-lived-workflow-processes).
 
 Die Übermittlungsaktion Forms Portal speichert erfasste oder über Adaptive Forms übermittelte Daten, die Daten werden jedoch an einem von Ihnen angegebenen und verwalteten Speicherort gespeichert und nicht im AEM-Repository oder in den Protokollen. Weitere Informationen finden Sie unter [Sichere Daten, die von der Übermittlungsaktion des Formularportals gespeichert werden](/help/forms/using/hardening-securing-aem-forms-environment.md#secure-data-saved-by-forms-portal-submit-action).
 

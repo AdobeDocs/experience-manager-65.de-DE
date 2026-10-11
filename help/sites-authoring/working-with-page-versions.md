@@ -5,22 +5,35 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1568'
 ht-degree: 100%
-
 ---
-
 # Arbeiten mit Seitenversionen{#working-with-page-versions}
 
 Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem bestimmten Zeitpunkt festgehalten. Bei der Versionierung können Sie die folgenden Aktionen durchführen:
 
 * Erstellen einer Version einer Seite.
 * Wiederherstellen einer früheren Version einer Seite, z. B.:
-   * zum Rückgängigmachen einer Änderung an einer Seite
+  * zum Rückgängigmachen einer Änderung an einer Seite
 * Vergleichen der aktuellen Version einer Seite mit einer früheren Version:
-   * zum Hervorheben der Unterschiede im Text und in Bildern
+  * zum Hervorheben der Unterschiede im Text und in Bildern
 
 >[!NOTE]
 >
@@ -33,17 +46,17 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
 
 Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
-* über die [Zeitleiste](#creating-a-new-version-timeline)
+* über die [Timeline](#creating-a-new-version-timeline)
 * mithilfe der Option [Erstellen](#creating-a-new-version-create-with-a-selected-resource) (wenn eine Ressource ausgewählt ist)
 
-### Erstellen einer neuen Version – Zeitleiste {#creating-a-new-version-timeline}
+### Erstellen einer neuen Version – Timeline {#creating-a-new-version-timeline}
 
 1. Navigieren Sie zu der Seite, für die Sie eine Version erstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie die Spalte **Zeitleiste**.
+1. Öffnen Sie die Spalte **Timeline**.
 1. Klicken Sie auf die Pfeilspitze neben dem Kommentarfeld, um die Optionen anzuzeigen:
 
-   ![Zeitleiste – Als Version speichern](assets/screen-shot_2019-03-05at112335.png)
+   ![Timeline – Als Version speichern](assets/screen-shot_2019-03-05at112335.png)
 
 1. Wählen Sie **Als Version speichern**.
 1. Geben Sie ggf. eine **Beschriftung** und einen **Kommentar** ein.
@@ -71,19 +84,19 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
 Nachdem Sie eine Version Ihrer Seite erstellt haben, gibt es verschiedene Methoden, eine ältere Version zu reaktivieren:
 
-* die Option **Auf diese Version zurück** in der [Zeitleiste](/help/sites-authoring/basic-handling.md#timeline).
+* die Option **Auf diese Version zurück** in der [Timeline](/help/sites-authoring/basic-handling.md#timeline).
 
   Reaktivieren Sie eine frühere Version einer ausgewählten Seite.
 
 * die Optionen zum **Wiederherstellen** in der oberen [Symbolleiste für Aktionen](/help/sites-authoring/basic-handling.md#actions-toolbar)
 
-   * **Version wiederherstellen**
+  * **Version wiederherstellen**
 
-     Reaktivieren Sie Versionen bestimmter Seiten im derzeit ausgewählten Ordner; dies kann auch die Wiederherstellung von zuvor gelöschten Seiten umfassen.
+    Reaktivieren Sie Versionen bestimmter Seiten im derzeit ausgewählten Ordner; dies kann auch die Wiederherstellung von zuvor gelöschten Seiten umfassen.
 
-   * **Baum wiederherstellen**
+  * **Baum wiederherstellen**
 
-     Reaktivieren Sie eine Version eines gesamten Baums zu einem bestimmten Datum und einer bestimmten Uhrzeit; dies kann Seiten umfassen, die zuvor gelöscht wurden.
+    Reaktivieren Sie eine Version eines gesamten Baums zu einem bestimmten Datum und einer bestimmten Uhrzeit; dies kann Seiten umfassen, die zuvor gelöscht wurden.
 
 >[!NOTE]
 >
@@ -103,12 +116,12 @@ So können Sie für die ausgewählte Seite eine frühere Version **wiederherstel
 
 1. Navigieren Sie zu der Seite, für die Sie eine frühere Version wiederherstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie die **Zeitleiste** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus. Die Seitenversionen für die ausgewählte Seite werden aufgelistet.
+1. Öffnen Sie die **Timeline** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus. Die Seitenversionen für die ausgewählte Seite werden aufgelistet.
 1. Wählen Sie die Version aus, die Sie wiederherstellen möchten. Die möglichen Optionen werden angezeigt:
 
    ![Auf diese Version zurück](assets/screen-shot_2019-03-05at112505.png)
 
-1. Wählen Sie **Auf diese Version zurück**. Die ausgewählte Version wird wiederhergestellt und die Informationen in der Zeitleiste werden aktualisiert.
+1. Wählen Sie **Auf diese Version zurück**. Die ausgewählte Version wird wiederhergestellt und die Informationen in der Timeline werden aktualisiert.
 
 ### Version wiederherstellen {#restore-version}
 
@@ -171,7 +184,7 @@ Sie können eine Vorschau einer bestimmten Version anzeigen:
 
 1. Navigieren Sie zu der Seite, die Sie vergleichen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie die **Zeitleiste** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
+1. Öffnen Sie die **Timeline** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
 1. Die Seitenversionen werden aufgelistet. Wählen Sie die Version, die Sie in der Vorschau anzeigen möchten:
 
    ![Version zur Vorschau auswählen](assets/screen-shot_2019-03-05at112505-1.png)
@@ -182,7 +195,7 @@ Sie können eine Vorschau einer bestimmten Version anzeigen:
    >
    >Wenn eine Seite verschoben wurde, können Sie keine Vorschau von Versionen mehr anzeigen, die vor dem Verschieben erstellt wurden.
    >
-   >* Wenn Probleme bei der Vorschau auftreten, überprüfen Sie in der [Zeitleiste](/help/sites-authoring/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
+   >* Wenn Probleme bei der Vorschau auftreten, überprüfen Sie in der [Timeline](/help/sites-authoring/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
 
 ## Vergleichen einer Version mit der aktuellen Seite {#comparing-a-version-with-current-page}
 
@@ -190,7 +203,7 @@ So vergleichen Sie eine frühere Version mit der aktuellen Seite:
 
 1. Navigieren Sie zu der Seite, die Sie vergleichen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie die **Zeitleiste** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
+1. Öffnen Sie die **Timeline** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
 1. Die Seitenversionen werden aufgelistet. Wählen Sie die Version aus, die Sie vergleichen möchten.
 
    ![Aufgeführte Seitenversionen – Version auswählen](assets/screen-shot_2019-03-05at112505-2.png)
@@ -208,7 +221,7 @@ Timewarp ist eine Funktion, die den *Veröffentlichungsstatus* einer Seite zu ei
 Die Inhaltserstellung ist ein fortlaufender und kollaborativer Prozess. Der Zweck von Timewarp besteht darin, Autorinnen und Autoren zu ermöglichen, die veröffentlichte Website im Laufe der Zeit zu verfolgen, um zu verstehen, wie sich der Inhalt verändert hat. Diese Funktion verwendet die Seitenversionen, um den Zustand der Veröffentlichungsumgebung zu bestimmen.
 
 * Das System sucht nach der Seitenversion, die zum ausgewählten Zeitpunkt aktiv war.
-   * Die Seitenversion wurde *vor* dem in Timewarp ausgewählten Zeitpunkt erstellt/aktiviert.
+  * Die Seitenversion wurde *vor* dem in Timewarp ausgewählten Zeitpunkt erstellt/aktiviert.
 * Wenn Sie zu einer inzwischen gelöschten Seite navigieren, wird diese ebenfalls gerendert, sofern die alten Versionen der Seite nach wie vor im Repository verfügbar sind.
 * Wenn keine veröffentlichte Version gefunden wird, kehrt Timewarp zum aktuellen Status der Seite in der Autorenumgebung zurück (um eine Fehler-/404-Seite zu vermeiden, die dazu führen würde, dass Sie nicht weiter browsen können).
 

@@ -9,13 +9,17 @@ exl-id: e10e1904-7016-4eb0-9408-36297285f378
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 1%
-
 ---
-
 # Mobile Apps testen{#testing-mobile-apps}
 
 {{ue-over-mobile}}
@@ -49,12 +53,12 @@ Zusätzlich zu automatisierten Tests sollte Ihre App einen Zyklus manueller Test
 * Testen gegen einen großen Pool von Geräten (im Idealfall echte Geräte, aber Simulatoren/Emulatoren, wenn keine echten Geräte verfügbar sind),
 * Geben Sie informatives Feedback:
 
-   * Absturzberichte,
-   * Analyse/Tracking,
-   * Verwendbarkeit,
-   * Schwerpunkte,
-   * Leistung,
-   * Daten-/Stromverbrauch usw.
+  * Absturzberichte,
+  * Analyse/Tracking,
+  * Verwendbarkeit,
+  * Schwerpunkte,
+  * Leistung,
+  * Daten-/Stromverbrauch usw.
 
 ## Tools {#tools}
 
@@ -74,21 +78,21 @@ Weitere Informationen finden Sie unter [https://www.selenium.dev/](https://www.s
 * Ein Cloud-basierter Test-Service mit kontinuierlichen Integrations-Hooks und echten Gerätetests.
 * Enthalten ist eine App-Crawler, die die Gerätekompatibilität überprüft, Protokolle analysiert, Ansichten durchläuft, Screenshots erstellt und die Leistung überwacht.
 
-https://testdroid.com/ Weitere Informationen finden Sie unter [&#128279;](https://testdroid.com/).
+https://testdroid.com/ Weitere Informationen finden Sie unter [](https://testdroid.com/).
 
 **Appium**
 
 * Appium ist ein beliebtes plattformübergreifendes Framework zur Automatisierung von Tests für Mobilgeräte.
 * Außerdem ist ein Inspektor mit Aufzeichnungsfunktionen enthalten, um Testfälle zu codieren.
 
-https://appium.io/ Weitere Informationen finden Sie unter [&#128279;](https://appium.io/).
+https://appium.io/ Weitere Informationen finden Sie unter [](https://appium.io/).
 
 **SauceLabs**
 
 * SauceLabs bietet Cloud-basierte Tests und lässt sich mit kontinuierlicher Integration integrieren.
 * Tests werden automatisch in der Cloud-Umgebung ausgeführt oder Sie können ein bestimmtes Gerät oder eine bestimmte Plattform starten und manuelle Tests durchführen, um Probleme zu debuggen.
 
-https://saucelabs.com/ Weitere Informationen finden Sie unter [&#128279;](https://saucelabs.com/).
+https://saucelabs.com/ Weitere Informationen finden Sie unter [](https://saucelabs.com/).
 
 <!--
 **AppTestNow**
@@ -103,10 +107,10 @@ For more information, see [https://apptestnow.com/](https://apptestnow.com/).
 
 * HockeyApp fällt unter die manuellen Tests, bei denen die Mobile App in einen persönlichen App-Store verschoben wird, wo Tester sie herunterladen und ausprobieren können.
 
-https://hockeyapp.net/features/ Weitere Informationen finden Sie unter [&#128279;](https://hockeyapp.net/features/).
+https://hockeyapp.net/features/ Weitere Informationen finden Sie unter [](https://hockeyapp.net/features/).
 
 **Jenkins**
 
 * Obwohl es sich nicht um ein Test-Tool handelt, ist Jenkins ein kontinuierliches Integrations-Framework, das das Rückgrat für automatisierte Tests bereitstellt. Es stehen zahlreiche Plug-ins von Drittanbietern zur Verfügung, um die Funktionalität zu erweitern. Beispielsweise stellt das SeleniumGrid-Plug-in eine Benutzeroberfläche bereit, die bei der Verwaltung des Selenium-Hub und der -Knoten hilft.
 
-https://www.jenkins.io/ Weitere Informationen finden Sie unter [&#128279;](https://www.jenkins.io/) und [https://plugins.jenkins.io/](https://plugins.jenkins.io/).
+https://www.jenkins.io/ Weitere Informationen finden Sie unter [](https://www.jenkins.io/) und [https://plugins.jenkins.io/](https://plugins.jenkins.io/).

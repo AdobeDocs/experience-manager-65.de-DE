@@ -8,13 +8,29 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 100%
-
+source-wordcount: '1208'
+ht-degree: 94%
 ---
-
 # Tastaturbefehle für AEM Forms {#aem-forms-keyboard-shortcuts}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird ein älterer Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
@@ -29,22 +45,22 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 | Eigenschaften-Browser für die ausgewählte Komponente eines adaptiven Formulars schließen | Strg+Alt+W | Befehl+Alt+W |
 | Änderungen im Eigenschaften-Browser für die ausgewählte Komponente eines adaptiven Formulars speichern | Strg+S | Befehl+S |
 | Bearbeiten der Regel für die ausgewählte Komponente eines adaptiven Formulars | Strg+Alt+Eingabe | Befehl+Alt+Eingabe |
-| Zwischen Vorschau und dem aktuell ausgewählten Modus (z. B. Bearbeiten und Strukturvorlage) wechseln | Strg+Umschalt+M | Strg+Umschalt+M |
-| Letzte Änderung rückgängig machen | Strg+Z | Strg+Z |
-| Letzte Änderung wiederholen | Strg+Y | Ctrl+Y&amp;ast; |
+| Zwischen Vorschau und dem aktuell ausgewählten Modus (z. B. Bearbeiten und Strukturvorlage) wechseln | Strg+Umschalt+M | Strg+Umschalt+M&amp;ast; |
+| Letzte Änderung rückgängig machen | Strg+Z | Strg+Z&amp;ast; |
+| Letzte Änderung wiederholen | Strg+Y | Strg+Y&amp;ast; |
 | Mehrere Komponenten auswählen | Umschalt+Klick | Umschalt+Klick |
-| Ausgewählte Komponente kopieren | Strg-C | Strg+C |
-| Ausgewählte Komponenten ausschneiden. Die ausgeschnittene Komponente wird erst ausgeblendet, wenn sie an der neuen Position eingefügt wird. | Strg-X | Strg-X |
+| Ausgewählte Komponente kopieren | Strg-C | Strg-C&amp;ast; |
+| Ausgewählte Komponenten ausschneiden. Die ausgeschnittene Komponente wird erst ausgeblendet, wenn sie an der neuen Position eingefügt wird. | Strg-X | Strg-X&amp;ast; |
 | Komponenten einfügen | Strg+V | Strg+V |
-| Ausgewählte Komponenten löschen | Strg+Entf | Strg+Entf |
-| Ausgewählte Komponenten löschen | Strg+Rücktaste | Strg+Rücktaste |
+| Ausgewählte Komponenten löschen | Strg+Entf | Strg+Entf&amp;ast; |
+| Ausgewählte Komponenten löschen | Strg+Rücktaste | Strg+Rücktaste&amp;ast; |
 | Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+B | Strg+B&amp;ast; |
 | Text mit der Rich Text Editor-Komponente im Vorschaumodus kursiv formatieren | Strg+I | Strg+I&amp;ast; |
 | Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+U | Strg+U&amp;ast; |
 
 >[!NOTE]
 >
->Mit „&amp;ast;“ markierte Tastaturbefehle können unter macOS sowohl mit der Strg- als auch mit der Befehlstaste verwendet werden.
+>Mit einem &quot;&amp;ast;“ markierte Tastaturbefehle funktionieren in macOS sowohl mit der Strg- als auch mit der Befehlstaste.
 
 >[!NOTE]
 >
@@ -60,13 +76,13 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 |---|---|---|
 | Eigenschaften-Browser für die ausgewählte Komponente in einem Design öffnen | Alt+Eingabe | Alt+Eingabe |
 | Eigenschaften-Browser für die ausgewählte Komponente in einem Design schließen | Strg+Alt+W | Befehl+Alt+W |
-| Letzte Änderung rückgängig machen | Strg+Z | Strg+Z |
-| Letzte Änderung wiederholen | Strg+Y | Ctrl+Y&amp;ast; |
+| Letzte Änderung rückgängig machen | Strg+Z | Strg+Z&amp;ast; |
+| Letzte Änderung wiederholen | Strg+Y | Strg+Y&amp;ast; |
 | Speichern von Änderungen im Eigenschaften-Browser für die ausgewählte Komponente in einem Design | Strg+S | Strg+S&amp;ast; |
 
 >[!NOTE]
 >
->Mit „&amp;ast;“ markierte Tastaturbefehle können unter macOS sowohl mit der Strg- als auch mit der Befehlstaste verwendet werden.
+>Mit einem &quot;&amp;ast;“ markierte Tastaturbefehle funktionieren in macOS sowohl mit der Strg- als auch mit der Befehlstaste.
 
 ## Inhalts-Browser  {#contentbrowser}
 
@@ -268,7 +284,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Ein-/Ausgabehilfen a
   <tr>
    <th><p><strong>Vorgang</strong></p> </th> 
    <th><p><strong>Tastaturbefehl unter Windows</strong></p> </th> 
-   <th><strong>Tastaturbefehl für macOS</strong></th> 
+   <th><strong>Tastaturbefehl unter macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Schrift vergrößern </p> </td> 
@@ -315,7 +331,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Ein-/Ausgabehilfen a
    <th><strong>Tastaturbefehl unter macOS</strong></th> 
   </tr>
   <tr>
-   <td><p>Text einfügen  </p> </td> 
+   <td><p>Text einfügen </p> </td> 
    <td><p>Strg+V/Umschalt+Einfügen</p> </td> 
    <td>Befehl+V</td> 
   </tr>

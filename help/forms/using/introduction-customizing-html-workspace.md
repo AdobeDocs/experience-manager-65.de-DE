@@ -10,13 +10,33 @@ exl-id: b183d42f-343c-4acb-bc73-f80ad72e54df
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 100%
-
 ---
-
 # Einführung zur Anpassung von AEM Forms Workspace{#introduction-to-customizing-aem-form-workspace}
 
 AEM Forms Workspace bietet Funktionen zum Ändern der Darstellung und der Funktionen der Benutzeroberfläche. Die Anpassungen zum Ändern des Stils, des Layouts, der Formatierung, des Branding und der Kernfunktion werden unten beschrieben.
@@ -189,47 +209,47 @@ Es dient vor allem der Anpassung, denn es bietet Funktionen, um Folgendes zu gen
 
 * client-pkg:
 
-   * src – Enthält die Artefakte, die erforderlich sind, um CRX-Knoten zu erstellen.
-   * pom.xml – Das Skript zum Erstellen von Bereitstellungspaketen für ein WS-Deploy-Paket mit verschiedenen Profilen
+  * src – Enthält die Artefakte, die erforderlich sind, um CRX-Knoten zu erstellen.
+  * pom.xml – Das Skript zum Erstellen von Bereitstellungspaketen für ein WS-Deploy-Paket mit verschiedenen Profilen
 
 * client-html:
 
-   * assembly – Enthält die zip.xml, die vom Skript zum Erstellen von AEM Forms Workspace SDK verwendet wird.
-   * src/main/webapp -
+  * assembly – Enthält die zip.xml, die vom Skript zum Erstellen von AEM Forms Workspace SDK verwendet wird.
+  * src/main/webapp -
 
-      * css – Enthält Stylesheets für AEM Forms Workspace.
-      * images – Enthält Bilder, die in AEM Forms Workspace verwendet werden.
-      * js:
+    * css – Enthält Stylesheets für AEM Forms Workspace.
+    * images – Enthält Bilder, die in AEM Forms Workspace verwendet werden.
+    * js:
 
-         * libs – Enthält alle Drittanbieterbibliotheken, die in AEM Forms Workspace verwendet werden.
-         * licenses – Enthält Lizenzen für HTML- und JS-Dateien sowie den Code, der als Präfix für diese Lizenzen dient und sie den entsprechenden Quelldateien zuordnet.
-         * minifier – Wird für die Kombination, Minimierung und Verschleierung des benutzerdefinierten JavaScript-Codes verwendet.
-         * resourcejs_optimizer – Wird für die Kombination, Minimierung und Verschleierung der JavaScript-Quelle verwendet.
-         * resource_generator – Wird für die Generierung von register.js und modelcontrollerpath.js verwendet.
-         * runtime:
+      * libs – Enthält alle Drittanbieterbibliotheken, die in AEM Forms Workspace verwendet werden.
+      * licenses – Enthält Lizenzen für HTML- und JS-Dateien sowie den Code, der als Präfix für diese Lizenzen dient und sie den entsprechenden Quelldateien zuordnet.
+      * minifier – Wird für die Kombination, Minimierung und Verschleierung des benutzerdefinierten JavaScript-Codes verwendet.
+      * resourcejs_optimizer – Wird für die Kombination, Minimierung und Verschleierung der JavaScript-Quelle verwendet.
+      * resource_generator – Wird für die Generierung von register.js und modelcontrollerpath.js verwendet.
+      * runtime:
 
-            * initializer - Enthält initializer.js, das zum Initialisieren der Backbone-Ansichten und -Modelle in AEM Forms Workspace verwendet wird.
-            * models – Enthält Backbone-Modelle aller Komponenten in AEM Forms Workspace.
-            * routes – Enthält JavaScript-Dateien und HTML-Dateien, die den Startvorgang, Aufgaben, Verfolgung und Einstellungen in AEM Forms Workspace laden.
-            * services - Enthält in AEM Forms Workspace verwendete service.js. Alle Server-Aufrufe erfolge über service.js.
-            * templates – Enthält alle Vorlagen, d. h. HTML-Dateien aller Ansichten in AEM Forms Workspace.
-            * util – Enthält alle in AEM Forms Workspace verwendeten Dienstprogrammdateien (JavaScript).
-            * views – Enthält Backbone-Ansichten aller Komponenten in AEM Forms Workspace.
+        * initializer - Enthält initializer.js, das zum Initialisieren der Backbone-Ansichten und -Modelle in AEM Forms Workspace verwendet wird.
+        * models – Enthält Backbone-Modelle aller Komponenten in AEM Forms Workspace.
+        * routes – Enthält JavaScript-Dateien und HTML-Dateien, die den Startvorgang, Aufgaben, Verfolgung und Einstellungen in AEM Forms Workspace laden.
+        * services - Enthält in AEM Forms Workspace verwendete service.js. Alle Server-Aufrufe erfolge über service.js.
+        * templates – Enthält alle Vorlagen, d. h. HTML-Dateien aller Ansichten in AEM Forms Workspace.
+        * util – Enthält alle in AEM Forms Workspace verwendeten Dienstprogrammdateien (JavaScript).
+        * views – Enthält Backbone-Ansichten aller Komponenten in AEM Forms Workspace.
 
-         * main.js
-         * router.js
+      * main.js
+      * router.js
 
-      * libs/ws: pdf.html und pluginPing.pdf werden zum Laden von PDF-Formularen in AEM Forms Workspace verwendet. WSNextAdapter.swf wird verwendet, um SWF-Formulare und -Guides in AEM Forms Workspace zu laden.
-      * locales:
+    * libs/ws: pdf.html und pluginPing.pdf werden zum Laden von PDF-Formularen in AEM Forms Workspace verwendet. WSNextAdapter.swf wird verwendet, um SWF-Formulare und -Guides in AEM Forms Workspace zu laden.
+    * locales:
 
-         * de-DE - Enthält translation.json für Deutsch.
-         * en-US - Enthält translation.json für Englisch.
-         * fr-FR - Enthält translation.json für Französisch.
-         * ja-JP - Enthält translation.json für Japanisch.
-         * html.jsp - Enthält Code, um das aktuelle Browser-Gebietsschema zu ermitteln.
+      * de-DE - Enthält translation.json für Deutsch.
+      * en-US - Enthält translation.json für Englisch.
+      * fr-FR - Enthält translation.json für Französisch.
+      * ja-JP - Enthält translation.json für Japanisch.
+      * html.jsp - Enthält Code, um das aktuelle Browser-Gebietsschema zu ermitteln.
 
-      * html.jsp
-      * GET.jsp
+    * html.jsp
+    * GET.jsp
 
 ### CRX-Paket {#crx-package}
 
@@ -256,30 +276,30 @@ Dieses Paket kann mithilfe der drei folgenden Profile erstellt werden, die nachs
 * images - Enthält alle Bilder.
 * js:
 
-   * libs:
+  * libs:
 
-      * require - Enthält require.js.
-      * jqueryui - Enthält jquery.ui.datepicker.ja.js.
+    * require - Enthält require.js.
+    * jqueryui - Enthält jquery.ui.datepicker.ja.js.
 
-   * runtime:
+  * runtime:
 
-      * templates - Enthält alle Vorlagen, d. h. HTML-Dateien aller Komponenten in AEM Forms Workspace.
+    * templates - Enthält alle Vorlagen, d. h. HTML-Dateien aller Komponenten in AEM Forms Workspace.
 
-   * main.js (kombiniert, minimiert und verschleiert).
-   * registry.js
+  * main.js (kombiniert, minimiert und verschleiert).
+  * registry.js
 
 * libs:
 
-   * ws - Enthält pluginPing.pdf, pdf.html und WSNextAdapter.swf.
+  * ws - Enthält pluginPing.pdf, pdf.html und WSNextAdapter.swf.
 
 * Locale - Enthält .content.xml.
 * locales:
 
-   * de-DE - Enthält translation.json für Deutsch.
-   * en-US - Enthält translation.json für Englisch.
-   * fr-FR - Enthält translation.json für Französisch.
-   * ja-JP - Enthält translation.json für Japanisch.
-   * html.jsp - Enthält Code, um das aktuelle Browser-Gebietsschema zu ermitteln.
+  * de-DE - Enthält translation.json für Deutsch.
+  * en-US - Enthält translation.json für Englisch.
+  * fr-FR - Enthält translation.json für Französisch.
+  * ja-JP - Enthält translation.json für Japanisch.
+  * html.jsp - Enthält Code, um das aktuelle Browser-Gebietsschema zu ermitteln.
 
 * Index – Enthält .content.xml
 * profile - Enthält offline.jsp.
@@ -301,30 +321,30 @@ Dieses Paket kann mithilfe der drei folgenden Profile erstellt werden, die nachs
 * images - Enthält alle Bilder.
 * js:
 
-   * libs:
+  * libs:
 
-      * require - Enthält require.js.
-      * jqueryui - Enthält jquery.ui.datepicker.ja.js.
+    * require - Enthält require.js.
+    * jqueryui - Enthält jquery.ui.datepicker.ja.js.
 
-   * runtime:
+  * runtime:
 
-      * templates - Enthält alle Vorlagen, d. h. HTML-Dateien aller Komponenten in AEM Forms Workspace.
+    * templates - Enthält alle Vorlagen, d. h. HTML-Dateien aller Komponenten in AEM Forms Workspace.
 
-   * main.js (kombiniert).
-   * registry.js
+  * main.js (kombiniert).
+  * registry.js
 
 * libs:
 
-   * ws - Enthält pluginPing.pdf, pdf.html und WSNextAdapter.swf.
+  * ws - Enthält pluginPing.pdf, pdf.html und WSNextAdapter.swf.
 
 * Locale - Enthält .content.xml.
 * locales:
 
-   * de-DE - Enthält translation.json für Deutsch.
-   * en-US - Enthält translation.json für Englisch.
-   * fr-FR - Enthält translation.json für Französisch.
-   * ja-JP - Enthält translation.json für Japanisch.
-   * html.jsp - Enthält Code, um das aktuelle Browser-Gebietsschema zu ermitteln.
+  * de-DE - Enthält translation.json für Deutsch.
+  * en-US - Enthält translation.json für Englisch.
+  * fr-FR - Enthält translation.json für Französisch.
+  * ja-JP - Enthält translation.json für Japanisch.
+  * html.jsp - Enthält Code, um das aktuelle Browser-Gebietsschema zu ermitteln.
 
 * Index – Enthält .content.xml
 * profile - Enthält offline.jsp.
@@ -345,35 +365,35 @@ mvn clean -P Dev-Installation auf Client-Paket
 * images - Enthält alle Bilder.
 * js:
 
-   * libs - Enthält alle in AEM Forms Workspace verwendeten Bibliotheken.
-   * require - Enthält require.js
-   * jqueryui - Enthält jquery.ui.datepicker.ja.js
-   * runtime:
+  * libs - Enthält alle in AEM Forms Workspace verwendeten Bibliotheken.
+  * require - Enthält require.js
+  * jqueryui - Enthält jquery.ui.datepicker.ja.js
+  * runtime:
 
-      * initializer - Enthält initializer.js und modelcontrollerpath.js.
-      * models - Enthält Modelle aller Komponenten in AEM Forms Workspace.
-      * routes – Enthält JavaScript-Dateien und HTML-Dateien, die den Startvorgang, Aufgaben, Verfolgung und Einstellungen in AEM Forms Workspace laden.
-      * services - Enthält die in AEM Forms Workspace verwendete service.js.
-      * templates - Enthält alle Vorlagen, d. h. HTML-Dateien aller Komponenten in AEM Forms Workspace.
-      * util – Enthält alle in AEM Forms Workspace verwendeten Dienstprogrammdateien (JavaScript).
-      * views - Enthält Ansichten aller Komponenten in AEM Forms Workspace.
+    * initializer - Enthält initializer.js und modelcontrollerpath.js.
+    * models - Enthält Modelle aller Komponenten in AEM Forms Workspace.
+    * routes – Enthält JavaScript-Dateien und HTML-Dateien, die den Startvorgang, Aufgaben, Verfolgung und Einstellungen in AEM Forms Workspace laden.
+    * services - Enthält die in AEM Forms Workspace verwendete service.js.
+    * templates - Enthält alle Vorlagen, d. h. HTML-Dateien aller Komponenten in AEM Forms Workspace.
+    * util – Enthält alle in AEM Forms Workspace verwendeten Dienstprogrammdateien (JavaScript).
+    * views - Enthält Ansichten aller Komponenten in AEM Forms Workspace.
 
-   * main.js
-   * registry.js
-   * router.js
+  * main.js
+  * registry.js
+  * router.js
 
 * libs:
 
-   * ws - Enthält pluginPing.pdf, pdf.html und WSNextAdapter.swf.
+  * ws - Enthält pluginPing.pdf, pdf.html und WSNextAdapter.swf.
 
 * Locale - Enthält .content.xml.
 * locales:
 
-   * de-DE - Enthält translation.json für Deutsch.
-   * en-US - Enthält translation.json für Englisch.
-   * fr-FR - Enthält translation.json für Französisch.
-   * ja-JP - Enthält translation.json für Japanisch.
-   * html.jsp - Enthält Code, um das aktuelle Browser-Gebietsschema zu ermitteln.
+  * de-DE - Enthält translation.json für Deutsch.
+  * en-US - Enthält translation.json für Englisch.
+  * fr-FR - Enthält translation.json für Französisch.
+  * ja-JP - Enthält translation.json für Japanisch.
+  * html.jsp - Enthält Code, um das aktuelle Browser-Gebietsschema zu ermitteln.
 
 * Index – Enthält .content.xml
 * profile - Enthält offline.jsp.

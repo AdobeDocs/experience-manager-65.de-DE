@@ -9,13 +9,22 @@ exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4700'
+source-wordcount: '4702'
 ht-degree: 98%
-
 ---
-
 # Best Practices für Abfragen und Indizierung{#best-practices-for-queries-and-indexing}
 
 Neben dem Übergang zu Oak in AEM 6 wurden auch einige bedeutende Änderungen in Bezug auf die Verwaltung von Abfragen und Indizes vorgenommen. Unter Jackrabbit 2 wurden sämtlichee Inhalte standardmäßig indiziert und waren frei abrufbar. In Oak müssen Indizes manuell unter dem Knoten `oak:index` erstellt werden. Eine Abfrage kann zwar ohne Index ausgeführt werden, aber bei großen Datensätzen ist dieser Vorgang sehr langsam und kann sogar zu einem Abbruch führen.
@@ -128,13 +137,13 @@ Dies verhindert ressourcenintensive Abfragen (d. h. nicht durch einen Index ode
 
 * Überwachen Sie die Protokolle auf Abfragen, die eine hohe Anzahl durchlaufener Knoten oder einen hohen Heap-Speicherverbrauch auslösen:
 
-   * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
-   * Optimieren Sie die Abfrage so, dass die Anzahl der durchlaufenen Knoten reduziert wird.
+  * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
+  * Optimieren Sie die Abfrage so, dass die Anzahl der durchlaufenen Knoten reduziert wird.
 
 * Überwachen Sie die Protokolle auf Abfragen, die einen hohen Heap-Speicherverbrauch auslösen:
 
-   * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
-   * Optimieren Sie die Abfrage, um den Heap-Speicherverbrauch zu reduzieren.
+  * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
+  * Optimieren Sie die Abfrage, um den Heap-Speicherverbrauch zu reduzieren.
 
 Für die AEM-Versionen 6.0 bis 6.2 können Sie den Schwellenwert für das Durchlaufen von Knoten über JVM-Parameter im AEM-Startskript abstimmen, um zu verhindern, dass die Umgebung durch umfangreiche Abfragen überlastet wird.
 
@@ -226,7 +235,7 @@ Eine Neuindizierung von Oak-Indizes muss vermieden werden, sofern nicht einer de
 
 >[!NOTE]
 >
->Bevor Sie anhand der nachstehenden Tabellen ermitteln, ob eine Neuindizierung sinnvoll ist, stellen Sie **immer &#x200B;** Folgendes sicher:
+>Bevor Sie anhand der nachstehenden Tabellen ermitteln, ob eine Neuindizierung sinnvoll ist, stellen Sie **immer ** Folgendes sicher:
 >
 >* Die Abfrage ist korrekt.
 >* Die Abfrage wird in den erwarteten Index aufgelöst (mithilfe von [Abfrage erläutern](/help/sites-administering/operations-dashboard.md#diagnosis-tools)).
@@ -248,59 +257,59 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 
 * Gilt für folgende Fälle:
 
-   * Alle Oak-Versionen
-   * Nur [Eigenschaftenindizes](https://jackrabbit.apache.org/oak/docs/query/property-index.html)
+  * Alle Oak-Versionen
+  * Nur [Eigenschaftenindizes](https://jackrabbit.apache.org/oak/docs/query/property-index.html)
 
 * Symptome:
 
-   * Knoten, die bereits vor der Definitionsaktualisierung des Eigenschaftenindex vorhanden waren, fehlen in den Ergebnissen.
+  * Knoten, die bereits vor der Definitionsaktualisierung des Eigenschaftenindex vorhanden waren, fehlen in den Ergebnissen.
 
 * So kann dies überprüft werden:
 
-   * Bestimmen Sie, ob die fehlenden Knoten vor der Bereitstellung der aktualisierten Indexdefinition erstellt/geändert wurden.
-   * Überprüfen Sie die Eigenschaften `jcr:created` oder `jcr:lastModified` aller fehlenden Knoten im Hinblick auf die Änderungszeit des Index.
+  * Bestimmen Sie, ob die fehlenden Knoten vor der Bereitstellung der aktualisierten Indexdefinition erstellt/geändert wurden.
+  * Überprüfen Sie die Eigenschaften `jcr:created` oder `jcr:lastModified` aller fehlenden Knoten im Hinblick auf die Änderungszeit des Index.
 
 * Beheben des Problems:
 
-   * [Indizieren](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-re-index) Sie den Lucene-Index neu.
-   * Alternativ können Sie einen Schreibvorgang ohne Auswirkungen für den fehlenden Knoten durchführen.
+  * [Indizieren](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-re-index) Sie den Lucene-Index neu.
+  * Alternativ können Sie einen Schreibvorgang ohne Auswirkungen für den fehlenden Knoten durchführen.
 
-      * Erfordert manuelle Änderungen oder benutzerdefinierten Code
-      * Erfordert, dass der Satz fehlender Knoten bekannt ist.
-      * Erfordert das Ändern einer beliebigen Eigenschaft auf dem Knoten
+    * Erfordert manuelle Änderungen oder benutzerdefinierten Code
+    * Erfordert, dass der Satz fehlender Knoten bekannt ist.
+    * Erfordert das Ändern einer beliebigen Eigenschaft auf dem Knoten
 
 #### Definitionsänderung des Lucene-Index {#lucene-index-definition-change}
 
 * Gilt für folgende Fälle:
 
-   * Alle Oak-Versionen
-   * Ausschließlich [Lucene-Indizes](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+  * Alle Oak-Versionen
+  * Ausschließlich [Lucene-Indizes](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Symptome:
 
-   * Der Lucene-Index enthält keine erwarteten Ergebnisse.
-   * Die Abfrageergebnisse spiegeln nicht das erwartete Verhalten der Indexdefinition wider.
-   * Der Abfrageplan berichtet nicht die erwartete, auf der Indexdefinition basierende Ausgabe.
+  * Der Lucene-Index enthält keine erwarteten Ergebnisse.
+  * Die Abfrageergebnisse spiegeln nicht das erwartete Verhalten der Indexdefinition wider.
+  * Der Abfrageplan berichtet nicht die erwartete, auf der Indexdefinition basierende Ausgabe.
 
 * So kann dies überprüft werden:
 
-   * Überprüfen Sie, ob die Indexdefinition mit den Lucene-Indexstatistiken JMX MBean (LuceneIndex), Methode `diffStoredIndexDefinition`, geändert wurde.
+  * Überprüfen Sie, ob die Indexdefinition mit den Lucene-Indexstatistiken JMX MBean (LuceneIndex), Methode `diffStoredIndexDefinition`, geändert wurde.
 
 * Beheben des Problems:
 
-   * Oak-Versionen vor 1.6:
+  * Oak-Versionen vor 1.6:
 
-      * [Indizieren](#how-to-re-index) Sie den Lucene-Index neu.
+    * [Indizieren](#how-to-re-index) Sie den Lucene-Index neu.
 
-   * Oak-Versionen ab 1.6:
+  * Oak-Versionen ab 1.6:
 
-      * Wenn sich Änderungen nicht auf den vorhandenen Inhalt auswirken, ist lediglich eine Aktualisierung erforderlich.
+    * Wenn sich Änderungen nicht auf den vorhandenen Inhalt auswirken, ist lediglich eine Aktualisierung erforderlich.
 
-         * [Aktualisieren](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) Sie den Lucene-Index, indem Sie [oak:queryIndexDefinition]@refresh=true festlegen.
+      * [Aktualisieren](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) Sie den Lucene-Index, indem Sie [oak:queryIndexDefinition]@refresh=true festlegen.
 
-      * Ansonsten sollte eine [Neuindizierung](#how-to-re-index) des Lucene-Index vorgenommen werden.
+    * Ansonsten sollte eine [Neuindizierung](#how-to-re-index) des Lucene-Index vorgenommen werden.
 
-         * Hinweis: Der Indexstatus der letzten erfolgreichen Neuindizierung (oder Erstindizierung) wird so lange verwendet, bis eine Neuindizierung ausgelöst wird.
+      * Hinweis: Der Indexstatus der letzten erfolgreichen Neuindizierung (oder Erstindizierung) wird so lange verwendet, bis eine Neuindizierung ausgelöst wird.
 
 ### Fehler- und Ausnahmesituationen {#erring-and-exceptional-situations}
 
@@ -317,62 +326,62 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 
 * Gilt für folgende Fälle:
 
-   * Alle Oak-Versionen
-   * Ausschließlich [Lucene-Indizes](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+  * Alle Oak-Versionen
+  * Ausschließlich [Lucene-Indizes](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Symptome:
 
-   * Der Lucene-Index enthält keine erwarteten Ergebnisse.
+  * Der Lucene-Index enthält keine erwarteten Ergebnisse.
 
 * So kann dies überprüft werden:
 
-   * Die Fehlerprotokolldatei enthält eine Ausnahme, die besagt, dass eine Binärdatei des Lucene-Index fehlt.
+  * Die Fehlerprotokolldatei enthält eine Ausnahme, die besagt, dass eine Binärdatei des Lucene-Index fehlt.
 
 * Beheben des Problems:
 
-   * Durchführen einer Repository-Durchlauf-Prüfung; Beispiel:
+  * Durchführen einer Repository-Durchlauf-Prüfung; Beispiel:
 
-     [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
+    [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
 
-     Durch das Durchlaufen des Repositorys wird bestimmt, ob andere Binärdateien (außer Lucene-Dateien) fehlen.
+    Durch das Durchlaufen des Repositorys wird bestimmt, ob andere Binärdateien (außer Lucene-Dateien) fehlen.
 
-   * Wenn andere Binärdateien als Lucene-Indizes fehlen, stellen Sie diese anhand einer Sicherung wieder her.
-   * [Indizieren](#how-to-re-index) Sie andernfalls *alle* Lucene-Indizes neu.
-   * Hinweis:
+  * Wenn andere Binärdateien als Lucene-Indizes fehlen, stellen Sie diese anhand einer Sicherung wieder her.
+  * [Indizieren](#how-to-re-index) Sie andernfalls *alle* Lucene-Indizes neu.
+  * Hinweis:
 
-     Dieser Zustand ist ein Anzeichen für einen falsch konfigurierten Datenspeicher, was dazu führen kann, dass beliebige Binärdateien (z. B. Asset-Binärdateien) verloren gehen.
+    Dieser Zustand ist ein Anzeichen für einen falsch konfigurierten Datenspeicher, was dazu führen kann, dass beliebige Binärdateien (z. B. Asset-Binärdateien) verloren gehen.
 
-     Stellen Sie in diesem Fall die letzte einwandfreie Version des Repositorys wieder her, um alle fehlenden Binärdateien wiederzugewinnen.
+    Stellen Sie in diesem Fall die letzte einwandfreie Version des Repositorys wieder her, um alle fehlenden Binärdateien wiederzugewinnen.
 
 #### Beschädigte Lucene-Index-Binärdateien {#lucene-index-binary-is-corrupt}
 
 * Gilt für folgende Fälle:
 
-   * Alle Oak-Versionen
-   * Ausschließlich [Lucene-Indizes](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+  * Alle Oak-Versionen
+  * Ausschließlich [Lucene-Indizes](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Symptome:
 
-   * Der Lucene-Index enthält keine erwarteten Ergebnisse.
+  * Der Lucene-Index enthält keine erwarteten Ergebnisse.
 
 * So kann dies überprüft werden:
 
-   * `AsyncIndexUpdate` (alle fünf Sekunden) schlägt mit folgender Ausnahme im Fehlerprotokoll fehl:
+  * `AsyncIndexUpdate` (alle fünf Sekunden) schlägt mit folgender Ausnahme im Fehlerprotokoll fehl:
 
-     `...a Lucene index file is corrupt...`
+    `...a Lucene index file is corrupt...`
 
 * Beheben des Problems:
 
-   * Entfernen Sie die lokale Kopie des Lucene-Index.
+  * Entfernen Sie die lokale Kopie des Lucene-Index.
 
-      1. Stoppen Sie AEM.
-      1. Löschen Sie die lokale Kopie des Lucene-Index unter `crx-quickstart/repository/index`.
-      1. Starten Sie AEM neu.
+    1. Stoppen Sie AEM.
+    1. Löschen Sie die lokale Kopie des Lucene-Index unter `crx-quickstart/repository/index`.
+    1. Starten Sie AEM neu.
 
-   * Wenn das Problem hierdurch nicht behoben wird und die `AsyncIndexUpdate`-Ausnahmen bestehen bleiben, gehen Sie wie folgt vor:
+  * Wenn das Problem hierdurch nicht behoben wird und die `AsyncIndexUpdate`-Ausnahmen bestehen bleiben, gehen Sie wie folgt vor:
 
-      1. [Indizieren](#how-to-re-index) Sie den fehlerhaften Index neu.
-      1. Öffnen Sie zudem ein Ticket beim [Adobe-Support](https://helpx.adobe.com/de/support.html).
+    1. [Indizieren](#how-to-re-index) Sie den fehlerhaften Index neu.
+    1. Öffnen Sie zudem ein Ticket beim [Adobe-Support](https://helpx.adobe.com/de/support.html).
 
 ### Neuindizieren {#how-to-re-index}
 
@@ -385,7 +394,7 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 * Verwenden Sie [oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing), um den Eigenschaftenindex neu zu indizieren
 * Stellen Sie im Eigenschaftenindex die Eigenschaft „reindex-async“ auf „true“ ein.
 
-   * `[oak:queryIndexDefinition]@reindex-async=true`
+  * `[oak:queryIndexDefinition]@reindex-async=true`
 
 * Indizieren Sie den Eigenschaftenindex asynchron mithilfe der Web-Konsole über das MBean **PropertyIndexAsyncReindex**;
 
@@ -398,7 +407,7 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 * Verwenden Sie [oak-run.jar zum Neuindizieren](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) des Lucene-Eigenschaftsindex.
 * Stellen Sie im Lucene-Eigenschaftenindex die Eigenschaft „async-reindex“ auf „true“ ein.
 
-   * `[oak:queryIndexDefinition]@reindex-async=true`
+  * `[oak:queryIndexDefinition]@reindex-async=true`
 
 >[!NOTE]
 >
@@ -440,7 +449,7 @@ Bei normalem AEM-Betrieb, etwa beim Hochladen von Assets über die Web-Benutzero
 * Die folgende [oak-run.jar](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)-Version muss verwendet werden: 1.7.4 oder höher.
 * Es muss ein Ordner oder eine Freigabe im Dateisystem vorhanden sein, um extrahierten Text zu speichern, der über die indizierende(n) AEM-Instanz(en) zugänglich ist.
 
-   * Für die OSGi-Konfiguration zur Textvorextraktion ist ein Dateisystempfad zu den extrahierten Textdateien erforderlich. Sie müssen also direkt von der AEM-Instanz (lokale Festplatte oder Bereitstellung der Dateifreigabe) aus zugänglich sein.
+  * Für die OSGi-Konfiguration zur Textvorextraktion ist ein Dateisystempfad zu den extrahierten Textdateien erforderlich. Sie müssen also direkt von der AEM-Instanz (lokale Festplatte oder Bereitstellung der Dateifreigabe) aus zugänglich sein.
 
 #### Durchführen der Textvorextraktion {#how-to-perform-text-pre-extraction}
 

@@ -9,13 +9,20 @@ exl-id: 1f60a0d4-a272-45e8-9742-4b706be8502e
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '567'
 ht-degree: 2%
-
 ---
-
 # Einrichten der Website-Struktur {#setup-website-structure}
 
 Zum Einrichten Ihrer Website werden in den folgenden Anweisungen die Ordner beschrieben, die an den folgenden Speicherorten erstellt werden müssen:
@@ -79,7 +86,7 @@ Der Ordner &quot;/apps“ ist geschützt und nicht öffentlich zugänglich. Glei
 
    Wie bei jedem Bearbeitungsprozess sollten Sie häufig speichern. Wenn bei der Dateneingabe Probleme auftreten, kann dies entweder auf eine Zeitüberschreitung bei der Anmeldung zurückzuführen sein oder Sie müssen frühere Änderungen speichern.
 
-1. Die Struktur im Explorer-Fenster von CRXDE Lite sollte nun ungefähr so aussehen:
+1. Die Struktur im Explorer-Fenster von CRXDE Lite sollte nun in etwa wie folgt aussehen:
 
    ![CRXDE-template](assets/crxde-template.png)
 
@@ -89,11 +96,11 @@ Der Ordner /etc/designs enthält die Bilder, Skripte und Stylesheets, die zusamm
 
 1. Navigieren Sie zur Verwendung des Designer-Tools in der klassischen Benutzeroberfläche zu [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin).
 
-   Hinweis: Wenn Sie CRXDE Lite zum Erstellen eines Knotens vom Typ `cq:Page` verwenden, sind Zugriffssteuerung und Replikation für eine Seite nicht auf die Standardeinstellungen festgelegt.
+   Hinweis: Wenn Sie CRXDE Lite zum Erstellen eines Knotens vom Typ `cq:Page` verwenden, sind die Zugriffssteuerung und Replikation für eine Seite nicht auf die Standardeinstellungen festgelegt.
 
 1. Wählen Sie im Explorer-Fenster den Ordner **[!UICONTROL Designs]** aus und klicken Sie dann auf **[!UICONTROL Neu]** > **[!UICONTROL Neue Seite]**.
 
-   Geben Sie ein:
+   Geben Sie Folgendes ein:
 
    * Titel: **[!UICONTROL Eine SCF-Sandbox]**
    * Name: **[!UICONTROL an-scf-sandbox]**
@@ -105,7 +112,7 @@ Der Ordner /etc/designs enthält die Bilder, Skripte und Stylesheets, die zusamm
 
 1. Aktualisieren Sie das Explorer-Fenster, wenn kein „SCF Sandbox“-Ordner angezeigt wird.
 
-1. Kehren Sie zu CRXDE Lite (http:// localhost:4502/crx/de) zurück und erweitern Sie &quot;/etc/designs“, um den Knoten „an-scf-sandbox“ anzuzeigen.
+1. Kehren Sie zu CRXDE Lite zurück (http:// localhost:4502/crx/de) und erweitern Sie &quot;/etc/designs“, um den Knoten „an-scf-sandbox“ anzuzeigen.
 
    Im rechten unteren Bereich von CRXDE können Sie die Registerkarte Eigenschaften , die Registerkarte Zugriffssteuerung und die Registerkarte Replikation anzeigen, um zu sehen, was mithilfe der Design-Seitenvorlage definiert wurde.
 

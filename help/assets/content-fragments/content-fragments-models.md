@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 73ec9a0420206ef2cc60a12d316073a443c1d20d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2326'
-ht-degree: 99%
-
+source-wordcount: '2348'
+ht-degree: 95%
 ---
-
 # Inhaltsfragmentmodelle {#content-fragment-models}
 
 Inhaltsfragmentmodelle in AEM definieren die Inhaltsstruktur für Ihre [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md), die als Grundlage für Ihren Headless-Content dienen.
@@ -76,14 +88,14 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
    * Wenn ein Feld zum Modell hinzugefügt wurde, werden im rechten Bereich die **Eigenschaften** angezeigt, die für diesen speziellen Datentyp definiert werden können. Hier können Sie festlegen, was für dieses Feld erforderlich ist.
 
-      * Viele Eigenschaften sind selbsterklärend. Weitere Informationen finden Sie unter [Eigenschaften](#properties).
-      * Wenn Sie eine **Feldbeschriftung** eingeben, wird der **Eigenschaftsname** automatisch ausgefüllt, falls das Feld leer ist, und kann anschließend manuell aktualisiert werden.
+     * Viele Eigenschaften sind selbsterklärend. Weitere Informationen finden Sie unter [Eigenschaften](#properties).
+     * Wenn Sie eine **Feldbeschriftung** eingeben, wird der **Eigenschaftsname** automatisch ausgefüllt, falls das Feld leer ist, und kann anschließend manuell aktualisiert werden.
 
-        >[!CAUTION]
-        >
-        >Wenn Sie die Eigenschaft **Eigenschaftsname** für einen Datentyp manuell aktualisieren, beachten Sie, dass Namen nur A–Z, a–z, 0–9 und den Unterstrich „_“ als Sonderzeichen enthalten dürfen.
-        >
-        >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
+       >[!CAUTION]
+       >
+       >Wenn Sie die Eigenschaft **Eigenschaftsname** für einen Datentyp manuell aktualisieren, beachten Sie, dass Namen nur A–Z, a–z, 0–9 und den Unterstrich „_“ als Sonderzeichen enthalten dürfen.
+       >
+       >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
      Zum Beispiel:
 
@@ -106,40 +118,40 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 
 * **Einzeilentext**
-   * Fügen Sie ein oder mehrere Felder mit einer einzelnen Textzeile hinzu. Die maximale Länge kann festgelegt werden.
+  * Fügen Sie ein oder mehrere Felder mit einer einzelnen Textzeile hinzu. Die maximale Länge kann festgelegt werden.
 * **Mehrzeilentext**
-   * Ein Textbereich, der Rich Text, Plain Text oder Markdown sein kann
+  * Ein Textbereich, der Rich Text, Plain Text oder Markdown sein kann
 * **Zahl**
-   * Fügen Sie ein oder mehrere numerische Felder hinzu.
+  * Fügen Sie ein oder mehrere numerische Felder hinzu.
 * **Boolesch**
-   * Fügen Sie ein boolesches Kontrollkästchen hinzu.
+  * Fügen Sie ein boolesches Kontrollkästchen hinzu.
 * **Datum und Uhrzeit**
-   * Fügen Sie ein Datum und/oder eine Uhrzeit hinzu.
+  * Fügen Sie ein Datum und/oder eine Uhrzeit hinzu.
 * **Aufzählung**
-   * Hinzufügen einer Reihe von Kontrollkästchen, Optionsfeldern oder Dropdown-Feldern
+  * Hinzufügen einer Reihe von Kontrollkästchen, Optionsfeldern oder Dropdown-Feldern
 * **Tags**
-   * Ermöglicht Fragmentautoren den Zugriff auf und die Auswahl von Tag-Bereichen.
+  * Ermöglicht Fragmentautoren den Zugriff auf und die Auswahl von Tag-Bereichen.
 * **Inhaltsreferenz**
-   * Verweist auf andere Inhalte jeden Typs. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
-   * Wenn ein Bild referenziert wird, kann wahlweise eine Miniatur angezeigt werden.
+  * Verweist auf andere Inhalte jeden Typs. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
+  * Wenn ein Bild referenziert wird, kann wahlweise eine Miniatur angezeigt werden.
 * **Fragmentreferenz**
-   * Verweist auf andere Inhaltsfragmente. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
-   * Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
-      * Direktes Bearbeiten des referenzierten Fragments
-      * Erstellen eines neuen Inhaltsfragments basierend auf dem entsprechenden Modell
+  * Verweist auf andere Inhaltsfragmente. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
+  * Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
+    * Direktes Bearbeiten des referenzierten Fragments
+    * Erstellen eines neuen Inhaltsfragments basierend auf dem entsprechenden Modell
 * **JSON-Objekt**
-   * Ermöglicht es dem Autor des Inhaltsfragments, JSON-Syntax in die entsprechenden Elemente eines Fragments einzugeben.
-      * Damit AEM direktes JSON speichern kann, das Sie von einem anderen Dienst kopiert und eingefügt haben.
-      * Das JSON wird weitergegeben und als JSON in GraphQL ausgegeben.
-      * Umfasst JSON-Syntaxhervorhebung, automatische Vervollständigung und Fehlerhervorhebung im Inhaltsfragmenteditor.
+  * Ermöglicht es dem Autor des Inhaltsfragments, JSON-Syntax in die entsprechenden Elemente eines Fragments einzugeben.
+    * Damit AEM direktes JSON speichern kann, das Sie von einem anderen Dienst kopiert und eingefügt haben.
+    * Das JSON wird weitergegeben und als JSON in GraphQL ausgegeben.
+    * Umfasst JSON-Syntaxhervorhebung, automatische Vervollständigung und Fehlerhervorhebung im Inhaltsfragmenteditor.
 * **Registerkarten-Platzhalter**
-   * Ermöglicht die Einführung von Registerkarten zur Bearbeitung des Inhalts von Inhaltsfragmenten.
-Dies wird als Trennzeichen im Modell-Editor angezeigt, das Abschnitte der Liste der Inhaltsdatentypen trennt. Jede Instanz stellt den Beginn einer neuen Registerkarte dar.
-Im Fragmenteditor wird jede Instanz als Registerkarte angezeigt.
+  * Ermöglicht die Einführung von Registerkarten zur Bearbeitung des Inhalts von Inhaltsfragmenten.
+    Dies wird als Trennzeichen im Modell-Editor angezeigt, das Abschnitte der Liste der Inhaltsdatentypen trennt. Jede Instanz stellt den Beginn einer neuen Registerkarte dar.
+    Im Fragmenteditor wird jede Instanz als Registerkarte angezeigt.
 
-     >[!NOTE]
-     >
-     >Dieser Datentyp dient ausschließlich zur Formatierung und wird vom GraphQL-Schema von AEM ignoriert.
+    >[!NOTE]
+    >
+    >Dieser Datentyp dient ausschließlich zur Formatierung und wird vom GraphQL-Schema von AEM ignoriert.
 
 ## Eigenschaften {#properties}
 
@@ -155,26 +167,26 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
   >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
 * **Rendern als**
-Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Oft können Sie damit festlegen, ob der Autorin oder dem Autor nur eine einzige Instanz des Feldes angezeigt wird oder ob sie bzw. er mehrere Instanzen erstellen darf.
+Die verschiedenen Optionen zum Realisieren/Rendern des Felds in einem Fragment. Oft können Sie damit festlegen, ob der Autorin oder dem Autor nur eine einzige Instanz des Feldes angezeigt wird oder ob sie bzw. er mehrere Instanzen erstellen darf.
 
 * **Feldbezeichnung**
-Das Eingeben einer **Feldbezeichnung** generiert automatisch einen **Eigenschaftsnamen**, der dann bei Bedarf manuell aktualisiert werden kann.
+Durch Eingabe einer **Feldbezeichnung** wird automatisch ein **Eigenschaftsname** generiert, der bei Bedarf manuell aktualisiert werden kann.
 
 * **Validierung**
-Die grundlegende Validierung ist mittels Mechanismen wie etwa die Eigenschaft **Erforderlich** verfügbar. Einige Datentypen verfügen über zusätzliche Validierungsfelder. Weitere Informationen finden Sie unter [Validierung](#validation).
+Die einfache Validierung ist über Mechanismen wie die Eigenschaft **erforderlich** verfügbar. Einige Datentypen verfügen über zusätzliche Validierungsfelder. Weitere Informationen finden Sie unter [Validierung](#validation).
 
 * Beim Datentyp **Mehrzeilentext** können Sie den **Standardtyp** folgendermaßen definieren:
 
-   * **Rich-Text**
-   * **Markdown**
-   * **Nur Text**
+  * **Rich-Text**
+  * **Markdown**
+  * **Nur Text**
 
   Wenn Sie keinen Typ angeben, wird der Standardwert **Rich-Text** in diesem Feld verwendet.
 
   Eine Änderung des **Standardtyps** in einem Inhaltsfragment-Modell wird nur bei einem vorhandenen, verwandten Inhaltsfragment wirksam, nachdem dieses Fragment im Editor geöffnet und gespeichert wurde.
 
-* **Eindeutiger**
-Content (für das spezifische Feld) muss für alle Inhaltsfragmente, die anhand des aktuellen Modells erstellt werden, eindeutig sein.
+* **eindeutig**
+Inhalte (für das spezifische Feld) müssen in allen aus dem aktuellen Modell erstellten Inhaltsfragmenten eindeutig sein.
 
   Dadurch wird sichergestellt, dass Inhaltsersteller Content, der bereits einem anderen Fragment desselben Modells hinzugefügt wurde, nicht wiederholen können.
 
@@ -205,36 +217,36 @@ Content (für das spezifische Feld) muss für alle Inhaltsfragmente, die anhand 
 Verschiedene Datentypen bieten jetzt die Möglichkeit, Validierungsanforderungen für den Zeitpunkt zu definieren, an dem Inhalt in das resultierende Fragment eingefügt wird:
 
 * **Einzeilentext**
-   * Führen Sie einen Vergleich mit einem vordefinierten Regex durch.
+  * Führen Sie einen Vergleich mit einem vordefinierten Regex durch.
 * **Zahl**
-   * Suchen Sie nach bestimmten Werten.
+  * Suchen Sie nach bestimmten Werten.
 * **Inhaltsreferenz**
-   * Testen Sie, ob bestimmte Content-Typen vorhanden sind.
-   * Es können nur Assets bis zur angegebenen maximalen Dateigröße referenziert werden.
-   * Es können nur Bilder in einem vordefinierten Bereich von Breite und/oder Höhe (in Pixel) referenziert werden.
+  * Testen Sie, ob bestimmte Content-Typen vorhanden sind.
+  * Es können nur Assets bis zur angegebenen maximalen Dateigröße referenziert werden.
+  * Es können nur Bilder in einem vordefinierten Bereich von Breite und/oder Höhe (in Pixel) referenziert werden.
 * **Fragmentreferenz**
-   * Testen Sie, ob ein bestimmtes Inhaltsfragmentmodell vorhanden ist.
+  * Testen Sie, ob ein bestimmtes Inhaltsfragmentmodell vorhanden ist.
 
 ## Verwenden von Verweisen, um verschachtelten Inhalt zu bilden {#using-references-to-form-nested-content}
 
 Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhalte bilden:
 
 * **[Inhaltsreferenz](#content-reference)**
-   * Bietet einen einfachen Verweis auf anderen Content jedes Typs.
-   * Kann für einen oder mehrere Verweise konfiguriert werden (im resultierenden Fragment).
+  * Bietet einen einfachen Verweis auf anderen Content jedes Typs.
+  * Kann für einen oder mehrere Verweise konfiguriert werden (im resultierenden Fragment).
 
 * **[Fragmentreferenz](#fragment-reference-nested-fragments)** (verschachtelte Fragmente)
-   * Verweist auf andere Fragmente, abhängig von den angegebenen Modellen.
-   * Ermöglicht das Einschließen/Abrufen strukturierter Daten.
+  * Verweist auf andere Fragmente, abhängig von den angegebenen Modellen.
+  * Ermöglicht das Einschließen/Abrufen strukturierter Daten.
 
-     >[!NOTE]
-     >
-     >Diese Methode ist in Verbindung mit der [Headless-Inhaltsbereitstellung mittels Inhaltsfragmenten mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md) besonders interessant.
-   * Kann für einen oder mehrere Verweise konfiguriert werden (im resultierenden Fragment).
+    >[!NOTE]
+    >
+    >Diese Methode ist in Verbindung mit der [Headless-Inhaltsbereitstellung mittels Inhaltsfragmenten mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md) besonders interessant.
+  * Kann für einen oder mehrere Verweise konfiguriert werden (im resultierenden Fragment).
 
 >[!NOTE]
 >
->AEM bietet einen Wiederholungsschutz für:
+>AEM bietet einen Intervallschutz für:
 >
 >* Inhaltsreferenzen
 >  Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
@@ -252,8 +264,8 @@ Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 * Die Inhaltstypen, auf die verwiesen werden kann
 * Einschränkungen bezüglich der Dateigrößen
 * Wenn ein Bild referenziert wird:
-   * Miniatur anzeigen
-   * Bildeinschränkungen hinsichtlich Höhe und Breite
+  * Miniatur anzeigen
+  * Bildeinschränkungen hinsichtlich Höhe und Breite
 
 ![Inhaltsreferenz](assets/cfm-content-reference.png)
 
@@ -264,7 +276,7 @@ Die Fragmentreferenz verweist auf mindestens ein Inhaltsfragment. Diese Funktion
 Zum Beispiel:
 
 * Ein Modell, das Details für einen Mitarbeiter definiert, beispielsweise:
-   * Ein Verweis auf das Modell, das den Arbeitgeber (Firma) definiert
+  * Ein Verweis auf das Modell, das den Arbeitgeber (Firma) definiert
 
 ```xml
 type EmployeeModel {
@@ -288,29 +300,29 @@ Zusätzlich zu den Standardeigenschaften können Sie Folgendes definieren:
 
 * **Rendern als**:
 
-   * **multifield**: Der Fragmentautor kann mehrere einzelne Verweise erstellen.
+  * **multifield**: Der Fragmentautor kann mehrere einzelne Verweise erstellen.
 
-   * **fragmentreference**: Der Fragmentautor kann einen einzelnen Verweis auf ein Fragment auswählen.
+  * **fragmentreference**: Der Fragmentautor kann einen einzelnen Verweis auf ein Fragment auswählen.
 
 * **Modelltyp**
 Es können mehrere Modelle ausgewählt werden. Beim Erstellen des Inhaltsfragments müssen alle referenzierten Fragmente mit diesen Modellen erstellt worden sein.
 
-* **Stammpfad**
-Gibt einen Stammpfad für referenzierte Fragmente an.
+* **Stammverzeichnis**
+Dies gibt einen Stammpfad für alle Fragmente an, auf die verwiesen wird.
 
 * **Fragmenterstellung zulassen**
 
   Auf diese Weise kann die Autorin oder der Autor des Fragments ein Fragment auf der Grundlage des entsprechenden Modells erstellen.
 
-   * **fragmentreferencecomposite**: Ermöglicht dem Fragmentautor das Erstellen einer Composite-Datei durch Auswahl mehrerer Fragmente.
+  * **fragmentreferencecomposite**: Ermöglicht dem Fragmentautor das Erstellen einer Composite-Datei durch Auswahl mehrerer Fragmente.
 
   ![Fragmentreferenz](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
 >
->Es gibt einen Mechanismus zum Wiederholungsschutz. Dieser verhindert, dass Benutzer in der Fragmentreferenz das aktuelle Inhaltsfragment auswählen. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
+>Es gibt einen Mechanismus zum Intervallschutz. Dieser verhindert, dass Benutzer in der Fragmentreferenz das aktuelle Inhaltsfragment auswählen. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
 >
->Es gibt auch einen Wiederholungsschutz für Fragmentreferenzen in GraphQL. Wenn Sie eine tiefe Abfrage über zwei Inhaltsfragmente erstellen, die gegenseitig aufeinander verweisen, wird null zurückgegeben.
+>Es gibt auch einen Intervallschutz für Fragmentreferenzen in GraphQL. Wenn Sie eine tiefe Abfrage über zwei Inhaltsfragmente erstellen, die gegenseitig aufeinander verweisen, wird null zurückgegeben.
 
 ## Aktivieren oder Deaktivieren von Inhaltsfragmentmodellen {#enabling-disabling-a-content-fragment-model}
 
@@ -342,8 +354,8 @@ Ein Modell lässt sich auch aus folgenden Gründen deaktivieren:
 
 * Das Modell ist nicht mehr als Grundlage für die Erstellung *neuer* Inhaltsfragmente verfügbar.
 * Beachten Sie jedoch Folgendes:
-   * Das GraphQL-Schema wird weiterhin generiert und kann weiterhin abgefragt werden (um eine Beeinträchtigung der JSON-API zu vermeiden).
-   * Inhaltsfragmente, die auf dem Modell basieren, können weiterhin abgefragt und vom GraphQL-Endpunkt zurückgegeben werden.
+  * Das GraphQL-Schema wird weiterhin generiert und kann weiterhin abgefragt werden (um eine Beeinträchtigung der JSON-API zu vermeiden).
+  * Inhaltsfragmente, die auf dem Modell basieren, können weiterhin abgefragt und vom GraphQL-Endpunkt zurückgegeben werden.
 * Das Modell kann nicht mehr referenziert werden. Vorhandene Referenzen bleiben jedoch unverändert und können weiterhin abgefragt und vom GraphQL-Endpunkt zurückgegeben werden.
 
 Um ein Modell zu deaktivieren, das als **Aktiviert** gekennzeichnet ist, verwenden Sie die Option **Deaktivieren** aus einem der folgenden Bereiche:
@@ -440,7 +452,7 @@ Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
 Sie können die **Eigenschaften** eines Inhaltsfragmentmodells bearbeiten:
 
 * **Allgemein**
-   * **Modell-Titel**
-   * **Tags**
-   * **Beschreibung**
-   * **Bild hochladen**
+  * **Modell-Titel**
+  * **Tags**
+  * **Beschreibung**
+  * **Bild hochladen**

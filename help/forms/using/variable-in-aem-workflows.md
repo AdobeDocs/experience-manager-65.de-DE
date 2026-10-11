@@ -9,13 +9,27 @@ exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '2208'
-ht-degree: 98%
-
+source-wordcount: '2291'
+ht-degree: 99%
 ---
-
 # Variablen in AEM Forms-Workflows{#variables-in-aem-forms-workflows}
 
 | Version | Artikel-Link |
@@ -44,7 +58,7 @@ Variablen sind eine Erweiterung der vorhandenen [MetaDataMap](https://helpx.adob
 Variablen erstellen Sie mithilfe des Abschnitts „Variablen“ im Sidekick des Workflow-Modells. AEM-Workflow-Variablen unterstützen die folgenden Datentypen:
 
 * **Primitive Datentypen**: Long, Double, Boolesch, Datum und Zeichenfolge
-* **Komplexe Datentypen**: [Dokument](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html)-, [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html)-, [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)- und Formulardatenmodell-Instanz.
+* **Komplexe Datentypen**: [Dokument](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html)-, [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html)-, [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)- und Formulardatenmodell-Instanz.
 
 >[!NOTE]
 >
@@ -279,8 +293,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ### Speichern sensibler Benutzerdaten außerhalb von JCR mit Hilfe von Workflow-Variablen {#jcr-independent-persistance}
 
-Daten, die mit Forms Workflow verarbeitet werden, können sensible Benutzerdaten enthalten, wie z. B. persönlich identifizierbare Informationen und sensible persönliche Informationen. Unternehmen können sich dafür entscheiden, die Daten, die von verschiedenen Workflow-Schritten verarbeitet (und mithilfe von Workflow-Variablen übergeben) werden, außerhalb des JCR-Speichers in einem externen Datenspeicher zu speichern, der ihnen gehört und von ihnen verwaltet wird. Weitere Informationen über die Speicherung von Workflow-Daten in einem externen Speicher finden Sie unter [Verwendung von Workflow-Variablen für kundeneigene Datenspeicher](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
-[!DNL Adobe Experience Manager] bietet die Workflow-[&#x200B; (UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer), um Workflow-Variablen in externen Azure-Blob-Speichern zu speichern. Weitere Informationen zur Verwendung der API finden Sie unter [Verwenden von Workflow-Variablen zum Parametrisieren sensibler Daten und Speichern in externen Datenspeichern](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
+Daten, die mithilfe von Forms-Workflows verarbeitet werden, können sensible Benutzerdaten enthalten, wie z. B. persönlich identifizierbare Informationen und sensible persönliche Informationen. Unternehmen können sich dafür entscheiden, die Daten, die von verschiedenen Workflow-Schritten verarbeitet (und mit Hilfe von Workflow-Variablen übergeben) werden, außerhalb des JCR-Speichers in einem externen Datenspeicher zu speichern, der ihnen gehört und von ihnen verwaltet wird. Weitere Informationen über die Speicherung von Workflow-Daten in einem externen Speicher finden Sie unter [Verwendung von Workflow-Variablen für kundeneigene Datenspeicher](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+[!DNL Adobe Experience Manager] bietet die Workflow-API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer), um Workflow-Variablen in externen Azure-Blob-Speichern zu speichern. Für Details zur Verwendung der API siehe [Verwenden von Workflow-Variablen zum Parametrisieren sensibler Daten und Speichern in externen Datenspeichern](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
 ## Bearbeiten einer Variablen {#edit-a-variable}
 

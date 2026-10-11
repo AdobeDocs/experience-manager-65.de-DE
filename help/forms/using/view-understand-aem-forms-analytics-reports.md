@@ -9,13 +9,29 @@ exl-id: c5a4e6f6-f331-41e9-a0a9-51a30df6e2cd
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 100%
-
+source-wordcount: '1082'
+ht-degree: 97%
 ---
-
 # Anzeigen und Verstehen der Analytics-Berichte in AEM Forms {#view-and-understand-aem-forms-analytics-reports}
 
 Adobe Experience Manager Forms ermöglicht die Integration in Adobe Analytics, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden.
@@ -63,7 +79,7 @@ AEM Forms zeigt Analytics-Berichte für das Formular und für jeden Bereich im F
 
 ![Zusammenfassungsbericht eines adaptiven Formulars](assets/analyticsdashboard_callout.png)
 
-**A.** Konvertierungen **B.** Zusammenfassung auf Formularebene **C.** Zusammenfassung auf Bereichsebene **D.** Browser der Besucher – Filter **E.** Betriebssystem der Besucher – Filter **F.** Sprache der Besucher – Filter
+**A.** Konversionen **B.** Zusammenfassung auf Formularebene **C.** Zusammenfassung auf Bereichsebene **D.** Browser der Besucher - Filter **E.** Betriebssystem der Besucher - Filter **F.** Sprache der Besucher - Filter
 
 Standardmäßig wird der Analysebericht für die letzten sieben Tage angezeigt. Sie können Berichte für die letzten 15 Tage, den letzten Monat usw. anzeigen oder einen Datumsbereich angeben.
 
@@ -92,7 +108,7 @@ Im Zusammenfassungsabschnitt auf Formularebene erhalten Sie einen Einblick in di
 * **Entwürfe**: Gibt an, wie oft das Formular als Entwurf gespeichert wurde.
 * **Übermittlungen**: Gibt an, wie oft das Formular übermittelt wurde.
 * **Abbruch**: Gibt an, wie oft Benutzende das Ausfüllen des Formulars begonnen und dann abgebrochen haben
-* **Unique Visitors**: Gibt an, wie oft das Formular von einzelnen Besuchern erstellt wird. Weitere Informationen über individuelle Besucher finden Sie unter [Individuelle Besicher, Besuche und Kundenverhalten](https://helpx.adobe.com/de/analytics/kb/unique-visitors-visitor-behavior.html). 
+* **Unique Visitors**: Gibt an, wie oft das Formular von einzelnen Besuchern erstellt wird. Weitere Informationen über Unique Visitors finden Sie unter [Individuelle Besicher, Besuche und Kundenverhalten](https://helpx.adobe.com/de/analytics/kb/unique-visitors-visitor-behavior.html).
 
 ![Erweiterter zusammenfassender Analysebericht auf Formularebene](assets/analytics-report.png)
 
@@ -100,8 +116,8 @@ Im Zusammenfassungsabschnitt auf Formularebene erhalten Sie einen Einblick in di
 
 Die Zusammenfassung auf Bereichsebene enthält die folgenden Informationen zu den einzelnen Bereichen im Formular:
 
-* **Durchschnittliche Füllzeit**: Durchschnittlich aufgewandte Zeit im Bereich, egal ob das Formular übermittelt wurde oder nicht 
-* **Aufgetretene Fehler**: Durchschnittliche Anzahl der Fehler, auf die die Benutzer in Feldern eines Bereichs gestoßen sind. „Aufgetretene Fehler“ wird berechnet, indem die Gesamtzahl der Fehler in einem Feld durch die Zahl der Ausgabedarstellungen des Formulars dividiert wird. 
+* **Durchschnittliche Füllzeit**: Durchschnittlich aufgewandte Zeit im Bereich, egal ob das Formular übermittelt wurde oder nicht
+* **Aufgetretene Fehler**: Durchschnittliche Anzahl der Fehler, auf die die Benutzer in Feldern eines Bereichs gestoßen sind. „Aufgetretene Fehler“ wird berechnet, indem die Gesamtzahl der Fehler in einem Feld durch die Zahl der Ausgabedarstellungen des Formulars dividiert wird.
 * **Zugriff auf Hilfe**: Durchschnittliche Anzahl der Aufrufe der kontextbezogenen Hilfe für die Felder im Bereich. „Zugriff auf Hilfe“ wird berechnet, indem die Gesamtzahl der Hilfe-Aufrufe eines Feldes durch die Zahl der Ausgabedarstellungen des Formulars dividiert wird.
 
 #### Detaillierter Bedienfeldbericht {#detailed-panel-report}
@@ -130,7 +146,7 @@ Um die Analysedaten weiter zu filtern, können Sie auf einen Eintrag in einer de
 
 Wenn Sie den Bereichsbericht anzeigen, nachdem Sie einen Filter angewendet haben, werden die Bereichsberichtdaten auch in Übereinstimmung mit dem angewendeten Filter angezeigt.
 
- Sobald ein Filter angewendet wird:
+Sobald ein Filter angewendet wird:
 
 * Die Verteilungstabellen sind schreibgeschützt, da jeweils nur ein Filter angewendet werden kann.
 * Die Tabelle des angewendeten Filters wird nicht mehr angezeigt.
@@ -140,6 +156,6 @@ Wenn Sie den Bereichsbericht anzeigen, nachdem Sie einen Filter angewendet haben
 
 ### A/B-Tests {#a-b-testing}
 
-Wenn Sie A/B-Tests aktiviert und für das Formular eingerichtet haben, verfügt die Berichtseite über eine Dropdown-Liste, mit der Sie den A/B-Test-Bericht anzeigen können. Der A/B-Test-Bericht zeigt den Leistungsvergleich zweier Versionen des Formulars an, die Sie eingerichtet haben. 
+Wenn Sie A/B-Tests aktiviert und für das Formular eingerichtet haben, verfügt die Berichtseite über eine Dropdown-Liste, mit der Sie den A/B-Test-Bericht anzeigen können. Der A/B-Test-Bericht zeigt den Leistungsvergleich zweier Versionen des Formulars an, die Sie eingerichtet haben.
 
 Weitere Informationen zu A/B-Tests finden Sie unter [Erstellen und Verwalten von A/B-Test für adaptive Formulare](../../forms/using/ab-testing-adaptive-forms.md).

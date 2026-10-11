@@ -9,13 +9,20 @@ exl-id: 821e32f4-da8d-4bbb-936a-0844b8a24cdd
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '240'
 ht-degree: 3%
-
 ---
-
 # Grundlagen zum Rich-Text-Editor {#rich-text-editor-essentials}
 
 ## Überblick {#overview}
@@ -30,7 +37,7 @@ Bei Communities-Komponenten wirkt sich dies ähnlich wie [Rich-Text-Editor in de
 
 Communities-Komponenten, die benutzergenerierte Inhalte (User Generated Content, UGC) zulassen, können für den RTE aktiviert werden. Wenn die Komponente zu einer Seite hinzugefügt oder in eine [Funktion](functions.md) eingefügt wurde, kann RTE standardmäßig aktiviert sein oder nicht.
 
-Wenn diese Option nicht aktiviert ist, [&#x200B; Sie einfach den &#x200B;](sites-console.md#authoring-site-content) „author edit mode“ ein, wählen Sie die Komponente aus, die bearbeitet werden soll, und aktivieren Sie das Kontrollkästchen `Rich Text Editor` .
+Wenn diese Option nicht aktiviert ist, [ Sie einfach den ](sites-console.md#authoring-site-content) „author edit mode“ ein, wählen Sie die Komponente aus, die bearbeitet werden soll, und aktivieren Sie das Kontrollkästchen `Rich Text Editor` .
 
 RTE ist für die folgenden Communities-Komponenten verfügbar:
 
@@ -60,7 +67,7 @@ Aus Sicherheitsgründen sind die Hyperlink-Optionen nicht in dem Satz von Rich-T
 So fügen Sie die Hyperlink-Optionen zur Symbolleiste hinzu:
 
 * Hinzufügen einer Symbolleiste mit dem Namen &quot;`links`&quot;
-   * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
+  * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
 * Wählen Sie **[!UICONTROL Alle speichern]**
 
 #### /libs/clientlibs/social/commons/scf/ckrte.js {#libs-clientlibs-social-commons-scf-ckrte-js}

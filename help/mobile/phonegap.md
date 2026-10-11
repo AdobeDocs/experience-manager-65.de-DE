@@ -8,18 +8,22 @@ exl-id: 930a6950-150a-4670-ab48-250b655132fb
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '210'
 ht-degree: 4%
-
 ---
-
 # PhoneGap{#phonegap}
 
 {{ue-over-mobile}}
 
-Adobe Experience Manager (AEM) Mobile ist nur eine Säule der AEM-Komplettplattform.
+Adobe Experience Manager (AEM) Mobile ist nur eine Säule der gesamten AEM-Plattform.
 
 Um ein neues AEM Mobile-App-Erlebnis zu starten, müssen mehrere Personen mit unterschiedlichen Rollen zusammenarbeiten. Die folgenden Rollen bieten einen Ausgangspunkt für die Erstellung eines AEM Mobile-Programms:
 
@@ -29,7 +33,7 @@ Um ein neues AEM Mobile-App-Erlebnis zu starten, müssen mehrere Personen mit un
 
 ## Authoring von PhoneGap-Anwendungen {#authoring-phonegap-applications}
 
-Ein ***AEM-* (oder *Marketer*)**&#x200B;kann die vordefinierten Vorlagen und Komponenten verwenden, um Seiten hinzuzufügen und zu bearbeiten. Sie können Komponenten per Drag-and-Drop aus dem DAM ziehen und Medien aller Art, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmenten), hinzufügen.
+Ein ***AEM-* (oder *Marketer*)**kann die vordefinierten Vorlagen und Komponenten verwenden, um Seiten hinzuzufügen und zu bearbeiten. Sie können Komponenten per Drag-and-Drop aus dem DAM ziehen und Medien aller Art, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmenten), hinzufügen.
 
 Sehen Sie sich die folgenden Ressourcen an:
 

@@ -9,13 +9,27 @@ exl-id: ce8f7257-bb9a-428d-b816-27b1d1632ee1
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 97%
-
 ---
-
 # Anzeigen von Statistiken mit Bezug auf Work Manager {#view-statistics-related-to-work-manager}
 
 Auf der Registerkarte „Work Manager“ werden Statistiken angezeigt, die mit Work Manager-Elementen zusammenhängen. Diese Arbeitselemente weisen je nachdem, wo sie sich in ihrem Prozess befinden, unterschiedliche Status auf. (Siehe [Status (nur für Standard-, Workflow- oder Ereigniskategorien)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) Sie können die Informationen so filtern, dass nur eine Teilmenge der Elemente angezeigt wird, indem Sie die verschiedenen verfügbaren Optionen verwenden (z. B. Status oder Kategorie). Sie können die entstehenden Arbeits- oder Auftragselemente (in aufsteigender oder absteigender Reihenfolge) sortieren, indem Sie auf einen der Spaltenüberschriften klicken. Sie können die Arbeitselemente außerdem mithilfe der Vorgangswerkzeuge verwalten, die über der Liste der Arbeitselemente angezeigt werden.

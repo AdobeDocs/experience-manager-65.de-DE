@@ -10,13 +10,20 @@ exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 0%
-
+source-wordcount: '659'
+ht-degree: 1%
 ---
-
 # Aktualisieren auf AEM 6.5 Communities {#upgrading-to-aem-communities}
 
 Je nach Topologie und Funktionen der einzelnen Sites sind beim Upgrade auf AEM Communities 6.5 oder beim Installieren des neuesten Feature Packs möglicherweise die folgenden Aktionen erforderlich.
@@ -36,32 +43,32 @@ Siehe Abschnitt [MSRP Reindex Tool](/help/communities/msrp.md#msrp-reindex-tool)
 
 ## Aktualisieren von AEM 6.0 {#upgrading-from-aem}
 
-Wenn bereits vorhandener benutzergenerierter Inhalt beibehalten werden muss, hängt die Möglichkeit dazu davon ab, ob der benutzergenerierte Inhalt in der Bereitstellung [On-Premise](#on-premise-storage) oder in der [Adobe-Cloud gespeichert &#x200B;](#adobe-cloud-storage).
+Wenn bereits vorhandener benutzergenerierter Inhalt beibehalten werden muss, hängt die Möglichkeit dazu davon ab, ob der benutzergenerierte Inhalt in der Bereitstellung [On-Premise](#on-premise-storage) oder in der [Adobe Cloud](#adobe-cloud-storage) gespeichert wurde.
 
-### Adobe-Cloud-Speicher {#adobe-cloud-storage}
+### Adobe Cloud-Speicher {#adobe-cloud-storage}
 
 Wenn die aktualisierte Site für die Verwendung des Adobe-Cloud-Speichers konfiguriert wurde, kann sie (falsch) so aussehen, als ob der gesamte benutzergenerierte Inhalt (UGC) verloren gegangen ist, da die SRP-Methoden den bereits vorhandenen benutzergenerierten Inhalt (UGC) nicht am alten Speicherort finden können.
 
 Daher besteht die Möglichkeit, ASRP anzuweisen, `AEM 6.0 compatability-mode` für den Zugriff auf benutzergenerierten Inhalt zu verwenden.
 
-Für alle AEM 6.3-Autoren- und Veröffentlichungsinstanzen:
+Für alle Autoren- und Veröffentlichungsinstanzen von AEM 6.3:
 
 * Melden Sie sich mit Administratorrechten an.
 * Konfigurieren Sie [ASRP](/help/communities/asrp.md).
 * Führen Sie die folgenden Schritte aus, um bereits vorhandenen benutzergenerierten Inhalt sichtbar zu machen:
 
-   * Navigieren Sie zur Web-Konsole:
+  * Navigieren Sie zur Web-Konsole:
 
-      * Beispiel: [https://&lt;Host>:&lt;Port>/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+    * Beispiel: [https://&lt;Host>:&lt;Port>/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
-      * Suchen Sie die Konfiguration für **AEM Communities Utilities**.
-      * Wählen Sie aus, um das Konfigurationsbedienfeld zu erweitern:
+    * Suchen Sie die Konfiguration für **AEM Communities Utilities**.
+    * Wählen Sie aus, um das Konfigurationsbedienfeld zu erweitern:
 
-         * *Deaktivieren* `Cloud Storage`
+      * *Deaktivieren* `Cloud Storage`
 
-         * Wählen Sie **Speichern** aus
+      * Wählen Sie **Speichern** aus
 
-     ![Dienstprogramme](assets/utilities.png)
+    ![Dienstprogramme](assets/utilities.png)
 
 ### On-Premise-Speicher {#on-premise-storage}
 
@@ -72,7 +79,7 @@ Zu diesem Zweck ist auf GitHub ein Open-Source-Migrations-Tool verfügbar:
 
 ### Java-APIs {#java-apis}
 
-Nach der Aktualisierung von AEM 6.0 Social Communities auf AEM 6.3 Communities wurden viele APIs in verschiedene Pakete neu organisiert. Die meisten Probleme sollten bei der Verwendung einer IDE zur Anpassung von Communities-Funktionen einfach behoben werden können.
+Beim Upgrade von den sozialen Communities in AEM 6.0 auf die Communities in AEM 6.3 wurden viele APIs in verschiedene Pakete neu organisiert. Die meisten Probleme sollten bei der Verwendung einer IDE zur Anpassung von Communities-Funktionen einfach behoben werden können.
 
 Weitere Informationen zum veralteten SocialUtils-Paket finden Sie unter [SocialUtils-Refaktorierung](/help/communities/socialutils.md).
 
@@ -96,8 +103,8 @@ Zusätzlich zum Verschieben von benutzergenerierten Inhalten aus früheren Versi
 
 Konzeptionell gibt es drei Generationen von Communitys :
 
-**Gen 1**: Zwischen CQ 5.4 und AEM 5.6.0 sind dies die **collab**-Komponenten, die UGC im lokalen Repository mithilfe von Replikation zur plattformübergreifenden Synchronisierung von UGC gespeichert haben. Weitere Unterschiede bestehen in der Implementierung mithilfe von Java Server Pages (JSP) und der Blog-Funktion, die das Authoring nur in der Autorenumgebung umfasst.
+**Gen 1**: Ungefähr in CQ 5.4 bis AEM 5.6.0 sind dies die **collab**-Komponenten, die UGC im lokalen Repository gespeichert haben, wobei Replikation als Mittel zur plattformübergreifenden Synchronisierung von UGC verwendet wurde. Weitere Unterschiede bestehen in der Implementierung mithilfe von Java Server Pages (JSP) und der Blog-Funktion, die das Authoring nur in der Autorenumgebung umfasst.
 
-**Gen 2**: Von AEM 5.6.1 bis AEM 6.1 ist dies eine Mischung aus **collab** und **social** Komponenten. Mit AEM 6.0 wurde das neue [Social Component Framework](/help/communities/scf.md) (SCF) eingeführt, und mit AEM 6.2 wurde ein [gemeinsamer UGC-Speicher](/help/communities/working-with-srp.md) eingeführt, dem der UGC über einen [Speicherressourcenanbieter](/help/communities/srp.md) (SRP) aufgerufen wird.
+**Gen 2**: Von AEM 5.6.1 bis AEM 6.1 ist dies eine Mischung aus **collab** und **social** Komponenten. AEM 6.0 führte das neue [Social Component Framework](/help/communities/scf.md) (SCF) ein und AEM 6.2 führte einen [gemeinsamen UGC-Speicher](/help/communities/working-with-srp.md) ein, bei dem der UGC über einen [Speicherressourcenanbieter](/help/communities/srp.md) (SRP) aufgerufen wird.
 
-**Gen 3**: Ab AEM 6.2 gibt es nur noch **Social-**-Komponenten, die in SCF als Handlebars-Komponenten (HBS) implementiert sind und eine Auswahl von SRP für UGC erfordern.
+**Gen 3**: Ab AEM 6.2 gibt es nur **Social-**-Komponenten, die in SCF als Handlebars-Komponenten (HBS) implementiert sind, für die eine Auswahl von SRP für benutzergenerierten Inhalt erforderlich ist.

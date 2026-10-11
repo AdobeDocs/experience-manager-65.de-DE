@@ -9,13 +9,30 @@ exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2769'
-ht-degree: 99%
-
+source-wordcount: '2794'
+ht-degree: 98%
 ---
-
 # Arbeiten mit Adobe Campaign Classic und Adobe Campaign Standard{#working-with-adobe-campaign-classic-and-adobe-campaign-standard}
 
 Sie können E-Mail-Inhalte in AEM erstellen und diese in Adobe Campaign-E-Mails verarbeiten. Gehen Sie dazu wie folgt vor:
@@ -250,7 +267,7 @@ In Adobe Campaign Standard können Sie in AEM erstellte Inhalte mithilfe der fo
 * Eine E-Mail.
 * Eine E-Mail-Vorlage.
 
-Auf diese Weise können Sie den Inhalt versenden.  Ob ein Newsletter mit einem einzelnen Versand verknüpft ist, erkennen Sie am Code, der auf der Seite angezeigt wird.
+Auf diese Weise können Sie den Inhalt versenden. Ob ein Newsletter mit einem einzelnen Versand verknüpft ist, erkennen Sie am Code, der auf der Seite angezeigt wird.
 
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
@@ -292,15 +309,15 @@ So verknüpfen Sie in AEM erstellte Seiten mit Adobe Campaign-E-Mails:
    Wurde die E-Mail mit AEM-Inhalten verknüpft, können ihre Inhalte nicht in Adobe Campaign bearbeitet werden.
 
 1. Geben Sie andere E-Mail-Parameter (Zielgruppen, Ausführungsplan) im Dashboard an.
-1. Führen Sie den E-Mail-Versand aus.  Während der Versandsanalyse wird die aktuelle Version des AEM-Inhalts abgerufen.
+1. Führen Sie den E-Mail-Versand aus. Während der Versandsanalyse wird die aktuelle Version des AEM-Inhalts abgerufen.
 
    >[!NOTE]
    >
-   >Wenn der Inhalt in AEM aktualisiert wird, während er mit einer E-Mail verknüpft ist, wird er in Adobe Campaign automatisch während der Analyse aktualisiert.  Die Synchronisierung kann auch manuell mithilfe der Option **Adobe Experience Manager-Inhalt aktualisieren** in der Inhaltsaktionsleiste durchgeführt werden.
+   >Wenn der Inhalt in AEM aktualisiert wird, während er mit einer E-Mail verknüpft ist, wird er in Adobe Campaign automatisch während der Analyse aktualisiert. Die Synchronisierung kann auch manuell mithilfe der Option **Adobe Experience Manager-Inhalt aktualisieren** in der Inhaltsaktionsleiste durchgeführt werden.
    >
-   >Sie können die Verknüpfung einer E-Mail mit AEM-Inhalten löschen, indem Sie **Verknüpfung mit Adobe Experience Manager-Inhalt löschen** aus der Inhaltsaktionsleiste auswählen. Diese Schaltfläche steht nur zur Verfügung, wenn der Inhalt bereits mit dem Versand verknüpft ist.  Um einen anderen Inhalt mit einem Versand zu verknüpfen, müssen Sie die aktuelle Verknüpfung des Inhalts löschen, bevor Sie eine neue Verknüpfung erstellen können.
+   >Sie können die Verknüpfung einer E-Mail mit AEM-Inhalten löschen, indem Sie **Verknüpfung mit Adobe Experience Manager-Inhalt löschen** aus der Inhaltsaktionsleiste auswählen. Diese Schaltfläche steht nur zur Verfügung, wenn der Inhalt bereits mit dem Versand verknüpft ist. Um einen anderen Inhalt mit einem Versand zu verknüpfen, müssen Sie die aktuelle Verknüpfung des Inhalts löschen, bevor Sie eine neue Verknüpfung erstellen können.
    >
-   >Ist die Verknüpfung gelöscht, werden lokale Inhalte beibehalten und diese können in Adobe Campaign bearbeitet werden.  Wenn Sie den Inhalt nach der Änderung wieder verknüpfen, gehen alle Änderungen verloren.
+   >Ist die Verknüpfung gelöscht, werden lokale Inhalte beibehalten und diese können in Adobe Campaign bearbeitet werden. Wenn Sie den Inhalt nach der Änderung wieder verknüpfen, gehen alle Änderungen verloren.
 
 ### Synchronisieren von in AEM erstelltem Inhalt mit einem Versand von Adobe Campaign Classic {#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic}
 
@@ -323,7 +340,7 @@ Ist ein Newsletter in AEM mit einer Bereitstellung verknüpft, wird der Bereitst
 >
 >[!NOTE]
 >
->Der Workflow-Schritt **In Adobe Campaign veröffentlichen** ist in AEM 6.1 veraltet. Dieser Schritt war Teil der Integration von AEM 6.0 in Adobe Campaign und ist nicht mehr erforderlich.
+>Der Workflow-Schritt **In Adobe Campaign veröffentlichen** wird in AEM 6.1 nicht mehr unterstützt. Dieser Schritt war Teil der Integration von AEM 6.0 mit Adobe Campaign und ist nicht mehr erforderlich.
 
 So synchronisieren Sie in AEM erstellte Inhalte mit einem Versand von Adobe Campaign:
 
@@ -355,7 +372,7 @@ So synchronisieren Sie in AEM erstellte Inhalte mit einem Versand von Adobe Cam
    ![chlimage_1-42](assets/chlimage_1-42a.png)
 
 1. Geben Sie die anderen Parameter der Bereitstellung an (Ziel usw.)
-1. Starten Sie, falls erforderlich, den Genehmigungsprozess für Bereitstellungen in Adobe Campaign. Zusätzlich zu den in Adobe Campaign konfigurierten Genehmigungen (Budget, Ziel, usw.) muss der Inhalt in AEM genehmigt werden.  Der Inhalt kann nur dann in Adobe Campaign genehmigt werden, wenn er bereits in AEM genehmigt worden ist.
+1. Starten Sie, falls erforderlich, den Genehmigungsprozess für Bereitstellungen in Adobe Campaign. Zusätzlich zu den in Adobe Campaign konfigurierten Genehmigungen (Budget, Ziel, usw.) muss der Inhalt in AEM genehmigt werden. Der Inhalt kann nur dann in Adobe Campaign genehmigt werden, wenn er bereits in AEM genehmigt worden ist.
 1. Führen Sie den Versand aus. Während der Versandanalyse wird die aktuellste Version des AEM-Inhalts wiederherstellt.
 
    >[!NOTE]

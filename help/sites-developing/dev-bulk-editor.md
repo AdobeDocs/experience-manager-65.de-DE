@@ -9,13 +9,22 @@ exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1840'
 ht-degree: 98%
-
 ---
-
 # Entwickeln des Bulk Editors{#developing-the-bulk-editor}
 
 In diesem Abschnitt wird erläutert, wie Sie das Bulk Editor-Tool entwickeln und die Produktlisten-Komponente erweitern, die auf dem Bulk Editor basiert.
@@ -60,7 +69,7 @@ Nachstehend finden Sie eine Liste der Abfrageparameter für den Bulk Editor:
   </tr>
   <tr>
    <td> contentMode/cm<br /> </td>
-   <td> Boolesch</td>
+   <td> Boolescher Wert</td>
    <td> Wenn „true“, ist der Inhaltsmodus aktiviert<br /> </td>
   </tr>
   <tr>
@@ -75,7 +84,7 @@ Nachstehend finden Sie eine Liste der Abfrageparameter für den Bulk Editor:
   </tr>
   <tr>
    <td> initialSearch/is<br /> </td>
-   <td> Boolesch</td>
+   <td> Boolescher Wert</td>
    <td> Wenn „true“, wird die Abfrage beim Laden der Seite ausgeführt<br /> </td>
   </tr>
   <tr>
@@ -85,77 +94,77 @@ Nachstehend finden Sie eine Liste der Abfrageparameter für den Bulk Editor:
   </tr>
   <tr>
    <td> showGridOnly/sgo<br /> </td>
-   <td> Boolesch</td>
+   <td> Boolescher Wert</td>
    <td> Wenn „true“, wird nur das Raster und nicht das Suchfeld angezeigt <br /> </td>
   </tr>
   <tr>
    <td> searchPanelCollapsed/spc</td>
-   <td> Boolesch</td>
+   <td> Boolescher Wert</td>
    <td> Wenn „true“, wird das Suchfeld beim Laden reduziert</td>
   </tr>
   <tr>
    <td> hideRootPath/hrp</td>
-   <td> Boolesch</td>
+   <td> Boolescher Wert</td>
    <td> Wenn „true“, blendet das Stammpfadfeld aus</td>
   </tr>
   <tr>
    <td> hideQueryParams/hqp</td>
-   <td> Boolesch</td>
+   <td> Boolescher Wert</td>
    <td> wenn „true“, wird das Abfragefeld ausgeblendet</td>
   </tr>
   <tr>
    <td> hideContentMode/hcm</td>
-   <td> Boolesch</td>
+   <td> Boolescher Wert</td>
    <td> Wenn „true“, wird das Feld für den Inhaltsmodus ausgeblendet</td>
   </tr>
   <tr>
    <td> hideColsSelection/hcs</td>
-   <td> Boolesch</td>
+   <td> Boolescher Wert</td>
    <td> Wenn „true“, wird das Spaltenauswahlfeld ausgeblendet</td>
   </tr>
   <tr>
    <td> hideExtraCols/hec</td>
-   <td> Boolesch</td>
+   <td> Boolescher Wert</td>
    <td> Wenn „true“, wird das zusätzliche Spaltenfeld ausgeblendet</td>
   </tr>
   <tr>
    <td> hideSearchButton</td>
-   <td> Boolesch</td>
+   <td> Boolescher Wert</td>
    <td> Wenn „true“, wird die Suchschaltfläche ausgeblendet</td>
   </tr>
   <tr>
    <td> hideSaveButton/savep</td>
-   <td> Boolesch</td>
+   <td> Boolescher Wert</td>
    <td> Wenn „true“, wird die Schaltfläche „Speichern“ ausgeblendet</td>
   </tr>
   <tr>
    <td> hideExportButton/hexpb</td>
-   <td> Boolesch</td>
+   <td> Boolescher Wert</td>
    <td> Wenn „true“, wird die Export-Schaltfläche ausgeblendet</td>
   </tr>
   <tr>
    <td> hideImportButton/hib</td>
-   <td> Boolesch</td>
+   <td> Boolescher Wert</td>
    <td> Wenn „true“, wird die Importschaltfläche ausgeblendet</td>
   </tr>
   <tr>
    <td> hideResultNumber/hrn</td>
-   <td> Boolesch</td>
+   <td> Boolescher Wert</td>
    <td> Wenn „true“, wird der Text der Rastersuchergebnisnummer ausgeblendet</td>
   </tr>
   <tr>
    <td> hideInsertButton/hinsertb</td>
-   <td> Boolesch</td>
+   <td> Boolescher Wert</td>
    <td> Wenn „true“, wird die Rastereinfüge-Schaltfläche ausgeblendet</td>
   </tr>
   <tr>
    <td> hideDeleteButton/hdelb</td>
-   <td> Boolesch</td>
+   <td> Boolescher Wert</td>
    <td> Wenn „true“, wird die Schaltfläche zum Löschen des Rasters ausgeblendet</td>
   </tr>
   <tr>
    <td> hidePathCol/hpc</td>
-   <td> Boolesch</td>
+   <td> Boolescher Wert</td>
    <td> Wenn „true“, wird die Spalte „path“ des Rasters ausgeblendet</td>
   </tr>
  </tbody>

@@ -9,13 +9,29 @@ feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 91%
-
 ---
-
 # Einführung in die Benutzeroberfläche für interaktive Kommunikationserstellung{#introduction-to-interactive-communication-authoring-ui}
 
 Die Benutzeroberfläche für das Erstellen von [interaktiver Kommunikation](/help/forms/using/interactive-communications-overview.md) ist intuitiv und bietet Folgendes für die Erstellung des Druck- und Web-Kanals der interaktiven Kommunikation:
@@ -58,7 +74,7 @@ Im Inhaltsbrowser können Sie die Objekthierarchie des Dokuments für den ausgew
 * **Eigenschaften-Browser**
 
   Hier können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. So zeigen Sie beispielsweise die Eigenschaften des Dokumentcontainers an:
-Wählen Sie eine Komponente aus, wählen Sie ![field-level](assets/field-level.png) > **Dokumenten-Container** und klicken Sie dann auf ![cmppr](assets/cmppr.png).
+  Wählen Sie eine Komponente aus, wählen Sie ![field-level](assets/field-level.png) > **Dokumenten-Container** und klicken Sie dann auf ![cmppr](assets/cmppr.png).
 
 * **Assets-Browser**
 Trennt verschiedene Inhaltstypen wie Layout-Fragmente, Bilder, Dokumente, Seiten, Videos. Der Autor kann Assets in die interaktive Kommunikation ziehen und ablegen.
@@ -91,10 +107,10 @@ Die wichtigsten Punkte beim Arbeiten mit interaktiven Kommunikationskomponenten 
 * Eine Komponente wird mit ihrem Elementnamen gekennzeichnet. Wenn Sie ![cmppr](assets/cmppr.png) auswählen, können Sie den Namen der Komponente ändern, indem Sie den Wert des Felds „Elementname“ im Eigenschaften-Browser ändern. Das Feld „Elementname“ akzeptiert nur Buchstaben, Zahlen, Bindestriche (-) und Unterstriche (_). Andere Sonderzeichen sind nicht zulässig, und der Elementname sollte mit einem Buchstaben beginnen.
 * Sie können die Titel-Eigenschaft einer Komponente einer interaktiven Kommunikation inline im Editor ändern, ohne den Eigenschaften-Browser zu öffnen, solange der Titel in der interaktiven Kommunikation sichtbar ist. Gehen Sie dazu wie folgt vor:
 
-   1. Wählen Sie eine Komponente aus, in der die Eigenschaft „Titel“ vorhanden und deren Eigenschaft „Titel ausblenden“ deaktiviert ist.
-   1. Wählen Sie ![aem_6_3_edit](assets/aem_6_3_edit.png) aus, damit der Titel bearbeitet werden kann.
+  1. Wählen Sie eine Komponente aus, in der die Eigenschaft „Titel“ vorhanden und deren Eigenschaft „Titel ausblenden“ deaktiviert ist.
+  1. Wählen Sie ![aem_6_3_edit](assets/aem_6_3_edit.png) aus, damit der Titel bearbeitet werden kann.
 
-   1. Ändern Sie den Titel und drücken Sie die Eingabetaste oder wählen Sie eine beliebige Stelle außerhalb der Komponente aus, um die Änderungen zu speichern. Drücken Sie die Esc-Taste, um die Änderungen zu verwerfen.
+  1. Ändern Sie den Titel und drücken Sie die Eingabetaste oder wählen Sie eine beliebige Stelle außerhalb der Komponente aus, um die Änderungen zu speichern. Drücken Sie die Esc-Taste, um die Änderungen zu verwerfen.
 
 ## Komponenten-Symbolleiste {#component-toolbar}
 
@@ -134,18 +150,18 @@ Außerdem können Sie mit der Option **Ersetzen** in der Symbolleiste die vorhan
 
 Die Seitensymbolleiste oben bietet Optionen, mit denen Sie die interaktive Kommunikation in der Vorschau anzeigen und ihre Eigenschaften ändern können. Sie können beim Bearbeiten die interaktive Kommunikation in der Vorschau anzeigen und die gewünschten Änderungen vornehmen. In der Seitensymbolleiste wird Folgendes angezeigt:
 
-* Seitliches Bedienfeld ein/aus![&#x200B; toggle-side-panel](assets/toggle-side-panel.png): Hiermit können Sie die Seitenleiste ein- oder ausblenden.
+* Seitliches Bedienfeld ein/aus![ toggle-side-panel](assets/toggle-side-panel.png): Hiermit können Sie die Seitenleiste ein- oder ausblenden.
 * Seiteninformationen ![pageinformationad](assets/pageinformationad.png): Hiermit können Sie die Seiteneigenschaften anzeigen.
 * Emulator ![ruler](assets/ruler.png): Hiermit können Sie die Darstellung der interaktiven Kommunikation für verschiedene Display-Größen (z. B. für Tablets und Smartphones) emulieren.
 * Bearbeiten: Hiermit können Sie andere Modi auswählen, wie etwa: Bearbeiten, Stil, Entwickler und Design.
 
-   * Bearbeiten: Hiermit können Sie die Eigenschaften der interaktiven Kommunikation und ihre Komponenten bearbeiten. Dies tun Sie, indem Sie beispielsweise eine Komponente hinzufügen, ein Bild ablegen oder obligatorische Felder festlegen.
-   * Stil: Hiermit können Sie das Erscheinungsbild von Komponenten der interaktiven Kommunikation stilistisch anpassen. Im Stilmodus können Sie beispielsweise einen Bereich auswählen und dessen Hintergrundfarbe festlegen.
-   * Entwickler: Hier haben Entwickler folgende Möglichkeiten:
+  * Bearbeiten: Hiermit können Sie die Eigenschaften der interaktiven Kommunikation und ihre Komponenten bearbeiten. Dies tun Sie, indem Sie beispielsweise eine Komponente hinzufügen, ein Bild ablegen oder obligatorische Felder festlegen.
+  * Stil: Hiermit können Sie das Erscheinungsbild von Komponenten der interaktiven Kommunikation stilistisch anpassen. Im Stilmodus können Sie beispielsweise einen Bereich auswählen und dessen Hintergrundfarbe festlegen.
+  * Entwickler: Hier haben Entwickler folgende Möglichkeiten:
 
-      * Entdecken Sie, woraus interaktive Kommunikation besteht.
-      * Debugging der am Formular durchgeführten Aktionen zur Behebung von Fehlern.
+    * Entdecken Sie, woraus interaktive Kommunikation besteht.
+    * Debugging der am Formular durchgeführten Aktionen zur Behebung von Fehlern.
 
-   * Ziel: Hier können Sie benutzerdefinierte Komponenten oder auch vordefinierte, nicht in der Seitenleiste aufgelistete Komponenten aktivieren oder deaktivieren.
+  * Ziel: Hier können Sie benutzerdefinierte Komponenten oder auch vordefinierte, nicht in der Seitenleiste aufgelistete Komponenten aktivieren oder deaktivieren.
 
 * Vorschau: Hier können Sie das Aussehen der interaktiven Kommunikation in der Vorschau anzeigen, wenn sie veröffentlicht wird.

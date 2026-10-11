@@ -9,20 +9,24 @@ exl-id: db1c33c9-8539-436d-b4d0-3d5e6fd688ed
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '320'
 ht-degree: 3%
-
 ---
-
 # Exportieren von Inhalten mit Inhaltseigenschaften{#using-content-properties-to-export-content}
 
 {{ue-over-mobile}}
 
 Apps werden in AEM als *cq:Pages* dargestellt.
 
-Sie verwenden dieselben gemeinsamen Eigenschaften wie in jeder *cq:Page* zusätzlich zu anderen, die unten gezeigt werden und Eigenschaften darstellen, die die Integration unterstützen.
+Sie verwenden dieselben gemeinsamen Eigenschaften wie in jedem *cq:Page* zusätzlich zu anderen, die unten gezeigt werden und Integrationsunterstützende Eigenschaften darstellen.
 
 ## App-Eigenschaften {#app-properties}
 
@@ -38,7 +42,7 @@ Die folgende Tabelle zeigt &quot;**und Knoten**.
   <tr>
    <td>DPS-Cloud-Konfiguration</td>
    <td>string:path</td>
-   <td><p>Pfad zu einem konfigurierten Mobile-On-Demand-Cloud Service. Wird für AEM Mobile-zu-Mobile-On-Demand-Aktionen (API-Aufruf) verwendet</p> <p>Diese Zuordnung wird über die Kachel Verbindung verwalten konfiguriert, wenn ein Autor einen Mobile-On-Demand-Cloud Service auswählt, mit dem die App verknüpft werden soll.</p> </td>
+   <td><p>Pfad zu einer konfigurierten Mobile-On-Demand-Cloud Service. Wird für AEM Mobile-zu-Mobile-On-Demand-Aktionen (API-Aufruf) verwendet</p> <p>Diese Zuordnung wird über die Kachel Verbindung verwalten konfiguriert, wenn ein Autor eine Mobile On-Demand-Cloud Service auswählt, mit der die App verknüpft werden soll.</p> </td>
   </tr>
   <tr>
    <td>dps-exportTemplate</td>
@@ -48,7 +52,7 @@ Die folgende Tabelle zeigt &quot;**und Knoten**.
   <tr>
    <td>dps-projectId</td>
    <td>Zeichenfolge</td>
-   <td><p>ID/URI des mobilen On-Demand-Projekts, mit dem diese App verknüpft/gebunden ist.</p> <p>Diese Zuordnung wird über die Kachel Verbindung verwalten konfiguriert, wenn ein Autor das Projekt aus einer Liste der verfügbaren Projekte für den zugehörigen Mobile On-Demand-Cloud Service auswählt.</p> </td>
+   <td><p>ID/URI des mobilen On-Demand-Projekts, mit dem diese App verknüpft/gebunden ist.</p> <p>Diese Zuordnung wird über die Kachel Verbindung verwalten konfiguriert, wenn ein Autor das Projekt aus einer Liste der verfügbaren Projekte für die zugehörige Mobile On-Demand-Cloud Service auswählt.</p> </td>
   </tr>
   <tr>
    <td>dps-projectTitle</td>

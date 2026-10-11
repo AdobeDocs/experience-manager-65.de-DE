@@ -1,18 +1,31 @@
 ---
-title: Barrierefreie Funktionen und Schnittstellen von  [!DNL Adobe Experience Manager Assets]
-description: Erfahren Sie, wie die Funktionen für die Barrierefreiheit in  [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] Benutzenden mit Behinderungen helfen.
+title: Barrierefreie Funktionen und Schnittstellen von [!DNL Adobe Experience Manager Assets]
+description: Erfahren Sie, wie die Funktionen für die Barrierefreiheit in [!DNL Adobe Experience Manager] 6.5 Benutzenden mit Behinderungen helfen [!DNL Assets].
 contentOwner: AG
 feature: Asset Management
 role: User, Developer, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 57%
-
+source-wordcount: '1934'
+ht-degree: 56%
 ---
-
 <!--
 Possible topics to cover in this article are below.
 
@@ -171,7 +184,7 @@ Viele Asset-Management-Aufgaben wie CRUD-Vorgänge, das Herunterladen von Assets
 Bei Metadatenvorgängen, die normalerweise von Rollen wie Marketing-Experten und Administratoren ausgeführt werden, verbessern die folgenden Funktionen die Barrierefreiheit:
 
 * Die Option [!UICONTROL Speichern und schließen] auf der Seite [!UICONTROL Eigenschaften] des Assets kann jetzt über die Tastatur aufgerufen werden.
-* Bildschirmlesehilfen geben die Optionen zum Löschen der ausgewählten Tags auf der Registerkarte [!UICONTROL Standard] des Assets (Eigenschaften[!UICONTROL &#x200B; an].
+* Bildschirmlesehilfen geben die Optionen zum Löschen der ausgewählten Tags auf der Registerkarte [!UICONTROL Standard] des Assets (Eigenschaften[!UICONTROL  an].
 * Benutzende können das Popup-Dialogfeld für die Datumsauswahl mit einer Tastatur verwenden. Das Benutzeroberflächenelement zur Datumsauswahl wird verwendet, um Ein- und Ausschaltzeiten festzulegen und ein Datum auszuwählen.
 * Die Funktion zum Ziehen mit der Tastatur funktioniert [!UICONTROL Metadatenschema-Editor] im Durchsuchen-Modus der Bildschirmlesehilfe korrekt.
 * Ein Benutzer kann die Tastatur verwenden, um den Fokus auf das Feld **Benutzer oder Gruppe hinzufügen** zu verschieben.
@@ -206,9 +219,9 @@ Beim Freigeben von Assets verbessern folgende Funktionen die Barrierefreiheit:
 
 * Wenn Sie im Dialogfeld für die Linkfreigabe im Durchsuchen-Modus navigieren,
 
-   * liest die Sprachausgabe die Tabelleninformationen nicht vor, wenn das Dialogfeld geladen wird.
-   * Navigieren Sie zu allen aufgelisteten Vorschlägen.
-   * liest die Sprachausgabe die für die Felder „E-Mail-Adresse hinzufügen“ und „Suchen“ angezeigten Vorschläge vor.
+  * liest die Sprachausgabe die Tabelleninformationen nicht vor, wenn das Dialogfeld geladen wird.
+  * Navigieren Sie zu allen aufgelisteten Vorschlägen.
+  * liest die Sprachausgabe die für die Felder „E-Mail-Adresse hinzufügen“ und „Suchen“ angezeigten Vorschläge vor.
 
 ## Barrierefreie Dokumentation {#accessible-docs}
 
@@ -227,5 +240,5 @@ Um Feedback zu geben, Fragen zu stellen und Produktverbesserungen in Bezug auf d
 >
 >* [Funktionen für die Barrierefreiheit in  [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 >* [Versionshinweise zu den in den einzelnen Service Pack-Versionen vorgenommenen Verbesserungen](/help/release-notes/release-notes.md).
->* Hinweise zur Barrierefreiheit in [[!DNL Adobe Experience Manager] &#x200B;](/help/managing/web-accessibility.md).
+>* Hinweise zur Barrierefreiheit in [[!DNL Adobe Experience Manager] ](/help/managing/web-accessibility.md).
 >* [Konformitätsberichte (ACR) und VPAT-Liste für Adobe-Lösungen](https://www.adobe.com/accessibility/compliance.html).

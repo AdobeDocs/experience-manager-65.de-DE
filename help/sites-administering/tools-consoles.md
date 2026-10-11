@@ -10,13 +10,22 @@ exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 100%
-
 ---
-
 # Die Tools-Konsolen{#tools-consoles}
 
 Die **Tools-Konsolen** bieten Zugriff auf verschiedene spezialisierte Tools, mit denen Sie Ihre Websites, digitalen Assets und andere Aspekte Ihres Content-Repositorys verwalten können. Derzeit gibt es zwei Varianten der **Tools**, je nach verwendeter Benutzeroberfläche:
@@ -373,7 +382,7 @@ Die **Tools-Konsolen** bieten Zugriff auf verschiedene spezialisierte Tools, mit
   </tr>
   <tr>
    <td>ClientContext-Konfigurationen<br /> </td>
-   <td>ClientContext ist eine dynamische Zusammenstellung von erfassten Benutzerdaten. Die Standard- und Experience Cloud-Konfigurationen finden Sie hier.<br /> </td>
+   <td>ClientContext stellt eine dynamisch zusammengestellte Sammlung von Benutzerdaten dar. Die Standard- und Experience Cloud-Konfigurationen finden Sie hier.<br /> </td>
   </tr>
   <tr>
    <td>Cloud Services-Konfigurationen<br /> </td>

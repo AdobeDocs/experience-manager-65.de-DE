@@ -10,13 +10,22 @@ exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
-workflow-type: ht
-source-wordcount: '609'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 95%
 ---
-
 # Emulatoren{#emulators}
 
 {{ue-over-mobile}}
@@ -119,14 +128,14 @@ Wenn die Seitenkomponente auf die mobile Seitenkomponente (`/libs/wcm/mobile/com
 
 * Das Initialisierungsskript des mobilen Basisemulators definiert über JavaScript Folgendes:
 
-   * Die Konfiguration für alle Emulatoren, die für die Seite definiert sind (emulatorConfigs)
-   * Der Emulator-Manager, der die Funktionalität des Emulators in die Seite über Folgendes integriert:
+  * Die Konfiguration für alle Emulatoren, die für die Seite definiert sind (emulatorConfigs)
+  * Der Emulator-Manager, der die Funktionalität des Emulators in die Seite über Folgendes integriert:
 
-     `emulatorMgr.launch(config)`;
+    `emulatorMgr.launch(config)`;
 
-     Der Emulator-Manager wird durch Folgenders definiert:
+    Der Emulator-Manager wird durch Folgenders definiert:
 
-     `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
+    `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
 
 #### Erstellen eines benutzerdefinierten mobilen Emulators {#creating-a-custom-mobile-emulator}
 
@@ -140,7 +149,7 @@ So erstellen Sie einen benutzerdefinierten mobilen Emulator:
 
    Beispielsweise können Sie auf den Knoten `/libs/wcm/mobile/components/emulators/iPhone/css` verweisen.
 
-1. Definieren Sie bei Bedarf eine JS-Client-Bibliothek, um beispielsweise ein bestimmtes Plug-in zu definieren: Name = js, Knotentyp = cq:ClientLibrary.
+1. Definieren Sie bei Bedarf eine JS-Client-Bibliothek, um beispielsweise ein bestimmtes Plug-in zu definieren: Name = js, Knotentyp = cq:ClientLibrary
 
    Beispielsweise können Sie auf den Knoten `/libs/wcm/mobile/components/emulators/base/js` verweisen.
 

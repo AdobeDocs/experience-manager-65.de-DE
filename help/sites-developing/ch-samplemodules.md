@@ -9,13 +9,24 @@ exl-id: df28180f-7af4-437d-8e91-bfd305f73113
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1190'
 ht-degree: 100%
-
 ---
-
 # Mustertypen von ContextHub-UI-Modulen {#sample-contexthub-ui-module-types}
 
 ContextHub bietet mehrere Muster-UI-Module, die Sie in Ihren Lösungen verwenden können. Die folgenden Informationen werden bereitgestellt:
@@ -55,16 +66,16 @@ Konfigurieren Sie das UI-Modul „contexthub.base“ mithilfe eines JavaScript-O
 * **storeMapping:** Ein Schlüssel-/Store-Diagramm. Verwenden Sie den Schlüssel in den Handlebar-Vorlagen, um auf die zugehörigen ContextHub-Store-Daten zuzugreifen.
 * **list:** ein Array von Elementen, die beim Klicken auf das UI-Modul als Liste in einem Popover angezeigt werden. Wenn Sie diesen Artikel einschließen, schließen Sie popoverTemplate nicht ein. Der Wert ist ein Array von Objekten mit den folgenden Schlüsseln:
 
-   * title: Der für dieses Element anzuzeigende Text
-   * image: (optional) Eine URL zu einem Bild, das links angezeigt werden soll
-   * icon: (optional) Eine CUI-Symbolklasse, die links angezeigt werden soll; wird ignoriert, wenn ein Bild angegeben ist
-   * selected: (optional) Ein boolescher Wert, der angibt, ob dieses Element als ausgewählt angezeigt werden soll (true=ausgewählt). Standardmäßig werden ausgewählte Elemente in Fettschrift angezeigt. Verwenden Sie eine `listType`-Eigenschaft, um andere Erscheinungen zu konfigurieren (siehe unten).
+  * title: Der für dieses Element anzuzeigende Text
+  * image: (optional) Eine URL zu einem Bild, das links angezeigt werden soll
+  * icon: (optional) Eine CUI-Symbolklasse, die links angezeigt werden soll; wird ignoriert, wenn ein Bild angegeben ist
+  * selected: (optional) Ein boolescher Wert, der angibt, ob dieses Element als ausgewählt angezeigt werden soll (true=ausgewählt). Standardmäßig werden ausgewählte Elemente in Fettschrift angezeigt. Verwenden Sie eine `listType`-Eigenschaft, um andere Erscheinungen zu konfigurieren (siehe unten).
 
 * **listType:** Der für Popover-Listenelemente zu verwendende Stil. Verwenden Sie einen der folgenden Werte:
 
-   * checkmark
-   * checkbox
-   * radio
+  * checkmark
+  * checkbox
+  * radio
 
 * **popoverTemplate:** eine Handlebar-Vorlage, die den Inhalt angibt, der im Popover gerendert werden soll, wenn auf das UI-Modul geklickt wird. Wenn Sie dieses Element einschließen, schließen Sie das `list`-Element nicht ein.
 

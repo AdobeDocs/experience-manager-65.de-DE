@@ -10,18 +10,25 @@ role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2073'
 ht-degree: 2%
-
 ---
-
 # Moderationskonsole {#moderation-console}
 
-In AEM Communities ist [&#x200B; Massenmoderation von Community](/help/communities/moderate-ugc.md)Inhalten sowohl in der Authoring- als auch in der Publish-Umgebung durch Administratoren und Community-Moderatoren (als Moderatoren zugewiesene vertrauenswürdige Community-Mitglieder) möglich.
+In AEM Communities ist [ Massenmoderation von Community](/help/communities/moderate-ugc.md)Inhalten sowohl in der Authoring- als auch in der Publishing-Umgebung durch Administratoren und Community-Moderatoren (als Moderatoren zugewiesene vertrauenswürdige Community-Mitglieder) möglich.
 
-Admins und Community-Moderatoren können auch [In-Context-Moderation](/help/communities/in-context.md) in der Publish-Umgebung durchführen.
+Admins und Community-Moderatoren können auch [In-Context-Moderation](/help/communities/in-context.md) in der Veröffentlichungsumgebung durchführen.
 
 Eine Funktion aller [Community-Sites](/help/communities/sites-console.md) ist ein `Administration` Menüelement, das Benutzern zur Verfügung steht, die sich mit Administratorrechten anmelden. Der `Administration`-Link bietet Zugriff auf die Moderationskonsole.
 
@@ -38,7 +45,7 @@ Die Moderationskonsole unterstützt:
 
 Nur wenn Sie als Administrator oder als Mitglied mit ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)` angemeldet sind, können Moderationsaufgaben ausgeführt werden.
 
-## Zugriff auf Publish-Umgebung {#publish-environment-access}
+## Zugriff auf die Veröffentlichungsumgebung {#publish-environment-access}
 
 Der Zugriff auf die Moderationskonsole von einer veröffentlichten Community-Site erfolgt über einen Link Administration , der angezeigt wird, wenn ein Community-Moderator angemeldet ist.
 
@@ -58,13 +65,13 @@ Nur wenn Sie als Administrator oder als Mitglied mit [Moderatorberechtigungen](/
 
 >[!NOTE]
 >
->UGC aus der Publish-Umgebung ist in der Autoreninstanz nur sichtbar, wenn das ausgewählte SRP einen gemeinsamen Speicher implementiert. Standardmäßig ist der Speicher JSRP, was kein allgemeiner Speicher für Author und Publish ist. Weitere Informationen finden Sie unter [Community-Inhaltsspeicher](/help/communities/working-with-srp.md).
+>UGC aus der Veröffentlichungsumgebung ist auf der Autoreninstanz nur sichtbar, wenn das ausgewählte SRP einen gemeinsamen Speicher implementiert. Standardmäßig ist der Speicher JSRP, was kein allgemeiner Speicher für Autor und Veröffentlichung ist. Weitere Informationen finden Sie unter [Community-Inhaltsspeicher](/help/communities/working-with-srp.md).
 
 ![ModerationConsoleAuthor](assets/moderationconsoleauthor.png)
 
 ## Benutzeroberfläche der Moderationskonsole {#moderation-console-ui}
 
-Abgesehen von der linken Navigationsleiste (die auf der Autoreninstanz, aber nicht auf Publish angezeigt wird), umfasst die Benutzeroberfläche für die Moderation die folgenden Hauptbereiche:
+Abgesehen von der linken Navigationsleiste (die auf der Autoreninstanz, aber nicht auf der Veröffentlichungsinstanz angezeigt wird), umfasst die Benutzeroberfläche für die Moderation die folgenden Hauptbereiche:
 
 * **[Navigationsleiste oben](#top-navigation-bar)**
 * **[Symbolleiste](#toolbar)**
@@ -72,7 +79,7 @@ Abgesehen von der linken Navigationsleiste (die auf der Autoreninstanz, aber nic
 
 ### Navigationsleiste oben {#top-navigation-bar}
 
-Die obere Navigationsleiste ist für alle Konsolen konstant. Weitere Informationen finden Sie unter [Grundlegende &#x200B;](/help/sites-authoring/basic-handling.md).
+Die obere Navigationsleiste ist für alle Konsolen konstant. Weitere Informationen finden Sie unter [Grundlegende ](/help/sites-authoring/basic-handling.md).
 
 ### Symbolleiste {#toolbar}
 
@@ -150,7 +157,7 @@ Site beschränkt den referenzierten UGC auf Beiträge auf ausgewählte Community
 >
 >Wenn ein Administrator auf die Konsole für die Massenmoderation zugreift, werden alle Verweise auf benutzergenerierten Inhalt angezeigt, einschließlich der Sites, die nicht mit dem Assistenten [Site-Erstellung](/help/communities/sites-console.md) erstellt wurden, z. B. die Geometrixx-Beispiele.
 >
->Wenn ein vertrauenswürdiges Community-Mitglied auf die Konsole für die Massenmoderation in Publish zugreift, werden nur Verweise auf UGC angezeigt, die für Community-Sites erstellt wurden, die das Mitglied moderieren darf. Außerdem kann er mit dem Site-Filter gefiltert werden.
+>Wenn ein vertrauenswürdiges Community-Mitglied auf die Konsole für die Massenmoderation in der Veröffentlichungsinstanz zugreift, werden nur Verweise auf UGC angezeigt, die für Community-Sites erstellt wurden, deren Moderation das Mitglied übernehmen darf. Außerdem kann er mit dem Site-Filter gefiltert werden.
 
 #### Inhaltstyp {#content-type}
 
@@ -182,9 +189,9 @@ So fügen Sie zusätzliche Ressourcen zum Filtern hinzu:
 * Wählen Sie die Konfiguration aus, damit Sie im Bearbeitungsmodus öffnen können.
 * Geben Sie den Ressourcentyp einer Komponente ein, nach der gefiltert werden soll:
 
-   * Um beispielsweise nach enthaltenen Abstimmungskomponenten zu filtern, geben Sie Folgendes ein:
+  * Um beispielsweise nach enthaltenen Abstimmungskomponenten zu filtern, geben Sie Folgendes ein:
 
-     `Voting=social/tally/components/hbs/voting`
+    `Voting=social/tally/components/hbs/voting`
 
   ![additional-contentType](assets/additional-contenttype.png)
 
@@ -227,9 +234,9 @@ Veröffentlicht Im letzten Limit zeigt der referenzierte benutzergenerierte Inha
 
 #### Empfindung {#sentiment}
 
-[Sentiment](/help/communities/moderate-ugc.md#sentiment) begrenzt den referenzierten benutzergenerierten Inhalt auf Beiträge mit einem Sentimentwert, der entweder positiv, negativ oder neutral ist.
+[Sentiment](/help/communities/moderate-ugc.md#sentiment) Beschränkt den referenzierten benutzergenerierten Inhalt auf Beiträge mit einem positiven, negativen oder neutralen Sentiment-Wert.
 
-![Gefühl](assets/sentiment.png)
+![Sentiment](assets/sentiment.png)
 
 ## Benutzerdefinierte Filter {#custom-filters}
 
@@ -241,11 +248,11 @@ Das [Beispielprojekt](https://github.com/Adobe-Marketing-Cloud/aem-communities-e
 
 So installieren Sie das Beispiel für den Tag-Filter:
 
-1. Öffnen Sie die Instanz Package Manager auf AEM-Autoreninstanz (`https://[aem-author]:4502/crx/packmgr/index.jsp`) und AEM Publish-Instanz (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
+1. Öffnen Sie den Package Manager auf der AEM-Autoreninstanz (`https://[aem-author]:4502/crx/packmgr/index.jsp`) und der AEM-Veröffentlichungsinstanz (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
 1. Erstellen Sie das Paket `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` aus GitHub-Code und installieren und aktivieren Sie es.
-1. Öffnen Sie die Bundles-Konsole auf der AEM-Autoreninstanz (`https://[aem-author]:4502/system/console/bundles`) und der AEM-Publish-Instanz (`https://[aem-publish]:4503/system/console/bundles`).
+1. Öffnen Sie die Bundles-Konsole auf der AEM-Autoreninstanz (`https://[aem-author]:4502/system/console/bundles`) und der AEM-Veröffentlichungsinstanz (`https://[aem-publish]:4503/system/console/bundles`).
 1. Erstellen Sie das Paket (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) von GitHub und installieren und aktivieren Sie es.
-1. Wechseln Sie zum Knoten **/apps/social/moderation/facets** in der AEM-Autoreninstanz (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) oder der AEM-Publish-Instanz (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
+1. Wechseln Sie zum Knoten **/apps/social/moderation/facets** in der AEM-Autoren- (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) und der AEM-Veröffentlichungsinstanz (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
 1. Fügen Sie einen technischen Benutzer **community-utility-reader** mit `jcr:read` Berechtigungen hinzu.
 
 So stellen Sie die benutzerdefinierten Filter auf vorhandenen Community-Sites bereit:
@@ -355,7 +362,7 @@ Wenn Sie mit einem einzelnen Beitrag arbeiten, wird ein Symbol „Moderationsver
 
 Um zur Inhaltsbereichsanzeige mehrerer benutzergenerierter Beiträge zurückzukehren, wählen Sie das X in der oberen rechten Ecke des Detailbereichs der Ansicht aus.
 
-Zum Beispiel:
+Beispiel:
 
 ![Moderation-History](assets/moderation-history.png)
 
@@ -369,6 +376,6 @@ Bewegen Sie dazu den Mauszeiger über den Beitrag, um das `View Detail` anzuzeig
 
 Um zur Inhaltsbereichsanzeige mehrerer benutzergenerierter Beiträge zurückzukehren, wählen Sie das X in der oberen rechten Ecke des Detailbereichs der Ansicht aus.
 
-Zum Beispiel:
+Beispiel:
 
 ![view1](assets/view1.png)

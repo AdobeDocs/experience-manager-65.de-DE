@@ -9,7 +9,21 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: f704b58a-7bd8-401e-8d7e-2cc3b580c570
-source-git-commit: d2ae4817720cae92b038789804124e0c2465f9c8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 90%
@@ -32,7 +46,7 @@ Dieses Dokument enthält Anweisungen zum Beheben von zwei kritischen Sicherheits
 
 | AEM Forms-Version | Erforderliche Aktion |
 |-------------------|-----------------|
-| 6.5.22.0 | &#x200B;1. [Laden Sie den Hotfix für Ihre Umgebung &#x200B;](/help/release-notes/aem-forms-hotfix.md). </br> 2. Um diesen Fix zu installieren, folgen Sie den Anweisungen unter [Installieren des Service Packs auf AEM Forms auf JEE](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). |
+| 6.5.22.0 | &#x200B;1. [Laden Sie den Hotfix für Ihre Umgebung ](/help/release-notes/aem-forms-hotfix.md). </br> 2. Um diesen Fix zu installieren, folgen Sie den Anweisungen unter [Installieren des Service Packs auf AEM Forms auf JEE](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). |
 | 6.5.17.0–6.5.21.0 | [Verwenden Sie manuelle Abhilfemaßnahmen](#manual-mitigation-steps). |
 | 6,5 – 6.5.16.0 | &#x200B;1. [Installieren Sie das neueste Service Pack.](/help/release-notes/release-notes.md)<br>. [Implementieren Sie die geeignete Lösung](#version-specific-solutions) basierend auf Ihrer aktualisierten Version. |
 

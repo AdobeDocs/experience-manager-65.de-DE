@@ -9,26 +9,40 @@ exl-id: 74bf0e77-f47b-475a-b2a7-52cfb3baaa22
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 94%
-
+source-wordcount: '372'
+ht-degree: 95%
 ---
-
 # Grundlagen zum Verwalten von Zertifikaten und Anmeldeinformationen {#basics-of-managing-certificates-and-credentials}
 
 Eine *Berechtigung* enthält Informationen zu Ihrem privaten Schlüssel, der zum Signieren bzw. Identifizieren von Dokumenten benötigt wird. Ein *Zertifikat* enthält Informationen zum öffentlichen Schlüssel, den Sie für die Trust Store-Verwaltung konfigurieren. AEM Forms verwendet Zertifikate und Berechtigungen für mehrere Zwecke:
 
 * Acrobat Reader DC Extensions verwendet Anmeldeinformationen zur Aktivierung von Adobe Reader-Verwendungsrechten in PDF-Dokumenten. (Siehe [Konfigurieren von Berechtigungen für die Verwendung mit Acrobat Reader DC-Erweiterungen](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
-* Sie können Rights Management konfigurieren, um nur Berechtigungen vertrauenswürdiger Herausgeberinnen und Herausgeber für die Verwendung in Acrobat anzuzeigen.  (Siehe [Konfigurieren der Zertifikatanzeigeeinstellungen](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) Der Gebrauchsname (CN) muss im Rights Management vorhanden sein.
-* Der Signature-Dienst greift auf Zertifikate und Berechtigungen zu.  Weitere Informationen zum Signature-Dienst finden Sie in der [Dienste-Referenz](https://www.adobe.com/go/learn_aemforms_services_65_de).
+* Sie können Rights Management konfigurieren, um nur Berechtigungen vertrauenswürdiger Herausgeberinnen und Herausgeber für die Verwendung in Acrobat anzuzeigen. (Siehe [Anzeigeeinstellungen für Rights Management konfigurieren](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) Der Gebrauchsname (CN) muss im Zertifikat vorhanden sein.
+* Der Signature-Dienst greift auf Zertifikate und Berechtigungen zu. Weitere Informationen zum Signature-Dienst finden Sie in der [Dienste-Referenz](https://www.adobe.com/go/learn_aemforms_services_65_de).
 
 **Generieren eines Schlüsselpaars**
 
-AEM Forms verwendet den Trust Store zum Speichern und Verwalten von Zertifikaten, Berechtigungen und Zertifikatssperrlisten (CRLs).  Zusätzlich können Sie ein unabhängiges HSM-Gerät (Hardware-Sicherheitsmodul) zum Speichern privater Schlüssel verwenden.
+AEM Forms verwendet den Trust Store zum Speichern und Verwalten von Zertifikaten, Berechtigungen und Zertifikatssperrlisten (CRLs). Zusätzlich können Sie ein unabhängiges HSM-Gerät (Hardware-Sicherheitsmodul) zum Speichern privater Schlüssel verwenden.
 
-AEM Forms bietet keine Möglichkeit, ein Schlüsselpaar zu generieren. Sie können jedoch eines mithilfe von Werkzeugen wie dem Java-Keytool generieren und in den Trust Store von AEM Forms importieren.  Weitere Informationen zum Java-Keytool finden Sie hier:
+AEM Forms bietet keine Möglichkeit, ein Schlüsselpaar zu generieren. Sie können jedoch eines mithilfe von Werkzeugen wie dem Java-Keytool generieren und in den Trust Store von AEM Forms importieren. Weitere Informationen zum Java-Keytool finden Sie hier:
 
 [https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html](https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html)
 

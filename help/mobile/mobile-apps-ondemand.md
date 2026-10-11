@@ -9,30 +9,34 @@ exl-id: 357e75f8-2c98-4377-afef-016d58505b4d
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '269'
 ht-degree: 4%
-
 ---
-
 # Mobile On-Demand{#mobile-on-demand}
 
 {{ue-over-mobile}}
 
 >[!NOTE]
 >
->Wenn Sie Adobe Experience Manager (AEM) nicht als Inhaltsverwaltungsquelle verwenden, finden Sie weitere Informationen in der [AEM Mobile On-demand Services-Hilfe](https://helpx.adobe.com/de/digital-publishing-solution/topics.html).
+>Wenn Sie Adobe Experience Manager (AEM) nicht als Inhaltsverwaltungsquelle verwenden, finden Sie weitere Informationen in der [AEM Mobile On-demand Services-Hilfe](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >
 >**Voraussetzung:**
 >
->Bevor Sie mit AEM Mobile On-demand Services arbeiten und die Schritte in diesem Erste-Schritte-Handbuch befolgen, sollten Benutzer mit [AEM](/help/sites-deploying/deploy.md) vertraut sein.
+>Bevor Sie mit AEM Mobile On-demand Services arbeiten und die Schritte in diesem Erste-Schritte-Handbuch befolgen, sollten Benutzerinnen und Benutzer mit [AEM vertraut ](/help/sites-deploying/deploy.md).
 
 ## AEM Mobile Author {#aem-mobile-author}
 
-Ein ***AEM-Autor* (oder *Marketer*)**&#x200B;verwendet benutzerdefinierte oder vordefinierte Vorlagen und Komponenten, um Seiten hinzuzufügen und zu bearbeiten, Komponenten per Drag-and-Drop zu verschieben und Medien aller Art aus dem DAM hinzuzufügen, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmenten). Der integrierte Inhaltseditor von AEM wird dann von *AEM-Autorinnen und -* verwendet, um umfangreiche und relevante Erlebnisse innerhalb der App zu erstellen, einschließlich der Integration mit dem Rest der Adobe Experience Cloud.
+Ein ***AEM-Autor* (oder *Marketer*)**verwendet benutzerdefinierte oder vordefinierte Vorlagen und Komponenten, um Seiten hinzuzufügen und zu bearbeiten, Komponenten per Drag-and-Drop zu verschieben und Medien aller Art aus dem DAM hinzuzufügen, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmenten). Der integrierte Inhaltseditor von AEM wird dann von *AEM-* verwendet, um umfangreiche und relevante Erlebnisse innerhalb der App zu erstellen, einschließlich der Integration mit dem Rest von Adobe Experience Cloud.
 
 Ein AEM-Autor ist beim Erstellen einer App mit AEM Mobile On-demand Services für die folgenden Aufgaben verantwortlich.
 

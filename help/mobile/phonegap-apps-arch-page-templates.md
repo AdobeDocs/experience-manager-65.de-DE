@@ -9,13 +9,17 @@ exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2649'
 ht-degree: 0%
-
 ---
-
 # Seitenvorlagen für Mobile Apps {#page-templates-for-mobile-apps}
 
 {{ue-over-mobile}}
@@ -192,7 +196,7 @@ Beachten Sie die GUID „24BA22ED-7D06-4330-B7EB-F6FC73251CA3“ im Pfad.
 
 Als PhoneGap-Entwickler befinden sich die Inhalte, um die Sie sich kümmern, unter dem Verzeichnis www . Verwenden Sie relative Pfade, um auf die App-Assets zuzugreifen.
 
-Um das Problem zu verschlimmern, verwendet Ihre PhoneGap-Anwendung das Einzelseiten-App (SPA)-Muster, sodass sich der Basis-URI (ohne Hash) nie ändert. Daher müssen alle Assets, Vorlagen oder Skripte, auf die Sie verweisen **&#x200B; relativ zu Ihrer Top-Level-Seite sein. &#x200B;** Die Seite der obersten Ebene initialisiert das Angular-Routing und die Controller gemäß `<name>.angular-app-module.js` und `<name>.angular-app-controllers.js`. Diese Seite sollte die Seite sein, die dem Stamm des Repositorys am nächsten ist und die *kein* Sling erweitert:redirect.
+Um das Problem zu verschlimmern, verwendet Ihre PhoneGap-Anwendung das Einzelseiten-App (SPA)-Muster, sodass sich der Basis-URI (ohne Hash) nie ändert. Daher müssen alle Assets, Vorlagen oder Skripte, auf die Sie verweisen** relativ zu Ihrer Top-Level-Seite sein. **Die Seite der obersten Ebene initialisiert das Angular-Routing und die Controller gemäß `<name>.angular-app-module.js` und `<name>.angular-app-controllers.js`. Diese Seite sollte die Seite sein, die dem Stamm des Repositorys am nächsten ist und die *kein* Sling erweitert:redirect.
 
 Für die Behandlung relativer Pfade stehen verschiedene Hilfsmethoden zur Verfügung:
 

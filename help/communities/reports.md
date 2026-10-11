@@ -10,13 +10,20 @@ role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '415'
 ht-degree: 6%
-
 ---
-
 # Berichtskonsole {#reports-console}
 
 ## Überblick {#overview}
@@ -43,17 +50,17 @@ Tabellarische Berichte können zur nachfolgenden Verarbeitung im CSV-Format expo
 
 * Wählen Sie aus:
 
-   * **[!UICONTROL Zuweisungsbericht]**
+  * **[!UICONTROL Zuweisungsbericht]**
 
-      * Erstellen eines Berichts für die ausgewählte Community-Site, den ausgewählten Benutzer oder die ausgewählte Gruppe und die ausgewählte Zuweisung
+    * Erstellen eines Berichts für die ausgewählte Community-Site, den ausgewählten Benutzer oder die ausgewählte Gruppe und die ausgewählte Zuweisung
 
-   * **[!UICONTROL Beitragsbericht]**
+  * **[!UICONTROL Beitragsbericht]**
 
-      * Generieren eines Berichts für die ausgewählte Community-Site, den Inhaltstyp und den Zeitraum.
+    * Generieren eines Berichts für die ausgewählte Community-Site, den Inhaltstyp und den Zeitraum.
 
-   * **[!UICONTROL Ansichtsbericht]**
+  * **[!UICONTROL Ansichtsbericht]**
 
-      * Bericht für ausgewählte Community-Site, Inhaltstyp und Zeitraum generieren.
+    * Bericht für ausgewählte Community-Site, Inhaltstyp und Zeitraum generieren.
 
 ![Berichte](assets/reports1.png)
 
@@ -77,10 +84,10 @@ Kriterien für den Bericht auswählen:
 
   Eine der folgenden Optionen auswählen:
 
-   * Letzte 7 Tage
-   * Letzte 30 Tage
-   * Letzte 90 Tage
-   * Letztes Jahr
+  * Letzte 7 Tage
+  * Letzte 30 Tage
+  * Letzte 90 Tage
+  * Letztes Jahr
 
 Wählen Sie **[!UICONTROL Generieren]**, um den Bericht zu erstellen.
 
@@ -106,10 +113,10 @@ Kriterien für den Bericht auswählen:
 
   Eine der folgenden Optionen auswählen:
 
-   * Letzte 7 Tage
-   * Letzte 30 Tage
-   * Letzte 90 Tage
-   * Letztes Jahr
+  * Letzte 7 Tage
+  * Letzte 30 Tage
+  * Letzte 90 Tage
+  * Letztes Jahr
 
 Wählen Sie **[!UICONTROL Generieren]**, um den Bericht zu erstellen.
 
@@ -123,6 +130,6 @@ Wenn keine Community-Sites aufgelistet sind, stellen Sie sicher, dass Adobe Anal
 
 ### Berichte werden nicht in der AEM-Autoreninstanz angezeigt {#reports-do-not-show-in-aem-author-instance}
 
-Wenn in der AEM-Autoreninstanz keine Berichte angezeigt werden, überprüfen Sie die Anpassungen, z. B. die URL-Zuordnung in der Publish-Instanz. Wenn die URL-Zuordnung nur auf der AEM-Publish-Instanz der Communities-Site durchgeführt wird, stellen Sie sicher, dass dieselbe in der AEM-Autoreninstanz in der Konfiguration „Site-Trend **Bericht Social Component Factory** konfiguriert wurde.
+Wenn in der AEM-Autoreninstanz keine Berichte angezeigt werden, überprüfen Sie die Anpassungen, z. B. die URL-Zuordnung in der Veröffentlichungsinstanz. Wenn die URL-Zuordnung nur auf der AEM-Veröffentlichungsinstanz der Communities-Site durchgeführt wird, stellen Sie sicher, dass dieselbe in der AEM-Autoreninstanz in der Konfiguration „Site-Trend **Bericht Social Component Factory** konfiguriert wurde.
 
 ![URL-Zuordnung in der AEM-Autoreninstanz](assets/sitetrend.png)

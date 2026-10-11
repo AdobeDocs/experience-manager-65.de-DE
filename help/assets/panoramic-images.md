@@ -10,13 +10,29 @@ feature: Panoramic Images,Asset Management
 role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: d61a43e0-1563-4df1-9eb3-9ab3d5eab8b2
+    internal-label: Panoramic images
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 100%
-
+source-wordcount: '597'
+ht-degree: 97%
 ---
-
 # Panoramabilder{#panoramic-images}
 
 In diesem Abschnitt wird beschrieben, wie Sie mit dem Viewer für Panoramabilder Kugelpanoramen für ein intensives 360-Grad-Betrachtungserlebnis eines Zimmers, einer Immobilie, eines Ortes oder einer Landschaft ausgeben können.
@@ -51,7 +67,7 @@ Damit der Viewer für Panoramabilder in Adobe Experience Manager ordnungsgemäß
 1. Suchen Sie auf derselben Bild-Server-Veröffentlichungsseite die Überschrift **[!UICONTROL Anfrage-Attribute]**.
 1. Suchen Sie unter der Überschrift „Anfrage-Attribute“ die Option **[!UICONTROL Maximale Größe des Antwortbildes]**. Erhöhen Sie anschließend die Werte in den entsprechenden Feldern „Breite“ und „Höhe“ auf die größtmögliche Bildgröße für Panoramabilder.
 
-   Bei Dynamic Media Classic liegt die Obergrenze bei 25.000.000 Pixel. Die zulässige Maximalgröße für Bilder mit einem Seitenverhältnis von 2:1 ist 7000 x 3500. In der Regel ist für Desktopbildschirme jedoch eine Größe von 4096 x 2048 Pixel ausreichend.
+   Bei Dynamic Media Classic liegt die Obergrenze bei 25.000.000 Pixel. Die maximal zulässige Größe für Bilder mit einem Seitenverhältnis von 2:1 ist 7000 x 3500. In der Regel ist für Desktopbildschirme jedoch eine Größe von 4096 x 2048 Pixel ausreichend.
 
    >[!NOTE]
    >

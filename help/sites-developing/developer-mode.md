@@ -10,13 +10,22 @@ exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: ht
-source-wordcount: '683'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '707'
 ht-degree: 100%
-
 ---
-
 # Entwicklermodus{#developer-mode}
 
 Beim Bearbeiten von Seiten in Adobe Experience Manager (AEM) sind diverse [Modi](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) verfügbar, u. a. auch der Entwicklermodus. In diesem Modus wird ein Seitenbereich mit mehreren Registerkarten geöffnet, die Entwicklerinnen und Entwicklern Informationen über die aktuelle Seite liefern. Die drei Registerkarten sind:
@@ -43,7 +52,7 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 
 >[!CAUTION]
 >
->Der Entwicklermodus ist nur für eine Standard-Authoring-Instanz verfügbar, die nicht den Ausführungsmodus „nosamplecontent“ verwendet.
+>Der Entwicklermodus ist nur für eine Standard-Autoreninstanz verfügbar, die nicht den Ausführungsmodus „nosamplecontent“ verwendet.
 >
 >Falls nötig, kann der Modus konfiguriert werden für die Verwendung:
 >
@@ -82,8 +91,8 @@ Diese Registerkarte enthält eine Komponentenstruktur mit folgenden Attributen:
 * Zeigt die Server-seitige Verarbeitungszeit zum Rendern der Komponente.
 * Ermöglicht es, die Struktur zu erweitern und bestimmte Komponenten innerhalb der Struktur auszuwählen. Die Auswahl bietet Zugriff auf Komponentendetails, z. B.:
 
-   * Repository-Pfad
-   * Links zu den Skripten (Zugriff über CRXDE Lite)
+  * Repository-Pfad
+  * Links zu den Skripten (Zugriff über CRXDE Lite)
 
 * Die ausgewählten Komponenten (im Inhaltsfluss, durch einen blauen Rahmen gekennzeichnet) werden in der Inhaltsstruktur hervorgehoben (und umgekehrt).
 
@@ -99,19 +108,19 @@ Jeder Komponenteneintrag kann (z. B.) Folgendes beinhalten:
 
 * **Details anzeigen**: Ein Link zu einer Liste, die Folgendes enthält:
 
-   * Alle zum Rendern der Komponente verwendeten Komponentenskripte
-   * Den Repository-Inhaltspfad für diese spezifische Komponente
+  * Alle zum Rendern der Komponente verwendeten Komponentenskripte
+  * Den Repository-Inhaltspfad für diese spezifische Komponente
 
   ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **Skript bearbeiten**: ein Link, der
 
-   * das Komponentenskript in CRXDE Lite öffnet.
+  * das Komponentenskript in CRXDE Lite öffnet.
 
 * Wenn Sie einen Komponenteneintrag erweitern (Pfeilspitze), kann außerdem Folgendes angezeigt werden:
 
-   * Die Hierarchie innerhalb der ausgewählten Komponente.
-   * Die Render-Zeiten nur für die ausgewählte Komponente, für einzelne darin verschachtelte Komponenten und für alle Komponenten insgesamt.
+  * Die Hierarchie innerhalb der ausgewählten Komponente.
+  * Die Render-Zeiten nur für die ausgewählte Komponente, für einzelne darin verschachtelte Komponenten und für alle Komponenten insgesamt.
 
   ![chlimage_1-15](assets/chlimage_1-15.png)
 

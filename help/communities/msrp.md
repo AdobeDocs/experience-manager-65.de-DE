@@ -9,13 +9,20 @@ role: Admin
 exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1220'
 ht-degree: 2%
-
 ---
-
 # MSRP - MongoDB Storage Resource Provider {#msrp-mongodb-storage-resource-provider}
 
 ## Über MSRP {#about-msrp}
@@ -28,22 +35,22 @@ Siehe auch [Merkmale von SRP-Optionen](working-with-srp.md#characteristics-of-sr
 
 * [MongoDB](https://www.mongodb.org/):
 
-   * Version 2.6 oder höher
-   * Keine Notwendigkeit, Mongos oder Freigabe zu konfigurieren
-   * Es wird dringend empfohlen, einen [Replikatsatz“ zu &#x200B;](#mongoreplicaset)
-   * Kann auf demselben Host wie AEM oder remote ausgeführt werden
+  * Version 2.6 oder höher
+  * Keine Notwendigkeit, Mongos oder Freigabe zu konfigurieren
+  * Es wird dringend empfohlen, einen [Replikatsatz“ zu ](#mongoreplicaset)
+  * Kann auf demselben Host wie AEM oder remote ausgeführt werden
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
-   * Solr-Version 7.0
-   * Solr erfordert Java 1.7 oder höher
-   * Es ist kein Service erforderlich
-   * Auswahl der Ausführungsmodi:
-      * Eigenständiger Modus
-      * [SolrCloud-Modus](solr.md#solrcloud-mode) (für Produktionsumgebungen empfohlen)
-   * Auswahl an mehrsprachiger Suche (MLS):
-      * [Installieren von Standard-MLS](solr.md#installing-standard-mls)
-      * [Erweiterte MLS installieren](solr.md#installing-advanced-mls)
+  * Solr-Version 7.0
+  * Solr erfordert Java 1.7 oder höher
+  * Es ist kein Service erforderlich
+  * Auswahl der Ausführungsmodi:
+    * Eigenständiger Modus
+    * [SolrCloud-Modus](solr.md#solrcloud-mode) (für Produktionsumgebungen empfohlen)
+  * Auswahl an mehrsprachiger Suche (MLS):
+    * [Installieren von Standard-MLS](solr.md#installing-standard-mls)
+    * [Erweiterte MLS installieren](solr.md#installing-advanced-mls)
 
 ## MongoDB-Konfiguration {#mongodb-configuration}
 
@@ -60,47 +67,47 @@ So greifen Sie auf der Autoreninstanz auf die Speicherkonfigurationskonsole zu:
 * Wählen Sie **[!UICONTROL MongoDB Storage Resource Provider (MSRP)]**
 * **[!UICONTROL mongoDB-Konfiguration]**
 
-   * **[!UICONTROL mongoDB-URI]**
+  * **[!UICONTROL mongoDB-URI]**
 
-     *default*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
+    *default*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
 
-   * **[!UICONTROL mongoDB-Datenbank]**
+  * **[!UICONTROL mongoDB-Datenbank]**
 
-     *Standard*: Communities
+    *Standard*: Communities
 
-   * **[!UICONTROL mongoDB UGC-Sammlung]**
+  * **[!UICONTROL mongoDB UGC-Sammlung]**
 
-     *default*: content
+    *default*: content
 
-   * **[!UICONTROL mongoDB-Anlagensammlung]**
+  * **[!UICONTROL mongoDB-Anlagensammlung]**
 
-     *Standard*: Anlagen
+    *Standard*: Anlagen
 
 * **[!UICONTROL SolrConfiguration]**
 
-   * **[ZooKeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
+  * **[ZooKeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
 
-     Wenn Sie im [SolrCloud-Modus](solr.md#solrcloud-mode) mit einem externen ZooKeeper ausführen, setzen Sie diesen Wert auf den `HOST:PORT` für den ZooKeeper, z. B. *my.server.com:2181*
+    Wenn Sie im [SolrCloud-Modus](solr.md#solrcloud-mode) mit einem externen ZooKeeper ausführen, setzen Sie diesen Wert auf den `HOST:PORT` für den ZooKeeper, z. B. *my.server.com:2181*
 
-     Geben Sie für ein ZooKeeper-Ensemble durch Kommas getrennte `HOST:PORT` ein, z. B. *host1:2181,host2:2181*
+    Geben Sie für ein ZooKeeper-Ensemble durch Kommas getrennte `HOST:PORT` ein, z. B. *host1:2181,host2:2181*
 
-     Leer lassen, wenn Solr im Einzelmodus mit dem internen ZooKeeper ausgeführt wird.
-     *Standard*: *&lt;blank>*
+    Leer lassen, wenn Solr im Einzelmodus mit dem internen ZooKeeper ausgeführt wird.
+    *Standard*: *&lt;blank>*
 
-      * **[!UICONTROL Solr-URL]**
+    * **[!UICONTROL Solr URL]**
 Die URL, die für die Kommunikation mit Solr im eigenständigen Modus verwendet wird.
 Leer lassen, wenn im SolrCloud-Modus ausgeführt wird.
-        *default*: https://127.0.0.1:8983/solr/
+      *Standard*: https://127.0.0.1:8983/solr/
 
-      * **[!UICONTROL Solr-Sammlung]**
+    * **[!UICONTROL Solr-Sammlung]**
 Der Solr-Sammlungsname.
-        *Standard*: collection1
+      *Standard*: collection1
 
 * Klicken Sie auf **[!UICONTROL Übermitteln]**
 
 >[!NOTE]
 >
->Die mongoDB-Datenbank, die standardmäßig den Namen `communities` hat, sollte nicht auf den Namen einer Datenbank eingestellt werden, die für [Knotenspeicher oder Datenspeicher (binäre) verwendet &#x200B;](../../help/sites-deploying/data-store-config.md). Siehe auch [Speicherelemente in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
+>Die mongoDB-Datenbank, die standardmäßig den Namen `communities` hat, sollte nicht auf den Namen einer Datenbank eingestellt werden, die für [Knotenspeicher oder Datenspeicher (binäre) verwendet ](../../help/sites-deploying/data-store-config.md). Siehe auch [Speicherelemente in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 ### MongoDB-Replikat {#mongodb-replica-set}
 
@@ -134,7 +141,7 @@ Weitere Informationen zur Konfiguration finden Sie unter [Solr-Konfiguration fü
 
 Wenn Sie von einer früheren Version aktualisieren, die mit MSRP konfiguriert wurde, müssen Sie:
 
-1. Führen Sie das [Upgrade auf AEM Communities&quot; &#x200B;](upgrade.md)
+1. Führen Sie das [Upgrade auf AEM Communities&quot; ](upgrade.md)
 1. Installieren neuer Solr-Konfigurationsdateien
    * Für [Standard-MLS](solr.md#installing-standard-mls)
    * Für [erweiterte MLS](solr.md#installing-advanced-mls)
@@ -150,7 +157,7 @@ Um die identische Konfiguration in der Veröffentlichungsumgebung verfügbar zu 
 * Navigieren Sie vom Hauptmenü zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Replikation]**.
 * Wählen Sie **[!UICONTROL Baum aktivieren]**
 * **[!UICONTROL Startpfad]**:
-   * Navigieren zu `/etc/socialconfig/srpc/`
+  * Navigieren zu `/etc/socialconfig/srpc/`
 * Wählen Sie **[!UICONTROL Aktivieren]**
 
 ## Verwalten von Benutzerdaten {#managing-user-data}
@@ -222,16 +229,16 @@ Informationen zum Einrichten von MSRP für eine Demonstrations- oder Entwicklung
 
 Stellen Sie sicher, dass MSRP als Standardanbieter konfiguriert wurde, indem Sie die Konfiguration der Speicheroption überprüfen. Standardmäßig ist der Speicherressourcenanbieter JSRP.
 
-Rufen Sie auf allen AEM-Autoren- und Veröffentlichungsinstanzen die [Speicherkonfigurationskonsole“ erneut auf &#x200B;](srp-config.md) überprüfen Sie das AEM-Repository:
+Rufen Sie auf allen AEM-Autoren- und Veröffentlichungsinstanzen die [Speicherkonfigurationskonsole“ erneut auf ](srp-config.md) überprüfen Sie das AEM-Repository:
 
 * In JCR, wenn [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
-   * Enthält keinen [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc)-Knoten. Dies bedeutet, dass der Speicheranbieter JSRP ist.
-   * Wenn der srpc-Knoten vorhanden ist und den Knoten [defaultConfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration) enthält, sollten die Eigenschaften der defaultConfiguration festlegen, dass MSRP der Standardanbieter ist.
+  * Enthält keinen [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc)-Knoten. Dies bedeutet, dass der Speicheranbieter JSRP ist.
+  * Wenn der srpc-Knoten vorhanden ist und den Knoten [defaultConfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration) enthält, sollten die Eigenschaften der defaultConfiguration festlegen, dass MSRP der Standardanbieter ist.
 
 ### UGC verschwindet nach dem Upgrade {#ugc-disappears-after-upgrade}
 
-Bei einem Upgrade von einer bestehenden AEM Communities 6.0-Site müssen alle bereits vorhandenen benutzergenerierten Inhalte nach dem Upgrade auf AEM Communities 6.3 so konvertiert werden, dass sie der Struktur entsprechen, [&#x200B; für die &#x200B;](srp.md)-API erforderlich ist.
+Bei einem Upgrade von einer bestehenden AEM Communities 6.0-Site müssen alle bereits vorhandenen benutzergenerierten Inhalte nach dem Upgrade auf AEM Communities 6.3 so konvertiert werden, dass sie der Struktur entsprechen, [ für die ](srp.md)-API erforderlich ist.
 
 Zu diesem Zweck steht auf GitHub ein Open-Source-Tool zur Verfügung:
 

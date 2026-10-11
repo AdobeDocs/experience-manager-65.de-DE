@@ -8,13 +8,29 @@ role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: b6714ae8f3464ef600c252c7ae5dcc75cbe6610b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '7949'
 ht-degree: 96%
-
 ---
-
 # Härtung Ihrer AEM Forms on JEE-Umgebung {#hardening-your-aem-forms-on-jee-environment}
 
 Erfahren Sie mehr über die verschiedenen Einstellungen zum Stärken der Sicherheit, um die Sicherheit von AEM Forms auf JEE bei der Ausführung in einem firmeninternen Intranet zu verbessern.
@@ -190,12 +206,12 @@ Um den Anwendungs-Server, auf dem AEM Forms on JEE bereitgestellt wird, mit eine
    * **Verzeichnis des globalen Dokumentenspeichers (GDS)**: Der Speicherort des GDS-Verzeichnisses wird während der Installation von AEM Forms manuell konfiguriert. Wenn die Speicherorteinstellung bei der Installation leer bleibt, wird als Speicherort standardmäßig ein Verzeichnis unter dem Installationsverzeichnis des Anwendungsservers gewählt: `[JBoss root]/server/[type]/svcnative/DocumentStorage`
    * **CRX-Repository-Verzeichnis**: Der Standardspeicherort lautet `[AEM-Forms-installation-location]\crx-repository`
    * **Temporäre Verzeichnisse von AEM Forms**:
-      * (Windows) TMP- oder TEMP-Pfad gemäß Einstellung in den Umgebungsvariablen
-      * (AIX, Linux oder Solaris) Basisverzeichnis der angemeldeten Person
-Auf UNIX-basierten Systemen kann ein Nicht-Root-Benutzer den folgenden Ordner als temporären Ordner verwenden:
-      * (Linux) /var/tmp oder /usr/tmp
-      * (AIX) /tmp oder /usr/tmp
-      * (Solaris) /var/tmp oder /usr/tmp
+     * (Windows) TMP- oder TEMP-Pfad gemäß Einstellung in den Umgebungsvariablen
+     * (AIX, Linux oder Solaris) Basisverzeichnis der angemeldeten Person
+       Auf UNIX-basierten Systemen kann ein Nicht-Root-Benutzer den folgenden Ordner als temporären Ordner verwenden:
+     * (Linux) /var/tmp oder /usr/tmp
+     * (AIX) /tmp oder /usr/tmp
+     * (Solaris) /var/tmp oder /usr/tmp
 1. Weisen Sie dem neuen Benutzerkonto Schreibberechtigungen für die folgenden Verzeichnisse zu:
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\
@@ -262,7 +278,7 @@ Configuration Manager verwendete ein auf Ihrem Anwendungsserver bereitgestelltes
 1. Starten Sie den AEM Forms-Server.
 1. Geben Sie die nachstehende URL in einen Browser ein, um die Änderung zu testen und sicherzustellen, dass sie nicht mehr funktioniert.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Sperren des Remote-Zugriffs auf den Trust Store**
 
@@ -1030,12 +1046,12 @@ Bei der AEM Forms on JEE-Turnkey-Installation wird standardmäßig unter Verwend
    * **Verzeichnis des globalen Dokumentenspeichers (GDS)**: Der Speicherort des GDS-Verzeichnisses wird während der Installation von AEM Forms manuell konfiguriert. Wenn die Speicherorteinstellung bei der Installation leer bleibt, wird als Speicherort standardmäßig ein Verzeichnis unter dem Installationsverzeichnis des Anwendungsservers gewählt: `[JBoss root]/server/[type]/svcnative/DocumentStorage`
    * **CRX-Repository-Verzeichnis**: Der Standardspeicherort lautet `[AEM-Forms-installation-location]\crx-repository`
    * **Temporäre Verzeichnisse von AEM Forms**:
-      * (Windows) TMP- oder TEMP-Pfad gemäß Einstellung in den Umgebungsvariablen
-      * (AIX, Linux oder Solaris) Basisverzeichnis der angemeldeten Person
-Auf UNIX-basierten Systemen kann ein Nicht-Root-Benutzer den folgenden Ordner als temporären Ordner verwenden:
-      * (Linux) /var/tmp oder /usr/tmp
-      * (AIX) /tmp oder /usr/tmp
-      * (Solaris) /var/tmp oder /usr/tmp
+     * (Windows) TMP- oder TEMP-Pfad gemäß Einstellung in den Umgebungsvariablen
+     * (AIX, Linux oder Solaris) Basisverzeichnis der angemeldeten Person
+       Auf UNIX-basierten Systemen kann ein Nicht-Root-Benutzer den folgenden Ordner als temporären Ordner verwenden:
+     * (Linux) /var/tmp oder /usr/tmp
+     * (AIX) /tmp oder /usr/tmp
+     * (Solaris) /var/tmp oder /usr/tmp
 1. Weisen Sie dem neuen Benutzerkonto Schreibberechtigungen für die folgenden Verzeichnisse zu:
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\

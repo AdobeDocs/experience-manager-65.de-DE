@@ -5,13 +5,26 @@ exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '283'
 ht-degree: 100%
-
 ---
-
 # Komponentenkonsole{#components-console}
 
 Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind, und wichtige Informationen für jede Komponente anzuzeigen.
@@ -40,14 +53,14 @@ Um Details zu einer bestimmten Komponente anzuzeigen, klicken Sie auf die gewün
 
   In der Registerkarte „Eigenschaften“ haben Sie folgende Möglichkeiten:
 
-   * Ansehen der allgemeinen Eigenschaften der Komponente
-   * Anzeigen, wie das [Symbol oder die Abkürzung für die Komponente definiert wurde](/help/sites-developing/components-basics.md#component-icon-in-touch-ui).
+  * Ansehen der allgemeinen Eigenschaften der Komponente
+  * Anzeigen, wie das [Symbol oder die Abkürzung für die Komponente definiert wurde](/help/sites-developing/components-basics.md#component-icon-in-touch-ui).
 
-      * Wenn Sie auf die Quelle des Symbols klicken, gelangen Sie zu dieser Komponente.
+    * Wenn Sie auf die Quelle des Symbols klicken, gelangen Sie zu dieser Komponente.
 
-   * Zeigen Sie den **Ressourcentyp** und **Ressourcen-Supertyp** (sofern definiert) für die Komponente an.
+  * Zeigen Sie den **Ressourcentyp** und **Ressourcen-Supertyp** (sofern definiert) für die Komponente an.
 
-      * Durch Klicken auf den Ressourcen-Supertyp gelangen Sie zu dieser Komponente.
+    * Durch Klicken auf den Ressourcen-Supertyp gelangen Sie zu dieser Komponente.
 
   >[!NOTE]
   >

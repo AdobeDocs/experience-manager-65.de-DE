@@ -11,13 +11,29 @@ feature: Viewers
 role: User, Admin, Developer
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d17d085a-e808-49dd-b9a6-85a996b999bd
+    internal-label: Viewers
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '6942'
+source-wordcount: '6946'
 ht-degree: 99%
-
 ---
-
 # Integrieren von Dynamic Media Viewers mit Adobe Analytics und Experience Platform Tags {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## Worum geht es bei der Integration von Dynamic Media Viewers mit Adobe Analytics und Experience Platform Tags? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
@@ -225,13 +241,13 @@ Der jeweilige vom Datenelement zurückgegebene Wert hängt vom Kontext ab. Wenn 
 * Das Datenelement **[!UICONTROL ZoomScale]** verweist auf das **[!UICONTROL ZOOM]**-Ereignis und das zugehörige „scale“-Argument.
 * **[!UICONTROL TrackPan]**-Regel mit folgenden Eigenschaften:
 
-   * Verwendet das Dynamic Media-Viewer-Ereignis **[!UICONTROL PAN]** als Auslöser.
-   * Sendet den Wert des **[!UICONTROL ZoomScale]**-Datenelements an Adobe Analytics.
+  * Verwendet das Dynamic Media-Viewer-Ereignis **[!UICONTROL PAN]** als Auslöser.
+  * Sendet den Wert des **[!UICONTROL ZoomScale]**-Datenelements an Adobe Analytics.
 
 * **[!UICONTROL TrackKey]**-Regel mit folgenden Eigenschaften:
 
-   * Verwendet das Tastendruckereignis der Experience Platform Tags-Core-Erweiterung als Auslöser.
-   * Sendet den Wert des **[!UICONTROL ZoomScale]**-Datenelements an Adobe Analytics.
+  * Verwendet das Tastendruckereignis der Experience Platform Tags-Core-Erweiterung als Auslöser.
+  * Sendet den Wert des **[!UICONTROL ZoomScale]**-Datenelements an Adobe Analytics.
 
 Nehmen wir nun an, dass der Endbenutzer die Web-Seite mit beiden Viewern lädt. In *Viewer1* zoomt er auf eine Skalierung von 50 %. In *Viewer2* zoomt er dann auf eine Skalierung von 25 %. In *Viewer1* wird das Bild gedreht und schließlich eine Taste auf der Tastatur ausgewählt.
 
@@ -728,7 +744,7 @@ Die Experience Manager-Konfiguration besteht aus den folgenden zwei Hauptschritt
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
-1. Es wird eine Seite mit Integrationsdetails **&#x200B;**&#x200B;(ähnlich der folgenden) angezeigt:
+1. Es wird eine Seite mit Integrationsdetails **** (ähnlich der folgenden) angezeigt:
 
    >[!NOTE]
    >
@@ -758,8 +774,8 @@ Die Experience Manager-Konfiguration besteht aus den folgenden zwei Hauptschritt
    * **[!UICONTROL Autorisierungs-Server]**: Kehren Sie zur Seite mit den Integrationsdetails zurück, die Sie zuvor geöffnet haben. Klicken Sie auf die Registerkarte **[!UICONTROL JWT]**. Kopieren Sie den Server-Namen – ohne Pfad – wie unten hervorgehoben.
 
    Kehren Sie zur Seite **[!UICONTROL Konto]** zurück und fügen Sie den Namen in das entsprechende Feld ein.
-Beispiel: `https://ims-na1.adobelogin.com/`
-(Der Server-Name ist nur ein Beispiel.)
+   Beispiel: `https://ims-na1.adobelogin.com/`
+   (Der Server-Name ist nur ein Beispiel.)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
 

@@ -1,18 +1,27 @@
 ---
 title: Erweitern der Suchfunktion
-description: Erweitern Sie die Suchfunktionen von  [!DNL Adobe Experience Manager Assets]  über die Standardwerte hinaus.
+description: Erweitern Sie die Suchfunktionen von [!DNL Adobe Experience Manager Assets] über die Standardwerte hinaus.
 contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 100%
-
+source-wordcount: '830'
+ht-degree: 91%
 ---
-
 # Erweitern der Asset-Suche {#extending-assets-search}
 
 Sie können die Suchfunktionen von [!DNL Adobe Experience Manager Assets] erweitern. Standardmäßig sucht [!DNL Experience Manager Assets] anhand von Zeichenfolgen nach Assets.
@@ -56,7 +65,7 @@ Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundla
 
 Es sich als Best Practice erwiesen, eine vorhandene Eigenschaft zu kopieren und anzupassen. Beispieleigenschaften finden Sie unter **/libs/cq/search/components/predicates**.
 
-### Beispiel: Einfaches Eigenschaftsprädikat erstellen   {#example-build-a-simple-property-predicate}
+### Beispiel: Einfaches Eigenschaftsprädikat erstellen {#example-build-a-simple-property-predicate}
 
 So erstellen Sie ein Eigenschaftsprädikat:
 
@@ -140,7 +149,7 @@ So erstellen Sie ein Eigenschaftsprädikat:
    </script>
    ```
 
-1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeiten zu können, fügen Sie in CRXDE den Knoten **cq:editConfig** des primären Typs **cq:EditConfig** hinzu. Damit Sie Absätze entfernen können, fügen Sie die Eigenschaft **cq:actions** mit mehreren Werten mit dem einzelnen Wert **LÖSCHEN** hinzu.
+1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeiten zu können, fügen Sie in CRXDE einen Knoten **cq:editConfig** des primären Typs **cq:EditConfig** hinzu. Um Absätze entfernen zu können, fügen Sie eine Eigenschaft mit mehreren Werten **cq:actions** mit dem einzigen Wert **DELETE** hinzu.
 1. Navigieren Sie zu Ihrem Browser und wechseln Sie auf Ihrer Beispielseite (z. B. **press.html**) in den Design-Modus. Aktivieren Sie Ihre neue Komponente für das Absatzsystem der Eigenschaft (z. B. **links**).
 
 1. Im Modus **Bearbeiten** ist die neue Komponente jetzt im Sidekick verfügbar (in der **Suchgruppe**). Fügen Sie die Komponente in die Spalte **Eigenschaften** ein, geben Sie einen Suchbegriff – z. B. **Raute** – ein und klicken Sie auf das Lupensymbol, um die Suche zu starten.
@@ -244,7 +253,7 @@ So erstellen Sie eine Gruppeneigenschaft:
        });
    ```
 
-1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeiten zu können, fügen Sie in CRXDE den Knoten **cq:editConfig** des primären Typs **cq:EditConfig** hinzu. Damit Sie Absätze entfernen können, fügen Sie die Eigenschaft **cq:actions** mit mehreren Werten mit dem einzelnen Wert **LÖSCHEN** hinzu.
+1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeiten zu können, fügen Sie in CRXDE einen Knoten **cq:editConfig** des primären Typs **cq:EditConfig** hinzu. Um Absätze entfernen zu können, fügen Sie eine Eigenschaft mit mehreren Werten **cq:actions** mit dem einzigen Wert **DELETE** hinzu.
 1. Navigieren Sie zu Ihrem Browser und wechseln Sie auf Ihrer Beispielseite (z. B. **press.html**) in den Design-Modus. Aktivieren Sie Ihre neue Komponente für das Absatzsystem der Eigenschaft (z. B. **links**).
 1. Im Modus **Bearbeiten** ist die neue Komponente jetzt im Sidekick verfügbar (in der **Suchgruppe**). Fügen Sie die Komponente in die Spalte **Eigenschaften** ein.
 
@@ -252,7 +261,7 @@ So erstellen Sie eine Gruppeneigenschaft:
 
 Die folgenden Prädikate sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 
-### FulltextPredicate   {#fulltextpredicate}
+### FulltextPredicate {#fulltextpredicate}
 
 | Eigenschaft | Typ | Beschreibung |
 |---|---|---|
@@ -294,7 +303,7 @@ Die folgenden Prädikate sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 | collapse | Zeichenfolge | Ebene der Reduzierung. Standardwert ist `level1` |
 | triggerSearch | Boolesch | Markierung zum Auslösen der Suche nach Aktivierung. Standardwert ist „false“ |
 | searchCallback | Funktion | Callback zum Auslösen der Suche. Standardwert ist `CQ.wcm.SiteAdmin.doSearch` |
-| searchTimeoutTime | Nummer | Zeitlimit, nach dem searchCallback ausgelöst wird. Standardwert ist 800 ms. |
+| searchTimeoutTime | Nummer | Timeout, nach dem searchCallback ausgelöst wird. Standardwert ist 800 ms. |
 
 ## Anpassen der Suchergebnisse {#customizing-search-results}
 

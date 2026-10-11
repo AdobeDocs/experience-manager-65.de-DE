@@ -10,13 +10,26 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: 174d9e7466002e209422fefdc32a363a98dc99f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3122'
 ht-degree: 91%
-
 ---
-
 # Grundlegende Handhabung{#basic-handling}
 
 >[!NOTE]
@@ -155,7 +168,7 @@ Die Kopfzeile befindet sich immer am oberen Rand des Bildschirms. Die meisten Op
 
   Sie können auch den [Tastaturbefehl](/help/sites-authoring/keyboard-shortcuts.md) `/` (Schrägstrich) verwenden, um von jeder beliebigen Konsole aus die Suche zu starten.
 
-* [Lösungen](https://business.adobe.com/de/)
+* [Lösungen](https://business.adobe.com/)
 
   ![Lösungen](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -563,7 +576,7 @@ In der Timeline-Spalte haben Sie folgende Möglichkeiten:
 
     * Alle anzeigen
 
-* [Hinzufügen/Anzeigen von Kommentaren zum gewählten Element &#x200B;](#timelineaddingandviewingcomments) Das Feld **Kommentare** wird unten in der Ereignisliste angezeigt. Wenn Sie einen Kommentar gefolgt von der Eingabetaste eingeben, wird der Kommentar registriert. Er wird angezeigt, wenn **Kommentare** oder **Alle anzeigen** ausgewählt ist.
+* [Hinzufügen/Anzeigen von Kommentaren zum gewählten Element ](#timelineaddingandviewingcomments) Das Feld **Kommentare** wird unten in der Ereignisliste angezeigt. Wenn Sie einen Kommentar gefolgt von der Eingabetaste eingeben, wird der Kommentar registriert. Er wird angezeigt, wenn **Kommentare** oder **Alle anzeigen** ausgewählt ist.
 
 * Bestimmte Konsolen verfügen über zusätzliche Funktionen. In der Sites-Konsole können Sie beispielsweise Folgendes tun:
 

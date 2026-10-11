@@ -6,13 +6,17 @@ exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 1%
-
+source-wordcount: '707'
+ht-degree: 2%
 ---
-
 # AEM Mobile - Einhaltung der DSGVO {#aem-mobile-gdpr-readiness}
 
 >[!IMPORTANT]
@@ -29,7 +33,7 @@ AEM Mobile ist bereit, Kunden bei der Erfüllung ihrer DSGVO-Compliance-Verpflic
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Das Digital-Publishing-Produkt Adobe (das AEM Mobile vorausgeht) unterstützt Initiativen zur Einhaltung der DSGVO durch die Adobe. Siehe [https://business.adobe.com/de/privacy/general-data-protection-regulation.html](https://business.adobe.com/de/privacy/general-data-protection-regulation.html). Im Folgenden finden Sie Details zur Unterstützung für DSGVO-relevante Funktionen im Digital Publishing Suite-Produkt, einschließlich der Verwendung von Adobe zur Initiierung von DSGVO-bezogenen Anfragen.
+Das Digital Publishing-Produkt von Adobe (das AEM Mobile vorausgeht) unterstützt die DSGVO-bezogenen Initiativen von Adobe. Siehe [https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/de/privacy/general-data-protection-regulation.html). Im Folgenden finden Sie Details zur Unterstützung für DSGVO-relevante Funktionen im Digital Publishing Suite-Produkt, einschließlich der Zusammenarbeit mit Adobe zum Initiieren von DSGVO-Anfragen.
 
 Um sicherzustellen, dass Sie AEM Mobile nicht mit dem älteren Digital Publishing Suite-Produkt verwechseln, können Sie sich hier beim Digital Publishing Suite-Produkt anmelden:
 
@@ -37,7 +41,7 @@ Um sicherzustellen, dass Sie AEM Mobile nicht mit dem älteren Digital Publishin
 
 ### Initiieren einer DSGVO-Anfrage {#initiating-a-gdpr-request}
 
-Wenden Sie sich an die Kundenunterstützung von Adobe, damit Sie eine DSGVO-Anfrage für die Digital Publishing Suite stellen können.
+Wenden Sie sich an die Adobe-Kundenunterstützung, damit Sie eine DSGVO-Anfrage für die Digital Publishing Suite stellen können.
 
 Die folgenden IDs sind erforderlich, um Kundendaten zu finden. Jede empfangene Teilmenge impliziert, dass die anderen IDs für diesen Benutzer nicht anwendbar waren.
 
@@ -55,9 +59,9 @@ Geben Sie mindestens eine der folgenden Optionen an:
 
 **Löscht Adobe meine App Store-Käufe, wenn eine DELETE-Anfrage initiiert wird?**
 
-Adobe löscht Informationen über App-Store-Käufe (Abonnements usw.), aber Käufe werden weiterhin in den App-Stores aufgezeichnet. Wenn die App (Endbenutzer) im App Store angemeldet ist, werden diese Quittungen erneut aufgenommen und an Adobe gesendet. Später werden diese als neue Käufe betrachtet und von der App wiederhergestellt, wobei erneut auf zugegriffen wird.
+Adobe löscht Informationen über App-Store-Käufe (Abonnements usw.), aber Käufe werden weiterhin in den App-Stores aufgezeichnet. Wenn die App (Endbenutzer) im App Store angemeldet ist, werden diese Quittungen erneut erfasst und an Adobe gesendet. Später werden diese als neue Käufe betrachtet und von der App wiederhergestellt, wobei erneut auf zugegriffen wird.
 
-**Löscht Adobe von Kundinnen oder Kunden bereitgestellte Berechtigungen beim Initiieren einer DELETE-Anfrage?**
+**Löscht Adobe von Kundinnen und Kunden bereitgestellte Berechtigungen beim Initiieren einer DELETE-Anfrage?**
 
 Adobe löscht Informationen über die zusätzlichen direkten Berechtigungen des Kunden. Wenn sich die App (Endbenutzer) beim OAuth-Mechanismus anmeldet, den der Kunde verwendet hat, sendet sie Informationen an Adobe und die Services nehmen die zusätzlichen Berechtigungen wieder auf.
 
@@ -67,7 +71,7 @@ Da sich der Schlüssel für die Zuweisung von Berechtigungen für die App auf de
 
 **Was passiert, wenn eine App von Personen auf einem Gerät gemeinsam genutzt wird?**
 
-Adobe enthält nur minimale Informationen, die direkt mit einem bestimmten Benutzer verknüpft sind. Es verknüpft die Daten mit einer zufällig erstellten UUID, die in den Daten der App gespeichert ist und bei jeder Anfrage, die die App initiiert, übergeben wird. Das bedeutet, dass Endbenutzer, die die App auf demselben Gerät nutzen, dieselbe UUID verwenden und alle Daten als Eigentum der Person betrachtet werden, die die DSGVO-Anfrage stellt. Bei Zugriffs- und Löschanfragen berücksichtigt DPSC Personen, die eine App gemeinsam nutzen, als eine Person.
+Adobe verfügt über minimale Informationen, die direkt mit einem bestimmten Benutzer verknüpft sind. Es verknüpft die Daten mit einer zufällig erstellten UUID, die in den Daten der App gespeichert ist und bei jeder Anfrage, die die App initiiert, übergeben wird. Das bedeutet, dass Endbenutzer, die die App auf demselben Gerät nutzen, dieselbe UUID verwenden und alle Daten als Eigentum der Person betrachtet werden, die die DSGVO-Anfrage stellt. Bei Zugriffs- und Löschanfragen berücksichtigt DPSC Personen, die eine App gemeinsam nutzen, als eine Person.
 
 **Welche personenbezogenen Daten werden mit Analytics verfolgt?**
 
@@ -75,11 +79,11 @@ Ohne. Es werden Daten verfolgt, aber sie befinden sich auf Programmebene (nicht 
 
 **Der Endbenutzer gab seine Informationen ein, es wurde jedoch nichts gefunden. Warum nicht?**
 
-Im Zuge der Weiterentwicklung der Digital Publishing Suite wurden Service-Implementierungen verändert und mehr Daten verschleiert. Wenn anhand der vom Benutzer bereitgestellten Daten keine Daten gefunden wurden, bedeutet dies, dass die Daten des Benutzers nicht auf diese Person zurückverfolgt werden können.
+Mit der Weiterentwicklung des Digital Publishing Suite-Produkts wurden Service-Implementierungen geändert und mehr Daten verschleiert. Wenn anhand der vom Benutzer bereitgestellten Daten keine Daten gefunden wurden, bedeutet dies, dass die Daten des Benutzers nicht auf diese Person zurückverfolgt werden können.
 
 ### Beispiel {#example}
 
-Wenden Sie sich an die Kundenunterstützung von Adobe, damit Sie eine DSGVO-Anfrage einleiten können.
+Wenden Sie sich an die Adobe-Kundenunterstützung, damit Sie eine DSGVO-Anfrage einleiten können.
 
 Im Folgenden finden Sie ein Beispiel für die Ein- und Ausgabe einer Digital Publishing Suite-DSGVO-Anfrage:
 

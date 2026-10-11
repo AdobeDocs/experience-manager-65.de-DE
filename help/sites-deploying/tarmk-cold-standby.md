@@ -10,13 +10,22 @@ feature: Administering
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 5575628c54e2e588dfae4c34383af7d6d55ce859
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '2695'
+source-wordcount: '2696'
 ht-degree: 93%
-
 ---
-
 # Ausführen von AEM mit der TarMK-Cold-Standby-Funktion{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## Einführung {#introduction}
@@ -52,7 +61,7 @@ Die Standby-Instanz fordert regelmäßig die Segment-ID des aktuellen Heads der 
 
 >[!NOTE]
 >
->Standby-Instanzen empfangen keine Anfragen, da sie nur im Synchronisierungsmodus ausgeführt werden. Der einzige auf einer Standby-Instanz verfügbare Bereich ist die Web-Konsole, um die Konfiguration von Bundles und Diensten zu vereinfachen.
+>Standby-Instanzen empfangen keine Anfragen, da sie nur im Synchronisierungsmodus ausgeführt werden. Der einzige auf einer Standby-Instanz verfügbare Bereich ist die Web-Konsole, um die Konfiguration von Paketen und Diensten zu vereinfachen.
 
 Eine typische TarMK-Cold-Standby-Bereitstellung:
 
@@ -218,7 +227,7 @@ Der Dienst kann auch über die Web-Konsole konfiguriert werden. Führen Sie hier
 >
 >Sie können die Rolle einer Instanz jederzeit überprüfen, indem Sie in der Web-Konsole für die Sling-Einstellungen prüfen, ob die Ausführungsmodi **primär** oder **Standby** vorhanden sind.
 >
->Wechseln Sie dazu zu *https://localhost:4502/system/console/status-slingsettings* und überprüfen Sie die **„Run Modes“**.
+>Wechseln Sie dazu zu *https://localhost:4502/system/console/status-slingsettings* und überprüfen Sie die **„Run Modes“** Zeile.
 
 ## Erstsynchronisierung {#first-time-synchronization}
 
@@ -331,7 +340,7 @@ Führen Sie hierzu die nachfolgend beschriebenen Schritte aus:
 1. Testen Sie die Instanz nach der Installation auf mögliche Probleme.
 1. Entfernen Sie die Cold-Standby-Instanz, indem Sie ihren Installationsordner löschen.
 1. Stoppen Sie die primäre Instanz und klonen Sie sie, indem Sie eine Dateisystemkopie ihres gesamten Installationsordners an den Speicherort der Cold-Standby-Instanz erstellen.
-1. Konfigurieren Sie den neu erstellten Klon so, dass er als Cold-Standby-Instanz agiert. Siehe [&#x200B; Erstellen eines AEM-TarMK-Cold-Standby-Setups](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
+1. Konfigurieren Sie den neu erstellten Klon so, dass er als Cold-Standby-Instanz agiert. Siehe [ Erstellen eines AEM-TarMK-Cold-Standby-Setups](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
 1. Starten Sie sowohl die primäre als auch die Cold-Standby-Instanz.
 
 ## Monitoring {#monitoring}

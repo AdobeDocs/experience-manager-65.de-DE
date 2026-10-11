@@ -10,13 +10,22 @@ exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 100%
-
 ---
-
 # Vorlagen{#templates}
 
 Vorlagen werden an verschiedenen Stellen in AEM verwendet:
@@ -50,9 +59,9 @@ Die Vorteile bearbeitbarer Vorlagen:
 
 * Wurden eingeführt, damit Sie Folgendes für alle Seiten definieren können, die mit der Vorlage erstellt werden:
 
-   * Die Struktur
-   * Den anfänglichen Inhalt
-   * Inhaltsrichtlinien
+  * Die Struktur
+  * Den anfänglichen Inhalt
+  * Inhaltsrichtlinien
 
 * Nachdem die neue Seite erstellt wurde, wird eine dynamische Verbindung zwischen der Seite und der Vorlage aufrechterhalten. Diese Verbindung bedeutet, dass Änderungen an der Vorlagenstruktur auf allen Seiten widergespiegelt werden, die mit dieser Vorlage erstellt werden. Änderungen am anfänglichen Inhalt werden nicht übernommen.
 * Verwendet Inhaltsrichtlinien (die im Vorlageneditor bearbeitet wurden), um die Designeigenschaften beizubehalten (verwendet den Designmodus im Seiteneditor nicht).

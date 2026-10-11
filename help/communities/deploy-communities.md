@@ -10,13 +10,20 @@ exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1790'
 ht-degree: 5%
-
 ---
-
 # Bereitstellen von Communities {#deploying-communities}
 
 ## Voraussetzungen {#prerequisites}
@@ -27,9 +34,9 @@ ht-degree: 5%
 
 * Optionale Lizenzen für:
 
-   * [Funktionen von Adobe Analytics for Communities](/help/communities/analytics.md)
-   * [MongoDB für MSRP](/help/communities/msrp.md)
-   * [Adobe Cloud für ASRP](/help/communities/asrp.md)
+  * [Funktionen von Adobe Analytics for Communities](/help/communities/analytics.md)
+  * [MongoDB für MSRP](/help/communities/msrp.md)
+  * [Adobe Cloud für ASRP](/help/communities/asrp.md)
 
 ## Installations-Checkliste {#installation-checklist}
 
@@ -37,9 +44,9 @@ ht-degree: 5%
 
 * Installieren Sie die neuesten [AEM 6.5-Updates](#aem64updates)
 
-* Wenn Sie die Standard-Ports (4502, 4503) nicht verwenden, [&#x200B; Sie „Replikationsagenten konfigurieren](#replication-agents-on-author)
+* Wenn Sie die Standard-Ports (4502, 4503) nicht verwenden, [ Sie „Replikationsagenten konfigurieren](#replication-agents-on-author)
 * [Replizieren des Kryptoschlüssels](#replicate-the-crypto-key)
-* Wenn Sie die Globalisierung unterstützen[&#x200B; richten Sie eine automatisierte Übersetzung ein.](/help/sites-administering/translation.md)
+* Wenn Sie die Globalisierung unterstützen[ richten Sie eine automatisierte Übersetzung ein.](/help/sites-administering/translation.md)
 (Beispiel-Setup wird für die Entwicklung bereitgestellt)
 
 **Für die Funktion [Communities](/help/communities/overview.md)**
@@ -52,32 +59,32 @@ ht-degree: 5%
 * Einrichten eines [Standard-E-Mail-Service](/help/communities/email.md)
 * Identifizieren der Auswahl für [freigegebenen UGC-Speicher](/help/communities/working-with-srp.md) (**SRP**)
 
-   * Wenn MongoDB SRP [(MSRP)](/help/communities/msrp.md)
+  * Wenn MongoDB SRP [(MSRP)](/help/communities/msrp.md)
 
-      * [Installieren und Konfigurieren von MongoDB](/help/communities/msrp.md#mongodb-configuration)
-      * [Konfigurieren von Solr](/help/communities/solr.md)
-      * [MSRP auswählen](/help/communities/srp-config.md)
+    * [Installieren und Konfigurieren von MongoDB](/help/communities/msrp.md#mongodb-configuration)
+    * [Konfigurieren von Solr](/help/communities/solr.md)
+    * [MSRP auswählen](/help/communities/srp-config.md)
 
-   * Wenn relationale Datenbank SRP [(DSRP)](/help/communities/dsrp.md)
+  * Wenn relationale Datenbank SRP [(DSRP)](/help/communities/dsrp.md)
 
-      * [Installieren des JDBC-Treibers für MySQL](#jdbc-driver-for-mysql)
-      * [Installieren und Konfigurieren von MySQL für DSRP](/help/communities/dsrp-mysql.md)
-      * [Konfigurieren von Solr](/help/communities/solr.md)
-      * [DSRP auswählen](/help/communities/srp-config.md)
+    * [Installieren des JDBC-Treibers für MySQL](#jdbc-driver-for-mysql)
+    * [Installieren und Konfigurieren von MySQL für DSRP](/help/communities/dsrp-mysql.md)
+    * [Konfigurieren von Solr](/help/communities/solr.md)
+    * [DSRP auswählen](/help/communities/srp-config.md)
 
-   * Wenn Adobe SRP [(ASRP)](/help/communities/asrp.md)
+  * Wenn Adobe SRP [(ASRP)](/help/communities/asrp.md)
 
-      * Bereitstellung gemeinsam mit Ihrem Kundenbetreuer
-      * [ASRP auswählen](/help/communities/srp-config.md)
+    * Bereitstellung gemeinsam mit Ihrem Kundenbetreuer
+    * [ASRP auswählen](/help/communities/srp-config.md)
 
-   * IF JCR SRP [(JSRP)](/help/communities/jsrp.md)
+  * IF JCR SRP [(JSRP)](/help/communities/jsrp.md)
 
-      * Kein freigegebener UGC-Speicher (benutzergenerierter Inhalt) :
+    * Kein freigegebener UGC-Speicher (benutzergenerierter Inhalt) :
 
-         * UGC wird nie repliziert
-         * UGC ist nur auf der AEM-Instanz oder dem Cluster sichtbar, in dem er eingegeben wurde.
+      * UGC wird nie repliziert
+      * UGC ist nur auf der AEM-Instanz oder dem Cluster sichtbar, in dem er eingegeben wurde.
 
-         * Der Standardwert ist JSRP
+      * Der Standardwert ist JSRP
 
 ## Aktuelle Versionen {#latest-releases}
 
@@ -141,8 +148,8 @@ Der erweiterte MLS-Download (auch als `phasetwo` bezeichnet) ist im Adobe-Reposi
 
   Informationen zum Abrufen des erweiterten MLS-Pakets finden Sie unter [AEM Advanced MLS](deploy-communities.md#aem-advanced-mls) im Abschnitt Bereitstellen der Dokumentation.
 
-   * Version 1.2.40, 6. April 2016
-   * Herunterladen von AEM-SOLR-MLS-phasetwo-1.2.40.zip
+  * Version 1.2.40, 6. April 2016
+  * Herunterladen von AEM-SOLR-MLS-phasetwo-1.2.40.zip
 
 Weitere Informationen und Installationsinformationen finden Sie unter [Solr-Konfiguration](/help/communities/solr.md) für SRP.
 
@@ -159,9 +166,9 @@ Um die in `adobeaemcloud.com` sichtbaren Pakete auf einer lokalen AEM-Instanz zu
 * Registerkarte **Assets** auswählen
 * Wählen Sie **Auf Datenträger herunterladen**
 
-Verwenden Sie auf der lokalen AEM-Instanz Package Manager (z. B. [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), um das Paket-Repository von AEM in das lokale Paket-Repository hochzuladen.
+Verwenden Sie auf der lokalen AEM-Instanz Package Manager (z. B. [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), um das Paket-Repository der lokalen AEM hochzuladen.
 
-Alternativ kann über Package Share von der lokalen AEM-Instanz aus auf das Paket zugegriffen werden (z. B. [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)). Die Schaltfläche &quot;`Download`&quot; wird dann in das Paket-Repository der lokalen AEM-Instanz heruntergeladen.
+Alternativ können Sie über Package Share von der lokalen AEM-Instanz aus auf das Paket zugreifen (z. B. [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)). Dann wird die Schaltfläche `Download` in das Paket-Repository der lokalen AEM-Instanz heruntergeladen.
 
 Sobald Sie sich im Paket-Repository der lokalen AEM-Instanz befinden, installieren Sie das Paket mit Package Manager.
 
@@ -169,9 +176,9 @@ Weitere Informationen finden Sie unter [Arbeiten mit Paketen](/help/sites-admini
 
 ## Empfohlene Bereitstellungen {#recommended-deployments}
 
-In AEM Communities wird ein Common Store zum Speichern von UGC verwendet und häufig als „Speicherressourcenanbieter[&#x200B; bezeichnet](/help/communities/working-with-srp.md). Die empfohlene Bereitstellung konzentriert sich auf die Auswahl einer SRP-Option für den allgemeinen Speicher.
+In AEM Communities wird ein Common Store zum Speichern von UGC verwendet und häufig als „Speicherressourcenanbieter[ bezeichnet](/help/communities/working-with-srp.md). Die empfohlene Bereitstellung konzentriert sich auf die Auswahl einer SRP-Option für den allgemeinen Speicher.
 
-Der Common Store unterstützt die Moderation und Analyse von benutzergenerierten Inhalten in der Publishing-Umgebung, sodass keine [&#x200B; (Replikation) &#x200B;](/help/communities/sync.md) benutzergenerierten Inhalten mehr erforderlich ist.
+Der Common Store unterstützt die Moderation und Analyse von benutzergenerierten Inhalten in der Publishing-Umgebung, sodass keine [ (Replikation) ](/help/communities/sync.md) benutzergenerierten Inhalten mehr erforderlich ist.
 
 * [Community-](/help/communities/working-with-srp.md): Erläutert die SRP-Speicheroptionen für AEM Communities
 
@@ -200,7 +207,7 @@ Für alle anderen (sekundären) Veröffentlichungsinstanzen in einer Veröffentl
 * Mit Administratorrechten anmelden
 * Zugreifen auf die [Web-Konsole](/help/sites-deploying/configuring-osgi.md)
 
-   * Beispiel: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+  * Beispiel: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
 * Suchen des `AEM Communities Publisher Configuration`
 * Wählen Sie das Bearbeitungssymbol aus
@@ -219,19 +226,19 @@ In der Autorenumgebung gibt es zwei Replikationsagenten, für die die Transportk
 
 * Zugriff auf die Replikationskonsole in der Autoreninstanz
 
-   * Navigieren Sie in der globalen Navigation zu **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]** > **[!UICONTROL Agenten für Autor]**
+  * Navigieren Sie in der globalen Navigation zu **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]** > **[!UICONTROL Agenten für Autor]**
 
 * Führen Sie für beide Agenten dasselbe Verfahren durch:
 
-   * **Standardagent (publish)**
-   * **Rückwärtsreplikationsagent (Rückwärtsveröffentlichung)**
+  * **Standardagent (publish)**
+  * **Rückwärtsreplikationsagent (Rückwärtsveröffentlichung)**
 
-      1. Agent auswählen
-      1. Wählen Sie **Bearbeiten**
-      1. Wählen Sie die Registerkarte **Transport** aus
-      1. Wenn es sich nicht um Port `4503` handelt, bearbeiten Sie **URI**, um den richtigen Port anzugeben
+    1. Agent auswählen
+    1. Wählen Sie **Bearbeiten**
+    1. Wählen Sie die Registerkarte **Transport** aus
+    1. Wenn es sich nicht um Port `4503` handelt, bearbeiten Sie **URI**, um den richtigen Port anzugeben
 
-      1. Wenn es sich nicht um `admin` handelt, bearbeiten Sie **Benutzer** und **Kennwort**, um ein Mitglied der `administrators` Benutzergruppe anzugeben
+    1. Wenn es sich nicht um `admin` handelt, bearbeiten Sie **Benutzer** und **Kennwort**, um ein Mitglied der `administrators` Benutzergruppe anzugeben
 
 Die folgenden Abbildungen zeigen die Ergebnisse der Änderung des Ports von 4503 auf 6103 durch:
 
@@ -252,12 +259,12 @@ Der Tunnel-Service ermöglicht diesen Zugriff mithilfe des Replikationsagenten a
 So aktivieren Sie den Tunneldienst:
 
 * Melden Sie sich mit Administratorrechten bei Ihrer Autoreninstanz an.
-* Wenn der Herausgeber nicht localhost :4503 oder der Transport-Benutzer nicht `admin` ist,
-Konfigurieren [&#x200B; dann den Replikationsagenten](#replication-agents-on-author)
+* Wenn der Herausgeber nicht localhost:4503 oder der Transport-Benutzer nicht `admin` ist,
+Konfigurieren [ dann den Replikationsagenten](#replication-agents-on-author)
 
 * Zugreifen auf die [Web-Konsole](/help/sites-deploying/configuring-osgi.md)
 
-   * Beispiel: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+  * Beispiel: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
 * Suchen des `AEM Communities Publish Tunnel Service`
 * Wählen Sie das Bearbeitungssymbol aus
@@ -276,32 +283,32 @@ Um das Schlüsselmaterial aus der Autoreninstanz in alle anderen Instanzen zu ko
 
 * Greifen Sie auf die AEM-Instanz zu - normalerweise eine Autoreninstanz -, die das zu kopierende Schlüsselmaterial enthält
 
-   * Suchen Sie das `com.adobe.granite.crypto.file` im lokalen Dateisystem,
-Beispiel,
+  * Suchen Sie das `com.adobe.granite.crypto.file` im lokalen Dateisystem,
+    Beispiel,
 
-      * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
-      * Die `bundle.info` identifiziert das Bundle
+    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
+    * Die `bundle.info` identifiziert das Bundle
 
-   * Navigieren Sie zum Ordner „data“,
-Beispiel,
+  * Navigieren Sie zum Ordner „data“,
+    Beispiel,
 
-      * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-      * Kopieren Sie die hmac- und primären Knotendateien
+    * Kopieren Sie die hmac- und primären Knotendateien
 
 * Für jede AEM-Zielinstanz
 
-   * Navigieren Sie zum Ordner „data“,
-Beispiel,
+  * Navigieren Sie zum Ordner „data“,
+    Beispiel,
 
-      * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-   * Fügen Sie die beiden zuvor kopierten Dateien ein
-   * Es ist erforderlich, [das Granite Crypto-Bundle zu aktualisieren](#refresh-the-granite-crypto-bundle) wenn die AEM-Zielinstanz ausgeführt wird
+  * Fügen Sie die beiden zuvor kopierten Dateien ein
+  * Es ist erforderlich, [das Granite Crypto-Bundle zu aktualisieren](#refresh-the-granite-crypto-bundle) wenn die AEM-Zielinstanz ausgeführt wird
 
 >[!CAUTION]
 >
->Wenn bereits eine andere Sicherheitsfunktion konfiguriert wurde, die auf den Kryptoschlüsseln basiert, kann das Replizieren der Kryptoschlüssel die Konfiguration beschädigen. Wenn Sie Hilfe benötigen[&#x200B; wenden Sie sich an die &#x200B;](https://experienceleague.adobe.com/de?lang=de&support-solution=General&support-tab=home#support).
+>Wenn bereits eine andere Sicherheitsfunktion konfiguriert wurde, die auf den Kryptoschlüsseln basiert, kann das Replizieren der Kryptoschlüssel die Konfiguration beschädigen. Wenn Sie Hilfe benötigen[ wenden Sie sich an die ](https://experienceleague.adobe.com/?lang=de&support-solution=General&support-tab=home#support).
 
 #### Repository-Replikation {#repository-replication}
 
@@ -309,7 +316,7 @@ Das Schlüsselmaterial kann im Repository gespeichert werden, wie dies auch bei 
 
 >[!NOTE]
 >
->Stellen Sie sicher[&#x200B; dass der Replikationsagent auf der Autoreninstanz &#x200B;](#replication-agents-on-author) ist.
+>Stellen Sie sicher[ dass der Replikationsagent auf der Autoreninstanz ](#replication-agents-on-author) ist.
 
 Mit dem im Repository gespeicherten Schlüsselmaterial wird die Methode zum Replizieren des Kryptoschlüssels von der Autoreninstanz auf andere Instanzen wie folgt festgelegt:
 
@@ -328,14 +335,14 @@ Verwendet [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Greifen Sie auf jeder Veröffentlichungsinstanz auf die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) zu
 
-   * Beispiel: [https://&lt;server>:&lt;port>/system/console/bundles](https://localhost:4503/system/console/bundles)
+  * Beispiel: [https://&lt;server>:&lt;port>/system/console/bundles](https://localhost:4503/system/console/bundles)
 
 * Suchen Sie `Adobe Granite Crypto Support` Bundle (com.adobe.granite.crypto)
 * Wählen Sie **Aktualisieren** aus
 
   ![granite-crypto](assets/granite-crypto.png)
 
-* Nach einem Moment sollte **Dialogfeld**&#x200B;Erfolg“ angezeigt werden:
+* Nach einem Moment sollte **Dialogfeld**Erfolg“ angezeigt werden:
   `Operation completed successfully.`
 
 ### Apache HTTP Server {#apache-http-server}
@@ -365,8 +372,8 @@ Achten Sie insbesondere darauf, im `RedirectMatch` den richtigen Server-Namen, n
 
 Wenn Sie eine Dispatcher verwenden, lesen Sie Folgendes:
 
-* Dokumentation zu AEM {[&#128279;](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates)}Dispatcher
-* [Installieren von Dispatcher](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
+* Dokumentation zu AEM {](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates)}Dispatcher[
+* [Installieren von Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [Konfigurieren von Dispatcher für Communities](/help/communities/dispatcher.md)
 * [Bekannte Probleme](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

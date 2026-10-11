@@ -10,13 +10,29 @@ role: Developer
 exl-id: b3c19c82-e26f-4dc8-b846-6aec705cee08
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2111'
-ht-degree: 99%
-
+source-wordcount: '2183'
+ht-degree: 100%
 ---
-
 # Dynamisches Erstellen von DDX-Dokumenten {#dynamically-creating-ddx-documents}
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
@@ -128,7 +144,7 @@ Erstellen Sie dynamisch ein DDX-Dokument und zerlegen Sie ein PDF-Dokument mithi
    * Erstellen Sie ein Java-Objekt vom Typ `DocumentBuilderFactory`, indem Sie die Methode `newInstance` der Klasse `DocumentBuilderFactory` aufrufen.
    * Erstellen Sie ein Java-Objekt vom Typ `DocumentBuilder`, indem Sie die Methode `newDocumentBuilder` des `DocumentBuilderFactory`-Objekts aufrufen.
    * Rufen Sie die Methode `newDocument` des Objekts `DocumentBuilder` auf, um ein Objekt `org.w3c.dom.Document` zu instantiieren.
-   * Erstellen Sie das Stammelement des DDX-Dokuments, indem Sie die `createElement`-Methode des `org.w3c.dom.Document`-Objekts aufrufen. Diese Methode erstellt ein `Element`-Objekt, das das Stammelement darstellt. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `createElement`. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie anschließend einen Wert für das untergeordnete Element fest, indem Sie dessen `setAttribute` aufrufen. Hängen Sie abschließend das Element an das Kopfzeilenelement an, indem Sie die Methode `appendChild` des Kopfzeilenelements aufrufen und das Objekt des untergeordneten Elements als Argument übergeben. Die folgenden Code-Zeilen zeigen diese Anwendungslogik:
+   * Erstellen Sie das Stammelement des DDX-Dokuments, indem Sie die Methode `createElement` des Objekts `org.w3c.dom.Document` aufrufen. Diese Methode erstellt ein `Element`-Objekt, das das Stammelement darstellt. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die Methode `createElement`. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie anschließend einen Wert für das untergeordnete Element fest, indem Sie dessen Methode `setAttribute` aufrufen. Fügen Sie schließlich das Element an das Kopfzeilenelement an, indem Sie die Methode `appendChild` des Kopfzeilenelements aufrufen und das Objekt des untergeordneten Elements als Argument weitergeben. Die folgenden Code-Zeilen zeigen diese Programmlogik:
      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * Erstellen Sie das Element `PDFsFromBookmarks`, indem Sie die Methode `createElement` des Objekts `Document` aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die Methode `createElement`. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie einen Wert für das Element `PDFsFromBookmarks` fest, indem Sie seine `setAttribute`-Methode aufrufen. Fügen Sie das Element `PDFsFromBookmarks` an das Element `DDX` an, indem Sie die Methode `appendChild` des DDX-Elements aufrufen. Übergeben Sie das `PDFsFromBookmarks`-Elementobjekt als Argument. Die folgenden Code-Zeilen zeigen diese Programmlogik:
@@ -158,8 +174,8 @@ Erstellen Sie dynamisch ein DDX-Dokument und zerlegen Sie ein PDF-Dokument mithi
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt. Übergeben Sie das `java.io.FileInputStream`-Objekt, das das zu zerlegende PDF-Dokument enthält.
    * Fügen Sie einen Eintrag zu dem `java.util.Map`-Objekt hinzu, indem Sie seine Methode `put` aufrufen und die folgenden Argumente übergeben:
 
-      * Eine Zeichenfolge, die den Speichernamen repräsentiert. Dieser Wert muss mit dem Wert des im DDX-Dokument angegebenen PDF-Quellelements übereinstimmen. (Im dynamisch erstellten DDX-Dokument lautet der Wert `AssemblerResultPDF.pdf`.)
-      * Ein `com.adobe.idp.Document`-Objekt, das das zu zerlegende PDF-Dokument enthält.
+     * Eine Zeichenfolge, die den Speichernamen repräsentiert. Dieser Wert muss mit dem Wert des im DDX-Dokument angegebenen PDF-Quellelements übereinstimmen. (Im dynamisch erstellten DDX-Dokument lautet der Wert `AssemblerResultPDF.pdf`.)
+     * Ein `com.adobe.idp.Document`-Objekt, das das zu zerlegende PDF-Dokument enthält.
 
 1. Legen Sie Laufzeitoptionen fest.
 
@@ -212,10 +228,10 @@ Erstellen Sie ein DDX-Dokument dynamisch und zerlegen Sie ein PDF-Dokument mithi
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `AssemblerServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `AssemblerServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+     * Weisen Sie dem Feld `AssemblerServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `AssemblerServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Erstellen Sie das DDX-Dokument.
 

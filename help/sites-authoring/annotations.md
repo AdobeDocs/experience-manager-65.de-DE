@@ -9,13 +9,26 @@ exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 100%
-
+source-wordcount: '636'
+ht-degree: 92%
 ---
-
 # Anmerkungen beim Bearbeiten einer Seite{#annotations-when-editing-a-page}
 
 Oft muss das Hinzufügen von Inhalten zu den Seiten Ihrer Website vor der tatsächlichen Veröffentlichung besprochen werden. Um diesen Vorgang zu erleichtern, können Sie in vielen Komponenten, die direkt mit Inhalt (und nicht mit dem Layout) in Verbindung stehen, Anmerkungen hinzufügen.
@@ -48,7 +61,7 @@ Zum Erstellen und Ansehen von Anmerkungen wird ein spezieller [Modus](/help/site
 
 >[!NOTE]
 >
->Sie können Anmerkungen zu einer Vielzahl von Ressourcen anfügen: 
+>Sie können Anmerkungen zu einer Vielzahl von Ressourcen anfügen:
 >
 >* [Anmerkungen zu Assets](/help/assets/manage-assets.md#annotating)
 >* [Kommentieren von Video-Assets](/help/assets/managing-video-assets.md#annotate-video-assets)
@@ -103,13 +116,13 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
 
    * Klicken Sie auf die Textmarkierung, um die Anmerkung zu öffnen. Sobald sie geöffnet ist, können Sie den vollständigen Text sehen, Änderungen vornehmen oder die Anmerkung löschen.
 
-      * Zeichnungen können nicht unabhängig von der Anmerkung gelöscht werden.
+     * Zeichnungen können nicht unabhängig von der Anmerkung gelöscht werden.
 
    * Positionieren Sie die Textmarkierung neu.
    * Klicken Sie auf eine Skizze, um diese Skizze auszuwählen und sie auf die gewünschte Position zu ziehen.
    * Eine Komponente zu verschieben oder zu kopieren.
 
-      * Alle damit verbundenen Anmerkungen und deren Zeichnungen werden ebenfalls verschoben oder kopiert und ihre Position in Relation zum Absatz bleibt gleich.
+     * Alle damit verbundenen Anmerkungen und deren Zeichnungen werden ebenfalls verschoben oder kopiert und ihre Position in Relation zum Absatz bleibt gleich.
 
 1. Um den Anmerkungsmodus zu beenden und zum vorher verwendeten Modus zurückzukehren, klicken Sie auf die Schaltfläche (x-Symbol) oben rechts in der Symbolleiste.
 
@@ -119,6 +132,6 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
 
 ### Kennzeichnung von Anmerkungen {#annotation-indicator}
 
-Anmerkungen werden nicht im Bearbeitungsmodus angezeigt, doch die Kennzeichnung oben rechts in der Symbolleiste gibt an, wie viele Anmerkungen auf der aktuellen Seite vorhanden sind. Die Kennzeichnung ersetzt das standardmäßige Anmerkungssymbol, dient jedoch ebenfalls als schneller Link, mit dem Sie den Anmerkungsmodus aktivieren/deaktivieren können:
+Anmerkungen werden nicht im Bearbeitungsmodus angezeigt, aber das Badge oben rechts in der Symbolleiste zeigt an, wie viele Anmerkungen für die aktuelle Seite vorhanden sind. Das Badge ersetzt das standardmäßige Anmerkungssymbol, fungiert jedoch weiterhin als schneller Link, der zum Anmerkungsmodus wechselt:
 
 ![Anmerkungsanzeige](assets/chlimage_1-242.png)

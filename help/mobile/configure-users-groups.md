@@ -9,13 +9,17 @@ exl-id: 9f814204-8cd4-4ba9-9e25-3ff1b25c1955
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 2%
-
+source-wordcount: '645'
+ht-degree: 3%
 ---
-
 # Konfigurieren von Benutzern und Benutzergruppen {#configure-your-users-and-user-groups}
 
 {{ue-over-mobile}}
@@ -31,7 +35,7 @@ Um das Berechtigungsmodell für AEM-Apps zu organisieren und zu verwalten, sind 
 
 ### Inhaltsautoren von AEM Mobile-Programmen (app-author-Gruppe) {#aem-mobile-application-content-authors-app-author-group}
 
-Mitglieder der Gruppe app-author sind für das Authoring von AEM-Mobile-App-Inhalten, einschließlich Seiten, Text, Bildern und Videos, verantwortlich.
+Mitglieder der Gruppe app-author sind für das Erstellen von Inhalten für AEM-Mobile-Apps, einschließlich Seiten, Text, Bildern und Videos, verantwortlich.
 
 #### Gruppenkonfiguration - app-authors {#group-configuration-app-authors}
 
@@ -41,7 +45,7 @@ Mitglieder der Gruppe app-author sind für das Authoring von AEM-Mobile-App-Inha
 
    Klicken Sie in der Benutzergruppenkonsole auf die Schaltfläche &quot;+&quot;, um eine Gruppe zu erstellen.
 
-   Legen Sie die ID dieser Gruppe auf „app-authors“ fest, um anzugeben, dass es sich um einen bestimmten Typ von Autorenbenutzergruppe handelt, der für das Authoring von Mobile Apps innerhalb von AEM spezifisch ist.
+   Legen Sie die ID dieser Gruppe auf „app-authors“ fest, um anzugeben, dass es sich um einen bestimmten Typ von Autorenbenutzergruppe handelt, der für das Authoring von Mobile Apps in AEM spezifisch ist.
 
 1. Mitglied zur Gruppe hinzufügen: Autoren
 
@@ -49,7 +53,7 @@ Mitglieder der Gruppe app-author sind für das Authoring von AEM-Mobile-App-Inha
 
    Hinzufügen von app-authors zur Gruppe „Authors“
 
-1. Nachdem Sie nun die Benutzergruppe app-authors erstellt haben, können Sie dieser neuen Gruppe über die Admin Console „Benutzer[&#x200B; einzelne Team-Mitglieder &#x200B;](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Nachdem Sie nun die Benutzergruppe app-authors erstellt haben, können Sie dieser neuen Gruppe über die [User Admin Console&quot; einzelne Team-Mitglieder ](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -61,13 +65,13 @@ Mitglieder der Gruppe app-author sind für das Authoring von AEM-Mobile-App-Inha
 
    >[!NOTE]
    >
-   >App-Autoren erweitern die standardmäßige Gruppe der Inhaltsautoren von AEM, sodass sie die Möglichkeit erben, Inhalte unter /content/phonegap zu erstellen
+   >App-Autoren erweitern die Standardgruppe der Inhaltsautoren von AEM, sodass sie die Möglichkeit übernimmt, Inhalte unter /content/phonegap zu erstellen
 
 ### Gruppe der AEM Mobile-Programmadministratoren (Gruppe der App-Administratoren) {#aem-mobile-application-administrators-group-app-admins-group}
 
 Mitglieder der Gruppe app-admins können Programminhalte mit den gleichen Berechtigungen erstellen, die auch in app-authors **AND** enthalten sind. Darüber hinaus sind sie auch verantwortlich für:
 
-* Konfigurieren von PhoneGap Build- und Adobe-Mobile-Services-Cloud-Services in AEM
+* Konfigurieren des PhoneGap-Builds und der Adobe Mobile Services-Cloud-Services in AEM
 * Staging, Veröffentlichen und Löschen von OTA-Aktualisierungen zur Inhaltssynchronisierung der Anwendung
 
 >[!NOTE]
@@ -118,7 +122,7 @@ Zusätzlich zu diesen Berechtigungen kann eine Aktion auch je nach Konfiguration
 
 Die Kachel verfügt derzeit über keine Aktionen, für die Berechtigungen erforderlich sind. Die Detailseite für die Anwendung enthält jedoch die folgenden Aktionen:
 
-* *Bearbeiten* für app-author und app-admin (Benutzeroberflächen-Trigger - jcr:write - in /content/phonegap/{suffix})
+* *Bearbeiten* für app-author und app-admin (UI-Trigger - jcr:write - unter /content/phonegap/{suffix})
 * *Download* für app-author und app-admin (Benutzeroberflächen-Trigger - unter /content/phonegap/{suffix})
 
 Die folgende Abbildung zeigt die Download- und Bearbeitungsoptionen für eine App:

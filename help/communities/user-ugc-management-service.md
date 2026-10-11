@@ -10,13 +10,20 @@ role: Admin
 exl-id: 526ef0fa-3f20-4de4-8bc5-f435c60df0d0
 solution: Experience Manager
 feature: Communities
-source-git-commit: f4fc3b788d4128135ff77ebb87f1369059b1d2ec
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 2%
-
+source-wordcount: '628'
+ht-degree: 4%
 ---
-
 # User and UGC Management Service in AEM Communities {#user-and-ugc-management-service-in-aem-communities}
 
 >[!IMPORTANT]
@@ -29,7 +36,7 @@ Weitere Informationen finden Sie auf der [DSGVO-Seite im Adobe Privacy Center.](
 
 >[!NOTE]
 >
->Wenn Sie [Adobe Analytics auf der AEM Communities](/help/communities/analytics.md)-Site konfiguriert haben, werden die erfassten Benutzerdaten an Adobe Analytics-Server gesendet. Adobe Analytics bietet APIs, mit denen Sie auf Benutzerdaten zugreifen, diese exportieren und löschen und die DSGVO einhalten können. Weitere Informationen finden Sie unter [Senden von Zugriffs- und Löschanfragen](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html?lang=de).
+>Wenn Sie [Adobe Analytics auf der AEM Communities](/help/communities/analytics.md)-Site konfiguriert haben, werden die erfassten Benutzerdaten an Adobe Analytics-Server gesendet. Adobe Analytics bietet APIs, mit denen Sie auf Benutzerdaten zugreifen, diese exportieren und löschen und die DSGVO einhalten können. Weitere Informationen finden Sie unter [Senden von Zugriffs- und Löschanfragen](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 Um diese APIs verwenden zu können, müssen Sie den `/services/social/ugcmanagement`-Endpunkt aktivieren, indem Sie den UserUgcManagement-Service aktivieren. Um diesen Service zu aktivieren, installieren Sie das [Beispiel-Servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet), das auf [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) verfügbar ist. Rufen Sie dann den Endpunkt in der Veröffentlichungsinstanz Ihrer Communities-Site mit entsprechenden Parametern mithilfe einer HTTP-Anfrage auf, ähnlich wie in:
 

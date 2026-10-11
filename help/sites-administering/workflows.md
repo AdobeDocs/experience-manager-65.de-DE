@@ -9,20 +9,29 @@ exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: f1eb41d08bb35adb93237f0ad09daa5bcd07fac8
-workflow-type: ht
-source-wordcount: '782'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+workflow-type: tm+mt
+source-wordcount: '783'
 ht-degree: 100%
-
 ---
-
 # Verwalten von Workflows{#administering-workflows}
 
 Workflows ermöglichen die Automatisierung von Adobe Experience Manager (AEM)-Aktivitäten. Workflows:
 
 * Bestehen aus einer Reihe von Schritten, die in einer bestimmten Reihenfolge ausgeführt werden.
 
-   * Durch jeden Schritt wird eine bestimmte Aktivität durchgeführt – so zum Beispiel das Warten auf Benutzereingaben, das Aktivieren einer Seite oder das Senden einer E-Mail-Nachricht.
+  * Durch jeden Schritt wird eine bestimmte Aktivität durchgeführt – so zum Beispiel das Warten auf Benutzereingaben, das Aktivieren einer Seite oder das Senden einer E-Mail-Nachricht.
 
 * Können mit Assets im Repository, Benutzerkonten und AEM-Diensten interagieren.
 * Können komplizierte Aktivitäten koordinieren, die jeden Aspekt von AEM umfassen.
@@ -70,7 +79,7 @@ Workflow-Instanzen schreiten durch den folgenden Lebenszyklus voran:
 1. Die nachfolgenden Schritte des Workflow-Modells werden ausgeführt und abgeschlossen.
 1. Wenn der letzte Schritt abgeschlossen ist, wird auch die Workflow-Instanz abgeschlossen und damit archiviert.
 
-Mit AEM werden viele nützliche Workflow-Modelle bereitgestellt.  Zusätzlich können die Entwickelnden in Ihrer Organisation benutzerdefinierte Workflow-Modelle erstellen, die auf die spezifischen Anforderungen Ihrer Geschäftsprozesse zugeschnitten sind.
+Mit AEM werden viele nützliche Workflow-Modelle bereitgestellt. Zusätzlich können die Entwickelnden in Ihrer Organisation benutzerdefinierte Workflow-Modelle erstellen, die auf die spezifischen Anforderungen Ihrer Geschäftsprozesse zugeschnitten sind.
 
 ## Workflow-Schritte {#workflow-steps}
 

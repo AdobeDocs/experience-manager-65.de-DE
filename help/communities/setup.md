@@ -9,35 +9,42 @@ exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '695'
 ht-degree: 2%
-
 ---
-
 # Ersteinrichtung {#initial-setup}
 
-## Starten von Authoring- und Publish-Instanzen {#start-author-and-publish-instances}
+## Autoren- und Veröffentlichungsinstanzen starten {#start-author-and-publish-instances}
 
 Zu Entwicklungs- und Demonstrationszwecken ist es erforderlich, eine Autoren- und eine Veröffentlichungsinstanz auszuführen.
 
-Befolgen Sie dazu die grundlegenden Anweisungen in Adobe Experience Manager (AEM) [Erste Schritte](../../help/sites-deploying/deploy.md#getting-started), die Folgendes bewirken:
+Folgen Sie dazu den grundlegenden Anweisungen in Adobe Experience Manager (AEM) [Erste Schritte](../../help/sites-deploying/deploy.md#getting-started), die Folgendes bewirken:
 
 * Autorenumgebung auf [localhost:4502](http://localhost:4502/)
-* Publish-Umgebung auf [localhost:4503](http://localhost:4503/)
+* Veröffentlichungsumgebung auf ([:4503](http://localhost:4503/)
 
 Für AEM Communities
 
 * Die Autorenumgebung ist für Folgendes vorgesehen:
 
-   * Entwicklung von Sites, Vorlagen und Komponenten.
-   * Administrations- und Konfigurationsaufgaben.
+  * Entwicklung von Sites, Vorlagen und Komponenten.
+  * Administrations- und Konfigurationsaufgaben.
 
-* Die Publish-Umgebung ist für Folgendes vorgesehen:
+* Die Veröffentlichungsumgebung ist für Folgendes vorgesehen:
 
-   * Die Community-Erfahrung mit dem Posten und Moderieren von Inhalten.
-   * Erstellen von Community-Gruppen, Mitgliedern und Mitgliedergruppen.
+  * Die Community-Erfahrung mit dem Posten und Moderieren von Inhalten.
+  * Erstellen von Community-Gruppen, Mitgliedern und Mitgliedergruppen.
 
 >[!NOTE]
 >
@@ -67,9 +74,9 @@ Siehe [Konfigurieren von E-](email.md).
 
 ## Aktivieren des Tunneldienstes {#enable-the-tunnel-service}
 
-Beim Erstellen einer Community-Site in der Autorenumgebung ermöglicht der Tunneldienst die Zuweisung von Rollen zu vertrauenswürdigen Community-Mitgliedern, die in der Publish-Umgebung registriert sind. Der Tunnel-Service ermöglicht auch den Zugriff auf Community-Mitglieder über die Konsolen [Mitglieder und Gruppen](members.md) in der Autorenumgebung.
+Beim Erstellen einer Community-Site in der Autorenumgebung ermöglicht der Tunnel-Service die Zuweisung von Rollen zu vertrauenswürdigen Community-Mitgliedern, die in der Veröffentlichungsumgebung registriert sind. Der Tunnel-Service ermöglicht auch den Zugriff auf Community-Mitglieder über die Konsolen [Mitglieder und Gruppen](members.md) in der Autorenumgebung.
 
-Die Konvention sieht vor, dass Mitglieder und Mitgliedsgruppen, die in der Publish-Umgebung erstellt wurden *in* Autorenumgebung nicht neu erstellt werden. Weitere Informationen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](users.md).
+Die Konvention sieht vor, dass Mitglieder und Mitgliedergruppen, die in der Veröffentlichungsumgebung erstellt wurden *in der Autorenumgebung* neu erstellt werden. Weitere Informationen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](users.md).
 
 Einfache Anweisungen zum Aktivieren des Tunneldienstes auf einer **Author**-Instanz finden Sie unter [Tunneldienst](deploy-communities.md#tunnel-service-on-author).
 
@@ -83,23 +90,23 @@ Erstellen Sie einen Benutzer in *author*, dem die Rolle Community-Administrator 
 
 * In der Autoreninstanz
 
-   * Beispiel: [http://localhost:4502/](http://localhost:4503/)
+  * Beispiel: [http://localhost:4502/](http://localhost:4503/)
 
 * Mit Administratorrechten anmelden
 
-   * Beispiel: Benutzername &#39;admin&#39; / Kennwort &#39;admin&#39;
+  * Beispiel: Benutzername &#39;admin&#39; / Kennwort &#39;admin&#39;
 
 * Navigieren Sie in der Hauptkonsole zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**.
 * Wählen Sie im **Bearbeiten** die Option **[!UICONTROL Benutzer hinzufügen]**
 
 * Geben Sie im Dialogfeld `Create New User` Folgendes ein:
 
-   * **[!UICONTROL ID]**: sirius
-   * **[!UICONTROL E-Mail-]**: sirius.nilson@mailinator.com
-   * **[!UICONTROL Kennwort:]** password
-   * **[!UICONTROL Kennwort bestätigen&ast;]**: Kennwort
-   * **[!UICONTROL Vorname]**: Sirius
-   * **[!UICONTROL Nachname]**: Nilson
+  * **[!UICONTROL ID]**: sirius
+  * **[!UICONTROL E-Mail-]**: sirius.nilson@mailinator.com
+  * **[!UICONTROL Kennwort:]** password
+  * **[!UICONTROL Kennwort bestätigen&amp;ast;]**: Kennwort
+  * **[!UICONTROL Vorname]**: Sirius
+  * **[!UICONTROL Nachname]**: Nilson
 
 ### Sirius der Gruppe der Community-Administratoren zuweisen {#assign-sirius-to-community-administrators-group}
 
@@ -107,8 +114,8 @@ Scrollen Sie nach unten zu `Add User to Groups`:
 
 * Zum Suchen „C“ eingeben
 
-   * Klicken Sie auf `Community Administrators`
-   * Klicken Sie auf `Community Enablement Managers`
+  * Klicken Sie auf `Community Administrators`
+  * Klicken Sie auf `Community Enablement Managers`
 
 * Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -116,9 +123,9 @@ Scrollen Sie nach unten zu `Add User to Groups`:
 
 ## Social-Media-Anmeldung aktivieren {#enable-social-login}
 
-Bevor die Demoversionen der Social-Media-Anmeldung mit Facebook und Twitter verwendet werden können, müssen Sie Folgendes tun
+Bevor die Demonstrationsversionen der sozialen Anmeldung mit Facebook und Twitter verwendet werden können, ist es notwendig,
 
-1. Installieren Sie ein Fix Pack oder [neueste Feature Pack](deploy-communities.md#latestfeaturepack) (für Änderungen an der Facebook-API im März 2017).
+1. Installieren Sie ein Fix Pack oder [neueste Feature Pack](deploy-communities.md#latestfeaturepack) (für Änderungen an der Facebook-API vom März 2017).
 1. [Aktivieren des OAuth](social-login.md#adobe-granite-oauth-authentication-handler)Anbieters in der Veröffentlichungsumgebung.
 
 Für Produktions-Server ist es erforderlich, die Cloud-Services zu erstellen, die für die Bereitstellung der Social-Media-Anmeldung erforderlich sind.
@@ -143,7 +150,7 @@ Verwenden Sie die [Tagging-Konsole](../../help/sites-administering/tags.md#taggi
 Folgen Sie dann den Anweisungen, um:
 
 1. [Festlegen der Tag-Berechtigungen](../../help/sites-administering/tags.md#setting-tag-permissions).
-1. [Publish die Tags](../../help/sites-administering/tags.md#publishing-tags).
+1. [Veröffentlichen Sie die Tags](../../help/sites-administering/tags.md#publishing-tags).
 
 Beispielpaket von Tags, die für die Tutorials „Erste Schritte“ in AEM Communities erstellt wurden
 
@@ -155,4 +162,4 @@ Es wird empfohlen, jedoch optional, [MSRP](msrp.md) (MongoDB) als [Common Store]
 
 Anweisungen finden Sie unter [Einrichten von MongoDB für Demo](demo-mongo.md).
 
-Standardmäßig führt die Installation der Authoring- und Publishing-AEM-Instanzen dazu, dass benutzergenerierte Inhalte (User Generated Content, UGC) im [JCR-Tar-Speicher) gespeichert &#x200B;](../../help/sites-deploying/platform.md), auf den über [JSRP](jsrp.md) zugegriffen wird. JSRP ist kein gewöhnlicher Speicher, was bedeutet, dass UGC nur in der Instanz sichtbar ist, in der sie eingegeben wurde. Normalerweise wird der benutzergenerierte Inhalt (UGC) in einer Veröffentlichungsinstanz eingegeben und wäre in der Autorenumgebung nicht sichtbar, was dazu führt, dass alle Moderationsaufgaben die Veröffentlichungsinstanz verwenden müssen.
+Standardmäßig führt die Installation der Authoring- und Publishing-AEM-Instanzen dazu, dass benutzergenerierte Inhalte (User Generated Content, UGC) im [JCR-Tar-Speicher) gespeichert ](../../help/sites-deploying/platform.md), auf den über [JSRP](jsrp.md) zugegriffen wird. JSRP ist kein gewöhnlicher Speicher, was bedeutet, dass UGC nur in der Instanz sichtbar ist, in der sie eingegeben wurde. Normalerweise wird der benutzergenerierte Inhalt (UGC) in einer Veröffentlichungsinstanz eingegeben und wäre in der Autorenumgebung nicht sichtbar, was dazu führt, dass alle Moderationsaufgaben die Veröffentlichungsinstanz verwenden müssen.

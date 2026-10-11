@@ -9,13 +9,25 @@ exl-id: 01e9ab67-15e2-4bc4-9b8f-0c84bcd56862
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 100%
-
 ---
-
 # Beheben von Serialisierungsproblemen in AEM{#mitigating-serialization-issues-in-aem}
 
 ## Überblick {#overview}
@@ -40,10 +52,10 @@ Adobe unterstützt offiziell Java™ 6, 7 und 8. Adobe geht jedoch davon aus, da
 >
 >Falls Sie bereits das Serialisierungs-Hotfix für AEM 6.1 installiert haben, entfernen Sie die Startbefehle für den Agenten aus Ihrer Java™-Ausführungszeile.
 
-1. Installieren Sie das Bundle **com.adobe.cq.cq-serialization-tester**.
+1. Installieren Sie das Paket **com.adobe.cq.cq-serialization-tester**.
 
-1. Navigieren Sie zur Bundle-Web-Konsole (`https://server:port/system/console/bundles`).
-1. Suchen Sie nach dem Serialisierungs-Bundle und starten Sie es. Dadurch wird der NotSoSerial-Agent automatisch dynamisch geladen.
+1. Navigieren Sie zur Paket-Web-Konsole (`https://server:port/system/console/bundles`).
+1. Suchen Sie nach dem Serialisierungs-Paket und starten Sie es. Dadurch wird der NotSoSerial-Agent automatisch dynamisch geladen.
 
 ## Installieren des Agenten auf Anwendungs-Servern {#installing-the-agent-on-application-servers}
 

@@ -4,13 +4,21 @@ description: Mit dem Turnstile-Service können Sie die Formularsicherheit verbes
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: 8025412849a1f324537019247a5e37b7931df7e7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 95%
-
+source-wordcount: '862'
+ht-degree: 97%
 ---
-
 # Verbinden Ihrer AEM Forms-Umgebung mit Turnstile {#connect-your-forms-environment-with-turnstile-service}
 
 <span class="preview">Diese Funktion basiert auf der Feature Toggle-ID `FT_FORMS-12407`. Um die Funktion zu aktivieren, führen Sie die Schritte aus, die im Artikel [Feature-Umschalter aktivieren](/help/forms/using/enable-feature-toggle.md) beschrieben sind. </span>
@@ -30,7 +38,7 @@ AEM Forms 6.5 unterstützt die folgenden CAPTCHA-Lösungen:
 
 Turnstile Captcha von Cloudflare bietet eine Sicherheitsmaßnahme zum Schutz von Formularen vor automatisierten Bots, bösartigen Angriffen, Spams und unerwünschtem automatisierten Traffic. Bei der Formularübermittlung wird ein Kontrollkästchen angezeigt, mit dem überprüft wird, ob es sich um menschliche Benutzende handelt, bevor das Formular übermittelt werden kann.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440949?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440940/)
 
 ### Voraussetzungen für die Integration der AEM Forms-Umgebung mit Turnstile Captcha {#prerequisite}
 
@@ -56,7 +64,7 @@ So integrieren Sie AEM Forms mit dem Turnstile-Service:
 1. So konfigurieren Sie Ihre Cloud-Services:
    1. Navigieren Sie in Ihrer AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud-Services]** und klicken Sie auf **[!UICONTROL Turnstile]**.
       ![Turnstile in Cloud-Services](assets/turnstile-in-ui.png)
-   1. Wählen Sie einen erstellten oder aktualisierten Konfigurations-Container aus, wie im vorherigen Abschnitt beschrieben. Klicken Sie **[!UICONTROL Erstellen]**.
+   1. Wählen Sie einen Konfigurations-Container aus, der wie im vorherigen Abschnitt beschrieben erstellt oder aktualisiert wurde. Klicken Sie auf **[!UICONTROL Erstellen]**.
       ![Konfiguration von Turnstile](assets/config-hcaptcha.png)
    1. Geben Sie den **[!UICONTROL Widget-Typ]** als verwaltet, nicht interaktiv oder unsichtbar an.
    1. Geben Sie weitere Details an wie **[!UICONTROL Titel]** und **[!UICONTROL Name]**.

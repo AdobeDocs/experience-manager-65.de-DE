@@ -10,33 +10,45 @@ exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 36cb540cda7faeca5949028c9c14ab2ecf860402
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1779'
-ht-degree: 100%
-
+source-wordcount: '1853'
+ht-degree: 99%
 ---
-
-# Bereitstellen und Verwalten {#deploying-and-maintaining}
+# Bereitstellen und Verwalten{#deploying-and-maintaining}
 
 Inhalt dieser Seite:
 
 * [Grundlegende Konzepte](#basic-concepts)
 
-   * [Was ist AEM?](#what-is-aem)
-   * [Typische Bereitstellungen](#typical-deployment-scenarios)
+  * [Was ist AEM?](#what-is-aem)
+  * [Typische Bereitstellungen](#typical-deployment-scenarios)
 
-      * [On-Premise](#on-premise)
-      * [Managed Services mit Cloud Manager](#managed-services-using-cloud-manager)
+    * [On-Premise](#on-premise)
+    * [Managed Services mit Cloud Manager](#managed-services-using-cloud-manager)
 
 * [Erste Schritte](#getting-started)
 
-   * [Voraussetzungen](#prerequisites)
-   * [Abrufen der Software](#getting-the-software)
-   * [Standardmäßige lokale Installation](#default-local-install)
-   * [Installation von Erstellungs- und Veröffentlichungsinstanzen](#author-and-publish-installs)
-   * [Entpacktes Installationsverzeichnis](#unpacked-install-directory)
-   * [Starten und Anhalten](#starting-and-stopping)
+  * [Voraussetzungen](#prerequisites)
+  * [Abrufen der Software](#getting-the-software)
+  * [Standardmäßige lokale Installation](#default-local-install)
+  * [Installation von Erstellungs- und Veröffentlichungsinstanzen](#author-and-publish-installs)
+  * [Entpacktes Installationsverzeichnis](#unpacked-install-directory)
+  * [Starten und Anhalten](#starting-and-stopping)
 
 Nachdem Sie sich mit diesen Grundlagen vertraut gemacht haben, finden Sie auf den folgenden Unterseiten komplexere und ausführlichere Informationen:
 
@@ -57,7 +69,7 @@ Nachdem Sie sich mit diesen Grundlagen vertraut gemacht haben, finden Sie auf de
 * [Einführung in die AEM-Plattform](/help/sites-deploying/platform.md)
 * [Leistungsrichtlinien](/help/sites-deploying/performance-guidelines.md)
 * [Erste Schritte mit AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Was ist AEM Screens? ](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=de)
+* [Was ist AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=de)
 
 ## Grundlegende Konzepte {#basic-concepts}
 
@@ -87,7 +99,7 @@ Der AEM-Server ist **Java-basiert** und kann auf den meisten Betriebssystemen au
 
 >[!NOTE]
 >
->Die Funktion „Adaptive Formulare“, verfügbar im AEM 6.5-Schnellstart, dient nur zu Kennenlern- und Evaluierungszwecken.  Für die Verwendung in der Produktion muss eine gültige Lizenz für AEM Forms erworben werden, da für die Funktion „Adaptive Formulare“ eine Lizenzierung erforderlich ist.
+>Die Funktion „Adaptive Formulare“, verfügbar im AEM 6.5-Schnellstart, dient nur zu Kennenlern- und Evaluierungszwecken. Für die Verwendung in der Produktion muss eine gültige Lizenz für AEM Forms erworben werden, da für die Funktion „Adaptive Formulare“ eine Lizenzierung erforderlich ist.
 
 ### Typische Bereitstellungsszenarien {#typical-deployment-scenarios}
 
@@ -98,9 +110,9 @@ In der Terminologie von AEM entspricht eine „Instanz“ einer Kopie von AEM, d
 
 Diese Instanzen sind hinsichtlich der installierten Software identisch. Sie unterscheiden sich nur in Bezug auf ihre Konfiguration. Darüber hinaus verwenden die meisten Installationen einen Dispatcher:
 
-* **Dispatcher**: Ein mit dem AEM-Dispatcher-Modul angereicherter statischer Webserver (Apache httpd, Microsoft® IIS).  Er speichert die durch die Veröffentlichungsinstanz generierten Web-Seiten zwischen, um die Leistung zu verbessern.
+* **Dispatcher**: Ein mit dem AEM-Dispatcher-Modul angereicherter statischer Webserver (Apache httpd, Microsoft® IIS). Er speichert die durch die Veröffentlichungsinstanz generierten Web-Seiten zwischen, um die Leistung zu verbessern.
 
-Es gibt viele erweiterte Optionen und Ausarbeitungen dieses Setups, aber das grundlegende Muster von Author, Publish und Dispatcher bildet den Kern der meisten Bereitstellungen. Zunächst konzentrieren wir uns auf ein einfaches Setup.  Die Erläuterung der erweiterten Bereitstellungsoptionen folgt.
+Es gibt viele erweiterte Optionen und Ausarbeitungen dieses Setups, aber das grundlegende Muster von Author, Publish und Dispatcher bildet den Kern der meisten Bereitstellungen. Zunächst konzentrieren wir uns auf ein einfaches Setup. Die Erläuterung der erweiterten Bereitstellungsoptionen folgt.
 
 In den folgenden Abschnitten werden beide Szenarien beschrieben:
 
@@ -140,7 +152,7 @@ Während Produktionsinstanzen für gewöhnlich auf dedizierten Computern ausgef�
 
 Um sich mit AEM vertraut zu machen bzw. um die Entwicklung auf AEM vorzunehmen, wird häufig eine auf Ihrem lokalen Computer installierte Instanz verwendet, auf der Apple OS X oder Desktop-Versionen von Microsoft® Windows oder Linux® ausgeführt werden.
 
-Client-seitig funktioniert AEM mit allen modernen Browsern (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome **51+** **, Firefox **47+, **Safari** 8+) unter Desktop- und Tablet-Betriebssystemen. Details finden Sie unter [Unterstützte Clientplattformen](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
+Client-seitig funktioniert AEM mit allen modernen Browsern (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome** 51+****, Firefox **47+, **Safari** 8+) unter Desktop- und Tablet-Betriebssystemen. Details finden Sie unter [Unterstützte Clientplattformen](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
 
 ### Abrufen der Software {#getting-the-software}
 
@@ -312,4 +324,4 @@ Der obige Abschnitt sollte Ihnen ein gutes Verständnis der Grundlagen zur AEM-I
 * [Einführung in die AEM-Plattform](/help/sites-deploying/platform.md)
 * [Leistungsrichtlinien](/help/sites-deploying/performance-guidelines.md)
 * [Erste Schritte mit AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Was ist AEM Screens? ](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=de)
+* [Was ist AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=de)

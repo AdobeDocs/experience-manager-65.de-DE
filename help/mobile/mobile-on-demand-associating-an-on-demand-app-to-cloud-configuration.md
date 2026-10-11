@@ -9,13 +9,17 @@ exl-id: 37428543-c310-4712-a4ec-1f482579fb4b
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 6%
-
 ---
-
 # Cloud-Konfiguration{#cloud-configuration}
 
 {{ue-over-mobile}}
@@ -34,7 +38,7 @@ Von dort aus wird die Veröffentlichung, Vorschau und Verwaltung von Inhalten m�
 
 Um Mobile On-Demand-Cloud-Services zu konfigurieren, klicken Sie auf das oberste Zahnrad in der oberen rechten Ecke der Kachel **Verbindung verwalten** im Dashboard Ihrer App.
 
-Sie sollten mit dem App-Dashboard und den verfügbaren Kacheln vertraut sein. Weitere Informationen finden Sie unter &lbrace;0[&#128279;](/help/mobile/mobile-apps-ondemand-application-dashboard.md) Dashboard der AEM Mobile-Anwendung .
+Sie sollten mit dem App-Dashboard und den verfügbaren Kacheln vertraut sein. Weitere Informationen finden Sie unter {0](/help/mobile/mobile-apps-ondemand-application-dashboard.md) Dashboard der AEM Mobile-Anwendung .[
 
 ### Einrichten eines Links zur Cloud-Konfiguration {#setting-up-link-to-cloud-configuration}
 

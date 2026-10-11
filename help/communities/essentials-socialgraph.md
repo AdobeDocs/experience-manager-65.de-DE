@@ -9,7 +9,16 @@ exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 4%
@@ -18,7 +27,7 @@ ht-degree: 4%
 
 Die Fähigkeit eines Mitglieds der Community, [Aktivitäten](essentials-activities.md) zu verfolgen, wird durch zwei Komponenten festgelegt:
 
-Die `following`-Komponente muss mit einer anderen Ressource verknüpft sein, und diese Verknüpfung wurde bereits für bestehende Community-Mitglieder und -Funktionen auf einer [Community-Site“ &#x200B;](overview.md#communitiessites).
+Die `following`-Komponente muss mit einer anderen Ressource verknüpft sein, und diese Verknüpfung wurde bereits für bestehende Community-Mitglieder und -Funktionen auf einer [Community-Site“ ](overview.md#communitiessites).
 
 Die `following`-Komponente listet die Elemente auf, die entweder auf das aktuelle Element folgen oder auf die das aktuelle Element folgt. Dieses soziale Diagramm von Beziehungen zwischen Mitgliedern ist im Benutzerprofil enthalten, das für eine Community-Site erstellt wurde.
 

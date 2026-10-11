@@ -9,13 +9,22 @@ exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1824'
 ht-degree: 97%
-
 ---
-
 
 # Integrieren von AEM 6.5 mit Adobe Campaign Standard {#integrating-with-adobe-campaign-standard}
 
@@ -66,7 +75,7 @@ Adobe Campaign Standard enthält standardmäßig einen `aemserver`-Benutzer, den
 
 Ihr `aemserver`-Benutzer verfügt jetzt über die erforderlichen Berechtigungen, damit AEM ihn für die Kommunikation mit Adobe Campaign verwenden kann.
 
-Bevor AEM jedoch den `aemserver`-Benutzer verwenden kann, muss sein Kennwort festgelegt sein. Dies kann nicht über Adobe Campaign erfolgen. Es muss von einer Support-Fachkraft von Adobe durchgeführt werden. [Senden Sie ein Ticket an die Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-tab=home&lang=de#support), um das Zurücksetzen des `aemserver`-Kennworts anzufordern. Wenn Sie das Kennwort von der Adobe-Kundenunterstützung erhalten haben, bewahren Sie es an einem sicheren Ort auf.
+Bevor AEM jedoch den `aemserver`-Benutzer verwenden kann, muss sein Kennwort festgelegt sein. Dies kann nicht über Adobe Campaign erfolgen. Es muss von einer Support-Fachkraft von Adobe durchgeführt werden. [Senden Sie ein Ticket an die Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-tab=home&lang=de#support), um das Zurücksetzen des `aemserver`-Kennworts anzufordern. Wenn Sie das Kennwort von der Adobe-Kundenunterstützung erhalten haben, bewahren Sie es an einem sicheren Ort auf.
 
 ## Überprüfen der Option „AEMResourceTypeFilter“ in Campaign {#resource-type-filter}
 

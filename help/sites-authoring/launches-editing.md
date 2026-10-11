@@ -11,13 +11,31 @@ exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '529'
 ht-degree: 100%
-
 ---
-
 # Bearbeiten von Launches{#editing-launches}
 
 ## Bearbeiten von Launch-Seiten {#editing-launch-pages}
@@ -44,7 +62,7 @@ Eine Live Copy wird verwendet, um Inhalte *von* der Quellverzweigung *mit* Ihrer
 
 Sie können Änderungen auf dieselbe Weise vornehmen wie für eine standardmäßige Live Copy. Zum Beispiel:
 
-* Durch Klicken auf ein geschlossenes Schloss wird diese Synchronisierung unterbrochen und Sie haben die Möglichkeit, neue Aktualisierungen am Inhalt Ihres Launches vorzunehmen.  Nach dem Entsperren (offenes Vorhängeschloss) werden Ihre Änderungen nicht durch Änderungen überschrieben, die an derselben Stelle innerhalb des Quellzweigs vorgenommen werden.
+* Durch Klicken auf ein geschlossenes Schloss wird diese Synchronisierung unterbrochen und Sie haben die Möglichkeit, neue Aktualisierungen am Inhalt Ihres Launches vorzunehmen. Nach dem Entsperren (offenes Vorhängeschloss) werden Ihre Änderungen nicht durch Änderungen überschrieben, die an derselben Stelle innerhalb des Quellzweigs vorgenommen werden.
 * Sie können die Vererbung für eine bestimmte Seite **aussetzen** (und **fortsetzen**).
 
 Siehe [Ändern des Live-Copy-Inhalts](/help/sites-administering/msm-livecopy.md#changing-live-copy-content).
@@ -71,11 +89,11 @@ Sie können jederzeit Seiten zum Bereich der Quellseiten für einen Launch hinzu
 
    * über die [Konsole „Launches“](/help/sites-authoring/launches.md#the-launches-console):
 
-      * Wählen Sie **Bearbeiten** aus.
+     * Wählen Sie **Bearbeiten** aus.
 
    * [Verweise (Sites-Konsole)](/help/sites-authoring/launches.md#launches-in-references-sites-console), um die verfügbaren Aktionen anzuzeigen:
 
-      * Wählen Sie **Launch bearbeiten** aus.
+     * Wählen Sie **Launch bearbeiten** aus.
 
    Die Quellseiten werden angezeigt.
 
@@ -93,11 +111,11 @@ Sie können die Eigenschaften für einen Launch jederzeit bearbeiten:
 
    * über die [Konsole „Launches“](/help/sites-authoring/launches.md#the-launches-console):
 
-      * Wählen Sie **Eigenschaften** aus.
+     * Wählen Sie **Eigenschaften** aus.
 
    * [Verweise (Sites-Konsole)](/help/sites-authoring/launches.md#launches-in-references-sites-console), um die verfügbaren Aktionen anzuzeigen:
 
-      * Wählen Sie **Eigenschaften bearbeiten** aus.
+     * Wählen Sie **Eigenschaften bearbeiten** aus.
 
    Die Details werden angezeigt.
 

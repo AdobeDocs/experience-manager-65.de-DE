@@ -9,13 +9,21 @@ exl-id: b3de1a4a-f334-44bd-addc-463433204c99
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2335'
+source-wordcount: '2337'
 ht-degree: 97%
-
 ---
-
 # Entwickeln mit SAP Commerce Cloud {#developing-with-sap-commerce-cloud}
 
 >[!NOTE]
@@ -48,23 +56,23 @@ Das E-Commerce-Framework kann mit einer beliebigen E-Commerce-Lösung verwendet 
 
 * eCommerce-Engines sind OSGi-Services, die die `CommerceService`-Schnittstelle unterstützen.
 
-   * Engines können anhand einer `commerceProvider`-Service-Eigenschaft identifiziert werden.
+  * Engines können anhand einer `commerceProvider`-Service-Eigenschaft identifiziert werden.
 
 * AEM unterstützt `Resource.adaptTo()` für `CommerceService` und `Product`.
 
-   * Die `adaptTo`-Implementierung sucht nach einer `cq:commerceProvider`-Eigenschaft in der Hierarchie der Ressource:
+  * Die `adaptTo`-Implementierung sucht nach einer `cq:commerceProvider`-Eigenschaft in der Hierarchie der Ressource:
 
-      * Wenn der Wert gefunden wird, wird er zum Filtern der Suche nach einem Commerce-Service verwendet.
+    * Wenn der Wert gefunden wird, wird er zum Filtern der Suche nach einem Commerce-Service verwendet.
 
-      * Wenn nicht gefunden, wird der Commerce-Service mit dem höchsten Rang verwendet.
+    * Wenn nicht gefunden, wird der Commerce-Service mit dem höchsten Rang verwendet.
 
-   * Ein `cq:Commerce`-Mixin wird verwendet, um `cq:commerceProvider` zu stark typisierten Ressourcen hinzuzufügen.
+  * Ein `cq:Commerce`-Mixin wird verwendet, um `cq:commerceProvider` zu stark typisierten Ressourcen hinzuzufügen.
 
 * Die `cq:commerceProvider`-Eigenschaft wird auch als Verweis auf die geeignete Commerce-Factory-Definition verwendet.
 
-   * Eine `cq:commerceProvider`-Eigenschaft mit dem Wert `hybris` korreliert beispielsweise mit der OSGi-Konfiguration für **Day CQ Commerce Factory for Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory), wobei der Parameter `commerceProvider` auch den Wert `hybris` aufweist.
+  * Eine `cq:commerceProvider`-Eigenschaft mit dem Wert `hybris` korreliert beispielsweise mit der OSGi-Konfiguration für **Day CQ Commerce Factory for Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory), wobei der Parameter `commerceProvider` auch den Wert `hybris` aufweist.
 
-   * In diesem Fall können weitere Eigenschaften wie **Catalog version** konfiguriert werden (falls zutreffend und verfügbar).
+  * In diesem Fall können weitere Eigenschaften wie **Catalog version** konfiguriert werden (falls zutreffend und verfügbar).
 
 Siehe folgendes Beispiel:
 
@@ -116,9 +124,9 @@ Für das Entwickeln mit Hybris 4 ist Folgendes erforderlich:
 
 * Nehmen Sie im OSGi-Konfigurations-Manager folgende Einstellungen vor:
 
-   * Deaktivieren Sie die Hybris 5-Unterstützung für den Default Response Parser-Service.
+  * Deaktivieren Sie die Hybris 5-Unterstützung für den Default Response Parser-Service.
 
-   * Stellen Sie sicher, dass der Hybris Basic Authentication Handler-Dienst einen niedrigeren Rang als der Hybris OAuth Handler-Dienst hat.
+  * Stellen Sie sicher, dass der Hybris Basic Authentication Handler-Dienst einen niedrigeren Rang als der Hybris OAuth Handler-Dienst hat.
 
 ### Session-Handling {#session-handling}
 
@@ -138,11 +146,11 @@ Hybris verwendet eine Benutzersitzung, um Informationen wie den Warenkorb der Ku
 
 * Diese Sitzung „besitzt“ den **Warenkorb**.
 
-   * Sie führt Hinzufügen/Entfernen-Aktionen aus.
+  * Sie führt Hinzufügen/Entfernen-Aktionen aus.
 
-   * Führt die verschiedenen Berechnungen für den Warenkorb durch;
+  * Führt die verschiedenen Berechnungen für den Warenkorb durch;
 
-     `commerceSession.getProductPrice(Product product)`
+    `commerceSession.getProductPrice(Product product)`
 
 * Sie steuert den *Speicherort* für die **Auftragsdaten**.
 
@@ -167,9 +175,9 @@ In hybris gepflegte Produktdaten müssen in AEM verfügbar sein. Dafür wurde fo
 * Das Import-Tool (b) wird für die anfängliche Einrichtung der Seitenstruktur in AEM für Kataloge verwendet.
 * Katalogänderungen in hybris werden AEM über einen Feed mitgeteilt und dann in AEM wie folgt übernommen (b):
 
-   * Produkt im Hinblick auf die Katalogversion hinzugefügt/gelöscht/geändert.
+  * Produkt im Hinblick auf die Katalogversion hinzugefügt/gelöscht/geändert.
 
-   * Produkt genehmigt.
+  * Produkt genehmigt.
 
 * Die hybris-Erweiterung stellt ein Abruf-Import-Tool („hybris-Schema“) bereit, das für das Importieren von Änderungen in AEM in bestimmten Abständen konfiguriert werden kann (z. B. alle 24 Stunden, wobei das Intervall in Sekunden angegeben wird):
 
@@ -188,15 +196,15 @@ In hybris gepflegte Produktdaten müssen in AEM verfügbar sein. Dafür wurde fo
 
 * Für das Synchronisieren von Produkten zwischen Katalogversionen muss die entsprechende AEM-Seite aktiviert bzw. deaktiviert werden (a, c):
 
-   * Wenn Sie ein Produkt zur **Online**-Version eines Katalogs hinzufügen möchten, müssen Sie die Produktseite aktivieren.
+  * Wenn Sie ein Produkt zur **Online**-Version eines Katalogs hinzufügen möchten, müssen Sie die Produktseite aktivieren.
 
-   * Wenn Sie ein Produkt entfernen möchten, müssen Sie die Seite deaktivieren.
+  * Wenn Sie ein Produkt entfernen möchten, müssen Sie die Seite deaktivieren.
 
 * Das Aktivieren einer Seite in AEM (c) erfordert eine Prüfung (b) und ist nur möglich, wenn:
 
-   * sich das Produkt in der **Online**-Version eines Katalogs für Produktseiten befindet.
+  * sich das Produkt in der **Online**-Version eines Katalogs für Produktseiten befindet.
 
-   * die Produkte, auf die verwiesen wird, in der **Online**-Version eines Katalogs für andere Seiten (z. B. Kampagnenseiten) verfügbar sind.
+  * die Produkte, auf die verwiesen wird, in der **Online**-Version eines Katalogs für andere Seiten (z. B. Kampagnenseiten) verfügbar sind.
 
 * Aktivierte Produktseiten müssen auf die **Online**-Version (d) der Produktdaten zugreifen.
 
@@ -210,7 +218,7 @@ Ein einzelnes Produkt kann mehrere Variationen aufweisen, z. B. kann es je nach
 
 Es sind jedoch nicht alle Eigenschaften Variantenachsen. Varianten können sich auch auf andere Eigenschaften auswirken, z. B. kann der Preis von der Größe abhängen. Diese Eigenschaften können nicht von den Käuferinnen und Käufern ausgewählt werden und werden daher nicht als Variantenachsen betrachtet.
 
-Jedes Produkt und/oder jede Variante wird durch eine Ressource dargestellt und ordnet daher 1:1 einem Repository-Knoten zu. Eine Folge ist, dass ein bestimmtes Produkt und/oder eine bestimmte Variante durch ihren Pfad eindeutig identifiziert werden kann.
+Jedes Produkt und/oder jede Variante wird durch eine Ressource dargestellt und ist daher im Verhältnis 1:1 einem Repository-Knoten zugeordnet. Eine Folge ist, dass ein bestimmtes Produkt und/oder eine bestimmte Variante durch ihren Pfad eindeutig identifiziert werden kann.
 
 Die Produkt-/Variantenressource enthält nicht immer die tatsächlichen Produktdaten. Es kann sich um eine Darstellung von Daten handeln, die in einem anderen System (z. B. Hybris) gespeichert sind. Beispielsweise werden Produktbeschreibungen und Preise nicht in AEM gespeichert, sondern werden in Echtzeit aus der E-Commerce-Engine abgerufen.
 
@@ -233,7 +241,7 @@ Jede Produktressource kann durch eine `Product API` dargestellt werden. Die meis
 
 Im Allgemeinen befinden sich Produktdaten unter `/etc` und Produktverweise unter `/content`.
 
-Es muss eine 1::1-Zuordnung zwischen Produktvarianten und Produktdatenknoten vorhanden sein.
+Die Produktvarianten und Produktdatenknoten müssen 1:1 zugeordnet sein.
 
 Produktverweise müssen außerdem einen Knoten für jede präsentierte Variante haben, es müssen jedoch nicht alle Varianten präsentiert werden. Wenn ein Produkt beispielsweise die Varianten S, M und L hat, können die Produktdaten wie folgt aussehen:
 
@@ -333,31 +341,31 @@ public class AxisFilter implements VariantFilter {
 
 * **Allgemeiner Speichermechanismus**
 
-   * Produktknoten weisen die Eigenschaft „`nt:unstructured`“ auf.
+  * Produktknoten weisen die Eigenschaft „`nt:unstructured`“ auf.
 
-   * Ein Produktknoten kann Folgendes sein:
+  * Ein Produktknoten kann Folgendes sein:
 
-      * Eine Referenz, wobei die Produktdaten an anderer Stelle gespeichert werden:
+    * Eine Referenz, wobei die Produktdaten an anderer Stelle gespeichert werden:
 
-         * Produktverweise enthalten eine `productData`-Eigenschaft, die auf die Produktdaten verweist (in der Regel unter `/etc/commerce/products`).
+      * Produktverweise enthalten eine `productData`-Eigenschaft, die auf die Produktdaten verweist (in der Regel unter `/etc/commerce/products`).
 
-         * Die Produktdaten sind hierarchisch. Produktattribute werden von den Vorgängern eines Produktdatenknotens übernommen.
+      * Die Produktdaten sind hierarchisch. Produktattribute werden von den Vorgängern eines Produktdatenknotens übernommen.
 
-         * Produktverweise können auch lokale Eigenschaften enthalten, die die in ihren Produktdaten angegebenen überschreiben.
+      * Produktverweise können auch lokale Eigenschaften enthalten, die die in ihren Produktdaten angegebenen überschreiben.
 
-      * Ein Produkt selbst:
+    * Ein Produkt selbst:
 
-         * Ohne eine `productData`-Eigenschaft.
+      * Ohne eine `productData`-Eigenschaft.
 
-         * Ein Produktknoten, der alle Eigenschaften lokal enthält (und keine productData-Eigenschaft enthält), erbt Produktattribute direkt von seinen eigenen Vorgängern.
+      * Ein Produktknoten, der alle Eigenschaften lokal enthält (und keine productData-Eigenschaft enthält), erbt Produktattribute direkt von seinen eigenen Vorgängern.
 
 * **AEM-generische Produktstruktur**
 
-   * Jede Variante muss über einen eigenen Blattknoten verfügen.
+  * Jede Variante muss über einen eigenen Blattknoten verfügen.
 
-   * Die Produktoberfläche stellt sowohl Produkte als auch Varianten dar, aber der zugehörige Repository-Knoten gibt an, um was es sich handelt.
+  * Die Produktoberfläche stellt sowohl Produkte als auch Varianten dar, aber der zugehörige Repository-Knoten gibt an, um was es sich handelt.
 
-   * Der Produktknoten beschreibt die Produktattribute und Variantenachsen.
+  * Der Produktknoten beschreibt die Produktattribute und Variantenachsen.
 
 #### Beispiel {#example-1}
 
@@ -408,35 +416,35 @@ public class AxisFilter implements VariantFilter {
 
 * Der Warenkorb wird von `CommerceSession:` gesteuert:
 
-   * Die `CommerceSession` führt das Hinzufügen, Entfernen usw. durch.
-   * Die `CommerceSession` nimmt auch die diversen Berechnungen des Warenkorbs vor. &grave;&grave;
+  * Die `CommerceSession` führt das Hinzufügen, Entfernen usw. durch.
+  * Die `CommerceSession` nimmt auch die diversen Berechnungen des Warenkorbs vor. ``
 
 * Obwohl dies nicht direkt mit dem Warenkorb zusammenhängt, muss die `CommerceSession` auch Kataloginformationen angeben (da sie die Preise steuert).
 
-   * Für die Preisgestaltung können mehrere Modifikatoren gelten:
+  * Für die Preisgestaltung können mehrere Modifikatoren gelten:
 
-      * Mengenrabatte.
-      * Verschiedene Währungen.
-      * Mehrwertsteuerpflichtig und mehrwertsteuerfrei.
+    * Mengenrabatte.
+    * Verschiedene Währungen.
+    * Mehrwertsteuerpflichtig und mehrwertsteuerfrei.
 
-   * Die Modifikatoren sind offen und haben die folgende Schnittstelle:
+  * Die Modifikatoren sind offen und haben die folgende Schnittstelle:
 
-      * `int CommerceSession.getQuantityBreakpoints(Product product)`
-      * `String CommerceSession.getProductPrice(Product product)`
+    * `int CommerceSession.getQuantityBreakpoints(Product product)`
+    * `String CommerceSession.getProductPrice(Product product)`
 
 **Speicher**
 
 * Speicher
 
-   * Bei hybris steuert der hybris-Server den Warenkorb.
-   * Bei AEM werden Warenkörbe im Allgemeinen in [ClientContext](/help/sites-administering/client-context.md) gespeichert.
+  * Bei hybris steuert der hybris-Server den Warenkorb.
+  * Bei AEM werden Warenkörbe im Allgemeinen in [ClientContext](/help/sites-administering/client-context.md) gespeichert.
 
 **Personalisierung**
 
 * Die Personalisierung erfolgt immer über den [ClientContext](/help/sites-administering/client-context.md).
 * In allen Fällen wird eine ClientContext-Version (`/version/`) des Warenkorbs erstellt:
 
-   * Produkte sollten mithilfe der `CommerceSession.addCartEntry()`-Methode hinzugefügt werden.
+  * Produkte sollten mithilfe der `CommerceSession.addCartEntry()`-Methode hinzugefügt werden.
 
 * Nachstehend sehen Sie ein Beispiel für Warenkorbinformationen in einem ClientContext-Warenkorb:
 
@@ -491,8 +499,8 @@ public class AxisFilter implements VariantFilter {
 * Die Preise können auf Artikeln und Details der Bestellung basieren, wie Gewicht und/oder Lieferadresse.
 * `CommerceSession` hat Zugriff auf alle Abhängigkeiten und kann daher ähnlich wie Produktpreise behandelt werden:
 
-   * `CommerceSession` steuert die Versandkosten.
-   * Kann Versanddetails über `updateOrder(Map<String, Object> delta)` abrufen oder aktualisieren.
+  * `CommerceSession` steuert die Versandkosten.
+  * Kann Versanddetails über `updateOrder(Map<String, Object> delta)` abrufen oder aktualisieren.
 
 >[!NOTE]
 >
@@ -567,23 +575,23 @@ Vor einer vorhandenen hybris-Implementierung kann ein AEM-Font-End platziert wer
 
 * AEM > hybris
 
-   * Beim Anmelden bei hybris (falls keine AEM-Benutzenden vorhanden sind):
+  * Beim Anmelden bei hybris (falls keine AEM-Benutzenden vorhanden sind):
 
-      * Erstellen Sie eine hybris-Benutzerin oder einen hybris-Benutzer mit einem kryptografischen Zufallskennwort.
-      * Speichern Sie den Hybris-Benutzernamen im Benutzerverzeichnis des AEM-Benutzers.
+    * Erstellen Sie eine hybris-Benutzerin oder einen hybris-Benutzer mit einem kryptografischen Zufallskennwort.
+    * Speichern Sie den Hybris-Benutzernamen im Benutzerverzeichnis des AEM-Benutzers.
 
-   * Siehe: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
+  * Siehe: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
 * hybris > AEM
 
-   * Beim Anmelden bei AEM (falls das System die Person erkennt):
+  * Beim Anmelden bei AEM (falls das System die Person erkennt):
 
-      * Versuchen Sie, sich mit dem angegebenen Benutzernamen/Kennwort bei Hybris anzumelden.
-      * Falls erfolgreich, erstellen Sie eine neue Benutzerin oder einen neuen Benutzer in AEM mit demselben Kennwort (AEM-spezifisches Salt wird zu AEM-spezifischem Hash).
+    * Versuchen Sie, sich mit dem angegebenen Benutzernamen/Kennwort bei Hybris anzumelden.
+    * Falls erfolgreich, erstellen Sie eine neue Benutzerin oder einen neuen Benutzer in AEM mit demselben Kennwort (AEM-spezifisches Salt wird zu AEM-spezifischem Hash).
 
-   * Der obige Algorithmus wird in einem `AuthenticationInfoPostProcessor` von Sling implementiert.
+  * Der obige Algorithmus wird in einem `AuthenticationInfoPostProcessor` von Sling implementiert.
 
-      * Siehe: `com.adobe.cq.commerce.hybris.impl.user.LazyUserImporter.java`
+    * Siehe: `com.adobe.cq.commerce.hybris.impl.user.LazyUserImporter.java`
 
 ### Anpassen des Import-Prozesses {#customizing-the-import-process}
 

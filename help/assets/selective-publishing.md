@@ -10,13 +10,27 @@ role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3028'
 ht-degree: 96%
-
 ---
-
 # Konfigurieren selektiver Veröffentlichung auf Ordnerebene in Dynamic Media {#selective-publish-configure-folder}
 
 Sie können auf Ordnerebene wählen, ob Sie Assets in Adobe Experience Manager oder Dynamic Media veröffentlichen oder die Veröffentlichung aufheben möchten. Sie können entweder **[!UICONTROL Veröffentlichung verwalten]** oder **[!UICONTROL Quick Publish]** verwenden, anstatt sich ausschließlich auf die **[!UICONTROL Dynamic Media-Konfiguration]** zu verlassen, deren Einstellungen für alle Ordner in Ihrer Dynamic Media-Instanz gelten.
@@ -147,7 +161,7 @@ Siehe [Erstellen einer Dynamic Media-Konfiguration](#configuring-dynamic-media-c
    | Aktion | Beschreibung |
    | --- | --- |
    | **[!UICONTROL Veröffentlichung aufheben]** (aus Experience Manager) | Wählen Sie diese Option aus, um eine Veröffentlichung von Assets in Experience Manager rückgängig zu machen. |
-   | **[!UICONTROL Veröffentlichung in Dynamic Media aufheben]** | Wählen Sie diese Option aus, wenn Sie die Veröffentlichung von Assets in Dynamic Media rückgängig machen möchten.<br>Diese Option ist nur verfügbar, wenn **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** in den **des Ordners auf** Selektive Veröffentlichung“ festgelegt ist. |
+   | **[!UICONTROL Veröffentlichung in Dynamic Media aufheben]** | Wählen Sie diese Option aus, wenn Sie die Veröffentlichung von Assets in Dynamic Media rückgängig machen möchten.<br>Diese Option ist nur verfügbar, wenn **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** in den ]**des Ordners auf**[!UICONTROL  Selektive Veröffentlichung“ festgelegt ist. |
 
 1. Legen Sie unter **[!UICONTROL Zeitplan]** den Zeitpunkt der Deaktivierung fest.
 
@@ -210,7 +224,8 @@ Siehe auch [Suchen von Assets in Experience Manager](/help/assets/search-assets.
    ![Listenansicht und Filter in Suchergebnissen](/help/assets/assets-dm/select-publish-search-result.png)
 
 1. Erweitern Sie im linken Bereich den **[!UICONTROL Status]** und dann das Suchprädikat für **[!UICONTROL Dynamic Media]**.
-1. Verwenden Sie die Kontrollkästchen **[!UICONTROL Veröffentlicht]** und **[!UICONTROL Veröffentlichung aufgehoben]**, um die Suchergebnisse je nach Veröffentlichungsstatus der Dynamic Media-Assets weiter zu verfeinern.Optional können Sie diese Kontrollkästchen zusammen mit dem Suchprädikat **[!UICONTROL Veröffentlichen]** verwenden, um die Suchergebnisse von **[!UICONTROL veröffentlichten]** und **[!UICONTROL nicht mehr veröffentlichten]** Experience Manager-Assets zu verfeinern.
+1. Verwenden Sie die Kontrollkästchen **[!UICONTROL Veröffentlicht]** und **[!UICONTROL Veröffentlichung aufgehoben]**, um die Suchergebnisse je nach Veröffentlichungsstatus der Dynamic Media-Assets weiter zu verfeinern.
+Optional können Sie diese Kontrollkästchen zusammen mit dem Suchprädikat **[!UICONTROL Veröffentlichen]** verwenden, um die Suchergebnisse von **[!UICONTROL veröffentlichten]** und **[!UICONTROL nicht mehr veröffentlichten]** Experience Manager-Assets zu verfeinern.
 1. Führen Sie einen der folgenden Schritte aus:
    * Wählen Sie ein oder mehrere Assets aus, die Sie veröffentlichen oder deren Veröffentlichung Sie aufheben möchten.
    * Klicken Sie in der rechten oberen Ecke der Seite **[!UICONTROL Suchergebnisse]** auf **[!UICONTROL Alle auswählen]**.
@@ -263,7 +278,8 @@ Sie können in Experience Manager die **[!UICONTROL Timeline]** mit der **[!UICO
 1. Klicken Sie in Experience Manager links oben auf der Seite auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen. Klicken Sie auf der Seite links auf das Navigationssymbol (direkt über dem Werkzeugsymbol) und dann auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 1. Öffnen Sie in der **[!UICONTROL Kartenansicht]**, **[!UICONTROL Spaltenansicht]** oder **[!UICONTROL Listenansicht]** (im Screenshot unten ist die **[!UICONTROL Listenansicht]** dargestellt) einen Ordner, der Assets enthält, die Sie veröffentlicht haben oder deren Veröffentlichung Sie aufgehoben haben.
 1. Wählen Sie ein Asset aus, damit es mit einem Häkchen angezeigt wird. Siehe als Beispiel den Screenshot unten.
-1. Wählen Sie links oben auf der Seite aus dem Dropdown-Menü die Option **[!UICONTROL Timeline]** Der Bereich **[!UICONTROL Status]** links zeigt den Veröffentlichungsstatus des ausgewählten Assets an.Wenn Sie die **[!UICONTROL Listenansicht]** verwenden, wird eine zusätzliche Spalte für den Veröffentlichungsstatus in **[!UICONTROL Dynamic Media]** angezeigt.
+1. Wählen Sie links oben auf der Seite aus dem Dropdown-Menü die Option **[!UICONTROL Timeline]** Der Bereich **[!UICONTROL Status]** links zeigt den Veröffentlichungsstatus des ausgewählten Assets an.
+Wenn Sie die **[!UICONTROL Listenansicht]** verwenden, wird eine zusätzliche Spalte für den Veröffentlichungsstatus in **[!UICONTROL Dynamic Media]** angezeigt.
    * In einem Ordner, der für die Synchronisation mit Dynamic Media konfiguriert wurde, wird die Spalte **[!UICONTROL Dynamic Media]** standardmäßig angezeigt.
    * In einem Ordner, der *nicht* für die Synchronisation mit Dynamic Media konfiguriert wurde, wird die Spalte „Dynamic Media“ nicht angezeigt.
      ![Listenansicht und Timeline](/help/assets/assets-dm/selective-publish-status-timeline.png)

@@ -9,13 +9,22 @@ exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 100%
-
 ---
-
 # Planung{#planning}
 
 In diesem Dokument wird beschrieben, was Sie für die Planung Ihres Tests wissen müssen. Außerdem sollten Sie die folgenden Fragen beantworten, bevor Sie Ihre Tests durchführen:
@@ -113,7 +122,7 @@ Bevor Sie mit Ihren detaillierten Testfällen und Ihrem Testplan beginnen, könn
 
 und andere.
 
-**Sammeln von Traffic-Statistiken von der bestehenden Website**: Diese Informationen können aus den Protokolldateien extrahiert werden. Weitere Informationen finden Sie unter „Leistungsüberwachung“.
+**Sammeln von Traffic-Statistiken von der bestehenden Website**: Diese Informationen können aus den Protokolldateien extrahiert werden. Weitere Informationen finden Sie unter „Überwachen der Performance“.
 
 Diese Zahlen geben einen Überblick über den aktuellen Traffic (Menge und Verteilung) auf der vorhandenen Website und können als Ausgangspunkt für die neue Website verwendet werden.
 

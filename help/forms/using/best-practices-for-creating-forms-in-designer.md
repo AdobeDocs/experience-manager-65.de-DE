@@ -6,35 +6,51 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
-source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 1af3c3d4-88d7-5e0f-813c-eb70824bfcdd
+    internal-label: Forms Designer
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '11350'
-ht-degree: 97%
-
+source-wordcount: '11745'
+ht-degree: 98%
 ---
-
 # Best Practices zum Erstellen von Formularen in Forms Designer
 
-Mit LiveCycle Designer können Sie unter Einhaltung der Richtlinien aus Abschnitt 508 Rich-Form-Inhalte erstellen. Dieses Handbuch enthält einen Überblick über die Best Practices für die Erstellung eines barrierefreien Formulars und Richtlinien für die Implementierung dieser Best Practices mit LiveCycle Designer. Die folgenden Best Practices werden behandelt:
+Mit LiveCycle Designer können Sie unter Einhaltung der Richtlinien aus Abschnitt 508 umfangreiche Formularinhalte erstellen. Dieses Handbuch enthält einen Überblick über die Best Practices für die Erstellung eines barrierefreien Formulars und Richtlinien für die Implementierung dieser Best Practices mit LiveCycle Designer. Die folgenden Best Practices werden behandelt:
 
 1. [Einfache und benutzerfreundliche Gestaltung von Formularen](#keep-simple)
 1. [Konfigurieren von Formulareigenschaften zum Generieren von Barrierefreiheits-Informationen](#configure-form-properties)
 1. [Auswählen der richtigen Steuerelemente](#choose-right-controls)
 1. [Angeben von Textäquivalenten für Bilder](#provide-text-equivalents)
 1. [Angeben angemessener Beschriftungen für Formularsteuerelemente](#provide-proper-labels)
-1. [Sicherstellen, dass Leserichtung und Registerkarten-Reihenfolge korrekt sind](#ensure-reading-tab-order)
+1. [Sicherstellen, dass die Leserichtung und die Tabulatorreihenfolge korrekt sind](#ensure-reading-tab-order)
 1. [Sicherstellen, dass Formularsteuerelemente mit der Tastatur aufgerufen werden können](#ensure-keyboard-accessible)
 1. [Verantwortungsvoller Umgang mit Farben](#use-color-responsibly)
 1. [Bereitstellen von Überschriftzellen für Tabellen](#provide-heading-cells)
 1. [Bereitstellen einer navigierbaren Formularstruktur](#provide-navigable-form)
 1. [Vermeiden von störendem Scripting](#avoid-disruptive-scripting)
-1. [Sicherstellen, dass auf alle Audio- und Videoinhalte zugegriffen werden kann](#ensure-audio-video-accessible)
+1. [Sicherstellen, dass alle Audio- und Videoinhalte zugänglich sind](#ensure-audio-video-accessible)
 1. [Kennzeichnen natürlicher Sprache und aller Sprachänderungen](#identify-natural-language)
 
 ## Einfache und benutzerfreundliche Gestaltung von Formularen {#keep-simple}
 
-Auf ein Formular kann nur dann zugegriffen werden, wenn es einfach zu verwenden ist. Sie sollten versuchen, Formulare zu entwerfen, die einfach und verwendbar sind. Ein einfaches Layout von Steuerelementen und Feldern mit klaren, aussagekräftigen Beschriftungen und QuickInfos erleichtert die Verwendung des Formulars für alle Benutzer erheblich.
-Das Entwerfen von Formularen, die übersichtlich und logisch angeordnet sind und klare und einfache Anweisungen bieten, hilft allen Benutzern, Formulare so einfach wie möglich auszufüllen. Navigationsfunktionen wie die Reihenfolge der Registerkarten und Tastaturbefehle sollten die logische Reihenfolge der Objekte im Formular unterstützen.
+Ein Formular gilt als nicht barrierefrei, wenn es nicht einfach zu verwenden ist. Sie sollten versuchen, Formulare zu entwerfen, die einfach und benutzerfreundlich sind. Ein einfaches Layout mit Steuerelementen und Feldern mit klaren, aussagekräftigen Beschriftungen und QuickInfos erleichtert allen Benutzenden die Verwendung des Formulars.
+Übersichtlich und logisch aufgebaute Formulare, die klare und einfache Anweisungen enthalten, können von allen Benutzenden so leicht wie nur möglich ausgefüllt werden. Navigationsfunktionen wie die Tabulatorreihenfolge und Tastaturbefehle sollten die logische Reihenfolge der Objekte im Formular unterstützen.
 
 ### Vermeiden von blinkenden, blitzenden oder sich bewegenden Inhalten
 
@@ -51,19 +67,19 @@ Versuchen Sie generell, optische Effekte, die von Skripten eingefügt werden (z.
 Verwandte Prüfpunkte
 * Abschnitt 508 § 11934.21
 
-   * (h) Bei der Darstellung einer Animation müssen die Informationen nach Wahl der Benutzenden in mindestens einer nicht animierten Darstellungsform angezeigt werden können.
-   * (k) Bei der Software dürfen keine blinkenden oder aufblitzenden Texte, Objekte oder andere Elemente mit einer Blink-/Blitzfrequenz von mehr als 2 Hz und weniger als 55 Hz zum Einsatz kommen.
+  * (h) Bei der Darstellung einer Animation müssen die Informationen nach Wahl der Benutzenden in mindestens einer nicht animierten Darstellungsform angezeigt werden können.
+  * (k) Bei der Software dürfen keine blinkenden oder aufblitzenden Texte, Objekte oder andere Elemente mit einer Blink-/Blitzfrequenz von mehr als 2 Hz und weniger als 55 Hz zum Einsatz kommen.
 * Abschnitt 508 §11934.22
-   * (j) Seiten dürfen nicht so ausgelegt sein, dass der Bildschirm mit einer Frequenz von mehr als 2 Hz oder weniger als 55 Hz flackern kann.
+  * (j) Seiten dürfen nicht so gestaltet sein, dass der Bildschirm mit einer Frequenz von mehr als 2 Hz und weniger als 55 Hz flackert.
 * WCAG 1.0
-   * 7.1 Solange nicht Benutzeragenten den Benutzenden die Kontrolle über das Flackern ermöglichen, sollte ein Flackern des Bildschirms vermieden werden. (P1)
-   * 7.2 Solange nicht Benutzeragenten den Benutzenden die Kontrolle über das Blinken ermöglichen, sollte das Blinken von Inhalten (d. h. regelmäßiges Ändern der Darstellung, etwa durch Ein- und Ausschalten) vermieden werden (P2).
-   * 7.3 Solange nicht Benutzeragenten den Benutzenden das Einfrieren bewegter Inhalte ermöglichen, sollten Bewegungen auf den Seiten vermieden werden.
-   * 14.1 Verwenden Sie die klarste und einfachste, für den Inhalt einer Website passende Sprache.
+  * 7.1 Solange Benutzer-Agents den Benutzenden keine Kontrolle über das Flackern ermöglichen, sollte ein Flackern des Bildschirms vermieden werden. (P1)
+  * 7.2 Solange Benutzer-Agents den Benutzenden keine Kontrolle über das Blinken ermöglichen, sollte das Blinken von Inhalten (d. h. regelmäßiges Ändern der Darstellung, etwa durch Ein- und Ausschalten) vermieden werden (P2).
+  * 7.3 Solange Benutzer-Agents den Benutzenden das Einfrieren bewegter Inhalte nicht ermöglichen, sollten Bewegungen auf den Seiten vermieden werden.
+  * 14.1 Verwenden Sie die klarste und einfachste, für den Inhalt einer Website passende Sprache.
 * WCAG 2.0
-   * 2.2.2 Pausieren, Anhalten, Ausblenden: Für sich bewegende, blinkende, scrollende oder sich automatisch aktualisierende Informationen gelten folgenden Regeln (Stufe A):
-   * 2.3.1 Schwellenwert von maximal dreimaligem Aufblitzen: Web-Seiten enthalten keine Elemente, die innerhalb einer Sekunde mehr als dreimal aufblitzen, bzw. die Blitzfrequenz liegt unter den allgemeinen Schwellenwerten für Blitze und rote Blitze. (Stufe A)
-   * 2.3.2 Dreimaliges Aufblitzen: Webseiten enthalten nichts, das in einem Zeitraum von einer Sekunde mehr als dreimal blinkt. (Stufe AAA)
+  * 2.2.2 Pausieren, Anhalten, Ausblenden: Für sich bewegende, blinkende, scrollende oder sich automatisch aktualisierende Informationen gelten folgenden Regeln (Stufe A):
+  * 2.3.1 Schwellenwert von maximal dreimaligem Aufblitzen: Web-Seiten enthalten keine Elemente, die innerhalb einer Sekunde mehr als dreimal aufblitzen, bzw. die Blitzfrequenz liegt unter den allgemeinen Schwellenwerten für Blitze und rote Blitze. (Stufe A)
+  * 2.3.2 Dreimaliges Aufblitzen: Webseiten enthalten nichts, das in einem Zeitraum von einer Sekunde mehr als dreimal blinkt. (Stufe AAA)
 
 
 ## Konfigurieren von Formulareigenschaften zum Generieren von Barrierefreiheits-Informationen {#configure-form-properties}
@@ -80,15 +96,15 @@ Um ein barrierefreies Formular zu erstellen, müssen Sie die Formulareigenschaft
 In LiveCycle Designer ist diese Option standardmäßig aktiviert.
 
 >[!NOTE]
-> Diese Optionen gelten nur beim Speichern des Formularentwurfs als PDF-Datei. Sie gelten nicht für PDF-Dateien, die mit LiveCycle Forms erstellt wurden und über Konfigurationsoptionen verfügen, die in LiveCycle Designer von dieser Option unabhängig sind.
+> Diese Optionen gelten nur beim Speichern des Formularentwurfs als PDF-Datei. Sie gelten nicht für PDF-Dateien, die mit LiveCycle Forms erstellt wurden, da diese über Konfigurationsoptionen verfügen, die von dieser Option in LiveCycle Designer unabhängig sind.
 
 **Verwandte Prüfpunkte**
 
 * Section 508 §1194.21
-   * d) Für Hilfstechnologien müssen ausreichende Informationen über ein Element der Benutzeroberfläche, einschließlich Identität, Betrieb und Zustand des Elements, verfügbar sein. Wenn ein Bild ein Programmelement darstellt, müssen die vom Bild vermittelten Informationen auch im Text verfügbar sein.
-   * l) Bei der Verwendung elektronischer Formulare muss das Formular Personen, die Hilfstechnologien verwenden, den Zugriff auf alle Informationen, Feldelementen und Funktionen ermöglichen, die für das Ausfüllen und Übermitteln des Formulars erforderlich sind, einschließlich aller Anweisungen und Hinweise.
+  * (d) Für Hilfstechnologien müssen ausreichende Informationen über ein Benutzeroberflächenelement, einschließlich Identität, Funktion und Zustand des Elements, verfügbar sein. Wenn ein Bild ein Programmelement darstellt, müssen die vom Bild vermittelten Informationen auch im Text verfügbar sein.
+  * (l) Bei der Verwendung elektronischer Formulare muss das Formular Personen, die Hilfstechnologien verwenden, den Zugriff auf alle Informationen, Feldelemente und Funktionen ermöglichen, die für das Ausfüllen und Übermitteln des Formulars erforderlich sind, einschließlich aller Anweisungen und Hinweise.
 * Section 508 §1194.22
-   * n) Wenn elektronische Formulare für das Online-Ausfüllen konzipiert sind, muss das Formular Personen, die Hilfstechnologien verwenden, den Zugriff auf alle Informationen, Feldelementen und Funktionen ermöglichen, die für das Ausfüllen und Übermitteln des Formulars erforderlich sind, einschließlich aller Anweisungen und Hinweise.
+  * n) Wenn elektronische Formulare für das Online-Ausfüllen konzipiert sind, muss das Formular Personen, die Hilfstechnologien verwenden, den Zugriff auf alle Informationen, Feldelementen und Funktionen ermöglichen, die für das Ausfüllen und Übermitteln des Formulars erforderlich sind, einschließlich aller Anweisungen und Hinweise.
 
 
 ## Auswählen der richtigen Steuerelemente {#choose-right-controls}
@@ -99,26 +115,26 @@ Verwenden Sie beim Entwerfen Ihrer Formulare Entwicklungsobjekte aus den Registe
 
 Abbildung 1: **Objektbibliothek-Bedienfeld**
 
-Wenn Sie andere Objekte verwenden, werden diese möglicherweise von Hilfstechnologien ignoriert. Wenn Sie nur Standardobjekte verwenden, spart Ihnen dies den zusätzlichen Aufwand beim Definieren der Barrierefreiheitseigenschaften für Objekte, die Sie selbst erstellt haben. Wenn Sie eigene benutzerdefinierte Objekte erstellen und verwenden, stellen Sie sicher, dass Sie die Palette „Ein-/Ausgabehilfe“ verwenden, um Barrierefreiheitseigenschaften wie Rolle, QuickInfo, Bildschirmlesehilfen-Rangfolge und benutzerdefinierten Text für Bildschirmlesehilfen festlegen. Um die Palette „Ein-/Ausgabehilfe“ anzuzeigen, wählen Sie „Fenster“ > „Barrierefreiheit“.
+Wenn Sie andere Objekte verwenden, werden diese möglicherweise von Hilfstechnologien ignoriert. Wenn Sie nur Standardobjekte verwenden, spart Ihnen dies den zusätzlichen Aufwand beim Definieren der Barrierefreiheitseigenschaften für Objekte, die Sie selbst erstellt haben. Wenn Sie eigene benutzerdefinierte Objekte erstellen und verwenden, stellen Sie sicher, dass Sie die Palette „Barrierefreiheit“ verwenden, um Barrierefreiheitseigenschaften wie Rolle, QuickInfo, Bildschirmlesehilfen-Rangfolge und benutzerdefinierten Text für Bildschirmlesehilfen festzulegen. Um die Palette „Barrierefreiheit“ anzuzeigen, wählen Sie „Fenster“ > „Barrierefreiheit“.
 
 **Verwandte Prüfpunkte**
 * Section 508 §1194.21
-   * c) Es ist eine klar definierte Bildschirmanzeige des aktuellen Fokus anzugeben, die sich zwischen den interaktiven Schnittstellenelementen bewegt, wenn sich der Eingabefokus ändert. Der Fokus muss programmatisch offen gelegt werden, damit Hilfstechnologien den Fokus und Fokusänderungen nachverfolgen können.
-   * d) Für Hilfstechnologien müssen ausreichende Informationen über ein Element der Benutzeroberfläche, einschließlich Identität, Betrieb und Zustand des Elements, verfügbar sein. Wenn ein Bild ein Programmelement darstellt, müssen die vom Bild vermittelten Informationen auch im Text verfügbar sein.
-   * l) Bei der Verwendung elektronischer Formulare muss das Formular Personen, die Hilfstechnologien verwenden, den Zugriff auf alle Informationen, Feldelementen und Funktionen ermöglichen, die für das Ausfüllen und Übermitteln des Formulars erforderlich sind, einschließlich aller Anweisungen und Hinweise.
+  * (c) Es muss eine klar definierte Anzeige des aktuellen Fokus auf dem Bildschirm bereitgestellt werden, die sich mit der Änderung des Eingabefokus zwischen den interaktiven Oberflächenelementen bewegt. Der Fokus muss programmatisch zugänglich gemacht werden, damit Hilfstechnologien den Fokus und Fokusänderungen nachverfolgen können.
+  * d) Für Hilfstechnologien müssen ausreichende Informationen über ein Element der Benutzeroberfläche, einschließlich Identität, Betrieb und Zustand des Elements, verfügbar sein. Wenn ein Bild ein Programmelement darstellt, müssen die vom Bild vermittelten Informationen auch im Text verfügbar sein.
+  * (l) Bei der Verwendung elektronischer Formulare muss das Formular Personen, die Hilfstechnologien verwenden, den Zugriff auf alle Informationen, Feldelemente und Funktionen ermöglichen, die für das Ausfüllen und Übermitteln des Formulars erforderlich sind, einschließlich aller Anweisungen und Hinweise.
 * Section 508 §1194.22
-   * n) Wenn elektronische Formulare für das Online-Ausfüllen konzipiert sind, muss das Formular Personen, die Hilfstechnologien verwenden, den Zugriff auf alle Informationen, Feldelementen und Funktionen ermöglichen, die für das Ausfüllen und Übermitteln des Formulars erforderlich sind, einschließlich aller Anweisungen und Hinweise.
+  * (n) Wenn elektronische Formulare für das Online-Ausfüllen konzipiert sind, muss das Formular Personen, die Hilfstechnologien verwenden, den Zugriff auf alle Informationen, Feldelemente und Funktionen ermöglichen, die für das Ausfüllen und Übermitteln des Formulars erforderlich sind, einschließlich aller Anweisungen und Hinweise.
 
 * WCAG 2.0
-   * 3.2.4 Konsistente Erkennung: Komponenten mit der gleichen Funktionalität innerhalb eines Satzes von Web-Seiten werden konsistent erkannt. (Stufe AA)
-   * 4.1.2 Name, Rolle, Wert: Für alle Komponenten der Benutzeroberfläche (einschließlich u. a. Formularelemente, durch Skripte generierte Links und Komponenten) können Name und Rolle programmgesteuert bestimmt werden. Zustände, Eigenschaften und Werte, die von den Benutzenden festgelegt werden können, können programmgesteuert festgelegt sein, und eine Benachrichtigung über Änderungen an diesen Elementen steht den Benutzeragenten zur Verfügung, einschließlich Hilfstechnologien. (Stufe A)
+  * 3.2.4 Konsistente Identifizierung: Komponenten mit derselben Funktionalität innerhalb einer Gruppe von Web-Seiten werden konsistent identifiziert. (Stufe AA)
+  * 4.1.2 Name, Rolle, Wert: Für alle Komponenten der Benutzeroberfläche (einschließlich u. a. Formularelemente, Links und durch Skripte generierte Komponenten) können Name und Rolle programmgesteuert bestimmt werden; Zustände, Eigenschaften und Werte, die von Benutzenden festgelegt werden können, können programmgesteuert festgelegt werden; und Benachrichtigungen über Änderungen an diesen Elementen stehen Benutzer-Agents, einschließlich Hilfstechnologien, zur Verfügung. (Stufe A)
 
 
 ## Angeben von Textäquivalenten für Bilder {#provide-text-equivalents}
 
 Bilder können für Benutzende mit bestimmten Behinderungen zu einem besseren Verständnis beitragen. Für Benutzende von Bildschirmlesehilfen verringern Bilder jedoch die Barrierefreiheit Ihres Formulars, wenn Sie keine Textalternative bereitstellen.
 
-Wenn Sie Bilder verwenden möchten, geben Sie deswegen Textbeschreibungen für alle Bilder an. Stellen Sie sicher, dass der Text das Objekt und seinen Zweck im Formular beschreibt. Wenn Sie eine Textalternative definieren, liest die Bildschirmlesehilfe diese Alternative, wenn sie auf das Bild trifft. Daher muss für ein Bild, das Informationen enthält, immer eine Textalternative angegeben werden.
+Wenn Sie Bilder verwenden möchten, geben Sie für alle Bild- und Bildfeldobjekte Textbeschreibungen an. Stellen Sie sicher, dass der Text das Objekt und seinen Zweck im Formular beschreibt. Wenn Sie eine Textalternative definieren, liest die Bildschirmlesehilfe diese Alternative, wenn sie auf das Bild trifft. Daher muss für ein Bild, das Informationen enthält, immer eine Textalternative angegeben werden.
 
 Sie können Textbeschreibungen mithilfe der Eigenschaften „QuickInfo“ oder „Benutzerdefinierter Text für Bildschirmlesehilfen“ in der Palette „Ein-/Ausgabehilfe“ oder über Textfelder, Beschriftungen und Objektnamen bereitstellen, wie in der Option „Name“ auf der Registerkarte „Bindung“ angegeben. Abbildung 2 zeigt etwa ein Beispiel für ein Bild, das den Text „Get Adobe Reader“ enthält. Da eine Bildschirmlesehilfe keinen Text lesen kann, der Teil eines Bildes ist, sollten Sie in der Palette „Ein-/Ausgabehilfe“ für dieses Objekt eine Textalternative in das Feld „Benutzerdefinierter Text für Bildschirmlesehilfen“ hinzufügen. In den meisten Fällen sollte der Alternativtext mit dem im Bild sichtbaren Text übereinstimmen (siehe Abbildung 2).
 
@@ -133,27 +149,27 @@ Beachten Sie beim Festlegen des Alternativtexts Folgendes:
 * Erstellen Sie keine Textbeschreibungen für statische Bilder, die nur zur Dekoration verwendet werden.
 * Verwenden Sie keine gescannten Daten als Hintergrundinformationen. Dies kann vorkommen, wenn eine Designerin oder ein Designer ein Druckformular scannt und Adobe LiveCycle Designer verwendet, um dem Formular neue Felder hinzuzufügen. Bildschirmlesehilfen können die gescannten Daten in diesem Zustand nicht erkennen.
 
-Wenn Sie rein dekorative grafische Inhalte in Ihre Formulare aufnehmen, sollten Sie sicherstellen, dass Bildschirmlesehilfen die Präsenz des Bildes nicht ankündigen. Für die meisten Bildschirmlesehilfen kann dies erreicht werden, indem Sie in der Palette „Ein-/Ausgabehilfe“ die Eigenschaft „Bildschirmlesehilfen-Text“ auf „Keiner“ setzen. Wenn Sie dies nicht tun, könnten einige Bildschirmlesehilfen das Vorhandensein einer Grafik ankündigen, ohne anzugeben, was die Grafik darstellt. Stellen Sie bei dynamischen Bildern wie Bildfeldobjekten sicher, dass die Textalternativen beim Ändern des Bildes ordnungsgemäß aktualisiert werden. Erstellen Sie keine Textbeschreibungen für Bildfeldobjekte, die nur zur Dekoration verwendet werden. Sie können die FormCalc-Skriptsprache verwenden, um einem Bildfeldobjekt dynamisch Textbeschreibungen zuzuweisen. FormCalc ist die Standard-Skriptsprache von Adobe LiveCycle Designer. Betrachten Sie beispielsweise ein Formular mit einem Bildfeld namens „ImageField1“ und verknüpftem Text im Bildknoten der Laufzeitdaten. Sie können Skripte verwenden, um diesen Text wie folgt in einem entsprechenden Ereignis (z. B. `form:ready`) weiterzugeben:
+Wenn Sie rein dekorative grafische Inhalte in Ihre Formulare aufnehmen, sollten Sie sicherstellen, dass Bildschirmlesehilfen das Vorhandensein des Bildes nicht ansagen. Für die meisten Bildschirmlesehilfen kann dies erreicht werden, indem Sie in der Palette „Ein-/Ausgabehilfe“ die Eigenschaft „Bildschirmlesehilfen-Text“ auf „Keiner“ setzen. Wenn Sie dies nicht tun, könnten einige Bildschirmlesehilfen das Vorhandensein einer Grafik ankündigen, ohne anzugeben, was die Grafik darstellt. Stellen Sie bei dynamischen Bildern wie Bildfeldobjekten sicher, dass die Textalternativen beim Ändern des Bildes ordnungsgemäß aktualisiert werden. Erstellen Sie keine Textbeschreibungen für Bildfeldobjekte, die nur zur Dekoration verwendet werden. Sie können die FormCalc-Skriptsprache verwenden, um einem Bildfeldobjekt dynamisch Textbeschreibungen zuzuweisen. FormCalc ist die Standard-Skriptsprache von Adobe LiveCycle Designer. Betrachten Sie beispielsweise ein Formular mit einem Bildfeld namens „ImageField1“ und zugehörigem Text im Knoten „imagetext“ der Laufzeitdaten. Sie können Skripte verwenden, um diesen Text wie folgt in einem entsprechenden Ereignis (z. B. `form:ready`) weiterzugeben:
 
 `ImageField1.assist.toolTip = $record.imagetext.value`
 
 Verwandte Prüfpunkte
 * Section 508 §1194.22
-   * a) Für jedes nichttextliche Element ist ein Textäquivalent anzugeben (z. B. über „alt“, „longdesc“ oder im Elementinhalt).
+  * a) Für jedes nichttextliche Element ist ein Textäquivalent anzugeben (z. B. über „alt“, „longdesc“ oder im Elementinhalt).
 * WCAG 1.0
-   * 1.1 Geben Sie für jedes nichttextliche Element ein Textäquivalent an (z. B. über „alt“, „longdesc“ oder im Elementinhalt). Dazu gehören Bilder, grafische Darstellungen von Text (einschließlich Symbolen), Imagemap-Bereiche, Animationen (z. B. animierte GIFs), Applets und programmatische Objekte, ASCII-Grafiken, Frames, Skripte, als Aufzählungszeichen verwendete Bilder, Abstände, grafische Schaltflächen, Töne (mit oder ohne Benutzerinteraktion wiedergegeben), eigenständige Audiodateien, Audiospuren von Videos und Video (P1).
+  * 1.1 Geben Sie für jedes nichttextliche Element ein Textäquivalent an (z. B. über „alt“, „longdesc“ oder im Elementinhalt). Dazu gehören Bilder, grafische Darstellungen von Text (einschließlich Symbolen), Imagemap-Bereiche, Animationen (z. B. animierte GIFs), Applets und programmatische Objekte, ASCII-Grafiken, Frames, Skripte, als Aufzählungszeichen verwendete Bilder, Abstände, grafische Schaltflächen, Töne (mit oder ohne Benutzerinteraktion wiedergegeben), eigenständige Audiodateien, Audiospuren von Videos und Video (P1).
 * WCAG 2.0
-   * 1.1.1 Nichttextlicher Inhalt: Alle nichttextlichen Inhalte, die Benutzenden präsentiert werden, haben eine Textalternative, die dem jeweiligen Zweck entspricht, ausgenommen die unten aufgeführten Situationen. (Stufe A)
+  * 1.1.1 Nichttextlicher Inhalt: Alle nichttextlichen Inhalte, die Benutzenden präsentiert werden, haben eine Textalternative, die dem jeweiligen Zweck entspricht, ausgenommen die unten aufgeführten Situationen. (Stufe A)
 
 
 ## Angeben angemessener Beschriftungen für Formularsteuerelemente{#provide-proper-labels}
 
-Die Beschriftung oder der Untertitel eines Formularsteuerelements gibt an, was das Formularsteuerelement darstellen soll. Der Text „Vorname“ weist Benutzende zum Beispiel darauf hin, dass sie ihren Vornamen in ein Textfeld eingeben müssen. Damit Bildschirmlesehilfen darauf zugreifen können, muss die Beschriftung programmgesteuert mit dem Formularsteuerelement verknüpft sein oder das Formularsteuerelement muss mit zusätzlichen Barrierefreiheitsinformationen über die Palette „Ein-/Ausgabehilfe“ konfiguriert werden. Es reicht nicht aus, einfach ein Textobjekt neben dem Steuerelement zu platzieren. Sowohl für sehende als auch für sehbehinderte Benutzende ist es wichtig, dass die Beschriftung korrekt neben dem Steuerelement platziert wird. Beide Techniken werden in den folgenden Abschnitten besprochen.
+Die Beschriftung oder der Untertitel eines Formularsteuerelements gibt an, was das Formularsteuerelement darstellen soll. Der Text „Vorname“ weist Benutzende zum Beispiel darauf hin, dass sie ihren Vornamen in ein Textfeld eingeben müssen. Damit Bildschirmlesehilfen darauf zugreifen können, muss die Beschriftung programmgesteuert mit dem Formularsteuerelement verknüpft sein oder das Formularsteuerelement muss mit zusätzlichen Barrierefreiheitsinformationen über die Palette „Ein-/Ausgabehilfe“ konfiguriert werden. Es reicht nicht aus, einfach ein Textobjekt neben dem Steuerelement zu platzieren. Sowohl für sehende als auch für sehbehinderte Benutzende ist es wichtig, dass die Beschriftung korrekt neben dem Steuerelement platziert wird. Beide Techniken werden in den folgenden Abschnitten erläutert.
 
-### Festlegen des Textes für die barrierefreie Beschriftung über die Palette „Ein-/Ausgabehilfe“
+### Festlegen des Textes für das barrierefreie Label über die Palette „Barrierefreiheit“
 
-Die Beschriftung, die von Benutzenden der Bildschirmlesehilfe wahrgenommen wird, muss nicht unbedingt mit der visuellen Beschriftung übereinstimmen. In einigen Fällen empfiehlt es sich, den Zweck des Steuerelements genauer zu beschreiben.
-Für jedes Feldobjekt in einem Formular kann die Palette Barrierefreiheit (siehe Abbildung 3) verwendet werden, um anzugeben, was die Bildschirmlesehilfe ankündigt, um das spezifische Formularfeld zu identifizieren.
+Das Label, das von Benutzenden von Bildschirmlesehilfen wahrgenommen wird, muss nicht unbedingt mit der visuellen Beschriftung übereinstimmen. In einigen Fällen möchten Sie den Zweck des Steuerelements möglicherweise genauer angeben.
+Für jedes Feldobjekt in einem Formular kann die Palette „Barrierefreiheit“ (siehe Abbildung 3) verwendet werden, um anzugeben, was das Bildschirmlesegerät zur Identifizierung des jeweiligen Formularfelds ansagen soll.
 
 Gehen Sie wie folgt vor, um die Palette „Ein-/Ausgabehilfe“ zu verwenden:
 
@@ -164,15 +180,15 @@ Gehen Sie wie folgt vor, um die Palette „Ein-/Ausgabehilfe“ zu verwenden:
 
 Abbildung 3: **Die Palette „Ein-/Ausgabehilfe“**
 
-Wenn das Formular als PDF gespeichert wird, durchsucht LiveCycle Designer das Formular nach den Eigenschaften „Benutzerdefinierter Text“, „QuickInfo“, „Beschriftung“ und „Name“, und zwar in dieser Reihenfolge, um nach Text zu suchen, der von Bildschirmlesehilfen gelesen werden kann. Diese Standardreihenfolge können Sie über die Option „Bildschirmlesehilfen-Rangfolge“ in der Palette „Ein-/Ausgabehilfe“ außer Kraft setzen.
+Wenn das Formular als PDF gespeichert wird, durchsucht LiveCycle Designer das Formular in dieser Reihenfolge nach den Eigenschaften „Benutzerdefinierter Text“, „QuickInfo“, „Beschriftung“ und „Name“, um Text zu finden, der von Bildschirmlesehilfen gelesen wird. Sie können diese Standardreihenfolge mithilfe der Option „Vorrang für Bildschirmlesehilfen“ in der Palette „Barrierefreiheit“ überschreiben:
 
 1. Wählen Sie das Objekt im Formularentwurf aus.
 1. Klicken Sie auf die Palette „Ein-/Ausgabehilfe“.
-1. Wählen Sie eine andere Option als „Keine“ für Bildschirmlesehilfen-Rangfolge“ aus.
+1. Wählen Sie für die Bildschirmlesehilfen-Rangfolge eine beliebige Option außer „Keine“ aus.
 
 Die folgenden Optionen sind verfügbar:
 
-* **Benutzerdefinierter Text**, den Sie im Feld „Benutzerdefinierter Bildschirmlesehilfen-Text“ der  Palette „Ein-/Ausgabehilfe“ festlegen. Mit dieser Option können Sie jeden Text angeben, der von Hilfstechnologien wie Bildschirmlesehilfen verwendet werden soll. Die Verwendung der Einstellung „Beschriftung“ ist in den meisten Fällen am besten. Das Erstellen von benutzerdefiniertem Bildschirmtext sollte nur dann als Option in Betracht gezogen werden, wenn die Verwendung der Beschriftung oder einer QuickInfo nicht möglich ist.
+* **Benutzerdefinierter Text**, den Sie im Feld „Benutzerdefinierter Bildschirmlesehilfen-Text“ der  Palette „Ein-/Ausgabehilfe“ festlegen. Mit dieser Option können Sie jeden Text angeben, der von Hilfstechnologien wie Bildschirmlesehilfen verwendet werden soll. Die Verwendung der Einstellung „Beschriftung“ ist in den meisten Fällen am besten. Das Erstellen von benutzerdefiniertem Text für Bildschirmlesehilfen sollte nur dann als Option in Betracht gezogen werden, wenn die Verwendung der Beschriftung oder einer QuickInfo nicht möglich ist.
 * **QuickInfo**, die Sie im Feld „QuickInfo“ der Palette „Ein-/Ausgabehilfe“ festlegen. Bei den meisten Objekten werden QuickInfos zur Laufzeit angezeigt, wenn Benutzende den Mauszeiger über das Objekt bewegen. QuickInfos werden für einige schreibgeschützte Objekte wie etwa das Barcode-Objekt eines Papierformulars nur angezeigt, wenn eine Bildschirmlesehilfe verwendet wird.
 * **Beschriftung**, wodurch LiveCycle Designer die zugehörige (visuelle) Beschriftung des Formularfelds als Text für Bildschirmlesehilfen verwendet.
 * **Name**, den Sie im Feld „Name“ der Registerkarte „Bindung“ festlegen. Beachten Sie, dass dieser Name keine Leerzeichen enthalten darf.
@@ -180,16 +196,16 @@ Die folgenden Optionen sind verfügbar:
 
 Beachten Sie Folgendes beim Verwenden der Palette „Ein-/Ausgabehilfe“ für die Beschriftung von Formularsteuerelementen:
 
-* Wenn die Beschriftung des Formularsteuerelements das Steuerelement ordnungsgemäß beschreibt, ist sie für Bildschirmlesehilfen verfügbar. Lassen Sie in diesem Fall entweder die Felder „Benutzerdefinierter Text“ und „QuickInfo“ in der Palette „Ein-/Ausgabehilfe“ leer oder ändern Sie die Priorität in der Rangfolge der Bildschirmlesehilfe in „Beschriftung“.
-* Bei der Ausrichtung auf Bildschirmlesehilfen ergibt es keinen Sinn, für dasselbe Formularsteuerelement verschiedene Textbeschreibungen anzugeben, da nur eine verwendet wird, nämlich die im ersten nicht-leeren Feld in der Bildschirmlesehilfen-Rangfolge. Beispielsweise gibt es keinen Grund, sowohl benutzerdefinierten Text als auch QuickInfo-Text für eine Bildschirmlesehilfe anzugeben.
+* Wenn die Beschriftung Ihres Formularsteuerelements das Steuerelement korrekt beschreibt, ist es für Bildschirmlesehilfen zugänglich. Lassen Sie in diesem Fall entweder die Felder „Benutzerdefinierter Text“ und „QuickInfo“ in der Palette „Barrierefreiheit“ leer oder ändern Sie die Bildschirmlesehilfen-Rangfolge in „Beschriftung“.
+* Wenn Sie Bildschirmlesehilfen unterstützen möchten, ergibt es keinen Sinn, für dasselbe Formularsteuerelement verschiedene Textbeschreibungen anzugeben, da nur eine verwendet wird: das erste nicht leere Feld in der Bildschirmlesehilfen-Rangfolge. Beispielsweise gibt es keinen Grund, sowohl benutzerdefinierten Text als auch QuickInfo-Text für eine Bildschirmlesehilfe anzugeben.
 * Standardmäßig liest die Bildschirmlesehilfe die Beschriftung, wenn im Feld „QuickInfo“ oder im Feld „Benutzerdefinierter Bildschirmlesehilfen-Text“ nichts angegeben ist.
 * Verwenden Sie die Palette „Ein-/Ausgabehilfe“ nicht, um Beschreibungen für unsichtbare Felder oder Bereiche zu erstellen.
-* Wenn Sie eine Beschreibung mithilfe der Optionen „QuickInfo“ oder „Benutzerdefinierter Bildschirmlesehilfe-Text“ erstellen müssen, fügen Sie immer die Beschriftung ein, die im Formular sichtbar ist, es sei denn, die sichtbare Beschriftung ist nicht aussagekräftig, z. B. wenn die Beschriftung selbst abgekürzt ist. Dies hilft Benutzenden der Bildschirmlesehilfe, effektiv mit anderen Benutzenden über Benutzeroberflächenelemente zu kommunizieren. Diese unterschiedlichen Benutzergruppen hätten Schwierigkeiten, dasselbe Element der Benutzeroberfläche zu identifizieren, wenn sich der Beschriftungstext von der QuickInfo oder dem benutzerdefiniferten Bildschirmlesehilfen-Text unterscheidet.
+* Wenn Sie eine Beschreibung mithilfe der Optionen „QuickInfo“ oder „Benutzerdefinierter Bildschirmlesehilfe-Text“ erstellen müssen, fügen Sie immer die Beschriftung ein, die im Formular sichtbar ist, es sei denn, die sichtbare Beschriftung ist nicht aussagekräftig, z. B. wenn die Beschriftung selbst abgekürzt ist. Dies hilft Benutzenden von Bildschirmlesehilfen, effektiv mit anderen Benutzenden über Elemente der Benutzeroberfläche zu kommunizieren. Diese unterschiedlichen Benutzergruppen hätten Schwierigkeiten, dasselbe Element der Benutzeroberfläche zu identifizieren, wenn sich der Beschriftungstext von der QuickInfo oder dem benutzerdefinierten Bildschirmlesehilfen-Text unterscheidet.
 * Bei Steuerelementen wie Kontrollkästchen und Dropdown-Listen in Tabellenzellen gibt die Bildschirmlesehilfe an, was immer Sie als Beschriftung, QuickInfo oder benutzerdefinierten Bildschirmlesehilfen-Text für das Objekt angeben. Wenn Sie für diese Objekte bei Platzierung in einer Tabelle die Spaltenüberschrift als Alternativtext verwenden möchten, geben Sie weder Beschriftung noch QuickInfo oder benutzerdefinierten Bildschirmlesehilfen-Text an.
 * Wenn das Steuerelement zusätzliche Anweisungen erfordert, stellen Sie sicher, dass diese ebenfalls in der Textalternative enthalten sind. Geben Sie genügend gesprochene Informationen an, damit die Benutzenden wissen, welche Eingabe erwartet wird und wie das Feld korrekt ausgefüllt werden soll. Vermeiden Sie es jedoch, sie mit redundanten Informationen zu überhäufen.
 * Geben Sie keine unnötigen Informationen an, die beschreiben, wie Steuerelemente verwendet werden. Überlassen Sie diese Aufgabe den Hilfstechnologien der Benutzenden. Benutzende können die Ausführlichkeit entsprechend ihrer Komfortstufe selbst konfigurieren.
 
-Abbildung 4 zeigt ein Beispiel für ein Textfeld mit einer visuellen Beschriftung, die für einige Benutzende einer Bildschirmlesehilfe möglicherweise unklar ist. In diesem Beispiel ist „Benutzerdefinierter Bildschirmlesehilfen-Text“ auf „Anzahl der Seiten“ und „Bildschirmlesehilfen-Rangfolge“ auf „Benutzerdefinierter Text“ eingestellt. Daher wird der tatsächliche (visuelle) Beschriftungstext („Anzahl der Seiten“) nicht von der Bildschirmlesehilfe verwendet. Alternativ hätte eine QuickInfo angegeben werden können.
+Abbildung 4 zeigt ein Beispiel für ein Textfeld mit einer visuellen Beschriftung, die für einige Benutzende von Bildschirmlesehilfen möglicherweise unklar ist. In diesem Beispiel ist „Benutzerdefinierter Bildschirmlesehilfen-Text“ auf „Anzahl der Seiten“ und „Bildschirmlesehilfen-Rangfolge“ auf „Benutzerdefinierter Text“ eingestellt. Daher wird der tatsächliche (visuelle) Beschriftungstext („Anzahl der Seiten“) nicht von der Bildschirmlesehilfe verwendet. Alternativ hätte eine QuickInfo angegeben werden können.
 
 ![Festlegen von benutzerdefiniertem Bildschirmlesehilfe-Text, wenn die sichtbare Beschriftung unzureichend ist](/help/forms/using/assets/image-4.png)
 
@@ -201,23 +217,23 @@ Wenn sehbehinderte Benutzende mit der Tabulatortaste in ein Optionsfeld wechseln
 * Eine Angabe des Zwecks der Gruppe von Optionsfeldern
 * Eine aussagekräftige Beschriftung für jede Optionsschaltfläche
 So machen Sie Optionsschaltflächen mithilfe der Schaltflächenbeschriftungen zugänglich:
-   1. Wählen Sie in der Palette „Hierarchie“ die Ausschlussgruppe aus.
-   1. Klicken Sie auf die Palette „Ein-/Ausgabehilfe“ und geben Sie im Feld „Benutzerdefinierter Bildschirmlesehilfen-Text“ den Text ein, der für diese Gruppe vorgelesen werden soll. Geben Sie beispielsweise für eine Ausschlussgruppe, die Optionen für die Zahlung mit verschiedenen Kreditkarten angibt, „Zahlungsmethode auswählen“ ein.
-   1. Wenn die Beschriftungen für jedes Optionsfeld einen Text enthalten, der beim Aussprechen durch eine Bildschirmlesehilfe aussagekräftig ist, wählen Sie in der Palette „Objekt“ die Registerkarte „Bindung“ aus und deaktivieren Sie die Option „Elementwert angeben“.
+  1. Wählen Sie in der Palette „Hierarchie“ die Ausschlussgruppe aus.
+  1. Klicken Sie auf die Palette „Barrierefreiheit“ und geben Sie im Feld „Benutzerdefinierter Text für Bildschirmlesehilfen“ den Text ein, der für diese Gruppe vorgelesen werden soll. Geben Sie beispielsweise für eine Ausschlussgruppe, die Optionen für die Zahlung mit verschiedenen Kreditkarten angibt, „Zahlungsmethode auswählen“ ein.
+  1. Wenn die Beschriftungen für jedes Optionsfeld einen Text enthalten, der beim Aussprechen durch eine Bildschirmlesehilfe aussagekräftig ist, wählen Sie in der Palette „Objekt“ die Registerkarte „Bindung“ aus und deaktivieren Sie die Option „Elementwert angeben“.
 
   So werden Optionsfelder mithilfe eines angegebenen Elementwerts barrierefrei gemacht:
-   1. Wählen Sie in der Palette „Hierarchie“ die Ausschlussgruppe aus.
-   1. Klicken Sie auf die Palette „Ein-/Ausgabehilfe“ und geben Sie im Feld „Benutzerdefinierter Bildschirmlesehilfen-Text“ den Text ein, der für diese Gruppe vorgelesen werden soll. Geben Sie beispielsweise für eine Ausschlussgruppe, die Optionen für die Zahlung mit verschiedenen Kreditkarten angibt, „Zahlungsmethode auswählen“ ein.
-   1. Wählen Sie in der Palette „Hierarchie“ das erste Optionsfeld in der Gruppe aus.
-   1. Klicken Sie in der Palette „Objekt“ auf die Registerkarte „Feld“. Doppelklicken Sie im Bereich „Element“ auf das Element und geben Sie einen aussagekräftigen Wert für das ausgewählte Optionsfeld ein. Beispielsweise könnten Sie für die erste Schaltfläche in einer Gruppe von Zahlungsmethoden „Bargeld“ eingeben.
-   1. Wiederholen Sie die Schritte 3 und 4 für jedes Optionsfeld in der Ausschlussgruppe.
+  1. Wählen Sie in der Palette „Hierarchie“ die Ausschlussgruppe aus.
+  1. Klicken Sie auf die Palette „Barrierefreiheit“ und geben Sie im Feld „Benutzerdefinierter Text für Bildschirmlesehilfen“ den Text ein, der für diese Gruppe vorgelesen werden soll. Geben Sie beispielsweise für eine Ausschlussgruppe, die Optionen für die Zahlung mit verschiedenen Kreditkarten angibt, „Zahlungsmethode auswählen“ ein.
+  1. Wählen Sie in der Palette „Hierarchie“ das erste Optionsfeld in der Gruppe aus.
+  1. Klicken Sie in der Palette „Objekt“ auf die Registerkarte „Feld“. Doppelklicken Sie im Bereich „Element“ auf das Element und geben Sie einen aussagekräftigen Wert für das ausgewählte Optionsfeld ein. Beispielsweise könnten Sie für die erste Schaltfläche in einer Gruppe von Zahlungsmethoden „Bargeld“ eingeben.
+  1. Wiederholen Sie die Schritte 3 und 4 für jedes Optionsfeld in der Ausschlussgruppe.
 
 ### Beschriften benutzerdefinierter Steuerelemente
 
 Es wird dringend empfohlen, Standardkomponenten und keine benutzerdefinierten Komponenten zu verwenden, da erstere der Hilfstechnologie standardmäßig die richtigen Hinweise und Informationen liefern. Falls jedoch benutzerdefinierte Steuerelemente verwendet werden, beachten Sie Folgendes:
 * Der Status von Kontrollkästchen und Optionsfeldern muss angekündigt werden.
-* In Listenfeldern und Dropdown-Listen muss angekündigt werden, welches Element in der Liste standardmäßig ausgewählt ist. Stellen Sie sicher, dass die Benutzenden mithilfe der Pfeiltasten nach oben und unten durch die Listenelemente navigieren können und dies wissen. Merken Sie an, dass durch Drücken der Tabulatortaste oder der Eingabetaste das Element in der Liste ausgewählt wird. Mithilfe von Skripten können Sie das Änderungsereignis des Objekts so einstellen, dass angekündigt wird, welches Element in der Liste ausgewählt wurde.
-* Lassen Sie alle speziellen Tastatureingaben ansagen, die die Benutzenden für eine Funktion benötigen, z. B. das Drücken der Leertaste, um eine Schaltfläche auszuwählen, oder der Nach-unten-Taste, um ein Element aus einem Listenfeld auszuwählen.
+* In Listenfeldern und Dropdown-Listen muss angekündigt werden, welches Element in der Liste standardmäßig ausgewählt ist. Stellen Sie sicher, dass die Benutzenden wissen, dass sie mithilfe der Nach-unten- und Nach-oben-Taste durch die Listenelemente navigieren können. Merken Sie an, dass durch Drücken der Tabulatortaste oder der Eingabetaste das Element in der Liste ausgewählt wird. Mithilfe von Skripten können Sie das Änderungsereignis des Objekts so einstellen, dass angekündigt wird, welches Element in der Liste ausgewählt wurde.
+* Weisen Sie Benutzende auf alle speziellen Tastatureingaben hin, die sie zum Ausführen einer Funktion benötigen, z. B. das Drücken der Leertaste, um eine Schaltfläche auszuwählen, oder der Nach-unten-Taste, um ein Element aus einem Listenfeld auszuwählen.
 
 ### Korrektes Positionieren der Beschriftung eines Steuerelements
 
@@ -237,18 +253,18 @@ Die folgende Tabelle bietet einen Überblick über die Platzierungsregeln für h
 
 | Typ des Steuerelements | Platzierungsregeln |
 |--------------|-----------------|
-| Texteingabe (einschließlich Felder für Datum, Uhrzeit und Kennwort) | Platzieren Sie die Beschriftung links neben dem Steuerelement (Standard). Ist dies nicht möglich, platzieren Sie sie direkt oberhalb oder unterhalb davon. Beschriftungen sollten für Benutzende mit stärkerer Vergrößerung in der Nähe des Kontrollelements positioniert werden, damit die Beschriftung und die Steuerung auch in der vergrößerten Ansicht mit höherer Wahrscheinlichkeit zusammen zu sehen sind. |
+| Texteingabe (einschließlich Felder für Datum, Uhrzeit und Kennwort) | Platzieren Sie die Beschriftung links neben dem Steuerelement (Standard). Ist dies nicht möglich, platzieren Sie sie direkt oberhalb oder unterhalb davon. Labels sollten für Benutzende mit stärkerer Vergrößerung in der Nähe des Steuerelements positioniert werden, damit Beschriftung und Steuerelement in der vergrößerten Ansicht mit höherer Wahrscheinlichkeit zusammen gesehen werden. |
 | Kontrollkästchen | Platzieren Sie die Beschriftung rechts neben dem Kontrollkästchen (Standard). Bei Kontrollkästchen-Steuerelementen in Tabellenzellen gibt die Bildschirmlesehilfe an, was immer Sie als Beschriftung, QuickInfo oder benutzerdefinierten Bildschirmlesehilfen-Text für das Objekt angeben. Wenn Sie die Spaltenüberschrift als Alternativtext für ein Kontrollkästchen in einer Tabelle verwenden möchten, geben Sie weder Beschriftung noch QuickInfo oder benutzerdefinierten Bildschirmlesehilfen-Text an. |
 | Optionsfeldgruppe | Erstellen Sie einen sichtbaren Titel für die Optionsfeldgruppe, indem Sie ein statisches Textelement erstellen und links von der Gruppe oder über ihr platzieren. Platzieren Sie die Beschriftung für jedes einzelne Optionsfeld rechts daneben (Standard). |
-| Dropdown-Liste | Platzieren Sie die Beschriftung links neben dem Objekt (Standard). Ist dies nicht möglich, platzieren Sie sie direkt darüber. Bei Dropdown-Listen-Steuerelementen in Tabellenzellen gibt die Bildschirmlesehilfe bekannt, was immer Sie als Beschriftung, QuickInfo oder benutzerdefinierten Bildschirmlesehilfen-Text für das Objekt angeben. Wenn Sie die Spaltenüberschrift als Alternativtext für diese Objekte in einer Tabelle verwenden möchten, geben Sie weder Beschriftung noch QuickInfo oder benutzerdefinierten Bildschirmlesehilfen-Text an. |
+| Dropdown-Liste | Platzieren Sie die Beschriftung links neben dem Objekt (Standard). Ist dies nicht möglich, platzieren Sie sie direkt darüber. Bei Dropdown-Listen-Steuerelementen in Tabellenzellen kündigt die Bildschirmlesehilfe alles an, was Sie für das Objekt als Beschriftung, QuickInfo oder benutzerdefinierten Bildschirmlesehilfen-Text angeben. Wenn Sie die Spaltenüberschrift als Alternativtext für diese Objekte in einer Tabelle verwenden möchten, geben Sie weder Beschriftung noch QuickInfo oder benutzerdefinierten Bildschirmlesehilfen-Text an. |
 | Listenfeld | Die Beschriftung wird bei der Erstellung des Listenfelds standardmäßig über ihm positioniert. |
 | Schaltfläche | Die Beschriftung wird automatisch auf die Schaltfläche gesetzt und muss nicht manuell positioniert werden. Stellen Sie sicher, dass der Zweck der Schaltfläche durch den Beschriftungstext richtig beschrieben wird. |
 
 
 ### Dynamisches Ausfüllen einer QuickInfo oder von benutzerdefiniertem Bildschirmlesehilfen-Text
 
-Sie können auch die Textalternative eines Formularsteuerelements, z. B. die QuickInfo, dynamisch mit einem Wert aus einer Datenquelle füllen. Sie können beispielsweise eine benutzerdefinierte QuickInfo für ein Objekt in französischer Sprache anzeigen.
-Für das Schema, mit dem Sie eine Verbindung herstellen, könnte Folgendes für eine QuickInfo definiert sein:
+Sie können auch die Textalternative eines Formularsteuerelements, z. B. die QuickInfo, dynamisch mit einem Wert aus einer Datenquelle ausfüllen. Sie können beispielsweise eine benutzerdefinierte QuickInfo für ein Objekt anzeigen, das in französischer Sprache ist.
+Das Schema, zu dem Sie eine Verbindung herstellen, könnte die folgende Definition für eine QuickInfo enthalten:
 
 
 ```html
@@ -268,7 +284,7 @@ Die Datendatei, auf die Sie verweisen, könnte die folgende Definition für eine
 
 1. Klicken Sie in der Palette „Objektbibliothek“ auf die Kategorie „Standard“ und ziehen Sie ein Objekt auf den Formularentwurf. Fügen Sie beispielsweise ein Textfeld-Objekt ein.
 1. (Optional) Klicken Sie in der Palette „Objekt“ auf die Registerkarte „Feld“ und geben Sie im Feld „Beschriftung“ eine Beschriftung für das Objekt ein. Geben Sie beispielsweise „Quantité“ ein.
-1. Klicken Sie in der Palette „Ein-/Ausgabehilfe“ auf die aktive QuickInfo-Beschriftung.
+1. Klicken Sie in der Palette „Barrierefreiheit“ auf das aktive Label „QuickInfo“.
 1. Wählen Sie die Datenverbindung aus.
 1. Klicken Sie auf das Dreieck neben dem Feld „Bindung“ und wählen Sie eine Bindung aus. Wählen Sie beispielsweise „QuickInfo > @dp_tt“ aus.
 
@@ -278,51 +294,51 @@ Die folgende Zeichenfolge wird im Feld „Bindung“ angezeigt: $record.tooltip.
 
 ### Bereitstellen von Link-Text
 
-Benutzende von Hilfstechnologien können unterschiedliche Methoden haben, um verknüpften Text zu lesen. Beispielsweise verwenden Benutzende von Bildschirmlesehilfen häufig eine Liste mit Links, wie in Abbildung 6 dargestellt, um die auf einer Seite verfügbaren Links schnell durchzugehen.
+Benutzende von Hilfstechnologien können unterschiedliche Methoden zum Lesen verknüpfter Texte haben. Beispielsweise verwenden Benutzende von Bildschirmleseprogrammen häufig eine Link-Liste, wie in Abbildung 6 dargestellt, um die auf einer Seite verfügbaren Links schnell zu überblicken.
 
 ![Das Dialogfeld „JAWS-Links-Liste“](/help/forms/using/assets/image-6.png)
 
 Abbildung 6: **Das Dialogfeld „JAWS-Links-Liste“**
 
-Aus diesem Grund müssen Links selbstbeschreibend sein, d. h. ihre Bedeutung sollte nicht von ihrem Kontext (dem umgebenden Text) abhängen. Beispielsweise könnten die Wörter „Hier klicken“ eigentlich das Link-Element im Satz „Hier klicken, um unser Antragsformular herunterzuladen“ meinen. Ein solcher Link wäre beim Durchlesen einer Link-Liste schwierig zu verstehen, insbesondere wenn mehrere Links denselben Text enthalten.
+Aus diesem Grund müssen Links selbstbeschreibend sein, d. h. ihre Bedeutung sollte nicht von ihrem Kontext (dem umgebenden Text) abhängen. Beispielsweise könnten die Wörter „Hier klicken“ das eigentliche Link-Element in der Formulierung „Hier klicken, um unser Antragsformular herunterzuladen“ bilden. Ein solcher Link wäre beim Durchlesen einer Link-Liste schwierig zu verstehen, insbesondere wenn mehrere Links denselben Text enthalten.
 
-Achten Sie bei der Verwendung von Links in Ihrem Formular darauf, dass jeder Link seinen Zweck ordnungsgemäß beschreibt, ohne dass dies vom umgebenden Text oder von der Position auf der Seite abhängt. Anstatt einen Satz wie „Hier klicken“ als Link-Text zu verwenden, verwenden Sie also beispielsweise „Anwendungsformular herunterladen“ als Link-Text.
+Achten Sie bei der Verwendung von Links in Ihrem Formular darauf, dass jeder Link seinen Zweck ordnungsgemäß beschreibt, ohne dass dies vom umgebenden Text oder von der Position auf der Seite abhängt. Verwenden Sie beispielsweise nicht „Hier klicken“ als Link-Text, sondern „Antragsformular herunterladen“.
 
 **Verwandte Prüfpunkte**
 
 * Section 508 §1194.21
-   * d) Für Hilfstechnologien müssen ausreichende Informationen über ein Element der Benutzeroberfläche, einschließlich Identität, Betrieb und Zustand des Elements, verfügbar sein. Wenn ein Bild ein Programmelement darstellt, müssen die vom Bild vermittelten Informationen auch im Text verfügbar sein.
-   * l) Bei der Verwendung elektronischer Formulare muss das Formular Personen, die Hilfstechnologien verwenden, den Zugriff auf alle Informationen, Feldelementen und Funktionen ermöglichen, die für das Ausfüllen und Übermitteln des Formulars erforderlich sind, einschließlich aller Anweisungen und Hinweise.
+  * (d) Für Hilfstechnologien müssen ausreichende Informationen über ein Benutzeroberflächenelement, einschließlich Identität, Funktion und Zustand des Elements, verfügbar sein. Wenn ein Bild ein Programmelement darstellt, müssen die vom Bild vermittelten Informationen auch im Text verfügbar sein.
+  * (l) Bei der Verwendung elektronischer Formulare muss das Formular Personen, die Hilfstechnologien verwenden, den Zugriff auf alle Informationen, Feldelemente und Funktionen ermöglichen, die für das Ausfüllen und Übermitteln des Formulars erforderlich sind, einschließlich aller Anweisungen und Hinweise.
 * Section 508 §1194.22
-   * n) Wenn elektronische Formulare für das Online-Ausfüllen konzipiert sind, muss das Formular Personen, die Hilfstechnologien verwenden, den Zugriff auf alle Informationen, Feldelementen und Funktionen ermöglichen, die für das Ausfüllen und Übermitteln des Formulars erforderlich sind, einschließlich aller Anweisungen und Hinweise.
+  * (n) Wenn elektronische Formulare für das Online-Ausfüllen konzipiert sind, muss das Formular Personen, die Hilfstechnologien verwenden, den Zugriff auf alle Informationen, Feldelemente und Funktionen ermöglichen, die für das Ausfüllen und Übermitteln des Formulars erforderlich sind, einschließlich aller Anweisungen und Hinweise.
 * WCAG 1.0
-   * 12.4 Verknüpfen Sie Beschriftungen explizit mit ihren Steuerelementen (P2).
-   * 13.1 Identifizieren Sie eindeutig das Ziel jedes Links (P2).
+  * 12.4 Verknüpfen Sie Beschriftungen explizit mit ihren Steuerelementen (P2).
+  * 13.1 Identifizieren Sie eindeutig das Ziel jedes Links (P2).
 * WCAG 2.0
-   * 1.1.1 Nichttextlicher Inhalt: Alle nichttextlichen Inhalte, die Benutzenden präsentiert werden, haben eine Textalternative, die dem jeweiligen Zweck entspricht, ausgenommen die unten aufgeführten Situationen. (Stufe A)
-   * 2.4.6 Überschriften und Beschriftungen: Überschriften und Beschriftungen beschreiben ein Thema oder einen Zweck. (Stufe AA)
-   * 3.2.4 Konsistente Erkennung: Komponenten mit der gleichen Funktionalität innerhalb eines Satzes von Web-Seiten werden konsistent erkannt. (Stufe AA)
-   * 3.3.2 Beschriftungen oder Anweisungen: Beschriftungen oder Anweisungen werden bereitgestellt, wenn Inhalte eine Benutzereingabe erfordern. (Stufe A)
-   * 4.1.2 Name, Rolle, Wert: Für alle Komponenten der Benutzeroberfläche (einschließlich u. a. Formularelemente, durch Skripte generierte Links und Komponenten) können Name und Rolle programmgesteuert bestimmt werden. Zustände, Eigenschaften und Werte, die von den Benutzenden festgelegt werden können, können programmgesteuert festgelegt sein, und eine Benachrichtigung über Änderungen an diesen Elementen steht den Benutzeragenten zur Verfügung, einschließlich Hilfstechnologien. (Stufe A)
+  * 1.1.1 Nichttextlicher Inhalt: Alle nichttextlichen Inhalte, die Benutzenden präsentiert werden, haben eine Textalternative, die dem jeweiligen Zweck entspricht, ausgenommen die unten aufgeführten Situationen. (Stufe A)
+  * 2.4.6 Überschriften und Beschriftungen: Überschriften und Beschriftungen beschreiben ein Thema oder einen Zweck. (Stufe AA)
+  * 3.2.4 Konsistente Identifizierung: Komponenten mit derselben Funktionalität innerhalb einer Gruppe von Web-Seiten werden konsistent identifiziert. (Stufe AA)
+  * 3.3.2 Beschriftungen oder Anweisungen: Beschriftungen oder Anweisungen werden bereitgestellt, wenn Inhalte eine Benutzereingabe erfordern. (Stufe A)
+  * 4.1.2 Name, Rolle, Wert: Für alle Komponenten der Benutzeroberfläche (einschließlich u. a. Formularelemente, durch Skripte generierte Links und Komponenten) können Name und Rolle programmgesteuert bestimmt werden. Zustände, Eigenschaften und Werte, die von den Benutzenden festgelegt werden können, können programmgesteuert festgelegt sein, und eine Benachrichtigung über Änderungen an diesen Elementen steht den Benutzeragenten zur Verfügung, einschließlich Hilfstechnologien. (Stufe A)
 
 
-## Sicherstellen, dass Leserichtung und Registerkarten-Reihenfolge korrekt sind {#ensure-reading-tab-order}
+## Sicherstellen, dass die Leserichtung und die Tabulatorreihenfolge korrekt sind {#ensure-reading-tab-order}
 
-Das Sicherstellen einer sinnvollen Leserichtung ist bei der Erstellung von Formularen sehr wichtig, die für Benutzende mit Sehbehinderung oder anderen Behinderungen zugänglich sein sollen. Diese Benutzenden verwenden normalerweise keine Maus, um durch ein Formular zu navigieren, sodass sie von der Tastatur abhängig sind. Die Leserichtung bestimmt die Reihenfolge, in der die Benutzenden der Bildschirmlesehilfe das Formular durchlesen. Darüber hinaus ermöglicht die Tabulatorreihenfolge den Benutzende, schnell von einem interaktiven Formularsteuerelement zum nächsten zu wechseln, indem sie die Tabulatortaste oder Umschalt+Tabulatortaste drücken. Eine logische Tab-Reihenfolge stellt sicher, dass sie Zugriff auf alle Felder im Formular haben und dass sie im Formular auf eine sinnvolle und effiziente Weise navigieren können.
+Das Sicherstellen einer sinnvollen Leserichtung ist bei der Erstellung von Formularen sehr wichtig, die für Benutzende mit Sehbehinderung oder anderen Behinderungen zugänglich sein sollen. Diese Benutzenden verwenden normalerweise keine Maus, um durch ein Formular zu navigieren, sodass sie von der Tastatur abhängig sind. Die Leserichtung bestimmt die Reihenfolge, in der die Benutzenden der Bildschirmlesehilfe das Formular durchlesen. Darüber hinaus ermöglicht es die Tabulatorreihenfolge den Benutzenden, schnell von einem interaktiven Formularsteuerelement zum nächsten zu wechseln, indem sie die Tabulatortaste oder Umschalt+Tabulatortaste drücken. Eine logische Tabulatorreihenfolge stellt sicher, dass sie Zugriff auf alle Felder im Formular haben und dass sie im Formular auf sinnvolle und effiziente Weise navigieren können.
 
-Die Leserichtung des Formulars umfasst alle statischen Objekte (wie Text und Bilder) und Feldobjekte, aber nur die interaktiven Formularsteuerelemente sind Teil der Tab-Reihenfolge.
+Die Lesereihenfolge des Formulars umfasst alle statischen Objekte (wie Text und Bilder) und Feldobjekte, aber nur die interaktiven Formularsteuerelemente sind Teil der Tabulatorreihenfolge.
 
 >[!NOTE]
 > In vielen Fällen hängt die Tab-Reihenfolge eng mit der Leserichtung zusammen. Der Einfachheit halber wird in diesem Handbuch der Begriff „Tab-Reihenfolge“ anstelle von „Tab- oder Lesereihenfolge“ verwendet.
 
-### Die standardmäßige Tab-Reihenfolge in LiveCycle Designer-Formularen
+### Die Standard-Tabulatorreihenfolge in LiveCycle Designer-Formularen
 
-Die standardmäßige Tab-Reihenfolge wird automatisch erstellt, wenn Sie Ihr Formular als getaggtes PDF speichern. Zunächst wird die Tab-Reihenfolge in einem Formular anhand der lokalen Position der Objekte mithilfe der folgenden Regeln bestimmt:
+Die Standard-Tabulatorreihenfolge wird automatisch erstellt, wenn Sie Ihr Formular als mit Tags versehene PDF-Datei speichern. Zunächst wird die Tab-Reihenfolge in einem Formular anhand der lokalen Position der Objekte mithilfe der folgenden Regeln bestimmt:
 
 * Alle Objekte werden von links nach rechts und von oben nach unten (lokale Reihenfolge) angeordnet, beginnend mit der linken oberen Ecke des Formulars.
 * Alle von Ihnen erstellten Teilformulare werden als eigenständige Einheiten behandelt, durch die ebenfalls von links nach rechts sowie von oben nach unten navigiert wird. Wenn sich zwei Teilformulare nebeneinander befinden, die beide Objekte enthalten, navigiert die Leserichtung erst durch alle Objekte im ersten Teilformular, bevor zum nächsten Teilformular gewechselt wird.
 
-Bei einfachen Formularen (d. h. bei Formularen mit einem Layout von links nach rechts und von oben nach unten) ist die standardmäßige Tab-Reihenfolge in der Regel korrekt. Um dies zu überprüfen, sollten Sie die standardmäßige Tab-Reihenfolge vor der Veröffentlichung des Formulars überprüfen. Sie können die Tab-Reihenfolge mit einer der folgenden Methoden sichtbar machen:
+Bei einfachen Formularen (d. h. bei Formularen mit einem Layout von links nach rechts und von oben nach unten) ist die Standard-Tabulatorreihenfolge in der Regel korrekt. Um dies zu überprüfen, sollten Sie vor der Veröffentlichung des Formulars die Standard-Tabulatorreihenfolge prüfen. Sie können die Tab-Reihenfolge mit einer der folgenden Methoden sichtbar machen:
 
 * Wählen Sie „Ansicht“ > „Tab-Reihenfolge anzeigen“.
 * Klicken Sie in der Palette „Tab-Reihenfolge“ auf „Reihenfolge anzeigen“.
@@ -338,7 +354,7 @@ Jede Nummer der Tab-Reihenfolge wird mit einer farbigen Form dargestellt. Die Fo
 * Grüne Kreise (Nr. 6 und Nr. 7) werden für Musterseitenobjekte verwendet.
 * Lila Quadrate (Nr. 2 und Nr. 3) werden für Objekte in einem Fragment verwendet.
 
-Sie haben die Wahl, dass nur interaktive Formularsteuerelemente (die die Registerkartenreihenfolge bilden) oder alle Objekte in der Leserichtung angezeigt werden (einschließlich statischer Objekte wie Text und Bilder). Um diese Voreinstellung zu ändern, wählen Sie „Tools“ > „Optionen“ > „Tab-Reihenfolge“ und dann „Tab-Reihenfolge nur für Felder anzeigen“.
+Sie können festlegen, dass nur interaktive Formularsteuerelemente (die die Tabulatorreihenfolge bilden) oder alle Objekte in der Lesereihenfolge angezeigt werden (einschließlich statischer Objekte wie Text und Bilder). Um diese Voreinstellung zu ändern, wählen Sie „Tools“ > „Optionen“ > „Tab-Reihenfolge“ und dann „Tab-Reihenfolge nur für Felder anzeigen“ aus.
 
 In einem komplexen Formular kann es schwierig sein zu erkennen, wie die Tab-Reihenfolge von einem Objekt zum nächsten verläuft. Sie können visuelle Hilfen verwenden, um den Tab-Fluss im Formular anzuzeigen. Wenn die visuellen Hilfen aktiviert sind und Sie den Mauszeiger über das Objekt bewegen, zeigen die blauen Pfeile den Tab-Fluss für die beiden vorangehenden und die beiden nachfolgenden Objekte in der Tab-Reihenfolge an (siehe Abbildung 8).
 
@@ -347,12 +363,12 @@ In einem komplexen Formular kann es schwierig sein zu erkennen, wie die Tab-Reih
 Abbildung 8: **Visuelle Hilfen heben die Tab-Reihenfolge hervor**
 
 Verwenden Sie die folgenden Methoden, um die visuellen Hilfsmittel zu aktivieren:
-* Wählen Sie „Tools“ > „Optionen“ > „Tab-Reihenfolge“ aus und dann im Bereich „Tab-Reihenfolge“ die Option „Visuelle Hilfen für Tab-Reihenfolge anzeigen“.
+* Wählen Sie „Tools“ > „Optionen“ > „Tab-Reihenfolge“ aus und dann im Panel „Tab-Reihenfolge“ die Option „Visuelle Hilfen für Tab-Reihenfolge einblenden“.
 * Wählen Sie im Menü der Palette „Tab-Reihenfolge“ die Option „Visuelle Hilfen anzeigen“ aus.
 
 ### Verwenden der Position, um die standardmäßige Tab-Reihenfolge zu beeinflussen
 
-Um die standardmäßige Tab-Reihenfolge zu beeinflussen, können Sie die Koordinaten eines Objekts ändern, indem Sie es an eine andere Position verschieben. Beispiel: In Abbildung 9 tritt das Feld „Produktname“ in der Tab-Reihenfolge vor dem Feld „Menge“ auf. Um diese Reihenfolge zu ändern, können Sie das Feld „Produktname“ so verschieben, dass es unter dem Feld „Menge“ oder rechts von ihm platziert wird.
+Um die standardmäßige Tab-Reihenfolge zu beeinflussen, können Sie die Koordinaten eines Objekts ändern, indem Sie es an eine andere Position verschieben. Beispielsweise steht in Abbildung 9 das Feld „Produktname“ in der Tabulatorreihenfolge vor dem Feld „Menge“. Um diese Reihenfolge zu ändern, können Sie das Feld „Produktname“ so verschieben, dass es unter dem Feld „Menge“ oder rechts von ihm platziert wird.
 
 ![Die standardmäßige Tab-Reihenfolge ist von links nach rechts](/help/forms/using/assets/image-9.png)
 
@@ -391,15 +407,15 @@ Teilformulare, Optionsfelder und Inhaltsbereiche wirken sich alle zusammen mit d
 
 ### Erstellen einer benutzerdefinierten Tab-Reihenfolge mithilfe der Palette „Tab-Reihenfolge“
 
-Sie können die Standardreihenfolge der Registerkarten ändern, wenn Sie eine andere Sequenz in Ihrem Formular benötigen und die Änderung nicht durch Positionierung oder Gruppierung in Teilformularen erreicht werden kann. Um die Standardreihenfolge der Registerkarten zu ändern, können Sie über die Palette „Registerkartenreihenfolge“ eine benutzerdefinierte Registerkartenreihenfolge erstellen.
-Mit der Palette „Registerkartenreihenfolge“ (siehe Abbildung 12) können Sie die Reihenfolge überprüfen und ändern, in der Objekte in Ihrem Formular von Hilfstechnologien gelesen und mit der Tabulatortaste des Benutzers navigiert werden.
+Sie können die Standard-Tabulatorreihenfolge ändern, wenn Sie eine andere Reihenfolge im Formular benötigen und die Änderung nicht durch Positionieren oder Gruppieren in Teilformularen erreicht werden kann. Um die standardmäßige Tab-Reihenfolge zu ändern, können Sie über die Palette „Tab-Reihenfolge“ eine benutzerdefinierte Tab-Reihenfolge erstellen.
+Über die Palette „Tab-Reihenfolge“ (siehe Abbildung 12) können Sie die Reihenfolge überprüfen und ändern, in der die Objekte in Ihrem Formular mithilfe von Hilfstechnologien gelesen werden und in der mit der Tabulatortaste navigiert wird.
 
 ![Palette „Tab-Reihenfolge“](/help/forms/using/assets/image-12.png)
 
 Abbildung 12: **Palette „Tab-Reihenfolge“**
 
-Die Palette Registerkartenreihenfolge bietet eine alternative Ansicht der Registerkartenreihenfolge im Formular. Alle Objekte im Formular werden als nummerierte Liste angezeigt, wobei jede Zahl die Position des Objekts im Registerkarten-Fluss darstellt.
-Um die Palette „Registerkartenreihenfolge“ zu öffnen, wählen Sie „Fenster“ > „Registerkartenreihenfolge“.
+Die Palette „Tab-Reihenfolge“ bietet eine alternative Ansicht der Tab-Reihenfolge im Formular. Sie zeigt alle Objekte im Formular als nummerierte Liste an, wobei jede Zahl die Position des Objekts in der Tabulatorreihenfolge darstellt.
+Um die Palette „Tab-Reihenfolge“ zu öffnen, wählen Sie „Fenster“ > „Tab-Reihenfolge“ aus.
 
 
 Die Palette „Tab-Reihenfolge“ enthält die folgenden visuellen Marken:
@@ -407,7 +423,7 @@ Die Palette „Tab-Reihenfolge“ enthält die folgenden visuellen Marken:
 * Der Buchstabe M in einem grünen Kreis kennzeichnet Musterseitenobjekte (nur sichtbar, wenn das Formular auf der Registerkarte „Design-Ansicht“ angezeigt wird).
 * Ein Zahlenbereich gibt Objekte in einem Fragment an.
 * Ein gelber Hintergrund kennzeichnet das aktuell ausgewählte Element.
-* Ein Schloss-Symbol neben dem ersten Objekt auf der Seite bedeutet, dass das Objekt innerhalb der Tab-Reihenfolge nicht verschoben werden kann (nur sichtbar, wenn das Formular auf der Registerkarte „Musterseiten“ angezeigt wird).
+* Ein Schlosssymbol neben dem ersten Objekt auf der Seite bedeutet, dass das Objekt innerhalb der Tabulatorreihenfolge nicht verschoben werden kann (nur sichtbar, wenn das Formular auf der Registerkarte „Musterseiten“ angezeigt wird).
 
 Die Liste zeigt dieselben Zahlen für die Tab-Reihenfolge an wie die Zahlen, die im Formular selbst angezeigt werden, wenn Sie „Ansicht“ > „Tab-Reihenfolge einblenden“ auswählen. Sie ändern die Position eines Objekts innerhalb der Tab-Reihenfolge, indem Sie das Objekt auf der Palette „Tab-Reihenfolge“ in der Liste nach oben oder unten verschieben. Sie können ein einzelnes Objekt oder eine Gruppe von Objekten verschieben. Dies kann mit einer der folgenden Methoden erreicht werden:
 
@@ -425,19 +441,19 @@ Wenn Sie die angepasste Tab-Reihenfolge in Ihrem Formular nicht übernehmen möc
 
 **Verwandte Prüfpunkte**
 * Section 508 §1194.21
-   * (a) Wenn eine Software für die Ausführung auf einem System mit einer Tastatur konzipiert ist, müssen alle Produktfunktionen mit einer Tastatur ausführbar sein, wobei die Funktion selbst oder das Ergebnis der Ausführung einer Funktion textuell wahrnehmbar ist.
+  * (a) Wenn eine Software für die Ausführung auf einem System mit einer Tastatur konzipiert ist, müssen alle Produktfunktionen mit einer Tastatur ausführbar sein, wobei die Funktion selbst oder das Ergebnis der Ausführung einer Funktion textuell wahrnehmbar ist.
 * WCAG 1.0
-   * 9.2 Stellen Sie sicher, dass jedes Element, das über eine eigene Benutzeroberfläche verfügt, geräteunabhängig betrieben werden kann.
+  * 9.2 Stellen Sie sicher, dass jedes Element, das über eine eigene Benutzeroberfläche verfügt, geräteunabhängig betrieben werden kann.
 * WCAG 2.0
-   * 1.3.2 Bedeutungstragende Reihenfolge: Wenn die Reihenfolge, in der Inhalte präsentiert werden, sich auf deren Bedeutung auswirkt, kann die korrekte Leseabfolge programmgesteuert bestimmt werden. (Stufe A)
-   * 2.1.1 Tastatur: Alle Funktionen des Inhalts sind durch eine Tastaturschnittstelle bedienbar, ohne dass für die einzelnen Tastenanschläge spezifische Zeitvorgaben erforderlich sind, es sei denn, die zugrunde liegende Funktion erfordert Eingaben, die vom Pfad der Bewegung der Benutzenden und nicht nur von den Endpunkten abhängig sind. (Stufe A)
-   * 2.1.3 Tastatur (keine Ausnahme): Alle Funktionen des Inhalts sind über eine Tastaturschnittstelle bedienbar, ohne dass für die einzelnen Tastenanschläge spezifische Zeitvorgaben erforderlich sind. (Stufe AAA)
-   * 2.4.3 Fokus-Reihenfolge: Wenn auf einer Web-Seite in einer Reihenfolge navigiert werden kann und die Reihenfolge der Navigation die Bedeutung oder Bedienung beeinflusst, erhalten die fokussierbaren Komponenten den Fokus in einer Reihenfolge, welche die Bedeutung und Bedienbarkeit aufrechterhält. (Stufe A)
+  * 1.3.2 Bedeutungstragende Reihenfolge: Wenn die Reihenfolge, in der Inhalte präsentiert werden, sich auf deren Bedeutung auswirkt, kann die korrekte Leseabfolge programmgesteuert bestimmt werden. (Stufe A)
+  * 2.1.1 Tastatur: Alle Funktionen des Inhalts sind durch eine Tastaturschnittstelle bedienbar, ohne dass für die einzelnen Tastenanschläge spezifische Zeitvorgaben erforderlich sind, es sei denn, die zugrunde liegende Funktion erfordert Eingaben, die vom Pfad der Bewegung der Benutzenden und nicht nur von den Endpunkten abhängig sind. (Stufe A)
+  * 2.1.3 Tastatur (keine Ausnahme): Alle Funktionen des Inhalts sind über eine Tastaturschnittstelle bedienbar, ohne dass für die einzelnen Tastenanschläge spezifische Zeitvorgaben erforderlich sind. (Stufe AAA)
+  * 2.4.3 Fokus-Reihenfolge: Wenn auf einer Web-Seite in einer Reihenfolge navigiert werden kann und die Reihenfolge der Navigation die Bedeutung oder Bedienung beeinflusst, erhalten die fokussierbaren Komponenten den Fokus in einer Reihenfolge, welche die Bedeutung und Bedienbarkeit aufrechterhält. (Stufe A)
 
 
 ## Sicherstellen, dass Formularsteuerelemente mit der Tastatur aufgerufen werden können{#ensure-keyboard-accessible}
 
-Benutzende müssen das Formular vollständig mit der Tastatur oder einem gleichwertigen alternativen Eingabegerät ausfüllen können. Benutzende mit eingeschränkter Mobilität oder Sehfähigkeit haben möglicherweise keine andere Wahl, als die Tastatur zu verwenden, und auch viele Benutzende, die eine Maus verwenden könnten, bevorzugen die Eingabe über die Tastatur. Indem Sie mehrere Eingabeverfahren ermöglichen, erstellen Sie Formulare, die nicht nur barrierefrei sind, sondern auch den Vorlieben von allen Benutzenden entgegenkommen.
+Benutzende müssen das Formular vollständig mit der Tastatur oder einem gleichwertigen alternativen Eingabegerät ausfüllen können. Benutzende mit eingeschränkter Mobilität oder Sehfähigkeit haben möglicherweise keine andere Wahl, als die Tastatur zu verwenden, und auch viele Benutzende, die eine Maus verwenden könnten, bevorzugen die Eingabe über die Tastatur. Indem Sie mehrere Eingabeverfahren ermöglichen, erstellen Sie Formulare, die nicht nur barrierefrei sind, sondern auch den Vorlieben aller Benutzenden besser entsprechen.
 
 In LiveCycle Designer können Sie am einfachsten sicherstellen, dass Ihre Steuerelemente über die Tastatur zugänglich sind, indem Sie die auf der Registerkarte „Allgemein“ in der Palette „Objektbibliothek“ aufgelisteten Steuerelemente verwenden. Diese Steuerelemente reagieren standardmäßig sowohl auf Maus- als auch auf Tastatureingaben. Weitere Informationen finden Sie im Abschnitt 2.3 „Auswählen der richtigen Steuerelemente“ in diesem Handbuch.
 
@@ -447,15 +463,15 @@ Schließlich muss sichergestellt werden, dass das skriptgesteuerte Verhalten ebe
 
 **Verwandte Prüfpunkte**
 * Section 508 §1194.21
-   * (a) Wenn eine Software für die Ausführung auf einem System mit einer Tastatur konzipiert ist, müssen alle Produktfunktionen mit einer Tastatur ausführbar sein, wobei die Funktion selbst oder das Ergebnis der Ausführung einer Funktion textuell wahrnehmbar ist.
+  * (a) Wenn eine Software für die Ausführung auf einem System mit einer Tastatur konzipiert ist, müssen alle Produktfunktionen mit einer Tastatur ausführbar sein, wobei die Funktion selbst oder das Ergebnis der Ausführung einer Funktion textuell wahrnehmbar ist.
 * WCAG 1.0
-   * 6.4 Stellen Sie bei Skripten und Applets sicher, dass Ereignis-Handler geräteunabhängig eingegeben werden (P2).
-   * 9.2 Stellen Sie sicher, dass jedes Element, das über eine eigene Benutzeroberfläche verfügt, geräteunabhängig betrieben werden kann (P2).
-   * 9.3 Geben Sie für Skripte logische Ereignis-Handler statt geräteabhängige Ereignis-Handler an (P2).
+  * 6.4 Stellen Sie bei Skripten und Applets sicher, dass Ereignis-Handler eingabegeräteunabhängig sind (P2).
+  * 9.2 Stellen Sie sicher, dass jedes Element, das über eine eigene Benutzeroberfläche verfügt, geräteunabhängig betrieben werden kann (P2).
+  * 9.3 Geben Sie für Skripte logische Ereignis-Handler statt geräteabhängige Ereignis-Handler an (P2).
 * WCAG 2.0
-   * 2.1.1 Tastatur: Alle Funktionen des Inhalts sind durch eine Tastaturschnittstelle bedienbar, ohne dass für die einzelnen Tastenanschläge spezifische Zeitvorgaben erforderlich sind, es sei denn, die zugrunde liegende Funktion erfordert Eingaben, die vom Pfad der Bewegung der Benutzenden und nicht nur von den Endpunkten abhängig sind. (Stufe A)
-   * 2.1.2 Keine Tastaturfalle: Wenn der Tastaturfokus durch eine Tastaturschnittstelle auf einen Bestandteil der Seite bewegt werden kann, kann der Fokus von diesem Bestandteil weg bewegt werden, indem man nur die Tastaturschnittstelle verwendet. Falls man dazu mehr als nicht modifizierte Pfeil- oder Tabulatortasten oder andere übliche Ausstiegsmethoden verwenden muss, werden die Benutzenden über die Methode zum Bewegen des Fokus informiert. (Stufe A)
-   * 2.1.3 Tastatur (keine Ausnahme): Alle Funktionen des Inhalts sind über eine Tastaturschnittstelle bedienbar, ohne dass für die einzelnen Tastenanschläge spezifische Zeitvorgaben erforderlich sind. (Stufe AAA)
+  * 2.1.1 Tastatur: Alle Funktionen des Inhalts sind durch eine Tastaturschnittstelle bedienbar, ohne dass für die einzelnen Tastenanschläge spezifische Zeitvorgaben erforderlich sind, es sei denn, die zugrunde liegende Funktion erfordert Eingaben, die vom Pfad der Bewegung der Benutzenden und nicht nur von den Endpunkten abhängig sind. (Stufe A)
+  * 2.1.2 Keine Tastaturfalle: Wenn der Tastaturfokus durch eine Tastaturschnittstelle auf einen Bestandteil der Seite bewegt werden kann, kann der Fokus von diesem Bestandteil weg bewegt werden, indem man nur die Tastaturschnittstelle verwendet. Falls man dazu mehr als nicht modifizierte Pfeil- oder Tabulatortasten oder andere übliche Ausstiegsmethoden verwenden muss, werden die Benutzenden über die Methode zum Bewegen des Fokus informiert. (Stufe A)
+  * 2.1.3 Tastatur (keine Ausnahme): Alle Funktionen des Inhalts sind über eine Tastaturschnittstelle bedienbar, ohne dass für die einzelnen Tastenanschläge spezifische Zeitvorgaben erforderlich sind. (Stufe AAA)
 
 
 ## Verantwortungsvoller Umgang mit Farben{#use-color-responsibly}
@@ -474,7 +490,7 @@ Abbildung 13 zeigt beispielsweise ein Formularfeld mit einer roten Beschriftung 
 
 Abbildung 13: **Informationsübermittlung nur mit Farben**
 
-Um dieses Problem zu beheben, geben Sie den Status „erforderlich“ des Formulars auch im Alternativtext des Formularsteuerelements an (wie in Abschnitt 2.5 „Angeben angemessener Beschriftungen für Formularsteuerelemente“ beschrieben). Sie können beispielsweise den Text der Bildschirmlesehilfe auf „Postleitzahl (erforderlich)“ festlegen. Für Benutzende mit Sehschwächen bei Farben in bestimmten Kombinationen wird empfohlen, den Textfeldtyp auf „Benutzereingabe – Erforderlich“ in der Palette „Objekt“ festzulegen. Zusätzlich wird ein alternativer Text empfohlen, der angibt, dass das Feld erforderlich ist. Alternativ können Sie andere Hinweise als Farben verwenden, z. B. visuellen Text, Textstile und Rahmenstile. Für Benutzende von Bildschirmlesehilfen müssen Sie jedoch weiterhin die erforderlichen Informationen über die Palette „Ein-/Ausgabehilfe“ vermitteln.
+Um dieses Problem zu beheben, geben Sie den Status „erforderlich“ des Formularsteuerelements auch im Alternativtext an (wie in Abschnitt 2.5 „Angeben angemessener Labels für Formularsteuerelemente“ beschrieben). Sie können beispielsweise den Text der Bildschirmlesehilfe auf „Postleitzahl (erforderlich)“ festlegen. Für Benutzende, die Schwierigkeiten haben, Farben in bestimmten Kombinationen zu erkennen, wird empfohlen, den Textfeldtyp in der Palette „Objekt“ auf „Benutzereingabe – Erforderlich“ festzulegen und zusätzlich Alternativtext anzugeben, der darauf hinweist, dass das Feld erforderlich ist. Alternativ können Sie andere Hinweise als Farben verwenden, z. B. visuellen Text, Textstile und Rahmenstile. Für Benutzende von Bildschirmlesehilfen müssen Sie jedoch weiterhin die erforderlichen Informationen über die Palette „Barrierefreiheit“ vermitteln.
 
 Beachten Sie außerdem beim Angeben von Beschreibungen oder Anweisungen für Formularbenutzende, dass Anweisungen, die nur auf der Farbe basieren, für Benutzende mit Sehbehinderung nicht ausreichend sind. Anstelle einer Aussage wie „Klicken Sie auf die grüne Schaltfläche, um fortzufahren“ verwenden Sie beispielsweise eine Textbeschreibung für Aktionen wie „Klicken Sie auf die Schaltfläche „Weiter“, um fortzufahren“.
 
@@ -493,36 +509,36 @@ Es wird dringend empfohlen, die standardmäßigen Schrift- und Hintergrundfarben
 
 Mit Adobe Reader und Adobe Acrobat können Benutzende festlegen, ob Farben ersetzt werden müssen, um die visuellen Anforderungen zu erfüllen. Die Benutzenden können ihr eigenes Kontrastschema angeben oder ein vom Betriebssystem bereitgestelltes Schema verwenden. Darüber hinaus verfügen Adobe Reader und Adobe Acrobat über ein eigenes Kontrastschema, das aktiviert werden kann. Damit diese Optionen erfolgreich sind, sollten Sie immer Standardfarben verwenden.
 
-Beim Entwerfen Ihres Formulars sollten Sie dieses häufig mit einem Farbschema testen, wie es viele sehbehinderte Benutzende beim Ausfüllen verwenden. Dadurch können Sie beim Entwurf frühzeitig Probleme erkennen und beheben.
+Beim Entwerfen Ihres Formulars sollten Sie es häufig mit einem Farbschema testen, das dem ähnelt, das viele sehbehinderte Benutzende zum Ausfüllen Ihres Formulars verwenden. Dadurch können Sie beim Entwurf frühzeitig Probleme erkennen und beheben.
 
 Empfehlungen zur Verwendung von Farben:
 * Achten Sie darauf, dass keine Informationen verloren gehen, wenn die semantische Farbe nicht sichtbar ist.
 * Falls Sie keine Standardfarben verwenden können, stellen Sie sicher, dass Ihre Farben einen hohen Kontrast aufweisen, z. B. schwarz auf einem hellen (weißen) Hintergrund. Sehendbehinderte Benutzende benötigen im Allgemeinen einen hohen Kontrast zwischen dem Text und seinem Hintergrund, um den Text lesen zu können.
 * Testen Sie die Lesbarkeit Ihrer Formulare, indem Sie Ihren Bildschirm in Windows und in Adobe Reader oder Adobe Acrobat auf eine kontrastreiche Anzeige umstellen. Mac OSX bietet nur einen einfachen Graustufenfilter für hohen Kontrast, was für Tests nicht ausreicht.
 * Vermitteln Sie keine Informationen ausschließlich auf der Grundlage von Farben. Verwenden Sie beispielsweise nicht nur Farben, um wichtige Textteile hervorzuheben. Verwenden Sie auch andere Methoden zur Hervorhebung sowie Textbeschreibungen.
-* Verwenden Sie nicht zu viele Farben, da dies das Lesen der eigentlichen Informationen im Inhalt erschweren kann. Verleihen Sie der Lesbarkeit der Informationen immer oberste Priorität, wenn Sie entscheiden, welche Farben verwendet werden sollen.
+* Verwenden Sie nicht zu viele Farben, da dies das Lesen der eigentlichen Informationen im Inhalt erschweren kann. Die Lesbarkeit der Informationen sollte immer oberste Priorität haben, wenn Sie entscheiden, welche Farben verwendet werden sollen.
 
 **Verwandte Prüfpunkte**
 * Section 508 §1194.21
-   * (i) Die Farbcodierung darf nicht als einziges Mittel zur Übermittlung von Informationen, zur Anzeige einer Aktion, zur Aufforderung zu einer Reaktion oder zur Unterscheidung eines visuellen Elements verwendet werden.
+  * (i) Die Farbcodierung darf nicht als einziges Mittel zur Übermittlung von Informationen, zur Anzeige einer Aktion, zur Aufforderung zu einer Reaktion oder zur Unterscheidung eines visuellen Elements verwendet werden.
 * WCAG 1.0
-   * 2.1 Stellen Sie sicher, dass alle Informationen, die durch Farben vermittelt werden, auch ohne Farben verfügbar sind, z. B. über Kontext oder Markup.
-   * 2.2 Stellen Sie sicher, dass die Kombinationen aus Vordergrund- und Hintergrundfarben einen ausreichenden Kontrast bieten, wenn sie von einer Person mit Farbenblindheit oder auf einem Schwarzweißbildschirm angezeigt werden. [Priorität 2 für Bilder, Priorität 3 für Text] (P2).
+  * 2.1 Stellen Sie sicher, dass alle Informationen, die durch Farben vermittelt werden, auch ohne Farben verfügbar sind, z. B. über Kontext oder Markup.
+  * 2.2 Stellen Sie sicher, dass Kombinationen aus Vordergrund- und Hintergrundfarben einen ausreichenden Kontrast bieten, wenn sie von Personen mit Farbsehschwäche betrachtet oder auf einem Schwarzweißbildschirm angezeigt werden. [Priorität 2 für Bilder, Priorität 3 für Text] (P2).
 * WCAG 2.0
-   * 1.4.1 Verwendung von Farben: Farben werden nicht als einziges visuelles Mittel eingesetzt, um Informationen zu vermitteln, eine Aktion zu kennzeichnen, eine Antwort einzuholen oder ein visuelles Element zu unterscheiden. (Stufe A)
-   * 1.4.3 Kontrast (Minimum): Die visuelle Darstellung von Text und Bildern von Text hat ein Kontrastverhältnis von mindestens 4,5 :1, mit folgenden Ausnahmen: (Level AA)
-   * 1.4.6 Kontrast (verbessert): Die visuelle Darstellung von Text und Bildern von Text hat ein Kontrastverhältnis von mindestens 7:1, mit folgenden Ausnahmen: (Level AAA)
+  * 1.4.1 Verwendung von Farben: Farben werden nicht als einziges visuelles Mittel eingesetzt, um Informationen zu vermitteln, eine Aktion zu kennzeichnen, eine Antwort einzuholen oder ein visuelles Element zu unterscheiden. (Stufe A)
+  * 1.4.3 Kontrast (Minimum): Die visuelle Darstellung von Text und Bildern von Text hat ein Kontrastverhältnis von mindestens 4,5:1, mit Ausnahme der folgenden: (Level AA)
+  * 1.4.6 Kontrast (verbessert): Die visuelle Darstellung von Text und Bildern von Text hat ein Kontrastverhältnis von mindestens 7:1, mit Ausnahme der folgenden: (Level AAA)
 
 
 ## Bereitstellen von Überschriftzellen für Tabellen{#provide-heading-cells}
 
-Tabellen sind eine effektive Möglichkeit, Inhalte in barrierefreien Formularen zu organisieren und darzustellen. Bei entsprechender Verwendung bieten die Zeilen und Spalten einer Tabelle eine vorhersehbare und konsistente Struktur für Formularinhalte. Wenn Benutzende einer Bildschirmlesehilfe beispielsweise zu einer Textzeilenzelle navigieren, gibt die Bildschirmlesehilfe die Zellenposition an und liest dann den Zelleninhalt. Die Zellenposition wird von der Bildschirmlesehilfe mithilfe einer Kombination aus Zeilen- und Spaltenüberschriften oder Zeilen- und Spaltennummern bestimmt. Da Bildschirmlesehilfen Informationen liefern, mit deren Hilfe die Benutzenden sich im Inhalt der Tabelle orientieren können, hat das Layout unmittelbare Auswirkungen auf die Barrierefreiheit der Tabelle.
+Tabellen sind eine effektive Möglichkeit, Inhalte in barrierefreien Formularen zu organisieren und darzustellen. Bei entsprechender Verwendung bieten die Zeilen und Spalten einer Tabelle eine vorhersehbare und konsistente Struktur für Formularinhalte. Wenn Benutzende einer Bildschirmlesehilfe beispielsweise zu einer Zelle in einer Textkörperzeile navigieren, gibt die Bildschirmlesehilfe die Zellenposition an und liest dann den Zelleninhalt. Die Bildschirmlesehilfe gibt die Zellenposition mithilfe einer Kombination aus Zeilen- und Spaltenüberschriften oder Zeilen- und Spaltennummern an. Da Bildschirmlesehilfen Informationen liefern, mit deren Hilfe die Benutzenden sich im Inhalt der Tabelle orientieren können, hat das Layout unmittelbare Auswirkungen auf die Barrierefreiheit der Tabelle.
 
 Sie können beim Erstellen von Tabellen die folgenden Rollen für Tabellenelemente festlegen. Diese Rollen ermöglichen es Bildschirmlesehilfen, mithilfe spezieller Tastaturbefehle in der Tabellenstruktur zu navigieren, und vermitteln den Benutzenden die Beziehung zwischen Tabellenzellen und den entsprechenden Kopfzeilenzellen.
 * Tabelle
 Weist dem ausgewählten Teilformular die Rolle einer Tabelle zu. Wenn Benutzende zu diesem Teilformular navigieren, erkennen die meisten Bildschirmlesehilfen es als Tabelle und geben die Anzahl der Zeilen und Spalten an.
 * Kopfzeile
-Weist dem ausgewählten Teilformular oder der ausgewählten Tabellenzeile die Rolle einer Kopfzeile zu. Beim Lesen des Inhalts einer Textzeilenzelle wird von den meisten Bildschirmlesehilfen zunächst der Inhalt der zugehörigen Kopfzeilenzelle bestimmt.
+Weist dem ausgewählten Teilformular oder der ausgewählten Tabellenzeile die Rolle einer Kopfzeile zu. Beim Vorlesen des Inhalts einer Zelle in einer Textkörperzeile nennen die meisten Bildschirmlesehilfen zunächst den Inhalt der entsprechenden Zelle in der Kopfzeile.
 * Textzeile
 Weist dem ausgewählten Teilformular oder der ausgewählten Tabellenzeile die Rolle einer Textzeile zu. Enthält eine Zelle ein Teilformular, lesen Bildschirmlesehilfen normalerweise den Inhalt der zugehörigen Zelle in der Kopfzeile und anschließend die Felder im Teilformular.
 * Fußzeile
@@ -539,19 +555,19 @@ Es werden Tabellen mit einfachen Layouts empfohlen. Einfache Tabellen beginnen m
 Beachten Sie beim Entwerfen einfacher Tabellen für Barrierefreiheit folgende Richtlinien:
 
 * Die Tab-Reihenfolge für eine Tabelle ist die geografische Reihenfolge, die auch für das Formular selbst gilt. Der Tabelleninhalt sollte so angeordnet sein, dass er beim Lesen der Tabelle von links nach rechts und von oben nach unten problemlos erfasst werden kann.
-* Die meisten Bildschirmlesehilfen interpretieren die erste Zeile einer Tabelle als Kopfzeile. Beim Lesen des Inhalts einer Textzeilenzelle mit einer Bildschirmlesehilfe wird zunächst der Inhalt der zugehörigen Kopfzeilenzelle gelesen. Jede Kopfzeilenzelle sollte daher eine aussagekräftige Beschreibung des Spalteninhalts enthalten.
+* Die meisten Bildschirmlesehilfen interpretieren die erste Zeile einer Tabelle als Kopfzeile. Beim Lesen des Inhalts einer Zelle in einer Textzeile lesen diese Bildschirmlesehilfen zunächst den Inhalt der zugehörigen Kopfzeilenzelle. Jede Kopfzeilenzelle sollte daher eine aussagekräftige Beschreibung des Spalteninhalts enthalten.
 * Vermeiden Sie Zellen, die zwei oder mehrere Spalten umfassen, sowie verschachtelte Tabellen oder Tabellenabschnitte. Diese Funktionen werden von einigen Bildschirmlesehilfen oft nicht korrekt interpretiert und daher möglicherweise ignoriert. Wenn z. B. eine Zelle in einer Textzeile zwei Spalten umfasst, können Bildschirmlesehilfen möglicherweise beim Lesen der nächsten Zelle in der Zeile den korrekten Zelleninhalt in der Kopfzeile nicht referenzieren.
 
 ### Barrierefreies Gestalten komplexer Tabellen
 
-Wenn Sie Tabellen für Barrierefreiheit entwerfen, versuchen Sie, das Tabellen-Layout einfach zu halten, wobei auf eine Kopfzeile Textzeilen folgen. Natürlich können manche Inhalte ein komplexeres Tabellen-Layout erfordern. Beispielsweise müssen Sie möglicherweise eine Zelle verwenden, die sich über mehrere Kopfzeilen erstreckt, um den Inhalt effektiv zu vermitteln.
+Wenn Sie Tabellen im Hinblick auf Barrierefreiheit entwerfen, sollten Sie das Tabellen-Layout möglichst einfach halten, mit einer Kopfzeile, auf die Zeilen des Tabellenkörpers folgen. Natürlich können manche Inhalte ein komplexeres Tabellen-Layout erfordern. Beispielsweise müssen Sie möglicherweise Zellen verwenden, die sich über mehrere Spalten erstrecken, oder mehr als eine Kopfzeile, um den Inhalt effektiv zu vermitteln.
 
 Sie können komplexe Tabellen erstellen, indem Sie das Tabellenobjekt verwenden oder Teilformularobjekte kombinieren. Das Tabellenobjekt enthält Funktionen zur Unterstützung des Design-Prozesses, z. B. Optionen zum Einfügen und Ändern der Größe von Spalten und Zeilen.
 
 Mithilfe der Palette „Ein-/Ausgabehilfe“ können Sie tabellenbezogene Rollen für Teilformulare festlegen, um eine barrierefreie komplexe Tabelle zu erstellen. Abhängig von Ihrer Erfahrung mit Designs und Ihren Präferenzen können Sie zum Erstellen komplexer Tabellen Teilformularobjekte kombinieren. Sie können z. B. ein Teilformular mit zwei Zeilen erstellen, dieses Teilformular als Kopfzeile für die Tabelle festlegen und dann ein anderes Teilformular für die Tabellentextzeilen definieren.
 
 Bei der Erstellung von Tabellen mit Teilformularobjekten anstelle von Tabellenobjekten sind einige zusätzliche Schritte erforderlich:
-* Legen Sie auf der Registerkarte „Teilformular“ für jedes Teilformular den Typ auf „Position“ fest.
+* Legen Sie auf der Registerkarte „Teilformular“ für jedes Teilformular den Typ auf „Positioniert“ fest.
 * Legen Sie in der Palette „Ein-/Ausgabehilfe“ für jedes Teilformular der Tabelle eine geeignete Teilformularrolle fest. Weisen Sie z. B. dem Teilformular, das als Tabellenüberschrift dienen soll, die Rolle „Kopfzeile“ zu.
 * Weisen Sie Zeilen, die Informationen über die Tabelle oder deren Inhalt enthalten, aber nicht als Teil der Tabelle anzusehen sind, die Teilformularrolle „Keine“ zu. Die Bildschirmlesehilfe liest den Zeileninhalt.
 
@@ -567,13 +583,13 @@ Bei Steuerelementen in Tabellenzellen gibt die Bildschirmlesehilfe an, was immer
 
 **Verwandte Prüfpunkte**
 * Section 508 §1194.22
-   * (g) Für Datentabellen werden Zeilen- und Spaltenüberschriften angegeben.
-   * (h) Es wird Markup verwendet, um Datenzellen und Überschriftenzellen für Datentabellen mit zwei oder mehr logischen Ebenen von Zeilen- oder Spaltenüberschriften zuzuordnen.
+  * (g) Für Datentabellen werden Zeilen- und Spaltenüberschriften angegeben.
+  * (h) Markup ist zu verwenden, um Datenzellen und Kopfzellen in Datentabellen mit zwei oder mehr logischen Ebenen von Zeilen- oder Spaltenüberschriften zuzuordnen.
 * WCAG 1.0
-   * 5.1 Identifizieren Sie bei Datentabellen die Zeilen- und Spaltenüberschriften (P1).
-   * 5.2 Für Datentabellen mit zwei oder mehr logischen Ebenen von Zeilen- oder Spaltenüberschriften verwenden Sie Markup, um Datenzellen und Überschriftenzellen zuzuordnen (P1)
+  * 5.1 Identifizieren Sie bei Datentabellen die Zeilen- und Spaltenüberschriften (P1).
+  * 5.2 Für Datentabellen mit zwei oder mehr logischen Ebenen von Zeilen- oder Spaltenüberschriften verwenden Sie Markup, um Datenzellen und Kopfzellen zuzuordnen (P1)
 * WCAG 2.0
-   * 1.3.1 Informationen und Beziehungen: Informationen, Struktur und Beziehungen, die durch die Präsentation vermittelt werden, können programmgesteuert festgelegt werden oder sind im Text verfügbar. (Stufe A)
+  * 1.3.1 Informationen und Beziehungen: Informationen, Struktur und Beziehungen, die durch die Präsentation vermittelt werden, können programmatisch ermittelt werden oder sind im Text verfügbar. (Stufe A)
 
 
 ## Bereitstellen einer navigierbaren Formularstruktur{#provide-navigable-form}
@@ -582,18 +598,18 @@ Wenn ein Formular lang und komplex wird, wird seine Benutzerfreundlichkeit durch
 * Jede Überschrift teilt den Benutzenden der Bildschirmlesehilfe mit, was im Abschnitt nach der Überschrift zu erwarten ist.
 * Bildschirmlesehilfen bieten Tastaturbefehle, mit denen schnell zwischen den verschiedenen Überschriften im Formular hin- und hergesprungen werden kann. Außerdem können die Benutzenden auf eine Liste von Überschriften zugreifen, die ihnen einen Überblick über die Dokumentstruktur bietet und eine schnelle Navigation ermöglicht.
 
-Durch die Bereitstellung von Mechanismen, die es den Benutzenden ermöglichen, zu anderen Bereichen des Formulars zu springen, kann das Formular praktischer werden. Sie können Ihrem Formular mithilfe der Palette „Ein-/Ausgabehilfe“ in LiveCycle Designer eine Überschriftenstruktur hinzufügen.
+Durch die Bereitstellung von Mechanismen, die es den Benutzenden ermöglichen, zu anderen Bereichen des Formulars zu springen, kann das Formular praktischer werden. Sie können Ihrem Formular mithilfe der Palette „Barrierefreiheit“ in LiveCycle Designer eine Überschriftenstruktur hinzufügen.
 
 ### Bereitstellung von Mechanismen zum Überspringen
 
 Sehende Benutzende können eine Seite in beliebiger Reihenfolge überfliegen. Sie können etwa beginnen, indem sie sich die rechte untere Ecke der Seite ansehen und den Inhalt dann rückwärts überfliegen. Benutzende einer Bildschirmlesehilfe haben diese Option nicht, da die Bildschirmlesehilfe mit dem Lesen der Seite oben links (wie im Quell-Code dargestellt) beginnt und sich in einer linearen Reihenfolge bewegt. Darüber hinaus können sehende Benutzende die Seite nach interessanten Links durchsuchen und diese mit der Maus aktivieren. Benutzende der Bildschirmlesehilfe müssen sich der Reihe nach durch die Seite bewegen.
 
-Die einfachste und effektivste Möglichkeit, eine navigierbare Formularstruktur bereitzustellen, besteht darin, strukturelle Überschriften und ordnungsgemäß definierte Listen in Ihrem Formular zu verwenden.
-Sie können auch Mechanismen bereitstellen, mit denen Benutzende zu anderen Bereichen des Formulars wechseln können, z. B. indem Sie oben und unten im Formular Navigationsschaltflächen hinzufügen. Oben in einem Formular können Sie Schaltflächen wie „Datendatei öffnen“, „Vorherige Seite“ und „Nächste Seite“ einfügen. Unten im Formular können Sie Schaltflächen wie Daten speichern, E-Mail-Daten, Zum Seitenanfang wechseln und Drucken einfügen.
+Die einfachste und effektivste Methode, eine navigierbare Formularstruktur zu bieten, besteht darin, Strukturüberschriften und richtig definierte Listen im Formular zu verwenden.
+Sie können auch Mechanismen bereitstellen, mit denen Benutzende zu anderen Bereichen des Formulars springen können, z. B. durch Hinzufügen von Navigationsschaltflächen oben und unten im Formular. Oben im Formular könnten Sie folgende Schaltflächen einfügen: „Datendatei öffnen“, „Vorherige Seite“ und „Nächste Seite“. Unten im Formular könnten z. B. folgende Schaltflächen verwendet werden: „Daten speichern“, „Daten per E-Mail senden“, „Zum Seitenanfang“ oder „Drucken“.
 
-Intelligente Felder können das Ausfüllen einiger Formulare erleichtern. So kann z. B. ein Formular für die Reisekostenabrechnung über mehrere Zeilen und Spalten von Feldern verfügen. Wenn eine bestimmte Zeile leer bleibt, kann das Drücken der Tabulatortaste für das letzte Element in dieser Zeile den Sprung zum nächsten Abschnitt des Formulars bewirken, anstatt weiterhin durch eine Reihe von Feldern zu springen, die leer sind.
+Intelligente Felder können das Ausfüllen einiger Formulare erleichtern. So kann z. B. ein Reiseantragsformular mehrere Zeilen und Spalten mit Feldern enthalten. Wenn eine bestimmte Zeile leer bleibt, kann das Drücken der Tabulatortaste für das letzte Element in dieser Zeile den Sprung zum nächsten Abschnitt des Formulars bewirken, anstatt weiterhin durch eine Reihe von Feldern zu springen, die leer sind.
 
-### Hinzufügen von Überschriften mithilfe der Palette „Ein-/Ausgabehilfe“
+### Hinzufügen von Überschriften mithilfe der Palette „Barrierefreiheit“
 
 Mithilfe der Palette „Ein-/Ausgabehilfe“ können Sie Objekten je nach Verwendungszweck des Objekts Rollen zuweisen. Diese Rollen können angewendet werden, um Überschriften auf unterschiedlichen Ebenen zu erstellen.
 
@@ -603,16 +619,16 @@ Abbildung 15: **Festlegen einer Überschriftenrolle in der Palette „Barrierefr
 Führen Sie die folgenden Schritte aus, um eine Überschrift in Ihrem Formular zu erstellen:
 
 1. Identifizieren Sie den Anfang jedes logischen Segments Ihres Formulars mithilfe von statischen Textbeschriftungen,
-1. Wählen Sie für jede Bezeichnung eine der Überschriftoptionen in der Palette „Ein-/Ausgabehilfe“ als Rolle aus. Die verschiedenen Überschriftebenen (1 bis 6) ermöglichen es Ihnen, eine Überschriftenstruktur in Ihrem Formular zu erstellen. Beginnen Sie mit Ebene 1 und verwenden Sie dann Ebene 2 und so weiter für verschachtelte Unterabschnitte.
+1. Wählen Sie für jedes Label in der Palette „Barrierefreiheit“ als Rolle eine der Überschriftoptionen aus. Die verschiedenen Überschriftebenen (1 bis 6) ermöglichen es Ihnen, eine Überschriftenstruktur in Ihrem Formular zu erstellen. Beginnen Sie mit Ebene 1 und verwenden Sie dann Ebene 2 und so weiter für verschachtelte Unterabschnitte.
 
-Die meisten Bildschirmlesehilfen ermöglichen es Benutzenden, je nach Ebene schnell zwischen Überschriftelementen zu navigieren. Abbildung 16 zeigt ein Formular, das mithilfe von Überschriften in kleinere Segmente unterteilt ist. In diesem Beispiel wird die folgende Überschriftstruktur verwendet:
+Die meisten Bildschirmlesehilfen ermöglichen es Benutzenden, je nach Ebene schnell zwischen Überschriftelementen zu navigieren. Abbildung 16 zeigt ein Formular, das mithilfe von Überschriften in kleinere Segmente unterteilt ist. In diesem Beispiel wird die folgende Überschriftenstruktur verwendet:
 
 * Überschriftebene 1: Produktanfrage
-   * Überschriftebene 2: Bestelldetails
-      * Überschriftebene 3: Lieferoptionen
+  * Überschriftebene 2: Bestelldetails
+    * Überschriftebene 3: Lieferoptionen
 * Überschriftebene 2: Zusätzliche Informationen
-   * Überschriftebene 3: Persönliche Daten
-   * Überschriftebene 3: Adresse
+  * Überschriftebene 3: Persönliche Daten
+  * Überschriftebene 3: Adresse
 
 ![Strukturieren eines Formulars mithilfe von Überschriften](/help/forms/using/assets/image-16.png)
 
@@ -621,7 +637,7 @@ Abbildung 16: **Strukturieren eines Formulars mithilfe von Überschriften**
 Diese Überschriften sind nur statische Textelemente, denen eine bestimmte Schriftgröße und eine Überschriftenrolle mit der entsprechenden Ebene zugewiesen wurde.
 
 >[!NOTE]
-> Wenn Sie einfach das Erscheinungsbild einer Textbeschriftung so ändern, dass sie wie eine Überschrift aussieht, wird sie von Bildschirmlesehilfen nicht als Überschrift erkannt. Sie müssen deswegen eine Überschriftenrolle anwenden.
+> Wenn Sie einfach das Erscheinungsbild eines Text-Labels so ändern, dass es wie eine Überschrift aussieht, wird es von Bildschirmlesehilfen nicht als Überschrift erkannt. Sie müssen deswegen eine Überschriftenrolle anwenden.
 
 Stellen Sie stets sicher, dass die Reihenfolge der Überschriftebenen logisch ist. So muss beispielsweise ein Unterabschnitt einer Überschrift der Stufe 2 stets eine Überschrift der Stufe 3 sein. Sie sollten beim Markieren von Unterabschnitten nie Ebenen überspringen. Benutzende von Bildschirmlesehilfen verwenden die verschiedenen Ebenen, um die Struktur des Formulars besser zu verstehen. Wenn Benutzende beispielsweise auf eine Überschrift der Ebene 2 stoßen, können sie einen Tastaturbefehl verwenden, um nach Überschriften der Ebene 3 zu suchen und festzustellen, ob es Unterabschnitte gibt. Wenn Sie jedoch Ebenen überspringen, haben die Benutzenden Schwierigkeiten, diese Unterabschnitte zu identifizieren.
 
@@ -636,24 +652,24 @@ In LiveCycle Designer erstellen Sie Listen mit Unterformularen mit den folgenden
 1. Wählen Sie jedes verschachtelte Unterformular im Unterformular „Liste“ aus und legen Sie seine Rolle auf „Listenelement“ fest.
 
 >[!NOTE]
-> Die Rolle „Listenelement“ kann nur einem Unterformular zugewiesen werden, das in einem Unterformular enthalten ist, für das eine Listenrolle angegeben ist. Sie können eine Tabelle oder Tabellenzeile nicht als Liste oder Listenelement definieren. Ein Listenelement kann jedoch eine Tabelle enthalten.
+> Die Rolle „Listenelement“ kann nur einem Unterformular zugewiesen werden, das in einem Unterformular enthalten ist, für das die Rolle „Liste“ angegeben ist. Sie können eine Tabelle oder Tabellenzeile nicht als Liste oder Listenelement definieren. Ein Listenelement kann jedoch eine Tabelle enthalten.
 
 **Verwandte Prüfpunkte**
 * Abschnitt 508 §11934.22
-   * (o) Es muss eine Methode bereitgestellt werden, die es den Benutzenden ermöglicht, sich wiederholende Navigationslinks zu überspringen.
+  * (o) Es muss eine Methode bereitgestellt werden, die es den Benutzenden ermöglicht, sich wiederholende Navigationslinks zu überspringen.
 * WCAG 1.0
-   * 3.5 Verwenden Sie Header-Elemente, um die Dokumentstruktur zu vermitteln, und verwenden Sie sie gemäß den Spezifikationen (P2).
-   * 3.6 Markieren Sie Listen und Listenelemente ordnungsgemäß. (P2).
-   * 12.3 Teilen Sie große Informationsblöcke in handlichere Gruppen auf, wo immer dies auf natürliche Weise möglich und zweckmäßig ist. (P2).
-   * 13.3 Stellen Sie Informationen über das allgemeine Layout einer Website bereit (z. B. eine Sitemap oder ein Inhaltsverzeichnis).
-   * 13.4 Verwenden Sie Navigationsmechanismen auf konsistente Weise (P2).
+  * 3.5 Verwenden Sie Header-Elemente, um die Dokumentstruktur zu vermitteln, und verwenden Sie sie gemäß den Spezifikationen (P2).
+  * 3.6 Markieren Sie Listen und Listenelemente ordnungsgemäß. (P2).
+  * 12.3 Teilen Sie große Informationsblöcke in handlichere Gruppen auf, wo immer dies auf natürliche Weise möglich und zweckmäßig ist. (P2).
+  * 13.3 Stellen Sie Informationen über das allgemeine Layout einer Website bereit (z. B. eine Sitemap oder ein Inhaltsverzeichnis).
+  * 13.4 Verwenden Sie Navigationsmechanismen einheitlich (P2).
 * WCAG 2.0
-   * 1.3.2 Bedeutungstragende Reihenfolge: Wenn die Reihenfolge, in der Inhalte präsentiert werden, sich auf deren Bedeutung auswirkt, kann die korrekte Leseabfolge programmgesteuert bestimmt werden. (Stufe A)
-   * 2.4.1 Blöcke umgehen: Es gibt einen Mechanismus, um Inhaltsblöcke zu umgehen, die auf verschiedenen Web-Seiten wiederholt werden. (Stufe A)
-   * 2.4.5 Verschiedene Methoden: Es gibt mehr als eine Methode, um eine Web-Seite innerhalb eines Satzes von Web-Seiten zu finden, es sei denn, die Web-Seite ist das Ergebnis oder ein Schritt innerhalb eines Prozesses. (Stufe AA)
-   * 2.4.6 Überschriften und Beschriftungen: Überschriften und Beschriftungen beschreiben ein Thema oder einen Zweck. (Stufe AA)
-   * 2.4.10 Abschnittsüberschriften: Abschnittsüberschriften dienen zur Organisation des Inhalts. (Stufe AAA)
-   * 3.2.3 Konsistente Navigation: Navigationsmechanismen, die auf mehreren Web-Seiten innerhalb eines Satzes von Web-Seiten wiederholt werden, treten jedes Mal, wenn sie wiederholt werden, in der gleichen relativen Reihenfolge auf, es sei denn, eine Änderung wird durch Benutzende ausgelöst. (Stufe AA)
+  * 1.3.2 Bedeutungstragende Reihenfolge: Wenn die Reihenfolge, in der Inhalte präsentiert werden, sich auf deren Bedeutung auswirkt, kann die korrekte Leseabfolge programmgesteuert bestimmt werden. (Stufe A)
+  * 2.4.1 Blöcke umgehen: Es gibt einen Mechanismus, um Inhaltsblöcke zu umgehen, die auf verschiedenen Web-Seiten wiederholt werden. (Stufe A)
+  * 2.4.5 Verschiedene Methoden: Es gibt mehr als eine Methode, um eine Web-Seite innerhalb eines Satzes von Web-Seiten zu finden, es sei denn, die Web-Seite ist das Ergebnis oder ein Schritt innerhalb eines Prozesses. (Stufe AA)
+  * 2.4.6 Überschriften und Beschriftungen: Überschriften und Beschriftungen beschreiben ein Thema oder einen Zweck. (Stufe AA)
+  * 2.4.10 Abschnittsüberschriften: Abschnittsüberschriften dienen zur Organisation des Inhalts. (Stufe AAA)
+  * 3.2.3 Konsistente Navigation: Navigationsmechanismen, die auf mehreren Web-Seiten innerhalb eines Satzes von Web-Seiten wiederholt werden, treten jedes Mal, wenn sie wiederholt werden, in der gleichen relativen Reihenfolge auf, es sei denn, eine Änderung wird durch Benutzende ausgelöst. (Stufe AA)
 
 
 ## Vermeiden von störendem Scripting{#avoid-disruptive-scripting}
@@ -663,50 +679,50 @@ Im Rahmen des Formularentwurfsprozesses können Skripte verwendet werden, um ein
 Beachten Sie beim Entwerfen von Skripten für die Barrierefreiheit die folgenden allgemeinen Richtlinien:
 
 * Der Formularinhalt sollte keine optischen Störungen enthalten. Vermeiden Sie beispielsweise Funktionen, die dazu führen, dass Inhalte flackern, blinken oder sich bewegen.
-* Stellen Sie sicher, dass Popup-Fenster nur bei von Benutzenden ausgelösten Aktionen angezeigt werden. Ebenso sollten Sie nicht zulassen, dass sich der aktuelle Fokus des Formulars (die aktuelle Ansicht der Benutzenden) ändert oder Inhalte erneut angezeigt werden, es sei denn, dies wird von den Benutzenden initiiert. Wenn die Benutzenden beispielsweise Felder in der unteren Hälfte des Formulars ausfüllen, sollte der Fokus sich nicht in die obere linke Ecke des Formulars verschieben, es sei denn, die Benutzenden entscheiden sich, zu dieser Stelle zu navigieren.
+* Stellen Sie sicher, dass Popup-Fenster nur bei von Benutzenden ausgelösten Aktionen angezeigt werden. Ebenso sollten Sie nicht zulassen, dass sich der aktuelle Fokus des Formulars (die aktuelle Ansicht der Benutzenden) ändert oder Inhalte erneut angezeigt werden, es sei denn, dies wird von den Benutzenden initiiert. Wenn Sie beispielsweise Felder in der unteren Hälfte des Formulars ausfüllen, sollte der Fokus nicht in die obere linke Ecke des Formulars wechseln, es sei denn, Benutzende entscheiden sich, zu dieser Stelle zu navigieren.
 * Benutzende mit Einschränkungen benötigen möglicherweise mehr Zeit, um Eingaben in Feldern vorzunehmen. Geben Sie keine zeitbasierten Antworten für Eingabefelder an.
-* Beachten Sie, dass Client-seitige Skripte mit Bildschirmlesehilfen und Tastaturen in Konflikt geraten können, wenn das Skript den Fokus der Client-Anwendung ändert. Zum Beispiel können die Ereignisse „change“ und „mouseEnter“ bei Verwendung mit Dropdown-Listen oder Listenfeldern unerwartete Aktionen auslösen. Stellen Sie sicher, dass Ihre Client-seitigen Skripte keine Probleme für Benutzende von Bildschirmlesehilfen und Benutzende, die nur die Tastatur verwenden, verursachen.
-* Benutzende von Hilfstechnologien benötigen manchmal zusätzliche Zeit, um Aufgaben zu erledigen. Zeigen Sie in jedem Fall, in dem eine zeitgesteuerte Routine bald abläuft, eine zugängliche Meldung an, um eine Verlängerung zu ermöglichen. Über JavaScript erstellte Warnfelder können mithilfe von Hilfstechnologien verwendet werden. Es kann auch ein neues Fenster mit einer Meldung angezeigt werden, die die Benutzenden auf eine bevorstehende Zeitüberschreitung hinweist.
+* Beachten Sie, dass Client-seitige Skripte mit Bildschirmlesehilfen und Tastaturen in Konflikt geraten können, wenn das Skript den Fokus der Client-Anwendung ändert. Zum Beispiel können die Ereignisse „change“ und „mouseEnter“ bei Verwendung mit Dropdown-Listen oder Listenfeldern unerwartete Aktionen auslösen. Stellen Sie sicher, dass Ihre Client-seitigen Skripte keine Probleme für Benutzende von Bildschirmlesehilfen und Benutzende verursachen, die nur die Tastatur verwenden.
+* Benutzende von Hilfstechnologien benötigen manchmal zusätzliche Zeit, um Aufgaben zu erledigen. Zeigen Sie in jedem Fall, in dem eine zeitgesteuerte Routine bald abläuft, eine zugängliche Meldung an, um eine Verlängerung zu ermöglichen. Über JavaScript erstellte Warnhinweise können von Hilfstechnologien verwendet werden. Es kann auch ein neues Fenster mit einer Meldung angezeigt werden, die die Benutzenden auf eine bevorstehende Zeitüberschreitung hinweist.
 
 **Verwandte Prüfpunkte**:
 * Section 508 §1194.22
-   * (l) Wenn Seiten Skriptsprachen verwenden, um Inhalte anzuzeigen oder Schnittstellenelemente zu erstellen, werden die vom Skript bereitgestellten Informationen mit funktionalem Text identifiziert, der von Hilfstechnologien gelesen werden kann.
-   * (p) Wenn eine zeitgesteuerte Antwort erforderlich ist, sollten die Benutzenden benachrichtigt werden und ausreichend Zeit erhalten, um anzugeben, dass mehr Zeit benötigt wird.
+  * (l) Wenn Seiten Skriptsprachen verwenden, um Inhalte anzuzeigen oder Schnittstellenelemente zu erstellen, werden die vom Skript bereitgestellten Informationen mit funktionalem Text identifiziert, der von Hilfstechnologien gelesen werden kann.
+  * (p) Wenn eine zeitgesteuerte Antwort erforderlich ist, müssen die Benutzenden benachrichtigt werden und ausreichend Zeit erhalten, um anzugeben, dass mehr Zeit benötigt wird.
 * WCAG 1.0
-   * 1.4 Bei zeitbasierten Multimedia-Präsentationen (z. B. einem Film oder einer Animation) sollten entsprechende Alternativen (z. B. Untertitel oder akustische Beschreibungen der visuellen Spur) mit der Präsentation synchronisiert werden (P1).
-   * 6.2 Stellen Sie sicher, dass Äquivalente für dynamische Inhalte aktualisiert werden, wenn sich der dynamische Inhalt ändert.
-   * 6.3 Stellen Sie sicher, dass die Seiten auch dann nutzbar sind, wenn Skripte, Applets oder andere programmatische Objekte deaktiviert sind oder nicht unterstützt werden. Ist dies nicht möglich, stellen Sie gleichwertige Informationen auf einer alternativ zugänglichen Seite bereit.
-   * 6.5 Stellen Sie sicher, dass dynamischer Inhalt zugänglich ist, oder bieten Sie eine alternative Präsentation bzw. Seite an (P2).
-   * 8.1 Ermöglichen Sie den direkten Zugriff auf programmatische Elemente wie Skripte und Applets oder machen Sie sie mit unterstützenden Technologien kompatibel[. Priorität 1, wenn die Funktionalität wichtig ist und nicht an anderer Stelle dargestellt wird], andernfalls (P2).
-   * 9.3 Geben Sie für Skripte logische Ereignis-Handler statt geräteabhängige Ereignis-Handler an (P2).
-   * 10.1 Solange Benutzeragenten es Benutzenden ermöglichen, erzeugte Fenster zu deaktivieren, sollten Sie keine Pop-ups oder andere Fenster erscheinen lassen und das aktuelle Fenster nicht ändern, ohne die Benutzenden darüber zu informieren.
+  * 1.4 Bei zeitbasierten Multimedia-Präsentationen (z. B. einem Film oder einer Animation) sollten entsprechende Alternativen (z. B. Untertitel oder akustische Beschreibungen der visuellen Spur) mit der Präsentation synchronisiert werden (P1).
+  * 6.2 Stellen Sie sicher, dass Äquivalente für dynamische Inhalte aktualisiert werden, wenn sich der dynamische Inhalt ändert.
+  * 6.3 Stellen Sie sicher, dass die Seiten auch dann nutzbar sind, wenn Skripte, Applets oder andere programmatische Objekte deaktiviert sind oder nicht unterstützt werden. Ist dies nicht möglich, stellen Sie gleichwertige Informationen auf einer alternativ zugänglichen Seite bereit.
+  * 6.5 Stellen Sie sicher, dass dynamische Inhalte zugänglich sind, oder bieten Sie eine alternative Präsentation bzw. Seite an (P2).
+  * 8.1 Ermöglichen Sie den direkten Zugriff auf programmatische Elemente wie Skripte und Applets oder machen Sie sie mit unterstützenden Technologien kompatibel[. Priorität 1, wenn die Funktionalität wichtig ist und nicht an anderer Stelle dargestellt wird], andernfalls (P2).
+  * 9.3 Geben Sie für Skripte logische Ereignis-Handler anstelle von geräteabhängigen Ereignis-Handlern an (P2).
+  * 10.1 Solange Benutzer-Agents es Benutzenden nicht ermöglichen, erzeugte Fenster zu deaktivieren, sollten Sie keine Popups oder andere Fenster erscheinen lassen und das aktuelle Fenster nicht ändern, ohne die Benutzenden darüber zu informieren.
 * WCAG 2.0
-   * 3.2.1 Im Fokus: Wenn eine Komponente in den Fokus rückt, löst dies keine Kontextänderung aus. (Stufe A)
-   * 3.2.2 Bei Eingabe: Das Ändern der Einstellung einer beliebigen Komponente der Benutzerschnittstelle führt nicht automatisch zu einer Änderung des Kontexts, es sei denn, die Benutzenden wurden vor der Verwendung der Komponente über das Verhalten informiert. (Stufe A)
-   * 3.2.5 Änderung auf Anfrage: Kontextänderungen werden nur auf Anfrage von Benutzenden initiiert oder es ist ein Mechanismus verfügbar, um solche Änderungen zu deaktivieren. (Stufe AAA)
+  * 3.2.1 Bei Fokus: Wenn eine Komponente den Fokus erhält, löst dies keine Kontextänderung aus. (Stufe A)
+  * 3.2.2 Bei Eingabe: Das Ändern der Einstellung einer beliebigen Komponente der Benutzeroberfläche führt nicht automatisch zu einer Änderung des Kontexts, es sei denn, die Benutzenden wurden vor der Verwendung der Komponente über das Verhalten informiert. (Stufe A)
+  * 3.2.5 Änderung auf Anfrage: Kontextänderungen werden nur auf Anfrage von Benutzenden initiiert oder es ist ein Mechanismus verfügbar, um solche Änderungen zu deaktivieren. (Stufe AAA)
 
-## Sicherstellen, dass auf alle Audio- und Videoinhalte zugegriffen werden kann{#ensure-audio-video-accessible}
+## Sicherstellen, dass alle Audio- und Videoinhalte zugänglich sind{#ensure-audio-video-accessible}
 
-Wenn Ihre Formulare Audio- oder Videoinhalte enthalten, einschließlich Audio- und Videoclips, müssen Sie sicherstellen, dass diese Inhalte verfügbar sind. Stellen Sie insbesondere sicher, dass die in Formulare integrierten Videoclips Untertitel (manchmal auch als Untertitel bezeichnet) für gehörlose und schwerhörige Benutzende sowie Videobeschreibungen für blinde Benutzende enthalten. Für Audiodateien, die nicht mit Videoinhalten synchronisiert sind, reicht ein einfaches Transkript aus.
-Informationen zu Untertiteln für Flash[basierte Medien finden Sie &#x200B;](/help/forms/using/best-practices-for-creating-forms-in-designer.md)link).
+Wenn Ihre Formulare Audio- oder Videoinhalte enthalten, einschließlich Audio- und Video-Clips, müssen Sie sicherstellen, dass diese Inhalte zugänglich sind. Achten Sie insbesondere darauf, dass in Formulare integrierte Video-Clips Untertitel für gehörlose und schwerhörige Benutzende sowie Videobeschreibungen für blinde Benutzende enthalten. Für Audiodateien, die nicht mit Videoinhalten synchronisiert werden, reicht ein einfaches Transkript aus.
+Informationen zur Bereitstellung von Untertiteln für Flash-basierte Medien finden Sie unter diesem [Link](/help/forms/using/best-practices-for-creating-forms-in-designer.md).
 
 **Verwandte Prüfpunkte**:
 * Section 508 §1194.22
-   * (b) Entsprechende Alternativen für alle multimedialen Darstellungen werden mit der Präsentation synchronisiert.
+  * (b) Entsprechende Alternativen für jede multimediale Präsentation müssen mit der Präsentation synchronisiert werden.
 * WCAG 1.0
-   * 1.1 Geben Sie für jedes nichttextliche Element ein Textäquivalent an (z. B. über „alt“, „longdesc“ oder im Elementinhalt). Dazu gehören Bilder, grafische Darstellungen von Text (einschließlich Symbolen), Imagemap-Bereiche, Animationen (z. B. animierte GIFs), Applets und programmatische Objekte, ASCII-Grafiken, Frames, Skripte, als Aufzählungszeichen verwendete Bilder, Abstände, grafische Schaltflächen, Töne (mit oder ohne Benutzerinteraktion wiedergegeben), eigenständige Audiodateien, Audiospuren von Videos und Video (P1).
-   * 1.3 Bis Benutzeragenten automatisch das Textäquivalent einer visuellen Spur vorlesen können, stellen Sie eine auditive Beschreibung der wichtigen Informationen der visuellen Spur einer Multimedia-Präsentation bereit (P1).
-   * 1.4 Bei zeitbasierten Multimedia-Präsentationen (z. B. einem Film oder einer Animation) sollten entsprechende Alternativen (z. B. Untertitel oder akustische Beschreibungen der visuellen Spur) mit der Präsentation synchronisiert werden (P1).
+  * 1.1 Geben Sie für jedes nichttextliche Element ein Textäquivalent an (z. B. über „alt“, „longdesc“ oder im Elementinhalt). Dazu gehören Bilder, grafische Darstellungen von Text (einschließlich Symbolen), Imagemap-Bereiche, Animationen (z. B. animierte GIFs), Applets und programmatische Objekte, ASCII-Grafiken, Frames, Skripte, als Aufzählungszeichen verwendete Bilder, Abstände, grafische Schaltflächen, Töne (mit oder ohne Benutzerinteraktion wiedergegeben), eigenständige Audiodateien, Audiospuren von Videos und Video (P1).
+  * 1.3 Bis Benutzeragenten automatisch das Textäquivalent einer visuellen Spur vorlesen können, stellen Sie eine auditive Beschreibung der wichtigen Informationen der visuellen Spur einer Multimedia-Präsentation bereit (P1).
+  * 1.4 Bei zeitbasierten Multimedia-Präsentationen (z. B. einem Film oder einer Animation) sollten entsprechende Alternativen (z. B. Untertitel oder akustische Beschreibungen der visuellen Spur) mit der Präsentation synchronisiert werden (P1).
 * WCAG 2.0
-   * 1.2.1 Nur-Audio und Nur-Video (voraufgezeichnet): Für voraufgezeichnete Nur-Audio- und Nur-Video-Medien gilt Folgendes, es sei denn, es handelt sich bei dem Audio- oder Videomaterial um eine Medienalternative für Text und diese ist eindeutig als solche gekennzeichnet: (Stufe A)
-   * 1.2.2 Untertitel (voraufgezeichnet): Für alle voraufgezeichneten Audioinhalte in synchronisierten Medien werden Untertitel bereitgestellt, es sei denn, es handelt sich bei dem Medium um eine Medienalternative für Text, die eindeutig als solche gekennzeichnet ist. (Stufe A)
-   * 1.2.3 Audiobeschreibung oder Medienalternative (voraufgezeichnet): Eine Alternative für zeitbasierte Medien oder eine Audiobeschreibung des voraufgezeichneten Videoinhalts wird für synchronisierte Medien bereitgestellt, es sei denn, es handelt sich bei dem Medium um eine Medienalternative für Text, die eindeutig als solche gekennzeichnet ist. (Stufe A)
-   * 1.2.4 Untertitel (Live): Untertitel werden für alle Live-Audioinhalte in synchronisierten Medien bereitgestellt. (Stufe AA)
-   * 1.2.5 Audiobeschreibung (voraufgezeichnet): Für alle voraufgezeichneten Audioinhalte in synchronisierten Medien wird eine Audiobeschreibung bereitgestellt. (Stufe AA)
-   * 1.2.6 Gebärdensprache (voraufgezeichnet): Für alle voraufgezeichneten Audioinhalte in synchronisierten Medien wird eine Übersetzung in Gebärdensprache bereitgestellt. (Stufe AAA)
-   * 1.2.7 Erweiterte Audiobeschreibung (voraufgezeichnet): Wenn Pausen im Vordergrund-Audio nicht ausreichen, um mit Audiobeschreibungen den Sinn des Videos zu vermitteln, wird für alle vorgezeichneten Videoinhalte in synchronisierten Medien eine erweiterte Audiobeschreibung bereitgestellt. (Stufe AAA)
-   * 1.2.8 Alternative für Medien (voraufgezeichnet): Eine Alternative für zeitbasierte Medien wird für alle voraufgezeichneten synchronisierten Medien und für alle voraufgezeichneten Nur-Video-Medien bereitgestellt. (Stufe AAA)
-   * 1.2.9 Nur-Audio (live): Es wird eine Alternative für zeitbasierte Medien bereitgestellt, die gleichwertige Informationen für live übertragene Audioinhalte bietet. (Stufe AAA)
+  * 1.2.1 Nur-Audio und Nur-Video (voraufgezeichnet): Für voraufgezeichnete Nur-Audio- und Nur-Video-Medien gilt Folgendes, es sei denn, es handelt sich bei dem Audio- oder Videomaterial um eine Medienalternative für Text und diese ist eindeutig als solche gekennzeichnet: (Stufe A)
+  * 1.2.2 Untertitel (voraufgezeichnet): Für alle voraufgezeichneten Audioinhalte in synchronisierten Medien werden Untertitel bereitgestellt, es sei denn, es handelt sich bei dem Medium um eine Medienalternative für Text, die eindeutig als solche gekennzeichnet ist. (Stufe A)
+  * 1.2.3 Audiobeschreibung oder Medienalternative (voraufgezeichnet): Eine Alternative für zeitbasierte Medien oder eine Audiobeschreibung des voraufgezeichneten Videoinhalts wird für synchronisierte Medien bereitgestellt, es sei denn, es handelt sich bei dem Medium um eine Medienalternative für Text, die eindeutig als solche gekennzeichnet ist. (Stufe A)
+  * 1.2.4 Untertitel (Live): Untertitel werden für alle Live-Audioinhalte in synchronisierten Medien bereitgestellt. (Stufe AA)
+  * 1.2.5 Audiobeschreibung (voraufgezeichnet): Für alle voraufgezeichneten Videoinhalte in synchronisierten Medien wird eine Audiobeschreibung bereitgestellt. (Stufe AA)
+  * 1.2.6 Gebärdensprache (voraufgezeichnet): Für alle voraufgezeichneten Audioinhalte in synchronisierten Medien wird eine Übersetzung in Gebärdensprache bereitgestellt. (Stufe AAA)
+  * 1.2.7 Erweiterte Audiobeschreibung (voraufgezeichnet): Wenn Pausen im Vordergrund-Audio nicht ausreichen, um mit Audiobeschreibungen den Sinn des Videos zu vermitteln, wird für alle voraufgezeichneten Videoinhalte in synchronisierten Medien eine erweiterte Audiobeschreibung bereitgestellt. (Stufe AAA)
+  * 1.2.8 Alternative für Medien (voraufgezeichnet): Eine Alternative für zeitbasierte Medien wird für alle voraufgezeichneten synchronisierten Medien und für alle voraufgezeichneten Nur-Video-Medien bereitgestellt. (Stufe AAA)
+  * 1.2.9 Nur-Audio (live): Es wird eine Alternative für zeitbasierte Medien bereitgestellt, die gleichwertige Informationen für live übertragene Audioinhalte bietet. (Stufe AAA)
 
 ## Kennzeichnen natürlicher Sprache und aller Sprachänderungen{#identify-natural-language}
 
@@ -714,9 +730,9 @@ Der Inhalt von Formularen wird von unterstützenden Technologien vorgelesen, die
 
 Wenn der Text (oder Alternativtext) in Ihren Formularen in mehr als einer Sprache vorliegt, müssen Sie die Bereiche Ihres Formulars kennzeichnen, in denen von einer Sprache in eine andere gewechselt wird.
 
-In LiveCycle Designer wird die primäre Sprache festgelegt, indem die Gebietsschema-Eigenschaft des Formulars und die Gebietsschema-Eigenschaft für das Unterformular der obersten Ebene festgelegt werden. Um Änderungen an der Primärsprache zu identifizieren, ändern Sie die Gebietsschema-Eigenschaft für Objekte, die eine andere Sprache als die Sprache des Formulars verwenden.
+In LiveCycle Designer wird die primäre Sprache festgelegt, indem die Eigenschaft „Gebietsschema“ des Formulars und die Eigenschaft „Gebietsschema“ für das Unterformular der obersten Ebene festgelegt werden. Um Änderungen an der Primärsprache zu identifizieren, ändern Sie die Gebietsschema-Eigenschaft für Objekte, die eine andere Sprache als die Sprache des Formulars verwenden.
 
-So legen Sie die Gebietsschema-Eigenschaft eines Formulars fest:
+So legen Sie die Eigenschaft „Gebietsschema“ eines Formulars fest:
 1. Wählen Sie „Datei“ > „Formulareigenschaften“ und dann die Registerkarte „Standard“.
 2. Wählen Sie die entsprechende Sprache für das Formulargebietsschema aus (siehe Abbildung 17).
 3. Klicken Sie auf „OK“.
@@ -725,8 +741,8 @@ So legen Sie die Gebietsschema-Eigenschaft eines Formulars fest:
 
 Abbildung 17: **Ändern der Formulargebietsschema-Einstellungen im Dialogfeld „Formulareigenschaften“**
 
-So legen Sie die Gebietsschema-Eigenschaft des obersten Unterformulars oder eines Objekts fest, das eine andere Sprache erfordert:
-1. Auswählen des obersten Unterformulars oder Objekts in der Designansicht
+So legen Sie die Eigenschaft „Gebietsschema“ des Unterformulars der obersten Ebene oder eines Objekts fest, das eine andere Sprache erfordert:
+1. Auswählen des obersten Unterformulars oder Objekts in der Design-Ansicht
 1. Anzeige der Objektpalette über „Fenster“ > „Objekt“
 1. Wählen Sie in der Objektpalette die Registerkarte „Feld“ aus und wählen Sie in der Liste „Gebietsschema“ die Sprache aus, die für das Objekt verwendet werden soll (siehe Abbildung 18). Wenn Sie verschiedene Gebietsschemaoptionen auf einzelne Objekte anwenden, beachten Sie, dass die Objekte, die sich in Tabellen und Unterformularen befinden, automatisch dieselbe Gebietsschema-Einstellung wie das Tabellen- und Unterformularobjekt erhalten.
 
@@ -736,7 +752,7 @@ Abbildung 18: **Ändern des Gebietsschemas eines Objekts**
 
 **Verwandte Prüfpunkte**:
 * WCAG 1.0
-   * 4.1 Identifizieren Sie Änderungen in der natürlichen Sprache des Textes eines Dokuments und in allen Textäquivalenten (z. B. Bildunterschriften) eindeutig.
+  * 4.1 Identifizieren Sie Änderungen in der natürlichen Sprache des Textes eines Dokuments und in allen Textäquivalenten (z. B. Bildunterschriften) eindeutig.
 * WCAG 2.0
-   * 3.1.1 Sprache der Seite: Die Standardsprache jeder Web-Seite kann programmgesteuert festgelegt werden. (Stufe A)
-   * 3.1.2 Sprache von Teilen: Die menschliche Sprache jedes Abschnitts oder Satzes im Inhalt kann programmgesteuert bestimmt werden, mit Ausnahme von Eigennamen, technischen Begriffen, Wörtern unbestimmter Sprache und Wörtern oder Formulierungen, die Teil der Fachsprache des unmittelbar umgebenden Textes geworden sind. (Stufe AA)
+  * 3.1.1 Sprache der Seite: Die Standardsprache jeder Web-Seite kann programmgesteuert festgelegt werden. (Stufe A)
+  * 3.1.2 Sprache von Teilen: Die menschliche Sprache jedes Abschnitts oder Satzes im Inhalt kann programmgesteuert bestimmt werden, mit Ausnahme von Eigennamen, Fachbegriffen, Wörtern unbestimmter Sprache und Wörtern oder Formulierungen, die Teil des allgemeinen Sprachgebrauchs des unmittelbar umgebenden Textes geworden sind. (Stufe AA)

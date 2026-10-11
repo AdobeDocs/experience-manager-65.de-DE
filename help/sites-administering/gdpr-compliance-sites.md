@@ -9,13 +9,31 @@ exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Developer, Leader, User
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '902'
 ht-degree: 100%
-
 ---
-
 # AEM Sites – Einhaltung der DSGVO{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
@@ -79,9 +97,9 @@ Diese Richtlinien sehen eine standardmäßige Opt-in-Implementierung vor. Deshal
 * Die Opt-out-Komponente sollte immer dann integriert werden, wenn die ContextHub-Komponente vorhanden ist.
 * Die DSGVO-bezogenen Bedingungen für die Website müssen den Website-Besuchenden angezeigt werden, um ihnen Folgendes zu ermöglichen:
 
-   * Akzeptieren der Bedingungen
-   * Ablehnen der Bedingungen
-   * Ändern der vorherigen Auswahl
+  * Akzeptieren der Bedingungen
+  * Ablehnen der Bedingungen
+  * Ändern der vorherigen Auswahl
 
 * Wenn Site-Besuchende die Nutzungsbedingungen der Site akzeptieren, sollte das ContextHub-Opt-out-Cookie entfernt werden:
 
@@ -108,49 +126,49 @@ Um eine Vorschau der von ContextHub verwendeten Persistenz zu sehen, können Ben
 
 * Die Browser-Konsole verwenden, zum Beispiel:
 
-   * Chrome:
+  * Chrome:
 
-      * Öffnen Sie: Entwicklertools > Applikation > Speicher:
+    * Öffnen Sie: Entwicklertools > Applikation > Speicher:
 
-         * Lokaler Speicher => (Website) => ContextHubPersistence
-         * Sitzungsspeicher => (Website) => ContextHubPersistence
-         * Cookies => (Website) => SessionPersistence
+      * Lokaler Speicher => (Website) => ContextHubPersistence
+      * Sitzungsspeicher => (Website) => ContextHubPersistence
+      * Cookies => (Website) => SessionPersistence
 
-   * Firefox:
+  * Firefox:
 
-      * Öffnen Sie: Entwicklertools > Konsole:
+    * Öffnen Sie: Entwicklertools > Konsole:
 
-         * Lokaler Speicher => (Website) => ContextHubPersistence
-         * Sitzungsspeicher => (Website) => ContextHubPersistence
-         * Cookies => (Website) => SessionPersistence
+      * Lokaler Speicher => (Website) => ContextHubPersistence
+      * Sitzungsspeicher => (Website) => ContextHubPersistence
+      * Cookies => (Website) => SessionPersistence
 
-   * Safari:
+  * Safari:
 
-      * Öffnen Sie: Einstellungen > Erweitert > Entwicklungsmenü in der Menüleiste anzeigen
-      * Öffnen Sie: Entwickeln > JavaScript-Konsole anzeigen
+    * Öffnen Sie: Einstellungen > Erweitert > Entwicklungsmenü in der Menüleiste anzeigen
+    * Öffnen Sie: Entwickeln > JavaScript-Konsole anzeigen
 
-         * Konsole => Speicher => Lokaler Speicher => (Website) => ContextHubPersistence
-         * Konsole => Speicher => Sitzungsspeicher => (Website) => ContextHubPersistence
-         * Konsole => Speicher => Cookies => (Website) => ContextHubPersistence
+      * Konsole => Speicher => Lokaler Speicher => (Website) => ContextHubPersistence
+      * Konsole => Speicher => Sitzungsspeicher => (Website) => ContextHubPersistence
+      * Konsole => Speicher => Cookies => (Website) => ContextHubPersistence
 
-   * Internet Explorer:
+  * Internet Explorer:
 
-      * Öffnen Sie „Entwicklertools“ > „Konsole“:
+    * Öffnen Sie „Entwicklertools“ > „Konsole“:
 
-         * localStorage.getItem(&#39;ContextHubPersistence&#39;)
-         * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
-         * document.cookie
+      * localStorage.getItem(&#39;ContextHubPersistence&#39;)
+      * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
+      * document.cookie
 
 * Verwenden Sie die ContextHub-API in der Browser-Konsole:
 
-   * ContextHub bietet die folgenden Datenpersistenzschichten:
+  * ContextHub bietet die folgenden Datenpersistenzschichten:
 
-      * ContextHub.Utils.Persistence.Modes.LOCAL (default)
-      * ContextHub.Utils.Persistence.Modes.SESSION
-      * ContextHub.Utils.Persistence.Modes.COOKIE
-      * ContextHub.Utils.Persistence.Modes.WINDOW
+    * ContextHub.Utils.Persistence.Modes.LOCAL (default)
+    * ContextHub.Utils.Persistence.Modes.SESSION
+    * ContextHub.Utils.Persistence.Modes.COOKIE
+    * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     Der ContextHub-Store definiert, welche Persistenzschicht verwendet wird. Damit der aktuelle Status der Persistenz angezeigt wird, sollten alle Ebenen überprüft werden.
+    Der ContextHub-Store definiert, welche Persistenzschicht verwendet wird. Damit der aktuelle Status der Persistenz angezeigt wird, sollten alle Ebenen überprüft werden.
 
 So zeigen Sie beispielsweise in localStorage gespeicherte Daten an:
 
@@ -158,28 +176,28 @@ Um eine Vorschau der von ContextHub verwendeten Persistenz zu sehen, können Ben
 
 * Verwenden Sie die Browser-Konsole:
 
-   * In Chrome öffnen Sie: Developer Tools > Applikation > Speicher:
+  * In Chrome öffnen Sie: Developer Tools > Applikation > Speicher:
 
-      * Lokaler Speicher => (Website) => ContextHubPersistence
-      * Sitzungsspeicher => (Website) => ContextHubPersistence
-      * Cookies => (Website) => SessionPersistence
+    * Lokaler Speicher => (Website) => ContextHubPersistence
+    * Sitzungsspeicher => (Website) => ContextHubPersistence
+    * Cookies => (Website) => SessionPersistence
 
-   * In Firefox öffnen Sie: Entwicklertools > Speicher:
+  * In Firefox öffnen Sie: Entwicklertools > Speicher:
 
-      * Lokaler Speicher => (Website) => ContextHubPersistence
-      * Sitzungsspeicher => (Website) => ContextHubPersistence
-      * Cookies => (Website) => SessionPersistence
+    * Lokaler Speicher => (Website) => ContextHubPersistence
+    * Sitzungsspeicher => (Website) => ContextHubPersistence
+    * Cookies => (Website) => SessionPersistence
 
 * Verwenden Sie die ContextHub-API in der Browser-Konsole:
 
-   * ContextHub bietet die folgenden Datenpersistenzschichten:
+  * ContextHub bietet die folgenden Datenpersistenzschichten:
 
-      * ContextHub.Utils.Persistence.Modes.LOCAL (default)
-      * ContextHub.Utils.Persistence.Modes.SESSION
-      * ContextHub.Utils.Persistence.Modes.COOKIE
-      * ContextHub.Utils.Persistence.Modes.WINDOW
+    * ContextHub.Utils.Persistence.Modes.LOCAL (default)
+    * ContextHub.Utils.Persistence.Modes.SESSION
+    * ContextHub.Utils.Persistence.Modes.COOKIE
+    * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     Der ContextHub-Store definiert, welche Persistenzschicht verwendet wird. Damit der aktuelle Status der Persistenz angezeigt wird, sollten alle Ebenen überprüft werden.
+    Der ContextHub-Store definiert, welche Persistenzschicht verwendet wird. Damit der aktuelle Status der Persistenz angezeigt wird, sollten alle Ebenen überprüft werden.
 
 So zeigen Sie beispielsweise in localStorage gespeicherte Daten an:
 
@@ -218,7 +236,7 @@ So löschen Sie die ContextHub-Persistenz:
 
 * Um alle ContextHub-Persistenzschichten zu löschen, muss der entsprechende Code für alle Ebenen aufgerufen werden:
 
-   * ContextHub.Utils.Persistence.Modes.LOCAL (default)
-   * ContextHub.Utils.Persistence.Modes.SESSION
-   * ContextHub.Utils.Persistence.Modes.COOKIE
-   * ContextHub.Utils.Persistence.Modes.WINDOW
+  * ContextHub.Utils.Persistence.Modes.LOCAL (default)
+  * ContextHub.Utils.Persistence.Modes.SESSION
+  * ContextHub.Utils.Persistence.Modes.COOKIE
+  * ContextHub.Utils.Persistence.Modes.WINDOW

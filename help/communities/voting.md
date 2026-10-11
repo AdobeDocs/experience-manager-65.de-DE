@@ -9,13 +9,20 @@ exl-id: aa90bf1b-6053-4949-b061-232d72b80682
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '257'
 ht-degree: 1%
-
 ---
-
 # Abstimmung verwenden {#using-voting}
 
 Die `Voting` ist ein nützliches Tool, mit dem Community-Mitglieder ein bestimmtes Inhaltselement bewerten können, z. B. eine Antwort innerhalb einer QnA-Komponente. Bei der Komponente `Voting` wählen die Mitglieder nach oben oder unten, um ihre Meinung anzugeben.
@@ -26,7 +33,7 @@ Um einer Seite im Autorenmodus eine `Voting` Komponente hinzuzufügen, verwenden
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [erforderlichen Client-seitigen &#x200B;](essentials-voting.md#essentials-for-client-side) enthalten sind, wird die `Voting` Komponente wie folgt angezeigt.
+Wenn die [erforderlichen Client-seitigen ](essentials-voting.md#essentials-for-client-side) enthalten sind, wird die `Voting` Komponente wie folgt angezeigt.
 
 ![Abstimmungskomponente](assets/voting-component.png)
 

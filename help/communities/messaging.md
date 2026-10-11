@@ -10,20 +10,27 @@ role: Admin
 exl-id: ee94f093-fd14-49f2-9990-fbe853d924b1
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 0%
-
 ---
-
 # Konfigurieren von Messaging {#configure-messaging}
 
 ## Überblick {#overview}
 
 Die Messaging-Funktion für AEM Communities bietet den angemeldeten Site-Besuchern (Mitgliedern) die Möglichkeit, Nachrichten an einander zu senden, auf die bei der Anmeldung bei der Site zugegriffen werden kann.
 
-Messaging ist für eine Community-Site aktiviert, indem Sie beim Erstellen einer Community[Site ein Kontrollkästchen &#x200B;](/help/communities/sites-console.md).
+Messaging ist für eine Community-Site aktiviert, indem Sie beim Erstellen einer Community[Site ein Kontrollkästchen ](/help/communities/sites-console.md).
 
 Auf dieser Seite finden Sie Informationen zur Standardkonfiguration und zu möglichen Anpassungen.
 
@@ -37,7 +44,7 @@ Für Community-Sites, die mit dem `Communities Sites console` erstellt wurden, g
 
 ### Community Messaging Operations Service {#community-messaging-operations-service}
 
-Wie unten gezeigt, gibt es eine Konfiguration des Services für Sites, die mit dem [Site-Erstellungsassistenten“ erstellt &#x200B;](/help/communities/sites-console.md). Sie können die Konfiguration anzeigen oder bearbeiten, indem Sie auf das Stiftsymbol neben der Konfiguration klicken.
+Wie unten gezeigt, gibt es eine Konfiguration des Services für Sites, die mit dem [Site-Erstellungsassistenten“ erstellt ](/help/communities/sites-console.md). Sie können die Konfiguration anzeigen oder bearbeiten, indem Sie auf das Stiftsymbol neben der Konfiguration klicken.
 
 ![messaging-operations](assets/messaging-operations.png)
 

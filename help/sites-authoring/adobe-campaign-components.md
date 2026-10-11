@@ -11,13 +11,30 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2879'
 ht-degree: 86%
-
 ---
-
 
 # Adobe Campaign-Komponenten{#adobe-campaign-components}
 
@@ -220,20 +237,20 @@ Ziehen Sie ein Bild aus dem Content Finder oder klicken Sie, um zu einem Bild zu
 * **Bildeigenschaften** (**Erweiterte Bildeigenschaften**)
 Hiermit können Sie Folgendes festlegen:
 
-   * **title**
-Der Titel des Blocks, der angezeigt wird, wenn Sie mit der Maus darauf zeigen.
+  * **title**
+    Der Titel des Blocks, der angezeigt wird, wenn Sie mit der Maus darauf zeigen.
 
-   * **ALT-Text**
-Alternativtext, der angezeigt wird, wenn das Bild nicht dargestellt werden kann.
+  * **ALT-Text**
+    Alternativtext, der angezeigt wird, wenn das Bild nicht dargestellt werden kann.
 
-   * **Verknüpfung zu**
-Erstellen Sie einen Link zu Assets oder anderen Seiten innerhalb Ihrer Website.
+  * **Verknüpfung zu**
+    Erstellen Sie einen Link zu Assets oder anderen Seiten innerhalb Ihrer Website.
 
-   * **Beschreibung**
-Eine Beschreibung des Bildes.
+  * **Beschreibung**
+    Eine Beschreibung des Bildes.
 
-   * **size**
-Legt die Höhe und Breite des Bildes fest.
+  * **size**
+    Legt die Höhe und Breite des Bildes fest.
 
 >[!NOTE]
 >
@@ -305,8 +322,8 @@ In der folgenden Tabelle werden die Komponenten beschrieben, die zum Anzeigen un
    <td><p><strong>Beispielfeld</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Kontrollkästchen (Kampagne)</p> </td>
-   <td><p>Boolesch</p> </td>
+   <td><p>Kontrollkästchen (Campaign)</p> </td>
+   <td><p>Boolean (Boolesch)</p> </td>
    <td><p>Kein Kontakt mehr (egal über welchen Kanal)</p> </td>
   </tr>
   <tr>
@@ -315,18 +332,18 @@ In der folgenden Tabelle werden die Komponenten beschrieben, die zum Anzeigen un
    <td><p>Geburtsdatum</p> </td>
   </tr>
   <tr>
-   <td><p>Numerisches Feld (Kampagne)</p> </td>
+   <td><p>Numerisches Feld (Campaign)</p> </td>
    <td><p>Numerisch (byte, short, long, double)</p> </td>
    <td><p>Alter</p> </td>
   </tr>
   <tr>
-   <td><p>Optionsfeld (Kampagne)</p> </td>
+   <td><p>Optionsfeld (Campaign)</p> </td>
    <td><p>Byte mit zugehörigen Werten</p> </td>
    <td><p>Geschlecht</p> </td>
   </tr>
   <tr>
-   <td><p>Textfeld (Kampagne)</p> </td>
-   <td><p>string</p> </td>
+   <td><p>Textfeld (Campaign)</p> </td>
+   <td><p>Zeichenfolge</p> </td>
    <td><p>E-Mail</p> </td>
   </tr>
  </tbody>
