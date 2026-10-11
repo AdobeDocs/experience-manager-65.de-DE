@@ -30,4 +30,4 @@ ht-degree: 62%
 
 Adobe Commerce verfügt über eine von Adobe AI unterstützte Empfehlungs-Engine. Erfahren Sie, wie Sie diese Produktempfehlungen dynamisch in eine Adobe Experience Manager (AEM)-Storefront einfügen.
 
->[!VIDEO](https://video.tv.adobe.com/v/340130/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343071/?captions=ger&learn=on)

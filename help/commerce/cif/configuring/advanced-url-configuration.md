@@ -34,7 +34,7 @@ ht-degree: 99%
 
 Die [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) ermöglichen erweiterte Konfigurationen zum Anpassen der URLs für Produkt- und Kategorieseiten. Bei vielen Implementierungen werden diese URLs zwecks Suchmaschinen-Optimierung (Search Engine Optimization, SEO) angepasst. Im folgenden Video wird beschrieben, wie Sie den `UrlProvider`-Service und die Funktionen der [Sling-Zuordnung](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) konfigurieren können, um die URLs für Produkt- und Kategorieseiten anzupassen.
 
->[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/38581/?captions=ger&quality=12)
 
 ## Konfiguration {#configuration}
 
