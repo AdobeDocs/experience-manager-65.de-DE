@@ -41,7 +41,7 @@ Informationen zur Konfiguration von OAuth-Diensten für neue Benutzende finden S
 
 >[!NOTE]
 >
->Bei Bedarf können Sie ein Support-Ticket einreichen, indem Sie dem [Support-Prozess](https://experienceleague.adobe.com/?lang=de&support-tab=home#support) folgen.
+>Bei Bedarf können Sie ein Support-Ticket einreichen, indem Sie dem [Support-Prozess](https://experienceleague.adobe.com/de?lang=de&support-tab=home#support) folgen.
 
 ## OAuth-Konfiguration für die vorhandenen AMS-Benutzenden {#oauth-config-new-ams-users}
 
@@ -58,7 +58,7 @@ Eine OAuth-Konfiguration erfordert die folgenden Voraussetzungen:
 
 ### OAuth-Konfiguration für die vorhandenen AMS- und On-Premise-Benutzenden {#steps-config-oauth-onprem}
 
-Die folgenden Schritte können von Systemadmins in **CRXDE** ausgeführt werden. AMS-Kundschaft kann sich an den Adobe-Support wenden oder ein Support-Ticket einreichen, indem der [Support-Prozess](https://experienceleague.adobe.com/?lang=de&support-tab=home#support) befolgt wird.
+Die folgenden Schritte können von Systemadmins in **CRXDE** ausgeführt werden. AMS-Kundschaft kann sich an den Adobe-Support wenden oder ein Support-Ticket einreichen, indem der [Support-Prozess](https://experienceleague.adobe.com/de?lang=de&support-tab=home#support) befolgt wird.
 
 1. Fügen Sie in `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config` die folgenden Eigenschaften hinzu oder aktualisieren Sie sie:
 
@@ -151,7 +151,7 @@ Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profi
 
    >[!NOTE]
    >
-   >Die als [!UICONTROL Service-URL] angegebene URL ist über den Browser nicht erreichbar und erzeugt einen 404-Fehler. Die Konfiguration funktioniert problemlos mit demselben Wert für den [!UICONTROL Service-URL]-Parameter. Informationen zum Gesamtstatus und Wartungszeitplan für den Service finden Sie unter [https://status.adobe.com](https://status.adobe.com).
+   >Die als [!UICONTROL Service-URL] angegebene URL ist über den Browser nicht erreichbar und erzeugt einen 404-Fehler. Die Konfiguration funktioniert problemlos mit demselben Wert für den [!UICONTROL Service-URL]-Parameter. Informationen zum Gesamtstatus und Wartungszeitplan für den Service finden Sie unter [https://status.adobe.com/de-de](https://status.adobe.com/de-de).
 
 1. Klicken Sie auf **[!UICONTROL Öffentliches Zertifikat für OAuth-Integration herunterladen]** und laden Sie die öffentliche Zertifikatdatei `AEM-SmartTags.crt` herunter. Außerdem müssen Sie dieses Zertifikat nicht mehr in die Adobe Developer Console hochladen.
 

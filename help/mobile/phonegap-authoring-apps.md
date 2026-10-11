@@ -108,7 +108,7 @@ Alternativ können Sie die Gerätequelle herunterladen, um lokal über die Phone
 >
 >Weitere [&#x200B; finden Sie unter „Konfigurieren der Adobe Mobile Services](/help/mobile/configure-adobe-mobile-cloud-service.md)Cloud Service&quot;.
 
-AEM Mobile lässt sich über [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html) (AMS) mit Adobe Analytics integrieren.
+AEM Mobile lässt sich über [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=de) (AMS) mit Adobe Analytics integrieren.
 
 Die Kachel Control Center **Metriken** zeigt Zusammenfassungsanalysen an, die von AMS für Ihre Anwendung abgerufen wurden. Sie können einen Drilldown im Analytics-Dashboard durchführen, indem Sie unten rechts auf &quot;…“ klicken.
 
