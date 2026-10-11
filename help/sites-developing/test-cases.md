@@ -97,7 +97,7 @@ Bei den meisten Projekten installieren Sie den Dispatcher für Caching und Laste
 
 Das Testen ist schwierig (Caching tritt auf unterschiedlichen Ebenen und in verschiedenen Orten auf) und muss auf Blackbox-Basis vorgenommen werden. Die zu testenden Hauptaspekte sind:
 
-* ****
+* **&#x200B;**
 Stellt sicher, dass dem Website-Besucher Inhaltsaktualisierungen angezeigt werden.
 
 * **Continuity**

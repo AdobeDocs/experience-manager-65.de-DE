@@ -46,7 +46,7 @@ Beispiel-Layout der Symbolleiste
 
 Adaptive Formulare bieten einen Satz vordefinierter Layouts:
 
-![Standardmäßig verfügbare Symbolleistenlayouts ](assets/toolbar1.png)
+![Standardmäßig verfügbare Symbolleistenlayouts &#x200B;](assets/toolbar1.png)
 
 Standardmäßig verfügbare Symbolleisten-Layouts
 

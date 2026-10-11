@@ -76,8 +76,8 @@ Informationen zu weiteren optionalen Konfigurationsaufgaben finden Sie unter [Op
    * Registerkarte [PDF](#pdf-tab)
    * Registerkarte [Illustrator](#illustrator-tab)
 
-   ![ Seite „Allgemeine Dynamic Media-Einstellungen“](/help/assets/assets-dm/dm-general-settings.png)
-   *Seite „Allgemeine Dynamic Media-Einstellungen“, auf der die Registerkarte **[!UICONTROL Bildbearbeitung]**ausgewählt ist.*<br><br>
+   ![&#x200B; Seite „Allgemeine Dynamic Media-Einstellungen“](/help/assets/assets-dm/dm-general-settings.png)
+   *Seite „Allgemeine Dynamic Media-Einstellungen“, auf der die Registerkarte **[!UICONTROL Bildbearbeitung]**&#x200B;ausgewählt ist.*<br><br>
 
 1. Wenn Sie fertig sind, wählen Sie in der oberen rechten Ecke der Seite **[!UICONTROL Speichern]** aus.
 

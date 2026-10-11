@@ -54,12 +54,12 @@ Je nachdem, welche Projektvorlage Sie auswählen, stehen Ihnen bestimmte Workflo
 | Launch anfragen | x |  |  |  |
 | Landingpage anfragen | x |  |  |  |
 | E-Mail anfragen | x |  |  |  |
-| DAM Create Language Copy&amp;ast; |  |  |  | x |
-| DAM - Erstellen und Übersetzen von Sprachkopien&amp;ast; |  |  |  | x |
+| DAM Create Language Copy&ast; |  |  |  | x |
+| DAM - Erstellen und Übersetzen von Sprachkopien&ast; |  |  |  | x |
 
 >[!NOTE]
 >
->&amp;ast; Diese Workflows werden in Projekten nicht über die Kachel **Workflow** gestartet. Weitere Informationen finden Sie unter [Erstellen von Sprachkopien für Assets](/help/sites-administering/tc-manage.md).
+>&ast; Diese Workflows werden in Projekten nicht über die Kachel **Workflow** gestartet. Weitere Informationen finden Sie unter [Erstellen von Sprachkopien für Assets](/help/sites-administering/tc-manage.md).
 
 Das Starten und Abschließen eines Workflows ist unabhängig vom gewählten Workflow immer gleich. Nur die Schritte ändern sich.
 

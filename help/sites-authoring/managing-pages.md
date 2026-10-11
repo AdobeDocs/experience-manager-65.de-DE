@@ -180,7 +180,7 @@ Eine Liste der Vorlagen, die beim Generieren der neuen Seite verwendet werden k�
 
 ### Komponenten {#components}
 
-Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM ist mit einer Reihe [ Komponenten ausgestattet, ](/help/sites-authoring/default-components-console.md) umfangreiche Funktionen bieten. Dazu gehören:
+Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM ist mit einer Reihe [&#x200B; Komponenten ausgestattet, &#x200B;](/help/sites-authoring/default-components-console.md) umfangreiche Funktionen bieten. Dazu gehören:
 
 * Text
 * Bild

@@ -104,7 +104,7 @@ Erstellen Sie einen Benutzer in *author*, dem die Rolle Community-Administrator 
   * **[!UICONTROL ID]**: sirius
   * **[!UICONTROL E-Mail-]**: sirius.nilson@mailinator.com
   * **[!UICONTROL Kennwort:]** password
-  * **[!UICONTROL Kennwort bestätigen&amp;ast;]**: Kennwort
+  * **[!UICONTROL Kennwort bestätigen&ast;]**: Kennwort
   * **[!UICONTROL Vorname]**: Sirius
   * **[!UICONTROL Nachname]**: Nilson
 
@@ -162,4 +162,4 @@ Es wird empfohlen, jedoch optional, [MSRP](msrp.md) (MongoDB) als [Common Store]
 
 Anweisungen finden Sie unter [Einrichten von MongoDB für Demo](demo-mongo.md).
 
-Standardmäßig führt die Installation der Authoring- und Publishing-AEM-Instanzen dazu, dass benutzergenerierte Inhalte (User Generated Content, UGC) im [JCR-Tar-Speicher) gespeichert ](../../help/sites-deploying/platform.md), auf den über [JSRP](jsrp.md) zugegriffen wird. JSRP ist kein gewöhnlicher Speicher, was bedeutet, dass UGC nur in der Instanz sichtbar ist, in der sie eingegeben wurde. Normalerweise wird der benutzergenerierte Inhalt (UGC) in einer Veröffentlichungsinstanz eingegeben und wäre in der Autorenumgebung nicht sichtbar, was dazu führt, dass alle Moderationsaufgaben die Veröffentlichungsinstanz verwenden müssen.
+Standardmäßig führt die Installation der Authoring- und Publishing-AEM-Instanzen dazu, dass benutzergenerierte Inhalte (User Generated Content, UGC) im [JCR-Tar-Speicher) gespeichert &#x200B;](../../help/sites-deploying/platform.md), auf den über [JSRP](jsrp.md) zugegriffen wird. JSRP ist kein gewöhnlicher Speicher, was bedeutet, dass UGC nur in der Instanz sichtbar ist, in der sie eingegeben wurde. Normalerweise wird der benutzergenerierte Inhalt (UGC) in einer Veröffentlichungsinstanz eingegeben und wäre in der Autorenumgebung nicht sichtbar, was dazu führt, dass alle Moderationsaufgaben die Veröffentlichungsinstanz verwenden müssen.

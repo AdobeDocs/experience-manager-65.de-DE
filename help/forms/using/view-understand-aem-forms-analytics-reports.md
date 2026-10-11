@@ -142,7 +142,7 @@ Die Tabellen „Browser-Verteilung“, „Betriebssystemverteilung“ und „Spr
 
 Um die Analysedaten weiter zu filtern, können Sie auf einen Eintrag in einer der Tabellen klicken. Wenn Sie beispielsweise in der Tabelle „Browser-Verteilung“ auf Google Chrome klicken, wird der Bericht erneut mit den für den Google Chrome-Browser relevanten Daten wie folgt gerendert:
 
-![Filter angewendet auf Analytics-Bericht - Google Chrome ](assets/filter-1.png)
+![Filter angewendet auf Analytics-Bericht - Google Chrome &#x200B;](assets/filter-1.png)
 
 Wenn Sie den Bereichsbericht anzeigen, nachdem Sie einen Filter angewendet haben, werden die Bereichsberichtdaten auch in Übereinstimmung mit dem angewendeten Filter angezeigt.
 

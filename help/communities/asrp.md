@@ -116,7 +116,7 @@ In der AEM-Autoreninstanz:
 
 **`AEM Communities Extension`** wurde zuvor in AEM 6.0 Social Communities as a Cloud Service eingeführt. Ab AEM 6.1 Communities ist keine Cloud-Konfiguration erforderlich. Wählen Sie einfach ASRP in der [Speicherkonfigurationskonsole](/help/communities/srp-config.md).
 
-Aufgrund der neuen Speicherstruktur ist es erforderlich, beim Upgrade von Social Communities [ Communities die ](/help/communities/upgrade.md#adobe-cloud-storage) „Upgrade“ zu befolgen.
+Aufgrund der neuen Speicherstruktur ist es erforderlich, beim Upgrade von Social Communities [&#x200B; Communities die &#x200B;](/help/communities/upgrade.md#adobe-cloud-storage) „Upgrade“ zu befolgen.
 
 ## Verwalten von Benutzerdaten {#managing-user-data}
 

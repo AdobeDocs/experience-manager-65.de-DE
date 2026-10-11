@@ -95,7 +95,7 @@ Einige Best Practices für Communities sind hier beschrieben:
 
 |  |  |  |
 |---|---|---|
-| Best Practices für die Arbeit mit benutzergenerierten Inhalten | [Kodierungsrichtlinien ](/help/communities/code-guide.md) | Richtlinien für die Entwicklung von flexiblem, portablem Code für das [Social Component Framework](/help/communities/scf.md) (SCF). |
+| Best Practices für die Arbeit mit benutzergenerierten Inhalten | [Kodierungsrichtlinien &#x200B;](/help/communities/code-guide.md) | Richtlinien für die Entwicklung von flexiblem, portablem Code für das [Social Component Framework](/help/communities/scf.md) (SCF). |
 | Beispielverwendung von Community-Komponenten | [Handbuch der Community-Komponenten](/help/communities/components-guide.md) | Ein interaktives Entwicklungswerkzeug. |
 
 ## Tooling/HTL {#tooling-htl}

@@ -64,7 +64,7 @@ Zwei Beispiele:
 
 Für beide kann die Bereitstellung auf einem beliebigen OAK-Mikrokernel basieren.
 
-Bei der Auswahl des geeigneten gemeinsamen Speichers sollten die individuellen [ (](working-with-srp.md#characteristics-of-srp-options)) sorgfältig berücksichtigt werden.
+Bei der Auswahl des geeigneten gemeinsamen Speichers sollten die individuellen [&#x200B; (](working-with-srp.md#characteristics-of-srp-options)) sorgfältig berücksichtigt werden.
 
 Weitere Informationen zu Oak-Mikrokernels finden Sie unter [Empfohlene Bereitstellungen](../../help/sites-deploying/recommended-deploys.md).
 

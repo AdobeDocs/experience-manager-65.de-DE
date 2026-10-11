@@ -45,7 +45,7 @@ und ziehen Sie sie auf eine Seite, z. B. eine Position relativ zur Funktion, die
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen Client-seitigen ](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) enthalten sind, wird die `Calendar` Komponente wie folgt angezeigt.
+Wenn die [erforderlichen Client-seitigen &#x200B;](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) enthalten sind, wird die `Calendar` Komponente wie folgt angezeigt.
 
 ![calendar-component](assets/calendar-component.png)
 
@@ -99,7 +99,7 @@ Geben **auf der Registerkarte** Einstellungen“ an, ob Tags auf Kalendereinträ
 
 * **Max. Größe der angehängten Bilddatei**
 
-  Nur relevant, wenn Datei-Uploads zulassen aktiviert ist. Maximale Anzahl an Byte, die eine hochgeladene Bilddatei aufweisen darf. Der Standardwert lautet 2097152** ** (2 MB).
+  Nur relevant, wenn Datei-Uploads zulassen aktiviert ist. Maximale Anzahl an Byte, die eine hochgeladene Bilddatei aufweisen darf. Der Standardwert lautet 2097152 **&#x200B; ** (2 MB).
 
 * **Zulässige Cover-Bildtypen**
 
@@ -127,7 +127,7 @@ Geben **auf der Registerkarte** Einstellungen“ an, ob Tags auf Kalendereinträ
 
 * **Erlauben Sie vorgestellte Inhalte**
 
-  Wenn diese Option aktiviert ist, kann die Idee als [vorgestellter Inhalt“ identifiziert ](/help/communities/featured.md). Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, kann die Idee als [vorgestellter Inhalt“ identifiziert &#x200B;](/help/communities/featured.md). Standard ist deaktiviert.
 
 Geben **auf der Registerkarte** Benutzermoderation) an, wie die veröffentlichten Themen und Antworten (benutzergenerierte Inhalte) verwaltet werden sollen. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
@@ -171,7 +171,7 @@ Auf der Registerkarte **Tag** sind die Tags, die angewendet werden können, wenn
 
 * **Vorschlagslimit**
 
-  Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht. Der Standardwert ist **-**1 (keine Beschränkungen).
+  Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht. Der Standardwert ist **-**&#x200B;1 (keine Beschränkungen).
 
 >[!NOTE]
 >

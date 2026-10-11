@@ -142,7 +142,7 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynam
    * Ziehen Sie den Mauszeiger über das Video, um den Anzeigewinkel der statischen Szene zu ändern.
    * Wählen Sie die Schaltfläche **[!UICONTROL Play]**, um die Wiedergabe des Videos zu starten. Ziehen Sie während der Wiedergabe des Videos den Mauszeiger über das Video, um den Anzeigewinkel zu ändern.
 
-   ![Screenshot der im Weltraum schwebenden internationalen Weltraumstation mit Erde und Sonne im Hintergrund ](assets/6_5_360video-preview-video360-social.png)*Ein 360-Grad-Screenshot.*
+   ![Screenshot der im Weltraum schwebenden internationalen Weltraumstation mit Erde und Sonne im Hintergrund &#x200B;](assets/6_5_360video-preview-video360-social.png)*Ein 360-Grad-Screenshot.*
 
    * Wählen Sie in der Viewer-Liste **[!UICONTROL Video360VR]** aus.
 

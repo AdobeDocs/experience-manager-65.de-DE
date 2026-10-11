@@ -34,7 +34,7 @@ Einzelheiten zur Einrichtung der Funktion finden Sie unter
 
 Diese Seite enthält zusätzliche technische Details :
 
-* So zeigen [ ein Badge ](#displaying-badges) Bild oder Text an
+* So zeigen [&#x200B; ein Badge &#x200B;](#displaying-badges) Bild oder Text an
 * Anleitung zum Aktivieren der umfangreichen [Debug-Protokollierung](#debug-log-for-scoring-and-badging)
 * Wie Sie [UGC) zugreifen](#ugc-for-scoring-and-badging) im Zusammenhang mit der Bewertung und dem Badging
 
@@ -129,11 +129,11 @@ So zeigen Sie Protokolleinträge an:
 
 Der UGC für die Bewertung und das Badging kann angezeigt werden, wenn das ausgewählte SRP entweder JSRP oder MSRP, aber nicht ASRP ist. (Wenn Sie mit diesen Begriffen nicht vertraut sind, finden Sie weitere Informationen unter [Community-](/help/communities/working-with-srp.md) und [Speicherressourcenanbieter - Übersicht](/help/communities/srp.md).)
 
-Die Beschreibungen für den Zugriff auf Scoring- und Badging-Daten verwenden JSRP, da der UGC mit [CRXDE Lite leicht zugänglich ](/help/sites-developing/developing-with-crxde-lite.md).
+Die Beschreibungen für den Zugriff auf Scoring- und Badging-Daten verwenden JSRP, da der UGC mit [CRXDE Lite leicht zugänglich &#x200B;](/help/sites-developing/developing-with-crxde-lite.md).
 
 **JSRP auf Author**: Experimentieren in der Authoring-Umgebung führt zu UGC, der nur in der Authoring-Umgebung sichtbar ist.
 
-**JSRP bei der Veröffentlichung**: Entsprechend ist es beim Testen in der Veröffentlichungsumgebung erforderlich, auf CRXDE Lite mit Administratorrechten für eine Veröffentlichungsinstanz zuzugreifen. Wenn die Veröffentlichungsinstanz im [Produktionsmodus) ausgeführt ](/help/sites-administering/production-ready.md) (Ausführungsmodus „nosamplecontent„), muss &quot;[&quot; aktiviert ](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP bei der Veröffentlichung**: Entsprechend ist es beim Testen in der Veröffentlichungsumgebung erforderlich, auf CRXDE Lite mit Administratorrechten für eine Veröffentlichungsinstanz zuzugreifen. Wenn die Veröffentlichungsinstanz im [Produktionsmodus) ausgeführt &#x200B;](/help/sites-administering/production-ready.md) (Ausführungsmodus „nosamplecontent„), muss &quot;[&quot; aktiviert &#x200B;](/help/sites-administering/enabling-crxde-lite.md).
 
 Der Basisspeicherort von UGC auf JSRP ist `/content/usergenerated/asi/jcr/`.
 

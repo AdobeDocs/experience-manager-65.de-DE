@@ -25,7 +25,7 @@ ht-degree: 7%
 ---
 # Tutorials {#tutorials}
 
-Dies sind Beispiele, die Ihnen beim Lernen und Arbeiten mit Adobe Experience Manager (AEM) 6.1 Communities (Social Component [ Framework (SCF)) helfen](scf.md).
+Dies sind Beispiele, die Ihnen beim Lernen und Arbeiten mit Adobe Experience Manager (AEM) 6.1 Communities (Social Component [&#x200B; Framework (SCF)) helfen](scf.md).
 
 ## Client-seitige Anpassung {#client-side-customization}
 
@@ -67,11 +67,11 @@ Beispielcode ist im Repository [Adobe Experience Cloud GitHub](https://github.co
 
 ## Demo-Benutzer {#demo-users}
 
-Das Geometrixx-Beispielpaket enthält Demobenutzende. Oft besteht ein Unterschied im Erlebnis zwischen Besucher (nicht angemeldet) und Mitglied (angemeldet). Und solange die Geometrixx-Beispielpakete installiert bleiben, können Sie diese Benutzenden verwenden, um beim Erkunden mit dem [Community-Komponentenhandbuch“ einen angemeldeten Status ](components-guide.md) simulieren.
+Das Geometrixx-Beispielpaket enthält Demobenutzende. Oft besteht ein Unterschied im Erlebnis zwischen Besucher (nicht angemeldet) und Mitglied (angemeldet). Und solange die Geometrixx-Beispielpakete installiert bleiben, können Sie diese Benutzenden verwenden, um beim Erkunden mit dem [Community-Komponentenhandbuch“ einen angemeldeten Status &#x200B;](components-guide.md) simulieren.
 
 Eine vollständige Liste der Demo-Benutzer finden Sie in der Leiste unter **[!UICONTROL >]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Sicherheit > Benutzer]**. Oder verwenden Sie die klassische Benutzeroberfläche [Sicherheitskonsole](http://localhost:4502/useradmin) zum Verwalten von Benutzern und Gruppen.
 
-Wenn eine [Community-Site erstellt wurde](getting-started.md) ist es möglich, Demo-Benutzer ihren [Community-Benutzergruppen“ ](users.md).
+Wenn eine [Community-Site erstellt wurde](getting-started.md) ist es möglich, Demo-Benutzer ihren [Community-Benutzergruppen“ &#x200B;](users.md).
 
 ***Benutzer-ID* / *Kennwort***:
 

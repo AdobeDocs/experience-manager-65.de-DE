@@ -58,7 +58,7 @@ Ein Administrator muss eine Konfiguration nur einmal oder sehr selten erstellen,
 
 1. Melden Sie sich bei AEM an und wählen Sie im Hauptmenü **Tools > Allgemein > Konfigurations-Browser** aus.
 1. Geben Sie einen **Titel** für Ihre Konfiguration ein.
-   * Der Name wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen ](/help/sites-developing/naming-conventions.md). Er wird zum Knotennamen im Repository.
+   * Der Name wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen &#x200B;](/help/sites-developing/naming-conventions.md). Er wird zum Knotennamen im Repository.
 1. Überprüfen Sie die folgenden Optionen:
    * **Inhaltsfragmentmodelle**
    * **Persistente GraphQL-Abfragen**

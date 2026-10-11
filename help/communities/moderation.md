@@ -26,7 +26,7 @@ ht-degree: 2%
 ---
 # Moderationskonsole {#moderation-console}
 
-In AEM Communities ist [ Massenmoderation von Community](/help/communities/moderate-ugc.md)Inhalten sowohl in der Authoring- als auch in der Publishing-Umgebung durch Administratoren und Community-Moderatoren (als Moderatoren zugewiesene vertrauenswürdige Community-Mitglieder) möglich.
+In AEM Communities ist [&#x200B; Massenmoderation von Community](/help/communities/moderate-ugc.md)Inhalten sowohl in der Authoring- als auch in der Publishing-Umgebung durch Administratoren und Community-Moderatoren (als Moderatoren zugewiesene vertrauenswürdige Community-Mitglieder) möglich.
 
 Admins und Community-Moderatoren können auch [In-Context-Moderation](/help/communities/in-context.md) in der Veröffentlichungsumgebung durchführen.
 
@@ -79,7 +79,7 @@ Abgesehen von der linken Navigationsleiste (die auf der Autoreninstanz, aber nic
 
 ### Navigationsleiste oben {#top-navigation-bar}
 
-Die obere Navigationsleiste ist für alle Konsolen konstant. Weitere Informationen finden Sie unter [Grundlegende ](/help/sites-authoring/basic-handling.md).
+Die obere Navigationsleiste ist für alle Konsolen konstant. Weitere Informationen finden Sie unter [Grundlegende &#x200B;](/help/sites-authoring/basic-handling.md).
 
 ### Symbolleiste {#toolbar}
 

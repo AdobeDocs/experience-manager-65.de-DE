@@ -72,7 +72,7 @@ Im nächsten Abschnitt werden diese Integrationsstufen genauer untersucht.
 
 >[!NOTE]
 >
->Sie können die Webshop-SPA natürlich auch als voll funktionsfähige AEM-SPA (mit [ AEM-SPA-Editor-Framework) neu implementieren](/help/sites-developing/spa-walkthrough.md) Wenn Sie bereits über AEM verfügen und einen Webshop oder eine andere SPA erstellen möchten, ist dies die empfohlene Methode, sie liegt jedoch außerhalb des Bereichs dieses Dokuments.
+>Sie können die Webshop-SPA natürlich auch als voll funktionsfähige AEM-SPA (mit [&#x200B; AEM-SPA-Editor-Framework) neu implementieren](/help/sites-developing/spa-walkthrough.md) Wenn Sie bereits über AEM verfügen und einen Webshop oder eine andere SPA erstellen möchten, ist dies die empfohlene Methode, sie liegt jedoch außerhalb des Bereichs dieses Dokuments.
 
 ## SPA-Integrationsstufen {#integration-levels}
 

@@ -49,7 +49,7 @@ Mithilfe der [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.h
 
 Aaron McDonald (`aaron.mcdonald@mailinator.com`) wurde als vertrauenswürdiges Community-Mitglied identifiziert, indem er bei der Erstellung der Website der Gruppe community-engage-Moderators hinzugefügt wurde.
 
-Rebekah Larsen (`rebekah.larsen@trashymail.com`) kann über die „Mitglieder-Konsole“ als Mitglied der Community[Engage-Members-Gruppe ](members.md) werden.
+Rebekah Larsen (`rebekah.larsen@trashymail.com`) kann über die „Mitglieder-Konsole“ als Mitglied der Community[Engage-Members-Gruppe &#x200B;](members.md) werden.
 
 Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](users.md).
 

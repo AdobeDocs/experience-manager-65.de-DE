@@ -203,7 +203,7 @@ Verwenden Sie zum Konfigurieren der Integration die Werte der Felder [!UICONTROL
    | [!UICONTROL Diensteinstellungen für Smart-Tagging in Assets] | [!DNL Adobe Developer Console] Integrationsfelder |
    |--- |--- |
    | [!UICONTROL API-Schlüssel] | [!UICONTROL CLIENT-ID] |
-   | [!UICONTROL ID des technischen Kontos] | [!UICONTROL  ID DES TECHNISCHEN KONTOS] |
+   | [!UICONTROL ID des technischen Kontos] | [!UICONTROL &#x200B; ID DES TECHNISCHEN KONTOS] |
    | [!UICONTROL Organisations-ID] | [!UICONTROL ORGANISATIONS-ID] |
    | [!UICONTROL Client-Geheimnis] | [!UICONTROL CLIENT-GEHEIMNIS] |
 

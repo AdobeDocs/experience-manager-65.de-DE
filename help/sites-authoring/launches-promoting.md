@@ -47,7 +47,7 @@ Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichu
 
 >[!NOTE]
 >
->Nach dem Weiterleiten der Launch-Seiten zum Ziel (**Produktion**) können Sie die **Produktionsseiten** als Entität aktivieren (um den Prozess schneller zu gestalten). Fügen Sie die Seiten einem Workflow-Paket hinzu und verwenden Sie es als Payload für einen Workflow, der ein Paket mit Seiten aktiviert. Sie müssen das Workflow-Paket erstellen, bevor Sie den Launch weiterleiten. Siehe [Bearbeiten weitergeleiteter Seiten mit einem AEM-Workflow ](#processing-promoted-pages-using-aem-workflow)
+>Nach dem Weiterleiten der Launch-Seiten zum Ziel (**Produktion**) können Sie die **Produktionsseiten** als Entität aktivieren (um den Prozess schneller zu gestalten). Fügen Sie die Seiten einem Workflow-Paket hinzu und verwenden Sie es als Payload für einen Workflow, der ein Paket mit Seiten aktiviert. Sie müssen das Workflow-Paket erstellen, bevor Sie den Launch weiterleiten. Siehe [Bearbeiten weitergeleiteter Seiten mit einem AEM-Workflow &#x200B;](#processing-promoted-pages-using-aem-workflow)
 
 >[!CAUTION]
 >

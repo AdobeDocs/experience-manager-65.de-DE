@@ -76,7 +76,7 @@ Wenn Sie ein Zertifikat testen, lädt die Benutzerverwaltung die Zertifikatüber
    Sie können folgende Zeichen in dem regulären Ausdruck verwenden:
 
    * . (alle Zeichen)
-   * &amp;ast; (0 oder mehr Vorkommen)
+   * &ast; (0 oder mehr Vorkommen)
    * () (die Gruppe in Klammern angeben)
    * \ (wird verwendet, um aus einem Regex-Zeichen ein reguläres Zeichen zu machen)
    * $n (wird verwendet, um auf die n-te Gruppe zu verweisen)
@@ -85,21 +85,21 @@ Wenn Sie ein Zertifikat testen, lädt die Benutzerverwaltung die Zertifikatüber
 
    * So extrahieren Sie „Alex Pink“ aus „Alex Pink (Authentifizierung)“:
 
-     **Regex:** (.&amp;ast;) \(Authentifizierung\)
+     **Regex:** (.&ast;) \(Authentifizierung\)
 
    * So extrahieren Sie „Alex Pink“ aus „Alex (Authentifizierung) Pink“:
 
-     **Regex:** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
+     **Regex:** (.&ast;)\(Authentication\) (.&ast;)
 
    * So extrahieren Sie „Pink Alex“ aus „Alex (Authentifizierung) Pink“:
 
-     **Regex:** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
+     **Regex:** (.&ast;)\(Authentication\) (.&ast;)
 
      Benutzerdefinierte Reihenfolge: $2 $1 (zweite Gruppe zurückgeben, verkettet mit der ersten Gruppe, erfasst durch Leerzeichen)
 
    * So extrahieren Sie &quot;apink@sampleorg.com&quot; aus „smtp:apink@sampleorg.com“
 
-     **Regex:** smtp:(.&amp;ast;)
+     **Regex:** smtp:(.&ast;)
 
    Weitere Informationen zur Verwendung regulärer Ausdrücke finden Sie im [Java-Tutorial zu regulären Ausdrücken](https://java.sun.com/docs/books/tutorial/essential/regex/).
 

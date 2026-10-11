@@ -36,7 +36,7 @@ Führen Sie diese Schritte aus, um AEM Mobile einzurichten und es Benutzenden zu
 
 Um mit der Einrichtung von AEM Mobile zu beginnen, müssen Sie:
 
-* **API-Schlüssel anfordern**: Um auf die On-Demand-Services-API zuzugreifen, müssen Sie einen API-Schlüssel anfordern. Um den API-Schlüssel anzufordern, füllen Sie das Formular [PDF ](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Senden Sie das ausgefüllte Formular an den Adobe Developer-Support: [wwds@adobe.com](mailto:wwds@adobe.com)
+* **API-Schlüssel anfordern**: Um auf die On-Demand-Services-API zuzugreifen, müssen Sie einen API-Schlüssel anfordern. Um den API-Schlüssel anzufordern, füllen Sie das Formular [PDF &#x200B;](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Senden Sie das ausgefüllte Formular an den Adobe Developer-Support: [wwds@adobe.com](mailto:wwds@adobe.com)
 
 * **Generieren der Geräte-ID und des Geräte** Tokens: Nachdem Sie Ihren API-Schlüssel erhalten haben, können Sie die Geräte-ID und das Geräte-Token generieren. Gehen Sie zu `https://aex.aemmobile.adobe.com` und führen Sie folgende Schritte aus:
 
@@ -121,7 +121,7 @@ Bei der Entwicklung von AEM Mobile-Apps gibt es drei verschiedene Rollen:
 * Entwicklerin bzw. Entwickler
 * Author
 
-Weitere Informationen zum Erstellen von Rollen mit unterschiedlichen Berechtigungen, z. B. für die Erstellung von Apps oder zum Erstellen und Veröffentlichen von Inhalten, finden Sie [ der Hilfe zu AEM Mobile ](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html)Erstellen von Benutzerrollen und Gewähren von Zugriff“.
+Weitere Informationen zum Erstellen von Rollen mit unterschiedlichen Berechtigungen, z. B. für die Erstellung von Apps oder zum Erstellen und Veröffentlichen von Inhalten, finden Sie [&#x200B; der Hilfe zu AEM Mobile &#x200B;](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html)Erstellen von Benutzerrollen und Gewähren von Zugriff“.
 
 >[!NOTE]
 >

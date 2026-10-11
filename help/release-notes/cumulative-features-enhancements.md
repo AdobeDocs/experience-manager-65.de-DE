@@ -207,7 +207,7 @@ Wenn Sie eine Installation durchführen oder die Verwendung der neuesten Softwar
 
   Sie müssen nicht erst zum Asset-Speicherort navigieren und seine Eigenschaften anzeigen, um diese Vorgänge durchzuführen.
 
-* **Dynamic Media _Snapshot_**ermöglicht die Vorschau von Bild-Modifikatoren und Optimierungen der intelligenten Bildbearbeitung – wie WebP- oder AVIF-Ausgabe, bandbreitenabhängige Komprimierung und Skalierung des Geräte-Pixel-Verhältnisses – mithilfe von Testbildern oder Dynamic Media-URLs. Sie können dann sofort vergleichen, wie sich die einzelnen Einstellungen auf die Qualität und die Dateigröße auswirken.
+* **Dynamic Media _Snapshot_**&#x200B;ermöglicht die Vorschau von Bild-Modifikatoren und Optimierungen der intelligenten Bildbearbeitung – wie WebP- oder AVIF-Ausgabe, bandbreitenabhängige Komprimierung und Skalierung des Geräte-Pixel-Verhältnisses – mithilfe von Testbildern oder Dynamic Media-URLs. Sie können dann sofort vergleichen, wie sich die einzelnen Einstellungen auf die Qualität und die Dateigröße auswirken.
 Siehe [Dynamic Media Snapshot](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 * **DASH-Streaming mit Dynamic Media** – Neues Protokoll (DASH – Dynamic Adaptive Streaming over HTTP) für adaptives Streaming in Dynamic Media-Videobereitstellung (mit aktiviertem CMAF) eingeführt. Jetzt für alle Regionen verfügbar.
 * **Integration von Experience Manager Sites und Inhaltsfragmenten mit Assets Dynamic Media der nächsten Generation** - Anwender können jetzt ihre in der Cloud gehosteten Assets in Experience Manager Sites 6.5 verwenden. Sie können diese Assets On-Premise- oder Managed Services-Instanzen erstellen und bereitstellen.

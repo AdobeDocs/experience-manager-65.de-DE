@@ -29,7 +29,7 @@ ht-degree: 94%
 
 >[!CAUTION]
 >
->Die meisten Foundation-Komponenten sind in AEM 6.5 veraltet. Weitere Informationen finden [ in ](/help/release-notes/deprecated-removed-features.md) Versionshinweisen .
+>Die meisten Foundation-Komponenten sind in AEM 6.5 veraltet. Weitere Informationen finden [&#x200B; in &#x200B;](/help/release-notes/deprecated-removed-features.md) Versionshinweisen .
 >
 >Adobe empfiehlt, in AEM-Projekten die moderneren und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) zu verwenden. Diese sind Teil des [Inhalts des Beispielprojekts We.Retail](/help/sites-developing/we-retail.md) und können von Ihren Admins [separat installiert und zu Entwicklungszwecken verwendet werden](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=de).
 >
@@ -270,7 +270,7 @@ Im Folgenden sehen Sie ein Beispiel für Diagrammdaten und das daraus resultiere
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [Inhaltsfragment-Kernkomponente ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de) zu verwenden.
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [Inhaltsfragment-Kernkomponente &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de) zu verwenden.
 
 [Inhaltsfragmente](/help/sites-authoring/content-fragments.md) werden als seitenunabhängige Assets erstellt und verwaltet. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
 
@@ -477,7 +477,7 @@ Diese Komponente liefert ein Rasterabsatzsystem, mit dem Sie Komponenten in eine
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [ Kernkomponente „Liste“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=de) zu verwenden.
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [&#x200B; Kernkomponente „Liste“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=de) zu verwenden.
 
 Mit der Listenkomponente können Sie Suchkriterien zur Anzeige einer Liste konfigurieren:
 

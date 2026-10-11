@@ -75,10 +75,10 @@ Das Muster einer Regel wird verwendet, um die Namen der Dateien abzugleichen, di
 | Präfix | Ergebnis |
 |---|---|
 | / | Gibt einen JCR-Pfad an. Daher gleicht dieses Präfix Dateien unter dem Verzeichnis jcr_root ab. |
-| &amp;ast; | Gibt eine reguläre Datei im Dateisystem an. |
+| &ast; | Gibt eine reguläre Datei im Dateisystem an. |
 | none | Kein Präfix oder ein Muster, das mit einem Ordner oder einem Dateinamen beginnt, gibt eine reguläre Datei im Dateisystem an. |
 
-In einem Muster steht das Zeichen / für ein Unterverzeichnis und das Zeichen &amp;ast; ist ein Platzhalter für ein beliebiges Zeichen. In der folgenden Tabelle sind einige Beispielregeln aufgeführt.
+In einem Muster steht das Zeichen / für ein Unterverzeichnis und das Zeichen &ast; ist ein Platzhalter für ein beliebiges Zeichen. In der folgenden Tabelle sind einige Beispielregeln aufgeführt.
 
 <table>
  <tbody>

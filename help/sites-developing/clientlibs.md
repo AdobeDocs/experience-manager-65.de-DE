@@ -174,7 +174,7 @@ Sie legen die Eigenschaft `allowProxy` für `foo` auf „true“ fest.
 
 ### Erstellen eines Client-Bibliotheksordners {#create-a-client-library-folder}
 
-1. https://localhost:4502/crx/de Öffnen Sie CRXDE Lite in einem Webbrowser ([](https://localhost:4502/crx/de)).
+1. https://localhost:4502/crx/de Öffnen Sie CRXDE Lite in einem Webbrowser ([&#128279;](https://localhost:4502/crx/de)).
 1. Wählen Sie den Ordner aus, in dem Sie den Client-Bibliotheksordner platzieren möchten, und klicken Sie auf **Erstellen > Knoten erstellen**.
 1. Geben Sie einen Namen für die Bibliotheksdatei ein und wählen Sie in der Typenliste `cq:ClientLibraryFolder` aus. Klicken Sie auf **OK** und dann auf **Alle speichern**.
 1. Um die Kategorien festzulegen, zu denen die Bibliothek gehört, wählen Sie den `cq:ClientLibraryFolder`-Knoten aus, fügen Sie die folgende Eigenschaft hinzu und klicken Sie auf **Alle speichern**:

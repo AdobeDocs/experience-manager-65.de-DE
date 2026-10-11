@@ -100,7 +100,7 @@ Um Nutzungsszenarien zum Verteilen von Assets zu unterstützen, sollten andere L
 
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=de) für ein konfigurierbares SaaS-Add-on für [!DNL Experience Manager Assets] zum Veröffentlichen von Assets.
 * Benutzerdefinierte Lösungen auf Grundlage der [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)-Code-Basis.
-* [!DNL Experience Manager][Link-Freigabe](/help/assets/link-sharing.md), um Assets ad hoc mithilfe von Links freizugeben.
+* [!DNL Experience Manager]&#x200B;[Link-Freigabe](/help/assets/link-sharing.md), um Assets ad hoc mithilfe von Links freizugeben.
 * [Experience Manager Assets-Web-Oberfläche](/help/assets/manage-assets.md) mit Bereichen für externe Parteien, die über die [!DNL Experience Manager]-Zugriffssteuerung und mit notwendigen IT-/Netzwerkkonfigurationsanpassungen abgesichert sind, sodass diese externen Benutzenden Zugriff auf [!DNL Experience Manager] erhalten.
 
 ## Grundlegende Konzepte und Nutzungsszenarien {#key-concepts-and-use-cases}

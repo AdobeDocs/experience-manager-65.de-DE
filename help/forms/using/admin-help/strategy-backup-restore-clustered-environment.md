@@ -147,7 +147,7 @@ Führen Sie die folgenden Schritte aus, wenn der gesamte Cluster aufgrund von Fe
    1. Löschen Sie die Datei clusterNode/revision.log auf dem Knoten.
    1. Löschen Sie die .lock-Datei auf dem Knoten, falls vorhanden.
    1. Löschen Sie repository/system.id auf dem Knoten, falls vorhanden.
-   1. Löschen Sie die Dateien &amp;ast;&amp;ast;/listener.properties auf dem Knoten, falls vorhanden.
+   1. Löschen Sie die Dateien &ast;&ast;/listener.properties auf dem Knoten, falls vorhanden.
    1. Stellen Sie repository/cluster_node.id für einzelne Cluster-Knoten wieder her.
 
 >[!NOTE]
@@ -177,7 +177,7 @@ Führen Sie die folgenden Schritte aus, wenn der gesamte Cluster aufgrund von Fe
    1. Löschen Sie die Datei clusterNode/revision.log auf allen Cluster-Knoten.
    1. Löschen Sie die .lock-Datei auf allen Cluster-Knoten, falls vorhanden.
    1. Löschen Sie Datei repository/system.id auf allen Cluster-Knoten, falls vorhanden.
-   1. Löschen Sie die Dateien &amp;ast;&amp;ast;/listener.properties auf allen Cluster-Knoten, falls vorhanden.
+   1. Löschen Sie die Dateien &ast;&ast;/listener.properties auf allen Cluster-Knoten, falls vorhanden.
    1. Stellen Sie repository/cluster_node.id für einzelne Cluster-Knoten wieder her.
 
 >[!NOTE]

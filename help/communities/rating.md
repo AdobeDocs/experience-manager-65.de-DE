@@ -33,7 +33,7 @@ Um einer Seite im Autorenmodus eine `Rating` Komponente hinzuzufügen, suchen Si
 
 Weitere Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [erforderlichen Client-seitigen ](rating-basics.md#essentials-for-client-side) enthalten sind, wird die `Rating` Komponente wie folgt angezeigt.
+Wenn die [erforderlichen Client-seitigen &#x200B;](rating-basics.md#essentials-for-client-side) enthalten sind, wird die `Rating` Komponente wie folgt angezeigt.
 
 ![rating](assets/rating.png)
 

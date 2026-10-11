@@ -44,7 +44,7 @@ ht-degree: 98%
 1. Klicken Sie auf die Karte **[!UICONTROL Insights-Konfiguration]**.
 1. Wählen Sie im Assistenten ein Rechenzentrum aus und geben Sie Ihre Anmeldedaten an, z. B. den Namen Ihres Unternehmens, den Benutzernamen und gemeinsamen geheimen Schlüssel.
 
-   ![Konfigurieren von Adobe Analytics für Asset Insights in Experience Manager ](assets/insights_config2.png)
+   ![Konfigurieren von Adobe Analytics für Asset Insights in Experience Manager &#x200B;](assets/insights_config2.png)
 
    *Abbildung: Konfigurieren von [!DNL Adobe Analytics] für Asset Insights in [!DNL Experience Manager].*
 

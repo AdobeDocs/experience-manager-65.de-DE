@@ -81,7 +81,7 @@ Erstellen Sie dann unter „clientlibs“ eine Datei mit dem Namen „style.css�
 
 ### SCF-Clientlibs einbetten {#embed-scf-clientlibs}
 
-Geben **auf der** „Eigenschaften“ für den `clientlibs` die String-Eigenschaft mit mehreren Werten ein **embed**. Dadurch werden die erforderlichen [Client-seitigen Bibliotheken (clientlibs) für SCF-Komponenten ](/help/communities/client-customize.md#clientlibs-for-scf). In diesem Tutorial werden viele der Client-Bibliotheken hinzugefügt, die für die Communities-Komponenten erforderlich sind.
+Geben **auf der** „Eigenschaften“ für den `clientlibs` die String-Eigenschaft mit mehreren Werten ein **embed**. Dadurch werden die erforderlichen [Client-seitigen Bibliotheken (clientlibs) für SCF-Komponenten &#x200B;](/help/communities/client-customize.md#clientlibs-for-scf). In diesem Tutorial werden viele der Client-Bibliotheken hinzugefügt, die für die Communities-Komponenten erforderlich sind.
 
 Dies kann der gewünschte Ansatz für eine Produktions-Site sein, muss aber nicht, da es Überlegungen zur Benutzerfreundlichkeit im Verhältnis zur Größe/Geschwindigkeit der heruntergeladenen Clientlibs für jede Seite gibt.
 
@@ -131,7 +131,7 @@ Die Include-Anweisung gehört in den `head` des `html`. Die **`foundation head.j
 
 **Kopieren Sie „headlibs.jsp“ und schließen Sie clientlibs:** ein
 
-1. Wählen Sie mit **** CRXDE Lite **`/libs/foundation/components/page/headlibs.jsp`**
+1. Wählen Sie mit **&#x200B;**&#x200B;CRXDE Lite **`/libs/foundation/components/page/headlibs.jsp`**
 
 1. Klicken Sie mit der rechten Maustaste und wählen **Kopieren** (oder wählen Sie Kopieren in der Symbolleiste)
 1. Klicken Sie auf **`/apps/an-scf-sandbox/components/playpage`**

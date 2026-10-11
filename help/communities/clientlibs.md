@@ -71,7 +71,7 @@ Wenn Sie einer Seite eine Communities -Komponente hinzufügen möchten, müssen 
 
 Mit [CRXDE|Lite](#using-crxde-lite) können Sie eine vorhandene clientlibs-Liste für eine Community-Site-Seite ändern.
 
-So fügen Sie mithilfe von [CRXDE Lite eine Client-Bibliothek für eine Community-Site ](/help/sites-developing/developing-with-crxde-lite.md):
+So fügen Sie mithilfe von [CRXDE Lite eine Client-Bibliothek für eine Community-Site &#x200B;](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Navigieren Sie zu [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de).
 * Suchen Sie den `clientlibslist` Knoten für die Seite, auf der Sie die Komponente hinzufügen möchten:

@@ -507,7 +507,7 @@ Der Dienst wendet das kumulierte Ergebnis aller Filter an. Beispielsweise werden
 
 Gehen Sie beispielsweise zum Konfigurieren des Diensts mithilfe von CRXDE Lite wie folgt vor:
 
-1. http://localhost:4502/crx/de Öffnen Sie CRXDE Lite ([](http://localhost:4502/crx/de)).
+1. http://localhost:4502/crx/de Öffnen Sie CRXDE Lite ([&#128279;](http://localhost:4502/crx/de)).
 1. Erstellen Sie im Ordner „config“ Ihrer Anwendung einen Knoten:
 
    * Name: `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`

@@ -40,7 +40,7 @@ Schließlich veröffentlichen Admins den aktualisierten App-Inhalt strategisch.
 >
 >Wenn Sie keine vordefinierte App-Vorlage verwenden, müssen Sie einen Inhaltssynchronisierungs-Handler konfigurieren, um die Veröffentlichung neuer App-Inhalte in OTA zu ermöglichen.
 >
->Weitere [ finden Sie ](/help/mobile/phonegap-contentsync.md) Abschnitt „Mobile mit Inhaltssynchronisierung“ im Entwicklerbereich.
+>Weitere [&#x200B; finden Sie &#x200B;](/help/mobile/phonegap-contentsync.md) Abschnitt „Mobile mit Inhaltssynchronisierung“ im Entwicklerbereich.
 
 Hier können Inhalte in AEM Mobile auf die gleiche Weise wie in AEM Sites erstellt, bearbeitet und gelöscht werden.
 
@@ -84,7 +84,7 @@ Beim Staging einer Inhaltsaktualisierung können mehrere Aktualisierungen vorgen
 >
 >Die bereitgestellten Inhalte können vor der Veröffentlichung mit der AEM-Überprüfungs-App überprüft werden.
 >
->Weitere Informationen [ der AEM Verify-App finden Sie ](/help/mobile/phonegap-mobile-quickstart.md) „Mobile Quickstart für AEM Verify“.
+>Weitere Informationen [&#x200B; der AEM Verify-App finden Sie &#x200B;](/help/mobile/phonegap-mobile-quickstart.md) „Mobile Quickstart für AEM Verify“.
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 

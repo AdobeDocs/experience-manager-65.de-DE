@@ -45,22 +45,22 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 | Eigenschaften-Browser für die ausgewählte Komponente eines adaptiven Formulars schließen | Strg+Alt+W | Befehl+Alt+W |
 | Änderungen im Eigenschaften-Browser für die ausgewählte Komponente eines adaptiven Formulars speichern | Strg+S | Befehl+S |
 | Bearbeiten der Regel für die ausgewählte Komponente eines adaptiven Formulars | Strg+Alt+Eingabe | Befehl+Alt+Eingabe |
-| Zwischen Vorschau und dem aktuell ausgewählten Modus (z. B. Bearbeiten und Strukturvorlage) wechseln | Strg+Umschalt+M | Strg+Umschalt+M&amp;ast; |
-| Letzte Änderung rückgängig machen | Strg+Z | Strg+Z&amp;ast; |
-| Letzte Änderung wiederholen | Strg+Y | Strg+Y&amp;ast; |
+| Zwischen Vorschau und dem aktuell ausgewählten Modus (z. B. Bearbeiten und Strukturvorlage) wechseln | Strg+Umschalt+M | Strg+Umschalt+M&ast; |
+| Letzte Änderung rückgängig machen | Strg+Z | Strg+Z&ast; |
+| Letzte Änderung wiederholen | Strg+Y | Strg+Y&ast; |
 | Mehrere Komponenten auswählen | Umschalt+Klick | Umschalt+Klick |
-| Ausgewählte Komponente kopieren | Strg-C | Strg-C&amp;ast; |
-| Ausgewählte Komponenten ausschneiden. Die ausgeschnittene Komponente wird erst ausgeblendet, wenn sie an der neuen Position eingefügt wird. | Strg-X | Strg-X&amp;ast; |
+| Ausgewählte Komponente kopieren | Strg-C | Strg-C&ast; |
+| Ausgewählte Komponenten ausschneiden. Die ausgeschnittene Komponente wird erst ausgeblendet, wenn sie an der neuen Position eingefügt wird. | Strg-X | Strg-X&ast; |
 | Komponenten einfügen | Strg+V | Strg+V |
-| Ausgewählte Komponenten löschen | Strg+Entf | Strg+Entf&amp;ast; |
-| Ausgewählte Komponenten löschen | Strg+Rücktaste | Strg+Rücktaste&amp;ast; |
-| Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+B | Strg+B&amp;ast; |
-| Text mit der Rich Text Editor-Komponente im Vorschaumodus kursiv formatieren | Strg+I | Strg+I&amp;ast; |
-| Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+U | Strg+U&amp;ast; |
+| Ausgewählte Komponenten löschen | Strg+Entf | Strg+Entf&ast; |
+| Ausgewählte Komponenten löschen | Strg+Rücktaste | Strg+Rücktaste&ast; |
+| Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+B | Strg+B&ast; |
+| Text mit der Rich Text Editor-Komponente im Vorschaumodus kursiv formatieren | Strg+I | Strg+I&ast; |
+| Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+U | Strg+U&ast; |
 
 >[!NOTE]
 >
->Mit einem &quot;&amp;ast;“ markierte Tastaturbefehle funktionieren in macOS sowohl mit der Strg- als auch mit der Befehlstaste.
+>Mit einem &quot;&ast;“ markierte Tastaturbefehle funktionieren in macOS sowohl mit der Strg- als auch mit der Befehlstaste.
 
 >[!NOTE]
 >
@@ -76,13 +76,13 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 |---|---|---|
 | Eigenschaften-Browser für die ausgewählte Komponente in einem Design öffnen | Alt+Eingabe | Alt+Eingabe |
 | Eigenschaften-Browser für die ausgewählte Komponente in einem Design schließen | Strg+Alt+W | Befehl+Alt+W |
-| Letzte Änderung rückgängig machen | Strg+Z | Strg+Z&amp;ast; |
-| Letzte Änderung wiederholen | Strg+Y | Strg+Y&amp;ast; |
-| Speichern von Änderungen im Eigenschaften-Browser für die ausgewählte Komponente in einem Design | Strg+S | Strg+S&amp;ast; |
+| Letzte Änderung rückgängig machen | Strg+Z | Strg+Z&ast; |
+| Letzte Änderung wiederholen | Strg+Y | Strg+Y&ast; |
+| Speichern von Änderungen im Eigenschaften-Browser für die ausgewählte Komponente in einem Design | Strg+S | Strg+S&ast; |
 
 >[!NOTE]
 >
->Mit einem &quot;&amp;ast;“ markierte Tastaturbefehle funktionieren in macOS sowohl mit der Strg- als auch mit der Befehlstaste.
+>Mit einem &quot;&ast;“ markierte Tastaturbefehle funktionieren in macOS sowohl mit der Strg- als auch mit der Befehlstaste.
 
 ## Inhalts-Browser  {#contentbrowser}
 
