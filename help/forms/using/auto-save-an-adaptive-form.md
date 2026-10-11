@@ -7,18 +7,34 @@ feature: Adaptive Forms,Foundation Components
 exl-id: ff9bf466-228d-40e6-9389-15c1f2ed1d2e
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '770'
 ht-degree: 100%
-
 ---
-
 # Adaptives Formular automatisch speichern {#auto-save-an-adaptive-form}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
-Sie können ein adaptives Formular so konfigurieren, dass der Inhalt basierend auf einem Ereignis oder einem vordefinierten Zeitintervall automatisch gespeichert wird.  Standardmäßig werden Inhalte eines adaptiven Formulars bei einer Benutzeraktion wie Drücken der Schaltfläche „Speichern“ gespeichert.  Die Option „Automatische Speicherung“ ist bei folgenden Aufgaben hilfreich:
+Sie können ein adaptives Formular so konfigurieren, dass der Inhalt basierend auf einem Ereignis oder einem vordefinierten Zeitintervall automatisch gespeichert wird. Standardmäßig werden Inhalte eines adaptiven Formulars bei einer Benutzeraktion wie Drücken der Schaltfläche „Speichern“ gespeichert. Die Option „Automatische Speicherung“ ist bei folgenden Aufgaben hilfreich:
 
 * Automatisches Speichern der Inhalte für anonyme und angemeldete Benutzende
 * Speichern der Inhalte eines Formulars ohne oder mit minimalem Benutzereingriff
@@ -27,7 +43,7 @@ Sie können ein adaptives Formular so konfigurieren, dass der Inhalt basierend a
 
 ## Aktivieren des automatischen Speicherns für adaptive Formulare {#enable-autosave-for-an-adaptive-form}
 
-Die Option „Automatisches Speichern“ ist für ein adaptives Formular nicht standardmäßig aktiviert.  Sie können die Option „Automatisches Speichern“ über den Abschnitt **Automatisches Speichern** eines adaptiven Formulars aktivieren. Der Abschnitt **Automatisches Speichern** bietet mehrere weitere Konfigurationsoptionen. Führen Sie zum Aktivieren und Konfigurieren der Option „Automatisches Speichern“ für ein adaptives Formular folgende Schritte durch: 
+Die Option „Automatisches Speichern“ ist für ein adaptives Formular nicht standardmäßig aktiviert. Sie können die Option „Automatisches Speichern“ über den Abschnitt **Automatisches Speichern** eines adaptiven Formulars aktivieren. Der Abschnitt **Automatisches Speichern** bietet mehrere weitere Konfigurationsoptionen. Führen Sie zum Aktivieren und Konfigurieren der Option „Automatisches Speichern“ für ein adaptives Formular folgende Schritte durch:
 
 1. Um auf den Abschnitt für das automatische Speichern in den Eigenschaften zuzugreifen, wählen Sie eine Komponente und dann ![field-level](assets/field-level.png) > **[!UICONTROL Container für adaptive Formulare]** und anschließend ![cmppr](assets/cmppr.png).
 1. **[!UICONTROL Aktivieren]** Sie im Abschnitt **[!UICONTROL Automatische Speicherung]** die Option zum automatischen Speichern.
@@ -64,7 +80,7 @@ Die Option „Automatisches Speichern“ ist für ein adaptives Formular nicht s
 
 Sie können ein benutzerdefiniertes Ereignis implementieren, um die Funktion für automatisches Speichern auszulösen. Führen Sie die folgenden Schritte aus, um das benutzerdefinierte Ereignis zu erstellen und zu implementieren:
 
-1. Erstellen Sie eine Client-Bibliothek und Client-Bibliotheksordner. Ausführliche Anweisungen finden Sie unter in [Verwenden clientseitiger Bibliotheksdokumente](/help/sites-developing/clientlibs.md). 
+1. Erstellen Sie eine Client-Bibliothek und Client-Bibliotheksordner. Ausführliche Anweisungen finden Sie unter in [Verwenden clientseitiger Bibliotheksdokumente](/help/sites-developing/clientlibs.md).
 
    Beispiel: Das folgende Skript verwendet das benutzerdefinierte Ereignis `emailFocusChange`, um die Funktion für automatisches Speichern auszulösen:
 
