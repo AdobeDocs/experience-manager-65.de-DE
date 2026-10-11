@@ -60,7 +60,7 @@ Die Zuordnungen bilden zwei Listen, die der JCR-Ressourcen-Resolver auswertet (v
 Diese Listen können (zusammen mit Konfigurationsinformationen) unter der Option **JCR ResourceResolver** der Felix-Konsole angezeigt werden. Beispiel: `https://<*host*>:<*port*>/system/console/jcrresolver`:
 
 * Konfiguration
-Zeigt die aktuelle Konfiguration (wie für den [Apache Sling Resource Resolver) ](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver).
+Zeigt die aktuelle Konfiguration (wie für den [Apache Sling Resource Resolver) &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver).
 
 * Konfigurationstest
 Auf diese Weise können Sie eine URL oder einen Ressourcenpfad eingeben. Klicken Sie auf **Resolve** oder **Map**, um festzulegen, wie das System den Eintrag transformiert.
@@ -85,7 +85,7 @@ den
 
 aus, zur Umleitung der Anfrage
 
-`https://localhost:4503/welcome` ``
+`https://localhost:4503/welcome` &grave;&grave;
 
 an:
 
