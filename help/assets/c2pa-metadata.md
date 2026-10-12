@@ -121,7 +121,7 @@ Eine Ausgabedarstellung ist eine neue Binärdatei, sodass das im ursprünglichen
 * Das Quellmanifest ist lesbar und sein Validierungsstatus ist nicht `INVALID`. [!DNL Experience Manager] verkettet nie eine neue Signatur in einem Manifest, dessen Validierung fehlgeschlagen ist, z. B. nachdem das Asset manipuliert wurde.
 * Das Ausgabeformat unterstützt ein eingebettetes C2PA-Manifest. Weitere Informationen finden Sie unter [Unterstützte Formate](#supported-formats). [!DNL Experience Manager] überspringt die nicht unterstützten Formate fehlerfrei.
 
-Die folgenden Schritte des Workflows **[!UICONTROL DAM-Update-Asset abgeschlossen]** Workflow, der unter &quot;[ von C2PA-Metadaten“ angezeigt wird](#detect) signieren ihre Ausgabe.
+Die folgenden Schritte des Workflows **[!UICONTROL DAM-Update-Asset abgeschlossen]** Workflow, der unter &quot;[&#x200B; von C2PA-Metadaten“ angezeigt wird](#detect) signieren ihre Ausgabe.
 
 | Workflow-Schritt | Signierte Ausgabedarstellungen | C2PA-Aktion aufgezeichnet |
 |---|---|---|
@@ -131,7 +131,7 @@ Die folgenden Schritte des Workflows **[!UICONTROL DAM-Update-Asset abgeschlosse
 | **[!UICONTROL FFmpeg-Transkodierung]** | Videokodierungen | `c2pa.transcoded` |
 | **[!UICONTROL Rastern der PDF-/AI-Bildvorschau-Ausgabedarstellung]** | Vorschau der Ausgabedarstellung anzeigen. (`cqdam.preview.png`) | `c2pa.transcoded` |
 
-Die folgenden Workflow-Prozesse signieren ihre Ausgabe auch, wenn Sie sie im Workflow **[!UICONTROL DAM-Update-Asset abgeschlossen]**, in einem anderen Workflow oder in einem benutzerdefinierten Workflow-Modell verwenden. Wählen Sie sie in der **[!UICONTROL Miniaturansichten verarbeiten]** der Liste eines Workflow-Schritts aus, wie in [Erkennen von C2PA-Metadaten“ ](#detect).
+Die folgenden Workflow-Prozesse signieren ihre Ausgabe auch, wenn Sie sie im Workflow **[!UICONTROL DAM-Update-Asset abgeschlossen]**, in einem anderen Workflow oder in einem benutzerdefinierten Workflow-Modell verwenden. Wählen Sie sie in der **[!UICONTROL Miniaturansichten verarbeiten]** der Liste eines Workflow-Schritts aus, wie in [Erkennen von C2PA-Metadaten“ &#x200B;](#detect).
 
 | Workflow-Prozess | Signierte Ausgabedarstellungen | C2PA-Aktion aufgezeichnet |
 |---|---|---|
@@ -199,7 +199,7 @@ Gehen Sie wie folgt vor, um Schritte in **[!UICONTROL DAM Update Asset]** hinzuz
 
 * **Erkennung zuerst ausführen.** Halten Sie **[!UICONTROL C2PA-Berechtigung erkennen]** vor jedem Schritt, der die Ausgabedarstellungen erstellt oder ändert.
 * **Letzte unterschreiben.** Jede Änderung an einer Binärdatei nach dem Signieren macht ihre Signatur ungültig. Führen Sie keine Schritte aus, die eine Ausgabedarstellung nach dem Schritt ändern, mit dem sie signiert wurde.
-* **Verwenden Sie Schritte, die signieren.** Die in „Ausgabedarstellungen signieren“ aufgelisteten integrierten [ signieren ](#sign-renditions) Ausgabe. Benutzerdefinierte Schritte und Drittanbieter-Tools, die Sie mit etwas anderem als dem **[!UICONTROL Befehlszeilen]**-Prozess ausführen, signieren ihre Ausgabe nur, wenn das Signieren explizit hinzugefügt wird. Weitere Informationen finden Sie unter [Verarbeiten von Assets mithilfe von Medien-Handlern und Workflows](/help/assets/media-handlers.md).
+* **Verwenden Sie Schritte, die signieren.** Die in „Ausgabedarstellungen signieren“ aufgelisteten integrierten [&#x200B; signieren &#x200B;](#sign-renditions) Ausgabe. Benutzerdefinierte Schritte und Drittanbieter-Tools, die Sie mit etwas anderem als dem **[!UICONTROL Befehlszeilen]**-Prozess ausführen, signieren ihre Ausgabe nur, wenn das Signieren explizit hinzugefügt wird. Weitere Informationen finden Sie unter [Verarbeiten von Assets mithilfe von Medien-Handlern und Workflows](/help/assets/media-handlers.md).
 * **Ändern Sie das Original nicht an Ort und Stelle** es sei denn, der Schritt signiert es erneut, wie dies bei **[!UICONTROL XMP Writeback]** und **[!UICONTROL Image Watermarking Process]** der Fall ist.
 
 ### Signieren von Ausgabedarstellungen aus einem benutzerdefinierten Workflow-Schritt {#custom-step}
