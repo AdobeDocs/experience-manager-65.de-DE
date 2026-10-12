@@ -52,7 +52,7 @@ Wenn Sie beispielsweise alle Namen und E-Mail-Adressen von Benutzenden benötige
 
 Ein Beispiel, das einen solchen Anwendungsfall veranschaulicht, ist auf der Geometrixx-Website enthalten:
 
-1. Navigieren Sie zur Seite **Support** und dann zur Umfrage zur **Zufriedenheit mit dem Kunden-Service**.
+1. Navigieren Sie zur Seite **Support** und dann zur Umfrage zur **Zufriedenheit mit dem Kundendienst**.
 1. **Bearbeiten** Sie den Absatz **Beginn des Formulars**. Klicken Sie im Dialogfeld auf die Registerkarte **Erweitert**, erweitern Sie den Bereich **Aktionskonfiguration** und klicken Sie dann auf **Daten anzeigen**.
 
    ![Beispiel für eine Umfrage zur Kundenzufriedenheit](assets/custsatsurvey.png)
