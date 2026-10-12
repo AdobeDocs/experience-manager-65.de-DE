@@ -91,7 +91,7 @@ Zusätzliche Informationen zum GDS-Ordner finden Sie unter [Vorbereiten der Inst
 
 **Speicherort des Verzeichnisses für Kundenschriftarten** – Geben Sie den Pfad zu einem Verzeichnis ein, das zusätzliche Schriftarten enthält, die Sie verwenden möchten.
 
-***Hinweis **: Schriftarten werden aus dem Windows-Systemschriftarten-Cache ausgewählt, und ein Neustart des Systems ist erforderlich, um den Cache zu aktualisieren. Nachdem Sie das Verzeichnis für Kundenschriftarten angegeben haben, müssen Sie das System neu starten, auf dem AEM Forms installiert ist.*
+***Hinweis &#x200B;**: Schriftarten werden aus dem Windows-Systemschriftarten-Cache ausgewählt, und ein Neustart des Systems ist erforderlich, um den Cache zu aktualisieren. Nachdem Sie das Verzeichnis für Kundenschriftarten angegeben haben, müssen Sie das System neu starten, auf dem AEM Forms installiert ist.*
 
 **Speicherort des Verzeichnisses für Systemschriftarten** – Geben Sie den Pfad zu dem von Ihrem Betriebssystem vorgegebenen Verzeichnis für Schriftarten ein. Mehrere Ordner können hinzugefügt werden, indem sie durch ein Semikolon **;** voneinander getrennt werden.
 
