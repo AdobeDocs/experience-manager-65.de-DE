@@ -289,9 +289,9 @@ Legen Sie bei der Fehlerbehebung die folgenden Logger in der **[!UICONTROL Apach
 
 >[!MORELIKETHIS]
 >
->* [C2PA-Metadaten in der Assets-Ansicht von [!DNL Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/c2pa-metadata-assets-view)
->* [C2PA-Metadaten in [!DNL Experience Manager Assets Essentials]](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/content-credentials)
->* [C2PA-Metadaten in [!DNL Dynamic Media]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/c2pa-metadata)
+>* [C2PA-Metadaten in der Assets-Ansicht von [!DNL Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/c2pa-metadata-assets-view)
+>* [C2PA-Metadaten in [!DNL Experience Manager Assets Essentials]](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/content-credentials)
+>* [C2PA-Metadaten in [!DNL Dynamic Media]](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/c2pa-metadata)
 >* [XMP-Writeback in Ausgabedarstellungen](/help/assets/xmp-writeback.md)
 >* [Wasserzeichen für Assets](/help/assets/watermarking.md)
 >* [Content Authenticity Initiative](https://contentauthenticity.org/)
