@@ -1,19 +1,28 @@
 ---
 title: Verwalten von Video-Assets
-description: Hochladen, Anzeigen einer Vorschau, Kommentieren und Veröffentlichen von Video-Assets in [!DNL Adobe Experience Manager].
+description: Hochladen, Anzeigen einer Vorschau, Kommentieren und Veröffentlichen von Video-Assets in [!DNL Adobe Experience Manager]
 contentOwner: AG
 role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5414'
-ht-degree: 96%
-
+source-wordcount: '5614'
+ht-degree: 97%
 ---
-
 # Verwalten von Video-Assets {#manage-video-assets}
 
 | Version | Artikel-Link |
@@ -148,7 +157,7 @@ So konfigurieren Sie Google Cloud-Einstellungen:
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
-1. Um die API zu verwenden, benötigen Sie Anmeldeinformationen. Klicken Sie bei Bedarf auf **[!UICONTROL Berechtigungen erstellen]**.
+1. Um die API zu verwenden, benötigen Sie Anmeldedaten. Klicken Sie bei Bedarf auf **[!UICONTROL Berechtigungen erstellen]**.
 
    ![6_5_googleaccount-apis-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
 
@@ -261,7 +270,7 @@ Mit Experience Manager 6.4 wurde eine neue Methode für die Touch-Benutzeroberfl
 1. Geben Sie auf der Seite „YouTube-Veröffentlichungskonfiguration erstellen“ unter „Google Cloud Platform-Einstellungen“ im Feld **[!UICONTROL Anwendungsname]** die Google-Projekt-ID ein.
 
    Sie haben die Projekt-ID bereits während der Konfiguration der Google Cloud-Einstellungen angegeben.
-Lassen Sie die Seite YouTube-Konfiguration erstellen geöffnet. Sie werden gleich zu ihr zurückkehren.
+   Lassen Sie die Seite „YouTube-Konfiguration erstellen“ geöffnet, Sie werden gleich zu ihr zurückkehren.
 
    ![6_5_youtubepublish-createyoutubeconconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -308,8 +317,8 @@ Lassen Sie die Seite YouTube-Konfiguration erstellen geöffnet. Sie werden gleic
 1. Wählen Sie **[!UICONTROL Erstellen]**.
 1. Geben Sie im Dialogfeld „YouTube-Kontoeinstellungen“ im Feld **[!UICONTROL Anwendungsname]** die Google-Projekt-ID ein.
 
-   Sie haben die Projekt-ID bereits während der [&#x200B; Konfiguration der Google-Cloud](/help/assets/video.md#configuring-google-cloud-settings)Einstellungen angegeben.
-Lassen Sie das Dialogfeld YouTube-Kontoeinstellungen geöffnet, da Sie gleich zu ihm zurückkehren werden.
+   Sie haben die Projekt-ID bereits während der [Konfiguration der Google Cloud-Einstellungen](/help/assets/video.md#configuring-google-cloud-settings) angegeben.
+   Lassen Sie das Dialogfeld „YouTube-Kontoeinstellungen“ geöffnet, da Sie gleich zu ihm zurückkehren werden.
 
 1. Öffnen Sie die in der vorherigen Aufgabe zum Konfigurieren von Google Cloud-Einstellungen heruntergeladene und gespeicherte JSON-Datei in einem Nur-Text-Editor.
 1. Markieren und kopieren Sie den gesamten JSON-Text.
@@ -359,20 +368,20 @@ So automatisieren Sie die Einstellung von YouTube-Standardeigenschaften für hoc
 1. Klicken Sie unter der Überschrift „YouTube-Publishing“ auf **[!UICONTROL YouTube-Kategorie]**.
 1. Führen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** rechts auf der Seite folgende Schritte aus:
 
-   * Wählen **[!UICONTROL im Textfeld]**&#x200B;Zu Eigenschaft zuordnen“ den Wert aus und kopieren Sie ihn.
-Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie Ihr Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
+   * Wählen Sie den Wert im Textfeld **[!UICONTROL Zu Eigenschaft zuordnen]** aus und kopieren Sie ihn.
+     Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie das Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
 
-   * Wählen **[!UICONTROL unter]** den Standardwert aus, den Sie verwenden möchten (z. B. „Personen und Blogs“ oder „Wissenschaft und Technik„).
-Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie Ihr Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
+   * Wählen Sie unter **[!UICONTROL Wahlen]** den Standardwert aus, den Sie verwenden möchten (beispielsweise „Personen und Blogs“ oder „Wissenschaft und Technik“).
+     Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie das Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
 
 1. Klicken Sie unter der Überschrift „Veröffentlichen auf YouTube“ auf **[!UICONTROL YouTube-Datenschutz]**.
 1. Führen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** rechts auf der Seite folgende Schritte aus:
 
-   * Wählen **[!UICONTROL im Textfeld]**&#x200B;Zu Eigenschaft zuordnen“ den Wert aus und kopieren Sie ihn.
-Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie Ihr Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
+   * Wählen Sie den Wert im Textfeld **[!UICONTROL Zu Eigenschaft zuordnen]** aus und kopieren Sie ihn.
+     Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie das Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
 
-   * Wählen **[!UICONTROL unter]** den Standardwert aus, den Sie verwenden möchten, und kopieren Sie ihn. Beachten Sie, dass Auswahlmöglichkeiten in Paaren von zwei Werten gruppiert sind. Das untere Feld im Paar ist der Standardwert, den Sie kopieren möchten, z. B. „Öffentlich“, „Nicht aufgeführt“ oder „Privat“.
-Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie Ihr Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
+   * Wählen Sie unter **[!UICONTROL Wahlen]** den Standardwert aus, den Sie verwenden möchten, und kopieren Sie ihn. Beachten Sie, dass unter „Wahlen“ Paare von jeweils zwei Werten vorliegen. Das untere Feld des Wertepaars ist der Standardwert, den Sie kopieren müssen, beispielsweise „Öffentlich“, „Nicht aufgeführt“ oder „Privat“.
+     Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie das Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
 
 1. Klicken Sie in der rechten oberen Ecke der Seite „Metadatenschema-Editor“ auf **[!UICONTROL Abbrechen]**.
 1. Wählen Sie oben links in Experience Manager das Experience Manager-Logo aus und klicken Sie dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenprofile]**.
@@ -554,7 +563,7 @@ Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angew
 
    >[!NOTE]
    >
-   >Die endgültige Aufzeichnung von Fehlermeldungen kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** von [https://localhost:4502/system/console/configMgr&rbrace; mehrere Workflow-Konfigurationen vorliegen](https://localhost:4502/system/console/configMgr) Beispiel:
+   >Die endgültige Aufzeichnung von Fehlernachrichten kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** von [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) mehrere Workflow-Konfigurationen vorliegen, beispielsweise:
    >
    >* Konfiguration der Warteschlange für Apache Sling-Aufträge
    >* Handler für externe Prozessaufträge im Adobe Granite-Workflow

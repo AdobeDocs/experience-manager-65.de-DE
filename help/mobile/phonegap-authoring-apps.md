@@ -9,13 +9,17 @@ exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '993'
 ht-degree: 1%
-
 ---
-
 # Erstellen von Mobile Apps{#authoring-mobile-applications}
 
 {{ue-over-mobile}}
@@ -24,7 +28,7 @@ Mit dem AEM Mobile-Dashboard können Sie Ihre Mobile App erstellen, erstellen un
 
 Informationen zum Erstellen Ihrer AEM Mobile-Anwendung finden Sie auf [&#x200B; Seite zum Erstellen &#x200B;](/help/mobile/building-app-mobile-phonegap.md) Mobile Apps .
 
-Informationen zum Einrichten Ihrer Umgebung und zu den ersten Schritten finden Sie unter [Verwalten von AEM zur Verwendung von AEM PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
+Informationen zum Einrichten Ihrer Umgebung und zu den ersten Schritten finden Sie unter [Administration von AEM zur Verwendung von AEM PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
 
 ## Der AEM Mobile Apps-Katalog {#the-aem-mobile-apps-catalog}
 
@@ -88,13 +92,13 @@ Dieses Symbol stellt ein Content-Release-Paket für die Shell des Programms dar
 
 Diese Symbole stellen ein Inhaltspaket für App-Inhalte dar
 
-### Die Kachel PhoneGap Build {#the-phonegap-build-tile}
+### Die Kachel „Telefonlücken-Build“ {#the-phonegap-build-tile}
 
-Die **PhoneGap Build-Kachel** stellt eine Verbindung mit `https://build.phonegap.com` her, um Remote-Builds zu erstellen und zu hosten. Nach der Erstellung wird der Build entweder als Download oder direkt über einen QR-Code auf Ihrem Gerät zur Verfügung gestellt.
+Die **PhoneGap-Build-Kachel** stellt eine Verbindung mit `https://build.phonegap.com` her, um Remote-Builds zu erstellen und zu hosten. Nach der Erstellung wird der Build entweder als Download oder direkt über einen QR-Code auf Ihrem Gerät zur Verfügung gestellt.
 
 Alternativ können Sie die Gerätequelle herunterladen, um lokal über die PhoneGap-CLI (`https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html`) zu erstellen.
 
-![PhoneGap Build-Kachel](assets/chlimage_1-140.png)
+![PhoneGap Build Tile](assets/chlimage_1-140.png)
 
 ### Die Kachel Metriken . {#the-metrics-tile}
 
@@ -102,7 +106,7 @@ Alternativ können Sie die Gerätequelle herunterladen, um lokal über die Phone
 >
 >Die Kachel Metriken wird erst angezeigt, nachdem Sie den Cloud-Service konfiguriert haben.
 >
->Weitere [&#x200B; finden Sie unter „Konfigurieren des Adobe Mobile Services](/help/mobile/configure-adobe-mobile-cloud-service.md)Cloud Service&quot;.
+>Weitere [&#x200B; finden Sie unter „Konfigurieren der Adobe Mobile Services](/help/mobile/configure-adobe-mobile-cloud-service.md)Cloud Service&quot;.
 
 AEM Mobile lässt sich über [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=de) (AMS) mit Adobe Analytics integrieren.
 

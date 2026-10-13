@@ -10,13 +10,22 @@ exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 100%
-
+source-wordcount: '293'
+ht-degree: 95%
 ---
-
 # Bearbeiten von Launches{#editing-launches}
 
 ## Bearbeiten von Launch-Seiten {#editing-launch-pages}
@@ -39,15 +48,15 @@ Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, kö
 
 Wenn Sie einen Launch erstellt haben, können Sie den Namen und das Datum des Launches ändern. Sie können auch ein Bild angeben, das mit dem Launch verknüpft werden soll.
 
-1. Öffnen Sie die Verwaltungsseite „Launches“ ([http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)).
+1. Öffnen Sie die Verwaltungsseite Launches ([http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)).
 
 1. Wählen Sie den gewünschten Launch aus und klicken Sie auf **Bearbeiten**, um das Dialogfeld zu öffnen:
 
    * In der Registerkarte **Allgemein** können Sie Folgendes bearbeiten:
 
-      * **Titel**
-      * **Live-Datum**: dieses entspricht dem Launch-Datum 
-      * **Produktionsbereit**
+     * **Titel**
+     * **Live-Datum**: dieses entspricht dem Launch-Datum
+     * **Produktionsbereit**
 
      Weitere Informationen über den Zweck und das Zusammenspiel dieser Felder finden Sie unter [Launches und die Reihenfolge der Ereignisse](/help/sites-authoring/launches.md#launches-the-order-of-events).
 

@@ -1,6 +1,6 @@
 ---
 title: Best Practices zur Integration mit Adobe Creative Cloud
-description: Best Practices für die Integration von [!DNL Adobe Experience Manager] und [!DNL Adobe Creative Cloud] zur Optimierung der Workflows für die Asset-Übertragung und Erzielung einer hohen Content-Geschwindigkeit.
+description: Best Practices für die Integration von [!DNL Adobe Experience Manager] mit [!DNL Adobe Creative Cloud] zur Optimierung der Workflows für die Asset-Übertragung und Erzielung einer hohen Content-Geschwindigkeit.
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
@@ -8,13 +8,35 @@ feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+subfeature_v2:
+  - id: f7212149-7f65-4e43-89c2-1f075f45be16
+    internal-label: Collaboration
+  - id: f14a07fd-abc1-452c-8a48-fbcbc24a66ef
+    internal-label: Adobe Asset Link
+  - id: d18d21f5-ea10-400d-a1f0-a2071ad38419
+    internal-label: Desktop App
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3390'
 ht-degree: 99%
-
 ---
-
 # Best Practices für die Integration von [!DNL Adobe Experience Manager] und [!DNL Creative Cloud] {#aem-and-creative-cloud-integration-best-practices}
 
 | Version | Artikel-Link |
@@ -78,7 +100,7 @@ Um Nutzungsszenarien zum Verteilen von Assets zu unterstützen, sollten andere L
 
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=de) für ein konfigurierbares SaaS-Add-on für [!DNL Experience Manager Assets] zum Veröffentlichen von Assets.
 * Benutzerdefinierte Lösungen auf Grundlage der [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)-Code-Basis.
-* [!DNL Experience Manager][Link-Freigabe](/help/assets/link-sharing.md), um Assets ad hoc mithilfe von Links freizugeben.
+* [!DNL Experience Manager]&#x200B;[Link-Freigabe](/help/assets/link-sharing.md), um Assets ad hoc mithilfe von Links freizugeben.
 * [Experience Manager Assets-Web-Oberfläche](/help/assets/manage-assets.md) mit Bereichen für externe Parteien, die über die [!DNL Experience Manager]-Zugriffssteuerung und mit notwendigen IT-/Netzwerkkonfigurationsanpassungen abgesichert sind, sodass diese externen Benutzenden Zugriff auf [!DNL Experience Manager] erhalten.
 
 ## Grundlegende Konzepte und Nutzungsszenarien {#key-concepts-and-use-cases}
@@ -119,9 +141,9 @@ Einige wichtige Punkte zu dieser Integration:
 * Wenn Assets aus Adobe Stock in [!DNL Experience Manager] gespeichert werden, werden sie zu regulären [!DNL Assets]. Die Binärdateien werden im [!DNL Experience Manager]-Repository gespeichert. Einige zu [!DNL Adobe Stock] gehörige Metadaten werden für das Asset in [!DNL Experience Manager] gespeichert. Ansonsten verläuft die Aufnahme wie bei jeder anderen Datei. Wenn beispielsweise Smart-Tags aktiv sind, werden die Tags beim Speichern diesen Assets hinzugefügt.
 * Das in [!DNL Experience Manager] gespeicherte Asset ist eine Kopie, kein Link zurück zu [!DNL Adobe Stock].
 
-**Arbeiten mit Assets, die aus [!DNL Adobe Stock] in [!DNL Experience Manager] in[!DNL Creative Cloud]** gespeichert wurden. Diese Integration ist unabhängig von [!DNL Adobe Asset Link], aber [!DNL Adobe Asset Link] erkennt diese Assets, die aus [!DNL Stock] gespeichert wurden, und zeigt zusätzliche Metadaten und ein [!DNL Adobe Stock]-Logo auf diesen Assets in [!DNL Adobe Asset Link] Erweiterungs-Benutzeroberfläche in [!DNL Photoshop], [!DNL Illustrator] oder [!DNL InDesign] an. Die Dateien sind zum Durchsuchen, Öffnen usw. verfügbar, da sie durch das Speichern in [!DNL Experience Manager] zu regulären Assets werden.
-Creative-Benutzende, die in [!DNL Creative Cloud]-Programmen mit [!DNL Adobe Asset Link] Erweiterung arbeiten, haben zusätzlich zum Zugriff auf bereits lizenzierte Assets aus [!DNL Adobe Stock] in [!DNL Experience Manager] auch Zugriff auf [!DNL Creative Cloud] Libraries-Bedienfeld, um [!DNL Adobe Stock] Assets zu suchen, in einer Vorschau anzuzeigen und zu lizenzieren.
-[!DNL Assets] aus [!DNL Adobe Stock], die lizenziert und in [!DNL Experience Manager] gespeichert wurden, stehen umfangreicheren Teams zur Verfügung, die auf [!DNL Experience Manager Assets] -Bereitstellung zugreifen. Kreativprofis hingegen, die Assets aus [!DNL Adobe Stock] über [!DNL Creative Cloud] -Libraries-Bedienfeld lizenzieren, stehen die Assets standardmäßig nur in ihrem [!DNL Creative Cloud]-Konto zur Verfügung.
+**Arbeiten mit Assets, die aus [!DNL Adobe Stock] in [!DNL Experience Manager] in[!DNL Creative Cloud]** gespeichert wurden. Diese Integration ist unabhängig von [!DNL Adobe Asset Link], aber [!DNL Adobe Asset Link] erkennt diese Assets, die aus [!DNL Stock] gespeichert wurden, und zeigt zusätzliche Metadaten und ein [!DNL Adobe Stock]-Logo auf diesen Assets in der [!DNL Adobe Asset Link]-Erweiterungs-Benutzeroberfläche in [!DNL Photoshop], [!DNL Illustrator] oder [!DNL InDesign] an. Die Dateien sind zum Durchsuchen, Öffnen usw. verfügbar, da sie durch das Speichern in [!DNL Experience Manager] zu regulären Assets werden.
+Kreativprofis, die in [!DNL Creative Cloud]-Programmen mit vorhandener[!DNL Adobe Asset Link]-Erweiterung arbeiten, haben zusätzlich zum Zugriff auf bereits lizenzierte Assets aus [!DNL Adobe Stock] in [!DNL Experience Manager] auch Zugriff auf das [!DNL Creative Cloud]-Libraries-Bedienfeld, um [!DNL Adobe Stock]-Assets zu suchen, in einer Vorschau anzuzeigen und zu lizenzieren.
+[!DNL Assets] aus [!DNL Adobe Stock], die lizenziert und in [!DNL Experience Manager] gespeichert wurden, stehen umfangreicheren Teams zur Verfügung, die auf die [!DNL Experience Manager Assets]-Bereitstellung zugreifen. Kreativprofis hingegen, die Assets aus [!DNL Adobe Stock] über das [!DNL Creative Cloud]-Libraries-Bedienfeld lizenzieren, stehen die Assets standardmäßig lediglich in ihrem eigenen [!DNL Creative Cloud]-Konto zur Verfügung.
 
 <!-- 
 TBD: A condensed version of the below content is better placed in the Adobe DAM introduction article.

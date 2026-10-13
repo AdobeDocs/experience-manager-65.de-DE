@@ -9,13 +9,22 @@ exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 12b370e3041ff179cd249f3d4e6ef584c4339909
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 100%
-
 ---
-
 # Verwenden von cURL mit AEM{#using-curl-with-aem}
 
 Admins müssen häufig auszuführende Aufgaben in einem System oft automatisieren oder vereinfachen. In AEM stellen beispielsweise die Benutzerverwaltung, die Installation von Paketen und die Verwaltung von OSGi-Bundles Aufgaben dar, die häufig durchgeführt werden müssen.
@@ -225,13 +234,13 @@ Detaillierte Informationen finden Sie unter [Sichern und Wiederherstellen](/help
 
 ### OSGi {#osgi}
 
-#### Starten eines Bundles {#starting-a-bundle}
+#### Starten eines Pakets {#starting-a-bundle}
 
 ```shell
 curl -u <user>:<password> -Faction=start http://localhost:4502/system/console/bundles/<bundle-name>
 ```
 
-#### Stoppen eines Bundles {#stopping-a-bundle}
+#### Stoppen eines Pakets {#stopping-a-bundle}
 
 ```shell
 curl -u <user>:<password> -Faction=stop http://localhost:4502/system/console/bundles/<bundle-name>

@@ -11,13 +11,27 @@ feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d8e79b3c-92b5-4c4d-a46c-5f16d63a14dc
+    internal-label: Viewer presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4530'
-ht-degree: 94%
-
+source-wordcount: '4651'
+ht-degree: 96%
 ---
-
 # Verwalten von Viewer-Vorgaben{#managing-viewer-presets}
 
 Eine Viewer-Vorgabe ist eine Sammlung aus Einstellungen, die bestimmen, wie Benutzer Rich-Media-Assets auf ihren Computer-Bildschirmen und Mobilgeräten anzeigen. Wenn Sie Administrator sind, können Sie Viewer-Vorgaben erstellen. Die Einstellungen sind für eine Reihe von Viewer-Konfigurationsoptionen verfügbar. Sie können beispielsweise die Anzeigegröße des Viewers oder das Zoomverhalten ändern.
@@ -59,7 +73,7 @@ Weitere Informationen zum Einbetten responsiver Viewer auf Webseiten finden Sie 
 
 >[!NOTE]
 >
->Veröffentlichen Sie alle vordefinierten Viewer, bevor Sie sie zum ersten Mal verwenden.
+>Veröffentlichen Sie alle vorkonfigurierten Viewer, bevor Sie sie zum ersten Mal verwenden.
 >Siehe [Veröffentlichen von Viewer-Vorgaben].(#publishing-viewer-presets)
 
 ### Systemkompatibilität der Viewer-Vorgaben {#viewer-preset-system-compatibility}
@@ -162,11 +176,11 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
 
 >[!NOTE]
 >
->Alle vordefinierten Viewer-Vorgaben in Dynamic Media sind bereits aktiviert. Sie müssen sie jedoch noch veröffentlichen.
+>Alle vorkonfigurierten Viewer-Vorgaben in Dynamic Media sind bereits aktiviert. Sie müssen sie allerdings noch veröffentlichen.
 >Siehe [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
 >
 >Alle neuen Viewer-Vorgaben, die Sie erstellen und hinzufügen, müssen aktiviert *und* veröffentlicht werden.
->Siehe [Aktivieren oder Deaktivieren von Viewer](#activating-or-deactivating-viewer-presets)Vorgaben und [Veröffentlichen von Viewer](#publishing-viewer-presets).
+>Siehe [Aktivieren oder Deaktivieren von Viewer-Vorgaben](#activating-or-deactivating-viewer-presets) und [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
 
 <table>
  <tbody>
@@ -391,7 +405,7 @@ Experience Manager zeigt viele verschiedene Viewer-Vorgaben an, wenn Sie ein Ass
 
 **Erhöhen der Anzahl der angezeigten Viewer-Vorgaben:**
 
-1. https://localhost Navigieren Sie zu CRXDE Lite ([:4502/crx/de](https://localhost:4502/crx/de)).
+1. Navigieren Sie zu CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigieren Sie zum Knoten mit der Viewer-Vorgabenliste am folgenden Speicherort:
 
    `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
@@ -458,15 +472,15 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
    >Für Schaltflächengrafiken wählen Sie das 2x-Bild aus und laden Sie Grafiken mit hoher Auflösung hoch. Beim Arbeiten mit interaktiven Bildern und Bannern mit Einkaufsfunktion können Sie auch aus verschiedenen standardmäßig vorhandenen Hotspot-Schaltflächen wählen.
 
 1. (Optional) Klicken Sie in der Nähe des oberen Bereichs der Seite „Viewer-Vorgabe bearbeiten“ auf **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** oder **[!UICONTROL Smartphone]**, um visuelle Stile für verschiedene Geräte- und Bildschirmtypen individuell zu definieren.
-1. Wählen Sie auf der Seite „Viewer-Vorgabe bearbeiten“ die Registerkarte **[!UICONTROL Verhalten]** aus. Alternativ können Sie jedes visuelle Element im Viewer auswählen, um es für die Konfiguration auszuwählen.
-Beispielsweise können Sie für den *VideoPlayer*-Typ unter **[!UICONTROL Modifiers]** > **[!UICONTROL Play]** aus einer von drei Streaming-Optionen für adaptive Bit-Raten auswählen:
+1. Wählen Sie auf der Seite „Viewer-Vorgaben-Editor“ die Registerkarte **[!UICONTROL Verhalten]**. Sie können auch auf ein beliebiges visuelles Element im Viewer klicken, um es zum Konfigurieren auszuwählen.
+Beispiel: Beim *VideoPlayer*-Typ können Sie unter **[!UICONTROL Modifikatoren]** > **[!UICONTROL Wiedergabe]** aus einer von drei Streaming-Optionen für adaptive Bit-Raten auswählen:
 
    * **[!UICONTROL DASH]** – Video-Stream nur als DASH. Auf Safari-/iOS-Geräten müssen Sie allerdings stattdessen **[!UICONTROL HLS]** als Typ angeben.
    * **[!UICONTROL HLS]** – Video-Stream nur als HLS.
    * **[!UICONTROL Auto]** – Best Practice. Die Erstellung von DASH- und HLS-Streams ist speicheroptimiert. Daher empfiehlt Adobe, immer **[!UICONTROL Auto]** als Wiedergabetyp auszuwählen. Videos streamen als DASH, HLS oder Progressiv, wie in der folgenden Abspielreihenfolge:
-      * Wenn der Browser DASH unterstützt, wird zuerst DASH-Streaming verwendet.
-      * Wenn der Browser DASH nicht unterstützt, wird an zweiter Stelle HLS-Streaming verwendet.
-      * Wenn der Browser weder DASH noch HLS unterstützt, wird als letzte Option die progressive Wiedergabe verwendet.
+     * Wenn der Browser DASH unterstützt, wird zuerst DASH-Streaming verwendet.
+     * Wenn der Browser DASH nicht unterstützt, wird an zweiter Stelle HLS-Streaming verwendet.
+     * Wenn der Browser weder DASH noch HLS unterstützt, wird als letzte Option die progressive Wiedergabe verwendet.
 
 1. Wählen Sie im Pulldown-Menü **[!UICONTROL Ausgewählter Typ]** eine Komponente aus, deren Verhalten Sie ändern möchten.
 
@@ -535,14 +549,14 @@ Das Videountersegment 3 wird nicht über die Miniaturen hinweg erweitert, die ih
 
 Die durch den Viewer zum Bestimmen der Anzahl der im seitlichen Bedienfeld angezeigten Miniaturen verwendete Logik basiert wie folgt auf der Anzahl der verfügbaren Positionen:
 
-* Anzahl der Untersegmente = Aufrundung auf das nächste Untersegment (Anzahl der Miniaturen: Anzahl der sichtbaren Spots im Miniaturansichtsfeld, auf Grundlage der Browser-Fenstergröße).
-Unter Verwendung des Beispiels in der obigen Tabelle ergibt 9 Miniaturansichten : 4 Slots = 2,25, was die Viewer-Logik auf drei Untersegmente aufrundet.
+* Anzahl der Untersegmente = Aufrundung auf das nächste Untersegment (Anzahl der Miniaturen: Anzahl der sichtbaren Spots im Miniaturfeld, auf Grundlage der Browser-Fenstergröße)
+Unter Verwendung des Beispiels in der obigen Tabelle ergibt 9 Miniaturen : 4 Slots = 2,25, was die Viewer-Logik auf drei Untersegmente aufrundet.
 
 * Anzahl der Miniaturen = Aufrundung auf die nächste Miniatur (Anzahl der Miniaturen : Anzahl der Videountersegmente).
 Unter Verwendung des Beispiels in der obigen Tabelle ergibt 9 Miniaturen : 3 Videountersegmente = 3 Miniaturen.
 
 * Dauer des Untersegments = gesamte Videodauer : Anzahl der Videountersegmente.
-Unter Verwendung des Beispiels in der obigen Tabelle ergibt 30 Sekunden : 3 Videountersegmente = 10-Sekunden-Anzeige jedes Videountersegments.
+Unter Verwendung des Beispiels in der obigen Tabelle ergibt 30 Sekunden: 3 Segmente = 10 Sekunden anhaltende Anzeige jedes Segments.
 
 #### Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 

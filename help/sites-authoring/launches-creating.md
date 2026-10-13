@@ -10,13 +10,31 @@ exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1098'
 ht-degree: 97%
-
 ---
-
 # Erstellen von Launches{#creating-launches}
 
 Erstellen Sie einen Launch, um die Aktualisierung einer neuen Version bestehender Web-Seiten für die zukünftige Aktivierung zu aktivieren. Wenn Sie einen Launch erstellen, können Sie einen Titel und die Quellseite angeben:
@@ -41,12 +59,12 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
    * **Launches**:
 
-      1. Wählen Sie **Launch erstellen** aus der Symbolleiste aus, um den Assistenten zu öffnen.
+     1. Wählen Sie **Launch erstellen** aus der Symbolleiste aus, um den Assistenten zu öffnen.
 
    * **Sites**:
 
-      1. Wählen Sie in der Symbolleiste **Erstellen** aus, um das Auswahlfeld zu öffnen.
-      1. Wählen Sie dann **Launch erstellen** aus, um den Assistenten zu öffnen.
+     1. Wählen Sie in der Symbolleiste **Erstellen** aus, um das Auswahlfeld zu öffnen.
+     1. Wählen Sie dann **Launch erstellen** aus, um den Assistenten zu öffnen.
 
    >[!NOTE]
    >
@@ -75,7 +93,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
    * **Unterseiten einschließen**:
 
-      * Geben Sie an, ob der Launch mit den oder ohne die untergeordneten Seiten erstellt werden soll.  Standardmäßig werden Unterseiten eingeschlossen.
+     * Geben Sie an, ob der Launch mit den oder ohne die untergeordneten Seiten erstellt werden soll.  Standardmäßig werden Unterseiten eingeschlossen.
 
    Fahren Sie mit **Weiter** fort.
 
@@ -132,7 +150,7 @@ Das Erstellen eines verschachtelten Launches (eines Launches innerhalb eines Lau
 >
 >Siehe auch [Weiterleiten eines verschachtelten Launches](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch).
 
-#### Erstellen von verschachtelten Launches: Konsole „Launches“  {#creating-a-nested-launch-launches-console}
+#### Erstellen von verschachtelten Launches: Konsole „Launches“ {#creating-a-nested-launch-launches-console}
 
 Das Erstellen eines verschachtelten Launches über die Konsole **Launches** ist im Wesentlichen das Gleiche wie das Erstellen jeder anderen Form eines Launches mit der Ausnahme, dass Sie zu der Launch-Verzweigung `/content/launches` navigieren müssen:
 
@@ -145,7 +163,7 @@ Das Erstellen eines verschachtelten Launches über die Konsole **Launches** ist 
 
    ![Angeben von Eigenschaften](assets/chlimage_1-231.png)
 
-#### Erstellen von verschachtelten Launches: Konsole „Sites“  {#creating-a-nested-launch-sites-console}
+#### Erstellen von verschachtelten Launches: Konsole „Sites“ {#creating-a-nested-launch-sites-console}
 
 So erstellen Sie einen verschachtelten Launch auf Grundlage eines vorhandenen Launches über die Konsole **Sites**:
 
@@ -164,8 +182,8 @@ Sie können einen Launch aus der [Launch-Konsole](/help/sites-authoring/launches
 
 * Wählen Sie den Launch aus, indem Sie auf die Miniaturansicht tippen/klicken.
 * Die Symbolleiste wird angezeigt. Wählen Sie „Klonen“ aus.
-   * Der Klon wird erstellt und in der Konsole angezeigt.
-   * Der **Launch-Titel** gibt an, dass es sich um einen Klon handelt. Sie können den Titel aktualisieren, indem Sie die [Launch-Konfiguration](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) (**Eigenschaften**) bearbeiten.
+  * Der Klon wird erstellt und in der Konsole angezeigt.
+  * Der **Launch-Titel** gibt an, dass es sich um einen Klon handelt. Sie können den Titel aktualisieren, indem Sie die [Launch-Konfiguration](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) (**Eigenschaften**) bearbeiten.
 
 ## Löschen von Launches {#deleting-a-launch}
 

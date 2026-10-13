@@ -10,13 +10,25 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2cc34ce568fc533d41f53d8007825264ca9baad3
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '5471'
 ht-degree: 93%
-
 ---
-
 # Benutzerverwaltung und Sicherheit{#user-administration-and-security}
 
 In diesem Kapitel wird beschrieben, wie die Benutzerautorisierung konfiguriert und verwaltet wird. Außerdem werden die Grundlagen für die Funktionsweise von Authentifizierung und Autorisierung in AEM beschrieben.
@@ -184,7 +196,7 @@ Aktionen können auf einer Seite (Ressource) ausgeführt werden. Für jede Seite
     <ul>
      <li>vorhandene Absätze von der Seite oder einer untergeordneten Seite löschen.</li>
      <li>eine Seite oder untergeordnete Seite löschen.</li>
-    </ul> <p>Wenn <strong>Verändern</strong> abgelehnt wird, werden die Unterstrukturen unterhalb von jcr:content ausgeschlossen, da das Entfernen von jcr:content und seiner Unterknoten als Seitenänderung betrachtet wird. Dies gilt nur für die Knoten, die einen untergeordneten jcr:content-Knoten definieren.</p> </td>
+    </ul> <p>Wenn <strong>Verändern</strong> abgelehnt wird, werden die Unterstrukturen unterhalb von jcr:content ausgeschlossen, da das Entfernen von jcr:content und seiner untergeordneten Knoten als Seitenänderung betrachtet wird. Dies gilt nur für die Knoten, die einen untergeordneten jcr:content-Knoten definieren.</p> </td>
   </tr>
   <tr>
    <td>ACL lesen</td>

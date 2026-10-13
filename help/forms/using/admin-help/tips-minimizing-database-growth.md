@@ -1,6 +1,6 @@
 ---
 title: Tipps zum Minimieren des Datenbankwachstums
-description: 'Langlebige Prozesse speichern Prozessdaten in der AEM Forms-Datenbank. Das Wachstum der AEM Forms-Datenbank kann mithilfe weniger einfacher Prozessentwurfs- und Produktkonfigurationsstrategien minimiert werden. '
+description: Langlebige Prozesse speichern Prozessdaten in der AEM Forms-Datenbank. Das Wachstum der AEM Forms-Datenbank kann mithilfe weniger einfacher Prozessentwurfs- und Produktkonfigurationsstrategien minimiert werden.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -9,16 +9,30 @@ exl-id: f64efb06-815a-4608-ba1c-39e22f344ebb
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 93%
-
+source-wordcount: '419'
+ht-degree: 94%
 ---
-
 # Tipps zum Minimieren des Datenbankwachstums {#tips-for-minimizing-database-growth}
 
-Langlebige Prozesse speichern Prozessdaten in der AEM Forms-Datenbank. Das Wachstum der AEM Forms-Datenbank kann mithilfe weniger einfacher Prozessentwurfs- und Produktkonfigurationsstrategien minimiert werden. 
+Langlebige Prozesse speichern Prozessdaten in der AEM Forms-Datenbank. Das Wachstum der AEM Forms-Datenbank kann mithilfe weniger einfacher Prozessentwurfs- und Produktkonfigurationsstrategien minimiert werden.
 
 ## Tipps zum Prozessentwurf {#process-design-tips}
 
@@ -26,12 +40,12 @@ Verwenden Sie kurzlebige Prozesse, wann immer dies möglich ist. Kurzlebige Proz
 
 Einige Dienstvorgänge, z. B. der Vorgang „Aufgabe zuweisen“ (User-Dienst), müssen in langlebigen Prozessen verwendet werden. In diesem Fall können Sie den Prozess in mehrere Unterprozesse aufteilen und daraus kurzlebige Prozesse machen, wo dies möglich ist. Wenn Sie diese Strategie verwenden, sollten kurzlebige Prozesse große Datenelemente, z. B. Dokumentwerte, verarbeiten können.
 
-Verwenden Sie Variablen nur sparsam.  Wenn Sie langlebige Prozesse verwenden, wird bei jeder Prozessinstanz für jede Variable im Prozess Speicherplatz in der Datenbank zugewiesen. Wenn Sie Variablen strategisch verwenden, können Sie hier viel Speicherplatz sparen. Sie können beispielsweise Variablenwerte überschreiben, wenn alte Werte nicht mehr in dem Prozess benötigt werden. Und Sie können alle von Ihnen erstellten Variablen, die Sie nicht mehr verwenden, löschen. Sie können den Prozess überprüfen, um nicht verwendete Variablen zu suchen.
+Verwenden Sie Variablen nur sparsam. Wenn Sie langlebige Prozesse verwenden, wird bei jeder Prozessinstanz für jede Variable im Prozess Speicherplatz in der Datenbank zugewiesen. Wenn Sie Variablen strategisch verwenden, können Sie hier viel Speicherplatz sparen. Sie können beispielsweise Variablenwerte überschreiben, wenn alte Werte nicht mehr in dem Prozess benötigt werden. Und Sie können alle von Ihnen erstellten Variablen, die Sie nicht mehr verwenden, löschen. Sie können den Prozess überprüfen, um nicht verwendete Variablen zu suchen.
 
 Verwenden Sie einfache Variablentypen (z. B. String oder Int) und vermeiden Sie es, wo immer möglich, komplexe Variablentypen zu verwenden. Speicherplatz in der Datenbank wird Variablen auch dann zugewiesen, wenn diese keinen Wert enthalten. Komplexe Variablen erfordern in der Regel mehr Speicherplatz als einfache Variablen.
 
 ## Tipps zur Produktverwaltung {#product-administration-tips}
 
-Verwenden Sie den globalen Dokumentenspeicher (GDS) effizient.  Das GDS-Verzeichnis auf dem Formular-Server wird unter anderem zum Speichern von Dateien verwendet, die an Dienste übergeben werden, die Teil von AEM Forms in Prozessen sind. Zum Verbessern der Leistung werden kleinere Dokumente stattdessen im Arbeitsspeicher gespeichert und bleiben in der Datenbank erhalten.
+Verwenden Sie den globalen Dokumentenspeicher (GDS) effizient. Das GDS-Verzeichnis auf dem Formular-Server wird unter anderem zum Speichern von Dateien verwendet, die an Dienste übergeben werden, die Teil von AEM Forms in Prozessen sind. Zum Verbessern der Leistung werden kleinere Dokumente stattdessen im Arbeitsspeicher gespeichert und bleiben in der Datenbank erhalten.
 
-Die Administrationskonsole stellt die Eigenschaft „Standardmäßige Maximalgröße für Inline-Dokumente“ zum Konfigurieren der Maximalgröße von Dokumenten bereit, die im Arbeitsspeicher gespeichert werden und in der Datenbank erhalten bleiben. (Siehe [Konfigurieren allgemeiner AEM-Formulareinstellungen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Wenn Sie diese Eigenschaft auf einen niedrigen Wert setzen, bleiben die meisten Dokumente im Ordner des globalen Dokumentenspeichers (GDS) und nicht in der Datenbank erhalten. Der Vorteil besteht darin, dass Sie nicht mehr benötigte Dateien leichter löschen können, wenn sie im GDS-Verzeichnis gespeichert sind.
+Die Administrationskonsole stellt die Eigenschaft „Standardmäßige Maximalgröße für Inline-Dokumente“ zum Konfigurieren der Maximalgröße von Dokumenten bereit, die im Arbeitsspeicher gespeichert werden und in der Datenbank erhalten bleiben. (Siehe [Allgemeine AEM Forms-Einstellungen konfigurieren](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Wenn Sie diese Eigenschaft auf einen niedrigen Wert festlegen, werden die meisten Dokumente im Ordner des globalen Dokumentenspeichers und nicht in der Datenbank gespeichert. Der Vorteil besteht darin, dass Sie nicht mehr benötigte Dateien leichter löschen können, wenn sie im GDS-Verzeichnis gespeichert sind.

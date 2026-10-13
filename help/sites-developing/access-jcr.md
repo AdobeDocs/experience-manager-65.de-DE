@@ -9,20 +9,34 @@ exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,JCR
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: cd14456d-a492-4b5c-8a82-1fbd4460dbd2
+    internal-label: Java Content Repository
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '603'
 ht-degree: 100%
-
 ---
-
 # Anleitung für den programmgesteuerten Zugriff auf das AEM-JCR{#how-to-programmatically-access-the-aem-jcr}
 
-Sie können programmgesteuert Knoten und Eigenschaften ändern, die sich innerhalb des Adobe CQ-Repositorys befinden, das Teil von Adobe Experience Cloud ist. Um auf das CQ-Repository zuzugreifen, verwenden Sie die Java™ Content Repository(JCR)-API. Sie können die Java™ JCR-API zum Erstellen, Ersetzen, Aktualisieren und Löschen (CRUD, Create, Replace, Update, Delete) von Inhalten verwenden, die sich im Adobe CQ-Repository befinden.  Weitere Informationen zur Java™ JCR-API finden Sie unter [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html)
+Sie können programmgesteuert Knoten und Eigenschaften ändern, die sich innerhalb des Adobe CQ-Repositorys befinden, das Teil von Adobe Experience Cloud ist. Um auf das CQ-Repository zuzugreifen, verwenden Sie die Java™ Content Repository(JCR)-API. Sie können die Java™ JCR-API zum Erstellen, Ersetzen, Aktualisieren und Löschen (CRUD, Create, Replace, Update, Delete) von Inhalten verwenden, die sich im Adobe CQ-Repository befinden. Weitere Informationen zur Java™ JCR-API finden Sie unter [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html)
 
 >[!NOTE]
 >
->In diesem Entwicklungsartikel wird der Adobe CQ JCR von einer externen Java™-Anwendung aus geändert.  Im Gegensatz dazu können Sie den JCR mithilfe der JCR-API innerhalb eines OSGi-Bundles ändern.  Details finden Sie unter [Beibehalten von CQ-Daten im Java™ Content Repository](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de).
+>In diesem Entwicklungsartikel wird der Adobe CQ JCR von einer externen Java™-Anwendung aus geändert. Im Gegensatz dazu können Sie den JCR mithilfe der JCR-API innerhalb eines OSGi-Pakets ändern. Details finden Sie unter [Beibehalten von CQ-Daten im Java™ Content Repository](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de).
 
 >[!NOTE]
 >
@@ -78,7 +92,7 @@ day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suit
 
 ## Abrufen von Knotenwerten {#retrieve-node-values}
 
-Zum Abrufen eines Knotens und seines Werts rufen Sie die Methode `getNode` der `Node`-Instanz auf und übergeben Sie einen Zeichenfolgenwert, der den vollqualifizierten Pfad zum Knoten darstellt. Betrachten Sie die im vorherigen Code-Beispiel erstellte Knotenstruktur.  Um den Tagesknoten abzurufen, geben Sie „adobe/day“ an, wie im folgenden Code gezeigt:
+Zum Abrufen eines Knotens und seines Werts rufen Sie die Methode `getNode` der `Node`-Instanz auf und übergeben Sie einen Zeichenfolgenwert, der den vollqualifizierten Pfad zum Knoten darstellt. Betrachten Sie die im vorherigen Code-Beispiel erstellte Knotenstruktur. Um den Tagesknoten abzurufen, geben Sie „adobe/day“ an, wie im folgenden Code gezeigt:
 
 ```java
 // Retrieve content

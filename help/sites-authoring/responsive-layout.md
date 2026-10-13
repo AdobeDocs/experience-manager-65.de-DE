@@ -9,13 +9,26 @@ exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1853'
-ht-degree: 100%
-
+source-wordcount: '1873'
+ht-degree: 97%
 ---
-
 
 # Responsives Layout{#responsive-layout}
 
@@ -36,7 +49,7 @@ Der Layout-Container:
 * Bietet horizontale Ausrichtung am Raster sowie die Möglichkeit, Komponenten nebeneinander im Raster zu platzieren und zu definieren, wann sie reduziert werden/umfließen sollen.
 * Verwendet vordefinierte Breakpoints (z. B. für Smartphones und Tablets), mit denen Sie das erforderliche Verhalten von Inhalten für die zugehörigen Geräte/Ausrichtungen definieren können.
 
-   * Sie können beispielsweise die Komponentengröße anpassen oder festlegen, ob die Komponente auf bestimmten Geräten angezeigt werden soll.
+  * Sie können beispielsweise die Komponentengröße anpassen oder festlegen, ob die Komponente auf bestimmten Geräten angezeigt werden soll.
 
 * Kann verschachtelt werden, um die Spaltensteuerung zuzulassen.
 
@@ -57,7 +70,7 @@ Das responsive Layout für Ihre Seiten wird von AEM durch eine Kombination von M
   Sobald der Layout-Container auf der Seite positioniert ist, können Sie im **Layout**-Modus Inhalte im responsiven Raster positionieren.
 
 * [**Emulator**](#selecting-a-device-to-emulate)
-Damit können Sie responsive Websites erstellen und bearbeiten, die ihr Layout durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße anpassen. Die Benutzerin oder der Benutzer kann sich mit dem Emulator ansehen, wie der Inhalt gerendert wird.
+Auf diese Weise können Sie responsive Websites erstellen und bearbeiten, deren Layout durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße angepasst wird. Die Benutzerin oder der Benutzer kann sich mit dem Emulator ansehen, wie der Inhalt gerendert wird.
 
 Mit diesen responsiven Rastermechanismen können Sie:
 
@@ -86,10 +99,10 @@ AEM ermöglicht die Definition von Layouts, die von der Breite des Geräts abhä
 * Mit dem Emulator können Sie diese Layouts auf einer Reihe von Geräten emulieren. Abgesehen vom Gerätetyp kann sich auch die durch die Option **Gerät drehen** ausgewählte Ausrichtung auf den ausgewählten Breakpoint auswirken, da sich die Breite ändert.
 * Breakpoints sind Punkte, die die Layout-Definitionen trennen.
 
-   * Sie definieren die maximale Breite (in Pixel) der Geräte, die ein bestimmtes Layout verwenden.
-   * Breakpoints gelten in der Regel für eine Auswahl an Geräten und hängen von der Breite der Displays ab.
-   * Ein Breakpoint reicht nach links bis zum nächsten Breakpoint.
-   * Sie können den Breakpoint nicht spezifisch auswählen - durch die Auswahl eines Geräts und einer Ausrichtung wird der entsprechende Breakpoint automatisch ausgewählt.
+  * Sie definieren die maximale Breite (in Pixel) der Geräte, die ein bestimmtes Layout verwenden.
+  * Breakpoints gelten in der Regel für eine Auswahl an Geräten und hängen von der Breite der Displays ab.
+  * Ein Breakpoint reicht nach links bis zum nächsten Breakpoint.
+  * Sie können den Breakpoint nicht spezifisch auswählen - durch die Auswahl eines Geräts und einer Ausrichtung wird der entsprechende Breakpoint automatisch ausgewählt.
 
 Das Gerät **Desktop**, das keine bestimmte Breite aufweist und sich auf den Standard-Breakpoint bezieht (d. h. auf alles über dem letzten konfigurierten Breakpoint).
 
@@ -208,13 +221,13 @@ Der **Layout**-Modus kann auf zwei Arten aktiviert werden.
 
 * Durch Verwenden des [Modusmenüs in der Symbolleiste](/help/sites-authoring/author-environment-tools.md#page-modes) und Auswählen des **Layout**-Modus
 
-   * Wählen Sie den **Layout**-Modus so aus, wie Sie den Modus **Bearbeiten** oder **Targeting** auswählen.
-   * Der **Layout**-Modus wird zunächst automatisch beibehalten. Sie können den **Layout**-Modus nur beenden, indem Sie über die Modusauswahl einen anderen Modus auswählen.
+  * Wählen Sie den **Layout**-Modus so aus, wie Sie den Modus **Bearbeiten** oder **Targeting** auswählen.
+  * Der **Layout**-Modus wird zunächst automatisch beibehalten. Sie können den **Layout**-Modus nur beenden, indem Sie über die Modusauswahl einen anderen Modus auswählen.
 
 * Beim [Bearbeiten einer einzelnen Komponente.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
-   * Durch Verwendung der Option **Layout** im Schnellaktionsmenü der Komponente können Sie in den **Layout**-Modus wechseln.
-   * Der **Layout**-Modus bleibt während der Bearbeitung der Komponente bestehen und kehrt in den Modus **Bearbeiten** zurück, sobald der Fokus zu einer anderen Komponente wechselt.
+  * Durch Verwendung der Option **Layout** im Schnellaktionsmenü der Komponente können Sie in den **Layout**-Modus wechseln.
+  * Der **Layout**-Modus bleibt während der Bearbeitung der Komponente bestehen und kehrt in den Modus **Bearbeiten** zurück, sobald der Fokus zu einer anderen Komponente wechselt.
 
 Im Layout-Modus können Sie verschiedene Aktionen für ein Raster ausführen:
 
@@ -228,17 +241,17 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster ausführen:
 
 * Wenn Sie auf eine Inhaltskomponente klicken, bietet Ihnen die Symbolleiste folgende Möglichkeiten:
 
-   * **Übergeordnetes Element**
+  * **Übergeordnetes Element**
 
-     Hierüber können Sie die ganze Layout-Container-Komponente auswählen, um diese insgesamt zu bearbeiten.
+    Hierüber können Sie die ganze Layout-Container-Komponente auswählen, um diese insgesamt zu bearbeiten.
 
-   * **In neue Zeile verschieben**
+  * **In neue Zeile verschieben**
 
-     Die Komponente wird abhängig von dem innerhalb des Rasters verfügbaren Platz in eine neue Zeile verschoben.
+    Die Komponente wird abhängig von dem innerhalb des Rasters verfügbaren Platz in eine neue Zeile verschoben.
 
-   * **Komponente ausblenden**
+  * **Komponente ausblenden**
 
-     Die Komponente wird unsichtbar (sie kann über die Symbolleiste des Layout-Containers wiederhergestellt werden).
+    Die Komponente wird unsichtbar (sie kann über die Symbolleiste des Layout-Containers wiederhergestellt werden).
 
   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
@@ -246,33 +259,34 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster ausführen:
 
   Die Symbolleiste bietet je nach Status der Layout-Komponente und der zugehörigen Komponenten unterschiedliche Optionen. Beispiel:
 
-   * **Übergeordnetes Element**: Wählt die übergeordnete Komponente aus.
+  * **Übergeordnetes Element**: Wählt die übergeordnete Komponente aus.
 
-     ![Übergeordnetes Element](do-not-localize/screen_shot_2018-03-23at090823.png)
+    ![Übergeordnetes Element](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Ausgeblendete Komponenten anzeigen**: Blendet alle oder einzelne Komponenten ein. Die Zahl gibt an, wie viele ausgeblendete Komponenten es derzeit gibt. Der Zähler zeigt an, wie viele Komponenten ausgeblendet sind.
+  * **Ausgeblendete Komponenten anzeigen**: Blendet alle oder einzelne Komponenten ein. Die Zahl gibt an, wie viele ausgeblendete Komponenten es derzeit gibt. Der Zähler zeigt an, wie viele Komponenten ausgeblendet sind.
 
-     ![Verborgene Komponenten einblenden](do-not-localize/screen_shot_2018-03-23at091007.png)
+    ![Verborgene Komponenten einblenden](do-not-localize/screen_shot_2018-03-23at091007.png)
 
-   * **Breakpoint-Layout zurücksetzen**: Stellt das Standard-Layout wieder her. Dies bedeutet, dass kein benutzerdefiniertes Layout vorgegeben wird.
+  * **Breakpoint-Layout zurücksetzen**: Stellt das Standard-Layout wieder her. Dies bedeutet, dass kein benutzerdefiniertes Layout vorgegeben wird.
 
-     ![Breakpoint-Layout zurücksetzen](do-not-localize/screen_shot_2018-03-23at091013.png)
+    ![Breakpoint-Layout zurücksetzen](do-not-localize/screen_shot_2018-03-23at091013.png)
 
-   * **In neue Zeile verschieben**: Verschiebt die Komponente um eine Position nach oben, wenn der Leerraum dies erlaubt.
+  * **In neue Zeile verschieben**: Verschiebt die Komponente um eine Position nach oben, wenn der Leerraum dies erlaubt.
 
-     ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
+    ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
 
-   * **Komponente ausblenden**: Blendet die aktuelle Komponente aus.
+  * **Komponente ausblenden**: Blendet die aktuelle Komponente aus.
 
-     ![Komponente ausblenden](do-not-localize/screen_shot_2018-03-23at090834.png)
+    ![Komponente ausblenden](do-not-localize/screen_shot_2018-03-23at090834.png)
 
-     >[!NOTE]
-     >
-     >Im obigen Beispiel sind die Aktionen zum Verschieben und Ausblenden verfügbar, weil dieser Layout-Container in einem übergeordneten Layout-Container verschachtelt ist.
+    >[!NOTE]
+    >
+    >Im obigen Beispiel sind die Aktionen zum Verschieben und Ausblenden verfügbar, weil dieser Layout-Container in einem übergeordneten Layout-Container verschachtelt ist.
 
-   * **Komponenten einblenden**: Ermöglicht das Auswählen der übergeordneten Komponenten, um die Aktionssymbolleiste mit der Option **Verborgene Komponenten einblenden** anzuzeigen. In diesem Beispiel gibt es zwei ausgeblendete Komponenten.
+  * **Komponenten einblenden**
+    Wählen Sie die übergeordneten Komponenten aus, um die Aktionssymbolleiste mit der Option **Ausgeblendete Komponenten anzeigen** anzuzeigen. In diesem Beispiel gibt es zwei ausgeblendete Komponenten.
 
-     ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
+    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
   Bei Auswahl der Option **Ausgeblendete Komponenten anzeigen** werden die jeweils ausgeblendeten Komponenten in Blau an ihren ursprünglichen Positionen angezeigt.
 

@@ -10,13 +10,22 @@ exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1824'
 ht-degree: 99%
-
 ---
-
 # Experience Fragments {#experience-fragments}
 
 ## Grundlagen {#the-basics}
@@ -64,11 +73,11 @@ Der Selektor für die einfache Ausgabe verwendet einen Transformator im Gegensat
 Die HTML-Ausgabedarstellung wird mit den Sling Rewriter Pipelines erstellt. Die Pipeline ist unter `/libs/experience-fragments/config/rewriter/experiencefragments` definiert. Der HTML-Transformer unterstützt die folgenden Optionen:
 
 * `allowedCssClasses`
-   * Ein RegEx-Ausdruck, der den CSS-Klassen entspricht, die in der endgültigen Wiedergabe belassen werden sollen.
-   * Dies ist nützlich, wenn kundenseitig einige bestimmte CSS-Klassen entfernt werden sollen.
+  * Ein RegEx-Ausdruck, der den CSS-Klassen entspricht, die in der endgültigen Wiedergabe belassen werden sollen.
+  * Dies ist nützlich, wenn kundenseitig einige bestimmte CSS-Klassen entfernt werden sollen.
 * `allowedTags`
-   * Eine Liste der HTML-Tags, die in der endgültigen Ausgabedarstellung zulässig sein sollen.
-   * Standardmäßig sind die folgenden Tags zulässig (keine Konfiguration erforderlich): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link und script
+  * Eine Liste der HTML-Tags, die in der endgültigen Ausgabedarstellung zulässig sein sollen.
+  * Standardmäßig sind die folgenden Tags zulässig (keine Konfiguration erforderlich): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link und script
 
 Es wird empfohlen, den Rewriter mit einer Überlagerung zu konfigurieren. Siehe [Überlagerungen](/help/sites-developing/overlays.md)
 
@@ -86,12 +95,12 @@ Dazu müssen die folgenden Eigenschaften verwendet werden:
 
 * Zur Extraktion des Bildes
 
-   * `fileReference`
-   * `fileName`
+  * `fileReference`
+  * `fileName`
 
 * Zur Extraktion des Texts
 
-   * `text`
+  * `text`
 
 Komponenten, die diese Konvention nicht verwenden, werden nicht berücksichtigt.
 
@@ -114,7 +123,7 @@ Um eine Experience Fragment-Vorlage zu erstellen, die vom **Experience Fragment*
 
    1. Der Name der Vorlage muss beginnen mit:
       `experience-fragments`
-Dadurch können Benutzer Experience Fragments in /content/experience-fragments erstellen, da die `cq:allowedTemplates`-Eigenschaft dieses Ordners alle Vorlagen enthält, deren Namen mit `experience-fragment` beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
+      Dadurch können Benutzer Experience Fragments in /content/experience-fragments erstellen, da die `cq:allowedTemplates`-Eigenschaft dieses Ordners alle Vorlagen enthält, deren Namen mit `experience-fragment` beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
 
 1. [Zulässige Vorlagen](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder) können in der Experience Fragments-Konsole konfiguriert werden.
 <!--
@@ -190,7 +199,7 @@ Für diese Anwendungsfälle stellt AEM die Link Rewriter Provider-Schnittstelle 
 >
 >Diese Benutzeroberfläche wurde in [AEM 6.5 SP1 (6.5.1.0) eingeführt](/help/release-notes/previous/6-5-1.md).
 
-Für kompliziertere Fälle, die nicht vom [Standard](#default-link-rewriting) abgedeckt werden, bietet AEM die Link Rewriter Provider-Schnittstelle. Dies ist eine `ConsumerType`-Schnittstelle, die Sie als Service in Ihren Bundles implementieren können. Sie umgeht die Änderungen, die AEM an internen Links eines HTML-Angebots vornimmt, die aus einem Experience Fragment gerendert wurden. Diese Schnittstelle ermöglicht es Ihnen, das Umschreiben interner HTML-Links an Ihre geschäftlichen Anforderungen anzupassen.
+Für kompliziertere Fälle, die nicht vom [Standard](#default-link-rewriting) abgedeckt werden, bietet AEM die Link Rewriter Provider-Schnittstelle. Dies ist eine `ConsumerType`-Schnittstelle, die Sie als Service in Ihren Paketen implementieren können. Sie umgeht die Änderungen, die AEM an internen Links eines HTML-Angebots vornimmt, die aus einem Experience Fragment gerendert wurden. Diese Schnittstelle ermöglicht es Ihnen, das Umschreiben interner HTML-Links an Ihre geschäftlichen Anforderungen anzupassen.
 
 Beispiele für Anwendungsfälle für die Implementierung dieser Schnittstelle als Service:
 
@@ -218,7 +227,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 ### Verwendung der Link Rewriter Provider-Schnittstelle {#how-to-use-the-link-rewriter-provider-interface}
 
-Um die Schnittstelle zu verwenden, müssen Sie zunächst ein Bundle mit einer neuen Dienstkomponente erstellen, die die Link Rewriter Provider-Schnittstelle implementiert.
+Um die Schnittstelle zu verwenden, müssen Sie zunächst ein Paket mit einer neuen Dienstkomponente erstellen, die die Link Rewriter Provider-Schnittstelle implementiert.
 
 Dieser Dienst wird verwendet, um das Umschreiben beim Experience Fragment-Export in Target zu ermöglichen, damit auf die verschiedenen Links zugegriffen werden kann.
 
@@ -257,7 +266,7 @@ Damit der Service funktioniert, müssen jetzt drei Methoden innerhalb des Servic
 * ` [shouldRewrite](#shouldrewrite)`
 * ` [rewriteLink](#rewritelink)`
 
-   * `rewriteLinkExample2`
+  * `rewriteLinkExample2`
 
 * ` [getPriority](#priorities-getpriority)`
 
@@ -353,7 +362,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 >[!NOTE]
 >
->Wenn die oben beschriebene Methode `null` zurückgibt, lässt das System „In Target exportieren“ den Link so, wie er ist (ein relativer Link zu einer Ressource).
+>Wenn über die oben beschriebene Methode `null` zurückgegeben wird, belässt das System „In Target exportieren“ den Link unverändert (ein relativer Link zu einer Ressource).
 
 #### Prioritäten – getPriority {#priorities-getpriority}
 

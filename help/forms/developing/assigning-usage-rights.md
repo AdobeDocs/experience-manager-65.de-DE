@@ -9,13 +9,29 @@ role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,Reader Extensions
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 621ad6f8-3769-57bb-838c-1d26cfb18d50
+    internal-label: Reader Extensions
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3973'
 ht-degree: 98%
-
 ---
-
 # Zuweisen von Verwendungsrechten {#assigning-usage-rights}
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
@@ -124,14 +140,14 @@ So wenden Sie mithilfe der API für Acrobat Reader DC-Erweiterungen (Java) Verwe
 
    * Erstellen Sie ein Objekt `ReaderExtensionsOptionSpec`, indem Sie den Konstruktor verwenden. Dieses Objekt enthält Laufzeitoptionen, die für den Service „Acrobat Reader DC-Erweiterungen“ erforderlich sind. Beim Aufrufen dieses Konstruktors müssen Sie die folgenden Werte angeben:
 
-      * Das `UsageRights`-Objekt, das die Verwendungsrechte enthält, die auf das Dokument angewendet werden sollen.
-      * Ein Zeichenfolgenwert, der eine Meldung angibt, die ein Benutzer zu sehen bekommt, wenn das berechtigungsaktivierte PDF-Dokument in Adobe Reader 7.x geöffnet wird. Diese Meldung wird in Adobe Reader 8.0 nicht angezeigt.
+     * Das `UsageRights`-Objekt, das die Verwendungsrechte enthält, die auf das Dokument angewendet werden sollen.
+     * Ein Zeichenfolgenwert, der eine Meldung angibt, die ein Benutzer zu sehen bekommt, wenn das berechtigungsaktivierte PDF-Dokument in Adobe Reader 7.x geöffnet wird. Diese Meldung wird in Adobe Reader 8.0 nicht angezeigt.
 
    * Wenden Sie Verwendungsrechte auf das PDF-Dokument an, indem Sie die Methode `applyUsageRights` des `ReaderExtensionsServiceClient`-Objekts aufrufen und die folgenden Werte übergeben:
 
-      * Das `com.adobe.idp.Document`-Objekt, das das PDF-Dokument enthält, auf das die Verwendungsrechte angewendet werden.
-      * Ein Zeichenfolgenwert, der den Alias der Berechtigung angibt, dank derer Sie Verwendungsrechte anwenden können.
-      * Ein Zeichenfolgenwert, der den entsprechenden Kennwortwert angibt. (Derzeit wird dieser Parameter ignoriert. Sie können `null` übergeben.)
+     * Das `com.adobe.idp.Document`-Objekt, das das PDF-Dokument enthält, auf das die Verwendungsrechte angewendet werden.
+     * Ein Zeichenfolgenwert, der den Alias der Berechtigung angibt, dank derer Sie Verwendungsrechte anwenden können.
+     * Ein Zeichenfolgenwert, der den entsprechenden Kennwortwert angibt. (Derzeit wird dieser Parameter ignoriert. Sie können `null` übergeben.)
 
    * Das `ReaderExtensionsOptionSpec`-Objekt, das Laufzeitoptionen enthält.
 
@@ -172,10 +188,10 @@ So wenden Sie mithilfe der API für Acrobat Reader DC-Erweiterungen (Webservice)
    * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+     * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Rufen Sie ein PDF-Dokument ab.
 
@@ -197,9 +213,9 @@ So wenden Sie mithilfe der API für Acrobat Reader DC-Erweiterungen (Webservice)
    * Weisen Sie dem Datenelement `message` des `ReaderExtensionsOptionSpec`-Objekts einen Zeichenfolgenwert zu, der die Meldung angibt, die ein Benutzer zu sehen bekommt, wenn das berechtigungsaktivierte PDF-Dokument in Adobe Reader geöffnet wird.
    * Wenden Sie Verwendungsrechte auf das PDF-Dokument an, indem Sie die Methode `applyUsageRights` des `ReaderExtensionsServiceClient`-Objekts aufrufen und die folgenden Werte übergeben:
 
-      * Das `BLOB`-Objekt, das das PDF-Dokument enthält, auf das die Verwendungsrechte angewendet werden.
-      * Ein Zeichenfolgenwert, der den Alias der Berechtigung angibt, dank derer Sie Verwendungsrechte anwenden können.
-      * Ein Zeichenfolgenwert, der den entsprechenden Kennwortwert angibt. (Derzeit wird dieser Parameter ignoriert. Sie können `null` übergeben.)
+     * Das `BLOB`-Objekt, das das PDF-Dokument enthält, auf das die Verwendungsrechte angewendet werden.
+     * Ein Zeichenfolgenwert, der den Alias der Berechtigung angibt, dank derer Sie Verwendungsrechte anwenden können.
+     * Ein Zeichenfolgenwert, der den entsprechenden Kennwortwert angibt. (Derzeit wird dieser Parameter ignoriert. Sie können `null` übergeben.)
 
    * Das `ReaderExtensionsOptionSpec`-Objekt, das Laufzeitoptionen enthält.
 
@@ -328,10 +344,10 @@ Entfernen der Verwendungsrechte aus einem PDF-Dokument mit aktivierten Rechten a
    * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+     * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Rufen Sie ein PDF-Dokument ab.
 
@@ -410,9 +426,9 @@ Nachdem Sie ein PDF-Dokument mit aktivierten Verwendungsrechten abgerufen haben,
 
 [Kurzanleitung zur API des Services „Acrobat Reader DC-Erweiterungen“](/help/forms/developing/acrobat-reader-dc-extensions-service.md#acrobat-reader-dc-extensions-service-java-api-quick-start-soap)
 
-### Abrufen von Berechtigungen mithilfe der Java-API {#retrieve-credential-information-using-the-java-api}
+### Abrufen von Informationen zu Anmeldedaten mithilfe der Java-API {#retrieve-credential-information-using-the-java-api}
 
-Abrufen von Berechtigungen mithilfe der API für Acrobat Reader DC-Erweiterungen (Java):
+Abrufen von Informationen zu Anmeldedaten mithilfe der API für Acrobat Reader DC-Erweiterungen (Java):
 
 1. Schließen Sie Projektdateien ein.
 
@@ -437,15 +453,15 @@ Abrufen von Berechtigungen mithilfe der API für Acrobat Reader DC-Erweiterungen
 
 [Abrufen von Berechtigungsinformationen](assigning-usage-rights.md#retrieving-credential-information)
 
-[Schnellstart (SOAP-Modus): Abrufen von Informationen zu Berechtigungen mithilfe der Java API](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
+[Schnellstart (SOAP-Modus): Abrufen von Informationen zu Anmeldedaten mithilfe der Java API](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Abrufen von Informationen zu Berechtigungen mithilfe der Web-Service-API {#retrieve-credential-information-using-the-web-service-api}
+### Abrufen von Informationen zu Anmeldedaten mithilfe der Web-Service-API {#retrieve-credential-information-using-the-web-service-api}
 
-Abrufen von Informationen zu Berechtigungen mithilfe der API für Acrobat Reader DC-Erweiterungen (Web-Service):
+Abrufen von Informationen zu Anmeldedaten mithilfe der API für Acrobat Reader DC-Erweiterungen (Web-Service):
 
 1. Schließen Sie Projektdateien ein.
 
@@ -463,10 +479,10 @@ Abrufen von Informationen zu Berechtigungen mithilfe der API für Acrobat Reader
    * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+     * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Rufen Sie ein PDF-Dokument ab.
 

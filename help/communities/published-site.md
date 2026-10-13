@@ -10,13 +10,20 @@ exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1212'
 ht-degree: 0%
-
 ---
-
 # Erleben Sie die veröffentlichte Site {#experience-the-published-site}
 
 ## Auf der Veröffentlichungsinstanz zur neuen Site navigieren {#browse-to-new-site-on-publish}
@@ -87,8 +94,8 @@ Sobald Sie als registriertes Community-Mitglied angemeldet sind, beachten Sie di
 * **Profil** Option ermöglicht die Anzeige und Bearbeitung Ihres Profils.
 * [Nachrichten](/help/communities/configure-messaging.md) leitet Sie zum Abschnitt „Direktnachrichten“, in dem Sie Folgendes tun können:
 
-   1. Zeigen Sie die Direktnachrichten an, die Sie erhalten haben (Posteingang), gesendet haben (gesendete Elemente) und gelöscht haben (Papierkorb).
-   1. Erstellen Sie neue Direktnachrichten, damit Sie sie an Einzelpersonen und Gruppen senden können.
+  1. Zeigen Sie die Direktnachrichten an, die Sie erhalten haben (Posteingang), gesendet haben (gesendete Elemente) und gelöscht haben (Papierkorb).
+  1. Erstellen Sie neue Direktnachrichten, damit Sie sie an Einzelpersonen und Gruppen senden können.
 
 * [Benachrichtigungen](/help/communities/notifications.md) leitet Sie zum Abschnitt „Benachrichtigungen“, wo Sie wichtige Ereignisse anzeigen und Benachrichtigungseinstellungen bearbeiten können.
 * [Administration](/help/communities/published-site.md#moderationlink) leitet Sie zur Seite &quot;AEM Communities-Moderation“ weiter, wenn Sie über Moderationsberechtigungen verfügen.
@@ -154,13 +161,13 @@ Fügen Sie beispielsweise zwei `new groups` hinzu.
 
 * Eine namens `Baseball`
 
-   * Legen Sie ihn als `Open Group` fest (erforderliche Mitgliedschaft).
-   * Wählen Sie auf der Registerkarte Vorlagen die Option `Conversational Group` aus.
+  * Legen Sie ihn als `Open Group` fest (erforderliche Mitgliedschaft).
+  * Wählen Sie auf der Registerkarte Vorlagen die Option `Conversational Group` aus.
 
 * Eine namens `Gymnastics`
 
-   * Ändern Sie die Einstellung in `Member Only Group` (eingeschränkte Mitgliedschaft).
-   * Wählen Sie auf der Registerkarte Vorlagen die Option `Conversational Group` aus.
+  * Ändern Sie die Einstellung in `Member Only Group` (eingeschränkte Mitgliedschaft).
+  * Wählen Sie auf der Registerkarte Vorlagen die Option `Conversational Group` aus.
 
 **Hinweis**:
 

@@ -9,13 +9,27 @@ exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '941'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '956'
+ht-degree: 97%
 ---
-
 # Hinzufügen von Domains {#adding-domains}
 
 >[!NOTE]
@@ -27,31 +41,31 @@ ht-degree: 100%
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Klicken Sie auf „Neue Unternehmens-Domain“.
 1. Geben Sie in das Feld „ID“ einen eindeutigen Bezeichner für die Domain und in das Feld „Name“ einen beschreibenden Namen für die Domain ein. (Siehe [Wichtige Einstellungen für Domain-Namen und IDs](adding-domains.md#important-considerations-for-domain-names-and-ids).)
-1. Geben Sie an, ob die Kontosperrung aktiviert werden soll.  (Siehe [Konfigurieren der Einstellungen für die Kontosperrung](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) Standardmäßig ist „Kontosperrung aktivieren“ ausgewählt.
-1. Klicken Sie auf „Authentifizierung hinzufügen“ und wählen Sie in der Liste der Authentifizierungsanbieter einen der Authentifizierungsmethode Ihres Unternehmens entsprechenden Anbieter aus.  Mögliche Werte sind LDAP, Kerberos, SAML oder ein benutzerdefinierter Authentifizierungsanbieter.
+1. Geben Sie an, ob die Kontosperrung aktiviert werden soll. (Siehe [Einstellungen für die Kontosperrung konfigurieren](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) Standardmäßig ist die Option Kontosperrung aktivieren ausgewählt.
+1. Klicken Sie auf „Authentifizierung hinzufügen“ und wählen Sie in der Liste der Authentifizierungsanbieter einen der Authentifizierungsmethode Ihres Unternehmens entsprechenden Anbieter aus. Mögliche Werte sind LDAP, Kerberos, SAML oder ein benutzerdefinierter Authentifizierungsanbieter.
 
-   Wenn Sie LDAP auswählen, können Sie den in Ihrer Ordnerkonfiguration angegebenen LDAP-Server verwenden. Sie können aber auch einen anderen LDAP-Server auswählen, der zur Authentifizierung verwendet werden soll.  Wenn Sie einen anderen Server auswählen, müssen Ihre Benutzenden auf beiden LDAP-Servern vorhanden sein.
+   Wenn Sie LDAP auswählen, können Sie den in Ihrer Ordnerkonfiguration angegebenen LDAP-Server verwenden. Sie können aber auch einen anderen LDAP-Server auswählen, der zur Authentifizierung verwendet werden soll. Wenn Sie einen anderen Server auswählen, müssen Ihre Benutzenden auf beiden LDAP-Servern vorhanden sein.
 
-1. Geben Sie weitere auf dieser Seite angeforderte Informationen ein.  (Siehe [Authentifizierungseinstellungen](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).)
+1. Geben Sie weitere auf dieser Seite angeforderte Informationen ein. (Siehe [Authentifizierungseinstellungen](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).)
 1. Fügen Sie ein Verzeichnis oder ein benutzerdefiniertes Service Provider Interface (SPI) hinzu. (Siehe [Hinzufügen von Verzeichnissen oder benutzerdefinierten SPIs](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis))
 1. Klicken Sie auf „Fertig stellen“ und dann auf „OK“.
 
-Nach dem Erstellen einer Unternehmens-Domain müssen Sie den Ordner manuell synchronisieren oder einen Trigger für die Synchronisierung erstellen, bevor User Management den Ordner verwenden kann. Danach können Sie einen Zeitplan für die Verzeichnissynchronisierung einrichten und bei Bedarf eine manuelle Synchronisierung durchführen.  (Siehe [Synchronisieren von Ordnern](/help/forms/using/admin-help/synchronizing-directories.md#synchronizing-directories).)
+Nach dem Erstellen einer Unternehmens-Domain müssen Sie den Ordner manuell synchronisieren oder einen Trigger für die Synchronisierung erstellen, bevor User Management den Ordner verwenden kann. Danach können Sie einen Zeitplan für die Verzeichnissynchronisierung einrichten und bei Bedarf eine manuelle Synchronisierung durchführen. (Siehe [Synchronisieren von Ordnern](/help/forms/using/admin-help/synchronizing-directories.md#synchronizing-directories).)
 
 ## Hinzufügen einer lokalen Domain {#add-a-local-domain}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Klicken Sie auf „Neue lokale Domain“.
 1. Geben Sie in das Feld ID einen eindeutigen Bezeichner für die Domain ein und in das Feld Name einen beschreibenden Namen für die Domain. (Siehe [Wichtige Einstellungen für Domain-Namen und IDs](adding-domains.md#important-considerations-for-domain-names-and-ids).)
-1. Geben Sie an, ob die Kontosperrung aktiviert werden soll, und klicken Sie auf „OK“.  (Siehe [Konfigurieren der Einstellungen für die Kontosperrung](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) Standardmäßig ist „Kontosperrung aktivieren“ ausgewählt.
+1. Geben Sie an, ob die Kontosperrung aktiviert werden soll, und klicken Sie auf „OK“. (Siehe [Einstellungen für die Kontosperrung konfigurieren](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) Standardmäßig ist die Option Kontosperrung aktivieren ausgewählt.
 
 ## Hybrid-Domain hinzufügen {#add-a-hybrid-domain}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Klicken Sie auf „Neue Hybrid-Domain“.
 1. Geben Sie in das Feld ID einen eindeutigen Bezeichner für die Domain ein und in das Feld Name einen beschreibenden Namen für die Domain. (Siehe [Wichtige Einstellungen für Domain-Namen und IDs](adding-domains.md#important-considerations-for-domain-names-and-ids).)
-1. Klicken Sie auf „Authentifizierung hinzufügen“ und wählen Sie in der Liste der Authentifizierungsanbieter einen der Authentifizierungsmethode Ihres Unternehmens entsprechenden Anbieter aus.  Mögliche Werte sind LDAP, Kerberos, SAML oder ein benutzerdefinierter Authentifizierungsanbieter.
-1. Geben Sie weitere auf dieser Seite angeforderte Informationen ein.  (Siehe [Authentifizierungseinstellungen](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).)
+1. Klicken Sie auf „Authentifizierung hinzufügen“ und wählen Sie in der Liste der Authentifizierungsanbieter einen der Authentifizierungsmethode Ihres Unternehmens entsprechenden Anbieter aus. Mögliche Werte sind LDAP, Kerberos, SAML oder ein benutzerdefinierter Authentifizierungsanbieter.
+1. Geben Sie weitere auf dieser Seite angeforderte Informationen ein. (Siehe [Authentifizierungseinstellungen](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).)
 1. Klicken Sie auf „OK“ und dann erneut auf „OK“.
 
 ## Wichtige Einstellungen für Domain-Namen und IDs {#important-considerations-for-domain-names-and-ids}
@@ -60,7 +74,7 @@ Beachten Sie beim Auswählen eines Domain-Namens und einer ID die folgenden Eins
 
 ### Allgemeine Überlegungen: {#general-considerations}
 
-* Bei Nutzung anderer Datenbankanbieter als DB2 darf die Domain-ID maximal 50 Byte umfassen. Wenn Sie Einzelbyte-Zeichen (ASCII) verwenden, beträgt die Grenze 50 Zeichen.  Enthält die Domain-ID Multibyte-Zeichen, verringert sich dieser Grenzwert. Wenn Sie beispielsweise eine Domain erstellen, deren Bezeichner 3-Byte-Zeichen enthält, beträgt der Grenzwert 16 Zeichen. Das Erstellen von Domains, deren Bezeichner 4-Byte-Zeichen enthalten, ist nicht möglich. Wenn Sie eine Domain-ID erstellen, die diese Grenze überschreitet, versetzt dies AEM Forms in einen instabilen Zustand. Weitere Informationen zum Wiederherstellen des Systems aus diesem instabilen Zustand finden Sie unter [Entfernen einer Domain, die erweiterte Zeichen oder Multibyte-Zeichen enthält](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters) auf dieser Seite.
+* Bei Nutzung anderer Datenbankanbieter als DB2 darf die Domain-ID maximal 50 Byte umfassen. Wenn Sie Einzelbyte-Zeichen (ASCII) verwenden, beträgt die Grenze 50 Zeichen. Enthält die Domain-ID Multibyte-Zeichen, verringert sich dieser Grenzwert. Wenn Sie beispielsweise eine Domain erstellen, deren Bezeichner 3-Byte-Zeichen enthält, beträgt der Grenzwert 16 Zeichen. Das Erstellen von Domains, deren Bezeichner 4-Byte-Zeichen enthalten, ist nicht möglich. Wenn Sie eine Domain-ID erstellen, die diese Grenze überschreitet, versetzt dies AEM Forms in einen instabilen Zustand. Weitere Informationen zum Wiederherstellen des Systems aus diesem instabilen Zustand finden Sie unter [Entfernen einer Domain, die erweiterte Zeichen oder Multibyte-Zeichen enthält](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters) auf dieser Seite.
 * Die Anzahl sowohl von Unternehmens- als auch von lokalen Domains, die in AEM Forms erstellt werden können, ist von der Länge jeder einzelnen Domain-ID abhängig. Wenn Sie eine Unternehmens- oder Hybrid-Domain hinzufügen, aktualisiert User Management die Zeichenfolge „configInstance“ im „AuthProviders“-Knoten der AEM Forms-Konfigurationsdatei (config.xml). Die Zeichenfolge „configInstance“ enthält eine durch Doppelpunkt getrennte Liste der absoluten Pfade aller Domains, die dem Autorisierungsanbieter zugeordnet sind. Diese Zeichenfolge ist auf 8192 Zeichen begrenzt. Wenn diese Grenze erreicht ist, können Sie keine zusätzlichen Domains erstellen.
 
 ### Überlegungen zur Verwendung von DB2 {#considerations-when-using-db2}

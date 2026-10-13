@@ -6,13 +6,25 @@ feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 943a855f8eb46837e122c3bf2c2deb3f109b2ea9
-workflow-type: ht
-source-wordcount: '1435'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+workflow-type: tm+mt
+source-wordcount: '1461'
 ht-degree: 100%
-
 ---
-
 # Konfigurieren des Frameworks für die Übersetzungsintegration{#configuring-the-translation-integration-framework}
 
 Das Framework für die Übersetzungsintegration integriert Übersetzungsdienstleistungen von Drittanbietern, um die Übersetzung von AEM-Inhalten zu orchestrieren.
@@ -27,7 +39,7 @@ Einen Überblick über die Funktionen zur Übersetzung von Inhalten in AEM erhal
 
 Erstellen Sie eine Cloud-Konfiguration, die AEM an Ihren Übersetzungsdienstleister anbindet.
 
-AEM enthält die Funktion, standardmäßig eine [Verbindung zu Microsoft® Translator herzustellen](/help/sites-administering/tc-msconf.md). Weitere Übersetzungstechnologieanbieter mit AEM-Connectoren, die dem Adobe Exchange-Partnerprogramm angehören, finden Sie [hier](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=experience+manager+translation&amp;sort=RELEVANCE).
+AEM enthält die Funktion, standardmäßig eine [Verbindung zu Microsoft® Translator herzustellen](/help/sites-administering/tc-msconf.md). Weitere Übersetzungstechnologieanbieter mit AEM-Connectoren, die dem Adobe Exchange-Partnerprogramm angehören, finden Sie [hier](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE).
 
 Wenn Sie ein Connector-Paket installiert haben, können Sie eine Cloud-Konfiguration für den Connector erstellen. In der Regel müssen Sie Ihre Anmeldedaten für die Authentifizierung beim Übersetzungs-Service angeben. Weitere Informationen zum Hinzufügen einer Cloud-Konfiguration für den Microsoft Translator-Connector finden Sie unter [Integrieren mit Microsoft Translator](/help/sites-administering/tc-msconf.md).
 

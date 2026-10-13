@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1741'
 ht-degree: 98%
-
 ---
-
 # Verwalten von Inhaltsfragmenten {#managing-content-fragments}
 
 Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM-Inhaltsfragmente verwalten können, die die Grundlage für Ihren Headless-Content bilden.
@@ -59,7 +71,7 @@ Die Methode zum Erstellen eines Inhaltsfragments ist folgende:
 
    * [Modell](/help/assets/content-fragments/content-fragments-models.md) – wird verwendet, um ein Fragment zu erstellen, für das strukturierte Inhalte erforderlich sind; beispielsweise das **Adventure**-Modell
 
-      * Alle verfügbaren Modelle werden angezeigt.
+     * Alle verfügbaren Modelle werden angezeigt.
 
    Wählen Sie **Weiter** aus, wenn Sie Ihre Auswahl getroffen haben.
 
@@ -69,23 +81,23 @@ Die Methode zum Erstellen eines Inhaltsfragments ist folgende:
 
    * **Allgemein**
 
-      * **Titel**
+     * **Titel**
 
-        Der Titel des Fragments.
+       Der Titel des Fragments.
 
-        Obligatorisch.
+       Obligatorisch.
 
-      * **Beschreibung**
+     * **Beschreibung**
 
-      * **Tags**
+     * **Tags**
 
    * **Erweitert**
 
-      * **Name**
+     * **Name**
 
-        Der Name, der für die URL verwendet wird.
+       Der Name, der für die URL verwendet wird.
 
-        Obligatorisch. Wird automatisch aus dem Titel abgeleitet, kann jedoch aktualisiert werden.
+       Obligatorisch. Wird automatisch aus dem Titel abgeleitet, kann jedoch aktualisiert werden.
 
 1. Wählen Sie **Erstellen** aus, um den Vorgang abzuschließen, und **öffnen** Sie das Fragment zur Bearbeitung oder wechseln Sie über **Fertig** wieder zur Konsole.
 
@@ -105,17 +117,17 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 
 * **Download**
 
-   * Speichern Sie das Fragment als ZIP-Datei. Sie können festlegen, ob die betreffenden Elemente, Varianten und Metadaten enthalten sein sollen.
+  * Speichern Sie das Fragment als ZIP-Datei. Sie können festlegen, ob die betreffenden Elemente, Varianten und Metadaten enthalten sein sollen.
 
 * **Erstellen**
 * **Checkout**
 * **Eigenschaften**
 
-   * Ermöglicht es Ihnen, die Metadaten eines Fragments anzuzeigen und/oder zu bearbeiten.
+  * Ermöglicht es Ihnen, die Metadaten eines Fragments anzuzeigen und/oder zu bearbeiten.
 
 * **Bearbeiten**
 
-   * Ermöglicht es Ihnen, das [Fragment zum Bearbeiten von Inhalten](/help/assets/content-fragments/content-fragments-variations.md), einschließlich seiner Elemente, Varianten, dazugehörigen Inhalte sowie Metadaten, zu öffnen.
+  * Ermöglicht es Ihnen, das [Fragment zum Bearbeiten von Inhalten](/help/assets/content-fragments/content-fragments-variations.md), einschließlich seiner Elemente, Varianten, dazugehörigen Inhalte sowie Metadaten, zu öffnen.
 
 * **Tags verwalten**
 * **Zu Sammlung**
@@ -191,17 +203,17 @@ Einige Funktionen in der oberen Symbolleiste stehen in mehreren Modi zur Verfüg
 
 * Unter dem Fragmentnamen sehen Sie den Namen des [Inhaltsfragmentmodells](/help/assets/content-fragments/content-fragments-models.md), das zum Erstellen des aktuellen Fragments verwendet wurde:
 
-   * Der Name ist auch ein Link, der den Modell-Editor öffnet.
+  * Der Name ist auch ein Link, der den Modell-Editor öffnet.
 
 * Zeigen Sie den Status des Fragments an, zum Beispiel Informationen zum Zeitpunkt der Erstellung, Änderung oder Veröffentlichung.
 
 * Über **Speichern** haben Sie Zugriff auf die Option **Speichern und schließen**.
 
 * Die drei Punkte (**…**) über die Dropdown-Liste können Sie auf weitere Aktionen zugreifen:
-   * **Seitenverweise aktualisieren**
-      * Damit werden alle Seitenverweise aktualisiert.
-   * **[Quick Publish](#publishing-and-referencing-a-fragment)**
-   * **[Veröffentlichung verwalten](#publishing-and-referencing-a-fragment)**
+  * **Seitenverweise aktualisieren**
+    * Damit werden alle Seitenverweise aktualisiert.
+  * **[Quick Publish](#publishing-and-referencing-a-fragment)**
+  * **[Veröffentlichung verwalten](#publishing-and-referencing-a-fragment)**
 
 <!--
 * See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
@@ -227,8 +239,8 @@ Der Editor bietet mehrere Optionen:
 
 * **Speichern** und **Speichern und schließen**
 
-   * Mit **Speichern** werden die aktuellen Änderungen gespeichert und der Editor bleibt geöffnet.
-   * Mit **Speichern und schließen** werden die aktuellen Änderungen gespeichert und der Editor wird beendet.
+  * Mit **Speichern** werden die aktuellen Änderungen gespeichert und der Editor bleibt geöffnet.
+  * Mit **Speichern und schließen** werden die aktuellen Änderungen gespeichert und der Editor wird beendet.
 
   >[!CAUTION]
   >
@@ -290,17 +302,17 @@ Neben den Standardoptionen enthält die [Timeline](/help/assets/manage-assets.md
 * Anzeigen von Informationen zu Versionen, Kommentaren und Anmerkungen
 * Aktionen für Versionen
 
-   * **[Auf diese Version zurück](#reverting-to-a-version)** (ein vorhandenes Fragment und eine bestimmte Version auswählen)
+  * **[Auf diese Version zurück](#reverting-to-a-version)** (ein vorhandenes Fragment und eine bestimmte Version auswählen)
 
-   * **[Mit aktueller Version vergleichen](#comparing-fragment-versions)** (ein vorhandenes Fragment und eine bestimmte Version auswählen)
+  * **[Mit aktueller Version vergleichen](#comparing-fragment-versions)** (ein vorhandenes Fragment und eine bestimmte Version auswählen)
 
-   * **Beschriftung** und/oder **Kommentar** hinzufügen (ein vorhandenes Fragment und eine bestimmte Version auswählen)
+  * **Beschriftung** und/oder **Kommentar** hinzufügen (ein vorhandenes Fragment und eine bestimmte Version auswählen)
 
-   * **Als Version speichern** (ein vorhandenes Fragment und dann den Pfeil nach oben am unteren Rand der Timeline auswählen)
+  * **Als Version speichern** (ein vorhandenes Fragment und dann den Pfeil nach oben am unteren Rand der Timeline auswählen)
 
 * Aktionen für Anmerkungen
 
-   * **Löschen**
+  * **Löschen**
 
 >[!NOTE]
 >
@@ -334,9 +346,9 @@ Sie werden nebeneinander angezeigt, wobei:
 
 * Unterschiede hervorgehoben werden:
 
-   * Gelöschter Text: Rot
-   * Eingefügter Text: Grün
-   * Ersetzter Text: Blau
+  * Gelöschter Text: Rot
+  * Eingefügter Text: Grün
+  * Ersetzter Text: Blau
 
 * Über das Vollbildsymbol können Sie jede Version separat öffnen und dann wieder zur parallelen Ansicht wechseln.
 * Sie die jeweilige Version **wiederherstellen** können.

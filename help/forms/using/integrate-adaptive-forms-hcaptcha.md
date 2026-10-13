@@ -4,13 +4,21 @@ description: Mit dem hCaptcha&reg;-Dienst können Sie die Formularsicherheit ein
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
-source-git-commit: 8025412849a1f324537019247a5e37b7931df7e7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 95%
-
+source-wordcount: '903'
+ht-degree: 96%
 ---
-
 # Verbinden Ihrer AEM Forms-Umgebung mit hCaptcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
 <span class="preview">Diese Funktion basiert auf der Feature Toggle-ID `FT_FORMS-12407`. Um die Funktion zu aktivieren, führen Sie die Schritte aus, die im Artikel [Feature-Umschalter aktivieren](/help/forms/using/enable-feature-toggle.md) beschrieben sind. </span>
@@ -55,7 +63,7 @@ Um AEM Forms mit dem hCAPTCHA®-Service zu integrieren, führen Sie die folgende
 1. So konfigurieren Sie Ihre Cloud-Services:
    1. Navigieren Sie in Ihrer AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud-Services]** und klicken Sie auf **[!UICONTROL hCaptcha®]**.
       ![hCaptcha® in der Benutzeroberfläche](assets/hcaptcha-in-ui.png)
-   1. Wählen Sie einen erstellten oder aktualisierten Konfigurations-Container aus, wie im vorherigen Abschnitt beschrieben. Wählen Sie **[!UICONTROL Erstellen]** aus.
+   1. Wählen Sie einen Konfigurations-Container aus, der wie im vorherigen Abschnitt beschrieben erstellt oder aktualisiert wurde. Wählen Sie **[!UICONTROL Erstellen]** aus.
       ![Konfiguration hCAPTCHA®](assets/config-hcaptcha.png)
    1. Geben Sie einen **[!UICONTROL Titel]** an sowie den <!--**[!UICONTROL Name]**--> **[!UICONTROL Site-Schlüssel]** und den **[!UICONTROL geheimen Schlüssel]** für den hCaptcha®-Service [an, die Sie beide gemäß der obigen Voraussetzung abgerufen haben](#prerequisite).
    1. Klicken Sie auf **[!UICONTROL Erstellen]**.

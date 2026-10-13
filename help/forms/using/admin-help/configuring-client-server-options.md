@@ -9,13 +9,24 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 579c90bb4d8ee8a3b7e633ecc9fb0b797b297ca2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '10377'
+source-wordcount: '10381'
 ht-degree: 97%
-
 ---
-
 # Konfigurieren des Dokumentensicherheits-Servers {#configure-the-document-security-server}
 
 >[!NOTE]
@@ -396,7 +407,7 @@ Bevor Sie beginnen, müssen Sie sicherstellen, dass das Server-Auditing aktivier
 1. Um das erweiterte Nutzungs-Tracking zu konfigurieren, wählen Sie unter „Verfolgung aktivieren“ „Ja“ oder „Nein“ aus.
 1. Um die Option zum Zulassen der Sammlung von detaillierten Nutzungsdaten auf der Anmeldeseite zu konfigurieren, wählen Sie unter „Verfolgung standardmäßig aktivieren“ die Option „Ja“ oder „Nein“ aus.
 
-Zum Anzeigen der verfolgten Ereignisse können Sie den Filter „Dokumentereignisse“ auf der Ereignisseite verwenden. Die Ereignisse, die mithilfe von JavaScript verfolgt werden, werden als detailliertes Nutzungs-Tracking bezeichnet. Unter [Ereignisse überwachen](/help/forms/using/admin-help/monitoring-events.md#monitoring-events) finden Sie weitere Informationen zu Ereignissen.
+Zum Anzeigen der verfolgten Ereignisse können Sie den Filter „Dokumentereignisse“ auf der Ereignisseite verwenden. Die Ereignisse, die mithilfe von JavaScript verfolgt werden, werden als detailliertes Nutzungs-Tracking bezeichnet. Unter [Überwachen von Ereignissen](/help/forms/using/admin-help/monitoring-events.md#monitoring-events) finden Sie weitere Informationen zu Ereignissen.
 
 ## Konfigurieren der Anzeigeeinstellungen für die Dokumentensicherheit {#configure-document-security-display-settings}
 
@@ -474,10 +485,10 @@ Einige Client-Anwendungen unterstützen möglicherweise keine dynamischen Wasser
 * Sie können kein kennwortgeschütztes PDF-Dokument als Wasserzeichenelement verwenden.
 * Acrobat- und Adobe Reader-Versionen (niedriger als Version 10) unterstützen folgende Wasserzeichenfunktionen nicht:
 
-   * PDF-Wasserzeichen.
-   * Mehrere Elemente im Wasserzeichen (Text/PDF).
-   * Erweiterte Optionen wie Seitenbereich oder Anzeigeoptionen.
-   * Textformatierungsoptionen wie die Angabe der Schrift, des Schriftnamens und der Schriftfarbe. Immerhin zeigen niedrigere Versionen von Acrobat und Reader den Textinhalt in der Standardschrift und -farbe an.
+  * PDF-Wasserzeichen.
+  * Mehrere Elemente im Wasserzeichen (Text/PDF).
+  * Erweiterte Optionen wie Seitenbereich oder Anzeigeoptionen.
+  * Textformatierungsoptionen wie die Angabe der Schrift, des Schriftnamens und der Schriftfarbe. Immerhin zeigen niedrigere Versionen von Acrobat und Reader den Textinhalt in der Standardschrift und -farbe an.
 
 * Acrobat 9.0 und niedrigere Versionen: Acrobat 9.0 und niedrigere Versionen unterstützen keine Richtliniennamen in dynamischen Wasserzeichen. Wenn Acrobat 9.0 ein richtliniengeschütztes Dokument mit einem dynamischen Wasserzeichen öffnet, das einen Richtliniennamen oder andere dynamische Daten enthält, wird das Wasserzeichen ohne den Richtliniennamen angezeigt. Wenn das dynamische Wasserzeichen nur den Richtliniennamen enthält, zeigt Acrobat eine Fehlermeldung an.
 

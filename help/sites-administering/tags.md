@@ -9,13 +9,22 @@ exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 3545595dd67b5703d357964a752bf8979a38ea55
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 93%
-
+source-wordcount: '1796'
+ht-degree: 92%
 ---
-
 # Verwalten von Tags {#administering-tags}
 
 Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website. Sie können Sie sich als Stichwörter oder Bezeichnungen (Metadaten) vorstellen, mit denen sich Inhalte schneller finden lassen als über die normale Suche.
@@ -40,22 +49,22 @@ Zu den Funktionen von Tags in AEM gehören u. a. folgende:
 * Die wesentliche Einschränkung für neu erstellte Tags besteht darin, dass sie in einem bestimmten Namespace eindeutig sein müssen.
 * Der Titel eines Tags sollte keine Trennzeichen des Tag-Pfads enthalten (falls doch vorhanden, werden sie nicht angezeigt).
 
-   * Doppelpunkt `:` – Trennzeichen bei Namespace-Tags
-   * Schrägstrich `/` – Trennzeichen bei untergeordneten Tags
+  * Doppelpunkt `:` – Trennzeichen bei Namespace-Tags
+  * Schrägstrich `/` – Trennzeichen bei untergeordneten Tags
 
 * Tags können von Autoren und Website-Besuchern angewendet werden. Unabhängig davon, wer die Tags erstellt hat, stehen alle Arten von Tags zur Verfügung, um sie einer Seite hinzuzufügen oder wenn jemand die Tags durchsucht.
 * Mitglieder der Benutzergruppe „Tag-Administratoren“ und Mitglieder, die Bearbeitungsrechte für `/content/cq:tags` haben, können Tags erstellen und ihre Klassifikationsschemata ändern.
 
-   * Ein Tag, das untergeordnete Tags enthält, bezeichnet man als Container-Tag.
-   * Ein Tag, das kein Container-Tag ist, wird Leaf-Tag genannt.
-   * Ein Tag-Namespace ist entweder ein Leaf-Tag oder ein Container-Tag.
+  * Ein Tag, das untergeordnete Tags enthält, bezeichnet man als Container-Tag.
+  * Ein Tag, das kein Container-Tag ist, wird Leaf-Tag genannt.
+  * Ein Tag-Namespace ist entweder ein Leaf-Tag oder ein Container-Tag.
 
 * Tags werden von der [Such-Komponente](https://helpx.adobe.com/de/experience-manager/core-components/using/quick-search.html) genutzt, um das Suchen von Inhalten zu vereinfachen.
 * Tags werden von der [Teaser-Komponente](https://helpx.adobe.com/de/experience-manager/core-components/using/teaser.html) verwendet, bei der die Tag-Cloud eines Benutzers überwacht wird, um gezielte Inhalte bereitzustellen.
 * Wenn Tagging bei Ihren Inhalten wichtig ist:
 
-   * Stellen Sie sicher, dass Tags in den Paketen mit den Seiten enthalten sind, die sie verwenden.
-   * Stellen Sie sicher, dass die [Tag-Berechtigungen](#setting-tag-permissions) Lesezugriff gewähren.
+  * Stellen Sie sicher, dass Tags in den Paketen mit den Seiten enthalten sind, die sie verwenden.
+  * Stellen Sie sicher, dass die [Tag-Berechtigungen](#setting-tag-permissions) Lesezugriff gewähren.
 
 ## Tagging-Konsole {#tagging-console}
 
@@ -69,9 +78,9 @@ Zugreifen auf die Tagging-Konsole:
 * Melden Sie sich mit Administratorrechten an.
 * Über die globale Navigation
 
-   * Wählen Sie **`Tools`** aus.
-   * Wählen Sie **`General`** aus.
-   * Wählen Sie **`Tagging`** aus.
+  * Wählen Sie **`Tools`** aus.
+  * Wählen Sie **`General`** aus.
+  * Wählen Sie **`Tagging`** aus.
 
 ![managing_tags_usingthetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
 
@@ -83,10 +92,10 @@ Der Namespace selbst ist ein Tag und muss keine untergeordneten Tags enthalten. 
 
 ![chlimage_1-183](assets/chlimage_1-183a.png) ![creating_tags_andnamespaces](assets/creating_tags_andnamespacesa.png)
 
-* **Titel**
+* **title**
   *(erforderlich)* Ein Anzeigetitel für den Namespace.
 
-* **Name**
+* **name**
   *(optional)* Ein Name für den Namespace. Wenn Sie keinen festlegen, wird ein gültiger Knotenname aus dem Titel erstellt. Siehe [TagID](/help/sites-developing/framework.md#tagid).
 
 * **Beschreibung**
@@ -193,7 +202,7 @@ Wenn ein Namespace oder ein anderes Tag ausgewählt wurden, können Tag-Admins u
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
-* **Pfad**
+* **path**
   *(Lesezugriff)* Der aktuelle Pfad zum ausgewählten Tag.
 
 * **Verschieben nach**
@@ -214,7 +223,7 @@ Wenn Sie einen Namespace oder ein anderes Tag ausgewählt haben, wählen Sie das
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
-* **Pfad**
+* **path**
   *(Lesezugriff)* Der Pfad des ausgewählten Tags, das mit einem anderen Tag zusammengeführt werden soll.
 
 * **Zusammenführen in**
@@ -252,30 +261,30 @@ Tag-Berechtigungen sind [standardmäßig sicher](/help/sites-administering/produ
 
 * Bei der Autoreninstanz:
 
-   * Melden Sie sich mit Administratorrechten an.
-   * Rufen Sie die [Sicherheitskonsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) auf.
+  * Melden Sie sich mit Administratorrechten an.
+  * Rufen Sie die [Sicherheitskonsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) auf.
 
-      * Navigieren Sie beispielsweise zu http://localhost:4502/useradmin
+    * Navigieren Sie beispielsweise zu http://localhost:4502/useradmin .
 
-   * Wählen Sie im linken Bedienfeld die Gruppe oder die Personen aus, für die eine [Leseberechtigung](/help/sites-administering/security.md#permissions) gelten soll.
-   * Suchen Sie im rechten Bedienfeld den **Pfad** für den Tag-Namespace,
+  * Wählen Sie im linken Bedienfeld die Gruppe oder die Personen aus, für die eine [Leseberechtigung](/help/sites-administering/security.md#permissions) gelten soll.
+  * Suchen Sie im rechten Bedienfeld den **Pfad** für den Tag-Namespace,
 
-      * Beispiel: `/content/cq:tags/mycommunity`
+    * Beispiel: `/content/cq:tags/mycommunity`
 
-   * Aktivieren Sie `checkbox` in der Spalte **Lesen**.
-   * Wählen Sie **Speichern** aus
+  * Aktivieren Sie `checkbox` in der Spalte **Lesen**.
+  * Wählen Sie **Speichern** aus
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
 
 * Stellen Sie sicher, dass alle Veröffentlichungsinstanzen dieselben Berechtigungen aufweisen.
 
-   * Erstellen Sie dazu beispielsweise [ein Paket](/help/sites-administering/package-manager.md#package-manager) des Namespace auf der Autoreninstanz.
+  * Erstellen Sie dazu beispielsweise [ein Paket](/help/sites-administering/package-manager.md#package-manager) des Namespace auf der Autoreninstanz.
 
-      * Wählen Sie auf der Registerkarte `Advanced` für `AC Handling` die Option `Overwrite` aus.
+    * Wählen Sie auf der Registerkarte `Advanced` für `AC Handling` die Option `Overwrite` aus.
 
-   * Replizieren Sie das Paket.
+  * Replizieren Sie das Paket.
 
-      * Wählen Sie im Paket-Manager `Replicate` aus.
+    * Wählen Sie im Paket-Manager `Replicate` aus.
 
 ## Verwalten von Tags in verschiedenen Sprachen {#managing-tags-in-different-languages}
 

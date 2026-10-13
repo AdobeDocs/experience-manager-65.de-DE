@@ -9,13 +9,20 @@ exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1306'
 ht-degree: 1%
-
 ---
-
 # Verwenden der Zusammenfassung von Überprüfungen und Überprüfungen (Anzeige) {#using-reviews-and-reviews-summary-display}
 
 Die `Reviews` Komponente ist eine Kombination aus [Kommentaren](comments.md) und [Bewertung](rating.md) Komponenten, die einsatzbereit sind.
@@ -178,7 +185,7 @@ Auf der Registerkarte **[!UICONTROL Zusammenfassung überprüfen]**
 
 * `Review Path`
 
-  Geben Sie die platzierte Instanz der `reviews`-Komponente ein oder navigieren Sie zu ihr, um sie zusammenzufassen. Wenn sie beispielsweise zur Web-Seite der [Geometrixx Engage-Site hinzugefügt wird, lautet &#x200B;](getting-started.md) Pfad:
+  Geben Sie die platzierte Instanz der `reviews` ein oder navigieren Sie zu dieser Instanz, um sie zusammenzufassen. Wenn sie beispielsweise zur Web-Seite der [Geometrixx Engage-Site hinzugefügt wird, lautet &#x200B;](getting-started.md) Pfad:
 
   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 

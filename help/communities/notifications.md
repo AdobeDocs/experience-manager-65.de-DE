@@ -10,13 +10,20 @@ role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 1%
-
 ---
-
 # Communities-Benachrichtigungen {#communities-notifications}
 
 ## Überblick {#overview}
@@ -34,13 +41,13 @@ Was Benachrichtigungen von Aktivitäten und Abonnements unterscheidet, ist:
 
 * Ein Link zum Benachrichtigungsabschnitt ist immer in der Kopfzeile einer Community-Site vorhanden:
 
-   * Aktivitäten erfordern, dass [Aktivitäts-Stream-Funktion](/help/communities/functions.md#activity-stream-function) in die Struktur der Community-Site aufgenommen wird.
-   * Abonnements erfordern [Konfiguration der E-Mail](/help/communities/email.md).
+  * Aktivitäten erfordern, dass [Aktivitäts-Stream-Funktion](/help/communities/functions.md#activity-stream-function) in die Struktur der Community-Site aufgenommen wird.
+  * Abonnements erfordern [Konfiguration der E-Mail](/help/communities/email.md).
 
 * Die Implementierung von Benachrichtigungen erfolgt über skalierbare und steckbare Kanäle:
 
-   * Aktivitäten sind nur im Internet verfügbar.
-   * Abonnements sind nur per E-Mail verfügbar.
+  * Aktivitäten sind nur im Internet verfügbar.
+  * Abonnements sind nur per E-Mail verfügbar.
 
 Ab Communities [FP1](/help/communities/deploy-communities.md#latestfeaturepack) stehen folgende Benachrichtigungskanäle zur Verfügung:
 
@@ -80,11 +87,11 @@ Die Schaltfläche **[!UICONTROL Folgen]** wird angezeigt:
 * Beim Anzeigen des Profils eines anderen Mitglieds.
 * Auf einer Haupt-Funktionsseite wie Foren, QNa und Blogs:
 
-   * Führt alle Aktivitäten für diese allgemeine Funktion aus.
+  * Führt alle Aktivitäten für diese allgemeine Funktion aus.
 
 * Für einen bestimmten Eintrag, z. B. ein Forumsthema, eine Frage oder einen Blog-Artikel:
 
-   * Führt alle Aktivitäten für diesen bestimmten Eintrag aus.
+  * Führt alle Aktivitäten für diesen bestimmten Eintrag aus.
 
 ## Benachrichtigungseinstellungen verwalten {#managing-notification-settings}
 

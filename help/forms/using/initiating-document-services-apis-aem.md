@@ -8,25 +8,39 @@ exl-id: 123087a2-9d09-4579-9185-2ccd7d25bf8d
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1173'
 ht-degree: 100%
-
 ---
-
-# Starten Sie Document Services-APIs aus dem AEM-Arbeitsablauf  {#initiate-document-services-apis-from-aem-workflow}
+# Starten Sie Document Services-APIs aus dem AEM-Workflow  {#initiate-document-services-apis-from-aem-workflow}
 
 ## Assembler {#assembler}
 
-AEM Forms bietet benutzerdefinierte Workflows, um die folgenden Assembler Service-APIs aufzurufen:
+AEM Forms bietet benutzerdefinierte Workflows, um die folgenden Assembler-Dienst-APIs aufzurufen:
 
 * **invoke**: Ruft Vorgänge auf, die in Eingabe-DDX für bereitgestellte Eingaben angegeben wurden.
 * **toPDFA**: Konvertiert ein PDF-Eingabedokument in ein PDF/A-Dokument.
 
 ### Aufrufen eines DDX-Workflows {#invoke-ddx-workflow}
 
-Der Workflow **DDX aufrufen** ruft die Assembler Service-API `Invoke` auf, mit der Sie Dokumente zusammenstellen oder aufteilen, ein Wasserzeichen zu einem PDF hinzufügen können usw.
+Der Workflow **DDX aufrufen** ruft die Assembler-Dienst-API `Invoke` auf, mit der Sie Dokumente zusammenstellen oder aufteilen, ein Wasserzeichen zu einem PDF hinzufügen können usw.
 
 1. Ziehen Sie **[!UICONTROL Invoke DDX]** auf der Registerkarte „Forms Workflow“ in den Sidekick.
 1. Doppelklicken Sie auf den hinzugefügten Workflow-Schritt, um die Komponente zu bearbeiten.
@@ -38,9 +52,9 @@ Der Workflow „Invoke DDX“ erfordert folgende Eingabedokumente:
 
 * **DDX**: Dies ist eine obligatorische Eingabe für den Workflow-Schritt „Invoke DDX“ und kann durch Auswahl einer der folgenden Optionen in der DDX-Eingabe-Dropdown-Liste angegeben werden.
 
-   * *Relative To Payload*: Die DDX-Eingabedatei ist relativ zum Payload-Ordner für das Arbeitsablaufelement.
-   * *Nutzlast verwenden*: Die Nutzlast für das Workflow-Element wird als DDX-Eingabedokument verwendet.
-   * *Absoluter Pfad*: Der absolute Pfad zum DDX-Dokument im CRX-Repository.
+  * *Relative To Payload*: Die DDX-Eingabedatei ist relativ zum Payload-Ordner für das Workflow-Element.
+  * *Nutzlast verwenden*: Die Nutzlast für das Workflow-Element wird als DDX-Eingabedokument verwendet.
+  * *Absoluter Pfad*: Der absolute Pfad zum DDX-Dokument im CRX-Repository.
 
 * **Create Map from PayLoad**: Ist diese Option ausgewählt, werden alle Dokumente im Payload-Ordner zur Zuordnung des Eingabedokuments für die `invoke`-API im Assembler hinzugefügt. Der Knotenname für jedes Dokument wird als Schlüssel in der Zuordnung verwendet.
 
@@ -50,7 +64,7 @@ Der Workflow „Invoke DDX“ erfordert folgende Eingabedokumente:
 
 Auf der Registerkarte „Umgebungsoptionen“ können Sie verschiedene Verarbeitungsoptionen für die aufrufende API festlegen.
 
-* *Vorgangslog-Stufe*: Gibt die Protokollebene für die Verarbeitungsprotokolle an.
+* *Auftragslog-Ebene*: Gibt die Protokollebene für die Verarbeitungsprotokolle an.
 * *Validate Only*: Prüft die Gültigkeit der Eingabe-DDX.
 
 * *Bei Fehler abbrechen*: Gibt an, ob der Aufruf an den Assembler-Dienst bei einem Fehler fehlschlagen soll. Der Standardwert ist „False“.
@@ -62,7 +76,7 @@ Je nach Eingabe-DDX kann die aufrufende API mehrere Ausgabedokumente erstellen. 
 1. *Ausgabe in Payload speichern*: Speichert Ausgabedokumente unter dem Payload-Ordner oder überschreibt die Payload, wenn die Payload eine Datei ist.
 1. *Ausgabedokumentzuordnung*: Lässt Sie explizit angeben, wo jedes Ausgabedokument gespeichert werden soll, indem ein Eintrag pro Ausgabedokument hinzugefügt wird. Jeder Eintrag gibt das Dokument an und wo es gespeichert werden soll. Ein Output Document kann die Payload überschreiben oder im Payload-Ordner speichern. Dies ist nützlich, wenn es mehrere Output Documents gibt.
 
-1. *Vorgangslog*: Gibt an, wo das Vorgangslogdokument gespeichert werden soll. Dies ist bei der Fehlerbehebung hilfreich.
+1. *Auftragslog*: Gibt an, wo das Vorgangslogdokument gespeichert werden soll. Dies ist bei der Fehlerbehebung hilfreich.
 
 ### Workflow „Nach PDF/A konvertieren“ {#convert-to-pdf-a-workflow}
 
@@ -90,7 +104,7 @@ Mit den Konvertierungsoptionen können Sie Optionen angeben, die den PDF/A-Konve
 * *Signaturen* : Gibt an, wie die Signaturen im Eingabedokument bei der Konvertierung verarbeitet werden müssen.
 * *Farbraum* : Gibt den vordefinierten Farbraum an, der für das PDF/A-Ausgabedokument verwendet werden soll.
 * *Konvertierung überprüfen*: Gibt an, ob das konvertierte PDF/A-Dokument nach der Konvertierung auf PDF/A-Konformität geprüft werden soll.
-* *Job Log Level*: Gibt die Protokollebene, die für die Verarbeitung von Protokollen verwendet werden soll, an.
+* *Auftragslog-Ebene*: Gibt die Protokollebene, die für die Verarbeitung von Protokollen verwendet werden soll, an.
 
 * *Metadata Extension Schema*: Gibt den Pfad zum Metadaten-Erweiterungsschema, der für XMP-Eigenschaften in den Metadaten des PDF-Dokuments verwendet werden soll, an.
 
@@ -103,7 +117,7 @@ Auf der Registerkarte für Ausgabedokumente können Sie das Ziel für die Ausgab
 
 ## Formulare {#forms}
 
-Der Arbeitsablauf zum Rendern von PDF-Formularen ist ein Wrapper um die Formulardienst-API `renderPDFForm`, um ein PDF-Formular mit einer XDP-Vorlage und Daten-XML zu erstellen.
+Der Workflow zum Rendern von PDF-Formularen ist ein Wrapper um die Formulardienst-API `renderPDFForm`, um ein PDF-Formular mit einer XDP-Vorlage und Daten-XML zu erstellen.
 
 ### Workflow zum Rendern von PDF-Formularen {#render-pdf-form-workflow}
 
@@ -132,9 +146,9 @@ Der Arbeitsablauf zum Rendern von PDF-Formularen ist ein Wrapper um die Formular
 
 ## Ausgabe {#output}
 
-Der Arbeitsablauf „Nicht-interaktive PDF generieren“ ist ein Wrapper um die Ausgabe-Dienst-API `generatePDFOutput`. Er wird verwendet, um nicht-interaktive PDF-Dokumente aus der XDP-Vorlage und der Daten-XML zu generieren.
+Der Workflow „Nicht-interaktive PDF generieren“ ist ein Wrapper um die Ausgabe-Dienst-API `generatePDFOutput`. Er wird verwendet, um nicht-interaktive PDF-Dokumente aus der XDP-Vorlage und der Daten-XML zu generieren.
 
-### Workflow „Nicht-interaktive PDF-Ausgabe generieren“ {#generate-non-interactive-pdf-output-workflow-nbsp}
+### Workflow „Nicht-interaktive PDF-Ausgabe generieren“   {#generate-non-interactive-pdf-output-workflow-nbsp}
 
 1. Ziehen Sie den Workflow „Nicht-interaktive PDF-Ausgabe generieren“ unter die Registerkarte „Forms Workflow“ per Drag-and-Drop in den Sidekick.
 1. Doppelklicken Sie auf den hinzugefügten Workflow-Schritt, um die Komponente zu bearbeiten.

@@ -10,13 +10,22 @@ feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: e4c42f989baf1a91e94944c612ee6b8de1dc331a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3471'
 ht-degree: 93%
-
 ---
-
 # Replikation{#replication}
 
 Replikationsagenten bilden einen zentralen Bestandteil von Adobe Experience Manager (AEM). Sie dienen als Mechanismus zum:
@@ -80,8 +89,8 @@ Um diesem Beispiel zu folgen und die standardmäßigen Replikationsagenten zu ve
 >* Agenten für Autor: Rückwärtsreplikationsagent („publish_reverse“)
 >* Agenten bei Veröffentlichung: Rückwärtsreplikation („outbox“)
 >
->Um den Status des Agenten oder der Warteschlange zu überprüfen, verwenden Sie die **Tools**-Konsole.
->Siehe [Überwachen der Replikationsagenten](#monitoring-your-replication-agents).
+>Der Status des Agenten oder der Warteschlange kann mithilfe der **Tools-Konsole** überprüft werden.
+>Weitere Informationen finden Sie unter [Überwachen der Replikationsagents](#monitoring-your-replication-agents).
 
 #### Replikation (von der Autoren- in die Veröffentlichungsinstanz) {#replication-author-to-publish}
 
@@ -97,7 +106,7 @@ Diese Replikation wird von der Autorenumgebung aus durch folgende Komponente dur
 
 * **Standardagent (publish)**
 Dieser Agent repliziert Inhalte auf der Standard-Veröffentlichungsinstanz.
-Details hierzu (Konfiguration und Protokolle) können über die Tools -Konsole der Autorenumgebung aufgerufen werden oder:
+Der Zugriff auf entsprechende Details (Konfiguration und Protokolle) ist über die Tools-Konsole der Autorenumgebung oder
   `https://localhost:4502/etc/replication/agents.author/publish.html` möglich.
 
 #### Replikationsagenten – vorkonfiguriert {#replication-agents-out-of-the-box}
@@ -115,8 +124,8 @@ Wird für die Replikation von der Veröffentlichungs- auf die Autoreninstanz ver
 
 * Statischer Agent
 Dies ist ein „Agent, der eine statische Darstellung eines Knotens im Dateisystem speichert“.
-Bei den Standardeinstellungen werden beispielsweise Inhaltsseiten und DAM-Assets unter `/tmp` gespeichert, entweder im HTML- oder im entsprechenden Asset-Format. Weitere Informationen zur Konfiguration finden Sie auf den Registerkarten `Settings` und `Rules` .
-Dies wurde angefordert, damit der Inhalt angezeigt wird, wenn die Seite direkt vom Anwendungs-Server angefordert wird. Dies ist ein spezialisierter Agent, der (wahrscheinlich) für die meisten Instanzen nicht erforderlich ist.
+Bei den Standardeinstellungen werden beispielsweise Inhaltsseiten und DAM-Assets unter `/tmp` gespeichert, entweder im HTML- oder im entsprechenden Asset-Format. Weitere Einzelheiten zur Konfiguration finden Sie auf den Registerkarten `Settings` und `Rules`.
+Dies wurde angefordert, damit der Inhalt angezeigt wird, wenn die Seite direkt vom Anwendungs-Server angefordert wird. Hierbei handelt es sich um einen speziellen Agenten, der (wahrscheinlich) für den Großteil der Instanzen nicht benötigt wird.
 
 ## Replikationsagenten – Konfigurationsparameter {#replication-agents-configuration-parameters}
 
@@ -138,16 +147,16 @@ Beim Konfigurieren eines Replikationsagenten in der Tools-Konsole stehen vier Re
 
   Wenn der Agent **aktiviert** ist, wird der Status der Warteschlange wie folgt angezeigt:
 
-   * **Aktiv**, wenn Elemente verarbeitet werden.
-   * **Leer**, wenn die Warteschlange leer ist.
-   * **Blockiert**, wenn die Warteschlange Elemente enthält, die jedoch nicht verarbeitet werden können, z. B. wenn die empfangende Warteschlange deaktiviert ist.
+  * **Aktiv**, wenn Elemente verarbeitet werden.
+  * **Leer**, wenn die Warteschlange leer ist.
+  * **Blockiert**, wenn die Warteschlange Elemente enthält, die jedoch nicht verarbeitet werden können, z. B. wenn die empfangende Warteschlange deaktiviert ist.
 
 * **Anordnungstyp**
 
   Der Anordnungstyp:
 
-   * **Standard**: Legen Sie diese Einstellung fest, wenn der Agent automatisch ausgewählt werden soll.
-   * **Dispatcher Flush**: Wählen Sie diese Einstellung aus, wenn der Agent zum Leeren des Dispatcher-Caches verwendet werden soll.
+  * **Standard**: Legen Sie diese Einstellung fest, wenn der Agent automatisch ausgewählt werden soll.
+  * **Dispatcher Flush**: Wählen Sie diese Einstellung aus, wenn der Agent zum Leeren des Dispatcher-Caches verwendet werden soll.
 
 * **Verzögerung wiederholen**
 
@@ -159,8 +168,8 @@ Beim Konfigurieren eines Replikationsagenten in der Tools-Konsole stehen vier Re
 
   Abhängig von der Umgebung verwendet der Agent dieses Benutzerkonto, um folgende Aktionen durchzuführen:
 
-   * Erfassen und Verpacken der Inhalte aus der Autorenumgebung
-   * Erstellen und Schreiben der Inhalte in der Veröffentlichungsumgebung
+  * Erfassen und Verpacken der Inhalte aus der Autorenumgebung
+  * Erstellen und Schreiben der Inhalte in der Veröffentlichungsumgebung
 
   Lassen Sie dieses Feld leer, um das Systembenutzerkonto zu verwenden (das in Sling als Admin definierte Konto – standardmäßig ist dies das `admin`-Konto).
 
@@ -180,9 +189,9 @@ Beim Konfigurieren eines Replikationsagenten in der Tools-Konsole stehen vier Re
 
   Gibt den Detaillierungsgrad an, der für Protokollmeldungen verwendet werden soll.
 
-   * `Error`: Es werden nur Fehler protokolliert
-   * `Info`: Fehler, Warnungen und andere Informationsmeldungen werden protokolliert
-   * `Debug`: Es wird ein hoher Detaillierungsgrad für die Meldungen verwendet. Dieser dient vor allem Debugging-Zwecken
+  * `Error`: Es werden nur Fehler protokolliert
+  * `Info`: Fehler, Warnungen und andere Informationsmeldungen werden protokolliert
+  * `Debug`: Es wird ein hoher Detaillierungsgrad für die Meldungen verwendet. Dieser dient vor allem Debugging-Zwecken
 
   Standard: `Info`
 
@@ -202,8 +211,8 @@ Beim Konfigurieren eines Replikationsagenten in der Tools-Konsole stehen vier Re
 
   Beispiel:
 
-   * Ein Standardagent wird möglicherweise unter `https://localhost:4503/bin/receive` repliziert.
-   * Ein Dispatcher Flush-Agent wird möglicherweise unter `https://localhost:8000/dispatcher/invalidate.cache` repliziert.
+  * Ein Standardagent wird möglicherweise unter `https://localhost:4503/bin/receive` repliziert.
+  * Ein Dispatcher Flush-Agent wird möglicherweise unter `https://localhost:8000/dispatcher/invalidate.cache` repliziert.
 
   Das hier angegebene Protokoll (HTTP oder HTTPS) bestimmt die Transportmethode.
 
@@ -281,15 +290,15 @@ Die folgenden Einstellungen müssen nur festgelegt werden, wenn ein Proxy benöt
 
   Es sollte nicht notwendig sein, die drei Standardeinträge für einen Dispatcher Flush-Agenten zu ändern:
 
-   * `CQ-Action:{action}`
-   * `CQ-Handle:{path}`
-   * `CQ-Path:{path}`
+  * `CQ-Action:{action}`
+  * `CQ-Handle:{path}`
+  * `CQ-Path:{path}`
 
   Diese dienen ggf. dazu, die Aktion anzugeben, die beim Leeren des Handles oder Pfades verwendet werden soll. Die Unterparameter sind dynamisch:
 
-   * `{action}` zeigt eine Replikationsaktion an
+  * `{action}` zeigt eine Replikationsaktion an
 
-   * `{path}` gibt einen Pfad an
+  * `{path}` gibt einen Pfad an
 
   Sie werden durch den für die Anforderungen relevanten Pfad bzw. die relevante Aktion ersetzt und müssen deshalb nicht fest codiert sein:
 
@@ -424,19 +433,19 @@ Zum Konfigurieren der Replikation von Inhalten für eine weitere Veröffentlichu
 
    * Führen Sie auf der Registerkarte **Einstellungen** folgende Schritte aus:
 
-      * Aktivieren Sie die Option **Aktiviert**.
-      * Geben Sie eine **Beschreibung** ein.
-      * Setzen Sie den Wert für **Verzögerung wiederh.** auf `60000`.
+     * Aktivieren Sie die Option **Aktiviert**.
+     * Geben Sie eine **Beschreibung** ein.
+     * Setzen Sie den Wert für **Verzögerung wiederh.** auf `60000`.
 
-      * Behalten Sie für den **Anordnungstyp** die Einstellung `Default` bei.
+     * Behalten Sie für den **Anordnungstyp** die Einstellung `Default` bei.
 
    * Führen Sie auf der Registerkarte **Transport** folgende Schritte aus:
 
-      * Geben Sie den erforderlichen URI für die neue Veröffentlichungsinstanz ein, z. B. ist
-        `https://localhost:4504/bin/receive` möglich.
+     * Geben Sie den erforderlichen URI für die neue Veröffentlichungsinstanz ein, z. B. ist
+       `https://localhost:4504/bin/receive` möglich.
 
-      * Geben Sie das Site-spezifische Benutzerkonto für die Replikation ein.
-      * Die anderen Parameter können nach Bedarf konfiguriert werden.
+     * Geben Sie das Site-spezifische Benutzerkonto für die Replikation ein.
+     * Die anderen Parameter können nach Bedarf konfiguriert werden.
 
 1. Klicken Sie auf **OK**.
 
@@ -467,19 +476,19 @@ Die Installation umfasst Standardagenten. Es müssen jedoch trotzdem gewisse Kon
 
    * Führen Sie auf der Registerkarte **Einstellungen** folgende Schritte aus:
 
-      * Aktivieren Sie die Option **Aktiviert**.
-      * Geben Sie eine **Beschreibung** ein.
-      * Behalten Sie als **Anordnungstyp** die Option `Dispatcher Flush` bei oder legen Sie diese Einstellung fest, wenn Sie einen neuen Agenten erstellen.
+     * Aktivieren Sie die Option **Aktiviert**.
+     * Geben Sie eine **Beschreibung** ein.
+     * Behalten Sie als **Anordnungstyp** die Option `Dispatcher Flush` bei oder legen Sie diese Einstellung fest, wenn Sie einen neuen Agenten erstellen.
 
-      * (Optional) Wählen Sie **Alias-Aktualisierung** aus, um Invalidierungsanforderungen an den Dispatcher für Alias- oder Vanity-Pfade zu aktivieren.
+     * (Optional) Wählen Sie **Alias-Aktualisierung** aus, um Invalidierungsanforderungen an den Dispatcher für Alias- oder Vanity-Pfade zu aktivieren.
 
    * Führen Sie auf der Registerkarte **Transport** folgende Schritte aus:
 
-      * Geben Sie den erforderlichen URI für die neue Veröffentlichungsinstanz ein, z. B. ist
-        `https://localhost:80/dispatcher/invalidate.cache` möglich.
+     * Geben Sie den erforderlichen URI für die neue Veröffentlichungsinstanz ein, z. B. ist
+       `https://localhost:80/dispatcher/invalidate.cache` möglich.
 
-      * Geben Sie das Site-spezifische Benutzerkonto für die Replikation ein.
-      * Die anderen Parameter können nach Bedarf konfiguriert werden.
+     * Geben Sie das Site-spezifische Benutzerkonto für die Replikation ein.
+     * Die anderen Parameter können nach Bedarf konfiguriert werden.
 
    Für Dispatcher Flush-Agenten wird die URI-Eigenschaft nur verwendet, wenn Sie pfadbasierte „VirtualHost“-Einträge nutzen, um zwischen Farmen zu unterscheiden. Dieses Feld dient dazu, die zu invalidierende Farm anzugeben. Beispiel: Farm 1 hat den virtuellen Host `www.mysite.com/path1/*` und Farm 2 den virtuellen Host `www.mysite.com/path2/*`. Mit der URL `/path1/invalidate.cache` können Sie die erste Farm und mit `/path2/invalidate.cache` die zweite Farm bestimmen.
 
@@ -518,7 +527,7 @@ Die beiden `agents`-Elemente beinhalten Konfigurationsinformationen über die en
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
-## Überwachen der Replikationsagenten {#monitoring-your-replication-agents}
+## Überwachen der Replikationsagents {#monitoring-your-replication-agents}
 
 So überwachen Sie einen Replikationsagenten:
 

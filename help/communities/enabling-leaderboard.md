@@ -10,13 +10,20 @@ exl-id: 8b4d56d9-ba73-4eda-9773-3daaa9237abe
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 2%
-
+source-wordcount: '425'
+ht-degree: 3%
 ---
-
 # Leaderboard-Funktion {#leaderboard-feature}
 
 ## Einführung {#introduction}
@@ -59,22 +66,22 @@ Geben **[!UICONTROL auf der Registerkarte]** Einstellungen“ an, welche Informa
 * **Anzeigename**
 
   Ein beschreibender Name, der für die Pinnwand angezeigt wird und die ausgewählten Regeln für die Anzeige von Abzeichen und Bewertungen widerspiegelt.
-Der Standardwert wird `Leaderboard`, wenn nichts eingegeben wird.
+  Der Standardwert wird `Leaderboard`, wenn nichts eingegeben wird.
 
 * **Badge**
 
   Wenn diese Option aktiviert ist, wird eine Spalte für Badge-Symbole in der Leaderboard eingefügt.
-Standard ist deaktiviert.
+  Standard ist deaktiviert.
 
 * **Badge Name**
 
   Wenn diese Option aktiviert ist, wird eine Spalte für den Badge-Namen in der Rangliste angezeigt.
-Standard ist deaktiviert.
+  Standard ist deaktiviert.
 
 * **Verwenden von Avatar**
 
   Wenn diese Option aktiviert ist, wird das Avatarbild des Mitglieds in der Rangliste neben seinem Namen und dem Link zu seinem Mitgliederprofil angezeigt.
-Standard ist deaktiviert.
+  Standard ist deaktiviert.
 
 #### Registerkarte „Regeln“ {#rules-tab}
 
@@ -104,19 +111,19 @@ Konfiguration der Leaderboard-Komponente:
 
 * Registerkarte Einstellungen:
 
-   * Anzeigename = `Participation Board`
-   * `checked`:
+  * Anzeigename = `Participation Board`
+  * `checked`:
 
-      * Abzeichen
-      * Abzeichenname
-      * Avatar verwenden
+    * Abzeichen
+    * Abzeichenname
+    * Avatar verwenden
 
 * Registerkarte Regeln :
 
-   * Speicherort der Regel = `/content/sites/<site name>/jcr:content`
-   * Scoring-Regel = `/libs/settings/community/scoring/rules/forums-scoring`
-   * Badging-Regel = `/libs/settings/community/badging/rules//reference-badging`
-   * Anzeigegrenze = `10`
+  * Speicherort der Regel = `/content/sites/<site name>/jcr:content`
+  * Scoring-Regel = `/libs/settings/community/scoring/rules/forums-scoring`
+  * Badging-Regel = `/libs/settings/community/badging/rules//reference-badging`
+  * Anzeigegrenze = `10`
 
 ![Participants-Leaderboard](assets/participants-leaderboard.png)
 
@@ -128,18 +135,18 @@ Konfiguration der Leaderboard-Komponente:
 
 * Registerkarte Einstellungen:
 
-   * Anzeigename = `Expertise Board`
-   * `checked`:
+  * Anzeigename = `Expertise Board`
+  * `checked`:
 
-      * Abzeichen
-      * Avatar verwenden
+    * Abzeichen
+    * Avatar verwenden
 
 * Registerkarte Regeln :
 
-   * Speicherort der Regel = `/content/sites/<site name>/jcr:content`
-   * Scoring-Regel = `/libs/settings/community/scoring/rules/adv-forums-scoring`
-   * Badging-Regel = `/libs/settings/community/badging/rules/adv-forums-badging`
-   * Anzeigegrenze = `10`
+  * Speicherort der Regel = `/content/sites/<site name>/jcr:content`
+  * Scoring-Regel = `/libs/settings/community/scoring/rules/adv-forums-scoring`
+  * Badging-Regel = `/libs/settings/community/badging/rules/adv-forums-badging`
+  * Anzeigegrenze = `10`
 
 ![Experts-Leaderboard](assets/experts-leaderboard.png)
 

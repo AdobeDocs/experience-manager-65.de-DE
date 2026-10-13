@@ -9,13 +9,27 @@ exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1585'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1590'
+ht-degree: 97%
 ---
-
 # Erstellen und Konfigurieren von Gruppen{#creating-and-configuring-groups}
 
 >[!NOTE]
@@ -67,7 +81,7 @@ In einer dynamischen Gruppe wählen Sie die Benutzenden, die zur Gruppe gehören
 Verwenden Sie eine dieser beiden Methoden, um dynamische Gruppen zu erstellen:
 
 * Aktivieren Sie die automatische Erstellung dynamischer Gruppen auf Basis von E-Mail-Domains (z. B. @adobe.com). Wenn Sie diese Funktion aktivieren, erstellt User Management eine dynamische Gruppe für jede eindeutige E-Mail-Domain in der AEM Forms-Datenbank. Verwenden Sie einen Cron-Ausdruck, um anzugeben, wie oft User Management die AEM Forms-Datenbank nach neuen E-Mail-Domains durchsuchen soll. Diese dynamischen Gruppen werden der lokalen Domain „DefaultDom“ hinzugefügt und erhalten die Bezeichnung „Alle Benutzer mit einer *`[email domain]`*-E-Mail-ID“.
-* Erstellen Sie eine dynamische Gruppe auf der Grundlage von bestimmten Kriterien, wie E-Mail-Domain des Benutzers, Beschreibung, allgemeinem Namen, kanonischem Namen und Domain-Namen. Um zur dynamischen Gruppe zu gehören, muss eine Person alle angegebenen Kriterien erfüllen. Um eine „oder“-Bedingung einzurichten, erstellen Sie zwei separate dynamische Gruppen und fügen Sie beide einer lokalen Gruppe hinzu. Verwenden Sie diese Vorgehensweise beispielsweise, um eine Gruppe von Benutzern zu erstellen, die zur E-Mail-Domain „@adobe.com“ gehören oder deren kanonischer Name ou=adobe.com enthält. Die Benutzer müssten jedoch nicht unbedingt beide Bedingungen erfüllen.
+* Erstellen Sie eine dynamische Gruppe auf der Grundlage von bestimmten Kriterien, wie E-Mail-Domain des Benutzers, Beschreibung, allgemeinem Namen, kanonischem Namen und Domain-Namen. Um zur dynamischen Gruppe zu gehören, muss eine Person alle angegebenen Kriterien erfüllen. Um eine „oder“-Bedingung einzurichten, erstellen Sie zwei separate dynamische Gruppen und fügen Sie beide einer lokalen Gruppe hinzu. Verwenden Sie diesen Ansatz beispielsweise, um eine Gruppe von Benutzern zu erstellen, die zur E-Mail-Domain @adobe.com gehören oder deren kanonischer Name ou=adobe.com enthält. Die Benutzer müssen jedoch nicht unbedingt beide Bedingungen erfüllen.
 
 Eine dynamische Gruppe enthält nur Benutzende. Sie kann nicht andere Gruppen enthalten. Eine dynamische Gruppe kann jedoch zu einer übergeordneten Gruppe gehören.
 
@@ -80,7 +94,7 @@ Eine dynamische Gruppe enthält nur Benutzende. Sie kann nicht andere Gruppen en
    * Um die automatische Synchronisierung täglich zu aktivieren, geben Sie die Uhrzeit im 24-Stunden-Format in das Feld „Erfolgt täglich um“ ein. Wenn Sie Ihre Einstellungen speichern, wird dieser Wert in einen Cron-Ausdruck umgewandelt, der im Feld unten angezeigt wird.
    * Um die Synchronisierung an einem bestimmten Tag der Woche oder im Monat oder in einem bestimmten Monat zu planen, geben Sie den entsprechenden Cron-Ausdruck in das Feld ein. Der Standardwert ist `0 00 4 ? * *`(d. h. jeden Tag um 4 Uhr nachprüfen).
 
-     Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Vorgangsplanungssystem Quartz, Version 1.4.0.
+     Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssystem Quartz, Version 1.4.0.
 
 1. Klicken Sie auf Speichern.
 

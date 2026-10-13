@@ -11,13 +11,21 @@ thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 100%
-
+source-wordcount: '958'
+ht-degree: 99%
 ---
-
 # Erweiterte URL-Konfigurationen {#url}
 
 >[!NOTE]
@@ -26,7 +34,7 @@ ht-degree: 100%
 
 Die [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) ermöglichen erweiterte Konfigurationen zum Anpassen der URLs für Produkt- und Kategorieseiten. Bei vielen Implementierungen werden diese URLs zwecks Suchmaschinen-Optimierung (Search Engine Optimization, SEO) angepasst. Im folgenden Video wird beschrieben, wie Sie den `UrlProvider`-Service und die Funktionen der [Sling-Zuordnung](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) konfigurieren können, um die URLs für Produkt- und Kategorieseiten anzupassen.
 
->[!VIDEO](https://video.tv.adobe.com/v/38581/?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/38581/?captions=ger&quality=12)
 
 ## Konfiguration {#configuration}
 
@@ -79,7 +87,7 @@ Mit den obigen Beispieldaten sieht eine mit dem Standard-URL-Format formatierte 
 
 ### Spezifische Kategorie-/Produktseiten {#specific-pages}
 
-Es ist möglich, [mehrere Kategorie- und Produktseiten](multi-template-usage.md) für nur eine bestimmte Untermenge von Kategorien oder Produkten eines Katalogs zu erstellen.
+Es ist möglich, [mehrere Kategorie- und Produktseiten](multi-template-usage.md) für nur eine bestimmte Teilmenge von Kategorien oder Produkten eines Katalogs zu erstellen.
 
 `UrlProvider` ist so vorkonfiguriert, dass Deep-Links zu bestimmten Kategorie- und Produktseiten in Instanzen der Autorenebene zu erzeugt werden. Dies ist für Editoren nützlich, die eine Site im Vorschaumodus durchsuchen, zu einer bestimmten Produkt- oder Kategorieseite navigieren und zurück in den Bearbeitungsmodus wechseln, um die Seite zu bearbeiten.
 
@@ -109,6 +117,6 @@ Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-
 
 ## Zusätzliche Ressourcen
 
-* [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia)
+* [Venia Referenz-Store](https://github.com/adobe/aem-cif-guides-venia)
 * [AEM-Ressourcenzuordnung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=de)
 * [Sling-Zuordnungen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

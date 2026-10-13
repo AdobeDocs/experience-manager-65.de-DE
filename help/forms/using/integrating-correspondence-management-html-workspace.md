@@ -8,18 +8,38 @@ exl-id: 39a3f7db-549f-47f3-8d4f-42d583a4532d
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 100%
-
+source-wordcount: '642'
+ht-degree: 97%
 ---
-
 # Integrieren von Anwendungen von Drittanbietern in AEM Forms Workspace{#integrating-third-party-applications-in-aem-forms-workspace}
 
 AEM Forms Workspace unterstützt die Verwaltung von Aufgabenzuweisungen und Abschlussaktivitäten für Formulare und Dokumente. Diese Formulare und Dokumente können XDP-Formulare, Flex®-Formulare oder Guides (veraltet) sein, die im Format XDP, PDF, HTML oder Flex gerendert wurden.
 
-Diese Funktionen werden weiter verbessert. AEM Forms unterstützt jetzt die Zusammenarbeit mit Drittanbieteranwendungen, die Funktionen ähnlich wie die des AEM Forms-Arbeitsbereichs unterstützen. Ein gemeinsamer Teil dieser Funktion ist der Arbeitsablauf der Zuweisung und nachfolgenden Genehmigung einer Aufgabe. AEM Forms bietet Unternehmensbenutzerinnen und -benutzern von AEM Forms ein einheitliches Erlebnis, sodass alle derartigen Aufgabenzuweisungen oder -genehmigungen für die unterstützten Anwendungen über den AEM Forms-Arbeitsbereich verarbeitet werden können.
+Diese Funktionen werden weiter verbessert. AEM Forms unterstützt jetzt die Zusammenarbeit mit Drittanbieteranwendungen, die Funktionen ähnlich wie die des AEM Forms-Arbeitsbereichs unterstützen. Ein gemeinsamer Teil dieser Funktion ist der Workflow der Zuweisung und nachfolgenden Genehmigung einer Aufgabe. AEM Forms bietet Unternehmensbenutzerinnen und -benutzern von AEM Forms ein einheitliches Erlebnis, sodass alle derartigen Aufgabenzuweisungen oder -genehmigungen für die unterstützten Anwendungen über den AEM Forms-Arbeitsbereich verarbeitet werden können.
 
 Beispiel: die Integration von Correspondence Management in AEM Forms Workspace. Correspondence Management umfasst das Konzept „Brief“, der abgerufen werden kann und Aktionen zulässt.
 
@@ -61,7 +81,7 @@ Führen Sie die folgenden Schritte aus, um eine Aufgabe zum Rendern und Senden e
 1. Um den Brief mit einer XML-Datendatei zu öffnen, suchen Sie die entsprechende Datendatei und wählen Sie sie im Bereich „Datenprozess vorbereiten“ aus.
 1. Klicken Sie auf OK.
 1. Definieren Sie die Variablen für Startpunkt-Ausgabe und Aufgabenanhänge. Die definierten Variablen enthalten Daten zur Startpunktausgabe und zu Aufgabenanhänge.
-1. (Optional) Um eine weitere Person als Benutzerin oder Benutzer im Arbeitsablauf hinzuzufügen, ziehen Sie eine Aktivitätenauswahl, konfigurieren Sie sie und weisen Sie sie einer Person zu. Schreiben Sie einen benutzerdefinierten Wrapper (ein Beispiel wird unten angezeigt) oder laden Sie das DSC herunter und installieren Sie es (unten angezeigt), um Briefvorlagen, Startpunktausgabe und Aufgabenanhänge zu extrahieren.
+1. (Optional) Um eine weitere Person als Benutzerin oder Benutzer im Workflow hinzuzufügen, ziehen Sie eine Aktivitätenauswahl, konfigurieren Sie sie und weisen Sie sie einer Person zu. Schreiben Sie einen benutzerdefinierten Wrapper (ein Beispiel wird unten angezeigt) oder laden Sie das DSC herunter und installieren Sie es (unten angezeigt), um Briefvorlagen, Startpunktausgabe und Aufgabenanhänge zu extrahieren.
 
    Ein benutzerdefinierter Beispiel-Wrapper wird nachfolgend aufgeführt:
 
@@ -100,8 +120,8 @@ Führen Sie die folgenden Schritte aus, um eine Aufgabe zum Rendern und Senden e
    }
    ```
 
-   [Datei laden](assets/dscsample.zip)
-DSC herunterladen: Ein Beispiel-DSC ist in der Datei „DSCSample.zip“ verfügbar, die oben angehängt ist. Laden Sie die Datei DSCSample.zip herunter und entpacken Sie sie. Bevor Sie den DSC-Service verwenden, müssen Sie ihn konfigurieren. Siehe [Konfigurieren des DSC-Dienstes](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+   [Datei abrufen](assets/dscsample.zip)
+   DSC herunterladen: Ein Beispiel-DSC ist in der Datei „DSCSample.zip“ verfügbar, die oben angehängt ist. Laden Sie die Datei DSCSample.zip herunter und entpacken Sie sie. Bevor Sie den DSC-Service verwenden, müssen Sie ihn konfigurieren. Siehe [Konfigurieren des DSC-Dienstes](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    Wählen Sie im Dialogfeld „Aktivität definieren“ die entsprechende Aktivität wie getLetterInstanceInfo aus und klicken Sie auf **OK**.
 
@@ -111,7 +131,7 @@ DSC herunterladen: Ein Beispiel-DSC ist in der Datei „DSCSample.zip“ verfüg
 
    ![cminworkspace](assets/cminworkspace.png)
 
-1. Geben Sie die erforderlichen Daten ein und senden Sie den Brief ab. Das Fenster schließt sich. In diesem Prozess wird die Aufgabe der Person zugewiesen, die im Arbeitsablauf in Schritt 9 angegeben wurde.
+1. Geben Sie die erforderlichen Daten ein und senden Sie den Brief ab. Das Fenster schließt sich. In diesem Prozess wird die Aufgabe der Person zugewiesen, die im Workflow in Schritt 9 angegeben wurde.
 
    >[!NOTE]
    >

@@ -7,13 +7,24 @@ feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 92%
-
 ---
-
 # Digitale Assets organisieren {#organize-digital-assets}
 
 | Version | Artikel-Link |
@@ -32,15 +43,15 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, sie in Or
 * Normalerweise ist Ihr Repository für digitale Assets immer im Wachstum begriffen. Daher ist es wichtig, die Verwendung von Metadaten, die Ordnerstruktur und die Dateibenennung frühzeitig im Erstellungszyklus des Inhalts zu formalisieren.
 * Verwenden Sie Ordner, um eine konsistente Speicherstruktur für die digitalen Assets durchzusetzen. Diese Konsistenz hilft Ihrem Prozess und bei der Verwaltung Ihrer Assets. Beispielsweise können Assets, die in den folgenden Ordnern abgelegt sind, bei der [Verwendung geeigneter Profile für die Asset-Verarbeitung](processing-profiles.md) helfen:
 
-   * **Entwicklungsordner**: enthält digitale Assets, an denen Sie gerade arbeiten.
-   * **Kundenordner**: enthalten digitale Assets basierend auf Kunden- oder Projektnamen.
-   * **Primäre Ordner**: enthalten digitale Quell-Assets in ihrer Originalform.
-   * **Ausgabedarstellungsordner**: enthalten Ausgabedarstellungen und Kopien der digitalen Quell-Assets in Originalform.
-   * **Dateigrößenordner**: enthalten digitale Assets basierend auf kleinen, mittleren oder großen Dateigrößen.
-   * **Staging-Ordner**: enthalten digitale Assets, die für die Veröffentlichung auf Ihrer Website bereit sind.
-   * **MIME-Typ-Ordner**: enthalten digitale Assets entsprechend den MIME-Typen, z. B. Bilder, Dokumente und Multimedia.
-   * **Archivordner**: enthalten nicht mehr verwendete digitale Assets.
-   * **Datumsbasierte Ordner**: enthalten digitale Assets basierend auf einem Erstellungsdatum oder dem letzten Änderungsdatum.
+  * **Entwicklungsordner**: enthält digitale Assets, an denen Sie gerade arbeiten.
+  * **Kundenordner**: enthalten digitale Assets basierend auf Kunden- oder Projektnamen.
+  * **Primäre Ordner**: enthalten digitale Quell-Assets in ihrer Originalform.
+  * **Ausgabedarstellungsordner**: enthalten Ausgabedarstellungen und Kopien der digitalen Quell-Assets in Originalform.
+  * **Dateigrößenordner**: enthalten digitale Assets basierend auf kleinen, mittleren oder großen Dateigrößen.
+  * **Staging-Ordner**: enthalten digitale Assets, die für die Veröffentlichung auf Ihrer Website bereit sind.
+  * **MIME-Typ-Ordner**: enthalten digitale Assets entsprechend den MIME-Typen, z. B. Bilder, Dokumente und Multimedia.
+  * **Archivordner**: enthalten nicht mehr verwendete digitale Assets.
+  * **Datumsbasierte Ordner**: enthalten digitale Assets basierend auf einem Erstellungsdatum oder dem letzten Änderungsdatum.
 
 * Erstellen Sie ein Verzeichnis mit Ordnern, die sich wahrscheinlich nicht ändern werden, damit Anpassungen oder Automatisierungen weiterhin funktionieren. Beispielsweise funktionieren die zugewiesenen Verarbeitungsprofile weiterhin.
 * Wenn Sie ein bereits veröffentlichtes Asset mithilfe von [!DNL Experience Manager] in einen anderen Ordner verschieben und anschließend vom neuen Speicherort aus erneut veröffentlichen, ist der ursprünglich veröffentlichte Asset-Speicherort neben dem neu veröffentlichten Asset weiterhin verfügbar. Das ursprünglich veröffentlichte Asset ist allerdings für [!DNL Experience Manager] *nicht mehr zugänglich*. Daher kann dessen Veröffentlichung nicht rückgängig gemacht werden. Daher empfiehlt es sich, zunächst die Veröffentlichung eines Assets rückgängig zu machen und es dann in einen anderen Ordner zu verschieben.

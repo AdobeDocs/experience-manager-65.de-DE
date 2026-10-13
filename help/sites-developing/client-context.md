@@ -10,13 +10,29 @@ feature: Context Hub,Developing,Personalization
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: db974db1-cf49-4452-872e-5a56c5f1d391
+    internal-label: Context Hub
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2996'
-ht-degree: 97%
-
+source-wordcount: '3030'
+ht-degree: 96%
 ---
-
 # Client-Kontext im Detail{#client-context-in-detail}
 
 >[!NOTE]
@@ -190,15 +206,15 @@ AEM stellt die Kontextspeicherkomponenten „genericstore“ und „genericstore
 
 * Eigenschaft-Wert-Paare: `GenericStoreProperties`-Komponente erweitern. Diese Komponente rendert automatisch die Speicher von Eigenschaft-Wert-Paaren. Es werden mehrere Interaktionspunkte bereitgestellt:
 
-   * `prolog.jsp` und `epilog.jsp`: Komponenteninteraktion, die das Hinzufügen von Server-seitiger Logik vor oder nach dem Komponenten-Rendering ermöglicht
+  * `prolog.jsp` und `epilog.jsp`: Komponenteninteraktion, die das Hinzufügen von Server-seitiger Logik vor oder nach dem Komponenten-Rendering ermöglicht
 
 * Komplexe Daten: `GenericStore`-Komponente erweitern. Für Ihren Sitzungsspeicher ist eine „Rendering“-Methode erforderlich, die immer dann abgerufen wird, wenn die Komponente gerendert werden muss. Die Rendering-Funktion wird mit zwei Parametern aufgerufen:
 
-   * `@param {String} store`
-Der zu rendernde Speicher
+  * `@param {String} store`
+    Der zu rendernde Speicher
 
-   * `@param {String} divId`
-Die ID des div-Elements, in das der Speicher gerendert werden muss.
+  * `@param {String} divId`
+    Die ID des div-Elements, in das der Speicher gerendert werden muss.
 
 >[!NOTE]
 >
@@ -490,7 +506,7 @@ In diesem Beispiel erstellen Sie eine Kontextspeicherkomponente, die Daten von e
 
 Erstellen Sie eine CQ-Anwendung und fügen Sie die Geoloc-Komponente hinzu.
 
-1. https://localhost Öffnen Sie CRXDE Lite in Ihrem Webbrowser ([:4502/crx/de](https://localhost:4502/crx/de)).
+1. Öffnen Sie CRXDE Lite in Ihrem Webbrowser ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps` und klicken Sie auf „Erstellen“ > „Ordner erstellen“. Geben Sie für `myapp` einen Namen ein und klicken Sie auf „OK“.
 1. Erstellen Sie auch unter `myapp` einen Ordner mit dem Namen `contextstores`. &grave;&grave;
 1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps/myapp/contextstores` und klicken Sie auf „Erstellen“ > „Komponente erstellen“. Geben Sie folgende Eigenschaftswerte an und klicken Sie auf „Weiter“:
@@ -618,11 +634,11 @@ Zum Erstellen eines zweiten ClientContext duplizieren Sie die Verzweigung:
 
 * Der Unterordner:
   `/content`
-enthält den Inhalt des benutzerdefinierten ClientContext.
+  enthält den Inhalt des benutzerdefinierten ClientContext.
 
 * Der Ordner:
   `/contextstores`
-ermöglicht es Ihnen, verschiedene Konfigurationen für die Kontextspeicher festzulegen.
+  ermöglicht es Ihnen, verschiedene Konfigurationen für die Kontextspeicher festzulegen.
 
 Um Ihren benutzerdefinierten ClientContext zu verwenden, bearbeiten Sie die Eigenschaft .
 `path`

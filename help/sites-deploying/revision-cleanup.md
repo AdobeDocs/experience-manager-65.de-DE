@@ -9,13 +9,22 @@ feature: Administering
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5878'
+source-wordcount: '5879'
 ht-degree: 97%
-
 ---
-
 # Revisionsbereinigung{#revision-cleanup}
 
 ## Einführung {#introduction}
@@ -642,7 +651,7 @@ java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurati
 
 Zusätzlich zu den oben beschriebenen Methoden können Sie den Revisionsbereinigungsmechanismus auch wie folgt mithilfe der JMX-Konsole auslösen:
 
-1. Öffnen Sie die JMX-Konsole unter [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)
+1. Öffnen Sie die JMX-Konsole, indem Sie zu [http://localhost:4502/system/console/jmx wechseln](http://localhost:4502/system/console/jmx)
 1. Klicken Sie auf MBean **RevisionGarbageCollection**.
 1. Klicken Sie im nächsten Fenster auf **startRevisionGC()** und dann auf **Invoke**, um den Auftrag der Revisionsspeicherbereinigung zu starten.
 

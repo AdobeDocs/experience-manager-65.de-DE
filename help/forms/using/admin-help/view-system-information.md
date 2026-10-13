@@ -9,16 +9,30 @@ exl-id: 27a2e81c-47b0-4de8-95bd-7cb34b9450da
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '546'
 ht-degree: 100%
-
 ---
-
 # Anzeigen von Systeminformationen {#view-system-information}
 
-Auf der Registerkarte „System“ werden Diagramme zur Ressourcenüberwachung und Informationen über den Server angezeigt, der AEM Forms ausführt.  Klicken Sie in der Administrationskonsole in der rechten oberen Ecke der Seite auf „Health Monitor“, um diese Informationen anzuzeigen.  Wenn Sie AEM Forms in einer Cluster-Umgebung ausführen, gelten die angezeigten Informationen für den auf der Server-Liste ausgewählten Knoten.
+Auf der Registerkarte „System“ werden Diagramme zur Ressourcenüberwachung und Informationen über den Server angezeigt, der AEM Forms ausführt. Klicken Sie in der Administrationskonsole in der rechten oberen Ecke der Seite auf „Health Monitor“, um diese Informationen anzuzeigen. Wenn Sie AEM Forms in einer Cluster-Umgebung ausführen, gelten die angezeigten Informationen für den auf der Server-Liste ausgewählten Knoten.
 
 Um die aktuellen Systeminformationen als Eigenschaftendatei zu speichern, klicken Sie auf „Speichern“.
 
@@ -28,11 +42,11 @@ Im rechten Bereich der Registerkarte „System“ werden die folgenden Informati
 * Heap- und zugesicherte Heap-Auslastung
 * Nicht-Heap- und zugesicherte Nicht-Heap-Auslastung
 
-Sie können Ihren Zeiger auf der Zeitachse verschieben, um Werte für einen bestimmten Zeitpunkt abzurufen.
+Sie können Ihren Zeiger auf der Timeline verschieben, um Werte für einen bestimmten Zeitpunkt abzurufen.
 
 >[!NOTE]
 >
->Die Diagrammdaten, Werte zu Server-Informationen und die Uhrzeit werden alle 10 Minuten aktualisiert.  Die Informationen werden nicht in Echtzeit angezeigt.
+>Die Diagrammdaten, Werte zu Server-Informationen und die Uhrzeit werden alle 10 Minuten aktualisiert. Die Informationen werden nicht in Echtzeit angezeigt.
 
 Im linken Bereich der Registerkarte „System“ werden die folgenden Informationen zum Server oder Knoten angezeigt:
 

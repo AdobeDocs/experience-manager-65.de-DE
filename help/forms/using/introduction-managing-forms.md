@@ -9,13 +9,27 @@ exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User
-source-git-commit: c6dd35fbedba6ace60975a7c31e987edd69a8c69
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 98%
-
 ---
-
 # Einführung in das Verwalten von Formularen {#introduction-to-managing-forms}
 
 AEM [!DNL Forms] bietet eine vereinfachte und dennoch leistungsstarke Benutzeroberfläche zum Erstellen und Verwalten von Formularen, Dokumenten, Themen, Briefen, Dokumentfragmenten, Datenwörterbüchern und ähnlichen Assets. Es hilft beim Management des gesamten Lebenszyklus von Formularen, Dokumenten und zugehörigen Assets - vom Desktop eines Entwicklers bis zum Angebot
@@ -56,8 +70,8 @@ Die Schaltfläche zum Erstellen ist der Startpunkt des Prozesses zur Erstellung 
 
 * **Ordner:** Die Benutzeroberfläche von AEM [!DNL Forms] verwendet Ordner zum Anordnen von Assets. Sie unterstützt zwei Typen von Ordnern:
 
-   * **Allgemeine Ordner:** Diese Ordner werden für Elemente verwendet, die in der Benutzeroberfläche von AEM [!DNL Forms] erstellt werden. Diese Ordner haben keine feste Ordnerstruktur. Sie können sie umbenennen, Unterordner erstellen und adaptive Formulare, interaktive Kommunikation adaptive Formularfragmente, Formularvorlagen (XDPs), PDF-Formulare, Dokumente und verwandte Assets in diesen Ordnern erstellen.
-   * **Workflow-Ordner von**: Diese Ordner werden erstellt, wenn Workbench-Prozesse (LiveCycle-Archieve) mit der Benutzeroberfläche von AEM [!DNL Forms] migriert und synchronisiert werden. Sie dürfen sie nicht umbenennen, einen Unterordner erstellen, eine interaktive Kommunikation erstellen, ein adaptives Formularfragment oder eine interaktive Kommunikation erstellen. Sie dürfen auch keinen Versionsordner löschen oder parallel zum Versionsordner ein adaptives Formular, ein adaptives Formularfragment oder eine interaktive Kommunikation erstellen und hochladen.
+  * **Allgemeine Ordner:** Diese Ordner werden für Elemente verwendet, die in der Benutzeroberfläche von AEM [!DNL Forms] erstellt werden. Diese Ordner haben keine feste Ordnerstruktur. Sie können sie umbenennen, Unterordner erstellen und adaptive Formulare, interaktive Kommunikation adaptive Formularfragmente, Formularvorlagen (XDPs), PDF-Formulare, Dokumente und verwandte Assets in diesen Ordnern erstellen.
+  * **Workflow-Ordner von**: Diese Ordner werden erstellt, wenn Workbench-Prozesse (LiveCycle-Archieve) mit der Benutzeroberfläche von AEM [!DNL Forms] migriert und synchronisiert werden. Sie dürfen sie nicht umbenennen, einen Unterordner erstellen, eine interaktive Kommunikation erstellen, ein adaptives Formularfragment oder eine interaktive Kommunikation erstellen. Sie dürfen auch keinen Versionsordner löschen oder parallel zum Versionsordner ein adaptives Formular, ein adaptives Formularfragment oder eine interaktive Kommunikation erstellen und hochladen.
 
   ![Ordner](assets/folders.png)
 
@@ -106,8 +120,8 @@ AEM Tools-Bereich enthält Tools für verschiedene Komponenten. Um zu den spezif
 
 * **Linke Leiste**: Sie können auf das Symbol für die linke Leiste ![railleftpng](assets/railleftpng.png) klicken, um die Timeline- und Referenzfunktionen von AEM [!DNL Forms] anzuzeigen.
 
-   * **Timeline:** Sie können Kommentare zu einem Asset hinzufügen, das für Review in der Timeline verfügbar ist. Detaillierte Anweisungen finden Sie unter [Erstellen und Verwalten von Überprüfungen von Assets in Formularen](../../forms/using/create-reviews-forms.md).
-   * **Referenzen**: Ein AEM [!DNL Forms]-Asset kann in mehreren AEM [!DNL Forms]-Assets verwendet werden. Ein Dokumentfragment kann beispielsweise in mehreren Briefen verwendet werden. „Referenzen“ besteht aus einer Liste von Assets (andere Formulare oder Ressourcen), in denen das ausgewählte Asset verwendet wird, und einer Liste anderer Assets, die das ausgewählte Asset seinerseits verwendet.
+  * **Timeline:** Sie können Kommentare zu einem Asset hinzufügen, das für Review in der Timeline verfügbar ist. Detaillierte Anweisungen finden Sie unter [Erstellen und Verwalten von Überprüfungen von Assets in Formularen](../../forms/using/create-reviews-forms.md).
+  * **Referenzen**: Ein AEM [!DNL Forms]-Asset kann in mehreren AEM [!DNL Forms]-Assets verwendet werden. Ein Dokumentfragment kann beispielsweise in mehreren Briefen verwendet werden. „Referenzen“ besteht aus einer Liste von Assets (andere Formulare oder Ressourcen), in denen das ausgewählte Asset verwendet wird, und einer Liste anderer Assets, die das ausgewählte Asset seinerseits verwendet.
 
 * **Breadcrumbs:** Ein Breadcrumb gibt den Titel der aktuellen Konsole oder des Ordners an. Sie können auf die Breadcrumb-Option klicken, um zwischen den Ordnerebenen, die höher in der Hierarchie sind, zu navigieren.
 * **Umschalter anzeigen**: Sie können auf das Symbol „Umschalter anzeigen“ ![viewlist](assets/viewlist.png) oder ![viewcard](assets/viewcard.png) klicken, um schnell zwischen Listen- und Kartenansicht zu wechseln. Weitere Informationen zu allgemeinen Komponenten der Benutzeroberfläche finden Sie unter [Authoring](/help/sites-authoring/author.md).

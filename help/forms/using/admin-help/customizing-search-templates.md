@@ -9,13 +9,27 @@ exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 100%
-
 ---
-
 # Anpassen von Suchvorlagen {#customizing-search-templates}
 
 >[!NOTE]
@@ -57,9 +71,9 @@ Sie können ganz nach Bedarf eine beliebige Anzahl von Suchvorlagen erstellen.
 
    * Füllen Sie unten auf der Registerkarte „Kriterien“ die entsprechenden Suchfelder für alle Prozesselemente, Aufgabenelemente und Prozessvariablen aus:
 
-      * Wählen Sie einen relationalen Operator (z. B. „gleich“) aus der bereitgestellten Liste aus und geben Sie den Wert des Operanden im Feld daneben an.
-      * (Optional) Damit Benutzende den Operandenwert in Workspace ändern können, aktivieren Sie „Dem Benutzer das Ändern des Operanden gestatten“.
-      * (Optional) Damit Benutzende den Wert des relationalen Operators ändern können, aktivieren Sie „Dem Benutzer das Auswählen eines anderen relationalen Operators gestatten“. Wählen Sie in der angezeigten Liste die Operatoren aus, die für die Benutzerin oder den Benutzer verfügbar sein sollen.
+     * Wählen Sie einen relationalen Operator (z. B. „gleich“) aus der bereitgestellten Liste aus und geben Sie den Wert des Operanden im Feld daneben an.
+     * (Optional) Damit Benutzende den Operandenwert in Workspace ändern können, aktivieren Sie „Dem Benutzer das Ändern des Operanden gestatten“.
+     * (Optional) Damit Benutzende den Wert des relationalen Operators ändern können, aktivieren Sie „Dem Benutzer das Auswählen eines anderen relationalen Operators gestatten“. Wählen Sie in der angezeigten Liste die Operatoren aus, die für die Benutzerin oder den Benutzer verfügbar sein sollen.
 
      **Tipp**: *Wenn Sie den Prozessnamen als Element ausgewählt haben, können Sie auf das Symbol neben dem Operandenfeld klicken, um eine Liste anzuzeigen, in der Sie einen Prozess auswählen können, der auf dem Formular-Server ausgeführt wird. Nachdem Sie einen Vorgang ausgewählt haben, sind alle in diesem Prozess definierten Prozessvariablen im oberen Bereich der Registerkarte „Kriterien“ unter „Prozessvariablen“ verfügbar.*
 
@@ -82,7 +96,7 @@ Sie können ganz nach Bedarf eine beliebige Anzahl von Suchvorlagen erstellen.
    * (Optional) Um eine Spalte absteigend zu sortieren, aktivieren Sie das Kontrollkästchen neben dem jeweiligen Elementnamen. Ist das Kontrollkästchen nicht aktiviert, wird die Spalte in aufsteigender Reihenfolge sortiert.
 
 1. Klicken Sie auf die Registerkarte „Speichern“.
-1. (Optional) Geben Sie beim Erstellen einer Suchvorlage einen eindeutigen Namen an.  Falls Sie keinen eindeutigen Namen angeben, wird eventuell eine vorhandene Vorlage überschrieben.
+1. (Optional) Geben Sie beim Erstellen einer Suchvorlage einen eindeutigen Namen an. Falls Sie keinen eindeutigen Namen angeben, wird eventuell eine vorhandene Vorlage überschrieben.
 1. Klicken Sie auf die Schaltfläche „Speichern“.
 
 ## Löschen einer Suchvorlage {#delete-a-search-template}

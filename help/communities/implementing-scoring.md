@@ -11,13 +11,20 @@ role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2911'
+source-wordcount: '2919'
 ht-degree: 3%
-
 ---
-
 # Vergabe von Bewertungen und Abzeichen in Communities {#communities-scoring-and-badges}
 
 ## Überblick {#overview}
@@ -84,7 +91,7 @@ Damit Abzeichen als Belohnung für Aktivitäten angezeigt werden, müssen zwei D
 
 In der Version sind drei Belohnungs-Abzeichen enthalten:
 
-* **Gold**
+* **gold**
   `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
 * **silber**
@@ -164,8 +171,8 @@ Bewertungsregeln werden vererbt, sind aber nicht additiv. Beispiel:
 * Eine Aktion in einer „page2“-Komponente ruft „rule1“ und „rule2“ auf.
 * Wenn beide Regeln anwendbare Unterregeln für dieselbe `topic/verb` enthalten:
 
-   * Nur die Unterregel aus Regel2 wirkt sich auf die Bewertung aus.
-   * Die Punktzahlen aus beiden Unterregeln werden nicht hinzugefügt.
+  * Nur die Unterregel aus Regel2 wirkt sich auf die Bewertung aus.
+  * Die Punktzahlen aus beiden Unterregeln werden nicht hinzugefügt.
 
 Wenn es mehr als eine Bewertungsregel gibt, werden die Bewertungen für jede Regel separat verwaltet.
 
@@ -181,7 +188,8 @@ Scores werden in SRP gespeichert.
 >
 >Ein Beispiel dafür *was* tun:
 >
->/libs/settings/community/scoring/rules/site1/forums-scoring>/libs/settings/community/scoring/rules/site2/forums-scoring
+>/libs/settings/community/scoring/rules/site1/forums-scoring
+>/libs/settings/community/scoring/rules/site2/forums-scoring
 
 ### Unterregeln für die Bewertung {#scoring-sub-rules}
 
@@ -274,18 +282,18 @@ In dieser Version sind zwei Bewertungsregeln für die Funktion [Forum](/help/com
 1. /libs/settings/community/scoring/rules/comments-scoring
 
    * subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/member-comment-create
-/libs/settings/community/scoring/rules/sub-rules/member-receive-vote
-/libs/settings/community/scoring/rules/sub-rules/member-Give-vote
-/libs/settings/community/scoring/rules/sub-rules/member-is-moderated
+     /libs/settings/community/scoring/rules/sub-rules/member-comment-create
+     /libs/settings/community/scoring/rules/sub-rules/member-receive-vote
+     /libs/settings/community/scoring/rules/sub-rules/member-Give-vote
+     /libs/settings/community/scoring/rules/sub-rules/member-is-moderated
 
 1. /libs/settings/community/scoring/rules/forums-scoring
 
    * subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/member-forum-create
-/libs/settings/community/scoring/rules/sub-rules/member-receive-vote
-/libs/settings/community/scoring/rules/sub-rules/member-Give-vote
-/libs/settings/community/scoring/rules/sub-rules/member-is-moderated
+     /libs/settings/community/scoring/rules/sub-rules/member-forum-create
+     /libs/settings/community/scoring/rules/sub-rules/member-receive-vote
+     /libs/settings/community/scoring/rules/sub-rules/member-Give-vote
+     /libs/settings/community/scoring/rules/sub-rules/member-is-moderated
 
 **Anmerkungen:**
 
@@ -296,7 +304,7 @@ In dieser Version sind zwei Bewertungsregeln für die Funktion [Forum](/help/com
 * `sub-rules` können unter verschiedenen Bewertungsregeln aufgeteilt werden.
 * `rules` sollten sich an einem Repository-Speicherort mit Leseberechtigung für alle befinden.
 
-   * Regelnamen müssen unabhängig vom Speicherort eindeutig sein.
+  * Regelnamen müssen unabhängig vom Speicherort eindeutig sein.
 
 ### Aktivieren benutzerdefinierter Bewertungsregeln {#activating-custom-scoring-rules}
 
@@ -315,15 +323,15 @@ Die Badging-Regeln bestehen aus einer obligatorischen `thresholds`-Eigenschaft, 
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-   * Ein Bronze-Abzeichen wird für den Gewinn eines Punktes vergeben.
+  * Ein Bronze-Abzeichen wird für den Gewinn eines Punktes vergeben.
 
 * `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
-   * Ein silbernes Abzeichen wird verliehen, wenn 60 Punkte gesammelt wurden.
+  * Ein silbernes Abzeichen wird verliehen, wenn 60 Punkte gesammelt wurden.
 
 * `80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
-   * Ein Gold-Abzeichen wird verliehen, wenn 80 Punkte gesammelt wurden.
+  * Ein Gold-Abzeichen wird verliehen, wenn 80 Punkte gesammelt wurden.
 
 Badging-Regeln sind mit Bewertungsregeln gepaart, die bestimmen, wie Punkte gesammelt werden. Siehe den Abschnitt [Anwenden von Regeln auf Inhalte](#apply-rules-to-content).
 
@@ -378,7 +386,7 @@ In dieser Version sind zwei Badging-Regeln enthalten, die den [Bewertungsregeln 
 * `rules` Knoten sind vom Typ CQ:Page.
 * `rules` sollten sich an einem Repository-Speicherort mit Leseberechtigung für alle befinden.
 
-   * Regelnamen müssen unabhängig vom Speicherort eindeutig sein.
+  * Regelnamen müssen unabhängig vom Speicherort eindeutig sein.
 
 ### Aktivieren benutzerdefinierter Badging-Regeln {#activating-custom-badging-rules}
 
@@ -581,29 +589,29 @@ Sie können schnell Scoring und Badging ausprobieren, indem Sie die Seite [Erste
 * Zugriff auf CRXDE Lite in der Autoreninstanz.
 * Navigieren Sie zur Basisseite:
 
-   * /content/sites/engage/en/jcr:content
+  * /content/sites/engage/en/jcr:content
 
 * Fügen Sie die badgingRules-Eigenschaft hinzu:
 
-   * **Name**: `badgingRules`
-   * **Typ**: `String`
-   * Wählen Sie **Multi**
-   * Wählen Sie **Hinzufügen** aus
-   * Geben Sie `/libs/settings/community/badging/rules/forums-badging` ein
-   * **+** auswählen
-   * Geben Sie `/libs/settings/community/badging/rules/comments-badging` ein
-   * Wählen Sie **OK** aus.
+  * **Name**: `badgingRules`
+  * **Typ**: `String`
+  * Wählen Sie **Multi**
+  * Wählen Sie **Hinzufügen** aus
+  * Geben Sie `/libs/settings/community/badging/rules/forums-badging` ein
+  * **+** auswählen
+  * Geben Sie `/libs/settings/community/badging/rules/comments-badging` ein
+  * Wählen Sie **OK** aus.
 
 * Fügen Sie die ScoringRules-Eigenschaft hinzu:
 
-   * **Name**: `scoringRules`
-   * **Typ**: `String`
-   * Wählen Sie **Multi**
-   * Wählen Sie **Hinzufügen** aus
-   * Geben Sie `/libs/settings/community/scoring/rules/forums-scoring` ein
-   * **+** auswählen
-   * Geben Sie `/libs/settings/community/scoring/rules/comments-scoring` ein
-   * Wählen Sie **OK** aus.
+  * **Name**: `scoringRules`
+  * **Typ**: `String`
+  * Wählen Sie **Multi**
+  * Wählen Sie **Hinzufügen** aus
+  * Geben Sie `/libs/settings/community/scoring/rules/forums-scoring` ein
+  * **+** auswählen
+  * Geben Sie `/libs/settings/community/scoring/rules/comments-scoring` ein
+  * Wählen Sie **OK** aus.
 
 * Klicken Sie auf **Alle speichern**.
 
@@ -614,13 +622,13 @@ Stellen Sie als Nächstes sicher, dass die Komponenten Forum und Kommentare die 
 * Erneut mit CRXDE Lite.
 * Navigieren Sie zur Forenkomponente
 
-   * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
+  * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
 * Fügen Sie bei Bedarf die boolesche Eigenschaft allowBadges hinzu und stellen Sie sicher, dass sie wahr ist.
 
-   * **Name**: `allowBadges`
-   * **Typ**: `Boolean`
-   * **Wert**: `true`
+  * **Name**: `allowBadges`
+  * **Typ**: `Boolean`
+  * **Wert**: `true`
 
 ![test-forum-component](assets/test-forum-component.png)
 
@@ -633,7 +641,7 @@ Schließlich
 * Posten eines neuen Forumsthemas.
 * Die Seite muss aktualisiert werden, damit das Abzeichen angezeigt wird.
 
-   * Melden Sie sich ab und melden Sie sich als anderes Community-Mitglied an (z. B.: aaron.mcdonald@mailinator.com/password).
+  * Melden Sie sich ab und melden Sie sich als anderes Community-Mitglied an (z. B.: aaron.mcdonald@mailinator.com/password).
 
 * Wählen Sie das Forum aus.
 

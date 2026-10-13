@@ -10,13 +10,24 @@ feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2287199-aefe-59f7-9b29-14176a1a51d4
+    internal-label: Interactive Videos
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6186'
+source-wordcount: '6208'
 ht-degree: 98%
-
 ---
-
 # Interaktive Videos{#interactive-videos}
 
 Sie können auf einfache Weise interaktive Videos (auch als Videos mit Shopping-Funktion bekannt) erstellen, die direkt aus dem Video die Konversion fördern. Die Kundeninteraktion mit dem Video erfolgt in einem Feld neben dem Videoplayer, in dem die zugehörigen Services, Informationen oder Produktminiaturen auf Grundlage des Umfangs im Video per Bildlauf in die Ansicht einfließen. Kunden können auf die Miniatur klicken und werden direkt mit dem Service verbunden. Alternativ können sie den Artikel für den direkten Kauf zu einem Warenkorb hinzufügen oder sie werden mit einer Web-Seite verbunden, wo sie weitere Informationen erhalten.
@@ -33,7 +44,7 @@ Um ein interaktives Video mit Shopping-Funktion in Aktion zu sehen, wählen Sie 
 
 * Wählen Sie die Miniatur aus, wenn Sie das Video anhalten und die Schnellansicht des Produkts öffnen möchten. Sie können beispielsweise im Video auf das KitchenAid-Miniaturbild klicken, um eine 360-Grad-Rotationsansicht des Mixers anzuzeigen, oder heranzoomen, um die Details des Mixers zu sehen.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=de. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![Ein Frame aus einem interaktiven Video mit Shopping-Funktion](assets/chlimage_1-126.png) *Ein Frame aus einem interaktiven Video mit Shopping-Funktion.*
 
@@ -258,7 +269,7 @@ Um ein Video und seine zugehörigen Miniatur-Assets hochzuladen:
 1. Laden Sie das Video und die zugehörigen Miniatur-Assets in den gewünschten Ordner hoch.
 
    Siehe [Hochladen von Assets](/help/assets/manage-assets.md).
-Siehe [Hochladen von Assets mit FTP-Auftragsplanung](/help/assets/manage-assets.md).
+   Siehe [Hochladen von Assets mit FTP-Auftragsplanung](/help/assets/manage-assets.md).
 
    Fügen Sie Ihrem Video nun Interaktivität hinzu.
 
@@ -368,9 +379,9 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
      Verwenden Sie die folgenden Navigationsverknüpfungen, um Ihre Videosegmente schnell zu überprüfen und zu optimieren:
 
-      * Um im Video direkt den Anfang des Segments zu suchen, wählen Sie das führende blaue Oval aus.
-      * Um im Video direkt das Ende des Segments zu suchen, wählen Sie das hintere blaue Oval aus.
-      * Um die Videowiedergabe an den Anfang des Segments zurückzusetzen, wählen Sie das gesamte Segment aus.
+     * Um im Video direkt den Anfang des Segments zu suchen, wählen Sie das führende blaue Oval aus.
+     * Um im Video direkt das Ende des Segments zu suchen, wählen Sie das hintere blaue Oval aus.
+     * Um die Videowiedergabe an den Anfang des Segments zurückzusetzen, wählen Sie das gesamte Segment aus.
 
    ![chlimage_1-26](assets/chlimage_1-132.png)
 

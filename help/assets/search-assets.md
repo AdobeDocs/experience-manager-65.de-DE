@@ -1,6 +1,6 @@
 ---
 title: Suchen nach digitalen Assets und Bildern in [!DNL Adobe Experience Manager]
-description: Erfahren Sie, wie Sie die erforderlichen Assets in [!DNL Adobe Experience Manager] mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
+description: Erfahren Sie, wie Sie die erforderlichen Assets in [!DNL Adobe Experience Manager] mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche angezeigt werden.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Search, Metadata
@@ -8,13 +8,27 @@ role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ed6971a3-2c12-4fd2-81f4-ff329c416250
+    internal-label: Metadata
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5796'
+source-wordcount: '5854'
 ht-degree: 97%
-
 ---
-
 # Suche nach digitalen Assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
 | Version | Artikel-Link |
@@ -87,8 +101,8 @@ Die [!DNL Experience Manager]-Suche kombiniert die Suchbegriffe standardmäßig 
 * `woman.running`
 * `woman-running`
 
-Die Abfrage gibt jedoch `woman -running` Assets ohne `running` in den Metadaten zurück.
-Durch die Verwendung von Smart-Tags wird eine zusätzliche `OR` hinzugefügt. Damit wird jeder Suchbegriff gefunden, der den angewendeten Smart-Tags entspricht. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird in einer solchen Suchanfrage auch angezeigt. Die Suchergebnisse sind also eine Kombination aus
+Die Abfrage `woman -running` gibt jedoch Assets ohne `running` in den Metadaten zurück.
+Durch die Verwendung von Smart-Tags wird eine zusätzliche `OR`-Klausel hinzugefügt. Damit wird jeder Suchbegriff gefunden, der den angewendeten Smart-Tags entspricht. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird in einer solchen Suchabfrage auch angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
 * Assets mit den Keywords `woman` und `running` in den Metadaten (Standardverhalten).
 

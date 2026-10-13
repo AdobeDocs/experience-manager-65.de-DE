@@ -10,13 +10,20 @@ role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 8%
-
+source-wordcount: '2489'
+ht-degree: 9%
 ---
-
 # Communities-Benutzersynchronisierung {#communities-user-synchronization}
 
 ## Einführung {#introduction}
@@ -102,7 +109,7 @@ Bei der Benutzersynchronisierung wird die Benutzerdatenverteilung von der Autore
 
 Die folgenden Konfigurationen sind erforderlich, um die Benutzersynchronisierung in AEM Communities zu aktivieren. Stellen Sie sicher, dass diese Konfigurationen korrekt sind, um zu verhindern, dass die Sling-Inhaltsverteilung fehlschlägt.
 
-### Apache Sling Distribution Agent - Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
+### Apache Sling Distribution Agent – Synchronisations-Agents-Factory {#apache-sling-distribution-agent-sync-agents-factory}
 
 Diese Konfiguration ruft den Inhalt ab, der über die Herausgeber hinweg synchronisiert werden soll. Die Konfiguration befindet sich auf der Autoreninstanz. Der Autor muss alle Herausgeber verfolgen, die dort sind und wo alle Informationen synchronisiert werden sollen.
 
@@ -130,7 +137,7 @@ So konfigurieren Sie die Konfiguration für Apache Sling Sync Agents:
 
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
-### Adobe Granite-Verteilung - Verschlüsselter Kennwortübertragungs-Geheimnisanbieter {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
+### Adobe Granite-Verteilung – Anbieter für Transportgeheimnis für verschlüsseltes Kennwort {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 Dadurch kann der Autor den autorisierten Benutzer identifizieren, da er berechtigt ist, Benutzerdaten von der Autoren- zur Veröffentlichungsinstanz zu synchronisieren.
 

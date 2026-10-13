@@ -7,13 +7,27 @@ feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2029'
 ht-degree: 99%
-
 ---
-
 # Vorbereiten und Senden der interaktiven Kommunikation mithilfe der Agent-Benutzeroberfläche {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
 Über die Agent-Benutzeroberfläche können die Agenten die interaktive Kommunikation vorbereiten und an den Nachbearbeitungsprozess senden. Der Agent nimmt die erforderlichen Änderungen vor und übergibt die interaktive Kommunikation an einen Nachbearbeitungsprozess, z. B. E-Mail oder Druck.
@@ -71,8 +85,8 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
 
    * [Formatierungsoptionen](#formattingtext)
 
-      * [Formatierten Text aus anderen Anwendungen kopieren/einfügen](#pasteformattedtext)
-      * [Teile des Textes markieren](#highlightemphasize)
+     * [Formatierten Text aus anderen Anwendungen kopieren/einfügen](#pasteformattedtext)
+     * [Teile des Textes markieren](#highlightemphasize)
 
    * [Sonderzeichen](#specialcharacters)
    * [Tastaturbefehle](/help/forms/using/keyboard-shortcuts.md)
@@ -182,10 +196,10 @@ Die Funktion „Als Entwurf speichern“ ist standardmäßig nicht aktiviert. F�
 
 1. Implementieren Sie das [ccrDocumentInstance](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) Service Provider Interface (SPI).
 
-   Mit dem SPI können Sie die Entwurfsversion der interaktiven Kommunikation mit einer Entwurfs-ID als eindeutiger Kennung in der Datenbank speichern. Bei diesen Anweisungen wird davon ausgegangen, dass Sie über Vorkenntnisse zum Erstellen eines OSGi-Bundles mithilfe eines Maven-Projekts verfügen.
+   Mit dem SPI können Sie die Entwurfsversion der interaktiven Kommunikation mit einer Entwurfs-ID als eindeutiger Kennung in der Datenbank speichern. Bei diesen Anweisungen wird davon ausgegangen, dass Sie über Vorkenntnisse zum Erstellen eines OSGi-Pakets mithilfe eines Maven-Projekts verfügen.
 
    Eine Beispiel-SPI-Implementierung finden Sie unter [Beispielhafte ccrDocumentInstance-SPI-Implementierung](#sample-ccrDocumentInstance-spi).
-1. Öffnen Sie `http://<hostname>:<port>/ system/console/bundles` und wählen Sie **[!UICONTROL Installieren/Aktualisieren]**, um das OSGi-Bundle hochzuladen. Stellen Sie sicher, dass der Status des hochgeladenen Pakets als **Aktiv** angezeigt wird. Starten Sie den Server neu, wenn der Status des Pakets nicht als **Aktiv** angezeigt wird.
+1. Öffnen Sie `http://<hostname>:<port>/ system/console/bundles` und wählen Sie **[!UICONTROL Installieren/Aktualisieren]**, um das OSGi-Paket hochzuladen. Stellen Sie sicher, dass der Status des hochgeladenen Pakets als **Aktiv** angezeigt wird. Starten Sie den Server neu, wenn der Status des Pakets nicht als **Aktiv** angezeigt wird.
 1. Rufen Sie `https://'[server]:[port]'/system/console/configMgr` auf.
 1. Wählen Sie die Option zum **[!UICONTROL Erstellen der Korrespondenzkonfiguration]** aus.
 1. Wählen Sie die Option zum **[!UICONTROL Aktivieren der Speicherung mit CCRDocumentInstanceService]** und dann **[!UICONTROL Speichern]** aus.

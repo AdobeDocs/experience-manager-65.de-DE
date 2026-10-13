@@ -9,13 +9,29 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3434'
-ht-degree: 96%
-
+source-wordcount: '3480'
+ht-degree: 97%
 ---
-
 # Intelligente Bildbearbeitung {#smart-imaging}
 
 Die intelligente Bildbearbeitung wendet die individuellen anzeigebezogenen Benutzermerkmale an, um automatisch die richtigen Bilder für ein optimiertes individuelles Erlebnis zu präsentieren. Das Ergebnis: mehr Leistung und Interaktion.
@@ -244,32 +260,32 @@ Geben Sie beim Erstellen des Support-Falles an, welche Funktionen der intelligen
 
    * **Kontaktdetails des Hauptansprechpartners:**
 
-      * Geben Sie Ihren Name, Ihre E-Mail-Adresse und Ihre Telefonnummer an.
+     * Geben Sie Ihren Name, Ihre E-Mail-Adresse und Ihre Telefonnummer an.
 
    * **Zu aktivierende Funktionen der intelligenten Bildbearbeitung:**
 
-      * Geben Sie die für Ihr Konto gewünschten Funktionen an:
+     * Geben Sie die für Ihr Konto gewünschten Funktionen an:
 
-         * Browser-Formatkonvertierung: WebP oder AVIF
-         * Optimierung der Netzwerkbandbreite
-         * DPR: Die DPR erfordert Client-seitige Anpassungen, um den korrekten `dprValue` zu ermitteln. Daher empfiehlt Adobe die Aktivierung der DPR über URLs durch Anhängen von `dpr=on,dprValue`.
+       * Browser-Formatkonvertierung: WebP oder AVIF
+       * Optimierung der Netzwerkbandbreite
+       * DPR: Die DPR erfordert Client-seitige Anpassungen, um den korrekten `dprValue` zu ermitteln. Daher empfiehlt Adobe die Aktivierung der DPR über URLs durch Anhängen von `dpr=on,dprValue`.
 
    * **Domain für intelligente Bildbearbeitung:**
 
-      * Liste aller relevanten Domains, z. B. *`company.com`* oder *`mycompany.scene7.com`*
-      * Die intelligente Bildbearbeitung unterstützt sowohl generische als auch benutzerdefinierte Domains.
-      * Öffnen Sie die [Dynamic Media Classic-Desktop-Anwendung](https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) und melden Sie sich bei Ihrem Unternehmenskonto an, um Ihre Domains zu ermitteln.
+     * Liste aller relevanten Domains, z. B. *`company.com`* oder *`mycompany.scene7.com`*
+     * Die intelligente Bildbearbeitung unterstützt sowohl generische als auch benutzerdefinierte Domains.
+     * Öffnen Sie die [Dynamic Media Classic-Desktop-Anwendung](https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) und melden Sie sich bei Ihrem Unternehmenskonto an, um Ihre Domains zu ermitteln.
 
-         1. Wählen Sie **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinrichtung]** > **[!UICONTROL Allgemeine Einstellungen]**.
-         1. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**, um Ihre Domain zu bestätigen.
-         1. Vergewissern Sie sich, dass Sie das CDN von Adobe anstelle eines CDN von einem anderen Anbieter verwenden.
+       1. Wählen Sie **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinrichtung]** > **[!UICONTROL Allgemeine Einstellungen]**.
+       1. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**, um Ihre Domain zu bestätigen.
+       1. Vergewissern Sie sich, dass Sie das CDN von Adobe anstelle eines CDN von einem anderen Anbieter verwenden.
 
    * **Angabe der HTTP/2-Unterstützung:**
 
-      * Geben Sie an, ob Sie auf eine Nutzung der intelligenten Bildbearbeitung über HTTP/2 angewiesen sind.
+     * Geben Sie an, ob Sie auf eine Nutzung der intelligenten Bildbearbeitung über HTTP/2 angewiesen sind.
 
 1. Der Adobe-Kundendienst aktiviert standardmäßig die angeforderten Funktionen der intelligenten Bildbearbeitung, sodass Parameter nicht manuell an URLs angehängt werden müssen.
-1. Adobe empfiehlt, die Time To Live (TTL) auf mindestens 24 Stunden festzulegen, um die Leistung durch Caching zu maximieren.
+1. Adobe empfiehlt, die Time-to-Live (TTL) auf mindestens 24 Stunden festzulegen, um die Leistung durch das Zwischenspeichern zu maximieren.
 So passen Sie die TTL an:
 
    1. **Für Dynamic Media Classic:**
@@ -338,9 +354,10 @@ Aus diesem Header geht Folgendes hervor:
 >
 >**X-Adobe-Smart-Imaging = -1, WebP bereitgestellt**
 >
->Wenn der Wert von `X-Adobe-Smart-Imaging` -1 beträgt und dennoch WebP bereitgestellt wird, ist die intelligente Bildbearbeitung aktiv. Die Größenvorteile wurden jedoch aufgrund eines veralteten Caches nicht berechnet. Sie können `cache=update` (nur einmal) in der URL des Bildes verwenden, um dieses Problem zu beheben.
+>Wenn `X-Adobe-Smart-Imaging` den Wert -1 hat und WebP weiterhin bereitgestellt wird, ist die intelligente Bildbearbeitung aktiv. Die Größenvorteile wurden jedoch aufgrund von veraltetem Cache nicht berechnet. Sie können `cache=update` (nur einmal) in der URL des Bildes verwenden, um dieses Problem zu beheben.
 >Beispiel für die Verwendung des Modifikators:
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>Um den gesamten Cache ungültig zu machen, müssen Sie einen Support-Fall erstellen.
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>Um den gesamten Cache ungültig zu machen, müssen Sie einen Support-Fall erstellen.
 
 +++
 

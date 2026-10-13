@@ -10,13 +10,22 @@ exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1190'
 ht-degree: 98%
-
 ---
-
 # Proxy-Server-Tool (proxy.jar){#proxy-server-tool-proxy-jar}
 
 Der Proxy-Server fungiert als Zwischen-Server, der Anforderungen zwischen einem Client und einem Server weiterleitet. Der Proxy-Server verfolgt alle Interaktionen zwischen Client und Server und gibt ein Protokoll der gesamten TCP-Kommunikation aus. Auf diese Weise können Sie die Vorgänge genau überwachen, ohne auf den Haupt-Server zugreifen zu müssen.
@@ -33,7 +42,7 @@ Sie können den Proxy-Server verwenden, um alle Interaktionen zwischen Client un
 * SMTP für E-Mail-Nachrichten
 * LDAP für die Benutzerverwaltung
 
-Sie können den Proxy-Server zum Beispiel zwischen zwei Anwendungen schalten, die über ein TCP/IP-Netzwerk kommunizieren, etwa einem Webbrowser und AEM. So können Sie genau überprüfen, was passiert, wenn Sie eine CQ-Seite abrufen.
+Sie können den Proxy-Server zum Beispiel zwischen zwei Anwendungen schalten, die über ein TCP/IP-Netzwerk kommunizieren, etwa einem Webbrowser und AEM. So können Sie genau überwachen, was passiert, wenn Sie eine CQ-Seite abrufen.
 
 ## Starten des Proxy-Server-Tools {#starting-the-proxy-server-tool}
 
@@ -143,7 +152,7 @@ Sehen Sie sich diese einfache Vorlage an, die bei Anforderung folgenden Code erz
 </html>
 ```
 
-Wenn AEM auf localhost:4303 ausgeführt wird, starten Sie den Proxy-Server wie folgt:
+Wenn AEM auf localhost:4303 ausgeführt wird, starten Sie den Proxyserver wie folgt:
 
 ```xml
 java -jar proxy.jar localhost 4303 4444 -logfile test.log

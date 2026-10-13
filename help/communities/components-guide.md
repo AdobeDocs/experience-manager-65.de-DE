@@ -9,16 +9,23 @@ exl-id: 12c0eae5-fd76-4480-a012-25d3312f3570
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1212'
 ht-degree: 1%
-
 ---
-
 # Handbuch der Community-Komponenten  {#community-components-guide}
 
-Das Community Components Guide ist ein interaktives Entwicklungstool für das [Social Component Framework (SCF)](scf.md). Es enthält eine Liste der verfügbaren Adobe Experience Manager (AEM)-Communities-Komponenten oder der komplexeren Funktionen, die aus mehreren Komponenten erstellt wurden.
+Das Community Components Guide ist ein interaktives Entwicklungstool für das [Social Component Framework (SCF)](scf.md). Es enthält eine Liste der verfügbaren Adobe Experience Manager (AEM) Communities -Komponenten oder der komplexeren Funktionen, die aus mehreren Komponenten erstellt wurden.
 
 Neben grundlegenden Informationen zu den einzelnen Komponenten ermöglicht das Handbuch Experimente mit der Funktionsweise der SCF-Komponenten/-Funktionen und der Möglichkeit, sie zu konfigurieren oder anzupassen.
 
@@ -103,19 +110,19 @@ Auf der Registerkarte **Vorlagen**:
 
 ![community-component4](assets/community-component4.png)
 
-* **Untergeordnete Komponente mit sling:include einschließen**
+* **Untergeordnete Komponente in Sling einschließen:include**
 
   Wenn diese Option deaktiviert ist, verwendet das Komponenten-Handbuch die vorhandene Ressource im Repository (einen jcr-Knoten, der einem para-Knoten untergeordnet ist).
 
-   * Angezeigter Text: „Diese Komponente ist über ihren übergeordneten Knoten enthalten.“
+  * Angezeigter Text: „Diese Komponente ist über ihren übergeordneten Knoten enthalten.“
 
   Wenn diese Option aktiviert ist, verwendet das Komponenten-Handbuch Sling, um eine Komponente des resourceType des untergeordneten Knotens dynamisch einzuschließen (nicht vorhandene Ressource).
 
-   * Angezeigter Text: „Diese Komponente ist dynamisch enthalten.“
+  * Angezeigter Text: „Diese Komponente ist dynamisch enthalten.“
 
   Standard ist deaktiviert.
 
-### Publish Interactions {#publish-interactions}
+### Veröffentlichungsinteraktionen {#publish-interactions}
 
 Bei Verwendung des Handbuchs auf einer Veröffentlichungsinstanz können die Komponenten und Funktionen als Site-Besucher (nicht angemeldet) und als Mitglieder mit verschiedenen Berechtigungen erleben, wenn sie angemeldet sind.
 
@@ -149,7 +156,7 @@ Um schnell mit Anpassungen zu experimentieren`scg:showIde` muss die Eigenschaft 
 
 Verwenden Sie die Komponente Kommentare als Beispiel für die Autoren- oder Veröffentlichungsinstanz, die mit Administratorrechten angemeldet ist:
 
-1. Zu [CRXDE Lite navigieren](../../help/sites-developing/developing-with-crxde-lite.md)
+1. Navigieren Sie zu [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
 
    Beispiel: [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 

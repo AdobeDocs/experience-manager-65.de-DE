@@ -9,13 +9,22 @@ exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '495'
 ht-degree: 97%
-
 ---
-
 # Testen bearbeitbarer Vorlagen in We.Retail{#trying-out-editable-templates-in-we-retail}
 
 Dank der bearbeitbaren Vorlagen ist das Erstellen und Verwalten von Vorlagen nicht mehr nur eine Aufgabe für Entwickelnde. Ein erfahrener Benutzer, ein so genannter Vorlagenautor, kann nun Vorlagen erstellen. Entwickler müssen weiterhin die Umgebung einrichten, Clientbibliotheken erstellen und die zu verwendenden Komponenten erstellen. Sobald diese Grundlagen vorhanden sind, hat der Vorlagenautor jedoch die Flexibilität, Vorlagen ohne Entwicklungsprojekt zu erstellen und zu konfigurieren.
@@ -57,10 +66,10 @@ Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass auch Mensch
    * eine vorhandene Richtlinie auswählen oder eine Richtlinie für den Container erstellen
    * festlegen, welche Funktionen den Seitenautorinnen und -autoren bei Verwendung dieser Komponente zur Verfügung stehen, z. B.
 
-      * zulässige Einfügequellen
-      * Formatierungsoptionen
-      * zulässige Absatzstile
-      * zulässige Sonderzeichen
+     * zulässige Einfügequellen
+     * Formatierungsoptionen
+     * zulässige Absatzstile
+     * zulässige Sonderzeichen
 
    Viele Komponenten, die auf den Kernkomponenten basieren, ermöglichen die Konfiguration von Optionen auf Komponentenebene über die bearbeitbaren Vorlagen, sodass Entwickelnde keine Anpassungen mehr vornehmen müssen.
 

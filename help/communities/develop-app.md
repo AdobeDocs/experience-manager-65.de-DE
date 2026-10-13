@@ -9,13 +9,20 @@ exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '600'
 ht-degree: 5%
-
 ---
-
 # Entwickeln eines Sandbox-Programms  {#develop-sandbox-application}
 
 In diesem Abschnitt können Sie die Anwendung entwickeln, nachdem die Vorlage im Abschnitt [Anfangsanwendung](initial-app.md) und auf den Anfangsseiten im Abschnitt [Anfangsinhalt](initial-content.md) eingerichtet wurde. Dazu verwenden Sie Foundation-Skripte, die die Möglichkeit bieten, das Authoring mit Communities-Komponenten zu aktivieren. Am Ende dieses Abschnitts finden Sie eine voll funktionsfähige Website.
@@ -28,7 +35,7 @@ Das Standardskript, das erstellt wird, wenn die Komponente, die die Wiedergabese
 
 Der erste Schritt besteht darin, dem `/apps/an-scf-sandbox/components/playpage` eine Eigenschaft des Ressourcen-Supertyps hinzuzufügen, damit er die Skripte und Eigenschaften des Supertyps erbt.
 
-Verwendung von CRXDE Lite:
+Verwenden von CRXDE Lite:
 
 1. Wählen Sie `/apps/an-scf-sandbox/components/playpage` aus.
 1. Geben Sie auf der Registerkarte Eigenschaften eine neue Eigenschaft mit den folgenden Werten ein:
@@ -46,7 +53,7 @@ Verwendung von CRXDE Lite:
 
 ### Kopf- und Textskripte {#head-and-body-scripts}
 
-1. Navigieren Sie im Explorer **Fenster** CRXDE Lite&rbrace; zu `/apps/an-scf-sandbox/components/playpage` und doppelklicken Sie auf die `playpage.jsp`, um sie im Bearbeitungsbereich zu öffnen.
+1. Navigieren Sie im **-Explorer-Fenster von** zu `/apps/an-scf-sandbox/components/playpage` und doppelklicken Sie auf die `playpage.jsp`, um sie im Bearbeitungsbereich zu öffnen.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -65,7 +72,7 @@ Verwendung von CRXDE Lite:
    %>
    ```
 
-1. Ersetzen Sie &quot;// TODO …“ in Kenntnis der offenen/geschlossenen Skript-Tags durch `includes` von Skripten für die Haupt- und Textteile von &lt;html>.
+1. Wenn Sie sich der offenen/geschlossenen Skript-Tags bewusst sind, ersetzen Sie &quot;// TODO …“ mit `includes` von Skripten für die Haupt- und Textteile von &lt;html>.
 
    Mit dem Supertyp `foundation/components/page` wird jedes Skript, das nicht in demselben Ordner definiert ist, in ein Skript `/apps/foundation/components/page` Ordner (falls vorhanden) oder in ein Skript `/libs/foundation/components/page` Ordner aufgelöst.
 
@@ -175,11 +182,11 @@ In diesem Beispiel wird die Stammseite statisch so eingestellt, dass sie zur eng
 * Wählen Sie **[!UICONTROL Eigenschaften öffnen]**
 * Auf der Registerkarte Erweitert
 
-   * Navigieren Sie für den Eintrag Umleiten zu **[!UICONTROL Websites]** > **[!UICONTROL SCF Sandbox-Site]** > **[!UICONTROL SCF Sandbox]**
-   * Klicken Sie auf **[!UICONTROL OK]**
+  * Navigieren Sie für den Eintrag Umleiten zu **[!UICONTROL Websites]** > **[!UICONTROL SCF Sandbox-Site]** > **[!UICONTROL SCF Sandbox]**
+  * Klicken Sie auf **[!UICONTROL OK]**
 
 * Klicken Sie auf **[!UICONTROL OK]**
 
 Nachdem die Site veröffentlicht wurde, wird beim Navigieren zur Stammseite in einer Veröffentlichungsinstanz zur englischen Seite weitergeleitet.
 
-Der letzte Schritt vor der Wiedergabe mit den Communities-SCF-Komponenten besteht darin, einen Client-Bibliotheksordner (clientlibs) hinzuzufügen…. [Clientlibs hinzufügen](add-clientlibs.md)
+Der letzte Schritt vor der Wiedergabe mit den Communities-SCF-Komponenten besteht darin, einen Client-Bibliotheksordner (clientlibs) hinzuzufügen …. [Clientlibs hinzufügen](add-clientlibs.md)

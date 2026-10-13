@@ -9,13 +9,27 @@ role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 93%
-
+source-wordcount: '1016'
+ht-degree: 94%
 ---
-
 # Java™-API-Schnellstart (SOAP) für den Assembler-Dienst {#assembler-service-java-api-quickstart-soap}
 
 Der Java-API-Schnellstart (SOAP) ist für den Assembler-Dienst verfügbar
@@ -1191,7 +1205,7 @@ Im folgenden Java-Code-Beispiel wird dynamisch ein DDX-Dokument erstellt, das ei
 * `convertDDX`: Konvertiert ein `org.w3c.dom.Document`-Objekt in ein `com.adobe.idp.Document`-Objekt. Diese Methode akzeptiert ein `org.w3c.dom.Document`-Objekt als Eingabeparameter und gibt ein `com.adobe.idp.Document`-Objekt zurück.
 
   Beide Methoden werden in dieser Kurzanleitung aufgerufen. (Siehe [Dynamisches Erstellen von DDX-](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents))
-&quot;
+  &grave;&grave;
 
 ```java
 /*

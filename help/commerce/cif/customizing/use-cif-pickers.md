@@ -10,13 +10,21 @@ feature: Commerce Integration Framework
 exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
-workflow-type: ht
-source-wordcount: '563'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+workflow-type: tm+mt
+source-wordcount: '632'
+ht-degree: 98%
 ---
-
 # Adobe Experience Manager Content and Commerce Authoring-Auswahl {#cif-pickers}
 
 Adobe Experience Manager Content and Commerce Authoring bietet eine Reihe von Authoring-Tools, mit denen AEM-Autoren und Marketing-Experten effizient mit Commerce-Produktdaten und -Katalogen arbeiten können. Die Produktauswahl und die Kategorieauswahl sind Teil des CIF-Add-ons und werden von den CIF-Kernkomponenten verwendet. Bei Projekten können diese Auswahlen in jedem Komponentendialogfeld verwendet werden, um Produkte oder Kategorien auszuwählen.

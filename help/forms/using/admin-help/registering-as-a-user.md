@@ -8,16 +8,27 @@ feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '706'
 ht-degree: 100%
-
 ---
-
 # Registrieren als Benutzende {#registering-as-a-user}
 
-Sie können richtliniengeschützte Dokumente verwenden, die Sie von einer Person erhalten, die die Dokumentensicherheit verwendet, auch wenn Sie nicht zum Unternehmen dieser Person gehören.  Für die Verwendung richtliniengeschützter Dokumente ist die Registrierung bei Document Security erforderlich. Wenn Sie nie zuvor zur Registrierung eingeladen wurden, leitet die Dokumentensicherheit den Registrierungsprozess ein, wenn folgende Ereignisse eintreten:
+Sie können richtliniengeschützte Dokumente verwenden, die Sie von einer Person erhalten, die die Dokumentensicherheit verwendet, auch wenn Sie nicht zum Unternehmen dieser Person gehören. Für die Verwendung richtliniengeschützter Dokumente ist die Registrierung bei Document Security erforderlich. Wenn Sie nie zuvor zur Registrierung eingeladen wurden, leitet die Dokumentensicherheit den Registrierungsprozess ein, wenn folgende Ereignisse eintreten:
 
 * Eine Person, die die Dokumentensicherheit verwendet und Ihnen ein richtliniengeschütztes Dokument senden möchte, fügt Sie zu einer Richtlinie hinzu.
 * Die für Dokumentensicherheit zuständigen Admins erstellen für Sie ein Konto.
@@ -36,7 +47,7 @@ Sie können richtliniengeschützte Dokumente verwenden, die Sie von einer Person
 
 ## Registrieren als eingeladene Benutzende {#register-as-an-invited-user}
 
-Wenn Sie eingeladen wurden und per E-Mail eine Registrierungsnachricht von der Dokumentensicherheit erhalten, können Sie sich registrieren, indem Sie mithilfe der in der Nachricht enthaltenen URL die Seite für die Online-Registrierung öffnen.  Nach der Registrierung erhalten Sie eine weitere Benachrichtigung zur Aktivierung Ihres Kontos.
+Wenn Sie eingeladen wurden und per E-Mail eine Registrierungsnachricht von der Dokumentensicherheit erhalten, können Sie sich registrieren, indem Sie mithilfe der in der Nachricht enthaltenen URL die Seite für die Online-Registrierung öffnen. Nach der Registrierung erhalten Sie eine weitere Benachrichtigung zur Aktivierung Ihres Kontos.
 
 1. Öffnen Sie die Registrierungs-E-Mail von der Dokumentensicherheit. Die in der Nachricht enthaltene URL ist ein Link zur Seite für die Registrierung externer Benutzender bei der Dokumentensicherheit.
 1. Klicken Sie auf die URL oder kopieren Sie sie und fügen Sie sie in Ihren Browser ein. Die Seite für die Registrierung externer Benutzender wird angezeigt.
@@ -45,7 +56,7 @@ Wenn Sie eingeladen wurden und per E-Mail eine Registrierungsnachricht von der D
 
 ## Aktivieren Ihres eingeladenen Benutzerkontos {#activate-your-invited-user-account}
 
-Nach der Registrierung erhalten Sie eine Aktivierungs-E-Mail von Document Security. Aktivieren Sie Ihr Konto unter Verwendung der in der Nachricht angegebenen URL.  Anschließend können Sie sich bei der Dokumentensicherheit anmelden, um richtliniengeschützte Dokumente zu verwenden, auf die Sie Zugriff haben.  Abhängig von den Funktionen, die die Admins für externe Benutzende aktiviert haben, verfügen Sie möglicherweise über die Berechtigung, Richtlinien zu erstellen, Richtlinien auf Dokumente anzuwenden und/oder andere externe Benutzende zu Ihren Richtlinien hinzuzufügen.
+Nach der Registrierung erhalten Sie eine Aktivierungs-E-Mail von Document Security. Aktivieren Sie Ihr Konto unter Verwendung der in der Nachricht angegebenen URL. Anschließend können Sie sich bei der Dokumentensicherheit anmelden, um richtliniengeschützte Dokumente zu verwenden, auf die Sie Zugriff haben. Abhängig von den Funktionen, die die Admins für externe Benutzende aktiviert haben, verfügen Sie möglicherweise über die Berechtigung, Richtlinien zu erstellen, Richtlinien auf Dokumente anzuwenden und/oder andere externe Benutzende zu Ihren Richtlinien hinzuzufügen.
 
 Ihr Konto bleibt aktiv, bis es von den Admins deaktiviert oder gelöscht wird.
 

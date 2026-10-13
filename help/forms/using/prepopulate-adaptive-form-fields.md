@@ -9,13 +9,29 @@ docset: aem65
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2289'
+source-wordcount: '2290'
 ht-degree: 98%
-
 ---
-
 # Vorbefüllen von Feldern in adaptiven Formularen{#prefill-adaptive-form-fields}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
@@ -241,7 +257,7 @@ Um den Vorbefüllungsdienst zu aktivieren, müssen Sie die standardmäßige Vorb
 >Die Vorbefüllungs-Dienstkonfiguration ist auf adaptive Formulare, HTML5-Formulare und HTML5-Formularsätze anwendbar.
 
 1. Öffnen Sie die **[!UICONTROL Adobe Experience Manager Web-Konsolenkonfiguration]** über die URL:\
-   https://&lt;server>:&lt;port>/system/console/configMgr
+   https://<server>:<port>/system/console/configMgr
 1. Suchen und öffnen Sie die **[!UICONTROL standardmäßige Vorbefüllungs-Service-Konfiguration]**.
 
    ![Vobefüllungskonfiguration](assets/prefill_config_new.png)
@@ -386,14 +402,14 @@ Wenn Sie ein adaptives Formular vorbefüllen lassen, führt der AEM Forms-Server
 Sie können den AEM Forms-Server so konfigurieren, dass die Datenzusammenführung auf dem Client statt auf dem Server durchgeführt wird. Dadurch wird der Zeitaufwand für das Vorbefüllen und Rendern von adaptiven Formularen erheblich verringert. Standardmäßig ist die Funktion deaktiviert. Sie können sie über den Configuration Manager oder die Befehlszeile aktivieren.
 
 * Aktivieren oder Deaktivieren der Funktion über den Configuration Manager:
-   1. Öffnen Sie AEM Configuration Manager.
-   1. Suchen und Öffnen der Web-Kanalkonfiguration für adaptive Formulare und interaktive Kommunikation
-   1. Aktivieren der Option „Configuration.af.clientside.datamerge.enabled.name“
+  1. Öffnen Sie AEM Configuration Manager.
+  1. Suchen und Öffnen der Web-Kanalkonfiguration für adaptive Formulare und interaktive Kommunikation
+  1. Aktivieren der Option „Configuration.af.clientside.datamerge.enabled.name“
 * Aktivieren oder Deaktivieren der Funktion über die Befehlszeile:
-   * Zum Aktivieren führen Sie folgenden cURL-Befehl aus:
-     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+  * Zum Aktivieren führen Sie folgenden cURL-Befehl aus:
+    `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   * Zum Deaktivieren führen Sie folgenden cURL-Befehl aus:
-     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+  * Zum Deaktivieren führen Sie folgenden cURL-Befehl aus:
+    `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
   Um die Option zum Vorbefüllen der Daten auf dem Client vollständig nutzen zu können, aktualisieren Sie den Vorbefüllungs-Service, um [FileAttachmentMap](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) und [CustomContext](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) zurückzugeben.

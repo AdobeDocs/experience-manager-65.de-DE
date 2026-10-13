@@ -9,13 +9,20 @@ role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '830'
 ht-degree: 0%
-
 ---
-
 # Kontextbezogene Moderation {#in-context-moderation}
 
 Für AEM Communities kann die Moderation von Administratoren und vertrauenswürdigen Community-Mitgliedern direkt auf der veröffentlichten Seite durchgeführt werden, auf der die Community-Inhalte veröffentlicht wurden.
@@ -38,7 +45,7 @@ Die Benutzeroberfläche, die dem Moderator auf der Veröffentlichungsinstanz pr�
 
 ## Beispiel {#example}
 
-Mithilfe der [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html)-Site, die bei [Erste Schritte mit AEM Communities](getting-started.md) erstellt wurde, ist es möglich, einen Thread in einem Forum einzurichten, in dem verschiedene Moderationsaktivitäten in der Publish-Umgebung durchgeführt werden können. Siehe unten.
+Mithilfe der [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html)-Site, die beim [Erste Schritte mit AEM Communities](getting-started.md) erstellt wurde, ist es möglich, einen Thread in einem Forum einzurichten, in dem verschiedene Moderationsaktivitäten in der Veröffentlichungsumgebung durchgeführt werden. Siehe unten.
 
 Aaron McDonald (`aaron.mcdonald@mailinator.com`) wurde als vertrauenswürdiges Community-Mitglied identifiziert, indem er bei der Erstellung der Website der Gruppe community-engage-Moderators hinzugefügt wurde.
 
@@ -50,40 +57,40 @@ Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten v
 
 * Melden Sie sich als Rebekah Larsen an (rebekah.larsen@trashymail.com)
 
-   * Forum auswählen
-   * Neuen Beitrag auswählen
-   * Betreff eingeben
+  * Forum auswählen
+  * Neuen Beitrag auswählen
+  * Betreff eingeben
 
-     Wann der Nektar im Humming Bird Feeder zu ändern ist
+    Wann der Nektar im Humming Bird Feeder zu ändern ist
 
-   * Geben Sie den Textkörper ein
+  * Geben Sie den Textkörper ein
 
-     Ich hatte keinen großen Erfolg, als ich jedes Jahr einen Kolibrifutter aufhängte. Anscheinend kommen sie ein oder zwei Tage, dann ist das alles. Wenn ich es einmal pro Woche ändere, ist das zu lang? Muss ich das früher ändern?
+    Ich hatte keinen großen Erfolg, als ich jedes Jahr einen Kolibrifutter aufhängte. Anscheinend kommen sie ein oder zwei Tage, dann ist das alles. Wenn ich es einmal pro Woche ändere, ist das zu lang? Muss ich das früher ändern?
 
-   * Beitrag auswählen
-   * Wählen Sie Abmelden
+  * Beitrag auswählen
+  * Wählen Sie Abmelden
 
 * Melden Sie sich als Aaron McDonald an (aaron.mcdonald@mailinator.com)
 
-   * Forum auswählen
-   * Wählen Sie für das Kolibri-Thema Mehr erfahren .
-   * Kommentar für „Antwort posten“ eingeben
+  * Forum auswählen
+  * Wählen Sie für das Kolibri-Thema Mehr erfahren .
+  * Kommentar für „Antwort posten“ eingeben
 
-     Ich wechsle meinen einmal pro Woche und bekomme sie von Mai bis Oktober.
+    Ich wechsle meinen einmal pro Woche und bekomme sie von Mai bis Oktober.
 
-   * Antwort auswählen
-   * Wählen Sie Abmelden
+  * Antwort auswählen
+  * Wählen Sie Abmelden
 
 * Melden Sie sich als Andrew Schäffer an (andrew.schaeffer@trashymail.com)
 
-   * Forum auswählen
-   * Wählen Sie für das Kolibri-Thema Mehr erfahren .
-   * Kommentar für „Antwort posten“ eingeben
+  * Forum auswählen
+  * Wählen Sie für das Kolibri-Thema Mehr erfahren .
+  * Kommentar für „Antwort posten“ eingeben
 
-     Ich verkaufe Nektar und Feeder - besuchen Sie https://my.viral.url/
+    Ich verkaufe Nektar und Feeder - besuchen Sie https://my.viral.url/
 
-   * Antwort auswählen
-   * Wählen Sie Abmelden
+  * Antwort auswählen
+  * Wählen Sie Abmelden
 
 ### Anonymer Site-Besucher (#5) {#anonymous-site-visitor}
 
@@ -122,7 +129,7 @@ Hinweis:
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Wählen Sie das Menüelement Administration aus, damit Sie über die Publish[Umgebung auf die &#x200B;](moderation.md)Moderationskonsole“ zugreifen können.
+Wählen Sie das Menüelement Administration aus, damit Sie über die Veröffentlichungsumgebung auf [Moderationskonsole](moderation.md) zugreifen können.
 
 Beachten Sie, dass für einen Administrator alle moderierbaren Inhalte sichtbar sind, nicht nur Inhalte von der Geometrixx Engage Community-Site.
 
@@ -145,7 +152,7 @@ Hinweis:
 
 ![community-forum-moderator](assets/community-forum-moderator.png)
 
-Wählen Sie das Menüelement Administration aus, damit Sie über die Publish[Umgebung auf die &#x200B;](moderation.md)Moderationskonsole“ zugreifen können.
+Wählen Sie das Menüelement Administration aus, damit Sie über die Veröffentlichungsumgebung auf [Moderationskonsole](moderation.md) zugreifen können.
 
 Beachten Sie, dass für einen Community-Moderator nur moderierbare Inhalte von der Geometrixx Engage-Community-Site sichtbar sind.
 

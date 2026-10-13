@@ -8,13 +8,27 @@ feature: Interactive Communication
 exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 97%
-
+source-wordcount: '1508'
+ht-degree: 93%
 ---
-
 # Bedingungen in interaktiven Kommunikationen{#conditions-in-interactive-communications}
 
 Erstellen und Bearbeiten von Bedingungsfragmenten für die Verwendung in interaktiven Kommunikationen – „Bedingung“ ist dabei eine der vier Arten von Dokumentfragmenten, die zum Aufbau interaktiver Kommunikationen verwendet werden. Die anderen drei sind Texte, Listen und Layout-Fragmente.
@@ -75,10 +89,10 @@ Die Assets in den Bedingungen, die basierend auf den angewendeten Regeln und den
 
    ![createconditionscreenassetsaddedannotated](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[A] Änderung ablehnen.** Wählen Sie dieses Symbol, um die Änderungen abzulehnen, die Sie möglicherweise an dem Asset und der Regel in der Bedingung vorgenommen haben.
-   **[B] Änderung akzeptieren.** Wählen Sie dieses Symbol aus, um die Änderungen zu akzeptieren, die Sie an dem Asset und der Regel in der Bedingung vorgenommen haben.
-   **[C] Asset duplizieren.** Wählen Sie dieses Symbol, um eine Kopie des Assets zusammen mit der angewendeten Regel (falls vorhanden) in der Bedingung zu erstellen. Anschließend können Sie die Regel und das Asset für das doppelte Asset bearbeiten. Das Duplizieren eines Assets ist nützlich, um ähnliche Regeln zu erstellen und alternative Assets basierend auf einem bestimmten Kontext anzuzeigen.
-   **[D] Vorschau anzeigen.** Wählen Sie dieses Symbol, um auf der Seite „Bedingungen erstellen/bearbeiten“ eine Vorschau des Assets anzuzeigen.
+   **[a] Änderung ablehnen.** Klicken Sie auf dieses Symbol, um die Änderungen abzulehnen, die Sie möglicherweise an dem Asset und der Regel in der Bedingung vorgenommen haben.
+   **[b] Änderung akzeptieren.** Wählen Sie dieses Symbol aus, um die Änderungen zu akzeptieren, die Sie an dem Asset und der Regel in der Bedingung vorgenommen haben.
+   **[c] Asset duplizieren.** Wählen Sie dieses Symbol aus, um eine Kopie des Assets zusammen mit der angewendeten Regel (falls vorhanden) in der Bedingung zu erstellen. Anschließend können Sie mit der Bearbeitung der Regel und des Assets für duplizierte Assets fortfahren. Das Duplizieren eines Assets ist für das Erstellen ähnlicher Regeln nützlich, um alternative Assets basierend auf einem bestimmten Kontext anzuzeigen.
+   **[d] Vorschau anzeigen.** Wählen Sie dieses Symbol aus, um auf der Seite „Bedingungen erstellen/bearbeiten“ eine Vorschau des Assets anzuzeigen.
    **&#39;server&#39; neu anordnen.** Wählen Sie dieses Symbol aus und halten Sie es gedrückt, um Assets innerhalb einer Bedingung per Drag-and-Drop neu anzuordnen.
 
    Sie können mithilfe der folgenden Optionen festlegen, wie sich die Bedingung zur Laufzeit verhält:

@@ -9,13 +9,27 @@ exl-id: e1519477-b5a8-4947-8597-26b945a3b819
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 1b76b30d8db59e6ad98af1d29f17443442d5378e
-workflow-type: ht
-source-wordcount: '1774'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1801'
+ht-degree: 97%
 ---
-
 # Allgemeine AEM Forms-Einstellungen {#general-aem-forms-settings}
 
 Auf der Seite „Core-Konfigurationen“ in der Administrationskonsole finden Sie Einstellungen, mit deren Hilfe Sie die Leistung des Systems verbessern können. Nach dem Konfigurieren oder Aktualisieren dieser Einstellungen müssen Sie den Anwendungs-Server neu starten.
@@ -23,7 +37,7 @@ Auf der Seite „Core-Konfigurationen“ in der Administrationskonsole finden Si
 >[!NOTE]
 >
 > * Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
-> * Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> * Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 Informationen zum Aktivieren des abgesicherten Sicherungsmodus finden Sie unter [Aktivieren und Deaktivieren des abgesicherten Sicherungsmodus](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode).
 
@@ -77,7 +91,7 @@ Zusätzliche Informationen zum GDS-Ordner finden Sie unter [Vorbereiten der Inst
 
 **Speicherort des Verzeichnisses für Kundenschriftarten** – Geben Sie den Pfad zu einem Verzeichnis ein, das zusätzliche Schriftarten enthält, die Sie verwenden möchten.
 
-***Hinweis **: Schriftarten werden aus dem Windows-Systemschriftarten-Cache ausgewählt, und ein Neustart des Systems ist erforderlich, um den Cache zu aktualisieren. Nachdem Sie das Verzeichnis für Kundenschriftarten angegeben haben, müssen Sie das System neu starten, auf dem AEM Forms installiert ist.*
+***Hinweis &#x200B;**: Schriftarten werden aus dem Windows-Systemschriftarten-Cache ausgewählt, und ein Neustart des Systems ist erforderlich, um den Cache zu aktualisieren. Nachdem Sie das Verzeichnis für Kundenschriftarten angegeben haben, müssen Sie das System neu starten, auf dem AEM Forms installiert ist.*
 
 **Speicherort des Verzeichnisses für Systemschriftarten** – Geben Sie den Pfad zu dem von Ihrem Betriebssystem vorgegebenen Verzeichnis für Schriftarten ein. Mehrere Ordner können hinzugefügt werden, indem sie durch ein Semikolon **;** voneinander getrennt werden.
 
@@ -91,7 +105,7 @@ Diese Einstellung ist standardmäßig leer.
 
 Dies ist eine obligatorische Einstellung. Der Standardwert ist 65536 Bytes.
 
-**Maximale Standardwartezeit für Entsorgung (Sekunden)** – die maximale Zeit in Sekunden, während der ein Dokument, das zwischen verschiedenen AEM Forms-Komponenten weitergeleitet wird, als aktiv angesehen wird. Nach Ablauf dieser Zeit können alle Dateien entfernt werden, die zum Speichern dieses Dokuments verwendet wurden. Mit dieser Einstellung können Sie die Auslastung des Festplattenspeicherplatzes steuern.
+**Maximaler Standard-Timeout für Entsorgung (Sekunden)** – die maximale Zeit in Sekunden, während der ein Dokument, das zwischen verschiedenen AEM Forms-Komponenten weitergeleitet wird, als aktiv angesehen wird. Nach Ablauf dieser Zeit können alle Dateien entfernt werden, die zum Speichern dieses Dokuments verwendet wurden. Mit dieser Einstellung können Sie die Auslastung des Festplattenspeicherplatzes steuern.
 
 Dies ist eine obligatorische Einstellung. Der Standardwert ist 600 Sekunden.
 
@@ -101,7 +115,7 @@ Dies ist eine obligatorische Einstellung. Der Standardwert ist 30 Sekunden.
 
 **FIPS aktivieren** –– Wählen Sie diese Option zum Aktivieren des FIPS-Modus. FIPS 140-2 (Federal Information Processing Standard) ist ein von der US-Regierung definierter Kryptographiestandard. Im FIPS-Modus wird der Datenschutz von AEM Forms auf gemäß FIPS 140-2 zugelassene Algorithmen eingeschränkt, indem das Verschlüsselungsmodul „RSA BSAFE Crypto-C 2.1“ verwendet wird.
 
-Im FIPS-Modus werden die in Adobe Acrobat®-Versionen vor 7.0 verwendeten Verschlüsselungsalgorithmen nicht unterstützt. Wenn der FIPS-Modus aktiviert ist und Sie den Encryption-Dienst zum Verschlüsseln von PDFs mit einem Kennwort mit einer Kompatibilitätsstufe verwenden, die auf Acrobat 5 festgelegt ist, kommt es bei dem Verschlüsselungsversuch zu einem Fehler.
+Der FIPS-Modus unterstützt keine Verschlüsselungsalgorithmen, die in Adobe Acrobat®-Versionen vor 7.0 verwendet werden. Wenn der FIPS-Modus aktiviert ist und Sie den Verschlüsselungsdienst verwenden, um die PDF mithilfe eines Kennworts zu verschlüsseln, wobei die Kompatibilitätsstufe auf Acrobat 5 festgelegt ist, schlägt der Verschlüsselungsversuch mit einem Fehler fehl.
 
 Im Allgemeinen wendet der Assembler-Dienst bei aktiviertem FIPS keine Kennwortverschlüsselung auf Dokumente an. Wird dies dennoch versucht, wird eine FIPSModeException-Ausnahme ausgelöst, die angibt, dass „Kennwortverschlüsselung im FIPS-Modus nicht zulässig“ ist. Darüber hinaus wird das DDX-Element (Document Description XML) PDFsFromBookmarks im FIPS-Modus nicht unterstützt, wenn das Basisdokument kennwortverschlüsselt ist.
 
@@ -117,9 +131,9 @@ Aktivieren Sie diese Option in Entwicklungsumgebungen, in denen Entwickelnde mit
 
 **DSC-Aufrufstatistik aktivieren** – Wenn diese Option ausgewählt ist, verfolgt AEM Forms Aufrufstatistiken, z. B. die Anzahl der Aufrufe, die für das Aufrufen erforderliche Zeit und die Anzahl der Fehler in den Aufrufen. Diese Informationen werden in einer JMX-Bean gespeichert, sodass Sie die Java™ JConsole oder die Software eines anderen Herstellers zum Anzeigen der Statistiken verwenden können. Wenn Sie diese Statistiken nicht anzeigen möchten, deaktivieren Sie diese Option, um die Leistung von AEM Forms zu verbessern.
 
-**RDS aktivieren** – Durch die Auswahl dieser Option wird das Remote Development Services (RDS)-Servlet in AEM Forms aktiviert. Wenn diese Option aktiviert ist, können Client-seitige Werkzeuge mit Data Services interagieren, um zum Erstellen von Zielen oder Endpunkten Modelle bereitzustellen oder deren Bereitstellung wieder aufzuheben oder zu ermitteln, welche Modelle in Endpunkten bereitgestellt wurden. Standardmäßig ist diese Option nicht aktiviert. 
+**RDS aktivieren** – Durch die Auswahl dieser Option wird das Remote Development Services (RDS)-Servlet in AEM Forms aktiviert. Wenn diese Option aktiviert ist, können Client-seitige Werkzeuge mit Data Services interagieren, um zum Erstellen von Zielen oder Endpunkten Modelle bereitzustellen oder deren Bereitstellung wieder aufzuheben oder zu ermitteln, welche Modelle in Endpunkten bereitgestellt wurden. Standardmäßig ist diese Option nicht aktiviert.
 
-**Nicht gesicherte RDS-Anfrage zulassen** – Wenn diese Option ausgewählt ist, müssen RDS-Anfragen keine HTTPS verwenden. Standardmäßig ist diese Option nicht ausgewählt und die Kommunikation mit Data Services muss über „https“-Anforderungen ausgeführt werden. 
+**Nicht gesicherte RDS-Anfrage zulassen** – Wenn diese Option ausgewählt ist, müssen RDS-Anfragen keine HTTPS verwenden. Standardmäßig ist diese Option nicht ausgewählt und die Kommunikation mit Data Services muss über „https“-Anforderungen ausgeführt werden.
 
 **Unsicheren Dokumenten-Upload von Flex-Anwendungen zulassen** – Das Datei-Upload-Servlet für das Hochladen von Dokumenten aus Adobe Flex®-Anwendungen in AEM Forms erfordert, dass Benutzende authentifiziert und autorisiert werden, bevor sie Dokumente hochladen können. Benutzenden muss die Rolle „Benutzer der Dokumenten-Upload-Anwendung“ oder eine andere Rolle, die die Berechtigung zum Hochladen von Dokumenten enthält, zugewiesen sein. Dadurch wird verhindert, dass nicht autorisierte Benutzende Dokumente auf den AEM-Formular-Server hochladen. Wählen Sie diese Option aus, wenn Sie diese Sicherheitsfunktion in einer Entwicklungsumgebung oder für die Abwärtskompatibilität mit vorherigen Versionen von AEM Forms deaktivieren wollen. Standardmäßig ist diese Option nicht aktiviert. Weitere Informationen finden Sie unter „Aufrufen von AEM Forms mithilfe von AEM Forms Remoting“ in „Programmieren mit AEM Forms“.
 

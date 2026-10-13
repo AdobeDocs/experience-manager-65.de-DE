@@ -10,13 +10,20 @@ exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1719'
 ht-degree: 1%
-
 ---
-
 # Blog-Funktion {#blog-feature}
 
 ## Einführung {#introduction}
@@ -250,11 +257,11 @@ Geben **auf der Registerkarte** Journal-Seitenleisteneinstellungen) das Datumsfo
 
   Das Format, das für die Anzeige von Archiven von Blog-Einträgen verwendet wird. Das Format verwendet Platzhalter gemäß der Java™-Konvention.
 
-   * JJJJ : Gesamtjahr, wie &#39;2015&#39;
-   * YY : Kurzes Jahr, wie „15“
-   * MMMM : voller Monat, wie Juni
-   * MMM : Kurzer Monat, wie Juni
-   * MM : Monatsnummer, z. B. 06
+  * JJJJ : Gesamtjahr, wie &#39;2015&#39;
+  * YY : Kurzes Jahr, wie „15“
+  * MMMM : voller Monat, wie Juni
+  * MMM : Kurzer Monat, wie Juni
+  * MM : Monatsnummer, z. B. 06
 
   Der Standardwert ist „JJJJ-MMMM“, das z. B. „2015 Juni“ anzeigen würde
 
@@ -262,15 +269,15 @@ Geben **auf der Registerkarte** Journal-Seitenleisteneinstellungen) das Datumsfo
 
   Der Titel und der Typ der Blog-Einträge, die in der Seitenleiste angezeigt werden sollen. Sie haben die Wahl zwischen
 
-   * Autoren
-   * Kategorien
-   * Archive
+  * Autoren
+  * Kategorien
+  * Archive
 
 * **Blog-Komponentenpfad**
 
   *(Optional)* Der Speicherort der Blog-Ressource, aus der Blog-Artikel aufgelistet werden sollen. Wenn das Feld leer gelassen wird, wird die Komponente von resourceType `social/journal/components/hbs/journal` verwendet, die auf derselben Seite angezeigt wird.
 
-   * Zum Beispiel: `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
+  * Zum Beispiel: `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
 * **Vorschlagslimit**
 

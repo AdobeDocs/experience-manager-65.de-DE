@@ -10,13 +10,28 @@ exl-id: e47270e8-bace-4d0f-a088-7269b6356315
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 100%
-
 ---
-
 # Teilnehmen an Workflows{#participating-in-workflows}
 
 Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss. Der Workflow wählt eine Benutzerin bzw. einen Benutzer oder eine Gruppe aus, um die Aktivität auszuführen, und weist dieser Person oder Gruppe ein Arbeitselement zu. Die Person erhält eine Benachrichtigung und kann dann die entsprechenden Aktionen ausführen:
@@ -42,12 +57,12 @@ Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), w
 
 * Wenn Sie den Seiteneditor verwenden, wird in der Statusleiste Folgendes angezeigt:
 
-   * Die Namen der Workflows, die auf die Seite angewendet werden, z. B. „Aktivierungsanfrage“.
-   * Alle Aktionen, die dem momentanen Benutzer bzw. der Benutzerin für den aktuellen Workflow-Schritt zur Verfügung stehen, z. B. „Fertigstellen“, „Delegieren“ oder „Details anzeigen“.
-   * Die Anzahl der Workflows, denen die Seite unterliegt. Sie haben folgende Möglichkeiten:
+  * Die Namen der Workflows, die auf die Seite angewendet werden, z. B. „Aktivierungsanfrage“.
+  * Alle Aktionen, die dem momentanen Benutzer bzw. der Benutzerin für den aktuellen Workflow-Schritt zur Verfügung stehen, z. B. „Fertigstellen“, „Delegieren“ oder „Details anzeigen“.
+  * Die Anzahl der Workflows, denen die Seite unterliegt. Sie haben folgende Möglichkeiten:
 
-      * Die Pfeiltasten links/rechts verwenden, um durch die Statusinformationen der verschiedenen Workflows zu navigieren.
-      * Auf die tatsächliche Zahl klicken, um eine Dropdown-Liste aller anwendbaren Workflows zu öffnen, und dann den Workflow auswählen, der in der Statusleiste angezeigt werden soll.
+    * Die Pfeiltasten links/rechts verwenden, um durch die Statusinformationen der verschiedenen Workflows zu navigieren.
+    * Auf die tatsächliche Zahl klicken, um eine Dropdown-Liste aller anwendbaren Workflows zu öffnen, und dann den Workflow auswählen, der in der Statusleiste angezeigt werden soll.
 
   ![wf-59](assets/wf-59.png)
 

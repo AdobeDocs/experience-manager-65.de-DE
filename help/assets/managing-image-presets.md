@@ -12,13 +12,27 @@ feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: a16e03b7-8456-4383-8860-31ab5ab00e9e
+    internal-label: Image presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3900'
-ht-degree: 90%
-
+source-wordcount: '3995'
+ht-degree: 91%
 ---
-
 # Verwalten von Bildvorgaben für Dynamic Media{#managing-image-presets}
 
 Anhand von Bildvorgaben kann Adobe Experience Manager Assets Bilder mit unterschiedlichen Größen, Formaten oder Bildeigenschaften dynamisch bereitstellen. Jede Bildvorgabe stellt eine vordefinierte Sammlung von Größenangaben und Formatierungsbefehlen für die Anzeige von Bildern dar. Wenn Sie eine Bildvorgabe erstellen, wählen Sie eine Größe für die Bildbereitstellung aus. Sie wählen auch Formatierungsbefehle, damit das Erscheinungsbild des Bildes optimiert wird, wenn das Bild zur Anzeige bereitgestellt wird.
@@ -226,7 +240,7 @@ Erstellte Bildvorgaben sind auch als dynamische Ausgabedarstellungen verfügbar,
 
 **Erhöhen oder verringern Sie die Anzahl der angezeigten Dynamic Media-Bildvorgaben:**
 
-1. https://localhost Navigieren Sie zu CRXDE Lite ([:4502/crx/de](https://localhost:4502/crx/de)).
+1. Navigieren Sie zu CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigieren Sie zum Knoten für die Bildvorgabenliste unter `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`.
 
    ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
@@ -248,10 +262,10 @@ Indem Sie eine Bildvorgabe erstellen, können Sie die entsprechenden Einstellung
 >Bei Verwendung von Internet Explorer 9 wird die Erstellung einer Vorgabe nicht sofort nach dem Speichern in der Vorgabenliste angezeigt. Um dieses Problem zu umgehen, deaktivieren Sie den Cache für IE9.
 
 Wenn Sie die Aufnahme von AI-, PDF- und EPS-Dateien unterstützen möchten, um aus diesen Dateiformaten dynamische Ausgabedarstellungen zu generieren, lesen Sie die folgenden Informationen, bevor Sie Bildvorgaben erstellen.
-Siehe Dateiformate [Adobe Illustrator (AI), PostScript (EPS) und PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
+Siehe [Dateiformate Adobe Illustrator (AI), Postscript (EPS) und PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 Wenn Sie die Aufnahme von INDD-Dateien unterstützen möchten, um aus diesem Dateiformat dynamische Ausgabedarstellungen zu generieren, sollten Sie die folgenden Informationen lesen, bevor Sie Bildvorgaben erstellen.
-Siehe [InDesign-Dateiformat (INDD](#indesign-indd-file-format).
+Siehe [InDesign-Dateiformat (INDD)](#indesign-indd-file-format).
 
 >[!NOTE]
 >
@@ -326,7 +340,10 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
      <li><strong>JPG-Neuberechnung der Chrominanz aktivieren</strong> - Da das Auge weniger empfindlich auf hochfrequente Farbinformationen reagiert als hochfrequente Luminanz, unterteilen JPEG-Bilder Bildinformationen in Luminanz- und Farbkomponenten. Wenn ein JPEG-Bild komprimiert wird, wird die Luminanzkomponente in voller Auflösung belassen, während die Farbkomponenten durch Durchschnittsbildung von Pixelgruppen heruntergesampelt werden. Durch Downsampling wird das Datenvolumen um die Hälfte oder ein Drittel reduziert, ohne dass es zu Qualitätseinbußen kommt. Das Downsampling ist nicht auf Graustufenbilder anwendbar. Mit dieser Methode wird der Komprimierungsgrad für Bilder mit hohem Kontrast (z. B. Bilder mit überlagertem Text) reduziert.</li>
     </ul>
     <div>
-      Bei Auswahl von <strong>GIF</strong> oder <strong>GIF mit Alpha</strong> werden die folgenden zusätzlichen Optionen für <strong>GIF-Farbquantisierung</strong> verfügbar:
+      Auswahl
+     <strong>GIF</strong> oder
+     <strong>GIF mit Alpha</strong> bietet diese zusätzlichen
+     <strong>GIF-Farbquantifizierungsoptionen</strong>:
     </div>
     <ul>
      <li><strong>Typ </strong>: Wählen Sie <strong>Adaptiv</strong> (die Standardeinstellung), <strong>Web</strong> oder <strong>Macintosh</strong>. Wenn Sie <strong>GIF mit Alpha</strong> auswählen, ist die Option „Macintosh“ nicht verfügbar.</li>
@@ -335,10 +352,10 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
      <li><strong>Farbliste</strong>: Geben Sie eine durch Komma getrennte Liste ein. Geben Sie beispielsweise für Weiß, Grau und Schwarz „<code>000000,888888,ffffff</code>“ ein.</li>
     </ul>
     <div>
-      Bei Auswahl von
+      Auswahl
      <strong>PDF</strong>,
      <strong>TIFF</strong> oder
-     <strong>TIFF mit Alpha</strong> erhalten Sie die folgende zusätzliche Option:
+     <strong>TIFF mit Alpha</strong> bietet diese zusätzliche Option:
     </div>
     <ul>
      <li><strong>Komprimierung</strong>: Wählen Sie einen Komprimierungsalgorithmus. Die Algorithmusoptionen für PDF lauten <strong>Kein</strong>, <strong>ZIP</strong> und <strong>JPEG</strong>. Für TIFF lauten sie <strong>Kein</strong>, <strong>LZW</strong>, <strong>JPEG</strong> und <strong>ZIP</strong>. Für TIFF mit Alpha lauten sie <strong>Kein</strong>, <strong>LZW</strong> und <strong>ZIP</strong>.</li>
@@ -369,7 +386,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
   </tr>
   <tr>
    <td><strong>Rendering-Intent</strong></td>
-   <td>Sie können den standardmäßigen Rendering-Intent überschreiben. Rendering-Absichten bestimmen, was mit Farben geschieht, die nicht im Zielfarbprofil (außerhalb der Farbskala) reproduziert werden können. Die Render-Absicht wird ignoriert, wenn sie nicht mit dem ICC-Profil kompatibel ist.
+   <td>Sie können den standardmäßigen Rendering-Intent überschreiben. Der Rendering-Intent legt fest, was mit Farben passiert, die im Farbprofil des Ziels nicht wiedergegeben werden können (außerhalb der Farbskala). Der Rendering-Intent wird ignoriert, wenn er nicht mit dem ICC-Profil kompatibel ist.
     <ul>
      <li>Wählen Sie <strong>Wahrnehmungsoptimiert</strong> aus, damit die gesamte Farbskala von einem Farbraum in einen anderen Farbraum komprimiert wird, wenn eine oder mehrere Farben im Originalbild außerhalb der Farbskala des Zielfarbraums liegen.</li>
      <li>Wählen Sie <strong>Relativ farbmetrisch</strong> aus, wenn eine Farbe im aktuellen Farbraum im Zielfarbraum außerhalb der Farbskala liegt. Außerdem sollten Sie ihn der nächstmöglichen Farbe innerhalb der Farbskala des Zielfarbraums zuordnen, ohne andere Farben zu beeinflussen. </li>
@@ -400,13 +417,13 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
      <li><strong>Anwenden auf</strong>: Bestimmt, ob die Unscharfzeichnung für jede Farbe oder Helligkeit gilt.</li>
     </ul>
     <div>
-      Das Scharfzeichnen wird unter
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=de">Scharfzeichnen von Bildern</a> beschrieben.
+      Das Scharfzeichnen wird beschrieben unter
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf">Scharfzeichnen von </a>.
     </div> </td>
   </tr>
   <tr>
    <td><strong>Resampling-Modus</strong></td>
-   <td>Wählen Sie eine Option <strong>Resampling-Modus</strong> aus. Diese Optionen schärfen das Bild, wenn es heruntergesampelt wird:
+   <td>Wählen Sie eine Option für den <strong>Resampling-Modus</strong>. Diese Optionen sorgen dafür, dass das Bild beim Neuberechnen scharf bleibt:
     <ul>
      <li><strong>Bi-Linear</strong> - Die schnellste Resampling-Methode. Einige Aliasing-Artefakte sind auffällig.</li>
      <li><strong>Bikubisch</strong>: Erhöht die CPU-Auslastung, bietet jedoch schärfere Bilder mit weniger deutlichen Aliasing-Artefakten.</li>

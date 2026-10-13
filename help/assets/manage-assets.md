@@ -8,13 +8,24 @@ mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '10112'
-ht-degree: 96%
-
+source-wordcount: '10238'
+ht-degree: 97%
 ---
-
 # Verwalten digitaler Assets {#manage-digital-assets}
 
 | Version | Artikel-Link |
@@ -197,8 +208,8 @@ Dynamic Media ermöglicht das stapelweise Hochladen von Assets über FTP-Server.
 1. Klicken Sie in der rechten unteren Ecke des Dialogfelds „Upload-Auftragsoptionen“ auf **[!UICONTROL Speichern]**.
 1. Klicken Sie in der rechten unteren Ecke der Seite „Hochladen“ auf **[!UICONTROL Upload starten]**.
 
-   Um den Fortschritt des Uploads anzuzeigen, klicken Sie in der Symbolleiste für globale Navigation auf **[!UICONTROL Aufträge]**. Auf der Seite „Aufträge“ wird der Upload-Fortschritt angezeigt. Sie können mit der Arbeit in [!DNL Experience Manager] fortfahren und jederzeit wieder in Dynamic Media Classic zur Seite „Aufträge“ zurückkehren, um einen gerade verarbeiteten Auftrag zu überprüfen.
-Um die laufende Verarbeitung eines Upload-Auftrags abzubrechen, klicken Sie neben **[!UICONTROL Zeit auf]** Abbrechen“.
+   Um den Upload-Fortschritt anzuzeigen, klicken Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Aufträge]**. Auf der Seite „Aufträge“ wird der Fortschritt des Uploads angezeigt. Sie können mit der Arbeit in [!DNL Experience Manager] fortfahren und jederzeit wieder in Dynamic Media Classic zur Seite „Aufträge“ zurückkehren, um einen gerade verarbeiteten Auftrag zu überprüfen.
+   Um die laufende Verarbeitung eines Upload-Auftrags abzubrechen, klicken Sie neben „Dauer“ auf die Schaltfläche **[!UICONTROL Abbrechen]**.
 
 #### Upload-Auftragsoptionen {#upload-job-options}
 

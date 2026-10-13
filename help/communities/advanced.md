@@ -10,13 +10,20 @@ role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 2%
-
 ---
-
 # Erweiterte Bewertung und Abzeichen{#advanced-scoring-and-badges}
 
 ## Überblick {#overview}
@@ -33,7 +40,7 @@ Die Einrichtung der erweiterten Bewertung ist praktisch identisch mit der grundl
 
 * Grundlegende und erweiterte Scoring- und Badging[Regeln werden auf dieselbe Weise auf &#x200B;](/help/communities/implementing-scoring.md#apply-rules-to-content) angewendet.
 
-   * Auf denselben Inhalt können einfache und erweiterte Scoring- und Badging-Regeln angewendet werden.
+  * Auf denselben Inhalt können einfache und erweiterte Scoring- und Badging-Regeln angewendet werden.
 
 * [Aktivieren von Abzeichen für Komponenten](/help/communities/implementing-scoring.md#enable-badges-for-component) ist generisch.
 
@@ -42,14 +49,14 @@ Die Unterschiede bei der Einrichtung der Scoring- und Badging-Regeln sind:
 * Konfigurierbare erweiterte Scoring-Engine
 * Erweiterte Bewertungsregeln:
 
-   * `scoringType` ist auf `advanced` festgelegt
-   * Erfordert `stopwords`
+  * `scoringType` ist auf `advanced` festgelegt
+  * Erfordert `stopwords`
 
 * Erweiterte Badging-Regeln:
 
-   * `badgingType` ist auf `advanced` festgelegt
-   * `badgingLevels` auf **Anzahl der zu vergebenden Expertenebenen**
-   * Erfordert `badgingPaths` Array von Badges anstelle von Schwellenwerten für die Array-Zuordnung von Punkten zu Badges.
+  * `badgingType` ist auf `advanced` festgelegt
+  * `badgingLevels` auf **Anzahl der zu vergebenden Expertenebenen**
+  * Erfordert `badgingPaths` Array von Badges anstelle von Schwellenwerten für die Array-Zuordnung von Punkten zu Badges.
 
 >[!NOTE]
 >
@@ -63,8 +70,10 @@ Die erweiterte Scoring-Engine stellt eine OSGi-Konfiguration mit Parametern bere
 
 * **Bewertungsgewichte**
 
-  Geben Sie für ein Thema das Verb an, dem bei der Berechnung der Punktzahl die höchste Priorität zugewiesen werden soll. Es können ein oder mehrere Themen eingegeben werden, die jedoch auf **ein Verb pro Thema** beschränkt sind. Siehe [Themen und Verben](/help/communities/implementing-scoring.md#topics-and-verbs).Als `topic,verb` mit Escape-Komma eingegeben. Beispiel:  `/social/forum/hbs/social/forum\,ADD`
-Als Standard ist das Verb „HINZUFÜGEN“ für die Komponenten „QA“ und „Forum“ festgelegt.
+  Geben Sie für ein Thema das Verb an, dem bei der Berechnung der Punktzahl die höchste Priorität zugewiesen werden soll. Es können ein oder mehrere Themen eingegeben werden, die jedoch auf **ein Verb pro Thema** beschränkt sind. Siehe [Themen und Verben](/help/communities/implementing-scoring.md#topics-and-verbs).
+Als `topic,verb` mit Escape-Komma eingegeben. Beispiel:
+  `/social/forum/hbs/social/forum\,ADD`
+  Als Standard ist das Verb „HINZUFÜGEN“ für die Komponenten „QA“ und „Forum“ festgelegt.
 
 * **Bewertungsbereich**
 

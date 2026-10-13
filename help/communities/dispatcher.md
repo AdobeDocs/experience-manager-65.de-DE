@@ -9,13 +9,20 @@ exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '687'
 ht-degree: 19%
-
 ---
-
 # Konfigurieren von Dispatcher für Communities {#configuring-dispatcher-for-communities}
 
 ## AEM Communities {#aem-communities}
@@ -45,8 +52,8 @@ Wenn so konfiguriert ist, dass die Zwischenspeicherung in Dispatcher unterstütz
 * Dispatcher Version 4.1.2 oder höher (die neueste Version finden [&#x200B; unter „Installieren von &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=de)„)
 * [ACS AEM Commons-Paket](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
-   * Version 3.3.2 oder höher
-   * `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` OSGi-Konfiguration
+  * Version 3.3.2 oder höher
+  * `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` OSGi-Konfiguration
 
 ### Konfiguration {#configuration}
 
@@ -54,7 +61,7 @@ Die OSGi-Konfiguration **ACS AEM Commons - Dispatcher Cache Control Header - Max
 
 * In der [Web-Konsole](../../help/sites-deploying/configuring-osgi.md).
 
-   * Beispiel: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * Beispiel: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` suchen
 * Wählen Sie das Symbol &quot;+&quot;, um eine Verbindungskonfiguration zu erstellen.
@@ -84,7 +91,7 @@ Siehe auch:
 >[!NOTE]
 >
 >**Beispiele für Eigenschaftsnamen**
->Alle angezeigten Eigenschaftsnamen, wie **/0050** und **/0170**, sollten so angepasst werden, dass sie in eine vorhandene `dispatcher.any`-Konfigurationsdatei passen.
+>Alle angezeigten Eigenschaftsnamen, z. B. **/0050** und **/0170**, sollten so angepasst werden, dass sie in eine vorhandene `dispatcher.any` Konfigurationsdatei passen.
 >
 
 >[!CAUTION]

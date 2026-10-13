@@ -10,13 +10,20 @@ exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 1%
-
+source-wordcount: '735'
+ht-degree: 2%
 ---
-
 # Clientlibs hinzufügen {#add-clientlibs}
 
 ## Hinzufügen eines Client-Bibliotheksordners (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
@@ -44,7 +51,7 @@ Geben Sie auf **Registerkarte** Eigenschaften“ für den neuen `clientlibs` die
 * Klicken Sie auf **Hinzufügen**
 * Klicken Sie **Alle speichern**
 
-Hinweis: Stellen Sie dem Kategoriewert das Präfix „apps“ voran. ist eine Konvention, um festzulegen, dass sich die „besitzende Anwendung“ im Ordner &quot;/apps“ und nicht in &quot;/libs“ befindet. WICHTIG: Fügen Sie Platzhalterdateien `js.tx` und **`css.txt`**. (Es handelt sich hierbei nicht um einen offiziellen cq:ClientLibraryFolder ohne sie.)
+Hinweis: Dem Kategoriewert wird „apps.“ vorangestellt. Dies ist eine Konvention, mit der die „besitzende Anwendung“ als im Ordner &quot;/apps“ und nicht in &quot;/libs“ identifiziert wird. WICHTIG: Fügen Sie Platzhalterdateien `js.tx` und **`css.txt`**. (Es ist offiziell keine cq:ClientLibraryFolder ohne sie.)
 
 1. Rechtsklick auf **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Wählen Sie **Datei erstellen…**
@@ -89,16 +96,16 @@ In diesem Fall, einschließlich aller , werden die einfacheren SCF-Client-Biblio
 * **`Multi`** klicken
 * Wert: **`cq.social.scf`**
 
-   * Es wird ein Dialogfeld angezeigt,
-Klicken Sie nach jedem Eintrag auf **`+`** , um die folgenden Clientlib-Kategorien hinzuzufügen:
+  * Es wird ein Dialogfeld angezeigt,
+    Klicken Sie nach jedem Eintrag auf **`+`** , um die folgenden Clientlib-Kategorien hinzuzufügen:
 
-      * **`cq.ckeditor`**
-      * **`cq.social.author.hbs.comments`**
-      * **`cq.social.author.hbs.forum`**
-      * **`cq.social.author.hbs.rating`**
-      * **`cq.social.author.hbs.reviews`**
-      * **`cq.social.author.hbs.voting`**
-      * Klicken Sie auf **OK**
+    * **`cq.ckeditor`**
+    * **`cq.social.author.hbs.comments`**
+    * **`cq.social.author.hbs.forum`**
+    * **`cq.social.author.hbs.rating`**
+    * **`cq.social.author.hbs.reviews`**
+    * **`cq.social.author.hbs.voting`**
+    * Klicken Sie auf **OK**
 
 * Klicken Sie **Alle speichern**
 
@@ -124,7 +131,7 @@ Die Include-Anweisung gehört in den `head` des `html`. Die **`foundation head.j
 
 **Kopieren Sie „headlibs.jsp“ und schließen Sie clientlibs:** ein
 
-1. Wählen Sie mithilfe von **&#x200B;**&#x200B;CRXDE Lite **`/libs/foundation/components/page/headlibs.jsp`**
+1. Wählen Sie mit **&#x200B;**&#x200B;CRXDE Lite **`/libs/foundation/components/page/headlibs.jsp`**
 
 1. Klicken Sie mit der rechten Maustaste und wählen **Kopieren** (oder wählen Sie Kopieren in der Symbolleiste)
 1. Klicken Sie auf **`/apps/an-scf-sandbox/components/playpage`**
@@ -159,29 +166,29 @@ Dieses Paket ist im Tutorial [Erstellen einer Beispielseite](/help/communities/c
 
 So erstellen Sie ein Paket:
 
-* Klicken Sie auf dem CRXDE Lite auf [Paketsymbol](https://localhost:4502/crx/packmgr/)
+* Klicken Sie in CRXDE Lite auf das Symbol [Paket](https://localhost:4502/crx/packmgr/)
 * Klicken Sie auf **Paket erstellen**
 
-   * Paketname: an-scf-sandbox-minimal-pkg
-   * Version: 0.1
-   * Gruppe: `leave as default`
-   * Klicken Sie auf **OK**
+  * Paketname: an-scf-sandbox-minimal-pkg
+  * Version: 0.1
+  * Gruppe: `leave as default`
+  * Klicken Sie auf **OK**
 
-* Klicken Sie auf **Bearbeiten**
+* Klicken Sie auf **Bearbeiten**.
 
-   * Wählen Sie **Registerkarte** Filter“
+  * Wählen Sie **Registerkarte** Filter“
 
-      * Klicken Sie **Filter hinzufügen**
-      * Stammverzeichnis: Navigieren Sie zu `/apps/an-scf-sandbox`
-      * Klicken Sie auf **Fertig**.
-      * Klicken Sie **Filter hinzufügen**
-      * Stammverzeichnis: Navigieren Sie zu `/etc/designs/an-scf-sandbox`
-      * Klicken Sie auf **Fertig**.
-      * Klicken Sie **Filter hinzufügen**
-      * Stammverzeichnis: Navigieren Sie zu `/content/an-scf-sandbox**`
-      * Klicken Sie auf **Fertig**.
+    * Klicken Sie **Filter hinzufügen**
+    * Stammverzeichnis: Navigieren Sie zu `/apps/an-scf-sandbox`
+    * Klicken Sie auf **Fertig**.
+    * Klicken Sie **Filter hinzufügen**
+    * Stammverzeichnis: Navigieren Sie zu `/etc/designs/an-scf-sandbox`
+    * Klicken Sie auf **Fertig**.
+    * Klicken Sie **Filter hinzufügen**
+    * Stammverzeichnis: Navigieren Sie zu `/content/an-scf-sandbox**`
+    * Klicken Sie auf **Fertig**.
 
-   * Klicken Sie auf **Speichern**.
+  * Klicken Sie auf **Speichern**.
 
 * Klicken Sie auf **Erstellen**
 

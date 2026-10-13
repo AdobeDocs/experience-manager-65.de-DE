@@ -9,13 +9,22 @@ exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
-workflow-type: ht
-source-wordcount: '1898'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1916'
+ht-degree: 96%
 ---
-
 # Erstellen und Organisieren von Seiten{#creating-and-organizing-pages}
 
 In diesem Abschnitt wird beschrieben, wie Sie mit Adobe Experience Manager (AEM) Seiten erstellen und verwalten können, damit Sie anschließend auf diesen Seiten [Inhalte erstellen](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) können.
@@ -79,13 +88,13 @@ Beim Erstellen einer Seite gibt es zwei wichtige Felder:
 
 * **[Titel](#title)**:
 
-   * Dieses Feld wird dem Benutzer bei der Bearbeitung im oberen Teil des Seiteninhalts in der Konsole angezeigt.
-   * Dieses Feld ist obligatorisch.
+  * Dieses Feld wird dem Benutzer bei der Bearbeitung im oberen Teil des Seiteninhalts in der Konsole angezeigt.
+  * Dieses Feld ist obligatorisch.
 
 * **[Name](#name)**:
 
-   * Mit diesem Wert wird der URI generiert.
-   * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird der Name vom Titel abgeleitet.
+  * Mit diesem Wert wird der URI generiert.
+  * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird der Name vom Titel abgeleitet.
 
 Beim Erstellen einer Seite [validiert AEM den Seitennamen entsprechend den von AEM und JCR vorgegebenen Konventionen](/help/sites-developing/naming-conventions.md).
 
@@ -106,7 +115,7 @@ Wenn Sie beim Erstellen einer Seite nur den **Titel** angeben, leitet AEM den **
 | Titel | Abgeleiteter Name |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;ç+ | sc---c-.html |
+| SC%&amp;&ast;ç+ | sc---c-.html |
 
 #### Name {#name}
 
@@ -127,18 +136,18 @@ In der klassischen Benutzeroberfläche ist **die Eingabe von ungültigen Zeichen
 
 In AEM gibt eine Vorlage einen speziellen Seitentyp an. Eine Vorlage wird als Grundlage für jede neue Seite verwendet, die erstellt wird.
 
-Die Vorlage definiert die Seitenstruktur, einschließlich einer Miniaturansicht und anderer Eigenschaften. Beispielsweise können Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
+Die Vorlage definiert die Seitenstruktur, u. a. eine Miniaturansicht und andere Eigenschaften. Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
 
 Im Lieferumfang von AEM sind diverse Vorlagen enthalten. Die angebotenen Vorlagen hängen von der einzelnen Website ab. Welche Informationen (beim Erstellen der neuen Seite) angegeben werden müssen, hängt von der verwendeten Benutzeroberfläche ab. Die wichtigsten Felder sind:
 
-* **Titel**
-Der Titel, der auf der resultierenden Web-Seite angezeigt wird.
+* **title**
+Der auf der resultierenden Web-Seite angezeigte Titel.
 
-* **Name**
+* **name**
 Wird beim Benennen der Seite verwendet.
 
-* **Vorlage**
-Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden können.
+* **template**
+Eine Liste der Vorlagen, die beim Generieren der neuen Seite verwendet werden können.
 
 ### Komponenten {#components}
 
@@ -173,8 +182,8 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
    * Angabe eines **Titels**, der für die Benutzenden angezeigt wird.
    * Angabe eines **Namens**, der für die Erzeugung des URI verwendet wird. Wenn kein Name angegeben wird, wird der Name aus dem Titel abgeleitet.
 
-      * Wenn Sie beim Erstellen einer Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den von AEM und JCR vorgegebenen Konventionen](/help/sites-developing/naming-conventions.md).
-      * In der klassischen Benutzeroberfläche ist **die Eingabe von ungültigen Zeichen** im Feld **Name** unzulässig.
+     * Wenn Sie beim Erstellen einer Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den von AEM und JCR vorgegebenen Konventionen](/help/sites-developing/naming-conventions.md).
+     * In der klassischen Benutzeroberfläche ist **die Eingabe von ungültigen Zeichen** im Feld **Name** unzulässig.
 
    * Klicken Sie auf die Vorlage, die Sie zum Erstellen der neuen Seite verwenden möchten.
 

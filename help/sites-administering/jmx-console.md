@@ -10,13 +10,24 @@ exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Operations
 role: Admin
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4969'
+source-wordcount: '4975'
 ht-degree: 99%
-
 ---
-
 # Überwachen von Server-Ressourcen mit der JMX-Konsole{#monitoring-server-resources-using-the-jmx-console}
 
 Mit der JMX-Konsole können Sie Dienste auf dem CRX-Server überwachen und verwalten. In den folgenden Abschnitten werden die Attribute und Vorgänge zusammengefasst, die über das JMX-Framework verfügbar sind.
@@ -53,37 +64,37 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 * Argumente: keine
 * Zurückgegebener Wert: Tabellendaten mit den folgenden Spalten:
 
-   * Aufträge
-   * Queue Name (Warteschlangenname)
-   * Active Jobs (Aktive Aufträge)
-   * Average Processing Time (Durchschnittliche Verarbeitungszeit)
-   * Average Waiting Time (Durchschnittliche Wartezeit)
-   * Cancelled Jobs (Abgebrochene Aufträge)
-   * Failed Jobs (Fehlgeschlagene Aufträge)
-   * Finished Jobs (Fertiggestellte Aufträge)
-   * Processed Jobs (Verarbeitete Aufträge)
-   * Queued Jobs (Aufträge in Warteschlange)
+  * Aufträge
+  * Queue Name (Warteschlangenname)
+  * Active Jobs (Aktive Aufträge)
+  * Average Processing Time (Durchschnittliche Verarbeitungszeit)
+  * Average Waiting Time (Durchschnittliche Wartezeit)
+  * Cancelled Jobs (Abgebrochene Aufträge)
+  * Failed Jobs (Fehlgeschlagene Aufträge)
+  * Finished Jobs (Fertiggestellte Aufträge)
+  * Processed Jobs (Verarbeitete Aufträge)
+  * Queued Jobs (Aufträge in Warteschlange)
 
 **returnWorkflowJobTopicInfo**: Zeigt Verarbeitungsinformationen für Workflow-Aufträge nach Themen geordnet an.
 
 * Argumente: keine
 * Zurückgegebener Wert: Tabellendaten mit den folgenden Spalten:
 
-   * Topic Name (Themenbezeichnung)
-   * Average Processing Time (Durchschnittliche Verarbeitungszeit)
-   * Average Waiting Time (Durchschnittliche Wartezeit)
-   * Cancelled Jobs (Abgebrochene Aufträge)
-   * Failed Jobs (Fehlgeschlagene Aufträge)
-   * Finished Jobs (Fertiggestellte Aufträge)
-   * Processed Jobs (Verarbeitete Aufträge)
+  * Topic Name (Themenbezeichnung)
+  * Average Processing Time (Durchschnittliche Verarbeitungszeit)
+  * Average Waiting Time (Durchschnittliche Wartezeit)
+  * Cancelled Jobs (Abgebrochene Aufträge)
+  * Failed Jobs (Fehlgeschlagene Aufträge)
+  * Finished Jobs (Fertiggestellte Aufträge)
+  * Processed Jobs (Verarbeitete Aufträge)
 
 **returnFailedWorkflowCount**: Führt die Anzahl an fehlgeschlagenen Workflow-Instanzen auf. Sie können ein Workflow-Modell für die Abfrage angeben oder Informationen für alle Workflow-Modelle abrufen.
 
 * Argumente:
 
-   * model: Die ID des Modells für die Abfrage. Um die Anzahl an fehlgeschlagenen Workflow-Instanzen für alle Workflow-Modelle anzuzeigen, legen Sie keinen Wert fest. Die ID ist der Pfad zum Modellknoten, z. B.:
+  * model: Die ID des Modells für die Abfrage. Um die Anzahl an fehlgeschlagenen Workflow-Instanzen für alle Workflow-Modelle anzuzeigen, legen Sie keinen Wert fest. Die ID ist der Pfad zum Modellknoten, z. B.:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Zurückgegebener Wert: die Anzahl an fehlgeschlagenen Workflow-Instanzen.
 
@@ -96,65 +107,65 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 
 * Argumente:
 
-   * Restart the instance: (optional) Legen Sie den Wert `true` fest, um die Instanzen neu zu starten, nachdem sie beendet wurden. Beim Standardwert `false` werden beendete Workflow-Instanzen nicht neu gestartet.
-   * Dry Run: (optional) Legen Sie den Wert `true` fest, um die Ergebnisse des Vorgangs zu sehen, ohne den Vorgang tatsächlich durchzuführen. Beim Standardwert `false` wird der Vorgang durchgeführt.
-   * Model: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die fehlgeschlagenen Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
+  * Restart the instance: (optional) Legen Sie den Wert `true` fest, um die Instanzen neu zu starten, nachdem sie beendet wurden. Beim Standardwert `false` werden beendete Workflow-Instanzen nicht neu gestartet.
+  * Dry Run: (optional) Legen Sie den Wert `true` fest, um die Ergebnisse des Vorgangs zu sehen, ohne den Vorgang tatsächlich durchzuführen. Beim Standardwert `false` wird der Vorgang durchgeführt.
+  * Model: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die fehlgeschlagenen Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Zurückgegebener Wert: Tabellendaten zu den beendeten Instanzen mit den folgenden Spalten:
 
-   * Initiator
-   * InstanceId
-   * ModelId
-   * Payload
-   * StartComment
-   * WorkflowTitle
+  * Initiator
+  * InstanceId
+  * ModelId
+  * Payload
+  * StartComment
+  * WorkflowTitle
 
 **retryFailedWorkItems**: Versucht, fehlgeschlagene Arbeitselementschritte auszuführen. Sie können alle fehlgeschlagenen Arbeitselemente erneut ausführen lassen oder nur die fehlgeschlagenen Arbeitselemente für ein bestimmtes Workflow-Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
 
 * Argumente:
 
-   * Dry Run: (optional) Legen Sie den Wert `true` fest, um die Ergebnisse des Vorgangs zu sehen, ohne den Vorgang tatsächlich durchzuführen. Beim Standardwert `false` wird der Vorgang durchgeführt.
-   * Model: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die fehlgeschlagenen Arbeitselemente aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
+  * Dry Run: (optional) Legen Sie den Wert `true` fest, um die Ergebnisse des Vorgangs zu sehen, ohne den Vorgang tatsächlich durchzuführen. Beim Standardwert `false` wird der Vorgang durchgeführt.
+  * Model: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die fehlgeschlagenen Arbeitselemente aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Zurückgegebener Wert: Tabellendaten zu den fehlgeschlagenen Arbeitselementen, die erneut ausgeführt werden sollen, mit den folgenden Spalten:
 
-   * Initiator
-   * InstanceId
-   * ModelId
-   * Payload
-   * StartComment
-   * WorkflowTitle
+  * Initiator
+  * InstanceId
+  * ModelId
+  * Payload
+  * StartComment
+  * WorkflowTitle
 
 **PurgeActive**: Entfernt aktive Workflow-Instanzen eines bestimmten Alters. Sie können aktive Instanzen für alle Modelle bereinigen oder nur die Instanzen für ein bestimmtes Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
 
 * Argumente:
 
-   * Modell: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die Workflow-Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
+  * Modell: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die Workflow-Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Number of days since workflow started: das Alter der zu bereinigenden Workflow-Instanzen in Tagen.
-   * Dry Run: (optional) Legen Sie den Wert `true` fest, um die Ergebnisse des Vorgangs zu sehen, ohne den Vorgang tatsächlich durchzuführen. Beim Standardwert `false` wird der Vorgang durchgeführt.
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * Number of days since workflow started: das Alter der zu bereinigenden Workflow-Instanzen in Tagen.
+  * Dry Run: (optional) Legen Sie den Wert `true` fest, um die Ergebnisse des Vorgangs zu sehen, ohne den Vorgang tatsächlich durchzuführen. Beim Standardwert `false` wird der Vorgang durchgeführt.
 
 * Zurückgegebener Wert: Tabellendaten zu den aktiven Workflow-Instanzen, die bereinigt werden, mit den folgenden Spalten:
 
-   * Initiator
-   * InstanceId
-   * ModelId
-   * Payload
-   * StartComment
-   * WorkflowTitle
+  * Initiator
+  * InstanceId
+  * ModelId
+  * Payload
+  * StartComment
+  * WorkflowTitle
 
 **countStaleWorkflows**: Gibt die Anzahl an veralteten Workflow-Instanzen zurück. Sie können die Anzahl an veralteten Instanzen für alle Workflow-Modelle oder für ein bestimmtes Modell abrufen.
 
 * Argumente:
 
-   * Modell: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die Workflow-Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
+  * Modell: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die Workflow-Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Zurückgegebener Wert: die Anzahl an veralteten Workflow-Instanzen.
 
@@ -162,10 +173,10 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 
 * Argumente:
 
-   * Modell: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die veralteten Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
+  * Modell: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die veralteten Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Dry Run: (optional) Legen Sie den Wert `true` fest, um die Ergebnisse des Vorgangs zu sehen, ohne den Vorgang tatsächlich durchzuführen. Beim Standardwert `false` wird der Vorgang durchgeführt.
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * Dry Run: (optional) Legen Sie den Wert `true` fest, um die Ergebnisse des Vorgangs zu sehen, ohne den Vorgang tatsächlich durchzuführen. Beim Standardwert `false` wird der Vorgang durchgeführt.
 
 * Zurückgegebener Wert: eine Liste der Workflow-Instanzen, die neu gestartet werden.
 
@@ -178,9 +189,9 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 
 * Argumente:
 
-   * Model: (optional) die ID des Modells, für das die Anzahl an laufenden Instanzen zurückgegeben wird. Um die Anzahl an laufenden Instanzen für alle Workflow-Modelle zurückzugeben, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
+  * Model: (optional) die ID des Modells, für das die Anzahl an laufenden Instanzen zurückgegeben wird. Um die Anzahl an laufenden Instanzen für alle Workflow-Modelle zurückzugeben, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Zurückgegebener Wert: die Anzahl an laufenden Workflow-Instanzen.
 
@@ -188,9 +199,9 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 
 * Argumente:
 
-   * Model: (optional) die ID des Modells, für das die Anzahl an abgeschlossenen Instanzen zurückgegeben wird. Um die Anzahl an abgeschlossenen Instanzen für alle Workflow-Modelle zurückzugeben, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
+  * Model: (optional) die ID des Modells, für das die Anzahl an abgeschlossenen Instanzen zurückgegeben wird. Um die Anzahl an abgeschlossenen Instanzen für alle Workflow-Modelle zurückzugeben, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Zurückgegebener Wert: die Anzahl an abgeschlossenen Workflow-Instanzen.
 
@@ -198,20 +209,20 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 
 * Argumente:
 
-   * Modell: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die Workflow-Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
+  * Modell: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die Workflow-Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Number of days since workflow has been completed: die Anzahl an Tagen, seit denen sich die Workflow-Instanzen im abgeschlossenen Status befinden.
-   * Dry Run: (optional) Legen Sie den Wert `true` fest, um die Ergebnisse des Vorgangs zu sehen, ohne den Vorgang tatsächlich durchzuführen. Beim Standardwert `false` wird der Vorgang durchgeführt.
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * Number of days since workflow has been completed: die Anzahl an Tagen, seit denen sich die Workflow-Instanzen im abgeschlossenen Status befinden.
+  * Dry Run: (optional) Legen Sie den Wert `true` fest, um die Ergebnisse des Vorgangs zu sehen, ohne den Vorgang tatsächlich durchzuführen. Beim Standardwert `false` wird der Vorgang durchgeführt.
 
 * Zurückgegebener Wert: Tabellendaten zu den abgeschlossenen Workflow-Instanzen, die bereinigt werden, mit den folgenden Spalten:
 
-   * Initiator
-   * InstanceId
-   * ModelId
-   * Payload
-   * StartComment
-   * WorkflowTitle
+  * Initiator
+  * InstanceId
+  * ModelId
+  * Payload
+  * StartComment
+  * WorkflowTitle
 
 ## Repository {#repository}
 
@@ -252,7 +263,7 @@ Informationen zum CRX-Repository.
   </tr>
   <tr>
    <td>identifier.stability</td>
-   <td>Gibt die Stabilität von nicht referenzierbaren Knotenkennungen an. Die folgenden Werte sind möglich:
+   <td>Gibt die Stabilität von nicht referenzierbaren Knoten-IDs an. Die folgenden Werte sind möglich:
     <ul>
      <li>identifier.stability.indefinite.duration: Die IDs ändern sich nicht.</li>
      <li>identifier.stability.method.duration: Die IDs können sich zwischen Methodenaufrufen ändern.</li>
@@ -532,7 +543,7 @@ Schreibgeschützt.
 
 * Argumente:
 
-   * name: Ein Zeichenfolgenwert, der für den Namen des neuen Workspace steht.
+  * name: Ein Zeichenfolgenwert, der für den Namen des neuen Workspace steht.
 
 * Zurückgegebener Wert: keiner
 
@@ -540,7 +551,7 @@ Schreibgeschützt.
 
 * Argumente:
 
-   * delete: Ein boolescher Wert, der angibt, ob nicht genutzte Repository-Elemente gelöscht werden sollen. Der Wert „true“ bedeutet, dass nicht genutzte Knoten und Eigenschaften gelöscht werden. Der Wert „false“ bedeutet, dass alle Knoten überprüft werden, aber keiner gelöscht wird.
+  * delete: Ein boolescher Wert, der angibt, ob nicht genutzte Repository-Elemente gelöscht werden sollen. Der Wert „true“ bedeutet, dass nicht genutzte Knoten und Eigenschaften gelöscht werden. Der Wert „false“ bedeutet, dass alle Knoten überprüft werden, aber keiner gelöscht wird.
 
 * Zurückgegebener Wert: keiner
 
@@ -553,13 +564,13 @@ Schreibgeschützt.
 
 * Argumente:
 
-   * `target`: (optional) Ein `String`-Wert, der für den Namen der ZIP-Datei oder des Verzeichnisses steht, in der bzw. dem die Repository-Daten gespeichert werden sollen. Um eine ZIP-Datei zu verwenden, fügen Sie die ZIP-Dateinamen-Erweiterung ein. Um ein Verzeichnis zu verwenden, fügen Sie keine Dateinamen-Erweiterung ein.
+  * `target`: (optional) Ein `String`-Wert, der für den Namen der ZIP-Datei oder des Verzeichnisses steht, in der bzw. dem die Repository-Daten gespeichert werden sollen. Um eine ZIP-Datei zu verwenden, fügen Sie die ZIP-Dateinamen-Erweiterung ein. Um ein Verzeichnis zu verwenden, fügen Sie keine Dateinamen-Erweiterung ein.
 
-     Um ein inkrementelles Backup durchzuführen, geben Sie das Verzeichnis an, das zuletzt für das Backup genutzt wurde.
+    Um ein inkrementelles Backup durchzuführen, geben Sie das Verzeichnis an, das zuletzt für das Backup genutzt wurde.
 
-     Sie können einen absoluten oder einen relativen Pfad festlegen. Relative Pfade sind relativ zum übergeordneten Element des CRX-Schnellstartverzeichnisses.
+    Sie können einen absoluten oder einen relativen Pfad festlegen. Relative Pfade sind relativ zum übergeordneten Element des CRX-Schnellstartverzeichnisses.
 
-     Wenn Sie keinen Wert festlegen, wird der Standardwert `backup-currentdate.zip` genutzt, bei dem der Wert für das aktuelle Datum, `currentdate`, im Format `yyyyMMdd-HHmm` angegeben wird.
+    Wenn Sie keinen Wert festlegen, wird der Standardwert `backup-currentdate.zip` genutzt, bei dem der Wert für das aktuelle Datum, `currentdate`, im Format `yyyyMMdd-HHmm` angegeben wird.
 
 * Zurückgegebener Wert: keiner
 
@@ -592,7 +603,7 @@ Schreibgeschützt.
 
 * Argumente:
 
-   * `background`: Ein boolescher Wert, der angibt, ob der Vorgang im Hintergrund ausgeführt werden soll, damit die Web-Konsole währenddessen verwendet werden kann. Der Wert „true“ bedeutet, dass der Vorgang im Hintergrund ausgeführt wird.
+  * `background`: Ein boolescher Wert, der angibt, ob der Vorgang im Hintergrund ausgeführt werden soll, damit die Web-Konsole währenddessen verwendet werden kann. Der Wert „true“ bedeutet, dass der Vorgang im Hintergrund ausgeführt wird.
 
 * Zurückgegebener Wert: keiner
 
@@ -605,9 +616,9 @@ Schreibgeschützt.
 
 * Argumente:
 
-   * `master`: Ein Zeichenfolgenwert, der für die IP-Adresse oder den Computernamen des Computers steht, auf dem der Master-Repository-Knoten ausgeführt wird.
-   * `username`: Der Benutzername, der für die Authentifizierung beim Cluster genutzt werden soll.
-   * `password`: Das Kennwort, dass für die Authentifizierung genutzt werden soll.
+  * `master`: Ein Zeichenfolgenwert, der für die IP-Adresse oder den Computernamen des Computers steht, auf dem der Master-Repository-Knoten ausgeführt wird.
+  * `username`: Der Benutzername, der für die Authentifizierung beim Cluster genutzt werden soll.
+  * `password`: Das Kennwort, dass für die Authentifizierung genutzt werden soll.
 
 * Zurückgegebener Wert: keiner
 
@@ -623,28 +634,28 @@ Der Wert des TimeSeries-Feldes für jeden Statistiktyp, den `org.apache.jackrabb
 * Typ: `TimeSeries`
 * Name: einer der folgenden Werte aus der Aufzählungsklasse von `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type`:
 
-   * BUNDLE_CACHE_ACCESS_COUNTER
-   * BUNDLE_CACHE_MISS_AVERAGE
-   * BUNDLE_CACHE_MISS_COUNTER
-   * BUNDLE_CACHE_MISS_DURATION
-   * BUNDLE_CACHE_SIZE_COUNTER
-   * BUNDLE_COUNTER
-   * BUNDLE_READ_COUNTER
-   * BUNDLE_WRITE_AVERAGE
-   * BUNDLE_WRITE_COUNTER
-   * BUNDLE_WRITE_DURATION
-   * BUNDLE_WS_SIZE_COUNTER
-   * QUERY_AVERAGE
-   * QUERY_COUNT
-   * QUERY_DURATION
-   * SESSION_COUNT
-   * SESSION_LOGIN_COUNTER
-   * SESSION_READ_AVERAGE
-   * SESSION_READ_COUNTER
-   * SESSION_READ_DURATION
-   * SESSION_WRITE_AVERAGE
-   * SESSION_WRITE_COUNTER
-   * SESSION_WRITE_DURATION
+  * BUNDLE_CACHE_ACCESS_COUNTER
+  * BUNDLE_CACHE_MISS_AVERAGE
+  * BUNDLE_CACHE_MISS_COUNTER
+  * BUNDLE_CACHE_MISS_DURATION
+  * BUNDLE_CACHE_SIZE_COUNTER
+  * BUNDLE_COUNTER
+  * BUNDLE_READ_COUNTER
+  * BUNDLE_WRITE_AVERAGE
+  * BUNDLE_WRITE_COUNTER
+  * BUNDLE_WRITE_DURATION
+  * BUNDLE_WS_SIZE_COUNTER
+  * QUERY_AVERAGE
+  * QUERY_COUNT
+  * QUERY_DURATION
+  * SESSION_COUNT
+  * SESSION_LOGIN_COUNTER
+  * SESSION_READ_AVERAGE
+  * SESSION_READ_COUNTER
+  * SESSION_READ_DURATION
+  * SESSION_WRITE_AVERAGE
+  * SESSION_WRITE_COUNTER
+  * SESSION_WRITE_DURATION
 
 ### Attribute {#attributes-1}
 
@@ -816,7 +827,7 @@ Ruft die startupFinished-Methode des Server-Starters auf. Die Methode versucht, 
 Legt den Abschlusswert des Server-Startvorgangs fest. Die Statusleiste im Schnellstartfenster zeigt den Abschlusswert an.
 
 * Argumente:
-   * p1: Ein Gleitkommawert, der als Dezimalzahl angibt, wie groß der bereits abgeschlossene Anteil des Startvorgangs ist. Der Wert sollte zwischen null und eins liegen. Beispielsweise steht „0,3“ für „30 % abgeschlossen“.
+  * p1: Ein Gleitkommawert, der als Dezimalzahl angibt, wie groß der bereits abgeschlossene Anteil des Startvorgangs ist. Der Wert sollte zwischen null und eins liegen. Beispielsweise steht „0,3“ für „30 % abgeschlossen“.
 * Zurückgegebener Wert: keiner.
 
 ## Dienste von Drittanbietern {#third-party-services}
@@ -922,7 +933,7 @@ Um externe JMX-Verbindungen zu aktivieren, müssen Sie beim Starten der JVM die 
 
 In der o. g. Eigenschaft steht `portNum` für die Nummer des Ports, für den JMX-RMI-Verbindungen aktiviert werden sollen. Stellen Sie sicher, dass Sie eine nicht verwendete Port-Nummer angeben. Durch das Festlegen dieser Eigenschaft wird nicht nur ein RMI-Connector für den lokalen Zugriff veröffentlicht, sondern auch ein zusätzlicher RMI-Connector in einer privaten, schreibgeschützten Registrierung am angegebenen Port. Dabei wird ein bekannter Name verwendet, und zwar „jmxrmi“.
 
-Wenn Sie die Remote-Überwachung für den JMX-Agenten aktivieren, wird zur Kennwortauthentifizierung standardmäßig eine Kennwortdatei genutzt, die mit der folgenden Systemeigenschaft beim Starten der Java VM festgelegt werden muss:
+Wenn Sie die Remote-Überwachung für den JMX-Agent aktivieren, wird zur Kennwortauthentifizierung standardmäßig eine Kennwortdatei genutzt, die mit der folgenden Systemeigenschaft beim Starten der Java VM festgelegt werden muss:
 
 `com.sun.management.jmxremote.password.file=pwFilePath`
 

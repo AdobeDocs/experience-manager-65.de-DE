@@ -5,13 +5,39 @@ exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 99%
-
 ---
-
 # Live-Schalten Ihres Headless-Programms {#go-live}
 
 In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie eine Headless-Anwendung live bereitstellen.
@@ -118,9 +144,9 @@ Jetzt sollten Sie Ihre AEM Headless-Anwendung für den Launch vorbereiten, indem
 ### Maximieren der CDN-Cache-Trefferquote {#maximize-cdn}
 
 * Verwenden Sie keine direkten GraphQL-Abfragen, es sei denn, Sie fordern Live-Inhalte von der Oberfläche an.
-   * Verwenden Sie nach Möglichkeit persistente Abfragen.
-   * Ermöglichen Sie eine CDN-TTL von über 600 Sekunden, damit das CDN sie zwischenspeichern kann.
-   * AEM kann die Auswirkungen einer Modelländerung auf vorhandene Abfragen berechnen.
+  * Verwenden Sie nach Möglichkeit persistente Abfragen.
+  * Ermöglichen Sie eine CDN-TTL von über 600 Sekunden, damit das CDN sie zwischenspeichern kann.
+  * AEM kann die Auswirkungen einer Modelländerung auf vorhandene Abfragen berechnen.
 * Teilen Sie JSON-Dateien/GraphQL-Abfragen nach niedriger und hoher Inhaltsänderungsrate auf, um den Client-Traffic zum CDN zu reduzieren und eine längere TTL zuzuweisen. Dies minimiert den Aufwand für das CDN, die JSON-Dateien beim Ursprungs-Server erneut zu validieren.
 * Inhalte aus dem CDN können Sie aktiv per Soft Purge ungültig machen. Dadurch kann das CDN die Inhalte erneut herunterladen, ohne dass es zu Cache-Fehlern kommt.
 
@@ -157,22 +183,22 @@ Nachdem die Aktualisierungen in Cloud Manager hochgeladen wurden, können sie mi
 You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively - see the [Overview](/help/implementing/deploying/overview.md) to start.
 -->
 
-## Leistungsüberwachung {#performance-monitoring}
+## Überwachen der Performance {#performance-monitoring}
 
 Damit Benutzerinnen und Benutzern bei der Nutzung des AEM Headless-Programms das bestmögliche Erlebnis geboten wird, müssen Sie die wichtigsten Performance-Metriken überwachen, wie nachfolgend beschrieben:
 
 * Validieren der Vorschau- und Produktionsversionen des Programms
 * Prüfen der AEM-Statusseiten auf den aktuellen Status der Service-Verfügbarkeit
 * Abrufen von Performance-Berichten
-   * Bereitstellungs-Performance
-      * Urspungs-Server – Anzahl der Aufrufe, Fehlerquoten, CPU-Auslastung, Payload-Traffic
-   * Authoring-Performance
-      * Überprüfen der Anzahl der Benutzenden, Anfragen sowie der Auslastung
+  * Bereitstellungs-Performance
+    * Urspungs-Server – Anzahl der Aufrufe, Fehlerquoten, CPU-Auslastung, Payload-Traffic
+  * Authoring-Performance
+    * Überprüfen der Anzahl der Benutzenden, Anfragen sowie der Auslastung
 * Abrufen programm- und speicherplatzspezifischer Performance-Berichte
-   * Prüfen, ob die allgemeinen Metriken grün/orange/rot gekennzeichnet sind, sobald der Server hochgefahren ist, um anschließend spezifische Programmprobleme zu identifizieren
-   * Öffnen der oben genannten Berichte, jedoch gefiltert nach Anwendung oder Speicherplatz. (z. B. Desktop-Version von Photoshop, Paywall).
-   * Verwenden von Splunk-Protokoll-APIs, um Performance-Berichte zu Services und Programmen abzurufen
-   * Wenden Sie sich an den Support, falls weitere Probleme auftreten.
+  * Prüfen, ob die allgemeinen Metriken grün/orange/rot gekennzeichnet sind, sobald der Server hochgefahren ist, um anschließend spezifische Programmprobleme zu identifizieren
+  * Öffnen der oben genannten Berichte, jedoch gefiltert nach Anwendung oder Speicherplatz. (z. B. Desktop-Version von Photoshop, Paywall).
+  * Verwenden von Splunk-Protokoll-APIs, um Performance-Berichte zu Services und Programmen abzurufen
+  * Wenden Sie sich an den Support, falls weitere Probleme auftreten.
 
 ## Fehlerbehebung {#troubleshooting}
 
@@ -225,9 +251,9 @@ Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem opt
 
 * CDN-Cache
 
-   * [Steuern eines CDN-Cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de#controlling-a-cdn-cache)
+  * [Steuern eines CDN-Cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de#controlling-a-cdn-cache)
 
-   * Konfigurieren des [CDN Rewriters](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=de) (*suchen Sie nach CDN Rewriter*)
+  * Konfigurieren des [CDN Rewriters](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=de) (*suchen Sie nach CDN Rewriter*)
 
 * [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
 * [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)

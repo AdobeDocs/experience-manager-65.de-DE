@@ -9,13 +9,25 @@ feature: Security
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 99%
-
+source-wordcount: '752'
+ht-degree: 97%
 ---
-
 # Single Sign-On {#single-sign-on}
 
 Mithilfe von Single Sign-On (SSO) können Sie durch die einmalige Eingabe Ihrer Zugangsdaten (z. B. Ihres Benutzernamens und Passworts) auf mehrere Systeme zugreifen. Ein separates System (auch als vertrauenswürdiger Authenticator bezeichnet) führt die Authentifizierung durch und stellt Experience Manager die Benutzeranmeldeinformationen zur Verfügung. Experience Manager überprüft die Zugriffsberechtigungen und setzt diese für die Benutzerin oder den Benutzer durch (legt also fest, auf welche Ressourcen die Benutzerin oder der Benutzer zugreifen darf).
@@ -85,7 +97,8 @@ Um SSO für eine AEM-Instanz zu konfigurieren, konfigurieren Sie den [SSO-Authen
 >* `disp_iis.ini`
 >* IIS
 >
->Unter `disp_iis.ini`:>(siehe [Installieren von Dispatcher mit dem Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=de#microsoft-internet-information-server) für weitere Informationen)
+>Legen Sie in `disp_iis.ini` Folgendes fest:
+>(Einzelheiten finden Sie unter [Installieren des Dispatchers mit Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=de#microsoft-internet-information-server))
 >
 >* `servervariables=1` (leitet IIS-Server-Variablen als Anforderungskopfzeilen an die Remote-Instanz weiter)
 >* `replaceauthorization=1` (ersetzt alle Kopfzeilen mit dem Namen „Authorization“ mit Ausnahme von „Basic“ durch die Entsprechung von „Basic“)
@@ -148,7 +161,7 @@ Transfer-Encoding: chunked
 Dies funktioniert auch, wenn Sie Folgendes anfordern:
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-Sie können auch den folgenden curl-Befehl verwenden, um die `TestHeader`-Kopfzeile an `admin:` zu senden:
+Sie können auch den folgenden curl-Befehl verwenden, um die `TestHeader`-Kopfzeile an zu senden: `admin:`
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]

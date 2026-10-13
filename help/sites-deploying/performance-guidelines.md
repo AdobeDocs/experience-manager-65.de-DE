@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 99%
-
 ---
-
 # Leistungsrichtlinien{#performance-guidelines}
 
 Diese Seite erhält allgemeine Richtlinien zur Optimierung der Leistung Ihrer AEM-Bereitstellung. Wenn Sie neu bei AEM sind, sollten Sie die folgenden Seiten lesen, bevor Sie mit der Lektüre der Leistungsrichtlinien beginnen:
@@ -354,12 +363,12 @@ Wenn Sie etwas für AEM entwickeln, sollte das immer die **Leistung und Skalierb
 * Nach Möglichkeit keine Abfragen verwenden
 * Keine Sling-Bindungen verwenden, um OSGi-Dienste in Java™-Code zu erhalten, sondern stattdessen Folgendes:
 
-   * @Reference in einer DS-Komponente
-   * @Inject in einem Sling-Modell
-   * sling.getService() in einer Sightly-Anwendungsklasse
-   * sling.getService() in einer JSP
-   * einen ServiceTracker
-   * direkten Zugriff auf die Registrierung des OSGi-Diensts
+  * @Reference in einer DS-Komponente
+  * @Inject in einem Sling-Modell
+  * sling.getService() in einer Sightly-Anwendungsklasse
+  * sling.getService() in einer JSP
+  * einen ServiceTracker
+  * direkten Zugriff auf die Registrierung des OSGi-Diensts
 
 Weitere Informationen zur Entwicklung in AEM finden Sie unter [Entwickeln – Grundlagen](/help/sites-developing/the-basics.md). Weitere Best Practices finden Sie unter [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md).
 
@@ -834,24 +843,24 @@ Die auf dieser Seite vorgestellten Richtlinien lassen sich wie folgt zusammenfas
 
 * **TarMK mit Dateidatenspeicher**: Die empfohlene Architektur für die meisten Kundinnen und Kunden:
 
-   * Mindesttopologie: eine Autoreninstanz, zwei Veröffentlichungsinstanz, zwei Dispatcher
-   * Wenn der Dateidatenspeicher freigegeben wird, muss die Binärdatei-lose Replikation aktiviert sein
+  * Mindesttopologie: eine Autoreninstanz, zwei Veröffentlichungsinstanz, zwei Dispatcher
+  * Wenn der Dateidatenspeicher freigegeben wird, muss die Binärdatei-lose Replikation aktiviert sein
 
 * **MongoMK mit Dateidatenspeicher**: Die empfohlene Architektur für die horizontale Skalierbarkeit der Authoring-Ebene:
 
-   * Mindesttopologie: drei Autoreninstanzen, drei MongoDB-Instanzen, zwei Veröffentlichungsinstanzen, zwei Dispatcher
-   * Wenn der Dateidatenspeicher freigegeben wird, muss die Binärdatei-lose Replikation aktiviert sein
+  * Mindesttopologie: drei Autoreninstanzen, drei MongoDB-Instanzen, zwei Veröffentlichungsinstanzen, zwei Dispatcher
+  * Wenn der Dateidatenspeicher freigegeben wird, muss die Binärdatei-lose Replikation aktiviert sein
 
 * **Knotenspeicher**: Auf der lokalen Festplatte gespeichert, kein netzwerkgebundener Speicher (NAS)
 * Wenn **Amazon S3** verwendet wird:
 
-   * Der Amazon S3-Datenspeicher wird von der Autoren- und der Publishing-Ebene gemeinsam genutzt.
-   * Die Binärdatei-lose Replikation muss aktiviert sein
-   * Die automatische Speicherbereinigung erfordert eine erste Ausführung auf allen Author- und Publish-Knoten und eine zweite Ausführung auf der Authoring-Instanz.
+  * Der Amazon S3-Datenspeicher wird von der Autoren- und der Publishing-Ebene gemeinsam genutzt.
+  * Die Binärdatei-lose Replikation muss aktiviert sein
+  * Die automatische Speicherbereinigung erfordert eine erste Ausführung auf allen Author- und Publish-Knoten und eine zweite Ausführung auf der Authoring-Instanz.
 
 * **Zusätzlich zum vorkonfigurierten Index sollte ein benutzerdefinierter Index erstellt werden**: Basierend auf den häufigsten Suchvorgängen
 
-   * Für die benutzerdefinierten Indizes sollten Lucene-Indizes verwendet werden
+  * Für die benutzerdefinierten Indizes sollten Lucene-Indizes verwendet werden
 
 * **Durch die Anpassung von Workflows kann die Leistung erheblich gesteigert werden**, z. B. durch Entfernen des Videoschrittes im Workflow „Asset aktualisieren“, Deaktivieren von nicht verwendeten Listenern usw.
 

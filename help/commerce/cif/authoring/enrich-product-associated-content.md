@@ -6,32 +6,40 @@ feature: Commerce Integration Framework
 exl-id: 1a069fbc-c036-419a-b585-6aa43e15de16
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '352'
 ht-degree: 100%
-
 ---
-
 # Anreichern von Produktdaten mit zugehörigen AEM-Inhalten
 
 Erfahren Sie, wie Marketer Produktdaten mit zugehörigen Inhalten aus Adobe Experience Manager anreichern können. Inhalte wie Assets, Experience Fragments und Inhaltsfragmente in AEM können mit Commerce-Produkten verknüpft werden. Nach der Verknüpfung können diese Inhaltstypen dynamisch in einen Platzhalter innerhalb einer Produktseite oder Kategorieseite eingefügt werden. Dadurch eröffnen sich für Marketer zahlreiche Möglichkeiten, auf bestimmten Produktseiten zusätzliche Inhalte wie Bilder und Videos bereitzustellen.
 
 ## Digitale Assets
 
->[!VIDEO](https://video.tv.adobe.com/v/3447318/?quality=12&learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3447318/?captions=ger&quality=12&learn=on)
 
 Digitale Assets können mit einer oder mehreren Produkt-SKUs verknüpft werden. Sobald das digitale Asset zugeordnet ist, kann es anhand der SKU bei Schlüsselwortsuchen erkannt werden. Das Asset wird auch automatisch als verknüpfter Inhalt angezeigt, wenn eine Seite bearbeitet wird, die das relevante Produkt enthält. Dies erleichtert die Erstellung Ihres nächsten digitalen Erlebnisses zusätzlich.
 
 ## Experience Fragments
 
->[!VIDEO](https://video.tv.adobe.com/v/343378/?quality=12&learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/343378/?captions=ger&quality=12&learn=on)
 
 Experience Fragments sind eine Funktion von Adobe Experience Manager, mit der Marketing-Experten **unstrukturierte** wiederverwendbare Inhalte erstellen können. Experience Fragments können mit einer Produkt-SKU oder einer Katalog-ID verknüpft werden. Sobald die Verknüpfung hergestellt wurde, können Marketer auf einfache Weise verwandte Fragmente erkennen, die auf Produkten basieren, die auf einer Seite angezeigt werden. Experience Fragments können auch dynamisch auf einer Produktkatalogseite mithilfe eines Platzhalters und einer Verknüpfung eingefügt werden.
 
 ## Inhaltsfragmente
 
->[!VIDEO](https://video.tv.adobe.com/v/343381/?quality=12&learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/343381/?captions=ger&quality=12&learn=on)
 
 Inhaltsfragmente sind eine Funktion von Adobe Experience Manager, mit der Marketing-Experten **strukturierte** wiederverwendbare Inhalte erstellen können. Inhaltsfragmente können mit einer Produkt-SKU oder Katalog-ID verknüpft werden. Sobald die Verknüpfung hergestellt wurde, können Marketer auf einfache Weise verwandte Fragmente erkennen, die auf Produkten basieren, die auf einer Seite angezeigt werden. Inhaltsfragmente können auch dynamisch mithilfe eines Platzhalters und einer Verknüpfung in eine Produktkatalogseite eingefügt werden.
 

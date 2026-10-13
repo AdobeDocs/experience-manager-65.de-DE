@@ -10,13 +10,27 @@ mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: cb04d42d-1b70-43b0-9951-45998eb6e842
+    internal-label: Video
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1606'
 ht-degree: 100%
-
 ---
-
 # Video {#video}
 
 Adobe Experience Manager Assets bietet zentralisiertes Video-Asset-Management, mit dem Sie Videos direkt in Assets zur automatischen Kodierung in Dynamic Media Classic hochladen und für die Seitenerstellung direkt in Assets auf Dynamic Media Classic-Videos zugreifen können.
@@ -150,7 +164,7 @@ Die verschiedenen Videokodierungsmethoden werden anhand der S7-Kodierungsvorgabe
 
 1. Wählen Sie in Experience Manager **[!UICONTROL Tools]** > **[!UICONTROL Konfigurationskonsole]** aus.
 1. Navigieren Sie in der **[!UICONTROL Konfigurationskonsole]** in der Navigationsstruktur zu **[!UICONTROL Tools]** > **[!UICONTROL DAM]** > **[!UICONTROL Videoprofile]**.
-1. Erstellen Sie ein S7-Videoprofil. Wählen Sie im Menu **[!UICONTROL Neu]** die Option **[!UICONTROL Seite erstellen]** und anschließend die Scene7-Video-Profilvorlage aus. Geben Sie der neuen Videoprofilseite einen Namen und wählen Sie **[!UICONTROL Erstellen]** aus.
+1. Erstellen Sie ein S7-Videoprofil. Wählen Sie im Menu **[!UICONTROL Neu]** die Option **[!UICONTROL Seite erstellen]** und anschließend die Scene7-Videoprofil-Vorlage aus. Geben Sie der neuen Videoprofilseite einen Namen und wählen Sie **[!UICONTROL Erstellen]** aus.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -168,7 +182,7 @@ Die verschiedenen Videokodierungsmethoden werden anhand der S7-Kodierungsvorgabe
 
 #### Konfigurieren des Designs {#configuring-design}
 
-Die **[!UICONTROL Foundation-Video-Komponente]** muss darüber informiert sein, welche Video-Profile verwendet werden sollen, damit sie die Video-Quellenliste erstellen kann. Öffnen Sie das Dialogfeld für das Design von Videokomponenten und konfigurieren Sie das Design der Komponenten für die Nutzung der neuen Videoprofile.
+Die **[!UICONTROL Foundation-Video-Komponente]** muss darüber informiert sein, welche VideopProfile verwendet werden sollen, damit sie die Video-Quellenliste erstellen kann. Öffnen Sie das Dialogfeld für das Design von Videokomponenten und konfigurieren Sie das Design der Komponenten für die Nutzung der neuen Videoprofile.
 
 >[!NOTE]
 >
@@ -184,7 +198,7 @@ Die **[!UICONTROL Foundation-Video-Komponente]** muss darüber informiert sein, 
 #### Checkliste {#checklist}
 
 1. Erstellen Sie eine S7-Cloud-Konfiguration. Vergewissern Sie sich, dass die Videokodierungsvorgaben festgelegt sind und das Importprogramm ausgeführt wird.
-1. Erstellen Sie ein S7-Video-Profil für jede in der Cloud-Konfiguration ausgewählte Video-Kodierungsvorgabe.
+1. Erstellen Sie ein S7-Videoprofil für jede in der Cloud-Konfiguration ausgewählte Video-Kodierungsvorgabe.
 1. Die Videoprofile müssen aktiviert sein.
 1. Konfigurieren Sie das Design der **[!UICONTROL Foundation]**-Videokomponente auf Ihrer Seite.
 1. Aktivieren Sie das Design, sobald Sie mit Ihren Design-Änderungen fertig sind.

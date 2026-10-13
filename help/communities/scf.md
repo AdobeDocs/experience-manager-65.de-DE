@@ -9,13 +9,20 @@ exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1512'
 ht-degree: 1%
-
 ---
-
 # Social Component Framework {#social-component-framework}
 
 Das Social Component Framework (SCF) vereinfacht die Konfiguration, Anpassung und Erweiterung von Communities-Komponenten sowohl auf Server- als auch auf Client-Seite.
@@ -50,19 +57,19 @@ Die SocialComponent-API kann erweitert werden, um Daten bereitzustellen, die von
 Um die Komponenten anzupassen oder zu erweitern, schreiben Sie nur die Überlagerungen und Erweiterungen in Ihr Verzeichnis &quot;/apps“, was den Prozess der Aktualisierung auf zukünftige Versionen vereinfacht.
 
 * Für die Enthäutung:
-   * Nur [CSS muss bearbeitet werden](client-customize.md#skinning-css).
+  * Nur [CSS muss bearbeitet werden](client-customize.md#skinning-css).
 * Für Look-and-Feel:
-   * Ändern Sie die JS-Vorlage und das CSS.
+  * Ändern Sie die JS-Vorlage und das CSS.
 * Für Look-and-Feel und UX:
-   * Ändern Sie die JS-Vorlage, das CSS und [JavaScript erweitern/überschreiben](client-customize.md#extending-javascript).
+  * Ändern Sie die JS-Vorlage, das CSS und [JavaScript erweitern/überschreiben](client-customize.md#extending-javascript).
 * So ändern Sie die für die JS-Vorlage oder den GET-Endpunkt verfügbaren Informationen:
-   * Erweitern Sie die [SocialComponent](server-customize.md#socialcomponent-interface).
+  * Erweitern Sie die [SocialComponent](server-customize.md#socialcomponent-interface).
 * So fügen Sie eine benutzerdefinierte Verarbeitung während der Vorgänge hinzu:
-   * Schreiben Sie eine [OperationExtension](server-customize.md#operationextension-class).
+  * Schreiben Sie eine [OperationExtension](server-customize.md#operationextension-class).
 * Hinzufügen eines benutzerdefinierten Vorgangs:
-   * Erstellen Sie einen [Sling-POST-Vorgang](server-customize.md#postoperation-class).
-   * Verwenden Sie [&#x200B; vorhandenen &#x200B;](server-customize.md#operationservice-class) nach Bedarf.
-   * Fügen Sie JavaScript-Code hinzu, um Ihren Vorgang nach Bedarf Client-seitig aufzurufen.
+  * Erstellen Sie einen [Sling-POST-Vorgang](server-customize.md#postoperation-class).
+  * Verwenden Sie [&#x200B; vorhandenen &#x200B;](server-customize.md#operationservice-class) nach Bedarf.
+  * Fügen Sie JavaScript-Code hinzu, um Ihren Vorgang nach Bedarf Client-seitig aufzurufen.
 
 ## Server-seitiges Framework {#server-side-framework}
 

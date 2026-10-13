@@ -10,13 +10,26 @@ exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 100%
-
 ---
-
 # Kurzanleitung zur Seitenbearbeitung (Authoring){#quick-guide-to-authoring-pages}
 
 Diese Verfahren dienen als schnelle (allgemeine) Anleitung zu den wichtigsten Aktionen beim Bearbeiten von Seiteninhalten in AEM.
@@ -39,20 +52,20 @@ Bevor Sie sich einen Überblick über die Besonderheiten verschaffen, hier eine 
 
 * **Erstellen**
 
-   * Diese Schaltfläche steht in vielen Konsolen zur Verfügung. Die angezeigten Optionen sind kontextabhängig und können je nach Szenario variieren.
+  * Diese Schaltfläche steht in vielen Konsolen zur Verfügung. Die angezeigten Optionen sind kontextabhängig und können je nach Szenario variieren.
 
 * Neuanordnen von Seiten in einem Ordner
 
-   * Dies kann in der [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) durchgeführt werden. Die Änderungen werden angewendet und sind in anderen Ansichten sichtbar.
+  * Dies kann in der [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) durchgeführt werden. Die Änderungen werden angewendet und sind in anderen Ansichten sichtbar.
 
 #### Bearbeiten von Seiten {#page-authoring}
 
 * Navigieren per Links
 
-   * ***Links sind für die Navigation nicht verfügbar***, wenn Sie sich im Modus **Bearbeiten** befinden. Für die Navigation mithilfe von Links müssen Sie [die Seite in einer Vorschau anzeigen](/help/sites-authoring/editing-content.md#previewing-pages), indem Sie eine der folgenden Optionen verwenden:
+  * ***Links sind für die Navigation nicht verfügbar***, wenn Sie sich im Modus **Bearbeiten** befinden. Für die Navigation mithilfe von Links müssen Sie [die Seite in einer Vorschau anzeigen](/help/sites-authoring/editing-content.md#previewing-pages), indem Sie eine der folgenden Optionen verwenden:
 
-      * [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode)
-      * [Als veröffentlicht anzeigen](/help/sites-authoring/editing-content.md#view-as-published)
+    * [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode)
+    * [Als veröffentlicht anzeigen](/help/sites-authoring/editing-content.md#view-as-published)
 
 * Versionen werden nicht aus dem Seiteneditor gestartet/erstellt. Dies erfolgt jetzt über die Sites-Konsole (über **Erstellen** oder [Timeline](/help/sites-authoring/basic-handling.md#timeline) für die jeweilige Ressource).
 
@@ -111,8 +124,8 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 
    * Wechseln Sie in den Auswahlmodus durch [Auswählen der gewünschten Ressource](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) mit:
 
-      * Mobilgerät: auswählen und halten
-      * Desktop: [Schnellaktion](/help/sites-authoring/basic-handling.md#quick-actions) – Häkchen:
+     * Mobilgerät: auswählen und halten
+     * Desktop: [Schnellaktion](/help/sites-authoring/basic-handling.md#quick-actions) – Häkchen:
 
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
@@ -147,9 +160,9 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 
    * [Fügen Sie der Seite eine neue Komponente hinzu](/help/sites-authoring/editing-content.md#inserting-a-component), indem Sie:
 
-      * den Seitenbereich öffnen
-      * die Komponentenregisterkarte (den [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser)) auswählen
-      * die gewünschte Komponente auf Ihre Seite ziehen
+     * den Seitenbereich öffnen
+     * die Komponentenregisterkarte (den [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser)) auswählen
+     * die gewünschte Komponente auf Ihre Seite ziehen
 
      Der Seitenbereich kann mit folgendem Symbol geöffnet (und geschlossen) werden:
 
@@ -157,24 +170,24 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 
    * [Den Inhalt einer vorhandenen Komponente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) auf der Seite bearbeiten:
 
-      * Öffnen Sie die Komponenten-Symbolleiste mit einer der beiden Optionen. Öffnen Sie das Dialogfeld über das Symbol **Bearbeiten** (Bleistift).
-      * Öffnen Sie den integrierten Editor für die Komponente entweder durch Auswählen und Halten oder durch einen langsamen Doppelklick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine eingeschränkte Auswahl).
-      * Um alle verfügbaren Aktionen anzuzeigen, gehen Sie wie folgt in den Vollbildmodus:
+     * Öffnen Sie die Komponenten-Symbolleiste mit einer der beiden Optionen. Öffnen Sie das Dialogfeld über das Symbol **Bearbeiten** (Bleistift).
+     * Öffnen Sie den integrierten Editor für die Komponente entweder durch Auswählen und Halten oder durch einen langsamen Doppelklick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine eingeschränkte Auswahl).
+     * Um alle verfügbaren Aktionen anzuzeigen, gehen Sie wie folgt in den Vollbildmodus:
 
      ![Vollbildmodus](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Konfigurieren der Eigenschaften einer vorhandenen Komponente](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-      * Öffnen Sie die Komponenten-Symbolleiste mit einer der beiden Optionen. Verwenden Sie das Symbol **Konfigurieren** (Schraubenschlüssel), um den Dialog zu öffnen.
+     * Öffnen Sie die Komponenten-Symbolleiste mit einer der beiden Optionen. Verwenden Sie das Symbol **Konfigurieren** (Schraubenschlüssel), um den Dialog zu öffnen.
 
    * [Verschieben](/help/sites-authoring/editing-content.md#moving-a-component) Sie eine Komponente mit einem der folgenden Verfahren:
 
-      * Ziehen Sie die gewünschte Komponente an die neue Position.
-      * Öffnen Sie die Komponenten-Symbolleiste mit einer der beiden Optionen. Verwenden Sie die Symbole **Ausschneiden** und dann **Einfügen**, wo erforderlich.
+     * Ziehen Sie die gewünschte Komponente an die neue Position.
+     * Öffnen Sie die Komponenten-Symbolleiste mit einer der beiden Optionen. Verwenden Sie die Symbole **Ausschneiden** und dann **Einfügen**, wo erforderlich.
 
    * So können Sie eine Komponente [kopieren (und einfügen)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste):
 
-      * Öffnen Sie die Komponenten-Symbolleiste mit einer der beiden Optionen. Verwenden Sie die Symbole **Ausschneiden** und dann **Einfügen**, wo erforderlich.
+     * Öffnen Sie die Komponenten-Symbolleiste mit einer der beiden Optionen. Verwenden Sie die Symbole **Ausschneiden** und dann **Einfügen**, wo erforderlich.
 
    >[!NOTE]
    >
@@ -182,17 +195,17 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 
    * Eine Komponente [löschen](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste):
 
-      * Öffnen Sie die Komponenten-Symbolleiste per Klick. Verwenden Sie dann das Symbol **Löschen**.
+     * Öffnen Sie die Komponenten-Symbolleiste per Klick. Verwenden Sie dann das Symbol **Löschen**.
 
    * Fügen Sie der Seite [Anmerkungen](/help/sites-authoring/annotations.md#annotations) hinzu:
 
-      * Wählen Sie den Modus **Anmerken** (Sprechblasensymbol). Fügen Sie Anmerkungen mit dem Symbol **Anmerkung hinzufügen** (Pluszeichen) hinzu. Beenden Sie den Anmerkungsmodus mit dem X oben rechts.
+     * Wählen Sie den Modus **Anmerken** (Sprechblasensymbol). Fügen Sie Anmerkungen mit dem Symbol **Anmerkung hinzufügen** (Pluszeichen) hinzu. Beenden Sie den Anmerkungsmodus mit dem X oben rechts.
 
      ![Anmerken](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [Vorschau einer Seite](/help/sites-authoring/editing-content.md#preview-mode) (um ihre Darstellung in der Publishing-Umgebung anzuzeigen)
 
-      * Wählen Sie in der Symbolleiste die Option **Vorschau**.
+     * Wählen Sie in der Symbolleiste die Option **Vorschau**.
 
    * Kehren Sie in den Bearbeitungsmodus zurück (oder wählen Sie einen anderen Modus), indem Sie die Dropdown-Auswahl **Bearbeiten** verwenden.
 
@@ -206,20 +219,20 @@ Es gibt (im Wesentlichen) zwei Methoden für das [Bearbeiten von Seiteneigenscha
 
 * In der Konsole **Sites**:
 
-   1. [Navigieren Sie zu der Seite](#finding-your-page), die Sie veröffentlichen möchten.
-   1. Wählen Sie das Symbol **Eigenschaften** aus, indem Sie wahlweise Folgendes verwenden:
+  1. [Navigieren Sie zu der Seite](#finding-your-page), die Sie veröffentlichen möchten.
+  1. Wählen Sie das Symbol **Eigenschaften** aus, indem Sie wahlweise Folgendes verwenden:
 
-      * [Schnellzugriffe (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die jeweilige Ressource
-      * Symbolleiste, wenn die [Seite ausgewählt wurde](#selectiingyourpageforfurtheraction)
+     * [Schnellzugriffe (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die jeweilige Ressource
+     * Symbolleiste, wenn die [Seite ausgewählt wurde](#selectiingyourpageforfurtheraction)
 
   ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
-   1. Die Seiteneigenschaften werden angezeigt. Sie können nach Bedarf Aktualisierungen vornehmen. Speichern Sie diese anschließend, um sie beizubehalten.
+  1. Die Seiteneigenschaften werden angezeigt. Sie können nach Bedarf Aktualisierungen vornehmen. Speichern Sie diese anschließend, um sie beizubehalten.
 
 * Beim [Bearbeiten Ihrer Seite](#editing-your-page-content):
 
-   1. Öffnen Sie das Menü **Seiteninformationen**.
-   1. Wählen Sie **Eigenschaften öffnen**, um den Dialog zum Bearbeiten der Eigenschaften zu öffnen.
+  1. Öffnen Sie das Menü **Seiteninformationen**.
+  1. Wählen Sie **Eigenschaften öffnen**, um den Dialog zum Bearbeiten der Eigenschaften zu öffnen.
 
   ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
 
@@ -229,18 +242,18 @@ Es gibt im Wesentlichen zwei Methoden zum [Veröffentlichen Ihrer Seite](/help/s
 
 * In der Konsole **Sites**:
 
-   1. [Navigieren Sie zu der Seite](#finding-your-page), die Sie veröffentlichen möchten.
-   1. Wählen Sie das Symbol **Quick Publish** aus, indem Sie wahlweise Folgendes verwenden:
+  1. [Navigieren Sie zu der Seite](#finding-your-page), die Sie veröffentlichen möchten.
+  1. Wählen Sie das Symbol **Quick Publish** aus, indem Sie wahlweise Folgendes verwenden:
 
-      * [Schnellzugriffe (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die jeweilige Ressource
-      * Symbolleiste, wenn die [Seite ausgewählt wurde](#selectiingyourpageforfurtheraction) (ermöglicht auch Zugriff auf [Später veröffentlichen](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
+     * [Schnellzugriffe (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die jeweilige Ressource
+     * Symbolleiste, wenn die [Seite ausgewählt wurde](#selectiingyourpageforfurtheraction) (ermöglicht auch Zugriff auf [Später veröffentlichen](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
 
   ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
 * Beim [Bearbeiten Ihrer Seite](#editing-your-page-content):
 
-   1. Öffnen Sie das Menü **Seiteninformationen**.
-   1. Wählen Sie **Seite veröffentlichen**.
+  1. Öffnen Sie das Menü **Seiteninformationen**.
+  1. Wählen Sie **Seite veröffentlichen**.
 
   ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
@@ -266,15 +279,15 @@ Diese Aktionen können alle wie folgt ausgelöst werden:
 
    * Kopieren:
 
-      * Zum neuen Speicherort navigieren und dort einfügen.
+     * Zum neuen Speicherort navigieren und dort einfügen.
 
    * Verschieben:
 
-      * Der Assistent wird geöffnet, um die zum Verschieben der Seite erforderlichen Informationen zu sammeln. Befolgen Sie die Anweisungen auf dem Bildschirm.
+     * Der Assistent wird geöffnet, um die zum Verschieben der Seite erforderlichen Informationen zu sammeln. Befolgen Sie die Anweisungen auf dem Bildschirm.
 
    * Löschen:
 
-      * Sie werden aufgefordert, die Aktion zu bestätigen.
+     * Sie werden aufgefordert, die Aktion zu bestätigen.
 
    >[!NOTE]
    >
@@ -334,8 +347,8 @@ Beim Wiederherstellen und/oder Vergleichen von Seitenversionen wird dasselbe gru
 
    * **Auf diese Version zurücksetzen**
 
-      * Die Version wird wiederhergestellt.
+     * Die Version wird wiederhergestellt.
 
    * **Unterschiede anzeigen**
 
-      * Die Seite wird geöffnet und die Unterschiede (zwischen den beiden Versionen) werden hervorgehoben.
+     * Die Seite wird geöffnet und die Unterschiede (zwischen den beiden Versionen) werden hervorgehoben.

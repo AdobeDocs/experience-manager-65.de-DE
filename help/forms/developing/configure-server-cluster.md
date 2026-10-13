@@ -5,13 +5,27 @@ exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3986'
 ht-degree: 97%
-
 ---
-
 # Konfigurieren von und Fehlerbehebung für AEM Forms auf einem JEE-Server-Cluster {#configuring-troubleshooting-aem-forms-jee-server-cluster}
 
 ## Vorausgesetztes Wissen {#prerequisites}
@@ -268,7 +282,8 @@ Es ist wichtig, diese erste Zeile in den Protokollen zu finden. Der Grund dafür
 
 Hier wird der Name der Quartz-Instanz angegeben: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. Der Name der Quartz-Instanz des Schedulers beginnt immer mit der Zeichenfolge `IDPSchedulerService_$_`. Die Zeichenfolge, die am Ende angefügt wird, gibt an, ob Quartz im Cluster-Modus ausgeführt wird. Die lange eindeutige Kennung, die aus dem Hostnamen des Knotens und einer langen Zeichenfolge von Ziffern generiert wurde, hier `ap-hp8.ottperflab.adobe.com1312883903975`, zeigt an, dass die Ausführung in einem Cluster erfolgt. Wenn die Ausführung als einzelner Knoten erfolgt, ist die Kennung eine zweistellige Zahl („20“):
 
-INFO  `[org.quartz.core.QuartzScheduler]` Scheduler `IDPSchedulerService_$_20` gestarted.Diese Prüfung muss für alle Cluster-Knoten separat durchgeführt werden, da der Scheduler jedes Knotens in unabhängiger Weise bestimmt, ob die Ausführung im Cluster-Modus erfolgen soll.
+INFO  `[org.quartz.core.QuartzScheduler]` Scheduler `IDPSchedulerService_$_20` gestarted.
+Diese Prüfung muss für alle Cluster-Knoten separat durchgeführt werden, da der Scheduler jedes Knotens in unabhängiger Weise bestimmt, ob die Ausführung im Cluster-Modus erfolgen soll.
 
 ### Welche Probleme entstehen, wenn Quartz im falschen Modus ausgeführt wird? {#quartz-running-in-wrong-mode}
 

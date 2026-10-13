@@ -10,13 +10,22 @@ feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 96%
-
 ---
-
 # Prüfungen und Fehlerbehebung nach einem Upgrade{#post-upgrade-checks-and-troubleshooting}
 
 ## Prüfungen nach einem Upgrade {#post-upgrade-checks}
@@ -73,11 +82,11 @@ Die Datei „error.log“ sollte beim Start von AEM und danach anhand der JAR-Da
 
 ### Überprüfen von OSGi-Paketen {#verify-osgi-bundles}
 
-Navigieren Sie zur OSGi-Konsole unter `/system/console/bundles` und überprüfen Sie, ob irgendwelche Pakete nicht gestartet wurden. Wenn Bundles den Status „Installiert“ aufweisen, überprüfen Sie die Datei `error.log`, um das ursächliche Problem zu ermitteln.
+Navigieren Sie zur OSGi-Konsole unter `/system/console/bundles` und überprüfen Sie, ob irgendwelche Pakete nicht gestartet wurden. Wenn Pakete den Status „Installiert“ aufweisen, überprüfen Sie die Datei `error.log`, um das ursächliche Problem zu ermitteln.
 
 ### Überprüfen der Oak-Version {#verify-oak-version}
 
-Nach dem Upgrade sollte ersichtlich sein, dass die Oak-Version auf die Version **1.10.2** aktualisiert wurde. Um die Oak-Version zu überprüfen, navigieren Sie zur OSGi-Konsole und suchen Sie nach der entsprechenden Version der Oak-Bundles: Oak Core, Oak Commons, Oak Segment Tar.
+Nach dem Upgrade sollte ersichtlich sein, dass die Oak-Version auf die Version **1.10.2** aktualisiert wurde. Um die Oak-Version zu überprüfen, navigieren Sie zur OSGi-Konsole und suchen Sie nach der entsprechenden Version der Oak-Pakete: Oak Core, Oak Commons, Oak Segment Tar.
 
 ### Überprüfen des Ordners „PreUpgradeBackup“ {#inspect-preupgradebackup-folder}
 
@@ -147,15 +156,15 @@ Wenn Pakete während des Upgrades nicht installiert werden können, werden die d
 
 ### Einige AEM-Pakete wechseln nicht in den aktiven Status {#some-aem-bundles-are-not-switching-to-the-active-state}
 
-Wenn Bundles nicht starten, prüfen Sie diese auf nicht erfüllte Abhängigkeiten.
+Wenn Pakete nicht starten, prüfen Sie diese auf nicht erfüllte Abhängigkeiten.
 
 Wenn dieses Problem auftritt, jedoch auf eine fehlerhafte Paketinstallation zurückzuführen ist, wodurch Pakete nicht aktualisiert werden, werden diese für die neue Version als inkompatibel angesehen. Weitere Informationen über die entsprechende Fehlerbehebung finden Sie oben unter **Fehlerhafte Aktualisierung von Pakete**.
 
-Es wird zudem empfohlen, die Bundle-Liste einer aktuellen AEM 6.5-Instanz mit der aktualisierten zu vergleichen, um nicht aktualisierte Bundles zu ermitteln. Dadurch kann der Bereich der zu suchenden Elemente in der Datei `error.log` eingegrenzt werden.
+Es wird zudem empfohlen, die Paketliste einer aktuellen AEM 6.5-Instanz mit der aktualisierten zu vergleichen, um nicht aktualisierte Pakete zu ermitteln. Dadurch kann der Bereich der zu suchenden Elemente in der Datei `error.log` eingegrenzt werden.
 
 ### Benutzerdefinierte Pakete wechseln nicht in den aktiven Status {#custom-bundles-not-switching-to-the-active-state}
 
-Wenn Ihre benutzerdefinierten Bundles nicht in den aktiven Status wechseln, liegt dies höchstwahrscheinlich an Code, der die geänderte API nicht importiert. Dies führt oftmals zu nicht erfüllten Abhängigkeiten.
+Wenn Ihre benutzerdefinierten Pakete nicht in den aktiven Status wechseln, liegt dies höchstwahrscheinlich an Code, der die geänderte API nicht importiert. Dies führt oftmals zu nicht erfüllten Abhängigkeiten.
 
 Eine gelöschte API sollte in einer der vorherigen Versionen als veraltet markiert werden. In diesem Hinweis zur veralteten Version finden Sie u. U. Anweisungen über eine direkte Migration Ihres Codes. Adobe versucht, nach Möglichkeit eine semantische Versionierung zu verwenden, sodass die Versionen Änderungen anzeigen können, die Probleme verursachen.
 
@@ -171,7 +180,7 @@ Führen Sie abschließend eine Überprüfung auf fehlerhafte Konfigurationen dur
 
 ### Fehlerhafte benutzerdefinierte Komponenten, Vorlagen oder Benutzeroberflächenerweiterungen {#malfunctioning-custom-components-templates-or-ui-extensions}
 
-Meistens sind die Grundursachen für diese Probleme dieselben wie für nicht gestartete oder nicht installierte Bundles. Der einzige Unterschied besteht darin, dass die Probleme bei der ersten Verwendung der Komponenten auftreten.
+Meistens sind die Grundursachen für diese Probleme dieselben wie für nicht gestartete oder nicht installierte Pakete. Der einzige Unterschied besteht darin, dass die Probleme bei der ersten Verwendung der Komponenten auftreten.
 
 Bei fehlerhaftem benutzerdefiniertem Code sollten Sie zunächst Feuerproben durchführen, um die Ursache zu identifizieren. Anschließend sollten Sie in diesem Abschnitt [Link] des Artikels nach Empfehlungen suchen, wie das Problem behoben werden kann.
 
@@ -181,7 +190,7 @@ Bei fehlerhaftem benutzerdefiniertem Code sollten Sie zunächst Feuerproben durc
 
 ### Analysieren der Dateien „error.log“ und „upgrade.log“ {#analyzing-the-error.log-and-upgrade.log}
 
-In den meisten Situationen müssen die Protokolle auf Fehler untersucht werden, um die Ursache eines Problems zu ermitteln. Bei Upgrades ist es jedoch ebenfalls erforderlich, Abhängigkeitsfehler zu überwachen, da alte Bundles möglicherweise nicht ordnungsgemäß aktualisiert werden.
+In den meisten Situationen müssen die Protokolle auf Fehler untersucht werden, um die Ursache eines Problems zu ermitteln. Bei Upgrades ist es jedoch ebenfalls erforderlich, Abhängigkeitsfehler zu überwachen, da alte Pakete möglicherweise nicht ordnungsgemäß aktualisiert werden.
 
 Dafür sollten Sie alle Meldungen aus der Datei „error.log“ entfernen, die erwartungsgemäß nicht mit Ihrem Problem in Zusammenhang stehen. Dies ist mit einem Tool wie grep möglich, indem Sie Folgendes verwenden:
 

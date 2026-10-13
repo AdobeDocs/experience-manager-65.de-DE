@@ -4,13 +4,19 @@ description: Erfahren Sie mehr über die Flexibilität des universellen Editors 
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: 28e44586c6a8596037a44fa10d21b3fdcdea1606
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1361'
 ht-degree: 96%
-
 ---
-
 
 # Der universelle Editor {#universal-editor}
 
@@ -40,15 +46,15 @@ Der universelle Editor ist ein Service, der mit AEM zusammenarbeitet, um Inhalte
 Der universelle Editor wird unterstützt von:
 
 * AEM 6.5
-   * Sowohl On-Premise- als auch AMS*-Hosting werden unterstützt.
+  * Sowohl On-Premise- als auch AMS*-Hosting werden unterstützt.
 * [AEM 6.5 LTS](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
-   * Sowohl On-Premise- als auch AMS*-Hosting werden unterstützt.
+  * Sowohl On-Premise- als auch AMS*-Hosting werden unterstützt.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)
 
 Dieses Dokument konzentriert sich auf die Unterstützung von AEM 6.5 durch den universellen Editor. Um den universellen Editor mit AEM 6.5 zu verwenden, benötigen Sie Folgendes:
 
 * AEM 6.5 mit Service Pack 23 oder höher
-   * Die Service Packs 21 und 22 werden auch mit [einem Feature Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip) unterstützt.
+  * Die Service Packs 21 und 22 werden auch mit [einem Feature Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip) unterstützt.
 * Dispatcher ordnungsgemäß konfiguriert
 
 >[!NOTE]
@@ -129,11 +135,11 @@ Die folgenden Variablen stehen zur Definition Ihrer Zuordnungen unter `Universal
 Beispielzuordnungen
 
 * Öffnen Sie alle Seiten unter `/content/foo` in der AEM-Autoreninstanz:
-   * `/content/foo:${author}${path}.html?login-token=${token}`
-   * Dadurch wird `https://localhost:4502/content/foo/x.html?login-token=<token>` geöffnet.
+  * `/content/foo:${author}${path}.html?login-token=${token}`
+  * Dadurch wird `https://localhost:4502/content/foo/x.html?login-token=<token>` geöffnet.
 * Öffnen Sie alle Seiten unter `/content/bar` auf einem NextJS-Remote-Server und geben Sie alle Variablen als Informationen an
-   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
-   * Dadurch wird `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>` geöffnet.
+  * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+  * Dadurch wird `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>` geöffnet.
 
 ### Einrichten des universellen Editor-Dienstes {#set-up-ue}
 

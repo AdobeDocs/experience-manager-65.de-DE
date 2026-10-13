@@ -10,13 +10,22 @@ exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '2502'
+source-wordcount: '2503'
 ht-degree: 99%
-
 ---
-
 # Erstellen von Workflow-Modellen{#creating-workflow-models}
 
 >[!CAUTION]
@@ -31,12 +40,14 @@ Wenn eine Benutzerin bzw. ein Benutzer einen Workflow startet, wird eine Instanz
 
 Wenn Sie ein Workflow-Modell neu erstellen, enthält es zunächst:
 
-* Die Schritte **Fluss-Start** und **Fluss-Ende**.Diese stellen den Anfang und das Ende des Workflows dar. Diese Schritte sind erforderlich und können nicht bearbeitet bzw. entfernt werden.
-* Ein **Teilnehmer**-Beispielschritt namens **Schritt 1**.Dieser Schritt ist so konfiguriert, dass er dem Workflow-Initiator ein Arbeitselement zuordnet. Sie können diesen Schritt nach Bedarf bearbeiten oder löschen und Schritte hinzufügen.
+* Die Schritte **Fluss-Start** und **Fluss-Ende**.
+Diese stellen den Anfang und das Ende des Workflows dar. Diese Schritte sind erforderlich und können nicht bearbeitet bzw. entfernt werden.
+* Ein **Teilnehmer**-Beispielschritt namens **Schritt 1**.
+Dieser Schritt ist so konfiguriert, dass er dem Workflow-Initiator ein Arbeitselement zuordnet. Sie können diesen Schritt nach Bedarf bearbeiten oder löschen und Schritte hinzufügen.
 
 So erstellen Sie einen Workflow mit dem Editor:
 
-1. Öffnen Sie die **Workflow-Modelle**-Konsole über **Tools**, **Workflow**, **Models** oder zum Beispiel: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
+1. Öffnen Sie die **Workflow-Modelle**-Konsole über **Tools**, **Workflow**, **models** oder zum Beispiel: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
 1. Wählen Sie **Erstellen** und dann **Modell erstellen** aus.
 1. Das Dialogfeld **Workflow-Modell** hinzufügen wird angezeigt. Geben Sie **Titel** und **Namen** (optional) ein, bevor Sie **Fertig** auswählen.
 1. Das neue Modell wird nun in der **Workflow-Modelle-Konsole** aufgeführt.
@@ -83,9 +94,9 @@ Wenn Sie ein [Standard- bzw. Legacy-Modell](/help/sites-developing/workflows.md#
 * Der Schritte-Browser (auf der linken Seite) ist nicht verfügbar.
 * Die Symbolleiste weist eine Option zum **Bearbeiten** auf (auf der rechten Seite).
 * Zunächst werden das Modell und seine Eigenschaften im schreibgeschützten Modus wie folgt dargestellt:
-   * Standard-Workflows befinden sich unter `/libs`.
-   * Legacy-Workflows sind in `/etc`
-Durch Auswahl **Bearbeiten** wird:
+  * Standard-Workflows befinden sich unter `/libs`.
+  * Legacy-Workflows sind in `/etc`
+    Durch Auswahl **Bearbeiten** wird:
 * eine Kopie des Workflows unter `/conf` gespeichert
 * der Schritte-Browser verfügbar gemacht
 * es möglich, Änderungen vorzunehmen.
@@ -188,7 +199,8 @@ Befolgen Sie die Konfiguration, wenn ein Workflow-Modell der klassischen Benutze
 
 1. Navigieren Sie wie folgt: **[!UICONTROL Tools > Allgemein > Tagging]**. Wählen Sie **[!UICONTROL Workflow]**.
 
-1. Wählen Sie **[!UICONTROL Erstellen > Tag erstellen]**. Legen Sie den **[!UICONTROL Titel]** als `DAM` und den **[!UICONTROL Namen]** als `dam` fest. Klicken Sie auf **[!UICONTROL Übermitteln]**.   ![Tag im Workflow-Modell erstellen](assets/workflow_create_tag.png)
+1. Wählen Sie **[!UICONTROL Erstellen > Tag erstellen]**. Legen Sie den **[!UICONTROL Titel]** als `DAM` und den **[!UICONTROL Namen]** als `dam` fest. Klicken Sie auf **[!UICONTROL Übermitteln]**.
+   ![Tag im Workflow-Modell erstellen](assets/workflow_create_tag.png)
 
 1. Gehen Sie zu **[!UICONTROL Tools > Workflow > Modelle]**. Wählen Sie **[!UICONTROL Aktivierungsanfrage]** aus und wählen Sie dann **[!UICONTROL Bearbeiten]**.
 
@@ -411,7 +423,8 @@ Um eine ODER-Regel zu definieren, gehen Sie wie folgt vor:
 
    * Definieren Sie dies als **Standardroute**, indem Sie den **Wert** auf `true` festlegen.
 
-   * Geben Sie für **Regel** den Pfad zum Skript an. Beispiel:     `/apps/myapp/workflow/scripts/myscript1.ecma`
+   * Geben Sie für **Regel** den Pfad zum Skript an. Beispiel:
+     `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
    >
@@ -419,7 +432,8 @@ Um eine ODER-Regel zu definieren, gehen Sie wie folgt vor:
 
 1. Bearbeiten Sie die Eigenschaften von **Zweig 2** der **ODER-Teilung**:
 
-   * Geben Sie für **Regel** den Pfad zum anderen Skript an. Beispiel:     `/apps/myapp/workflow/scripts/myscript2.ecma`
+   * Geben Sie für **Regel** den Pfad zum anderen Skript an. Beispiel:
+     `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Legen Sie die Eigenschaften der einzelnen Schritte in jedem Zweig fest. Stellen Sie sicher, dass die Einstellung für **Benutzer/Gruppe** festlegt ist.
 1. Klicken Sie auf **Synchronisieren** (Editor-Symbolleiste), um Ihre Änderungen am Laufzeitmodell beizubehalten.

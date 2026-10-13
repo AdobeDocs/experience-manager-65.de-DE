@@ -1,17 +1,31 @@
 ---
-title: Allgemeine Versionshinweise zu [!DNL Adobe Experience Manager] 6.5
+title: Allgemeine Versionshinweise zu [!DNL Adobe Experience Manager] 6.5
 description: Informationen zu[!DNL Adobe Experience Manager] 6.5 mit Versionshinweisen, Angaben zu neuen Funktionen und zur Installation sowie ausführlichen Änderungsauflistungen.
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4981'
 ht-degree: 96%
-
 ---
-
 # Allgemeine Versionshinweise zu [!DNL Adobe Experience Manager] 6.5{#general-release-notes-for-adobe-experience-manager}
 
 ## Versionshinweise {#release-information}
@@ -320,7 +334,7 @@ Die Aktivierungsfunktion von AEM 6.5 Communities unterstützt die Engine „Sha
 
 ### [!DNL Experience Manager Assets] {#experience-manager-assets}
 
-AEM 6.5 beinhaltet die folgenden neuen Funktionen und Erweiterungen mit denen AEM-Anwender, DAM-Anwender und Anwender mit entsprechenden Kreativ- sowie Marketingfunktionen ihre Produktivität steigern können.
+AEM 6.5 beinhaltet die folgenden neuen Funktionen und Erweiterungen mit denen AEM-Anwender, DAM-Anwender und Anwender mit entsprechenden Kreativ- sowie Marketing-Rollen ihre Produktivität steigern können.
 
 #### Integration mit [!DNL Adobe Creative Cloud] und kreative Workflows {#integration-with-adobe-creative-cloud-and-creative-workflows}
 

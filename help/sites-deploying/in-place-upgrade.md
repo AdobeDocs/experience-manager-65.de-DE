@@ -6,18 +6,27 @@ feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 100%
-
+source-wordcount: '1265'
+ht-degree: 89%
 ---
-
 # Durchführen einer ersetzenden Aktualisierung{#performing-an-in-place-upgrade}
 
 >[!NOTE]
 >
->Auf dieser Seite wird das Aktualisierungsverfahren für AEM 6.5 beschrieben. Wenn Ihre Installation auf einem Anwendungs-Server bereitgestellt wird, lesen Sie [Aktualisierungsschritte für Anwendungs-Server-Installationen](/help/sites-deploying/app-server-upgrade.md).
+>Auf dieser Seite wird das Upgrade-Verfahren für AEM 6.5 beschrieben. Wenn Sie eine Installation haben, die auf einem Anwendungs-Server bereitgestellt wird, lesen Sie [Upgrade-Schritte für Anwendungs-Server-Installationen](/help/sites-deploying/app-server-upgrade.md).
 
 ## Schritte vor der Aktualisierung {#pre-upgrade-steps}
 
@@ -33,9 +42,9 @@ Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführe
 
 ## Vorbereitung der „AEM Quickstart“-JAR-Datei {#prep-quickstart-file}
 
-1. Beenden Sie die Instanz, falls sie gerade ausgeführt wird. 
+1. Stoppen Sie die Instanz, falls sie gerade ausgeführt wird.
 
-1. Laden Sie die neue AEM-JAR-Datei herunter und ersetzen Sie damit die alte Datei außerhalb des Ordners `crx-quickstart`. 
+1. Laden Sie die neue AEM-JAR-Datei herunter und ersetzen Sie damit die alte Datei außerhalb des Ordners `crx-quickstart`.
 
 1. Entpacken Sie die Quickstart-JAR-Datei, indem Sie Folgendes ausführen:
 
@@ -45,7 +54,7 @@ Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführe
 
 ## Migration des Content-Repositorys {#content-repository-migration}
 
-Diese Migration ist nicht erforderlich, wenn Sie ein Upgrade von AEM 6.3 durchführen. Für Versionen älter als 6.3 bietet Adobe ein Tool, mit dem Sie das Repository in die neue Version von Oak Segment Tar von AEM 6.3 migrieren können. Es wird als Teil des Schnellstartpakets bereitgestellt und ist für alle Upgrades, die TarMK verwenden, obligatorisch. Upgrades für Umgebungen, die MongoMK verwenden, erfordern keine Repository-Migration. Weitere Informationen zu den Vorteilen des neuen Segment-TAR-Formats finden Sie in den [häufig gestellten Fragen zur Migration zu Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
+Diese Migration ist nicht erforderlich, wenn Sie ein Upgrade von AEM 6.3 durchführen. Für ältere Versionen als 6.3 bietet Adobe ein Tool, mit dem Sie das Repository zur neuen Version des Oak Segment Tar in AEM 6.3 migrieren können. Es wird als Teil des Schnellstart-Pakets bereitgestellt und ist für alle Upgrades, die TarMK verwenden werden, obligatorisch. Upgrades für Umgebungen, die MongoMK verwenden, erfordern keine Repository-Migration. Weitere Informationen zu den Vorteilen des neuen Segment-TAR-Formats finden Sie in den [häufig gestellten Fragen zur Migration zu Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
 
 Die tatsächliche Migration wird mithilfe der standardmäßigen quickstart-JAR-Datei für AEM durchgeführt, und zwar mit der neuen Option `-x crx2oak`, mit der das crx2oak-Tool ausgeführt wird, um die Aktualisierung einfacher und zuverlässiger zu machen.
 
@@ -67,8 +76,8 @@ Dabei werden `<<YOUR_PROFILE>>` und `<<ADDITIONAL_FLAGS>>` durch das Profil und 
 <table>
  <tbody>
   <tr>
-   <td><strong>Quell-Repository </strong></td>
-   <td><strong>Ziel-Repository </strong></td>
+   <td><strong>Quell-Repository</strong></td>
+   <td><strong>Ziel-Repository</strong></td>
    <td><strong>Profil</strong></td>
    <td><strong>Zusätzliche Flags</strong><br /> </td>
   </tr>
@@ -107,13 +116,13 @@ Dabei werden `<<YOUR_PROFILE>>` und `<<ADDITIONAL_FLAGS>>` durch das Profil und 
 
 **Dabei gilt:**
 
-* `mongo-host` ist die IP-Adresse des MongoDB-Servers (z. B. 127.0.0.1)
+* `mongo-host` ist die IP des MongoDB-Servers (z. B. 127.0.0.1)
 
 * `mongo-port` ist der MongoDB-Server-Port (z. B.: 27017)
 
 * `mongo-database-name` steht für den Namen der Datenbank (z. B.: aem-author)
 
-**Möglicherweise benötigen Sie auch zusätzliche Schalter für folgende Szenarien:** 
+**Möglicherweise benötigen Sie auch zusätzliche Schalter für folgende Szenarien:**
 
 * Wenn Sie das Upgrade auf einem Windows-System durchführen, auf dem die Java-Speicherzuordnung nicht korrekt durchgeführt wird, fügen Sie dem Befehl den Parameter `--disable-mmap` hinzu.
 
@@ -129,7 +138,7 @@ Prüfen Sie die Konfigurationsdateien unter dem Ordner `crx-quickstart/install`.
 
 ## Fehlerbehebung bei Migrationsproblemen {#troubleshooting-migration-issues}
 
-Überspringen Sie diesen Abschnitt, wenn Sie ein Upgrade von 6.3 durchführen. Während die mitgelieferten crx2oak-Profile die Anforderungen der meisten Kundinnen und Kunden erfüllen sollten, gibt es Fälle, in denen zusätzliche Parameter erforderlich sind. Wenn während der Migration ein Fehler auftritt, sind für manche Aspekte Ihrer Umgebung möglicherweise zusätzliche Konfigurationsoptionen nötig. Wenn dies der Fall ist, werden Sie wahrscheinlich auf den folgenden Fehler stoßen:
+Überspringen Sie diesen Abschnitt, wenn Sie ein Upgrade von 6.3 durchführen. Die bereitgestellten CRX2OAK-Profile sollten zwar den Anforderungen der meisten Kundinnen und Kunden entsprechen, es gibt jedoch Fälle, in denen zusätzliche Parameter erforderlich sind. Wenn während der Migration ein Fehler auftritt, sind für manche Aspekte Ihrer Umgebung möglicherweise zusätzliche Konfigurationsoptionen nötig. Wenn dies der Fall ist, werden Sie wahrscheinlich auf den folgenden Fehler stoßen:
 
 **Checkpoints werden nicht kopiert, da kein externer Datenspeicher angegeben wurde. Dadurch wird das gesamte Repository beim ersten Start neu indiziert. Verwenden Sie „--skip-checkpoints“, um die Migration zu erzwingen, oder finden Sie weitere Informationen unter https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration.**
 
@@ -171,7 +180,7 @@ Um das Upgrade durchzuführen, muss AEM mithilfe der JAR-Datei gestartet werden,
 
 Beachten Sie, dass der Start von AEM über das Startskript das Upgrade nicht startet. Die meisten Kundinnen und Kunden starten AEM per Startskript und haben dieses Startskript so angepasst, dass es Schalter für Umgebungskonfigurationen wie Speichereinstellungen, Sicherheitszertifikate usw. enthält. Aus diesem Grund empfiehlt Adobe die folgende Vorgehensweise, um den richtigen Upgrade-Befehl zu ermitteln:
 
-1. Führen Sie in einer aktiven AEM-Instanz Folgendes in der Befehlszeile aus: 
+1. Führen Sie in einer aktiven AEM-Instanz Folgendes in der Befehlszeile aus:
 
    ```shell
    ps -ef | grep java

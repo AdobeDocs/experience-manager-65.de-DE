@@ -9,13 +9,27 @@ role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '9089'
 ht-degree: 100%
-
 ---
-
 # Arbeiten mit dem AEM Forms-Repository {#working-with-aem-forms-repository}
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
@@ -1076,7 +1090,7 @@ Sperren von Ressourcen mit der Repository-Service-API (Java):
 
    * Der URI der Ressource.
    * Der Sperrbereich. Da in diesem Beispiel die Ressource für die ausschließliche Verwendung gesperrt wird, wird der Sperrbereich als `com.adobe.repository.infomodel.bean.Lock.SCOPE_EXCLUSIVE` angegeben.
-   * Die Sperrtiefe. In diesem Beispiel wird die Sperrtiefe mit `Lock.DEPTH_ZERO` angegeben, da die Sperre nur für die betreffende Ressource und nicht für ihre Mitglieder oder Unterelemente gelten soll.
+   * Die Sperrtiefe. In diesem Beispiel wird die Sperrtiefe mit `Lock.DEPTH_ZERO` angegeben, da die Sperre nur für die betreffende Ressource und nicht für ihre Mitglieder oder untergeordneten Elemente gelten soll.
 
    >[!NOTE]
    >
@@ -1123,7 +1137,7 @@ Sperren Sie Ressourcen mithilfe der Repository Service API (Web Service):
 
    * Der URI der Ressource.
    * Der Sperrbereich. Da in diesem Beispiel die Ressource für die ausschließliche Verwendung gesperrt wird, wird der Sperrbereich als `11` angegeben.
-   * Die Sperrtiefe. In diesem Beispiel wird die Sperrtiefe mit `2` angegeben, da die Sperre nur für die betreffende Ressource und nicht für ihre Mitglieder oder Unterelemente gelten soll.
+   * Die Sperrtiefe. In diesem Beispiel wird die Sperrtiefe mit `2` angegeben, da die Sperre nur für die betreffende Ressource und nicht für ihre Mitglieder oder untergeordneten Elemente gelten soll.
    * Ein `int`-Wert, der die Anzahl der Sekunden angibt, bis die Sperre abläuft. In diesem Beispiel wird der Wert von `1000` verwendet.
    * Übergeben Sie `null` als letzten Parameter.
 

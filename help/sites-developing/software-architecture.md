@@ -9,18 +9,27 @@ exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
-
+source-wordcount: '623'
+ht-degree: 95%
 ---
-
 # Software-Architektur{#software-architecture}
 
 ## Auslegen des Designs auf Upgrades {#design-for-upgrades}
 
-Bei der Erweiterung standardmäßiger Verhaltensweisen ist es wichtig, Upgrades zu berücksichtigen. Nehmen Sie Anpassungen immer im Verzeichnis /apps vor und überlagern Sie entweder die entsprechenden Knoten im Verzeichnis /libs oder verwenden Sie „sling:resourceSuperType“, um das Standardverhalten zu erweitern. Zwar können Änderungen erforderlich sein, um neue AEM-Versionen zu unterstützen, doch die neue Version sollte Ihre Anpassungen nicht überschreiben, wenn diese Best Practice befolgt wird.
+Bei der Erweiterung standardmäßiger Verhaltensweisen ist es wichtig, Upgrades zu berücksichtigen. Nehmen Sie Anpassungen immer im Verzeichnis /apps vor und überlagern Sie entweder die entsprechenden Knoten im Verzeichnis /libs oder verwenden Sie Sling:resourceSuperType, um das Standardverhalten zu erweitern. Zwar können Änderungen erforderlich sein, um neue AEM-Versionen zu unterstützen, doch die neue Version sollte Ihre Anpassungen nicht überschreiben, wenn diese Best Practice befolgt wird.
 
 ### Wiederverwenden von Vorlagen und Komponenten, sofern möglich {#reuse-template-and-components-when-possible}
 
@@ -28,7 +37,7 @@ Dadurch lässt sich das Look-and-Feel der Website vereinheitlichen und die Codep
 
 ### Gestalten von Vorlagen-Designs {#design-template-designs}
 
-Indem Sie die Komponenten definieren, die in den einzelnen Absatzsystemen auf der Seite enthalten sein können, können Sie Einfluss darauf nehmen, dass das Erscheinungsbild der Seite einheitlich ist. Durch das Beschränken des Zugriffs auf das Design auf Seiten können „Superautoren“ die zulässigen Komponenten je Seite ohne Unterstützung eines Entwicklers ändern und gleichzeitig sicherstellen, dass die anderen Autoren die Unternehmensstandards einhalten.
+Indem Sie die Komponenten definieren, die in den einzelnen Absatzsystemen auf der Seite enthalten sein können, können Sie Einfluss darauf nehmen, dass das Erscheinungsbild der Site einheitlich ist. Durch das Beschränken des Zugriffs auf das Design auf Seiten können „Superautoren“ die zulässigen Komponenten je Seite ohne Unterstützung eines Entwicklers ändern und gleichzeitig sicherstellen, dass die anderen Autoren die Unternehmensstandards einhalten.
 
 ### Entwickeln einer SOLID-Architektur {#develop-a-solid-architecture}
 

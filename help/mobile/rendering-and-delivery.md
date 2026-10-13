@@ -8,13 +8,17 @@ exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 6%
-
+source-wordcount: '571'
+ht-degree: 7%
 ---
-
 # Rendering und Versand{#rendering-and-delivery}
 
 {{ue-over-mobile}}
@@ -33,7 +37,7 @@ Das folgende Diagramm zeigt das Rendering von Content Services.
 
 ## JSON wird angefordert {#requesting-json}
 
-Verwenden Sie **&lt;RESOURCE.caas`[.<EXPORT-CONFIG][.&lt;DEPTH-INT&gt;]`.json** um JSON anzufordern.
+Verwenden Sie **&lt;RESOURCE.caas`[.<EXPORT-CONFIG][.&lt;DEPTH-INT&gt;]`.json**, um JSON anzufordern.
 
 <table>
  <tbody>
@@ -156,7 +160,7 @@ Die folgende Tabelle zeigt die Eigenschaften:
    <td>Zeichenfolge[] </td>
    <td>–</td>
    <td>sling:resourceType</td>
-   <td>Für die folgenden Sling-Ressourcentypen geben Sie nicht den standardmäßigen Cas-JSON-Export zurück.<br /> Geben Sie einen Kunden-JSON-Export zurück, indem Sie die Ressource als <br /> &lt;RESOURCE&gt; rendern.&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>Geben Sie für die folgenden Sling-Ressourcentypen nicht den standardmäßigen CaaS-JSON-Export zurück.<br /> Geben Sie einen Kunden-JSON-Export zurück, indem Sie die Ressource als &lt;RESOURCE&gt; <br />.&lt;SELECTOR_TO_INC&gt;.json rendern. </td>
   </tr>
  </tbody>
 </table>
@@ -172,7 +176,7 @@ Content Services umfassen zwei Exportkonfigurationen:
 
 Die standardmäßige Content Services-Exportkonfiguration wird angewendet, wenn im angeforderten URI eine Konfiguration angegeben ist.
 
-&lt;RESOURCE>.[.&lt;DEPTH-INT>].json
+&lt;RESOURCE>.caas[.&lt;DEPTH-INT>].json
 
 <table>
  <tbody>

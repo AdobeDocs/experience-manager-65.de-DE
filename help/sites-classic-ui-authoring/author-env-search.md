@@ -10,13 +10,22 @@ exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 100%
-
+source-wordcount: '474'
+ht-degree: 92%
 ---
-
 # Suchen{#searching}
 
 Die Autorenumgebung von AEM bietet abhängig vom Ressourcentyp verschiedene Möglichkeiten zur Inhaltssuche.
@@ -31,7 +40,7 @@ Um den Suchbereich aufzurufen, klicken Sie in der jeweiligen Konsole im linken B
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
-Im Suchbereich können Sie alle Seiten Ihrer Website durchsuchen. Er enthält Felder und Widgets für folgende Zwecke:
+Im Suchbereich können Sie alle Seiten Ihrer Website durchsuchen. Es enthält Felder und Widgets für Folgendes:
 
 * **Volltext**: Nach dem angegebenen Text suchen
 * **Geändert nach/vor**: Nur nach den Seiten suchen, die zwischen den bestimmten Datumsangaben geändert wurden
@@ -42,11 +51,11 @@ Im Suchbereich können Sie alle Seiten Ihrer Website durchsuchen. Er enthält Fe
 >
 >Wenn Ihre Instanz für die [Lucene-Recherche](/help/sites-deploying/queries-and-indexing.md) konfiguriert ist, können Sie folgende Elemente unter **Volltext** verwenden:
 >
->* [Platzhalter](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches) 
+>* [Platzhalter](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [Boolesche Operatoren](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
 >
 >* [Reguläre Ausdrücke](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
->* [Feld-Gruppierung](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping) 
+>* [Feld-Gruppierung](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
 >* [Verstärken](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
 >
 
@@ -75,7 +84,7 @@ In der Konsole **Websites** ermöglicht Ihnen die Menüoption **Suchen und Erset
    * gibt an, ob bei der Suche die Groß-/Kleinschreibung beachtet werden soll
    * gibt an, ob nur ganze Wörter gesucht werden sollen (andernfalls werden auch Unterzeichenfolgen gesucht)
 
-   Durch Klicken auf **Vorschau** werden die Stellen aufgelistet, an denen der Begriff gefunden wurde. Sie können bestimmte Instanzen markieren bzw. deren Markierung aufheben:
+   Durch Klicken auf **Vorschau** wird aufgelistet, wo der Begriff gefunden wurde. Sie können bestimmte Instanzen, die ersetzt werden sollen, auswählen/löschen:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 

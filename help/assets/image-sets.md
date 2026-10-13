@@ -10,13 +10,29 @@ feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: e2dc1259-9034-40fc-a518-b92a34fe6642
+    internal-label: Image sets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2274'
-ht-degree: 99%
-
+source-wordcount: '2299'
+ht-degree: 100%
 ---
-
 # Bild-Sets {#image-sets}
 
 Über Bild-Sets erhalten Benutzerinnen und Benutzer ein integriertes Anwenderlebnis, bei dem sie unterschiedliche Ansichten eines Elements durch Auswählen einer Miniatur anzeigen können. Mit Bild-Sets können Sie alternative Ansichten eines Elements darstellen. Dabei enthält der Viewer Zoomtools, mit denen Bilder genauer betrachtet werden können.
@@ -131,8 +147,8 @@ Sie können Bild-Sets über die Benutzeroberfläche oder die API erstellen. In d
 
 >[!NOTE]
 >
->Sie können Bildsets auch automatisch über [Stapelsatzvorgaben“ &#x200B;](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
->**Wichtig** Stapelsätze werden vom IPS (Image Production System) im Rahmen der Asset-Aufnahme erstellt und sind nur im Scene7-Modus von Dynamic Media verfügbar.
+>Sie können Bild-Sets auch automatisch über [Stapelsatzvorgaben](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) erstellen.
+>**Wichtig:** Stapelsätze werden vom IPS (Image Production System) im Rahmen der Asset-Aufnahme erstellt und sind nur im Scene7-Modus von Dynamic Media verfügbar.
 
 Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Reihenfolge hinzugefügt. Sie können die Anordnung oder Sortierung der Assets manuell ändern, nachdem sie hinzugefügt wurden.
 
@@ -193,7 +209,7 @@ Siehe auch [Grenzwerte für Dynamic Media](/help/assets/limitations.md).
 
    >[!NOTE]
    >
-   >Beim Erstellen des Bild-Sets können Sie die Miniaturansicht des Bild-Sets ändern oder zulassen, dass Experience Manager die Miniaturansicht anhand der Assets im Bild-Set automatisch auswählt. Wenn Sie eine Miniaturansicht auswählen möchten, wählen Sie **[!UICONTROL Miniatur ändern]** über dem Feld „Titel“ auf der Seite des Bild-Set-Editors aus und dann ein Bild. (Sie können auch zu anderen Ordnern navigieren, um dort Bilder zu suchen.) Wenn Sie eine Miniatur ausgewählt haben und möchten, dass Adobe Experience Manager eine Miniatur aus dem Bild-Set generiert, wählen Sie **[!UICONTROL Zu automatischer Miniatur]**&#x200B;**[!UICONTROL wechseln]** aus.
+   >Beim Erstellen des Bild-Sets können Sie die Miniaturansicht des Bild-Sets ändern oder zulassen, dass Experience Manager die Miniaturansicht anhand der Assets im Bild-Set automatisch auswählt. Wenn Sie eine Miniaturansicht auswählen möchten, wählen Sie **[!UICONTROL Miniatur ändern]** über dem Feld „Titel“ auf der Seite des Bild-Set-Editors aus und dann ein Bild. (Sie können auch zu anderen Ordnern navigieren, um dort Bilder zu suchen.) Wenn Sie eine Miniatur ausgewählt haben und möchten, dass Adobe Experience Manager eine Miniatur aus dem Bild-Set generiert, wählen Sie **[!UICONTROL Zu automatischer Miniatur]****[!UICONTROL wechseln]** aus.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus. Das neu erstellte Bild-Set wird in dem Ordner angezeigt, in dem es erstellt wurde.
 

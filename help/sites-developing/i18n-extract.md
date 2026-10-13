@@ -9,13 +9,22 @@ exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
-
+source-wordcount: '482'
+ht-degree: 96%
 ---
-
 # Extrahieren von Zeichenfolgen zum Übersetzen{#extracting-strings-for-translating}
 
 Verwenden Sie xgettext-maven-plugin, um Zeichenfolgen, die übersetzt werden müssen, aus Ihrem Quell-Code zu extrahieren. Das Maven-Plug-in extrahiert Zeichenfolgen in eine XLIFF-Datei, die Sie zur Übersetzung senden. Zeichenfolgen werden aus den folgenden Quellen extrahiert:
@@ -24,7 +33,7 @@ Verwenden Sie xgettext-maven-plugin, um Zeichenfolgen, die übersetzt werden mü
 * JavaScript-Quelldateien
 * XML-Darstellungen von SVN-Ressourcen (JCR-Knoten)
 
-## Konfigurieren der Zeichenfolgenextrahierung {#configuring-string-extraction}
+## Konfigurieren der Zeichenfolgenextraktion {#configuring-string-extraction}
 
 Konfigurieren Sie, wie das xgettext-maven-plugin-Tool Zeichenfolgen für Ihr Projekt extrahiert.
 
@@ -66,10 +75,10 @@ Das Muster einer Regel wird verwendet, um die Namen der Dateien abzugleichen, di
 | Präfix | Ergebnis |
 |---|---|
 | / | Gibt einen JCR-Pfad an. Daher gleicht dieses Präfix Dateien unter dem Verzeichnis jcr_root ab. |
-| &amp;ast; | Gibt eine reguläre Datei im Dateisystem an. |
+| &ast; | Gibt eine reguläre Datei im Dateisystem an. |
 | none | Kein Präfix oder ein Muster, das mit einem Ordner oder einem Dateinamen beginnt, gibt eine reguläre Datei im Dateisystem an. |
 
-In einem Muster steht das Zeichen / für ein Unterverzeichnis und das Zeichen &amp;ast; ist ein Platzhalter für eine beliebige Zeichenfolge. In der folgenden Tabelle sind einige Beispielregeln aufgeführt.
+In einem Muster steht das Zeichen / für ein Unterverzeichnis und das Zeichen &ast; ist ein Platzhalter für ein beliebiges Zeichen. In der folgenden Tabelle sind einige Beispielregeln aufgeführt.
 
 <table>
  <tbody>

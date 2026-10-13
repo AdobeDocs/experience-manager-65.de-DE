@@ -9,13 +9,29 @@ exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '730'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 88%
 ---
-
 # Konfigurieren einer zertifikatbasierten Authentifizierung {#configuring-certificate-based-authentication}
 
 >[!NOTE]
@@ -51,7 +67,7 @@ Wenn Sie ein Zertifikat testen, lädt die Benutzerverwaltung die Zertifikatüber
 1. Klicken Sie auf „Neue Zertifikatzuordnung“ und wählen Sie in der Liste „Für Herausgeber“ den in der Trust Store-Verwaltung konfigurierten Zertifikatalias aus.
 1. Weisen Sie eines der Zertifikatattribute einem Benutzerattribut zu. Sie können beispielsweise den allgemeinen Namen des Zertifikats der Anmelde-ID der Person zuordnen.
 
-   Wenn sich der Inhalt des Attributs im Zertifikat von dem Inhalt des Benutzerattributs in der Benutzerverwaltungsdatenbank unterscheidet, können Sie einen regulären Java-Ausdruck (Java Regular Expression, Regex) verwenden, um die beiden Attribute abzustimmen. Wenn beispielsweise die allgemeinen Namen der Zertifikate *Alex Pink (Authentifizierung)* und *Alex Pink (Signieren)* lauten und der allgemeine Name in der Benutzerverwaltungsdatenbank *Alex Pink* ist, sollten Sie den erforderlichen Teil des Zertifikatattributs (in diesem Beispiel *Alex Pink*) über einen regulären Ausdruck extrahieren. Der von Ihnen angegebene reguläre Ausdruck muss der Java-Regex-Spezifikation entsprechen.
+   Wenn sich der Inhalt des Attributs im Zertifikat von dem Inhalt des Benutzerattributs in der Benutzerverwaltungsdatenbank unterscheidet, können Sie einen regulären Java-Ausdruck (Java Regular Expression, Regex) verwenden, um die beiden Attribute abzustimmen. Wenn beispielsweise die allgemeinen Namen der Zertifikate Namen wie *Alex Pink (Authentifizierung)* und *Alex Pink (Signierung)* sind und der allgemeine Name in der User Management-Datenbank *Alex Pink* lautet, verwenden Sie einen Regex, um den erforderlichen Teil des Zertifikatattributs zu extrahieren (in diesem Beispiel *Alex Pink*.) Der von Ihnen angegebene reguläre Ausdruck muss der Java-Regex-Spezifikation entsprechen.
 
    Sie können den Ausdruck transformieren, indem Sie im Feld „Benutzerdefinierte Reihenfolge“ die Reihenfolge der Gruppen angeben. Die benutzerdefinierte Reihenfolge wird mit der Methode `java.util.regex.Matcher.replaceAll()` verwendet. Das Verhalten entspricht dem Verhalten der Methode, und die Eingabezeichenfolge (die benutzerdefinierte Reihenfolge) muss entsprechend angegeben werden.
 
@@ -60,7 +76,7 @@ Wenn Sie ein Zertifikat testen, lädt die Benutzerverwaltung die Zertifikatüber
    Sie können folgende Zeichen in dem regulären Ausdruck verwenden:
 
    * . (alle Zeichen)
-   * &amp;ast; (0 oder mehr Vorkommen)
+   * &ast; (0 oder mehr Vorkommen)
    * () (die Gruppe in Klammern angeben)
    * \ (wird verwendet, um aus einem Regex-Zeichen ein reguläres Zeichen zu machen)
    * $n (wird verwendet, um auf die n-te Gruppe zu verweisen)
@@ -69,21 +85,21 @@ Wenn Sie ein Zertifikat testen, lädt die Benutzerverwaltung die Zertifikatüber
 
    * So extrahieren Sie „Alex Pink“ aus „Alex Pink (Authentifizierung)“:
 
-     **Regex:** (.&amp;ast;) \(Authentifizierung\)
+     **Regex:** (.&ast;) \(Authentifizierung\)
 
    * So extrahieren Sie „Alex Pink“ aus „Alex (Authentifizierung) Pink“:
 
-     **Regex:** (.&amp;ast;)\(Authentifizierung\) (.&amp;ast;)
+     **Regex:** (.&ast;)\(Authentication\) (.&ast;)
 
    * So extrahieren Sie „Pink Alex“ aus „Alex (Authentifizierung) Pink“:
 
-     **Regex:** (.&amp;ast;)\(Authentifizierung\) (.&amp;ast;)
+     **Regex:** (.&ast;)\(Authentication\) (.&ast;)
 
      Benutzerdefinierte Reihenfolge: $2 $1 (zweite Gruppe zurückgeben, verkettet mit der ersten Gruppe, erfasst durch Leerzeichen)
 
-   * So extrahieren Sie „apink@sampleorg.com“ aus „smtp:apink@sampleorg.com“:
+   * So extrahieren Sie &quot;apink@sampleorg.com&quot; aus „smtp:apink@sampleorg.com“
 
-     **Regex:** smtp:(.&amp;ast;)
+     **Regex:** smtp:(.&ast;)
 
    Weitere Informationen zur Verwendung regulärer Ausdrücke finden Sie im [Java-Tutorial zu regulären Ausdrücken](https://java.sun.com/docs/books/tutorial/essential/regex/).
 

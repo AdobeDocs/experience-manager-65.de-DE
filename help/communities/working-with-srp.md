@@ -10,20 +10,27 @@ role: Admin
 exl-id: e29aae44-67be-43d2-8004-c986412d9e63
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '912'
 ht-degree: 0%
-
 ---
-
 # SRP - Community-Inhaltsspeicher {#srp-community-content-storage}
 
 ## Einführung {#introduction}
 
 Ab AEM Communities 6.1 werden benutzergenerierte Inhalte in einem einzigen, gemeinsamen Speicher gespeichert, der von einem Speicherressourcenanbieter (SRP) bereitgestellt wird. Es gibt mehrere SRP-Optionen, aus denen Sie wählen können, z. B. ASRP, MSRP und JSRP.
 
-Im Gegensatz zu früheren Versionen gibt es keine Rückwärts-/Vorwärtsreplikation von UGC über AEM-Instanzen hinweg. Stattdessen ermöglicht der SRP den direkten Zugriff auf den benutzergenerierten Inhalt für CRUD-Vorgänge (Create, Read, Update, and Delete, Erstellen, Lesen, Aktualisieren und Löschen) von allen Autoren- und Veröffentlichungsinstanzen, mit Ausnahme von JSRP.
+Im Gegensatz zu früheren Versionen gibt es keine Rückwärts-/Vorwärtsreplikation von benutzergenerierten Inhalten über AEM-Instanzen hinweg. Stattdessen ermöglicht der SRP den direkten Zugriff auf den benutzergenerierten Inhalt für CRUD-Vorgänge (Create, Read, Update, and Delete, Erstellen, Lesen, Aktualisieren und Löschen) von allen Autoren- und Veröffentlichungsinstanzen, mit Ausnahme von JSRP.
 
 Nachstehend sind die [Merkmale jeder SRP-Option](#characteristics-of-srp-options) aufgeführt, die für den Entscheidungsprozess bei der Auswahl des geeigneten SRP und der [&#x200B; Bereitstellung von entscheidender Bedeutung &#x200B;](/help/communities/topologies.md).
 
@@ -43,7 +50,7 @@ Einzelheiten zur Verwendung von SRP für UGC finden Sie unter [Speicherressource
 
 [ASRP - Adobe Storage Resource Provider](/help/communities/asrp.md)
 
-Mit dieser Option wird der benutzergenerierte Inhalt (UGC) remote in einem Cloud-Service gespeichert, der von Adobe gehostet und verwaltet wird. Sie erfordert eine zusätzliche Lizenz und arbeitet mit einem Kontovertreter zusammen, um das Konto für diese spezifische Lizenz bereitzustellen. ASRP erfordert:
+Mit dieser Option wird der benutzergenerierte Inhalt (UGC) remote in einem von Adobe gehosteten und verwalteten Cloud-Service gespeichert. Sie erfordert eine zusätzliche Lizenz und arbeitet mit einem Kontovertreter zusammen, um das Konto für diese spezifische Lizenz bereitzustellen. ASRP erfordert:
 
 * Ein zugehöriger Cloud-Service, der von Adobe zum Speichern von Community-Inhalten bereitgestellt und unterstützt wird.
 * Auswahl eines Rechenzentrums in einer bestimmten Region (USA, EMEA, APAC)
@@ -122,7 +129,7 @@ Wenn keine Speicheroption aktiv ausgewählt ist, ist JSRP standardmäßig aktivi
 
 In der Autorenumgebung erstellt ein Autor Seiteninhalte und repliziert diese in der Veröffentlichungsumgebung. Wenn eine Seite eine interaktive AEM Communities-Funktion enthält, z. B. Kommentare, Reviews, Foren, Blogs oder QnA, führt die Interaktion von Mitgliedern (angemeldeten Site-Besuchern) in einer Veröffentlichungsinstanz dazu, dass benutzergenerierte Inhalte in die Veröffentlichungsumgebung eingegeben werden.
 
-Zuvor wurden diese Community-Inhalte umgekehrt von der Autoreninstanz auf die Veröffentlichungsinstanz und von der Autoreninstanz auf die Veröffentlichungsinstanz repliziert. Es war problematisch, die Konsistenz zwischen AEM-Instanzen bei der Rückwärts- und Vorwärtsreplikation zu gewährleisten.
+Zuvor wurden diese Community-Inhalte umgekehrt von der Autoreninstanz auf die Veröffentlichungsinstanz und von der Autoreninstanz auf die Veröffentlichungsinstanz repliziert. Es war problematisch, die Konsistenz zwischen AEM-Instanzen mit der Rückwärts- und Vorwärtsreplikation aufrechtzuerhalten.
 
 Ab AEM Communities 6.1 ist die Replikation von benutzergenerierten Inhalten nicht mehr erforderlich, da für benutzergenerierten Inhalt wie oben beschrieben gemeinsam genutzter Speicher verwendet wird.
 
@@ -136,6 +143,6 @@ Ab AEM Communities 6.1 werden benutzerbezogene Daten mithilfe einer Sling-Vertei
 
 ### Aktualisieren auf AEM Communities 6.5 {#upgrading-to-aem-communities}
 
-Wenn beim Upgrade auf AEM 6.5 Communities bereits vorhandene benutzergenerierte Inhalte beibehalten werden müssen, sollten Schritte unternommen werden, je nachdem, ob die AEM 5.6.1- oder AEM 6.0-Community Adobe-On-Demand-Speicher oder On-Premise-Speicher von benutzergenerierten Inhalten verwendet hat.
+Wenn beim Upgrade auf AEM 6.5 Communities bereits vorhandene benutzergenerierte Inhalte beibehalten werden müssen, sollten Schritte unternommen werden, je nachdem, ob die AEM 5.6.1- oder AEM 6.0-Community Adobe On-Demand-Speicher oder On-Premise-Speicher von benutzergenerierten Inhalten verwendet hat.
 
 Weitere Informationen finden Sie unter [Aktualisieren auf AEM Communities 6.5](/help/communities/upgrade.md).

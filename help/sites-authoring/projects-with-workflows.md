@@ -9,13 +9,28 @@ exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 100%
-
+source-wordcount: '787'
+ht-degree: 96%
 ---
-
 
 # Arbeiten mit Projekt-Workflows {#working-with-project-workflows}
 
@@ -37,14 +52,14 @@ Je nachdem, welche Projektvorlage Sie auswählen, stehen Ihnen bestimmte Workflo
 | Produkt-Fotoshooting (Commerce) |  |  | x |  |
 | Projektgenehmigung | x |  |  |  |
 | Launch anfragen | x |  |  |  |
-| Einstiegsseite anfragen | x |  |  |  |
+| Landingpage anfragen | x |  |  |  |
 | E-Mail anfragen | x |  |  |  |
-| DAM-Sprachkopie erstellen&amp;ast; |  |  |  | x |
-| DAM-Sprachkopie erstellen und übersetzen&amp;ast; |  |  |  | x |
+| DAM Create Language Copy&ast; |  |  |  | x |
+| DAM - Erstellen und Übersetzen von Sprachkopien&ast; |  |  |  | x |
 
 >[!NOTE]
 >
->&amp;ast; Diese Workflows werden nicht auf der Kachel **Workflow** in Projekten gestartet. Weitere Informationen finden Sie unter [Erstellen von Sprachkopien für Assets](/help/sites-administering/tc-manage.md).
+>&ast; Diese Workflows werden in Projekten nicht über die Kachel **Workflow** gestartet. Weitere Informationen finden Sie unter [Erstellen von Sprachkopien für Assets](/help/sites-administering/tc-manage.md).
 
 Das Starten und Abschließen eines Workflows ist unabhängig vom gewählten Workflow immer gleich. Nur die Schritte ändern sich.
 

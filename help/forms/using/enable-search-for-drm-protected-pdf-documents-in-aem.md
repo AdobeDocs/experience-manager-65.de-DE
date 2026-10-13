@@ -10,13 +10,26 @@ feature: Document Security
 exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 100%
-
+source-wordcount: '743'
+ht-degree: 98%
 ---
-
 # AEM zum Durchsuchen von durch Document Security geschützten PDF-Dokumenten aktivieren{#enable-aem-to-search-document-security-protected-pdf-documents}
 
 Mithilfe der AEM-Suche kann nach AEM-Assets gesucht werden. Zudem kann eine Textsuche für verschiedene häufig verwendete Dokumentformate wie einfache Textdateien, Microsoft Office-Dokumente und PDF-Dokumente durchgeführt werden. Sie können die native Suche erweitern, um eine Volltextsuche in [mit der AEM-Dokumentensicherheit geschützten PDF-Dokumenten](../../forms/using/admin-help/document-security.md) durchzuführen. Damit AEM die Volltextsuche in solchen Dokumenten durchführen kann, führen Sie die folgenden Schritte aus:
@@ -26,36 +39,36 @@ Mithilfe der AEM-Suche kann nach AEM-Assets gesucht werden. Zudem kann eine Text
 
 ## Voraussetzungen {#prerequisites}
 
-* Wenn Sie AEM Forms on OSGi verwenden: 
+* Wenn Sie AEM Forms on OSGi verwenden:
 
-   * Installieren Sie[ AEM Forms-Dokumentensicherheit ](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html)auf dem AEM Forms-Server.
+  * Installieren Sie[&#x200B; AEM Forms-Dokumentensicherheit &#x200B;](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html)auf dem AEM Forms-Server.
 
-   * Stellen Sie sicher, dass ein AEM Forms auf dem JEE-Server läuft und die Dokumentensicherheit auf den entsprechenden AEM Forms auf dem JEE-Server installiert ist. Der AEM Forms on JEE-Server ist erforderlich, um das geschützte Dokument mit einem Index zu versehen. 
+  * Stellen Sie sicher, dass ein AEM Forms auf dem JEE-Server läuft und die Dokumentensicherheit auf den entsprechenden AEM Forms auf dem JEE-Server installiert ist. Der AEM Forms on JEE-Server ist erforderlich, um das geschützte Dokument mit einem Index zu versehen.
 
-* Wenn Sie nur den AEM Forms on JEE-Server verwenden, ist das Indexpaket bereits installiert. 
-* Stellen Sie sicher, dass alle Pakete aktiv sind. Wenn nicht alle Pakete aktiv sind, warten Sie, bis alle Pakete aktiv sind. 
+* Wenn Sie nur den AEM Forms on JEE-Server verwenden, ist das Indexpaket bereits installiert.
+* Stellen Sie sicher, dass alle Pakete aktiv sind. Wenn nicht alle Pakete aktiv sind, warten Sie, bis alle Pakete aktiv sind.
 
-   * Für AEM Forms unter OSGi werden die Bundles unter https://&#39;[server]:[port]&#39;/system/console/bundles aufgelistet.
-   * Für AEM Forms auf JEE werden die Bundles unter https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles aufgelistet. Zum Beispiel „https://localhost:8080/lc/system/console/bundles“.
+  * Für AEM Forms unter OSGi werden die Bundles unter https://&#39;[server]:[port]&#39;/system/console/bundles aufgelistet.
+  * Für AEM Forms auf JEE werden die Bundles unter https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles aufgelistet. Beispiel: https://localhost:8080/lc/system/console/bundles.
 
 * Fügen Sie das Paket *sun.util.calendar* zur Zulassungsliste hinzu. Um das Paket zur Zulassungsliste hinzuzufügen, führen Sie die folgenden Schritte aus:
 
-   1. Öffnen Sie die AEM Web-Konsole. Die URL lautet https://&#39;[server]:[port]&#39;/system/console/configMgr.
-   1. Suchen und öffnen Sie **Deserialisierungs-Firewallkonfiguration**. 
+  1. Öffnen Sie die AEM Web-Konsole. Die URL lautet https://&#39;[server]:[port]&#39;/system/console/configMgr.
+  1. Suchen und öffnen Sie **Deserialisierungs-Firewallkonfiguration**.
 
-   1. Fügen Sie das Paket sun.util.calendar zum Feld der auf die Zulassungsliste gesetzten Klassen oder Paketpräfixe hinzu und klicken Sie auf **Speichern**.
+  1. Fügen Sie das Paket sun.util.calendar zum Feld der auf die Zulassungsliste gesetzten Klassen oder Paketpräfixe hinzu und klicken Sie auf **Speichern**.
 
 ### Herstellen einer sicheren Verbindung zwischen AEM Forms JEE- und OSGi-Stapeln {#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
 
 Sie können eine der folgenden Methoden verwenden, um die sichere Verbindung herzustellen:
 
-* Konfigurieren des Adobe LiveCycle Client SDK-Bundles mit AEM Forms auf JEE-Administratorberechtigungen
-* Konfigurieren von Adobe LiveCycle Client SDK Bundle mit gegenseitiger Authentifizierung
+* Konfigurieren des Adobe LiveCycle Client SDK-Pakets mit AEM Forms auf JEE-Administratorberechtigungen
+* Konfigurieren des Adobe LiveCycle Client SDK-Pakets mit gegenseitiger Authentifizierung
 
-#### Konfigurieren des Adobe LiveCycle Client SDK-Bundles mit AEM Forms auf JEE-Administratorberechtigungen {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
+#### Konfigurieren des Adobe LiveCycle Client SDK-Pakets mit AEM Forms auf JEE-Administratorberechtigungen {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
 
 1. Öffnen Sie die AEM Web-Konsole. Die URL lautet https://&#39;[server]:[port]&#39;/system/console/configMgr.
-1. Suchen Sie das **Adobe LiveCycle Client SDK-Bundle** und öffnen Sie es. Geben Sie Werte für die folgenden Felder an:
+1. Suchen Sie das **Adobe LiveCycle Client SDK-Paket** und öffnen Sie es. Geben Sie Werte für die folgenden Felder an:
 
    * **Server-URL:** Geben Sie die HTTPS-URL des AEM Forms on JEE-Servers an. Um die Kommunikation über HTTPS zu aktivieren, starten Sie den AEM-Server mit dem Parameter -Djavax.net.ssl.trustStore=&lt;Pfad der AEM Forms on JEE-Keystore-Datei> neu.
    * **Dienstname**: Fügen Sie den RightsManagementService zur Liste der angegebenen Dienste hinzu.
@@ -64,11 +77,11 @@ Sie können eine der folgenden Methoden verwenden, um die sichere Verbindung her
 
    Klicken Sie auf **Speichern**. AEM ist jetzt aktiviert, um PDF-Dokumente durchsuchen zu können, die durch die Dokumentensichereit geschützt sind.
 
-#### Konfigurieren von Adobe LiveCycle Client SDK Bundle mit gegenseitiger Authentifizierung {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
+#### Konfigurieren des Adobe LiveCycle Client SDK-Pakets mit gegenseitiger Authentifizierung {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
-1. Aktivieren Sie die gegenseitige Authentifizierung für AEM Forms auf JEE.  Weitere Informationen finden Sie unter [CAC und gegenseitige Authentifizierung](https://helpx.adobe.com/de/livecycle/kb/cac-mutual-authentication.html).
+1. Aktivieren Sie die gegenseitige Authentifizierung für AEM Forms auf JEE. Weitere Informationen finden Sie unter [CAC und gegenseitige Authentifizierung](https://helpx.adobe.com/de/livecycle/kb/cac-mutual-authentication.html).
 1. Öffnen Sie die AEM Web-Konsole. Die URL lautet https://&#39;[server]:[port]&#39;/system/console/configMgr.
-1. Suchen Sie das **Adobe LiveCycle Client SDK**-Bundle und öffnen Sie es. Geben Sie Werte für die folgenden Eigenschaften an:
+1. Suchen Sie das **Adobe LiveCycle Client SDK**-Paket und öffnen Sie es. Geben Sie Werte für die folgenden Eigenschaften an:
 
    * **Server-URL:** Geben Sie die HTTPS-URL des AEM Forms on JEE-Servers an. Um die Kommunikation über HTTPS zu aktivieren, starten Sie den AEM-Server mit dem Parameter „-Djavax.net.ssl.trustStore=&lt;Pfad der AEM Forms auf JEE-Keystore-Datei>“ neu.
    * **2-Weg-SSL aktivieren**: Aktiviert die Option für 2-Weg-SSL.

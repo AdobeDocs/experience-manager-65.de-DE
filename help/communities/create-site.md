@@ -10,13 +10,20 @@ exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1631'
 ht-degree: 2%
-
 ---
-
 # Erstellen einer Community-Site{#author-a-new-community-site}
 
 ## Erstellen einer Community-Site {#create-a-community-site}
@@ -48,10 +55,10 @@ Geben Sie [&#x200B; Schritt „Site-](/help/communities/sites-console.md#step201
 
 * **Community-Site-Name**: Engage
 
-   * Überprüfen Sie den Namen , da er nach der Erstellung der Site nicht einfach geändert werden kann
-   * Die anfängliche URL wird unter dem Namen der Community-Site angezeigt
-   * Hängen Sie für eine gültige URL einen Basissprachcode + &quot;.html“ an
-   * *Beispiel:* https://localhost:4502/content/sites/ `engage/en.html`
+  * Überprüfen Sie den Namen , da er nach der Erstellung der Site nicht einfach geändert werden kann
+  * Die anfängliche URL wird unter dem Namen der Community-Site angezeigt
+  * Hängen Sie für eine gültige URL einen Basissprachcode + &quot;.html“ an
+  * *Beispiel*, https://localhost:4502/content/sites/ `engage/en.html`
 
 * **Vorlage**: Pulldown zur Auswahl von `Reference Site`
 
@@ -184,7 +191,7 @@ Von links nach rechts sind sie:
 
 * **Website veröffentlichen**
 
-  Wenn Sie das Welt -Symbol auswählen, wird die Community-Site veröffentlicht (z. B. wenn Ihr Veröffentlichungs-Server auf Ihrem lokalen Computer ausgeführt wird, :4503 standardmäßig auf localhost ).
+  Wenn Sie das Welt -Symbol auswählen, wird die Community-Site veröffentlicht (z. B. wenn Ihr Veröffentlichungs-Server auf Ihrem lokalen Computer ausgeführt wird, dann standardmäßig auf localhost:4503).
 
 * **Website exportieren**
 
@@ -269,31 +276,31 @@ Erste Schritte:
 
    * Wählen Sie **Knoten erstellen:**
 
-      * **Name** localhost.4503
-(*verwenden* &#39;:&#39;)
+     * **Name** localhost.4503
+       (*verwenden* &#39;:&#39;)
 
-      * **Typ** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+     * **Typ** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. Bei ausgewähltem neu erstellten `localhost.4503`-Knoten:
 
    * Eigenschaft hinzufügen:
 
    * **Name** sling:match
-      * **type** Zeichenfolge
-      * **Value** localhost.4503/$
-(muss mit &quot;$&quot; enden)
+     * **type** Zeichenfolge
+     * **Value** localhost.4503/$
+       (muss mit &quot;$&quot; enden)
 
    * Eigenschaft hinzufügen:
 
-      * **Name** sling:internalRedirect
-      * **type** Zeichenfolge
-      * **value** /content/sites/engage/en.html
+     * **Name** sling:internalRedirect
+     * **type** Zeichenfolge
+     * **value** /content/sites/engage/en.html
 
 1. Wählen Sie **Alle speichern.**
 1. (Optional) Löschen des Navigationsverlaufs.
-1. Navigieren Sie zu https://localhost:4503/.
+1. Navigieren Sie zu https://localhost:4503/ .
 
-   * Ankunft unter https://localhost:4503/content/sites/engage/en.html
+   * Ankunft bei https://localhost:4503/content/sites/engage/en.html
 
 >[!NOTE]
 >

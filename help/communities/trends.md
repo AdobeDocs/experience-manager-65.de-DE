@@ -10,13 +10,20 @@ exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '346'
 ht-degree: 4%
-
 ---
-
 # Aktivitätstrends {#activity-trends}
 
 ## Einführung {#introduction}
@@ -61,29 +68,29 @@ Geben Sie auf **Registerkarte** Kommentare“ an, ob und wie Kommentare für hoc
 
   Die folgenden Optionen stehen zur Auswahl:
 
-   * `Members`
-   * `Content`
+  * `Members`
+  * `Content`
 
   Der Standardwert ist `Members`.
 
 * **Titel anzeigen**
 
   Ein beschreibender Titel, der über den Daten angezeigt werden soll, z. B. `Trending Content`.
-Standard ist kein Titel.
+  Standard ist kein Titel.
 
 * **Anzahl anzeigen**
 
   Die Anzahl der aufzulistenden Elemente.
-Der Standardwert lautet 10.
+  Der Standardwert lautet 10.
 
 * **Aktivitätstyp**
 
   Eine der folgenden Optionen auswählen:
 
-   * `Views`(Seitenbesuche)
-   * `Posts`(Erstellen von benutzergenerierten Inhalten)
-   * `Follows`
-   * `Likes`
+  * `Views`(Seitenbesuche)
+  * `Posts`(Erstellen von benutzergenerierten Inhalten)
+  * `Follows`
+  * `Likes`
 
   Der Standardwert ist Ansichten.
 
@@ -91,24 +98,24 @@ Der Standardwert lautet 10.
 
   Eine der folgenden Optionen auswählen:
 
-   * `Last 24 hours`
-   * `Last 7 days`
-   * `Last 30 days`
-   * `Last 90 days`
-   * `This year (since Jan 1)`
-   * `Total`
+  * `Last 24 hours`
+  * `Last 7 days`
+  * `Last 30 days`
+  * `Last 90 days`
+  * `This year (since Jan 1)`
+  * `Total`
 
   Der Standardwert ist `Total`.
 
 * **Kontextpfad**
 
   Auf diese Weise können Sie die Aktivität auf eine Untergruppe der Site beschränken, z. B. auf einen bestimmten Blog.
-Die Standardeinstellung ist die gesamte Community-Site.
+  Die Standardeinstellung ist die gesamte Community-Site.
 
 * **Aggregation der Mitgliederzahl**
 
   Wenn diese Option deaktiviert (deaktiviert) ist, werden nur Beiträge der obersten Ebene gezählt. Wenn der Kontext beispielsweise die Stammseite ist (Standard), zeigt ein `Activity Type` von `Posts` keine Aktivität an, da keine Möglichkeit besteht, Inhalte auf der Stammseite zu posten. Wenn diese Option aktiviert ist, werden alle Zählungen für alle untergeordneten Seiten einbezogen.
-Die Standardeinstellung ist aktiviert.
+  Die Standardeinstellung ist aktiviert.
 
 ### Beispielseite mit vier Komponenten {#example-page-with-components}
 

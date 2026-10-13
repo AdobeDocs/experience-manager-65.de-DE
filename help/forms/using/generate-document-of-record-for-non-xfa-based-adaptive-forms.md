@@ -9,13 +9,29 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4312'
-ht-degree: 95%
-
+source-wordcount: '4370'
+ht-degree: 96%
 ---
-
 # Generierung eines Datensatzdokuments für adaptive Formulare oder adaptive Formularfragmente {#generate-document-of-record-for-adaptive-forms}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
@@ -51,8 +67,8 @@ Hier können Sie eine XFA-Vorlage für Ihr adaptives Formular auswählen. Wenn S
 * [XML-Schema](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
 Hier können Sie eine XML-Schemadefinition für Ihr adaptives Formular auswählen. Wenn Sie ein XML-Schema für Ihr adaptives Formular auswählen, können Sie:
 
-   * eine XFA-Vorlage für das Datensatzdokument verknüpfen. Vergewissern Sie sich, dass die verknüpfte XFA-Vorlage dasselbe XML-Schema verwendet wie Ihr adaptives Formular.
-   * Datensatzdokument automatisch generieren
+  * eine XFA-Vorlage für das Datensatzdokument verknüpfen. Vergewissern Sie sich, dass die verknüpfte XFA-Vorlage dasselbe XML-Schema verwendet wie Ihr adaptives Formular.
+  * Datensatzdokument automatisch generieren
 
 * Keine
 Ermöglicht das Erstellen eines adaptiven Formulars ohne Formularmodell. Das Datensatzdokument für Ihr adaptives Formular wird automatisch generiert.
@@ -276,8 +292,8 @@ Führen Sie die folgenden Schritte aus, um ein Datensatzdokument für adaptive F
 
 1. Klicken Sie in der AEM-Autoreninstanz auf **Formulare > Formulare und Dokumente**.
 1. Wählen Sie ein Formular aus und klicken Sie auf **Eigenschaften anzeigen**.
-1. Wählen Sie im Fenster „Eigenschaften **die Option „Formularmodell**.
-Sie können ein Formularmodell auch beim Erstellen eines Formulars auswählen.
+1. Wählen Sie im Fenster „Eigenschaften“ **Formularmodell** aus.
+Sie können ein Formularmodell auch bei der Erstellung eines Formulars auswählen.
 
    >[!NOTE]
    >
@@ -393,23 +409,23 @@ Die Datensatzdokument-Einstellungen einer Komponente sind unter den Eigenschafte
 * **Titel aus Datensatzdokument ausschließen:** Wird diese Eigenschaft aktiviert, erscheint der Titel des Bereichs bzw. der Tabelle im Datensatzdokument nicht. Gilt nur für Bereiche und Tabellen.
 * **Beschreibung aus Datensatzdokument ausschließen:** Wird diese Eigenschaft aktiviert, erscheint die Beschreibung des Bereichs bzw. der Tabelle im Datensatzdokument nicht. Gilt nur für Bereiche und Tabellen.
 * **[!UICONTROL Seitenumbruch]** > **[!UICONTROL Ort]**: Legt fest, wo Sie das Bedienfeld platzieren möchten.
-   * **[!UICONTROL Platzieren nach]** > **[!UICONTROL Vorherigem]**: Platziert den Bereich nach dem vorherigen Objekt im übergeordneten Bereich.
-   * **[!UICONTROL Platzieren im]** > **[!UICONTROL Inhaltsbereich]** > Name des Inhaltsbereichs: Platziert den Bereich im angegebenen Inhaltsbereich.
-   * **[!UICONTROL Ort]** > **[!UICONTROL Anfang des nächsten Inhaltsbereichs]**: Platziert das Bedienfeld am Anfang des nächsten Inhaltsbereichs.
-   * **[!UICONTROL Ort]** > **[!UICONTROL Anfang des Inhaltsbereichs]** > Name des Inhaltsbereichs: Platziert das Bedienfeld am Anfang des angegebenen Inhaltsbereichs.
-   * **[!UICONTROL Ort]** > **[!UICONTROL Auf Seite]** > Name der Master-Seite: Platziert den Bereich auf der angegebenen Seite. Wenn ein Seitenumbruch nicht automatisch eingefügt wird, fügt [!DNL AEM Forms] einen Seitenumbruch hinzu.
-   * **[!UICONTROL Ort]** > **[!UICONTROL Anfang der nächsten Seite]**: Platziert das Bedienfeld am Anfang der nächsten Seite. Wenn ein Seitenumbruch nicht automatisch eingefügt wird, fügt [!DNL AEM Forms] einen Seitenumbruch hinzu.
-   * **[!UICONTROL Ort]** > **[!UICONTROL Seitenanfang]** > Name der Master-Seite: Platziert das Bedienfeld am Anfang der Seite, wenn die angegebene Seite gerendert wird. Wenn ein Seitenumbruch nicht automatisch eingefügt wird, fügt [!DNL AEM Forms] einen Seitenumbruch hinzu.
+  * **[!UICONTROL Platzieren nach]** > **[!UICONTROL Vorherigem]**: Platziert den Bereich nach dem vorherigen Objekt im übergeordneten Bereich.
+  * **[!UICONTROL Platzieren im]** > **[!UICONTROL Inhaltsbereich]** > Name des Inhaltsbereichs: Platziert den Bereich im angegebenen Inhaltsbereich.
+  * **[!UICONTROL Ort]** > **[!UICONTROL Anfang des nächsten Inhaltsbereichs]**: Platziert das Bedienfeld am Anfang des nächsten Inhaltsbereichs.
+  * **[!UICONTROL Ort]** > **[!UICONTROL Anfang des Inhaltsbereichs]** > Name des Inhaltsbereichs: Platziert das Bedienfeld am Anfang des angegebenen Inhaltsbereichs.
+  * **[!UICONTROL Ort]** > **[!UICONTROL Auf Seite]** > Name der Master-Seite: Platziert den Bereich auf der angegebenen Seite. Wenn ein Seitenumbruch nicht automatisch eingefügt wird, fügt [!DNL AEM Forms] einen Seitenumbruch hinzu.
+  * **[!UICONTROL Ort]** > **[!UICONTROL Anfang der nächsten Seite]**: Platziert das Bedienfeld am Anfang der nächsten Seite. Wenn ein Seitenumbruch nicht automatisch eingefügt wird, fügt [!DNL AEM Forms] einen Seitenumbruch hinzu.
+  * **[!UICONTROL Ort]** > **[!UICONTROL Seitenanfang]** > Name der Master-Seite: Platziert das Bedienfeld am Anfang der Seite, wenn die angegebene Seite gerendert wird. Wenn ein Seitenumbruch nicht automatisch eingefügt wird, fügt [!DNL AEM Forms] einen Seitenumbruch hinzu.
 * **[!UICONTROL Paginierung]** > **[!UICONTROL Nachher]**: Legt fest, welcher Bereich ausgefüllt werden soll, nachdem ein Bedienfeld platziert wurde.Die folgenden Felder sind im Abschnitt **[!UICONTROL Nachher]** verfügbar:
-   * **[!UICONTROL Nachher]** > **[!UICONTROL Fortsetzen von übergeordnetem Ausfüllen]**: Setzt das Zusammenführen von Daten für alle Objekte fort, die im übergeordneten Bereich noch ausgefüllt werden sollen.
-   * **[!UICONTROL Nachher]** > **[!UICONTROL Wechseln zum nächsten Inhaltsbereich]**: Startet das Füllen des nächsten Inhaltsbereichs nach dem Platzieren des Bedienfelds.
-   * **[!UICONTROL Nachher]** > **[!UICONTROL Wechseln zum Inhaltsbereich]** > Name des Inhaltsbereichs: Startet das Füllen des angegebenen Inhaltsbereichs nach dem Platzieren des Bedienfelds.
-   * **[!UICONTROL Nachher]** > **[!UICONTROL Wechseln zur nächsten Seite]**: Startet das Füllen der nächsten Seite, nachdem der Bereich platziert wurde.
-   * **[!UICONTROL Nachher]** > **[!UICONTROL Wechseln zur Seite]** > Name der Seite: Startet das Füllen der angegebenen Seite nach dem Platzieren des Bedienfelds.
+  * **[!UICONTROL Nachher]** > **[!UICONTROL Fortsetzen von übergeordnetem Ausfüllen]**: Setzt das Zusammenführen von Daten für alle Objekte fort, die im übergeordneten Bereich noch ausgefüllt werden sollen.
+  * **[!UICONTROL Nachher]** > **[!UICONTROL Wechseln zum nächsten Inhaltsbereich]**: Startet das Füllen des nächsten Inhaltsbereichs nach dem Platzieren des Bedienfelds.
+  * **[!UICONTROL Nachher]** > **[!UICONTROL Wechseln zum Inhaltsbereich]** > Name des Inhaltsbereichs: Startet das Füllen des angegebenen Inhaltsbereichs nach dem Platzieren des Bedienfelds.
+  * **[!UICONTROL Nachher]** > **[!UICONTROL Wechseln zur nächsten Seite]**: Startet das Füllen der nächsten Seite, nachdem der Bereich platziert wurde.
+  * **[!UICONTROL Nachher]** > **[!UICONTROL Wechseln zur Seite]** > Name der Seite: Startet das Füllen der angegebenen Seite nach dem Platzieren des Bedienfelds.
 * **[!UICONTROL Paginierung]** > **[!UICONTROL Überlauf]**: Legt einen Überlauf für einen Bereich oder eine Tabelle fest, der/die sich über Seiten spannt. Die folgenden Felder sind im Abschnitt **[!UICONTROL Überlauf]** verfügbar:
-   * **[!UICONTROL Überlauf]** > **[!UICONTROL Keines]**: Startet das Füllen der nächsten Seite. Wenn ein Seitenumbruch nicht automatisch eingefügt wird, fügt [!DNL AEM Forms] einen Seitenumbruch hinzu.
-   * **[!UICONTROL Überlauf]** > **[!UICONTROL Wechseln zum Inhaltsbereich]** > Name des Inhaltsbereichs: Startet das Füllen des angegebenen Inhaltsbereichs.
-   * **[!UICONTROL Überlauf]** > **[!UICONTROL Wechseln zu Seite]** > Name der Seite: Startet das Füllen der angegebenen Seite.
+  * **[!UICONTROL Überlauf]** > **[!UICONTROL Keines]**: Startet das Füllen der nächsten Seite. Wenn ein Seitenumbruch nicht automatisch eingefügt wird, fügt [!DNL AEM Forms] einen Seitenumbruch hinzu.
+  * **[!UICONTROL Überlauf]** > **[!UICONTROL Wechseln zum Inhaltsbereich]** > Name des Inhaltsbereichs: Startet das Füllen des angegebenen Inhaltsbereichs.
+  * **[!UICONTROL Überlauf]** > **[!UICONTROL Wechseln zu Seite]** > Name der Seite: Startet das Füllen der angegebenen Seite.
 
   >[!NOTE]
   >
@@ -420,21 +436,21 @@ Informationen zum Anwenden von Seitenumbrüchen und zum Anwenden mehrerer Master
 **Einstellungen auf Formularebene**
 
 * **[!UICONTROL EINFACH]**
-   * **Vorlage:** Sie können die Vorlage „Standard“ oder „Benutzerdefiniert“ auswählen.
-     ![Alt-Text](image.png)
-   * **Akzentfarbe:** Sie können die Vorlagenfarbe des [!UICONTROL Nachweises] vordefinierten.
-   * **Schriftfamilie:** Wählen Sie den Schrifttyp für die Texte des [!UICONTROL Nachweises] aus.
-   * **Ungebundene Felder in Nachweis einbeziehen**: Wenn aktiviert, werden ungebundene Felder aus einem Schema-basierten adaptiven Formular im [!UICONTROL Nachweis] eingefügt. Diese Option ist standardmäßig aktiviert.
-   * **Felder aus DoR ausschließen, falls ausgeblendet**: Legen Sie die Eigenschaft fest, um beim Senden des Formulars die ausgeblendeten Felder vom [!UICONTROL Datensatzdokument] auszuschließen. Wenn Sie [Auf dem Server erneut überprüfen](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) aktivieren, berechnet der Server die ausgeblendeten Felder neu, bevor er diese Felder aus dem [!UICONTROL Nachweis] ausschließt.
+  * **Vorlage:** Sie können die Vorlage „Standard“ oder „Benutzerdefiniert“ auswählen.
+    ![Alt-Text](image.png)
+  * **Akzentfarbe:** Sie können die Vorlagenfarbe des [!UICONTROL Nachweises] vordefinierten.
+  * **Schriftfamilie:** Wählen Sie den Schrifttyp für die Texte des [!UICONTROL Nachweises] aus.
+  * **Ungebundene Felder in Nachweis einbeziehen**: Wenn aktiviert, werden ungebundene Felder aus einem Schema-basierten adaptiven Formular im [!UICONTROL Nachweis] eingefügt. Diese Option ist standardmäßig aktiviert.
+  * **Felder aus DoR ausschließen, falls ausgeblendet**: Legen Sie die Eigenschaft fest, um beim Senden des Formulars die ausgeblendeten Felder vom [!UICONTROL Datensatzdokument] auszuschließen. Wenn Sie [Auf dem Server erneut überprüfen](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) aktivieren, berechnet der Server die ausgeblendeten Felder neu, bevor er diese Felder aus dem [!UICONTROL Nachweis] ausschließt.
 * **[!UICONTROL FORMULARFELDEIGENSCHAFTEN]**
-   * Wenn Sie die Option auswählen **Für Kontrollkästchen und Optionsschaltflächenkomponenten nur ausgewählte Werte einblenden**, wird die Ausgabe des Nachweises nur mit ausgewählten Werten generiert.
-   * Sie können Trennzeichen für mehrere ausgewählte Werte auswählen oder einen anderen Trennzeichentyp wählen.
-   * Ausrichtung der Optionen
-      * Vertikal
-      * Horizontal
-      * Gleich wie adaptives Formular
-     >[!NOTE]
-     > Die vertikale und horizontale Ausrichtung gilt nur für Optionsschaltflächen und Kontrollkästchen
+  * Wenn Sie die Option auswählen **Für Kontrollkästchen und Optionsschaltflächenkomponenten nur ausgewählte Werte einblenden**, wird die Ausgabe des Nachweises nur mit ausgewählten Werten generiert.
+  * Sie können Trennzeichen für mehrere ausgewählte Werte auswählen oder einen anderen Trennzeichentyp wählen.
+  * Ausrichtung der Optionen
+    * Vertikal
+    * Horizontal
+    * Gleich wie adaptives Formular
+    >[!NOTE]
+    > Die vertikale und horizontale Ausrichtung gilt nur für Optionsschaltflächen und Kontrollkästchen
 * **[!UICONTROL MUSTERSEITENEIGENSCHAFTEN]** Weitere Informationen finden Sie unter [Eigenschaften der Musterseite](#master-page-properties-master-page-properties)
 
 ## Anwenden eines Seitenumbruchs in einem Datensatzdokument {#apply-page-breaks-in-dor}
@@ -465,12 +481,12 @@ Führen Sie die folgenden Schritte aus, um die zweiten Master-Seiteneigenschafte
 
 1. Wählen Sie den Bereich aus, um die zweite Musterseite anzuwenden, und wählen Sie dann ![Konfigurieren](assets/cmppr.png) aus.
 1. Wählen Sie im Bereich **[!UICONTROL Seitenumbruch]** im Feld **[!UICONTROL Ort]** die Option ![Ordner](/help/forms/using/assets/folder-icon.png) aus.
-1. Wählen Sie **[!UICONTROL Auf Seite]**, dann die zweite Master-Seite aus und klicken Sie auf **[!UICONTROL Auswählen]**.
-AEM Forms wendet die zweite Master-Seite auf das Bedienfeld und alle nachfolgenden Bedienfelder im adaptiven Formular an.
+1. Wählen Sie **[!UICONTROL Auf Seite]**, dann die zweite Musterseite und schließlich **[!UICONTROL Auswählen]** aus.
+AEM Forms wendet die zweite Musterseite auf den Bereich und alle nachfolgenden Bereiche im adaptiven Formular an.
 1. Wählen Sie im Bereich **[!UICONTROL Seitenumbruch]** im Feld **[!UICONTROL Nachher]** die Option ![Ordner](/help/forms/using/assets/folder-icon.png) aus.
 1. Wählen Sie **[!UICONTROL Wechseln zu Seite]**, dann die dritte Musterseite und schließlich **[!UICONTROL Auswählen]** aus.
-1. Klicken Sie ![Speichern](/help/forms/using/assets/save_icon.png), um die Eigenschaften zu speichern.
-AEM Forms wendet die dritte Master-Seite auf das Bedienfeld und alle nachfolgenden Bedienfelder im adaptiven Formular an.
+1. Wählen Sie ![Speichern](/help/forms/using/assets/save_icon.png) aus, um die Eigenschaften zu speichern.
+AEM Forms wendet die dritte Musterseite auf den Bereich und alle nachfolgenden Bereiche im adaptiven Formular an.
 
 >[!NOTE]
 >

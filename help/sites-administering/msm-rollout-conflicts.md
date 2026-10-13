@@ -1,6 +1,6 @@
 ---
 title: MSM-Rollout-Konflikte
-description: Erfahren Sie, wie Sie mit Rollout-Konflikten in Multi Site Manager umgehen.
+description: Erfahren Sie, wie Sie mit Rollout-Konflikten in Multi-Site Manager umgehen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
@@ -9,13 +9,25 @@ feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '913'
 ht-degree: 100%
-
 ---
-
 # MSM-Rollout-Konflikte{#msm-rollout-conflicts}
 
 Konflikte sind möglich, wenn neue Seiten mit demselben Seitennamen im Blueprint-Zweig und in einer abhängigen Live Copy-Verzweigung erstellt werden.
@@ -48,7 +60,7 @@ In den folgenden Abschnitten müssen Sie das Beispiel einer neuen Seite `b` verw
 
   Eine im Live Copy-Zweig manuell erstellte Seite; mit einer untergeordneten Seite, `lc-level-1`.
 
-   * Bei Veröffentlichung als `/b` aktiviert, zusammen mit der untergeordneten Seite.
+  * Bei Veröffentlichung als `/b` aktiviert, zusammen mit der untergeordneten Seite.
 
 **Vor dem Rollout**
 
@@ -94,7 +106,7 @@ AEM bietet:
 
 * Den [standardmäßigen Konflikt-Handler](#default-conflict-handler):
 
-   * `ResourceNameRolloutConflictHandler`
+  * `ResourceNameRolloutConflictHandler`
 
 * die Möglichkeit, einen [benutzerdefinierten Handler](#customized-handlers) zu implementieren.
 * Den Service-Ranking-Mechanismus, mit dem Sie die Priorität jedes einzelnen Handlers festlegen können. Der Service mit dem höchsten Ranking wird verwendet.
@@ -114,13 +126,13 @@ Dieser Konflikt-Handler hat Vorrang vor dem Blueprint. Die Live Copy-Seite `/b` 
 
   Wird (innerhalb der Live Copy) nach `/b_msm_moved` verschoben. Dies dient als Sicherung und stellt sicher, dass keine Inhalte verloren gehen.
 
-   * `lc-level-1` wird nicht verschoben.
+  * `lc-level-1` wird nicht verschoben.
 
 * Blueprint: `/b`
 
   Wird beim Rollout auf die Live Copy-Seite `/b` verschoben.
 
-   * `bp-level-1` wird beim Rollout zur Live Copy verschoben.
+  * `bp-level-1` wird beim Rollout zur Live Copy verschoben.
 
 **Nach dem Rollout**
 
@@ -160,11 +172,11 @@ Benutzerdefinierte Konflikt-Handler können:
 * Gemäß Ihren Anforderungen entwickelt/konfiguriert werden. Beispiel: Sie können einen Handler so entwickeln, dass die Live Copy-Seite Vorrang erhält.
 * So konzipiert sein, dass die Konfiguration unter Verwendung der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) erfolgt. Insbesondere gilt:
 
-   * **Dienstpriorität**:
+  * **Dienst-Ranking**:
 
-     Bestimmt die Reihenfolge in Bezug auf andere Konflikt-Handler (`service.ranking`).
+    Bestimmt die Reihenfolge in Bezug auf andere Konflikt-Handler (`service.ranking`).
 
-     Der Standardwert ist 0.
+    Der Standardwert ist 0.
 
 ### Verhalten, wenn die Konflikt-Behandlung deaktiviert ist {#behavior-when-conflict-handling-deactivated}
 

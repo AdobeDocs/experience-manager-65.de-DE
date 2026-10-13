@@ -9,13 +9,29 @@ exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '533'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 98%
 ---
-
 # Verwalten lokaler Berechtigungen {#managing-local-credentials}
 
 >[!NOTE]
@@ -33,7 +49,7 @@ Weitere Informationen und Anweisungen zu Acrobat Reader DC Extensions finden Sie
 ## Importieren von Berechtigungen {#import-a-credential}
 
 1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
-1. Klicken Sie auf „Importieren“. Wählen Sie unter „Trust Store-Typ“ eine der folgenden Optionen aus:
+1. Wählen Sie Importieren. Wählen Sie unter Trust Store-Typ eine der folgenden Optionen:
 
    * **Berechtigung für die Dokumentsignierung:** Eine Berechtigung, die zum Hinzufügen einer digitalen Signatur zu einem Dokument dient.
    * **Berechtigung für Acrobat Reader DC-Erweiterungen:** Ein digitales Zertifikat, das speziell für Acrobat Reader DC-Erweiterungen gilt und die Aktivierung von Adobe Reader-Benutzerrechten in den erstellten PDF-Dokumenten ermöglicht.
@@ -49,7 +65,7 @@ Weitere Informationen und Anweisungen zu Acrobat Reader DC Extensions finden Sie
 
 1. Klicken Sie auf „Durchsuchen“, um die Berechtigung zu suchen. Geben Sie das Kennwort der Berechtigung ein und klicken Sie auf „OK“.
 
-   Wenn die Fehlermeldung „Fehler beim Importieren einer Berechtigung aufgrund eines fehlerhaften Dateiformats oder eines falschen Kennworts“ angezeigt wird, müssen Sie sicherstellen, dass das Kennwort gültig ist. 
+   Wenn die Fehlermeldung „Fehler beim Importieren einer Berechtigung aufgrund eines fehlerhaften Dateiformats oder eines falschen Kennworts“ angezeigt wird, müssen Sie sicherstellen, dass das Kennwort gültig ist.
 
 ## Exportieren einer Berechtigung {#export-a-credential}
 

@@ -9,13 +9,24 @@ exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2687'
-ht-degree: 100%
-
+source-wordcount: '2724'
+ht-degree: 98%
 ---
-
 # Vewenden des VLT-Tools {#how-to-use-the-vlt-tool}
 
 Das Jackrabbit FileVault Tool (VLT) ist ein von [The Apache Foundation](https://www.apache.org/) entwickeltes Tool, das den Inhalt einer Jackrabbit/AEM-Instanz Ihrem Dateisystem zuordnet. Das VLT-Tool hat ähnliche Funktionen wie der Quellkontrollsystem-Client (z. B. ein Subversion (SVN)-Client) und bietet normale Eincheck-, Auscheck- und Verwaltungsvorgänge sowie Konfigurationsoptionen für die flexible Darstellung des Projektinhalts.
@@ -774,8 +785,8 @@ Die Status-Codes, die durch VLT verwendet werden, sind:
 * „I“ ignoriert
 * „M“ geändert
 * „R“ ersetzt
-* „?“ Element steht nicht unter Versionskontrolle
-* „!“ Das Element fehlt (wird mit dem Befehl non-svn entfernt) oder ist unvollständig
+* Element &#39;?&#39; ist nicht unter Versionskontrolle
+* &#39;!&#39; Element fehlt (wird mit dem Befehl non-svn entfernt) oder ist unvollständig
 * „~“ versioniertes Element, das durch ein Element anderer Art behindert wird
 
 ## Einrichten von FileVault-Synchronisierung {#setting-up-filevault-sync}
@@ -790,7 +801,7 @@ Der Vault-Synchronisierungsdienst wird zum Synchronisieren des Repository-Inhalt
 
 Der Befehl `vlt sync install` kann verwendet werden, um das Paket und die Konfiguration des Vault-Synchronisierungsdienstes automatisch zu installieren.
 
-Das Bundle wird unter `/libs/crx/vault/install` installiert und der config-Knoten wird unter `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl` erstellt. Zunächst ist der Dienst aktiviert, aber es werden keine Synchronisierungsstämme konfiguriert.
+Das Paket wird unter `/libs/crx/vault/install` installiert und der config-Knoten wird unter `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl` erstellt. Zunächst ist der Dienst aktiviert, aber es werden keine Synchronisierungsstämme konfiguriert.
 
 Im folgenden Beispiel wird der Synchronisierungsdienst mit der CRX-Instanz installiert, auf die der angegebene URI zugreifen kann.
 
@@ -800,7 +811,7 @@ $ vlt --credentials admin:admin sync --uri http://localhost:4502/crx install
 
 ### Anzeigen des Dienststatus {#displaying-the-service-status}
 
-Der Befehl `status` kann verwendet werden, um Informationen über den aktuellen Synchronisierungsdienst anzuzeigen. ``
+Der Befehl `status` kann verwendet werden, um Informationen über den laufenden Synchronisierungsdienst anzuzeigen. &grave;&grave;
 
 ```shell
 $ vlt sync status --uri http://localhost:4502/crx

@@ -8,13 +8,27 @@ feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: c73531c3-4c05-471e-beff-cefb35857910
+    internal-label: Collections
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2201'
 ht-degree: 98%
-
 ---
-
 # Verwalten von Sammlungen {#managing-collections}
 
 | Version | Artikel-Link |
@@ -116,7 +130,7 @@ Zum Erstellen einer Smart-Sammlung führen Sie die folgenden Schritte aus:
 
 Sie können einer Sammlung mit einer Liste referenzierter Assets oder Ordner Assets hinzufügen. Smart-Sammlungen verwenden eine Suchabfrage zum Ausfüllen von Assets. Daher sind statische Referenzen zu Assets und Ordnern für sie nicht anwendbar.
 
-1. Wählen Sie in der [!DNL A]ssets-Benutzeroberfläche das Asset aus und klicken Sie auf der Symbolleiste auf **[!UICONTROL Zu]**![Zu Sammlung hinzufügen](assets/do-not-localize/add-to-collection.png) .
+1. Wählen Sie in der [!DNL A]ssets-Benutzeroberfläche das Asset aus und klicken Sie auf der Symbolleiste auf **[!UICONTROL Zu Sammlung]** ![Zu Sammlung hinzufügen](assets/do-not-localize/add-to-collection.png).
 Alternativ können Sie das Asset in den Bereich **[!UICONTROL In Sammlung ablegen]** auf der Benutzeroberfläche ziehen. Fügen Sie die Assets hinzu, wenn sich die Bezeichnung der Region in **[!UICONTROL Zum Hinzufügen ablegen]** ändert.
 
 1. Wählen Sie auf der Seite **[!UICONTROL Zu Sammlung hinzufügen]** die Sammlung aus, der Sie das Asset hinzufügen möchten.

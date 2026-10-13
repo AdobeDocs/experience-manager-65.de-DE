@@ -9,13 +9,25 @@ exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '794'
 ht-degree: 100%
-
 ---
-
 # Unterstützung von Encapsulated Tokens{#encapsulated-token-support}
 
 ## Einführung {#introduction}
@@ -70,11 +82,11 @@ Beim Konfigurieren des Encapsulated Tokens müssen einige Aspekte beachtet werde
 Um den Schlüssel auf weitere Instanzen zu replizieren, führen Sie die folgenden Schritte durch:
 
 1. Greifen Sie auf die AEM-Instanz zu, auf der sich die zu kopierenden Schlüsseldaten befinden. In der Regel handelt es sich dabei um eine Autoreninstanz.
-1. Suchen Sie im lokalen Dateisystem das Bundle `com.adobe.granite.crypto.file`. Es kann sich z. B. unter diesem Pfad befinden:
+1. Suchen Sie im lokalen Dateisystem das Paket `com.adobe.granite.crypto.file`. Es kann sich z. B. unter diesem Pfad befinden:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25`
 
-   Die Datei `bundle.info` in jedem Ordner identifiziert den Bundle-Namen.
+   Die Datei `bundle.info` in jedem Ordner identifiziert den Paketnamen.
 
 1. Navigieren Sie zum Ordner „data“. Beispiel:
 
@@ -86,7 +98,7 @@ Um den Schlüssel auf weitere Instanzen zu replizieren, führen Sie die folgende
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
 1. Fügen Sie die beiden zuvor kopierten Dateien ein.
-1. [Aktualisieren Sie das Crypto-Bundle](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle), wenn die Zielinstanz bereits ausgeführt wird.
+1. [Aktualisieren Sie das Crypto-Paket](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle), wenn die Zielinstanz bereits ausgeführt wird.
 
 1. Wiederholen Sie die vorherigen Schritte für alle Instanzen, auf denen Sie den Schlüssel replizieren möchten.
 

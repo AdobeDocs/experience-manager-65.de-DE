@@ -9,13 +9,22 @@ exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 100%
-
+source-wordcount: '497'
+ht-degree: 93%
 ---
-
 # Best Practices{#best-practices}
 
 ## Best Practices für Entwicklerinnen und -Entwickler – Erste Schritte {#best-practices-for-developers-getting-started}
@@ -30,7 +39,7 @@ Bevor Sie mit Ihrem AEM-Entwicklungsprojekt beginnen, machen Sie sich zunächst 
 * [Tipps zum Programmieren](/help/sites-developing/coding-tips.md)
 * [Fallstricke beim Programmieren](/help/sites-developing/code-pitfalls.md)
 * [JCR-Interaktion](/help/sites-developing/jcr-integration.md)
-* [OSGi-Bundles](/help/sites-developing/osgi-bundles.md)
+* [OSGi-Pakete](/help/sites-developing/osgi-bundles.md)
 * [Best Practices für die Java-API](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=de)
 
 ### Weitere Informationen zu Best Practices {#additional-best-practices-information}
@@ -45,9 +54,9 @@ Spezifische Dokumente werden in den folgenden Tabellen beschrieben und verlinkt.
 
 Best Practices für die Verwaltung, Bereitstellung und Pflege oder Inhaltserstellung finden Sie unter folgenden Themen:
 
-* [Best Practices für die Verwaltung ](/help/sites-administering/administer-best-practices.md)
+* [Best Practices für die Verwaltung](/help/sites-administering/administer-best-practices.md)
 * [Best Practices für die Inhaltserstellung](/help/sites-authoring/best-practices.md)
-* [Best Practices für die Bereitstellung ](/help/sites-deploying/best-practices.md)
+* [Best Practices für die Bereitstellung](/help/sites-deploying/best-practices.md)
 
 ## Sites {#sites}
 
@@ -86,7 +95,7 @@ Einige Best Practices für Communities sind hier beschrieben:
 
 |  |  |  |
 |---|---|---|
-| Best Practices für die Arbeit mit benutzergenerierten Inhalten | [Kodierungsrichtlinien ](/help/communities/code-guide.md) | Richtlinien für die Entwicklung von flexiblem, portablem Code für das [Social Component Framework](/help/communities/scf.md) (SCF). |
+| Best Practices für die Arbeit mit benutzergenerierten Inhalten | [Kodierungsrichtlinien &#x200B;](/help/communities/code-guide.md) | Richtlinien für die Entwicklung von flexiblem, portablem Code für das [Social Component Framework](/help/communities/scf.md) (SCF). |
 | Beispielverwendung von Community-Komponenten | [Handbuch der Community-Komponenten](/help/communities/components-guide.md) | Ein interaktives Entwicklungswerkzeug. |
 
 ## Tooling/HTL {#tooling-htl}

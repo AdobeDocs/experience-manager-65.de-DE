@@ -9,13 +9,20 @@ exl-id: b6658330-d862-44e3-aac0-824fb91cd087
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '552'
 ht-degree: 6%
-
 ---
-
 # Empfohlene Topologien für Communities {#recommended-topologies-for-communities}
 
 Seit AEM Communities 6.1 gibt es einen einzigartigen Ansatz für die Verarbeitung von benutzergenerierten Inhalten (User Generated Content, UGC), die von Seitenbesuchern (Mitgliedern) aus der Veröffentlichungsumgebung gesendet werden.
@@ -38,12 +45,12 @@ Die Anforderung eines gemeinsamen Speichers führt zu den folgenden empfohlenen 
 >
 >Für AEM Communities [UGC nie repliziert](working-with-srp.md#ugc-never-replicated).
 >
->Wenn die Bereitstellung keinen [Common Store](working-with-srp.md) enthält, ist der benutzergenerierte Inhalt (UGC) nur in der AEM-Veröffentlichungs- oder Autoreninstanz sichtbar, in der er eingegeben wurde.
+>Wenn die Bereitstellung keinen [Common Store](working-with-srp.md) enthält, ist der benutzergenerierte Inhalt (UGC) nur in der AEM-Veröffentlichungs- oder -Autoreninstanz sichtbar, in der er eingegeben wurde.
 >
 
 >[!NOTE]
 >
->Weitere Informationen zur AEM-Plattform finden Sie unter [Empfohlene &#x200B;](../../help/sites-deploying/recommended-deploys.md)&quot; und [Einführung in die AEM-Plattform](../../help/sites-deploying/data-store-config.md).
+>Weitere Informationen zur AEM-Plattform finden Sie unter [Empfohlene Bereitstellungen](../../help/sites-deploying/recommended-deploys.md) und [Einführung in die AEM-Plattform](../../help/sites-deploying/data-store-config.md).
 
 ## Für die Produktion {#for-production}
 
@@ -88,7 +95,7 @@ Wenn es sich bei der Topologie um eine Veröffentlichungsfarm handelt, sind folg
 
 Für Nicht-Produktionsumgebungen bietet [JSRP](jsrp.md) Einfachheit beim Einrichten einer Entwicklungsumgebung mit einer Autoreninstanz und einer Veröffentlichungsinstanz.
 
-Wenn Sie [ASRP](asrp.md), [DSRP](dsrp.md) oder [MSRP](msrp.md) für die Produktion auswählen, ist es auch möglich, eine ähnliche Entwicklungsumgebung mit Adobe-On-Demand-Speicher oder MongoDB einzurichten. Ein Beispiel finden Sie unter [Einrichten von MongoDB für Demo](demo-mongo.md).
+Wenn Sie [ASRP](asrp.md), [DSRP](dsrp.md) oder [MSRP](msrp.md) für die Produktion auswählen, ist es auch möglich, eine ähnliche Entwicklungsumgebung mit Adobe On-Demand-Speicher oder MongoDB einzurichten. Ein Beispiel finden Sie unter [Einrichten von MongoDB für Demo](demo-mongo.md).
 
 ## Verweise {#references}
 

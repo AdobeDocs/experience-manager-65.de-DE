@@ -1,18 +1,29 @@
 ---
 title: Anleitung zur Dimensionierung in [!DNL Assets]
-description: Best Practices zur Bestimmung effizienter Metriken zur Schätzung der für die Bereitstellung von  [!DNL Adobe Experience Manager Assets] erforderlichen Infrastruktur und Ressourcen.
+description: Best Practices zur Bestimmung effizienter Metriken zur Schätzung der für die Bereitstellung von [!DNL Adobe Experience Manager Assets] erforderlichen Infrastruktur und Ressourcen.
 contentOwner: AG
 role: Developer, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1645'
-ht-degree: 100%
-
+ht-degree: 99%
 ---
-
 # Anleitung zur Dimensionierung in [!DNL Assets] {#assets-sizing-guide}
 
 Beim Dimensionieren der Umgebung für eine [!DNL Adobe Experience Manager Assets]-Implementierung gilt es sicherzustellen, dass hinsichtlich Festplatte, CPU, Arbeitsspeicher, I/O und Netzwerkdurchsatz genügend Ressourcen verfügbar sind. Um diese Ressourcen dimensionieren zu können, müssen Sie wissen, wie viele Assets in das System geladen werden. Wenn keine bessere Metrik verfügbar ist, können Sie die Größe der vorhandenen Bibliothek durch ihr Alter dividieren, um die Rate zu ermitteln, mit der Assets erstellt werden.

@@ -10,13 +10,20 @@ exl-id: d4295a77-b931-4bc8-b3b4-eec42fdcfc56
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '400'
 ht-degree: 0%
-
 ---
-
 # Kommentar zur Beispielseite hinzufügen  {#add-comment-to-sample-page}
 
 Nachdem die Komponenten für das benutzerdefinierte Kommentarsystem nun im Anwendungsverzeichnis (/apps) vorhanden sind, kann die erweiterte Komponente verwendet werden. Die Instanz des Kommentarsystems in einer betroffenen Website muss ihren resourceType als benutzerdefiniertes Kommentarsystem festlegen und alle erforderlichen Client-Bibliotheken einschließen.
@@ -55,11 +62,11 @@ Sie können resourceType in CRXDE überprüfen, indem Sie die Eigenschaften des 
 
 ![verify-comment-crxde](assets/verify-comment-crxde.png)
 
-#### Publish-Beispielseite {#publish-sample-page}
+#### Beispielseite veröffentlichen {#publish-sample-page}
 
 Nachdem die benutzerdefinierte Komponente zur Seite hinzugefügt wurde, müssen Sie auch die Seite (erneut) [veröffentlichen](/help/communities/sites-console.md#publishing-the-site).
 
-#### Publish: ALT-Kommentar auf Beispielseite {#publish-alt-comment-on-sample-page}
+#### Veröffentlichen: ALT-Kommentar auf Beispielseite {#publish-alt-comment-on-sample-page}
 
 Nach dem Veröffentlichen sowohl des benutzerdefinierten Programms als auch der Beispielseite ist es möglich, einen Kommentar einzugeben. Wenn Sie angemeldet sind, entweder mit einem [Demo-Benutzer](/help/communities/tutorials.md#demo-users) oder Administrator, ist es möglich, einen Kommentar zu posten.
 

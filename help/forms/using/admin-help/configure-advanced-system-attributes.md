@@ -9,13 +9,27 @@ exl-id: 809af2c0-6f5c-4dd4-af48-dbf476c9ea45
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 100%
-
 ---
-
 # Erweiterte Systemattribute konfigurieren {#configure-advanced-system-attributes}
 
 Sie können auf der Seite „Erweiterte Systemattribute konfigurieren“ bestimmte Einstellungen in der Konfigurationsdatei ändern, ohne die Datei exportieren, bearbeiten und importieren zu müssen. (Siehe [Importieren und Exportieren der Konfigurationsdatei](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
@@ -23,11 +37,11 @@ Sie können auf der Seite „Erweiterte Systemattribute konfigurieren“ bestimm
 1. Klicken Sie in der Administration-Console auf **[!UICONTROL „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“]**.
 1. (Optional) Ändern Sie folgende Sitzungsattribute:
 
-   **Sitzungszeitlimit-Grenzwert (Minuten):** Der Zeitraum in Minuten, nach dem ein Benutzer automatisch vom System abgemeldet wird. Standardmäßig beträgt das Zeitlimit von AEM Forms-Komponenten wie Workbench, unabhängig von Aktivität bzw. Inaktivität, zwei Stunden. Der Benutzer muss sich dann erneut anmelden. Gültig sind Werte von `1` bis `1440`. Der Standardwert ist `120` (2 Stunden). Diese Einstellung aktualisiert den Eintragsschlüssel `SAML/Producer/assertionValidityInMinutes` in der Konfigurationsdatei.
+   **Sitzungs-Timeout-Grenzwert (Minuten):** Der Zeitraum in Minuten, nach dem ein Benutzer automatisch vom System abgemeldet wird. Standardmäßig beträgt der Timeout von AEM Forms-Komponenten wie Workbench, unabhängig von Aktivität bzw. Inaktivität, zwei Stunden. Der Benutzer muss sich dann erneut anmelden. Gültig sind Werte von `1` bis `1440`. Der Standardwert ist `120` (2 Stunden). Diese Einstellung aktualisiert den Eintragsschlüssel `SAML/Producer/assertionValidityInMinutes` in der Konfigurationsdatei.
 
    >[!NOTE]
    >
-   >Setzen Sie den Sitzungszeitlimit-Grenzwert nicht auf unter 10 Minuten, da dies zu Fehlern im System führen kann. Der empfohlene Wert beträgt 10 – 120 (Minuten).
+   >Setzen Sie den Sitzungs-Timeout-Grenzwert nicht auf unter 10 Minuten, da dies zu Fehlern im System führen kann. Der empfohlene Wert beträgt 10 – 120 (Minuten).
 
    **Assertionsschwellenwert (Sekunden):** Dieser Wert gibt einen Pufferzeitraum an, um den Verzögerungen aufgrund von Systemzeitdifferenzen zwischen AEM Forms-Anwendungsservern in einem Cluster versetzt werden sollen. AEM Forms datiert die Anmeldezeit eines Benutzers um den in dieser Eigenschaft angegebenen Zeitraum (in Sekunden) zurück. Gültig sind Werte von `0` bis `3600`. Der Standardwert ist `60`. Diese Einstellung aktualisiert den Eintragsschlüssel `SAML/Producer/assertionThresholdInSeconds` in der Konfigurationsdatei.
 

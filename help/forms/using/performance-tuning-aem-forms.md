@@ -9,13 +9,27 @@ role: Admin,User
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 99%
-
+source-wordcount: '918'
+ht-degree: 100%
 ---
-
 # Leistungsoptimierung für AEM Forms-Server{#performance-tuning-of-aem-forms-server}
 
 In diesem Artikel werden Strategien und Best Practices beschrieben, die Sie implementieren können, um Engpässe zu reduzieren und die Leistung Ihrer AEM Forms-Bereitzustellung zu optimieren.
@@ -92,8 +106,8 @@ Apache kann mit CRX über das HTTP-Protokoll kommunizieren. Die Konfigurationen 
    >
    >Für Linux® lautet der Standard für `APACHE_HOME` `/etc/httpd/`.
 
-1. Konfigurieren Sie den Proxy auf Port 4502 von crx.
-Fügen Sie in `APACHE_HOME/conf/httpd.conf` Konfigurationsdatei folgende Konfiguration ein.
+1. Konfigurieren Sie das Proxys auf Port 4502 von crx.
+Fügen Sie in die `APACHE_HOME/conf/httpd.conf`-Konfigurationsdatei folgende Konfiguration ein.
 
    ```shell
    ProxyPass / https://<server>:4502/
@@ -146,26 +160,26 @@ Um die Leistung zu verbessern, können Sie die Antiviren-Software anweisen, die 
 
 * AEM-Installationsverzeichnis. Wenn es nicht möglich ist, das gesamte Verzeichnis auszuschließen, schließen Sie die folgenden Ordner aus:
 
-   * [AEM-Installationsverzeichnis]\crx-repository\temp
-   * [AEM-Installationsverzeichnis]\crx-repository\repository
-   * [AEM-Installationsverzeichnis]\crx-repository\launchpad
+  * [AEM-Installationsverzeichnis]\crx-repository\temp
+  * [AEM-Installationsverzeichnis]\crx-repository\repository
+  * [AEM-Installationsverzeichnis]\crx-repository\launchpad
 
 * Temporärverzeichnis des Anwendungs-Servers. Der Standardspeicherort lautet:
 
-   * (JBoss®) [AEM-Installationsverzeichnis]\jboss\standalone\tmp
-   * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
-   * (WebSphere®) \Programme\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
+  * (JBoss®) [AEM-Installationsverzeichnis]\jboss\standalone\tmp
+  * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
+  * (WebSphere®) \Programme\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
 * **(nur AEM Forms on JEE)** Verzeichnis des globalen Dokumentenspeichers (GDS). Der Standardspeicherort lautet:
 
-   * (JBoss®) [Anwendungs-Server-Stammordner]/server/&#39;Server&#39;/svcnative/DocumentStorage
-   * (WebLogic) [Anwendungs-Server-Domain]/&#39;Server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere®) [Anwendungs-Server-Stammordner]/installedApps/adobe/&#39;Server&#39;/DocumentStorage
+  * (JBoss®) [Anwendungs-Server-Stammordner]/server/&#39;Server&#39;/svcnative/DocumentStorage
+  * (WebLogic) [Anwendungs-Server-Domain]/&#39;Server&#39;/adobe/LiveCycleServer/DocumentStorage
+  * (WebSphere®) [Anwendungs-Server-Stammordner]/installedApps/adobe/&#39;Server&#39;/DocumentStorage
 
 * **(nur AEM Forms on JEE)** AEM Forms-Server-Protokolle und -Temporärverzeichnis. Der Standardspeicherort lautet:
 
-   * Serverprotokolle: [AEM Forms-Installationsverzeichnis]\Adobe\AEM forms\[app-server]\server\all\logs
-   * Temporäres Verzeichnis: [AEM Forms-Installationsverzeichnis]\temp
+  * Serverprotokolle: [AEM Forms-Installationsverzeichnis]\Adobe\AEM forms\[app-server]\server\all\logs
+  * Temporäres Verzeichnis: [AEM Forms-Installationsverzeichnis]\temp
 
 >[!NOTE]
 >

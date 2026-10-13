@@ -11,13 +11,21 @@ thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2693'
 ht-degree: 93%
-
 ---
-
 # Stile für AEM CIF-Kernkomponenten festlegen {#style-aem-cif-core-components}
 
 Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine Referenz-Code-Basis für die Verwendung von [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components). In diesem Tutorial können Sie sich das Venia-Referenzprojekt ansehen und erfahren, wie von AEM CIF-Kernkomponenten verwendete CSS- und JavaScript-Dateien organisiert werden. Außerdem erstellen Sie mithilfe von CSS einen Stil, um den Standardstil der **Produkt-Teaser-Komponente** zu aktualisieren.
@@ -326,13 +334,13 @@ Der webpack-Dev-Server dient als Proxy für Bilder und einige der CSS/JavaScript
    $ npm start
    ```
 
-   Dadurch wird der webpack-dev-server auf [http://localhost:8080/](http://localhost:8080/) gestartet
+   Dadurch wird der webpack-dev-server auf [http://localhost:8080/ gestartet](http://localhost:8080/)
 
    >[!CAUTION]
    >
    >Wenn Sie einen Sass-bezogenen Fehler erhalten, stoppen Sie den Server, führen Sie den Befehl `npm rebuild node-sass` aus und wiederholen Sie dann die oben genannten Schritte. Dazu kann es kommen, wenn Sie eine andere Version von `npm` und `node` im Projekt `aem-cif-guides-venia/pom.xml` angegeben haben.
 
-1. Navigieren Sie in einer neuen Registerkarte mit demselben Browser :8080 einer angemeldeten Instanz von AEM zum [http://localhost](http://localhost:8080/)/. Über den webpack-Dev-Server sollte die Venia-Startseite angezeigt werden:
+1. Navigieren Sie zu [http://localhost:8080/](http://localhost:8080/) in einer neuen Registerkarte mit demselben Browser wie eine angemeldete Instanz von AEM. Über den webpack-Dev-Server sollte die Venia-Startseite angezeigt werden:
 
    ![webpack-Dev-Server an Port 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 

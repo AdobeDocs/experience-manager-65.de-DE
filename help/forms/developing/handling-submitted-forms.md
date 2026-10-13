@@ -10,13 +10,29 @@ role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2915'
+source-wordcount: '2927'
 ht-degree: 99%
-
 ---
-
 # Verarbeiten von übermittelten Formularen {#handling-submitted-forms}
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
@@ -216,10 +232,10 @@ Verarbeiten eines übermittelten Formulars mithilfe der Forms-API (Java):
 
    * Rufen Sie die Methode `processFormSubmission` des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
-      * Das `com.adobe.idp.Document`-Objekt, das die Formulardaten enthält.
-      * Ein Zeichenfolgenwert, der Umgebungsvariablen einschließlich aller relevanten HTTP-Kopfzeilen angibt. Geben Sie den zu verarbeitenden Content-Typ an. Um XML-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=text/xml`. Um PDF-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=application/pdf`.
-      * Ein Zeichenfolgenwert, der den Wert der `HTTP_USER_AGENT`-Kopfzeile angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Dieser Parameterwert ist optional.
-      * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen speichert.
+     * Das `com.adobe.idp.Document`-Objekt, das die Formulardaten enthält.
+     * Ein Zeichenfolgenwert, der Umgebungsvariablen einschließlich aller relevanten HTTP-Kopfzeilen angibt. Geben Sie den zu verarbeitenden Content-Typ an. Um XML-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=text/xml`. Um PDF-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=application/pdf`.
+     * Ein Zeichenfolgenwert, der den Wert der `HTTP_USER_AGENT`-Kopfzeile angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Dieser Parameterwert ist optional.
+     * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen speichert.
 
      Die `processFormSubmission`-Methode gibt ein `FormsResult`-Objekt aus, das die Ergebnisse der Formularübermittlung enthält.
 
@@ -238,18 +254,18 @@ Verarbeiten eines übermittelten Formulars mithilfe der Forms-API (Java):
 
    * Wenn der Dateninhalt vom Typ `application/vnd.adobe.xdp+xml` oder `text/xml` ist, erstellen Sie eine Anwendungslogik, um XML-Datenwerte abzurufen.
 
-      * Erstellen Sie ein `com.adobe.idp.Document`-Objekt durch Aufrufen der `getOutputContent`-Methode des `FormsResult`-Objekts.
-      * Erstellen Sie ein `java.io.InputStream`-Objekt, indem Sie den `java.io.DataInputStream`-Konstruktor aufrufen und das `com.adobe.idp.Document`-Objekt übergeben.
-      * Erstellen Sie ein `org.w3c.dom.DocumentBuilderFactory`-Objekt, indem Sie die `newInstance`-Methode des statischen `org.w3c.dom.DocumentBuilderFactory`-Objekts aufrufen.
-      * Erstellen Sie ein `org.w3c.dom.DocumentBuilder`-Objekt, indem Sie die `newDocumentBuilder`-Methode des `org.w3c.dom.DocumentBuilderFactory`-Objekts aufrufen.
-      * Erstellen Sie ein `org.w3c.dom.Document`-Objekt, indem Sie die `parse`-Methode des `org.w3c.dom.DocumentBuilder`-Objekts aufrufen und das `java.io.InputStream`-Objekt übergeben.
-      * Rufen Sie den Wert jedes Knotens im XML-Dokument ab. Eine Möglichkeit, diese Aufgabe durchzuführen, besteht darin, eine benutzerdefinierte Methode zu erstellen, die zwei Parameter akzeptiert: das `org.w3c.dom.Document`-Objekt und den Namen des Knotens, dessen Wert Sie abrufen möchten. Diese Methode gibt einen Zeichenfolgewert aus, der den Wert des Knotens darstellt. Im folgenden Code-Beispiel wird diese benutzerdefinierte Methode `getNodeText` genannt. Der Hauptteil dieser Methode wird angezeigt.
+     * Erstellen Sie ein `com.adobe.idp.Document`-Objekt durch Aufrufen der `getOutputContent`-Methode des `FormsResult`-Objekts.
+     * Erstellen Sie ein `java.io.InputStream`-Objekt, indem Sie den `java.io.DataInputStream`-Konstruktor aufrufen und das `com.adobe.idp.Document`-Objekt übergeben.
+     * Erstellen Sie ein `org.w3c.dom.DocumentBuilderFactory`-Objekt, indem Sie die `newInstance`-Methode des statischen `org.w3c.dom.DocumentBuilderFactory`-Objekts aufrufen.
+     * Erstellen Sie ein `org.w3c.dom.DocumentBuilder`-Objekt, indem Sie die `newDocumentBuilder`-Methode des `org.w3c.dom.DocumentBuilderFactory`-Objekts aufrufen.
+     * Erstellen Sie ein `org.w3c.dom.Document`-Objekt, indem Sie die `parse`-Methode des `org.w3c.dom.DocumentBuilder`-Objekts aufrufen und das `java.io.InputStream`-Objekt übergeben.
+     * Rufen Sie den Wert jedes Knotens im XML-Dokument ab. Eine Möglichkeit, diese Aufgabe durchzuführen, besteht darin, eine benutzerdefinierte Methode zu erstellen, die zwei Parameter akzeptiert: das `org.w3c.dom.Document`-Objekt und den Namen des Knotens, dessen Wert Sie abrufen möchten. Diese Methode gibt einen Zeichenfolgewert aus, der den Wert des Knotens darstellt. Im folgenden Code-Beispiel wird diese benutzerdefinierte Methode `getNodeText` genannt. Der Hauptteil dieser Methode wird angezeigt.
 
    * Wenn der Dateninhalt vom Typ `application/pdf` ist, erstellen Sie eine Anwendungslogik, um die übermittelten PDF-Daten als PDF-Datei zu speichern.
 
-      * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie die `getOutputContent`-Methode des `FormsResult`-Objekts aufrufen.
-      * Erstellen Sie ein `java.io.File`-Objekt, indem Sie seinen öffentlichen Konstruktor verwenden. Stellen Sie sicher, dass Sie PDF als Dateinamenerweiterung angeben.
-      * Füllen Sie die PDF-Datei, indem Sie die `copyToFile`-Methode des `com.adobe.idp.Document`-Objekts aufrufen und das `java.io.File`-Objekt übergeben.
+     * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie die `getOutputContent`-Methode des `FormsResult`-Objekts aufrufen.
+     * Erstellen Sie ein `java.io.File`-Objekt, indem Sie seinen öffentlichen Konstruktor verwenden. Stellen Sie sicher, dass Sie PDF als Dateinamenerweiterung angeben.
+     * Füllen Sie die PDF-Datei, indem Sie die `copyToFile`-Methode des `com.adobe.idp.Document`-Objekts aufrufen und das `java.io.File`-Objekt übergeben.
 
 **Siehe auch**
 
@@ -287,17 +303,17 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms-API (Web-Dienst):
    * Erstellen Sie ein Objekt `RenderOptionsSpec`, indem Sie den Konstruktor verwenden. Legen Sie den Gebietsschemawert fest, indem Sie die `setLocale`-Methode des `RenderOptionsSpec`-Objekts aufrufen und einen Zeichenfolgewert übergeben, der den Gebietsschemawert angibt.
    * Rufen Sie die `processFormSubmission`-Methode des `FormsService`-Objekts auf und übergeben Sie die folgenden Werte:
 
-      * Das `BLOB`-Objekt, das die Formulardaten enthält.
-      * Ein Zeichenfolgenwert, der Umgebungsvariablen einschließlich aller relevanten HTTP-Kopfzeilen angibt. Geben Sie den zu verarbeitenden Content-Typ an. Um XML-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=text/xml`. Um PDF-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=application/pdf`.
-      * Ein Zeichenfolgenwert, der den Wert der `HTTP_USER_AGENT`-Kopfzeile angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen speichert.
-      * Ein leeres `BLOBHolder`-Objekt, das von der Methode aufgefüllt wird.
-      * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das von der Methode aufgefüllt wird.
-      * Ein leeres `BLOBHolder`-Objekt, das von der Methode aufgefüllt wird.
-      * Ein leeres `BLOBHolder`-Objekt, das von der Methode aufgefüllt wird.
-      * Ein leeres `javax.xml.rpc.holders.ShortHolder`-Objekt, das von der Methode gefüllt wird.
-      * Ein leeres `MyArrayOf_xsd_anyTypeHolder`-Objekt, das von der Methode gefüllt wird. Dieser Parameter wird zum Speichern von Dateianhängen verwendet, die zusammen mit dem Formular gesendet werden.
-      * Ein leeres `FormsResultHolder`-Objekt, das von der Methode mit dem gesendeten Formular gefüllt wird.
+     * Das `BLOB`-Objekt, das die Formulardaten enthält.
+     * Ein Zeichenfolgenwert, der Umgebungsvariablen einschließlich aller relevanten HTTP-Kopfzeilen angibt. Geben Sie den zu verarbeitenden Content-Typ an. Um XML-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=text/xml`. Um PDF-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=application/pdf`.
+     * Ein Zeichenfolgenwert, der den Wert der `HTTP_USER_AGENT`-Kopfzeile angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+     * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen speichert.
+     * Ein leeres `BLOBHolder`-Objekt, das von der Methode aufgefüllt wird.
+     * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das von der Methode aufgefüllt wird.
+     * Ein leeres `BLOBHolder`-Objekt, das von der Methode aufgefüllt wird.
+     * Ein leeres `BLOBHolder`-Objekt, das von der Methode aufgefüllt wird.
+     * Ein leeres `javax.xml.rpc.holders.ShortHolder`-Objekt, das von der Methode gefüllt wird.
+     * Ein leeres `MyArrayOf_xsd_anyTypeHolder`-Objekt, das von der Methode gefüllt wird. Dieser Parameter wird zum Speichern von Dateianhängen verwendet, die zusammen mit dem Formular gesendet werden.
+     * Ein leeres `FormsResultHolder`-Objekt, das von der Methode mit dem gesendeten Formular gefüllt wird.
 
      Die Methode `processFormSubmission` füllt den Parameter `FormsResultHolder` mit den Ergebnissen der Formularübermittlung.
 
@@ -311,21 +327,21 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms-API (Web-Dienst):
 
    * Wenn der Dateninhalt vom Typ `application/vnd.adobe.xdp+xml` oder `text/xml` ist, erstellen Sie eine Anwendungslogik, um XML-Datenwerte abzurufen.
 
-      * Erstellen Sie ein `BLOB`-Objekt, indem Sie die `getOutputContent`-Methode des `FormsResult`-Objekts aufrufen.
-      * Erstellen Sie ein Byte-Array, indem Sie die `getBinaryData`-Methode des `BLOB`-Objekts aufrufen.
-      * Erstellen Sie ein `java.io.InputStream`-Objekt, indem Sie den `java.io.ByteArrayInputStream`-Konstruktor aufrufen und das Byte-Array übergeben.
-      * Erstellen Sie ein `org.w3c.dom.DocumentBuilderFactory`-Objekt, indem Sie die `newInstance`-Methode des statischen `org.w3c.dom.DocumentBuilderFactory`-Objekts aufrufen.
-      * Erstellen Sie ein `org.w3c.dom.DocumentBuilder`-Objekt, indem Sie die `newDocumentBuilder`-Methode des `org.w3c.dom.DocumentBuilderFactory`-Objekts aufrufen.
-      * Erstellen Sie ein `org.w3c.dom.Document`-Objekt, indem Sie die `parse`-Methode des `org.w3c.dom.DocumentBuilder`-Objekts aufrufen und das `java.io.InputStream`-Objekt übergeben.
-      * Rufen Sie den Wert jedes Knotens im XML-Dokument ab. Eine Möglichkeit, diese Aufgabe durchzuführen, besteht darin, eine benutzerdefinierte Methode zu erstellen, die zwei Parameter akzeptiert: das `org.w3c.dom.Document`-Objekt und den Namen des Knotens, dessen Wert Sie abrufen möchten. Diese Methode gibt einen Zeichenfolgewert aus, der den Wert des Knotens darstellt. Im folgenden Code-Beispiel wird diese benutzerdefinierte Methode `getNodeText` genannt. Der Hauptteil dieser Methode wird angezeigt.
+     * Erstellen Sie ein `BLOB`-Objekt, indem Sie die `getOutputContent`-Methode des `FormsResult`-Objekts aufrufen.
+     * Erstellen Sie ein Byte-Array, indem Sie die `getBinaryData`-Methode des `BLOB`-Objekts aufrufen.
+     * Erstellen Sie ein `java.io.InputStream`-Objekt, indem Sie den `java.io.ByteArrayInputStream`-Konstruktor aufrufen und das Byte-Array übergeben.
+     * Erstellen Sie ein `org.w3c.dom.DocumentBuilderFactory`-Objekt, indem Sie die `newInstance`-Methode des statischen `org.w3c.dom.DocumentBuilderFactory`-Objekts aufrufen.
+     * Erstellen Sie ein `org.w3c.dom.DocumentBuilder`-Objekt, indem Sie die `newDocumentBuilder`-Methode des `org.w3c.dom.DocumentBuilderFactory`-Objekts aufrufen.
+     * Erstellen Sie ein `org.w3c.dom.Document`-Objekt, indem Sie die `parse`-Methode des `org.w3c.dom.DocumentBuilder`-Objekts aufrufen und das `java.io.InputStream`-Objekt übergeben.
+     * Rufen Sie den Wert jedes Knotens im XML-Dokument ab. Eine Möglichkeit, diese Aufgabe durchzuführen, besteht darin, eine benutzerdefinierte Methode zu erstellen, die zwei Parameter akzeptiert: das `org.w3c.dom.Document`-Objekt und den Namen des Knotens, dessen Wert Sie abrufen möchten. Diese Methode gibt einen Zeichenfolgewert aus, der den Wert des Knotens darstellt. Im folgenden Code-Beispiel wird diese benutzerdefinierte Methode `getNodeText` genannt. Der Hauptteil dieser Methode wird angezeigt.
 
    * Wenn der Dateninhalt vom Typ `application/pdf` ist, erstellen Sie eine Anwendungslogik, um die übermittelten PDF-Daten als PDF-Datei zu speichern.
 
-      * Erstellen Sie ein `BLOB`-Objekt, indem Sie die `getOutputContent`-Methode des `FormsResult`-Objekts aufrufen.
-      * Erstellen Sie ein Byte-Array, indem Sie die `getBinaryData`-Methode des `BLOB`-Objekts aufrufen.
-      * Erstellen Sie ein `java.io.File`-Objekt, indem Sie seinen öffentlichen Konstruktor verwenden. Stellen Sie sicher, dass Sie PDF als Dateinamenerweiterung angeben.
-      * Erstellen Sie ein `java.io.FileOutputStream`-Objekt, indem Sie seinen Konstruktor verwenden und das `java.io.File`-Objekt übergeben.
-      * Füllen Sie die PDF-Datei, indem Sie die `write`-Methode des `java.io.FileOutputStream`-Objekts aufrufen und das Byte-Array übergeben.
+     * Erstellen Sie ein `BLOB`-Objekt, indem Sie die `getOutputContent`-Methode des `FormsResult`-Objekts aufrufen.
+     * Erstellen Sie ein Byte-Array, indem Sie die `getBinaryData`-Methode des `BLOB`-Objekts aufrufen.
+     * Erstellen Sie ein `java.io.File`-Objekt, indem Sie seinen öffentlichen Konstruktor verwenden. Stellen Sie sicher, dass Sie PDF als Dateinamenerweiterung angeben.
+     * Erstellen Sie ein `java.io.FileOutputStream`-Objekt, indem Sie seinen Konstruktor verwenden und das `java.io.File`-Objekt übergeben.
+     * Füllen Sie die PDF-Datei, indem Sie die `write`-Methode des `java.io.FileOutputStream`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
 

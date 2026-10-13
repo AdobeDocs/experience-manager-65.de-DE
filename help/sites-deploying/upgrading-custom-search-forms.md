@@ -9,13 +9,22 @@ feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 100%
-
+source-wordcount: '1796'
+ht-degree: 99%
 ---
-
 # Upgrades von benutzerdefinierten Suchformularen{#upgrading-custom-search-forms}
 
 Der in AEM 6.2 verwendete Speicherort von benutzerdefinierten Suchformularen im Repository wurde geändert. Nach dem Upgrade werden diese von ihrem Speicherort in 6.1 unter:
@@ -40,7 +49,7 @@ Sie können die Eigenschaft ändern, indem Sie folgende Schritte ausführen:
 
 1. Öffnen von CRXDE Lite über `https://server:port/crx/de/index.jsp`
 1. Navigieren Sie zum Speicherort des Knotens, der angepasst werden muss, wie in der Liste mit [benutzerdefinierten Suchformularen](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) unten angegeben.
-1. Klicken Sie auf den Knoten. Klicken Sie im rechten Eigenschaftenfenster auf die Eigenschaft **sling:resourceType** und ändern Sie diese.
+1. Klicken Sie auf den Knoten. Klicken Sie im rechten Eigenschaftenbereich auf und ändern Sie die Eigenschaft **sling:resourceType** .
 1. Speichern Sie dann die Änderungen durch Anklicken der Schaltfläche **Alle speichern**.
 
 ## Liste der benutzerdefinierten Suchformulare {#list-of-custom-search-forms}
@@ -97,7 +106,7 @@ In AEM 6.1 war die standardmäßige Volltexteigenschaft Teil des Suchformulars. 
  <tbody>
   <tr>
    <td>Knoten im Standard-Suchformular in 6.1<br /> <br /> </td>
-   <td>path</td>
+   <td>Pfade</td>
   </tr>
   <tr>
    <td><p>Ressourcentyp in 6.1</p> </td>
@@ -159,13 +168,13 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
 * Entfernen Sie den Knoten `pagestatuspredicate`
 * Kopieren Sie den Knoten
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
-   * in `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
+  * in `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * Kopieren Sie den Knoten
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
-   * in `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
+  * in `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * Stellen Sie sicher, dass Sie die Eigenschaft `listOrder` für den Knoten `analyticspredicate` auf „**8**“ setzen. Dies ist erforderlich, um Konflikte zu vermeiden.
 
@@ -238,7 +247,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  <tbody>
   <tr>
    <td>Knoten im Standard-Suchformular in 6.1<br /> <br /> </td>
-   <td>Nicht zutreffend</td>
+   <td>k. A.</td>
   </tr>
   <tr>
    <td><p>Ressourcentyp in 6.1</p> </td>
@@ -263,7 +272,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  <tbody>
   <tr>
    <td>Knoten im Standard-Suchformular in 6.1<br /> <br /> </td>
-   <td>Nicht zutreffend</td>
+   <td>k. A.</td>
   </tr>
   <tr>
    <td><p>Ressourcentyp in 6.1</p> </td>
@@ -284,7 +293,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  <tbody>
   <tr>
    <td>Knoten im Standard-Suchformular in 6.1<br /> <br /> </td>
-   <td>Nicht zutreffend</td>
+   <td>k. A.</td>
   </tr>
   <tr>
    <td><p>Ressourcentyp in 6.1</p> </td>
@@ -305,7 +314,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  <tbody>
   <tr>
    <td>Knoten im Standard-Suchformular in 6.1<br /> <br /> </td>
-   <td>Nicht zutreffend</td>
+   <td>k. A.</td>
   </tr>
   <tr>
    <td><p>Ressourcentyp in 6.1</p> </td>
@@ -326,7 +335,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  <tbody>
   <tr>
    <td>Knoten im Standard-Suchformular in 6.1<br /> <br /> </td>
-   <td>Nicht zutreffend</td>
+   <td>k. A.</td>
   </tr>
   <tr>
    <td><p>Ressourcentyp in 6.1</p> </td>
@@ -347,7 +356,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  <tbody>
   <tr>
    <td>Knoten im Standard-Suchformular in 6.1<br /> <br /> </td>
-   <td>Nicht zutreffend</td>
+   <td>k. A.</td>
   </tr>
   <tr>
    <td><p>Ressourcentyp in 6.1</p> </td>

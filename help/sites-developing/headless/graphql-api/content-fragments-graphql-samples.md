@@ -5,13 +5,25 @@ feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 3a38a2f1e753e33d9d3d4d4e7ebc24f16f795966
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1577'
-ht-degree: 99%
-
+source-wordcount: '1576'
+ht-degree: 98%
 ---
-
 # Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
 
 Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um „headless“-Inhalte bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
@@ -142,7 +154,7 @@ Diese Beispielabfrage gibt alle `types` für alle verfügbaren Schemata zurück.
 
 ### Beispielabfrage – Alle Informationen zu allen Städten {#sample-all-information-all-cities}
 
-Um alle Informationen zu allen Städten abzurufen, können Sie die grundlegende Abfrage verwenden:
+Um alle Informationen zu allen Städten abzurufen, können Sie die Standardabfrage verwenden:
 **Beispielabfrage**
 
 ```graphql
@@ -591,7 +603,7 @@ query {
 }
 ```
 
-### Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben  {#sample-all-persons-not-jobs}
+### Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben {#sample-all-persons-not-jobs}
 
 Diese Beispielabfrage filtert alle `persons` nach allen, die den Namen `Jobs` oder `Smith` haben.
 
@@ -927,7 +939,7 @@ query {
 }
 ```
 
-### Beispielabfrage für verschachtelte Inhaltsfragmente – Alle Unternehmen mit mindestens einem Mitarbeiter mit dem Namen „Smith“  {#sample-companies-employee-smith}
+### Beispielabfrage für verschachtelte Inhaltsfragmente – Alle Unternehmen mit mindestens einem Mitarbeiter mit dem Namen „Smith“ {#sample-companies-employee-smith}
 
 Diese Abfrage veranschaulicht die Filterung nach `person` von `name` „Smith“, wobei Informationen aus zwei verschachtelten Fragmenten – `company` und `employee` – zurückgegeben werden.
 
@@ -1245,11 +1257,11 @@ Diese Abfrage untersucht:
 Diese Beispielabfrage untersucht:
 
 * Ein einzelnes Inhaltsfragment vom Typ `article` an einem bestimmten Pfad
-   * innerhalb dieses Pfades alle Formate des Inhalts:
-      * HTML
-      * Markdown
-      * Nur Text
-      * JSON
+  * innerhalb dieses Pfades alle Formate des Inhalts:
+    * HTML
+    * Markdown
+    * Nur Text
+    * JSON
 
 **Beispielabfrage**
 
@@ -1275,7 +1287,7 @@ Diese Beispielabfrage untersucht:
 Diese Beispielabfrage untersucht:
 
 * Für ein einzelnes Inhaltsfragment
-   * Details des zugrunde liegenden Inhaltsfragmentmodells
+  * Details des zugrunde liegenden Inhaltsfragmentmodells
 
 **Beispielabfrage**
 
@@ -1299,7 +1311,7 @@ Diese Beispielabfrage untersucht:
 Diese Abfrage untersucht:
 
 * Ein einzelnes Inhaltsfragment vom Typ `article` an einem bestimmten Pfad
-   * innerhalb dieses Pfades, den Pfad und die Autorin bzw. der Autor des referenzierten (verschachtelten) Fragments
+  * innerhalb dieses Pfades, den Pfad und die Autorin bzw. der Autor des referenzierten (verschachtelten) Fragments
 
 >[!NOTE]
 >
@@ -1329,7 +1341,7 @@ Diese Abfrage untersucht:
 Diese Abfrage untersucht:
 
 * Mehrere Inhaltsfragmente vom Typ `bookmark`
-   * Mit Fragmentverweisen auf andere Fragmente des spezifischen Modelltyps `Article`
+  * Mit Fragmentverweisen auf andere Fragmente des spezifischen Modelltyps `Article`
 
 >[!NOTE]
 >
@@ -1353,7 +1365,7 @@ Diese Abfrage untersucht:
 Diese Abfrage untersucht:
 
 * Mehrere Inhaltsfragmente vom Typ `bookmark`
-   * Mit Fragmentreferenzen auf andere Fragmente der spezifischen Modelltypen `Article` und `Adventure`
+  * Mit Fragmentreferenzen auf andere Fragmente der spezifischen Modelltypen `Article` und `Adventure`
 
 >[!NOTE]
 >
@@ -1388,7 +1400,7 @@ Es gibt zwei Varianten dieser Abfrage:
 Diese Abfragen untersuchen:
 
 * Mehrere Inhaltsfragmente vom Typ `bookmark`
-   * Mit Inhaltsreferenzen auf andere Fragmente.
+  * Mit Inhaltsreferenzen auf andere Fragmente.
 
 #### Beispielabfrage für mehrere Inhaltsfragmente mit vorab abgerufenen Verweisen {#sample-wknd-multiple-fragments-prefetched-references}
 
@@ -1470,7 +1482,7 @@ Die folgende Abfrage gibt alle `attachments` zurück – ein bestimmtes Feld (Un
 Diese Abfrage untersucht:
 
 * Ein einzelnes Inhaltsfragment vom Typ `bookmark` an einem bestimmten Pfad
-   * Darin die RTE-Inline-Verweise
+  * Darin die RTE-Inline-Verweise
 
 >[!NOTE]
 >
@@ -1516,7 +1528,7 @@ Diese Abfrage untersucht:
 Diese Abfrage untersucht:
 
 * Ein einzelnes Inhaltsfragment vom Typ `article` an einem bestimmten Pfad
-   * innerhalb dieses Pfades die Daten, die sich auf die folgende Variante beziehen: `variation1`
+  * innerhalb dieses Pfades die Daten, die sich auf die folgende Variante beziehen: `variation1`
 
 **Beispielabfrage**
 
@@ -1655,9 +1667,9 @@ Die Abfragen basieren auf der folgenden Struktur, die Folgendes verwendet:
 
 Für die Beispielabfragen verwenden wir die folgenden Inhaltsmodelle und ihre Wechselbeziehungen (Verweise ->):
 
-* [Unternehmen](#model-company)
-> [Person](#model-person)
-> [Auszeichnung](#model-award)
+* [Firma](#model-company)
+-> [Person](#model-person)
+    -> [Auszeichnung](#model-award)
 
 * [Stadt](#model-city)
 

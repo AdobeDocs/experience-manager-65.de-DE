@@ -9,13 +9,17 @@ exl-id: 9d350935-129a-40d3-89f4-2e6f69676e5e
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '692'
 ht-degree: 2%
-
 ---
-
 # Erstellen und Verwalten von App-Inhalten{#creating-and-managing-app-content}
 
 {{ue-over-mobile}}
@@ -50,7 +54,7 @@ Wählen Sie eines der aufgelisteten Inhaltspakete aus, um Inhalte zu erstellen o
 
 Hinweis *Alles ist Inhalt*, d. h. Anwendungsstile, Kopien (Text), Medien, Seiten, Navigation und Targeting von Inhalten können alle ohne einen Besuch eines App-Stores bearbeitet und aktualisiert werden.
 
-Um AEM Mobile-Inhalte bearbeiten zu können, benötigen AEM-Autorinnen und -Autoren ein fundiertes Verständnis der Inhaltsbearbeitungsoberfläche von AEM: [Authoring von Seiten in AEM.](/help/sites-authoring/qg-page-authoring.md)
+Um AEM Mobile-Inhalte bearbeiten zu können, benötigen AEM-Autorinnen und -Autoren ein solides Verständnis der Inhaltsbearbeitungsoberfläche von AEM: [Authoring von Seiten in AEM.](/help/sites-authoring/qg-page-authoring.md)
 
 ## Die Kachel Inhaltspakete verwalten {#the-manage-content-packages-tile}
 
@@ -60,7 +64,7 @@ Hier können *AEM-Administratoren* ihre Apps schnell und einfach aktualisieren, 
 
 Sobald *AEM-* Inhalte über die Kachel „Inhalt verwalten“ hinzugefügt oder geändert haben, können *AEM-* diese Änderungen mit einer Aktualisierung der Inhaltspakete an Kunden senden.
 
-Mit der Inhaltspaketaktion kann die *AEM-Autoreninstanz* Seiteninhalte erstellen und bearbeiten, während das Entwicklungs-Team Änderungen am Design und an der Implementierung einer Hostanwendung vornimmt, einschließlich Navigation, Stil, Server-seitiger Logik, Vorlagen und Komponenten, und diese Änderungen dann an Kundinnen und Kunden von OTA überträgt, ohne erneut an die verschiedenen Stores zur Verteilung übermitteln zu müssen.
+Mit der Inhaltspaketaktion kann der *AEM-Autor* Seiteninhalte erstellen und bearbeiten, während das Entwicklungs-Team Änderungen am Design und an der Implementierung einer Hostanwendung vornimmt, einschließlich Navigation, Stil, Server-seitiger Logik, Vorlagen und Komponenten, und diese Änderungen dann OTA an Kunden weiterleitet, ohne sie erneut an die verschiedenen Stores zur Verteilung übermitteln zu müssen.
 
 **So veröffentlichen Sie neue oder aktualisierte Inhalte**
 
@@ -78,13 +82,13 @@ Beim Staging einer Inhaltsaktualisierung können mehrere Aktualisierungen vorgen
 
 >[!NOTE]
 >
->Der bereitgestellte Inhalt kann vor der Veröffentlichung mit der AEM-Überprüfungs-App überprüft werden.
+>Die bereitgestellten Inhalte können vor der Veröffentlichung mit der AEM-Überprüfungs-App überprüft werden.
 >
->Siehe [Mobile Schnellstart für AEM-Überprüfung](/help/mobile/phonegap-mobile-quickstart.md) für weitere Informationen zur AEM-Verifizierungs-App.
+>Weitere Informationen [&#x200B; der AEM Verify-App finden Sie &#x200B;](/help/mobile/phonegap-mobile-quickstart.md) „Mobile Quickstart für AEM Verify“.
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 
-Wenn Sie bereit sind, Ihren App-Benutzern mit Content Sync OTA neue Inhalte bereitzustellen, wählen Sie **Publish** aus, wie unten dargestellt.
+Wenn Sie bereit sind, neue Inhalte für Ihre App-Benutzer mit Content Sync OTA bereitzustellen, wählen Sie **Veröffentlichen** wie unten dargestellt aus.
 
 ![chlimage_1-166](assets/chlimage_1-166.png)
 

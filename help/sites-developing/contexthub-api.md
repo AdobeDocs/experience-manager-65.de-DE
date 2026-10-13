@@ -9,13 +9,29 @@ feature: Context Hub,Developing,Personalization
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: db974db1-cf49-4452-872e-5a56c5f1d391
+    internal-label: Context Hub
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4976'
 ht-degree: 99%
-
 ---
-
 # Verweis auf die ContextHub-JavaScript-API{#contexthub-javascript-api-reference}
 
 Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die [ContextHub-Komponente zur Seite hinzugefügt wurde](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
@@ -271,9 +287,9 @@ Initialisiert den Store.
 * **name:** Der Name des Stores.
 * **config:** Ein Objekt, das Konfigurationseigenschaften enthält:
 
-   * eventDeferring: Der Standardwert ist 32.
-   * eventing: Das [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing)-Objekt für diesen Store. Der Standardwert ist das ContextHub.eventing-Objekt.
-   * persistence: Das ContextHub.Utils.Persistence-Objekt für diesen Store. Der Standardwert ist das ContextHub.persistence-Objekt.
+  * eventDeferring: Der Standardwert ist 32.
+  * eventing: Das [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing)-Objekt für diesen Store. Der Standardwert ist das ContextHub.eventing-Objekt.
+  * persistence: Das ContextHub.Utils.Persistence-Objekt für diesen Store. Der Standardwert ist das ContextHub.persistence-Objekt.
 
 #### isEventingPaused() {#iseventingpaused}
 
@@ -303,7 +319,7 @@ Optional können Sie das Auslösen des Ereignisses `data` verhindern.
 * **key:** (Zeichenfolge) Der Name des zu entfernenden Schlüssels.
 * **options:** (Objekt) Ein Objekt von Optionen. Die folgenden Objekteigenschaften sind gültig:
 
-   * silent: Ein Wert `true` verhindert das Auslösen des `data`-Ereignisses. Der Standardwert ist `false`.
+  * silent: Ein Wert `true` verhindert das Auslösen des `data`-Ereignisses. Der Standardwert ist `false`.
 
 **Rückgabe**
 
@@ -376,7 +392,7 @@ Die Ereignisdaten umfassen den Store-Namen, den Schlüssel, den vorherigen Wert,
 * **key:** (Zeichenfolge) Der Name des Schlüssels.
 * **options:** (Objekt) Ein Objekt von Optionen. Die folgenden Objekteigenschaften sind gültig:
 
-   * silent: Ein Wert `true` verhindert das Auslösen des `data`-Ereignisses. Der Standardwert ist `false`.
+  * silent: Ein Wert `true` verhindert das Auslösen des `data`-Ereignisses. Der Standardwert ist `false`.
 
 * **value:** (Objekt) Der Wert, der dem Schlüssel zugeordnet werden soll.
 
@@ -405,16 +421,16 @@ Konfiguriert die Details für die Verbindung mit dem JSONP-Service, den dieses O
 
 * **serviceConfig:** Ein Objekt, das folgende Eigenschaften enthält:
 
-   * host: (Zeichenfolge) Server-Name oder IP-Adresse.
-   * jsonp: (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Wenn „true“, wird das {callback: „ContextHub.Callbacks.*Object.name*}-Objekt zum service.params-Objekt hinzugefügt.
-   * params: (Object) URL-Parameter, die als Objekteigenschaften dargestellt werden. Parameternamen sind Eigenschaftsnamen und Parameterwerte sind Eigenschaftswerte.
-   * path: (Zeichenfolge) Der Pfad zum Dienst.
-   * port: (Zahl) Die Port-Nummer des Dienstes.
-   * secure: (Zeichenfolge oder Boolescher Wert) Bestimmt das für die Dienst-URL zu verwendende Protokoll:
+  * host: (Zeichenfolge) Server-Name oder IP-Adresse.
+  * jsonp: (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Wenn „true“, wird das {callback: „ContextHub.Callbacks.*Object.name*}-Objekt zum service.params-Objekt hinzugefügt.
+  * params: (Object) URL-Parameter, die als Objekteigenschaften dargestellt werden. Parameternamen sind Eigenschaftsnamen und Parameterwerte sind Eigenschaftswerte.
+  * path: (Zeichenfolge) Der Pfad zum Dienst.
+  * port: (Zahl) Die Port-Nummer des Dienstes.
+  * secure: (Zeichenfolge oder Boolescher Wert) Bestimmt das für die Dienst-URL zu verwendende Protokoll:
 
-      * auto: //
-      * true: https://
-      * false: https://
+    * auto: //
+    * true: https://
+    * false: https://
 
 * **override:** (Boolesch). Ein Wert `true` bewirkt, dass die vorhandene Service-Konfiguration durch die Eigenschaften von `serviceConfig` ersetzt wird. Der Wert `false` bewirkt, dass die vorhandenen Service-Konfigurationseigenschaften mit den Eigenschaften von `serviceConfig` zusammengeführt werden.
 
@@ -442,9 +458,9 @@ Ein Objekt mit den folgenden Eigenschaften:
 * **port:** (Zahl) Die Port-Nummer des Dienstes.
 * **secure:** (Zeichenfolge oder Boolescher Wert) Bestimmt das für die Dienst-URL zu verwendende Protokoll:
 
-   * auto: //
-   * true: https://
-   * false: https://
+  * auto: //
+  * true: https://
+  * false: https://
 
 #### getServiceURL(resolve) {#getserviceurl-resolve}
 
@@ -467,24 +483,24 @@ initialisiert das ContextHub.Store.JSONPStore-Objekt.
 * **name:** (Zeichenfolge) Der Name des Stores.
 * **config:** (Object) Ein Objekt, das die Service-Eigenschaft enthält. Das JSONPStore-Objekt verwendet die Eigenschaften des `service`objekts, um die URL des JSONP-Service zu erstellen:
 
-   * EventDeferring: 32.
-   * eventing: Das ContextHub.Utils.Eventing-Objekt für diesen Store. Der Standardwert ist das `ContextHub.eventing`-Objekt.
-   * persistence: Das ContextHub.Utils.Persistence-Objekt für diesen Store. Standardmäßig wird die Speicherpersistenz verwendet (JavaScript-Objekt).
-   * service: (Object)
+  * EventDeferring: 32.
+  * eventing: Das ContextHub.Utils.Eventing-Objekt für diesen Store. Der Standardwert ist das `ContextHub.eventing`-Objekt.
+  * persistence: Das ContextHub.Utils.Persistence-Objekt für diesen Store. Standardmäßig wird die Speicherpersistenz verwendet (JavaScript-Objekt).
+  * service: (Object)
 
-      * host: (Zeichenfolge) Server-Name oder IP-Adresse.
-      * jsonp: (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Wenn „true“, wird das `{callback: "ContextHub.Callbacks.*Object.name*}`-Objekt `service.params` hinzugefügt.
-      * params: (Object) URL-Parameter, die als Objekteigenschaften dargestellt werden. Parameternamen und Werte sind jeweils die Namen und Werte der Objekteigenschaften.
-      * path: (Zeichenfolge) Der Pfad zum Dienst.
-      * port: (Zahl) Die Port-Nummer des Dienstes.
-      * secure: (Zeichenfolge oder Boolescher Wert) Bestimmt das für die Dienst-URL zu verwendende Protokoll:
+    * host: (Zeichenfolge) Server-Name oder IP-Adresse.
+    * jsonp: (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Wenn „true“, wird das `{callback: "ContextHub.Callbacks.*Object.name*}`-Objekt `service.params` hinzugefügt.
+    * params: (Object) URL-Parameter, die als Objekteigenschaften dargestellt werden. Parameternamen und Werte sind jeweils die Namen und Werte der Objekteigenschaften.
+    * path: (Zeichenfolge) Der Pfad zum Dienst.
+    * port: (Zahl) Die Port-Nummer des Dienstes.
+    * secure: (Zeichenfolge oder Boolescher Wert) Bestimmt das für die Dienst-URL zu verwendende Protokoll:
 
-         * auto: //
-         * true: https://
-         * false: https://
+      * auto: //
+      * true: https://
+      * false: https://
 
-      * timeout: (Zahl) Die Zeitspanne in Millisekunden, für die auf eine Antwort des JSONP-Dienstes gewartet wird, bevor eine Zeitüberschreitung eintritt.
-      * ttl: Die Mindestdauer in Millisekunden, die zwischen Aufrufen an den JSONP-Dienst vergeht. (Siehe [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload) Funktion).
+    * timeout: (Zahl) Die Zeitspanne in Millisekunden, für die auf eine Antwort des JSONP-Dienstes gewartet wird, bevor eine Zeitüberschreitung eintritt.
+    * ttl: Die Mindestdauer in Millisekunden, die zwischen Aufrufen an den JSONP-Dienst vergeht. (Siehe [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload) Funktion).
 
 #### queryService(reload) {#queryservice-reload}
 
@@ -580,10 +596,10 @@ Gibt alle Cookies zurück, deren Schlüssel einem Filter entsprechen.
 
 * (Wahlweise) **filter:** Kriterien für übereinstimmende Cookie-Schlüssel. Um alle Cookies zurückzugeben, geben Sie keinen Wert an. Die folgenden Typen werden unterstützt:
 
-   * Zeichenfolge: Die Zeichenfolge wird mit dem Cookie-Schlüssel verglichen.
-   * Array: Jedes Element im Array ist ein Filter.
-   * Ein RegExp-Objekt: Die Testfunktion des Objekts wird verwendet, um Cookie-Schlüssel abzugleichen.
-   * Eine Funktion: Eine Funktion, die einen Cookie-Schlüssel für eine Übereinstimmung testet. Die Funktion muss den Cookie-Schlüssel als Parameter annehmen und true zurückgeben, wenn der Test eine Übereinstimmung bestätigt.
+  * Zeichenfolge: Die Zeichenfolge wird mit dem Cookie-Schlüssel verglichen.
+  * Array: Jedes Element im Array ist ein Filter.
+  * Ein RegExp-Objekt: Die Testfunktion des Objekts wird verwendet, um Cookie-Schlüssel abzugleichen.
+  * Eine Funktion: Eine Funktion, die einen Cookie-Schlüssel für eine Übereinstimmung testet. Die Funktion muss den Cookie-Schlüssel als Parameter annehmen und true zurückgeben, wenn der Test eine Übereinstimmung bestätigt.
 
 **Rückgabe**
 
@@ -621,10 +637,10 @@ Gibt ein Array der Schlüssel der vorhandenen Cookies zurück, die mit einem Fil
 
 * **filter:** Kriterien für übereinstimmende Cookie-Schlüssel. Die folgenden Typen werden unterstützt:
 
-   * Zeichenfolge: Die Zeichenfolge wird mit dem Cookie-Schlüssel verglichen.
-   * Array: Jedes Element im Array ist ein Filter.
-   * Ein RegExp-Objekt: Die Testfunktion des Objekts wird verwendet, um Cookie-Schlüssel abzugleichen.
-   * Eine Funktion: Eine Funktion, die einen Cookie-Schlüssel für eine Übereinstimmung testet. Die Funktion muss den Cookie-Schlüssel als Parameter annehmen und `true` zurückgeben, wenn der Test eine Übereinstimmung bestätigt.
+  * Zeichenfolge: Die Zeichenfolge wird mit dem Cookie-Schlüssel verglichen.
+  * Array: Jedes Element im Array ist ein Filter.
+  * Ein RegExp-Objekt: Die Testfunktion des Objekts wird verwendet, um Cookie-Schlüssel abzugleichen.
+  * Eine Funktion: Eine Funktion, die einen Cookie-Schlüssel für eine Übereinstimmung testet. Die Funktion muss den Cookie-Schlüssel als Parameter annehmen und `true` zurückgeben, wenn der Test eine Übereinstimmung bestätigt.
 
 **Rückgabe**
 
@@ -666,9 +682,9 @@ Erstellt ein Cookie mit dem angegebenen Schlüssel und Wert und fügt das Cookie
 * **value:** Eine Zeichenfolge, die den Wert des Cookies enthält.
 * **options:** (Optional) Ein Objekt, das eine der folgenden Eigenschaften enthält, die die Cookie-Attribute konfigurieren:
 
-   * expires: Ein `date`- oder `number`wert, der angibt, wann das Cookie abläuft. Ein Datumswert gibt die absolute Verfallszeit an. Eine Zahl (in Tagen) legt die Verfallszeit auf die aktuelle Zeit plus die Zahl fest. Der Standardwert ist `undefined`.
-   * secure: Ein `boolean` Wert, der das `Secure`-Attribut des Cookies angibt. Der Standardwert ist `false`.
-   * path: Ein `String`-Wert, der als `Path`-Attribut des Cookies verwendet wird. Der Standardwert ist `undefined`.
+  * expires: Ein `date`- oder `number`wert, der angibt, wann das Cookie abläuft. Ein Datumswert gibt die absolute Verfallszeit an. Eine Zahl (in Tagen) legt die Verfallszeit auf die aktuelle Zeit plus die Zahl fest. Der Standardwert ist `undefined`.
+  * secure: Ein `boolean` Wert, der das `Secure`-Attribut des Cookies angibt. Der Standardwert ist `false`.
+  * path: Ein `String`-Wert, der als `Path`-Attribut des Cookies verwendet wird. Der Standardwert ist `undefined`.
 
 **Rückgabe**
 

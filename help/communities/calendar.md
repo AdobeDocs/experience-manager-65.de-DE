@@ -10,13 +10,20 @@ exl-id: c9b34b00-525d-4ca3-bd18-11bb7ce66787
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1169'
 ht-degree: 1%
-
 ---
-
 # Kalenderfunktion {#calendar-feature}
 
 ## Einführung {#introduction}
@@ -92,7 +99,7 @@ Geben **auf der Registerkarte** Einstellungen“ an, ob Tags auf Kalendereinträ
 
 * **Max. Größe der angehängten Bilddatei**
 
-  Nur relevant, wenn Datei-Uploads zulassen aktiviert ist. Maximale Anzahl an Byte, die eine hochgeladene Bilddatei aufweisen darf. Der Standardwert lautet 2097152 **&#x200B; &#x200B;** (2 MB).
+  Nur relevant, wenn Datei-Uploads zulassen aktiviert ist. Maximale Anzahl an Byte, die eine hochgeladene Bilddatei aufweisen darf. Der Standardwert lautet 2097152 **&#x200B; ** (2 MB).
 
 * **Zulässige Cover-Bildtypen**
 

@@ -4,14 +4,27 @@ description: Zählen aller übermittelten/gerenderten Formulare, der in ein ande
 feature: Transaction Reports
 exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 role: Admin, User, Developer
-solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: cf6705707554894deeb0315d3e9c7252af211e54
+solution: Experience Manager, Experience Manager Forms
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '666'
-ht-degree: 84%
-
+ht-degree: 83%
 ---
-
 
 # Aktivieren und Anzeigen von Transaktionsberichten für AEM Forms on JEE {#transaction-reports-overview}
 
@@ -79,7 +92,7 @@ For Jboss Cluster:
 "<Jboss home>/transaction_log.log"
 ```
 
-Beispiel eines Transaktionseintrags:
+Beispiel für einen Beispiel-Transaktionsdatensatz:
 `[2024-02-28 06:11:27] [INFO] TransactionRecord{service='GeneratePDFService', operation='HtmlFileToPDF', internalService='GeneratePDFService', internalOperation='HtmlFileToPDF', transactionOperationType='CONVERT', transactionCount=1, elapsedTime=1906, transactionDate=Wed Feb 28 06:11:25 UTC 2024}`
 
 #### Transaktionseintrag {#transaction-record-structure-jee}

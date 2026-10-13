@@ -10,13 +10,22 @@ exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2806'
 ht-degree: 99%
-
 ---
-
 # Reporting {#reporting}
 
 Um Ihnen bei der Überwachung und Analyse des Status Ihrer Instanz zu helfen, stellt Adobe Experience Manager (AEM) eine Auswahl von Standardberichten bereit, die für Ihre individuellen Anforderungen konfiguriert werden können:
@@ -73,8 +82,8 @@ So ändern Sie die Datenauswahl:
 
 * Ziehen Sie zum Hinzufügen einer Spalte die erforderliche Komponente aus dem Sidekick und legen Sie sie an der gewünschten Position ab.
 
-   * Ein grünes Häkchen steht für eine gültige Position und durch zwei Pfeile wird genau gezeigt, wo die Platzierung erfolgt.
-   * Ein rotes Kreuzsymbol steht für eine ungültige Position.
+  * Ein grünes Häkchen steht für eine gültige Position und durch zwei Pfeile wird genau gezeigt, wo die Platzierung erfolgt.
+  * Ein rotes Kreuzsymbol steht für eine ungültige Position.
 
 * Um eine Spalte zu verschieben, klicken Sie auf die Überschrift, halten Sie sie gedrückt und ziehen Sie sie an die neue Position.
 * Um eine Spalte zu entfernen, klicken Sie auf den Spaltentitel, halten Sie ihn gedrückt und ziehen Sie ihn in den Kopfzeilenbereich des Berichts. (Ein rotes Minuszeichen weist darauf hin, dass die Position ungültig ist.) Lassen Sie die Maustaste los. Daraufhin werden Sie über das Dialogfeld „Komponenten löschen“ aufgefordert, die Löschung der Spalte zu bestätigen.
@@ -173,8 +182,8 @@ Wenn die Datenerfassung begonnen hat, können Sie Folgendes auswählen:
 
   Wenn zum Beispiel für Februar 2011 tägliche Momentaufnahmen verfügbar sind:
 
-   * Wenn das Intervall auf `Day` festgelegt ist, wird jede Momentaufnahme als einzelner Wert im Diagramm angezeigt.
-   * Wenn das Intervall auf `Month` festgelegt ist, werden alle Momentaufnahmen aus dem Monat Februar in einem einzelnen Wert zusammengefasst (der im Diagramm als einzelner „Punkt“ angezeigt wird).
+  * Wenn das Intervall auf `Day` festgelegt ist, wird jede Momentaufnahme als einzelner Wert im Diagramm angezeigt.
+  * Wenn das Intervall auf `Month` festgelegt ist, werden alle Momentaufnahmen aus dem Monat Februar in einem einzelnen Wert zusammengefasst (der im Diagramm als einzelner „Punkt“ angezeigt wird).
 
 Wählen Sie Ihre Anforderungen aus und klicken Sie dann auf **Los**, um sie auf den Bericht anzuwenden. Um die Anzeige nach der Anfertigung weiterer Momentaufnahmen zu aktualisieren, klicken Sie erneut auf **Los**.
 
@@ -250,17 +259,17 @@ Dies ist ein Speicherort, an dem der Zeitraum für die Erfassung von Momentaufna
 
 * **Berichtsverarbeitung**
 
-   * **Daten automatisch aktualisieren**
+  * **Daten automatisch aktualisieren**
 
-     Die Berichtsdaten werden bei jeder Aktualisierung der Berichtsdefinition aktualisiert.
+    Die Berichtsdaten werden bei jeder Aktualisierung der Berichtsdefinition aktualisiert.
 
-   * **Daten manuell aktualisieren**
+  * **Daten manuell aktualisieren**
 
-     Diese Option kann verwendet werden, um bei einer großen Datenmenge durch automatische Aktualisierungsvorgänge verursachte Verzögerungen zu verhindern.
+    Diese Option kann verwendet werden, um bei einer großen Datenmenge durch automatische Aktualisierungsvorgänge verursachte Verzögerungen zu verhindern.
 
-     Diese Auswahl zeigt an, dass die Berichtsdaten manuell aktualisiert werden müssen, wenn sich ein beliebiger Aspekt der Berichtskonfiguration verändert hat. Außerdem bedeutet dies, dass die Berichtstabelle bei jeder Änderung eines Konfigurationsaspekts ausgeblendet wird.
+    Diese Auswahl zeigt an, dass die Berichtsdaten manuell aktualisiert werden müssen, wenn sich ein beliebiger Aspekt der Berichtskonfiguration verändert hat. Außerdem bedeutet dies, dass die Berichtstabelle bei jeder Änderung eines Konfigurationsaspekts ausgeblendet wird.
 
-     Wenn diese Option ausgewählt ist, wird die Schaltfläche **[Daten laden](#load-data)** (neben **Bearbeiten** im Bericht) angezeigt. Mit **Daten laden** werden die Daten geladen und die angezeigten Berichtsdaten werden aktualisiert.
+    Wenn diese Option ausgewählt ist, wird die Schaltfläche **[Daten laden](#load-data)** (neben **Bearbeiten** im Bericht) angezeigt. Mit **Daten laden** werden die Daten geladen und die angezeigten Berichtsdaten werden aktualisiert.
 
 * **Momentaufnahmen**
 Sie können festlegen, wie oft Momentaufnahmen angefertigt werden sollen: täglich, stündlich oder gar nicht.

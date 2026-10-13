@@ -5,13 +5,22 @@ exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: b3af1a140abc1c202fa58704440c5660f1d43123
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1962'
 ht-degree: 84%
-
 ---
-
 # Best Practices für Workflows{#workflow-best-practices}
 
 Workflows ermöglichen die Automatisierung von Aktivitäten in Adobe Experience Manager (AEM).
@@ -243,8 +252,8 @@ Speichern einer Sitzung:
 * Wenn innerhalb eines Workflow-Prozesses die `WorkflowSession` verwendet wird, um das Repository zu ändern, führen Sie keine explizite Speicherung der Sitzung durch. Die Sitzung wird nach Abschluss des Workflows gespeichert.
 * `Session.Save` darf nicht innerhalb eines Workflow-Schritts aufgerufen werden:
 
-   * Es wird empfohlen, die Workflow-JCR-Sitzung anzupassen. In diesem Fall ist keine `save` erforderlich, da die Workflow-Engine die Sitzung nach Abschluss der Workflow-Ausführung automatisch speichert.
-   * Es wird nicht empfohlen, dass ein Prozessschritt eine eigene JCR-Sitzung erstellt.
+  * Es wird empfohlen, die Workflow-JCR-Sitzung anzupassen. In diesem Fall ist keine `save` erforderlich, da die Workflow-Engine die Sitzung nach Abschluss der Workflow-Ausführung automatisch speichert.
+  * Es wird nicht empfohlen, dass ein Prozessschritt eine eigene JCR-Sitzung erstellt.
 
 * Unnötige Speichervorgänge zu vermeiden, bedeutet weniger Mehraufwand und somit eine höhere Workflow-Effizienz.
 
@@ -307,7 +316,7 @@ Wichtige Punkte bei Upgrades für Ihre Instanz:
 * Sichern Sie alle benutzerdefinierten Workflow-Modelle, bevor Sie ein Upgrade für eine Instanz durchführen.
 * Vergewissern Sie sich, dass keiner Ihrer benutzerdefinierten Workflows am folgenden [Speicherort](#locations) gespeichert ist:
 
-   * `/libs/settings/workflow/models/projects`
+  * `/libs/settings/workflow/models/projects`
 
 >[!NOTE]
 >

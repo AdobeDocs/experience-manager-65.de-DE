@@ -9,13 +9,29 @@ role: Admin,User
 exl-id: 34db1f76-ee40-4612-85da-22041e7560fb
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 100%
-
+ht-degree: 88%
 ---
-
 # Konfigurieren der Synchronisierungsplanung {#configuring-the-synchronization-scheduler}
 
 Standardmäßig wird der Synchronisierungs-Scheduler alle 3 Minuten ausgeführt, um sämtliche geänderten und aktualisierten Elemente im Repository über LiveCycle Workbench 11 zu synchronisieren. Anwendungen, die Formulare und Ressourcen enthalten, sind in der AEM Forms-Benutzeroberfläche sichtbar, sobald der Synchronisierungsprozess abgeschlossen ist.
@@ -26,7 +42,7 @@ Führen Sie die folgenden Schritte aus, um das Intervall für den Synchronisieru
 
 1. Melden Sie sich bei AEM Configuration Manager an. Die URL des Configuration Managers lautet `https://'[server]:[port]'/lc/system/console/configMgr`
 
-1. Suchen Sie das Bundle **FormsManagerConfiguration** und öffnen Sie es.
+1. Suchen Sie das Paket **FormsManagerConfiguration** und öffnen Sie es.
 
 1. Geben Sie für die Option **Häufigkeit für Synchronisierungs-Scheduler** einen neuen Wert an.
 
@@ -52,7 +68,7 @@ Sie können die Option **Assets aus Repository synchronisieren** verwenden, um d
 
 Sie können neue Anwendungen im Workflow Designer (LiveCycle Workbench) erstellen.
 
-Wenn eine neu erstellte Anwendung und ein Ordner unter /content/dam/formsanddocuments identische Namen haben, wird der Fehler „*Ein Element mit demselben Namen wie diese Anwendung ist bereits auf der Stammebene vorhanden.*“ protokolliert. 
+Wenn die neu erstellte Anwendung und ein Ordner unter /content/dam/formsanddocuments identische Namen haben, wird der Fehler &quot;*Ein Asset mit demselben Namen wie diese Anwendung ist bereits auf der Stammebene vorhanden.*&quot; wird protokolliert.
 
 Benennen Sie zum Beheben des Konflikts die Anwendung um und synchronisieren Sie die Elemente manuell.
 

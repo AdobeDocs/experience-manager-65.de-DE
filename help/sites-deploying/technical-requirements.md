@@ -6,13 +6,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 06cdf1211a48838d1e578d1d804aad00cd01eb79
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3853'
 ht-degree: 91%
-
 ---
-
 # Technische Anforderungen{#technical-requirements}
 
 Adobe unterstützt Adobe Experience Manager (AEM) auf den Plattformen, wie in den folgenden Informationen in diesem Dokument beschrieben.
@@ -101,7 +113,8 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen der Java™ Vi
 | Azul Zulu OpenJDK 11 − 64 Bit | A: Unterstützt `[3]` | |
 | Azul Zulu OpenJDK 8 − 64 Bit | A: Unterstützt `[3]` | |
 
-1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10 und Java™ 12 sind Nicht-LTS-Versionen von Oracle (weitere Informationen finden Sie in der [Roadmap für Oracle Java™ SE-Support](https://www.oracle.com/technetwork/java/eol-135779.html)). Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Verteilung des Oracle Java™ SE JDK, einschließlich aller Wartungs-Updates der LTS-Versionen, werden von Adobe direkt für alle AEM-Kunden unterstützt, die die Oracle Java™ SE-Technologie verwenden. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).   **Wichtig: Oracle Java™ 17 und 21 werden auf [AEM 6.5 LTS](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements) unterstützt.**
+1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10 und Java™ 12 sind Nicht-LTS-Versionen von Oracle (weitere Informationen finden Sie in der [Roadmap für Oracle Java™ SE-Support](https://www.oracle.com/technetwork/java/eol-135779.html)). Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Verteilung des Oracle Java™ SE JDK, einschließlich aller Wartungs-Updates der LTS-Versionen, werden von Adobe direkt für alle AEM-Kunden unterstützt, die die Oracle Java™ SE-Technologie verwenden. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+   **Wichtig: Oracle Java™ 17 und 21 werden auf [AEM 6.5 LTS](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements) unterstützt.**
 
 1. Die IBM® JRE wird nur zusammen mit WebSphere Application Server unterstützt.
 
@@ -525,10 +538,10 @@ Das Zurückschreiben von XMP-Daten wird für die folgenden Plattformen und Datei
 
 * **Betriebssysteme:**
 
-   * Linux® (Unterstützung von 32-Bit- und 32-Bit-Anwendungen auf 64-Bit-Systemen).
+  * Linux® (Unterstützung von 32-Bit- und 32-Bit-Anwendungen auf 64-Bit-Systemen).
 
-   * Windows Server
-   * macOS X (64 Bit)
+  * Windows Server
+  * macOS X (64 Bit)
 
 * **Dateiformate**: JPEG, PNG, TIFF, PDF, INDD, AI und EPS.
 

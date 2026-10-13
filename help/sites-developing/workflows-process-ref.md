@@ -9,13 +9,22 @@ exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 100%
-
+source-wordcount: '1078'
+ht-degree: 98%
 ---
-
 # Prozessreferenz für Workflows{#workflow-process-reference}
 
 AEM bietet verschiedene Prozessschritte für die Erstellung von Workflow-Modellen. Darüber hinaus können auch benutzerdefinierte Prozessschritte für Aufgaben hinzugefügt werden, die nicht von den integrierten Schritten abgedeckt werden (siehe [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md)).
@@ -52,9 +61,9 @@ Argumente werden als einzelne Zeichenfolge im Bereich **Eigenschaften** des Work
 ```
 
 
-### Maximale Wartezeit {#timeout}
+### Timeout {#timeout}
 
-Nach dieser maximalen Wartezeit funktioniert der Workflow-Schritt nicht mehr. Einige Workflow-Prozesse respektieren die maximale Wartezeit, für andere gilt sie nicht und wird daher ignoriert.
+Nach diesem Timeout funktioniert der Workflow-Schritt nicht mehr. Einige Workflow-Prozesse respektieren den Timeout, für andere gilt sie nicht und wird daher ignoriert.
 
 ### Berechtigungen {#permissions}
 

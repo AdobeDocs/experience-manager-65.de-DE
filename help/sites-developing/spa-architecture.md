@@ -11,13 +11,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2074'
 ht-degree: 100%
-
 ---
-
 
 # Entwickeln von SPAs für AEM{#developing-spas-for-aem}
 
@@ -192,8 +206,8 @@ Die allgemeine Architektur von AEM einschließlich Umgebungen für Entwicklung, 
 
   Hier werden die Quelle für die SPA-Anwendungsquelle sowie die Komponentenquelle ausgecheckt.
 
-   * Der NPM-clientlib-Generator erstellt aus dem SPA-Projekt eine Client-Bibliothek.
-   * Diese Bibliothek wird von Maven verwendet und vom Maven Build-Plugin zusammen mit der Komponente für AEM Author bereitgestellt.
+  * Der NPM-clientlib-Generator erstellt aus dem SPA-Projekt eine Client-Bibliothek.
+  * Diese Bibliothek wird von Maven verwendet und vom Maven Build-Plugin zusammen mit der Komponente für AEM Author bereitgestellt.
 
 * **AEM Author**
 
@@ -201,11 +215,11 @@ Die allgemeine Architektur von AEM einschließlich Umgebungen für Entwicklung, 
 
   Wenn eine SPA in der Authoring-Umgebung mit dem SPA-Editor bearbeitet wird:
 
-   1. Die SPA fordert den äußeren HTML-Code an.
-   1. Das CSS wird geladen.
-   1. Das JavaScript der SPA-Anwendung wird geladen.
-   1. Sobald die SPA-Anwendung ausgeführt wird, wird die JSON angefordert, damit die App das DOM der Seite einschließlich der `cq-data`-Attribute erstellen kann.
-   1. Diese `cq-data`-Attribute ermöglichen es dem Editor, zusätzliche Seiteninformationen zu laden, sodass er weiß, welche Bearbeitungskonfigurationen für die Komponenten verfügbar sind.
+  1. Die SPA fordert den äußeren HTML-Code an.
+  1. Das CSS wird geladen.
+  1. Das JavaScript der SPA-Anwendung wird geladen.
+  1. Sobald die SPA-Anwendung ausgeführt wird, wird die JSON angefordert, damit die App das DOM der Seite einschließlich der `cq-data`-Attribute erstellen kann.
+  1. Diese `cq-data`-Attribute ermöglichen es dem Editor, zusätzliche Seiteninformationen zu laden, sodass er weiß, welche Bearbeitungskonfigurationen für die Komponenten verfügbar sind.
 
 * **AEM Publish**
 
@@ -215,8 +229,8 @@ Die allgemeine Architektur von AEM einschließlich Umgebungen für Entwicklung, 
 
   Der Dispatcher dient für Besucherinnen und Besucher der Site als Zwischenspeicherebene von AEM.
 
-   * Anforderungen werden ähnlich wie bei AEM Author verarbeitet, es erfolgt jedoch keine Anforderung der Seiteninformationen, da diese nur vom Editor benötigt werden.
-   * JavaScript, CSS, JSON und HTML werden zwischengespeichert, wodurch die Seite für eine schnelle Bereitstellung optimiert wird.
+  * Anforderungen werden ähnlich wie bei AEM Author verarbeitet, es erfolgt jedoch keine Anforderung der Seiteninformationen, da diese nur vom Editor benötigt werden.
+  * JavaScript, CSS, JSON und HTML werden zwischengespeichert, wodurch die Seite für eine schnelle Bereitstellung optimiert wird.
 
 >[!NOTE]
 >

@@ -9,13 +9,25 @@ exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 100%
-
+source-wordcount: '1657'
+ht-degree: 98%
 ---
-
 # Konfigurieren von LDAP mit AEM 6 {#configuring-ldap-with-aem}
 
 LDAP (das **L** ightweight **D** irectory **A** ccess **P** rotocol) wird für den Zugriff auf zentrale Verzeichnisdienste verwendet. Auf diese Weise wird der Aufwand für die Verwaltung von Benutzerkonten reduziert, da sie von mehreren Anwendungen aufgerufen werden können. Ein solcher LDAP-Server ist Active Directory. LDAP wird häufig für Single-Sign-On-Szenarien eingesetzt, durch die ein Benutzer mit einer Anmeldung auf mehrere Anwendungen zugreifen kann.
@@ -43,7 +55,7 @@ Damit LDAP mit AEM funktioniert, müssen Sie drei OSGi-Konfigurationen erstellen
 >
 >Sehen Sie sich das Tutorial [Oak&#39;s External Login Module – Authenticating with LDAP and Beyond](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=de) an, um sich ausführlich über externe Anmeldemodule zu informieren.
 >
->Weitere Informationen zum Konfigurieren von Experience Manager mit Apache DS finden Sie unter [Konfigurieren von Adobe Experience Manager 6.5 für Apache Directory Service](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805?profile.language=de).
+>Weitere Informationen zum Konfigurieren von Experience Manager mit Apache DS finden Sie unter [Konfigurieren von Adobe Experience Manager 6.5 für Apache Directory Service](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805).
 
 ## Konfigurieren des LDAP-Identitäts-Providers {#configuring-the-ldap-identity-provider}
 
@@ -182,7 +194,7 @@ Die folgenden Konfigurationsoptionen sind für den Synchronisierungshandler verf
   </tr>
   <tr>
    <td><strong>User membership nesting depth</strong></td>
-   <td>Gibt die maximale Tiefe der Gruppenverschachtelung zurück, wenn Mitgliedschaftsbeziehungen synchronisiert werden. Der Wert 0 deaktiviert die Suche nach Gruppenmitgliedschaften. Bei einem Wert von 1 werden nur die direkten Gruppen eines Benutzers hinzugefügt. Dieser Wert hat keinerlei Wirkung, wenn beim Synchronisieren der mitgliedsbezogenen Herkunft eines Benutzers nur einzelne Gruppen synchronisiert werden.</td>
+   <td>Gibt die maximale Tiefe der Gruppenverschachtelung zurück, wenn Mitgliedschaftsbeziehungen synchronisiert werden. Der Wert 0 deaktiviert die Suche nach Gruppenzugehörigkeiten. Bei einem Wert von 1 werden nur die direkten Gruppen eines Benutzers hinzugefügt. Dieser Wert hat keinerlei Wirkung, wenn beim Synchronisieren der mitgliedsbezogenen Herkunft eines Benutzers nur einzelne Gruppen synchronisiert werden.</td>
   </tr>
   <tr>
    <td><strong>Group Expiration Time</strong></td>
@@ -224,7 +236,7 @@ Folgende Konfigurationsoptionen sind verfügbar:
 
 >[!NOTE]
 >
->Wenn für Ihre AEM-Instanz mehr als eine LDAP-Konfiguration vorgesehen ist, müssen Sie für jede Konfiguration separate Identitäts-Provider und Synchronisierungs-Handler erstellen. 
+>Wenn für Ihre AEM-Instanz mehr als eine LDAP-Konfiguration vorgesehen ist, müssen Sie für jede Konfiguration separate Identitäts-Provider und Synchronisierungs-Handler erstellen.
 
 ## Konfigurieren von LDAP über SSL {#configure-ldap-over-ssl}
 
@@ -244,7 +256,7 @@ AEM 6 kann so konfiguriert werden, dass eine LDAP-Authentifizierung über SSL e
 
 1. Vergewissern Sie sich, dass eine funktionstüchtige SSL-Bibliothek installiert ist. Bei dieser Vorgehensweise wird beispielhaft OpenSSL verwendet.
 
-1. Erstellen Sie eine benutzerdefinierte OpenSSL-Konfigurationsdatei (.cnf). Kopieren Sie für diese Konfiguration die Konfigurationsdatei **openssl.cnf ** und passen Sie diese an. Auf UNIX-Systemen befindet sie sich unter `/usr/lib/ssl/openssl.cnf`.
+1. Erstellen Sie eine benutzerdefinierte OpenSSL-Konfigurationsdatei (.cnf). Kopieren Sie für diese Konfiguration die Konfigurationsdatei **openssl.cnf &#x200B;** und passen Sie diese an. Auf UNIX-Systemen befindet sie sich unter `/usr/lib/ssl/openssl.cnf`.
 
 1. Erstellen Sie dann den Zertifizierungsstellen-Stammschlüssel, indem Sie den nachfolgenden Befehl in einem Terminal ausführen:
 
@@ -280,12 +292,12 @@ Um die Debug-Protokollierung zu aktivieren, müssen Sie Folgendes tun:
 
 * Protokollstufe: Debug
 * Protokolldatei logs/ldap.log
-* Meldungsmuster: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Meldungsmuster: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &ast;{4}&ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Protokollstufe: Debug
 * Protokolldatei: logs/external.log
-* Meldungsmuster: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Meldungsmuster: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &ast;{4}&ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Hinweis zur Gruppenzuordnung {#a-word-on-group-affiliation}

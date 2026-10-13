@@ -10,13 +10,22 @@ exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '227'
 ht-degree: 100%
-
 ---
-
 # Komponenten{#components}
 
 Adobe Experience Manager (AEM) ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten. Diese sind beim [Bearbeiten einer Seite](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) verfügbar und werden nach Hauptfunktionsbereich (d. h. Komponentengruppe) gruppiert, um das Filtern zu erleichtern.
@@ -29,7 +38,7 @@ Adobe Experience Manager (AEM) ist mit einer Vielzahl einsatzbereiter Komponente
 
 ## Komponenten - Hauptbereiche {#components-major-areas}
 
-Die folgenden Seiten bieten schnellen Zugriff auf die Hauptbereiche des Content Managements (Links zu weiteren Bereichen erhalten Sie auf der Übersichtsseite oben):
+Die folgenden Seiten bieten schnellen Zugriff auf die Hauptbereiche des Content-Managements (Links zu weiteren Bereichen erhalten Sie auf der Übersichtsseite oben):
 
 * [Komponenten für die Seitenbearbeitung](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
@@ -37,8 +46,7 @@ Die folgenden Seiten bieten schnellen Zugriff auf die Hauptbereiche des Content 
 
 * [E-Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
 
-  
-Die eCommerce-Funktion in AEM umfasst ebenfalls mehrere Komponenten, die in der Gruppe **Commerce** enthalten sind. Die tatsächliche Nutzung kann von der verwendeten Commerce-Engine abhängig sein.
+  Die eCommerce-Funktion in AEM umfasst ebenfalls mehrere Komponenten, die in der Gruppe **Commerce** enthalten sind. Die tatsächliche Nutzung kann von der verwendeten Commerce-Engine abhängig sein.
 
 ## Konfigurieren von Komponenten mit dem Designmodus {#using-design-mode-to-configure-components}
 

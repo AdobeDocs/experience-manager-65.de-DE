@@ -9,13 +9,22 @@ exl-id: 3603e929-2aa1-4c25-ad9a-b10ff52a59f4
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 100%
-
+source-wordcount: '1329'
+ht-degree: 97%
 ---
-
 # Opt-in für Adobe Analytics und Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
 
 AEM verfügt über ein Opt-in-Verfahren, das die Integration in Adobe Analytics und Adobe Target erleichtert. Es ist als vorab geladene Aufgabe, die der Administratorbenutzergruppe zugewiesen ist, im Lieferumfang enthalten.
@@ -39,7 +48,7 @@ Um die Integration zu konfigurieren, haben Sie folgende Möglichkeiten:
 Führen Sie das Opt-in für folgende Integrationen durch:
 
 * Analytics, um die Verwendung der Funktionen für Seiten-Tracking und Analyse zu aktivieren
-* Target, um die Verwendung der Personalisierungsfunktionen zu aktivieren 
+* Target, um die Verwendung der Personalisierungsfunktionen zu aktivieren
 
 Für beide Optionen müssen Sie die Benutzerkontoinformationen und die nachzuverfolgenden Seiten angeben.
 
@@ -156,11 +165,11 @@ Sie müssen die Cloud-Konfigurationen nicht ändern. Sie können aber die Framew
 
 >[!NOTE]
 >
->Wenn Sie den Opt-in für den Adobe Target-Konfigurationsassistenten durchführen, wird die „präzise Zielgruppenerfassung“ aktiviert.
+>Wenn Sie den Opt-in für den Adobe Target-Konfigurationsassistenten durchführen, wird das „präzise Targeting“ aktiviert.
 >
->Präzise Zielgruppenerfassung bedeutet, dass für die Cloud Service-Konfiguration gewartet wird, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Aus diesem Grund kann hinsichtlich der Leistung eine präzise Zielgruppenbestimmung eine Verzögerung von einigen Millisekunden verursachen, bevor das Laden des Inhalts erfolgt.
+>Präzises Targeting bedeutet, dass für die Cloud-Service-Konfiguration gewartet wird, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Aus diesem Grund kann hinsichtlich der Leistung eine präzise Zielgruppenbestimmung eine Verzögerung von einigen Millisekunden verursachen, bevor das Laden des Inhalts erfolgt.
 >
->Die präzise Zielgruppenerfassung ist auf der Autoreninstanz immer aktiviert. Auf der Veröffentlichungsinstanz können Sie die präzise Zielgruppenerfassung aber global deaktivieren, indem Sie in der Cloud Service-Konfiguration das Häkchen neben „Präzise Zielgruppenerfassung“ entfernen (**http://localhost:4502/etc/cloudservices.html**). Sie können die präzise Zielgruppenerfassung auch für einzelne Komponenten aktivieren und deaktivieren, unabhängig von Ihrer Einstellung in der Cloud-Service-Konfiguration.
+>Das präzise Targeting ist auf der Autoreninstanz immer aktiviert. Auf der Veröffentlichungsinstanz können Sie die präzise Zielgruppenerfassung aber global deaktivieren, indem Sie in der Cloud Service-Konfiguration das Häkchen neben „Präzise Zielgruppenerfassung“ entfernen (**http://localhost:4502/etc/cloudservices.html**). Sie können das präzise Targeting auch für einzelne Komponenten aktivieren und deaktivieren, unabhängig von Ihrer Einstellung in der Cloud-Service-Konfiguration.
 >
 >Wenn Sie ***bereits*** Zielkomponenten erstellt haben und Sie diese Einstellung ändern, wirken sich Ihre Änderungen nicht auf diese Komponenten aus. Nehmen Sie alle Änderungen an diesen Komponenten direkt vor.
 
@@ -180,9 +189,9 @@ Welche Parameter Sie senden müssen, hängt von Folgendem ab:
 
 * Wenn Sie die Datei **marketingcloud.properties** verwenden möchten, in die alle erforderlichen Anmeldeinformationen eingefügt sind, müssen Sie die folgenden Parameter senden:
 
-   * `automaticProvisioning`= `true`
-   * `servicename`= `analytics|target`
-   * `path`=Pfad zu einer AEM-Seite, um die erstellten Cloud Service-Konfigurationen anzufügen
+  * `automaticProvisioning`= `true`
+  * `servicename`= `analytics|target`
+  * `path`=Pfad zu einer AEM-Seite, um die erstellten Cloud-Service-Konfigurationen anzufügen
 
   Eine Curl-Anforderung, mit der sowohl die Analytics- als auch die Target-Konfiguration erstellt und an die Seite „we-retail“ angefügt wird, lautet beispielsweise wie folgt:
 
@@ -191,17 +200,17 @@ Welche Parameter Sie senden müssen, hängt von Folgendem ab:
   ```
 
 * Wenn Sie die Datei **marketingcloud.properties** nicht verwenden möchten, müssen Sie die Anmeldeinformationen und Parameter senden. Zum Beispiel:
-   * automaticProvisioning= `true`
-   * servicename= `analytics|target`
-   * path=Pfad zu einer AEM-Seite, um die erstellten Cloud Service-Konfigurationen anzufügen; es können mehrere Pfade definiert werden
-   * analytics.server= `https://servername`
-   * analytics.company= `Name of company`
-   * analytics.username= `me`
-   * analytics.secret= `secret`
-   * analytics.reportsuite= `we-retail`
-   * target.clientcode= `mycompany`
-   * target.email= `me@adobe.com`
-   * target.password= `password`
+  * automaticProvisioning= `true`
+  * servicename= `analytics|target`
+  * path=Pfad zu einer AEM-Seite, um die erstellten Cloud-Service-Konfigurationen anzufügen; es können mehrere Pfade definiert werden
+  * analytics.server= `https://servername`
+  * analytics.company= `Name of company`
+  * analytics.username= `me`
+  * analytics.secret= `secret`
+  * analytics.reportsuite= `we-retail`
+  * target.clientcode= `mycompany`
+  * target.email= `me@adobe.com`
+  * target.password= `password`
 
   In diesem Fall würde die Curl-Anforderung, mit der die Analytics- und Target-Konfiguration erstellt und an die Seite „we-retail“ angefügt wird, wie folgt lauten:
 

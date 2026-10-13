@@ -9,20 +9,34 @@ exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '494'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '496'
 ht-degree: 100%
-
 ---
-
 # Verwalten der in Workspace angezeigten Kategorien {#managing-the-categories-displayed-in-workspace}
 
 >[!NOTE]
 > 
 > Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
-In Workspace werden die Prozesse, die Benutzende starten können, in Kategorien im linken Navigationsbereich angezeigt. Sie können die Kategorien in der Administrationskonsole einrichten oder bei der Prozessentwicklung in Workbench einrichten lassen. Wenn bei der Prozessentwicklung Prozesse erstellt werden, werden ihnen Kategorien zugewiesen.
+In Workspace werden die Prozesse, die Benutzende starten können, in Kategorien im linken Navigationsbereich angezeigt. Sie können die Kategorien in der Administrationskonsole einrichten oder beim Prozess-Design in Workbench einrichten lassen. Wenn beim Prozess-Design Prozesse erstellt werden, werden ihnen Kategorien zugewiesen.
 
 Wenn Sie Kategorienamen angeben, erstellen Sie diese so, dass sie im Navigationsbereich von Workspace ordnungsgemäß angezeigt werden. Standardmäßig hat der linke Navigationsbereich eine feste Breite von 210 Pixel, was etwa 24 Zeichen entspricht. Wenn der von Ihnen angegebene Kategoriename zu lang ist, um in die feste Breite des linken Navigationsbereichs zu passen, wird er abgeschnitten. Der vollständige Name wird nur angezeigt, wenn der Mauszeiger darüber gehalten wird. Versuchen Sie, Kategorienamen zu vermeiden, die abgeschnitten werden. Die folgenden Beispiele veranschaulichen passende und abgeschnittene Kategorienamen:
 

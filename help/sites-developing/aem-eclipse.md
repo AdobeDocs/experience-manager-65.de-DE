@@ -9,13 +9,24 @@ exl-id: 00473769-c447-4966-a71e-117c669e0151
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 5bd621b14e3bcd21431c1df5629fe4669b14052c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 47%
-
+source-wordcount: '1296'
+ht-degree: 48%
 ---
-
 
 # AEM Developer Tools for Eclipse {#aem-developer-tools-for-eclipse}
 
@@ -28,7 +39,7 @@ _Experience Manager Developer Tools for Eclipse_ ist ein Eclipse-Plug-in, das au
 Es bietet mehrere Funktionen, die die AEM-Entwicklung vereinfachen:
 
 * Nahtlose Integration mit AEM-Instanzen über Eclipse Server Connector
-* Synchronisierung für Inhalte und OSGI-Bundles
+* Synchronisierung für Inhalte und OSGI-Pakete
 * Debugging-Unterstützung mit Code-Hot-Swapping-Funktion
 * Einfacher Bootstrap von AEM-Projekten über einen speziellen Projekterstellungsassistenten
 * Einfache Bearbeitung von JCR-Eigenschaften
@@ -38,7 +49,7 @@ Es bietet mehrere Funktionen, die die AEM-Entwicklung vereinfachen:
 Bevor Sie die AEM Developer Tools verwenden, müssen Sie Folgendes tun:
 
 * Herunterladen und Installieren von [Eclipse IDE for Enterprise Java and Web Developers.](https://www.eclipse.org/downloads/packages/)
-   * Die Version 1.4.0 von AEM Developer Tools for Eclipse ist mit Eclipse 2022-12 (4.26) oder höher kompatibel und erfordert die Ausführung von Java 17 oder höher.
+  * Die Version 1.4.0 von AEM Developer Tools for Eclipse ist mit Eclipse 2022-12 (4.26) oder höher kompatibel und erfordert die Ausführung von Java 17 oder höher.
 * Konfigurieren Sie Ihre Eclipse-Installation, um sicherzustellen, dass Sie mindestens 1 GB Heap-Speicher haben, indem Sie Ihre `eclipse.ini` Konfigurationsdatei bearbeiten, wie in den häufig gestellten Fragen zu [&#x200B; beschrieben](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
 
 >[!NOTE]
@@ -238,7 +249,7 @@ Eclipse lädt die erforderlichen Abhängigkeiten herunter. Das kann einen Moment
 Die offizielle Website Apache Sling IDE tooling for Eclipse bietet nützliche zusätzliche Informationen:
 
 * Das [**Benutzerhandbuch zu Apache Sling IDE-Tooling** Eclipse](https://sling.apache.org/documentation/development/ide-tooling.html) führt Sie durch die allgemeinen Konzepte, die Server-Integration und die von den AEM-Entwicklungs-Tools unterstützten Bereitstellungsfunktionen.
-* [Fehlerbehebung für Apache Sling-IDE-Tools](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
+* [Fehlerbehebung für Apache Sling IDE-Tools](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
 * [Liste der bekannten Probleme](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)
 
 Die folgende offizielle [Eclipse](https://www.eclipse.org/)-Dokumentation kann dabei helfen, Ihre Umgebung einzurichten:

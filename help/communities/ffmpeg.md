@@ -9,13 +9,20 @@ role: Admin
 exl-id: dbe28334-3b38-4362-b4f8-e0630e634503
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '274'
 ht-degree: 1%
-
 ---
-
 # FFmpeg für Communities {#ffmpeg-for-communities}
 
 ## Überblick {#overview}
@@ -24,7 +31,7 @@ FFmpeg ist eine Lösung zum Konvertieren und Streamen von Audio und Video und wi
 
 ## Installieren von FFmpeg {#installing-ffmpeg}
 
-FFmpeg sollte auf den Servern installiert sein, die die AEM-(*)*.
+FFmpeg sollte auf den Servern installiert sein, die die AEM-Instanz(en *author* hosten.
 
 1. Navigieren Sie zu [https://www.ffmpeg.org](https://www.ffmpeg.org/).
 1. Laden Sie die neueste Version von FFmpeg für Ihre spezifische Umgebung (Macintosh, Windows oder Linux) herunter.
@@ -57,7 +64,7 @@ So ändern Sie den [!UICONTROL DAM Update Asset]-Workflow und deaktivieren in di
 * Doppelklicken Sie auf den Schritt **[!UICONTROL FFmpeg]**, um auf das Dialogfeld Schritteigenschaften zuzugreifen.
 * Auf der Registerkarte **[!UICONTROL Prozess]**:
 
-   * **[!UICONTROL Argumente]**: Alle Einträge löschen, um die Transkodierung zu deaktivieren Standardwerte: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
+  * **[!UICONTROL Argumente]**: Alle Einträge löschen, um die Transkodierung zu deaktivieren Standardwerte: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
   ![configure-ffmpeg](assets/configure-ffmpeg.png)
 

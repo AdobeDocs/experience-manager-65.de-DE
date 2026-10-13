@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von Komponenten im Design-Modus
-description: Wenn die AEM-Instanz vorkonfiguriert installiert wird, steht im Sidekick sofort eine Auswahl von Komponenten zur Verfügung. Darüber hinaus stehen auch verschiedene weitere Komponenten zur Verfügung. Sie können den Design-Modus verwenden, um diese Komponenten zu aktivieren/deaktivieren.
+description: Wenn die AEM-Instanz vorkonfiguriert installiert wird, steht im Sidekick sofort eine Auswahl von Komponenten zur Verfügung. Darüber hinaus stehen verschiedene weitere Komponenten zur Verfügung. Sie können den Design-Modus verwenden, um diese Komponenten zu aktivieren/deaktivieren.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -10,18 +10,27 @@ exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 100%
-
+source-wordcount: '514'
+ht-degree: 87%
 ---
-
 # Konfigurieren von Komponenten im Design-Modus{#configuring-components-in-design-mode}
 
 Wenn die AEM-Instanz vorkonfiguriert installiert wird, steht im Sidekick sofort eine Auswahl von Komponenten zur Verfügung.
 
-Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mit dem [Design-Modus](#enabledisablecomponentsusingdesignmode) können Sie diese Komponenten aktivieren/deaktivieren. Wenn Sie den Design-Modus aktivieren und sich auf der Seite befinden, können Sie damit [Aspekte des Komponenten-Designs konfigurieren](#configuringcomponentsusingdesignmode), indem Sie die Attributparameter bearbeiten.
+Darüber hinaus stehen verschiedene weitere Komponenten zur Verfügung. Sie können den Design-Modus verwenden, um [solche Komponenten zu aktivieren/](#enabledisablecomponentsusingdesignmode). Wenn Sie den Design-Modus aktivieren und sich auf der Seite befinden, können Sie [Aspekte des Komponenten-Designs konfigurieren](#configuringcomponentsusingdesignmode) indem Sie die Attributparameter bearbeiten.
 
 >[!NOTE]
 >

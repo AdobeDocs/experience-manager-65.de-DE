@@ -10,13 +10,27 @@ exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3025'
-ht-degree: 97%
-
+source-wordcount: '3049'
+ht-degree: 98%
 ---
-
 # Sicherheitscheckliste {#security-checklist}
 
 Dieser Abschnitt behandelt die verschiedenen Schritte, mit denen Sie sicherstellen können, dass Ihre AEM-Installation bei der Bereitstellung sicher ist. Die Checkliste ist so konzipiert, dass sie von oben nach unten abgearbeitet werden sollte.
@@ -78,7 +92,7 @@ Dort können Sie das `admin`-Konto bearbeiten und [das Kennwort ändern](/help/s
 Unabhängig vom `admin`-Konto von AEM kann eine Nichtänderung des Standardkennworts für die OSGi-Web-Konsole dazu führen, dass:
 
 * Offenlegung des Servers mit einem Standardkennwort beim Start und beim Herunterfahren (was bei großen Servern mehrere Minuten dauern kann);
-* Offenlegung des Servers, wenn das Repository heruntergefahren/ein Bundle neu gestartet wird – und OSGi ausgeführt wird.
+* Offenlegung des Servers, wenn das Repository heruntergefahren/ein Paket neu gestartet wird – und OSGi ausgeführt wird.
 
 Weitere Informationen zum Ändern des Kennworts für die Web-Konsole finden Sie unter [Ändern des Administratorkennworts der OSGi-Web-Konsole](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password) unten.
 
@@ -86,8 +100,8 @@ Weitere Informationen zum Ändern des Kennworts für die Web-Konsole finden Sie 
 
 Ändern Sie das Passwort für den Zugriff auf die Web-Konsole. Dies geschieht mithilfe einer [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md), um die folgenden Eigenschaften der **Apache Felix OSGi Management Console** zu aktualisieren:
 
-* **Benutzername** und **Kennwort** die Anmeldeinformationen für den Zugriff auf die Apache Felix Web Management Console.
-Das Kennwort muss (*) nach* ersten Installation geändert werden, um die Sicherheit Ihrer Instanz zu gewährleisten.
+* **Benutzername** und **Kennwort**: die Anmeldeinformationen für den Zugriff auf die Apache Felix Web Management Console.
+Das Kennwort muss *nach* der ersten Installation geändert werden, damit die Sicherheit Ihrer Instanz gewährleistet ist.
 
 >[!NOTE]
 >
@@ -95,7 +109,7 @@ Das Kennwort muss (*) nach* ersten Installation geändert werden, um die Sicherh
 
 **So ändern Sie das Administratorpasswort der OSGi-Web-Konsole**:
 
-1. Öffnen Sie über das **Tools**, **Vorgänge** das **Web-** und navigieren Sie zum Abschnitt **Konfiguration**.
+1. Öffnen Sie über das Menü **Tools**, **Vorgänge** die **Web-Konsole** und navigieren Sie zum Abschnitt **Konfiguration**.
 Zum Beispiel unter `<server>:<port>/system/console/configMgr`.
 1. Navigieren Sie zum Eintrag für die **Management-Konsole für Apache Felix OSGi** und öffnen Sie ihn.
 1. Ändern Sie den **Benutzernamen** und das **Kennwort**.
@@ -150,19 +164,19 @@ Alle Beispielinhalte und -benutzer (z. B. das Geometrixx-Projekt und seine Komp
 
 Siehe [Arbeiten mit Paketen](package-manager.md).
 
-### Überprüfen, ob die CRX-Entwicklungs-Bundles vorhanden sind {#check-if-the-crx-development-bundles-are-present}
+### Überprüfen, ob die CRX-Entwicklungs-Pakete vorhanden sind {#check-if-the-crx-development-bundles-are-present}
 
-Diese Entwicklungs-OSGi-Bundles sollten sowohl auf Autoren- als auch auf Veröffentlichungs-Produktionssystemen deinstalliert werden, bevor diese verfügbar gemacht werden.
+Diese Entwicklungs-OSGi-Pakete sollten sowohl auf Autoren- als auch auf Veröffentlichungs-Produktionssystemen deinstalliert werden, bevor diese verfügbar gemacht werden.
 
 * Adobe CRXDE-Unterstützung (com.adobe.granite.crxde-support)
 * Adobe Granite CRX-Explorer (com.adobe.granite.crx-explorer)
 * Adobe Granite CRXDE Lite (com.adobe.granite.crxde-lite)
 
-### Überprüfen, ob das Sling-Entwicklungs-Bundle vorhanden ist {#check-if-the-sling-development-bundle-is-present}
+### Überprüfen, ob das Sling-Entwicklungs-Paket vorhanden ist {#check-if-the-sling-development-bundle-is-present}
 
 [AEM Developer Tools](/help/sites-developing/aem-eclipse.md) stellt das Tool „Apache Sling Tooling Support Install“ (org.apache.sling.tooling.support.install) bereit.
 
-Dieses OSGi-Bundle sollte sowohl auf Autoren- als auch auf Veröffentlichungs-Produktionssystemen deinstalliert werden, bevor sie verfügbar gemacht werden.
+Dieses OSGi-Paket sollte sowohl auf Autoren- als auch auf Veröffentlichungs-Produktionssystemen deinstalliert werden, bevor sie verfügbar gemacht werden.
 
 ### Schutz vor Cross-Site Request-Forgery {#protect-against-cross-site-request-forgery}
 
@@ -225,27 +239,27 @@ Sie müssen für jeden der folgenden Dienste die angegebenen Einstellungen ände
 
 * [Adobe Granite HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager):
 
-   * Aktivieren Sie **Minimieren** (um CRLF- und Leerzeichen zu entfernen).
-   * Aktivieren Sie **gzip** (damit Dateien ins gzip-Format komprimiert und mit einer Anfrage aufgerufen werden können).
-   * Deaktivieren Sie **Debuggen**.
-   * Deaktivieren Sie **Zeitplanung**.
+  * Aktivieren Sie **Minimieren** (um CRLF- und Leerzeichen zu entfernen).
+  * Aktivieren Sie **gzip** (damit Dateien ins gzip-Format komprimiert und mit einer Anfrage aufgerufen werden können).
+  * Deaktivieren Sie **Debuggen**.
+  * Deaktivieren Sie **Zeitplanung**.
 
 * [Day CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md#day-cq-wcm-debug-filter):
 
-   * Entfernen Sie den Haken bei **Aktivieren**.
+  * Entfernen Sie den Haken bei **Aktivieren**.
 
 * [Day CQ WCM-Filter](/help/sites-deploying/osgi-configuration-settings.md):
 
-   * Legen Sie die Option **WCM-Modus** nur auf der Veröffentlichungsinstanz auf „Deaktiviert“ fest.
+  * Legen Sie die Option **WCM-Modus** nur auf der Veröffentlichungsinstanz auf „Deaktiviert“ fest.
 
 * [Apache Sling JavaScript Handler](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-javascript-handler):
 
-   * Deaktivieren Sie **die Funktion zum Erzeugen von Debug-Informationen**.
+  * Deaktivieren Sie **die Funktion zum Erzeugen von Debug-Informationen**.
 
 * [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-jsp-script-handler):
 
-   * Deaktivieren Sie **Generate Debug Info**.
-   * Deaktivieren Sie **Mapped Content**.
+  * Deaktivieren Sie **Generate Debug Info**.
+  * Deaktivieren Sie **Mapped Content**.
 
 Weitere Informationen finden Sie unter [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md).
 
@@ -266,9 +280,9 @@ Ein Denial-of-Service-Angriff (DoS) zielt darauf ab, eine Computer-Ressource fü
 
   So kann `.../en.html` angefordert werden als:
 
-   * `.../en.ExtensionDosAttack`
-   * `.../en.SelectorDosAttack.html`
-   * `.../en.html/SuffixDosAttack`
+  * `.../en.ExtensionDosAttack`
+  * `.../en.SelectorDosAttack.html`
+  * `.../en.html/SuffixDosAttack`
 
   Alle gültigen Varianten (geben z. B. die Antwort `200` zurück und werden zur Zwischenspeicherung konfiguriert) werden vom Dispatcher zwischengespeichert, was letztendlich zu einem vollen Dateisystem führt, sodass kein Dienst für weitere Anfragen verfügbar ist.
 
@@ -343,7 +357,7 @@ Wenn Sie die Download-Funktion nicht benötigen, deaktivieren Sie das Servlet au
 
 ### Deaktivieren von WebDAV {#disable-webdav}
 
-WebDAV sollte sowohl in der Authoring- als auch in der Publishing-Umgebung deaktiviert sein. Dies kann durch Anhalten der entsprechenden OSGi-Bundles erfolgen.
+WebDAV sollte sowohl in der Authoring- als auch in der Publishing-Umgebung deaktiviert sein. Dies kann durch Anhalten der entsprechenden OSGi-Pakete erfolgen.
 
 1. Stellen Sie eine Verbindung zur **Felix-Management-Konsole** her, ausgeführt unter:
 
@@ -351,17 +365,17 @@ WebDAV sollte sowohl in der Authoring- als auch in der Publishing-Umgebung deakt
 
    Beispiel: `http://localhost:4503/system/console/bundles`.
 
-1. Suchen Sie in der Liste der Bundles nach einem Bundle mit dem folgenden Namen:
+1. Suchen Sie in der Liste der Pakete nach einem Paket mit dem folgenden Namen:
 
    `Apache Sling Simple WebDAV Access to repositories (org.apache.sling.jcr.webdav)`
 
-1. Klicken Sie in der Spalte „Aktionen“ auf die Schaltfläche „Anhalten“, um dieses Bundle anzuhalten.
+1. Klicken Sie in der Spalte „Aktionen“ auf die Schaltfläche „Anhalten“, um dieses Paket anzuhalten.
 
-1. Suchen Sie in der Liste der Bundles nach einem Bundle mit dem folgenden Namen:
+1. Suchen Sie in der Liste der Pakete nach einem Paket mit dem folgenden Namen:
 
    `Apache Sling DavEx Access to repositories (org.apache.sling.jcr.davex)`
 
-1. Klicken Sie auf den Button „Anhalten“, um dieses Bundle anzuhalten.
+1. Klicken Sie auf den Button „Anhalten“, um dieses Paket anzuhalten.
 
    >[!NOTE]
    >
@@ -430,11 +444,11 @@ Um Ihre Schlüssel über Instanzen hinweg zu replizieren, müssen Sie sie daher 
 Im Einzelnen müssen Sie Folgendes tun:
 
 1. Greifen Sie auf die AEM-Instanz zu, auf der sich die zu kopierenden Schlüsseldaten befinden. In der Regel handelt es sich dabei um eine Autoreninstanz.
-1. Suchen Sie im lokalen Dateisystem das Bundle com.adobe.granite.crypto.file. Es kann sich z. B. unter diesem Pfad befinden:
+1. Suchen Sie im lokalen Dateisystem das Paket com.adobe.granite.crypto.file. Es kann sich z. B. unter diesem Pfad befinden:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
 
-   Die in jedem Ordner befindliche Datei `bundle.info` identifiziert den Bundle-Namen.
+   Die in jedem Ordner befindliche Datei `bundle.info` identifiziert den Paketnamen.
 
 1. Navigieren Sie zum Ordner „data“. Beispiel:
 
@@ -446,7 +460,7 @@ Im Einzelnen müssen Sie Folgendes tun:
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Fügen Sie die beiden zuvor kopierten Dateien ein.
-1. [Aktualisieren Sie das Crypto-Bundle](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle), wenn die Zielinstanz bereits ausgeführt wird.
+1. [Aktualisieren Sie das Crypto-Paket](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle), wenn die Zielinstanz bereits ausgeführt wird.
 1. Wiederholen Sie die vorherigen Schritte für alle Instanzen, zu denen Sie den Schlüssel replizieren möchten.
 
 #### Replizieren von Schlüsseln in AEM 6.2 und älteren Versionen {#replicating-keys-for-aem-and-older-versions}

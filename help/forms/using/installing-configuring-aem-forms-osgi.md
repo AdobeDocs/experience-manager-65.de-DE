@@ -8,13 +8,31 @@ role: Admin, User, Developer
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1972'
 ht-degree: 98%
-
 ---
-
 # Installieren und konfigurieren Sie Datenerfassungsfunktionen{#install-and-configure-data-capture-capabilities}
 
 ## Einführung {#introduction}
@@ -44,18 +62,18 @@ Bevor Sie mit der Installation und Konfiguration der Datenerfassungsfunktion von
 * Der Installationspfad der AEM-Instanz enthält keine Leerzeichen.
 * Eine AEM Instanz läuft. Installieren Sie für Windows-Benutzer die AEM-Instanz im erweiterten Modus. In der AEM-Terminologie entspricht eine „Instanz“ einer Kopie von AEM, die auf einem Server im Autor- oder Veröffentlichungsmodus ausgeführt wird. Sie benötigen mindestens zwei [AEM-Instanzen (Autor und Veröffentlichung)](/help/sites-deploying/deploy.md), um die Datenerfassungsfunktionen von AEM Forms auszuführen:
 
-   * **Autor**: Eine zum Erstellen, Hochladen und Bearbeiten von Inhalten sowie zum Verwalten der Website verwendete AEM-Instanz. Sobald der Inhalt für die Veröffentlichung bereit ist, wird er an die Veröffentlichungsinstanz repliziert.
-   * **Veröffentlichung**: Eine AEM-Instanz, die die veröffentlichten Inhalte über das Internet oder ein internes Netzwerk öffentlich zugänglich macht.
+  * **Autor**: Eine zum Erstellen, Hochladen und Bearbeiten von Inhalten sowie zum Verwalten der Website verwendete AEM-Instanz. Sobald der Inhalt für die Veröffentlichung bereit ist, wird er an die Veröffentlichungsinstanz repliziert.
+  * **Veröffentlichung**: Eine AEM-Instanz, die die veröffentlichten Inhalte über das Internet oder ein internes Netzwerk öffentlich zugänglich macht.
 
 * Es gibt gewisse Arbeitsspeicheranforderungen. Für das Add-on-Paket für AEM Forms ist Folgendes erforderlich:
 
-   * 15 GB temporärer Speicherplatz für Microsoft Windows-basierte Installationen.
-   * 6 GB temporärer Speicherplatz für UNIX-basierte Installationen.
+  * 15 GB temporärer Speicherplatz für Microsoft Windows-basierte Installationen.
+  * 6 GB temporärer Speicherplatz für UNIX-basierte Installationen.
 
 * Die Replikation und Rückwärtsreplikation für die Autoren- und die Veröffentlichungsinstanz ist festgelegt. Weitere Informationen finden Sie unter [Replikation](/help/sites-deploying/replication.md).
 * Für UNIX-basierte Systeme:
 
-   * Installieren Sie die folgenden 32-Bit-Pakete vom Installationsmedium:
+  * Installieren Sie die folgenden 32-Bit-Pakete vom Installationsmedium:
 
 <table>
  <tbody>
@@ -100,7 +118,7 @@ Bevor Sie mit der Installation und Konfiguration der Datenerfassungsfunktion von
 
 * Installieren Sie das folgende 64-Bit-Paket vom Installationsmedium:
 
-   * libicu
+  * libicu
 
 * Installieren Sie [Microsoft Visual Studio 2019 – 32-Bit-Redistributable](https://learn.microsoft.com/de-de/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 
@@ -123,7 +141,7 @@ Das AEM Forms Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. 
 
    >[!NOTE]
    >
-   > Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+   > Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 1. Wiederholen Sie Schritten 1-7 für alle Autor- und Veröffentlichungsinstanzen.
 

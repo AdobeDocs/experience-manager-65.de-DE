@@ -5,13 +5,22 @@ exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 89%
-
+source-wordcount: '1088'
+ht-degree: 93%
 ---
-
 # Häufig gestellte Fragen (FAQ) zu AEM {#aem-faqs}
 
 Hier finden Sie Antworten auf Fragen im Zusammenhang mit der Problembehebung und Konfiguration in AEM.
@@ -26,8 +35,8 @@ Bei aktiviertem Binary-Less-Modus enthalten die verteilten Inhaltspakete Verweis
 
 #### Wie aktiviere ich die Binary-Less-Verteilung? {#how-do-i-enable-binary-less-distribution}
 
-Um die Binary-Less-Verteilung zu aktivieren, stellen Sie mit einem freigegebenen Blob-Speicher bereit.
-Überprüfen Sie die `useBinaryReferences`-Eigenschaft in der OSGi-Konfiguration mit der werkseitigen PID (`org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* die der Agent verwendet.
+Stellen Sie zur Aktivierung der Binary-Less-Verteilung einen freigegebenen Blob-Speicher bereit.
+Überprüfen Sie die `useBinaryReferences`-Eigenschaft in der OSGi-Konfiguration mit der werkseitigen PID (`org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)*, die der Agent verwendet.
 
 #### Wie kann ich Berechtigungen aktivieren, während ich eine Sprachkopie für Inhaltsautorinnen und Inhaltsautoren in AEM erstelle? {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
 
@@ -49,8 +58,8 @@ Einzelheiten finden Sie unter den folgenden zusätzlichen Themen:
 
 #### Wie lassen sich AEM-Funktionen im Zusammenhang mit Anmeldeversuchen und ACL- oder Berechtigungsänderungen prüfen? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
-AEM bietet nun die Möglichkeit, administrative Änderungen zu protokollieren, um Fehlerbehebungen und Audits zu erleichtern. Standardmäßig werden die Informationen in der `error.log` protokolliert. Um die Überwachung zu vereinfachen, wird empfohlen, sie in eine separate Protokolldatei umzuleiten.
-Informationen dazu, wie Sie die Ausgabe in eine separate Protokolldatei umleiten, finden Sie unter [Prüfen von Benutzerverwaltungsvorgängen in AEM](/help/sites-administering/audit-user-management-operations.md).
+AEM bietet nun die Möglichkeit, administrative Änderungen zu protokollieren, um Fehlerbehebungen und Audits zu erleichtern. Standardmäßig werden die Informationen in der Datei `error.log` protokolliert. Um die Überwachung zu vereinfachen, empfiehlt es sich, diese Einträge in einer separaten Protokolldatei zu speichern.
+Informationen dazu, wie Sie Einträge in einer separaten Protokolldatei speichern, finden Sie unter [Prüfen von Benutzerverwaltungsvorgängen in AEM](/help/sites-administering/audit-user-management-operations.md).
 
 #### Wie kann ich SSL standardmäßig aktivieren? {#how-to-enable-ssl-by-default}
 
@@ -88,8 +97,8 @@ Wenn die Person, die die Filmdateien hochlädt, keine Löschberechtigungen unter
 
 Wenn Sie über die Touch-Benutzeroberfläche eine Sprachkopie erstellen (**Verweise** > **Sprachkopie aktualisieren**), wird unter der neuen Sprache ein neuer DAM-Ordner erstellt und von dort aus wird auf Assets verwiesen.
 
-Dies ist die Standardeinstellung für vordefinierte Konfigurationen. Sie können **Seite übersetzen Assets** in Übersetzungskonfigurationen auf **Nicht übersetzen** setzen.
-Klicken Sie dazu in AEM 6&#x200B;**auf** Tools **> Cloud-** > **Übersetzungs-Cloud-Services**.
+Dies ist die Standardeinstellung für vorkonfigurierte Konfigurationen. Sie können in Übersetzungskonfigurationen für die Option **Seiten-Assets übersetzen** die Einstellung **Nicht übersetzen** festlegen.
+Klicken Sie dazu in AEM 6.4 auf **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services**.
 
 #### Wie lässt sich eine AEM-Komponente deaktivieren, die zu einem exponentiellen Wachstum des AEM SegmentStore führt (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 

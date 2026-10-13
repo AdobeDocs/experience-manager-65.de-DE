@@ -6,13 +6,23 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3342'
-ht-degree: 97%
-
+source-wordcount: '3523'
+ht-degree: 99%
 ---
-
 # Benutzerdefinierte Funktionen in Kernkomponenten für adaptive Formulare
 
 In diesem Artikel wird das Erstellen benutzerdefinierter Funktionen mit der neuesten Kernkomponente für adaptive Formulare beschrieben, die die aktuellsten Funktionen aufweist, z. B.:
@@ -60,8 +70,8 @@ Der **Name** wird verwendet, um die benutzerdefinierte Funktion im Regeleditor e
 
 >[!NOTE]
 >`[functionName]` ist der Name der Funktion. Leerzeichen sind nicht zulässig.
->`<Function Name>` ist der Anzeigename der Funktion im Regeleditor von Adaptive Forms.
->Wenn der Funktionsname mit dem Namen der Funktion selbst identisch ist, können Sie `[functionName]` in der Syntax weglassen.
+>`<Function Name>` ist der Anzeigename der Funktion im Regeleditor von adaptiven Formularen.
+>Wenn der Anzeigename der Funktion mit dem Namen der Funktion selbst übereinstimmt, können Sie in der Syntax `[functionName]` weglassen.
 
 #### Parameter
 
@@ -73,17 +83,17 @@ Der **Parameter** ist eine Liste von Argumenten, die von benutzerdefinierten Fun
 
   `{type}` gibt den Parametertyp an. Zulässige Parametertypen sind:
 
-   * string: Stellt einen einzelnen Zeichenfolgenwert dar.
-   * number: Stellt einen einzelnen numerischen Wert dar.
-   * boolean: Stellt einen einzelnen booleschen Wert dar (true oder false).
-   * string[]: Stellt ein Array von Zeichenfolgenwerten dar.
-   * number[]: Stellt ein Array numerischer Werte dar.
-   * boolean[]: Stellt ein Array boolescher Werte dar.
-   * date: Stellt einen einzelnen Datumswert dar.
-   * date[]: Stellt ein Array von Datumswerten dar.
-   * array: Stellt ein generisches Array dar, das Werte verschiedener Typen enthält.
-   * object: Stellt ein an eine benutzerdefinierte Funktion übergebenes Formularobjekt dar, anstatt dessen Wert direkt weiterzugeben.
-   * scope: Stellt das globals-Objekt dar, das schreibgeschützte Variablen wie Formularinstanzen, Zielfeldinstanzen und Methoden zum Ausführen von Formularänderungen innerhalb der benutzerdefinierten Funktionen enthält. Es wird als letzter Parameter in den JavaScript-Anmerkungen deklariert und ist für den Regeleditor eines adaptiven Formulars nicht sichtbar. Der Parameter „scope“ greift auf das Objekt des Formulars oder der Komponente zu, um die für die Formularverarbeitung erforderliche Regel oder das Ereignis auszulösen. Um weitere Informationen zum globals-Objekt und dessen Verwendung zu erhalten, [klicken Sie hier](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects).
+  * string: Stellt einen einzelnen Zeichenfolgenwert dar.
+  * number: Stellt einen einzelnen numerischen Wert dar.
+  * boolean: Stellt einen einzelnen booleschen Wert dar (true oder false).
+  * string[]: Stellt ein Array von Zeichenfolgenwerten dar.
+  * number[]: Stellt ein Array numerischer Werte dar.
+  * boolean[]: Stellt ein Array boolescher Werte dar.
+  * date: Stellt einen einzelnen Datumswert dar.
+  * date[]: Stellt ein Array von Datumswerten dar.
+  * array: Stellt ein generisches Array dar, das Werte verschiedener Typen enthält.
+  * object: Stellt ein an eine benutzerdefinierte Funktion übergebenes Formularobjekt dar, anstatt dessen Wert direkt weiterzugeben.
+  * scope: Stellt das globals-Objekt dar, das schreibgeschützte Variablen wie Formularinstanzen, Zielfeldinstanzen und Methoden zum Ausführen von Formularänderungen innerhalb der benutzerdefinierten Funktionen enthält. Es wird als letzter Parameter in den JavaScript-Anmerkungen deklariert und ist für den Regeleditor eines adaptiven Formulars nicht sichtbar. Der Parameter „scope“ greift auf das Objekt des Formulars oder der Komponente zu, um die für die Formularverarbeitung erforderliche Regel oder das Ereignis auszulösen. Um weitere Informationen zum globals-Objekt und dessen Verwendung zu erhalten, [klicken Sie hier](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects).
 
 Beim Parametertyp **wird nicht zwischen Groß- und Kleinschreibung unterschieden** und Leerzeichen sind im Parameternamen nicht zulässig.
 
@@ -346,7 +356,7 @@ Bevor Sie mit dem Hinzufügen einer benutzerdefinierten Funktion zu Ihrem adapti
 ## Erstellen einer benutzerdefinierten Funktion {#create-custom-function}
 
 Die Schritte zum Erstellen benutzerdefinierter Funktionen sind die Folgenden:
-1. [Erstellen einer Client-seitigen Bibliothek mit dem AEM-Projektarchetyp und Hinzufügen einer benutzerdefinierten Funktion](#create-client-library-archetype)
+1. [Erstellen Sie eine Client-seitige Bibliothek mit dem AEM-Projektarchetyp und fügen Sie eine benutzerdefinierte Funktion hinzu](#create-client-library-archetype)
 ODER
    [Erstellen benutzerdefinierter Funktionen über CRXDE](#create-add-custom-function)
 1. [Hinzufügen einer Client-Bibliothek zu einem adaptiven Formular](#add-client-library)
@@ -355,8 +365,8 @@ ODER
 
 ### Erstellen einer Client-Bibliothek mit dem AEM-Projektarchetyp{#create-client-library-archetype}
 
-Sie können benutzerdefinierte Funktionen hinzufügen, indem Sie eine Client-Bibliothek zu dem erstellten Projekt hinzufügen [mithilfe des AEM-Projektarchetyps](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
-Wenn Sie über ein vorhandenes Projekt verfügen<!--and have already the project structure as shown in the image below,--> können Sie Ihrem lokalen Projekt direkt [benutzerdefinierte Funktionen](#create-add-custom-function) hinzufügen.
+Sie können benutzerdefinierte Funktionen hinzufügen, indem Sie [unter Verwendung des AEM-Projektarchetyps](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/using#getting-started) eine Client-Bibliothek zu dem erstellten Projekt hinzufügen.
+Wenn Sie über ein vorhandenes Projekt verfügen <!--and have already the project structure as shown in the image below,-->, können Sie Ihrem lokalen Projekt direkt [benutzerdefinierte Funktionen](#create-add-custom-function) hinzufügen.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
 
@@ -476,8 +486,8 @@ Wenn Sie die aktuellsten Versionen von AEM Forms- und des Forms-Add-ons verwende
 Die erstellte Ordnerstruktur sieht wie folgt aus:
 
    ![Erstellte Ordnerstruktur der Client-Bibliothek](/help/forms/using/assets/clientlibrary_folderstructure.png)
-1. Doppelklicken Sie auf die `functions.js`, um den Editor zu öffnen. Die Datei enthält den Code für die benutzerdefinierte Funktion.
-Fügen wir der JavaScript-Datei den folgenden Code hinzu, um das Alter auf der Grundlage des Geburtsdatums (JJJJ-MM-TT) zu berechnen.
+1. Doppelklicken Sie auf die Datei `functions.js`, um den Editor zu öffnen. Die Datei enthält den Code für die benutzerdefinierte Funktion.
+Fügen wir der JavaScript-Datei den folgenden Code hinzu, um das Alter basierend auf dem Geburtsdatum (JJJJ-MM-TT) zu berechnen.
 
    ```javascript
        /**
@@ -536,8 +546,8 @@ Im Folgenden erfahren Sie, wie Sie einen benutzerdefinierten Fehler-Handler mit 
 
 ## Verwenden von benutzerdefinierten Funktionen in einem adaptiven Formular. {#use-custom-functions}
 
-In einem adaptiven Formular können Sie [benutzerdefinierte Funktionen im Regeleditor) &#x200B;](/help/forms/using/rule-editor-core-components.md).
-Fügen wir der JavaScript-Datei (`Function.js`-Datei) folgenden Code hinzu, um das Alter auf der Grundlage des Geburtsdatums (JJJJ-MM-TT) zu berechnen. Erstellen Sie eine benutzerdefinierte Funktion als `calculateAge()`, die das Geburtsdatum als Eingabe verwendet und ein Alter zurückgibt:
+In einem adaptiven Formular können Sie [benutzerdefinierte Funktionen im Regeleditor](/help/forms/using/rule-editor-core-components.md) verwenden.
+Fügen Sie der JavaScript-Datei (`Function.js`) den folgenden Code hinzu, um das Alter basierend auf dem Geburtsdatum (JJJJ-MM-TT) zu berechnen. Erstellen Sie eine benutzerdefinierte Funktion als `calculateAge()`, die das Geburtsdatum als Eingabe annimmt und das Alter zurückgibt:
 
 ```javascript
     /**
@@ -776,8 +786,8 @@ In der folgenden Abbildung sehen Sie, dass der Bereich `personaldetails` zurück
 
 #### **Anwendungsfall**: Eine benutzerdefinierte Nachricht auf Feldebene anzeigen und das Feld als ungültig markieren
 
-Mit der Funktion `markFieldAsInvalid()` können Sie ein Feld als ungültig definieren und benutzerdefinierte Fehlermeldungen auf Feldebene festlegen. Der `fieldIdentifier` kann `fieldId`, `field qualifiedName` oder `field dataRef` sein. Der Wert des Objekts mit dem Namen `option` kann `{useId: true}`, `{useQualifiedName: true}` oder `{useDataRef: true}` sein.
-Folgende Syntaxen werden verwendet, um ein Feld als ungültig zu markieren und benutzerdefinierte Nachrichten festzulegen:
+Mit der Funktion `markFieldAsInvalid()` können Sie ein Feld als ungültig definieren und eine benutzerdefinierte Fehlermeldung auf Feldebene festlegen. Der Wert `fieldIdentifier` kann `fieldId`, `field qualifiedName` oder `field dataRef` lauten. Der Wert des Objekts namens `option` kann `{useId: true}`, `{useQualifiedName: true}` oder `{useDataRef: true}` lauten.
+Die Syntaxen, die zum Markieren des Felds als ungültig und zum Festlegen der benutzerdefinierten Nachricht verwendet werden, sind:
 
 * `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`
 * `globals.functions.markFieldAsInvalid(field.$qualifiedName, "[custom message]", {useQualifiedName: true});`
@@ -984,9 +994,9 @@ Wenn die benutzerdefinierten Funktionen geändert werden, wird das Caching inval
 
 * Die Benutzenden müssen sicherstellen, dass die [Kernkomponente und die Spezifikationsversion von auf die neueste Version festgelegt sind](https://github.com/adobe/aem-core-forms-components/tree/release/650). Für bestehende AEM-Projekte und -Formulare sind jedoch zusätzliche Schritte erforderlich:
 
-   * Für das AEM Projekt sollten Benutzende alle Instanzen von `submitForm('custom:submitSuccess', 'custom:submitError')` durch `submitForm()` ersetzen und das Projekt bereitstellen.
+  * Für das AEM Projekt sollten Benutzende alle Instanzen von `submitForm('custom:submitSuccess', 'custom:submitError')` durch `submitForm()` ersetzen und das Projekt bereitstellen.
 
-   * Wenn die benutzerdefinierten Übermittlungs-Handler für vorhandene Formulare nicht richtig funktionieren, müssen Benutzende die Regel `submitForm` mithilfe des Regeleditors anhand der Schaltfläche **Senden** öffnen und speichern. Diese Aktion ersetzt im Formular die vorhandene Regel `submitForm('custom:submitSuccess', 'custom:submitError')` durch `submitForm()`.
+  * Wenn die benutzerdefinierten Übermittlungs-Handler für vorhandene Formulare nicht richtig funktionieren, müssen Benutzende die Regel `submitForm` mithilfe des Regeleditors anhand der Schaltfläche **Senden** öffnen und speichern. Diese Aktion ersetzt im Formular die vorhandene Regel `submitForm('custom:submitSuccess', 'custom:submitError')` durch `submitForm()`.
 
 
 * Wenn die JavaScript-Datei mit dem Code für benutzerdefinierte Funktionen einen Fehler enthält, werden die benutzerdefinierten Funktionen nicht im Regeleditor eines adaptiven Formulars aufgeführt. Um die Liste der benutzerdefinierten Funktionen zu überprüfen, können Sie für den Fehler zur Datei `error.log` navigieren. Im Fall eines Fehlers wird die Liste der benutzerdefinierten Funktionen leer angezeigt:
@@ -1002,9 +1012,9 @@ Wenn die benutzerdefinierten Funktionen geändert werden, wird das Caching inval
 * Der `parameter type` und der `return type` unterstützen `None` nicht.
 
 * Folgende Funktionen werden in der Liste der benutzerdefinierten Funktionen nicht unterstützt:
-   * Generator-Funktionen
-   * Async/Await-Funktionen
-   * Methodendefinitionen
-   * Klassenmethoden
-   * Standardparameter
-   * Rest-Parameter:
+  * Generator-Funktionen
+  * Async/Await-Funktionen
+  * Methodendefinitionen
+  * Klassenmethoden
+  * Standardparameter
+  * Rest-Parameter:

@@ -10,13 +10,22 @@ exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 96%
-
 ---
-
 
 # Konfigurieren von Layout-Container und Layout-Modus{#configuring-layout-container-and-layout-mode}
 
@@ -38,17 +47,17 @@ Das responsive Layout für Ihre Seiten wird von AEM durch eine Kombination von M
 
   Diese Komponente stellt ein Rasterabsatzsystem zur Verfügung, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Sie können sie als Standard-ParSys für Ihre Seite nutzen und/oder sie anderen Autoren im Komponenten-Browser zur Verfügung stellen.
 
-   * Die standardmäßige **Layout-Container**-Komponente ist definiert unter:
+  * Die standardmäßige **Layout-Container**-Komponente ist definiert unter:
 
-     `/libs/wcm/foundation/components/responsivegrid`
+    `/libs/wcm/foundation/components/responsivegrid`
 
-   * Sie können Layout-Container definieren:
+  * Sie können Layout-Container definieren:
 
-      * als Komponente, die Benutzerinnen und Benutzer einer Seite hinzufügen können.
-      * als Standard-Absatzsystem für die Seite.
-      * Beide.
+    * als Komponente, die Benutzerinnen und Benutzer einer Seite hinzufügen können.
+    * als Standard-Absatzsystem für die Seite.
+    * Beide.
 
-        Sie können den Layout-Container als Standard für die Seite festlegen und es den Benutzern gleichzeitig erlauben, weitere Layout-Container darin hinzuzufügen, z. B. für die Spaltensteuerung.
+      Sie können den Layout-Container als Standard für die Seite festlegen und es den Benutzern gleichzeitig erlauben, weitere Layout-Container darin hinzuzufügen, z. B. für die Spaltensteuerung.
 
 * **[Layout-Modus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
 Sobald der Layout-Container auf Ihrer Seite positioniert ist, können Sie den **Layout**-Modus verwenden, um Inhalte im responsiven Raster zu positionieren.
@@ -102,13 +111,13 @@ Mit diesen Vorgängen wird der **Layout-Modus** auf Ihrer Website aktiviert.
 * Werden im responsiven Design verwendet.
 * Können definiert werden:
 
-   * auf der Seitenvorlage, von der aus die Einstellungen auf alle Seiten kopiert werden, die mit dieser Vorlage erstellt wurden
-   * auf dem Seitenknoten, von dem aus die Einstellungen von allen untergeordneten Seiten übernommen werden.
+  * auf der Seitenvorlage, von der aus die Einstellungen auf alle Seiten kopiert werden, die mit dieser Vorlage erstellt wurden
+  * auf dem Seitenknoten, von dem aus die Einstellungen von allen untergeordneten Seiten übernommen werden.
 
 * Legen Sie einen Titel und eine Breite fest:
 
-   * Der Titel beschreibt die generische Gerätegruppierung, gegebenenfalls mit Ausrichtung, z. B. Smartphone, Tablet, Tablet-horizontal.
-   * Die Breite definiert die maximale Breite in Pixeln für diese generische Gerätegruppierung. Wenn der Telefon-Breakpoint beispielsweise eine Breite von 768 hat, dann ist dies die maximale Breite des Layouts, das für ein Telefongerät verwendet wird.
+  * Der Titel beschreibt die generische Gerätegruppierung, gegebenenfalls mit Ausrichtung, z. B. Smartphone, Tablet, Tablet-horizontal.
+  * Die Breite definiert die maximale Breite in Pixeln für diese generische Gerätegruppierung. Wenn der Telefon-Breakpoint beispielsweise eine Breite von 768 hat, dann ist dies die maximale Breite des Layouts, das für ein Telefongerät verwendet wird.
 
 * Sind als Markierungen am oberen Rand des Seiten-Editors sichtbar, wenn Sie den Emulator verwenden.
 * Werden von der Hierarchie des übergeordneten Knotens übernommen und können beliebig überschrieben werden.
@@ -253,11 +262,11 @@ Zum Beispiel:
 
 * Vorher:
 
-   * `width=100px`
+  * `width=100px`
 
 * Nachher:
 
-   * `max-width=100px`
+  * `max-width=100px`
 
 #### Größenanpassung und adaptive Bildkompatibilität {#resizing-and-adaptive-image-compliance}
 
@@ -317,11 +326,11 @@ Sie können die Anzahl der verfügbaren Spalten für jede spezifische Instanz de
 
    * Anzahl der verfügbaren Spalten:
 
-      * `columns="{String}8"`
+     * `columns="{String}8"`
 
    * Komponenten, die zur aktuellen Komponente hinzugefügt werden können:
 
-      * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+     * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
 
 ## Verschachtelte responsive Raster {#nested-responsive-grids}
 
