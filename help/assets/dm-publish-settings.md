@@ -82,7 +82,7 @@ Informationen zu weiteren optionalen Konfigurationsaufgaben finden Sie unter [Op
    * Registerkarte [Allgemeine Attribute für Miniaturansichten](#common-thumbnail-attributes-tab)
    * Registerkarte [Farb-Management-Attribute](#color-management-attributes-tab)
 
-   ![&#x200B; Seite „Dynamic Media-Veröffentlichungseinstellungen“](/help/assets/assets-dm/dm-publish-setup.png)
+   ![ Seite „Dynamic Media-Veröffentlichungseinstellungen“](/help/assets/assets-dm/dm-publish-setup.png)
    *Seite „Dynamic Media-Veröffentlichungseinstellungen“ mit ausgewählter Registerkarte **[!UICONTROL Anfrage-Attribute]**.*<br><br>
 
 1. Wenn Sie fertig sind, wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Speichern]** aus.

@@ -362,7 +362,7 @@ Weitere Informationen finden Sie unter [Verwenden von Adobe Stock-Assets in Expe
 
 *Abbildung: Vorschau [!DNL Adobe Stock] Bild und Lizenz von innerhalb [!DNL Experience Manager Assets].*
 
-![Durchsuchen und Filtern der lizenzierten Adobe Stock-Bilder in Experience Manager &#x200B;](/help/release-notes/assets/aem-search-filters2.jpg)
+![Durchsuchen und Filtern der lizenzierten Adobe Stock-Bilder in Experience Manager ](/help/release-notes/assets/aem-search-filters2.jpg)
 
 *Abbildung: Lizenzierte [!DNL Adobe Stock]-Bilder in [!DNL Experience Manager] suchen und filtern.*
 
@@ -449,7 +449,7 @@ Weitere Informationen zu neuen und verbesserten Funktionen sowie Dokumentationsr
 
 Adobe verwendet ein kundenorientiertes Entwicklungsmodell, das es den Kunden ermöglicht, zu allen Phasen des Entwicklungsprozesses von der Spezifikation über die Entwicklung bis hin zum Test beizutragen. Unser Dank geht an alle beteiligten Kunden und Partner in diesem Prozess.
 
-Adobe hält die erforderlichen Vorgehensweisen und Prozesse bereit, um die Erfassung, Priorisierung und Verfolgung kundenorientierter Fehlerbehebungen und eine auf Verbesserungswünsche bezogene Entwicklung zu ermöglichen. Das [Experience Manager-Supportportal](https://experienceleague.adobe.com/de?support-solution=Experience+Manager&support-tab=home&lang=de#support) ist mit dem Adobe Enhancement and Defect Tracking System integriert. Kundenprobleme werden, wenn möglich, gemeinsam mit dem Kunden-Support-Team identifiziert und gelöst. Bei einer Weiterleitung an Forschung und Entwicklung werden alle Kundeninformationen erfasst und zu Priorisierungs- und Reporting-Zwecken verwendet. Bei der Entwicklung haben bezahlter Support, Garantieprobleme sowie bezahlte Kundenerweiterungen Priorität.
+Adobe hält die erforderlichen Vorgehensweisen und Prozesse bereit, um die Erfassung, Priorisierung und Verfolgung kundenorientierter Fehlerbehebungen und eine auf Verbesserungswünsche bezogene Entwicklung zu ermöglichen. Das [Experience Manager-Supportportal](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home&lang=de#support) ist mit dem Adobe Enhancement and Defect Tracking System integriert. Kundenprobleme werden, wenn möglich, gemeinsam mit dem Kunden-Support-Team identifiziert und gelöst. Bei einer Weiterleitung an Forschung und Entwicklung werden alle Kundeninformationen erfasst und zu Priorisierungs- und Reporting-Zwecken verwendet. Bei der Entwicklung haben bezahlter Support, Garantieprobleme sowie bezahlte Kundenerweiterungen Priorität.
 
 Dieser Prozess der Priorisierung hat zu mehr als 750 kundenorientierten Änderungen geführt, die in AEM 6.5 vorgenommen wurden.
 
