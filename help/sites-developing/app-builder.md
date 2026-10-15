@@ -1,17 +1,15 @@
 ---
-title: Erweitern von [!DNL Adobe Experience Manager] 6.5 mit dem Adobe Developer App Builder.
-description: Erweitern von [!DNL Adobe Experience Manager] 6.5 mit dem Adobe Developer App Builder.
+title: Erweitern von [!DNL Adobe Experience Manager] 6.5 mithilfe von Adobe Developer App Builder.
+description: Erweitern von [!DNL Adobe Experience Manager] 6.5 mithilfe von Adobe Developer App Builder.
 exl-id: 8221c2db-82d4-43df-ad38-e8e7831541ac
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: ht
-source-wordcount: '477'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '528'
+ht-degree: 93%
 ---
-
 # Erweitern von [!DNL Adobe Experience Manager] mit dem Adobe Developer App Builder {#extend-using-app-builder}
 
 ## Was ist der App Builder für AEM? {#project-appbuilder}
@@ -28,7 +26,7 @@ Der App Builder bietet Kunden eine Möglichkeit, Adobe Experience Manager in ver
 
 >[!NOTE]
 >
->Für Kundinnen und Kunden von AEM as a Cloud Service, die App Builder verwenden möchten, siehe [Erweiterung von Adobe Experience Manager als Cloud Service mit Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=de).
+>Für Kundinnen und Kunden von AEM as a Cloud Service, die App Builder verwenden möchten, siehe [Erweiterung von Adobe Experience Manager as a Cloud Service mit Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=de).
 
 ## Architektur {#architecture}
 
@@ -37,7 +35,7 @@ Anstelle einer vordefinierten Lösung bietet der Adobe Developer App Builder ein
 * Adobe Developer Console – Für die Entwicklung benutzerdefinierter Microservices und Erweiterungen können Entwickler Projekte erstellen und verwalten, während sie auf alle Tools und APIs zugreifen, die sie zum Erstellen von Plug-ins und Integrationen benötigen.
 * Entwicklertools – Open-Source-Tools, SDKs und Bibliotheken, mit denen Entwickler einfach benutzerdefinierte Erweiterungen und Integrationen erstellen können. Verwenden Sie React Spectrum (UI-Toolkit von Adobe), um eine gemeinsame Benutzeroberfläche für alle Adobe-Anwendungen zu haben.
 * Services – I/O Runtime für das Hosting der Infrastruktur auf der Server-losen Plattform von Adobe und I/O Events für ereignisbasierte Integrationen. Adobe bietet auch native Unterstützung für das Speichern von Daten und Dateien.
-* Adobe Experience Cloud – Entwickler können Erweiterungen und Integrationen übermitteln, die in ihrer Experience Cloud-Organisation veröffentlicht werden sollen. Systemadministratoren können diese Erweiterungen dann überprüfen, verwalten und genehmigen. Nach der Veröffentlichung finden Sie Ihre benutzerdefinierten App Builder-Erweiterungen und -Tools zusammen mit anderen Adobe Experience Cloud-Anwendungen.
+* Adobe Experience Cloud – Entwickler können Erweiterungen und Integrationen übermitteln, die in ihrer Experience Cloud-Organisation veröffentlicht werden sollen. Systemadministratoren können diese Erweiterungen dann überprüfen, verwalten und genehmigen. Nach der Veröffentlichung finden Sie Ihre benutzerdefinierten App Builder-Erweiterungen und -Tools zusammen mit den anderen Adobe Experience Cloud-Anwendungen.
 
 Die folgende Abbildung zeigt, wie eine auf App Builder aufbauende Standardanwendung diese Funktionen nutzt:
 
@@ -49,18 +47,18 @@ Weitere Informationen zur App Builder-Architektur finden Sie unter [Überblick �
 
 Um die ersten Schritte mit App Builder zu erleichtern, wurde für den Einstieg eine Reihe von Dokumentationen erstellt:
 
-* [App Builder – Erste Schritte](https://developer.adobe.com/app-builder/docs/get_started/)
+* [Erste Schritte mit App Builder](https://developer.adobe.com/app-builder/docs/get_started/)
 
 ## Weiteres Lernen mit Dokumentation {#appbuilder-documentation}
 
 Für den App Builder gibt es Videos und Dokumentation für Entwickler, einschließlich Handbüchern, und Referenzdokumentation, die Sie bei der Entwicklung Ihrer eigenen benutzerdefinierten Anwendungen unterstützen:
 
-* [App Builder–Dokumentation](https://developer.adobe.com/app-builder/docs/overview/)
-* [App Builder–Videos](https://www.youtube.com/playlist?list=PLcVEYUqU7VRfDij-Jbjyw8S8EzW073F_o)
+* [Dokumentation zu App Builder](https://developer.adobe.com/app-builder/docs/overview/)
+* [Videos zu App Builder](https://www.youtube.com/playlist?list=PLcVEYUqU7VRfDij-Jbjyw8S8EzW073F_o)
 
 ## Testen einer der Beispielanwendungen {#appbuilder-codesamples}
 
 Sind Sie bereit, mit der Entwicklung zu beginnen? Es gibt viele Beispielanwendungen, mit denen Sie schnell loslegen können:
 
-* [App Builder Code Labs auf der Adobe Developer Website](https://developer.adobe.com/app-builder/docs/resources/)
+* [App Builder Code Labs auf der Adobe Developer-Website](https://developer.adobe.com/app-builder/docs/resources/)
 
