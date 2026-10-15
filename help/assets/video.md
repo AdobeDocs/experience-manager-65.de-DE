@@ -376,7 +376,7 @@ Diese Tabelle enthält die Datenraten von typischen Verbindungsgeschwindigkeiten
 | 256 | Einwahlverbindung |
 | 800 | Typische Mobilverbindung Für diese Verbindung eignet sich eine Datenrate von 400 bis maximal 800 für 3G-Verbindungen. |
 | 2.000 | Typische Breitband-Desktop-Verbindung Für diese Verbindung wird eine Datenrate im Bereich von 800-2000 kBit/s angestrebt, wobei die meisten Ziele im Durchschnitt 1200-1500 kBit/s erreichen. |
-| 5.000 | Typische Hochbreitband-Desktopverbindung Die Kodierung in diesem oberen Bereich wird nicht empfohlen, da die Videobereitstellung in dieser Geschwindigkeit für die meisten Benutzer nicht verfügbar ist. |
+| 5.000 | Typische Hochbreitband-Desktopverbindung Die Kodierung in diesem oberen Bereich wird nicht empfohlen, da die Videobereitstellung in dieser Geschwindigkeit für die meisten Nutzenden nicht verfügbar ist. |
 
 ### Auflösung {#resolution}
 
