@@ -230,7 +230,7 @@ Wenn Sie den PDF Generator-Service verwenden, um native Dateiformate wie Microso
 >* Adobe Acrobat, Microsoft® Word, Excel und PowerPoint sind nur für Microsoft® Windows verfügbar. Wenn Sie das UNIX-basierte Betriebssystem verwenden, installieren Sie OpenOffice, um Rich-Text-Dateien und unterstützte Microsoft® Office-Dateien in PDF-Dokumente zu konvertieren.
 >* Schließen Sie alle Dialogfelder, die nach der Installation von Adobe Acrobat und Software von Drittanbietern für alle diejenigen Benutzer angezeigt werden, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
 >* Starten Sie die installierte Software mindestens einmal. Schließen Sie alle Dialogfelder für alle Benutzer, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
->* [Überprüfen Sie das Ablaufdatum der Adobe Acrobat-Seriennummern](https://helpx.adobe.com/de/enterprise/kb/volume-license-expiration-check.html) und legen Sie ein Datum für das Aktualisieren der Lizenz fest oder [migrieren Sie die Seriennummer](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) auf der Grundlage des Ablaufdatums.
+>* [Überprüfen Sie das Ablaufdatum der Adobe Acrobat-Seriennummern](https://helpx.adobe.com/de/enterprise/kb/volume-license-expiration-check.html) und legen Sie ein Datum für das Aktualisieren der Lizenz fest oder [migrieren Sie die Seriennummer](https://www.adobe.com/de/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) auf der Grundlage des Ablaufdatums.
 
 ### Installieren von Adobe Acrobat Pro DC {#install-adobe-acrobat-pro-dc}
 
@@ -1533,9 +1533,9 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
 <!--
 (Legacy Acrobat guidance — retained for reference only) License of Adobe Acrobat installed on AEM Forms Server expires
 
-* If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
+* If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/de/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-   * Use the following commands to generate prov.xml and reserialize the existing install using the prov.xml file instead of commands provided in [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) number article.
+   * Use the following commands to generate prov.xml and reserialize the existing install using the prov.xml file instead of commands provided in [migrating your serial number](https://www.adobe.com/de/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) number article.
 
       ```
 
@@ -1550,7 +1550,7 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
          
       ```
 
-* For large-scale installations, use the [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) to remove previous versions of Reader and Acrobat. Customize the installer and deploy it to all the machines of your organization.
+* For large-scale installations, use the [Acrobat Customization Wizard](https://www.adobe.com/de/devnet-docs/acrobatetk/tools/Wizard/index.html) to remove previous versions of Reader and Acrobat. Customize the installer and deploy it to all the machines of your organization.
 
 (Legacy Acrobat guidance — retained for reference only) AEM Forms Server is in an offline or secure environment and internet is not available to activate Acrobat.
 

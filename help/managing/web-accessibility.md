@@ -78,4 +78,4 @@ Adobe Experience Manager (AEM) umfasst mehrere Funktionen und Möglichkeiten, di
 
 ## Barrierefreiheit bei Adobe {#accessibility-at-adobe}
 
-Weitere Informationen finden Sie im [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
+Weitere Informationen finden Sie im [Adobe Accessibility Resource Center](https://www.adobe.com/de/accessibility/).

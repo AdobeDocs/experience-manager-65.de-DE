@@ -346,7 +346,7 @@ Im Folgenden werden die spezifischen Funktionen und Integrationsmöglichkeiten v
 
 [!DNL Adobe Asset Link] stärkt die Zusammenarbeit zwischen Kreativen und Marketern bei der Inhaltserstellung. Kreative können auf Inhalte zugreifen, die in [!DNL Experience Manager Assets] gespeichert sind, ohne die ihnen besonders vertrauten Apps verlassen zu müssen. Kreative können mit dem In-App-Bedienfeld in [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] und [!DNL Adobe InDesign] Assets nahtlos (durch)suchen sowie ein- und auschecken.
 
-[!DNL Adobe Asset Link] ist Teil des [Creative Cloud-Angebots für Unternehmen](https://www.adobe.com/creativecloud/business/enterprise.html). Weitere Informationen, einschließlich der erforderlichen Konfiguration für Ihre [!DNL Experience Manager]-Bereitstellung, finden Sie unter [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html).
+[!DNL Adobe Asset Link] ist Teil des [Creative Cloud-Angebots für Unternehmen](https://www.adobe.com/de/creativecloud/business/enterprise.html). Weitere Informationen, einschließlich der erforderlichen Konfiguration für Ihre [!DNL Experience Manager]-Bereitstellung, finden Sie unter [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html).
 
 ![Suchen nach Assets in Adobe Photoshop](/help/release-notes/assets/asset_search_photoshop.png)
 
