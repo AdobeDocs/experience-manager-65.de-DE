@@ -648,7 +648,7 @@ Für zusätzliche Anforderungen siehe:
 >
 >Adobe Acrobat 2020 (klassischer Modus) wird von AEM Forms nicht unterstützt. Verwenden Sie stattdessen Adobe Acrobat Pro DC (Continuous Track, neueste Version).
 >
->Die Acrobat DC-Produktfamilie führt zwei Linien für Acrobat und Reader ein, wobei es sich um zwei verschiedene Produkte handelt: „Klassik“ und „Fortlaufend“. Weitere Informationen und einen Vergleich der beiden Linien finden Sie unter [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
+>Die Acrobat DC-Produktfamilie führt zwei Linien für Acrobat und Reader ein, wobei es sich um zwei verschiedene Produkte handelt: „Klassik“ und „Fortlaufend“. Weitere Informationen und einen Vergleich der beiden Linien finden Sie unter [https://www.adobe.com/de/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/de/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
 ## Unterstützte Clients für AEM Forms on JEE {#supported-clients-for-aem-forms-on-jee}
 

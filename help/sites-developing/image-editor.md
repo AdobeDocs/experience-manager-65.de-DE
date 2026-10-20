@@ -51,8 +51,8 @@ Bereichsformat:
 
 Beispiel:
 
-`[rect(0,0,10,10)"https://www.adobe.com"|"_self"|"alt"|(0,0,0.8,0.8)]`
-`[circle(10,10,10)"https://www.adobe.com"|"_self"|"alt"|(0.8,0.8,0.8)]`
+`[rect(0,0,10,10)"https://www.adobe.com/de"|"_self"|"alt"|(0,0,0.8,0.8)]`
+`[circle(10,10,10)"https://www.adobe.com/de"|"_self"|"alt"|(0.8,0.8,0.8)]`
 
 ## Unterstützung für SVG-Bilder {#support-for-svg-images}
 

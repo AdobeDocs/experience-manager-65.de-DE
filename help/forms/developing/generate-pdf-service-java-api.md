@@ -164,7 +164,7 @@ Im folgenden Codebeispiel wird eine Word-Datei mit dem Namen *Loan.doc* in ein P
 
 ## Schnellstart (SOAP-Modus): Konvertieren von HTML-Inhalten in ein PDF-Dokument mithilfe der Java-API {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird HTML-Inhalt unter https://www.adobe.com in ein PDF-Dokument mit dem Namen *AdobeHTML.pdf* konvertiert. (Siehe [Konvertieren von HTML-Dokumenten in PDF-Dokumente](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents).)
+Im folgenden Java-Codebeispiel wird HTML-Inhalt unter https://www.adobe.com/de in ein PDF-Dokument mit dem Namen *AdobeHTML.pdf* konvertiert. (Siehe [Konvertieren von HTML-Dokumenten in PDF-Dokumente](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents).)
 
 ```java
  /*
@@ -242,7 +242,7 @@ Im folgenden Java-Codebeispiel wird HTML-Inhalt unter https://www.adobe.com in e
          GeneratePdfServiceClient pdfGenClient = new GeneratePdfServiceClient(myFactory);
  
          //Get an HTML document to convert to a PDF document a
-         String inputFileName = "https://www.adobe.com";
+         String inputFileName = "https://www.adobe.com/de";
  
           String securitySettings = "No Security";
          String fileTypeSettings = "Standard";

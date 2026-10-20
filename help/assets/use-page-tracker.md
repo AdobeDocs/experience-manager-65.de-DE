@@ -61,7 +61,7 @@ Der folgende Beispiel-Code veranschaulicht, wie eine Web-Seite aussieht, die sow
             onload=assetAnalytics.core.assetLoaded(this)>
 
         <a
-            href="https://www.adobe.com"
+            href="https://www.adobe.com/de"
 
             onclick="assetAnalytics.core.assetClicked(this);return false">
                 <img
@@ -109,7 +109,7 @@ Sie können Einbettungs-Code im Hauptteil des Website-Codes hinzufügen. Das fol
             onload=assetAnalytics.core.assetLoaded(this)>
 
         <a
-            href="https://www.adobe.com"
+            href="https://www.adobe.com/de"
 
             onclick="assetAnalytics.core.assetClicked(this);return false">
            <img

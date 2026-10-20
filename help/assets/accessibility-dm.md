@@ -93,5 +93,5 @@ Weitere Informationen finden Sie unter [Video in Dynamic Media – Hinzufügen v
 
 >[!MORELIKETHIS]
 >
->* [Barrierefreiheit für Adobe-lösungen](https://www.adobe.com/accessibility.html)
+>* [Barrierefreiheit für Adobe-lösungen](https://www.adobe.com/de/accessibility.html)
 >* [Barrierefreiheit in [!DNL Experience Manager Assets]](/help/assets/accessibility.md)
