@@ -44,7 +44,7 @@ Die [!DNL Assets]-Startseite ist standardmäßig deaktiviert. Gehen Sie wie folg
    >
    >Die Aktivierung der Optionen „Angezeigte Assets“, „Angezeigte Projekte“ und „Angezeigte Sammlungen“ erhöht die Anzahl der aufgezeichneten Ereignisse erheblich.
 
-1. Öffnen Sie den Dienst **[!UICONTROL DAM Assets-Startseitenfunktion-Flag]** von Configuration Manager aus `https://[aem_server]:[port]/system/console/configMgr`.
+1. Öffnen Sie den Dienst **[!UICONTROL DAM Assets-Startseiten-Feature-Flag]** von Configuration Manager aus `https://[aem_server]:[port]/system/console/configMgr`.
 1. Wählen Sie die Option `isEnabled.name` aus, um die [!DNL Assets]-Startseitenfunktion zu aktivieren. Speichern Sie die Änderungen.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)

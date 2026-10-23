@@ -35,7 +35,7 @@ In diesem Abschnitt wird die Arbeit mit Videos in Dynamic Media beschrieben.
 
 ## Schnellstartanleitungen: Videos {#quick-start-videos}
 
-Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstieg in adaptive Videosets in Dynamic Media erleichtern. Nach jedem Schritt finden Sie Querverweise auf Themenüberschriften, unter denen Sie weitere Informationen erhalten.
+Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstieg in adaptiven Videosets in Dynamic Media erleichtern. Nach jedem Schritt finden Sie Querverweise auf Themenüberschriften, unter denen Sie weitere Informationen erhalten.
 
 >[!IMPORTANT]
 >
@@ -47,12 +47,12 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
 >
 >Derzeit bekanntes Problem bei der Videowiedergabe in Dynamic Media *nur in Experience Manager 6.5.9.0*:
 >
->* Wenn ein veröffentlichtes Video aktualisiert wird, muss es erneut veröffentlicht werden, um Änderungen beim Versand widerzuspiegeln.
+>* Wenn ein veröffentlichtes Video aktualisiert wird, muss es erneut veröffentlicht werden, damit sich die Änderungen bei der Auslieferung widerspiegeln.
 >
 
 1. **Laden Sie Videos in Dynamic Media** anhand der folgenden Schritte hoch:
 
-   * Erstellen Sie Ihr eigenes Videokodierungsprofil. Sie können auch einfach das in Dynamic Media bereits integrierte vordefinierte Profil _Adaptive Videokodierung_ verwenden.
+   * Erstellen Sie Ihr eigenes Videocodierungsprofil. Sie können auch einfach das in Dynamic Media bereits integrierte vordefinierte Profil _Adaptive Videokodierung_ verwenden.
 
      * [Erstellen eines Videocodierungsprofils](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
      * Die maximale Auflösung bei der Videoausgabekodierung beträgt 8.192 x 4.320 oder 4.320 x 8.192.
@@ -64,7 +64,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
      * Erfahren Sie mehr über die [Best Practices für die Organisation Ihrer digitalen Assets zur Verwendung von Verarbeitungsprofilen](/help/assets/organize-assets.md).
      * Weitere Informationen zum [Organisieren digitaler Assets](/help/assets/organize-assets.md).
 
-   * Laden Sie die Primärvideos in die Ordner hoch. Wenn Sie dem Ordner Videos hinzufügen, werden diese gemäß dem diesem Ordner zugewiesenen Videoverarbeitungsprofil kodiert.
+   * Laden Sie Ihre primären Quellvideos in die Ordner hoch. Wenn Sie dem Ordner Videos hinzufügen, werden diese gemäß dem diesem Ordner zugewiesenen Videoverarbeitungsprofil kodiert.
 
      * Dynamic Media unterstützt hauptsächlich Kurzvideos mit einer maximalen Länge von 30 Minuten und einer Mindestauflösung von mehr als 25 x 25.
      * Die maximal unterstützte Auflösung für das Eingangsvideo beträgt 16.384 x 16.384.
@@ -85,7 +85,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
 
    * Video-Assets vorab anzeigen und veröffentlichen
 
-     * Zeigen Sie das Quellvideo und die kodierten Ausgabedarstellungen des Videos zusammen mit den zugehörigen Miniaturen an:
+     * Zeigen Sie das Quellvideo und die codierten Ausgabedarstellungen des Videos zusammen mit den zugehörigen Miniaturansichten an:
        [Vorschau von Videos](managing-video-assets.md#upload-and-preview-video-assets) oder [Vorschau von Assets)](previewing-assets.md)
        [Videoausgabedarstellungen anzeigen](video-renditions.md)
        [Verwalten von Videoausgabedarstellungen](manage-assets.md#managing-renditions)
@@ -120,7 +120,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
 
      * [Hinzufügen von Videos zu Ihren Web-Seiten](adding-dynamic-media-assets-to-pages.md).
 
-   * Wenn Sie das Web-Content-Management-System eines Drittanbieters verwenden, können Sie Videos mit Web-Seiten verknüpfen oder darin einbetten.
+   * Wenn Sie ein Web Content Management-System eines Drittanbieters verwenden, können Sie Videos mit Ihren Webseiten verknüpfen oder darin einbetten.
 
      * Integrieren von Videos mithilfe der URL:
        [Verknüpfen von URLs mit Ihrer Web-Anwendung](linking-urls-to-yourwebapplication.md).
@@ -134,15 +134,15 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
 
 ## Arbeiten mit Video in Dynamic Media {#working-with-video-in-dynamic-media}
 
-„Video“ in Dynamic Media ist eine Komplettlösung, die das Veröffentlichen von qualitativ hochwertigen adaptiven Videos für das Streaming auf mehreren Bildschirmen vereinfacht, einschließlich Desktops und iOS-, Android™-, Blackberry®- und Windows-Mobilgeräten. Ein adaptives Video-Set umfasst Versionen desselben Videos, die mit unterschiedlichen Bit-Raten und Formaten codiert wurden, wie 400 kBit/s, 800 kBit/s und 1000 kBit/s. Der Desktop-Computer oder das Mobilgerät erkennt die verfügbare Bandbreite.
+Video in Dynamic Media ist eine End-to-End-Lösung, mit der sich hochwertige adaptive Videos einfach für das Streaming auf mehreren Bildschirmen veröffentlichen lassen, einschließlich Desktops sowie iOS-, Android™-, BlackBerry®- und Windows-Mobilgeräten. Ein adaptives Video-Set umfasst Versionen desselben Videos, die mit unterschiedlichen Bit-Raten und Formaten codiert wurden, wie 400 kBit/s, 800 kBit/s und 1000 kBit/s. Der Desktop-Computer oder das Mobilgerät erkennt die verfügbare Bandbreite.
 
-Auf einem iOS-Mobilgerät wird beispielsweise die Bandbreite erkannt, etwa 3G, 4G oder WLAN. Dann wird automatisch das richtig kodierte Video aus den verschiedenen Video-Bitraten im adaptiven Videoset ausgewählt. Das Video wird auf Desktops, Mobilgeräten oder Tablets gestreamt.
+Auf einem iOS-Mobilgerät wird beispielsweise die Bandbreite erkannt, etwa 3G, 4G oder WLAN. Dann wird automatisch das richtig codierte Video aus den verschiedenen Video-Bitraten im adaptiven Videoset ausgewählt. Das Video wird auf Desktops, Mobilgeräten oder Tablets gestreamt.
 
-Außerdem wird die Videoqualität automatisch geändert, wenn sich die Netzwerkbedingungen am Desktop oder Mobilgerät ändern. Wenn eine Kundin oder ein Kunde an einem Desktop-Computer in den Vollbildmodus wechselt, verwendet das adaptive Video-Set eine höhere Auflösung und sorgt so für ein besseres Wiedergabeerlebnis. Adaptive Video-Sets sorgen für eine optimale Wiedergabe für Kundschaft, die sich Dynamic Media-Videos auf mehreren Bildschirmen und Geräten ansehen.
+Außerdem wird die Videoqualität automatisch geändert, wenn sich die Netzwerkbedingungen am Desktop oder Mobilgerät ändern. Wenn eine Kundin oder ein Kunde an einem Desktop-Computer in den Vollbildmodus wechselt, verwendet das adaptive Video-Set eine höhere Auflösung und sorgt so für ein besseres Wiedergabeerlebnis. Adaptive Videosets sorgen für eine optimale Wiedergabe für die Kundschaft, die Dynamic Media-Videos auf mehreren Bildschirmen und Geräten ansieht.
 
 Die Logik, mit der Video-Player bestimmen, welches kodierte Video wiedergegeben oder während der Wiedergabe ausgewählt werden soll, basiert auf dem folgenden Algorithmus:
 
-1. Der Video-Player lädt das erste Videofragment auf Basis der Bitrate, die am nächsten an dem Wert liegt, der im Player selbst als „erste Bitrate“ festgelegt wurde.
+1. Der Video-Player lädt das erste Videofragment auf Basis der Bitrate, die am nächsten an dem Wert liegt, der im Player selbst als „anfängliche Bitrate“ festgelegt wurde.
 1. Video-Player wechselt auf Basis von Änderungen an der Bandbreitengeschwindigkeit anhand der folgenden Kriterien:
 
    1. Der Player wählt den Stream mit der höchsten Bandbreite aus, die kleiner oder gleich der geschätzten Bandbreite ist.
@@ -159,7 +159,7 @@ Für das Verwalten von einzelnen Videos und adaptiven Videosets wird Folgendes u
 
 * Videountertitelung in allen HTML5-Video-Viewern
 * Organisieren und Durchsuchen von Videos mit kompletter Metadatenunterstützung für die effiziente Verwaltung von Video-Assets
-* Stellen Sie adaptive Video-Sets im Web, auf Desktops und Mobilgeräten bereit, einschließlich iPhone, iPad, Android™, BlackBerry® und Windows Phone.
+* Stellen Sie adaptive Videosets für das Web sowie für Desktops und Mobilgeräte bereit, einschließlich iPhone, iPad, Android™, BlackBerry® und Windows Phone.
 
 Das adaptive Video-Streaming wird auf verschiedenen iOS-Plattformen unterstützt. Siehe [Dynamic Media Viewers-Referenzhandbuch](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
 
@@ -172,7 +172,7 @@ Welche Windows-Geräte dieses Videoformat unterstützen, können Sie hier einseh
   * Einzelvideo-Viewer
   * Viewer für gemischte Medien, die sowohl Video- als auch Bildinhalte kombinieren
 
-* Konfigurieren von Video-Playern entsprechend Ihren Branding-Anforderungen
+* Konfigurieren Sie Video-Player entsprechend Ihren Branding-Anforderungen.
 * Integrieren von Videos in Websites, mobile Sites oder Mobile Apps mit einer einfachen URL oder mit Einbettungs-Code
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
@@ -181,17 +181,17 @@ Siehe auch [Viewer für Experience Manager Assets und Dynamic Media Classic](htt
 
 ## Best Practice: Verwenden des HTML5-Video-Viewers {#best-practice-using-the-html-video-viewer}
 
-Die HTML5-Video-Viewer-Vorgaben aus „Dynamic Media“ stellen robuste Video-Player dar. Sie können diese verwenden, um zahlreiche häufig auftretende Probleme im Zusammenhang mit der Wiedergabe von HTML5-Videos zu vermeiden. Hinzu kommen Probleme im Zusammenhang mit mobilen Geräten, wie z. B. die fehlende Bereitstellung von Streaming mit adaptiver Bitrate und die begrenzte Reichweite von Desktop-Browsern.
+Die HTML5-Video-Viewer-Vorgaben aus „Dynamic Media“ stellen robuste Video-Player dar. Sie können diese verwenden, um zahlreiche häufig auftretende Probleme im Zusammenhang mit der Wiedergabe von HTML5-Videos zu vermeiden. Hinzu kommen Probleme im Zusammenhang mit Mobilgeräten, wie z. B. die fehlende Bereitstellung von Streaming mit adaptiver Bitrate und die begrenzte Reichweite von Desktop-Browsern.
 
-Mithilfe standardmäßiger Webentwicklungs-Tools können Sie die Funktionen des Video-Players entwerfen. Sie können beispielsweise die Schaltflächen, die Steuerelemente und den benutzerdefinierten Poster-Hintergrund mit HTML5 und CSS entwerfen, um Ihre Kundinnen und Kunden mit einem angepassten Erscheinungsbild anzusprechen.
+Auf der Designseite des Players können Sie die Funktionen des Video-Players mit standardmäßigen Webentwicklungs-Tools gestalten. Sie können beispielsweise die Schaltflächen, die Steuerelemente und den benutzerdefinierten Poster-Hintergrund mit HTML5 und CSS entwerfen, um Ihre Kundinnen und Kunden mit einem angepassten Erscheinungsbild anzusprechen.
 
-Bei der Wiedergabe wird die Videofähigkeit des Browsers automatisch erkannt. Anschließend wird das Video mit HLS (HTTP Live Streaming) oder DASH (Dynamic Adaptive Streaming über HTTP) bereitgestellt, das auch als Streaming mit adaptiver Bitrate bezeichnet wird. Wenn diese Bereitstellungsmethoden nicht verfügbar sind, wird stattdessen der progressive HTML5-Download verwendet.
+Bei der Wiedergabe wird die Videofähigkeit des Browsers automatisch erkannt. Anschließend wird das Video mit HLS (HTTP Live Streaming) oder DASH (Dynamic Adaptive Streaming über HTTP) bereitgestellt, das auch als Streaming mit adaptiver Bitrate bezeichnet wird. Wenn diese Bereitstellungsmethoden nicht verfügbar sind, wird stattdessen progressives HTML5 verwendet.
 
-Indem Sie Folgendes in einen einzelnen Player kombinieren:
+Durch das Kombinieren der folgenden Elemente in einem einzelnen Player:
 
 * Die Möglichkeit, die Wiedergabekomponenten mit HTML5 und CSS zu entwerfen
 * Eingebettete Wiedergabe
-* Verwendung von adaptivem und progressivem Streaming je nach Browser-Funktionalität
+* Verwenden Sie adaptives und progressives Streaming je nach Browser-Funktionalität
 
 Sie können die Reichweite Ihrer Rich-Media-Inhalte sowohl auf Desktop- als auch auf Mobilgeräte ausdehnen und ein optimiertes Videoerlebnis sicherstellen.
 
@@ -203,9 +203,9 @@ Beim adaptiven Video-Streaming auf Desktop und Mobilgeräten basieren die für d
 
 Die Videowiedergabe erfolgt entweder per DASH, HLS oder als progressiver Video-Download. In früheren Versionen von Experience Manager, z. B. 6.0, 6.1 und 6.2, wurden Videos über HTTP gestreamt.
 
-In Experience Manager 6.3 und höheren Versionen werden die Videos nun über HTTPS gestreamt (d. h. DASH oder HLS), da die DM-Gateway-Service-URL ebenfalls immer HTTPS verwendet. Beachten Sie, dass es bei diesem Standardverhalten keine Auswirkung auf die Kundinnen und Kunden gibt. Video-Streaming erfolgt immer über HTTPS, sofern der Browser dies unterstützt. (siehe folgende Tabelle). Daher:
+In Experience Manager 6.3 und höheren Versionen werden die Videos nun über HTTPS gestreamt (d. h. DASH oder HLS), da die DM-Gateway-Service-URL ebenfalls immer HTTPS verwendet. Dieses Standardverhalten hat keine Auswirkungen auf die Kundschaft. Video-Streaming erfolgt immer über HTTPS, außer wenn der Browser dies nicht unterstützt. (siehe folgende Tabelle). Daher:
 
-* Wenn Sie eine HTTPS-Website mit HTTPS-Video-Streaming haben, ist das Streaming gut.
+* Wenn Sie eine HTTPS-Website mit HTTPS-Video-Streaming haben, funktioniert das Streaming problemlos.
 * Wenn Sie eine HTTP-Website mit HTTPS-Video-Streaming haben, ist das Streaming gut und es gibt keine Probleme mit gemischten Inhalten im Webbrowser.
 
 DASH ist der internationale Standard und HLS ist ein Apple-Standard. Beide werden für adaptives Video-Streaming verwendet. Außerdem passen beide Technologien die Wiedergabe automatisch an die Netzwerkbandbreite an. Darüber hinaus können Kundinnen und Kunden einen beliebigen Punkt im Video „suchen“, ohne auf den Download des restlichen Videos zu warten.
@@ -229,7 +229,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr>
    <td>Desktop</td>
    <td>Internet Explorer 11+</td>
-   <td>Unter Windows 8 und Windows 10 – HTTPS wird bei Anfragen von DASH* oder HLS erzwungen. Bekannte Einschränkung: HTTP kann in dieser Kombination von Browser/Betriebssystem nicht mit DASH* oder HLS verwendet werden<br /> <br /> Unter Windows 7 – Progressiver Download. Verwendet Standardlogik zur Auswahl von HTTP oder HTTPS.</td>
+   <td>Unter Windows 8 und Windows 10 – erzwingen Sie die Verwendung von HTTPS, wenn DASH* oder HLS angefordert wird. Bekannte Einschränkung: HTTP kann in dieser Kombination von Browser/Betriebssystem nicht mit DASH* oder HLS verwendet werden<br /> <br /> Unter Windows 7 – Progressiver Download. Verwendet Standardlogik zur Auswahl von HTTP oder HTTPS.</td>
   </tr>
   <tr>
    <td>Desktop</td>
@@ -301,7 +301,7 @@ Der Workflow für die **Dynamic Media-Videokodierung** kodiert Videos, wenn Dyna
 <!--
 DEAD The following are best-practice tips for encoding source video files.
 
-For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_de).
+For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en).
 
 * [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
 -->
@@ -310,16 +310,16 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 Verwenden Sie zum Kodieren einer Videodatei eine Quellvideodatei mit der höchstmöglichen Qualität. Verwenden Sie keine zuvor kodierten Videodateien, da diese Dateien bereits komprimiert wurden und die weitere Kodierung zu mangelhafter Videoqualität führen würde.
 
-* Dynamic Media unterstützt hauptsächlich Kurzvideos mit einer maximalen Länge von 30 Minuten und einer Mindestauflösung von mehr als 25 x 25.
-* Sie können Videodateien mit einer Größe von bis zu 15 GB als Primärquelle hochladen.
+* Dynamic Media unterstützt hauptsächlich Kurzvideos mit einer maximalen Länge von 30 Minuten und einer Mindestauflösung von mehr als 25 × 25.
+* Sie können primäre Quell-Video-Dateien mit einer Größe von bis zu 15 GB hochladen.
 
-Die folgende Tabelle beschreibt die empfohlenen Werte für Größe, Seitenverhältnis und Mindest-Bitrate, die Quellvideos vor der Kodierung aufweisen sollten:
+Die folgende Tabelle beschreibt die empfohlenen Werte für Größe, Seitenverhältnis und Mindest-Bitrate, die Ihre Quell-Video-Dateien vor der Codierung aufweisen müssen:
 
 | Größe | Seitenverhältnis | Mindest-Bitrate |
 |--- |--- |--- |
 | 1024 x 768 | 4:3 | 4500 kBit/s für die meisten Videos |
-| 1280 x 720 | 16:9 | 3000–6000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
-| 1920 x 1080 | 16:9 | 6000–8000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
+| 1280 x 720 | 16:9 | 3000–6000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt. |
+| 1920 x 1080 | 16:9 | 6000–8000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt. |
 
 ### Abrufen der Metadaten von Dateien {#obtaining-a-file-s-metadata}
 
@@ -359,12 +359,12 @@ Die Bitrate ist die kodierte Menge an Daten für eine Videowiedergabe mit einer 
 Sie können zwischen zwei Arten der Bitraten-Kodierung wählen:
 
 * **[!UICONTROL Konstante Bitraten-Kodierung]** (CBR): Während der CBR-Kodierung bleibt die Bitrate, d. h. die Anzahl der Bits pro Sekunde, während des Kodierungsvorgangs gleich. Die CBR-Kodierung speichert die festgelegte Datenrate für das gesamte Video in Ihrer Einstellung. Die CBR-Kodierung optimiert nicht die Qualität von Mediendateien, spart jedoch Speicherplatz.
-Verwenden Sie CBR, wenn Ihr Video im gesamten Video ein ähnliches Bewegungsniveau enthält. CBR wird hauptsächlich zum Streaming von Videoinhalten verwendet. Siehe auch [Verwenden von benutzerdefinierten Videokodierungsparametern](/help/assets/video-profiles.md#using-custom-added-video-encoding-parameters).
+Verwenden Sie CBR, wenn Ihr Video durchgehend ein ähnliches Bewegungsniveau aufweist. CBR wird hauptsächlich zum Streaming von Videoinhalten verwendet. Siehe auch [Verwenden von benutzerdefinierten Videokodierungsparametern](/help/assets/video-profiles.md#using-custom-added-video-encoding-parameters).
 
-* **[!UICONTROL Variable Bit-Raten-Codierung]** (VBR): Bei der VBR-Codierung wird die Datenrate auf der Grundlage der vom Kompressor benötigten Daten nach unten und an die von Ihnen festgelegte Obergrenze angepasst. Diese Funktionalität bedeutet, dass die Bitrate der Mediendatei während eines VBR-Kodierungsprozesses je nach der benötigten Bitrate der Mediendateien dynamisch erhöht oder reduziert wird.
-VBR benötigt mehr Zeit für die Kodierung, liefert jedoch die besten Ergebnisse. Die Qualität der Mediendatei ist besonders gut. VBR wird meist für die progressive HTTP-Übermittlung von Videoinhalten verwendet.
+* **[!UICONTROL Variable Bit-Raten-Codierung]** (VBR): Bei der VBR-Codierung wird die Datenrate auf der Grundlage der vom Kompressor benötigten Daten nach unten und an die von Ihnen festgelegte Obergrenze angepasst. Diese Funktionalität bedeutet, dass die Bitrate der Mediendatei während eines VBR-Codierungsprozesses je nach Bitratenanforderungen der Datei dynamisch erhöht oder verringert wird.
+VBR benötigt mehr Zeit für die Kodierung, liefert jedoch die besten Ergebnisse. Die Qualität der Mediendatei ist besonders gut. VBR wird meist für die progressive HTTP-Bereitstellung von Videoinhalten verwendet.
 
-Verwendung von VBR vs. CRB
+Wann verwenden Sie VBR und wann CBR?
 Wenn es um die Auswahl von VBR oder CBR geht, wird für Ihre Mediendateien meist VBR empfohlen. VBR bietet Dateien mit besserer Qualität bei wettbewerbsfähigen Bitraten. Verwenden Sie bei VBR auf jeden Fall eine Kodierung mit zwei Durchgängen und stellen Sie die maximale Bitrate so ein, dass sie 1,5-mal größer ist als die Ziel-Video-Bitrate.
 
 Berücksichtigen Sie bei Auswahl einer Videocodierungsvorgabe die Verbindungsgeschwindigkeit der Zielperson. Wählen Sie eine Vorgabe mit einer Datenrate, die 80 % dieser Geschwindigkeit beträgt. Beispiel: Wenn die Verbindungsgeschwindigkeit der Zielperson 1000 kBit/s beträgt, hat die optimale Vorgabe eine Videodatenrate von 800 kBit/s.
@@ -382,7 +382,7 @@ Diese Tabelle enthält die Datenraten von typischen Verbindungsgeschwindigkeiten
 
 Die **Auflösung** beschreibt die Höhe und Breite einer Videodatei in Pixeln. Die meisten Quellvideos werden mit hoher Auflösung gespeichert (z. B. 1920 x 1080). Zu Streaming-Zwecken werden Quellvideos in eine niedrigere Auflösung komprimiert (640 x 480 oder weniger).
 
-Auflösung und Datenrate stellen zwei eng miteinander verknüpfte Faktoren der Videoqualität dar. Um dieselbe Videoqualität beizubehalten gilt: Je höher die Anzahl Pixel in einer Videodatei (also je höher die Auflösung), desto höher muss auch die Datenrate sein. Betrachten Sie z. B. die Anzahl Pixel pro Frame in einer Videodatei mit der Auflösung 320 x 240 und einer Datei mit der Auflösung 640 x 480:
+Auflösung und Datenrate stellen zwei eng miteinander verknüpfte Faktoren der Videoqualität dar. Um dieselbe Videoqualität beizubehalten, gilt: Je höher die Anzahl Pixel in einer Videodatei (also je höher die Auflösung), desto höher muss auch die Datenrate sein. Betrachten Sie z. B. die Anzahl Pixel pro Frame in einer Videodatei mit der Auflösung 320 x 240 und einer Datei mit der Auflösung 640 x 480:
 
 | Auflösung | Pixel pro Frame |
 |--- |--- |
@@ -398,7 +398,7 @@ Da Auflösung und Datenrate miteinander verknüpft sind, haben Sie beim Kodieren
 * Wählen Sie eine Datenrate und codieren Sie dann mit der höchsten Auflösung, die mit der gewählten Datenrate eine gute Qualität erzeugt.
 * Wählen Sie eine Auflösung und kodieren Sie dann mit der erforderlichen Datenrate, um hohe Videoqualität mit der gewählten Auflösung zu erreichen.
 
-Orientieren Sie sich beim Auswählen (oder Erstellen) einer Videokodierungsvorgabe für die Primär-Videodatei an der folgenden Tabelle, um die richtige Auflösung auszuwählen.
+Wenn Sie eine Videocodierungsvoreinstellung für Ihre primäre Quellvideodatei auswählen (oder erstellen), verwenden Sie diese Tabelle, um die richtige Auflösung zu bestimmen:
 
 | Auflösung | Höhe (Pixel) | Bildschirmgröße |
 |--- |--- |--- |
@@ -415,13 +415,13 @@ Die maximal unterstützte Auflösung für das Eingangsvideo beträgt 16.384 x 
 
 In den USA und Japan werden die meisten Videos mit 29,97 Frames pro Sekunde (fps) aufgenommen. In Europa ist der Standard 25 fps. Filme werden wiederum normalerweise mit 24 fps aufgenommen.
 
-Wählen Sie eine Videokodierungsvorgabe aus, die der fps-Rate der jeweiligen Primär-Videodatei entspricht. Wenn das Primärvideo beispielsweise 25 fps aufweist, wählen Sie eine Kodierungsvorgabe mit 25 fps. Standardmäßig wird bei jeder benutzerdefinierten Codierung der fps-Wert der Primär-Videodatei verwendet. Daher müssen Sie die fps-Einstellung nicht explizit angeben, wenn Sie eine Videokodierungsvorgabe erstellen.
+Wählen Sie eine Videokodierungsvorgabe aus, die der fps-Rate der jeweiligen Primär-Videodatei entspricht. Wenn Ihr primäres Quellvideo beispielsweise 25 fps aufweist, wählen Sie eine Codierungsvoreinstellung mit 25 fps. Standardmäßig wird bei jeder benutzerdefinierten Codierung der fps-Wert der Primär-Videodatei verwendet. Daher müssen Sie die fps-Einstellung nicht explizit angeben, wenn Sie eine Video-Codierungsvoreinstellung erstellen.
 
 ### Abmessungen bei der Videokodierung {#video-encoding-dimensions}
 
 Wählen Sie für optimale Ergebnisse Kodierungsabmessungen so aus, dass das Quellvideo ein ganzes Mehrfaches aller kodierten Videos ist.
 
-Um dieses Verhältnis zu berechnen, teilen Sie die Quellbreite durch die kodierte Breite, um das Breitenverhältnis zu ermitteln. Dann teilen Sie die Quellhöhe durch die kodierte Höhe, um das Höhenverhältnis zu ermitteln.
+Um dieses Verhältnis zu berechnen, teilen Sie die Breite der Quelle durch die codierte Breite, um das Breitenverhältnis zu ermitteln. Dann teilen Sie die Quellhöhe durch die kodierte Höhe, um das Höhenverhältnis zu ermitteln.
 
 Wenn das resultierende Verhältnis eine Ganzzahl ist, hat das Video die optimale Skalierung. Wenn das errechnete Verhältnis keine Ganzzahl ist, wird die Videoqualität beeinträchtigt, da übrig gebliebene Pixelartefakte auf der Anzeige verbleiben. Dieser Effekt ist am auffälligsten, wenn das Video Text enthält.
 
@@ -454,7 +454,7 @@ Videoberichte enthalten mehrere aggregierte Metriken für einen angegebenen Zeit
 
 Eine Tabelle mit allen *veröffentlichten* Videos wird ebenfalls angezeigt, damit Sie die am häufigsten angezeigten Videos auf der Website basierend auf insgesamt gestarteten Videos verfolgen können.
 
-Wenn Sie in der Liste einen Videonamen auswählen, wird der Bericht zur Zielgruppentreue (Abfallrate) in Form eines Liniendiagramms angezeigt. Das Diagramm enthält die Anzahl der Ansichten für jeden einzelnen Moment während der Videowiedergabe. Wenn Sie das Video wiedergeben, bewegt sich die vertikale Leiste synchron mit der Zeitanzeige im Player. Abfälle in den Liniendiagrammdaten geben an, wo die Zielgruppe das Video aus Desinteresse abbricht.
+Wenn Sie in der Liste einen Videonamen auswählen, wird der Bericht zur Zielgruppentreue (Abbruchrate) für dieses Video in Form eines Liniendiagramms angezeigt. Das Diagramm enthält die Anzahl der Ansichten für jeden einzelnen Moment während der Videowiedergabe. Wenn Sie das Video wiedergeben, bewegt sich die vertikale Leiste synchron mit der Zeitanzeige im Player. Abfälle in den Liniendiagrammdaten geben an, wo die Zielgruppe das Video aus Desinteresse abbricht.
 
 Wenn das Video außerhalb von Adobe Experience Manager für Dynamic Media kodiert wurde, sind das Diagramm zur Zielgruppentreue (Abbruch) und die Daten zur Wiedergabe in Prozent in der Tabelle nicht verfügbar.
 
@@ -493,7 +493,7 @@ Verwenden Sie das [Adobe Dynamic Media-Viewer-Referenzhandbuch](https://experien
 
 1. Navigieren Sie zu einem veröffentlichten Video-Asset.
 1. Wählen Sie links oben auf der Seite des Assets aus der Dropdown-Liste die Option **[!UICONTROL Viewer]** aus.
-1. Wählen Sie eine Video-Viewer-Vorgabe aus und kopieren Sie den Einbettungs-Code.
+1. Wählen Sie eine Video-Viewer-Voreinstellung aus und kopieren Sie den Einbettungs-Code.
 1. Suchen Sie im Einbettungs-Code die folgende Zeile:
 
    `videoViewer.setParam("config2", "<value>");`
@@ -502,7 +502,7 @@ Verwenden Sie das [Adobe Dynamic Media-Viewer-Referenzhandbuch](https://experien
 
    Den richtigen Wert für den Parameter „config2“ finden Sie sowohl im **[!UICONTROL Einbettungs-Code]** als auch in der Funktion **[!UICONTROL URL kopieren]**. Der in der URL des Befehls **[!UICONTROL URL kopieren]** zu suchende Parameter ist `&config2=<value>`. Der Wert lautet fast immer `companypreset`, kann aber in einigen Fällen auch `companypreset-1`, `companypreset-2` usw. lauten.
 
-1. Fügen Sie im benutzerspezifischen Video-Viewer-Code „AppMeasurementBridge.jsp“ wie folgt zur Viewer-Seite hinzu:
+1. Fügen Sie in Ihrem benutzerdefinierten Video-Viewer-Code wie folgt AppMeasurementBridge.jsp zur Viewer-Seite hinzu:
 
    * Bestimmen Sie zunächst, ob Sie den Parameter `&preset` benötigen.
 
@@ -528,7 +528,7 @@ Verwenden Sie das [Adobe Dynamic Media-Viewer-Referenzhandbuch](https://experien
 
      `trackingManager.attach(videoPlayer);`
 
-     hinzu, um die Komponente an den TrackingManager anzuhängen. Um mehrere Viewer auf einer Seite zu verfolgen, verwenden Sie mehrere TrackingManager-Komponenten.
+     … fügen Sie Folgendes hinzu, um die Komponente an den trackingManager anzuhängen Um mehrere Viewer auf einer Seite zu tracken, verwenden Sie mehrere Tracking-Manager-Komponenten.
 
    * Erstellen Sie das Objekt „AppMeasurementBridge“, indem Sie Folgendes hinzufügen:
 
@@ -536,16 +536,16 @@ Verwenden Sie das [Adobe Dynamic Media-Viewer-Referenzhandbuch](https://experien
      var appMeasurementBridge = new AppMeasurementBridge(); appMeasurementBridge.setVideoPlayer(videoPlayer);
      ```
 
-   * Fügen Sie die Nachverfolgungsfunktion hinzu, indem Sie Folgendes hinzufügen:
+   * Fügen Sie die Tracking-Funktion hinzu, indem Sie Folgendes hinzufügen:
 
      ```
      trackingManager.setCallback(appMeasurementBridge.track, 
       appMeasurementBridge);
      ```
 
-   Das appMeasurementBridge-Objekt verfügt über eine integrierte Verfolgungsfunktion. Sie können aber auch Ihre eigene Funktion bereitstellen, um mehrere Tracking-Systeme oder anderen Funktionen zu unterstützen.
+   Das appMeasurementBridge-Objekt verfügt über eine integrierte Tracking-Funktion. Sie können aber auch Ihre eigene Funktion bereitstellen, um mehrere Tracking-Systeme oder andere Funktionen zu unterstützen.
 
-<!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/de_DE/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
+<!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 
 
@@ -555,7 +555,7 @@ Mit der Funktion für mehrfache Untertitel und Audiospuren in Dynamic Media kön
 
 ![Registerkarte „Beschriftungen und Audiospuren“ in Dynamic Media zusammen mit einer Tabelle der hochgeladenen `.vtt`-Untertiteldateien und der hochgeladenen .MP3-Audiospurdateien für ein Video](assets-dm/msma-subtitle-audiotracks-tab2.png)
 
-Für das Hinzufügen von mehrfachen Untertiteln und Audiospuren zu Ihrem primären Video sind unter anderem die folgenden Anwendungsfälle zu berücksichtigen:
+Zu den Anwendungsfällen für das Hinzufügen mehrerer Untertitel- und Audiospuren zu Ihrem primären Video gehören unter anderem die folgenden:
 
 | Typ | Anwendungsfall |
 |--- |--- |
@@ -641,7 +641,7 @@ Hinzugefügte Untertitel und Beschriftungen werden in den Formaten WebVTT und Ad
 
 Das Hochladen zusätzlicher Untertitel- oder Audiospurdateien in ein bereits veröffentlichtes Video führt dazu, dass diesen Dateien der Status `Processed` zugewiesen wird. Dieser Status wird angewendet, wenn die Dateien im Anschluss an den Upload vorbereitet werden. An diesem Punkt können Sie das Video in Dynamic Media in einer Vorschau anzeigen, um sich die neu hochgeladenen Dateien anzusehen oder anzuhören.
 
-Nach der Vorschau müssen Sie das Video jedoch erneut *veröffentlichen*, damit die neu hinzugefügten Untertitel- oder Audiospurdateien ebenfalls veröffentlicht werden. Nach der Veröffentlichung sind die Untertitel oder Audioinhalte über die öffentliche Dynamic Media-URL verfügbar.
+Nach der Vorschau müssen Sie das Video jedoch erneut *veröffentlichen*, damit die neu hinzugefügten Untertitel- oder Audiospurdateien ebenfalls veröffentlicht werden. Nach der Veröffentlichung sind die Untertitel oder Audio über die öffentliche Dynamic Media-URL verfügbar.
 
 >[!NOTE]
 >
@@ -651,13 +651,13 @@ Wenn Sie Dynamic Media für die sofortige Veröffentlichung konfiguriert haben, 
 
 >[!CAUTION]
 >
->Wenn Sie Untertitel- oder Audiodateien in ein Video hochladen, das entweder schon veröffentlicht ist oder dessen Veröffentlichung rückgängig gemacht wurde, werden die Dateien bei einer [*erneuten Verarbeitung*](/help/assets/processing-profiles.md#reprocessing-assets) des Videos gelöscht. Nur die ursprünglichen Audioinhalte des Videos bleiben intakt. In solchen Fällen müssen Sie die Untertitel- und Audiospurdateien erneut in das Video hochladen.
+>Wenn Sie Untertitel- oder Audiodateien in ein Video hochladen, das entweder schon veröffentlicht ist oder dessen Veröffentlichung rückgängig gemacht wurde, werden die Dateien bei einer [*erneuten Verarbeitung*](/help/assets/processing-profiles.md#reprocessing-assets) des Videos gelöscht. Nur das ursprüngliche Audio des Videos bleibt intakt. In solchen Fällen müssen Sie die Untertitel- und Audiospurdateien erneut in das Video hochladen.
 
-#### Hinzufügen mehrerer Untertitel zu einem Video mit vorhandener URL per Untertitelmodifikator
+#### Mehrere Untertitel zu einem Video hinzufügen, das bereits über eine URL mit Untertitelmodifikator verfügt
 
 Dynamic Media unterstützt das Hinzufügen eines einzelnen Untertitels zu Videos per URL-Modifikator. Siehe [Hinzufügen von Untertiteln zu Videos](#adding-captions-to-video).
 
-Mehrere Änderungen an einem Untertitel haben Vorrang vor einem Untertitel, der über einen URL-Modifikator für veröffentlichte Videos hinzugefügt wird.
+Mehrere Untertiteländerungen haben Vorrang vor einem Untertitel, der über einen URL-Modifikator für veröffentlichte Videos hinzugefügt wird.
 
 **So fügen Sie einem Video mit vorhandener URL per Untertitelmodifikator mehrere Untertitel hinzu:**
 
@@ -698,7 +698,7 @@ Alle hochgeladenen Audiospurdateien können jedoch als Standardaudio festgelegt 
 >Die Standardaudiowiedergabe kann auch von den Einstellungen in den folgenden Browsern abhängen:
 >
 >* Chrome: Es wird das im Video festgelegte Standardaudio wiedergegeben.
->* Safari: Wenn in Safari die Standardsprache festgelegt ist, wird Audio mit der festgelegten Standardsprache wiedergegeben, sofern mit dem Manifest des Videos verfügbar. Andernfalls wird das Standardaudio wiedergegeben, das als Teil der Eigenschaften eines Videos festgelegt ist.
+>* Safari – Wenn in Safari eine Standardsprache festgelegt ist, wird Audio in dieser Standardsprache wiedergegeben, sofern sie im Manifest des Videos verfügbar ist. Andernfalls wird das Standardaudio wiedergegeben, das als Teil der Eigenschaften eines Videos festgelegt ist.
 
 **So legen Sie das Standardaudio für ein Video mit mehreren Audiospuren fest:**
 
@@ -715,14 +715,14 @@ Wählen Sie im Dialogfeld **Als Standard festlegen** die Option **[!UICONTROL Er
 1. Wählen Sie oben rechts die Option **[!UICONTROL Speichern und schließen]** aus.
 1. Veröffentlichen Sie das Video. Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
 
-### Anzeigen eines Videos mit mehrfachen Untertiteln und Audiospuren in einer Vorschau{#preview-video-audio-subtitle}
+### Vorschau eines Videos mit mehreren Untertitel- und Audio-Spuren{#preview-video-audio-subtitle}
 
-Wenn Untertitel- und Audiospurdateien für ein Video hochgeladen und verarbeitet wurden, können Sie mit dem Dynamic Media-Video-Viewer (oder ggf. anderen Viewer-Typen) alle verschiedenen Spuren in einer Vorschau anzeigen. Durch die Vorschau erfahren Sie, wie Ihr Video für Ihre Kundinnen und Kunden aussieht und klingt, und stellen sicher, dass es sich wie erwartet verhält.
+Wenn Untertitel- und Audiospurdateien für ein Video hochgeladen und verarbeitet wurden, können Sie mit dem Dynamic Media-Video-Viewer (oder ggf. anderen Viewer-Typen) alle verschiedenen Spuren in einer Vorschau anzeigen. Durch die Vorschau erfahren Sie, wie Ihr Video für Ihre Kundinnen und Kunden aussieht und klingt, und stellen sicher, dass es sich wie erwartet verhält.
 
 Wenn Sie mit dem Video zufrieden sind, können Sie es mit einer der folgenden Methoden [veröffentlichen](publishing-dynamicmedia-assets.md).
 
 Siehe [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/embed-code.md).
-Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
+Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Content über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
 Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 >[!NOTE]
@@ -815,13 +815,13 @@ Verdeckte Untertitel ermöglichen auch einen besseren Zugang für Personen, die 
 
 Weitere Informationen finden Sie unter [Barrierefreiheit in Dynamic Media](/help/assets/accessibility-dm.md).
 
-Dynamic Media konvertiert Untertiteldateien in das JSON-Format (JavaScript Object Notation). Diese Konvertierung bedeutet, dass Sie den JSON-Text als verborgenes, aber vollständiges Transkript des Videos einbetten können. Suchmaschinen können dann den Inhalt durchsuchen und indizieren, damit Kundinnen und Kunden die Videos leichter finden können und zusätzliche Detailinformationen zum Videoinhalt erhalten.
+Dynamic Media konvertiert Untertiteldateien in das JSON-Format (JavaScript Object Notation). Diese Konvertierung bedeutet, dass Sie den JSON-Text als ausgeblendetes, aber vollständiges Transkript des Videos in eine Web-Seite einbetten können. Suchmaschinen können dann den Inhalt durchsuchen und indizieren, damit Kundinnen und Kunden die Videos leichter finden können und zusätzliche Detailinformationen zum Videoinhalt erhalten.
 
 Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie unter [Bereitstellen statischer Inhalte (keine Bilder)](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api).
 
 **Hinzufügen von verdeckten Untertiteln zu einem Video:**
 
-1. Verwenden Sie ein Drittanbieterprogramm bzw. einen Service, um Ihre Untertiteldatei für ein Video zu erstellen.
+1. Verwenden Sie eine Drittanbieter-Anwendung oder einen Drittanbieter-Dienst, um Ihre Untertiteldatei für ein Video zu erstellen.
 
    Stellen Sie sicher, dass die erstellte Datei dem Standard von WebVTT (Web Video Text Tracks) entspricht. Die Erweiterung der Untertiteldatei lautet `.vtt`. Weitere Informationen zum WebVTT-Untertitelstandard erhalten Sie auf der folgenden Seite.
 
@@ -868,21 +868,21 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
 
 ## Hinzufügen von Kapitelmarken zu Videos {#adding-chapter-markers-to-video}
 
-Um das Ansehen von und Navigieren in langformatigen Videos zu vereinfachen, können Sie einzelnen Videos oder adaptiven Video-Sets Kapitelmarken hinzufügen. Wenn eine Person das Video abspielt, kann sie auf die Kapitelmarken in der Video-Timeline (auch als Video-Scrubber bezeichnet) klicken, um einfach zum gewünschten Zielpunkt zu navigieren. Oder sie kann sofort zu neuen Inhalten, Demonstrationen und Tutorials springen.
+Um das Ansehen von und Navigieren in langformatigen Videos zu vereinfachen, können Sie einzelnen Videos oder adaptiven Video-Sets Kapitelmarken hinzufügen. Wenn Benutzende das Video abspielen, können sie auf die Kapitelmarken in der Zeitleiste des Videos (auch als Video-Scrubber bezeichnet) klicken, um einfach zum gewünschten Zielpunkt zu navigieren. Oder sie kann sofort zu neuen Inhalten, Demonstrationen und Tutorials springen.
 
 >[!NOTE]
 >
 >Der verwendete Video-Player muss die Verwendung von Kapitelmarken unterstützen. Dynamic Media-Video-Player unterstützen Kapitelmarken, Video-Player von Drittanbietern jedoch möglicherweise nicht.
 
-Anstelle der Video-Viewer-Vorgabe können Sie gegebenenfalls einen eigenen benutzerdefinierten Video-Viewer mit Kapiteln erstellen und mit Ihrer Marke versehen. Anweisungen zum Erstellen eigener HTML5-Viewer mit Kapitelnavigation finden Sie in der Adobe HTML5 Viewer SDK API unter der Überschrift „Anpassen des Verhaltens mit Modifikatoren“ unter den Klassen `s7sdk.video.VideoPlayer` und `s7sdk.video.VideoScrubber`. Siehe die Dokumentation zur [HTML5-Viewer-SDK-API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).
+Anstelle der Video-Viewer-Voreinstellung können Sie einen eigenen benutzerdefinierten Video-Viewer mit Kapiteln erstellen und mit Ihrer Marke versehen. Anweisungen zum Erstellen eigener HTML5-Viewer mit Kapitelnavigation finden Sie in der Adobe HTML5 Viewer SDK API unter der Überschrift „Anpassen des Verhaltens mit Modifikatoren“ unter den Klassen `s7sdk.video.VideoPlayer` und `s7sdk.video.VideoScrubber`. Siehe die Dokumentation zur [HTML5-Viewer-SDK-API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).
 
-<!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/de_DE/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
+<!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 Die Kapitelliste für Videos wird auf die gleiche Weise erstellt wie Untertitel. Das heißt, Sie erstellen eine WebVTT-Datei. Diese Datei muss jedoch getrennt von der verwendeten WebVTT-Untertiteldatei erstellt werden. Untertitel und Kapitel dürfen nicht in derselben WebVTT-Datei enthalten sein.
 
 Orientieren Sie sich bei der Erstellung einer WebVTT-Datei mit Kapitelnavigation am Format des folgenden Beispiels:
 
-### WebVTT-Datei mit Videokapitelnavigation {#webvtt-file-with-video-chapter-navigation}
+### WebVTT-Datei mit Videokapitel-Navigation {#webvtt-file-with-video-chapter-navigation}
 
 ```xml
 WEBVTT
@@ -925,7 +925,7 @@ Siehe [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
        <ol>
        <li>Navigieren Sie zum <i>veröffentlichten</i> Video-Asset, das Sie mit der hochgeladenen Kapiteldatei verbinden möchten. Denken Sie daran, dass URLs erst kopiert werden können, <i>nachdem</i> Sie die Assets <i>veröffentlicht</i> haben. Siehe <a href="/help/assets/publishing-dynamicmedia-assets.md">Veröffentlichen von Assets</a>.</li>
        <li>Klicken Sie dann im Dropdown-Menü auf <strong>Viewer</strong>.</li>
-       <li>Klicken Sie in der linken Leiste auf den Namen der Video-Viewer-Vorgabe. Auf einer separaten Seite wird eine Vorschau des Videos geöffnet.</li>
+       <li>Klicken Sie in der linken Leiste auf den Namen der Video-Viewer-Voreinstellung. Auf einer separaten Seite wird eine Vorschau des Videos geöffnet.</li>
        <li>Klicken Sie in der linken Leiste unten auf <strong>URL</strong>.</li>
        <li>Wählen Sie im Dialogfeld „URL“ die URL aus, kopieren Sie sie in die Zwischenablage und fügen Sie sie dann in einen einfachen Texteditor ein.</li>
        <li>Hängen Sie die kopierte URL des Videos mit der folgenden Syntax an, um sie mit der kopierten URL Ihrer Kapiteldatei zu verknüpfen:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
@@ -937,7 +937,7 @@ Siehe [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
        <ol>
        <li>Navigieren Sie zum <i>veröffentlichten</i> Video-Asset, das Sie mit der hochgeladenen Kapiteldatei verbinden möchten. Denken Sie daran, dass URLs erst kopiert werden können, <i>nachdem</i> Sie die Assets <i>veröffentlicht</i> haben. Siehe <a href="/help/assets/publishing-dynamicmedia-assets.md">Veröffentlichen von Assets</a>.</li>
        <li>Klicken Sie dann im Dropdown-Menü auf <strong>Viewer</strong>.</li>
-       <li>Klicken Sie in der linken Leiste auf den Namen der Video-Viewer-Vorgabe. Auf einer separaten Seite wird eine Vorschau des Videos geöffnet.</li>
+       <li>Klicken Sie in der linken Leiste auf den Namen der Video-Viewer-Voreinstellung. Auf einer separaten Seite wird eine Vorschau des Videos geöffnet.</li>
        <li>Klicken Sie im unteren Bereich der linken Leiste auf <strong>Einbetten</strong>.</li>
        <li>Wählen Sie im Dialogfeld „Einbettungs-Code“ den Einbettungs-Code aus, kopieren Sie den gesamten Code in die Zwischenablage und fügen Sie ihn dann in einen einfachen Texteditor ein.</li>
        <li>Hängen Sie den Einbettungs-Code des Videos mit der folgenden Syntax an, um ihn mittels der kopierten URL mit Ihrer Kapiteldatei zu verknüpfen:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
@@ -946,9 +946,9 @@ Siehe [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
      </tbody>
    </table>
 
-## Informationen zu Videominiaturen im Dynamic Media-Scene7-Modus {#about-video-thumbnails-in-dynamic-media-scene-mode}
+## Informationen zu Videominiaturen in Dynamic Media – Scene7-Modus {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
-Eine Videominiatur ist eine verkleinerte Version eines Videoframes oder eines Bild-Assets, in dem das Video dem Kunden vorgestellt wird. Das Miniaturbild dient als Anreiz für eine Kundin bzw. einen Kunden, das Video auszuwählen.
+Eine Videominiatur ist eine verkleinerte Version eines Videoframes oder eines Bild-Assets, die der Kundschaft das Video präsentiert. Die Miniaturansicht soll die Kundschaft dazu anregen, das Video auszuwählen.
 
 Alle Videos in Experience Manager müssen eine zugehörige Miniatur enthalten. Sie können eine Miniatur nur löschen, wenn sie ersetzt wird. Wenn Sie ein Video in Experience Manager hochladen, wird standardmäßig der erste Frame als Miniaturansicht verwendet. Sie können jedoch die Miniaturansicht anpassen, z. B. für Branding oder visuelle Suche. Wenn Sie eine Videominiatur anpassen, können Sie das Video abspielen und bei dem Frame anhalten, den Sie verwenden möchten. Sie können aber auch ein Bild-Asset auswählen, das Sie bereits in Ihrem Digital Asset Manager hochgeladen und *veröffentlicht* haben.
 
@@ -977,7 +977,7 @@ Die folgenden Schritte gelten nur, wenn Dynamic Media im Scene7-Modus ausgeführ
 1. Wählen Sie im Asset-Auswahlmodus entweder in der **[!UICONTROL Listenansicht]** oder in der **[!UICONTROL Kartenansicht]** das Video-Asset aus.
 1. Wählen Sie in der Symbolleiste das Symbol **[!UICONTROL Eigenschaften]** (ein Kreis mit einem darin enthaltenen „i“) aus.
 1. Wählen Sie auf der Seite „Eigenschaften“ des Videos **[!UICONTROL Miniaturansicht ändern]** aus.
-1. Befolgen Sie folgende Schritte auf der Seite „Ändern der Miniaturansicht“:
+1. Führen Sie auf der Seite „Miniaturansicht ändern“ eine der folgenden Aktionen aus:
 
    * So verwenden Sie einen Frame aus dem Video als neue Miniaturansicht:
 
@@ -1011,32 +1011,32 @@ Basierend auf der Gesamtdauer des Videos erstellt Dynamic Media zehn (standardm�
 * 81 %
 * 91 %
 
-Die zehn Miniaturansichten bleiben bestehen, d. h., wenn Sie später eine andere Miniaturansicht auswählen, müssen Sie die Serie nicht neu generieren. Sie sehen sich die zehn Miniaturbilder in der Vorschau an und wählen dann das Miniaturbild aus, das Sie für Ihr Video verwenden möchten. Wenn Sie die Standardeinstellung ändern möchten, können Sie mit CRXDE Lite das Zeitintervall konfigurieren, in dem Miniaturansichten generiert werden. Wenn Sie beispielsweise nur eine Reihe von vier Miniaturbildern mit gleichmäßigem Abstand aus Ihrem Video generieren möchten, können Sie die Zeiten der Intervalle auf 24 %, 49 %, 74 % und 99 % konfigurieren.
+Die zehn Miniaturansichten bleiben bestehen, d. h., wenn Sie später eine andere Miniaturansicht auswählen, müssen Sie die Serie nicht neu generieren. Sie sehen sich die zehn Miniaturbilder in der Vorschau an und wählen dann das Miniaturbild aus, das Sie für Ihr Video verwenden möchten. Wenn Sie die Standardeinstellung ändern möchten, können Sie mit CRXDE Lite das Zeitintervall konfigurieren, in dem Miniaturansichten generiert werden. Wenn Sie beispielsweise nur eine Reihe von vier Miniaturansichten mit gleichmäßigem Abstand aus Ihrem Video generieren möchten, können Sie die Intervalldauer auf 24 %, 49 %, 74 % und 99 % konfigurieren.
 
 Idealerweise können Sie eine Videominiaturansicht jederzeit hinzufügen, nachdem Sie Ihr Video hochgeladen haben, aber bevor Sie es auf Ihrer Website veröffentlichen.
 
-Wenn Sie es vorziehen, können Sie auch eine benutzerdefinierte Miniaturansicht hochladen, um Ihr Video darzustellen, anstatt eine von Dynamic Media generierte Miniaturansicht zu verwenden. Sie können beispielsweise eine benutzerdefinierte Miniaturansicht mit dem Titel Ihres Videos, einem ansprechenden Eröffnungsbild oder einem spezifischen Bild, das Sie aus Ihrem Video aufgenommen haben, erstellen. Die benutzerdefinierte Videominiatur, die Sie hochladen, muss eine maximale Auflösung von 1280 x 720 Pixeln (Mindestbreite von 640 Pixeln) haben und darf nicht größer als 2 MB sein.
+Wenn Sie es vorziehen, können Sie auch eine benutzerdefinierte Miniaturansicht hochladen, um Ihr Video darzustellen, anstatt eine von Dynamic Media generierte Miniaturansicht zu verwenden. Sie können beispielsweise eine benutzerdefinierte Miniaturansicht erstellen, die den Titel Ihres Videos, ein ansprechendes Eröffnungsbild oder ein bestimmtes Bild enthält, das Sie aus Ihrem Video aufgenommen haben. Die benutzerdefinierte Video-Miniaturansicht, die Sie hochladen, muss eine maximale Auflösung von 1280 × 720 Pixeln (Mindestbreite von 640 Pixeln) haben und darf nicht größer als 2 MB sein.
 
 Weitere Informationen finden Sie im Abschnitt [Informationen zu Videominiaturen im Scene7-Modus von Dynamic Media](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
-### Hinzufügen einer Videominiatur {#adding-a-video-thumbnail}
+### Hinzufügen einer Video-Miniaturansicht {#adding-a-video-thumbnail}
 
 Die folgenden Schritte gelten nur, wenn Dynamic Media im Hybridmodus ausgeführt wird.
 
 **So fügen Sie eine Videominiatur hinzu:**
 
-1. Navigieren Sie zum hochgeladenen Video-Asset, dem Sie eine Videominiaturansicht hinzufügen möchten.
-1. Wählen Sie im Asset-Auswahlmodus entweder in der Listen- oder in der Kartenansicht das Video-Asset aus.
+1. Navigieren Sie zum hochgeladenen Video-Asset, dem Sie eine Video-Miniaturansicht hinzufügen möchten.
+1. Wählen Sie im Auswahlmodus entweder in der Listenansicht oder in der Kartenansicht das Videoasset aus.
 1. Wählen Sie in der Symbolleiste das Symbol **[!UICONTROL Eigenschaften anzeigen]** (ein Kreis mit einem darin enthaltenen „i“) aus.
 1. Wählen Sie auf der Seite „Eigenschaften“ des Videos **[!UICONTROL Miniaturansicht ändern]** aus.
 1. Wählen Sie auf der Seite „Miniaturansicht ändern“ in der Symbolleiste **[!UICONTROL Frame auswählen]** aus.
 
    Dynamic Media generiert eine Serie von Miniaturansichten aus Ihrem Video, die auf dem Standardzeitintervall oder dem angepassten Zeitintervall basiert.
 
-1. Zeigen Sie die generierten Miniaturbilder in der Vorschau an und wählen Sie dann dasjenige aus, das Sie zum Video hinzufügen möchten.
+1. Zeigen Sie die generierten Miniaturansichten in der Vorschau an und wählen Sie anschließend diejenige aus, die Sie zu Ihrem Video hinzufügen möchten.
 1. Wählen Sie **[!UICONTROL Änderung speichern]** aus.
 
-   Das Miniaturbild des Videos wird aktualisiert. Es wird nun die ausgewählte Miniaturansicht verwendet. Wenn Sie sich später entscheiden, das Miniaturbild zu ändern, können Sie zur Seite **[!UICONTROL Miniaturansicht ändern]** zurückkehren und ein neues Bild auswählen.
+   Die Miniaturansicht des Videos wird aktualisiert, sodass nun die von Ihnen ausgewählte Miniaturansicht verwendet wird. Wenn Sie sich später entscheiden, das Miniaturbild zu ändern, können Sie zur Seite **[!UICONTROL Miniaturansicht ändern]** zurückkehren und ein neues Bild auswählen.
 
    Wenn Sie neue Standardzeitintervalle festgelegt oder ein neues Video hochgeladen haben, das das vorhandene Video ersetzt, stellen Sie sicher, dass Dynamic Media die Miniaturen neu generiert.
 
@@ -1054,27 +1054,27 @@ Siehe [Hinzufügen von Videominiaturansichten](#adding-a-video-thumbnail).
 
 1. Navigieren Sie auf der CRXDE Lite-Seite im Verzeichnisbereich links zu `o etc/dam/imageserver/configuration/jcr:content/settings.`.
 
-   Wenn der Verzeichnisbereich nicht angezeigt wird, wählen Sie links neben der Registerkarte „Startseite“ das Symbol „>>“ aus.
+   Wenn das Verzeichnis-Panel nicht angezeigt wird, wählen Sie links neben der Registerkarte „Startseite“ das Symbol „>>“ aus.
 
 1. Wählen Sie im rechten unteren Rand der Registerkarte „Eigenschaften“ zweimal `thumbnailtime`.
 1. Geben Sie im Dialogfeld **[!UICONTROL Zeit der Miniaturansicht bearbeiten]** in den Textfeldern Intervallwerte als Prozentwerte ein.
 
    * Wählen Sie das Pluszeichen (+) aus, um ein oder mehrere Intervallwertfelder hinzuzufügen. Scrollen Sie bei Bedarf zum unteren Rand des Dialogfelds, um das Symbol zu sehen.
    * Wählen Sie rechts neben einem Intervallwertfeld das Minuszeichen (-) aus, um es aus der Liste zu löschen.
-   * Wählen Sie die Pfeile nach oben und unten aus, um die Intervallwerte neu anzuordnen.
+   * Wählen Sie die Nach-oben-Taste und die Nach-unten-Taste aus, um die Intervallwerte neu anzuordnen.
 
 1. Wählen Sie **[!UICONTROL OK]** aus, um zur Registerkarte „Eigenschaften“ zurückzukehren.
 1. Wählen Sie in der linken oberen Ecke der Seite „CRXDE Lite“**[!UICONTROL Alle speichern]** und dann das Symbol „Zurück zur Startseite“ aus, um zu Experience Manager zurückzukehren.
 
    Siehe [Hinzufügen von Videominiaturansichten](#adding-a-video-thumbnail).
 
-### Hinzufügen einer benutzerdefinierten Videominiatur {#adding-a-custom-video-thumbnail-1}
+### Hinzufügen einer benutzerdefinierten Video-Miniaturansicht {#adding-a-custom-video-thumbnail-1}
 
 Die folgenden Schritte gelten nur, wenn Dynamic Media im Hybridmodus ausgeführt wird.
 
 **So fügen Sie eine benutzerdefinierte Videominiatur hinzu:**
 
-1. Navigieren Sie zum hochgeladenen Video-Asset, dem Sie eine benutzerdefinierte Videominiatur hinzufügen möchten.
+1. Navigieren Sie zu dem hochgeladenen Video-Asset, dem Sie eine benutzerdefinierte Miniaturansicht hinzufügen möchten.
 1. Wählen Sie im Asset-Auswahlmodus entweder in der Listen- oder in der Kartenansicht das Video-Asset aus.
 1. Wählen Sie in der Symbolleiste das Symbol **[!UICONTROL Eigenschaften anzeigen]** (ein Kreis mit einem darin enthaltenen „i“) aus.
 1. Wählen Sie auf der Seite „Eigenschaften“ des Videos **[!UICONTROL Miniaturansicht ändern]** aus.
@@ -1112,7 +1112,7 @@ Diese API akzeptiert die drei folgenden Parameter:
 
 | Parameter | Beschreibung |
 | --- | --- |
-| `resource` | Die Ressource, die dem Video entspricht, das von Dynamic Media aufgenommen wurde. |
+| `resource` | Die Ressource, die dem von Dynamic Media aufgenommenen Video entspricht. |
 | `manifestType` | Kann entweder `ManifestType.DASH` oder `ManifestType.HLS` sein |
 | `onlyIfPublished` | Auf „true“ gesetzt, wenn der Manifest-URI nur generiert wird, wenn er veröffentlicht und auf der Bereitstellungsebene verfügbar ist. |
 
@@ -1128,12 +1128,12 @@ Die API gibt bei Fehlern „null“ zurück. Ausnahmen werden in Experience Mana
   * Der übergebene Parameter `resource` ist kein Video.
   * Der übergebene Parameter `manifestType` ist „null“.
   * Der Parameter `onlyIfPublished` wird als „true“ übergeben, aber das Video ist nicht veröffentlicht.
-  * Das Video wurde nicht mit einem adaptiven Videoset aus Dynamic Media aufgenommen.
+  * Das Video wurde nicht mithilfe eines adaptiven Videoseta aus Dynamic Media aufgenommen.
 
 * `IOException` wird protokolliert, wenn ein Problem beim Herstellen einer Verbindung mit Dynamic Media besteht.
 * `UnsupportedOperationException` wird protokolliert, wenn ein `manifestType` übergebener Parameter `ManifestType.DASH` ist, während das Video nicht im DASH-Format verarbeitet wurde.
 
-Im Folgenden finden Sie ein Beispiel der oben genannten API unter Verwendung von Servlets, die in der Spezifikation *HTTPWhiteBoard* geschrieben sind. Wählen Sie jede Registerkarte für die Code-Syntax aus.
+Im Folgenden finden Sie ein Beispiel der oben genannten API unter Verwendung von Servlets, die in der Spezifikation *HTTPWhiteBoard* geschrieben sind. Wählen Sie jede Registerkarte aus, um die Code-Syntax anzuzeigen.
 
 >[!BEGINTABS]
 
@@ -1402,7 +1402,7 @@ Sie rufen das Servlet auf, indem Sie einen `GET`-Vorgang unter `/dmSample/dynami
 | `manifestType` | Optional. Der Parameter kann DASH oder HLS lauten. Wenn er nicht übergeben wird, wird standardmäßig DASH verwendet. |
 | `onlyIfPublished` | Optional. Wenn er übergeben wird, wird die `manifestUrl` nur zurückgegeben, wenn das Video veröffentlicht wurde. |
 
-Gehen wir in diesem Beispiel von den folgenden Einstellungen aus:
+Gehen wir in diesem Beispiel von folgendem Setup aus:
 
 * Die Firma ist `samplecompany`.
 * Die Autoreninstanz lautet `http://sample-aem-author.com`.
@@ -1462,7 +1462,7 @@ When you create an Adobe Support case to enable DASH on your account, multiple c
 
 1. Select **[!UICONTROL Save]**.
 
-1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
