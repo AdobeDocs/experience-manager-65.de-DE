@@ -16,7 +16,7 @@ Erstellen Sie einen getaggten Lucene-Index, um Durchlaufabfragen zu vermeiden, w
 
 In AEM Forms 6.5.24.0 und höher verwendet die Referenzabfrage das `aemformsAFReferences` Index-Tag. Diese Versionen enthalten die Abfrageänderung, Sie müssen jedoch einen benutzerdefinierten Index mit diesem Tag erstellen. Dieser Artikel zeigt, wie Sie den Index definieren und bereitstellen.
 
-Informationen zu AEM Forms 6.5 LTS finden Sie unter [Erstellen eines benutzerdefinierten Index für Verweise auf adaptive Formulare in AEM Forms 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/install-aem-forms/configure-aem-forms/create-custom-index-for-adaptive-forms-references).
+Informationen zu AEM Forms 6.5 LTS finden Sie unter [Erstellen eines benutzerdefinierten Index für Verweise auf adaptive Formulare in AEM Forms 6.5 LTS](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/forms/install-aem-forms/configure-aem-forms/create-custom-index-for-adaptive-forms-references).
 
 ## Voraussetzungen {#prerequisites}
 
