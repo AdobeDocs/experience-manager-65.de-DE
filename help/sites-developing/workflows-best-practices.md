@@ -58,7 +58,7 @@ Richtlinien zur Leistungsoptimierung von DAM-Workflows finden Sie im [Handbuch z
 
 AEM kann die gleichzeitige Ausführung mehrerer Workflow-Threads zulassen. Standardmäßig ist die Anzahl der Threads so konfiguriert, dass sie der Hälfte der Anzahl der Prozessorkerne im System entspricht.
 
-In Fällen, in denen die ausgeführten Workflows sehr viele Systemressourcen beanspruchen, kann dies bedeuten, dass AEM für andere Aufgaben wie das Rendern der Authoring-Benutzeroberfläche wenig Ressourcen zur Verfügung stehen. Dies kann dazu führen, dass das System bei Aktivitäten wie etwa dem Massenhochladen von Bildern nur noch langsam reagiert.
+In Fällen, in denen die ausgeführten Workflows sehr viele Systemressourcen beanspruchen, kann dies bedeuten, dass AEM für andere Aufgaben wie das Rendern der Authoring-Benutzeroberfläche nur wenige Ressourcen zur Verfügung hat. Dies kann dazu führen, dass das System bei Aktivitäten wie etwa dem Massenhochladen von Bildern nur noch langsam reagiert.
 
 Um dieses Problem zu beheben, empfiehlt sich, die Anzahl der **maximalen parallelen Aufträge** auf einen Wert festzulegen, der zwischen der Hälfte und drei Vierteln der Anzahl der Prozessorkerne des Systems liegt. Dadurch sollte dem System genügend Kapazität zur Verfügung stehen, damit solche Workflows ohne Beeinträchtigung der Reaktionsfähigkeit verarbeitet werden können.
 
@@ -74,7 +74,7 @@ Darüber hinaus gibt es eine separate Konfiguration für die **Granite-Workflow-
 
 In einigen Fällen ist es nützlich, einzelne Auftragswarteschlangen zu konfigurieren, um gleichzeitige Threads oder andere Warteschlangenoptionen auf Einzelauftragsbasis zu steuern. Sie können eine einzelne Warteschlange von der Web-Konsole aus über die **Apache Sling Job Queue Configuration**-Factory hinzufügen und konfigurieren. Führen Sie zum Ermitteln des entsprechenden Themas das Modell Ihres Workflows aus und suchen Sie es in der Konsole **Sling-Aufträge**, beispielsweise unter `http://localhost:4502/system/console/slingevent`.
 
-Individuelle Auftragswarteschlangen können auch für Verlaufs-Workflows hinzugefügt werden.
+Individuelle Auftragswarteschlangen können auch für transiente Workflows hinzugefügt werden.
 
 ### Konfigurieren der Workflow-Bereinigung {#configure-workflow-purging}
 
@@ -125,7 +125,7 @@ Workflow-Modelle werden im Repository nach Typ gespeichert:
 
   `/var/workflow/models/`
 
-* Pfad für ältere Workflow-Designs (sowohl Entwurfszeit als auch Laufzeit):
+* Ältere Workflow-Designs (sowohl Entwurfszeit als auch Laufzeit) befinden sich unter dem folgenden Pfad:
 
   `/etc/workflow/models/`
 
@@ -156,7 +156,7 @@ Definitionen für Workflow-Starter werden im Repository ebenfalls auf der Grundl
   /conf/global/settings/workflow/launcher/...
   ```
 
-* Pfad für ältere Workflow-Starter:
+* Ältere Workflow-Starter befinden sich unter dem folgenden Pfad:
 
   `/etc/workflow/launcher/`
 
@@ -187,7 +187,7 @@ Workflow-Skripte werden im Repository ebenfalls auf der Grundlage ihres Typs ges
   /apps/workflow/scripts/...
   ```
 
-* Pfad für ältere Workflow-Skripte:
+* Ältere Workflow-Skripte befinden sich unter dem folgenden Pfad:
 
   `/etc/workflow/scripts/`
 
@@ -280,7 +280,7 @@ Die benutzerdefinierte [Starter-Konfiguration](/help/sites-administering/workflo
 
 * Verknüpfung mehrerer Bedingungen mit „UND“
 * Verwendung von ODER-Bedingungen innerhalb einer einzelnen Bedingung
-* Deaktivierung/Aktivierung von Startern auf Grundlage des Aktivierungsstatus eines Funktions-Flags
+* Deaktivierung/Aktivierung von Startern auf Grundlage des Aktivierungsstatus eines Feature Flags
 * Unterstützung regulärer Ausdrücke in Starter-Bedingungen
 
 ### Kein Start von Workflows über andere Workflows {#do-not-start-workflows-from-other-workflows}
@@ -289,7 +289,7 @@ Durch die Objekterstellung im Speicher sowie durch die Knotenüberwachung im Rep
 
 Ein Beispiel wäre etwa ein Workflow, der einen Geschäftsprozess für eine Gruppe von Inhalten implementiert und die Inhalte anschließend aktiviert. Es ist besser, einen benutzerdefinierten Workflow-Prozess zu erstellen, der jeden dieser Knoten aktiviert, anstatt für jeden der zu veröffentlichenden Inhaltsknoten ein Modell vom Typ **Inhalt aktivieren** zu starten. Dieser Ansatz erfordert zusätzliche Entwicklungsarbeiten, ist jedoch effizienter, wenn er ausgeführt wird, als für jede Aktivierung eine separate Workflow-Instanz zu starten.
 
-Ein weiteres Beispiel wäre ein Workflow, der mehrere Knoten verarbeitet, ein Workflow-Paket erstellt und dieses Paket anschließend aktiviert. Anstatt das Paket zu erstellen und anschließend einen separaten Workflow mit dem Paket als Payload zu erstellen, können Sie im Paketerstellungsschritt die Payload Ihres Workflows ändern und dann den Paketaktivierungsschritt innerhalb desselben Workflow-Modells aufrufen.
+Ein weiteres Beispiel wäre ein Workflow, der mehrere Knoten verarbeitet, ein Workflow-Paket erstellt und dieses Paket anschließend aktiviert. Anstatt das Paket zu erstellen und anschließend einen separaten Workflow mit dem Paket als Payload zu starten, können Sie im Paketerstellungsschritt die Payload Ihres Workflows ändern und dann den Paketaktivierungsschritt innerhalb desselben Workflow-Modells aufrufen.
 
 ### Handler-Fortschritt {#handler-advance}
 
@@ -301,7 +301,7 @@ Es wird empfohlen, den Handler-Fortschritt zu verwenden, da er eine bessere Leis
 
 Sie können [Workflow-Statuswerte](/help/sites-developing/workflows.md#workflow-stages) definieren und Aufgaben/Schritte einem bestimmten Workflow-Status zuweisen.
 
-Diese Information wird zum Anzeigen des Fortschritts eines Workflows verwendet, wenn Sie auf die Registerkarte [**Workflow-Informationen** eines Arbeitselements aus dem **Posteingang**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) klicken. Vorhandene Workflow-Modelle können bearbeitet werden, um Statuswerte hinzuzufügen.
+Diese Information wird zum Anzeigen des Fortschritts eines Workflows verwendet, wenn Sie auf die Registerkarte [**Workflow-Informationen** eines Arbeitselements aus dem **Posteingang**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) klicken. Vorhandene Workflow-Modelle können bearbeitet werden, um Phasen hinzuzufügen.
 
 ### Prozessschritt „Seite aktivieren“ {#activate-page-process-step}
 
@@ -332,12 +332,12 @@ Für die Überwachung, Verwaltung und Problembehandlung von Workflows stehen zah
 
 In der Konsole zur Behandlung von Sling-Aufträgen wird Folgendes angezeigt:
 
-* Statistik zum Zustand von Aufträgen im System seit dem letzten Neustart
+* Statistik zum Zustand der Aufträge im System seit dem letzten Neustart.
 * Konfigurationen für alle Auftragswarteschlangen sowie ein Tastaturbefehl für die Bearbeitung im Konfigurations-Manager
 
 ### Workflow-Berichts-Tool {#workflow-report-tool}
 
-Das Workflow-Berichts-Tool wird in Version 6.3 entfernt, um die Leistung nicht zu beeinträchtigen.
+Das Workflow-Reporting-Tool wird in Version 6.3 entfernt, um die Leistung nicht zu beeinträchtigen.
 
 ### MBean für Workflow-Wartungsvorgänge {#workflow-maintenance-operations-mbean}
 

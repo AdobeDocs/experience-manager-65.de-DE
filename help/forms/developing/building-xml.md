@@ -6,15 +6,13 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 361f0a5f2d1484cf594edfda73250c5690ed7cab
-workflow-type: ht
-source-wordcount: '1043'
+workflow-type: tm+mt
+source-wordcount: '1060'
 ht-degree: 100%
-
 ---
-
 # Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten {#using-execute-script-service-forms-jee-workbench}
 
-Viele Prozess-Management-Workflows für AEM Forms auf JEE beinhalten XML. XML-Informationen können zum Beispiel in einem Prozess erstellt und an eine Flex-Anwendung im Arbeitsbereich von AEM Forms auf JEE gesendet oder für Systemeinstellungen verwendet werden. Mittels XML können zudem Informationen an und von Formularen übergeben werden. Es gibt viele Fälle, in denen ein Entwickler für AEM Forms on JEE XML verwalten muss. Häufig muss dazu die XML über einen AEM Forms on JEE-Prozess verwaltet werden.
+Viele Prozess-Management-Workflows für AEM Forms auf JEE beinhalten XML. XML-Informationen können zum Beispiel in einem Prozess erstellt und an eine Flex-Anwendung im Arbeitsbereich von AEM Forms auf JEE gesendet oder für Systemeinstellungen verwendet werden. Mittels XML können zudem Informationen an und von Formularen übergeben werden. Es gibt viele Fälle, in denen ein Entwickler für AEM Forms on JEE XML verwalten muss. Häufig muss dazu das XML über einen AEM Forms on JEE-Prozess verwaltet werden.
 
 Bei einfachen XML-Einstellungen kann der Service `Set Value` verwendet werden. Es handelt sich dabei um einen Standard-Service von AEM Forms on JEE. Dieser Service legt den Wert eines oder mehrerer Datenelemente im Prozessdatenmodell fest. Für Szenarien mit einer einfachen bedingten „wenn, dann“-Logik kann dieser Service den Zweck erfüllen.
 
@@ -24,7 +22,7 @@ In komplexeren Situationen ist der Service „Set Value“ jedoch nicht so effek
 
 Zum Satz der Standard-Services von AEM Forms on JEE, die in der Workbench von AEM Forms on JEE verfügbar sind, gehört der Service `Execute Script`. Dieser Service ermöglicht die Ausführung von Skripten in Prozessen und stellt hierzu den Vorgang `executeScript` bereit.
 
-### Erstellen eines Programms und eines Prozesses mit dem als Aktivität definierten Service „Execute Script“ {#create-an-application}
+### Erstellen einer Anwendung und eines Prozesses mit dem als Aktivität definierten Service „Execute Script“ {#create-an-application}
 
 Die allgemeine Erstellung von Anwendungen und Prozessen ist nicht Gegenstand dieses Tutorials, aber für diese Anleitung haben wir eine Anwendung namens „DemoApplication02“ erstellt. Wenn eine Anwendung bereits erstellt wurde, müssen Sie in dieser Anwendung einen Prozess erstellen, um den executeScript-Service aufzurufen. So fügen Sie dem Programm einen Prozess hinzu, der den Service `Execute Script` beinhaltet:
 
@@ -67,7 +65,7 @@ DocumentImpl ist eine Unterklasse von NodeImpl. Daher kann angenommen werden, da
 
 **Beispiel für die XML-Erstellung mit dem Service „Execute Script“**
 
-Im Folgenden finden Sie ein Beispiel für das Erstellen von XML in einem Service „Execute Script“. Der Prozess verfügt über eine Variable, einen Knoten, der vom Typ XML ist. Das Endergebnis dieser Aktivität ist ein XML-Dokument. Was dieses Dokument tut oder wie es auf den gesamten Prozess angewendet wird, ist für dieses Tutorial nicht relevant. Letztlich geht es darum, was XML im übergeordneten Programm tun muss. Wie in der Einführung erwähnt, kann XML in AEM Forms on JEE-Formularen und -Prozessen für viele Zwecke verwendet werden. Dies ist lediglich eine Erklärung dafür, wie die Aktivität „Execute Script“ kodiert wird, um ein einfaches XML-Dokument auszugeben.
+Im Folgenden finden Sie ein Beispiel für das Erstellen von XML in einem Service „Execute Script“. Der Prozess verfügt über eine Variable, einen Knoten, der vom Typ XML ist. Das Endergebnis dieser Aktivität ist ein XML-Dokument. Was dieses Dokument tut oder wie es auf den gesamten Prozess angewendet wird, ist für dieses Tutorial nicht relevant. Letztlich geht es darum, was das XML in der gesamten Anwendung tun muss. Wie in der Einführung erwähnt, kann XML in AEM Forms on JEE-Formularen und -Prozessen für viele Zwecke verwendet werden. Dies ist lediglich eine Erklärung dafür, wie die Aktivität „Execute Script“ kodiert wird, um ein einfaches XML-Dokument auszugeben.
 
 Ein einfaches JavaScript zur Ausgabe von XML würde in etwa wie folgt aussehen:
 
