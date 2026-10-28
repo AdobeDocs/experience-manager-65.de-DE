@@ -21,10 +21,10 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 1919f4aff8dd2cb07b1e298511001e2f51ed520b
 workflow-type: tm+mt
 source-wordcount: '1487'
-ht-degree: 100%
+ht-degree: 97%
 ---
 # Exportieren von Experience Fragments nach Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
@@ -42,7 +42,7 @@ AEM Experience Fragments können in den Standardarbeitsbereich in Adobe Target o
 >
 >[IMS-Integrationen sind jetzt mit S2S OAuth konfiguriert](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
 >
->Frühere Konfigurationen wurden mit [JWT-Berechtigungen, die in der Adobe Developer Console nicht mehr unterstützt werden](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md), erstellt.
+>Frühere Konfigurationen wurden mit JWT-Anmeldeinformationen vorgenommen, die jetzt in der Adobe Developer Console als veraltet gekennzeichnet sind.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Verschiedene Aktionen sind erforderlich:
    >
    >[IMS-Integrationen sind jetzt mit S2S OAuth konfiguriert](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
    >
-   >Frühere Konfigurationen wurden mit [JWT-Berechtigungen erstellt, die in der Adobe Developer Console nicht mehr unterstützt werden](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+   >Frühere Konfigurationen wurden mit JWT-Anmeldeinformationen vorgenommen, die jetzt in der Adobe Developer Console als veraltet gekennzeichnet sind.
 
 1. Experience Fragments werden aus der AEM-Autoreninstanz exportiert. Daher müssen Sie auf der Autoreninstanz [den AEM Link Externalizer konfigurieren](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer), um sicherzustellen, dass alle Verweise im Experience Fragment für die Web-Bereitstellung externalisiert werden.
 
