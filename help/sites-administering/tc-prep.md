@@ -20,10 +20,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+source-git-commit: 6fb39326f3a012bb7e774f65200feae143d2d30d
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 96%
+source-wordcount: '780'
+ht-degree: 83%
 ---
 # Vorbereiten von Inhalten für die Übersetzung{#preparing-content-for-translation}
 
@@ -64,6 +64,14 @@ Um den Sprachstamm zu erstellen, erstellen Sie eine Seite und verwenden Sie eine
 * `<language-code>`: Der unterstützte Sprach-Code ist ein Code mit zwei Buchstaben gemäß ISO-639-1, z. B. `en`.
 
 * `<language-code>_<country-code>` oder `<language-code>-<country-code>`: Der unterstützte Länder-Code ist ein Code mit zwei Groß- oder zwei Kleinbuchstaben gemäß ISO 3166, z. B. `en_US`, `en_us`, `en_GB`, `en-gb`.
+
+>[!NOTE]
+>
+>Bei AEM-Installationen, die auf Java 17 oder Java 21 ausgeführt werden, verwendet die standardmäßige Java-Gebietsschema-Zuordnung `he` für Hebräisch, `yi` für Jiddisch und `id` für Indonesisch anstelle der Legacy-Codes `iw`, `ji` und `in`. Vorhandene i18n-Wörterbücher, die die Legacy-Codes verwenden, werden möglicherweise nicht gefunden.
+>
+>Verwenden Sie die aktuellen Codes für Sprachstämme und i18n-Wörterbücher: Ersetzen Sie `iw` durch `he`, `ji` durch `yi` und `in` durch `id`.
+>
+>Wenn Sie die alten Codes als Kompatibilitätsumgehung beibehalten müssen, legen Sie die Java-Systemeigenschaft `java.locale.useOldISOCodes` beim Starten von AEM mithilfe des JVM-`-Djava.locale.useOldISOCodes=true` auf `true` fest. Die Eigenschaft ist beim Start der Java-Laufzeit schreibgeschützt. Eine Änderung während der Ausführung von AEM hat keine Auswirkungen.
 
 Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen Website.  Beispielsweise verfügt die Stammseite der französischen Sprachkopie der Geometrixx-Website über die „Name“-Eigenschaft `fr`. Beachten Sie, dass die Eigenschaft „Name“ als Name des Seitenknotens im Repository verwendet wird und daher den Pfad der Seite bestimmt. (http://localhost:4502/content/geometrixx/fr.html)
 
