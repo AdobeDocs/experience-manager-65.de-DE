@@ -19,9 +19,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: efd3c8e390cdbb5b5cc526906f7a2d756a978c21
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '2361'
 ht-degree: 84%
 ---
 # Arbeiten mit Inhaltsfragmenten {#working-with-content-fragments}
@@ -81,7 +81,7 @@ Inhaltsfragmente ermöglichen Ihnen Folgendes:
 
 * Erwägen, wie sich Zielgruppen effizient kanalübergreifend erreichen lassen.
 * Kanalneutrale redaktionelle Inhalte erstellen und verwalten.
-* Inhaltspools für mehrere Kanäle erstellen.
+* Content-Pools für mehrere Kanäle erstellen.
 * Inhaltsvarianten für bestimmte Kanäle entwerfen.
 * Bilder durch Einfügen von Assets (Fragmente mit gemischten Medien) zu Texten hinzufügen.
 * Erstellen Sie verschachtelte Inhalte, um die Komplexität Ihrer Daten widerzuspiegeln.
@@ -114,7 +114,7 @@ Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditio
 * native Mobile Apps
 * weitere AEM-externe Kanäle und Touchpoints
 
-Der Versand erfolgt im JSON-Format mit dem JSON-Exporter.
+Die Bereitstellung erfolgt im JSON-Format mit dem JSON-Exporter.
 
 AEM-Inhaltsfragmente können zur Beschreibung und Verwaltung strukturierter Inhalte verwendet werden. Strukturierte Inhalte werden in Modellen definiert, die eine Vielzahl von Inhaltstypen enthalten können, darunter Text, numerische Daten, boolesche Werte, Datum und Uhrzeit.
 
@@ -250,7 +250,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
   >[!CAUTION]
   >
-  >Profile für die Metadatenverarbeitung sind nicht für Inhaltsfragmente geeignet.
+  >Profile für die Metadatenverarbeitung gelten nicht für Content-Fragmente.
 
 * **Vorlage**
 
@@ -269,7 +269,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
   * können beim Erstellen von Fragmenten definiert werden;
   * Werden im Fragment gespeichert, um zu vermeiden, dass Inhaltskopien verstreut werden.
   * können mit der Vorlage [synchronisiert](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) werden, wenn der Vorlageninhalt aktualisiert wurde;
-  * können [zusammengefasst](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) werden, um Text schnell auf eine vordefinierte Länge zu kürzen;
+
   * sind auf der Registerkarte [Varianten](/help/assets/content-fragments/content-fragments-variations.md) des Fragment-Editors verfügbar.
 
 ### Übergangsinhalte bei der Seitenerstellung mit Inhaltsfragmenten {#in-between-content-when-page-authoring-with-content-fragments}
