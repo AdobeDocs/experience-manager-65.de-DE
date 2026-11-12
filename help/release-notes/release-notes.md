@@ -23,10 +23,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d777049ff8873ab60b286ec268fd544dc61fb038
+source-git-commit: 56b13809475a59f188750b86503e316e69171fe1
 workflow-type: tm+mt
-source-wordcount: '7172'
-ht-degree: 16%
+source-wordcount: '7273'
+ht-degree: 15%
 ---
 # Versionshinweise zum aktuellen Service Pack für [!DNL Adobe Experience Manager] Version 6.5 {#aem-service-pack-release-notes}
 
@@ -365,7 +365,7 @@ Verbesserung: Die Adobe Analytics-Integration mit Adobe Experience Manager Launc
 
 #### Plattform{#foundation-platform-6526}
 
-* Der Hilfe-Link in der Fußzeile der AEM-Anmeldeseite öffnet jetzt eine Arbeitsseite. Zuvor verwies der Link auf eine marketing.adobe.com URL, die nicht mehr vorhanden ist. Die Fußzeilenkonfiguration verwendet jetzt die [Adobe Experience Manager-Dokumentations](https://experienceleague.adobe.com/de/docs/experience-manager)-URL. (NPR-44388)
+* Der Hilfe-Link in der Fußzeile der AEM-Anmeldeseite öffnet jetzt eine Arbeitsseite. Zuvor verwies der Link auf eine marketing.adobe.com URL, die nicht mehr vorhanden ist. Die Fußzeilenkonfiguration verwendet jetzt die [Adobe Experience Manager-Dokumentations](https://experienceleague.adobe.com/en/docs/experience-manager)-URL. (NPR-44388)
 * Verbesserung: Eine Kundenanfrage, die nach der Microsoft Graph API als Alternative zum SMTP gefragt wird, wenn AEM E-Mails sendet. Das Ticket wurde als Duplikat aufgelöst, da ein anderes Ticket bereits den Graph-API-Fluss implementiert. SMTP mit OAuth 2.0 bleibt für Kunden verfügbar, die von der SMTP-Standardauthentifizierung abrücken müssen. (GRANITE-57478)
 
 * Die Zeichenfolgen im Dialogfeld Gültige Berechtigungen sind jetzt im Browser **Tools** > **Allgemein** > **Konfiguration** korrekt ausgerichtet. Zuvor wurde eine Zeichenfolge offline angezeigt, nachdem Sie einen Ordner ausgewählt, auf „Eigenschaften“ geklickt und auf „Gültige Berechtigungen“ geklickt hatten. Aktualisierte Layout-Regeln stellen die Ausrichtung wieder her. (CQ-4359166)
@@ -402,7 +402,7 @@ Verbesserung: Der Seiteneditor der Touch-optimierten Benutzeroberfläche rendert
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.26.0 erfordert [!DNL Experience Manager] 6.5. Detaillierte Anweisungen finden [&#x200B; in &#x200B;](/help/sites-deploying/upgrade.md)Upgrade-Dokumentation“. <!-- UPDATE FOR EACH NEW RELEASE -->
+* [!DNL Experience Manager] 6.5.26.0 erfordert [!DNL Experience Manager] 6.5. Detaillierte Anweisungen finden [ in ](/help/sites-deploying/upgrade.md)Upgrade-Dokumentation“. <!-- UPDATE FOR EACH NEW RELEASE -->
 * Der Download des Service Packs ist über die [Adobe-Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip) verfügbar.
 * Bei einer Bereitstellung mit MongoDB und mehreren Instanzen installieren Sie [!DNL Experience Manager] 6.5.26.0 mit dem Package Manager auf einer der Autoreninstanzen.<!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -428,7 +428,7 @@ Verbesserung: Der Seiteneditor der Touch-optimierten Benutzeroberfläche rendert
 
 >[!NOTE]
 >
->Das Dialogfeld in der Paket-Manager-Benutzeroberfläche wird während der Installation des Service Packs manchmal geschlossen. Adobe empfiehlt, abzuwarten, bis keine Fehlerprotokolle mehr geändert werden, bevor auf die Bereitstellung zugegriffen wird. Warten Sie auf die spezifischen Protokolle zur Deinstallation des Aktualisierungspakets, bevor Sie bestätigen, dass die Installation erfolgreich war. Dieses Problem tritt im [!DNL Safari]-Browser auf, kann jedoch gelegentlich in jedem Browser auftreten.
+>Das Dialogfeld auf der Package Manager-Benutzeroberfläche wird manchmal während der Installation des Service Packs geschlossen. Adobe empfiehlt, abzuwarten, bis keine Fehlerprotokolle mehr geändert werden, bevor auf die Bereitstellung zugegriffen wird. Warten Sie auf die spezifischen Protokolle zur Deinstallation des Aktualisierungspakets, bevor Sie bestätigen, dass die Installation erfolgreich war. Dieses Problem tritt im [!DNL Safari]-Browser auf, kann jedoch gelegentlich in jedem Browser auftreten.
 
 **Automatische Installation**
 
@@ -594,13 +594,9 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 ### Bekanntes Problem bei AEM Sites {#known-issues-aem-sites-6526}
 
-<!--
-* Known issue with a hotfix available for AEM Foundation {#known-issue-foundation-hotfix-6526}
+* **Bekanntes Problem mit einem Hotfix, der für AEM Foundation verfügbar ist**
 
-  After you upgrade from an earlier service pack to Experience Manager 6.5.26.0, the OSGi version ordering for CRXDE Lite can prevent Experience Manager from selecting the intended bundle. An earlier service pack contains a higher CRXDE Lite version than the artifact that Service Pack 26 includes (`com.adobe.granite.crxde-lite-1.1.44-CQ651-B00024`).
-  
-  To resolve this issue, download and install the hotfix [cq-6.5.26-hotfix-GRANITE-76725.zip](https://artifactory.corp.adobe.com/ui/native/maven-aem-release-local/com/adobe/cq/hotfix/cq-6.5.26-hotfix-GRANITE-76725/1.0/cq-6.5.26-hotfix-GRANITE-76725.zip). The hotfix updates CRXDE Lite to `com.adobe.granite.crxde-lite-1.1.44-CQ651-B0026`, and it contains a version change only, with no code or functional changes. (GRANITE-76725)
--->
+  Nach dem Upgrade von einem früheren Service Pack auf Experience Manager 6.5.26.0 kann die Sortierung der CRXDE Lite-Bundle verhindern, dass Experience Manager das beabsichtigte Bundle auswählt. Um die Versionsreihenfolge zu korrigieren, installieren Sie Service Pack 26, und laden Sie dann das Hotfix [`CRXDE Lite hotfix GRANITE-76725`](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq660%2Fhotfixes%2Fgranite-76725%2Fcq-6.5.26-hotfix-GRANITE-76725-1.0.zip) von Software Distribution herunter. Der Hotfix ist ein reines Versionsupdate. Es enthält keinen Code oder funktionale Änderungen. (GRANITE-76725)
 
 * Die Vorschau von Inhaltsfragmenten schlägt aufgrund des DoS-Schutzes bei einer umfangreichen Fragmentstruktur fehl. Siehe den [KB-Artikel zu den standardmäßigen GraphQL Query Executor-Konfigurationsoptionen](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
@@ -637,13 +633,13 @@ Die folgenden ZIP-Dateien enthalten die Textdokumente, in denen die in dieser Ve
 Diese Websites sind nur für Kundinnen und Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
 * [Produkt-Download unter licensing.adobe.com](https://licensing.adobe.com/)
-* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] Produktseite](https://business.adobe.com/de/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] Dokumentation zu 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65)
->* [Abonnieren von Adobe-Prioritäts-Produkt-Updates](https://www.adobe.com/de/subscription/priority-product-update.html)
+>* [Abonnieren von Adobe-Prioritäts-Produkt-Updates](https://www.adobe.com/subscription/priority-product-update.html)
 
 
 
