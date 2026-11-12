@@ -19,9 +19,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: efd3c8e390cdbb5b5cc526906f7a2d756a978c21
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2078'
 ht-degree: 100%
 ---
 # Varianten – Erstellen von Fragmentinhalten{#variations-authoring-fragment-content}
@@ -42,8 +42,6 @@ Führen Sie eine Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp 
 * [Inhalt hochladen](#uploading-content)
 
 * [Anzeigen von Schlüsselstatistiken](#viewing-key-statistics) (über mehrzeiligen Text)
-
-* [Zusammenfassen von Text](#summarizing-text)
 
 * [Synchronisieren von Varianten mit dem primären Inhalt](#synchronizing-with-master)
 
@@ -112,8 +110,6 @@ Die folgenden Aktionen sind ebenfalls verfügbar (für sämtliche [Formate](#for
 * [Textstatistiken anzeigen](#viewing-key-statistics)
 
 * [Mit primärer Version synchronisieren](#synchronizing-with-master) (beim Bearbeiten einer Variante)
-
-* [Zusammenfassen von Text](#summarizing-text)
 
 ### Formate {#formats}
 
@@ -228,60 +224,6 @@ Zum Beispiel:
 ### Hochladen von Inhalt {#uploading-content}
 
 Um die Erstellung von Inhaltsfragmenten zu vereinfachen, können Sie Text hochladen, der in einem externen Editor vorbereitet wurde, und ihn direkt in das Fragment einfügen.
-
-### Zusammenfassung von Text {#summarizing-text}
-
-Mithilfe der Zusammenfassung von Text können Benutzende die Länge des Textes auf eine vordefinierte Anzahl von Wörtern verringern, während die wichtigsten Punkte und die allgemeine Bedeutung beibehalten werden.
-
->[!NOTE]
->
->Auf technischer Ebene behält das System die Sätze bei, die in Übereinstimmung mit bestimmten Algorithmen das *beste Verhältnis von Informationsdichte und Eindeutigkeit* bieten.
-
->[!CAUTION]
->
->Das Inhaltsfragment muss einen gültigen Sprachordner (ISO-Code) als Vorgänger haben, der verwendet wird, um das zu verwendende Sprachmodell zu bestimmen.
->
->Beispiel: `en/` wie im folgenden Pfad:
->
->  `/content/dam/my-brand/en/path-down/my-content-fragment`
-
->[!CAUTION]
->
->Englisch ist standardmäßig verfügbar.
->
->Andere Sprachen sind als Sprachmodellpakete von Package Share verfügbar:
->
->* [Französisch (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Deutsch (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italienisch (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Spanisch (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
->
-
-1. Wählen Sie **Primäre Version** oder die erforderliche Variante aus.
-1. Öffnen Sie den Vollbild-Editor.
-
-1. Wählen Sie in der Symbolleiste die Option **Text zusammenfassen** aus.
-
-   ![Zusammenfassung](assets/cfm-variations-05.png)
-
-1. Geben Sie den Zielwert der Wörter an und wählen Sie **Starten**:
-1. Der ursprüngliche Text wird neben der vorgeschlagenen Zusammenfassung angezeigt:
-
-   * Alle zu löschenden Sätze sind rot hervorgehoben und durchgestrichen.
-   * Klicken Sie auf einen beliebigen hervorgehobenen Satz, wenn Sie ihn im zusammengefassten Inhalt beibehalten möchten.
-   * Klicken Sie auf einen beliebigen nicht hervorgehobenen Satz, wenn Sie ihn beseitigen möchten.
-
-1. Wählen Sie **Zusammenfassen** aus, um die Änderungen zu bestätigen.
-
-1. Der ursprüngliche Text wird neben der vorgeschlagenen Zusammenfassung angezeigt:
-
-   * Alle zu löschenden Sätze sind rot hervorgehoben und durchgestrichen.
-   * Klicken Sie auf einen beliebigen hervorgehobenen Satz, wenn Sie ihn im zusammengefassten Inhalt beibehalten möchten.
-   * Klicken Sie auf einen beliebigen nicht hervorgehobenen Satz, wenn Sie ihn beseitigen möchten.
-   * Die Zusammenfassungsstatistiken werden gezeigt: **Actual** und **Target**.
-   * Sie können die Änderungen in der **Vorschau** sehen.
-
-   ![Zusammenfassungsvergleich](assets/cfm-variations-06.png)
 
 ### Anmerkungen zu Inhaltsfragmenten {#annotating-a-content-fragment}
 
