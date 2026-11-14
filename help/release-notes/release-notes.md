@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 56b13809475a59f188750b86503e316e69171fe1
+source-git-commit: b910e5ac8537f465d7cab85670de8557c2529a32
 workflow-type: tm+mt
-source-wordcount: '7273'
+source-wordcount: '7369'
 ht-degree: 15%
 ---
 # Versionshinweise zum aktuellen Service Pack für [!DNL Adobe Experience Manager] Version 6.5 {#aem-service-pack-release-notes}
@@ -48,7 +48,6 @@ DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 | Datum | &#x200B;12. November 2026 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Download-URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-
 <!-- REWRITE AI GENERATED SUMMARY OF NOTES BELOW FOR EACH NEW SERVICE PACK RELEASE -->
 
 Experience Manager 6.5.26.0 enthält neue Funktionen, wichtige von Kundschaft angeforderte Verbesserungen und Fehlerbehebungen. Sie umfasst außerdem Verbesserungen in den Bereichen Barrierefreiheit, Lokalisierung, Leistung, Stabilität und Sicherheit, die auf der seit April 2019 verfügbaren 6.5-Foundation basieren.
@@ -62,6 +61,13 @@ Zu den wichtigsten Merkmalen von Service Pack 26 gehören die folgenden:
 * Zuverlässigkeit. Fehlerbehebungen zur Behebung von GraphQL-Sperrkonflikten bei Veröffentlichungsinstanzen, MSM-Rollouts, Symbolleistenaktionen des Rich-Text-Editors und Seitenaktivierung in der klassischen Benutzeroberfläche.
 * Analytics. Die Launch-Integration verwendet die Adobe Analytics 2.0-API vor dem Ende der Nutzungsdauer von Analytics 1.4 am 31. August 2026.
 
+>[!IMPORTANT]
+>
+>Adobe stellt vierteljährliche Service Packs für AEM 6.5 LTS mit einer kumulativen Sicherheitskorrekturstrategie für die unterstützten Service Packs bereit, um die Aktualisierungshäufigkeit in diesem Bereich zu berücksichtigen.
+>
+> Für Benutzer, die AEM 6.5 verwenden, bietet Service Pack 26 Kontinuität, während Support und Wartung über den AEM 6.5 LTS-Arbeitsablauf fortgesetzt werden. Standard (Februar 2027) und Extended (Februar 2028) Support Pack 26, das nur Sicherheitskorrekturen erhält.
+>
+>Adobe bietet Ressourcen, die Ihnen beim Übergang zu AEM 6.5 LTS oder AEM as a Cloud Service helfen, und nutzt die neuesten KI-Innovationen, um die Produktivität zu steigern und für neue Zielgruppen zu optimieren.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -87,26 +93,26 @@ Zu den wichtigsten Merkmalen von Service Pack 26 gehören die folgenden:
 
 * Der ContextHub-IFrame im Seiteneditor verfügt jetzt über ein beschreibendes Titelattribut. Zuvor hatte das `contexthub-ui-iframe`-Element keinen Titel, sodass Benutzende der Bildschirmlesehilfe es nicht identifizieren konnten, wenn der Fokus darauf verschoben wurde. Der Titel wird jetzt auf jeder Editor-Seite und in jeder Editor-Ansicht angezeigt, einschließlich Arbeitsfläche, Seitenleiste und Layout-Vorschau. (SITES-24650)
 * Die Schaltfläche „Filter“ in der Filterleiste der Sites-Konsole fügt keine sichtbaren Beschriftungen über den Feldern „Gespeicherte Suchen“ und „Suchverzeichnis auswählen“ hinzu. Bei einer Prüfung wurde gemeldet, dass Beschriftungen angezeigt wurden, wenn der Fokus die Schaltfläche verließ, eine Taste gedrückt wurde oder auf die Schaltfläche geklickt wurde. Beim Testen konnte das Verhalten nicht reproduziert werden, sodass keine Änderung erforderlich war. (SITES-24706)
-* Links in der Sites-Konsole App-Navigation stechen jetzt deutlicher hervor. Der Link-Text entsprach dem Kontrastverhältnis von 4,5:1, aber das geringe Schriftgewicht und die geringe Größe machten die Links schwer zu erkennen. Eine größere Schriftgröße und ein größeres Schriftgewicht machen den Text für Benutzer mit Sehbehinderungen leichter lesbar. (SITES-24723)
+* Links in der Sites-Konsole App-Navigation sind jetzt besser sichtbar. Der Link-Text entsprach dem Kontrastverhältnis von 4,5:1, aber das geringe Schriftgewicht und die geringe Größe machten die Links schwer zu erkennen. Eine größere Schriftgröße und eine größere Schriftgröße erleichtern das Lesen des Textes für Benutzende mit geringer Sehkraft. (SITES-24723)
 * Die Sprachausgabe gibt vor dem QuickInfo-Inhalt im Modal „Benutzereinstellungen“ nicht mehr „leer“ aus. Zuvor wurde das Informationssymbol `role="tooltip"` mit einem `aria-labelledby` verwendet, sodass die NVDA zuerst eine leere Bezeichnung las. Das Symbol verwendet jetzt `role="button"` und eine `aria-label` von „Informationen“, und die Änderung gilt für die Coral-Formularkomponenten, die das Muster gemeinsam haben. (SITES-24732)
-* Die Schaltfläche Löschen im Modal Löschen erfüllt jetzt die WCAG 1.4.3-Kontrastanforderung von 4,5:1. Zuvor ergab weißer Text auf rotem Hintergrund ein Verhältnis von 3,9:1, nachdem Autoren ein Element ausgewählt und in der Aktionssymbolleiste auf Löschen geklickt hatten. Die dunklere Schaltflächenfarbe macht die Beschriftung für Autoren mit Sehbehinderungen lesbar. (SITES-24772)
+* Die Schaltfläche Löschen im Modal Löschen erfüllt jetzt die WCAG 1.4.3-Kontrastanforderung von 4,5:1. Zuvor ergab weißer Text auf rotem Hintergrund ein Verhältnis von 3,9:1, nachdem Autoren ein Element ausgewählt und in der Aktionssymbolleiste auf Löschen geklickt hatten. Die dunklere Schaltflächenfarbe macht das Label für Autoren mit schlechtem Sehvermögen lesbar. (SITES-24772)
 * Die Überschrift Verweise in der Leiste Verweise der Sites-Konsole verwendet jetzt ein Überschriftenelement anstelle eines `div`. Zuvor konnte der Text von der Sprachausgabe nicht als Überschrift angekündigt werden, sodass Benutzende nicht nach Überschriften navigieren konnten. Die Überschrift wird auch oben in der Ansicht der anfänglichen Verweise angezeigt. (SITES-24967)
 * Die Fokusanzeige für Akkordeon-Schaltflächen in der Filterleiste der Sites-Konsole erfüllt jetzt die WCAG 1.4.11-Kontrastanforderung von 3:1. Zuvor zeigte der blaue Indikator ein Verhältnis von 2,3:1 im Hintergrund, wodurch die Akkordeon-Schaltfläche Tags für Tastaturbenutzer schwer zu finden war. Die aktualisierte Farbe gibt Tastaturbenutzern einen klaren Fokus. (SITES-24986)
 * Die Fokusanzeige für Optionsfelder in der Filterleiste der Sites-Konsole erfüllt jetzt die WCAG 1.4.11-Kontrastanforderung 3:1. Zuvor zeigte der hellblaue Indikator ein Verhältnis von 1,7:1 vor dem Hintergrund. Tastaturbenutzer können jetzt ihre Position im Akkordeon Geändert am nachverfolgen. (SITES-24987)
 * Die Schaltfläche Auswählen neben den Feldern Pfad und Tags in der Seitenleiste des Seiteneditors verwendet kein Kontrollkästchen-Symbol mehr. Zuvor wurde durch das Symbol ein Umschalter vorgeschlagen, aber durch Aktivieren der Schaltfläche wurde ein Modal geöffnet, das das Verzeichnis „Baumstruktur“ enthält. Die Schaltfläche Auswählen kommuniziert nun ihre Funktion korrekt, und dasselbe gilt für das Bild- und Teaser-Modal. (SITES-25210)
 * Bildschirmlesehilfen überspringen jetzt die Miniaturbilder von Assets in der Seitenleiste des Seiteneditors. Zuvor enthielt jedes Bild alternativen Text, der den Namen des sichtbaren Assets duplizierte, sodass Benutzende denselben Text zweimal hörten. Ein leeres `alt` kennzeichnet das Bild als dekorativ und behält den Namen im Kartentitel bei. (SITES-25213)
 * Bildschirmlesehilfen erkennen die Liste der Seitenleisten-Komponenten als Liste. Bei einer Prüfung wurden die Elemente als nicht verwandte Elemente gemeldet, beim Testen wurde jedoch bestätigt, dass das Markup ein Listenelement und Listenelemente verwendet. Es war keine Code-Änderung erforderlich. (SITES-25214)
-* Die Informationssymbole für Komponenten in der Seitenleiste des Seiteneditors sind größer und leichter zu erkennen. Zuvor verwendeten die Symbole die extra kleine Größe von etwa 12 px, die Benutzer mit Sehbehinderungen schwer zu sehen fanden. Für die Symbole wird jetzt die mittlere Größe verwendet. (SITES-25217)
-* Die Fokusanzeige auf der Schaltfläche Farbfeld im Anmerkungsmodal hebt sich jetzt von der Schaltfläche ab. Zuvor entsprach der Indikator der Farbfeldfarbe. Dadurch war es für Tastaturbenutzer schwierig zu erkennen, welche Schaltfläche den Fokus hatte. Ein Versatz gibt dem Indikator genügend Kontrast zum Hintergrund und hält ihn deutlich sichtbar. (SITES-25253)
+* Die Informationssymbole für Komponenten in der Seitenleiste des Seiteneditors sind größer und leichter zu erkennen. Zuvor verwendeten die Symbole die extra kleine Größe von etwa 12 px, die Benutzer mit geringer Sehkraft schwer zu sehen fanden. Für die Symbole wird jetzt die mittlere Größe verwendet. (SITES-25217)
+* Die Fokusanzeige auf der Schaltfläche Farbfeld im Anmerkungsmodal unterscheidet sich jetzt deutlich von der Schaltfläche. Zuvor entsprach der Indikator der Farbfeldfarbe. Dadurch war es für Tastaturbenutzer schwierig zu erkennen, welche Schaltfläche den Fokus hatte. Ein Versatz gibt dem Indikator genügend Kontrast zum Hintergrund und hält ihn deutlich sichtbar. (SITES-25253)
 * Das Datumsfeld im Timewarp-Modal wird nicht mehr `aria-haspopup="dialog"`. Zuvor gab die Sprachausgabe an, dass das Feld ein Dialogfeld öffnet, obwohl dies nicht der Fall ist. Durch Entfernen des Attributs erhalten Benutzende von Bildschirmlesehilfen genaue Informationen. (SITES-25263)
 * Textbeschriftungen in der Demografie-Symbolleiste, z. B. „Empfohlen“, erfüllen jetzt die WCAG 1.4.3-Kontrastanforderung 4,5:1. Zuvor ergab grauer Text auf dunkelgrauem Hintergrund im Vorschaumodus ein Verhältnis von 2,8:1. Je nach Hintergrund wird jede Beschriftung durch dunkleren oder helleren Text lesbar. (SITES-25307)
 * Die Fokusanzeige auf den Schaltflächen &quot;Commerce&quot;, „Persona“ und „Gerät“ in der Symbolleiste „Demografie“ erfüllt jetzt die Kontrastanforderung von 3:1 für WCAG 1.4.11. Zuvor wies der Indikator ein Verhältnis von 1,9:1 gegenüber dem Symbolleistenhintergrund auf. Tastaturbenutzer können jetzt ihre Position verfolgen. (SITES-25308)
-* Text, den Autorinnen und Autoren in die Textfelder der Demografie-Symbolleiste eingeben, erfüllt jetzt die WCAG 1.4.3-Kontrastanforderung von 4,5:1. Zuvor ergab weißer Text auf grauem Hintergrund ein Verhältnis von 2,9:1 in Feldern, wie z. B. dem Dropdown-`displayName` Profil im Vorschaumodus. Die aktualisierten Farben machen eingegebene Werte für Autoren mit Sehbehinderungen lesbar. (SITES-25318)
+* Text, den Autorinnen und Autoren in die Textfelder der Demografie-Symbolleiste eingeben, erfüllt jetzt die WCAG 1.4.3-Kontrastanforderung von 4,5:1. Zuvor ergab weißer Text auf grauem Hintergrund ein Verhältnis von 2,9:1 in Feldern, wie z. B. dem Dropdown-`displayName` Profil im Vorschaumodus. Die aktualisierten Farben machen eingegebene Werte für Autoren mit schlechtem Sehvermögen lesbar. (SITES-25318)
 * Die Sprachausgabe liest jetzt die QuickInfo Beschreibung , wenn der Fokus die Kontrollkästchen in den Dialogfeldern Teaser, Bild und Karussell erreicht. Zuvor war der Text nicht programmgesteuert mit dem Kontrollkästchen verknüpft, sodass die Benutzenden die Anweisung nicht hören konnten. Ein `aria-describedby`-Attribut verknüpft nun jedes Kontrollkästchen mit seiner Beschreibung. (SITES-25364)
 * Die Sprachausgabe gibt jetzt an, welche Schaltfläche für Absatzformate im Rich-Text-Editor aktiv ist. Zuvor gab die Auswahl einer Option aus der Liste keinen Hinweis auf die aktuelle Auswahl für die Hilfstechnologie. Die aktive Schaltfläche enthält jetzt `aria-current="true"`, und die Option Aktives Hyperlink-Ziel `aria-selected="true"`. (SITES-25367)
-* Die Sortierschaltflächen in der Tabellenkopfzeile der Listenansicht der Sites-Konsole erfüllen jetzt die WCAG 1.4.11-Kontrastanforderung 3:1. Zuvor wiesen die hellgrauen Symbole ein Verhältnis von 1,5:1 gegenüber dem Kopfzeilenhintergrund auf. Die dunklere Symbolfarbe macht die Schaltflächen für Autoren mit Sehbehinderungen sichtbar. (SITES-25372)
+* Die Sortierschaltflächen in der Tabellenkopfzeile der Listenansicht der Sites-Konsole erfüllen jetzt die WCAG 1.4.11-Kontrastanforderung 3:1. Zuvor wiesen die hellgrauen Symbole ein Verhältnis von 1,5:1 gegenüber dem Kopfzeilenhintergrund auf. Die dunklere Symbolfarbe macht die Schaltflächen für Autorinnen und Autoren mit schlechtem Sehvermögen sichtbar. (SITES-25372)
 * Die Assets-Registerkarte in der Seitenleiste des Seiteneditors wird nicht mehr neu geladen, wenn der Fokus auf das Filterfeld verschoben wird. Zuvor löste das Wechseln zum leeren Feld ein erneutes Laden aus, und die Sprachausgabe gab jedes Mal eine Lademeldung aus. Die Registerkarte wird jetzt erst neu geladen, nachdem Sie den Filterwert geändert und die Eingabetaste gedrückt haben. (SITES-25377)
-* Das ausgewählte Farbfeldsymbol im Anmerkungsmodal erfüllt jetzt die WCAG 1.4.11-Kontrastanforderung von 3:1. Zuvor wies das weiße Häkchen ein Verhältnis von nur 1,58:1 gegenüber gelben, orangen und grünen Farbfeldern auf. Das aktualisierte Symbol gibt Autoren mit Sehbehinderungen einen klaren Indikator. (SITES-25523)
+* Das ausgewählte Farbfeldsymbol im Anmerkungsmodal erfüllt jetzt die WCAG 1.4.11-Kontrastanforderung von 3:1. Zuvor wies das weiße Häkchen ein Verhältnis von nur 1,58:1 gegenüber gelben, orangen und grünen Farbfeldern auf. Das aktualisierte Symbol gibt Autorinnen und Autoren mit schlechtem Sehvermögen einen klaren Indikator. (SITES-25523)
 * Die Komponentenliste im Seitenbereich des Seiteneditors nimmt den Tastaturfokus nicht mehr ein. Tastaturbenutzer wählen Komponenten mit den Steuerelementen im Inhaltsfenster aus, sodass die Liste des Seitenbereichs die Funktion wiederholt. Ein Hinweis unter dem Komponentenfilter informiert Tastaturbenutzer darüber, wo die Steuerelemente zu finden sind. (SITES-40752)
 
 
@@ -347,7 +353,7 @@ Speichern und schließen im Benutzer-Editor kehrt jetzt zu den Suchergebnissen d
 #### Granite{#foundation-granite-6526}
 
 * Der Platzhalter „Inhaltsfragmentmodell“ im Assets Omnisearch-Filter wird jetzt vollständig angezeigt. Zuvor war der Text abgeschnitten, nachdem Sie zu Assets gegangen sind, auf das Filter- oder Suchsymbol geklickt und das Feld Inhaltsfragmentmodell erweitert haben. Aktualisierter Stil gibt dem Platzhalter ausreichend Platz. (GRANITE-54387)
-* Das Dropdown-Menü Hilfe in der Shell-Kopfzeile bleibt nun geöffnet, wenn Sie den Mauszeiger über die entsprechenden Links bewegen. Zuvor wurde die Dropdown-Liste geschlossen, sobald der Mauszeiger auf die Liste der Dokumentations-, Community- und Support-Links zeigte, wodurch die Links mit der Maus unerreichbar wurden. Der Fokus-Handler verschiebt seine Prüfung jetzt auf den nächsten Animationsrahmen, sodass das Bewegen des Mauszeigers nicht mehr als Fokus aus dem Menü gezählt wird. (GRANITE-70978)
+* Das Dropdown-Menü Hilfe in der Shell-Kopfzeile bleibt nun geöffnet, wenn Sie den Mauszeiger über die entsprechenden Links bewegen. Zuvor wurde die Dropdown-Liste geschlossen, sobald der Mauszeiger auf die Liste der Dokumentations-, Community- und Support-Links zeigte, wodurch die Links mit der Maus unerreichbar wurden. Der Fokus-Handler verschiebt seine Prüfung jetzt auf den nächsten Animationsrahmen, sodass das Bewegen des Mauszeigers nicht mehr als Fokus beim Verlassen des Menüs zählt. (GRANITE-70978)
 
 <!--
 #### Jetty{#foundation-jetty-6526}
@@ -404,11 +410,11 @@ Verbesserung: Der Seiteneditor der Touch-optimierten Benutzeroberfläche rendert
 
 * [!DNL Experience Manager] 6.5.26.0 erfordert [!DNL Experience Manager] 6.5. Detaillierte Anweisungen finden [&#x200B; in &#x200B;](/help/sites-deploying/upgrade.md)Upgrade-Dokumentation“. <!-- UPDATE FOR EACH NEW RELEASE -->
 * Der Download des Service Packs ist über die [Adobe-Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip) verfügbar.
-* Bei einer Bereitstellung mit MongoDB und mehreren Instanzen installieren Sie [!DNL Experience Manager] 6.5.26.0 mit dem Package Manager auf einer der Autoreninstanzen.<!-- UPDATE FOR EACH NEW RELEASE -->
+* Bei einer Bereitstellung mit MongoDB und mehreren Instanzen installieren Sie [!DNL Experience Manager] 6.5.26.0 mit dem Package Manager auf einer der Authoring-Instanzen.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
-> Adobe empfiehlt, das Paket [!DNL Experience Manager] 6.5.26.0 nicht zu entfernen oder zu deinstallieren. Erstellen Sie vor der Installation des Pakets eine Sicherungskopie des `crx-repository`, um das Paket bei Bedarf zurückzusetzen. <!-- UPDATE FOR EACH NEW RELEASE -->
+> Adobe empfiehlt, das Paket [!DNL Experience Manager] 6.5.26.0 nicht zu löschen oder zu deinstallieren. Erstellen Sie vor der Installation des Pakets eine Sicherungskopie des `crx-repository`, um das Paket bei Bedarf zurückzusetzen. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- FORMS For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
@@ -428,7 +434,7 @@ Verbesserung: Der Seiteneditor der Touch-optimierten Benutzeroberfläche rendert
 
 >[!NOTE]
 >
->Das Dialogfeld auf der Package Manager-Benutzeroberfläche wird manchmal während der Installation des Service Packs geschlossen. Adobe empfiehlt, abzuwarten, bis keine Fehlerprotokolle mehr geändert werden, bevor auf die Bereitstellung zugegriffen wird. Warten Sie auf die spezifischen Protokolle zur Deinstallation des Aktualisierungspakets, bevor Sie bestätigen, dass die Installation erfolgreich war. Dieses Problem tritt im [!DNL Safari]-Browser auf, kann jedoch gelegentlich in jedem Browser auftreten.
+>Das Dialogfeld auf der Package Manager-Benutzeroberfläche wird manchmal während der Installation des Service Packs geschlossen. Adobe rät dazu, abzuwarten, bis die Fehlerprotokolle nicht mehr aktualisiert werden, bevor auf die Bereitstellung zugegriffen wird. Warten Sie auf die spezifischen Protokolle zur Deinstallation des Aktualisierungspakets, bevor Sie bestätigen, dass die Installation erfolgreich war. Dieses Problem tritt im [!DNL Safari]-Browser auf, kann jedoch gelegentlich in jedem Browser auftreten.
 
 **Automatische Installation**
 
@@ -488,7 +494,7 @@ Um UberJar in einem Maven-Projekt zu verwenden, lesen Sie bitte [Verwendung von 
 
 >[!NOTE]
 >
->UberJar und die anderen zugehörigen Artefakte sind im Maven Central Repository und nicht im Adobe Public Maven Repository verfügbar (`repo.adobe.com`). Die UberJar-Hauptdatei wurde in `uber-jar-<version>.jar` umbenannt. Es gibt also keinen `classifier` mit `apis` als Wert für den `dependency`-Tag.
+>UberJar und die anderen zugehörigen Artefakte sind im Maven Central Repository und nicht im Adobe Public Maven Repository verfügbar (`repo.adobe.com`). Die UberJar-Hauptdatei wurde in `uber-jar-<version>.jar` umbenannt. Es gibt keine `classifier` für das `dependency`-Tag mit `apis` als Wert.
 
 
 
@@ -564,7 +570,7 @@ Ab Service Pack 13 und höher wird das folgende Fehlerprotokoll angezeigt, das s
 
   Nach Änderung der Indexdefinition ist eine Neuindizierung erforderlich (`reindex` = `true`).
 
-  Nach diesen Schritten führen die GraphQL-Abfragen eine höhere Geschwindigkeit aus.
+  Nach diesen Schritten werden die GraphQL-Abfragen schneller ausgeführt.
 
 * Beim Versuch, Inhaltsfragmente, Sites oder Seiten zu verschieben, zu löschen oder zu veröffentlichen, tritt ein Problem auf, wenn Inhaltsfragmentreferenzen abgerufen werden. Die Hintergrundabfrage schlägt fehl; die Funktion funktioniert nicht.
 Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigenschaften zum Indexdefinitionsknoten `/oak:index/damAssetLucene` hinzufügen (eine Neuindizierung ist nicht erforderlich):
@@ -588,7 +594,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
   * Der Hotspot in einem interaktiven Dynamic Media-Bild ist nicht sichtbar, wenn Sie eine Vorschau des Assets mit dem Viewer für Banner mit Shopping-Funktion anzeigen.
   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]`: Zeitüberschreitung beim Warten darauf, dass die Registrierung geändert wird, um das Aufheben der Registrierung abzuschließen.
 
-* Ab AEM 6.5.15 weist die vom Paket `org.apache.servicemix.bundles.rhino` bereitgestellte Rhino-JavaScript-Engine ein neues Hoisting-Verhalten auf. Skripte, die den Strict-Modus (`use strict;`) verwenden, müssen ihre korrekten Variablen deklarieren. Andernfalls werden sie nicht ausgeführt und geben am Ende einen Laufzeitfehler zurück.
+* Ab AEM 6.5.15 weist die vom Paket `org.apache.servicemix.bundles.rhino` bereitgestellte Rhino-JavaScript-Engine ein neues Hoisting-Verhalten auf. Skripte, die den Strict-Modus (`use strict;`) verwenden, müssen ihre korrekten Variablen deklarieren. Andernfalls werden sie nicht ausgeführt und geben am Ende einen Laufzeitfehler aus.
 
 * Wenn Sie Tagging-bezogene Standardinhalte über ein offizielles Aktualisierungspaket installieren, wird die Languages-Eigenschaft des `/content/cq:tags`-Knotens auf den Standardwert zurückgesetzt. Diese Aktion gilt für Service Packs, Security Service Packs, Extended Feature Packs, Cumulative Feature Packs, Patches usw. Daher ist es notwendig, es vor der Installation zu den Eigenschaften hinzuzufügen.
 
