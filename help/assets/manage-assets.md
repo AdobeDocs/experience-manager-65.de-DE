@@ -182,7 +182,7 @@ Dynamic Media ermöglicht das stapelweise Hochladen von Assets über FTP-Server.
 
 >[!NOTE]
 >
->Um Assets über FTP im Modus „Dynamic Media – Scene7“ hochzuladen, installieren Sie Feature Pack 18912 auf den [!DNL Experience Manager]-Autoreninstanzen. Wenden Sie sich an den [Adobe-Support](https://experienceleague.adobe.com/?support-solution=General&lang=de#support), um auf FP-18912 zugreifen zu können, und schließen Sie das Setup Ihres FTP-Kontos ab. Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für die Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md).
+>Um Assets über FTP im Modus „Dynamic Media – Scene7“ hochzuladen, installieren Sie Feature Pack 18912 auf den [!DNL Experience Manager]-Autoreninstanzen. Wenden Sie sich an den [Adobe-Support](https://experienceleague.adobe.com/de?support-solution=General&lang=de#support), um auf FP-18912 zugreifen zu können, und schließen Sie das Setup Ihres FTP-Kontos ab. Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für die Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md).
 >
 >Die in [!DNL Experience Manager] angegebenen Upload-Einstellungen werden ignoriert, wenn Sie FTP zum Hochladen von Assets verwenden. Stattdessen werden Dateiverarbeitungsregeln, wie in Dynamic Media Classic definiert, verwendet.
 
@@ -190,7 +190,7 @@ Dynamic Media ermöglicht das stapelweise Hochladen von Assets über FTP-Server.
 
 1. Melden Sie sich mit einem FTP-Client Ihrer Wahl beim FTP-Server an. Verwenden Sie dazu den FTP-Benutzernamen und das Passwort aus der Bereitstellungs-E-Mail. Laden Sie im FTP-Client Dateien oder Ordner auf den FTP-Server hoch.
 
-1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app#system-requirements-dmc-app) und melden Sie sich bei Ihrem Konto an.
+1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app#system-requirements-dmc-app) und melden Sie sich bei Ihrem Konto an.
 
    Adobe hat Ihre Anmeldedaten und Ihre Anmeldung zum Zeitpunkt der Bereitstellung bereitgestellt. Wenn Sie nicht über diese Informationen verfügen, wenden Sie sich an den Support von Adobe.
 
@@ -976,4 +976,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Weitere Informationen finden Sie unter „Durchsuchen [&#x200B; DAM Assets mit dem -Desktop-Programm](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started#browse-search-preview-assets).
+Weitere Informationen finden Sie unter „Durchsuchen [&#x200B; DAM Assets mit dem -Desktop-Programm](https://experienceleague.adobe.com/de/docs/experience-manager-desktop-app/using/get-started#browse-search-preview-assets).
