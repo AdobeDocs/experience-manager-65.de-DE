@@ -319,7 +319,7 @@ Diese Schritte sind mit *Systemadministrator*-Zugriff auf die Adobe Admin Consol
    | Plattform konfigurieren | Windows 64-Bit | Apple macOS wird zurzeit nicht unterstützt |
    | Lokal aktivieren | Sprache des Betriebssystems verwenden | Standardeinstellung |
    | Sprache | Ihre bevorzugte Sprache | Für die Benutzeroberfläche von Acrobat |
-   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat ](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
+   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat &#x200B;](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
    | Applikationen auswählen – Ausgewählte Programme | Nur die Lizenzdatei in ausgewählten Programmen beibehalten | Standardeinstellung für die FRL-Bereitstellung |
    | Plug-ins | Keine Änderungen auf diesem Bildschirm vornehmen | |
    | Optionen | Keine Änderungen auf diesem Bildschirm vornehmen | |
@@ -473,7 +473,7 @@ Diese Schritte sind mit *Systemadministrator*-Zugriff auf die Adobe Admin Consol
    | Plattform konfigurieren | Windows 64-Bit | Apple macOS wird zurzeit nicht unterstützt |
    | Lokal aktivieren | Sprache des Betriebssystems verwenden | Standardeinstellung |
    | Sprache | Ihre bevorzugte Sprache | Für die Benutzeroberfläche von Acrobat |
-   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat ](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
+   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat &#x200B;](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
    | Applikationen auswählen – Ausgewählte Programme | Nur die Lizenzdatei in ausgewählten Programmen beibehalten | Standardeinstellung für die FRL-Bereitstellung |
    | Plug-ins | Keine Änderungen auf diesem Bildschirm vornehmen | |
    | Optionen | Keine Änderungen auf diesem Bildschirm vornehmen | |
@@ -633,7 +633,7 @@ Diese Schritte sind mit *Systemadministrator*-Zugriff auf die Adobe Admin Consol
    | Plattform konfigurieren | Windows 64-Bit | Apple macOS wird zurzeit nicht unterstützt |
    | Lokal aktivieren | Sprache des Betriebssystems verwenden | Standardeinstellung |
    | Sprache | Ihre bevorzugte Sprache | Für die Benutzeroberfläche von Acrobat |
-   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat ](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
+   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat &#x200B;](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
    | Applikationen auswählen – Ausgewählte Programme | Nur die Lizenzdatei in ausgewählten Programmen beibehalten | Standardeinstellung für die FRL-Bereitstellung |
    | Plug-ins | Keine Änderungen auf diesem Bildschirm vornehmen | |
    | Optionen | Keine Änderungen auf diesem Bildschirm vornehmen | |
@@ -794,7 +794,7 @@ Diese Schritte sind mit *Systemadministrator*-Zugriff auf die Adobe Admin Consol
    | Plattform konfigurieren | Windows 64-Bit | Apple macOS wird zurzeit nicht unterstützt |
    | Lokal aktivieren | Sprache des Betriebssystems verwenden | Standardeinstellung |
    | Sprache | Ihre bevorzugte Sprache | Für die Benutzeroberfläche von Acrobat |
-   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat ](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
+   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat &#x200B;](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
    | Applikationen auswählen – Ausgewählte Programme | Nur die Lizenzdatei in ausgewählten Programmen beibehalten | Standardeinstellung für die FRL-Bereitstellung |
    | Plug-ins | Keine Änderungen auf diesem Bildschirm vornehmen | |
    | Optionen | Keine Änderungen auf diesem Bildschirm vornehmen | |
@@ -1234,7 +1234,7 @@ So aktivieren Sie Multithreadkonvertierungen für Word und Excel:
 
 ### (Nur Windows) Konfigurieren von Acrobat für den PDF Generator-Service {#configure-acrobat-for-the-pdf-generator-service}
 
-Unter Microsoft® Windows verwendet der PDF Generator-Service Adobe Acrobat, um unterstützte Dateiformate in ein PDF-Dokument zu konvertieren. Servicenamen	Führen Sie die folgenden Schritte aus, um Adobe Acrobat für den PDF Generator-Service zu konfigurieren:
+Unter Microsoft® Windows verwendet der PDF Generator-Service Adobe Acrobat, um unterstützte Dateiformate in ein PDF-Dokument zu konvertieren. Servicenamen Führen Sie die folgenden Schritte aus, um Adobe Acrobat für den PDF Generator-Service zu konfigurieren:
 
 1. Öffnen Sie Acrobat und wählen Sie **[!UICONTROL Bearbeiten]** > **[!UICONTROL Voreinstellungen]** > **[!UICONTROL Updater]**. Deaktivieren Sie unter „Nach Updates suchen“ die Option **[!UICONTROL Updates automatisch installieren]** und klicken Sie auf **[!UICONTROL OK]**. Schließen Sie Acrobat.
 1. Doppelklicken Sie auf Ihrem System auf ein PDF-Dokument. Beim ersten Start von Acrobat werden die Dialogfelder für Anmeldung, der Begrüßungsbildschirm und die Endbenutzerlizenzvereinbarung (EULA) angezeigt. Schließen Sie diese Dialogfelder für alle Benutzenden, die für die Verwendung von PDF Generator konfiguriert sind.
@@ -1596,7 +1596,7 @@ Um dieses Problem zu beheben, überprüfen Sie den Lizenzstatus und aktivieren S
    ```
 
 1. Wenn die Lizenz abgelaufen ist, ersetzen Sie das FRL-Paket. FRL-Pakete laufen normalerweise über einen jährlichen (1-Jahres) Abonnementverlängerungszyklus.
-   1. Erstellen und laden Sie in ](https://adminconsole.adobe.com/) [Adobe Admin Console ein neues FRL-Paket herunter. Weitere Informationen finden Sie in den Schritten 2 bis 7 unter [ von Adobe Acrobat Pro DC](#install-adobe-acrobat-pro-dc).
+   1. Erstellen und laden Sie in [&#128279;](https://adminconsole.adobe.com/) Adobe Admin Console ein neues FRL-Paket herunter. Weitere Informationen finden Sie in den Schritten 2 bis 7 unter [&#x200B; von Adobe Acrobat Pro DC](#install-adobe-acrobat-pro-dc).
    1. Führen Sie den folgenden Befehl aus, um die abgelaufene Lizenz zu entfernen:
 
       ```cmd
