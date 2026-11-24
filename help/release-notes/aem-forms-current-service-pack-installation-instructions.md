@@ -21,10 +21,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: ed215ea94e2db8589da7734dd4533fb0e55043d4
 workflow-type: tm+mt
-source-wordcount: '2149'
-ht-degree: 92%
+source-wordcount: '2293'
+ht-degree: 86%
 ---
 # Installationsanweisungen für AEM 6.5 Forms Service Pack {#aem-form-patch-installation-instructions}
 
@@ -105,7 +105,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++&#x200B;4. Installieren des Service Packs zu AEM Forms on JEE:
 
-1. Stoppen Sie den Programm-Server.
+1. Stoppen Sie den Anwendungsserver.
 1. Extrahieren Sie das **AEM Forms on JEE Service Pack-Installationsarchiv** auf Ihrer Festplatte:
 
    * **Windows**
@@ -153,6 +153,16 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 >* Nach der Installation von AEM Forms on JEE Service Pack müssen Sie das Add-On-Paket für Forms aus dem Ordner `crx-repository\install` entfernen, bevor Sie den Anwendungs-Server neu starten. Laden Sie das neueste Add-On-Paket für Forms vom [Software Distribution-Portal](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) herunter.
 >* Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 >* Für den [Hotfix zum Beheben von Spring Framework-Schwachstellen für AEM Forms on JEE](/help/release-notes/aem-forms-hotfix.md) muss bei der Bereitstellung in einer Cluster-Umgebung unbedingt sichergestellt werden, dass Locators mit JDK 17 gestartet werden.
+
+### Fehlerumgehung bei der WebLogic-Topologievalidierung {#weblogic-topology-validation}
+
+Unter WebLogic mit AEM Forms on JEE Service Pack 26 Patch 136 schlägt der `validateApplicationServerTopology`-Schritt von Configuration Manager (LCM) sowohl im GUI- als auch im CLI-Modus fehl. Wenn dieses Problem auftritt, wenden Sie die folgende manuelle Problemumgehung an. (FORMS-30037)
+
+1. [`forms-security-commons-1.0.6.jar`](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/forms-security-commons-1.0.6.jar) von Software Distribution herunterladen.
+1. Platzieren Sie die JAR-Datei im `configurationManager/lib` unter dem AEM Forms-Installationsverzeichnis. Unter Windows lautet der Pfad beispielsweise `C:\Adobe\Adobe_Experience_Manager_Forms\configurationManager\lib`. Verwenden Sie Ihr tatsächliches Installationsverzeichnis, falls es abweicht.
+1. Bearbeiten Sie im `bin`-Verzeichnis von Configuration Manager `ConfigurationManager.bat` (Windows) oder `ConfigurationManager.sh` (Unix/Linux). Fügen Sie den vollständigen Pfad von `forms-security-commons-1.0.6.jar` zum vorhandenen Klassenpfad hinzu, wobei alle vorhandenen Klassenpfadeinträge beibehalten werden.
+1. Starten Sie Configuration Manager im GUI- oder CLI-Modus mit dem geänderten Starter neu.
+1. Führen Sie `validateApplicationServerTopology` erneut aus und überprüfen Sie, ob die Topologieüberprüfung erfolgreich abgeschlossen wurde.
 
 +++
 
@@ -218,7 +228,7 @@ Das Paket wird automatisch installiert.
 
 +++
 
-## Herunterladen und Installieren des Service Packs in einer Umgebung von AEM Forms on OSGi {#download-and-install-for-osgi-service-pack}
+## Herunterladen und Installieren des Service Packs für AEM Forms unter OSGi {#download-and-install-for-osgi-service-pack}
 
 
 <!--
