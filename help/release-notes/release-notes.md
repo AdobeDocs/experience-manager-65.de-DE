@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 8e3fd4184adcd62256cb7faea6592b06796e7ddf
+source-git-commit: 0619d81cc1270ec91062fc1f4e4ca0a59a388cfc
 workflow-type: tm+mt
-source-wordcount: '8356'
+source-wordcount: '8294'
 ht-degree: 13%
 ---
 # Versionshinweise zum aktuellen Service Pack für [!DNL Adobe Experience Manager] Version 6.5 {#aem-service-pack-release-notes}
@@ -385,7 +385,7 @@ Verbesserung: Die Adobe Analytics-Integration mit Adobe Experience Manager Launc
 
 #### Plattform{#foundation-platform-6526}
 
-* Der Hilfe-Link in der Fußzeile der AEM-Anmeldeseite öffnet jetzt eine Arbeitsseite. Zuvor verwies der Link auf eine marketing.adobe.com URL, die nicht mehr vorhanden ist. Die Fußzeilenkonfiguration verwendet jetzt die [Adobe Experience Manager-Dokumentations](https://experienceleague.adobe.com/de/docs/experience-manager)-URL. (NPR-44388)
+* Der Hilfe-Link in der Fußzeile der AEM-Anmeldeseite öffnet jetzt eine Arbeitsseite. Zuvor verwies der Link auf eine marketing.adobe.com URL, die nicht mehr vorhanden ist. Die Fußzeilenkonfiguration verwendet jetzt die [Adobe Experience Manager-Dokumentations](https://experienceleague.adobe.com/en/docs/experience-manager)-URL. (NPR-44388)
 * Verbesserung: Eine Kundenanfrage, die nach der Microsoft Graph API als Alternative zum SMTP gefragt wird, wenn AEM E-Mails sendet. Das Ticket wurde als Duplikat aufgelöst, da ein anderes Ticket bereits den Graph-API-Fluss implementiert. SMTP mit OAuth 2.0 bleibt für Kunden verfügbar, die von der SMTP-Standardauthentifizierung abrücken müssen. (GRANITE-57478)
 
 * Die Zeichenfolgen im Dialogfeld Gültige Berechtigungen sind jetzt im Browser **Tools** > **Allgemein** > **Konfiguration** korrekt ausgerichtet. Zuvor wurde eine Zeichenfolge offline angezeigt, nachdem Sie einen Ordner ausgewählt, auf „Eigenschaften“ geklickt und auf „Gültige Berechtigungen“ geklickt hatten. Aktualisierte Layout-Regeln stellen die Ausrichtung wieder her. (CQ-4359166)
@@ -422,7 +422,7 @@ Verbesserung: Der Seiteneditor der Touch-optimierten Benutzeroberfläche rendert
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.26.0 erfordert [!DNL Experience Manager] 6.5. Detaillierte Anweisungen finden [&#x200B; in &#x200B;](/help/sites-deploying/upgrade.md)Upgrade-Dokumentation“. <!-- UPDATE FOR EACH NEW RELEASE -->
+* [!DNL Experience Manager] 6.5.26.0 erfordert [!DNL Experience Manager] 6.5. Detaillierte Anweisungen finden [ in ](/help/sites-deploying/upgrade.md)Upgrade-Dokumentation“. <!-- UPDATE FOR EACH NEW RELEASE -->
 * Der Download des Service Packs ist über die [Adobe-Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip) verfügbar.
 * Bei einer Bereitstellung mit MongoDB und mehreren Instanzen installieren Sie [!DNL Experience Manager] 6.5.26.0 mit dem Package Manager auf einer der Authoring-Instanzen.<!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -626,8 +626,6 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 * Wenn ein Formular mit einem Feld **Dateianhang**, das `bindref` verwendet, an einen AEM-Workflow mit dem Schritt **Aufgabe zuweisen** gesendet wird, werden die Anlagen nicht angezeigt. Daher werden sie nicht angezeigt, wenn die Aufgabe aus dem Posteingang geöffnet wird. Die Dateien werden korrekt im Repository gespeichert, aber in der Benutzeroberfläche des Schritts „Aufgabe zuweisen“ können die Anlagen nicht angezeigt werden. (FORMS-23722)
 
-* Wenn eine digital signierte PDF an eine Aufgabe in AEM Forms JEE Workspace angehängt wird, bleibt der Upload im Upload-Status hängen oder schlägt mit der Fehlermeldung „Ungültige Datei“ fehl. Daher können der Aufgabe keine größeren, signierten PDF-Anhänge hinzugefügt werden. Dieses Problem wurde in einer späteren Version behoben. Wenden Sie sich für einen Hotfix zur Version an den Adobe-Support. (FORMS-28517)
-
 * Das Importieren eines LiveCycle-Archivs (LCA) über die Administration Console oder Java-Code (EJB/SOA) kann dazu führen, dass nachfolgende Vorgänge von PDF Generator (PDFG) und ConvertPDF fehlschlagen. Dieses Problem betrifft den JDK- und Oracle WebLogic 14c-Stack unter Windows und Linux mit einer eingebetteten AEM-Autoreninstanz. (FORMS-30031)
 
   Das Serverprotokoll zeigt den folgenden Fehler an:
@@ -692,13 +690,13 @@ Die folgenden ZIP-Dateien enthalten die Textdokumente, in denen die in dieser Ve
 Diese Websites sind nur für Kundinnen und Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
 * [Produkt-Download unter licensing.adobe.com](https://licensing.adobe.com/)
-* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] Produktseite](https://business.adobe.com/de/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] Dokumentation zu 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65)
->* [Abonnieren von Adobe-Prioritäts-Produkt-Updates](https://www.adobe.com/de/subscription/priority-product-update.html)
+>* [Abonnieren von Adobe-Prioritäts-Produkt-Updates](https://www.adobe.com/subscription/priority-product-update.html)
 
 
 
