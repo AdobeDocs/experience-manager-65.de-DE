@@ -61,7 +61,7 @@ Veröffentlichen Sie als letzten Schritt Ihre Microsoft Translator-Konfiguratio
 
 ## Microsoft Translator-API-Feldzuordnung {#microsoft-translator-api-field-mapping}
 
-Die Microsoft Translator-API v3 akzeptiert Übersetzungsanfragen unter `https://api.cognitive.microsofttranslator.com/translate?api-version=3.0`. Die erforderlichen Parameter, einschließlich ](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/v3/translate) Zielsprache, finden Sie in der [Microsoft-Übersetzungs-API-Referenz.
+Die Microsoft Translator-API v3 akzeptiert Übersetzungsanfragen unter `https://api.cognitive.microsofttranslator.com/translate?api-version=3.0`. Die erforderlichen Parameter, einschließlich [&#128279;](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/v3/translate) Zielsprache, finden Sie in der Microsoft-Übersetzungs-API-Referenz.
 
 Die folgende Tabelle verknüpft die AEM-Konfigurationsfelder mit der Microsoft-API.
 
