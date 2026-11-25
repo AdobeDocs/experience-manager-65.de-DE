@@ -19,10 +19,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+source-git-commit: f63514691265918da2fa40cc493889c6cd0d23d1
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 100%
+source-wordcount: '478'
+ht-degree: 58%
 ---
 # Herstellen einer Verbindung mit Microsoft Translator {#connecting-to-microsoft-translator}
 
@@ -30,10 +30,10 @@ AEM bietet einen integrierten Connector für [Microsoft Translator](https://www.
 
 | Eigenschaft | Beschreibung |
 |---|---|
-| Übersetzungsetikett | Der Anzeigename für den Übersetzungs-Service |
+| Übersetzungsetikett | Der Anzeigename für den Übersetzungsdienst |
 | Übersetzungszuteilung | (Optional) Bei nutzergenerierten Inhalten die Zuteilung, die neben übersetzten Texten angezeigt wird, beispielsweise `Translations by Microsoft` |
 | Workspace-ID | (Optional) Die ID Ihrer angepassten Microsoft Translator-Engine, die verwendet werden soll |
-| Mitgliedschaftsschlüssel | Ihr Mitgliedschaftsschlüssel für Microsoft Translator |
+| Mitgliedschaftsschlüssel | Ihr Microsoft-Abonnementschlüssel für Microsoft Translator |
 
 Mit dem folgenden Verfahren wird eine Microsoft Translator-Konfiguration erstellt.
 
@@ -58,3 +58,18 @@ Mit dem folgenden Verfahren wird eine Microsoft Translator-Konfiguration erstell
 ## Veröffentlichen der Übersetzungs-Service-Konfigurationen {#publishing-the-translator-service-configurations}
 
 Veröffentlichen Sie als letzten Schritt Ihre Microsoft Translator-Konfigurationen, um veröffentlichte übersetzte Inhalte zu unterstützen. Verwenden Sie dazu die Aktion [Veröffentlichen eines Baums](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree).
+
+## Microsoft Translator-API-Feldzuordnung {#microsoft-translator-api-field-mapping}
+
+Die Microsoft Translator-API v3 akzeptiert Übersetzungsanfragen unter `https://api.cognitive.microsofttranslator.com/translate?api-version=3.0`. Die erforderlichen Parameter, einschließlich [&#128279;](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/v3/translate) Zielsprache, finden Sie in der Microsoft-Übersetzungs-API-Referenz.
+
+Die folgende Tabelle verknüpft die AEM-Konfigurationsfelder mit der Microsoft-API.
+
+| AEM-Feld | Zweck in AEM | Microsoft-API-Beziehung |
+|---|---|---|
+| Workspace-ID | Gibt die benutzerdefinierte Microsoft Translator-Engine an, die verwendet werden soll. | Benutzerdefinierte Übersetzungssysteme werden über den `category`-Anforderungsparameter ausgewählt. Die Microsoft-API erwartet eine benutzerdefinierte Übersetzerkategorie-ID, keine Workspace-ID allein. Bestätigen Sie den für Ihren Connector und die benutzerdefinierte Modellkonfiguration erforderlichen Wert. |
+| Übersetzungsetikett | Stellt einen Anzeigenamen für den Übersetzungs-Service bereit. | Kein entsprechender Übersetzungsanforderungsparameter. |
+| Übersetzungszuteilung | Definiert eine optionale Attribution neben übersetzten benutzergenerierten Inhalten. | Kein entsprechender Übersetzungsanforderungsparameter. |
+| Mitgliedschaftsschlüssel | Authentifiziert den Zugriff auf das Microsoft Translator-Abonnement. | Wird beim Anfordern eines Zugriffs-Tokens in der `Ocp-Apim-Subscription-Key`-Kopfzeile gesendet. Das Token wird dann bei Übersetzungsanfragen in der `Authorization: Bearer <access-token>`-Kopfzeile gesendet. |
+
+Bei einer globalen Microsoft Translator-Ressource wird der Token-Endpunkt `https://api.cognitive.microsoft.com/sts/v1.0/issueToken`. Regionale und Multi-Service-Ressourcen verwenden regionsspezifische Token-Endpunkte. Unter [Microsoft Translator-Authentifizierung](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/authentication) finden Sie die Endpunkt- und Kopfzeilenanforderungen für Ihren Ressourcentyp.
