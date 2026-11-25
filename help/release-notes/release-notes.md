@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 8e3fd4184adcd62256cb7faea6592b06796e7ddf
+source-git-commit: 0619d81cc1270ec91062fc1f4e4ca0a59a388cfc
 workflow-type: tm+mt
-source-wordcount: '8356'
+source-wordcount: '8294'
 ht-degree: 13%
 ---
 # Versionshinweise zum aktuellen Service Pack für [!DNL Adobe Experience Manager] Version 6.5 {#aem-service-pack-release-notes}
@@ -625,8 +625,6 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 * Unter WebLogic mit AEM Forms on JEE Service Pack 26 Patch 136 schlägt der Configuration Manager-`validateApplicationServerTopology` sowohl im GUI- als auch im CLI-Modus fehl. Um die manuelle Problemumgehung anzuwenden, erweitern Sie **4. Installieren Sie AEM Forms on JEE Service Pack** in den [Installationsanweisungen für das JEE Service Pack](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md#download-and-install-for-jee-service-pack) und folgen Sie dem Workaround für die WebLogic-Topologievalidierung. (FORMS-30037)
 
 * Wenn ein Formular mit einem Feld **Dateianhang**, das `bindref` verwendet, an einen AEM-Workflow mit dem Schritt **Aufgabe zuweisen** gesendet wird, werden die Anlagen nicht angezeigt. Daher werden sie nicht angezeigt, wenn die Aufgabe aus dem Posteingang geöffnet wird. Die Dateien werden korrekt im Repository gespeichert, aber in der Benutzeroberfläche des Schritts „Aufgabe zuweisen“ können die Anlagen nicht angezeigt werden. (FORMS-23722)
-
-* Wenn eine digital signierte PDF an eine Aufgabe in AEM Forms JEE Workspace angehängt wird, bleibt der Upload im Upload-Status hängen oder schlägt mit der Fehlermeldung „Ungültige Datei“ fehl. Daher können der Aufgabe keine größeren, signierten PDF-Anhänge hinzugefügt werden. Dieses Problem wurde in einer späteren Version behoben. Wenden Sie sich für einen Hotfix zur Version an den Adobe-Support. (FORMS-28517)
 
 * Das Importieren eines LiveCycle-Archivs (LCA) über die Administration Console oder Java-Code (EJB/SOA) kann dazu führen, dass nachfolgende Vorgänge von PDF Generator (PDFG) und ConvertPDF fehlschlagen. Dieses Problem betrifft den JDK- und Oracle WebLogic 14c-Stack unter Windows und Linux mit einer eingebetteten AEM-Autoreninstanz. (FORMS-30031)
 
